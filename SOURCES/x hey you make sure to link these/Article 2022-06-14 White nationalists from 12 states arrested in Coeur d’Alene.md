@@ -47,4 +47,4 @@ Lee said that [[law enforcement]] performed a [[traffic stop]] approximately ten
 
 All posted [[bail]] and are scheduled in [[district court]] July 18, the [[Coeur d'Alene Press]] reports.
 
-[[2022-05-15 — IR Podcast — Patriot Front Arrests|Coeur d’Alene Press reporter Kaye Thornbrugh joined the Idaho Reports podcast on Tuesday to go over the incident and what has been learned since.]] 
+[[2022-05-15 - IR Podcast - Patriot Front Arrests|Coeur d’Alene Press reporter Kaye Thornbrugh joined the Idaho Reports podcast on Tuesday to go over the incident and what has been learned since.]] 

@@ -80,12 +80,12 @@ Even so, council members proposed adding aggressive handbilling to the city’s 
 
 “I feel like we’re so hesitant to even step in that direction, to question behaviors that are, in my personal opinion, absolutely abhorrent,” said Councilwoman Shannon Williamson.
 
-As with the previous week, residents offered up emotional testimony about their frightened children and damaged business. Brenda Paddack argued that the public had a right to be protected from obscene images.
+As with the previous week, residents offered up emotional testimony about their frightened [[children]] and damaged business. Brenda Paddack argued that the public had a right to be protected from obscene images.
 
 “They’re standing behind their freedom of speech, but they’re infringing on some of our rights as well, and our rights are being ignored,” she said
 
-Herndon also offered testimony. While he said he wasn’t involved with recent farmers’ market protests, he had spoken to those involved and was told the voice amplification would stop. Nevertheless, he was concerned about the handbilling ordinance, saying the language was too vague to effectively protect First Amendment rights.
+Herndon also offered testimony. While he said he wasn’t involved with recent farmers’ market protests, he had spoken to those involved and was told the voice amplification would stop. Nevertheless, he was concerned about the handbilling ordinance, saying the language was too vague to effectively protect [[First Amendment]] rights.
 
-It remains to be seen whether the city will pursue additional measures beyond the handbilling and noise ordinances. As the popular adage goes, “My right to swing my fist ends where your nose begins.” The problem the city faces is legally determining how far the abolitionists can swing before they bloody the public.
+It remains to be seen whether the [[cities|city]] will pursue additional measures beyond the handbilling and noise ordinances. As the popular adage goes, “My right to swing my fist ends where your nose begins.” The problem the city faces is legally determining how far the abolitionists can swing before they bloody the public.
 
 *[[Ben Olson]] contributed reporting to this story.*
