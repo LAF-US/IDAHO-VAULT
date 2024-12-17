@@ -22,4 +22,4 @@ It took until early morning for Jerome County to fully report, with corrected re
 ## District 29 – Pocatello
 After some confusion over whether Bannock County had fully reported, and an early morning rerun of ballots, we got results at about 2 am: Democrat James Ruchti beat [[Idaho Republican Party|Republican]] David Worley for the Senate seat, and Democrat Nate Roberts narrowly won over [[Idaho Republican Party|Republican]] Jake Stevens. [[Idaho Republican Party|Republican]] incumbent Dustin Manwaring held onto his seat against challenger Mary Shea.
 
-[[2022-10-20 — IR Podcast — Legislative Races to Watch]] 
+[[2022-10-20 - IR Podcast - Legislative Races to Watch]] 

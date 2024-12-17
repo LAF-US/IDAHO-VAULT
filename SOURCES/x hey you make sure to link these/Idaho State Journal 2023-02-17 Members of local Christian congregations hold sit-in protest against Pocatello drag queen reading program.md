@@ -2,14 +2,15 @@
 tags:
   - media/articles
   - 2023/02/17
+URL: https://www.idahostatejournal.com/freeaccess/members-of-local-christian-congregations-hold-sit-in-protest-against-pocatello-drag-queen-reading-program/article_e00393e2-abfb-11ed-823a-db574748bf88.html
 ---
-https://www.idahostatejournal.com/freeaccess/members-of-local-christian-congregations-hold-sit-in-protest-against-pocatello-drag-queen-reading-program/article_e00393e2-abfb-11ed-823a-db574748bf88.html 
+
 
 [[Shelbie Harris]], [[Idaho State Journal]] 
 
-POCATELLO — East Idaho conservative leaders and members of local Christian churches held a peaceful sit-in to protest the Reading Time with the Queens event at the Marshall Public Library on Saturday.
+[[POCATELLO]] — [[Eastern Idaho|East Idaho]] conservative leaders and members of local [[Christianity|Christian]] [[churches]] held a peaceful sit-in to protest the Reading Time with the Queens event at the [[Marshall Public Library]] on Saturday.
 
-The Reading Time with the Queens program took place despite the critics in attendance. Instead of reading to actual children and their families, the organizers of Reading Time with the Queens said they delivered their programming to a room full of “adult children.”
+The [[Reading Time with the Queens]] program took place despite the critics in attendance. Instead of reading to actual [[children]] and their families, the organizers of Reading Time with the Queens said they delivered their programming to a room full of “adult children.”
 
 “By the time we arrived at the library around 1 p.m. Saturday, a bus chartered by Mountain Valley Baptist Church had unloaded and occupied all of the seats in the meeting room,” said Reading Time with the Queens organizer Joseph Crupper, who goes by the name Miss Cali Je while performing in drag. “It was very clear their intent was to cause trouble, occupy space, and, though not being disruptive according to the library’s policy, be incredibly disruptive to our event in practice.”
 
