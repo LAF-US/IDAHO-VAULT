@@ -4,19 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "30e0e4a3da05a011",
+        "id": "ed39780fd09f5a77",
         "type": "tabs",
         "children": [
           {
-            "id": "d35460899c590622",
+            "id": "1aaf9a38b02ac28a",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "ATTACHMENTS/MAPS/Snake River Dams.jpg"
+                "file": "PLACES/LIBRARIES/Marshall Public Library.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Snake River Dams"
+              "icon": "lucide-file",
+              "title": "Marshall Public Library"
             }
           }
         ]
@@ -50,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "file:main",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -77,8 +80,8 @@
             "state": {
               "type": "recent-files",
               "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
+              "icon": "clock",
+              "title": "Recent Files"
             }
           },
           {
@@ -111,17 +114,17 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ORGANIZATIONS/PARTIES/GROUPS/Idaho Main Street Caucus.md",
+                "file": "PLACES/LIBRARIES/Marshall Public Library.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "byModifiedTime",
                 "showSearch": false,
                 "searchQuery": "",
-                "backlinkCollapsed": true,
+                "backlinkCollapsed": false,
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Idaho Main Street Caucus"
+              "title": "Backlinks for Marshall Public Library"
             }
           },
           {
@@ -130,11 +133,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "PLACES/LIBRARIES/Marshall Public Library.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from Marshall Public Library"
             }
           },
           {
@@ -213,8 +217,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 388.5,
-    "collapsed": true
+    "width": 519.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -226,34 +229,35 @@
       "templates:Insert template": false
     }
   },
-  "active": "d35460899c590622",
+  "active": "dbfa8ac519a0bb94",
   "lastOpenFiles": [
-    "SOURCES/HEARINGS/2024/2024-11-19 Water Supply Committee.md",
-    "SOURCES/HEARINGS/2024/2024-01-09 House Judiciary.md",
-    "SOURCES/HEARINGS/2024/2024-02-07 House Business.md",
-    "Mike Gunderson.md",
-    "Little Payette Lake.md",
-    "Payette Lake.md",
-    "Alpha.md",
-    "books.md",
-    "Long Valley.md",
-    "Office of the Attorney General.md",
-    "water rights.md",
-    "ORGANIZATIONS/PARTIES/GROUPS/Idaho Main Street Caucus.md",
-    "Madison Hardy.md",
-    "pregnancy.md",
-    "The Truth As Told by Mason Buttle.md",
-    "PLACES/GAME UNITS/Dworshak-Elk City Zone.md",
-    "Cascade Dam.md",
-    "PLACES/COMMUNITIES/Warm Lake.md",
-    "executive session.md",
-    "Faye Thompson.md",
-    "X LABELER/2019-10-17 - Shoshone Co. hopeful $22M bond will fix aging, overcrowded jail.md",
-    "2024-05-23 - Idaho Press - Governor seeks outside lawyer in ITD lawsuit.md",
-    "SOURCES/NEWS MEDIA/2021-12-10 - IR - Chronic wasting disease surveillance underway in central Idaho.md",
-    "PLACES/COUNTIES/Idaho County.md",
-    "SOURCES/LISTS/Game Management Units.md",
-    "PLACES/GAME UNITS/Game Management Unit 14.md",
+    "PLACES/LIBRARIES",
+    "TOPICS/drag.md",
+    "TOPICS/drag queen story time.md",
+    "PEOPLE/Richard Spencer.md",
+    "SOURCES/x hey you make sure to link these/2017-02-12 - Buzzfeed News - Love Lives In Whitefish, Montana, But So Do Neo-Nazis.md",
+    "TOPICS/gender identity.md",
+    "ORGANIZATIONS/Reading Time with the Queens.md",
+    "SOURCES/x hey you make sure to link these/Idaho State Journal 2023-02-17 Members of local Christian congregations hold sit-in protest against Pocatello drag queen reading program.md",
+    "PLACES/LIBRARIES/Marshall Public Library.md",
+    "PEOPLE/Larry Echo Hawk.md",
+    "SOURCES/x hey you make sure to link these/2018-04-26 - Buzzfeed News - Could Paulette Jordan Be The First Native American Governor.md",
+    "GOVERNMENTS/IDAHO - LEGISLATIVE/Idaho Legislature.md",
+    "PLACES/LOCATIONS/Idaho Capitol.md",
+    "GOVERNMENTS/USA - TRIBES/Coeur d'Alene Tribe.md",
+    "ORGANIZATIONS/POLITICS/Health Freedom Idaho.md",
+    "PEOPLE/Sara Walton Brady.md",
+    "TOPICS/HEALTH/DISEASES/coronavirus.md",
+    "SOURCES/x hey you make sure to link these/2020-04-22 - Buzzfeed - There's More To Know About The Video Of A Mother Arrested On A Playground For Violating Stay-At-Home Orders.md",
+    "GOVERNMENTS/IDAHO - EXECUTIVE/COUNTIES & CITIES/city council.md",
+    "SOURCES/x hey you make sure to link these/2016-08-12 - Sandpoint Reader - Anti-abortion protesters disrupt community.md",
+    "SOURCES/x hey you make sure to link these/2023-08-13 - Sandpoint Reader - Woodward will seek Dist. 1 Senate seat.md",
+    "SOURCES/x hey you make sure to link these/2023-08-01 - Idaho Capital Sun - Former Idaho congressional candidate named to GOP national committee.md",
+    "SOURCES/x hey you make sure to link these/2023-12-14 - Idaho Statesman & ProPublica - Idaho Republicans are discussing a proposal that would make it easier to repair schools.md",
+    "SOURCES/x hey you make sure to link these/2024-05-23 - Idaho Press - Governor seeks outside lawyer in ITD lawsuit.md",
+    "SOURCES/x hey you make sure to link these/2024-01-04 - MOON - Turning to a Convention of States in Times of National Crisis is Not the Answer.md",
+    "SOURCES/x hey you make sure to link these/2024-02-02 - Idaho Education News - The election money race; an early Top 10 list.md",
+    "ATTACHMENTS/MAPS/Snake River Dams.jpg",
     "SOURCES/HEARINGS/2024",
     "X LABELER",
     "ATTACHMENTS/MAPS/Wildlife Management Units.png",
@@ -261,7 +265,6 @@
     "ATTACHMENTS/DOCUMENTS/ID Property Tax Limitations and Initiatives 1978–present.pdf",
     "ATTACHMENTS/DOCUMENTS/Historic Survey of Roads in Idaho’s State Highway System Volume 1 - Historic Context.pdf",
     "ATTACHMENTS/DOCUMENTS/Broadband Strategic Plan.pdf",
-    "ATTACHMENTS/MAPS/Snake River Dams.jpg",
     "ATTACHMENTS/DOCUMENTS",
     "ATTACHMENTS/TEMPLATES",
     "ATTACHMENTS/MAPS",

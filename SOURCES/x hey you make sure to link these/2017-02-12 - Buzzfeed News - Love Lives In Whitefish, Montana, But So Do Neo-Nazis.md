@@ -24,16 +24,13 @@ There are other allures for people at odds with mainstream [[United States of Am
 
 The winters are frigid and last forever, but the summers are exquisite. Any direction you look, there are mountains. You can get a big house in the backwoods for under $100,000. For decades, tourists have come to town and asked shop owners the same thing: “How can I live here?” Starting in the early 2000s, white supremacists wanted in too.
 
-Gradually, [[Montana]] became home to the highest concentration of hate groups in the nation. In the Flathead — which [[includes]] [[Kalispell]] (more industrial, more sprawling, population 22,000), Whitefish (a quaint grid of a resort town, population 7,000), and [[Columbia Falls]] (a former timber town, now filling with those priced out of Whitefish, population 5,000) — they mostly keep to themselves. Sometimes there’ll be a piece of [[neo-Nazi|Nazi]] propaganda slipped between pairs of expensive jeans in clothing boutiques; other times there’ll be flyers for “A Nature-Based, Race-Centered Religion for White People” folded in children’s books at the local bookstore. “Every place in town has a story like that,” one business owner told me.
+Gradually, [[Montana]] became home to the highest concentration of hate groups in the nation. In the Flathead — which includes [[Kalispell]] (more industrial, more sprawling, population 22,000), Whitefish (a quaint grid of a resort town, population 7,000), and [[Columbia Falls]] (a former timber town, now filling with those priced out of Whitefish, population 5,000) — they mostly keep to themselves. Sometimes there’ll be a piece of [[neo-Nazi|Nazi]] propaganda slipped between pairs of expensive jeans in clothing boutiques; other times there’ll be flyers for “A Nature-Based, Race-Centered Religion for White People” folded in children’s books at the local bookstore. “Every place in town has a story like that,” one business owner told me.
 
 But some things can’t be ignored. Like in 2010, when [[April Gaede]] — better known as the “Nazi stage mom” to twin girl group Prussian Blue and a member of [[Pioneer Little Europe]], an organization of whites-only intentional communities — began showing [[Holocaust denial]] films at the Whitefish library. Or this past December, when a [[neo-Nazi]] site, the [[Daily Stormer]], launched a campaign to troll local [[Judaism|Jews]] as revenge for perceived attacks on the mother of “academic racist” (and Whitefish resident) [[Richard Spencer]].
 
 In the post-election tumult, the story of the troll storm quickly made the national news. A [[neo-Nazi]] march was threatened. Counterprotests were declared. Residents of [[Whitefish]] had to decide: How could they fight hate, and definitively declare their town infertile to the messages of these groups, without defining the town in the public imagination by that fight?
 
 These questions concern more than just the residents of this rural corner of Montana. The online trolls who threatened Whitefish may have been terrifying in their anonymity, but like other fascists and [[neo-Nazi|neo-Nazis]], they were easy to decry. Meanwhile, other forms of hate — more subtle, and more culturally normalized — flourish, virtually unassailed, across the nation. Moving forward, Whitefish and other towns will have to ask themselves: When does hate cross a line, and what responsibility does a community, and the nation that witnesses it, have to react when it happens?
-
-*Tim Goessman for BuzzFeed News*
-*Anti-fascist groups march in downtown Whitefish, Montana, Jan. 16, 2017.*
 
 Hate can gather in the most banal of places. Like a conference room at the Kalispell Hilton Garden Inn, outfitted with about a hundred chairs, a simple podium, and bad ’90s carpet. That’s where [[Chuck Baldwin]]’s [[churches|church]], [[Liberty Fellowship]], gathers every Sunday from 2 to 5 p.m., and where his message is livestreamed to hundreds of loyal followers across the country. On a Sunday in January, the service started with a haunting hymn, sung in harmony by several women, before Baldwin took the pulpit to preach, without notes, for two hours.
 
@@ -51,12 +48,7 @@ True liberty, Baldwin believed, could be found in the Flathead Valley — where 
 
 Still, most people in Kalispell haven’t heard of Baldwin. They might have heard of church attendees like Randy Weaver (made infamous by the 1992 Ruby Ridge standoff in Northern Idaho) or Gaede, who has taken to online [[neo-Nazi]] forums to encourage readers to flock to the area. But that sort of anonymity is part of the point: Baldwin aims to build a mini civilization, free from any oversight other than his own — and God’s.
 
-
-Tim Goessman for BuzzFeed News
-God's Ten Commandments Park in Columbia Falls, Montana.
-
-ADVERTISEMENT
-The Flathead Valley represents the “convergence” of two strains of Pacific Northwest extremism: antigovernment “Patriots” (distinguished by extreme prepping, weapons caching, and, oftentimes, a belief that they live outside the law) and white supremacists. It’s difficult to know just how many neo-Nazis, fascists, and adherents to other designated hate groups live in the Flathead Valley — there are dozens of names associated with just as many movements. But it wasn’t until 2010, when Gaede and fellow Pioneer Little Europe member Karl Gharst began screening Holocaust denial films at the Kalispell library, that an opposition began to emerge.
+The Flathead Valley represents the “convergence” of two strains of Pacific Northwest extremism: antigovernment “Patriots” (distinguished by extreme prepping, weapons caching, and, oftentimes, a belief that they live outside the law) and white supremacists. It’s difficult to know just how many [[neo-Nazi|neo-Nazis]], fascists, and adherents to other designated hate groups live in the Flathead Valley — there are dozens of names associated with just as many movements. But it wasn’t until 2010, when Gaede and fellow Pioneer Little Europe member Karl Gharst began screening Holocaust denial films at the Kalispell library, that an opposition began to emerge.
 
 Oppositional protests, ad hoc at first, were headed by Reverend Darryl Kistler (then pastor of the United Church of Christ), Allen Secher (then rabbi of Bet Harim, the valley’s only synagogue), and Secher’s wife, Ina Albert. Later, under the name of “Love Lives Here,” the group moved on to offer educational events, including the now-yearly Martin Luther King celebration, an elaborate, star-studded production that is anything but a high school play.
 
@@ -69,15 +61,9 @@ The story of how that storm began to brew is complex and contested, but it goes 
 
 Spencer is tall and, as many profiles have gone out of their way to emphasize, handsome, with the practiced, articulate garrulousness of the grad student he once was. He is obsessed with creating an image of fascism that is the opposite of the bedraggled, tattooed, backwoods vision most associate with neo-Nazism. When Spencer posed for a New York Times profile last summer, he was fastidious about the details of his hair, his pose, his clothing. Recently, Spencer was punched by a protester after Trump’s election; as he scurries away in the now-viral video of the encounter, the first thing he does is fix his hair.
 
-ADVERTISEMENT
-
-The Washington Post / Getty Images
-Richard Spencer in Washington, DC, on Nov. 18, 2016.
-
 Spencer maintained a relatively low profile in Whitefish, at least until 2013. While riding a chairlift at Whitefish Mountain, Spencer started a fight with a conservative lobbyist, berating him for believing in “this whole democracy BS.” After some back-and-forth, the lobbyist forced the exclusive Big Mountain Club they both belonged to to decide: this racist, or me. The club initially chose Spencer — and the story got picked up by the national press. (Spencer was later asked to resign his membership.)
 
-ADVERTISEMENT
-Back then, Donald Trump had yet to enter the political sphere, and the threat of what would come to be known as the alt-right, including men like Spencer, seemed minimal — even humorous. No matter that Spencer had been deported from Hungary and given a three-year travel ban in [[Europe]] for trying to organize a white nationalist conference: That was ridiculous extremism, and it would never take hold in [[United States of America|America]]. Love Lives Here’s attempt to ban Spencer from doing business in Whitefish culminated in a compromise: The city council adopted a nondiscrimination resolution, but Spencer, and his publishing business, could stay.
+Back then, [[Donald Trump]] had yet to enter the political sphere, and the threat of what would come to be known as the alt-right, including men like Spencer, seemed minimal — even humorous. No matter that Spencer had been deported from Hungary and given a three-year travel ban in [[Europe]] for trying to organize a white nationalist conference: That was ridiculous extremism, and it would never take hold in [[United States of America|America]]. Love Lives Here’s attempt to ban Spencer from doing business in Whitefish culminated in a compromise: The city council adopted a nondiscrimination resolution, but Spencer, and his publishing business, could stay.
 
 For the next two years, Spencer continued to base his operations in Whitefish. He became an object of public fascination after a series of profiles highlighting his brand of “academic racism” and the concurrent rise of the so-called alt-right — a term he is said to have coined himself.
 
@@ -109,18 +95,12 @@ Anglin filed a permit for a “James Earl Ray Day Extravaganza,” to be held on
 
 His permit request denied, Anglin announced that he’d called off the buses scheduled to carry the “skinheads” from [[San Francisco]]. He promised to consult the [[American Civil Liberties Union|ACLU]] and launch a case against the city for prohibiting the march. (He didn’t.) They’d march in February instead, Anglin said. Just you wait.
 
-
-Tim Goessman for BuzzFeed News
-Property owned by Sherry Spencer, Richard Spencer's mother, in Whitefish, Montana.
-
-ADVERTISEMENT
 Days before the trolls had planned to descend on the town, Whitefish remained on edge: Who knew whether Anglin was bluffing? The online [[neo-Nazi|Nazis]] might not show up, but others, including those living closer by, still might. Threats hold power whether they come true or not — just like hate is real, whether it’s manifested online or off.
 
 “It’s been so horrible,” Lisa Jones, the public relations manager for Explore Whitefish, told me at the Firebrand, a glossy new hotel on the edge of downtown. “Anglin has controlled my life for the last six weeks,” she said, referring to the way he’s both attacked the town and held it in suspense over whether or not the march would go on. “He’s the puppeteer and I’m the puppet. That’s what’s really infuriating.”
 
 Jones wore a version of the unofficial uniform for women over 20 in Whitefish: thick wool tights and stretchy skirt paired with several layers of fleece and down jacket. She moved to Whitefish in 1989, back before the millionaires discovered it, when you could still buy a house for $40,000. Today, she has the frazzled look of someone whose life has been consumed by weeks of warding off attacks from bored, anonymous, spiteful people on the internet.
 
-ADVERTISEMENT
 Trolls, once set in motion, are nearly impossible to stop.
 In 2010, Jones had watched the controversy over the screenings at the Kalispell library, but it hadn’t directly affected or threatened Whitefish’s tourist economy (which, as of 2015, topped $635 million). Tourists come from Seattle, first and foremost, but also from California, Minnesota, Texas, and all up and down the East Coast. Montana lives in their imagination as a place of wide-open spaces and unrivaled beauty, not the home of extremism and hate.
 
@@ -138,16 +118,10 @@ Laferriere and her co-organizer, Dominica Cleveras, had become frustrated with t
 
 “We thought, 'Maybe we’ll have 100 people come, max?'” Laferriere said. But after Anglin’s call to action, the event swelled to at least 500. There were food donations, and a warming station, and chair massages and a kids corner and a photo booth and sprawling coverage in the local papers. It was, as one Democratic Socialist who attended the protest put it to me, “very kumbaya.”
 
-
-Tim Goessman for BuzzFeed News
-Iraq War veteran Josh Manning speaks during a Martin Luther King Day gathering on Jan. 16, 2017.
-
-ADVERTISEMENT
 A week after the Love Not Hate rally, several dozen people gathered at the Outlaw Inn in Kalispell for a film screening hosted by ACT for America — one of the very groups that Love Not Hate wishes to counter. ACT for America was founded in 2007 to, in its own words, “promote national security and defeat terrorism.” In practice, this means lobbying for anti-Sharia legislation, fighting immigration and refugee resettlement, and spreading the idea that [[Islam]] is a hateful ideology — not necessarily a religion, or subject to protection under the Constitution.
 
 ACT currently claims membership of around 400,000 (although that number cannot be confirmed), with 1,000 chapters, some dormant, across the United States. It is officially nonreligious, although it strongly supports the Israeli state, and is officially nonpartisan, although General Michael Flynn, Trump’s recently appointed national security adviser, who has publicly referred to [[Islam]] as a “cancer,” sits on ACT’s board of directors.
 
-ADVERTISEMENT
 In the Kalispell conference room, the atmosphere was welcoming — at least to a white woman. On one table, there were cookies and coffee; on another, a suggested reading list (including Because They Hate: A Survivor of Islamic Terror Warns America, written by ACT’s controversial founder Brigitte Gabriel, a Lebanese Christian) and a handout with “facts and statistics on refugee resettlement” (“13% of Syrian refugees have positive feelings towards the Islamic State terrorist group”).
 
 I sat next to a middle-aged guy dressed in a Carhartt vest, sturdy jeans, and work boots — which, in Montana, could’ve marked him as a rancher or an orthopedic surgeon. He asked if it was my first time, and whether I knew the score for the Seahawks game. “You’ll find this all very informative,” he told me.
@@ -179,18 +153,12 @@ Halfway into the Q&A, the conversation shifted to Whitefish and the events of th
 
 The crowd murmured in agreement.
 
-
-Bobby Caina Calvan / AP Photo
-Dale Cochrell, of Clinton, Montana, joins dozens of demonstrators at the steps of the state Capitol in Helena, Feb. 22, 2016.
-
-ADVERTISEMENT
 “They’re very pro-[[Islam|Muslim]],” Linda said, referring to Love Lives Here. “And anti-Israel ... We have to fight them, because they’re trying to silence us.”
 
 Talking through applause, Osborne complimented Linda on her question. “There’s a great, to me at least, hypocrisy in that movement,” he replied. “On the one hand, they don’t want that kind of intolerance towards a race or group of people to be exhibited. But they support, as you stated, the most historically intolerant theology in the world. They support [[Islam]]. Now, you can’t have it both ways. Either you’re against discrimination of that sort or you’re not.”
 
 In dire tones, Osborne warned the crowd to remain vigilant — but not against Muslims so much as laws that would curtail criticism of Muslims.
 
-ADVERTISEMENT
 “We have a false sense of security here in Montana,” Osborne said. “We think we’re so safe and secure from the horrible realities in the other world, in California, but we’re not. We talk about free speech, for example, and how they will do anything to close the door with things called ‘hate speech laws’ that prohibit the criticism of [[Islam]]. So how safe are we? The summer before last, a hate speech law came within one vote of passing the city council in Billings, Montana.”
 
 “Right. Here. In Mon-tan-a,” Osborne said, drawing out the name of the state. “It could happen everywhere.”
@@ -215,7 +183,7 @@ ADVERTISEMENT
 Back in Whitefish, the downtown had the feel of a tensed and tiring muscle. There was an hour before Anglin’s planned march time — 3 p.m. — but residents had already phoned the police, concerned about people walking the streets in all black, with pink armbands. (They were members of the Queer Insurrection Unit, up early from Missoula.) On the road into town, someone had stapled a fluorescent poster-board sign to a telephone pole: “DIVERSITY IS BEAUTIFUL.”
 
 A man leaned out of his window and yelled, "Have you seen any douche [[neo-Nazi|Nazis]] yet?"
-A small group formed near Depot Park, mostly composed of members of Antifa, the Alliance for Intersectional Power (formed at Standing Rock), and the IWW (better known as the Wobblies, a century-old union with deep roots in Montana). A guy in his twenties, shivering in a shearling jean jacket, recently moved to the valley to work the train yards after spending time as a roughneck in North Dakota. A contingent of 20 had caravanned five hours from Spokane, Washington, led by [[indigenous peoples|Native American]] activist Jacob Johns.
+A small group formed near Depot Park, mostly composed of members of Antifa, the Alliance for Intersectional Power (formed at Standing Rock), and the IWW (better known as the Wobblies, a century-old union with deep roots in Montana). A guy in his twenties, shivering in a shearling jean jacket, recently moved to the valley to work the train yards after spending time as a roughneck in North Dakota. A contingent of 20 had caravanned five hours from [[Spokane]], [[Washington]], led by [[indigenous peoples|Native American]] activist Jacob Johns.
 
 Two protesters, their faces obscured by black scarves, described themselves as “anarcho-communists,” committed to direct action. “Anglin and his trolls are such flakes,” one of them said. “We’re here because we stick to our word.”
 
@@ -253,10 +221,6 @@ Describing the difficulties the valley still has with intolerance, Jessica Loti 
 
 As the Missoulian editorial board explained, “Hatred is not isolated to one man in Whitefish, or even to one fringe group. We see it, not every day, but often enough to dishearten us, whenever the Missoulian reviews letters to the editor or online comments that are simply too prejudiced to publish. Our readers never see these letters, and thus remain unaware, perhaps, that their neighbor, their favorite business owner, their colleague holds these views.”
 
-The situation that devolved around Richard Spencer in Whitefish was specific to the town, its history, the moment in time, its inhabitants. But there are so many other places, with so many other potentially incendiary combinations, that could incite explicit action from trolls, fascists, and racists. “The problem isn’t that Spencer lives here,” Lisa Jones told me, shaking her head. “It’s great that the march was called off. But this fight’s not done. It’s a marathon. Every day, we just have to keep building community.”
+The situation that devolved around [[Richard Spencer]] in Whitefish was specific to the town, its history, the moment in time, its inhabitants. But there are so many other places, with so many other potentially incendiary combinations, that could incite explicit action from trolls, fascists, and racists. “The problem isn’t that Spencer lives here,” Lisa Jones told me, shaking her head. “It’s great that the march was called off. But this fight’s not done. It’s a marathon. Every day, we just have to keep building community.”
 
 Fighting hate isn’t just printing signs or showing up to a protest. Nor is it denouncing Spencer — or even punching him. It’s no single action or stance or belief. The best strategy I heard was offered up at a sleepy Sunday service at the United Methodist Church, the day before Martin Luther King Day. “If we’re not providing ideologies that provide people with answers,” Pastor Morie Adams-Griffin asked his congregation, “what other groups are? The white supremacists — the white nationalists. So why aren’t we the ones providing answers for those who are hurting?” ●
-
-CORRECTION
-February 12, 2017 at 12:59 PM
-Liberty Fellowship was located in Pensacola, Florida. An earlier version of this post misstated the location.
