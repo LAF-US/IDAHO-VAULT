@@ -4,6 +4,9 @@ aliases:
   - Legislature
   - lawmakers
   - legislators
+  - Idaho state legislature
+  - state legislature
+  - legislative branch
 tags:
   - bills
   - 2019/session

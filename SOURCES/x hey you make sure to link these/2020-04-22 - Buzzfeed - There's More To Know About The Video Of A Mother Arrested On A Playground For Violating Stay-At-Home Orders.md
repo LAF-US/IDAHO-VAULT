@@ -9,9 +9,9 @@ tags:
   - media/articles
   - 2020/04/22
 ---
-A video of a mother arrested in Idaho at a playground that was closed under stay-at-home orders during the coronavirus pandemic has quickly gone viral, with far-right social media accounts rallying around her.
+A video of a mother [[arrests|arrested]] in [[State of Idaho|Idaho]] at a playground that was closed under stay-at-home orders during the coronavirus pandemic has quickly gone viral, with far-right social media accounts rallying around her.
 
-But the mother, 40-year-old Sara Walton Brady, wasn't on the playground simply so her kids could play. Brady is an anti-vaccine activist with connections to several far-right groups in Idaho, and she was participating in an organized protest on Tuesday against the governor's stay-at-home order. A group of people removed police caution tape to enter the closed playground, the Idaho Statesman reported, and Brady refused police requests to leave before she was arrested.
+But the mother, 40-year-old [[Sara Walton Brady]], wasn't on the playground simply so her kids could play. Brady is an anti-vaccine activist with connections to several far-right groups in Idaho, and she was participating in an organized protest on Tuesday against the governor's stay-at-home order. A group of people removed police caution tape to enter the closed playground, the Idaho Statesman reported, and Brady refused police requests to leave before she was arrested.
 
 Brady was charged with misdemeanor trespassing and released later on Tuesday, the Idaho Statesman reported. Meridian police did not immediately respond to a request for comment. Brady could not be reached for comment.
 
