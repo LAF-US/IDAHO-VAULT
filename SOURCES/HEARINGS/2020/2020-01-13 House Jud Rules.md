@@ -41,7 +41,7 @@ Court is required to consider all factors in the child’s best interest, decisi
 - Character and circumstances - Criminal histories, Keeping child out of conflict, abuse situations, substance abuse
 - Relocation – we live in a mobile society. Distance between parents affects custodial time.
 
-[[Social media]] – screenshots and records can be provided to the court to evaluate interactions and communication skills
+[[social media]] – screenshots and records can be provided to the court to evaluate interactions and communication skills
 
 - Need to promote consistency, continuity
 - Domestic Violence

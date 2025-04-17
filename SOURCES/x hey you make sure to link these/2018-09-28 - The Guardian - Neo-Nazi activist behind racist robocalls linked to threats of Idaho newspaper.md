@@ -18,7 +18,7 @@ In recent days threatening robocalls and letters have been sent to the publisher
 
 The [[robocalls|robocall]] described journalist [[Ben Olson]], the publisher of [[Sandpoint Reader|the Reader]], as “a cancer on wholesome [[north Idaho]]”, adding that “[[cancer]] needs to be burned out”.
 
-When Rhodes was asked about the call by [[The Guardian]] via email, he sent a link to a YouTube video that reproduced the [[robocalls|robocall]] audio, and featured video of a large stack of copies of the [[Sandpoint Reader]] being set on fire.
+When Rhodes was asked about the call by [[The Guardian]] via email, he sent a link to a [[YouTube|YouTube video]] that reproduced the [[robocalls|robocall]] audio, and featured video of a large stack of copies of the [[Sandpoint Reader]] being set on fire.
 
 That video has since been removed by [[YouTube]]. The hundreds of [[newspapers]] burned in the video represent a significant slice of [[Sandpoint Reader|the Reader]]’s print run, which Olson says is 5,000 a week.
 
