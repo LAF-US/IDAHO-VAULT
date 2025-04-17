@@ -19,7 +19,7 @@ Brady was charged with misdemeanor trespassing and released later on Tuesday, th
 
 Brady was involved in a protracted and public battle with her local school district concerning her son’s vaccinations in 2017, and her [[Facebook]] page is filled with anti-vaccine posts.
 
-This protest, which was livestreamed on [[Facebook]], was a follow-up to a large rally against stay-at-home restrictions organized by a coalition of radical groups. They include the anti-vaccine group Health Freedom Alliance, the gun rights group Idaho Second Amendment Alliance, and the Idaho Freedom Foundation, a far-right group that wields significant power in the state.
+This protest, which was livestreamed on [[Facebook]], was a follow-up to a large rally against stay-at-home restrictions organized by a coalition of radical groups. They include the anti-vaccine group [[Health Freedom Idaho|Health Freedom Alliance]], the gun rights group [[Idaho Second Amendment Alliance]], and the [[Idaho Freedom Foundation]], a far-right group that wields significant power in the state.
 
 Brady became a symbol to the far right almost immediately after her arrest. Alex Jones’ Infowars quickly picked up the story, and it went viral across far-right social media. In Idaho, the Second Amendment Alliance organized a rally against her arrest at city hall on Tuesday evening, and then her supporters continued their protests outside the home of the officer who arrested her, which was guarded by four police officers. Video shows Ammon Bundy, who led the occupation of the Malheur National Wildlife Refuge in 2016, joining that demonstration.
 
