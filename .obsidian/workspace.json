@@ -4,53 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "67db8e2579844e3a",
+        "id": "0a863cdfad3c09ea",
         "type": "tabs",
         "children": [
           {
-            "id": "7044ca0eb6ff8d3c",
+            "id": "0f21d8f72a0894a0",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "SOURCES/HEARINGS/2025/2025-02-03 House Judiciary, Firing Squad.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "2025-02-03 House Judiciary, Firing Squad"
-            }
-          },
-          {
-            "id": "04b7a01e0ba2fca9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "SOURCES/HEARINGS/2025/2025-02-05 House Revenue, Private School Tax Credit.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "2025-02-05 House Revenue, Private School Tax Credit"
-            }
-          },
-          {
-            "id": "6c1614027d2b7db6",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.8.7"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.8.7"
+              "title": "New tab"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -82,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "file: commission",
+                "query": "file: \"bill of rights\"",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -113,8 +80,7 @@
               "title": "Recent Files"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -221,7 +187,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 421.5
+    "width": 409.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -233,34 +199,34 @@
       "templates:Insert template": false
     }
   },
-  "active": "6c1614027d2b7db6",
+  "active": "dbfa8ac519a0bb94",
   "lastOpenFiles": [
-    "GOVERNMENTS/IDAHO - EXECUTIVE/State Tax Commission.md",
-    "SOURCES/HEARINGS/2025/2025-02-05 House Revenue, Private School Tax Credit.md",
-    "SOURCES/HEARINGS/2025/2025-02-03 House Judiciary, Firing Squad.md",
-    "SOURCES/HEARINGS/2025/2025-02-06 Senate Local Gov.md",
-    "SOURCES/LISTS/cities.md",
-    "TOPICS/Deputy Attorney General.md",
-    "SOURCES/PODCASTS/2023-12-01 - IR Podcast - Lawmakers Prepare for 2024.md",
-    "PEOPLE/John Shirts.md",
-    "SOURCES/x hey you make sure to link these/2014-02-20 - Eye on Boise - Protesters allowed to continue to block entrance, Senate in session.md",
-    "ORGANIZATIONS/Associated Taxpayers of Idaho.md",
-    "SOURCES/NEWS MEDIA/2021-06-03 - Idaho Business Review - Jayson Ronk joins Blue Cross of Idaho.md",
-    "PEOPLE/Miguel Legarreta.md",
-    "GOVERNMENTS/IDAHO - EXECUTIVE/Division of Occupational and Professional Licenses.md",
-    "SOURCES/HEARINGS/2024/2024-01-22 House Health Welfare.md",
-    "GOVERNMENTS/IDAHO - EXECUTIVE/DEPARTMENTS/Department of Self-Governing Agencies.md",
-    "GOVERNMENTS/IDAHO - EXECUTIVE/Board of Pharmacy.md",
-    "TOPICS/Counseling Compact.md",
-    "TOPICS/building codes.md",
-    "SOURCES/HEARINGS/2025/2025-01-21 Senate Commerce.md",
-    "ORGANIZATIONS/Building Contractors Association of Southwest Idaho.md",
-    "TOPICS/construction.md",
-    "SOURCES/HEARINGS/2025/2025-01-15 House Business.md",
-    "GOVERNMENTS/Board of Professional Counselors and Marriage and Family Therapists.md",
-    "TOPICS/counselors.md",
-    "TOPICS/therapists.md",
-    "TOPICS/interstate compact.md",
+    "SOURCES/x hey you make sure to link these/Article 2020-03-13 Statehouse roundup; March Madness.md",
+    "PLACES/CITIES/Rexburg.md",
+    "TOPICS/ECONOMY/RESIDENTIAL/realtors.md",
+    "PEOPLE/Sarah Clendenon.md",
+    "ORGANIZATIONS/POLITICS/Health Freedom Idaho.md",
+    "SOURCES/x hey you make sure to link these/2020-04-22 - Buzzfeed - There's More To Know About The Video Of A Mother Arrested On A Playground For Violating Stay-At-Home Orders.md",
+    "TOPICS/STATE AFFAIRS/Second Amendment.md",
+    "SOURCES/x hey you make sure to link these/2019-11-22 - Buzzfeed News - THE  FIGHT TO BEAR ARMS.md",
+    "right to bear arms.md",
+    "SOURCES/x hey you make sure to link these/2019-09-12 - Sandpoint Reader - Sound and fury.md",
+    "GOVERNMENTS/USA - FEDERAL/LEGISLATION/Bill of Rights.md",
+    "TOPICS/STATE AFFAIRS/First Amendment.md",
+    "GOVERNMENTS/USA - FEDERAL/LEGISLATION/U.S. Constitution.md",
+    "TOPICS/beneficial use.md",
+    "TOPICS/YouTube.md",
+    "SOURCES/HEARINGS/2020/2020-01-29 House State Affairs.md",
+    "TOPICS/Kaiser Family Foundation.md",
+    "SOURCES/x hey you make sure to link these/2023-10-28 - CDA Press - Early voting sees disturbances near elections office.md",
+    "TOPICS/freedom of the press.md",
+    "TOPICS/freedom of assembly.md",
+    "TOPICS/right to petition the government.md",
+    "SOURCES/x hey you make sure to link these/2018-04-12 - Buzzfeed News - These Volunteers Are Battling Idaho’s Government To Expand Medicaid.md",
+    "SOURCES/x hey you make sure to link these/2017-10-22 - Buzzfeed News - Here’s What Happens When Republicans Have No One To Fight.md",
+    "TOPICS/freedom of speech.md",
+    "SOURCES/x hey you make sure to link these/2016-08-12 - Sandpoint Reader - Anti-abortion protesters disrupt community.md",
+    "TOPICS/freedom of religion.md",
     "SOURCES/HEARINGS/2025",
     "news med",
     "PLACES/LIBRARIES",
