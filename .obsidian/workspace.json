@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "0a863cdfad3c09ea",
+        "id": "2c413b749e3b62aa",
         "type": "tabs",
         "children": [
           {
-            "id": "0f21d8f72a0894a0",
+            "id": "8317d959c00163d3",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "file: \"bill of rights\"",
+                "query": "file: \"city council\"",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -80,7 +80,8 @@
               "title": "Recent Files"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -182,8 +183,7 @@
               "title": "Strange New Worlds"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -199,8 +199,18 @@
       "templates:Insert template": false
     }
   },
-  "active": "dbfa8ac519a0bb94",
+  "active": "5c9a03e2f4fc85c8",
   "lastOpenFiles": [
+    "PLACES/CITIES/Malad City.md",
+    "SOURCES/x hey you make sure to link these/2025-01-22 - Cache Valley Daily - Oxford City, with its rich history, disincorporated in December.md",
+    "GOVERNMENTS/IDAHO - EXECUTIVE/COUNTIES & CITIES/city council.md",
+    "PLACES/GEOGRAPHY/LAND/Cache Valley.md",
+    "PLACES/COMMUNITIES/Cache.md",
+    "PLACES/COUNTIES/Franklin County.md",
+    "PLACES/COMMUNITIES/Swanlake.md",
+    "TOPICS/EDUCATION/HIGHER EDUCATION/WWAMI joint medical education program.md",
+    "SOURCES/x hey you make sure to link these/2021-09-22 - Idaho Mountain Express - The housing crisis is a health care issue, too.md",
+    "PEOPLE/Sophia DeKlotz.md",
     "SOURCES/x hey you make sure to link these/Article 2020-03-13 Statehouse roundup; March Madness.md",
     "PLACES/CITIES/Rexburg.md",
     "TOPICS/ECONOMY/RESIDENTIAL/realtors.md",
@@ -217,16 +227,6 @@
     "TOPICS/beneficial use.md",
     "TOPICS/YouTube.md",
     "SOURCES/HEARINGS/2020/2020-01-29 House State Affairs.md",
-    "TOPICS/Kaiser Family Foundation.md",
-    "SOURCES/x hey you make sure to link these/2023-10-28 - CDA Press - Early voting sees disturbances near elections office.md",
-    "TOPICS/freedom of the press.md",
-    "TOPICS/freedom of assembly.md",
-    "TOPICS/right to petition the government.md",
-    "SOURCES/x hey you make sure to link these/2018-04-12 - Buzzfeed News - These Volunteers Are Battling Idaho’s Government To Expand Medicaid.md",
-    "SOURCES/x hey you make sure to link these/2017-10-22 - Buzzfeed News - Here’s What Happens When Republicans Have No One To Fight.md",
-    "TOPICS/freedom of speech.md",
-    "SOURCES/x hey you make sure to link these/2016-08-12 - Sandpoint Reader - Anti-abortion protesters disrupt community.md",
-    "TOPICS/freedom of religion.md",
     "SOURCES/HEARINGS/2025",
     "news med",
     "PLACES/LIBRARIES",
