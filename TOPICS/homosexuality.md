@@ -3,4 +3,4 @@ aliases:
   - homosexual
 ---
 [[same-sex marriage]]
-[[LGBTQ+ issues]] 
+[[LGBTQ+ issues 1]] 
