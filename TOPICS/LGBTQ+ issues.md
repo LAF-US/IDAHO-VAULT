@@ -1,1 +1,0 @@
-[[homosexuality]] [[same-sex marriage]] 
