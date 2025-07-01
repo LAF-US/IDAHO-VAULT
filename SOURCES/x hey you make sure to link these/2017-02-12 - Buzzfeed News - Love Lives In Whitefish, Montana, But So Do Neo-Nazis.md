@@ -36,7 +36,7 @@ Hate can gather in the most banal of places. Like a conference room at the Kalis
 
 Baldwin looks like a mix of a church dad and a real estate agent: He has a thick head of golden hair and a Mona Lisa smile that looks kind from one vantage point, scheming from another. For 35 years, he helmed a church in Pensacola, [[Florida]], where his anti-gay, [[anti-abortion]], fundamentalist preaching drew thousands.
 
-Baldwin believes the South should’ve won [[the Civil War]]. He believes that the “castrated churches” of [[United States of America|America]] are terrified of “Judaizers” and hamstrung by political correctness. For his various explicitly homophobic, anti-Semitic, and anti-Muslim preachings, Baldwin and his church have been designated an extremist group by the [[Southern Poverty Law Center]].
+Baldwin believes the South should’ve won [[the Civil War]]. He believes that the “castrated churches” of [[United States of America|America]] are terrified of “Judaizers” and hamstrung by political correctness. For his various explicitly homophobic, anti-Semitic, and anti-[[Muslim]] preachings, Baldwin and his church have been designated an extremist group by the [[Southern Poverty Law Center]].
 
 Hate can gather in the most banal of places.
 

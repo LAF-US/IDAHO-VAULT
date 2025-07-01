@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "2c413b749e3b62aa",
+        "id": "93188ef460444d0a",
         "type": "tabs",
         "children": [
           {
-            "id": "8317d959c00163d3",
+            "id": "64dc4d0152320f06",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -36,7 +36,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical",
+                "sortOrder": "alphabeticalReverse",
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "file: \"city council\"",
+                "query": "krem",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -80,8 +80,7 @@
               "title": "Recent Files"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -120,7 +119,7 @@
               "type": "outgoing-link",
               "state": {
                 "linksCollapsed": false,
-                "unlinkedCollapsed": false
+                "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
               "title": "Outgoing links"
@@ -183,7 +182,8 @@
               "title": "Strange New Worlds"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -199,34 +199,39 @@
       "templates:Insert template": false
     }
   },
-  "active": "5c9a03e2f4fc85c8",
+  "active": "64dc4d0152320f06",
   "lastOpenFiles": [
-    "PLACES/CITIES/Malad City.md",
-    "SOURCES/x hey you make sure to link these/2025-01-22 - Cache Valley Daily - Oxford City, with its rich history, disincorporated in December.md",
-    "GOVERNMENTS/IDAHO - EXECUTIVE/COUNTIES & CITIES/city council.md",
-    "PLACES/GEOGRAPHY/LAND/Cache Valley.md",
-    "PLACES/COMMUNITIES/Cache.md",
-    "PLACES/COUNTIES/Franklin County.md",
-    "PLACES/COMMUNITIES/Swanlake.md",
-    "TOPICS/EDUCATION/HIGHER EDUCATION/WWAMI joint medical education program.md",
-    "SOURCES/x hey you make sure to link these/2021-09-22 - Idaho Mountain Express - The housing crisis is a health care issue, too.md",
-    "PEOPLE/Sophia DeKlotz.md",
-    "SOURCES/x hey you make sure to link these/Article 2020-03-13 Statehouse roundup; March Madness.md",
-    "PLACES/CITIES/Rexburg.md",
-    "TOPICS/ECONOMY/RESIDENTIAL/realtors.md",
-    "PEOPLE/Sarah Clendenon.md",
-    "ORGANIZATIONS/POLITICS/Health Freedom Idaho.md",
-    "SOURCES/x hey you make sure to link these/2020-04-22 - Buzzfeed - There's More To Know About The Video Of A Mother Arrested On A Playground For Violating Stay-At-Home Orders.md",
-    "TOPICS/STATE AFFAIRS/Second Amendment.md",
-    "SOURCES/x hey you make sure to link these/2019-11-22 - Buzzfeed News - THE  FIGHT TO BEAR ARMS.md",
-    "right to bear arms.md",
-    "SOURCES/x hey you make sure to link these/2019-09-12 - Sandpoint Reader - Sound and fury.md",
-    "GOVERNMENTS/USA - FEDERAL/LEGISLATION/Bill of Rights.md",
-    "TOPICS/STATE AFFAIRS/First Amendment.md",
-    "GOVERNMENTS/USA - FEDERAL/LEGISLATION/U.S. Constitution.md",
-    "TOPICS/beneficial use.md",
-    "TOPICS/YouTube.md",
-    "SOURCES/HEARINGS/2020/2020-01-29 House State Affairs.md",
+    "TOPICS/STATE AFFAIRS/LGBTQ+ issues.md",
+    "TOPICS/gender identity.md",
+    "TOPICS/holy book.md",
+    "TOPICS/metropolitan statistical areas.md",
+    "TOPICS/neo-Nazi.md",
+    "TOPICS/parental rights.md",
+    "TOPICS/parental permissions.md",
+    "TOPICS/Reddit.md",
+    "TOPICS/Quran.md",
+    "TOPICS/water rights.md",
+    "TOPICS/Your Health Idaho.md",
+    "PLACES/OTHER/CITIES/Salt Lake City.md",
+    "ORGANIZATIONS/CHURCHES/Church of Jesus Christ of Latter-Day Saints.md",
+    "TOPICS/temples.md",
+    "TOPICS/places of worship.md",
+    "TOPICS/the Civil War.md",
+    "SOURCES/x hey you make sure to link these/2017-02-12 - Buzzfeed News - Love Lives In Whitefish, Montana, But So Do Neo-Nazis.md",
+    "TOPICS/Islam.md",
+    "TOPICS/Torah.md",
+    "ATTACHMENTS/DOCUMENTS/History of Property Tax in Idaho.pdf",
+    "ATTACHMENTS/DOCUMENTS/ID Property Tax Limitations and Initiatives 1978–present.pdf",
+    "ATTACHMENTS/DOCUMENTS/Broadband Strategic Plan.pdf",
+    "ATTACHMENTS/DOCUMENTS/Historic Survey of Roads in Idaho’s State Highway System Volume 1 - Historic Context.pdf",
+    "ATTACHMENTS/DOCUMENTS/Historic Survey of Roads in Idaho’s State Highway System Volume 2 - Application of the National Register of Historic Places Criteria for Evaluation.pdf",
+    "SOURCES/x hey you make sure to link these/2023-12-15 - Idaho Statesman & ProPublica- Idaho hasn’t assessed school buildings for 30 years; Students and educators helped us do it.md",
+    "SOURCES/x hey you make sure to link these/2025-06-09 - Valley Lookout - Citizen group seeks to file complaint about taxpayer subsidies to St. Luke’s McCall.md",
+    "SOURCES/x hey you make sure to link these/Idaho Education News 2021-08-26 Indoctrination task force calls on Legislature to make slew of changes.md",
+    "SOURCES/x hey you make sure to link these/FIRE 2021-08-05 Idaho education task force may threaten academic freedom.md",
+    "SOURCES/x hey you make sure to link these/Article 2023-09-21 Idaho GOP not hearing Bingham County appeal on Saturday (updated).md",
+    "SOURCES/x hey you make sure to link these/Article 2020-02-21 4-H students gather for government conference.md",
+    "SOURCES/x hey you make sure to link these/Article 2020-03-03 Legislature aims to refine initiative process.md",
     "SOURCES/HEARINGS/2025",
     "news med",
     "PLACES/LIBRARIES",
@@ -234,11 +239,6 @@
     "SOURCES/HEARINGS/2024",
     "X LABELER",
     "ATTACHMENTS/MAPS/Wildlife Management Units.png",
-    "ATTACHMENTS/DOCUMENTS/Sign_Chart_Supplement.pdf",
-    "ATTACHMENTS/DOCUMENTS/ID Property Tax Limitations and Initiatives 1978–present.pdf",
-    "ATTACHMENTS/DOCUMENTS/Historic Survey of Roads in Idaho’s State Highway System Volume 1 - Historic Context.pdf",
-    "ATTACHMENTS/DOCUMENTS/Broadband Strategic Plan.pdf",
-    "ATTACHMENTS/DOCUMENTS",
     "Pasted image 20231121102332.png"
   ]
 }
