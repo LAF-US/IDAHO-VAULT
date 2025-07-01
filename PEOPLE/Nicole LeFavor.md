@@ -6,4 +6,4 @@ tags:
 ---
 Residence: [[Boise]]
 - former [[Senate member]]
-- [[LGBTQ+ issues]], [[Add the Words]] 
+- [[LGBTQ+ issues 1]], [[Add the Words]] 
