@@ -3,4 +3,4 @@ aliases:
   - Pride
   - gay pride
 ---
-[[LGBTQ+ issues]] 
+[[LGBTQ+ issues 1]] 
