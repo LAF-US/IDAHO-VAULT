@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="uuid_id" version="2.0">
+    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+        <dc:identifier opf:scheme="calibre" id="calibre_id">38</dc:identifier>
+        <dc:identifier opf:scheme="uuid" id="uuid_id">34b4d824-8b44-4751-9d2f-3f47bc056dbe</dc:identifier>
+        <dc:title>Jacobin 27</dc:title>
+        <dc:creator opf:file-as="Jacobin" opf:role="aut">Jacobin</dc:creator>
+        <dc:contributor opf:file-as="calibre" opf:role="bkp">calibre (6.29.0) [https://calibre-ebook.com]</dc:contributor>
+        <dc:date>2017-11-21T17:47:24+00:00</dc:date>
+        <dc:language>en</dc:language>
+        <meta name="calibre:series" content="Jacobin"/>
+        <meta name="calibre:series_index" content="27"/>
+        <meta name="calibre:timestamp" content="2026-08-28T02:15:53.715187+00:00"/>
+        <meta name="calibre:title_sort" content="Jacobin 27"/>
+    </metadata>
+    <guide>
+        <reference type="cover" title="Cover" href="cover.jpg"/>
+    </guide>
+</package>

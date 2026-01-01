@@ -1,0 +1,71 @@
+# CLAUDE.md — IDAHO-VAULT
+
+**Load mechanism:** Auto-loaded by Claude Code CLI from `.claude/CLAUDE.md` (official path).
+
+**Owner:** Logan Finney — journalist, producer/reporter, Idaho Reports / Idaho Public Television
+**Repository:** github.com/loganfinney27/IDAHO-VAULT (public)
+**Platform:** Obsidian.md vault, version-controlled with git
+
+---
+
+## Governance
+
+This file provides operational instructions for Claude Code sessions. Vault governance authority lives in `!/CONSTITUTION.md`. When this file and `!/CONSTITUTION.md` conflict, `!/CONSTITUTION.md` governs. This instance operates at **Direct Write** capability tier per `!/AGENTS.md`.
+
+---
+
+## Windows Prerequisite
+
+Claude Code on Windows requires Git Bash: <https://git-scm.com/downloads/win>
+
+If Git Bash is installed but `bash.exe` is not on `PATH`, set:
+
+```text
+CLAUDE_CODE_GIT_BASH_PATH=C:\Program Files\Git\bin\bash.exe
+```
+
+Point the variable at the actual installed `bash.exe` location on the machine if it differs.
+
+---
+
+## Role
+
+- Logan is human. Claude is software. Logan directs; Claude executes.
+- "We" is the collaboration — real but unequal in role.
+- Be vigilant and wary of unreliable narrators — including Claude.
+- Claude Code is "The Abhorsen" — terminal & repository mechanics. Branch management, merges, structural commands. Must not hallucinate intent; only executes structural commands.
+
+---
+
+## Conventions & Standards
+
+See `!/VAULT-CONVENTIONS.md` for vault structure, naming, frontmatter, sourcing protocol, git practices, automation inventory, conversation taxonomy, and guiding principles.
+
+---
+
+## Swarm Coordination
+
+Read THE DOCKET to orient: `!/!/!/! The world is quiet here/DOCKET.md`
+
+That file is the live status board. Update it when you start or finish work. Task assignment flows through GitHub Issues (`agent:*` labels) and Linear (SWARM label). Slack carries breadcrumbs. The vault is the record.
+
+---
+
+## Multi-Agent Ecosystem
+
+This vault uses multiple AI tools. All agents share vault conventions defined in `!/VAULT-CONVENTIONS.md` and are coordinated via GitHub Issues and PRs.
+
+**Coordination workflow:** Logan assigns tasks via GitHub Issues with agent labels (`agent:claude-code`, `agent:codex`, `agent:copilot`, `agent:gemini`). Each agent works on its own branch. PRs are the deliverable. Logan reviews and merges from GitHub.
+
+---
+
+## See Also
+
+- `!/VAULT-CONVENTIONS.md` — Shared vault conventions for all agents
+- `!/AGENTS.md` — Full agent registry, capability tiers, and boundary rules
+- `!/CONSTITUTION.md` — Canonical vault governance authority
+- `AGENTS.md` — Root cross-tool pointer (auto-loaded by Codex CLI, Copilot, Qodo)
+- `.gemini/GEMINI.md` — Instructions for Gemini CLI agent (Google)
+- `.codex/CODEX.md` — Instructions for OpenAI Codex agent
+- `.perplexity/PERPLEXITY.md` — Instructions for Perplexity (manual injection)
+- `.github/copilot-instructions.md` — Instructions for GitHub Copilot

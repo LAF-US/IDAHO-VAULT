@@ -1,0 +1,269 @@
+{
+  "pull_request": {
+    "number": 561,
+    "url": "https://github.com/LAF-US/IDAHO-VAULT/pull/561",
+    "title": "Pickle closeclaw",
+    "state": "OPEN",
+    "owner": "LAF-US",
+    "repo": "IDAHO-VAULT"
+  },
+  "conversation_comments": [
+    {
+      "id": "IC_kwDONe6gj88AAAABGmuCJA",
+      "body": "### Qodo reviews are paused for this user.\n\nTroubleshooting steps vary by plan [Learn more \u2192](https://docs.qodo.ai/subscription-plans#what-you%E2%80%99ll-see-when-reviews-are-paused)\n\n\n**On a Teams plan?**\nReviews resume once this user has a paid seat *and* their Git account is linked in Qodo.\n[Link Git account \u2192](https://docs.qodo.ai/subscription-plans#linking-a-git-account)\n\n**Using GitHub Enterprise Server, GitLab Self-Managed, or Bitbucket Data Center?**\nThese require an Enterprise plan - Contact us\n[Contact us \u2192](https://docs.qodo.ai/qodo-support#support)\n",
+      "createdAt": "2026-06-18T05:07:34Z",
+      "updatedAt": "2026-06-18T05:07:34Z",
+      "author": {
+        "login": "qodo-code-review"
+      }
+    },
+    {
+      "id": "IC_kwDONe6gj88AAAABGmuChA",
+      "body": "You have reached your Codex usage limits for code reviews. You can see your limits in the [Codex usage dashboard](https://chatgpt.com/codex/cloud/settings/usage).",
+      "createdAt": "2026-06-18T05:07:35Z",
+      "updatedAt": "2026-06-18T05:07:35Z",
+      "author": {
+        "login": "chatgpt-codex-connector"
+      }
+    },
+    {
+      "id": "IC_kwDONe6gj88AAAABGmuDLw",
+      "body": "<!-- This is an auto-generated comment: summarize by coderabbit.ai -->\n<!-- This is an auto-generated comment: skip review by coderabbit.ai -->\n\n> [!IMPORTANT]\n> ## Review skipped\n> \n> Too many files!\n> \n> This PR contains 194 files, which is 44 over the limit of 150.\n> \n> To get a review, narrow the scope:\n>   \u2022 coderabbit review --type committed     # exclude uncommitted changes\n>   \u2022 coderabbit review --dir <path>         # limit to a subdirectory\n>   \u2022 coderabbit review --base <branch>      # compare against a closer base\n> \n> <details>\n> <summary>\u2699\ufe0f Run configuration</summary>\n> \n> **Configuration used**: Path: .coderabbit.yaml\n> \n> **Review profile**: CHILL\n> \n> **Plan**: Pro Plus\n> \n> **Run ID**: `5426540b-9784-49ba-8014-6a8eafba2a78`\n> \n> </details>\n> \n> <details>\n> <summary>\ud83d\udce5 Commits</summary>\n> \n> Reviewing files that changed from the base of the PR and between 70ee921f3521b9184de1dafbb945af93f90ac240 and 959d5606adecd0ac11956ce6ce022be476c5d897.\n> \n> </details>\n> \n> <details>\n> <summary>\u26d4 Files ignored due to path filters (23)</summary>\n> \n> * `storage/Android/media/com.Slack/Notifications/Slack - Boing.mp3` is excluded by `!**/*.mp3`\n> * `storage/Android/media/com.Slack/Notifications/Slack - Ding.mp3` is excluded by `!**/*.mp3`\n> * `storage/Android/media/com.Slack/Notifications/Slack - Drop.mp3` is excluded by `!**/*.mp3`\n> * `storage/Android/media/com.Slack/Notifications/Slack - Here you go.mp3` is excluded by `!**/*.mp3`\n> * `storage/Android/media/com.Slack/Notifications/Slack - Hi.mp3` is excluded by `!**/*.mp3`\n> * `storage/Android/media/com.Slack/Notifications/Slack - Huddle Invite.mp3` is excluded by `!**/*.mp3`\n> * `storage/Android/media/com.Slack/Notifications/Slack - Incoming call.mp3` is excluded by `!**/*.mp3`\n> * `storage/Android/media/com.Slack/Notifications/Slack - Knock brush.mp3` is excluded by `!**/*.mp3`\n> * `storage/Android/media/com.Slack/Notifications/Slack - Plink.mp3` is excluded by `!**/*.mp3`\n> * `storage/Android/media/com.Slack/Notifications/Slack - Tada.mp3` is excluded by `!**/*.mp3`\n> * `storage/Android/media/com.Slack/Notifications/Slack - Whoa.mp3` is excluded by `!**/*.mp3`\n> * `storage/Android/media/com.Slack/Notifications/Slack - Wow.mp3` is excluded by `!**/*.mp3`\n> * `storage/Android/media/com.Slack/Notifications/Slack - Yoink.mp3` is excluded by `!**/*.mp3`\n> * `storage/DCIM/Camera/PXL_20260324_163950160.jpg` is excluded by `!**/*.jpg`\n> * `storage/DCIM/Camera/PXL_20260617_144407819.mp4` is excluded by `!**/*.mp4`\n> * `storage/Music/Merlin/2026-02-15 14_49.wav` is excluded by `!**/*.wav`\n> * `storage/Music/Merlin/2026-02-25 17_33.wav` is excluded by `!**/*.wav`\n> * `storage/Music/Merlin/2026-02-26 08_24.wav` is excluded by `!**/*.wav`\n> * `storage/Music/Merlin/2026-02-28 09_35.wav` is excluded by `!**/*.wav`\n> * `storage/Music/Merlin/2026-03-07 17_38.wav` is excluded by `!**/*.wav`\n> * `storage/Music/Merlin/2026-03-07 17_41.wav` is excluded by `!**/*.wav`\n> * `storage/Music/Merlin/2026-03-26 18_35.wav` is excluded by `!**/*.wav`\n> * `storage/Music/Merlin/2026-03-26 18_40.wav` is excluded by `!**/*.wav`\n> \n> </details>\n> \n> <details>\n> <summary>\ud83d\udcd2 Files selected for processing (194)</summary>\n> \n> * ` (2).gitconfig`\n> * `!-dotfolder-hashcache.json`\n> * `!/INBOX/fury-window-terminal-settings.json`\n> * `- Claude Fable 5 and Claude Mythos 5.md`\n> * `- Creating rulesets for a repository.md`\n> * `- Dario Amodei \u2014 Policy on the AI Exponential.md`\n> * `- GPT-5.5 System Card.md`\n> * `- Hyperagents.md`\n> * `- Introducing Superagent A Multi-Agent System for Work.md`\n> * `- Research - AI at Meta.md`\n> * `- Statement on the US government directive to suspend access to Fable 5 and Mythos 5.md`\n> * `.aikido/AIKIDO.md`\n> * `.aikido/stub.txt`\n> * `.alpha/ALPHA.md`\n> * `.alpha/stub.txt`\n> * `.antigravity/stub.txt`\n> * `.bigpickle/BIGPICKLE.md`\n> * `.bigpickle/stub.txt`\n> * `.claude (2).json`\n> * `.claude (3).json`\n> * `.config/CONFIG.md`\n> * `.config/op/config`\n> * `.config/op/config.vault`\n> * `.config/scoop/config.json`\n> * `.config/scoop/config.json.vault`\n> * `.config/stub.txt`\n> * `.cursor/CURSOR.md`\n> * `.cursor/stub.txt`\n> * `.elpis/stub.txt`\n> * `.factory/FACTORY.md`\n> * `.factory/stub.txt`\n> * `.gemini/stub.txt`\n> * `.ghcp-appmod/GHCP-APPMOD.md`\n> * `.ghcp-appmod/stub.txt`\n> * `.giant/GIANT.md`\n> * `.giant/stub.txt`\n> * `.githooks/GITHOOKS.md`\n> * `.githooks/stub.txt`\n> * `.gitignore`\n> * `.gitlab/GITLAB.md`\n> * `.gitlab/stub.txt`\n> * `.ipynb_checkpoints/IPYNB_CHECKPOINTS.md`\n> * `.ipynb_checkpoints/stub.txt`\n> * `.ipython/IPYTHON.md`\n> * `.ipython/stub.txt`\n> * `.journalist/stub.txt`\n> * `.jupyter/JUPYTER.md`\n> * `.jupyter/stub.txt`\n> * `.kimi/KIMI.md`\n> * `.kimi/stub.txt`\n> * `.kinopio/KINOPIO.md`\n> * `.kinopio/stub.txt`\n> * `.local/LOCAL.md`\n> * `.local/stub.txt`\n> * `.moxie/stub.txt`\n> * `.npm/NPM.md`\n> * `.npm/stub.txt`\n> * `.ollama/OLLAMA.md`\n> * `.ollama/backup/config.json.1779687662`\n> * `.ollama/backup/config.json.1779687701`\n> * `.ollama/backup/config.json.1779689324`\n> * `.ollama/backup/config.json.1779689332`\n> * `.ollama/backup/config.json.1779689336`\n> * `.ollama/config.json`\n> * `.ollama/history`\n> * `.ollama/stub.txt`\n> * `.openclaw/stub.txt`\n> * `.opencode/OPENCODE.md`\n> * `.opencode/stub.txt`\n> * `.opengraph/OPENGRAPH.md`\n> * `.opengraph/stub.txt`\n> * `.openrouter/OPENROUTER.md`\n> * `.openrouter/stub.txt`\n> * `.phonetonote/PHONETONOTE.md`\n> * `.phonetonote/stub.txt`\n> * `.pi/PI.md`\n> * `.pi/stub.txt`\n> * `.pithos/stub.txt`\n> * `.python/stub.txt`\n> * `.sbx-denybin/SBX-DENYBIN.md`\n> * `.sbx-denybin/stub.txt`\n> * `.shard/SHARD.md`\n> * `.shard/stub.txt`\n> * `.ssh/SSH.md`\n> * `.ssh/stub.txt`\n> * `.test-conflict/TEST-CONFLICT.md`\n> * `.test-conflict/conflict.txt.home`\n> * `.test-conflict/conflict.txt.vault`\n> * `.test-conflict/stub.txt`\n> * `.test-conflict/unique-home.txt`\n> * `.test-conflict/unique-vault.txt`\n> * `.test_payload.sig`\n> * `.vibe/VIBE.md`\n> * `.vibe/stub.txt`\n> * `.vscode-shared/VSCODE-SHARED.md`\n> * `.vscode-shared/stub.txt`\n> * `.zshrc`\n> * `2001-06-15 - Gay Idaho couple recovering after attack in Caldwell, police say.md`\n> * `2001-06-15 - Meridian Police asking for help identifying two people involved in alleged Walmart parking lot battery.md`\n> * `2001-06-15 - Payette County burn ban starts early as Idaho fire risk rises.md`\n> * `2026-03-01 - Self-Improving AI Agents  Meta.md`\n> * `2026-03-14 - What I Learned Parsing Claude Code\u2019s JSONL Session Logs 1.md`\n> * `2026-03-14 - What I Learned Parsing Claude Code\u2019s JSONL Session Logs.md`\n> * `2026-05-13 - Where are Claude Code logs stored.md`\n> * `2026-06-03 - claude-code-log.md`\n> * `2026-06-04 - Residents try to fly Pride flags around Harrison Boulevard despite ban.md`\n> * `2026-06-10.md`\n> * `2026-06-11 - Canyon County Pride is this weekend in Nampa \u2014 with new park restrictions.md`\n> * `2026-06-11.md`\n> * `2026-06-12 - Data retention practices for Mythos-class models.md`\n> * `2026-06-14 - Anthropic Customers Seek Refunds After Fable 5 Shutdown.md`\n> * `2026-06-14 - Breakingviews - Anthropic becomes a cautionary sovereign-AI fable.md`\n> * `2026-06-14 - Civilian vigilante group accused Idaho man of enticing teen. He\u2019s been arrested.md`\n> * `2026-06-14 - Cyber experts warn Fable limits aid attackers and hurt defenders.md`\n> * `2026-06-14.md`\n> * `2026-06-15 - Ada County considers increasing property taxes \u2018just to keep the lights on\u2019.md`\n> * `2026-06-15 - Anthropic Pulls Claude Fable and Mythos AI Models After Feds Claim Jailbreak.md`\n> * `2026-06-15 - Canyon County sent out property tax assessments. What homeowners need to know.md`\n> * `2026-06-15 - Idaho Gov. Brad Little forms working group to keep college athletics competitive.md`\n> * `2026-06-15 - Idaho drought, summer heat may limit fishing opportunities, Fish and Game says.md`\n> * `2026-06-15 - Nampa swears in Darl Bruner as mayor after Hogaboam\u2019s sudden death.md`\n> * `2026-06-15 - Owyhee County deputies investigate Marsing fight involving stabbing, gunfire.md`\n> * `2026-06-15 - Rodeo stampedes back into Nampa this week.md`\n> * `2026-06-15 - \u2018Fix this code.\u2019 The three little words behind the U.S. government decision that shut down Anthropic\u2019s Fable and Mythos AI models.md`\n> * `2026-06-15.md`\n> * `2026-06-17.md`\n> * `CALENDAR.md`\n> * `COMPLETE_TEST_REPORT.md`\n> * `Codex/2026-06-01/the-janitor-awakens/work/pr-body-swarm-liveness.md`\n> * `Codex/2026-06-01/the-janitor-awakens/work/topology-liveness-2026-06-10/TOPOLOGY-CENSUS-dotfolders-20260611T081229Z.json`\n> * `Codex/2026-06-01/the-janitor-awakens/work/topology-liveness-2026-06-10/TOPOLOGY-CENSUS-dotfolders-20260611T081229Z.md`\n> * `MOC.md`\n> * `RAY-BAN-META-SIDELOAD-APP-RESEARCH-2026-06-18.md`\n> * `ROAD.md`\n> * `TEST_EXECUTION_SUMMARY.md`\n> * `TO DO LIST.md`\n> * `The world, from the bank - Joseph's Reflection.md`\n> * `UOP.md`\n> * `WAYFARER-GEN-I-VISIONCLAW-IMPLEMENTATION-PLAN-2026-06-18.md`\n> * `_191main.txt`\n> * `_191pr.txt`\n> * `_353main.md`\n> * `_353pr.md`\n> * `_375main.py`\n> * `_375pr.py`\n> * `_main-um.py`\n> * `_mainjsweep.py`\n> * `_pr128jsweep.py`\n> * `_pr94-um.py`\n> * `audit-prs.ps1`\n> * `audit-results.txt`\n> * `closed_prs.json`\n> * `codeql_delete_worklist.json`\n> * `dotfolder-reconcile.ps1`\n> * `final_test_runner.py`\n> * `lfs_filter.gitconfig`\n> * `llm_router.ps1`\n> * `main_analyses.json`\n> * `main_analyses2.json`\n> * `main_ruleset.json`\n> * `package (2).json`\n> * `package-lock (2).json`\n> * `quick_check.py`\n> * `reconcile-batch.cmd`\n> * `ruleset.json`\n> * `run_all_tests.py`\n> * `run_tests.bat`\n> * `storage/Android/media/com.whatsapp/WhatsApp/Databases/msgstore-increment-1.db.crypt14`\n> * `storage/Documents/IDAHO-VAULT/quartz/docs/plugins/index.md`\n> * `storage/Pictures/Instagram/IMG_20260331_091023_739.webp`\n> * `storage/Pictures/Messages/IMG_20260317_203500.heic`\n> * `syntax_validator.py`\n> * `temp_test_runner.py`\n> * `test_llm_configs.ps1`\n> * `tests/phone_link_source_b6vfjyvg/phone_link_source_b6vfjyvg.md`\n> * `tests/phone_link_source_mvxslub0/phone_link_source_mvxslub0.md`\n> * `tests/phone_link_source_ylj77cob/phone_link_source_ylj77cob.md`\n> * `tests/phone_link_source_zofpyt8a/phone_link_source_zofpyt8a.md`\n> * `tests/phone_link_vault_23k9pn_c/phone_link_vault_23k9pn_c.md`\n> * `tests/phone_link_vault_3x8z9a95/phone_link_vault_3x8z9a95.md`\n> * `tests/phone_link_vault_9r9m1phw/phone_link_vault_9r9m1phw.md`\n> * `tests/phone_link_vault_oj7lvnk1/phone_link_vault_oj7lvnk1.md`\n> * `tests/pytest-of-loganf/pytest-of-loganf.md`\n> * `tests/test_metadata_survey_output_548qwx2r/test_metadata_survey_output_548qwx2r.md`\n> * `tests/test_require_checkout_wcb4gk0i/test_require_checkout_wcb4gk0i.md`\n> * `tests/tmp15wipcs_/tmp15wipcs_.md`\n> * `tests/tmp5x_o9yef/tmp5x_o9yef.md`\n> * `tests/tmpe7tiikt3/tmpe7tiikt3.md`\n> * `tests/tmph_nh4ri1/tmph_nh4ri1.md`\n> * `tmp0ore0t_x/tmp0ore0t_x.md`\n> * `tmpc4d58jl_/tmpc4d58jl_.md`\n> * `tmpclvrvu64/tmpclvrvu64.md`\n> * `tmpzajm_n6y/tmpzajm_n6y.md`\n> * `unmerged_prs.json`\n> \n> </details>\n> \n> You can disable this status message by setting the `reviews.review_status` to `false` in the CodeRabbit configuration file.\n> \n> Use the checkbox below for a quick retry:\n> - [ ] <!-- {\"checkboxId\": \"e9bb8d72-00e8-4f67-9cb2-caf3b22574fe\"} --> \ud83d\udd0d Trigger review\n\n<!-- end of auto-generated comment: skip review by coderabbit.ai -->\n\n<!-- finishing_touch_checkbox_start -->\n\n<details>\n<summary>\u2728 Finishing Touches</summary>\n\n<details>\n<summary>\ud83e\uddea Generate unit tests (beta)</summary>\n\n- [ ] <!-- {\"checkboxId\": \"f47ac10b-58cc-4372-a567-0e02b2c3d479\", \"radioGroupId\": \"utg-output-choice-group-unknown_comment_id\"} -->   Create PR with unit tests\n- [ ] <!-- {\"checkboxId\": \"6ba7b810-9dad-11d1-80b4-00c04fd430c8\", \"radioGroupId\": \"utg-output-choice-group-unknown_comment_id\"} -->   Commit unit tests in branch `pickle-closeclaw`\n\n</details>\n\n</details>\n\n<!-- finishing_touch_checkbox_end -->\n<!-- tips_start -->\n\n---\n\n\n\n\n<sub>Comment `@coderabbitai help` to get the list of available commands and usage tips.</sub>\n\n<!-- tips_end -->",
+      "createdAt": "2026-06-18T05:07:37Z",
+      "updatedAt": "2026-06-18T05:07:37Z",
+      "author": {
+        "login": "coderabbitai"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": "PRR_kwDONe6gj88AAAABDYQDhw",
+      "state": "COMMENTED",
+      "body": "Sorry @loganfinney27, your pull request is larger than the review limit of 150000 diff characters",
+      "submittedAt": "2026-06-18T05:07:37Z",
+      "author": {
+        "login": "sourcery-ai"
+      }
+    },
+    {
+      "id": "PRR_kwDONe6gj88AAAABDYQtqw",
+      "state": "COMMENTED",
+      "body": "",
+      "submittedAt": "2026-06-18T05:09:44Z",
+      "author": {
+        "login": "github-code-quality"
+      }
+    }
+  ],
+  "review_threads": [
+    {
+      "id": "PRRT_kwDONe6gj86Kbimu",
+      "isResolved": false,
+      "isOutdated": false,
+      "path": "_mainjsweep.py",
+      "line": 32,
+      "diffSide": "RIGHT",
+      "startLine": 32,
+      "startDiffSide": null,
+      "originalLine": 32,
+      "originalStartLine": null,
+      "resolvedBy": null,
+      "comments": {
+        "nodes": [
+          {
+            "id": "PRRC_kwDONe6gj87MopX-",
+            "body": "## Statement has no effect\n\n<p>This statement has no effect.</p>",
+            "createdAt": "2026-06-18T05:09:44Z",
+            "updatedAt": "2026-06-18T05:09:44Z",
+            "author": {
+              "login": "github-code-quality"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "PRRT_kwDONe6gj86Kbim2",
+      "isResolved": false,
+      "isOutdated": false,
+      "path": "_pr128jsweep.py",
+      "line": 33,
+      "diffSide": "RIGHT",
+      "startLine": 33,
+      "startDiffSide": null,
+      "originalLine": 33,
+      "originalStartLine": null,
+      "resolvedBy": null,
+      "comments": {
+        "nodes": [
+          {
+            "id": "PRRC_kwDONe6gj87MopYI",
+            "body": "## Statement has no effect\n\nThis statement has no effect.\n\n---\n\nTo fix this without changing functionality, replace the ellipsis-bodied protocol method with a <code>pass</code> body.<br>\nIn <code>_pr128jsweep.py</code>, update <code>Reporter.send</code> (line 33 region) from a one-line stub using <code>...</code> to a standard multi-line method with <code>pass</code>.</p>\n<p>This preserves typing behavior and runtime behavior while removing the no-effect statement that CodeQL flags. No imports, dependencies, or additional definitions are needed.",
+            "createdAt": "2026-06-18T05:09:44Z",
+            "updatedAt": "2026-06-18T05:09:44Z",
+            "author": {
+              "login": "github-code-quality"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "PRRT_kwDONe6gj86KbinA",
+      "isResolved": false,
+      "isOutdated": false,
+      "path": "final_test_runner.py",
+      "line": 9,
+      "diffSide": "RIGHT",
+      "startLine": 9,
+      "startDiffSide": null,
+      "originalLine": 9,
+      "originalStartLine": null,
+      "resolvedBy": null,
+      "comments": {
+        "nodes": [
+          {
+            "id": "PRRC_kwDONe6gj87MopYS",
+            "body": "## Unused import\n\nImport of 'traceback' is not used.\n\n---\n\n<p>To fix an unused import, remove the import statement when the module is not referenced anywhere in the file.</p>\n<p>Best fix here (without changing functionality):</p>\n<ul>\n<li>Edit <code>final_test_runner.py</code> and remove line 9: <code>import traceback</code>.</li>\n<li>Keep all other imports unchanged.</li>\n<li>No logic changes are required, since removing an unused import does not alter runtime behavior.</li>\n</ul>",
+            "createdAt": "2026-06-18T05:09:44Z",
+            "updatedAt": "2026-06-18T05:09:44Z",
+            "author": {
+              "login": "github-code-quality"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "PRRT_kwDONe6gj86KbinF",
+      "isResolved": false,
+      "isOutdated": false,
+      "path": "final_test_runner.py",
+      "line": 10,
+      "diffSide": "RIGHT",
+      "startLine": 10,
+      "startDiffSide": null,
+      "originalLine": 10,
+      "originalStartLine": null,
+      "resolvedBy": null,
+      "comments": {
+        "nodes": [
+          {
+            "id": "PRRC_kwDONe6gj87MopYY",
+            "body": "## Unused import\n\nImport of 'Path' is not used.\n\n---\n\nTo fix an unused import, remove only the unused symbol import and keep all behavior unchanged.</p>\n<p>Best fix here:</p>\n<ul>\n<li>Edit <code>final_test_runner.py</code> at the import section (lines 7\u201310 in the snippet).</li>\n<li>Remove <code>from pathlib import Path</code>.</li>\n<li>Do not change any other imports or logic, since no functionality depends on that line in the provided code.</li>\n</ul>\n<p>This resolves the CodeQL warning without altering runtime behavior.",
+            "createdAt": "2026-06-18T05:09:44Z",
+            "updatedAt": "2026-06-18T05:09:44Z",
+            "author": {
+              "login": "github-code-quality"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "PRRT_kwDONe6gj86KbinK",
+      "isResolved": false,
+      "isOutdated": false,
+      "path": "quick_check.py",
+      "line": 4,
+      "diffSide": "RIGHT",
+      "startLine": 4,
+      "startDiffSide": null,
+      "originalLine": 4,
+      "originalStartLine": null,
+      "resolvedBy": null,
+      "comments": {
+        "nodes": [
+          {
+            "id": "PRRC_kwDONe6gj87MopYf",
+            "body": "## Unused import\n\nImport of 'sys' is not used.\n\n---\n\nThe correct fix is to remove the unused <code>import sys</code> statement and keep only imports that are actually referenced.</p>\n<p>Best single change (no behavior change):</p>\n<ul>\n<li>In <code>quick_check.py</code>, delete line 4 (<code>import sys</code>).</li>\n<li>Keep <code>import traceback</code> because it is used in the generic exception handler (<code>traceback.print_exc()</code>).</li>\n</ul>\n<p>No additional methods, definitions, or dependencies are needed.",
+            "createdAt": "2026-06-18T05:09:44Z",
+            "updatedAt": "2026-06-18T05:09:44Z",
+            "author": {
+              "login": "github-code-quality"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "PRRT_kwDONe6gj86KbinR",
+      "isResolved": false,
+      "isOutdated": false,
+      "path": "run_all_tests.py",
+      "line": 9,
+      "diffSide": "RIGHT",
+      "startLine": 9,
+      "startDiffSide": null,
+      "originalLine": 9,
+      "originalStartLine": null,
+      "resolvedBy": null,
+      "comments": {
+        "nodes": [
+          {
+            "id": "PRRC_kwDONe6gj87MopYr",
+            "body": "## Unused import\n\nImport of 'Path' is not used.\n\n---\n\n<p>The best fix is to remove the unused import and keep behavior unchanged.</p>\n<ul>\n<li>General approach: delete imports that are not referenced anywhere in the module.</li>\n<li>Specific change: in <code>run_all_tests.py</code>, remove <code>from pathlib import Path</code> (line 9 in the snippet).</li>\n<li>No additional methods, definitions, or dependency changes are needed.</li>\n<li>This preserves existing functionality while resolving the CodeQL warning.</li>\n</ul>",
+            "createdAt": "2026-06-18T05:09:44Z",
+            "updatedAt": "2026-06-18T05:09:44Z",
+            "author": {
+              "login": "github-code-quality"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "PRRT_kwDONe6gj86KbinT",
+      "isResolved": false,
+      "isOutdated": false,
+      "path": "syntax_validator.py",
+      "line": 8,
+      "diffSide": "RIGHT",
+      "startLine": 8,
+      "startDiffSide": null,
+      "originalLine": 8,
+      "originalStartLine": null,
+      "resolvedBy": null,
+      "comments": {
+        "nodes": [
+          {
+            "id": "PRRC_kwDONe6gj87MopYw",
+            "body": "## Unused import\n\nImport of 'sys' is not used.\n\n---\n\nRemove the unused <code>import sys</code> from <code>syntax_validator.py</code>.</p>\n<p>Best fix without changing functionality:</p>\n<ul>\n<li>Edit the import section at the top of <code>syntax_validator.py</code>.</li>\n<li>Keep <code>import os</code> (it is used by <code>os.chdir</code>).</li>\n<li>Delete <code>import sys</code> since it is not used in the provided code.</li>\n</ul>\n<p>No new methods, definitions, or dependencies are required.",
+            "createdAt": "2026-06-18T05:09:44Z",
+            "updatedAt": "2026-06-18T05:09:44Z",
+            "author": {
+              "login": "github-code-quality"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "PRRT_kwDONe6gj86KbinV",
+      "isResolved": false,
+      "isOutdated": false,
+      "path": "_mainjsweep.py",
+      "line": 96,
+      "diffSide": "RIGHT",
+      "startLine": 96,
+      "startDiffSide": null,
+      "originalLine": 96,
+      "originalStartLine": null,
+      "resolvedBy": null,
+      "comments": {
+        "nodes": [
+          {
+            "id": "PRRC_kwDONe6gj87MopY1",
+            "body": "## Unused local variable\n\nVariable alias is not used.\n\n---\n\n<p>To fix an unused local variable without changing functionality, remove the variable definition if its value is not consumed anywhere.</p>\n<p>Best fix here:</p>\n<ul>\n<li>In <code>_mainjsweep.py</code>, inside <code>main()</code>, delete the <code>alias</code> assignment line.</li>\n<li>No additional imports, methods, or definitions are needed.</li>\n<li>This preserves runtime behavior because <code>alias</code> currently affects nothing.</li>\n</ul>",
+            "createdAt": "2026-06-18T05:09:44Z",
+            "updatedAt": "2026-06-18T05:09:45Z",
+            "author": {
+              "login": "github-code-quality"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

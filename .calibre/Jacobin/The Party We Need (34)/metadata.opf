@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="uuid_id" version="2.0">
+    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+        <dc:identifier opf:scheme="calibre" id="calibre_id">34</dc:identifier>
+        <dc:identifier opf:scheme="uuid" id="uuid_id">259a1747-d70a-41b4-a8e1-d47eed4ba072</dc:identifier>
+        <dc:title>The Party We Need</dc:title>
+        <dc:creator opf:file-as="Jacobin" opf:role="aut">Jacobin</dc:creator>
+        <dc:contributor opf:file-as="calibre" opf:role="bkp">calibre (6.29.0) [https://calibre-ebook.com]</dc:contributor>
+        <dc:date>2016-11-18T19:57:42+00:00</dc:date>
+        <dc:language>en</dc:language>
+        <meta name="calibre:series" content="Jacobin"/>
+        <meta name="calibre:series_index" content="23"/>
+        <meta name="calibre:timestamp" content="2026-08-28T02:15:39+00:00"/>
+        <meta name="calibre:title_sort" content="Jacobin 23"/>
+    </metadata>
+    <guide>
+        <reference type="cover" title="Cover" href="cover.jpg"/>
+    </guide>
+</package>

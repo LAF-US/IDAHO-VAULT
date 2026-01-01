@@ -1,0 +1,25 @@
+{
+  "firstStartTime": "2026-06-17T04:35:49.370Z",
+  "opusProMigrationComplete": true,
+  "opusProMigrationTimestamp": 1781670949589,
+  "sonnet1m45MigrationComplete": true,
+  "seenNotifications": {},
+  "migrationVersion": 13,
+  "userID": "9955747088912382c17f47b0a3b236e36c8f33b1e9c128c79a7e2d4db8f32564",
+  "cachedChromeExtensionInstalled": true,
+  "changelogLastFetched": 1781670949942,
+  "oauthAccount": {
+    "accountUuid": "c761f06c-c4b2-466b-bdf9-4892c2194414",
+    "emailAddress": "loganfinney27@gmail.com",
+    "organizationUuid": "3c7fe224-4f1f-4c0f-bbbd-e986bfeb6dcf",
+    "hasExtraUsageEnabled": true,
+    "billingType": "google_play_subscription",
+    "accountCreatedAt": "2026-03-09T21:59:10.710134Z",
+    "subscriptionCreatedAt": "2026-03-12T04:37:49.506632Z",
+    "ccOnboardingFlags": {},
+    "claudeCodeTrialEndsAt": null,
+    "claudeCodeTrialDurationDays": null,
+    "seatTier": null,
+    "displayName": "Logan"
+  }
+}

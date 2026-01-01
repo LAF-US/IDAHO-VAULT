@@ -1,0 +1,16 @@
+- [IDAHO-VAULT storage architecture](idaho-vault-storage-architecture.md) — git/LFS/annex tiers, per-clone LFS re-pin, vault-as-home links, Windows SSH agent hazard
+- [No hand-coded path lists](no-hand-coded-path-lists.md) — Logan rejects per-path enumeration in config; use classes/predicates/explicit-only
+- [Launchpad check after cleanup](launchpad-check-after-cleanup.md) — standing step at the end of every Mac app-cleanup pass
+- [Wizard Eyes failure mode](wizard-eyes-failure-mode.md) — treating agent-authored vault text as observed fact
+- [MacBook is transitional vault host](macbook-is-transitional-vault-host.md) — 2015 MBP at its OS ceiling; not the vault permanent medium
+- [Vault history grafts](vault-history-grafts.md) — local grafts restore lineage to the 2024-12-17 root; inferred parents, do not gc
+- [Never discard vault content](never-discard-vault-content.md) — standing rule: preserve, relocate, or ignore; never delete
+- [Never cite unread sources](never-cite-unread-sources.md) — read a source in full before citing it; search snippets and WebFetch summaries are not reading
+- [Machine location vocabulary](machine-location-vocabulary.md) — LAPTOP / VAULT / DRIVE mean specific things; do not conflate
+- [Vault order of operations](vault-order-of-operations.md) — merge everything first, then ONE rewrite (scrub+annex+dedup); never propose rotate-first
+- [Vault repo hazards](vault-repo-hazards.md) — corrupt pack, auto-gc disk blowout, hook defects; check before acting on the repo
+- [Vault-as-home symlinks](vault-as-home-symlinks.md) — dropped links break the tool, not the data; colima worked example
+- [Agent failure patterns](agent-failure-patterns.md) — manufactured hazards, session-distancing, peer echo, gate-bypass; read before reporting a finding
+- [Vault accumulated cruft](vault-accumulated-cruft.md) — 223 stray branches, 8 ref namespaces, nested repos-as-files; what the rewrite collapses
+- [MacBook CPU machine-check failures](macbook-cpu-machine-check-failures.md) — 6 uncorrectable MCEs in 6 days; L1D cache dying, corruption risk to vault writes
+- [SSH key provenance interim](ssh-key-provenance-interim.md) — all 3 Mac keys unapproved; vaultlink OK to use until Logan mints replacements

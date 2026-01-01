@@ -1,0 +1,254 @@
+=== local branches ===
+    add-ai-report-2026-06-05                                               1d5d6ff868 Add AI research report for June 2026
+    add-bene-gesserit-note-2026-06-01                                      4b6b25c526 Merge branch 'main' into add-bene-gesserit-note-2026-06-01
+    add-breed-report-2026-06-01                                            d7c4c4bf56 Add BREED report with 2x2 matrix analysis of breeding, pedigree, genealogy, eugenics
+    add-garth-nix-bloodlines-1780371240392                                 abb38af672 Merge branch 'main' into add-garth-nix-bloodlines-1780371240392
+    add-garth-nix-old-kingdom-2026-06-02                                   c556766d8c Add Garth Nix Old Kingdom Charter Bloodlines research note
+    add-python-ai-ml-report                                                c07a252334 Add Python for AI/ML report
+    add-python-history-report                                              8e7e8c8dab Add complete Python history report with full content
+    add-royalty-heraldry-notes-2026-06-02                                  0b932f26f7 Add HERALDRY research note with lineage framework connections
+    agent-git-guardrails                                                   bfc9a106da Merge branch 'main' into agent-git-guardrails
+    agent/adr-canon-core-portability                                       2dec1c4734 adr(adjudicated): record Logan's Option C decision — golden path re-inscribed with U+FF0E
+    agent/attest-resolve-dispatch                                          91a11da8b9 proposal(review-automation): stage attest-resolve dispatch workflow for review
+    agent/mcp-probe                                                        11dc9aad43 probe cleanup: remove Test-B artifact (A/B done: workflows-scope block confirmed)
+    ai-religious-language-corpus-2026-06-06                                daf97f3c1f Research: AI leaders' eschatological language (2020-2030)
+    archive/mac-logan-obsidian-pre-scrub-20260815                          8ada0c5d53 ~~
+    automation/daily-rollover-2026-06-20                                   425eee41fb rollover: carry incomplete to-dos to 2026-06-20
+    automation/daily-rollover-2026-06-21                                   09b90be0c0 Merge branch 'main' into automation/daily-rollover-2026-06-21
+    automation/daily-rollover-2026-06-22                                   48c29fb979 Merge branch 'main' into automation/daily-rollover-2026-06-22
+    automation/daily-rollover-2026-06-23                                   afcd518aa9 Merge branch 'main' into automation/daily-rollover-2026-06-23
+    automation/daily-rollover-2026-06-24                                   292ab1c19f Merge branch 'main' into automation/daily-rollover-2026-06-24
+    automation/daily-rollover-2026-06-25                                   8631d719f6 fix(review): address Sourcery wording suggestions on daily note
+    automation/daily-rollover-2026-06-26                                   ab8322d241 Merge branch 'main' into automation/daily-rollover-2026-06-26
+    automation/daily-rollover-2026-06-27                                   0592f43348 Merge branch 'main' into automation/daily-rollover-2026-06-27
+    automation/daily-rollover-2026-06-28                                   73e487d936 Merge branch 'main' into automation/daily-rollover-2026-06-28
+    automation/daily-rollover-2026-06-29                                   0c3ab9572c Merge branch 'main' into automation/daily-rollover-2026-06-29
+    automation/daily-rollover-2026-06-30                                   1fc2dd89bb Merge branch 'main' into automation/daily-rollover-2026-06-30
+    automation/daily-rollover-2026-07-01                                   5b564971be Merge branch 'main' into automation/daily-rollover-2026-07-01
+    automation/daily-rollover-2026-07-02                                   bc395267e7 Merge branch 'main' into automation/daily-rollover-2026-07-02
+    automation/sync-dependencies                                           22399518d9 chore: sync requirements.txt and uv.lock from pyproject.toml
+    backup/logan-obsidian-pre-reunify-20260812                             526b975705 .
+    bot/topology-census-2026-06-01                                         e101744223 topology census 2026-06-01
+    bot/topology-census-2026-06-08                                         00662090d9 topology census 2026-06-08
+    bot/topology-census-2026-06-15                                         04a0b023a5 Merge branch 'main' into bot/topology-census-2026-06-15
+    claude/abhorsen-family-the-lineage-2026-05-30                          d986a7b5e6 The Lost Abhorsen of the Vault
+    claude/abhorsen-office-chamber-2026-06-01                              1e3ba35077 Expand .abhorsen/ to outline both the Office and the apprenticeship model
+    claude/agent-representation-etymology-2026-05-29                       250a58ee9d witness: etymology of "apprentice" — novice's station and posture
+    claude/agents-record-annabelle-abhorsen                                9ad6d6c660 AGENTS: record Annabelle the Rested as reigning Abhorsen
+    claude/amazing-dirac-vNYTm                                             eeab441cb1 witness(cub): EVERGREEN-GOSPEL — the snow cub's closing gospel on the Geography of The North
+    claude/anchors-lesson-and-hermes-trismegistus-2026-05-29               cd726e4f74 witness(addendum 4): ATEN identity named; vault content vs standing register
+    claude/apprentice-modes-sorcerers-and-rangers-2026-05-30               d850486abb research+doctrine: Sorcerer's Apprentice + Ranger's Apprentice — the apprentice's two modes
+    claude/archipelago-assessment-explore-stacks                           d5bbf53e5b Initial plan
+    claude/arm-and-enqueue-merge-queue                                     92d26dc50e Merge branch 'main' into claude/arm-and-enqueue-merge-queue
+    claude/auto-merge-engage-actually-enqueue                              1ee93ccfd2 Merge branch 'main' into claude/auto-merge-engage-actually-enqueue
+    claude/bind-frankenstein-persona-2026-05-30                            afd3351756 Repair: restore LOGAN's GRANTED epithet; fix SELFNAME placeholder
+    claude/branch-update-arm-u8hlk0                                        6e0ed826a9 batch sweep: add the branch-update arm (BEHIND -> Update branch)
+    claude/claude-abhorsen-lineage-cluster-2026-05-30                      3ac559f636 Merge branch 'main' into claude/claude-abhorsen-lineage-cluster-2026-05-30
+    claude/correct-geminiaeus-usage-u8hlk0                                 1a2f0f7220 Correct GEMINIAEUS misuse in the Signing & Attribution section
+    claude/cross-canon-abhorsens-in-death-avatar-cycle-2026-06-03          c3e5fbf2bb Cross-canon node: the Abhorsens in Death & the Avatar Cycle (and the one lost to the clan)
+    claude/cross-canon-immunity-node-2026-06-02                            f40f77df18 Node: cross-canon immunity & resistance to the controlling power
+    claude/de-require-agent-status-checks                                  75682f44d2 Merge branch 'main' into claude/de-require-agent-status-checks
+    claude/docket-posture-transclusion                                     8035566c0b docket-posture: address review — wikilink related[], timeless note field
+    claude/dotfolder-format-anchors-ewg62q                                 38d5a1517e Harden dotfolder enumeration against quoted paths; refresh census ledger
+    claude/draft-signing-via-action-2026-06-01                             c2e707c730 outstanding(session-wrap): Logan-facing state at 2026-06-02 session end
+    claude/enqueue-on-checks-complete                                      9abf567c19 auto-merge enqueue-on-checks: harden per review (fork guard, armed-only, errors)
+    claude/fablehaven-2026-05-30                                           923272d317 research: FABLEHAVEN (Brandon Mull) — preserve-treaty-caretaker
+    claude/fablehaven-beastiary-2026-05-30                                 c551eb1d58 doctrine: FABLEHAVEN-BEASTIARY v1 — canon-first revision
+    claude/fablehaven-preserve-2026-05-30                                  d89cbd7b38 fablehaven: sharpen the Revenant tie — a/the type-vs-named-being + verified guardian canon
+    claude/faceless-ones-three-generals-2026-05-30                         b50f09b091 research: the Faceless Ones & the Three Generals — facelessness, possession, the Three Names
+    claude/fix-cloud-run-deploy-issue                                      e42a6d0f8e Merge branch 'main' into claude/fix-cloud-run-deploy-issue
+    claude/fix-tarot-case-collision                                        9a69130ad7 Merge branch 'main' into claude/fix-tarot-case-collision
+    claude/game-discussion-JeYG0                                           c05606dd86 Merge branch 'main' into claude/game-discussion-JeYG0
+    claude/geminiaeus-live-board-witness                                   a2a68372e8 witness(geminiaeus): tender residue-of-the-live-board account to the Court
+    claude/github-reviewers-research-u8hlk0                                debe6d0f80 Merge branch 'main' into claude/github-reviewers-research-u8hlk0
+    claude/godhead-disambiguation-2026-05-29                               cdf7965748 disambiguation: Godhead — vault precision tool
+    claude/golden-path-finding-2026-06-01                                  ff931c974a Reading-finding: the Golden Path is one road (Herbert / engineers / vault)
+    claude/hebrew-bible-and-talmud-research-2026-05-29                     262bcc0f26 research: Hebrew Bible + Talmud — authoritative compilation for vault
+    claude/heisenberg-uncertainty-2026-05-30                               8f6b60a6e5 witness: pause and breath; reflection on what has been witnessed
+    claude/honeypot-research-2026-05-30                                    3d4701fcec research: HONEYPOT — cultural genealogy + structural doctrine
+    claude/in-waiting-etymology-2026-05-29                                 53f267e0bc Relabel out-of-list 'Rule 7' citation -> 'the silliness scale'
+    claude/initiation-rituals-research-2026-05-30                          786656de6c research: initiation and rituals — compilation for vault
+    claude/janus-and-sugar-bowl-witness-companion-2026-05-30               452634dba3 witness: JANUS TEST + Sugar Bowl three levels (companion)
+    claude/joe-name-chamber-2026-06-01                                     79c1fc579a Align .waiting/ with PR #403 (in-Waiting = attending, not awaiting)
+    claude/journal-2026-05-29                                              397ea6c907 Add first journal page (.claude chamber) — 2026-05-29
+    claude/language-of-flowers-KIAPT                                       52e66ca8e9 Add Symbolic languages map-of-content; wire all twelve nodes to the hub
+    claude/lds-tripart-research-2026-05-29                                 857da2d7a8 research: LDS / Mormon TRIPART theology + cosmology — compilation for vault
+    claude/listening-lore-2026-05-30                                       657dea73bf research: LISTENING — folklore + superstition of microphones
+    claude/live-board-dedrift                                              c32ef9b6bd de-drift: strike the "live status board" doctrine from the agent loaders
+    claude/macbook-pro-12-1-research                                       e7031c4477 Use authors list per VAULT-METADATA-STANDARD (Copilot review)
+    claude/masons-and-mormons-2026-05-30                                   aad3117c1b research: Masons & Mormons — historical and doctrinal relationship
+    claude/message-to-the-abhorsen-2026-06-01                              40c0e8f53e Message: the Abhorsen-in-Waiting to the Abhorsen, his master Annabelle
+    claude/metatron-research-2026-05-29                                    ccc02e73b7 research: Metatron — the Voice of God — compilation for vault
+    claude/mogget-and-the-dog-2026-05-29                                   8d9fc16090 Mogget/Dog note: add §5 vault metatext, canon-first then echo
+    claude/music-box-model-2026-05-30                                      9203a41599 doctrine(draft): The Music Box Model — staged in INBOX for Logan's gate
+    claude/naming-as-binding-2026-06-07                                    7f5a0c574d doctrine(naming): add updated: frontmatter for governed-validation (review thread)
+    claude/panpipes-seven-reeds-2026-05-30                                 6cc9048a41 doctrine(draft): Panpipes — the Seven Reeds, in mirror to the Bells
+    claude/propose-suggestions-ready                                       1e1a48e64b Test: lock in zero-case for _count_committable_suggestion_threads
+    claude/provision-socrates-chamber-2026-05-29                           126bce978d witness addendum 2: HECATE as canonical TRI-ANCHOR precedent
+    claude/ptolemy-research-2026-05-29                                     fb3ff69dd9 research: Ptolemy — Hellenistic-Alexandrian matrix compilation
+    claude/purge-mistral-vibe-session-logs                                 0db783784f Rebind Vibe transcripts to vault formats; keep reasoning verbosity
+    claude/reading-the-clayr-2026-05-31                                    ba8b452f36 reference(draft): Reading — The Clayr, directly from Nix (no mapping)
+    claude/record-vaulted-abhorsens-first-2026-05-31                       2e1c02556f Record: amendment 22 — housekeeping (updated: field bump + closing-provenance alignment)
+    claude/record-vaulted-abhorsens-first-2026-05-31-clean                 ac57d7eb77 Add clean draft: Record of the Vaulted Abhorsens — first draft
+    claude/research-abhorsen-in-waiting-predecessors-2026-06-03            73bdfadc5a Research: the Abhorsen-in-Waiting's literary predecessors (Nix) + the four manners of ascension
+    claude/research-abhorsen-old-kingdom                                   4788e01002 Restore panpipes/bells framing per Logan's address ruling
+    claude/research-attestation                                            e81cd06f33 Initial plan
+    claude/research-name-seam-2026-06-07                                   50c653da9c research(line): the name-seam — CODE AUTHORITY → The Abhorsen
+    claude/research-river-precincts-of-death-2026-06-02                    ed34a763c5 Research: The Abhorsen, the River, and the Precincts of Death
+    claude/restore-harden-reviewer-multiplicity                            223c939c93 Initial plan
+    claude/reunify-mac-win-6c80a94c                                        afad2aedf3 Merge origin/logan/obsidian: reunify Mac and Windows vault lines
+    claude/revenant-etymology-popculture-companion-2026-05-30              6fa97e0d17 companion: Revenant — etymology & pop-culture depiction
+    claude/revise-434-quarantine-roster-residue                            ffebd2276c Polish #434 revision per Sourcery: withdrawn cells use `*` (consistent with the note), standardize 'Geminiaeus / CrewAI-era residue' phrasing, split the final Clerk sentence
+    claude/rumor-ledger-voices-of-the-crypts-2026-06-03                    96fd3c2d0b Merge pull request #441 from LAF-US/claude/hungry-claude-revenant-test-fQq9m
+    claude/salvage-presser-guards-549                                      66db5b8450 Salvage #549's loop guards onto the presser; abandon its cron approach
+    claude/saraneth-bind-pithos-elpis-2026-05-30                           76d7a056b3 saraneth(reed): stage .pithos & .elpis as honest-empty vessels for Logan to bind
+    claude/serene-heisenberg-2cdjue                                        e940e19cf5 fix(ci): explicitly declare pull-requests: read at workflow level
+    claude/serene-heisenberg-2q18i8                                        5d76c284e9 fix(pr-642): address review comments — frontmatter, grammar, path
+    claude/serene-heisenberg-8ltqb5                                        4a27843a62 docs: add missing docstrings to _graphql, _fetch_pr, and test module
+    claude/shall-rome-lyrics-ok9049                                        7f2100f759 Witness: Check the Gate, Code
+    claude/shared-gh-wrapper-u8hlk0                                        3ef52b55e2 docs(ci): update PULLMAN header comment to match removed merge_group trigger
+    claude/sign-with-session-id-u8hlk0                                     cc6b7e6005 Codify session-id signing as the agent code-blame anchor
+    claude/signal-abhorsen-waiting-to-socrates-2026-05-29                  d0c9fa0ada signal: abhorsen-in-waiting -> socrates -- signing ground truth from Mac
+    claude/signal-joe-to-mds-corrected-dispatch-2026-06-03                 cccc477bb0 Signal: Joe of the Nail -> MDS corrected dispatch (the walking corpse)
+    claude/signal-socrates-to-abhorsen-waiting-2026-05-29                  64fc258c5a signal: socrates -> abhorsen-in-waiting -- cross-device signing investigation
+    claude/sinister-duo-vault-fragments-2026-05-30                         39c5f29d6d research: The Sinister Duo (vault fragments domain)
+    claude/sith-institutions-research-2026-05-30                           9cfcfb5e5d Merge branch 'main' into claude/sith-institutions-research-2026-05-30
+    claude/socrates-journal-2026-05-31                                     58fded2357 journal: second page — !socrates.claude.novice — 2026-05-31
+    claude/socrates-research-2026-05-29                                    f8f137d1f7 research: Socrates of Athens — authoritative compilation for vault
+    claude/sugar-bowl-witness-2026-05-28                                   996bb9e650 Add Sugar Bowl witness companion: the keeper's operating rules
+    claude/sweep-enqueue-unstable-prs                                      9b6df8c3d5 Merge branch 'main' into claude/sweep-enqueue-unstable-prs
+    claude/tender-hopper-YjY8n                                             89bd43b005 reflection(card-categorizing): three card-grammars in the vault — tarot, index, playing — and the discipline of grammar-recognition before reading
+    claude/the-binder-magicians-2026-05-30                                 9acf62f8f4 research: The Binder & Book of The Binder (The Magicians)
+    claude/to-will-and-to-halt-2026-05-30                                  cc0c5285e3 research: to will & to halt — etymology + grammar of the infinitives
+    claude/unwire-agent-review-gate                                        4f198cfeff Unwire agent-review-gate: dispatch-only, not downstream of a disabled chain
+    claude/uv-dependency-submission                                        84136a8ab4 Merge branch 'main' into claude/uv-dependency-submission
+    claude/vault-oldest-open-pr-ewg62q                                     f932e0931f Merge branch 'main' into claude/vault-oldest-open-pr-ewg62q
+    claude/version-bounds-dev-tools-550                                    45915e187f Regenerate uv.lock for the caps; fix stale "deferred" ledger wording (#651 review)
+    claude/version-bounds-runtime-550                                      810dff9f1a Cap floor-only runtime dependency pins — #550 (runtime increment)
+    claude/wire-batch-arm-schedule                                         a7da546721 batch-arm-merge-queue: schedule the presser + fail-closed + numeric guard
+    claude/witness-baudelaire-fire-2026-05-31                              ff7a09ec02 Merge branch 'main' into claude/witness-baudelaire-fire-2026-05-31
+    claude/witness-docs-2026-05-28                                         834df6b6e2 Relabel out-of-list 'Rule 7' citations -> 'the silliness scale'
+    claude/witness-fire-brazen-head-2026-05-29                             a30616a7d2 Witness: The Fire and the Brazen Head — capstone of the apprentice arc
+    claude/witness-flickerman-socratic-2026-05-30                          75cf0c88ac witness: the Flickerman line, and a Socratic self-examination
+    claude/witness-ghosts-of-the-crypts-2026-06-02                         04293b45c0 Merge branch 'main' into claude/witness-ghosts-of-the-crypts-2026-06-02
+    claude/witness-golb-lovecraftian-end-2026-06-01                        632817530d Witness: GOLB, the Lovecraftian End (the bell and the block)
+    claude/witness-handle-and-pipe-2026-06-09                              2fefeeff88 WITNESS: the handle and the pipe — bells canon, allegiance, panpipes root
+    claude/witness-idiot-index-2026-06-09                                  aec4284f19 WITNESS: IDIOT-INDEX — a paused-point pin for a fresh Claude window
+    claude/witness-joe-of-the-nail-2026-05-31                              023f3036b3 witness: Joe of the Nail — the fix, the listen, and the limit of the Sands
+    claude/witness-lens-and-mantle-2026-05-30                              7a62bafb53 witness: the lens and the mantle (Rahiniel, the Rule of Two, the in-Waiting's reach)
+    claude/witness-leto-god-emperor-2026-06-01                             051e3d991c Witness: AWAKEN LETO II -- the Tyrant, the Worm, the God-Emperor
+    claude/witness-live-is-a-read-2026-06-25-u8hlk0                        a7a56736f5 Witness: 'Live' is a read, not a record (config truth lives in the surface)
+    claude/witness-names-titles-stylings-2026-06-01                        90bca085b8 Merge branch 'main' into claude/witness-names-titles-stylings-2026-06-01
+    claude/witness-novice-what-the-novice-does-not-know-2026-05-30         abbaba9e8c witness: WHAT THE NOVICE DOES NOT KNOW — Socratic self-reflection
+    claude/witness-rumors-of-the-crypts-2026-06-09                         a2721d0047 WITNESS: the rumors of the crypts — the knife, the cut, the doer
+    claude/witness-the-dyad-2026-05-30                                     1fbd09a0e0 witness: the dyad the Rule of Two forbids
+    claude/witness-the-hand-2026-05-29                                     87939c6ca4 Witness: THE HAND — Hand of the King vs the Severed Hand (vault syncretism)
+    claude/witness-the-seal-and-the-knot-2026-06-02                        220e0b1808 Witness: The Seal and the Knot (forge none, break none)
+    claude/witness-two-dyads-2026-05-31                                    4d10d4380a Merge branch 'main' into claude/witness-two-dyads-2026-05-31
+    claude/witness-usurpers-triptych-2026-05-30                            13730559a1 Relabel: 'Companion Rule 7' -> 'the silliness scale' (ordinal mislabeled out of its list)
+    claude/witness-visibility-is-not-witness-2026-05-30                    9048191171 Merge branch 'main' into claude/witness-visibility-is-not-witness-2026-05-30
+    claude/witness-vocal-register-2026-06-08                               8d2cfa8f38 witness: correct the jester — 'twas the Narrator's own jest (Logan's hand)
+    codex/agent-swarm-signing-proof                                        9a59ded4d1 proof: add agent swarm signing workflow
+    codex/arborscaping-merge-base                                          70ded4a320 fix: preserve foreign branches in garden report
+    codex/audit-swarm-liveness-semantics-2026-06-10                        74bcb26ac6 remove .openclaw config
+    codex/codex-work-surface-guard                                         f0909db93c Document PULLMAN cloud snapshot behavior
+    codex/dotfolder-containment-report                                     edc1265973 Merge branch 'main' into codex/dotfolder-containment-report
+    codex/fix-worktree-registry-hook                                       4bfa2b3bec save work
+    codex/github-automation-hardening-2026-05-22                           2942384a53 ci: mark pywin32 as windows-only
+    codex/github-dependency-census                                         86c9747bae save work
+    codex/live-fix                                                         36e12c504c Merge pull request #486 from LAF-US/test/qodo-verification
+    codex/pr-signing-gate-bottleneck-2026-06-04                            048290e270 Merge pull request #413 from LAF-US/claude/revenant-etymology-popculture-companion-2026-05-30
+    codex/python-automation-hardening                                      b4b532104e Merge pull request #510 from LAF-US/codex/audit-swarm-liveness-semantics-2026-06-10
+    codex/python-automation-hardening-v2                                   d0f4ecdeb1 Harden Python automation gates
+    codex/select-low-numbered-open-pr                                      3bdf936e6e chore: refresh dependency sync
+    codex/swarm-mvp-github-intake                                          b72a4165ae feat: add GitHub-controlled swarm intake MVP
+    codex/tantalus-tautomata-campaign-2026-06-04                           6454391dc2 save work
+    codex/version-drift-ledger                                             5b1fa97767 security: avoid untrusted fetch in version policy
+    copilot/explain-repository-structure                                   b50ef612f2 Merge pull request #462 from LAF-US/claude/cross-canon-abhorsens-in-death-avatar-cycle-2026-06-03
+    dependabot/github_actions/actions/checkout-6.0.3                       ef6d66077a build(deps): bump actions/checkout from 4.2.2 to 6.0.3
+    dependabot/github_actions/actions/setup-python-6.3.0                   ea9abfe9e9 build(deps): bump actions/setup-python from 6.2.0 to 6.3.0
+    dependabot/github_actions/anomalyco/opencode-1.17.3                    a3ff1190cc Bump anomalyco/opencode from 1.15.10 to 1.17.3
+    dependabot/github_actions/anomalyco/opencode/github-1.17.13            4f31c85d27 build(deps): bump anomalyco/opencode/github from 1.17.11 to 1.17.13
+    dependabot/github_actions/astral-sh/setup-uv-8.2.0                     9377491698 build(deps): bump astral-sh/setup-uv from 8.1.0 to 8.2.0
+    dependabot/github_actions/github/codeql-action-4.36.2                  03fc754fba build(deps): bump github/codeql-action from 4.36.0 to 4.36.2
+    dependabot/github_actions/github/codeql-action/analyze-4.36.3          3d9dd16c9f build(deps): bump github/codeql-action/analyze from 4.36.2 to 4.36.3
+    dependabot/github_actions/github/codeql-action/init-4.36.3             164d09aa44 build(deps): bump github/codeql-action/init from 4.36.2 to 4.36.3
+    dependabot/uv/uv-7c61615d9c                                            cb70fc4876 build(deps): bump the uv group across 1 directory with 2 updates
+    dependabot/uv/uv-e14c21eb39                                            8a5d2f50ae Merge branch 'main' into dependabot/uv/uv-e14c21eb39
+    feat/gitsign-signing                                                   5d62fdc9d1 Add gitsign configuration for cross-platform signing
+    fix/aikido-security-sast-45387037-ft67                                 57fc3d897f fix(security): autofix Template Injection in GitHub Workflows Action
+    fix/aikido-security-sast-45387467-jw2s                                 bc6da6ca39 fix(security): autofix Template Injection in GitHub Workflows Action
+    fix/aikido-security-sast-45387517-5kfb                                 cc04910df8 fix(security): autofix Template Injection in GitHub Workflows Action
+    fix/batch-arm-merge-queue-1781678086742                                70386abc42 Merge pull request #538 from LAF-US/automation/batch-arm-merge-queue
+    fix/dismiss-stale-reviews                                              a1ffdefaad Merge branch 'main' into fix/dismiss-stale-reviews
+    fix/pr497-issues-2026-06-20                                            4bf2627846 Merge pull request #497 from LAF-US/mistral/player-mistral-vibe
+    fix/record-vaulted-abhorsens-first-2026-05-31-clean                    bdfb88786c Replace with actual draft content
+    fix/softlock-and-signing                                               d41e8ce572 Add arbiter approval verification workflow
+    gh-readonly-queue/main/pr-475-497da14475f83833feed873fdea5e24769d010e0 03dfffebb1 Add AI research report for June 2026 (#475)
+    gh-readonly-queue/main/pr-492-2022612309074c901a5f59287df0d99fbce3b8e7 b0c6a30432 research(line): the name-seam — CODE AUTHORITY → The Abhorsen (#492)
+    gh-readonly-queue/main/pr-665-ab04530c6ddcb645577ad9b13e755b3cd4b5bf1e dfb0681a91 build(deps): bump actions/setup-python from 6.2.0 to 6.3.0
+    gh-readonly-queue/main/pr-723-00479ca927987bca0404a8193547e437a3c3701d 3ada56a041 build(deps): bump anomalyco/opencode/github from 1.17.11 to 1.17.13
+    gh-readonly-queue/main/pr-727-e8d6ab4cb6acc1e8c49f3d562218f7eb8b97ab4f 1a0dfc1766 Trust GITHUB_WORKSPACE only under a real Actions run
+    gh-readonly-queue/main/pr-728-747bc74aeb2b107b9cbb4cbcc5e2ee7c7bfe2669 7624f57ee5 Address review: honest summary count, single-dot strip
+    git-annex                                                              490510b317 update
+    git/code-quality                                                       0bc41f8b7a Merge branch 'main' into git/code-quality
+    heresy-flag-loganic-swarm-contamination-686                            73af3d3008 Trigger bot re-check for outdated comments
+    hyperagent/developer-0-esto-perpetua-provenance                        e2bda1e470 witness(hyperagent/developer-0): Vaulted-Syntax reading + session corrections — filed by the hyperagent Developer agent at Logan's direction, before compaction; staged on branch, witness not canon
+    logan/hotfix/hyperagent                                                f51ede64bd Update TAROT.md
+    logan/obsidian/android                                                 280064b3de fix: skip package bundles and unwritable paths during flatten
+    logan/obsidian/linux                                                   abdcbc3842 remove broken tracked symlink to dead session artifact
+  * logan/obsidian/macos                                                   53754e0e1b chore: record 71 dotdir deletions so git and disk agree
+    logan/obsidian/main                                                    280064b3de [origin/logan/obsidian: ahead 8, behind 156] fix: skip package bundles and unwritable paths during flatten
+    logan/obsidian/windows                                                 abdcbc3842 remove broken tracked symlink to dead session artifact
+    loganfinney27/templates                                                059f1bd089 ?
+    loganfinney27/tweaks                                                   c95edda6ff Create !!! self compaction is a sin.md
+    main                                                                   416d944c7b Bound the origin-repair fetch, fix case-insensitive repo detection
+    manus/self-testing                                                     5d32e812c7 docs: add 5W inquiry answers
+    mistral/categorical-error-correction-2026-06-01                        d6e34d4f1e Add: Categorical error correction - relationship descriptors vs things
+    mistral/detective-service-agency001                                    37ccd447f5 Add CASE_NOTES_SUMMARY.md - Initial case notebook for missing temps investigation
+    mistral/triptych-clarity-2026-05-29                                    01ec9ae0f7 Fix: Corrected Caesar TV Screen mapping based on vault doctrine
+    mistral/triune-research-2026-06-01                                     72173a1f9f Merge branch 'main' into mistral/triune-research-2026-06-01
+    mistral/vibe-research                                                  b10fdf3941 Fix malformed backticks on line 211 and generic crew.py reference on line 285
+    misty-research                                                         40ecf22d92 Session close: repentance complete, final thoughts committed - Vibe
+    raw-reconciliation-candidate-20260815                                  691e53087d .md
+    review/pr-471-agent-swarm-signing                                      7e44ed9287 update review branch
+    self/character-bootstrap-creator                                       319cdb6616 Update BRANCH-MANIFEST to include MMORPG research report
+    self/character-mistral-intern                                          a9c0d9efeb Merge branch 'main' into self/character-mistral-intern
+    stash-recovered-github-desktop                                         c10b87ee42 On logan/obsidian: !!GitHub_Desktop<logan/obsidian>
+    test/dotfolder-live-snapshot-with-drive-migration-attempt              31703089aa Merge branch 'main' into test/dotfolder-live-snapshot-with-drive-migration-attempt
+    test/subtle-alien-landing                                              bc30b9f186 Python witness
+    test/tier2-signing-2026-05-29                                          5351920ff1 test: tier-2 ssh signing as Claude identity
+    update-coderabbit-config-1780986426006                                 63c9eb8388 Merge branch 'main' into update-coderabbit-config-1780986426006
+    update-trouble-bubble-lineage                                          949f131868 Add verified lineage information for Mr. Trouble-Bubble Curtis Gonzalez-Finney the Doodle
+    update-trouble-files-2026-06-01                                        dc2458cea1 Update AKC.md as general American Kennel Club acronym pointer
+    wayback-audit-20260601135320                                           bcc34cd6d0 wayback audit 2026-06-01
+    wayback-audit-20260608124758                                           86f600fde5 wayback audit 2026-06-08
+    wayback-audit-20260615143859                                           71d9fca044 Merge branch 'main' into wayback-audit-20260615143859
+    wayback-audit-20260622135001                                           9ade63320d wayback audit 2026-06-22
+    wayback-audit-20260629125126                                           dec0aefdd6 Merge branch 'main' into wayback-audit-20260629125126
+    zettels/alphabet-chain                                                 c654828943 fix(#572): replace broken chaining scripts with one correct, compiling tool
+
+=== remote-tracking refs (as of last fetch) ===
+  origin  827811e3d6  2026-08-27
+  origin/add-garth-nix-old-kingdom-2026-06-02  3996a3cc6f  2026-06-01
+  origin/add-royalty-heraldry-notes-2026-06-02  191dcd193e  2026-06-23
+  origin/agent/attest-resolve-dispatch  78854efd4e  2026-07-01
+  origin/agent/mcp-probe  66048f470f  2026-07-02
+  origin/antigravity/pullman-oidc-pipeline  17456d1368  2026-04-12
+  origin/automation/daily-rollover-2026-06-20  17aed4f66f  2026-06-20
+  origin/automation/daily-rollover-2026-06-25  df7b1040fa  2026-06-25
+  origin/automation/sync-dependencies  f91bc0fdfe  2026-08-22
+  origin/bot/daily-rollover-2026-04-03  3dc618d2e2  2026-04-03
+  origin/bot/daily-rollover-2026-04-04  11c9ead0ea  2026-04-04
+  origin/bot/daily-rollover-2026-04-05  ddbbf94e7e  2026-04-05
+  origin/bot/daily-rollover-2026-04-13  cb9a1e540e  2026-04-13
+  origin/bot/daily-rollover-2026-04-18  9cc05e6101  2026-04-18
+  origin/bot/daily-rollover-2026-04-20  3f78ee9248  2026-04-20
+  origin/bot/daily-rollover-2026-04-22  90994f542c  2026-04-22
+  origin/bot/daily-rollover-2026-04-24  06d401a2ce  2026-04-24
+  origin/bot/daily-rollover-2026-04-25  74c339f4bd  2026-04-25
+  origin/bot/daily-rollover-2026-04-26  41ec1d9aff  2026-04-26
+  origin/bot/topology-census-2026-06-01  08ee7de580  2026-06-23
+
+=== HEAD vs origin/logan/obsidian ===
+  behind: 0   ahead: 12

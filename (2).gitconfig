@@ -1,0 +1,18 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	email = loganfinney27@gmail.com
+	name = Logan Finney
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMmWWIbEpe6ql2NHBTP2sTP7z2ymIlNbo/CuluQYicEF
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
+[tag]
+	gpgsign = true
+[gpg "ssh"]
+	program = C:\\Users\\loganf\\AppData\\Local\\Microsoft\\WindowsApps\\op-ssh-sign.exe
+	allowedSignersFile = C:/Users/loganf/.ssh/allowed_signers

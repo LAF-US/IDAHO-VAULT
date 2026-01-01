@@ -1,0 +1,52 @@
+---
+title: "About, Barnard-Stockbridge Photograph Collection"
+source: "https://www.lib.uidaho.edu/digital/barstock/about.html"
+author:
+  - "[[CollectionBuilder; University of Idaho Library Digital Collections]]"
+published:
+created: 2026-07-19
+description: "The Barnard-Stockbridge Collection features over 3000 photographs selected from over 200,000 nitrocellulose and glass plate negatives taken by Nellie Stockbridge and T.N. Barnard during the years 1894-1964. The photos depict various aspects of life in the Wallace/Kellogg mining area."
+---
+## About the Collection
+
+## About the Collection
+
+The Barnard-Stockbridge Collection features nearly 4,000 photographs selected from the over 200,000 nitrocellulose and glass plate negatives taken by Nellie Stockbridge and T.N. Barnard during the years 1894-1964. The photos vividly depict life in the Wallace/Kellogg mining area.
+
+### T. N. Barnard
+
+In 1889, Thomas N. Barnard and his wife moved to Wallace, [[Idaho]] where he established his photo studio. The studio was destroyed in a fire in 1890 with a small amount of his negatives surviving. Most of the photographs taken in the early years “included landscapes, placer workings, townscapes, and panoramic views” of Wallace and Murray Idaho, taken on 5 x 7 and 8 x 10 dry-plate negatives. Barnard made most of his living from his landscape photographs, which were for sale to the general public and commissioned portraits.
+
+![Portrait of Thomas Nathan Barnard (1861-1916) in a studio chair, reading newspaper, with a cigar in his mouth.](https://objects.lib.uidaho.edu/barstock/small/barstock1224_sm.jpg)
+
+Portrait of Thomas Nathan Barnard
+
+### Nellie Stockbridge
+
+In 1898, Nellie Jane Stockbridge left her home in central Illinois to accept Thomas Barnard’s offer of employment in his Wallace, Idaho photo studio. Stockbridge was a dedicated photographer and businesswoman. In 1907, she purchased a quarter share of the business and eventually assumed full ownership when Barnard became the mayor of Wallace. Over the next few decades, working often to exhaustion, Nellie photographed the people and places of one of the richest mining areas of the world, the Coeur d’Alene Mining District. While portrait photography was the mainstay of her studio, Nellie skillfully photographed the area’s mining industries, both above ground and below, creating a visual record of historical significance to Idaho and beyond. Nellie Stockbridge died on May 22, 1965.
+
+![Nellie Stockbridge Portrait](https://www.lib.uidaho.edu/media/digital/nellie.jpg)
+
+Nellie Stockbridge Portrait
+
+### The Photographs
+
+In 1964, the University of Idaho Library received a collection of over 200,000 nitrocellulose and glass plate negatives taken by Nellie Stockbridge and her predecessor and founder of the studio, Mr. T. N. Barnard. The photos were taken from 1894 to 1964 of various aspects of life in the Wallace and Kellogg mining area. Prints were made of many of the negatives, and the photographs and negatives were cataloged by [Special Collections and Archives](https://www.lib.uidaho.edu/special-collections/).
+
+![Panoramic View from tank of the town](https://objects.lib.uidaho.edu/barstock/small/barstock859_sm.jpg)
+
+Wallace (Idaho), 1910 \[06\]
+
+Today there is a Barnard-Stockbridge Museum located in Wallace, Idaho. It was founded in 2017 and opened in 2019.
+
+*About Page written by Julie Monroe.*
+
+### Technical Credits - CollectionBuilder
+
+This digital collection is built with [CollectionBuilder](https://collectionbuilder.github.io/), an open source framework for creating digital collection and exhibit websites that is developed by faculty librarians at the University of Idaho Library following the [Lib-Static](https://lib-static.github.io/) methodology.
+
+Using the [CollectionBuilder-CSV](https://github.com/CollectionBuilder/collectionbuilder-csv) template and the static website generator [Jekyll](https://jekyllrb.com/), this project creates an engaging interface to explore driven by metadata.
+
+[![CollectionBuilder](https://www.lib.uidaho.edu/digital/barstock/assets/img/collectionbuilder-logo.png)](https://collectionbuilder.github.io/ "CollectionBuilder")
+
+#idaho

@@ -1,0 +1,29 @@
+HTTP/2.0 200 OK
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset, Warning
+Cache-Control: private, max-age=60, s-maxage=60
+Content-Security-Policy: default-src 'none'
+Content-Type: application/json; charset=utf-8
+Date: Thu, 13 Aug 2026 19:25:22 GMT
+Etag: W/"37ba96449ed270f1c1f3dc3a50979f367caa22816a6f7a80da2b8465563c5bde"
+Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+Server: github.com
+Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+Vary: Accept, Authorization, Cookie, X-GitHub-OTP,Accept-Encoding, Accept, X-Requested-With
+X-Accepted-Oauth-Scopes: 
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-Github-Api-Version-Selected: 2022-11-28
+X-Github-Edge-Region: sea
+X-Github-Media-Type: github.v3; param=merge-info-preview.nebula-preview; format=json
+X-Github-Request-Id: 9CC1:172E31:1B1948B:1BC2A62:6A7E1A22
+X-Oauth-Client-Id: 178c6fc778ccc68e1d6a
+X-Oauth-Scopes: admin:public_key, gist, read:org, repo
+X-Ratelimit-Limit: 5000
+X-Ratelimit-Remaining: 4993
+X-Ratelimit-Reset: 1786652562
+X-Ratelimit-Resource: core
+X-Ratelimit-Used: 7
+X-Xss-Protection: 0
+
+{"url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/issues/comments/5270148258","html_url":"https://github.com/LAF-US/IDAHO-VAULT/pull/827#issuecomment-5270148258","issue_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/issues/827","id":5270148258,"node_id":"IC_kwDONe6gj88AAAABOiAUog","user":{"login":"loganfinney27","id":136375980,"node_id":"U_kgDOCCDurA","avatar_url":"https://avatars.githubusercontent.com/u/136375980?u=7c610e87697376013daa60bf8b1fdb53538a4caf&v=4","gravatar_id":"","url":"https://api.github.com/users/loganfinney27","html_url":"https://github.com/loganfinney27","followers_url":"https://api.github.com/users/loganfinney27/followers","following_url":"https://api.github.com/users/loganfinney27/following{/other_user}","gists_url":"https://api.github.com/users/loganfinney27/gists{/gist_id}","starred_url":"https://api.github.com/users/loganfinney27/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/loganfinney27/subscriptions","organizations_url":"https://api.github.com/users/loganfinney27/orgs","repos_url":"https://api.github.com/users/loganfinney27/repos","events_url":"https://api.github.com/users/loganfinney27/events{/privacy}","received_events_url":"https://api.github.com/users/loganfinney27/received_events","type":"User","user_view_type":"public","site_admin":false},"created_at":"2026-08-12T17:25:41Z","updated_at":"2026-08-12T17:25:41Z","author_association":"MEMBER","body":"Statler: Wake up, you old fool! You slept through the show. \\n Waldorf: Who's a fool? You watched it.","reactions":{"url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/issues/comments/5270148258/reactions","total_count":0,"+1":0,"-1":0,"laugh":0,"hooray":0,"confused":0,"heart":0,"rocket":0,"eyes":0},"performed_via_github_app":null,"minimized":null,"pin":null}

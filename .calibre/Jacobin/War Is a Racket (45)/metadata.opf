@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="uuid_id" version="2.0">
+    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+        <dc:identifier opf:scheme="calibre" id="calibre_id">45</dc:identifier>
+        <dc:identifier opf:scheme="uuid" id="uuid_id">7d8bde53-1d7c-4243-866b-db7d4cbd3fe6</dc:identifier>
+        <dc:title>War Is a Racket</dc:title>
+        <dc:creator opf:file-as="Jacobin" opf:role="aut">Jacobin</dc:creator>
+        <dc:contributor opf:file-as="calibre" opf:role="bkp">calibre (6.29.0) [https://calibre-ebook.com]</dc:contributor>
+        <dc:date>2019-08-19T20:43:44+00:00</dc:date>
+        <dc:language>en</dc:language>
+        <meta name="calibre:series" content="Jacobin"/>
+        <meta name="calibre:series_index" content="34"/>
+        <meta name="calibre:timestamp" content="2026-08-28T02:16:17+00:00"/>
+        <meta name="calibre:title_sort" content="Jacobin 34"/>
+    </metadata>
+    <guide>
+        <reference type="cover" title="Cover" href="cover.jpg"/>
+    </guide>
+</package>
