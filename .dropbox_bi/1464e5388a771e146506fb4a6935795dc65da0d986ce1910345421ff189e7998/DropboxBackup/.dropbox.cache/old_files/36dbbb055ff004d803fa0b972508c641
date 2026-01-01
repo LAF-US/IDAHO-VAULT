@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>export</key>
+	<array>
+		<dict>
+			<key>date</key>
+			<string>Thursday, April 23, 2020 at 3:26:16 PM Mountain Daylight Time</string>
+			<key>fullDate</key>
+			<date>2020-04-23T21:26:16Z</date>
+			<key>resultStr</key>
+			<array>
+				<string>/Users/logan/Desktop/IDAHO REPORTS/Podcast-Files/4:23 Nicole Foy/Nicole-Foy-Trimmed.mov</string>
+			</array>
+			<key>sourceFP</key>
+			<string>R9DDzBm2QUWSea3l0ByPIA - 2020-04-23 21:19:14 +0000</string>
+		</dict>
+		<dict>
+			<key>date</key>
+			<string>Thursday, April 23, 2020 at 7:41:48 PM Mountain Daylight Time</string>
+			<key>fullDate</key>
+			<date>2020-04-24T01:41:48Z</date>
+			<key>resultStr</key>
+			<array>
+				<string>/Users/logan/Desktop/IDAHO REPORTS/Podcast-Files/4:23 Nicole Foy/Nicole-Foy-trimmed-2.mov</string>
+			</array>
+			<key>sourceFP</key>
+			<string>R9DDzBm2QUWSea3l0ByPIA - 2020-04-24 01:39:03 +0000</string>
+		</dict>
+	</array>
+</dict>
+</plist>
