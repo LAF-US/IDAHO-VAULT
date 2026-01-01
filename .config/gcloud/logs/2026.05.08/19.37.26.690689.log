@@ -1,0 +1,23 @@
+2026-05-08 19:37:26,698 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2026-05-08 19:37:26,895 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'list']
+2026-05-08 19:37:26,898 DEBUG    root            Running [gcloud.config.list] with arguments: []
+2026-05-08 19:37:27,003 DEBUG    root            Failed to check metadata server: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+2026-05-08 19:37:27,004 DEBUG    root            On GCE from server: False
+2026-05-08 19:37:27,006 DEBUG    root            Chosen display Format:config
+2026-05-08 19:37:27,006 INFO     root            Display format: "config"
+2026-05-08 19:37:27,165 INFO     ___FILE_ONLY___ [core]
+account = loganfinney27@gmail.com
+project = idaho-vault
+
+2026-05-08 19:37:27,166 INFO     ___FILE_ONLY___ 
+Your active configuration is: [default]
+
+2026-05-08 19:37:27,184 DEBUG    root            On GCE from memory cache: False
+2026-05-08 19:37:27,227 DEBUG    root            On GCE from memory cache: False
+2026-05-08 19:37:27,230 DEBUG    root            On GCE from memory cache: False
+2026-05-08 19:37:27,232 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2026-05-08 19:37:27,245 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2026-05-08 19:37:27,246 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2026-05-08 19:37:27,248 DEBUG    urllib3.connectionpool Starting new HTTPS connection (2): oauth2.googleapis.com:443
+2026-05-08 19:37:27,249 DEBUG    root            Unable to get project [idaho-vault] for environment tag message: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by NameResolutionError("HTTPSConnection(host='oauth2.googleapis.com', port=443): Failed to resolve 'oauth2.googleapis.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-05-08 19:37:27,282 DEBUG    root            SDK update checks are disabled.

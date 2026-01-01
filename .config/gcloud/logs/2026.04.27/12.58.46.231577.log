@@ -1,0 +1,9 @@
+2026-04-27 12:58:46,233 DEBUG    root            Loaded Command Group: ['gcloud', 'services']
+2026-04-27 12:58:46,248 DEBUG    root            Loaded Command Group: ['gcloud', 'services', 'enable']
+2026-04-27 12:58:46,252 DEBUG    root            Running [gcloud.services.enable] with arguments: [SERVICE:1: "['aiplatform.googleapis.com']"]
+2026-04-27 12:58:46,257 DEBUG    root            On GCE from disk cache: False
+2026-04-27 12:58:46,262 DEBUG    root            On GCE from memory cache: False
+2026-04-27 12:58:46,303 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): serviceusage.googleapis.com:443
+2026-04-27 12:58:46,639 DEBUG    urllib3.connectionpool https://serviceusage.googleapis.com:443 "POST /v1/projects/idaho-vault/services/aiplatform.googleapis.com:enable?alt=json HTTP/1.1" 200 None
+2026-04-27 12:58:46,677 DEBUG    root            Chosen display Format:none
+2026-04-27 12:58:46,677 INFO     root            Display format: "none"

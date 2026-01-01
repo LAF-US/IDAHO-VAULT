@@ -1,0 +1,26 @@
+{
+  "apps": "./.app.json",
+  "author": {
+    "name": "Klaviyo"
+  },
+  "description": "Skip manual analysis with marketing campaign and flow performance, explanations, and recommendations directly in ChatGPT. Reporting includes send status, click rates, and attributed revenue, alongside plain language context. Just click \"Analyze\" to dive into trends and suggestions. With the Klaviyo app, you'll stay informed on performance, ahead of opportunities, and ready to take action directly from a conversation.",
+  "interface": {
+    "capabilities": [],
+    "category": "Productivity",
+    "defaultPrompt": [
+      "Analyze my replenishment flow and make recommendations for improvements.",
+      "Deep dive report on customer winback, outline what is working well and what needs my attention and why.",
+      "Give me a campaign performance report for last week [add dates] across all of my campaigns; overall metrics and per campaign."
+    ],
+    "developerName": "Klaviyo",
+    "displayName": "Klaviyo",
+    "longDescription": "Skip manual analysis with marketing campaign and flow performance, explanations, and recommendations directly in ChatGPT. Reporting includes send status, click rates, and attributed revenue, alongside plain language context. Just click \"Analyze\" to dive into trends and suggestions. With the Klaviyo app, you'll stay informed on performance, ahead of opportunities, and ready to take action directly from a conversation.",
+    "privacyPolicyURL": "https://privacy.klaviyo.com/policies/en/",
+    "shortDescription": "Get insights on your marketing",
+    "supportURL": "https://www.klaviyo.com/support",
+    "termsOfServiceURL": "https://www.klaviyo.com/legal/terms-of-service",
+    "websiteURL": "https://www.klaviyo.com/"
+  },
+  "name": "app-694421e60cc88191a1e5bb4aa79950e4",
+  "version": "3.0.0"
+}

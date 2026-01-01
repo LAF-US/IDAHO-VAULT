@@ -1,0 +1,15 @@
+2026-04-27 13:01:04,748 DEBUG    root            On GCE from disk cache: False
+2026-04-27 13:01:04,755 DEBUG    root            Loaded Command Group: ['gcloud', 'components']
+2026-04-27 13:01:04,763 DEBUG    root            Loaded Command Group: ['gcloud', 'components', 'install']
+2026-04-27 13:01:04,765 DEBUG    root            Running [gcloud.components.install] with arguments: [--compile-python: "True", --quiet: "True", COMPONENT-IDS:4: "['gsutil', 'core', 'bq', 'gcloud-crc32c']"]
+2026-04-27 13:01:04,822 DEBUG    root            On GCE from memory cache: False
+2026-04-27 13:01:04,834 DEBUG    root            On GCE from memory cache: False
+2026-04-27 13:01:04,863 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2026-04-27 13:01:07,834 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components-v565.0.0.json HTTP/1.1" 200 25067
+2026-04-27 13:01:08,004 INFO     ___FILE_ONLY___ 
+
+2026-04-27 13:01:08,004 INFO     ___FILE_ONLY___ All components are up to date.
+
+2026-04-27 13:01:08,005 DEBUG    root            Updating notification cache...
+2026-04-27 13:01:08,007 DEBUG    root            Chosen display Format:none
+2026-04-27 13:01:08,008 INFO     root            Display format: "none"

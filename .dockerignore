@@ -1,0 +1,11 @@
+# The root Dockerfiles copy only these application inputs. Keep the build
+# context allowlisted so Vault notes, tests, logs, and local agent state never
+# reach the Docker daemon or a remote builder.
+**
+!Dockerfile*
+!.dockerignore
+!requirements.txt
+!pyproject.toml
+!main.py
+!src/
+!src/**

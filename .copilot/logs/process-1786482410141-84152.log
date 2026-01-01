@@ -1,0 +1,10 @@
+2026-08-11T21:06:50.144Z [INFO] Shell completions: no supported shell detected, skipping
+2026-08-11T21:06:50.144Z [INFO] Starting CLI in server mode (stdio)
+2026-08-11T21:06:50.145Z [INFO] Starting CLI in stdio mode (Rust JSON-RPC engine)
+2026-08-11T21:06:50.147Z [INFO] CLI server ready (stdio mode, Rust JSON-RPC engine)
+2026-08-11T21:06:50.147Z [INFO] Server started, waiting for requests
+2026-08-11T21:06:51.110Z [WARNING] [rust:copilot_runtime::config::effective_plugins_workspace] Ignored invalid repository settings {"warning":"Repository settings file 'C:\\Users\\loganf\\Documents\\IDAHO-VAULT\\.claude\\settings.json' could not be loaded: Invalid JSON: expected `,` or `]` at line 5 column 7"}
+2026-08-11T21:09:39.936Z [INFO] Preparing runtime for graceful shutdown
+2026-08-11T21:09:39.936Z [INFO] Starting graceful shutdown of CLI server
+2026-08-11T21:09:39.936Z [INFO] Destroying 0 active sessions
+2026-08-11T21:09:39.937Z [INFO] CLI server prepared for shutdown; transport remains open for RPC response

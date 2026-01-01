@@ -1,0 +1,27 @@
+{
+  "apps": "./.app.json",
+  "author": {
+    "name": "Exa Labs Inc."
+  },
+  "description": "Exa is the search engine for AI. Use Exa to search the web and data sources for code samples, docs, financial data, recent news, companies, people, research papers, and more. Exa is a token-efficient way to search the web.",
+  "interface": {
+    "capabilities": [],
+    "category": "Developer Tools",
+    "defaultPrompt": [
+      "Find AI companies whose core product is open source. Use Exa.",
+      "Find the latest Stripe API documentation. Use Exa.",
+      "Papers measuring the labor market effects of generative AI. Use Exa."
+    ],
+    "developerName": "Exa Labs Inc.",
+    "displayName": "Exa",
+    "longDescription": "Exa is the search engine for AI. Use Exa to search the web and data sources for code samples, docs, financial data, recent news, companies, people, research papers, and more. Exa is a token-efficient way to search the web.",
+    "privacyPolicyURL": "https://exa.ai/privacy-policy",
+    "shortDescription": "Web search for AI agents",
+    "supportURL": "https://exa.ai/contact/sales",
+    "termsOfServiceURL": "https://exa.ai/assets/Exa_Labs_Terms_of_Service.pdf",
+    "websiteURL": "https://exa.ai/"
+  },
+  "name": "app-69ea4ed2cf7c8191b742ef3622479ddd",
+  "skills": "./skills",
+  "version": "3.0.0"
+}

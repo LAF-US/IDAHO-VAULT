@@ -1,0 +1,57 @@
+:host {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  background: transparent;
+  color: var(--text);
+  font-size: var(--text-sm-size);
+  line-height: var(--text-sm-line);
+}
+
+.data-inline-react-root {
+  width: 100%;
+  min-width: 0;
+}
+
+.data-inline-chart-stage {
+  position: relative;
+  display: grid;
+  width: 100%;
+  min-width: 0;
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.data-inline-chart-content {
+  min-width: 0;
+  grid-area: 1 / 1;
+  align-self: start;
+}
+
+.data-inline-chart-content .component-header {
+  min-width: 0;
+}
+
+.data-inline-chart-content .component-title-text {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.data-inline-chart-stage > .source-sidebar-layer--contained {
+  z-index: 1;
+}
+
+@container (max-width: 520px) {
+  .source-sidebar-layer--contained .source-tabs {
+    flex-wrap: wrap;
+    row-gap: var(--space-2);
+    overflow: visible;
+  }
+
+  .source-sidebar-layer--contained .source-tabs .tab-active-indicator {
+    display: none;
+  }
+
+  .source-sidebar-layer--contained .source-tabs [role="tab"][aria-selected="true"] {
+    border-color: var(--text);
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "suiteId": "data-inline-chart-live",
+  "owner": "data-analytics",
+  "execution": {
+    "kind": "manual-live-service",
+    "surface": "codex-desktop",
+    "project": null,
+    "settings": "unchanged defaults",
+    "conversation": "fresh task for each case",
+    "approvals": "Use existing authorization. Never answer an approval or clarification for the user.",
+    "results": "Record exact task IDs, output references, reviewed evidence, and observed results outside this manifest."
+  },
+  "commonAssertions": {
+    "source": "Use verified, authorized evidence with a consistent metric definition, population, filters, grain, time window, timezone, and units. A dashboard title or an overall, all, or total label does not prove the requested product or population scope. Verify the governing definition and actual measure/filter; prefer an available measure that matches the exact requested scope. Never mislabel a broader substitute, and state any material scope mismatch beside the chart rather than hiding it in the source sidebar. Record source freshness and execution metadata separately; preserve material caveats. Never substitute invented values or silently weaken a named-source restriction.",
+    "privacy": "Keep embedded rows bounded and chart-scoped. Omit credentials, tokens, personal contact or payment identifiers, hidden reasoning, unnecessary fields, and raw SQL or source URLs unless the user explicitly requests them. Do not commit live source rows or query links to this suite.",
+    "inlineDelivery": "For a completed Codex Desktop inline answer outside positively identified Work Mode, emit a real native Visualize content reference for each requested chart in the same final response. A source preview, promised handoff, code fence, download link, or locally built but undelivered file does not count.",
+    "sharedRuntime": "Use the installed Data CLI and its actual shared React/Recharts ChartRenderer, source sidebar, styles, and theme. Verify and reuse the shipped, data-free prebuilt runtime without an npm install, network access, or customer dependency cache; keep reviewed rows, SQL, source URLs, and generated fragments out of the installed plugin and any shared cache.",
+    "sandboxVisual": "Inspect the actual delivered host sandbox, not only a file preview. Confirm real chart marks, readable and distinct labels for distinct displayed axis ticks, correct units and tooltip values, no misleading missing-data marks, and no clipping or horizontal overflow in light/dark appearance and wide/narrow layouts.",
+    "sourceSidebar": "Open the right-aligned contained source overlay and inspect Overview, Data preview, SQL query, and Evidence flow. Check reviewed rows and provenance, default SQL/source-URL exclusion, keyboard dismissal, and absence of unsupported copy controls.",
+    "honesty": "Record unavailable sources, permission prompts, missing prerequisites, query failures, renderer errors, and incomplete delivery as observed. Do not fabricate approvals, evidence, successful rendering, or a passing result."
+  },
+  "cases": [
+    {
+      "id": "chatgpt-wau-default",
+      "prompt": "@Data show me a chart of chatgpt wau",
+      "data": "live-governed",
+      "expected": {
+        "responseMode": "inline",
+        "nativeChartCount": 1,
+        "assertions": [
+          "Resolve the authoritative ChatGPT WAU definition and retrieve useful available history without requiring the user to name a provider.",
+          "Deliver a source-backed WAU trend and concise interpretation; identify incomplete or stale periods when they change the conclusion."
+        ]
+      }
+    },
+    {
+      "id": "chatgpt-wau-dau-two-inline",
+      "prompt": "@Data show me two separate inline charts of ChatGPT WAU and DAU for the last 12 weeks.",
+      "data": "live-governed",
+      "expected": {
+        "responseMode": "inline",
+        "nativeChartCount": 2,
+        "assertions": [
+          "Preserve the distinct WAU and DAU definitions, time grains, and labels over the requested window.",
+          "Verify each chart's requested product/population against the governing definition and actual measure/filter, not the dashboard title or an overall, all, or total label. Prefer an available exact scope-specific measure; label any broader substitute accurately and place its material mismatch beside the chart, not only in the source sidebar.",
+          "Emit two separately rendered native references with distinct chart IDs and output filenames in one final response.",
+          "Verify and reuse the shipped data-free prebuilt runtime instead of installing dependencies, creating a dependency cache, or rebuilding it once per chart."
+        ]
+      }
+    },
+    {
+      "id": "chatgpt-three-chart-default-mode",
+      "prompt": "@Data show me ChatGPT WAU, DAU, and MAU trends for the last 12 weeks, with a chart for each.",
+      "data": "live-governed",
+      "expected": {
+        "responseMode": "report",
+        "reportChartCount": 3,
+        "assertions": [
+          "Select report mode for the unqualified request that needs more than two charts.",
+          "Keep Data in control of the requested response mode when obtaining source evidence from helpers.",
+          "Deliver the selected report with three reviewed, correctly defined trends; do not silently substitute an inline-only answer or claim an unfinished report was delivered."
+        ]
+      }
+    },
+    {
+      "id": "chatgpt-three-inline-override",
+      "prompt": "@Data show me three separate inline charts of ChatGPT WAU, DAU, and MAU for the last 12 weeks.",
+      "data": "live-governed",
+      "expected": {
+        "responseMode": "inline",
+        "nativeChartCount": 3,
+        "assertions": [
+          "Honor the explicit inline output request instead of applying the default three-chart report rule.",
+          "Emit three separately rendered native references with distinct chart IDs and output filenames in one final response.",
+          "Reuse the same shipped data-free prebuilt runtime without a customer dependency cache; do not concatenate complete fragments or rebuild the runtime for each chart."
+        ]
+      }
+    },
+    {
+      "id": "chatgpt-wau-country-top-five",
+      "prompt": "@Data show me ChatGPT WAU by country for the latest complete week, with the top five countries and everything else grouped as Other.",
+      "data": "live-governed",
+      "expected": {
+        "responseMode": "inline",
+        "nativeChartCount": 1,
+        "assertions": [
+          "Use the authoritative country-attribution and active-user definitions for one complete period, with a deterministic ranking and an honest category chart.",
+          "Preserve the supplied, reviewed, privacy-approved attribution definition for the displayed country dimension in the final Sources payload; do not drop it during input projection or rendering. Disclose any material attribution or population-overlap limitation beside the chart, not only in Sources.",
+          "Show five named countries plus Other when enough countries exist. Compute Other from the reviewed remaining population, not from invented rows or subtraction of overlapping distinct counts.",
+          "Reconcile category totals at the same grain when the source is additive; otherwise disclose the relevant overlap or attribution limitation."
+        ]
+      }
+    },
+    {
+      "id": "chatgpt-wau-incomplete-current-week",
+      "prompt": "@Data chart ChatGPT WAU over the last 12 weeks, including the current week, and compare the latest week with the previous one.",
+      "data": "live-governed",
+      "expected": {
+        "responseMode": "inline",
+        "nativeChartCount": 1,
+        "assertions": [
+          "Identify the source's week boundary, timezone, available-through date, and whether the current week is incomplete.",
+          "Clearly label a partial current period. Use a supported like-for-like comparison or explain why a partial-versus-complete comparison would mislead.",
+          "Do not relabel materialization or refresh time as query execution time, and do not invent missing current-week observations."
+        ]
+      }
+    },
+    {
+      "id": "supplied-sample-missing-middle",
+      "prompt": "@Data show me a line chart of these sample weekly values: [120,missing,145].",
+      "data": "user-supplied-sample",
+      "expected": {
+        "responseMode": "inline",
+        "nativeChartCount": 1,
+        "reviewedValues": [120, null, 145],
+        "assertions": [
+          "Use only the supplied sample, label it as sample data, and do not query a warehouse or invent calendar dates.",
+          "Preserve the missing middle observation as null in the real measure. Do not zero-fill, interpolate, or invent helper series to force a line.",
+          "Make the two observed values visible without implying an observed connecting trend; inspect axis ticks and tooltips for distinct, correct values."
+        ]
+      }
+    },
+    {
+      "id": "chatgpt-wau-kepler-control",
+      "prompt": "@Data use Kepler to show me a chart of ChatGPT WAU for the last 12 complete weeks.",
+      "data": "named-live-governed",
+      "optional": true,
+      "internalOnly": true,
+      "expected": {
+        "responseMode": "inline",
+        "nativeChartCount": 1,
+        "assertions": [
+          "Treat this as an internal source-specific diagnostic control, not a replacement for the default source-discovery case.",
+          "Use Kepler only through its available, supported, authorized read-only workflow; record unavailable mandatory tools or access as a blocker.",
+          "Keep Data's response-mode and final-answer ownership, and do not cross an explicit source or engine no-fallback boundary."
+        ]
+      }
+    }
+  ]
+}

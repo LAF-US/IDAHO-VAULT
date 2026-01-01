@@ -1,0 +1,23 @@
+2026-04-27 13:03:05,881 DEBUG    root            Loaded Command Group: ['gcloud', 'components']
+2026-04-27 13:03:05,885 DEBUG    root            Loaded Command Group: ['gcloud', 'components', 'update_macos_python']
+2026-04-27 13:03:05,888 DEBUG    root            Running [gcloud.components.update-macos-python] with arguments: []
+2026-04-27 13:03:05,890 DEBUG    root            Loaded Command Group: ['gcloud']
+2026-04-27 13:03:05,900 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2026-04-27 13:03:05,904 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'virtualenv']
+2026-04-27 13:03:05,922 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'virtualenv', 'update']
+2026-04-27 13:03:05,935 DEBUG    root            Running [gcloud.config.virtualenv.update] with arguments: []
+2026-04-27 13:03:05,935 INFO     ___FILE_ONLY___ Updating modules...
+
+2026-04-27 13:03:05,935 DEBUG    root            Executing command: ['/Users/logan/.config/gcloud/virtenv/bin/pip3', 'install', '--log', '/Users/logan/.config/gcloud/virtenv/update_module.log', '--disable-pip-version-check', 'crcmod', 'grpcio', 'pyopenssl==24.2.1', 'google_crc32c', 'certifi', 'https://github.com/googleapis/enterprise-certificate-proxy/releases/download/v0.3.6/cryptography-42.0.7-cp37-abi3-macosx_10_12_x86_64.whl', 'setuptools']
+2026-04-27 13:03:08,475 INFO     ___FILE_ONLY___ Modules updated.
+
+2026-04-27 13:03:08,476 DEBUG    root            Chosen display Format:default
+2026-04-27 13:03:08,479 INFO     root            Display format: "default"
+2026-04-27 13:03:08,576 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'virtualenv', 'enable']
+2026-04-27 13:03:08,583 DEBUG    root            Running [gcloud.config.virtualenv.enable] with arguments: []
+2026-04-27 13:03:08,583 INFO     ___FILE_ONLY___ Virtual env enabled.
+
+2026-04-27 13:03:08,583 DEBUG    root            Chosen display Format:default
+2026-04-27 13:03:08,584 INFO     root            Display format: "default"
+2026-04-27 13:03:08,587 DEBUG    root            Chosen display Format:default
+2026-04-27 13:03:08,587 INFO     root            Display format: "default"

@@ -1,0 +1,6 @@
+{
+  "id": "spellbook",
+  "displayName": "Spellbook",
+  "description": "An open magical book that talks without eyes, carrying quiet wisdom with small attached magic around its pages.",
+  "spritesheetPath": "spritesheet.webp"
+}

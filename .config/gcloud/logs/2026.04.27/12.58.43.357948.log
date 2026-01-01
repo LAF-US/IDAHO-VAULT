@@ -1,0 +1,25 @@
+2026-04-27 12:58:43,359 DEBUG    root            Loaded Command Group: ['gcloud', 'auth']
+2026-04-27 12:58:43,362 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'application_default']
+2026-04-27 12:58:43,419 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'application-default', 'set_quota_project']
+2026-04-27 12:58:43,429 DEBUG    root            Running [gcloud.auth.application-default.set-quota-project] with arguments: [QUOTA_PROJECT_ID: "idaho-vault"]
+2026-04-27 12:58:43,456 DEBUG    root            On GCE from disk cache: False
+2026-04-27 12:58:43,462 DEBUG    root            On GCE from memory cache: False
+2026-04-27 12:58:43,463 INFO     root            Using alternate credentials from file: [/Users/logan/.config/gcloud/application_default_credentials.json]
+2026-04-27 12:58:43,470 DEBUG    root            On GCE from memory cache: False
+2026-04-27 12:58:43,480 DEBUG    root            On GCE from memory cache: False
+2026-04-27 12:58:43,481 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2026-04-27 12:58:43,495 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2026-04-27 12:58:43,724 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2026-04-27 12:58:43,763 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2026-04-27 12:58:43,912 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "POST /v1/projects/idaho-vault:testIamPermissions?alt=json HTTP/1.1" 200 None
+2026-04-27 12:58:44,011 INFO     ___FILE_ONLY___ 
+Credentials saved to file: [/Users/logan/.config/gcloud/application_default_credentials.json]
+
+2026-04-27 12:58:44,012 INFO     ___FILE_ONLY___ 
+These credentials will be used by any library that requests Application Default Credentials (ADC).
+
+2026-04-27 12:58:44,013 INFO     ___FILE_ONLY___ 
+Quota project "idaho-vault" was added to ADC which can be used by Google client libraries for billing and quota. Note that some services may still bill the project owning the resource.
+
+2026-04-27 12:58:44,013 DEBUG    root            Chosen display Format:none
+2026-04-27 12:58:44,016 INFO     root            Display format: "none"

@@ -1,0 +1,31 @@
+2026-04-27 12:42:38,490 DEBUG    root            Loaded Command Group: ['gcloud', 'components']
+2026-04-27 12:42:38,498 DEBUG    root            Loaded Command Group: ['gcloud', 'components', 'update_macos_python']
+2026-04-27 12:42:38,507 DEBUG    root            Running [gcloud.components.update-macos-python] with arguments: []
+2026-04-27 12:42:38,508 DEBUG    root            Executing command: ['xcode-select', '-p']
+2026-04-27 12:42:38,514 DEBUG    root            On GCE from disk cache: False
+2026-04-27 12:42:38,550 DEBUG    root            Executing command: ['curl', '--silent', '-O', 'https://dl.google.com/dl/cloudsdk/channels/rapid/python-3.13.7-macos11.tar.gz']
+2026-04-27 12:42:40,138 DEBUG    root            Executing command: ['tar', '-xf', 'python-3.13.7-macos11.tar.gz']
+2026-04-27 12:42:40,454 DEBUG    root            Executing command: ['sudo', 'installer', '-target', '/', '-pkg', './python-3.13.7-macos11.pkg']
+2026-04-27 12:46:30,484 DEBUG    root            Loaded Command Group: ['gcloud']
+2026-04-27 12:46:30,502 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2026-04-27 12:46:30,506 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'virtualenv']
+2026-04-27 12:46:30,549 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'virtualenv', 'create']
+2026-04-27 12:46:30,559 DEBUG    root            Running [gcloud.config.virtualenv.create] with arguments: [--python-to-use: "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3"]
+2026-04-27 12:46:30,561 INFO     ___FILE_ONLY___ Creating virtualenv...
+
+2026-04-27 12:46:30,563 DEBUG    root            Executing command: ['/Library/Frameworks/Python.framework/Versions/3.13/bin/python3', '-m', 'venv', '/Users/logan/.config/gcloud/virtenv']
+2026-04-27 12:46:37,411 DEBUG    ___FILE_ONLY___ 
+2026-04-27 12:46:37,412 DEBUG    ___FILE_ONLY___ 
+2026-04-27 12:46:37,412 INFO     ___FILE_ONLY___ Installing modules...
+
+2026-04-27 12:46:37,413 DEBUG    root            Executing command: ['/Users/logan/.config/gcloud/virtenv/bin/pip3', 'install', '--log', '/Users/logan/.config/gcloud/virtenv/install_module.log', '--disable-pip-version-check', 'crcmod', 'grpcio', 'pyopenssl==24.2.1', 'google_crc32c', 'certifi', 'https://github.com/googleapis/enterprise-certificate-proxy/releases/download/v0.3.6/cryptography-42.0.7-cp37-abi3-macosx_10_12_x86_64.whl', 'setuptools']
+2026-04-27 12:47:03,058 DEBUG    root            Chosen display Format:default
+2026-04-27 12:47:03,061 INFO     root            Display format: "default"
+2026-04-27 12:47:03,164 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'virtualenv', 'enable']
+2026-04-27 12:47:03,167 DEBUG    root            Running [gcloud.config.virtualenv.enable] with arguments: []
+2026-04-27 12:47:03,168 INFO     ___FILE_ONLY___ Virtual env enabled.
+
+2026-04-27 12:47:03,168 DEBUG    root            Chosen display Format:default
+2026-04-27 12:47:03,170 INFO     root            Display format: "default"
+2026-04-27 12:47:03,174 DEBUG    root            Chosen display Format:default
+2026-04-27 12:47:03,174 INFO     root            Display format: "default"

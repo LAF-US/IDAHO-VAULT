@@ -1,0 +1,1646 @@
+2026-04-28 10:53:28,171 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2026-04-28 10:53:28,176 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'get']
+2026-04-28 10:53:28,233 DEBUG    root            Running [gcloud.config.get] with arguments: [--help: "None"]
+2026-04-28 10:53:28,311 DEBUG    root            Failed to check metadata server: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+2026-04-28 10:53:28,311 DEBUG    root            On GCE from server: False
+2026-04-28 10:53:28,320 DEBUG    root            Loaded Command Group: ['gcloud', 'help']
+2026-04-28 10:53:28,323 DEBUG    root            Loaded Command Group: ['gcloud', 'topic']
+2026-04-28 10:53:28,328 DEBUG    root            Loaded Command Group: ['gcloud', 'topic', 'formats']
+2026-04-28 10:53:28,330 DEBUG    root            Loaded Command Group: ['gcloud', 'topic', 'gcloudignore']
+2026-04-28 10:53:28,342 DEBUG    root            Loaded Command Group: ['gcloud', 'auth']
+2026-04-28 10:53:28,345 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'list']
+2026-04-28 10:53:28,450 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-04-28 10:53:28,454 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'backend_services']
+2026-04-28 10:53:28,458 DEBUG    root            Loaded Command Group: ['gcloud', 'access_approval']
+2026-04-28 10:53:28,461 DEBUG    root            Loaded Command Group: ['gcloud', 'access_context_manager']
+2026-04-28 10:53:28,463 DEBUG    root            Loaded Command Group: ['gcloud', 'ai']
+2026-04-28 10:53:28,491 DEBUG    root            Loaded Command Group: ['gcloud', 'ai_platform']
+2026-04-28 10:53:28,493 DEBUG    root            Loaded Command Group: ['gcloud', 'anthos']
+2026-04-28 10:53:28,511 DEBUG    root            Loaded Command Group: ['gcloud', 'container']
+2026-04-28 10:53:28,513 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'fleet']
+2026-04-28 10:53:28,521 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'fleet', 'policycontroller']
+2026-04-28 10:53:28,523 DEBUG    root            Loaded Command Group: ['gcloud', 'api_gateway']
+2026-04-28 10:53:28,525 DEBUG    root            Loaded Command Group: ['gcloud', 'apigee']
+2026-04-28 10:53:28,527 DEBUG    root            Loaded Command Group: ['gcloud', 'app']
+2026-04-28 10:53:28,530 DEBUG    root            Loaded Command Group: ['gcloud', 'apphub']
+2026-04-28 10:53:28,533 DEBUG    root            No implementation for release track [GA] for element: [/usr/local/Caskroom/gcloud-cli/565.0.0/google-cloud-sdk/lib/surface/app_optimize]
+2026-04-28 10:53:28,535 DEBUG    root            Loaded Command Group: ['gcloud', 'artifacts']
+2026-04-28 10:53:28,539 DEBUG    root            Loaded Command Group: ['gcloud', 'assured']
+2026-04-28 10:53:28,541 DEBUG    root            Loaded Command Group: ['gcloud', 'audit_manager']
+2026-04-28 10:53:28,542 DEBUG    root            Loaded Command Group: ['gcloud', 'bms']
+2026-04-28 10:53:28,545 DEBUG    root            Loaded Command Group: ['gcloud', 'bigtable']
+2026-04-28 10:53:28,546 DEBUG    root            Loaded Command Group: ['gcloud', 'certificate_manager']
+2026-04-28 10:53:28,548 DEBUG    root            No implementation for release track [GA] for element: [/usr/local/Caskroom/gcloud-cli/565.0.0/google-cloud-sdk/lib/surface/api_registry]
+2026-04-28 10:53:28,549 DEBUG    root            Loaded Command Group: ['gcloud', 'asset']
+2026-04-28 10:53:28,551 DEBUG    root            Loaded Command Group: ['gcloud', 'billing']
+2026-04-28 10:53:28,686 DEBUG    root            Loaded Command Group: ['gcloud', 'builds']
+2026-04-28 10:53:28,688 DEBUG    root            No implementation for release track [GA] for element: [/usr/local/Caskroom/gcloud-cli/565.0.0/google-cloud-sdk/lib/surface/commerce_procurement]
+2026-04-28 10:53:28,689 DEBUG    root            Loaded Command Group: ['gcloud', 'deploy']
+2026-04-28 10:53:28,691 DEBUG    root            No implementation for release track [GA] for element: [/usr/local/Caskroom/gcloud-cli/565.0.0/google-cloud-sdk/lib/surface/error_reporting]
+2026-04-28 10:53:28,695 DEBUG    root            Loaded Command Group: ['gcloud', 'functions']
+2026-04-28 10:53:28,697 DEBUG    root            Loaded Command Group: ['gcloud', 'identity']
+2026-04-28 10:53:28,698 DEBUG    root            Loaded Command Group: ['gcloud', 'kms']
+2026-04-28 10:53:28,701 DEBUG    root            Loaded Command Group: ['gcloud', 'cloudlocationfinder']
+2026-04-28 10:53:28,707 DEBUG    root            Loaded Command Group: ['gcloud', 'projects']
+2026-04-28 10:53:28,709 DEBUG    root            Loaded Command Group: ['gcloud', 'scheduler']
+2026-04-28 10:53:28,713 DEBUG    root            Loaded Command Group: ['gcloud', 'compliance_manager']
+2026-04-28 10:53:28,715 DEBUG    root            Loaded Command Group: ['gcloud', 'tasks']
+2026-04-28 10:53:28,717 DEBUG    root            No implementation for release track [GA] for element: [/usr/local/Caskroom/gcloud-cli/565.0.0/google-cloud-sdk/lib/surface/trace]
+2026-04-28 10:53:28,718 DEBUG    root            Loaded Command Group: ['gcloud', 'composer']
+2026-04-28 10:53:28,719 DEBUG    root            Loaded Command Group: ['gcloud', 'infra_manager']
+2026-04-28 10:53:28,721 DEBUG    root            Loaded Command Group: ['gcloud', 'data_catalog']
+2026-04-28 10:53:28,723 DEBUG    root            Loaded Command Group: ['gcloud', 'dataflow']
+2026-04-28 10:53:28,725 DEBUG    root            No implementation for release track [GA] for element: [/usr/local/Caskroom/gcloud-cli/565.0.0/google-cloud-sdk/lib/surface/data_fusion]
+2026-04-28 10:53:28,725 DEBUG    root            Loaded Command Group: ['gcloud', 'database_migration']
+2026-04-28 10:53:28,730 DEBUG    root            No implementation for release track [GA] for element: [/usr/local/Caskroom/gcloud-cli/565.0.0/google-cloud-sdk/lib/surface/datapipelines]
+2026-04-28 10:53:28,731 DEBUG    root            Loaded Command Group: ['gcloud', 'dataplex']
+2026-04-28 10:53:28,735 DEBUG    root            Loaded Command Group: ['gcloud', 'dataproc']
+2026-04-28 10:53:28,739 DEBUG    root            Loaded Command Group: ['gcloud', 'datastore']
+2026-04-28 10:53:28,742 DEBUG    root            Loaded Command Group: ['gcloud', 'datastream']
+2026-04-28 10:53:28,746 DEBUG    root            Loaded Command Group: ['gcloud', 'deployment_manager']
+2026-04-28 10:53:28,753 DEBUG    root            Loaded Command Group: ['gcloud', 'developer_connect']
+2026-04-28 10:53:28,756 DEBUG    root            Loaded Command Group: ['gcloud', 'dns']
+2026-04-28 10:53:28,759 DEBUG    root            Loaded Command Group: ['gcloud', 'domains']
+2026-04-28 10:53:28,763 DEBUG    root            Loaded Command Group: ['gcloud', 'eventarc']
+2026-04-28 10:53:28,766 DEBUG    root            No implementation for release track [GA] for element: [/usr/local/Caskroom/gcloud-cli/565.0.0/google-cloud-sdk/lib/surface/fault_injection]
+2026-04-28 10:53:28,768 DEBUG    root            No implementation for release track [GA] for element: [/usr/local/Caskroom/gcloud-cli/565.0.0/google-cloud-sdk/lib/surface/fault_testing]
+2026-04-28 10:53:28,769 DEBUG    root            Loaded Command Group: ['gcloud', 'filestore']
+2026-04-28 10:53:28,772 DEBUG    root            No implementation for release track [GA] for element: [/usr/local/Caskroom/gcloud-cli/565.0.0/google-cloud-sdk/lib/surface/firebase_data_connect]
+2026-04-28 10:53:28,773 DEBUG    root            Loaded Command Group: ['gcloud', 'firestore']
+2026-04-28 10:53:28,776 DEBUG    root            No implementation for release track [GA] for element: [/usr/local/Caskroom/gcloud-cli/565.0.0/google-cloud-sdk/lib/surface/genomics]
+2026-04-28 10:53:28,777 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'aws']
+2026-04-28 10:53:28,781 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'azure']
+2026-04-28 10:53:28,785 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'attached']
+2026-04-28 10:53:28,787 DEBUG    root            Loaded Command Group: ['gcloud', 'healthcare']
+2026-04-28 10:53:28,791 DEBUG    root            No implementation for release track [GA] for element: [/usr/local/Caskroom/gcloud-cli/565.0.0/google-cloud-sdk/lib/surface/cluster_director]
+2026-04-28 10:53:28,793 DEBUG    root            Loaded Command Group: ['gcloud', 'iam']
+2026-04-28 10:53:28,797 DEBUG    root            No implementation for release track [GA] for element: [/usr/local/Caskroom/gcloud-cli/565.0.0/google-cloud-sdk/lib/surface/agent_identity]
+2026-04-28 10:53:28,798 DEBUG    root            Loaded Command Group: ['gcloud', 'iap']
+2026-04-28 10:53:28,800 DEBUG    root            Loaded Command Group: ['gcloud', 'ids']
+2026-04-28 10:53:28,802 DEBUG    root            Loaded Command Group: ['gcloud', 'anthos', 'config']
+2026-04-28 10:53:28,805 DEBUG    root            Loaded Command Group: ['gcloud', 'anthos', 'config', 'controller']
+2026-04-28 10:53:28,807 DEBUG    root            Loaded Command Group: ['gcloud', 'ml']
+2026-04-28 10:53:28,809 DEBUG    root            Loaded Command Group: ['gcloud', 'ml', 'language']
+2026-04-28 10:53:28,813 DEBUG    root            No implementation for release track [GA] for element: [/usr/local/Caskroom/gcloud-cli/565.0.0/google-cloud-sdk/lib/surface/lifesciences]
+2026-04-28 10:53:28,813 DEBUG    root            Loaded Command Group: ['gcloud', 'logging']
+2026-04-28 10:53:28,816 DEBUG    root            Loaded Command Group: ['gcloud', 'looker']
+2026-04-28 10:53:28,818 DEBUG    root            Loaded Command Group: ['gcloud', 'active_directory']
+2026-04-28 10:53:28,820 DEBUG    root            No implementation for release track [GA] for element: [/usr/local/Caskroom/gcloud-cli/565.0.0/google-cloud-sdk/lib/surface/mps]
+2026-04-28 10:53:28,820 DEBUG    root            No implementation for release track [GA] for element: [/usr/local/Caskroom/gcloud-cli/565.0.0/google-cloud-sdk/lib/surface/media]
+2026-04-28 10:53:28,821 DEBUG    root            Loaded Command Group: ['gcloud', 'memcache']
+2026-04-28 10:53:28,823 DEBUG    root            Loaded Command Group: ['gcloud', 'metastore']
+2026-04-28 10:53:28,825 DEBUG    root            Loaded Command Group: ['gcloud', 'monitoring']
+2026-04-28 10:53:28,827 DEBUG    root            Loaded Command Group: ['gcloud', 'netapp']
+2026-04-28 10:53:28,831 DEBUG    root            Loaded Command Group: ['gcloud', 'network_connectivity']
+2026-04-28 10:53:28,834 DEBUG    root            Loaded Command Group: ['gcloud', 'network_management']
+2026-04-28 10:53:28,837 DEBUG    root            Loaded Command Group: ['gcloud', 'network_security']
+2026-04-28 10:53:28,839 DEBUG    root            Loaded Command Group: ['gcloud', 'network_services']
+2026-04-28 10:53:28,842 DEBUG    root            Loaded Command Group: ['gcloud', 'notebooks']
+2026-04-28 10:53:28,845 DEBUG    root            Loaded Command Group: ['gcloud', 'observability']
+2026-04-28 10:53:28,847 DEBUG    root            Loaded Command Group: ['gcloud', 'org_policies']
+2026-04-28 10:53:28,848 DEBUG    root            Loaded Command Group: ['gcloud', 'privateca']
+2026-04-28 10:53:28,850 DEBUG    root            Loaded Command Group: ['gcloud', 'pam']
+2026-04-28 10:53:28,852 DEBUG    root            Loaded Command Group: ['gcloud', 'publicca']
+2026-04-28 10:53:28,854 DEBUG    root            Loaded Command Group: ['gcloud', 'pubsub']
+2026-04-28 10:53:28,856 DEBUG    root            Loaded Command Group: ['gcloud', 'recaptcha']
+2026-04-28 10:53:28,858 DEBUG    root            Loaded Command Group: ['gcloud', 'recommender']
+2026-04-28 10:53:28,859 DEBUG    root            Loaded Command Group: ['gcloud', 'redis']
+2026-04-28 10:53:28,862 DEBUG    root            Loaded Command Group: ['gcloud', 'run']
+2026-04-28 10:53:28,866 DEBUG    root            No implementation for release track [GA] for element: [/usr/local/Caskroom/gcloud-cli/565.0.0/google-cloud-sdk/lib/surface/runtime_config]
+2026-04-28 10:53:28,866 DEBUG    root            Loaded Command Group: ['gcloud', 'vmware']
+2026-04-28 10:53:28,869 DEBUG    root            No implementation for release track [GA] for element: [/usr/local/Caskroom/gcloud-cli/565.0.0/google-cloud-sdk/lib/surface/vmware/sddc]
+2026-04-28 10:53:28,870 DEBUG    root            Loaded Command Group: ['gcloud', 'secrets']
+2026-04-28 10:53:28,871 DEBUG    root            Loaded Command Group: ['gcloud', 'scc']
+2026-04-28 10:53:28,873 DEBUG    root            Loaded Command Group: ['gcloud', 'service_directory']
+2026-04-28 10:53:28,875 DEBUG    root            Loaded Command Group: ['gcloud', 'endpoints']
+2026-04-28 10:53:28,877 DEBUG    root            Loaded Command Group: ['gcloud', 'source']
+2026-04-28 10:53:28,879 DEBUG    root            Loaded Command Group: ['gcloud', 'spanner']
+2026-04-28 10:53:28,880 DEBUG    root            Loaded Command Group: ['gcloud', 'ml', 'speech']
+2026-04-28 10:53:28,882 DEBUG    root            Loaded Command Group: ['gcloud', 'sql']
+2026-04-28 10:53:28,897 DEBUG    root            Loaded Command Group: ['gcloud', 'storage']
+2026-04-28 10:53:28,899 DEBUG    root            Loaded Command Group: ['gcloud', 'firebase']
+2026-04-28 10:53:28,906 DEBUG    root            Loaded Command Group: ['gcloud', 'firebase', 'test']
+2026-04-28 10:53:28,908 DEBUG    root            Loaded Command Group: ['gcloud', 'transfer']
+2026-04-28 10:53:28,910 DEBUG    root            No implementation for release track [GA] for element: [/usr/local/Caskroom/gcloud-cli/565.0.0/google-cloud-sdk/lib/surface/transfer/appliances]
+2026-04-28 10:53:28,912 DEBUG    root            Loaded Command Group: ['gcloud', 'vector_search']
+2026-04-28 10:53:28,913 DEBUG    root            Loaded Command Group: ['gcloud', 'ml', 'vision']
+2026-04-28 10:53:28,916 DEBUG    root            Loaded Command Group: ['gcloud', 'migration']
+2026-04-28 10:53:28,917 DEBUG    root            Loaded Command Group: ['gcloud', 'migration', 'vms']
+2026-04-28 10:53:28,919 DEBUG    root            Loaded Command Group: ['gcloud', 'workflows']
+2026-04-28 10:53:28,921 DEBUG    root            Loaded Command Group: ['gcloud', 'workflows', 'executions']
+2026-04-28 10:53:28,923 DEBUG    root            Loaded Command Group: ['gcloud', 'workstations']
+2026-04-28 10:53:28,929 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'login']
+2026-04-28 10:53:28,932 DEBUG    root            Loaded Command Group: ['gcloud', 'components']
+2026-04-28 10:53:28,933 DEBUG    root            Loaded Command Group: ['gcloud', 'components', 'repositories']
+2026-04-28 10:53:28,935 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'regions']
+2026-04-28 10:53:28,937 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'regions', 'list']
+2026-04-28 10:53:28,939 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'zones']
+2026-04-28 10:53:28,941 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'zones', 'list']
+2026-04-28 10:53:28,943 DEBUG    root            Loaded Command Group: ['gcloud', 'topic', 'client_certificate']
+2026-04-28 10:53:28,991 INFO     ___FILE_ONLY___ [m[1mNAME[m
+    gcloud config get - print the value of a Google Cloud CLI property
+
+[m[1mSYNOPSIS[m
+    [1mgcloud config get[m [4mSECTION[m/[4mPROPERTY[m [[4mGCLOUD_WIDE_FLAG ...[m]
+
+[m[1mDESCRIPTION[m
+    gcloud config get prints the property value from your active client side
+    configuration only.
+
+[m[1mEXAMPLES[m
+    To print the project property in the core section, run:
+
+        $ gcloud config get project
+
+    To print the zone property in the compute section, run:
+
+        $ gcloud config get compute/zone
+
+[m[1mPOSITIONAL ARGUMENTS[m
+     [4mSECTION[m/[4mPROPERTY[m
+        The property to be fetched. Note that [1mSECTION/[m is optional while
+        referring to properties in the core section.
+
+[m[1mGCLOUD WIDE FLAGS[m
+    These flags are available to all commands: --access-token-file, --account,
+    --billing-project, --configuration, --flags-file, --flatten, --format,
+    --help, --impersonate-service-account, --log-http, --project, --quiet,
+    --trace-token, --user-output-enabled, --verbosity.
+
+    Run [1m$ gcloud help[m for details.
+
+[m[1mAVAILABLE PROPERTIES[m
+     [4mcore[m
+         [1maccount[m
+            Account [1mgcloud[m should use for authentication. Run [1mgcloud auth list[m
+            to see your currently available accounts.
+
+         [1mconsole_log_format[m
+            Control the format used to display log messages to the console.
+
+            Valid values are:
+            ▸ [1mstandard[m - Simplified log messages are displayed on the
+              console.
+            ▸ [1mdetailed[m - More detailed messages are displayed on the console.
+
+            If unset, default is [1mstandard[m.
+
+         [1mcustom_ca_certs_file[m
+            Absolute path to a custom CA cert file.
+
+         [1mdefault_format[m
+            Sets the default format for printing command resources.
+            [1mcore/default_format[m overrides the default yaml format. If the
+            command contains a command-specific output format, it takes
+            precedence over the [1mcore/default_format[m value. Use
+            [1m--verbosity=debug[m flag to view the command-specific format. Both
+            [1mcore/format[m and [1m--format[m also take precedence over
+            [1mcore/default_format[m. The supported formats are limited to: [1mconfig[m,
+            [1mdefault[m, [1mdisable[m, [1mflattened[m, [1mjson[m, [1mlist[m, [1mnone[m, [1mobject[m, [1mtext[m. For
+            more details run $ gcloud topic formats. Run [1m$ gcloud config set
+            --help[m to see more information about [1mcore/default_format[m
+
+         [1mdefault_regional_backend_service[m
+            If True, backend services in [1mgcloud compute backend-services[m will
+            be regional by default. Setting the [1m--global[m flag is required for
+            global backend services.
+
+         [1mdisable_color[m
+            If True, color will not be used when printing messages in the
+            terminal.
+
+         [1mdisable_file_logging[m
+            If True, [1mgcloud[m will not store logs to a file. This may be useful
+            if disk space is limited.
+
+         [1mdisable_prompts[m
+            If True, the default answer will be assumed for all user prompts.
+            However, for any prompts that require user input, an error will be
+            raised. This is equivalent to either using the global [1m--quiet[m flag
+            or setting the environment variable [1mCLOUDSDK_CORE_DISABLE_PROMPTS[m
+            to 1. Setting this property is useful when scripting with [1mgcloud[m.
+
+         [1mdisable_usage_reporting[m
+            If True, anonymous statistics on SDK usage will not be collected.
+            This value is set by your choices during installation, but can be
+            changed at any time. For more information, see Usage statistics.
+
+         [1mformat[m
+            Sets the format for printing all command resources. This overrides
+            the default command-specific human-friendly output format. Use
+            [1m--verbosity=debug[m flag to view the command-specific format. If both
+            [1mcore/default_format[m and [1mcore/format[m are specified, [1mcore/format[m
+            takes precedence. If both [1mcore/format[m and [1m--format[m are specified,
+            [1m--format[m takes precedence. The supported formats are limited to:
+            [1mconfig[m, [1mdefault[m, [1mdisable[m, [1mflattened[m, [1mjson[m, [1mlist[m, [1mnone[m, [1mobject[m,
+            [1mtext[m. For more details run $ gcloud topic formats. Run [1m$ gcloud
+            config set --help[m to see more information about [1mcore/format[m
+
+         [1mlog_http[m
+            If True, log HTTP requests and responses to the logs. To see logs
+            in the terminal, adjust [1mverbosity[m settings. Otherwise, logs are
+            available in their respective log files.
+
+         [1mmax_log_days[m
+            Maximum number of days to retain log files before deleting. If set
+            to 0, turns off log garbage collection and does not delete log
+            files. If unset, the default is 30 days.
+
+         [1mparse_error_details[m
+            If True, [1mgcloud[m will attempt to parse and interpret error details
+            in API originating errors. If False, [1mgcloud[m will write flush error
+            details as is to stderr/log.
+
+         [1mpass_credentials_to_gsutil[m
+            If True, pass the configured Google Cloud CLI authentication to
+            gsutil.
+
+         [1mproject[m
+            Project ID of the Cloud Platform project to operate on by default.
+            This can be overridden by using the global [1m--project[m flag.
+
+         [1mshow_structured_logs[m
+            Control when JSON-structured log messages for the current verbosity
+            level (and above) will be written to standard error. If this
+            property is disabled, logs are formatted as [1mtext[m by default.
+
+            Valid values are:
+            ▸ [1mnever[m - Log messages as text
+            ▸ [1malways[m - Always log messages as JSON
+            ▸ [1mlog[m - Only log messages as JSON if stderr is a file
+            ▸ [1mterminal[m - Only log messages as JSON if stderr is a terminal
+
+            If unset, default is [1mnever[m.
+
+         [1mtrace_token[m
+            Token used to route traces of service requests for investigation of
+            issues. This token will be provided by Google support.
+
+         [1muniverse_domain[m
+            Sets the domain of the universe to use for API requests.
+
+         [1muser_output_enabled[m
+            True, by default. If False, messages to the user and command output
+            on both standard output and standard error will be suppressed.
+
+         [1mverbosity[m
+            Default logging verbosity for [1mgcloud[m commands. This is the
+            equivalent of using the global [1m--verbosity[m flag. Supported
+            verbosity levels: [1mdebug[m, [1minfo[m, [1mwarning[m, [1merror[m, [1mcritical[m, and [1mnone[m.
+
+     [4maccessibility[m
+         [1mscreen_reader[m
+            Make gcloud more screen reader friendly.
+
+     [4mai[m
+         [1mregion[m
+            Default region to use when working with AI Platform resources. When
+            a [1m--region[m flag is required but not provided, the command will fall
+            back to this value, if set.
+
+     [4mai_platform[m
+         [1mregion[m
+            Default region to use when working with AI Platform Training and
+            Prediction resources (currently for Prediction only). It is ignored
+            for training resources for now. The value should be either [1mglobal[m
+            or one of the supported regions. When a [1m--region[m flag is required
+            but not provided, the command will fall back to this value, if set.
+
+     [4mapi_endpoint_overrides[m
+         [1maccessapproval[m
+            Overrides API endpoint for [1mgcloud access-approval[m command group.
+            Defaults to [1mhttps://accessapproval.googleapis.com/[m
+
+         [1maccesscontextmanager[m
+            Overrides API endpoint for [1mgcloud access-context-manager[m command
+            group. Defaults to [1mhttps://accesscontextmanager.googleapis.com/[m
+
+         [1mai[m
+            Overrides API endpoint for [1mgcloud ai[m command group.
+
+         [1maiplatform[m
+            Overrides API endpoint for [1mgcloud ai-platform[m command group.
+            Defaults to [1mhttps://aiplatform.googleapis.com/[m
+
+         [1manthosevents[m
+            Overrides API endpoint for [1mgcloud anthos[m command group. Defaults to
+            [1mhttps://anthosevents.googleapis.com/[m
+
+         [1manthospolicycontrollerstatus_pa[m
+            Overrides API endpoint for [1mgcloud container fleet policycontroller[m
+            command group. Defaults to
+            [1mhttps://anthospolicycontrollerstatus-pa.googleapis.com/[m
+
+         [1mapigateway[m
+            Overrides API endpoint for [1mgcloud api-gateway[m command group.
+            Defaults to [1mhttps://apigateway.googleapis.com/[m
+
+         [1mapigee[m
+            Overrides API endpoint for [1mgcloud apigee[m command group. Defaults to
+            [1mhttps://apigee.googleapis.com/[m
+
+         [1mappengine[m
+            Overrides API endpoint for [1mgcloud app[m command group. Defaults to
+            [1mhttps://appengine.googleapis.com/[m
+
+         [1mapphub[m
+            Overrides API endpoint for [1mgcloud apphub[m command group. Defaults to
+            [1mhttps://apphub.googleapis.com/[m
+
+         [1mappoptimize[m
+            Overrides API endpoint for [1mgcloud app-optimize[m command group.
+            Defaults to [1mhttps://appoptimize.googleapis.com/[m
+
+         [1martifactregistry[m
+            Overrides API endpoint for [1mgcloud artifacts[m command group. Defaults
+            to [1mhttps://artifactregistry.googleapis.com/[m
+
+         [1massuredworkloads[m
+            Overrides API endpoint for [1mgcloud assured[m command group. Defaults
+            to [1mhttps://assuredworkloads.googleapis.com/[m
+
+         [1mauditmanager[m
+            Overrides API endpoint for [1mgcloud audit-manager[m command group.
+            Defaults to [1mhttps://auditmanager.googleapis.com/[m
+
+         [1mbaremetalsolution[m
+            Overrides API endpoint for [1mgcloud bms[m command group. Defaults to
+            [1mhttps://baremetalsolution.googleapis.com/[m
+
+         [1mbigtableadmin[m
+            Overrides API endpoint for [1mgcloud bigtable[m command group. Defaults
+            to [1mhttps://bigtableadmin.googleapis.com/[m
+
+         [1mcertificatemanager[m
+            Overrides API endpoint for [1mgcloud certificate-manager[m command
+            group. Defaults to [1mhttps://certificatemanager.googleapis.com/[m
+
+         [1mcloudapiregistry[m
+            Overrides API endpoint for [1mgcloud api-registry[m command group.
+            Defaults to [1mhttps://cloudapiregistry.googleapis.com/[m
+
+         [1mcloudasset[m
+            Overrides API endpoint for [1mgcloud asset[m command group. Defaults to
+            [1mhttps://cloudasset.googleapis.com/[m
+
+         [1mcloudbilling[m
+            Overrides API endpoint for [1mgcloud billing[m command group. Defaults
+            to [1mhttps://cloudbilling.googleapis.com/[m
+
+         [1mcloudbuild[m
+            Overrides API endpoint for [1mgcloud builds[m command group. Defaults to
+            [1mhttps://cloudbuild.googleapis.com/[m
+
+         [1mcloudcommerceconsumerprocurement[m
+            Overrides API endpoint for [1mgcloud commerce-procurement[m command
+            group. Defaults to
+            [1mhttps://cloudcommerceconsumerprocurement.googleapis.com/[m
+
+         [1mclouddebugger[m
+            Overrides API endpoint for [1mgcloud debug[m command group. Defaults to
+            [1mhttps://clouddebugger.googleapis.com/[m
+
+         [1mclouddeploy[m
+            Overrides API endpoint for [1mgcloud deploy[m command group. Defaults to
+            [1mhttps://clouddeploy.googleapis.com/[m
+
+         [1mclouderrorreporting[m
+            Overrides API endpoint for [1mgcloud error-reporting[m command group.
+            Defaults to [1mhttps://clouderrorreporting.googleapis.com/[m
+
+         [1mcloudfunctions[m
+            Overrides API endpoint for [1mgcloud functions[m command group. Defaults
+            to [1mhttps://cloudfunctions.googleapis.com/[m
+
+         [1mcloudidentity[m
+            Overrides API endpoint for [1mgcloud identity[m command group. Defaults
+            to [1mhttps://cloudidentity.googleapis.com/[m
+
+         [1mcloudkms[m
+            Overrides API endpoint for [1mgcloud kms[m command group. Defaults to
+            [1mhttps://cloudkms.googleapis.com/[m
+
+         [1mcloudlocationfinder[m
+            Overrides API endpoint for [1mgcloud cloudlocationfinder[m command
+            group. Defaults to [1mhttps://cloudlocationfinder.googleapis.com/[m
+
+         [1mcloudresourcemanager[m
+            Overrides API endpoint for [1mgcloud projects[m command group. Defaults
+            to [1mhttps://cloudresourcemanager.googleapis.com/[m
+
+         [1mcloudscheduler[m
+            Overrides API endpoint for [1mgcloud scheduler[m command group. Defaults
+            to [1mhttps://cloudscheduler.googleapis.com/[m
+
+         [1mcloudsecuritycompliance[m
+            Overrides API endpoint for [1mgcloud compliance-manager[m command group.
+            Defaults to [1mhttps://cloudsecuritycompliance.googleapis.com/[m
+
+         [1mcloudtasks[m
+            Overrides API endpoint for [1mgcloud tasks[m command group. Defaults to
+            [1mhttps://cloudtasks.googleapis.com/[m
+
+         [1mcloudtrace[m
+            Overrides API endpoint for [1mgcloud trace[m command group. Defaults to
+            [1mhttps://cloudtrace.googleapis.com/[m
+
+         [1mcomposer[m
+            Overrides API endpoint for [1mgcloud composer[m command group. Defaults
+            to [1mhttps://composer.googleapis.com/[m
+
+         [1mcompute[m
+            Overrides API endpoint for [1mgcloud compute[m command group. For
+            Private Service Connect usage, see
+            https://cloud.google.com/vpc/docs/configure-private-service-connect-apis#using-endpoints
+
+         [1mconfig[m
+            Overrides API endpoint for [1mgcloud infra-manager[m command group.
+            Defaults to [1mhttps://config.googleapis.com/[m
+
+         [1mcontainer[m
+            Overrides API endpoint for [1mgcloud container[m command group. Defaults
+            to [1mhttps://container.googleapis.com/[m
+
+         [1mdatacatalog[m
+            Overrides API endpoint for [1mgcloud data-catalog[m command group.
+            Defaults to [1mhttps://datacatalog.googleapis.com/[m
+
+         [1mdataflow[m
+            Overrides API endpoint for [1mgcloud dataflow[m command group. Defaults
+            to [1mhttps://dataflow.googleapis.com/[m
+
+         [1mdatafusion[m
+            Overrides API endpoint for [1mgcloud data-fusion[m command group.
+            Defaults to [1mhttps://datafusion.googleapis.com/[m
+
+         [1mdatamigration[m
+            Overrides API endpoint for [1mgcloud database-migration[m command group.
+            Defaults to [1mhttps://datamigration.googleapis.com/[m
+
+         [1mdatapipelines[m
+            Overrides API endpoint for [1mgcloud datapipelines[m command group.
+            Defaults to [1mhttps://datapipelines.googleapis.com/[m
+
+         [1mdataplex[m
+            Overrides API endpoint for [1mgcloud dataplex[m command group. Defaults
+            to [1mhttps://dataplex.googleapis.com/[m
+
+         [1mdataproc[m
+            Overrides API endpoint for [1mgcloud dataproc[m command group. Defaults
+            to [1mhttps://dataproc.googleapis.com/[m
+
+         [1mdatastore[m
+            Overrides API endpoint for [1mgcloud datastore[m command group. Defaults
+            to [1mhttps://datastore.googleapis.com/[m
+
+         [1mdatastream[m
+            Overrides API endpoint for [1mgcloud datastream[m command group.
+            Defaults to [1mhttps://datastream.googleapis.com/[m
+
+         [1mdeploymentmanager[m
+            Overrides API endpoint for [1mgcloud deployment-manager[m command group.
+            Defaults to [1mhttps://deploymentmanager.googleapis.com/[m
+
+         [1mdeveloperconnect[m
+            Overrides API endpoint for [1mgcloud developer-connect[m command group.
+            Defaults to [1mhttps://developerconnect.googleapis.com/[m
+
+         [1mdns[m
+            Overrides API endpoint for [1mgcloud dns[m command group. Defaults to
+            [1mhttps://dns.googleapis.com/dns/v1/[m
+
+         [1mdomains[m
+            Overrides API endpoint for [1mgcloud domains[m command group. Defaults
+            to [1mhttps://domains.googleapis.com/[m
+
+         [1medgecontainer[m
+            Overrides API endpoint for [1mgcloud edge-container[m command group.
+            Defaults to [1mhttps://edgecontainer.googleapis.com/[m
+
+         [1meventarc[m
+            Overrides API endpoint for [1mgcloud eventarc[m command group. Defaults
+            to [1mhttps://eventarc.googleapis.com/[m
+
+         [1meventarcpublishing[m
+            Overrides API endpoint for [1mgcloud eventarc publish[m command group.
+            Defaults to [1mhttps://eventarcpublishing.googleapis.com/[m
+
+         [1mfaultinjectiontesting[m
+            Overrides API endpoint for [1mgcloud fault-injection[m command group.
+            Defaults to [1mhttps://faultinjectiontesting.googleapis.com/[m
+
+         [1mfaulttesting[m
+            Overrides API endpoint for [1mgcloud fault-testing[m command group.
+            Defaults to [1mhttps://faulttesting.googleapis.com/[m
+
+         [1mfile[m
+            Overrides API endpoint for [1mgcloud filestore[m command group. Defaults
+            to [1mhttps://file.googleapis.com/[m
+
+         [1mfirebasedataconnect[m
+            Overrides API endpoint for [1mgcloud firebase-data-connect[m command
+            group. Defaults to [1mhttps://firebasedataconnect.googleapis.com/[m
+
+         [1mfirestore[m
+            Overrides API endpoint for [1mgcloud firestore[m command group. Defaults
+            to [1mhttps://firestore.googleapis.com/[m
+
+         [1mgenomics[m
+            Overrides API endpoint for [1mgcloud genomics[m command group. Defaults
+            to [1mhttps://genomics.googleapis.com/[m
+
+         [1mgkemulticloud[m
+            Overrides API endpoint for [1mgcloud container aws[m, [1mgcloud container
+            azure[m and [1mgcloud container attached[m command groups.
+
+         [1mhealthcare[m
+            Overrides API endpoint for [1mgcloud healthcare[m command group.
+            Defaults to [1mhttps://healthcare.googleapis.com/[m
+
+         [1mhypercomputecluster[m
+            Overrides API endpoint for [1mgcloud cluster-director[m command group.
+            Defaults to [1mhttps://hypercomputecluster.googleapis.com/[m
+
+         [1miam[m
+            Overrides API endpoint for [1mgcloud iam[m command group. Defaults to
+            [1mhttps://iam.googleapis.com/[m
+
+         [1miamconnectors[m
+            Overrides API endpoint for [1mgcloud agent-identity[m command group.
+            Defaults to [1mhttps://iamconnectors.googleapis.com/[m
+
+         [1miamcredentials[m
+            Overrides API endpoint for [1mgcloud iam[m command group. Defaults to
+            [1mhttps://iamcredentials.googleapis.com/[m
+
+         [1miap[m
+            Overrides API endpoint for [1mgcloud iap[m command group. Defaults to
+            [1mhttps://iap.googleapis.com/[m
+
+         [1mids[m
+            Overrides API endpoint for [1mgcloud ids[m command group. Defaults to
+            [1mhttps://ids.googleapis.com/[m
+
+         [1mkrmapihosting[m
+            Overrides API endpoint for [1mgcloud anthos config controller[m command
+            group. Defaults to [1mhttps://krmapihosting.googleapis.com/[m
+
+         [1mlanguage[m
+            Overrides API endpoint for [1mgcloud ml language[m command group.
+            Defaults to [1mhttps://language.googleapis.com/[m
+
+         [1mlifesciences[m
+            Overrides API endpoint for [1mgcloud lifesciences[m command group.
+            Defaults to [1mhttps://lifesciences.googleapis.com/[m
+
+         [1mlogging[m
+            Overrides API endpoint for [1mgcloud logging[m command group. Defaults
+            to [1mhttps://logging.googleapis.com/[m
+
+         [1mlooker[m
+            Overrides API endpoint for [1mgcloud looker[m command group. Defaults to
+            [1mhttps://looker.googleapis.com/[m
+
+         [1mmanagedidentities[m
+            Overrides API endpoint for [1mgcloud active-directory[m command group.
+            Defaults to [1mhttps://managedidentities.googleapis.com/[m
+
+         [1mmarketplacesolutions[m
+            Overrides API endpoint for [1mgcloud mps[m command group. Defaults to
+            [1mhttps://marketplacesolutions.googleapis.com/[m
+
+         [1mmediaasset[m
+            Overrides API endpoint for [1mgcloud media[m command group. Defaults to
+            [1mhttps://mediaasset.googleapis.com/[m
+
+         [1mmemcache[m
+            Overrides API endpoint for [1mgcloud memcache[m command group. Defaults
+            to [1mhttps://memcache.googleapis.com/[m
+
+         [1mmetastore[m
+            Overrides API endpoint for [1mgcloud metastore[m command group. Defaults
+            to [1mhttps://metastore.googleapis.com/[m
+
+         [1mmonitoring[m
+            Overrides API endpoint for [1mgcloud monitoring[m command group.
+            Defaults to [1mhttps://monitoring.googleapis.com/[m
+
+         [1mnetapp[m
+            Overrides API endpoint for [1mgcloud netapp[m command group. Defaults to
+            [1mhttps://netapp.googleapis.com/[m
+
+         [1mnetworkconnectivity[m
+            Overrides API endpoint for [1mgcloud network-connectivity[m command
+            group. Defaults to [1mhttps://networkconnectivity.googleapis.com/[m
+
+         [1mnetworkmanagement[m
+            Overrides API endpoint for [1mgcloud network-management[m command group.
+            Defaults to [1mhttps://networkmanagement.googleapis.com/[m
+
+         [1mnetworksecurity[m
+            Overrides API endpoint for [1mgcloud network-security[m command group.
+            Defaults to [1mhttps://networksecurity.googleapis.com/[m
+
+         [1mnetworkservices[m
+            Overrides API endpoint for [1mgcloud network-services[m command group.
+            Defaults to [1mhttps://networkservices.googleapis.com/[m
+
+         [1mnotebooks[m
+            Overrides API endpoint for [1mgcloud notebooks[m command group. Defaults
+            to [1mhttps://notebooks.googleapis.com/[m
+
+         [1mobservability[m
+            Overrides API endpoint for [1mgcloud observability[m command group.
+            Defaults to [1mhttps://observability.googleapis.com/[m
+
+         [1morgpolicy[m
+            Overrides API endpoint for [1mgcloud org-policies[m command group.
+            Defaults to [1mhttps://orgpolicy.googleapis.com/[m
+
+         [1mpolicyanalyzer[m
+            Overrides API endpoint for [1mpolicy-intelligence[m command group.
+            Defaults to [1mhttps://policyanalyzer.googleapis.com/[m
+
+         [1mprivateca[m
+            Overrides API endpoint for [1mgcloud privateca[m command group. Defaults
+            to [1mhttps://privateca.googleapis.com/[m
+
+         [1mprivilegedaccessmanager[m
+            Overrides API endpoint for [1mgcloud pam[m command group. Defaults to
+            [1mhttps://privilegedaccessmanager.googleapis.com/[m
+
+         [1mpublicca[m
+            Overrides API endpoint for [1mgcloud publicca[m command group. Defaults
+            to [1mhttps://publicca.googleapis.com/[m
+
+         [1mpubsub[m
+            Overrides API endpoint for [1mgcloud pubsub[m command group. Defaults to
+            [1mhttps://pubsub.googleapis.com/[m
+
+         [1mrecaptchaenterprise[m
+            Overrides API endpoint for [1mgcloud recaptcha[m command group. Defaults
+            to [1mhttps://recaptchaenterprise.googleapis.com/[m
+
+         [1mrecommender[m
+            Overrides API endpoint for [1mgcloud recommender[m command group.
+            Defaults to [1mhttps://recommender.googleapis.com/[m
+
+         [1mredis[m
+            Overrides API endpoint for [1mgcloud redis[m command group. Defaults to
+            [1mhttps://redis.googleapis.com/[m
+
+         [1mrun[m
+            Overrides API endpoint for [1mgcloud run[m command group. Defaults to
+            [1mhttps://run.googleapis.com/[m
+
+         [1mruntimeconfig[m
+            Overrides API endpoint for [1mgcloud runtime-config[m command group.
+            Defaults to [1mhttps://runtimeconfig.googleapis.com/[m
+
+         [1msddc[m
+            Overrides API endpoint for [1mgcloud vmware sddc[m command group.
+            Defaults to [1mhttps://sddc.googleapis.com/[m
+
+         [1msecretmanager[m
+            Overrides API endpoint for [1mgcloud secrets[m command group. Defaults
+            to [1mhttps://secretmanager.googleapis.com/[m
+
+         [1msecuritycenter[m
+            Overrides API endpoint for [1mgcloud scc[m command group. Defaults to
+            [1mhttps://securitycenter.googleapis.com/[m
+
+         [1mservicedirectory[m
+            Overrides API endpoint for [1mgcloud service-directory[m command group.
+            Defaults to [1mhttps://servicedirectory.googleapis.com/[m
+
+         [1mservicemanagement[m
+            Overrides API endpoint for [1mgcloud endpoints[m command group. Defaults
+            to [1mhttps://servicemanagement.googleapis.com/[m
+
+         [1msourcerepo[m
+            Overrides API endpoint for [1mgcloud source[m command group. Defaults to
+            [1mhttps://sourcerepo.googleapis.com/[m
+
+         [1mspanner[m
+            Overrides API endpoint for [1mgcloud spanner[m command group. For
+            spanner emulator usage, see
+            https://cloud.google.com/spanner/docs/emulator#using_the_gcloud_cli_with_the_emulator
+
+         [1mspeech[m
+            Overrides API endpoint for [1mgcloud ml speech[m command group. Defaults
+            to [1mhttps://speech.googleapis.com/[m
+
+         [1msql[m
+            Overrides API endpoint for [1mgcloud sql[m command group.
+
+         [1mstorage[m
+            Overrides API endpoint for [1mgcloud storage[m command group. Defaults
+            to [1mhttps://storage.googleapis.com/storage/v1/[m
+
+         [1mtesting[m
+            Overrides API endpoint for [1mgcloud firebase test[m command group.
+            Defaults to [1mhttps://testing.googleapis.com/[m
+
+         [1mtransfer[m
+            Overrides API endpoint for [1mgcloud transfer[m command group.
+
+         [1mtransferappliance[m
+            Overrides API endpoint for [1mgcloud transfer appliances[m command
+            group. Defaults to [1mhttps://transferappliance.googleapis.com/[m
+
+         [1mvectorsearch[m
+            Overrides API endpoint for [1mgcloud vector-search[m command group.
+            Defaults to [1mhttps://vectorsearch.googleapis.com/[m
+
+         [1mvision[m
+            Overrides API endpoint for [1mgcloud ml vision[m command group. Defaults
+            to [1mhttps://vision.googleapis.com/[m
+
+         [1mvmmigration[m
+            Overrides API endpoint for [1mgcloud migration vms[m command group.
+            Defaults to [1mhttps://vmmigration.googleapis.com/[m
+
+         [1mvmwareengine[m
+            Overrides API endpoint for [1mgcloud vmware[m command group. Defaults to
+            [1mhttps://vmwareengine.googleapis.com/[m
+
+         [1mworkflowexecutions[m
+            Overrides API endpoint for [1mgcloud workflows executions[m command
+            group. Defaults to [1mhttps://workflowexecutions.googleapis.com/[m
+
+         [1mworkflows[m
+            Overrides API endpoint for [1mgcloud workflows[m command group. Defaults
+            to [1mhttps://workflows.googleapis.com/[m
+
+         [1mworkstations[m
+            Overrides API endpoint for [1mgcloud workstations[m command group.
+            Defaults to [1mhttps://workstations.googleapis.com/[m
+
+     [4mapp[m
+         [1mcloud_build_timeout[m
+            Timeout, in seconds, to wait for Docker builds to complete during
+            deployments. All Docker builds now use the Cloud Build API.
+
+         [1mpromote_by_default[m
+            If True, when deploying a new version of a service, that version
+            will be promoted to receive all traffic for the service. This
+            property can be overridden with the [1m--promote-by-default[m or
+            [1m--no-promote-by-default[m flags.
+
+         [1mstop_previous_version[m
+            If True, when deploying a new version of a service, the previously
+            deployed version is stopped. If False, older versions must be
+            stopped manually.
+
+         [1muse_runtime_builders[m
+            If set, opt in/out to a new code path for building applications
+            using pre-fabricated runtimes that can be updated independently of
+            client tooling. If not set, the default path for each runtime is
+            used.
+
+     [4martifacts[m
+         [1mlocation[m
+            Default location to use when working with Artifact Registry
+            resources. When a [1mlocation[m value is required but not provided, the
+            command will fall back to this value, if set. If this value is
+            unset, the default location is [1mglobal[m when [1mlocation[m value is
+            optional.
+
+         [1mrepository[m
+            Default repository to use when working with Artifact Registry
+            resources. When a [1mrepository[m value is required but not provided,
+            the command will fall back to this value, if set.
+
+     [4mauth[m
+         [1maccess_token_file[m
+            A file path to read the access token. Use this property to
+            authenticate gcloud with an access token. The credentials of the
+            active account (if it exists) will be ignored. The file should
+            contain an access token with no other information.
+
+         [1mdisable_credentials[m
+            If True, [1mgcloud[m will not attempt to load any credentials or
+            authenticate any requests. This is useful when behind a proxy that
+            adds authentication to requests.
+
+         [1mimpersonate_service_account[m
+            While set, all API requests will be made as the given service
+            account or target service account in an impersonation delegation
+            chain instead of the currently selected account. You can specify
+            either a single service account as the impersonator, or a
+            comma-separated list of service accounts to create an impersonation
+            delegation chain. This is done without needing to create, download,
+            or activate a key for the service account or accounts.
+
+            In order to make API requests as a service account, your currently
+            selected account must have an IAM role that includes the
+            [1miam.serviceAccounts.getAccessToken[m permission for the service
+            account or accounts.
+
+            The [1mroles/iam.serviceAccountTokenCreator[m role has the
+            [1miam.serviceAccounts.getAccessToken permission[m. You can also create
+            a custom role.
+
+            You can specify a list of service accounts, separated with commas.
+            This creates an impersonation delegation chain in which each
+            service account delegates its permissions to the next service
+            account in the chain. Each service account in the list must have
+            the [1mroles/iam.serviceAccountTokenCreator[m role on the next service
+            account in the list. For example, when the property is set through
+            [1mgcloud config set auth/impersonate_service_account=[m
+            [1m[1;4mSERVICE_ACCOUNT_1[1m[m,[1m[1;4mSERVICE_ACCOUNT_2[1m[m, the active account must have
+            the [1mroles/iam.serviceAccountTokenCreator[m role on [1m[1;4mSERVICE_ACCOUNT_1[1m[m,
+            which must have the [1mroles/iam.serviceAccountTokenCreator[m role on
+            [1m[1;4mSERVICE_ACCOUNT_2[1m[m. [1m[1;4mSERVICE_ACCOUNT_1[1m[m is the impersonated service
+            account and [1m[1;4mSERVICE_ACCOUNT_2[1m[m is the delegate.
+
+         [1mlogin_config_file[m
+            Sets the created login configuration file in
+            auth/login_config_file. Calling [1mgcloud auth login[m will
+            automatically use this login configuration unless it is explicitly
+            unset.
+
+         [1mservice_account_disable_id_token_refresh[m
+            If True, disable ID token refresh for service account.
+
+         [1mservice_account_use_self_signed_jwt[m
+            If True, use self signed jwt flow to get service account
+            credentials access token. This only applies to service account json
+            file and not to the legacy .p12 file.
+
+         [1mtoken_host[m
+            Overrides the token endpoint to provision access tokens. It can be
+            used with Private Service Connect.
+
+     [4mbatch[m
+         [1mlocation[m
+            Default location to use when working with Batch resources. When a
+            [1mlocation[m value is required but not provided, the command will fall
+            back to this value, if set.
+
+     [4mbilling[m
+         [1mquota_project[m
+            The Google Cloud project that is billed and charged quota for
+            operations performed in [1mgcloud[m. When unset, the default is
+            [CURRENT_PROJECT]. This default bills and charges quota against the
+            current project. If you need to operate on one project, but need to
+            bill your usage against or use quota from a different project, you
+            can use this flag to specify the billing project. If both
+            [1mbilling/quota_project[m and [1m--billing-project[m are specified,
+            [1m--billing-project[m takes precedence.
+
+     [4mbuilds[m
+         [1mkaniko_cache_ttl[m
+            TTL, in hours, of cached layers when using Kaniko. If zero, layer
+            caching is disabled.
+
+         [1mregion[m
+            Default region to use when working with Cloud Build resources. When
+            a [1m--region[m flag is required but not provided, the command will fall
+            back to this value, if set.
+
+         [1mtimeout[m
+            Timeout, in seconds, to wait for builds to complete. If unset,
+            defaults to 10 minutes.
+
+         [1muse_kaniko[m
+            If True, kaniko will be used to build images described by a
+            Dockerfile, instead of [1mdocker build[m.
+
+     [4mcolab[m
+         [1mregion[m
+            Default region to use when working with Colab Enterprise resources.
+            When a [1m--region[m flag is required but not provided, the command will
+            fall back to this value, if set. Please see
+            https://cloud.google.com/colab/docs/locations for a list of
+            supported regions.
+
+     [4mcomponent_manager[m
+         [1madditional_repositories[m
+            Comma separated list of additional repositories to check for
+            components. This property is automatically managed by the [1mgcloud
+            components repositories[m commands.
+
+         [1mdisable_update_check[m
+            If True, Google Cloud CLI will not automatically check for updates.
+
+     [4mcomposer[m
+         [1mlocation[m
+            Composer location to use. Each Composer location constitutes an
+            independent resource namespace constrained to deploying
+            environments into Compute Engine regions inside this location. This
+            parameter corresponds to the /locations/<location> segment of the
+            Composer resource URIs being referenced.
+
+     [4mcompute[m
+         [1mimage_family_scope[m
+            Sets how images are selected with image families for disk and
+            instance creation. By default, zonal image resources are used when
+            using an image family in a public image project, and global image
+            resources are used for all other projects. To override the default
+            behavior, set this property to [1mzonal[m or [1mglobal[m.
+
+         [1mregion[m
+            Default region to use when working with regional Compute Engine
+            resources. When a [1m--region[m flag is required but not provided, the
+            command will fall back to this value, if set. To see valid choices,
+            run [1mgcloud compute regions list[m.
+
+         [1muse_new_list_usable_subnets_api[m
+            If True, use the new API for listing usable subnets which only
+            returns subnets in the current project.
+
+         [1mzone[m
+            Default zone to use when working with zonal Compute Engine
+            resources. When a [1m--zone[m flag is required but not provided, the
+            command will fall back to this value, if set. To see valid choices,
+            run [1mgcloud compute zones list[m.
+
+     [4mcontainer[m
+         [1mbuild_timeout[m
+            Timeout, in seconds, to wait for container builds to complete.
+
+         [1mcluster[m
+            Name of the cluster to use by default when working with Kubernetes
+            Engine.
+
+         [1muse_application_default_credentials[m
+            If True, use application default credentials to authenticate to the
+            cluster API server.
+
+         [1muse_client_certificate[m
+            If True, use the cluster's client certificate to authenticate to
+            the cluster API server.
+
+     [4mcontainer_attached[m
+         [1mlocation[m
+            Default Google Cloud location to use for Attached clusters.
+
+     [4mcontainer_aws[m
+         [1mlocation[m
+            Default Google Cloud location to use for Anthos clusters on AWS.
+
+     [4mcontainer_azure[m
+         [1mlocation[m
+            Default Google Cloud location to use for Anthos clusters on Azure.
+
+     [4mcontainer_bare_metal[m
+         [1mlocation[m
+            Default Google Cloud location to use for Anthos clusters on Bare
+            Metal.
+
+     [4mcontainer_vmware[m
+         [1mlocation[m
+            Default Google Cloud location to use for Anthos clusters on VMware.
+
+     [4mcontext_aware[m
+         [1muse_client_certificate[m
+            If True, use client certificate to authorize user device using
+            Context-aware access. This includes user login as well. Some
+            services may not support client certificate authorization. If a
+            command sends requests to such services, the client certificate
+            will not be validated. Run [1mgcloud topic client-certificate[m for list
+            of services supporting this feature.
+
+     [4mdataflow[m
+         [1mdisable_public_ips[m
+            Specifies that Cloud Dataflow workers must not use public IP
+            addresses.
+
+         [1menable_streaming_engine[m
+            Set this to true to enable Streaming Engine for the job.
+
+         [1mprint_only[m
+            Prints the container spec to stdout. Does not save in Google Cloud
+            Storage.
+
+     [4mdatafusion[m
+         [1mlocation[m
+            Datafusion location to use. Each Datafusion location constitutes an
+            independent resource namespace constrained to deploying
+            environments into Compute Engine regions inside this location. This
+            parameter corresponds to the /locations/<location> segment of the
+            Datafusion resource URIs being referenced.
+
+     [4mdatapipelines[m
+         [1mdisable_public_ips[m
+            Specifies that Cloud Dataflow workers must not use public IP
+            addresses.
+
+         [1menable_streaming_engine[m
+            Set this to true to enable Streaming Engine for the job.
+
+     [4mdataplex[m
+         [1masset[m
+            Dataplex asset to use. When an [1masset[m is required but not provided
+            by a flag, the command will fall back to this value, if set.
+
+         [1mlake[m
+            Dataplex lake to use. When a [1mlake[m is required but not provided by a
+            flag, the command will fall back to this value, if set.
+
+         [1mlocation[m
+            Dataplex location to use. When a [1mlocation[m is required but not
+            provided by a flag, the command will fall back to this value, if
+            set.
+
+         [1mzone[m
+            Dataplex zone to use. When a [1mzone[m is required but not provided by a
+            flag, the command will fall back to this value, if set.
+
+     [4mdataproc[m
+         [1mlocation[m
+            Dataproc location to use. Each Dataproc location constitutes an
+            independent resource namespace constrained to deploying instances
+            into Compute Engine zones inside the location.
+
+         [1mregion[m
+            Dataproc region to use. Each Dataproc region constitutes an
+            independent resource namespace constrained to deploying instances
+            into Compute Engine zones inside the region.
+
+     [4mdeploy[m
+         [1mdelivery_pipeline[m
+            Delivery Pipeline being managed by Cloud Deploy.
+
+         [1mregion[m
+            Cloud Deploy region to use. Each Cloud Deploy region constitutes an
+            independent resource namespace constrained to deploying instances
+            into Compute Engine zones inside the region.
+
+     [4mdeployment_manager[m
+         [1mglob_imports[m
+            Enable import path globbing. Uses glob patterns to match multiple
+            imports in a config file.
+
+     [4meventarc[m
+         [1mlocation[m
+            The default location to use when working with Eventarc resources.
+            This should be either [1m[1;4mglobal[1m[m or one of the supported regions. When
+            a [1m--location[m flag is required but not provided, the command will
+            fall back to this value, if set.
+
+     [4mfilestore[m
+         [1mlocation[m
+            Please use the [1m--location[m flag or set the filestore/zone or
+            filestore/region property.
+
+         [1mregion[m
+            Default region to use when working with Cloud Filestore regions.
+            When a [1m--region[m flag is required but not provided, the command will
+            fall back to this value, if set.
+
+         [1mzone[m
+            Default zone to use when working with Cloud Filestore zones. When a
+            [1m--zone[m flag is required but not provided, the command will fall
+            back to this value, if set.
+
+     [4mfunctions[m
+         [1mgen2[m
+            Default environment to use when working with Cloud Functions
+            resources. When neither [1m--gen2[m nor [1m--no-gen2[m is provided, the
+            decision of whether to use Generation 2 falls back to this value if
+            set.
+
+         [1mregion[m
+            Default region to use when working with Cloud Functions resources.
+            When a [1m--region[m flag is required but not provided, the command will
+            fall back to this value, if set. To see valid choices, run [1mgcloud
+            beta functions regions list[m.
+
+     [4mgcloudignore[m
+         [1menabled[m
+            If True, do not upload [1m.gcloudignore[m files (see [1m$ gcloud topic
+            gcloudignore[m). If False, turn off the gcloudignore mechanism
+            entirely and upload all files.
+
+     [4mgkebackup[m
+         [1mbackup[m
+            Default backup ID to use when working with Backup for GKE Services
+            resources. When a [1m--backup[m flag is required but not provided, the
+            command will fall back to this value.
+
+         [1mbackup_plan[m
+            Default backup plan ID to use when working with Backup for GKE
+            Services resources. When a [1m--backup-plan[m flag is required but not
+            provided, the command will fall back to this value.
+
+         [1mlocation[m
+            Default location to use when working with Backup for GKE Services
+            resources. When a [1m--location[m flag is required but not provided, the
+            command will fall back to this value.
+
+         [1mrestore[m
+            Default restore ID to use when working with Backup for GKE Services
+            resources. When a [1m--restore[m flag is required but not provided, the
+            command will fall back to this value.
+
+         [1mrestore_plan[m
+            Default restore plan ID to use when working with Backup for GKE
+            Services resources. When a [1m--restore-plan[m flag is required but not
+            provided, the command will fall back to this value.
+
+     [4mhealthcare[m
+         [1mdataset[m
+            Default dataset to use when working with Cloud Healthcare
+            resources. When a [1m--dataset[m flag is required but not provided, the
+            command will fall back to this value, if set.
+
+         [1mlocation[m
+            Default location to use when working with Cloud Healthcare
+            resources. When a [1m--location[m flag is required but not provided, the
+            command will fall back to this value.
+
+     [4minteractive[m
+         [1mbottom_bindings_line[m
+            If True, display the bottom key bindings line.
+
+         [1mbottom_status_line[m
+            If True, display the bottom status line.
+
+         [1mcompletion_menu_lines[m
+            Number of lines in the completion menu.
+
+         [1mcontext[m
+            Command context string.
+
+         [1mfixed_prompt_position[m
+            If True, display the prompt at the same position.
+
+         [1mhelp_lines[m
+            Maximum number of help snippet lines.
+
+         [1mhidden[m
+            If True, expose hidden commands/flags.
+
+         [1mjustify_bottom_lines[m
+            If True, left- and right-justify bottom toolbar lines.
+
+         [1mmanpage_generator[m
+            If True, use the manpage CLI tree generator for unsupported
+            commands.
+
+         [1mmulti_column_completion_menu[m
+            If True, display the completions as a multi-column menu.
+
+         [1mprompt[m
+            Command prompt string.
+
+         [1mshow_help[m
+            If True, show help as command args are being entered.
+
+         [1msuggest[m
+            If True, add command line suggestions based on history.
+
+     [4mlifesciences[m
+         [1mlocation[m
+            Default location to use when working with Cloud Life Sciences
+            resources. When a [1m--location[m flag is required but not provided, the
+            command will fall back to this value.
+
+     [4mlooker[m
+         [1mregion[m
+            Default region to use when working with Cloud Looker resources.
+            When a [1mregion[m is required but not provided by a flag, the command
+            will fall back to this value, if set.
+
+     [4mlustre[m
+         [1mlocation[m
+            Default location to use when working with Cloud Lustre resources.
+            When a [1mlocation[m value is required but not provided, the command
+            will fall back to this value, if set.
+
+     [4mmedia_asset[m
+         [1mlocation[m
+            Default location to use when working with Cloud Media Asset
+            resources. When a [1m--location[m flag is required but not provided, the
+            command will fall back to this value.
+
+     [4mmemcache[m
+         [1mregion[m
+            Default region to use when working with Cloud Memorystore for
+            Memcached resources. When a [1mregion[m is required but not provided by
+            a flag, the command will fall back to this value, if set.
+
+     [4mmetastore[m
+         [1mlocation[m
+            Default location to use when working with Dataproc Metastore. When
+            a [1mlocation[m is required but not provided by a flag, the command will
+            fall back to this value, if set.
+
+         [1mtier[m
+            Default tier to use when creating Dataproc Metastore services. When
+            a [1mtier[m is required but not provided by a flag, the command will
+            fall back to this value, if set.
+
+            Valid values are:
+            ▸ [1mdeveloper[m - The developer tier provides limited scalability and
+              no fault tolerance. Good for low-cost proof-of-concept.
+            ▸ [1menterprise[m - The enterprise tier provides multi-zone high
+              availability, and sufficient scalability for enterprise-level
+              Dataproc Metastore workloads.
+
+     [4mml_engine[m
+         [1mlocal_python[m
+            Full path to the Python interpreter to use for Cloud ML Engine
+            local predict/train jobs. If not specified, the default path is the
+            one to the Python interpreter found on system [1mPATH[m.
+
+         [1mpolling_interval[m
+            Interval (in seconds) at which to poll logs from your Cloud ML
+            Engine jobs. Note that making it much faster than the default (60)
+            will quickly use all of your quota.
+
+     [4mmps[m
+         [1mproduct[m
+            Id for Marketplace Solutions Product.
+
+     [4mnetapp[m
+         [1mlocation[m
+            Default location to use when working with Cloud NetApp Files
+            resources. When a [1mlocation[m value is required but not provided, the
+            command will fall back to this value, if set.
+
+     [4mnotebooks[m
+         [1mlocation[m
+            Default location to use when working with Notebook resources. When
+            a [1mlocation[m value is required but not provided, the command will
+            fall back to this value, if set.
+
+     [4mprivateca[m
+         [1mlocation[m
+            Default location to use when working with Private CA resources.
+            When a [1m--location[m flag is required but not provided, the command
+            will fall back to this value, if set.
+
+     [4mproxy[m
+         [1maddress[m
+            Hostname or IP address of proxy server.
+
+         [1mpassword[m
+            Password to use when connecting, if the proxy requires
+            authentication.
+
+         [1mport[m
+            Port to use when connected to the proxy server.
+
+         [1mrdns[m
+            If True, DNS queries will not be performed locally, and instead,
+            handed to the proxy to resolve. This is default behavior.
+
+         [1mtype[m
+            Type of proxy being used. Supported proxy types are: [http,
+            http_no_tunnel, socks4, socks5].
+
+         [1musername[m
+            Username to use when connecting, if the proxy requires
+            authentication.
+
+     [4mredis[m
+         [1mregion[m
+            Default region to use when working with Cloud Memorystore for Redis
+            resources. When a [1mregion[m is required but not provided by a flag,
+            the command will fall back to this value, if set.
+
+     [4mregional[m
+         [1mendpoint_mode[m
+                Specifies endpoint mode for a given command. Regional endpoints
+                provide enhanced data residency and reliability by ensuring your
+                request is handled entirely within the specified Google Cloud region.
+                This differs from global endpoints, which may process parts of the
+                request outside the target region.
+
+                Benefits of Regional Endpoints:
+                (1) Data Residency: Keeps data in-transit within the chosen region.
+                (2) Improved Isolation: Reduces the risk of cross-region impact
+                from outages.
+
+                The choices are:
+                *   `global` - (Default) Use global rather than regional endpoints.
+                *   `regional` - Only use regional endpoints. An error will be raised
+                    if a regional endpoint is not available for a given command.
+                *   `regional-preferred` - Use regional endpoints when available,
+                    otherwise use global endpoints. Recommended for most users.
+
+     [4mrun[m
+         [1mcluster[m
+            ID of the cluster or fully qualified identifier for the cluster
+
+         [1mcluster_location[m
+            Zone or region in which the cluster is located.
+
+         [1mplatform[m
+            Target platform for running commands.
+
+         [1mregion[m
+            Default region to use when working with Cloud Run resources. When a
+            [1m--region[m flag is required but not provided, the command will fall
+            back to this value, if set.
+
+     [4mrunapps[m
+         [1mdeployment_service_account[m
+            Service account to use when deploying integrations.
+
+     [4mscc[m
+         [1morganization[m
+            Default organization [1mgcloud[m should use for scc surface.
+
+         [1mparent[m
+            Default parent [1mgcloud[m should use for scc surface.
+
+     [4msecrets[m
+         [1mlocations[m
+            A comma separated list of the locations to replicate secrets to.
+            Only applies to secrets with a user-managed policy.
+
+         [1mreplication-policy[m
+            The type of replication policy to apply to secrets. Allowed values
+            are "automatic" and "user-managed". If user-managed then locations
+            must also be provided.
+
+     [4mservicehealth[m
+         [1mlocation[m
+            Default location to use when working with Service Health resources.
+            When a [1m--location[m flag is required but not provided, the command
+            will fall back to this value, if set.
+
+     [4mspanner[m
+         [1minstance[m
+            Default instance to use when working with Cloud Spanner resources.
+            When an instance is required but not provided by a flag, the
+            command will fall back to this value, if set.
+
+     [4mssh[m
+         [1mputty_force_connect[m
+            Whether or not [1mgcloud[m should automatically accept new or changed
+            host keys when executing plink/pscp commands on Windows. Defaults
+            to True, but can be set to False to present these interactive
+            prompts to the user for host key checking.
+
+         [1mverify_internal_ip[m
+            Whether or not [1mgcloud[m should perform an initial SSH connection to
+            verify an instance ID is correct when connecting via its internal
+            IP. Without this check, [1mgcloud[m will simply connect to the internal
+            IP of the desired instance, which may be wrong if the desired
+            instance is in a different subnet but happens to share the same
+            internal IP as an instance in the current subnet. Defaults to True.
+
+     [4mstorage[m
+         [1madditional_headers[m
+            Includes arbitrary headers in storage API calls. Accepts a comma
+            separated list of key=value pairs, e.g.
+            [1mheader1=value1,header2=value2[m.
+
+         [1mbase_retry_delay[m
+            Second delay between retrying operations. May be multiplied by
+            exponential_sleep_multiplier.
+
+         [1mcheck_hashes[m
+            'check_hashes' specifies how strictly to require integrity checking
+            for downloaded data. Legal values are:
+
+            ▸ 'if_fast_else_fail' - (default) Only integrity check if the
+              digest will run efficiently (using compiled code), else fail the
+              download.
+
+            ▸ 'if_fast_else_skip' - Only integrity check if the server
+              supplies a hash and the local digest computation will run
+              quickly, else skip the check.
+
+            ▸ 'always' - Always check download integrity regardless of
+              possible performance costs.
+
+            ▸ 'never' - Don't perform download integrity checks. This setting
+              is not recommended except for special cases such as measuring
+              download performance excluding time for integrity checking.
+
+            This option exists to assist users who wish to download a composite
+            object and are unable to install crcmod with the C-extension.
+            CRC32c is the only available integrity check for composite objects,
+            and without the C-extension, download performance can be
+            significantly degraded by the digest computation. This option is
+            ignored for daisy-chain copies, which don't compute hashes but
+            instead (inexpensively) compare the cloud source and destination
+            hashes.
+
+         [1mcheck_mv_early_deletion_fee[m
+            Block mv commands that may incur an early deletion fee (the source
+            object in a mv is deleted).
+
+         [1mconvert_incompatible_windows_path_characters[m
+            Allows automatic conversion of invalid path characters on Windows.
+            If not enabled, Windows will raise an OSError if an invalid
+            character is encountered.
+
+         [1mcopy_chunk_size[m
+            Chunk size used for copying to in clouds or on disk.
+
+         [1mdownload_chunk_size[m
+            Chunk size used for downloading to clouds.
+
+         [1mexponential_sleep_multiplier[m
+            Used in exponential backoff for retrying operations.
+
+         [1mkey_store_path[m
+            Path to a yaml file containing an encryption key, and multiple
+            decryption keys for use in storage commands. The file must be
+            formatted as follows:
+
+                encryption_key: {A customer-supplied or customer-managed key.}
+                decryption_keys:
+                - {A customer-supplied key}
+                ...
+
+            Customer-supplied encryption keys must be RFC 4648 section 4
+            base64-encoded AES256 strings. Customer-managed encryption keys
+            must be of the form
+            [1mprojects/{project}/locations/{location}/keyRings/{key-ring}/cryptoKeys/{crypto-key}[m.
+
+         [1mmax_retries[m
+            Max number of retries for operations like copy.
+
+         [1mmax_retry_delay[m
+            Max second delay between retriable operations.
+
+         [1mmultipart_chunksize[m
+            Specifies partition size in bytes of each part of a multipart
+            upload made by the Boto3 client. To calculate the maximum size of a
+            Boto3 client multipart upload, multiply the multipart_chunk value
+            by the maximum number of parts the API allows. For AWS S3 this
+            limit is 10000. Values can be provided either in bytes or as
+            human-readable values (e.g., "150M" to represent 150 mebibytes).
+
+         [1mmultipart_threshold[m
+            Files larger than this threshold will be partitioned into parts,
+            uploaded separately by the Boto3 client, and then combined into a
+            single object. Otherwise, files smaller than this threshold will be
+            uploaded by the Boto3 client in a single stream.
+
+         [1mparallel_composite_upload_compatibility_check[m
+            Determines if the GET bucket call should be performed to check if
+            the default storage class and retention period for the destination
+            bucket meet the criteria for parallel composite upload.
+
+         [1mparallel_composite_upload_component_prefix[m
+            The prefix used when naming temporary components created by
+            composite uploads. If the prefix begins with a [1m/[m, the temporary
+            components are uploaded relative to the bucket name. If the prefix
+            does not begin with a [1m/[m, the temporary components are uploaded
+            relative to the prefix portion of the destination object name. For
+            example, consider an upload that will create a final object named
+            [1mgs://bucket/dir1/dir2/object[m. Using a prefix of [1m/prefix[m means
+            temporary components use names like
+            [1mgs://bucket/prefix/COMPONENT_NAME[m. Using a prefix of [1mprefix[m means
+            temporary components use names like
+            [1mgs://bucket/dir1/dir2/prefix/COMPONENT_NAME[m. Note that this can
+            complicate cleaning up temporary components, as they will not all
+            share a common prefix. If this property is not specified, gcloud
+            storage uses the prefix
+            [1m/gcloud/tmp/parallel_composite_uploads/see_gcloud_storage_cp_help_for_details/[m.
+            If a chosen prefix results in temporary component names longer than
+            the maximum length Cloud Storage allows, gcloud storage performs a
+            non-composite upload.
+
+         [1mparallel_composite_upload_component_size[m
+            Specifies the ideal size of a component in bytes, which will act as
+            an upper bound to the size of the components if ceil(file_size /
+            parallel_composite_upload_component_size) is less than the maximum
+            number of objects the API allows composing at once. Values can be
+            provided either in bytes or as human-readable values (e.g., "150M"
+            to represent 150 mebibytes).
+
+         [1mparallel_composite_upload_enabled[m
+            Determines whether parallel composite upload should be used.
+            Default value is None which will use parallel composite upload and
+            log an appropriate warning for the user explaining that parallel
+            composite upload is being used by default.
+
+         [1mparallel_composite_upload_threshold[m
+            Specifies the maximum size of a file to upload in a single stream.
+            Files larger than this threshold will be partitioned into component
+            parts, uploaded in parallel, then composed into a single object.
+            The number of components will be the smaller of ceil(file_size /
+            parallel_composite_upload_component_size) and the maximum number of
+            objects the API allows composing at once. For Cloud Storage this
+            limit is 32. This property has no effect if
+            parallel_composite_upload_enabled is set to False.
+
+         [1mprocess_count[m
+            The maximum number of processes parallel execution should use. When
+            process_count and thread_count are both 1, commands use sequential
+            execution.
+
+         [1mresumable_threshold[m
+            File operations above this size in bytes will use resumable instead
+            of one-shot strategies. For example, a resumable download.
+
+         [1mrsync_files_directory[m
+            Directory path to intermediary files created by rsync.
+
+         [1mrsync_list_chunk_size[m
+            Number of files processed at a time by the rsync command when it
+            builds and compares the list of files at the source and
+            destination.
+
+         [1ms3_endpoint_url[m
+            If set, boto3 client will connect to this endpoint. Otherwise,
+            boto3 selects a default endpoint based on the AWS service used.
+
+         [1msliced_object_download_component_size[m
+            Target size and upper bound for files to be sliced into. Analogous
+            to parallel_composite_upload_component_size.
+
+         [1msliced_object_download_max_components[m
+            Specifies the maximum number of slices to be used when performing a
+            sliced object download. Set None for automatic optimization based
+            on system resources.
+
+         [1msliced_object_download_threshold[m
+            Slice files larger than this value. Zero will block sliced
+            downloads. Analogous to parallel_composite_upload_threshold.
+
+         [1msuggest_transfer[m
+            If True, logs messages about when Storage Transfer Service might be
+            a better tool than gcloud storage.
+
+         [1mthread_count[m
+            The number of threads parallel execution should use per process.
+            When process_count and thread_count are both 1, commands use
+            sequential execution.
+
+         [1mtracker_files_directory[m
+            Directory path to tracker files for resumable operations.
+
+         [1mupload_chunk_size[m
+            Chunk size used for uploading to clouds.
+
+         [1muse_gcloud_crc32c[m
+            If True, data integrity checks use a binary subprocess to calculate
+            CRC32C hashes with the included gcloud-crc32c tool rather than the
+            google-crc32c Python library. This behavior is also triggered when
+            the google-crc32c Python library is unavailable even if this
+            property is False.
+
+         [1muse_gsutil[m
+            If True, use the deprecated upload implementation which uses
+            gsutil.
+
+         [1muse_gsutil_rsync_delete_unmatched_destination_objects_behavior[m
+            If True, rsync will preserve unmatched destination objects while
+            using --delete-unmatched-destination-objects flag along with other
+            flags such as --no-clobber, --skip-unsupported and
+            --skip-if-dest-has-newer-mtime just as it would with gsutil.
+
+         [1muse_magicfile[m
+            If True, uses the [1mfile --mime <filename>[m command to guess content
+            types instead of the default filename extension-based mechanism.
+            Available on UNIX and macOS (and possibly on Windows, if you're
+            running Cygwin or some other package that provides implementations
+            of UNIX-like commands). When available and enabled use_magicfile
+            should be more robust because it analyzes file contents in addition
+            to extensions.
+
+         [1muse_threading_local[m
+            If True, reuses some resource if they are already declared on a
+            thread. If False, creates duplicates of resources like API clients
+            on the same thread. Turning off can help with some bugs but will
+            hurt performance.
+
+     [4msurvey[m
+         [1mdisable_prompts[m
+            If True, gcloud will not prompt you to take periodic usage
+            experience surveys.
+
+     [4mvector_search[m
+         [1mlocation[m
+            Default location to use when working with Vector Search resources.
+            When a [1m--location[m flag is required but not provided, the command
+            will fall back to this value, if set.
+
+     [4mvmware[m
+         [1mregion[m
+            Default region to use when working with VMware Engine resources.
+            When a [1m--region[m flag is required but not provided, the command will
+            fall back to this value, if set.
+
+     [4mworkstations[m
+         [1mcluster[m
+            Default cluster to use when working with Workstations resources.
+            When a [1m--cluster[m flag is required but not provided, the command
+            will fall back to this value, if set.
+
+         [1mconfig[m
+            Default configuration to use when working with Workstations
+            resources. When a [1m--config[m flag is required but not provided, the
+            command will fall back to this value, if set.
+
+         [1mregion[m
+            Default region to use when working with Workstations resources.
+            When a [1m--region[m flag is required but not provided, the command will
+            fall back to this value, if set.
+[m
+2026-04-28 10:53:52,420 INFO     ___FILE_ONLY___ 
+
+Command killed by keyboard interrupt
+
+

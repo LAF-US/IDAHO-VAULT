@@ -1,0 +1,11 @@
+2026/05/08 07:57:28 tcpproxy: for incoming conn 127.0.0.1:56936, error dialing "192.168.5.1:22": connect tcp 192.168.5.1:22: connection was refused
+2026/05/08 07:57:28 tcpproxy: for incoming conn 127.0.0.1:56937, error dialing "192.168.5.1:22": connect tcp 192.168.5.1:22: connection was refused
+2026/05/08 07:57:31 tcpproxy: for incoming conn 127.0.0.1:56939, error dialing "192.168.5.1:22": connect tcp 192.168.5.1:22: connection was refused
+time="2026-05-10T22:42:57-06:00" level=error msg="Can't proxy a datagram to udp: write udp 192.168.0.95:49867->185.125.190.58:123: write: network is down\n"
+time="2026-05-11T03:44:52-06:00" level=error msg="Can't proxy a datagram to udp: write udp 192.168.0.95:60384->185.125.190.58:123: write: network is down\n"
+time="2026-05-11T14:46:22-06:00" level=error msg="Can't proxy a datagram to udp: dial udp 185.125.190.58:123: connect: network is unreachable\n"
+time="2026-05-11T14:46:36-06:00" level=error msg="Can't proxy a datagram to udp: dial udp 185.125.190.58:123: connect: network is unreachable\n"
+time="2026-05-11T14:46:56-06:00" level=error msg="Can't proxy a datagram to udp: dial udp 185.125.190.58:123: connect: network is unreachable\n"
+time="2026-05-11T14:47:07-06:00" level=error msg="Can't proxy a datagram to udp: dial udp 91.189.91.157:123: connect: network is unreachable\n"
+time="2026-05-11T14:47:17-06:00" level=error msg="Can't proxy a datagram to udp: dial udp 185.125.190.57:123: connect: network is unreachable\n"
+time="2026-05-11T14:47:27-06:00" level=error msg="Can't proxy a datagram to udp: dial udp 185.125.190.56:123: connect: network is unreachable\n"

@@ -1,0 +1,165 @@
+vmType: qemu
+arch: x86_64
+images:
+    - location: /Users/logan/Library/Caches/colima/caches/ad20d2be6ee8faa992ddc89a5206485316ef7d33f9ffc452892af56c26d2a190.raw
+      arch: x86_64
+cpus: 2
+memory: 6144MiB
+disk: 20GiB
+additionalDisks:
+    - name: colima
+      format: true
+      fsType: ext4
+mounts:
+    - location: "~"
+      writable: true
+mountType: reverse-sshfs
+ssh:
+    loadDotSSHPubKeys: false
+    forwardAgent: false
+containerd:
+    system: false
+    user: false
+dns: []
+firmware:
+    legacyBIOS: false
+hostResolver:
+    enabled: true
+    hosts:
+        host.docker.internal: host.lima.internal
+portForwards:
+    - guestPortRange:
+        - 0
+        - 0
+      guestSocket: /var/run/docker.sock
+      hostPortRange:
+        - 0
+        - 0
+      hostSocket: /Users/logan/.colima/default/docker.sock
+      proto: tcp
+    - guestPortRange:
+        - 0
+        - 0
+      guestSocket: /var/run/containerd/containerd.sock
+      hostPortRange:
+        - 0
+        - 0
+      hostSocket: /Users/logan/.colima/default/containerd.sock
+      proto: tcp
+    - guestPortRange:
+        - 0
+        - 0
+      guestSocket: /var/run/docker.sock
+      hostPortRange:
+        - 0
+        - 0
+      hostSocket: /Users/logan/.colima/docker.sock
+      proto: tcp
+    - guestIPMustBeZero: true
+      guestIP: 0.0.0.0
+      guestPortRange:
+        - 1
+        - 65535
+      hostIP: 0.0.0.0
+      hostPortRange:
+        - 1
+        - 65535
+      proto: tcp
+    - guestIPMustBeZero: true
+      guestIP: 0.0.0.0
+      guestPortRange:
+        - 1
+        - 65535
+      hostIP: 0.0.0.0
+      hostPortRange:
+        - 1
+        - 65535
+      proto: udp
+    - guestIP: 127.0.0.1
+      guestPortRange:
+        - 1
+        - 65535
+      hostIP: 127.0.0.1
+      hostPortRange:
+        - 1
+        - 65535
+      proto: tcp
+    - guestIP: 127.0.0.1
+      guestPortRange:
+        - 1
+        - 65535
+      hostIP: 127.0.0.1
+      hostPortRange:
+        - 1
+        - 65535
+      proto: udp
+networks:
+    - lima: user-v2
+provision:
+    - mode: system
+      script: sysctl -w fs.inotify.max_user_watches=1048576
+    - mode: dependency
+      script: groupadd -f docker && usermod -aG docker {{ .User }}
+    - mode: system
+      script: grep '127.0.0.1 colima' /etc/hosts || echo '127.0.0.1 colima' >> /etc/hosts
+    - mode: system
+      script: hostnamectl set-hostname colima
+    - mode: system
+      script: mount -a
+    - mode: system
+      script: readlink /usr/sbin/fstrim || fstrim -a
+    - mode: system
+      script: resize2fs /dev/disk/by-label/lima-colima || true
+    - mode: dependency
+      script: |+
+        #!/usr/bin/env sh
+
+        # Steps:
+        # 1. Check if directory is already mounted, if yes, skip setup
+        # 2. Idenify disk e.g. /dev/vdb or /dev/vdc
+        # 3. Format disk with ext4 if not already formatted
+        # 4. Label disk with instance id
+        # 5. Mount disk
+
+        DISK_LABEL="lima-colima"
+        MOUNT_POINT="/mnt/${DISK_LABEL}"
+
+        # Directory already mounted, skip setup
+        if [ -d "$MOUNT_POINT" ]; then
+            if [ -n "$(find "$DIR" -mindepth 1 -print -quit 2>/dev/null)" ]; then
+                echo "Disk already mounted, skipping setup."
+                exit 0
+            fi
+        fi
+
+        # Detect the disk to use e.g. /dev/vdb or /dev/vdc
+        DISK="/dev/vdb"
+        if df -h /mnt/lima-cidata/ | tail -n +2 | grep '^/dev/vdb'; then
+            DISK="/dev/vdc"
+        fi
+        DISK_PART="${DISK}1"
+
+
+        echo 'type=83' | sudo sfdisk "$DISK"
+        mkfs.ext4 "$DISK_PART"
+        e2label "$DISK_PART" "$DISK_LABEL"
+
+
+        # mount disk
+        mkdir -p "$MOUNT_POINT"
+        mount "$DISK_PART" "$MOUNT_POINT"
+
+    - mode: dependency
+      script: systemctl stop docker.service
+    - mode: dependency
+      script: systemctl stop containerd.service
+    - mode: dependency
+      script: '[ -d /mnt/lima-colima ] && mkdir -p /mnt/lima-colima/docker /var/lib/docker && mount --bind /mnt/lima-colima/docker /var/lib/docker'
+    - mode: dependency
+      script: '[ -d /mnt/lima-colima ] && mkdir -p /mnt/lima-colima/containerd /var/lib/containerd && mount --bind /mnt/lima-colima/containerd /var/lib/containerd'
+    - mode: dependency
+      script: '[ -d /mnt/lima-colima ] && mkdir -p /mnt/lima-colima/rancher /var/lib/rancher && mount --bind /mnt/lima-colima/rancher /var/lib/rancher'
+    - mode: dependency
+      script: '[ -d /mnt/lima-colima ] && mkdir -p /mnt/lima-colima/cni /var/lib/cni && mount --bind /mnt/lima-colima/cni /var/lib/cni'
+    - mode: dependency
+      script: '[ -d /mnt/lima-colima ] && mkdir -p /mnt/lima-colima/ramalama /var/lib/ramalama && mount --bind /mnt/lima-colima/ramalama /var/lib/ramalama'

@@ -1,0 +1,5 @@
+[projects."/Users/logan/IDAHO-VAULT"]
+trust_level = "trusted"
+
+[projects."/Users/logan"]
+trust_level = "trusted"

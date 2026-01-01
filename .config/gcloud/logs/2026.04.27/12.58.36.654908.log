@@ -1,0 +1,14 @@
+2026-04-27 12:58:36,662 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2026-04-27 12:58:36,969 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'set']
+2026-04-27 12:58:36,972 DEBUG    root            Running [gcloud.config.set] with arguments: [SECTION/PROPERTY: "project", VALUE: "idaho-vault"]
+2026-04-27 12:58:36,989 WARNING  root            Your active project does not match the quota project in your local Application Default Credentials file. This might result in unexpected quota issues.
+
+To update your Application Default Credentials quota project, use the `gcloud auth application-default set-quota-project` command.
+2026-04-27 12:58:36,992 DEBUG    root            On GCE from disk cache: False
+2026-04-27 12:58:37,002 DEBUG    root            On GCE from memory cache: False
+2026-04-27 12:58:37,165 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2026-04-27 12:58:37,431 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1/projects/idaho-vault?alt=json HTTP/1.1" 200 None
+2026-04-27 12:58:37,453 INFO     ___FILE_ONLY___ Updated property [core/project].
+
+2026-04-27 12:58:37,456 DEBUG    root            Chosen display Format:default
+2026-04-27 12:58:37,457 INFO     root            Display format: "default"

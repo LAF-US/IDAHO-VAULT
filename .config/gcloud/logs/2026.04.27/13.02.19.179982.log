@@ -1,0 +1,97 @@
+2026-04-27 13:02:19,181 DEBUG    root            Loaded Command Group: ['gcloud', 'components']
+2026-04-27 13:02:19,260 DEBUG    root            Loaded Command Group: ['gcloud', 'components', 'reinstall']
+2026-04-27 13:02:19,265 DEBUG    root            Running [gcloud.components.reinstall] with arguments: []
+2026-04-27 13:02:19,322 DEBUG    root            On GCE from disk cache: False
+2026-04-27 13:02:19,364 DEBUG    root            On GCE from memory cache: False
+2026-04-27 13:02:19,370 DEBUG    root            On GCE from memory cache: False
+2026-04-27 13:02:19,402 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2026-04-27 13:02:19,519 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components-2.json HTTP/1.1" 200 25067
+2026-04-27 13:02:25,471 INFO     ___FILE_ONLY___ ╔════════════════════════════════════════════════════════════╗
+
+2026-04-27 13:02:25,471 INFO     ___FILE_ONLY___ ╠═ Downloading and extracting updated components            ═╣
+
+2026-04-27 13:02:25,472 INFO     ___FILE_ONLY___ ╚
+2026-04-27 13:02:25,475 DEBUG    root            On GCE from memory cache: False
+2026-04-27 13:02:25,477 DEBUG    root            On GCE from memory cache: False
+2026-04-27 13:02:25,486 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2026-04-27 13:02:25,615 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/google-cloud-sdk.tar.gz HTTP/1.1" 200 43727927
+2026-04-27 13:02:26,511 INFO     ___FILE_ONLY___ ═
+2026-04-27 13:02:26,518 INFO     ___FILE_ONLY___ ═
+2026-04-27 13:02:26,524 INFO     ___FILE_ONLY___ ═
+2026-04-27 13:02:26,528 INFO     ___FILE_ONLY___ ═
+2026-04-27 13:02:26,536 INFO     ___FILE_ONLY___ ═
+2026-04-27 13:02:26,541 INFO     ___FILE_ONLY___ ═
+2026-04-27 13:02:26,545 INFO     ___FILE_ONLY___ ═
+2026-04-27 13:02:26,550 INFO     ___FILE_ONLY___ ═
+2026-04-27 13:02:26,555 INFO     ___FILE_ONLY___ ═
+2026-04-27 13:02:26,583 INFO     ___FILE_ONLY___ ═
+2026-04-27 13:02:26,600 INFO     ___FILE_ONLY___ ═
+2026-04-27 13:02:26,604 INFO     ___FILE_ONLY___ ═
+2026-04-27 13:02:26,608 INFO     ___FILE_ONLY___ ═
+2026-04-27 13:02:26,612 INFO     ___FILE_ONLY___ ═
+2026-04-27 13:02:26,616 INFO     ___FILE_ONLY___ ═
+2026-04-27 13:02:26,621 INFO     ___FILE_ONLY___ ═
+2026-04-27 13:02:26,626 INFO     ___FILE_ONLY___ ═
+2026-04-27 13:02:26,630 INFO     ___FILE_ONLY___ ═
+2026-04-27 13:02:26,635 INFO     ___FILE_ONLY___ ═
+2026-04-27 13:02:26,639 INFO     ___FILE_ONLY___ ═
+2026-04-27 13:02:26,643 INFO     ___FILE_ONLY___ ═
+2026-04-27 13:02:26,647 INFO     ___FILE_ONLY___ ═
+2026-04-27 13:02:26,652 INFO     ___FILE_ONLY___ ═
+2026-04-27 13:02:26,657 INFO     ___FILE_ONLY___ ═
+2026-04-27 13:02:26,660 INFO     ___FILE_ONLY___ ═
+2026-04-27 13:02:26,664 INFO     ___FILE_ONLY___ ═
+2026-04-27 13:02:26,667 INFO     ___FILE_ONLY___ ═
+2026-04-27 13:02:26,671 INFO     ___FILE_ONLY___ ═
+2026-04-27 13:02:26,677 INFO     ___FILE_ONLY___ ═
+2026-04-27 13:02:26,683 INFO     ___FILE_ONLY___ ═
+2026-04-27 13:02:31,581 INFO     ___FILE_ONLY___ ═
+2026-04-27 13:02:32,221 INFO     ___FILE_ONLY___ ═
+2026-04-27 13:02:32,838 INFO     ___FILE_ONLY___ ═
+2026-04-27 13:02:33,392 INFO     ___FILE_ONLY___ ═
+2026-04-27 13:02:34,001 INFO     ___FILE_ONLY___ ═
+2026-04-27 13:02:35,026 INFO     ___FILE_ONLY___ ═
+2026-04-27 13:02:35,945 INFO     ___FILE_ONLY___ ═
+2026-04-27 13:02:36,727 INFO     ___FILE_ONLY___ ═
+2026-04-27 13:02:37,286 INFO     ___FILE_ONLY___ ═
+2026-04-27 13:02:37,789 INFO     ___FILE_ONLY___ ═
+2026-04-27 13:02:38,328 INFO     ___FILE_ONLY___ ═
+2026-04-27 13:02:38,851 INFO     ___FILE_ONLY___ ═
+2026-04-27 13:02:39,368 INFO     ___FILE_ONLY___ ═
+2026-04-27 13:02:39,901 INFO     ___FILE_ONLY___ ═
+2026-04-27 13:02:40,428 INFO     ___FILE_ONLY___ ═
+2026-04-27 13:02:41,006 INFO     ___FILE_ONLY___ ═
+2026-04-27 13:02:41,527 INFO     ___FILE_ONLY___ ═
+2026-04-27 13:02:42,092 INFO     ___FILE_ONLY___ ═
+2026-04-27 13:02:42,591 INFO     ___FILE_ONLY___ ═
+2026-04-27 13:02:43,129 INFO     ___FILE_ONLY___ ═
+2026-04-27 13:02:43,651 INFO     ___FILE_ONLY___ ═
+2026-04-27 13:02:44,167 INFO     ___FILE_ONLY___ ═
+2026-04-27 13:02:44,698 INFO     ___FILE_ONLY___ ═
+2026-04-27 13:02:45,435 INFO     ___FILE_ONLY___ ═
+2026-04-27 13:02:46,400 INFO     ___FILE_ONLY___ ═
+2026-04-27 13:02:47,038 INFO     ___FILE_ONLY___ ═
+2026-04-27 13:02:47,709 INFO     ___FILE_ONLY___ ═
+2026-04-27 13:02:48,383 INFO     ___FILE_ONLY___ ═
+2026-04-27 13:02:48,908 INFO     ___FILE_ONLY___ ═
+2026-04-27 13:02:49,447 INFO     ___FILE_ONLY___ ═
+2026-04-27 13:02:49,447 INFO     ___FILE_ONLY___ ╝
+
+2026-04-27 13:02:49,467 DEBUG    root            Attempting to move directory [/var/folders/zt/vklg8ffd4z9208m138y59m940000gn/T/tmpp8eoaawg/.extract/google-cloud-sdk] to [/usr/local/share/google-cloud-sdk.staging]
+2026-04-27 13:03:56,200 INFO     ___FILE_ONLY___ ╔════════════════════════════════════════════════════════════╗
+
+2026-04-27 13:03:56,201 INFO     ___FILE_ONLY___ ╠═ Creating backup and activating new installation          ═╣
+
+2026-04-27 13:03:56,202 INFO     ___FILE_ONLY___ ╚
+2026-04-27 13:03:56,203 DEBUG    root            Attempting to move directory [/usr/local/share/google-cloud-sdk] to [/usr/local/share/google-cloud-sdk.staging/.install/.backup]
+2026-04-27 13:03:56,204 INFO     ___FILE_ONLY___ ══════════════════════════════
+2026-04-27 13:03:56,204 DEBUG    root            Attempting to move directory [/usr/local/share/google-cloud-sdk.staging] to [/usr/local/share/google-cloud-sdk]
+2026-04-27 13:03:56,205 INFO     ___FILE_ONLY___ ══════════════════════════════
+2026-04-27 13:03:56,205 INFO     ___FILE_ONLY___ ╝
+
+2026-04-27 13:03:56,205 INFO     ___FILE_ONLY___ 
+Components updated!
+
+
+2026-04-27 13:03:56,207 DEBUG    root            Chosen display Format:none
+2026-04-27 13:03:56,208 INFO     root            Display format: "none"
