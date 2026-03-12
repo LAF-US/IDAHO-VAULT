@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "!README",
+      "path": "!ADMINISTRATION/!README.md"
+    },
+    {
       "basename": "holy book",
       "path": "TOPICS/holy book.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "realtors",
       "path": "TOPICS/ECONOMY/RESIDENTIAL/realtors.md"
-    },
-    {
-      "basename": "Sarah Clendenon",
-      "path": "PEOPLE/Sarah Clendenon.md"
     }
   ],
   "omittedPaths": [],
