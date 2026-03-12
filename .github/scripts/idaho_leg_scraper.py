@@ -87,6 +87,11 @@ from pathlib import Path
 import requests
 from bs4 import BeautifulSoup, Tag
 
+# ── TODO: LEVELSET REPORTS ────────────────────────────────────────────────────
+# FLAG: This scraper needs to be integrated with / clued in on LEVELSET REPORTS.
+# Context pending — revisit when more information is available.
+# ─────────────────────────────────────────────────────────────────────────────
+
 # ── Logging ──────────────────────────────────────────────────────────────────
 logging.basicConfig(
     level=logging.INFO,
