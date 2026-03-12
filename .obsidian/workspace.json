@@ -4,17 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "38480291482917a4",
+        "id": "5d91e137d91ec58b",
         "type": "tabs",
         "children": [
           {
-            "id": "33f940a4d7ff1c24",
+            "id": "c595eb7652f0ebf1",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "!ADMINISTRATION/!README.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "!README"
             }
           }
         ]
@@ -118,12 +123,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TOPICS/holy book.md",
+                "file": "!ADMINISTRATION/!README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from holy book"
+              "title": "Outgoing links from !README"
             }
           },
           {
@@ -201,8 +206,9 @@
       "templates:Insert template": false
     }
   },
-  "active": "dbfa8ac519a0bb94",
+  "active": "c595eb7652f0ebf1",
   "lastOpenFiles": [
+    "!ADMINISTRATION/!README.md",
     "!ADMINISTRATION",
     "X LABELER/x hey you make sure to link these/Article 2020-02-21 4-H students gather for government conference.md",
     "X LABELER/x hey you make sure to link these/2022-03-23- Idaho Capital Sun - McGeachin casts tie-breaking vote to pass medical school tuition payback bill.md",
@@ -239,7 +245,6 @@
     "PLACES/LIBRARIES",
     "ATTACHMENTS/MAPS/Snake River Dams.jpg",
     "SOURCES/HEARINGS/2024",
-    "X LABELER",
     "ATTACHMENTS/MAPS/Wildlife Management Units.png",
     "Pasted image 20231121102332.png"
   ]
