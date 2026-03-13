@@ -78,7 +78,7 @@ The following items from LEVELSET-v2.md are now stale:
 |---|---|---|---|
 | **PERSISTENT: ADMINISTRATION** | Vault governance, policy | Nothing committed to repo | No LEVELSET report received. Role overlap with CODE AUTHORITY needs resolution. |
 | **TASK: LEVELSET reports** | Synthesis routing hub | Distributed LEVELSET v2 prompt; produced Option A/B/C sequencing recommendation | Active but role may be fulfilled after this round |
-| **STORY: JFAC Open Meetings** | Journalism story development | **Significant session context accumulated** per TASK conversation. Cache block pending delivery to CODE AUTHORITY. | Highest-priority incoming data. Logan will route. |
+| **STORY: JFAC Open Meetings** | Journalism story development | Cache block delivered 2026-03-13. People updates, verified facts, open tasks, lessons learned, architectural decisions, transcript protocols. | **Incorporated** into this synthesis. |
 | **PROJECT: 2026 Budget Tracker** | Budget tracking | Unknown | No report received |
 | **ISSUE: Repository browsing** | Repo navigation | Unknown | No report received |
 
@@ -109,22 +109,147 @@ Five decisions logged in DECISIONS.md (all 2026-03-13):
 
 ### Decisions Made During This Session Not Yet Logged
 
-| Decision | Context | Status |
-|---|---|---|
-| Option A sequencing for LEVELSET synthesis | CODE AUTHORITY owns synthesis; TASK: LEVELSET provides content routing; Logan routes between them | **Pending addition to DECISIONS.md** |
-| LEVELSET-CURRENT as rolling synthesis document | Distinguished from numbered LEVELSET snapshots (permanent) vs CURRENT (living, updated each round) | **Pending addition to DECISIONS.md** |
-| PERSISTENT: CODE AUTHORITY designation | This Claude Code session flagged as persistent authoritative entry | **Pending addition to DECISIONS.md** |
+| # | Decision | Context | Source | Status |
+|---|---|---|---|---|
+| 6 | Option A sequencing for LEVELSET synthesis | CODE AUTHORITY owns synthesis; TASK: LEVELSET provides content routing; Logan routes between them | CODE AUTHORITY session | **Pending Logan review** |
+| 7 | LEVELSET-CURRENT as rolling synthesis document | Distinguished from numbered LEVELSET snapshots (permanent) vs CURRENT (living, updated each round) | CODE AUTHORITY session | **Pending Logan review** |
+| 8 | PERSISTENT: CODE AUTHORITY designation | This Claude Code session flagged as persistent authoritative entry | CODE AUTHORITY session | **Pending Logan review** |
+| 9 | LEVELSET promoted to persistent state layer | LEVELSET is canonical shared memory for all Claude instances. All sessions read on open, write on close. | JFAC Open Meetings, 2026-03-12 | **Pending Logan review** |
+| 10 | Session-open and session-close protocols formalized | Open: fetch LEVELSET-CURRENT, read fully, confirm to Logan. Close: produce labeled cache block, hand to Logan for routing. | JFAC Open Meetings, 2026-03-12 | **Pending Logan review** |
+| 11 | Task assignment lives in !ADMINISTRATION, not conversation memory | Persistent task tracking belongs in committed files, not ephemeral context | JFAC Open Meetings, 2026-03-12 | **Pending Logan review** |
+| 12 | Handoff/handshake built into LEVELSET workflow | Not a separate procedure — it IS the session-open protocol | JFAC Open Meetings, 2026-03-12 | **Pending Logan review** |
+| 13 | Session type taxonomy needs formal definition | Current informal types: STORY, ISSUE, TASK, PERSISTENT, PROJECT. Status: PENDING formalization | JFAC Open Meetings, 2026-03-12 | **Pending Logan review** |
+
+---
+
+## JFAC OPEN MEETINGS — SESSION CONTRIBUTION (2026-03-12)
+
+Source: STORY: JFAC Open Meetings session cache block, routed by Logan 2026-03-13.
+
+### Project Status
+
+| Field | Value |
+|---|---|
+| Story | JFAC working groups / open meetings |
+| CCA letter deadline | ~2026-03-18 |
+| Sunshine Week | 2026-03-15 through 2026-03-21 |
+| Draft exists | 3-10_JFAC_working_groups_-1.docx |
+| Editorial constraint | IPTV state agency status; [[Clark Corbin]] (Idaho Capital Sun) carries primary byline burden |
+
+### People Updates
+
+**[[Kyle Harris]]** — CORRECTED
+- Was: conflated with [[Mark Harris]]
+- Now: Junior House member, Lewiston (House)
+- Action needed: Vault note needs first name correction, separate entry from [[Mark Harris]]
+
+**[[Mark Harris]]** — Senior Senate member, Soda Springs area (Senate)
+- Interview still needed
+- Expressed frustration at Monday JFAC hearing re working groups — pull Idaho In Session archive
+
+**[[Cornel Rasor]]** — NAY on S1331 confirmed from vote board image
+- Pattern: NAY on Rule 27 suspension + NAY on S1331
+- Interview priority: Friday, Mason's Manual angle
+
+**[[Britt Raybould]]** — NAY on S1331 confirmed from vote board image
+- Interview priority: Friday hallway catch only
+
+**Rep. Bruce** — NEW
+- First year on JFAC
+- Working group assignments top-down from leadership, no member input confirmed
+- On record favoring transparency: "I've always been for more transparency" [AUDIO VERIFICATION REQUIRED]
+
+**[[Dustin Manwaring]]** — AYE on S1331 (read from vote board, one Manwaring in House, high confidence)
+- On record: "I'm a sunshine person" [AUDIO VERIFICATION REQUIRED]
+- On record: "Should it be an open and public process — I would air that, I would be fine with that personally" [AUDIO VERIFICATION REQUIRED]
+
+**[[Wintrow]]** — CORRECTION
+- Previous entry assigned role "Senate President Pro Tem / Anthon's number two" — **THIS WAS FABRICATED, no source basis**
+- Actual role: unconfirmed, needs verification
+- [[Kelly Anthon]] is Senate President Pro Tem
+
+### Verified Facts (sourced, not yet audio-verified for quotes)
+
+1. Working group assignment sheet exists, distributed to all JFAC members (Cook, Woodward-and-Cook transcript)
+2. Active quorum management confirmed on record (Woodward-and-Cook transcript)
+3. Working group assignments come from leadership, not member preference (Bruce transcript)
+4. No parliamentary appeal of working group decisions on record (Cook: "not that I know of")
+5. JFAC rules never voted on by full committee per Cook (Woodward-and-Cook transcript)
+
+### Pending Verification Queue
+
+All items below are **HARD GATES** before publication:
+
+| Quote / Claim | Speaker | Source | Status |
+|---|---|---|---|
+| "Without a TV or a microphone" | Speaker 3 (identity unknown) | Transcript | SPEAKER UNVERIFIED |
+| "The rules were never voted on by the committee" | Cook | Woodward-and-Cook transcript | AUDIO VERIFICATION REQUIRED |
+| "I'm a sunshine person" | Manwaring | Interview | AUDIO VERIFICATION REQUIRED |
+| "Should it be an open and public process — I would air that" | Manwaring | Interview | AUDIO VERIFICATION REQUIRED |
+| "I've always been for more transparency" | Bruce | Interview | AUDIO VERIFICATION REQUIRED |
+| All Woodward-and-Cook speaker IDs | Speaker 2 vs Speaker 3 | Transcript | IDENTITY UNVERIFIED |
+
+### Open Tasks (from JFAC session)
+
+| Task | Owner | Status | Gate |
+|---|---|---|---|
+| Correct [[Kyle Harris]] vault note (first name, chamber) | Any session | PENDING | — |
+| New vault note: [[Cornel Rasor]] | Any session | PENDING | — |
+| New topic note: House Rule 27 | Any session | PENDING | — |
+| Working group assignment sheet records request | Logan | PENDING | — |
+| Pull Idaho In Session: Kyle Harris Monday JFAC hearing | Logan | PENDING | — |
+| Audio verify all 2026-03-10 transcript quotes | Logan | HARD GATE | Pre-pub |
+| Grow/Tanner interview — public access question | Logan | PENDING | Mar 18 |
+| [[Mark Harris]] interview | Logan | PENDING | — |
+| Patch increment 2 (Monks, Rasor, Rule 27, 2024-01-09 IR) | Any session | PENDING | — |
+| Vault patch collision check (vault-deploy.zip) | Repo session | BLOCKED | Pre-commit |
+| BIN processing pipeline architecture | Audio session | ASSIGNED | — |
+
+### Transcript Processing Protocols
+
+**Google Recorder .txt files:**
+- Speaker tags non-persistent, identity-unverified by definition
+- All quotes: SPEAKER UNVERIFIED until human audio check
+- Re-processing must start from vault note, not raw file
+- Verification gate covers both speaker ID and quote accuracy
+
+**Adobe Premiere Pro transcripts:**
+- Read-only. Syntax must be preserved for editorial re-import
+- No vault notes derived until format protocol defined by Logan
+- Separate processing protocol required before Claude handling
+
+**Blocking dependency:** [[Audrey Dutton]] — Idaho reporter. Source relationship to cultivate. Peer with likely applicable experience in AI-assisted transcript processing and bulk research workflows. Reporter-to-reporter conversation needed before pipeline architecture is finalized. Not a tool dependency — a human expertise node.
+
+### Lessons Learned (2026-03-12 session)
+
+Four failure modes identified — permanent record, never delete:
+
+1. **Context-triggered confabulation** — Claude fabricated Wintrow's role based on contextual inference, not source material
+2. **Verification flag stripping** — Unverified speaker IDs lost their flags during processing
+3. **Misattribution within auto-generated transcript** — Google Recorder speaker tags are not reliable identity markers
+4. **Inference presented as sourced record** — Claude treated its own inferences as if they were sourced facts
+
+### Idaho Reports Byline Archive
+
+- 268 posts, 23 pages at blog.idahoreports.idahoptv.org
+- Earliest: November 2020
+- Vault captures approximately 1% of published output
+- Two high-priority missing pieces:
+  - 2024-03-29: "Open meetings law questioned with tense budget season" (direct prior reporting on JFAC/open meetings)
+  - 2024-03-11: "Senate pushes to re-adopt JFAC rules"
+- Both need vault notes in SOURCES/NEWS MEDIA
 
 ---
 
 ## SOURCING & SENSITIVITY
 
-No changes from LEVELSET-v2 assessment:
+Updated with JFAC session incorporation:
 
 - All committed content is on the record
 - No background-sourced material identified in repo
 - No off-the-record material held by this session
-- JFAC Open Meetings session may hold sourcing-sensitive material — defer to Logan on what transfers
+- JFAC session cache block received and incorporated — all material in the block was provided by Logan for on-the-record inclusion
+- Multiple quotes flagged AUDIO VERIFICATION REQUIRED — these are on the record but **not publication-ready** until verification clears
 
 ---
 
@@ -134,8 +259,9 @@ No changes from LEVELSET-v2 assessment:
 
 | Item | Priority | Notes |
 |---|---|---|
+| Review 8 pending decisions (#6–#13) for DECISIONS.md | **High** | 3 from CODE AUTHORITY session + 5 from JFAC session. All staged in this document, none appended to DECISIONS.md yet. |
 | Merge feature branches to main | **High** | Both branches have substantive work. CLAUDE.md on main is the highest-impact merge. |
-| Route JFAC session cache to CODE AUTHORITY | **High** | TASK conversation confirmed significant context exists. Synthesis will be thinner without it. |
+| Audio verify JFAC quotes (5 quotes + speaker IDs) | **High** | HARD GATE for publication. See Pending Verification Queue above. |
 | Ethics.md creation | Medium | No draft exists anywhere in the ecosystem |
 | LEVELSET cadence decision | Medium | Weekly? Milestone-triggered? Needs a standing rule. |
 
@@ -143,7 +269,7 @@ No changes from LEVELSET-v2 assessment:
 
 | Item | Source | Notes |
 |---|---|---|
-| JFAC Open Meetings session cache block | STORY: JFAC Open Meetings | Logan will route after initial synthesis branch is ready |
+| ~~JFAC Open Meetings session cache block~~ | ~~STORY: JFAC Open Meetings~~ | **RECEIVED** — incorporated this round |
 | LEVELSET reports from other conversations | All active conversations | Most conversations have not submitted reports |
 
 ### Known Technical Issues
@@ -160,7 +286,7 @@ No changes from LEVELSET-v2 assessment:
 
 Transparency about gaps — this section exists so Logan and other conversations know exactly what's thin:
 
-1. **JFAC Open Meetings session context** — The TASK conversation confirmed this session has "significant context accumulated today" including lessons learned, pipeline notes, people updates, open tasks, and architectural decisions. None of that has reached this synthesis yet. Logan will route it.
+1. ~~**JFAC Open Meetings session context**~~ — **RESOLVED.** Cache block received and incorporated 2026-03-13. People updates, verified facts, open tasks, lessons learned, architectural decisions, and transcript processing protocols now in this document.
 
 2. **LEVELSET reports from 9 of 11 conversations** — Only CODE AUTHORITY (this session) and TASK: LEVELSET reports have actively participated. The other conversations' states are inferred, not reported.
 
@@ -170,17 +296,20 @@ Transparency about gaps — this section exists so Logan and other conversations
 
 5. **Historical LEVELSET v1** — Whether it existed and what it contained remains unverified.
 
+6. **Audio verification for all JFAC quotes** — Five quotes and full Woodward-and-Cook speaker ID verification are HARD GATES before publication. Only Logan can clear these.
+
 ---
 
 ## NEXT ACTIONS FOR THIS SESSION
 
-1. Commit LEVELSET-CURRENT.md to a **separate branch** (per Option A instructions)
-2. Flag Logan for review
-3. Wait for JFAC session cache block from Logan
-4. Incorporate cache block into follow-up commit
-5. Append three new decisions to DECISIONS.md (Option A sequencing, LEVELSET-CURRENT concept, CODE AUTHORITY designation)
-6. After Logan's review and approval, coordinate merge to `claude/levelset-multi-conversation-zWxJc` and ultimately to main
+1. ~~Commit LEVELSET-CURRENT.md to separate branch~~ — Done
+2. ~~Wait for JFAC session cache block from Logan~~ — Received and incorporated
+3. **Flag Logan for review** — THIS COMMIT. Logan reviews:
+   - Full JFAC session incorporation in LEVELSET-CURRENT.md
+   - 8 pending decisions (#6–#13) before they are appended to DECISIONS.md
+4. After Logan approval: append approved decisions to DECISIONS.md
+5. Coordinate merge to `claude/levelset-multi-conversation-zWxJc` and ultimately to main
 
 ---
 
-*LEVELSET-CURRENT.md — Synthesized 2026-03-13 by PERSISTENT: CODE AUTHORITY. This is a living document, updated each LEVELSET round. For the permanent audit trail, see numbered LEVELSET files in this directory.*
+*LEVELSET-CURRENT.md — Synthesized 2026-03-13, updated 2026-03-13 (JFAC session incorporation) by PERSISTENT: CODE AUTHORITY. This is a living document, updated each LEVELSET round. For the permanent audit trail, see numbered LEVELSET files in this directory.*
