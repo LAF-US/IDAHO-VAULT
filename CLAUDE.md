@@ -169,7 +169,7 @@ Claude conversations follow a naming convention:
 
 ## LEVELSET Protocol
 
-LEVELSET is a permanent, auditable checkpoint protocol. LEVELSET files live in `!ADMIN/` and are never deleted, never overwritten. Each version is additive. See `LEVELSET-v2.md` for the most recent checkpoint.
+LEVELSET is a permanent, auditable checkpoint protocol. LEVELSET files live in `!ADMIN/`. Versioned checkpoints are never deleted, never overwritten. See `LEVELSET.md` for current ecosystem status.
 
 ---
 
