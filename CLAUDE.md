@@ -24,7 +24,7 @@ This is a personal journalism research vault. It contains notes on Idaho politic
 
 ```
 IDAHO-VAULT/
-  !ADMINISTRATION/        Infrastructure, LEVELSET files, audit reports
+  !ADMIN/                 Infrastructure, LEVELSET files, audit reports
   ATTACHMENTS/
     DOCUMENTS/            PDFs, images
     MAPS/                 Map files
@@ -165,13 +165,13 @@ Claude conversations follow a naming convention:
 
 ## LEVELSET Protocol
 
-LEVELSET is a permanent, auditable checkpoint protocol. LEVELSET files live in `!ADMINISTRATION/` and are never deleted, never overwritten. Each version is additive. See `LEVELSET-v2.md` for the most recent checkpoint.
+LEVELSET is a permanent, auditable checkpoint protocol. LEVELSET files live in `!ADMIN/` and are never deleted, never overwritten. Each version is additive. See `LEVELSET-v2.md` for the most recent checkpoint.
 
 ---
 
 ## Decision Log
 
-Significant architectural decisions are recorded in `!ADMINISTRATION/DECISIONS.md`. When a decision is made about vault structure, naming, tooling, or process, log it there.
+Significant architectural decisions are recorded in `!ADMIN/DECISIONS.md`. When a decision is made about vault structure, naming, tooling, or process, log it there.
 
 ---
 
