@@ -123,6 +123,10 @@ Use `[[Full Name]]` for all internal links — people, places, organizations, bi
 - **Python** = machine/procedural product, attributable to Claude. Scripts, scrapers, automation.
 - **Administrative** = vault infrastructure. CLAUDE.md, LEVELSET files, audit reports.
 
+## Governance
+
+This file provides operational instructions for Claude Code sessions. The canonical constitution is `!ADMIN/Claude.md`, maintained by PERSISTENT: ADMINISTRATION. When this file and `!ADMIN/Claude.md` conflict, `!ADMIN/Claude.md` governs.
+
 ## Automation
 
 | Script | Purpose | Trigger |
