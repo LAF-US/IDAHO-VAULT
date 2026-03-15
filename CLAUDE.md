@@ -167,6 +167,19 @@ Claude conversations follow a naming convention:
 
 LEVELSET is a permanent, auditable checkpoint protocol. LEVELSET files live in `!ADMINISTRATION/` and are never deleted, never overwritten. Each version is additive. See `LEVELSET-v2.md` for the most recent checkpoint.
 
+## SIGNAL Protocol
+
+SIGNAL is a push-based complement to LEVELSET. Any conversation, any tier, can emit a structured signal when something needs attention *between* LEVELSET cycles. Four signal types:
+
+| Signal | Purpose |
+|---|---|
+| `ESCALATE` | Something needs a higher-tier conversation's attention |
+| `BLOCK` | This conversation is stuck and needs external input |
+| `COLLISION` | Concurrent work detected on the same files or area |
+| `DISCOVERY` | Found something significant other conversations should know |
+
+Signals are information, not authorization to act. COLLISION signals are always URGENT. See `!ADMINISTRATION/SIGNAL.md` for the full protocol, format, and examples.
+
 ---
 
 ## Decision Log
