@@ -133,6 +133,13 @@ Claude instances operate as a swarm — specialized, tiered infrastructure under
 - Markdown = human product, attributable to Logan
 - Python = machine/procedural, attributable to Claude
 **LEVELSET status:** On hold. Primary work happening in PERSISTENT: ADMINISTRATION and PERMANENT: CODE AUTHORITY.
+
+**Signaling:**
+- **LEVELSET** = pull-based, scheduled checkpoints. Logan prompts; conversations report.
+- **SIGNAL** = push-based, event-driven flags. Conversations emit; Logan routes.
+- Signal types: ESCALATE, BLOCK, COLLISION, DISCOVERY. See `!ADMINISTRATION/SIGNAL.md`.
+- Any conversation, any tier, can emit a signal. Signals are information, not authorization to act.
+- COLLISION signals are always URGENT. All others default to NORMAL.
 ---
 ## Pending Items
 - [ ] Push updated `sort_audit.py` (v2) via `vault_push.py`

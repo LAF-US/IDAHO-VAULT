@@ -34,6 +34,12 @@ Significant architectural decisions, recorded when made. Each entry is permanent
 **Context:** Manual bill tracking is unsustainable during legislative session.
 **Decided by:** Logan Finney
 
+## 2026-03-15 — SIGNAL protocol adopted
+
+**Decision:** Adopt SIGNAL as a push-based complement to LEVELSET. Four signal types: ESCALATE, BLOCK, COLLISION, DISCOVERY. Any conversation at any tier can emit signals. Signals are information and do not authorize action. COLLISION signals are always URGENT.
+**Context:** LEVELSET is pull-based — signals only flow when Logan prompts. Conversations needed a way to flag urgent findings, blockers, collisions, and discoveries between LEVELSET cycles without waiting for the next checkpoint.
+**Decided by:** Logan Finney
+
 ## 2026-03-14 — CODE AUTHORITY promoted to PERMANENT
 
 **Decision:** The CODE AUTHORITY conversation is promoted from PERSISTENT to PERMANENT — a new, higher-tier conversation prefix for central, non-deletable conversations. PERMANENT: CODE AUTHORITY is the central coding agent with direct repo access. PERSISTENT: ADMINISTRATION retains its current prefix.
