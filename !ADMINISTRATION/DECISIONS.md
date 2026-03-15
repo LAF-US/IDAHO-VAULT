@@ -39,3 +39,9 @@ Significant architectural decisions, recorded when made. Each entry is permanent
 **Decision:** The CODE AUTHORITY conversation is promoted from PERSISTENT to PERMANENT — a new, higher-tier conversation prefix for central, non-deletable conversations. PERMANENT: CODE AUTHORITY is the central coding agent with direct repo access. PERSISTENT: ADMINISTRATION retains its current prefix.
 **Context:** CODE AUTHORITY has become the primary execution layer for all vault infrastructure work. Its role warrants a designation above PERSISTENT to reflect permanence.
 **Decided by:** Logan Finney
+
+## 2026-03-15 — Security hardening: input sanitization and content validation
+
+**Decision:** Add input sanitization (`sanitize_text()`) to the legislature scraper and a content validation gate (`validate_content.py`) to all commit-producing workflows. Create CODEOWNERS file and threat model. Remove excess workflow permissions. Branch protection on main deferred for CODE AUTHORITY consultation.
+**Context:** Review of the OpenClaw autonomous agent incident (2025–2026) revealed analogous risks in the vault's automation pipeline — particularly unsanitized external HTML flowing directly into YAML frontmatter and markdown body via the legislature scraper. Applied Simon Willison's "lethal trifecta" framework (over-privilege, prompt injection surface, default vulnerabilities) to identify proportionate hardening measures.
+**Decided by:** Logan Finney, implemented by TASK: Claude Code session
