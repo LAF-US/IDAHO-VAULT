@@ -81,6 +81,15 @@ jobs:
           echo "changed=$(wc -l < /tmp/changed_bills.txt)" >> $GITHUB_OUTPUT
           echo "new=$(wc -l < /tmp/new_bills.txt)"         >> $GITHUB_OUTPUT
 
+      - name: Validate scraped content
+        run: |
+          git add "GOVERNMENTS/IDAHO - LEGISLATIVE/BILLS/"
+          git add "GOVERNMENTS/IDAHO - LEGISLATIVE/SESSIONS/"
+          git add "GOVERNMENTS/IDAHO - LEGISLATIVE/IDAHO HOUSE/"
+          git add "GOVERNMENTS/IDAHO - LEGISLATIVE/IDAHO SENATE/"
+          python3 .github/scripts/validate_content.py --scope bills
+          git reset HEAD  # unstage so commit step handles staging
+
       - name: Commit changes
         id: commit
         run: |
