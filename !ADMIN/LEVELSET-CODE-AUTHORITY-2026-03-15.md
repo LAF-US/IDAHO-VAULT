@@ -19,7 +19,7 @@ LEVELSET PERMANENT: CODE AUTHORITY — 2026-03-15
 
 | File | Type | Action |
 |---|---|---|
-| `!ADMINISTRATION/HANDOFF-ADMIN-2026-03-15.md` | Administrative | Created — structured briefing for ADMIN covering PR #1 aftermath, stale constitution sections, outstanding items |
+| `!ADMIN/HANDOFF-ADMIN-2026-03-15.md` | Administrative | Created — structured briefing for ADMIN covering PR #1 aftermath, stale constitution sections, outstanding items |
 
 Branch `claude/levelset-multi-conversation-zWxJc` fast-forwarded to include `origin/main` HEAD (`219a271`, wayback preserve log).
 
@@ -28,15 +28,15 @@ Branch `claude/levelset-multi-conversation-zWxJc` fast-forwarded to include `ori
 | File | Type | Action |
 |---|---|---|
 | `CLAUDE.md` (repo root) | Administrative | Created — repo-wide instructions for all Claude Code sessions |
-| `!ADMINISTRATION/Claude.md` | Administrative | Deployed from ADMIN's constitutional layer |
-| `!ADMINISTRATION/Ethics.md` | Administrative | Deployed from ADMIN |
-| `!ADMINISTRATION/Logan.md` | Administrative | Deployed from ADMIN |
-| `!ADMINISTRATION/!README.md` | Administrative | Deployed from ADMIN |
-| `!ADMINISTRATION/DECISIONS.md` | Administrative | Created — 6 entries through 2026-03-14 |
-| `!ADMINISTRATION/LEVELSET.md` (v1) | Administrative | Created |
-| `!ADMINISTRATION/LEVELSET-v2.md` | Administrative | Created — canonical ecosystem checkpoint |
-| `!ADMINISTRATION/LEVELSET-v2-PROMPT.md` | Administrative | Created |
-| `!ADMINISTRATION/LEVELSET-v3.2.6.1-PROMPT.md` | Administrative | Created — current LEVELSET prompt template |
+| `!ADMIN/Claude.md` | Administrative | Deployed from ADMIN's constitutional layer |
+| `!ADMIN/Ethics.md` | Administrative | Deployed from ADMIN |
+| `!ADMIN/Logan.md` | Administrative | Deployed from ADMIN |
+| `!ADMIN/!README.md` | Administrative | Deployed from ADMIN |
+| `!ADMIN/DECISIONS.md` | Administrative | Created — 6 entries through 2026-03-14 |
+| `!ADMIN/LEVELSET.md` (v1) | Administrative | Created |
+| `!ADMIN/LEVELSET-v2.md` | Administrative | Created — canonical ecosystem checkpoint |
+| `!ADMIN/LEVELSET-v2-PROMPT.md` | Administrative | Created |
+| `!ADMIN/LEVELSET-v3.2.6.1-PROMPT.md` | Administrative | Created — current LEVELSET prompt template |
 | `.github/scripts/sort_audit.py` | Python | Deployed v2 |
 | `.github/scripts/propose_moves.py` | Python | Deployed |
 | `.github/scripts/wayback_audit.py` | Python | Deployed |
@@ -61,7 +61,7 @@ Branch `claude/levelset-multi-conversation-zWxJc` fast-forwarded to include `ori
 
 - **Scraper branch not merged.** `origin/claude/idaho-legislature-scraper-RI6Ku` has 2 LEVELSET termination reports (`LEVELSET-v2-idaho-scraper.md`, `LEVELSET-v3.2.6-idaho-scraper.md`) plus the scraper itself. Files diverge from main — needs Logan's merge decision.
 - **Wayback preservation failures.** 2 of 4 URLs failed in the auto-triggered preserve workflow (see `wayback-preserve-2026-03-15.md`). Not investigated.
-- **Sort audit v1 genuine issues.** 5 items flagged, none actioned. Listed in `!ADMINISTRATION/Claude.md` lines 80-85.
+- **Sort audit v1 genuine issues.** 5 items flagged, none actioned. Listed in `!ADMIN/Claude.md` lines 80-85.
 - **Two scraper workflows unbuilt:** `idaho-leg-setup.yml`, `idaho-leg-bill-lookup.yml` — referenced in scraper conversation but never delivered.
 - **`LEVELSET-CURRENT.md` does not exist.** The v3.2.6.1 prompt references it (line 113) as the pointer to latest state. Never created.
 - **ADMIN's `Claude.md` is stale.** Detailed in `HANDOFF-ADMIN-2026-03-15.md`. Key issues: `vault_push.py` references (never built), Tier 2 definition, workflow schedule table, pending items list, conversation cluster.
