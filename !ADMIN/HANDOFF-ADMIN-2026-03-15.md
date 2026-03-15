@@ -19,7 +19,7 @@ PR #1 merged 2026-03-14 (commit `59ed633`), consolidating two feature branches i
 | Category | Files |
 |---|---|
 | Root | `CLAUDE.md` (repo-wide instructions for all Claude Code sessions) |
-| Constitutional | `!ADMINISTRATION/Claude.md`, `Ethics.md`, `Logan.md`, `!README.md` |
+| Constitutional | `!ADMIN/Claude.md`, `Ethics.md`, `Logan.md`, `!README.md` |
 | LEVELSET | `LEVELSET.md` (v1), `LEVELSET-v2.md`, `LEVELSET-v2-PROMPT.md`, `LEVELSET-v3.2.6.1-PROMPT.md` |
 | Decisions | `DECISIONS.md` (6 entries through 2026-03-14) |
 | Automation | `sort_audit.py` (v2), `propose_moves.py`, `wayback_audit.py` |
@@ -41,7 +41,7 @@ PR #1 merged 2026-03-14 (commit `59ed633`), consolidating two feature branches i
 
 ## What's Stale in ADMIN's Claude.md
 
-ADMIN's `!ADMINISTRATION/Claude.md` was last updated 2026-03-11. Several sections are now outdated:
+ADMIN's `!ADMIN/Claude.md` was last updated 2026-03-11. Several sections are now outdated:
 
 ### 1. `vault_push.py` references (lines 19, 73, 123)
 `vault_push.py` was never delivered. Claude Code sessions (Tier 1) now push directly to GitHub — they have full repo write access. The constraint on line 19 ("Claude cannot write directly to GitHub — outbound network is blocked in the sandbox") is no longer accurate for Tier 1 instances.
@@ -98,7 +98,7 @@ Missing updates:
 ## How to Use This Document
 
 Paste this into PERSISTENT: ADMINISTRATION as context. ADMIN can then:
-1. Update `!ADMINISTRATION/Claude.md` to reflect current state
+1. Update `!ADMIN/Claude.md` to reflect current state
 2. Make decisions on the items flagged above
 3. Produce an updated LEVELSET if warranted
 4. Direct CODE AUTHORITY on next priorities

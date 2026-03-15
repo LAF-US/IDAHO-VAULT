@@ -6,7 +6,7 @@ Significant architectural decisions, recorded when made. Each entry is permanent
 
 ## 2026-03-13 — LEVELSET protocol established
 
-**Decision:** Adopt LEVELSET as the permanent checkpoint protocol for the vault ecosystem. LEVELSET files are stored in `!ADMINISTRATION/`, are never deleted, never overwritten. Each version is additive.
+**Decision:** Adopt LEVELSET as the permanent checkpoint protocol for the vault ecosystem. LEVELSET files are stored in `!ADMIN/`, are never deleted, never overwritten. Each version is additive.
 **Context:** Multiple Claude conversations operating concurrently needed a synchronization mechanism.
 **Decided by:** Logan Finney
 
