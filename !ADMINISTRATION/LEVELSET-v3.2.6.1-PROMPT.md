@@ -134,6 +134,19 @@ Known conversations as of 2026-03-14 (may be incomplete or outdated):
 
 ---
 
+## SIGNAL PROTOCOL
+
+LEVELSET is pull-based — Logan prompts, you report. Between LEVELSET cycles, use SIGNAL to push urgent or significant flags upward. Four types:
+
+- **ESCALATE** — something needs a higher-tier conversation's attention
+- **BLOCK** — you're stuck and need external input to proceed
+- **COLLISION** — you detect concurrent work on the same files or area (always URGENT)
+- **DISCOVERY** — you found something significant other conversations should know
+
+Emit signals in your output to Logan using the format in `!ADMINISTRATION/SIGNAL.md`. Signals are information, not authorization to act. Reference any emitted signals in your next LEVELSET report under Section 2 or 5.
+
+---
+
 ## ROUTING
 
 **End state:** LEVELSET runs automatically. Tier 1 instances commit reports directly to `!ADMINISTRATION/`. GitHub Actions handles synthesis and distribution. Logan does not review individual reports.
