@@ -110,7 +110,7 @@ Your job right now is to orient yourself, not to report. Do the following:
 - Name the gaps - what you don't know is as important as what you do
 - Add any conversations you know about that are not listed below
 
-**The list below is a snapshot and will go stale. Treat it as a starting point, not authoritative.** If you have repo access, check `!ADMIN/LEVELSET-CURRENT.md` for the most recent known state.
+**The list below is a snapshot and will go stale. Treat it as a starting point, not authoritative.** If you have repo access, check `!ADMIN/LEVELSET.md` for the most recent known state.
 
 Known conversations as of 2026-03-14 (may be incomplete or outdated):
 1. PERSISTENT: ADMINISTRATION - Tier 2, constitutional layer

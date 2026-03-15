@@ -34,6 +34,12 @@ Significant architectural decisions, recorded when made. Each entry is permanent
 **Context:** Manual bill tracking is unsustainable during legislative session.
 **Decided by:** Logan Finney
 
+## 2026-03-15 — LEVELSET.md consolidated to living status report
+
+**Decision:** Replace `LEVELSET-CURRENT.md` (pointer file) with a hydrated, human-readable `LEVELSET.md` that contains the current ecosystem status. Original v1 prompt archived as `LEVELSET-v1-PROMPT.md`. `LEVELSET.md` is overwritable by design — versioned checkpoints remain immutable.
+**Context:** Two branches created competing `LEVELSET-CURRENT.md` files, causing collision risk. Logan wanted one file to check for current status.
+**Decided by:** Logan Finney
+
 ## 2026-03-14 — CODE AUTHORITY promoted to PERMANENT
 
 **Decision:** The CODE AUTHORITY conversation is promoted from PERSISTENT to PERMANENT — a new, higher-tier conversation prefix for central, non-deletable conversations. PERMANENT: CODE AUTHORITY is the central coding agent with direct repo access. PERSISTENT: ADMINISTRATION retains its current prefix.
