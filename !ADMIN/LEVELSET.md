@@ -46,6 +46,7 @@ Prior session (earlier 2026-03-15):
 | 8 | `claude/levelset-current-synthesis-zWxJc` branch | COLLISION RESOLVED | Was competing on LEVELSET-CURRENT.md. That file is now deleted; collision surface eliminated. 3 commits on that branch (decisions, JFAC cache, original LEVELSET-CURRENT) — review for merge or close. |
 | 9 | Routing improvement | RECOMMENDATION READY | See Section 5. |
 | 10 | Claude Code on managed laptop | BLOCKED | Node.js IT ticket not submitted. |
+| 11 | Protocol stub awaiting ambiguity resolution | WAITING | Logan's direction on 6 flagged overlaps in `!ADMIN/PROTOCOL.md` |
 
 ### 3. CONVERSATION AWARENESS
 
