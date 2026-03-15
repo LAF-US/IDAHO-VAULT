@@ -40,6 +40,12 @@ Significant architectural decisions, recorded when made. Each entry is permanent
 **Context:** Two branches created competing `LEVELSET-CURRENT.md` files, causing collision risk. Logan wanted one file to check for current status.
 **Decided by:** Logan Finney
 
+## 2026-03-15 — Operational semantics protocol adopted for swarm coordination
+
+**Decision:** Adopt a formal operational semantics protocol defining terms for data operations (HYDRATE, INGEST, DESTROY, DELETE, SUNSET), observational actions (NOTICE, NOTE, LOOK, WATCH, LISTEN), information-seeking (SEARCH, FIND, CONSULT, ADVISE), and coordination (FLAG, HANDOFF, HANDSHAKE, CONTEXTUALIZE). Stub committed as `!ADMIN/PROTOCOL.md`; ambiguities flagged for Logan's resolution.
+**Context:** Multi-instance swarm needs unambiguous operational vocabulary to avoid semantic drift across conversations and platforms.
+**Decided by:** Logan Finney
+
 ## 2026-03-14 — CODE AUTHORITY promoted to PERMANENT
 
 **Decision:** The CODE AUTHORITY conversation is promoted from PERSISTENT to PERMANENT — a new, higher-tier conversation prefix for central, non-deletable conversations. PERMANENT: CODE AUTHORITY is the central coding agent with direct repo access. PERSISTENT: ADMINISTRATION retains its current prefix.
