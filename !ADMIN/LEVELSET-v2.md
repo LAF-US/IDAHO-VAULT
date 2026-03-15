@@ -31,7 +31,7 @@ LEVELSETTING is the process of each conversation or entity taking a pause and in
 
 ```
 IDAHO-VAULT/
-  !ADMINISTRATION/        — Vault infrastructure, LEVELSET files
+  !ADMIN/        — Vault infrastructure, LEVELSET files
   ATTACHMENTS/            — Media and document attachments
   GOVERNMENTS/            — Government entities (Idaho legislative, executive, local)
   ORGANIZATIONS/          — Organizations referenced in reporting
