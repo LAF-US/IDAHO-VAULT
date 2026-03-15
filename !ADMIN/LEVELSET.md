@@ -47,6 +47,10 @@ Prior session (earlier 2026-03-15):
 | 9 | Routing improvement | RECOMMENDATION READY | See Section 5. |
 | 10 | Claude Code on managed laptop | BLOCKED | Node.js IT ticket not submitted. |
 | 11 | Protocol stub awaiting ambiguity resolution | WAITING | Logan's direction on 6 flagged overlaps in `!ADMIN/PROTOCOL.md` |
+| 12 | Review `copilot-instructions.md` before merge | PENDING | Copilot drafts, CODE AUTHORITY reviews for governance conflicts |
+| 13 | Create `!ADMIN/AGENTS.md` | PENDING | Logan's direction on content scope |
+| 14 | Define Copilot capability tier | DECISION NEEDED | Logan must declare: draft-only, `.github/`-scoped write, or other |
+| 15 | Slack webhook integration for workflows | OPTIONAL | Add `SLACK_WEBHOOK_URL` to Secrets if Logan approves |
 
 ### 3. CONVERSATION AWARENESS
 
@@ -59,7 +63,7 @@ Prior session (earlier 2026-03-15):
 | TASK: LEVELSET reports | Synthesis | On hold |
 | STORY: JFAC Open Meetings | Full repo read/write | Status unknown — session cache block referenced in synthesis branch |
 | Gemini ADMIN | Undefined | New actor, scope undefined |
-| GitHub Copilot | Undefined | Committed artifact `a84ef32`, role undefined |
+| GitHub Copilot (ADMIN GitHub) | Undefined — tier pending | Formal handoff received; capability tier awaiting Logan's decision |
 
 ### 4. NEXT STEP
 

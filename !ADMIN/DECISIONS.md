@@ -40,6 +40,18 @@ Significant architectural decisions, recorded when made. Each entry is permanent
 **Context:** Two branches created competing `LEVELSET-CURRENT.md` files, causing collision risk. Logan wanted one file to check for current status.
 **Decided by:** Logan Finney
 
+## 2026-03-15 — Native protocols over MCP for swarm coordination
+
+**Decision:** CODE AUTHORITY concurs with Copilot's recommendation: native handshake protocols over MCP wrappers for all inter-agent coordination. Each agent operates in its native ecosystem; Logan serves as coordinator/relay. PROTOCOL.md terms (HANDOFF, HANDSHAKE, etc.) are transport-agnostic and work across Slack, GitHub, or file-based routing without MCP infrastructure.
+**Context:** GitHub Copilot proposed architecture; CODE AUTHORITY evaluated from repo/automation perspective. MCP revisitable if swarm exceeds ~6 agents or relay latency becomes unsustainable.
+**Decided by:** Logan Finney
+
+## 2026-03-15 — AGENTS.md placement in !ADMIN/
+
+**Decision:** Inter-agent communication rules file (`AGENTS.md`) belongs in `!ADMIN/`, not `.github/`. Governance files live in `!ADMIN/`; `.github/` is for automation infrastructure only. AGENTS.md complements Constitution.md (identity/constraints) and PROTOCOL.md (operational vocabulary) as the registry and communication rules layer.
+**Context:** Copilot proposed an inter-agent rules file. CODE AUTHORITY advised on placement within the existing governance stack.
+**Decided by:** Logan Finney
+
 ## 2026-03-15 — Operational semantics protocol adopted for swarm coordination
 
 **Decision:** Adopt a formal operational semantics protocol defining terms for data operations (HYDRATE, INGEST, DESTROY, DELETE, SUNSET), observational actions (NOTICE, NOTE, LOOK, WATCH, LISTEN), information-seeking (SEARCH, FIND, CONSULT, ADVISE), and coordination (FLAG, HANDOFF, HANDSHAKE, CONTEXTUALIZE). Stub committed as `!ADMIN/PROTOCOL.md`; ambiguities flagged for Logan's resolution.
