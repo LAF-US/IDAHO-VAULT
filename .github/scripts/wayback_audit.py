@@ -5,8 +5,8 @@ Scans all vault notes for URL fields, checks live status, and for dead links
 queries the Wayback Machine for the best available snapshot.
 
 Outputs:
-  !ADMINISTRATION/wayback-audit-YYYY-MM-DD.md  — human-readable report
-  !ADMINISTRATION/wayback-patches-YYYY-MM-DD.md — proposed frontmatter patches
+  !ADMIN/wayback-audit-YYYY-MM-DD.md  — human-readable report
+  !ADMIN/wayback-patches-YYYY-MM-DD.md — proposed frontmatter patches
 
 Usage:
   python3 wayback_audit.py           # dry run, report only
@@ -27,7 +27,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 VAULT_ROOT = Path(".")
-ADMIN_DIR = VAULT_ROOT / "!ADMINISTRATION"
+ADMIN_DIR = VAULT_ROOT / "!ADMIN"
 
 SKIP_FOLDERS = {"X LABELER", "ATTACHMENTS"}
 
