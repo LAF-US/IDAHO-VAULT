@@ -163,9 +163,31 @@ Claude conversations follow a naming convention:
 | ISSUE: | Problem resolution |
 | INQUIRY: | Research questions |
 
+## Multi-Agent Ecosystem
+
+IDAHO-VAULT is served by a swarm of AI agents (Claude Code, GitHub Copilot, and others). All agents are infrastructure. No agent has standing or decision-making authority.
+
+**Before starting any significant work, every agent must:**
+1. Read `!ADMINISTRATION/LEVELSET-CURRENT.md` — the unified current-state document for cross-agent context.
+2. Check for open PRs that may conflict with your planned changes.
+
+**Agent tiers:**
+- **Tier 1** — Direct repo write access (Claude Code, GitHub Copilot). Bulk structural work, mass commits, architectural changes.
+- **Tier 2** — Targeted push via `vault_push.py`, requires Logan approval. Administrative files, pipeline scripts.
+- **Tier 3** — Read/analysis only. No direct commits.
+
+**Known agents:**
+- `PERMANENT: CODE AUTHORITY` — Tier 1. Central coding agent, direct repo access.
+- `PERSISTENT: ADMINISTRATION` — Tier 2. Constitutional layer, conventions.
+- `GitHub Copilot` — Tier 1. Code review, workflow fixes, automation. See `.github/copilot-instructions.md`.
+
 ## LEVELSET Protocol
 
-LEVELSET is a permanent, auditable checkpoint protocol. LEVELSET files live in `!ADMINISTRATION/` and are never deleted, never overwritten. Each version is additive. See `LEVELSET-v2.md` for the most recent checkpoint.
+LEVELSET is a permanent, auditable checkpoint protocol. LEVELSET files live in `!ADMINISTRATION/` and are never deleted, never overwritten. Each version is additive.
+
+**For current state:** See `!ADMINISTRATION/LEVELSET-CURRENT.md` — this is the authoritative cross-agent context hub, automatically updated by `levelset-sync.yml` when new reports are committed.
+
+**For protocol instructions:** See `!ADMINISTRATION/LEVELSET-v3.2.6.1-PROMPT.md` (latest version).
 
 ---
 
