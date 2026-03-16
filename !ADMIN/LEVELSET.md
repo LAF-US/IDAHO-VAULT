@@ -12,9 +12,9 @@ Current status of the IDAHO-VAULT ecosystem. This file is overwritten — not ap
 **Conversation:** PERMANENT: AUTHORITY: CODE
 **Capabilities:** Full repo read/write (Claude Code CLI)
 **Primary role:** Direct repository access, structural execution, automation
-**Repo state:** Branch `claude/levelset-multi-conversation-zWxJc`, HEAD `250287e`, 9 commits ahead of main (`219a271`)
+**Repo state:** Branch `claude/levelset-multi-conversation-zWxJc`, HEAD `842e1a0`, 12 commits ahead of main (`219a271`)
 **Vault file count:** 2,979 markdown files
-**Status:** Returning
+**Status:** Active
 
 ---
 
@@ -26,6 +26,9 @@ This session (2026-03-15):
 - Renamed `!ADMIN/Claude.md` → `Constitution.md` + updated active references (250287e)
 - Produced LEVELSET CODE AUTHORITY 2026-03-15-v2 census (81cafd5)
 - Consolidated LEVELSET system: archived v1 prompt as `LEVELSET-v1-PROMPT.md`, deleted `LEVELSET-CURRENT.md` pointer, created this hydrated living report
+- Committed `!ADMIN/PROTOCOL.md` — swarm operational semantics stub, 18 terms (842e1a0)
+- Responded to Copilot consultation handshake — `HANDOFF-CODE-TO-COPILOT-2026-03-15.md` (76f829d)
+- Processed consolidated swarm handoff — state corrections, Monday plan — `HANDOFF-CODE-TO-SWARM-2026-03-15.md`
 
 Prior session (earlier 2026-03-15):
 - Renamed `!ADMINISTRATION/` → `!ADMIN/` system-wide, 23 files (fa83df1)
@@ -49,8 +52,11 @@ Prior session (earlier 2026-03-15):
 | 11 | Protocol stub awaiting ambiguity resolution | WAITING | Logan's direction on 6 flagged overlaps in `!ADMIN/PROTOCOL.md` |
 | 12 | Review `copilot-instructions.md` before merge | PENDING | Copilot drafts, CODE AUTHORITY reviews for governance conflicts |
 | 13 | Create `!ADMIN/AGENTS.md` | PENDING | Logan's direction on content scope |
-| 14 | Define Copilot capability tier | DECISION NEEDED | Logan must declare: draft-only, `.github/`-scoped write, or other |
+| 14 | Define Copilot capability tier | DECIDED | Multi-repo admin; vault work under same governance as CODE AUTHORITY; non-vault latitude TBD in AGENTS.md |
 | 15 | Slack webhook integration for workflows | OPTIONAL | Add `SLACK_WEBHOOK_URL` to Secrets if Logan approves |
+| 16 | Slack bot apps for Copilot + Gemini | BLOCKED | Logan must set up before agents can post to Slack independently |
+| 17 | Slack free trial expires April 13 | FLAG | Upgrade decision needed before expiry |
+| 18 | Consolidate multiple Claude Code projects | PENDING | Includes CODE AUTHORITY itself |
 
 ### 3. CONVERSATION AWARENESS
 
@@ -63,7 +69,7 @@ Prior session (earlier 2026-03-15):
 | TASK: LEVELSET reports | Synthesis | On hold |
 | STORY: JFAC Open Meetings | Full repo read/write | Status unknown — session cache block referenced in synthesis branch |
 | Gemini ADMIN | Undefined | New actor, scope undefined |
-| GitHub Copilot (ADMIN GitHub) | Undefined — tier pending | Formal handoff received; capability tier awaiting Logan's decision |
+| GitHub Copilot (ADMIN GitHub) | Multi-repo admin (vault: same governance as CODE AUTHORITY) | Formal handoff received; tier decided; awaiting copilot-instructions.md draft |
 
 ### 4. NEXT STEP
 
@@ -106,3 +112,6 @@ Prior session (earlier 2026-03-15):
 | `LEVELSET-v3.2.6.1-PROMPT.md` | Current prompt template |
 | `LEVELSET-CODE-AUTHORITY-2026-03-15.md` | Session close report |
 | `LEVELSET-CODE-AUTHORITY-2026-03-15-v2.md` | System-wide census |
+| `HANDOFF-CODE-TO-COPILOT-2026-03-15.md` | Consultation response to Copilot (5 questions) |
+| `HANDOFF-CODE-TO-SWARM-2026-03-15.md` | Consolidated swarm handoff response + state corrections |
+| `PROTOCOL.md` | Operational semantics stub (18 terms, 6 ambiguities pending) |
