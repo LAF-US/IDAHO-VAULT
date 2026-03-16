@@ -58,6 +58,12 @@ Significant architectural decisions, recorded when made. Each entry is permanent
 **Context:** Multi-instance swarm needs unambiguous operational vocabulary to avoid semantic drift across conversations and platforms.
 **Decided by:** Logan Finney
 
+## 2026-03-16 — AGENTS.md drafted with 4-tier capability model
+
+**Decision:** Draft `!ADMIN/AGENTS.md` as the third governance file in the stack (Constitution → PROTOCOL → AGENTS). Establishes a 4-tier capability model: Tier 1 (direct write), Tier 2 (multi-repo admin), Tier 3 (draft only), Tier 4 (read/analysis). Includes agent registry, communication rules using PROTOCOL.md vocabulary, boundary rules for file access, and conflict resolution process.
+**Context:** Swarm grew to 7+ agents across multiple platforms. Needed clear registry and boundary rules before Slack coordination layer goes live. Draft status — Logan reviews and approves.
+**Decided by:** Logan Finney (directed CODE AUTHORITY to draft)
+
 ## 2026-03-14 — CODE AUTHORITY promoted to PERMANENT
 
 **Decision:** The CODE AUTHORITY conversation is promoted from PERSISTENT to PERMANENT — a new, higher-tier conversation prefix for central, non-deletable conversations. PERMANENT: CODE AUTHORITY is the central coding agent with direct repo access. PERSISTENT: ADMINISTRATION retains its current prefix.
