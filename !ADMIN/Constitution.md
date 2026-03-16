@@ -215,9 +215,9 @@ Claude operates as a swarm — specialized infrastructure under Logan's sole aut
 - [x] Deploy constitutional files to `!ADMIN/` — on main at `219a271`
 - [x] Deploy `sort_audit.py` v2, `propose_moves.py`, `wayback_audit.py` — on main
 - [x] Deploy all four GitHub Actions workflows — on main
-- [ ] Rename `!ADMINISTRATION/` → `!ADMIN/` in repo — THIS SESSION
-- [ ] Create `!ADMIN/LEVELSET-CURRENT.md` — THIS SESSION
-- [ ] Update `!ADMIN/Claude.md` — THIS SESSION
+- [x] Rename `!ADMINISTRATION/` → `!ADMIN/` in repo — done at `fa83df1`
+- [x] Create `!ADMIN/LEVELSET-CURRENT.md` — created at `a2181f4`, then superseded by `LEVELSET.md` living document at `d5c54f0`
+- [x] Rename `!ADMIN/Claude.md` → `Constitution.md` — done at `250287e`; content update still pending from ADMINISTRATION
 - [ ] Re-run sort audit v2 to get clean report
 - [ ] Action genuine sort issues from v1 report
 - [ ] Run Wayback audit with `--limit 20`
