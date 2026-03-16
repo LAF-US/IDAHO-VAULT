@@ -46,7 +46,7 @@ Logan directs. Claude executes. Logan is human. Claude is software.
 **Repo:** https://github.com/loganfinney27/IDAHO-VAULT (public)
 **Local path:** `C:\Users\loganf\Documents\IDAHO-VAULT`
 **Tool:** Obsidian.md
-**Main HEAD:** `219a271` (as of 2026-03-15)
+**Main HEAD:** `e8b4408` (as of 2026-03-16)
 
 ### Core Conventions
 
@@ -109,12 +109,20 @@ The v2 sort audit script suppresses these known false positives:
 - **PLACES/OTHER/COUNTIES** — out-of-state counties; not Idaho counties
 - **TOPICS (root and subfolders), ORGANIZATIONS, GOVERNMENTS/IDAHO - EXECUTIVE, etc.** — intentionally flat; orphan warnings suppressed via `FLAT_OK` set
 
-**Genuine issues flagged from v1 audit (2026-03-12), not yet actioned:**
+**v1 audit issues — actioned 2026-03-16:**
 
-- `TOPICS/Kaiser Family Foundation.md` → `ORGANIZATIONS`
-- `PLACES/Europe.md`, `PLACES/State of Idaho.md`, `PLACES/United States of America.md`, `PLACES/Malheur National Wildlife Refuge.md` → need homes under PLACES subfolders
-- `GOVERNMENTS/Board of Professional Counselors and Marriage and Family Therapists.md` → `GOVERNMENTS/IDAHO - EXECUTIVE`
-- `SOURCES/NEWS MEDIA/2020-01-22,24,30 - McClure -` entries → possibly `SOURCES/HEARINGS`
+- [x] `TOPICS/Kaiser Family Foundation.md` → moved to `ORGANIZATIONS/`
+- [x] `PLACES/Europe.md` → moved to `PLACES/OTHER/`
+- [x] `PLACES/Malheur National Wildlife Refuge.md` → moved to `PLACES/OTHER/`
+- [x] `GOVERNMENTS/Board of Professional Counselors and Marriage and Family Therapists.md` → moved to `GOVERNMENTS/IDAHO - EXECUTIVE/`
+- [x] `GOVERNMENTS/Idaho Code.md` → moved to `GOVERNMENTS/IDAHO - LEGISLATIVE/`
+- [x] `GOVERNMENTS/Idaho Constitution.md` → moved to `GOVERNMENTS/IDAHO - LEGISLATIVE/`
+- [x] `GOVERNMENTS/Joint Finance-Appropriations Committee.md` → merged into `JOINT COMMITTEES/` (replaced stub with detailed version)
+
+**Remaining editorial decisions (Logan's call):**
+
+- `PLACES/State of Idaho.md` — meta-level entity, kept in PLACES/ root
+- `PLACES/United States of America.md` — meta-level entity, kept in PLACES/ root
 - `SOURCES/NEWS MEDIA/2023 Idaho Statesman & ProPublica - Idaho's crumbling schools.md` → rename to match `YYYY-MM-DD - Outlet - Title.md` pattern
 
 ---
