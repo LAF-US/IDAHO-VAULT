@@ -37,7 +37,11 @@ All inter-agent communication flows through or is visible to [[Logan]]. There is
 | Gemini | Google AI | **TBD — scope undefined** | **TBD** — Pixel smartphone, loganfinney27@gmail.com | Bot app needed | **TBD** |
 | PERSISTENT: IMPLEMENTATION | Claude (Project) | Read/analysis | Governance/architecture consultation | No | None — advisory only |
 | TASK: LEVELSET reports | Claude (conversation) | Read/analysis | Synthesis and status reporting | No | None — advisory only |
-| STORY: JFAC Open Meetings | Claude Code CLI | Direct write | Bulk vault work for JFAC story | No | Full repo read/write |
+| STORY: JFAC Open Meetings | Claude (conversation) | Read/analysis | JFAC investigation — read-only | No | None — advisory only |
+| Grok | Grok (X/xAI) | Read/analysis | Research, web search | No | None |
+| M365 Copilot | Microsoft 365 | Informational | Informational only — no repo involvement | No | None |
+| NotebookLM | Google NotebookLM | TBD | TBD — identified, not yet scoped | No | None |
+| PUBLIC: CONVERSATION | Claude (conversation) | Read/analysis | Self-talk, internal processing — consultation pending | No | None |
 
 **Registry maintenance:** CODE AUTHORITY updates this table when agents are added, removed, or change tier. [[Logan]] approves all tier changes.
 
@@ -49,7 +53,7 @@ All inter-agent communication flows through or is visible to [[Logan]]. There is
 
 Can commit and push to the repository. Must LEVELSET before significant commits. [[Logan]] reviews diffs before merging.
 
-**Agents:** PERMANENT: AUTHORITY: CODE, STORY: JFAC Open Meetings
+**Agents:** PERMANENT: AUTHORITY: CODE
 
 **Can do:**
 - `git add`, `git commit`, `git push` to feature branches
@@ -103,7 +107,7 @@ Produces drafts and handoffs. Cannot push to any repository. All output goes thr
 
 Advisory only. No repository access.
 
-**Agents:** PERSISTENT: IMPLEMENTATION, TASK: LEVELSET reports
+**Agents:** PERSISTENT: IMPLEMENTATION, TASK: LEVELSET reports, STORY: JFAC Open Meetings, Grok, PUBLIC: CONVERSATION
 
 **Can do:**
 - Analyze provided data
@@ -226,6 +230,10 @@ These items require [[Logan]]'s direction before they can be formalized:
 | Slack bot apps | **Blocked** | [[Logan]] must configure before agents can post independently. |
 | `!ADMIN/ROUTING/` folder | **Recommended** | File-based async handoff drops. Not yet created. |
 | Research instance (Tier 4) | **Not yet assigned** | Tim Oren analysis, NICAR23 training queued when available. |
+| Grok scope and boundaries | **Minimal** | Research/web search role identified. No vault access. |
+| M365 Copilot role | **Informational only** | No repo involvement. |
+| NotebookLM role | **TBD** | Identified, not yet scoped. |
+| PUBLIC: CONVERSATION classification | **Consultation pending** | Constitutional analysis from ADMINISTRATION requested. |
 
 ---
 

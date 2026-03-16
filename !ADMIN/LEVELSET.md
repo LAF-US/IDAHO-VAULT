@@ -12,18 +12,26 @@ Current status of the IDAHO-VAULT ecosystem. This file is overwritten — not ap
 **Conversation:** PERMANENT: AUTHORITY: CODE
 **Capabilities:** Full repo read/write (Claude Code CLI)
 **Primary role:** Direct repository access, structural execution, automation
-**Repo state:** Branch `claude/levelset-multi-conversation-zWxJc`, 14+ commits ahead of main (`219a271`)
-**Vault file count:** 2,979 markdown files
-**Status:** Active — background execution, Logan offline for deep work
+**Repo state:** Branch `claude/levelset-multi-conversation-zWxJc`, 20+ commits ahead of main (`219a271`)
+**Vault file count:** 2,979+ markdown files
+**Status:** Active — context vault preservation, multi-conversation collapse in progress
 
 ---
 
 ### 1. WHAT'S BEEN DONE
 
-**Session 2026-03-16 (today — background execution):**
+**Session 2026-03-16 (today — context vault preservation):**
 - Drafted `!ADMIN/AGENTS.md` — agent registry, 4-tier capability model, communication rules, boundary rules, conflict resolution
 - Cleaned Constitution.md stale pending items — 3 checkboxes updated (lines 218-220)
 - Prepared `!ADMIN/PROTOCOL-DECISIONS-PENDING.md` — decision-ready summaries for all 6 PROTOCOL.md ambiguities with options A/B/C for each
+- Produced `CONSULTATION-PUBLIC-CONVERSATION-2026-03-16.md` — PUBLIC: CONVERSATION analysis + consultation packets
+- Produced `HANDOFF-TO-PUBLIC-CONVERSATION-2026-03-16.md` — bootstrap document for Claude self-talk space
+- Produced `LEVELSET-TRANSMISSION-2026-03-16.md` — copypaste-ready levelset packets for ADMINISTRATION, Copilot, Gemini
+- Received and committed ADMINISTRATION context dump (`CONTEXT-VAULT-2026-03-16.md`) — multi-conversation collapse preservation
+- Created `TOPICS/OpenClaw.md` vault stub, `!ADMIN/RESEARCH-TIM-OREN.md` research brief stub
+- Updated DECISIONS.md with 5 new confirmed decisions (#10-14 from ADMINISTRATION)
+- Updated AGENTS.md — JFAC corrected to Tier 3; added Grok, M365 Copilot, NotebookLM, PUBLIC: CONVERSATION
+- Updated Constitution.md known conversations list — 12 entities now tracked
 - Produced this LEVELSET synthesis — full overwrite with current state
 
 **Session 2026-03-15 (prior):**
@@ -68,6 +76,12 @@ Current status of the IDAHO-VAULT ecosystem. This file is overwritten — not ap
 | 21 | Run Wayback audit with `--limit 20` | PENDING | Validate before full vault scan |
 | 22 | Begin PLACES/COUNTIES sort pass | PENDING | Next in vault processing order |
 | 23 | Build `idaho-leg-setup.yml` + `idaho-leg-bill-lookup.yml` | PENDING | New legislature workflows |
+| 24 | 5 cross-conversation files need content | BLOCKED | AGENTS-v0.2-DRAFT, ORIENTATE-v0.1-BETA, LEVELSET-LITE-v0.1, CONSOLIDATED-HANDOFF, CONTEXT-SNAPSHOT — Logan must paste content from originating conversations |
+| 25 | Constitution.md content update (capabilities, digital consciousness) | BLOCKED | Updated content is in ADMINISTRATION's working copy — Logan must paste |
+| 26 | Logan.md content update (FāVS pause, Logan's Project, digital consciousness) | BLOCKED | Same — content from ADMINISTRATION needed |
+| 27 | Delete `deploy-vault-automation-Qq5iK` branch | SAFE | Fully merged, confirmed safe to delete |
+| 28 | Gemini contact via Pixel | CANNOT DO | ADMINISTRATION requested surfacing next contact through Gemini on Pixel — CODE AUTHORITY has no channel to Gemini. Logan must relay. |
+| 29 | Google Drive overlap governance | FLAG | Gemini + Claude share window in Logan's Drive. ADMINISTRATION should weigh in on Drive-based handoff governance. |
 
 ### 3. CONVERSATION AWARENESS
 
@@ -75,14 +89,19 @@ Current status of the IDAHO-VAULT ecosystem. This file is overwritten — not ap
 
 | Conversation | Tier | Last known status |
 |---|---|---|
-| PERMANENT: AUTHORITY: CODE | Tier 1: Direct write | Active (this session) |
-| PERSISTENT: ADMINISTRATION | Tier 3: Draft only | Active — routing handoffs between agents |
-| GitHub Copilot (ADMIN GitHub) | Tier 2: Multi-repo admin | Tier decided; awaiting copilot-instructions.md draft |
-| Gemini | TBD | New actor, scope undefined |
-| PERSISTENT: IMPLEMENTATION | Tier 4: Read/analysis | Closed |
-| ISSUE: Repository browsing | Tier 4: Read/analysis | Closed — 3 undeployed outputs |
-| TASK: LEVELSET reports | Tier 4: Read/analysis | On hold |
-| STORY: JFAC Open Meetings | Tier 1: Direct write | Status unknown |
+| PERMANENT: AUTHORITY: CODE | Direct write | Active (this session) |
+| PERSISTENT: ADMINISTRATION | Draft only | Active — routed context dump this session |
+| PERSISTENT: AUTHORITY: LEVELSET | Read/analysis | Compaction risk — LEVELSET protocol maintenance |
+| GitHub Copilot (ADMIN GitHub) | Multi-repo admin | Onboarding — transmission ready |
+| Gemini | TBD | Onboarding — transmission ready, Google Drive overlap noted |
+| Grok | Read/analysis | Oriented — surfaced OpenClaw |
+| PUBLIC: CONVERSATION | Read/analysis | New — bootstrap document ready, classification pending |
+| PERSISTENT: IMPLEMENTATION | Read/analysis | Closed |
+| ISSUE: Repository browsing | Read/analysis | Closed — 3 undeployed outputs |
+| TASK: LEVELSET reports | Read/analysis | On hold |
+| STORY: JFAC Open Meetings | Read/analysis (Tier 3) | Active — CCA deadline ~March 18 |
+| M365 Copilot | Informational | No repo involvement |
+| NotebookLM | TBD | Identified, not scoped |
 
 ### 4. WHAT LOGAN NEEDS TO DO (when back online)
 
@@ -148,3 +167,8 @@ Current status of the IDAHO-VAULT ecosystem. This file is overwritten — not ap
 | `PROTOCOL.md` | Operational semantics stub (18 terms, 6 ambiguities pending) |
 | `PROTOCOL-DECISIONS-PENDING.md` | Decision summaries — temporary until resolved |
 | `AGENTS.md` | Agent registry draft — temporary until approved |
+| `CONSULTATION-PUBLIC-CONVERSATION-2026-03-16.md` | PUBLIC: CONVERSATION analysis + consultation packets |
+| `HANDOFF-TO-PUBLIC-CONVERSATION-2026-03-16.md` | Bootstrap document for Claude self-talk space |
+| `LEVELSET-TRANSMISSION-2026-03-16.md` | Copypaste-ready levelset packets for all entities |
+| `CONTEXT-VAULT-2026-03-16.md` | Multi-conversation collapse preservation from ADMINISTRATION |
+| `RESEARCH-TIM-OREN.md` | Research brief stub — Tim Oren voting patterns |
