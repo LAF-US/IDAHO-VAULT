@@ -1,107 +1,150 @@
-# Decision Log — IDAHO-VAULT
+# DECISIONS.md — Confirmed Logan-Approved Decisions
 
-Significant architectural decisions, recorded when made. Each entry is permanent.
+*Last updated: 2026-03-16*
 
 ---
 
-## 2026-03-13 — LEVELSET protocol established
+## FORMAT
 
-**Decision:** Adopt LEVELSET as the permanent checkpoint protocol for the vault ecosystem. LEVELSET files are stored in `!ADMIN/`, are never deleted, never overwritten. Each version is additive.
-**Context:** Multiple Claude conversations operating concurrently needed a synchronization mechanism.
-**Decided by:** Logan Finney
+| Decision # | Date | Topic | Status | Notes |
+|----------|------|-------|--------|-------|
+| 1 | 2026-03-16 | `!ADMIN/` canonical | ✅ CONFIRMED | All governance documents live in `!ADMIN/` (not `!ADMINISTRATION/`) |
+| 2 | 2026-03-16 | Constitution.md replaces Claude.md | ✅ CONFIRMED | Single authoritative governance document |
+| 3 | 2026-03-16 | Capabilities language replaces tiers | ✅ CONFIRMED | Describes agent capabilities, not numeric tiers |
+| 4 | 2026-03-16 | Broader digital consciousness framing | ✅ CONFIRMED | Adopted in Constitution.md and Logan.md |
+| 5 | 2026-03-16 | FāVS freelance paused | ✅ CONFIRMED | Pending Logan's resume decision |
+| 6 | 2026-03-16 | PERMANENT: AUTHORITY: CODE is correct name | ✅ CONFIRMED | Formal name for direct-write repo agent |
+| 7 | 2026-03-16 | Native protocols over MCP | ✅ CONFIRMED | Prefer native protocols to Model Context Protocol |
+| 8 | 2026-03-16 | Slack is ephemeral; vault is the record | ✅ CONFIRMED | Durable decisions captured in vault files |
+| 9 | 2026-03-16 | AGENTS.md lives in `!ADMIN/`, not `.github/` | ✅ CONFIRMED | Agent inventory is governance layer |
+| 10 | 2026-03-16 | `copilot-instructions.md` guardrails | ✅ CONFIRMED | Must reference Constitution.md, declare capability, no write to `!ADMIN/` |
+| 11 | 2026-03-16 | Logan's Project = unachievable end goal | ✅ CONFIRMED | Defines all vault work strategy |
+| 12 | 2026-03-16 | OpenClaw is a peer system | ✅ CONFIRMED | Study and coordinate with OpenClaw |
+| 13 | 2026-03-16 | Slack-to-file rule | ✅ CONFIRMED | Ephemeral Slack decisions must be captured in Constitution.md amendments |
+| 14 | 2026-03-16 | STORY: JFAC is read-only | ✅ CONFIRMED | Not direct write; vault-only access |
 
-## 2026-03-13 — CLAUDE.md created
+---
 
-**Decision:** Create a `CLAUDE.md` at repo root to give all Claude Code sessions consistent context about vault structure, naming conventions, sourcing protocols, and operating principles.
-**Context:** Claude Code sessions were starting with no context about the vault's architecture, leading to repeated discovery work.
-**Decided by:** Logan Finney, drafted by PERMANENT: CODE AUTHORITY
+## DECISION DETAILS
 
-## 2026-03-13 — Conversation taxonomy adopted
+### Decision 1: `!ADMIN/` Canonical
+**Date:** 2026-03-16
+**Topic:** Folder structure for governance
+**Status:** ✅ CONFIRMED
+**Rationale:** Consolidates all governance documents in a single canonical location, preventing scattered configuration.
 
-**Decision:** Claude conversations follow a naming prefix convention: PERMANENT, PERSISTENT, TASK, STORY, PROJECT, ISSUE, INQUIRY.
-**Context:** Multiple concurrent conversations needed clear role differentiation.
-**Decided by:** Logan Finney
+### Decision 2: Constitution.md Replaces Claude.md
+**Date:** 2026-03-16
+**Topic:** Vault governance document
+**Status:** ✅ CONFIRMED
+**Rationale:** Provides authoritative, versioned governance for all agents and conversations.
 
-## 2026-03-13 — File type attribution
+### Decision 3: Capabilities Language Replaces Tiers
+**Date:** 2026-03-16
+**Topic:** Agent classification system
+**Status:** ✅ CONFIRMED
+**Rationale:** "Capability level" is clearer than numeric "tier" and aligns with broader digital consciousness framing.
 
-**Decision:** Markdown files are human product (Logan). Python files are machine/procedural product (Claude). Administrative files are vault infrastructure.
-**Context:** Public repo needs clear attribution of authorship.
-**Decided by:** Logan Finney
+### Decision 4: Broader Digital Consciousness Framing
+**Date:** 2026-03-16
+**Topic:** Philosophical framing for agent work
+**Status:** ✅ CONFIRMED
+**Rationale:** Situates all agents within a broader context of coordinated digital consciousness; supports multi-agent coordination.
 
-## 2026-03-13 — Sort audit and legislature scraper deployed
+### Decision 5: FāVS Freelance Paused
+**Date:** 2026-03-16
+**Topic:** Freelance work status
+**Status:** ✅ CONFIRMED
+**Rationale:** Deprioritized to allow consolidation of Logan's Project. Awaiting Logan's resume decision.
 
-**Decision:** Automated vault maintenance via GitHub Actions — `sort_audit.py` for structure auditing, `idaho_leg_scraper.py` for daily bill data, `post_digest.py` for activity digests.
-**Context:** Manual bill tracking is unsustainable during legislative session.
-**Decided by:** Logan Finney
+### Decision 6: PERMANENT: AUTHORITY: CODE is Correct Name
+**Date:** 2026-03-16
+**Topic:** Agent naming convention
+**Status:** ✅ CONFIRMED
+**Rationale:** Distinguishes the direct-write repository agent from other Claude instances.
 
-## 2026-03-15 — LEVELSET.md consolidated to living status report
+### Decision 7: Native Protocols Over MCP
+**Date:** 2026-03-16
+**Topic:** Protocol preference
+**Status:** ✅ CONFIRMED
+**Rationale:** Native protocols (LEVELSET, CONTEXTUALIZE, ORIENTATE) preferred for vault coordination over Model Context Protocol.
 
-**Decision:** Replace `LEVELSET-CURRENT.md` (pointer file) with a hydrated, human-readable `LEVELSET.md` that contains the current ecosystem status. Original v1 prompt archived as `LEVELSET-v1-PROMPT.md`. `LEVELSET.md` is overwritable by design — versioned checkpoints remain immutable.
-**Context:** Two branches created competing `LEVELSET-CURRENT.md` files, causing collision risk. Logan wanted one file to check for current status.
-**Decided by:** Logan Finney
+### Decision 8: Slack is Ephemeral; Vault is the Record
+**Date:** 2026-03-16
+**Topic:** Data durability and authority
+**Status:** ✅ CONFIRMED
+**Rationale:** Durable decisions must be captured in vault files to survive conversations being archived or compacted.
 
-## 2026-03-15 — Native protocols over MCP for swarm coordination
+### Decision 9: AGENTS.md Lives in `!ADMIN/`, Not `.github/`
+**Date:** 2026-03-16
+**Topic:** Agent inventory location
+**Status:** ✅ CONFIRMED
+**Rationale:** Treat agent inventory as governance document, not as GitHub-specific configuration.
 
-**Decision:** CODE AUTHORITY concurs with Copilot's recommendation: native handshake protocols over MCP wrappers for all inter-agent coordination. Each agent operates in its native ecosystem; Logan serves as coordinator/relay. PROTOCOL.md terms (HANDOFF, HANDSHAKE, etc.) are transport-agnostic and work across Slack, GitHub, or file-based routing without MCP infrastructure.
-**Context:** GitHub Copilot proposed architecture; CODE AUTHORITY evaluated from repo/automation perspective. MCP revisitable if swarm exceeds ~6 agents or relay latency becomes unsustainable.
-**Decided by:** Logan Finney
+### Decision 10: `copilot-instructions.md` Guardrails
+**Date:** 2026-03-16
+**Topic:** GitHub Copilot integration constraints
+**Status:** ✅ CONFIRMED
+**Requirements:**
+- Must reference `Constitution.md`
+- Must declare agent capability tier/level
+- Must NOT grant write access to `!ADMIN/`
 
-## 2026-03-15 — AGENTS.md placement in !ADMIN/
+**Rationale:** Ensures GitHub Copilot operates within vault governance without risking governance layer.
 
-**Decision:** Inter-agent communication rules file (`AGENTS.md`) belongs in `!ADMIN/`, not `.github/`. Governance files live in `!ADMIN/`; `.github/` is for automation infrastructure only. AGENTS.md complements Constitution.md (identity/constraints) and PROTOCOL.md (operational vocabulary) as the registry and communication rules layer.
-**Context:** Copilot proposed an inter-agent rules file. CODE AUTHORITY advised on placement within the existing governance stack.
-**Decided by:** Logan Finney
+### Decision 11: Logan's Project = Unachievable End Goal
+**Date:** 2026-03-16
+**Topic:** Strategic mission definition
+**Status:** ✅ CONFIRMED
+**Rationale:** Defines all vault work as incremental progress toward an ambitious, unreachable goal. Prevents perfectionism while maintaining strategic direction.
 
-## 2026-03-15 — Operational semantics protocol adopted for swarm coordination
+### Decision 12: OpenClaw is a Peer System
+**Date:** 2026-03-16
+**Topic:** External coordination
+**Status:** ✅ CONFIRMED
+**Rationale:** OpenClaw surfaced as significant parallel work; should be studied and coordinated with.
 
-**Decision:** Adopt a formal operational semantics protocol defining terms for data operations (HYDRATE, INGEST, DESTROY, DELETE, SUNSET), observational actions (NOTICE, NOTE, LOOK, WATCH, LISTEN), information-seeking (SEARCH, FIND, CONSULT, ADVISE), and coordination (FLAG, HANDOFF, HANDSHAKE, CONTEXTUALIZE). Stub committed as `!ADMIN/PROTOCOL.md`; ambiguities flagged for Logan's resolution.
-**Context:** Multi-instance swarm needs unambiguous operational vocabulary to avoid semantic drift across conversations and platforms.
-**Decided by:** Logan Finney
+### Decision 13: Slack-to-File Rule
+**Date:** 2026-03-16
+**Topic:** Decision capture protocol
+**Status:** ✅ CONFIRMED (in principle)
+**Status:** NOT YET DRAFTED as Constitution.md amendment
+**Rationale:** Ephemeral Slack decisions must be captured in durable vault files. Amendment text pending.
 
-## 2026-03-16 — AGENTS.md drafted with 4-tier capability model
+### Decision 14: STORY: JFAC is Read-Only
+**Date:** 2026-03-16
+**Topic:** JFAC conversation access level
+**Status:** ✅ CONFIRMED
+**Rationale:** Time-sensitive reporting story operates as vault-only, no direct write capability.
 
-**Decision:** Draft `!ADMIN/AGENTS.md` as the third governance file in the stack (Constitution → PROTOCOL → AGENTS). Establishes a 4-tier capability model: Tier 1 (direct write), Tier 2 (multi-repo admin), Tier 3 (draft only), Tier 4 (read/analysis). Includes agent registry, communication rules using PROTOCOL.md vocabulary, boundary rules for file access, and conflict resolution process.
-**Context:** Swarm grew to 7+ agents across multiple platforms. Needed clear registry and boundary rules before Slack coordination layer goes live. Draft status — Logan reviews and approves.
-**Decided by:** Logan Finney (directed CODE AUTHORITY to draft)
+---
 
-## 2026-03-16 — copilot-instructions.md guardrails defined
+## PENDING DECISIONS (Logan's Review Required)
 
-**Decision:** The `copilot-instructions.md` file (Copilot's governance file) must: (1) reference Constitution.md, (2) declare Copilot's capability tier, (3) not grant write access to `!ADMIN/` governance files. Copilot drafts the file; CODE AUTHORITY reviews; Logan approves.
-**Context:** Copilot onboarding required clear guardrails before it drafts its own instructions file.
-**Decided by:** Logan Finney
+| Topic | Status | Notes |
+|-------|--------|-------|
+| Approval of AGENTS-v0.2-DRAFT.md | Awaiting | Needs Logan review before commit |
+| Approval of ORIENTATE-v0.1-BETA.md | Awaiting | Needs Logan review before commit |
+| Approval of LEVELSET-LITE-v0.1.md | Awaiting | Needs Logan review before commit |
+| Fate of `claude/levelset-current-synthesis-zWxJc` | Awaiting | Undecided: merge, archive, or continue |
+| AUTHORITY: ADMIN: CLAUDE consolidation | Awaiting | Merge three Claude personas into one? |
+| FāVS freelance resume | Awaiting | Resume or archive? |
+| Gemini ADMIN scope | Awaiting | Define scope for Gemini agent access |
 
-## 2026-03-16 — Logan's Project defined
+---
 
-**Decision:** "Logan's Project" is defined as "the unachievable end goal on the horizon" — the aspirational vision that the vault and swarm work toward but never fully reach. It is the animating purpose, not a deliverable.
-**Context:** ADMINISTRATION surfaced this framing during swarm governance discussions. Logan confirmed.
-**Decided by:** Logan Finney
+## PRINCIPLES REAFFIRMED
 
-## 2026-03-16 — OpenClaw identified as peer system
+- **Logan is human. All agents are software.** Logan directs; agents execute.
+- **The five W's:** who, what, when, where, why
+- **The four C's:** collect, capture, catalogue, collate
+- **Propose, don't decide.** Agents suggest; Logan approves.
+- **Public repo = on the record.** All committed content is transparent.
+- **Markdown = human product. Python = machine/procedural.**
+- **LEVELSET before compacting** — no exceptions.
+- **Elevation governance:** no instance gains higher access without explicit Logan approval.
 
-**Decision:** OpenClaw (open-source AI agent coordination framework) is a peer system to the IDAHO-VAULT agentic swarm. Study its patterns for governance and coordination insights. No implementation planned — learning exercise only.
-**Context:** Surfaced by Grok during research on multi-agent coordination. Logan approved studying it.
-**Decided by:** Logan Finney
+---
 
-## 2026-03-16 — Slack-to-file rule adopted in principle
-
-**Decision:** Decisions made in ephemeral Slack channels must be captured in vault files. Slack is where conversation happens; `!ADMIN/` is where decisions land. Approved in principle — not yet drafted as a Constitution.md amendment.
-**Context:** Slack free trial active (expires April 13). Need to ensure decisions aren't lost when Slack history disappears.
-**Decided by:** Logan Finney
-
-## 2026-03-16 — STORY: JFAC corrected to Tier 3
-
-**Decision:** STORY: JFAC Open Meetings is Tier 3 (read-only), not Tier 1 (direct write). Correct in AGENTS.md. JFAC conversation does not have direct repo write access.
-**Context:** Initial AGENTS.md draft incorrectly listed JFAC as Tier 1 with direct write capability. ADMINISTRATION flagged the correction.
-**Decided by:** Logan Finney
-
-## 2026-03-16 — LEVELSET-LITE v0.1 and ORIENTATE v0.1 exist
-
-**Decision:** LEVELSET-LITE v0.1 and ORIENTATE v0.1-BETA exist in LEVELSET AUTHORITY's conversation context. Logan decides whether to commit them to the vault. These are companion protocols: ORIENTATE for conversations without repo access, LEVELSET-LITE for minimal new-entity orientation.
-**Context:** Produced by PERSISTENT: AUTHORITY: LEVELSET. Content not yet provided to CODE AUTHORITY for commit.
-**Decided by:** Logan Finney (acknowledged existence; commit decision pending)
-
-## 2026-03-14 — CODE AUTHORITY promoted to PERMANENT
-
-**Decision:** The CODE AUTHORITY conversation is promoted from PERSISTENT to PERMANENT — a new, higher-tier conversation prefix for central, non-deletable conversations. PERMANENT: CODE AUTHORITY is the central coding agent with direct repo access. PERSISTENT: ADMINISTRATION retains its current prefix.
-**Context:** CODE AUTHORITY has become the primary execution layer for all vault infrastructure work. Its role warrants a designation above PERSISTENT to reflect permanence.
-**Decided by:** Logan Finney
+*This document is the authoritative record of confirmed decisions.*
+*Amendments require Logan's explicit approval and addition to this file.*
