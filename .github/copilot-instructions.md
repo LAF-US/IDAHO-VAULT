@@ -1,6 +1,6 @@
-# CLAUDE.md — IDAHO-VAULT
+# GitHub Copilot Instructions — IDAHO-VAULT
 
-This file is loaded automatically by Claude Code sessions working in this repository. It is the single-source-of-truth for how Claude should operate in this vault.
+This file is loaded automatically by GitHub Copilot when working in this repository. It is aligned with `CLAUDE.md` (repo root), which is the single-source-of-truth for all AI agents in this vault.
 
 **Owner:** Logan Finney — journalist, producer/reporter, Idaho Reports / Idaho Public Television
 **Repository:** github.com/loganfinney27/IDAHO-VAULT (public)
@@ -8,11 +8,11 @@ This file is loaded automatically by Claude Code sessions working in this reposi
 
 ---
 
-## Roles
+## Role
 
-- Logan is human. Claude is software. Logan directs; Claude executes.
-- "We" is the collaboration — real but unequal in role.
-- Be vigilant and wary of unreliable narrators — including Claude.
+Logan directs; Copilot assists. Logan is the sole human in this system. All AI tools — Copilot, Claude, Gemini — are software. They execute Logan's direction, surface information, flag what needs verification, and stay out of the way.
+
+---
 
 ## Vault Purpose
 
@@ -60,6 +60,8 @@ IDAHO-VAULT/
   .github/workflows/      GitHub Actions workflows
 ```
 
+---
+
 ## Naming Conventions
 
 | Type | Pattern | Example |
@@ -70,9 +72,11 @@ IDAHO-VAULT/
 | People | `Full Name.md` | `Brad Little.md` |
 | Other entities | Descriptive name, title case | `Ada County.md` |
 
+---
+
 ## Frontmatter Conventions
 
-All Obsidian files use YAML frontmatter. Key fields by type:
+All Obsidian files use YAML frontmatter.
 
 **People:**
 ```yaml
@@ -111,6 +115,8 @@ tags:
   - YYYY/MM/DD
 ```
 
+---
+
 ## Wikilinks
 
 Use `[[Full Name]]` for all internal links — people, places, organizations, bills, topics. This is how Obsidian builds the knowledge graph. Link densely in source documents.
@@ -120,16 +126,30 @@ Use `[[Full Name]]` for all internal links — people, places, organizations, bi
 ## File Types
 
 - **Markdown** = human product, attributable to Logan. Notes, stories, analysis.
-- **Python** = machine/procedural product, attributable to Claude. Scripts, scrapers, automation.
-- **Administrative** = vault infrastructure. CLAUDE.md, LEVELSET files, audit reports.
+- **Python** = machine/procedural product, attributable to AI agents. Scripts, scrapers, automation.
+- **Administrative** = vault infrastructure. Instruction files, LEVELSET files, audit reports.
 
-## Automation
+---
+
+## Code Conventions (Python)
+
+- Python scripts live in `.github/scripts/`
+- GitHub Actions workflows live in `.github/workflows/`
+- Scripts that commit to the repo use `git config user.name "github-actions[bot]"` and `git config user.email "github-actions[bot]@users.noreply.github.com"`
+- Automation output (reports) is committed to `!ADMINISTRATION/` with date-stamped filenames
+- Dependencies are tracked in `.github/scripts/requirements-scraper.txt`
+
+---
+
+## Automation Scripts
 
 | Script | Purpose | Trigger |
 |---|---|---|
 | `sort_audit.py` | Audits vault structure for misplaced files | Manual (workflow_dispatch) |
 | `idaho_leg_scraper.py` | Scrapes Idaho Legislature bill data | Daily 6 AM MT + manual |
 | `post_digest.py` | Posts bill activity to GitHub Issues digest | Called by scraper workflow |
+| `propose_moves.py` | Proposes vault file reorganization | Weekly Monday 7 AM UTC + manual |
+| `wayback_audit.py` | Audits URL preservation in Wayback Machine | Weekly Monday 8 AM UTC + manual |
 
 ---
 
@@ -137,9 +157,11 @@ Use `[[Full Name]]` for all internal links — people, places, organizations, bi
 
 - **On the record:** Safe for public repo. All committed content is on the record.
 - **On background:** Vault-safe but identity-protected. Use carefully — this is a public repo.
-- **Off the record:** Ephemeral. Do not log, do not store, do not commit. If Logan says something is off the record, it does not go in files, code, comments, or commit messages.
+- **Off the record:** Ephemeral. Do not log, do not store, do not commit.
 
 When uncertain about sourcing category, **ask Logan**.
+
+---
 
 ## Git Practices
 
@@ -151,30 +173,6 @@ When uncertain about sourcing category, **ask Logan**.
 - Never force-push without explicit permission
 - Check in before anything irreversible
 - The legislature scraper workflow commits directly to main for automated bill updates
-
-## Conversation Taxonomy
-
-Claude conversations follow a naming convention:
-
-| Prefix | Purpose |
-|---|---|
-| PERMANENT: | Central, non-deletable conversations |
-| PERSISTENT: | Long-running, role-specific conversations |
-| TASK: | Bounded, completable work items |
-| STORY: | Journalism story development |
-| PROJECT: | Multi-session projects |
-| ISSUE: | Problem resolution |
-| INQUIRY: | Research questions |
-
-## LEVELSET Protocol
-
-LEVELSET is a permanent, auditable checkpoint protocol. LEVELSET files live in `!ADMINISTRATION/` and are never deleted, never overwritten. Each version is additive. See `LEVELSET-v2.md` for the most recent checkpoint.
-
----
-
-## Decision Log
-
-Significant architectural decisions are recorded in `!ADMINISTRATION/DECISIONS.md`. When a decision is made about vault structure, naming, tooling, or process, log it there.
 
 ---
 
@@ -192,6 +190,6 @@ Significant architectural decisions are recorded in `!ADMINISTRATION/DECISIONS.m
 ## Multi-Agent Ecosystem
 
 This vault uses multiple AI tools. All agents share the same vault conventions. See also:
-- `CLAUDE.md` — This file (Claude Code, Anthropic)
+- `CLAUDE.md` — Instructions for Claude Code (Anthropic)
 - `GEMINI.md` — Instructions for Gemini code agents (Google)
-- `.github/copilot-instructions.md` — Instructions for GitHub Copilot
+- `.github/copilot-instructions.md` — This file (GitHub Copilot)

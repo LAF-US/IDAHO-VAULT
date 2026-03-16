@@ -39,3 +39,9 @@ Significant architectural decisions, recorded when made. Each entry is permanent
 **Decision:** The CODE AUTHORITY conversation is promoted from PERSISTENT to PERMANENT — a new, higher-tier conversation prefix for central, non-deletable conversations. PERMANENT: CODE AUTHORITY is the central coding agent with direct repo access. PERSISTENT: ADMINISTRATION retains its current prefix.
 **Context:** CODE AUTHORITY has become the primary execution layer for all vault infrastructure work. Its role warrants a designation above PERSISTENT to reflect permanence.
 **Decided by:** Logan Finney
+
+## 2026-03-16 — Multi-agent instruction files created
+
+**Decision:** Create instruction files for all active AI agents so each has consistent vault context: `CLAUDE.md` (already existed), `GEMINI.md` (new), and `.github/copilot-instructions.md` (new).
+**Context:** GitHub Copilot and Gemini advisory agents were operating without vault conventions. Consolidating instructions across all agents (Claude, Copilot, Gemini) ensures consistent behavior — same naming rules, frontmatter standards, sourcing protocols, and git practices.
+**Decided by:** Logan Finney
