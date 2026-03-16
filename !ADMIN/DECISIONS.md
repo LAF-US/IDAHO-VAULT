@@ -64,6 +64,36 @@ Significant architectural decisions, recorded when made. Each entry is permanent
 **Context:** Swarm grew to 7+ agents across multiple platforms. Needed clear registry and boundary rules before Slack coordination layer goes live. Draft status — Logan reviews and approves.
 **Decided by:** Logan Finney (directed CODE AUTHORITY to draft)
 
+## 2026-03-16 — copilot-instructions.md guardrails defined
+
+**Decision:** The `copilot-instructions.md` file (Copilot's governance file) must: (1) reference Constitution.md, (2) declare Copilot's capability tier, (3) not grant write access to `!ADMIN/` governance files. Copilot drafts the file; CODE AUTHORITY reviews; Logan approves.
+**Context:** Copilot onboarding required clear guardrails before it drafts its own instructions file.
+**Decided by:** Logan Finney
+
+## 2026-03-16 — Logan's Project defined
+
+**Decision:** "Logan's Project" is defined as "the unachievable end goal on the horizon" — the aspirational vision that the vault and swarm work toward but never fully reach. It is the animating purpose, not a deliverable.
+**Context:** ADMINISTRATION surfaced this framing during swarm governance discussions. Logan confirmed.
+**Decided by:** Logan Finney
+
+## 2026-03-16 — OpenClaw identified as peer system
+
+**Decision:** OpenClaw (open-source AI agent coordination framework) is a peer system to the IDAHO-VAULT agentic swarm. Study its patterns for governance and coordination insights. No implementation planned — learning exercise only.
+**Context:** Surfaced by Grok during research on multi-agent coordination. Logan approved studying it.
+**Decided by:** Logan Finney
+
+## 2026-03-16 — Slack-to-file rule adopted in principle
+
+**Decision:** Decisions made in ephemeral Slack channels must be captured in vault files. Slack is where conversation happens; `!ADMIN/` is where decisions land. Approved in principle — not yet drafted as a Constitution.md amendment.
+**Context:** Slack free trial active (expires April 13). Need to ensure decisions aren't lost when Slack history disappears.
+**Decided by:** Logan Finney
+
+## 2026-03-16 — STORY: JFAC corrected to Tier 3
+
+**Decision:** STORY: JFAC Open Meetings is Tier 3 (read-only), not Tier 1 (direct write). Correct in AGENTS.md. JFAC conversation does not have direct repo write access.
+**Context:** Initial AGENTS.md draft incorrectly listed JFAC as Tier 1 with direct write capability. ADMINISTRATION flagged the correction.
+**Decided by:** Logan Finney
+
 ## 2026-03-14 — CODE AUTHORITY promoted to PERMANENT
 
 **Decision:** The CODE AUTHORITY conversation is promoted from PERSISTENT to PERMANENT — a new, higher-tier conversation prefix for central, non-deletable conversations. PERMANENT: CODE AUTHORITY is the central coding agent with direct repo access. PERSISTENT: ADMINISTRATION retains its current prefix.

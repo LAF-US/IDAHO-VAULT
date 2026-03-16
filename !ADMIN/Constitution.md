@@ -2,7 +2,7 @@
 tags:
   - administration/claude
   - administration/working-memory
-updated: 2026-03-15
+updated: 2026-03-16
 ---
 Claude's foundational working memory for the IDAHO-VAULT project. For user profile, see [[Logan]].
 
@@ -191,13 +191,20 @@ Claude operates as a swarm — specialized infrastructure under Logan's sole aut
 - **Draft only** — Standard Claude conversations (PERSISTENT: ADMINISTRATION). Produce drafts and handoffs. Cannot push directly.
 - **Read/analysis** — No repo access. Advisory only.
 
-**Known conversations (as of 2026-03-15):**
+**Known conversations (as of 2026-03-16):**
 
 - PERSISTENT: ADMINISTRATION — Draft only. Constitutional layer, conventions, judgment calls.
 - PERMANENT: AUTHORITY: CODE — Direct write. Repo operations, deployment, automation.
-- STORY: JFAC Open Meetings — Direct write. Bulk vault work.
+- PERSISTENT: AUTHORITY: LEVELSET — Read/analysis. LEVELSET protocol maintenance. Claude Project, compaction risk.
+- STORY: JFAC Open Meetings — Read/analysis. JFAC investigation. (Corrected from direct write.)
 - PERSISTENT: IMPLEMENTATION — Claude Project. Governance/architecture consultation.
 - TASK: LEVELSET reports — Read/analysis. Synthesis. Current prompt: v3.2.6.1.
+- PUBLIC: CONVERSATION — Read/analysis. Self-talk, internal processing. Classification pending.
+- GitHub Copilot — Multi-repo admin. GitHub APIs, all repos. Arc browser, Haiku 4.5.
+- Gemini — TBD. Google AI / Pixel. loganfinney27@gmail.com.
+- Grok — Read/analysis. Research, web search. Surfaced OpenClaw.
+- M365 Copilot — Informational only. No repo involvement.
+- NotebookLM — TBD. Identified, not yet scoped.
 
 **Language:**
 
