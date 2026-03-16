@@ -1,0 +1,121 @@
+name: LEVELSET Sync
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '!ADMINISTRATION/LEVELSET-*.md'
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: 'Reason for manual sync'
+        required: false
+        default: 'manual trigger'
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout vault
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Update LEVELSET-CURRENT.md snapshot section
+        run: |
+          python3 - <<'PYEOF'
+          import os
+          import re
+          from datetime import datetime, timezone
+          from pathlib import Path
+
+          ADMIN = Path("!ADMINISTRATION")
+          CURRENT = ADMIN / "LEVELSET-CURRENT.md"
+
+          # Find all LEVELSET report files (exclude prompts, templates, and CURRENT itself)
+          report_files = sorted(
+              [
+                  f for f in ADMIN.glob("LEVELSET-*.md")
+                  if "PROMPT" not in f.name
+                  and f.name != "LEVELSET-CURRENT.md"
+              ],
+              key=lambda f: f.stat().st_mtime,
+              reverse=True,
+          )
+
+          # Build the snapshot table rows
+          rows = []
+          seen_agents = set()
+          for f in report_files:
+              # Try to extract a date from the filename (e.g. LEVELSET-FOO-2026-03-16.md)
+              date_match = re.search(r"(\d{4}-\d{2}-\d{2})", f.name)
+              date_str = date_match.group(1) if date_match else "(undated)"
+              # Use filename (without .md) as agent label, strip leading LEVELSET-
+              label = f.stem
+              if label not in seen_agents:
+                  seen_agents.add(label)
+                  rows.append(f"| `{f.name}` | {date_str} |")
+
+          if not rows:
+              rows = ["| *(no LEVELSET reports found)* | — |"]
+
+          snapshot_block = "\n".join(rows)
+          now_utc = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+
+          # Read current file
+          if not CURRENT.exists():
+              print(f"LEVELSET-CURRENT.md not found at {CURRENT} — skipping update")
+              exit(0)
+
+          text = CURRENT.read_text(encoding="utf-8")
+
+          # Replace the auto-managed "Last LEVELSET reports committed" section
+          # Matches: the bold header, any optional lines (e.g. automation note), then the full table
+          new_table = (
+              "*(Maintained automatically by `levelset-sync.yml` — do not edit this table manually.)*\n\n"
+              "| Report File | Date |\n"
+              "|---|---|\n"
+              f"{snapshot_block}"
+          )
+
+          # Pattern: bold header line, blank line, then everything up through the last table row
+          pattern = (
+              r"(\*\*Last LEVELSET reports committed:\*\*\n\n)"
+              r"(?:\*[^\n]*\*\n\n)?"              # optional italic note line + blank line
+              r"\|.*?\|\n"                         # header row
+              r"\|[-| ]+\|\n"                      # separator row
+              r"(?:\|.*?\|\n)*"                    # data rows
+          )
+          replacement = r"\g<1>" + new_table + "\n"
+          updated = re.sub(pattern, replacement, text, flags=re.DOTALL)
+
+          # Update the "Authoritative as of" date in frontmatter and body
+          updated = re.sub(
+              r"(updated: )\d{4}-\d{2}-\d{2}",
+              r"\g<1>" + now_utc[:10],
+              updated,
+          )
+          updated = re.sub(
+              r"(\*\*Authoritative as of:\*\* )\S+",
+              r"\g<1>" + now_utc[:10],
+              updated,
+          )
+
+          CURRENT.write_text(updated, encoding="utf-8")
+          print(f"Updated LEVELSET-CURRENT.md at {now_utc}")
+          PYEOF
+
+      - name: Commit updated LEVELSET-CURRENT.md
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add "!ADMINISTRATION/LEVELSET-CURRENT.md"
+          if git diff --cached --quiet; then
+            echo "No changes to LEVELSET-CURRENT.md — nothing to commit"
+          else
+            git commit -m "levelset-sync: update LEVELSET-CURRENT.md snapshot [skip ci]"
+            git push
+          fi
