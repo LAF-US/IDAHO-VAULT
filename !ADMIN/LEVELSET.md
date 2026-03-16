@@ -12,7 +12,7 @@ Current status of the IDAHO-VAULT ecosystem. This file is overwritten — not ap
 **Conversation:** PERMANENT: AUTHORITY: CODE
 **Capabilities:** Full repo read/write (Claude Code CLI)
 **Primary role:** Direct repository access, structural execution, automation
-**Repo state:** Branch `claude/levelset-multi-conversation-zWxJc`, 20+ commits ahead of main (`219a271`)
+**Repo state:** Branch `claude/levelset-multi-conversation-zWxJc` at `cef22e3`, 25 commits ahead of main (`e8b4408`)
 **Vault file count:** 2,979+ markdown files
 **Status:** Active — context vault preservation, multi-conversation collapse in progress
 
@@ -71,10 +71,10 @@ Current status of the IDAHO-VAULT ecosystem. This file is overwritten — not ap
 | 16 | Slack bot apps for Copilot + Gemini | BLOCKED | Logan must configure before agents can post to Slack independently |
 | 17 | Slack free trial expires April 13 | FLAG | ~4 weeks. Upgrade decision needed before expiry |
 | 18 | Consolidate Claude Code projects | PENDING | Includes CODE AUTHORITY itself |
-| 19 | Re-run sort audit v2 | PENDING | Get clean report post-restructuring |
-| 20 | Action genuine sort issues from v1 | PENDING | 5 files identified in sort-audit-2026-03-12.md |
-| 21 | Run Wayback audit with `--limit 20` | PENDING | Validate before full vault scan |
-| 22 | Begin PLACES/COUNTIES sort pass | PENDING | Next in vault processing order |
+| 19 | Re-run sort audit v2 | DONE | 0 misplaced (was 48), 4 orphans (editorial), 1 naming |
+| 20 | Action genuine sort issues from v1 | DONE | 7 files moved to correct locations |
+| 21 | Run Wayback audit with `--limit 20` | BLOCKED | No network in sandbox — must run via Actions or local |
+| 22 | Begin PLACES/COUNTIES sort pass | DONE | 44/44 Idaho counties, 5 out-of-state properly separated |
 | 23 | Build `idaho-leg-setup.yml` + `idaho-leg-bill-lookup.yml` | PENDING | New legislature workflows |
 | 24 | 5 cross-conversation files need content | BLOCKED | AGENTS-v0.2-DRAFT, ORIENTATE-v0.1-BETA, LEVELSET-LITE-v0.1, CONSOLIDATED-HANDOFF, CONTEXT-SNAPSHOT — Logan must paste content from originating conversations |
 | 25 | Constitution.md content update (capabilities, digital consciousness) | BLOCKED | Updated content is in ADMINISTRATION's working copy — Logan must paste |
@@ -176,3 +176,4 @@ Current status of the IDAHO-VAULT ecosystem. This file is overwritten — not ap
 | `CONTEXT-VAULT-2026-03-16.md` | Multi-conversation collapse preservation from ADMINISTRATION |
 | `RESEARCH-TIM-OREN.md` | Research brief stub — Tim Oren voting patterns |
 | `GROUND-TRUTH-VERIFICATION-2026-03-16.md` | Verified repo state — ground truth audit |
+| `CONVERGENCE-2026-03-16.md` | **Cold-start bootstrap** — any new instance reads this first |
