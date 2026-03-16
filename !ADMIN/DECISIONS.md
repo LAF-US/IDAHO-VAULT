@@ -94,6 +94,12 @@ Significant architectural decisions, recorded when made. Each entry is permanent
 **Context:** Initial AGENTS.md draft incorrectly listed JFAC as Tier 1 with direct write capability. ADMINISTRATION flagged the correction.
 **Decided by:** Logan Finney
 
+## 2026-03-16 — LEVELSET-LITE v0.1 and ORIENTATE v0.1 exist
+
+**Decision:** LEVELSET-LITE v0.1 and ORIENTATE v0.1-BETA exist in LEVELSET AUTHORITY's conversation context. Logan decides whether to commit them to the vault. These are companion protocols: ORIENTATE for conversations without repo access, LEVELSET-LITE for minimal new-entity orientation.
+**Context:** Produced by PERSISTENT: AUTHORITY: LEVELSET. Content not yet provided to CODE AUTHORITY for commit.
+**Decided by:** Logan Finney (acknowledged existence; commit decision pending)
+
 ## 2026-03-14 — CODE AUTHORITY promoted to PERMANENT
 
 **Decision:** The CODE AUTHORITY conversation is promoted from PERSISTENT to PERMANENT — a new, higher-tier conversation prefix for central, non-deletable conversations. PERMANENT: CODE AUTHORITY is the central coding agent with direct repo access. PERSISTENT: ADMINISTRATION retains its current prefix.
