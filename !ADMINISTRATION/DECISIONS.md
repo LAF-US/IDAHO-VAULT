@@ -39,3 +39,14 @@ Significant architectural decisions, recorded when made. Each entry is permanent
 **Decision:** The CODE AUTHORITY conversation is promoted from PERSISTENT to PERMANENT — a new, higher-tier conversation prefix for central, non-deletable conversations. PERMANENT: CODE AUTHORITY is the central coding agent with direct repo access. PERSISTENT: ADMINISTRATION retains its current prefix.
 **Context:** CODE AUTHORITY has become the primary execution layer for all vault infrastructure work. Its role warrants a designation above PERSISTENT to reflect permanence.
 **Decided by:** Logan Finney
+
+## 2026-03-16 — Context Injection via SessionStart Hook
+
+**Decision:** Add `.claude/settings.json` with a `SessionStart` hook that injects dynamic context on every Claude Code session start — including promptless agent awakenings.
+**Context:** Agentic personalities lacked context systemwide. No injected context upon promptless awakening sans LEVELSET. Sub-agents and GitHub-triggered code sessions had no orientation beyond the static CLAUDE.md.
+**Implementation:**
+- `.claude/settings.json` — SessionStart hook injects date, branch, LEVELSET pointer, owner identity, sourcing reminder
+- `!ADMINISTRATION/LEVELSET-v1.md` — First formal vault checkpoint (baseline: ~2,978 markdown files, 6 scripts, 5 workflows)
+- Permissions: auto-allow Read, Glob, Grep, Agent (read-only). Write operations require user approval.
+- CLAUDE.md LEVELSET reference corrected from nonexistent `v2` to `v1`.
+**Decided by:** Logan Finney
