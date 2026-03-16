@@ -39,3 +39,9 @@ Significant architectural decisions, recorded when made. Each entry is permanent
 **Decision:** The CODE AUTHORITY conversation is promoted from PERSISTENT to PERMANENT — a new, higher-tier conversation prefix for central, non-deletable conversations. PERMANENT: CODE AUTHORITY is the central coding agent with direct repo access. PERSISTENT: ADMINISTRATION retains its current prefix.
 **Context:** CODE AUTHORITY has become the primary execution layer for all vault infrastructure work. Its role warrants a designation above PERSISTENT to reflect permanence.
 **Decided by:** Logan Finney
+
+## 2026-03-16 — Cross-swarm context unification infrastructure established
+
+**Decision:** Create `!ADMINISTRATION/LEVELSET-CURRENT.md` as the canonical unified-state document for all AI agents (Claude, GitHub Copilot, and others) serving the vault. Create `.github/copilot-instructions.md` to define the GitHub Copilot persona. Create `levelset-sync.yml` to automate LEVELSET-CURRENT.md updates. Update `CLAUDE.md` to reference the multi-agent ecosystem and LEVELSET-CURRENT.md.
+**Context:** Multiple AI agents (Claude Code instances, GitHub Copilot) are now operating concurrently in the vault. The LEVELSET-v3.2.6.1-PROMPT referenced `LEVELSET-CURRENT.md` as the cross-agent context hub, but the file did not exist. Multiple open PRs were colliding without a shared context document. The automation end-state described in the LEVELSET routing section required a synthesis workflow.
+**Decided by:** Logan Finney
