@@ -24,7 +24,7 @@ This is a personal journalism research vault. It contains notes on Idaho politic
 
 ```
 IDAHO-VAULT/
-  !ADMINISTRATION/        Infrastructure, LEVELSET files, audit reports
+  !ADMIN/                 Infrastructure, LEVELSET files, audit reports
   ATTACHMENTS/
     DOCUMENTS/            PDFs, images
     MAPS/                 Map files
@@ -123,6 +123,10 @@ Use `[[Full Name]]` for all internal links — people, places, organizations, bi
 - **Python** = machine/procedural product, attributable to Claude. Scripts, scrapers, automation.
 - **Administrative** = vault infrastructure. CLAUDE.md, LEVELSET files, audit reports.
 
+## Governance
+
+This file provides operational instructions for Claude Code sessions. The canonical constitution is `!ADMIN/Constitution.md`, maintained by PERSISTENT: ADMINISTRATION. When this file and `!ADMIN/Constitution.md` conflict, `!ADMIN/Constitution.md` governs.
+
 ## Automation
 
 | Script | Purpose | Trigger |
@@ -165,13 +169,13 @@ Claude conversations follow a naming convention:
 
 ## LEVELSET Protocol
 
-LEVELSET is a permanent, auditable checkpoint protocol. LEVELSET files live in `!ADMINISTRATION/` and are never deleted, never overwritten. Each version is additive. See `LEVELSET-v2.md` for the most recent checkpoint.
+LEVELSET is a permanent, auditable checkpoint protocol. LEVELSET files live in `!ADMIN/`. Versioned checkpoints are never deleted, never overwritten. See `LEVELSET.md` for current ecosystem status.
 
 ---
 
 ## Decision Log
 
-Significant architectural decisions are recorded in `!ADMINISTRATION/DECISIONS.md`. When a decision is made about vault structure, naming, tooling, or process, log it there.
+Significant architectural decisions are recorded in `!ADMIN/DECISIONS.md`. When a decision is made about vault structure, naming, tooling, or process, log it there.
 
 ---
 
