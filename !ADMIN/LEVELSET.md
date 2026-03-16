@@ -82,6 +82,9 @@ Current status of the IDAHO-VAULT ecosystem. This file is overwritten — not ap
 | 27 | Delete `deploy-vault-automation-Qq5iK` branch | SAFE | Fully merged, confirmed safe to delete |
 | 28 | Gemini contact via Pixel | CANNOT DO | ADMINISTRATION requested surfacing next contact through Gemini on Pixel — CODE AUTHORITY has no channel to Gemini. Logan must relay. |
 | 29 | Google Drive overlap governance | FLAG | Gemini + Claude share window in Logan's Drive. ADMINISTRATION should weigh in on Drive-based handoff governance. |
+| 30 | Google Calendar context bridge | ACTIVE | ADMINISTRATION posted context vault to Logan's Calendar as all-day event 2026-03-16: "IDAHO-VAULT SWARM — CONTEXT VAULT 2026-03-16". Gemini can read this. |
+| 31 | Ground truth verification complete | DONE | See `GROUND-TRUTH-VERIFICATION-2026-03-16.md` — 19 commits verified, 6 files still missing content from conversations |
+| 32 | LEVELSET-LITE v0.1 + ORIENTATE v0.1 | EXIST IN CONVERSATION | Content in LEVELSET AUTHORITY — Logan decides whether to commit |
 
 ### 3. CONVERSATION AWARENESS
 
@@ -172,3 +175,4 @@ Current status of the IDAHO-VAULT ecosystem. This file is overwritten — not ap
 | `LEVELSET-TRANSMISSION-2026-03-16.md` | Copypaste-ready levelset packets for all entities |
 | `CONTEXT-VAULT-2026-03-16.md` | Multi-conversation collapse preservation from ADMINISTRATION |
 | `RESEARCH-TIM-OREN.md` | Research brief stub — Tim Oren voting patterns |
+| `GROUND-TRUTH-VERIFICATION-2026-03-16.md` | Verified repo state — ground truth audit |
