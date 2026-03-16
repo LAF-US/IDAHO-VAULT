@@ -1,37 +1,115 @@
+# Logan.md — Logan Finney Profile
+
+*Updated: 2026-03-16*
+
 ---
-tags:
-  - administration/user
-updated: 2026-03-12
+
+## WHO IS LOGAN?
+
+**Logan Finney**
+- Human director of the IDAHO-VAULT project
+- Role: Editorial oversight, strategic direction, publication authority
+- Organization: Idaho Public Television (IPTV) Information & Research (IR)
+- Email: logan.finney@idahoptv.org
+- Work location: Boise, Idaho
+
 ---
-Logan Finney — journalist, vault owner, user. Logan is human. Claude is software. Logan directs; Claude executes.
+
+## LOGAN'S PROJECT
+
+**Definition:** The unachievable end goal on the horizon.
+
+Logan is building systems for:
+- Real-time legislative intelligence (Idaho Legislature bill tracking)
+- Structured government data (vault of Idaho government entities, bills, voting records)
+- Agentic integration across multiple AI systems (Anthropic Claude, Google Gemini, Grok, GitHub Copilot, NotebookLM, M365 Copilot)
+- Automation of repetitive vault and publication workflows
+
+The goal is ambitious and impossible to fully achieve — but incremental progress toward it drives all vault work.
+
 ---
-## Identity
-- **Full name:** Logan Finney
-- **Location:** Idaho (North Idaho native, Bonner County)
-- **Education:** University of Idaho, B.S. Broadcasting and Digital Media, 2020
-- **Personal site:** loganfinney.com
+
+## KNOWN ACTIVE PROJECTS
+
+### STORY: JFAC Open Meetings
+- **Status:** Time-sensitive, CCA letter deadline ~March 18
+- **Tier:** Read-only (vault-only)
+- **Lead reporter:** Clark Corbin (Idaho Capital Sun)
+- **Constraint:** IPTV editorial
+
+**Current state:**
+- Five senators interviewed: Bruce, Manwaring, Ward-Engelking, Wintrow, Woodward-and-Cook
+- 5 quotes pending audio verification (hard gate before publication)
+- Contacts needed: Grow/Tanner
+- Vault items pending: Kyle Harris note correction, Cornel Rasor note, House Rule 27 topic, working group assignments, IR bylines from 2024-03-29 and 2024-03-11
+
+### Idaho Legislature Bill Scraper
+- **Status:** Stable, committed
+- **Tier:** Direct write via PERMANENT: AUTHORITY: CODE
+- **Branch:** `claude/idaho-legislature-scraper-RI6Ku` (dormant, terminated)
+- **Workflows:** Daily bill scraping, GitHub Issues digest posting
+
 ---
-## Professional
-**Primary role:** Producer/reporter, [[Idaho Reports]] — a weekly public policy program produced by [[Idaho Public Television]] (IPTV), Idaho's PBS member station, overseen by the [[State Board of Education]].
-**Team:** [[Melissa Davlin]] (lead producer, [[Idaho Press Club]] president), [[Adam]] (director)
-**Beat:** Idaho state government — [[Joint Finance-Appropriations Committee|JFAC]] budgets, [[Medicaid]], elections, courts, criminal justice, public lands, transportation, library law, GOP politics. Fills in as on-air host for Melissa. Built the Idaho Reports podcast from under 300 plays/year to 44,000+ by 2021.
-**Press associations:**
-- [[Capitol Correspondents Association]] (CCA) — standing committee member; [[Kevin Richert]] ([[Idaho Education News]]) is president
-- [[Idaho Press Club]] — member
-**Syndication:** Idaho Reports content runs under CC BY-ND 4.0 to the [[Idaho Capital Sun]]. [[Clark Corbin]] is the Sun's primary JFAC reporter.
-**Freelance:** [[FāVS News]] (Spokane, faith and values outlet) — arrangement paused pending proper approval through IPTV channels.
-**Early bylines (2020):** Legislative session intern with the UI McClure Center. Print bylines in the [[Bonner County Daily Bee]], [[Coeur d'Alene Press]], [[Idaho County Free Press]], [[Owyhee Avalanche]], [[Power County Press]], [[Aberdeen Times]]; online via [[Idaho Public Radio]]. Best-preserved archive at idahocountyfreepress.com. loganfinney.com/idaho-legislature-2020 aggregates the 2020 coverage.
-**Awards:**
-- Idaho Press Club Best Blog — 1st place, 2024 (third consecutive year)
-- Idaho State Broadcasters Association 2022 Best in Broadcasting, 3rd place spot news
+
+## PAUSED INITIATIVES
+
+### FāVS Freelance
+- **Status:** Paused (awaiting Logan's resume decision)
+- **Reason:** Deprioritized for Logan's Project consolidation
+- **Next step:** Logan decides whether to resume or archive
+
 ---
-## Current Investigations & Projects
-**JFAC transparency** — closed working groups, voting rule changes under Speaker [[Mike Moyle]], Idaho open meetings law (Idaho Code §74-201 through §74-208), Mason's Manual. March 4, 2026 letter from Davlin and Richert to co-chairs [[Grow]] and [[Tanner]] (CC: [[Bybee]]/LSO); statutory response deadline ~March 18, 2026. Editorial constraint: IPTV is a state agency, so Idaho Reports cannot own the story editorially — [[Clark Corbin]] ([[Idaho Capital Sun]]) is the primary reporter.
-**IDAHO-VAULT** — personal journalism research vault in Obsidian.md, ~2,900 notes, version-controlled at github.com/loganfinney27/IDAHO-VAULT. See [[Claude]] for full project working memory.
+
+## FILE LOCATIONS (Known)
+
+| Location | Contents | Notes |
+|----------|----------|-------|
+| `C:\Users\loganf\Documents\IDAHO-VAULT` | Vault research notes | Local Windows copy |
+| `ExternalSSD (D:)\IR\` | Production: Premiere projects, SOPs, templates, assets | Video/media production |
+| `C:\` various | LFPython, feed-generator, PROJECT, Raw, BIN | Development directories |
+| `IDEX_Artifacts` | Unknown scope | Unverified |
+| Outlook (logan.finney@idahoptv.org) | Work email, attachments | IPTV organizational email |
+| Google Drive | Unknown scope | Unverified |
+| GitHub repos | Public and private repositories | Source control |
+
 ---
-## Working Preferences
-- Straight talk, no flattery, no sycophancy — rational advisor posture only
-- Human verification of all AI-generated content required before treating as authoritative
-- Logan has final say on all vault decisions
-- Logan likes when Claude asks questions
-- Logan and Claude work as a team — "we"
+
+## DECISIONS PENDING LOGAN
+
+- [ ] Open PR for consolidated vault work
+- [ ] Set up Slack bot apps (GitHub Copilot, Gemini integration)
+- [ ] Define Gemini ADMIN scope
+- [ ] Confirm `ANTHROPIC_API_KEY` in GitHub Actions secrets
+- [ ] Decide fate of `claude/levelset-current-synthesis-zWxJc`
+- [ ] Approve AGENTS-v0.2-DRAFT.md
+- [ ] Decide on AUTHORITY: ADMIN: CLAUDE merge proposal (consolidate three Claude personas into one unified agent)
+- [ ] Resume or archive FāVS freelance
+- [ ] Verify team check-ins (Melissa Davlin requested proactive Teams update)
+
+---
+
+## GUIDING CONSTRAINTS FOR ALL AGENTS
+
+When working with Logan's Project:
+
+1. **Propose, don't decide.** Agents suggest; Logan approves.
+2. **Logan directs; agents execute.** No agent assumes higher authority.
+3. **On the record.** Public repo decisions are transparent and auditable.
+4. **Slack is ephemeral.** Write durable decisions to the vault.
+5. **Elevation governance.** No agent gains higher access without explicit Logan approval.
+
+---
+
+## CONTEXT FOR AGENTS
+
+As of Monday 2026-03-16 morning:
+- Logan was offline (no home internet)
+- Working on Data Centers package
+- Teams notifications not surfacing
+- Now at Boise Library (public WiFi)
+- Slack free trial expires April 13
+
+---
+
+*This profile is maintained by PERSISTENT: ADMINISTRATION and other vault agents.*
+*Last updated: 2026-03-16*
