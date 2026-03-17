@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "WWAMI joint medical education program",
+      "path": "TOPICS/EDUCATION/HIGHER EDUCATION/WWAMI joint medical education program.md"
+    },
+    {
+      "basename": "chronic wasting disease",
+      "path": "TOPICS/RESOURCES/WILDLIFE/chronic wasting disease.md"
+    },
+    {
+      "basename": "prion",
+      "path": "prion.md"
+    },
+    {
       "basename": "sort-audit-2026-03-12",
       "path": "!ADMINISTRATION/sort-audit-2026-03-12.md"
     },
@@ -11,10 +23,6 @@
     {
       "basename": "2021-12-10 - IR - Chronic wasting disease surveillance underway in central Idaho",
       "path": "SOURCES/NEWS MEDIA/2021-12-10 - IR - Chronic wasting disease surveillance underway in central Idaho.md"
-    },
-    {
-      "basename": "prion",
-      "path": "prion.md"
     },
     {
       "basename": "2023-11-08 - IR - Chronic wasting disease detected in New Meadows mule deer",
@@ -59,10 +67,6 @@
     {
       "basename": "city council",
       "path": "GOVERNMENTS/IDAHO - EXECUTIVE/COUNTIES & CITIES/city council.md"
-    },
-    {
-      "basename": "WWAMI joint medical education program",
-      "path": "TOPICS/EDUCATION/HIGHER EDUCATION/WWAMI joint medical education program.md"
     },
     {
       "basename": "Sophia DeKlotz",
@@ -195,10 +199,6 @@
     {
       "basename": "Malad City",
       "path": "PLACES/CITIES/Malad City.md"
-    },
-    {
-      "basename": "2025-01-22 - Cache Valley Daily - Oxford City, with its rich history, disincorporated in December",
-      "path": "X LABELER/x hey you make sure to link these/2025-01-22 - Cache Valley Daily - Oxford City, with its rich history, disincorporated in December.md"
     }
   ],
   "omittedPaths": [],
