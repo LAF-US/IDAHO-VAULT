@@ -28,22 +28,22 @@ Earlier meetings foreshadowed some of these recommendations. The task force has 
 
 All proposals were approved on voice votes, with those dealing with federal grants and school choice pulling the only “nays.”
 
-What the task force heard
-The Statehouse’s Lincoln Auditorium that has hosted the meetings was at its emptiest Thursday, with around 40 attendees dwindling to under a dozen over the nearly five-hour meeting.
+What the [[task force]] heard
+The [[Idaho Capitol|Statehouse]]’s [[Lincoln Auditorium]] that has hosted the meetings was at its emptiest [[Thursday]], with around 40 [[attendees]] dwindling to under a dozen over the nearly five-hour [[meeting]].
 
-Still, over a dozen people testified, with some commending the task force’s mission with anecdotes about school indoctrination and others lambasting what they saw as baseless attacks on public education.
+Still, over a [[dozen]] [[people]] testified, with some commending the [[task force]]’s [[mission]] with [[anecdotes]] about [[ [[schools|school]] indoctrination]] and others lambasting what they saw as baseless attacks on [[public education]].
 
-Dominik Sparling, a Boise High School graduate and Boise State University sophomore, said he would like to be a government teacher and raise kids in Idaho. He told the committee he’s a registered Republican, but he’s worried that the critical race theory controversy has left instructors “walking on eggshells.” Teachers he knows have stopped teaching about current events, he said. He worries that if the task force curbs what teachers can talk about —  by rule or by fear — Idaho could begin to resemble the restrictive environment his mother experienced growing up in the Soviet Union.
+[[Dominik Sparling]], a [[Boise High School]] graduate and [[Boise State University]] [[sophomore]], said he would like to be a [[government teacher]] and raise kids in [[Idaho]]. He told the committee he’s a registered [[Republican]], but he’s worried that the [[critical race theory controversy]] has left [[instructors]] “walking on eggshells.” Teachers he knows have stopped teaching about [[current events]], he said. He worries that if the task force curbs what teachers can talk about —  by rule or by fear — Idaho could begin to resemble the restrictive environment his mother experienced growing up in the [[Soviet Union]].
 
-Sen. [[Steven Thayn]], Chairman of the [[Senate Education]] Committee, said [[Critical Race Theory]] is Marxist in nature, and contemplates using centralized power to combat systemic racism.
+Sen. [[Steven Thayn]], Chairman of the [[Senate Education]] Committee, said [[Critical Race Theory]] is [[Marxist]] in nature, and contemplates using centralized power to combat systemic racism.
 
 _PHOTO: Idaho Senator Steven Thayn, R-Emmett, gives public testimony during the Education Task Force meeting on Thursday, Aug. 26, 2021. Nik Streng/Idaho Education News_
 
 “I do think critical race theory is a threat to our system of limited government,” said Thayn, R-Emmett.
 
-But Thayn said critical race theory could be replaced by something he considers worse. He advocated that school boards take a role in strengthening curriculum, and urged people to pay attention when Idaho’s history education standards come up for revision in the coming years.
+But Thayn said [[critical race theory]] could be replaced by something he considers worse. He advocated that school boards take a role in strengthening curriculum, and urged people to pay attention when Idaho’s history education standards come up for revision in the coming years.
 
-Thayn was joined by House Education Committee member Tony Wisniewski, R-Post Falls, and briefly by Sen. Regina Bayer, R-Meridan, as the only lawmakers in the crowd. It was the first time more than a pair of elected officials have been in the room at the task force meetings. Usually, co-chairs Rep. Priscilla Giddings, R-White Bird, who is running for lieutenant governor in 2022, and McGeachin, who is running for governor, are the only such officials.
+Thayn was joined by [[House Education Committee]] member [[Tony Wisniewski]], R-[[Post Falls]], and briefly by Sen. [[Regina Bayer]], R-[[Meridan]], as the only [[lawmakers]] in the crowd. It was the first time more than a pair of elected officials have been in the room at the task force meetings. Usually, co-chairs Rep. [[Priscilla Giddings]], R-[[White Bird]], who is running for lieutenant governor in 2022, and McGeachin, who is running for [[governor]], are the only such officials.
 
 Testifiers hadn’t seen proposals
 Since the recommendations weren’t made available to the public ahead of time, none of the hours of testimony commented specifically on the proposals.
