@@ -1,25 +1,20 @@
 {
   "main": {
-    "id": "ebc702efcf01541b",
+    "id": "c4065ba6682e7cf5",
     "type": "split",
     "children": [
       {
-        "id": "b9e731a022300304",
+        "id": "630f63952f619565",
         "type": "tabs",
         "children": [
           {
-            "id": "1ecafafd02166494",
+            "id": "cd6d978ced8d5263",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "!ADMINISTRATION/sort-audit-2026-03-12.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "sort-audit-2026-03-12"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -28,20 +23,20 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "d29572634973a0f8",
+    "id": "159fd48ac5457909",
     "type": "split",
     "children": [
       {
-        "id": "2bccd219956cfcf7",
+        "id": "9a8ea1a81e91b0e9",
         "type": "tabs",
         "children": [
           {
-            "id": "dbfa8ac519a0bb94",
+            "id": "fde84e67bab88f56",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabeticalReverse",
+                "sortOrder": "alphabetical",
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
@@ -49,12 +44,12 @@
             }
           },
           {
-            "id": "5c9a03e2f4fc85c8",
+            "id": "7a7b61cea259114e",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "\"power package\"",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -66,7 +61,7 @@
             }
           },
           {
-            "id": "d5de9567351f0e96",
+            "id": "0e96187c6e0e5be6",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -76,7 +71,7 @@
             }
           },
           {
-            "id": "51e0d7f20e7184ea",
+            "id": "6c247268806d5c6e",
             "type": "leaf",
             "state": {
               "type": "recent-files",
@@ -86,79 +81,70 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 272.50418853759766,
-    "collapsed": true
+    "width": 300
   },
   "right": {
-    "id": "6ce23fcd82f8b8f0",
+    "id": "bd8d263fcc54107c",
     "type": "split",
     "children": [
       {
-        "id": "47230a8d15685efb",
+        "id": "88ceb7088cf2c632",
         "type": "tabs",
         "children": [
           {
-            "id": "dd603d0cb422d730",
+            "id": "c515062cb5c59d7e",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "!ADMINISTRATION/sort-audit-2026-03-12.md",
-                "collapseAll": true,
+                "file": "prion.md",
+                "collapseAll": false,
                 "extraContext": false,
-                "sortOrder": "byModifiedTime",
+                "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": false
+                "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for sort-audit-2026-03-12"
+              "title": "Backlinks for prion"
             }
           },
           {
-            "id": "b82a52bf57d389e2",
+            "id": "aa1e691188d06ad2",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "!ADMINISTRATION/sort-audit-2026-03-12.md",
+                "file": "prion.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from sort-audit-2026-03-12"
+              "title": "Outgoing links from prion"
             }
           },
           {
-            "id": "d91894ec936ba4ef",
+            "id": "4625256cad1ccfc4",
             "type": "leaf",
             "state": {
               "type": "tag",
               "state": {
-                "sortOrder": "alphabetical",
-                "useHierarchy": false
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-tags",
               "title": "Tags"
             }
           },
           {
-            "id": "d7d4eece6e477aa5",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {},
-              "icon": "lucide-list",
-              "title": "Outline"
-            }
-          },
-          {
-            "id": "f1059e05e1c16478",
+            "id": "c00e3924a7a3d862",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -172,17 +158,22 @@
             }
           },
           {
-            "id": "b158b9c505382e9f",
+            "id": "3962514f168d5161",
             "type": "leaf",
             "state": {
-              "type": "file-properties",
-              "state": {},
-              "icon": "lucide-info",
-              "title": "File properties"
+              "type": "outline",
+              "state": {
+                "file": "prion.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of prion"
             }
           },
           {
-            "id": "090eff80fb4fcf9e",
+            "id": "f20bd8fd3a156ca0",
             "type": "leaf",
             "state": {
               "type": "Strange New Worlds",
@@ -195,68 +186,29 @@
       }
     ],
     "direction": "horizontal",
-    "width": 409.5,
+    "width": 300,
     "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "audio-recorder:Start/stop recording": false,
-      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
-      "command-palette:Open command palette": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "audio-recorder:Start/stop recording": false,
+      "bases:Create new base": false
     }
   },
-  "active": "1ecafafd02166494",
+  "active": "cd6d978ced8d5263",
   "lastOpenFiles": [
-<<<<<<< Updated upstream
-    "Untitled 1.base",
-    "Untitled.base",
-    "!ADMIN/!README.md",
-    "!ADMIN",
-=======
-    "!ADMINISTRATION/!README.md",
-    "SOURCES/NEWS MEDIA/2021-12-10 - IR - Chronic wasting disease surveillance underway in central Idaho.md",
-    "prion.md",
-    "SOURCES/NEWS MEDIA/2023-11-08 - IR - Chronic wasting disease detected in New Meadows mule deer.md",
-    "SOURCES/PODCASTS/2022-05-15 - IR Podcast - Patriot Front Arrests.md",
-    "X LABELER/x hey you make sure to link these/2023-12-09 - CDA Press - Assessor pins $53 million error on other county officials.md",
-    "X LABELER/x hey you make sure to link these/Article 2020-03-03 Legislature aims to refine initiative process.md",
-    "X LABELER/x hey you make sure to link these/Idaho Education News 2021-08-26 Indoctrination task force calls on Legislature to make slew of changes.md",
-    "2026-03-12 Daily Note 1.md",
-    "Untitled BASE.base",
-    "Untitled 1.base",
-    "!ADMINISTRATION",
->>>>>>> Stashed changes
-    "X LABELER/x hey you make sure to link these/Article 2020-02-21 4-H students gather for government conference.md",
-    "X LABELER/x hey you make sure to link these/2022-03-23- Idaho Capital Sun - McGeachin casts tie-breaking vote to pass medical school tuition payback bill.md",
-    "GOVERNMENTS/IDAHO - EXECUTIVE/COUNTIES & CITIES/city council.md",
     "TOPICS/EDUCATION/HIGHER EDUCATION/WWAMI joint medical education program.md",
-    "PEOPLE/Sophia DeKlotz.md",
-    "TOPICS/STATE AFFAIRS/LGBTQ+ issues.md",
-    "TOPICS/gender identity.md",
-    "TOPICS/holy book.md",
-    "TOPICS/metropolitan statistical areas.md",
-    "TOPICS/neo-Nazi.md",
-    "TOPICS/parental rights.md",
-    "TOPICS/parental permissions.md",
-    "TOPICS/Reddit.md",
-    "TOPICS/Quran.md",
-    "TOPICS/water rights.md",
-    "TOPICS/Your Health Idaho.md",
-    "PLACES/OTHER/CITIES/Salt Lake City.md",
-    "ATTACHMENTS/DOCUMENTS/History of Property Tax in Idaho.pdf",
-    "ATTACHMENTS/DOCUMENTS/ID Property Tax Limitations and Initiatives 1978–present.pdf",
-    "ATTACHMENTS/DOCUMENTS/Broadband Strategic Plan.pdf",
-    "ATTACHMENTS/DOCUMENTS/Historic Survey of Roads in Idaho’s State Highway System Volume 1 - Historic Context.pdf",
-    "ATTACHMENTS/DOCUMENTS/Historic Survey of Roads in Idaho’s State Highway System Volume 2 - Application of the National Register of Historic Places Criteria for Evaluation.pdf",
-    "SOURCES/HEARINGS/2025",
-    "news med",
-    "ATTACHMENTS/MAPS/Snake River Dams.jpg",
-    "ATTACHMENTS/MAPS/Wildlife Management Units.png",
-    "Pasted image 20231121102332.png"
+    "TOPICS/RESOURCES/WILDLIFE/chronic wasting disease.md",
+    "prion.md",
+    "2026-03-17.md",
+    "strict scrutiny.md",
+    "2026-03-16.md",
+    "2026-03-15.md"
   ]
 }
