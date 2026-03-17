@@ -4,20 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "5d91e137d91ec58b",
+        "id": "b9e731a022300304",
         "type": "tabs",
         "children": [
           {
-            "id": "c595eb7652f0ebf1",
+            "id": "1ecafafd02166494",
             "type": "leaf",
             "state": {
-              "type": "bases",
+              "type": "markdown",
               "state": {
-                "file": "Untitled.base",
-                "viewName": "Table"
+                "file": "!ADMINISTRATION/sort-audit-2026-03-12.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
               },
-              "icon": "lucide-table",
-              "title": "Untitled"
+              "icon": "lucide-file",
+              "title": "sort-audit-2026-03-12"
             }
           }
         ]
@@ -52,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "krem",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -83,11 +85,13 @@
               "title": "Recent Files"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 272.50418853759766
+    "width": 272.50418853759766,
+    "collapsed": true
   },
   "right": {
     "id": "6ce23fcd82f8b8f0",
@@ -103,6 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "!ADMINISTRATION/sort-audit-2026-03-12.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "byModifiedTime",
@@ -112,7 +117,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for sort-audit-2026-03-12"
             }
           },
           {
@@ -121,12 +126,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Untitled.base",
+                "file": "!ADMINISTRATION/sort-audit-2026-03-12.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Untitled"
+              "title": "Outgoing links from sort-audit-2026-03-12"
             }
           },
           {
@@ -186,15 +191,16 @@
               "title": "Strange New Worlds"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 409.5
+    "width": 409.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
+      "audio-recorder:Start/stop recording": false,
       "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
@@ -204,12 +210,27 @@
       "templates:Insert template": false
     }
   },
-  "active": "c595eb7652f0ebf1",
+  "active": "1ecafafd02166494",
   "lastOpenFiles": [
+<<<<<<< Updated upstream
     "Untitled 1.base",
     "Untitled.base",
     "!ADMIN/!README.md",
     "!ADMIN",
+=======
+    "!ADMINISTRATION/!README.md",
+    "SOURCES/NEWS MEDIA/2021-12-10 - IR - Chronic wasting disease surveillance underway in central Idaho.md",
+    "prion.md",
+    "SOURCES/NEWS MEDIA/2023-11-08 - IR - Chronic wasting disease detected in New Meadows mule deer.md",
+    "SOURCES/PODCASTS/2022-05-15 - IR Podcast - Patriot Front Arrests.md",
+    "X LABELER/x hey you make sure to link these/2023-12-09 - CDA Press - Assessor pins $53 million error on other county officials.md",
+    "X LABELER/x hey you make sure to link these/Article 2020-03-03 Legislature aims to refine initiative process.md",
+    "X LABELER/x hey you make sure to link these/Idaho Education News 2021-08-26 Indoctrination task force calls on Legislature to make slew of changes.md",
+    "2026-03-12 Daily Note 1.md",
+    "Untitled BASE.base",
+    "Untitled 1.base",
+    "!ADMINISTRATION",
+>>>>>>> Stashed changes
     "X LABELER/x hey you make sure to link these/Article 2020-02-21 4-H students gather for government conference.md",
     "X LABELER/x hey you make sure to link these/2022-03-23- Idaho Capital Sun - McGeachin casts tie-breaking vote to pass medical school tuition payback bill.md",
     "GOVERNMENTS/IDAHO - EXECUTIVE/COUNTIES & CITIES/city council.md",
@@ -227,13 +248,6 @@
     "TOPICS/water rights.md",
     "TOPICS/Your Health Idaho.md",
     "PLACES/OTHER/CITIES/Salt Lake City.md",
-    "ORGANIZATIONS/CHURCHES/Church of Jesus Christ of Latter-Day Saints.md",
-    "TOPICS/temples.md",
-    "TOPICS/places of worship.md",
-    "TOPICS/the Civil War.md",
-    "X LABELER/x hey you make sure to link these/2017-02-12 - Buzzfeed News - Love Lives In Whitefish, Montana, But So Do Neo-Nazis.md",
-    "TOPICS/Islam.md",
-    "TOPICS/Torah.md",
     "ATTACHMENTS/DOCUMENTS/History of Property Tax in Idaho.pdf",
     "ATTACHMENTS/DOCUMENTS/ID Property Tax Limitations and Initiatives 1978–present.pdf",
     "ATTACHMENTS/DOCUMENTS/Broadband Strategic Plan.pdf",
@@ -241,7 +255,6 @@
     "ATTACHMENTS/DOCUMENTS/Historic Survey of Roads in Idaho’s State Highway System Volume 2 - Application of the National Register of Historic Places Criteria for Evaluation.pdf",
     "SOURCES/HEARINGS/2025",
     "news med",
-    "PLACES/LIBRARIES",
     "ATTACHMENTS/MAPS/Snake River Dams.jpg",
     "ATTACHMENTS/MAPS/Wildlife Management Units.png",
     "Pasted image 20231121102332.png"
