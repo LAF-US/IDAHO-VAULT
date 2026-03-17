@@ -10,11 +10,11 @@ The arrival of a [[spongiform encephalopathies|fatal neurological condition]] ha
 
 The illness known as [[chronic wasting disease]] was detected this October in two [[mule deer]] in [[central Idaho]]. The samples were the first positive [[chronic wasting disease|CWD]] cases since the [[State of Idaho|state]] began testing for the disease in 1997, according to [[Department of Fish and Game|Idaho Fish and Game]].
 
-Similar to [[mad cow disease]], [[chronic wasting disease]] is a neurological disorder caused by a prion – or pathogenic, misfolded protein – that affects the brain and nervous system of [[deer]], [[elk]], [[moose]] and [[caribou]]. Unlike [[mad cow disease]], however, it is believed that [[chronic wasting disease|CWD]] does not have a form transmissible to humans. 
+Similar to [[mad cow disease]], [[chronic wasting disease]] is a neurological disorder caused by a [[prion]] – or pathogenic, misfolded protein – that affects the [[brain]] and [[nervous system]] of [[deer]], [[elk]], [[moose]] and [[caribou]]. Unlike [[mad cow disease]], however, it is believed that [[chronic wasting disease|CWD]] does not have a form transmissible to [[humans]]. 
 
 According to the [[U.S. Centers for Disease Control]], there have been no reported cases of [[chronic wasting disease|CWD]] infection in people to date. It has been detected in wild and domestic cervids – the deer family – in more than half of the [[United States of America|states]], parts of [[Canada]], [[Scandinavia]] and [[South Korea]]. 
 
-While the CWD prion has now been detected in [[State of Idaho|Idaho]], the disease hasn’t yet had an effect on the state’s wildlife population.
+While the [[CWD prion]] has now been detected in [[State of Idaho|Idaho]], the disease hasn’t yet had an effect on the state’s wildlife population.
 
 “We do not have [[chronic wasting disease|CWD]] manifesting itself as a disease. We have detected it in two [[animals]],” Idaho Fish and Game Director [[Ed Schriever]] told [[Idaho Reports]] on Friday. “We literally found the needle in the haystack.” 
 
@@ -32,9 +32,9 @@ On Nov. 22, the [[Idaho Fish and Game Commission]] approved a series of emergenc
 
 “These hunts were set strictly to get more samples for CWD testing,” Schriever said in a Dec. 2 press release. “The intent is not to reduce [[deer]] densities in response to CWD, it’s strictly to understand what we’re dealing with.” 
 
-Idaho Fish and Game is offering 1,527 deer tags for the specialized hunts to collect 775 samples for CWD testing. The hunts are limited to Idaho residents and will end when Fish and Game has gathered enough samples. 
+Idaho Fish and Game is offering 1,527 [[deer tags]] for the specialized hunts to collect 775 samples for CWD testing. The hunts are limited to Idaho residents and will end when Fish and Game has gathered enough samples. 
 
-The $10 tags are available only at Fish and Game regional offices, and they come with strict requirements. [[Hunters]] are allowed to keep the meat and antlers of the [[deer]] they harvest, but must record the geographic coordinates of the kill site, quarter or debone the animal at the site and present the head to a regional office or CWD check station within 24 hours.
+The $10 tags are available only at Fish and Game regional offices, and they come with strict requirements. [[Hunters]] are allowed to keep the meat and antlers of the [[deer]] they harvest, but must record the geographic coordinates of the kill site, quarter or [[debone]] the animal at the site and present the head to a regional office or CWD check station within 24 hours.
 
 The [[Lewiston Tribune]] reports that almost all of the tags for [[public land]] hunts sold out on Tuesday, while more tags for [[private land]] hunts are available to hunt area [[landowners]] and the hunters they designate. 
 
@@ -46,7 +46,7 @@ Schriever told Idaho Reports that IDFG has already collected more than 300 sampl
 
 IDFG encourages all hunters to contact any regional office for CWD testing, especially for animals harvested from an area where CWD has been found. 
 
-Chronic wasting disease was first discovered in northern [[Colorado]] in 1967 and diagnosed in 1978. This year the disorder has spread to wider areas in [[Wyoming]] wild herds and in [[Texas]] private breeding operations. The arrival of CWD in Idaho has also raised concern for neighboring wildlife agencies in [[Oregon]] and [[Washington]]. 
+Chronic wasting disease was [[first]] discovered in northern [[Colorado]] in 1967 and diagnosed in 1978. This year the disorder has spread to wider areas in [[Wyoming]] wild herds and in [[Texas]] private breeding operations. The arrival of CWD in Idaho has also raised concern for neighboring wildlife agencies in [[Oregon]] and [[Washington]]. 
 
 The [[World Health Organization]] and [[U.S. Centers for Disease Control]] have concluded that there is currently no evidence that CWD can be transmitted from cervids to humans. However, those organizations still advise caution and IDFG recommends precautionary measures such as:
 - using rubber or latex gloves during field dressing
