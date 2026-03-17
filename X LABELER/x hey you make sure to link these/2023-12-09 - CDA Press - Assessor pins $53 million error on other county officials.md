@@ -8,13 +8,13 @@ tags:
   - media/articles
   - 2023/12/09
 ---
-COEUR d’ALENE — Kootenai County Assessor Béla Kovacs has asked the Idaho State Tax Commission to audit the work processes of five county departments, including his own, according to emails obtained by The Press.
+COEUR d’ALENE — Kootenai County Assessor [[Béla Kovacs]] has asked the [[Idaho State Tax Commission]] to audit the work processes of five county departments, including his own, according to emails obtained by [[Coeur d'Alene Press|The Press]].
 
-In response, some county officials say they welcome an investigation.
+In response, some [[county]] officials say they welcome an [[investigation]].
 
 The request comes in the wake of a $53 million property value assessment error, which affected seven [[taxing districts]] and delayed the distribution of property tax notices until this week.
 
-When an appraiser mistakenly entered the front footage of a lakefront property as 6,966 feet instead of 69.66 feet, the property’s valuation jumped from $1.4 million in 2022 to $54.3 million this year.
+When an [[appraiser]] mistakenly entered the front footage of a [[lakefront property]] as 6,966 feet instead of 69.66 feet, the property’s valuation jumped from $1.4 million in 2022 to $54.3 million this year.
 
 Last month, Kovacs told commissioners the valuation was reviewed by multiple employees in his office, including the appraiser, a manager and “business intelligence analysts,” but no one caught the error until October.
 
@@ -28,7 +28,7 @@ In a Nov. 22 email, Kovacs said he believes “systemic problems” beyond his c
 
 “This process is painstaking and fraught with problems,” Kovacs wrote. “It has taken a heavy toll on the people, morale and quality of work. Kootenai County needs to break with the past."
 
-He wrote that as the assessor, he needs a reliable computer system that is not built "on a house of cards." 
+He wrote that as the assessor, he needs a reliable [[computer system]] that is not built "on a house of cards." 
 
 Kovacs went on to say his email served as a request to the Idaho State Tax Commission for a “comprehensive audit of the computer system(s), work processes, business workflows, technical process steps” performed by the county’s IT department, as well as the offices of the assessor, clerk, treasurer and commissioners.
 
