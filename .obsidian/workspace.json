@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "630f63952f619565",
+        "id": "6e78118635a65560",
         "type": "tabs",
         "children": [
           {
-            "id": "cd6d978ced8d5263",
+            "id": "05664a671cfad466",
             "type": "leaf",
             "state": {
-              "type": "graph",
+              "type": "empty",
               "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "\"power package\"",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -81,7 +81,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -101,7 +101,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "prion.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +110,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for prion"
+              "title": "Backlinks"
             }
           },
           {
@@ -120,12 +119,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "prion.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from prion"
+              "title": "Outgoing links"
             }
           },
           {
@@ -182,33 +180,53 @@
               "title": "Strange New Worlds"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
+      "daily-notes:Open today's daily note": false,
+      "command-palette:Open command palette": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
+      "bases:Create new base": false,
       "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "audio-recorder:Start/stop recording": false,
-      "bases:Create new base": false
+      "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "cd6d978ced8d5263",
+  "active": "05664a671cfad466",
   "lastOpenFiles": [
-    "TOPICS/EDUCATION/HIGHER EDUCATION/WWAMI joint medical education program.md",
-    "TOPICS/RESOURCES/WILDLIFE/chronic wasting disease.md",
-    "prion.md",
-    "2026-03-17.md",
-    "strict scrutiny.md",
-    "2026-03-16.md",
-    "2026-03-15.md"
+    "(US).md",
+    "HORIZON.md",
+    "(v0.0).md",
+    "-LF.md",
+    "OBSIDIAN DAILY NOTE.md",
+    "passkeys.md",
+    "passwords.md",
+    "IDEA.md",
+    "PERSONAL.md",
+    "AUTHORITIES.md",
+    "FLAG.md",
+    "CHORUS.md",
+    "BLOB.md",
+    "ALTURAS.md",
+    "MAGNUS.md",
+    "PROJECT.md",
+    "OITS.md",
+    "Office of Information Technology Services.md",
+    "UNIFIED.md",
+    "SWARM.md",
+    "template.md",
+    "format.md",
+    "Obsidian.md",
+    "TOPICS/artificial intelligence.md",
+    "AI.md",
+    "CLAUDE.md",
+    "and"
   ]
 }

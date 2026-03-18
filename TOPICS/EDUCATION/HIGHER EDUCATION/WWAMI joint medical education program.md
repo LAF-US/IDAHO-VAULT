@@ -6,7 +6,6 @@ aliases:
   - Idaho WWAMI
   - WWAMI Idaho
 ---
+joint [[medical school]] [[program]] between [[University of Idaho]] and [[University of Washington]] 
 
-joint [[medical school]] program between [[University of Idaho]] and [[University of Washington]] 
-
-[[Washington]], [[Wyoming]], [[Alaska]], [[Montana]], and [[State of Idaho|Idaho]] students
+[[Washington]], [[Wyoming]], [[Alaska]], [[Montana]], and [[State of Idaho|Idaho]] [[medical]] [[students]] 

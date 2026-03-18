@@ -5,3 +5,4 @@ aliases:
   - website
   - websites
 ---
+[[web]] [[and]]/or]] [[website|websites]] 
