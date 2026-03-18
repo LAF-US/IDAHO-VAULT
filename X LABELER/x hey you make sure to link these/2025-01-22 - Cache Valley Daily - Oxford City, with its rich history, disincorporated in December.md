@@ -7,9 +7,9 @@ tags:
   - "media/articles"
   - "2025/01/22"
 ---
-OXFORD - One of the oldest settlements in [[State of Idaho|Idaho]], [[Oxford]] was disincorporated in a December 9 [[Franklin County]] [[County Commissioners|Commission]] meeting.
+[[OXFORD]] - One of the oldest settlements in [[State of Idaho|Idaho]], [[Oxford]] was disincorporated in a December 9 [[Franklin County]] [[County Commissioners|Commission]] [[meeting]].
 
-[[Robert Swainston]], Franklin County Commissioner, said everyone from the mayor and council members approached the county and said maybe we should disincorporate the town. There is a process, and they followed it. Swainston said there wasn’t much opposition.
+[[Robert Swainston]], [[Franklin County]] [[County Commissioners|Commissioner]], said everyone from the [[mayor]] [[and]] [[city council|council members]] approached the county and said maybe we should disincorporate the town. There is a process, [[and]] they followed it. Swainston said there wasn’t much opposition.
 
 “We told them to make sure this is what you want to do before you do it,” he said. “It took them two three months to decide. They held a vote; they needed a super majority to do it, and it passed.”
 
