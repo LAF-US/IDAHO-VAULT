@@ -8,3 +8,5 @@ aliases:
 [[syntax]]
 
 [[codex]] 
+
+[[The world is quiet here.]] -LAF
