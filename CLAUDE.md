@@ -1,3 +1,4 @@
+"Claude" persona ; [[Anthropic]] [[AI]] [[agent]] [[voice]] 
 # CLAUDE.md — IDAHO-VAULT
 
 This file is loaded automatically by Claude Code sessions working in this repository. It is the single-source-of-truth for how Claude should operate in this vault.
