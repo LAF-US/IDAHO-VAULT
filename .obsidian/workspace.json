@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "6e78118635a65560",
+        "id": "300a82039dc3f218",
         "type": "tabs",
         "children": [
           {
-            "id": "05664a671cfad466",
+            "id": "81bb98ef02d1eb29",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -80,8 +80,7 @@
               "title": "Recent Files"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -120,7 +119,7 @@
               "type": "outgoing-link",
               "state": {
                 "linksCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               },
               "icon": "links-going-out",
               "title": "Outgoing links"
@@ -199,13 +198,25 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "05664a671cfad466",
+  "active": "81bb98ef02d1eb29",
   "lastOpenFiles": [
+    "The world is quiet here..md",
+    "Young Lady.md",
+    "and.md",
+    "X LABELER/x hey you make sure to link these/2025-01-22 - Cache Valley Daily - Oxford City, with its rich history, disincorporated in December.md",
+    "system.md",
+    "OBSIDIAN DAILY NOTE.md",
+    "Office of Information Technology Services.md",
+    "dailynote.md",
+    "OITS.md",
+    "Untitled.base",
+    "Bartimaeus.md",
+    "DJINNI.md",
+    "FOOTNOTE.md",
     "(US).md",
     "HORIZON.md",
     "(v0.0).md",
     "-LF.md",
-    "OBSIDIAN DAILY NOTE.md",
     "passkeys.md",
     "passwords.md",
     "IDEA.md",
@@ -216,17 +227,6 @@
     "BLOB.md",
     "ALTURAS.md",
     "MAGNUS.md",
-    "PROJECT.md",
-    "OITS.md",
-    "Office of Information Technology Services.md",
-    "UNIFIED.md",
-    "SWARM.md",
-    "template.md",
-    "format.md",
-    "Obsidian.md",
-    "TOPICS/artificial intelligence.md",
-    "AI.md",
-    "CLAUDE.md",
     "and"
   ]
 }
