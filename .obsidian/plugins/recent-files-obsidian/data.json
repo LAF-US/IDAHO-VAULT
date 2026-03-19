@@ -5,6 +5,26 @@
       "path": "2026-03-19.md"
     },
     {
+      "basename": "'.'",
+      "path": "'.'.md"
+    },
+    {
+      "basename": "The world is quiet here.",
+      "path": "The world is quiet here..md"
+    },
+    {
+      "basename": "The Garden of Proserpine",
+      "path": "The Garden of Proserpine.md"
+    },
+    {
+      "basename": "Act",
+      "path": "Act.md"
+    },
+    {
+      "basename": "- INVESTIGATE WEST - Guarded by Predators",
+      "path": "SOURCES/x hey you make sure to link these/- INVESTIGATE WEST - Guarded by Predators.md"
+    },
+    {
       "basename": "LIFE",
       "path": "LIFE.md"
     },
@@ -15,10 +35,6 @@
     {
       "basename": "GitHub Docs - About rulesets",
       "path": "GitHub Docs - About rulesets.md"
-    },
-    {
-      "basename": "The world is quiet here.",
-      "path": "The world is quiet here..md"
     },
     {
       "basename": "Young Lady",
@@ -109,10 +125,6 @@
       "path": "definition.md"
     },
     {
-      "basename": "Act",
-      "path": "Act.md"
-    },
-    {
       "basename": "legislative",
       "path": "legislative.md"
     },
@@ -187,18 +199,6 @@
     {
       "basename": "synonym",
       "path": "synonym.md"
-    },
-    {
-      "basename": "DEFINE",
-      "path": "DEFINE.md"
-    },
-    {
-      "basename": "Consumer Price Index",
-      "path": "Consumer Price Index.md"
-    },
-    {
-      "basename": "budgets",
-      "path": "budgets.md"
     }
   ],
   "omittedPaths": [],
