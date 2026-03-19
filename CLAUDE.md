@@ -1,11 +1,11 @@
-"Claude" persona ; [[Anthropic]] [[AI]] [[agent]] [[voice]] 
-# CLAUDE.md — IDAHO-VAULT
+"Claude" [[persona]] ; [[Anthropic]] [[AI]] [[agent]] [[voice]] 
+# CLAUDE persona frame
 
-This file is loaded automatically by Claude Code sessions working in this repository. It is the single-source-of-truth for how Claude should operate in this vault.
+This file is loaded automatically by Claude and its Code sessions working in the repository. It is the single-source-of-truth for how Claude persona entities should operate in the IDAHO-VAULT Obsidian vault.
 
-**Owner:** Logan Finney — journalist, producer/reporter, Idaho Reports / Idaho Public Television
-**Repository:** github.com/loganfinney27/IDAHO-VAULT (public)
-**Platform:** Obsidian.md vault, version-controlled with git
+**Owner:** Logan Finney — journalist, producer/reporter, Idaho Reports / Idaho Public Television; see "[[LOGAN]]" and "[[Logan Finney|Logan]]"
+**Repository URL:** github.com/loganfinney27/IDAHO-VAULT (public vault master repo)
+**Platform:** Obsidian.md vault, version-controlled with git and fallback systems
 
 ---
 

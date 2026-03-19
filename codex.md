@@ -1,1 +1,1 @@
-[[DEFINE]] [[term]] 
+[[DEFINE]] [[term]]s - to-do list item

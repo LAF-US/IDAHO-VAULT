@@ -204,8 +204,6 @@ Date:   2026-03-16 (timestamp)
 ## TIME-SENSITIVE NOTES
 
 - **Slack free trial expires:** April 13, 2026
-- **JFAC CCA letter deadline:** ~March 18, 2026 (ACTIVE STORY)
-- **Data Centers package:** Logan's current offline work
 
 ---
 
