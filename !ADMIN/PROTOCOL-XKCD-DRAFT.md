@@ -4,14 +4,15 @@ tags:
 updated: 2026-03-17
 status: draft
 source: commit
-author: PERMANENT: AUTHORITY: CODE
+author:
+  - CODE AUTHORITY
 ---
 
 # PROTOCOL: XKCD — Cross-Kind Communication Directive
 
 **Status:** DRAFT — awaiting Logan's review and synthesis
 **Proposed by:** CODE AUTHORITY session (2026-03-17)
-**Authority:** Subordinate to [[Constitution.md]]. Extends [[PROTOCOL.md]].
+**Authority:** Subordinate to [[CONSTITUTION]]. Extends [[PROTOCOL]].
 
 ---
 
@@ -22,7 +23,7 @@ author: PERMANENT: AUTHORITY: CODE
 
 ## I. PURPOSE
 
-XKCD governs how information moves **between conversations, agents, and sessions** in the vault ecosystem. It addresses a structural gap: the vault has governance (Constitution), vocabulary (PROTOCOL), and agent registry (AGENTS), but no formal rules for **what happens when one instance needs to tell another instance something**.
+XKCD governs how information moves **between conversations, agents, and sessions** in the vault ecosystem. It addresses a structural gap: the vault has governance (Constitution), vocabulary (Protocols), and voice registry (Agents), but no formal rules for **what happens when one instance needs to tell another instance something**.
 
 The current state is ad hoc — LEVELSETs, handoff documents, Slack relays, and Logan acting as manual router. XKCD proposes a standardized, auditable, minimal framework.
 
@@ -49,7 +50,7 @@ XKCD does **not** replace:
 Agents cannot read each other's context. Every cross-conversation transfer must be **explicit, written, and committed**. If it's not in the vault, it didn't happen.
 
 ### 2. Logan Is the Router
-All inter-agent communication passes through [[Logan]]. No peer-to-peer. No assumed relay. If Logan didn't carry the message, it wasn't delivered.
+All inter-agent communication passes through [[LOGAN]]. No peer-to-peer. No assumed relay. If Logan didn't carry the message, it wasn't delivered.
 
 ### 3. Durable Over Ephemeral
 Slack messages, conversation context, and verbal instructions decay. Vault files persist. Any decision or state that must survive a session boundary gets written to a file.
@@ -163,11 +164,11 @@ If adopted, XKCD would require updates to:
 
 | File | Change |
 |---|---|
-| [[Constitution.md]] | Add XKCD to governance stack reference |
-| [[PROTOCOL.md]] | Add SIGNAL, REQUEST, SYNC, PATCH, ECHO to vocabulary |
-| [[AGENTS.md]] | Add communication class permissions per agent |
-| [[DECISIONS.md]] | Log adoption as a new decision |
-| [[LEVELSET.md]] | Reference XKCD trigger table for checkpoint rules |
+| [[CONSTITUTION]] | Add XKCD to governance stack reference |
+| [[PROTOCOL]] | Add SIGNAL, REQUEST, SYNC, PATCH, ECHO to vocabulary |
+| [[AGENTS]] | Add communication class permissions per agent |
+| [[DECISIONS]] | Log adoption as a new decision |
+| [[LEVELSET]] | Reference XKCD trigger table for checkpoint rules |
 
 ---
 

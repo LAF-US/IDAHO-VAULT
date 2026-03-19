@@ -7,7 +7,7 @@ source: commit
 ---
 # PROTOCOL.md — Pending Ambiguity Resolutions
 
-Six overlaps in `PROTOCOL.md` require [[Logan]]'s direction. For each: the question, CODE AUTHORITY's recommendation, and options. These are advisory — [[Logan]] decides.
+Six overlaps in `PROTOCOL.md` require [[LOGAN]]'s direction. For each: the question, CODE AUTHORITY's recommendation, and options. These are advisory — [[LOGAN]] decides.
 
 ---
 
