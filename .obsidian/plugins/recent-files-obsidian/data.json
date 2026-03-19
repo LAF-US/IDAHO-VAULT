@@ -1,16 +1,20 @@
 {
   "recentFiles": [
     {
+      "basename": "2026-03-19",
+      "path": "2026-03-19.md"
+    },
+    {
+      "basename": "LIFE",
+      "path": "LIFE.md"
+    },
+    {
       "basename": "GitHub Docs - Plan, ask questions, and iterate on code with Copilot coding agent",
       "path": "GitHub Docs - Plan, ask questions, and iterate on code with Copilot coding agent.md"
     },
     {
       "basename": "GitHub Docs - About rulesets",
       "path": "GitHub Docs - About rulesets.md"
-    },
-    {
-      "basename": "2026-03-19",
-      "path": "2026-03-19.md"
     },
     {
       "basename": "The world is quiet here.",
@@ -195,10 +199,6 @@
     {
       "basename": "budgets",
       "path": "budgets.md"
-    },
-    {
-      "basename": "DAILY NOTE",
-      "path": "DAILY NOTE.md"
     }
   ],
   "omittedPaths": [],

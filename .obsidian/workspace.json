@@ -11,10 +11,15 @@
             "id": "4d400b0f8c56b0dc",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "2026-03-19.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "2026-03-19"
             }
           }
         ]
@@ -119,11 +124,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "2026-03-19.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from 2026-03-19"
             }
           },
           {
@@ -201,6 +207,8 @@
   },
   "active": "4d400b0f8c56b0dc",
   "lastOpenFiles": [
+    "LIFE.md",
+    "2026-03-19.md",
     "!ADMINISTRATION/SUNSET-PROCESS.md",
     "!ADMINISTRATION/LEVELSET-SUNSET-sunset-agents.md",
     "!ADMINISTRATION/LEVELSET-SUNSET-levelset-reports.md",
@@ -211,7 +219,6 @@
     "!ADMINISTRATION",
     "GitHub Docs - Plan, ask questions, and iterate on code with Copilot coding agent.md",
     "GitHub Docs - About rulesets.md",
-    "2026-03-19.md",
     "DOCUMENTS/Sign_Chart_Supplement.pdf",
     "MAPS/Legislative District Map 2021.pdf",
     "DOCUMENTS/Historic Survey of Roads in Idaho’s State Highway System Volume 2 - Application of the National Register of Historic Places Criteria for Evaluation.pdf",
@@ -235,7 +242,6 @@
     "DEDICATION - DUNE.md",
     "PERSEPHONE.md",
     "¿ Have you been good to your mother, young lady.md",
-    "ALPHABET.md",
     "!ADMIN/PERSONALITIES",
     "!ADMIN/CONVERSATIONS",
     "!ADMIN/TEMPLATES"
