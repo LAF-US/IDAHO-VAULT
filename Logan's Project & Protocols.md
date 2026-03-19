@@ -1,1 +1,6 @@
-[[UNITY]] (v0.0) :: US alignment --- "The world is quiet here." -LAF 
+[[UNITY]] [[(v0.0)]] :: [[US]] alignment 
+
+See ; [[CONSTITUTION]] and [[FRAMEWORKS]]
+
+--- 
+[["The world is quiet here."]] -[[LOGAN|LAF]]
