@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "300a82039dc3f218",
+        "id": "297a50facd7e8316",
         "type": "tabs",
         "children": [
           {
-            "id": "81bb98ef02d1eb29",
+            "id": "4d400b0f8c56b0dc",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -80,7 +80,8 @@
               "title": "Recent Files"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -198,35 +199,45 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "81bb98ef02d1eb29",
+  "active": "4d400b0f8c56b0dc",
   "lastOpenFiles": [
-    "The world is quiet here..md",
-    "Young Lady.md",
-    "and.md",
-    "X LABELER/x hey you make sure to link these/2025-01-22 - Cache Valley Daily - Oxford City, with its rich history, disincorporated in December.md",
-    "system.md",
-    "OBSIDIAN DAILY NOTE.md",
-    "Office of Information Technology Services.md",
-    "dailynote.md",
-    "OITS.md",
-    "Untitled.base",
-    "Bartimaeus.md",
-    "DJINNI.md",
-    "FOOTNOTE.md",
-    "(US).md",
-    "HORIZON.md",
-    "(v0.0).md",
-    "-LF.md",
-    "passkeys.md",
-    "passwords.md",
-    "IDEA.md",
-    "PERSONAL.md",
-    "AUTHORITIES.md",
-    "FLAG.md",
-    "CHORUS.md",
-    "BLOB.md",
-    "ALTURAS.md",
-    "MAGNUS.md",
-    "and"
+    "!ADMINISTRATION/SUNSET-PROCESS.md",
+    "!ADMINISTRATION/LEVELSET-SUNSET-sunset-agents.md",
+    "!ADMINISTRATION/LEVELSET-SUNSET-levelset-reports.md",
+    "!ADMINISTRATION/LEVELSET-FINAL-sunset-agents.md",
+    "!ADMINISTRATION/LEVELSET-SUNSET-jfac-open-meetings.md",
+    "!ADMINISTRATION/LEVELSET-closure-notify.md",
+    "!ADMINISTRATION/AGENT-REGISTRY.md",
+    "!ADMINISTRATION",
+    "GitHub Docs - Plan, ask questions, and iterate on code with Copilot coding agent.md",
+    "GitHub Docs - About rulesets.md",
+    "2026-03-19.md",
+    "DOCUMENTS/Sign_Chart_Supplement.pdf",
+    "MAPS/Legislative District Map 2021.pdf",
+    "DOCUMENTS/Historic Survey of Roads in Idaho’s State Highway System Volume 2 - Application of the National Register of Historic Places Criteria for Evaluation.pdf",
+    "DOCUMENTS/History of Property Tax in Idaho.pdf",
+    "MAPS/Snake River Dams.jpg",
+    "DOCUMENTS/Broadband Strategic Plan.pdf",
+    "MAPS/Wildlife Management Units.png",
+    "DOCUMENTS/ID Property Tax Limitations and Initiatives 1978–present.pdf",
+    "!ADMIN/!/LEVELSET.md",
+    "!ADMIN/!/AGENTS.md",
+    "!ADMIN/!/PROTOCOL.md",
+    "!ADMIN/CONTEXTS/CONTEXT-VAULT-2026-03-16.md",
+    "!ADMIN/CONTEXTS/CONSULTATION-PUBLIC-CONVERSATION-2026-03-16.md",
+    "!ADMIN/!/DECISIONS.md",
+    "!ADMIN/!/LOGAN.md",
+    "!ADMIN/Logan 1.md",
+    "!ADMIN/!/CONSTITUTION.md",
+    "!ADMIN/PERSONALITIES/CLAUDE.md",
+    "!ADMIN/!/ETHICS.md",
+    "!ADMIN/!/!README.md",
+    "DEDICATION - DUNE.md",
+    "PERSEPHONE.md",
+    "¿ Have you been good to your mother, young lady.md",
+    "ALPHABET.md",
+    "!ADMIN/PERSONALITIES",
+    "!ADMIN/CONVERSATIONS",
+    "!ADMIN/TEMPLATES"
   ]
 }
