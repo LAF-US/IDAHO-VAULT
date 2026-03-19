@@ -1,8 +1,9 @@
 ---
 aliases:
   - Butch Otter
-  - C.L. “Butch” Otter
-  - C.L. "Butch" Otter
+  - Butch
+  - Gov. Otter
+  - C. L. Otter
 tags:
   - Party/Republican
   - people/elected/statewide/governor
@@ -11,6 +12,6 @@ tags:
   - people/candidate/statewide/ltgov
 residence: "[[Boise]]"
 ---
-Former [[Governor]]
-- endorsed [[open primaries initiative]]
+Former [[Governor]] and [[Congressman]]
+- endorsed [[open primaries initiative]] ; later expressed negativity toward [[ranked choice voting]] element of Proposition 1
 - 
