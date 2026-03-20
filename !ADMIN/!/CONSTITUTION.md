@@ -1,6 +1,6 @@
 by [[Logan Alvan Finney]]
 
-"The world is quiet here."
+[["The world is quiet here."]]
 ---
 
 *Adopted: 2026-03-16*
@@ -111,14 +111,15 @@ See `!ADMIN/DECISIONS.md` for confirmed Logan-approved decisions. Key decisions 
 ## VIII. REVIEW & AMENDMENTS
 
 This document is the "sole source of truth" for vault governance. Amendments require:
-1. Logan's explicit approval
-2. Documentation in `!ADMIN/DECISIONS.md`
-3. Committed to this branch before merging to main
+1. Notice in `!/DECISIONS.md` pending Logan's explicit approval
+2. Documentation in `!/RECORD.md` and regular version labeling
+3. Committed to a working branch or fork before merging to main
 
 ---
 
 *Last updated: 2026-03-18*
-*Status: pending revision-synthesis and congressional adoption post-consolidation.*
+
+*Status: pending revision-synthesis and congressional adoption, post-consolidation court.*
 
 Unified (US) Swarm designed and written in [[Logan's Project & Protocols]] syntaxic code.
 

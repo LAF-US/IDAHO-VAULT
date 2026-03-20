@@ -37,6 +37,7 @@ Agentic integrations swarmed across multiple [[AI]] "[[assistant]]" [[persona]] 
 - [[Google]]: [[Gemini]], [[Assistant]], [[Drive]], [[Home]], [[NotebookLM]], [[Pinpoint]], [[Cloud]], and full [[Google ecosystem]] suite of web toolsets
 - [[Anthropic]]: [[Claude]]
 - [[OpenAI]]: [[ChatGPT]]
+- [[Spotify]]: [[DJ X]]
 - [[X]] / [[Xai]]: [[Grok]]
 - [[Perplexity]]: [[Perplexity]]
 - [[GitHub]]: [[Copilot]] (interface, repo coder)
