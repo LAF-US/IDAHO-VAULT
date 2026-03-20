@@ -1,12 +1,36 @@
 {
   "recentFiles": [
     {
-      "basename": "2026-02-03 - UIdaho Harvester - Cloned Mules!",
-      "path": "SOURCES/x hey you make sure to link these/2026-02-03 - UIdaho Harvester - Cloned Mules!.md"
+      "basename": "LEVELSET-TRANSMISSION-2026-03-16",
+      "path": "!ADMIN/LEVELSET-TRANSMISSION-2026-03-16.md"
+    },
+    {
+      "basename": "DJ X",
+      "path": "DJ X.md"
+    },
+    {
+      "basename": "THIS IS MY IMAGINATION, THIS IS HOW IT LOOKS AND SOUNDS",
+      "path": "THIS IS MY IMAGINATION, THIS IS HOW IT LOOKS AND SOUNDS.md"
+    },
+    {
+      "basename": "AJR",
+      "path": "AJR.md"
     },
     {
       "basename": "2026-03-19",
-      "path": "2026-03-19.md"
+      "path": "!/DAILYNOTES/2026-03-19.md"
+    },
+    {
+      "basename": "JEFF",
+      "path": "JEFF.md"
+    },
+    {
+      "basename": "Spring 2026 - Submissions Open - The Data-Driven Reporting Project",
+      "path": "SOURCES/x hey you make sure to link these/Spring 2026 - Submissions Open - The Data-Driven Reporting Project.md"
+    },
+    {
+      "basename": "2026-02-03 - UIdaho Harvester - Cloned Mules!",
+      "path": "SOURCES/x hey you make sure to link these/2026-02-03 - UIdaho Harvester - Cloned Mules!.md"
     },
     {
       "basename": "2025-06-23 - Pascal Pixel - Horse Browser for ADHD",
@@ -51,10 +75,6 @@
     {
       "basename": "ADAM",
       "path": "ADAM.md"
-    },
-    {
-      "basename": "JEFF",
-      "path": "JEFF.md"
     },
     {
       "basename": "SCOTT",
@@ -179,29 +199,11 @@
     {
       "basename": "AI",
       "path": "AI.md"
-    },
-    {
-      "basename": "CLAUDE",
-      "path": "CLAUDE.md"
-    },
-    {
-      "basename": "voice",
-      "path": "voice.md"
-    },
-    {
-      "basename": "vocal",
-      "path": "vocal.md"
-    },
-    {
-      "basename": "agent",
-      "path": "agent.md"
-    },
-    {
-      "basename": "Anthropic",
-      "path": "Anthropic.md"
     }
   ],
-  "omittedPaths": [],
+  "omittedPaths": [
+    ""
+  ],
   "maxLength": null,
   "openType": "tab"
 }
