@@ -4,22 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "a7d1daec3d581a57",
+        "id": "f9b4d7621786dcd2",
         "type": "tabs",
         "children": [
           {
-            "id": "3f79d89a78330113",
+            "id": "47493dc8d792be7a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "SOURCES/x hey you make sure to link these/2026-02-03 - UIdaho Harvester - Cloned Mules!.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "2026-02-03 - UIdaho Harvester - Cloned Mules!"
+              "title": "New tab"
             }
           }
         ]
@@ -167,13 +162,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SOURCES/x hey you make sure to link these/2026-02-03 - UIdaho Harvester - Cloned Mules!.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2026-02-03 - UIdaho Harvester - Cloned Mules!"
+              "title": "Outline"
             }
           },
           {
@@ -205,12 +199,18 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "3f79d89a78330113",
+  "active": "47493dc8d792be7a",
   "lastOpenFiles": [
-    "2026-03-19.md",
+    "!/DAILYNOTES/2026-03-19.md",
+    "!ADMIN/LEVELSET-TRANSMISSION-2026-03-16.md",
+    "DJ X.md",
+    "THIS IS MY IMAGINATION, THIS IS HOW IT LOOKS AND SOUNDS.md",
+    "AJR.md",
+    "!/DAILYNOTES/2026-03-19 1.md",
+    "JEFF.md",
+    "SOURCES/x hey you make sure to link these/Spring 2026 - Submissions Open - The Data-Driven Reporting Project.md",
     "SOURCES/x hey you make sure to link these/2026-02-03 - UIdaho Harvester - Cloned Mules!.md",
     "SOURCES/x hey you make sure to link these/2025-06-23 - Pascal Pixel - Horse Browser for ADHD.md",
-    "!/2026-03-19.md",
     "HERE BE DRAGONS.md",
     "FORTUNE FAVORS THE BRAVE.md",
     "FLAGS.md",
@@ -227,14 +227,8 @@
     "what3words.md",
     "Logan Alvan Finney.md",
     "Spotify.md",
-    "DJ X.md",
-    "SOURCES/x hey you make sure to link these/Horse - The Browser for ADHD - Feeling Overwhelmed by Normal Browsers - Horse Browser.md",
-    "SOURCES/x hey you make sure to link these/Horse - Research & Browsers - Horse Browser.md",
-    "FEDIVERSE.md",
-    "SOURCES/x hey you make sure to link these/2024-06-16 - creativerly - I do not like horses except this one - with Horse Browser.md",
-    "!/DAILYNOTE",
+    "!/DAILYNOTES",
     "!",
-    "self.md",
     "SOURCES/x hey you make sure to link these",
     "!ADMINISTRATION",
     "DOCUMENTS/Sign_Chart_Supplement.pdf",
