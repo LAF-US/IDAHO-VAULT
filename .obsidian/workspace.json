@@ -11,10 +11,15 @@
             "id": "47493dc8d792be7a",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "!/DAILYNOTES/2026-03-20 1.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "2026-03-20 1"
             }
           }
         ]
@@ -80,8 +85,7 @@
               "title": "Recent Files"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -162,12 +166,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "!/DAILYNOTES/2026-03-20 1.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of 2026-03-20 1"
             }
           },
           {
@@ -201,7 +206,14 @@
   },
   "active": "47493dc8d792be7a",
   "lastOpenFiles": [
+    "!/DAILYNOTES/2026-03-20.md",
+    "!/DAILYNOTES/2026-03-20 1.md",
+    "it’s the truth even if it didn’t happen.md",
+    "One Flew Over the Cuckoo's Nest.md",
     "!/DAILYNOTES/2026-03-19.md",
+    "!/DAILYNOTES/2026-03-19 1.md",
+    "2026-03-19.md",
+    "SOUNDTRACK.md",
     "!ADMIN/LEVELSET-TRANSMISSION-2026-03-16.md",
     "DJ X.md",
     "THIS IS MY IMAGINATION, THIS IS HOW IT LOOKS AND SOUNDS.md",
@@ -220,13 +232,6 @@
     "RED AND GOLD.md",
     "SILVER AND BLUE.md",
     "RED AND BLUE.md",
-    "KILROY WAS HERE.md",
-    "SILVER AND GOLD.md",
-    "BRAVE AND BOLD.md",
-    "Elon Musk.md",
-    "what3words.md",
-    "Logan Alvan Finney.md",
-    "Spotify.md",
     "!/DAILYNOTES",
     "!",
     "SOURCES/x hey you make sure to link these",
