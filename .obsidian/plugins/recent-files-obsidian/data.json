@@ -1,12 +1,20 @@
 {
   "recentFiles": [
     {
-      "basename": "2026-03-20 1",
-      "path": "!/DAILYNOTES/2026-03-20 1.md"
+      "basename": "THE LITTLE SNICKET LAD",
+      "path": "THE LITTLE SNICKET LAD.md"
     },
     {
       "basename": "2026-03-20",
       "path": "!/DAILYNOTES/2026-03-20.md"
+    },
+    {
+      "basename": "The world is quiet here.",
+      "path": "The world is quiet here..md"
+    },
+    {
+      "basename": "2026-03-20 1",
+      "path": "!/DAILYNOTES/2026-03-20 1.md"
     },
     {
       "basename": "it’s the truth even if it didn’t happen",
@@ -141,10 +149,6 @@
       "path": "'.'.md"
     },
     {
-      "basename": "The world is quiet here.",
-      "path": "The world is quiet here..md"
-    },
-    {
       "basename": "The Garden of Proserpine",
       "path": "The Garden of Proserpine.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "dailynote",
       "path": "dailynote.md"
-    },
-    {
-      "basename": "OITS",
-      "path": "OITS.md"
     }
   ],
   "omittedPaths": [
