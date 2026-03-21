@@ -1,1 +1,1 @@
-[[Logan]] & [[Aurora]] 
+[[LOGAN]] & [[Aurora]] 
