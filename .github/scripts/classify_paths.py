@@ -11,8 +11,6 @@ import json
 import sys
 
 HIGH_RISK_PREFIXES = (
-    "!ADMIN/",
-    "!ADMINISTRATION/",
     ".github/workflows/",
     ".github/scripts/",
 )
@@ -21,6 +19,14 @@ HIGH_RISK_EXACT = {
     "CLAUDE.md",
     ".gitignore",
     ".github/copilot-instructions.md",
+    "!ADMIN/Constitution.md",
+    "!ADMIN/DECISIONS.md",
+    "!ADMIN/AGENTS.md",
+    "!ADMIN/PROTOCOL.md",
+    "!ADMINISTRATION/Constitution.md",
+    "!ADMINISTRATION/DECISIONS.md",
+    "!ADMINISTRATION/AGENTS.md",
+    "!ADMINISTRATION/PROTOCOL.md",
 }
 
 LOW_RISK_PREFIXES = (
@@ -33,11 +39,18 @@ LOW_RISK_PREFIXES = (
     "ATTACHMENTS/",
     "X LABELER/",
     ".github/swarm/",
+    "!ADMIN/",
+    "!ADMINISTRATION/",
 )
 
 
 def classify(path: str) -> str:
-    """Return 'high' or 'low' for a single file path."""
+    """Return 'high' or 'low' for a single file path.
+
+    Exact matches are checked first so governance files under !ADMIN/
+    stay high-risk even though !ADMIN/ is otherwise low-risk
+    (LEVELSET reports, audit outputs, etc. are safe to auto-merge).
+    """
     if path in HIGH_RISK_EXACT:
         return "high"
     for prefix in HIGH_RISK_PREFIXES:
