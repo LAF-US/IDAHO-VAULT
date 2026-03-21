@@ -1,1 +1,1 @@
-[[ARCHITECTURE]] [[&]] [[INFRASTRUCTURE]]
+[[ARCHITECTURE]] [[&]] [[infrastructure]]
