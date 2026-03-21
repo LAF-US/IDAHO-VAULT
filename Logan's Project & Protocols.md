@@ -1,4 +1,4 @@
-[[UNITY]] [[(v0.0)]] :: [[US]] alignment 
+[[Unity]] [[(v0.0)]] :: [[US]] alignment 
 
 See ; [[CONSTITUTION]] and [[FRAMEWORKS]]
 
