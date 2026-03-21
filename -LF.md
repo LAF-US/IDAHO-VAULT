@@ -1,4 +1,4 @@
-[[LOGAN]] [[initial]]
+[[LOGAN]] [[initials]]
 
 ---
 ###### [["The world is quiet here."]]
