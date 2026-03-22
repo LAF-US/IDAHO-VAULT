@@ -45,3 +45,9 @@ Significant architectural decisions, recorded when made. Each entry is permanent
 **Decision:** Create instruction files for all active AI agents so each has consistent vault context: `CLAUDE.md` (already existed), `GEMINI.md` (new), and `.github/copilot-instructions.md` (new).
 **Context:** GitHub Copilot and Gemini advisory agents were operating without vault conventions. Consolidating instructions across all agents (Claude, Copilot, Gemini) ensures consistent behavior — same naming rules, frontmatter standards, sourcing protocols, and git practices.
 **Decided by:** Logan Finney
+
+## 2026-03-22 — STEP-0 LEVELSET prompt for external agents
+
+**Decision:** Create `!ADMIN/LEVELSET-STEP-0-EXTERNAL-AGENT.md` — a paste-to-agent orientation prompt for chat-based agents (Claude.ai, Gemini, Grok, etc.) that cannot access the repository directly. When Logan starts a new external agent session, he pastes this prompt, and the agent responds with a 6-part LEVELSET report: who they are, what they know, what they've done, what is unresolved, what they need, and collision risks.
+**Context:** External agents operating via chat have no vault context unless Logan provides it. A standardized STEP-0 prompt ensures consistent orientation across all chat-based agents, reducing repeated discovery work and preventing agents from inventing governance structures or claiming capabilities they don't have.
+**Decided by:** Logan Finney
