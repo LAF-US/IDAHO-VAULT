@@ -1,11 +1,13 @@
+#!/usr/bin/env python3
 """
 state_manager.py — Minimal read/write/update interface for swarm run state.
 
 Usage:
-    python state_manager.py                     # Print current run state
-    python state_manager.py read                # Print current run state
-    python state_manager.py update "SECTION" "content"  # Update a section
-    python state_manager.py snapshot            # Archive current state
+    python swarm/tools/state_manager.py                          # Print current run state
+    python swarm/tools/state_manager.py read                     # Print current run state
+    python swarm/tools/state_manager.py update "SECTION" "content"  # Update a section
+    python swarm/tools/state_manager.py snapshot                 # Archive current state
+    python swarm/tools/state_manager.py archive                  # Archive current state (alias)
 """
 
 import sys
@@ -109,7 +111,7 @@ def main():
         content = args[2]
         update_section(section, content)
         print(f"Updated section: {section}")
-    elif args[0] == "snapshot":
+    elif args[0] in ("snapshot", "archive"):
         snapshot()
     else:
         print(__doc__)
