@@ -1,1 +1,0 @@
-[[County Sheriff]], [[Bannock County]] [[jails|jail]]

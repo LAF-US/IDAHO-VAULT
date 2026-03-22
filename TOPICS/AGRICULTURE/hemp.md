@@ -1,1 +1,0 @@
-[[cannabis]] raised for [[agriculture|agricultural]] purposes 

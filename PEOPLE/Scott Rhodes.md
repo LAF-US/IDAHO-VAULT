@@ -1,4 +1,0 @@
----
-aliases:
-  - Scott D. Rhodes
----

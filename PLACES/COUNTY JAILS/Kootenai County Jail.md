@@ -1,1 +1,0 @@
-[[County Sheriff]], [[Kootenai County]] [[jails|jail]]

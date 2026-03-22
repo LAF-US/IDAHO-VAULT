@@ -1,1 +1,0 @@
-[[plant]] that is harvested for [[hemp]] and [[marijuana]] 

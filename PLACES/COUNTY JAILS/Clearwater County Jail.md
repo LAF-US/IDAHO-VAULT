@@ -1,1 +1,0 @@
-[[County Sheriff]], [[Clearwater County]] [[jails|jail]]

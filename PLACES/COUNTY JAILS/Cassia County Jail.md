@@ -1,1 +1,0 @@
-[[County Sheriff]], [[Cassia  County]] [[jails|jail]]

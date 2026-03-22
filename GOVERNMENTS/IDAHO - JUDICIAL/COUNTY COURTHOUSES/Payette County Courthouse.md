@@ -1,1 +1,0 @@
-[[magistrate court]] [[Payette County]] [[courthouses|courthouse]] 

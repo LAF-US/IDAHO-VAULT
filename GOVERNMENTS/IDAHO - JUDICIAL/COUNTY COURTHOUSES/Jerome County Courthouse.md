@@ -1,1 +1,0 @@
-[[magistrate court]] [[Jerome County]] [[courthouses|courthouse]] 

@@ -1,1 +1,0 @@
-[[magistrate court]] [[Twin Falls County]] [[courthouses|courthouse]] 
