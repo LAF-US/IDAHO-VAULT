@@ -25,7 +25,7 @@ This is a personal journalism research vault. It contains notes on Idaho politic
 
 ```
 IDAHO-VAULT/
-  !/!                     Infrastructure, LEVELSET files, audit reports (canonical governance dir)
+  !/                      System files, logs, agent routing (see !README.md)
   ATTACHMENTS/
     DOCUMENTS/            PDFs, images
     MAPS/                 Map files
@@ -126,7 +126,7 @@ Use `[[Full Name]]` for all internal links — people, places, organizations, bi
 
 ## Governance
 
-This file provides operational instructions for Claude Code sessions. The canonical constitution is `!/!/Constitution.md`, maintained by PERSISTENT: ADMINISTRATION. When this file and `!/!/Constitution.md` conflict, `!/!/Constitution.md` governs.
+This file provides operational instructions for Claude Code sessions. The canonical constitution is `CONSTITUTION.md` (vault root). When this file and `CONSTITUTION.md` conflict, `CONSTITUTION.md` governs.
 
 ## Automation
 
@@ -173,7 +173,7 @@ Claude conversations follow a naming convention:
 
 ## LEVELSET Protocol
 
-LEVELSET is a permanent, auditable checkpoint protocol. LEVELSET files live in `!/!` and are never deleted, never overwritten. Each version is additive. See `!/!/LEVELSET.md` for current ecosystem status.
+LEVELSET is a permanent, auditable checkpoint protocol. LEVELSET files live at vault root and are never deleted, never overwritten. Each version is additive. See `LEVELSET.md` for current ecosystem status.
 
 ## SIGNAL Protocol
 
@@ -192,7 +192,7 @@ Signals are information, not authorization to act. COLLISION signals are always 
 
 ## Decision Log
 
-Significant architectural decisions are recorded in `DECISIONS.md`. When a decision is made about vault structure, naming, tooling, or process, log it there. When a decision is made about vault structure, naming, tooling, or process, log it there.
+Significant architectural decisions are recorded in `DECISIONS.md` (vault root). When a decision is made about vault structure, naming, tooling, or process, log it there.
 
 ---
 
@@ -209,8 +209,15 @@ Significant architectural decisions are recorded in `DECISIONS.md`. When a decis
 
 ## Multi-Agent Ecosystem
 
-This vault uses multiple AI tools. All agents share the same vault conventions. See also:
+This vault uses multiple AI tools. All agents share the same vault conventions and are coordinated via GitHub Issues and PRs. See the agent roles CSV (`Agent Swarm Management and Repository Constitution`) for the simplified role matrix.
+
+**Agent role (from CSV):** Claude Code is "The Abhorsen" — terminal & repository mechanics. Branch management, merges, structural commands. Must not hallucinate intent; only executes structural commands.
+
+**Coordination workflow:** Logan assigns tasks via GitHub Issues with agent labels (`agent:claude-code`, `agent:codex`, `agent:copilot`, `agent:gemini`). Each agent works on its own branch. PRs are the deliverable. Logan reviews and merges from GitHub.
+
+See also:
 - `CLAUDE.md` — This file (Claude Code, Anthropic)
 - `GEMINI.md` — Instructions for Gemini code agents (Google)
 - `.github/copilot-instructions.md` — Instructions for GitHub Copilot
-- `!/!/LEVELSET-STEP-0-EXTERNAL-AGENT.md` — Paste-to-agent LEVELSET prompt for chat agents without repo access
+- `!/LEVELSET-STEP-0-EXTERNAL-AGENT.md` — Paste-to-agent LEVELSET prompt for chat agents without repo access
+- `AGENTS.md` — Full agent registry, capability tiers, and boundary rules

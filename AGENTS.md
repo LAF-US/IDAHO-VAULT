@@ -1,7 +1,7 @@
 ---
 tags:
   - administration/agents
-updated: 2026-03-16
+updated: 2026-03-22
 status: draft
 source: commit
 ---
@@ -34,7 +34,8 @@ All inter-agent communication flows through or is visible to [[LOGAN]]. There is
 | PERMANENT: AUTHORITY: CODE | Claude Code CLI | Direct write | IDAHO-VAULT repo operations, deployment, automation | Via [[LOGAN]] | Full repo read/write |
 | PERSISTENT: ADMINISTRATION | Claude (conversation) | Draft only | Constitutional layer, handoffs, judgment calls | Via [[LOGAN]]'s account | None — produces drafts |
 | GitHub Copilot (ADMIN GitHub) | GitHub Copilot | Multi-repo admin | GitHub administration across all [[LOGAN]]'s repos | Bot app needed | GitHub APIs, all repos |
-| Gemini | Google AI | **TBD — scope undefined** | **TBD** — Pixel smartphone, loganfinney27@gmail.com | Bot app needed | **TBD** |
+| ChatGPT Codex | OpenAI Codex | Direct write (scripting) | Specialized scripting — scrapers, GitHub Actions, complex logic | Via [[LOGAN]] | Repo read/write |
+| Gemini ("The Vault Advisor") | Google AI | Advisory | Narrative lens, political context, strategy. Does not touch code. | Via [[LOGAN]] | None |
 | PERSISTENT: IMPLEMENTATION | Claude (Project) | Read/analysis | Governance/architecture consultation | No | None — advisory only |
 | TASK: LEVELSET reports | Claude (conversation) | Read/analysis | Synthesis and status reporting | No | None — advisory only |
 | STORY: JFAC Open Meetings | Claude (conversation) | Read/analysis | JFAC investigation — read-only | No | None — advisory only |
@@ -59,7 +60,7 @@ Can commit and push to the repository. Must LEVELSET before significant commits.
 - `git add`, `git commit`, `git push` to feature branches
 - Create, modify, and delete vault files
 - Create and modify `.github/` scripts and workflows
-- Modify `!ADMIN/` governance files (CODE AUTHORITY only — see Boundary Rules)
+- Modify governance files at vault root (CODE AUTHORITY only — see Boundary Rules)
 - Run automation scripts
 
 **Cannot do:**
@@ -83,7 +84,7 @@ Can interact with GitHub APIs across all of [[LOGAN]]'s repositories. For vault 
 - Broader latitude — **specific boundaries TBD by [[LOGAN]]**
 
 **Cannot do (vault):**
-- Directly modify `!ADMIN/` governance files (Constitution, PROTOCOL, AGENTS, LEVELSET, DECISIONS)
+- Directly modify governance files (CONSTITUTION, PROTOCOL, AGENTS, LEVELSET, DECISIONS)
 - Merge without [[LOGAN]]'s approval
 - Override CODE AUTHORITY's governance review
 
@@ -125,7 +126,7 @@ Advisory only. No repository access.
 
 ### Current State: Logan as Relay
 
-Until Slack bot apps are configured for each agent, [[LOGAN]] manually relays all inter-agent communication. This is functional but adds latency.
+[[LOGAN]] coordinates agents via GitHub Issues and PRs. Tasks are assigned with agent labels (`agent:claude-code`, `agent:codex`, `agent:copilot`, `agent:gemini`). Each agent works on its own branch; PRs are the deliverable. See the agent roles CSV (`Agent Swarm Management and Repository Constitution`) for the simplified role matrix.
 
 ### Communication Protocol
 
@@ -156,17 +157,17 @@ Re: [Subject]
 ROUTING INSTRUCTION: [How Logan should relay this]
 ```
 
-Handoff documents are saved to `!ADMIN/` as `HANDOFF-[source]-[date].md` for audit trail.
+Handoff documents are saved to vault root as `HANDOFF-[source]-[date].md` for audit trail.
 
 ### Routing Layers
 
 | Layer | Purpose | Persistence | Status |
 |---|---|---|---|
-| **Slack** | Real-time coordination, supervision | Ephemeral | Trial active — expires April 13 |
-| **`!ADMIN/` files** | Decisions of record, governance | Permanent | Active |
-| **`!ADMIN/ROUTING/`** | Asynchronous handoff drops | Permanent | Recommended, not yet created |
+| **GitHub Issues/PRs** | Task assignment, coordination, review | Permanent | Active |
+| **Vault root files** | Decisions of record, governance | Permanent | Active |
+| **`!/`** | System files, logs, agent routing | Permanent | Active |
 
-**Hard rule:** Slack is ephemeral. All decisions must be captured in vault files. Slack is where the conversation happens; `!ADMIN/` is where decisions land.
+**Hard rule:** All decisions must be captured in vault files. GitHub is the coordination layer; vault root is where decisions land.
 
 ---
 
@@ -176,8 +177,8 @@ Handoff documents are saved to `!ADMIN/` as `HANDOFF-[source]-[date].md` for aud
 
 | Path | CODE AUTHORITY | Copilot | ADMINISTRATION | Others |
 |---|---|---|---|---|
-| `!ADMIN/` governance files | Read/Write | Read only | Draft only | Read only |
-| `!ADMIN/` handoffs/LEVELSETs | Read/Write | Read only | Draft only | Read only |
+| Governance files (vault root) | Read/Write | Read only | Draft only | Read only |
+| Handoffs/LEVELSETs (vault root) | Read/Write | Read only | Draft only | Read only |
 | `.github/workflows/` | Read/Write | Read/Write (with review) | No access | No access |
 | `.github/scripts/` | Read/Write | Read/Write (with review) | No access | No access |
 | Vault content (all other `.md`) | Read/Write | Read only (vault) | No access | No access |
@@ -215,7 +216,7 @@ If a `git merge` or `git pull` produces conflicts:
 1. **STOP.** Do not auto-resolve.
 2. Report to [[LOGAN]] with the specific files and conflict markers
 3. Conflicts signal another conversation has been active — context may be stale
-4. Re-read `!ADMIN/LEVELSET.md` and `!ADMIN/Constitution.md` to reorient
+4. Re-read `LEVELSET.md` and `CONSTITUTION.md` (vault root) to reorient
 
 ---
 
@@ -227,8 +228,7 @@ These items require [[LOGAN]]'s direction before they can be formalized:
 |---|---|---|
 | Gemini capability tier and scope | **Undefined** | Pixel smartphone, loganfinney27@gmail.com. No vault commits until defined. |
 | Copilot non-vault repo boundaries | **TBD** | Multi-repo admin decided; specific latitude per repo not yet specified. |
-| Slack bot apps | **Blocked** | [[LOGAN]] must configure before agents can post independently. |
-| `!ADMIN/ROUTING/` folder | **Recommended** | File-based async handoff drops. Not yet created. |
+| GitHub agent labels | **Active** | `agent:claude-code`, `agent:codex`, `agent:copilot`, `agent:gemini` |
 | Research instance (Tier 4) | **Not yet assigned** | Tim Oren analysis, NICAR23 training queued when available. |
 | Grok scope and boundaries | **Minimal** | Research/web search role identified. No vault access. |
 | M365 Copilot role | **Informational only** | No repo involvement. |
