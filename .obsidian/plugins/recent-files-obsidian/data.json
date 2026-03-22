@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "2026-03-22",
+      "path": "2026-03-22.md"
+    },
+    {
       "basename": "CONSTITUTION",
       "path": "CONSTITUTION.md"
     },
@@ -71,10 +75,6 @@
     {
       "basename": "!README",
       "path": "!README.md"
-    },
-    {
-      "basename": "2026-03-22",
-      "path": "2026-03-22.md"
     },
     {
       "basename": "QUESTION",
@@ -195,10 +195,6 @@
     {
       "basename": "PRIVATE",
       "path": "PRIVATE.md"
-    },
-    {
-      "basename": "FRAMEWORK",
-      "path": "FRAMEWORK.md"
     }
   ],
   "omittedPaths": [
