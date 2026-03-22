@@ -1,6 +1,114 @@
 {
   "recentFiles": [
     {
+      "basename": "CONSTITUTION",
+      "path": "CONSTITUTION.md"
+    },
+    {
+      "basename": "TOUCHSTONE",
+      "path": "TOUCHSTONE.md"
+    },
+    {
+      "basename": "FRAMEWORKS",
+      "path": "FRAMEWORKS.md"
+    },
+    {
+      "basename": "THE CORE",
+      "path": "THE CORE.md"
+    },
+    {
+      "basename": "MIND",
+      "path": "MIND.md"
+    },
+    {
+      "basename": "CHARTER",
+      "path": "CHARTER.md"
+    },
+    {
+      "basename": "CODEX",
+      "path": "CODEX.md"
+    },
+    {
+      "basename": "THE PERIPHERY",
+      "path": "THE PERIPHERY.md"
+    },
+    {
+      "basename": "BODY",
+      "path": "BODY.md"
+    },
+    {
+      "basename": "PROTOCOLS",
+      "path": "PROTOCOLS.md"
+    },
+    {
+      "basename": "PROCEDURES",
+      "path": "PROCEDURES.md"
+    },
+    {
+      "basename": "PREFERENCES",
+      "path": "PREFERENCES.md"
+    },
+    {
+      "basename": "THE GHOST",
+      "path": "THE GHOST.md"
+    },
+    {
+      "basename": "SOUL",
+      "path": "SOUL.md"
+    },
+    {
+      "basename": "GUIDELINES",
+      "path": "GUIDELINES.md"
+    },
+    {
+      "basename": "GUESTBOOK",
+      "path": "GUESTBOOK.md"
+    },
+    {
+      "basename": "GRIMOIRE",
+      "path": "GRIMOIRE.md"
+    },
+    {
+      "basename": "!README",
+      "path": "!README.md"
+    },
+    {
+      "basename": "2026-03-22",
+      "path": "2026-03-22.md"
+    },
+    {
+      "basename": "QUESTION",
+      "path": "QUESTION.md"
+    },
+    {
+      "basename": "PROTOCOL",
+      "path": "PROTOCOL.md"
+    },
+    {
+      "basename": "PROTOCOL-XKCD-DRAFT 1",
+      "path": "PROTOCOL-XKCD-DRAFT 1.md"
+    },
+    {
+      "basename": "¿ I didn't realize this was a sad occasion",
+      "path": "¿ I didn't realize this was a sad occasion.md"
+    },
+    {
+      "basename": "WRONG QUESTIONS",
+      "path": "WRONG QUESTIONS.md"
+    },
+    {
+      "basename": "DOWN",
+      "path": "DOWN.md"
+    },
+    {
+      "basename": "RIGHT",
+      "path": "RIGHT.md"
+    },
+    {
+      "basename": "MIND-BODY-SOUL",
+      "path": "MIND-BODY-SOUL.md"
+    },
+    {
       "basename": "2026-03-19 2",
       "path": "2026-03-19 2.md"
     },
@@ -19,10 +127,6 @@
     {
       "basename": "!README",
       "path": "!/!README.md"
-    },
-    {
-      "basename": "PROTOCOL-XKCD-DRAFT 1",
-      "path": "PROTOCOL-XKCD-DRAFT 1.md"
     },
     {
       "basename": "2026-03-21",
@@ -57,14 +161,6 @@
       "path": "UP.md"
     },
     {
-      "basename": "DOWN",
-      "path": "DOWN.md"
-    },
-    {
-      "basename": "RIGHT",
-      "path": "RIGHT.md"
-    },
-    {
       "basename": "RIGHT QUESTIONS",
       "path": "RIGHT QUESTIONS.md"
     },
@@ -73,24 +169,12 @@
       "path": "QUESTIONS.md"
     },
     {
-      "basename": "QUESTION",
-      "path": "QUESTION.md"
-    },
-    {
-      "basename": "WRONG QUESTIONS",
-      "path": "WRONG QUESTIONS.md"
-    },
-    {
       "basename": "WRONG",
       "path": "WRONG.md"
     },
     {
       "basename": "ANSWERS",
       "path": "ANSWERS.md"
-    },
-    {
-      "basename": "¿ I didn't realize this was a sad occasion",
-      "path": "¿ I didn't realize this was a sad occasion.md"
     },
     {
       "basename": "Logan's Project & Protocols",
@@ -113,92 +197,8 @@
       "path": "PRIVATE.md"
     },
     {
-      "basename": "CONSTITUTION",
-      "path": "CONSTITUTION.md"
-    },
-    {
-      "basename": "FRAMEWORKS",
-      "path": "FRAMEWORKS.md"
-    },
-    {
       "basename": "FRAMEWORK",
       "path": "FRAMEWORK.md"
-    },
-    {
-      "basename": "LOGAN",
-      "path": "LOGAN.md"
-    },
-    {
-      "basename": "UNIFIED (US) SWARM",
-      "path": "UNIFIED (US) SWARM.md"
-    },
-    {
-      "basename": "UNIFIED",
-      "path": "UNIFIED.md"
-    },
-    {
-      "basename": "SWARM",
-      "path": "SWARM.md"
-    },
-    {
-      "basename": "US",
-      "path": "US.md"
-    },
-    {
-      "basename": "-30-",
-      "path": "-30-.md"
-    },
-    {
-      "basename": "'.'",
-      "path": "'.'.md"
-    },
-    {
-      "basename": "TOUCHSTONE",
-      "path": "TOUCHSTONE.md"
-    },
-    {
-      "basename": "PREFERENCES",
-      "path": "PREFERENCES.md"
-    },
-    {
-      "basename": "PROCEDURES",
-      "path": "PROCEDURES.md"
-    },
-    {
-      "basename": "PROTOCOLS",
-      "path": "PROTOCOLS.md"
-    },
-    {
-      "basename": "CODEX",
-      "path": "CODEX.md"
-    },
-    {
-      "basename": "CHARTER",
-      "path": "CHARTER.md"
-    },
-    {
-      "basename": "-LF",
-      "path": "-LF.md"
-    },
-    {
-      "basename": "2023-01-11 - LITTLE - Gov. Little announces staff changes",
-      "path": "2023-01-11 - LITTLE - Gov. Little announces staff changes.md"
-    },
-    {
-      "basename": "initialization",
-      "path": "initialization.md"
-    },
-    {
-      "basename": "-LAF",
-      "path": "-LAF.md"
-    },
-    {
-      "basename": "Wyoming",
-      "path": "Wyoming.md"
-    },
-    {
-      "basename": "University of Washington",
-      "path": "University of Washington.md"
     }
   ],
   "omittedPaths": [
