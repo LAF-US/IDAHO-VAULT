@@ -16,7 +16,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 VAULT_ROOT = Path(".")
-ADMIN_DIR = VAULT_ROOT / "!ADMINISTRATION"
+ADMIN_DIR = VAULT_ROOT / "!ADMIN"
 GITHUB_DIR = VAULT_ROOT / ".github"
 
 HIGH_CONFIDENCE_REASONS = {

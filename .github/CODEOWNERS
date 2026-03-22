@@ -3,6 +3,6 @@
 # These paths require Logan's explicit review before merge.
 
 CLAUDE.md @loganfinney27
-/!ADMINISTRATION/ @loganfinney27
+/!ADMIN/ @loganfinney27
 /.github/workflows/ @loganfinney27
 /.github/scripts/ @loganfinney27

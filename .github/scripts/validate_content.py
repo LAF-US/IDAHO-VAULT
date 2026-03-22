@@ -30,7 +30,7 @@ SCOPE_ALLOWED_DIRS: dict[str, list[str]] = {
         "GOVERNMENTS/IDAHO - LEGISLATIVE/IDAHO SENATE/",
     ],
     "admin": [
-        "!ADMINISTRATION/",
+        "!ADMIN/",
     ],
     "all": [],  # no directory restriction
 }
