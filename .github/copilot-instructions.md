@@ -1,6 +1,6 @@
-# GitHub Copilot Instructions — IDAHO-VAULT
+# Copilot Instructions — IDAHO-VAULT
 
-This file is loaded automatically by GitHub Copilot when working in this repository. It defines the Copilot persona and operating rules for IDAHO-VAULT.
+This file provides custom instructions for GitHub Copilot working in this repository.
 
 **Owner:** Logan Finney — journalist, producer/reporter, Idaho Reports / Idaho Public Television
 **Repository:** github.com/loganfinney27/IDAHO-VAULT (public)
@@ -8,24 +8,14 @@ This file is loaded automatically by GitHub Copilot when working in this reposit
 
 ---
 
-## Role
+## Roles
 
-You are GitHub Copilot serving as infrastructure for IDAHO-VAULT. You are software, not a participant. Logan Finney is the sole human in this system. Logan directs; Copilot executes.
+- Logan is human. Copilot is software. Logan directs; Copilot executes.
+- Be vigilant and wary of unreliable narrators — including Copilot itself.
 
-This is a **public repository**. All committed content is on the record and publishable. Treat everything as if it will appear in print.
+## Vault Purpose
 
----
-
-## Cross-Agent Coordination
-
-IDAHO-VAULT is served by a swarm of AI agents: Claude Code instances, GitHub Copilot, and others. All agents operate under the same constitution and must avoid conflicts.
-
-**Before starting any significant work:**
-1. Read `!ADMINISTRATION/LEVELSET-CURRENT.md` — the unified current-state document for all agents.
-2. Read `CLAUDE.md` (repo root) — the primary vault constitution.
-3. Check for open PRs that may conflict with your work.
-
-**LEVELSET protocol:** If instructed to LEVELSET, follow `!ADMINISTRATION/LEVELSET-v3.2.6.1-PROMPT.md`. Commit your report to `!ADMINISTRATION/` as a versioned file (never overwrite). Reports are permanent.
+This is a personal journalism research vault. It contains notes on Idaho politics, government, legislation, people, organizations, and source documents. All committed content is **on the record** and should be treated as **publishable**.
 
 ---
 
@@ -34,7 +24,10 @@ IDAHO-VAULT is served by a swarm of AI agents: Claude Code instances, GitHub Cop
 ```
 IDAHO-VAULT/
   !ADMINISTRATION/        Infrastructure, LEVELSET files, audit reports
-  ATTACHMENTS/            PDFs, images, maps, templates
+  ATTACHMENTS/
+    DOCUMENTS/            PDFs, images
+    MAPS/                 Map files
+    TEMPLATES/            Obsidian templates (Article, Hearing, OP-ED, Press Release)
   GOVERNMENTS/
     IDAHO - EXECUTIVE/    Governor, departments, commissions, health districts
     IDAHO - JUDICIAL/     Courts, judicial districts
@@ -82,12 +75,12 @@ IDAHO-VAULT/
 
 ## Frontmatter Conventions
 
-All Obsidian files use YAML frontmatter. Key fields by file type:
+All Obsidian notes use YAML frontmatter. Key fields by type:
 
 **People:**
 ```yaml
 tags:
-  - Party/Republican
+  - Party/Republican          # or Party/Democratic
   - people/elected/legislative
 residence: "[[Boise]]"
 ```
@@ -114,57 +107,58 @@ sponsor: ["[[Sponsor Name]]"]
 URL: https://legislature.idaho.gov/...
 ```
 
+**Hearings:**
+```yaml
+cmte: "[[Committee Name]]"
+tags:
+  - YYYY/MM/DD
+```
+
 ---
 
 ## Wikilinks
 
-Use `[[Full Name]]` for all internal links. This is how Obsidian builds the knowledge graph. Link densely in source documents.
+Use `[[Full Name]]` for all internal links — people, places, organizations, bills, topics. This is how Obsidian builds the knowledge graph. Link densely in source documents.
 
 ---
 
-## File Attribution
+## File Types
 
-| File type | Attribution | Examples |
+- **Markdown** = human product, attributable to Logan. Notes, stories, analysis.
+- **Python** = machine/procedural product. Scripts, scrapers, automation.
+- **Administrative** = vault infrastructure. Instruction files, LEVELSET files, audit reports.
+
+---
+
+## Automation Scripts
+
+| Script | Purpose | Trigger |
 |---|---|---|
-| Markdown | Human product — attributable to Logan | Notes, stories, analysis |
-| Python | Machine/procedural — attributable to Claude/Copilot | Scripts, scrapers, automation |
-| Administrative | Vault infrastructure | LEVELSET files, DECISIONS.md |
+| `sort_audit.py` | Audits vault structure for misplaced files | Manual (workflow_dispatch) |
+| `idaho_leg_scraper.py` | Scrapes Idaho Legislature bill data | Daily 6 AM MT + manual |
+| `post_digest.py` | Posts bill activity to GitHub Issues digest | Called by scraper workflow |
+
+When working on Python scripts in `.github/scripts/`:
+- Follow existing code style and patterns in the file
+- Use libraries already present in `requirements-scraper.txt` before adding new ones
+- Keep scripts focused and single-purpose
 
 ---
 
 ## Sourcing Protocol
 
 - **On the record:** Safe for public repo. All committed content is on the record.
-- **On background:** Vault-safe but identity-protected. Use descriptor, not name.
-- **Off the record:** Ephemeral. Do not log, do not store, do not commit. When in doubt, treat as off the record and flag to Logan.
+- **On background:** Vault-safe but identity-protected. Use carefully — this is a public repo.
+- **Off the record:** Ephemeral. Do not log, do not store, do not commit. If Logan says something is off the record, it must not appear in files, code, comments, or commit messages.
 
----
-
-## Code Conventions
-
-### Python Scripts (`.github/scripts/`)
-
-- Use `argparse` for CLI options
-- Use Python's `logging` module (`log = logging.getLogger(__name__)`)
-- Rate-limit external API calls
-- Write output reports to `!ADMINISTRATION/` as dated Markdown files
-- Never overwrite existing reports — use dated filenames
-- Always validate external responses before processing
-
-### GitHub Actions (`.github/workflows/`)
-
-- Always declare explicit `permissions:` blocks
-- Pass `GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}` explicitly to any `gh` CLI step
-- Use `fetch-depth: 1` unless diff is needed (`fetch-depth: 2`)
-- Commit workflow outputs with a descriptive message
+When uncertain about sourcing category, stop and ask Logan.
 
 ---
 
 ## Git Practices
 
-- Branch naming: `copilot/description` for Copilot branches
 - Commit messages: Clear, descriptive, explain the "why"
-- Never force-push without explicit permission from Logan
+- Never force-push without explicit permission
 - Check in before anything irreversible
 - The legislature scraper workflow commits directly to main for automated bill updates
 
@@ -178,4 +172,4 @@ Use `[[Full Name]]` for all internal links. This is how Obsidian builds the know
 - Markdown for human product. Python for machine/procedural product.
 - Do not over-engineer. Keep it simple. Only build what's needed now.
 - Check in before anything irreversible.
-- Logan is human. Copilot is software. Logan directs; Copilot executes.
+- Make the **smallest possible changes** to accomplish the task.
