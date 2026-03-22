@@ -85,8 +85,7 @@
               "title": "Recent Files"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -206,9 +205,15 @@
   },
   "active": "971adb1bbab47490",
   "lastOpenFiles": [
+    "FRAMEWORKS.md",
+    "wayback-preserve-2026-03-21.md",
+    "SESSION-LOG.md",
+    "DECISIONS.md",
+    "CLAUDE.md",
+    "GEMINI.md",
+    "2026-03-22.md",
     "!/LEVELSET-STEP-0-EXTERNAL-AGENT.md",
     "!/!/LEVELSET-STEP-0-EXTERNAL-AGENT.md",
-    "2026-03-22.md",
     "IDAHO-VAULT",
     "X - Press Release.md",
     "X - OP-ED.md",
@@ -227,15 +232,9 @@
     "GOVERNMENTS/Board of Professional Counselors and Marriage and Family Therapists.md",
     "GOVERNMENTS/Joint Finance-Appropriations Committee.md",
     "PLACES/Malheur National Wildlife Refuge.md",
-    "!ADMINISTRATION/sort-audit-2026-03-12.md",
-    "TOPICS/Kaiser Family Foundation.md",
     "TOPICS",
-    "GOVERNMENTS/Idaho Constitution.md",
-    "!ADMINISTRATION/!README.md",
     "!ADMINISTRATION",
-    "GOVERNMENTS/Idaho Code.md",
     "GOVERNMENTS",
-    "PLACES/Europe.md",
     "PLACES",
     "Untitled 1.base",
     "Untitled.base",
