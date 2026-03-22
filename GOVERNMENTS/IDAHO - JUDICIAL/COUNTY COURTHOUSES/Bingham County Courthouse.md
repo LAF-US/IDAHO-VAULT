@@ -1,1 +1,0 @@
-[[magistrate court]] [[Bingham County]] [[courthouses|courthouse]] 

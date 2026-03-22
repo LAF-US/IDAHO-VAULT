@@ -1,1 +1,0 @@
-[[County Sheriff]], [[Idaho County]] [[jails|jail]]

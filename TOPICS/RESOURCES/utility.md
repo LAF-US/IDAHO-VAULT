@@ -1,1 +1,0 @@
-specific type of regulated company that provides essential services such as [[electricity]] or [[water]] 

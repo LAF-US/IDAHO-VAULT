@@ -1,1 +1,0 @@
-[[magistrate court]] [[Gooding County]] [[courthouses|courthouse]] 

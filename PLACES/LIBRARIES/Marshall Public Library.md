@@ -1,1 +1,0 @@
-[[Pocatello]] public [[libraries|library]] founded in 1907

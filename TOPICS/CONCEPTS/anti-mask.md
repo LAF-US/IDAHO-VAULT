@@ -1,1 +1,0 @@
-[[coronavirus|COVID-19]]

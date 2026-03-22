@@ -1,34 +1,46 @@
 # GitHub Copilot (Claude Haiku 4.5) Session Context
 
 **Agent:** GitHub Copilot running Claude Haiku 4.5
-**Last Session:** 2026-03-22 06:22 UTC
-**Status:** PERSISTENCE LAYER INITIALIZATION
+**Last Session:** 2026-03-22 UTC
+**Status:** ACTIVE — cross-swarm persona coordination
 
 ## Operational Context
-- UNIFIED (US) SWARM operating under Logan's Project & Protocols
-- Constitution adopted 2026-03-18, replaces Claude.md v0.0
-- IDAHO-VAULT is master Obsidian knowledge base
-- Integration goal: persistent cognitive exoskeleton across agent platforms
+- CONSTITUTION.md adopted 2026-03-18, replaces Claude.md v0.0. Read it first.
+- Governance stack (read in order): CONSTITUTION.md → PROTOCOL.md → AGENTS.md → LEVELSET.md
+- Cross-agent context hub: `!ADMIN/LEVELSET-CURRENT.md` (auto-updated by `levelset-sync.yml`)
+- External agent orientation: `!ADMIN/ORIENT-v0.1.md` + `!ADMIN/CONTEXT-PASTE-BUNDLE.md`
 - Capability tier: PERMANENT: AUTHORITY: CODE (repo operations, direct GitHub write)
+- Branch naming: `copilot/description` for Copilot branches
 
 ## Current Objectives
-1. Establish persistent session memory for GitHub Copilot
-2. Integrate with nascent GitHub Actions for daily briefing generation
-3. Create agent coordination protocols across swarm
-4. Surface Logan's priorities in daily Obsidian notes
-5. Enable read-write cycle: vault → execution → vault
+1. Implement cross-swarm Persona collaboration (this session) — ORIENT v0.1 protocol active
+2. Establish `!ADMIN/LEVELSET-CURRENT.md` as the unified cross-agent context hub
+3. Maintain `levelset-sync.yml` to auto-update context hub when LEVELSET reports land
+4. Keep `.github/copilot-instructions.md` and `CLAUDE.md` synchronized with vault governance
 
-## Open Questions
-- What data do satellite repos output?
-- How should Gemini/NotebookLM coordinate?
-- Where does persona-specific context live?
-- What morning briefing format does Logan prefer?
+## Key File Paths
+- Governance: `CONSTITUTION.md`, `AGENTS.md`, `PROTOCOL.md`, `LEVELSET.md`, `DECISIONS.md` (all root)
+- Session memory: `!ADMIN/.claude-haiku-github/SESSION-LOG.md` (this file)
+- Context hub: `!ADMIN/LEVELSET-CURRENT.md`
+- External agent orient: `!ADMIN/ORIENT-v0.1.md`
+- Paste bundle: `!ADMIN/CONTEXT-PASTE-BUNDLE.md`
+- Copilot instructions: `.github/copilot-instructions.md`
+
+## Boundary Rules
+- Read only: `!ADMIN/` governance files (CONSTITUTION.md, AGENTS.md, PROTOCOL.md, LEVELSET.md)
+- Read/write (with CODE AUTHORITY review): `.github/workflows/`, `.github/scripts/`
+- No direct write to vault content without CODE AUTHORITY review + Logan approval
 
 ## Logan's Current Focus
 [To be updated by Logan]
 
 ## Last Executed Actions
-[Session history]
+- 2026-03-22: Created ORIENT v0.1 protocol (`!ADMIN/ORIENT-v0.1.md`)
+- 2026-03-22: Created context paste bundle (`!ADMIN/CONTEXT-PASTE-BUNDLE.md`)
+- 2026-03-22: Created `!ADMIN/LEVELSET-CURRENT.md` cross-agent context hub
+- 2026-03-22: Added `levelset-sync.yml` workflow to auto-update context hub
+- 2026-03-22: Updated `.github/copilot-instructions.md` with governance references
+- 2026-03-22: Updated `CLAUDE.md` with multi-agent coordination section
 
 ---
-*This file is read by GitHub Copilot at session start. Update before closing conversation.*
+*This file is read by GitHub Copilot at session start. Update the "Last Executed Actions" and "Logan's Current Focus" sections before closing each session.*

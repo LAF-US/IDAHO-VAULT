@@ -1,1 +1,0 @@
-[[pornography]] that depicts [[minors]] 

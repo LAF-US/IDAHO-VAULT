@@ -1,1 +1,0 @@
-[[Bonner County]] [[nonprofits|nonprofit]] [[housing agency]] 

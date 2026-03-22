@@ -1,1 +1,0 @@
-[[magistrate court]] [[Clearwater County]] [[courthouses|courthouse]] 

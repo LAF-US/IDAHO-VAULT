@@ -1,1 +1,0 @@
-[[Idaho State Police]], [[County Sheriff]] and [[police]] 

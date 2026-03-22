@@ -1,1 +1,0 @@
-[[magistrate court]] [[Clark County]] [[courthouses|courthouse]] 

@@ -1,1 +1,0 @@
-[[magistrate court]] [[Bonner County]] [[courthouses|courthouse]] 

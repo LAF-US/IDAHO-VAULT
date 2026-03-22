@@ -1,1 +1,0 @@
-[[magistrate court]] [[Latah County]] [[courthouses|courthouse]] 

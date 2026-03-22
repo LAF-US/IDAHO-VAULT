@@ -1,4 +1,0 @@
----
-tags:
-  - governments/state/judicial
----
