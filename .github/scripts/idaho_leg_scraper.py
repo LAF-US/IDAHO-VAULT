@@ -341,7 +341,10 @@ def get_bill_list(year: str) -> list[dict]:
 
     soup = get_soup(minidata_url)
     if soup is None:
-        log.error("Could not fetch minidata page")
+        log.error(
+            "Could not fetch minidata page — check network connectivity and "
+            "whether %s is reachable (retries exhausted)", minidata_url
+        )
         return []
 
     # The minidata page renders a plain HTML table.
@@ -350,14 +353,20 @@ def get_bill_list(year: str) -> list[dict]:
     if table is None:
         # Fallback: try the full legislation page
         log.warning("No bill table on minidata; trying main legislation page")
-        table = _find_bill_table(
-            get_soup(
-                f"https://legislature.idaho.gov/sessioninfo/{year}/legislation/"
-            )
+        fallback_url = (
+            f"https://legislature.idaho.gov/sessioninfo/{year}/legislation/"
         )
+        fallback_soup = get_soup(fallback_url)
+        table = _find_bill_table(fallback_soup)
 
     if table is None:
         log.error("Could not find bill table on either minidata or main page")
+        if soup is not None:
+            page_text = soup.get_text()
+            log.debug(
+                "Minidata page length: %d chars; first 200: %.200s",
+                len(page_text), page_text
+            )
         return []
 
     bills = _parse_bill_table(table, year)
@@ -1296,12 +1305,16 @@ def main() -> int:
         ensure_session_note(args.year)
 
     start = datetime.now(timezone.utc)
-    new, updated, unchanged, errors = scrape_bills(
-        year=args.year,
-        force=args.force,
-        target_bill=args.bill,
-        dry_run=args.dry_run,
-    )
+    try:
+        new, updated, unchanged, errors = scrape_bills(
+            year=args.year,
+            force=args.force,
+            target_bill=args.bill,
+            dry_run=args.dry_run,
+        )
+    except Exception as exc:
+        log.exception("Unexpected error during scrape: %s", exc)
+        return 1
 
     if args.members:
         m_new, m_updated, m_unchanged = scrape_members(
