@@ -10,6 +10,8 @@ source: commit
 ---
 OpenClaw is an open-source, local-first autonomous [[artificial intelligence|AI]] agent created by Austrian developer [[Peter Steinberger]] in November 2025, notable as the first autonomous agent to achieve mass-market adoption — and as a case study in the security risks of unsupervised AI autonomy.
 
+Identified by [[Grok]] as a peer system to the [[IDAHO-VAULT]] agentic swarm. Logan approved studying it as a reference for swarm architecture and governance patterns (2026-03-16).
+
 ## Timeline
 
 - **November 2025:** Steinberger publishes "Clawdbot," described as "Claude with hands" — an agent that executes tasks via LLMs on the user's local machine, operating through existing messaging platforms ([[WhatsApp]], [[Telegram]], [[Slack]])
@@ -22,7 +24,6 @@ OpenClaw is an open-source, local-first autonomous [[artificial intelligence|AI]
 - **March 16, 2026:** [[Nvidia]] expected to unveil [[NemoClaw]], a security-first alternative, at GTC 2026
 
 ## The Lethal Trifecta
-
 Security researcher [[Simon Willison]] identified a "lethal trifecta" of architectural risks in OpenClaw:
 
 1. **Over-Privilege:** Users routinely granted full read/write access to root directories and sensitive API keys. Plaintext credential files stored at `~/.openclaw/credentials/`
