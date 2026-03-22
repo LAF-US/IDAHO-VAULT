@@ -1,1 +1,0 @@
-[[high schools|high school]] athletics [[TOPICS/STATE AFFAIRS/LGBTQ+ issues]] 
