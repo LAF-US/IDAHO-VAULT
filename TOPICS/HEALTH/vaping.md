@@ -1,1 +1,0 @@
-can be used for [[nicotine]] or [[THC]] 

@@ -1,6 +1,0 @@
----
-tags:
-  - people
----
-
-[[attorneys|attorney]] 

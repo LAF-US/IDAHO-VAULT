@@ -1,1 +1,0 @@
-[[magistrate court]] [[Bannock County]] [[courthouses|courthouse]] 

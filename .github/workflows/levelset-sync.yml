@@ -4,7 +4,8 @@ on:
   push:
     branches: [main]
     paths:
-      - '!ADMINISTRATION/LEVELSET-*.md'
+      - '!ADMIN/LEVELSET-*.md'
+      - 'LEVELSET*.md'
   workflow_dispatch:
     inputs:
       reason:
@@ -32,10 +33,10 @@ jobs:
           from datetime import datetime, timezone
           from pathlib import Path
 
-          ADMIN = Path("!ADMINISTRATION")
+          ADMIN = Path("!ADMIN")
           CURRENT = ADMIN / "LEVELSET-CURRENT.md"
 
-          # Find all LEVELSET report files (exclude prompts, templates, and CURRENT itself)
+          # Find all LEVELSET report files in !ADMIN/ (exclude prompts, templates, and CURRENT itself)
           report_files = sorted(
               [
                   f for f in ADMIN.glob("LEVELSET-*.md")
@@ -45,6 +46,17 @@ jobs:
               key=lambda f: f.stat().st_mtime,
               reverse=True,
           )
+
+          # Also check root-level LEVELSET-*.md files
+          root_reports = sorted(
+              [
+                  f for f in Path(".").glob("LEVELSET-*.md")
+                  if "PROMPT" not in f.name
+              ],
+              key=lambda f: f.stat().st_mtime,
+              reverse=True,
+          )
+          report_files = report_files + root_reports
 
           # Build the snapshot table rows
           rows = []
@@ -112,7 +124,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add "!ADMINISTRATION/LEVELSET-CURRENT.md"
+          git add "!ADMIN/LEVELSET-CURRENT.md"
           if git diff --cached --quiet; then
             echo "No changes to LEVELSET-CURRENT.md — nothing to commit"
           else

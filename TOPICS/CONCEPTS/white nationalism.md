@@ -1,1 +1,0 @@
-[[white nationalist]] idea based on [[white supremacy]] [[racism]] 

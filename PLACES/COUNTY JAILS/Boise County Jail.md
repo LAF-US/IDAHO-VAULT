@@ -1,1 +1,0 @@
-[[County Sheriff]], [[Boise County]] [[jails|jail]]

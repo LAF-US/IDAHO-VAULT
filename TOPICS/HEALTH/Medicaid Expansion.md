@@ -1,1 +1,0 @@
-[[Medicaid Expansion ballot initiative]] 

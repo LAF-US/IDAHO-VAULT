@@ -1,1 +1,0 @@
-[[magistrate court]] [[Power County]] [[courthouses|courthouse]] 
