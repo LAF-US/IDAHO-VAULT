@@ -1,1 +1,0 @@
-[[County Sheriff]], [[Valley County]] [[jails|jail]]

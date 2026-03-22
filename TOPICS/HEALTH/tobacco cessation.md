@@ -1,1 +1,0 @@
-[[tobacco]], [[smoking]], [[vaping]], [[cancer]] 

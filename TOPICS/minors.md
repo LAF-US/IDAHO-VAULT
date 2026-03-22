@@ -1,1 +1,0 @@
-individuals under age 18 

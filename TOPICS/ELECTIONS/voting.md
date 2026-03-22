@@ -1,1 +1,0 @@
-[[early voting]], [[absentee voting]], [[Election Day]] 

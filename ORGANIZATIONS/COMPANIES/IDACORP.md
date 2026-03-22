@@ -1,1 +1,0 @@
-[[holding company]] comprised of [[Idaho Power]], [[IDACORP Financial]], and [[Ida-West Energy]] 

@@ -1,1 +1,0 @@
-[[State of Idaho]] [[military]], with [[Governor]] as commander-in-chief 

@@ -1,4 +1,0 @@
----
-aliases:
-  - facial recognition technology
----

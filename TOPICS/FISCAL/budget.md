@@ -1,4 +1,0 @@
----
-aliases:
-  - budgets
----

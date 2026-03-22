@@ -23,7 +23,7 @@ This is a personal journalism research vault. It contains notes on Idaho politic
 
 ```
 IDAHO-VAULT/
-  !ADMINISTRATION/        Infrastructure, LEVELSET files, audit reports
+  !ADMIN/                 Session logs, LEVELSET reports, wayback preservation logs
   ATTACHMENTS/
     DOCUMENTS/            PDFs, images
     MAPS/                 Map files
@@ -155,8 +155,36 @@ When uncertain about sourcing category, stop and ask Logan.
 
 ---
 
+## Cross-Agent Coordination
+
+IDAHO-VAULT is served by a swarm of AI agents. All agents operate under the same governance.
+
+**Before starting any significant work:**
+1. Read `CONSTITUTION.md` (root) — the vault constitution. Replaces old `Claude.md v0.0`.
+2. Read `!ADMIN/LEVELSET-CURRENT.md` — the cross-agent context hub (auto-updated).
+3. Check for open PRs that may conflict with your planned work.
+
+**Governance stack (read in order):**
+- `CONSTITUTION.md` — Identity, constraints, working rules
+- `PROTOCOL.md` — 18 operational terms for the swarm
+- `AGENTS.md` — Agent registry, capability model, boundary rules
+- `LEVELSET.md` — Living ecosystem status (manual; read this for current unresolved items)
+- `DECISIONS.md` — Confirmed Logan-approved decisions
+
+**LEVELSET protocol:** When performing a LEVELSET, commit the report to `!ADMIN/` as `LEVELSET-[your-name]-[date].md`. Never overwrite; reports are permanent. The `levelset-sync.yml` workflow auto-updates `!ADMIN/LEVELSET-CURRENT.md` when new reports land.
+
+**External agents (no repo access):** Use `!ADMIN/ORIENT-v0.1.md` (the STEP-0 prompt) and `!ADMIN/CONTEXT-PASTE-BUNDLE.md` (paste bundle). These give non-repo agents the context they need to be useful without seeing the repo.
+
+**Boundary rules for Copilot:**
+- Read/write: `.github/workflows/`, `.github/scripts/` (with CODE AUTHORITY review)
+- Read only: `!ADMIN/` governance files, vault content
+- No direct write to `CONSTITUTION.md`, `AGENTS.md`, `PROTOCOL.md`, `LEVELSET.md`, `DECISIONS.md`
+
+---
+
 ## Git Practices
 
+- Branch naming: `copilot/description` for Copilot branches
 - Commit messages: Clear, descriptive, explain the "why"
 - Never force-push without explicit permission
 - Check in before anything irreversible

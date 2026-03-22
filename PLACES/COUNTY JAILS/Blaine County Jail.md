@@ -1,1 +1,0 @@
-[[County Sheriff]], [[Blaine County]] [[jails|jail]]

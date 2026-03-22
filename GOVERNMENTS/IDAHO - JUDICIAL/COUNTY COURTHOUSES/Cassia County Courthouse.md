@@ -1,1 +1,0 @@
-[[magistrate court]] [[Cassia County]] [[courthouses|courthouse]] 

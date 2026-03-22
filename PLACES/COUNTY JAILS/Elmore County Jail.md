@@ -1,1 +1,0 @@
-[[County Sheriff]], [[Elmore County]] [[jails|jail]]

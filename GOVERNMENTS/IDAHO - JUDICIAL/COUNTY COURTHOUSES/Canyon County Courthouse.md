@@ -1,1 +1,0 @@
-[[magistrate court]] [[Canyon County]] [[courthouses|courthouse]] 

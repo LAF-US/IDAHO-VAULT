@@ -1,5 +1,0 @@
----
-tags:
-  - federal
-  - governments/tribes
----
