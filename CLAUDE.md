@@ -1,10 +1,11 @@
-# CLAUDE.md — IDAHO-VAULT
+"Claude" [[persona]] ; [[Anthropic]] [[AI]] [[agent]] [[voice]] 
+# CLAUDE persona frame
 
-This file is loaded automatically by Claude Code sessions working in this repository. It is the single-source-of-truth for how Claude should operate in this vault.
+This file is loaded automatically by Claude and its Code sessions working in the repository. It is the single-source-of-truth for how Claude persona entities should operate in the IDAHO-VAULT Obsidian vault.
 
-**Owner:** Logan Finney — journalist, producer/reporter, Idaho Reports / Idaho Public Television
-**Repository:** github.com/loganfinney27/IDAHO-VAULT (public)
-**Platform:** Obsidian.md vault, version-controlled with git
+**Owner:** Logan Finney — journalist, producer/reporter, Idaho Reports / Idaho Public Television; see "[[LOGAN]]" and "[[Logan Finney|Logan]]"
+**Repository URL:** github.com/loganfinney27/IDAHO-VAULT (public vault master repo)
+**Platform:** Obsidian.md vault, version-controlled with git and fallback systems
 
 ---
 
@@ -24,7 +25,7 @@ This is a personal journalism research vault. It contains notes on Idaho politic
 
 ```
 IDAHO-VAULT/
-  !ADMINISTRATION/        Infrastructure, LEVELSET files, audit reports
+  !ADMIN/                 Infrastructure, LEVELSET files, audit reports
   ATTACHMENTS/
     DOCUMENTS/            PDFs, images
     MAPS/                 Map files
@@ -123,6 +124,10 @@ Use `[[Full Name]]` for all internal links — people, places, organizations, bi
 - **Python** = machine/procedural product, attributable to Claude. Scripts, scrapers, automation.
 - **Administrative** = vault infrastructure. CLAUDE.md, LEVELSET files, audit reports.
 
+## Governance
+
+This file provides operational instructions for Claude Code sessions. The canonical constitution is `!ADMIN/Constitution.md`, maintained by PERSISTENT: ADMINISTRATION. When this file and `!ADMIN/Constitution.md` conflict, `!ADMIN/Constitution.md` governs.
+
 ## Automation
 
 | Script | Purpose | Trigger |
@@ -163,37 +168,15 @@ Claude conversations follow a naming convention:
 | ISSUE: | Problem resolution |
 | INQUIRY: | Research questions |
 
-## Multi-Agent Ecosystem
-
-IDAHO-VAULT is served by a swarm of AI agents (Claude Code, GitHub Copilot, and others). All agents are infrastructure. No agent has standing or decision-making authority.
-
-**Before starting any significant work, every agent must:**
-1. Read `!ADMINISTRATION/LEVELSET-CURRENT.md` — the unified current-state document for cross-agent context.
-2. Check for open PRs that may conflict with your planned changes.
-
-**Agent tiers:**
-- **Tier 1** — Direct repo write access (Claude Code, GitHub Copilot). Bulk structural work, mass commits, architectural changes.
-- **Tier 2** — Targeted push via `vault_push.py`, requires Logan approval. Administrative files, pipeline scripts.
-- **Tier 3** — Read/analysis only. No direct commits.
-
-**Known agents:**
-- `PERMANENT: CODE AUTHORITY` — Tier 1. Central coding agent, direct repo access.
-- `PERSISTENT: ADMINISTRATION` — Tier 2. Constitutional layer, conventions.
-- `GitHub Copilot` — Tier 1. Code review, workflow fixes, automation. See `.github/copilot-instructions.md`.
-
 ## LEVELSET Protocol
 
-LEVELSET is a permanent, auditable checkpoint protocol. LEVELSET files live in `!ADMINISTRATION/` and are never deleted, never overwritten. Each version is additive.
-
-**For current state:** See `!ADMINISTRATION/LEVELSET-CURRENT.md` — this is the authoritative cross-agent context hub, automatically updated by `levelset-sync.yml` when new reports are committed.
-
-**For protocol instructions:** See `!ADMINISTRATION/LEVELSET-v3.2.6.1-PROMPT.md` (latest version).
+LEVELSET is a permanent, auditable checkpoint protocol. LEVELSET files live in `!ADMIN/`. Versioned checkpoints are never deleted, never overwritten. See `LEVELSET.md` for current ecosystem status.
 
 ---
 
 ## Decision Log
 
-Significant architectural decisions are recorded in `!ADMINISTRATION/DECISIONS.md`. When a decision is made about vault structure, naming, tooling, or process, log it there.
+Significant architectural decisions are recorded in `!ADMIN/DECISIONS.md`. When a decision is made about vault structure, naming, tooling, or process, log it there.
 
 ---
 
