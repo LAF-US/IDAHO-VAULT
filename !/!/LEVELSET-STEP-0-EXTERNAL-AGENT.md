@@ -75,7 +75,7 @@ Do NOT:
 | File | Purpose |
 |---|---|
 | `CONSTITUTION.md` | Core identity, constraints, working rules |
-| `!ADMIN/LEVELSET.md` | Orientation prompt for repo-connected agents |
+| `!/!/LEVELSET.md` | Orientation prompt for repo-connected agents |
 | `AGENTS.md` | Agent registry, capability tiers |
 | `PROTOCOL.md` | Operational vocabulary (18 shared terms) |
 | `!ADMINISTRATION/DECISIONS.md` | Architectural decision log |
