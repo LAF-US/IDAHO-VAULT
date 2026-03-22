@@ -2,8 +2,9 @@ name: Idaho Legislature Scraper
 
 on:
   # Run every day at 6 AM Mountain Time (13:00 UTC)
-  schedule:
-    - cron: "0 13 * * *"
+  # TEMPORARILY DISABLED: Pending direct data access from LSO
+  # schedule:
+  #   - cron: "0 13 * * *"
 
   # Triggerable from GitHub mobile → Actions tab → Run workflow
   workflow_dispatch:
