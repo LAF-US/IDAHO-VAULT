@@ -24,7 +24,7 @@ This is a personal journalism research vault. It contains notes on Idaho politic
 
 ```
 IDAHO-VAULT/
-  !/!                     Infrastructure, LEVELSET files, audit reports (canonical governance dir)
+  !/                      System files, logs, agent routing (see !README.md)
   ATTACHMENTS/
     DOCUMENTS/            PDFs, images
     MAPS/                 Map files
@@ -136,7 +136,7 @@ Use `[[Full Name]]` for all internal links — people, places, organizations, bi
 - Python scripts live in `.github/scripts/`
 - GitHub Actions workflows live in `.github/workflows/`
 - Scripts that commit to the repo use `git config user.name "github-actions[bot]"` and `git config user.email "github-actions[bot]@users.noreply.github.com"`
-- Automation output (reports) is committed to `!/!` with date-stamped filenames
+- Automation output (reports) is committed to vault root with date-stamped filenames
 - Dependencies are tracked in `.github/scripts/requirements-scraper.txt`
 
 ---
@@ -190,8 +190,15 @@ When uncertain about sourcing category, **ask Logan**.
 
 ## Multi-Agent Ecosystem
 
-This vault uses multiple AI tools. All agents share the same vault conventions. See also:
+This vault uses multiple AI tools. All agents share the same vault conventions and are coordinated via GitHub Issues and PRs. See the agent roles CSV (`Agent Swarm Management and Repository Constitution`) for the simplified role matrix.
+
+**Agent role (from CSV):** Copilot is "The Clerk" — inline Obsidian markdown & syntax. Use for formatting tables, auto-completing YAML frontmatter, and linking notes while actively writing in Obsidian. **Must not dictate the overarching directory structure.**
+
+**Coordination workflow:** Logan assigns tasks via GitHub Issues with agent labels (`agent:claude-code`, `agent:codex`, `agent:copilot`, `agent:gemini`). Each agent works on its own branch. PRs are the deliverable. Logan reviews and merges from GitHub.
+
+See also:
 - `CLAUDE.md` — Instructions for Claude Code (Anthropic)
 - `GEMINI.md` — Instructions for Gemini code agents (Google)
 - `.github/copilot-instructions.md` — This file (GitHub Copilot)
-- `!/!/LEVELSET-STEP-0-EXTERNAL-AGENT.md` — Paste-to-agent LEVELSET prompt for chat agents without repo access
+- `!/LEVELSET-STEP-0-EXTERNAL-AGENT.md` — Paste-to-agent LEVELSET prompt for chat agents without repo access
+- `AGENTS.md` — Full agent registry, capability tiers, and boundary rules
