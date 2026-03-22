@@ -1,1 +1,0 @@
-[[Idaho Legislature]] [[teacher pay]] funding matrix based on length of employment 

@@ -1,1 +1,0 @@
-[[County Sheriff]], [[Twin Falls County]] [[jails|jail]]

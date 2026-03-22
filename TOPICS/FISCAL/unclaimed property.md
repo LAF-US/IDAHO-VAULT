@@ -1,1 +1,0 @@
-[[State Treasurer]] administers

@@ -1,8 +1,0 @@
-[[predatory species]] for [[mammals]] and [[birds]] [[hunting]] 
-- [[coyote]]
-- [[skunk]]
-- [[weasel]]
-- [[raccoon]]
-- [[ermine]]
-- [[rabbit]] 
-- [[starling]]

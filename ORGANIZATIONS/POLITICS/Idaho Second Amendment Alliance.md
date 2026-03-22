@@ -1,3 +1,0 @@
-[[Greg Pruett]] 
-
-[[Second Amendment]] 

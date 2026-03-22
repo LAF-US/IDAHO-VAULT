@@ -1,1 +1,0 @@
-[[magistrate court]] [[Lemhi County]] [[courthouses|courthouse]] 

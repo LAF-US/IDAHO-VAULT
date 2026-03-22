@@ -1,2 +1,0 @@
-[[building codes]]
-[[building permits]]

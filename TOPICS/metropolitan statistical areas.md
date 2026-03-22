@@ -1,5 +1,0 @@
----
-aliases:
-  - MSAs
-  - metropolitan areas
----

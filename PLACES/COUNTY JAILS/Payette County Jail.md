@@ -1,1 +1,0 @@
-[[County Sheriff]], [[Payette County]] [[jails|jail]]

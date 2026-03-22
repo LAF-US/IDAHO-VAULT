@@ -1,4 +1,0 @@
----
-aliases:
-  - local option tax
----

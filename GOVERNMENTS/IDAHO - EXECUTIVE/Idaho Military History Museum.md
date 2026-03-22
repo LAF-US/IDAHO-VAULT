@@ -1,1 +1,0 @@
-state [[military]] [[museum]] located in [[Boise]] 

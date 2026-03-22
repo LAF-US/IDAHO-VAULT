@@ -1,5 +1,0 @@
-[[waterfowl species]] for [[birds]] [[hunting]] 
-- [[geese]]
-- [[ducks]]
-- [[coots]]
-- [[snipe]]

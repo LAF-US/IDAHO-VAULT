@@ -1,1 +1,0 @@
-[[insurance]] for [[health care]] 

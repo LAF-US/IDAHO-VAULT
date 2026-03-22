@@ -1,1 +1,0 @@
-[[Idaho Association of Counties]] executive director 

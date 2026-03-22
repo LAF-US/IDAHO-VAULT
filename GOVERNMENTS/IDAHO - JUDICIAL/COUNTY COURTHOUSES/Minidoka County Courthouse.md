@@ -1,1 +1,0 @@
-[[magistrate court]] [[Minidoka County]] [[courthouses|courthouse]] 

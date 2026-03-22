@@ -1,5 +1,0 @@
----
-aliases:
-  - drug overdose
-  - overdose
----

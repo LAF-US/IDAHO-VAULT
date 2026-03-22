@@ -1,1 +1,0 @@
-[[County Sheriff]], [[Owyhee County]] [[jails|jail]]
