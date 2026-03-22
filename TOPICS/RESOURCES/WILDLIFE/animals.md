@@ -1,1 +1,0 @@
-land-based creatures, including [[invertebrates]], [[insects]], [[amphibians]], [[reptiles]], [[birds]], [[mammals]] 

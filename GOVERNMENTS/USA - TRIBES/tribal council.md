@@ -1,1 +1,0 @@
-legislative branches of [[tribes]] 

@@ -1,4 +1,0 @@
----
-aliases:
-  - Regular Session
----

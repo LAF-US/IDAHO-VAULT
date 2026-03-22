@@ -1,1 +1,0 @@
-[[magistrate court]] [[Oneida County]] [[courthouses|courthouse]] 

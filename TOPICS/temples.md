@@ -1,1 +1,0 @@
-[[Church of Jesus Christ of Latter-Day Saints|LDS Church]] [[places of worship]] 

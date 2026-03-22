@@ -1,1 +1,0 @@
-[[magistrate court]] [[Lincoln County]] [[courthouses|courthouse]] 

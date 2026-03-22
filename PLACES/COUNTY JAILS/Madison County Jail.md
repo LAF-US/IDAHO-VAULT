@@ -1,1 +1,0 @@
-[[County Sheriff]], [[Madison County]] [[jails|jail]]

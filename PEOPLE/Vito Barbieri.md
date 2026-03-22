@@ -1,8 +1,0 @@
----
-tags:
-  - people/elected
-  - Party/Republican
-  - people/elected/legislative
-  - people
----
-Residence: [[Dalton Gardens]]
