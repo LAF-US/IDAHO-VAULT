@@ -24,7 +24,7 @@ This is a personal journalism research vault. It contains notes on Idaho politic
 
 ```
 IDAHO-VAULT/
-  !ADMINISTRATION/        Infrastructure, LEVELSET files, audit reports
+  !ADMIN/                 Infrastructure, LEVELSET files, audit reports (canonical governance dir)
   ATTACHMENTS/
     DOCUMENTS/            PDFs, images
     MAPS/                 Map files
@@ -168,7 +168,7 @@ Claude conversations follow a naming convention:
 
 ## LEVELSET Protocol
 
-LEVELSET is a permanent, auditable checkpoint protocol. LEVELSET files live in `!ADMINISTRATION/` and are never deleted, never overwritten. Each version is additive. See `LEVELSET-v2.md` for the most recent checkpoint.
+LEVELSET is a permanent, auditable checkpoint protocol. LEVELSET files live in `!ADMIN/` and are never deleted, never overwritten. Each version is additive. See `!ADMINISTRATION/LEVELSET-v2.md` for the most recent checkpoint.
 
 ---
 
@@ -195,3 +195,4 @@ This vault uses multiple AI tools. All agents share the same vault conventions. 
 - `CLAUDE.md` — This file (Claude Code, Anthropic)
 - `GEMINI.md` — Instructions for Gemini code agents (Google)
 - `.github/copilot-instructions.md` — Instructions for GitHub Copilot
+- `!ADMIN/LEVELSET-STEP-0-EXTERNAL-AGENT.md` — Paste-to-agent LEVELSET prompt for chat agents without repo access

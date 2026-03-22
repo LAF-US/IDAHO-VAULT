@@ -26,7 +26,7 @@ This is a personal journalism research vault. It contains notes on Idaho politic
 
 ```
 IDAHO-VAULT/
-  !ADMINISTRATION/        Infrastructure, LEVELSET files, audit reports
+  !ADMIN/                 Infrastructure, LEVELSET files, audit reports (canonical governance dir)
   ATTACHMENTS/
     DOCUMENTS/            PDFs, images
     MAPS/                 Map files
@@ -202,6 +202,7 @@ This vault uses multiple AI tools. All agents share the same vault conventions. 
 - `CLAUDE.md` — Instructions for Claude Code (Anthropic)
 - `GEMINI.md` — This file (Gemini, Google)
 - `.github/copilot-instructions.md` — Instructions for GitHub Copilot
+- `!ADMIN/LEVELSET-STEP-0-EXTERNAL-AGENT.md` — Paste-to-agent LEVELSET prompt for chat agents without repo access
 
 ---
 
