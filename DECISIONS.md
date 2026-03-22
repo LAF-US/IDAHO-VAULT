@@ -147,4 +147,12 @@
 ---
 
 *This document is the authoritative record of confirmed decisions.*
+## 2026-03-22 — STEP-0 LEVELSET prompt for external agents
+
+**Decision:** Create `!/!/LEVELSET-STEP-0-EXTERNAL-AGENT.md` — a paste-to-agent orientation prompt for chat-based agents (Claude.ai, Gemini, Grok, etc.) that cannot access the repository directly. When Logan starts a new external agent session, he pastes this prompt, and the agent responds with a 6-part LEVELSET report: who they are, what they know, what they've done, what is unresolved, what they need, and collision risks.
+**Context:** External agents operating via chat have no vault context unless Logan provides it. A standardized STEP-0 prompt ensures consistent orientation across all chat-based agents, reducing repeated discovery work and preventing agents from inventing governance structures or claiming capabilities they don't have.
+**Decided by:** Logan Finney
+
+---
+
 *Amendments require Logan's explicit approval and addition to this file.*
