@@ -1,17 +1,19 @@
 #!/usr/bin/env python3
 """
-state_manager.py — Minimal CLI for reading/writing swarm run state.
+state_manager.py — Minimal read/write/update interface for swarm run state.
 
 Usage:
-    python swarm/tools/state_manager.py read
-    python swarm/tools/state_manager.py update --section "CURRENT OBJECTIVE" --content "..."
-    python swarm/tools/state_manager.py archive
+    python swarm/tools/state_manager.py                          # Print current run state
+    python swarm/tools/state_manager.py read                     # Print current run state
+    python swarm/tools/state_manager.py update "SECTION" "content"  # Update a section
+    python swarm/tools/state_manager.py snapshot                 # Archive current state
+    python swarm/tools/state_manager.py archive                  # Archive current state (alias)
 """
 
-import argparse
+import sys
 import shutil
-from datetime import datetime
 from pathlib import Path
+from datetime import datetime
 
 BASE_DIR = Path(__file__).resolve().parents[1]
 STATE_DIR = BASE_DIR / "state"
@@ -20,95 +22,99 @@ RUN_STATE = STATE_DIR / "run_state.md"
 
 
 def read_run_state():
-    """Read and return current run state content."""
     if not RUN_STATE.exists():
         return ""
-    return RUN_STATE.read_text(encoding="utf-8")
+    return RUN_STATE.read_text()
 
 
-def write_run_state(content):
-    """Write content to run_state.md with auto-updated timestamp."""
-    # Strip any existing LAST UPDATED section, we'll add a fresh one
-    sections = content.split("# LAST UPDATED")
-    clean = sections[0].rstrip()
-    timestamp = datetime.now().strftime("%Y-%m-%dT%H:%M:%S")
-    clean += f"\n\n# LAST UPDATED\n{timestamp}\n"
-    RUN_STATE.write_text(clean, encoding="utf-8")
-
-
-def update_section(section_title, new_content):
-    """Update a single section in run_state.md by H1 header name."""
-    text = read_run_state()
-    if not text.strip():
-        write_run_state(f"# {section_title}\n{new_content}\n")
-        return
-
-    lines = text.split("\n")
-    result = []
-    in_target = False
-    replaced = False
-
+def write_run_state(content: str):
+    timestamp = datetime.now().isoformat()
+    # Strip any existing LAST UPDATED section before appending new one
+    lines = content.split("\n")
+    cleaned = []
+    skip = False
     for line in lines:
+        if line.strip() == "# LAST UPDATED":
+            skip = True
+            continue
+        if skip and line.startswith("# "):
+            skip = False
+        if not skip:
+            cleaned.append(line)
+
+    # Remove trailing blank lines
+    while cleaned and cleaned[-1].strip() == "":
+        cleaned.pop()
+
+    cleaned.append("")
+    cleaned.append("# LAST UPDATED")
+    cleaned.append(timestamp)
+    cleaned.append("")
+
+    RUN_STATE.write_text("\n".join(cleaned))
+
+
+def update_section(section_title: str, new_content: str):
+    text = read_run_state()
+    # Parse into list of (title, body) tuples
+    sections = []
+    current_title = None
+    current_body = []
+
+    for line in text.split("\n"):
         if line.startswith("# "):
-            header = line[2:].strip()
-            if header == section_title:
-                result.append(f"# {section_title}")
-                result.append(new_content)
-                in_target = True
-                replaced = True
-                continue
-            else:
-                in_target = False
+            if current_title is not None:
+                sections.append((current_title, "\n".join(current_body)))
+            current_title = line[2:].strip()
+            current_body = []
+        else:
+            current_body.append(line)
 
-        if not in_target:
-            result.append(line)
+    if current_title is not None:
+        sections.append((current_title, "\n".join(current_body)))
 
-    if not replaced:
-        # Section not found — append it
-        result.append(f"\n# {section_title}")
-        result.append(new_content)
+    # Replace or append
+    found = False
+    result_parts = []
+    for title, body in sections:
+        if title == section_title:
+            result_parts.append(f"# {title}\n{new_content}\n")
+            found = True
+        else:
+            result_parts.append(f"# {title}\n{body}")
 
-    write_run_state("\n".join(result))
+    if not found:
+        result_parts.append(f"# {section_title}\n{new_content}\n")
+
+    write_run_state("\n".join(result_parts))
 
 
-def archive_state():
-    """Copy current run_state.md to archive with timestamp."""
+def snapshot():
     if not RUN_STATE.exists():
-        print("No run_state.md to archive.")
+        print("No run_state.md to snapshot.")
         return
 
     ARCHIVE_DIR.mkdir(parents=True, exist_ok=True)
-    timestamp = datetime.now().strftime("%Y-%m-%dT%H%M%S")
+    timestamp = datetime.now().strftime("%Y%m%d-%H%M%S")
     dest = ARCHIVE_DIR / f"run_state-{timestamp}.md"
     shutil.copy2(RUN_STATE, dest)
-    print(f"Archived to {dest.relative_to(BASE_DIR)}")
+    print(f"Snapshot saved: {dest.name}")
 
 
 def main():
-    parser = argparse.ArgumentParser(
-        description="Swarm state manager — read, update, or archive run state."
-    )
-    sub = parser.add_subparsers(dest="command")
+    args = sys.argv[1:]
 
-    sub.add_parser("read", help="Print current run state")
-
-    update_p = sub.add_parser("update", help="Update a section in run state")
-    update_p.add_argument("--section", required=True, help="Section header (e.g. 'CURRENT OBJECTIVE')")
-    update_p.add_argument("--content", required=True, help="New content for the section")
-
-    sub.add_parser("archive", help="Archive current run state with timestamp")
-
-    args = parser.parse_args()
-
-    if args.command == "read":
+    if not args or args[0] == "read":
         print(read_run_state())
-    elif args.command == "update":
-        update_section(args.section, args.content)
-        print(f"Updated section: {args.section}")
-    elif args.command == "archive":
-        archive_state()
+    elif args[0] == "update" and len(args) >= 3:
+        section = args[1]
+        content = args[2]
+        update_section(section, content)
+        print(f"Updated section: {section}")
+    elif args[0] in ("snapshot", "archive"):
+        snapshot()
     else:
-        parser.print_help()
+        print(__doc__)
 
 
 if __name__ == "__main__":
