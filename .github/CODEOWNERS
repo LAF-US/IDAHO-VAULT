@@ -1,0 +1,8 @@
+# CODEOWNERS — IDAHO-VAULT
+# Requires branch protection to be active for enforcement.
+# These paths require Logan's explicit review before merge.
+
+CLAUDE.md @loganfinney27
+/!ADMIN/ @loganfinney27
+/.github/workflows/ @loganfinney27
+/.github/scripts/ @loganfinney27

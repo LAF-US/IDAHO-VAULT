@@ -36,6 +36,12 @@ jobs:
           fi
           python3 .github/scripts/wayback_audit.py $ARGS
 
+      - name: Validate audit output
+        run: |
+          git add "!ADMINISTRATION/"
+          python3 .github/scripts/validate_content.py --scope admin
+          git reset HEAD
+
       - name: Commit audit reports
         run: |
           git config user.name "github-actions[bot]"
