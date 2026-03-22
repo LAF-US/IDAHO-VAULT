@@ -1,0 +1,1 @@
+[[THE]] [[BRAZEN]] [[ORACLE]]
