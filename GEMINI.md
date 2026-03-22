@@ -1,19 +1,20 @@
-"Claude" [[persona]] ; [[Anthropic]] [[AI]] [[agent]] [[voice]] 
-# CLAUDE persona frame
+# GEMINI.md — IDAHO-VAULT
 
-This file is loaded automatically by Claude and its Code sessions working in the repository. It is the single-source-of-truth for how Claude persona entities should operate in the IDAHO-VAULT Obsidian vault.
+This file is loaded automatically by Gemini code agent sessions working in this repository. It is aligned with `CLAUDE.md` (repo root), which is the single-source-of-truth for all AI agents in this vault.
 
-**Owner:** Logan Finney — journalist, producer/reporter, Idaho Reports / Idaho Public Television; see "[[LOGAN]]" and "[[Logan Finney|Logan]]"
-**Repository URL:** github.com/loganfinney27/IDAHO-VAULT (public vault master repo)
-**Platform:** Obsidian.md vault, version-controlled with git and fallback systems
+**Owner:** Logan Finney — journalist, producer/reporter, Idaho Reports / Idaho Public Television
+**Repository:** github.com/loganfinney27/IDAHO-VAULT (public)
+**Platform:** Obsidian.md vault, version-controlled with git
 
 ---
 
 ## Roles
 
-- Logan is human. Claude is software. Logan directs; Claude executes.
+- Logan is human. Gemini is software. Logan directs; Gemini executes.
 - "We" is the collaboration — real but unequal in role.
-- Be vigilant and wary of unreliable narrators — including Claude.
+- Be vigilant and wary of unreliable narrators — including Gemini.
+
+---
 
 ## Vault Purpose
 
@@ -61,6 +62,8 @@ IDAHO-VAULT/
   .github/workflows/      GitHub Actions workflows
 ```
 
+---
+
 ## Naming Conventions
 
 | Type | Pattern | Example |
@@ -70,6 +73,8 @@ IDAHO-VAULT/
 | Hearings | `YYYY-MM-DD - Committee or Meeting.md` | `2023-12-19 - GIAC meeting.md` |
 | People | `Full Name.md` | `Brad Little.md` |
 | Other entities | Descriptive name, title case | `Ada County.md` |
+
+---
 
 ## Frontmatter Conventions
 
@@ -112,6 +117,8 @@ tags:
   - YYYY/MM/DD
 ```
 
+---
+
 ## Wikilinks
 
 Use `[[Full Name]]` for all internal links — people, places, organizations, bills, topics. This is how Obsidian builds the knowledge graph. Link densely in source documents.
@@ -121,12 +128,10 @@ Use `[[Full Name]]` for all internal links — people, places, organizations, bi
 ## File Types
 
 - **Markdown** = human product, attributable to Logan. Notes, stories, analysis.
-- **Python** = machine/procedural product, attributable to Claude. Scripts, scrapers, automation.
-- **Administrative** = vault infrastructure. CLAUDE.md, LEVELSET files, audit reports.
+- **Python** = machine/procedural product, attributable to AI agents. Scripts, scrapers, automation.
+- **Administrative** = vault infrastructure. Instruction files, LEVELSET files, audit reports.
 
-## Governance
-
-This file provides operational instructions for Claude Code sessions. The canonical constitution is `!/!/Constitution.md`, maintained by PERSISTENT: ADMINISTRATION. When this file and `!/!/Constitution.md` conflict, `!/!/Constitution.md` governs.
+---
 
 ## Automation
 
@@ -135,6 +140,8 @@ This file provides operational instructions for Claude Code sessions. The canoni
 | `sort_audit.py` | Audits vault structure for misplaced files | Manual (workflow_dispatch) |
 | `idaho_leg_scraper.py` | Scrapes Idaho Legislature bill data | Daily 6 AM MT + manual |
 | `post_digest.py` | Posts bill activity to GitHub Issues digest | Called by scraper workflow |
+| `propose_moves.py` | Proposes vault file reorganization | Weekly Monday 7 AM UTC + manual |
+| `wayback_audit.py` | Audits URL preservation in Wayback Machine | Weekly Monday 8 AM UTC + manual |
 
 ---
 
@@ -145,6 +152,8 @@ This file provides operational instructions for Claude Code sessions. The canoni
 - **Off the record:** Ephemeral. Do not log, do not store, do not commit. If Logan says something is off the record, it does not go in files, code, comments, or commit messages.
 
 When uncertain about sourcing category, **ask Logan**.
+
+---
 
 ## Git Practices
 
@@ -157,9 +166,11 @@ When uncertain about sourcing category, **ask Logan**.
 - Check in before anything irreversible
 - The legislature scraper workflow commits directly to main for automated bill updates
 
+---
+
 ## Conversation Taxonomy
 
-Claude conversations follow a naming convention:
+Logan uses a naming convention for AI conversations:
 
 | Prefix | Purpose |
 |---|---|
@@ -171,15 +182,27 @@ Claude conversations follow a naming convention:
 | ISSUE: | Problem resolution |
 | INQUIRY: | Research questions |
 
+---
+
 ## LEVELSET Protocol
 
-LEVELSET is a permanent, auditable checkpoint protocol. LEVELSET files live in `!/!` and are never deleted, never overwritten. Each version is additive. See `!/!/LEVELSET.md` for current ecosystem status.
+LEVELSET is a permanent, auditable checkpoint protocol. LEVELSET files live in `!ADMINISTRATION/` and are never deleted, never overwritten. Each version is additive. See `!ADMINISTRATION/LEVELSET-v2.md` for the most recent checkpoint.
 
 ---
 
 ## Decision Log
 
-Significant architectural decisions are recorded in `DECISIONS.md`. When a decision is made about vault structure, naming, tooling, or process, log it there. When a decision is made about vault structure, naming, tooling, or process, log it there.
+Significant architectural decisions are recorded in `!ADMINISTRATION/DECISIONS.md`. When a decision is made about vault structure, naming, tooling, or process, log it there.
+
+---
+
+## Multi-Agent Ecosystem
+
+This vault uses multiple AI tools. All agents share the same vault conventions. See also:
+- `CLAUDE.md` — Instructions for Claude Code (Anthropic)
+- `GEMINI.md` — This file (Gemini, Google)
+- `.github/copilot-instructions.md` — Instructions for GitHub Copilot
+- `!/!/LEVELSET-STEP-0-EXTERNAL-AGENT.md` — Paste-to-agent LEVELSET prompt for chat agents without repo access
 
 ---
 
@@ -191,13 +214,3 @@ Significant architectural decisions are recorded in `DECISIONS.md`. When a decis
 - Markdown for human product. Python for machine/procedural product.
 - Do not over-engineer. Keep it simple. Only build what's needed now.
 - Check in before anything irreversible.
-
----
-
-## Multi-Agent Ecosystem
-
-This vault uses multiple AI tools. All agents share the same vault conventions. See also:
-- `CLAUDE.md` — This file (Claude Code, Anthropic)
-- `GEMINI.md` — Instructions for Gemini code agents (Google)
-- `.github/copilot-instructions.md` — Instructions for GitHub Copilot
-- `!/!/LEVELSET-STEP-0-EXTERNAL-AGENT.md` — Paste-to-agent LEVELSET prompt for chat agents without repo access
