@@ -1,0 +1,122 @@
+name: Auto PR for Claude Branches
+
+on:
+  push:
+    branches:
+      - 'claude/**'
+
+jobs:
+  auto-pr:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Get changed files and classify
+        id: classify
+        run: |
+          CHANGED=$(git diff --name-only origin/main...HEAD)
+          if [ -z "$CHANGED" ]; then
+            echo "No changes vs main"
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          echo "skip=false" >> "$GITHUB_OUTPUT"
+
+          RESULT=$(echo "$CHANGED" | python3 .github/scripts/classify_paths.py)
+          TIER=$(echo "$RESULT" | python3 -c "import sys,json; print(json.load(sys.stdin)['tier'])")
+          echo "tier=$TIER" >> "$GITHUB_OUTPUT"
+          echo "result=$RESULT" >> "$GITHUB_OUTPUT"
+
+          echo "### Changed files" >> "$GITHUB_STEP_SUMMARY"
+          echo "$CHANGED" >> "$GITHUB_STEP_SUMMARY"
+          echo "### Risk tier: $TIER" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Check for existing PR
+        if: steps.classify.outputs.skip != 'true'
+        id: check-pr
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          BRANCH="${GITHUB_REF_NAME}"
+          EXISTING=$(gh pr list --head "$BRANCH" --state open --json number --jq '.[0].number // empty')
+          if [ -n "$EXISTING" ]; then
+            echo "pr_exists=true" >> "$GITHUB_OUTPUT"
+            echo "pr_number=$EXISTING" >> "$GITHUB_OUTPUT"
+          else
+            echo "pr_exists=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Create PR
+        if: steps.classify.outputs.skip != 'true' && steps.check-pr.outputs.pr_exists != 'true'
+        id: create-pr
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          BRANCH="${GITHUB_REF_NAME}"
+          # Derive title: strip claude/ prefix and session suffix
+          TITLE=$(echo "$BRANCH" | sed 's|^claude/||' | sed 's|-[a-zA-Z0-9]*$||' | tr '-' ' ')
+          TIER="${{ steps.classify.outputs.tier }}"
+          DIFFSTAT=$(git diff --stat origin/main...HEAD)
+
+          if [ "$TIER" = "low" ]; then
+            LABEL="auto-merge"
+          else
+            LABEL="review-required"
+          fi
+
+          PR_URL=$(gh pr create \
+            --title "$TITLE" \
+            --body "$(cat <<EOF
+          ## Auto-generated PR
+
+          **Risk tier:** \`$TIER\`
+          **Label:** \`$LABEL\`
+
+          ### Diff stat
+          \`\`\`
+          $DIFFSTAT
+          \`\`\`
+
+          ---
+          *Created by auto-pr workflow*
+          EOF
+          )" \
+            --base main \
+            --head "$BRANCH" \
+            --label "$LABEL" 2>&1 || true)
+
+          echo "pr_url=$PR_URL" >> "$GITHUB_OUTPUT"
+          echo "Created PR: $PR_URL"
+
+      - name: Auto-merge if low risk
+        if: steps.classify.outputs.skip != 'true' && steps.classify.outputs.tier == 'low'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          BRANCH="${GITHUB_REF_NAME}"
+
+          # Re-classify as defense in depth
+          CHANGED=$(git diff --name-only origin/main...HEAD)
+          TIER=$(echo "$CHANGED" | python3 .github/scripts/classify_paths.py | python3 -c "import sys,json; print(json.load(sys.stdin)['tier'])")
+
+          if [ "$TIER" != "low" ]; then
+            echo "Reclassified as high-risk on re-check. Skipping auto-merge."
+            exit 0
+          fi
+
+          # Find the PR number
+          PR_NUM=$(gh pr list --head "$BRANCH" --state open --json number --jq '.[0].number')
+          if [ -z "$PR_NUM" ]; then
+            echo "No open PR found to merge"
+            exit 0
+          fi
+
+          echo "Auto-merging PR #$PR_NUM (low risk)"
+          gh pr merge "$PR_NUM" --squash --delete-branch

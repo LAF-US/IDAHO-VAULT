@@ -1,0 +1,48 @@
+name: Branch Cleanup
+
+on:
+  pull_request:
+    types: [closed]
+  schedule:
+    - cron: '0 9 * * 1'  # Every Monday at 9am UTC
+  workflow_dispatch:
+
+jobs:
+  cleanup-merged:
+    if: >
+      github.event_name == 'schedule' ||
+      github.event_name == 'workflow_dispatch' ||
+      (github.event.pull_request.merged == true &&
+       startsWith(github.event.pull_request.head.ref, 'claude/'))
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Delete merged claude branches
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # On PR merge, delete the specific branch
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            BRANCH="${{ github.event.pull_request.head.ref }}"
+            echo "Deleting merged branch: $BRANCH"
+            git push origin --delete "$BRANCH" 2>/dev/null || echo "Branch already deleted"
+            exit 0
+          fi
+
+          # On schedule/manual: sweep all merged claude/* branches
+          echo "Scanning for merged claude/* branches..."
+          git fetch --prune origin
+
+          for ref in $(git branch -r --merged origin/main | grep 'origin/claude/' | sed 's|origin/||'); do
+            echo "Deleting merged branch: $ref"
+            git push origin --delete "$ref" 2>/dev/null || echo "Already deleted: $ref"
+          done
+
+          echo "Done."
