@@ -136,10 +136,11 @@ Use `[[Full Name]]` for all internal links — people, places, organizations, bi
 - Python scripts live in `.github/scripts/`
 - GitHub Actions workflows live in `.github/workflows/`
 - Scripts that commit to the repo use `git config user.name "github-actions[bot]"` and `git config user.email "github-actions[bot]@users.noreply.github.com"`
-- Automation output (reports) is committed to `!ADMINISTRATION/` with date-stamped filenames
+- Automation output (reports) is committed to `!/!` with date-stamped filenames
 - Dependencies are tracked in `.github/scripts/requirements-scraper.txt`
 
 ---
+
 
 ## Automation Scripts
 
@@ -157,7 +158,7 @@ Use `[[Full Name]]` for all internal links — people, places, organizations, bi
 
 - **On the record:** Safe for public repo. All committed content is on the record.
 - **On background:** Vault-safe but identity-protected. Use carefully — this is a public repo.
-- **Off the record:** Ephemeral. Do not log, do not store, do not commit.
+- **Off the record:** Ephemeral. Do not log, do not store, do not commit. If Logan says something is off the record, it must not appear in files, code, comments, or commit messages.
 
 When uncertain about sourcing category, **ask Logan**.
 
