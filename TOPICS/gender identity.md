@@ -1,1 +1,0 @@
-[[TOPICS/STATE AFFAIRS/LGBTQ+ issues|LGBTQ+ issues]] 
