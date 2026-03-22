@@ -92,6 +92,66 @@ from bs4 import BeautifulSoup, Tag
 # Context pending — revisit when more information is available.
 # ─────────────────────────────────────────────────────────────────────────────
 
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Input sanitization (defense-in-depth against injected content)
+# ─────────────────────────────────────────────────────────────────────────────
+
+# Matches HTML tags that may survive BeautifulSoup .get_text()
+_HTML_TAG_RE = re.compile(r"<[^>]+>")
+
+# Control characters (null bytes, etc.) — keep \n and \t
+_CONTROL_CHAR_RE = re.compile(r"[\x00-\x08\x0b\x0c\x0e-\x1f\x7f]")
+
+# Wikilink syntax that should not appear in raw scraped text
+_WIKILINK_RE = re.compile(r"\[\[|\]\]")
+
+
+def sanitize_text(
+    text: str,
+    *,
+    max_length: int = 0,
+    for_yaml: bool = False,
+    strip_wikilinks: bool = False,
+) -> str:
+    """Sanitize scraped text before it enters markdown output.
+
+    Args:
+        text: Raw text from BeautifulSoup .get_text().
+        max_length: Truncate to this many characters (0 = no limit).
+        for_yaml: If True, escape characters that break YAML frontmatter values.
+        strip_wikilinks: If True, remove [[ and ]] from the text.
+    """
+    if not text:
+        return text
+
+    original = text
+
+    # Strip surviving HTML tags
+    text = _HTML_TAG_RE.sub("", text)
+
+    # Strip null bytes and control characters
+    text = _CONTROL_CHAR_RE.sub("", text)
+
+    # Remove wikilink syntax from raw scraped text
+    if strip_wikilinks:
+        text = _WIKILINK_RE.sub("", text)
+
+    # Escape YAML-special characters when value goes into frontmatter
+    if for_yaml:
+        text = text.replace('"', '\\"')
+
+    # Enforce length cap
+    if max_length > 0 and len(text) > max_length:
+        text = text[:max_length].rstrip()
+        logging.warning("sanitize_text: truncated field from %d to %d chars", len(original), max_length)
+
+    if text != original:
+        logging.debug("sanitize_text: cleaned %r → %r", original[:80], text[:80])
+
+    return text
+
+
 # ── Logging ──────────────────────────────────────────────────────────────────
 logging.basicConfig(
     level=logging.INFO,
@@ -281,7 +341,10 @@ def get_bill_list(year: str) -> list[dict]:
 
     soup = get_soup(minidata_url)
     if soup is None:
-        log.error("Could not fetch minidata page")
+        log.error(
+            "Could not fetch minidata page — check network connectivity and "
+            "whether %s is reachable (retries exhausted)", minidata_url
+        )
         return []
 
     # The minidata page renders a plain HTML table.
@@ -290,14 +353,20 @@ def get_bill_list(year: str) -> list[dict]:
     if table is None:
         # Fallback: try the full legislation page
         log.warning("No bill table on minidata; trying main legislation page")
-        table = _find_bill_table(
-            get_soup(
-                f"https://legislature.idaho.gov/sessioninfo/{year}/legislation/"
-            )
+        fallback_url = (
+            f"https://legislature.idaho.gov/sessioninfo/{year}/legislation/"
         )
+        fallback_soup = get_soup(fallback_url)
+        table = _find_bill_table(fallback_soup)
 
     if table is None:
         log.error("Could not find bill table on either minidata or main page")
+        if soup is not None:
+            page_text = soup.get_text()
+            log.debug(
+                "Minidata page length: %d chars; first 200: %.200s",
+                len(page_text), page_text
+            )
         return []
 
     bills = _parse_bill_table(table, year)
@@ -677,17 +746,17 @@ def bill_to_markdown(data: dict, year: str) -> str:
     """Convert a parsed bill data dict to Obsidian-formatted markdown."""
     bill_type  = data.get("bill_type",  "")
     number     = data.get("number",     "")
-    alias      = data.get("alias",      "")
+    alias      = sanitize_text(data.get("alias", ""), for_yaml=True, strip_wikilinks=True)
     url        = data.get("url",        "")
-    title      = data.get("title",      "")
-    sponsor    = data.get("sponsor",    "")    # from minidata (plain text)
-    sponsors   = data.get("sponsors",   [])    # from bill page (parsed names)
-    committee  = data.get("committee",  "")    # from minidata
-    committees = data.get("committees", [])    # from bill page
+    title      = sanitize_text(data.get("title", ""), strip_wikilinks=True)
+    sponsor    = sanitize_text(data.get("sponsor", ""), for_yaml=True, strip_wikilinks=True, max_length=100)
+    sponsors   = [sanitize_text(s, for_yaml=True, strip_wikilinks=True, max_length=100) for s in data.get("sponsors", [])]
+    committee  = sanitize_text(data.get("committee", ""), for_yaml=True, strip_wikilinks=True)
+    committees = [sanitize_text(c, for_yaml=True, strip_wikilinks=True) for c in data.get("committees", [])]
     history    = data.get("history",    [])
-    last_action = data.get("last_action", "")
-    intro      = data.get("introduced_by", "")
-    description = data.get("description", "")
+    last_action = sanitize_text(data.get("last_action", ""), for_yaml=True, strip_wikilinks=True)
+    intro      = sanitize_text(data.get("introduced_by", ""), strip_wikilinks=True)
+    description = sanitize_text(data.get("description", ""), strip_wikilinks=True, max_length=5000)
 
     now_str = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
 
@@ -744,11 +813,11 @@ def bill_to_markdown(data: dict, year: str) -> str:
         lines.append(">")
         for entry in history:
             if not isinstance(entry, dict):
-                lines.append(str(entry))
+                lines.append(sanitize_text(str(entry), strip_wikilinks=True))
                 continue
-            date = entry.get("date", "")
-            action = entry.get("action", "")
-            votes = entry.get("votes", "")
+            date = sanitize_text(entry.get("date", ""), strip_wikilinks=True)
+            action = sanitize_text(entry.get("action", ""), strip_wikilinks=True)
+            votes = sanitize_text(entry.get("votes", ""), strip_wikilinks=True)
             if date and action:
                 lines.append(f"{date} \t{action}")
             elif action:
@@ -1017,17 +1086,17 @@ def parse_member_page(soup: BeautifulSoup, base_info: dict) -> dict:
 
 def member_to_markdown(data: dict, year: str) -> str:
     """Convert parsed member data to Obsidian-format markdown."""
-    name      = data.get("name", "Unknown")
+    name      = sanitize_text(data.get("name", "Unknown"), for_yaml=True, strip_wikilinks=True, max_length=100)
     chamber   = data.get("chamber", "")
-    district  = data.get("district", "")
-    party     = data.get("party", "")
-    term      = data.get("term", "")
-    address   = data.get("address", "")
-    phone_s   = data.get("phone_session", "")
-    email     = data.get("email", "")
-    occ       = data.get("occupation", "")
-    bio       = data.get("bio", "")
-    cmtes     = data.get("committees", [])
+    district  = sanitize_text(data.get("district", ""), for_yaml=True, strip_wikilinks=True)
+    party     = sanitize_text(data.get("party", ""), for_yaml=True, strip_wikilinks=True)
+    term      = sanitize_text(data.get("term", ""), for_yaml=True, strip_wikilinks=True)
+    address   = sanitize_text(data.get("address", ""), strip_wikilinks=True)
+    phone_s   = sanitize_text(data.get("phone_session", ""), for_yaml=True)
+    email     = sanitize_text(data.get("email", ""), for_yaml=True)
+    occ       = sanitize_text(data.get("occupation", ""), strip_wikilinks=True)
+    bio       = sanitize_text(data.get("bio", ""), strip_wikilinks=True, max_length=2000)
+    cmtes     = [sanitize_text(c, strip_wikilinks=True) for c in data.get("committees", [])]
     url       = data.get("url", "")
     now_str   = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
 
@@ -1236,12 +1305,16 @@ def main() -> int:
         ensure_session_note(args.year)
 
     start = datetime.now(timezone.utc)
-    new, updated, unchanged, errors = scrape_bills(
-        year=args.year,
-        force=args.force,
-        target_bill=args.bill,
-        dry_run=args.dry_run,
-    )
+    try:
+        new, updated, unchanged, errors = scrape_bills(
+            year=args.year,
+            force=args.force,
+            target_bill=args.bill,
+            dry_run=args.dry_run,
+        )
+    except Exception as exc:
+        log.exception("Unexpected error during scrape: %s", exc)
+        return 1
 
     if args.members:
         m_new, m_updated, m_unchanged = scrape_members(
