@@ -25,8 +25,10 @@ jobs:
       - name: Checkout vault
         uses: actions/checkout@v6
 
-      - name: Install validation dependencies
-        run: pip install PyYAML>=6.0
+      - name: Setup vault environment
+        uses: ./.github/actions/setup-vault
+        with:
+          pip-packages: "PyYAML>=6.0"
 
       - name: Run Wayback audit
         run: |
@@ -47,8 +49,6 @@ jobs:
 
       - name: Commit audit reports
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
           git add "!/"
           git diff --cached --quiet || git commit -m "wayback audit $(date -u +%Y-%m-%d)"
           git push
