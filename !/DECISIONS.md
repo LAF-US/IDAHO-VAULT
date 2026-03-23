@@ -1,3 +1,8 @@
+---
+tags:
+  - admin/governance
+---
+
 # DECISIONS.md — Confirmed Logan-Approved Decisions
 
 *Last updated: 2026-03-16*
