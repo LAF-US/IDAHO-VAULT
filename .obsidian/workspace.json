@@ -13,13 +13,22 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2026-03-22.md",
+                "file": "2026-03-23.md",
                 "mode": "source",
                 "source": false,
-                "backlinks": false
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
               "icon": "lucide-file",
-              "title": "2026-03-22"
+              "title": "2026-03-23"
             }
           }
         ]
@@ -200,16 +209,17 @@
       }
     ],
     "direction": "horizontal",
-    "width": 437.5
+    "width": 437.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
+      "daily-notes:Open today's daily note": false,
       "markdown-importer:Open format converter": false,
       "zk-prefixer:Create new unique note": false,
       "random-note:Open random note": false,
       "workspaces:Manage workspace layouts": false,
       "publish:Publish changes...": false,
-      "daily-notes:Open today's daily note": false,
       "command-palette:Open command palette": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
@@ -220,11 +230,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "bb54480900362e3a",
+  "active": "81bb98ef02d1eb29",
   "lastOpenFiles": [
-    "2026-03-22.md",
-    "2026-03-23.md",
     "!/DAILYNOTES/2026-03-21.md",
+    "2026-03-23.md",
+    "2026-03-22.md",
     "!/DECISIONS.md",
     "!STEP-0-LEVELSET.md",
     "Untitled 2.md",
