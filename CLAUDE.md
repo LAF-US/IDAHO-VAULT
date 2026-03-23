@@ -1,7 +1,7 @@
 "Claude" [[persona]] ; [[Anthropic]] [[AI]] [[agent]] [[voice]] 
 # CLAUDE persona frame
 
-This file is loaded automatically by Claude and its Code sessions working in the repository. It supplements the root governance stack for Claude-specific operation, but does not override `CONSTITUTION.md`.
+This file is loaded automatically by Claude and its Code sessions working in the repository. It is the single-source-of-truth for how Claude persona entities should operate in the IDAHO-VAULT Obsidian vault.
 
 **Owner:** Logan Finney — journalist, producer/reporter, Idaho Reports / Idaho Public Television; see "[[LOGAN]]" and "[[Logan Finney|Logan]]"
 **Repository URL:** github.com/loganfinney27/IDAHO-VAULT (public vault master repo)
@@ -25,13 +25,7 @@ This is a personal journalism research vault. It contains notes on Idaho politic
 
 ```
 IDAHO-VAULT/
-  !/                      Canonical vault anchor
-  !ADMIN/                 Infrastructure, external-agent packets, audit reports
-  CONSTITUTION.md         Canonical constitution
-  PROTOCOL.md             Swarm operational vocabulary
-  AGENTS.md               Swarm registry and boundary rules
-  LEVELSET.md             Current living ecosystem status
-  DECISIONS.md            Structural decision log
+  !/                      System files, logs, agent routing (see !README.md)
   ATTACHMENTS/
     DOCUMENTS/            PDFs, images
     MAPS/                 Map files
@@ -132,7 +126,7 @@ Use `[[Full Name]]` for all internal links — people, places, organizations, bi
 
 ## Governance
 
-This file provides operational instructions for Claude Code sessions. The canonical constitution is `CONSTITUTION.md`, maintained under Logan's governance stack. The canonical vault anchor is `IDAHO-VAULT/!`. When this file and `CONSTITUTION.md` conflict, `CONSTITUTION.md` governs.
+This file provides operational instructions for Claude Code sessions. The canonical constitution is `CONSTITUTION.md` (vault root). When this file and `CONSTITUTION.md` conflict, `CONSTITUTION.md` governs.
 
 ## Automation
 
@@ -154,7 +148,10 @@ When uncertain about sourcing category, **ask Logan**.
 
 ## Git Practices
 
-- Branch naming: `claude/description-sessionId` for Claude Code branches
+- Branch naming:
+  - `claude/description-sessionId` for Claude Code branches
+  - `copilot/description` for GitHub Copilot branches
+  - `gemini/description` for Gemini agent branches
 - Commit messages: Clear, descriptive, explain the "why"
 - Never force-push without explicit permission
 - Check in before anything irreversible
@@ -174,39 +171,28 @@ Claude conversations follow a naming convention:
 | ISSUE: | Problem resolution |
 | INQUIRY: | Research questions |
 
-## Multi-Agent Ecosystem
-
-IDAHO-VAULT is served by a swarm of AI agents (Claude Code, GitHub Copilot, and others). All agents are infrastructure. No agent has standing or decision-making authority.
-
-**Before starting any significant work, every agent must:**
-1. Read `CONSTITUTION.md` (root) — vault constitution. Replaces old `Claude.md v0.0`.
-2. Read `LEVELSET.md` (root) — the living ecosystem status document.
-3. Check for open PRs that may conflict with your planned changes.
-
-**Governance stack (root-level files, read in order):**
-- `CONSTITUTION.md` — Identity, constraints, working rules
-- `PROTOCOL.md` — 18 operational terms
-- `AGENTS.md` — Agent registry, capability model, boundary rules
-- `LEVELSET.md` — Living ecosystem status
-
-**Known agents:**
-- `PERMANENT: AUTHORITY: CODE` — Tier 1. Central coding agent, direct repo access.
-- `PERSISTENT: ADMINISTRATION` — Draft only. Constitutional layer, conventions.
-- `GitHub Copilot` — Multi-repo admin. Code review, workflow fixes. See `.github/copilot-instructions.md`.
-
-**External agents (no repo access):** Use `!ADMIN/ORIENT-v0.1.md` (STEP-0 LEVELSET prompt) and `!ADMIN/CONTEXT-PASTE-BUNDLE.md` to orient them.
-
 ## LEVELSET Protocol
 
-LEVELSET is a permanent, auditable checkpoint protocol. LEVELSET files live in `!ADMIN/`. Versioned checkpoints are never deleted, never overwritten. See `LEVELSET.md` (root) for current ecosystem status.
+LEVELSET is a permanent, auditable checkpoint protocol. LEVELSET files live at vault root and are never deleted, never overwritten. Each version is additive. See `LEVELSET.md` for current ecosystem status.
 
-**For external agent orientation:** See `!ADMIN/ORIENT-v0.1.md` — the STEP-0 LEVELSET prompt for agents without direct repo access.
+## SIGNAL Protocol
+
+SIGNAL is a push-based complement to LEVELSET. Any conversation, any tier, can emit a structured signal when something needs attention *between* LEVELSET cycles. Four signal types:
+
+| Signal | Purpose |
+|---|---|
+| `ESCALATE` | Something needs a higher-tier conversation's attention |
+| `BLOCK` | This conversation is stuck and needs external input |
+| `COLLISION` | Concurrent work detected on the same files or area |
+| `DISCOVERY` | Found something significant other conversations should know |
+
+Signals are information, not authorization to act. COLLISION signals are always URGENT. See `!ADMINISTRATION/SIGNAL.md` for the full protocol, format, and examples.
 
 ---
 
 ## Decision Log
 
-Significant architectural decisions are recorded in `DECISIONS.md`. When a decision is made about vault structure, naming, tooling, or process, log it there.
+Significant architectural decisions are recorded in `DECISIONS.md` (vault root). When a decision is made about vault structure, naming, tooling, or process, log it there.
 
 ---
 
@@ -218,3 +204,20 @@ Significant architectural decisions are recorded in `DECISIONS.md`. When a decis
 - Markdown for human product. Python for machine/procedural product.
 - Do not over-engineer. Keep it simple. Only build what's needed now.
 - Check in before anything irreversible.
+
+---
+
+## Multi-Agent Ecosystem
+
+This vault uses multiple AI tools. All agents share the same vault conventions and are coordinated via GitHub Issues and PRs. See the agent roles CSV (`Agent Swarm Management and Repository Constitution`) for the simplified role matrix.
+
+**Agent role (from CSV):** Claude Code is "The Abhorsen" — terminal & repository mechanics. Branch management, merges, structural commands. Must not hallucinate intent; only executes structural commands.
+
+**Coordination workflow:** Logan assigns tasks via GitHub Issues with agent labels (`agent:claude-code`, `agent:codex`, `agent:copilot`, `agent:gemini`). Each agent works on its own branch. PRs are the deliverable. Logan reviews and merges from GitHub.
+
+See also:
+- `CLAUDE.md` — This file (Claude Code, Anthropic)
+- `GEMINI.md` — Instructions for Gemini code agents (Google)
+- `.github/copilot-instructions.md` — Instructions for GitHub Copilot
+- `!/LEVELSET-STEP-0-EXTERNAL-AGENT.md` — Paste-to-agent LEVELSET prompt for chat agents without repo access
+- `AGENTS.md` — Full agent registry, capability tiers, and boundary rules
