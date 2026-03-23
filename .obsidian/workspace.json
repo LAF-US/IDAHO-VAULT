@@ -200,7 +200,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 437.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -220,9 +220,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "81bb98ef02d1eb29",
+  "active": "bb54480900362e3a",
   "lastOpenFiles": [
     "2026-03-22.md",
+    "2026-03-23.md",
     "!/DAILYNOTES/2026-03-21.md",
     "!/DECISIONS.md",
     "!STEP-0-LEVELSET.md",
@@ -250,7 +251,6 @@
     "passwords.md",
     "IDEA.md",
     "PERSONAL.md",
-    "AUTHORITIES.md",
     "and"
   ]
 }
