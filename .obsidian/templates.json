@@ -1,3 +1,5 @@
 {
-  "folder": "ATTACHMENTS/TEMPLATES"
+  "folder": "",
+  "dateFormat": "YYYY-MM-DD",
+  "timeFormat": "HH:mm"
 }
