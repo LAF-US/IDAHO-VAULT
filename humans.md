@@ -1,0 +1,3 @@
+[[people]]
+[[homo sapiens]]
+[[individuals]]
