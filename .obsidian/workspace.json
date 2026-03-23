@@ -4,17 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "300a82039dc3f218",
+        "id": "73a9ddc98dab5c51",
         "type": "tabs",
         "children": [
           {
-            "id": "81bb98ef02d1eb29",
+            "id": "971adb1bbab47490",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "2026-03-22.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "2026-03-22"
             }
           }
         ]
@@ -36,7 +41,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical",
+                "sortOrder": "byModifiedTime",
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
@@ -84,7 +89,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 354.5
   },
   "right": {
     "id": "bd8d263fcc54107c",
@@ -100,6 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "2026-03-22.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,7 +115,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for 2026-03-22"
             }
           },
           {
@@ -119,11 +125,13 @@
               "type": "outgoing-link",
               "state": {
                 "file": "2026-03-22.md",
+                "file": "CONSTITUTION.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               },
               "icon": "links-going-out",
               "title": "Outgoing links from 2026-03-22"
+              "title": "Outgoing links from CONSTITUTION"
             }
           },
           {
@@ -161,13 +169,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "prion.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of prion"
+              "title": "Outline"
             }
           },
           {
@@ -197,6 +204,11 @@
     "direction": "horizontal",
     "width": 437.5,
     "collapsed": true
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 371.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -209,14 +221,15 @@
       "command-palette:Open command palette": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
-      "bases:Create new base": false,
-      "canvas:Create new canvas": false,
+      "bases:Create new base": true,
+      "canvas:Create new canvas": true,
+      "command-palette:Open command palette": false,
       "templates:Insert template": false,
       "audio-recorder:Start/stop recording": false,
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "81bb98ef02d1eb29",
+  "active": "971adb1bbab47490",
   "lastOpenFiles": [
     "and/or.md",
     "and",
@@ -263,5 +276,43 @@
     "XKCD1406.png",
     "Snake River Dams.jpg",
     "IMG_20260317_203500.jpg"
+    "FRAMEWORKS.md",
+    "wayback-preserve-2026-03-21.md",
+    "SESSION-LOG.md",
+    "DECISIONS.md",
+    "CLAUDE.md",
+    "GEMINI.md",
+    "2026-03-22.md",
+    "!/LEVELSET-STEP-0-EXTERNAL-AGENT.md",
+    "!/!/LEVELSET-STEP-0-EXTERNAL-AGENT.md",
+    "IDAHO-VAULT",
+    "X - Press Release.md",
+    "X - OP-ED.md",
+    "X - Hearing.md",
+    "X - Article.md",
+    "Kaiser Family Foundation (2).md",
+    "Malheur National Wildlife Refuge (2).md",
+    "Europe (2).md",
+    "Joint Finance-Appropriations Committee (2).md",
+    "Idaho Constitution (2).md",
+    "Idaho Code (2).md",
+    "Board of Professional Counselors and Marriage and Family Therapists (2).md",
+    "or.md",
+    "sort-audit-2026-03-12 (2).md",
+    "!README (2).md",
+    "GOVERNMENTS/Board of Professional Counselors and Marriage and Family Therapists.md",
+    "GOVERNMENTS/Joint Finance-Appropriations Committee.md",
+    "PLACES/Malheur National Wildlife Refuge.md",
+    "TOPICS",
+    "!ADMINISTRATION",
+    "GOVERNMENTS",
+    "PLACES",
+    "Untitled 1.base",
+    "Untitled.base",
+    "Untitled BASE.base",
+    "and",
+    "TEMPLATES",
+    "Snake River Dams.jpg",
+    "Wildlife Management Units.png"
   ]
 }

@@ -3,7 +3,7 @@
   "focusNewTab": false,
   "promptDelete": true,
   "propertiesInDocument": "visible",
-  "attachmentFolderPath": "ATTACHMENTS",
+  "attachmentFolderPath": "/",
   "pdfExportSettings": {
     "includeName": true,
     "pageSize": "Letter",
@@ -14,5 +14,7 @@
   "openBehavior": "daily",
   "showUnsupportedFiles": true,
   "uriCallbacks": true,
+  "tabSize": 4
+}
   "tabSize": 4
 }

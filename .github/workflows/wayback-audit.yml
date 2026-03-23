@@ -23,18 +23,25 @@ jobs:
 
     steps:
       - name: Checkout vault
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Run Wayback audit
+        env:
+          SAVE:  ${{ github.event.inputs.save  || 'false' }}
+          LIMIT: ${{ github.event.inputs.limit || '0' }}
         run: |
-          ARGS=""
-          if [ "${{ github.event.inputs.save }}" = "true" ]; then
-            ARGS="$ARGS --save"
+          ARGS=()
+          [ "$SAVE" = "true" ] && ARGS+=("--save")
+          if [ "$LIMIT" != "0" ] && [ -n "$LIMIT" ]; then
+            ARGS+=("--limit" "$LIMIT")
           fi
-          if [ "${{ github.event.inputs.limit }}" != "0" ] && [ -n "${{ github.event.inputs.limit }}" ]; then
-            ARGS="$ARGS --limit ${{ github.event.inputs.limit }}"
-          fi
-          python3 .github/scripts/wayback_audit.py $ARGS
+          python3 .github/scripts/wayback_audit.py "${ARGS[@]}"
+
+      - name: Validate audit output
+        run: |
+          git add "!ADMIN/"
+          python3 .github/scripts/validate_content.py --scope admin
+          git reset HEAD
 
       - name: Commit audit reports
         run: |
