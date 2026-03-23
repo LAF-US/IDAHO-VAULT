@@ -26,3 +26,9 @@ Thumbs.db
 
 # Local machine secrets
 .obsidian/plugins/obsidian-local-rest-api/data.json
+# Swarm state archive (local only)
+.github/swarm/state/archive/
+
+# Swarm operational logs (ephemeral)
+swarm/logs/*
+!swarm/logs/.gitkeep

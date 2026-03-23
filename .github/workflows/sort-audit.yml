@@ -10,14 +10,19 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      pull-requests: write
 
     steps:
       - name: Checkout vault
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Run sort audit
         run: python3 .github/scripts/sort_audit.py
+
+      - name: Validate audit output
+        run: |
+          git add "!ADMIN/"
+          python3 .github/scripts/validate_content.py --scope admin
+          git reset HEAD
 
       - name: Commit audit report
         run: |
