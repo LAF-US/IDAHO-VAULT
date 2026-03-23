@@ -177,3 +177,4 @@ Current status of the IDAHO-VAULT ecosystem. This file is overwritten — not ap
 | `RESEARCH-TIM-OREN.md` | Research brief stub — Tim Oren voting patterns |
 | `GROUND-TRUTH-VERIFICATION-2026-03-16.md` | Verified repo state — ground truth audit |
 | `CONVERGENCE-2026-03-16.md` | **Cold-start bootstrap** — any new instance reads this first |
+| `LEVELSET-EXTERNAL-AGENT-PROMPT.md` | Prompt template for external agents (Grok, Gemini, etc.) without direct repo access |
