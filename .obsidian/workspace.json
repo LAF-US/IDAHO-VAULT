@@ -11,10 +11,15 @@
             "id": "81bb98ef02d1eb29",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "2026-03-22.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "2026-03-22"
             }
           }
         ]
@@ -118,11 +123,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "2026-03-22.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from 2026-03-22"
             }
           },
           {
@@ -178,9 +184,19 @@
               "icon": "file-digit",
               "title": "Strange New Worlds"
             }
+          },
+          {
+            "id": "bb54480900362e3a",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
@@ -188,6 +204,11 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "markdown-importer:Open format converter": false,
+      "zk-prefixer:Create new unique note": false,
+      "random-note:Open random note": false,
+      "workspaces:Manage workspace layouts": false,
+      "publish:Publish changes...": false,
       "daily-notes:Open today's daily note": false,
       "command-palette:Open command palette": false,
       "switcher:Open quick switcher": false,
@@ -195,11 +216,19 @@
       "bases:Create new base": false,
       "canvas:Create new canvas": false,
       "templates:Insert template": false,
-      "audio-recorder:Start/stop recording": false
+      "audio-recorder:Start/stop recording": false,
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "81bb98ef02d1eb29",
   "lastOpenFiles": [
+    "2026-03-22.md",
+    "!/DAILYNOTES/2026-03-21.md",
+    "!/DECISIONS.md",
+    "!STEP-0-LEVELSET.md",
+    "Untitled 2.md",
+    "!/DAILYNOTES",
+    "!",
     "The world is quiet here..md",
     "Young Lady.md",
     "and.md",
@@ -222,11 +251,6 @@
     "IDEA.md",
     "PERSONAL.md",
     "AUTHORITIES.md",
-    "FLAG.md",
-    "CHORUS.md",
-    "BLOB.md",
-    "ALTURAS.md",
-    "MAGNUS.md",
     "and"
   ]
 }
