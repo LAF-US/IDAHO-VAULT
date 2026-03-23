@@ -139,6 +139,7 @@ def sanitize_text(
 
     # Escape YAML-special characters when value goes into frontmatter
     if for_yaml:
+        text = text.replace("\\", "\\\\")  # must be first: escape backslashes
         text = text.replace('"', '\\"')
 
     # Enforce length cap

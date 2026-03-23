@@ -64,12 +64,12 @@ jobs:
           BILL:    ${{ github.event.inputs.bill     || '' }}
           MEMBERS: ${{ github.event.inputs.members  || 'false' }}
         run: |
-          ARGS="--year $YEAR"
-          [ "$FORCE"   = "true" ] && ARGS="$ARGS --force"
-          [ -n "$BILL" ]          && ARGS="$ARGS --bill $BILL"
-          [ "$MEMBERS" = "true" ] && ARGS="$ARGS --members"
+          ARGS=("--year" "$YEAR")
+          [ "$FORCE"   = "true" ] && ARGS+=("--force")
+          [ -n "$BILL" ]          && ARGS+=("--bill" "$BILL")
+          [ "$MEMBERS" = "true" ] && ARGS+=("--members")
 
-          python3 .github/scripts/idaho_leg_scraper.py $ARGS
+          python3 .github/scripts/idaho_leg_scraper.py "${ARGS[@]}"
 
           # Capture which bill files changed for the digest
           git diff --name-only HEAD \
