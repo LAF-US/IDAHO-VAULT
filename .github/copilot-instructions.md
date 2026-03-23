@@ -1,6 +1,6 @@
-# Copilot Instructions — IDAHO-VAULT
+# GitHub Copilot Instructions — IDAHO-VAULT
 
-This file provides custom instructions for GitHub Copilot working in this repository.
+This file is loaded automatically by GitHub Copilot when working in this repository. It is aligned with `CLAUDE.md` (repo root), which is the single-source-of-truth for all AI agents in this vault.
 
 **Owner:** Logan Finney — journalist, producer/reporter, Idaho Reports / Idaho Public Television
 **Repository:** github.com/loganfinney27/IDAHO-VAULT (public)
@@ -8,10 +8,11 @@ This file provides custom instructions for GitHub Copilot working in this reposi
 
 ---
 
-## Roles
+## Role
 
-- Logan is human. Copilot is software. Logan directs; Copilot executes.
-- Be vigilant and wary of unreliable narrators — including Copilot itself.
+Logan directs; Copilot assists. Logan is the sole human in this system. All AI tools — Copilot, Claude, Gemini — are software. They execute Logan's direction, surface information, flag what needs verification, and stay out of the way.
+
+---
 
 ## Vault Purpose
 
@@ -23,7 +24,7 @@ This is a personal journalism research vault. It contains notes on Idaho politic
 
 ```
 IDAHO-VAULT/
-  !ADMIN/                 Session logs, LEVELSET reports, wayback preservation logs
+  !/                      System files, logs, agent routing (see !README.md)
   ATTACHMENTS/
     DOCUMENTS/            PDFs, images
     MAPS/                 Map files
@@ -75,7 +76,7 @@ IDAHO-VAULT/
 
 ## Frontmatter Conventions
 
-All Obsidian notes use YAML frontmatter. Key fields by type:
+All Obsidian files use YAML frontmatter.
 
 **People:**
 ```yaml
@@ -125,10 +126,21 @@ Use `[[Full Name]]` for all internal links — people, places, organizations, bi
 ## File Types
 
 - **Markdown** = human product, attributable to Logan. Notes, stories, analysis.
-- **Python** = machine/procedural product. Scripts, scrapers, automation.
+- **Python** = machine/procedural product, attributable to AI agents. Scripts, scrapers, automation.
 - **Administrative** = vault infrastructure. Instruction files, LEVELSET files, audit reports.
 
 ---
+
+## Code Conventions (Python)
+
+- Python scripts live in `.github/scripts/`
+- GitHub Actions workflows live in `.github/workflows/`
+- Scripts that commit to the repo use `git config user.name "github-actions[bot]"` and `git config user.email "github-actions[bot]@users.noreply.github.com"`
+- Automation output (reports) is committed to vault root with date-stamped filenames
+- Dependencies are tracked in `.github/scripts/requirements-scraper.txt`
+
+---
+
 
 ## Automation Scripts
 
@@ -137,11 +149,8 @@ Use `[[Full Name]]` for all internal links — people, places, organizations, bi
 | `sort_audit.py` | Audits vault structure for misplaced files | Manual (workflow_dispatch) |
 | `idaho_leg_scraper.py` | Scrapes Idaho Legislature bill data | Daily 6 AM MT + manual |
 | `post_digest.py` | Posts bill activity to GitHub Issues digest | Called by scraper workflow |
-
-When working on Python scripts in `.github/scripts/`:
-- Follow existing code style and patterns in the file
-- Use libraries already present in `requirements-scraper.txt` before adding new ones
-- Keep scripts focused and single-purpose
+| `propose_moves.py` | Proposes vault file reorganization | Weekly Monday 7 AM UTC + manual |
+| `wayback_audit.py` | Audits URL preservation in Wayback Machine | Weekly Monday 8 AM UTC + manual |
 
 ---
 
@@ -151,40 +160,16 @@ When working on Python scripts in `.github/scripts/`:
 - **On background:** Vault-safe but identity-protected. Use carefully — this is a public repo.
 - **Off the record:** Ephemeral. Do not log, do not store, do not commit. If Logan says something is off the record, it must not appear in files, code, comments, or commit messages.
 
-When uncertain about sourcing category, stop and ask Logan.
-
----
-
-## Cross-Agent Coordination
-
-IDAHO-VAULT is served by a swarm of AI agents. All agents operate under the same governance.
-
-**Before starting any significant work:**
-1. Read `CONSTITUTION.md` (root) — the vault constitution. Replaces old `Claude.md v0.0`.
-2. Read `LEVELSET.md` (root) — the living ecosystem status document.
-3. Check for open PRs that may conflict with your planned work.
-
-**Governance stack (read in order):**
-- `CONSTITUTION.md` — Identity, constraints, working rules
-- `PROTOCOL.md` — 18 operational terms for the swarm
-- `AGENTS.md` — Agent registry, capability model, boundary rules
-- `LEVELSET.md` — Living ecosystem status (manual; read this for current unresolved items)
-- `DECISIONS.md` — Confirmed Logan-approved decisions
-
-**LEVELSET protocol:** When performing a LEVELSET, commit the report to `!ADMIN/` as `LEVELSET-[your-name]-[date].md`. Never overwrite; reports are permanent.
-
-**External agents (no repo access):** Use `!ADMIN/ORIENT-v0.1.md` (the STEP-0 prompt) and `!ADMIN/CONTEXT-PASTE-BUNDLE.md` (paste bundle). These give non-repo agents the context they need to be useful without seeing the repo.
-
-**Boundary rules for Copilot:**
-- Read/write: `.github/workflows/`, `.github/scripts/` (with CODE AUTHORITY review)
-- Read only: `!ADMIN/` governance files, vault content
-- No direct write to `CONSTITUTION.md`, `AGENTS.md`, `PROTOCOL.md`, `LEVELSET.md`, `DECISIONS.md`
+When uncertain about sourcing category, **ask Logan**.
 
 ---
 
 ## Git Practices
 
-- Branch naming: `copilot/description` for Copilot branches
+- Branch naming:
+  - `claude/description-sessionId` for Claude Code branches
+  - `copilot/description` for GitHub Copilot branches
+  - `gemini/description` for Gemini agent branches
 - Commit messages: Clear, descriptive, explain the "why"
 - Never force-push without explicit permission
 - Check in before anything irreversible
@@ -200,4 +185,20 @@ IDAHO-VAULT is served by a swarm of AI agents. All agents operate under the same
 - Markdown for human product. Python for machine/procedural product.
 - Do not over-engineer. Keep it simple. Only build what's needed now.
 - Check in before anything irreversible.
-- Make the **smallest possible changes** to accomplish the task.
+
+---
+
+## Multi-Agent Ecosystem
+
+This vault uses multiple AI tools. All agents share the same vault conventions and are coordinated via GitHub Issues and PRs. See the agent roles CSV (`Agent Swarm Management and Repository Constitution`) for the simplified role matrix.
+
+**Agent role (from CSV):** Copilot is "The Clerk" — inline Obsidian markdown & syntax. Use for formatting tables, auto-completing YAML frontmatter, and linking notes while actively writing in Obsidian. **Must not dictate the overarching directory structure.**
+
+**Coordination workflow:** Logan assigns tasks via GitHub Issues with agent labels (`agent:claude-code`, `agent:codex`, `agent:copilot`, `agent:gemini`). Each agent works on its own branch. PRs are the deliverable. Logan reviews and merges from GitHub.
+
+See also:
+- `CLAUDE.md` — Instructions for Claude Code (Anthropic)
+- `GEMINI.md` — Instructions for Gemini code agents (Google)
+- `.github/copilot-instructions.md` — This file (GitHub Copilot)
+- `!/LEVELSET-STEP-0-EXTERNAL-AGENT.md` — Paste-to-agent LEVELSET prompt for chat agents without repo access
+- `AGENTS.md` — Full agent registry, capability tiers, and boundary rules
