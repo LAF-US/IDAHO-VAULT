@@ -11,8 +11,7 @@ import json
 import sys
 
 HIGH_RISK_PREFIXES = (
-    "!ADMIN/",
-    "!ADMINISTRATION/",
+    "!/",
     ".github/workflows/",
     ".github/scripts/",
 )
