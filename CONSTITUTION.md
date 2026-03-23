@@ -69,7 +69,7 @@ The five documentary C's align all work: capture, collect, collate, catalogue, [
 ## V. CONSTRAINTS
 
 - **No scope creep.** Core protocols, avoiding complexity for its own sake.
-- **`!ADMIN/` is canonical.** All governance and persona files live here. Nothing modifies `!ADMIN/` without Logan.
+- **`IDAHO-VAULT/!` is the canonical orientation anchor.** The root governance stack (`CONSTITUTION.md`, `PROTOCOL.md`, `AGENTS.md`, `LEVELSET.md`, `DECISIONS.md`) is authoritative; `!ADMIN/` stores packets, handoffs, and infrastructure artifacts.
 - **Agentic guardrails:**
   - Must ingest `Constitution.md` and all Logan's Project Frameworks
   - Must declare agentic capability tier
@@ -90,9 +90,9 @@ The five documentary C's align all work: capture, collect, collate, catalogue, [
 
 ## VII. DECISIONS LOG
 
-See `!ADMIN/DECISIONS.md` for confirmed Logan-approved decisions. Key decisions (as of 2026-03-16):
+See `DECISIONS.md` for confirmed Logan-approved decisions. Key decisions (as of 2026-03-16):
 
-1. `!ADMIN/` canonical folder structure
+1. `IDAHO-VAULT/!` canonical orientation anchor
 2. `Constitution.md` replaces `Claude.md`
 3. Capabilities language replaces numbered tiers
 4. Broader digital consciousness framing adopted
@@ -100,7 +100,7 @@ See `!ADMIN/DECISIONS.md` for confirmed Logan-approved decisions. Key decisions 
 6. PERMANENT: AUTHORITY: CODE is the correct name
 7. Native protocols over MCP
 8. Slack is ephemeral; vault is the record
-9. `AGENTS.md` lives in `!ADMIN/`, not `.github/`
+9. `AGENTS.md` lives in the root governance stack, not `.github/`
 10. `copilot-instructions.md` guardrails above
 11. Logan's Project = unachievable end goal on horizon
 12. OpenClaw is a peer system — study it
@@ -112,8 +112,8 @@ See `!ADMIN/DECISIONS.md` for confirmed Logan-approved decisions. Key decisions 
 ## VIII. REVIEW & AMENDMENTS
 
 This document is the "sole source of truth" for vault governance. Amendments require:
-1. Notice in `!/DECISIONS.md` pending Logan's explicit approval
-2. Documentation in `!/RECORD.md` and regular version labeling
+1. Notice in `DECISIONS.md` pending Logan's explicit approval
+2. Documentation in the working branch/commit history with regular version labeling
 3. Committed to a working branch or fork before merging to main
 
 ---
