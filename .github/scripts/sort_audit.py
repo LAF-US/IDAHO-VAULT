@@ -19,7 +19,7 @@ from pathlib import Path
 
 VAULT_ROOT = Path(".")
 
-SKIP_DIRS = {".obsidian", "ATTACHMENTS", "!ADMIN", "X LABELER",
+SKIP_DIRS = {".obsidian", "ATTACHMENTS", "!ADMIN", "!", "X LABELER",
              "x hey you make sure to link these"}
 
 OUT_OF_STATE_COUNTY_FOLDERS = {
