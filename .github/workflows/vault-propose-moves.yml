@@ -28,7 +28,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           if [ -f ".github/proposed-moves.sh" ]; then
             git checkout -b "$BRANCH"
-            git add .github/proposed-moves.sh "!ADMIN/"
+            git add .github/proposed-moves.sh "!/"
             git diff --cached --quiet && echo "No changes to propose" && exit 0
             git commit -m "proposed moves $(date -u +%Y-%m-%d)"
             git push origin "$BRANCH"
