@@ -61,6 +61,38 @@
       "path": "BODY.md"
     },
     {
+      "basename": "GEMINI",
+      "path": "GEMINI.md"
+    },
+    {
+      "basename": "CONSTITUTION",
+      "path": "CONSTITUTION.md"
+    },
+    {
+      "basename": "CODEX",
+      "path": "CODEX.md"
+    },
+    {
+      "basename": "!README",
+      "path": "!README.md"
+    },
+    {
+      "basename": "CONSULTATION-PUBLIC-CONVERSATION-2026-03-16 1",
+      "path": "CONSULTATION-PUBLIC-CONVERSATION-2026-03-16 1.md"
+    },
+    {
+      "basename": "LADY",
+      "path": "LADY.md"
+    },
+    {
+      "basename": "!README",
+      "path": "!/!README.md"
+    },
+    {
+      "basename": "ANSWERS",
+      "path": "ANSWERS.md"
+    },
+    {
       "basename": "PROTOCOLS",
       "path": "PROTOCOLS.md"
     },
@@ -204,6 +236,9 @@
   "omittedPaths": [
     ""
   ],
+  "omittedTags": [],
+  "updateOn": "file-open",
+  "omitBookmarks": false,
   "maxLength": null,
   "openType": "tab"
 }
