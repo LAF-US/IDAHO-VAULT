@@ -1,0 +1,1 @@
+[[AUTHORITATIVE]] per [[CANON]]

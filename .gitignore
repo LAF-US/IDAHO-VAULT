@@ -26,3 +26,7 @@ Thumbs.db
 
 # Swarm state archive (local only)
 .github/swarm/state/archive/
+
+# Swarm operational logs (ephemeral)
+swarm/logs/*
+!swarm/logs/.gitkeep
