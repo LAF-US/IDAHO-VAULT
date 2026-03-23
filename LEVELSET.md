@@ -88,7 +88,7 @@ Current status of the IDAHO-VAULT ecosystem. This file is overwritten — not ap
 
 ### 3. CONVERSATION AWARENESS
 
-**Compaction warning:** Logan flagged that widespread compaction across concurrent conversations may cause disorientation. Governance files in `!ADMIN/` are the reorientation anchor. Any disoriented instance should re-read: Constitution.md → AGENTS.md → LEVELSET.md → PROTOCOL.md.
+**Compaction warning:** Logan flagged that widespread compaction across concurrent conversations may cause disorientation. `IDAHO-VAULT/!` is the orientation anchor, and the root governance stack is the reorientation path. Any disoriented instance should re-read: `CONSTITUTION.md` → `AGENTS.md` → `LEVELSET.md` → `PROTOCOL.md`.
 
 | Conversation | Tier | Last known status |
 |---|---|---|

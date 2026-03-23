@@ -1,7 +1,7 @@
 "Claude" [[persona]] ; [[Anthropic]] [[AI]] [[agent]] [[voice]] 
 # CLAUDE persona frame
 
-This file is loaded automatically by Claude and its Code sessions working in the repository. It is the single-source-of-truth for how Claude persona entities should operate in the IDAHO-VAULT Obsidian vault.
+This file is loaded automatically by Claude and its Code sessions working in the repository. It supplements the root governance stack for Claude-specific operation, but does not override `CONSTITUTION.md`.
 
 **Owner:** Logan Finney — journalist, producer/reporter, Idaho Reports / Idaho Public Television; see "[[LOGAN]]" and "[[Logan Finney|Logan]]"
 **Repository URL:** github.com/loganfinney27/IDAHO-VAULT (public vault master repo)
@@ -25,7 +25,13 @@ This is a personal journalism research vault. It contains notes on Idaho politic
 
 ```
 IDAHO-VAULT/
-  !ADMIN/                 Infrastructure, LEVELSET files, audit reports
+  !/                      Canonical vault anchor
+  !ADMIN/                 Infrastructure, external-agent packets, audit reports
+  CONSTITUTION.md         Canonical constitution
+  PROTOCOL.md             Swarm operational vocabulary
+  AGENTS.md               Swarm registry and boundary rules
+  LEVELSET.md             Current living ecosystem status
+  DECISIONS.md            Structural decision log
   ATTACHMENTS/
     DOCUMENTS/            PDFs, images
     MAPS/                 Map files
@@ -126,7 +132,7 @@ Use `[[Full Name]]` for all internal links — people, places, organizations, bi
 
 ## Governance
 
-This file provides operational instructions for Claude Code sessions. The canonical constitution is `!ADMIN/Constitution.md`, maintained by PERSISTENT: ADMINISTRATION. When this file and `!ADMIN/Constitution.md` conflict, `!ADMIN/Constitution.md` governs.
+This file provides operational instructions for Claude Code sessions. The canonical constitution is `CONSTITUTION.md`, maintained under Logan's governance stack. The canonical vault anchor is `IDAHO-VAULT/!`. When this file and `CONSTITUTION.md` conflict, `CONSTITUTION.md` governs.
 
 ## Automation
 
@@ -200,7 +206,7 @@ LEVELSET is a permanent, auditable checkpoint protocol. LEVELSET files live in `
 
 ## Decision Log
 
-Significant architectural decisions are recorded in `!ADMIN/DECISIONS.md`. When a decision is made about vault structure, naming, tooling, or process, log it there.
+Significant architectural decisions are recorded in `DECISIONS.md`. When a decision is made about vault structure, naming, tooling, or process, log it there.
 
 ---
 
