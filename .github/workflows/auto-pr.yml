@@ -58,11 +58,12 @@ jobs:
         id: create-pr
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          RISK_TIER: ${{ steps.classify.outputs.tier }}
         run: |
           BRANCH="${GITHUB_REF_NAME}"
           # Derive title: strip claude/ prefix and session suffix
           TITLE=$(echo "$BRANCH" | sed 's|^claude/||' | sed 's|-[a-zA-Z0-9]*$||' | tr '-' ' ')
-          TIER="${{ steps.classify.outputs.tier }}"
+          TIER="$RISK_TIER"
           DIFFSTAT=$(git diff --stat origin/main...HEAD)
 
           if [ "$TIER" = "low" ]; then
