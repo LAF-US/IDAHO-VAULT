@@ -1,6 +1,15 @@
-# LEVELSET — LOGAN + IDAHO-VAULT (EXTERNAL AGENT)
-*Added: 2026-03-22. Companion to `LEVELSET-v3.2.6.1-PROMPT.md` (for instances with direct repo access).*
-*Use this prompt for agents that cannot read the repo directly: Grok, Gemini, ChatGPT, etc.*
+---
+tags:
+  - administration/levelset
+  - administration/prompt
+created: 2026-03-22
+source: commit
+---
+# STEP-0 LEVELSET — LOGAN + IDAHO-VAULT (EXTERNAL AGENT)
+
+*Prompt template for external agents that cannot directly access the GitHub repository (e.g., Grok, Gemini, general-purpose AI assistants). Use this prompt to orient a new conversation before any vault work begins.*
+
+*Complements `LEVELSET-v3.2.6.1-PROMPT.md`, which is for Claude instances with direct repo access.*
 
 ---
 

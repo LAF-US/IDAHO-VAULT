@@ -1,5 +1,6 @@
-[[Obsidian]] [[dailynote]] [[system]] 
-
-
-
-The World is Quiet Here.
+---
+tags:
+  - dailynote
+---
+---
+[["The world is quiet here."]]
