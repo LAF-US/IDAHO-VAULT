@@ -35,14 +35,14 @@ Logan is iterating on backend systems for management of Obsidian vault database:
 
 Agentic integrations swarmed across multiple [[AI]] "[[assistant]]" [[persona]] [[systems]]:
 - [[Google]]: [[Gemini]], [[Assistant]], [[Drive]], [[Home]], [[NotebookLM]], [[Pinpoint]], [[Cloud]], and full [[Google ecosystem]] suite of web toolsets
-- [[Anthropic]]: [[Claude]]
-- [[OpenAI]]: [[ChatGPT]]
+- [[Anthropic]]: [[Claude]], [[Claude Code]]
+- [[OpenAI]]: [[ChatGPT]], [[Codex]]
 - [[Spotify]]: [[DJ X]]
 - [[X]] / [[Xai]]: [[Grok]]
 - [[Perplexity]]: [[Perplexity]]
-- [[GitHub]]: [[Copilot]] (interface, repo coder)
-- [[Microsoft Copilot]] (mine), [[M365]] (work)
-- Fictive "personas" ; Others as identified
+- [[GitHub]]: [[Copilot]] (chat interface, code agents)
+- [[Microsoft Copilot]] (Personal), [[M365 Copilot]] (work)
+- Fictive "vault personas" ; Others as identified...
 
 [[CONSTITUTION|The goal]] is ambitious, and impossible to fully articulate — but incremental progress toward it drives at vaulted meaning-making.
 
