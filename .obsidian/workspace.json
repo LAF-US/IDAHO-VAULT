@@ -124,11 +124,13 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "2026-03-22.md",
                 "file": "CONSTITUTION.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               },
               "icon": "links-going-out",
+              "title": "Outgoing links from 2026-03-22"
               "title": "Outgoing links from CONSTITUTION"
             }
           },
@@ -184,7 +186,24 @@
               "icon": "file-digit",
               "title": "Strange New Worlds"
             }
+          },
+          {
+            "id": "bb54480900362e3a",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
+        ],
+        "currentTab": 6
+      }
+    ],
+    "direction": "horizontal",
+    "width": 437.5,
+    "collapsed": true
         ]
       }
     ],
@@ -194,17 +213,69 @@
   "left-ribbon": {
     "hiddenItems": {
       "daily-notes:Open today's daily note": false,
+      "markdown-importer:Open format converter": false,
+      "zk-prefixer:Create new unique note": false,
+      "random-note:Open random note": false,
+      "workspaces:Manage workspace layouts": false,
+      "publish:Publish changes...": false,
+      "command-palette:Open command palette": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "bases:Create new base": true,
       "canvas:Create new canvas": true,
       "command-palette:Open command palette": false,
       "templates:Insert template": false,
-      "audio-recorder:Start/stop recording": false
+      "audio-recorder:Start/stop recording": false,
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "971adb1bbab47490",
   "lastOpenFiles": [
+    "and/or.md",
+    "and",
+    "X LABELER/x hey you make sure to link these/Idaho State Journal 2023-02-17 Members of local Christian congregations hold sit-in protest against Pocatello drag queen reading program.md",
+    "X LABELER/x hey you make sure to link these/Idaho Reports 2022-11-08 2022 RESULTS; Competitive Idaho legislative seats.md",
+    "X LABELER/x hey you make sure to link these/Idaho Education News 2021-08-26 Indoctrination task force calls on Legislature to make slew of changes.md",
+    "X LABELER/x hey you make sure to link these/Idaho Education News 2021-06-24 Indoctrination task force took aim at alleged indoctrination in K-12 schools.md",
+    "X LABELER/x hey you make sure to link these/Idaho Education News 2021-06-14 McGeachin names indoctrination task force replacement.md",
+    "X LABELER/x hey you make sure to link these/Idaho Education News 2021-06-04 ISBA rep leaves indoctrination task force, decrying ‘partisan campaigning’.md",
+    "X LABELER/x hey you make sure to link these/Idaho Education News 2021-05-27 Indoctrination task force talks social justice, stirs dissent in first meeting.md",
+    "X LABELER/x hey you make sure to link these/Idaho Education News 2021-05-21 Conservative lawmaker announces run for lieutenant governor.md",
+    "X LABELER/x hey you make sure to link these/Idaho Education News 2021-05-20 Education indoctrination task force members; updated list and bios.md",
+    "X LABELER/x hey you make sure to link these/Idaho Education News 2020-01-15 Majority of educators support English standards during packed Common Core hearing.md",
+    "X LABELER/x hey you make sure to link these/Idaho Capital Sun 2023-11-06 Idaho built few accountability measures into Health Data Exchange, watchdog report finds.md",
+    "X LABELER/x hey you make sure to link these/Idaho Capital Sun 2023-06-28 What happened to the Idaho Health Data Exchange, and can other states learn from it.md",
+    "X LABELER/x hey you make sure to link these/Idaho Capital Sun 2023-05-02 New coalition seeks to end Idaho's closed primary elections.md",
+    "X LABELER/x hey you make sure to link these/Idaho Capital Sun 2023-03-24 Idaho House introduces late-session medical cannabis bill.md",
+    "X LABELER/x hey you make sure to link these/Idaho Capital Sun 2022-10-14 No action on election-related publication, Idaho Secretary of State decides.md",
+    "X LABELER/x hey you make sure to link these/Idaho Capital Sun 2022-06-30 People’s Pen publication under investigation by Idaho AG for alleged sunshine law violation.md",
+    "X LABELER/x hey you make sure to link these/Idaho Capital Sun 2021-10-06 A look inside Idaho’s unredacted McGeachin task force files.md",
+    "X LABELER/x hey you make sure to link these/FIRE 2021-08-05 Idaho education task force may threaten academic freedom.md",
+    "X LABELER/x hey you make sure to link these/East Idaho News 2023-11-03 New canal pipeline provides new access to water and helps aquifer recharge.md",
+    "X LABELER/x hey you make sure to link these/East Idaho News 2023-10-12 Judge sides with Bingham County Republicans in ongoing legal battle.md",
+    "X LABELER/x hey you make sure to link these/East Idaho News 2023-02-13 Local drag queen reading time attracts a packed house — but those in attendance weren’t fans.md",
+    "X LABELER/x hey you make sure to link these/BoiseDev 2023-11-27 Ada County GOP finances under audit following complaint to state party, abrupt resignation of central committee leadership.md",
+    "X LABELER/x hey you make sure to link these/Article 2023-09-21 Idaho GOP not hearing Bingham County appeal on Saturday (updated).md",
+    "X LABELER/x hey you make sure to link these/Article 2022-11-10 2022 ANALYSIS; Nature abhors a power vacuum.md",
+    "X LABELER/x hey you make sure to link these/Article 2022-06-14 White nationalists from 12 states arrested in Coeur d’Alene.md",
+    "X LABELER/x hey you make sure to link these",
+    "X LABELER",
+    "PLACES/SCHOOLS/COLLEGES AND UNIVERSITIES/STATE COLLEGES",
+    "PLACES/SCHOOLS/COLLEGES AND UNIVERSITIES/PRIVATE COLLEGES",
+    "PLACES/SCHOOLS/COLLEGES AND UNIVERSITIES/COMMUNITY COLLEGES",
+    "PLACES/GEOGRAPHY/WATER/RIVERS AND CREEKS",
+    "PLACES/GEOGRAPHY/WATER/LAKES AND RESERVOIRS",
+    "PLACES/GEOGRAPHY/WATER/DAMS",
+    "PLACES/GEOGRAPHY/LAND/NATIONAL FORESTS",
+    "ATTACHMENTS/MAPS/Wildlife Management Units.png",
+    "ATTACHMENTS/MAPS/Snake River Dams.jpg",
+    "XKCD_password_strength.png",
+    "XKCD927.png",
+    "XKCD2495.png",
+    "XKCD2301.png",
+    "XKCD1406.png",
+    "Snake River Dams.jpg",
+    "IMG_20260317_203500.jpg"
     "FRAMEWORKS.md",
     "wayback-preserve-2026-03-21.md",
     "SESSION-LOG.md",
