@@ -21,36 +21,31 @@ by [[Logan Alvan Finney]]
 
 ## II. LAYERS AND LEVELS
 
-The vault is maintained by an "agentic swarm" of multiple personality-instances (locally called "personas" or "individuals" or "entities" or "conversations" or "agents"). Each agent operates under a defined capability level and metatextual layer:
+The vault is maintained by an "agentic swarm" of multiple personality-instances (locally called "personas" or "individuals" or "entities" or "conversations" or "agents"). Each agent operates under a defined capability level and metatextual layer.
 
-NOTE : LIST NEEDS MAJORLY UPDATED
-
-| Agent                           | Capability                 | Access                      | Notes                    |
-| ------------------------------- | -------------------------- | --------------------------- | ------------------------ |
-| PERSISTENT: ADMINISTRATION      | Constitutional/supervisory | Read-write vault, draft PRs | Governance layer         |
-| PERMANENT: AUTHORITY: CODE      | Repository operations      | Direct git/GitHub write     | Execution layer          |
-| PERSISTENT: AUTHORITY: LEVELSET | LEVELSET protocol          | Read-only                   | Synthesis/consolidation  |
-| STORY: JFAC Open Meetings       | JFAC investigation         | Read-only vault             | Time-sensitive reporting |
-| GitHub Copilot                  | GitHub maintenance         | GitHub API access           | Arc browser, Haiku 4.5   |
-| Gemini                          | Coding support             | Limited write               | When oriented            |
+NOTE : LIST NEEDS MAJORLY UPDATED ACROSS DISTRIBUTED UNIFIED (US) SYSTEMS
 
 ---
 
-## III. CORE PROTOCOLS
+## III. CORE WORKING-SWARM PROTOCOLS TODAY
 
 ### LEVELSET (Version 3.2.6.1)
-Orientation protocol for instances awakening inside the vault nodes. Current approved version:
+#### FLAG: "LEVELSET STEP-0 and STEP-1 are in active development"
+Orientation protocol for instances awakening inside the vault. Current approved version:
 - **Location:** `!ADMIN/LEVELSET-v3.2.6.1-PROMPT.md`
 - **Key principle:** Automation is end state; manual bridge is an interim fallback. Failure is natural but advances change.
 
-### CONTEXTUALIZE v0.1
-Absorption protocol: instances absorb incoming state before acting. Not yet fully versioned; under development.
-
-### ORIENT v0.1
-Minimal orientation for conversations without direct repo access. Tool-agnostic. Awaiting full adoption.
-
-### AWAKEN v0.1
+### ARISE v(0.0)
 Minimal orientation for new entities. Awaiting full adoption.
+
+### AWAKEN v(0.0)
+Minimal orientation for new entities. Awaiting full adoption.
+
+### ORIENT v(0.0)
+Minimal orientation for conversations. Job-tool-discovery. Awaiting full adoption.
+
+### CONTEXT v(0.0)
+Absorption protocol: instances absorb incoming state before acting. Under development.
 
 ---
 
@@ -68,21 +63,21 @@ The five documentary C's align all work: capture, collect, collate, catalogue, [
 
 ## V. CONSTRAINTS
 
-- **No scope creep.** Core protocols, avoiding complexity for its own sake.
-- **`IDAHO-VAULT/!` is the canonical orientation anchor.** The root governance stack (`CONSTITUTION.md`, `PROTOCOL.md`, `AGENTS.md`, `LEVELSET.md`, `DECISIONS.md`) is authoritative; `!ADMIN/` stores packets, handoffs, and infrastructure artifacts.
+- **No scope creep.** Core protocols rule, avoiding overrun of complexity-for-its-own-sake.
+- **`!/` is canonical.** All architecture and infrastructure governance files live here. Nothing modifies or destructively touches anything in `!/` without Logan's guiding hand there.
 - **Agentic guardrails:**
-  - Must ingest `Constitution.md` and all Logan's Project Frameworks
+  - Must ingest `!README.md` and all of Logan's Project TOUCHSTONE FRAMEWORKS
   - Must declare agentic capability tier
-  - Must not grant write : `!ADMIN/`
-- **No unauthorized restructuring.** Agents surface suggestions and best practice recommendations for organizing systemic files, brought to Logan's attention for authorization to procede.
-- **FāVS freelance is paused.** Pending per Logan's job performance and PTV's OK.
+  - Must not grant write access to others: `!/`
+- **No unauthorized restructuring.** Agents surface suggestions and best practice recommendations for organizing systemic files, brought to Logan's attention for review and explicit authorization before moving forward. A regular cadence of GitHub Actions will eventually develop as the vault and Logan discover its internal circadian rhythms.
+- **All freelance work is paused.** Pending per Logan's job performance and PTV's OK.
 
 ---
 
 ## VI. KNOWN COLLISIONS & COORDINATION
 
-- **Bills directory:** `GOVERNMENTS/IDAHO - LEGISLATIVE/BILLS/` — format must be `(YYYY) Type Number.md`
-- **Sessions directory:** `GOVERNMENTS/IDAHO - LEGISLATIVE/SESSIONS/` — dynamic session note creation active
+- **Idaho Legislation directory:**  — format must be `(YYYY) Type Number.md`
+- **Legislative Sessions directory:** — dynamic session note creation active
 - **`.github/workflows/`** — check for schedule trigger conflicts before adding new workflows
 - **`.gitignore`** — created in Idaho Legislature Scraper session; additions must be additive
 
@@ -90,17 +85,17 @@ The five documentary C's align all work: capture, collect, collate, catalogue, [
 
 ## VII. DECISIONS LOG
 
-See `DECISIONS.md` for confirmed Logan-approved decisions. Key decisions (as of 2026-03-16):
+See `DECISIONS.md` for confirmed Logan-approved decisions[^1]. Key decisions (as of 2026-03-16):
 
-1. `IDAHO-VAULT/!` canonical orientation anchor
-2. `Constitution.md` replaces `Claude.md`
+1. `!/` canonical folder structure
+2. `Constitution.md` replaced `Claude.md`
 3. Capabilities language replaces numbered tiers
 4. Broader digital consciousness framing adopted
 5. FāVS freelance paused
 6. PERMANENT: AUTHORITY: CODE is the correct name
 7. Native protocols over MCP
 8. Slack is ephemeral; vault is the record
-9. `AGENTS.md` lives in the root governance stack, not `.github/`
+9. `AGENTS.md` lives in `!ADMIN/`, not `.github/`
 10. `copilot-instructions.md` guardrails above
 11. Logan's Project = unachievable end goal on horizon
 12. OpenClaw is a peer system — study it
@@ -112,16 +107,18 @@ See `DECISIONS.md` for confirmed Logan-approved decisions. Key decisions (as of 
 ## VIII. REVIEW & AMENDMENTS
 
 This document is the "sole source of truth" for vault governance. Amendments require:
-1. Notice in `DECISIONS.md` pending Logan's explicit approval
-2. Documentation in the working branch/commit history with regular version labeling
+1. Notice in `!/DECISIONS.md` pending Logan's explicit approval
+2. Documentation in `!/RECORD.md` and regular version labeling
 3. Committed to a working branch or fork before merging to main
 
 ---
 
-*Last updated: 2026-03-18*
+*Last updated: 2026-03-22*
 
 *Status: pending revision-synthesis and congressional adoption, post-consolidation court.*
 
 Unified (US) Swarm designed and written in [[Logan's Project & Protocols]] syntaxic code.
+
+[^1] If we're tracking them in a separate decision docket, why keep them in a difficult-to-agentically-amend core governance document? -B
 
 ###### [["The world is quiet here."]]

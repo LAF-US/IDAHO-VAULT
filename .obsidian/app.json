@@ -3,7 +3,7 @@
   "focusNewTab": false,
   "promptDelete": false,
   "propertiesInDocument": "visible",
-  "attachmentFolderPath": "ATTACHMENTS",
+  "attachmentFolderPath": "/",
   "pdfExportSettings": {
     "includeName": true,
     "pageSize": "Letter",
