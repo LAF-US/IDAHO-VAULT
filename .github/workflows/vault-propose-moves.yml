@@ -16,6 +16,9 @@ jobs:
       - name: Checkout vault
         uses: actions/checkout@v6
 
+      - name: Setup vault environment
+        uses: ./.github/actions/setup-vault
+
       - name: Generate proposed moves
         run: python3 .github/scripts/propose_moves.py
 
@@ -24,8 +27,6 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           BRANCH="vault-moves-$(date -u +%Y-%m-%d)"
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
           if [ -f ".github/proposed-moves.sh" ]; then
             git checkout -b "$BRANCH"
             git add .github/proposed-moves.sh "!/"

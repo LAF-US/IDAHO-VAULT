@@ -20,6 +20,9 @@ jobs:
         with:
           fetch-depth: 2  # Need previous commit to diff
 
+      - name: Setup vault environment
+        uses: ./.github/actions/setup-vault
+
       - name: Extract new URLs from changed notes
         id: extract
         run: |
@@ -119,8 +122,6 @@ jobs:
 
       - name: Commit preservation log
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
           git add "!/"
           if ! git diff --cached --quiet; then
             git commit -m "wayback preservation log $(date -u +%Y-%m-%d)"
