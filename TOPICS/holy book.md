@@ -1,3 +1,0 @@
-[[Bible]]
-[[Torah]] 
-[[Quran]] 
