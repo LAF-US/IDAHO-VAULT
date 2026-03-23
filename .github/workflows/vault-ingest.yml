@@ -21,7 +21,8 @@ jobs:
           CONTENT: Vault ingest pipeline initialized.
         run: |
           mkdir -p INBOX PROCESSED AGENTS ADMIN
-          TIMESTAMP="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          # Use a Windows-safe timestamp (no colons) to keep filenames portable.
+          TIMESTAMP="$(date -u +%Y-%m-%dT%H-%M-%SZ)"
           FILE="INBOX/ingest-${TIMESTAMP}.md"
           if [ -e "$FILE" ]; then
             echo "Ingest file already exists: $FILE"
