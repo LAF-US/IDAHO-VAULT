@@ -59,7 +59,7 @@ Can commit and push to the repository. Must LEVELSET before significant commits.
 - `git add`, `git commit`, `git push` to feature branches
 - Create, modify, and delete vault files
 - Create and modify `.github/` scripts and workflows
-- Modify `!ADMIN/` governance files (CODE AUTHORITY only — see Boundary Rules)
+- Modify root governance files and `!ADMIN/` artifacts (CODE AUTHORITY only — see Boundary Rules)
 - Run automation scripts
 
 **Cannot do:**
@@ -83,7 +83,7 @@ Can interact with GitHub APIs across all of [[LOGAN]]'s repositories. For vault 
 - Broader latitude — **specific boundaries TBD by [[LOGAN]]**
 
 **Cannot do (vault):**
-- Directly modify `!ADMIN/` governance files (Constitution, PROTOCOL, AGENTS, LEVELSET, DECISIONS)
+- Directly modify root governance files (`Constitution.md`, `PROTOCOL.md`, `AGENTS.md`, `LEVELSET.md`, `DECISIONS.md`)
 - Merge without [[LOGAN]]'s approval
 - Override CODE AUTHORITY's governance review
 
@@ -163,10 +163,10 @@ Handoff documents are saved to `!ADMIN/` as `HANDOFF-[source]-[date].md` for aud
 | Layer | Purpose | Persistence | Status |
 |---|---|---|---|
 | **Slack** | Real-time coordination, supervision | Ephemeral | Trial active — expires April 13 |
-| **`!ADMIN/` files** | Decisions of record, governance | Permanent | Active |
+| **Root governance stack** | Decisions of record, governance | Permanent | Active |
 | **`!ADMIN/ROUTING/`** | Asynchronous handoff drops | Permanent | Recommended, not yet created |
 
-**Hard rule:** Slack is ephemeral. All decisions must be captured in vault files. Slack is where the conversation happens; `!ADMIN/` is where decisions land.
+**Hard rule:** Slack is ephemeral. All decisions must be captured in vault files. Slack is where the conversation happens; the root governance stack is where decisions land.
 
 ---
 
@@ -176,7 +176,7 @@ Handoff documents are saved to `!ADMIN/` as `HANDOFF-[source]-[date].md` for aud
 
 | Path | CODE AUTHORITY | Copilot | ADMINISTRATION | Others |
 |---|---|---|---|---|
-| `!ADMIN/` governance files | Read/Write | Read only | Draft only | Read only |
+| Root governance files | Read/Write | Read only | Draft only | Read only |
 | `!ADMIN/` handoffs/LEVELSETs | Read/Write | Read only | Draft only | Read only |
 | `.github/workflows/` | Read/Write | Read/Write (with review) | No access | No access |
 | `.github/scripts/` | Read/Write | Read/Write (with review) | No access | No access |
@@ -215,7 +215,7 @@ If a `git merge` or `git pull` produces conflicts:
 1. **STOP.** Do not auto-resolve.
 2. Report to [[LOGAN]] with the specific files and conflict markers
 3. Conflicts signal another conversation has been active — context may be stale
-4. Re-read `!ADMIN/LEVELSET.md` and `!ADMIN/Constitution.md` to reorient
+4. Re-read `CONSTITUTION.md` and `LEVELSET.md` to reorient
 
 ---
 
