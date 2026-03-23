@@ -24,6 +24,9 @@ Thumbs.db
 .env
 *.vault.json
 
+# Swarm state archive (local only)
+.github/swarm/state/archive/
+
 # Swarm operational logs (ephemeral)
 swarm/logs/*
 !swarm/logs/.gitkeep

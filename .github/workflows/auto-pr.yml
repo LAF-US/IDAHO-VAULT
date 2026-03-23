@@ -53,6 +53,14 @@ jobs:
             echo "pr_exists=false" >> "$GITHUB_OUTPUT"
           fi
 
+      - name: Ensure labels exist
+        if: steps.classify.outputs.skip != 'true' && steps.check-pr.outputs.pr_exists != 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh label create "auto-merge" --color "0E8A16" --description "Low-risk, eligible for auto-merge" --force 2>/dev/null || true
+          gh label create "review-required" --color "D93F0B" --description "High-risk, requires Logan's review" --force 2>/dev/null || true
+
       - name: Create PR
         if: steps.classify.outputs.skip != 'true' && steps.check-pr.outputs.pr_exists != 'true'
         id: create-pr
@@ -72,23 +80,25 @@ jobs:
             LABEL="review-required"
           fi
 
+          BODY=$(cat <<EOF
+## Auto-generated PR
+
+**Risk tier:** \`$TIER\`
+**Label:** \`$LABEL\`
+
+### Diff stat
+\`\`\`
+$DIFFSTAT
+\`\`\`
+
+---
+*Created by auto-pr workflow*
+EOF
+          )
+
           PR_URL=$(gh pr create \
             --title "$TITLE" \
-            --body "$(cat <<EOF
-          ## Auto-generated PR
-
-          **Risk tier:** \`$TIER\`
-          **Label:** \`$LABEL\`
-
-          ### Diff stat
-          \`\`\`
-          $DIFFSTAT
-          \`\`\`
-
-          ---
-          *Created by auto-pr workflow*
-          EOF
-          )" \
+            --body "$BODY" \
             --base main \
             --head "$BRANCH" \
             --label "$LABEL" 2>&1 || true)
