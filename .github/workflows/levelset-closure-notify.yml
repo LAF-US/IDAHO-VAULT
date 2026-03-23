@@ -3,8 +3,7 @@ name: Levelset Closure Notification
 on:
   push:
     paths:
-      - "!ADMIN/LEVELSET-*.md"
-      - "!ADMINISTRATION/LEVELSET-*.md"
+      - '\!ADMIN/LEVELSET-*.md'
 
 jobs:
   notify:
@@ -26,7 +25,6 @@ jobs:
         run: |
           git diff --name-only HEAD~1 HEAD -- \
             '!ADMIN/LEVELSET-*.md' \
-            '!ADMINISTRATION/LEVELSET-*.md' \
             > /tmp/changed_levelsets.txt 2>/dev/null || true
           echo "count=$(wc -l < /tmp/changed_levelsets.txt | tr -d ' ')" >> $GITHUB_OUTPUT
 

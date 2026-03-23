@@ -20,7 +20,7 @@ jobs:
 
       - name: Validate audit output
         run: |
-          git add "!ADMINISTRATION/"
+          git add "!ADMIN/"
           python3 .github/scripts/validate_content.py --scope admin
           git reset HEAD
 
