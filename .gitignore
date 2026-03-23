@@ -23,3 +23,7 @@ Thumbs.db
 # Project-specific
 .env
 *.vault.json
+
+# Swarm operational logs (ephemeral)
+swarm/logs/*
+!swarm/logs/.gitkeep
