@@ -122,7 +122,6 @@ When uncertain: ask Logan.
 | Monday 7am UTC | `vault-propose-moves.yml` | Proposes file moves via PR |
 | Monday 8am UTC | `wayback-audit.yml` | Checks URLs, archives dead links |
 | On push (main) | `wayback-preserve.yml` | Archives new URLs to Wayback Machine |
-| On LEVELSET commit | `levelset-sync.yml` | Updates `!ADMIN/LEVELSET-CURRENT.md` |
 
 ---
 

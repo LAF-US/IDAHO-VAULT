@@ -161,7 +161,7 @@ IDAHO-VAULT is served by a swarm of AI agents. All agents operate under the same
 
 **Before starting any significant work:**
 1. Read `CONSTITUTION.md` (root) — the vault constitution. Replaces old `Claude.md v0.0`.
-2. Read `!ADMIN/LEVELSET-CURRENT.md` — the cross-agent context hub (auto-updated).
+2. Read `LEVELSET.md` (root) — the living ecosystem status document.
 3. Check for open PRs that may conflict with your planned work.
 
 **Governance stack (read in order):**
@@ -171,7 +171,7 @@ IDAHO-VAULT is served by a swarm of AI agents. All agents operate under the same
 - `LEVELSET.md` — Living ecosystem status (manual; read this for current unresolved items)
 - `DECISIONS.md` — Confirmed Logan-approved decisions
 
-**LEVELSET protocol:** When performing a LEVELSET, commit the report to `!ADMIN/` as `LEVELSET-[your-name]-[date].md`. Never overwrite; reports are permanent. The `levelset-sync.yml` workflow auto-updates `!ADMIN/LEVELSET-CURRENT.md` when new reports land.
+**LEVELSET protocol:** When performing a LEVELSET, commit the report to `!ADMIN/` as `LEVELSET-[your-name]-[date].md`. Never overwrite; reports are permanent.
 
 **External agents (no repo access):** Use `!ADMIN/ORIENT-v0.1.md` (the STEP-0 prompt) and `!ADMIN/CONTEXT-PASTE-BUNDLE.md` (paste bundle). These give non-repo agents the context they need to be useful without seeing the repo.
 
