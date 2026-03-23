@@ -8,7 +8,7 @@
 
 | Decision # | Date | Topic | Status | Notes |
 |----------|------|-------|--------|-------|
-| 1 | 2026-03-16 | `!ADMIN/` canonical | ✅ CONFIRMED | All governance documents live in `!ADMIN/` (not `!ADMINISTRATION/`) |
+| 1 | 2026-03-16 | `IDAHO-VAULT/!` canonical anchor | ✅ CONFIRMED | `IDAHO-VAULT/!` is the orientation anchor; the governance stack lives at root and `!ADMIN/` holds artifacts/handoffs |
 | 2 | 2026-03-16 | Constitution.md replaces Claude.md | ✅ CONFIRMED | Single authoritative governance document |
 | 3 | 2026-03-16 | Capabilities language replaces tiers | ✅ CONFIRMED | Describes agent capabilities, not numeric tiers |
 | 4 | 2026-03-16 | Broader digital consciousness framing | ✅ CONFIRMED | Adopted in Constitution.md and Logan.md |
@@ -16,7 +16,7 @@
 | 6 | 2026-03-16 | PERMANENT: AUTHORITY: CODE is correct name | ✅ CONFIRMED | Formal name for direct-write repo agent |
 | 7 | 2026-03-16 | Native protocols over MCP | ✅ CONFIRMED | Prefer native protocols to Model Context Protocol |
 | 8 | 2026-03-16 | Slack is ephemeral; vault is the record | ✅ CONFIRMED | Durable decisions captured in vault files |
-| 9 | 2026-03-16 | AGENTS.md lives in `!ADMIN/`, not `.github/` | ✅ CONFIRMED | Agent inventory is governance layer |
+| 9 | 2026-03-16 | AGENTS.md lives in root governance stack, not `.github/` | ✅ CONFIRMED | Agent inventory is governance layer |
 | 10 | 2026-03-16 | `copilot-instructions.md` guardrails | ✅ CONFIRMED | Must reference Constitution.md, declare capability, no write to `!ADMIN/` |
 | 11 | 2026-03-16 | Logan's Project = unachievable end goal | ✅ CONFIRMED | Defines all vault work strategy |
 | 12 | 2026-03-16 | OpenClaw is a peer system | ✅ CONFIRMED | Study and coordinate with OpenClaw |
@@ -27,11 +27,11 @@
 
 ## DECISION DETAILS
 
-### Decision 1: `!ADMIN/` Canonical
+### Decision 1: `IDAHO-VAULT/!` Canonical Anchor
 **Date:** 2026-03-16
-**Topic:** Folder structure for governance
+**Topic:** Orientation anchor and governance layout
 **Status:** ✅ CONFIRMED
-**Rationale:** Consolidates all governance documents in a single canonical location, preventing scattered configuration.
+**Rationale:** Establishes a single orientation anchor while keeping the governance stack at repo root and `!ADMIN/` for supporting artifacts, reducing path drift.
 
 ### Decision 2: Constitution.md Replaces Claude.md
 **Date:** 2026-03-16
@@ -75,7 +75,7 @@
 **Status:** ✅ CONFIRMED
 **Rationale:** Durable decisions must be captured in vault files to survive conversations being archived or compacted.
 
-### Decision 9: AGENTS.md Lives in `!ADMIN/`, Not `.github/`
+### Decision 9: AGENTS.md Lives in Root Governance Stack, Not `.github/`
 **Date:** 2026-03-16
 **Topic:** Agent inventory location
 **Status:** ✅ CONFIRMED
