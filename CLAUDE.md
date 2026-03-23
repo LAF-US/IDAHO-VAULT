@@ -174,7 +174,7 @@ IDAHO-VAULT is served by a swarm of AI agents (Claude Code, GitHub Copilot, and 
 
 **Before starting any significant work, every agent must:**
 1. Read `CONSTITUTION.md` (root) — vault constitution. Replaces old `Claude.md v0.0`.
-2. Read `!ADMIN/LEVELSET-CURRENT.md` — the cross-agent context hub (auto-updated).
+2. Read `LEVELSET.md` (root) — the living ecosystem status document.
 3. Check for open PRs that may conflict with your planned changes.
 
 **Governance stack (root-level files, read in order):**
@@ -192,9 +192,7 @@ IDAHO-VAULT is served by a swarm of AI agents (Claude Code, GitHub Copilot, and 
 
 ## LEVELSET Protocol
 
-LEVELSET is a permanent, auditable checkpoint protocol. LEVELSET files live in `!ADMIN/`. Versioned checkpoints are never deleted, never overwritten. See `LEVELSET.md` for current ecosystem status.
-
-**For current cross-agent state:** See `!ADMIN/LEVELSET-CURRENT.md` — auto-updated by `levelset-sync.yml` when new reports are committed.
+LEVELSET is a permanent, auditable checkpoint protocol. LEVELSET files live in `!ADMIN/`. Versioned checkpoints are never deleted, never overwritten. See `LEVELSET.md` (root) for current ecosystem status.
 
 **For external agent orientation:** See `!ADMIN/ORIENT-v0.1.md` — the STEP-0 LEVELSET prompt for agents without direct repo access.
 

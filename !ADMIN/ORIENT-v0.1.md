@@ -87,7 +87,6 @@ For Logan: the following files provide the context external agents need. Paste t
 | `CONSTITUTION.md` (root) | Core identity, constraints, agent tiers |
 | `AGENTS.md` (root) | Agent registry, capability model, boundary rules |
 | `LEVELSET.md` (root) | Current ecosystem status — projects, unresolved, conversation awareness |
-| `!ADMIN/LEVELSET-CURRENT.md` | Cross-agent context hub — compact orientation snapshot |
 | `!ADMIN/CONTEXT-PASTE-BUNDLE.md` | Pre-packaged paste bundle for quick external agent orientation |
 
 **Minimal paste for a new external agent:**
