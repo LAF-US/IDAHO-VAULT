@@ -26,7 +26,7 @@ This is a personal journalism research vault. It contains notes on Idaho politic
 
 ```
 IDAHO-VAULT/
-  !/                      System files, logs, agent routing (see !README.md)
+  !/!                     Infrastructure, LEVELSET files, audit reports (canonical governance dir)
   ATTACHMENTS/
     DOCUMENTS/            PDFs, images
     MAPS/                 Map files
@@ -186,30 +186,23 @@ Logan uses a naming convention for AI conversations:
 
 ## LEVELSET Protocol
 
-LEVELSET is a permanent, auditable checkpoint protocol. LEVELSET files live at vault root and are never deleted, never overwritten. Each version is additive. See `LEVELSET.md` for current ecosystem status.
+LEVELSET is a permanent, auditable checkpoint protocol. LEVELSET files live in `!ADMINISTRATION/` and are never deleted, never overwritten. Each version is additive. See `!ADMINISTRATION/LEVELSET-v2.md` for the most recent checkpoint.
 
 ---
 
 ## Decision Log
 
-Significant architectural decisions are recorded in `DECISIONS.md` (vault root). When a decision is made about vault structure, naming, tooling, or process, log it there.
+Significant architectural decisions are recorded in `!ADMINISTRATION/DECISIONS.md`. When a decision is made about vault structure, naming, tooling, or process, log it there.
 
 ---
 
 ## Multi-Agent Ecosystem
 
-This vault uses multiple AI tools. All agents share the same vault conventions and are coordinated via GitHub Issues and PRs. See the agent roles CSV (`Agent Swarm Management and Repository Constitution`) for the simplified role matrix.
-
-**Agent role (from CSV):** Gemini is "The Vault Advisor" — holds the narrative lens, political context, and the "Sebald Code." Advises on framing and strategy. **Does not touch code.**
-
-**Coordination workflow:** Logan assigns tasks via GitHub Issues with agent labels (`agent:claude-code`, `agent:codex`, `agent:copilot`, `agent:gemini`). Each agent works on its own branch. PRs are the deliverable. Logan reviews and merges from GitHub.
-
-See also:
+This vault uses multiple AI tools. All agents share the same vault conventions. See also:
 - `CLAUDE.md` — Instructions for Claude Code (Anthropic)
 - `GEMINI.md` — This file (Gemini, Google)
 - `.github/copilot-instructions.md` — Instructions for GitHub Copilot
-- `!/LEVELSET-STEP-0-EXTERNAL-AGENT.md` — Paste-to-agent LEVELSET prompt for chat agents without repo access
-- `AGENTS.md` — Full agent registry, capability tiers, and boundary rules
+- `!/!/LEVELSET-STEP-0-EXTERNAL-AGENT.md` — Paste-to-agent LEVELSET prompt for chat agents without repo access
 
 ---
 
