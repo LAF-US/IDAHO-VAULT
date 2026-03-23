@@ -13,7 +13,7 @@ jobs:
 
     steps:
       - name: Checkout vault
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Run sort audit
         run: python3 .github/scripts/sort_audit.py
