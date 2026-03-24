@@ -58,13 +58,13 @@ IDAHO-VAULT/
 
 ## Naming Conventions
 
-| Type | Pattern | Example |
-|---|---|---|
-| Bills | `(YYYY) Bill Type Number.md` | `(2026) House Bill 24.md` |
-| News articles | `YYYY-MM-DD - Outlet - Title.md` | `2024-01-15 - Idaho Statesman - Title here.md` |
-| Hearings | `YYYY-MM-DD - Committee or Meeting.md` | `2023-12-19 - GIAC meeting.md` |
-| People | `Full Name.md` | `Brad Little.md` |
-| Other entities | Descriptive name, title case | `Ada County.md` |
+| Type           | Pattern                                | Example                                        |
+| -------------- | -------------------------------------- | ---------------------------------------------- |
+| Bills          | `(YYYY) Bill Type Number.md`           | `(2026) House Bill 24.md`                      |
+| News articles  | `YYYY-MM-DD - Outlet - Title.md`       | `2024-01-15 - Idaho Statesman - Title here.md` |
+| Hearings       | `YYYY-MM-DD - Committee or Meeting.md` | `2023-12-19 - GIAC meeting.md`                 |
+| People         | `Full Name.md`                         | `Brad Little.md`                               |
+| Other entities | Descriptive name, title case           | `Ada County.md`                                |
 
 ---
 
@@ -73,14 +73,16 @@ IDAHO-VAULT/
 All Obsidian files use YAML frontmatter. Key fields by type:
 
 **People:**
+
 ```yaml
 tags:
-  - Party/Republican          # or Party/Democratic
+  - Party/Republican # or Party/Democratic
   - people/elected/legislative
 residence: "[[Boise]]"
 ```
 
 **News articles:**
+
 ```yaml
 author: "[[Reporter Name]]"
 outlet: "[[Outlet Name]]"
@@ -91,6 +93,7 @@ tags:
 ```
 
 **Bills:**
+
 ```yaml
 tags:
   - bills
@@ -103,6 +106,7 @@ URL: https://legislature.idaho.gov/...
 ```
 
 **Hearings:**
+
 ```yaml
 cmte: "[[Committee Name]]"
 tags:
@@ -127,13 +131,13 @@ Use `[[Full Name]]` for all internal links — people, places, organizations, bi
 
 ## Automation
 
-| Script | Purpose | Trigger |
-|---|---|---|
-| `sort_audit.py` | Audits vault structure for misplaced files | Weekly Monday 6 AM UTC + manual |
-| `idaho_leg_scraper.py` | Scrapes Idaho Legislature bill data | Daily 6 AM MT + manual |
-| `post_digest.py` | Posts bill activity to GitHub Issues digest | Called by scraper workflow |
-| `propose_moves.py` | Proposes vault file reorganization | Weekly Monday 7 AM UTC + manual |
-| `wayback_audit.py` | Audits URL preservation in Wayback Machine | Weekly Monday 8 AM UTC + manual |
+| Script                 | Purpose                                     | Trigger                         |
+| ---------------------- | ------------------------------------------- | ------------------------------- |
+| `sort_audit.py`        | Audits vault structure for misplaced files  | Weekly Monday 6 AM UTC + manual |
+| `idaho_leg_scraper.py` | Scrapes Idaho Legislature bill data         | Daily 6 AM MT + manual          |
+| `post_digest.py`       | Posts bill activity to GitHub Issues digest | Called by scraper workflow      |
+| `propose_moves.py`     | Proposes vault file reorganization          | Weekly Monday 7 AM UTC + manual |
+| `wayback_audit.py`     | Audits URL preservation in Wayback Machine  | Weekly Monday 8 AM UTC + manual |
 
 Scripts live in `.github/scripts/`. Workflows live in `.github/workflows/`. Scripts that commit to the repo use `git config user.name "github-actions[bot]"`. Dependencies are tracked in `.github/scripts/requirements-scraper.txt`.
 
