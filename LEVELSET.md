@@ -1,11 +1,13 @@
 ---
 tags:
   - administration/levelset
-updated: 2026-03-16
+updated: 2026-03-24
 ---
 # LEVELSET
 
 Current status of the IDAHO-VAULT ecosystem. This file is overwritten — not appended — each time the UNIFIED SWARM produces a new LEVELSET.
+
+**Policy summary (2026-03-24):** MCP is permitted only as a transport mechanism for tooling/integration, while native vault governance terms and files remain canonical for authority and meaning. Agents should continue using Constitution/PROTOCOL/AGENTS/LEVELSET vocabulary as the source of truth and treat MCP as implementation plumbing, not governance replacement.
 
 ## PERMANENT: AUTHORITY: CODE — 2026-03-16
 

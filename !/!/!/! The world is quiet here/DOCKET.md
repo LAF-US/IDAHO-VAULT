@@ -40,7 +40,7 @@ This is the live coordination board. Any agent arriving at THE COURTROOM reads t
 |------|---------|-----------------|
 | Gemini capability tier | Google Cloud `idaho-vault` project exists, APIs enabled, credentials not created — role decision required before any integration | Logan |
 | `.obsidian/workspace.json` | Tracked in git; should be untracked + gitignored — separate hygiene PR | Logan |
-| Vault-embedded MCP architecture | Four scoped questions unanswered; governance tension with Decision 7 (native protocols over MCP) | Logan |
+| Vault-embedded MCP architecture | **Resolved 2026-03-24:** Q1 MCP disallowed? **No**. Q2 Transport-only with native terms canonical? **Yes (adopted)**. Q3 MCP primary integration model? **No**. Q4 Governance authority source? **Vault-native governance files/terms remain canonical**. Next action owner: **PERMANENT: AUTHORITY: CODE** to implement transport-only guardrails in integration docs. Unblock date: **2026-03-24**. | Logan |
 | `vault-moves-2026-03-23` branch | 30 proposed file moves (auto-generated) — awaiting review/apply/discard decision | Logan |
 | Stale remote branches (6) | Require manual deletion via GitHub web UI — `codex/fix-high-priority-bug-in-pr-#34`, `copilot/*` (4 branches), `vault-moves-2026-03-16` | Logan |
 | JFAC quote audio verification | 5 quotes + speaker IDs — HARD GATE before publication | Logan |
