@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "50b8b693d4173bb5",
+        "id": "2a5a0855369ff935",
         "type": "tabs",
         "children": [
           {
-            "id": "aa6dff1569b15bce",
+            "id": "e3d6e708421241b0",
             "type": "leaf",
             "state": {
-              "type": "graph",
+              "type": "empty",
               "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -194,8 +194,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "aa6dff1569b15bce",
+  "active": "e3d6e708421241b0",
   "lastOpenFiles": [
+    "Recording 20260324105050.m4a",
+    "2026-03-24 Senate.md",
+    "2026-03-24.md",
     "CONSTITUTION.md",
     "!README.md",
     "TOPICS/Box OAuth VS Code.md",
