@@ -23,17 +23,23 @@ This is the live coordination board. Any agent arriving at THE COURTROOM reads t
 
 ## RECENTLY COMPLETED
 
-| Task                                                 | Completed  | Notes                                                                                       |
-| ---------------------------------------------------- | ---------- | ------------------------------------------------------------------------------------------- |
-| PR #34 — Obsidian vault update (42 files)            | 2026-03-23 | Merged via `copilot/deploy-dependabot-configurations`                                       |
-| PR #39 — Get scrapers running                        | 2026-03-24 | Merged; scraper now on main, running daily                                                  |
-| PR #40 — CodeRabbit GitHub integration               | 2026-03-23 | Merged                                                                                      |
-| PR #44 — REST API credential sanitization            | 2026-03-24 | Merged; machine credentials purged from repo                                                |
-| PR #46 — Workflow centralization + settings.json fix | 2026-03-24 | Merged; composite action, zombie `!ADMINISTRATION/` paths fixed                             |
-| PR #43 — Codex credential sanitization               | 2026-03-24 | Closed as superseded by PR #44                                                              |
-| GEMINI.md update                                     | 2026-03-24 | Direct commit by Logan                                                                      |
-| PR #48 — CONSTITUTION.md LEVELSET path fix           | 2026-03-23 | Merged; zombie `!ADMIN/LEVELSET-v3.2.6.1-PROMPT.md` → `!/LEVELSET-STEP-0-EXTERNAL-AGENT.md` |
-| PR #50 — CONSTITUTION.md AGENTS.md location fix      | 2026-03-23 | Merged; decision 9 summary corrected to repo root                                           |
+| Task                                                      | Completed  | Notes                                                                                       |
+| --------------------------------------------------------- | ---------- | ------------------------------------------------------------------------------------------- |
+| PR #34 — Obsidian vault update (42 files)                 | 2026-03-23 | Merged via `copilot/deploy-dependabot-configurations`                                       |
+| PR #39 — Get scrapers running                             | 2026-03-24 | Merged; scraper now on main, running daily                                                  |
+| PR #40 — CodeRabbit GitHub integration                    | 2026-03-23 | Merged                                                                                      |
+| PR #44 — REST API credential sanitization                 | 2026-03-24 | Merged; machine credentials purged from repo                                                |
+| PR #46 — Workflow centralization + settings.json fix      | 2026-03-24 | Merged; composite action, zombie `!ADMINISTRATION/` paths fixed                             |
+| PR #43 — Codex credential sanitization                    | 2026-03-24 | Closed as superseded by PR #44                                                              |
+| GEMINI.md update                                          | 2026-03-24 | Direct commit by Logan                                                                      |
+| PR #48 — CONSTITUTION.md LEVELSET path fix                | 2026-03-23 | Merged; zombie `!ADMIN/LEVELSET-v3.2.6.1-PROMPT.md` → `!/LEVELSET-STEP-0-EXTERNAL-AGENT.md` |
+| PR #50 — CONSTITUTION.md AGENTS.md location fix           | 2026-03-23 | Merged; decision 9 summary corrected to repo root                                           |
+| PR #51 — auto-pr YAML fix (heredoc → printf)              | 2026-03-24 | Incorporated into PR #57; fixes workflow parse failures on every push                       |
+| PR #52 — Governance docs formatting normalization         | 2026-03-24 | Incorporated into PR #57                                                                    |
+| PR #53 — Decision 16 (MCP governance), DOCKET + LEVELSET | 2026-03-24 | Incorporated into PR #57                                                                    |
+| PR #54 — Compact MCP mapping in PROTOCOL.md              | 2026-03-24 | Incorporated into PR #57                                                                    |
+| PR #55 — MCP implementation plan (new file)               | 2026-03-24 | Incorporated into PR #57                                                                    |
+| PR #56 — MCP action logging template in VAULT-CONVENTIONS | 2026-03-24 | Incorporated into PR #57                                                                    |
 
 ## BLOCKED / PENDING LOGAN
 
