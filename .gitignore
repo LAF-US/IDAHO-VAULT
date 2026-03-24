@@ -32,3 +32,5 @@ Thumbs.db
 # Swarm operational logs (ephemeral)
 swarm/logs/*
 !swarm/logs/.gitkeep
+.obsidian/plugins/recent-files-obsidian/data.json
+.obsidian/workspace.json
