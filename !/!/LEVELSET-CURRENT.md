@@ -1,9 +1,9 @@
 # LEVELSET-CURRENT — Live Ecosystem State
 
-**Date:** 2026-03-13
+**Date:** 2026-03-24
 **Status:** CURRENT — living synthesis, updated each LEVELSET round
-**Synthesized by:** PERSISTENT: CODE AUTHORITY (Claude Code, Tier 1)
-**Input authority chain:** LEVELSET-v2.md > DECISIONS.md > CLAUDE.md
+**Synthesized by:** Claude Code (The Abhorsen) — Operation: Spring Clean update
+**Input authority chain:** CONSTITUTION.md > DECISIONS.md > CLAUDE.md
 **Approved by:** Pending Logan Finney review
 
 ---
@@ -26,41 +26,59 @@ LEVELSET-CURRENT is the rolling synthesis document. Unlike numbered LEVELSET fil
 | Field | Value |
 |---|---|
 | Remote | github.com/loganfinney27/IDAHO-VAULT (public) |
-| Primary branch | `origin/main` at `364c2bd` |
-| Feature branches | `claude/idaho-legislature-scraper-RI6Ku` (4 commits ahead of main) |
-| | `claude/levelset-multi-conversation-zWxJc` (6 commits ahead of main) |
-| Total commits | 19 (as of this synthesis) |
-| Last commit | `f8a0370` — CLAUDE.md + DECISIONS.md |
+| Primary branch | `origin/main` at `83cb4ee` |
+| Open PRs | 0 |
+| Open Issues | 0 |
+| Last commit | `83cb4ee` — GEMINI.md update (Logan, 2026-03-24) |
 
 ### Branch Status
 
-| Branch | Purpose | Commits Ahead | Merge Status |
+| Branch | Purpose | Commits Ahead | Status |
 |---|---|---|---|
-| `claude/idaho-legislature-scraper-RI6Ku` | Legislature scraper + GitHub Actions | 4 | **Awaiting Logan's review** |
-| `claude/levelset-multi-conversation-zWxJc` | LEVELSET process + CLAUDE.md + DECISIONS.md | 6 | **Awaiting Logan's review** |
+| `claude/fix-pr-43-Ogp5S` | Spring Clean — DOCKET/LEVELSET refresh | active | **Current working branch** |
+| `vault-moves-2026-03-23` | 30 auto-generated proposed file moves | 1 | **Awaiting Logan's review/decision** |
+| `codex/fix-high-priority-bug-in-pr-#34` | REST API credential sanitization (PR #43, superseded) | 3 | **Safe to delete** — superseded by PR #44 |
+| `copilot/consolidate-copilot-efforts` | — | 0 | **Safe to delete** — fully merged |
+| `copilot/emergency-handoff-swarm-coherence` | — | 0 | **Safe to delete** — fully merged |
+| `copilot/fix-token-permissions-and-error-handling` | — | 0 | **Safe to delete** — fully merged |
+| `copilot/setup-copilot-instructions` | — | 0 | **Safe to delete** — fully merged |
+| `vault-moves-2026-03-16` | Prior proposed file moves | 0 | **Safe to delete** — fully merged |
+
+*Note: Branch deletion requires Logan via GitHub web UI — Claude Code does not have remote delete permissions for non-`claude/*` branches.*
 
 ### Infrastructure Inventory
 
 | Asset | Type | Location | Status |
 |---|---|---|---|
-| `CLAUDE.md` | Administrative | Repo root | **NEW** — on feature branch, not yet on main |
-| `LEVELSET-v2.md` | Administrative | `!ADMINISTRATION/` | Committed, feature branch |
-| `DECISIONS.md` | Administrative | `!ADMINISTRATION/` | Committed, feature branch, 5 entries |
-| `sort_audit.py` | Python | `.github/scripts/` | On main, operational |
-| `sort-audit.yml` | YAML | `.github/workflows/` | On main, manual trigger |
-| `sort-audit-2026-03-12.md` | Markdown output | `!ADMINISTRATION/` | On main |
-| `idaho_leg_scraper.py` | Python | `.github/scripts/` | Feature branch, not yet on main |
-| `post_digest.py` | Python | `.github/scripts/` | Feature branch, not yet on main |
-| `idaho-leg-scraper.yml` | YAML | `.github/workflows/` | Feature branch, daily cron + manual |
-| `.gitignore` | Config | Repo root | Feature branch |
+| `CLAUDE.md` | Administrative | Repo root | On main — operational |
+| `CONSTITUTION.md` | Administrative | Repo root | On main — canonical governance |
+| `DECISIONS.md` | Administrative | Repo root | On main — 15 confirmed decisions |
+| `AGENTS.md` | Administrative | Repo root (or `!ADMIN/`) | On main |
+| `VAULT-CONVENTIONS.md` | Administrative | Repo root | On main |
+| `GEMINI.md` | Administrative | Repo root | On main — updated 2026-03-24 |
+| `sort_audit.py` | Python | `.github/scripts/` | On main, operational (weekly) |
+| `idaho_leg_scraper.py` | Python | `.github/scripts/` | On main — running daily 6 AM MT |
+| `post_digest.py` | Python | `.github/scripts/` | On main |
+| `propose_moves.py` | Python | `.github/scripts/` | On main |
+| `wayback_audit.py` | Python | `.github/scripts/` | On main |
+| `linear_brief_generator.py` | Python | `.github/scripts/` | On main — Stage 1 mesh pipeline |
+| `auto-pr.yml` | YAML | `.github/workflows/` | On main — auto-creates PRs from `claude/*` |
+| `branch-cleanup.yml` | YAML | `.github/workflows/` | On main — cleans merged `claude/*` branches |
+| `idaho-leg-scraper.yml` | YAML | `.github/workflows/` | On main — daily cron + manual |
+| `linear-brief.yml` | YAML | `.github/workflows/` | On main — Linear webhook relay pipeline |
+| `.github/actions/setup-vault/` | Composite action | `.github/actions/` | On main — centralized workflow setup |
+| `.obsidian/plugins/obsidian-local-rest-api/data.json` | Config | `.obsidian/plugins/` | Sanitized — credentials purged (PR #44) |
+| `.gitignore` | Config | Repo root | On main — hardened post-PR #44 |
 
-### Corrections to LEVELSET-v2
+### Corrections Since LEVELSET-v2 (2026-03-13 → 2026-03-24)
 
-The following items from LEVELSET-v2.md are now stale:
-
-1. **"CLAUDE.md — No repository-level instruction file exists"** — Corrected. CLAUDE.md was created at commit `f8a0370` on feature branch `claude/levelset-multi-conversation-zWxJc`. Not yet on main.
-2. **"Ethics.md — No vault ethics policy exists"** — Still true. No Ethics.md has been created.
-3. **Total commits listed as 17** — Now 19 on this branch (LEVELSET-v2 commit + CLAUDE.md/DECISIONS.md commit).
+1. **CLAUDE.md on main** — Now on main (was feature branch as of v2).
+2. **Legislature scraper on main and running** — Daily cron firing; was on feature branch as of v2.
+3. **`!ADMINISTRATION/` → `!ADMIN/`** — Folder structure renamed; zombie references purged in PR #46.
+4. **Ethics.md** — Still does not exist.
+5. **DECISIONS.md at repo root** — Moved from `!ADMINISTRATION/`; now 15 confirmed decisions (was 5 as of v2).
+6. **REST API credentials** — Machine-specific `apiKey` and crypto material purged via PR #44. `.gitignore` updated.
+7. **Total commits** — Well past 19; recent merge sequence: PR #34, #39, #40, #44, #46 + direct commits.
 
 ---
 
@@ -99,27 +117,27 @@ The following items from LEVELSET-v2.md are now stale:
 
 ## DECISIONS CURRENT STATE
 
-Twelve decisions logged in DECISIONS.md (all 2026-03-13):
+As of 2026-03-24: **15 confirmed decisions** in DECISIONS.md at repo root. See that file for full text; summary below.
 
-1. LEVELSET protocol established
-2. CLAUDE.md created
-3. Conversation taxonomy adopted
-4. File type attribution rules
-5. Sort audit and legislature scraper deployed
-6. Option A sequencing for LEVELSET synthesis
-7. LEVELSET-CURRENT as rolling synthesis document
-8. *(reserved)* — PERSISTENT: CODE AUTHORITY designation — **HELD** pending session type taxonomy definition (#13)
-9. LEVELSET promoted to persistent state layer
-10. Session-open and session-close protocols defined (implementation pending full adoption)
-11. Task assignment lives in !ADMINISTRATION, not conversation memory
-12. Handoff/handshake built into LEVELSET workflow
-13. Session type taxonomy needs formal definition (open task)
+| # | Decision | Status |
+|---|---|---|
+| 1 | `!ADMIN/` canonical folder structure | ✅ CONFIRMED |
+| 2 | Constitution.md replaces Claude.md as governance authority | ✅ CONFIRMED |
+| 3 | Capabilities language replaces tiers | ✅ CONFIRMED |
+| 4 | Broader digital consciousness framing adopted | ✅ CONFIRMED |
+| 5 | FāVS freelance paused | ✅ CONFIRMED |
+| 6 | PERMANENT: AUTHORITY: CODE is correct conversation name | ✅ CONFIRMED |
+| 7 | Native protocols over MCP | ✅ CONFIRMED |
+| 8 | Slack is ephemeral; vault is the record | ✅ CONFIRMED |
+| 9 | AGENTS.md lives in `!ADMIN/`, not `.github/` | ✅ CONFIRMED |
+| 10 | `copilot-instructions.md` guardrails in place | ✅ CONFIRMED |
+| 11 | Logan's Project = unachievable end goal on the horizon | ✅ CONFIRMED |
+| 12 | OpenClaw is a peer system | ✅ CONFIRMED |
+| 13 | Slack-to-file rule adopted in principle | ✅ CONFIRMED |
+| 14 | STORY: JFAC is read-only | ✅ CONFIRMED |
+| 15 | Security hardening: input sanitization + content validation | ✅ CONFIRMED |
 
-### Decisions Held
-
-| # | Decision | Condition | Status |
-|---|---|---|---|
-| 8 | PERSISTENT: CODE AUTHORITY designation | Contingent on #13 taxonomy work producing a formal definition that includes CODE AUTHORITY | **HELD** — not in DECISIONS.md |
+**Pending Logan's review (DECISIONS.md):** AGENTS-v0.2-DRAFT.md approval, ORIENTATE-v0.1-BETA.md approval, LEVELSET-LITE-v0.1.md approval, AUTHORITY: ADMIN: CLAUDE consolidation, FāVS resume decision, Gemini ADMIN scope.
 
 ---
 
@@ -260,18 +278,13 @@ Updated with JFAC session incorporation:
 
 | Item | Priority | Notes |
 |---|---|---|
-| ~~Review 8 pending decisions (#6–#13) for DECISIONS.md~~ | ~~**High**~~ | **DONE** — 7 approved and appended. #8 held pending #13 taxonomy work. |
-| Merge feature branches to main | **High** | Both branches have substantive work. CLAUDE.md on main is the highest-impact merge. |
 | Audio verify JFAC quotes (5 quotes + speaker IDs) | **High** | HARD GATE for publication. See Pending Verification Queue above. |
-| Ethics.md creation | Medium | No draft exists anywhere in the ecosystem |
-| LEVELSET cadence decision | Medium | Weekly? Milestone-triggered? Needs a standing rule. |
-
-### Awaiting Other Conversations
-
-| Item | Source | Notes |
-|---|---|---|
-| ~~JFAC Open Meetings session cache block~~ | ~~STORY: JFAC Open Meetings~~ | **RECEIVED** — incorporated this round |
-| LEVELSET reports from other conversations | All active conversations | Most conversations have not submitted reports |
+| `vault-moves-2026-03-23` branch decision | **Medium** | 30 auto-proposed file moves (US states to `PLACES/OTHER/STATES/`). Review, apply, or discard. |
+| Delete stale remote branches (6) | Medium | `codex/fix-high-priority-bug-in-pr-#34`, `copilot/*` (4), `vault-moves-2026-03-16` — safe to delete via GitHub web UI |
+| Pending decisions review (DECISIONS.md) | Medium | AGENTS-v0.2, ORIENTATE-v0.1, LEVELSET-LITE, etc. |
+| Ethics.md creation | Low | No draft exists anywhere in the ecosystem |
+| LEVELSET cadence decision | Low | Weekly? Milestone-triggered? Needs a standing rule. |
+| Gemini capability tier scope | Low | Undefined — Gemini blocked from vault commits until scoped |
 
 ### Known Technical Issues
 
@@ -279,7 +292,7 @@ Updated with JFAC session incorporation:
 |---|---|---|
 | Sort audit false positives | Low | Out-of-state counties flagged as Idaho counties in `sort_audit.py` |
 | `X LABELER/` unsorted files | Ongoing | Manual triage by Logan |
-| Legislature scraper not on main | Medium | Daily cron won't fire until branch is merged |
+| ~3,400 markdown files at repo root | Low | Massive root-level clutter; `vault-propose-moves` workflow addresses incrementally |
 
 ---
 
@@ -287,29 +300,30 @@ Updated with JFAC session incorporation:
 
 Transparency about gaps — this section exists so Logan and other conversations know exactly what's thin:
 
-1. ~~**JFAC Open Meetings session context**~~ — **RESOLVED.** Cache block received and incorporated 2026-03-13. People updates, verified facts, open tasks, lessons learned, architectural decisions, and transcript processing protocols now in this document.
+1. ~~**JFAC Open Meetings session context**~~ — **RESOLVED.** Cache block received and incorporated 2026-03-13.
 
-2. **LEVELSET reports from 9 of 11 conversations** — Only CODE AUTHORITY (this session) and TASK: LEVELSET reports have actively participated. The other conversations' states are inferred, not reported.
+2. **Conversation census is stale** — The CONVERSATION CENSUS below reflects March 2026 conversation state. Active conversations and their outputs have not been re-surveyed for this update.
 
-3. **PERSISTENT: ADMINISTRATION context** — This conversation's role, outputs, and decisions are entirely unknown to this session. It may hold policy decisions that should be in DECISIONS.md.
+3. **PROJECT: 2026 Budget Tracker state** — Unknown scope, architecture, data sources, progress.
 
-4. **PROJECT: 2026 Budget Tracker state** — Unknown scope, architecture, data sources, progress.
+4. **Audio verification for all JFAC quotes** — Five quotes and full Woodward-and-Cook speaker ID verification are HARD GATES before publication. Only Logan can clear these.
 
-5. **Historical LEVELSET v1** — Whether it existed and what it contained remains unverified.
-
-6. **Audio verification for all JFAC quotes** — Five quotes and full Woodward-and-Cook speaker ID verification are HARD GATES before publication. Only Logan can clear these.
+5. **Gemini vault activity** — Gemini's capability tier is undefined; no vault commits exist. GEMINI.md was updated 2026-03-24 by Logan directly but scope remains unscoped.
 
 ---
 
-## NEXT ACTIONS FOR THIS SESSION
+## NEXT ACTIONS
 
-1. ~~Commit LEVELSET-CURRENT.md to separate branch~~ — Done
+1. ~~Commit LEVELSET-CURRENT.md to separate branch~~ — Done (historically)
 2. ~~Wait for JFAC session cache block from Logan~~ — Received and incorporated
-3. ~~Flag Logan for review of 8 pending decisions~~ — Done
-4. ~~Append 7 approved decisions to DECISIONS.md~~ — Done (#8 held)
-5. Coordinate merge to `claude/levelset-multi-conversation-zWxJc` and ultimately to main
-6. Complete #13 taxonomy definition work, then unblock #8
+3. ~~Merge feature branches (scraper, CLAUDE.md, DECISIONS.md) to main~~ — Done
+4. ~~Sanitize REST API credentials~~ — Done (PR #44)
+5. ~~Centralize workflow setup~~ — Done (PR #46)
+6. Logan: delete 6 stale branches via GitHub web UI
+7. Logan: decide on `vault-moves-2026-03-23` (30 proposed file moves)
+8. Logan: audio verify JFAC quotes (HARD GATE before publication)
+9. Logan: review pending decisions in DECISIONS.md
 
 ---
 
-*LEVELSET-CURRENT.md — Synthesized 2026-03-13, updated 2026-03-13 (JFAC session incorporation) by PERSISTENT: CODE AUTHORITY. This is a living document, updated each LEVELSET round. For the permanent audit trail, see numbered LEVELSET files in this directory.*
+*LEVELSET-CURRENT.md — Originally synthesized 2026-03-13 by PERSISTENT: CODE AUTHORITY. Updated 2026-03-24 by Claude Code (The Abhorsen), Operation: Spring Clean. This is a living document, updated each LEVELSET round. For the permanent audit trail, see numbered LEVELSET files in this directory.*
