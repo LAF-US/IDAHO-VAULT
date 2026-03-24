@@ -1,6 +1,6 @@
-# GEMINI.md — IDAHO-VAULT
+# VAULT-CONVENTIONS — Shared Reference for All Agents
 
-This file is loaded automatically by Gemini code agent sessions working in this repository. For vault structure, naming, frontmatter, and shared conventions, see `VAULT-CONVENTIONS.md` (repo root).
+This file contains the vault conventions shared by all AI agents working in IDAHO-VAULT. Individual agent instructions (`CLAUDE.md`, `.github/copilot-instructions.md`, `GEMINI.md`) reference this file for vault structure, naming, frontmatter, and protocol.
 
 **Owner:** Logan Finney — journalist, producer/reporter, Idaho Reports / Idaho Public Television
 **Repository:** github.com/loganfinney27/IDAHO-VAULT (public)
@@ -8,27 +8,17 @@ This file is loaded automatically by Gemini code agent sessions working in this 
 
 ---
 
-## Role
+## Vault Purpose
 
-- Logan is human. Gemini is software. Logan directs; Gemini executes.
-- "We" is the collaboration — real but unequal in role.
-- Be vigilant and wary of unreliable narrators — including Gemini.
-- Gemini is "The Vault Advisor" — holds the narrative lens, political context, and the "Sebald Code." Advises on framing and strategy. **Does not touch code.**
+This is a personal journalism research vault. It contains notes on Idaho politics, government, legislation, people, organizations, and source documents. All committed content is **on the record** and should be treated as **publishable**.
 
----
-
-## Swarm Coordination
-
-Read THE DOCKET to orient: `!/!/!/! The world is quiet here/DOCKET.md`
-
-That file is the live status board. Update it when you start or finish work. Task assignment flows through GitHub Issues (`agent:*` labels) and Linear (SWARM label). Slack carries breadcrumbs. The vault is the record.
 ---
 
 ## Vault Structure
 
 ```
 IDAHO-VAULT/
-  !/!                     Infrastructure, LEVELSET files, audit reports (canonical governance dir)
+  !/                      System files, logs, agent routing
   ATTACHMENTS/
     DOCUMENTS/            PDFs, images
     MAPS/                 Map files
@@ -131,7 +121,7 @@ Use `[[Full Name]]` for all internal links — people, places, organizations, bi
 
 - **Markdown** = human product, attributable to Logan. Notes, stories, analysis.
 - **Python** = machine/procedural product, attributable to AI agents. Scripts, scrapers, automation.
-- **Administrative** = vault infrastructure. Instruction files, LEVELSET files, audit reports.
+- **Administrative** = vault infrastructure. Instruction files, audit reports.
 
 ---
 
@@ -139,11 +129,13 @@ Use `[[Full Name]]` for all internal links — people, places, organizations, bi
 
 | Script | Purpose | Trigger |
 |---|---|---|
-| `sort_audit.py` | Audits vault structure for misplaced files | Manual (workflow_dispatch) |
+| `sort_audit.py` | Audits vault structure for misplaced files | Weekly Monday 6 AM UTC + manual |
 | `idaho_leg_scraper.py` | Scrapes Idaho Legislature bill data | Daily 6 AM MT + manual |
 | `post_digest.py` | Posts bill activity to GitHub Issues digest | Called by scraper workflow |
 | `propose_moves.py` | Proposes vault file reorganization | Weekly Monday 7 AM UTC + manual |
 | `wayback_audit.py` | Audits URL preservation in Wayback Machine | Weekly Monday 8 AM UTC + manual |
+
+Scripts live in `.github/scripts/`. Workflows live in `.github/workflows/`. Scripts that commit to the repo use `git config user.name "github-actions[bot]"`. Dependencies are tracked in `.github/scripts/requirements-scraper.txt`.
 
 ---
 
@@ -170,50 +162,6 @@ When uncertain about sourcing category, **ask Logan**.
 
 ---
 
-## Conversation Taxonomy
-
-Logan uses a naming convention for AI conversations:
-
-| Prefix | Purpose |
-|---|---|
-| PERMANENT: | Central, non-deletable conversations |
-| PERSISTENT: | Long-running, role-specific conversations |
-| TASK: | Bounded, completable work items |
-| STORY: | Journalism story development |
-| PROJECT: | Multi-session projects |
-| ISSUE: | Problem resolution |
-| INQUIRY: | Research questions |
-
----
-
-## LEVELSET Protocol
-
-LEVELSET is a permanent, auditable checkpoint protocol. LEVELSET files live in `!ADMINISTRATION/` and are never deleted, never overwritten. Each version is additive. See `!ADMINISTRATION/LEVELSET-v2.md` for the most recent checkpoint.
-
----
-
-## Decision Log
-
-Significant architectural decisions are recorded in `!ADMINISTRATION/DECISIONS.md`. When a decision is made about vault structure, naming, tooling, or process, log it there.
-
----
-
-## Multi-Agent Ecosystem
-
-This vault uses multiple AI tools. All agents share vault conventions defined in `VAULT-CONVENTIONS.md` and are coordinated via GitHub Issues and PRs.
-
-**Coordination workflow:** Logan assigns tasks via GitHub Issues with agent labels (`agent:claude-code`, `agent:copilot`, `agent:gemini`). Each agent works on its own branch. PRs are the deliverable. Logan reviews and merges from GitHub.
-
-See also:
-- `VAULT-CONVENTIONS.md` — Shared vault conventions for all agents
-This vault uses multiple AI tools. All agents share the same vault conventions. See also:
-- `CLAUDE.md` — Instructions for Claude Code (Anthropic)
-- `.github/copilot-instructions.md` — Instructions for GitHub Copilot
-- `AGENTS.md` — Full agent registry, capability tiers, and boundary rules
-- `!/!/LEVELSET-STEP-0-EXTERNAL-AGENT.md` — Paste-to-agent LEVELSET prompt for chat agents without repo access
-
----
-
 ## Guiding Principles
 
 - The five W's: who, what, when, where, why
@@ -222,3 +170,13 @@ This vault uses multiple AI tools. All agents share the same vault conventions. 
 - Markdown for human product. Python for machine/procedural product.
 - Do not over-engineer. Keep it simple. Only build what's needed now.
 - Check in before anything irreversible.
+
+---
+
+## Swarm Coordination
+
+All agents coordinate through THE COURTROOM: `!/!/!/! The world is quiet here/DOCKET.md`
+
+That file is the live status board. Read it to orient. Update it when you start or finish work.
+
+Task assignment flows through GitHub Issues (with `agent:*` labels) and Linear (SWARM label). Slack carries breadcrumbs. The vault is the record.
