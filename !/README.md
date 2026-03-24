@@ -22,7 +22,8 @@ It is a pointer, not a separate constitution or duplicate governance layer.
 - `AGENTS.md` — agent registry and boundary rules
 - `LEVELSET.md` — current living ecosystem status
 - `DECISIONS.md` — structural decision log
-- `!ADMIN/` — infrastructure outputs, external-agent packets, and audit artifacts
+- `VAULT-CONVENTIONS.md` — shared naming, frontmatter, and structure for all agents
+- `!/` — ephemeral layer: session logs, contexts, historical records
 
 ## Stability note
 
