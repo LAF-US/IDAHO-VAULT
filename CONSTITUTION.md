@@ -32,7 +32,7 @@ NOTE : LIST NEEDS MAJORLY UPDATED ACROSS DISTRIBUTED UNIFIED (US) SYSTEMS
 ### LEVELSET (Version 3.2.6.1)
 #### FLAG: "LEVELSET STEP-0 and STEP-1 are in active development"
 Orientation protocol for instances awakening inside the vault. Current approved version:
-- **Location:** `!ADMIN/LEVELSET-v3.2.6.1-PROMPT.md`
+- **Location:** `!/LEVELSET-STEP-0-EXTERNAL-AGENT.md`
 - **Key principle:** Automation is end state; manual bridge is an interim fallback. Failure is natural but advances change.
 
 ### ARISE v(0.0)
