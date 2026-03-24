@@ -27,10 +27,12 @@ jobs:
       - name: Delete merged claude branches
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          EVENT_NAME: ${{ github.event_name }}
+          PR_HEAD_REF: ${{ github.event.pull_request.head.ref }}
         run: |
           # On PR merge, delete the specific branch
-          if [ "${{ github.event_name }}" = "pull_request" ]; then
-            BRANCH="${{ github.event.pull_request.head.ref }}"
+          if [ "$EVENT_NAME" = "pull_request" ]; then
+            BRANCH="$PR_HEAD_REF"
             echo "Deleting merged branch: $BRANCH"
             git push origin --delete "$BRANCH" 2>/dev/null || echo "Branch already deleted"
             exit 0
