@@ -40,6 +40,10 @@ jobs:
 
       - name: Generate CSV export
         id: export
+        # continue-on-error: the export may fail when the Idaho Legislature website is
+        # unreachable or has a structure change. Downstream steps use the custom
+        # `export_ok` output variable to guard upload/email, so the job still succeeds
+        # and the summary shows an informative message instead of a hard failure.
         continue-on-error: true
         env:
           YEAR: ${{ github.event.inputs.year || '2026' }}
