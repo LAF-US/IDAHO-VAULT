@@ -137,6 +137,40 @@ Use `[[Full Name]]` for all internal links — people, places, organizations, bi
 
 Scripts live in `.github/scripts/`. Workflows live in `.github/workflows/`. Scripts that commit to the repo use `git config user.name "github-actions[bot]"`. Dependencies are tracked in `.github/scripts/requirements-scraper.txt`.
 
+### MCP Action Logging Requirement (Mandatory)
+
+Any automation in `.github/workflows/` or `.github/scripts/` that performs an MCP-mediated action **must** emit a structured log entry using the following reusable template.
+
+#### Required MCP Action Log Template
+
+```yaml
+mcp_action_log:
+  action_type: "<action type>"
+  system_or_resource_id: "<system/resource id>"
+  initiating_agent: "<initiating agent>"
+  correlation_id: "<correlation id>"
+  outcome: "<success|failure>"
+  retry_count: <integer>
+  related_ref: "<issue|pr|handoff file link>"
+```
+
+#### Field Definitions
+
+- `action_type`: The MCP operation category (for example: `read_resource`, `write_resource`, `invoke_tool`).
+- `system_or_resource_id`: The MCP server/system identifier or concrete resource identifier targeted by the action.
+- `initiating_agent`: Agent identity that initiated the MCP action (for example: `agent:codex`, `agent:claude-code`, `github-actions[bot]`).
+- `correlation_id`: Stable ID used to correlate retries and downstream events for the same logical action.
+- `outcome`: Final attempt status. Must be exactly `success` or `failure`.
+- `retry_count`: Number of retries attempted before final outcome (`0` for first-try success/failure).
+- `related_ref`: URL or path to the related coordination artifact (GitHub Issue, PR, or `HANDOFF-*.md` file).
+
+#### Enforcement Scope
+
+- Applies to **all** MCP-mediated automation behavior implemented in:
+  - `.github/workflows/**`
+  - `.github/scripts/**`
+- New MCP-capable workflow/script changes are non-compliant unless this template is logged for each MCP action attempt sequence.
+
 ---
 
 ## Sourcing Protocol
