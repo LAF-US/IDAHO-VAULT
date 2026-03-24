@@ -35,3 +35,8 @@ swarm/logs/*
 .obsidian/plugins/recent-files-obsidian/data.json
 .obsidian/workspace.json
 .obsidian/workspace*.json
+.obsidian/graph.json
+.obsidian/types.json
+
+# Daily notes (ephemeral, personal)
+DAILYNOTES/
