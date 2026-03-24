@@ -23,3 +23,6 @@ Thumbs.db
 # Project-specific
 .env
 *.vault.json
+
+# Obsidian Local REST API
+.obsidian/plugins/obsidian-local-rest-api/data.json
