@@ -80,21 +80,14 @@ jobs:
             LABEL="review-required"
           fi
 
-          BODY=$(cat <<EOF
-## Auto-generated PR
-
-**Risk tier:** \`$TIER\`
-**Label:** \`$LABEL\`
-
-### Diff stat
-\`\`\`
-$DIFFSTAT
-\`\`\`
-
----
-*Created by auto-pr workflow*
-EOF
-          )
+          # Build PR body
+          printf -v BODY '%s\n\n%s\n%s\n\n%s\n%s\n%s\n%s\n\n%s\n%s' \
+            '## Auto-generated PR' \
+            '**Risk tier:**' "\`$TIER\`" \
+            '**Label:**' "\`$LABEL\`" \
+            '### Diff stat' \
+            '```' "$DIFFSTAT" '```' \
+            '---' '*Created by auto-pr workflow*'
 
           PR_URL=$(gh pr create \
             --title "$TITLE" \
