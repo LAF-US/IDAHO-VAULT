@@ -1,7 +1,7 @@
 ---
 tags:
   - administration/protocol
-updated: 2026-03-15
+updated: 2026-03-24
 status: draft
 ---
 
@@ -117,6 +117,45 @@ When preparing data for HANDOFF, instances should include:
 - **Next steps** (what receiving instance should do)
 - **Caveats** (limitations, missing data, assumptions)
 
+### Compact Mapping: Coordination Terms → Execution Requirements
+
+| Term | MCP operation(s) / event | Required payload fields | Required metadata (all mappings) |
+|---|---|---|---|
+| **HANDOFF** | `mcp.handoff.create` (primary), optional `mcp.handoff.update` for amendments | `handoff_id`, `subject`, `task_scope`, `context_packet`, `requested_action`, `due_by`, `attachments[]` | `timestamp`, `source_agent`, `destination`, `confidence`, `durable_record_location` |
+| **HANDSHAKE** | `mcp.handoff.acknowledge` event against existing `handoff_id` | `handoff_id`, `ack_status` (`received`/`incomplete`), `context_completeness`, `acceptance_decision`, `follow_up_required` | `timestamp`, `source_agent`, `destination`, `confidence`, `durable_record_location` |
+| **CONTEXTUALIZE** | `mcp.context.package` prior to HANDOFF/FLAG; optional `mcp.context.validate` | `context_packet_id`, `objective`, `background`, `current_state`, `evidence_refs[]`, `constraints`, `assumptions`, `next_actions` | `timestamp`, `source_agent`, `destination`, `confidence`, `durable_record_location` |
+| **FLAG** | `mcp.flag.raise` (primary), optional `mcp.flag.resolve` | `flag_id`, `severity`, `summary`, `impact`, `routing_destination`, `requested_decision`, `blocking_status`, `supporting_refs[]` | `timestamp`, `source_agent`, `destination`, `confidence`, `durable_record_location` |
+
+#### CONTEXTUALIZE Minimum Context Schema
+
+```yaml
+context_packet:
+  context_packet_id: string
+  objective: string
+  background: string
+  current_state: string
+  evidence_refs: [string]
+  constraints: [string]
+  assumptions: [string]
+  next_actions: [string]
+  metadata:
+    timestamp: ISO-8601 datetime
+    source_agent: string
+    destination: string
+    confidence: high|medium|low|uncertain
+    durable_record_location: vault-relative path
+```
+
+#### FLAG Severity Enum and Routing Destination
+
+```yaml
+flag:
+  severity: CRITICAL|HIGH|MEDIUM|LOW|ADMIN
+  routing_destination:
+    - LOGAN (default)
+    - named_agent (only via LOGAN relay)
+```
+
 ### FLAG Severity Levels (PROPOSED)
 
 - **CRITICAL** — Decision required; blocks downstream work of Logan or agents
@@ -147,7 +186,7 @@ When preparing data for HANDOFF, instances should include:
 
 ## DOCUMENT METADATA
 
-- **Revised:** 2026-03-18
+- **Revised:** 2026-03-24
 - **Revision:** [[LOGAN]]
 - **Status:** Stub / Awaiting expansion
 - **Authority:** [[LOGAN]]'s discretion
