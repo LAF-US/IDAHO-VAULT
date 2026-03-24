@@ -20,6 +20,14 @@ HIGH_RISK_EXACT = {
     "CLAUDE.md",
     ".gitignore",
     ".github/copilot-instructions.md",
+    "!ADMIN/Constitution.md",
+    "!ADMIN/DECISIONS.md",
+    "!ADMIN/AGENTS.md",
+    "!ADMIN/PROTOCOL.md",
+    "!ADMINISTRATION/Constitution.md",
+    "!ADMINISTRATION/DECISIONS.md",
+    "!ADMINISTRATION/AGENTS.md",
+    "!ADMINISTRATION/PROTOCOL.md",
 }
 
 LOW_RISK_PREFIXES = (

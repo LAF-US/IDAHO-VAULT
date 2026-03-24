@@ -1,17 +1,1 @@
-{
-  "alwaysUpdateLinks": true,
-  "focusNewTab": false,
-  "promptDelete": false,
-  "propertiesInDocument": "visible",
-  "attachmentFolderPath": "/",
-  "pdfExportSettings": {
-    "includeName": true,
-    "pageSize": "Letter",
-    "landscape": false,
-    "margin": "0",
-    "downscalePercent": 100
-  },
-  "openBehavior": "daily",
-  "showUnsupportedFiles": true,
-  "tabSize": 4
-}
+{}
