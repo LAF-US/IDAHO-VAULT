@@ -95,7 +95,7 @@ See `DECISIONS.md` for confirmed Logan-approved decisions[^1]. Key decisions (as
 6. PERMANENT: AUTHORITY: CODE is the correct name
 7. Native protocols over MCP
 8. Slack is ephemeral; vault is the record
-9. `AGENTS.md` lives in `!ADMIN/`, not `.github/`
+9. `AGENTS.md` lives at repo root, not `.github/`
 10. `copilot-instructions.md` guardrails above
 11. Logan's Project = unachievable end goal on horizon
 12. OpenClaw is a peer system — study it
