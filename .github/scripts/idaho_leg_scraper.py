@@ -139,6 +139,7 @@ def sanitize_text(
 
     # Escape YAML-special characters when value goes into frontmatter
     if for_yaml:
+        text = text.replace("\\", "\\\\")  # must be first: escape backslashes
         text = text.replace('"', '\\"')
 
     # Enforce length cap
@@ -361,11 +362,15 @@ def get_bill_list(year: str) -> list[dict]:
 
     if table is None:
         log.error("Could not find bill table on either minidata or main page")
+        log.error(
+            "This is likely caused by anti-scraping measures or a site structure change. "
+            "Direct data access from LSO is being pursued — see tracking issue."
+        )
         if soup is not None:
             page_text = soup.get_text()
-            log.debug(
-                "Minidata page length: %d chars; first 200: %.200s",
-                len(page_text), page_text
+            log.info(
+                "Minidata page length: %d chars; first 500 chars of text: %.500s",
+                len(page_text), page_text.strip()
             )
         return []
 
@@ -1341,6 +1346,13 @@ def main() -> int:
         date_str = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
         with open(summary_path, "w", encoding="utf-8") as f:
             f.write(f"# Idaho Legislature Scraper — {date_str}\n\n")
+            if errors > 0 and (new + updated + unchanged) == 0:
+                f.write(
+                    "> ⚠️ **Site unavailable or blocking requests.** "
+                    "Could not fetch the bill listing from legislature.idaho.gov. "
+                    "Direct data access from LSO is being pursued — "
+                    "daily schedule is paused until resolved.\n\n"
+                )
             f.write(f"| Metric | Count |\n|---|---|\n")
             f.write(f"| New bills | {new} |\n")
             f.write(f"| Updated bills | {updated} |\n")

@@ -18,7 +18,18 @@ This file is loaded automatically by Claude and its Code sessions working in the
 
 ## Governance
 
-This file provides operational instructions for Claude Code sessions. The canonical constitution is `CONSTITUTION.md` (vault root). When this file and `CONSTITUTION.md` conflict, `CONSTITUTION.md` governs. Confirmed decisions are recorded in `DECISIONS.md`.
+This file provides operational instructions for Claude Code sessions. The canonical constitution is `CONSTITUTION.md` (vault root). When this file and `CONSTITUTION.md` conflict, `CONSTITUTION.md` governs.
+
+## Automation
+
+| Script | Purpose | Trigger |
+|---|---|---|
+| `sort_audit.py` | Audits vault structure for misplaced files | Manual (workflow_dispatch) |
+| `idaho_leg_scraper.py` | Scrapes Idaho Legislature bill data | Daily 6 AM MT + manual |
+| `post_digest.py` | Posts bill activity to GitHub Issues digest | Called by scraper workflow |
+| `classify_paths.py` | Classifies changed files by risk tier (high/low) | Called by auto-pr workflow |
+| `auto-pr.yml` | Auto-creates PRs from `claude/*` branches; auto-merges low-risk | Push to `claude/**` |
+| `branch-cleanup.yml` | Deletes merged `claude/*` branches | PR merge + weekly sweep |
 
 ---
 
