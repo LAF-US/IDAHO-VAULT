@@ -3,7 +3,7 @@
 IDAHO-VAULT Sort Audit — v2
 Walks the vault tree and flags files that appear misplaced,
 orphaned at a parent level, or inconsistently named.
-Outputs a dated markdown report to !ADMIN/.
+Outputs a dated markdown report to !/.
 
 Changes from v1:
 - Dated files in EDITORIALS, PODCASTS, PRESS RELEASES etc. no longer flagged as NEWS MEDIA
@@ -19,7 +19,7 @@ from pathlib import Path
 
 VAULT_ROOT = Path(".")
 
-SKIP_DIRS = {".obsidian", "ATTACHMENTS", "!ADMIN", "X LABELER",
+SKIP_DIRS = {".obsidian", "ATTACHMENTS", "!", "X LABELER",
              "x hey you make sure to link these"}
 
 OUT_OF_STATE_COUNTY_FOLDERS = {
@@ -220,7 +220,7 @@ if __name__ == "__main__":
     issues, orphans, naming = audit()
     report = render_report(issues, orphans, naming)
 
-    out_dir = VAULT_ROOT / "!ADMIN"
+    out_dir = VAULT_ROOT / "!"
     out_dir.mkdir(exist_ok=True)
     date_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     out_path = out_dir / f"sort-audit-{date_str}.md"
