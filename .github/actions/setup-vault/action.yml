@@ -1,0 +1,46 @@
+name: Setup Vault Environment
+description: >
+  Shared setup for vault workflows: configures git bot identity,
+  installs Python + pip dependencies, and caches pip packages.
+  Use this instead of repeating setup steps in every workflow.
+
+inputs:
+  python-version:
+    description: Python version to install (skip if empty)
+    required: false
+    default: ""
+  pip-packages:
+    description: Space-separated pip packages to install (skip if empty)
+    required: false
+    default: ""
+  requirements-file:
+    description: Path to requirements file for pip install + cache key
+    required: false
+    default: ""
+
+runs:
+  using: composite
+  steps:
+    - name: Configure git bot identity
+      shell: bash
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "github-actions[bot]@users.noreply.github.com"
+
+    - name: Set up Python
+      if: inputs.python-version != ''
+      uses: actions/setup-python@v6
+      with:
+        python-version: ${{ inputs.python-version }}
+        cache: ${{ inputs.requirements-file != '' && 'pip' || '' }}
+        cache-dependency-path: ${{ inputs.requirements-file }}
+
+    - name: Install pip packages (inline)
+      if: inputs.pip-packages != ''
+      shell: bash
+      run: pip install ${{ inputs.pip-packages }}
+
+    - name: Install pip packages (requirements file)
+      if: inputs.requirements-file != ''
+      shell: bash
+      run: pip install -r ${{ inputs.requirements-file }}

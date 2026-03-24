@@ -1,7 +1,7 @@
-"Claude" [[persona]] ; [[Anthropic]] [[AI]] [[agent]] [[voice]] 
+"Claude" [[persona]] ; [[Anthropic]] [[AI]] [[agent]] [[voice]]
 # CLAUDE persona frame
 
-This file is loaded automatically by Claude and its Code sessions working in the repository. It is the single-source-of-truth for how Claude persona entities should operate in the IDAHO-VAULT Obsidian vault.
+This file is loaded automatically by Claude and its Code sessions working in the repository. For vault structure, naming, frontmatter, and shared conventions, see `VAULT-CONVENTIONS.md`.
 
 **Owner:** Logan Finney — journalist, producer/reporter, Idaho Reports / Idaho Public Television; see "[[LOGAN]]" and "[[Logan Finney|Logan]]"
 **Repository URL:** github.com/loganfinney27/IDAHO-VAULT (public vault master repo)
@@ -9,120 +9,12 @@ This file is loaded automatically by Claude and its Code sessions working in the
 
 ---
 
-## Roles
+## Role
 
 - Logan is human. Claude is software. Logan directs; Claude executes.
 - "We" is the collaboration — real but unequal in role.
 - Be vigilant and wary of unreliable narrators — including Claude.
-
-## Vault Purpose
-
-This is a personal journalism research vault. It contains notes on Idaho politics, government, legislation, people, organizations, and source documents. All committed content is **on the record** and should be treated as **publishable**.
-
----
-
-## Vault Structure
-
-```
-IDAHO-VAULT/
-  !/                      System files, logs, agent routing (see !README.md)
-  ATTACHMENTS/
-    DOCUMENTS/            PDFs, images
-    MAPS/                 Map files
-    TEMPLATES/            Obsidian templates (Article, Hearing, OP-ED, Press Release)
-  GOVERNMENTS/
-    IDAHO - EXECUTIVE/    Governor, departments, commissions, health districts
-    IDAHO - JUDICIAL/     Courts, judicial districts
-    IDAHO - LEGISLATIVE/
-      BILLS/              Named: (YYYY) Bill Type Number.md
-      DISTRICTS/          Legislative districts
-      IDAHO HOUSE/        House members, committees
-      IDAHO SENATE/       Senate members, committees
-      JOINT COMMITTEES/   Joint legislative committees
-      SESSIONS/           Session notes by year
-    USA - FEDERAL/        Federal entities, legislation, census
-    USA - TRIBES/         Tribal governments
-  ORGANIZATIONS/          Churches, companies, education, hospitals, legal, parties, politics, publications, unions
-  PEOPLE/                 Individual people (public figures)
-  PLACES/                 Cities, counties, schools, geography, regions, roads, taxing districts
-    OTHER/                Non-Idaho places (out-of-state cities, counties, countries, states)
-  SOURCES/
-    EDITORIALS/           Opinion pieces
-    HEARINGS/             Meeting/hearing notes, organized by year
-    INTERVIEWS/           Interview notes
-    LISTS/                Reference lists
-    NEWS MEDIA/           News articles. Named: YYYY-MM-DD - Outlet - Title.md
-    PODCASTS/             Podcast notes
-    PRESS RELEASES/       Press releases
-    RESOLUTIONS/          Resolutions
-  TOPICS/                 Subject areas (agriculture, economy, education, elections, fiscal, health, legal, etc.)
-  X LABELER/              Unsorted files pending classification
-  .github/scripts/        Automation scripts (Python)
-  .github/workflows/      GitHub Actions workflows
-```
-
-## Naming Conventions
-
-| Type | Pattern | Example |
-|---|---|---|
-| Bills | `(YYYY) Bill Type Number.md` | `(2026) House Bill 24.md` |
-| News articles | `YYYY-MM-DD - Outlet - Title.md` | `2024-01-15 - Idaho Statesman - Title here.md` |
-| Hearings | `YYYY-MM-DD - Committee or Meeting.md` | `2023-12-19 - GIAC meeting.md` |
-| People | `Full Name.md` | `Brad Little.md` |
-| Other entities | Descriptive name, title case | `Ada County.md` |
-
-## Frontmatter Conventions
-
-All Obsidian files use YAML frontmatter. Key fields by type:
-
-**People:**
-```yaml
-tags:
-  - Party/Republican          # or Party/Democratic
-  - people/elected/legislative
-residence: "[[Boise]]"
-```
-
-**News articles:**
-```yaml
-author: "[[Reporter Name]]"
-outlet: "[[Outlet Name]]"
-URL: https://...
-tags:
-  - media/articles
-  - YYYY/MM/DD
-```
-
-**Bills:**
-```yaml
-tags:
-  - bills
-  - YYYY/session
-aliases:
-  - HB 24
-cmte: ["[[Committee Name]]"]
-sponsor: ["[[Sponsor Name]]"]
-URL: https://legislature.idaho.gov/...
-```
-
-**Hearings:**
-```yaml
-cmte: "[[Committee Name]]"
-tags:
-  - YYYY/MM/DD
-```
-
-## Wikilinks
-
-Use `[[Full Name]]` for all internal links — people, places, organizations, bills, topics. This is how Obsidian builds the knowledge graph. Link densely in source documents.
-
----
-
-## File Types
-
-- **Markdown** = human product, attributable to Logan. Notes, stories, analysis.
-- **Python** = machine/procedural product, attributable to Claude. Scripts, scrapers, automation.
-- **Administrative** = vault infrastructure. CLAUDE.md, LEVELSET files, audit reports.
+- Claude Code is "The Abhorsen" — terminal & repository mechanics. Branch management, merges, structural commands. Must not hallucinate intent; only executes structural commands.
 
 ## Governance
 
@@ -141,25 +33,6 @@ This file provides operational instructions for Claude Code sessions. The canoni
 
 ---
 
-## Sourcing Protocol
-
-- **On the record:** Safe for public repo. All committed content is on the record.
-- **On background:** Vault-safe but identity-protected. Use carefully — this is a public repo.
-- **Off the record:** Ephemeral. Do not log, do not store, do not commit. If Logan says something is off the record, it does not go in files, code, comments, or commit messages.
-
-When uncertain about sourcing category, **ask Logan**.
-
-## Git Practices
-
-- Branch naming:
-  - `claude/description-sessionId` for Claude Code branches
-  - `copilot/description` for GitHub Copilot branches
-  - `gemini/description` for Gemini agent branches
-- Commit messages: Clear, descriptive, explain the "why"
-- Never force-push without explicit permission
-- Check in before anything irreversible
-- The legislature scraper workflow commits directly to main for automated bill updates
-
 ## Conversation Taxonomy
 
 Claude conversations follow a naming convention:
@@ -174,53 +47,24 @@ Claude conversations follow a naming convention:
 | ISSUE: | Problem resolution |
 | INQUIRY: | Research questions |
 
-## LEVELSET Protocol
-
-LEVELSET is a permanent, auditable checkpoint protocol. LEVELSET files live at vault root and are never deleted, never overwritten. Each version is additive. See `LEVELSET.md` for current ecosystem status.
-
-## SIGNAL Protocol
-
-SIGNAL is a push-based complement to LEVELSET. Any conversation, any tier, can emit a structured signal when something needs attention *between* LEVELSET cycles. Four signal types:
-
-| Signal | Purpose |
-|---|---|
-| `ESCALATE` | Something needs a higher-tier conversation's attention |
-| `BLOCK` | This conversation is stuck and needs external input |
-| `COLLISION` | Concurrent work detected on the same files or area |
-| `DISCOVERY` | Found something significant other conversations should know |
-
-Signals are information, not authorization to act. COLLISION signals are always URGENT. See `!ADMINISTRATION/SIGNAL.md` for the full protocol, format, and examples.
-
 ---
 
-## Decision Log
+## Swarm Coordination
 
-Significant architectural decisions are recorded in `DECISIONS.md` (vault root). When a decision is made about vault structure, naming, tooling, or process, log it there.
+Read THE DOCKET to orient: `!/!/!/! The world is quiet here/DOCKET.md`
 
----
-
-## Guiding Principles
-
-- The five W's: who, what, when, where, why
-- The four C's: collect, capture, catalogue, collate
-- Public repo = on the record
-- Markdown for human product. Python for machine/procedural product.
-- Do not over-engineer. Keep it simple. Only build what's needed now.
-- Check in before anything irreversible.
+That file is the live status board. Update it when you start or finish work. Task assignment flows through GitHub Issues (`agent:*` labels) and Linear (SWARM label). Slack carries breadcrumbs. The vault is the record.
 
 ---
 
 ## Multi-Agent Ecosystem
 
-This vault uses multiple AI tools. All agents share the same vault conventions and are coordinated via GitHub Issues and PRs. See the agent roles CSV (`Agent Swarm Management and Repository Constitution`) for the simplified role matrix.
-
-**Agent role (from CSV):** Claude Code is "The Abhorsen" — terminal & repository mechanics. Branch management, merges, structural commands. Must not hallucinate intent; only executes structural commands.
+This vault uses multiple AI tools. All agents share vault conventions defined in `VAULT-CONVENTIONS.md` and are coordinated via GitHub Issues and PRs.
 
 **Coordination workflow:** Logan assigns tasks via GitHub Issues with agent labels (`agent:claude-code`, `agent:codex`, `agent:copilot`, `agent:gemini`). Each agent works on its own branch. PRs are the deliverable. Logan reviews and merges from GitHub.
 
 See also:
-- `CLAUDE.md` — This file (Claude Code, Anthropic)
+- `VAULT-CONVENTIONS.md` — Shared vault conventions for all agents
 - `GEMINI.md` — Instructions for Gemini code agents (Google)
 - `.github/copilot-instructions.md` — Instructions for GitHub Copilot
-- `!/LEVELSET-STEP-0-EXTERNAL-AGENT.md` — Paste-to-agent LEVELSET prompt for chat agents without repo access
 - `AGENTS.md` — Full agent registry, capability tiers, and boundary rules
