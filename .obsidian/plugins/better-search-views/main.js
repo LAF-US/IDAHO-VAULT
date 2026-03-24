@@ -2769,7 +2769,8 @@ var require_plugin_context = __commonJS({
     var PluginContext = (0, _solidJs.createContext)();
     function PluginContextProvider(props) {
       const handleClick = async (event, path, line) => {
-        if (event.target instanceof HTMLAnchorElement) {
+        const anchor = event.target instanceof Element ? event.target.closest("a") : null;
+        if (anchor) {
           return;
         }
         const file = props.plugin.app.metadataCache.getFirstLinkpathDest(path, path);

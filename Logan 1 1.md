@@ -1,0 +1,131 @@
+# Logan Alvan Finney
+
+*Updated: 2026-03-18*
+Copied : 2026-03-18 *stale v*
+
+---
+
+## WHO IS "LOGAN"?
+
+**[[Logan Finney]]** ([[L]][[A]][[F]]) 
+- [[HUMAN]]: only authority directing the IDAHO-VAULT project and protocols
+- Date of Birth: September 6th, 1997
+- Astrological sign: [[Virgo]]
+- Hometown: [[Sandpoint]] born-and-raised
+- My email: loganfinney27@gmail.com
+- Old emails: lfinney@imaxmail.net ; [ ? ]
+- School email: lfinney@alumni.uidaho.edu
+- Employer: [[Idaho Public Television]] (IdahoPTV or IDPTV) / *Idaho Reports* (IR)
+- Work email: logan.finney@idahoptv.org
+- Current domicile: Boise Bench, Ada, ID
+- Self-identity: Documentary Journalist
+
+---
+
+## LOGAN'S PROJECT
+
+**[[Definition]]:** The [[unachievable]] [[end goal]] on the [[horizon]]. The [[threshold]] of the [[temple]].
+
+Logan is iterating on systems for backend management of Obsidian vault database:
+- Real-time legislative intelligence (Idaho Legislature bill tracking and data feeds)
+- Structured government data (vault of Idaho government entities, publications, available records)
+- More authoritative sourcing, rigorous fact-checking and quote accuracy 
+- Other duties, as assigned and emerging
+
+Automation of repetitive vault ingestion, research, publication, and my workflows.
+
+Agentic integration swarmed across multiple [[AI]] "[[assistant]]" persona [[systems]]:
+- [[Google]]: [[Gemini]], [[Assistant]], [[Home]], [[NotebookLM]], [[Pinpoint]], [[Cloud]], and full Google [[ecosystem]] suite of toolsets
+- [[Anthropic]]: [[Claude]]
+- [[OpenAI]]: [[ChatGPT]]
+- [[X]] / [[Xai]]: [[Grok]]
+- [[Perplexity]]: [[Perplexity]]
+- [[GitHub]]: [[Copilot]] (interface, repo coder)
+- [[Microsoft Copilot]] (mine), [[M365]] (work)
+- Fictive "personas" ; Others as identified
+
+[[CONSTITUTION|The goal]] is ambitious and impossible to fully articulate — but incremental progress toward it drives to vaulted meaning-making.
+
+---
+
+## KNOWN ACTIVE PROJECTS
+
+### STORY: JFAC Open Meetings
+- **Status:** Documentary and Reporting
+- **Tier:** Read-only? (vault-only notes)
+- **Constraints:** IDPTV as a state entity
+
+**Current state:**
+- Six lawmakers interviewed: Bruce, Manwaring, Ward-Engelking, Wintrow, Woodward and Cook
+- More interview ideas: Rasor, Troy, [ ? ]
+- Quotes pending audio verification (hard gate before publication)
+- Contacts needed: Grow/Tanner
+- Vault items pending: Kyle Harris note correction, Cornel Rasor note, House Rule 27 topic, working group assignments, IR bylines from 2024-03-29 and 2024-03-11
+### Idaho Legislature Bill Scraper
+- **Status:** Failing, paused as GitHub Action
+- **Tier:** Direct write via PERMANENT: AUTHORITY: CODE
+- **Branch:** `claude/idaho-legislature-scraper-RI6Ku` (dormant, terminated)
+- **Workflows:** Daily bill scraping, GitHub Issues digest posting
+- **Outstanding:** Message re: [[Legislative Services Office|LSO]] data link
+
+---
+
+## PAUSED INITIATIVES
+
+### [[FāVS]] Freelancing Pitches
+- **Status:** Paused (awaiting Logan's duties)
+- **Reason:** IdahoPTV management directed
+- **Next step:** Work performance improves
+
+---
+
+## FILE LOCATIONS (Known)
+
+| Location | Contents | Notes |
+|----------|----------|-------|
+| `C:\Users\loganf\Documents\IDAHO-VAULT` | Vault research notes | Local Windows copy |
+| `ExternalSSD (D:)\IR\` | Production: Premiere projects, SOPs, templates, assets | Video/media production |
+| `C:\` various | LFPython, feed-generator, PROJECT, Raw, BIN | Development directories |
+| `IDEX_Artifacts` | Unknown scope | Unverified |
+| Outlook (logan.finney@idahoptv.org) | Work email, attachments | IPTV organizational email |
+| Google Drive | Unknown scope | Unverified |
+| GitHub repos | Public and private repositories | Source control |
+
+---
+
+## DECISIONS PENDING LOGAN
+
+- [ ] Open PR for consolidated vault work
+- [ ] Set up Slack bot apps (GitHub Copilot, Gemini integration)
+- [ ] Define Gemini ADMIN scope
+- [ ] Confirm `ANTHROPIC_API_KEY` in GitHub Actions secrets
+- [ ] Decide fate of `claude/levelset-current-synthesis-zWxJc`
+- [ ] Approve AGENTS-v0.2-DRAFT.md
+- [ ] Decide on AUTHORITY: ADMIN: CLAUDE merge proposal (consolidate three Claude personas into one unified agent)
+- [ ] Verify team check-ins (Melissa Davlin requested proactive Teams update)
+
+---
+
+## GUIDING CONSTRAINTS FOR ALL AGENTS
+
+When working with Logan's Project:
+1. **Propose, don't decide.** Agents suggest best available action based on context; Logan reviews and maybe approves.
+2. **Logan directs; agents execute.** No agent assumes to hold more authority.
+3. **On the record.** Public repository data, decisions are transparently auditable.
+4. **Slack is ephemeral, on a trial license.** Write durable decisions to the vault.
+5. **Elevation governance.** No agent gains higher access without Logan there.
+
+---
+
+## CONTEXT FOR AGENTS
+
+As of Thursday 2026-03-18 at [ ? ] UTC:
+- Logan wants to move to Obsidian-only input and context and conversation; GitHub Actions are beta and buggy; vision is to input notes and data daily, with auto-updating "bullet journal" style personal management, habit tracker, etc.
+- Slack free trial expires April 13; Only Claude has been able to post there so far - free trials expiring fast and Logan needs to achieve SWARMIC UNITY to save real money and financial resources.
+
+---
+
+*Last updated: 2026-03-18*
+
+Unified (US) Swarm designed and written in [[Logan's Project & Protocols]] syntaxic code.
+###### [["The world is quiet here."]]
