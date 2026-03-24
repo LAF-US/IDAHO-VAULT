@@ -1,7 +1,7 @@
 "Claude" [[persona]] ; [[Anthropic]] [[AI]] [[agent]] [[voice]]
 # CLAUDE persona frame
 
-This file is loaded automatically by Claude and its Code sessions working in the repository. For vault structure, naming, frontmatter, and shared conventions, see `VAULT-CONVENTIONS.md`.
+This file is loaded automatically by Claude and its Code sessions working in the repository. For vault structure, naming, frontmatter, and shared conventions, see `!/VAULT-CONVENTIONS.md`.
 
 **Owner:** Logan Finney — journalist, producer/reporter, Idaho Reports / Idaho Public Television; see "[[LOGAN]]" and "[[Logan Finney|Logan]]"
 **Repository URL:** github.com/loganfinney27/IDAHO-VAULT (public vault master repo)
@@ -18,7 +18,7 @@ This file is loaded automatically by Claude and its Code sessions working in the
 
 ## Governance
 
-This file provides operational instructions for Claude Code sessions. The canonical constitution is `CONSTITUTION.md` (vault root). When this file and `CONSTITUTION.md` conflict, `CONSTITUTION.md` governs.
+This file provides operational instructions for Claude Code sessions. The canonical constitution is `!/CONSTITUTION.md`. When this file and `!/CONSTITUTION.md` conflict, `!/CONSTITUTION.md` governs.
 
 ## Automation
 
@@ -64,7 +64,7 @@ This vault uses multiple AI tools. All agents share vault conventions defined in
 **Coordination workflow:** Logan assigns tasks via GitHub Issues with agent labels (`agent:claude-code`, `agent:codex`, `agent:copilot`, `agent:gemini`). Each agent works on its own branch. PRs are the deliverable. Logan reviews and merges from GitHub.
 
 See also:
-- `VAULT-CONVENTIONS.md` — Shared vault conventions for all agents
+- `!/VAULT-CONVENTIONS.md` — Shared vault conventions for all agents
 - `GEMINI.md` — Instructions for Gemini code agents (Google)
 - `.github/copilot-instructions.md` — Instructions for GitHub Copilot
-- `AGENTS.md` — Full agent registry, capability tiers, and boundary rules
+- `!/AGENTS.md` — Full agent registry, capability tiers, and boundary rules
