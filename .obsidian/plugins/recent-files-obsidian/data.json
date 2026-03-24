@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "CONSTITUTION",
+      "path": "CONSTITUTION.md"
+    },
+    {
+      "basename": "!README",
+      "path": "!README.md"
+    },
+    {
       "basename": "2026-03-22",
       "path": "2026-03-22.md"
     },
@@ -27,10 +35,6 @@
     {
       "basename": "GEMINI",
       "path": "GEMINI.md"
-    },
-    {
-      "basename": "CONSTITUTION",
-      "path": "CONSTITUTION.md"
     },
     {
       "basename": "TOUCHSTONE",
@@ -65,16 +69,8 @@
       "path": "GEMINI.md"
     },
     {
-      "basename": "CONSTITUTION",
-      "path": "CONSTITUTION.md"
-    },
-    {
       "basename": "CODEX",
       "path": "CODEX.md"
-    },
-    {
-      "basename": "!README",
-      "path": "!README.md"
     },
     {
       "basename": "CONSULTATION-PUBLIC-CONVERSATION-2026-03-16 1",
@@ -123,10 +119,6 @@
     {
       "basename": "GRIMOIRE",
       "path": "GRIMOIRE.md"
-    },
-    {
-      "basename": "!README",
-      "path": "!README.md"
     },
     {
       "basename": "QUESTION",
@@ -203,34 +195,6 @@
     {
       "basename": "PRIMADONNA GIRL",
       "path": "PRIMADONNA GIRL.md"
-    },
-    {
-      "basename": "LEFT",
-      "path": "LEFT.md"
-    },
-    {
-      "basename": "UP",
-      "path": "UP.md"
-    },
-    {
-      "basename": "RIGHT QUESTIONS",
-      "path": "RIGHT QUESTIONS.md"
-    },
-    {
-      "basename": "QUESTIONS",
-      "path": "QUESTIONS.md"
-    },
-    {
-      "basename": "WRONG",
-      "path": "WRONG.md"
-    },
-    {
-      "basename": "ANSWERS",
-      "path": "ANSWERS.md"
-    },
-    {
-      "basename": "Logan's Project & Protocols",
-      "path": "Logan's Project & Protocols.md"
     }
   ],
   "omittedPaths": [
