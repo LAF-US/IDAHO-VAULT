@@ -5,15 +5,16 @@ updated: 2026-03-22
 status: draft
 source: commit
 ---
+
 # AGENTS — Swarm Registry and Communication Rules
 
 This [[file]] defines who exists in the swarm, what each [[agent]] can do, and how they coordinate. It is the third governance file in the stack:
 
-| File | Role |
-|---|---|
-| `Constitution.md` | Identity, constraints, working rules |
-| `PROTOCOL.md` | Operational vocabulary (18 terms) |
-| **`AGENTS.md`** | **Agent registry, communication rules, boundary rules** |
+| File              | Role                                                    |
+| ----------------- | ------------------------------------------------------- |
+| `Constitution.md` | Identity, constraints, working rules                    |
+| `PROTOCOL.md`     | Operational vocabulary (18 terms)                       |
+| **`AGENTS.md`**   | **Agent registry, communication rules, boundary rules** |
 
 Instance-specific instructions live in separate files (`CLAUDE.md`, `.github/copilot-instructions.md`, etc.) — not here.
 
@@ -29,20 +30,20 @@ All inter-agent communication flows through or is visible to [[LOGAN]]. There is
 
 ## 2. AGENT REGISTRY
 
-| Agent | Platform | Capability Tier | Scope | Slack | GitHub Access |
-|---|---|---|---|---|---|
-| PERMANENT: AUTHORITY: CODE | Claude Code CLI | Direct write | IDAHO-VAULT repo operations, deployment, automation | Via [[LOGAN]] | Full repo read/write |
-| PERSISTENT: ADMINISTRATION | Claude (conversation) | Draft only | Constitutional layer, handoffs, judgment calls | Via [[LOGAN]]'s account | None — produces drafts |
-| GitHub Copilot (ADMIN GitHub) | GitHub Copilot | Multi-repo admin | GitHub administration across all [[LOGAN]]'s repos | Bot app needed | GitHub APIs, all repos |
-| ChatGPT Codex | OpenAI Codex | Direct write (scripting) | Specialized scripting — scrapers, GitHub Actions, complex logic | Via [[LOGAN]] | Repo read/write |
-| Gemini ("The Vault Advisor") | Google AI | Advisory | Narrative lens, political context, strategy. Does not touch code. | Via [[LOGAN]] | None |
-| PERSISTENT: IMPLEMENTATION | Claude (Project) | Read/analysis | Governance/architecture consultation | No | None — advisory only |
-| TASK: LEVELSET reports | Claude (conversation) | Read/analysis | Synthesis and status reporting | No | None — advisory only |
-| STORY: JFAC Open Meetings | Claude (conversation) | Read/analysis | JFAC investigation — read-only | No | None — advisory only |
-| Grok | Grok (X/xAI) | Read/analysis | Research, web search | No | None |
-| M365 Copilot | Microsoft 365 | Informational | Informational only — no repo involvement | No | None |
-| NotebookLM | Google NotebookLM | TBD | TBD — identified, not yet scoped | No | None |
-| PUBLIC: CONVERSATION | Claude (conversation) | Read/analysis | Self-talk, internal processing — consultation pending | No | None |
+| Agent                         | Platform              | Capability Tier          | Scope                                                             | Slack                   | GitHub Access          |
+| ----------------------------- | --------------------- | ------------------------ | ----------------------------------------------------------------- | ----------------------- | ---------------------- |
+| PERMANENT: AUTHORITY: CODE    | Claude Code CLI       | Direct write             | IDAHO-VAULT repo operations, deployment, automation               | Via [[LOGAN]]           | Full repo read/write   |
+| PERSISTENT: ADMINISTRATION    | Claude (conversation) | Draft only               | Constitutional layer, handoffs, judgment calls                    | Via [[LOGAN]]'s account | None — produces drafts |
+| GitHub Copilot (ADMIN GitHub) | GitHub Copilot        | Multi-repo admin         | GitHub administration across all [[LOGAN]]'s repos                | Bot app needed          | GitHub APIs, all repos |
+| ChatGPT Codex                 | OpenAI Codex          | Direct write (scripting) | Specialized scripting — scrapers, GitHub Actions, complex logic   | Via [[LOGAN]]           | Repo read/write        |
+| Gemini ("The Vault Advisor")  | Google AI             | Advisory                 | Narrative lens, political context, strategy. Does not touch code. | Via [[LOGAN]]           | None                   |
+| PERSISTENT: IMPLEMENTATION    | Claude (Project)      | Read/analysis            | Governance/architecture consultation                              | No                      | None — advisory only   |
+| TASK: LEVELSET reports        | Claude (conversation) | Read/analysis            | Synthesis and status reporting                                    | No                      | None — advisory only   |
+| STORY: JFAC Open Meetings     | Claude (conversation) | Read/analysis            | JFAC investigation — read-only                                    | No                      | None — advisory only   |
+| Grok                          | Grok (X/xAI)          | Read/analysis            | Research, web search                                              | No                      | None                   |
+| M365 Copilot                  | Microsoft 365         | Informational            | Informational only — no repo involvement                          | No                      | None                   |
+| NotebookLM                    | Google NotebookLM     | TBD                      | TBD — identified, not yet scoped                                  | No                      | None                   |
+| PUBLIC: CONVERSATION          | Claude (conversation) | Read/analysis            | Self-talk, internal processing — consultation pending             | No                      | None                   |
 
 **Registry maintenance:** CODE AUTHORITY updates this table when agents are added, removed, or change tier. [[LOGAN]] approves all tier changes.
 
@@ -57,6 +58,7 @@ Can commit and push to the repository. Must LEVELSET before significant commits.
 **Agents:** PERMANENT: AUTHORITY: CODE
 
 **Can do:**
+
 - `git add`, `git commit`, `git push` to feature branches
 - Create, modify, and delete vault files
 - Create and modify `.github/` scripts and workflows
@@ -64,6 +66,7 @@ Can commit and push to the repository. Must LEVELSET before significant commits.
 - Run automation scripts
 
 **Cannot do:**
+
 - Push to `main` without [[LOGAN]]'s merge approval
 - Force-push without explicit permission
 - Delete branches without confirmation
@@ -76,14 +79,17 @@ Can interact with GitHub APIs across all of [[LOGAN]]'s repositories. For vault 
 **Agents:** GitHub Copilot (ADMIN GitHub)
 
 **Can do (vault):**
+
 - Draft and propose changes via pull requests
 - Modify `.github/` automation files (with CODE AUTHORITY review)
 - Create issues, manage labels, configure repository settings
 
 **Can do (non-vault repos):**
+
 - Broader latitude — **specific boundaries TBD by [[LOGAN]]**
 
 **Cannot do (vault):**
+
 - Directly modify governance files (CONSTITUTION, PROTOCOL, AGENTS, LEVELSET, DECISIONS)
 - Merge without [[LOGAN]]'s approval
 - Override CODE AUTHORITY's governance review
@@ -95,11 +101,13 @@ Produces drafts and handoffs. Cannot push to any repository. All output goes thr
 **Agents:** PERSISTENT: ADMINISTRATION
 
 **Can do:**
+
 - Draft constitutional language, governance proposals, handoff documents
 - Advise on architecture and conventions
 - Route handoffs between agents (via [[LOGAN]])
 
 **Cannot do:**
+
 - Commit or push to any repository
 - Execute code or run scripts
 - Modify files directly
@@ -111,11 +119,13 @@ Advisory only. No repository access.
 **Agents:** PERSISTENT: IMPLEMENTATION, TASK: LEVELSET reports, STORY: JFAC Open Meetings, Grok, PUBLIC: CONVERSATION
 
 **Can do:**
+
 - Analyze provided data
 - Produce synthesis reports
 - Advise on decisions
 
 **Cannot do:**
+
 - Access the repository
 - Modify any files
 - Execute any commands
@@ -161,11 +171,11 @@ Handoff documents are saved to vault root as `HANDOFF-[source]-[date].md` for au
 
 ### Routing Layers
 
-| Layer | Purpose | Persistence | Status |
-|---|---|---|---|
-| **GitHub Issues/PRs** | Task assignment, coordination, review | Permanent | Active |
-| **Vault root files** | Decisions of record, governance | Permanent | Active |
-| **`!/`** | System files, logs, agent routing | Permanent | Active |
+| Layer                 | Purpose                               | Persistence | Status |
+| --------------------- | ------------------------------------- | ----------- | ------ |
+| **GitHub Issues/PRs** | Task assignment, coordination, review | Permanent   | Active |
+| **Vault root files**  | Decisions of record, governance       | Permanent   | Active |
+| **`!/`**              | System files, logs, agent routing     | Permanent   | Active |
 
 **Hard rule:** All decisions must be captured in vault files. GitHub is the coordination layer; vault root is where decisions land.
 
@@ -175,20 +185,21 @@ Handoff documents are saved to vault root as `HANDOFF-[source]-[date].md` for au
 
 ### File Access by Agent
 
-| Path | CODE AUTHORITY | Copilot | ADMINISTRATION | Others |
-|---|---|---|---|---|
-| Governance files (vault root) | Read/Write | Read only | Draft only | Read only |
-| Handoffs/LEVELSETs (vault root) | Read/Write | Read only | Draft only | Read only |
-| `.github/workflows/` | Read/Write | Read/Write (with review) | No access | No access |
-| `.github/scripts/` | Read/Write | Read/Write (with review) | No access | No access |
-| Vault content (all other `.md`) | Read/Write | Read only (vault) | No access | No access |
-| Non-vault repos | No access | Read/Write (per repo) | No access | No access |
+| Path                            | CODE AUTHORITY | Copilot                  | ADMINISTRATION | Others    |
+| ------------------------------- | -------------- | ------------------------ | -------------- | --------- |
+| Governance files (vault root)   | Read/Write     | Read only                | Draft only     | Read only |
+| Handoffs/LEVELSETs (vault root) | Read/Write     | Read only                | Draft only     | Read only |
+| `.github/workflows/`            | Read/Write     | Read/Write (with review) | No access      | No access |
+| `.github/scripts/`              | Read/Write     | Read/Write (with review) | No access      | No access |
+| Vault content (all other `.md`) | Read/Write     | Read only (vault)        | No access      | No access |
+| Non-vault repos                 | No access      | Read/Write (per repo)    | No access      | No access |
 
 **Governance files** are: `Constitution.md`, `PROTOCOL.md`, `AGENTS.md`, `LEVELSET.md`, `DECISIONS.md`, `Ethics.md`, `Logan.md`
 
 ### The `.github/` Overlap
 
 Both CODE AUTHORITY and Copilot can modify `.github/` contents. To prevent conflicts:
+
 1. Copilot drafts changes and submits via PR or handoff
 2. CODE AUTHORITY reviews for governance conflicts
 3. [[LOGAN]] approves the merge
@@ -213,6 +224,7 @@ Both CODE AUTHORITY and Copilot can modify `.github/` contents. To prevent confl
 ### Merge Conflicts
 
 If a `git merge` or `git pull` produces conflicts:
+
 1. **STOP.** Do not auto-resolve.
 2. Report to [[LOGAN]] with the specific files and conflict markers
 3. Conflicts signal another conversation has been active — context may be stale
@@ -224,16 +236,16 @@ If a `git merge` or `git pull` produces conflicts:
 
 These items require [[LOGAN]]'s direction before they can be formalized:
 
-| Item | Status | Notes |
-|---|---|---|
-| Gemini capability tier and scope | **Undefined** | Pixel smartphone, loganfinney27@gmail.com. No vault commits until defined. |
-| Copilot non-vault repo boundaries | **TBD** | Multi-repo admin decided; specific latitude per repo not yet specified. |
-| GitHub agent labels | **Active** | `agent:claude-code`, `agent:codex`, `agent:copilot`, `agent:gemini` |
-| Research instance (Tier 4) | **Not yet assigned** | Tim Oren analysis, NICAR23 training queued when available. |
-| Grok scope and boundaries | **Minimal** | Research/web search role identified. No vault access. |
-| M365 Copilot role | **Informational only** | No repo involvement. |
-| NotebookLM role | **TBD** | Identified, not yet scoped. |
-| PUBLIC: CONVERSATION classification | **Consultation pending** | Constitutional analysis from ADMINISTRATION requested. |
+| Item                                | Status                   | Notes                                                                      |
+| ----------------------------------- | ------------------------ | -------------------------------------------------------------------------- |
+| Gemini capability tier and scope    | **Undefined**            | Pixel smartphone, loganfinney27@gmail.com. No vault commits until defined. |
+| Copilot non-vault repo boundaries   | **TBD**                  | Multi-repo admin decided; specific latitude per repo not yet specified.    |
+| GitHub agent labels                 | **Active**               | `agent:claude-code`, `agent:codex`, `agent:copilot`, `agent:gemini`        |
+| Research instance (Tier 4)          | **Not yet assigned**     | Tim Oren analysis, NICAR23 training queued when available.                 |
+| Grok scope and boundaries           | **Minimal**              | Research/web search role identified. No vault access.                      |
+| M365 Copilot role                   | **Informational only**   | No repo involvement.                                                       |
+| NotebookLM role                     | **TBD**                  | Identified, not yet scoped.                                                |
+| PUBLIC: CONVERSATION classification | **Consultation pending** | Constitutional analysis from ADMINISTRATION requested.                     |
 
 ---
 
