@@ -15,19 +15,22 @@ jobs:
       - name: Checkout vault
         uses: actions/checkout@v6
 
+      - name: Setup vault environment
+        uses: ./.github/actions/setup-vault
+        with:
+          pip-packages: "PyYAML>=6.0"
+
       - name: Run sort audit
         run: python3 .github/scripts/sort_audit.py
 
       - name: Validate audit output
         run: |
-          git add "!ADMIN/"
+          git add "!/"
           python3 .github/scripts/validate_content.py --scope admin
           git reset HEAD
 
       - name: Commit audit report
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add "!ADMIN/"
+          git add "!/"
           git diff --cached --quiet || git commit -m "sort audit $(date -u +%Y-%m-%d)"
           git push

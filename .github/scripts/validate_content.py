@@ -30,7 +30,10 @@ SCOPE_ALLOWED_DIRS: dict[str, list[str]] = {
         "GOVERNMENTS/IDAHO - LEGISLATIVE/IDAHO SENATE/",
     ],
     "admin": [
-        "!ADMIN/",
+        "!/",
+    ],
+    "generated": [
+        "!/",
     ],
     "all": [],  # no directory restriction
 }
@@ -138,7 +141,7 @@ def validate_directory(path: Path, scope: str) -> list[str]:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Validate staged content before commit")
-    parser.add_argument("--scope", choices=["bills", "admin", "all"], default="all",
+    parser.add_argument("--scope", choices=["bills", "admin", "generated", "all"], default="all",
                         help="Which scope to validate (restricts allowed directories)")
     args = parser.parse_args()
 

@@ -25,6 +25,11 @@ jobs:
       - name: Checkout vault
         uses: actions/checkout@v6
 
+      - name: Setup vault environment
+        uses: ./.github/actions/setup-vault
+        with:
+          pip-packages: "PyYAML>=6.0"
+
       - name: Run Wayback audit
         env:
           SAVE:  ${{ github.event.inputs.save  || 'false' }}
@@ -39,14 +44,12 @@ jobs:
 
       - name: Validate audit output
         run: |
-          git add "!ADMIN/"
+          git add "!/"
           python3 .github/scripts/validate_content.py --scope admin
           git reset HEAD
 
       - name: Commit audit reports
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add "!ADMIN/"
+          git add "!/"
           git diff --cached --quiet || git commit -m "wayback audit $(date -u +%Y-%m-%d)"
           git push
