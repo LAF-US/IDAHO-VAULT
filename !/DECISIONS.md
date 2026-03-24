@@ -6,6 +6,18 @@
 
 ## FORMAT
 
+### Decision Template
+
+```
+### Decision N: [Title]
+**Date:** YYYY-MM-DD
+**Topic:** [Brief topic]
+**Status:** [Pending / ✅ CONFIRMED / Superseded]
+**Rationale:** [Why this decision was made]
+```
+
+### Summary
+
 | Decision # | Date       | Topic                                         | Status       | Notes                                                                     |
 | ---------- | ---------- | --------------------------------------------- | ------------ | ------------------------------------------------------------------------- |
 | 1          | 2026-03-16 | `!ADMIN/` canonical                           | ✅ CONFIRMED | All governance documents live in `!ADMIN/` (not `!ADMINISTRATION/`)       |
@@ -24,6 +36,7 @@
 | 14         | 2026-03-16 | STORY: JFAC is read-only                      | ✅ CONFIRMED | Not direct write; vault-only access                                       |
 | 15         | 2026-03-15 | Security hardening: sanitization + validation | ✅ CONFIRMED | Input sanitization in scraper, content validation gate in workflows       |
 | 16         | 2026-03-24 | MCP governance model                          | ✅ CONFIRMED | MCP is allowed as transport only; native vault terms remain canonical     |
+| 17         | 2026-03-22 | STEP-0 LEVELSET prompt for external agents    | ✅ CONFIRMED | Standardized orientation prompt for chat-based agents                     |
 
 ---
 
@@ -134,6 +147,12 @@
 **Status:** ✅ CONFIRMED
 **Rationale:** Time-sensitive reporting story operates as vault-only, no direct write capability.
 
+### Decision 15: Security Hardening — Input Sanitization and Content Validation
+**Date:** 2026-03-15
+**Topic:** Pipeline security
+**Status:** ✅ CONFIRMED
+**Rationale:** Review of the OpenClaw autonomous agent incident (2025–2026) revealed analogous risks — unsanitized external HTML flowing into YAML frontmatter via the legislature scraper. Added `sanitize_text()` to scraper, created `validate_content.py` as pre-commit CI gate, added validation steps to all commit-producing workflows, created CODEOWNERS and THREAT-MODEL.md. Branch protection deferred for AUTHORITY: CODE consultation.
+
 ### Decision 16: MCP Allowed as Transport, Native Terms Remain Canonical
 **Date:** 2026-03-24
 **Topic:** MCP policy for vault integration
@@ -145,6 +164,13 @@
 - **Q3 (source of truth):** Native vault files and terms remain the canonical governance layer.
 - **Q4 (scope boundary):** MCP must not redefine governance vocabulary or bypass Logan-mediated decision flow.
 **Rationale:** Preserves Decision 7 (native protocols over MCP) while unblocking practical integrations that need standardized transport.
+
+### Decision 17: STEP-0 LEVELSET Prompt for External Agents
+**Date:** 2026-03-22
+**Topic:** External agent orientation
+**Status:** ✅ CONFIRMED
+**Decided by:** Logan Finney
+**Rationale:** External agents operating via chat have no vault context unless Logan provides it. Created `!/!/LEVELSET-STEP-0-EXTERNAL-AGENT.md` — a paste-to-agent orientation prompt for chat-based agents (Claude.ai, Gemini, Grok, etc.). The agent responds with a 6-part LEVELSET report: who they are, what they know, what they've done, what is unresolved, what they need, and collision risks. Standardizes orientation across all chat-based agents.
 
 ---
 
@@ -176,19 +202,6 @@
 ---
 
 _This document is the authoritative record of confirmed decisions._
-
-### Decision 15: Security Hardening — Input Sanitization and Content Validation
-
-**Date:** 2026-03-15
-**Topic:** Pipeline security
-**Status:** ✅ CONFIRMED
-**Rationale:** Review of the OpenClaw autonomous agent incident (2025–2026) revealed analogous risks — unsanitized external HTML flowing into YAML frontmatter via the legislature scraper. Added `sanitize_text()` to scraper, created `validate_content.py` as pre-commit CI gate, added validation steps to all commit-producing workflows, created CODEOWNERS and THREAT-MODEL.md. Branch protection deferred for AUTHORITY: CODE consultation.
-
-## 2026-03-22 — STEP-0 LEVELSET prompt for external agents
-
-**Decision:** Create `!/!/LEVELSET-STEP-0-EXTERNAL-AGENT.md` — a paste-to-agent orientation prompt for chat-based agents (Claude.ai, Gemini, Grok, etc.) that cannot access the repository directly. When Logan starts a new external agent session, he pastes this prompt, and the agent responds with a 6-part LEVELSET report: who they are, what they know, what they've done, what is unresolved, what they need, and collision risks.
-**Context:** External agents operating via chat have no vault context unless Logan provides it. A standardized STEP-0 prompt ensures consistent orientation across all chat-based agents, reducing repeated discovery work and preventing agents from inventing governance structures or claiming capabilities they don't have.
-**Decided by:** Logan Finney
 
 ---
 

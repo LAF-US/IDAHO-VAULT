@@ -1,0 +1,95 @@
+---
+tags:
+  - administration/governance
+updated: 2026-03-24
+status: draft
+source: commit
+---
+
+# VAULT-ZONES — Governance Zone Definitions
+
+This document partitions the vault into three governance zones by write-authority requirements. It formalizes the boundaries that already exist mechanically in `classify_paths.py` (two-tier risk classification) and `CODEOWNERS` (path-based review gates).
+
+---
+
+## Zone Definitions
+
+| Zone | Paths | Write Authority | PR Merge Authority | Risk Tier |
+|------|-------|----------------|-------------------|-----------|
+| **Constitutional** | `!/` (all nested), root governance files (`CONSTITUTION.md`, `DECISIONS.md`, `AGENTS.md`, `PROTOCOL.md`, `VAULT-CONVENTIONS.md`, `VAULT-ZONES.md`, `CLAUDE.md`, `GEMINI.md`, `Ethics.md`, `Logan.md`) | Logan only. Agents propose via PR — no standing write window. | Logan only | High |
+| **Operational** | `.github/workflows/`, `.github/scripts/`, `.github/actions/`, `.github/swarm/`, `swarm/` | Agents propose via PR. Logan reviews and merges. | Logan only | High |
+| **Data** | `SOURCES/`, `TOPICS/`, `PEOPLE/`, `PLACES/`, `ORGANIZATIONS/`, `GOVERNMENTS/`, `ATTACHMENTS/`, `INBOX/`, `X LABELER/`, all other vault `.md` content | Agent-assignable via GitHub Issues. All writes via PR. | Logan (auto-merge eligible for low-risk per `auto-pr.yml`) | Low |
+
+---
+
+## Zone Details
+
+### Constitutional Zone
+
+Covers `!/` and its nested structure (`!/!/`, DOCKET, LEVELSET, DECISIONS copy, agent routing contexts), plus root-level governance `.md` files.
+
+**Key constraint (CONSTITUTION.md Section V):** "Nothing modifies or destructively touches anything in `!/` without Logan's guiding hand."
+
+**Access model:** No agent has a standing write window to Constitutional Zone files. All changes — including from CODE AUTHORITY — require:
+1. A GitHub Issue or explicit Logan directive scoping the task
+2. Work on a feature branch
+3. PR submission for Logan's review
+4. Logan's merge approval
+
+This zone is protected by `CODEOWNERS` (`/!/` requires `@loganfinney27` review). Agent instruction files (`CLAUDE.md`, `GEMINI.md`, `.github/copilot-instructions.md`) are Constitutional because they define agent behavior constraints.
+
+### Operational Zone
+
+Covers `.github/` subtrees and `swarm/` tooling. Both CODE AUTHORITY and Copilot can propose modifications to `.github/` per [[AGENTS]] Section 5 overlap rules.
+
+**Access model:** Agents with GitHub repo access can submit PRs. Logan reviews and merges. No auto-merge — all Operational Zone changes are high-risk.
+
+### Data Zone
+
+Bulk vault content (3400+ files). Already classified as low-risk in `classify_paths.py`. Agents with write capability can be assigned Data Zone tasks via GitHub Issues with agent labels.
+
+**Access model:** Auto-merge eligible per `auto-pr.yml` when `classify_paths.py` returns `low` tier. Logan can override.
+
+---
+
+## No Standing Write Windows
+
+Per Logan's directive (2026-03-24): no agent — including CODE AUTHORITY — maintains a permanent open write window to any zone. All agent writes are:
+
+- **Task-scoped:** tied to a specific GitHub Issue or explicit Logan directive
+- **Branch-isolated:** work happens on feature branches, never direct to `main`
+- **PR-gated:** all changes submitted as pull requests for review
+- **Logan-merged:** Logan holds sole merge authority (with auto-merge exception for low-risk Data Zone changes)
+
+This means CODE AUTHORITY's "Direct write" capability tier (per [[AGENTS]]) describes *mechanical ability*, not *standing authorization*. Each task requires fresh authorization.
+
+---
+
+## Alignment with Existing Systems
+
+| System | What it does | Relationship to zones |
+|--------|-------------|----------------------|
+| `classify_paths.py` | Returns `high` or `low` risk tier per file path | Implements the Constitutional+Operational = high, Data = low split |
+| `CODEOWNERS` | Requires `@loganfinney27` review for gated paths | Gates Constitutional Zone (`!/`) and Operational Zone (`.github/`) |
+| `auto-pr.yml` | Auto-creates PRs from `claude/*` branches; auto-merges low-risk | Data Zone changes eligible for auto-merge |
+| `branch-cleanup.yml` | Deletes merged `claude/*` branches | Applies to all zones equally |
+
+**Note:** `classify_paths.py` still references old `!ADMIN/` paths in `HIGH_RISK_EXACT`. Follow-up recommended to update these to `!/` paths.
+
+---
+
+## Cross-References
+
+- [[CONSTITUTION]] — Identity, constraints, working rules
+- [[AGENTS]] — Agent registry, capability tiers, boundary rules
+- [[DECISIONS]] — Confirmed Logan-approved decisions
+- [[PROTOCOL]] — Operational vocabulary
+
+---
+
+## DOCUMENT METADATA
+
+- **Created:** 2026-03-24
+- **Author:** PERMANENT: AUTHORITY: CODE (draft)
+- **Status:** Draft — awaiting [[LOGAN]]'s review
+- **Authority:** [[LOGAN]]'s discretion
