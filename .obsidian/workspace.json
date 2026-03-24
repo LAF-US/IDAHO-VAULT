@@ -11,10 +11,24 @@
             "id": "e5706f0b67071ce9",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "CONSTITUTION.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "CONSTITUTION"
             }
           }
         ]
@@ -49,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "readme",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -194,5 +208,10 @@
     }
   },
   "active": "e5706f0b67071ce9",
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "!README.md",
+    "TOPICS/Box OAuth VS Code.md",
+    "TOPICS",
+    "CONSTITUTION.md.tmp.27488.1774318717233"
+  ]
 }
