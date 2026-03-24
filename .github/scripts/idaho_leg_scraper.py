@@ -76,6 +76,7 @@ Data reliability notes
 """
 
 import argparse
+import csv
 import logging
 import os
 import re
@@ -1267,6 +1268,70 @@ def ensure_session_note(year: str) -> None:
 
 
 # ─────────────────────────────────────────────────────────────────────────────
+# CSV export for Flourish Budget Tracker
+# ─────────────────────────────────────────────────────────────────────────────
+
+def export_bills_to_csv(bill_list: list[dict], output_path: Path, year: str) -> int:
+    """
+    Export bill data to CSV format for Flourish Budget Tracker.
+
+    Args:
+        bill_list: List of bill dicts from get_bill_list()
+        output_path: Path to write CSV file
+        year: Session year
+
+    Returns:
+        Number of bills exported
+    """
+    if not bill_list:
+        log.warning("No bills to export to CSV")
+        return 0
+
+    # CSV columns for Flourish budget tracker
+    fieldnames = [
+        "bill_id",
+        "bill_type",
+        "number",
+        "alias",
+        "title",
+        "sponsor",
+        "committee",
+        "last_action",
+        "url",
+        "year",
+        "exported_at"
+    ]
+
+    timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+
+    with open(output_path, "w", newline="", encoding="utf-8") as csvfile:
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+        writer.writeheader()
+
+        for bill in bill_list:
+            # Clean and prepare data for CSV
+            row = {
+                "bill_id": bill.get("id", ""),
+                "bill_type": bill.get("bill_type", ""),
+                "number": bill.get("number", ""),
+                "alias": bill.get("alias", ""),
+                "title": sanitize_text(bill.get("title", ""), strip_wikilinks=True, max_length=500),
+                "sponsor": sanitize_text(bill.get("sponsor", ""), strip_wikilinks=True, max_length=200),
+                "committee": sanitize_text(bill.get("committee", ""), strip_wikilinks=True, max_length=200),
+                "last_action": sanitize_text(bill.get("last_action", ""), strip_wikilinks=True, max_length=300),
+                "url": bill.get("url", ""),
+                "year": year,
+                "exported_at": timestamp
+            }
+            writer.writerow(row)
+
+    log.info("Exported %d bills to %s", len(bill_list), output_path)
+    return len(bill_list)
+
+
+# ─────────────────────────────────────────────────────────────────────────────
 # Entry point
 # ─────────────────────────────────────────────────────────────────────────────
 
@@ -1298,18 +1363,40 @@ def main() -> int:
         "--verbose", "-v", action="store_true",
         help="Enable debug logging"
     )
+    parser.add_argument(
+        "--csv-export", metavar="PATH",
+        help="Export bill list to CSV file (for Flourish Budget Tracker)"
+    )
     args = parser.parse_args()
 
     if args.verbose:
         logging.getLogger().setLevel(logging.DEBUG)
 
-    log.info("Idaho Legislature Scraper — year=%s  force=%s  members=%s  dry_run=%s",
-             args.year, args.force, args.members, args.dry_run)
+    log.info("Idaho Legislature Scraper — year=%s  force=%s  members=%s  dry_run=%s  csv_export=%s",
+             args.year, args.force, args.members, args.dry_run, args.csv_export is not None)
 
     if not args.dry_run:
         ensure_session_note(args.year)
 
     start = datetime.now(timezone.utc)
+
+    # If CSV export is requested, fetch bill list and export immediately
+    if args.csv_export:
+        log.info("CSV export mode — fetching bill list")
+        bill_list = get_bill_list(args.year)
+        if not bill_list:
+            log.error("Could not fetch bill list for CSV export")
+            return 1
+
+        csv_path = Path(args.csv_export)
+        exported_count = export_bills_to_csv(bill_list, csv_path, args.year)
+
+        elapsed = (datetime.now(timezone.utc) - start).total_seconds()
+        log.info("CSV export complete in %.1fs — %d bills exported to %s",
+                 elapsed, exported_count, csv_path)
+        return 0
+
+    # Normal scraping mode
     try:
         new, updated, unchanged, errors = scrape_bills(
             year=args.year,
