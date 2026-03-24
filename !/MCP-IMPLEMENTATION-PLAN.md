@@ -2,8 +2,8 @@
 tags:
   - administration/mcp
   - administration/implementation-plan
-updated: 2026-03-24
-status: draft
+updated: 2026-03-25
+status: active
 ---
 # MCP IMPLEMENTATION PLAN
 
