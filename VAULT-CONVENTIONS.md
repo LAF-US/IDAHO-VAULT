@@ -58,13 +58,13 @@ IDAHO-VAULT/
 
 ## Naming Conventions
 
-| Type | Pattern | Example |
-|---|---|---|
-| Bills | `(YYYY) Bill Type Number.md` | `(2026) House Bill 24.md` |
-| News articles | `YYYY-MM-DD - Outlet - Title.md` | `2024-01-15 - Idaho Statesman - Title here.md` |
-| Hearings | `YYYY-MM-DD - Committee or Meeting.md` | `2023-12-19 - GIAC meeting.md` |
-| People | `Full Name.md` | `Brad Little.md` |
-| Other entities | Descriptive name, title case | `Ada County.md` |
+| Type           | Pattern                                | Example                                        |
+| -------------- | -------------------------------------- | ---------------------------------------------- |
+| Bills          | `(YYYY) Bill Type Number.md`           | `(2026) House Bill 24.md`                      |
+| News articles  | `YYYY-MM-DD - Outlet - Title.md`       | `2024-01-15 - Idaho Statesman - Title here.md` |
+| Hearings       | `YYYY-MM-DD - Committee or Meeting.md` | `2023-12-19 - GIAC meeting.md`                 |
+| People         | `Full Name.md`                         | `Brad Little.md`                               |
+| Other entities | Descriptive name, title case           | `Ada County.md`                                |
 
 ---
 
@@ -73,14 +73,16 @@ IDAHO-VAULT/
 All Obsidian files use YAML frontmatter. Key fields by type:
 
 **People:**
+
 ```yaml
 tags:
-  - Party/Republican          # or Party/Democratic
+  - Party/Republican # or Party/Democratic
   - people/elected/legislative
 residence: "[[Boise]]"
 ```
 
 **News articles:**
+
 ```yaml
 author: "[[Reporter Name]]"
 outlet: "[[Outlet Name]]"
@@ -91,6 +93,7 @@ tags:
 ```
 
 **Bills:**
+
 ```yaml
 tags:
   - bills
@@ -103,6 +106,7 @@ URL: https://legislature.idaho.gov/...
 ```
 
 **Hearings:**
+
 ```yaml
 cmte: "[[Committee Name]]"
 tags:
@@ -127,15 +131,49 @@ Use `[[Full Name]]` for all internal links — people, places, organizations, bi
 
 ## Automation
 
-| Script | Purpose | Trigger |
-|---|---|---|
-| `sort_audit.py` | Audits vault structure for misplaced files | Weekly Monday 6 AM UTC + manual |
-| `idaho_leg_scraper.py` | Scrapes Idaho Legislature bill data | Daily 6 AM MT + manual |
-| `post_digest.py` | Posts bill activity to GitHub Issues digest | Called by scraper workflow |
-| `propose_moves.py` | Proposes vault file reorganization | Weekly Monday 7 AM UTC + manual |
-| `wayback_audit.py` | Audits URL preservation in Wayback Machine | Weekly Monday 8 AM UTC + manual |
+| Script                 | Purpose                                     | Trigger                         |
+| ---------------------- | ------------------------------------------- | ------------------------------- |
+| `sort_audit.py`        | Audits vault structure for misplaced files  | Weekly Monday 6 AM UTC + manual |
+| `idaho_leg_scraper.py` | Scrapes Idaho Legislature bill data         | Daily 6 AM MT + manual          |
+| `post_digest.py`       | Posts bill activity to GitHub Issues digest | Called by scraper workflow      |
+| `propose_moves.py`     | Proposes vault file reorganization          | Weekly Monday 7 AM UTC + manual |
+| `wayback_audit.py`     | Audits URL preservation in Wayback Machine  | Weekly Monday 8 AM UTC + manual |
 
 Scripts live in `.github/scripts/`. Workflows live in `.github/workflows/`. Scripts that commit to the repo use `git config user.name "github-actions[bot]"`. Dependencies are tracked in `.github/scripts/requirements-scraper.txt`.
+
+### MCP Action Logging Requirement (Mandatory)
+
+Any automation in `.github/workflows/` or `.github/scripts/` that performs an MCP-mediated action **must** emit a structured log entry using the following reusable template.
+
+#### Required MCP Action Log Template
+
+```yaml
+mcp_action_log:
+  action_type: "<action type>"
+  system_or_resource_id: "<system/resource id>"
+  initiating_agent: "<initiating agent>"
+  correlation_id: "<correlation id>"
+  outcome: "<success|failure>"
+  retry_count: <integer>
+  related_ref: "<issue|pr|handoff file link>"
+```
+
+#### Field Definitions
+
+- `action_type`: The MCP operation category (for example: `read_resource`, `write_resource`, `invoke_tool`).
+- `system_or_resource_id`: The MCP server/system identifier or concrete resource identifier targeted by the action.
+- `initiating_agent`: Agent identity that initiated the MCP action (for example: `agent:codex`, `agent:claude-code`, `github-actions[bot]`).
+- `correlation_id`: Stable ID used to correlate retries and downstream events for the same logical action.
+- `outcome`: Final attempt status. Must be exactly `success` or `failure`.
+- `retry_count`: Number of retries attempted before final outcome (`0` for first-try success/failure).
+- `related_ref`: URL or path to the related coordination artifact (GitHub Issue, PR, or `HANDOFF-*.md` file).
+
+#### Enforcement Scope
+
+- Applies to **all** MCP-mediated automation behavior implemented in:
+  - `.github/workflows/**`
+  - `.github/scripts/**`
+- New MCP-capable workflow/script changes are non-compliant unless this template is logged for each MCP action attempt sequence.
 
 ---
 
