@@ -1,9 +1,17 @@
 ---
-aliases:
-  - UIdaho
 tags:
-  - schools/colleges/state
+  - Category/Frieze
+aliases:
+  - U of I
+  - UIdaho
 ---
-Land grant (Morill Act) state university 
+Land grant university in Moscow.
 
-[[Moscow]], [[Latah County]] 
+---
+
+>*Came a tribe from the North, brave and bold,* 
+>*Bearing banners of Silver and Gold;* 
+>*Tried and true to subdue all their foes* 
+>*Go Vandals, go mighty Vandals!*
+
+--- 
