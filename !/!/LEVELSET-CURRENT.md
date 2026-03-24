@@ -2,7 +2,7 @@
 
 **Date:** 2026-03-24
 **Status:** CURRENT — living synthesis, updated each LEVELSET round
-**Synthesized by:** Claude Code (The Abhorsen) — Operation: Spring Clean update
+**Synthesized by:** Claude Code (The Abhorsen) — Operation: Swarm Nest Reorganization
 **Input authority chain:** CONSTITUTION.md > DECISIONS.md > CLAUDE.md
 **Approved by:** Pending Logan Finney review
 
@@ -13,9 +13,9 @@
 LEVELSET-CURRENT is the rolling synthesis document. Unlike numbered LEVELSET files (v1, v2, v3...) which are permanent snapshots, LEVELSET-CURRENT reflects the **present state** of the ecosystem. It is updated — not appended — each round. The numbered files remain the permanent audit trail.
 
 **Relationship to other files:**
-- **LEVELSET-v2.md** — Permanent snapshot from 2026-03-13. LEVELSET-CURRENT supersedes it as the live state but does not replace it.
-- **DECISIONS.md** — Additive-only decision log. LEVELSET-CURRENT reads from it; new decisions flow to it.
-- **CLAUDE.md** — Living vault authority. LEVELSET-CURRENT may surface corrections that flow back to CLAUDE.md as updates.
+- **LEVELSET-v2.md** — Permanent snapshot from 2026-03-13. In `!/!/` archive.
+- **DECISIONS.md** — Additive-only decision log. Now at `!/DECISIONS.md`.
+- **CLAUDE.md** — Living vault authority. Repo root (must stay there for Claude Code auto-load).
 
 ---
 
@@ -26,59 +26,57 @@ LEVELSET-CURRENT is the rolling synthesis document. Unlike numbered LEVELSET fil
 | Field | Value |
 |---|---|
 | Remote | github.com/loganfinney27/IDAHO-VAULT (public) |
-| Primary branch | `origin/main` at `83cb4ee` |
+| Primary branch | `origin/main` at `f6e9ca8` |
 | Open PRs | 0 |
 | Open Issues | 0 |
-| Last commit | `83cb4ee` — GEMINI.md update (Logan, 2026-03-24) |
+| Last commit | `f6e9ca8` — DOCKET, LEVELSET, PROTOCOL, AGENTS, VAULT-CONVENTIONS updates + MCP plan |
 
 ### Branch Status
 
-| Branch | Purpose | Commits Ahead | Status |
-|---|---|---|---|
-| `claude/fix-pr-43-Ogp5S` | Spring Clean — DOCKET/LEVELSET refresh | active | **Current working branch** |
-| `vault-moves-2026-03-23` | 30 auto-generated proposed file moves | 1 | **Awaiting Logan's review/decision** |
-| `codex/fix-high-priority-bug-in-pr-#34` | REST API credential sanitization (PR #43, superseded) | 3 | **Safe to delete** — superseded by PR #44 |
-| `copilot/consolidate-copilot-efforts` | — | 0 | **Safe to delete** — fully merged |
-| `copilot/emergency-handoff-swarm-coherence` | — | 0 | **Safe to delete** — fully merged |
-| `copilot/fix-token-permissions-and-error-handling` | — | 0 | **Safe to delete** — fully merged |
-| `copilot/setup-copilot-instructions` | — | 0 | **Safe to delete** — fully merged |
-| `vault-moves-2026-03-16` | Prior proposed file moves | 0 | **Safe to delete** — fully merged |
+| Branch | Purpose | Status |
+|---|---|---|
+| `claude/reorganize-swarm-nest` | Swarm nest reorganization — this operation | **Active — awaiting PR** |
+| `vault-moves-2026-03-23` | 30 auto-proposed file moves (US states) | **Awaiting Logan's review/decision** |
+| `claude/fix-constitution-agents-location-18701` | [gone] | **Safe to delete locally** |
+| `claude/fix-constitution-levelset-path-17616` | [gone] | **Safe to delete locally** |
 
-*Note: Branch deletion requires Logan via GitHub web UI — Claude Code does not have remote delete permissions for non-`claude/*` branches.*
+*Note: Remote branch deletion for non-`claude/*` branches requires Logan via GitHub web UI.*
 
 ### Infrastructure Inventory
 
 | Asset | Type | Location | Status |
 |---|---|---|---|
 | `CLAUDE.md` | Administrative | Repo root | On main — operational |
-| `CONSTITUTION.md` | Administrative | Repo root | On main — canonical governance |
-| `DECISIONS.md` | Administrative | Repo root | On main — 15 confirmed decisions |
-| `AGENTS.md` | Administrative | Repo root (or `!ADMIN/`) | On main |
-| `VAULT-CONVENTIONS.md` | Administrative | Repo root | On main |
-| `GEMINI.md` | Administrative | Repo root | On main — updated 2026-03-24 |
+| `GEMINI.md` | Administrative | Repo root | On main |
+| `!/CONSTITUTION.md` | Administrative | `!/` | Moved from root — canonical governance |
+| `!/DECISIONS.md` | Administrative | `!/` | Moved from root — 15 confirmed decisions |
+| `!/AGENTS.md` | Administrative | `!/` | Moved from root |
+| `!/LEVELSET.md` | Administrative | `!/` | Moved from root |
+| `!/PROTOCOL.md` | Administrative | `!/` | Moved from root |
+| `!/VAULT-CONVENTIONS.md` | Administrative | `!/` | Moved from root |
+| `!/SWARM.md` | Administrative | `!/` | Moved from root |
+| `!/MCP-IMPLEMENTATION-PLAN.md` | Administrative | `!/` | Added 2026-03-24 |
+| `!/LEVELSET-STEP-0-EXTERNAL-AGENT.md` | Protocol | `!/` | Canonical external agent prompt |
 | `sort_audit.py` | Python | `.github/scripts/` | On main, operational (weekly) |
 | `idaho_leg_scraper.py` | Python | `.github/scripts/` | On main — running daily 6 AM MT |
 | `post_digest.py` | Python | `.github/scripts/` | On main |
-| `propose_moves.py` | Python | `.github/scripts/` | On main |
-| `wayback_audit.py` | Python | `.github/scripts/` | On main |
-| `linear_brief_generator.py` | Python | `.github/scripts/` | On main — Stage 1 mesh pipeline |
+| `vault-ingest.yml` | YAML | `.github/workflows/` | On main — ingest pipeline initialized |
 | `auto-pr.yml` | YAML | `.github/workflows/` | On main — auto-creates PRs from `claude/*` |
 | `branch-cleanup.yml` | YAML | `.github/workflows/` | On main — cleans merged `claude/*` branches |
-| `idaho-leg-scraper.yml` | YAML | `.github/workflows/` | On main — daily cron + manual |
-| `linear-brief.yml` | YAML | `.github/workflows/` | On main — Linear webhook relay pipeline |
-| `.github/actions/setup-vault/` | Composite action | `.github/actions/` | On main — centralized workflow setup |
 | `.obsidian/plugins/obsidian-local-rest-api/data.json` | Config | `.obsidian/plugins/` | Sanitized — credentials purged (PR #44) |
-| `.gitignore` | Config | Repo root | On main — hardened post-PR #44 |
+| `.gitignore` | Config | Repo root | On main — hardened; workspace.json untracked this session |
 
-### Corrections Since LEVELSET-v2 (2026-03-13 → 2026-03-24)
+### Corrections Since Previous LEVELSET-CURRENT (2026-03-24 Spring Clean → 2026-03-24 Swarm Nest)
 
-1. **CLAUDE.md on main** — Now on main (was feature branch as of v2).
-2. **Legislature scraper on main and running** — Daily cron firing; was on feature branch as of v2.
-3. **`!ADMINISTRATION/` → `!ADMIN/`** — Folder structure renamed; zombie references purged in PR #46.
-4. **Ethics.md** — Still does not exist.
-5. **DECISIONS.md at repo root** — Moved from `!ADMINISTRATION/`; now 15 confirmed decisions (was 5 as of v2).
-6. **REST API credentials** — Machine-specific `apiKey` and crypto material purged via PR #44. `.gitignore` updated.
-7. **Total commits** — Well past 19; recent merge sequence: PR #34, #39, #40, #44, #46 + direct commits.
+1. **`!ADMIN/` deleted** — Zombie directory fully drained to `!/!/` and removed.
+2. **Governance files moved to `!/`** — CONSTITUTION.md, DECISIONS.md, AGENTS.md, LEVELSET.md, PROTOCOL.md, VAULT-CONVENTIONS.md, SWARM.md, and ~6 more swarm files moved from root to `!/`.
+3. **Historical records moved to `!/!/`** — ~31 LEVELSET-*, HANDOFF-*, CONTEXT-* files archived from root.
+4. **31 Obsidian conflict duplicates deleted** — All `* 1.md` conflict copies removed.
+5. **CLAUDE.md updated** — References to CONSTITUTION.md, VAULT-CONVENTIONS.md, AGENTS.md updated to `!/` paths.
+6. **`!/README.md` updated** — `!ADMIN/` reference replaced with `!/` ephemeral layer reference.
+7. **`!/DECISIONS.md` (stale, 14 entries)** — Deleted; replaced by root DECISIONS.md (15 entries) moving in.
+8. **`!/DAILYNOTES/`** — Non-swarm daily note moved to root `DAILYNOTES/`; folder removed.
+9. **`.obsidian/workspace.json` untracked** — Added `workspace*.json` pattern to `.gitignore`; files removed from git tracking.
 
 ---
 
@@ -88,40 +86,28 @@ LEVELSET-CURRENT is the rolling synthesis document. Unlike numbered LEVELSET fil
 
 | Conversation | Role | Known Output | Current Status |
 |---|---|---|---|
-| **PERSISTENT: CODE AUTHORITY** | Authoritative code session; LEVELSET synthesis; infrastructure | LEVELSET-v2.md, LEVELSET-CURRENT.md, CLAUDE.md, DECISIONS.md | **Active** — executing Option A synthesis |
+| **PERSISTENT: CODE AUTHORITY** | Authoritative code session; LEVELSET synthesis; infrastructure | LEVELSET-v2.md, LEVELSET-CURRENT.md, CLAUDE.md, DECISIONS.md, swarm nest reorganization | **Active** |
 
 ### Tier Unknown — Reports Not Yet Received
 
 | Conversation | Presumed Role | Known Output | Gap |
 |---|---|---|---|
 | **PERSISTENT: ADMINISTRATION** | Vault governance, policy | Nothing committed to repo | No LEVELSET report received. Role overlap with CODE AUTHORITY needs resolution. |
-| **TASK: LEVELSET reports** | Synthesis routing hub | Distributed LEVELSET v2 prompt; produced Option A/B/C sequencing recommendation | Active but role may be fulfilled after this round |
-| **STORY: JFAC Open Meetings** | Journalism story development | Cache block delivered 2026-03-13. People updates, verified facts, open tasks, lessons learned, architectural decisions, transcript protocols. | **Incorporated** into this synthesis. |
 | **PROJECT: 2026 Budget Tracker** | Budget tracking | Unknown | No report received |
-| **ISSUE: Repository browsing** | Repo navigation | Unknown | No report received |
 
 ### Tier 3 — Context/Research (dormant)
 
-| Conversation | Role | Action Needed |
-|---|---|---|
-| Idaho Public Television overview | IPTV background | None |
-| Idaho Reports episode production | Production workflow | None |
-| Understanding Black's Law diction... | Legal terminology | None |
-| Interpreting an unclear concept | Research | None |
-| In the Blink of an Eye book recom... | Craft reference | None |
-| INQUIRY: Adobe Premiere Pro | Production software | None |
-
-**Consolidation assessment (unchanged from LEVELSET-v2):** Tier 3 conversations are dormant reference. No consolidation needed. If Logan wants durable notes extracted from any of them into vault Markdown files, that can be done on request.
+Dormant reference conversations — no action needed.
 
 ---
 
 ## DECISIONS CURRENT STATE
 
-As of 2026-03-24: **15 confirmed decisions** in DECISIONS.md at repo root. See that file for full text; summary below.
+As of 2026-03-24: **15 confirmed decisions** in `!/DECISIONS.md`. See that file for full text.
 
 | # | Decision | Status |
 |---|---|---|
-| 1 | `!ADMIN/` canonical folder structure | ✅ CONFIRMED |
+| 1 | `!ADMIN/` canonical folder structure | ✅ CONFIRMED — `!ADMIN/` now deleted; `!/` is canonical |
 | 2 | Constitution.md replaces Claude.md as governance authority | ✅ CONFIRMED |
 | 3 | Capabilities language replaces tiers | ✅ CONFIRMED |
 | 4 | Broader digital consciousness framing adopted | ✅ CONFIRMED |
@@ -129,7 +115,7 @@ As of 2026-03-24: **15 confirmed decisions** in DECISIONS.md at repo root. See t
 | 6 | PERMANENT: AUTHORITY: CODE is correct conversation name | ✅ CONFIRMED |
 | 7 | Native protocols over MCP | ✅ CONFIRMED |
 | 8 | Slack is ephemeral; vault is the record | ✅ CONFIRMED |
-| 9 | AGENTS.md lives in `!ADMIN/`, not `.github/` | ✅ CONFIRMED |
+| 9 | AGENTS.md lives in `!/`, not `.github/` | ✅ CONFIRMED — implemented this session |
 | 10 | `copilot-instructions.md` guardrails in place | ✅ CONFIRMED |
 | 11 | Logan's Project = unachievable end goal on the horizon | ✅ CONFIRMED |
 | 12 | OpenClaw is a peer system | ✅ CONFIRMED |
@@ -137,138 +123,23 @@ As of 2026-03-24: **15 confirmed decisions** in DECISIONS.md at repo root. See t
 | 14 | STORY: JFAC is read-only | ✅ CONFIRMED |
 | 15 | Security hardening: input sanitization + content validation | ✅ CONFIRMED |
 
-**Pending Logan's review (DECISIONS.md):** AGENTS-v0.2-DRAFT.md approval, ORIENTATE-v0.1-BETA.md approval, LEVELSET-LITE-v0.1.md approval, AUTHORITY: ADMIN: CLAUDE consolidation, FāVS resume decision, Gemini ADMIN scope.
+**Pending Logan's review:** AGENTS-v0.2-DRAFT.md approval, ORIENTATE-v0.1-BETA.md approval, LEVELSET-LITE-v0.1.md approval, AUTHORITY: ADMIN: CLAUDE consolidation, FāVS resume decision, Gemini ADMIN scope.
 
 ---
 
 ## JFAC OPEN MEETINGS — SESSION CONTRIBUTION (2026-03-12)
 
-Source: STORY: JFAC Open Meetings session cache block, routed by Logan 2026-03-13.
+*(Unchanged from previous LEVELSET-CURRENT — see that document in `!/!/` archive for full detail.)*
 
-### Project Status
-
-| Field | Value |
-|---|---|
-| Story | JFAC working groups / open meetings |
-| CCA letter deadline | ~2026-03-18 |
-| Sunshine Week | 2026-03-15 through 2026-03-21 |
-| Draft exists | 3-10_JFAC_working_groups_-1.docx |
-| Editorial constraint | IPTV state agency status; [[Clark Corbin]] (Idaho Capital Sun) carries primary byline burden |
-
-### People Updates
-
-**[[Kyle Harris]]** — CORRECTED
-- Was: conflated with [[Mark Harris]]
-- Now: Junior House member, Lewiston (House)
-- Action needed: Vault note needs first name correction, separate entry from [[Mark Harris]]
-
-**[[Mark Harris]]** — Senior Senate member, Soda Springs area (Senate)
-- Interview still needed
-- Expressed frustration at Monday JFAC hearing re working groups — pull Idaho In Session archive
-
-**[[Cornel Rasor]]** — NAY on S1331 confirmed from vote board image
-- Pattern: NAY on Rule 27 suspension + NAY on S1331
-- Interview priority: Friday, Mason's Manual angle
-
-**[[Britt Raybould]]** — NAY on S1331 confirmed from vote board image
-- Interview priority: Friday hallway catch only
-
-**Rep. Bruce** — NEW
-- First year on JFAC
-- Working group assignments top-down from leadership, no member input confirmed
-- On record favoring transparency: "I've always been for more transparency" [AUDIO VERIFICATION REQUIRED]
-
-**[[Dustin Manwaring]]** — AYE on S1331 (read from vote board, one Manwaring in House, high confidence)
-- On record: "I'm a sunshine person" [AUDIO VERIFICATION REQUIRED]
-- On record: "Should it be an open and public process — I would air that, I would be fine with that personally" [AUDIO VERIFICATION REQUIRED]
-
-**[[Wintrow]]** — CORRECTION
-- Previous entry assigned role "Senate President Pro Tem / Anthon's number two" — **THIS WAS FABRICATED, no source basis**
-- Actual role: unconfirmed, needs verification
-- [[Kelly Anthon]] is Senate President Pro Tem
-
-### Verified Facts (sourced, not yet audio-verified for quotes)
-
-1. Working group assignment sheet exists, distributed to all JFAC members (Cook, Woodward-and-Cook transcript)
-2. Active quorum management confirmed on record (Woodward-and-Cook transcript)
-3. Working group assignments come from leadership, not member preference (Bruce transcript)
-4. No parliamentary appeal of working group decisions on record (Cook: "not that I know of")
-5. JFAC rules never voted on by full committee per Cook (Woodward-and-Cook transcript)
-
-### Pending Verification Queue
-
-All items below are **HARD GATES** before publication:
-
-| Quote / Claim | Speaker | Source | Status |
-|---|---|---|---|
-| "Without a TV or a microphone" | Speaker 3 (identity unknown) | Transcript | SPEAKER UNVERIFIED |
-| "The rules were never voted on by the committee" | Cook | Woodward-and-Cook transcript | AUDIO VERIFICATION REQUIRED |
-| "I'm a sunshine person" | Manwaring | Interview | AUDIO VERIFICATION REQUIRED |
-| "Should it be an open and public process — I would air that" | Manwaring | Interview | AUDIO VERIFICATION REQUIRED |
-| "I've always been for more transparency" | Bruce | Interview | AUDIO VERIFICATION REQUIRED |
-| All Woodward-and-Cook speaker IDs | Speaker 2 vs Speaker 3 | Transcript | IDENTITY UNVERIFIED |
-
-### Open Tasks (from JFAC session)
-
-| Task | Owner | Status | Gate |
-|---|---|---|---|
-| Correct [[Kyle Harris]] vault note (first name, chamber) | Any session | PENDING | — |
-| New vault note: [[Cornel Rasor]] | Any session | PENDING | — |
-| New topic note: House Rule 27 | Any session | PENDING | — |
-| Working group assignment sheet records request | Logan | PENDING | — |
-| Pull Idaho In Session: Kyle Harris Monday JFAC hearing | Logan | PENDING | — |
-| Audio verify all 2026-03-10 transcript quotes | Logan | HARD GATE | Pre-pub |
-| Grow/Tanner interview — public access question | Logan | PENDING | Mar 18 |
-| [[Mark Harris]] interview | Logan | PENDING | — |
-| Patch increment 2 (Monks, Rasor, Rule 27, 2024-01-09 IR) | Any session | PENDING | — |
-| Vault patch collision check (vault-deploy.zip) | Repo session | BLOCKED | Pre-commit |
-| BIN processing pipeline architecture | Audio session | ASSIGNED | — |
-
-### Transcript Processing Protocols
-
-**Google Recorder .txt files:**
-- Speaker tags non-persistent, identity-unverified by definition
-- All quotes: SPEAKER UNVERIFIED until human audio check
-- Re-processing must start from vault note, not raw file
-- Verification gate covers both speaker ID and quote accuracy
-
-**Adobe Premiere Pro transcripts:**
-- Read-only. Syntax must be preserved for editorial re-import
-- No vault notes derived until format protocol defined by Logan
-- Separate processing protocol required before Claude handling
-
-**Blocking dependency:** [[Audrey Dutton]] — Idaho reporter. Source relationship to cultivate. Peer with likely applicable experience in AI-assisted transcript processing and bulk research workflows. Reporter-to-reporter conversation needed before pipeline architecture is finalized. Not a tool dependency — a human expertise node.
-
-### Lessons Learned (2026-03-12 session)
-
-Four failure modes identified — permanent record, never delete:
-
-1. **Context-triggered confabulation** — Claude fabricated Wintrow's role based on contextual inference, not source material
-2. **Verification flag stripping** — Unverified speaker IDs lost their flags during processing
-3. **Misattribution within auto-generated transcript** — Google Recorder speaker tags are not reliable identity markers
-4. **Inference presented as sourced record** — Claude treated its own inferences as if they were sourced facts
-
-### Idaho Reports Byline Archive
-
-- 268 posts, 23 pages at blog.idahoreports.idahoptv.org
-- Earliest: November 2020
-- Vault captures approximately 1% of published output
-- Two high-priority missing pieces:
-  - 2024-03-29: "Open meetings law questioned with tense budget season" (direct prior reporting on JFAC/open meetings)
-  - 2024-03-11: "Senate pushes to re-adopt JFAC rules"
-- Both need vault notes in SOURCES/NEWS MEDIA
+Key status: Multiple quotes flagged **AUDIO VERIFICATION REQUIRED** — HARD GATES before publication. Only Logan can clear these.
 
 ---
 
 ## SOURCING & SENSITIVITY
 
-Updated with JFAC session incorporation:
-
 - All committed content is on the record
 - No background-sourced material identified in repo
-- No off-the-record material held by this session
-- JFAC session cache block received and incorporated — all material in the block was provided by Logan for on-the-record inclusion
-- Multiple quotes flagged AUDIO VERIFICATION REQUIRED — these are on the record but **not publication-ready** until verification clears
+- JFAC session cache block received and incorporated — multiple quotes flagged AUDIO VERIFICATION REQUIRED, not publication-ready until cleared
 
 ---
 
@@ -278,52 +149,42 @@ Updated with JFAC session incorporation:
 
 | Item | Priority | Notes |
 |---|---|---|
-| Audio verify JFAC quotes (5 quotes + speaker IDs) | **High** | HARD GATE for publication. See Pending Verification Queue above. |
-| `vault-moves-2026-03-23` branch decision | **Medium** | 30 auto-proposed file moves (US states to `PLACES/OTHER/STATES/`). Review, apply, or discard. |
-| Delete stale remote branches (6) | Medium | `codex/fix-high-priority-bug-in-pr-#34`, `copilot/*` (4), `vault-moves-2026-03-16` — safe to delete via GitHub web UI |
-| Pending decisions review (DECISIONS.md) | Medium | AGENTS-v0.2, ORIENTATE-v0.1, LEVELSET-LITE, etc. |
-| Ethics.md creation | Low | No draft exists anywhere in the ecosystem |
-| LEVELSET cadence decision | Low | Weekly? Milestone-triggered? Needs a standing rule. |
+| Audio verify JFAC quotes (5 quotes + speaker IDs) | **High** | HARD GATE for publication |
+| `vault-moves-2026-03-23` branch decision | **Medium** | 30 auto-proposed file moves (US states). Review, apply, or discard. |
+| Merge `claude/reorganize-swarm-nest` PR | **Medium** | This operation — requires Logan review (governance files) |
+| Delete stale remote branches (6) | Medium | `codex/fix-high-priority-bug-in-pr-#34`, `copilot/*` (4), `vault-moves-2026-03-16` |
+| Pending decisions review (`!/DECISIONS.md`) | Medium | AGENTS-v0.2, ORIENTATE-v0.1, LEVELSET-LITE, etc. |
 | Gemini capability tier scope | Low | Undefined — Gemini blocked from vault commits until scoped |
+| Ethics.md creation | Low | No draft exists anywhere |
+| LEVELSET cadence decision | Low | Weekly? Milestone-triggered? Needs a standing rule. |
 
 ### Known Technical Issues
 
 | Issue | Priority | Notes |
 |---|---|---|
-| Sort audit false positives | Low | Out-of-state counties flagged as Idaho counties in `sort_audit.py` |
+| Sort audit false positives | Low | Out-of-state counties flagged as Idaho counties |
 | `X LABELER/` unsorted files | Ongoing | Manual triage by Logan |
-| ~3,400 markdown files at repo root | Low | Massive root-level clutter; `vault-propose-moves` workflow addresses incrementally |
+| ~3,400 markdown files at repo root | Low | `vault-propose-moves` workflow addresses incrementally |
 
 ---
 
 ## WHAT THIS SYNTHESIS IS MISSING
 
-Transparency about gaps — this section exists so Logan and other conversations know exactly what's thin:
-
-1. ~~**JFAC Open Meetings session context**~~ — **RESOLVED.** Cache block received and incorporated 2026-03-13.
-
-2. **Conversation census is stale** — The CONVERSATION CENSUS below reflects March 2026 conversation state. Active conversations and their outputs have not been re-surveyed for this update.
-
-3. **PROJECT: 2026 Budget Tracker state** — Unknown scope, architecture, data sources, progress.
-
-4. **Audio verification for all JFAC quotes** — Five quotes and full Woodward-and-Cook speaker ID verification are HARD GATES before publication. Only Logan can clear these.
-
-5. **Gemini vault activity** — Gemini's capability tier is undefined; no vault commits exist. GEMINI.md was updated 2026-03-24 by Logan directly but scope remains unscoped.
+1. **Conversation census is stale** — Active conversations and their outputs not re-surveyed.
+2. **PROJECT: 2026 Budget Tracker state** — Unknown scope, architecture, data sources, progress.
+3. **Audio verification for JFAC quotes** — Five quotes and Woodward-and-Cook speaker ID verification are HARD GATES.
+4. **Gemini vault activity** — Capability tier undefined; no vault commits exist.
 
 ---
 
 ## NEXT ACTIONS
 
-1. ~~Commit LEVELSET-CURRENT.md to separate branch~~ — Done (historically)
-2. ~~Wait for JFAC session cache block from Logan~~ — Received and incorporated
-3. ~~Merge feature branches (scraper, CLAUDE.md, DECISIONS.md) to main~~ — Done
-4. ~~Sanitize REST API credentials~~ — Done (PR #44)
-5. ~~Centralize workflow setup~~ — Done (PR #46)
-6. Logan: delete 6 stale branches via GitHub web UI
-7. Logan: decide on `vault-moves-2026-03-23` (30 proposed file moves)
-8. Logan: audio verify JFAC quotes (HARD GATE before publication)
-9. Logan: review pending decisions in DECISIONS.md
+1. Logan: merge `claude/reorganize-swarm-nest` PR (requires review — governance files)
+2. Logan: delete 6 stale remote branches via GitHub web UI
+3. Logan: decide on `vault-moves-2026-03-23` (30 proposed file moves)
+4. Logan: audio verify JFAC quotes (HARD GATE before publication)
+5. Logan: review pending decisions in `!/DECISIONS.md`
 
 ---
 
-*LEVELSET-CURRENT.md — Originally synthesized 2026-03-13 by PERSISTENT: CODE AUTHORITY. Updated 2026-03-24 by Claude Code (The Abhorsen), Operation: Spring Clean. This is a living document, updated each LEVELSET round. For the permanent audit trail, see numbered LEVELSET files in this directory.*
+*LEVELSET-CURRENT.md — Originally synthesized 2026-03-13. Updated 2026-03-24 (Spring Clean) and 2026-03-24 (Swarm Nest Reorganization) by Claude Code (The Abhorsen). Living document, updated each LEVELSET round. Permanent audit trail in numbered LEVELSET files at `!/!/`.*
