@@ -5,36 +5,36 @@
       "path": "2026-03-22.md"
     },
     {
-      "basename": "2026-03-21",
-      "path": "!/DAILYNOTES/2026-03-21.md"
+      "basename": "FRAMEWORKS",
+      "path": "FRAMEWORKS.md"
     },
     {
-      "basename": "!README",
-      "path": "!README.md"
+      "basename": "wayback-preserve-2026-03-21",
+      "path": "wayback-preserve-2026-03-21.md"
     },
     {
-      "basename": "LOGAN",
-      "path": "LOGAN.md"
+      "basename": "SESSION-LOG",
+      "path": "SESSION-LOG.md"
+    },
+    {
+      "basename": "DECISIONS",
+      "path": "DECISIONS.md"
+    },
+    {
+      "basename": "CLAUDE",
+      "path": "CLAUDE.md"
+    },
+    {
+      "basename": "GEMINI",
+      "path": "GEMINI.md"
     },
     {
       "basename": "CONSTITUTION",
       "path": "CONSTITUTION.md"
     },
     {
-      "basename": "DECISIONS",
-      "path": "!/DECISIONS.md"
-    },
-    {
-      "basename": "LEVELSET-STEP-0-EXTERNAL-AGENT",
-      "path": "!/!/LEVELSET-STEP-0-EXTERNAL-AGENT.md"
-    },
-    {
       "basename": "TOUCHSTONE",
       "path": "TOUCHSTONE.md"
-    },
-    {
-      "basename": "FRAMEWORKS",
-      "path": "FRAMEWORKS.md"
     },
     {
       "basename": "THE CORE",
@@ -59,6 +59,38 @@
     {
       "basename": "BODY",
       "path": "BODY.md"
+    },
+    {
+      "basename": "GEMINI",
+      "path": "GEMINI.md"
+    },
+    {
+      "basename": "CONSTITUTION",
+      "path": "CONSTITUTION.md"
+    },
+    {
+      "basename": "CODEX",
+      "path": "CODEX.md"
+    },
+    {
+      "basename": "!README",
+      "path": "!README.md"
+    },
+    {
+      "basename": "CONSULTATION-PUBLIC-CONVERSATION-2026-03-16 1",
+      "path": "CONSULTATION-PUBLIC-CONVERSATION-2026-03-16 1.md"
+    },
+    {
+      "basename": "LADY",
+      "path": "LADY.md"
+    },
+    {
+      "basename": "!README",
+      "path": "!/!README.md"
+    },
+    {
+      "basename": "ANSWERS",
+      "path": "ANSWERS.md"
     },
     {
       "basename": "PROTOCOLS",
@@ -91,6 +123,10 @@
     {
       "basename": "GRIMOIRE",
       "path": "GRIMOIRE.md"
+    },
+    {
+      "basename": "!README",
+      "path": "!README.md"
     },
     {
       "basename": "QUESTION",
@@ -195,10 +231,6 @@
     {
       "basename": "Logan's Project & Protocols",
       "path": "Logan's Project & Protocols.md"
-    },
-    {
-      "basename": "PRIVATE-PUBLIC",
-      "path": "PRIVATE-PUBLIC.md"
     }
   ],
   "omittedPaths": [

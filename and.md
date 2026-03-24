@@ -7,6 +7,6 @@ aliases:
 ---
 [[syntax]]
 
-[[codex]] 
+[[CODEX]] 
 
 [[The world is quiet here.]] -LAF
