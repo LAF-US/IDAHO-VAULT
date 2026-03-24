@@ -1,6 +1,6 @@
 # DECISIONS.md — Confirmed Logan-Approved Decisions
 
-_Last updated: 2026-03-16_
+*Last updated: 2026-03-24*
 
 ---
 
@@ -23,6 +23,7 @@ _Last updated: 2026-03-16_
 | 13         | 2026-03-16 | Slack-to-file rule                            | ✅ CONFIRMED | Ephemeral Slack decisions must be captured in Constitution.md amendments  |
 | 14         | 2026-03-16 | STORY: JFAC is read-only                      | ✅ CONFIRMED | Not direct write; vault-only access                                       |
 | 15         | 2026-03-15 | Security hardening: sanitization + validation | ✅ CONFIRMED | Input sanitization in scraper, content validation gate in workflows       |
+| 16         | 2026-03-24 | MCP governance model                          | ✅ CONFIRMED | MCP is allowed as transport only; native vault terms remain canonical     |
 
 ---
 
@@ -132,6 +133,18 @@ _Last updated: 2026-03-16_
 **Topic:** JFAC conversation access level
 **Status:** ✅ CONFIRMED
 **Rationale:** Time-sensitive reporting story operates as vault-only, no direct write capability.
+
+### Decision 16: MCP Allowed as Transport, Native Terms Remain Canonical
+**Date:** 2026-03-24
+**Topic:** MCP policy for vault integration
+**Status:** ✅ CONFIRMED
+**Decision:** Option 2 is adopted. MCP is **not** the primary integration model; it may be used only as a transport layer. Native vault governance terms and workflows (Constitution/PROTOCOL/AGENTS/LEVELSET semantics) remain canonical for meaning, authority, and decision capture.
+**Resolved questions:**
+- **Q1 (allow/disallow):** MCP is **allowed**.
+- **Q2 (role):** MCP role is **transport only** (tooling and message relay).
+- **Q3 (source of truth):** Native vault files and terms remain the canonical governance layer.
+- **Q4 (scope boundary):** MCP must not redefine governance vocabulary or bypass Logan-mediated decision flow.
+**Rationale:** Preserves Decision 7 (native protocols over MCP) while unblocking practical integrations that need standardized transport.
 
 ---
 
