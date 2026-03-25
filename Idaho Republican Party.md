@@ -7,7 +7,7 @@ aliases:
   - state GOP party
   - Idaho Republican
 tags:
-  - Party/Republican
+  - party/republican
   - geography/land/state
 ---
 [[State of Idaho]] affiliate of the [[U.S. Republican Party]]

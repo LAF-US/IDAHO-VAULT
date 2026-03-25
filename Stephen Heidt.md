@@ -1,5 +1,5 @@
 ---
 tags:
-  - Party/Democratic
+  - party/democratic
 ---
 former [[Governor]] candidate 

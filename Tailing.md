@@ -1,6 +1,6 @@
 ---
 tags:
-  - Category
+  - category
 ---
 *Miscellaneous rubble and waste*
 

@@ -2,6 +2,6 @@
 aliases:
   - American Falls
 tags:
-  - schools/K12/district
+  - schools/k12/district
 ---
 [[American Falls]], [[Power County]] 

@@ -1,6 +1,6 @@
 ---
 tags:
-  - Category/Facet/Magazines
+  - category/facet/magazines
 date: 2024-06-28
 ---
 

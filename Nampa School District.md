@@ -2,9 +2,6 @@
 aliases:
   - Nampa
 tags:
-  - schools/K12/district
-  - schools/K12/district
-  - schools/K12/district
+  - schools/k12/district
 ---
 [[Nampa]], [[Canyon County]] 
-#schools/K12/district

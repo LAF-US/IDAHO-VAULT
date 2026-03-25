@@ -1,7 +1,7 @@
 ---
 tags:
   - 2023/12/07
-  - Party/Republican
+  - party/republican
 ---
 
 [[Ada County Republican Central Committee]] RESOLUTION

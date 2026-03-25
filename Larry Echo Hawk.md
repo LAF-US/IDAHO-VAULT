@@ -1,5 +1,5 @@
 ---
 tags:
-  - Party/Democratic
+  - party/democratic
   - people/elected/statewide/attorneygeneral
 ---

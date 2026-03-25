@@ -4,7 +4,7 @@ url: "https://news.ycombinator.com/item?id=30345496"
 author:
   - "[[ttiurani]]"
 tags:
-  - "media/articles"
+  - media/articles
 ---
 **ttiurani** · 2022-02-15
 

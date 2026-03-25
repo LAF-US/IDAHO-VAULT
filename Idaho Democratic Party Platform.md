@@ -1,6 +1,6 @@
 ---
 tags:
-  - Party/Democratic
+  - party/democratic
 ---
 
 [[party platform]] of the [[Idaho Democratic Party]] 

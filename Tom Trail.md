@@ -1,6 +1,6 @@
 ---
 tags:
-  - Party/Republican
+  - party/republican
   - people/deceased
   - people/candidate/legislative
   - people/elected/legislative

@@ -2,7 +2,7 @@
 tags:
   - people/elected/country/president
   - people/candidate/country/president
-  - Party/Democratic
+  - party/democratic
 aliases:
   - Obama
 ---

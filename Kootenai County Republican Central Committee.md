@@ -1,6 +1,6 @@
 ---
 tags:
-  - Party/Republican
+  - party/republican
   - position/elected/precinct
 aliases:
   - KCRCC

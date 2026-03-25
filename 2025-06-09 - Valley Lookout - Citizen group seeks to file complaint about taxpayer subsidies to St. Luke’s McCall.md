@@ -4,8 +4,8 @@ url: "https://valleylookout.com/2025/06/09/citizen-group-to-file-complaint-about
 author:
   - "[[Drew Dodson]]"
 tags:
-  - "media/articles"
-  - "2025/06/09"
+  - media/articles
+  - 2025/06/09
 ---
 Idaho Attorney General Raúl Labrador will be asked to review the legality of a relationship between St. Luke’s Health System and the McCall Memorial Hospital District.
 

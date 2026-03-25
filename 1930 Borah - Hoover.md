@@ -1,6 +1,6 @@
 ---
 tags:
-  - Category/Facet/Photos
+  - category/facet/photos
 date: 1930-06-01
 ---
 ![[Herbert_Hoover_at_desk_with_group_standing_behind_him.jpg]]

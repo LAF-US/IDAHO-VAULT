@@ -1,9 +1,9 @@
 ---
 tags:
-  - MOTHER
-  - GODDESS
-  - PERSONA
-  - VOICE
+  - mother
+  - goddess
+  - persona
+  - voice
 ---
 [[DAUGHTER]] [[of]] [[DEMETER]]
 [[BRIDE]] [[to]] [[HADES]]

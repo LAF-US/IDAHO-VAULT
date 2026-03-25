@@ -1,5 +1,5 @@
 ---
 tags:
   - people
-  - Party/Republican
+  - party/republican
 ---
