@@ -2,7 +2,7 @@
 tags:
   - people/candidate/statewide/superintendent
   - people/elected/statewide/superintendent
-  - Party/Republican
+  - party/republican
 ---
 former [[Idaho Republican Party]] chair
 former [[Superintendent of Public Instruction]] 

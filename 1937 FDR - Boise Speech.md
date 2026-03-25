@@ -1,6 +1,6 @@
 ---
 tags:
-  - Category/Facet/Speeches
+  - category/facet/speeches
 date: 1937-09-27
 ---
 # [[Franklin Roosevelt|Franklin D. Roosevelt]], 32nd President of the United States,  Remarks at Boise, Idaho

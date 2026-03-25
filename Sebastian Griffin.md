@@ -1,6 +1,6 @@
 ---
 tags:
-  - Party/Republican
+  - party/republican
   - people/candidate/legislative
   - people/candidate/city/council
   - position/elected/city/council

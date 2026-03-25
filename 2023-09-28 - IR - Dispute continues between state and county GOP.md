@@ -5,7 +5,7 @@ URL: https://blog.idahoreports.idahoptv.org/2023/09/28/dispute-continues-between
 tags:
   - media/articles
   - 2023/09/28
-  - Party/Republican
+  - party/republican
 ---
 A dispute between the state [[Idaho Republican Party|Republican]] party and a local party continued in court on Thursday over whether the [[Bingham County Republican Central Committee]] violated its rules and bylaws during its election of new officers over the summer.
 

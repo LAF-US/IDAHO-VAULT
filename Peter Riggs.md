@@ -2,7 +2,7 @@
 tags:
   - people/elected/legislative
   - people/elected
-  - Party/Republican
+  - party/republican
   - people
 ---
 Former [[Senate member]] from [[Kootenai County]]

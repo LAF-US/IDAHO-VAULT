@@ -1,6 +1,6 @@
 ---
 tags:
-  - Party/Republican
+  - party/republican
 aliases:
   - IRWF
   - Republican Women

@@ -1,7 +1,7 @@
 ---
 tags:
   - 2022/02/16
-  - Party/Democratic
+  - party/democratic
   - 2022/session
   - bills
 author:

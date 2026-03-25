@@ -2,6 +2,6 @@
 aliases:
   - Fremont
 tags:
-  - schools/K12/district
+  - schools/k12/district
 ---
 [[St. Anthony]], [[Fremont County]] 

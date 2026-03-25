@@ -1,8 +1,8 @@
 ---
 tags:
-  - Party/Republican
+  - party/republican
   - people/candidate/country/president
-  - Party/Libertarian
+  - party/libertarian
   - people/candidate/country/congress
   - people/elected/country/congress
 ---

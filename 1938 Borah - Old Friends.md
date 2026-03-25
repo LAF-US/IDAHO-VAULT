@@ -1,6 +1,6 @@
 ---
 tags:
-  - Category/Facet/Photos
+  - category/facet/photos
 date: 1938-12-01
 ---
 ![[old-friends-meet-after-50-years-washington-dc-may-26-sen-william-e-borah-left.jpg]]

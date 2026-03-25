@@ -2,7 +2,7 @@
 tags:
   - people/candidate/legislative
   - people/elected/legislative
-  - Party/Democratic
+  - party/democratic
 ---
 Residence: [[Boise]]
 - former [[Senate member]]

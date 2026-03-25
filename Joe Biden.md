@@ -2,7 +2,7 @@
 aliases:
   - Biden
 tags:
-  - Party/Democratic
+  - party/democratic
   - people/elected/country/president
   - people/candidate/country/president
 ---
