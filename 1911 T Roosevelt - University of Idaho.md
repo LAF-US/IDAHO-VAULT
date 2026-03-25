@@ -1,6 +1,6 @@
 ---
 tags:
-  - Category/Facet/Photos
+  - category/facet/photos
 date: 1911-04-09
 ---
 President [[Theodore Roosevelt]] speaking at the [[University of Idaho]] 

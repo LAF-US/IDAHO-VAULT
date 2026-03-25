@@ -2,6 +2,6 @@
 tags:
   - people/candidate/county/sheriff
   - people/elected/county/sheriff
-  - Party/Republican
+  - party/republican
 ---
 [[Bonner County|Bonner]] [[County Sheriff]] 

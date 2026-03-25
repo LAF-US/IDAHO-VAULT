@@ -1,6 +1,6 @@
 ---
 tags:
-  - Category/Facet/Articles
+  - category/facet/articles
 ---
 # Frank Church: A Featured Biography
 

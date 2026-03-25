@@ -4,7 +4,7 @@ url: "https://harvester.lib.uidaho.edu/posts/2026/02/03/clonedmules.html"
 author:
   - "[[Rebecca Hastings]]"
 tags:
-  - "media/articles"
+  - media/articles
 ---
 On May 4, 2003, University of Idaho researchers celebrated the birth of an extraordinary mule foal. Idaho Gem, as the foal would be named, was both the world’s first cloned mule and the first successful clone of an equine. The announcement of Idaho Gem’s birth, published in *Science*, marked the culmination of years of painstaking work from a team under the leadership of Gordon Woods and Dirk Vanderwall, both of the University of Idaho’s Northwest Equine Reproduction Laboratory, and Kenneth White of Utah State University.
 

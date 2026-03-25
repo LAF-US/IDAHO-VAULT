@@ -1,6 +1,6 @@
 ---
 tags:
-  - Category/Facet/Photos
+  - category/facet/photos
 date: 1937-09-27
 ---
 *President [[Franklin Roosevelt]], First Lady [[Eleanor Roosevelt]] and Idaho Governor [[Barzilla Clark]]*

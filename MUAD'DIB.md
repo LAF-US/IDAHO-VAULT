@@ -1,5 +1,5 @@
 ---
 tags:
-  - PERSONA
-  - VOICE
+  - persona
+  - voice
 ---

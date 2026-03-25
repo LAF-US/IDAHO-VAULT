@@ -1,7 +1,7 @@
 ---
 tags:
   - people/elected/legislative
-  - Party/Republican
+  - party/republican
 ---
 [[Legislative District 9]] [[House member]] 
 

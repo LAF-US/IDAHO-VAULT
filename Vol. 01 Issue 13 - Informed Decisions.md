@@ -1,6 +1,6 @@
 ---
 tags:
-  - Category/Inlay
+  - category/inlay
 ---
 ![[INLAY-01-13.jpg]]
 # Informed Decisions

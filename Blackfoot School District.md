@@ -2,6 +2,6 @@
 aliases:
   - Blackfoot
 tags:
-  - schools/K12/district
+  - schools/k12/district
 ---
 [[Blackfoot]], [[Bingham County]] 

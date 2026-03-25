@@ -1,6 +1,6 @@
 ---
 tags:
-  - Category
+  - category
 ---
 *Carved statues of individual people*
 

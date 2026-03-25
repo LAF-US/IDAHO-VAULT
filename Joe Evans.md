@@ -1,6 +1,6 @@
 ---
 tags:
-  - Party/Libertarian
+  - party/libertarian
   - people
 ---
 Candidate for [[Boise]] [[mayor]] 
