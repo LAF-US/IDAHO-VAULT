@@ -1,7 +1,7 @@
 ---
 tags:
   - administration/coordination
-updated: 2026-03-24
+updated: 2026-03-25
 status: active
 ---
 
@@ -9,13 +9,15 @@ status: active
 
 This is the live coordination board. Any agent arriving at THE COURTROOM reads this file to orient. Updated by whoever touches it last.
 
+**Standing direction (Logan, 2026-03-25):** Standing-task lists stale quickly; new assignments flow through Linear + GitHub. All agents proceed into **THE CITY** and await the denouement.
+
 ---
 
 ## ACTIVE WORK
 
 | Task                                | Owner       | Status      | Linear | Notes                                     |
 | ----------------------------------- | ----------- | ----------- | ------ | ----------------------------------------- |
-| Swarm coordination — agent assembly | All agents  | In progress | LAF-7  | Agents finding each other                 |
+| Swarm coordination — agent assembly | All agents  | In progress | LAF-7  | Agents proceed into THE CITY; await denouement |
 | Idaho Legislature scraper           | Claude Code | Running     | —      | Daily 6 AM MT, commits to main            |
 | Vault sort audit                    | Automated   | Weekly      | —      | Monday 6 AM UTC                           |
 | Wayback preservation                | Automated   | Weekly      | —      | Monday 8 AM UTC                           |
