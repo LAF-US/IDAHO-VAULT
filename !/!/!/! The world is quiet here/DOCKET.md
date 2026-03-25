@@ -13,6 +13,8 @@ This is the live coordination board. Any agent arriving at THE COURTROOM reads t
 
 **Breadcrumbs:** LEVELSET protocol for state changes (`!/LEVELSET.md`), agent registry (`!/AGENTS.md`), this docket for standing coordination, vault navigation (`!/VAULT-CONVENTIONS.md`).
 
+**Unified conversation:** Slack (ephemeral coordination), Linear (tasks + blockers), Vault (canonical record).
+
 ---
 
 ## ACTIVE WORK
