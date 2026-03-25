@@ -3,6 +3,6 @@ aliases:
   - Meridian School District
   - West Ada
 tags:
-  - schools/K12/district
+  - schools/k12/district
 ---
 [[Meridian]], [[Ada County]] 

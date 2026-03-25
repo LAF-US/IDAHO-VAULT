@@ -1,6 +1,6 @@
 ---
 tags:
-  - Category/Facet/Photos
+  - category/facet/photos
 date: 1907-01-01
 ---
 ![[borah-william-e-senator-from-idaho-1907--2-1024.jpg]]

@@ -1,6 +1,6 @@
 ---
 tags:
-  - Party/Democratic
+  - party/democratic
   - people/elected/legislative
   - people/candidate/legislative
 residence: "[[Boise]]"

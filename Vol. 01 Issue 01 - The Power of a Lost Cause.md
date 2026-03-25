@@ -1,6 +1,6 @@
 ---
 tags:
-  - Category/Inlay
+  - category/inlay
 ---
 ![[INLAY-01-01.jpg]]
 # The Power of a Lost Cause?

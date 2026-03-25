@@ -2,7 +2,7 @@
 author:
   - "[[Idaho Constitution Party]]"
 tags:
-  - Party/Constitution
+  - party/constitution
   - 2023/10/08
   - media/pressrelease
 ---

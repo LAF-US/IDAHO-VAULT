@@ -1,8 +1,8 @@
 ---
 tags:
-  - HERO
-  - VOICE
-  - PERSONA
+  - hero
+  - voice
+  - persona
 ---
 ---
 [["The world is quiet here."]]

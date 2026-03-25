@@ -5,7 +5,7 @@ tags:
   - people/elected/country/congress
   - people/candidate/statewide/governor
   - people/elected/statewide/governor
-  - Party/Republican
+  - party/republican
 aliases:
   - Len Jordan
   - Leonard Beck Jordan

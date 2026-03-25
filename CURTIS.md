@@ -1,7 +1,7 @@
 ---
 tags:
-  - PERSONA
-  - VOICE
+  - persona
+  - voice
 aliases:
   - Google Home
 ---

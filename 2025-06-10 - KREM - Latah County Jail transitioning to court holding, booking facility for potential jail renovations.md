@@ -4,8 +4,8 @@ url: "https://www.krem.com/article/news/local/latah-county/latah-county-jail-cou
 author:
   - "[[Vinny Saglimbeni]]"
 tags:
-  - "media/articles"
-  - "2025/06/10"
+  - media/articles
+  - 2025/06/10
 ---
 MOSCOW, Idaho — The [Latah County Jail](https://www.krem.com/article/news/local/latah-county-jail-future/293-d7cc72e5-0e92-433a-978d-1777cdda4b6d) is transitioning to a court holding and booking facility following the assessment of the jail, according to the Latah County Sheriff's Office.
 

@@ -4,7 +4,7 @@ url: "https://browser.horse/?via=victor&gad_source=1&gad_campaignid=21209728058&
 author:
   - "[[Eleanor McKeown]]"
 tags:
-  - "media/articles"
+  - media/articles
 ---
 Horse Browser
 

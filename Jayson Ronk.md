@@ -1,7 +1,7 @@
 ---
 tags:
   - people
-  - Party/Republican
+  - party/republican
 ---
 Residence: [[Boise]] 
 Hometown: [[Eastern Idaho]] 

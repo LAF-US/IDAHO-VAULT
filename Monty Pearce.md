@@ -2,7 +2,7 @@
 tags:
   - people/candidate/legislative
   - people/elected/legislative
-  - Party/Republican
+  - party/republican
 ---
 Residence: [[New Plymouth]]
 Graduate: [[Brigham Young University-Idaho|Ricks College]], [[Brigham Young University]] 
