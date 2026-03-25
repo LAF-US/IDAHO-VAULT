@@ -4,8 +4,8 @@ url: "https://www.idahoednews.org/top-news/everything-is-on-the-table-idaho-stat
 author:
   - "[[Kevin Richert]]"
 tags:
-  - "media/articles"
-  - "2024/11/12"
+  - media/articles
+  - 2024/11/12
 ---
 [[Idaho State University]] is looking at the feasibility of buying a private [[medical school]] in [[Meridian]].
 

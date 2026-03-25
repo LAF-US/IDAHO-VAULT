@@ -2,8 +2,8 @@
 aliases:
   - "[ ! ]"
 tags:
-  - PROJECT
-  - IDEA
+  - project
+  - idea
 ---
 [[RETREAT]] TO THE [[HIGHLANDS]]
 

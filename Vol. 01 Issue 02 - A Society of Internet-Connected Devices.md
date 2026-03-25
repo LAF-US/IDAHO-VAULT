@@ -1,6 +1,6 @@
 ---
 tags:
-  - Category/Inlay
+  - category/inlay
 ---
 ![[INLAY-01-02.jpg]]
 # A Society of Internet-Connected Devices

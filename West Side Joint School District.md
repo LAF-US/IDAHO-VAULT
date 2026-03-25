@@ -2,6 +2,6 @@
 aliases:
   - West Side
 tags:
-  - schools/K12/district
+  - schools/k12/district
 ---
 [[Dayton]], [[Franklin County]] 

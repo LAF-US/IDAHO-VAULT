@@ -1,6 +1,6 @@
 ---
 tags:
-  - Category/Facet/Articles
+  - category/facet/articles
 ---
 # Senator William Borah
 

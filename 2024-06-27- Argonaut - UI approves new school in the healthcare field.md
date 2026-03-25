@@ -4,7 +4,7 @@ url: "https://www.uiargonaut.com/2024/06/24/ui-approves-new-school-in-the-health
 author:
   - "[[Andrea Roberts]]"
 tags:
-  - "media/articles"
+  - media/articles
 ---
 Students can expect the [[University of Idaho]]’s first graduate health program to begin in 2025. The [[School of Health and Medical Professions]], [[School of Health and Medical Professions|SHAMP]], will address different issues such as [[health care]], awareness, and bringing further education in the health field for students, not just at UI, but statewide.  
 

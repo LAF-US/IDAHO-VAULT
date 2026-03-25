@@ -2,7 +2,7 @@
 tags:
   - people/elected
   - people/elected/legislative
-  - Party/Republican
+  - party/republican
   - people
 residence: "[[Idaho Falls]]"
 ---

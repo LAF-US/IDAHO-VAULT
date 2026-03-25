@@ -1,7 +1,7 @@
 ---
 tags:
   - 2023/10/20
-  - Party/Republican
+  - party/republican
   - media/pressrelease
 author:
   - "[[Caribou County Republican Central Committee]]"

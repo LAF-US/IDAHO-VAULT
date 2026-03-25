@@ -1,7 +1,7 @@
 ---
 tags:
   - people/candidate/legislative
-  - Party/Republican
+  - party/republican
 ---
 Residence: [[Madison County]]
 - ran for [[Idaho House of Representatives|House]] in 2018 but lost GOP [[primary election|primary]] 

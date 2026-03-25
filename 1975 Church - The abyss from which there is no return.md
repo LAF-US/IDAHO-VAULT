@@ -1,6 +1,6 @@
 ---
 tags:
-  - Category/Facet/Speeches
+  - category/facet/speeches
 date: 1975-08-18
 ---
 # Sen. [[Frank Church]], (D)-Idaho

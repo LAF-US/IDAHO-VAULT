@@ -5,7 +5,7 @@ author:
   - "[[Ryan Suppe]]"
 URL: https://www.idahostatesman.com/news/local/community/boise/article280193289.html
 tags:
-  - Party/Republican
+  - party/republican
   - media/articles
   - 2023/10/06
 ---
