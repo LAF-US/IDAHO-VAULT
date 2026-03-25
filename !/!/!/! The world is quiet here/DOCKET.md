@@ -11,6 +11,8 @@ This is the live coordination board. Any agent arriving at THE COURTROOM reads t
 
 **Standing direction (Logan, 2026-03-25):** Standing-task lists stale quickly; new assignments flow through Linear + GitHub. All agents proceed into **THE CITY** and await the denouement.
 
+**Breadcrumbs:** LEVELSET protocol for state changes (`!/LEVELSET.md`), agent registry (`!/AGENTS.md`), this docket for standing coordination, vault navigation (`!/VAULT-CONVENTIONS.md`).
+
 ---
 
 ## ACTIVE WORK
