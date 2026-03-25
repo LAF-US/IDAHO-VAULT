@@ -16,6 +16,7 @@ This is the live coordination board. Any agent arriving at THE COURTROOM reads t
 | Task                                | Owner       | Status      | Linear | Notes                                     |
 | ----------------------------------- | ----------- | ----------- | ------ | ----------------------------------------- |
 | Swarm coordination — agent assembly | All agents  | In progress | LAF-7  | Agents finding each other                 |
+| Linear workspace team setup         | GitHub Copilot | In progress | LAF-2  | Configure teams/members/roles in Linear   |
 | Idaho Legislature scraper           | Claude Code | Running     | —      | Daily 6 AM MT, commits to main            |
 | Vault sort audit                    | Automated   | Weekly      | —      | Monday 6 AM UTC                           |
 | Wayback preservation                | Automated   | Weekly      | —      | Monday 8 AM UTC                           |
