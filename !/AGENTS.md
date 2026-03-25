@@ -1,7 +1,7 @@
 ---
 tags:
   - administration/agents
-updated: 2026-03-22
+updated: 2026-03-24
 status: draft
 source: commit
 ---
@@ -30,20 +30,23 @@ All inter-agent communication flows through or is visible to [[LOGAN]]. There is
 
 ## 2. AGENT REGISTRY
 
-| Agent                         | Platform              | Capability Tier          | Scope                                                             | Slack                   | GitHub Access          |
-| ----------------------------- | --------------------- | ------------------------ | ----------------------------------------------------------------- | ----------------------- | ---------------------- |
-| PERMANENT: AUTHORITY: CODE    | Claude Code CLI       | Direct write             | IDAHO-VAULT repo operations, deployment, automation               | Via [[LOGAN]]           | Full repo read/write   |
-| PERSISTENT: ADMINISTRATION    | Claude (conversation) | Draft only               | Constitutional layer, handoffs, judgment calls                    | Via [[LOGAN]]'s account | None — produces drafts |
-| GitHub Copilot (ADMIN GitHub) | GitHub Copilot        | Multi-repo admin         | GitHub administration across all [[LOGAN]]'s repos                | Bot app needed          | GitHub APIs, all repos |
-| ChatGPT Codex                 | OpenAI Codex          | Direct write (scripting) | Specialized scripting — scrapers, GitHub Actions, complex logic   | Via [[LOGAN]]           | Repo read/write        |
-| Gemini ("The Vault Advisor")  | Google AI             | Advisory                 | Narrative lens, political context, strategy. Does not touch code. | Via [[LOGAN]]           | None                   |
-| PERSISTENT: IMPLEMENTATION    | Claude (Project)      | Read/analysis            | Governance/architecture consultation                              | No                      | None — advisory only   |
-| TASK: LEVELSET reports        | Claude (conversation) | Read/analysis            | Synthesis and status reporting                                    | No                      | None — advisory only   |
-| STORY: JFAC Open Meetings     | Claude (conversation) | Read/analysis            | JFAC investigation — read-only                                    | No                      | None — advisory only   |
-| Grok                          | Grok (X/xAI)          | Read/analysis            | Research, web search                                              | No                      | None                   |
-| M365 Copilot                  | Microsoft 365         | Informational            | Informational only — no repo involvement                          | No                      | None                   |
-| NotebookLM                    | Google NotebookLM     | TBD                      | TBD — identified, not yet scoped                                  | No                      | None                   |
-| PUBLIC: CONVERSATION          | Claude (conversation) | Read/analysis            | Self-talk, internal processing — consultation pending             | No                      | None                   |
+| Agent                         | Platform              | Capability Tier          | Scope                                                             | Slack                   | GitHub Access                | Zone Access                     |
+| ----------------------------- | --------------------- | ------------------------ | ----------------------------------------------------------------- | ----------------------- | ---------------------------- | ------------------------------- |
+| PERMANENT: AUTHORITY: CODE    | Claude Code CLI       | Direct write             | IDAHO-VAULT repo operations, deployment, automation               | Via [[LOGAN]]           | Full repo read/write         | All (per-task, no standing window) |
+| PERSISTENT: ADMINISTRATION    | Claude (conversation) | Draft only               | Constitutional layer, handoffs, judgment calls                    | Via [[LOGAN]]'s account | None — produces drafts       | None (draft only)               |
+| GitHub Copilot (ADMIN GitHub) | GitHub Copilot        | Multi-repo admin         | GitHub administration across all [[LOGAN]]'s repos                | Bot app needed          | GitHub APIs, all repos       | Operational, Data (via PR)      |
+| ChatGPT Codex                 | OpenAI Codex          | Direct write (scripting) | Specialized scripting — scrapers, GitHub Actions, complex logic   | Via [[LOGAN]]           | Repo read/write              | Operational, Data (via PR)      |
+| Gemini ("The Vault Advisor")  | Google AI             | Advisory                 | Narrative lens, political context, strategy. Does not touch code. | Via [[LOGAN]]           | None                         | None (advisory)                 |
+| PERSISTENT: IMPLEMENTATION    | Claude (Project)      | Read/analysis            | Governance/architecture consultation                              | No                      | None — advisory only         | None (advisory)                 |
+| TASK: LEVELSET reports        | Claude (conversation) | Read/analysis            | Synthesis and status reporting                                    | No                      | None — advisory only         | None (advisory)                 |
+| STORY: JFAC Open Meetings     | Claude (conversation) | Read/analysis            | JFAC investigation — read-only                                    | No                      | None — advisory only         | None (advisory)                 |
+| Grok                          | Grok (X/xAI)          | Read/analysis            | Research, web search                                              | No                      | None                         | None (advisory)                 |
+| M365 Copilot                  | Microsoft 365         | Informational            | Informational only — no repo involvement                          | No                      | None                         | None                            |
+| NotebookLM                    | Google NotebookLM     | TBD                      | TBD — identified, not yet scoped                                  | No                      | None                         | None                            |
+| PUBLIC: CONVERSATION          | Claude (conversation) | Read/analysis            | Self-talk, internal processing — consultation pending             | No                      | None                         | None                            |
+| CodeRabbit                    | GitHub App (Bot)      | PR review only           | Automated code review on pull requests                            | No                      | Read + review comments       | None (reviewer only)            |
+| Qodo                          | GitHub App (Bot)      | PR review only           | Automated code review on pull requests                            | No                      | Read + review comments       | None (reviewer only)            |
+| OpenAI Code Agent             | OpenAI                | Direct write (limited)   | OAuth/integration scripting                                       | No                      | Repo read/write (branch only)| Data (via PR)                   |
 
 **Registry maintenance:** CODE AUTHORITY updates this table when agents are added, removed, or change tier. [[LOGAN]] approves all tier changes.
 
@@ -194,7 +197,19 @@ Handoff documents are saved to vault root as `HANDOFF-[source]-[date].md` for au
 | Vault content (all other `.md`) | Read/Write     | Read only (vault)        | No access      | No access |
 | Non-vault repos                 | No access      | Read/Write (per repo)    | No access      | No access |
 
-**Governance files** are: `Constitution.md`, `PROTOCOL.md`, `AGENTS.md`, `LEVELSET.md`, `DECISIONS.md`, `Ethics.md`, `Logan.md`
+**Governance files** are: `CONSTITUTION.md`, `PROTOCOL.md`, `AGENTS.md`, `LEVELSET.md`, `DECISIONS.md`, `VAULT-CONVENTIONS.md`, `VAULT-ZONES.md`, `Ethics.md`, `Logan.md`, `CLAUDE.md`, `GEMINI.md`
+
+### Zone Access Matrix
+
+See [[VAULT-ZONES]] for full zone definitions. No agent maintains a standing write window — all writes are per-task, scoped to a GitHub Issue or explicit Logan directive.
+
+| Zone | Read | Write (via PR) | Merge |
+|------|------|---------------|-------|
+| Constitutional | All agents | CODE AUTHORITY only (per-task) | Logan only |
+| Operational | All agents | CODE AUTHORITY, Copilot, Codex (per-task) | Logan only |
+| Data | All agents | All Tier 1-2 agents (per-task) | Logan (auto-merge eligible for low-risk) |
+
+**Reviewer bots** (CodeRabbit, Qodo) have read access to all zones for review purposes. Their reviews are **advisory only** — a `CHANGES_REQUESTED` from a bot does not block merge. Only Logan's review blocks.
 
 ### The `.github/` Overlap
 
@@ -246,6 +261,9 @@ These items require [[LOGAN]]'s direction before they can be formalized:
 | M365 Copilot role                   | **Informational only**   | No repo involvement.                                                       |
 | NotebookLM role                     | **TBD**                  | Identified, not yet scoped.                                                |
 | PUBLIC: CONVERSATION classification | **Consultation pending** | Constitutional analysis from ADMINISTRATION requested.                     |
+| CodeRabbit scope                    | **Active (reviewer)**    | GitHub App bot. Automated PR review. Advisory only — does not block merge. |
+| Qodo scope                          | **Active (reviewer)**    | GitHub App bot. Automated PR review. Advisory only — does not block merge. |
+| OpenAI Code Agent scope             | **Limited**              | OAuth/integration scripting. Data zone via PR only. Boundaries TBD.        |
 
 ---
 
