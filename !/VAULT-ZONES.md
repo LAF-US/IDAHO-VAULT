@@ -1,7 +1,7 @@
 ---
 tags:
   - administration/governance
-updated: 2026-03-24
+updated: 2026-03-25
 status: draft
 source: commit
 ---
@@ -62,6 +62,27 @@ Per Logan's directive (2026-03-24): no agent — including CODE AUTHORITY — ma
 - **Logan-merged:** Logan holds sole merge authority (with auto-merge exception for low-risk Data Zone changes)
 
 This means CODE AUTHORITY's "Direct write" capability tier (per [[AGENTS]]) describes *mechanical ability*, not *standing authorization*. Each task requires fresh authorization.
+
+---
+
+## Exclamation-Space Routing Grammar
+
+| Space | Purpose | Typical contents | Routing posture |
+|-------|---------|------------------|-----------------|
+| `!` | Constitutional anchor and pointer to the governance stack | `CONSTITUTION.md`, `DECISIONS.md`, `AGENTS.md`, `PROTOCOL.md`, `VAULT-CONVENTIONS.md`, `VAULT-ZONES.md`, `CLAUDE.md`, `GEMINI.md`, `Ethics.md`, `Logan.md`, `!/README.md` | **Stable only.** No scratch notes; use for canonical governance and orientation. |
+| `!/!` | Routing spine for structured coordination and context packages | `LEVELSET-*`, `HANDOFF-*`, DOCKET/READY-STATE bundles, branch triage, MCP discovery, context passovers | **Stable routing.** Updates can churn but remain in-versioned artifacts. Promote final decisions to `!/DECISIONS.md` or other constitutional files. |
+| `!/!/!` (`"The world is quiet here"`) | Live courtroom for active swarm coordination | `DOCKET.md`, live status updates, short-term instructions for in-flight sessions | **Hot but stable.** Use for real-time updates; roll durable outcomes into `!/!/` (handoffs/LEVELSET) or `!/` (DECISIONS/PROTOCOL) once settled. |
+
+### Stable routing vs. ephemeral exchange
+
+- **Stable routing** lives in the `!` family paths above. Anything written here is treated as canonical and must be committed.
+- **Ephemeral exchange** happens in chats, Slack, GitHub comments, or temporary scratch files. These channels are coordination-only — not records of decision.
+
+### Movement rules for agents
+
+1. Capture outcomes from ephemeral channels into `!/!/!` (DOCKET) when work is active, or directly into `!/!/` handoffs/LEVELSET packages when handing over.
+2. When a decision is confirmed, promote it to the appropriate constitutional file in `!/` (e.g., `DECISIONS.md`, `PROTOCOL.md`, `VAULT-CONVENTIONS.md`).
+3. Do not park scratch content in `!` or `!/!`; either discard ephemeral notes or convert them into structured handoffs before committing.
 
 ---
 
