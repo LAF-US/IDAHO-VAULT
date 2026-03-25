@@ -17,7 +17,7 @@ This document partitions the vault into three governance zones by write-authorit
 | Zone | Paths | Write Authority | PR Merge Authority | Risk Tier |
 |------|-------|----------------|-------------------|-----------|
 | **Constitutional** | `!/` (all nested), root governance files (`CONSTITUTION.md`, `DECISIONS.md`, `AGENTS.md`, `PROTOCOL.md`, `VAULT-CONVENTIONS.md`, `VAULT-ZONES.md`, `CLAUDE.md`, `GEMINI.md`, `Ethics.md`, `Logan.md`) | Logan only. Agents propose via PR — no standing write window. | Logan only | High |
-| **Operational** | `.github/workflows/`, `.github/scripts/`, `.github/actions/`, `.github/swarm/`, `swarm/` | Agents propose via PR. Logan reviews and merges. | Logan only | High |
+| **Operational** | `.github/workflows/`, `.github/scripts/`, `.github/actions/`, `.github/swarm/`, `!/swarm/` | Agents propose via PR. Logan reviews and merges. | Logan only | High |
 | **Data** | `SOURCES/`, `TOPICS/`, `PEOPLE/`, `PLACES/`, `ORGANIZATIONS/`, `GOVERNMENTS/`, `ATTACHMENTS/`, `INBOX/`, `X LABELER/`, all other vault `.md` content | Agent-assignable via GitHub Issues. All writes via PR. | Logan (auto-merge eligible for low-risk per `auto-pr.yml`) | Low |
 
 ---
@@ -40,7 +40,7 @@ This zone is protected by `CODEOWNERS` (`/!/` requires `@loganfinney27` review).
 
 ### Operational Zone
 
-Covers `.github/` subtrees and `swarm/` tooling. Both CODE AUTHORITY and Copilot can propose modifications to `.github/` per [[AGENTS]] Section 5 overlap rules.
+Covers `.github/` subtrees and `!/swarm/` tooling. Both CODE AUTHORITY and Copilot can propose modifications to `.github/` per [[AGENTS]] Section 5 overlap rules.
 
 **Access model:** Agents with GitHub repo access can submit PRs. Logan reviews and merges. No auto-merge — all Operational Zone changes are high-risk.
 
