@@ -1,6 +1,6 @@
 ---
 tags:
-  - Category/Statue
+  - category/statue
 aliases:
   - Senator Church
   - Frank Forrester Church

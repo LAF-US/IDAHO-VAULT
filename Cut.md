@@ -1,6 +1,6 @@
 ---
 tags:
-  - Category
+  - category
 ---
 *An assembly of facets* 
 

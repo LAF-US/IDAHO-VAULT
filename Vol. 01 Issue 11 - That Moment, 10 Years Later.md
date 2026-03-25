@@ -1,6 +1,6 @@
 ---
 tags:
-  - Category/Inlay
+  - category/inlay
 ---
 ![[INLAY-01-11.jpg]]
 # That Moment 10 Years Later

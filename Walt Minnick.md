@@ -1,6 +1,6 @@
 ---
 tags:
-  - Party/Democratic
+  - party/democratic
   - people/candidate/country/congress
   - people/elected/country/congress
 ---

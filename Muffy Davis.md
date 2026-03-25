@@ -1,6 +1,6 @@
 ---
 tags:
-  - Party/Democratic
+  - party/democratic
   - people/candidate/legislative
   - people/elected/legislative
   - people/appointed/county/commission

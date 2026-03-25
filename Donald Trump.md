@@ -1,6 +1,6 @@
 ---
 tags:
-  - Party/Republican
+  - party/republican
   - people/elected/country/president
   - people/candidate/country/president
 aliases:

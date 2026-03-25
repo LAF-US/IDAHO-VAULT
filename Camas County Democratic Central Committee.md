@@ -1,7 +1,7 @@
 ---
 tags:
   - position/elected/precinct
-  - Party/Democratic
+  - party/democratic
 ---
 
 Local [[Idaho Democratic Party]] [[precinct committeemen|precinct committee]] for [[Camas County]] 

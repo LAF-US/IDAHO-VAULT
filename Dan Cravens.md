@@ -1,6 +1,6 @@
 ---
 tags:
-  - Party/Republican
+  - party/republican
   - people/elected/precinct
   - people/candidate/precinct
 aliases:

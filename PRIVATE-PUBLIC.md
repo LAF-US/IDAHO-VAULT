@@ -1,6 +1,6 @@
 ---
 tags:
-  - ADMIN/protocol
+  - admin/protocol
 ---
 1. [[Logan's Project & Protocols]] touch on information of all degrees. Information that is located in any public GitHub repositories is by definition "published" on the internet. 
 2. Private data and information, including a confidential journalistic source's knowledge or the personally identifiable information (PII) data of any human should handled carefully.

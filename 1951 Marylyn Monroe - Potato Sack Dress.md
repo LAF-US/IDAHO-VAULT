@@ -1,6 +1,6 @@
 ---
 tags:
-  - Category/Facet/Photos
+  - category/facet/photos
 ---
 ![[Marilyn-Monroe-potato-sack.jpg]]
 

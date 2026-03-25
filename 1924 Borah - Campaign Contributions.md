@@ -1,6 +1,6 @@
 ---
 tags:
-  - Category/Facet/Cartoons
+  - category/facet/cartoons
 date: 1924-04-07
 ---
 ![[Campaign Contributions Cause Colossal Crimes.jpg]]

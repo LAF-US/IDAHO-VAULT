@@ -2,7 +2,7 @@
 tags:
   - people/candidate/county/commission
   - people/elected/county/commission
-  - Party/Republican
+  - party/republican
 residence: "[[Sandpoint]]"
 ---
 former [[Bonner County]] [[County Commissioners|Commissioner]] 

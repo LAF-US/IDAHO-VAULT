@@ -1,7 +1,7 @@
 ---
 tags:
-  - schools/K12/district/high-schools
-  - schools/K12/private
+  - schools/k12/district/high-schools
+  - schools/k12/private
 aliases:
   - high school
 ---

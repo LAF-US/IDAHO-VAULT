@@ -2,6 +2,6 @@
 aliases:
   - Whitepine
 tags:
-  - schools/K12/district
+  - schools/k12/district
 ---
 [[Bovill]]/[[Deary]], [[Latah County]] 

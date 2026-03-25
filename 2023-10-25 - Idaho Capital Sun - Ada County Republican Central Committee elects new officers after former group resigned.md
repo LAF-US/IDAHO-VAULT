@@ -6,7 +6,7 @@ outlet:
 tags:
   - 2023/10/25
   - media/articles
-  - Party/Republican
+  - party/republican
 ---
 ## **Two new GOP officials ran unsuccessfully for College of Western Idaho’s board of trustees**
 

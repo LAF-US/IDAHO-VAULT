@@ -2,6 +2,6 @@
 aliases:
   - Camas
 tags:
-  - schools/K12/district
+  - schools/k12/district
 ---
 [[Fairfield]], [[Camas County]] 

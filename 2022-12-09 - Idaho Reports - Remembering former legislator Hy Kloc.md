@@ -4,7 +4,7 @@ outlet:
 tags:
   - media/articles
   - 2022/12/09
-  - "#Party/Democratic"
+  - party/democratic
 ---
 Former state [[House member|Rep.]] [[Hy Kloc]], D-[[Boise]], passed away Tuesday night following a [[heart attack]].
 

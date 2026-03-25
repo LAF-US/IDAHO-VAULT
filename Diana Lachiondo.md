@@ -2,6 +2,6 @@
 tags:
   - people/candidate/county/commission
   - people/elected/county/commission
-  - Party/Democratic
+  - party/democratic
 ---
 former [[Ada County]] [[County Commissioners|Commissioner]] 

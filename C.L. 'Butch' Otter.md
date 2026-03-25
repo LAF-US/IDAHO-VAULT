@@ -5,7 +5,7 @@ aliases:
   - Gov. Otter
   - C. L. Otter
 tags:
-  - Party/Republican
+  - party/republican
   - people/elected/statewide/governor
   - people/candidate/statewide/governor
   - people/elected/statewide/ltgov

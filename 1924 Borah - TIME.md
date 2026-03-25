@@ -1,6 +1,6 @@
 ---
 tags:
-  - Category/Facet/Magazines
+  - category/facet/magazines
 date: 1924-05-05
 ---
 ![[TIMEMagazine5May1924.jpg]]

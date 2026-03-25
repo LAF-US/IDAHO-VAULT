@@ -2,7 +2,7 @@
 aliases:
   - charter school
 tags:
-  - schools/K12/charter
+  - schools/k12/charter
 ---
 A list of charter schools and charter school networks in the [[State of Idaho]] Idaho by county.
 

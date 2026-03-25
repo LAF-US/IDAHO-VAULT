@@ -72,11 +72,13 @@ IDAHO-VAULT/
 
 All Obsidian files use YAML frontmatter. Key fields by type:
 
+Tags are stored in frontmatter only. Treat `tags:` as the canonical tag source for a note, use lowercase slash-path tags, and keep date/session/election tags as tags when they are part of the note taxonomy.
+
 **People:**
 
 ```yaml
 tags:
-  - Party/Republican # or Party/Democratic
+  - party/republican # or party/democratic
   - people/elected/legislative
 residence: "[[Boise]]"
 ```
@@ -89,7 +91,7 @@ outlet: "[[Outlet Name]]"
 URL: https://...
 tags:
   - media/articles
-  - YYYY/MM/DD
+  - 2024/01/15
 ```
 
 **Bills:**
@@ -97,7 +99,7 @@ tags:
 ```yaml
 tags:
   - bills
-  - YYYY/session
+  - 2026/session
 aliases:
   - HB 24
 cmte: ["[[Committee Name]]"]
@@ -110,7 +112,7 @@ URL: https://legislature.idaho.gov/...
 ```yaml
 cmte: "[[Committee Name]]"
 tags:
-  - YYYY/MM/DD
+  - 2023/12/19
 ```
 
 ---

@@ -2,7 +2,7 @@
 aliases:
   - Teddy Roosevelt
 tags:
-  - Category/Statue
+  - category/statue
 ---
 ![[Theodore Roosevelt Portrait.jpg]]
 
