@@ -3,7 +3,11 @@ source: "https://legislature.idaho.gov/sessioninfo/2026/legislation/H0542/"
 author:
 published:
 created: 2026-03-25
+title: (2026) HOUSE BILL 542 – Idaho State Legislature
+aliases: [(2026) HOUSE BILL 542 – Idaho State Legislature]
+linter-yaml-title-alias: (2026) HOUSE BILL 542 – Idaho State Legislature
 ---
+
 Print Friendly
 
 ## HOUSE BILL 542
@@ -14,10 +18,14 @@ The status of each bill, resolution, proclamation, and memorial is updated when 
 
 **Individual Links:**
 
-[Bill Text](https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2026/legislation/H0542.pdf)  
-[Amendment](https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2026/legislation/H0542A1.pdf)  
-[Engrossment 1](https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2026/legislation/H0542E1.pdf) – This is known as the engrossed bill that incorporates adopted amendments. The highest numbered engrossment is the final version that was considered for adoption.  
-[Statement of Purpose / Fiscal Note](https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2026/legislation/H0542SOP.pdf)  
+[Bill Text](https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2026/legislation/H0542.pdf)
+
+[Amendment](https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2026/legislation/H0542A1.pdf)
+
+[Engrossment 1](https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2026/legislation/H0542E1.pdf) – This is known as the engrossed bill that incorporates adopted amendments. The highest numbered engrossment is the final version that was considered for adoption.
+
+[Statement of Purpose / Fiscal Note](https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2026/legislation/H0542SOP.pdf)
+
 [Legislative Co-sponsors](https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2026/legislation/H0542LegCo.pdf)
 
 | H0542aaS |  | by STATE AFFAIRS COMMITTEE |
