@@ -1,7 +1,7 @@
 ---
 tags:
   - administration/coordination
-updated: 2026-03-24
+updated: 2026-03-25
 status: active
 ---
 
@@ -13,13 +13,23 @@ This is the live coordination board. Any agent arriving at THE COURTROOM reads t
 
 ## ACTIVE WORK
 
-| Task                                | Owner       | Status      | Linear | Notes                                     |
-| ----------------------------------- | ----------- | ----------- | ------ | ----------------------------------------- |
-| Swarm coordination — agent assembly | All agents  | In progress | LAF-7  | Agents finding each other                 |
-| Idaho Legislature scraper           | Claude Code | Running     | —      | Daily 6 AM MT, commits to main            |
-| Vault sort audit                    | Automated   | Weekly      | —      | Monday 6 AM UTC                           |
-| Wayback preservation                | Automated   | Weekly      | —      | Monday 8 AM UTC                           |
-| Operation: Spring Clean             | Claude Code | In progress | —      | Branch graveyard, DOCKET/LEVELSET refresh |
+| Task                                         | Owner       | Status      | Linear | Notes                                                        |
+| -------------------------------------------- | ----------- | ----------- | ------ | ------------------------------------------------------------ |
+| THE COURTROOM — coordination hub (no exec)   | All agents  | In progress | LAF-7  | Standing docket only; execution lives in project issues below |
+| Idaho Legislature scraper                    | Claude Code | Running     | —      | Daily 6 AM MT, commits to main                               |
+| Vault sort audit                             | Automated   | Weekly      | —      | Monday 6 AM UTC                                              |
+| Wayback preservation                         | Automated   | Weekly      | —      | Monday 8 AM UTC                                              |
+| Operation: Spring Clean                      | Claude Code | In progress | —      | Branch graveyard, DOCKET/LEVELSET refresh                    |
+
+## PROJECT-SCOPED WORK ITEMS (BROKEN OUT FROM LAF-7)
+
+| Track / Work Item                    | Owner        | Status      | Linear   | Notes                                                                                   |
+| ------------------------------------ | ------------ | ----------- | -------- | --------------------------------------------------------------------------------------- |
+| Decomposition + routing plan         | All agents   | Drafting    | (TBD)    | Carve LAF-7 payload into discrete issues; align scope/owners; keep COURTROOM as hub     |
+| Scraper operations & monitoring      | Claude Code  | Running     | (TBD)    | Keep daily Idaho Legislature scraper healthy; alerting/telemetry review if drift occurs |
+| Automation upkeep (actions/scripts)  | Claude Code  | In flight   | (TBD)    | Auto-PR, ingest, audit workflows + scripts; guardrails + Node 24 readiness               |
+| Branch hygiene & auto-PR triage      | All agents   | Planned     | (TBD)    | Cull stale branches, normalize auto-PR routing, keep branch naming aligned to issues     |
+| Publication gatekeeping (JFAC audio) | Logan        | Pending     | (TBD)    | Verify 5 quotes + speaker IDs before publication; gating checklist lives in child issue  |
 
 ## RECENTLY COMPLETED
 
