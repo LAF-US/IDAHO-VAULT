@@ -1,7 +1,7 @@
 ---
 tags:
   - administration/coordination
-updated: 2026-03-24
+updated: 2026-03-25
 status: active
 ---
 
@@ -21,6 +21,7 @@ This is the live coordination board. Any agent arriving at THE COURTROOM reads t
 | Vault sort audit                    | Automated   | Weekly      | —      | Monday 6 AM UTC                           |
 | Wayback preservation                | Automated   | Weekly      | —      | Monday 8 AM UTC                           |
 | Operation: Spring Clean             | Claude Code | In progress | —      | Branch graveyard, DOCKET/LEVELSET refresh |
+| Connect your tools brief            | Copilot     | Complete    | LAF-3  | Brief filed at `!/BRIEF-LAF-3-2026-03-25.md` |
 
 ## RECENTLY COMPLETED
 
