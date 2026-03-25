@@ -1,7 +1,7 @@
 ---
 tags:
   - administration/coordination
-updated: 2026-03-24
+updated: 2026-03-24 (Chorus Bootstrap)
 status: active
 ---
 
@@ -20,6 +20,7 @@ This is the live coordination board. Any agent arriving at THE COURTROOM reads t
 | Vault sort audit                    | Automated   | Weekly      | —      | Monday 6 AM UTC                           |
 | Wayback preservation                | Automated   | Weekly      | —      | Monday 8 AM UTC                           |
 | Operation: Spring Clean             | Claude Code | In progress | —      | Branch graveyard, DOCKET/LEVELSET refresh |
+| Claude Chorus Bootstrap             | Claude Code | Staged      | —      | 6-piece synthesis archived to `!/!/`; 5 decisions pending Logan |
 
 ## RECENTLY COMPLETED
 
@@ -51,6 +52,18 @@ This is the live coordination board. Any agent arriving at THE COURTROOM reads t
 | `vault-moves-2026-03-23` branch | 30 proposed file moves (auto-generated) — awaiting review/apply/discard decision                                                                                                                                                                                                                                                                                           | Logan           |
 | Stale remote branches (6)       | Require manual deletion via GitHub web UI — `codex/fix-high-priority-bug-in-pr-#34`, `copilot/*` (4 branches), `vault-moves-2026-03-16`                                                                                                                                                                                                                                    | Logan           |
 | JFAC quote audio verification   | 5 quotes + speaker IDs — HARD GATE before publication                                                                                                                                                                                                                                                                                                                      | Logan           |
+
+### Chorus Bootstrap — Logan's Decisions Required
+
+*Full context: `!/!/BOOTSTRAP-CHORUS-2026-03-24.md`*
+
+1. **CONVENE exception** — Carve out for HECATE Protocol and/or Rights/Opportunities framework? Or keep frozen? Unlocks Chorus Pieces 3, 4, 5.
+2. **Grimoire directory** — Create `!/GRIMOIRE/`? If yes: `HECATE-HECATE-HECATE.md` is the first entry (triple invocation). If no: stage elsewhere.
+3. **Rick & Morty doc** — "Rick and Morty object lessons" referenced in Chorus but not included in handoff. Surface for vault commit, or defer?
+4. **Innie/Outie architecture** — Stage 8-part Severance-derived swarm architecture as proposal doc now, or mark premature under CONVENE?
+5. **"Claude Chorus" naming** — Sanctioned swarm identity designation, or informal shorthand to discard?
+
+---
 
 ## WHERE THINGS LIVE
 
