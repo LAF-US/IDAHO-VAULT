@@ -1,6 +1,6 @@
 ---
 tags:
-  - Party/Republican
+  - party/republican
   - people/deceased
   - people/elected/statewide/governor
   - people/candidate/statewide/governor

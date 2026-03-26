@@ -1,5 +1,5 @@
 ---
 tags:
-  - Party/Democratic
+  - party/democratic
 ---
 former [[Superintendent of Public Instruction|Superintendent]] candidate 

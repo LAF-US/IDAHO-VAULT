@@ -1,6 +1,6 @@
 ---
 tags:
-  - Category/Facet/Cartoons
+  - category/facet/cartoons
 date:
 ---
 ![[FDR Alphabet Agencies Cartoon.jpg]]

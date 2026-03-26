@@ -2,7 +2,7 @@
 tags:
   - media/articles
   - 2023/09/21
-  - Party/Republican
+  - party/republican
 ---
 by [[Logan Finney]], [[Idaho Reports]]
 

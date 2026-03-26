@@ -1,7 +1,7 @@
 ---
 tags:
   - people/candidate/legislative
-  - Party/Republican
+  - party/republican
 ---
 [[Valley County]] 
 

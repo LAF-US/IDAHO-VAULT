@@ -4,7 +4,7 @@ aliases:
   - Democratic
   - Democrats
 tags:
-  - Party/Democratic
+  - party/democratic
   - geography/land/state
 ---
 [[State of Idaho]] affiliate of the [[U.S. Democratic Party]] 

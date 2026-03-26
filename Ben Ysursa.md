@@ -1,6 +1,6 @@
 ---
 tags:
-  - Party/Republican
+  - party/republican
   - people/elected/statewide/secretary
   - people/candidate/statewide/secretary
 residence: "[[Boise]]"

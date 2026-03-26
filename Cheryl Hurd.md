@@ -1,5 +1,5 @@
 ---
 tags:
-  - Party/Republican
+  - party/republican
   - people/elected/precinct
 ---

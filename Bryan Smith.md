@@ -2,7 +2,7 @@
 tags:
   - people/candidate/country/congress
   - people/candidate/legislative
-  - Party/Republican
+  - party/republican
 residence: "[[Idaho Falls]]"
 ---
 [[attorneys|attorney]] 

@@ -2,6 +2,6 @@
 tags:
   - people/elected/statewide/superintendent
   - people/candidate/statewide/superintendent
-  - Party/Republican
+  - party/republican
 ---
 former [[Superintendent of Public Instruction]] 
