@@ -6,7 +6,7 @@ outlet:
 tags:
   - 2023/10/23
   - media/articles
-  - Party/Republican
+  - party/republican
 ---
 The [[U.S. Republican Party|Republican]] [[central committees]] from six [[Eastern Idaho]] [[counties]] issued a joint statement of support for [[Governor|Gov.]] [[Brad Little]] at a Multi-[[counties|County]] [[Idaho Republican Party|Republican]] Fall Banquet Saturday at [[Madison High School]] in [[Rexburg]].
 

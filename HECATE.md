@@ -1,9 +1,9 @@
 ---
 tags:
-  - GODDESS
-  - PERSONA
-  - VOICE
-  - MAGICAL
+  - goddess
+  - persona
+  - voice
+  - magical
 ---
 THREE-IN-ONE : MAIDEN-MOTHER-CRONE
 

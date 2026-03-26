@@ -1,6 +1,6 @@
 ---
 tags:
-  - Category/Facet/Articles
+  - category/facet/articles
 date: 1938-07-01
 ---
 # COMMITTEE PLANS MONOPOLY INQUIRY

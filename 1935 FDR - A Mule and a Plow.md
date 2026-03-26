@@ -1,6 +1,6 @@
 ---
 tags:
-  - Category/Facet/Art
+  - category/facet/art
 date:
 ---
 ![[RA poster A Mule and a Plow.jpg]]

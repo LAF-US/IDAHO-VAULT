@@ -2,6 +2,6 @@
 aliases:
   - Arbon
 tags:
-  - schools/K12/district
+  - schools/k12/district
 ---
 [[Arbon Valley]], [[Power County]] 

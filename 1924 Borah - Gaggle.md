@@ -1,6 +1,6 @@
 ---
 tags:
-  - Category/Facet/Photos
+  - category/facet/photos
 date: 1924-06-11
 ---
 ![[borah-61124-1.jpg]]

@@ -2,6 +2,6 @@
 aliases:
   - West Jefferson
 tags:
-  - schools/K12/district
+  - schools/k12/district
 ---
 [[Terreton]], [[Jefferson County]] 

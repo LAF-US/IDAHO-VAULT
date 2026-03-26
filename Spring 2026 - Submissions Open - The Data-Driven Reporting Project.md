@@ -4,7 +4,7 @@ url: "https://datadrivenreporting.medill.northwestern.edu/"
 author:
   - "[[The Data-Driven Reporting Project]]"
 tags:
-  - "media/articles"
+  - media/articles
 ---
 ![](https://images.squarespace-cdn.com/content/v1/618beff5f2e0777ee002d7c9/05420874-2dfe-4e67-b5d8-681abafd95cd/DDRP-Abstract-1.png?format=2500w)
 

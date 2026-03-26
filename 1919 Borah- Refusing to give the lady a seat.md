@@ -1,6 +1,6 @@
 ---
 tags:
-  - Category/Facet/Cartoons
+  - category/facet/cartoons
 date: 1921-01-01
 ---
 ![[service-pnp-ds-10000-10033v.jpg]]

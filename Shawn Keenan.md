@@ -1,6 +1,6 @@
 ---
 tags:
-  - Party/Democratic
+  - party/democratic
 ---
 Residence: [[Kootenai County]] 
 - Former [[Secretary of State]] candidate 

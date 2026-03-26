@@ -1,7 +1,7 @@
 ---
 tags:
   - geography/land/country
-  - Party/Democratic
+  - party/democratic
 aliases:
   - DNC
 ---

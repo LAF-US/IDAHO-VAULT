@@ -1,6 +1,6 @@
 ---
 tags:
-  - Party/Republican
+  - party/republican
   - 2023/10/17
   - federal
   - media/pressrelease

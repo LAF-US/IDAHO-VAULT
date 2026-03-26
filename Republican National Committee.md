@@ -1,7 +1,7 @@
 ---
 tags:
   - geography/land/country
-  - Party/Republican
+  - party/republican
 aliases:
   - RNC
 ---

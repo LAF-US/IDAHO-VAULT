@@ -2,7 +2,7 @@
 tags:
   - geography/land/country
   - federal
-  - Party/Democratic
+  - party/democratic
 aliases:
   - Democratic
   - Democrats
