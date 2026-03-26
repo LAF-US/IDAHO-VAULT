@@ -1,7 +1,7 @@
 ---
 tags:
   - people/elected
-  - Party/Republican
+  - party/republican
   - people/elected/legislative
   - people/deceased
   - people

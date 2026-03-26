@@ -2,7 +2,7 @@
 tags:
   - people/elected/precinct
   - people/candidate/precinct
-  - Party/Republican
+  - party/republican
 ---
 Residence: [[Bonneville County]] 
 - [[Bonneville County Republican Central Committee]] chairman 

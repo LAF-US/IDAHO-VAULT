@@ -1,6 +1,6 @@
 ---
 tags:
-  - Category/Frieze
+  - category/frieze
 aliases:
   - The Gem State
   - State of Idaho

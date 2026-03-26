@@ -1,6 +1,6 @@
 ---
 tags:
-  - Party/Republican
+  - party/republican
   - people
 aliases:
   - Sandy Patano

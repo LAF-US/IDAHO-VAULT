@@ -1,6 +1,6 @@
 ---
 tags:
-  - Category/Facet/Photos
+  - category/facet/photos
 date: 1938-12-01
 ---
 ![[examine-first-evidence-offered-to-monopoly-committee-washington-dc-dec-1-senator-1024.jpg]]

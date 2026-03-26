@@ -1,8 +1,8 @@
 # LEVELSET-CURRENT — Live Ecosystem State
 
-**Date:** 2026-03-24
+**Date:** 2026-03-24 (updated: Chorus Bootstrap)
 **Status:** CURRENT — living synthesis, updated each LEVELSET round
-**Synthesized by:** Claude Code (The Abhorsen) — Operation: Swarm Nest Reorganization
+**Synthesized by:** Claude Code (The Abhorsen) — Operation: Swarm Nest Reorganization → Chorus Bootstrap
 **Input authority chain:** CONSTITUTION.md > DECISIONS.md > CLAUDE.md
 **Approved by:** Pending Logan Finney review
 
@@ -26,10 +26,10 @@ LEVELSET-CURRENT is the rolling synthesis document. Unlike numbered LEVELSET fil
 | Field | Value |
 |---|---|
 | Remote | github.com/loganfinney27/IDAHO-VAULT (public) |
-| Primary branch | `origin/main` at `f6e9ca8` |
-| Open PRs | 0 |
+| Primary branch | `origin/main` at `ed75c74` |
+| Open PRs | 1 (this branch — `claude/chorus-bootstrap-20260324`) |
 | Open Issues | 0 |
-| Last commit | `f6e9ca8` — DOCKET, LEVELSET, PROTOCOL, AGENTS, VAULT-CONVENTIONS updates + MCP plan |
+| Last commit | `ed75c74` — MCP discovery, VAULT-ZONES, GEMSTONE content, Borah/Church/FDR content batch |
 
 ### Branch Status
 
@@ -86,7 +86,7 @@ LEVELSET-CURRENT is the rolling synthesis document. Unlike numbered LEVELSET fil
 
 | Conversation | Role | Known Output | Current Status |
 |---|---|---|---|
-| **PERSISTENT: CODE AUTHORITY** | Authoritative code session; LEVELSET synthesis; infrastructure | LEVELSET-v2.md, LEVELSET-CURRENT.md, CLAUDE.md, DECISIONS.md, swarm nest reorganization | **Active** |
+| **PERSISTENT: CODE AUTHORITY** | Authoritative code session; LEVELSET synthesis; infrastructure | LEVELSET-v2.md, LEVELSET-CURRENT.md, CLAUDE.md, DECISIONS.md, swarm nest reorganization, Chorus Bootstrap | **Active** |
 
 ### Tier Unknown — Reports Not Yet Received
 
@@ -179,11 +179,13 @@ Key status: Multiple quotes flagged **AUDIO VERIFICATION REQUIRED** — HARD GAT
 
 ## NEXT ACTIONS
 
-1. Logan: merge `claude/reorganize-swarm-nest` PR (requires review — governance files)
-2. Logan: delete 6 stale remote branches via GitHub web UI
-3. Logan: decide on `vault-moves-2026-03-23` (30 proposed file moves)
-4. Logan: audio verify JFAC quotes (HARD GATE before publication)
-5. Logan: review pending decisions in `!/DECISIONS.md`
+1. Logan: review + merge `claude/chorus-bootstrap-20260324` PR (Chorus Bootstrap — Constitutional Zone, governance files)
+2. Logan: answer 5 Chorus Bootstrap decisions (see DOCKET — "Chorus Bootstrap" subsection)
+3. Logan: merge `claude/reorganize-swarm-nest` PR (requires review — governance files)
+4. Logan: delete 6 stale remote branches via GitHub web UI
+5. Logan: decide on `vault-moves-2026-03-23` (30 proposed file moves)
+6. Logan: audio verify JFAC quotes (HARD GATE before publication)
+7. Logan: review pending decisions in `!/DECISIONS.md`
 
 ---
 

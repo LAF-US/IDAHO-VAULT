@@ -1,6 +1,6 @@
 ---
 tags:
-  - Party/Democratic
+  - party/democratic
   - people/candidate/legislative
   - position/elected/legislative
   - people/candidate/statewide/governor

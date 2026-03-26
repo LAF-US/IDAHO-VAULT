@@ -1,6 +1,6 @@
 ---
 tags:
-  - Category/Facet/Articles
+  - category/facet/articles
 date: 1938-03-29
 ---
 WARM SPRINGS, Ga., Monday—Well, here I am at Warm Springs, surrounded by trees and absolute peace and quiet. It is really quite a contrast to the last few days and, now that I have time to think, I must go back and tell you a little about those days.

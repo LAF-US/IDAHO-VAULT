@@ -1,7 +1,7 @@
 ---
 tags:
   - people/elected/legislative
-  - Party/Republican
+  - party/republican
 ---
 [[Legislative District 7]] [[House member|Representative]] 
 succeeded [[Mike Kingsley]] 

@@ -1,6 +1,6 @@
 ---
 tags:
   - people/candidate/legislative
-  - Party/Republican
+  - party/republican
 ---
 - [[Dan Johnson]] longterm substitute in [[Idaho Senate|Senate]] 

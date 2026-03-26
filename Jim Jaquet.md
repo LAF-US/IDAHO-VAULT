@@ -1,6 +1,6 @@
 ---
 tags:
   - people
-  - Party/Democratic
+  - party/democratic
 ---
 husband of [[Wendy Jaquet]] 

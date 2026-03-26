@@ -1,6 +1,6 @@
 ---
 tags:
-  - Party/Republican
+  - party/republican
   - people/elected/legislative
   - people/appointed/boards
   - people/candidate/legislative
