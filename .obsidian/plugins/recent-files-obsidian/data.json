@@ -1,6 +1,82 @@
 {
   "recentFiles": [
     {
+      "basename": "Jason Mercier",
+      "path": "Jason Mercier.md"
+    },
+    {
+      "basename": "- Mountain States Policy Center - Idaho online safety bill would track a child's every click",
+      "path": "- Mountain States Policy Center - Idaho online safety bill would track a child's every click.md"
+    },
+    {
+      "basename": "Chris Cargill",
+      "path": "Chris Cargill.md"
+    },
+    {
+      "basename": "Mountain States Policy Center",
+      "path": "Mountain States Policy Center.md"
+    },
+    {
+      "basename": "2026-03-25 - - Next steps for ensuring a safe online experience for our children",
+      "path": "2026-03-25 - - Next steps for ensuring a safe online experience for our children.md"
+    },
+    {
+      "basename": "2026-03-25 - - MSPC provides digital safety keynote address at Idaho Department of Education conference",
+      "path": "2026-03-25 - - MSPC provides digital safety keynote address at Idaho Department of Education conference.md"
+    },
+    {
+      "basename": "2026-03-25 - - A promising AI safety tool for teen accounts",
+      "path": "2026-03-25 - - A promising AI safety tool for teen accounts.md"
+    },
+    {
+      "basename": "2026-03-13 - - Shazam! Idaho lawmakers still have time to fix the social media bill",
+      "path": "2026-03-13 - - Shazam! Idaho lawmakers still have time to fix the social media bill.md"
+    },
+    {
+      "basename": "(2026) HOUSE BILL 542 – Idaho State Legislature",
+      "path": "(2026) HOUSE BILL 542 – Idaho State Legislature.md"
+    },
+    {
+      "basename": "2026-03-25",
+      "path": "2026-03-25.md"
+    },
+    {
+      "basename": "2026-03-23",
+      "path": "2026-03-23.md"
+    },
+    {
+      "basename": "2026-03-24",
+      "path": "2026-03-24.md"
+    },
+    {
+      "basename": "!README",
+      "path": "!README.md"
+    },
+    {
+      "basename": "run_state-20260317-101538",
+      "path": "swarm/state/archive/run_state-20260317-101538.md"
+    },
+    {
+      "basename": "run_state",
+      "path": "swarm/state/run_state.md"
+    },
+    {
+      "basename": "stabilization_plan",
+      "path": "swarm/state/stabilization_plan.md"
+    },
+    {
+      "basename": "ingest-2026-03-25T12-52-12Z",
+      "path": "!/!/ingest-2026-03-25T12-52-12Z.md"
+    },
+    {
+      "basename": "2026-03-25 - Reuters - Meta to give teens' parents more control after criticism over flirty AI chatbots",
+      "path": "2026-03-25 - Reuters - Meta to give teens' parents more control after criticism over flirty AI chatbots.md"
+    },
+    {
+      "basename": "- Mountain States Policy Center - Next steps for ensuring a safe online experience for our children",
+      "path": "- Mountain States Policy Center - Next steps for ensuring a safe online experience for our children.md"
+    },
+    {
       "basename": "11-24-25 Elmore County Hand Count Results",
       "path": "11-24-25 Elmore County Hand Count Results.pdf"
     },
@@ -15,10 +91,6 @@
     {
       "basename": "1924 Borah - Campaign Contributions",
       "path": "1924 Borah - Campaign Contributions.md"
-    },
-    {
-      "basename": "- Mountain States Policy Center - Idaho is preparing students and educators for an AI-driven future",
-      "path": "- Mountain States Policy Center - Idaho is preparing students and educators for an AI-driven future.md"
     },
     {
       "basename": "1924 Borah - Gaggle",
@@ -69,24 +141,8 @@
       "path": "!/MCP-IMPLEMENTATION-PLAN.md"
     },
     {
-      "basename": "2026-03-24",
-      "path": "2026-03-24.md"
-    },
-    {
-      "basename": "2026-03-25",
-      "path": "2026-03-25.md"
-    },
-    {
-      "basename": "2026-03-23",
-      "path": "2026-03-23.md"
-    },
-    {
       "basename": "CONSTITUTION",
       "path": "CONSTITUTION.md"
-    },
-    {
-      "basename": "!README",
-      "path": "!README.md"
     },
     {
       "basename": "2026-03-22",
@@ -143,62 +199,6 @@
     {
       "basename": "BODY",
       "path": "BODY.md"
-    },
-    {
-      "basename": "GEMINI",
-      "path": "GEMINI.md"
-    },
-    {
-      "basename": "CODEX",
-      "path": "CODEX.md"
-    },
-    {
-      "basename": "CONSULTATION-PUBLIC-CONVERSATION-2026-03-16 1",
-      "path": "CONSULTATION-PUBLIC-CONVERSATION-2026-03-16 1.md"
-    },
-    {
-      "basename": "LADY",
-      "path": "LADY.md"
-    },
-    {
-      "basename": "ANSWERS",
-      "path": "ANSWERS.md"
-    },
-    {
-      "basename": "PROTOCOLS",
-      "path": "PROTOCOLS.md"
-    },
-    {
-      "basename": "PROCEDURES",
-      "path": "PROCEDURES.md"
-    },
-    {
-      "basename": "PREFERENCES",
-      "path": "PREFERENCES.md"
-    },
-    {
-      "basename": "THE GHOST",
-      "path": "THE GHOST.md"
-    },
-    {
-      "basename": "SOUL",
-      "path": "SOUL.md"
-    },
-    {
-      "basename": "GUIDELINES",
-      "path": "GUIDELINES.md"
-    },
-    {
-      "basename": "GUESTBOOK",
-      "path": "GUESTBOOK.md"
-    },
-    {
-      "basename": "QUESTION",
-      "path": "QUESTION.md"
-    },
-    {
-      "basename": "PROTOCOL",
-      "path": "PROTOCOL.md"
     }
   ],
   "omittedPaths": [
