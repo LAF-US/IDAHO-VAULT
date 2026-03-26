@@ -32,11 +32,24 @@ Thumbs.db
 # Swarm operational logs (ephemeral)
 \!/swarm/logs/*
 !\!/swarm/logs/.gitkeep
-.obsidian/plugins/recent-files-obsidian/data.json
+
+# Obsidian system/state files (noisy, machine-local)
 .obsidian/workspace.json
 .obsidian/workspace*.json
 .obsidian/graph.json
 .obsidian/types.json
+.obsidian/backlink.json
+.obsidian/file-recovery.json
+.obsidian/page-preview.json
+.obsidian/switcher.json
+.obsidian/webviewer.json
+.obsidian/note-composer.json
+
+# Obsidian plugin runtime data (changes on every use)
+.obsidian/plugins/*/data.json
+
+# Obsidian conflict duplicates
+.obsidian/**(2)*.json
 
 # Daily notes (ephemeral, personal)
 DAILYNOTES/
