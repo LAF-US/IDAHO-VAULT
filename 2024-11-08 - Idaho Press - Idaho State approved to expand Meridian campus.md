@@ -4,8 +4,8 @@ url: "https://www.idahopress.com/news/local/idaho-state-approved-to-expand-merid
 author:
   - "[[Emily White]]"
 tags:
-  - "media/articles"
-  - "2024/11/08"
+  - media/articles
+  - 2024/11/08
 ---
 A bigger health science campus is coming to [[Meridian]].
 

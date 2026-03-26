@@ -3,8 +3,8 @@ tags:
   - people/candidate/city/mayor
   - people/elected/city/mayor
   - people/candidate/statewide/governor
-  - Party/Democratic
-  - Party/Republican
+  - party/democratic
+  - party/republican
 residence: "[[Sandpoint]]"
 ---
 - former [[Sandpoint]] [[mayor]] 

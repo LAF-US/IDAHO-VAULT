@@ -1,6 +1,6 @@
 ---
 tags:
-  - Party/Republican
+  - party/republican
   - people/elected/county/clerk
   - people/candidate/county/clerk
   - people/candidate/statewide/secretary

@@ -1,6 +1,6 @@
 ---
 tags:
-  - Party/Republican
+  - party/republican
 aliases:
   - College Republicans
   - Idaho College Republicans

@@ -5,8 +5,8 @@ author:
   - "[[Kelcie Moseley-Morris]]"
   - "[[Audrey Dutton]]"
 tags:
-  - "media/articles"
-  - "2022/03/23"
+  - media/articles
+  - 2022/03/23
 ---
 ## [[Idaho House of Representatives|House]] bill requires [[WWAMI joint medical education program|WWAMI]] medical students to practice in [[State of Idaho|Idaho]] or repay as much as $120,000 subsidized tuition
 

@@ -1,6 +1,6 @@
 ---
 tags:
-  - Category/Facet/Photos
+  - category/facet/photos
 date: 1936-01-01
 ---
 ![[william-e-borah-and-photographers.jpg]]

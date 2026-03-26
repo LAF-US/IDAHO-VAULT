@@ -1,6 +1,6 @@
 ---
 tags:
-  - Category/Inlay
+  - category/inlay
 ---
 ![[INLAY-01-03.jpg]]
 # You Care About "Handling Harassment" Since This

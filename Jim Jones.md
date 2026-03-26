@@ -1,6 +1,6 @@
 ---
 tags:
-  - Party/Republican
+  - party/republican
   - people/candidate/statewide/attorneygeneral
   - people/elected/statewide/attorneygeneral
   - people/candidate/country/congress

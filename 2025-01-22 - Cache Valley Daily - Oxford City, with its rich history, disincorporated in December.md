@@ -4,8 +4,8 @@ url: "https://www.cachevalleydaily.com/news/oxford-city-with-its-rich-history-di
 author:
   - "[[Rod Boam]]"
 tags:
-  - "media/articles"
-  - "2025/01/22"
+  - media/articles
+  - 2025/01/22
 ---
 [[Oxford]] - One of the oldest settlements in [[State of Idaho|Idaho]], [[Oxford]] was disincorporated in a December 9 [[Franklin County]] [[County Commissioners|Commission]] [[meeting]].
 

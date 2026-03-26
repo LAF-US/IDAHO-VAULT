@@ -2,6 +2,6 @@
 aliases:
   - Clark
 tags:
-  - schools/K12/district
+  - schools/k12/district
 ---
 [[Dubois]], [[Clark County]] 

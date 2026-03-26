@@ -1,6 +1,6 @@
 ---
 tags:
-  - Category/Facet/Photos
+  - category/facet/photos
 date: 1921-01-01
 ---
 ![[sen-wm-e-borah-1.jpg]]

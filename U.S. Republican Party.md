@@ -2,7 +2,7 @@
 tags:
   - geography/land/country
   - federal
-  - Party/Republican
+  - party/republican
 aliases:
   - Republican
   - Republican Party

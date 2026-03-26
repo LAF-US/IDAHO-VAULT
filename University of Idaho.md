@@ -1,6 +1,6 @@
 ---
 tags:
-  - Category/Frieze
+  - category/frieze
 aliases:
   - U of I
   - UIdaho

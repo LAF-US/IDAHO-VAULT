@@ -2,7 +2,7 @@
 tags:
   - people/elected
   - people/elected/legislative
-  - Party/Democratic
+  - party/democratic
   - people
 ---
 Residence: [[Boise]]

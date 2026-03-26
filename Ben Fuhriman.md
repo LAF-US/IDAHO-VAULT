@@ -3,6 +3,6 @@ tags:
   - people/candidate/legislative
   - people/elected/precinct
   - people/candidate/precinct
-  - Party/Republican
+  - party/republican
 ---
 [[Bingham County]] 

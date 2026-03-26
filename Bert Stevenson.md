@@ -3,7 +3,7 @@ aliases:
   - John Stevenson
 tags:
   - people/elected
-  - Party/Republican
+  - party/republican
   - people/elected/legislative
   - people
 residence: "[[Rupert]]"

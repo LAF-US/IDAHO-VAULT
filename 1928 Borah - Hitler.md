@@ -1,6 +1,6 @@
 ---
 tags:
-  - Category/Facet/Photos
+  - category/facet/photos
 date: 1928-04-28
 ---
 ![[hitler-speech-means-end-of-peace-talks-senator-borah-says-washington-dc-april.jpg]]
