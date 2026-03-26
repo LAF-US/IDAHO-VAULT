@@ -71,7 +71,7 @@ jobs:
 
       - name: Upload CSV as artifact
         if: steps.export.outputs.export_ok == 'true'
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: minidata-csv-${{ steps.export.outputs.csv_file }}
           path: ${{ steps.export.outputs.csv_file }}
@@ -79,7 +79,7 @@ jobs:
 
       - name: Email CSV file
         if: steps.export.outputs.export_ok == 'true'
-        uses: dawidd6/action-send-mail@v3
+        uses: dawidd6/action-send-mail@v16
         with:
           server_address: smtp.gmail.com
           server_port: 587
