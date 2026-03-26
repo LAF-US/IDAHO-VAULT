@@ -2,6 +2,6 @@
 aliases:
   - Minidoka
 tags:
-  - schools/K12/district
+  - schools/k12/district
 ---
 [[Rupert]], [[Minidoka County]] 

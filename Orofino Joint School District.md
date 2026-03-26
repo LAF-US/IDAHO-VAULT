@@ -2,6 +2,6 @@
 aliases:
   - Orofino
 tags:
-  - schools/K12/district
+  - schools/k12/district
 ---
 [[Orofino]], [[Clearwater County]] 

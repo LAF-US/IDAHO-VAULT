@@ -2,6 +2,6 @@
 aliases:
   - Basin
 tags:
-  - schools/K12/district
+  - schools/k12/district
 ---
 [[Boise County]] 

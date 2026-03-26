@@ -1,7 +1,7 @@
 ---
 tags:
   - people/candidate/statewide/governor
-  - Party/Republican
+  - party/republican
 ---
 - [[Ball Ventures Ahlquist Development]]
 - [[Crush The Curve]]/[[Vaccinate the 208]]

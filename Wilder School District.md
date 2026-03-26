@@ -2,6 +2,6 @@
 aliases:
   - Wilder
 tags:
-  - schools/K12/district
+  - schools/k12/district
 ---
 [[Wilder]], [[Canyon County]] 

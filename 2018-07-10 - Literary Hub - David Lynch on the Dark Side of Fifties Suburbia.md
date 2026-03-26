@@ -4,7 +4,7 @@ url: "https://lithub.com/breaking-david-lynch-has-thoughts-on-the-dark-side-of-1
 author:
   - "[[David Lynch]]"
 tags:
-  - "media/articles"
+  - media/articles
 ---
 [Literary Hub](https://lithub.com/)
 

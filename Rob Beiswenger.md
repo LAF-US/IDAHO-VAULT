@@ -1,7 +1,7 @@
 ---
 tags:
   - people/elected/legislative
-  - Party/Republican
+  - party/republican
 residence: "[[Horseshoe Bend]]"
 ---
 [[House member|Rep.]] from [[Legislative District 8]] 

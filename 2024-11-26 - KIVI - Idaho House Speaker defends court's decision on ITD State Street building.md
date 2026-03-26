@@ -4,8 +4,8 @@ url: "https://www.kivitv.com/downtown-boise/idaho-house-speaker-defends-courts-d
 author:
   - "[[Don Nelson]]"
 tags:
-  - "media/articles"
-  - "2024/11/26"
+  - media/articles
+  - 2024/11/26
 ---
 BOISE, Idaho — The talk about what to do with the aging [[Department of Transportation|Idaho Transportation Department]]'s large building on State Street is still ongoing. I sat down with House Speaker Mike Moyle to understand why a deal to sell the property didn't happen.  
 

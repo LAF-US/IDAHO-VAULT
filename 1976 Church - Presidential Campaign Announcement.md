@@ -1,6 +1,6 @@
 ---
 tags:
-  - Category/Facet/Articles
+  - category/facet/articles
 date: 1976-03-18
 ---
 # Senator Church Joins Presidential Race

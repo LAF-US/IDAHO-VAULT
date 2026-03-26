@@ -1,6 +1,6 @@
 ---
 tags:
-  - Category/Facet/Articles
+  - category/facet/articles
 date: 1911-04-05
 ---
 >![[argonaut_04051911.jpg]]

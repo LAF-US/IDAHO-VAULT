@@ -2,7 +2,7 @@
 aliases:
   - school district
 tags:
-  - schools/K12/district
+  - schools/k12/district
   - position/elected/zones/schoolboards
 ---
 

@@ -2,6 +2,6 @@
 tags:
   - people/candidate/legislative
   - people/candidate/city/mayor
-  - Party/Republican
+  - party/republican
 residence: "[[Pocatello]]"
 ---

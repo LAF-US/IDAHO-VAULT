@@ -2,7 +2,7 @@
 tags:
   - people/elected
   - people/elected/legislative
-  - Party/Republican
+  - party/republican
 residence: "[[Nampa]]"
 ---
 - [[Senate member]] for [[Legislative District 12|LD12]] after [[redistricting]] 

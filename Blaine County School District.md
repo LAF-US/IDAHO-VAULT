@@ -2,6 +2,6 @@
 aliases:
   - Blaine
 tags:
-  - schools/K12/district
+  - schools/k12/district
 ---
 [[Hailey]]/[[Ketchum]]/[[Bellevue]], [[Blaine County]] 

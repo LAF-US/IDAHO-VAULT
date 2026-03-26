@@ -1,6 +1,6 @@
 ---
 tags:
-  - Party/Libertarian
+  - party/libertarian
   - geography/land/state
 aliases:
   - Libertarian

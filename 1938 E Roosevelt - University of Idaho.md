@@ -1,6 +1,6 @@
 ---
 tags:
-  - Category/Facet/Photos
+  - category/facet/photos
 date: 1938-03-26
 ---
 [[Eleanor Roosevelt]] visits [[University of Idaho]], March 26, 1938

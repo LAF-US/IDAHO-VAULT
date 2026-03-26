@@ -1,7 +1,7 @@
 ---
 tags:
   - people/elected/legislative
-  - Party/Republican
+  - party/republican
   - people/candidate/legislative
 ---
 Residence: [[Twin Falls]]

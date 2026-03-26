@@ -1,9 +1,9 @@
 ---
 tags:
   - people/elected
-  - Party/Democratic
+  - party/democratic
   - people/elected/legislative
-  - Party/Republican
+  - party/republican
 residence: "[[Boise]]"
 ---
 

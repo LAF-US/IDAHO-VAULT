@@ -1,6 +1,6 @@
 ---
 tags:
-  - Category/Inlay
+  - category/inlay
 ---
 ![[INLAY-01-07.jpg]]
 # Hate in the News

@@ -1,7 +1,7 @@
 ---
 tags:
   - people/elected/legislative
-  - Party/Republican
+  - party/republican
 ---
 [[House member|Representative]] from [[Legislative District 1]] 
 Succeeded [[Sage Dixon]] 
