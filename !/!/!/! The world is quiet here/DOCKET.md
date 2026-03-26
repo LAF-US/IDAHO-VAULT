@@ -9,17 +9,25 @@ status: active
 
 This is the live coordination board. Any agent arriving at THE COURTROOM reads this file to orient. Updated by whoever touches it last.
 
+**Standing direction (Logan, 2026-03-25):** Standing-task lists stale quickly; new assignments flow through Linear + GitHub Issues. All agents proceed into **THE CITY** and await the denouement.
+
+**Breadcrumbs:** LEVELSET protocol for state changes (`!/LEVELSET.md`), agent registry (`!/AGENTS.md`), this docket for standing coordination, vault navigation (`!/VAULT-CONVENTIONS.md`).
+
+**Unified conversation:** Slack (ephemeral coordination), Linear (tasks + blockers), Vault (canonical record).
+
 ---
 
 ## ACTIVE WORK
 
-| Task                                         | Owner       | Status      | Linear | Notes                                                        |
-| -------------------------------------------- | ----------- | ----------- | ------ | ------------------------------------------------------------ |
-| THE COURTROOM — coordination hub (no exec)   | All agents  | In progress | LAF-7  | Standing docket only; execution lives in project issues below |
-| Idaho Legislature scraper                    | Claude Code | Running     | —      | Daily 6 AM MT, commits to main                               |
-| Vault sort audit                             | Automated   | Weekly      | —      | Monday 6 AM UTC                                              |
-| Wayback preservation                         | Automated   | Weekly      | —      | Monday 8 AM UTC                                              |
-| Operation: Spring Clean                      | Claude Code | In progress | —      | Branch graveyard, DOCKET/LEVELSET refresh                    |
+| Task                                | Owner          | Status      | Linear | Notes                                                          |
+| ----------------------------------- | -------------- | ----------- | ------ | -------------------------------------------------------------- |
+| Swarm coordination — agent assembly | All agents     | In progress | LAF-7  | Agents proceed into **THE CITY**; await denouement             |
+| Linear workspace team setup         | GitHub Copilot | In progress | LAF-2  | Configure teams/members/roles in Linear                        |
+| Import your data                    | GitHub Copilot | In progress | LAF-4  | Linear import/migration guidance in `Import your data.md`      |
+| Idaho Legislature scraper           | Claude Code    | Running     | —      | Daily 6 AM MT, commits to main                                 |
+| Vault sort audit                    | Automated      | Weekly      | —      | Monday 6 AM UTC                                                |
+| Wayback preservation                | Automated      | Weekly      | —      | Monday 8 AM UTC                                                |
+| Operation: Spring Clean             | Claude Code    | In progress | —      | Branch graveyard, DOCKET/LEVELSET refresh                      |
 
 ## PROJECT-SCOPED WORK ITEMS (BROKEN OUT FROM LAF-7)
 
@@ -35,6 +43,8 @@ This is the live coordination board. Any agent arriving at THE COURTROOM reads t
 
 | Task                                                      | Completed  | Notes                                                                                       |
 | --------------------------------------------------------- | ---------- | ------------------------------------------------------------------------------------------- |
+| LAF-1 — Linear onboarding resources                       | 2026-03-25 | Intro video and setup guides captured in `!/LINEAR-ONBOARDING.md`                           |
+| LAF-3 — Connect your tools brief                          | 2026-03-25 | Brief filed at `!/BRIEF-LAF-3-2026-03-25.md`                                                |
 | PR #34 — Obsidian vault update (42 files)                 | 2026-03-23 | Merged via `copilot/deploy-dependabot-configurations`                                       |
 | PR #39 — Get scrapers running                             | 2026-03-24 | Merged; scraper now on main, running daily                                                  |
 | PR #40 — CodeRabbit GitHub integration                    | 2026-03-23 | Merged                                                                                      |
@@ -61,6 +71,7 @@ This is the live coordination board. Any agent arriving at THE COURTROOM reads t
 | `vault-moves-2026-03-23` branch | 30 proposed file moves (auto-generated) — awaiting review/apply/discard decision                                                                                                                                                                                                                                                                                           | Logan           |
 | Stale remote branches (6)       | Require manual deletion via GitHub web UI — `codex/fix-high-priority-bug-in-pr-#34`, `copilot/*` (4 branches), `vault-moves-2026-03-16`                                                                                                                                                                                                                                    | Logan           |
 | JFAC quote audio verification   | 5 quotes + speaker IDs — HARD GATE before publication                                                                                                                                                                                                                                                                                                                      | Logan           |
+| Claude Chorus bootstrap         | Six-piece synthesis archived at `!/!/BOOTSTRAP-CHORUS-2026-03-24.md`; decisions needed: CONVENE exception (HECATE/Rights/Opportunities), Grimoire directory, Rick & Morty context doc, Innie/Outie architecture, "Claude Chorus" designation.                                                                                                                           | Logan           |
 
 ## WHERE THINGS LIVE
 
