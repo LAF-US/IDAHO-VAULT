@@ -1,7 +1,7 @@
 ---
 tags:
   - administration/governance
-updated: 2026-03-24
+updated: 2026-03-25
 status: draft
 source: commit
 ---
@@ -17,7 +17,7 @@ This document partitions the vault into three governance zones by write-authorit
 | Zone | Paths | Write Authority | PR Merge Authority | Risk Tier |
 |------|-------|----------------|-------------------|-----------|
 | **Constitutional** | `!/` (all nested), root governance files (`CONSTITUTION.md`, `DECISIONS.md`, `AGENTS.md`, `PROTOCOL.md`, `VAULT-CONVENTIONS.md`, `VAULT-ZONES.md`, `CLAUDE.md`, `GEMINI.md`, `Ethics.md`, `Logan.md`) | Logan only. Agents propose via PR — no standing write window. | Logan only | High |
-| **Operational** | `.github/workflows/`, `.github/scripts/`, `.github/actions/`, `.github/swarm/`, `swarm/` | Agents propose via PR. Logan reviews and merges. | Logan only | High |
+| **Operational** | `.github/workflows/`, `.github/scripts/`, `.github/actions/`, `.github/swarm/`, `!/swarm/` | Agents propose via PR. Logan reviews and merges. | Logan only | High |
 | **Data** | `SOURCES/`, `TOPICS/`, `PEOPLE/`, `PLACES/`, `ORGANIZATIONS/`, `GOVERNMENTS/`, `ATTACHMENTS/`, `INBOX/`, `X LABELER/`, all other vault `.md` content | Agent-assignable via GitHub Issues. All writes via PR. | Logan (auto-merge eligible for low-risk per `auto-pr.yml`) | Low |
 
 ---
@@ -40,7 +40,7 @@ This zone is protected by `CODEOWNERS` (`/!/` requires `@loganfinney27` review).
 
 ### Operational Zone
 
-Covers `.github/` subtrees and `swarm/` tooling. Both CODE AUTHORITY and Copilot can propose modifications to `.github/` per [[AGENTS]] Section 5 overlap rules.
+Covers `.github/` subtrees and `!/swarm/` tooling. Both CODE AUTHORITY and Copilot can propose modifications to `.github/` per [[AGENTS]] Section 5 overlap rules.
 
 **Access model:** Agents with GitHub repo access can submit PRs. Logan reviews and merges. No auto-merge — all Operational Zone changes are high-risk.
 
@@ -62,6 +62,27 @@ Per Logan's directive (2026-03-24): no agent — including CODE AUTHORITY — ma
 - **Logan-merged:** Logan holds sole merge authority (with auto-merge exception for low-risk Data Zone changes)
 
 This means CODE AUTHORITY's "Direct write" capability tier (per [[AGENTS]]) describes *mechanical ability*, not *standing authorization*. Each task requires fresh authorization.
+
+---
+
+## Exclamation-Space Routing Grammar
+
+| Space | Purpose | Typical contents | Routing posture |
+|-------|---------|------------------|-----------------|
+| `!` | Constitutional anchor and pointer to the governance stack | `CONSTITUTION.md`, `DECISIONS.md`, `AGENTS.md`, `PROTOCOL.md`, `VAULT-CONVENTIONS.md`, `VAULT-ZONES.md`, `CLAUDE.md`, `GEMINI.md`, `Ethics.md`, `Logan.md`, `!/README.md` | **Stable only.** No scratch notes; use for canonical governance and orientation. |
+| `!/!` | Routing spine for structured coordination and context packages | `LEVELSET-*`, `HANDOFF-*`, DOCKET/READY-STATE bundles, branch triage, MCP discovery, context passovers | **Stable routing.** Updates can churn but remain in-versioned artifacts. Promote final decisions to `!/DECISIONS.md` or other constitutional files. |
+| `!/!/!` (`"The world is quiet here"`) | Live courtroom for active swarm coordination | `DOCKET.md`, live status updates, short-term instructions for in-flight sessions | **Hot but stable.** Use for real-time updates; roll durable outcomes into `!/!/` (handoffs/LEVELSET) or `!/` (DECISIONS/PROTOCOL) once settled. |
+
+### Stable routing vs. ephemeral exchange
+
+- **Stable routing** lives in the `!` family paths above. Anything written here is treated as canonical and must be committed.
+- **Ephemeral exchange** happens in chats, Slack, GitHub comments, or temporary scratch files. These channels are coordination-only — not records of decision.
+
+### Movement rules for agents
+
+1. Capture outcomes from ephemeral channels into `!/!/!` (DOCKET) when work is active, or directly into `!/!/` handoffs/LEVELSET packages when handing over.
+2. When a decision is confirmed, promote it to the appropriate constitutional file in `!/` (e.g., `DECISIONS.md`, `PROTOCOL.md`, `VAULT-CONVENTIONS.md`).
+3. Do not park scratch content in `!` or `!/!`; either discard ephemeral notes or convert them into structured handoffs before committing.
 
 ---
 
