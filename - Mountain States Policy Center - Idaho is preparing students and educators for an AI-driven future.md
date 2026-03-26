@@ -1,5 +1,5 @@
 ---
-outlet:
+outlet: "[[Mountain States Policy Center]]"
 url: "https://www.mountainstatespolicy.org/post/idaho-is-preparing-students-and-educators-for-an-ai-driven-future"
 author:
   - "[[Meg Goudy]]"
@@ -45,11 +45,3 @@ The Idaho AI Summit demonstrated that conversations about artificial intelligenc
   
 
 By working together, educators and industry leaders can ensure that students gain the knowledge and skills necessary to participate in the future AI economy. Through thoughtful collaboration and forward-thinking policies, Idaho is working to prepare students not only to navigate the AI age but to lead it.
-
-  
-
-[![There’s likely to be a waitlist for Idaho’s new parental choice tax credit, unless…](https://static.wixstatic.com/media/11062b_97d0cd955935426dac98464f0e0344d1~mv2.jpeg/v1/fill/w_289,h_163,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_97d0cd955935426dac98464f0e0344d1~mv2.jpeg)](https://www.mountainstatespolicy.org/post/there-s-likely-to-be-a-waitlist-for-idaho-s-new-parental-choice-tax-credit-unless)
-
-[![MSPC names Dirk Kempthorne Elevation Award recipient](https://static.wixstatic.com/media/f1dfe7_5d25cca789d84c338f195d1e3e39db0f~mv2.jpg/v1/fill/w_289,h_163,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/f1dfe7_5d25cca789d84c338f195d1e3e39db0f~mv2.jpg)](https://www.mountainstatespolicy.org/post/mspc-names-dirk-kempthorne-elevation-award-recipient)
-
-[![The wealth migration is real - which states are benefiting?](https://static.wixstatic.com/media/nsplsh_bec6a848aae9412fb9f3adac64b9bcea~mv2.jpg/v1/fill/w_289,h_163,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/nsplsh_bec6a848aae9412fb9f3adac64b9bcea~mv2.jpg)](https://www.mountainstatespolicy.org/post/the-wealth-migration-is-real-which-states-are-benefiting)
