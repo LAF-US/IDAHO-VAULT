@@ -2,6 +2,6 @@
 aliases:
   - Emmett
 tags:
-  - schools/K12/district
+  - schools/k12/district
 ---
 [[Emmett]], [[Gem County]] 

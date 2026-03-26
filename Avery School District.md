@@ -2,6 +2,6 @@
 aliases:
   - Avery
 tags:
-  - schools/K12/district
+  - schools/k12/district
 ---
 [[Avery]], [[Shoshone County]] 

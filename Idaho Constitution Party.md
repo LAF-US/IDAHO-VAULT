@@ -1,6 +1,6 @@
 ---
 tags:
-  - Party/Constitution
+  - party/constitution
   - geography/land/state
 aliases:
   - Constitution Party

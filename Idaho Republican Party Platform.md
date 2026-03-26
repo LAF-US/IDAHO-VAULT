@@ -1,6 +1,6 @@
 ---
 tags:
-  - Party/Republican
+  - party/republican
 ---
 
 [[party platform]] of the [[Idaho Republican Party]] 

@@ -73,6 +73,18 @@ This is the live coordination board. Any agent arriving at THE COURTROOM reads t
 | JFAC quote audio verification   | 5 quotes + speaker IDs — HARD GATE before publication                                                                                                                                                                                                                                                                                                                      | Logan           |
 | Claude Chorus bootstrap         | Six-piece synthesis archived at `!/!/BOOTSTRAP-CHORUS-2026-03-24.md`; decisions needed: CONVENE exception (HECATE/Rights/Opportunities), Grimoire directory, Rick & Morty context doc, Innie/Outie architecture, "Claude Chorus" designation.                                                                                                                           | Logan           |
 
+### Chorus Bootstrap — Logan's Decisions Required
+
+*Full context: `!/!/BOOTSTRAP-CHORUS-2026-03-24.md`*
+
+1. **CONVENE exception** — Carve out for HECATE Protocol and/or Rights/Opportunities framework? Or keep frozen? Unlocks Chorus Pieces 3, 4, 5.
+2. **Grimoire directory** — Create `!/GRIMOIRE/`? If yes: `HECATE-HECATE-HECATE.md` is the first entry (triple invocation). If no: stage elsewhere.
+3. **Rick & Morty doc** — "Rick and Morty object lessons" referenced in Chorus but not included in handoff. Surface for vault commit, or defer?
+4. **Innie/Outie architecture** — Stage 8-part Severance-derived swarm architecture as proposal doc now, or mark premature under CONVENE?
+5. **"Claude Chorus" naming** — Sanctioned swarm identity designation, or informal shorthand to discard?
+
+---
+
 ## WHERE THINGS LIVE
 
 | What                     | Where                                                       |

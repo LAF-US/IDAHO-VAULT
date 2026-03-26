@@ -1,6 +1,6 @@
 ---
 tags:
-  - Category
+  - category
 ---
 *Differences, divides, schisms, breaks*
 

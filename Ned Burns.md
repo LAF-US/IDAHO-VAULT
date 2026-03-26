@@ -1,7 +1,7 @@
 ---
 tags:
   - people/elected/legislative
-  - Party/Democratic
+  - party/democratic
   - people/elected
   - people
 ---

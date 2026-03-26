@@ -1,6 +1,6 @@
 ---
 tags:
-  - Party/Democratic
+  - party/democratic
   - people/deceased
   - people/elected/statewide/governor
   - people/candidate/statewide/governor

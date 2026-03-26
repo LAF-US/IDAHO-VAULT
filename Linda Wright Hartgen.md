@@ -5,7 +5,7 @@ aliases:
 tags:
   - people/elected/legislative
   - people/elected
-  - Party/Republican
+  - party/republican
   - people
 ---
 Residence: [[Twin Falls]]

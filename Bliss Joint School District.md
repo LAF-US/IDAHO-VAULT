@@ -2,6 +2,6 @@
 aliases:
   - Bliss
 tags:
-  - schools/K12/district
+  - schools/k12/district
 ---
 [[Bliss]], [[Gooding County]] 

@@ -2,6 +2,6 @@
 aliases:
   - Aberdeen
 tags:
-  - schools/K12/district
+  - schools/k12/district
 ---
 [[Aberdeen]], [[Bingham County]] 
