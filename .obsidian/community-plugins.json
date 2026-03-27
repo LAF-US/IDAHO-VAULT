@@ -1,11 +1,9 @@
 [
-  "better-search-views",
   "obsidian-mind-map",
   "graph-nested-tags",
   "recent-files-obsidian",
   "obsidian42-strange-new-worlds",
   "tag-wrangler",
-  "mcp-tools",
-  "obsidian-local-rest-api",
-  "obsidian-linter"
+  "obsidian-linter",
+  "better-search-views"
 ]

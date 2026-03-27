@@ -26,5 +26,6 @@
     "editor:clear-formatting",
     "editor:configure-toolbar"
   ],
-  "mobilePullAction": "daily-notes"
+  "mobilePullAction": "daily-notes",
+  "alwaysUpdateLinks": true
 }
