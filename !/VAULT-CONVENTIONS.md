@@ -202,6 +202,29 @@ When uncertain about sourcing category, **ask Logan**.
 
 ---
 
+## Obsidian Sync / Git Boundary
+
+Two systems share the vault. They have distinct, non-overlapping responsibilities.
+
+| Layer | Obsidian Sync (paid) | Git / GitHub |
+| --- | --- | --- |
+| Plugin code (`main.js`, `manifest.json`) | Syncs across devices | Tracked — public record |
+| Plugin settings (`data.json`) | Syncs across devices, E2E encrypted | **Gitignored** — never reaches GitHub |
+| `community-plugins.json` | Syncs across devices | Tracked — canonical plugin list |
+| Workspace state (`workspace.json`, `graph.json`) | Syncs across devices | Gitignored — machine-local noise |
+| Vault content (`.md` files) | Syncs across devices | Tracked |
+
+**Rule:** Obsidian Sync is the private courier for credentials and machine state. Git is the public record for vault content and plugin presence. The `.gitignore` wildcard `.obsidian/plugins/*/data.json` is the firewall — no `data.json` reaches GitHub without a deliberate `git add --force`.
+
+**Required Obsidian Sync settings (enable on every device):**
+
+- Settings → Sync → `Installed community plugins` ✓
+- Settings → Sync → `Plugin settings` ✓
+
+**Mobile:** When vault-mobile is added, Obsidian Sync carries plugins and settings automatically. Desktop-only plugins (e.g., `obsidian-local-rest-api`) will be silently skipped by mobile Obsidian.
+
+---
+
 ## Git Practices
 
 - Branch naming:
