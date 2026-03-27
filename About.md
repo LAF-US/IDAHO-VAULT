@@ -1,21 +1,27 @@
+---
+title: About
+aliases: [About]
+linter-yaml-title-alias: About
+---
+
 ![[IdahoCutDiagram.jpg]]
 
-# MASTHEAD
+## MASTHEAD
 
 **[[index|The Gemstone]]** is an independent outlet about [[Idaho]]. Well, it's about much more than that.
 
 ---
 
->If the press is not free; 
+> If the press is not free;
 >
->if speech is not independent and untrammeled; 
+> if speech is not independent and untrammeled;
 >
->if the mind is shackled or made impotent through fear, 
+> if the mind is shackled or made impotent through fear,
 >
->*it makes no difference under what form of government you live,* 
+> *it makes no difference under what form of government you live,*
 >
->*you are a subject and not a citizen.*
+> *you are a subject and not a citizen.*
 >
->— **U.S. Sen. [[William Borah|William E. Borah]]**, 1917
+> — **U.S. Sen. [[William Borah|William E. Borah]]**, 1917
 
---- 
+---
