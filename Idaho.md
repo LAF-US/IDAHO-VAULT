@@ -1,16 +1,8 @@
 ---
-<<<<<<< Updated upstream
-tags:
-  - category/frieze
-aliases:
-  - The Gem State
-  - State of Idaho
-=======
-tags: [Category/Frieze]
+tags: [category/frieze]
 aliases: [Idaho, The Gem State, State of Idaho]
 title: Idaho
 linter-yaml-title-alias: Idaho
->>>>>>> Stashed changes
 ---
 
 ![[Idaho.png]]
