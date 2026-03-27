@@ -1,11 +1,19 @@
 ---
+<<<<<<< Updated upstream
 tags:
   - category/facet/speeches
+=======
+tags: [Category/Facet/Speeches]
+>>>>>>> Stashed changes
 date: 1921-09-01
+title: 1921 Borah - Necessity for Naval Disarmament
+aliases: [1921 Borah - Necessity for Naval Disarmament]
+linter-yaml-title-alias: 1921 Borah - Necessity for Naval Disarmament
 ---
-# Sen. [[William Borah]], (R)-Idaho
 
-Despite her military defeat, Germany, by reason of the shortsighted and blundering policies of the allied and associated powers, may yet secure economic dominance in Europe. Defeat has resulted in Germany’s being deprived of her army and her navy. *The burden of armaments has been forced from the backs of the German people. **They may now devote their energies and their talents to agriculture, to industry, to the arts, to the things which constitute the real wealth and strength of a people.** Their genius will find expression, not in arms, or on the military field, but in improved machinery and cooperative industry.* Every ounce of effort which they put forth will be along lines which produce something, which add wealth to the community, which make for contentment and prosperity to the people, which insure greater physical prowess and a higher brain power.
+## Sen. [[William Borah]], (R)-Idaho
+
+Despite her military defeat, Germany, by reason of the shortsighted and blundering policies of the allied and associated powers, may yet secure economic dominance in Europe. Defeat has resulted in Germany's being deprived of her army and her navy. *The burden of armaments has been forced from the backs of the German people. **They may now devote their energies and their talents to agriculture, to industry, to the arts, to the things which constitute the real wealth and strength of a people.** Their genius will find expression, not in arms, or on the military field, but in improved machinery and cooperative industry.* Every ounce of effort which they put forth will be along lines which produce something, which add wealth to the community, which make for contentment and prosperity to the people, which insure greater physical prowess and a higher brain power.
 
 *On the other hand, the allied and associated powers are carrying a vast burden because of their great armies and navies. **These burdens are being increased upon a stupendous scale.*** Hundreds of thousands of their people are to be engaged in lines which produce nothing, add no wealth to the community, make not for health, growth and happiness, but for display, parade and possibly for destruction and death. The German people are compelled to preserve their energies for things which count. The allied and associated powers are burying their people under intolerable taxes, discouraging industry, sterilizing human energy, and breeding discontent through their ever-enlarging plans for increased armaments…
 
@@ -37,6 +45,6 @@ For myself, I refuse to concede time - **force** is the only power left, or that
 
 ---
 
-[^1] “William E. Borah on the Necessity for Naval Disarmament, September 1921”. Essay, September, 1921. From *Teaching American History*. https://teachingamericanhistory.org/document/william-e-borah-on-the-necessity-for-naval-disarmament-september-1921/ 
+[^1] "William E. Borah on the Necessity for Naval Disarmament, September 1921". Essay, September, 1921. From *Teaching American History*. <https://teachingamericanhistory.org/document/william-e-borah-on-the-necessity-for-naval-disarmament-september-1921/>
 
 ---
