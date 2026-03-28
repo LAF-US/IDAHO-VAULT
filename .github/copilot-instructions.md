@@ -39,7 +39,7 @@ This vault uses multiple AI tools. All agents share vault conventions defined in
 
 See also:
 - `!/VAULT-CONVENTIONS.md` — Shared vault conventions for all agents
-- `CLAUDE.md` — Instructions for Claude Code (Anthropic)
-- `GEMINI.md` — Instructions for Gemini agents (Google)
+- `.claude/CLAUDE.md` — Operational instructions for Claude Code (Anthropic)
+- `.gemini/GEMINI.md` — Operational instructions for Gemini agents (Google)
 - `!/AGENTS.md` — Full agent registry, capability tiers, and boundary rules
 - `!/LEVELSET-STEP-0-EXTERNAL-AGENT.md` — Paste-to-agent LEVELSET prompt for chat agents
