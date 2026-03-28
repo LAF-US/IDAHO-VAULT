@@ -1,7 +1,8 @@
 "Claude" [[persona]] ; [[Anthropic]] [[AI]] [[agent]] [[voice]]
+
 # CLAUDE persona frame
 
-This file is loaded automatically by Claude and its Code sessions working in the repository. For vault structure, naming, frontmatter, and shared conventions, see `!/VAULT-CONVENTIONS.md`.
+This file is auto-loaded by Claude Code CLI from the repository root. For vault structure, naming, frontmatter, and shared conventions, see `!/VAULT-CONVENTIONS.md`.
 
 **Owner:** Logan Finney — journalist, producer/reporter, Idaho Reports / Idaho Public Television; see "[[LOGAN]]" and "[[Logan Finney|Logan]]"
 **Repository URL:** github.com/loganfinney27/IDAHO-VAULT (public vault master repo)
@@ -18,34 +19,11 @@ This file is loaded automatically by Claude and its Code sessions working in the
 
 ## Governance
 
-This file provides operational instructions for Claude Code sessions. The canonical constitution is `!/CONSTITUTION.md`. When this file and `!/CONSTITUTION.md` conflict, `!/CONSTITUTION.md` governs.
+This file provides operational instructions for Claude Code sessions. The canonical constitution is `!/CONSTITUTION.md`. When this file and `!/CONSTITUTION.md` conflict, `!/CONSTITUTION.md` governs. This instance operates at Direct Write capability tier per `!/AGENTS.md`.
 
 ## Automation
 
-| Script | Purpose | Trigger |
-|---|---|---|
-| `sort_audit.py` | Audits vault structure for misplaced files | Manual (workflow_dispatch) |
-| `idaho_leg_scraper.py` | Scrapes Idaho Legislature bill data | Daily 6 AM MT + manual |
-| `post_digest.py` | Posts bill activity to GitHub Issues digest | Called by scraper workflow |
-| `classify_paths.py` | Classifies changed files by risk tier (high/low) | Called by auto-pr workflow |
-| `auto-pr.yml` | Auto-creates PRs from `claude/*` branches; auto-merges low-risk | Push to `claude/**` |
-| `branch-cleanup.yml` | Deletes merged `claude/*` branches | PR merge + weekly sweep |
-
----
-
-## Conversation Taxonomy
-
-Claude conversations follow a naming convention:
-
-| Prefix | Purpose |
-|---|---|
-| PERMANENT: | Central, non-deletable conversations |
-| PERSISTENT: | Long-running, role-specific conversations |
-| TASK: | Bounded, completable work items |
-| STORY: | Journalism story development |
-| PROJECT: | Multi-session projects |
-| ISSUE: | Problem resolution |
-| INQUIRY: | Research questions |
+See `!/VAULT-CONVENTIONS.md` for the full automation inventory. Scripts live in `.github/scripts/`; workflows in `.github/workflows/`.
 
 ---
 
@@ -59,12 +37,15 @@ That file is the live status board. Update it when you start or finish work. Tas
 
 ## Multi-Agent Ecosystem
 
-This vault uses multiple AI tools. All agents share vault conventions defined in `VAULT-CONVENTIONS.md` and are coordinated via GitHub Issues and PRs.
+This vault uses multiple AI tools. All agents share vault conventions defined in `!/VAULT-CONVENTIONS.md` and are coordinated via GitHub Issues and PRs.
 
 **Coordination workflow:** Logan assigns tasks via GitHub Issues with agent labels (`agent:claude-code`, `agent:codex`, `agent:copilot`, `agent:gemini`). Each agent works on its own branch. PRs are the deliverable. Logan reviews and merges from GitHub.
 
 See also:
+
 - `!/VAULT-CONVENTIONS.md` — Shared vault conventions for all agents
-- `GEMINI.md` — Instructions for Gemini code agents (Google)
+- `GEMINI.md` — Instructions for Gemini agents (Google)
+- `CODEX.md` — Instructions for OpenAI Codex agents
+- `PERPLEXITY.md` — Instructions for Perplexity agents
 - `.github/copilot-instructions.md` — Instructions for GitHub Copilot
 - `!/AGENTS.md` — Full agent registry, capability tiers, and boundary rules
