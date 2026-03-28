@@ -7,6 +7,8 @@ created: 2026-03-25
 title: 2026-03-25 - - MSPC provides digital safety keynote address at Idaho Department of Education conference
 aliases: [2026-03-25 - - MSPC provides digital safety keynote address at Idaho Department of Education conference]
 linter-yaml-title-alias: 2026-03-25 - - MSPC provides digital safety keynote address at Idaho Department of Education conference
+tags:
+  - 2026/03/25
 ---
 
 ![](https://static.wixstatic.com/media/09a46f_26d9c8b4c0824842a4f78199370cb040~mv2.jpg/v1/fill/w_740,h_896,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/09a46f_26d9c8b4c0824842a4f78199370cb040~mv2.jpg)

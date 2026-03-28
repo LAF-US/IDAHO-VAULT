@@ -6,6 +6,7 @@ outlet:
 URL: https://www.idahopress.com/news/local/meridian-opens-fire-station-first-police-precinct/article_6a02357c-93bd-11ee-b2b1-5705d9110b80.html
 tags:
   - media/articles
+  - 2023/12/05
 ---
 [[Meridian]] opened its eighth [[fire station]] and first [[police precinct]] on Tuesday, an unthinkable development for many who started on the force decades ago. But Meridian has grown tremendously and likely will continue to expand in the northwestern part of the city.  
   
