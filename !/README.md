@@ -23,8 +23,8 @@ It is a pointer, not a separate constitution or duplicate governance layer.
 - `LEVELSET.md` — current living ecosystem status
 - `DECISIONS.md` — structural decision log
 - `VAULT-CONVENTIONS.md` — shared naming, frontmatter, and structure for all agents
-- `VAULT-ZONES.md` — routing grammar for `!`, `!/!`, and `!/!/!`
-- `!/` — routing layer: DOCKET, LEVELSET, handoffs, context bundles
+- `VAULT-TEMPLATES.md` — canonical document class and template system
+- `!/` — ephemeral layer: session logs, contexts, historical records
 
 ## Stability note
 
