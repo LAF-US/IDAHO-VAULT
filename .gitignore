@@ -53,3 +53,6 @@ Thumbs.db
 
 # Daily notes (ephemeral, personal)
 DAILYNOTES/
+
+# Claude Code local settings (machine-local, not for repo)
+.claude/settings.local.json
