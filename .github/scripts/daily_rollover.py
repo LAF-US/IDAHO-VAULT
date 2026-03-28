@@ -129,6 +129,22 @@ def _ordinal(n: int) -> str:
     return f"{n}{['th', 'st', 'nd', 'rd', 'th'][min(n % 10, 4)]}"
 
 
+def date_aliases(target_date: date) -> list[str]:
+    """Return the canonical set of date aliases for a daily note."""
+    weekday = target_date.strftime("%A")
+    month = target_date.strftime("%B")
+    day = target_date.day
+    day_ord = _ordinal(day)
+    year = target_date.year
+    return [
+        str(target_date),                           # 2026-03-28
+        f"{month} {day}, {year}",                   # March 28, 2026
+        f"{month} {day_ord}, {year}",               # March 28th, 2026
+        f"{day} {month} {year}",                    # 28 March 2026
+        f"{weekday}, {month} {day}, {year}",        # Saturday, March 28, 2026
+    ]
+
+
 def build_frontmatter(target_date: date) -> str:
     yesterday = target_date - timedelta(days=1)
     tomorrow = target_date + timedelta(days=1)
@@ -138,12 +154,13 @@ def build_frontmatter(target_date: date) -> str:
     year = target_date.year
     created = f"{weekday}, {month} {day_ord} {year}, 12:00:00 am"
     tag_date = target_date.strftime("%Y/%m/%d")
+    alias_lines = "".join(f"  - {a}\n" for a in date_aliases(target_date))
 
     return (
         f"---\n"
         f"title: {target_date}\n"
         f"aliases:\n"
-        f"  - {target_date}\n"
+        f"{alias_lines}"
         f"linter-yaml-title-alias: {target_date}\n"
         f"yesterday: {yesterday}\n"
         f"tomorrow: {tomorrow}\n"
