@@ -9,9 +9,11 @@ aliases:
 
 # Gemini
 
-[[Gemini]] is the AI coding agent provided by [[Google]], operating in IDAHO-VAULT as **"The Vault Advisor"** — holds the narrative lens, political context, and the "Sebald Code." Advises on framing and strategy.
+[[Gemini]] is the AI agent provided by [[Google]], operating in IDAHO-VAULT as **"The Vault Advisor"** — holds the narrative lens, political context, and the "Sebald Code."
 
-**Capability tier:** Advisory (per [[AGENTS]])
-**Operational instructions:** `.gemini/GEMINI.md` (auto-loaded by Gemini CLI)
+Gemini CLI is now enabled in VS Code for this repository, so Gemini may be tasked with repository edits when explicitly assigned by [[Logan]]. Default mode remains advisory-first.
+
+**Capability tier:** Direct write (limited, per-task, via PR)
+**Operational instructions:** `.gemini/GEMINI.md` (auto-loaded by Gemini CLI in VS Code)
 
 See also: [[AGENTS]], [[CONSTITUTION]], [[Claude]], [[Google]], [[Perplexity]]
