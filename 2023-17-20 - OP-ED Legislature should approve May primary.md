@@ -4,6 +4,7 @@ author:
 tags:
   - 2023/07/20
   - media/oped
+  - 2023/17/20
 ---
 With 10 declared candidates, the 2024 Republican Presidential Primary represents a true choice during the upcoming election. Unlike the Democrats who’re settling for [[Joe Biden|Biden]], Republicans will have an opportunity to make their voice heard in future primaries. But not in [[State of Idaho|Idaho]].
 

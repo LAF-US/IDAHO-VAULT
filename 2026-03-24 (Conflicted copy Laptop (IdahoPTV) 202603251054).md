@@ -3,6 +3,8 @@ yesterday: 2026-03-23
 today: 2026-03-24
 weekday: Tuesday
 tomorrow: 2026-03-25
+tags:
+  - 2026/03/24
 ---
 
 - [x] Senator Okuniewicz for panel
