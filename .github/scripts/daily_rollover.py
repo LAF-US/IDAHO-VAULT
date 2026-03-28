@@ -165,6 +165,19 @@ def todo_block_text(carried: list[str]) -> str:
     return "*(no incomplete items carried forward)*"
 
 
+def patch_nav_links(content: str, target_date: date) -> str:
+    """
+    Fill in blank yesterday:/tomorrow: frontmatter fields.
+    Handles notes created from the Obsidian template, which leaves these empty.
+    Only patches lines that are genuinely blank (e.g. 'yesterday:' or 'yesterday: ').
+    """
+    yesterday = str(target_date - timedelta(days=1))
+    tomorrow = str(target_date + timedelta(days=1))
+    content = re.sub(r'^yesterday:\s*$', f'yesterday: {yesterday}', content, flags=re.MULTILINE)
+    content = re.sub(r'^tomorrow:\s*$', f'tomorrow: {tomorrow}', content, flags=re.MULTILINE)
+    return content
+
+
 # ---------------------------------------------------------------------------
 # Write operations
 # ---------------------------------------------------------------------------
@@ -178,7 +191,7 @@ def update_today_note(
     block = todo_block_text(carried)
 
     if today_file.exists():
-        content = today_file.read_text()
+        content = patch_nav_links(today_file.read_text(), target_date)
         if "[[TO DO LIST]]" in content:
             # Replace the existing TODO section's tasks
             lines = content.splitlines()
