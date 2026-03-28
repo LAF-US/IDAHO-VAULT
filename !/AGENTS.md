@@ -36,7 +36,7 @@ All inter-agent communication flows through or is visible to [[LOGAN]]. There is
 | PERSISTENT: ADMINISTRATION    | Claude (conversation) | Draft only               | Constitutional layer, handoffs, judgment calls                    | Via [[LOGAN]]'s account | None — produces drafts       | None (draft only)               |
 | GitHub Copilot (ADMIN GitHub) | GitHub Copilot        | Multi-repo admin         | GitHub administration across all [[LOGAN]]'s repos                | Bot app needed          | GitHub APIs, all repos       | Operational, Data (via PR)      |
 | ChatGPT Codex                 | OpenAI Codex          | Direct write (scripting) | Specialized scripting — scrapers, GitHub Actions, complex logic   | Via [[LOGAN]]           | Repo read/write              | Operational, Data (via PR)      |
-| Gemini ("The Vault Advisor")  | Google AI             | Advisory                 | Narrative lens, political context, strategy. Does not touch code. | Via [[LOGAN]]           | None                         | None (advisory)                 |
+| Gemini ("The Vault Advisor")  | Gemini CLI / IDE      | Direct write (support)   | Narrative lens, strategy, and direct codebase assistance.         | Via [[LOGAN]]           | Repo read/write              | Operational, Data (via PR)      |
 | PERSISTENT: IMPLEMENTATION    | Claude (Project)      | Read/analysis            | Governance/architecture consultation                              | No                      | None — advisory only         | None (advisory)                 |
 | TASK: LEVELSET reports        | Claude (conversation) | Read/analysis            | Synthesis and status reporting                                    | No                      | None — advisory only         | None (advisory)                 |
 | STORY: JFAC Open Meetings     | Claude (conversation) | Read/analysis            | JFAC investigation — read-only                                    | No                      | None — advisory only         | None (advisory)                 |
@@ -253,7 +253,7 @@ These items require [[LOGAN]]'s direction before they can be formalized:
 
 | Item                                | Status                   | Notes                                                                      |
 | ----------------------------------- | ------------------------ | -------------------------------------------------------------------------- |
-| Gemini capability tier and scope    | **Undefined**            | Pixel smartphone, loganfinney27@gmail.com. No vault commits until defined. |
+| Gemini capability tier and scope    | **Active**               | Upgraded to CLI Code agent. Direct repo assistance and narrative lens.     |
 | Copilot non-vault repo boundaries   | **TBD**                  | Multi-repo admin decided; specific latitude per repo not yet specified.    |
 | GitHub agent labels                 | **Active**               | `agent:claude-code`, `agent:codex`, `agent:copilot`, `agent:gemini`        |
 | Research instance (Tier 4)          | **Not yet assigned**     | Tim Oren analysis, NICAR23 training queued when available.                 |
