@@ -146,6 +146,8 @@ Use `[[Full Name]]` for all internal links — people, places, organizations, bi
 
 ## Automation
 
+### Active Automation Scripts
+
 | Script                 | Purpose                                     | Trigger                         |
 | ---------------------- | ------------------------------------------- | ------------------------------- |
 | `sort_audit.py`        | Audits vault structure for misplaced files  | Weekly Monday 6 AM UTC + manual |
@@ -153,6 +155,23 @@ Use `[[Full Name]]` for all internal links — people, places, organizations, bi
 | `post_digest.py`       | Posts bill activity to GitHub Issues digest | Called by scraper workflow      |
 | `propose_moves.py`     | Proposes vault file reorganization          | Weekly Monday 7 AM UTC + manual |
 | `wayback_audit.py`     | Audits URL preservation in Wayback Machine  | Weekly Monday 8 AM UTC + manual |
+| `daily_rollover.py`    | Rolls over daily note tasks                 | Daily 4 AM MT                   |
+| `linear_brief_generator.py` | Generates research briefs from Linear issues | Called by linear-brief workflow |
+| `classify_paths.py`    | Classifies changed files by risk tier       | Called by auto-pr workflow      |
+| `validate_content.py`  | Validates vault content structure           | Called by multiple workflows    |
+| `post_levelset_closure.py` | Notifies when LEVELSET files ready for closure | Called by levelset-closure workflow |
+
+### Utility Scripts (Manual Use Only)
+
+These scripts are not called by automated workflows but are available for manual vault maintenance:
+
+| Script                  | Purpose                                                      | Usage                               |
+| ----------------------- | ------------------------------------------------------------ | ----------------------------------- |
+| `expand_date_aliases.py` | One-off: expands date alias frontmatter in daily notes       | `python3 .github/scripts/expand_date_aliases.py [--dry-run]` |
+| `normalize_tags.py`      | Normalizes Markdown note tags across vault                   | `python3 .github/scripts/normalize_tags.py [--write]` |
+| `tidy_daily_notes.py`    | One-off: normalizes daily note frontmatter structure         | `python3 .github/scripts/tidy_daily_notes.py [--dry-run]` |
+| `obsidian_rest_api_client.py` | REST API client for Obsidian Local REST API plugin    | Import/use in other scripts as needed |
+| `mcp_guardrails.py`      | MCP protocol guardrails (reserved for future MCP integration) | Import/use in MCP-enabled scripts   |
 
 Scripts live in `.github/scripts/`. Workflows live in `.github/workflows/`. Scripts that commit to the repo use `git config user.name "github-actions[bot]"`. Dependencies are tracked in `.github/scripts/requirements-scraper.txt`.
 
