@@ -6,6 +6,7 @@ outlet:
 URL: https://www.idahoednews.org/elections24/whos-spending-in-tuesdays-election-a-guide-to-some-key-players/
 tags:
   - media/articles
+  - 2024/05/20
 ---
 A complicated — and competing — network of outside groups has funneled hundreds of thousands of dollars into Tuesday’s legislative [[primary election|primaries]].
 

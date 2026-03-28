@@ -4,6 +4,8 @@ author:
   - "[[Logan Finney]]"
 published: 2026-02-10
 created: 2026-03-27
+tags:
+  - 2026/02/10
 ---
 ## Idaho bill would fine cities $2,000 daily for flying unapproved flags
 
