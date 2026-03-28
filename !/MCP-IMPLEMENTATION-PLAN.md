@@ -22,6 +22,18 @@ Adopt MCP safely by moving from observation to constrained execution to reliable
 
 ---
 
+
+## Coordination Prerequisite (Blocking)
+
+Before expanding MCP usage beyond discovery, `manifest.json` must be active as the shared coordination state.
+
+Required baseline:
+- `manifest.json` present at repo root
+- lock protocol enabled (soft-lock v1)
+- file-level entry updates on each write/read cycle
+
+Reference: [[MANIFEST-SPEC]]
+
 ## Phase 0 — Read-only discovery
 
 ### Scope
