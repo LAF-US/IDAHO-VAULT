@@ -24,6 +24,7 @@ Usage:
 
 import argparse
 import re
+from datetime import date
 from pathlib import Path
 
 VAULT_ROOT = Path(__file__).resolve().parents[2]
@@ -106,6 +107,13 @@ def main() -> None:
             continue
 
         file_date = m.group(1)
+
+        try:
+            date.fromisoformat(file_date)
+        except ValueError:
+            review.append((f.name, file_date, 'INVALID DATE'))
+            continue
+
         tag       = file_date.replace('-', '/')
         content   = f.read_text(errors='replace')
 
@@ -139,9 +147,16 @@ def main() -> None:
           f"already done: {len(skipped)}, review: {len(review)}")
 
     if review:
-        print("\n⚠ REVIEW — filename date vs frontmatter date conflict (not auto-tagged):")
-        for name, fd, fmd in review:
-            print(f"  filename={fd}  frontmatter={fmd}  →  {name}")
+        invalid = [(n, fd, r) for n, fd, r in review if r == 'INVALID DATE']
+        conflicts = [(n, fd, r) for n, fd, r in review if r != 'INVALID DATE']
+        if invalid:
+            print("\n\u26a0 REVIEW \u2014 invalid date in filename (not auto-tagged):")
+            for name, fd, _ in invalid:
+                print(f"  filename={fd}  \u2192  {name}")
+        if conflicts:
+            print("\n\u26a0 REVIEW \u2014 filename date vs frontmatter date conflict (not auto-tagged):")
+            for name, fd, fmd in conflicts:
+                print(f"  filename={fd}  frontmatter={fmd}  \u2192  {name}")
 
 
 if __name__ == "__main__":
