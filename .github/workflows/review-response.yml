@@ -1,0 +1,34 @@
+name: Agent Review Response
+
+on:
+  pull_request_review:
+    types: [submitted]
+
+permissions:
+  pull-requests: write
+  contents: write
+
+jobs:
+  acknowledge-review:
+    if: >
+      (github.event.review.state == 'changes_requested' || github.event.review.state == 'commented') &&
+      github.event.pull_request.user.login != github.event.review.user.login
+    runs-on: ubuntu-latest
+    steps:
+      - name: Acknowledge review and pause auto-merge
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REVIEWER: ${{ github.event.review.user.login }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          REVIEW_ID: ${{ github.event.review.id }}
+          REVIEW_STATE: ${{ github.event.review.state }}
+        run: |
+          gh label create "review-required" --color "D93F0B" --description "High-risk, requires Logan's review" --force 2>/dev/null || true
+
+          REVIEW_URL="${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/pull/${PR_NUMBER}#pullrequestreview-${REVIEW_ID}"
+
+          # Pause auto-merge until feedback is addressed
+          gh pr edit "$PR_NUMBER" --remove-label "auto-merge" 2>/dev/null || true
+          gh pr edit "$PR_NUMBER" --add-label "review-required" 2>/dev/null || true
+
+          gh pr comment "$PR_NUMBER" --body "Acknowledged review by @$REVIEWER (${REVIEW_STATE}). Auto-merge paused until recommended changes are addressed. [Review link]($REVIEW_URL)"
