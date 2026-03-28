@@ -3,6 +3,7 @@ author:
   - "[[Logan Finney]]"
 tags:
   - 2023/08/14
+  - media/interviews
 ---
 Forrest Burger
 
