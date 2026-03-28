@@ -1,7 +1,7 @@
 ---
 tags:
   - administration/coordination
-updated: 2026-03-24
+updated: 2026-03-25
 status: active
 ---
 
@@ -15,11 +15,21 @@ This is the live coordination board. Any agent arriving at THE COURTROOM reads t
 
 | Task                                | Owner       | Status      | Linear | Notes                                     |
 | ----------------------------------- | ----------- | ----------- | ------ | ----------------------------------------- |
-| Swarm coordination — agent assembly | All agents  | In progress | LAF-7  | Agents finding each other                 |
+| THE COURTROOM coordination hub      | All agents  | In progress | LAF-7  | Docket/orientation only; no catch-all execution |
 | Idaho Legislature scraper           | Claude Code | Running     | —      | Daily 6 AM MT, commits to main            |
 | Vault sort audit                    | Automated   | Weekly      | —      | Monday 6 AM UTC                           |
 | Wayback preservation                | Automated   | Weekly      | —      | Monday 8 AM UTC                           |
 | Operation: Spring Clean             | Claude Code | In progress | —      | Branch graveyard, DOCKET/LEVELSET refresh |
+
+## PROJECT-SCOPED WORK ITEMS (BROKEN OUT FROM LAF-7)
+
+| Work item | Scope | Owner | Status | Linear | Notes |
+| --------- | ----- | ----- | ------ | ------ | ----- |
+| COURTROOM decomposition | Break standing docket into scoped issue slots and keep LAF-7 as hub | Codex | Done | LAF-12 | This issue delivers the decomposition structure in this file |
+| Scraper operations | Idaho Legislature scraper runtime + reliability changes | Claude Code | In progress | _(create child issue)_ | Move all scraper implementation work out of LAF-7 |
+| Automation maintenance | Vault sort audit + Wayback preservation workflow maintenance | Claude Code / Copilot | Planned | _(create child issue)_ | Keep operational fixes scoped to automation-only issue(s) |
+| Branch hygiene | Branch cleanup, stale branch deletion workflow, and audit bookkeeping | Claude Code | In progress | _(create child issue)_ | Move Spring Clean execution updates to its own issue |
+| Publication gatekeeping | JFAC quote audio verification and publication blocking checks | Logan | Blocked | _(create child issue)_ | Keep evidence gate work separate from coordination docket |
 
 ## RECENTLY COMPLETED
 
