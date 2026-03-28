@@ -19,25 +19,23 @@ This is the live coordination board. Any agent arriving at THE COURTROOM reads t
 
 ## ACTIVE WORK
 
-| Task                                | Owner          | Status      | Linear | Notes                                                          |
-| ----------------------------------- | -------------- | ----------- | ------ | -------------------------------------------------------------- |
-| Swarm coordination — agent assembly | All agents     | In progress | LAF-7  | Agents proceed into **THE CITY**; await denouement             |
-| Linear workspace team setup         | GitHub Copilot | In progress | LAF-2  | Configure teams/members/roles in Linear                        |
-| Import your data                    | GitHub Copilot | In progress | LAF-4  | Linear import/migration guidance in `Import your data.md`      |
-| Idaho Legislature scraper           | Claude Code    | Running     | —      | Daily 6 AM MT, commits to main                                 |
-| Vault sort audit                    | Automated      | Weekly      | —      | Monday 6 AM UTC                                                |
-| Wayback preservation                | Automated      | Weekly      | —      | Monday 8 AM UTC                                                |
-| Operation: Spring Clean             | Claude Code    | In progress | —      | Branch graveyard, DOCKET/LEVELSET refresh                      |
+| Task                                | Owner       | Status      | Linear | Notes                                     |
+| ----------------------------------- | ----------- | ----------- | ------ | ----------------------------------------- |
+| THE COURTROOM coordination hub      | All agents  | In progress | LAF-7  | Docket/orientation only; no catch-all execution |
+| Idaho Legislature scraper           | Claude Code | Running     | —      | Daily 6 AM MT, commits to main            |
+| Vault sort audit                    | Automated   | Weekly      | —      | Monday 6 AM UTC                           |
+| Wayback preservation                | Automated   | Weekly      | —      | Monday 8 AM UTC                           |
+| Operation: Spring Clean             | Claude Code | In progress | —      | Branch graveyard, DOCKET/LEVELSET refresh |
 
 ## PROJECT-SCOPED WORK ITEMS (BROKEN OUT FROM LAF-7)
 
-| Track / Work Item                    | Owner        | Status      | Linear   | Notes                                                                                   |
-| ------------------------------------ | ------------ | ----------- | -------- | --------------------------------------------------------------------------------------- |
-| Decomposition + routing plan         | All agents   | Drafting    | (TBD)    | Carve LAF-7 payload into discrete issues; align scope/owners; keep COURTROOM as hub     |
-| Scraper operations & monitoring      | Claude Code  | Running     | (TBD)    | Keep daily Idaho Legislature scraper healthy; alerting/telemetry review if drift occurs |
-| Automation upkeep (actions/scripts)  | Claude Code  | In flight   | (TBD)    | Auto-PR, ingest, audit workflows + scripts; guardrails + Node 24 readiness               |
-| Branch hygiene & auto-PR triage      | All agents   | Planned     | (TBD)    | Cull stale branches, normalize auto-PR routing, keep branch naming aligned to issues     |
-| Publication gatekeeping (JFAC audio) | Logan        | Pending     | (TBD)    | Verify 5 quotes + speaker IDs before publication; gating checklist lives in child issue  |
+| Work item | Scope | Owner | Status | Linear | Notes |
+| --------- | ----- | ----- | ------ | ------ | ----- |
+| COURTROOM decomposition | Break standing docket into scoped issue slots and keep LAF-7 as hub | Codex | Done | LAF-12 | This issue delivers the decomposition structure in this file |
+| Scraper operations | Idaho Legislature scraper runtime + reliability changes | Claude Code | In progress | _(create child issue)_ | Move all scraper implementation work out of LAF-7 |
+| Automation maintenance | Vault sort audit + Wayback preservation workflow maintenance | Claude Code / Copilot | Planned | _(create child issue)_ | Keep operational fixes scoped to automation-only issue(s) |
+| Branch hygiene | Branch cleanup, stale branch deletion workflow, and audit bookkeeping | Claude Code | In progress | _(create child issue)_ | Move Spring Clean execution updates to its own issue |
+| Publication gatekeeping | JFAC quote audio verification and publication blocking checks | Logan | Blocked | _(create child issue)_ | Keep evidence gate work separate from coordination docket |
 
 ## RECENTLY COMPLETED
 
