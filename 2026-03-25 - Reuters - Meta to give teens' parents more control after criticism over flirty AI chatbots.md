@@ -4,6 +4,8 @@ author:
   - "[[Reuters]]"
 published: 2025-10-17
 created: 2026-03-25
+tags:
+  - 2026/03/25
 ---
 ![Illustration shows a teenager posing for a photo while holding a smartphone in front of a Instagram logo](https://www.reuters.com/resizer/v2/KCYYTMJZBBP45GJZXOQY6FCNWI.jpg?auth=23ef5be9725c0bd3f25edf6ac53c2e0cf52627349b8a69eadca95f77b6cd1ccd&width=1200&quality=80)
 
