@@ -249,6 +249,22 @@ Two systems share the vault. They have distinct, non-overlapping responsibilitie
 
 ---
 
+## Conversation Taxonomy
+
+Logan uses a naming convention for AI conversations:
+
+| Prefix | Purpose |
+| --- | --- |
+| PERMANENT: | Central, non-deletable conversations |
+| PERSISTENT: | Long-running, role-specific conversations |
+| TASK: | Bounded, completable work items |
+| STORY: | Journalism story development |
+| PROJECT: | Multi-session projects |
+| ISSUE: | Problem resolution |
+| INQUIRY: | Research questions |
+
+---
+
 ## Swarm Coordination
 
 All agents coordinate through THE COURTROOM: `!/!/!/! The world is quiet here/DOCKET.md`
