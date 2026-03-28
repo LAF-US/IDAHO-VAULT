@@ -5,6 +5,7 @@ outlet:
 tags:
   - media/articles
   - 2022/election
+  - 2022/11/08
 ---
 [[Election Day|Tuesday’s results]] offered no big surprises or upsets in the winners or losers, but there is plenty to pick apart when you look at the percentages each candidate got.
 
