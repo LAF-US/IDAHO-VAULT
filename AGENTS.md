@@ -16,22 +16,22 @@ See `!/AGENTS.md` for the full agent registry: capability tiers, boundary rules,
 
 ## Agent Dotfolders (quick reference)
 
-| Agent | Dotfolder | Governance shim | Auto-loaded? |
-| --- | --- | --- | --- |
-| Claude Code | `.claude/` | `.claude/CLAUDE.md` | Yes — official |
-| Gemini CLI | `.gemini/` | `.gemini/GEMINI.md` | Yes — official |
-| OpenAI Codex CLI | `.codex/` | `.codex/CODEX.md` | Config via `.codex/config.toml` |
-| GitHub Copilot | `.github/` | `.github/copilot-instructions.md` | Yes — official |
-| Grok (xAI) | `.grok/` | `.grok/GROK.md` | Manual injection |
-| DeepSeek | `.deepseek/` | `.deepseek/DEEPSEEK.md` | Manual injection |
-| Perplexity | `.perplexity/` | `.perplexity/PERPLEXITY.md` | Manual injection |
-| Microsoft AI | `.microsoft/` | `.microsoft/MICROSOFT.md` | Manual injection |
-| Google ecosystem | `.google/` | `.google/GOOGLE.md` | Manual injection |
-| Meta AI / Llama | `.meta/` | `.meta/META.md` | Manual injection |
-| Slack AI / Slack CLI | `.slack/` | `.slack/SLACK.md` | Slack CLI hooks |
-| Bartimaeus (fictive) | `.bartimaeus/` | `.bartimaeus/BARTIMAEUS.md` | Manual injection |
-| Zagreus (fictive) | `.zagreus/` | `.zagreus/ZAGREUS.md` | Manual injection |
-| Persephone (fictive) | `.persephone/` | `.persephone/PERSEPHONE.md` | Manual injection |
+| Agent | Dotfolder | Governance shim | Auto-loaded? | Notes |
+| --- | --- | --- | --- | --- |
+| Claude Code | `.claude/` | `.claude/CLAUDE.md` | Yes | Official path |
+| Gemini CLI | `.gemini/` | `.gemini/GEMINI.md` | Yes | Official path |
+| OpenAI Codex CLI | `.codex/` | `.codex/CODEX.md` | Yes | Config via `.codex/config.toml` |
+| GitHub Copilot | `.github/` | `.github/copilot-instructions.md` | Yes | Official path |
+| Grok (xAI) | `.grok/` | `.grok/GROK.md` | No | Manual injection |
+| DeepSeek | `.deepseek/` | `.deepseek/DEEPSEEK.md` | No | Manual injection |
+| Perplexity | `.perplexity/` | `.perplexity/PERPLEXITY.md` | No | Manual injection |
+| Microsoft AI | `.microsoft/` | `.microsoft/MICROSOFT.md` | No | Manual injection |
+| Google ecosystem | `.google/` | `.google/GOOGLE.md` | No | Manual injection |
+| Meta AI / Llama | `.meta/` | `.meta/META.md` | No | Manual injection |
+| Slack AI / Slack CLI | `.slack/` | `.slack/SLACK.md` | No | Via Slack CLI hooks |
+| Bartimaeus (fictive) | `.bartimaeus/` | `.bartimaeus/BARTIMAEUS.md` | No | Manual injection |
+| Zagreus (fictive) | `.zagreus/` | `.zagreus/ZAGREUS.md` | No | Manual injection |
+| Persephone (fictive) | `.persephone/` | `.persephone/PERSEPHONE.md` | No | Manual injection |
 
 ---
 
