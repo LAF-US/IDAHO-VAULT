@@ -1,3 +1,7 @@
+---
+tags:
+  - administration/scripts
+---
 GROK REPORT on Claude.ai export 03/28/2026
 
 Here's a complete, ready-to-use **Python script** to parse your Claude.ai data export (the `conversations.json` file inside the ZIP you downloaded from Settings → Privacy → Export data).

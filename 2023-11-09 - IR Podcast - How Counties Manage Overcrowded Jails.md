@@ -3,7 +3,7 @@ author:
   - "[[Logan Finney]]"
 outlet:
   - "[[Idaho Reports]]"
-URL: https://blog.idahoreports.idahoptv.org/2023/11/09/podcast-how-counties-manage-overcrowded-jails/
+url: "https://blog.idahoreports.idahoptv.org/2023/11/09/podcast-how-counties-manage-overcrowded-jails/"
 tags:
   - 2023/11/09
   - media/podcasts

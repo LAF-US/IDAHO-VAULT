@@ -90,6 +90,17 @@ NEWS_MEDIA_PATTERN = re.compile(
     r"^\d{4}-\d{2}-\d{2}\s*[-–]\s*.+\s*[-–]\s*.+\.md$"
 )
 
+DAILY_NOTE_PATTERN = re.compile(r"^\d{4}-\d{2}-\d{2}\.md$")
+
+ALLOWED_ROOT_FILES = {
+    "CLAUDE.md",
+    "GEMINI.md",
+    "AGENTS.md",
+    "!README.md",
+    "README.md",
+    "TO DO LIST.md"
+}
+
 def relative_path(path):
     return str(path.relative_to(VAULT_ROOT)).replace("\\", "/")
 
@@ -107,6 +118,10 @@ def check_misplacement(filename, fkey, rel_folder):
         for pat in KNOWN_ORGS:
             if re.search(pat, stem, re.IGNORECASE):
                 return "ORGANIZATIONS", "looks like an organization, not a topic"
+
+    if rel_folder == "" and filename not in ALLOWED_ROOT_FILES and not DAILY_NOTE_PATTERN.match(filename):
+        return "X LABELER", "loose file in vault root"
+
     return None
 
 def audit():
