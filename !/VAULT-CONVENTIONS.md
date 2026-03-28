@@ -70,7 +70,18 @@ IDAHO-VAULT/
 
 ## Frontmatter Conventions
 
-All Obsidian files use YAML frontmatter. Key fields by type:
+All Obsidian files use YAML frontmatter. The canonical header/footer policy is defined in `!/VAULT-METADATA-STANDARD.md` and should be treated as the source of truth for required fields, optional fields, lifecycle status, timestamp format, authorship, and authority.
+
+### Baseline Required Fields (all governed markdown notes)
+
+```yaml
+title: "<document title>"
+updated: YYYY-MM-DD
+status: <draft|active|superseded|archived>
+authority: "<decision authority>"
+```
+
+### Type-Specific Additions
 
 **People:**
 
