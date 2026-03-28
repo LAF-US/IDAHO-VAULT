@@ -1,12 +1,12 @@
 name: Daily To-Do Rollover
 
 # Carries incomplete to-do items from yesterday's daily note into today's.
-# Runs each morning before Logan's workday starts (7 AM MT = 13:00 UTC).
+# Runs at 4 AM MT (10:00 UTC) — a liminal hour. See [[The 4 a.m. Mystery]] by [[Rives]].
 # Can also be triggered manually from the Actions tab.
 
 on:
   schedule:
-    - cron: '0 13 * * *'
+    - cron: '0 10 * * *'  # 4 AM MT — see [[The 4 a.m. Mystery]] by [[Rives]]
   workflow_dispatch:
     inputs:
       date:
