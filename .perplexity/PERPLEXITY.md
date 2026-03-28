@@ -10,7 +10,7 @@
 
 ## Governance
 
-This file is a context shim for Perplexity. Vault governance authority lives in `!/CONSTITUTION.md`. Perplexity is read/research-only — it does not write to the vault directly. Capability tier: Read/Analysis per `!/AGENTS.md`.
+This file is a context shim for Perplexity. Vault governance authority lives in `!/CONSTITUTION.md`. Perplexity is read/research-only — it does not write to the vault directly. Capability tier: **Read/Analysis** per `!/AGENTS.md`.
 
 ---
 
