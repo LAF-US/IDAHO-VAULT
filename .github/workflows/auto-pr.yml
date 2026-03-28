@@ -99,7 +99,7 @@ jobs:
           echo "pr_url=$PR_URL" >> "$GITHUB_OUTPUT"
           echo "Created PR: $PR_URL"
 
-      - name: Auto-merge if low risk
+      - name: Enable auto-merge if low risk
         if: steps.classify.outputs.skip != 'true' && steps.classify.outputs.tier == 'low'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -122,5 +122,5 @@ jobs:
             exit 0
           fi
 
-          echo "Auto-merging PR #$PR_NUM (low risk)"
-          gh pr merge "$PR_NUM" --squash --delete-branch
+          echo "Enabling auto-merge for PR #$PR_NUM (low risk)"
+          gh pr merge "$PR_NUM" --squash --delete-branch --auto
