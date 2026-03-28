@@ -60,6 +60,7 @@ This is the live coordination board. Any agent arriving at THE COURTROOM reads t
 | PR #54 — Compact MCP mapping in PROTOCOL.md              | 2026-03-24 | Incorporated into PR #57                                                                    |
 | PR #55 — MCP implementation plan (new file)               | 2026-03-24 | Incorporated into PR #57                                                                    |
 | PR #56 — MCP action logging template in VAULT-CONVENTIONS | 2026-03-24 | Incorporated into PR #57                                                                    |
+| LAF-9 — Vault template + document class system            | 2026-03-25 | Drafted `VAULT-TEMPLATES.md`; linked from conventions + canonical README                   |
 
 ## BLOCKED / PENDING LOGAN
 

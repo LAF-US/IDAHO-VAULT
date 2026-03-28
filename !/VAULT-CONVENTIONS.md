@@ -68,6 +68,27 @@ IDAHO-VAULT/
 
 ---
 
+## Document Classes and Templates
+
+The canonical class/template system is defined in `!/VAULT-TEMPLATES.md`.
+
+Rules:
+
+1. Every new note should be created from a recognized document class first.
+2. Required classes must use their canonical template and naming pattern.
+3. Unknown/ambiguous notes are staged as `misc_reference` and routed through `X LABELER/`.
+4. Class and template schema changes are governance changes, not ad-hoc formatting edits.
+
+See `!/VAULT-TEMPLATES.md` for:
+
+- class registry
+- template IDs
+- required frontmatter keys
+- routing/maintenance workflow
+- constitutional interaction model
+
+---
+
 ## Frontmatter Conventions
 
 All Obsidian files use YAML frontmatter. Key fields by type:
