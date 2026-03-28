@@ -2,6 +2,7 @@
 tags:
   - media/talks
 url: "https://www.ted.com/talks/charles_fleischer_all_things_are_moleeds"
+youtube: "https://youtu.be/UcnYqyQyHd8"
 author:
   - "[[Charles Fleischer]]"
 year: 2005
