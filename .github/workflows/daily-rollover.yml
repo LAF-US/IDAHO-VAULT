@@ -1,0 +1,64 @@
+name: Daily To-Do Rollover
+
+# Carries incomplete to-do items from yesterday's daily note into today's.
+# Runs at 4 AM MT (10:00 UTC) — a liminal hour. See [[The 4 a.m. Mystery]] by [[Rives]].
+# Can also be triggered manually from the Actions tab.
+
+on:
+  schedule:
+    - cron: '0 10 * * *'  # 4 AM MT — see [[The 4 a.m. Mystery]] by [[Rives]]
+  workflow_dispatch:
+    inputs:
+      date:
+        description: 'Target date to roll INTO (YYYY-MM-DD). Defaults to today.'
+        required: false
+        default: ''
+      dry_run:
+        description: 'Dry run — print output without writing files'
+        required: false
+        default: 'false'
+        type: boolean
+
+jobs:
+  rollover:
+    name: Roll over incomplete to-dos
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout vault
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run daily rollover
+        run: |
+          ARGS=()
+          DATE="${{ github.event.inputs.date }}"
+          DRY="${{ github.event.inputs.dry_run }}"
+          [ -n "$DATE" ] && ARGS+=("--date" "$DATE")
+          [ "$DRY" = "true" ] && ARGS+=("--dry-run")
+          python3 .github/scripts/daily_rollover.py "${ARGS[@]}"
+
+      - name: Commit rollover
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          TARGET_DATE="${{ github.event.inputs.date }}"
+          [ -z "$TARGET_DATE" ] && TARGET_DATE="$(date -u +%Y-%m-%d)"
+
+          git add "${TARGET_DATE}.md" "TO DO LIST.md" 2>/dev/null || true
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit — to-dos already current."
+          else
+            git commit -m "rollover: carry incomplete to-dos to ${TARGET_DATE}"
+            git push
+          fi
