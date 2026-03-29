@@ -125,27 +125,59 @@ def _assert_write_role(role: str, command: str) -> None:
 
 # ── YAML output helper ─────────────────────────────────────────────────────────
 
-def _print_yaml(data: dict[str, Any], indent: int = 0) -> None:
-    prefix = "  " * indent
-    for key, value in data.items():
-        if isinstance(value, dict):
-            print(f"{prefix}{key}:")
-            _print_yaml(value, indent + 1)
-        elif isinstance(value, list):
-            print(f"{prefix}{key}:")
-            for item in value:
-                if isinstance(item, dict):
-                    print(f"{prefix}  -")
-                    _print_yaml(item, indent + 2)
-                else:
-                    print(f"{prefix}  - {item}")
-        elif value is None:
-            print(f"{prefix}{key}: null")
-        else:
-            print(f"{prefix}{key}: {value}")
+def _dump_structured(data: dict[str, Any]) -> str:
+    """Serialize data as YAML (via PyYAML if available) or JSON fallback.
+
+    Using a real serializer ensures values containing `:`/newlines/booleans are
+    safely quoted and the output is always machine-parseable.
+    """
+    try:
+        import yaml  # type: ignore[import]
+        return yaml.safe_dump(data, allow_unicode=True, sort_keys=False, default_flow_style=False)
+    except ImportError:
+        return json.dumps(data, indent=2, ensure_ascii=False)
 
 
-# ── Command implementations ────────────────────────────────────────────────────
+# ── Issue identifier → UUID resolution ────────────────────────────────────────
+
+def _resolve_issue(identifier: str, *, api_key: str) -> dict[str, Any]:
+    """Resolve a human identifier (e.g. 'LAF-7') to the full issue object.
+
+    Linear's ``issue(id: ...)`` field expects an internal UUID; human identifiers
+    like 'LAF-7' must be resolved via the ``issues`` collection filter instead.
+    Returns the first matching issue node (includes team + team states).
+    Raises RuntimeError if no match is found.
+    """
+    query = """
+    query GetIssueByIdentifier($identifier: String!) {
+      issues(filter: { identifier: { eq: $identifier } }) {
+        nodes {
+          id
+          identifier
+          title
+          description
+          state { name type }
+          assignee { name email }
+          labels { nodes { name } }
+          priority
+          updatedAt
+          url
+          team {
+            id
+            name
+            states { nodes { id name type } }
+          }
+        }
+      }
+    }
+    """
+    data = _gql(query, {"identifier": identifier}, api_key=api_key)
+    nodes = (data.get("issues") or {}).get("nodes") or []
+    if not nodes:
+        raise RuntimeError(f"No Linear issue found for identifier '{identifier}'.")
+    return nodes[0]
+
+
 
 def cmd_read_issue(args: argparse.Namespace) -> int:
     """Read a Linear issue and print its state to stdout."""
@@ -160,33 +192,11 @@ def cmd_read_issue(args: argparse.Namespace) -> int:
         live_write=False,
     )
 
-    query = """
-    query GetIssue($id: String!) {
-      issue(id: $id) {
-        id
-        identifier
-        title
-        description
-        state { name type }
-        assignee { name email }
-        labels { nodes { name } }
-        priority
-        updatedAt
-        url
-      }
-    }
-    """
-
     try:
-        data = _gql(query, {"id": args.issue_id}, api_key=api_key)
-        issue = data.get("issue")
-        if not issue:
-            print(f"ERROR: Issue '{args.issue_id}' not found.", file=sys.stderr)
-            emit_action_log(ctx, outcome="failure")
-            return 1
+        issue = _resolve_issue(args.issue_id, api_key=api_key)
 
         print("---")
-        _print_yaml({
+        print(_dump_structured({
             "issue": {
                 "id": issue.get("identifier"),
                 "title": issue.get("title"),
@@ -197,7 +207,7 @@ def cmd_read_issue(args: argparse.Namespace) -> int:
                 "updated": issue.get("updatedAt"),
                 "url": issue.get("url"),
             }
-        })
+        }), end="")
         emit_action_log(ctx, outcome="success")
         return 0
 
@@ -298,7 +308,9 @@ def cmd_post_comment(args: argparse.Namespace) -> int:
     """
 
     try:
-        data = _gql(mutation, {"issueId": args.issue_id, "body": args.body}, api_key=api_key)
+        issue = _resolve_issue(args.issue_id, api_key=api_key)
+        issue_uuid = issue["id"]
+        data = _gql(mutation, {"issueId": issue_uuid, "body": args.body}, api_key=api_key)
         result = data.get("commentCreate", {})
         if not result.get("success"):
             print("ERROR: commentCreate returned success=false.", file=sys.stderr)
@@ -344,35 +356,35 @@ def cmd_update_issue_status(args: argparse.Namespace) -> int:
     api_key = _get_api_key()
     require_live_write(ctx)
 
-    # Step 1: resolve state name → state ID
-    states_query = """
-    query GetWorkflowStates {
-      workflowStates(filter: { name: { eq: $name } }) {
-        nodes { id name }
-      }
-    }
-    """
-    # Note: workflowStates filter syntax varies; use a broader query and filter client-side
-    states_query = """
-    query GetWorkflowStates {
-      workflowStates {
-        nodes { id name }
-      }
-    }
-    """
-
     try:
-        states_data = _gql(states_query, api_key=api_key)
-        states = states_data.get("workflowStates", {}).get("nodes", [])
-        matching = [s for s in states if s.get("name", "").lower() == args.state_name.lower()]
-        if not matching:
-            available = [s.get("name") for s in states]
-            print(f"ERROR: State '{args.state_name}' not found. Available: {available}", file=sys.stderr)
+        # Resolve identifier → UUID and fetch team states in one query
+        issue = _resolve_issue(args.issue_id, api_key=api_key)
+        issue_uuid = issue["id"]
+        team = issue.get("team") or {}
+        team_states = (team.get("states") or {}).get("nodes") or []
+
+        if not team_states:
+            print(
+                f"ERROR: No workflow states found for issue '{issue.get('identifier')}' team '{team.get('name')}'.",
+                file=sys.stderr,
+            )
             emit_action_log(ctx, outcome="failure")
             return 1
+
+        matching = [s for s in team_states if s.get("name", "").lower() == args.state_name.lower()]
+        if not matching:
+            available = [s.get("name") for s in team_states]
+            print(
+                f"ERROR: State '{args.state_name}' not found for team '{team.get('name')}'. "
+                f"Available: {available}",
+                file=sys.stderr,
+            )
+            emit_action_log(ctx, outcome="failure")
+            return 1
+
         state_id = matching[0]["id"]
 
-        # Step 2: update issue
+        # Update issue state
         update_mutation = """
         mutation UpdateIssue($id: String!, $stateId: String!) {
           issueUpdate(id: $id, input: { stateId: $stateId }) {
@@ -381,7 +393,7 @@ def cmd_update_issue_status(args: argparse.Namespace) -> int:
           }
         }
         """
-        update_data = _gql(update_mutation, {"id": args.issue_id, "stateId": state_id}, api_key=api_key)
+        update_data = _gql(update_mutation, {"id": issue_uuid, "stateId": state_id}, api_key=api_key)
         result = update_data.get("issueUpdate", {})
         if not result.get("success"):
             print("ERROR: issueUpdate returned success=false.", file=sys.stderr)
@@ -439,9 +451,11 @@ def cmd_link_pr_context(args: argparse.Namespace) -> int:
     """
 
     try:
+        issue = _resolve_issue(args.issue_id, api_key=api_key)
+        issue_uuid = issue["id"]
         data = _gql(
             mutation,
-            {"issueId": args.issue_id, "url": args.pr_url, "title": args.pr_title},
+            {"issueId": issue_uuid, "url": args.pr_url, "title": args.pr_title},
             api_key=api_key,
         )
         result = data.get("attachmentCreate", {})

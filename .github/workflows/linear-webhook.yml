@@ -41,6 +41,7 @@ jobs:
 
     permissions:
       contents: read
+      pull-requests: read
 
     steps:
       - name: Checkout vault
@@ -90,6 +91,28 @@ jobs:
             --related-ref "${{ github.ref }}"
 
       # ── Coordinator: link PR context on Issue.updated ─────────────────────
+      - name: Coordinator — resolve PR URL from branch
+        id: pr_lookup
+        if: >
+          startsWith(steps.meta.outputs.action, 'Issue') &&
+          steps.meta.outputs.issue_id != '' &&
+          github.event.client_payload.data.branchName != ''
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          BRANCH="${{ github.event.client_payload.data.branchName }}"
+          PR_URL=$(gh pr list \
+            --repo loganfinney27/IDAHO-VAULT \
+            --head "$BRANCH" \
+            --state open \
+            --json url \
+            --jq '.[0].url // ""' 2>/dev/null || echo "")
+          # Fall back to a sensible default if no open PR is found for the branch
+          if [ -z "$PR_URL" ]; then
+            PR_URL="https://github.com/loganfinney27/IDAHO-VAULT/compare/$BRANCH"
+          fi
+          echo "pr_url=$PR_URL" >> "$GITHUB_OUTPUT"
+
       - name: Coordinator — link PR context (if PR ref present)
         if: >
           startsWith(steps.meta.outputs.action, 'Issue') &&
@@ -101,7 +124,7 @@ jobs:
         run: |
           python3 .github/scripts/linear_gateway.py link_pr_context \
             --issue-id "${{ steps.meta.outputs.issue_id }}" \
-            --pr-url "https://github.com/loganfinney27/IDAHO-VAULT/pulls" \
+            --pr-url "${{ steps.pr_lookup.outputs.pr_url }}" \
             --pr-title "Branch: ${{ github.event.client_payload.data.branchName }}" \
             --initiating-agent "github-actions/linear-webhook" \
             --role coordinator \

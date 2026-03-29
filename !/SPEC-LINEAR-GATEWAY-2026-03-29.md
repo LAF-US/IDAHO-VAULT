@@ -2,7 +2,9 @@
 title: "SPEC — Swarm Linear Gateway"
 updated: 2026-03-29
 status: draft
-authority: GitHub Copilot
+authority: "[[LOGAN]]"
+authors:
+  - GitHub Copilot
 type: spec
 tags:
   - administration/spec
