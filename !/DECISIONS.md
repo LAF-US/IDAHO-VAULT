@@ -215,6 +215,13 @@
 **Rationale:** Core guard against agent hallucination, fabrication, and confabulation. Vault integrity depends on this behavioral model.
 **Reference:** See `IDAHO-VAULT — SYSTEM CONTEXT.md` (lines 398–583, esp. 437–461, 464–485, 531–551)
 
+**CODE AUTHORITY REVIEW (2026-03-28, The Abhorsen):**
+Principles reviewed. Findings:
+- Safeguards 1, 3, 4, 5 are consistent with existing vault governance (`feedback_operations.md`, CONSTITUTION.md principles).
+- Safeguard 2 ("If a file is not visible, it does not exist") — **note nuance**: applies to external chat agents (who only see what Logan pastes). Code agents with filesystem access (Claude Code, Codex, Gemini CLI) CAN read files not in their active context. Recommend scoping this safeguard to external/chat agents or rewording to "If a file has not been read or provided, do not assume its content."
+- No technical conflicts with existing governance identified.
+- **Verdict:** Sound principles. Pending Logan's approval to confirm as official decision. Minor reword on Safeguard 2 recommended before publishing.
+
 ---
 
 ## PENDING DECISIONS (Logan's Review Required)
