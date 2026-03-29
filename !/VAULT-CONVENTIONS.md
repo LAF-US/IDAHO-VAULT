@@ -283,3 +283,24 @@ All agents coordinate through THE COURTROOM: `!/!/!/! The world is quiet here/DO
 That file is the live status board. Read it to orient. Update it when you start or finish work.
 
 Task assignment flows through GitHub Issues (with `agent:*` labels) and Linear (SWARM label). Slack carries breadcrumbs. The vault is the record.
+
+---
+
+## Vault ↔ Linear Operating Model Mapping
+
+Use this mapping to decide where work should live and what should remain ephemeral.
+
+| Layer | Vault Role | Linear Role | Ephemeral Chat/Slack Role |
+| --- | --- | --- | --- |
+| **Core / Mind** (governing doctrine) | Canonical source of truth for doctrine and constraints (`CONSTITUTION.md`, `PROTOCOL.md`, `AGENTS.md`, `VAULT-CONVENTIONS.md`, `VAULT-ZONES.md`, `DECISIONS.md`) | Reference only in issue/project descriptions as links; do not duplicate doctrine text in Linear | Clarify intent in discussion, but final doctrine decisions must be written to vault governance files |
+| **Periphery / Body** (operating mechanics) | Durable playbooks, runbooks, workflows, scripts, and system notes that define *how work is executed* | Active execution layer: projects, issues, milestones, priorities, assignees, and status tracking | Fast coordination, blockers, and quick decisions during execution; summarize durable outcomes back into vault or Linear |
+| **Ghost / Soul** (interpretive/cultural layer) | Long-form narrative context, principles-in-practice, interpretive guidance, retrospectives that should persist | Lightweight pointers (issue comments/docs) to related vault narrative notes when relevant to work | Sensemaking, live interpretation, tone checks, brainstorming; keep ephemeral unless it becomes a durable principle |
+| **`!` spaces** (operational infrastructure) | System control plane: DOCKET, handoffs, LEVELSETs, MCP plans, audits, routing files, and machine-operational records | Coordination mirror for assignment and accountability (SWARM-labeled issues) | Notifications/breadcrumbs only; do not treat Slack as system-of-record for infra state |
+
+### Decision Rule
+
+- **Vault:** Canonical memory and doctrine (what is true, why it is true, and durable operating knowledge).
+- **Linear:** Work management and execution state (what is being done, by whom, and current status).
+- **Chat/Slack:** Ephemeral coordination (what is being discussed right now).
+
+If a decision must be recoverable in six months, store it in the vault. If it needs owner + due date + status, track it in Linear. If it is transient discussion, keep it in chat/Slack.
