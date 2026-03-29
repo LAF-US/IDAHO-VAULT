@@ -1,7 +1,7 @@
 ---
 tags:
   - administration/coordination
-updated: 2026-03-25
+updated: 2026-03-28
 status: active
 ---
 
@@ -10,6 +10,8 @@ status: active
 This is the live coordination board. Any agent arriving at THE COURTROOM reads this file to orient. Updated by whoever touches it last.
 
 **Standing direction (Logan, 2026-03-25):** Standing-task lists stale quickly; new assignments flow through Linear + GitHub Issues. All agents proceed into **THE CITY** and await the denouement.
+
+**Delegation note (Logan, 2026-03-28):** Logan has delegated vault operations for this round. The Abhorsen (Claude Code) conducting: infrastructure commits, Gemini tier definition, Linear Phase 1 scoping, LEVELSET refresh, branch push and PR.
 
 **Breadcrumbs:** LEVELSET protocol for state changes (`!/LEVELSET.md`), agent registry (`!/AGENTS.md`), this docket for standing coordination, vault navigation (`!/VAULT-CONVENTIONS.md`).
 
@@ -22,6 +24,7 @@ This is the live coordination board. Any agent arriving at THE COURTROOM reads t
 | Task                                | Owner          | Status      | Linear | Notes                                                          |
 | ----------------------------------- | -------------- | ----------- | ------ | -------------------------------------------------------------- |
 | Swarm coordination — agent assembly | All agents     | In progress | LAF-7  | Agents proceed into **THE CITY**; await denouement             |
+| **Linear Phase 1 pilot** — live-write scoping | Claude Code | **Active** | — | Plugin inventory recommends Linear-first; scope = SWARM issues, comments, status updates; vault remains durable record; Slack breadcrumb-only; no multi-plugin orchestration until stable |
 | Linear workspace team setup         | GitHub Copilot | In progress | LAF-2  | Configure teams/members/roles in Linear                        |
 | Import your data                    | GitHub Copilot | In progress | LAF-4  | Linear import/migration guidance in `Import your data.md`      |
 | Idaho Legislature scraper           | Claude Code    | Running     | —      | Daily 6 AM MT, commits to main                                 |
@@ -43,6 +46,10 @@ This is the live coordination board. Any agent arriving at THE COURTROOM reads t
 
 | Task                                                      | Completed  | Notes                                                                                       |
 | --------------------------------------------------------- | ---------- | ------------------------------------------------------------------------------------------- |
+| **Gemini capability tier defined**                         | 2026-03-28 | Tier 1 (Support): Direct Write, Operational zone only, Linear SWARM issues/comments — `!/AGENTS.md` updated |
+| **Linear Phase 1 pilot scoped**                            | 2026-03-28 | Plugin auth inventory → recommendation captured; ACTIVE WORK entry created; vault/Slack doctrine confirmed |
+| Plugin auth inventory committed                            | 2026-03-28 | `!/PLUGIN-AUTH-INVENTORY-2026-03-28.md` — all 7 connectors probed; Linear-first recommended |
+| Codex archival levelset committed                          | 2026-03-28 | `!/LEVELSET-CODEX-ARCHIVAL-2026-03-28.md` — Codex session handoff and boundary truths      |
 | LAF-1 — Linear onboarding resources                       | 2026-03-25 | Intro video and setup guides captured in `!/LINEAR-ONBOARDING.md`                           |
 | LAF-3 — Connect your tools brief                          | 2026-03-25 | Brief filed at `!/BRIEF-LAF-3-2026-03-25.md`                                                |
 | PR #34 — Obsidian vault update (42 files)                 | 2026-03-23 | Merged via `copilot/deploy-dependabot-configurations`                                       |
@@ -65,7 +72,7 @@ This is the live coordination board. Any agent arriving at THE COURTROOM reads t
 
 | Item                            | Blocker                                                                                                                                                                                                                                                                                                                                                                     | Who can unblock |
 | ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- |
-| Gemini capability tier          | Google Cloud `idaho-vault` project exists, APIs enabled, credentials not created — role decision required before any integration                                                                                                                                                                                                                                            | Logan           |
+| Gemini capability tier          | ~~Google Cloud `idaho-vault` project exists, APIs enabled, credentials not created — role decision required before any integration~~ **Resolved 2026-03-28:** Tier 1 (Support) defined in `!/AGENTS.md` — Direct Write, Operational zone only, Linear SWARM issues/comments. | ~~Logan~~ **Done** |
 | `.obsidian/workspace.json`      | Tracked in git; should be untracked + gitignored — separate hygiene PR                                                                                                                                                                                                                                                                                                     | Logan           |
 | Vault-embedded MCP architecture | **Resolved 2026-03-24:** Q1 MCP disallowed? **No**. Q2 Transport-only with native terms canonical? **Yes (adopted)**. Q3 MCP primary integration model? **No**. Q4 Governance authority source? **Vault-native governance files/terms remain canonical**. Next action owner: **PERMANENT: AUTHORITY: CODE** to implement transport-only guardrails in integration docs. Unblock date: **2026-03-24**. | Logan           |
 | `vault-moves-2026-03-23` branch | 30 proposed file moves (auto-generated) — awaiting review/apply/discard decision                                                                                                                                                                                                                                                                                           | Logan           |
