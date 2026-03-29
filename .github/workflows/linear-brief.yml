@@ -124,10 +124,16 @@ jobs:
           github_output = os.environ["GITHUB_OUTPUT"]
           with open(github_output, "a", encoding="utf-8") as fh:
             fh.write(f"live_write={'true' if live_write else 'false'}\n")
-            fh.write("sanitized_payload<<EOF\n")
+            # Use hash-based delimiter to avoid collision with payload content
+            import hashlib
+            delim = f"EOF_{hashlib.md5(sanitized_payload.encode()).hexdigest()}"
+            fh.write(f"sanitized_payload<<{delim}\n")
             fh.write(sanitized_payload + "\n")
-            fh.write("EOF\n")
+            fh.write(f"{delim}\n")
+            # Escape title for safe shell output: percent-encode special characters
+            title_escaped = title.replace("\\", "\\\\").replace('"', '\\"').replace("$", "\\$").replace("`", "\\`")
             fh.write(f"linear_id={linear_id}\n")
+            fh.write(f"title_escaped={title_escaped}\n")
             fh.write(f"title={title}\n")
 
           print(f"Write mode: {'live' if live_write else 'dry-run'}")
@@ -150,7 +156,7 @@ jobs:
 
           # Reuse sanitized metadata from guardrails.
           echo "linear_id=${{ steps.guardrails.outputs.linear_id }}" >> $GITHUB_OUTPUT
-          echo "title=${{ steps.guardrails.outputs.title }}" >> $GITHUB_OUTPUT
+          echo "title=${{ steps.guardrails.outputs.title_escaped }}" >> $GITHUB_OUTPUT
           echo "date=$(date -u +%Y-%m-%d)" >> $GITHUB_OUTPUT
 
       - name: Validate generated content
