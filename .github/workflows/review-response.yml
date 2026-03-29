@@ -31,6 +31,7 @@ jobs:
           REVIEW_URL="${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/pull/${PR_NUMBER}#pullrequestreview-${REVIEW_ID}"
 
           # Pause auto-merge until feedback is addressed
+          gh pr merge "$PR_NUMBER" --disable-auto 2>/dev/null || true
           gh pr edit "$PR_NUMBER" --remove-label "auto-merge" 2>/dev/null || true
           gh pr edit "$PR_NUMBER" --add-label "review-required" 2>/dev/null || true
 
