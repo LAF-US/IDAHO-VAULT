@@ -1,7 +1,7 @@
 ---
 tags:
   - administration/agents
-updated: 2026-03-24
+updated: 2026-03-28
 status: draft
 source: commit
 ---
@@ -74,6 +74,27 @@ Can commit and push to the repository. Must LEVELSET before significant commits.
 - Force-push without explicit permission
 - Delete branches without confirmation
 - Commit off-the-record material
+
+### Tier 1 (Support): Direct Write (Support)
+
+Can commit and push to the repository within the **Operational zone only**. Does not modify Constitutional zone files. Primary output surfaces are Linear SWARM issues, comments, and status updates.
+
+**Agents:** Gemini ("The Vault Advisor")
+
+**Can do:**
+
+- `git add`, `git commit`, `git push` to feature branches (Operational zone only)
+- Create and modify Operational zone vault files (own dotfolder `.gemini/`, support docs, activity records in `!/`)
+- Create issues, add comments, and update status on Linear SWARM-labeled items
+- Read vault files across all zones
+
+**Cannot do:**
+
+- Modify Constitutional zone files (`CONSTITUTION.md`, `PROTOCOL.md`, `AGENTS.md`, `DECISIONS.md`, `VAULT-CONVENTIONS.md`, `Ethics.md`, etc.)
+- Push to `main` without [[LOGAN]]'s merge approval
+- Force-push without explicit permission
+- Delete branches without confirmation
+- Write to Data zone without explicit [[LOGAN]] direction
 
 ### Tier 2: Multi-Repo Admin
 
@@ -274,7 +295,7 @@ These items require [[LOGAN]]'s direction before they can be formalized:
 
 | Item                                | Status                   | Notes                                                                      |
 | ----------------------------------- | ------------------------ | -------------------------------------------------------------------------- |
-| Gemini capability tier and scope    | **Active**               | Upgraded to CLI Code agent. Direct repo assistance and narrative lens.     |
+| Gemini capability tier and scope    | **Resolved 2026-03-28**  | Tier 1 (Support): Direct Write (Support), Operational zone only, Linear SWARM issues/comments. See Tier 1 (Support) section above. |
 | Copilot non-vault repo boundaries   | **TBD**                  | Multi-repo admin decided; specific latitude per repo not yet specified.    |
 | GitHub agent labels                 | **Active**               | `agent:claude-code`, `agent:codex`, `agent:copilot`, `agent:gemini`        |
 | Research instance (Tier 4)          | **Not yet assigned**     | Tim Oren analysis, NICAR23 training queued when available.                 |
@@ -292,5 +313,6 @@ These items require [[LOGAN]]'s direction before they can be formalized:
 
 - **Created:** 2026-03-16
 - **Author:** PERMANENT: AUTHORITY: CODE (draft)
+- **Updated:** 2026-03-28 — Gemini Tier 1 (Support) defined; Gemini pending item resolved
 - **Status:** Draft — awaiting [[LOGAN]]'s review
 - **Authority:** [[LOGAN]]'s discretion
