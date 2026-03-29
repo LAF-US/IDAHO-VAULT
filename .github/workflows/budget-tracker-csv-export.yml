@@ -1,5 +1,11 @@
 name: Budget Tracker CSV Export
 
+# NOTE: This workflow exports bill data to CSV for the Flourish Budget Tracker.
+# Current status: Idaho Legislature scraper is functional and produces minidata CSV files.
+# LSO direct access: When minidata.csv files are received via email, they can be manually
+# triaged and imported into the vault. The scraper provides an alternative data source
+# when direct LSO access is not available.
+
 on:
   # Run daily at 6:30 AM Mountain Time (13:30 UTC) - 30 minutes after bill scraper
   schedule:
