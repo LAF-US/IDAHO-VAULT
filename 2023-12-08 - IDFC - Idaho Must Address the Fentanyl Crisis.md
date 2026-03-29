@@ -4,6 +4,7 @@ author:
 URL: https://idahofreedomcaucus.substack.com/p/idaho-must-address-the-fentanyl-crisis
 tags:
   - media/pressrelease
+  - 2023/12/08
 ---
 ### *Nearly four hundred people died of drug overdoses in our state last year, and almost half of these deaths came from fentanyl.* 
 

@@ -1,5 +1,5 @@
 ---
-outlet:
+outlet: "Hacker News"
 url: "https://news.ycombinator.com/item?id=30345496"
 author:
   - "[[ttiurani]]"
