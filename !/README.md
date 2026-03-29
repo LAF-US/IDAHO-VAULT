@@ -24,6 +24,7 @@ It is a pointer, not a separate constitution or duplicate governance layer.
 - `DECISIONS.md` — structural decision log
 - `VAULT-CONVENTIONS.md` — shared naming, frontmatter, and structure for all agents
 - `VAULT-ZONES.md` — routing grammar for `!`, `!/!`, and `!/!/!`
+- `VAULT-TEMPLATES.md` — document class registry and canonical template system
 - `!/` — routing layer: DOCKET, LEVELSET, handoffs, context bundles
 
 ## Stability note
