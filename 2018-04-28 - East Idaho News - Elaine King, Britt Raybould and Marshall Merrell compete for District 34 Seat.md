@@ -5,6 +5,7 @@ URL: https://www.eastidahonews.com/2018/04/east-idaho-elects-elaine-king-britt-r
 tags:
   - media/articles
   - 2018/election
+  - 2018/04/28
 ---
 The current holder of [[Legislative District 34|District 34]] seat B has chosen not to run for re-election leading to three candidates competing for the soon to be vacant seat. Get to know each of the three candidates by checking out our interviews with them below.
 

@@ -29,12 +29,12 @@ The `idaho_leg_scraper.py` fetches HTML from the Idaho Legislature website daily
 
 ### 2. Wayback CDX API → Audit Scripts → Vault
 
-**Risk:** LOW — writes to `!ADMINISTRATION/` audit reports only, not vault content files.
+**Risk:** LOW — writes to `!/` audit reports only, not vault content files.
 
 The `wayback_audit.py` and `wayback_preserve.py` scripts query the Internet Archive's CDX API and write results to admin reports or submit URLs for preservation.
 
 **Mitigations:**
-- Output restricted to `!ADMINISTRATION/` directory
+- Output restricted to `!/` directory
 - `validate_content.py` gate runs before commit
 - Wayback preserve is outbound-only (submits URLs, does not ingest content)
 
@@ -42,10 +42,10 @@ The `wayback_audit.py` and `wayback_preserve.py` scripts query the Internet Arch
 
 **Risk:** MEDIUM — Claude sessions have write access to the repository through git operations.
 
-**Attack vector:** If malicious content were committed to governance files (CLAUDE.md, `!ADMINISTRATION/Claude.md`), it would persist across all future sessions. Scraped bill files read by future Claude sessions could contain injected instructions.
+**Attack vector:** If malicious content were committed to governance files (CLAUDE.md, `!/CONSTITUTION.md`), it would persist across all future sessions. Scraped bill files read by future Claude sessions could contain injected instructions.
 
 **Mitigations:**
-- CODEOWNERS file requires Logan's review for changes to CLAUDE.md, `!ADMINISTRATION/`, and `.github/` (requires branch protection for enforcement)
+- CODEOWNERS file requires Logan's review for changes to CLAUDE.md, `!/`, and `.github/` (requires branch protection for enforcement)
 - LEVELSET protocol provides auditable checkpoints
 - Conversation tier system restricts which sessions have commit access (procedural, not technical)
 - Branch protection (pending decision) would prevent direct pushes to main
