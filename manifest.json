@@ -1,4 +1,6 @@
 {
+<<<<<<< ours
+<<<<<<< ours
   "manifest_version": "1.0.0",
   "generated_at": "2026-03-25T00:00:00Z",
   "authority": {
@@ -22,4 +24,21 @@
   },
   "locks": [],
   "entries": {}
+=======
+=======
+>>>>>>> theirs
+  "files": [
+    {
+      "path": "INBOX/ingest-2026-03-25T04-45-11Z.md",
+      "last_modified": "2026-03-25T04:45:11Z",
+      "status": "open",
+      "type": "ingest",
+      "description": "Raw ingested document",
+      "last_agent": "executor"
+    }
+  ]
+<<<<<<< ours
+>>>>>>> theirs
+=======
+>>>>>>> theirs
 }

@@ -1,0 +1,9 @@
+{
+  "siteId": "c101e8f26bd40b88754ba200306d9a8f",
+  "host": "publish-01.obsidian.md",
+  "included": [],
+  "excluded": [
+    "!",
+    "."
+  ]
+}
