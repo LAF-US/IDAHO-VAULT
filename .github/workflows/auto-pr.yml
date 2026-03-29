@@ -1,9 +1,14 @@
-name: Auto PR for Claude Branches
+name: Auto PR for Agent Branches
 
 on:
   push:
     branches:
       - 'claude/**'
+      - 'codex/**'
+      - 'gemini/**'
+      - 'copilot/**'
+      - 'perplexity/**'
+      - 'grok/**'
 
 jobs:
   auto-pr:
@@ -69,8 +74,10 @@ jobs:
           RISK_TIER: ${{ steps.classify.outputs.tier }}
         run: |
           BRANCH="${GITHUB_REF_NAME}"
-          # Derive title: strip claude/ prefix and session suffix
-          TITLE=$(echo "$BRANCH" | sed 's|^claude/||' | sed 's|-[a-zA-Z0-9]*$||' | tr '-' ' ')
+          # Derive title: strip agent prefix (claude/, codex/, gemini/, etc.) and session suffix
+          TITLE=$(echo "$BRANCH" | sed 's|^[^/]*/||' | sed 's|-[a-zA-Z0-9]*$||' | tr '-' ' ')
+          # Extract agent name from branch prefix
+          AGENT=$(echo "$BRANCH" | sed 's|/.*||')
           TIER="$RISK_TIER"
           DIFFSTAT=$(git diff --stat origin/main...HEAD)
 
@@ -81,8 +88,9 @@ jobs:
           fi
 
           # Build PR body
-          printf -v BODY '%s\n\n%s\n%s\n\n%s\n%s\n%s\n%s\n\n%s\n%s' \
+          printf -v BODY '%s\n\n%s\n%s\n%s\n%s\n\n%s\n%s\n%s\n%s\n\n%s\n%s' \
             '## Auto-generated PR' \
+            '**Agent:**' "\`$AGENT\`" \
             '**Risk tier:**' "\`$TIER\`" \
             '**Label:**' "\`$LABEL\`" \
             '### Diff stat' \
