@@ -2,5 +2,28 @@
   "$schema": "https://raw.githubusercontent.com/google-gemini/gemini-cli/main/schemas/settings.schema.json",
   "context": {
     "fileName": ["GEMINI.md", "AGENTS.md"]
+  },
+  "mcpServers": {
+    "openaiDeveloperDocs": {
+      "httpUrl": "https://developers.openai.com/mcp"
+    },
+    "githubCopilot": {
+      "httpUrl": "https://api.githubcopilot.com/mcp/"
+    },
+    "huggingFace": {
+      "httpUrl": "https://huggingface.co/mcp?login"
+    },
+    "boxRemote": {
+      "httpUrl": "https://mcp.box.com"
+    },
+    "figma": {
+      "httpUrl": "https://mcp.figma.com/mcp"
+    },
+    "svelte": {
+      "httpUrl": "https://mcp.svelte.dev/mcp"
+    },
+    "stackOverflow": {
+      "httpUrl": "https://mcp.stackoverflow.com"
+    }
   }
 }

@@ -7,6 +7,7 @@ URL: https://www.idahoednews.org/kevins-blog/the-money-race-an-early-top-10-list
 tags:
   - 2024/02/01
   - media/articles
+  - 2024/02/02
 ---
 As a contentious and costly [[election]] year begins, [[Idaho Education News]] will follow the dollars.
 
