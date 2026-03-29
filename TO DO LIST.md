@@ -4,7 +4,7 @@ aliases:
   - TO DO LIST
 linter-yaml-title-alias: TO DO LIST
 date created: Friday, March 27th 2026, 10:09:45 am
-date modified: Sunday, March 29th 2026, 12:09:52 am
+date modified: Sunday, March 29th 2026, 4:59:58 pm
 ---
 
 *Persistent list — incomplete items carry forward daily. Link daily notes here.*
