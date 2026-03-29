@@ -7,6 +7,8 @@ created: 2026-03-25
 title: 2026-03-25 - - A promising AI safety tool for teen accounts
 aliases: [2026-03-25 - - A promising AI safety tool for teen accounts]
 linter-yaml-title-alias: 2026-03-25 - - A promising AI safety tool for teen accounts
+tags:
+  - 2026/03/25
 ---
 
 ![](https://static.wixstatic.com/media/a52f4c_7ee8beedbf634443b8451d308386f2f7~mv2.jpeg/v1/fill/w_925,h_551,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/a52f4c_7ee8beedbf634443b8451d308386f2f7~mv2.jpeg)
