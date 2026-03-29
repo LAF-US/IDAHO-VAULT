@@ -44,11 +44,14 @@
       "name": "OpenAI Codex CLI",
       "vendor": "OpenAI",
       "dotfolder": ".codex",
-      "autoload_file": ".codex/config.toml",
+      "autoload_file": "AGENTS.md",
+      "config_file": ".codex/config.toml",
+      "reference_shim": ".codex/CODEX.md",
       "autoload": true,
-      "capability_tier": "Advisory",
+      "capability_tier": "Direct write (scripting)",
       "role": "The Lexicographer — code generation, refactoring, automated transforms",
-      "label": "agent:codex"
+      "label": "agent:codex",
+      "notes": "Codex auto-loads repo AGENTS.md instructions. Project-scoped Codex config lives in .codex/config.toml; .codex/CODEX.md is a repo-specific reference shim."
     },
     {
       "id": "grok",
