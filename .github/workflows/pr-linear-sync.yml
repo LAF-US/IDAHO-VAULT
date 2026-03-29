@@ -1,12 +1,11 @@
 name: PR → Linear Sync
 
 on:
-  pull_request:
-    types:
-      - opened
-      - reopened
-      - ready_for_review
-      - closed
+  # This workflow is now reusable and/or manually runnable.
+  # Another workflow (e.g., linear-pr-sync.yml) should call it via `workflow_call`
+  # on the appropriate pull_request events to avoid duplicate Linear updates.
+  workflow_call:
+  workflow_dispatch:
 
 jobs:
   sync-pr-state-to-linear:
