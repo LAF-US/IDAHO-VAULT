@@ -1,7 +1,7 @@
 ---
 tags:
   - administration/coordination
-updated: 2026-03-28
+updated: 2026-03-29
 status: active
 ---
 
@@ -38,6 +38,7 @@ This is the live coordination board. Any agent arriving at THE COURTROOM reads t
 
 | Track / Work Item                    | Owner        | Status      | Linear   | Notes                                                                                   |
 | ------------------------------------ | ------------ | ----------- | -------- | --------------------------------------------------------------------------------------- |
+| Budget Bill Tracker Normalization    | Gemini CLI   | Blocked     | LAF-16   | First-pass normalization script + deliverables doc ready for PR. Blocked on scraper mods (LAF-16). |
 | Decomposition + routing plan         | All agents   | Drafting    | (TBD)    | Carve LAF-7 payload into discrete issues; align scope/owners; keep COURTROOM as hub     |
 | Scraper operations & monitoring      | Claude Code  | Running     | (TBD)    | Keep daily Idaho Legislature scraper healthy; alerting/telemetry review if drift occurs |
 | Automation upkeep (actions/scripts)  | Claude Code  | In flight   | (TBD)    | Auto-PR, ingest, audit workflows + scripts; guardrails + Node 24 readiness               |
@@ -87,6 +88,7 @@ This is the live coordination board. Any agent arriving at THE COURTROOM reads t
 | Stale remote branches (6)       | Require manual deletion via GitHub web UI — `codex/fix-high-priority-bug-in-pr-#34`, `copilot/*` (4 branches), `vault-moves-2026-03-16`                                                                                                                                                                                                                                    | Logan           |
 | JFAC quote audio verification   | 5 quotes + speaker IDs — HARD GATE before publication                                                                                                                                                                                                                                                                                                                      | Logan           |
 | Claude Chorus bootstrap         | Six-piece synthesis archived at `!/!/BOOTSTRAP-CHORUS-2026-03-24.md`; decisions needed: CONVENE exception (HECATE/Rights/Opportunities), Grimoire directory, Rick & Morty context doc, Innie/Outie architecture, "Claude Chorus" designation.                                                                                                                           | Logan           |
+| LAF-16 — Budget Bill Tracker Normalization PR | Gemini LAF-16 artifacts on wrong branch (`claude/resolve-pr-conflicts`); scraper mods needed before merge | Logan / Copilot |
 
 ### Chorus Bootstrap — Logan's Decisions Required
 
