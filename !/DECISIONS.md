@@ -20,7 +20,7 @@
 
 | Decision # | Date       | Topic                                         | Status       | Notes                                                                     |
 | ---------- | ---------- | --------------------------------------------- | ------------ | ------------------------------------------------------------------------- |
-| 1          | 2026-03-16 | `!ADMIN/` canonical                           | ✅ CONFIRMED | All governance documents live in `!ADMIN/` (not `!ADMINISTRATION/`)       |
+| 1          | 2026-03-16 | `!/` canonical                                | ✅ CONFIRMED | All governance documents live in `!/` (originally `!ADMIN/`, then `!ADMINISTRATION/`) |
 | 2          | 2026-03-16 | Constitution.md replaces Claude.md            | ✅ CONFIRMED | Single authoritative governance document                                  |
 | 3          | 2026-03-16 | Capabilities language replaces tiers          | ✅ CONFIRMED | Describes agent capabilities, not numeric tiers                           |
 | 4          | 2026-03-16 | Broader digital consciousness framing         | ✅ CONFIRMED | Adopted in Constitution.md and Logan.md                                   |
@@ -28,8 +28,8 @@
 | 6          | 2026-03-16 | PERMANENT: AUTHORITY: CODE is correct name    | ✅ CONFIRMED | Formal name for direct-write repo agent                                   |
 | 7          | 2026-03-16 | Native protocols over MCP                     | ✅ CONFIRMED | Prefer native protocols to Model Context Protocol                         |
 | 8          | 2026-03-16 | Slack is ephemeral; vault is the record       | ✅ CONFIRMED | Durable decisions captured in vault files                                 |
-| 9          | 2026-03-16 | AGENTS.md lives in `!ADMIN/`, not `.github/`  | ✅ CONFIRMED | Agent inventory is governance layer                                       |
-| 10         | 2026-03-16 | `copilot-instructions.md` guardrails          | ✅ CONFIRMED | Must reference Constitution.md, declare capability, no write to `!ADMIN/` |
+| 9          | 2026-03-16 | AGENTS.md lives in `!/`, not `.github/`       | ✅ CONFIRMED | Agent inventory is governance layer                                       |
+| 10         | 2026-03-16 | `copilot-instructions.md` guardrails          | ✅ CONFIRMED | Must reference Constitution.md, declare capability, no write to `!/`      |
 | 11         | 2026-03-16 | Logan's Project = unachievable end goal       | ✅ CONFIRMED | Defines all vault work strategy                                           |
 | 12         | 2026-03-16 | OpenClaw is a peer system                     | ✅ CONFIRMED | Study and coordinate with OpenClaw                                        |
 | 13         | 2026-03-16 | Slack-to-file rule                            | ✅ CONFIRMED | Ephemeral Slack decisions must be captured in Constitution.md amendments  |
@@ -37,12 +37,16 @@
 | 15         | 2026-03-15 | Security hardening: sanitization + validation | ✅ CONFIRMED | Input sanitization in scraper, content validation gate in workflows       |
 | 16         | 2026-03-24 | MCP governance model                          | ✅ CONFIRMED | MCP is allowed as transport only; native vault terms remain canonical     |
 | 17         | 2026-03-22 | STEP-0 LEVELSET prompt for external agents    | ✅ CONFIRMED | Standardized orientation prompt for chat-based agents                     |
+| 18         | 2026-03-28 | End-to-End Journalism Workflow (v0.1)         | ⏳ Pending   | Defines vault-assisted journalism pipeline: ingest → raw → process → structured → analysis → insight → publication |
+| 19         | 2026-03-28 | Vault as Source of Truth (Stateless)          | ⏳ Pending   | Only authoritative memory; all agent state external to vault              |
+| 20         | 2026-03-28 | Manifest-Based Coordination                   | ⏳ Pending   | Inter-agent coordination via shared manifest, not peer-to-peer messaging  |
+| 21         | 2026-03-28 | Agent Behavioral Model (No Fabrication)       | ⚠️ CODE AUTHORITY REVIEW | Ground truth only; critical guard against hallucination |
 
 ---
 
 ## DECISION DETAILS
 
-### Decision 1: `!ADMIN/` Canonical
+### Decision 1: `!/` Canonical
 
 **Date:** 2026-03-16
 **Topic:** Folder structure for governance
@@ -98,7 +102,7 @@
 **Status:** ✅ CONFIRMED
 **Rationale:** Durable decisions must be captured in vault files to survive conversations being archived or compacted.
 
-### Decision 9: AGENTS.md Lives in `!ADMIN/`, Not `.github/`
+### Decision 9: AGENTS.md Lives in `!/`, Not `.github/`
 
 **Date:** 2026-03-16
 **Topic:** Agent inventory location
@@ -114,7 +118,7 @@
 
 - Must reference `Constitution.md`
 - Must declare agent capability tier/level
-- Must NOT grant write access to `!ADMIN/`
+- Must NOT grant write access to `!/`
 
 **Rationale:** Ensures GitHub Copilot operates within vault governance without risking governance layer.
 
@@ -172,6 +176,52 @@
 **Decided by:** Logan Finney
 **Rationale:** External agents operating via chat have no vault context unless Logan provides it. Created `!/!/LEVELSET-STEP-0-EXTERNAL-AGENT.md` — a paste-to-agent orientation prompt for chat-based agents (Claude.ai, Gemini, Grok, etc.). The agent responds with a 6-part LEVELSET report: who they are, what they know, what they've done, what is unresolved, what they need, and collision risks. Standardizes orientation across all chat-based agents.
 
+### Decision 18: End-to-End Journalism Workflow (AI-Assisted, Local-First)
+
+**Date:** 2026-03-28
+**Topic:** Operational workflow for vault-assisted journalism
+**Status:** Pending
+**Rationale:** Defines a practical end-to-end workflow using IDAHO-VAULT as the system. Core model: `REAL WORLD → INGEST → VAULT(RAW) → PROCESS → VAULT(STRUCTURED) → ANALYSIS → VAULT(INSIGHT) → SYNTHESIS → VERIFICATION → PUBLICATION`. Responsible agents: Router (task routing), Executor (ingest/transform), Analyzer (evidence synthesis), Drafter (publication), Human (final verification). Goal: faster intake, structured processing, traceable outputs, human-verified publication.
+**Reference:** See `IDAHO-VAULT — END-TO-END JOURNALISM WORKFLOW (AI-ASSISTED, LOCAL-FIRST)v0.1.md`
+
+### Decision 19: Vault as Source of Truth (Stateless Agent Architecture)
+
+**Date:** 2026-03-28
+**Topic:** Vault authority and agent statefulness
+**Status:** Pending
+**Rationale:** The Vault (GitHub repository) is the **only authoritative memory**. Agents do not retain persistent internal state. All context must be read from Vault before acting; all outputs written back to Vault. This enables auditable, reproducible operations and prevents agent drift.
+**Reference:** See `IDAHO-VAULT — SYSTEM CONTEXT.md` (lines 32–48)
+
+### Decision 20: Manifest-Based Coordination Layer
+
+**Date:** 2026-03-28
+**Topic:** Inter-agent coordination mechanism
+**Status:** Pending
+**Rationale:** Agents do not communicate peer-to-peer. Coordination occurs through a shared manifest (e.g., `manifest.json`) and structured file directories. Manifest tracks: file path, status (open/locked/processed), modification timestamp, file type, description, last agent. Agents MUST read manifest before acting and update it after writing. This prevents duplication, locking conflicts, and invisible dependencies.
+**Reference:** See `IDAHO-VAULT — SYSTEM CONTEXT.md` (lines 117–152)
+
+### Decision 21: Agent Behavioral Model — Ground Truth Only, No Fabrication
+
+**Date:** 2026-03-28
+**Topic:** Operational ethics and guard rails for agent behavior
+**Status:** Pending (⚠️ **REQUIRES CODE AUTHORITY REVIEW BEFORE PUBLISHING**)
+**Critical Safeguards:**
+- **Before acting:** Consult available ground truth (Vault excerpts, manifest, explicitly provided files)
+- **Avoid assumptions:** If a file is not visible, it does not exist. If a rule is not provided, it is not enforced.
+- **Operate within scope:** Do not invent systems, agents, infrastructure, or communications that cannot occur.
+- **Communication:** Speak in grounded terms. Avoid roleplay of other agents, simulated handoffs, or references to unverified systems.
+- **Failure awareness:** Detect drift into abstraction, assumptions of unavailable data, work duplication from missing state, over-engineering beyond current capability.
+
+**Rationale:** Core guard against agent hallucination, fabrication, and confabulation. Vault integrity depends on this behavioral model.
+**Reference:** See `IDAHO-VAULT — SYSTEM CONTEXT.md` (lines 398–583, esp. 437–461, 464–485, 531–551)
+
+**CODE AUTHORITY REVIEW (2026-03-28, The Abhorsen):**
+Principles reviewed. Findings:
+- Safeguards 1, 3, 4, 5 are consistent with existing vault governance (`feedback_operations.md`, CONSTITUTION.md principles).
+- Safeguard 2 ("If a file is not visible, it does not exist") — **note nuance**: applies to external chat agents (who only see what Logan pastes). Code agents with filesystem access (Claude Code, Codex, Gemini CLI) CAN read files not in their active context. Recommend scoping this safeguard to external/chat agents or rewording to "If a file has not been read or provided, do not assume its content."
+- No technical conflicts with existing governance identified.
+- **Verdict:** Sound principles. Pending Logan's approval to confirm as official decision. Minor reword on Safeguard 2 recommended before publishing.
+
 ---
 
 ## PENDING DECISIONS (Logan's Review Required)
@@ -181,6 +231,10 @@
 | Approval of AGENTS-v0.2-DRAFT.md                  | Awaiting | Needs Logan review before commit       |
 | Approval of ORIENTATE-v0.1-BETA.md                | Awaiting | Needs Logan review before commit       |
 | Approval of LEVELSET-LITE-v0.1.md                 | Awaiting | Needs Logan review before commit       |
+| Decision 18: End-to-End Journalism Workflow       | Awaiting | Needs Logan approval for operational workflow |
+| Decision 19–21: Stateless Architecture & Behavioral Model | **CODE AUTHORITY REVIEW** | Extract from SYSTEM CONTEXT; requires governance reconciliation |
+| Documentary C's count reconciliation              | Awaiting | CONSTITUTION lists 5 C's (1 unknown); VAULT-CONVENTIONS lists 4 |
+| Governance consolidation from SYSTEM CONTEXT      | Awaiting | Move duplicated guidance to AGENTS.md, CONSTITUTION.md; add cross-references in SYSTEM CONTEXT |
 | Fate of `claude/levelset-current-synthesis-zWxJc` | Awaiting | Undecided: merge, archive, or continue |
 | AUTHORITY: ADMIN: CLAUDE consolidation            | Awaiting | Merge three Claude personas into one?  |
 | FāVS freelance resume                             | Awaiting | Resume or archive?                     |
