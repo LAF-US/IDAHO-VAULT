@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-daily_rollover.py — IDAHO-VAULT
+daily_rollover.py - IDAHO-VAULT
 
 Carries incomplete to-do items forward from yesterday's daily note into today's.
 Runs as a scheduled GitHub Action each morning.
@@ -36,7 +36,9 @@ TODO_LIST_FILE = VAULT_ROOT / "TO DO LIST.md"
 # ---------------------------------------------------------------------------
 
 # Matches markdown task lines: optional leading tabs/spaces, "- [ ]" or "- [x]", text
-TASK_RE = re.compile(r'^(\t*)- \[( |x|X)\] (.+)$')
+TASK_RE = re.compile(r'^([ \t]*)- \[( |x|X)\] (.+)$')
+TODO_MARKER = "[[TO DO LIST]]"
+PLACEHOLDER_LINE = "*(no incomplete items carried forward)*"
 
 
 # ---------------------------------------------------------------------------
@@ -45,27 +47,50 @@ TASK_RE = re.compile(r'^(\t*)- \[( |x|X)\] (.+)$')
 
 def extract_todo_section(content: str) -> list[str]:
     """
-    Return lines between the [[TO DO LIST]] marker and the next --- separator
-    (or end of file). The marker line itself is excluded.
+    Return lines from the canonical [[TO DO LIST]] marker.
+
+    Stop at the next frontmatter-style separator or when the block clearly hands
+    off to another non-task section after checklist content has begun.
     """
     lines = content.splitlines()
     in_todo = False
+    saw_task = False
     todo_lines = []
     for line in lines:
-        if "[[TO DO LIST]]" in line:
+        if is_todo_marker(line):
             in_todo = True
             continue
         if in_todo:
             if line.strip() == "---":
                 break
+            match = TASK_RE.match(line)
+            if saw_task and line.strip() and not match and line.strip() != PLACEHOLDER_LINE:
+                break
+            if match:
+                saw_task = True
             todo_lines.append(line)
     return todo_lines
+
+
+def log(message: str = "") -> None:
+    """Write stdout safely on terminals that cannot encode all Unicode glyphs."""
+    text = f"{message}\n"
+    encoding = sys.stdout.encoding or "utf-8"
+    if hasattr(sys.stdout, "buffer"):
+        sys.stdout.buffer.write(text.encode(encoding, errors="backslashreplace"))
+        sys.stdout.buffer.flush()
+    else:
+        sys.stdout.write(text)
+
+
+def is_todo_marker(line: str) -> bool:
+    return line.strip() == TODO_MARKER
 
 
 def carry_forward(todo_lines: list[str]) -> list[str]:
     """
     Given raw task lines from a daily note's TODO section, return only the
-    incomplete items — with only their incomplete sub-items.
+    incomplete items - with only their incomplete sub-items.
 
     Rules:
       - Top-level [x]: dropped entirely.
@@ -84,35 +109,29 @@ def carry_forward(todo_lines: list[str]) -> list[str]:
             i += 1
             continue
 
-        indent_level = len(m.group(1))  # number of leading tabs
+        indent_level = len(m.group(1))
         done = m.group(2).lower() == "x"
 
-        # Only handle top-level items in this loop; sub-items collected below.
         if indent_level > 0:
             i += 1
             continue
 
-        # Collect this top-level item's block (itself + all indented children).
         block = [line]
         j = i + 1
         while j < len(todo_lines):
             next_line = todo_lines[j]
             next_m = TASK_RE.match(next_line)
-            # Stop at the next top-level task
             if next_m and len(next_m.group(1)) == 0:
                 break
             block.append(next_line)
             j += 1
 
         if not done:
-            # Keep parent
             result.append(block[0].rstrip())
-            # Keep only incomplete sub-items
             for sub_line in block[1:]:
                 sub_m = TASK_RE.match(sub_line)
                 if sub_m and sub_m.group(2).lower() != "x":
                     result.append(sub_line.rstrip())
-                # Done sub-items and blank lines within block: silently dropped
 
         i = j
 
@@ -137,11 +156,11 @@ def date_aliases(target_date: date) -> list[str]:
     day_ord = _ordinal(day)
     year = target_date.year
     return [
-        str(target_date),                           # 2026-03-28
-        f"{month} {day}, {year}",                   # March 28, 2026
-        f"{month} {day_ord}, {year}",               # March 28th, 2026
-        f"{day} {month} {year}",                    # 28 March 2026
-        f"{weekday}, {month} {day}, {year}",        # Saturday, March 28, 2026
+        str(target_date),
+        f"{month} {day}, {year}",
+        f"{month} {day_ord}, {year}",
+        f"{day} {month} {year}",
+        f"{weekday}, {month} {day}, {year}",
     ]
 
 
@@ -176,10 +195,88 @@ def build_frontmatter(target_date: date) -> str:
     )
 
 
-def todo_block_text(carried: list[str]) -> str:
-    if carried:
-        return "\n".join(carried)
-    return "*(no incomplete items carried forward)*"
+def todo_block_text(lines: list[str]) -> str:
+    if lines:
+        return "\n".join(lines)
+    return PLACEHOLDER_LINE
+
+
+def _clean_todo_lines(lines: list[str]) -> list[str]:
+    cleaned = []
+    for line in lines:
+        stripped = line.rstrip()
+        if not stripped or stripped == PLACEHOLDER_LINE:
+            continue
+        cleaned.append(stripped)
+    return cleaned
+
+
+def _split_todo_blocks(lines: list[str]) -> list[list[str]]:
+    blocks = []
+    current_block = None
+
+    for line in _clean_todo_lines(lines):
+        match = TASK_RE.match(line)
+        is_top_level_task = bool(match and len(match.group(1)) == 0)
+
+        if is_top_level_task:
+            if current_block:
+                blocks.append(current_block)
+            current_block = [line]
+            continue
+
+        if current_block is None:
+            blocks.append([line])
+            continue
+
+        current_block.append(line)
+
+    if current_block:
+        blocks.append(current_block)
+
+    return blocks
+
+
+def merge_todo_lines(carried: list[str], existing: list[str]) -> list[str]:
+    """
+    Keep carried items first, then preserve any existing lines already written in
+    today's note. Duplicate whole blocks are skipped, while tasks that share the
+    same parent merge their children by parent context instead of raw line text.
+    """
+    merged_blocks = []
+    block_index_by_parent = {}
+    standalone_seen = set()
+
+    for source in (carried, existing):
+        for block in _split_todo_blocks(source):
+            parent = block[0]
+            parent_match = TASK_RE.match(parent)
+
+            if not parent_match or len(parent_match.group(1)) != 0:
+                block_key = tuple(block)
+                if block_key in standalone_seen:
+                    continue
+                standalone_seen.add(block_key)
+                merged_blocks.append(block.copy())
+                continue
+
+            if parent not in block_index_by_parent:
+                block_index_by_parent[parent] = len(merged_blocks)
+                merged_blocks.append(block.copy())
+                continue
+
+            target_block = merged_blocks[block_index_by_parent[parent]]
+            seen_children = set(target_block[1:])
+            for child in block[1:]:
+                if child in seen_children:
+                    continue
+                seen_children.add(child)
+                target_block.append(child)
+
+    merged = []
+    for block in merged_blocks:
+        merged.extend(block)
+    return merged
 
 
 def patch_nav_links(content: str, target_date: date) -> str:
@@ -208,56 +305,61 @@ def update_today_note(
     block = todo_block_text(carried)
 
     if today_file.exists():
-        content = patch_nav_links(today_file.read_text(), target_date)
-        if "[[TO DO LIST]]" in content:
-            # Replace the existing TODO section's tasks
-            lines = content.splitlines()
+        content = patch_nav_links(today_file.read_text(encoding="utf-8"), target_date)
+        lines = content.splitlines()
+        if any(is_todo_marker(line) for line in lines):
             new_lines = []
             in_todo = False
             inserted = False
+            existing_todo_lines = []
+
             for line in lines:
-                if "[[TO DO LIST]]" in line and not inserted:
+                if is_todo_marker(line) and not inserted:
                     in_todo = True
                     inserted = True
                     new_lines.append(line)
-                    new_lines.append("")
-                    new_lines.extend(carried)
                     continue
+
                 if in_todo:
                     m = TASK_RE.match(line)
-                    # Stop skipping at --- separator or non-task, non-blank line
-                    if line.strip() == "---":
-                        in_todo = False
-                        new_lines.append(line)
-                    elif m or line.strip() == "":
-                        pass  # skip old task lines and blanks in the section
-                    else:
-                        in_todo = False
-                        new_lines.append(line)
+                    if m or line.strip() == "" or line.strip() == PLACEHOLDER_LINE:
+                        existing_todo_lines.append(line)
+                        continue
+
+                    merged = merge_todo_lines(carried, existing_todo_lines)
+                    new_lines.append("")
+                    new_lines.extend(merged if merged else [PLACEHOLDER_LINE])
+                    in_todo = False
+                    new_lines.append(line)
                     continue
+
                 new_lines.append(line)
+
+            if in_todo:
+                merged = merge_todo_lines(carried, existing_todo_lines)
+                new_lines.append("")
+                new_lines.extend(merged if merged else [PLACEHOLDER_LINE])
+
             new_content = "\n".join(new_lines) + "\n"
         else:
-            # Append TODO section
-            new_content = content.rstrip() + f"\n\n[[TO DO LIST]]\n\n{block}\n"
+            new_content = content.rstrip() + f"\n\n{TODO_MARKER}\n\n{block}\n"
     else:
-        # Create fresh daily note
         fm = build_frontmatter(target_date)
-        new_content = f"{fm}\n\n[[TO DO LIST]]\n\n{block}\n"
+        new_content = f"{fm}\n\n{TODO_MARKER}\n\n{block}\n"
 
     if dry_run:
-        print(f"\n--- {today_file.name} (dry run) ---")
-        print(new_content)
+        log(f"\n--- {today_file.name} (dry run) ---")
+        log(new_content.rstrip("\n"))
     else:
-        today_file.write_text(new_content)
-        print(f"Updated {today_file.name}")
+        today_file.write_text(new_content, encoding="utf-8")
+        log(f"Updated {today_file.name}")
 
 
 def update_todo_list_md(carried: list[str], dry_run: bool = False) -> None:
     block = todo_block_text(carried)
 
     if TODO_LIST_FILE.exists():
-        content = TODO_LIST_FILE.read_text()
+        content = TODO_LIST_FILE.read_text(encoding="utf-8")
     else:
         content = (
             "---\n"
@@ -266,7 +368,7 @@ def update_todo_list_md(carried: list[str], dry_run: bool = False) -> None:
             "  - TO DO LIST\n"
             "linter-yaml-title-alias: TO DO LIST\n"
             "---\n\n"
-            "*Persistent list — incomplete items carry forward daily.*\n"
+            "*Persistent list - incomplete items carry forward daily.*\n"
         )
 
     if "## Active" in content:
@@ -285,7 +387,6 @@ def update_todo_list_md(carried: list[str], dry_run: bool = False) -> None:
                 if line.startswith("## "):
                     in_active = False
                     new_lines.append(line)
-                # else: skip old active items
                 continue
             new_lines.append(line)
         new_content = "\n".join(new_lines).rstrip() + "\n"
@@ -293,11 +394,11 @@ def update_todo_list_md(carried: list[str], dry_run: bool = False) -> None:
         new_content = content.rstrip() + f"\n\n## Active\n\n{block}\n"
 
     if dry_run:
-        print(f"\n--- TO DO LIST.md (dry run) ---")
-        print(new_content)
+        log("\n--- TO DO LIST.md (dry run) ---")
+        log(new_content.rstrip("\n"))
     else:
-        TODO_LIST_FILE.write_text(new_content)
-        print("Updated TO DO LIST.md")
+        TODO_LIST_FILE.write_text(new_content, encoding="utf-8")
+        log("Updated TO DO LIST.md")
 
 
 # ---------------------------------------------------------------------------
@@ -339,22 +440,22 @@ def main() -> None:
     source_date = target_date - timedelta(days=1)
     source_file = VAULT_ROOT / f"{source_date}.md"
 
-    print(f"Rolling over: {source_date} → {target_date}")
+    log(f"Rolling over: {source_date} -> {target_date}")
 
     if not source_file.exists():
-        print(f"No daily note found for {source_date} — nothing to carry forward.")
+        log(f"No daily note found for {source_date} - nothing to carry forward.")
         sys.exit(0)
 
-    source_content = source_file.read_text()
+    source_content = source_file.read_text(encoding="utf-8")
     todo_lines = extract_todo_section(source_content)
     carried = carry_forward(todo_lines)
 
     if carried:
-        print(f"Carrying forward {len([l for l in carried if TASK_RE.match(l)])} incomplete item(s):")
+        log(f"Carrying forward {len([l for l in carried if TASK_RE.match(l)])} incomplete item(s):")
         for line in carried:
-            print(f"  {line}")
+            log(f"  {line}")
     else:
-        print("No incomplete items found — nothing to carry forward.")
+        log("No incomplete items found - nothing to carry forward.")
 
     update_today_note(target_date, carried, dry_run=args.dry_run)
     update_todo_list_md(carried, dry_run=args.dry_run)

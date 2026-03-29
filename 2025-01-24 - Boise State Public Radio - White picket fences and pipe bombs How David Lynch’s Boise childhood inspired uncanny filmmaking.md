@@ -5,8 +5,9 @@ author:
   - "[[Julie Luchetta]]"
 tags:
   - media/articles
+  - 2025/01/24
 ---
-![A close-up of David Lynch’s face in profile. A older man with silver white hair, blue eyes looking to the left. ](https://npr.brightspotcdn.com/dims4/default/6b6a2e7/2147483647/strip/true/crop/3504x2336+0+0/resize/1760x1174!/format/webp/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F17%2Ffb%2F46c1b421453aa604e1387864bbb7%2Fap080804014423.jpg)
+![A close-up of David Lynch's face in profile. A older man with silver white hair, blue eyes looking to the left. ](https://npr.brightspotcdn.com/dims4/default/6b6a2e7/2147483647/strip/true/crop/3504x2336+0+0/resize/1760x1174!/format/webp/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F17%2Ffb%2F46c1b421453aa604e1387864bbb7%2Fap080804014423.jpg)
 
 U.S. film director [[David Lynch]] talks to journalists in Rio de Janeiro, Monday, Aug 4, 2008.
 
@@ -26,13 +27,13 @@ Born in 1946 in Montana, the director moved to Sandpoint, Idaho when he was two 
 
 Mark Smith lived in the house next door to the Lynch family. Both the oldest siblings in their family, they became good friends. Their yards bordered one of the city’s steep canals, he recalled, and their parents told them to stay away.
 
-“It was forbidden,” he said. “There were quite a few kids that died from drowning in the big ditch. We'd sneak down there anyway.”
+“It was forbidden,” he said. “There were quite a few kids that died from drowning in the big ditch. We’d sneak down there anyway.”
 
 At the time, Vista Avenue was still just surrounded by fields, ranches and a couple of burger drive-ins. Smith and Lynch were in the Boy Scouts together - Lynch was the bugler - and they spent summers in McCall.
 
 In Boise, they ran around with a gang of neighborhood kids.
 
-“As soon as we could get out and play, we'd get on our bikes, go on to South Junior High and we'd throw rocks,” Smith said. “We loved throwing rocks.”
+“As soon as we could get out and play, we’d get on our bikes, go on to South Junior High and we’d throw rocks,” Smith said. “We loved throwing rocks.”
 
 ![Black and White aerial archival photograph of Boise looking towards what is now the Boise State University campus. There are lots of empty fields of grass and undevelopped plots. ](https://npr.brightspotcdn.com/dims4/default/1401455/2147483647/strip/true/crop/5942x4792+0+0/resize/1760x1420!/format/webp/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F85%2F24%2Ffcfbddff4301bb0dc4d26b5c1ba1%2Fvista-olden-days.jpeg)
 
@@ -78,7 +79,7 @@ But a while later, Lynch describes seeing a police officer park his motorcycle i
 
 A photograph of a young David Lynch playing music with his friends on the Bench, sometime in the 1950s. It was featured in the 2019 Open Air Archive exhibit by photographer Angie Smith, daughter of Lynch’s childhood friend Mark Smith. The original picture is from the filmmaker’s memoir Room to Dream, published by Random House in 2018.
 
-The sweet stench of suburbia and death first experienced in Idaho seem to have lingered in the filmmaker's mind.
+The sweet stench of suburbia and death first experienced in Idaho seem to have lingered in the filmmaker’s mind.
 
 The director moved to Virginia when he was in eighth grade but returned to Boise the following summer to visit his ailing grandfather. The day his grandpa died, Lynch ran into an older neighborhood kid about to blow up yet another homemade pipebomb.
 

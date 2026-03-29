@@ -6,6 +6,7 @@ outlet:
 URL: https://hechingerreport.org/the-mostly-republican-idaho-moms-fighting-to-reclaim-their-school-district-from-hard-right-conservatives/
 tags:
   - media/articles
+  - 2023/12/11
 ---
 *The far-right takeover of West Bonner school district disrupted learning and prompted an exodus of students and teachers. A group of moms – many of them Republican – organized to fight back*
 
