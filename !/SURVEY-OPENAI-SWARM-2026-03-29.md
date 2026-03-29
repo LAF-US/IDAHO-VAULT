@@ -2,7 +2,7 @@
 title: "SURVEY — OpenAI Swarm"
 updated: 2026-03-29
 status: draft
-authority: GitHub Copilot
+authority: "[[LOGAN]]"
 type: survey
 tags:
   - administration/survey
