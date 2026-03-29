@@ -9,7 +9,10 @@ aliases:
 tags:
   - party/republican
   - geography/land/state
+date created: Monday, March 23rd 2026, 4:54:53 pm
+date modified: Saturday, March 28th 2026, 7:03:23 pm
 ---
+
 [[State of Idaho]] affiliate of the [[U.S. Republican Party]]
 Chair: [[Dorothy Moon]]
 ### County Central Committees

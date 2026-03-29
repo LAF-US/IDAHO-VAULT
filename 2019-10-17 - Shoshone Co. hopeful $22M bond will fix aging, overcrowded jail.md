@@ -7,6 +7,7 @@ author:
 published: 2019-10-17
 tags:
   - media/articles
+  - 2019/10/17
 ---
 The Shoshone County Jail was built in the early 1970s and has been showing increasing symptoms of wear and tear in recent years
 

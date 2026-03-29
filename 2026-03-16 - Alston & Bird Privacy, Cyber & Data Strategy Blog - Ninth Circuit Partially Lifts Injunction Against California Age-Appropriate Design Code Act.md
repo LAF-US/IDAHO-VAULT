@@ -8,6 +8,8 @@ created: 2026-03-26
 title: 2026-03-16 - Alston & Bird Privacy, Cyber & Data Strategy Blog - Ninth Circuit Partially Lifts Injunction Against California Age-Appropriate Design Code Act
 aliases: ["2026-03-16 - Alston & Bird Privacy, Cyber & Data Strategy Blog - Ninth Circuit Partially Lifts Injunction Against California Age-Appropriate Design Code Act"]
 linter-yaml-title-alias: "2026-03-16 - Alston & Bird Privacy, Cyber & Data Strategy Blog - Ninth Circuit Partially Lifts Injunction Against California Age-Appropriate Design Code Act"
+tags:
+  - 2026/03/16
 ---
 
 [![](https://www.alstonprivacy.com/wp-content/uploads/2024/10/AdobeStock_803543330-scaled.jpeg)](https://www.alstonprivacy.com/wp-content/uploads/2024/10/AdobeStock_803543330-scaled.jpeg)
