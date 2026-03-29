@@ -3,12 +3,25 @@ date created: Saturday, March 28th 2026, 5:25:53 pm
 date modified: Saturday, March 28th 2026, 5:29:05 pm
 author:
   - "[[ChatGPT]]"
+tags:
+  - administration/reference
+  - vault/meta
 ---
 
 [[Notebook LM]] [[2026-03-28]]
 
 ---
 # IDAHO-VAULT — SYSTEM CONTEXT (SOURCE DOCUMENT)
+
+> ⚠️ **GOVERNANCE CONSOLIDATION IN PROGRESS** (2026-03-28)
+>
+> This document is a synthesis and reference. Canonical governance lives in:
+> - `!/CONSTITUTION.md` — core principles and working rules
+> - `!/AGENTS.md` — agent registry and communication rules
+> - `!/VAULT-CONVENTIONS.md` — vault structure and protocols
+> - `!/DECISIONS.md` — confirmed Logan-approved decisions
+>
+> Lines 398–583 ("PERSONA ORIENTATION & WHAT AGENTS NEED TO KNOW") contain critical operational guidance. A governance audit identified duplication with canonical files. Consolidation is pending Logan's review. See `DECISIONS.md` (Decisions 19–21 and governance consolidation item in PENDING table) for details.
 
 ## OVERVIEW
 

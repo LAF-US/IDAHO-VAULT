@@ -3,6 +3,9 @@ date created: Saturday, March 28th 2026, 5:27:10 pm
 date modified: Saturday, March 28th 2026, 5:28:51 pm
 author:
   - "[[ChatGPT]]"
+tags:
+  - administration/reference
+  - ai/swarm
 ---
 
 # AGENTIC SWARM SYSTEMS — CAPABILITIES, LIMITS, AND TRADEOFFS
