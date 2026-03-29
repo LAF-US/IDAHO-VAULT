@@ -2,6 +2,12 @@
 # See !/VAULT-CONVENTIONS.md for vault governance conventions
 # See !/AGENTS.md for agent registry and capability tiers
 
+[github_app]
+pr_commands = [
+  "/agentic_describe",
+  "/agentic_review"
+]
+
 [pr_reviewer]
 # Vault-specific review guidance:
 # - All committed content is ON THE RECORD (public repo)
