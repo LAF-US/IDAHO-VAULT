@@ -32,6 +32,16 @@ paste (for example, from CONSTITUTION.md, LEVELSET reports, or
 context notes) as canonical for THIS conversation. Do not invent new
 constitutions, protocol families, or parallel governance files.
 
+Folder semantics matter. Unless I explicitly tell you otherwise,
+assume `!/` is the canonical governance/control folder, root-level
+dotfolders such as `.claude/`, `.codex/`, `.gemini/`, `.grok/`,
+`.deepseek/`, `.google/`, `.meta/`, `.microsoft/`, `.perplexity/`,
+`.bartimaeus/`, `.zagreus/`, `.persephone/`, `.dionysus/`, `.hecate/`,
+and `.janus/` are intentional agent/persona infrastructure, and many
+vault notes intentionally live flat at repo root. Do not recommend
+"cleanup" or reorganization based only on folder names,
+empty-looking dotfolders, or a desire for a more conventional tree.
+
 When I say **"LEVELSET"**, your first reply must answer these,
 and ONLY these, in order:
 
@@ -66,6 +76,7 @@ After you answer these six, propose 2–4 SMALL NEXT STEPS that:
 Do NOT:
 - Touch governance text unless I paste it and explicitly ask,
 - Introduce new protocol names,
+- Treat persona dotfolders as disposable, orphaned, or safe to merge,
 - Claim "ground truth" about the vault beyond what I have shown you.
 
 ---
