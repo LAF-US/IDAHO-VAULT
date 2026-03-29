@@ -1,6 +1,9 @@
 ---
 date created: Saturday, March 28th 2026, 5:27:10 pm
 date modified: Saturday, March 28th 2026, 5:29:47 pm
+tags:
+  - administration/reference
+  - journalism/industry
 ---
 
 [[Notebook LM]] [[2026-03-28]]
