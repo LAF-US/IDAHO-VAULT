@@ -46,7 +46,12 @@ This is the live coordination board. Any agent arriving at THE COURTROOM reads t
 
 | Task                                                      | Completed  | Notes                                                                                       |
 | --------------------------------------------------------- | ---------- | ------------------------------------------------------------------------------------------- |
-| **Triage + commit 10 untracked content docs**              | 2026-03-28 | AGENTIC SWARM SYSTEMS, AI-AUTOMATION, IDAHO-VAULT SYSTEM CONTEXT/WORKFLOW/WORKFLOW-JOURNALISM, Kano Play, Notebook LM, Podcast, David Leroy — committed to `gemini/activate-linear-pilot`; conflict copies and junk excluded |
+| **Gemini Code Assist cowork enabled**                      | 2026-03-28 | `.gemini/GEMINI.md` tier fixed, cowork pattern documented; `.gemini/settings.json` context expanded to 6 files; AGENTS.md + entity note updated — `3563a66` |
+| **Stale `!ADMIN/` refs cleaned + root frontmatter spring-cleaned** | 2026-03-28 | DECISIONS.md, LEVELSET-STEP-0, THREAT-MODEL updated; 10 content docs tagged; `!/SWARM-LOOP.md` committed — `ba01c2e` |
+| **Triage + commit 10 untracked content docs**              | 2026-03-28 | AGENTIC SWARM SYSTEMS, AI-AUTOMATION, IDAHO-VAULT SYSTEM CONTEXT/WORKFLOW, JOURNALISM INDUSTRY, Kano Play, Notebook LM, Podcast, David Leroy — `07d2cb7` |
+| **PR #98 opened + updated**                               | 2026-03-28 | Covers all 3 session commits; flags PR #84 conflict and pending DECISIONS 18–21 |
+| **`claude/agent-dotfolder-architecture` local branch deleted** | 2026-03-28 | Already merged to main; remote gone |
+| **LEVELSET-CURRENT refreshed**                            | 2026-03-28 | Activity log, UNRESOLVED, NEXT ACTIONS, DECISIONS count updated |
 | **Gemini capability tier defined**                         | 2026-03-28 | Tier 1 (Support): Direct Write, Operational zone only, Linear SWARM issues/comments — `!/AGENTS.md` updated |
 | **Linear Phase 1 pilot scoped**                            | 2026-03-28 | Plugin auth inventory → recommendation captured; ACTIVE WORK entry created; vault/Slack doctrine confirmed |
 | Plugin auth inventory committed                            | 2026-03-28 | `!/PLUGIN-AUTH-INVENTORY-2026-03-28.md` — all 7 connectors probed; Linear-first recommended |
