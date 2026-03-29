@@ -35,6 +35,8 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: gpt-5.4
+          OPENAI_MAX_OUTPUT_TOKENS: "4096"
           LINEAR_PAYLOAD: ${{ github.event.client_payload && toJson(github.event.client_payload) || github.event.inputs.payload }}
         run: |
           python3 .github/scripts/linear_brief_generator.py

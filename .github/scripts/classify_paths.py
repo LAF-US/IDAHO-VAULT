@@ -20,14 +20,8 @@ HIGH_RISK_EXACT = {
     "CLAUDE.md",
     ".gitignore",
     ".github/copilot-instructions.md",
-    "!ADMIN/Constitution.md",
-    "!ADMIN/DECISIONS.md",
-    "!ADMIN/AGENTS.md",
-    "!ADMIN/PROTOCOL.md",
-    "!ADMINISTRATION/Constitution.md",
-    "!ADMINISTRATION/DECISIONS.md",
-    "!ADMINISTRATION/AGENTS.md",
-    "!ADMINISTRATION/PROTOCOL.md",
+    # Note: governance files under !/ are covered by HIGH_RISK_PREFIXES ("!/")
+    # Old !ADMIN/ and !ADMINISTRATION/ paths removed — those folders no longer exist
 }
 
 LOW_RISK_PREFIXES = (

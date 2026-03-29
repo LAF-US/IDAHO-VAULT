@@ -37,6 +37,8 @@ VAULT_ROOT = Path(".")
 ALLOWED_OUTPUT_DIR = VAULT_ROOT / "!"
 ALLOWED_PREFIX = "BRIEF-"
 MAX_OUTPUT_BYTES = 50 * 1024  # 50 KB
+OPENAI_MODEL = os.environ.get("OPENAI_MODEL", "gpt-5.4")
+OPENAI_MAX_OUTPUT_TOKENS = int(os.environ.get("OPENAI_MAX_OUTPUT_TOKENS", "4096"))
 
 # ── LLM Prompt ────────────────────────────────────────────────────────────────
 
@@ -94,18 +96,29 @@ def call_anthropic(system: str, user: str) -> str:
 
 
 def call_openai(system: str, user: str) -> str:
-    """Call OpenAI API via the openai SDK."""
-    import openai
-    client = openai.OpenAI()
-    response = client.chat.completions.create(
-        model="gpt-4o",
-        max_tokens=4096,
-        messages=[
-            {"role": "system", "content": system},
-            {"role": "user", "content": user},
+    """Call OpenAI Responses API via the official OpenAI SDK."""
+    from openai import OpenAI
+
+    client = OpenAI()
+    response = client.responses.create(
+        model=OPENAI_MODEL,
+        max_output_tokens=OPENAI_MAX_OUTPUT_TOKENS,
+        input=[
+            {
+                "role": "system",
+                "content": [{"type": "input_text", "text": system}],
+            },
+            {
+                "role": "user",
+                "content": [{"type": "input_text", "text": user}],
+            },
         ],
     )
-    return response.choices[0].message.content
+
+    if response.output_text:
+        return response.output_text
+
+    raise RuntimeError("OpenAI response did not include output_text.")
 
 
 def call_llm(system: str, user: str) -> str:

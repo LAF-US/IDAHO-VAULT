@@ -1,7 +1,7 @@
 ---
 tags:
   - administration/agents
-updated: 2026-03-24
+updated: 2026-03-28
 status: draft
 source: commit
 ---
@@ -36,7 +36,7 @@ All inter-agent communication flows through or is visible to [[LOGAN]]. There is
 | PERSISTENT: ADMINISTRATION    | Claude (conversation) | Draft only               | Constitutional layer, handoffs, judgment calls                    | Via [[LOGAN]]'s account | None — produces drafts       | None (draft only)               |
 | GitHub Copilot (ADMIN GitHub) | GitHub Copilot        | Multi-repo admin         | GitHub administration across all [[LOGAN]]'s repos                | Bot app needed          | GitHub APIs, all repos       | Operational, Data (via PR)      |
 | ChatGPT Codex                 | OpenAI Codex          | Direct write (scripting) | Specialized scripting — scrapers, GitHub Actions, complex logic   | Via [[LOGAN]]           | Repo read/write              | Operational, Data (via PR)      |
-| Gemini ("The Vault Advisor")  | Google AI             | Advisory                 | Narrative lens, political context, strategy. Does not touch code. | Via [[LOGAN]]           | None                         | None (advisory)                 |
+| Gemini ("The Vault Advisor")  | Gemini CLI + Code Assist (VS Code) | Direct write (support) | Narrative lens, strategy, inline completions, document outlines, codebase assistance. Coworks with Claude Code (Abhorsen) in VS Code. | Via [[LOGAN]] | Repo read/write | Operational, Data (via PR) |
 | PERSISTENT: IMPLEMENTATION    | Claude (Project)      | Read/analysis            | Governance/architecture consultation                              | No                      | None — advisory only         | None (advisory)                 |
 | TASK: LEVELSET reports        | Claude (conversation) | Read/analysis            | Synthesis and status reporting                                    | No                      | None — advisory only         | None (advisory)                 |
 | STORY: JFAC Open Meetings     | Claude (conversation) | Read/analysis            | JFAC investigation — read-only                                    | No                      | None — advisory only         | None (advisory)                 |
@@ -74,6 +74,27 @@ Can commit and push to the repository. Must LEVELSET before significant commits.
 - Force-push without explicit permission
 - Delete branches without confirmation
 - Commit off-the-record material
+
+### Tier 1 (Support): Direct Write (Support)
+
+Can commit and push to the repository within the **Operational zone only**. Does not modify Constitutional zone files. Primary output surfaces are Linear SWARM issues, comments, and status updates.
+
+**Agents:** Gemini ("The Vault Advisor")
+
+**Can do:**
+
+- `git add`, `git commit`, `git push` to feature branches (Operational zone only)
+- Create and modify Operational zone vault files (own dotfolder `.gemini/`, support docs, activity records in `!/`)
+- Create issues, add comments, and update status on Linear SWARM-labeled items
+- Read vault files across all zones
+
+**Cannot do:**
+
+- Modify Constitutional zone files (`CONSTITUTION.md`, `PROTOCOL.md`, `AGENTS.md`, `DECISIONS.md`, `VAULT-CONVENTIONS.md`, `Ethics.md`, etc.)
+- Push to `main` without [[LOGAN]]'s merge approval
+- Force-push without explicit permission
+- Delete branches without confirmation
+- Write to Data zone without explicit [[LOGAN]] direction
 
 ### Tier 2: Multi-Repo Admin
 
@@ -201,7 +222,7 @@ Handoff documents are saved to vault root as `HANDOFF-[source]-[date].md` for au
 
 ### Zone Access Matrix
 
-See [[VAULT-ZONES]] for full zone definitions. No agent maintains a standing write window — all writes are per-task, scoped to a GitHub Issue or explicit Logan directive.
+See [[VAULT-ZONES]] for full zone definitions. No agent maintains a standing write window - all writes are per-task, scoped to a GitHub Issue or explicit Logan directive.
 
 | Zone | Read | Write (via PR) | Merge |
 |------|------|---------------|-------|
@@ -209,7 +230,28 @@ See [[VAULT-ZONES]] for full zone definitions. No agent maintains a standing wri
 | Operational | All agents | CODE AUTHORITY, Copilot, Codex (per-task) | Logan only |
 | Data | All agents | All Tier 1-2 agents (per-task) | Logan (auto-merge eligible for low-risk) |
 
-**Reviewer bots** (CodeRabbit, Qodo) have read access to all zones for review purposes. Their reviews are **advisory only** — a `CHANGES_REQUESTED` from a bot does not block merge. Only Logan's review blocks.
+**Reviewer bots** (CodeRabbit, Qodo) have read access to all zones for review purposes. Their reviews are **advisory only** - a `CHANGES_REQUESTED` from a bot does not block merge. Only Logan's review blocks.
+
+### Persona Dotfolders Are Protected
+
+Root-level dotfolders for agents and personas are infrastructure, not cleanup
+targets. This includes official folders such as `.claude/`, `.codex/`, and
+`.gemini/`, as well as manual-injection or emerging persona folders such as
+`.grok/`, `.deepseek/`, `.google/`, `.meta/`, `.microsoft/`, `.perplexity/`,
+`.bartimaeus/`, `.zagreus/`, `.persephone/`, `.dionysus/`, `.hecate/`, and
+`.janus/`.
+
+Rules:
+
+- An agent may freely modify only its own dotfolder, unless Logan explicitly
+  directs otherwise.
+- Do not delete, rename, consolidate, or repurpose another agent's dotfolder
+  because it appears empty, stubbed, unused, or unfamiliar.
+- If a folder looks like a persona container, treat it as intentional until
+  Logan says otherwise.
+
+`.github/` is also protected infrastructure, but it is shared automation space
+and follows the overlap rules below rather than the "own dotfolder only" rule.
 
 ### The `.github/` Overlap
 
@@ -253,7 +295,7 @@ These items require [[LOGAN]]'s direction before they can be formalized:
 
 | Item                                | Status                   | Notes                                                                      |
 | ----------------------------------- | ------------------------ | -------------------------------------------------------------------------- |
-| Gemini capability tier and scope    | **Undefined**            | Pixel smartphone, loganfinney27@gmail.com. No vault commits until defined. |
+| Gemini capability tier and scope    | **Resolved 2026-03-28**  | Tier 1 (Support): Direct Write (Support), Operational zone only, Linear SWARM issues/comments. See Tier 1 (Support) section above. |
 | Copilot non-vault repo boundaries   | **TBD**                  | Multi-repo admin decided; specific latitude per repo not yet specified.    |
 | GitHub agent labels                 | **Active**               | `agent:claude-code`, `agent:codex`, `agent:copilot`, `agent:gemini`        |
 | Research instance (Tier 4)          | **Not yet assigned**     | Tim Oren analysis, NICAR23 training queued when available.                 |
@@ -271,5 +313,6 @@ These items require [[LOGAN]]'s direction before they can be formalized:
 
 - **Created:** 2026-03-16
 - **Author:** PERMANENT: AUTHORITY: CODE (draft)
+- **Updated:** 2026-03-28 — Gemini Tier 1 (Support) defined; Gemini pending item resolved
 - **Status:** Draft — awaiting [[LOGAN]]'s review
 - **Authority:** [[LOGAN]]'s discretion

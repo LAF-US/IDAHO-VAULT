@@ -16,43 +16,35 @@ This is a personal journalism research vault. It contains notes on Idaho politic
 
 ## Vault Structure
 
-```
-IDAHO-VAULT/
-  !/                      System files, logs, agent routing
-  ATTACHMENTS/
-    DOCUMENTS/            PDFs, images
-    MAPS/                 Map files
-    TEMPLATES/            Obsidian templates (Article, Hearing, OP-ED, Press Release)
-  GOVERNMENTS/
-    IDAHO - EXECUTIVE/    Governor, departments, commissions, health districts
-    IDAHO - JUDICIAL/     Courts, judicial districts
-    IDAHO - LEGISLATIVE/
-      BILLS/              Named: (YYYY) Bill Type Number.md
-      DISTRICTS/          Legislative districts
-      IDAHO HOUSE/        House members, committees
-      IDAHO SENATE/       Senate members, committees
-      JOINT COMMITTEES/   Joint legislative committees
-      SESSIONS/           Session notes by year
-    USA - FEDERAL/        Federal entities, legislation, census
-    USA - TRIBES/         Tribal governments
-  ORGANIZATIONS/          Churches, companies, education, hospitals, legal, parties, politics, publications, unions
-  PEOPLE/                 Individual people (public figures)
-  PLACES/                 Cities, counties, schools, geography, regions, roads, taxing districts
-    OTHER/                Non-Idaho places (out-of-state cities, counties, countries, states)
-  SOURCES/
-    EDITORIALS/           Opinion pieces
-    HEARINGS/             Meeting/hearing notes, organized by year
-    INTERVIEWS/           Interview notes
-    LISTS/                Reference lists
-    NEWS MEDIA/           News articles. Named: YYYY-MM-DD - Outlet - Title.md
-    PODCASTS/             Podcast notes
-    PRESS RELEASES/       Press releases
-    RESOLUTIONS/          Resolutions
-  TOPICS/                 Subject areas (agriculture, economy, education, elections, fiscal, health, legal, etc.)
-  X LABELER/              Unsorted files pending classification
-  .github/scripts/        Automation scripts (Python)
-  .github/workflows/      GitHub Actions workflows
-```
+This vault is intentionally hybrid. Governance and automation live in dedicated
+system folders, while a large share of the journalism corpus lives directly at
+repo root. Do not assume that a root-heavy layout means the vault is
+"unorganized," and do not use older taxonomy examples as permission to
+restructure the current vault.
+
+### Root Folder Semantics
+
+| Path | Meaning | Agent rule |
+| --- | --- | --- |
+| `!/` | Canonical governance, protocols, levelsets, records, routing | Read first for system truth. Do not restructure, rename, or clean without Logan's explicit direction. |
+| Repo root `.md` files | Primary note corpus and working knowledge base | Root-flat notes are intentional. Do not mass-move them into category folders without explicit authorization. |
+| `INBOX/` | Intake and staging area | Use for intake only when directed. Do not auto-empty or normalize it. |
+| `swarm/` | Swarm support artifacts and structured coordination data | Treat as infrastructure, not general note taxonomy. |
+| `.github/` | Automation, workflows, scripts, and GitHub-specific instructions | Safe to modify only within assigned automation work and governance boundaries. |
+| `.obsidian/` | Obsidian application configuration | Not note content. Respect sync and git boundaries before changing anything here. |
+| Agent/persona dotfolders such as `.claude/`, `.codex/`, `.gemini/`, `.grok/`, `.deepseek/`, `.google/`, `.meta/`, `.microsoft/`, `.perplexity/`, `.persephone/`, `.zagreus/`, `.bartimaeus/` | Agent/persona shims, governance files, and local identity infrastructure | Protected. Do not delete, rename, consolidate, or "clean up" these folders unless it is your own dotfolder or Logan explicitly directs the change. |
+| Tooling folders such as `.venv/`, `.vscode/`, `.qodo/` | Local environment or tool support | Do not infer that a hidden folder is disposable just because it is small, empty, or unfamiliar. |
+
+### Folder Rules For Emerging Agents
+
+- Treat `!/` as the vault control plane.
+- Treat root-flat notes as a deliberate operating choice, not a mistake to fix.
+- Treat persona dotfolders as keystone infrastructure, even when they contain
+  only a shim file or appear empty.
+- If a folder's purpose is unclear, stop and ask Logan before proposing
+  deletion, consolidation, or mass moves.
+- Historical references to older folder trees are descriptive context, not
+  standing authorization to reorganize the live vault.
 
 ---
 
@@ -178,6 +170,8 @@ Use `[[Full Name]]` for all internal links — people, places, organizations, bi
 
 ## Automation
 
+### Active Automation Scripts
+
 | Script                 | Purpose                                     | Trigger                         |
 | ---------------------- | ------------------------------------------- | ------------------------------- |
 | `sort_audit.py`        | Audits vault structure for misplaced files  | Weekly Monday 6 AM UTC + manual |
@@ -185,6 +179,23 @@ Use `[[Full Name]]` for all internal links — people, places, organizations, bi
 | `post_digest.py`       | Posts bill activity to GitHub Issues digest | Called by scraper workflow      |
 | `propose_moves.py`     | Proposes vault file reorganization          | Weekly Monday 7 AM UTC + manual |
 | `wayback_audit.py`     | Audits URL preservation in Wayback Machine  | Weekly Monday 8 AM UTC + manual |
+| `daily_rollover.py`    | Rolls over daily note tasks                 | Daily 4 AM MT                   |
+| `linear_brief_generator.py` | Generates research briefs from Linear issues | Called by linear-brief workflow |
+| `classify_paths.py`    | Classifies changed files by risk tier       | Called by auto-pr workflow      |
+| `validate_content.py`  | Validates vault content structure           | Called by multiple workflows    |
+| `post_levelset_closure.py` | Notifies when LEVELSET files ready for closure | Called by levelset-closure workflow |
+
+### Utility Scripts (Manual Use Only)
+
+These scripts are not called by automated workflows but are available for manual vault maintenance:
+
+| Script                  | Purpose                                                      | Usage                               |
+| ----------------------- | ------------------------------------------------------------ | ----------------------------------- |
+| `expand_date_aliases.py` | One-off: expands date alias frontmatter in daily notes       | `python3 .github/scripts/expand_date_aliases.py [--dry-run]` |
+| `normalize_tags.py`      | Normalizes Markdown note tags across vault                   | `python3 .github/scripts/normalize_tags.py [--write]` |
+| `tidy_daily_notes.py`    | One-off: normalizes daily note frontmatter structure         | `python3 .github/scripts/tidy_daily_notes.py [--dry-run]` |
+| `obsidian_rest_api_client.py` | REST API client for Obsidian Local REST API plugin    | Import/use in other scripts as needed |
+| `mcp_guardrails.py`      | MCP protocol guardrails (reserved for future MCP integration) | Import/use in MCP-enabled scripts   |
 
 Scripts live in `.github/scripts/`. Workflows live in `.github/workflows/`. Scripts that commit to the repo use `git config user.name "github-actions[bot]"`. Dependencies are tracked in `.github/scripts/requirements-scraper.txt`.
 
