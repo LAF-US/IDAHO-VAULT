@@ -15,6 +15,9 @@ jobs:
       github.event.pull_request.user.login != github.event.review.user.login
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
       - name: Acknowledge review and pause auto-merge
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
