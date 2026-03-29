@@ -6,6 +6,7 @@ outlet:
 URL: https://idahocapitalsun.com/briefs/north-idahos-panhandle-health-district-installs-free-narcan-vending-machines-in-coeur-dalene-kellogg/
 tags:
   - media/articles
+  - 2023/12/04
 ---
 Two new vending machines offering [[Narcan]], a lifesaving medication that can help with [[opioids|opioid]] [[drug overdoses|overdose]], have been installed at The Pantry at [[St. Vincent de Paul]] in [[Coeur d'Alene]] and the [[Shoshone County Fire District]] in [[Kellogg]].
 
