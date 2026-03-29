@@ -1,12 +1,25 @@
 {
-  "files": [
-    {
-      "path": "INBOX/ingest-2026-03-25T04-45-11Z.md",
-      "last_modified": "2026-03-25T04:45:11Z",
-      "status": "open",
-      "type": "ingest",
-      "description": "Raw ingested document",
-      "last_agent": "executor"
-    }
-  ]
+  "manifest_version": "1.0.0",
+  "generated_at": "2026-03-25T00:00:00Z",
+  "authority": {
+    "canonical_system": "github",
+    "interface_system": "obsidian",
+    "fallback_mode": "filesystem"
+  },
+  "sync": {
+    "primary_dataset": "vault",
+    "sync_unit": [
+      "file",
+      "manifest_entry"
+    ],
+    "trigger_model": "event_based_write_read_cycle"
+  },
+  "mcp": {
+    "enabled": false,
+    "mode": "transport_only",
+    "server": null,
+    "notes": "Enable after Obsidian MCP Tools endpoint and write controls are validated."
+  },
+  "locks": [],
+  "entries": {}
 }
