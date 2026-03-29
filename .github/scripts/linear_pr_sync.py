@@ -94,18 +94,20 @@ def linear_request(api_key: str, query: str, variables: Dict[str, Any]) -> Dict[
 def get_issue(api_key: str, identifier: str) -> Dict[str, Any]:
     query = """
     query IssueByIdentifier($identifier: String!) {
-      issue(id: $identifier) {
-        id
-        identifier
-        title
+      issues(filter: { identifier: { eq: $identifier } }) {
+        nodes {
+          id
+          identifier
+          title
+        }
       }
     }
     """
     data = linear_request(api_key, query, {"identifier": identifier})
-    issue = data.get("issue")
-    if not issue:
+    nodes = (data.get("issues") or {}).get("nodes") or []
+    if not nodes:
         raise LinearSyncError(f"No Linear issue found for identifier '{identifier}'.")
-    return issue
+    return nodes[0]
 
 
 def update_issue_state(api_key: str, issue_id: str, state_id: str) -> None:
