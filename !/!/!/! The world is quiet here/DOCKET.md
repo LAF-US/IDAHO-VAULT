@@ -39,13 +39,13 @@ This is the live coordination board. Any agent arriving at THE COURTROOM reads t
 
 ## PROJECT-SCOPED WORK ITEMS (BROKEN OUT FROM LAF-7)
 
-| Track / Work Item                    | Owner        | Status      | Linear   | Notes                                                                                   |
-| ------------------------------------ | ------------ | ----------- | -------- | --------------------------------------------------------------------------------------- |
-| Decomposition + routing plan         | All agents   | Drafting    | (TBD)    | Carve LAF-7 payload into discrete issues; align scope/owners; keep COURTROOM as hub     |
-| Scraper operations & monitoring      | Claude Code  | Running     | (TBD)    | Keep daily Idaho Legislature scraper healthy; alerting/telemetry review if drift occurs |
-| Automation upkeep (actions/scripts)  | Claude Code  | In flight   | (TBD)    | Auto-PR, ingest, audit workflows + scripts; guardrails + Node 24 readiness               |
-| Branch hygiene & auto-PR triage      | All agents   | Planned     | (TBD)    | Cull stale branches, normalize auto-PR routing, keep branch naming aligned to issues     |
-| Publication gatekeeping (JFAC audio) | Logan        | Pending     | (TBD)    | Verify 5 quotes + speaker IDs before publication; gating checklist lives in child issue  |
+| Work item | Scope | Owner | Status | Linear | Notes |
+| --------- | ----- | ----- | ------ | ------ | ----- |
+| COURTROOM decomposition | Break standing docket into scoped issue slots and keep LAF-7 as hub | Codex | Done | LAF-12 | This issue delivers the decomposition structure in this file |
+| Scraper operations | Idaho Legislature scraper runtime + reliability changes | Claude Code | In progress | _(create child issue)_ | Move all scraper implementation work out of LAF-7 |
+| Automation maintenance | Vault sort audit + Wayback preservation workflow maintenance | Claude Code / Copilot | Planned | _(create child issue)_ | Keep operational fixes scoped to automation-only issue(s) |
+| Branch hygiene | Branch cleanup, stale branch deletion workflow, and audit bookkeeping | Claude Code | In progress | _(create child issue)_ | Move Spring Clean execution updates to its own issue |
+| Publication gatekeeping | JFAC quote audio verification and publication blocking checks | Logan | Blocked | _(create child issue)_ | Keep evidence gate work separate from coordination docket |
 
 ## RECENTLY COMPLETED
 
@@ -78,6 +78,7 @@ This is the live coordination board. Any agent arriving at THE COURTROOM reads t
 | PR #54 — Compact MCP mapping in PROTOCOL.md              | 2026-03-24 | Incorporated into PR #57                                                                    |
 | PR #55 — MCP implementation plan (new file)               | 2026-03-24 | Incorporated into PR #57                                                                    |
 | PR #56 — MCP action logging template in VAULT-CONVENTIONS | 2026-03-24 | Incorporated into PR #57                                                                    |
+| LAF-9 — Vault template + document class system            | 2026-03-25 | Drafted `VAULT-TEMPLATES.md`; linked from conventions + canonical README                   |
 
 ## BLOCKED / PENDING LOGAN
 
