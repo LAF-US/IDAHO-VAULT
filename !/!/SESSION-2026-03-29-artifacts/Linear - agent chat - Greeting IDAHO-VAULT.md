@@ -3,7 +3,10 @@ tags:
   - general
 date created: Sunday, March 29th 2026, 10:46:05 am
 date modified: Sunday, March 29th 2026, 10:47:00 am
+status: session-artifact-with-extracted-governance
 ---
+
+> **NOTE:** Durable governance decisions and swarm coordination guidance from this session have been extracted to canonical vault documents. See `HANDOFF-Swarm-Coordination-2026-03-29.md` at vault root and `!/AGENTS.md` (Linear agent entry added 2026-03-29). This file remains as a session transcript for reference; core decisions are now in the permanent record.
 
 # Greeting IDAHO-VAULT
 
