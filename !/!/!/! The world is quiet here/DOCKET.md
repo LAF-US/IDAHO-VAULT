@@ -46,6 +46,7 @@ This is the live coordination board. Any agent arriving at THE COURTROOM reads t
 
 | Task                                                      | Completed  | Notes                                                                                       |
 | --------------------------------------------------------- | ---------- | ------------------------------------------------------------------------------------------- |
+| **Triage + commit 10 untracked content docs**              | 2026-03-28 | AGENTIC SWARM SYSTEMS, AI-AUTOMATION, IDAHO-VAULT SYSTEM CONTEXT/WORKFLOW/WORKFLOW-JOURNALISM, Kano Play, Notebook LM, Podcast, David Leroy — committed to `gemini/activate-linear-pilot`; conflict copies and junk excluded |
 | **Gemini capability tier defined**                         | 2026-03-28 | Tier 1 (Support): Direct Write, Operational zone only, Linear SWARM issues/comments — `!/AGENTS.md` updated |
 | **Linear Phase 1 pilot scoped**                            | 2026-03-28 | Plugin auth inventory → recommendation captured; ACTIVE WORK entry created; vault/Slack doctrine confirmed |
 | Plugin auth inventory committed                            | 2026-03-28 | `!/PLUGIN-AUTH-INVENTORY-2026-03-28.md` — all 7 connectors probed; Linear-first recommended |

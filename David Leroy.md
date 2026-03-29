@@ -1,0 +1,6 @@
+---
+date created: Saturday, March 28th 2026, 7:02:31 pm
+date modified: Saturday, March 28th 2026, 7:03:20 pm
+---
+
+[[Idaho Republican Party|Republican]] [[former]] [[Attorney General]]and [[Lieutenant Governor]]
