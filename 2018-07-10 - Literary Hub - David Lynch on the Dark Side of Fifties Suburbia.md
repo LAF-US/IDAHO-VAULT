@@ -5,6 +5,7 @@ author:
   - "[[David Lynch]]"
 tags:
   - media/articles
+  - 2018/07/10
 ---
 [Literary Hub](https://lithub.com/)
 
