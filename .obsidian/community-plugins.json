@@ -5,5 +5,11 @@
   "obsidian42-strange-new-worlds",
   "tag-wrangler",
   "obsidian-linter",
-  "better-search-views"
+  "better-search-views",
+  "obsidian-git",
+  "obsidian-importer",
+  "obsidian-local-rest-api",
+  "mcp-tools",
+  "smart-connections",
+  "templater-obsidian"
 ]
