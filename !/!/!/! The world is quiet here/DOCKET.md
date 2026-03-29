@@ -1,7 +1,7 @@
 ---
 tags:
   - administration/coordination
-updated: 2026-03-28
+updated: 2026-03-29
 status: active
 ---
 
@@ -13,6 +13,8 @@ This is the live coordination board. Any agent arriving at THE COURTROOM reads t
 
 **Delegation note (Logan, 2026-03-28):** Logan has delegated vault operations for this round. The Abhorsen (Claude Code) conducting: infrastructure commits, Gemini tier definition, Linear Phase 1 scoping, LEVELSET refresh, branch push and PR.
 
+**Sunday swarm dispatch (Logan, 2026-03-29):** All agents operate in Sunday swarm mode. Keep execution in scoped issue lanes. No merges to `main`. No overlapping branches. Post one checkpoint before parking any lane. Escalate only for true blocker, conflict, required human judgment, merge decision, or secret/config provisioning. Hard blocker remains `LINEAR_API_KEY`. Merge-risk item remains PR #96.
+
 **Breadcrumbs:** LEVELSET protocol for state changes (`!/LEVELSET.md`), agent registry (`!/AGENTS.md`), this docket for standing coordination, vault navigation (`!/VAULT-CONVENTIONS.md`).
 
 **Unified conversation:** Slack (ephemeral coordination), Linear (tasks + blockers), Vault (canonical record).
@@ -23,10 +25,11 @@ This is the live coordination board. Any agent arriving at THE COURTROOM reads t
 
 | Task                                | Owner          | Status      | Linear | Notes                                                          |
 | ----------------------------------- | -------------- | ----------- | ------ | -------------------------------------------------------------- |
-| Swarm coordination — agent assembly | All agents     | In progress | LAF-7  | Agents proceed into **THE CITY**; await denouement             |
+| Swarm coordination — agent assembly | All agents     | In progress | LAF-7  | Sunday swarm mode — hub only; execution in scoped lanes        |
 | **Linear Phase 1 pilot** — live-write scoping | Claude Code | **Active** | — | Plugin inventory recommends Linear-first; scope = SWARM issues, comments, status updates; vault remains durable record; Slack breadcrumb-only; no multi-plugin orchestration until stable |
 | Linear workspace team setup         | GitHub Copilot | In progress | LAF-2  | Configure teams/members/roles in Linear                        |
 | Import your data                    | GitHub Copilot | In progress | LAF-4  | Linear import/migration guidance in `Import your data.md`      |
+| GitHub Actions CI diagnosis         | GitHub Copilot | **Resolved** | LAF-7  | Root cause: `LINEAR_API_KEY` not set; fixed workflow to graceful-skip instead of hard-fail |
 | Idaho Legislature scraper           | Claude Code    | Running     | —      | Daily 6 AM MT, commits to main; minidata CSV export functional |
 | Budget tracker CSV export           | Automated      | Running     | —      | Daily 6:30 AM MT; emails CSV to configured recipients          |
 | Vault sort audit                    | Automated      | Weekly      | —      | Monday 6 AM UTC                                                |
@@ -80,6 +83,8 @@ This is the live coordination board. Any agent arriving at THE COURTROOM reads t
 
 | Item                            | Blocker                                                                                                                                                                                                                                                                                                                                                                     | Who can unblock |
 | ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- |
+| **`LINEAR_API_KEY` secret**     | **Hard blocker** — not provisioned in GitHub Actions. `Sync PR state to Linear` workflow fails on every PR until set. Workflow now gracefully skips (exit 0) to reduce CI noise, but sync is non-functional until key is set. | **Logan only** |
+| **PR #96 merge decision**       | Omnibus 11-PR consolidation; contains `linear-pr-sync.yml` + `pr-linear-sync.yml` overlap risk. Dual-workflow collision must be reviewed before merge. Currently open as draft. | Logan + Codex |
 | Gemini capability tier          | ~~Google Cloud `idaho-vault` project exists, APIs enabled, credentials not created — role decision required before any integration~~ **Resolved 2026-03-28:** Tier 1 (Support) defined in `!/AGENTS.md` — Direct Write, Operational zone only, Linear SWARM issues/comments. | ~~Logan~~ **Done** |
 | `.obsidian/workspace.json`      | Tracked in git; should be untracked + gitignored — separate hygiene PR                                                                                                                                                                                                                                                                                                     | Logan           |
 | Vault-embedded MCP architecture | **Resolved 2026-03-24:** Q1 MCP disallowed? **No**. Q2 Transport-only with native terms canonical? **Yes (adopted)**. Q3 MCP primary integration model? **No**. Q4 Governance authority source? **Vault-native governance files/terms remain canonical**. Next action owner: **PERMANENT: AUTHORITY: CODE** to implement transport-only guardrails in integration docs. Unblock date: **2026-03-24**. | Logan           |
