@@ -7,6 +7,7 @@ URL: https://www.spokesman.com/stories/2018/sep/23/blocking-robocalls-even-racis
 tags:
   - media/articles
   - 2023/09/23
+  - 2018/09/23
 ---
 *[[Scott Rhodes|Scott D. Rhodes]], of [[Sandpoint]], advocates a [[white supremacist]] takeover of the [[United States of America|United States]] in an installment of his video podcast titled “[[The Road to Power]].” He appears to be responsible for recent flurries of offensive automated phone calls in [[California]] and [[Spokane]].*
 
