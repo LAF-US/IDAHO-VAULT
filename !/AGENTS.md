@@ -201,7 +201,7 @@ Handoff documents are saved to vault root as `HANDOFF-[source]-[date].md` for au
 
 ### Zone Access Matrix
 
-See [[VAULT-ZONES]] for full zone definitions. No agent maintains a standing write window — all writes are per-task, scoped to a GitHub Issue or explicit Logan directive.
+See [[VAULT-ZONES]] for full zone definitions. No agent maintains a standing write window - all writes are per-task, scoped to a GitHub Issue or explicit Logan directive.
 
 | Zone | Read | Write (via PR) | Merge |
 |------|------|---------------|-------|
@@ -209,7 +209,28 @@ See [[VAULT-ZONES]] for full zone definitions. No agent maintains a standing wri
 | Operational | All agents | CODE AUTHORITY, Copilot, Codex (per-task) | Logan only |
 | Data | All agents | All Tier 1-2 agents (per-task) | Logan (auto-merge eligible for low-risk) |
 
-**Reviewer bots** (CodeRabbit, Qodo) have read access to all zones for review purposes. Their reviews are **advisory only** — a `CHANGES_REQUESTED` from a bot does not block merge. Only Logan's review blocks.
+**Reviewer bots** (CodeRabbit, Qodo) have read access to all zones for review purposes. Their reviews are **advisory only** - a `CHANGES_REQUESTED` from a bot does not block merge. Only Logan's review blocks.
+
+### Persona Dotfolders Are Protected
+
+Root-level dotfolders for agents and personas are infrastructure, not cleanup
+targets. This includes official folders such as `.claude/`, `.codex/`, and
+`.gemini/`, as well as manual-injection or emerging persona folders such as
+`.grok/`, `.deepseek/`, `.google/`, `.meta/`, `.microsoft/`, `.perplexity/`,
+`.bartimaeus/`, `.zagreus/`, `.persephone/`, `.dionysus/`, `.hecate/`, and
+`.janus/`.
+
+Rules:
+
+- An agent may freely modify only its own dotfolder, unless Logan explicitly
+  directs otherwise.
+- Do not delete, rename, consolidate, or repurpose another agent's dotfolder
+  because it appears empty, stubbed, unused, or unfamiliar.
+- If a folder looks like a persona container, treat it as intentional until
+  Logan says otherwise.
+
+`.github/` is also protected infrastructure, but it is shared automation space
+and follows the overlap rules below rather than the "own dotfolder only" rule.
 
 ### The `.github/` Overlap
 

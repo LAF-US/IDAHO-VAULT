@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-date_tagger.py — tag article/source notes with their publish date (YYYY/MM/DD).
+date_tagger.py - tag article/source notes with their publish date (YYYY/MM/DD).
 
 Source of truth: the YYYY-MM-DD prefix in the filename.
   - This is the publish/record date, NOT date created or date modified.
@@ -9,13 +9,13 @@ Source of truth: the YYYY-MM-DD prefix in the filename.
     and never auto-tagged.
 
 Handles three frontmatter states:
-  1. Block tags (tags:\\n  - item) — appends date tag to the list
-  2. No tags field               — inserts tags: block before closing ---
-  3. No frontmatter              — prepends minimal frontmatter
+  1. Block tags (tags:\n  - item) - appends date tag to the list
+  2. No tags field               - inserts tags: block before closing ---
+  3. No frontmatter              - prepends minimal frontmatter
 
 Skips:
   - Exact daily notes (YYYY-MM-DD.md)
-  - Files already carrying the YYYY/MM/DD tag
+  - Files already carrying the YYYY/MM/DD tag in frontmatter
   - Files whose frontmatter date: conflicts with filename date (REVIEW)
 
 Usage:
@@ -24,38 +24,80 @@ Usage:
 
 import argparse
 import re
+import sys
 from datetime import date
 from pathlib import Path
 
 VAULT_ROOT = Path(__file__).resolve().parents[2]
 
-DAILY_NOTE_RE   = re.compile(r'^\d{4}-\d{2}-\d{2}\.md$')
-DATE_PREFIX_RE  = re.compile(r'^(\d{4}-\d{2}-\d{2})[^T]')  # excludes YYYY-MM-DDTHHMM
-FM_DATE_RE      = re.compile(r'^date(?:\s+published)?:\s*(\d{4}-\d{2}-\d{2})', re.MULTILINE)
-BLOCK_TAGS_RE   = re.compile(r'^(tags:\s*\n(?:  - .+\n)+)', re.MULTILINE)
-INLINE_TAGS_RE  = re.compile(r'^(tags:\s*\[.+\])', re.MULTILINE)
-FM_CLOSE_RE     = re.compile(r'\n---\n', )
+DAILY_NOTE_RE = re.compile(r'^\d{4}-\d{2}-\d{2}\.md$')
+DATE_PREFIX_RE = re.compile(r'^(\d{4}-\d{2}-\d{2})[^T]')
+FM_DATE_RE = re.compile(r'^date(?:\s+published)?:\s*(\d{4}-\d{2}-\d{2})', re.MULTILINE)
+BLOCK_TAGS_RE = re.compile(r'^(tags:\s*\n(?:  - .+\n)+)', re.MULTILINE)
+INLINE_TAGS_RE = re.compile(r'^(tags:\s*\[.+\])', re.MULTILINE)
+FM_CLOSE_RE = re.compile(r'\n---\n')
+
+
+def log(message: str = "") -> None:
+    """Write stdout safely on terminals that cannot encode all Unicode glyphs."""
+    text = f"{message}\n"
+    encoding = sys.stdout.encoding or "utf-8"
+    if hasattr(sys.stdout, "buffer"):
+        sys.stdout.buffer.write(text.encode(encoding, errors="backslashreplace"))
+        sys.stdout.buffer.flush()
+    else:
+        sys.stdout.write(text)
 
 
 def has_fm(content: str) -> bool:
     return content.startswith('---')
 
 
+def get_frontmatter(content: str) -> str:
+    if not has_fm(content):
+        return ""
+    match = FM_CLOSE_RE.search(content, 3)
+    if not match:
+        return ""
+    # Keep the newline before the closing fence so trailing block-style tags
+    # still match when tags are the last frontmatter field.
+    return content[:match.start() + 1]
+
+
+def has_frontmatter_tag(content: str, tag: str) -> bool:
+    frontmatter = get_frontmatter(content)
+    if not frontmatter:
+        return False
+
+    block = BLOCK_TAGS_RE.search(frontmatter)
+    if block and re.search(rf'(?m)^  - {re.escape(tag)}$', block.group(1)):
+        return True
+
+    inline = INLINE_TAGS_RE.search(frontmatter)
+    if not inline:
+        return False
+
+    raw_items = inline.group(1).split('[', 1)[1].rsplit(']', 1)[0]
+    items = [item.strip().strip("'\"") for item in raw_items.split(',') if item.strip()]
+    return tag in items
+
+
 def inject_into_block_tags(content: str, tag: str) -> str:
     """Append tag to an existing multi-line tags block."""
-    def replacer(m):
-        block = m.group(1).rstrip('\n')
+
+    def replacer(match):
+        block = match.group(1).rstrip('\n')
         return block + f'\n  - {tag}\n'
+
     return BLOCK_TAGS_RE.sub(replacer, content, count=1)
 
 
 def inject_tags_field(content: str, tag: str) -> str:
     """Add a tags: block just before the closing --- of frontmatter."""
-    # Find the closing --- of frontmatter
-    m = FM_CLOSE_RE.search(content, 3)  # skip opening ---
-    if not m:
+    match = FM_CLOSE_RE.search(content, 3)
+    if not match:
         return content
-    insert_pos = m.start()
+    insert_pos = match.start()
     return content[:insert_pos] + f'\ntags:\n  - {tag}' + content[insert_pos:]
 
 
@@ -64,8 +106,8 @@ def prepend_frontmatter(content: str, tag: str) -> str:
     return f'---\ntags:\n  - {tag}\n---\n\n' + content.lstrip()
 
 
-def tag_file(f: Path, file_date: str, tag: str) -> str:
-    content = f.read_text(errors='replace')
+def tag_file(path: Path, tag: str) -> str:
+    content = path.read_text(encoding="utf-8", errors="replace")
 
     if not has_fm(content):
         return prepend_frontmatter(content, tag)
@@ -74,15 +116,14 @@ def tag_file(f: Path, file_date: str, tag: str) -> str:
         return inject_into_block_tags(content, tag)
 
     if INLINE_TAGS_RE.search(content):
-        # Convert inline to block and append — rare but handled
-        def to_block(m):
-            items = re.findall(r'[\w/]+', m.group(1).split('[', 1)[1].split(']')[0])
-            lines = ''.join(f'  - {i}\n' for i in items)
+        def to_block(match):
+            items = re.findall(r'[\w/]+', match.group(1).split('[', 1)[1].split(']')[0])
+            lines = ''.join(f'  - {item}\n' for item in items)
             return f'tags:\n{lines}'
+
         content = INLINE_TAGS_RE.sub(to_block, content, count=1)
         return inject_into_block_tags(content, tag)
 
-    # Frontmatter exists but no tags field
     return inject_tags_field(content, tag)
 
 
@@ -94,69 +135,66 @@ def main() -> None:
 
     tagged, skipped, review = [], [], []
 
-    for f in sorted(VAULT_ROOT.glob('*.md')):
-        if DAILY_NOTE_RE.match(f.name):
+    for path in sorted(VAULT_ROOT.glob('*.md')):
+        if DAILY_NOTE_RE.match(path.name):
             if args.show_skipped:
-                print(f"  skip (daily note): {f.name}")
+                log(f"  skip (daily note): {path.name}")
             continue
 
-        m = DATE_PREFIX_RE.match(f.name)
-        if not m:
+        match = DATE_PREFIX_RE.match(path.name)
+        if not match:
             if args.show_skipped:
-                print(f"  skip (no date prefix): {f.name}")
+                log(f"  skip (no date prefix): {path.name}")
             continue
 
-        file_date = m.group(1)
+        file_date = match.group(1)
 
         try:
             date.fromisoformat(file_date)
         except ValueError:
-            review.append((f.name, file_date, 'INVALID DATE'))
+            review.append((path.name, file_date, 'INVALID DATE'))
             continue
 
-        tag       = file_date.replace('-', '/')
-        content   = f.read_text(errors='replace')
+        tag = file_date.replace('-', '/')
+        content = path.read_text(encoding="utf-8", errors="replace")
 
-        # Already tagged
-        if tag in content:
-            skipped.append(f.name)
+        if has_frontmatter_tag(content, tag):
+            skipped.append(path.name)
             if args.show_skipped:
-                print(f"  skip (already tagged): {f.name}")
+                log(f"  skip (already tagged): {path.name}")
             continue
 
-        # Frontmatter date conflict check
         fm_date = FM_DATE_RE.search(content)
         if fm_date and fm_date.group(1) != file_date:
-            review.append((f.name, file_date, fm_date.group(1)))
+            review.append((path.name, file_date, fm_date.group(1)))
             continue
 
-        new_content = tag_file(f, file_date, tag)
+        new_content = tag_file(path, tag)
 
         if args.dry_run:
-            # Show just the frontmatter diff
-            old_fm_end = content.find('\n---\n', 3) + 5 if '---' in content[3:10] else 0
-            new_fm_end = new_content.find('\n---\n', 3) + 5 if '---' in new_content[3:10] else 0
-            print(f"\n  {f.name}")
-            print(f"  + {tag}")
+            log(f"\n  {path.name}")
+            log(f"  + {tag}")
         else:
-            f.write_text(new_content)
+            path.write_text(new_content, encoding="utf-8")
 
-        tagged.append(f.name)
+        tagged.append(path.name)
 
-    print(f"\n{'Dry run — ' if args.dry_run else ''}tagged: {len(tagged)}, "
-          f"already done: {len(skipped)}, review: {len(review)}")
+    prefix = "Dry run - " if args.dry_run else ""
+    log(f"\n{prefix}tagged: {len(tagged)}, already done: {len(skipped)}, review: {len(review)}")
 
     if review:
-        invalid = [(n, fd, r) for n, fd, r in review if r == 'INVALID DATE']
-        conflicts = [(n, fd, r) for n, fd, r in review if r != 'INVALID DATE']
+        invalid = [(name, fd, reason) for name, fd, reason in review if reason == 'INVALID DATE']
+        conflicts = [(name, fd, reason) for name, fd, reason in review if reason != 'INVALID DATE']
+
         if invalid:
-            print("\n\u26a0 REVIEW \u2014 invalid date in filename (not auto-tagged):")
+            log("\nREVIEW - invalid date in filename (not auto-tagged):")
             for name, fd, _ in invalid:
-                print(f"  filename={fd}  \u2192  {name}")
+                log(f"  filename={fd} -> {name}")
+
         if conflicts:
-            print("\n\u26a0 REVIEW \u2014 filename date vs frontmatter date conflict (not auto-tagged):")
+            log("\nREVIEW - filename date vs frontmatter date conflict (not auto-tagged):")
             for name, fd, fmd in conflicts:
-                print(f"  filename={fd}  frontmatter={fmd}  \u2192  {name}")
+                log(f"  filename={fd}  frontmatter={fmd}  -> {name}")
 
 
 if __name__ == "__main__":
