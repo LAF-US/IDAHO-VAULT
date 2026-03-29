@@ -4,6 +4,7 @@ author:
 URL: https://healthandwelfare.idaho.gov/news/idaho-behavioral-health-plan-implementation-update
 tags:
   - media/pressrelease
+  - 2023/12/07
 ---
 _NEWS RELEASE--FOR IMMEDIATE RELEASE      Date: December 7, 2023_
 
