@@ -1,9 +1,7 @@
 name: Sync PR state to Linear
 
 on:
-  pull_request:
-    types: [opened, reopened, ready_for_review, closed]
-
+  workflow_call:
 jobs:
   sync:
     runs-on: ubuntu-latest
