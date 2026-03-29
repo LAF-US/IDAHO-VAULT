@@ -27,5 +27,10 @@
     "editor:configure-toolbar"
   ],
   "mobilePullAction": "daily-notes",
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "openBehavior": "daily",
+  "showUnsupportedFiles": true,
+  "readableLineLength": false,
+  "showInlineTitle": false,
+  "showLineNumber": false
 }
