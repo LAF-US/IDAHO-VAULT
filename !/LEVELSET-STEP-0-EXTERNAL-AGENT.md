@@ -89,4 +89,4 @@ Do NOT:
 | `!/!/LEVELSET.md` | Orientation prompt for repo-connected agents |
 | `AGENTS.md` | Agent registry, capability tiers |
 | `PROTOCOL.md` | Operational vocabulary (18 shared terms) |
-| `!ADMINISTRATION/DECISIONS.md` | Architectural decision log |
+| `!/DECISIONS.md` | Architectural decision log |
