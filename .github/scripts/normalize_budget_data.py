@@ -5,8 +5,10 @@ def normalize_data():
     Reads the minidata.csv file, normalizes the data, and writes it to a new CSV file.
     """
     try:
-        with open('minidata.csv', 'r', newline='', encoding='utf-8') as infile, 
-             open('normalized_budget_data.csv', 'w', newline='', encoding='utf-8') as outfile:
+        with (
+            open('minidata.csv', 'r', newline='', encoding='utf-8') as infile,
+            open('normalized_budget_data.csv', 'w', newline='', encoding='utf-8') as outfile
+        ):
 
             reader = csv.DictReader(infile)
             fieldnames = [

@@ -1,14 +1,10 @@
 {
     "codium.codeCompletion.enable": true,
-    "python.testing.pytestArgs": [
-        "!"
-    ],
     "python.testing.unittestEnabled": true,
     "python.testing.pytestEnabled": false,
     "python.testing.unittestArgs": [
         "-v",
         "-s",
-        "./!",
         "-p",
         "*test*.py"
     ],
@@ -19,7 +15,8 @@
         "Get-Command": true,
         "where.exe": true,
         "Test-Path": true,
-        "ForEach-Object": true
+        "npm install": true,
+        "npm run build": true
     },
     "grunt.autoDetect": "on",
     "gulp.autoDetect": "on",

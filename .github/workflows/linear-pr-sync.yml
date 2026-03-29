@@ -96,6 +96,11 @@ jobs:
           issue = issues[0]
           states = issue["team"]["states"]["nodes"]
 
+          # Log available states for debugging
+          print(f"Available states for team {issue['team']['key']}:")
+          for s in states:
+              print(f"  - Name: {s.get('name')}, Type: {s.get('type')}, ID: {s.get('id')}")
+
           # Prefer state `type` so IDs come from the real team workflow.
           target_state = next((s for s in states if s.get("type") == target_state_type), None)
           if not target_state:
