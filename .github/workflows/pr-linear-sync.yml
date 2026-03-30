@@ -1,8 +1,8 @@
 name: PR → Linear Sync
 
 on:
-  pull_request:
-    types: [opened, reopened, ready_for_review, closed]
+  # Disabled as a direct PR trigger to prevent duplicate owners with
+  # .github/workflows/linear-pr-sync.yml (LAF-14 baseline owner).
   workflow_call:
   workflow_dispatch:
 
