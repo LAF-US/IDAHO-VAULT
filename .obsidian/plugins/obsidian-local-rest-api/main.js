@@ -56986,6 +56986,7 @@ function getSplicePosition(fileLines, heading, insert, ignoreNewLines) {
   if (!ignoreNewLines || insert) {
     return splicePosition;
   }
+var LOCAL_SECRETS_FILE = ".obsidian/plugins/obsidian-local-rest-api/local-secrets.json";
   while (fileLines[splicePosition - 1] === "") {
     splicePosition--;
   }
@@ -58109,7 +58110,8 @@ var RequestHandler = class {
       strict: false,
       limit: MaximumRequestSize
     }));
-    this.api.use(import_body_parser.default.json({
+      let localSecretsChanged = false;
+        localSecretsChanged = true;
       type: ContentTypes.jsonLogic,
       strict: false,
       limit: MaximumRequestSize
@@ -58197,7 +58199,11 @@ var LocalRestApi = class extends import_obsidian2.Plugin {
           {
             name: "keyUsage",
             keyCertSign: true,
-            digitalSignature: true,
+        localSecretsChanged = true;
+      if (localSecretsChanged) {
+        yield this.saveLocalSecrets();
+      }
+      yield this.saveSettings();
             nonRepudiation: true,
             keyEncipherment: false,
             dataEncipherment: false,
@@ -58252,8 +58258,33 @@ var LocalRestApi = class extends import_obsidian2.Plugin {
   }
   debounce(func, delay) {
     let debounceTimer;
-    return (...args) => {
-      clearTimeout(debounceTimer);
+      const sharedSettings = yield this.loadData();
+      const localSecrets = yield this.loadLocalSecrets();
+      this.settings = Object.assign({}, DEFAULT_SETTINGS, sharedSettings, localSecrets);
+      const _a2 = this.settings, { apiKey, crypto } = _a2, sharedSettings = __objRest(_a2, ["apiKey", "crypto"]);
+      yield this.saveData(sharedSettings);
+    });
+  }
+  loadLocalSecrets() {
+    return __async(this, null, function* () {
+      try {
+        const contents = yield this.app.vault.adapter.read(LOCAL_SECRETS_FILE);
+        return JSON.parse(contents);
+      } catch (error) {
+        return {};
+      }
+    });
+  }
+  saveLocalSecrets() {
+    return __async(this, null, function* () {
+      const localSecrets = {};
+      if (this.settings.apiKey) {
+        localSecrets.apiKey = this.settings.apiKey;
+      }
+      if (this.settings.crypto) {
+        localSecrets.crypto = this.settings.crypto;
+      }
+      yield this.app.vault.adapter.write(LOCAL_SECRETS_FILE, JSON.stringify(localSecrets, null, 2));
       debounceTimer = setTimeout(() => func(...args), delay);
     };
   }
@@ -58807,7 +58838,7 @@ object-assign
 /*!
  * send
  * Copyright(c) 2012 TJ Holowaychuk
- * Copyright(c) 2014-2022 Douglas Christopher Wilson
+/* nosourcemap */
  * MIT Licensed
  */
 /*!
