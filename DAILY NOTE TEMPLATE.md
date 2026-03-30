@@ -15,8 +15,8 @@ tags:
   - today
   - {{date:YYYY/MM/DD}}
   - dailynote
-date created: {{date:dddd, MMMM Do YYYY, h:mm:ss a}}
-date modified: {{date:dddd, MMMM Do YYYY, h:mm:ss a}}
+date created: Saturday, March 28th 2026, 4:28:41 pm
+date modified: Monday, March 30th 2026, 10:33:30 am
 ---
 
 [[TO DO LIST]]
