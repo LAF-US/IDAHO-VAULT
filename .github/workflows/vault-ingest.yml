@@ -15,16 +15,31 @@ jobs:
       - name: Checkout vault
         uses: actions/checkout@v6
 
+      - name: Compute ingest filename
+        id: plan_ingest
+        run: |
+          mkdir -p INBOX PROCESSED AGENTS ADMIN
+          TIMESTAMP="$(date -u +%Y-%m-%dT%H%M%SZ)"
+          FILE="INBOX/ingest-${TIMESTAMP}.md"
+          echo "file=$FILE" >> "$GITHUB_OUTPUT"
+          echo "timestamp=$TIMESTAMP" >> "$GITHUB_OUTPUT"
+
+      - name: Acquire manifest lock (before write)
+        run: |
+          python3 .github/scripts/update_manifest.py \
+            --manifest manifest.json \
+            --file "${{ steps.plan_ingest.outputs.file }}" \
+            --agent-id "github-actions[bot]" \
+            --phase acquire
+
       - name: Generate ingest artifact
         id: generate_ingest
         env:
           SOURCE: system-test
           CONTENT: Vault ingest pipeline initialized.
         run: |
-          mkdir -p INBOX PROCESSED AGENTS ADMIN
-          # Use cross-platform-safe UTC timestamp format: ingest-YYYY-MM-DDTHHMMSSZ.md.
-          TIMESTAMP="$(date -u +%Y-%m-%dT%H%M%SZ)"
-          FILE="INBOX/ingest-${TIMESTAMP}.md"
+          FILE="${{ steps.plan_ingest.outputs.file }}"
+          TIMESTAMP="${{ steps.plan_ingest.outputs.timestamp }}"
           if [ -e "$FILE" ]; then
             echo "Ingest file already exists: $FILE"
             exit 1
@@ -38,12 +53,13 @@ jobs:
 
           echo "file=$FILE" >> "$GITHUB_OUTPUT"
 
-      - name: Update manifest lock + entry
+      - name: Release manifest lock + update entry (after write)
         run: |
-          python .github/scripts/update_manifest.py \
+          python3 .github/scripts/update_manifest.py \
             --manifest manifest.json \
             --file "${{ steps.generate_ingest.outputs.file }}" \
-            --agent-id "github-actions[bot]"
+            --agent-id "github-actions[bot]" \
+            --phase release
 
       - name: Commit ingest artifact
         run: |
