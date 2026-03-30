@@ -7,7 +7,10 @@ URL: https://www.buzzfeednews.com/article/annehelenpetersen/love-lives-in-whitef
 tags:
   - media/articles
   - 2017/02/12
+date created: Monday, March 23rd 2026, 4:54:50 pm
+date modified: Monday, March 30th 2026, 10:27:12 am
 ---
+
 *When [[neo-Nazi|neo-Nazis]] started trolling Whitefish, Montana, the town had to make a definitive stand against hate. But the deepest-rooted intolerance in places like Whitefish isn't the kind that makes headlines.*
 
 “I’ll tell you why these neo-Nazis and fascists move here,” a man named Phil, who’d moved up to [[Glacier National Park]] after graduating from a liberal arts college, told me over dinner. “During the summer, I’d work at this place that rented all sorts of stuff to tourists in the park. So this woman comes in with a Southern accent, I ask where she’s from, she says [[Georgia]]. She rents one of those infant backpacks — the kind you put your kid in. And then she says, ‘This place is just so great — did you move here because there’s no black people?’
