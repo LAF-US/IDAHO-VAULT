@@ -112,18 +112,52 @@ def main() -> int:
     parser.add_argument("--file", required=True, help="Repo-relative file path being written")
     parser.add_argument("--agent-id", required=True, help="Agent identity for lock/entry metadata")
     parser.add_argument("--ttl-minutes", type=int, default=DEFAULT_TTL_MINUTES)
+    parser.add_argument(
+        "--phase",
+        choices=["acquire", "release"],
+        default=None,
+        help=(
+            "Two-phase lock protocol: "
+            "'acquire' records an active lock BEFORE the file is written; "
+            "'release' updates the entry and releases the lock AFTER the file is written. "
+            "Omitting --phase runs the legacy single-step mode (acquire + release in one call, "
+            "file must already exist)."
+        ),
+    )
     args = parser.parse_args()
 
     manifest_path = Path(args.manifest)
     file_path = args.file
     file_abs = Path(file_path)
 
-    if not file_abs.exists():
-        raise FileNotFoundError(f"target file not found: {file_path}")
-
     now = utc_now()
     manifest = load_manifest(manifest_path)
     expire_stale_locks(manifest, now)
+
+    if args.phase == "acquire":
+        # Phase 1: record an active lock before the file is written.
+        # The file does not need to exist yet.
+        lock = acquire_lock(manifest, file_path, args.agent_id, now, args.ttl_minutes)
+        manifest["generated_at"] = iso_z(now)
+        manifest_path.write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
+        print(f"lock acquired for {file_path}: {lock['lock_id']} (expires {lock['expires_at']})")
+        return 0
+
+    if args.phase == "release":
+        # Phase 2: update the manifest entry and release the lock after the file was written.
+        if not file_abs.exists():
+            raise FileNotFoundError(f"target file not found: {file_path} (did the write step succeed?)")
+        lock = acquire_lock(manifest, file_path, args.agent_id, now, args.ttl_minutes)
+        update_entry(manifest, file_path, file_abs, args.agent_id, lock["lock_id"], now)
+        lock["state"] = "released"
+        manifest["generated_at"] = iso_z(now)
+        manifest_path.write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
+        print(f"manifest updated for {file_path} with lock {lock['lock_id']} (released)")
+        return 0
+
+    # Legacy single-step mode: file must already exist.
+    if not file_abs.exists():
+        raise FileNotFoundError(f"target file not found: {file_path}")
 
     lock = acquire_lock(manifest, file_path, args.agent_id, now, args.ttl_minutes)
     update_entry(manifest, file_path, file_abs, args.agent_id, lock["lock_id"], now)
