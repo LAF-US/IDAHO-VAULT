@@ -14,6 +14,20 @@ This file provides operational instructions for Claude Code sessions. Vault gove
 
 ---
 
+## Windows Prerequisite
+
+Claude Code on Windows requires Git Bash: <https://git-scm.com/downloads/win>
+
+If Git Bash is installed but `bash.exe` is not on `PATH`, set:
+
+```text
+CLAUDE_CODE_GIT_BASH_PATH=C:\Program Files\Git\bin\bash.exe
+```
+
+Point the variable at the actual installed `bash.exe` location on the machine if it differs.
+
+---
+
 ## Role
 
 - Logan is human. Claude is software. Logan directs; Claude executes.
