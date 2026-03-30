@@ -18,7 +18,7 @@ See `!/AGENTS.md` for the full agent registry: capability tiers, boundary rules,
 
 | Agent | Dotfolder | Governance shim | Auto-loaded? | Notes |
 | --- | --- | --- | --- | --- |
-| Claude Code | `.claude/` | `.claude/CLAUDE.md` | Yes | Official path |
+| Claude Code | `.claude/` | `.claude/CLAUDE.md` | Yes | Official path. On Windows, Claude Code requires Git Bash; if `bash.exe` is not on `PATH`, set `CLAUDE_CODE_GIT_BASH_PATH` to the installed `bash.exe`. |
 | Gemini CLI | `.gemini/` | `.gemini/GEMINI.md` | Yes | Official path |
 | OpenAI Codex CLI | `.codex/` | `.codex/CODEX.md` | Yes | Root `AGENTS.md` auto-loads; project config via `.codex/config.toml` |
 | GitHub Copilot | `.github/` | `.github/copilot-instructions.md` | Yes | Official path |
