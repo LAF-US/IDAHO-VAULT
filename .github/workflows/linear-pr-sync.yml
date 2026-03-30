@@ -18,7 +18,7 @@ jobs:
       - name: Sync matching Linear issue
         env:
           LINEAR_API_KEY: ${{ secrets.LINEAR_API_KEY }}
-          LINEAR_POST_LINKBACK: ${{ vars.LINEAR_POST_LINKBACK || 'false' }}
+          LINEAR_POST_LINKBACK: ${{ vars.LINEAR_POST_LINKBACK || 'true' }}
           LINEAR_SYNC_STRICT: ${{ vars.LINEAR_SYNC_STRICT || 'false' }}
         run: |
           python3 .github/scripts/linear_pr_sync.py
