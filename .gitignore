@@ -23,3 +23,6 @@ Thumbs.db
 # Project-specific
 .env
 *.vault.json
+
+# Obsidian Local REST API generates machine-specific credentials
+.obsidian/plugins/obsidian-local-rest-api/local-secrets.json
