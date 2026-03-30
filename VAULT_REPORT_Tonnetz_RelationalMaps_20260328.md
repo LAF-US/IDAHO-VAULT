@@ -1,3 +1,8 @@
+---
+date created: Saturday, March 28th 2026, 2:45:08 pm
+date modified: Monday, March 30th 2026, 10:33:40 am
+---
+
 # IDAHO-VAULT Research Report
 
 ## Tonnetz \& Relational-Map Models for Swarm Coordination

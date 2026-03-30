@@ -6,5 +6,12 @@
   "tag-wrangler",
   "obsidian-linter",
   "better-search-views",
-  "obsidian-git"
+  "obsidian-git",
+  "obsidian-importer",
+  "obsidian-local-rest-api",
+  "mcp-tools",
+  "smart-connections",
+  "smart-connections-visualizer",
+  "templater-obsidian",
+  "ai-templater"
 ]
