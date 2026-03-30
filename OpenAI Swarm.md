@@ -12,6 +12,8 @@ tags:
   - openai
   - tools
 url: https://github.com/openai/swarm
+date created: Monday, March 30th 2026, 10:25:05 am
+date modified: Monday, March 30th 2026, 10:29:50 am
 ---
 
 # OpenAI Swarm
