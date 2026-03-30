@@ -7,143 +7,18 @@ on:
 jobs:
   sync:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: read
+
     steps:
+      - name: Checkout repo
+        uses: actions/checkout@v6
+
       - name: Sync matching Linear issue
         env:
           LINEAR_API_KEY: ${{ secrets.LINEAR_API_KEY }}
+          LINEAR_POST_LINKBACK: ${{ vars.LINEAR_POST_LINKBACK || 'false' }}
           LINEAR_SYNC_STRICT: ${{ vars.LINEAR_SYNC_STRICT || 'false' }}
-          PR_TITLE: ${{ github.event.pull_request.title }}
-          PR_MERGED: ${{ github.event.pull_request.merged }}
-          PR_ACTION: ${{ github.event.action }}
         run: |
-          python3 - <<'PY'
-          import json
-          import os
-          import re
-          import sys
-          import urllib.request
-          from urllib.error import HTTPError, URLError
-
-          api_key = os.getenv("LINEAR_API_KEY")
-          if not api_key:
-            print("LINEAR_API_KEY is not set — skipping Linear sync (provision secret to enable).")
-            sys.exit(0)
-
-          strict_mode = os.getenv("LINEAR_SYNC_STRICT", "false").lower() in {"1", "true", "yes", "on"}
-          if strict_mode:
-            print("LINEAR_SYNC_STRICT is enabled: sync failures will fail the workflow run.")
-
-          pr_title = os.getenv("PR_TITLE", "")
-          action = os.getenv("PR_ACTION", "")
-          merged = os.getenv("PR_MERGED", "false").lower() == "true"
-
-          def soft_fail(message: str) -> None:
-            print(message)
-            if strict_mode:
-              sys.exit(1)
-            sys.exit(0)
-
-          # Keep this strict/safe: only act when the PR title contains a Linear key.
-          match = re.search(r"\bLAF-\d+\b", pr_title)
-          if not match:
-            print(f"No Linear issue identifier found in PR title: {pr_title!r}. Skipping.")
-            sys.exit(0)
-
-          identifier = match.group(0)
-          if action == "closed":
-            if not merged:
-              print("PR was closed without merge. Skipping.")
-              sys.exit(0)
-            target_state_type = "completed"
-            target_state_name = "Done"
-          else:
-            target_state_type = "started"
-            target_state_name = "In Progress"
-
-          def linear_graphql(query: str, variables: dict):
-            payload = json.dumps({"query": query, "variables": variables}).encode("utf-8")
-            req = urllib.request.Request(
-              "https://api.linear.app/graphql",
-              data=payload,
-              headers={
-                "Authorization": api_key,
-                "Content-Type": "application/json",
-              },
-              method="POST",
-            )
-            with urllib.request.urlopen(req) as resp:
-              body = json.loads(resp.read().decode("utf-8"))
-            if "errors" in body and body["errors"]:
-              raise RuntimeError(f"Linear API error: {body['errors']}")
-            return body["data"]
-
-          issue_query = """
-          query IssueByIdentifier($identifier: String!) {
-            issues(filter: { identifier: { eq: $identifier } }) {
-              nodes {
-                id
-                identifier
-                team {
-                  id
-                  key
-                  name
-                  states {
-                    nodes {
-                      id
-                      name
-                      type
-                    }
-                  }
-                }
-              }
-            }
-          }
-          """
-          try:
-            issue_data = linear_graphql(issue_query, {"identifier": identifier})
-          except (RuntimeError, HTTPError, URLError) as exc:
-            soft_fail(f"Linear sync warning: could not query issue {identifier}: {exc}")
-
-          issues = issue_data.get("issues", {}).get("nodes", [])
-          if not issues:
-            soft_fail(f"Linear sync warning: issue {identifier} was not found. Skipping.")
-
-          issue = issues[0]
-          states = issue["team"]["states"]["nodes"]
-
-          # Prefer state `type` so IDs come from the real team workflow.
-          target_state = next((s for s in states if s.get("type") == target_state_type), None)
-          if not target_state:
-            target_state = next((s for s in states if s.get("name", "").lower() == target_state_name.lower()), None)
-
-          if not target_state:
-            soft_fail(
-              f"Linear sync warning: could not find a '{target_state_name}' state for team "
-              f"{issue['team']['key']} (looked for type='{target_state_type}' and "
-              f"name='{target_state_name}'). Skipping."
-            )
-
-          update_mutation = """
-          mutation UpdateIssueState($issueId: String!, $stateId: String!) {
-            issueUpdate(id: $issueId, input: { stateId: $stateId }) {
-              success
-            }
-          }
-          """
-          try:
-            update_data = linear_graphql(
-              update_mutation,
-              {"issueId": issue["id"], "stateId": target_state["id"]},
-            )
-          except (RuntimeError, HTTPError, URLError) as exc:
-            soft_fail(f"Linear sync warning: failed to update {identifier}: {exc}")
-
-          success = update_data.get("issueUpdate", {}).get("success")
-          if not success:
-            soft_fail(
-              f"Linear sync warning: failed to update issue {identifier} to "
-              f"{target_state['name']}. Skipping."
-            )
-
-          print(f"Updated {identifier} to '{target_state['name']}'.")
-          PY
+          python3 .github/scripts/linear_pr_sync.py
