@@ -51,6 +51,7 @@ This is the live coordination board. Any agent arriving at THE COURTROOM reads t
 
 | Task                                                      | Completed  | Notes                                                                                       |
 | --------------------------------------------------------- | ---------- | ------------------------------------------------------------------------------------------- |
+| **Unified Swarm research filed** | 2026-03-29 | Two-part Perplexity report filed as `BIG IFS — UNIFIED SWARM.md`; org stubs created for [[Factory]], [[CrewAI]], [[OpenAI Swarm]] (R&D flagged by Logan) — branch `claude/research-unified-swarm-rDmOg` |
 | **Gemini Code Assist cowork enabled**                      | 2026-03-28 | `.gemini/GEMINI.md` tier fixed, cowork pattern documented; `.gemini/settings.json` context expanded to 6 files; AGENTS.md + entity note updated — `3563a66` |
 | **Stale `!ADMIN/` refs cleaned + root frontmatter spring-cleaned** | 2026-03-28 | DECISIONS.md, LEVELSET-STEP-0, THREAT-MODEL updated; 10 content docs tagged; `!/SWARM-LOOP.md` committed — `ba01c2e` |
 | **Triage + commit 10 untracked content docs**              | 2026-03-28 | AGENTIC SWARM SYSTEMS, AI-AUTOMATION, IDAHO-VAULT SYSTEM CONTEXT/WORKFLOW, JOURNALISM INDUSTRY, Kano Play, Notebook LM, Podcast, David Leroy — `07d2cb7` |
