@@ -5,6 +5,7 @@ Safeguards included:
 - Issue identifier fallback from branch names (e.g., laf-123)
 - Skip draft PRs until ready for review
 - Optional Linear comment/linkback when PR opens or merges
+- Dynamic team state resolution (no static state-id secrets)
 - Clear logs and actionable failure output
 """
 
@@ -27,9 +28,8 @@ ISSUE_RE = re.compile(r"\b([A-Z]+-\d+)\b", re.IGNORECASE)
 class Config:
     linear_api_key: str
     event_path: str
-    open_state_id: str
-    merged_state_id: str
     post_linkback: bool
+    strict_mode: bool
 
 
 class LinearSyncError(RuntimeError):
@@ -99,6 +99,18 @@ def get_issue(api_key: str, identifier: str) -> Dict[str, Any]:
           id
           identifier
           title
+          team {
+            id
+            key
+            name
+            states {
+              nodes {
+                id
+                name
+                type
+              }
+            }
+          }
         }
       }
     }
@@ -108,6 +120,24 @@ def get_issue(api_key: str, identifier: str) -> Dict[str, Any]:
     if not nodes:
         raise LinearSyncError(f"No Linear issue found for identifier '{identifier}'.")
     return nodes[0]
+
+
+def resolve_target_state(issue: Dict[str, Any], action: str, merged: bool) -> Optional[Dict[str, Any]]:
+    if action in {"opened", "reopened", "ready_for_review"}:
+        desired_type = "started"
+        desired_name = "In Progress"
+    elif action == "closed" and merged:
+        desired_type = "completed"
+        desired_name = "Done"
+    else:
+        return None
+
+    states = issue.get("team", {}).get("states", {}).get("nodes", [])
+    target = next((s for s in states if s.get("type") == desired_type), None)
+    if target:
+        return target
+
+    return next((s for s in states if (s.get("name") or "").lower() == desired_name.lower()), None)
 
 
 def update_issue_state(api_key: str, issue_id: str, state_id: str) -> None:
@@ -141,18 +171,19 @@ def create_comment(api_key: str, issue_id: str, body: str) -> None:
 def load_config() -> Config:
     linear_api_key = os.getenv("LINEAR_API_KEY", "").strip()
     if not linear_api_key:
-        raise LinearSyncError("Missing required env var LINEAR_API_KEY.")
+        raise LinearSyncError("LINEAR_API_KEY is not set.")
 
     event_path = os.getenv("GITHUB_EVENT_PATH", "").strip()
     if not event_path:
         raise LinearSyncError("Missing required env var GITHUB_EVENT_PATH.")
 
+    strict_mode = os.getenv("LINEAR_SYNC_STRICT", "false").strip().lower() in {"1", "true", "yes", "on"}
+
     return Config(
         linear_api_key=linear_api_key,
         event_path=event_path,
-        open_state_id=os.getenv("LINEAR_PR_OPEN_STATE_ID", "").strip(),
-        merged_state_id=os.getenv("LINEAR_PR_MERGED_STATE_ID", "").strip(),
         post_linkback=os.getenv("LINEAR_POST_LINKBACK", "false").strip().lower() == "true",
+        strict_mode=strict_mode,
     )
 
 
@@ -170,9 +201,23 @@ def build_comment(action: str, pr: Dict[str, Any]) -> Optional[str]:
     return None
 
 
+def soft_fail(cfg: Config, message: str) -> int:
+    log(message)
+    if cfg.strict_mode:
+        log("LINEAR_SYNC_STRICT enabled; failing run.")
+        return 1
+    return 0
+
+
 def main() -> int:
     try:
         cfg = load_config()
+    except LinearSyncError as exc:
+        # Secret not provisioned should not break all PR checks by default.
+        log(f"{exc} Skipping sync.")
+        return 0
+
+    try:
         event = read_json(cfg.event_path)
         action = event.get("action", "")
         pr = event.get("pull_request") or {}
@@ -197,19 +242,12 @@ def main() -> int:
         issue_id = issue["id"]
         log(f"Resolved Linear issue: {issue['identifier']} — {issue['title']}")
 
-        if action in {"opened", "reopened", "ready_for_review"}:
-            if cfg.open_state_id:
-                log(f"Updating issue state -> LINEAR_PR_OPEN_STATE_ID ({cfg.open_state_id})")
-                update_issue_state(cfg.linear_api_key, issue_id, cfg.open_state_id)
-            else:
-                log("LINEAR_PR_OPEN_STATE_ID not set; skipping state update for PR open event.")
-
-        if action == "closed" and pr.get("merged"):
-            if cfg.merged_state_id:
-                log(f"Updating issue state -> LINEAR_PR_MERGED_STATE_ID ({cfg.merged_state_id})")
-                update_issue_state(cfg.linear_api_key, issue_id, cfg.merged_state_id)
-            else:
-                log("LINEAR_PR_MERGED_STATE_ID not set; skipping state update for merged PR.")
+        target_state = resolve_target_state(issue, action, bool(pr.get("merged")))
+        if target_state:
+            log(f"Updating issue state -> {target_state.get('name')} ({target_state.get('id')})")
+            update_issue_state(cfg.linear_api_key, issue_id, target_state["id"])
+        else:
+            log("No state transition required for this event/action. Skipping state update.")
 
         if cfg.post_linkback:
             comment = build_comment(action, pr)
@@ -225,8 +263,7 @@ def main() -> int:
         return 0
 
     except LinearSyncError as exc:
-        log(f"ERROR: {exc}")
-        return 1
+        return soft_fail(cfg, f"ERROR: {exc}")
 
 
 if __name__ == "__main__":
