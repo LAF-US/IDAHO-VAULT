@@ -1,6 +1,6 @@
 {
   "manifest_version": "1.0.0",
-  "generated_at": "2026-03-25T00:00:00Z",
+  "generated_at": "2026-03-30T13:01:39.207406Z",
   "authority": {
     "canonical_system": "github",
     "interface_system": "obsidian",
@@ -20,6 +20,25 @@
     "server": null,
     "notes": "Enable after Obsidian MCP Tools endpoint and write controls are validated."
   },
-  "locks": [],
-  "entries": {}
+  "locks": [
+    {
+      "lock_id": "85b18565-8c13-4dd2-92e5-0ae4831ce34e",
+      "file_path": "INBOX/ingest-2026-03-30T130139Z.md",
+      "agent_id": "github-actions[bot]",
+      "created_at": "2026-03-30T13:01:39.103000Z",
+      "expires_at": "2026-03-30T13:16:39.103000Z",
+      "state": "released"
+    }
+  ],
+  "entries": {
+    "INBOX/ingest-2026-03-30T130139Z.md": {
+      "content_hash": "sha256:26126dacc1c120af6d1e62274aa0be2e3381fbd3b23d59a6860da2d8320c76ec",
+      "last_writer": "github-actions[bot]",
+      "last_write_at": "2026-03-30T13:01:39.207406Z",
+      "last_read_at": "2026-03-30T13:01:39.207406Z",
+      "status": "active",
+      "lock_id": "85b18565-8c13-4dd2-92e5-0ae4831ce34e",
+      "version": 1
+    }
+  }
 }
