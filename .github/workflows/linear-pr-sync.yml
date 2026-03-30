@@ -24,7 +24,7 @@ jobs:
 
           api_key = os.getenv("LINEAR_API_KEY")
           if not api_key:
-            print("LINEAR_API_KEY is not set — skipping Linear sync (provision secret to enable).")
+            print("LINEAR_API_KEY is not set; skipping Linear sync.")
             sys.exit(0)
 
           pr_title = os.getenv("PR_TITLE", "")
