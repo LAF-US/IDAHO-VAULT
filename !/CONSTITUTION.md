@@ -114,7 +114,7 @@ This document is the "sole source of truth" for vault governance. Amendments req
 
 ---
 
-*Last updated: 2026-03-22*
+*Last updated: 2026-03-28*
 
 *Status: pending revision-synthesis and congressional adoption, post-consolidation court.*
 
