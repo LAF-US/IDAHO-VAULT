@@ -1,7 +1,7 @@
 ---
 tags:
   - administration/coordination
-updated: 2026-03-29
+updated: 2026-03-30
 status: active
 ---
 
@@ -46,6 +46,7 @@ This is the live coordination board. Any agent arriving at THE COURTROOM reads t
 | Automation maintenance | Vault sort audit + Wayback preservation workflow maintenance | Claude Code / Copilot | Planned | _(create child issue)_ | Keep operational fixes scoped to automation-only issue(s) |
 | Branch hygiene | Branch cleanup, stale branch deletion workflow, and audit bookkeeping | Claude Code | In progress | _(create child issue)_ | Move Spring Clean execution updates to its own issue |
 | Publication gatekeeping | JFAC quote audio verification and publication blocking checks | Logan | Blocked | _(create child issue)_ | Keep evidence gate work separate from coordination docket |
+| Signal intake — Bartimaeus | Normalize LAF-17 signal into actionable workflow disposition | Codex | Completed | LAF-17 | Filed brief `!/BRIEF-LAF-17-2026-03-30.md` with recommended merge-gate checks for LAF-13/LAF-14 |
 
 ## RECENTLY COMPLETED
 
