@@ -179,10 +179,14 @@ def load_config() -> Config:
 
     strict_mode = os.getenv("LINEAR_SYNC_STRICT", "false").strip().lower() in {"1", "true", "yes", "on"}
 
+    # Default linkback comments to ON so Linear shows visible progress by default.
+    # Operators can still disable per-run via LINEAR_POST_LINKBACK=false.
+    post_linkback_env = os.getenv("LINEAR_POST_LINKBACK", "true").strip().lower()
+
     return Config(
         linear_api_key=linear_api_key,
         event_path=event_path,
-        post_linkback=os.getenv("LINEAR_POST_LINKBACK", "false").strip().lower() == "true",
+        post_linkback=post_linkback_env in {"1", "true", "yes", "on"},
         strict_mode=strict_mode,
     )
 
