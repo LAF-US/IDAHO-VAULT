@@ -11,6 +11,10 @@
     ]
   },
   "mcpServers": {
+    "googleCloud": {
+      "httpUrl": "TODO: Google Cloud MCP server endpoint for project idaho-vault — Logan to provide after credential provisioning. See .op/secrets.template.md and Documentation - Google Cloud - Authenticate to Google and Google Cloud MCP servers.",
+      "disabled": true
+    },
     "openaiDeveloperDocs": {
       "httpUrl": "https://developers.openai.com/mcp"
     },
