@@ -52,6 +52,7 @@ This is the live coordination board. Any agent arriving at THE COURTROOM reads t
 
 | Task                                                      | Completed  | Notes                                                                                       |
 | --------------------------------------------------------- | ---------- | ------------------------------------------------------------------------------------------- |
+| **TRIUNE COVENANT + 1Password + Agent Protocol** | 2026-03-30 | 1Password CLI + SSH agent infrastructure deployed (.op/SETUP.md, .op/secrets.template.md, 1password-secret-template.yml); AGENT PROTOCOL defined with 6-phase bootstrap (!\agent.sh, !/AGENT-PROTOCOL.md); agents can now invoke via `source !\agent.sh [NAME]` — `4463d4d` |
 | **Unified Swarm research filed** | 2026-03-29 | Two-part Perplexity report filed as `BIG IFS — UNIFIED SWARM.md`; org stubs created for [[Factory]], [[CrewAI]], [[OpenAI Swarm]] (R&D flagged by Logan) — branch `claude/research-unified-swarm-rDmOg` |
 | **Gemini Code Assist cowork enabled**                      | 2026-03-28 | `.gemini/GEMINI.md` tier fixed, cowork pattern documented; `.gemini/settings.json` context expanded to 6 files; AGENTS.md + entity note updated — `3563a66` |
 | **Stale `!ADMIN/` refs cleaned + root frontmatter spring-cleaned** | 2026-03-28 | DECISIONS.md, LEVELSET-STEP-0, THREAT-MODEL updated; 10 content docs tagged; `!/SWARM-LOOP.md` committed — `ba01c2e` |
