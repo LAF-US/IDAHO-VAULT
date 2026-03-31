@@ -45,7 +45,7 @@
     "results_collection_key": "smart_sources",
     "score_algo_key": "similarity",
     "connections_post_process": "none",
-    "results_limit": 20,
+    "results_limit": 10,
     "exclude_frontmatter_blocks": true,
     "connections_list_item_component_key": "connections_list_item_v3",
     "components": {
