@@ -199,6 +199,35 @@ These scripts are not called by automated workflows but are available for manual
 
 Scripts live in `.github/scripts/`. Workflows live in `.github/workflows/`. Scripts that commit to the repo use `git config user.name "github-actions[bot]"`. Dependencies are tracked in `.github/scripts/requirements-scraper.txt`.
 
+### Secret Management via 1Password
+
+**Requirement:** All credentials (API keys, tokens, SSH keys, passwords) are managed centrally in 1Password. GitHub Actions uses `OP_SERVICE_ACCOUNT_TOKEN` to fetch secrets at runtime. No credentials are hardcoded in workflows or stored directly in GitHub Secrets (with the exception of the service account token itself).
+
+**Scope:**
+- Developer machines: 1Password CLI + SSH agent for local authentication and git signing
+- GitHub Actions: Service account token → fetch secrets at runtime via `op item get`
+- All secrets are rotated on defined schedules (see `.op/secrets.template.md`)
+
+**Key files:**
+- `.op/SETUP.md` — Installation and configuration guide for developers
+- `.op/secrets.template.md` — Secret inventory and rotation schedule
+- `.github/workflows/1password-secret-template.yml` — Example workflow using 1Password
+
+**Rules:**
+1. Never commit credentials to the repo, even in `.env` files or example configs
+2. All GitHub Actions secrets (except `OP_SERVICE_ACCOUNT_TOKEN`) are fetched from 1Password at runtime
+3. Use `::add-mask::` in workflows to prevent accidental credential leakage in logs
+4. Rotate credentials on schedule; update `.op/secrets.template.md` with rotation date
+5. SSH keys for git signing are managed via 1Password SSH agent on developer machines
+
+**Implementation checklist:**
+- [ ] Install 1Password CLI on developer machine
+- [ ] Configure 1Password SSH agent and register git signing key
+- [ ] Create 1Password service account and generate `OP_SERVICE_ACCOUNT_TOKEN`
+- [ ] Add `OP_SERVICE_ACCOUNT_TOKEN` to GitHub Actions secrets
+- [ ] Migrate existing secrets from GitHub Secrets → 1Password vault
+- [ ] Update workflows to fetch secrets via `op item get`
+
 ### MCP Action Logging Requirement (Mandatory)
 
 Any automation in `.github/workflows/` or `.github/scripts/` that performs an MCP-mediated action **must** emit a structured log entry using the following reusable template.
