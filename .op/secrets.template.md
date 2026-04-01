@@ -19,6 +19,7 @@ type: reference
 | `GitHub Personal Access Token` | Personal Access Token | GitHub API (Linear sync, scraper) | ❌ Not created | Create in 1Password + migrate from GitHub Secrets |
 | `GitHub SSH Key` | SSH Key (Ed25519) | Git commits, pushes, SSH auth | ❌ Not created | Generate or import + register in 1Password |
 | `Linear API Key` | API Key | Linear workspace sync (GitHub Actions) | ⚠️ In GitHub Secrets | Migrate from GitHub Secrets → 1Password |
+| `Gemini API Key` | API Key | Gemini API — Vault Advisor workflow (GitHub Actions) | ❌ Not created | Create in Google AI Studio; store in 1Password as `Gemini API Key` |
 | `Idaho Legislature API Key` | API Key | Scraper authentication | ❌ Not created | Create if legislator.idaho.gov requires auth |
 | `Email SMTP Credentials` | Username + Password | Budget tracker email delivery | ❌ Not created | Create if using SMTP service |
 | `OP_SERVICE_ACCOUNT_TOKEN` | Service Token | GitHub Actions → 1Password auth | ⚠️ In GitHub Secrets | Sync from 1Password via manual provisioning |
@@ -32,6 +33,7 @@ type: reference
 | GitHub PAT | 90 days | — | — |
 | SSH Key | Annual or on compromise | — | — |
 | Linear API Key | 180 days | — | — |
+| Gemini API Key | 180 days | — | — |
 | SMTP credentials | 180 days | — | — |
 | Service account token | 90 days | — | — |
 
