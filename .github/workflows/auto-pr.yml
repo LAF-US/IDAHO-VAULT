@@ -10,6 +10,10 @@ on:
       - 'perplexity/**'
       - 'grok/**'
 
+concurrency:
+  group: auto-pr-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
   auto-pr:
     runs-on: ubuntu-latest
@@ -50,7 +54,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           BRANCH="${GITHUB_REF_NAME}"
-          EXISTING=$(gh pr list --head "$BRANCH" --state open --json number --jq '.[0].number // empty')
+          EXISTING=$(gh pr list --head "$BRANCH" --state open --json number --jq '.[0].number // empty' 2>/dev/null || true)
           if [ -n "$EXISTING" ]; then
             echo "pr_exists=true" >> "$GITHUB_OUTPUT"
             echo "pr_number=$EXISTING" >> "$GITHUB_OUTPUT"
@@ -124,7 +128,7 @@ jobs:
           fi
 
           # Find the PR number
-          PR_NUM=$(gh pr list --head "$BRANCH" --state open --json number --jq '.[0].number')
+          PR_NUM=$(gh pr list --head "$BRANCH" --state open --json number --jq '.[0].number' 2>/dev/null || true)
           if [ -z "$PR_NUM" ]; then
             echo "No open PR found to merge"
             exit 0
