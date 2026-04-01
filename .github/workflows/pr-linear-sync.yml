@@ -17,28 +17,14 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Install 1Password CLI
-        run: |
-          # The 1Password CLI is already available on GitHub-hosted runners.
-          # If you're using a self-hosted runner, you may need to install it.
-          # See https://developer.1password.com/docs/cli/get-started/#install
-          op --version
-
       - name: Load Secrets from 1Password
         id: op-load-secrets
-        run: |
-          # Authenticate to 1Password
-          echo "${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}" | op signin --raw
-
-          # Fetch Linear API Key from 1Password
-          LINEAR_KEY=$(op read "op://vault-operations/linear-api-key/credential")
-          echo "::add-mask::$LINEAR_KEY"
-          echo "LINEAR_API_KEY=$LINEAR_KEY" >> $GITHUB_ENV
-
-          # Sign out of 1Password
-          op signout
+        uses: 1password/load-secrets-action@v3
+        with:
+          export-env: true
         env:
           OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
+          LINEAR_API_KEY: op://vault-operations/linear-api-key/credential
 
       - name: Sync PR lifecycle to Linear
         env:
