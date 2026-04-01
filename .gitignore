@@ -13,6 +13,7 @@ venv/
 # IDE
 .vscode/*
 !.vscode/mcp.json
+!.vscode/settings.json
 .idea/
 *.swp
 *.swo
@@ -46,8 +47,15 @@ Thumbs.db
 .obsidian/webviewer.json
 .obsidian/note-composer.json
 
-# Obsidian plugin runtime data (changes on every use)
+# Obsidian plugin runtime data / secrets (API keys live here — never commit)
 .obsidian/plugins/*/data.json
+
+# Obsidian plugin compiled binaries (too large, not source-trackable)
+.obsidian/plugins/mcp-tools/bin/
+
+# Smart Connections embedding cache (machine-generated, can be hundreds of MB)
+.smart-env/
+.obsidian/plugins/smart-connections/.smart-env/
 
 # Obsidian conflict duplicates
 .obsidian/**(2)*.json
