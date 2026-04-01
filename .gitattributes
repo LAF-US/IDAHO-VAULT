@@ -1,3 +1,27 @@
+# Git LFS tracking rules — IDAHO-VAULT
+#
+# Phase 2 (pending Logan approval): run `git lfs migrate import` to move
+# existing history blobs into LFS storage and bring pack size under
+# CrewAI's 150 MiB limit. See plan: claude/repo-size-compliance-5accf9
+# To activate LFS:
+#   1. Install: sudo apt install git-lfs && git lfs install
+#   2. Uncomment the rules below
+#   3. Run: git lfs migrate import --include="*.m4a,*.mp3,*.mp4,*.mov,*.wav,*.jpg,*.jpeg,*.png,*.gif,*.webp,*.pdf,*.geojson,*.kml,*.zip" --everything
+#   4. Force push (requires Logan approval): git push --force origin main
+# *.m4a  filter=lfs diff=lfs merge=lfs -text
+# *.mp3  filter=lfs diff=lfs merge=lfs -text
+# *.mp4  filter=lfs diff=lfs merge=lfs -text
+# *.mov  filter=lfs diff=lfs merge=lfs -text
+# *.wav  filter=lfs diff=lfs merge=lfs -text
+# *.jpg  filter=lfs diff=lfs merge=lfs -text
+# *.jpeg filter=lfs diff=lfs merge=lfs -text
+# *.png  filter=lfs diff=lfs merge=lfs -text
+# *.gif  filter=lfs diff=lfs merge=lfs -text
+# *.webp filter=lfs diff=lfs merge=lfs -text
+# *.pdf  filter=lfs diff=lfs merge=lfs -text
+# *.geojson filter=lfs diff=lfs merge=lfs -text
+# *.kml  filter=lfs diff=lfs merge=lfs -text
+# *.zip  filter=lfs diff=lfs merge=lfs -text
 *.jpg filter=lfs diff=lfs merge=lfs -text
 *.jpeg filter=lfs diff=lfs merge=lfs -text
 *.png filter=lfs diff=lfs merge=lfs -text
