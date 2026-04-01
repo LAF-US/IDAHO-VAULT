@@ -1,6 +1,8 @@
 # CODEOWNERS — IDAHO-VAULT
-# Advisory ownership. Branch protection is not active (Decision 22).
-# High-risk changes to these paths are flagged by classify_paths.py
+# Branch protection is active on main (Decision 22).
+# "Require review from Code Owners" is currently unchecked —
+# CODEOWNERS is advisory unless that rule is enabled.
+# High-risk changes to these paths are also flagged by classify_paths.py
 # and labeled review-required in auto-pr.yml.
 
 CLAUDE.md @loganfinney27

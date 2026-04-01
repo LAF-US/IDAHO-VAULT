@@ -41,7 +41,7 @@
 | 19         | 2026-03-28 | Vault as Source of Truth (Stateless)          | ⏳ Pending   | Only authoritative memory; all agent state external to vault              |
 | 20         | 2026-03-28 | Manifest-Based Coordination                   | ⏳ Pending   | Inter-agent coordination via shared manifest, not peer-to-peer messaging  |
 | 21         | 2026-03-28 | Agent Behavioral Model (No Fabrication)       | ⚠️ CODE AUTHORITY REVIEW | Ground truth only; critical guard against hallucination |
-| 22         | 2026-04-01 | Branch protection removed for main            | ✅ CONFIRMED | Allows agentic/automated workflows to merge directly; risk gated by classify_paths.py |
+| 22         | 2026-04-01 | Branch protection configured for main         | ✅ CONFIRMED | PR required, signed commits, linear history, copilot deployment gate; auto-merge via CI for low-risk |
 
 ---
 
@@ -223,12 +223,23 @@ Principles reviewed. Findings:
 - No technical conflicts with existing governance identified.
 - **Verdict:** Sound principles. Pending Logan's approval to confirm as official decision. Minor reword on Safeguard 2 recommended before publishing.
 
-### Decision 22: Branch Protection Removed for Main
+### Decision 22: Branch Protection Configured for Main
 **Date:** 2026-04-01
 **Topic:** Branch protection policy
 **Status:** ✅ CONFIRMED
 **Decided by:** Logan Finney
-**Rationale:** With agentic/automated workflows maturing (auto-pr, auto-merge, review-response, branch-cleanup), branch protection on main was blocking the merge pipeline. Protection is removed to allow direct merges. Risk is gated by `classify_paths.py` — low-risk agent PRs merge automatically via CI, high-risk PRs are labeled `review-required` for Logan's review. CODEOWNERS file is retained as advisory documentation. Resolves the open decision from Decision 15 and THREAT-MODEL.md.
+**Rules enabled:**
+- Require a pull request before merging
+- Require conversation resolution before merging
+- Require signed commits
+- Require linear history
+- Require deployments to succeed before merging (`copilot` environment required)
+
+**Rules not enabled:** Require approvals, Dismiss stale approvals, Require review from Code Owners, Require approval of most recent push, Require status checks.
+
+**Rationale:** Balances security with agentic workflow automation. PRs are required (agents create them via auto-pr.yml). Signed commits and linear history ensure audit trail integrity. The `copilot` deployment gate provides a CI checkpoint. No approval requirement allows low-risk PRs to auto-merge once protection requirements are met. Risk classification via `classify_paths.py` labels PRs as `auto-merge` (low-risk) or `review-required` (high-risk). CODEOWNERS is advisory unless "Require review from Code Owners" is enabled. Resolves the open decision from Decision 15 and THREAT-MODEL.md.
+
+**Note:** Force-pushes to main are blocked by these rules. History-rewriting operations (e.g., LFS migration) require temporarily allowing force-pushes via Settings → Branches → main protection rule → Allow force pushes, then re-disabling after the push completes.
 
 ---
 
