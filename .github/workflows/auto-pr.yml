@@ -10,6 +10,10 @@ on:
       - 'perplexity/**'
       - 'grok/**'
 
+concurrency:
+  group: auto-pr-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
   auto-pr:
     runs-on: ubuntu-latest
@@ -74,6 +78,15 @@ jobs:
           RISK_TIER: ${{ steps.classify.outputs.tier }}
         run: |
           BRANCH="${GITHUB_REF_NAME}"
+
+          # Defense-in-depth: re-check right before creation to catch any race
+          RECHECK=$(gh pr list --head "$BRANCH" --state open --json number --jq '.[0].number // empty')
+          if [ -n "$RECHECK" ]; then
+            echo "PR #$RECHECK already exists for $BRANCH (caught on re-check). Skipping."
+            echo "pr_url=" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
           # Derive title: strip agent prefix (claude/, codex/, gemini/, etc.) and session suffix
           TITLE=$(echo "$BRANCH" | sed 's|^[^/]*/||' | sed 's|-[a-zA-Z0-9]*$||' | tr '-' ' ')
           # Extract agent name from branch prefix
@@ -102,7 +115,16 @@ jobs:
             --body "$BODY" \
             --base main \
             --head "$BRANCH" \
-            --label "$LABEL" 2>&1 || true)
+            --label "$LABEL" 2>&1) || CREATE_FAILED=true
+
+          if [ "${CREATE_FAILED:-}" = "true" ]; then
+            if echo "$PR_URL" | grep -qi "already exists"; then
+              echo "PR already exists for $BRANCH (detected from gh output). Skipping."
+              exit 0
+            fi
+            echo "::warning::gh pr create failed: $PR_URL"
+            exit 0
+          fi
 
           echo "pr_url=$PR_URL" >> "$GITHUB_OUTPUT"
           echo "Created PR: $PR_URL"
