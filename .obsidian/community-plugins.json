@@ -10,6 +10,18 @@
   "obsidian-importer",
   "obsidian-local-rest-api",
   "mcp-tools",
+  "smart-connections",
   "templater-obsidian",
-  "ai-templater"
+  "omnisearch",
+  "obsidian-annotator",
+  "break-page",
+  "pdf-emojis",
+  "pdf-plus",
+  "oz-image-plugin",
+  "text-extractor",
+  "obsidian-extract-pdf-highlights",
+  "handwritten-notes",
+  "taskbone-ocr-plugin",
+  "ai-image-analyzer",
+  "msg-handler"
 ]
