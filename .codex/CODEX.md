@@ -43,6 +43,22 @@ Task assignment flows through GitHub Issues (`agent:codex` label). Each agent wo
 
 ---
 
+## Thread Status
+
+Use fixed status signaling for Codex threads.
+
+- `CODEX ACTIVE` while work is in progress
+- `CODEX PAUSED: awaiting Logan` when Logan action is required
+- `CODEX COMPLETE: work finished, no further action pending in this thread. Ready for termination or archive.` when the thread is done
+
+Manual cleanup rule:
+
+- Do not archive threads automatically from base instructions.
+- Never create a new thread, PR, or other side effect for housekeeping, closure checking, or archive readiness.
+- Treat thread archiving as a manual Logan action.
+
+---
+
 ## See Also
 
 - `!/CONSTITUTION.md` - Canonical vault governance authority

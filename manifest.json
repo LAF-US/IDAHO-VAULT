@@ -1,8 +1,6 @@
 {
-<<<<<<< ours
-<<<<<<< ours
   "manifest_version": "1.0.0",
-  "generated_at": "2026-03-25T00:00:00Z",
+  "generated_at": "2026-04-01T13:02:04.999845Z",
   "authority": {
     "canonical_system": "github",
     "interface_system": "obsidian",
@@ -22,23 +20,59 @@
     "server": null,
     "notes": "Enable after Obsidian MCP Tools endpoint and write controls are validated."
   },
-  "locks": [],
-  "entries": {}
-=======
-=======
->>>>>>> theirs
-  "files": [
+  "locks": [
     {
-      "path": "INBOX/ingest-2026-03-25T04-45-11Z.md",
-      "last_modified": "2026-03-25T04:45:11Z",
-      "status": "open",
-      "type": "ingest",
-      "description": "Raw ingested document",
-      "last_agent": "executor"
+      "lock_id": "85b18565-8c13-4dd2-92e5-0ae4831ce34e",
+      "file_path": "!/ingest-2026-03-30T130139Z.md",
+      "agent_id": "github-actions[bot]",
+      "created_at": "2026-03-30T13:01:39.103000Z",
+      "expires_at": "2026-03-30T13:16:39.103000Z",
+      "state": "released"
+    },
+    {
+      "lock_id": "22f7a149-7793-4743-9361-1128a855cc38",
+      "file_path": "!/ingest-2026-03-31T125934Z.md",
+      "agent_id": "github-actions[bot]",
+      "created_at": "2026-03-31T12:59:34.525101Z",
+      "expires_at": "2026-03-31T13:14:34.525101Z",
+      "state": "released"
+    },
+    {
+      "lock_id": "ecd53421-645f-4477-838e-9a051b275d9f",
+      "file_path": "!/ingest-2026-04-01T130204Z.md",
+      "agent_id": "github-actions[bot]",
+      "created_at": "2026-04-01T13:02:04.936324Z",
+      "expires_at": "2026-04-01T13:17:04.936324Z",
+      "state": "released"
     }
-  ]
-<<<<<<< ours
->>>>>>> theirs
-=======
->>>>>>> theirs
+  ],
+  "entries": {
+    "!/ingest-2026-03-30T130139Z.md": {
+      "content_hash": "sha256:26126dacc1c120af6d1e62274aa0be2e3381fbd3b23d59a6860da2d8320c76ec",
+      "last_writer": "github-actions[bot]",
+      "last_write_at": "2026-03-30T13:01:39.207406Z",
+      "last_read_at": "2026-03-30T13:01:39.207406Z",
+      "status": "active",
+      "lock_id": "85b18565-8c13-4dd2-92e5-0ae4831ce34e",
+      "version": 1
+    },
+    "!/ingest-2026-03-31T125934Z.md": {
+      "content_hash": "sha256:e93d9f593f9c6e51f4115e4593dc6833a552876db6783882760a6d3c09011532",
+      "last_writer": "github-actions[bot]",
+      "last_write_at": "2026-03-31T12:59:34.579622Z",
+      "last_read_at": "2026-03-31T12:59:34.579622Z",
+      "status": "active",
+      "lock_id": "22f7a149-7793-4743-9361-1128a855cc38",
+      "version": 1
+    },
+    "!/ingest-2026-04-01T130204Z.md": {
+      "content_hash": "sha256:e41f76118b83556b1d00843a5c3a5ec845c0643650c6dc59a27bf61766dc9297",
+      "last_writer": "github-actions[bot]",
+      "last_write_at": "2026-04-01T13:02:04.999845Z",
+      "last_read_at": "2026-04-01T13:02:04.999845Z",
+      "status": "active",
+      "lock_id": "ecd53421-645f-4477-838e-9a051b275d9f",
+      "version": 1
+    }
+  }
 }

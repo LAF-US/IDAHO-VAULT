@@ -14,6 +14,38 @@ This file provides operational instructions for Claude Code sessions. Vault gove
 
 ---
 
+## Windows Prerequisite
+
+Claude Code on Windows requires Git Bash: <https://git-scm.com/downloads/win>
+
+If Git Bash is installed but `bash.exe` is not on `PATH`, set:
+
+```text
+CLAUDE_CODE_GIT_BASH_PATH=C:\Program Files\Git\bin\bash.exe
+```
+
+Point the variable at the actual installed `bash.exe` location on the machine if it differs.
+
+---
+
+## 1Password Integration
+
+This vault uses 1Password for centralized credential management. Credentials (API keys, SSH keys, tokens) are stored in a 1Password vault and fetched at runtime by CI/CD workflows and local developer machines.
+
+**Local setup required:**
+1. Install 1Password CLI via `scoop install 1password` (or equivalent)
+2. Configure 1Password SSH agent for git signing
+3. Set up 1Password authentication in shell (see `.op/SETUP.md`)
+
+**GitHub Actions:**
+- `OP_SERVICE_ACCOUNT_TOKEN` is the only credential stored in GitHub Secrets
+- All other secrets are fetched from 1Password vault at runtime using `op item get`
+- Example workflow: `.github/workflows/1password-secret-template.yml`
+
+**Credential inventory:** See `.op/secrets.template.md` for list of secrets, rotation schedules, and access procedures.
+
+---
+
 ## Role
 
 - Logan is human. Claude is software. Logan directs; Claude executes.

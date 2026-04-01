@@ -32,7 +32,6 @@ LOW_RISK_PREFIXES = (
     "ORGANIZATIONS/",
     "GOVERNMENTS/",
     "ATTACHMENTS/",
-    "X LABELER/",
     ".github/swarm/",
     "!/swarm/",
 )
