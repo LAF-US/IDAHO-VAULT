@@ -241,6 +241,29 @@ Principles reviewed. Findings:
 
 **Note:** Force-pushes to main are blocked by these rules. History-rewriting operations (e.g., LFS migration) require temporarily allowing force-pushes via Settings → Branches → main protection rule → Allow force pushes, then re-disabling after the push completes.
 
+### Decision 23: Temporary Force-Push Permission for LFS Migration
+**Date:** 2026-04-01
+**Topic:** Branch protection temporary exception
+**Status:** ⏳ AWAITING LOGAN ACTION
+**Decided by:** Logan Finney (pending)
+**Context:** LFS history rewrite requires one-time force-push to main branch
+
+**Required action:**
+Logan must temporarily enable force-pushes to main via GitHub Settings → Branches → main protection rule → "Allow force pushes" checkbox.
+
+**Procedure:**
+1. Enable force-pushes via GitHub web UI
+2. Claude performs `git push --force-with-lease origin main`
+3. Verify push succeeded
+4. **Immediately re-disable force-pushes**
+5. Continue normal operations
+
+**Rationale:** LFS migration requires rewriting repository history. Force-push is the only mechanism to sync rewritten history to remote. This is a one-time operation for cleanup; not a recurring need.
+
+**Security stance:** Force-push capability is inherently dangerous and must be disabled immediately after use. The `--force-with-lease` flag provides safety against overwriting concurrent changes. The temporary window of elevated risk is acceptable for this one-time migration.
+
+**Documentation:** See `FORCE-PUSH-ENABLEMENT.md` for step-by-step instructions.
+
 ---
 
 ## PENDING DECISIONS (Logan's Review Required)
