@@ -10,6 +10,11 @@ on:
         description: 'Linear issue JSON payload (for manual testing)'
         required: true
         type: string
+      live_write:
+        description: 'Opt in to writing files and opening a PR'
+        required: false
+        default: false
+        type: boolean
 
 jobs:
   generate-brief:
@@ -30,6 +35,110 @@ jobs:
           python-version: "3.11"
           pip-packages: "anthropic openai PyYAML>=6.0"
 
+      - name: Validate dispatch trust boundary and write mode
+        id: guardrails
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          LINEAR_PAYLOAD: ${{ github.event.client_payload && toJson(github.event.client_payload) || github.event.inputs.payload }}
+          WORKFLOW_LIVE_WRITE: ${{ github.event.inputs.live_write || 'false' }}
+          LINEAR_BRIEF_WEBHOOK_SECRET: ${{ secrets.LINEAR_BRIEF_WEBHOOK_SECRET }}
+        run: |
+          python3 - <<'PY'
+          import hmac
+          import json
+          import os
+          import re
+          import sys
+
+          MAX_PAYLOAD_BYTES = 65536
+          MAX_FIELD_CHARS = 4096
+          SENSITIVE_KEY_RE = re.compile(r"(secret|token|api[_-]?key|password|authorization)", re.IGNORECASE)
+
+          def scrub(value):
+            if isinstance(value, dict):
+              cleaned = {}
+              for key, nested in value.items():
+                if SENSITIVE_KEY_RE.search(str(key)):
+                  continue
+                cleaned[key] = scrub(nested)
+              return cleaned
+            if isinstance(value, list):
+              return [scrub(item) for item in value]
+            if isinstance(value, str):
+              return value[:MAX_FIELD_CHARS]
+            return value
+
+          event_name = os.environ["EVENT_NAME"]
+          raw_payload = os.environ["LINEAR_PAYLOAD"]
+          payload_size = len(raw_payload.encode("utf-8"))
+          if payload_size > MAX_PAYLOAD_BYTES:
+            print(
+              f"Payload exceeds {MAX_PAYLOAD_BYTES} bytes (received {payload_size}).",
+              file=sys.stderr,
+            )
+            sys.exit(1)
+
+          payload = json.loads(raw_payload)
+          if not isinstance(payload, dict):
+            print("Payload must be a JSON object.", file=sys.stderr)
+            sys.exit(1)
+
+          payload = scrub(payload)
+          workflow_live_write = os.environ.get("WORKFLOW_LIVE_WRITE", "false").lower() == "true"
+          configured_secret = os.environ.get("LINEAR_BRIEF_WEBHOOK_SECRET", "")
+
+          live_write = workflow_live_write
+          if event_name == "repository_dispatch":
+            payload_live_write = payload.get("live_write", False)
+            if isinstance(payload_live_write, str):
+              payload_live_write = payload_live_write.lower() == "true"
+            live_write = bool(payload_live_write)
+
+            provided_secret = payload.get("webhook_secret", "")
+            if configured_secret:
+              if not isinstance(provided_secret, str) or not hmac.compare_digest(provided_secret, configured_secret):
+                print("repository_dispatch payload failed webhook secret validation.", file=sys.stderr)
+                sys.exit(1)
+            elif live_write:
+              print(
+                "Refusing live repository_dispatch write without LINEAR_BRIEF_WEBHOOK_SECRET configured.",
+                file=sys.stderr,
+              )
+              sys.exit(1)
+
+          payload.pop("webhook_secret", None)
+          sanitized_payload = json.dumps(payload, ensure_ascii=False)
+
+          def sanitize_identifier(value: str) -> str:
+            text = re.sub(r"[^A-Za-z0-9_-]", "", str(value))
+            return text[:64] or "unknown"
+
+          def sanitize_title(value: str) -> str:
+            text = re.sub(r"[\r\n\t]+", " ", str(value)).strip()
+            text = re.sub(r"\s+", " ", text)
+            return text[:120] or "Untitled"
+
+          linear_id = sanitize_identifier(payload.get("id", payload.get("identifier", "unknown")))
+          title = sanitize_title(payload.get("title", "Untitled"))
+
+          github_output = os.environ["GITHUB_OUTPUT"]
+          with open(github_output, "a", encoding="utf-8") as fh:
+            fh.write(f"live_write={'true' if live_write else 'false'}\n")
+            # Use hash-based delimiter to avoid collision with payload content
+            import hashlib
+            delim = f"EOF_{hashlib.md5(sanitized_payload.encode()).hexdigest()}"
+            fh.write(f"sanitized_payload<<{delim}\n")
+            fh.write(sanitized_payload + "\n")
+            fh.write(f"{delim}\n")
+            # Escape title for safe shell output: percent-encode special characters
+            title_escaped = title.replace("\\", "\\\\").replace('"', '\\"').replace("$", "\\$").replace("`", "\\`")
+            fh.write(f"linear_id={linear_id}\n")
+            fh.write(f"title_escaped={title_escaped}\n")
+            fh.write(f"title={title}\n")
+
+          print(f"Write mode: {'live' if live_write else 'dry-run'}")
+          PY
+
       - name: Generate brief
         id: generate
         env:
@@ -37,26 +146,33 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_MODEL: gpt-5.4
           OPENAI_MAX_OUTPUT_TOKENS: "4096"
-          LINEAR_PAYLOAD: ${{ github.event.client_payload && toJson(github.event.client_payload) || github.event.inputs.payload }}
+          LINEAR_PAYLOAD: ${{ steps.guardrails.outputs.sanitized_payload }}
         run: |
-          python3 .github/scripts/linear_brief_generator.py
+          ARGS=()
+          if [ "${{ steps.guardrails.outputs.live_write }}" != "true" ]; then
+            ARGS+=("--dry-run")
+          fi
+          python3 .github/scripts/linear_brief_generator.py "${ARGS[@]}"
 
-          # Capture the Linear ID for branch naming
-          LINEAR_ID=$(echo "$LINEAR_PAYLOAD" | python3 -c "import sys,json; d=json.load(sys.stdin); print(d.get('id', d.get('identifier', 'unknown')))")
-          echo "linear_id=$LINEAR_ID" >> $GITHUB_OUTPUT
+          # Reuse sanitized metadata from guardrails.
+          echo "linear_id=${{ steps.guardrails.outputs.linear_id }}" >> $GITHUB_OUTPUT
+          echo "title=${{ steps.guardrails.outputs.title_escaped }}" >> $GITHUB_OUTPUT
           echo "date=$(date -u +%Y-%m-%d)" >> $GITHUB_OUTPUT
 
       - name: Validate generated content
+        if: steps.guardrails.outputs.live_write == 'true'
         run: |
           git add "!/"
           python3 .github/scripts/validate_content.py --scope generated
           git reset HEAD
 
       - name: Create branch and PR
+        if: steps.guardrails.outputs.live_write == 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           LINEAR_ID="${{ steps.generate.outputs.linear_id }}"
+          TITLE="${{ steps.generate.outputs.title }}"
           DATE="${{ steps.generate.outputs.date }}"
           BRANCH="briefs/${LINEAR_ID}-${DATE}"
 
@@ -68,7 +184,6 @@ jobs:
             exit 0
           fi
 
-          TITLE=$(echo "${{ env.LINEAR_PAYLOAD }}" | python3 -c "import sys,json; print(json.load(sys.stdin).get('title','Untitled'))" 2>/dev/null || echo "Untitled")
           git commit -m "brief: ${TITLE} — ${DATE}"
           git push -u origin "$BRANCH"
 
