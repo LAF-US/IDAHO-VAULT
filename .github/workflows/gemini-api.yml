@@ -1,0 +1,121 @@
+name: Gemini API — Vault Advisor
+
+# The Vault Advisor's bastion in the sky.
+# Triggered manually by Logan with a configurable prompt.
+# Credentials fetched from 1Password at runtime — graceful-skip if not provisioned.
+# GCP project: idaho-vault | Model: configurable (default gemini-2.0-flash)
+
+on:
+  workflow_dispatch:
+    inputs:
+      prompt:
+        description: 'Prompt for The Vault Advisor (Gemini)'
+        required: true
+        type: string
+      model:
+        description: 'Gemini model'
+        required: false
+        default: 'gemini-2.0-flash'
+        type: string
+
+jobs:
+  gemini-advise:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Install 1Password CLI
+        run: |
+          sudo apt-key adv --keyserver keyserver.ubuntu.com \
+            --recv-keys 3FEF9748469ADBE15DA7CA80AC2D62742012EA22
+          echo "deb https://apt.agilebits.com/ubuntu focal main" \
+            | sudo tee /etc/apt/sources.list.d/1password.list
+          sudo apt update -q
+          sudo apt install -y 1password-cli
+          op --version
+
+      - name: Fetch Gemini API Key from 1Password
+        id: fetch-key
+        env:
+          OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
+        run: |
+          if [ -z "$OP_SERVICE_ACCOUNT_TOKEN" ]; then
+            echo "⚠️  OP_SERVICE_ACCOUNT_TOKEN not configured — skipping Gemini call"
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          echo "$OP_SERVICE_ACCOUNT_TOKEN" | op signin --raw
+
+          GEMINI_KEY=$(op item get "Gemini API Key" --fields password 2>/dev/null || echo "")
+          if [ -z "$GEMINI_KEY" ]; then
+            echo "⚠️  'Gemini API Key' not found in 1Password — skipping"
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          echo "::add-mask::$GEMINI_KEY"
+          echo "GEMINI_API_KEY=$GEMINI_KEY" >> "$GITHUB_ENV"
+          echo "skip=false" >> "$GITHUB_OUTPUT"
+
+      - name: Call Gemini API
+        if: steps.fetch-key.outputs.skip != 'true'
+        env:
+          PROMPT: ${{ github.event.inputs.prompt }}
+          MODEL: ${{ github.event.inputs.model }}
+        run: |
+          python3 - <<'PYEOF'
+          import os, json, urllib.request, urllib.error, sys
+
+          prompt = os.environ["PROMPT"]
+          model  = os.environ["MODEL"]
+          api_key = os.environ["GEMINI_API_KEY"]
+
+          url = (
+            f"https://generativelanguage.googleapis.com/v1beta/models/"
+            f"{model}:generateContent?key={api_key}"
+          )
+          payload = json.dumps({
+            "contents": [{"parts": [{"text": prompt}]}]
+          }).encode()
+
+          req = urllib.request.Request(
+            url,
+            data=payload,
+            headers={"Content-Type": "application/json"},
+            method="POST"
+          )
+
+          try:
+            with urllib.request.urlopen(req) as resp:
+              data = json.loads(resp.read())
+          except urllib.error.HTTPError as e:
+            body = e.read().decode()
+            print(f"HTTP {e.code}: {body}", file=sys.stderr)
+            sys.exit(1)
+
+          try:
+            text = data["candidates"][0]["content"]["parts"][0]["text"]
+          except (KeyError, IndexError) as e:
+            print(f"Unexpected response shape: {json.dumps(data, indent=2)}", file=sys.stderr)
+            sys.exit(1)
+
+          summary_path = os.environ.get("GITHUB_STEP_SUMMARY", "/dev/stdout")
+          with open(summary_path, "a") as f:
+            f.write("## Gemini Vault Advisor\n\n")
+            f.write(f"**Model:** `{model}`  \n")
+            f.write(f"**Prompt:** {prompt}\n\n")
+            f.write("---\n\n")
+            f.write(text)
+            f.write("\n")
+
+          print(text)
+          PYEOF
+
+      - name: Logout 1Password
+        if: always()
+        run: op signout 2>/dev/null || true
