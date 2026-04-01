@@ -41,6 +41,7 @@
 | 19         | 2026-03-28 | Vault as Source of Truth (Stateless)          | ⏳ Pending   | Only authoritative memory; all agent state external to vault              |
 | 20         | 2026-03-28 | Manifest-Based Coordination                   | ⏳ Pending   | Inter-agent coordination via shared manifest, not peer-to-peer messaging  |
 | 21         | 2026-03-28 | Agent Behavioral Model (No Fabrication)       | ⚠️ CODE AUTHORITY REVIEW | Ground truth only; critical guard against hallucination |
+| 22         | 2026-04-01 | Branch protection configured for main         | ✅ CONFIRMED | PR required, signed commits, linear history, copilot deployment gate; auto-merge via CI for low-risk |
 
 ---
 
@@ -155,7 +156,7 @@
 **Date:** 2026-03-15
 **Topic:** Pipeline security
 **Status:** ✅ CONFIRMED
-**Rationale:** Review of the OpenClaw autonomous agent incident (2025–2026) revealed analogous risks — unsanitized external HTML flowing into YAML frontmatter via the legislature scraper. Added `sanitize_text()` to scraper, created `validate_content.py` as pre-commit CI gate, added validation steps to all commit-producing workflows, created CODEOWNERS and THREAT-MODEL.md. Branch protection deferred for AUTHORITY: CODE consultation.
+**Rationale:** Review of the OpenClaw autonomous agent incident (2025–2026) revealed analogous risks — unsanitized external HTML flowing into YAML frontmatter via the legislature scraper. Added `sanitize_text()` to scraper, created `validate_content.py` as pre-commit CI gate, added validation steps to all commit-producing workflows, created CODEOWNERS and THREAT-MODEL.md. Branch protection question resolved in Decision 22.
 
 ### Decision 16: MCP Allowed as Transport, Native Terms Remain Canonical
 **Date:** 2026-03-24
@@ -221,6 +222,24 @@ Principles reviewed. Findings:
 - Safeguard 2 ("If a file is not visible, it does not exist") — **note nuance**: applies to external chat agents (who only see what Logan pastes). Code agents with filesystem access (Claude Code, Codex, Gemini CLI) CAN read files not in their active context. Recommend scoping this safeguard to external/chat agents or rewording to "If a file has not been read or provided, do not assume its content."
 - No technical conflicts with existing governance identified.
 - **Verdict:** Sound principles. Pending Logan's approval to confirm as official decision. Minor reword on Safeguard 2 recommended before publishing.
+
+### Decision 22: Branch Protection Configured for Main
+**Date:** 2026-04-01
+**Topic:** Branch protection policy
+**Status:** ✅ CONFIRMED
+**Decided by:** Logan Finney
+**Rules enabled:**
+- Require a pull request before merging
+- Require conversation resolution before merging
+- Require signed commits
+- Require linear history
+- Require deployments to succeed before merging (`copilot` environment required)
+
+**Rules not enabled:** Require approvals, Dismiss stale approvals, Require review from Code Owners, Require approval of most recent push, Require status checks.
+
+**Rationale:** Balances security with agentic workflow automation. PRs are required (agents create them via auto-pr.yml). Signed commits and linear history ensure audit trail integrity. The `copilot` deployment gate provides a CI checkpoint. No approval requirement allows low-risk PRs to auto-merge once protection requirements are met. Risk classification via `classify_paths.py` labels PRs as `auto-merge` (low-risk) or `review-required` (high-risk). CODEOWNERS is advisory unless "Require review from Code Owners" is enabled. Resolves the open decision from Decision 15 and THREAT-MODEL.md.
+
+**Note:** Force-pushes to main are blocked by these rules. History-rewriting operations (e.g., LFS migration) require temporarily allowing force-pushes via Settings → Branches → main protection rule → Allow force pushes, then re-disabling after the push completes.
 
 ---
 

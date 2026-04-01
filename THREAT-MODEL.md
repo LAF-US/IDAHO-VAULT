@@ -45,10 +45,11 @@ The `wayback_audit.py` and `wayback_preserve.py` scripts query the Internet Arch
 **Attack vector:** If malicious content were committed to governance files (CLAUDE.md, `!/CONSTITUTION.md`), it would persist across all future sessions. Scraped bill files read by future Claude sessions could contain injected instructions.
 
 **Mitigations:**
-- CODEOWNERS file requires Logan's review for changes to CLAUDE.md, `!/`, and `.github/` (requires branch protection for enforcement)
+- Branch protection on main requires: PR before merging, conversation resolution, signed commits, linear history, and successful deployment to `copilot` environment (see Decision 22 in `DECISIONS.md`)
+- CODEOWNERS file documents ownership for CLAUDE.md, `!/`, and `.github/` (advisory unless "Require review from Code Owners" is enabled)
 - LEVELSET protocol provides auditable checkpoints
 - Conversation tier system restricts which sessions have commit access (procedural, not technical)
-- Branch protection (pending decision) would prevent direct pushes to main
+- Automated risk classification (`classify_paths.py`) gates low-risk vs high-risk merge behavior in CI workflows
 
 ---
 
@@ -61,6 +62,6 @@ The `wayback_audit.py` and `wayback_preserve.py` scripts query the Internet Arch
 
 ---
 
-## Open Decisions
+## Resolved Decisions
 
-- **Branch protection on main:** Deferred for CODE AUTHORITY consultation. Options: bypass for automation, PRs for everything, or skip entirely. See `DECISIONS.md` for tracking.
+- **Branch protection on main:** Configured with PR requirement, conversation resolution, signed commits, linear history, and `copilot` deployment gate. Approvals are not required; status checks are not required (the `copilot` deployment gate is a deployment requirement, not a status check). Low-risk agent PRs are auto-merged via CI once protection requirements are met; high-risk PRs require Logan's review. See Decision 22 in `DECISIONS.md`.
