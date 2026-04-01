@@ -41,7 +41,7 @@ class ExecutorAgent:
 
         timestamp = _utc_now_iso()
         safe_stamp = timestamp.replace(":", "-").replace(".", "-")
-        path = payload.get("path", f"INBOX/ingest-{safe_stamp}.md")
+        path = payload.get("path", f"!/ingest-{safe_stamp}.md")
         description = payload.get("description", "Raw ingested document")
 
         content = payload.get(
