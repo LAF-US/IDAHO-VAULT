@@ -107,7 +107,7 @@ jobs:
           echo "pr_url=$PR_URL" >> "$GITHUB_OUTPUT"
           echo "Created PR: $PR_URL"
 
-      - name: Enable auto-merge if low risk
+      - name: Merge if low risk
         if: steps.classify.outputs.skip != 'true' && steps.classify.outputs.tier == 'low'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -119,7 +119,7 @@ jobs:
           TIER=$(echo "$CHANGED" | python3 .github/scripts/classify_paths.py | python3 -c "import sys,json; print(json.load(sys.stdin)['tier'])")
 
           if [ "$TIER" != "low" ]; then
-            echo "Reclassified as high-risk on re-check. Skipping auto-merge."
+            echo "Reclassified as high-risk on re-check. Skipping merge."
             exit 0
           fi
 
@@ -130,5 +130,5 @@ jobs:
             exit 0
           fi
 
-          echo "Enabling auto-merge for PR #$PR_NUM (low risk)"
-          gh pr merge "$PR_NUM" --squash --delete-branch --auto
+          echo "Merging PR #$PR_NUM (low risk, squash)"
+          gh pr merge "$PR_NUM" --squash --delete-branch
