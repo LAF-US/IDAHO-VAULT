@@ -27,5 +27,6 @@
     "editor:configure-toolbar"
   ],
   "mobilePullAction": "daily-notes",
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "showUnsupportedFiles": true
 }
