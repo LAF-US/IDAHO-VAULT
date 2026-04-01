@@ -1,6 +1,7 @@
 # CODEOWNERS — IDAHO-VAULT
-# Requires branch protection to be active for enforcement.
-# These paths require Logan's explicit review before merge.
+# Advisory ownership. Branch protection is not active (Decision 22).
+# High-risk changes to these paths are flagged by classify_paths.py
+# and labeled review-required in auto-pr.yml.
 
 CLAUDE.md @loganfinney27
 /!/ @loganfinney27

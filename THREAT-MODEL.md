@@ -45,10 +45,10 @@ The `wayback_audit.py` and `wayback_preserve.py` scripts query the Internet Arch
 **Attack vector:** If malicious content were committed to governance files (CLAUDE.md, `!/CONSTITUTION.md`), it would persist across all future sessions. Scraped bill files read by future Claude sessions could contain injected instructions.
 
 **Mitigations:**
-- CODEOWNERS file requires Logan's review for changes to CLAUDE.md, `!/`, and `.github/` (requires branch protection for enforcement)
+- CODEOWNERS file documents ownership for CLAUDE.md, `!/`, and `.github/` (advisory; branch protection is not active — see Decision 22 in `DECISIONS.md`)
 - LEVELSET protocol provides auditable checkpoints
 - Conversation tier system restricts which sessions have commit access (procedural, not technical)
-- Branch protection (pending decision) would prevent direct pushes to main
+- Automated risk classification (`classify_paths.py`) gates low-risk vs high-risk merge behavior in CI workflows
 
 ---
 
@@ -61,6 +61,6 @@ The `wayback_audit.py` and `wayback_preserve.py` scripts query the Internet Arch
 
 ---
 
-## Open Decisions
+## Resolved Decisions
 
-- **Branch protection on main:** Deferred for CODE AUTHORITY consultation. Options: bypass for automation, PRs for everything, or skip entirely. See `DECISIONS.md` for tracking.
+- **Branch protection on main:** Removed to support agentic/automated workflows. Low-risk agent PRs are merged automatically via CI; high-risk PRs require Logan's review. See Decision 22 in `DECISIONS.md`.
