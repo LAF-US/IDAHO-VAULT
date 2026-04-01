@@ -51,6 +51,24 @@ That file is the live status board. Update it when you start or finish work. Tas
 
 **Coordination workflow:** Logan assigns tasks via GitHub Issues with agent labels (`agent:claude-code`, `agent:codex`, `agent:copilot`, `agent:gemini`). Each agent works on its own branch. PRs are the deliverable. Logan reviews and merges from GitHub.
 
+### Linear Access Guardrail
+
+Before doing lane-based work, verify Linear access.
+
+- If Linear access is available: read `LAF-7` first, then read the assigned issue or thread, stay inside the assigned lane, and report only from live Linear state.
+- If Linear access is unavailable: stop and report the exact auth, config, or proxy blocker.
+- Do not simulate Linear state.
+- Do not use memory, prior conversation state, or inferred swarm context as a substitute for a live Linear read.
+- Treat lane assignment as unconfirmed until verified from Linear or explicitly reassigned by Logan.
+- Continue only if Logan explicitly assigns a clearly labeled local or read-only lane for this session.
+
+When reporting status for a Linear-down session, return:
+
+1. Linear access status
+2. Issue or thread read status
+3. Exact blocker if unavailable
+4. Lane you will operate in
+
 ---
 
 ## See Also

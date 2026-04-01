@@ -1,7 +1,10 @@
 ---
 title: "!README"
-aliases: ["!README"]
+aliases:
+  - "!README"
 linter-yaml-title-alias: "!README"
+date created: Monday, March 23rd 2026, 4:54:50 pm
+date modified: Saturday, March 28th 2026, 11:04:19 pm
 ---
 
 This is Logan A. Finney's internal Obsidian.md vault. Agents must follow all frameworks.
