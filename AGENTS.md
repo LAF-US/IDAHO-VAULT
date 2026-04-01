@@ -47,6 +47,19 @@ primary auto-loaded instructions file.
 
 ---
 
+## Codex Thread Status
+
+For Codex threads, use status signals instead of prompt-driven archival.
+
+- `CODEX ACTIVE` while work is in progress
+- `CODEX PAUSED: awaiting Logan` when Logan action is required
+- `CODEX COMPLETE: work finished, no further action pending in this thread. Ready for termination or archive.` when the thread is done
+
+Thread archiving is a manual Logan action. See `.codex/CODEX.md` for the
+Codex-specific completion guidance.
+
+---
+
 ## OpenAI Docs MCP
 
 Always use the OpenAI developer documentation MCP server if you need to work
