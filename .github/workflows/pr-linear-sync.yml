@@ -12,6 +12,8 @@ jobs:
     permissions:
       contents: read
       pull-requests: read
+    env:
+      OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
 
     steps:
       - name: Checkout repo
@@ -19,12 +21,18 @@ jobs:
 
       - name: Load Secrets from 1Password
         id: op-load-secrets
+        if: env.OP_SERVICE_ACCOUNT_TOKEN != ''
         uses: 1password/load-secrets-action@v3
         with:
           export-env: true
         env:
-          OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
           LINEAR_API_KEY: op://vault-operations/linear-api-key/credential
+
+      - name: Skip 1Password load when token is missing
+        if: env.OP_SERVICE_ACCOUNT_TOKEN == ''
+        run: |
+          echo "OP_SERVICE_ACCOUNT_TOKEN is not configured; skipping 1Password secret load."
+          echo "LINEAR_API_KEY=" >> "$GITHUB_ENV"
 
       - name: Sync PR lifecycle to Linear
         env:
