@@ -17,3 +17,6 @@ date modified: Monday, March 30th 2026, 10:33:24 am
 *Persistent list — incomplete items carry forward daily. Link daily notes here.*
 
 ## Active
+
+- [ ] [ Data Centers ]
+	- [ ] Review -Thursday ready?
