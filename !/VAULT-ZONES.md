@@ -18,7 +18,7 @@ This document partitions the vault into three governance zones by write-authorit
 |------|-------|----------------|-------------------|-----------|
 | **Constitutional** | `!/` (all nested), root governance files (`CONSTITUTION.md`, `DECISIONS.md`, `AGENTS.md`, `PROTOCOL.md`, `VAULT-CONVENTIONS.md`, `VAULT-ZONES.md`, `CLAUDE.md`, `GEMINI.md`, `Ethics.md`, `Logan.md`) | Logan only. Agents propose via PR — no standing write window. | Logan only | High |
 | **Operational** | `.github/workflows/`, `.github/scripts/`, `.github/actions/`, `.github/swarm/`, `swarm/` | Agents propose via PR. Logan reviews and merges. | Logan only | High |
-| **Data** | `SOURCES/`, `TOPICS/`, `PEOPLE/`, `PLACES/`, `ORGANIZATIONS/`, `GOVERNMENTS/`, `ATTACHMENTS/`, `INBOX/`, `X LABELER/`, all other vault `.md` content | Agent-assignable via GitHub Issues. All writes via PR. | Logan (auto-merge eligible for low-risk per `auto-pr.yml`) | Low |
+| **Data** | `SOURCES/`, `TOPICS/`, `PEOPLE/`, `PLACES/`, `ORGANIZATIONS/`, `GOVERNMENTS/`, `ATTACHMENTS/`, `INBOX/`, all other vault `.md` content | Agent-assignable via GitHub Issues. All writes via PR. | Logan (auto-merge eligible for low-risk per `auto-pr.yml`) | Low |
 
 ---
 
