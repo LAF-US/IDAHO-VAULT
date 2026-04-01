@@ -12,7 +12,7 @@ on:
 
 concurrency:
   group: auto-pr-${{ github.ref }}
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   auto-pr:
