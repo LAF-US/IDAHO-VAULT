@@ -47,6 +47,7 @@ This is the live coordination board. Any agent arriving at THE COURTROOM reads t
 | Branch hygiene | Branch cleanup, stale branch deletion workflow, and audit bookkeeping | Claude Code | In progress | _(create child issue)_ | Move Spring Clean execution updates to its own issue |
 | Publication gatekeeping | JFAC quote audio verification and publication blocking checks | Logan | Blocked | _(create child issue)_ | Keep evidence gate work separate from coordination docket |
 | Signal intake — Bartimaeus | Normalize LAF-17 signal into actionable workflow disposition | Codex | Completed | LAF-17 | Filed brief `!/BRIEF-LAF-17-2026-03-30.md` with recommended merge-gate checks for LAF-13/LAF-14 |
+| Gemini — Google Cloud nest layers | Define LAF-18 layered execution model for Gemini + Google Cloud work | Codex | In progress | LAF-18 | Brief filed at `!/BRIEF-LAF-18-2026-03-30.md`; IAM boundary artifact added at `!/IAM-BOUNDARY-LAF-18.md`; 2026-04-01 ping now mapped to execution gates |
 
 ## RECENTLY COMPLETED
 
