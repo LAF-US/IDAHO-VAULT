@@ -28,5 +28,9 @@
   ],
   "mobilePullAction": "daily-notes",
   "alwaysUpdateLinks": true,
-  "showUnsupportedFiles": true
+  "openBehavior": "daily",
+  "showUnsupportedFiles": true,
+  "readableLineLength": false,
+  "showInlineTitle": false,
+  "showLineNumber": false
 }
