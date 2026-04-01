@@ -19,7 +19,7 @@ from pathlib import Path
 
 VAULT_ROOT = Path(".")
 
-SKIP_DIRS = {".obsidian", "ATTACHMENTS", "!", "X LABELER",
+SKIP_DIRS = {".obsidian", "ATTACHMENTS", "!",
              "x hey you make sure to link these"}
 
 OUT_OF_STATE_COUNTY_FOLDERS = {
@@ -120,7 +120,7 @@ def check_misplacement(filename, fkey, rel_folder):
                 return "ORGANIZATIONS", "looks like an organization, not a topic"
 
     if rel_folder == "" and filename not in ALLOWED_ROOT_FILES and not DAILY_NOTE_PATTERN.match(filename):
-        return "X LABELER", "loose file in vault root"
+        return "misc_reference", "loose file in vault root"
 
     return None
 

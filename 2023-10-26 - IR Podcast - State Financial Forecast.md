@@ -7,7 +7,10 @@ URL: https://blog.idahoreports.idahoptv.org/2023/10/27/podcast-state-financial-f
 tags:
   - 2023/10/26
   - media/podcasts
+date created: Monday, March 23rd 2026, 4:54:51 pm
+date modified: Monday, March 30th 2026, 7:03:53 pm
 ---
+
 Logan Finney, [[Idaho Reports]]   
 
 So we've got you here today to talk about the latest round of revenue numbers from the state, including the [[General Fund]] report for October. Can you tell us generally, what's the overall takeaway from this latest round of numbers? 
@@ -30,7 +33,7 @@ And like we've referenced, these are monthly reports that you guys put out, this
 
 Alex Adams   
 
-Well, the state is transitioning to a new statewide accounting system. So many of your viewers are probably familiar with what the [[State Controller]]'s Office is doing with [[Luma]]. And basically, they're upgrading the state's budget system, finance system, procurement, payroll, and HR. And they're taking us, you know, essentially, from Cold War era technology to a pretty modern system. Certainly, when you undertake an effort that large, there's always going to be growing pains. But one of the things that's always impressed me about the controller is he's built a team around him of problem solvers. And as problems are identified, they are able to resolve them relatively quickly. This was one of those. We've had quite a bit of conversation with them to work through it, and we'll be able to get back to our monthly releases on revenue. 
+Well, the state is transitioning to a new statewide accounting system. So many of your viewers are probably familiar with what the [[State Controller]]'s Office is doing with [[Luma]]. And basically, they're upgrading the state's budget system, finance system, procurement, payroll, and HR. And they're taking us, you know, essentially, from [[Cold War era]] [[technology]] to a [[pretty modern]] system. Certainly, when you undertake an effort that large, there's always going to be growing pains. But one of the things that's always impressed me about the controller is he's built a team around him of problem solvers. And as problems are identified, they are able to resolve them relatively quickly. This was one of those. We've had quite a bit of conversation with them to work through it, and we'll be able to get back to our monthly releases on revenue. 
 
 Logan Finney   
 

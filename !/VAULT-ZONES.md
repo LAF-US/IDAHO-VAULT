@@ -18,7 +18,7 @@ This document partitions the vault into three governance zones by write-authorit
 |------|-------|----------------|-------------------|-----------|
 | **Constitutional** | `!/` (all nested), root governance files (`CONSTITUTION.md`, `DECISIONS.md`, `AGENTS.md`, `PROTOCOL.md`, `VAULT-CONVENTIONS.md`, `VAULT-ZONES.md`, `CLAUDE.md`, `GEMINI.md`, `Ethics.md`, `Logan.md`) | Logan only. Agents propose via PR — no standing write window. | Logan only | High |
 | **Operational** | `.github/workflows/`, `.github/scripts/`, `.github/actions/`, `.github/swarm/`, `swarm/` | Agents propose via PR. Logan reviews and merges. | Logan only | High |
-| **Data** | `SOURCES/`, `TOPICS/`, `PEOPLE/`, `PLACES/`, `ORGANIZATIONS/`, `GOVERNMENTS/`, `ATTACHMENTS/`, `INBOX/`, `X LABELER/`, all other vault `.md` content | Agent-assignable via GitHub Issues. All writes via PR. | Logan (auto-merge eligible for low-risk per `auto-pr.yml`) | Low |
+| **Data** | `SOURCES/`, `TOPICS/`, `PEOPLE/`, `PLACES/`, `ORGANIZATIONS/`, `GOVERNMENTS/`, `ATTACHMENTS/`, `INBOX/`, all other vault `.md` content | Agent-assignable via GitHub Issues. All writes via PR. | Logan (auto-merge eligible for low-risk per `auto-pr.yml`) | Low |
 
 ---
 
@@ -51,6 +51,52 @@ Bulk vault content (3400+ files). Already classified as low-risk in `classify_pa
 **Access model:** Auto-merge eligible per `auto-pr.yml` when `classify_paths.py` returns `low` tier. Logan can override.
 
 ---
+
+
+## Exclamation-Space Routing Grammar
+
+The `!` path family is a nested routing system with three distinct roles:
+
+| Space | Operational role | What belongs here | Durability expectation |
+|---|---|---|---|
+| `!` | **Constitutional control plane** | Active governance files and canonical system rules (`CONSTITUTION`, `PROTOCOL`, `AGENTS`, `DECISIONS`, `VAULT-ZONES`, `VAULT-CONVENTIONS`, active protocol references) | Stable + durable (authoritative record) |
+| `!/!` | **Routing workbench** | Time-scoped handoffs, levelsets, context packets, branch triage notes, protocol drafts, and in-flight coordination artifacts | Semi-stable: durable archive, but not canonical policy |
+| `!/!/!` | **Live operations board** | The Courtroom and session-level coordination surface (`DOCKET.md`, immediate queue state, short operational status files) | Ephemeral exchange surface with periodic promotion |
+
+### Stable routing vs ephemeral exchange
+
+**Stable routing** means information is preserved as retrievable instruction or record-of-decision. In practice, this includes:
+- governance decisions,
+- durable operating rules,
+- completed handoff bundles that future agents must be able to re-read.
+
+**Ephemeral exchange** means transient coordination traffic that is useful now but not necessarily as-is later. In practice, this includes:
+- session chatter,
+- in-the-moment status signals,
+- tentative notes before validation.
+
+Rule of thumb:
+- If another agent would need it later to avoid rework or ambiguity, route it to a stable file (`!` or archival content in `!/!`).
+- If it only helps real-time coordination, keep it in `!/!/!` until resolved, then either discard or promote.
+
+### Movement rules between `!` spaces
+
+1. **Capture at point of action (`!/!/!`)**
+   - Log active work state in the Courtroom/DOCKET layer while work is in progress.
+
+2. **Package when context matures (`!/!`)**
+   - When a thread becomes transferable (handoff, levelset, context bundle), move it into `!/!` as a dated artifact.
+   - Use explicit filenames (`HANDOFF-*`, `LEVELSET-*`, `CONTEXT-*`, `SESSION-*`) so routing intent is obvious.
+
+3. **Promote when policy crystallizes (`!`)**
+   - If the artifact changes system behavior, agent boundaries, or durable protocol, extract the final rule into canonical governance files in `!`.
+   - Canonical files should summarize decisions; `!/!` retains historical detail.
+
+4. **Do not bypass promotion gates**
+   - Decisions are not considered authoritative until represented in canonical governance docs under `!` and merged through normal PR review.
+
+5. **Preserve traceability**
+   - Canonical updates should reference the originating `!/!` artifact(s) so auditors can trace decision lineage.
 
 ## No Standing Write Windows
 

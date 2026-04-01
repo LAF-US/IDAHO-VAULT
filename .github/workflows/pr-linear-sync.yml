@@ -1,0 +1,44 @@
+name: PR → Linear Sync
+
+on:
+  # Disabled as a direct PR trigger to prevent duplicate owners with
+  # .github/workflows/linear-pr-sync.yml (LAF-14 baseline owner).
+  workflow_call:
+  workflow_dispatch:
+
+jobs:
+  sync-pr-state-to-linear:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: read
+    env:
+      OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Load Secrets from 1Password
+        id: op-load-secrets
+        if: env.OP_SERVICE_ACCOUNT_TOKEN != ''
+        uses: 1password/load-secrets-action@v3
+        with:
+          export-env: true
+        env:
+          LINEAR_API_KEY: op://vault-operations/linear-api-key/credential
+
+      - name: Skip 1Password load when token is missing
+        if: env.OP_SERVICE_ACCOUNT_TOKEN == ''
+        run: |
+          echo "OP_SERVICE_ACCOUNT_TOKEN is not configured; skipping 1Password secret load."
+          echo "LINEAR_API_KEY=" >> "$GITHUB_ENV"
+
+      - name: Sync PR lifecycle to Linear
+        env:
+          # LINEAR_API_KEY is now set from the previous step
+          LINEAR_PR_OPEN_STATE_ID: ${{ secrets.LINEAR_PR_OPEN_STATE_ID }}
+          LINEAR_PR_MERGED_STATE_ID: ${{ secrets.LINEAR_PR_MERGED_STATE_ID }}
+          LINEAR_POST_LINKBACK: ${{ vars.LINEAR_POST_LINKBACK || 'true' }}
+        run: |
+          python3 .github/scripts/linear_pr_sync.py
