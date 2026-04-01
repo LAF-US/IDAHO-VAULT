@@ -50,7 +50,35 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           BRANCH="${GITHUB_REF_NAME}"
-          EXISTING=$(gh pr list --head "$BRANCH" --state open --json number --jq '.[0].number // empty')
+          EXISTING=""
+          LAST_ERR=""
+          for attempt in 1 2 3; do
+            set +e
+            EXISTING=$(gh pr list --head "$BRANCH" --state open --json number --jq '.[0].number // empty' 2>&1)
+            STATUS=$?
+            set -e
+            if [ "$STATUS" -eq 0 ]; then
+              break
+            fi
+            LAST_ERR="$EXISTING"
+            echo "Attempt $attempt failed to query PRs for branch ${BRANCH}."
+            if [ "$attempt" -eq 3 ]; then
+              echo "Proceeding without existing PR lookup after 3 failed attempts."
+              EXISTING=""
+              break
+            fi
+            sleep $((attempt * 2))
+          done
+          if [ -n "$LAST_ERR" ]; then
+            {
+              echo "### Auto PR lookup warning"
+              echo "Unable to reliably query open PRs for \`${BRANCH}\`."
+              echo "Last gh error:"
+              echo '```'
+              echo "$LAST_ERR"
+              echo '```'
+            } >> "$GITHUB_STEP_SUMMARY"
+          fi
           if [ -n "$EXISTING" ]; then
             echo "pr_exists=true" >> "$GITHUB_OUTPUT"
             echo "pr_number=$EXISTING" >> "$GITHUB_OUTPUT"
@@ -97,15 +125,29 @@ jobs:
             '```' "$DIFFSTAT" '```' \
             '---' '*Created by auto-pr workflow*'
 
-          PR_URL=$(gh pr create \
+          set +e
+          PR_CREATE_OUTPUT=$(gh pr create \
             --title "$TITLE" \
             --body "$BODY" \
             --base main \
             --head "$BRANCH" \
-            --label "$LABEL" 2>&1 || true)
+            --label "$LABEL" 2>&1)
+          PR_CREATE_STATUS=$?
+          set -e
 
-          echo "pr_url=$PR_URL" >> "$GITHUB_OUTPUT"
-          echo "Created PR: $PR_URL"
+          echo "pr_url=$PR_CREATE_OUTPUT" >> "$GITHUB_OUTPUT"
+          echo "PR create output: $PR_CREATE_OUTPUT"
+          if [ "$PR_CREATE_STATUS" -eq 0 ]; then
+            echo "Created PR successfully."
+            exit 0
+          fi
+          if echo "$PR_CREATE_OUTPUT" | grep -qi "already exists"; then
+            echo "PR already exists for ${BRANCH}; continuing."
+            exit 0
+          fi
+          echo "gh pr create failed unexpectedly for ${BRANCH}."
+          echo "$PR_CREATE_OUTPUT"
+          exit "$PR_CREATE_STATUS"
 
       - name: Enable auto-merge if low risk
         if: steps.classify.outputs.skip != 'true' && steps.classify.outputs.tier == 'low'
