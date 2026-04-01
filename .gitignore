@@ -60,3 +60,89 @@ DAILYNOTES/
 
 # Ignore local MCP server binary
 .obsidian/plugins/mcp-tools/bin/mcp-server.exe
+
+# Obsidian plugin compiled assets (machine-generated, not source)
+.obsidian/plugins/*/main.js
+.obsidian/plugins/*/styles.css
+.obsidian/plugins/*/manifest.json
+
+# ---------------------------------------------------------------------------
+# Binary & Media Assets
+# ---------------------------------------------------------------------------
+# These file types do not belong in git history — they inflate pack size
+# dramatically and have no diff/merge value.
+#
+# For files that MUST be version-controlled (e.g. source graphics, GIS data),
+# use Git LFS (.gitattributes) instead of committing them directly.
+# See: https://git-lfs.github.com
+# Phase 2 plan: claude/repo-size-compliance-5accf9
+
+# Audio / Video
+*.m4a
+*.mp3
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.wav
+*.aac
+*.flac
+*.ogg
+*.wma
+
+# Images
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.webp
+*.bmp
+*.tiff
+*.tif
+*.heic
+*.heif
+*.raw
+*.cr2
+*.nef
+*.svg
+
+# Documents (binary format — use markdown in vault instead)
+*.pdf
+*.doc
+*.docx
+*.xls
+*.xlsx
+*.ppt
+*.pptx
+
+# Geospatial / GIS data
+*.geojson
+*.kml
+*.kmz
+*.shp
+*.shx
+*.dbf
+*.gpx
+*.mbtiles
+
+# Archives & compiled binaries
+*.zip
+*.tar
+*.gz
+*.bz2
+*.7z
+*.rar
+*.dmg
+*.pkg
+*.deb
+*.rpm
+*.exe
+*.bin
+*.dll
+*.so
+*.dylib
+
+# Databases
+*.db
+*.sqlite
+*.sqlite3
