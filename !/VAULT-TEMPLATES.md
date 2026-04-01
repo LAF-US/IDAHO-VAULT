@@ -26,7 +26,7 @@ This file defines the canonical template system for IDAHO-VAULT. Its purpose is 
 | `interview` | Interview source notes | `Interview YYYY-MM-DD Name.md` | `SOURCES/INTERVIEWS/` | Yes |
 | `press_release` | Publisher-issued press release source | `YYYY-MM-DD - Organization - Title.md` | `SOURCES/PRESS RELEASES/` | Yes |
 | `daily_log` | Daily rolling notes and backlog triage | `YYYY-MM-DD.md` | vault root (or future `DAILY/`) | Optional |
-| `misc_reference` | Catch-all reference content pending reclass | Descriptive title | `X LABELER/` or current location | No (transitional only) |
+| `misc_reference` | Catch-all reference content pending reclass | Descriptive title | current location | No (transitional only) |
 
 **Rule:** New recurring content types must be added to this table before they are treated as first-class classes.
 
@@ -95,7 +95,7 @@ tags: []
 2. Do not append `(2)` or ad-hoc suffixes to canonical notes. Resolve duplication by merge/redirect.
 3. Keep title case for entity names; preserve legal punctuation (apostrophes, hyphens).
 4. Date-leading source files use ISO dates (`YYYY-MM-DD`) in local event date, not publish scrape date.
-5. If class is unknown at creation time, stage in `X LABELER/` with `doc_class: misc_reference`, then reclassify.
+5. If class is unknown at creation time, stage in place with `doc_class: misc_reference`, then reclassify.
 
 ---
 
@@ -105,7 +105,7 @@ tags: []
 2. **Validate:** check filename pattern and required frontmatter keys.
 3. **Route:** move to canonical home path for that class.
 4. **Link:** add at least three meaningful `[[wikilinks]]` for graph integrity.
-5. **Review:** if content fails class validation, return to `X LABELER/` until corrected.
+5. **Review:** if content fails class validation, keep it in place until corrected.
 
 ---
 

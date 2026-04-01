@@ -29,7 +29,7 @@ from pathlib import Path
 VAULT_ROOT = Path(".")
 ADMIN_DIR = VAULT_ROOT / "!"
 
-SKIP_FOLDERS = {"X LABELER", "ATTACHMENTS"}
+SKIP_FOLDERS = {"ATTACHMENTS"}
 
 RATE_LIVE = 0.5
 RATE_CDX = 1.0

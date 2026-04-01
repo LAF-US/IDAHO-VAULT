@@ -18,7 +18,7 @@ See `!/AGENTS.md` for the full agent registry: capability tiers, boundary rules,
 
 | Agent | Dotfolder | Governance shim | Auto-loaded? | Notes |
 | --- | --- | --- | --- | --- |
-| Claude Code | `.claude/` | `.claude/CLAUDE.md` | Yes | Official path |
+| Claude Code | `.claude/` | `.claude/CLAUDE.md` | Yes | Official path. On Windows, Claude Code requires Git Bash; if `bash.exe` is not on `PATH`, set `CLAUDE_CODE_GIT_BASH_PATH` to the installed `bash.exe`. |
 | Gemini CLI | `.gemini/` | `.gemini/GEMINI.md` | Yes | Official path |
 | OpenAI Codex CLI | `.codex/` | `.codex/CODEX.md` | Yes | Root `AGENTS.md` auto-loads; project config via `.codex/config.toml` |
 | GitHub Copilot | `.github/` | `.github/copilot-instructions.md` | Yes | Official path |
@@ -44,6 +44,19 @@ For Codex specifically, the repo/root `AGENTS.md` is the primary auto-loaded
 instruction source. `.codex/config.toml` provides project-scoped Codex config,
 and `.codex/CODEX.md` is a Codex-specific reference shim rather than the
 primary auto-loaded instructions file.
+
+---
+
+## Codex Thread Status
+
+For Codex threads, use status signals instead of prompt-driven archival.
+
+- `CODEX ACTIVE` while work is in progress
+- `CODEX PAUSED: awaiting Logan` when Logan action is required
+- `CODEX COMPLETE: work finished, no further action pending in this thread. Ready for termination or archive.` when the thread is done
+
+Thread archiving is a manual Logan action. See `.codex/CODEX.md` for the
+Codex-specific completion guidance.
 
 ---
 

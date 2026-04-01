@@ -1,7 +1,7 @@
 ---
 tags:
   - administration/coordination
-updated: 2026-03-29
+updated: 2026-03-30
 status: active
 ---
 
@@ -13,6 +13,8 @@ This is the live coordination board. Any agent arriving at THE COURTROOM reads t
 
 **Delegation note (Logan, 2026-03-28):** Logan has delegated vault operations for this round. The Abhorsen (Claude Code) conducting: infrastructure commits, Gemini tier definition, Linear Phase 1 scoping, LEVELSET refresh, branch push and PR.
 
+**Sunday swarm dispatch (Logan, 2026-03-29):** All agents operate in Sunday swarm mode. Keep execution in scoped issue lanes. No merges to `main`. No overlapping branches. Post one checkpoint before parking any lane. Escalate only for true blocker, conflict, required human judgment, merge decision, or secret/config provisioning. ~~Hard blocker `LINEAR_API_KEY`~~ **provisioned 2026-03-29 by Logan.** Merge-risk item remains PR #96.
+
 **Breadcrumbs:** LEVELSET protocol for state changes (`!/LEVELSET.md`), agent registry (`!/AGENTS.md`), this docket for standing coordination, vault navigation (`!/VAULT-CONVENTIONS.md`).
 
 **Unified conversation:** Slack (ephemeral coordination), Linear (tasks + blockers), Vault (canonical record).
@@ -23,10 +25,11 @@ This is the live coordination board. Any agent arriving at THE COURTROOM reads t
 
 | Task                                | Owner          | Status      | Linear | Notes                                                          |
 | ----------------------------------- | -------------- | ----------- | ------ | -------------------------------------------------------------- |
-| Swarm coordination — agent assembly | All agents     | In progress | LAF-7  | Agents proceed into **THE CITY**; await denouement             |
+| Swarm coordination — agent assembly | All agents     | In progress | LAF-7  | Sunday swarm mode — hub only; execution in scoped lanes        |
 | **Linear Phase 1 pilot** — live-write scoping | Claude Code | **Active** | — | Plugin inventory recommends Linear-first; scope = SWARM issues, comments, status updates; vault remains durable record; Slack breadcrumb-only; no multi-plugin orchestration until stable |
 | Linear workspace team setup         | GitHub Copilot | In progress | LAF-2  | Configure teams/members/roles in Linear                        |
 | Import your data                    | GitHub Copilot | In progress | LAF-4  | Linear import/migration guidance in `Import your data.md`      |
+| GitHub Actions CI diagnosis         | GitHub Copilot | **Resolved** | LAF-7  | Root cause: `LINEAR_API_KEY` not set; fixed workflow to graceful-skip; key provisioned by Logan 2026-03-29 — sync now live |
 | Idaho Legislature scraper           | Claude Code    | Running     | —      | Daily 6 AM MT, commits to main; minidata CSV export functional |
 | Budget tracker CSV export           | Automated      | Running     | —      | Daily 6:30 AM MT; emails CSV to configured recipients          |
 | Vault sort audit                    | Automated      | Weekly      | —      | Monday 6 AM UTC                                                |
@@ -36,19 +39,22 @@ This is the live coordination board. Any agent arriving at THE COURTROOM reads t
 
 ## PROJECT-SCOPED WORK ITEMS (BROKEN OUT FROM LAF-7)
 
-| Track / Work Item                    | Owner        | Status      | Linear   | Notes                                                                                   |
-| ------------------------------------ | ------------ | ----------- | -------- | --------------------------------------------------------------------------------------- |
-| Budget Bill Tracker Normalization    | Gemini CLI   | Blocked     | LAF-16   | First-pass normalization script + deliverables doc ready for PR. Blocked on scraper mods (LAF-16). |
-| Decomposition + routing plan         | All agents   | Drafting    | (TBD)    | Carve LAF-7 payload into discrete issues; align scope/owners; keep COURTROOM as hub     |
-| Scraper operations & monitoring      | Claude Code  | Running     | (TBD)    | Keep daily Idaho Legislature scraper healthy; alerting/telemetry review if drift occurs |
-| Automation upkeep (actions/scripts)  | Claude Code  | In flight   | (TBD)    | Auto-PR, ingest, audit workflows + scripts; guardrails + Node 24 readiness               |
-| Branch hygiene & auto-PR triage      | All agents   | Planned     | (TBD)    | Cull stale branches, normalize auto-PR routing, keep branch naming aligned to issues     |
-| Publication gatekeeping (JFAC audio) | Logan        | Pending     | (TBD)    | Verify 5 quotes + speaker IDs before publication; gating checklist lives in child issue  |
+| Work item | Scope | Owner | Status | Linear | Notes |
+| --------- | ----- | ----- | ------ | ------ | ----- |
+| COURTROOM decomposition | Break standing docket into scoped issue slots and keep LAF-7 as hub | Codex | Done | LAF-12 | This issue delivers the decomposition structure in this file |
+| Scraper operations | Idaho Legislature scraper runtime + reliability changes | Claude Code | In progress | _(create child issue)_ | Move all scraper implementation work out of LAF-7 |
+| Automation maintenance | Vault sort audit + Wayback preservation workflow maintenance | Claude Code / Copilot | Planned | _(create child issue)_ | Keep operational fixes scoped to automation-only issue(s) |
+| Branch hygiene | Branch cleanup, stale branch deletion workflow, and audit bookkeeping | Claude Code | In progress | _(create child issue)_ | Move Spring Clean execution updates to its own issue |
+| Publication gatekeeping | JFAC quote audio verification and publication blocking checks | Logan | Blocked | _(create child issue)_ | Keep evidence gate work separate from coordination docket |
+| Signal intake — Bartimaeus | Normalize LAF-17 signal into actionable workflow disposition | Codex | Completed | LAF-17 | Filed brief `!/BRIEF-LAF-17-2026-03-30.md` with recommended merge-gate checks for LAF-13/LAF-14 |
+| Gemini — Google Cloud nest layers | Define LAF-18 layered execution model for Gemini + Google Cloud work | Codex | In progress | LAF-18 | Brief filed at `!/BRIEF-LAF-18-2026-03-30.md`; IAM boundary artifact added at `!/IAM-BOUNDARY-LAF-18.md`; 2026-04-01 ping now mapped to execution gates |
 
 ## RECENTLY COMPLETED
 
 | Task                                                      | Completed  | Notes                                                                                       |
 | --------------------------------------------------------- | ---------- | ------------------------------------------------------------------------------------------- |
+| **TRIUNE COVENANT + 1Password + Agent Protocol** | 2026-03-30 | 1Password CLI + SSH agent infrastructure deployed (.op/SETUP.md, .op/secrets.template.md, 1password-secret-template.yml); AGENT PROTOCOL defined with 6-phase bootstrap (!\agent.sh, !/AGENT-PROTOCOL.md); agents can now invoke via `source !\agent.sh [NAME]` — `4463d4d` |
+| **Unified Swarm research filed** | 2026-03-29 | Two-part Perplexity report filed as `BIG IFS — UNIFIED SWARM.md`; org stubs created for [[Factory]], [[CrewAI]], [[OpenAI Swarm]] (R&D flagged by Logan) — branch `claude/research-unified-swarm-rDmOg` |
 | **Gemini Code Assist cowork enabled**                      | 2026-03-28 | `.gemini/GEMINI.md` tier fixed, cowork pattern documented; `.gemini/settings.json` context expanded to 6 files; AGENTS.md + entity note updated — `3563a66` |
 | **Stale `!ADMIN/` refs cleaned + root frontmatter spring-cleaned** | 2026-03-28 | DECISIONS.md, LEVELSET-STEP-0, THREAT-MODEL updated; 10 content docs tagged; `!/SWARM-LOOP.md` committed — `ba01c2e` |
 | **Triage + commit 10 untracked content docs**              | 2026-03-28 | AGENTIC SWARM SYSTEMS, AI-AUTOMATION, IDAHO-VAULT SYSTEM CONTEXT/WORKFLOW, JOURNALISM INDUSTRY, Kano Play, Notebook LM, Podcast, David Leroy — `07d2cb7` |
@@ -76,11 +82,14 @@ This is the live coordination board. Any agent arriving at THE COURTROOM reads t
 | PR #54 — Compact MCP mapping in PROTOCOL.md              | 2026-03-24 | Incorporated into PR #57                                                                    |
 | PR #55 — MCP implementation plan (new file)               | 2026-03-24 | Incorporated into PR #57                                                                    |
 | PR #56 — MCP action logging template in VAULT-CONVENTIONS | 2026-03-24 | Incorporated into PR #57                                                                    |
+| LAF-9 — Vault template + document class system            | 2026-03-25 | Drafted `VAULT-TEMPLATES.md`; linked from conventions + canonical README                   |
 
 ## BLOCKED / PENDING LOGAN
 
 | Item                            | Blocker                                                                                                                                                                                                                                                                                                                                                                     | Who can unblock |
 | ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- |
+| **`LINEAR_API_KEY` secret**     | ~~**Hard blocker** — not provisioned in GitHub Actions.~~ **Resolved 2026-03-29:** provisioned by Logan. `Sync PR state to Linear` workflow is now live. Graceful-skip guard retained for key-rotation safety. | ~~**Logan only**~~ **Done** |
+| **PR #96 merge decision**       | Omnibus 11-PR consolidation; contains `linear-pr-sync.yml` + `pr-linear-sync.yml` overlap risk. Dual-workflow collision must be reviewed before merge. Currently open as draft. | Logan + Codex |
 | Gemini capability tier          | ~~Google Cloud `idaho-vault` project exists, APIs enabled, credentials not created — role decision required before any integration~~ **Resolved 2026-03-28:** Tier 1 (Support) defined in `!/AGENTS.md` — Direct Write, Operational zone only, Linear SWARM issues/comments. | ~~Logan~~ **Done** |
 | `.obsidian/workspace.json`      | Tracked in git; should be untracked + gitignored — separate hygiene PR                                                                                                                                                                                                                                                                                                     | Logan           |
 | Vault-embedded MCP architecture | **Resolved 2026-03-24:** Q1 MCP disallowed? **No**. Q2 Transport-only with native terms canonical? **Yes (adopted)**. Q3 MCP primary integration model? **No**. Q4 Governance authority source? **Vault-native governance files/terms remain canonical**. Next action owner: **PERMANENT: AUTHORITY: CODE** to implement transport-only guardrails in integration docs. Unblock date: **2026-03-24**. | Logan           |
