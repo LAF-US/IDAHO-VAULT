@@ -21,6 +21,7 @@ venv/
 # OS
 .DS_Store
 Thumbs.db
+*.exe
 
 # Project-specific
 .env
@@ -69,5 +70,3 @@ DAILYNOTES/
 # Claude Code local settings (machine-local, not for repo)
 .claude/settings.local.json
 
-# Ignore local MCP server binary
-.obsidian/plugins/mcp-tools/bin/mcp-server.exe
