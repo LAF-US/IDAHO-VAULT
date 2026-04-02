@@ -23,6 +23,6 @@ This is an Obsidian.md vault.
 
 [[UNIFIED (US) SWARM]] codes designed and operated using [[Logan's Project & Protocols]].
 
-[1] We need to get these head/foot metadata and template formats figured out, pronto.
+[1] We need to get these head/foot metadata and template formats figured out, pronto. -B
 
 ## [["The world is quiet here."]]
