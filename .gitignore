@@ -50,6 +50,9 @@ Thumbs.db
 # Obsidian plugin runtime data / secrets (API keys live here — never commit)
 .obsidian/plugins/*/data.json
 
+# Obsidian plugin cache directories (machine-generated, not source-trackable)
+.obsidian/plugins/*/cache/
+
 # Obsidian plugin compiled binaries (too large, not source-trackable)
 .obsidian/plugins/mcp-tools/bin/
 

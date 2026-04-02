@@ -5,6 +5,30 @@
       "path": "2026-04-01.md"
     },
     {
+      "basename": "NOTE TO ADMIN",
+      "path": "swarm/NOTE TO ADMIN.md"
+    },
+    {
+      "basename": "Linear - agent chat - Greeting",
+      "path": "Linear - agent chat - Greeting.md"
+    },
+    {
+      "basename": "DOCKET",
+      "path": "!/__!__/!/! The world is quiet here/DOCKET.md"
+    },
+    {
+      "basename": "on fire",
+      "path": "on fire.md"
+    },
+    {
+      "basename": "CHECKPOINT",
+      "path": "CHECKPOINT.md"
+    },
+    {
+      "basename": "READY-STATE-2026-03-23",
+      "path": "READY-STATE-2026-03-23.md"
+    },
+    {
       "basename": "!Screenshot 2026-04-01 201738",
       "path": "!Screenshot 2026-04-01 201738.jpg"
     },
@@ -19,10 +43,6 @@
     {
       "basename": "20260331 - The Clerk",
       "path": "20260331 - The Clerk.md"
-    },
-    {
-      "basename": "THE TRYPTICH 0401",
-      "path": "THE TRYPTICH 0401.md"
     },
     {
       "basename": "20260104 - The Clerk",
@@ -98,7 +118,7 @@
     },
     {
       "basename": "PINGING",
-      "path": "20260330-LIMINAL/PINGING.md"
+      "path": "PINGING.md"
     },
     {
       "basename": "¿ Well, young lady, have you been good to your mother",
@@ -122,23 +142,23 @@
     },
     {
       "basename": "DECISIONS",
-      "path": "!/DECISIONS.md"
+      "path": "DECISIONS.md"
     },
     {
       "basename": "CONSTITUTION",
-      "path": "!/CONSTITUTION.md"
+      "path": "CONSTITUTION.md"
     },
     {
       "basename": "SWARM",
-      "path": "!/SWARM.md"
+      "path": "SWARM.md"
     },
     {
       "basename": "AGENTIC SWARM",
-      "path": "!/AGENTIC SWARM.md"
+      "path": "AGENTIC SWARM.md"
     },
     {
       "basename": "MCP-IMPLEMENTATION-PLAN",
-      "path": "!/MCP-IMPLEMENTATION-PLAN.md"
+      "path": "MCP-IMPLEMENTATION-PLAN.md"
     },
     {
       "basename": "2026-03-24",
@@ -179,26 +199,6 @@
     {
       "basename": "GEMINI",
       "path": "GEMINI.md"
-    },
-    {
-      "basename": "TOUCHSTONE",
-      "path": "TOUCHSTONE.md"
-    },
-    {
-      "basename": "THE CORE",
-      "path": "THE CORE.md"
-    },
-    {
-      "basename": "MIND",
-      "path": "MIND.md"
-    },
-    {
-      "basename": "CHARTER",
-      "path": "CHARTER.md"
-    },
-    {
-      "basename": "CODEX",
-      "path": "CODEX.md"
     }
   ],
   "omittedPaths": [

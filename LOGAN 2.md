@@ -134,5 +134,5 @@ As of Wednesday 2026-03-18 at [ ? ] UTC:
 
 Needs: reformatting and simplification - vault-wide survey and census and scanning and wiki-linking and overall vault-sorting.
 
-[[Unified (US) Swarm]] designed and written in [[Logan's Project & Protocols]] syntaxic codes.
+[[UNIFIED (US) SWARM]] designed and written in [[Logan's Project & Protocols]] syntaxic codes.
 ###### [["The world is quiet here."]]

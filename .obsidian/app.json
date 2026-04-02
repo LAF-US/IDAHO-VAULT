@@ -32,5 +32,6 @@
   "showUnsupportedFiles": true,
   "readableLineLength": false,
   "showInlineTitle": false,
-  "showLineNumber": false
+  "showLineNumber": false,
+  "promptDelete": false
 }
