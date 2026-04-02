@@ -28,10 +28,15 @@
   ],
   "mobilePullAction": "daily-notes",
   "alwaysUpdateLinks": true,
+<<<<<<< Updated upstream
   "openBehavior": "daily",
   "showUnsupportedFiles": true,
   "readableLineLength": false,
   "showInlineTitle": false,
   "showLineNumber": false,
   "promptDelete": false
+=======
+  "showUnsupportedFiles": true,
+  "trashOption": "local"
+>>>>>>> Stashed changes
 }
