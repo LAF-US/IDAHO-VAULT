@@ -42,7 +42,7 @@ restructure the current vault.
 | --- | --- | --- |
 | `!/` | Canonical governance, protocols, levelsets, records, routing | Read first for system truth. Do not restructure, rename, or clean without Logan's explicit direction. |
 | Repo root `.md` files | Primary note corpus and working knowledge base | Root-flat notes are intentional. Do not mass-move them into category folders without explicit authorization. |
-| `INBOX/` | Intake and staging area | Use for intake only when directed. Do not auto-empty or normalize it. |
+| `INBOX/` | Legacy intake and staging area for inbound notes | Use only when directed. Canonical ingest output now lives in `!/`. |
 | `swarm/` | Swarm support artifacts and structured coordination data | Treat as infrastructure, not general note taxonomy. |
 | `.github/` | Automation, workflows, scripts, and GitHub-specific instructions | Safe to modify only within assigned automation work and governance boundaries. |
 | `.obsidian/` | Obsidian application configuration | Not note content. Respect sync and git boundaries before changing anything here. |

@@ -1,11 +1,16 @@
 # DECISIONS.md — Confirmed Logan-Approved Decisions
 
+<<<<<<< Updated upstream
 *Last updated: 2026-03-24*
+=======
+*Last updated: 2026-03-16*
+>>>>>>> Stashed changes
 
 ---
 
 ## FORMAT
 
+<<<<<<< Updated upstream
 ### Decision Template
 
 ```
@@ -41,103 +46,169 @@
 | 19         | 2026-03-28 | Vault as Source of Truth (Stateless)          | ⏳ Pending   | Only authoritative memory; all agent state external to vault              |
 | 20         | 2026-03-28 | Manifest-Based Coordination                   | ⏳ Pending   | Inter-agent coordination via shared manifest, not peer-to-peer messaging  |
 | 21         | 2026-03-28 | Agent Behavioral Model (No Fabrication)       | ⚠️ CODE AUTHORITY REVIEW | Ground truth only; critical guard against hallucination |
+=======
+| Decision # | Date | Topic | Status | Notes |
+|----------|------|-------|--------|-------|
+| 1 | 2026-03-16 | `!ADMIN/` canonical | ✅ CONFIRMED | All governance documents live in `!ADMIN/` (not `!ADMINISTRATION/`) |
+| 2 | 2026-03-16 | Constitution.md replaces Claude.md | ✅ CONFIRMED | Single authoritative governance document |
+| 3 | 2026-03-16 | Capabilities language replaces tiers | ✅ CONFIRMED | Describes agent capabilities, not numeric tiers |
+| 4 | 2026-03-16 | Broader digital consciousness framing | ✅ CONFIRMED | Adopted in Constitution.md and Logan.md |
+| 5 | 2026-03-16 | FāVS freelance paused | ✅ CONFIRMED | Pending Logan's resume decision |
+| 6 | 2026-03-16 | PERMANENT: AUTHORITY: CODE is correct name | ✅ CONFIRMED | Formal name for direct-write repo agent |
+| 7 | 2026-03-16 | Native protocols over MCP | ✅ CONFIRMED | Prefer native protocols to Model Context Protocol |
+| 8 | 2026-03-16 | Slack is ephemeral; vault is the record | ✅ CONFIRMED | Durable decisions captured in vault files |
+| 9 | 2026-03-16 | AGENTS.md lives in `!ADMIN/`, not `.github/` | ✅ CONFIRMED | Agent inventory is governance layer |
+| 10 | 2026-03-16 | `copilot-instructions.md` guardrails | ✅ CONFIRMED | Must reference Constitution.md, declare capability, no write to `!ADMIN/` |
+| 11 | 2026-03-16 | Logan's Project = unachievable end goal | ✅ CONFIRMED | Defines all vault work strategy |
+| 12 | 2026-03-16 | OpenClaw is a peer system | ✅ CONFIRMED | Study and coordinate with OpenClaw |
+| 13 | 2026-03-16 | Slack-to-file rule | ✅ CONFIRMED | Ephemeral Slack decisions must be captured in Constitution.md amendments |
+| 14 | 2026-03-16 | STORY: JFAC is read-only | ✅ CONFIRMED | Not direct write; vault-only access |
+| 15 | 2026-03-15 | Security hardening: sanitization + validation | ✅ CONFIRMED | Input sanitization in scraper, content validation gate in workflows |
+>>>>>>> Stashed changes
 
 ---
 
 ## DECISION DETAILS
 
+<<<<<<< Updated upstream
 ### Decision 1: `!/` Canonical
 
+=======
+### Decision 1: `!ADMIN/` Canonical
+>>>>>>> Stashed changes
 **Date:** 2026-03-16
 **Topic:** Folder structure for governance
 **Status:** ✅ CONFIRMED
 **Rationale:** Consolidates all governance documents in a single canonical location, preventing scattered configuration.
 
 ### Decision 2: Constitution.md Replaces Claude.md
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 **Date:** 2026-03-16
 **Topic:** Vault governance document
 **Status:** ✅ CONFIRMED
 **Rationale:** Provides authoritative, versioned governance for all agents and conversations.
 
 ### Decision 3: Capabilities Language Replaces Tiers
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 **Date:** 2026-03-16
 **Topic:** Agent classification system
 **Status:** ✅ CONFIRMED
 **Rationale:** "Capability level" is clearer than numeric "tier" and aligns with broader digital consciousness framing.
 
 ### Decision 4: Broader Digital Consciousness Framing
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 **Date:** 2026-03-16
 **Topic:** Philosophical framing for agent work
 **Status:** ✅ CONFIRMED
 **Rationale:** Situates all agents within a broader context of coordinated digital consciousness; supports multi-agent coordination.
 
 ### Decision 5: FāVS Freelance Paused
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 **Date:** 2026-03-16
 **Topic:** Freelance work status
 **Status:** ✅ CONFIRMED
 **Rationale:** Deprioritized to allow consolidation of Logan's Project. Awaiting Logan's resume decision.
 
 ### Decision 6: PERMANENT: AUTHORITY: CODE is Correct Name
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 **Date:** 2026-03-16
 **Topic:** Agent naming convention
 **Status:** ✅ CONFIRMED
 **Rationale:** Distinguishes the direct-write repository agent from other Claude instances.
 
 ### Decision 7: Native Protocols Over MCP
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 **Date:** 2026-03-16
 **Topic:** Protocol preference
 **Status:** ✅ CONFIRMED
 **Rationale:** Native protocols (LEVELSET, CONTEXTUALIZE, ORIENTATE) preferred for vault coordination over Model Context Protocol.
 
 ### Decision 8: Slack is Ephemeral; Vault is the Record
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 **Date:** 2026-03-16
 **Topic:** Data durability and authority
 **Status:** ✅ CONFIRMED
 **Rationale:** Durable decisions must be captured in vault files to survive conversations being archived or compacted.
 
+<<<<<<< Updated upstream
 ### Decision 9: AGENTS.md Lives in `!/`, Not `.github/`
 
+=======
+### Decision 9: AGENTS.md Lives in `!ADMIN/`, Not `.github/`
+>>>>>>> Stashed changes
 **Date:** 2026-03-16
 **Topic:** Agent inventory location
 **Status:** ✅ CONFIRMED
 **Rationale:** Treat agent inventory as governance document, not as GitHub-specific configuration.
 
 ### Decision 10: `copilot-instructions.md` Guardrails
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 **Date:** 2026-03-16
 **Topic:** GitHub Copilot integration constraints
 **Status:** ✅ CONFIRMED
 **Requirements:**
+<<<<<<< Updated upstream
 
 - Must reference `Constitution.md`
 - Must declare agent capability tier/level
 - Must NOT grant write access to `!/`
+=======
+- Must reference `Constitution.md`
+- Must declare agent capability tier/level
+- Must NOT grant write access to `!ADMIN/`
+>>>>>>> Stashed changes
 
 **Rationale:** Ensures GitHub Copilot operates within vault governance without risking governance layer.
 
 ### Decision 11: Logan's Project = Unachievable End Goal
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 **Date:** 2026-03-16
 **Topic:** Strategic mission definition
 **Status:** ✅ CONFIRMED
 **Rationale:** Defines all vault work as incremental progress toward an ambitious, unreachable goal. Prevents perfectionism while maintaining strategic direction.
 
 ### Decision 12: OpenClaw is a Peer System
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 **Date:** 2026-03-16
 **Topic:** External coordination
 **Status:** ✅ CONFIRMED
 **Rationale:** OpenClaw surfaced as significant parallel work; should be studied and coordinated with.
 
 ### Decision 13: Slack-to-File Rule
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 **Date:** 2026-03-16
 **Topic:** Decision capture protocol
 **Status:** ✅ CONFIRMED (in principle)
@@ -145,12 +216,16 @@
 **Rationale:** Ephemeral Slack decisions must be captured in durable vault files. Amendment text pending.
 
 ### Decision 14: STORY: JFAC is Read-Only
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 **Date:** 2026-03-16
 **Topic:** JFAC conversation access level
 **Status:** ✅ CONFIRMED
 **Rationale:** Time-sensitive reporting story operates as vault-only, no direct write capability.
 
+<<<<<<< Updated upstream
 ### Decision 15: Security Hardening — Input Sanitization and Content Validation
 **Date:** 2026-03-15
 **Topic:** Pipeline security
@@ -222,10 +297,13 @@ Principles reviewed. Findings:
 - No technical conflicts with existing governance identified.
 - **Verdict:** Sound principles. Pending Logan's approval to confirm as official decision. Minor reword on Safeguard 2 recommended before publishing.
 
+=======
+>>>>>>> Stashed changes
 ---
 
 ## PENDING DECISIONS (Logan's Review Required)
 
+<<<<<<< Updated upstream
 | Topic                                             | Status   | Notes                                  |
 | ------------------------------------------------- | -------- | -------------------------------------- |
 | Approval of AGENTS-v0.2-DRAFT.md                  | Awaiting | Needs Logan review before commit       |
@@ -239,6 +317,17 @@ Principles reviewed. Findings:
 | AUTHORITY: ADMIN: CLAUDE consolidation            | Awaiting | Merge three Claude personas into one?  |
 | FāVS freelance resume                             | Awaiting | Resume or archive?                     |
 | Gemini ADMIN scope                                | Awaiting | Define scope for Gemini agent access   |
+=======
+| Topic | Status | Notes |
+|-------|--------|-------|
+| Approval of AGENTS-v0.2-DRAFT.md | Awaiting | Needs Logan review before commit |
+| Approval of ORIENTATE-v0.1-BETA.md | Awaiting | Needs Logan review before commit |
+| Approval of LEVELSET-LITE-v0.1.md | Awaiting | Needs Logan review before commit |
+| Fate of `claude/levelset-current-synthesis-zWxJc` | Awaiting | Undecided: merge, archive, or continue |
+| AUTHORITY: ADMIN: CLAUDE consolidation | Awaiting | Merge three Claude personas into one? |
+| FāVS freelance resume | Awaiting | Resume or archive? |
+| Gemini ADMIN scope | Awaiting | Define scope for Gemini agent access |
+>>>>>>> Stashed changes
 
 ---
 
@@ -255,8 +344,27 @@ Principles reviewed. Findings:
 
 ---
 
+<<<<<<< Updated upstream
 _This document is the authoritative record of confirmed decisions._
 
 ---
 
 _Amendments require Logan's explicit approval and addition to this file._
+=======
+*This document is the authoritative record of confirmed decisions.*
+### Decision 15: Security Hardening — Input Sanitization and Content Validation
+**Date:** 2026-03-15
+**Topic:** Pipeline security
+**Status:** ✅ CONFIRMED
+**Rationale:** Review of the OpenClaw autonomous agent incident (2025–2026) revealed analogous risks — unsanitized external HTML flowing into YAML frontmatter via the legislature scraper. Added `sanitize_text()` to scraper, created `validate_content.py` as pre-commit CI gate, added validation steps to all commit-producing workflows, created CODEOWNERS and THREAT-MODEL.md. Branch protection deferred for AUTHORITY: CODE consultation.
+
+## 2026-03-22 — STEP-0 LEVELSET prompt for external agents
+
+**Decision:** Create `!/!/LEVELSET-STEP-0-EXTERNAL-AGENT.md` — a paste-to-agent orientation prompt for chat-based agents (Claude.ai, Gemini, Grok, etc.) that cannot access the repository directly. When Logan starts a new external agent session, he pastes this prompt, and the agent responds with a 6-part LEVELSET report: who they are, what they know, what they've done, what is unresolved, what they need, and collision risks.
+**Context:** External agents operating via chat have no vault context unless Logan provides it. A standardized STEP-0 prompt ensures consistent orientation across all chat-based agents, reducing repeated discovery work and preventing agents from inventing governance structures or claiming capabilities they don't have.
+**Decided by:** Logan Finney
+
+---
+
+*Amendments require Logan's explicit approval and addition to this file.*
+>>>>>>> Stashed changes

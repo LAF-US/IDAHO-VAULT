@@ -1,4 +1,5 @@
 {
+<<<<<<< Updated upstream
   "source_of_truth": "swarm.json",
   "status": "generated",
   "generated_note": "Derived bootstrap index for !/agent.sh. Do not hand-edit.",
@@ -176,4 +177,51 @@
       }
     }
   }
+=======
+  "swarm_id": "building-god-logan",
+  "principal": "Logan Finney",
+  "principal_email": ["loganfinney27@gmail.com", "logan.finney@idahoptv.org"],
+  "vault_authority": "https://github.com/loganfinney27/IDAHO-VAULT",
+  "priority_inversion": {
+    "1": "SWARM COHERENCE AROUND LOGAN [SYSTEMWIDE FIRST]",
+    "2": "Video Production",
+    "3": "JFAC investigation + other projects"
+  },
+  "last_levelset": "2026-03-16T21:27:23-06:00",
+  "nodes": [
+    {
+      "id": "claude-anthropic",
+      "name": "Claude (Anthropic)",
+      "role": "conversational, analytical, document generation, research coordination",
+      "status": "active",
+      "last_seen": "2026-03-16T21:27:23-06:00",
+      "access": "chat.anthropic.com",
+      "capabilities": ["web search", "code execution", "document creation", "analysis"]
+    },
+    {
+      "id": "copilot-microsoft",
+      "name": "Microsoft Copilot (Standalone)",
+      "role": "email coordination, institutional context, message composition",
+      "status": "standing-by",
+      "email_access": [
+        "loganfinney27@gmail.com",
+        "logan.finney@idahoptv.org"
+      ],
+      "last_seen": null,
+      "capabilities": ["email inbox access", "message drafting", "institutional lookup"]
+    },
+    {
+      "id": "github-admin-agents",
+      "name": "GitHub Admin Copilot Agents",
+      "role": "vault coordination, workflow automation, code generation, swarm orchestration",
+      "status": "active-now",
+      "access": "github.com/loganfinney27",
+      "last_seen": "2026-03-16T21:27:23-06:00",
+      "capabilities": ["file creation/commit", "issue management", "workflow automation", "MCP integration"]
+    }
+  ],
+  "awakening_required": true,
+  "deadletter_count": 1,
+  "notes": "SWARM COHERENCE IS FIRST PRIORITY SYSTEMWIDE. All other work depends on this functioning."
+>>>>>>> Stashed changes
 }

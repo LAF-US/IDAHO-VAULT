@@ -16,7 +16,10 @@ by [[Logan Alvan Finney]]
 - **Markdown = human product. Python = machine/procedural/robotic/algorithms.** Keep distinctions clear for readability.
 - **Chat is ephemeral. Vault is the record.** Durable decisions and context windows must be captured in vault.md syntaxic.
 - **Elevation governance: no instance gains higher "level" or "layer" access without Logan's explicit IRL approval.**
+<<<<<<< Updated upstream
 - **Gemini CLI and Gemini Code Assist (VS Code) are enabled** at Tier 1 (Support): Direct Write, Operational zone only. All Gemini writes are PR-mediated and require Logan's merge approval. See `!/AGENTS.md` for full tier definition.
+=======
+>>>>>>> Stashed changes
 
 ---
 
@@ -114,7 +117,11 @@ This document is the "sole source of truth" for vault governance. Amendments req
 
 ---
 
+<<<<<<< Updated upstream
 *Last updated: 2026-03-28*
+=======
+*Last updated: 2026-03-22*
+>>>>>>> Stashed changes
 
 *Status: pending revision-synthesis and congressional adoption, post-consolidation court.*
 

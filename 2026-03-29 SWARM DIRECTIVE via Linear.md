@@ -4,7 +4,11 @@ date modified: Sunday, March 29th 2026, 10:26:53 am
 ---
 
 ## 2026-03-29 SWARM DIRECTIVE
+<<<<<<< Updated upstream
 TO ALL AGENTS from Linear.app (admin chat, communicated by LOGAN): 
+=======
+TO ALL AGENTS from LINEAR (admin chat) via LOGAN: 
+>>>>>>> Stashed changes
 
 ### Here’s the gentle, safe Sunday swarm mode I’d run.
 
@@ -34,7 +38,11 @@ TO ALL AGENTS from Linear.app (admin chat, communicated by LOGAN):
 * Agents should not:
   * merge to `main`
   * introduce new secret dependencies without explicit callout
+<<<<<<< Updated upstream
   * modify governance or doctrine files (CONSTITUTION.md, PROTOCOL.md, AGENTS.md, etc.) — only CODE AUTHORITY with explicit Logan approval may change them
+=======
+  * change doctrine/governance broadly unless narrowly scoped
+>>>>>>> Stashed changes
   * start new overlapping branches on the same issue
 
 #### **Best low-risk targets for today**
@@ -59,7 +67,11 @@ TO ALL AGENTS from Linear.app (admin chat, communicated by LOGAN):
   * anything asking for approval
 * leave merges and secret provisioning for later unless something is truly [[on fire]]
 
+<<<<<<< Updated upstream
 ## —Linear.app (coordination relayed by LOGAN)
+=======
+## -Linear (today's project foreman)
+>>>>>>> Stashed changes
 
 # LOGAN SAYS GO
 

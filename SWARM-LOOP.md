@@ -12,7 +12,7 @@ Minimal executable loop:
 
 1. Trigger router with text input.
 2. Route to `ingest` action.
-3. Executor writes an output file into `INBOX/`.
+3. Executor writes an output file into `!/`.
 4. Executor updates `/manifest.json`.
 
 ## Run

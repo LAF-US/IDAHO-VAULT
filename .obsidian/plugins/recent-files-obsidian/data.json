@@ -3,6 +3,21 @@
     {
       "basename": "2026-04-01",
       "path": "2026-04-01.md"
+<<<<<<< Updated upstream
+=======
+    },
+    {
+      "basename": "RADCON math",
+      "path": "RADCON math.md"
+    },
+    {
+      "basename": "2026-03-31",
+      "path": "2026-03-31.md"
+    },
+    {
+      "basename": "♊",
+      "path": "♊.md"
+>>>>>>> Stashed changes
     },
     {
       "basename": "NOTE TO ADMIN",
@@ -199,6 +214,105 @@
     {
       "basename": "GEMINI",
       "path": "GEMINI.md"
+<<<<<<< Updated upstream
+=======
+    },
+    {
+      "basename": "TOUCHSTONE",
+      "path": "TOUCHSTONE.md"
+    },
+    {
+      "basename": "THE CORE",
+      "path": "THE CORE.md"
+    },
+    {
+      "basename": "MIND",
+      "path": "MIND.md"
+    },
+    {
+      "basename": "CHARTER",
+      "path": "CHARTER.md"
+    },
+    {
+      "basename": "CODEX",
+      "path": "CODEX.md"
+    },
+    {
+      "basename": "THE PERIPHERY",
+      "path": "THE PERIPHERY.md"
+    },
+    {
+      "basename": "BODY",
+      "path": "BODY.md"
+    },
+    {
+      "basename": "GEMINI",
+      "path": "GEMINI.md"
+    },
+    {
+      "basename": "CODEX",
+      "path": "CODEX.md"
+    },
+    {
+      "basename": "CONSULTATION-PUBLIC-CONVERSATION-2026-03-16 1",
+      "path": "CONSULTATION-PUBLIC-CONVERSATION-2026-03-16 1.md"
+    },
+    {
+      "basename": "LADY",
+      "path": "LADY.md"
+    },
+    {
+      "basename": "ANSWERS",
+      "path": "ANSWERS.md"
+    },
+    {
+      "basename": "PROTOCOLS",
+      "path": "PROTOCOLS.md"
+    },
+    {
+      "basename": "PROCEDURES",
+      "path": "PROCEDURES.md"
+    },
+    {
+      "basename": "PREFERENCES",
+      "path": "PREFERENCES.md"
+    },
+    {
+      "basename": "THE GHOST",
+      "path": "THE GHOST.md"
+    },
+    {
+      "basename": "SOUL",
+      "path": "SOUL.md"
+    },
+    {
+      "basename": "GUIDELINES",
+      "path": "GUIDELINES.md"
+    },
+    {
+      "basename": "GUESTBOOK",
+      "path": "GUESTBOOK.md"
+    },
+    {
+      "basename": "QUESTION",
+      "path": "QUESTION.md"
+    },
+    {
+      "basename": "PROTOCOL",
+      "path": "PROTOCOL.md"
+    },
+    {
+      "basename": "PROTOCOL-XKCD-DRAFT 1",
+      "path": "PROTOCOL-XKCD-DRAFT 1.md"
+    },
+    {
+      "basename": "¿ I didn't realize this was a sad occasion",
+      "path": "¿ I didn't realize this was a sad occasion.md"
+    },
+    {
+      "basename": "WRONG QUESTIONS",
+      "path": "WRONG QUESTIONS.md"
+>>>>>>> Stashed changes
     }
   ],
   "omittedPaths": [
