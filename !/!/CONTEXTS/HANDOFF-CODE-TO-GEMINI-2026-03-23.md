@@ -43,7 +43,7 @@ These repo-visible facts are safe to assume for this handoff:
 2. Agents operate under a relay model; inter-agent coordination is routed through or visible to Logan.
 3. Public repo means on-the-record.
 4. Durable decisions belong in files, not only in chat.
-5. There is now a current generic context packet at `!ADMIN/CONTEXTS/READY-STATE-2026-03-23.md`.
+5. There is now a current generic context packet at `!/!/CONTEXTS/READY-STATE-2026-03-23.md`.
 6. If you do not have repo access in your own environment, you should rely only on text Logan pastes to you and on the external-agent prompt.
 
 ---
@@ -52,8 +52,8 @@ These repo-visible facts are safe to assume for this handoff:
 
 Recommended minimum briefing set:
 
-1. `!ADMIN/LEVELSET-EXTERNAL-AGENT-PROMPT.md`
-2. `!ADMIN/CONTEXTS/READY-STATE-2026-03-23.md`
+1. `!/LEVELSET-STEP-0-EXTERNAL-AGENT.md`
+2. `!/!/CONTEXTS/READY-STATE-2026-03-23.md`
 3. `AGENTS.md` (or the agent-registry section)
 4. `CLAUDE.md` (vault conventions section)
 5. Any beat-specific notes relevant to the question Logan is asking

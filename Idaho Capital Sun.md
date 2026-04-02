@@ -1,5 +1,6 @@
 ---
 tags:
+  - media/outlets
   - organizations/journalism
   - 2026/03/12
 source: commit

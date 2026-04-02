@@ -45,7 +45,7 @@ For any agent starting work, these are the minimum files to absorb before acting
 2. `AGENTS.md` — current agent registry, capability tiers, boundary rules, and communication rules.
 3. `PROTOCOL.md` — definitions for HANDOFF, HANDSHAKE, CONTEXTUALIZE, FLAG, and related coordination terms.
 4. `GEMINI.md` — Gemini-specific framing and constraints.
-5. `!ADMIN/LEVELSET-EXTERNAL-AGENT-PROMPT.md` — bootstrap prompt for agents without direct repo access.
+5. `!/LEVELSET-STEP-0-EXTERNAL-AGENT.md` — bootstrap prompt for agents without direct repo access.
 6. `!ADMIN/PROTOCOL-PASSBACK-SYNC.md` — TOSS/BOOTSTRAP/HANDSHAKE extraction-and-ingestion workflow.
 
 ---
@@ -64,7 +64,7 @@ Visible current agent roles in `AGENTS.md`:
 Current communication model:
 - GitHub Issues and PRs are the active coordination layer.
 - Vault files are the durable record.
-- `!/` and `!ADMIN/` are active storage locations for prompts, routing, and context packages.
+- `!/` and `!/!/` are active storage locations for prompts, routing, and context packages.
 
 ---
 
@@ -72,13 +72,13 @@ Current communication model:
 
 Already present and reusable:
 
-- `!ADMIN/BRANCH-STATUS-2026-03-22.md` — branch triage and merge-order report.
-- `!ADMIN/GITHUB-AGENT-SETUP-SUMMARY-2026-03-22.md` — summary of prior branch/merge support work.
+- `!/!/BRANCH-STATUS-2026-03-22.md` — branch triage and merge-order report.
+- `!/!/GITHUB-AGENT-SETUP-SUMMARY-2026-03-22.md` — summary of prior branch/merge support work.
 - `CONTEXT-VAULT-2026-03-16.md` — context-preservation dump from multi-conversation collapse.
 - `CONTEXT-PASSOVER-COPILOT-2026-03-16.md` — verified passover guide for Copilot.
 - `HANDOFF-CODE-TO-SWARM-2026-03-15.md` and related handoffs — earlier relay docs.
-- `!ADMIN/LEVELSET-EXTERNAL-AGENT-PROMPT.md` — reusable startup prompt for non-repo agents.
-- `!ADMIN/PROMPTS/BOOTSTRAP.md` and `!ADMIN/PROMPTS/TOSS.md` — Logan-run prompts for extracting and vaulting context.
+- `!/LEVELSET-STEP-0-EXTERNAL-AGENT.md` — reusable startup prompt for non-repo agents.
+- `!/!/PROMPTS/BOOTSTRAP.md` and `!/!/PROMPTS/TOSS.md` — Logan-run prompts for extracting and vaulting context.
 
 This means the vault already has the beginnings of a repeatable context-ingestion system; what was missing was a fresh, simplified ready-state packet for current agents.
 
@@ -95,7 +95,7 @@ This means the vault already has the beginnings of a repeatable context-ingestio
 
 ### If the agent DOES NOT have repo access
 
-- Use `!ADMIN/LEVELSET-EXTERNAL-AGENT-PROMPT.md` as the startup prompt.
+- Use `!/LEVELSET-STEP-0-EXTERNAL-AGENT.md` as the startup prompt.
 - Work only from text Logan pastes into the conversation.
 - Do not claim repo visibility.
 - Produce drafts, analysis, summaries, or recommendations only.
@@ -104,7 +104,7 @@ This means the vault already has the beginnings of a repeatable context-ingestio
 
 ## 7. KNOWN RISKS / COLLISION SURFACES
 
-1. **Governance duplication risk** — root governance files and `!ADMIN/` support files coexist; agents must confirm which file is authoritative before editing.
+1. **Governance duplication risk** — root notes and `!/` / `!/!/` swarm files coexist; agents must confirm which file is authoritative before editing.
 2. **Stale branch risk** — branch-status reporting already notes stale and collision-prone branches; branch assumptions should be rechecked before implementation.
 3. **Process-artifact sprawl** — multiple handoffs, context dumps, and LEVELSET-style files exist; agents should prefer current controlling docs over older process artifacts.
 4. **Capability overclaim risk** — external agents must not imply repo, Slack, or GitHub account access they do not have.
@@ -115,8 +115,8 @@ This means the vault already has the beginnings of a repeatable context-ingestio
 
 This ready-state file is paired with two direct handoff packets:
 
-- `!ADMIN/CONTEXTS/HANDOFF-CODE-TO-GEMINI-2026-03-23.md`
-- `!ADMIN/CONTEXTS/HANDOFF-CODE-TO-CLAUDE-2026-03-23.md`
+- `!/!/CONTEXTS/HANDOFF-CODE-TO-GEMINI-2026-03-23.md`
+- `!/!/CONTEXTS/HANDOFF-CODE-TO-CLAUDE-2026-03-23.md`
 
 Use those files when Logan wants to brief a specific agent quickly.
 
@@ -129,7 +129,7 @@ Use those files when Logan wants to brief a specific agent quickly.
 **What is done:**
 - Shared repo-visible context has been condensed into a current packet.
 - Agent-specific handoffs have been prepared for Gemini and Claude.
-- Materials are stored in `!ADMIN/CONTEXTS/` for re-use.
+- Materials are stored in `!/!/CONTEXTS/` for re-use.
 
 **What is not done:**
 - No claims are made here about Slack bot setup, live private conversations, or external services.

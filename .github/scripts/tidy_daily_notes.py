@@ -17,6 +17,7 @@ Usage:
 
 import argparse
 import re
+import sys
 from datetime import date, timedelta
 from pathlib import Path
 
@@ -49,6 +50,17 @@ def get_body(content: str) -> str:
     if not body.startswith('\n'):
         body = '\n' + body
     return body
+
+
+def log(message: str = "") -> None:
+    """Write stdout safely on terminals that cannot encode all Unicode glyphs."""
+    text = f"{message}\n"
+    encoding = sys.stdout.encoding or "utf-8"
+    if hasattr(sys.stdout, "buffer"):
+        sys.stdout.buffer.write(text.encode(encoding, errors="backslashreplace"))
+        sys.stdout.buffer.flush()
+    else:
+        sys.stdout.write(text)
 
 
 def build_fm(d: date, created: str, modified: str, extra_tags: list | None = None) -> str:
@@ -184,6 +196,7 @@ def main() -> None:
     args = parser.parse_args()
 
     print("=== DAILY NOTE TIDY ===\n")
+    divider = "-" * 60
 
     for d, cfg in sorted(NOTES.items()):
         f = VAULT_ROOT / f"{d}.md"
@@ -196,35 +209,39 @@ def main() -> None:
             body = cfg['body']
         elif 'body_source' in cfg:
             src = VAULT_ROOT / cfg['body_source']
-            body = get_body(src.read_text()) if src.exists() else get_body(f.read_text())
+            body = (
+                get_body(src.read_text(encoding="utf-8"))
+                if src.exists()
+                else get_body(f.read_text(encoding="utf-8"))
+            )
         else:
-            body = get_body(f.read_text())
+            body = get_body(f.read_text(encoding="utf-8"))
 
         fm = build_fm(d, cfg['created'], cfg['modified'], cfg.get('extra_tags'))
         new_content = fm + body
 
         if args.dry_run:
-            print(f"{'─' * 60}")
+            print(divider)
             print(f"  {f.name}")
-            print(f"{'─' * 60}")
-            print(new_content)
+            print(divider)
+            log(new_content.rstrip("\n"))
             print()
         else:
-            f.write_text(new_content)
-            print(f"  ✓ {f.name}")
+            f.write_text(new_content, encoding="utf-8")
+            print(f"  OK: {f.name}")
 
     print(f"\n=== STALE FILE CLEANUP ===\n")
     for name in STALE:
         p = VAULT_ROOT / name
         if args.dry_run:
-            status = "exists — would delete" if p.exists() else "already gone"
+            status = "exists - would delete" if p.exists() else "already gone"
             print(f"  {name}: {status}")
         else:
             if p.exists():
                 p.unlink()
-                print(f"  ✓ deleted: {name}")
+                print(f"  OK deleted: {name}")
             else:
-                print(f"  — already gone: {name}")
+                print(f"  already gone: {name}")
 
 
 if __name__ == "__main__":
