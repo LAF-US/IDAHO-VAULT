@@ -14,6 +14,20 @@ This is a personal journalism research vault. It contains notes on Idaho politic
 
 ---
 
+## Authority Chain
+
+This file is the shared delegation layer for day-to-day vault behavior. When rules overlap, use this precedence:
+
+1. `!/README.md` for orientation and canonical path language
+2. `!/VAULT-CONVENTIONS.md` for shared routing and write conventions
+3. `!/VAULT-METADATA-STANDARD.md` for governed-note metadata and lifecycle rules
+4. `!/VAULT-TEMPLATES.md` for class, filename, and template expectations
+5. Live implementation wiring in `.obsidian/`, `.github/`, and `manifest.json` only insofar as it conforms to the documents above
+
+`!/VAULT-METADATA-STANDARD.md` outranks template guidance whenever metadata fields or lifecycle semantics overlap.
+
+---
+
 ## Vault Structure
 
 This vault is intentionally hybrid. Governance and automation live in dedicated
@@ -78,6 +92,23 @@ See `!/VAULT-TEMPLATES.md` for:
 - required frontmatter keys
 - routing/maintenance workflow
 - constitutional interaction model
+
+### Daily Note Infrastructure
+
+Daily notes currently use a specialized operational path instead of a full template-registry migration:
+
+- active creation template: `DAILY NOTE TEMPLATE.md`
+- active Obsidian wiring: `.obsidian/daily-notes.json`
+- active normalization/carryforward scripts: `.github/scripts/daily_rollover.py`, `.github/scripts/tidy_daily_notes.py`, `.github/scripts/expand_date_aliases.py`
+
+Do not treat `DAILY NOTE.md`, `OBSIDIAN DAILY NOTE.md`, or `template.md` as active daily-note infrastructure.
+
+Concrete Markdown files named by tracked Obsidian client config as templates must also be mirrored into the machine-readable swarm tracking layer:
+
+- `manifest.json` for execution/interface inventory
+- `swarm.json` for the broader swarm registry
+
+If a plugin exposes only a template folder or keeps its settings private via Obsidian Sync, record that honestly as `folder_only` or `installed_untracked_config` rather than inventing concrete template files.
 
 ---
 
@@ -155,6 +186,25 @@ Use `[[Full Name]]` for all internal links — people, places, organizations, bi
 
 ---
 
+## Direct-Write Workflow
+
+1. Determine whether the target artifact belongs to the control plane or the note corpus.
+2. If it is governance or operational doctrine, write into `!/` only when the artifact truly belongs in the control plane.
+3. If it is corpus content, choose a document class first, then create the note at repo root using the canonical filename pattern and required metadata.
+4. For daily notes, let Obsidian create the file from `DAILY NOTE TEMPLATE.md` and let the daily-note scripts maintain carryforward and normalization.
+5. GitHub automation may write files and update transport artifacts, but those writes must conform to vault doctrine rather than redefine it.
+
+---
+
+## Authority and Coordination Model
+
+- **Vault** is the canonical memory and doctrine layer.
+- **GitHub** is the execution and transport layer for workflows, `manifest.json`, lock state, PRs, and automation output.
+- **Linear** is execution-state support for ownership, status, and planning.
+- **Chat/Slack** is transient coordination; durable decisions or context must be promoted into the vault and/or execution systems.
+
+---
+
 ## Vault ↔ Linear Operating Model Mapping
 
 | Layer (purpose)            | Vault (canonical memory)                                                                                         | Linear (execution state)                                           | Chat/Slack (ephemeral)                                              |
@@ -164,7 +214,7 @@ Use `[[Full Name]]` for all internal links — people, places, organizations, bi
 | **Ghost / Soul**<br>interpretive/cultural layer | Guidelines, grimoire/interpretive notes, guestbook/cultural norms, context vaults                                          | Action items emerging from interpretive work (e.g., follow-ups, retro tasks) | Brainstorms, vibes, drafts; memorialize decisions/insights in Vault |
 | **`!` spaces**<br>operational infrastructure | System files, DOCKET, LEVELSET, agent routing, audit/log artifacts, workflow outputs that must persist                     | Incidents/infra tasks, runbooks in execution, workflow status, tickets | Real-time paging/alerts; record outcomes in Linear and Vault        |
 
-**Decision Rule:** Vault holds doctrine and context that must persist. Linear tracks execution, owners, and current state. Chat/Slack is transient coordination — any decision or durable context must be promoted promptly into Vault and/or Linear.
+**Decision Rule:** Vault holds doctrine and context that must persist. GitHub executes workflows and transport state. Linear tracks execution, owners, and current state. Chat/Slack is transient coordination — any decision or durable context must be promoted promptly into Vault and/or the execution systems.
 
 ---
 

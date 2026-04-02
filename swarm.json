@@ -201,6 +201,41 @@
     }
   ],
 
+  "template_tracking": {
+    "source_of_truth": "tracked_obsidian_config",
+    "registry_files": ["manifest.json", "swarm.json"],
+    "policy": "Concrete Obsidian template files named by tracked client config must be mirrored here and in manifest.json. Folder-only plugin scopes and private plugin settings must be declared explicitly instead of guessed.",
+    "concrete_bindings": [
+      {
+        "client": "obsidian",
+        "plugin": "core/daily-notes",
+        "config_path": ".obsidian/daily-notes.json",
+        "template_path": "DAILY NOTE TEMPLATE.md",
+        "mode": "daily_note",
+        "status": "active"
+      }
+    ],
+    "folder_bindings": [
+      {
+        "client": "obsidian",
+        "plugin": "core/templates",
+        "config_path": ".obsidian/templates.json",
+        "folder": "",
+        "status": "folder_only",
+        "note": "Tracked config exposes a template pool, not concrete template file bindings."
+      }
+    ],
+    "untracked_plugins": [
+      {
+        "client": "obsidian",
+        "plugin": "templater-obsidian",
+        "status": "installed_untracked_config",
+        "config_path": ".obsidian/plugins/templater-obsidian/data.json",
+        "note": "Plugin settings are intentionally private via Obsidian Sync and are not read into swarm tracking."
+      }
+    ]
+  },
+
   "protocols": [
     {
       "id": "levelset",

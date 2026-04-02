@@ -1,29 +1,34 @@
 ---
+title: "MANIFEST.json v1 Specification"
 tags:
   - administration/manifest
-updated: 2026-03-25
+updated: 2026-04-01
 status: active
+authority: "[[LOGAN]]"
 source: codex
 ---
 
 # MANIFEST.json v1 Specification
 
-This file defines the coordination layer for multi-agent operation in IDAHO-VAULT.
+This file defines the GitHub-side execution and coordination layer for multi-agent operation in IDAHO-VAULT.
 
 ## Purpose
 
-`manifest.json` is the shared state record used to prevent:
+`manifest.json` is the shared execution-state record used to prevent:
 
 - duplicate writes
 - stale reads
 - conflicting outputs
 
+It is not the canonical authority for note metadata, template policy, or governance doctrine.
+
 MCP is a transport/interface layer. Coordination remains manifest-driven.
 
 ## Canonical Authority Model
 
-- **GitHub repository is canonical state** and automation surface.
-- **Obsidian is an interface** (synced view), not source of truth.
+- **Vault files are canonical memory and doctrine.**
+- **GitHub workflows and `manifest.json` provide execution, automation, and write-coordination state.**
+- **Obsidian is a primary authoring and reading interface** into the vault, not the policy source.
 - **Filesystem access remains baseline fallback** when MCP is unavailable.
 
 ## v1 Top-Level Schema
@@ -33,7 +38,8 @@ MCP is a transport/interface layer. Coordination remains manifest-driven.
   "manifest_version": "1.0.0",
   "generated_at": "ISO-8601 UTC",
   "authority": {
-    "canonical_system": "github",
+    "canonical_system": "vault",
+    "execution_system": "github",
     "interface_system": "obsidian",
     "fallback_mode": "filesystem"
   },
@@ -48,6 +54,12 @@ MCP is a transport/interface layer. Coordination remains manifest-driven.
     "server": null,
     "notes": "Enable after endpoint + controls validation"
   },
+  "obsidian_templates": {
+    "source_of_truth": "tracked_obsidian_config",
+    "concrete_bindings": [],
+    "folder_bindings": [],
+    "untracked_plugins": []
+  },
   "locks": [],
   "entries": {}
 }
@@ -58,9 +70,12 @@ MCP is a transport/interface layer. Coordination remains manifest-driven.
 
 - Canonical schema file: `manifest.schema.json`
 - Automation updater: `.github/scripts/update_manifest.py`
+- The updater also mirrors tracked Obsidian template bindings into `swarm.json` so the public swarm registry stays aligned with the manifest inventory.
 - CI/workflow jobs should validate manifest shape before commit.
 
 ## `entries` Object (Per-file Coordination Unit)
+
+Manifest entries track execution state only. They do not supersede frontmatter, note class, or other vault-native document truth.
 
 Each key is a repository-relative file path. Example:
 
@@ -77,6 +92,21 @@ Each key is a repository-relative file path. Example:
   }
 }
 ```
+
+## `obsidian_templates` Object (Tracked Client Bindings)
+
+This block records which concrete Markdown files are named as templates by tracked Obsidian client config.
+
+- It is an interface inventory, not template doctrine.
+- Concrete file bindings named by tracked config must appear here and in `swarm.json`.
+- Folder-only template pools should be recorded as folder bindings, not inflated into guessed file lists.
+- Private plugin settings excluded by the Obsidian Sync / git boundary should be declared as untracked rather than silently ignored.
+
+Current live interpretation:
+
+- `.obsidian/daily-notes.json` names `DAILY NOTE TEMPLATE.md` as an active concrete binding.
+- `.obsidian/templates.json` exposes a folder-level template pool only.
+- `templater-obsidian` may be installed, but its `data.json` is private machine state and is not promoted into the public manifest unless Logan deliberately changes that boundary.
 
 ## Soft-Lock Protocol (v1)
 

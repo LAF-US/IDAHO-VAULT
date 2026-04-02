@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Update manifest.json with a soft-lock lifecycle and entry metadata."""
+"""Update manifest.json with a soft-lock lifecycle and execution-state metadata."""
 
 from __future__ import annotations
 
@@ -9,8 +9,15 @@ import json
 import uuid
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
+from typing import Any
 
 DEFAULT_TTL_MINUTES = 15
+DEFAULT_AUTHORITY = {
+    "canonical_system": "vault",
+    "execution_system": "github",
+    "interface_system": "obsidian",
+    "fallback_mode": "filesystem",
+}
 
 
 def utc_now() -> datetime:
@@ -25,6 +32,12 @@ def parse_iso(text: str) -> datetime:
     return datetime.fromisoformat(text.replace("Z", "+00:00"))
 
 
+def load_json(path: Path, default: Any) -> Any:
+    if not path.exists():
+        return default
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
 def sha256_file(path: Path) -> str:
     digest = hashlib.sha256()
     with path.open("rb") as f:
@@ -33,17 +46,145 @@ def sha256_file(path: Path) -> str:
     return f"sha256:{digest.hexdigest()}"
 
 
+def obsidian_note_to_path(note_name: str) -> str | None:
+    cleaned = note_name.strip().replace("\\", "/").strip("/")
+    if not cleaned:
+        return None
+    if not cleaned.lower().endswith(".md"):
+        cleaned = f"{cleaned}.md"
+    return cleaned
+
+
+def build_obsidian_template_inventory(repo_root: Path) -> dict:
+    obsidian_dir = repo_root / ".obsidian"
+    daily_notes = load_json(obsidian_dir / "daily-notes.json", {})
+    templates = load_json(obsidian_dir / "templates.json", {})
+    community_plugins = load_json(obsidian_dir / "community-plugins.json", [])
+
+    concrete_bindings = []
+    folder_bindings = []
+    untracked_plugins = []
+
+    daily_template = obsidian_note_to_path(str(daily_notes.get("template", "")))
+    if daily_template:
+        concrete_bindings.append(
+            {
+                "client": "obsidian",
+                "plugin": "core/daily-notes",
+                "config_path": ".obsidian/daily-notes.json",
+                "template_path": daily_template,
+                "mode": "daily_note",
+                "status": "active",
+                "note_folder": str(daily_notes.get("folder", "")),
+            }
+        )
+
+    if isinstance(templates, dict):
+        folder_bindings.append(
+            {
+                "client": "obsidian",
+                "plugin": "core/templates",
+                "config_path": ".obsidian/templates.json",
+                "folder": str(templates.get("folder", "")),
+                "date_format": str(templates.get("dateFormat", "")),
+                "time_format": str(templates.get("timeFormat", "")),
+                "status": "folder_only",
+                "note": "Tracked config exposes a template pool, not concrete template file bindings.",
+            }
+        )
+
+    if "templater-obsidian" in community_plugins:
+        untracked_plugins.append(
+            {
+                "client": "obsidian",
+                "plugin": "templater-obsidian",
+                "status": "installed_untracked_config",
+                "config_path": ".obsidian/plugins/templater-obsidian/data.json",
+                "note": "Plugin settings are intentionally private via Obsidian Sync and are not read into swarm tracking.",
+            }
+        )
+
+    return {
+        "source_of_truth": "tracked_obsidian_config",
+        "concrete_bindings": concrete_bindings,
+        "folder_bindings": folder_bindings,
+        "untracked_plugins": untracked_plugins,
+    }
+
+
+def build_swarm_template_tracking(template_inventory: dict) -> dict:
+    concrete_bindings = [
+        {
+            "client": binding["client"],
+            "plugin": binding["plugin"],
+            "config_path": binding["config_path"],
+            "template_path": binding["template_path"],
+            "mode": binding["mode"],
+            "status": binding["status"],
+        }
+        for binding in template_inventory.get("concrete_bindings", [])
+    ]
+
+    folder_bindings = [
+        {
+            "client": binding["client"],
+            "plugin": binding["plugin"],
+            "config_path": binding["config_path"],
+            "folder": binding["folder"],
+            "status": binding["status"],
+            "note": binding["note"],
+        }
+        for binding in template_inventory.get("folder_bindings", [])
+    ]
+
+    untracked_plugins = [
+        {
+            "client": plugin["client"],
+            "plugin": plugin["plugin"],
+            "status": plugin["status"],
+            "config_path": plugin["config_path"],
+            "note": plugin["note"],
+        }
+        for plugin in template_inventory.get("untracked_plugins", [])
+    ]
+
+    return {
+        "source_of_truth": "tracked_obsidian_config",
+        "registry_files": ["manifest.json", "swarm.json"],
+        "policy": (
+            "Concrete Obsidian template files named by tracked client config "
+            "must be mirrored here and in manifest.json. Folder-only plugin "
+            "scopes and private plugin settings must be declared explicitly "
+            "instead of guessed."
+        ),
+        "concrete_bindings": concrete_bindings,
+        "folder_bindings": folder_bindings,
+        "untracked_plugins": untracked_plugins,
+    }
+
+
+def sync_swarm_template_tracking(repo_root: Path, template_inventory: dict) -> None:
+    swarm_path = repo_root / "swarm.json"
+    if not swarm_path.exists():
+        return
+
+    swarm = load_json(swarm_path, {})
+    tracking = build_swarm_template_tracking(template_inventory)
+    if swarm.get("template_tracking") == tracking:
+        return
+
+    swarm["template_tracking"] = tracking
+    swarm_path.write_text(json.dumps(swarm, indent=2) + "\n", encoding="utf-8")
+
+
 def load_manifest(path: Path) -> dict:
+    repo_root = path.parent
     if path.exists():
         return json.loads(path.read_text(encoding="utf-8"))
     return {
         "manifest_version": "1.0.0",
         "generated_at": iso_z(utc_now()),
-        "authority": {
-            "canonical_system": "github",
-            "interface_system": "obsidian",
-            "fallback_mode": "filesystem",
-        },
+        "authority": DEFAULT_AUTHORITY.copy(),
         "sync": {
             "primary_dataset": "vault",
             "sync_unit": ["file", "manifest_entry"],
@@ -55,9 +196,18 @@ def load_manifest(path: Path) -> dict:
             "server": None,
             "notes": "Enable after Obsidian MCP Tools endpoint and write controls are validated.",
         },
+        "obsidian_templates": build_obsidian_template_inventory(repo_root),
         "locks": [],
         "entries": {},
     }
+
+
+def normalize_manifest(manifest: dict, repo_root: Path) -> None:
+    """Keep the authority block aligned with the current transport model."""
+    manifest["authority"] = DEFAULT_AUTHORITY.copy()
+    template_inventory = build_obsidian_template_inventory(repo_root)
+    manifest["obsidian_templates"] = template_inventory
+    sync_swarm_template_tracking(repo_root, template_inventory)
 
 
 def expire_stale_locks(manifest: dict, now: datetime) -> None:
@@ -129,9 +279,11 @@ def main() -> int:
     manifest_path = Path(args.manifest)
     file_path = args.file
     file_abs = Path(file_path)
+    repo_root = manifest_path.parent
 
     now = utc_now()
     manifest = load_manifest(manifest_path)
+    normalize_manifest(manifest, repo_root)
     expire_stale_locks(manifest, now)
 
     if args.phase == "acquire":

@@ -1,8 +1,9 @@
 {
   "manifest_version": "1.0.0",
-  "generated_at": "2026-04-01T13:02:04.999845Z",
+  "generated_at": "2026-04-02T02:29:14.3681445Z",
   "authority": {
-    "canonical_system": "github",
+    "canonical_system": "vault",
+    "execution_system": "github",
     "interface_system": "obsidian",
     "fallback_mode": "filesystem"
   },
@@ -19,6 +20,41 @@
     "mode": "transport_only",
     "server": null,
     "notes": "Enable after Obsidian MCP Tools endpoint and write controls are validated."
+  },
+  "obsidian_templates": {
+    "source_of_truth": "tracked_obsidian_config",
+    "concrete_bindings": [
+      {
+        "client": "obsidian",
+        "plugin": "core/daily-notes",
+        "config_path": ".obsidian/daily-notes.json",
+        "template_path": "DAILY NOTE TEMPLATE.md",
+        "mode": "daily_note",
+        "status": "active",
+        "note_folder": ""
+      }
+    ],
+    "folder_bindings": [
+      {
+        "client": "obsidian",
+        "plugin": "core/templates",
+        "config_path": ".obsidian/templates.json",
+        "folder": "",
+        "date_format": "YYYY-MM-DD",
+        "time_format": "HH:mm",
+        "status": "folder_only",
+        "note": "Tracked config exposes a template pool, not concrete template file bindings."
+      }
+    ],
+    "untracked_plugins": [
+      {
+        "client": "obsidian",
+        "plugin": "templater-obsidian",
+        "status": "installed_untracked_config",
+        "config_path": ".obsidian/plugins/templater-obsidian/data.json",
+        "note": "Plugin settings are intentionally private via Obsidian Sync and are not read into swarm tracking."
+      }
+    ]
   },
   "locks": [
     {

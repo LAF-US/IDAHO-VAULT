@@ -279,6 +279,30 @@ def merge_todo_lines(carried: list[str], existing: list[str]) -> list[str]:
     return merged
 
 
+def extract_active_section(content: str) -> list[str]:
+    """
+    Return the raw lines inside TO DO LIST.md's ## Active section.
+
+    Stop at the next markdown header. Blank lines inside the section are kept so
+    merge_todo_lines() can normalize them away safely.
+    """
+    lines = content.splitlines()
+    in_active = False
+    active_lines = []
+
+    for line in lines:
+        if line.strip() == "## Active":
+            in_active = True
+            continue
+
+        if in_active:
+            if line.startswith("## "):
+                break
+            active_lines.append(line)
+
+    return active_lines
+
+
 def patch_nav_links(content: str, target_date: date) -> str:
     """
     Fill in blank yesterday:/tomorrow: frontmatter fields.
@@ -371,6 +395,10 @@ def update_todo_list_md(carried: list[str], dry_run: bool = False) -> None:
             "*Persistent list - incomplete items carry forward daily.*\n"
         )
 
+    existing_active = extract_active_section(content)
+    merged_active = merge_todo_lines(carried, existing_active)
+    active_block = todo_block_text(merged_active)
+
     if "## Active" in content:
         lines = content.splitlines()
         new_lines = []
@@ -380,7 +408,7 @@ def update_todo_list_md(carried: list[str], dry_run: bool = False) -> None:
                 in_active = True
                 new_lines.append(line)
                 new_lines.append("")
-                new_lines.extend(carried)
+                new_lines.extend(merged_active if merged_active else [PLACEHOLDER_LINE])
                 new_lines.append("")
                 continue
             if in_active:
@@ -391,7 +419,7 @@ def update_todo_list_md(carried: list[str], dry_run: bool = False) -> None:
             new_lines.append(line)
         new_content = "\n".join(new_lines).rstrip() + "\n"
     else:
-        new_content = content.rstrip() + f"\n\n## Active\n\n{block}\n"
+        new_content = content.rstrip() + f"\n\n## Active\n\n{active_block}\n"
 
     if dry_run:
         log("\n--- TO DO LIST.md (dry run) ---")
@@ -399,6 +427,13 @@ def update_todo_list_md(carried: list[str], dry_run: bool = False) -> None:
     else:
         TODO_LIST_FILE.write_text(new_content, encoding="utf-8")
         log("Updated TO DO LIST.md")
+
+
+def load_active_todo_list_lines() -> list[str]:
+    """Return the current persistent active backlog from TO DO LIST.md."""
+    if not TODO_LIST_FILE.exists():
+        return []
+    return extract_active_section(TODO_LIST_FILE.read_text(encoding="utf-8"))
 
 
 # ---------------------------------------------------------------------------
@@ -449,16 +484,18 @@ def main() -> None:
     source_content = source_file.read_text(encoding="utf-8")
     todo_lines = extract_todo_section(source_content)
     carried = carry_forward(todo_lines)
+    persistent_active = load_active_todo_list_lines()
+    merged_backlog = merge_todo_lines(carried, persistent_active)
 
-    if carried:
-        log(f"Carrying forward {len([l for l in carried if TASK_RE.match(l)])} incomplete item(s):")
-        for line in carried:
+    if merged_backlog:
+        log(f"Carrying forward {len([l for l in merged_backlog if TASK_RE.match(l)])} incomplete item(s):")
+        for line in merged_backlog:
             log(f"  {line}")
     else:
         log("No incomplete items found - nothing to carry forward.")
 
-    update_today_note(target_date, carried, dry_run=args.dry_run)
-    update_todo_list_md(carried, dry_run=args.dry_run)
+    update_today_note(target_date, merged_backlog, dry_run=args.dry_run)
+    update_todo_list_md(merged_backlog, dry_run=args.dry_run)
 
 
 if __name__ == "__main__":
