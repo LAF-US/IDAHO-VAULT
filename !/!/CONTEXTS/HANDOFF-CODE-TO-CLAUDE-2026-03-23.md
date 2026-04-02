@@ -42,9 +42,9 @@ These points are directly supported by committed repo files:
 2. Inter-agent coordination must route through or remain visible to Logan.
 3. `CLAUDE.md`, `AGENTS.md`, and `PROTOCOL.md` are the core orientation documents for vault conventions and swarm coordination.
 4. `GEMINI.md` exists and defines Gemini as advisory rather than code-touching.
-5. `!ADMIN/LEVELSET-EXTERNAL-AGENT-PROMPT.md` exists for agents without direct repo access.
-6. `!ADMIN/PROTOCOL-PASSBACK-SYNC.md` plus `!ADMIN/PROMPTS/TOSS.md` / `BOOTSTRAP.md` define a repository-level pattern for extracting and vaulting context from other conversations.
-7. A new current summary packet exists at `!ADMIN/CONTEXTS/READY-STATE-2026-03-23.md`.
+5. `!/LEVELSET-STEP-0-EXTERNAL-AGENT.md` exists for agents without direct repo access.
+6. `!/!/PROTOCOL-PASSBACK-SYNC.md` plus `!/!/PROMPTS/TOSS.md` / `BOOTSTRAP.md` define a repository-level pattern for extracting and vaulting context from other conversations.
+7. A new current summary packet exists at `!/!/CONTEXTS/READY-STATE-2026-03-23.md`.
 
 ---
 
@@ -56,8 +56,8 @@ Minimum read set:
 2. `AGENTS.md`
 3. `PROTOCOL.md`
 4. `GEMINI.md`
-5. `!ADMIN/CONTEXTS/READY-STATE-2026-03-23.md`
-6. `!ADMIN/BRANCH-STATUS-2026-03-22.md` if the work touches git/branch coordination
+5. `!/!/CONTEXTS/READY-STATE-2026-03-23.md`
+6. `!/!/BRANCH-STATUS-2026-03-22.md` if the work touches git/branch coordination
 7. `CONTEXT-PASSOVER-COPILOT-2026-03-16.md` if the work touches cross-agent repo setup/history
 
 ---
@@ -98,4 +98,4 @@ Preferred reply format:
 
 ## ROUTING INSTRUCTION
 
-Logan: use this handoff when briefed Claude help is needed for repo-aware work. Pair it with `!ADMIN/CONTEXTS/READY-STATE-2026-03-23.md` and the task-specific file set relevant to the actual assignment.
+Logan: use this handoff when briefed Claude help is needed for repo-aware work. Pair it with `!/!/CONTEXTS/READY-STATE-2026-03-23.md` and the task-specific file set relevant to the actual assignment.

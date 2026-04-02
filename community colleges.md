@@ -2,6 +2,7 @@
 aliases:
   - community college
 tags:
+  - schools/colleges/state
   - schools/colleges/community
   - governments/taxingdistrict
 ---

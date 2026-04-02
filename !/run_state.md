@@ -11,7 +11,7 @@ Swarm state layer v1 operational. Awaiting Logan's review.
 - Swarm architecture scope for v2
 
 # NEXT ACTIONS (MAX 3)
-1. Logan reviews XKCD draft at !ADMIN/PROTOCOL-XKCD-DRAFT.md
+1. Logan reviews XKCD draft at !/!/PROTOCOL-XKCD-DRAFT.md
 2. Finalize swarm state layer integration
 3. Resume JFAC coverage work
 

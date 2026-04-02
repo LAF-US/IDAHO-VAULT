@@ -1,7 +1,7 @@
 ---
 title: "VAULT-METADATA-STANDARD — Header and Footer Standard"
 created: 2026-03-25
-updated: 2026-03-25
+updated: 2026-04-01
 status: active
 authority: "[[LOGAN]]"
 authors:
@@ -27,6 +27,13 @@ Goals:
 - Improve machine readability (automation, sorting, auditability)
 - Preserve human readability (quick context at top, clear close at bottom)
 - Keep metadata factual while leaving interpretation in prose
+
+### Authority Precedence
+
+When metadata guidance overlaps with template docs or implementation tooling, this file wins for governed markdown notes.
+
+- `!/VAULT-TEMPLATES.md` may add note-class fields and naming rules, but it does not override baseline header/footer or lifecycle policy.
+- `.obsidian/` configuration, `.github/` workflows, and `manifest.json` may implement metadata behavior, but they are not the canonical metadata authority.
 
 ---
 
@@ -170,7 +177,7 @@ tags:
 ### Example Footer
 
 - **Created:** 2026-03-20
-- **Last Updated:** 2026-03-25
+- **Last Updated:** 2026-04-01
 - **Status:** Active
 - **Authority:** [[LOGAN]]
 - **Authors:** ChatGPT Codex
@@ -185,4 +192,4 @@ tags:
 - **Status:** Active
 - **Authority:** [[LOGAN]]
 - **Authors:** ChatGPT Codex
-- **Change Note:** Initial standard for vault metadata header/footer and lifecycle rules.
+- **Change Note:** Clarified that metadata doctrine outranks template guidance and implementation tooling when rules overlap.
