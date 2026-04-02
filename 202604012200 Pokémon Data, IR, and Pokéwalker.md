@@ -37,7 +37,7 @@ When you "transfer" a Pokémon, you aren't moving an object; you are performing 
 
 The Nintendo DS and DS Lite did not have built-in infrared hardware. To facilitate the **Pokéwalker** and fast "IR Trading," Game Freak utilized a specialized cartridge type known as **NTR-031**.
 
-+1
+
 
 #### The Hardware (The "Transparent" Cartridge)
 
@@ -47,7 +47,7 @@ If you hold an HGSS cartridge up to a strong light, you’ll notice it isn't sol
 
 The Pokéwalker (the pedometer bundled with the games) acts as a thin client. It doesn't actually "run" the Pokémon game; it just displays data sent to it.
 
-- **The Advertisment:** The Pokéwalker constantly sends a `0xFC` byte every few hundred milliseconds to say "I'm here."
+- **The Advertisement:** The Pokéwalker constantly sends a `0xFC` byte every few hundred milliseconds to say "I'm here."
     
 - **The Transfer:** When you "Send a Pokémon," the DS encrypts the 136-byte Pokémon structure and transmits it via IR pulses.
     
