@@ -1,10 +1,16 @@
 ---
 tags:
   - administration/protocol
+<<<<<<< Updated upstream
 updated: 2026-03-24
 status: draft
 ---
 
+=======
+updated: 2026-03-15
+status: draft
+---
+>>>>>>> Stashed changes
 # Agentic Swarm Administrative Levelsetting Protocol (STUB)
 
 **Supervisor:** [[LOGAN]]
@@ -16,7 +22,10 @@ status: draft
 ## OPERATIONAL CONTEXT
 
 [[LOGAN]] is building an agentic swarm to manage:
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 - **Personal media consumption tracking** (movies, TV, books, academic journals, live performances)
 - **Professional/institutional content tracking** (Idaho Reports/Idaho PTV archive metadata)
 - **File management and knowledge organization** across heterogeneous data sources
@@ -29,6 +38,7 @@ Instances must coordinate reliably across tasks without ambiguity. This document
 
 ### DATA OPERATIONS
 
+<<<<<<< Updated upstream
 | Term        | Definition (DRAFT)                                                                   | Use Case                                              | Notes                                                         |
 | ----------- | ------------------------------------------------------------------------------------ | ----------------------------------------------------- | ------------------------------------------------------------- |
 | **HYDRATE** | Enrich existing data structure with additional fields/metadata from external sources | Filling in missing fields on partially-loaded records | Assumes data structure already exists; non-destructive        |
@@ -64,6 +74,43 @@ Instances must coordinate reliably across tasks without ambiguity. This document
 | **HANDOFF**       | Transfer responsibility for task/data to another instance with full context                | Delegating work across the swarm; task completion                | Must include sufficient context; receiving instance should ACKNOWLEDGE |
 | **HANDSHAKE**     | Formal acknowledgment of handoff receipt; confirmation of context completeness             | Closing coordination loop; ensuring no dropped context           | Implies both parties have aligned understanding                        |
 | **CONTEXTUALIZE** | Package information with sufficient background for receiving instance to act independently | Preparing data for HANDOFF; enriching flagged items              | Balance: avoid over-documentation while ensuring sufficiency           |
+=======
+| Term | Definition (DRAFT) | Use Case | Notes |
+|------|---|---|---|
+| **HYDRATE** | Enrich existing data structure with additional fields/metadata from external sources | Filling in missing fields on partially-loaded records | Assumes data structure already exists; non-destructive |
+| **INGEST** | First-time acquisition and loading of data into system | Initial import from APIs, RSS feeds, exports | Creates new records or replaces non-existent ones |
+| **DESTROY** | Permanent, irrevocable deletion of data | End-of-lifecycle data removal; privacy compliance | No recovery possible; audit trail required |
+| **DELETE** | Soft removal; data may be recoverable or archived | User-requested removal; temporary exclusions | Recoverability depends on implementation |
+| **SUNSET** | Scheduled deactivation or expiration of data/service | Deprecation of stale metadata; time-bound records | Planned, non-emergency removal; may include transition period |
+
+### OBSERVATIONAL/MONITORING ACTIONS
+
+| Term | Definition (DRAFT) | Use Case | Notes |
+|------|---|---|---|
+| **NOTICE** | Passive observation of event/state; may be ephemeral | Logging transient occurrences; monitoring system health | Does not require explicit storage; can be signal-level only |
+| **NOTE** | Active recording of observation; explicit storage | Documenting decisions, anomalies, findings | Implies persistent record; should be retrievable |
+| **LOOK** | Direct visual/structural inspection of a single entity | Examining record structure, error logs, data format | Typically on-demand; short-lived query |
+| **WATCH** | Continuous or repeated monitoring of entity/stream | Tracking data quality over time; system performance | Implies sustained attention; may trigger alerts |
+| **LISTEN** | Passive reception of events/messages; monitoring for specific signals | Event stream monitoring; queue/feed polling | Typically async; threshold-triggered |
+
+### INFORMATION-SEEKING & ADVISORY ACTIONS
+
+| Term | Definition (DRAFT) | Use Case | Notes |
+|------|---|---|---|
+| **SEARCH** | Active querying against defined data source (API, index, store) | Looking up specific data; filtering large datasets | Assumes destination is known; may return zero results |
+| **FIND** | Successful resolution of search; location/identity of target confirmed | Confirming data exists and is accessible | Often used as completion state of SEARCH |
+| **CONSULT** | Querying a knowledge source or advisory instance for information/guidance | Asking another agent for context; checking documentation | May return partial/uncertain results; advisory in nature |
+| **ADVISE** | Providing recommendation, analysis, or guidance based on available context | Offering decision support; flagging risks/opportunities | Implies assessment of data; opinion-forward |
+
+### COORDINATION & HANDOFF ACTIONS
+
+| Term | Definition (DRAFT) | Use Case | Notes |
+|------|---|---|---|
+| **FLAG** | Mark entity/task/finding for attention by supervisor or another instance | Raising priority issues; marking anomalies; escalating decisions | Should include severity/urgency indicator and reasoning |
+| **HANDOFF** | Transfer responsibility for task/data to another instance with full context | Delegating work across the swarm; task completion | Must include sufficient context; receiving instance should ACKNOWLEDGE |
+| **HANDSHAKE** | Formal acknowledgment of handoff receipt; confirmation of context completeness | Closing coordination loop; ensuring no dropped context | Implies both parties have aligned understanding |
+| **CONTEXTUALIZE** | Package information with sufficient background for receiving instance to act independently | Preparing data for HANDOFF; enriching flagged items | Balance: avoid over-documentation while ensuring sufficiency |
+>>>>>>> Stashed changes
 
 ---
 
@@ -93,7 +140,11 @@ Instances must coordinate reliably across tasks without ambiguity. This document
    - What's the boundary between ephemeral and persistent?
 
 5. **HYDRATE vs. INGEST**
+<<<<<<< Updated upstream
    - Is HYDRATE restricted to enrichment of _existing_ structures?
+=======
+   - Is HYDRATE restricted to enrichment of *existing* structures?
+>>>>>>> Stashed changes
    - Can INGEST create partial records, or must it be complete?
    - When should an instance choose one over the other?
 
@@ -107,9 +158,13 @@ Instances must coordinate reliably across tasks without ambiguity. This document
 ## IMPLEMENTATION NOTES
 
 ### Context Sufficiency for CONTEXTUALIZE
+<<<<<<< Updated upstream
 
 When preparing data for HANDOFF, instances should include:
 
+=======
+When preparing data for HANDOFF, instances should include:
+>>>>>>> Stashed changes
 - **What** was observed/actioned
 - **Why** it matters (relevance to swarm goals)
 - **When** (timestamp; recency)
@@ -117,6 +172,7 @@ When preparing data for HANDOFF, instances should include:
 - **Next steps** (what receiving instance should do)
 - **Caveats** (limitations, missing data, assumptions)
 
+<<<<<<< Updated upstream
 ### Compact Mapping: Coordination Terms → Execution Requirements
 
 | Term | MCP operation(s) / event | Required payload fields | Required metadata (all mappings) |
@@ -158,6 +214,9 @@ flag:
 
 ### FLAG Severity Levels (PROPOSED)
 
+=======
+### FLAG Severity Levels (PROPOSED)
+>>>>>>> Stashed changes
 - **CRITICAL** — Decision required; blocks downstream work of Logan or agents
 - **HIGH** — Pattern/anomaly detected; surface concerns to Logan for his will
 - **MEDIUM** — Informational; document context for later and continue
@@ -165,7 +224,10 @@ flag:
 - ADMIN — Unified Systems management
 
 ### Audit & Logging
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 - DESTROY, DELETE, SUNSET operations require audit trail
 - FLAG operations should reference their source/reasoning
 - HANDOFF should be logged with context snapshot
@@ -186,9 +248,17 @@ flag:
 
 ## DOCUMENT METADATA
 
+<<<<<<< Updated upstream
 - **Revised:** 2026-03-24
+=======
+- **Revised:** 2026-03-18
+>>>>>>> Stashed changes
 - **Revision:** [[LOGAN]]
 - **Status:** Stub / Awaiting expansion
 - **Authority:** [[LOGAN]]'s discretion
 
+<<<<<<< Updated upstream
 ###### [["The world is quiet here."]]
+=======
+###### [["The world is quiet here."]]
+>>>>>>> Stashed changes

@@ -81,7 +81,7 @@ Each key is a repository-relative file path. Example:
 
 ```json
 "entries": {
-  "INBOX/ingest-2026-03-25T120501Z.md": {
+"!/ingest-2026-03-25T120501Z.md": {
     "content_hash": "sha256:...",
     "last_writer": "agent:codex",
     "last_write_at": "2026-03-25T12:05:01Z",
