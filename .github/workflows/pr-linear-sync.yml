@@ -22,7 +22,7 @@ jobs:
       - name: Load Secrets from 1Password
         id: op-load-secrets
         if: env.OP_SERVICE_ACCOUNT_TOKEN != ''
-        uses: 1password/load-secrets-action@v3
+        uses: 1password/load-secrets-action@v4
         with:
           export-env: true
         env:
