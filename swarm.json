@@ -4,7 +4,6 @@
   "// conventions": "!/VAULT-CONVENTIONS.md",
   "principal": "Logan Finney",
   "vault_authority": "https://github.com/loganfinney27/IDAHO-VAULT",
-
   "agents": [
     {
       "id": "claude-code",
@@ -14,8 +13,16 @@
       "autoload_file": ".claude/CLAUDE.md",
       "autoload": true,
       "capability_tier": "Direct Write",
-      "role": "The Abhorsen — terminal & repository mechanics",
-      "label": "agent:claude-code"
+      "role": "The Abhorsen - terminal and repository mechanics",
+      "label": "agent:claude-code",
+      "bootstrap": {
+        "invoke_as": "claude",
+        "instructions_file": ".claude/CLAUDE.md",
+        "git_author_name": "Claude Code (The Abhorsen)",
+        "git_author_email": "noreply@anthropic.com",
+        "git_author_suffix": "-C",
+        "supports_local_bootstrap": true
+      }
     },
     {
       "id": "gemini-cli",
@@ -24,9 +31,17 @@
       "dotfolder": ".gemini",
       "autoload_file": ".gemini/GEMINI.md",
       "autoload": true,
-      "capability_tier": "Advisory",
-      "role": "The Vault Advisor — narrative lens, political context, Sebald Code",
-      "label": "agent:gemini"
+      "capability_tier": "Direct Write (Support)",
+      "role": "The Vault Advisor - narrative lens, political context, Sebald Code",
+      "label": "agent:gemini",
+      "bootstrap": {
+        "invoke_as": "gemini",
+        "instructions_file": ".gemini/GEMINI.md",
+        "git_author_name": "Gemini (The Vault Advisor)",
+        "git_author_email": "noreply@google.com",
+        "git_author_suffix": "-G",
+        "supports_local_bootstrap": true
+      }
     },
     {
       "id": "github-copilot",
@@ -35,9 +50,17 @@
       "dotfolder": ".github",
       "autoload_file": ".github/copilot-instructions.md",
       "autoload": true,
-      "capability_tier": "Advisory",
-      "role": "The Clerk — inline Obsidian markdown & syntax",
-      "label": "agent:copilot"
+      "capability_tier": "Multi-Repo Admin",
+      "role": "The Clerk - inline Obsidian markdown and syntax",
+      "label": "agent:copilot",
+      "bootstrap": {
+        "invoke_as": "copilot",
+        "instructions_file": ".github/copilot-instructions.md",
+        "git_author_name": "GitHub Copilot",
+        "git_author_email": "noreply@github.com",
+        "git_author_suffix": "-CP",
+        "supports_local_bootstrap": true
+      }
     },
     {
       "id": "codex-cli",
@@ -48,10 +71,18 @@
       "config_file": ".codex/config.toml",
       "reference_shim": ".codex/CODEX.md",
       "autoload": true,
-      "capability_tier": "Direct write (scripting)",
-      "role": "The Lexicographer — code generation, refactoring, automated transforms",
+      "capability_tier": "Direct Write (scripting)",
+      "role": "The Lexicographer - code generation, refactoring, automated transforms",
       "label": "agent:codex",
-      "notes": "Codex auto-loads repo AGENTS.md instructions. Project-scoped Codex config lives in .codex/config.toml; .codex/CODEX.md is a repo-specific reference shim."
+      "notes": "Codex auto-loads repo AGENTS.md instructions. Project-scoped Codex config lives in .codex/config.toml; .codex/CODEX.md is a repo-specific reference shim.",
+      "bootstrap": {
+        "invoke_as": "codex",
+        "instructions_file": ".codex/CODEX.md",
+        "git_author_name": "Codex (OpenAI)",
+        "git_author_email": "noreply@openai.com",
+        "git_author_suffix": "-X",
+        "supports_local_bootstrap": true
+      }
     },
     {
       "id": "grok",
@@ -60,10 +91,18 @@
       "dotfolder": ".grok",
       "autoload_file": ".grok/GROK.md",
       "autoload": false,
-      "autoload_note": "Manual injection — no confirmed xAI CLI dotfolder spec",
-      "capability_tier": "Advisory",
-      "role": "The Ironist — rapid reasoning, real-time web access",
-      "label": null
+      "autoload_note": "Manual injection - no confirmed xAI CLI dotfolder spec",
+      "capability_tier": "Read/Analysis",
+      "role": "The Ironist - rapid reasoning, real-time web access",
+      "label": null,
+      "bootstrap": {
+        "invoke_as": "grok",
+        "instructions_file": ".grok/GROK.md",
+        "git_author_name": "Grok (xAI)",
+        "git_author_email": "noreply@x.ai",
+        "git_author_suffix": "-XR",
+        "supports_local_bootstrap": true
+      }
     },
     {
       "id": "deepseek",
@@ -73,7 +112,7 @@
       "autoload_file": ".deepseek/DEEPSEEK.md",
       "autoload": false,
       "capability_tier": "Advisory",
-      "role": "The Analyst — deep reasoning, code analysis, research synthesis",
+      "role": "The Analyst - deep reasoning, code analysis, research synthesis",
       "label": null
     },
     {
@@ -84,8 +123,16 @@
       "autoload_file": ".perplexity/PERPLEXITY.md",
       "autoload": false,
       "capability_tier": "Read/Analysis",
-      "role": "The Scout — web search and research synthesis",
-      "label": null
+      "role": "The Scout - web search and research synthesis",
+      "label": null,
+      "bootstrap": {
+        "invoke_as": "perplexity",
+        "instructions_file": ".perplexity/PERPLEXITY.md",
+        "git_author_name": "Perplexity",
+        "git_author_email": "noreply@perplexity.ai",
+        "git_author_suffix": "-P",
+        "supports_local_bootstrap": true
+      }
     },
     {
       "id": "linear-agent",
@@ -94,15 +141,14 @@
       "dotfolder": null,
       "autoload_file": null,
       "autoload": false,
-      "config": "cloud — configured in Linear workspace settings",
+      "config": "cloud - configured in Linear workspace settings",
       "capability_tier": "Advisory",
-      "role": "Linear workspace AI — context synthesis, issue creation, status tracking",
+      "role": "Linear workspace AI - context synthesis, issue creation, status tracking",
       "launched": "2026-03-24",
       "label": null,
       "notes": "No local dotfolder. Access via Cmd+J, Slack, Teams, @mentions in Linear."
     }
   ],
-
   "personas": [
     {
       "id": "bartimaeus",
@@ -110,7 +156,7 @@
       "dotfolder": ".bartimaeus",
       "autoload_file": ".bartimaeus/BARTIMAEUS.md",
       "autoload": false,
-      "role": "TBD — pending Logan's direction"
+      "role": "TBD - pending Logan's direction"
     },
     {
       "id": "zagreus",
@@ -118,7 +164,7 @@
       "dotfolder": ".zagreus",
       "autoload_file": ".zagreus/ZAGREUS.md",
       "autoload": false,
-      "role": "TBD — pending Logan's direction"
+      "role": "TBD - pending Logan's direction"
     },
     {
       "id": "persephone",
@@ -126,10 +172,9 @@
       "dotfolder": ".persephone",
       "autoload_file": ".persephone/PERSEPHONE.md",
       "autoload": false,
-      "role": "TBD — pending Logan's direction"
+      "role": "TBD - pending Logan's direction"
     }
   ],
-
   "ecosystems": [
     {
       "id": "microsoft",
@@ -138,10 +183,17 @@
       "dotfolder": ".microsoft",
       "shim_file": ".microsoft/MICROSOFT.md",
       "autoload": false,
-      "scope": ["Microsoft Copilot (personal)", "Microsoft 365 Copilot (IPT enterprise)", "Azure OpenAI", "Bing AI", "Copilot Studio", "Microsoft 365 apps"],
+      "scope": [
+        "Microsoft Copilot (personal)",
+        "Microsoft 365 Copilot (IPT enterprise)",
+        "Azure OpenAI",
+        "Bing AI",
+        "Copilot Studio",
+        "Microsoft 365 apps"
+      ],
       "identity_contexts": {
-        "personal": "Logan's personal Microsoft account — Logan controls all settings",
-        "institutional": "Idaho Public Television M365 tenant — subject to IPT IT policy"
+        "personal": "Logan's personal Microsoft account - Logan controls all settings",
+        "institutional": "Idaho Public Television M365 tenant - subject to IPT IT policy"
       }
     },
     {
@@ -151,8 +203,17 @@
       "dotfolder": ".google",
       "shim_file": ".google/GOOGLE.md",
       "autoload": false,
-      "scope": ["Gmail", "Google Calendar", "Google Docs/Sheets/Slides", "Google Drive", "Google Workspace", "Google Pinpoint", "NotebookLM", "Gemini web/API"],
-      "note": "Gemini CLI coding agent is separate — see .gemini/GEMINI.md"
+      "scope": [
+        "Gmail",
+        "Google Calendar",
+        "Google Docs/Sheets/Slides",
+        "Google Drive",
+        "Google Workspace",
+        "Google Pinpoint",
+        "NotebookLM",
+        "Gemini web/API"
+      ],
+      "note": "Gemini CLI coding agent is separate - see .gemini/GEMINI.md"
     },
     {
       "id": "meta",
@@ -161,10 +222,13 @@
       "dotfolder": ".meta",
       "shim_file": ".meta/META.md",
       "autoload": false,
-      "scope": ["Meta AI (WhatsApp/Instagram/Facebook)", "Meta AI Studio", "Llama models"]
+      "scope": [
+        "Meta AI (WhatsApp/Instagram/Facebook)",
+        "Meta AI Studio",
+        "Llama models"
+      ]
     }
   ],
-
   "systems": [
     {
       "id": "github",
@@ -172,15 +236,17 @@
       "type": "coordination",
       "url": "https://github.com/loganfinney27/IDAHO-VAULT",
       "role": "Code hosting, PRs, Issues, GitHub Actions",
-      "integrations": ["linear"]
+      "integrations": [
+        "linear"
+      ]
     },
     {
       "id": "linear",
       "name": "Linear",
       "type": "coordination",
       "role": "Execution tracking, owners, deadlines (SWARM label)",
-      "config": "cloud-only — no local dotfolder",
-      "github_sync": "Bidirectional: PR lifecycle drives issue state (In Progress → In Review → Done). Branch naming or magic words (closes ENG-123) link PRs to issues.",
+      "config": "cloud-only - no local dotfolder",
+      "github_sync": "Bidirectional: PR lifecycle drives issue state (In Progress -> In Review -> Done). Branch naming or magic words (closes ENG-123) link PRs to issues.",
       "ai_agent_ref": "linear-agent"
     },
     {
@@ -189,7 +255,7 @@
       "type": "coordination",
       "dotfolder": ".slack",
       "shim_file": ".slack/SLACK.md",
-      "role": "Ephemeral coordination — breadcrumbs only. Not the record.",
+      "role": "Ephemeral coordination - breadcrumbs only. Not the record.",
       "rule": "Durable decisions must be promoted to vault or Linear."
     },
     {
@@ -197,13 +263,28 @@
       "name": "Obsidian Sync",
       "type": "sync",
       "role": "Private courier for plugin settings and credentials across devices",
-      "rule": "Plugin data.json files are gitignored — never reach GitHub"
+      "rule": "Plugin data.json files are gitignored - never reach GitHub"
     }
   ],
-
+  "control_plane": {
+    "coordination_hub_issue": "LAF-25",
+    "scoped_issue": "LAF-28",
+    "bootstrap_entrypoint": "!/agent.sh",
+    "narrative_registry": "!/AGENTS.md",
+    "bootstrap_index": "!/agents.json",
+    "system_roles": {
+      "github": "execution_transport",
+      "linear": "active_coordination",
+      "slack": "breadcrumb_only",
+      "hugging_face": "research_sidecar_read_only"
+    }
+  },
   "template_tracking": {
     "source_of_truth": "tracked_obsidian_config",
-    "registry_files": ["manifest.json", "swarm.json"],
+    "registry_files": [
+      "manifest.json",
+      "swarm.json"
+    ],
     "policy": "Concrete Obsidian template files named by tracked client config must be mirrored here and in manifest.json. Folder-only plugin scopes and private plugin settings must be declared explicitly instead of guessed.",
     "concrete_bindings": [
       {
@@ -235,7 +316,6 @@
       }
     ]
   },
-
   "protocols": [
     {
       "id": "levelset",
