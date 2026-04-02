@@ -246,6 +246,7 @@ These scripts are not called by automated workflows but are available for manual
 | `tidy_daily_notes.py`    | One-off: normalizes daily note frontmatter structure         | `python3 .github/scripts/tidy_daily_notes.py [--dry-run]` |
 | `obsidian_rest_api_client.py` | REST API client for Obsidian Local REST API plugin    | Import/use in other scripts as needed |
 | `mcp_guardrails.py`      | MCP protocol guardrails (reserved for future MCP integration) | Import/use in MCP-enabled scripts   |
+| `phone_link_intake.py`   | Moves files from Phone Link downloads into vault INBOX | `python3 .github/scripts/phone_link_intake.py [--dry-run] [--copy] [--git-add]` |
 
 Scripts live in `.github/scripts/`. Workflows live in `.github/workflows/`. Scripts that commit to the repo use `git config user.name "github-actions[bot]"`. Dependencies are tracked in `.github/scripts/requirements-scraper.txt`.
 
