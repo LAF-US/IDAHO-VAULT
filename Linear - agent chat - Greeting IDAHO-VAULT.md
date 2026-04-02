@@ -1226,11 +1226,11 @@ So yes — Claude’s read and ChatGPT’s read are converging. The model is bec
 [TOUCHSTONE](<TOUCHSTONE>) [FRAMEWORKS](<FRAMEWORKS>)
 
 1. [THE CORE](<THE%20CORE>): [MIND](<MIND>)
-   2. [CONSTITUTION](<CONSTITUTION>)
+   2. [CONSTITUTION](<CONSTITUTION.md>)
    3. [CHARTER](<CHARTER>)
    4. [CODEX](<CODEX>)
 5. [THE PERIPHERY](<THE%20PERIPHERY>): [BODY](<BODY>)
-   6. [PROTOCOLS](<PROTOCOLS>)
+   6. [PROTOCOLS](<PROTOCOLS.md>)
    7. [PROCEDURES](<PROCEDURES>)
    8. [PREFERENCES](<PREFERENCES>)
 9. [THE GHOST](<THE%20GHOST>): [SOUL](<SOUL>)
@@ -1241,7 +1241,7 @@ So yes — Claude’s read and ChatGPT’s read are converging. The model is bec
    14. !/! - nested folders for agents to communicate internally with stable routing
       1. !/!/! - "The world is quiet here."
 
-[UNIFIED (US) SWARM](<UNIFIED%20(US)%20SWARM>) codes designed and operated using [Logan's Project & Protocols](<Logan's%20Project%20&%20Protocols>).
+[UNIFIED (US) SWARM](<UNIFIED (US) SWARM.md>) codes designed and operated using [Logan's Project & Protocols](<Logan's%20Project%20&%20Protocols>).
 
 \[1\] Hey, boss, we need to get these header/footer metadata and template formats figured out, pronto. I'm getting a headache tracking it all, and I don't even have a "real" body. -B
 

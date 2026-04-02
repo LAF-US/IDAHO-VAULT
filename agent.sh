@@ -21,16 +21,20 @@ BOOTSTRAP_INDEX="$VAULT_ROOT/!/agents.json"
 
 resolve_python() {
   if command -v python3 >/dev/null 2>&1; then
-    echo "python3"
-    return 0
+    if python3 -c 'import sys; exit(0) if sys.version_info[0]==3 else exit(1)' 2>/dev/null; then
+      echo "python3"
+      return 0
+    fi
   fi
 
   if command -v python >/dev/null 2>&1; then
-    echo "python"
-    return 0
+    if python -c 'import sys; exit(0) if sys.version_info[0]==3 else exit(1)' 2>/dev/null; then
+      echo "python"
+      return 0
+    fi
   fi
 
-  echo "[error] Python is required to read $BOOTSTRAP_INDEX." >&2
+  echo "[error] Python 3 is required to read $BOOTSTRAP_INDEX." >&2
   return 1
 }
 
@@ -117,14 +121,18 @@ resolve_repo_path() {
 
 load_agent_record() {
   local agent="$1"
+  local output
 
-  if ! eval "$(bootstrap_query env "$agent")"; then
+  output="$(bootstrap_query env "$agent")"
+  if [ $? -ne 0 ] || [ -z "$output" ]; then
     echo "[error] Unknown agent: $agent" >&2
     echo ""
     echo "Known agents:"
     print_known_agents
     return 1
   fi
+
+  eval "$output"
 
   export AGENT_NAME
   export AGENT_ID
@@ -230,15 +238,19 @@ validate_agent() {
 authenticate_1password() {
   if ! command -v op >/dev/null 2>&1; then
     echo "[warn] 1Password CLI not found. See .op/SETUP.md"
+    AUTH_STATUS="unauthenticated"
     return 1
   fi
 
   if [ -z "${OP_SERVICE_ACCOUNT_TOKEN:-}" ] && ! op whoami >/dev/null 2>&1; then
     echo "[warn] 1Password is not authenticated. Run: op signin"
+    AUTH_STATUS="unauthenticated"
     return 1
   fi
 
   echo "[ok] 1Password authenticated"
+  AUTH_STATUS="authenticated"
+  return 0
 }
 
 
@@ -312,7 +324,7 @@ emit_checkpoint() {
   "phase": "$phase",
   "vault_root": "$VAULT_ROOT",
   "git_author": "$(git config user.name)",
-  "auth_status": "authenticated"
+  "auth_status": "${AUTH_STATUS:-unauthenticated}"
 }
 EOF
 
@@ -371,6 +383,7 @@ main() {
   if ! authenticate_1password; then
     echo "[warn] Continuing without secrets."
   fi
+  export AUTH_STATUS
   echo ""
 
   echo "[ok] Agent identified: $AGENT_NAME"

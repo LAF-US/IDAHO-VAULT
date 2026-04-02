@@ -51,6 +51,9 @@ def build_bootstrap_index(swarm: dict) -> dict:
             continue
 
         invoke_as = bootstrap["invoke_as"]
+        if invoke_as in agents:
+            raise ValueError(f"Duplicate invoke_as '{invoke_as}': agent {agent['id']} conflicts with existing agent {agents[invoke_as]['id']}")
+
         agents[invoke_as] = {
             "id": agent["id"],
             "name": agent["name"],

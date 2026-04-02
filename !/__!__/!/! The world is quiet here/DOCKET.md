@@ -1,8 +1,29 @@
 ---
 tags:
   - administration/coordination
+  - 96
+  - 98
+  - 84
+  - 34
+  - 39
+  - 40
+  - 44
+  - 46
+  - 43
+  - 48
+  - 50
+  - 51
+  - 57
+  - 52
+  - 53
+  - 54
+  - 55
+  - 56
+  - general
 updated: 2026-03-30
 status: active
+date created: Monday, March 30th 2026, 7:54:37 pm
+date modified: Wednesday, April 1st 2026, 11:01:29 pm
 ---
 
 # THE DOCKET
@@ -13,7 +34,7 @@ This is the live coordination board. Any agent arriving at THE COURTROOM reads t
 
 **Delegation note (Logan, 2026-03-28):** Logan has delegated vault operations for this round. The Abhorsen (Claude Code) conducting: infrastructure commits, Gemini tier definition, Linear Phase 1 scoping, LEVELSET refresh, branch push and PR.
 
-**Sunday swarm dispatch (Logan, 2026-03-29):** All agents operate in Sunday swarm mode. Keep execution in scoped issue lanes. No merges to `main`. No overlapping branches. Post one checkpoint before parking any lane. Escalate only for true blocker, conflict, required human judgment, merge decision, or secret/config provisioning. ~~Hard blocker `LINEAR_API_KEY`~~ **provisioned 2026-03-29 by Logan.** Merge-risk item remains PR #96.
+**Sunday swarm dispatch (Logan, 2026-03-29):** All agents operate in Sunday swarm mode. Keep execution in scoped issue lanes. No merges to `main`. No overlapping branches. Post one checkpoint before parking any lane. Escalate only for true blocker, conflict, required human judgment, merge decision, or secret/config provisioning. ~~Hard blocker `LINEAR_API_KEY`~~ **provisioned 2026-03-29 by Logan.** Merge-risk item remains PR 96.
 
 **Breadcrumbs:** LEVELSET protocol for state changes (`!/LEVELSET.md`), agent registry (`!/AGENTS.md`), this docket for standing coordination, vault navigation (`!/VAULT-CONVENTIONS.md`).
 
@@ -58,7 +79,7 @@ This is the live coordination board. Any agent arriving at THE COURTROOM reads t
 | **Gemini Code Assist cowork enabled**                      | 2026-03-28 | `.gemini/GEMINI.md` tier fixed, cowork pattern documented; `.gemini/settings.json` context expanded to 6 files; AGENTS.md + entity note updated — `3563a66` |
 | **Stale `!ADMIN/` refs cleaned + root frontmatter spring-cleaned** | 2026-03-28 | DECISIONS.md, LEVELSET-STEP-0, THREAT-MODEL updated; 10 content docs tagged; `!/SWARM-LOOP.md` committed — `ba01c2e` |
 | **Triage + commit 10 untracked content docs**              | 2026-03-28 | AGENTIC SWARM SYSTEMS, AI-AUTOMATION, IDAHO-VAULT SYSTEM CONTEXT/WORKFLOW, JOURNALISM INDUSTRY, Kano Play, Notebook LM, Podcast, David Leroy — `07d2cb7` |
-| **PR #98 opened + updated**                               | 2026-03-28 | Covers all 3 session commits; flags PR #84 conflict and pending DECISIONS 18–21 |
+| **PR 98 opened + updated**                               | 2026-03-28 | Covers all 3 session commits; flags PR 84 conflict and pending DECISIONS 18–21 |
 | **`claude/agent-dotfolder-architecture` local branch deleted** | 2026-03-28 | Already merged to main; remote gone |
 | **LEVELSET-CURRENT refreshed**                            | 2026-03-28 | Activity log, UNRESOLVED, NEXT ACTIONS, DECISIONS count updated |
 | **Gemini capability tier defined**                         | 2026-03-28 | Tier 1 (Support): Direct Write, Operational zone only, Linear SWARM issues/comments — `!/AGENTS.md` updated |
@@ -67,21 +88,21 @@ This is the live coordination board. Any agent arriving at THE COURTROOM reads t
 | Codex archival levelset committed                          | 2026-03-28 | `!/LEVELSET-CODEX-ARCHIVAL-2026-03-28.md` — Codex session handoff and boundary truths      |
 | LAF-1 — Linear onboarding resources                       | 2026-03-25 | Intro video and setup guides captured in `!/LINEAR-ONBOARDING.md`                           |
 | LAF-3 — Connect your tools brief                          | 2026-03-25 | Brief filed at `!/BRIEF-LAF-3-2026-03-25.md`                                                |
-| PR #34 — Obsidian vault update (42 files)                 | 2026-03-23 | Merged via `copilot/deploy-dependabot-configurations`                                       |
-| PR #39 — Get scrapers running                             | 2026-03-24 | Merged; scraper now on main, running daily                                                  |
-| PR #40 — CodeRabbit GitHub integration                    | 2026-03-23 | Merged                                                                                      |
-| PR #44 — REST API credential sanitization                 | 2026-03-24 | Merged; machine credentials purged from repo                                                |
-| PR #46 — Workflow centralization + settings.json fix      | 2026-03-24 | Merged; composite action, zombie `!ADMINISTRATION/` paths fixed                             |
-| PR #43 — Codex credential sanitization                    | 2026-03-24 | Closed as superseded by PR #44                                                              |
+| PR 34 — Obsidian vault update (42 files)                 | 2026-03-23 | Merged via `copilot/deploy-dependabot-configurations`                                       |
+| PR 39 — Get scrapers running                             | 2026-03-24 | Merged; scraper now on main, running daily                                                  |
+| PR 40 — CodeRabbit GitHub integration                    | 2026-03-23 | Merged                                                                                      |
+| PR 44 — REST API credential sanitization                 | 2026-03-24 | Merged; machine credentials purged from repo                                                |
+| PR 46 — Workflow centralization + settings.json fix      | 2026-03-24 | Merged; composite action, zombie `!ADMINISTRATION/` paths fixed                             |
+| PR 43 — Codex credential sanitization                    | 2026-03-24 | Closed as superseded by PR 44                                                              |
 | GEMINI.md update                                          | 2026-03-24 | Direct commit by Logan                                                                      |
-| PR #48 — CONSTITUTION.md LEVELSET path fix                | 2026-03-23 | Merged; zombie `!ADMIN/LEVELSET-v3.2.6.1-PROMPT.md` → `!/LEVELSET-STEP-0-EXTERNAL-AGENT.md` |
-| PR #50 — CONSTITUTION.md AGENTS.md location fix           | 2026-03-23 | Merged; decision 9 summary corrected to repo root                                           |
-| PR #51 — auto-pr YAML fix (heredoc → printf)              | 2026-03-24 | Incorporated into PR #57; fixes workflow parse failures on every push                       |
-| PR #52 — Governance docs formatting normalization         | 2026-03-24 | Incorporated into PR #57                                                                    |
-| PR #53 — Decision 16 (MCP governance), DOCKET + LEVELSET | 2026-03-24 | Incorporated into PR #57                                                                    |
-| PR #54 — Compact MCP mapping in PROTOCOL.md              | 2026-03-24 | Incorporated into PR #57                                                                    |
-| PR #55 — MCP implementation plan (new file)               | 2026-03-24 | Incorporated into PR #57                                                                    |
-| PR #56 — MCP action logging template in VAULT-CONVENTIONS | 2026-03-24 | Incorporated into PR #57                                                                    |
+| PR 48 — CONSTITUTION.md LEVELSET path fix                | 2026-03-23 | Merged; zombie `!ADMIN/LEVELSET-v3.2.6.1-PROMPT.md` → `!/LEVELSET-STEP-0-EXTERNAL-AGENT.md` |
+| PR 50 — CONSTITUTION.md AGENTS.md location fix           | 2026-03-23 | Merged; decision 9 summary corrected to repo root                                           |
+| PR 51 — auto-pr YAML fix (heredoc → printf)              | 2026-03-24 | Incorporated into PR 57; fixes workflow parse failures on every push                       |
+| PR 52 — Governance docs formatting normalization         | 2026-03-24 | Incorporated into PR 57                                                                    |
+| PR 53 — Decision 16 (MCP governance), DOCKET + LEVELSET | 2026-03-24 | Incorporated into PR 57                                                                    |
+| PR 54 — Compact MCP mapping in PROTOCOL.md              | 2026-03-24 | Incorporated into PR 57                                                                    |
+| PR 55 — MCP implementation plan (new file)               | 2026-03-24 | Incorporated into PR 57                                                                    |
+| PR 56 — MCP action logging template in VAULT-CONVENTIONS | 2026-03-24 | Incorporated into PR 57                                                                    |
 | LAF-9 — Vault template + document class system            | 2026-03-25 | Drafted `VAULT-TEMPLATES.md`; linked from conventions + canonical README                   |
 
 ## BLOCKED / PENDING LOGAN
@@ -89,7 +110,7 @@ This is the live coordination board. Any agent arriving at THE COURTROOM reads t
 | Item                            | Blocker                                                                                                                                                                                                                                                                                                                                                                     | Who can unblock |
 | ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- |
 | **`LINEAR_API_KEY` secret**     | ~~**Hard blocker** — not provisioned in GitHub Actions.~~ **Resolved 2026-03-29:** provisioned by Logan. `Sync PR state to Linear` workflow is now live. Graceful-skip guard retained for key-rotation safety. | ~~**Logan only**~~ **Done** |
-| **PR #96 merge decision**       | Omnibus 11-PR consolidation; contains `linear-pr-sync.yml` + `pr-linear-sync.yml` overlap risk. Dual-workflow collision must be reviewed before merge. Currently open as draft. | Logan + Codex |
+| **PR 96 merge decision**       | Omnibus 11-PR consolidation; contains `linear-pr-sync.yml` + `pr-linear-sync.yml` overlap risk. Dual-workflow collision must be reviewed before merge. Currently open as draft. | Logan + Codex |
 | Gemini capability tier          | ~~Google Cloud `idaho-vault` project exists, APIs enabled, credentials not created — role decision required before any integration~~ **Resolved 2026-03-28:** Tier 1 (Support) defined in `!/AGENTS.md` — Direct Write, Operational zone only, Linear SWARM issues/comments. | ~~Logan~~ **Done** |
 | `.obsidian/workspace.json`      | Tracked in git; should be untracked + gitignored — separate hygiene PR                                                                                                                                                                                                                                                                                                     | Logan           |
 | Vault-embedded MCP architecture | **Resolved 2026-03-24:** Q1 MCP disallowed? **No**. Q2 Transport-only with native terms canonical? **Yes (adopted)**. Q3 MCP primary integration model? **No**. Q4 Governance authority source? **Vault-native governance files/terms remain canonical**. Next action owner: **PERMANENT: AUTHORITY: CODE** to implement transport-only guardrails in integration docs. Unblock date: **2026-03-24**. | Logan           |
@@ -121,7 +142,7 @@ This is the live coordination board. Any agent arriving at THE COURTROOM reads t
 | Automation scripts       | `.github/scripts/`                                          |
 | Automation workflows     | `.github/workflows/`                                        |
 | Task coordination        | Linear (SWARM label) + GitHub Issues (`agent:*` labels)     |
-| Breadcrumbs              | Slack #general                                              |
+| Breadcrumbs              | Slack general                                              |
 
 ## COORDINATION RULES
 
