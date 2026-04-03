@@ -22,10 +22,60 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 VAULT_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
 BOOTSTRAP_INDEX="$VAULT_ROOT/!/agents.json"
 
+DEBUG_LOG_PATH="$VAULT_ROOT/debug-35a82d.log"
+DEBUG_SESSION_ID="35a82d"
+DEBUG_RUN_ID="${DEBUG_SESSION_ID}-$(date +%s%3N 2>/dev/null || echo 0)"
+
+json_escape() {
+  local s="$1"
+  s="${s//\\/\\\\}"
+  s="${s//\"/\\\"}"
+  s="${s//$'\n'/\\n}"
+  s="${s//$'\r'/\\r}"
+  printf '%s' "$s"
+}
+
+debug_log() {
+  # Minimal NDJSON logger for DEBUG MODE (no secrets).
+  local runId="$1"
+  local hypothesisId="$2"
+  local location="$3"
+  local message="$4"
+  local data_json="$5"
+  local timestamp
+  local line
+  timestamp="$(date +%s%3N 2>/dev/null || echo $(( $(date +%s) * 1000 )))"
+
+  line="$(printf '{"sessionId":"%s","runId":"%s","hypothesisId":"%s","location":"%s","message":"%s","data":%s,"timestamp":%s}\n' \
+    "$DEBUG_SESSION_ID" \
+    "$runId" \
+    "$hypothesisId" \
+    "$location" \
+    "$(json_escape "$message")" \
+    "$data_json" \
+    "$timestamp")"
+
+  # Always emit to stderr so we have runtime evidence even if the log file
+  # can't be created (Windows path / permission issues, etc.).
+  echo "$line" >&2
+
+  # Also try to append to the log path (best-effort).
+  echo "$line" >>"$DEBUG_LOG_PATH" 2>/dev/null || true
+}
+
 
 resolve_python() {
+  #region debug log resolve_python entry
+  debug_log "$DEBUG_RUN_ID" "H1" "!/agent.sh:resolve_python" "checking python interpreters" \
+    "{\"python3_in_path\":$(command -v python3 >/dev/null 2>&1 && echo true || echo false),\"python_in_path\":$(command -v python >/dev/null 2>&1 && echo true || echo false)}"
+  #endregion
+
   if command -v python3 >/dev/null 2>&1; then
     if python3 -c 'import sys; exit(0) if sys.version_info[0]==3 else exit(1)' 2>/dev/null; then
+      #region debug log resolve_python selects python3
+      debug_log "$DEBUG_RUN_ID" "H1" "!/agent.sh:resolve_python" "selected python3" \
+        "{\"python_bin\":\"python3\"}"
+      #endregion
       echo "python3"
       return 0
     fi
@@ -33,22 +83,51 @@ resolve_python() {
 
   if command -v python >/dev/null 2>&1; then
     if python -c 'import sys; exit(0) if sys.version_info[0]==3 else exit(1)' 2>/dev/null; then
+      #region debug log resolve_python selects python
+      debug_log "$DEBUG_RUN_ID" "H1" "!/agent.sh:resolve_python" "selected python" \
+        "{\"python_bin\":\"python\"}"
+      #endregion
       echo "python"
       return 0
     fi
   fi
 
+  #region debug log resolve_python failure
+  debug_log "$DEBUG_RUN_ID" "H1" "!/agent.sh:resolve_python" "no python3/python3-capable interpreter found" \
+    "{\"bootstrap_index\":\"$(json_escape "$BOOTSTRAP_INDEX")\"}"
+  #endregion
   echo "[error] Python 3 is required to read $BOOTSTRAP_INDEX." >&2
   return 1
 }
 
 
-PYTHON_BIN="$(resolve_python)"
+PYTHON_BIN="$(resolve_python || true)"
+
+# If resolve_python failed, it returns non-zero and emits nothing to stdout,
+# leaving PYTHON_BIN empty. In that case, fail fast with a helpful message.
+if [ -z "${PYTHON_BIN:-}" ]; then
+  echo "[error] Failed to resolve a Python 3 interpreter; aborting bootstrap." >&2
+  if [[ "${BASH_SOURCE[0]}" != "${0}" ]]; then
+    return 1
+  else
+    exit 1
+  fi
+fi
+
+  #region debug log python_bin after resolve_python
+  debug_log "$DEBUG_RUN_ID" "H1" "!/agent.sh:PYTHON_BIN" "captured PYTHON_BIN value" \
+    "{\"PYTHON_BIN\":\"$(json_escape "${PYTHON_BIN:-}")\",\"is_empty\":$( [ -z "${PYTHON_BIN:-}" ] && echo true || echo false)}"
+  #endregion
 
 
 bootstrap_query() {
   local mode="$1"
   local agent="${2:-}"
+
+  #region debug log bootstrap_query python_bin emptiness
+  debug_log "$DEBUG_RUN_ID" "H3" "!/agent.sh:bootstrap_query" "before invoking bootstrap python" \
+    "{\"mode\":\"$(json_escape "$mode")\",\"agent\":\"$(json_escape "${agent:-}")\",\"PYTHON_BIN\":\"$(json_escape "${PYTHON_BIN:-}")\",\"PYTHON_BIN_empty\":$( [ -z "${PYTHON_BIN:-}" ] && echo true || echo false)}"
+  #endregion
 
   "$PYTHON_BIN" - "$BOOTSTRAP_INDEX" "$mode" "$agent" <<'PY'
 import json

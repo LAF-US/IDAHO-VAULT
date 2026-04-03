@@ -22,6 +22,12 @@ venv/
 .DS_Store
 Thumbs.db
 *.exe
+~$*.doc
+~$*.docx
+~$*.xls
+~$*.xlsx
+~$*.ppt
+~$*.pptx
 
 # Project-specific
 .env
