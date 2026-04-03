@@ -18,5 +18,8 @@ date modified: Monday, March 30th 2026, 10:33:24 am
 
 ## Active
 
+- [ ] IR [[Data Centers]] PKG
+	- [ ] Review -Thursday ready?
+- [ ] FIX DAILY NOTE SYNCING/CARRYFORWARD
 - [ ] [ Data Centers ]
 	- [ ] Review -Thursday ready?
