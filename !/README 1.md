@@ -1,25 +1,13 @@
 ---
 date created: Saturday, March 28th 2026, 4:25:31 pm
-date modified: Saturday, March 28th 2026, 6:02:13 pm
+date modified: Thursday, April 2nd 2026, 10:36:50 pm
+status: superseded
 ---
 
-# IDAHO-VAULT Swarm Loop (v0.1)
+# `README 1.md` compatibility note
 
-Minimal executable loop:
+This file is retained temporarily for link compatibility only.
+The canonical `!/` orientation file is now `!/README.md`.
 
-1. Trigger router with text input.
-2. Route to `ingest` action.
-3. Executor writes an output file into `INBOX/`.
-4. Executor updates `/manifest.json`.
-
-## Run
-
-```bash
-python swarm/app.py "process document"
-```
-
-## Test
-
-```bash
-python -m unittest swarm.tests.test_app
-```
+The historical swarm-loop note that used to live here has been superseded by the repaired control-plane stack.
+Use `swarm/` source files directly for execution details.
