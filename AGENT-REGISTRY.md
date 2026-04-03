@@ -1,99 +1,46 @@
 ---
-type: agent-registry
-version: 1.0
-date: 2026-03-15
+title: AGENT REGISTRY (LEGACY)
+updated: 2026-04-02
+status: archived
+authority: "[[LOGAN]]"
+source: historical/2026-03-15-sunset-pass
+tags:
+  - administration/agents
+  - administration/legacy
+  - administration/sunset
 ---
 
-# Agent Registry — IDAHO-VAULT
+# AGENT REGISTRY (LEGACY)
 
-Central registry of all Claude Code agents operating in the IDAHO-VAULT repository. This document tracks agent status, persistence, and sunset readiness.
+This file is preserved as a historical artifact from the 2026-03-15 sunset workflow.
+It documented an earlier Claude-centered lifecycle registry and is **not** the current source of truth for agent bootstrap or governance.
 
-**Last Updated:** 2026-03-15
+## Current Authority Chain
 
----
+- `AGENTS.md` at repo root - auto-loaded cross-tool pointer
+- `!/AGENTS.md` - canonical narrative registry
+- `swarm.json` - machine-readable source of truth
+- `!/agents.json` - generated bootstrap index
+- `!/agent.sh` - canonical local bootstrap entrypoint
 
-## Registry Table
+## Historical Snapshot
 
-| Agent Name | Tier | Type | Status | Persistence | Sunset Status | Flagged Date | Notes |
-|---|---|---|---|---|---|---|---|
-| **PERSISTENT: CODE AUTHORITY** | 1 | Persistent | Active | Permanent | KEEP_ACTIVE | — | Direct repo write access; core infrastructure |
-| **PERSISTENT: ADMINISTRATION** | 2 | Persistent | Active | Permanent | KEEP_ACTIVE | — | Constitutional layer; governance authority |
-| **PERSISTENT: IMPLEMENTATION** | 3 | Persistent | Active | Permanent | KEEP_ACTIVE | — | Governance/architecture layer |
-| **TASK: Sunset non-persistent agents** | 1 | Task | Active | Ephemeral | FLAGGED_FOR_SUNSET | 2026-03-15 | Agent management/lifecycle; closes upon completion |
-| **STORY: JFAC Open Meetings** | 1 | Story | Active | Ephemeral | FLAGGED_FOR_SUNSET | 2026-03-15 | Bulk vault work on specific topic; synthesis pending |
-| **TASK: LEVELSET reports** | 3 | Task | On Hold | Ephemeral | FLAGGED_FOR_SUNSET | 2026-03-15 | Synthesis/reporting across conversations; on hold status |
-| **Claude Code – Idaho Legislature Scraper** | 1 | Story | Terminating | Ephemeral | TERMINATED | 2026-03-14 | Completed scraper implementation; LEVELSET-v3.2.6 created |
+**Original last updated:** 2026-03-15
+**Original branch:** `claude/sunset-non-persistent-agents-4iLqH`
 
----
+This legacy registry tracked:
 
-## Sunset Status Definitions
+| Historical entry | Type | Historical status | Historical note |
+| --- | --- | --- | --- |
+| `PERSISTENT: CODE AUTHORITY` | Persistent | Active | Core infrastructure with repo write access |
+| `PERSISTENT: ADMINISTRATION` | Persistent | Active | Constitutional/governance layer |
+| `PERSISTENT: IMPLEMENTATION` | Persistent | Active | Governance and architecture work |
+| `TASK: Sunset non-persistent agents` | Task | Active | Lifecycle management lane |
+| `STORY: JFAC Open Meetings` | Story | Active | Topic-scoped reporting lane |
+| `TASK: LEVELSET reports` | Task | On Hold | Synthesis and reporting lane |
+| `Claude Code - Idaho Legislature Scraper` | Story | Terminating | Completed scraper implementation |
 
-- **KEEP_ACTIVE:** Persistent infrastructure agent; do not sunset or close
-- **FLAGGED_FOR_SUNSET:** Ephemeral agent awaiting synthesis and Logan's deletion order
-- **TERMINATED:** Agent has finished work; LEVELSET report completed; archived in git history
-- **DELETION_PENDING:** Awaiting Logan's explicit deletion order; artifacts preserved
-- **DELETED:** Artifacts removed per Logan's order; final LEVELSET-DELETE report committed
+## Why It Stays
 
----
-
-## Non-Persistent Agents Ready for Sunset
-
-### 1. TASK: Sunset non-persistent agents
-- **Branch:** `claude/sunset-non-persistent-agents-4iLqH`
-- **Role:** Agent management, identification, and sunset process design
-- **Artifacts:** Will create AGENT-REGISTRY, SUNSET-PROCESS, and synthesis documents
-- **Completion:** Upon completion, will create LEVELSET-SUNSET-sunset-agents.md
-- **Status:** FLAGGED_FOR_SUNSET → Awaiting Logan's deletion order after synthesis complete
-
-### 2. STORY: JFAC Open Meetings
-- **Role:** Story-scoped bulk vault work on JFAC topic
-- **Status:** Active
-- **Awaiting:** Synthesis document LEVELSET-SUNSET-jfac-open-meetings.md
-- **Status:** FLAGGED_FOR_SUNSET → Awaiting Logan's deletion order after synthesis complete
-
-### 3. TASK: LEVELSET reports
-- **Role:** Synthesis and reporting across conversations
-- **Status:** On hold
-- **Awaiting:** Final synthesis document LEVELSET-SUNSET-levelset-reports.md
-- **Status:** FLAGGED_FOR_SUNSET → Awaiting Logan's deletion order after synthesis complete
-
----
-
-## Sunset Workflow Status
-
-| Step | Status | Owner | Notes |
-|---|---|---|---|
-| 1. Agent Identification | ✅ Complete | Sunset Agent | All non-persistent agents identified |
-| 2. Registry Creation | ✅ Complete | Sunset Agent | This file created |
-| 3. Sunset Process Documentation | ⏳ In Progress | Sunset Agent | SUNSET-PROCESS.md being created |
-| 4. Agent Synthesis | ⏳ Pending | Various Agents | LEVELSET-SUNSET-*.md reports to be created |
-| 5. Logan Review & Approval | ⏳ Pending | Logan | Decision to approve sunset for each agent |
-| 6. Artifact Cleanup | ⏳ Pending | Upon Order | Branches, scripts, workflows preserved until explicit deletion order |
-| 7. Final LEVELSET-DELETE | ⏳ Pending | Upon Order | Final report for each deleted agent |
-
----
-
-## Key Assumptions
-
-1. **Persistent agents are NOT sunset** - PERSISTENT, PERMANENT, PUBLIC, ADMIN prefixed agents remain active indefinitely
-2. **Artifacts preserved until order** - All branches, scripts, and workflows remain in git history until Logan explicitly orders deletion
-3. **LEVELSET reports are permanent audit trail** - Sunset and deletion reports become immutable records
-4. **No inter-agent visibility** - Agents coordinate only through LEVELSET reports and collision-risk documentation
-
----
-
-## Next Actions
-
-1. ✅ Create AGENT-REGISTRY.md (this file)
-2. ⏳ Create SUNSET-PROCESS.md (formal sunset workflow)
-3. ⏳ Create LEVELSET-SUNSET-sunset-agents.md (this agent's final report)
-4. ⏳ Create LEVELSET-SUNSET-jfac-open-meetings.md (JFAC agent synthesis)
-5. ⏳ Create LEVELSET-SUNSET-levelset-reports.md (LEVELSET reports task synthesis)
-6. ⏳ Push all documentation to branch
-7. ⏳ Await Logan's review and approval
-8. ⏳ Execute deletion orders per Logan's authorization
-
----
-
-Last Updated: 2026-03-15 by Sunset non-persistent agents agent
-Branch: `claude/sunset-non-persistent-agents-4iLqH`
+The file remains in the vault because it records a real prior registry model and a real sunset workflow.
+It should be read as historical context, not as live bootstrap guidance.

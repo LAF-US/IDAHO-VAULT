@@ -44,6 +44,7 @@ The protocol still enforces the same three commitments:
 ## Bootstrap Data Model
 
 `!/agents.json` is derived from `swarm.json` and should not be edited by hand.
+Root `agents.json` is a byte-for-byte compatibility mirror and is also generated.
 
 Each bootstrap-capable agent record includes:
 
@@ -54,7 +55,7 @@ Each bootstrap-capable agent record includes:
 - required context bundle
 - optional context bundle
 
-The generated file exists for continuity with older `agents.json` references, but it is no longer an independent source of truth.
+The root mirror exists for continuity with older `agents.json` references, but it is not an independent source of truth.
 
 ---
 
@@ -119,6 +120,7 @@ The shell entrypoint now supports non-mutating inspection:
 ```bash
 source !/agent.sh --describe codex
 source !/agent.sh --validate codex
+source ./agent.sh --describe codex
 ```
 
 Use these modes to verify bootstrap facts without changing git config or writing a checkpoint.
@@ -163,7 +165,9 @@ source !/agent.sh --validate copilot
 ## Related Files
 
 - `!/agent.sh` - executable bootstrap entrypoint
+- `agent.sh` - root compatibility wrapper that delegates to `!/agent.sh`
 - `!/agents.json` - generated bootstrap index
+- `agents.json` - root compatibility mirror of `!/agents.json`
 - `swarm.json` - canonical machine-readable registry
 - `!/AGENTS.md` - canonical narrative registry
 - `!/README.md` - orientation anchor
