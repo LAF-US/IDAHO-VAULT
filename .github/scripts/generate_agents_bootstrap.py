@@ -76,12 +76,14 @@ def build_bootstrap_index(swarm: dict) -> dict:
     return {
         "source_of_truth": "swarm.json",
         "status": "generated",
-        "generated_note": "Derived bootstrap index for !/agent.sh. Do not hand-edit.",
+        "generated_note": "Derived bootstrap index for !/agent.sh and the root compatibility wrapper. Do not hand-edit.",
         "authority_chain": {
             "narrative_registry": control_plane["narrative_registry"],
             "machine_registry": "swarm.json",
             "bootstrap_index": control_plane["bootstrap_index"],
             "bootstrap_entrypoint": control_plane["bootstrap_entrypoint"],
+            "compatibility_mirror": "agents.json",
+            "compatibility_wrapper": "agent.sh",
         },
         "control_plane": {
             "coordination_hub_issue": control_plane["coordination_hub_issue"],
@@ -102,24 +104,40 @@ def main() -> int:
     parser.add_argument(
         "--output",
         default="!/agents.json",
-        help="Path to the generated bootstrap index.",
+        help="Path to the canonical generated bootstrap index.",
+    )
+    parser.add_argument(
+        "--compat-output",
+        default="agents.json",
+        help="Optional path to the root compatibility mirror.",
     )
     parser.add_argument(
         "--check",
         action="store_true",
-        help="Validate that the output file already matches the generated content.",
+        help="Validate that the canonical index and compatibility mirror match the generated content.",
     )
     args = parser.parse_args()
 
     source_path = Path(args.source)
-    output_path = Path(args.output)
     rendered = json.dumps(build_bootstrap_index(load_json(source_path)), indent=2) + "\n"
+    output_paths = [Path(args.output), Path(args.compat_output)]
+    deduped_outputs: list[Path] = []
+
+    for path in output_paths:
+        if path not in deduped_outputs:
+            deduped_outputs.append(path)
 
     if args.check:
-        current = output_path.read_text(encoding="utf-8") if output_path.exists() else ""
-        return 0 if current == rendered else 1
+        for output_path in deduped_outputs:
+            current = output_path.read_text(encoding="utf-8") if output_path.exists() else ""
+            if current != rendered:
+                return 1
+        return 0
 
-    output_path.write_text(rendered, encoding="utf-8")
+    # Keep the canonical !/ index and the legacy root mirror byte-for-byte aligned.
+    for output_path in deduped_outputs:
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+        output_path.write_text(rendered, encoding="utf-8")
     return 0
 
 
