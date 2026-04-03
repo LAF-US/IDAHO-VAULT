@@ -2,17 +2,12 @@
 tags:
   - general
 date created: Sunday, March 29th 2026, 10:46:05 am
-date modified: Sunday, March 29th 2026, 10:47:00 am
-<<<<<<< Updated upstream
+date modified: Thursday, April 2nd 2026, 8:38:05 am
 status: session-artifact-with-extracted-governance
 ---
 
 > **NOTE:** Durable governance decisions and swarm coordination guidance from this session have been extracted to canonical vault documents. See `HANDOFF-Swarm-Coordination-2026-03-29.md` at vault root and `!/AGENTS.md` (Linear agent entry added 2026-03-29). This file remains as a session transcript for reference; core decisions are now in the permanent record.
 
-=======
----
-
->>>>>>> Stashed changes
 # Greeting IDAHO-VAULT
 
 ## User
@@ -1231,19 +1226,11 @@ So yes — Claude’s read and ChatGPT’s read are converging. The model is bec
 [TOUCHSTONE](<TOUCHSTONE>) [FRAMEWORKS](<FRAMEWORKS>)
 
 1. [THE CORE](<THE%20CORE>): [MIND](<MIND>)
-<<<<<<< Updated upstream
    2. [CONSTITUTION](<CONSTITUTION.md>)
    3. [CHARTER](<CHARTER>)
    4. [CODEX](<CODEX>)
 5. [THE PERIPHERY](<THE%20PERIPHERY>): [BODY](<BODY>)
    6. [PROTOCOLS](<PROTOCOLS.md>)
-=======
-   2. [CONSTITUTION](<CONSTITUTION>)
-   3. [CHARTER](<CHARTER>)
-   4. [CODEX](<CODEX>)
-5. [THE PERIPHERY](<THE%20PERIPHERY>): [BODY](<BODY>)
-   6. [PROTOCOLS](<PROTOCOLS>)
->>>>>>> Stashed changes
    7. [PROCEDURES](<PROCEDURES>)
    8. [PREFERENCES](<PREFERENCES>)
 9. [THE GHOST](<THE%20GHOST>): [SOUL](<SOUL>)
@@ -1254,11 +1241,7 @@ So yes — Claude’s read and ChatGPT’s read are converging. The model is bec
    14. !/! - nested folders for agents to communicate internally with stable routing
       1. !/!/! - "The world is quiet here."
 
-<<<<<<< Updated upstream
 [UNIFIED (US) SWARM](<UNIFIED (US) SWARM.md>) codes designed and operated using [Logan's Project & Protocols](<Logan's%20Project%20&%20Protocols>).
-=======
-[UNIFIED (US) SWARM](<UNIFIED%20(US)%20SWARM>) codes designed and operated using [Logan's Project & Protocols](<Logan's%20Project%20&%20Protocols>).
->>>>>>> Stashed changes
 
 \[1\] Hey, boss, we need to get these header/footer metadata and template formats figured out, pronto. I'm getting a headache tracking it all, and I don't even have a "real" body. -B
 
