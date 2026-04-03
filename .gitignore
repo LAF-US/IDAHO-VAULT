@@ -22,10 +22,19 @@ venv/
 .DS_Store
 Thumbs.db
 *.exe
+~$*.doc
+~$*.docx
+~$*.xls
+~$*.xlsx
+~$*.ppt
+~$*.pptx
 
 # Project-specific
 .env
 *.vault.json
+.codex/tmp/
+tmp-minidata-msg/
+tmp-msg-extract/
 
 # Local machine secrets
 .obsidian/plugins/obsidian-local-rest-api/data.json
