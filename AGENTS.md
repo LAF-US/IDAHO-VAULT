@@ -10,7 +10,12 @@
 
 ## Canonical Registry
 
-See `!/AGENTS.md` for the full agent registry: capability tiers, boundary rules, and agent roster.
+Root `AGENTS.md` is the auto-loaded cross-tool entrypoint.
+See `!/AGENTS.md` for the canonical narrative registry: capability tiers, boundary rules, bootstrap rules, and agent roster.
+
+The machine-readable source of truth remains `swarm.json`.
+The canonical local bootstrap chain is `!/AGENTS.md` -> `swarm.json` -> `!/agents.json` -> `!/agent.sh`.
+Root `agent.sh` and root `agents.json` remain temporary compatibility surfaces.
 
 ---
 
@@ -79,4 +84,6 @@ See `swarm.json` at repo root for the structured machine-readable registry (agen
 
 ## Governance
 
-All agents are governed by `!/CONSTITUTION.md`. All agents share conventions in `!/VAULT-CONVENTIONS.md`. Logan is human; agents are software. Logan directs; agents execute.
+Root governance files remain authoritative: `CONSTITUTION.md`, `DECISIONS.md`, `LEVELSET.md`, and `VAULT-CONVENTIONS.md`.
+The matching `!/` files are stable routing shims for bootstrap and legacy references.
+Logan is human; agents are software. Logan directs; agents execute.
