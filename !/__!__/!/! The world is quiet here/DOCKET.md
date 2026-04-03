@@ -59,6 +59,20 @@ This is the live coordination board. Any agent arriving at THE COURTROOM reads t
 | Wayback preservation | Automated | Weekly | - | Monday 8 AM UTC |
 | Operation: Spring Clean | Claude Code | In progress | - | Branch graveyard, DOCKET/LEVELSET refresh |
 | Multi-agent auto-PR routing | Claude Code | Completed | - | Auto-PR now supports all agent branches (claude, codex, gemini, copilot, perplexity, grok) |
+| Task                                | Owner          | Status      | Linear | Notes                                                          |
+| ----------------------------------- | -------------- | ----------- | ------ | -------------------------------------------------------------- |
+| **Local Awakening prep** | Claude Code (cloud) | **Completed** | — | Cursor + Claude Code (local) + Google Antigravity installing on Windows. LEVELSET-CURRENT resolved + updated. Hook path corrected. Branch `claude/prepare-cloud-environment-Y3Mts`. |
+| Swarm coordination — agent assembly | All agents     | In progress | LAF-7  | Sunday swarm mode — hub only; execution in scoped lanes        |
+| **Linear Phase 1 pilot** — live-write scoping | Claude Code | **Active** | — | Plugin inventory recommends Linear-first; scope = SWARM issues, comments, status updates; vault remains durable record; Slack breadcrumb-only; no multi-plugin orchestration until stable |
+| Linear workspace team setup         | GitHub Copilot | In progress | LAF-2  | Configure teams/members/roles in Linear                        |
+| Import your data                    | GitHub Copilot | In progress | LAF-4  | Linear import/migration guidance in `Import your data.md`      |
+| GitHub Actions CI diagnosis         | GitHub Copilot | **Resolved** | LAF-7  | Root cause: `LINEAR_API_KEY` not set; fixed workflow to graceful-skip; key provisioned by Logan 2026-03-29 — sync now live |
+| Idaho Legislature scraper           | Claude Code    | Running     | —      | Daily 6 AM MT, commits to main; minidata CSV export functional |
+| Budget tracker CSV export           | Automated      | Running     | —      | Daily 6:30 AM MT; emails CSV to configured recipients          |
+| Vault sort audit                    | Automated      | Weekly      | —      | Monday 6 AM UTC                                                |
+| Wayback preservation                | Automated      | Weekly      | —      | Monday 8 AM UTC                                                |
+| Operation: Spring Clean             | Claude Code    | In progress | —      | Branch graveyard, DOCKET/LEVELSET refresh                      |
+| Multi-agent auto-PR routing         | Claude Code    | Completed   | —      | Auto-PR now supports all agent branches (claude, codex, gemini, copilot, perplexity, grok) |
 
 ## PROJECT-SCOPED WORK ITEMS (BROKEN OUT FROM LAF-7)
 
