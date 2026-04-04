@@ -63,7 +63,7 @@ See `!/VAULT-CONVENTIONS.md` for vault structure, naming, frontmatter, sourcing 
 
 ## Swarm Coordination
 
-Read THE DOCKET to orient: `!/!/!/! The world is quiet here/DOCKET.md`
+Read THE DOCKET to orient: `!/!/__!__/!/! The world is quiet here./DOCKET.md`
 
 That file is the live status board. Update it when you start or finish work. Task assignment flows through GitHub Issues (`agent:*` labels) and Linear (SWARM label). Slack carries breadcrumbs. The vault is the record.
 
