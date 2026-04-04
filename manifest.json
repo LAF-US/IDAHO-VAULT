@@ -1,6 +1,6 @@
 {
   "manifest_version": "1.0.0",
-  "generated_at": "2026-04-03T12:44:55.905106Z",
+  "generated_at": "2026-04-04T12:37:50.001237Z",
   "authority": {
     "canonical_system": "vault",
     "execution_system": "github",
@@ -46,15 +46,7 @@
         "note": "Tracked config exposes a template pool, not concrete template file bindings."
       }
     ],
-    "untracked_plugins": [
-      {
-        "client": "obsidian",
-        "plugin": "templater-obsidian",
-        "status": "installed_untracked_config",
-        "config_path": ".obsidian/plugins/templater-obsidian/data.json",
-        "note": "Plugin settings are intentionally private via Obsidian Sync and are not read into swarm tracking."
-      }
-    ]
+    "untracked_plugins": []
   },
   "locks": [
     {
@@ -95,6 +87,14 @@
       "agent_id": "github-actions[bot]",
       "created_at": "2026-04-03T12:44:55.841804Z",
       "expires_at": "2026-04-03T12:59:55.841804Z",
+      "state": "released"
+    },
+    {
+      "lock_id": "24905124-f5b5-47da-a528-1aa5a785b31a",
+      "file_path": "!/ingest-2026-04-04T123749Z.md",
+      "agent_id": "github-actions[bot]",
+      "created_at": "2026-04-04T12:37:49.934191Z",
+      "expires_at": "2026-04-04T12:52:49.934191Z",
       "state": "released"
     }
   ],
@@ -142,6 +142,15 @@
       "last_read_at": "2026-04-03T12:44:55.905106Z",
       "status": "active",
       "lock_id": "f27aa08c-9cad-4d16-bca0-b66d75ea90a6",
+      "version": 1
+    },
+    "!/ingest-2026-04-04T123749Z.md": {
+      "content_hash": "sha256:ae0ff7cae0cf5ef3ddd2ccf8c529e713373c90f9f6af9f63c8856f12e978f5ba",
+      "last_writer": "github-actions[bot]",
+      "last_write_at": "2026-04-04T12:37:50.001237Z",
+      "last_read_at": "2026-04-04T12:37:50.001237Z",
+      "status": "active",
+      "lock_id": "24905124-f5b5-47da-a528-1aa5a785b31a",
       "version": 1
     }
   }
