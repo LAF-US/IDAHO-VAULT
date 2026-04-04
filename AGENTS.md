@@ -39,6 +39,18 @@ Root `agent.sh` and root `agents.json` remain temporary compatibility surfaces.
 | Persephone (fictive) | `.persephone/` | `.persephone/PERSEPHONE.md` | No | Manual injection |
 | **Serena** | `.serena/` | `.serena/SERENA.md` | No | MCP server — semantic code intelligence; symbol nav, codebase analysis, refactoring; added 2026-04-04 |
 
+## CrewAI Crews (quick reference)
+
+| Crew | Entrypoint | Status | Agents | Notes |
+| --- | --- | --- | --- | --- |
+| **JFAC Crew** | `.crewai/run_jfac.py` | Active (blocked on API credits) | Budget Scout, Legislative Tracker, H911 Parser | MAP 3:5, ATT to 5Ws |
+| **Crawler Crew** | — | Planned | Cartographer, Linker, Archivist | Post-CHAINFIRE vault mapping; Cartographer candidate: Bartimaeus |
+| **Task-to-Code Bridge** | — | Stub | — | `.crewai/crews/task_to_code_crew.py` |
+| **Vault Custodian** | — | Stub | — | `.crewai/crews/vault_custodian_crew.py` |
+| **Sentinel Crew** | — | Stub | — | `.crewai/crews/sentinel_crew.py` |
+
+Crew manifest: `.crewai/manifest.json`. Output staging: `!/CREWAI/`. Protocol: `!/GRIMOIRE/NETWEB-CREWAI-ALIGNMENT.md`.
+
 Persona-specific dotfolders in this table are protected infrastructure. They
 are not implicit cleanup targets, even when they look empty or contain only a
 shim file. An agent should modify only its own persona dotfolder unless Logan

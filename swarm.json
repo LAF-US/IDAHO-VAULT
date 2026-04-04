@@ -332,6 +332,54 @@
       }
     ]
   },
+  "crews": {
+    "// note": "CrewAI crew registry — detail lives in .crewai/manifest.json",
+    "manifest": ".crewai/manifest.json",
+    "crewai_version": "1.12.2",
+    "output_dir": "!/CREWAI/",
+    "principle": "LINUX }!{ — all execution targets Linux-native",
+    "roster": [
+      {
+        "id": "jfac-crew",
+        "name": "JFAC Crew",
+        "status": "active",
+        "entrypoint": ".crewai/run_jfac.py",
+        "agents": 3,
+        "tasks": 5,
+        "blocker": "Anthropic API credits — console.anthropic.com"
+      },
+      {
+        "id": "crawler-crew",
+        "name": "Crawler Crew",
+        "status": "planned",
+        "entrypoint": null,
+        "agents": 3,
+        "tasks": 0,
+        "blocker": null
+      },
+      {
+        "id": "task-to-code-crew",
+        "name": "Task-to-Code Bridge",
+        "status": "stub",
+        "entrypoint": null,
+        "definition": ".crewai/crews/task_to_code_crew.py"
+      },
+      {
+        "id": "vault-custodian-crew",
+        "name": "Vault Custodian",
+        "status": "stub",
+        "entrypoint": null,
+        "definition": ".crewai/crews/vault_custodian_crew.py"
+      },
+      {
+        "id": "sentinel-crew",
+        "name": "Sentinel Crew",
+        "status": "stub",
+        "entrypoint": null,
+        "definition": ".crewai/crews/sentinel_crew.py"
+      }
+    ]
+  },
   "protocols": [
     {
       "id": "levelset",
