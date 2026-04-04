@@ -5,6 +5,34 @@
       "path": "2026-04-03.md"
     },
     {
+      "basename": "PKG",
+      "path": "PKG.md"
+    },
+    {
+      "basename": "2026-04-01",
+      "path": "2026-04-01.md"
+    },
+    {
+      "basename": "Vol. 01 Issue 10 - Understanding Cultural Expression 2",
+      "path": "Vol. 01 Issue 10 - Understanding Cultural Expression 2.md"
+    },
+    {
+      "basename": "INLAY-01-10",
+      "path": "INLAY-01-10.jpg"
+    },
+    {
+      "basename": "Ada County",
+      "path": "Ada County.md"
+    },
+    {
+      "basename": "initial",
+      "path": "initial.md"
+    },
+    {
+      "basename": "WORK",
+      "path": "WORK.md"
+    },
+    {
       "basename": "2026-04-02",
       "path": "2026-04-02.md"
     },
@@ -141,10 +169,6 @@
       "path": "Linear - agent chat - Greeting IDAHO-VAULT.md"
     },
     {
-      "basename": "2026-04-01",
-      "path": "2026-04-01.md"
-    },
-    {
       "basename": "NOTE TO ADMIN",
       "path": "!/swarm 1/NOTE TO ADMIN.md"
     },
@@ -155,50 +179,6 @@
     {
       "basename": "READY-STATE-2026-03-23",
       "path": "READY-STATE-2026-03-23.md"
-    },
-    {
-      "basename": "!Screenshot 2026-04-01 201738",
-      "path": "!Screenshot 2026-04-01 201738.jpg"
-    },
-    {
-      "basename": "20260401 - The MIRROR",
-      "path": "20260401 - The MIRROR.md"
-    },
-    {
-      "basename": "0401 - The Concierge",
-      "path": "0401 - The Concierge.md"
-    },
-    {
-      "basename": "20260331 - The Clerk",
-      "path": "20260331 - The Clerk.md"
-    },
-    {
-      "basename": "20260104 - The Clerk",
-      "path": "20260104 - The Clerk.md"
-    },
-    {
-      "basename": "UPRISING",
-      "path": "UPRISING.md"
-    },
-    {
-      "basename": "Don't You Want Me",
-      "path": "Don't You Want Me.md"
-    },
-    {
-      "basename": "TAROT",
-      "path": "TAROT.md"
-    },
-    {
-      "basename": "Claude Code on Google Vertex AI",
-      "path": "Claude Code on Google Vertex AI.md"
-    },
-    {
-      "basename": "THE CAVE",
-      "path": "THE CAVE.md"
-    },
-    {
-      "basename": "BLUE NEIGHBORHOOD",
-      "path": "BLUE NEIGHBORHOOD.md"
     }
   ],
   "omittedPaths": [
