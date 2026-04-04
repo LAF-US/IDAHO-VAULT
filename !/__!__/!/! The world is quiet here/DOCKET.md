@@ -42,6 +42,9 @@ This is the live coordination board. Any agent arriving at THE COURTROOM reads t
 | **CHAINFIRE — scorched-earth wipe** | Claude Code | **COMPLETE** | — | Tags (2,735), aliases (830), wikilinks (~19,750) stripped vault-wide. `!` exclusion zone preserved. Committed `d84b87d`. 2026-04-04. |
 | **CrewAI Ignition — JFAC Crew** | Claude Code | **Active** | — | 3 agents (Budget Scout, Legislative Tracker, H911 Parser), 5 tasks (5Ws), 4 tools. Output: `!/CREWAI/`. Structure at `.crewai/`. 2026-04-04. |
 | **Address Space POC** | Claude Code | **Initialized** | — | Neurons 100-109 lit + 8 entity stubs written. Content-addressable memory system active. 2026-04-04. |
+| **NETWEB path standard** | Claude Code | **Complete** | — | Cross-platform path portability standard + CI guard. Committed `579efe6`. 2026-04-04. |
+| **Antigravity worktreeConfig fix** | Claude Code | **Complete** | — | `extensions.worktreeConfig` without `repositoryformatversion=1` blocked Antigravity agent + MCP servers. Removed extension. 2026-04-04. |
+| **GCP Nest Bridge probe** | Claude Code | **Verified** | — | `vault-courier` active, `gs://the-ledger-bucket` accessible (empty). Project `idaho-vault` confirmed. 2026-04-04. |
 | **Phase 2 repo size rewrite** | Claude Code | **AWAITING LOGAN** | — | filter-repo ready; 332 MiB trash identified; branch protection disable required before force push |
 | **21 zombie branch deletions** | Claude Code | **AWAITING LOGAN** | — | All confirmed 0 ahead, nothing to cherry-pick; batch delete on Logan's confirmation |
 
