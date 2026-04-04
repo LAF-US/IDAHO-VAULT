@@ -43,6 +43,7 @@ jobs:
           ARGS=()
           DATE="${{ github.event.inputs.date }}"
           DRY="${{ github.event.inputs.dry_run }}"
+          [ -z "$DATE" ] && DATE="$(TZ=America/Boise date +%Y-%m-%d)"
           [ -n "$DATE" ] && ARGS+=("--date" "$DATE")
           [ "$DRY" = "true" ] && ARGS+=("--dry-run")
           python3 .github/scripts/daily_rollover.py "${ARGS[@]}"
@@ -51,7 +52,7 @@ jobs:
         id: changes
         run: |
           TARGET_DATE="${{ github.event.inputs.date }}"
-          [ -z "$TARGET_DATE" ] && TARGET_DATE="$(date -u +%Y-%m-%d)"
+          [ -z "$TARGET_DATE" ] && TARGET_DATE="$(TZ=America/Boise date +%Y-%m-%d)"
           echo "target_date=${TARGET_DATE}" >> "$GITHUB_OUTPUT"
 
           git add "${TARGET_DATE}.md" "TO DO LIST.md" 2>/dev/null || true
