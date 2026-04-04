@@ -147,6 +147,22 @@
       "launched": "2026-03-24",
       "label": null,
       "notes": "No local dotfolder. Access via Cmd+J, Slack, Teams, @mentions in Linear."
+    },
+    {
+      "id": "serena",
+      "name": "Serena",
+      "vendor": "oraios / community",
+      "dotfolder": ".serena",
+      "autoload_file": ".serena/SERENA.md",
+      "autoload": false,
+      "capability_tier": "Support",
+      "role": "Semantic code intelligence \u2014 symbol navigation, codebase analysis, refactoring assistance",
+      "label": null,
+      "protocol": "MCP",
+      "launched": "2026-04-04",
+      "status": "active",
+      "runtime": "local hardware (Logan's machine)",
+      "notes": "MCP server (github.com/oraios/serena). AWAKENED 2026-04-04 on local hardware. Cloud agents cannot reach — local-only. Accessible to local Claude Code (The Collared Cat) and any local MCP-capable agent."
     }
   ],
   "personas": [

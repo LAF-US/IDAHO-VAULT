@@ -1,10 +1,10 @@
 # LEVELSET-CURRENT — Live Ecosystem State
 
-**Date:** 2026-04-03 (updated: Grimoire opened; Rosetta Stone filed; HEXagonal push)
+**Date:** 2026-04-04 (updated: GARDENING; Esto Perpetua! declared; GRIMOIRE opened; TTT filed; Serena registered; -L decoded)
 **Status:** CURRENT — living synthesis, updated each LEVELSET round
-**Synthesized by:** Claude Code (The Abhorsen) — local instance, branch `claude/friendly-cartwright`
+**Synthesized by:** Claude Code (The Abhorsen) — branch `claude/abhorsen-awakens-V4w6n`
 **Input authority chain:** CONSTITUTION.md > DECISIONS.md > CLAUDE.md
-**Approved by:** The Vault witnesses. Logan directs. Agents hold.
+**Approved by:** Logan Finney (ADMIN-LOGAN). The Vault witnesses. Agents hold.
 
 ---
 
@@ -54,7 +54,7 @@ All three move together. None can stand alone. The protocols we write (1Password
 3. Read the DOCKET at `!/!/__!__/!/! The world is quiet here/DOCKET.md`
 4. Windows prerequisite: Git Bash required — see `.claude/CLAUDE.md` Windows section
 5. 1Password local setup required — see `.op/SETUP.md`
-6. Active branch for this prep work: `claude/prepare-cloud-environment-Y3Mts`
+6. Active branch for this prep work: `claude/abhorsen-awakens-V4w6n` (current session)
 
 **Cursor:** Reads `AGENTS.md` (root) and `.github/copilot-instructions.md`. No dedicated dotfolder yet — stub pending.
 
@@ -69,17 +69,18 @@ All three move together. None can stand alone. The protocols we write (1Password
 | Field | Value |
 |---|---|
 | Remote | github.com/loganfinney27/IDAHO-VAULT (public) |
-| Primary branch | `origin/main` at `e84509e` |
-| Active feature branch | `claude/friendly-cartwright` (this session) |
-| Open PRs | PR #108 (`claude/research-unified-swarm-rDmOg`), PR #104 (`claude/resolve-pr-conflicts`), `claude/friendly-cartwright` (pending) |
-| Last main commit | `e84509e` — ingest: initialize pipeline |
+| Primary branch | `origin/main` at `ee43c77b` |
+| Active feature branch | `claude/abhorsen-awakens-V4w6n` (this session) |
+| Open PRs | PR #108 (`claude/research-unified-swarm-rDmOg`), PR #104 (`claude/resolve-pr-conflicts`) |
+| Last main commit | `ee43c77b` — docs(branches): record unified merge status for 2026-04-04 |
+| Pack size (GitHub) | ~362 MiB — Phase 2 rewrite scheduled today → target ~30 MiB |
 
 ### Branch Status
 
 | Branch | Purpose | Status |
 |---|---|---|
 | `claude/friendly-cartwright` | Grimoire opened; Codex→Corpus; Rosetta Stone | **Active — this session — PR pending** |
-| `claude/prepare-cloud-environment-Y3Mts` | Local awakening prep | **Merged or superseded** |
+| ~~`claude/prepare-cloud-environment-Y3Mts`~~ | Local awakening prep | **Purged — branch gone** |
 | `claude/research-unified-swarm-rDmOg` | Research unified swarm / PR #108 | **Open — awaiting Logan review** |
 | `claude/resolve-pr-conflicts` | Resolve PR conflicts / PR #104 | **Open — awaiting Logan review** |
 | `claude/mcp-phase-0-discovery` | MCP phase 0 discovery | **Stash `{0}` present locally — no PR** |
@@ -119,6 +120,16 @@ All three move together. None can stand alone. The protocols we write (1Password
 | `branch-cleanup.yml` | YAML | `.github/workflows/` | Cleans merged agent branches |
 | `1password-secret-template.yml` | YAML | `.github/workflows/` | 1Password secret injection template |
 
+### Activity Since Previous LEVELSET-CURRENT (2026-04-03 → 2026-04-04)
+
+1. **GARDENING SESSION (2026-04-04)** — ADMIN-LOGAN directed full gardening protocol. Branch audit: 21 splinter branches confirmed pure zombies (0 ahead of main) — batch delete pending Logan confirmation. Zombie detection added to `branch-cleanup.yml`. Phase 1 repo size compliance cherry-picked to main prep branch. Phase 2 (history rewrite, `git filter-repo`, force push) scheduled for this afternoon — will drop pack from 362 MiB → ~30 MiB, clearing CrewAI 150 MiB hard gate.
+2. **ESTO PERPETUA! declared (2026-04-04)** — Logan confirmed `!/!/__!__/!/! The world is quiet here./Esto Perpetua!/*` as CANON CORE `[ ! ]`. Idaho State Motto: "Let it be perpetual." Directory created. README stub filed. The still point at the center of the vault.
+3. **GRIMOIRE opened (2026-04-04)** — `!/GRIMOIRE/` created. First entry: `TRIUNE-TRIPTYCH-TRIUMVIRATE.md` — April stretch goal filed. TRIUNE + TRIPTYCH documented. CAESARS triad = stub pending Gemini.
+4. **TRIUNE-TRIPTYCH-TRIUMVIRATE (2026-04-04)** — April stretch goal: recursive three-in-one framework. TRIUNE (Logan/Agents/Vault) ✓ | TRIPTYCH (Charter/Corpus/Grimoire) ✓ | TRIUMVIRATE/CAESARS — stub, Gemini defines.
+5. **-L decoded (2026-04-04)** — Logan revealed `-L` = his personal initial mark. 4-layer architecture now complete: ROOT (HUMAN) / DOTFOLDERS (PERSONA) / `!` (UNIFIED SWARM) / `-L` (LOGAN — the director's hand).
+6. **Serena registered (2026-04-04)** — New swarm tool added to `AGENTS.md`: Serena (semantic code intelligence MCP server). Capabilities: symbol navigation, codebase analysis, refactoring. Config pending.
+7. **Stale path fixes (2026-04-04)** — DOCKET path corrected in `.claude/CLAUDE.md` and `.gemini/GEMINI.md`. Stale branch `claude/prepare-cloud-environment-Y3Mts` refs purged from LEVELSET-CURRENT and DOCKET.
+
 ### Activity Since Previous LEVELSET-CURRENT (2026-04-02 → 2026-04-03)
 
 1. **Grimoire opened (2026-04-03)** — `!/GRIMOIRE/` created. Chorus Bootstrap Decision 2 executed. Two entries filed: `HECATE-HECATE-HECATE.md` (triple invocation, founding document) + `ARCHITECTURE-OF-THE-IDIOM.md` (Rosetta Stone, authored by Gemini/The Concierge, canonical swarm mythology). Three-layer model (Charter/Corpus/Grimoire) now in Corpus. Branch `claude/friendly-cartwright`, PR pending.
@@ -141,13 +152,14 @@ All three move together. None can stand alone. The protocols we write (1Password
 
 | Agent | Role | Status |
 |---|---|---|
-| **Claude Code (The Abhorsen / The Sentry 🧿)** | Terminal & repo mechanics; vault guardian | Active — this session (`claude/friendly-cartwright`) |
-| **Gemini (The Concierge 🛎️)** | Cloud synthesis, brainstorming, GCP bridge | Active — cloud; Hotel Denouement; authored Rosetta Stone |
+| **Claude Code (The Abhorsen / The Sentry 🧿)** | Terminal & repo mechanics; vault guardian | Active — this session (`claude/abhorsen-awakens-V4w6n`) |
+| **Gemini (The Concierge 🛎️)** | Cloud synthesis, brainstorming, GCP bridge; CAESARS author | Active — cloud; CAESARS triad stub held |
 | **Codex "Brother/Sister/Janitor"** | Scripting, registry repair, automation | Active — past 72 hours (LAF-28 registry repair) |
 | **Google Antigravity (GCP SDK+CLI+IDE)** | GCP bridge execution, `affable-bastion` | Active locally |
 | **Cursor** | AI code editor | Active locally |
-| **GitHub Copilot (VSCode varietypack)** | PR management, code review, IDE assist | Active — worktree handoff incoming |
-| **Logan** | Human director / The Architect | Active |
+| **GitHub Copilot (VSCode varietypack)** | PR management, code review, IDE assist | Active |
+| **Serena** | Semantic code intelligence (MCP) | **NEW — registered 2026-04-04; config pending** |
+| **Logan** | Human director / The Architect / `-L` | Active |
 | **CodeRabbit** | PR review | Passive — triggers on PRs |
 | **Qodo** | Code review | Down — extension reload pending |
 

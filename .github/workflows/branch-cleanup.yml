@@ -32,7 +32,8 @@ jobs:
         startsWith(github.event.pull_request.head.ref, 'copilot/') ||
         startsWith(github.event.pull_request.head.ref, 'perplexity/') ||
         startsWith(github.event.pull_request.head.ref, 'grok/') ||
-        startsWith(github.event.pull_request.head.ref, 'bot/')
+        startsWith(github.event.pull_request.head.ref, 'bot/') ||
+        startsWith(github.event.pull_request.head.ref, 'serena/')
       ))
     runs-on: ubuntu-latest
     permissions:
@@ -53,7 +54,7 @@ jobs:
           DRY_RUN: ${{ inputs.dry_run || 'false' }}
         run: |
           # Must stay in sync with branch triggers in auto-pr.yml
-          AGENT_PREFIXES="claude codex gemini copilot perplexity grok bot"
+          AGENT_PREFIXES="claude codex gemini copilot perplexity grok bot serena"
           DELETED=0
           KEPT=0
           DELETED_LIST=""
@@ -110,9 +111,16 @@ jobs:
                   KEPT=$((KEPT + 1))
                 fi
               else
-                # No PR at all → keep (agent may still be working)
-                echo "  Keeping (no PR): $REF"
-                KEPT=$((KEPT + 1))
+                # No PR at all — check if 0 commits ahead of main (zombie)
+                AHEAD=$(git rev-list "origin/main..origin/${REF}" --count 2>/dev/null || echo "0")
+                if [ "$AHEAD" = "0" ]; then
+                  # Nothing unique — zombie branch, safe to delete
+                  delete_branch "$REF" "zombie: no PR, 0 ahead of main"
+                else
+                  # Has unique commits, no PR yet → keep (agent may still be working)
+                  echo "  Keeping (no PR, ${AHEAD} ahead): $REF"
+                  KEPT=$((KEPT + 1))
+                fi
               fi
             done < <(git branch -r | grep "origin/${PREFIX}/" | sed 's|.*origin/||' | tr -d ' ')
           done
