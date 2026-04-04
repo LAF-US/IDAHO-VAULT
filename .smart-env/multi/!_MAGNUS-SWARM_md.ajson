@@ -1,2 +1,0 @@
-
-"smart_sources:!/MAGNUS-SWARM.md": {"path":"!/MAGNUS-SWARM.md","last_embed":{"hash":null},"embeddings":{},"last_read":{"hash":"q8uprs","at":1774825062752},"class_name":"SmartSource","last_import":{"mtime":1774768026025,"size":77,"at":1774825062833,"hash":"q8uprs"},"blocks":{"#---frontmatter---":[1,4],"#":[5,5]},"outlinks":[{"title":"BROADCAST","target":"BROADCAST","line":5},{"title":"MAGNUS","target":"MAGNUS","line":5},{"title":"SWARM","target":"SWARM","line":5}],"metadata":{"tags":["#administration/routing"]},"task_lines":[],"tasks":{},"codeblock_ranges":[]},
