@@ -1,4 +1,7 @@
 {
   "accentColor": "#18448c",
-  "theme": "obsidian"
+  "theme": "obsidian",
+  "enabledCssSnippets": [
+    "roygbiv-smtwtfs"
+  ]
 }
