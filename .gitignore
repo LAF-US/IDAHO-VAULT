@@ -29,6 +29,38 @@ Thumbs.db
 ~$*.ppt
 ~$*.pptx
 
+# Media / binary files (prevent repo bloat — vault content is markdown, not media)
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.webp
+*.svg
+*.heic
+*.mp4
+*.mp3
+*.m4a
+*.wav
+*.flac
+*.mov
+*.avi
+*.pdf
+*.docx
+*.xlsx
+*.pptx
+*.zip
+*.tar
+*.tar.gz
+*.gz
+*.bin
+*.db
+*.sqlite
+*.geojson
+*.kml
+*.kmz
+*.shp
+*.gpx
+
 # Project-specific
 .env
 *.vault.json
