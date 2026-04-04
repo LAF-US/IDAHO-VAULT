@@ -138,7 +138,7 @@ jobs:
             echo ""
             echo "| | Count |"
             echo "|---|---|"
-            echo "| Mode | $([ "$DRY_RUN" = "true" ] && echo "\U0001F50D Dry run" || echo "\U0001F5D1\uFE0F Live") |"
+            echo "| Mode | $([ "$DRY_RUN" = "true" ] && echo "🔍 Dry run" || echo "🗑️ Live") |"
             echo "| Deleted | $DELETED |"
             echo "| Kept | $KEPT |"
             if [ -n "$DELETED_LIST" ]; then
