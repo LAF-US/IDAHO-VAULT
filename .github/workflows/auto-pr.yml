@@ -10,6 +10,7 @@ on:
       - 'perplexity/**'
       - 'grok/**'
       - 'serena/**'
+      - 'bot/**'
 
 jobs:
   auto-pr:

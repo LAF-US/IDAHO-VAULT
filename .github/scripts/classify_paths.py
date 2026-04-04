@@ -8,7 +8,11 @@ Unknown paths default to high-risk (fail-safe).
 """
 
 import json
+import re
 import sys
+
+# Daily note pattern: YYYY-MM-DD.md at repo root
+_DAILY_NOTE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}\.md$")
 
 HIGH_RISK_PREFIXES = (
     "!/",
@@ -22,6 +26,10 @@ HIGH_RISK_EXACT = {
     ".github/copilot-instructions.md",
     # Note: governance files under !/ are covered by HIGH_RISK_PREFIXES ("!/")
     # Old !ADMIN/ and !ADMINISTRATION/ paths removed — those folders no longer exist
+}
+
+LOW_RISK_EXACT = {
+    "TO DO LIST.md",
 }
 
 LOW_RISK_PREFIXES = (
@@ -44,6 +52,10 @@ def classify(path: str) -> str:
     for prefix in HIGH_RISK_PREFIXES:
         if path.startswith(prefix):
             return "high"
+    if path in LOW_RISK_EXACT:
+        return "low"
+    if _DAILY_NOTE_RE.match(path):
+        return "low"
     for prefix in LOW_RISK_PREFIXES:
         if path.startswith(prefix):
             return "low"
