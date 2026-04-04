@@ -39,6 +39,7 @@ TODO_LIST_FILE = VAULT_ROOT / "TO DO LIST.md"
 TASK_RE = re.compile(r'^([ \t]*)- \[( |x|X)\] (.+)$')
 TODO_MARKER = "[[TO DO LIST]]"
 PLACEHOLDER_LINE = "*(no incomplete items carried forward)*"
+FRONTMATTER_RE = re.compile(r'\A---\r?\n(?P<frontmatter>.*?)\r?\n---\r?\n?', re.DOTALL)
 
 
 # ---------------------------------------------------------------------------
@@ -316,6 +317,60 @@ def patch_nav_links(content: str, target_date: date) -> str:
     return content
 
 
+def ensure_daily_frontmatter(content: str, target_date: date) -> str:
+        """
+        Ensure a daily note has canonical frontmatter.
+
+        Behavior:
+            - If frontmatter is missing, prepend canonical daily frontmatter.
+            - If frontmatter exists but misses required keys, replace frontmatter
+                with canonical daily frontmatter and preserve body.
+            - If frontmatter exists but date-bound fields do not match target_date,
+                replace frontmatter with canonical daily frontmatter and preserve body.
+            - If frontmatter exists and matches, preserve it as-is.
+        """
+        required_keys = [
+                "title:",
+                "aliases:",
+                "linter-yaml-title-alias:",
+                "yesterday:",
+                "tomorrow:",
+                "weekday:",
+                "tags:",
+                "date created:",
+                "date modified:",
+        ]
+
+        expected_title = f"title: {target_date}"
+        expected_alias = f"  - {target_date}"
+        expected_linter_alias = f"linter-yaml-title-alias: {target_date}"
+        expected_weekday = target_date.strftime("%A")
+        expected_tag_date = target_date.strftime("%Y/%m/%d")
+
+        match = FRONTMATTER_RE.match(content)
+        canonical = build_frontmatter(target_date)
+
+        if not match:
+                body = content.lstrip("\r\n")
+                return f"{canonical}\n\n{body}" if body else f"{canonical}\n"
+
+        frontmatter_block = match.group("frontmatter")
+        has_all_keys = all(key in frontmatter_block for key in required_keys)
+        matches_target_date = all([
+                expected_title in frontmatter_block,
+                expected_alias in frontmatter_block,
+                expected_linter_alias in frontmatter_block,
+                f"  - {expected_weekday}" in frontmatter_block,
+                f"  - {expected_tag_date}" in frontmatter_block,
+        ])
+
+        if has_all_keys and matches_target_date:
+                return content
+
+        body = content[match.end():].lstrip("\r\n")
+        return f"{canonical}\n\n{body}" if body else f"{canonical}\n"
+
+
 # ---------------------------------------------------------------------------
 # Write operations
 # ---------------------------------------------------------------------------
@@ -329,7 +384,9 @@ def update_today_note(
     block = todo_block_text(carried)
 
     if today_file.exists():
-        content = patch_nav_links(today_file.read_text(encoding="utf-8"), target_date)
+        content = today_file.read_text(encoding="utf-8")
+        content = ensure_daily_frontmatter(content, target_date)
+        content = patch_nav_links(content, target_date)
         lines = content.splitlines()
         if any(is_todo_marker(line) for line in lines):
             new_lines = []
