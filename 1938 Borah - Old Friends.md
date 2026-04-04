@@ -1,10 +1,6 @@
 ---
-<<<<<<< Updated upstream
 tags:
   - category/facet/photos
-=======
-tags: [Category/Facet/Photos]
->>>>>>> Stashed changes
 date: 1938-12-01
 title: 1938 Borah - Old Friends
 aliases: [1938 Borah - Old Friends]

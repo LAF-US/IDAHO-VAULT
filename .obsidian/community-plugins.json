@@ -22,5 +22,8 @@
   "handwritten-notes",
   "taskbone-ocr-plugin",
   "ai-image-analyzer",
-  "msg-handler"
+  "msg-handler",
+  "ai-templater",
+  "smart-connections-visualizer",
+  "templater-obsidian"
 ]

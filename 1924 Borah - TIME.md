@@ -1,10 +1,6 @@
 ---
-<<<<<<< Updated upstream
 tags:
   - category/facet/magazines
-=======
-tags: [Category/Facet/Magazines]
->>>>>>> Stashed changes
 date: 1924-05-05
 title: 1924 Borah - TIME
 aliases: [1924 Borah - TIME]

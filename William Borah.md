@@ -1,18 +1,16 @@
 ---
-<<<<<<< Updated upstream
-tags:
-  - category/statue
 aliases:
+  - William Borah
   - Senator Borah
   - William Edgar Borah
   - William E. Borah
   - Lion of Idaho
-=======
-tags: [Category/Statue]
-aliases: [William Borah, Senator Borah, William Edgar Borah, William E. Borah, Lion of Idaho, Sen. Borah, Borah of Idaho]
+  - Sen. Borah
+  - Borah of Idaho
 title: William Borah
 linter-yaml-title-alias: William Borah
->>>>>>> Stashed changes
+tags:
+  - category/statue
 ---
 
 Republican Idaho U.S. Senator
