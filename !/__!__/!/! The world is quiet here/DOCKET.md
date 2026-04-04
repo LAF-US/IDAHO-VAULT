@@ -47,6 +47,7 @@ This is the live coordination board. Any agent arriving at THE COURTROOM reads t
 | Task                                | Owner          | Status      | Linear | Notes                                                          |
 | ----------------------------------- | -------------- | ----------- | ------ | -------------------------------------------------------------- |
 | Swarm coordination — agent assembly | All agents     | In progress | LAF-7  | Sunday swarm mode — hub only; execution in scoped lanes        |
+| Dev server detection + Dispatch debug | Claude Code | **Complete** | — | Flask Nest Bridge running on :8080; launch.json created; Dispatch blocked by IT/outdated Desktop — unblocks when MacBook MagSafe charger arrives Wed 2026-04-09 |
 | **Linear Phase 1 pilot** — live-write scoping | Claude Code | **Active** | — | Plugin inventory recommends Linear-first; scope = SWARM issues, comments, status updates; vault remains durable record; Slack breadcrumb-only; no multi-plugin orchestration until stable |
 | Linear workspace team setup         | GitHub Copilot | In progress | LAF-2  | Configure teams/members/roles in Linear                        |
 | Import your data                    | GitHub Copilot | In progress | LAF-4  | Linear import/migration guidance in `Import your data.md`      |
