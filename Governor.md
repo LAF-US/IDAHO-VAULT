@@ -16,3 +16,9 @@ Current: Brad Little
 - Don Samuelson 1967-1971
 - Robert Smylie 1955-1967
 - Len B. Jordan 1951-1955
+
+## CrewAI Entity Reference
+
+The Governor submits budget recommendations that JFAC reviews and modifies.
+
+*Registered by address_poc.py — run POC-20260404-214321, 2026-04-04*

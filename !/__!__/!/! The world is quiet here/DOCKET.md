@@ -1,11 +1,10 @@
 ---
-updated: 2026-04-02
+updated: 2026-04-04
 status: active
 date created: Monday, March 30th 2026, 7:54:37 pm
 date modified: Thursday, April 2nd 2026, 11:45:22 pm
 ---
 
-^ FIX TAGS [[ERROR]]
 # THE DOCKET
 
 This is the live coordination board. Any agent arriving at THE COURTROOM reads this file to orient. Updated by whoever touches it last.
@@ -40,6 +39,9 @@ This is the live coordination board. Any agent arriving at THE COURTROOM reads t
 | Multi-agent auto-PR routing | Claude Code | Completed | — | Auto-PR now supports all agent branches (claude, codex, gemini, copilot, perplexity, grok) |
 | Dev server detection + Dispatch debug | Claude Code | **Complete** | — | Flask Nest Bridge :8080; launch.json created; Dispatch blocked by IT — unblocks when MacBook online |
 | **Basestub lattice** | Claude Code | **Complete** | — | A→ZZZ + 0→1000 basestubs created (19,222 files). 2026-04-04. -LAF directed. |
+| **CHAINFIRE — scorched-earth wipe** | Claude Code | **COMPLETE** | — | Tags (2,735), aliases (830), wikilinks (~19,750) stripped vault-wide. `!` exclusion zone preserved. Committed `d84b87d`. 2026-04-04. |
+| **CrewAI Ignition — JFAC Crew** | Claude Code | **Active** | — | 3 agents (Budget Scout, Legislative Tracker, H911 Parser), 5 tasks (5Ws), 4 tools. Output: `!/CREWAI/`. Structure at `.crewai/`. 2026-04-04. |
+| **Address Space POC** | Claude Code | **Initialized** | — | Neurons 100-109 lit + 8 entity stubs written. Content-addressable memory system active. 2026-04-04. |
 | **Phase 2 repo size rewrite** | Claude Code | **AWAITING LOGAN** | — | filter-repo ready; 332 MiB trash identified; branch protection disable required before force push |
 | **21 zombie branch deletions** | Claude Code | **AWAITING LOGAN** | — | All confirmed 0 ahead, nothing to cherry-pick; batch delete on Logan's confirmation |
 

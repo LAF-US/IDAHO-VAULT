@@ -24,3 +24,9 @@ linter-yaml-title-alias: Idaho
 > "**NAME AND BOUNDARIES OF STATE**." Idaho Constitution. *Art. XVII, Sec. 1.*
 
 ---
+
+## CrewAI Entity Reference
+
+The state. All appropriations flow through the Idaho state government.
+
+*Registered by address_poc.py — run POC-20260404-214321, 2026-04-04*
