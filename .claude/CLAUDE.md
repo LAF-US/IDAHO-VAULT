@@ -26,6 +26,8 @@ CLAUDE_CODE_GIT_BASH_PATH=C:\Program Files\Git\bin\bash.exe
 
 Point the variable at the actual installed `bash.exe` location on the machine if it differs.
 
+**NETWEB Path Standard:** All file creation must respect cross-platform path portability. See `VAULT-CONVENTIONS.md` § "Portable Path Standard (NETWEB)" for forbidden filenames, case-uniqueness rules, and the `_PREFIX` aliasing convention.
+
 ---
 
 ## 1Password Integration

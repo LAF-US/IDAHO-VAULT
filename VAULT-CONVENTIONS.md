@@ -830,3 +830,66 @@ Use this mapping to decide where work should live and what should remain ephemer
 
 
 If a decision must be recoverable in six months, store it in the vault. If it needs owner + due date + status, track it in Linear. If it is transient discussion, keep it in chat/Slack.
+
+
+
+---
+
+
+
+## Portable Path Standard (NETWEB)
+
+
+
+The vault must work identically on **any platform** — Windows (NTFS), macOS (APFS/HFS+), Linux (ext4), iOS/Android (Obsidian mobile), and CI runners (GitHub Actions). Both NTFS and APFS are **case-insensitive**; only Linux is case-sensitive. This standard targets the **lowest common denominator** of all target filesystems.
+
+
+
+### Forbidden filenames (any extension, any case)
+
+`AUX`, `CON`, `NUL`, `PRN`, `COM0`–`COM9`, `LPT0`–`LPT9`
+
+These are Windows reserved device names inherited from MS-DOS. They cannot exist as files on NTFS regardless of extension.
+
+
+
+### Aliasing convention
+
+When a stub or note would collide with a reserved name or a case-insensitive duplicate:
+
+1. Prefix the filename with `_` (e.g., `AUX.md` becomes `_AUX.md`)
+2. Add `aliases: [ORIGINAL]` to the YAML frontmatter so Obsidian wikilinks (`[[AUX]]`) still resolve
+
+This preserves the connectome while respecting filesystem constraints.
+
+
+
+### Case uniqueness
+
+Filenames within any single directory **must be case-unique**. `Act.md` and `ACT.md` cannot coexist — NTFS and APFS silently overwrite one on checkout. When creating stubs or notes, check for existing files that differ only in case.
+
+
+
+### Forbidden path patterns
+
+- Trailing period (`.`) or space (` `) in any directory or file name
+- Characters illegal on Windows: `< > : " | ? *`
+- Colons (`:`) in filenames (illegal on macOS — internal path separator)
+- Paths exceeding **218 characters** from repo root (NTFS MAX_PATH 260 minus typical local prefix)
+
+
+
+### Enforcement
+
+| Layer | Mechanism | Scope |
+| --- | --- | --- |
+| `.gitignore` | Case-insensitive patterns for reserved names | Advisory — prevents accidental `git add` |
+| `check-portable-paths.yml` | CI workflow on every PR and push to `main` | **Hard gate** — blocks merge on violation |
+| Agent discipline | All agents must check before creating files | Preventive |
+
+
+
+### Reference
+
+- [Microsoft: Naming Files, Paths, and Namespaces](https://learn.microsoft.com/en-us/windows/win32/fileio/naming-a-file)
+- [Apple File System Guide](https://developer.apple.com/documentation/foundation/file_system)

@@ -88,3 +88,5 @@ See `swarm.json` at repo root for the structured machine-readable registry (agen
 Root governance files remain authoritative: `CONSTITUTION.md`, `DECISIONS.md`, `LEVELSET.md`, and `VAULT-CONVENTIONS.md`.
 The matching `!/` files are stable routing shims for bootstrap and legacy references.
 Logan is human; agents are software. Logan directs; agents execute.
+
+**NETWEB Path Standard:** All agents creating files must respect cross-platform path portability. See `VAULT-CONVENTIONS.md` § "Portable Path Standard (NETWEB)" for reserved filenames, case-uniqueness, and the `_PREFIX` aliasing convention. CI enforces this via `check-portable-paths.yml`.
