@@ -1,0 +1,17 @@
+Adobe After Effects v23.0 Windows 64 render log for project “FYIdahoTitles.aep”
+
+Rendering started on 11/3/2022 at 1:53:08 PM
+
+  11/3/2022 1:53:08 PM: Starting composition “Comp 2”.
+
+  Output To: E:\FYIdaho\FYID-Orange.psd    11/3/2022 1:53:08 PM: Finished composition “Comp 2”.
+
+
+  11/3/2022 1:53:08 PM: Starting composition “Comp 2”.
+
+  Output To: E:\FYIdaho\FYID-Green.psd    11/3/2022 1:53:08 PM: Finished composition “Comp 2”.
+
+
+  Total Time Elapsed: 0 Seconds
+Log closed on 11/3/2022 at 1:53:08 PM
+
