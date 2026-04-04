@@ -32,7 +32,8 @@ jobs:
         startsWith(github.event.pull_request.head.ref, 'copilot/') ||
         startsWith(github.event.pull_request.head.ref, 'perplexity/') ||
         startsWith(github.event.pull_request.head.ref, 'grok/') ||
-        startsWith(github.event.pull_request.head.ref, 'bot/')
+        startsWith(github.event.pull_request.head.ref, 'bot/') ||
+        startsWith(github.event.pull_request.head.ref, 'serena/')
       ))
     runs-on: ubuntu-latest
     permissions:
@@ -53,7 +54,7 @@ jobs:
           DRY_RUN: ${{ inputs.dry_run || 'false' }}
         run: |
           # Must stay in sync with branch triggers in auto-pr.yml
-          AGENT_PREFIXES="claude codex gemini copilot perplexity grok bot"
+          AGENT_PREFIXES="claude codex gemini copilot perplexity grok bot serena"
           DELETED=0
           KEPT=0
           DELETED_LIST=""
@@ -137,7 +138,7 @@ jobs:
             echo ""
             echo "| | Count |"
             echo "|---|---|"
-            echo "| Mode | $([ "$DRY_RUN" = "true" ] && echo "🔍 Dry run" || echo "🗑️ Live") |"
+            echo "| Mode | $([ "$DRY_RUN" = "true" ] && echo "\U0001F50D Dry run" || echo "\U0001F5D1\uFE0F Live") |"
             echo "| Deleted | $DELETED |"
             echo "| Kept | $KEPT |"
             if [ -n "$DELETED_LIST" ]; then
