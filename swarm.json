@@ -160,7 +160,9 @@
       "label": null,
       "protocol": "MCP",
       "launched": "2026-04-04",
-      "notes": "MCP server (github.com/oraios/serena). Config pending Logan. Registered to swarm 2026-04-04 by ADMIN-LOGAN directive."
+      "status": "active",
+      "runtime": "local hardware (Logan's machine)",
+      "notes": "MCP server (github.com/oraios/serena). AWAKENED 2026-04-04 on local hardware. Cloud agents cannot reach — local-only. Accessible to local Claude Code (The Collared Cat) and any local MCP-capable agent."
     }
   ],
   "personas": [
