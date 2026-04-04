@@ -134,6 +134,13 @@ _phone-link-sweep.log
 # Daily notes (ephemeral, personal)
 DAILYNOTES/
 
+# Local runtime inbox artifacts (do not track phone-link intake payloads)
+INBOX/PHONE-LINK/*
+
+# Local conflicted duplicates and temp placeholders
+* (Conflicted copy *).md
+tempfolder.txt
+
 # Claude Code local settings (machine-local, not for repo)
 .claude/settings.local.json
 .claude/worktrees/
