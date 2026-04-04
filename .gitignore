@@ -69,6 +69,14 @@ Thumbs.db
 .codex/tmp/
 tmp-minidata-msg/
 tmp-msg-extract/
+_phone-link-sweep.log
+
+# Local media app cache artifacts
+*.cfa
+*.pek
+
+# AppleDouble sidecar files
+._*
 
 # Local machine secrets
 .obsidian/plugins/obsidian-local-rest-api/data.json
@@ -112,4 +120,5 @@ DAILYNOTES/
 
 # Claude Code local settings (machine-local, not for repo)
 .claude/settings.local.json
+.claude/worktrees/
 
