@@ -80,3 +80,4 @@ When reporting status for a Linear-down session, return:
 - `.claude/CLAUDE.md` — Instructions for Claude Code (Anthropic)
 - `.github/copilot-instructions.md` — Instructions for GitHub Copilot
 - `!/LEVELSET-STEP-0-EXTERNAL-AGENT.md` — Paste-to-agent LEVELSET prompt
+- `https://developers.google.com/gemini-code-assist/docs/set-up-code-assist-github` — Google setup guide for Gemini Code Assist on GitHub (last updated 2026-03-23 UTC)
