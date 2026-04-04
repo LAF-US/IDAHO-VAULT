@@ -1,0 +1,10 @@
+{
+  "id": "roygbiv-day-accent",
+  "name": "ROYGBIV Day Accent",
+  "version": "1.0.0",
+  "minAppVersion": "1.0.0",
+  "description": "Automatically rotates Obsidian display accent by weekday (Monday red through Sunday violet).",
+  "author": "Logan + Copilot",
+  "authorUrl": "https://github.com/loganfinney27",
+  "isDesktopOnly": false
+}
