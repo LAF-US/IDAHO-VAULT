@@ -41,6 +41,7 @@
 | 19         | 2026-03-28 | Vault as Source of Truth (Stateless)          | â³ Pending   | Only authoritative memory; all agent state external to vault              |
 | 20         | 2026-03-28 | Manifest-Based Coordination                   | â³ Pending   | Inter-agent coordination via shared manifest, not peer-to-peer messaging  |
 | 21         | 2026-03-28 | Agent Behavioral Model (No Fabrication)       | âš ï¸ CODE AUTHORITY REVIEW | Ground truth only; critical guard against hallucination |
+| 22         | 2026-04-03 | Grimoire opened — `!/GRIMOIRE/` canonical     | ✅ CONFIRMED | Chorus Bootstrap Decision 2 executed. Three-layer model (Charter / Corpus / Grimoire) adopted. Codex→Corpus in VAULT-CONVENTIONS.md. Rosetta Stone filed by Gemini. |
 
 ---
 
