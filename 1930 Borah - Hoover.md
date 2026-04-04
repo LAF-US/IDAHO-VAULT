@@ -1,10 +1,6 @@
 ---
-<<<<<<< Updated upstream
 tags:
   - category/facet/photos
-=======
-tags: [Category/Facet/Photos]
->>>>>>> Stashed changes
 date: 1930-06-01
 title: 1930 Borah - Hoover
 aliases: [1930 Borah - Hoover]

@@ -1,10 +1,6 @@
 ---
-<<<<<<< Updated upstream
 tags:
   - category/facet/cartoons
-=======
-tags: [Category/Facet/Cartoons]
->>>>>>> Stashed changes
 date: 1924-04-07
 title: 1924 Borah - Campaign Contributions
 aliases: [1924 Borah - Campaign Contributions]
@@ -17,6 +13,6 @@ linter-yaml-title-alias: 1924 Borah - Campaign Contributions
 
 ---
 
-[^1 ] Clifford Berryman. "[Campaign Contributions Cause Colossal Crimes](http://www.archives.gov/exhibits/running-for-office/index.php?page=27)." U.S. Senate Collection, Center for Legislative Archives, *The National Archives*. April 7, 1924.
+[^1] Clifford Berryman. "[Campaign Contributions Cause Colossal Crimes](http://www.archives.gov/exhibits/running-for-office/index.php?page=27)." U.S. Senate Collection, Center for Legislative Archives, *The National Archives*. April 7, 1924.
 
 ---

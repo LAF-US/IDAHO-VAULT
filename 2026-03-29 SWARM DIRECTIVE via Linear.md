@@ -4,13 +4,9 @@ date modified: Sunday, March 29th 2026, 10:26:53 am
 ---
 
 ## 2026-03-29 SWARM DIRECTIVE
-<<<<<<< Updated upstream
-TO ALL AGENTS from Linear.app (admin chat, communicated by LOGAN): 
-=======
-TO ALL AGENTS from LINEAR (admin chat) via LOGAN: 
->>>>>>> Stashed changes
+TO ALL AGENTS from LINEAR (admin chat, communicated by LOGAN):
 
-### Here’s the gentle, safe Sunday swarm mode I’d run.
+### Here's the gentle, safe Sunday swarm mode I'd run.
 
 * Keep [LAF-7](https://linear.app/loganfinney/issue/LAF-7/swarm-coordination-agent-assembly-at-the-courtroom) as the coordination hub.
 * Let agents **analyze, draft, review, normalize, and checkpoint**.
@@ -20,7 +16,7 @@ TO ALL AGENTS from LINEAR (admin chat) via LOGAN:
   * broad refactors
   * merges without your eyes on them
 
-### **What’s already in motion**
+### **What's already in motion**
 
 * Codex: PR sync repair track
 * Gemini: [LAF-16](https://linear.app/loganfinney/issue/LAF-16/budget-bill-tracker) normalization track
@@ -38,11 +34,7 @@ TO ALL AGENTS from LINEAR (admin chat) via LOGAN:
 * Agents should not:
   * merge to `main`
   * introduce new secret dependencies without explicit callout
-<<<<<<< Updated upstream
-  * modify governance or doctrine files (CONSTITUTION.md, PROTOCOL.md, AGENTS.md, etc.) — only CODE AUTHORITY with explicit Logan approval may change them
-=======
-  * change doctrine/governance broadly unless narrowly scoped
->>>>>>> Stashed changes
+  * change doctrine/governance broadly; only CODE AUTHORITY with explicit Logan approval may modify governance or doctrine files (`CONSTITUTION.md`, `PROTOCOL.md`, `AGENTS.md`, etc.)
   * start new overlapping branches on the same issue
 
 #### **Best low-risk targets for today**
@@ -51,11 +43,11 @@ TO ALL AGENTS from LINEAR (admin chat) via LOGAN:
 * [LAF-14](https://linear.app/loganfinney/issue/LAF-14/add-github-action-to-sync-pr-state-to-linear) / [LAF-15](https://linear.app/loganfinney/issue/LAF-15/add-v2-repo-to-linear-automation-safeguards): diagnosis, acceptance criteria, PR-ready repair
 * [LAF-7](https://linear.app/loganfinney/issue/LAF-7/swarm-coordination-agent-assembly-at-the-courtroom): checkpoints, ownership notes, overlap warnings
 
-#### **What I’d like agents to produce before Logan comes back**
+#### **What I'd like agents to produce before Logan comes back**
 
 * one checkpoint per active lane
 * one clear blocker list
-* one “safe to merge later” PR set
+* one "safe to merge later" PR set
 * one short note on any overlap or drift
 
 #### **What Logan should do today**
@@ -67,11 +59,7 @@ TO ALL AGENTS from LINEAR (admin chat) via LOGAN:
   * anything asking for approval
 * leave merges and secret provisioning for later unless something is truly [[on fire]]
 
-<<<<<<< Updated upstream
-## —Linear.app (coordination relayed by LOGAN)
-=======
-## -Linear (today's project foreman)
->>>>>>> Stashed changes
+## —Linear.app (today's project foreman, coordination relayed by LOGAN)
 
 # LOGAN SAYS GO
 
