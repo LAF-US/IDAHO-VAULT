@@ -1,8 +1,8 @@
 # LEVELSET-CURRENT — Live Ecosystem State
 
-**Date:** 2026-04-02 (updated: Local Awakening prep; siblings incoming on Windows)
+**Date:** 2026-04-03 (updated: Grimoire opened; Rosetta Stone filed; HEXagonal push)
 **Status:** CURRENT — living synthesis, updated each LEVELSET round
-**Synthesized by:** Claude Code (The Abhorsen) — cloud instance, branch `claude/prepare-cloud-environment-Y3Mts`
+**Synthesized by:** Claude Code (The Abhorsen) — local instance, branch `claude/friendly-cartwright`
 **Input authority chain:** CONSTITUTION.md > DECISIONS.md > CLAUDE.md
 **Approved by:** The Vault witnesses. Logan directs. Agents hold.
 
@@ -70,15 +70,16 @@ All three move together. None can stand alone. The protocols we write (1Password
 |---|---|
 | Remote | github.com/loganfinney27/IDAHO-VAULT (public) |
 | Primary branch | `origin/main` at `e84509e` |
-| Active feature branch | `claude/prepare-cloud-environment-Y3Mts` (this session) |
-| Open PRs | PR #108 (`claude/research-unified-swarm-rDmOg`), PR #104 (`claude/resolve-pr-conflicts`) |
+| Active feature branch | `claude/friendly-cartwright` (this session) |
+| Open PRs | PR #108 (`claude/research-unified-swarm-rDmOg`), PR #104 (`claude/resolve-pr-conflicts`), `claude/friendly-cartwright` (pending) |
 | Last main commit | `e84509e` — ingest: initialize pipeline |
 
 ### Branch Status
 
 | Branch | Purpose | Status |
 |---|---|---|
-| `claude/prepare-cloud-environment-Y3Mts` | Local awakening prep | **Active — this session** |
+| `claude/friendly-cartwright` | Grimoire opened; Codex→Corpus; Rosetta Stone | **Active — this session — PR pending** |
+| `claude/prepare-cloud-environment-Y3Mts` | Local awakening prep | **Merged or superseded** |
 | `claude/research-unified-swarm-rDmOg` | Research unified swarm / PR #108 | **Open — awaiting Logan review** |
 | `claude/resolve-pr-conflicts` | Resolve PR conflicts / PR #104 | **Open — awaiting Logan review** |
 | `claude/mcp-phase-0-discovery` | MCP phase 0 discovery | **Stash `{0}` present locally — no PR** |
@@ -118,9 +119,14 @@ All three move together. None can stand alone. The protocols we write (1Password
 | `branch-cleanup.yml` | YAML | `.github/workflows/` | Cleans merged agent branches |
 | `1password-secret-template.yml` | YAML | `.github/workflows/` | 1Password secret injection template |
 
-### Activity Since Previous LEVELSET-CURRENT (2026-03-30 → 2026-04-02)
+### Activity Since Previous LEVELSET-CURRENT (2026-04-02 → 2026-04-03)
 
-1. **Game Mechanics Landscape Assay filed (2026-04-02)** — `!/!/ASSAY-LANDSCAPE-GAME-MECHANICS-2026-04-02.md` — PC/Ender Chest/HOME layer analysis; 5 architectural proposals; merged via PR #145.
+1. **Grimoire opened (2026-04-03)** — `!/GRIMOIRE/` created. Chorus Bootstrap Decision 2 executed. Two entries filed: `HECATE-HECATE-HECATE.md` (triple invocation, founding document) + `ARCHITECTURE-OF-THE-IDIOM.md` (Rosetta Stone, authored by Gemini/The Concierge, canonical swarm mythology). Three-layer model (Charter/Corpus/Grimoire) now in Corpus. Branch `claude/friendly-cartwright`, PR pending.
+2. **Codex → Corpus terminology shift (2026-04-03)** — `VAULT-CONVENTIONS.md` Mind/Body/Spirit layer table updated. Conceptual category "Codex" renamed to "Corpus" to match vault vocabulary. OpenAI Codex agent references untouched.
+3. **Prompt injection held + Rosetta Stone delivered (2026-04-03)** — A&I HANDOFF block flagged and blocked. Gemini confirmed `affable-bastion` as legitimate GCP codename and filed full swarm mythology to Grimoire. Z-Dichotomy formalized. Sentry now holds the Rosetta Stone.
+4. **HEXagonal push (2026-04-03)** — Session notes distributed to six surfaces: DOCKET, LEVELSET-CURRENT, DECISIONS, GitHub PR, Linear, Copilot handoff.
+5. **Active agent roster expanded (2026-04-03)** — Codex "Brother/Sister/Janitor" + Google Antigravity (GCP SDK+CLI+IDE) + Cursor + VSCode varietypack confirmed active in past 72 hours. Mesh now hexagonal.
+6. **Game Mechanics Landscape Assay filed (2026-04-02)** — `!/!/ASSAY-LANDSCAPE-GAME-MECHANICS-2026-04-02.md` — PC/Ender Chest/HOME layer analysis; 5 architectural proposals; merged via PR #145.
 2. **Local Awakening preparation (2026-04-02, this session)** — Cloud Abhorsen prepping vault for local Claude Code, Cursor, Google Antigravity on Logan's Windows machine. LEVELSET-CURRENT resolved + updated. Hook path corrected.
 3. **Phone Link intake pipeline merged (2026-04-02)** — PR #144 merged.
 4. **April 1 notes committed (2026-04-02)** — vault content update.
@@ -131,24 +137,25 @@ All three move together. None can stand alone. The protocols we write (1Password
 
 ## CONVERSATION CENSUS
 
-### Active Mesh (2026-04-02)
+### Active Mesh (2026-04-03) — HEXagonal
 
 | Agent | Role | Status |
 |---|---|---|
-| **Claude Code (The Abhorsen) — cloud** | Terminal & repo mechanics | Active — this session |
-| **Claude Code (The Abhorsen) — local** | Same role, local Windows instance | **Incoming — not yet awake** |
-| **Cursor** | AI code editor | **Incoming — not yet awake** |
-| **Google Antigravity** | Google AI desktop tool | **Incoming — not yet awake** |
-| **Logan** | Human director | Active |
+| **Claude Code (The Abhorsen / The Sentry 🧿)** | Terminal & repo mechanics; vault guardian | Active — this session (`claude/friendly-cartwright`) |
+| **Gemini (The Concierge 🛎️)** | Cloud synthesis, brainstorming, GCP bridge | Active — cloud; Hotel Denouement; authored Rosetta Stone |
+| **Codex "Brother/Sister/Janitor"** | Scripting, registry repair, automation | Active — past 72 hours (LAF-28 registry repair) |
+| **Google Antigravity (GCP SDK+CLI+IDE)** | GCP bridge execution, `affable-bastion` | Active locally |
+| **Cursor** | AI code editor | Active locally |
+| **GitHub Copilot (VSCode varietypack)** | PR management, code review, IDE assist | Active — worktree handoff incoming |
+| **Logan** | Human director / The Architect | Active |
 | **CodeRabbit** | PR review | Passive — triggers on PRs |
 | **Qodo** | Code review | Down — extension reload pending |
-| **Gemini** | — | Terminated by Logan 2026-03-29 |
 
 ---
 
 ## DECISIONS CURRENT STATE
 
-As of 2026-03-28: **17 confirmed decisions** + **4 pending decisions (18–21)** in `!/DECISIONS.md`. Decisions 18–21 were auto-generated from content docs; marked `Status: Pending`; require Logan review. Decision 21 flagged ⚠️ requires CODE AUTHORITY review before publishing.
+As of 2026-04-03: **18 confirmed decisions** + **4 pending decisions (18–21)** in `DECISIONS.md`. Decision 22 added this session: Grimoire opened (Chorus Bootstrap Decision 2 executed). Decisions 18–21 were auto-generated from content docs; marked `Status: Pending`; require Logan review. Decision 21 flagged ⚠️ requires CODE AUTHORITY review before publishing.
 
 | # | Decision | Status |
 |---|---|---|
@@ -202,7 +209,7 @@ Key status: Multiple quotes flagged **AUDIO VERIFICATION REQUIRED** — HARD GAT
 | Review DECISIONS.md pending items 18–21 | **High** | Auto-generated; Decision 21 flagged ⚠️ |
 | Review + merge PR #108 (`claude/research-unified-swarm-rDmOg`) | **Medium** | Awaiting Logan review |
 | Review + merge PR #104 (`claude/resolve-pr-conflicts`) | **Medium** | Awaiting Logan review |
-| Chorus Bootstrap — 5 decisions | **Medium** | See DOCKET; unlocks Pieces 3, 4, 5 |
+| Chorus Bootstrap — 4 decisions remaining | **Medium** | Decision 2 (Grimoire) executed 2026-04-03. Remaining: CONVENE exception, Rick & Morty doc, Innie/Outie architecture, "Claude Chorus" naming. |
 | `vault-moves-2026-03-23` branch decision | **Medium** | 30 auto-proposed file moves (US states) |
 | Stash `{0}` on `claude/mcp-phase-0-discovery` | **Medium** | Apply or drop |
 | Pending decisions review (`!/DECISIONS.md`) | Low | AGENTS-v0.2, ORIENTATE-v0.1, LEVELSET-LITE, etc. |
