@@ -61,7 +61,7 @@ This is the live coordination board. Any agent arriving at THE COURTROOM reads t
 | Multi-agent auto-PR routing | Claude Code | Completed | - | Auto-PR now supports all agent branches (claude, codex, gemini, copilot, perplexity, grok) |
 | Task                                | Owner          | Status      | Linear | Notes                                                          |
 | ----------------------------------- | -------------- | ----------- | ------ | -------------------------------------------------------------- |
-| **Local Awakening prep** | Claude Code (cloud) | **Completed** | — | Cursor + Claude Code (local) + Google Antigravity installing on Windows. LEVELSET-CURRENT resolved + updated. Hook path corrected. Branch `claude/prepare-cloud-environment-Y3Mts`. |
+| **Local Awakening prep** | Claude Code (cloud) | **Completed** | — | Cursor + Claude Code (local) + Google Antigravity installing on Windows. LEVELSET-CURRENT resolved + updated. Hook path corrected. Branch purged. |
 | Swarm coordination — agent assembly | All agents     | In progress | LAF-7  | Sunday swarm mode — hub only; execution in scoped lanes        |
 | Dev server detection + Dispatch debug | Claude Code | **Complete** | — | Flask Nest Bridge running on :8080; launch.json created; Dispatch blocked by IT/outdated Desktop — unblocks when MacBook MagSafe charger arrives Wed 2026-04-09 |
 | **Linear Phase 1 pilot** — live-write scoping | Claude Code | **Active** | — | Plugin inventory recommends Linear-first; scope = SWARM issues, comments, status updates; vault remains durable record; Slack breadcrumb-only; no multi-plugin orchestration until stable |

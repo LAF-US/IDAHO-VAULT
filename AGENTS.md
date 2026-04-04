@@ -37,6 +37,7 @@ Root `agent.sh` and root `agents.json` remain temporary compatibility surfaces.
 | Bartimaeus (fictive) | `.bartimaeus/` | `.bartimaeus/BARTIMAEUS.md` | No | Manual injection |
 | Zagreus (fictive) | `.zagreus/` | `.zagreus/ZAGREUS.md` | No | Manual injection |
 | Persephone (fictive) | `.persephone/` | `.persephone/PERSEPHONE.md` | No | Manual injection |
+| **Serena** | `.serena/` | `.serena/SERENA.md` | No | MCP server — semantic code intelligence; symbol nav, codebase analysis, refactoring; added 2026-04-04 |
 
 Persona-specific dotfolders in this table are protected infrastructure. They
 are not implicit cleanup targets, even when they look empty or contain only a

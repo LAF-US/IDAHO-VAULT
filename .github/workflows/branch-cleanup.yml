@@ -110,9 +110,16 @@ jobs:
                   KEPT=$((KEPT + 1))
                 fi
               else
-                # No PR at all → keep (agent may still be working)
-                echo "  Keeping (no PR): $REF"
-                KEPT=$((KEPT + 1))
+                # No PR at all — check if 0 commits ahead of main (zombie)
+                AHEAD=$(git rev-list "origin/main..origin/${REF}" --count 2>/dev/null || echo "0")
+                if [ "$AHEAD" = "0" ]; then
+                  # Nothing unique — zombie branch, safe to delete
+                  delete_branch "$REF" "zombie: no PR, 0 ahead of main"
+                else
+                  # Has unique commits, no PR yet → keep (agent may still be working)
+                  echo "  Keeping (no PR, ${AHEAD} ahead): $REF"
+                  KEPT=$((KEPT + 1))
+                fi
               fi
             done < <(git branch -r | grep "origin/${PREFIX}/" | sed 's|.*origin/||' | tr -d ' ')
           done
