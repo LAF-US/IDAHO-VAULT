@@ -1,10 +1,6 @@
 ---
-<<<<<<< Updated upstream
 tags:
   - category/facet/cartoons
-=======
-tags: [Category/Facet/Cartoons]
->>>>>>> Stashed changes
 date: 1921-01-01
 title: 1919 Borah- Refusing to give the lady a seat
 aliases: [1919 Borah- Refusing to give the lady a seat]

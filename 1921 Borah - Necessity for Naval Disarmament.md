@@ -1,10 +1,6 @@
 ---
-<<<<<<< Updated upstream
 tags:
   - category/facet/speeches
-=======
-tags: [Category/Facet/Speeches]
->>>>>>> Stashed changes
 date: 1921-09-01
 title: 1921 Borah - Necessity for Naval Disarmament
 aliases: [1921 Borah - Necessity for Naval Disarmament]
