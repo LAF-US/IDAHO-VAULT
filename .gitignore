@@ -46,6 +46,8 @@ Thumbs.db
 *.flac
 *.mov
 *.avi
+*.mpg
+*.mpeg
 *.pdf
 *.docx
 *.xlsx
@@ -62,6 +64,21 @@ Thumbs.db
 *.kmz
 *.shp
 *.gpx
+
+# Production/editing source formats (local media workspace artifacts)
+*.psd
+*.ai
+*.indd
+*.aep
+*.aegraphic
+*.mogrt
+*.prproj
+*.mxf
+*.srt
+*.xmp
+*.cr2
+*.tif
+*.tiff
 
 # Project-specific
 .env
