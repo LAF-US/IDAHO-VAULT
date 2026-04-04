@@ -22,13 +22,18 @@ sys.path.insert(0, str(vault_root))
 from datetime import datetime, timezone
 
 from dotenv import load_dotenv
-load_dotenv(vault_root / ".env")
+load_dotenv(vault_root / ".env", override=True)
 
-from crewai import Agent, Crew, Process, Task
+from crewai import Agent, Crew, Process, Task, LLM
 from tools.minidata_tool import MinidataTool
 from tools.timeline_tool import TimelineTool
 from tools.scraper_tool import BillStatusTool
 from tools.address_tool import AddressSpaceTool
+
+
+# ── LLM Configuration ────────────────────────────────────────────────────────
+
+llm = LLM(model="anthropic/claude-sonnet-4-6")
 
 
 # ── Output Configuration ─────────────────────────────────────────────────────
@@ -73,6 +78,7 @@ budget_scout = Agent(
         "appropriations. You read JFAC minidata spreadsheets and extract "
         "the key financial and organizational details from each bill."
     ),
+    llm=llm,
     tools=[minidata_tool],
     verbose=True,
     allow_delegation=False,
@@ -90,6 +96,7 @@ legislative_tracker = Agent(
         "changes across committee hearings, floor votes, and chamber "
         "crossovers. You build timelines showing how bills move."
     ),
+    llm=llm,
     tools=[timeline_tool, bill_status_tool],
     verbose=True,
     allow_delegation=False,
@@ -107,6 +114,7 @@ h911_parser = Agent(
         "materials to understand the rationale behind appropriations requests. "
         "You connect budget numbers to policy goals."
     ),
+    llm=llm,
     tools=[],  # Phase 2: bill text scraper tool added here
     verbose=True,
     allow_delegation=False,

@@ -40,7 +40,7 @@ This is the live coordination board. Any agent arriving at THE COURTROOM reads t
 | Dev server detection + Dispatch debug | Claude Code | **Complete** | — | Flask Nest Bridge :8080; launch.json created; Dispatch blocked by IT — unblocks when MacBook online |
 | **Basestub lattice** | Claude Code | **Complete** | — | A→ZZZ + 0→1000 basestubs created (19,222 files). 2026-04-04. -LAF directed. |
 | **CHAINFIRE — scorched-earth wipe** | Claude Code | **COMPLETE** | — | Tags (2,735), aliases (830), wikilinks (~19,750) stripped vault-wide. `!` exclusion zone preserved. Committed `d84b87d`. 2026-04-04. |
-| **CrewAI Ignition — JFAC Crew** | Claude Code | **Active** | — | 3 agents (Budget Scout, Legislative Tracker, H911 Parser), 5 tasks (5Ws), 4 tools. Output: `!/CREWAI/`. Structure at `.crewai/`. 2026-04-04. |
+| **CrewAI Harbor — B's alignment** | Claude Code | **Complete** | — | Bartimaeus directive filed, manifest built, handoff note written, 3 crews (JFAC active, Task-to-Code + Vault Custodian stubbed). E2E run BLOCKED on Anthropic API credits. 2026-04-04. |
 | **Address Space POC** | Claude Code | **Initialized** | — | Neurons 100-109 lit + 8 entity stubs written. Content-addressable memory system active. 2026-04-04. |
 | **NETWEB path standard** | Claude Code | **Complete** | — | Cross-platform path portability standard + CI guard. Committed `579efe6`. 2026-04-04. |
 | **Antigravity worktreeConfig fix** | Claude Code | **Complete** | — | `extensions.worktreeConfig` without `repositoryformatversion=1` blocked Antigravity agent + MCP servers. Removed extension. 2026-04-04. |
