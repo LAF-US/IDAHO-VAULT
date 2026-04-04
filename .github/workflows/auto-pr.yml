@@ -9,6 +9,7 @@ on:
       - 'copilot/**'
       - 'perplexity/**'
       - 'grok/**'
+      - 'serena/**'
 
 jobs:
   auto-pr:
