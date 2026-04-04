@@ -147,6 +147,20 @@
       "launched": "2026-03-24",
       "label": null,
       "notes": "No local dotfolder. Access via Cmd+J, Slack, Teams, @mentions in Linear."
+    },
+    {
+      "id": "serena",
+      "name": "Serena",
+      "vendor": "oraios / community",
+      "dotfolder": ".serena",
+      "autoload_file": ".serena/SERENA.md",
+      "autoload": false,
+      "capability_tier": "Support",
+      "role": "Semantic code intelligence \u2014 symbol navigation, codebase analysis, refactoring assistance",
+      "label": null,
+      "protocol": "MCP",
+      "launched": "2026-04-04",
+      "notes": "MCP server (github.com/oraios/serena). Config pending Logan. Registered to swarm 2026-04-04 by ADMIN-LOGAN directive."
     }
   ],
   "personas": [
