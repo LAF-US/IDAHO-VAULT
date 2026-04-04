@@ -53,9 +53,10 @@ jobs:
           ALL_FILES=$(git ls-tree -r HEAD --name-only)
 
           # Build a list of dir/basename pairs, lowercased for comparison
+          # Note: use -- to prevent filenames starting with - being parsed as options
           echo "$ALL_FILES" | while IFS= read -r f; do
-            dir=$(dirname "$f")
-            base=$(basename "$f")
+            dir=$(dirname -- "$f")
+            base=$(basename -- "$f")
             echo "${dir}/${base}"
           done | sort -f | uniq -diD > /tmp/case_collisions.txt 2>/dev/null || true
 
@@ -63,8 +64,8 @@ jobs:
             # Check if any changed file is involved in a collision
             while IFS= read -r filepath; do
               [ -z "$filepath" ] && continue
-              dir=$(dirname "$filepath")
-              base=$(basename "$filepath")
+              dir=$(dirname -- "$filepath")
+              base=$(basename -- "$filepath")
               lookup="${dir}/${base}"
               if grep -qiF "$lookup" /tmp/case_collisions.txt 2>/dev/null; then
                 VIOLATIONS="${VIOLATIONS}  CASE COLLISION: ${filepath} (conflicts with another file differing only in case)\n"
