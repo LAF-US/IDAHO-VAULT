@@ -1,1 +1,1 @@
-oversees [[martial arts]] and fights 
+oversees martial arts and fights 

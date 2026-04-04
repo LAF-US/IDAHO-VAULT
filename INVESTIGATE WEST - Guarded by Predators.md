@@ -1,14 +1,11 @@
 ---
 outlet:
-  - "[[InvestigateWest]]"
+  - "InvestigateWest"
 url: https://www.investigatewest.org/guarded-by-predators/
 author:
-  - "[[Whitney Bryen]]"
-tags:
-  - media/articles
-  - 2025/10/12
+  - "Whitney Bryen"
 ---
-Editor’s note: The “Guarded by Predators” series discusses sexual assault. This [[InvestigateWest]] project was supported by the [[Fund for Investigative Journalism]] and the [[Pulitzer Center]].
+Editor’s note: The “Guarded by Predators” series discusses sexual assault. This InvestigateWest project was supported by the Fund for Investigative Journalism and the Pulitzer Center.
 
 OCT. 12, 2025
 

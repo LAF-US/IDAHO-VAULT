@@ -1,7 +1,3 @@
 ---
-tags:
-  - party/republican
-  - people/elected/country/congress
 ---
-
-[[U.S. House]] member from [[Ohio]] 
+U.S. House member from Ohio 

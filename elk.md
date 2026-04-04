@@ -1,1 +1,1 @@
-[[animals]], [[big game species]]
+animals, big game species

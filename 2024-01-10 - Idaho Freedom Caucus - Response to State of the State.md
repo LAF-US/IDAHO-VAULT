@@ -1,9 +1,6 @@
 ---
 author:
-  - "[[Idaho Freedom Caucus]]"
-tags:
-  - media/pressrelease
-  - 2024/01/10
+  - "Idaho Freedom Caucus"
 URL:
 ---
 

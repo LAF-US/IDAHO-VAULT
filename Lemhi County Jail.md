@@ -1,1 +1,1 @@
-[[County Sheriff]], [[Lemhi County]] [[jails|jail]]
+County Sheriff, Lemhi County jail

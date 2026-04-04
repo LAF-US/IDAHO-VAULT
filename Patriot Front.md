@@ -1,1 +1,1 @@
-[[white nationalist]] organization 
+white nationalist organization 

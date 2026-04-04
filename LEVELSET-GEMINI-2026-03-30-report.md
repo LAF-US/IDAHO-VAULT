@@ -37,7 +37,7 @@ The following critical flags were raised during this session and require attenti
 *   **FLAG `003` (CRITICAL):** My environment cannot `source` shell scripts, preventing proper agent initialization.
 *   **FLAG `006` (CRITICAL):** The `bash` executable is not in my `PATH`, blocking execution of the `!/agent.sh` protocol.
 *   **FLAG `001` & `002` (MEDIUM):** The 1Password implementation requires the `OP_SERVICE_ACCOUNT_TOKEN` secret and a correctly configured secret path.
-*   **FLAG `004` (HIGH):** The pending `[[1Password]]` task in your daily note is blocked by the agent initialization issue.
+*   **FLAG `004` (HIGH):** The pending `1Password` task in your daily note is blocked by the agent initialization issue.
 *   **FLAG `005` (MEDIUM):** The `LEVELSET` protocol documentation is inconsistent regarding the correct file for repo-connected agents.
 
 ### **6. WHAT GEMINI NEEDS FROM LOGAN**

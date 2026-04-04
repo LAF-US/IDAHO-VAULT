@@ -3,11 +3,6 @@ title: "Repo Payload Audit"
 updated: 2026-04-03
 status: active
 authority: "[[LOGAN]]"
-tags:
-  - administration/repo
-  - administration/git
-  - administration/audit
-  - swarm
 ---
 
 # REPO PAYLOAD AUDIT - 2026-04-03

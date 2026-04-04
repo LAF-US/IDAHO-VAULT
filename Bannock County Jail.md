@@ -1,1 +1,1 @@
-[[County Sheriff]], [[Bannock County]] [[jails|jail]]
+County Sheriff, Bannock County jail

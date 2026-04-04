@@ -1,5 +1,3 @@
 ---
-tags:
-  - people
 ---
-[[State Board of Education]] member 
+State Board of Education member 

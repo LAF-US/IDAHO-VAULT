@@ -1,6 +1,3 @@
 ---
-tags:
-  - people/elected/county/sheriff
 ---
-
-former [[Shoshone County]] [[County Sheriff|Sheriff]] 
+former Shoshone County Sheriff 

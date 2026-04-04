@@ -1,1 +1,1 @@
-[[occupational and professional licensing]] board for [[veterinarians]] 
+occupational and professional licensing board for veterinarians 

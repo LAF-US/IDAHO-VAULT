@@ -1,14 +1,9 @@
 ---
-tags:
-  - people/elected/legislative
-  - party/republican
-  - people/candidate/legislative
-  - people
 ---
-Residence: [[Rexburg]]
-Graduate: [[Madison High School]], [[Brigham Young University-Idaho|Ricks College]]
+Residence: Rexburg
+Graduate: Madison High School, Ricks College
 
-Former [[Senate member]]
-- [[Lieutenant Governor]] during short tenure of Gov. [[Jim Risch]]
-- Father of [[Doug Ricks]]
+Former Senate member
+- Lieutenant Governor during short tenure of Gov. Jim Risch
+- Father of Doug Ricks
 - 

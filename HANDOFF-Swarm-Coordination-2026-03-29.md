@@ -3,11 +3,6 @@ date: 2026-03-29
 source: "Linear - agent chat - Greeting IDAHO-VAULT.md (session artifact)"
 destination: All agents + LOGAN
 subject: Linear workspace manager authorization and swarm coordination handoff
-tags:
-  - swarm-coordination
-  - LINEAR-agent-authorization
-  - governance-decision
-  - EMERGENCY-CONVENE
 status: active
 ---
 

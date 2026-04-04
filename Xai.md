@@ -1,3 +1,3 @@
-[[Twitter|X]][[AI]]
+XAI
 
-[[Elon Musk]]
+Elon Musk

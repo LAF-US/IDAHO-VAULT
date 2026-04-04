@@ -1,12 +1,7 @@
 ---
-tags:
-  - party/republican
-  - people/elected/legislative
-  - people/elected
-  - people
-residence: "[[Riggins]]"
+residence: "Riggins"
 ---
 
-- [[Idaho Freedom Caucus]] member 
-- defeated [[Carl Crabtree]] in 2022 [[primary election]] 
-- [[indecent materials in schools and libraries]] 
+- Idaho Freedom Caucus member 
+- defeated Carl Crabtree in 2022 primary election 
+- indecent materials in schools and libraries 

@@ -1,21 +1,18 @@
 ---
-author: "[[David Pace]]"
+author: "David Pace"
 outlet:
-  - "[[Post Register]]"
+  - "Post Register"
 URL: https://www.postregister.com/news/local/all-six-idaho-falls-legislators-now-under-investigation-by-gop-legislative-district-committees/article_6c8d6112-92fb-11ee-867f-db25952d8723.html
-tags:
-  - media/articles
-  - 2023/12/04
 ---
-Idaho Falls Reps. [[Barbara Ehardt]], [[Marco Erickson]] and Sen. [[Dave Lent]] have been added to the list of state legislators called into hearings by Idaho GOP [[Legislative District 32]] and [[Legislative District 33|33]] [[central committees|committees]] for alleged violations of the Idaho GOP platform.
+Idaho Falls Reps. Barbara Ehardt, Marco Erickson and Sen. Dave Lent have been added to the list of state legislators called into hearings by Idaho GOP Legislative District 32 and 33 committees for alleged violations of the Idaho GOP platform.
 
-Under the Idaho GOP’s new Republican Platform Enforcement rule, Legislative District Committees are “empowered to call into question the conduct of a Republican elected official; … determine if substantive violations of Party Platform or Constitutions have occurred; … and for any substantive violations may remove Party support and prohibit the use of Republican Party identifiers on campaign information and advertising from the elected official during their current term and any subsequent campaign for political office for a period of five (5) years.” The rule passed on June 22 during the Idaho GOP’s summer convention in [[Challis]].
+Under the Idaho GOP’s new Republican Platform Enforcement rule, Legislative District Committees are “empowered to call into question the conduct of a Republican elected official; … determine if substantive violations of Party Platform or Constitutions have occurred; … and for any substantive violations may remove Party support and prohibit the use of Republican Party identifiers on campaign information and advertising from the elected official during their current term and any subsequent campaign for political office for a period of five (5) years.” The rule passed on June 22 during the Idaho GOP’s summer convention in Challis.
 
-Erickson said he received a 55-page packet from the [[Legislative District 33]] Committee several days before Thanksgiving with 14 allegations of platform violations.
+Erickson said he received a 55-page packet from the Legislative District 33 Committee several days before Thanksgiving with 14 allegations of platform violations.
 
 He said he has received no communication from party officials about where or when the hearing will be held.
 
-Lent was accused of seven allegations in a 38-page document — including votes in favor of [[Idaho Launch]] (S.B. 1167), appropriating funds to [[WWAMI]] joint medical education program (S.B. 1147), appropriating funds for [[state colleges|colleges and universities]] (S.B. 1176) and signing a petition calling for a special legislative session to create a May [[presidential primary]].
+Lent was accused of seven allegations in a 38-page document — including votes in favor of Idaho Launch (S.B. 1167), appropriating funds to WWAMI joint medical education program (S.B. 1147), appropriating funds for colleges and universities (S.B. 1176) and signing a petition calling for a special legislative session to create a May presidential primary.
 
 He said that for every vote he made that “allegedly violated the Idaho GOP platform” except one — the Launch bill — he voted with the majority of Republican legislators.
 
@@ -67,7 +64,7 @@ All three legislators chose not to participate in person in the Special Investig
 
 Horman submitted a written response to the four alleged violations of the Idaho GOP platform that had been made against her in a petition signed by Bonneville County GOP precinct committee officers Carolyn Harrison, John Jensen, Rusty Devereaux and Lisa Keller.
 
-Special Investigative Committee Chairwoman Barbara Miller, who recently lost her campaign for Idaho Falls City Council with 33.07% of the vote, wrote in a Nov. 29 email to Cook, “We were saddened to see that you chose not to attend. There were many questions that the committee members would have liked to asked you in order to better understand the bill evaluation process. In particular, the committee would like to hear about why you voted for SB-1147, SB-1176 and SB1167, with the issues being: increased government spending, bailouts/subsidies (launch program) of higher education and funding that is fungible (i.e. allows other funds to be freed up for these purposes) like critical race theory, [[abortion]] and LGBTQ activist organizations, etc. (WWAMI).
+Special Investigative Committee Chairwoman Barbara Miller, who recently lost her campaign for Idaho Falls City Council with 33.07% of the vote, wrote in a Nov. 29 email to Cook, “We were saddened to see that you chose not to attend. There were many questions that the committee members would have liked to asked you in order to better understand the bill evaluation process. In particular, the committee would like to hear about why you voted for SB-1147, SB-1176 and SB1167, with the issues being: increased government spending, bailouts/subsidies (launch program) of higher education and funding that is fungible (i.e. allows other funds to be freed up for these purposes) like critical race theory, abortion and LGBTQ activist organizations, etc. (WWAMI).
 
 “With regard to HB 314 we would appreciate a response from you as to why you voted for the bill initially then voted against it following the Governor’s veto. We would very much appreciate understanding what changed your mind with respect to this bill.”
 

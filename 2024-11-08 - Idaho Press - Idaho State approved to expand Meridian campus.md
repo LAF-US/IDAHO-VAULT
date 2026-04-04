@@ -1,15 +1,12 @@
 ---
-outlet: "[[Idaho Press]]"
+outlet: "Idaho Press"
 url: "https://www.idahopress.com/news/local/idaho-state-approved-to-expand-meridian-campus/article_7bbad330-9d37-11ef-866d-ab6dec5b6b84.html"
 author:
-  - "[[Emily White]]"
-tags:
-  - media/articles
-  - 2024/11/08
+  - "Emily White"
 ---
-A bigger health science campus is coming to [[Meridian]].
+A bigger health science campus is coming to Meridian.
 
-On Wednesday, the [[Meridian]] [[city council]] approved an ordinance officially annexing and rezoning over 23 acres of land for [[Idaho State University]] to begin an expansion of its Meridian health science campus. The land was purchased by ISU in 2019, according to Gabe Bargen, the executive director of ISU Health Science Center.
+On Wednesday, the Meridian city council approved an ordinance officially annexing and rezoning over 23 acres of land for Idaho State University to begin an expansion of its Meridian health science campus. The land was purchased by ISU in 2019, according to Gabe Bargen, the executive director of ISU Health Science Center.
 
 The expansion could make ISU the closest thing Idaho has to a medical school, Bargen said.
 

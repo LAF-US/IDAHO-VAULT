@@ -1,7 +1,7 @@
 ---
 source: "https://claude.com/connectors/mermaid-chart"
 author:
-  - "[[Claude]]"
+  - "Claude"
 published:
 created: 2026-04-01
 ---

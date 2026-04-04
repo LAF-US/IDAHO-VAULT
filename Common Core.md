@@ -1,1 +1,1 @@
-nationally aligned [[education]] standards 
+nationally aligned education standards 

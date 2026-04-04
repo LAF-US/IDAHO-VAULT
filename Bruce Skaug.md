@@ -1,8 +1,4 @@
 ---
-tags:
-  - people/elected/legislative
-  - party/republican
-  - people/candidate/legislative
-residence: "[[Nampa]]"
+residence: "Nampa"
 ---
-[[House Judiciary, Rules and Administration]] chair 
+House Judiciary, Rules and Administration chair 

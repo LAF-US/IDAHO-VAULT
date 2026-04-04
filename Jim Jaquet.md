@@ -1,6 +1,3 @@
 ---
-tags:
-  - people
-  - party/democratic
 ---
-husband of [[Wendy Jaquet]] 
+husband of Wendy Jaquet 

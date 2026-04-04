@@ -1,11 +1,9 @@
 ---
-aliases:
-  - CWD
 ---
-[[CWD Management Area]]
+CWD Management Area
 
-tested and monitored by [[Department of Fish and Game|Idaho Fish and Game]] 
+tested and monitored by Idaho Fish and Game 
 
-affects cervids like [[deer]] (both [[white-tailed deer|white-tailed]] & [[mule deer|mule]]), [[elk]], [[moose]], [[caribou]] 
+affects cervids like deer (both white-tailed & mule), elk, moose, caribou 
 
-[[similar but different]] to [[rabies]] 
+similar but different to rabies 

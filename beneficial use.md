@@ -1,1 +1,1 @@
-[[water rights]] concept 
+water rights concept 

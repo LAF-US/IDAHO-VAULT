@@ -1,9 +1,7 @@
 ---
-tags:
-  - geography/land/state/region
 ---
-[[Blaine County]]
+Blaine County
 
-[[Stanton Crossing]], [[Bellevue]], [[Hailey]], [[Ketchum]], [[Sun Valley]] 
+Stanton Crossing, Bellevue, Hailey, Ketchum, Sun Valley 
 
-[[Big Wood River]] 
+Big Wood River 

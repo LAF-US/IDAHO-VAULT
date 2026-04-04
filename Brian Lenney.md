@@ -1,8 +1,4 @@
 ---
-tags:
-  - people/elected/legislative
-  - party/republican
-  - people/candidate/legislative
-residence: "[[Nampa]]"
+residence: "Nampa"
 ---
-[[Senate member]] for [[Legislative District 13|LD13]] after [[primary election|primary]] against [[Jeff Agenbroad]] 
+Senate member for LD13 after primary against Jeff Agenbroad 

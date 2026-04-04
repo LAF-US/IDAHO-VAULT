@@ -1,37 +1,33 @@
 ---
 author:
-  - "[[Ian Max Stevenson]]"
+  - "Ian Max Stevenson"
 outlet:
-  - "[[Idaho Statesman]]"
+  - "Idaho Statesman"
 URL: https://www.idahostatesman.com/news/politics-government/state-politics/article281907523.html
-tags:
-  - media/articles
-  - 2024/session
-  - 2023/11/22
 ---
-Twenty-five years ago, [[Ada County]] leaders unsuccessfully challenged the tax exemptions received by one of [[State of Idaho|Idaho]]’s largest employers by calling into question its charitable status. 
+Twenty-five years ago, Ada County leaders unsuccessfully challenged the tax exemptions received by one of Idaho’s largest employers by calling into question its charitable status. 
 
-This year, Ada County leaders want the same authority. They want the Legislature in 2024 to give local Idaho governments control over charitable [[tax exemptions]] for [[hospitals]]. 
+This year, Ada County leaders want the same authority. They want the Legislature in 2024 to give local Idaho governments control over charitable tax exemptions for hospitals. 
 
-The county’s proposal, which was endorsed by the [[Idaho Association of Counties]] at its annual meeting in September, would affect some of the largest employers in the state, including [[St. Luke's Health System]] and [[Saint Alphonsus Health System]], by potentially reducing a standing tax exemption the [[nonprofits]] hospitals receive. 
+The county’s proposal, which was endorsed by the Idaho Association of Counties at its annual meeting in September, would affect some of the largest employers in the state, including St. Luke's Health System and Saint Alphonsus Health System, by potentially reducing a standing tax exemption the nonprofits hospitals receive. 
 
 The proposition has drawn criticism from the state’s hospital lobby, which argues that imposing taxes on nonprofit hospitals would increase health care costs for residents and endanger rural health care. 
 
-The [[Idaho Republican Party|Republican]] Ada [[County Commissioners|County Commission]] presented a resolution to local legislators Nov. 13 that would remove an automatic tax exemption that hospitals receive for most of their properties to “not include ancillary facilities such as [[doctors]]’ offices.”
+The Republican Ada County Commission presented a resolution to local legislators Nov. 13 that would remove an automatic tax exemption that hospitals receive for most of their properties to “not include ancillary facilities such as doctors’ offices.”
 
-“Also, an element of charity, which was historically a requirement of the exemption, should be returned to the exemption,” according to a copy of the proposal, which was sponsored by Ada County commissioners as well as leaders in [[Canyon County|Canyon]], [[Adams County|Adams]] and [[Madison County|Madison]] counties, according to [[Ada County]] spokesperson [[Elizabeth Duncan]]. 
+“Also, an element of charity, which was historically a requirement of the exemption, should be returned to the exemption,” according to a copy of the proposal, which was sponsored by Ada County commissioners as well as leaders in Canyon, Adams and Madison counties, according to Ada County spokesperson Elizabeth Duncan. 
 
-In the U.S., many hospitals are registered as nonprofit charities with the [[Internal Revenue Service]], which means they are not required to pay federal [[income taxes]]. The major hospital systems in Idaho, including St. Luke’s and Saint Al’s, are registered nonprofits. In addition to operating emergency departments that serve all people, the hospitals also are required to provide community benefits and charity care. 
+In the U.S., many hospitals are registered as nonprofit charities with the Internal Revenue Service, which means they are not required to pay federal income taxes. The major hospital systems in Idaho, including St. Luke’s and Saint Al’s, are registered nonprofits. In addition to operating emergency departments that serve all people, the hospitals also are required to provide community benefits and charity care. 
 
 Some other hospitals are for-profit companies owned by shareholders or investors. 
 
-Nationwide, hospital consolidation has led to increased health care costs, and nonprofit hospitals have come under scrutiny for allegedly reducing charity care while increasing executive pay and receiving billions in tax breaks. Some states, like [[Oregon]], [[Illinois]] and [[Utah]], have moved to compel nonprofit hospitals to spend certain amounts on community benefits, according to a report from KFF Health News. KFF is the organization formerly known as the Kaiser Family Foundation. 
+Nationwide, hospital consolidation has led to increased health care costs, and nonprofit hospitals have come under scrutiny for allegedly reducing charity care while increasing executive pay and receiving billions in tax breaks. Some states, like Oregon, Illinois and Utah, have moved to compel nonprofit hospitals to spend certain amounts on community benefits, according to a report from KFF Health News. KFF is the organization formerly known as the Kaiser Family Foundation. 
 
-In Ada County, there are 401 hospital parcels that qualify for hospital exemptions, with a total assessed value of $1.3 billion, according to data from the Ada County [[County Assessor|Assessor]]’s Office. If those exemptions were entirely removed, nonprofit hospitals in the county could owe $10.9 million in property taxes. 
+In Ada County, there are 401 hospital parcels that qualify for hospital exemptions, with a total assessed value of $1.3 billion, according to data from the Ada County Assessor’s Office. If those exemptions were entirely removed, nonprofit hospitals in the county could owe $10.9 million in property taxes. 
 
-At the Nov. 13 meeting, Commissioner [[Tom Dayley]] referred lawmakers to a U.S. Senate report from October, released by Sen. [[Bernie Sanders]], I-Vermont, that found that “many nonprofit hospital systems across the country are failing to provide low-income Americans with the affordable medical care required by their nonprofit status.” 
+At the Nov. 13 meeting, Commissioner Tom Dayley referred lawmakers to a U.S. Senate report from October, released by Sen. Bernie Sanders, I-Vermont, that found that “many nonprofit hospital systems across the country are failing to provide low-income Americans with the affordable medical care required by their nonprofit status.” 
 
-In a response, the president of the [[American Hospital Association]] called the report “tunnel-visioned,” and said “it’s been proven that nonprofit hospitals more than earn their tax-exempt status by providing benefits determined to best serve each community.” 
+In a response, the president of the American Hospital Association called the report “tunnel-visioned,” and said “it’s been proven that nonprofit hospitals more than earn their tax-exempt status by providing benefits determined to best serve each community.” 
 
 St. Luke’s paid about $1.5 million in property taxes in Ada County in 2022, spokesperson Christine Myron told the Statesman by email. The hospital system provided $27 million in charity care and gave $78 million to community ventures, she said. 
 
@@ -115,7 +111,7 @@ In addition to the care they provide, Huerta said, rural hospitals are often eco
 
 “Rural areas are already dramatically underfunded to begin with,” he said. “For them to lose any type of exemption would be an extreme hardship.” 
 
-Huerta’s hospital has its own [[taxing districts|taxing district]], which he said raises a couple of hundred thousand dollars for the hospital each year. But the hospital is not owned by Butte County, the local jurisdiction. If the automatic property tax exemption for nonprofit hospitals were removed, the Arco hospital would still qualify for property tax exemptions, because its hospital district status makes the hospital qualify for a governmental exemption, according to the Idaho Tax Commission. 
+Huerta’s hospital has its own taxing district, which he said raises a couple of hundred thousand dollars for the hospital each year. But the hospital is not owned by Butte County, the local jurisdiction. If the automatic property tax exemption for nonprofit hospitals were removed, the Arco hospital would still qualify for property tax exemptions, because its hospital district status makes the hospital qualify for a governmental exemption, according to the Idaho Tax Commission. 
 
 Morrison, of the Idaho Hospital Association, said his association is still concerned about how a final bill proposal could affect any nonprofit hospitals, since the proposal has not yet been finalized. He said there are 21 nonprofit hospitals that are members of the association and could be affected. 
 

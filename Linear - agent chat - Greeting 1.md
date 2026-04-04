@@ -1,13 +1,4 @@
 ---
-tags:
-  - 2026/03/29
-  - today
-  - 83
-  - 96
-  - 85
-  - 1
-  - 2
-  - 7
 date created: Sunday, March 29th 2026, 10:48:49 am
 date modified: Sunday, March 29th 2026, 10:49:49 am
 ---

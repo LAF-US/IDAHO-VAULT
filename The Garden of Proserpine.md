@@ -1,9 +1,9 @@
 ---
 URL: https://www.poetryfoundation.org/poems/45288/the-garden-of-proserpine
 ---
-By [[Algernon Charles Swinburne]]
+By Algernon Charles Swinburne
 
-[[The world is quiet here.|Here, where the world is quiet]];  
+Here, where the world is quiet;  
 
          Here, where all trouble seems  
 
@@ -218,4 +218,4 @@ Only the sleep eternal
          In an eternal night.
 
 ---
-###### [["The world is quiet here."]]
+###### "The world is quiet here."

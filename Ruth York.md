@@ -1,5 +1,3 @@
 ---
-tags:
-  - people
 ---
-executive director of [[Idaho Federation of Families]] 
+executive director of Idaho Federation of Families 

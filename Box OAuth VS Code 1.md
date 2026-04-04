@@ -1,8 +1,4 @@
 ---
-tags:
-  - tools/vscode
-  - auth/oauth
-  - vendors/box
 updated: 2026-03-24
 status: draft
 source: commit

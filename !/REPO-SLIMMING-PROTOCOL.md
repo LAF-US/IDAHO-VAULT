@@ -3,11 +3,6 @@ title: "Repo Slimming Protocol"
 updated: 2026-04-03
 status: active
 authority: "[[LOGAN]]"
-tags:
-  - administration/repo
-  - administration/git
-  - administration/control-plane
-  - swarm
 ---
 
 # REPO SLIMMING PROTOCOL

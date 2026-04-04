@@ -1,7 +1,4 @@
 ---
-tags:
-  - administration/mcp
-  - administration/discovery
 created: 2026-03-25
 status: complete
 phase: 0
@@ -9,9 +6,9 @@ phase: 0
 # MCP Phase 0 — Read-Only Discovery Log
 
 **Timestamp:** 2026-03-25T00:00:00Z (session date)
-**Supervisor:** [[LOGAN]]
-**Executing agent:** [[Claude]] (The Abhorsen)
-**Governance reference:** [[MCP-IMPLEMENTATION-PLAN]]
+**Supervisor:** LOGAN
+**Executing agent:** Claude (The Abhorsen)
+**Governance reference:** MCP-IMPLEMENTATION-PLAN
 
 ---
 
@@ -196,4 +193,4 @@ Recommend proceeding to Phase 1 planning once Logan reviews this document and ap
 
 ---
 
-###### [["The world is quiet here."]]
+###### "The world is quiet here."

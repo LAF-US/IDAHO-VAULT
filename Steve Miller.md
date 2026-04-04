@@ -1,15 +1,8 @@
 ---
-tags:
-  - party/republican
-  - people/elected/legislative
-  - people/candidate/legislative
-aliases:
-  - Steven Miller
 ---
+Residence: Fairfield
 
-Residence: [[Fairfield]]
+Camas County House member
+JFAC vice chair 
 
-[[Camas County]] [[House member]]
-[[Joint Finance-Appropriations Committee|JFAC]] vice chair 
-
-unseated by [[Muffy Davis]], re-elected in different district after [[redistricting]] 
+unseated by Muffy Davis, re-elected in different district after redistricting 

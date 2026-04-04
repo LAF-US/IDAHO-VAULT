@@ -1,1 +1,1 @@
-[[helicopter]] used for [[emergency medical services]] 
+helicopter used for emergency medical services 

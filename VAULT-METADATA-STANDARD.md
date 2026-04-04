@@ -3,12 +3,9 @@ title: "VAULT-METADATA-STANDARD — Header and Footer Standard"
 created: 2026-03-25
 updated: 2026-04-01
 status: active
-authority: "[[LOGAN]]"
+authority: "LOGAN"
 authors:
   - ChatGPT Codex
-tags:
-  - administration/standards
-  - administration/metadata
 source: issue/LAF-13
 ---
 
@@ -57,7 +54,7 @@ authority: "<who has decision authority>"
 | `title` | string | Exact document title in plain text | `"VAULT-METADATA-STANDARD — Header and Footer Standard"` |
 | `updated` | date | Last substantive edit date, `YYYY-MM-DD` | `2026-03-25` |
 | `status` | enum | One of: `draft`, `active`, `superseded`, `archived` | `active` |
-| `authority` | string | Final decision authority for this document | `"[[LOGAN]]"` |
+| `authority` | string | Final decision authority for this document | `"LOGAN"` |
 
 ### Optional Header Fields
 
@@ -135,7 +132,7 @@ Transition requirements:
 ## 7) Authority Rules
 
 - `authority` identifies who has final say over acceptance and interpretation.
-- In this vault, governance documents default to `[[LOGAN]]` unless explicitly delegated.
+- In this vault, governance documents default to `LOGAN` unless explicitly delegated.
 - Agents may draft and revise text but must not claim final authority unless directed.
 
 ---
@@ -166,7 +163,7 @@ title: "Example Governance Note"
 created: 2026-03-20
 updated: 2026-03-25
 status: active
-authority: "[[LOGAN]]"
+authority: "LOGAN"
 authors:
   - ChatGPT Codex
 tags:
@@ -179,7 +176,7 @@ tags:
 - **Created:** 2026-03-20
 - **Last Updated:** 2026-04-01
 - **Status:** Active
-- **Authority:** [[LOGAN]]
+- **Authority:** LOGAN
 - **Authors:** ChatGPT Codex
 - **Change Note:** Established baseline metadata schema and lifecycle rules.
 
@@ -190,6 +187,6 @@ tags:
 - **Created:** 2026-03-25
 - **Last Updated:** 2026-03-25
 - **Status:** Active
-- **Authority:** [[LOGAN]]
+- **Authority:** LOGAN
 - **Authors:** ChatGPT Codex
 - **Change Note:** Clarified that metadata doctrine outranks template guidance and implementation tooling when rules overlap.

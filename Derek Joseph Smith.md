@@ -1,7 +1,3 @@
 ---
-aliases:
-  - Derek Smith
-tags:
-  - people
 ---
-[[Patriot Front]] member, [[South Dakota]] resident 
+Patriot Front member, South Dakota resident 

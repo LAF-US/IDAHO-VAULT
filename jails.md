@@ -1,8 +1,5 @@
 ---
-aliases:
-  - jail
-tags: []
 ---
-[[counties]] [[law enforcement]] 
+counties law enforcement 
 
-[[county jails]] 
+county jails 

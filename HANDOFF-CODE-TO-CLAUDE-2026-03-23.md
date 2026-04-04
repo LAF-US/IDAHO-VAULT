@@ -1,8 +1,4 @@
 ---
-tags:
-  - administration/handoff
-  - administration/context
-  - administration/claude
 created: 2026-03-23
 source: commit
 status: draft
@@ -11,8 +7,8 @@ status: draft
 
 **Date:** 2026-03-23
 **From:** ChatGPT Codex
-**To:** [[Claude]]
-**Via:** [[LOGAN]]
+**To:** Claude
+**Via:** LOGAN
 **Re:** Orientation packet for repo-aware collaboration in IDAHO-VAULT
 
 ---

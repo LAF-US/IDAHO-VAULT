@@ -1,12 +1,9 @@
 ---
 author:
-  - "[[David Pace]]"
+  - "David Pace"
 outlet:
-  - "[[Post Register]]"
+  - "Post Register"
 URL: https://www.postregister.com/news/local/bryan-smith-elected-as-idaho-gop-national-committeeman/article_de0cfcc8-2fee-11ee-92eb-b7cc4baad37d.html
-tags:
-  - media/articles
-  - 2023/07/31
 ---
 Bryan Smith was elected as the Idaho GOP national committeeman at a special meeting of the Republican State Central Committee on Saturday in Boise.
 

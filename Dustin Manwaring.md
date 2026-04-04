@@ -1,11 +1,5 @@
 ---
-tags:
-  - people/elected
-  - people/elected/legislative
-  - party/republican
-  - people
 ---
+Residence: Pocatello
 
-Residence: [[Pocatello]]
-
-[[House Majority Caucus Chair]]
+House Majority Caucus Chair

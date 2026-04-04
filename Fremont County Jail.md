@@ -1,5 +1,3 @@
 ---
-tags:
-  - vault/stub
 ---
-[[County Sheriff]], [[Fremont County]] [[jails|jail]]
+County Sheriff, Fremont County jail

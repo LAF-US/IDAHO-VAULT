@@ -1,13 +1,11 @@
 ---
 source: "https://www.idahoednews.org/news/the-genies-out-of-the-bottle-little-signs-artificial-intelligence-education-bill/"
 author:
-  - "[[Kaeden Lincoln]]"
+  - "Kaeden Lincoln"
 published: 2026-03-26
 created: 2026-03-27
 date created: Friday, March 27th 2026, 11:30:35 am
 date modified: Friday, March 27th 2026, 11:34:38 am
-tags:
-  - 2026/03/26
 ---
 
 Idaho Gov. Brad Little signed a bill instructing the Idaho Department of Education to develop a statewide framework for integrating generative artificial intelligence (AI) into classrooms.

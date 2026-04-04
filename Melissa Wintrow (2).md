@@ -1,10 +1,7 @@
 ---
-tags:
-  - people/idaho/legislature/senate
-  - 2026/03/12
 source: commit
 ---
-[[Melissa Wintrow]] is a Democratic [[Idaho Senate|Idaho Senate]] member from District 18A (Boise) who serves on [[Joint Finance-Appropriations Committee|JFAC]] and in interview described working group mechanics including a "checklist of decision points" and confirmed that public access is "probably not" available.
+Melissa Wintrow is a Democratic Idaho Senate member from District 18A (Boise) who serves on JFAC and in interview described working group mechanics including a "checklist of decision points" and confirmed that public access is "probably not" available.
 
 ## Basic Info
 
@@ -21,6 +18,6 @@ source: commit
 
 ## Related Notes
 
-- [[Joint Finance-Appropriations Committee]]
-- [[JFAC Working Groups]]
-- [[Idaho Code §74-202]]
+- Joint Finance-Appropriations Committee
+- JFAC Working Groups
+- Idaho Code §74-202

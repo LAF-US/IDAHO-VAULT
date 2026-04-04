@@ -1,1 +1,1 @@
-residents of [[jails]] and [[prisons]] 
+residents of jails and prisons 

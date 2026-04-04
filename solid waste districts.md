@@ -1,6 +1,3 @@
 ---
-tags:
-  - governments/taxingdistrict
 ---
-
-[[taxing districts]] for [[solid waste]] management 
+taxing districts for solid waste management 

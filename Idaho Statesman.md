@@ -1,8 +1,6 @@
 ---
-tags:
-  - media/outlets
 outlet:
-  - "[[Idaho Statesman]]"
+  - "Idaho Statesman"
 ---
 
-[[Boise]] [[newspapers|newspaper]] 
+Boise newspaper 

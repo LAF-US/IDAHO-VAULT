@@ -1,13 +1,10 @@
 ---
-tags:
-  - administration/research
-  - people/elected/legislative
 source: commit
 updated: 2026-03-16
 ---
 # Research Brief: Tim Oren — Voting Pattern Analysis
 
-**Subject:** [[Tim Oren]]
+**Subject:** Tim Oren
 **Type:** Voting pattern analysis
 **Status:** Pending assignment — awaiting available research instance (Tier 4)
 **Priority:** Standard

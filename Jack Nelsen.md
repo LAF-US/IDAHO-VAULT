@@ -1,8 +1,3 @@
 ---
-tags:
-  - party/republican
-  - people/elected
-  - people/elected/legislative
-  - people
 ---
-Only [[Idaho Republican Party|Republican]] elected from [[Legislative District 26]] after [[redistricting]] 
+Only Republican elected from Legislative District 26 after redistricting 

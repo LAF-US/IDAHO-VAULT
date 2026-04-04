@@ -2,11 +2,8 @@
 title: LEVELSET routing shim
 updated: 2026-04-02
 status: active
-authority: "[[LOGAN]]"
+authority: "LOGAN"
 source: root/LEVELSET.md
-tags:
-  - administration/shim
-  - administration/routing
 ---
 
 # `!/LEVELSET.md`

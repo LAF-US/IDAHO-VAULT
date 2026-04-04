@@ -1,1 +1,1 @@
-[[Idaho Association of Commerce and Industry|IACI]] [[political action committee]] 
+IACI political action committee 

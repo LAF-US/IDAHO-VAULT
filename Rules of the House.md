@@ -1,11 +1,8 @@
 ---
-aliases:
-  - House Rules
-  - House Rule
 ---
-**[[Idaho House of Representatives]]** 
-- [[House member|House members]] 
-- [[Joint Senate and House Rules]] 
+**Idaho House of Representatives** 
+- House members 
+- Joint Senate and House Rules 
 
 --- 
 

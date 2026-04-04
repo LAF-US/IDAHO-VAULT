@@ -1,19 +1,15 @@
 ---
-tags:
-  - 2020/01/08
-  - 2020/session
-  - bills
-cmte: "[[House Education]]"
+cmte: "House Education"
 ---
 Wed Jan 8, 2020 - 9am
 
-[[House Education]] Committee, Vice Chair [[Ryan Kerby]] running meeting
+House Education Committee, Vice Chair Ryan Kerby running meeting
 
 [https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2020/standingcommittees/200108_hedu_0900AM-Agenda.pdf](https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2020/standingcommittees/200108_hedu_0900AM-Agenda.pdf)
 
-Presenter: [[Tracie Bent]], Chief Planning and Policy Officer, [[State Board of Education]]
+Presenter: Tracie Bent, Chief Planning and Policy Officer, State Board of Education
 
-[[State Board of Education|SBOE]] President [[Debbie Critchfield]] also in attendance
+SBOE President Debbie Critchfield also in attendance
 
 **Omnibus Fee Rules** – no changes from last year
 
@@ -25,7 +21,7 @@ Presenter: [[Tracie Bent]], Chief Planning and Policy Officer, [[State Board of 
 
 080203-128 Review of curricular materials – bring in educators to evaluate materials & adherence to standards, school districts can use this statewide list or use their own process
 
-**[[Career Technical Education]] Omnibus Rules** – only renewing 2 of the 4 existing chapters
+**Career Technical Education Omnibus Rules** – only renewing 2 of the 4 existing chapters
 
 Only renewing these two based on statutory requirements & board policy
 
@@ -45,9 +41,9 @@ Enrollment FTE Temporary Rule – Discuss today, feedback tomorrow
 
 Temporary Rule – will come back next year as Pending Rule
 
-[[Idaho Legislature|Legislature]] doesn’t usually see temporary rules during session unless agencies ask them to. [[State Board of Education|SBOE]] intends for this to expire at the end of the year, as background for the new rule next year.
+Legislature doesn’t usually see temporary rules during session unless agencies ask them to. SBOE intends for this to expire at the end of the year, as background for the new rule next year.
 
-Last year’s House Bill 293 – beginning changing from [[average daily attendance]] (ADA) to enrollment funding. Began collecting data for this purpose.
+Last year’s House Bill 293 – beginning changing from average daily attendance (ADA) to enrollment funding. Began collecting data for this purpose.
 
 FTE = Full Time Equivalent
 
@@ -59,7 +55,7 @@ Numbers will be turned in by school districts in Oct & Nov. Board will be able t
 
 Set to expire at end of session. What would the Ed committees like this to look like next year?
 
-Pres. [[Debbie Critchfield]] – board staff collected input from around the state, end of summer decided they needed more info.
+Pres. Debbie Critchfield – board staff collected input from around the state, end of summer decided they needed more info.
 
 Bill directed Board to use courses - Not any easy definition of “course” between various schools.
 
@@ -71,7 +67,7 @@ ISC 33.10.27 set out enrollment reporting criteria.
 
 Full time enrollment – no student is more than 1 enrollment unless also in afterschool or evening
 
-Enrollment numbers based on courses they are enrolled in. Simpler numbers, but - Discrepancies between schools, [[charter schools]], etc. Length of week, block schedule, course period length, LOTS OF FLEXIBILITY/VARIABILITY between the various districts.
+Enrollment numbers based on courses they are enrolled in. Simpler numbers, but - Discrepancies between schools, charter schools, etc. Length of week, block schedule, course period length, LOTS OF FLEXIBILITY/VARIABILITY between the various districts.
 
 New temporary rule is based on courses, but accounts for how long courses are. Minutes based.
 
@@ -83,7 +79,7 @@ In normal circumstances, they ask for temporary rules to be extended. With this 
 
 Full Summer school enrollment can qualify for an additional .25 FTE
 
-[[House member|Rep.]] [[Gary Marshall]] Question – would it be worth changing the law to allow students to be more than 1 FTE? Yes, it would make the math easier and simplify the rules
+Rep. Gary Marshall Question – would it be worth changing the law to allow students to be more than 1 FTE? Yes, it would make the math easier and simplify the rules
 
 But Increasing per student to >1 could have impacts on money. Legislature hasn’t wanted a bunch of districts with students at 1.1 to maximize their revenue.
 
@@ -109,12 +105,12 @@ Districts build schedules before the end of the previous year. This lets them ch
 
 Goal is to equitably divide funds between schools. Relatively few students are split between districts, but currently individual schools are negotiating for dollars based on which courses the students are taking. New system would transparently record where all students are spending their time.
 
-Rep [[Steve Berch]] thinks that these split students could be dealt with in an exception process rather than generating this formula for every single student? [[David Hill]] response: the formula is pretty straightforward for or typical students, we don’t have to do any of the fancy math.
+Rep Steve Berch thinks that these split students could be dealt with in an exception process rather than generating this formula for every single student? David Hill response: the formula is pretty straightforward for or typical students, we don’t have to do any of the fancy math.
 
 What’s happening tomorrow:
 
 Once committee reviews FTE rule, they can give feedback for what they would like to see in the rule next year.
 
-[[school superintendents|Superintendents]] will be giving their notes as well.
+Superintendents will be giving their notes as well.
 
 Next year’s rule is expected to be a “fine tuning’ of this rule, but with the legislature who knows honestly lol 

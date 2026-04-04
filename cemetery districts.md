@@ -1,6 +1,3 @@
 ---
-tags:
-  - governments/taxingdistrict
 ---
-
-[[taxing districts]] for [[cemeteries]] 
+taxing districts for cemeteries 

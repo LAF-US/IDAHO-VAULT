@@ -1,1 +1,1 @@
-[[Department of Fish and Game|Idaho Fish and Game]] PIO 
+Idaho Fish and Game PIO 

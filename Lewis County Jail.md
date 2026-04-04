@@ -1,1 +1,1 @@
-[[County Sheriff]], [[Lewis County]] [[jails|jail]]
+County Sheriff, Lewis County jail

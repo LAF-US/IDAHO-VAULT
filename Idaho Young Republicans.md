@@ -1,9 +1,3 @@
 ---
-tags:
-  - party/republican
-aliases:
-  - IYR
-  - Young Republicans
-  - Young Republicans of Idaho
 ---
-Youth affiliate of the [[Idaho Republican Party]]
+Youth affiliate of the Idaho Republican Party

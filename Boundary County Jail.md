@@ -1,1 +1,1 @@
-[[County Sheriff]], [[Boundary County]] [[jails|jail]]
+County Sheriff, Boundary County jail

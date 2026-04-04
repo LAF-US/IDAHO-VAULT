@@ -1,8 +1,3 @@
 ---
-tags:
-  - people/elected
-  - party/republican
-  - people/elected/legislative
-  - people
 ---
-Residence: [[Dalton Gardens]]
+Residence: Dalton Gardens

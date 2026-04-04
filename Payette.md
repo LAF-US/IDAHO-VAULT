@@ -1,6 +1,3 @@
 ---
-tags:
-  - governments/city
-  - geography/land/city
 ---
-Seat of [[Payette County]] 
+Seat of Payette County 

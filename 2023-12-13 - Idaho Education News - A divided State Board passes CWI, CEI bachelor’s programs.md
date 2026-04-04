@@ -1,12 +1,9 @@
 ---
 author:
-  - "[[Kevin Richert]]"
+  - "Kevin Richert"
 outlet:
-  - "[[Idaho Education News]]"
+  - "Idaho Education News"
 URL: https://www.idahoednews.org/top-news/a-divided-state-board-passes-cwi-cei-bachelors-programs/
-tags:
-  - media/articles
-  - 2023/12/13
 ---
 Supporters touted the promise of getting more students into college, and serving workforce needs.
 
@@ -47,6 +44,6 @@ The State Board will be back at work first thing Thursday morning — but behind
 
 The board will meet in executive session to interview the five finalists for the Idaho State president’s job.
 
-Under [[Idaho Code|state law]], the board can’t hire a new president in closed session. The board will have to vote on that hire in open session at a later date.
+Under state law, the board can’t hire a new president in closed session. The board will have to vote on that hire in open session at a later date.
 
 The board hopes to hire a new president by the end of the year. President Kevin Satterlee is retiring on Dec. 31.

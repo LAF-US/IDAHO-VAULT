@@ -1,1 +1,1 @@
-[[Virgil]], [[Aeneid]]
+Virgil, Aeneid

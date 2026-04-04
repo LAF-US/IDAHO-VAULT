@@ -1,5 +1,3 @@
 ---
-aliases:
-  - EIRMC
 ---
-[[Idaho Falls]] [[hospitals|hospital]] 
+Idaho Falls hospital 

@@ -1,8 +1,8 @@
-[[Bible]]
-[[Torah]] 
-[[Quran]] 
+Bible
+Torah 
+Quran 
 
-[[religion]]
-[[religiosity]]
-[[canon]]
-[[doctrine]]
+religion
+religiosity
+canon
+doctrine

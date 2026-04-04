@@ -1,22 +1,19 @@
 ---
 author:
-  - "[[Anne Helen Petersen]]"
+  - "Anne Helen Petersen"
 outlet:
-  - "[[Buzzfeed News]]"
+  - "Buzzfeed News"
 URL: https://www.buzzfeednews.com/article/annehelenpetersen/antifa-rumors-george-floyd-protests
-tags:
-  - media/articles
-  - 2020/06/09
 ---
-*Rumors of roving bands of [[Antifa]] have followed small protests all over the United States. Why are people so ready to believe them?*
+*Rumors of roving bands of Antifa have followed small protests all over the United States. Why are people so ready to believe them?*
 
-The rumor that shadowy leftists planned to start trouble in Great Falls, Montana, first appeared on the [[Facebook]] group of the Montana Liberty Coalition late last Wednesday afternoon.
+The rumor that shadowy leftists planned to start trouble in Great Falls, Montana, first appeared on the Facebook group of the Montana Liberty Coalition late last Wednesday afternoon.
 
-“Heads up,” a man named Wayne Ebersole, who owns a local cover crop business, wrote. “Rumor has it that [[Antifa]] has scheduled a protest in Great Falls Friday evening at 5 p.m. in front of the Civic Center.” He asked the group if anyone had any more information, or if anyone was available to “protect businesses.”
+“Heads up,” a man named Wayne Ebersole, who owns a local cover crop business, wrote. “Rumor has it that Antifa has scheduled a protest in Great Falls Friday evening at 5 p.m. in front of the Civic Center.” He asked the group if anyone had any more information, or if anyone was available to “protect businesses.”
 
 “It has been confirmed through the police department,” one commenter replied. “They have a permit for tomorrow night and are in town now.”
 
-They weren’t. Police later said they had been “working to quell the rumor.” But that didn’t stop it from sweeping across various right-wing groups. Within 24 hours, a screenshot of Ebersole’s post had been posted to the [[Facebook]] Group for the Montana Militia, whose members have recently dedicated themselves to tracking the perceived threat of antifa all over the state, including coordinating armed responses to “protect” their towns. (Ebersole did not respond to a request for comment.)
+They weren’t. Police later said they had been “working to quell the rumor.” But that didn’t stop it from sweeping across various right-wing groups. Within 24 hours, a screenshot of Ebersole’s post had been posted to the Facebook Group for the Montana Militia, whose members have recently dedicated themselves to tracking the perceived threat of antifa all over the state, including coordinating armed responses to “protect” their towns. (Ebersole did not respond to a request for comment.)
 
 And by Friday at 5 p.m., as about 500 protesters gathered to protest systemic racism and police brutality, a handful of armed men had massed at the edge of the demonstration.“We heard that a little group called Antifa wanted to show up and not in our town,” one man, who declined to be named, told the Great Falls Tribune. “All it takes is a word and a whisper.”
 
@@ -24,9 +21,9 @@ As protests against police brutality and in support of Black Lives Matter contin
 
 To be clear: All of these rumors were false. They were all, as the Deschutes County Sheriff’s Office put it, “fourth-hand information.” To combat them, police departments in dozens of towns are holding press conferences, posting announcements on social media, and telling anyone who calls the station that there has been no indication of a planned presence from antifa or any other outside agitators, whether “from Chicago” (code, in many parts of the Midwest, for black people) or “from Seattle” (code for liberals).
 
-Yet these rumors continue to spread. That spread is facilitated by [[Facebook]] — where they thrive in groups whose previous focus was protesting pandemic-related shutdowns and circulating conspiracy theories about COVID-19 — and fanned by President Donald Trump, who recently declared his intention to label antifa a terrorist group. This morning, the president raised the antifa menace yet again, tweeting that the protester violently shoved by police in Buffalo, New York, “could be an ANTIFA.” (He was not.)
+Yet these rumors continue to spread. That spread is facilitated by Facebook — where they thrive in groups whose previous focus was protesting pandemic-related shutdowns and circulating conspiracy theories about COVID-19 — and fanned by President Donald Trump, who recently declared his intention to label antifa a terrorist group. This morning, the president raised the antifa menace yet again, tweeting that the protester violently shoved by police in Buffalo, New York, “could be an ANTIFA.” (He was not.)
 
-But the persistence of these rumors suggests a deeper fear of outside incursion, and the necessity of an ever-alert, armed response. As encapsulated in a [[Reddit]] thread out of Hood River, Oregon: “I’ll say this much: The people out here are armed to the teeth. If you want to bring mayhem to this area, the end result will likely have you begging for police protection.”
+But the persistence of these rumors suggests a deeper fear of outside incursion, and the necessity of an ever-alert, armed response. As encapsulated in a Reddit thread out of Hood River, Oregon: “I’ll say this much: The people out here are armed to the teeth. If you want to bring mayhem to this area, the end result will likely have you begging for police protection.”
 
 Antifa has become the right’s face of violent leftist protest in the United States, sloppily aligned with, as the president put it on June 1, “professional anarchists, violent mobs, arsonists, looters, criminals, rioters.” In a tweet, Trump claimed the national guard had “shut down” the “ANTIFA led anarchists, among others.” (The DC field office of the FBI reported no antifa involvement in protests, according to the Nation.)
 
@@ -42,7 +39,7 @@ The antifa threat has also been co-opted by QAnon, the nation’s most powerful 
 
 Argentino has been noticing something else, too: a growing cross-pollination between QAnon, which is often referred to simply as a conspiracy group, and more far-right extremist groups, from the so-called Boogaloo Bois and Proud Boys to more straightforward militias.
 
-This intermingling was on display at the Reopen Michigan protests, where American flags waved alongside Confederate ones. And you can see it now all over the West, where the groups that advocated for reopening — often attracting a motley mix of constitutionalists, “patriots,” anti-vaxxers, Second Amendment advocates, anti-government advocates, and just straight up pissed off business people — have shifted their focus to “protection.” In the Tri-Cities area of Central Washington, the shift is so explicit that the [[Facebook]] group “Reopen Tri-Cities” has shifted, wholescale, to a second group called “Protect the Tri.”
+This intermingling was on display at the Reopen Michigan protests, where American flags waved alongside Confederate ones. And you can see it now all over the West, where the groups that advocated for reopening — often attracting a motley mix of constitutionalists, “patriots,” anti-vaxxers, Second Amendment advocates, anti-government advocates, and just straight up pissed off business people — have shifted their focus to “protection.” In the Tri-Cities area of Central Washington, the shift is so explicit that the Facebook group “Reopen Tri-Cities” has shifted, wholescale, to a second group called “Protect the Tri.”
 
 In Montana, most of the rumors of antifa presence in the state can be traced back to state Sen. Jennifer Fielder, who warned her followers on June 1 of “multiple reports from credible witnesses” that five white panel vans of antifa were on their way to Coeur d’Alene, Idaho, and would then proceed to Missoula, Montana. Fielder, who lives in Northwest Montana, is known across the state for ultra-right, “liberty-minded” views on everything from public lands (they should be sold) to contact tracing (a form of governmental overreach).
 
@@ -56,7 +53,7 @@ Travis McAdam, who’s tracked anti-government and hate groups for 15 years with
 
 Put differently: Militia members get to plan, anticipate, and enact the idea at the foundation of their existence. And they get to do it in a way that positions them as “the good guys,” fighting a cowardly bogeyman easily vanquished by show of force alone. As a popular meme circulating in North Idaho put it, “Remember that time when Antifa said they were coming to Coeur d’Alene / And everyone grabbed their guns and they didn’t come? That was awesome!” It doesn’t matter if antifa was never coming in the first place. They didn’t come, and that’s evidence of victory.
 
-And that victory can then be leveraged into further action — and a means to extend the fantasy. On the Montana Militia page, a man named Tom Allen, whose home is listed on [[Facebook]] as Wibaux, Montana, posted that he’d spent the night in Dickenson, North Dakota, “protecting” the veterans monument during a planned protest. A group of bikers showed up to guard the nearby mall, protecting “all of Antifa’s usual targets.” There was no incident. (Allen did not respond to request for comment.)
+And that victory can then be leveraged into further action — and a means to extend the fantasy. On the Montana Militia page, a man named Tom Allen, whose home is listed on Facebook as Wibaux, Montana, posted that he’d spent the night in Dickenson, North Dakota, “protecting” the veterans monument during a planned protest. A group of bikers showed up to guard the nearby mall, protecting “all of Antifa’s usual targets.” There was no incident. (Allen did not respond to request for comment.)
 
 Afterward, Allen wrote, a man who had helped coordinate the defense followed a group of perceived antifa to an Applebee’s, where he said he overheard them talking about “the waitress and how they wanted to rape her,” “killing cops” and “other violence,” and their future plans: “They’re saying there’s going to be a ‘firestorm’ in Billings this weekend.” The post was shared more than 1,800 times.
 
@@ -64,9 +61,9 @@ Like Argentino, the online researcher, McAdam sees this current “protect” mo
 
 “That dynamic is very similar to what’s happening now,” McAdam said. “A core group of people coming from the anti-government movement are always looking for a crisis, where you have a divisive issue in the community that they can tap into and exploit. The COVID pandemic was one thing, and now we’ve got another avenue.” And people who might not ever consider themselves “militia” or even anti-government, who might have joined a reopen group in frustration, are now exposed, and perhaps more receptive, to rumors of roaming antifa in need of rebuke.
 
-“You can really see that in the [[Facebook]] groups,” dozens of which McAdam monitors. “I would see people posting early on a Tuesday morning, saying, ‘I don’t know if this Antifa rumor is real,’ and then later in the day, they’d be like, ‘Well, I dunno if I believe this, but I’m going to go drive around Missoula and look for these Antifa vans.’”
+“You can really see that in the Facebook groups,” dozens of which McAdam monitors. “I would see people posting early on a Tuesday morning, saying, ‘I don’t know if this Antifa rumor is real,’ and then later in the day, they’d be like, ‘Well, I dunno if I believe this, but I’m going to go drive around Missoula and look for these Antifa vans.’”
 
-When someone in your [[Facebook]] feed posts a warning to be on the lookout for antifa in your small town, it might seem like low-stakes nonsense. But beneath such a seemingly silly rumor lurks a larger ideological iceberg: the idea that radical leftists are out to defile and destroy, and the only recourse against them is an armed, unrestricted militia. QAnon theory builds on this, suggesting that all of it — the protests, the police reaction, the presence of antifa — has been preordained as part of a coming mass destruction
+When someone in your Facebook feed posts a warning to be on the lookout for antifa in your small town, it might seem like low-stakes nonsense. But beneath such a seemingly silly rumor lurks a larger ideological iceberg: the idea that radical leftists are out to defile and destroy, and the only recourse against them is an armed, unrestricted militia. QAnon theory builds on this, suggesting that all of it — the protests, the police reaction, the presence of antifa — has been preordained as part of a coming mass destruction
 
 And QAnon isn’t just a niche conspiracy theory. Tweets from its proponents are regularly retweeted by the president. At least 50 current or former candidates for Congress, plus the Republican nominee for the US Senate in Oregon, are public QAnon supporters. And that doesn’t even include candidates running on the state or local level.
 

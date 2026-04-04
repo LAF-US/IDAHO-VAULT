@@ -1,5 +1,3 @@
 ---
-tags:
-  - administration/routing
 ---
-[[MAGNUS]][[SWARM]][[BROADCAST]]
+MAGNUSSWARMBROADCAST

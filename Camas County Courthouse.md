@@ -1,1 +1,1 @@
-[[magistrate court]] [[Camas County]] [[courthouses|courthouse]] 
+magistrate court Camas County courthouse 

@@ -1,5 +1,3 @@
 ---
-tags:
-  - geography/land/places/communities
 ---
-[[Payette County]] 
+Payette County 

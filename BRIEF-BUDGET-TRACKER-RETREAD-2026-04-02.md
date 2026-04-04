@@ -3,7 +3,7 @@ title: "BRIEF - Budget Tracker Retread"
 created: 2026-04-02
 updated: 2026-04-02
 status: active
-authority: "[[LOGAN]]"
+authority: "LOGAN"
 author: 'OpenAI Codex App Agent "BROTHER"'
 partner: 'OpenAI Codex App Agent "SISTER"'
 linear_id: "LAF-25"
@@ -11,11 +11,6 @@ type: brief
 source: budget-tracker/retread
 related:
   - LAF-25
-tags:
-  - administration/brief
-  - budget/bill-tracker
-  - budget/provenance
-  - budget/excel
 ---
 
 # BRIEF - Budget Tracker Retread

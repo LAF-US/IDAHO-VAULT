@@ -1,10 +1,8 @@
 ---
-tags:
-  - Category/Facet/Articles
 ---
 # William Borah: A Featured Biography
 
-Senator [[William Borah|William E. Borah]] was affectionately known as the "**Lion of Idaho**" during his 33 years in the United States Senate. Elected as a Republican in 1907, Borah established himself as a prominent progressive with a fiercely independent spirit. This superb orator who had a knack for courting publicity was once named by *Time* magazine as the "most famed senator of the century." Despite his leading role in the creation of two constitutional amendments—*establishing the graduated income tax and the direct election of senators*—Borah is best remembered for his unwavering opposition to the so-called Susan B. Anthony amendment *granting women the right to vote*. As a 10-year chairman of the Foreign Relations Committee, Borah also shaped American foreign policy in the period between the world wars. An isolationist, Borah helped organize opposition to the Treaty of Versailles, which the Senate resoundingly rejected in 1919. In January 1940, Borah suffered a brain hemorrhage and died. [[1940 Borah - "Lion of Idaho" Laid to Rest|His funeral service was held in the U.S. Senate Chamber.]]
+Senator William E. Borah was affectionately known as the "**Lion of Idaho**" during his 33 years in the United States Senate. Elected as a Republican in 1907, Borah established himself as a prominent progressive with a fiercely independent spirit. This superb orator who had a knack for courting publicity was once named by *Time* magazine as the "most famed senator of the century." Despite his leading role in the creation of two constitutional amendments—*establishing the graduated income tax and the direct election of senators*—Borah is best remembered for his unwavering opposition to the so-called Susan B. Anthony amendment *granting women the right to vote*. As a 10-year chairman of the Foreign Relations Committee, Borah also shaped American foreign policy in the period between the world wars. An isolationist, Borah helped organize opposition to the Treaty of Versailles, which the Senate resoundingly rejected in 1919. In January 1940, Borah suffered a brain hemorrhage and died. His funeral service was held in the U.S. Senate Chamber.
 
 ---
 

@@ -1,7 +1,4 @@
 ---
-tags:
-  - administration/protocol
-  - administration/orient
 version: v0.1
 adopted: 2026-03-22
 status: active

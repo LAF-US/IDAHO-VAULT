@@ -1,5 +1,3 @@
 ---
-tags:
-  - people
 ---
-[[Saint Alphonsus Health System]] President and CEO 
+Saint Alphonsus Health System President and CEO 

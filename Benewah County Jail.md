@@ -1,1 +1,1 @@
-[[County Sheriff]], [[Benewah County]] [[jails|jail]]
+County Sheriff, Benewah County jail

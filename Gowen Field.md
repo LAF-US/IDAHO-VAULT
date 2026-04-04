@@ -1,5 +1,3 @@
 ---
-tags:
-  - geography/land/places
 ---
-[[Boise]] [[military]] 
+Boise military 

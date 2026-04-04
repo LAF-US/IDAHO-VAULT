@@ -1,8 +1,8 @@
-![[IdahoCutDiagram.jpg]]
+!IdahoCutDiagram.jpg
 
 # MASTHEAD
 
-**[[index|The Gemstone]]** is an independent outlet about [[Idaho]]. Well, it's about much more than that.
+**The Gemstone** is an independent outlet about Idaho. Well, it's about much more than that.
 
 ---
 
@@ -16,6 +16,6 @@
 >
 >*you are a subject and not a citizen.*
 >
->— **U.S. Sen. [[William Borah|William E. Borah]]**, 1917
+>— **U.S. Sen. William E. Borah**, 1917
 
 --- 

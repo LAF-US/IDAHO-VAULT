@@ -50,7 +50,7 @@
 
 - All committed content is **on the record** and **publishable**.
 - Markdown = human product (Logan). Python = machine product (Claude).
-- Wikilinks (`[[Full Name]]`) for all internal references.
+- Wikilinks (`Full Name`) for all internal references.
 - Branch naming: `claude/description-sessionId`.
 
 ## Context Injection

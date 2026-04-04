@@ -1,8 +1,5 @@
 ---
-aliases:
-  - Third Judicial District
 ---
+Adams, Canyon, Gem, Owyhee, Payette, Washington
 
-[[Adams County|Adams]], [[Canyon County|Canyon]], [[Gem County|Gem]], [[Owyhee County|Owyhee]], [[Payette County|Payette]], [[Washington County|Washington]]
-
-One of the seven [[Judicial Districts]].
+One of the seven Judicial Districts.

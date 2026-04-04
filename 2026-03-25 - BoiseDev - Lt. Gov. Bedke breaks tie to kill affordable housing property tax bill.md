@@ -1,7 +1,7 @@
 ---
 source: "https://boisedev.com/news/2026/03/24/bedke-tie-affordable/"
 author:
-  - "[[Margaret Carmel - BoiseDev Sr. Reporter]]"
+  - "Margaret Carmel - BoiseDev Sr. Reporter"
 published: 2026-03-25
 created: 2026-03-30
 ---

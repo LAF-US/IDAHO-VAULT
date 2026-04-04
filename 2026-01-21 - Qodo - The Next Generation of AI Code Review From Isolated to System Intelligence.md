@@ -1,7 +1,7 @@
 ---
 source: "https://www.qodo.ai/blog/the-next-generation-of-ai-code-review-from-isolated-to-system-intelligence/?utm_campaign=331946206-2026-02-Onboarding%20Emails&utm_source=email&utm_medium=email"
 author:
-  - "[[Bar Fingerman]]"
+  - "Bar Fingerman"
 published: 2026-01-21
 created: 2026-03-31
 ---

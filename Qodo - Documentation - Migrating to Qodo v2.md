@@ -1,7 +1,7 @@
 ---
 source: "https://docs.qodo.ai/code-review/migrating-to-qodo-v2"
 author:
-  - "[[Qodo Documentation]]"
+  - "Qodo Documentation"
 published:
 created: 2026-03-29
 ---

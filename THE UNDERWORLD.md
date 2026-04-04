@@ -1,4 +1,4 @@
-[[REALM]] [[of]] [[THE DEAD]]
+REALM of THE DEAD
 
 ---
-[["The world is quiet here."]]
+"The world is quiet here."

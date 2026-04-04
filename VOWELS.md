@@ -1,2 +1,2 @@
-[[A]][[E]][[I]][[O]][[U]]([[Y]])
+AEIOU(Y)
 dipole : consonants

@@ -1,20 +1,15 @@
 ---
-aliases:
-  - Help the Idaho Statesman and ProPublica report on deteriorating public schools
 author:
-  - "[[Becca Savransky]]"
-  - "[[Asia Fields]]"
+  - "Becca Savransky"
+  - "Asia Fields"
 outlet:
-  - "[[Idaho Statesman]]"
-  - "[[ProPublica]]"
+  - "Idaho Statesman"
+  - "ProPublica"
 URL: https://www.idahostatesman.com/news/local/education/article274241585.html
-tags:
-  - media/articles
-  - 2023/12/15
 ---
 Students and educators in Idaho describe challenging conditions in schools: bats getting in through a window casing; classrooms that are “sweltering” in the fall; an HVAC unit nearly catching fire; basements flooding during heavy rain; a lack of accessible bathrooms; and, in at least two districts, coal heating systems triggering people’s asthma. 
 
-Idaho ranks last in the nation in school [[infrastructure]] spending per student, according to a state report. The Idaho Statesman and ProPublica are looking at what this means for students and educators. Through reporting the truth, we hope to improve the lives of students and Idaho communities. 
+Idaho ranks last in the nation in school infrastructure spending per student, according to a state report. The Idaho Statesman and ProPublica are looking at what this means for students and educators. Through reporting the truth, we hope to improve the lives of students and Idaho communities. 
 
 So far, we’ve heard from about 80% of superintendents in the state and all shared at least one significant or major facilities issue in their districts. Educators and students have told us how these issues affect them — and how they’ve continued learning despite the challenges. 
 
@@ -59,4 +54,4 @@ Some tips:
 	- *Two buckets hang inside the ceiling at Valley View to collect water from leaking pipes.* 
 	- *Buckets hang from the ceiling in the main hallway to collect leaking water at Valley View Elementary in Bonners Ferry, Idaho.*
 	- A good example of a photo description: *Steve Bortz, Valley View Elementary’s head of maintenance, shines a light to show two buckets hanging inside a hallway ceiling to collect water leaking from pipes.* 
-	- These photos were taken on Jan. 22, 2023, by [[Sarah Miller]] of the Idaho Statesman.*
+	- These photos were taken on Jan. 22, 2023, by Sarah Miller of the Idaho Statesman.*

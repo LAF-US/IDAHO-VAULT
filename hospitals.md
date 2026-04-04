@@ -1,5 +1,3 @@
 ---
-aliases:
-  - hospital
 ---
-large [[health care]] centers 
+large health care centers 

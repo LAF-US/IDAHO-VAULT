@@ -1,5 +1,4 @@
 ---
-tags: []
 ---
-[[Lauren Necochea]] 
+Lauren Necochea 
 - 

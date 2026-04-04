@@ -1,1 +1,1 @@
-adj; [[SOURCE]] W/ [[AUTHORITY]]
+adj; SOURCE W/ AUTHORITY

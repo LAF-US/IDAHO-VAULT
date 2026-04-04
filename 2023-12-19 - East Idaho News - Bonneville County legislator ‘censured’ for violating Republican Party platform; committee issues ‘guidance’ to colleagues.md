@@ -1,34 +1,31 @@
 ---
 author:
-  - "[[Rett Nelson]]"
+  - "Rett Nelson"
 outlet:
-  - "[[East Idaho News]]"
+  - "East Idaho News"
 URL: https://www.eastidahonews.com/2023/12/bonneville-county-legislator-censured-for-violating-republican-party-platform-committee-issues-guidance-to-colleagues/
-tags:
-  - media/articles
-  - 2023/12/19
 ---
-IDAHO FALLS — The committee that oversees [[Legislative District 32]] is urging their state lawmakers to reaffirm their commitment to the [[Idaho Republican Party|Republican Party]] in 2024.
+IDAHO FALLS — The committee that oversees Legislative District 32 is urging their state lawmakers to reaffirm their commitment to the Republican Party in 2024.
 
-Several months ago, District 32 Sen. [[Kevin Cook]], along with Rep. [[Stephanie Mickelsen]] and Rep. [[Wendy Horman]] were informed there were numerous complaints against them alleging they violated the party platform because of the way they voted on certain bills during the [[2023 legislative session]].
+Several months ago, District 32 Sen. Kevin Cook, along with Rep. Stephanie Mickelsen and Rep. Wendy Horman were informed there were numerous complaints against them alleging they violated the party platform because of the way they voted on certain bills during the 2023 legislative session.
 
-Per party rules, the [[Legislative District 32]] committee, which is under the umbrella of the [[Bonneville County Republican Central Committee|Bonneville County Republican Party]], scheduled a public hearing to address the complaints and give each lawmaker a chance to account for their vote. None of the legislators ended up attending but the Special Investigation Committee appointed to look into the matter did present their recommendations.
+Per party rules, the Legislative District 32 committee, which is under the umbrella of the Bonneville County Republican Party, scheduled a public hearing to address the complaints and give each lawmaker a chance to account for their vote. None of the legislators ended up attending but the Special Investigation Committee appointed to look into the matter did present their recommendations.
 
 After looking at all the information during a closed-door session last week, the committee voted and sent a resolution of guidance to Horman and Cook. Mickelsen received a resolution of censure.
 
-Bonneville County GOP Chairman [[Nick Contos]] explained what this means during a conversation with [[East Idaho News|EastIdahoNews.com]]. He says these documents — none of which are legally binding — are an expression of the committee’s concerns about their votes.
+Bonneville County GOP Chairman Nick Contos explained what this means during a conversation with EastIdahoNews.com. He says these documents — none of which are legally binding — are an expression of the committee’s concerns about their votes.
 
 “(A resolution of guidance) is basically a statement that says the political party that you affiliate with is encouraging you to vote (a certain) way or to take a stronger stance on an issue,” Contos says.
 
 A resolution of censure is a public statement of dissatisfaction with an elected official’s performance, says Contos.
 
-“Representative Mickelsen’s voting appears to be drawn toward the [[Idaho Democratic Party|Democrat Party]] and away from mainstream Republican votes as evidenced by constituent complaints on 13 different bills,” the committee says in documents sent to Mickelsen. “(She) seems to have no interest in the party’s concerns over her voting record.”
+“Representative Mickelsen’s voting appears to be drawn toward the Democrat Party and away from mainstream Republican votes as evidenced by constituent complaints on 13 different bills,” the committee says in documents sent to Mickelsen. “(She) seems to have no interest in the party’s concerns over her voting record.”
 
 ![mickelsen docs 1](https://s3.us-west-2.amazonaws.com/assets.eastidahonews.com/wp-content/uploads/2023/12/mickelsen-docs-1.jpg)
 
 ![Mickelsen docs 2](https://s3.us-west-2.amazonaws.com/assets.eastidahonews.com/wp-content/uploads/2023/12/Mickelsen-docs-2.jpg)
 
-*Resolution of censure sent to Rep. [[Stephanie Mickelsen]] | Courtesy [[Doyle Beck]]*
+*Resolution of censure sent to Rep. Stephanie Mickelsen | Courtesy Doyle Beck*
 
 In public documents, the committee calls on Mickelsen to “reaffirm her commitment” to the party and to “consider the platform when evaluating proposed legislation.”
 
@@ -48,9 +45,9 @@ The four complaints against Cook remained in place due to numerous concerns outl
 
 ![cook page 3](https://s3.us-west-2.amazonaws.com/assets.eastidahonews.com/wp-content/uploads/2023/12/cook_page-3.jpg)
 
-*Resolution of guidance sent to Senator Kevin Cook | Courtesy [[Doyle Beck]]*
+*Resolution of guidance sent to Senator Kevin Cook | Courtesy Doyle Beck*
 
-[[East Idaho News|EastIdahoNews.com]] reached out to each of the legislators about the committee’s decision. Horman declined to comment. Cook and Mickelsen sent a statement in response.
+EastIdahoNews.com reached out to each of the legislators about the committee’s decision. Horman declined to comment. Cook and Mickelsen sent a statement in response.
 
 Cook explained the reasoning behind his vote on several bills and said the reason he didn’t attend the hearing is because Committee Chairman Doyle Beck informed him there were 10 allegations against him without any guarantee there would be a public hearing or vote on the matter.
 
@@ -84,4 +81,4 @@ Contos also points out that LD32 committee members are elected by the same peopl
 
 As District 32 chairman, Beck is elected by the committee and does not have any voting power unless there is a tie.
 
-District 32 and 33 legislators held a Town Hall meeting in building 6 of the [[College of Eastern Idaho]] earlier this month. District 33 Rep. Barbara Ehardt was not in attendance due to a previous commitment.
+District 32 and 33 legislators held a Town Hall meeting in building 6 of the College of Eastern Idaho earlier this month. District 33 Rep. Barbara Ehardt was not in attendance due to a previous commitment.

@@ -1,13 +1,9 @@
 ---
 author:
-  - "[[Logan Finney]]"
+  - "Logan Finney"
 outlet:
-  - "[[Idaho Reports]]"
+  - "Idaho Reports"
 URL: https://blog.idahoreports.idahoptv.org/2023/07/07/parties-prep-for-presidential-caucus-special-session-not-likely/
-tags:
-  - media/articles
-  - 2023/07/07
-  - 2024/election
 ---
 Both the Republican and Democratic parties have called on Idaho lawmakers to reinstate the state’s presidential primary for 2024 – but without an agreement on when to hold it, the chances of a special session this summer are slim.
 

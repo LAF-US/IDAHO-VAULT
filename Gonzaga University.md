@@ -1,5 +1,3 @@
 ---
-tags:
-  - schools/colleges/private
 ---
-[[Spokane]] [[Washington]] Jesuit college 
+Spokane Washington Jesuit college 

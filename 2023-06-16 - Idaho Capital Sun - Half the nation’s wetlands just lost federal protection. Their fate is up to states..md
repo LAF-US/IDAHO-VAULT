@@ -1,21 +1,18 @@
 ---
 author:
-  - "[[Alex Brown]]"
+  - "Alex Brown"
 outlet:
-  - "[[States Newsroom]]"
-  - "[[Idaho Capital Sun]]"
+  - "States Newsroom"
+  - "Idaho Capital Sun"
 URL: https://idahocapitalsun.com/2023/06/16/half-the-nations-wetlands-just-lost-federal-protection-their-fate-is-up-to-states/
-tags:
-  - media/articles
-  - 2023/06/16
 ---
 ## Supreme Court’s narrowing of the Clean Water Act has left some states scrambling to enact safeguards and others questioning whether regulators can handle workload 
 
 States’ to-do lists just got a little longer: Decide how — or whether — to oversee building, planting and water quality in some wetland areas.
 
-Last month, a [[U.S. Supreme Court]] decision struck down federal protections for wetlands covering tens of millions of acres across the country, leaving no regulation of those areas in nearly half the states.
+Last month, a U.S. Supreme Court decision struck down federal protections for wetlands covering tens of millions of acres across the country, leaving no regulation of those areas in nearly half the states.
 
-The court’s narrowing of the [[Clean Water Act]] has left some states scrambling to enact their own safeguards and others questioning whether their regulators can handle the workload without their federal partners.
+The court’s narrowing of the Clean Water Act has left some states scrambling to enact their own safeguards and others questioning whether their regulators can handle the workload without their federal partners.
 
 Other states, though, see the loss of federal oversight as an opportunity to roll back corresponding state laws at the behest of developers and farmers, who argue such regulations are overly burdensome.
 
@@ -30,11 +27,11 @@ And in the 19 states with broad wetlands protections, environmental regulators w
 ### ‘States are going to need to step up’ after Supreme Court’s WOTUS decision
 The court’s ruling found that the U.S. Environmental Protection Agency improperly claimed authority over an Idaho couple’s effort to build a house on their property. The decision limits the scope of wetlands covered by the Clean Water Act to those with a continuous surface connection to a larger body of water. It also cut protections for “ephemeral” streams that only flow seasonally.
 
-More than half of the country’s 118 million acres of wetlands could be stripped from federal oversight, estimates [[Earthjustice]], an environmental legal group. Advocates say the ruling ignores the fact that water often flows below ground, meaning unregulated wetlands could spread contamination to nearby lakes and rivers that the law does safeguard.
+More than half of the country’s 118 million acres of wetlands could be stripped from federal oversight, estimates Earthjustice, an environmental legal group. Advocates say the ruling ignores the fact that water often flows below ground, meaning unregulated wetlands could spread contamination to nearby lakes and rivers that the law does safeguard.
 
 “Where the Supreme Court is tying the hands of the federal government to provide safe, clean water, the states are going to need to step up and act to fill the gap,” said Howard Learner, president and executive director of the Environmental Law & Policy Center, a legal advocacy organization in the Midwest.
 
-In Colorado, state lawmakers and officials say they’re committed to restoring protections. State Sen. Dylan Roberts, a Democrat who chairs the Agriculture and Natural Resources Committee, said legislators will be analyzing the issue before next year’s legislative session. Meanwhile, regulators with the Colorado Department of Public Health & Environment have developed a draft policy to protect waters under [[Idaho Code|state law]].
+In Colorado, state lawmakers and officials say they’re committed to restoring protections. State Sen. Dylan Roberts, a Democrat who chairs the Agriculture and Natural Resources Committee, said legislators will be analyzing the issue before next year’s legislative session. Meanwhile, regulators with the Colorado Department of Public Health & Environment have developed a draft policy to protect waters under state law.
 
 “The fact that we have sources of water that are at risk of being contaminated or eliminated because of this Supreme Court decision should be concerning to all of us, and we should try to find the proper way to protect them,” Roberts said. “In the next couple months, we’ll know whether the state department can do this on their own or if they’re going to be making a legislative ask.”
 
@@ -49,7 +46,7 @@ In New Mexico, the state Environment Department already was pursuing its own sur
 ### Limiting state authority
 Other states are attempting to roll back state water laws. North Carolina lawmakers passed a bill this month that would invalidate state wetland protections that go beyond federal regulations.
 
-“The [[Idaho Code|state law]] should be clear that state jurisdiction ends concurrent with the federal [standard],” said Ray Starling, president of the NC Chamber Legal Institute, the legal strategy arm of the business advocacy group. “The mentality and expectation of the General Assembly is that we don’t regulate more stringently than the federal government.”
+“The state law should be clear that state jurisdiction ends concurrent with the federal [standard],” said Ray Starling, president of the NC Chamber Legal Institute, the legal strategy arm of the business advocacy group. “The mentality and expectation of the General Assembly is that we don’t regulate more stringently than the federal government.”
 
 Gov. Roy Cooper, a Democrat, has not indicated whether he will sign the bill.
 
@@ -79,4 +76,4 @@ The agency did not make officials available for an interview.
 
 In Colorado and New Mexico, officials have acknowledged that efforts to enact state protections will require a lot more money in order to increase capacity at regulatory agencies. And in Illinois, advocates pushing for a wetlands law say it would be meaningless if state agencies weren’t able to handle the work.
 
-“If you put in a [[Idaho Code|state law]] that provides specific wetlands protection, that implies a permitting and review system, which is a significant capacity issue,” said Paul Botts, executive director of the Wetlands Initiative, a Chicago-based nonprofit. “There’s no point doing that if the agencies can’t carry it out.”
+“If you put in a state law that provides specific wetlands protection, that implies a permitting and review system, which is a significant capacity issue,” said Paul Botts, executive director of the Wetlands Initiative, a Chicago-based nonprofit. “There’s no point doing that if the agencies can’t carry it out.”

@@ -1,1 +1,1 @@
-[[County Sheriff]], [[Shoshone County]] [[jails|jail]]
+County Sheriff, Shoshone County jail

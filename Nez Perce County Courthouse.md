@@ -1,1 +1,1 @@
-[[magistrate court]] [[Nez Perce County]] [[courthouses|courthouse]] 
+magistrate court Nez Perce County courthouse 

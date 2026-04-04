@@ -1,4 +1,3 @@
 ---
-tags: []
 ---
-[[Ilana Rubel]] 
+Ilana Rubel 

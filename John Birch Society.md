@@ -1,1 +1,1 @@
-anti-[[communism]] organization 
+anti-communism organization 

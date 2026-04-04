@@ -1,10 +1,7 @@
 ---
-tags:
-  - people/idaho/legislature/house
-  - 2026/03/12
 source: commit
 ---
-[[Jason Monks]] is the Republican [[Idaho House of Representatives|Idaho House]] Speaker Pro Tempore from District 22B (Meridian) who made the motion to adopt House Rules only — omitting Joint Rules — at the December 2024 organizational session on [[Mike Moyle]]'s direction.
+Jason Monks is the Republican Idaho House Speaker Pro Tempore from District 22B (Meridian) who made the motion to adopt House Rules only — omitting Joint Rules — at the December 2024 organizational session on Mike Moyle's direction.
 
 ## Basic Info
 
@@ -15,12 +12,12 @@ source: commit
 
 ## Joint Rules Non-Adoption
 
-Made the motion to adopt House Rules only at the December 2024 organizational session, on [[Mike Moyle]]'s direction. Same pattern at December 2025 session. This left [[Joint Finance-Appropriations Committee|JFAC]] without jointly adopted governing rules. See [[Joint Rule Non-Adoption 2024-2025]].
+Made the motion to adopt House Rules only at the December 2024 organizational session, on Mike Moyle's direction. Same pattern at December 2025 session. This left JFAC without jointly adopted governing rules. See Joint Rule Non-Adoption 2024-2025.
 
-District 22B is adjacent to [[Josh Tanner]]'s District 22A — part of the western Ada County power cluster.
+District 22B is adjacent to Josh Tanner's District 22A — part of the western Ada County power cluster.
 
 ## Related Notes
 
-- [[Joint Rule Non-Adoption 2024-2025]]
-- [[Mike Moyle]]
-- [[Joint Finance-Appropriations Committee]]
+- Joint Rule Non-Adoption 2024-2025
+- Mike Moyle
+- Joint Finance-Appropriations Committee

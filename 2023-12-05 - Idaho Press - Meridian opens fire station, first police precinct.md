@@ -1,14 +1,11 @@
 ---
 author:
-  - "[[Carolyn Komatsoulis]]"
+  - "Carolyn Komatsoulis"
 outlet:
-  - "[[Idaho Press]]"
+  - "Idaho Press"
 URL: https://www.idahopress.com/news/local/meridian-opens-fire-station-first-police-precinct/article_6a02357c-93bd-11ee-b2b1-5705d9110b80.html
-tags:
-  - media/articles
-  - 2023/12/05
 ---
-[[Meridian]] opened its eighth [[fire station]] and first [[police precinct]] on Tuesday, an unthinkable development for many who started on the force decades ago. But Meridian has grown tremendously and likely will continue to expand in the northwestern part of the city.  
+Meridian opened its eighth fire station and first police precinct on Tuesday, an unthinkable development for many who started on the force decades ago. But Meridian has grown tremendously and likely will continue to expand in the northwestern part of the city.  
   
 Long yellow lines stretched down the apparatus bay of Fire Station #8 Tuesday morning. Toward one end, a red fire truck and white ambulance faced the road and an empty field. Toward the other end, homes stood tall against the foothills where last year construction had been underway. 
 
@@ -24,7 +21,7 @@ On the other side of the apparatus bay is a small gym with a black floor and woo
   
 “A lot of the fires we go to, there’s a lot of carcinogenic material from burning homes,” Butterfield said. “Some of the things we get involved in, trauma, traumatic injuries, vomit, blood, biohazards…we want to be able to come back from those types of calls and have an area that can clean biohazards, we can clean carcinogenic materials away from where we live.”  
 
-Next door is Meridian’s first [[police]] precinct.  
+Next door is Meridian’s first police precinct.  
   
 Lt. James Leslie started with Meridian police 25 years ago — when he estimated around 35 officers worked for the department. Now there’s almost 150, according to Meridian’s website.  
   
@@ -49,11 +46,11 @@ The police will also have mailboxes, a briefing room, men’s and women’s lock
 “The Highway 16 extension, that’s going to create a tremendous amount of work for us on this side of the valley,” Leslie said. “It’s just easier to get there, you know, they can get there a little bit quicker, so it just improves our response time.”  
   
   
-Shawn Rayne, chief of [[Ada County Paramedics]], said paramedics will be there when they can, when there are extra personnel. He said the paramedics will see during their spring budget process if they can afford to hire staff to be here permanently.  
+Shawn Rayne, chief of Ada County Paramedics, said paramedics will be there when they can, when there are extra personnel. He said the paramedics will see during their spring budget process if they can afford to hire staff to be here permanently.  
   
 There are two rooms in the firefighters’ quarters that are dedicated to the paramedics.  
   
-Growth has affected the paramedics as well. When Rayne started almost 28 years ago, he said there were only five fire stations in [[Ada County]] and one for western Ada County. Fire Station #8 will be number 15.  
+Growth has affected the paramedics as well. When Rayne started almost 28 years ago, he said there were only five fire stations in Ada County and one for western Ada County. Fire Station #8 will be number 15.  
   
 And Rayne said the average age of people moving in from out of state in 2021 was mid-60s.  
   

@@ -1,1 +1,1 @@
-[[tribes|tribal]] executive 
+tribal executive 

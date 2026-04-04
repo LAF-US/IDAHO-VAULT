@@ -1,9 +1,3 @@
 ---
-tags:
-  - party/republican
-  - position/elected/precinct
-aliases:
-  - KCRCC
 ---
-
-Local [[Idaho Republican Party]] [[precinct committeemen|precinct committee]] for [[Kootenai County]] 
+Local Idaho Republican Party precinct committee for Kootenai County 

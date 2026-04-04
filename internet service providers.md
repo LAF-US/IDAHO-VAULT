@@ -1,6 +1,3 @@
 ---
-aliases:
-  - ISPs
-  - ISP
 ---
-[[Internet]] [[broadband]] provider companies 
+Internet broadband provider companies 

@@ -1,1 +1,1 @@
-[[AUTHORITY]] 
+AUTHORITY 

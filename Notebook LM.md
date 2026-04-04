@@ -1,9 +1,6 @@
 ---
 date created: Saturday, March 28th 2026, 7:00:40 pm
 date modified: Saturday, March 28th 2026, 7:01:26 pm
-tags:
-  - tools/ai
-  - tools/google
 ---
 
-[[Google]] [[artificial intelligence|AI]] [[Language Model]] + [[Podcast]] [[Voice]] [[Generator]] 
+Google AI Language Model + Podcast Voice Generator 

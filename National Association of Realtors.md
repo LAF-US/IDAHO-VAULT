@@ -1,6 +1,3 @@
 ---
-aliases:
-  - NAR
-tags: []
 ---
-[[realtors|REALTORs]] 
+REALTORs 

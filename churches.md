@@ -1,6 +1,3 @@
 ---
-aliases:
-  - church
 ---
-
-[[Christianity|Christian]] [[places of worship]] 
+Christian places of worship 

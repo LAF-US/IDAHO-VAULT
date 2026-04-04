@@ -1,10 +1,7 @@
 ---
-tags:
-  - people/candidate/legislative
-  - party/republican
 ---
-[[Valley County]] 
+Valley County 
 
-2024 [[Valley County Republican Central Committee]] chair 
+2024 Valley County Republican Central Committee chair 
 
-defeated [[Megan Blanksma]] in 2024 [[primary election]] 
+defeated Megan Blanksma in 2024 primary election 

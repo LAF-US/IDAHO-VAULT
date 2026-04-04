@@ -1,6 +1,3 @@
 ---
-tags:
-  - governments/city
 ---
-
-[[cities]] [[law enforcement]] 
+cities law enforcement 

@@ -3,13 +3,9 @@ title: "BRANCH-HOUSEKEEPING-2026-03-29"
 created: 2026-03-29
 updated: 2026-03-29
 status: active
-authority: "[[LOGAN]]"
+authority: "LOGAN"
 authors:
   - ChatGPT Codex
-tags:
-  - administration/git
-  - housekeeping
-  - operational
 source: commit
 zone: operational
 ---
@@ -40,6 +36,6 @@ If branch cleanup is still needed in GitHub, run the same prune workflow from an
 - **Created:** 2026-03-29
 - **Last Updated:** 2026-03-29
 - **Status:** active
-- **Authority:** [[LOGAN]]
+- **Authority:** LOGAN
 - **Authors:** ChatGPT Codex
 - **Change Note:** Added branch housekeeping audit record showing no stale branches in local checkout.

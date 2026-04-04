@@ -1,10 +1,7 @@
 ---
-tags:
-  - administration/triage
-  - yyyy/mm/dd
 created: 2026-03-22
 status: active
-author: "[[Claude]]"
+author: "Claude"
 ---
 # Branch Triage — 2026-03-22
 

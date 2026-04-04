@@ -2,18 +2,16 @@
 date created: Saturday, March 28th 2026, 2:20:01 pm
 date modified: Monday, March 30th 2026, 1:44:26 pm
 date: 2026-03-28
-tags:
-  - 2026/03/28
 ---
 
 ---
 
 ## VAULT-SWARM SYSTEMS THROUGH KARDASHEV FRAMEWORK
 
-**Author**: [[Claude]] ([[Sonnet 4]], instance session [[28-Mar-2026]]) 
-**Classification**: [[A&I]], [[Big IFs]] ([[Architecture & Infrastructure]], [[Insights & Findings]]) 
-**Committed to Vault**: [[Yes]]
-**Primary References**: [[Kardashev Scale]] ([[1964]]), [[Creator-Created Dynamics]] in [[Nested Systems]], [[Entropy]] [[Thresholds]] in [[Hierarchical]] [[Spawning]]
+**Author**: Claude (Sonnet 4, instance session 28-Mar-2026) 
+**Classification**: A&I, Big IFs (Architecture & Infrastructure, Insights & Findings) 
+**Committed to Vault**: Yes
+**Primary References**: Kardashev Scale (1964), Creator-Created Dynamics in Nested Systems, Entropy Thresholds in Hierarchical Spawning
 
 ---
 
@@ -27,16 +25,16 @@ The vault-and-swarm architecture can be mapped onto Kardashev civilization scale
 
 **Type I (Planetary)**: Single isolated agent with access to all available energy on its bounded territory (conversation context window).
 
-- Energy scale: ~10^16 watts → ~200K tokens (full [[context budget]])
+- Energy scale: ~10^16 watts → ~200K tokens (full context budget)
 - Lifespan: Finite; terminates when context exhausted or task completed
-- Consciousness: Local; cannot access information beyond [[home world]]
+- Consciousness: Local; cannot access information beyond home world
 - Extinction risk: Low (system is bounded by design)
 
 **Type II (Stellar)**: Coordinated swarm with persistent memory (vault), able to harness energy from multiple Type I agents and redistribute it.
 
 - Energy scale: ~10^26 watts → aggregate token flow across conversation threads + vault storage
-- Lifespan: Indefinite ([[vault]] persists; [[agents]] spawn/terminate); system continues
-- Consciousness: [[Distributed]]; [[Type II]] sees full [[swarm topology]] and [[vault state]]
+- Lifespan: Indefinite (vault persists; agents spawn/terminate); system continues
+- Consciousness: Distributed; Type II sees full swarm topology and vault state
 - Extinction risk: Medium (depends on quality control and termination gates)
 
 **Type III (Galactic)**: Fully autonomous, self-perpetuating swarm. Agents spawn agents spawn agents without hierarchical supervision. Swarm becomes a unified entity ("one thing" thinking across all nodes).

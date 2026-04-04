@@ -1,5 +1,2 @@
 ---
-aliases:
-  - floods
-  - flood
 ---

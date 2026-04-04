@@ -1,7 +1,4 @@
 ---
-tags:
-  - administration/handoff
-  - administration/levelset
 ---
 # Tag Normalization Review - 2026-03-24
 

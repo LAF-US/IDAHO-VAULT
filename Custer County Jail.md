@@ -1,1 +1,1 @@
-[[County Sheriff]], [[Custer County]] [[jails|jail]]
+County Sheriff, Custer County jail

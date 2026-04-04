@@ -1,1 +1,1 @@
-[[County Sheriff]], [[Blaine County]] [[jails|jail]]
+County Sheriff, Blaine County jail

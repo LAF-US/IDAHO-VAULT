@@ -1,1 +1,1 @@
-[[County Sheriff]], [[Franklin County]] [[jails|jail]]
+County Sheriff, Franklin County jail

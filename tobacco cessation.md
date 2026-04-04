@@ -1,1 +1,1 @@
-[[tobacco]], [[smoking]], [[vaping]], [[cancer]] 
+tobacco, smoking, vaping, cancer 

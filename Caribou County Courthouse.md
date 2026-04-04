@@ -1,1 +1,1 @@
-[[magistrate court]] [[Caribou County]] [[courthouses|courthouse]] 
+magistrate court Caribou County courthouse 

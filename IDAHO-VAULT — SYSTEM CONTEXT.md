@@ -2,13 +2,10 @@
 date created: Saturday, March 28th 2026, 5:25:53 pm
 date modified: Saturday, March 28th 2026, 5:29:05 pm
 author:
-  - "[[ChatGPT]]"
-tags:
-  - administration/reference
-  - vault/meta
+  - "ChatGPT"
 ---
 
-[[Notebook LM]] [[2026-03-28]]
+Notebook LM 2026-03-28
 
 ---
 # IDAHO-VAULT — SYSTEM CONTEXT (SOURCE DOCUMENT)

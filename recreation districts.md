@@ -1,6 +1,3 @@
 ---
-tags:
-  - governments/taxingdistrict
 ---
-
-[[taxing districts]] for [[recreation]] 
+taxing districts for recreation 

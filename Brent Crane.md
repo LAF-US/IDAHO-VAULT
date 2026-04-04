@@ -1,9 +1,4 @@
 ---
-tags:
-  - people/elected
-  - people/elected/legislative
-  - party/republican
-  - people
-residence: "[[Nampa]]"
+residence: "Nampa"
 ---
-- son of [[Ron Crane]], brother of [[Jaron Crane]]
+- son of Ron Crane, brother of Jaron Crane

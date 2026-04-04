@@ -2,10 +2,6 @@
 title: "Taskbone"
 updated: 2026-03-29
 status: active
-tags:
-  - tools/obsidian
-  - tools/plugins
-  - tools/taskbone
 source: https://app.taskbone.com/documentation/how-to-guides/getting-started-with-obsidian
 ---
 
@@ -40,5 +36,5 @@ If you registered by email, only the OCR commands will be available — Todoist 
 
 ## See Also
 
-- [[Obsidian]]
+- Obsidian
 - Source: https://app.taskbone.com/documentation/how-to-guides/getting-started-with-obsidian

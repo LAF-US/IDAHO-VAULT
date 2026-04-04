@@ -4,7 +4,6 @@ author:
 published:
 created: 2026-03-25
 title: (2026) HOUSE BILL 542 – Idaho State Legislature
-aliases: [(2026) HOUSE BILL 542 – Idaho State Legislature]
 linter-yaml-title-alias: (2026) HOUSE BILL 542 – Idaho State Legislature
 ---
 

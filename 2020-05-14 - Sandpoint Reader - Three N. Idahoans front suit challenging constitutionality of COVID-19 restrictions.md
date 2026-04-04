@@ -1,14 +1,11 @@
 ---
 author:
-  - "[[Zach Hagadone]]"
+  - "Zach Hagadone"
 outlet:
-  - "[[Sandpoint Reader]]"
+  - "Sandpoint Reader"
 URL: https://sandpointreader.com/three-n-idahoans-front-suit-challenging-constitutionality-of-covid-19-restrictions/
-tags:
-  - media/articles
-  - 2020/05/14
 ---
-Sagle resident Scott Herndon, who mounted an unsuccessful bid for Idaho Senate in 2018 and has since been in the forefront of a number of local hot-button issues from [[abortion]] to gun rights, is again in the regional news after filing a lawsuit challenging the constitutionality of statewide COVID-19 restrictions on public gatherings.
+Sagle resident Scott Herndon, who mounted an unsuccessful bid for Idaho Senate in 2018 and has since been in the forefront of a number of local hot-button issues from abortion to gun rights, is again in the regional news after filing a lawsuit challenging the constitutionality of statewide COVID-19 restrictions on public gatherings.
 
 The federal suit, leveled earlier this month at Gov. Brad Little and Idaho Department of Health and Welfare Director Dave Jeppesen, argues that the now-expired “stay-at-home” order violated constitutional rights to assemble for church services. The so-called “stay healthy” order that replaced the governor’s shelter-in-place directive allows gatherings in churches, but still mandates that congregants adhere to social distancing guidelines.
 

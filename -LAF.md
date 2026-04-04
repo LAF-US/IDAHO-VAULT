@@ -1,1 +1,1 @@
-[[Logan's]] [[initialization]] 
+Logan's initialization 

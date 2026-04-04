@@ -1,1 +1,1 @@
-[[birds]], [[predatory species]] 
+birds, predatory species 

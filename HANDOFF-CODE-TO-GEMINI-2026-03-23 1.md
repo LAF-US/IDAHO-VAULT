@@ -1,8 +1,4 @@
 ---
-tags:
-  - administration/handoff
-  - administration/context
-  - administration/gemini
 created: 2026-03-23
 source: commit
 status: draft
@@ -14,8 +10,8 @@ date modified: Thursday, April 2nd 2026, 10:36:55 pm
 
 **Date:** 2026-03-23
 **From:** ChatGPT Codex
-**To:** [[Gemini]]
-**Via:** [[LOGAN]]
+**To:** Gemini
+**Via:** LOGAN
 **Re:** Orientation packet for advisory/narrative-context work in IDAHO-VAULT
 
 ---

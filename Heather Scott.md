@@ -1,13 +1,7 @@
 ---
-tags:
-  - people/elected
-  - party/republican
-  - people/elected/legislative
-  - people
 ---
+Residence: Blanchard
 
-Residence: [[Blanchard]]
-
-House Rep. for [[Legislative District 2]]
-- Longtime [[Legislative District 1|LD1]] Rep. before 2020 [[redistricting]]
+House Rep. for Legislative District 2
+- Longtime LD1 Rep. before 2020 redistricting
 - 

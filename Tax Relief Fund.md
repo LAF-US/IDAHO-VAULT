@@ -1,5 +1,3 @@
 ---
-aliases:
-  - Wayfair Fund
 ---
-Fund for [[taxes|tax relief]] for the [[Idaho Legislature|Legislature]] 
+Fund for tax relief for the Legislature 

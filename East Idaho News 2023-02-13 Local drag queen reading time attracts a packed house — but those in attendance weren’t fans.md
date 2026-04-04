@@ -1,11 +1,8 @@
 ---
-tags:
-  - media/articles
-  - 2023/02/13
 ---
 https://www.eastidahonews.com/2023/02/drag-queen-reading-time-attracts-a-packed-house-but-those-present-werent-fans/
 
-[[Emily Thornton]] & [[Nate Sunderland]], [[East Idaho News]] 
+Emily Thornton & Nate Sunderland, East Idaho News 
 
 POCATELLO — It’s become a custom for many families at Marshall Public Library.
 
@@ -38,7 +35,7 @@ It’s not clear what about the reading program Worley found sexually deviant.
 
 Despite the protest, Saturday’s event wasn’t canceled. Crupper and the Reading Time with the Queens board opted to deliver their entire program. There was reading, singing and teaching sign language.
 
-In a [[Facebook]] post, organizers stated they were “disheartened that those who chose to stay removed an opportunity for children in our community to laugh, learn ASL, sing songs and read books together. Children and families in Pocatello deserve spaces that exist to bring them joy, encourage their literacy, and support their lives as whole, complete people.”
+In a Facebook post, organizers stated they were “disheartened that those who chose to stay removed an opportunity for children in our community to laugh, learn ASL, sing songs and read books together. Children and families in Pocatello deserve spaces that exist to bring them joy, encourage their literacy, and support their lives as whole, complete people.”
 
 Still they said the event was open to the public and hoped in the future, all attendees would consider making room for parents and children who want to attend.
 
@@ -70,6 +67,6 @@ Crupper expects continued resistance in some parts of the community, particularl
 
 Late last year, Idaho Family Policy Center President Blaine Conzatti told the Idaho Capital Sun that a bill prohibiting drag performances in all public venues would be proposed during this legislative session. The bill has not yet been introduced this legislative session but still could.
 
-Reading Time with the Queens is offered once a month at Marshall Public Library in Pocatello and in Idaho Falls at Winnie and Mo’s Bookshop. For anyone looking for more information about the events, visit its website or its [[Facebook]] page.
+Reading Time with the Queens is offered once a month at Marshall Public Library in Pocatello and in Idaho Falls at Winnie and Mo’s Bookshop. For anyone looking for more information about the events, visit its website or its Facebook page.
 
 There are also YouTube videos available for parents or children to watch previous events.

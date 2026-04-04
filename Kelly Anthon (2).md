@@ -1,10 +1,7 @@
 ---
-tags:
-  - people/idaho/legislature/senate
-  - 2026/03/12
 source: commit
 ---
-[[Kelly Anthon]] is the Republican [[Idaho Senate|Idaho Senate]] Pro Tempore who co-signed the November 2025 letter announcing [[Joint Finance-Appropriations Committee|JFAC]] voting rule changes without a committee vote and has never served on JFAC.
+Kelly Anthon is the Republican Idaho Senate Pro Tempore who co-signed the November 2025 letter announcing JFAC voting rule changes without a committee vote and has never served on JFAC.
 
 ## Basic Info
 
@@ -16,11 +13,11 @@ source: commit
 
 ## JFAC Significance
 
-Never served on JFAC. Co-signed the November 2025 letter with [[Josh Tanner]] announcing voting rule changes — an improper instrument under [[JFAC Rules|JFAC Rule 11]]. Voted against Medicaid/ACT rescission cuts in 2026 session (split with [[Lori Den Hartog]] who voted for).
+Never served on JFAC. Co-signed the November 2025 letter with Josh Tanner announcing voting rule changes — an improper instrument under JFAC Rule 11. Voted against Medicaid/ACT rescission cuts in 2026 session (split with Lori Den Hartog who voted for).
 
 ## Related Notes
 
-- [[Joint Finance-Appropriations Committee]]
-- [[JFAC Rules]]
-- [[Josh Tanner]]
-- [[Joint Rule Non-Adoption 2024-2025]]
+- Joint Finance-Appropriations Committee
+- JFAC Rules
+- Josh Tanner
+- Joint Rule Non-Adoption 2024-2025

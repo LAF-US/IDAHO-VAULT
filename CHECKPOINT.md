@@ -1,7 +1,4 @@
 ---
-tags:
-  - administration/prompts
-  - protocol/checkpoint
 created: 2026-03-29
 updated: 2026-03-29
 status: active

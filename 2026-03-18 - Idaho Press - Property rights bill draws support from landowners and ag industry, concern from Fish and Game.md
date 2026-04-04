@@ -1,7 +1,7 @@
 ---
 source: "https://www.idahopress.com/news/local/property-rights-bill-draws-support-from-landowners-and-ag-industry-concern-from-fish-and-game/article_9251aa09-cd28-49f9-9417-8603379ad051.html"
 author:
-  - "[[ROYCE MCCANDLESS rmccandless@idahopress.com]]"
+  - "ROYCE MCCANDLESS rmccandless@idahopress.com"
 published: 2026-03-18
 created: 2026-04-02
 ---

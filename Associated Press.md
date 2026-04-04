@@ -1,7 +1,5 @@
 ---
-tags:
-  - media/outlets
 outlet:
-  - "[[Associated Press]]"
+  - "Associated Press"
 ---
-[[newspapers|newspaper]] syndication network
+newspaper syndication network

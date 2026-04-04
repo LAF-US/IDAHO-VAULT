@@ -1,1 +1,1 @@
-[[magistrate court]] [[Bear Lake County]] [[courthouses|courthouse]] 
+magistrate court Bear Lake County courthouse 

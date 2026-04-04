@@ -1,7 +1,3 @@
 ---
-tags:
-  - people
-aliases:
-  - Sara Brady
 ---
-"[[Meridian]] park mom" arrested during [[coronavirus|COVID-19]] playground protest 
+"Meridian park mom" arrested during COVID-19 playground protest 

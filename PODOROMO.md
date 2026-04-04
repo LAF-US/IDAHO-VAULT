@@ -1,1 +1,1 @@
-[[timer]] [[system]]
+timer system

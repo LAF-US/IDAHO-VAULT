@@ -1,3 +1,3 @@
-[[cannabis]] that contains [[THC]] 
-- [[recreational marijuana]]
-- [[medical marijuana]] 
+cannabis that contains THC 
+- recreational marijuana
+- medical marijuana 

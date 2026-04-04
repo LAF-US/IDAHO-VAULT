@@ -1,1 +1,1 @@
-[[synonym]] : [[word]] 
+synonym : word 

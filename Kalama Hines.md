@@ -1,5 +1,3 @@
 ---
-tags:
-  - people/journalists
 ---
-[[East Idaho News]] reporter 
+East Idaho News reporter 

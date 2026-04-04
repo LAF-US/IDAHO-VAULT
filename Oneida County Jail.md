@@ -1,1 +1,1 @@
-[[County Sheriff]], [[Oneida County]] [[jails|jail]]
+County Sheriff, Oneida County jail

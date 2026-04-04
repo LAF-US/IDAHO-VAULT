@@ -1,5 +1,3 @@
 ---
-tags:
-  - geography/water/river
 ---
-[[rivers|river]] in [[Nez Perce County|Nez Perce]], [[Lewis County|Lewis]], [[Shoshone County|Shoshone]], [[Idaho County|Idaho]] and [[Clearwater County]] 
+river in Nez Perce, Lewis, Shoshone, Idaho and Clearwater County 

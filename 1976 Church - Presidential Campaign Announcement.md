@@ -1,13 +1,11 @@
 ---
-tags:
-  - category/facet/articles
 date: 1976-03-18
 ---
 # Senator Church Joins Presidential Race
 
-IDAHO CITY — Senator [[Frank Church]] of Idaho officially declared himself a candidate for the Democratic Presidential nomination today, telling a crowd of about 2,500 people standing in the muddy streets of this gold‐rush town. “It's never too late—nor are the odds too great—to try.”
+IDAHO CITY — Senator Frank Church of Idaho officially declared himself a candidate for the Democratic Presidential nomination today, telling a crowd of about 2,500 people standing in the muddy streets of this gold‐rush town. “It's never too late—nor are the odds too great—to try.”
 
-The 51‐year‐old Senator's Presidential yearnings have been no secret, but he has delayed his announcement, and the start of his campaign, because of the [[1975 Church - The abyss from which there is no return|Senate investigation of intelligence activities]].
+The 51‐year‐old Senator's Presidential yearnings have been no secret, but he has delayed his announcement, and the start of his campaign, because of the Senate investigation of intelligence activities.
 
 *He has been the leading figure in that investigation, which has in turn given him a sort of national prominence that he might not otherwise have enjoyed as a Senator from this sparsely populated Northwestern state best known for its potatoes.*
 

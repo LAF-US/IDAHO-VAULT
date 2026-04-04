@@ -1,5 +1,3 @@
 ---
-tags:
-  - vault/stub
 ---
-[[LOGAN]] & [[Aurora]] 
+LOGAN & Aurora 

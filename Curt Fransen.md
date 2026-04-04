@@ -1,1 +1,1 @@
-- former [[Department of Environmental Quality]] director appointed by [[C.L. 'Butch' Otter|Butch Otter]] in 2012, former deputy director 
+- former Department of Environmental Quality director appointed by Butch Otter in 2012, former deputy director 

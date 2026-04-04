@@ -1,7 +1,5 @@
 ---
-tags:
-  - media/outlets
 outlet:
-  - "[[Boise Weekly]]"
+  - "Boise Weekly"
 ---
-alt-weekly [[newspapers|newspaper]] based in [[Boise]] owned by [[Adams Publishing Group]] 
+alt-weekly newspaper based in Boise owned by Adams Publishing Group 

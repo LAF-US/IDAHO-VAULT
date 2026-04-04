@@ -1,12 +1,9 @@
 ---
 author:
-  - "[[Logan Finney]]"
+  - "Logan Finney"
 outlet:
-  - "[[Idaho Reports]]"
+  - "Idaho Reports"
 URL: https://blog.idahoreports.idahoptv.org/2023/12/06/podcast-measuring-mercury-in-snake-river-smallmouth/
-tags:
-  - media/podcasts
-  - 2023/12/06
 ---
 The Snake River has been in the news a lot recently, but the recent detection of quagga mussels is not the only ecological issue facing the mighty river. Scientists with the U.S. Geological Survey released a study this week that takes a look at how the habitat conditions behind dams affect the level of mercury found in smallmouth bass. USGS research ecologist Colin Eagles-Smith joins Logan Finney this week to talk through the findings.
 
@@ -134,7 +131,7 @@ Yeah, so at elevated concentrations and with a lot of exposure to mercury, it’
 
 IR:
 
-Even though this particular study in this particular area only looked at this one species, smallmouth bass, which is a popular sport fish, can you extrapolate these findings to the region more broadly? I guess a better way to phrase that is, even though you used one [[fish]] for consistent measurement, what sort of picture does that give us of the ecosystem overall?
+Even though this particular study in this particular area only looked at this one species, smallmouth bass, which is a popular sport fish, can you extrapolate these findings to the region more broadly? I guess a better way to phrase that is, even though you used one fish for consistent measurement, what sort of picture does that give us of the ecosystem overall?
 
 Eagles-Smith:
 

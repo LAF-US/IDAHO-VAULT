@@ -1,11 +1,6 @@
 ---
-tags:
-  - people/elected
-  - party/democratic
-  - people/elected/legislative
-  - people
 ---
-Residence: [[Gooding]]
-- Retired [[teachers|teacher]] 
-- Former [[House Minority Caucus Chair]]
-- Former [[House member]] from [[Legislative District 26]] 
+Residence: Gooding
+- Retired teacher 
+- Former House Minority Caucus Chair
+- Former House member from Legislative District 26 

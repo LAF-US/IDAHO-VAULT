@@ -1,11 +1,9 @@
 ---
-tags:
-  - category/facet/photos
 date: 1911-04-09
 ---
-President [[Theodore Roosevelt]] speaking at the [[University of Idaho]] 
+President Theodore Roosevelt speaking at the University of Idaho 
 
-![[spec_uihp426.jpg]]
+!spec_uihp426.jpg
 
 ---
 
@@ -13,5 +11,5 @@ President [[Theodore Roosevelt]] speaking at the [[University of Idaho]]
 
 ---
 
-- [[1911 T Roosevelt - Argonaut I]] 
-- [[1911 T Roosevelt - Argonaut II]] 
+- 1911 T Roosevelt - Argonaut I 
+- 1911 T Roosevelt - Argonaut II 

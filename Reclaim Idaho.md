@@ -1,5 +1,5 @@
 
-[[ballot initiatives]]
-[[Medicaid Expansion]]
+ballot initiatives
+Medicaid Expansion
 
-co-founded by [[Luke Mayville]], [[Garrett Strizich]] & [[Emily Strizich]] 
+co-founded by Luke Mayville, Garrett Strizich & Emily Strizich 

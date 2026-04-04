@@ -1,12 +1,8 @@
 ---
-tags:
-  - media/articles
-  - 2020/04/03
-  - 2020/session
 ---
 https://www.loganfinney.com/idaho-legislature-2020/4/3/veto-review
 
-[[Logan Finney]] [[McClure Center]] 
+Logan Finney McClure Center 
 
 _Six bills rejected this year, no chance for veto override_
 
@@ -20,9 +16,9 @@ One of the more significant bills to receive the governor’s veto was the Idaho
 
 In his veto letter, Little said that the bill had an admirable objective, but established a flawed “adversarial legal proceeding” for claimants.
 
-The bill authorized civil action against the state for a claimant to receive compensation, which “will involve missing or lost evidence, dead or otherwise unavailable witnesses, constitutional victims’ rights issues, and appellate review by the [[Idaho Supreme Court]],” Little wrote.
+The bill authorized civil action against the state for a claimant to receive compensation, which “will involve missing or lost evidence, dead or otherwise unavailable witnesses, constitutional victims’ rights issues, and appellate review by the Idaho Supreme Court,” Little wrote.
 
-He recommended that the decision to award compensation first go to an existing board, such as the[[Commission of Pardons and Parole]], then proceed to court if the claim is denied. In the letter, he offered to work with the sponsors on a future wrongful compensation bill.
+He recommended that the decision to award compensation first go to an existing board, such as theCommission of Pardons and Parole, then proceed to court if the claim is denied. In the letter, he offered to work with the sponsors on a future wrongful compensation bill.
 
 The wrongful conviction act also included provisions allowing for a tuition waiver at a public Idaho university and up to eight years of state-funded medical insurance.
 
@@ -32,17 +28,17 @@ An additional bill that received a veto would have diverted additional sales tax
 
 One percent of that remainder is currently directed toward a transportation expansion and congestion mitigation fund, used by the Idaho Transportation Department to finance traffic projects. The bill would have increased that transportation revenue from one percent to two percent.
 
-The bill sponsor Rep. [[Joe Palmer]], R-Meridian, estimated that would be an increase of about $18 million per year. After amendments in the Senate, the bill would have also split that revenue 60-40 between the existing traffic mitigation fund and a new grant program for maintenance and replacement of [[bridges]].
+The bill sponsor Rep. Joe Palmer, R-Meridian, estimated that would be an increase of about $18 million per year. After amendments in the Senate, the bill would have also split that revenue 60-40 between the existing traffic mitigation fund and a new grant program for maintenance and replacement of bridges.
 
 Little cited the transportation bill’s impact to the general fund in his letter, referencing financial uncertainty for the state in the face of COVID-19 response and the related economic slowdown.
 
 Legislators spent plenty of time this year discussing property taxes, which are assessed at the county level based on a property’s market value. That assessment can be appealed to the county commissioners, who review property market values as a board of equalization.
 
-The governor vetoed a bill from Rep. [[Mike Moyle]], R-Star, which would have allowed property owners to use a sale receipt from the last year in their appeal to establish a residential property’s market value. [[County Assessor|County assessors]] argued that the bill took away their discretion as elected officials, while Little wrote that the policy “has the potential to result in unintended tax shifts as well as a lack of uniformity in the process of property tax assessment” in his veto letter.
+The governor vetoed a bill from Rep. Mike Moyle, R-Star, which would have allowed property owners to use a sale receipt from the last year in their appeal to establish a residential property’s market value. County assessors argued that the bill took away their discretion as elected officials, while Little wrote that the policy “has the potential to result in unintended tax shifts as well as a lack of uniformity in the process of property tax assessment” in his veto letter.
 
 The governor also vetoed a bill that would have incorporated regulations into state code for dentists utilizing telehealth services, also known as teledentistry. In that letter, Little pointed to existing law that authorizes professional licensing boards to regulate telehealth practices by administrative rule. He said that putting these safeguards in rule rather than statute allows government the flexibility to adjust and update them in the face of public health events like the current coronavirus pandemic.
 
-“There are components of (the bill) that may enhance the safety of teledentistry services, and I will direct the [[Board of Dentistry]] to consider the necessity of such safeguards as they re-promulgate their [[administrative rules]],” Little wrote.
+“There are components of (the bill) that may enhance the safety of teledentistry services, and I will direct the Board of Dentistry to consider the necessity of such safeguards as they re-promulgate their administrative rules,” Little wrote.
 
 Another regulations bill, this one relating to pesticide application, was also vetoed by the governor. Sought by the cropduster industry, the proposed changes saw some controversy due to an incident in Parma last year when a field was sprayed and farmworkers in the next field were sickened and hospitalized.
 

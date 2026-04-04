@@ -240,9 +240,9 @@ jobs:
       - name: Determine target Linear state
         id: state
         run: |
-          if [[ "${{ github.event.action }}" == "closed" && "${{ github.event.pull_request.merged }}" == "true" ]]; then
+          if  "${{ github.event.action }}" == "closed" && "${{ github.event.pull_request.merged }}" == "true" ; then
             echo "state=done" >> "$GITHUB_OUTPUT"
-          elif [[ "${{ github.event.action }}" == "opened" || "${{ github.event.action }}" == "reopened" || "${{ github.event.action }}" == "ready_for_review" ]]; then
+          elif | "${{ github.event.action }}" == "reopened" || "${{ github.event.action }}" == "ready_for_review" ; then
             echo "state=in_progress" >> "$GITHUB_OUTPUT"
           else
             echo "state=skip" >> "$GITHUB_OUTPUT"
@@ -372,9 +372,9 @@ jobs:
         id: target
         shell: bash
         run: |
-          if [[ "${{ github.event.action }}" == "closed" && "${{ github.event.pull_request.merged }}" == "true" ]]; then
+          if  "${{ github.event.action }}" == "closed" && "${{ github.event.pull_request.merged }}" == "true" ; then
             echo "state_name=Done" >> "$GITHUB_OUTPUT"
-          elif [[ "${{ github.event.action }}" == "opened" || "${{ github.event.action }}" == "reopened" || "${{ github.event.action }}" == "ready_for_review" ]]; then
+          elif | "${{ github.event.action }}" == "reopened" || "${{ github.event.action }}" == "ready_for_review" ; then
             echo "state_name=In Progress" >> "$GITHUB_OUTPUT"
           else
             echo "state_name=" >> "$GITHUB_OUTPUT"
@@ -430,7 +430,7 @@ jobs:
               --data @-)
 
           ISSUE_ID=$(echo "$ISSUE_RESPONSE" | jq -r '.data.issue.id // empty')
-          if [[ -z "$ISSUE_ID" ]]; then
+          if  -z "$ISSUE_ID" ; then
             echo "Could not find Linear issue: $ISSUE_IDENTIFIER"
             echo "$ISSUE_RESPONSE"
             exit 1
@@ -443,7 +443,7 @@ jobs:
               | .id
             ' | head -n 1)
 
-          if [[ -z "$STATE_ID" ]]; then
+          if  -z "$STATE_ID" ; then
             echo "Could not find target state: $TARGET_STATE_NAME"
             echo "$ISSUE_RESPONSE"
             exit 1
@@ -467,7 +467,7 @@ jobs:
               --data @-)
 
           SUCCESS=$(echo "$UPDATE_RESPONSE" | jq -r '.data.issueUpdate.success // false')
-          if [[ "$SUCCESS" != "true" ]]; then
+          if  "$SUCCESS" != "true" ; then
             echo "Linear update failed"
             echo "$UPDATE_RESPONSE"
             exit 1

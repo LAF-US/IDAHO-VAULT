@@ -1,10 +1,3 @@
 ---
-tags:
-  - party/constitution
-  - geography/land/state
-aliases:
-  - Constitution Party
-  - CP-Idaho
-  - Constitutionalists
 ---
-[[State of Idaho]] affiliate of the [[U.S. Constitution Party]] 
+State of Idaho affiliate of the U.S. Constitution Party 

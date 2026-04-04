@@ -1,7 +1,4 @@
 ---
-tags:
-  - administration/protocol
-  - administration/levelset
 updated: 2026-03-22
 status: active
 ---

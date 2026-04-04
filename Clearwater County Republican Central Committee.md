@@ -1,7 +1,3 @@
 ---
-tags:
-  - party/republican
-  - position/elected/precinct
 ---
-
-Local [[Idaho Republican Party]] [[precinct committeemen|precinct committee]] for [[Clearwater County]] 
+Local Idaho Republican Party precinct committee for Clearwater County 

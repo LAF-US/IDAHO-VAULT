@@ -1,11 +1,6 @@
 ---
-tags:
-  - persona
-  - voice
-aliases:
-  - Google Home
 ---
-[[HOME]]
+HOME
 
 ---
-[["The world is quiet here."]]
+"The world is quiet here."

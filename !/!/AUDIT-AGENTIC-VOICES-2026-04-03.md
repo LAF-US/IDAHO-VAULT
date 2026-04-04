@@ -3,10 +3,6 @@ title: "Audit — Agentic Voices 2026-04-03"
 updated: 2026-04-03
 status: active
 authority: "Logan Finney"
-tags:
-  - administration/audit
-  - agents
-  - swarm
 ---
 
 # Audit — Agentic Voices

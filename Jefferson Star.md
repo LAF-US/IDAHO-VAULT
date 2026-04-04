@@ -1,7 +1,5 @@
 ---
-tags:
-  - media/outlets
 outlet:
-  - "[[Jefferson Star]]"
+  - "Jefferson Star"
 ---
-[[Jefferson County]] [[newspapers|newspaper]] in [[Rigby]] owned by [[Adams Publishing Group]]
+Jefferson County newspaper in Rigby owned by Adams Publishing Group

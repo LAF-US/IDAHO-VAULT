@@ -1,22 +1,19 @@
 ---
 author:
-  - "[[Samantha Kubota]]"
+  - "Samantha Kubota"
 outlet:
-  - "[[KREM]]"
+  - "KREM"
 URL: https://www.krem.com/article/news/local/bonner-county/in-a-small-town-in-n-idaho-gun-rights-and-gun-control-activists-held-competing-rallies/293-531826841
-tags:
-  - media/articles
-  - 2018/03/24
 ---
-*As the "March for our Lives" walked through downtown carrying signs that read "teachers should be in charge of grades, not Glocks," the "March for our Rights" walked across the [[Long Bridge]] with "[[don't tread on me]]" flags.*
+*As the "March for our Lives" walked through downtown carrying signs that read "teachers should be in charge of grades, not Glocks," the "March for our Rights" walked across the Long Bridge with "don't tread on me" flags.*
 
 SANDPOINT, Idaho – Hundreds of people rallied in Sandpoint on Saturday , but they were divided on what to do about the issue of gun violence in America.
 
-Some residents gathered in support of the Second Amendment and held a “March for our Rights” across the [[Long Bridge]], in response to the national movement and other rally in town, "March for our Lives.”
+Some residents gathered in support of the Second Amendment and held a “March for our Rights” across the Long Bridge, in response to the national movement and other rally in town, "March for our Lives.”
 
-As young people and their supporters walked through downtown carrying signs that read “teachers should be in charge of grades, not Glocks," pro-gun activists marched across the [[Long Bridge]].
+As young people and their supporters walked through downtown carrying signs that read “teachers should be in charge of grades, not Glocks," pro-gun activists marched across the Long Bridge.
 
-“It was amazing, especially considering the fact that it was during snow and howling wind,” March for our Rights organizer [[Stephen Wasylko]] said. “We had people from...I know the youngest there was 8 months and we had people all the way up to their 80s who set up their chairs at the beginning the bridge.”
+“It was amazing, especially considering the fact that it was during snow and howling wind,” March for our Rights organizer Stephen Wasylko said. “We had people from...I know the youngest there was 8 months and we had people all the way up to their 80s who set up their chairs at the beginning the bridge.”
 
 Many people who oppose gun control said they still felt that increased gun measures will be used infringe on their Second Amendment rights.
 
@@ -36,7 +33,7 @@ Nearby in downtown Sandpoint, other North Idaho residents held a March for our L
 
 Photos from the march show students and adults carrying signs that read “fear has no place in schools” and “protect kids, not guns,” while another woman carried a flag with the peace symbol on it.
 
-"We understand and will always appreciate that a lot of people in North Idaho like to hunt and there’s a lot of respect for hunting and having handguns for home protection," [[Rebecca Holland]], who helped organize the March for our Lives in Sandpoint said. "But there’s no place in society for high capacity assault weapons."
+"We understand and will always appreciate that a lot of people in North Idaho like to hunt and there’s a lot of respect for hunting and having handguns for home protection," Rebecca Holland, who helped organize the March for our Lives in Sandpoint said. "But there’s no place in society for high capacity assault weapons."
 
 Holland explained the march Saturday was led by Sandpoint High School students, and that her non-partisan group North Idaho Women had helped them plan and obtain a permit.
 

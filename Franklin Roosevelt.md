@@ -1,11 +1,6 @@
 ---
-tags:
-  - category/statue
-aliases:
-  - Franklin D. Roosevelt
-  - FDR
 ---
-![[tumblr_owx4eg6HZq1wc45zao1_1280.png]]
+!tumblr_owx4eg6HZq1wc45zao1_1280.png
 
 # FDR
 

@@ -1,1 +1,1 @@
-[[Boise]] nonprofit and annual [[LGBTQ+ pride]] celebration 
+Boise nonprofit and annual LGBTQ+ pride celebration 

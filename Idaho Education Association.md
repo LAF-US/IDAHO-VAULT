@@ -1,6 +1,3 @@
 ---
-aliases:
-  - IEA
-  - teachers' union
 ---
-statewide [[unions|labor union]] of [[teachers]]  
+statewide labor union of teachers  

@@ -1,1 +1,1 @@
-[[magistrate court]] [[Jefferson County]] [[courthouses|courthouse]] 
+magistrate court Jefferson County courthouse 

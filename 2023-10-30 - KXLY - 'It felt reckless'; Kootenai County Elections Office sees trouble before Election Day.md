@@ -1,12 +1,9 @@
 ---
 author:
-  - "[[Brontë Sorotsky]]"
+  - "Brontë Sorotsky"
 outlet:
-  - "[[KXLY]]"
+  - "KXLY"
 URL: https://www.kxly.com/news/it-felt-reckless-kootenai-county-elections-office-sees-trouble-before-election-day/article_3cbcbf40-7781-11ee-b2ec-0f047d478500.html
-tags:
-  - media/articles
-  - 2023/10/30
 ---
 KOOTENAI COUNTY, ID. — Election Day is eight days away, and voters are already starting to vote early.
 

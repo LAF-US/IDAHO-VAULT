@@ -1,3 +1,3 @@
-[[children]]
-[[families]]
-[[child]]
+children
+families
+child

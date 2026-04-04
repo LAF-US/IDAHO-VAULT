@@ -1,6 +1,3 @@
 ---
-tags:
-  - people
 ---
-
-[[Idaho Dispatch]] 
+Idaho Dispatch 

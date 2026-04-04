@@ -1,1 +1,1 @@
-[[County Sheriff]], [[Teton County]] [[jails|jail]]
+County Sheriff, Teton County jail

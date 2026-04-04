@@ -1,1 +1,1 @@
-more than one [[VOICE]] 
+more than one VOICE 

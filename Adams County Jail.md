@@ -1,1 +1,1 @@
-[[County Sheriff]], [[Adams County]] [[jails|jail]] 
+County Sheriff, Adams County jail 

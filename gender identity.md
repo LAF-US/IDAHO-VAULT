@@ -1,1 +1,1 @@
-[[LGBTQ+ issues|LGBTQ+ issues]] 
+LGBTQ+ issues 

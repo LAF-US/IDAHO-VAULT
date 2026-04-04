@@ -1,8 +1,3 @@
 ---
-tags:
-  - people/elected/legislative
-  - people/elected
-  - party/republican
-  - people
 ---
-Residence: [[Kuna]]
+Residence: Kuna

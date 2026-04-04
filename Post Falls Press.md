@@ -1,7 +1,5 @@
 ---
 outlet:
-  - "[[Post Falls Press]]"
-tags:
-  - media/outlets
+  - "Post Falls Press"
 ---
-[[Post Falls]] [[newspapers|newspaper]] owned by [[The Hagadone Corporation]] 
+Post Falls newspaper owned by The Hagadone Corporation 

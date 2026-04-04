@@ -1,1 +1,1 @@
-[[magistrate court]] [[Benewah County]] [[courthouses|courthouse]] 
+magistrate court Benewah County courthouse 

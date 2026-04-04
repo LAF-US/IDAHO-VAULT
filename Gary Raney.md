@@ -1,8 +1,4 @@
 ---
-tags:
-  - party/republican
-  - people
 ---
-
-- former [[Ada County]] [[County Sheriff|Sheriff]], [[law enforcement]] 
-- founder of [[Idaho Leaders United]] & [[Defend and Protect Idaho]] PAC
+- former Ada County Sheriff, law enforcement 
+- founder of Idaho Leaders United & Defend and Protect Idaho PAC

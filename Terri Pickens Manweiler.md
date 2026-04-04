@@ -1,5 +1,3 @@
 ---
-tags:
-  - party/democratic
 ---
-former candidate for [[Lieutenant Governor]] 
+former candidate for Lieutenant Governor 

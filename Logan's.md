@@ -1,1 +1,1 @@
-[[belonging]] [[to]] [[LOGAN]]
+belonging to LOGAN

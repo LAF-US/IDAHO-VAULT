@@ -1,6 +1,4 @@
 ---
-tags:
-  - administration/governance
 updated: 2026-03-25
 status: draft
 source: commit
@@ -40,7 +38,7 @@ This zone is protected by `CODEOWNERS` (`/!/` requires `@loganfinney27` review).
 
 ### Operational Zone
 
-Covers `.github/` subtrees and `swarm/` tooling. Both CODE AUTHORITY and Copilot can propose modifications to `.github/` per [[AGENTS]] Section 5 overlap rules.
+Covers `.github/` subtrees and `swarm/` tooling. Both CODE AUTHORITY and Copilot can propose modifications to `.github/` per AGENTS Section 5 overlap rules.
 
 **Access model:** Agents with GitHub repo access can submit PRs. Logan reviews and merges. No auto-merge — all Operational Zone changes are high-risk.
 
@@ -107,7 +105,7 @@ Per Logan's directive (2026-03-24): no agent — including CODE AUTHORITY — ma
 - **PR-gated:** all changes submitted as pull requests for review
 - **Logan-merged:** Logan holds sole merge authority (with auto-merge exception for low-risk Data Zone changes)
 
-This means CODE AUTHORITY's "Direct write" capability tier (per [[AGENTS]]) describes *mechanical ability*, not *standing authorization*. Each task requires fresh authorization.
+This means CODE AUTHORITY's "Direct write" capability tier (per AGENTS) describes *mechanical ability*, not *standing authorization*. Each task requires fresh authorization.
 
 ---
 
@@ -147,10 +145,10 @@ This means CODE AUTHORITY's "Direct write" capability tier (per [[AGENTS]]) desc
 
 ## Cross-References
 
-- [[CONSTITUTION]] — Identity, constraints, working rules
-- [[AGENTS]] — Agent registry, capability tiers, boundary rules
-- [[DECISIONS]] — Confirmed Logan-approved decisions
-- [[PROTOCOL]] — Operational vocabulary
+- CONSTITUTION — Identity, constraints, working rules
+- AGENTS — Agent registry, capability tiers, boundary rules
+- DECISIONS — Confirmed Logan-approved decisions
+- PROTOCOL — Operational vocabulary
 
 ---
 
@@ -158,5 +156,5 @@ This means CODE AUTHORITY's "Direct write" capability tier (per [[AGENTS]]) desc
 
 - **Created:** 2026-03-24
 - **Author:** PERMANENT: AUTHORITY: CODE (draft)
-- **Status:** Draft — awaiting [[LOGAN]]'s review
-- **Authority:** [[LOGAN]]'s discretion
+- **Status:** Draft — awaiting LOGAN's review
+- **Authority:** LOGAN's discretion

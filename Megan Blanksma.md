@@ -1,12 +1,6 @@
 ---
-tags:
-  - party/republican
-  - people/elected/legislative
-  - people/elected
-  - people
 ---
+Residence: Hammett
 
-Residence: [[Hammett]]
-
-[[House Majority Leader]]
-- Former [[House Majority Caucus Chair]] 
+House Majority Leader
+- Former House Majority Caucus Chair 

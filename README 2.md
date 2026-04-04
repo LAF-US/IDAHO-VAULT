@@ -1,6 +1,4 @@
 ---
-tags:
-  - administration/canonical
 updated: 2026-04-02
 status: active
 ---

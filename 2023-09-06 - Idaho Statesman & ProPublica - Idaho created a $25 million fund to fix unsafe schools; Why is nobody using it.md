@@ -1,30 +1,25 @@
 ---
-aliases:
-  - Idaho created a $25 million fund to fix unsafe schools. Why is nobody using it?
 author:
-  - "[[Becca Savransky]]"
-  - "[[Sarah Miller]]"
+  - "Becca Savransky"
+  - "Sarah Miller"
 outlet:
-  - "[[Idaho Statesman]]"
-  - "[[ProPublica]]"
+  - "Idaho Statesman"
+  - "ProPublica"
 URL: https://www.idahostatesman.com/news/local/education/article278735329.html
-tags:
-  - media/articles
-  - 2023/09/06
 ---
-[[2023 Idaho Statesman & ProPublica - Idaho's crumbling schools]] 
+2023 Idaho Statesman & ProPublica - Idaho's crumbling schools 
 
-*About a decade ago, one [[school districts|school district]] went to the [[State of Idaho|state]] for money to fix its crumbling buildings. It got a fraction of what it asked for. Since then, no other district has even applied.*
+*About a decade ago, one school district went to the state for money to fix its crumbling buildings. It got a fraction of what it asked for. Since then, no other district has even applied.*
 
-As a member of the [[school board]] in the remote [[Central Idaho]] town of [[Salmon]], [[Josh Tolman]] worried that an earthquake would turn the elementary and middle schools to rubble. The foundations of the schools were crumbling. The floors buckled. The district canceled school whenever a few inches of snow fell for fear the roofs would cave in. 
+As a member of the school board in the remote Central Idaho town of Salmon, Josh Tolman worried that an earthquake would turn the elementary and middle schools to rubble. The foundations of the schools were crumbling. The floors buckled. The district canceled school whenever a few inches of snow fell for fear the roofs would cave in. 
 
 But Tolman and the school district were in a bind: They couldn’t convince enough voters to support a tax increase that would allow the district to build a new facility. The school board ran six bond elections in seven years. But even though 53% of the community supported the bond in one of their first attempts in 2006, it wasn’t enough. Idaho is one of two states that require two-thirds of voters to support a bond for it to pass. 
 
 “Unless an existing school actually falls to the ground and becomes unusable, I don’t perceive them ever passing a bond,” Tolman said in a recent interview. 
 
-By 2012, the school board and its superintendent had had enough. They decided to turn to a state program that lets school districts borrow money from the state if they have unsafe facilities and can’t pass a bond or figure out another way to fix them. The loan program had been created after the state Supreme Court ruled that Idaho had failed to comply with its [[Idaho Constitution|constitutional]] mandate to provide a “safe environment conducive to learning.” 
+By 2012, the school board and its superintendent had had enough. They decided to turn to a state program that lets school districts borrow money from the state if they have unsafe facilities and can’t pass a bond or figure out another way to fix them. The loan program had been created after the state Supreme Court ruled that Idaho had failed to comply with its constitutional mandate to provide a “safe environment conducive to learning.” 
 
-Earlier this year, the [[Idaho Statesman]] and [[ProPublica]] reported that dozens of school bonds that were supported by a majority of voters had nonetheless failed because of the two-thirds threshold. But, like the bond elections, this state fund also set a high bar and never became a solution to the funding problem schools faced. Since it was created in 2006, the program has been used only twice. And it hasn’t been used in nearly a decade. 
+Earlier this year, the Idaho Statesman and ProPublica reported that dozens of school bonds that were supported by a majority of voters had nonetheless failed because of the two-thirds threshold. But, like the bond elections, this state fund also set a high bar and never became a solution to the funding problem schools faced. Since it was created in 2006, the program has been used only twice. And it hasn’t been used in nearly a decade. 
 
 Ultimately a state panel decided that Salmon’s problems — though bad enough to pose safety hazards — did not warrant a new school under the law, only new roofs and seismic reinforcements. 
 
@@ -36,7 +31,7 @@ The district closed the middle school and added portable buildings — trailers 
 
 Today, the abandoned Salmon Middle School sits behind a tall razor-wire fence in a valley said to be the birthplace of Sacagawea, the Shoshone woman famous for her critical work on the Lewis and Clark expedition. The building’s roof is pocked with gaping holes, and insulation hangs down into hallways. Framed accreditation certificates, a crushed globe and pieces of ceiling tiles pepper the ground of eerily quiet classrooms. 
 
-*Salmon Middle School was abandoned after the district asked the state to help pay for a new school but only received enough funding for a new roof and seismic reinforcements. [[Sarah Miller|Sarah A. Miller]]* 
+*Salmon Middle School was abandoned after the district asked the state to help pay for a new school but only received enough funding for a new roof and seismic reinforcements. Sarah A. Miller* 
 
 *The now-closed Salmon Middle School continues to deteriorate after it was shuttered by the district.* 
 
@@ -50,7 +45,7 @@ Cori Allen has two kids in the district. Her oldest, now a sophomore in high sch
 
 The state constitution talks about “equal education,” and Salmon kids “are in facilities that are, in my opinion, totally inappropriate for a child to be learning in,” Allen said. “It’s just not fair that geographically we have to put up with it.” 
 
-*In Salmon’s elementary school, which is still in use, cracks have appeared in the floors and a drain in the kitchen occasionally backs up with sewage. [[Sarah Miller|Sarah A. Miller]]*
+*In Salmon’s elementary school, which is still in use, cracks have appeared in the floors and a drain in the kitchen occasionally backs up with sewage. Sarah A. Miller*
 
 ### IDAHO SCHOOL FUND DESIGNED TO BE ‘DIFFICULT TO USE’ 
 
@@ -66,7 +61,7 @@ Instead, the Legislature took up a bill that several lawmakers said at the time 
 
 The proposed program had a high bar: School districts would qualify only if their buildings presented either an “unreasonable risk of death or serious bodily injury” or an “unreasonable health risk.” 
 
-*Salmon Middle School was abandoned after the district asked the state to help pay for a new school but only received enough funding for a new roof and seismic reinforcements. [[Sarah Miller|Sarah A. Miller]]* 
+*Salmon Middle School was abandoned after the district asked the state to help pay for a new school but only received enough funding for a new roof and seismic reinforcements. Sarah A. Miller* 
 
 The program’s money would also come with strings attached. If approved, district officials would have to agree to forgo local control throughout the process and give a state-appointed supervisor the power to make decisions for the schools — even the power to dismiss the superintendent. The state would then impose a tax on the local community to repay the loan, a potentially enormous deterrent, since the community had already voted down a bond. 
 
@@ -80,7 +75,7 @@ Now-Lt. Gov. Scott Bedke, who sponsored the legislation, acknowledged in a recen
 
 “It was created to be, frankly, difficult to use,” said Mike Rush, the former executive director of the State Board of Education who served on the state panel that assessed program applications, including Salmon’s. 
 
-The program’s requirements were “onerous,” said [[Shawn Keough]], a former Republican state senator who sponsored the bill that created the program, and that only two districts have used it shows it wasn’t the tool districts wanted. 
+The program’s requirements were “onerous,” said Shawn Keough, a former Republican state senator who sponsored the bill that created the program, and that only two districts have used it shows it wasn’t the tool districts wanted. 
 
 “I supported the incremental step forward as a potential solution,” she said. “One of my regrets from my 22 years of service was not being able to fix that problem of school facility funding.” 
 
@@ -110,7 +105,7 @@ The years of debate over how to handle the school conditions created turmoil and
 
 “We got a new roof on a turd over there,” said Allen, a Salmon parent. She said it also wouldn’t have gone over well if the state had charged taxpayers for a new school they didn’t vote for. “They could have offered us some resources or some education or opportunities or some sort of a lifeline,” she added. “But they just didn’t.” 
 
-*An old basketball hoop stands in front of newer playground equipment on the backside of the elementary school in Salmon. [[Sarah Miller|Sarah A. Miller]]*
+*An old basketball hoop stands in front of newer playground equipment on the backside of the elementary school in Salmon. Sarah A. Miller*
 
 While Rush sees value in the program to abate unsafe situations, he said it’s not the ideal solution for aging and deteriorating schools like the one in Salmon. 
 
@@ -129,7 +124,7 @@ What really worries Harbaugh, though, is the narrow hallway and staircase that s
 *Head cook Becky Harbaugh and cook Rick Palmer prepare food for lunch.* 
 *In the elementary school kitchen, drawers and cabinets have pieces of string in place of handles.* 
 *A student navigates a set of stairs in the lunch line at Pioneer Elementary’s cafeteria. 
-[[Sarah Miller|Sarah A. Miller]]* 
+Sarah A. Miller* 
 
 Students who use wheelchairs face a different problem. They can’t even line up to get their meals; there’s no ramp. 
 
@@ -167,4 +162,4 @@ During a tour in May, Jill Patton, Pioneer’s principal, praised teachers for a
 
 On the day of the tour, the students in Betsi LaMoure’s first grade class had been working on some addition problems. She was trying out a smartboard that a vendor had lent to Salmon in hopes that the district would buy them. But the WiFi wasn’t strong enough to get it working. Connectivity is poor in the area, and retrofitting such an old building is difficult. After multiple attempts, LaMoure gave up. She pivoted to a much older technology, writing on a piece of paper and using a projector to display it on the chalkboard. 
 
-*Betsi LaMoure resorts to using a document projector camera to teach a math lesson after a new smart board the school is testing, at left, fails to connect with the WiFi in her first grade classroom. [[Sarah Miller|Sarah A. Miller]]* 
+*Betsi LaMoure resorts to using a document projector camera to teach a math lesson after a new smart board the school is testing, at left, fails to connect with the WiFi in her first grade classroom. Sarah A. Miller* 

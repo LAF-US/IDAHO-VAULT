@@ -1,6 +1,3 @@
 ---
-aliases:
-  - ambulance
 ---
-
-[[transportation]] for [[emergency medical services]] 
+transportation for emergency medical services 

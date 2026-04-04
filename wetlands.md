@@ -1,5 +1,3 @@
 ---
-tags:
-  - geography/water
 ---
-[[water]] 
+water 

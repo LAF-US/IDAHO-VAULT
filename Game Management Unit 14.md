@@ -1,10 +1,5 @@
 ---
-tags:
-  - geography/land/wildlife/state
-aliases:
-  - Unit 14
-  - GMU 14
 ---
-northwestern [[Idaho County]]
+northwestern Idaho County
 
-[[chronic wasting disease]] 
+chronic wasting disease 

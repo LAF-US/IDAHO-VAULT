@@ -1,10 +1,6 @@
 ---
-tags:
-  - people/elected
-  - party/republican
-  - people
 ---
-Residence: [[Pocatello]] 
-Graduate: [[Idaho State University]] 
-- former [[Bannock County]] [[County Commissioners|Commissioner]] 
-- 2014 [[Idaho Republican Party]] [[Idaho House of Representatives|House]] candidate, lost to incumbent [[Elaine Smith]] 
+Residence: Pocatello 
+Graduate: Idaho State University 
+- former Bannock County Commissioner 
+- 2014 Idaho Republican Party House candidate, lost to incumbent Elaine Smith 

@@ -1,3 +1,3 @@
-[[Canada]]
-[[United States of America]]
-[[Mexico]] 
+Canada
+United States of America
+Mexico 

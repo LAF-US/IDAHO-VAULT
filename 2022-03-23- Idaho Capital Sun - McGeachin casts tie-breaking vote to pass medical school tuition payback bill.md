@@ -1,20 +1,17 @@
 ---
-outlet: "[[Idaho Capital Sun]]"
+outlet: "Idaho Capital Sun"
 url: "https://idahocapitalsun.com/2022/03/23/mcgeachin-casts-tie-breaking-vote-to-pass-medical-school-tuition-payback-bill/"
 author:
-  - "[[Kelcie Moseley-Morris]]"
-  - "[[Audrey Dutton]]"
-tags:
-  - media/articles
-  - 2022/03/23
+  - "Kelcie Moseley-Morris"
+  - "Audrey Dutton"
 ---
-## [[Idaho House of Representatives|House]] bill requires [[WWAMI joint medical education program|WWAMI]] medical students to practice in [[State of Idaho|Idaho]] or repay as much as $120,000 subsidized tuition
+## House bill requires WWAMI medical students to practice in Idaho or repay as much as $120,000 subsidized tuition
 
-[[Lieutenant Governor|Lt. Gov.]] [[Janice McGeachin]] cast a tie-breaking vote on Wednesday morning in the [[Idaho Senate]] to pass a bill that will require graduates of [[State of Idaho|Idaho]]’s [[medical school]] to practice in the state for at least four years or pay back any tuition subsidized by public dollars.
+Lt. Gov. Janice McGeachin cast a tie-breaking vote on Wednesday morning in the Idaho Senate to pass a bill that will require graduates of Idaho’s medical school to practice in the state for at least four years or pay back any tuition subsidized by public dollars.
 
-Under [Senate rules](https://legislature.idaho.gov/statutesrules/senaterules/), Idaho’s [[Lieutenant Governor]] acts as [[Senate President Pro Tempore|president]] of the [[Idaho Senate|Senate]] and can cast a vote in the event of a tie.
+Under [Senate rules](https://legislature.idaho.gov/statutesrules/senaterules/), Idaho’s Lieutenant Governor acts as president of the Senate and can cast a vote in the event of a tie.
 
-[House Bill 718](https://legislature.idaho.gov/sessioninfo/2022/legislation/H0718/) outlines contract requirements for students who are accepted into the [[Washington]], [[Wyoming]], [[Alaska]], [[Montana]] and [[WWAMI joint medical education program|Idaho Regional Medical Education Program]], better known as WWAMI, at the [[University of Idaho]] or the University of Utah. [[WWAMI joint medical education program|WWAMI]] is Idaho’s [only medical school](https://idahocapitalsun.com/2021/10/08/program-for-idaho-medical-students-receives-12-million-for-scholarships/) that is partially funded by state dollars, and the medical school that produces the most rural physicians for the state, with incentives available for those who decide to practice in a rural area of Idaho. Idaho also has a for-profit, private [osteopathic medical school](https://www.idahocom.org/) in Meridian.
+[House Bill 718](https://legislature.idaho.gov/sessioninfo/2022/legislation/H0718/) outlines contract requirements for students who are accepted into the Washington, Wyoming, Alaska, Montana and Idaho Regional Medical Education Program, better known as WWAMI, at the University of Idaho or the University of Utah. WWAMI is Idaho’s [only medical school](https://idahocapitalsun.com/2021/10/08/program-for-idaho-medical-students-receives-12-million-for-scholarships/) that is partially funded by state dollars, and the medical school that produces the most rural physicians for the state, with incentives available for those who decide to practice in a rural area of Idaho. Idaho also has a for-profit, private [osteopathic medical school](https://www.idahocom.org/) in Meridian.
 
 ![WWAMI students](https://idahocapitalsun.com/wp-content/uploads/2022/03/9K3A9081-1024x683.jpg)
 
@@ -46,4 +43,4 @@ Students in the program would commit to entering active, full-time professional 
 
 Idaho ranks near the bottom of states in the country for number of active primary care physicians, and 49th for active physicians overall. According to the Idaho Department of Health and Welfare, [nearly every corner of Idaho](https://healthandwelfare.idaho.gov/providers/rural-health-and-underserved-areas/rural-health-and-underserved-areas), or 98%, has a shortage of primary care physicians.
 
-“It’s no secret that Idaho needs more doctors,” said [[University of Idaho]] [[WWAMI joint medical education program|WWAMI]] Director [[Jeff Seegmiller]] in a statement to the [[Idaho Capital Sun]]. “Idaho [[WWAMI joint medical education program|WWAMI]] exposes students to practicing in rural or underserved communities through all four years of medical school. With a required service payback, we hope to see those same students applying that experience to improve patient outcomes across the Gem State.”
+“It’s no secret that Idaho needs more doctors,” said University of Idaho WWAMI Director Jeff Seegmiller in a statement to the Idaho Capital Sun. “Idaho WWAMI exposes students to practicing in rural or underserved communities through all four years of medical school. With a required service payback, we hope to see those same students applying that experience to improve patient outcomes across the Gem State.”

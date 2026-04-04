@@ -1,12 +1,6 @@
 ---
-tags:
-  - schools/k12/district/high-schools
-  - schools/k12/private
-aliases:
-  - high school
 ---
-
-This is a list of high schools (private, [[school districts|district]] and [[charter schools|charter]]) in the [[State of Idaho]] by county.
+This is a list of high schools (private, district and charter) in the State of Idaho by county.
 
 _Ada County_
 Bishop Kelly High School, Boise
@@ -41,7 +35,7 @@ Meadows Valley Junior/Senior High School, New Meadows
 
 _Bannock County_
 Pocatello High School, Pocatello
-[[Highland High School]], Pocatello
+Highland High School, Pocatello
 Century High School, Pocatello
 Marsh Valley High School, Arimo
 
@@ -72,9 +66,9 @@ Horseshoe Bend High School, Horseshoe Bend
 Idaho City High School, Idaho City
 
 _Bonner County_
-[[Clark Fork Junior-Senior High School]], Clark Fork
-[[Priest River Lamanna High School]], Priest River
-[[Sandpoint High School]], Sandpoint
+Clark Fork Junior-Senior High School, Clark Fork
+Priest River Lamanna High School, Priest River
+Sandpoint High School, Sandpoint
 
 _Bonneville County_
 Bonneville High School, Idaho Falls 5A
@@ -133,7 +127,7 @@ Timberline High School, Weippe
 
 _Custer County_
 Challis High School, Challis
-[[Mackay High School]], Mackay
+Mackay High School, Mackay
 
 _Elmore County_
 Glenns Ferry High School, Glenns Ferry
@@ -188,7 +182,7 @@ _Latah County_
 Deary High School, Deary
 Genesee High School, Genesee
 Kendrick High School, Kendrick
-[[Logos School]], Moscow
+Logos School, Moscow
 Moscow High School, Moscow
 Potlatch High School, Potlatch
 Troy High School, Troy
@@ -208,7 +202,7 @@ Richfield High School, Richfield
 Shoshone High School, Shoshone
 
 _Madison County_
-[[Madison High School]], Rexburg 5A
+Madison High School, Rexburg 5A
 Sugar-Salem High School, Sugar City
 
 _Minidoka County_

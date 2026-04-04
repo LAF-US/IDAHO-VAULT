@@ -1,12 +1,9 @@
 ---
 author:
-  - "[[Clark Corbin]]"
+  - "Clark Corbin"
 outlet:
-  - "[[Idaho Capital Sun]]"
+  - "Idaho Capital Sun"
 URL: https://idahocapitalsun.com/2023/08/01/former-idaho-congressional-candidate-named-to-gop-national-committee/
-tags:
-  - media/articles
-  - 2023/08/01
 ---
 ## Attorney Bryan Smith will serve until the post is voted on at next year’s Republican state convention
 
@@ -20,7 +17,7 @@ Smith, an attorney from Idaho Falls, ran unsuccessful campaigns for the U.S. Hou
 
 Smith will finish out the term held by previous national committeeman Damond Watkins, which runs through next year’s Republican State Convention. 
 
-In a telephone interview, Watkins said he was blindsided by party leaders and coerced into resigning during the Idaho GOP summer meeting in Challis. [[2023-07-22 - Post Register - AN UNCIVIL WAR - Damond Watkins says his resignation from state RNC role was coerced|The Post Register first reported on July 22]] that Watkins said his resignation was coerced.   
+In a telephone interview, Watkins said he was blindsided by party leaders and coerced into resigning during the Idaho GOP summer meeting in Challis. The Post Register first reported on July 22 that Watkins said his resignation was coerced.   
 
 In a written statement last week, Idaho Republican Party Chairwoman Dorothy Moon said she and an Idaho GOP official investigating Watkins spoke with Watkins before they planned to release a report about him to attendees at the GOP meeting. 
 

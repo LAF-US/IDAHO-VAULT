@@ -1,1 +1,1 @@
-[[Governor]] blocking [[Idaho Legislature]] 
+Governor blocking Idaho Legislature 

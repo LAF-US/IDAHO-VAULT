@@ -1,1 +1,1 @@
-[[books|book]] by [[Leslie Connor]] 
+book by Leslie Connor 

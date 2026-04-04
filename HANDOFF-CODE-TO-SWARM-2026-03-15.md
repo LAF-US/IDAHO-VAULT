@@ -1,6 +1,4 @@
 ---
-tags:
-  - administration/handoff
 updated: 2026-03-15
 ---
 # HANDOFF: CODE AUTHORITY → SWARM (via ADMINISTRATION)

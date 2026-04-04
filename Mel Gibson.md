@@ -1,5 +1,3 @@
 ---
-tags:
-  - people
 ---
 actor 

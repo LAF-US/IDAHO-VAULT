@@ -1,5 +1,3 @@
 ---
-aliases:
-  - KFF
 ---
-[[health care]] 
+health care 

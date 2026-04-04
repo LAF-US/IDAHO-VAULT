@@ -1,11 +1,6 @@
 ---
-tags:
-  - people/elected/legislative
-  - people/elected
-  - party/republican
-  - people
 ---
-Residence: [[Donnelly]]
-- Former [[House member]]
-- Unsuccessful [[Idaho Senate|Senate]] run after [[redistricting]]
+Residence: Donnelly
+- Former House member
+- Unsuccessful Senate run after redistricting
 - 

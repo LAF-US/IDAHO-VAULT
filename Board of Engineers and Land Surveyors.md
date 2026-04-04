@@ -1,1 +1,1 @@
-[[occupational and professional licensing]] board for [[land surveyors]]
+occupational and professional licensing board for land surveyors

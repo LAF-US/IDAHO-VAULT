@@ -1,1 +1,1 @@
-Produced by [[Office of Performance Evaluations]] for [[Joint Legislative Oversight Committee|JLOC]] and [[Idaho Legislature|Legislature]] to review issues and laws.
+Produced by Office of Performance Evaluations for JLOC and Legislature to review issues and laws.

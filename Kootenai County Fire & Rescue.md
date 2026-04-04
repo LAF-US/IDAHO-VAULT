@@ -1,5 +1,3 @@
 ---
-tags:
-  - governments/taxingdistrict
 ---
-[[fire protection districts|fire protection district]] in [[Kootenai County]] 
+fire protection district in Kootenai County 

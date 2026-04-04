@@ -1,15 +1,12 @@
 ---
 author:
-  - "[[David Pace]]"
+  - "David Pace"
 outlet:
-  - "[[Post Register]]"
-tags:
-  - 2023/10/27
-  - media/articles
+  - "Post Register"
 ---
-[[David Pace]], [[Post Register]] | Oct 27, 2023 Updated Oct 28, 2023 
+David Pace, Post Register | Oct 27, 2023 Updated Oct 28, 2023 
 
-Three [[Bonneville County]] legislators — [[House member|Rep.]] [[Wendy Horman]], Rep. [[Stephanie Mickelsen]], and [[Senate member|Sen.]] [[Kevin Cook]] — have been requested to appear before a [[Legislative District 32]] Committee to respond to allegations of violating the [[Idaho Republican Party|Republican Party]] Platform.
+Three Bonneville County legislators — Rep. Wendy Horman, Rep. Stephanie Mickelsen, and Sen. Kevin Cook — have been requested to appear before a Legislative District 32 Committee to respond to allegations of violating the Republican Party Platform.
 
 The hearing is set for 7 p.m. on Dec. 7.
 
@@ -17,7 +14,7 @@ The legislators have not been notified what the alleged violations are.
 
 Horman said she was told she will not be notified of the specific complaints until she agrees to the rules for the meeting.
 
-Cook said he will be facing four complaints, but that he was told one of the alleged violations was for his vote for the [[Idaho Launch]] program.
+Cook said he will be facing four complaints, but that he was told one of the alleged violations was for his vote for the Idaho Launch program.
 
 “I will go before a Special Investigation Committee,” Cook said. “They will give me my four complaints. I will have some time to write up my reasoning why I did what I did. I’ll give that to them. They’ll think about it, read it over and then we’ll have a meeting to discuss it, and they will vote whether they like what I did or whether I need to be sanctioned.”
 
@@ -25,17 +22,17 @@ Mickelsen said she is recovering from major back surgery and can’t leave her h
 
 “If the voters don’t like me, they’ll vote me out of office,” Mickelsen said. “I feel like I’m doing a good job. I’m taking the time to read the bills, so (county GOP) to basically be backseat driving legislators is ridiculous.”
 
-The hearings are implementing the new “Republican Party Platform Enforcement Rule” that the Idaho GOP passed on June 24 during its summer meeting in [[Challis]].
+The hearings are implementing the new “Republican Party Platform Enforcement Rule” that the Idaho GOP passed on June 24 during its summer meeting in Challis.
 
-“The Idaho Republican State Central Committee, Legislative District Committees, and County [[central committees]] are hereby empowered to call into question the conduct of a Republican elected official; give fair consideration to alleged violations and provide a meaningful opportunity for the official to be heard, determine if substantive violations of Party Platform or Constitutions have occurred; provide censure and/or guidance upon the first determination of substantive violations; and for any substantive violations by the same elected official occurring after the first determination has issued … may remove Party support and prohibit the use of Republican Party identifiers on campaign information and advertising from the elected official during their current term and any subsequent campaign for political office for a period of five (5) years,” the rule states.
+“The Idaho Republican State Central Committee, Legislative District Committees, and County central committees are hereby empowered to call into question the conduct of a Republican elected official; give fair consideration to alleged violations and provide a meaningful opportunity for the official to be heard, determine if substantive violations of Party Platform or Constitutions have occurred; provide censure and/or guidance upon the first determination of substantive violations; and for any substantive violations by the same elected official occurring after the first determination has issued … may remove Party support and prohibit the use of Republican Party identifiers on campaign information and advertising from the elected official during their current term and any subsequent campaign for political office for a period of five (5) years,” the rule states.
 
-The [[Bonneville County Republican Central Committee]] has three Legislative District Committees consisting of all the elected precinct committee officers from that district.
+The Bonneville County Republican Central Committee has three Legislative District Committees consisting of all the elected precinct committee officers from that district.
 
-District 32 has 17 precinct committee officers (PCOs), Bonneville County GOP Chairman [[Nick Contos]] said.
+District 32 has 17 precinct committee officers (PCOs), Bonneville County GOP Chairman Nick Contos said.
 
 The District 32 Legislative District Committee holding the hearing will be composed of these elected PCOs or their assistants.
 
-“That’s in an unbiased atmosphere. The whole purpose of doing any investigation is to try to understand both sides of (the issue),” [[Legislative District 32]] Chairman [[Doyle Beck]] said. “… It’s got nothing to do about a gotcha. … It’s purely a back-and-forth to understand each other better.”
+“That’s in an unbiased atmosphere. The whole purpose of doing any investigation is to try to understand both sides of (the issue),” Legislative District 32 Chairman Doyle Beck said. “… It’s got nothing to do about a gotcha. … It’s purely a back-and-forth to understand each other better.”
 
 The final rules for the hearing have not been adopted, so it has not been determined whether or not the public can attend, Contos said. Discussions are ongoing between legislators and the committee as to the hearing’s format and how much time legislators and those making allegations will be allocated to present their cases, Beck said. All rules must ultimately be approved by the committee.
 
@@ -49,7 +46,7 @@ If the elected official is called before the body for a second hearing, the cons
 
 “If the same elected official continues down that path and it continues to be a problem, the process can happen again and on a second round, the body can remove that elected official’s ability to use the Republican logo in future campaigns,” Contos said.
 
-Beck said the Legislative District Committee that he is chairman of is simply enforcing party rules in holding the hearing, specifically the “[[Integrity in Affliation]]” rule in which Republican candidates affirm to the state party whether or not, “I support the [[Idaho Republican Party]] Platform and accept it as the standard by which my performance as a candidate and as an officeholder should be evaluated.”
+Beck said the Legislative District Committee that he is chairman of is simply enforcing party rules in holding the hearing, specifically the “Integrity in Affliation” rule in which Republican candidates affirm to the state party whether or not, “I support the Idaho Republican Party Platform and accept it as the standard by which my performance as a candidate and as an officeholder should be evaluated.”
 
 Horman said she stands by her record and is willing to explain her votes to any citizen or group.
 

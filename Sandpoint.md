@@ -1,6 +1,3 @@
 ---
-tags:
-  - governments/city
-  - geography/land/city
 ---
-[[Bonner County]] seat
+Bonner County seat

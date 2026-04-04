@@ -1,12 +1,9 @@
 ---
 author:
-  - "[[Lyndsie Kiebert]]"
+  - "Lyndsie Kiebert"
 outlet:
-  - "[[Sandpoint Reader]]"
+  - "Sandpoint Reader"
 URL: https://sandpointreader.com/judge-hears-cross-motions-in-second-festival-gun-suit/
-tags:
-  - media/articles
-  - 2021/04/28
 ---
 Kootenai County District Judge Lansing L. Haynes heard cross motions for summary judgment April 26 in the case against the Festival at Sandpoint and city of Sandpoint, in which two private citizens allege that their constitutional rights were violated when they were denied entrance to the concert series in 2019 because they were carrying firearms.
 
@@ -16,13 +13,13 @@ This is the second lawsuit challenging the Festival’s no-weapons policy on pub
 
 *Scott Herndon, left, attempts to enter the Festival at Sandpoint gate with a firearm in 2019. Photo by Ben Olson.*
 
-Attorney and guns rights advocate [[Alexandria Kincaid]], representing the plaintiffs, opened the hour-long April 26 hearing by reminding the judge that is was his obligation to issue a decision based on Idaho law, not on the laws of other states — states from which the defendants have drawn cases to support their argument, like California, New York and Oregon.
+Attorney and guns rights advocate Alexandria Kincaid, representing the plaintiffs, opened the hour-long April 26 hearing by reminding the judge that is was his obligation to issue a decision based on Idaho law, not on the laws of other states — states from which the defendants have drawn cases to support their argument, like California, New York and Oregon.
 
 “Can the government in Idaho, can a city, can a county, contract away our citizens’ rights to keep and bear arms?” Kincaid asked. “Can they do that by leasing or permitting public land to a private entity that says, ‘We don’t want you to be able to defend yourself?’ That’s the question that is before the court.”
 
 Upon filing the case, Herndon et al. alleged that in being denied entry to the Festival while in possession of firearms, their Second, Fourth and 14th Amendment rights had been violated. Kincaid shared at the April 26 hearing that the plaintiffs would no longer be making the Fourth Amendment argument, which deals with searches and seizures.
 
-In a series of back-and-forth rebuttals peppered with questions from Haynes, Kincaid and Peter Erbland — of Coeur d’Alene-based Lake City Law, representing the city of Sandpoint — along with Festival attorney [[Arthur Bistline]] debated the application of Idaho’s concealed weapons code, which states: “The Legislature hereby finds that the people of Idaho have reserved for themselves the right to keep and bear arms while granting the Legislature the authority to regulate the carrying of weapons concealed.” 
+In a series of back-and-forth rebuttals peppered with questions from Haynes, Kincaid and Peter Erbland — of Coeur d’Alene-based Lake City Law, representing the city of Sandpoint — along with Festival attorney Arthur Bistline debated the application of Idaho’s concealed weapons code, which states: “The Legislature hereby finds that the people of Idaho have reserved for themselves the right to keep and bear arms while granting the Legislature the authority to regulate the carrying of weapons concealed.” 
 
 Because War Memorial Field is public land, plaintiffs argue the right to carry can’t be abridged. However, defendants argue that in leasing the property for two weeks each summer, the Festival assumes all rule-making ability, and the city has played no part in restricting firearms.
 

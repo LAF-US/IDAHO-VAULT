@@ -1,1 +1,1 @@
-[[magistrate court]] [[Bonner County]] [[courthouses|courthouse]] 
+magistrate court Bonner County courthouse 

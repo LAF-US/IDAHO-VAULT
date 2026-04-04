@@ -1,12 +1,9 @@
 ---
 author:
-  - "[[Ruth Brown]]"
+  - "Ruth Brown"
 outlet:
-  - "[[Idaho Reports]]"
+  - "Idaho Reports"
 URL: https://blog.idahoreports.idahoptv.org/2023/12/01/lawsuit-over-idahos-public-defense-system-back-in-court/
-tags:
-  - media/articles
-  - 2023/12/01
 ---
 Ruth Brown, Idaho Reports 
 

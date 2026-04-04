@@ -2,9 +2,7 @@
 outlet: "Hacker News"
 url: "https://news.ycombinator.com/item?id=30345496"
 author:
-  - "[[ttiurani]]"
-tags:
-  - media/articles
+  - "ttiurani"
 ---
 **ttiurani** · 2022-02-15
 

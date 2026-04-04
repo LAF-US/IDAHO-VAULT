@@ -1,1 +1,1 @@
-[[Sandpoint]] music festival 
+Sandpoint music festival 

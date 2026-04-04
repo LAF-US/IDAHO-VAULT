@@ -1,6 +1,4 @@
 ---
-tags:
-  - people/journalists
-residence: "[[Boise]]"
+residence: "Boise"
 ---
-- [[Idaho Capital Sun]] founding editor 
+- Idaho Capital Sun founding editor 

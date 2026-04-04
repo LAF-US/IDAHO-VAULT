@@ -1,13 +1,8 @@
 ---
-tags:
-  - category/statue
-aliases:
-  - Eleanor
-  - Mrs. Roosevelt
 ---
-![[Spec UIHP 165.jpg]]
+!Spec UIHP 165.jpg
 # First Lady of the United States
 
-Wife to [[Franklin Roosevelt|Franklin D. Roosevelt]]
+Wife to Franklin D. Roosevelt
 
 ---

@@ -1,7 +1,3 @@
 ---
-aliases:
-  - Devin Center
-tags:
-  - people
 ---
-[[Patriot Front]] member, [[Arkansas]] resident 
+Patriot Front member, Arkansas resident 

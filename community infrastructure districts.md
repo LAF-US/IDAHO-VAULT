@@ -1,6 +1,3 @@
 ---
-tags:
-  - governments/taxingdistrict
 ---
-
-[[taxing districts]] for [[development]] 
+taxing districts for development 

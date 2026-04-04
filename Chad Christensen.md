@@ -1,8 +1,3 @@
 ---
-tags:
-  - people/elected
-  - party/republican
-  - people/elected/legislative
-  - people
 ---
-- former [[House member]] 
+- former House member 

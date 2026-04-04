@@ -1,5 +1,3 @@
 ---
-tags:
-  - geography/water/ocean
 ---
-[[West Coast]] 
+West Coast 

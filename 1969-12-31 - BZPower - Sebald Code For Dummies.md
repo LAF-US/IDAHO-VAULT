@@ -1,7 +1,7 @@
 ---
 source: "https://www.bzpower.com/blogs/entry/7915-sebald-code-for-dummies/"
 author:
-  - "[[Aanchir]]"
+  - "Aanchir"
 published: 1969-12-31
 created: 2026-03-30
 ---

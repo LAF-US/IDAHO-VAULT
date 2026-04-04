@@ -1,6 +1,4 @@
 ---
-tags:
-  - people/journalists
-residence: "[[Boise]]"
+residence: "Boise"
 ---
-[[Idaho Capital Sun]] reporter, formerly [[Idaho Education News]] 
+Idaho Capital Sun reporter, formerly Idaho Education News 

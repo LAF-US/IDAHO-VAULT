@@ -1,6 +1,3 @@
 ---
-tags:
-  - governments/taxingdistrict
 ---
-
-[[taxing districts]] for [[weather modification]] and [[cloud seeding]] 
+taxing districts for weather modification and cloud seeding 

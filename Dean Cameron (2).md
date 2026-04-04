@@ -1,10 +1,7 @@
 ---
-tags:
-  - people/idaho/government
-  - 2026/03/12
 source: commit
 ---
-[[Dean Cameron]] served as [[Joint Finance-Appropriations Committee|JFAC]] co-chair from 1993 to 2015 — the longest continuous co-chairship in committee history — and has served as Idaho Department of Insurance Director since 2015.
+Dean Cameron served as JFAC co-chair from 1993 to 2015 — the longest continuous co-chairship in committee history — and has served as Idaho Department of Insurance Director since 2015.
 
 ## Basic Info
 
@@ -15,10 +12,10 @@ source: commit
 
 ## JFAC Significance
 
-Longest continuous JFAC co-chairship on record, spanning the [[Maxine Bell]] era. Institutional memory of pre-working-group JFAC culture. Non-elected official with no stake in current JFAC power structure. Potential background source on AG open meetings manual sub-quorum language (Lawrence Wasden was AG during Cameron's tenure).
+Longest continuous JFAC co-chairship on record, spanning the Maxine Bell era. Institutional memory of pre-working-group JFAC culture. Non-elected official with no stake in current JFAC power structure. Potential background source on AG open meetings manual sub-quorum language (Lawrence Wasden was AG during Cameron's tenure).
 
 ## Related Notes
 
-- [[Joint Finance-Appropriations Committee]]
-- [[JFAC Working Groups]]
-- [[Maxine Bell]]
+- Joint Finance-Appropriations Committee
+- JFAC Working Groups
+- Maxine Bell

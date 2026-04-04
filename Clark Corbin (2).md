@@ -1,19 +1,16 @@
 ---
-tags:
-  - people/idaho/journalism
-  - 2026/03/12
 source: commit
 ---
-[[Clark Corbin]] is the [[Idaho Capital Sun]] reporter who covers [[Joint Finance-Appropriations Committee|JFAC]] and is the primary story carrier for the JFAC working groups open-meetings investigation.
+Clark Corbin is the Idaho Capital Sun reporter who covers JFAC and is the primary story carrier for the JFAC working groups open-meetings investigation.
 
 ## Basic Info
 
-- **Outlet:** [[Idaho Capital Sun]]
+- **Outlet:** Idaho Capital Sun
 - **Beat:** JFAC, Idaho Legislature, state government
 
 ## Role in Investigation
 
-Primary reporter on the JFAC transparency story. [[Idaho Reports]] / [[Idaho Public Television|IPTV]] cannot editorially own the story due to state-agency editorial constraints. Corbin broke the joint rule non-adoption story (November 7, 2025). Also reported the March 11, 2026 story confirming working group → floor motion chain (OSC/OEMR elimination).
+Primary reporter on the JFAC transparency story. Idaho Reports / IPTV cannot editorially own the story due to state-agency editorial constraints. Corbin broke the joint rule non-adoption story (November 7, 2025). Also reported the March 11, 2026 story confirming working group → floor motion chain (OSC/OEMR elimination).
 
 ## Key Bylines
 
@@ -24,7 +21,7 @@ Primary reporter on the JFAC transparency story. [[Idaho Reports]] / [[Idaho Pub
 
 ## Related Notes
 
-- [[Idaho Capital Sun]]
-- [[Joint Finance-Appropriations Committee]]
-- [[JFAC Working Groups]]
-- [[Joint Rule Non-Adoption 2024-2025]]
+- Idaho Capital Sun
+- Joint Finance-Appropriations Committee
+- JFAC Working Groups
+- Joint Rule Non-Adoption 2024-2025

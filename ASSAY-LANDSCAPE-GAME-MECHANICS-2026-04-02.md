@@ -5,20 +5,6 @@ updated: 2026-04-02
 status: filed
 authority: claude
 doc_class: misc_reference
-tags:
-  - administration/architecture
-  - swarm
-  - game-mechanics
-  - context-management
-  - research
-  - 144
-  - 141
-  - 140
-  - 137
-  - 135
-  - 108
-  - 104
-  - 107
 source: SWARM INQUIRY — Study Application & Dot-Connection, Logan Finney, 2026-04-02
 date created: Wednesday, April 1st 2026, 11:16:46 pm
 date modified: Thursday, April 2nd 2026, 10:36:09 pm
@@ -27,8 +13,8 @@ date modified: Thursday, April 2nd 2026, 10:36:09 pm
 # Landscape Assay — Game Mechanics Study Application
 
 **Inquiry:** CLAUDE CODE BOOTSTRAP PROMPT — Landscape assay + dot-connection
-**Requested by:** [[Logan Finney]]
-**Filed by:** [[Claude Code]] (The Abhorsen), branch `claude/study-game-mechanics-STrAW`
+**Requested by:** Logan Finney
+**Filed by:** Claude Code (The Abhorsen), branch `claude/study-game-mechanics-STrAW`
 **Date:** 2026-04-02
 
 **Core finding:** The vault exhibits strong PC and Ender Chest layers; the HOME-layer gap creates routing and context persistence bottlenecks. Architecture clarity is achievable through small, targeted improvements tied to Constitution.md V1, CrewAI readiness, and routing reliability.

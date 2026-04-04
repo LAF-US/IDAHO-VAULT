@@ -1,1 +1,1 @@
-[[Pocatello]] public [[libraries|library]] founded in 1907
+Pocatello public library founded in 1907

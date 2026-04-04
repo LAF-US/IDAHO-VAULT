@@ -1,5 +1,3 @@
 ---
-tags:
-  - geography/water/creek
 ---
-[[water]] and gravity 
+water and gravity 

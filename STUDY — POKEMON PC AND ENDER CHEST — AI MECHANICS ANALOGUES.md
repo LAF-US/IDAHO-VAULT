@@ -6,23 +6,14 @@ status: filed
 authority: claude
 doc_class: misc_reference
 template_id: tpl-misc-reference-v1
-tags:
-  - swarm
-  - architecture
-  - research
-  - a-and-i
-  - r-and-d
-  - game-mechanics
-  - agent-memory
-  - context-management
 source: SWARM INQUIRY — A&I R&D, Logan Finney, 2026-04-01
 ---
 
 # Study — Pokemon PC and Ender Chest — AI Mechanics Analogues
 
 **Inquiry:** SWARM INQUIRY — A&I R&D
-**Requested by:** [[Logan Finney]]
-**Filed by:** [[Claude]] (The Abhorsen), branch `claude/study-game-mechanics-qZK5E`
+**Requested by:** Logan Finney
+**Filed by:** Claude (The Abhorsen), branch `claude/study-game-mechanics-qZK5E`
 **Date:** 2026-04-01
 
 ---

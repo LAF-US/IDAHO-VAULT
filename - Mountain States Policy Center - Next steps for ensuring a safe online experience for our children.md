@@ -2,9 +2,7 @@
 outlet:
 url: "https://www.mountainstatespolicy.org/post/what-are-the-next-steps-for-a-safe-online-experience-for-our-children"
 author:
-  - "[[Sebastian Griffin]]"
-tags:
-  - "media/articles"
+  - "Sebastian Griffin"
 ---
 ![](https://static.wixstatic.com/media/09a46f_8ca8d4b6e22445e0877b0eabf90afa45~mv2.png/v1/fill/w_925,h_616,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/09a46f_8ca8d4b6e22445e0877b0eabf90afa45~mv2.png)
 

@@ -1,5 +1,5 @@
-[[mammals]] 
+mammals 
 
-[[Canada]] 
+Canada 
 
-[[Boundary County]] 
+Boundary County 

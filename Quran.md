@@ -1,1 +1,1 @@
-[[Islam|Muslim]] [[holy book]] 
+Muslim holy book 

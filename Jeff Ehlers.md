@@ -1,9 +1,4 @@
 ---
-tags:
-  - people/elected
-  - people/elected/legislative
-  - party/republican
-  - people
 ---
-Residence: [[Meridian]]
-- [[House member]] for [[Legislative District 21|LD21]] elected alongside [[James Petzke]] after 2021 [[redistricting]] 
+Residence: Meridian
+- House member for LD21 elected alongside James Petzke after 2021 redistricting 

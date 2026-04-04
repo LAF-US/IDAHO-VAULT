@@ -1,1 +1,1 @@
-[[right to bear arms]] 
+right to bear arms 

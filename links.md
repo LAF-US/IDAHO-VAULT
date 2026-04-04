@@ -1,1 +1,1 @@
-connections ; individual elements of a [[chain]]
+connections ; individual elements of a chain

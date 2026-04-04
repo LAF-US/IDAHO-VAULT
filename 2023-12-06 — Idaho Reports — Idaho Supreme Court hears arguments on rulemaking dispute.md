@@ -1,18 +1,15 @@
 ---
 author:
-  - "[[Ruth Brown]]"
+  - "Ruth Brown"
 outlet:
-  - "[[Idaho Reports]]"
+  - "Idaho Reports"
 URL: https://blog.idahoreports.idahoptv.org/2023/12/06/idaho-supreme-court-hears-arguments-on-rulemaking-dispute/
-tags:
-  - media/articles
-  - 2023/12/06
 ---
 By Ruth Brown, Idaho Reports 
 
-The [[Idaho Supreme Court]] heard arguments Wednesday from the Idaho [[State Athletic Commission]] and the Idaho [[Division of Occupational and Professional Licenses|Division of Professional Licenses]] calling the state’s new rulemaking process unconstitutional. 
+The Idaho Supreme Court heard arguments Wednesday from the Idaho State Athletic Commission and the Idaho Division of Professional Licenses calling the state’s new rulemaking process unconstitutional. 
 
-The agencies take issue with HB 206, which passed the Legislature in March on a party-line vote. Their petition argues the new law prevents state administrative agencies from promulgating and adopting any enforceable [[administrative rules]] until those rules have been pre-approved by the legislature.   
+The agencies take issue with HB 206, which passed the Legislature in March on a party-line vote. Their petition argues the new law prevents state administrative agencies from promulgating and adopting any enforceable administrative rules until those rules have been pre-approved by the legislature.   
 
 Lawmakers typically review existing agency rules at the beginning of each legislative session and approve them before adjourning for the year. However, they have neglected to officially reauthorize the body of rules since 2019.  
 

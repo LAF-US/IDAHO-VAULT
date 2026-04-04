@@ -1,14 +1,11 @@
 ---
 source: "https://www.hklaw.com/en/insights/publications/2026/03/ninth-circuit-issues-mixed-ruling-on-california-age-appropriate-design"
 author:
-  - "[[Rachel Marmor]]"
+  - "Rachel Marmor"
 published:
 created: 2026-03-26
 title: 2026-03-19 - Holland & Knight - Ninth Circuit Issues Mixed Ruling on California Age-Appropriate Design Code Act
-aliases: [2026-03-19 - Holland & Knight - Ninth Circuit Issues Mixed Ruling on California Age-Appropriate Design Code Act]
 linter-yaml-title-alias: 2026-03-19 - Holland & Knight - Ninth Circuit Issues Mixed Ruling on California Age-Appropriate Design Code Act
-tags:
-  - 2026/03/19
 ---
 
 March 19, 2026

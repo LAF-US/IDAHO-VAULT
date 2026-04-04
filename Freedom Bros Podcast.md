@@ -1,7 +1,5 @@
 ---
-tags:
-  - media/podcasts
 outlet:
-  - "[[Freedom Bros Podcast]]"
+  - "Freedom Bros Podcast"
 ---
-[[Greg Pruett]] and [[Dustin Hurst]] 
+Greg Pruett and Dustin Hurst 

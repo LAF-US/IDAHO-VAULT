@@ -1,1 +1,1 @@
-[[RIGHT]]
+RIGHT

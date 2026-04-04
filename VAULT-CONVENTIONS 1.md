@@ -2,11 +2,8 @@
 title: VAULT-CONVENTIONS routing shim
 updated: 2026-04-02
 status: active
-authority: "[[LOGAN]]"
+authority: "LOGAN"
 source: root/VAULT-CONVENTIONS.md
-tags:
-  - administration/shim
-  - administration/routing
 ---
 
 # `!/VAULT-CONVENTIONS.md`

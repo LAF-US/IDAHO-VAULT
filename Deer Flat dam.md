@@ -1,5 +1,3 @@
 ---
-tags:
-  - geography/water/river/dams
 ---
-creates [[Lake Lowell]] in [[Canyon County]] 
+creates Lake Lowell in Canyon County 

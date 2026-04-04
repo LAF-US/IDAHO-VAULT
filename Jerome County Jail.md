@@ -1,1 +1,1 @@
-[[County Sheriff]], [[Jerome County]] [[jails|jail]]
+County Sheriff, Jerome County jail

@@ -1,1 +1,1 @@
-[[County Sheriff]], [[Caribou County]] [[jails|jail]]
+County Sheriff, Caribou County jail

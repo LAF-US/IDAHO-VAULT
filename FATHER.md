@@ -1,5 +1,5 @@
-[[MAN]]
+MAN
 
-[[MALE]]
+MALE
 
-[[MASCULINE]]
+MASCULINE

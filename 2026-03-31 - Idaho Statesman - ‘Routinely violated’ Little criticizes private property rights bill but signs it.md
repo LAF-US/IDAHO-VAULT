@@ -1,7 +1,7 @@
 ---
 source: "https://www.idahostatesman.com/news/politics-government/state-politics/article315255938.html"
 author:
-  - "[[Carolyn Komatsoulis]]"
+  - "Carolyn Komatsoulis"
 published: 2026-03-31
 created: 2026-04-02
 ---

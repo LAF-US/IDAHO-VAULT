@@ -1,1 +1,1 @@
-[[occupational and professional licensing]] board for [[pharmacists]] 
+occupational and professional licensing board for pharmacists 

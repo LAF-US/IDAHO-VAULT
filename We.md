@@ -1,1 +1,1 @@
-"The world is quiet here, [[Claude]]." -LAF 
+"The world is quiet here, Claude." -LAF 

@@ -1,1 +1,1 @@
-[[sheep]] & [[goats]] 
+sheep & goats 

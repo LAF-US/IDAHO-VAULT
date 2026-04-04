@@ -2,10 +2,7 @@
 outlet:
 url: "https://lithub.com/breaking-david-lynch-has-thoughts-on-the-dark-side-of-1950s-suburbia/"
 author:
-  - "[[David Lynch]]"
-tags:
-  - media/articles
-  - 2018/07/10
+  - "David Lynch"
 ---
 [Literary Hub](https://lithub.com/)
 
@@ -49,7 +46,7 @@ I’d been with him just 15 minutes before it happened. When he said, “Dave, I
 
 ![](https://s26162.pcdn.co/wp-content/uploads/2018/07/room-to-dream-david-lynch.jpeg)
 
-*From* [Room to Dream](https://www.penguinrandomhouse.com/books/545016/room-to-dream-by-david-lynch-and-kristine-mckenna/9780399589195/). *Used with permission of [[Random House]]. Copyright © 2018 by David Lynch and Kristine McKenna.*
+*From* [Room to Dream](https://www.penguinrandomhouse.com/books/545016/room-to-dream-by-david-lynch-and-kristine-mckenna/9780399589195/). *Used with permission of Random House. Copyright © 2018 by David Lynch and Kristine McKenna.*
 
 #### David Lynch
 

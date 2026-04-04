@@ -1,7 +1,7 @@
 ---
 source: "https://finance.yahoo.com/news/valorc3-data-centers-announces-10mw-025700500.html?guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAMctb6CkhW0585M7y14G5nFE7lQhVf0bOI3RwXIXovl0jqZ5tSgEsolEwXz3Cm6f10hodfBcFCzgaMjk7hTUSzSrtsp8ZYDJl5omh5eqOYAjybWf9DZIZAjnlqI60NrHEWkrFffvXX8UfkNk_GTniPQQlv1C2_V6WyHQ3Tevk4af&guccounter=2"
 author:
-  - "[[PR Newswire]]"
+  - "PR Newswire"
 published: 2025-05-05
 created: 2026-03-30
 date created: Monday, March 30th 2026, 3:29:23 pm

@@ -1,1 +1,1 @@
-[[animals]], [[furbearer species]]
+animals, furbearer species

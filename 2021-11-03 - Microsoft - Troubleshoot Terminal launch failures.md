@@ -1,7 +1,7 @@
 ---
 source: "https://code.visualstudio.com/docs/supporting/troubleshoot-terminal-launch"
 author:
-  - "[[Microsoft]]"
+  - "Microsoft"
 published: 2021-11-03
 created: 2026-03-29
 ---

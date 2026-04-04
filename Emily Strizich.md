@@ -1,6 +1,4 @@
 ---
-tags:
-  - people
 ---
-- [[Reclaim Idaho]] cofounder
-- wife of [[Garrett Strizich]] 
+- Reclaim Idaho cofounder
+- wife of Garrett Strizich 

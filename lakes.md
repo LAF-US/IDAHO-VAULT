@@ -1,8 +1,3 @@
 ---
-tags:
-  - geography/water/lake
-aliases:
-  - lake
 ---
-
-large surface [[water]] formations
+large surface water formations

@@ -1,8 +1,8 @@
 ---
 source: "https://blog.archive.org/2026/02/02/follow-the-changes/"
 author:
-  - "[[Chris Freeland]]"
-  - "[[View all posts by Chris Freeland →]]"
+  - "Chris Freeland"
+  - "View all posts by Chris Freeland →"
 published: 2026-02-02
 created: 2026-03-30
 ---

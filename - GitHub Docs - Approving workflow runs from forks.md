@@ -1,7 +1,7 @@
 ---
 source: "https://docs.github.com/en/actions/how-tos/manage-workflow-runs/approve-runs-from-forks"
 author:
-  - "[[GitHub Docs]]"
+  - "GitHub Docs"
 published:
 created: 2026-03-29
 ---

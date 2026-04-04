@@ -1,1 +1,1 @@
-[[occupational and professional licensing]] board for [[dentists]] 
+occupational and professional licensing board for dentists 

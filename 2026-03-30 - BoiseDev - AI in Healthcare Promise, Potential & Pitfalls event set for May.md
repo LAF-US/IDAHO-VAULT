@@ -1,7 +1,7 @@
 ---
 source: "https://boisedev.com/news/2026/03/30/intersection-ai-healthcare/"
 author:
-  - "[[Don Day - BoiseDev Editor]]"
+  - "Don Day - BoiseDev Editor"
 published: 2026-03-30
 created: 2026-03-30
 ---

@@ -1,10 +1,8 @@
 ---
 title: "MANIFEST.json v1 Specification"
-tags:
-  - administration/manifest
 updated: 2026-04-01
 status: active
-authority: "[[LOGAN]]"
+authority: "LOGAN"
 source: codex
 ---
 

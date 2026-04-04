@@ -1,11 +1,9 @@
 ---
 source: "https://favs.news/idaho-bill-labeling-products-fetal-cell-lines-held/"
 author:
-  - "[[Logan Finney]]"
+  - "Logan Finney"
 published: 2026-03-07
 created: 2026-03-27
-tags:
-  - 2026/03/07
 ---
 ## Idaho bill to label products made with fetal cells dies in Senate committee
 

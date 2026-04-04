@@ -1,1 +1,1 @@
-[[animals]], [[trophy species]]
+animals, trophy species

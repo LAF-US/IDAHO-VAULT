@@ -1,7 +1,4 @@
 ---
-tags:
-  - administration/orient
-  - administration/context
 updated: 2026-03-22
 ---
 # CONTEXT PASTE BUNDLE — External Agent Orientation

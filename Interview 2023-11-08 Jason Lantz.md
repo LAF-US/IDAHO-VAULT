@@ -1,18 +1,16 @@
 ---
 author:
-  - "[[Logan Finney]]"
-tags:
-  - 2023/11/08
+  - "Logan Finney"
 ---
-Interview for [[2023-11-15 - IR Podcast - Finding Financing to Support Building Homes]] with [[Jason Lantz]], marketing director for the [[Idaho Housing and Finance Association]] 
+Interview for 2023-11-15 - IR Podcast - Finding Financing to Support Building Homes with Jason Lantz, marketing director for the Idaho Housing and Finance Association 
 
-[[Logan Finney]]
+Logan Finney
 
 So just to get us on the record here, can you introduce yourself and spell your name for me?
 
-[[Jason Lantz]]
+Jason Lantz
 
-My name is Jason Lantz. Jason j a s o n Lantz l a n t z and I'm the director of marketing and communications for [[Idaho Housing and Finance Association]].
+My name is Jason Lantz. Jason j a s o n Lantz l a n t z and I'm the director of marketing and communications for Idaho Housing and Finance Association.
 
 Logan Finney
 
@@ -40,7 +38,7 @@ Okay.
 
 Logan Finney
 
-Hello, and welcome to the [[Idaho Reports]] podcast. I'm Logan Finney. Joining me this week is Jason Lantz with the [[Idaho Housing and Finance Association]] to discuss some of their [[housing]] programs. Thanks for joining us, Jason.
+Hello, and welcome to the Idaho Reports podcast. I'm Logan Finney. Joining me this week is Jason Lantz with the Idaho Housing and Finance Association to discuss some of their housing programs. Thanks for joining us, Jason.
 
 Jason Lantz
 
@@ -52,11 +50,11 @@ So can you tell me generally what is the job of the Idaho Housing and Finance As
 
 Jason Lantz
 
-In simplest terms, our mission is to expand [[housing]] opportunities and to support and promote [[economic development]] throughout the state. So that's the simple version. We do that in a number of ways. We're probably best known for our home loan programs. We work in partnership with lenders and [[realtors]] throughout the state to provide home loan products, uh, loans that are a little bit below market. Elsewhere, we help finance and provide oversight for affordable [[apartments|apartment buildings]]. We do administer some federal programs for federal [[rental assistance]]. We also do some economic development activities that range anywhere from small business financing to financing for large [[infrastructure]] projects to [[charter schools]] and nonprofit facilities.
+In simplest terms, our mission is to expand housing opportunities and to support and promote economic development throughout the state. So that's the simple version. We do that in a number of ways. We're probably best known for our home loan programs. We work in partnership with lenders and realtors throughout the state to provide home loan products, uh, loans that are a little bit below market. Elsewhere, we help finance and provide oversight for affordable apartment buildings. We do administer some federal programs for federal rental assistance. We also do some economic development activities that range anywhere from small business financing to financing for large infrastructure projects to charter schools and nonprofit facilities.
 
 Logan Finney
 
-And so when it comes to housing specifically. How much need do you as an agency see for [[affordable housing]] across the state? 
+And so when it comes to housing specifically. How much need do you as an agency see for affordable housing across the state? 
 
 Jason Lantz
 
@@ -68,15 +66,15 @@ Are there any factors in - speaking of all the regions being different - are the
 
 Jason Lantz
 
-I think each different type of region has its own challenges that are, like I said, that are unique. I mean, the challenges that a [[resort town|resort]] community like in the [[Ketchum]] area would face is completely different from what, you know, more metropolitan area like [[Boise]] or the [[Treasure Valley]] would face. And then you throw in, you know, there's an acute need for affordable housing that's safe for, you know, in [[rural]] areas. So, you know, it's unique, but we all face kind of the same similar challenges.
+I think each different type of region has its own challenges that are, like I said, that are unique. I mean, the challenges that a resort community like in the Ketchum area would face is completely different from what, you know, more metropolitan area like Boise or the Treasure Valley would face. And then you throw in, you know, there's an acute need for affordable housing that's safe for, you know, in rural areas. So, you know, it's unique, but we all face kind of the same similar challenges.
 
 Logan Finney
 
-Do you guys do any sort of [[lobbying]] before the [[Idaho Legislature|legislature]]? Cause I remember we had, um, when director [[Gerald Hunter]] was on the show, it was during that [[2022 legislative session]], but the [[Workforce Housing Fund]] had not passed yet, um, or been signed into law.
+Do you guys do any sort of lobbying before the legislature? Cause I remember we had, um, when director Gerald Hunter was on the show, it was during that 2022 legislative session, but the Workforce Housing Fund had not passed yet, um, or been signed into law.
 
 Jason Lantz
 
-We do have a representative at the [[Idaho Legislature|Legislature]]. I don't know exactly what his role is, to be honest with you. It's [[Jeremy Pisca]] if that matters.
+We do have a representative at the Legislature. I don't know exactly what his role is, to be honest with you. It's Jeremy Pisca if that matters.
 
 Logan Finney
 
@@ -100,11 +98,11 @@ Gotcha… So, in those areas all over where there's a need for affordable housin
 
 Jason Lantz
 
-I think the options that we you know, part of that part of our mission is to support those affordable housing options throughout the state, regardless of where you're at in your housing journey. Whether you're at risk of [[homelessness]] or you’re a homeowner or, you know, whatever stage you're in, that's our mission. So, we have a wide gamut of different types of programs, you know, whether it's a home loan program all the way down to rental assistance, to housing counseling and support for people that already own a home or people who are looking to buy a home.
+I think the options that we you know, part of that part of our mission is to support those affordable housing options throughout the state, regardless of where you're at in your housing journey. Whether you're at risk of homelessness or you’re a homeowner or, you know, whatever stage you're in, that's our mission. So, we have a wide gamut of different types of programs, you know, whether it's a home loan program all the way down to rental assistance, to housing counseling and support for people that already own a home or people who are looking to buy a home.
 
 Logan Finney
 
-And one of the particular programs you guys administer, the [[Workforce Housing Fund]], gap financing that was created with $50 million from [[American Rescue Plan Act|ARPA]] by the [[Idaho Legislature|Legislature]]. Can you talk to me about that fund specifically and what sort of projects it's been involved with?
+And one of the particular programs you guys administer, the Workforce Housing Fund, gap financing that was created with $50 million from ARPA by the Legislature. Can you talk to me about that fund specifically and what sort of projects it's been involved with?
 
 Jason Lantz
 
@@ -140,11 +138,11 @@ And when this program is set up, it's described as a gap financing program. Can 
 
 Jason Lantz
 
-So, gap financing is a is a very important piece to a complicated financial puzzle that's necessary to build these types of [[homes]]. These types of [[housing]], the existing - we talked about a little earlier - the existing financing programs, the financing tools, whether that's a federal tool like the [[Low-Income Housing Tax Credit]] or whether it's just, you know, community investment, those can't cover the entire cost of building and operating this type of affordable development. So, where the workforce housing comes in, is it bridges that gap between the cost and the revenue generated by rents that are a little bit lower than market rate.
+So, gap financing is a is a very important piece to a complicated financial puzzle that's necessary to build these types of homes. These types of housing, the existing - we talked about a little earlier - the existing financing programs, the financing tools, whether that's a federal tool like the Low-Income Housing Tax Credit or whether it's just, you know, community investment, those can't cover the entire cost of building and operating this type of affordable development. So, where the workforce housing comes in, is it bridges that gap between the cost and the revenue generated by rents that are a little bit lower than market rate.
 
 Logan Finney
 
-When the [[Workforce Housing Fund]] is being utilized, we've said it's utilized kind of en suite with some of these other [[tax credits]] and things that you guys offer or support people in achieving. Can you kind of run me through those one more time?
+When the Workforce Housing Fund is being utilized, we've said it's utilized kind of en suite with some of these other tax credits and things that you guys offer or support people in achieving. Can you kind of run me through those one more time?
 
 Jason Lantz
 
@@ -156,7 +154,7 @@ Yes, and I’ll ask it in a different way. What are like, specifically, like the
 
 Jason Lantz
 
-You know, there's a multitude of different financing tools out there. You know, probably the most common and most well-known and to be honest, the most successful, is the [[Low-Income Housing Tax Credit]] program. And that's generally aimed at 60% of [[Average Median Income|AMI]] or less. So, it's people who are in the workforce. They earn 60% of AMI or less. That's a simple explanation. But there are other tools like the Federal home. It's called the HOME Grant Program. There's the National Housing Trust Fund. There's investment from Idaho Housing. You know, we kind of put all of those in one, for lack of a better term. We call it the ‘Build Idaho Fund’ as a way to it's a way to talk about all of those funding sources. But depending. They all have their different requirements and different compliance, different rules for each of them. But that's part of where we fit in, is to make sure that we're utilizing those in the best way possible and helping other people understand them.
+You know, there's a multitude of different financing tools out there. You know, probably the most common and most well-known and to be honest, the most successful, is the Low-Income Housing Tax Credit program. And that's generally aimed at 60% of AMI or less. So, it's people who are in the workforce. They earn 60% of AMI or less. That's a simple explanation. But there are other tools like the Federal home. It's called the HOME Grant Program. There's the National Housing Trust Fund. There's investment from Idaho Housing. You know, we kind of put all of those in one, for lack of a better term. We call it the ‘Build Idaho Fund’ as a way to it's a way to talk about all of those funding sources. But depending. They all have their different requirements and different compliance, different rules for each of them. But that's part of where we fit in, is to make sure that we're utilizing those in the best way possible and helping other people understand them.
 
 Logan Finney
 
@@ -172,7 +170,7 @@ Is there anything else about IHFA that you think our audience should be aware of
 
 Jason Lantz
 
-I would say just in general. Again, it goes back to our mission. You know, we're here to support housing for all people in Idaho. So, we have you know, we're not just the big - that's part of what we do, is the financial side of it, you know, and we also do the home loans. But we also have things like [[homebuyer]] education, housing counseling. So if you have a question, you can you know, you can call one of our housing counselors and they can intervene and help you out. We just have a wide range of programs that are meant to support everybody, wherever they are.
+I would say just in general. Again, it goes back to our mission. You know, we're here to support housing for all people in Idaho. So, we have you know, we're not just the big - that's part of what we do, is the financial side of it, you know, and we also do the home loans. But we also have things like homebuyer education, housing counseling. So if you have a question, you can you know, you can call one of our housing counselors and they can intervene and help you out. We just have a wide range of programs that are meant to support everybody, wherever they are.
 
 Logan Finney
 

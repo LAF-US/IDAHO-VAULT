@@ -1,11 +1,9 @@
 ---
-tags:
-  - category/facet/articles
 date: 1940-01-22
 ---
-On a cold morning in January 1940, crowds lined the Capitol’s corridors hoping for admission to the Senate Chamber galleries. Shortly after noon, as senators took their seats, several hundred House members filed into the Chamber, followed by the Supreme Court, the cabinet, diplomats, and President [[Franklin Roosevelt]]. All had come for the funeral service of the 33-year Senate veteran whom _Time_ magazine anointed as the “most famed senator of the century”—the progressive Republican from Idaho, William E. Borah.
+On a cold morning in January 1940, crowds lined the Capitol’s corridors hoping for admission to the Senate Chamber galleries. Shortly after noon, as senators took their seats, several hundred House members filed into the Chamber, followed by the Supreme Court, the cabinet, diplomats, and President Franklin Roosevelt. All had come for the funeral service of the 33-year Senate veteran whom _Time_ magazine anointed as the “most famed senator of the century”—the progressive Republican from Idaho, William E. Borah.
 
-[[William Borah]] began his Senate career in 1907. His deeply resonant voice, natural skills as an actor, and rich command of the English language at once marked him as a gifted orator. A third of a century later, at his Senate funeral, no one delivered a eulogy because no one could match his eloquence.
+William Borah began his Senate career in 1907. His deeply resonant voice, natural skills as an actor, and rich command of the English language at once marked him as a gifted orator. A third of a century later, at his Senate funeral, no one delivered a eulogy because no one could match his eloquence.
 
 Affectionately known as the “Lion of Idaho,” Borah took fiercely independent views that kept him at odds with his party’s leaders. A progressive reformer, he attacked business monopolies, worked to improve the lot of organized labor, promoted civil liberties, and secured passage of constitutional amendments for a graduated income tax and direct election of senators.
 

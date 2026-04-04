@@ -1,1 +1,1 @@
-[[magistrate court]] [[Owyhee County]] [[courthouses|courthouse]] 
+magistrate court Owyhee County courthouse 

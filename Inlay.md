@@ -1,6 +1,4 @@
 ---
-tags:
-  - category
 ---
 *Embedded pieces of different materials creating something new*
 

@@ -1,26 +1,23 @@
 ---
-tags:
-  - 2023/11/27
-  - media/articles
 author:
-  - "[[Ian Max Stevenson]]"
+  - "Ian Max Stevenson"
 outlet:
-  - "[[Idaho Statesman]]"
+  - "Idaho Statesman"
 URL: https://www.idahostatesman.com/news/local/community/boise/article282106198.html
 ---
-After narrowly losing on a ballot initiative to expand the [[Ada County Jail]], Ada County leaders are asking for the state to increase the reimbursement rate the [[County Sheriff|Sheriff]]’s Office receives for housing state prisoners. 
+After narrowly losing on a ballot initiative to expand the Ada County Jail, Ada County leaders are asking for the state to increase the reimbursement rate the Sheriff’s Office receives for housing state prisoners. 
 
-As [[Ada County]] has grown, the population of people imprisoned at the Ada County Jail has increased, to the point that the jail’s population is often higher than can be housed in beds, forcing people to sleep in cots on the floor. 
+As Ada County has grown, the population of people imprisoned at the Ada County Jail has increased, to the point that the jail’s population is often higher than can be housed in beds, forcing people to sleep in cots on the floor. 
 
-To pay for an expansion, the Ada [[County Commissioners|County Commission]] chose to put the matter to voters as a [[bonds|bond]] issue, which requires two-thirds of voters to vote yes. The measure received support from 65.8% of voters, according to results from the Ada County Elections Office. 
+To pay for an expansion, the Ada County Commission chose to put the matter to voters as a bond issue, which requires two-thirds of voters to vote yes. The measure received support from 65.8% of voters, according to results from the Ada County Elections Office. 
 
 The commissioners did not pursue another option available to them, called a lease-purchase, which requires only a majority.
 
-Now, the commissioners want the Idaho [[Department of Correction]] to pay [[counties]] more to house people who have been convicted and sentenced for crimes, but for whom there is no room in state [[prisons]]. 
+Now, the commissioners want the Idaho Department of Correction to pay counties more to house people who have been convicted and sentenced for crimes, but for whom there is no room in state prisons. 
 
 “A big portion of the overcrowding in our jail is because of IDOC inmates,” Commissioner Rod Beck told local lawmakers on Nov. 13, noting that there’s an average of 140 state prisoners in the jail every day. “If those inmates were not in our jail, we wouldn’t be overcrowded.” 
 
-The jail averages 1,008 people a day, according to data from the Sheriff’s Office. It takes an average of 47 days for the Department of Correction to transfer people newly convicted of felonies from the jail to a prison, according to a spokesperson, [[Jeff Ray]]. 
+The jail averages 1,008 people a day, according to data from the Sheriff’s Office. It takes an average of 47 days for the Department of Correction to transfer people newly convicted of felonies from the jail to a prison, according to a spokesperson, Jeff Ray. 
 
 Ray said the department prioritizes transfers based on a variety of criteria, including mental health or medical issues that need attention and the dates of upcoming hearings. 
 
@@ -32,7 +29,7 @@ People convicted of misdemeanors often serve time in the local jail, too. Misdem
 
 On Nov. 16, the Ada County Jail had 112 people ready to be transported to state prisons, according to a Sheriff’s Office spokesperson, Patrick Orr.
 
-Under [[Idaho Code|state law]], Idaho counties are required to house people sentenced to prison until they are transported. Counties are reimbursed $55 per day to cover the costs of each person. After seven days, that rises to $75 per day. 
+Under state law, Idaho counties are required to house people sentenced to prison until they are transported. Counties are reimbursed $55 per day to cover the costs of each person. After seven days, that rises to $75 per day. 
 
 According to the Sheriff’s Office, it costs $117.34 on average to house a person, Orr said, meaning that the $75 reimbursement rate covers about 64% of the jail’s costs for each incarcerated person, and the $55 covers less than half. In fiscal year 2022, the state prison paid Ada County $3.8 million, Orr said. 
 

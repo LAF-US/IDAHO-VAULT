@@ -1,8 +1,3 @@
 ---
-tags:
-  - party/republican
-  - people/elected/statewide/secretary
-  - people/candidate/statewide/secretary
-  - people/deceased
 ---
-former [[Secretary of State]] 
+former Secretary of State 

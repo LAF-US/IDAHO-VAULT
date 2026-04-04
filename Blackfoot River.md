@@ -1,5 +1,3 @@
 ---
-tags:
-  - geography/water/river
 ---
-[[rivers|river]] in [[Bingham County]] 
+river in Bingham County 

@@ -1,7 +1,7 @@
 ---
 source: "https://ij.org/press-release/institute-for-justice-applauds-idaho-governor-signing-bill-protecting-private-property-from-law-enforcement-searches-without-a-warrant/"
 author:
-  - "[[Phillip Suderman]]"
+  - "Phillip Suderman"
 published: 2026-04-01
 created: 2026-04-02
 ---

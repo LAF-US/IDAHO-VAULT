@@ -1,1 +1,1 @@
-[[County Sheriff]], [[Nez Perce County]] [[jails|jail]]
+County Sheriff, Nez Perce County jail

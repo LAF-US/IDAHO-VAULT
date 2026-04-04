@@ -1,8 +1,6 @@
 ---
 outlet:
-  - "[[The Argonaut]]"
-tags:
-  - media/outlets
+  - "The Argonaut"
 ---
 
-[[University of Idaho]] student [[newspapers|newspaper]] 
+University of Idaho student newspaper 

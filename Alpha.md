@@ -1,7 +1,5 @@
 ---
-tags:
-  - geography/land/places/communities
 ---
-[[Valley County]] 
+Valley County 
 
-[[Long Valley]] 
+Long Valley 

@@ -1,5 +1,3 @@
 ---
-tags:
-  - people
 ---
-[[University of Idaho]] president 
+University of Idaho president 

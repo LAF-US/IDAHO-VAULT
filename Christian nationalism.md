@@ -1,1 +1,1 @@
-[[Christianity]] 
+Christianity 

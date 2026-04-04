@@ -1,10 +1,4 @@
 ---
-tags:
-  - party/republican
-  - people/candidate/legislative
-  - people/elected/legislative
-  - people/elected/statewide/governor
-  - people/candidate/statewide/treasurer
 ---
-[[State Treasurer]]
-- former [[House member]] 
+State Treasurer
+- former House member 

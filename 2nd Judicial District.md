@@ -1,8 +1,5 @@
 ---
-aliases:
-  - Second Judicial District
 ---
+Clearwater, Latah, Idaho, Lewis, Nez Perce
 
-[[Clearwater County|Clearwater]], [[Latah County|Latah]], [[Idaho County|Idaho]], [[Lewis County|Lewis]], [[Nez Perce County|Nez Perce]]
-
-One of the seven [[Judicial Districts]].
+One of the seven Judicial Districts.

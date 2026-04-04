@@ -3,12 +3,9 @@ title: "VAULT-TEMPLATES — Document Class and Template System"
 created: 2026-03-25
 updated: 2026-04-01
 status: draft
-authority: "[[LOGAN]]"
+authority: "LOGAN"
 authors:
   - ChatGPT Codex
-tags:
-  - administration/templates
-  - administration/metadata
 source: issue/LAF-9
 ---
 
@@ -36,7 +33,7 @@ This file defines the canonical template system for IDAHO-VAULT. Its purpose is 
 
 **Rule:** New recurring content types must be added to this table before they are treated as first-class classes.
 
-**Routing clarification:** In the live vault, note classes route to repo root unless Logan explicitly establishes a different infrastructure zone. Taxonomy is carried by filename, metadata, and `[[wikilinks]]`, not by deep category folders. Older folder-tree examples are historical context, not standing move instructions.
+**Routing clarification:** In the live vault, note classes route to repo root unless Logan explicitly establishes a different infrastructure zone. Taxonomy is carried by filename, metadata, and `wikilinks`, not by deep category folders. Older folder-tree examples are historical context, not standing move instructions.
 
 ---
 
@@ -79,7 +76,7 @@ Each required template follows this section order:
 1. **YAML frontmatter**
 2. **Summary block** (2-4 sentences)
 3. **Key facts / timeline**
-4. **Linked entities** (`[[wikilinks]]`)
+4. **Linked entities** (`wikilinks`)
 5. **Sources / URLs**
 6. **Open questions / follow-ups**
 
@@ -128,7 +125,7 @@ These template keys define the note instance. Governance and operational notes m
 1. **Create:** select class first, then instantiate matching template.
 2. **Validate:** check filename pattern and required frontmatter keys.
 3. **Route:** keep note-corpus files in repo root unless Logan explicitly directs a move into a dedicated system or infrastructure path.
-4. **Link:** add at least three meaningful `[[wikilinks]]` for graph integrity.
+4. **Link:** add at least three meaningful `wikilinks` for graph integrity.
 5. **Review:** if content fails class validation, keep it in place until corrected.
 
 Routing in this vault is conservative. Rename and normalize first; folder moves are exceptional.
@@ -178,6 +175,6 @@ This system is subordinate to constitutional governance:
 - **Created:** 2026-03-25
 - **Last Updated:** 2026-04-01
 - **Status:** Draft
-- **Authority:** [[LOGAN]]
+- **Authority:** LOGAN
 - **Authors:** ChatGPT Codex
 - **Change Note:** Rebased template policy onto the root-flat vault layout and clarified the daily-note and transport-boundary implementation rules.

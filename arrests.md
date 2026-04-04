@@ -1,6 +1,3 @@
 ---
-aliases:
-  - arrested
-  - arrest
 ---
-[[law enforcement]]
+law enforcement

@@ -1,18 +1,15 @@
 ---
 author:
-  - "[[Darren Svan]]"
+  - "Darren Svan"
 outlet:
-  - "[[Idaho Education News]]"
+  - "Idaho Education News"
 URL: https://www.idahoednews.org/west-idaho/four-teachers-punished-for-violating-idahos-code-of-ethics/
-tags:
-  - media/articles
-  - 2023/12/08
 ---
-Idaho’s [[Professional Standards Commission]] (PSC) took action Friday against four teachers who violated the state’s Code of Ethics for public educators.
+Idaho’s Professional Standards Commission (PSC) took action Friday against four teachers who violated the state’s Code of Ethics for public educators.
 
-The standards commission is an 18-member volunteer board made up of [[teachers]], school administrators and higher education officials, who have the authority to approve, suspend and revoke teaching and administrative licenses in [[State of Idaho|Idaho]].
+The standards commission is an 18-member volunteer board made up of teachers, school administrators and higher education officials, who have the authority to approve, suspend and revoke teaching and administrative licenses in Idaho.
 
-The commission revoked and suspended licenses for a range of violations, from rape to viewing [[pornography]] on a school computer.
+The commission revoked and suspended licenses for a range of violations, from rape to viewing pornography on a school computer.
 
 Below are summaries of the complaints against the educators and the commission’s disciplinary decisions.
 
@@ -30,7 +27,7 @@ The PSC issued a letter of reprimand for her personnel file and will require an 
 
 ### Mark Baer — Plummer-Worley School District
 
-Mark Baer used his school district computer to view [[pornography]]. He holds a teaching certificate with English, social studies and history endorsements.
+Mark Baer used his school district computer to view pornography. He holds a teaching certificate with English, social studies and history endorsements.
 
 The PSC suspended his teaching certification for two years, with the condition he complete an ethics course and that a licensed counselor issue a letter demonstrating that he is fit to be in the classroom.
 
@@ -47,11 +44,11 @@ Kelly Moysh provided diuretic Lasix pills to one or more students on the wrestli
 The PSC did not take any action on his license. The PSC’s administrative complaint recommends suspending his teaching certification until he: completes an ethics, drug-free workplace and understanding academic dishonesty courses; and an honoring the game course from Positive Coaching Alliance.
 
 # Current administrative complaints
-EdNews obtained four additional administrative complaints through a record’s request. The PSC has not made a final decision against the teacher, staff or administrator being investigated for violating [[Idaho Code]]. The state provides an opportunity to contest the allegations contained in the complaint during its administrative proceeding, if requested by the person accused of wrongdoing. One or more of the cases could be placed on the PSC’s next scheduled meeting for disciplinary decisions.
+EdNews obtained four additional administrative complaints through a record’s request. The PSC has not made a final decision against the teacher, staff or administrator being investigated for violating Idaho Code. The state provides an opportunity to contest the allegations contained in the complaint during its administrative proceeding, if requested by the person accused of wrongdoing. One or more of the cases could be placed on the PSC’s next scheduled meeting for disciplinary decisions.
 
 ### Cory Gaylor — Kuna School District
 
-Cory Gaylor pleaded guilty to lewd conduct with a child under the age of 16 and “children-enticing” over the [[Internet]]. He was convicted in 2023. He holds a teaching certificate with world language and Spanish endorsements. The PSC recommends permanent revocation of his certifications, according to the administrative complaint.
+Cory Gaylor pleaded guilty to lewd conduct with a child under the age of 16 and “children-enticing” over the Internet. He was convicted in 2023. He holds a teaching certificate with world language and Spanish endorsements. The PSC recommends permanent revocation of his certifications, according to the administrative complaint.
 
 ### Eric M. McDermott — Boise School District
 

@@ -1,7 +1,7 @@
 ---
 source: "https://developers.openai.com/codex/cli"
 author:
-  - "[[OpenAI]]"
+  - "OpenAI"
 published:
 created: 2026-03-29
 date created: Sunday, March 29th 2026, 6:07:57 pm

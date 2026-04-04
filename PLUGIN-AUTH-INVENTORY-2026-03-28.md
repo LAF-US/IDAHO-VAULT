@@ -1,8 +1,4 @@
 ---
-tags:
-  - administration/mcp
-  - administration/plugins
-  - administration/inventory
 created: 2026-03-28
 status: complete
 phase: auth-inventory
@@ -10,8 +6,8 @@ phase: auth-inventory
 # Plugin Auth Inventory - 2026-03-28
 
 **Timestamp:** 2026-03-28T20:00:33-06:00
-**Supervisor:** [[LOGAN]]
-**Executing agent:** [[Codex]]
+**Supervisor:** LOGAN
+**Executing agent:** Codex
 **Mode:** Read-only connector inventory
 **Mutation rule:** No external writes performed
 

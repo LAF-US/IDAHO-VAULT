@@ -3,16 +3,11 @@ title: "BRIEF - Budget Tracker Workbook + Dashboard"
 created: 2026-04-02
 updated: 2026-04-02
 status: active
-authority: "[[LOGAN]]"
+authority: "LOGAN"
 authors:
   - ChatGPT Codex
 type: brief
 source: budget-tracker/workbook-dashboard
-tags:
-  - administration/brief
-  - budget/bill-tracker
-  - budget/dashboard
-  - budget/provenance
 ---
 
 # BRIEF - Budget Tracker Workbook + Dashboard

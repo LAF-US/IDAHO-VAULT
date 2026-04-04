@@ -1,1 +1,1 @@
-[[Idaho Constitution]] Section 28 
+Idaho Constitution Section 28 

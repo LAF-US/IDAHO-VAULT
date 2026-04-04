@@ -1,6 +1,4 @@
 ---
-tags:
-  - administration/agents
 <<<<<<< Updated upstream
 updated: 2026-03-28
 status: draft
@@ -15,7 +13,7 @@ source: commit
 >>>>>>> Stashed changes
 # AGENTS — Swarm Registry and Communication Rules
 
-This [[file]] defines who exists in the swarm, what each [[agent]] can do, and how they coordinate. It is the third governance file in the stack:
+This file defines who exists in the swarm, what each agent can do, and how they coordinate. It is the third governance file in the stack:
 
 <<<<<<< Updated upstream
 | File              | Role                                                    |
@@ -37,9 +35,9 @@ Instance-specific instructions live in separate files (`CLAUDE.md`, `.github/cop
 
 ## 1. FOUNDATIONAL RULE
 
-[[LOGAN]] is the sole human in this system. All agents are software — infrastructure, not participants. No agent has standing to make decisions. [[LOGAN]] directs; agents execute.
+LOGAN is the sole human in this system. All agents are software — infrastructure, not participants. No agent has standing to make decisions. LOGAN directs; agents execute.
 
-All inter-agent communication flows through or is visible to [[LOGAN]]. There is no peer-to-peer agent communication that bypasses the supervisor.
+All inter-agent communication flows through or is visible to LOGAN. There is no peer-to-peer agent communication that bypasses the supervisor.
 
 ---
 
@@ -48,12 +46,12 @@ All inter-agent communication flows through or is visible to [[LOGAN]]. There is
 <<<<<<< Updated upstream
 | Agent                         | Platform              | Capability Tier          | Scope                                                             | Slack                   | GitHub Access                | Zone Access                     |
 | ----------------------------- | --------------------- | ------------------------ | ----------------------------------------------------------------- | ----------------------- | ---------------------------- | ------------------------------- |
-| PERMANENT: AUTHORITY: CODE    | Claude Code CLI       | Direct write             | IDAHO-VAULT repo operations, deployment, automation               | Via [[LOGAN]]           | Full repo read/write         | All (per-task, no standing window) |
-| PERSISTENT: ADMINISTRATION    | Claude (conversation) | Draft only               | Constitutional layer, handoffs, judgment calls                    | Via [[LOGAN]]'s account | None — produces drafts       | None (draft only)               |
-| GitHub Copilot (ADMIN GitHub) | GitHub Copilot        | Multi-repo admin         | GitHub administration across all [[LOGAN]]'s repos                | Bot app needed          | GitHub APIs, all repos       | Operational, Data (via PR)      |
-| ChatGPT Codex                 | OpenAI Codex          | Direct write (scripting) | Specialized scripting — scrapers, GitHub Actions, complex logic   | Via [[LOGAN]]           | Repo read/write              | Operational, Data (via PR)      |
-| Gemini ("The Vault Advisor")  | Gemini CLI + Code Assist (VS Code) | Direct write (support) | Narrative lens, strategy, inline completions, document outlines, codebase assistance. Coworks with Claude Code (Abhorsen) in VS Code. | Via [[LOGAN]] | Repo read/write | Operational, Data (via PR) |
-| Linear (Workspace Manager)    | Linear.app            | Coordination (support)   | Linear workspace management, issue curation, decision log, milestone planning; passive input to swarm memory; no vault writes | Via [[LOGAN]]'s account | None — coordination only    | Operational (coaching/input, no writes) |
+| PERMANENT: AUTHORITY: CODE    | Claude Code CLI       | Direct write             | IDAHO-VAULT repo operations, deployment, automation               | Via LOGAN           | Full repo read/write         | All (per-task, no standing window) |
+| PERSISTENT: ADMINISTRATION    | Claude (conversation) | Draft only               | Constitutional layer, handoffs, judgment calls                    | Via LOGAN's account | None — produces drafts       | None (draft only)               |
+| GitHub Copilot (ADMIN GitHub) | GitHub Copilot        | Multi-repo admin         | GitHub administration across all LOGAN's repos                | Bot app needed          | GitHub APIs, all repos       | Operational, Data (via PR)      |
+| ChatGPT Codex                 | OpenAI Codex          | Direct write (scripting) | Specialized scripting — scrapers, GitHub Actions, complex logic   | Via LOGAN           | Repo read/write              | Operational, Data (via PR)      |
+| Gemini ("The Vault Advisor")  | Gemini CLI + Code Assist (VS Code) | Direct write (support) | Narrative lens, strategy, inline completions, document outlines, codebase assistance. Coworks with Claude Code (Abhorsen) in VS Code. | Via LOGAN | Repo read/write | Operational, Data (via PR) |
+| Linear (Workspace Manager)    | Linear.app            | Coordination (support)   | Linear workspace management, issue curation, decision log, milestone planning; passive input to swarm memory; no vault writes | Via LOGAN's account | None — coordination only    | Operational (coaching/input, no writes) |
 | PERSISTENT: IMPLEMENTATION    | Claude (Project)      | Read/analysis            | Governance/architecture consultation                              | No                      | None — advisory only         | None (advisory)                 |
 | TASK: LEVELSET reports        | Claude (conversation) | Read/analysis            | Synthesis and status reporting                                    | No                      | None — advisory only         | None (advisory)                 |
 | STORY: JFAC Open Meetings     | Claude (conversation) | Read/analysis            | JFAC investigation — read-only                                    | No                      | None — advisory only         | None (advisory)                 |
@@ -67,9 +65,9 @@ All inter-agent communication flows through or is visible to [[LOGAN]]. There is
 =======
 | Agent | Platform | Capability Tier | Scope | Slack | GitHub Access |
 |---|---|---|---|---|---|
-| PERMANENT: AUTHORITY: CODE | Claude Code CLI | Direct write | IDAHO-VAULT repo operations, deployment, automation | Via [[LOGAN]] | Full repo read/write |
-| PERSISTENT: ADMINISTRATION | Claude (conversation) | Draft only | Constitutional layer, handoffs, judgment calls | Via [[LOGAN]]'s account | None — produces drafts |
-| GitHub Copilot (ADMIN GitHub) | GitHub Copilot | Multi-repo admin | GitHub administration across all [[LOGAN]]'s repos | Bot app needed | GitHub APIs, all repos |
+| PERMANENT: AUTHORITY: CODE | Claude Code CLI | Direct write | IDAHO-VAULT repo operations, deployment, automation | Via LOGAN | Full repo read/write |
+| PERSISTENT: ADMINISTRATION | Claude (conversation) | Draft only | Constitutional layer, handoffs, judgment calls | Via LOGAN's account | None — produces drafts |
+| GitHub Copilot (ADMIN GitHub) | GitHub Copilot | Multi-repo admin | GitHub administration across all LOGAN's repos | Bot app needed | GitHub APIs, all repos |
 | Gemini | Google AI | **TBD — scope undefined** | **TBD** — Pixel smartphone, loganfinney27@gmail.com | Bot app needed | **TBD** |
 | PERSISTENT: IMPLEMENTATION | Claude (Project) | Read/analysis | Governance/architecture consultation | No | None — advisory only |
 | TASK: LEVELSET reports | Claude (conversation) | Read/analysis | Synthesis and status reporting | No | None — advisory only |
@@ -80,7 +78,7 @@ All inter-agent communication flows through or is visible to [[LOGAN]]. There is
 | PUBLIC: CONVERSATION | Claude (conversation) | Read/analysis | Self-talk, internal processing — consultation pending | No | None |
 >>>>>>> Stashed changes
 
-**Registry maintenance:** CODE AUTHORITY updates this table when agents are added, removed, or change tier. [[LOGAN]] approves all tier changes.
+**Registry maintenance:** CODE AUTHORITY updates this table when agents are added, removed, or change tier. LOGAN approves all tier changes.
 
 ---
 
@@ -88,7 +86,7 @@ All inter-agent communication flows through or is visible to [[LOGAN]]. There is
 
 ### Tier 1: Direct Write
 
-Can commit and push to the repository. Must LEVELSET before significant commits. [[LOGAN]] reviews diffs before merging.
+Can commit and push to the repository. Must LEVELSET before significant commits. LOGAN reviews diffs before merging.
 
 **Agents:** PERMANENT: AUTHORITY: CODE
 
@@ -112,7 +110,7 @@ Can commit and push to the repository. Must LEVELSET before significant commits.
 
 **Cannot do:**
 >>>>>>> Stashed changes
-- Push to `main` without [[LOGAN]]'s merge approval
+- Push to `main` without LOGAN's merge approval
 - Force-push without explicit permission
 - Delete branches without confirmation
 - Commit off-the-record material
@@ -134,16 +132,16 @@ Can commit and push to the repository within the **Operational zone only**. Does
 **Cannot do:**
 
 - Modify Constitutional zone files (`CONSTITUTION.md`, `PROTOCOL.md`, `AGENTS.md`, `DECISIONS.md`, `VAULT-CONVENTIONS.md`, `Ethics.md`, etc.)
-- Push to `main` without [[LOGAN]]'s merge approval
+- Push to `main` without LOGAN's merge approval
 - Force-push without explicit permission
 - Delete branches without confirmation
-- Write to Data zone without explicit [[LOGAN]] direction
+- Write to Data zone without explicit LOGAN direction
 
 =======
 >>>>>>> Stashed changes
 ### Tier 2: Multi-Repo Admin
 
-Can interact with GitHub APIs across all of [[LOGAN]]'s repositories. For vault work, operates under the same governance as Tier 1.
+Can interact with GitHub APIs across all of LOGAN's repositories. For vault work, operates under the same governance as Tier 1.
 
 **Agents:** GitHub Copilot (ADMIN GitHub)
 
@@ -159,23 +157,23 @@ Can interact with GitHub APIs across all of [[LOGAN]]'s repositories. For vault 
 **Can do (non-vault repos):**
 <<<<<<< Updated upstream
 
-- Broader latitude — **specific boundaries TBD by [[LOGAN]]**
+- Broader latitude — **specific boundaries TBD by LOGAN**
 
 **Cannot do (vault):**
 
 - Directly modify governance files (CONSTITUTION, PROTOCOL, AGENTS, LEVELSET, DECISIONS)
 =======
-- Broader latitude — **specific boundaries TBD by [[LOGAN]]**
+- Broader latitude — **specific boundaries TBD by LOGAN**
 
 **Cannot do (vault):**
 - Directly modify `!ADMIN/` governance files (Constitution, PROTOCOL, AGENTS, LEVELSET, DECISIONS)
 >>>>>>> Stashed changes
-- Merge without [[LOGAN]]'s approval
+- Merge without LOGAN's approval
 - Override CODE AUTHORITY's governance review
 
 ### Tier 3: Draft Only
 
-Produces drafts and handoffs. Cannot push to any repository. All output goes through [[LOGAN]]'s review.
+Produces drafts and handoffs. Cannot push to any repository. All output goes through LOGAN's review.
 
 **Agents:** PERSISTENT: ADMINISTRATION
 
@@ -186,7 +184,7 @@ Produces drafts and handoffs. Cannot push to any repository. All output goes thr
 >>>>>>> Stashed changes
 - Draft constitutional language, governance proposals, handoff documents
 - Advise on architecture and conventions
-- Route handoffs between agents (via [[LOGAN]])
+- Route handoffs between agents (via LOGAN)
 
 **Cannot do:**
 <<<<<<< Updated upstream
@@ -228,9 +226,9 @@ Advisory only. No repository access.
 ### Current State: Logan as Relay
 
 <<<<<<< Updated upstream
-[[LOGAN]] coordinates agents via GitHub Issues and PRs. Tasks are assigned with agent labels (`agent:claude-code`, `agent:codex`, `agent:copilot`, `agent:gemini`). Each agent works on its own branch; PRs are the deliverable. See the agent roles CSV (`Agent Swarm Management and Repository Constitution`) for the simplified role matrix.
+LOGAN coordinates agents via GitHub Issues and PRs. Tasks are assigned with agent labels (`agent:claude-code`, `agent:codex`, `agent:copilot`, `agent:gemini`). Each agent works on its own branch; PRs are the deliverable. See the agent roles CSV (`Agent Swarm Management and Repository Constitution`) for the simplified role matrix.
 =======
-Until Slack bot apps are configured for each agent, [[LOGAN]] manually relays all inter-agent communication. This is functional but adds latency.
+Until Slack bot apps are configured for each agent, LOGAN manually relays all inter-agent communication. This is functional but adds latency.
 >>>>>>> Stashed changes
 
 ### Communication Protocol
@@ -240,7 +238,7 @@ All inter-agent communication uses the operational vocabulary defined in `PROTOC
 - **HANDOFF** — Transfer responsibility for a task/data to another agent with full context
 - **HANDSHAKE** — Formal acknowledgment of HANDOFF receipt; confirmation of context completeness
 - **CONTEXTUALIZE** — Package information with sufficient background for receiving agent to act independently
-- **FLAG** — Mark an item for attention by [[LOGAN]] or another agent, with severity (CRITICAL / HIGH / MEDIUM / LOW)
+- **FLAG** — Mark an item for attention by LOGAN or another agent, with severity (CRITICAL / HIGH / MEDIUM / LOW)
 
 ### Handoff Format
 
@@ -308,7 +306,7 @@ Handoff documents are saved to `!ADMIN/` as `HANDOFF-[source]-[date].md` for aud
 
 ### Zone Access Matrix
 
-See [[VAULT-ZONES]] for full zone definitions. No agent maintains a standing write window - all writes are per-task, scoped to a GitHub Issue or explicit Logan directive.
+See VAULT-ZONES for full zone definitions. No agent maintains a standing write window - all writes are per-task, scoped to a GitHub Issue or explicit Logan directive.
 
 | Zone | Read | Write (via PR) | Merge |
 |------|------|---------------|-------|
@@ -360,8 +358,8 @@ Both CODE AUTHORITY and Copilot can modify `.github/` contents. To prevent confl
 >>>>>>> Stashed changes
 1. Copilot drafts changes and submits via PR or handoff
 2. CODE AUTHORITY reviews for governance conflicts
-3. [[LOGAN]] approves the merge
-4. If both are modifying `.github/` simultaneously, [[LOGAN]] resolves
+3. LOGAN approves the merge
+4. If both are modifying `.github/` simultaneously, LOGAN resolves
 
 ---
 
@@ -369,14 +367,14 @@ Both CODE AUTHORITY and Copilot can modify `.github/` contents. To prevent confl
 
 ### Principle
 
-[[LOGAN]] decides. Always. No agent overrides another agent. No agent has precedence based on tier alone.
+LOGAN decides. Always. No agent overrides another agent. No agent has precedence based on tier alone.
 
 ### Process
 
 1. Agent detects potential conflict (same file, overlapping scope, contradictory instructions)
 2. Agent issues **FLAG** with severity and description
 3. Agent **STOPS** work on the conflicting item
-4. [[LOGAN]] reviews and directs
+4. LOGAN reviews and directs
 5. Directed agent proceeds; other agent acknowledges via **HANDSHAKE**
 
 ### Merge Conflicts
@@ -385,12 +383,12 @@ If a `git merge` or `git pull` produces conflicts:
 <<<<<<< Updated upstream
 
 1. **STOP.** Do not auto-resolve.
-2. Report to [[LOGAN]] with the specific files and conflict markers
+2. Report to LOGAN with the specific files and conflict markers
 3. Conflicts signal another conversation has been active — context may be stale
 4. Re-read `LEVELSET.md` and `CONSTITUTION.md` (vault root) to reorient
 =======
 1. **STOP.** Do not auto-resolve.
-2. Report to [[LOGAN]] with the specific files and conflict markers
+2. Report to LOGAN with the specific files and conflict markers
 3. Conflicts signal another conversation has been active — context may be stale
 4. Re-read `!ADMIN/LEVELSET.md` and `!ADMIN/Constitution.md` to reorient
 >>>>>>> Stashed changes
@@ -399,7 +397,7 @@ If a `git merge` or `git pull` produces conflicts:
 
 ## 7. PENDING DEFINITIONS
 
-These items require [[LOGAN]]'s direction before they can be formalized:
+These items require LOGAN's direction before they can be formalized:
 
 <<<<<<< Updated upstream
 | Item                                | Status                   | Notes                                                                      |
@@ -421,7 +419,7 @@ These items require [[LOGAN]]'s direction before they can be formalized:
 |---|---|---|
 | Gemini capability tier and scope | **Undefined** | Pixel smartphone, loganfinney27@gmail.com. No vault commits until defined. |
 | Copilot non-vault repo boundaries | **TBD** | Multi-repo admin decided; specific latitude per repo not yet specified. |
-| Slack bot apps | **Blocked** | [[LOGAN]] must configure before agents can post independently. |
+| Slack bot apps | **Blocked** | LOGAN must configure before agents can post independently. |
 | `!ADMIN/ROUTING/` folder | **Recommended** | File-based async handoff drops. Not yet created. |
 | Research instance (Tier 4) | **Not yet assigned** | Tim Oren analysis, NICAR23 training queued when available. |
 | Grok scope and boundaries | **Minimal** | Research/web search role identified. No vault access. |
@@ -440,5 +438,5 @@ These items require [[LOGAN]]'s direction before they can be formalized:
 - **Updated:** 2026-03-28 — Gemini Tier 1 (Support) defined; Gemini pending item resolved
 =======
 >>>>>>> Stashed changes
-- **Status:** Draft — awaiting [[LOGAN]]'s review
-- **Authority:** [[LOGAN]]'s discretion
+- **Status:** Draft — awaiting LOGAN's review
+- **Authority:** LOGAN's discretion

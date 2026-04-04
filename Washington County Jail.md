@@ -1,1 +1,1 @@
-[[County Sheriff]], [[Washington County]] [[jails|jail]] 
+County Sheriff, Washington County jail 

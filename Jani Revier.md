@@ -1,5 +1,3 @@
 ---
-tags:
-  - people
 ---
-Director of the [[Department of Labor]] for [[Brad Little]].
+Director of the Department of Labor for Brad Little.

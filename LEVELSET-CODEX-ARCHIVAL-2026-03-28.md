@@ -1,11 +1,7 @@
 ---
-tags:
-  - administration/levelset
-  - administration/handoff
-  - administration/archive
 created: 2026-03-28
 status: complete
-author: "[[Codex]]"
+author: "Codex"
 ---
 # LEVELSET - Codex Archival - 2026-03-28
 

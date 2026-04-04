@@ -1,9 +1,4 @@
 ---
-tags:
-  - governments/county
-  - geography/land/county
-aliases:
-  - Washington
 ---
-Seat: [[Weiser]]
-Municipalities: [[Cambridge]], [[Midvale]]
+Seat: Weiser
+Municipalities: Cambridge, Midvale

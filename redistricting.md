@@ -1,1 +1,1 @@
-[[Idaho Commission for Redistricting|Redistricting Commission]] after [[U.S. Census]]
+Redistricting Commission after U.S. Census

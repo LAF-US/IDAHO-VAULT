@@ -1,9 +1,6 @@
 ---
 author:
-  - "[[Logan Finney]]"
-tags:
-  - 2023/08/14
-  - media/interviews
+  - "Logan Finney"
 ---
 Forrest Burger
 
@@ -13,7 +10,7 @@ Logan Finney
 
 OK.
 
-[[Chrystle Horvath]]
+Chrystle Horvath
 
 I'm going to put this down before we get started.
 
@@ -36,11 +33,11 @@ Okay. And, uh, what's your title?
 
 Chrystle Horvath
 
-Executive director for the [[Bonner Community Housing Agency]].
+Executive director for the Bonner Community Housing Agency.
 
 Forrest Burger
 
-Okay. This is just for archive later. [Okay.] And then does [[Idaho Reports]] on [[Idaho Public Television]] have your permission to use this interview in this piece?
+Okay. This is just for archive later. [Okay.] And then does Idaho Reports on Idaho Public Television have your permission to use this interview in this piece?
 
 Chrystle Horvath
 
@@ -60,11 +57,11 @@ Okay. Sounds good.
 
 Logan Finney
 
-So, first, can you give me for context what is [[Bonner Community Housing Agency]] and what sort of work do you guys do?
+So, first, can you give me for context what is Bonner Community Housing Agency and what sort of work do you guys do?
 
 Chrystle Horvath
 
-We are a nonprofit. We have been around since the early 2000s, and I believe it's 2007 that we were incorporated. And what we strive to do is build homes that people making the [[Average Median Income]] can afford to purchase. So that's the overall mission that we try to achieve.
+We are a nonprofit. We have been around since the early 2000s, and I believe it's 2007 that we were incorporated. And what we strive to do is build homes that people making the Average Median Income can afford to purchase. So that's the overall mission that we try to achieve.
 
 Logan
 
@@ -124,7 +121,7 @@ Um, so tell me about BCHA and the work that you do.
 
 Chrystle Horvath
 
-Well, BCHA is a nonprofit, and we have strived for - since the inception, I think it was 2007, to build [[homes]] that our local workforce can afford to purchase, those who are making the [[Average Median Income]]. Right. That's the basics of what we do.
+Well, BCHA is a nonprofit, and we have strived for - since the inception, I think it was 2007, to build homes that our local workforce can afford to purchase, those who are making the Average Median Income. Right. That's the basics of what we do.
 
 Logan Finney
 
@@ -132,11 +129,11 @@ And then I'll ask you about the resources again, what -- when someone comes to y
 
 Chrystle Horvath
 
-We try to coordinate with all the [nonprofits] in the area. And so, we have resources from all of those nonprofits. So sometimes we may send them to the [Envision Center] and they're a good hub with a lot of connections, or [[2-1-1]] or [[Saint Vincent de Paul]] out of [[Coeur d'Alene]], depending on what they're looking for. Almost all of those people also end up on our list so that ultimately, as we do have houses available, or if we come up with rentals, then we can reach out to the people on our list and try to help them get into a better housing situation as well.
+We try to coordinate with all the [nonprofits] in the area. And so, we have resources from all of those nonprofits. So sometimes we may send them to the [Envision Center] and they're a good hub with a lot of connections, or 2-1-1 or Saint Vincent de Paul out of Coeur d'Alene, depending on what they're looking for. Almost all of those people also end up on our list so that ultimately, as we do have houses available, or if we come up with rentals, then we can reach out to the people on our list and try to help them get into a better housing situation as well.
 
 Logan Finney
 
-And so how much need do you see in the [[Sandpoint]] and the [[Bonner County]] area? Give me an idea of how long that list is.
+And so how much need do you see in the Sandpoint and the Bonner County area? Give me an idea of how long that list is.
 
 Chrystle Horvath
 
@@ -144,7 +141,7 @@ I have approximately 300 families on my list looking for housing, and we get cal
 
 Logan Finney
 
-And in terms of the financials, what does that look like here in [[Bonner County]] for a median income?
+And in terms of the financials, what does that look like here in Bonner County for a median income?
 
 Chrystle Horvath
 
@@ -156,7 +153,7 @@ And then how -- we talked a little bit before the cameras were rolling -- but ca
 
 Chrystle Horvath
 
-Sure, yeah. I am packaging loans for the [[U.S. Department of Agriculture|USDA]]. One specific loan that's designed for low-income families, and I've just started that, but I really feel like that's going to help a lot because it is a really great program. But the families have to make at least $40,000 or $50,000 a year to even be able to afford the prices of the homes in our area.
+Sure, yeah. I am packaging loans for the USDA. One specific loan that's designed for low-income families, and I've just started that, but I really feel like that's going to help a lot because it is a really great program. But the families have to make at least $40,000 or $50,000 a year to even be able to afford the prices of the homes in our area.
 
 Chrystle Horvath
 
@@ -164,11 +161,11 @@ And it's again, it's a zero-down program. It's a lower interest rate than what y
 
 Logan Finney
 
-Okay. Now tell me about the vision of building units and partnering with [[developers]]. Talk to me about that.
+Okay. Now tell me about the vision of building units and partnering with developers. Talk to me about that.
 
 Chrystle Horvath
 
-Yeah. So, I had a developer who can build for less than most of what our builders in the area are building for. And he's been doing that up in [[Boundary County]] for quite some time, multiple years. And so, he's willing to partner with us to build our homes. And so, if we can do that, if we find the right piece of property, we should be able to build a three-bedroom home hopefully for less than $250,000. We add a little bit of a fee to keep our doors open, but then we can resell them for, hopefully fingers crossed, less than $280,000. And that becomes doable, when you look at the USDA loan, for families who are not making, you know, more than $50,000, that becomes to where the monthly payment isn't so high that it's not affordable for them anymore.
+Yeah. So, I had a developer who can build for less than most of what our builders in the area are building for. And he's been doing that up in Boundary County for quite some time, multiple years. And so, he's willing to partner with us to build our homes. And so, if we can do that, if we find the right piece of property, we should be able to build a three-bedroom home hopefully for less than $250,000. We add a little bit of a fee to keep our doors open, but then we can resell them for, hopefully fingers crossed, less than $280,000. And that becomes doable, when you look at the USDA loan, for families who are not making, you know, more than $50,000, that becomes to where the monthly payment isn't so high that it's not affordable for them anymore.
 
 Logan Finney
 
@@ -180,15 +177,15 @@ Yeah, because the goal is to keep it at like 30% of their income. That's the goa
 
 Logan Finney
 
-And then can you tell me about the [[Culver's Crossing]] project and how, of course, it has changed over time? But let's start at the beginning, in the inception of it, how it was envisioned.
+And then can you tell me about the Culver's Crossing project and how, of course, it has changed over time? But let's start at the beginning, in the inception of it, how it was envisioned.
 
 Chrystle Horvath
 
-Yeah, it was a really beautiful project. I came in just a couple of months into it after the Bonner Community Housing Agency was already doing it, but the entire intention of the [[Nancy Hadley|landowner]] was that it was all going to be affordable and it would be whether it was rentals or resold, it would all fit into that affordability range for low and median income families and our local workforce.
+Yeah, it was a really beautiful project. I came in just a couple of months into it after the Bonner Community Housing Agency was already doing it, but the entire intention of the landowner was that it was all going to be affordable and it would be whether it was rentals or resold, it would all fit into that affordability range for low and median income families and our local workforce.
 
 Chrystle Horvath
 
-So, we were trying to figure out a way to not, you know, violate anybody's rights but really benefit our local workforce because we need people to come here that are our [[doctors]] and [[nurses]] and [[law enforcement]] and, you know, all these public servants. We are missing the mark with that price range and lower, and our local employees are losing out on the opportunity to buy [[homes]].
+So, we were trying to figure out a way to not, you know, violate anybody's rights but really benefit our local workforce because we need people to come here that are our doctors and nurses and law enforcement and, you know, all these public servants. We are missing the mark with that price range and lower, and our local employees are losing out on the opportunity to buy homes.
 
 Chrystle Horvath
 
@@ -196,11 +193,11 @@ So, the initial idea was that all of these would fall into that affordability ra
 
 Chrystle Horvath
 
-And that was possible, until [[interest rates]] went up and then it was no longer possible. It would increase their payment by $500 a month when the interest rates went up over 8%. And that just made it to where again, then that's a lot of money and that's a big percentage of a monthly income for a family. And it just became not doable.
+And that was possible, until interest rates went up and then it was no longer possible. It would increase their payment by $500 a month when the interest rates went up over 8%. And that just made it to where again, then that's a lot of money and that's a big percentage of a monthly income for a family. And it just became not doable.
 
 Chrystle Horvath
 
-So it ultimately has gone to where most of it's going to be market. Six months ago, or so, [[Rob Hart]], our old executive director, got a grant from [[American Rescue Plan Act|ARPA]] funds to build six of the units in [[workforce housing]] units. And so that is happening now. All the approvals have happened. They've poured the foundations and got all the [[infrastructure]], underground infrastructure in.
+So it ultimately has gone to where most of it's going to be market. Six months ago, or so, Rob Hart, our old executive director, got a grant from ARPA funds to build six of the units in workforce housing units. And so that is happening now. All the approvals have happened. They've poured the foundations and got all the infrastructure, underground infrastructure in.
 
 Chrystle Horvath
 
@@ -216,7 +213,7 @@ Yes.
 
 Logan Finney
 
-Okay. And so that was the [[American Rescue Plan Act|ARPA]] funding that you're referencing, is the Workforce Development-- [[Workforce Housing Fund|Workforce Housing Fund]] that the state set up?
+Okay. And so that was the ARPA funding that you're referencing, is the Workforce Development-- Workforce Housing Fund that the state set up?
 
 Chrystle Horvath
 
@@ -228,7 +225,7 @@ How much of a difference did that make for this project when interest rates star
 
 Chrystle Horvath
 
-That basically stalled the project because all the prices increased and the cost of all the supplies increased, the cost of building increased, and then nobody can afford those loans. You know, initially the two-bedroom [[homes|home]], we were hoping it would be around $280,000 to $300,000. I don't know what the number is now, but it's over $300,000 now for a two bedroom on a city lot.
+That basically stalled the project because all the prices increased and the cost of all the supplies increased, the cost of building increased, and then nobody can afford those loans. You know, initially the two-bedroom home, we were hoping it would be around $280,000 to $300,000. I don't know what the number is now, but it's over $300,000 now for a two bedroom on a city lot.
 
 Chrystle Horvath
 
@@ -240,15 +237,15 @@ I'm working with several individuals who want to buy and build their homes there
 
 Logan Finney
 
-And is that just because of how the market and [[inflation]] is?
+And is that just because of how the market and inflation is?
 
 Chrystle Horvath
 
-I think primarily, yeah, primarily. And then again, our [[cost of living]], our pay hasn't increased with that. Our pay in this area has basically stayed the same. And it's been that way for many years where our pay does not match, you know, the cost of living. And I think that's probably nationwide, not just here, but then to have so many people moving into the area, rising the costs of the [[housing market]] and even just the grocery store.
+I think primarily, yeah, primarily. And then again, our cost of living, our pay hasn't increased with that. Our pay in this area has basically stayed the same. And it's been that way for many years where our pay does not match, you know, the cost of living. And I think that's probably nationwide, not just here, but then to have so many people moving into the area, rising the costs of the housing market and even just the grocery store.
 
 Chrystle Horvath
 
-And I was just having this conversation with my children where four years ago a gallon of milk was $4 and now it's $7. You know, my pay didn't go up in the last four years comparatively. So, it's a number of factors and part of it's the [[inflation]]. And I think part of it's just people moving into the area as well, buying homes sight unseen.
+And I was just having this conversation with my children where four years ago a gallon of milk was $4 and now it's $7. You know, my pay didn't go up in the last four years comparatively. So, it's a number of factors and part of it's the inflation. And I think part of it's just people moving into the area as well, buying homes sight unseen.
 
 Chrystle Horvath
 
@@ -256,11 +253,11 @@ And the locals don't have a chance to even get into it.
 
 Logan Finney
 
-Yeah. Can you tell me- [[Sandpoint]] of course is a [[resort town]] or a tourist destination. But[[Bonner County]] in the larger area is very rural. A very rural area. Do you see from where you're at, are there different needs from if someone's living in town versus out in the county? Or is it all kind of part of the same market pool?
+Yeah. Can you tell me- Sandpoint of course is a resort town or a tourist destination. ButBonner County in the larger area is very rural. A very rural area. Do you see from where you're at, are there different needs from if someone's living in town versus out in the county? Or is it all kind of part of the same market pool?
 
 Chrystle Horvath
 
-I think it varies. I really feel personally, since I grew up here, that most people here are more willing to spend money on a good running car than worrying about getting a nice house. They'd rather have a trailer and a good running car if they could live out of town and be on five or ten acres. That would be preferable for them than living in town and walking or taking the [[bus]] everywhere.
+I think it varies. I really feel personally, since I grew up here, that most people here are more willing to spend money on a good running car than worrying about getting a nice house. They'd rather have a trailer and a good running car if they could live out of town and be on five or ten acres. That would be preferable for them than living in town and walking or taking the bus everywhere.
 
 Chrystle Horvath
 
@@ -288,7 +285,7 @@ Like I said, I have 300 families on my list, so finding six that can afford it -
 
 Logan Finney
 
-And so, with the acknowledgment that that was useful and helped the project move forward, is there more that the [[State of Idaho|state]] could be doing from their perch down in [[Boise]] to help with things like this?
+And so, with the acknowledgment that that was useful and helped the project move forward, is there more that the state could be doing from their perch down in Boise to help with things like this?
 
 Chrystle Horvath
 
@@ -308,11 +305,11 @@ So, it creates those issues. But I feel like the state is doing a lot and trying
 
 Logan Finney
 
-So, is there something - or is there anything - that the more local governments could do at a county or regional or city basis? We talked a little bit off camera about the prices of [[building permits]] across different cities. But is there anything in that realm that you think locals should be focused on when it comes to towns trying to improve their housing stock?
+So, is there something - or is there anything - that the more local governments could do at a county or regional or city basis? We talked a little bit off camera about the prices of building permits across different cities. But is there anything in that realm that you think locals should be focused on when it comes to towns trying to improve their housing stock?
 
 Chrystle Horvath
 
-Well, I think there's always room for discussion. I have not had discussions yet with the local government around it. However, that is like on my to do list because I don't see why, if you have a nonprofit [[housing agency]], why not as a local government give a break to the costs for a nonprofit? You know, why not do those things?
+Well, I think there's always room for discussion. I have not had discussions yet with the local government around it. However, that is like on my to do list because I don't see why, if you have a nonprofit housing agency, why not as a local government give a break to the costs for a nonprofit? You know, why not do those things?
 
 Chrystle Horvath
 
@@ -324,7 +321,7 @@ So that's one of the really wonderful things we got to use that gave us a break 
 
 Chrystle Horvath
 
-We just have to have the financing to build at the outset. We can't, you know, buy land and then build three years later. It doesn't work that way. So. As far as local governments, though, I think, yeah, I think there's the opportunity there to reduce some of the fees and do [[tax deductions|tax breaks]] for nonprofits to build homes. It's - we're a nonprofit, so we're not adding 100,000 for profit.
+We just have to have the financing to build at the outset. We can't, you know, buy land and then build three years later. It doesn't work that way. So. As far as local governments, though, I think, yeah, I think there's the opportunity there to reduce some of the fees and do tax breaks for nonprofits to build homes. It's - we're a nonprofit, so we're not adding 100,000 for profit.
 
 Chrystle Horvath
 
@@ -336,11 +333,11 @@ I feel like that is all the bullet points I wanted to get to. Is there anything 
 
 Chrystle Horvath
 
-Not that I can think of. I mean, the need's not going away. I think all of those are really good issues. And if we had again, whether it's financing or people who would help, or families who would donate land at a reduced price to the housing agency, or local families who instead of renting their house on [[Airbnb]] were willing to rent it to a prequalified local family. Because that's one of the things we run into
+Not that I can think of. I mean, the need's not going away. I think all of those are really good issues. And if we had again, whether it's financing or people who would help, or families who would donate land at a reduced price to the housing agency, or local families who instead of renting their house on Airbnb were willing to rent it to a prequalified local family. Because that's one of the things we run into
 
 Chrystle Horvath
 
-as well, is so many homes are going up on the [[vacation rental]] sites that again, people are being kicked out of their homes because they can make three grand renting out their house on a vacation site instead of $1500 a month renting it out to a consistent person.
+as well, is so many homes are going up on the vacation rental sites that again, people are being kicked out of their homes because they can make three grand renting out their house on a vacation site instead of $1500 a month renting it out to a consistent person.
 
 Logan Finney
 
@@ -384,7 +381,7 @@ What is it? What do they tell you? Are they despondent or are they just frustrat
 
 Chrystle Horvath
 
-Gotcha. Well, it really varies on the people. Some people come in here and they have landlord complaints and want us to do something about some violation they think their [[landlord]] has done. And unfortunately, there's just not much we can do besides listen to them and be empathetic and then hopefully get them connected with some resources that might help them, like [[Legal Aid]] or [[Saint Vincent de Paul]] for the Section 8 housing and things along those lines.
+Gotcha. Well, it really varies on the people. Some people come in here and they have landlord complaints and want us to do something about some violation they think their landlord has done. And unfortunately, there's just not much we can do besides listen to them and be empathetic and then hopefully get them connected with some resources that might help them, like Legal Aid or Saint Vincent de Paul for the Section 8 housing and things along those lines.
 
 Chrystle Horvath
 
@@ -400,7 +397,7 @@ And that's why I am really excited about the USDA program, because that is doabl
 
 Chrystle Horvath
 
-Part of the benefits that we can direct them to is the [[Idaho Housing and Finance Association|IHFA]] rent relief. And that's been really beneficial for a lot of families too, because it'll pay their [[deposit]] and it'll pay generally about three months of the [[rent]] and that helps them a lot. Get in and start getting settled and find a place. I can't tell you how many single moms I have with kids that again, are working, you know, 30 to 40 hours a week and they just can't save enough money to afford the deposit and the security
+Part of the benefits that we can direct them to is the IHFA rent relief. And that's been really beneficial for a lot of families too, because it'll pay their deposit and it'll pay generally about three months of the rent and that helps them a lot. Get in and start getting settled and find a place. I can't tell you how many single moms I have with kids that again, are working, you know, 30 to 40 hours a week and they just can't save enough money to afford the deposit and the security
 
 Chrystle Horvath
 
@@ -412,7 +409,7 @@ Okay. And then can you tell me - We talked a little bit before cameras were roll
 
 Chrystle Horvath
 
-Yeah, I've been fortunate enough since I've been with the agency and I started as project coordinator, so when I started, I went to several summits and classes, and I continue now as the executive director. I go to a monthly executive director collaboration meeting and so we get to hear and it's executive directors of [[nonprofits]] all across the county.
+Yeah, I've been fortunate enough since I've been with the agency and I started as project coordinator, so when I started, I went to several summits and classes, and I continue now as the executive director. I go to a monthly executive director collaboration meeting and so we get to hear and it's executive directors of nonprofits all across the county.
 
 Chrystle Horvath
 
@@ -420,11 +417,11 @@ So, it's all sorts of different things. But in that there was these amazing oppo
 
 Chrystle Horvath
 
-And all these studies support that when a child feels like their home life is safe and secure, they have a home. They don't have to worry about being homeless. They are more inclined to go to college and to pursue [[higher education]]. They feel so much more stability there that that fear is gone, and they are able to actually open their mind to doing something more.
+And all these studies support that when a child feels like their home life is safe and secure, they have a home. They don't have to worry about being homeless. They are more inclined to go to college and to pursue higher education. They feel so much more stability there that that fear is gone, and they are able to actually open their mind to doing something more.
 
 Chrystle Horvath
 
-Even if they don't realize what they're doing, they just automatically do it. And again, I can see that in people I know, in family members I know, nieces and nephews who their family rents or they've been [[homelessness|homeless]] at times. I've been blessed to not be homeless, but there have been times where I've had to move multiple times.
+Even if they don't realize what they're doing, they just automatically do it. And again, I can see that in people I know, in family members I know, nieces and nephews who their family rents or they've been homeless at times. I've been blessed to not be homeless, but there have been times where I've had to move multiple times.
 
 Chrystle Horvath
 
@@ -444,7 +441,7 @@ One more thing for you. Do you hear from employers very much? If they're having 
 
 Chrystle Horvath
 
-I have, yes. I'm actually meeting with a gentleman who works for a local larger local company today who wants to talk about how we can partner for [[workforce housing]], potentially for his employees and what that could look like. Um, we've had other businesses who have told us that they have had people accept job positions and then have to turn them down because they can't find a house to live in.
+I have, yes. I'm actually meeting with a gentleman who works for a local larger local company today who wants to talk about how we can partner for workforce housing, potentially for his employees and what that could look like. Um, we've had other businesses who have told us that they have had people accept job positions and then have to turn them down because they can't find a house to live in.
 
 Chrystle Horvath
 
@@ -468,7 +465,7 @@ Okay. This is all about building community.
 
 Chrystle Horvath
 
-It is absolutely about building community. We have several [[volunteers]] that eventually I'll be able to bring in and have them do different things. And ideally, if we can work together, if we could get the nonprofits to support each other, if we could get the community governments here to support each other and actually find ways to make it doable.
+It is absolutely about building community. We have several volunteers that eventually I'll be able to bring in and have them do different things. And ideally, if we can work together, if we could get the nonprofits to support each other, if we could get the community governments here to support each other and actually find ways to make it doable.
 
 Chrystle Horvath
 
@@ -504,7 +501,7 @@ Kinda, it's a busy corner.
 
 Logan Finney
 
-I guess as a politics reporter, something I hear - [[State of Idaho|Idaho]], of course, is a very conservative place, and a lot of folks are skeptical of government involvement in anything, especially housing. You hear complaints about Section 8 and government housing and all of that. Is there enough in the private sector, in the nonprofit sector like yours, where private companies like [[Schweitzer ski resort|Schweitzer]] building their own employee [[housing]], and private [[landowners]] coming to partner with you guys to increase the stock, is that going to be enough or do you think it will take some conscious effort on government's behalf to help address this issue?
+I guess as a politics reporter, something I hear - Idaho, of course, is a very conservative place, and a lot of folks are skeptical of government involvement in anything, especially housing. You hear complaints about Section 8 and government housing and all of that. Is there enough in the private sector, in the nonprofit sector like yours, where private companies like Schweitzer building their own employee housing, and private landowners coming to partner with you guys to increase the stock, is that going to be enough or do you think it will take some conscious effort on government's behalf to help address this issue?
 
 Chrystle Horvath
 
@@ -552,7 +549,7 @@ We have a couple of people who donate every year in our mission, and they are co
 
 Chrystle Horvath
 
-And so that's on my to do list, to have more conversations. Um, I just think it's an ever-evolving situation that isn't going to just be solved by one answer. There's going to be multiple answers and multiple avenues, groups of people hopefully that come together to create some stability in the [[low-income housing]] need. Not just for [[Sandpoint]].
+And so that's on my to do list, to have more conversations. Um, I just think it's an ever-evolving situation that isn't going to just be solved by one answer. There's going to be multiple answers and multiple avenues, groups of people hopefully that come together to create some stability in the low-income housing need. Not just for Sandpoint.
 
 Chrystle Horvath
 

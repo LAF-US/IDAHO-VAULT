@@ -1,7 +1,5 @@
 ---
-tags:
-  - media/outlets
 outlet:
-  - "[[Rexburg Standard Journal]]"
+  - "Rexburg Standard Journal"
 ---
-[[Madison County]] [[newspapers|newspaper]] in [[Rexburg]] owned by [[Adams Publishing Group]]
+Madison County newspaper in Rexburg owned by Adams Publishing Group

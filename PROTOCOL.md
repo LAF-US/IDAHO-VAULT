@@ -1,6 +1,4 @@
 ---
-tags:
-  - administration/protocol
 <<<<<<< Updated upstream
 updated: 2026-03-24
 status: draft
@@ -13,7 +11,7 @@ status: draft
 >>>>>>> Stashed changes
 # Agentic Swarm Administrative Levelsetting Protocol (STUB)
 
-**Supervisor:** [[LOGAN]]
+**Supervisor:** LOGAN
 **Status:** Draft / Awaiting formalization
 **Purpose:** Define operational semantics for multi-instance coordination within the agentic swarm
 
@@ -21,7 +19,7 @@ status: draft
 
 ## OPERATIONAL CONTEXT
 
-[[LOGAN]] is building an agentic swarm to manage:
+LOGAN is building an agentic swarm to manage:
 <<<<<<< Updated upstream
 
 =======
@@ -253,12 +251,12 @@ flag:
 =======
 - **Revised:** 2026-03-18
 >>>>>>> Stashed changes
-- **Revision:** [[LOGAN]]
+- **Revision:** LOGAN
 - **Status:** Stub / Awaiting expansion
-- **Authority:** [[LOGAN]]'s discretion
+- **Authority:** LOGAN's discretion
 
 <<<<<<< Updated upstream
-###### [["The world is quiet here."]]
+###### "The world is quiet here."
 =======
-###### [["The world is quiet here."]]
+###### "The world is quiet here."
 >>>>>>> Stashed changes

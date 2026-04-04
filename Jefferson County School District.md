@@ -1,7 +1,3 @@
 ---
-aliases:
-  - Jefferson
-tags:
-  - schools/k12/district
 ---
-[[Rigby]], [[Jefferson County]] 
+Rigby, Jefferson County 

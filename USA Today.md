@@ -1,5 +1,5 @@
 ---
 outlet:
-  - "[[USA Today]]"
+  - "USA Today"
 ---
-[[United States of America|American]] national [[newspapers|newspaper]] 
+American national newspaper 

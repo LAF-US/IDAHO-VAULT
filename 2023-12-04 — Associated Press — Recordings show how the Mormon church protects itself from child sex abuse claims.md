@@ -1,24 +1,21 @@
 ---
 author:
-  - "[[Michael Rezendes]]"
-  - "[[Jason Dearen]]"
+  - "Michael Rezendes"
+  - "Jason Dearen"
 outlet:
-  - "[[Associated Press]]"
-  - "[[Idaho Statesman]]"
+  - "Associated Press"
+  - "Idaho Statesman"
 URL: https://apnews.com/article/mormon-church-investigation-child-sex-abuse-9c301f750725c0f06344f948690caf16
-tags:
-  - media/articles
-  - 2023/12/04
 ---
-[[Hailey]], Idaho (AP) — [[Paul Rytting]] listened as a woman, voice quavering, told him her story. When she was a child, her father, a former bishop in The [[Church of Jesus Christ of Latter-Day Saints]], had routinely slipped into bed with her while he was aroused, she said.
+Hailey, Idaho (AP) — Paul Rytting listened as a woman, voice quavering, told him her story. When she was a child, her father, a former bishop in The Church of Jesus Christ of Latter-Day Saints, had routinely slipped into bed with her while he was aroused, she said.
 
-It was March 2017 and Rytting offered his sympathies as 31-year-old [[Chelsea Goodrich]] spoke. A Utah attorney and head of the church’s Risk Management Division, Rytting had spent about 15 years protecting the organization, widely known as the Mormon church, from costly claims, including sexual abuse lawsuits.
+It was March 2017 and Rytting offered his sympathies as 31-year-old Chelsea Goodrich spoke. A Utah attorney and head of the church’s Risk Management Division, Rytting had spent about 15 years protecting the organization, widely known as the Mormon church, from costly claims, including sexual abuse lawsuits.
 
-Rytting had flown into Hailey, Idaho, that morning from [[Salt Lake City]], where the church is based, to meet in person with Chelsea and her mother, Lorraine.
+Rytting had flown into Hailey, Idaho, that morning from Salt Lake City, where the church is based, to meet in person with Chelsea and her mother, Lorraine.
 
 After a quick prayer, he introduced himself and said he was there “to look into” Chelsea’s “tragic and horrendous” story.
 
-Chelsea and Lorraine had come to the meeting with one clear request: Would the church allow a local Idaho bishop, which in the Mormon church is akin to a [[Catholic Church|Catholic]] priest, to testify at John Goodrich’s trial? Bishop Michael Miller, who accompanied Rytting to the meeting, had heard a spiritual confession from Chelsea’s father shortly before John Goodrich was arrested on charges of sexually abusing her.
+Chelsea and Lorraine had come to the meeting with one clear request: Would the church allow a local Idaho bishop, which in the Mormon church is akin to a Catholic priest, to testify at John Goodrich’s trial? Bishop Michael Miller, who accompanied Rytting to the meeting, had heard a spiritual confession from Chelsea’s father shortly before John Goodrich was arrested on charges of sexually abusing her.
 
 While the details of his confession remain private, the church swiftly excommunicated Goodrich.
 
@@ -62,7 +59,7 @@ Rytting also revealed the lengths to which the church goes to ensure confidentia
 
 “Disciplinary proceedings are subject to the highest confidentiality possible,” Rytting said in one affidavit. “If members had any concerns that their disciplinary files could be read by a secular judge or attorneys or be presented to a jury as evidence in a public trial, their willingness to confess and repent and for their souls to be saved would be seriously compromised.”
 
-Rytting did not respond to telephone calls or an email with a list of questions. In its statement the church noted that Goodrich’s “communications with his bishop were protected by [[Idaho Code|Idaho state law]]. Only the perpetrator could release the bishop from his obligation under the clergy penitent privilege and he refused to do so.”
+Rytting did not respond to telephone calls or an email with a list of questions. In its statement the church noted that Goodrich’s “communications with his bishop were protected by Idaho state law. Only the perpetrator could release the bishop from his obligation under the clergy penitent privilege and he refused to do so.”
 
 After meeting Rytting’s daughter, Chelsea travelled with her to Salt Lake City and met Paul Rytting while staying at the family home.
 
@@ -138,7 +135,7 @@ And there was another key provision: “Second paragraph, I’ll be interested i
 
 “The recommendation is that you acknowledge that there’s been some recordings made of all of our communications and that you agreed to destroy those recordings within 10 days of signing this,” he said.
 
-Nondisclosure agreements – or NDAs, as they are commonly known - have been used frequently by the Mormon church and other organizations, including the [[Catholic Church]], as well as individuals, to keep sex abuse allegations secret. In addition to her settlement with the church, Chelsea also settled a lawsuit against her father.
+Nondisclosure agreements – or NDAs, as they are commonly known - have been used frequently by the Mormon church and other organizations, including the Catholic Church, as well as individuals, to keep sex abuse allegations secret. In addition to her settlement with the church, Chelsea also settled a lawsuit against her father.
 
 In one of their recorded conversations, Rytting told Chelsea that he could check Helpline records, used by Miller to report details of John Goodrich’s confession, to see whether her father had ever previously confessed to another bishop to abusing her.
 

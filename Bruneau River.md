@@ -1,5 +1,3 @@
 ---
-tags:
-  - geography/water/river
 ---
-[[rivers|river]] in [[Owyhee County]] 
+river in Owyhee County 

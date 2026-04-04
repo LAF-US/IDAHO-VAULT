@@ -1,5 +1,2 @@
 ---
-aliases:
-  - Bonneville Power
-  - BPA
 ---

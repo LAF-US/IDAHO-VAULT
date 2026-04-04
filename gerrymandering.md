@@ -1,1 +1,1 @@
-[[redistricting]] manipulation for partisan or political gain 
+redistricting manipulation for partisan or political gain 

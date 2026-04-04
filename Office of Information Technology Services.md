@@ -1,6 +1,2 @@
 ---
-aliases:
-  - OITS
-  - IT
-  - ITS
 ---

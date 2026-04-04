@@ -2,15 +2,8 @@
 title: "SURVEY - OpenAI Swarm"
 updated: 2026-03-30
 status: draft
-authority: "[[LOGAN]]"
+authority: "LOGAN"
 type: survey
-tags:
-  - administration/survey
-  - swarm/coordination
-  - ai/openai
-aliases:
-  - OpenAI Swarm
-  - openai/swarm
 ---
 
 # SURVEY - OpenAI Swarm

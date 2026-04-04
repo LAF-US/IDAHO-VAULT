@@ -1,1 +1,1 @@
-[[County Sheriff]], [[Jefferson County]] [[jails|jail]]
+County Sheriff, Jefferson County jail

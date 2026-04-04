@@ -1,16 +1,16 @@
 
-[[homes]]
-[[apartments]]
+homes
+apartments
 
-[[homeowners]]
-[[homebuyer]]
+homeowners
+homebuyer
 
-[[property tax]]
-[[homeowners' exemption]] 
+property tax
+homeowners' exemption 
 
-[[homelessness]] 
+homelessness 
 
-[[affordable housing]] 
-- [[workforce housing]] 
-- [[low-income housing]] 
-[[luxury housing]] 
+affordable housing 
+- workforce housing 
+- low-income housing 
+luxury housing 

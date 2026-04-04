@@ -1,10 +1,7 @@
 ---
-tags:
-  - topics/law/statute
-  - topics/transparency
 source: commit
 ---
-Idaho Code §74-208 establishes penalties for open-meetings violations and the cure-period mechanism triggered by the [[Capitol Correspondents Association CCA Letter March 2026|March 2026 CCA letter]].
+Idaho Code §74-208 establishes penalties for open-meetings violations and the cure-period mechanism triggered by the March 2026 CCA letter.
 
 ## Penalties
 
@@ -16,11 +13,11 @@ Idaho Code §74-208 establishes penalties for open-meetings violations and the c
 
 ## Cure Period
 
-14 days from written notice to acknowledge violation. Silence = denial. Actions taken in non-compliant meetings are **null and void** (30-day window per [[Petersen v. Franklin County (1997)]]).
+14 days from written notice to acknowledge violation. Silence = denial. Actions taken in non-compliant meetings are **null and void** (30-day window per Petersen v. Franklin County (1997)).
 
 ## Knowing vs. Unknowing
 
-[[Dustin Manwaring]] ("we know we can't have a quorum") and [[Stephanie Cook|Cook]] (documented quorum-counting behavior; "definitely attentive to not having a quorum") both fall in the knowing category based on on-record statements. [TRANS — quotes require audio verification before publication]
+Dustin Manwaring ("we know we can't have a quorum") and Cook (documented quorum-counting behavior; "definitely attentive to not having a quorum") both fall in the knowing category based on on-record statements. [TRANS — quotes require audio verification before publication]
 
 ## CCA Letter Timeline
 
@@ -30,7 +27,7 @@ Idaho Code §74-208 establishes penalties for open-meetings violations and the c
 
 ## Related Notes
 
-- [[Idaho Code §74-207]]
-- [[Idaho Code §74-202]]
-- [[Capitol Correspondents Association CCA Letter March 2026]]
-- [[Petersen v. Franklin County (1997)]]
+- Idaho Code §74-207
+- Idaho Code §74-202
+- Capitol Correspondents Association CCA Letter March 2026
+- Petersen v. Franklin County (1997)

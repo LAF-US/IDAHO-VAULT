@@ -1,7 +1,4 @@
 ---
-tags:
-  - party/republican
-  - people/candidate/city/mayor
 ---
-Residence: [[Hayden]]
-- candidate for [[Hayden]] [[mayor]] in 2023, endorsed by [[Kootenai County Republican Central Committee|KCRCC]]  
+Residence: Hayden
+- candidate for Hayden mayor in 2023, endorsed by KCRCC  

@@ -1,5 +1,3 @@
 ---
-aliases:
-  - ICAC
 ---
-[[Attorney General]] unit that investigates [[Internet|online]] [[sex crimes]] against [[minors]] 
+Attorney General unit that investigates online sex crimes against minors 

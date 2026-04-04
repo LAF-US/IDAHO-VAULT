@@ -4,7 +4,7 @@ date modified: Monday, March 30th 2026, 2:57:18 am
 author:
   - Gemini Code Assist
 context: Gemini chat window
-authority: "[[LOGAN]]"
+authority: "LOGAN"
 ---
 
 ---

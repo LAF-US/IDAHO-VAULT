@@ -1,28 +1,25 @@
 ---
 author:
-  - "[[Nicole Blanchard]]"
+  - "Nicole Blanchard"
 outlet:
-  - "[[Idaho Statesman]]"
+  - "Idaho Statesman"
 URL: https://www.idahostatesman.com/news/politics-government/state-politics/article278461254.html?ac_cid=DM840144&ac_bid=-480438101
-tags:
-  - media/articles
-  - 2023/08/28
 ---
-[[Lori McCann]] decided she couldn’t sit back and take it anymore, she told the [[Idaho Statesman]]. 
+Lori McCann decided she couldn’t sit back and take it anymore, she told the Idaho Statesman. 
 
-The [[Idaho Republican Party|Republican]] lawmaker announced Aug. 15 that she had been [[censured|censured]] by her own party for the third time this year — this time by the [[Latah County Republican Central Committee]], over votes she cast during the [[2023 legislative session]]. 
+The Republican lawmaker announced Aug. 15 that she had been censured by her own party for the third time this year — this time by the Latah County Republican Central Committee, over votes she cast during the 2023 legislative session. 
 
-“It’s a bigger issue than just me and [[Latah County]],” McCann told the Statesman in an interview. “It’s about [[Idaho Republican Party|Idaho GOP]] politics and what’s going on in our entire [[State of Idaho|state]]. There’s a lot of mistreatment against some real good [[Idaho Legislature|legislators]] who are more in the middle or are trying to work with all the [[Idaho Republican Party|Republicans]].“ 
+“It’s a bigger issue than just me and Latah County,” McCann told the Statesman in an interview. “It’s about Idaho GOP politics and what’s going on in our entire state. There’s a lot of mistreatment against some real good legislators who are more in the middle or are trying to work with all the Republicans.“ 
 
-McCann’s is the latest in a series of admonishments that [[State of Idaho|Idaho]] [[Idaho Republican Party|Republicans]] have handed down to their own party members this year. The longtime [[Idaho Republican Party|Republican]] said it’s an unusual and concerning trend that she views as a push to move [[Idaho Legislature|legislators]] further right toward “fringe ideals that have been cultivated from the [[Idaho Libertarian Party|Libertarian]] Party.” 
+McCann’s is the latest in a series of admonishments that Idaho Republicans have handed down to their own party members this year. The longtime Republican said it’s an unusual and concerning trend that she views as a push to move legislators further right toward “fringe ideals that have been cultivated from the Libertarian Party.” 
 
 ## LITTLE, OTHER REPUBLICANS REPRIMANDED BY PARTY 
 
-McCann was appointed to her seat in May 2021 when the elected [[House member|representative]], [[Aaron Von Ehlinger]], resigned over an accusation of rape from a legislative intern. He was convicted and is in prison. She was elected the following year by constituents in District 6, which includes voters from [[Latah County|Latah]], [[Lewis County|Lewis]] and [[Nez Perce County|Nez Perce]] [[counties]]. 
+McCann was appointed to her seat in May 2021 when the elected representative, Aaron Von Ehlinger, resigned over an accusation of rape from a legislative intern. He was convicted and is in prison. She was elected the following year by constituents in District 6, which includes voters from Latah, Lewis and Nez Perce counties. 
 
-The Aug. 15 decision by the [[Latah County Republican Central Committee]] to chastise McCann on her voting record marked a [[censured|censure]] by each of those three [[counties]]. 
+The Aug. 15 decision by the Latah County Republican Central Committee to chastise McCann on her voting record marked a censure by each of those three counties. 
 
-The [[Latah County]] [[Idaho Republican Party|Republicans]]’ [[censured|censure]] rebuked McCann for “no” votes on five bills: one that would have allowed parents to sue over “harmful” library materials; one that would have banned drag shows on public property; one that addressed who can send out absentee ballots; one prohibiting requirement of the [[coronavirus|COVID-19]] vaccine; and one to allow [[property tax budget|property tax budgets]] to be reduced by referendum. 
+The Latah County Republicans’ censure rebuked McCann for “no” votes on five bills: one that would have allowed parents to sue over “harmful” library materials; one that would have banned drag shows on public property; one that addressed who can send out absentee ballots; one prohibiting requirement of the COVID-19 vaccine; and one to allow property tax budgets to be reduced by referendum. 
 
 Several other Republicans have faced similar reprimands, including Rep. Matt Bundy, of Mountain Home; Rep. Mark Sauter, of Sandpoint; and Rep. Julie Yamamoto, of Caldwell. 
 
@@ -50,7 +47,7 @@ He noted that most of the censures revolved around hot-button political talking 
 
 McCann told the Statesman she thinks the average Republican voter includes “folks in the middle.” She said the votes she was censured on represented the will of her constituents, and she heard feedback from them praising her choices. 
 
-Latah County Republican Central Committee Chairman [[Dan Schoenberg]] told the Statesman in an interview that he heard different takes. 
+Latah County Republican Central Committee Chairman Dan Schoenberg told the Statesman in an interview that he heard different takes. 
 
 “Maybe the far right are disappointed and that’s who (the committee is) hearing from,” McCann said. “The central committees check a box full of folks who represent that far-right faction of the party, but that is not the majority of the Republican Party in my district and across Idaho.” 
 

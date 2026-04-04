@@ -1,1 +1,1 @@
-[[cattle]] [[spongiform encephalopathies]] 
+cattle spongiform encephalopathies 

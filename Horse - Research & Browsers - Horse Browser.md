@@ -2,9 +2,7 @@
 outlet:
 url: "https://browser.horse/articles/browsers"
 author:
-  - "[[Eleanor McKeown]]"
-tags:
-  - media/articles
+  - "Eleanor McKeown"
 ---
 [Best Browsers for ResearchBest Browsers for Research - top browsers for researchers, including Horse Browser, Edge, VivaldiApril 10, 2024 · 1,322 words by Eleanor McKeown](https://browser.horse/articles/browsers/best-browsers-for-research)
 

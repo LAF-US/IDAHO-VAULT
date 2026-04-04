@@ -1,11 +1,8 @@
 ---
-tags:
-  - media/articles
-  - 2023/11/03
 ---
 https://www.eastidahonews.com/2023/11/new-canal-pipeline-provides-new-access-to-water-and-helps-aquifer-recharge/
 
-[[Rett Nelson]], [[East Idaho News]] 
+Rett Nelson, East Idaho News 
 
 IDAHO FALLS – A pipeline project northeast of Idaho Falls will provide more access to Idaho’s greatest natural resource.
 
@@ -25,7 +22,7 @@ At the time, severe flooding wiped out a section of the canal that served 2,718 
 
 Additional challenges came along 50 years later.
 
-“The [[Bonneville Power Administration]] (a federal agency created in 1937 to create and sell electric power throughout the Pacific Northwest from the Bonneville Dam on the Columbia River) put their power poles right in our old canal bottom in the early 1980s,” Ker says. “When they did that, we lost our right of way.”
+“The Bonneville Power Administration (a federal agency created in 1937 to create and sell electric power throughout the Pacific Northwest from the Bonneville Dam on the Columbia River) put their power poles right in our old canal bottom in the early 1980s,” Ker says. “When they did that, we lost our right of way.”
 
 The canal company has had water rights at this location since the 1800s. Though the Carey Act of 1894 protects those rights, it’s been an uphill battle to have unrestricted access to water.
 

@@ -1,5 +1,5 @@
-[[BOY]]
+BOY
 
-[[WOMAN]]
+WOMAN
 
-[[LADY]]
+LADY

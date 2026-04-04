@@ -1,6 +1,4 @@
 ---
-tags:
-  - people/journalists
 ---
-Residence: [[Boise]] 
-- [[Idaho Statesman]] reporter 
+Residence: Boise 
+- Idaho Statesman reporter 

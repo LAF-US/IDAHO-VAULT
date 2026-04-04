@@ -1,10 +1,7 @@
 ---
-tags:
-  - people/idaho/legislature/house
-  - 2026/03/12
 source: commit
 ---
-[[Judy Boyle]] is a 9th-term Republican [[Idaho House of Representatives|Idaho House]] member from District 9B (Midvale, Washington County) who challenged [[Mike Moyle]] for Majority Leader in November 2020 and is one of the six most senior House Republicans as of the 2023 session.
+Judy Boyle is a 9th-term Republican Idaho House member from District 9B (Midvale, Washington County) who challenged Mike Moyle for Majority Leader in November 2020 and is one of the six most senior House Republicans as of the 2023 session.
 
 ## Basic Info
 
@@ -27,7 +24,7 @@ Resources & Conservation, State Affairs, Transportation & Defense. Not on JFAC o
 
 ## Political Significance
 
-Listed in [[Logan Finney]]'s November 2022 power vacuum analysis as one of the six most senior House Republicans entering 2023. **Challenged [[Mike Moyle]] for Majority Leader in November 2020** — lost but demonstrates willingness to dissent from leadership on structural questions. No current stake in defending the JFAC working group structure.
+Listed in Logan Finney's November 2022 power vacuum analysis as one of the six most senior House Republicans entering 2023. **Challenged Mike Moyle for Majority Leader in November 2020** — lost but demonstrates willingness to dissent from leadership on structural questions. No current stake in defending the JFAC working group structure.
 
 ## Interview Value
 
@@ -35,6 +32,6 @@ Floor member who votes on JFAC budget bills without access to working group deli
 
 ## Related Notes
 
-- [[Joint Finance-Appropriations Committee]]
-- [[JFAC Working Groups]]
-- [[Mike Moyle]]
+- Joint Finance-Appropriations Committee
+- JFAC Working Groups
+- Mike Moyle

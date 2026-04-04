@@ -1,22 +1,19 @@
 ---
 author:
-  - "[[Laura Guido]]"
+  - "Laura Guido"
 outlet:
-  - "[[Idaho Press]]"
+  - "Idaho Press"
 URL: https://www.idahopress.com/news/local/governor-seeks-outside-lawyer-in-itd-lawsuit/article_e4ec2826-193f-11ef-a420-cf1f41c61233.html
-tags:
-  - media/articles
-  - 2024/05/23
 ---
-The [[Governor]] has hired his own lawyer in the lawsuit challenging the [[Idaho Legislature]]’s move to tank a planned sale of the vacant [[Department of Transportation|Idaho Transportation Department]] campus.
+The Governor has hired his own lawyer in the lawsuit challenging the Idaho Legislature’s move to tank a planned sale of the vacant Idaho Transportation Department campus.
 
-The move withdraws representation from [[Attorney General]] [[Raúl Labrador]] who last week filed a response brief on behalf of the [[State Board of Examiners|Board of Examiners]] without the board’s approval, [[BoiseDev]] reported.
+The move withdraws representation from Attorney General Raúl Labrador who last week filed a response brief on behalf of the Board of Examiners without the board’s approval, BoiseDev reported.
 
-The [[Governor]]’s [[attorneys|attorney]] and [[Attorney General]] are both tasked with defending the [[State of Idaho|state]] but are coming at the case from different perspectives. 
+The Governor’s attorney and Attorney General are both tasked with defending the state but are coming at the case from different perspectives. 
 
-Gov. [[Brad Little]] used an [[State of Idaho|Idaho]] law that allows him to decide that the attorney general’s office — which is the default lawyer to represent the state — would not “effectively advocate or pursue the policies of the governor” to hire outside counsel for the [[Department of Administration]] and [[Department of Transportation|Idaho Transportation Department]] in the case. 
+Gov. Brad Little used an Idaho law that allows him to decide that the attorney general’s office — which is the default lawyer to represent the state — would not “effectively advocate or pursue the policies of the governor” to hire outside counsel for the Department of Administration and Idaho Transportation Department in the case. 
 
-The highest bidders in a planned surplus sale of the State Street campus brought the lawsuit, arguing that the budget bills for the agencies that included intent language revoking the sale violated the state [[Idaho Constitution|constitutional]] requirement that legislation address only a single subject.
+The highest bidders in a planned surplus sale of the State Street campus brought the lawsuit, arguing that the budget bills for the agencies that included intent language revoking the sale violated the state constitutional requirement that legislation address only a single subject.
 
 The developers — Hawkins Companies, Pacific Companies, and FJ Management — are asking the state Supreme Court to declare the bills unconstitutional and to require the state to go through with the sale.
 
@@ -30,15 +27,15 @@ The response doesn’t weigh in on the constitutionality of the bills, but inste
 
 However, the governor said the brief was filed without the knowledge or approval of the Board of Examiners — which examines claims against the state and its members are Gov. Brad Little, Secretary of State Phil McGrane and Labrador. State Controller Brandon Woolf serves as a non-voting secretary of the board.
 
-Little’s Press Secretary [[Madison Hardy]] wrote in an emailed statement, “The Governor has learned that a brief and answer were filed on behalf of the Board of Examiners in the lawsuit before the Idaho Supreme Court. The filings were neither presented to nor approved by the Board prior to filing.”
+Little’s Press Secretary Madison Hardy wrote in an emailed statement, “The Governor has learned that a brief and answer were filed on behalf of the Board of Examiners in the lawsuit before the Idaho Supreme Court. The filings were neither presented to nor approved by the Board prior to filing.”
 
 Labrador’s office has said his filing was necessary because there was a two-week deadline imposed by the court by which the office needed to reply and that Little had been kept apprised of the office’s efforts.
 
-“The Governor was aware of this deadline from day one,” Attorney General’s Office spokesman Dan Estes wrote in an email. “He was informed of our legal strategy at least one week before the brief was due. As the chair of the Board of Examiners, the Governor had ample opportunity to call a special meeting but failed to do so. Similarly, he could have vetoed the legislation that triggered the lawsuit. It’s curious that his office is trying to blame the [[Office of the Attorney General]] for the Governor’s failure to act promptly on his desired policy outcomes.”
+“The Governor was aware of this deadline from day one,” Attorney General’s Office spokesman Dan Estes wrote in an email. “He was informed of our legal strategy at least one week before the brief was due. As the chair of the Board of Examiners, the Governor had ample opportunity to call a special meeting but failed to do so. Similarly, he could have vetoed the legislation that triggered the lawsuit. It’s curious that his office is trying to blame the Office of the Attorney General for the Governor’s failure to act promptly on his desired policy outcomes.”
 
 Former Attorney General David Leroy, who had supported Labrador’s campaign for attorney general, said that it is Labrador’s duty as the attorney to keep his client apprised of what’s going on.
 
-However, he said when the client is a board or commission, that doesn’t necessarily require a meeting to approve action. Leroy said that communication can be through one contact with the board. The attorney general’s “verified answer” court filing was signed by Brian Benjamin, who serves as deputy chief of staff for the state controller. The [[Office of the Attorney General|attorney general's office]] said he had communicated with the governor's office and staff for the board. 
+However, he said when the client is a board or commission, that doesn’t necessarily require a meeting to approve action. Leroy said that communication can be through one contact with the board. The attorney general’s “verified answer” court filing was signed by Brian Benjamin, who serves as deputy chief of staff for the state controller. The attorney general's office said he had communicated with the governor's office and staff for the board. 
 
 Leroy said that given the short timeline for submitting a response, he said it made sense that the office did so without a meeting from the board. He also said the board, as the client, has the ability to ask that the response be revised or withdrawn if the members do not feel it appropriately represented their position.
 
@@ -50,7 +47,7 @@ When the ITD budgets were passed, Little did express concerns about the bills �
 
 Little later told reporters that he didn’t veto the bill because he didn’t want to endanger the $592 million transportation budget.
 
-Little’s outside lawyer, [[Joan Callahan]] of the Boise law firm Naylor and Hales, also doesn’t argue against the constitutionality challenge in her filing.
+Little’s outside lawyer, Joan Callahan of the Boise law firm Naylor and Hales, also doesn’t argue against the constitutionality challenge in her filing.
 
 She writes that the agencies need guidance from the court because the Idaho code on how to handle surplus property, which was followed during the process of planning to sell the campus, and the intent language in the budget bills are in conflict with each other.
 

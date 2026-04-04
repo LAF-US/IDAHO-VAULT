@@ -1,1 +1,1 @@
-[[magistrate court]] [[Shoshone County]] [[courthouses|courthouse]] 
+magistrate court Shoshone County courthouse 

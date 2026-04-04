@@ -1,3 +1,3 @@
-[[birds of prey]] 
+birds of prey 
 
-[[migratory birds]] 
+migratory birds 
