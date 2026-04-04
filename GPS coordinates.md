@@ -1,5 +1,3 @@
 ---
-tags:
-  - vault/stub
 ---
-[[Global Positioning System]] 
+Global Positioning System 

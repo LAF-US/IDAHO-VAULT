@@ -1,7 +1,3 @@
 ---
-aliases:
-  - Wallace
-tags:
-  - schools/k12/district
 ---
-[[Wallace]], [[Shoshone County]] 
+Wallace, Shoshone County 

@@ -1,1 +1,1 @@
-[[Governor]] message to [[Idaho Legislature|Legislature]] with [[veto]]
+Governor message to Legislature with veto

@@ -1,6 +1,3 @@
 ---
-aliases:
-  - Schweitzer
-  - Schweitzer Mountain Resort
 ---
-[[ski resorts]] in [[Sandpoint]], [[Bonner County]] 
+ski resorts in Sandpoint, Bonner County 

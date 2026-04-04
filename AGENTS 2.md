@@ -2,11 +2,7 @@
 title: AGENTS
 updated: 2026-04-02
 status: active
-authority: "[[LOGAN]]"
-tags:
-  - administration/agents
-  - administration/control-plane
-  - administration/bootstrap
+authority: "LOGAN"
 date created: Thursday, April 2nd 2026, 10:26:08 pm
 date modified: Thursday, April 2nd 2026, 11:44:55 pm
 ---

@@ -1,19 +1,17 @@
 ---
 cmte:
-  - "[[Senate Judiciary and Rules]]"
-tags:
-  - 2025/01/13
+  - "Senate Judiciary and Rules"
 ---
 
-[[Senate Judiciary and Rules]]
+Senate Judiciary and Rules
 
 January 13, 1:30 PM
 
 First meeting
 
-APPOINTMENT: Kirk Nelson of [[Blackfoot]] to the Sexual Offender Management Board
+APPOINTMENT: Kirk Nelson of Blackfoot to the Sexual Offender Management Board
 
-32-year career in [[law enforcement]] with Pocatello [[police]] until 2007
+32-year career in law enforcement with Pocatello police until 2007
 
 Polygraph business, largely with sex offender and drug courts
 

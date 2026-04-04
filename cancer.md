@@ -1,1 +1,1 @@
-[[diseases]] 
+diseases 

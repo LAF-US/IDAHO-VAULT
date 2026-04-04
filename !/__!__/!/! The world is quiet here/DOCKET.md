@@ -1,25 +1,4 @@
 ---
-tags:
-  - administration/coordination
-  - 96
-  - 98
-  - 84
-  - 34
-  - 39
-  - 40
-  - 44
-  - 46
-  - 43
-  - 48
-  - 50
-  - 51
-  - 57
-  - 52
-  - 53
-  - 54
-  - 55
-  - 56
-  - general
 updated: 2026-04-02
 status: active
 date created: Monday, March 30th 2026, 7:54:37 pm

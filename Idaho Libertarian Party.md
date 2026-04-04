@@ -1,9 +1,3 @@
 ---
-tags:
-  - party/libertarian
-  - geography/land/state
-aliases:
-  - Libertarian
-  - Libertarians
 ---
-[[State of Idaho]] affiliate of the [[U.S. Libertarian Party]] 
+State of Idaho affiliate of the U.S. Libertarian Party 

@@ -2,12 +2,10 @@
 title: 2026-03-25 - Idaho Capital Sun - Idaho budget committee co-chair’s PAC accepts $200,000 contribution – tied for largest this year
 source: "https://idahocapitalsun.com/2026/03/25/idaho-budget-committee-co-chairmans-pac-accepts-200000-contribution/"
 author:
-  - "[[Clark Corbin]]"
+  - "Clark Corbin"
 published: 2026-03-25
 created: 2026-03-26
 description: "The $200,000 contribution is tied for the largest individual campaign contribution made in Idaho in 2026, campaign finance records show."
-tags: ["clippings"]
-aliases: ["2026-03-25 - Idaho Capital Sun - Idaho budget committee co-chair’s PAC accepts $200,000 contribution – tied for largest this year"]
 linter-yaml-title-alias: "2026-03-25 - Idaho Capital Sun - Idaho budget committee co-chair’s PAC accepts $200,000 contribution – tied for largest this year"
 ---
 

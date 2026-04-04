@@ -1,9 +1,9 @@
 ---
 source: "https://www.cs.ubc.ca/group/infovis/pubs/2023/dirty-data-in-the-newsroom/"
 author:
-  - "[[Stephen Kasica]]"
-  - "[[Charles Berret]]"
-  - "[[Tamara Munzner]]"
+  - "Stephen Kasica"
+  - "Charles Berret"
+  - "Tamara Munzner"
 published:
 created: 2026-03-30
 date created: Monday, March 30th 2026, 2:28:43 pm

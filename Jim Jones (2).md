@@ -1,10 +1,7 @@
 ---
-tags:
-  - people/idaho/judiciary
-  - 2026/03/12
 source: commit
 ---
-[[Jim Jones]] is a retired [[Idaho Supreme Court]] Justice (2005–2017) who wrote the dissent in [[Idaho Press Club v State Legislature (2006)|Idaho Press Club v. State Legislature]] containing footnote 13 — the statutory tension argument that undergirds the 2026 JFAC open-meetings challenge — and who continues to write about JFAC overreach as an [[Idaho Capital Sun]] columnist.
+Jim Jones is a retired Idaho Supreme Court Justice (2005–2017) who wrote the dissent in Idaho Press Club v. State Legislature containing footnote 13 — the statutory tension argument that undergirds the 2026 JFAC open-meetings challenge — and who continues to write about JFAC overreach as an Idaho Capital Sun columnist.
 
 ## Basic Info
 
@@ -31,7 +28,7 @@ Army artillery, Vietnam, 13 months. Bronze Star, Air Medal (4 OLC), Vietnamese C
 
 ## Idaho Press Club Dissent
 
-Wrote the dissent in [[Idaho Press Club v State Legislature (2006)|Idaho Press Club v. State Legislature]], 142 Idaho 640 (2006). **Footnote 13:** "I find the Legislature's argument that it may under the Constitution close committee meetings a bit disingenuous, in light of I.C. § 67-2346 [now §74-207]." Footnote 9 challenges the majority's use of expressio unius in a constitutional context, citing *Eberle v. Nielson* (1957).
+Wrote the dissent in Idaho Press Club v. State Legislature, 142 Idaho 640 (2006). **Footnote 13:** "I find the Legislature's argument that it may under the Constitution close committee meetings a bit disingenuous, in light of I.C. § 67-2346 [now §74-207]." Footnote 9 challenges the majority's use of expressio unius in a constitutional context, citing *Eberle v. Nielson* (1957).
 
 ## Post-Retirement Writing
 
@@ -41,11 +38,11 @@ Wrote the dissent in [[Idaho Press Club v State Legislature (2006)|Idaho Press C
 
 ## Interview Value
 
-Best available source for the legal dimension of this story. He wrote the dissent footnote the statutory theory rests on. Still active. No institutional stake in current JFAC power structure. Interview angle: focus specifically on [[Idaho Code §74-207]] statutory question, not just policy-vs-appropriations lane from his columns — related but distinct.
+Best available source for the legal dimension of this story. He wrote the dissent footnote the statutory theory rests on. Still active. No institutional stake in current JFAC power structure. Interview angle: focus specifically on Idaho Code §74-207 statutory question, not just policy-vs-appropriations lane from his columns — related but distinct.
 
 ## Related Notes
 
-- [[Idaho Press Club v State Legislature (2006)]]
-- [[Idaho Code §74-207]]
-- [[JFAC Working Groups]]
-- [[Joint Finance-Appropriations Committee]]
+- Idaho Press Club v State Legislature (2006)
+- Idaho Code §74-207
+- JFAC Working Groups
+- Joint Finance-Appropriations Committee

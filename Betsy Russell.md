@@ -1,6 +1,4 @@
 ---
-tags:
-  - people/journalists
-residence: "[[Boise]]"
+residence: "Boise"
 ---
-Longtime [[Eye on Boise]] reporter and politics journalist 
+Longtime Eye on Boise reporter and politics journalist 

@@ -1,1 +1,1 @@
-[[magistrate court]] [[Gem County]] [[courthouses|courthouse]] 
+magistrate court Gem County courthouse 

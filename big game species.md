@@ -1,7 +1,7 @@
-[[big game species]] for [[mammals]] [[hunting]] 
-- [[deer]]
-- [[elk]]
-- [[pronghorn]]
-- [[black bear]]
-- [[mountain lion]]
-- [[wolf]]
+big game species for mammals hunting 
+- deer
+- elk
+- pronghorn
+- black bear
+- mountain lion
+- wolf

@@ -1,5 +1,3 @@
 ---
-aliases:
-  - Bonner Community Hospital
 ---
-[[Sandpoint]] [[hospitals|hospital]] [[Bonner County]] [[hospital districts|hospital district]] 
+Sandpoint hospital Bonner County hospital district 

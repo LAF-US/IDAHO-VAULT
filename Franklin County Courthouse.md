@@ -1,1 +1,1 @@
-[[magistrate court]] [[Franklin County]] [[courthouses|courthouse]] 
+magistrate court Franklin County courthouse 

@@ -1,6 +1,3 @@
 ---
-tags:
-  - federal
-  - geography/land/forests
 ---
-[[national forests]] 
+national forests 

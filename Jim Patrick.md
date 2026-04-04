@@ -1,9 +1,4 @@
 ---
-tags:
-  - party/republican
-  - people/elected/legislative
-  - people/elected
-  - people
 ---
-Residence: [[Twin Falls]]
-- former [[Senate member]] ([[Senate Commerce and Human Resources]] chair) and [[House member]] for [[Legislative District 25]] 
+Residence: Twin Falls
+- former Senate member (Senate Commerce and Human Resources chair) and House member for Legislative District 25 

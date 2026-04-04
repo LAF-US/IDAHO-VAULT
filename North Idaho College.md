@@ -1,7 +1,3 @@
 ---
-aliases:
-  - NIC
-tags:
-  - schools/colleges/community
 ---
-[[Kootenai County]]-based [[community colleges|community college]] overseen by [[Board of Trustees - NIC]] 
+Kootenai County-based community college overseen by Board of Trustees - NIC 

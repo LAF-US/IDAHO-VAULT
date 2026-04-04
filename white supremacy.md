@@ -1,1 +1,1 @@
-[[white supremacist]] [[racism]] 
+white supremacist racism 

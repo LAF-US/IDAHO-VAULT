@@ -1,6 +1,5 @@
 ---
-tags: []
 ---
-[[Ned Burns]]
-- [[Sally Toone]]
+Ned Burns
+- Sally Toone
 - 

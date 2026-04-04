@@ -1,9 +1,5 @@
 ---
 outlet:
-  - "[[Bonner County Daily Bee]]"
-tags:
-  - media/outlets
-aliases:
-  - Daily Bee
+  - "Bonner County Daily Bee"
 ---
-[[Sandpoint]], [[Bonner County]] [[newspapers|newspaper]] owned by [[The Hagadone Corporation]] 
+Sandpoint, Bonner County newspaper owned by The Hagadone Corporation 

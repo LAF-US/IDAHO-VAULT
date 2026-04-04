@@ -2,11 +2,7 @@
 title: AGENT PROTOCOL
 updated: 2026-04-02
 status: active
-authority: "[[LOGAN]]"
-tags:
-  - administration/agents
-  - administration/infrastructure
-  - administration/protocol
+authority: "LOGAN"
 ---
 
 # AGENT PROTOCOL - IDAHO-VAULT

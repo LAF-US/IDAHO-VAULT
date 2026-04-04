@@ -1,5 +1,2 @@
 ---
-tags:
-  - people/journalists
-  - people
 ---

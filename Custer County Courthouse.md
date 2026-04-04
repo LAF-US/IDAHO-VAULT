@@ -1,1 +1,1 @@
-[[magistrate court]] [[Custer County]] [[courthouses|courthouse]] 
+magistrate court Custer County courthouse 

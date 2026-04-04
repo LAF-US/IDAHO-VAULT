@@ -1,12 +1,9 @@
 ---
 author:
-  - "[[Logan Finney]]"
+  - "Logan Finney"
 outlet:
-  - "[[Idaho Reports]]"
+  - "Idaho Reports"
 URL: https://blog.idahoreports.idahoptv.org/2024/01/19/idahoans-weigh-fentanyl-mandatory-minimum-sentences/
-tags:
-  - media/articles
-  - 2024/01/19
 ---
 Lawmakers this week began the latest push to add fentanyl to Idaho’s list of substances that carry a mandatory minimum prison sentence for drug trafficking. The same committee that blocked the legislation last year heard around three hours of testimony Friday morning.
 

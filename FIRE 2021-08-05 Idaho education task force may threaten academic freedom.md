@@ -1,19 +1,17 @@
 ---
-tags:
-  - 2021/08/05
 ---
 https://www.thefire.org/news/idaho-education-task-force-may-threaten-academic-freedom
 
-[[Aaron Terr]], [[Foundation for Individual Rights and Expression]] 
+Aaron Terr, Foundation for Individual Rights and Expression 
 
-In April, Idaho Lt. Gov. Janice McGeachin assembled a [[Task Force to Examine Indoctrination in Idaho Education|“task force”]] to “examine indoctrination in Idaho education and to protect our young people from the scourge of critical race theory, socialism, communism, and Marxism.” 
+In April, Idaho Lt. Gov. Janice McGeachin assembled a “task force” to “examine indoctrination in Idaho education and to protect our young people from the scourge of critical race theory, socialism, communism, and Marxism.” 
 
-The creation of the task force followed quickly on the heels of legislative efforts that targeted classroom discussion of “social justice,” “critical race theory,” and “racist or sexist” concepts.  That intense political pressure had an immediate chilling effect on academic freedom at [[Boise State University]], where dozens of diversity-related courses were suspended based on an unsubstantiated rumor of racial harassment. 
+The creation of the task force followed quickly on the heels of legislative efforts that targeted classroom discussion of “social justice,” “critical race theory,” and “racist or sexist” concepts.  That intense political pressure had an immediate chilling effect on academic freedom at Boise State University, where dozens of diversity-related courses were suspended based on an unsubstantiated rumor of racial harassment. 
 
 Four months later, the task force is planning to propose legislation. While we don’t yet know what that will look like, the task force’s failure to make any serious effort to consider the importance of academic freedom in higher education does not inspire confidence.
 
 ### Not a promising start
-In her press release announcing the task force, McGeachin, who is running for governor in the 2022 election, declared, “We must find where these insidious theories and philosophies are lurking and excise them from our education system.” She has railed against “the radical left’s attempts to indoctrinate [[United States of America|America]]’s schoolchildren with some of the most toxic and anti-American theories ever conceived.”
+In her press release announcing the task force, McGeachin, who is running for governor in the 2022 election, declared, “We must find where these insidious theories and philosophies are lurking and excise them from our education system.” She has railed against “the radical left’s attempts to indoctrinate America’s schoolchildren with some of the most toxic and anti-American theories ever conceived.”
 
 Shortly after Gov. Brad Little signed into law HB 377, which prohibits colleges and universities from compelling students to affirm specific political viewpoints (but does not prohibit the teaching of critical race theory or related concepts), the lieutenant governor said the law “is a small first step, but we still need to address critical race theory more directly."
 
@@ -26,9 +24,9 @@ Is indoctrination actually as big a problem as the lieutenant governor claims? S
 
 In April and May, several local journalists submitted public records requests to the lieutenant governor’s office seeking the feedback submitted through the online form. Now, the Idaho Press Club — of which each of the journalists is a member — is suing the lieutenant governor for unlawfully withholding that information. 
 
-According to the [[Idaho Press Club]]’s filing in court, [[Audrey Dutton]], a reporter with the [[Idaho Capital Sun]], made the initial request in April. In response, the lieutenant governor’s office said that the submissions contained names, contact information, and other personally identifiable information that needed to be redacted. They estimated that this work would take 28 hours and cost Dutton $560. A few weeks later, an [[Idaho Statesman]] reporter’s nearly identical request elicited an estimate of $1,540 for 79 hours of work. 
+According to the Idaho Press Club’s filing in court, Audrey Dutton, a reporter with the Idaho Capital Sun, made the initial request in April. In response, the lieutenant governor’s office said that the submissions contained names, contact information, and other personally identifiable information that needed to be redacted. They estimated that this work would take 28 hours and cost Dutton $560. A few weeks later, an Idaho Statesman reporter’s nearly identical request elicited an estimate of $1,540 for 79 hours of work. 
 
-The lieutenant governor’s June 4 [[Facebook]] post confirmed she was not happy with the requests, suggesting the media might use the information to “encourage employers and government agencies to retaliate against Idahoans who have expressed concerns about Idaho’s education system.” However, pressed in a June 16 radio interview, she conceded that the “public should know where the comments are coming from” (that is, whether they are from Idahoans or from out of state) and that “most of the comments that are coming in are critical of our effort.” 
+The lieutenant governor’s June 4 Facebook post confirmed she was not happy with the requests, suggesting the media might use the information to “encourage employers and government agencies to retaliate against Idahoans who have expressed concerns about Idaho’s education system.” However, pressed in a June 16 radio interview, she conceded that the “public should know where the comments are coming from” (that is, whether they are from Idahoans or from out of state) and that “most of the comments that are coming in are critical of our effort.” 
 
 Earlier this month, FIRE submitted its own request for the comments received through the feedback form. The lieutenant governor’s office initially responded that it would need to redact “nonpublic information” and, as with the previous requests from reporters, cited a slew of bogus legal exemptions to justify those redactions. None of these exemptions apply, and almost all of them are so obviously irrelevant that it’s hard to believe they were invoked in good faith.
 

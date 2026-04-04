@@ -1,1 +1,1 @@
-[[high schools|high school]] athletics [[LGBTQ+ issues]] 
+high school athletics LGBTQ+ issues 

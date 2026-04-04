@@ -1,11 +1,8 @@
 ---
-tags:
-  - media/articles
-  - 2023/11/27
 ---
 https://boisedev.com/news/2023/11/27/ada-county-gop-finances-under-audit-following-complaint-to-state-party-abrupt-resignation-of-central-committee-leadership/ 
 
-[[Margaret Carmel]], [[BoiseDev]] 
+Margaret Carmel, BoiseDev 
 
 New leadership at the Ada County GOP is taking over a financial audit of the organization first begun by the Idaho Republican Party under the leadership of Chairwoman Dorothy Moon.
 

@@ -1,13 +1,9 @@
 ---
 date created: Saturday, March 28th 2026, 5:32:19 pm
 date modified: Saturday, March 28th 2026, 5:35:44 pm
-tags:
-  - administration/reference
-  - vault/meta
-  - journalism/workflow
 ---
 
-[[ChatGPT]] [[2026-03-28]]
+ChatGPT 2026-03-28
 
 ---
 # IDAHO-VAULT — END-TO-END JOURNALISM WORKFLOW (AI-ASSISTED, LOCAL-FIRST)

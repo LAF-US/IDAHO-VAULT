@@ -1,5 +1,3 @@
 ---
-aliases:
-  - X
 ---
-Purchased by [[Elon Musk]]
+Purchased by Elon Musk

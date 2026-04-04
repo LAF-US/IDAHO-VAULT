@@ -1,1 +1,1 @@
-[[Internet|online]] 
+online 

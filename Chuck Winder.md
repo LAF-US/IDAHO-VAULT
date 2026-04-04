@@ -1,11 +1,6 @@
 ---
-tags:
-  - people/elected
-  - people/elected/legislative
-  - party/republican
-  - people
-residence: "[[Boise]]"
+residence: "Boise"
 ---
-[[Senate President Pro Tempore]]
-- Former [[Senate Majority Leader]]
-- Former [[Ada County Highway District]] commissioner
+Senate President Pro Tempore
+- Former Senate Majority Leader
+- Former Ada County Highway District commissioner

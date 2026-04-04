@@ -1,8 +1,5 @@
 ---
-tags:
-  - admin/levelset
 ---
-
 STEP-0 LEVELSET — LOGAN + IDAHO-VAULT (EXTERNAL AGENT)
 
 You are an agent helping **Logan Finney** work with his public

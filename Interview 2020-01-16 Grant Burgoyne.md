@@ -1,13 +1,10 @@
 ---
 author:
-  - "[[Logan Finney]]"
-tags:
-  - 2020/01/16
-  - 2020/session
+  - "Logan Finney"
 ---
-[[Senate member|Sen.]] [[Grant Burgoyne]] on drug decriminalization and civil commitments bill [https://legislature.idaho.gov/sessioninfo/2020/legislation/S1222/](https://legislature.idaho.gov/sessioninfo/2020/legislation/S1222/)
+Sen. Grant Burgoyne on drug decriminalization and civil commitments bill [https://legislature.idaho.gov/sessioninfo/2020/legislation/S1222/](https://legislature.idaho.gov/sessioninfo/2020/legislation/S1222/)
 
-*Interview for [[2020-01-16 - McClure - Bill aims to shift drug policy from arrest to treatment]]*
+*Interview for 2020-01-16 - McClure - Bill aims to shift drug policy from arrest to treatment*
 
 Statement of Purpose: “intended to refocus Idaho’s response to the use of illegal drugs from punishment to treatment by (i) decriminalizing the unlawful use of controlled substances in private places, and (ii) repealing the current prohibition on civil commitments for drug abuse.”
 
@@ -19,7 +16,7 @@ Statement of Purpose: “intended to refocus Idaho’s response to the use of il
 
 -adds “intent to deliver” to trafficking, leaves mandatory minimums intact. Simple possession/use of drugs is no longer a criminal charge. Person under the influence (qualifying circumstance) can be detained and taken to treatment facility.
 
-House has passed mandatory minimum reforms last two years (strike mandatory, allow judge to assign lesser), no hearing in [[Senate Judiciary and Rules]] w/ Chairman [[Todd Lakey]].
+House has passed mandatory minimum reforms last two years (strike mandatory, allow judge to assign lesser), no hearing in Senate Judiciary and Rules w/ Chairman Todd Lakey.
 
 INTERVIEW TRANSCRIPT
 

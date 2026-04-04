@@ -1,5 +1,3 @@
 ---
-tags:
-  - governments/state/executive
 ---
-[[Secretary of State]], [[State Controller|Controller]], [[State Treasurer|Treasurer]] finalize all [[election]] results.
+Secretary of State, Controller, Treasurer finalize all election results.

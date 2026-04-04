@@ -1,5 +1,3 @@
 ---
-tags:
-  - vault/stub
 ---
-[[Faith and Values Spokane]] 
+Faith and Values Spokane 

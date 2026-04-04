@@ -4,12 +4,6 @@ updated: 2026-03-29
 status: stub
 authority: perplexity
 doc_class: organization
-tags:
-  - swarm
-  - r-and-d
-  - unified-swarm
-  - agent-native
-  - tools
 url: https://factory.ai
 ---
 
@@ -23,7 +17,7 @@ Its core infrastructure unifies "enterprise memory" across GitHub, Notion, Linea
 
 **Flagged by Logan Finney, 2026-03-29**, via Perplexity unified swarm research session.
 
-In the [[BIG IFS — UNIFIED SWARM]] framework, Factory is identified as the **code & system-change limb** of a hypothetical Unified Swarm—high-leverage where modifications to software and infrastructure are required.
+In the BIG IFS — UNIFIED SWARM framework, Factory is identified as the **code & system-change limb** of a hypothetical Unified Swarm—high-leverage where modifications to software and infrastructure are required.
 
 Open questions for R&D evaluation:
 - Droid configurability: can task scope be constrained to match IDAHO-VAULT's journalism + automation perimeter?
@@ -32,6 +26,6 @@ Open questions for R&D evaluation:
 
 ## See Also
 
-- [[BIG IFS — UNIFIED SWARM]]
-- [[CrewAI]]
-- [[OpenAI Swarm]]
+- BIG IFS — UNIFIED SWARM
+- CrewAI
+- OpenAI Swarm

@@ -1,27 +1,24 @@
 ---
 author:
-  - "[[Logan Finney]]"
+  - "Logan Finney"
 outlet:
-  - "[[Idaho Reports]]"
+  - "Idaho Reports"
 URL: https://blog.idahoreports.idahoptv.org/2023/09/21/idaho-gop-to-hear-bingham-county-appeal-on-saturday/
-tags:
-  - media/articles
-  - 2023/09/23
 ---
 _CORRECTION: This story originally stated the Idaho GOP executive committee would hear the Bingham County GOP appeal on Sept. 23 and was updated with more information from Trent Clark that morning._
 
-A [[Bingham County]] judge issued a temporary restraining order on Sept. 15, blocking the state Republican party from conducting a leadership election for the [[Bingham County Republican Central Committee]]. The lawsuit includes allegations from the local party that Idaho GOP chairwoman [[Dorothy Moon]] has been negating certain county elections to install her own political allies.
+A Bingham County judge issued a temporary restraining order on Sept. 15, blocking the state Republican party from conducting a leadership election for the Bingham County Republican Central Committee. The lawsuit includes allegations from the local party that Idaho GOP chairwoman Dorothy Moon has been negating certain county elections to install her own political allies.
 
 The restraining order blocks the state party from electing new Bingham County GOP officers while an internal party appeal process advances. The court will hear arguments on Sept. 28 regarding a preliminary injunction, which would replace the temporary restraining order.
 
 # Where it all started
-Earlier this year, Bingham County Republican chairman [[Dan Cravens]] announced his intent to resign, effective Aug. 1, because he was moving out of state. The central committee under Cravens then held a series of elections at its July 20 regular meeting to select new party officers, with the intent that they would take office on Aug. 1.
+Earlier this year, Bingham County Republican chairman Dan Cravens announced his intent to resign, effective Aug. 1, because he was moving out of state. The central committee under Cravens then held a series of elections at its July 20 regular meeting to select new party officers, with the intent that they would take office on Aug. 1.
 
 An unsigned complaint was later filed with the state party alleging that the Bingham County central committee had violated rules and bylaws in its conduct of the meeting and that the new chairman was not duly elected.
 
 Based on that complaint, Moon on Sept. 5 issued a ruling that the action taken at the July 20 meeting was void, and she scheduled a new central committee election on Sept. 18.
 
-[[Matt Thompson]], the newly elected county chairman, filed an appeal under party rules with Idaho GOP 1st Vice Chair [[Daniel Silver]] asking the state party to review Moon’s decision to void the prior election.
+Matt Thompson, the newly elected county chairman, filed an appeal under party rules with Idaho GOP 1st Vice Chair Daniel Silver asking the state party to review Moon’s decision to void the prior election.
 
 Silver issued a letter to Moon on Sept. 14 regarding the appeal, stating that “the Chairwoman is not permitted to move forward with taking any further action on the matter until the State Executive Committee meets with the aggrieved party and decides to either uphold, amend, or overturn the decision of the state chairwoman.”
 
@@ -34,7 +31,7 @@ Thompson and the Bingham County executive committee filed a lawsuit the evening 
 # Restraining order issued
 The Bingham County Republican party asked the court to prevent the state party from conducting new officer elections until the appeals process under party rules is complete. The Bingham County District Court granted a temporary restraining order on Sept. 15 and will hear the county party’s case on Sept. 28 for a preliminary injunction, which would continue to block the state party from holding a new election.
 
-“While the Court does not have a fully developed record before it to reach an ultimate adjudication on the merits, the Court is satisfied that it is appropriate to issue a temporary restraining order prohibiting the Idaho Republican Party, by and through [[Dorothy Moon]], from conducting or holding any meeting to elect officers to the Bingham County Republican Central Committee or to appoint nominees for the vacant position of the Bingham County Prosecuting Attorney during the pendency of the appellate review of Thompson’s appeal,” wrote [[7th Judicial District|Seventh Judicial District]] Judge [[Darren Simpson]].
+“While the Court does not have a fully developed record before it to reach an ultimate adjudication on the merits, the Court is satisfied that it is appropriate to issue a temporary restraining order prohibiting the Idaho Republican Party, by and through Dorothy Moon, from conducting or holding any meeting to elect officers to the Bingham County Republican Central Committee or to appoint nominees for the vacant position of the Bingham County Prosecuting Attorney during the pendency of the appellate review of Thompson’s appeal,” wrote Seventh Judicial District Judge Darren Simpson.
 
 The court order acknowledges that Moon and the state party did not have an opportunity to respond before the restraining order was granted. They will be given that opportunity at the Sept. 28 hearing on a preliminary injunction if the party appeal has not already resolved the dispute by then.
 
@@ -78,10 +75,10 @@ Thompson and the Bingham County Republican executive committee are represented b
 
 In the court filings, Chaney calls the situation “a continuation of a systematic conspiracy” to void certain county central committee elections and reconduct them “under circumstances carefully manipulated and choreographed to elect persons sympathetic to Moon and her aims.”
 
-The filing describes an episode in which the [[Power County Republican Central Committee]] elected new officers in December 2022, which was declared void by Moon and replaced with a new election in February 2023.
+The filing describes an episode in which the Power County Republican Central Committee elected new officers in December 2022, which was declared void by Moon and replaced with a new election in February 2023.
 
-Each county [[central committees|central committee]] elects four officers who sit on the state central committee for their party.
+Each county central committee elects four officers who sit on the state central committee for their party.
 
-“Dan (Cravens) has been upset with the current leadership of the Republican party since we were elected a year ago,” Fuller said. “He’s been a thorn in our side, and this is just one last problem he left us as he moved to [[Missouri]].”
+“Dan (Cravens) has been upset with the current leadership of the Republican party since we were elected a year ago,” Fuller said. “He’s been a thorn in our side, and this is just one last problem he left us as he moved to Missouri.”
 
-Fuller also called the entire scenario a distraction from the [[Idaho Republican Party]]’s fundraising efforts and its opposition to the [[Idahoans for Open Primaries]] ballot initiative petition.
+Fuller also called the entire scenario a distraction from the Idaho Republican Party’s fundraising efforts and its opposition to the Idahoans for Open Primaries ballot initiative petition.

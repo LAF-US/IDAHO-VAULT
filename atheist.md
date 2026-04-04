@@ -1,1 +1,1 @@
-[[religion]] 
+religion 

@@ -3,12 +3,9 @@ title: "LEVELSET - Codex Sunday Report - 2026-03-29"
 created: 2026-03-29
 updated: 2026-03-29
 status: active
-authority: "[[LOGAN]]"
+authority: "LOGAN"
 authors:
   - ChatGPT Codex
-tags:
-  - administration/coordination
-  - administration/levelset
 source: session/2026-03-29
 ---
 
@@ -133,6 +130,6 @@ Until then, hold this branch in coordination mode.
 - **Created:** 2026-03-29
 - **Last Updated:** 2026-03-29
 - **Status:** Active
-- **Authority:** [[LOGAN]]
+- **Authority:** LOGAN
 - **Authors:** ChatGPT Codex
 - **Change Note:** Filed a Sunday-mode Codex checkpoint covering live branch state, swarm coordination, blockers, and safe-next actions.

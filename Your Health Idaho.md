@@ -1,1 +1,1 @@
-state of [[State of Idaho|Idaho]]'s [[health insurance]] marketplace
+state of Idaho's health insurance marketplace

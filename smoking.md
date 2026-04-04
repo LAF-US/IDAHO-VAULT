@@ -1,1 +1,1 @@
-[[tobacco]] in [[cigarettes]] and [[cigars]] 
+tobacco in cigarettes and cigars 

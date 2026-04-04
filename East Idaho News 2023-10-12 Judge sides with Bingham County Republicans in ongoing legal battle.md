@@ -1,17 +1,14 @@
 ---
-tags:
-  - media/articles
-  - 2023/10/12
 ---
 https://www.eastidahonews.com/2023/10/judge-sides-with-bingham-county-republicans-in-ongoing-legal-battle/
 
-[[Mary Boyle]], [[East Idaho News]] 
+Mary Boyle, East Idaho News 
 
-BLACKFOOT — A [[7th Judicial District|7th Court]] [[district judges|District judge]] has blocked the [[Idaho Republican Party]] from holding a special meeting to elect a new chair of the [[Bingham County Republican Central Committee]]. It’s the latest in the legal battle between local party leaders and the Idaho Republican Party Chairwoman [[Dorothy Moon]] and state GOP leaders.
+BLACKFOOT — A 7th Court District judge has blocked the Idaho Republican Party from holding a special meeting to elect a new chair of the Bingham County Republican Central Committee. It’s the latest in the legal battle between local party leaders and the Idaho Republican Party Chairwoman Dorothy Moon and state GOP leaders.
 
-The court action stems from the county electing a new committee chairman, according to [[Matt Thompson]], of the Bingham County Republicans. When the previous chairman, [[Dan Cravens]], announced his resignation in July, the local committee held an election to replace him. Thompson was elected as chairman, which triggered a domino effect through the ranks.
+The court action stems from the county electing a new committee chairman, according to Matt Thompson, of the Bingham County Republicans. When the previous chairman, Dan Cravens, announced his resignation in July, the local committee held an election to replace him. Thompson was elected as chairman, which triggered a domino effect through the ranks.
 
-Thompson’s previous position as state committeeman was left empty, so the local committee held an election to fill it. [[Ben Fuhriman]] was elected as Thompson’s replacement. Consequently, Fuhriman’s position was left open, so the committee elected [[Jedediah Russell]] as his replacement. [[Jordon Johns]] was then elected as first vice-chair to Thompson.
+Thompson’s previous position as state committeeman was left empty, so the local committee held an election to fill it. Ben Fuhriman was elected as Thompson’s replacement. Consequently, Fuhriman’s position was left open, so the committee elected Jedediah Russell as his replacement. Jordon Johns was then elected as first vice-chair to Thompson.
 
 According to the Bingham County GOP, Moon inappropriately used her power and authority to negate that election.
 
@@ -41,4 +38,4 @@ The Bingham County Republicans Central Committee says this isn’t about a simpl
 
 The local leaders blame Moon for the “turmoil” the Idaho Republican party has faced statewide, saying it can be “directly traced back” to Moon’s election.
 
-“What has happened in [[Bingham County]], [[Ada County]] and other counties is evidence of the distrust and lack of confidence Republicans across the state have in (Moon’s) leadership,” Fuhriman said. “We are disappointed that it took going down this path to get the fair treatment every Republican should expect from their chairman.”
+“What has happened in Bingham County, Ada County and other counties is evidence of the distrust and lack of confidence Republicans across the state have in (Moon’s) leadership,” Fuhriman said. “We are disappointed that it took going down this path to get the fair treatment every Republican should expect from their chairman.”

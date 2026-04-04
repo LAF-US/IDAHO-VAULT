@@ -1,15 +1,11 @@
 ---
 outlet:
-  - "[[Idaho Capital Sun]]"
-author: "[[Mia Maldonado]]"
-tags:
-  - media/articles
-  - 2023/08/28
-  - 2020/election
+  - "Idaho Capital Sun"
+author: "Mia Maldonado"
 ---
 ## **Committee fined $4,325 after failing to resolve excessive contributions to campaign on time**
 
-The [[Jim Risch]] for [[U.S. Senate]] Committee is facing a civil penalty after failing to return excessive contributions on time during his 2020 campaign, according to a negotiated settlement between the campaign and the [[Federal Election Commission]]. 
+The Jim Risch for U.S. Senate Committee is facing a civil penalty after failing to return excessive contributions on time during his 2020 campaign, according to a negotiated settlement between the campaign and the Federal Election Commission. 
 
 According to the settlement, Risch’s committee campaign received $58,000 in excessive contributions from individuals during the 2020 election. 
 
@@ -22,11 +18,11 @@ According to the election commission FEC, when a committee receives an excessive
 - By seeking reattribution, or attributing a portion of money to another individual whose name is not listed in the original contribution
 
 ### What is an excessive contribution? 
-[[Jason Risch]], spokesperson for Risch’s campaign, said in an email that it has reviewed its procedures and has put policies in place to improve timeliness, which were presented to the FEC and were accepted as appropriate corrective actions.
+Jason Risch, spokesperson for Risch’s campaign, said in an email that it has reviewed its procedures and has put policies in place to improve timeliness, which were presented to the FEC and were accepted as appropriate corrective actions.
 
 “The majority of the contributions at issue came from individual donors who are allowed to contribute a certain amount per election,” he told the Idaho Capital Sun.
 
-During the [[2020 election]], any authorized committee could not receive more than a total of $2,800 per election, per candidate. For 2023 to 2024, that limit has increased to $3,300 per election, per candidate, Risch noted, according to the FEC website. 
+During the 2020 election, any authorized committee could not receive more than a total of $2,800 per election, per candidate. For 2023 to 2024, that limit has increased to $3,300 per election, per candidate, Risch noted, according to the FEC website. 
 
 “This means that the donor can contribute $3,300 toward the primary election held in May and another $3,300 toward the general election held in November,” he said. “However, when the donor makes both contributions with one $6,600 check, the campaign has a technical requirement to mail the donor a follow up letter.”
 

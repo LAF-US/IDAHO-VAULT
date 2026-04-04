@@ -1,6 +1,3 @@
 ---
-tags:
-  - federal
-  - bills
 ---
-[[chronic wasting disease]] 
+chronic wasting disease 

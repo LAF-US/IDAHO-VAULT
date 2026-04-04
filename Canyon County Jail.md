@@ -1,1 +1,1 @@
-[[County Sheriff]], [[Canyon County]] [[jails|jail]]
+County Sheriff, Canyon County jail

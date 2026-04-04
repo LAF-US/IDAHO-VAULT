@@ -1,10 +1,6 @@
 ---
-aliases:
-  - charter school
-tags:
-  - schools/k12/charter
 ---
-A list of charter schools and charter school networks in the [[State of Idaho]] Idaho by county.
+A list of charter schools and charter school networks in the State of Idaho Idaho by county.
 
 _Ada County_
 Anser Charter School

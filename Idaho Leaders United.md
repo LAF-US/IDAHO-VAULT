@@ -1,13 +1,13 @@
-Vocally opposed to political violence, especially [[Ammon Bundy]] 
+Vocally opposed to political violence, especially Ammon Bundy 
 
-Inaugural reception on #2023/11/03 honored [[Jim Hammond]] with Pillar of Idaho award. Attendees included [[Carl Crabtree]], [[Jack Nelsen]], [[Laurie Lickley]]
+Inaugural reception on #2023/11/03 honored Jim Hammond with Pillar of Idaho award. Attendees included Carl Crabtree, Jack Nelsen, Laurie Lickley
 # Leadership
-- [[Cortney Liddiard]]
-- [[Gary Raney]]
-- [[Bill Shawver]]
-- [[Odette Bolano]]
-- [[Doug Gross]]
-- [[Tommy Ahlquist]] 
+- Cortney Liddiard
+- Gary Raney
+- Bill Shawver
+- Odette Bolano
+- Doug Gross
+- Tommy Ahlquist 
 # Idaho Statement Condemning Political Violence
 
 The Idaho way of life is built on hard work, respect for each other, and a commitment to serve our communities. For the vast majority of Idaho’s statehood, we’ve been small in population number, but large in generosity of spirit. 
@@ -27,7 +27,7 @@ Idahoans of all political backgrounds can play an essential role in helping to e
 - _Commit to, in our own civic engagement, being respectful of the legislative and democratic process, and supporting positive, constructive discourse on important issues._ 
 - _Actively denounce any appeal in our political discourse that calls for bigotry and discrimination._
 - _Support activities that strengthen and promote inclusivity in our civic institutions._
-- _Disavow leaders and groups who actively support violent political extremism or known extremists, militia members, [[white nationalism|white nationalists]], and those who condone violent lawlessness._
+- _Disavow leaders and groups who actively support violent political extremism or known extremists, militia members, white nationalists, and those who condone violent lawlessness._
 ### Together,
 
-_we stand with the vast majority of Idahoans who reject bigotry, reject political violence, and reject extremism in all its forms. Together, we will build a peaceful, just and thriving [[State of Idaho]], securing her future, and her legacy for every generation that follows us._
+_we stand with the vast majority of Idahoans who reject bigotry, reject political violence, and reject extremism in all its forms. Together, we will build a peaceful, just and thriving State of Idaho, securing her future, and her legacy for every generation that follows us._

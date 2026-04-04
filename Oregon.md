@@ -1,6 +1,3 @@
 ---
-tags:
-  - governments/state
-  - geography/land/state
 ---
-one of the [[United States of America]], borders [[State of Idaho|Idaho]] to the west
+one of the United States of America, borders Idaho to the west

@@ -1,7 +1,4 @@
 ---
-tags:
-  - people
 ---
-
-Hometown: [[Sandpoint]] 
-- [[Reclaim Idaho]] cofounder
+Hometown: Sandpoint 
+- Reclaim Idaho cofounder

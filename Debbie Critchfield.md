@@ -1,13 +1,8 @@
 ---
-tags:
-  - party/republican
-  - people
-  - people/elected/statewide/superintendent
 ---
+Residence: Cassia County
 
-Residence: [[Cassia County]]
+Current Superintendent of Public Instruction
 
-Current [[Superintendent of Public Instruction]]
-
-Former [[State Board of Education|SBOE]] president 
+Former SBOE president 
 

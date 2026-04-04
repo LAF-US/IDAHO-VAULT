@@ -1,1 +1,1 @@
-[[Judaism|Jewish]] [[holy book]] 
+Jewish holy book 

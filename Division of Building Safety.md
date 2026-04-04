@@ -1,5 +1,3 @@
 ---
-tags:
-  - governments/state/executive/departments/divisions
 ---
-Administrator appointed by the [[Governor]]. 
+Administrator appointed by the Governor. 

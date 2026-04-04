@@ -1,7 +1,7 @@
 ---
 source: "https://releases.1password.com/windows/stable/#changelog"
 author:
-  - "[[Dave]]"
+  - "Dave"
 published: 2026-03-16
 created: 2026-03-30
 ---

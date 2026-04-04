@@ -1,9 +1,7 @@
 ---
-tags:
-  - people
 ---
-[[Idaho Second Amendment Alliance]]
+Idaho Second Amendment Alliance
 
-Founder of [[Idaho Dispatch]] website
+Founder of Idaho Dispatch website
 
-[[Freedom Bros Podcast]]
+Freedom Bros Podcast

@@ -1,1 +1,1 @@
-[[magistrate court]] [[Kootenai County]] [[courthouses|courthouse]] 
+magistrate court Kootenai County courthouse 

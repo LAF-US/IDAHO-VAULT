@@ -1,5 +1,3 @@
 ---
-aliases:
-  - Narcan
 ---
-[[opioid reversal]] drug 
+opioid reversal drug 

@@ -1,1 +1,1 @@
-[[birds]], [[upland species]]
+birds, upland species

@@ -1,6 +1,2 @@
 ---
-aliases:
-  - electric
-  - power
-  - energy
 ---

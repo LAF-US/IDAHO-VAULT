@@ -1,1 +1,1 @@
-[[magistrate court]] [[Teton County]] [[courthouses|courthouse]] 
+magistrate court Teton County courthouse 

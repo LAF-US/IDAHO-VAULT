@@ -1,19 +1,16 @@
 ---
-tags:
-  - media/articles
-  - 2022/10/14
 ---
 https://idahocapitalsun.com/2022/10/14/no-action-on-election-related-publication-idaho-secretary-of-state-decides/
 
 ## Invoices showing payment from North Idaho political committee not strong enough to proceed with a case, deputy secretary says
 
-[[Kelcie Moseley-Morris]], [[Idaho Capital Sun]]
+Kelcie Moseley-Morris, Idaho Capital Sun
 
-No charges or fines will be levied against the [[Kootenai County Republican Central Committee]] over its participation with a publication called [[The People’s Pen]] after an investigation by the offices of the [[Secretary of State]] and the [[Attorney General]].
+No charges or fines will be levied against the Kootenai County Republican Central Committee over its participation with a publication called The People’s Pen after an investigation by the offices of the Secretary of State and the Attorney General.
 
-Deputy Secretary of State [[Chad Houck]] said while there was one invoice entirely paid by the [[Kootenai County Republican Central Committee]], the office determined the rest of the evidence discovered through the course of an investigation was not strong enough to prove the committee controls and pays for the publication, which would be a violation of Idaho [[campaign finance]] law.
+Deputy Secretary of State Chad Houck said while there was one invoice entirely paid by the Kootenai County Republican Central Committee, the office determined the rest of the evidence discovered through the course of an investigation was not strong enough to prove the committee controls and pays for the publication, which would be a violation of Idaho campaign finance law.
 
-Secretary of State [[Lawerence Denney]] sent a letter on Sept. 13 to [[Sandra Patano|Sandra Patano]] saying the office was closing the investigation. Patano, who is a co-founder of [[North Idaho Republicans]], filed the complaint on May 13 alleging the publication is an electioneering piece that should be reported as such.
+Secretary of State Lawerence Denney sent a letter on Sept. 13 to Sandra Patano saying the office was closing the investigation. Patano, who is a co-founder of North Idaho Republicans, filed the complaint on May 13 alleging the publication is an electioneering piece that should be reported as such.
 ## What does Idaho law say about electioneering communications?
 Under Idaho law, newspapers are exempt from what is considered electioneering communications or independent expenditures during elections, meaning a news outlet can publish editorials and endorsements or other commentary about candidates and the communications do not need to be reported to the secretary of state’s office. Electioneering communications are ads or other messages meant to support or oppose candidates that must be declared with the Idaho Secretary of State’s office within 30 days of a primary election.
 
@@ -25,9 +22,9 @@ Sandy Patano, the person who filed the complaint, founded North Idaho Republican
 
 Kootenai County Republican Central Committee Chairman Brent Regan filed his own complaint with the secretary of state’s office against North Idaho Republicans in early May because the organization had not registered as a political action committee before purchasing an ad in the Coeur d’Alene Press’ voter guide. The group was fined $2,500, the maximum penalty under Idaho law. Regan called Patano’s complaint retaliatory and politically motivated.
 
-“The attorney general’s office had to look at what kind of case you can build from the information that you have and the information you can gather,” Houck said. “We had to look at that and say, ‘Is there a case there that we think is ultimately winnable?’ Because when you take something like that and go into a court environment with it, the offset is … if you aren’t successful in challenging your case, the prevailing party can charge the non-prevailing party [[attorney’s fees]].”
+“The attorney general’s office had to look at what kind of case you can build from the information that you have and the information you can gather,” Houck said. “We had to look at that and say, ‘Is there a case there that we think is ultimately winnable?’ Because when you take something like that and go into a court environment with it, the offset is … if you aren’t successful in challenging your case, the prevailing party can charge the non-prevailing party attorney’s fees.”
 
-At best, Houck said, a successful case would have merely resulted in requiring future publications to explicitly say on the front cover that it was paid for by the Kootenai County Republican Central Committee. And at worst, it might have cost thousands of taxpayer dollars in [[attorney’s fees]], he said.
+At best, Houck said, a successful case would have merely resulted in requiring future publications to explicitly say on the front cover that it was paid for by the Kootenai County Republican Central Committee. And at worst, it might have cost thousands of taxpayer dollars in attorney’s fees, he said.
 
 “The case strategy that (the attorney general’s office) ultimately presented to us was not a case that we were comfortable advising them or requesting that they pursue,” Houck said.
 ## Invoice amounts match independent expenditures from Idaho central committee

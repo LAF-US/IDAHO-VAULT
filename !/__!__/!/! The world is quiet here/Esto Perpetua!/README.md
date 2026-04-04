@@ -1,8 +1,5 @@
 ---
 title: "Esto Perpetua!"
-tags:
-  - administration/canon
-  - administration/core
 status: permanent
 date created: 2026-04-04
 authority: "[[LOGAN]]"

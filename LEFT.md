@@ -1,6 +1,6 @@
-[[RIGHT]]
+RIGHT
 
-[[UP]]
+UP
 
-[[DOWN]]
+DOWN
 

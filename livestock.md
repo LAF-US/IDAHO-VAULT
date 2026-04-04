@@ -1,1 +1,1 @@
-[[cattle]], [[pigs]], [[sheep]], [[goats]] 
+cattle, pigs, sheep, goats 

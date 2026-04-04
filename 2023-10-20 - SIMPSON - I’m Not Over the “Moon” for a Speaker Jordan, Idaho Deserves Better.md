@@ -1,16 +1,12 @@
 ---
 author:
-  - "[[Mike Simpson]]"
-tags:
-  - federal
-  - 2023/10/20
-  - position/elected/statewide/congress
+  - "Mike Simpson"
 ---
 
 I’M NOT OVER THE “MOON” FOR A SPEAKER JORDAN - IDAHO DESERVES BETTER
 
 Washington, October 20, 2023
-WASHINGTON— Today, Idaho Congressman [[Mike Simpson]] wrote an op-ed in response to the [[2023-10-17 - IDGOP - Statement on Speaker of the House vote|Idaho Republican Party]]’s recent statement on the [[U.S. House]] of Representatives Speaker of the House vote.  
+WASHINGTON— Today, Idaho Congressman Mike Simpson wrote an op-ed in response to the Idaho Republican Party’s recent statement on the U.S. House of Representatives Speaker of the House vote.  
 
 I’m Not Over the “Moon” for a Speaker Jordan - Idaho Deserves Better 
 
@@ -18,13 +14,13 @@ By Rep. Mike Simpson
 
 The full op-ed is available below.      
 
-The nation has watched as the failed efforts to replace former Speaker [[Kevin McCarthy|McCarthy]] resulted in a House full of chaos. This dysfunction stems from the selfish actions the eight so-called Republicans initiated when they voted to vacate our Republican Speaker of the House. Their actions paralyzed the House’s legislative business and left Republicans looking like we are incapable of governing.  
+The nation has watched as the failed efforts to replace former Speaker McCarthy resulted in a House full of chaos. This dysfunction stems from the selfish actions the eight so-called Republicans initiated when they voted to vacate our Republican Speaker of the House. Their actions paralyzed the House’s legislative business and left Republicans looking like we are incapable of governing.  
 
-Like the four percent of Republicans who voted with every Democrat to oust Speaker McCarthy, there’s a small percentage of Idaho “Republicans” out there who have made some claims regarding my votes against Congressman [[Jim Jordan]], and I’d like to set the record straight.   
+Like the four percent of Republicans who voted with every Democrat to oust Speaker McCarthy, there’s a small percentage of Idaho “Republicans” out there who have made some claims regarding my votes against Congressman Jim Jordan, and I’d like to set the record straight.   
 
-The [[Idaho Republican Party]] is pushing a false narrative that I am not representing my constituents based on not voting for Mr. Jordan. Perhaps Chairwoman [[Dorothy Moon]] has not lived in Idaho long enough to understand how important things like [[agriculture]], delisting [[wolves]], our nation’s [[military]], and the [[Idaho National Laboratory]] (INL) are for our state.  
+The Idaho Republican Party is pushing a false narrative that I am not representing my constituents based on not voting for Mr. Jordan. Perhaps Chairwoman Dorothy Moon has not lived in Idaho long enough to understand how important things like agriculture, delisting wolves, our nation’s military, and the Idaho National Laboratory (INL) are for our state.  
 
-I came to [[U.S. Congress]] to fight for Idahoans’ priorities and ensure our farmers, ranchers, INL workers, and most rural community members have a voice. As Idaho’s only appropriator, I have a unique opportunity to fight for Idaho priorities and bring your hard-earned tax dollars back to Idaho instead of going to blue states like [[California]] or [[New York]].   
+I came to U.S. Congress to fight for Idahoans’ priorities and ensure our farmers, ranchers, INL workers, and most rural community members have a voice. As Idaho’s only appropriator, I have a unique opportunity to fight for Idaho priorities and bring your hard-earned tax dollars back to Idaho instead of going to blue states like California or New York.   
 
 This raises the question: If Congressman Simpson claims to be conservative, why doesn’t he support his colleague Jim Jordan for Speaker? The answer is simple. I cannot – and will not – support a Speaker who has repeatedly taken positions against Idaho’s best interests. However, Chairwoman Moon made it clear this is the kind of Speaker she would stand behind.   
 
@@ -32,7 +28,7 @@ If I took Chairwoman Moon’s gracious advice, I would support a Speaker who has
 
 Chairwoman Moon may not be aware of the importance natural resources and public lands issues have in Idaho, but as Chairman of the House Interior and Environment Subcommittee, I can confirm the impact is significant.   
 
-I have worked hard to ensure the federal government fully funds the Payments in Lieu of Taxes ([[Payments in Lieu of Taxes|PILT]]) program. PILT is perhaps one of the most important programs for our rural counties in Idaho. Under this program, the federal government provides offsetting funds to local governments that lose property tax revenue due to the existence of tax-exempt federal lands in their jurisdiction. PILT allows counties like Custer County - a county that is 94% federal land - to receive critical funding that supports local schools, police departments, transportation [[infrastructure]], and health services. It’s important to note that Mr. Jordan repeatedly voted against this funding, yet Chairwoman Moon supports his bid for Speaker.  
+I have worked hard to ensure the federal government fully funds the Payments in Lieu of Taxes (PILT) program. PILT is perhaps one of the most important programs for our rural counties in Idaho. Under this program, the federal government provides offsetting funds to local governments that lose property tax revenue due to the existence of tax-exempt federal lands in their jurisdiction. PILT allows counties like Custer County - a county that is 94% federal land - to receive critical funding that supports local schools, police departments, transportation infrastructure, and health services. It’s important to note that Mr. Jordan repeatedly voted against this funding, yet Chairwoman Moon supports his bid for Speaker.  
 
 I have also worked to secure full funding for wildfire suppression activities, fought the massive, controversial, and misguided Obama-era Waters of the United States (WOTUS) rule that harmed our ranchers, farmers, and most rural communities, and pushed back against the Equal Access to Justice Act (EAJA). Mr. Jordan voted against these efforts time and time again.  
 

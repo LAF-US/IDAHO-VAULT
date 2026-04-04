@@ -1,2 +1,2 @@
 
-[[drag reading events]] group in [[Pocatello]] 
+drag reading events group in Pocatello 

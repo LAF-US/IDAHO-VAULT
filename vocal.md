@@ -1,2 +1,2 @@
-[[verbal]] 
-[[voiced]] 
+verbal 
+voiced 

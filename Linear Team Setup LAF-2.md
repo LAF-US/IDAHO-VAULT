@@ -1,7 +1,4 @@
 ---
-tags:
-  - administration/linear
-  - tasks/LAF-2
 updated: 2026-03-25
 status: in-progress
 ---

@@ -1,6 +1,3 @@
 ---
-tags:
-  - party/republican
-  - position/elected/precinct
 ---
-Local [[Idaho Republican Party]] [[precinct committeemen|precinct committee]] for [[Adams County]] 
+Local Idaho Republican Party precinct committee for Adams County 

@@ -1,16 +1,13 @@
 ---
-tags:
-  - media/articles
-  - 2023/06/28
 ---
-[[Audrey Dutton]], [[Idaho Capital Sun]]
+Audrey Dutton, Idaho Capital Sun
 ## Exchange ran into financial troubles after its leadership made funding deals that fell through, leading to bitter feud over contract
 
-Dr. Brian Crownover got a notification from the [[Idaho Health Data Exchange]] that his patient was in the emergency room. Crownover is a primary care doctor in the [[Boise]] area, but this patient was two hours away, in [[Twin Falls]].
+Dr. Brian Crownover got a notification from the Idaho Health Data Exchange that his patient was in the emergency room. Crownover is a primary care doctor in the Boise area, but this patient was two hours away, in Twin Falls.
 
-The patient had a complicated mental health history, so when Crownover saw the notification, he called the emergency department at the Twin Falls [[hospitals|hospital]]. He wanted to answer any questions the [[emergency room|ER]] team might have, but he also wanted to help coordinate the patient’s care — so that, if the hospital discharged them with a 14-day supply of a new prescription drug, Crownover could make sure the patient got in to see him by day 13.
+The patient had a complicated mental health history, so when Crownover saw the notification, he called the emergency department at the Twin Falls hospital. He wanted to answer any questions the ER team might have, but he also wanted to help coordinate the patient’s care — so that, if the hospital discharged them with a 14-day supply of a new prescription drug, Crownover could make sure the patient got in to see him by day 13.
 
-Because of cases like that, Crownover swears by the Idaho Health Data Exchange. He uses its electronic record-sharing technology at least two or three days a week in his practice, [[Treasure Valley Family Medicine]].
+Because of cases like that, Crownover swears by the Idaho Health Data Exchange. He uses its electronic record-sharing technology at least two or three days a week in his practice, Treasure Valley Family Medicine.
 
 Health care providers like Crownover can pull up records from the exchange to help fill gaps in a person’s recollection of their medical history. They can see what a surgeon documented during their patient’s hysterectomy 10 years ago. Crownover said the system retains valuable data, like a patient’s sleep apnea test results — a record whose absence will tank a health insurance claim for a CPAP machine replacement, or at least force the patient to repeat the expensive test at a sleep lab.
 
@@ -43,7 +40,7 @@ Every health data utility is different; some are part of a government apparatus,
 
 Because it is privately owned and operated, the IHDE doesn’t have to answer directly to legislators, the governor or his directors in the Department of Health and Welfare and Department of Insurance. The data exchange gives updates to the Idaho Health Quality Planning Commission but isn’t controlled by it.
 
-Still, the exchange was built with money from government programs, including Medicaid, and it holds millions of people’s medical records. The bankruptcy rattled members of the Idaho Legislature, and lawmakers in the 2023 legislative session ordered a look into the data exchange by the [[Office of Performance Evaluations]].
+Still, the exchange was built with money from government programs, including Medicaid, and it holds millions of people’s medical records. The bankruptcy rattled members of the Idaho Legislature, and lawmakers in the 2023 legislative session ordered a look into the data exchange by the Office of Performance Evaluations.
 
 
 
@@ -166,7 +163,7 @@ But, he wrote: “Banking crises and hackers are not a reason for projects to be
 
 Michael Ide, chair of the Idaho Health Data Exchange board of directors, declined to answer questions from the Sun about what happened in recent years leading up to the bankruptcy.
 
-“The IHDE leadership is working with the [[Office of Performance Evaluations]] and if you’d like information, they may be your resource,” Ide wrote in a brief response to the Sun — referring to the inquiry by OPE, which undertakes evaluations at the direction of the Idaho Legislature. The OPE report won’t be publicly available for several months.
+“The IHDE leadership is working with the Office of Performance Evaluations and if you’d like information, they may be your resource,” Ide wrote in a brief response to the Sun — referring to the inquiry by OPE, which undertakes evaluations at the direction of the Idaho Legislature. The OPE report won’t be publicly available for several months.
 
 “I’m not going to possibly muddy the community knowledge of the IHDE and make sure the OPE has the right info to report to the legislature,” Ide wrote in response to the Sun.
 

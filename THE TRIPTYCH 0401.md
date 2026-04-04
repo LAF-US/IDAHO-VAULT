@@ -146,7 +146,7 @@ To bridge these two, you could implement a **UTC Protocol** within your Obsidian
 |Component|Obsidian Element|Function in the Chorus|
 |---|---|---|
 |**X-Input**|Incoming `/Inbox` notes|Raw, uncoordinated "swarming" data.|
-|**Swarm Edge**|`[[Wikilinks]]`|The coordination between independent facts.|
+|**Swarm Edge**|`Wikilinks`|The coordination between independent facts.|
 |**Y-Standard**|`!ADMIN/Constitution.md`|The vertical "Truth" filter all data must meet.|
 |**The Chorus**|**Graph View Clusters**|The visual emergence of a story or "Truth."|
 

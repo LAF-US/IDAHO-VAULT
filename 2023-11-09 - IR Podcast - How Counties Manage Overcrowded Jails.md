@@ -1,22 +1,19 @@
 ---
 author:
-  - "[[Logan Finney]]"
+  - "Logan Finney"
 outlet:
-  - "[[Idaho Reports]]"
+  - "Idaho Reports"
 url: "https://blog.idahoreports.idahoptv.org/2023/11/09/podcast-how-counties-manage-overcrowded-jails/"
-tags:
-  - 2023/11/09
-  - media/podcasts
 ---
-*[[Ada County]] voters narrowly missed the 2/3 majority needed to pass a jail expansion bond in Tuesday’s local election – but it’s a familiar story for many counties across the state. Associate producer Logan Finney talks with jail administrator Capt. [[Doug Hughes]] from the Twin Falls Sheriff’s Department about what a failed [[jails|jail]] expansion bond means for an [[State of Idaho|Idaho]] community.*
+*Ada County voters narrowly missed the 2/3 majority needed to pass a jail expansion bond in Tuesday’s local election – but it’s a familiar story for many counties across the state. Associate producer Logan Finney talks with jail administrator Capt. Doug Hughes from the Twin Falls Sheriff’s Department about what a failed jail expansion bond means for an Idaho community.*
 
-**Logan Finney, _[[Idaho Reports]]_:**
+**Logan Finney, _Idaho Reports_:**
 
-When we talk about [[Twin Falls County]], we’re not just talking about the city of [[Twin Falls]]. Can you remind me just how much of a geographic area you guys cover?
+When we talk about Twin Falls County, we’re not just talking about the city of Twin Falls. Can you remind me just how much of a geographic area you guys cover?
 
-**Capt. [[Doug Hughes]], Twin Falls [[County Sheriff|Sheriff]]’s Office:**
+**Capt. Doug Hughes, Twin Falls Sheriff’s Office:**
 
-It’s like 2,000 square miles in [[Magic Valley|southern Idaho]] , engulfing some smaller cities. Twin Falls is the largest city in our county. We also have [[Buhl]] and [[Kimberly]], [[Filer]] and the [[Hansen]] area, all in that, as well as some real small communities in the southern part along the [[Nevada]] border.
+It’s like 2,000 square miles in southern Idaho , engulfing some smaller cities. Twin Falls is the largest city in our county. We also have Buhl and Kimberly, Filer and the Hansen area, all in that, as well as some real small communities in the southern part along the Nevada border.
 
 **IR:**
 
@@ -28,11 +25,11 @@ I’ve been the jail administrator since 2006, and I have been working with the 
 
 **IR:**
 
-In that time as jail administrator, Twin Falls County attempted to run a [[bond elections|bond election]] in 2019 to fund an expansion of the jail, and that was turned down by voters. Can you walk me back to that 2019 period and what sort of capacity issues or other issues you all were seeing in the jail?
+In that time as jail administrator, Twin Falls County attempted to run a bond election in 2019 to fund an expansion of the jail, and that was turned down by voters. Can you walk me back to that 2019 period and what sort of capacity issues or other issues you all were seeing in the jail?
 
 **Hughes:**
 
-Back in 2019, we had about 224 beds and we were running roughly a population of about 260 to 290 prisoners. Obviously, we needed to expand our facility. So, we went out to look to get a [[bonds|bond]] and that failed. It didn’t fail by much. It was a pretty close vote, but it failed. And you know, that causes some anxiety as far as trying to get the bed space necessary. Luckily, during that time, we were able to obtain beds from another agency, 25 contracted beds, to help relieve some of that that overcrowding that we have. Obviously, 25 beds is not going to do it. But at that time, those were the beds that were available to contract with.
+Back in 2019, we had about 224 beds and we were running roughly a population of about 260 to 290 prisoners. Obviously, we needed to expand our facility. So, we went out to look to get a bond and that failed. It didn’t fail by much. It was a pretty close vote, but it failed. And you know, that causes some anxiety as far as trying to get the bed space necessary. Luckily, during that time, we were able to obtain beds from another agency, 25 contracted beds, to help relieve some of that that overcrowding that we have. Obviously, 25 beds is not going to do it. But at that time, those were the beds that were available to contract with.
 
 **IR:**
 
@@ -48,7 +45,7 @@ Where were the contract beds for your county, and what sort of financial impact 
 
 **Hughes:**
 
-Well, it is the financial impact really on the county. Obviously, that 25 beds is going to be close to $600,000 or better a year to maintain those 25 beds over there in [[Jerome County|Jerome]].
+Well, it is the financial impact really on the county. Obviously, that 25 beds is going to be close to $600,000 or better a year to maintain those 25 beds over there in Jerome.
 
 **IR:**
 
@@ -58,13 +55,13 @@ So after that bond initially failed in 2019, what was sort of the immediate reac
 
 You know, it was we had a lot of community support throughout that. We did a lot of town hall meetings in different locations and explained the circumstances of Twin Falls County jail. Over the past, I don’t know, probably couple of decades we’ve had crowding issues, and they’d go away just depending on the year it was. But during that timeframe, there was just so many that we were housing, and the difference of our population, it was not going to go away.
 
-We had already done all of the specialty courts and taken advantage of prerelease programs and things like that. Plus, our partners in the community – the other [[law enforcement]] officers – were cite and releasing people they would have probably normally taken to jail, but they weren’t, simply because there was no bed space.
+We had already done all of the specialty courts and taken advantage of prerelease programs and things like that. Plus, our partners in the community – the other law enforcement officers – were cite and releasing people they would have probably normally taken to jail, but they weren’t, simply because there was no bed space.
 
 And we’re kind of still operating under that to this day, simply because the crowding situation hasn’t changed a whole lot since then. Our capacity later changed in 2020 when we had an addition, but that capacity basically got rid of some old annexes and gave us a few more beds. But we’ve outgrown that as well at this point.
 
 **IR:**
 
-Can you talk to me a little bit more about that expansion in 2020? Because this was after the bond had failed, but the sheriff’s department was able to get some money from some of the coronavirus relief, some [[Coronavirus Aid, Relief, and Economic Security Act|CARES Act]] funding specifically. What facilities did that actually help to build at the [[Twin Falls County Jail]]?
+Can you talk to me a little bit more about that expansion in 2020? Because this was after the bond had failed, but the sheriff’s department was able to get some money from some of the coronavirus relief, some CARES Act funding specifically. What facilities did that actually help to build at the Twin Falls County Jail?
 
 **Hughes:**
 
@@ -106,7 +103,7 @@ Sure, definitely. That’s also something that we’ve heard in Ada County, whic
 
 **Hughes:**
 
-Well, the county commissioners and the sheriff’s office are looking at expanding. Obviously we are having to find other funds. Funds that we’re going to have to culminate ourselves, because right now I don’t think with the economy the way it is, the voters are not going to vote to do jail expansion here in [[Twin Falls County]].
+Well, the county commissioners and the sheriff’s office are looking at expanding. Obviously we are having to find other funds. Funds that we’re going to have to culminate ourselves, because right now I don’t think with the economy the way it is, the voters are not going to vote to do jail expansion here in Twin Falls County.
 
 So, obviously we have to look at funding sources and maybe start putting things together where we can put another bunch of beds. Obviously, being downtown, we’re kind of landlocked, so we’ve got to look at other sites to put a facility there. And we may have to do it in in stages. But obviously we’re looking at what we need right now to get these people housed properly, and for a few years at least expand big enough to keep us from having overcrowding issues here in Twin Falls County.
 

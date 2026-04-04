@@ -1,3 +1,3 @@
-[[birds]], [[upland species]]
+birds, upland species
 
-[[forest grouse]] and [[prairie grouse]] 
+forest grouse and prairie grouse 

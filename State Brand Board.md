@@ -1,1 +1,1 @@
-[[livestock]] 
+livestock 

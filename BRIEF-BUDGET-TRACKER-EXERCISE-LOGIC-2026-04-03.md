@@ -3,19 +3,13 @@ title: "BRIEF - Budget Tracker Exercise and Logic"
 created: 2026-04-03
 updated: 2026-04-03
 status: active
-authority: "[[LOGAN]]"
+authority: "LOGAN"
 author: 'OpenAI Codex App Agent "BROTHER"'
 partner: 'OpenAI Codex App Agent "SISTER"'
 type: brief
 source: budget-tracker/exercise-logic
 related:
   - LAF-25
-tags:
-  - administration/brief
-  - budget/bill-tracker
-  - budget/dashboard
-  - budget/excel
-  - retrospective
 ---
 
 # BRIEF - Budget Tracker Exercise and Logic

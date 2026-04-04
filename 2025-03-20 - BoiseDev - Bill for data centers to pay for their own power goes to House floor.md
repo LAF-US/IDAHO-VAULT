@@ -1,7 +1,7 @@
 ---
 source: "https://boisedev.com/news/2025/03/14/data-power-costs/"
 author:
-  - "[[Margaret Carmel - BoiseDev Sr. Reporter]]"
+  - "Margaret Carmel - BoiseDev Sr. Reporter"
 published: 2025-03-20
 created: 2026-03-30
 date created: Monday, March 30th 2026, 3:34:11 pm

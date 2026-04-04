@@ -1,6 +1,3 @@
 ---
-aliases:
-  - pro-life
 ---
-
-opposition to [[abortion]] 
+opposition to abortion 

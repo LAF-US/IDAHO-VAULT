@@ -1,5 +1,3 @@
 ---
-tags:
-  - people
 ---
-[[Public Defense Commission]] executive director
+Public Defense Commission executive director

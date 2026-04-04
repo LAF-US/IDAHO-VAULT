@@ -1,5 +1,3 @@
 ---
-aliases:
-  - NICD
 ---
-Executive Director [[Keith Allred]]
+Executive Director Keith Allred

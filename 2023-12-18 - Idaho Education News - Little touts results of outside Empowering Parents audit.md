@@ -1,14 +1,11 @@
 ---
 author:
-  - "[[Kevin Richert]]"
+  - "Kevin Richert"
 outlet:
-  - "[[Idaho Education News]]"
+  - "Idaho Education News"
 URL: https://www.idahoednews.org/top-news/little-touts-results-of-outside-empowering-parents-audit/
-tags:
-  - media/articles
-  - 2023/12/18
 ---
-[[Governor|Gov.]] [[Brad Little]] gave the [[Empowering Parents]] education microgrant program a clean bill of health Monday, after the release of an independent [[audit]].
+Gov. Brad Little gave the Empowering Parents education microgrant program a clean bill of health Monday, after the release of an independent audit.
 
 The audit, ordered by Little, pinpointed less than $41,000 in improper purchases, a small fraction of the $50 million of the federal funding that went into the program.
 
@@ -32,6 +29,6 @@ The audit comes as Idahoans can apply for a new round of Empowering Parents gra
 
 So far, the state has received more than 22,000 student applications for this year’s grants, State Board Executive Director Matt Freeman said in Monday’s news release.
 
-Federal coronavirus aid funded the first year of Empowering Parents, and the $50 million in grants that were subject to the audit. This year, [[State of Idaho|Idaho]] is putting $30 million of state money into the grants.
+Federal coronavirus aid funded the first year of Empowering Parents, and the $50 million in grants that were subject to the audit. This year, Idaho is putting $30 million of state money into the grants.
 
-It will be up to Little and the [[Idaho Legislature|Legislature]] to decide whether to fund the program again after this year. The [[2024 legislative session|2024 Legislature]] convenes on Jan. 8.
+It will be up to Little and the Legislature to decide whether to fund the program again after this year. The 2024 Legislature convenes on Jan. 8.

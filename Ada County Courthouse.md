@@ -1,1 +1,1 @@
-[[magistrate court]] [[Ada County]] [[courthouses|courthouse]] 
+magistrate court Ada County courthouse 

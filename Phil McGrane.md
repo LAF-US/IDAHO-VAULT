@@ -1,10 +1,4 @@
 ---
-tags:
-  - party/republican
-  - people/elected/county/clerk
-  - people/candidate/county/clerk
-  - people/candidate/statewide/secretary
-  - people/elected/statewide/secretary
 ---
-[[Secretary of State]]
-- former [[Ada County]] [[County Clerk|Clerk]] 
+Secretary of State
+- former Ada County Clerk 

@@ -1,7 +1,5 @@
 ---
-tags:
-  - media/outlets
 outlet:
-  - "[[Lewiston Tribune]]"
+  - "Lewiston Tribune"
 ---
-[[Lewiston]] [[newspapers|newspaper]] 
+Lewiston newspaper 

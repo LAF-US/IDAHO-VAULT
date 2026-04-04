@@ -1,1 +1,1 @@
-[[County Sheriff]], [[Kootenai County]] [[jails|jail]]
+County Sheriff, Kootenai County jail

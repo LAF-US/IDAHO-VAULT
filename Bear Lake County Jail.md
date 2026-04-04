@@ -1,1 +1,1 @@
-[[County Sheriff]], [[Bear Lake County]] [[jails|jail]]
+County Sheriff, Bear Lake County jail

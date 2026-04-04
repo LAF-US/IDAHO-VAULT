@@ -1,12 +1,6 @@
 ---
-tags:
-  - people/elected
-  - people/elected/legislative
-  - party/republican
-  - people
 ---
+Residence: 
 
-Residence: [[]]
-
-[[Association of Idaho Cities]] executive director
-- Former [[House member|House member]] 
+Association of Idaho Cities executive director
+- Former House member 

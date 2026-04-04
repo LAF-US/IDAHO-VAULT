@@ -1,6 +1,3 @@
 ---
-tags:
-  - geography/land/state
-  - governments/state
 ---
-one of the [[United States of America]] 
+one of the United States of America 

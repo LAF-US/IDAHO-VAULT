@@ -1,1 +1,1 @@
-[[tobacco]] & [[opioids]] 
+tobacco & opioids 

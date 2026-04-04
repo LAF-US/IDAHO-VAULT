@@ -1,7 +1,3 @@
 ---
-aliases:
-  - Jared Boyce
-tags:
-  - people
 ---
-[[Patriot Front]] member, [[Utah]] resident
+Patriot Front member, Utah resident

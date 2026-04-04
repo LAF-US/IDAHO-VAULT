@@ -1,13 +1,4 @@
 ---
-tags:
-  - 2026/03/29
-  - today
-  - 83
-  - 96
-  - 85
-  - 1
-  - 2
-  - 7
 date created: Sunday, March 29th 2026, 10:48:49 am
 <<<<<<< Updated upstream
 date modified: Wednesday, April 1st 2026, 11:00:09 pm

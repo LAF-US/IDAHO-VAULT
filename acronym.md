@@ -1,1 +1,1 @@
-[[DEFINE]] [[term]] 
+DEFINE term 

@@ -1,10 +1,5 @@
 ---
-tags:
-  - people/elected
-  - party/republican
-  - people/elected/legislative
-  - people
 ---
-Residence: [[Burley]]
-- former [[House member]] for [[Legislative District 27]] before [[redistricting]]
-- [[doctors|doctor]] 
+Residence: Burley
+- former House member for Legislative District 27 before redistricting
+- doctor 

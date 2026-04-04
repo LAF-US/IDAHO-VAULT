@@ -1,6 +1,6 @@
-[[FRAMEWORK]] 
+FRAMEWORK 
 
 ---
 
-[[UNIFIED (US) SWARM]] codes designed and operated using [[Logan's Project & Protocols]].
-###### [["The world is quiet here."]]
+UNIFIED (US) SWARM codes designed and operated using Logan's Project & Protocols.
+###### "The world is quiet here."

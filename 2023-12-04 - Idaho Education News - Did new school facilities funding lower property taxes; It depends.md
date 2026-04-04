@@ -1,12 +1,9 @@
 ---
 author:
-  - "[[Ryan Suppe]]"
+  - "Ryan Suppe"
 outlet:
-  - "[[Idaho Education News]]"
+  - "Idaho Education News"
 URL: https://www.idahoednews.org/top-news/did-new-school-facilities-funding-lower-property-taxes-it-depends/
-tags:
-  - media/articles
-  - 2023/12/04
 ---
 Idaho school districts are reaping the benefits of a new state fund that helps them pay down bonds and levies, and many property taxpayers are seeing decreases in their bills.
 

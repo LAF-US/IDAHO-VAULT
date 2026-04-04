@@ -1,6 +1,3 @@
 ---
-tags:
-  - governments/city
-  - geography/land/city
 ---
-Home to [[Sun Valley ski resort]] 
+Home to Sun Valley ski resort 

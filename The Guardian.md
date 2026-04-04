@@ -1,5 +1,2 @@
 ---
-aliases:
-  - Guardian
-  - the Guardian
 ---

@@ -1,1 +1,1 @@
-[[math]] [[algorithm]] 
+math algorithm 

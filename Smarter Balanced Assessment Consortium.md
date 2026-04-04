@@ -1,5 +1,3 @@
 ---
-aliases:
-  - SBAC
 ---
-[[standardized testing]] based on [[Common Core]] standards 
+standardized testing based on Common Core standards 

@@ -1,1 +1,1 @@
-[[Idaho Freedom Foundation]] campaign apparatus 
+Idaho Freedom Foundation campaign apparatus 

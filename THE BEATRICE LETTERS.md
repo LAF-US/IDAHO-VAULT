@@ -1,4 +1,4 @@
-[[CANONICAL]] [[TEXTS]] requested by Logan.
+CANONICAL TEXTS requested by Logan.
 
 ---
-###### [["The world is quiet here."]]
+###### "The world is quiet here."

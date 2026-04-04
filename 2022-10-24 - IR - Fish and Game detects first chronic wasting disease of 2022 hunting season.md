@@ -1,28 +1,25 @@
 ---
-author: "[[Logan Finney]]"
-outlet: "[[Idaho Reports]]"
+author: "Logan Finney"
+outlet: "Idaho Reports"
 URL: https://blog.idahoreports.idahoptv.org/2022/10/24/fish-and-game-detects-first-chronic-wasting-disease-of-2022-hunting-season/
-tags:
-  - 2022/10/24
-  - media/articles
 ---
-The Idaho [[Department of Fish and Game]] has found seven positive samples of [[chronic wasting disease]] from [[elk]] and [[deer]] in the last two years. 
+The Idaho Department of Fish and Game has found seven positive samples of chronic wasting disease from elk and deer in the last two years. 
 
-The latest positive sample — which was the first one of the 2022 [[hunting]] season — came last week from a young [[white-tailed deer]] doe that was found dead along [[Slate Creek]] Road in [[Idaho County]]. According to Fish and Game, the animal was found by a department employee and its cause of death is unknown.
+The latest positive sample — which was the first one of the 2022 hunting season — came last week from a young white-tailed deer doe that was found dead along Slate Creek Road in Idaho County. According to Fish and Game, the animal was found by a department employee and its cause of death is unknown.
 
-That case brings a total of seven animals confirmed with CWD in Idaho: two [[mule deer]] bucks, two whitetail bucks, two whitetail doe, and one cow [[elk]]. All of the positive samples were taken in [[Game Management Unit 14]], which is between [[Grangeville]] and [[Riggins]].
+That case brings a total of seven animals confirmed with CWD in Idaho: two mule deer bucks, two whitetail bucks, two whitetail doe, and one cow elk. All of the positive samples were taken in Game Management Unit 14, which is between Grangeville and Riggins.
 
-Chronic wasting disease is a neurological disorder similar to [[mad cow disease]], caused by a prion – or pathogenic, misfolded protein – that affects the brain and nervous system of [[deer]], [[elk]], [[moose]] and [[caribou]]. Unlike mad cow disease, it is believed that CWD does not have a form transmissible to humans. 
+Chronic wasting disease is a neurological disorder similar to mad cow disease, caused by a prion – or pathogenic, misfolded protein – that affects the brain and nervous system of deer, elk, moose and caribou. Unlike mad cow disease, it is believed that CWD does not have a form transmissible to humans. 
 
-“We are a bit surprised to find our first positive sample in [[Game Management Unit 14|Unit 14]] – on the west side of the state – when we know we have it to the south in [[Utah]] and to the east in [[Wyoming]] and [[Montana]],” Idaho Fish and Game Director [[Ed Schriever]] told [[Idaho Reports]] in December 2021.
+“We are a bit surprised to find our first positive sample in Unit 14 – on the west side of the state – when we know we have it to the south in Utah and to the east in Wyoming and Montana,” Idaho Fish and Game Director Ed Schriever told Idaho Reports in December 2021.
 
-Fish and Game has designated Units 14 [[Game Management Unit 15|and 15]] in [[Central Idaho]] as a [[CWD Management Area]] with special rules for harvesting deer, elk or moose. The department is also operating sampling and test drop-off locations and check stations across the state.
+Fish and Game has designated Units 14 and 15 in Central Idaho as a CWD Management Area with special rules for harvesting deer, elk or moose. The department is also operating sampling and test drop-off locations and check stations across the state.
 
-Public feeding of deer, elk, or moose in a designated CWD management zone is prohibited. Transporting a carcass out of a CWD management zone is a [[misdemeanor]] punishable by up to three years [[hunting]] license revocation, up to $1,000 fine, and 6 months in jail. 
+Public feeding of deer, elk, or moose in a designated CWD management zone is prohibited. Transporting a carcass out of a CWD management zone is a misdemeanor punishable by up to three years hunting license revocation, up to $1,000 fine, and 6 months in jail. 
 
 Fish and Game has collected test samples from over 1,000 deer and elk this year, most of which are still pending. The department tested more than 2,500 animals for CWD in 2021, and has sampled more than 20,000 animals for the disease since 1997.
 
-Although there is no evidence to date that the disease can occur in humans, the [[U.S. Centers for Disease Control]] recommends against eating meat from an animal that tests positive for CWD.
+Although there is no evidence to date that the disease can occur in humans, the U.S. Centers for Disease Control recommends against eating meat from an animal that tests positive for CWD.
 
 **CWD MANAGEMENT ZONE**
 _Units 14-15 restrictions:

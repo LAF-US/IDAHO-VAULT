@@ -1,1 +1,1 @@
-[[magistrate court]] [[Blaine County]] [[courthouses|courthouse]] 
+magistrate court Blaine County courthouse 

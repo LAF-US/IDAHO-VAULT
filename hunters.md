@@ -1,1 +1,1 @@
-people who participate in [[hunting]] 
+people who participate in hunting 

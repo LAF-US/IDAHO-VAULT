@@ -1,6 +1,3 @@
 ---
-tags:
-  - people
-  - party/democratic
 ---
-wife of [[AJ Balukoff]] 
+wife of AJ Balukoff 

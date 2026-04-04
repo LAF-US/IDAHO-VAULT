@@ -1,1 +1,1 @@
-[[chronic wasting disease|CWD]] 
+CWD 

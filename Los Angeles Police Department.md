@@ -1,5 +1,3 @@
 ---
-aliases:
-  - LAPD
 ---
-[[Los Angeles]] [[police]] 
+Los Angeles police 

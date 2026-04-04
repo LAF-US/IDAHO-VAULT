@@ -1,5 +1,3 @@
 ---
-tags: []
 ---
-
-[[Ada County]] [[jails|jail]] [[County Sheriff]]
+Ada County jail County Sheriff

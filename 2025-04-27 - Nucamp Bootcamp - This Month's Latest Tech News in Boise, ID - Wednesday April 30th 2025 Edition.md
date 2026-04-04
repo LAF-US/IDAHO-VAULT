@@ -1,7 +1,7 @@
 ---
 source: "https://www.nucamp.co/blog/this-months-latest-tech-news-in-boise-id--wednesday-april-30th-2025-edition"
 author:
-  - "[[Ludo Fourrage]]"
+  - "Ludo Fourrage"
 published: 2025-04-27
 created: 2026-03-30
 ---

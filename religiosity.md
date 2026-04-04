@@ -1,5 +1,5 @@
-[[religion|faith]]
-[[belief]]
-[[values]]
+faith
+belief
+values
 
-[[FaVS News]] 
+FaVS News 

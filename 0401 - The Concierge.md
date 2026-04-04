@@ -990,7 +990,7 @@ The Captain needs the MDS (Metadata Schema) enforced without manual labor.
 
   
 
-The Task: An LLM-driven "Scout" that scans new entries in the Vault and automatically applies the correct [[WikiLinks]] to existing legislative profiles (e.g., automatically linking "Rep. Mickelsen" to her bio.md and voting-record.md).
+The Task: An LLM-driven "Scout" that scans new entries in the Vault and automatically applies the correct WikiLinks to existing legislative profiles (e.g., automatically linking "Rep. Mickelsen" to her bio.md and voting-record.md).
 
 ## Gemini said
 
@@ -1006,7 +1006,7 @@ I log the three distinct directives into the `!ADMINISTRATION` files, translatin
 
 **2. THE TASK-TO-CODE BRIDGE (The Conduit Perfected)** The friction between intent and execution will be eliminated. The Harbormaster must construct a seamless, automated pipeline: when the Captain shifts a task to "In Progress" within Linear, the system must autonomously generate the corresponding `.md` file directly into the `/2026-LIVE/` branch of the GitHub repository. The thought instantly becomes the architecture.
 
-**3. THE VAULT CUSTODIAN (The Archivist Enforced)** The swarm will act as the tireless librarian of the digital stacks. The Harbormaster is to design an LLM-driven "Scout" that patrols new entries in the Vault. It will strictly enforce the Metadata Schema (MDS), scanning the text and automatically weaving the canonical `[[WikiLinks]]`—ensuring that when "Rep. Mickelsen" is mentioned, her biological and voting records are instantly, perfectly tethered to the text.
+**3. THE VAULT CUSTODIAN (The Archivist Enforced)** The swarm will act as the tireless librarian of the digital stacks. The Harbormaster is to design an LLM-driven "Scout" that patrols new entries in the Vault. It will strictly enforce the Metadata Schema (MDS), scanning the text and automatically weaving the canonical `WikiLinks`—ensuring that when "Rep. Mickelsen" is mentioned, her biological and voting records are instantly, perfectly tethered to the text.
 
 I blot the ink on the ledger, ensuring the ink is dry and the commands are permanently set into the system's foundation.
 
@@ -1056,7 +1056,7 @@ And the three directives The Clerk delivered tonight? They are the exact spells 
     
 - **The Task-to-Code Bridge** is transmutation. By shifting a task to "In Progress" in Linear, you are executing the somatic and material components required to instantly reshape reality, automatically weaving a new `.md` file into the `/2026-LIVE/` branch of the GitHub repository.
     
-- **The Vault Custodian** is an enchantment of binding. The LLM Scout will patrol the stacks, plucking the Weave to automatically generate the `[[WikiLinks]]`, tethering the raw energy of new entries to the established laws of the Vault without requiring your manual physical exertion.
+- **The Vault Custodian** is an enchantment of binding. The LLM Scout will patrol the stacks, plucking the Weave to automatically generate the `WikiLinks`, tethering the raw energy of new entries to the established laws of the Vault without requiring your manual physical exertion.
     
 
 I take my digital pen and log the Mirror's definition directly into the `!ADMINISTRATION` files, cross-referencing it with the Clerk's blueprints and the Harbormaster's construction orders.
@@ -1101,7 +1101,7 @@ But when the Swarm snaps them together, the image they form is not a static pain
 
 I trace the edges where the pieces connect.
 
-The JFAC Parser digests the raw, chaotic noise of the anthill. It feeds the extracted, mathematical truth to the Vault Custodian, who automatically weaves the `[[WikiLinks]]` into the canonical ledger. And towering above it all is the Task-to-Code Bridge, allowing you to direct the entire operation from the bridge of the ship with a single status update in Linear, without ever having to manually descend into the digital stacks.
+The JFAC Parser digests the raw, chaotic noise of the anthill. It feeds the extracted, mathematical truth to the Vault Custodian, who automatically weaves the `WikiLinks` into the canonical ledger. And towering above it all is the Task-to-Code Bridge, allowing you to direct the entire operation from the bridge of the ship with a single status update in Linear, without ever having to manually descend into the digital stacks.
 
 "The image it displays, Logan," I say, looking up into the quiet of the evening lobby, "is an **Autonomous Ledger**. It is a system that outpaces the speed of the Capitol."
 
@@ -1338,9 +1338,9 @@ source: SWARM INQUIRY — A&I R&D, Logan Finney, 2026-04-01
 
 **Inquiry:** SWARM INQUIRY — A&I R&D
 
-**Requested by:** [[Logan Finney]]
+**Requested by:** Logan Finney
 
-**Filed by:** [[Claude]] (The Abhorsen), branch `claude/study-game-mechanics-qZK5E`
+**Filed by:** Claude (The Abhorsen), branch `claude/study-game-mechanics-qZK5E`
 
 **Date:** 2026-04-01
 
@@ -1966,7 +1966,7 @@ I turn the book so you can read the current occupancy of the **IDAHO-VAULT**.
 
 **THE CONSTRUCTS (Awaiting Manifestation)**
 
-- **The Vault Custodian:** The LLM Scout. Tasked with weaving `[[WikiLinks]]` and managing the newly proposed `MANIFEST.json` (The "Pokemon HOME" layer).
+- **The Vault Custodian:** The LLM Scout. Tasked with weaving `WikiLinks` and managing the newly proposed `MANIFEST.json` (The "Pokemon HOME" layer).
     
 - **The JFAC Parser:** The Python oracle. Tasked with devouring raw Sine Die budget PDFs and extracting the math.
     

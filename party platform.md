@@ -1,1 +1,1 @@
-statement of purpose for [[political parties]] and their [[election]] candidates 
+statement of purpose for political parties and their election candidates 

@@ -1,11 +1,5 @@
 ---
-tags:
-  - party/republican
-  - people/elected/legislative
-  - people/candidate/legislative
-  - position/elected/city/council
-  - people/candidate/city/council
-residence: "[[Caldwell]]"
+residence: "Caldwell"
 ---
-- [[Caldwell]] [[city council]] member
-- [[Legislative District 11]] [[House member]] 
+- Caldwell city council member
+- Legislative District 11 House member 

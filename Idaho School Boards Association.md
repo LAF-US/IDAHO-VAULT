@@ -1,5 +1,3 @@
 ---
-aliases:
-  - ISBA
 ---
-statewide [[school board]] association
+statewide school board association

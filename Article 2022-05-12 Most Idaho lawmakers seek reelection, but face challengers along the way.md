@@ -1,10 +1,6 @@
 ---
-tags:
-  - 2022/05/12
-  - 2022/election
-  - media/articles
 ---
-by [[Logan Finney]], [[Idaho Reports]]
+by Logan Finney, Idaho Reports
 
 Amid a handful of retirements and a few campaigns for executive branch, most sitting Idaho lawmakers are running for reelection.
 

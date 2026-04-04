@@ -2,9 +2,7 @@
 outlet:
 url: "https://browser.horse/?via=victor&gad_source=1&gad_campaignid=21209728058&gbraid=0AAAAA9mgT7H0vEz_jRJWAen-v44-iGyrm&gclid=Cj0KCQjwve7NBhC-ARIsALZy9HUHXGkCuxp_Ia0m9oyoux-E04aC0RbjLEFdOK6CTQKikxnxTh8f40IaAuYGEALw_wcB"
 author:
-  - "[[Eleanor McKeown]]"
-tags:
-  - media/articles
+  - "Eleanor McKeown"
 ---
 Horse Browser
 

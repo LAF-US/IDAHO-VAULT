@@ -1,1 +1,1 @@
-[[Christianity|Christian]] [[holy book]] 
+Christian holy book 

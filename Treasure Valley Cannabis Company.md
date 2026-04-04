@@ -1,5 +1,3 @@
 ---
-aliases:
-  - Treasure Valley Cannabis
 ---
-[[Ontario]], [[Oregon]] based [[cannabis]] company 
+Ontario, Oregon based cannabis company 

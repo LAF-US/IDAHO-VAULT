@@ -1,5 +1,4 @@
 ---
-tags: []
 ---
-[[Dustin Manwaring]], 2023-
-- [[Megan Blanksma]], -2022
+Dustin Manwaring, 2023-
+- Megan Blanksma, -2022

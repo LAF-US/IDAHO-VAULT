@@ -1,10 +1,5 @@
 ---
-tags:
-  - people/elected
-  - party/republican
-  - people/elected/legislative
-  - people
-residence: "[[Sandpoint]]"
+residence: "Sandpoint"
 ---
-- [[House member]] for [[Legislative District 1]] after [[redistricting]]
-- former [[firefighters|firefighter]]  
+- House member for Legislative District 1 after redistricting
+- former firefighter  

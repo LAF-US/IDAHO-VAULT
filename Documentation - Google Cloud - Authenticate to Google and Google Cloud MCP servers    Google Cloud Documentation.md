@@ -1,7 +1,7 @@
 ---
 source: "https://docs.cloud.google.com/mcp/authenticate-mcp#create-oauth-client"
 author:
-  - "[[Google]]"
+  - "Google"
 published:
 created: 2026-03-28
 date created: Saturday, March 28th 2026, 2:18:45 pm

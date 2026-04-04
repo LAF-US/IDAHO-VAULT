@@ -1,8 +1,3 @@
 ---
-aliases:
-  - Jewish
-  - Judeo
-  - Jew
-  - Jews
 ---
-[[religion]] - [[synagogues]] 
+religion - synagogues 

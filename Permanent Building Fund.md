@@ -1,3 +1,3 @@
-receives money from [[Idaho Lottery]] 
+receives money from Idaho Lottery 
 
-oversight by [[Permanent Building Fund Advisory Council]] 
+oversight by Permanent Building Fund Advisory Council 

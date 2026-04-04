@@ -1,1 +1,1 @@
-[[County Sheriff]], [[Butte County]] [[jails|jail]]
+County Sheriff, Butte County jail

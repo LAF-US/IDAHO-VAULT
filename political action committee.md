@@ -1,5 +1,2 @@
 ---
-aliases:
-  - PAC
-  - PACs
 ---

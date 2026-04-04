@@ -1,5 +1,3 @@
 ---
-tags:
-  - geography/water/river/dams
 ---
-[[dams|dam]] on the [[Snake River]] 
+dam on the Snake River 

@@ -1,9 +1,9 @@
-[[upland species]] for [[birds]] [[hunting]] 
-- [[turkey]]
-- [[pheasant]]
-- [[grouse]]
-- [[chukar]]
-- [[quail]]
-- [[crow]]
-- [[sandhill cranes]]
-- [[doves]]
+upland species for birds hunting 
+- turkey
+- pheasant
+- grouse
+- chukar
+- quail
+- crow
+- sandhill cranes
+- doves

@@ -1,9 +1,5 @@
 ---
-aliases:
-  - EastIdahoNews.com
-tags:
-  - media/outlets
 outlet:
-  - "[[East Idaho News]]"
+  - "East Idaho News"
 ---
-[[Eastern Idaho]] online news outlet based in [[Idaho Falls]] 
+Eastern Idaho online news outlet based in Idaho Falls 

@@ -1,6 +1,4 @@
 ---
-tags:
-  - category/facet/articles
 date: 1938-07-01
 ---
 # COMMITTEE PLANS MONOPOLY INQUIRY
@@ -20,7 +18,7 @@ WASHINGTON — *After several futile attempts to marshal Its twelve members, the
 
 *Mr. O'Mahoney reported that today's discussion, which lasted nearly two hours, covered in general terms the scope of the investigation and the methods of procedure. He said that it seemed to be the general opinion that public hearings would be held after the committee found out what data it could not get otherwise. The public hearings might begin around the first of September, he added.*
 
-*In response to inquiries, he declared that in today's discussion no specific industry was mentioned for investigation.* Before the session, however, [[William Borah|Senator Borah]], one of the three Senate members, told reporters that he believed an investigation of the oil industry should be an important part of the committee's work on the ground that gasoline prices were being increased "by the same fellows they prosecuted up in Wisconsin."
+*In response to inquiries, he declared that in today's discussion no specific industry was mentioned for investigation.* Before the session, however, Senator Borah, one of the three Senate members, told reporters that he believed an investigation of the oil industry should be an important part of the committee's work on the ground that gasoline prices were being increased "by the same fellows they prosecuted up in Wisconsin."
 
 ## Borah Demands Jailings
 
@@ -40,4 +38,4 @@ WASHINGTON — *After several futile attempts to marshal Its twelve members, the
 
 --- 
 
-- [[1938 Borah - Monopoly Committee]]
+- 1938 Borah - Monopoly Committee

@@ -1,6 +1,4 @@
 ---
-aliases:
-  - homosexual
 ---
-[[same-sex marriage]]
-[[LGBTQ+ issues 1]] 
+same-sex marriage
+LGBTQ+ issues 1 

@@ -1,32 +1,27 @@
 ---
-aliases:
-  - Students and educators show us what it’s like when Idaho fails to fund school repairs
 author:
-  - "[[Becca Savransky]]"
-  - "[[Asia Fields]]"
+  - "Becca Savransky"
+  - "Asia Fields"
 outlet:
-  - "[[Idaho Statesman]]"
-  - "[[ProPublica]]"
+  - "Idaho Statesman"
+  - "ProPublica"
 URL: https://www.idahostatesman.com/news/local/education/article282967503.html
-tags:
-  - media/articles
-  - 2023/12/15
 ---
-No other state spends less on school [[infrastructure]] per student than [[State of Idaho|Idaho]]. As a result, many students, especially those in rural [[school districts|districts]], deal with leaking ceilings, freezing classrooms and discolored drinking water. Some students have to miss school when the [[electricity|power]] or heat goes out. 
+No other state spends less on school infrastructure per student than Idaho. As a result, many students, especially those in rural districts, deal with leaking ceilings, freezing classrooms and discolored drinking water. Some students have to miss school when the power or heat goes out. 
 
-[[school districts]] often can’t build or repair buildings because [[State of Idaho|Idaho]] is one of only two states that require two-thirds of voters to approve a [[bonds|bond]]. Some districts have held [[bond elections]] several times only to see them fail despite having support from a majority of voters. But the [[Idaho Legislature|Legislature]] has been reluctant to make significant investments in facilities. Administrators say they don’t know how they’ll keep their schools running and worry that public officials don’t understand how bad the problems are. 
+school districts often can’t build or repair buildings because Idaho is one of only two states that require two-thirds of voters to approve a bond. Some districts have held bond elections several times only to see them fail despite having support from a majority of voters. But the Legislature has been reluctant to make significant investments in facilities. Administrators say they don’t know how they’ll keep their schools running and worry that public officials don’t understand how bad the problems are. 
 
-We heard from community members in 108 of [[State of Idaho|Idaho]]'s 115 [[school districts]]. 
+We heard from community members in 108 of Idaho's 115 school districts. 
 
-[[State of Idaho|Idaho]] hasn’t done an official assessment of school building conditions in 30 years. The [[Idaho Statesman]] and [[ProPublica]] tried to fill this gap with the help of people who know the system best. We surveyed all 115 public school district superintendents, and 91% responded. Every superintendent who responded said they have at least one facilities problem that they said poses a significant challenge, and 78% told us they have five or more. Then, we went to communities across the state. Thirty-nine schools took us on tours, often led by district maintenance directors. We also collected stories and photographs from 233 students, parents and educators, who described how the conditions affect their lives. 
+Idaho hasn’t done an official assessment of school building conditions in 30 years. The Idaho Statesman and ProPublica tried to fill this gap with the help of people who know the system best. We surveyed all 115 public school district superintendents, and 91% responded. Every superintendent who responded said they have at least one facilities problem that they said poses a significant challenge, and 78% told us they have five or more. Then, we went to communities across the state. Thirty-nine schools took us on tours, often led by district maintenance directors. We also collected stories and photographs from 233 students, parents and educators, who described how the conditions affect their lives. 
 
-[[2023-12-15 - Idaho Statesman & ProPublica- Idaho hasn’t assessed school buildings for 30 years; Students and educators helped us do it|Read more about our survey and outreach efforts.]] 
+Read more about our survey and outreach efforts. 
 
-“Communities show what is valuable by what we build,” said David Reinhart, [[West Ada School District]]’s chief operations officer. “When our students are in old and run-down buildings, it signals to them that what they do in school is of little value.” 
+“Communities show what is valuable by what we build,” said David Reinhart, West Ada School District’s chief operations officer. “When our students are in old and run-down buildings, it signals to them that what they do in school is of little value.” 
 
-“It makes school less enjoyable, harder to focus,” said Luke Sharon, a senior at [[Lake City High School]] in [[Coeur d'Alene|Coeur d’Alene]]. 
+“It makes school less enjoyable, harder to focus,” said Luke Sharon, a senior at Lake City High School in Coeur d’Alene. 
 
-“The kids see it,” said [[Amy Eslinger]], who graduated from [[Emmett High School]] in 2009. “I grew up knowing how bonds and levies worked but never saw them pass and watched myself and my peers suffer from it.” 
+“The kids see it,” said Amy Eslinger, who graduated from Emmett High School in 2009. “I grew up knowing how bonds and levies worked but never saw them pass and watched myself and my peers suffer from it.” 
 
 Here’s what students and educators across the state told us about the floods and leaks, overcrowding and inaccessibility, safety and outages, crumbling buildings and heating and cooling problems that impact every part of their day. 
 
@@ -135,7 +130,7 @@ As a result, the district has to transport students to nearby parks and the Univ
 
 At Heyburn, a teacher’s lounge is in an old locker room, where showerheads are still attached to the wall. Asia Fields/ProPublica 
 
-About half of superintendents said they have buildings that aren’t compliant with the [[Americans with Disabilities Act]]. 
+About half of superintendents said they have buildings that aren’t compliant with the Americans with Disabilities Act. 
 
 Schools built before the act have some flexibility in meeting the requirements. 
 
@@ -187,7 +182,7 @@ The Highland High School gym was ravaged by a fire. *(Pocatello Fire Department,
 >“Does not have a functioning fire control system.” 
 >David Sotutu, superintendent of New Plymouth School District until June, about the sprinklers in the district’s career technical education building 
 
-The boiler at Canyon Springs High School is covered in a material that contains asbestos fibers. *[[Sarah Miller|Sarah A. Miller]]/Idaho Statesman* 
+The boiler at Canyon Springs High School is covered in a material that contains asbestos fibers. *Sarah A. Miller/Idaho Statesman* 
 
 >“The middle school is loaded with asbestos.” 
 >Scott Davis, superintendent Kootenai School District 
@@ -214,7 +209,7 @@ Some districts have also had challenges making Wi-Fi work in their older buildin
 
 Jill Patton, principal of Pioneer Elementary School in the Salmon School District, said students have been kicked off the internet in the middle of state exams because of the building’s poor Wi-Fi. 
 
-At Caldwell’s Syringa Middle School, the breaker trips if a heater and the microwave are turned on at the same time. *[[Sarah Miller|Sarah A. Miller]]/Idaho Statesman* 
+At Caldwell’s Syringa Middle School, the breaker trips if a heater and the microwave are turned on at the same time. *Sarah A. Miller/Idaho Statesman* 
 
 ## CRUMBLING BUILDINGS 
 ### Deteriorating Foundations and Falling Bricks 
@@ -235,7 +230,7 @@ Caldwell Superintendent N. Shalene French said all 10 of her district’s school
 >“We know there is probably a crack in the foundation; however, with no money to fix it, we are left to just simply prepare for heavy rains as much as possible and to devote extra time to clean up efforts.” 
 >Megan Sindt, superintendent at Avery School District 
 
-Peeling paint and water-damaged ceiling tiles at Canyon Springs High School in the Caldwell School District. *[[Sarah Miller|Sarah A. Miller]]/Idaho Statesman*
+Peeling paint and water-damaged ceiling tiles at Canyon Springs High School in the Caldwell School District. *Sarah A. Miller/Idaho Statesman*
 
 A classroom in the nearly 90-year-old section of Lakeside High School in the Plummer-Worley School District. *Asia Fields/ProPublica*
 
@@ -253,7 +248,7 @@ Wires hanging from the ceiling and a deteriorating locker at Kamiah High School 
 
 Bricks have fallen out and cracked at Jefferson Middle School in the Caldwell School District. 
 
-They haven’t hit anyone, but it’s a potential hazard, said Bernie Carreira, the Caldwell maintenance director. [[Sarah Miller|Sarah A. Miller]]/Idaho Statesman 
+They haven’t hit anyone, but it’s a potential hazard, said Bernie Carreira, the Caldwell maintenance director. Sarah A. Miller/Idaho Statesman 
 
 A cracked and settled sidewalk caused by poor water drainage and corrosion at the base of a steel entry column at Stephensen Elementary in the Mountain Home School District. (Obtained by ProPublica and Idaho Statesman from a 2020 assessment by a structural engineering firm) 
 
@@ -303,35 +298,35 @@ Heat is also a problem when school starts in the late summer, educators say.
 >Robyn Bonner, head teacher at Peck Elementary in the Orofino School District
 >
 >“Melting in the hot conditions.” 
->Erin Heileman, teacher at Morningside Elementary School in the [[Twin Falls School District]]
+>Erin Heileman, teacher at Morningside Elementary School in the Twin Falls School District
 >
 >“It gets so hot in the afternoon that students start to put their head down. … It makes it difficult to teach kids.” 
 >Gerald Dalebout, social studies teacher at Moscow High School in the Moscow School District 
 
->“There is no ventilation in that school, and it does not meet any [[Environmental Protection Agency|EPA]] standards for fresh air intake or carbon dioxide levels, which were tested by the district.” 
->[[Ken Eldore]], facilities director until June 
->[[Priest River Junior High School]], West Bonner School District 
+>“There is no ventilation in that school, and it does not meet any EPA standards for fresh air intake or carbon dioxide levels, which were tested by the district.” 
+>Ken Eldore, facilities director until June 
+>Priest River Junior High School, West Bonner School District 
 
 Another administrator also told us about the levels, but interim superintendent Joseph Kren, who was hired in October, said he couldn’t find a record of a test. 
 
 >“Emmett Middle School lacks adequate ventilation, which I believe is a contributing factor to high levels of flu and illness.” 
 >Craig Woods, superintendent 
->[[Emmett Independent School District|Emmett School District]] 
+>Emmett School District 
 
 Emmett High School’s air quality is better than the middle school’s after upgrades, but is still “not up to today’s required air circulation standards,” according to its superintendent. 
 
-Emmett High School *[[Sarah Miller|Sarah A. Miller]]/Idaho Statesman* 
+Emmett High School *Sarah A. Miller/Idaho Statesman* 
 
 88% of superintendents we heard from mentioned that funding is preventing them from addressing facilities problems. 
 
-Districts have cobbled together funds to make some improvements over the years. Administrators said federal [[coronavirus|COVID-19]] relief dollars allowed them to replace expensive HVAC systems and roofs. But that money is nearly gone. 
+Districts have cobbled together funds to make some improvements over the years. Administrators said federal COVID-19 relief dollars allowed them to replace expensive HVAC systems and roofs. But that money is nearly gone. 
 
 Many superintendents said they felt hopeless about ever passing a bond to renovate or replace schools, especially since funding other educational needs is already a challenge. Districts also regularly ask voters to approve supplemental levies to cover some salaries and operating costs that go beyond state funding. 
 
-“Rural school districts can’t pass bonds to build new facilities,” said [[Todd Shumway]], superintendent of the [[North Gem School District]]. “It only takes a few to defeat a bond.” 
+“Rural school districts can’t pass bonds to build new facilities,” said Todd Shumway, superintendent of the North Gem School District. “It only takes a few to defeat a bond.” 
 
 Not passing a bond means districts worry about maintaining their buildings, but also about what would happen if a gas line shuts down, the boiler stops working or the sewer line overflows, all of which have forced the closure of Idaho schools before. And it means that as Idaho faces a teacher shortage, qualified educators can look across state borders at modern schools in better-funded districts — and decide to leave the state behind. 
 
-[[Kuna Joint School District|Kuna School District]] is building a second high school to relieve overcrowding, but it needs more funding to complete it. A [[bonds|bond]] measure to do this failed in March despite 56% of voters supporting it. District officials say they may have to consider going to school year-round or in split shifts if the student body continues to grow. *Asia Fields/ProPublica* 
+Kuna School District is building a second high school to relieve overcrowding, but it needs more funding to complete it. A bond measure to do this failed in March despite 56% of voters supporting it. District officials say they may have to consider going to school year-round or in split shifts if the student body continues to grow. *Asia Fields/ProPublica* 
 
 *Design and development by Anna Donlan, ProPublica, and contributions by David Newcomb, McClatchy. Illustrations by Pia Guerra for ProPublica. Photo editing by Peter DiCampo, ProPublica.*

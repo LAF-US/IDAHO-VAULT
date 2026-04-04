@@ -1,1 +1,1 @@
-[[County Sheriff]], [[Bonneville County]] [[jails|jail]]
+County Sheriff, Bonneville County jail

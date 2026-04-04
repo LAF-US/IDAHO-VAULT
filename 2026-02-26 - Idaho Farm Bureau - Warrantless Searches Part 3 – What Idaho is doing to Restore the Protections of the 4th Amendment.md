@@ -1,7 +1,7 @@
 ---
 source: "https://www.idahofb.org/news-room/posts/warrantless-searches-part-3-what-idaho-is-doing-to-restore-the-protections-of-the-4th-amendment/"
 author:
-  - "[[Idaho Farm Bureau]]"
+  - "Idaho Farm Bureau"
 published: 2026-02-26
 created: 2026-04-02
 ---

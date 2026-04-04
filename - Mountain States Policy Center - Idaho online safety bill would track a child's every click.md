@@ -2,10 +2,8 @@
 outlet:
 url: "https://www.mountainstatespolicy.org/post/idaho-online-safety-bill-would-track-a-child-s-every-click"
 author:
-  - "[[Chris Cargill]]"
-tags: ["media/articles"]
+  - "Chris Cargill"
 title: "- Mountain States Policy Center - Idaho online safety bill would track a child's every click"
-aliases: ["- Mountain States Policy Center - Idaho online safety bill would track a child's every click"]
 linter-yaml-title-alias: "- Mountain States Policy Center - Idaho online safety bill would track a child's every click"
 ---
 

@@ -1,6 +1,3 @@
 ---
-tags:
-  - governments/city
-  - geography/land/city
 ---
-Seat of [[Twin Falls County]]
+Seat of Twin Falls County

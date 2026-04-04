@@ -1,11 +1,9 @@
 ---
 source: "https://favs.news/faith-leaders-protest-idaho-laws-capitol-worship/"
 author:
-  - "[[Logan Finney]]"
+  - "Logan Finney"
 published: 2026-01-12
 created: 2026-03-27
-tags:
-  - 2026/01/12
 ---
 ## Faith leaders protest Idaho Legislature’s “misuse of Christianity” at Capitol worship service
 

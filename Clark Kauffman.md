@@ -1,10 +1,5 @@
 ---
-tags:
-  - party/republican
-  - people/elected
-  - people/elected/legislative
-  - people
-residence: "[[Filer]]"
+residence: "Filer"
 ---
 
-- former [[House member]] 
+- former House member 

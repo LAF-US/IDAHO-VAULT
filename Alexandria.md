@@ -1,7 +1,3 @@
 ---
-tags:
-  - governments/city
-  - geography/land/city
 ---
-
-[[Virginia]]
+Virginia

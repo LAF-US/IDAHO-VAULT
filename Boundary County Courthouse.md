@@ -1,1 +1,1 @@
-[[magistrate court]] [[Boundary County]] [[courthouses|courthouse]] 
+magistrate court Boundary County courthouse 

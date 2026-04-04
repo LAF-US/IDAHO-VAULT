@@ -1,7 +1,5 @@
 ---
-tags:
-  - media/outlets
 outlet:
-  - "[[Challis Messenger]]"
+  - "Challis Messenger"
 ---
-[[Challis]] [[newspapers|newspaper]] owned by [[Adams Publishing Group]]
+Challis newspaper owned by Adams Publishing Group

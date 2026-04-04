@@ -1,1 +1,1 @@
-Science, Technology, Engineering, Mathematics focused [[education]] 
+Science, Technology, Engineering, Mathematics focused education 

@@ -1,6 +1,3 @@
 ---
-aliases:
-  - Regence
-  - BlueShield
 ---
-[[health insurance]] 
+health insurance 

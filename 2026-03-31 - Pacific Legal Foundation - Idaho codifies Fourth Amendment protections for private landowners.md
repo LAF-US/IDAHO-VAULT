@@ -1,7 +1,7 @@
 ---
 source: "https://pacificlegal.org/press-release/idaho-codifies-fourth-amendment-protections-for-private-landowners/"
 author:
-  - "[[Ceanna Daniels]]"
+  - "Ceanna Daniels"
 published: 2026-03-31
 created: 2026-04-02
 ---

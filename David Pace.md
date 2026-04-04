@@ -1,6 +1,3 @@
 ---
-tags:
-  - people/journalists
-  - people
 ---
-[[Post Register]] 
+Post Register 

@@ -1,5 +1,3 @@
 ---
-tags:
-  - vault/stub
 ---
-[[magistrate court]] [[Fremont County]] [[courthouses|courthouse]] 
+magistrate court Fremont County courthouse 

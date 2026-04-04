@@ -1,1 +1,1 @@
-[[white supremacy]] 
+white supremacy 

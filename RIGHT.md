@@ -1,3 +1,3 @@
-[[LEFT]]
+LEFT
 
-[[WRONG]]
+WRONG

@@ -1,5 +1,3 @@
 ---
-tags:
-  - people/journalists
 ---
-[[Sandpoint Reader]] publisher 
+Sandpoint Reader publisher 

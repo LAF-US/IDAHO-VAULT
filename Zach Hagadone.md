@@ -1,6 +1,4 @@
 ---
-tags:
-  - people/journalists
-residence: "[[Sandpoint]]"
+residence: "Sandpoint"
 ---
-former [[Sandpoint Reader]] staff 
+former Sandpoint Reader staff 

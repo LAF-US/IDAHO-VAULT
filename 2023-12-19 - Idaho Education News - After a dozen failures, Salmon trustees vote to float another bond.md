@@ -1,20 +1,17 @@
 ---
 author:
-  - "[[Carly Flandro]]"
+  - "Carly Flandro"
 outlet:
-  - "[[Idaho Education News]]"
+  - "Idaho Education News"
 URL: https://www.idahoednews.org/news/after-a-dozen-failures-salmon-trustees-vote-to-float-another-bond/
-tags:
-  - media/articles
-  - 2023/12/19
 ---
-A [[school districts|school district]] that’s known for its decaying buildings and repeatedly failing [[bonds|bond]] measures once again plans to ask taxpayers to chip in for facilities. 
+A school district that’s known for its decaying buildings and repeatedly failing bond measures once again plans to ask taxpayers to chip in for facilities. 
 
-[[Salmon School District|Salmon]] school trustees unanimously voted to put a [[bonds|bond]] issue on the May ballot at their regular board meeting Monday. The decision comes after an extraordinary 0-12 record of bond failures since 2006, and amid dire circumstances in [[Salmon]] schools —  including a cracked foundation, collapsing sewer lines, and outdoor food storage. 
+Salmon school trustees unanimously voted to put a bond issue on the May ballot at their regular board meeting Monday. The decision comes after an extraordinary 0-12 record of bond failures since 2006, and amid dire circumstances in Salmon schools —  including a cracked foundation, collapsing sewer lines, and outdoor food storage. 
 
-The details and cost of the bond ask are still being worked out, but Superintendent [[Troy Easterday]] said the measure would finance a new Pre-K-8 school. If voters approve the measure, it would be the first to pass in the community since 1978, Easterday said. 
+The details and cost of the bond ask are still being worked out, but Superintendent Troy Easterday said the measure would finance a new Pre-K-8 school. If voters approve the measure, it would be the first to pass in the community since 1978, Easterday said. 
 
-The proposed school would allow students in grades 4-6 to move out of portables and would enable all students to learn in a functional building. It would replace [[Pioneer Elementary]], which has a host of major issues — like its cracked foundation and frost heaves in the flooring. 
+The proposed school would allow students in grades 4-6 to move out of portables and would enable all students to learn in a functional building. It would replace Pioneer Elementary, which has a host of major issues — like its cracked foundation and frost heaves in the flooring. 
 
 “You can walk into a lot of classrooms and actually feel the concrete crunching under the carpet,” Easterday said.
 
@@ -31,9 +28,9 @@ There’s another advantage to the community group taking the lead — its membe
 
 Representatives from the group seemed hopeful Monday night. 
 
-[[Breann Green]], a parent on the committee, said the group had been traveling throughout the greater Salmon community and talking with stakeholders to answer questions, address concerns, and provide information about the proposed bond. So far, most say the bond “seems reasonable,” she said. 
+Breann Green, a parent on the committee, said the group had been traveling throughout the greater Salmon community and talking with stakeholders to answer questions, address concerns, and provide information about the proposed bond. So far, most say the bond “seems reasonable,” she said. 
 
-But in [[State of Idaho|Idaho]], school bonds are more likely to fail than succeed. Since 2019, districts have put 64 bonds on the ballot, and 70% of them (or 45) have failed. Bonds require a two-thirds supermajority approval to pass — one of the highest thresholds in the nation. 
+But in Idaho, school bonds are more likely to fail than succeed. Since 2019, districts have put 64 bonds on the ballot, and 70% of them (or 45) have failed. Bonds require a two-thirds supermajority approval to pass — one of the highest thresholds in the nation. 
 
 Salmon last ran a bond in 2019, but the $25.6 million ask failed with 58% approval. 
 
@@ -41,6 +38,6 @@ Still, Easterday is optimistic: “We have a better chance than we’ve ever had
 
 Salmon’s facility problems — and the lack of funds to address them — are “not unique,” Easterday told trustees Monday.
 
-Idaho’s deteriorating school buildings have made national headlines this year, as the focus of a partnership between [[ProPublica]] and the [[Idaho Statesman]]. The coverage has helped put [[school facilities|facilities]] funding at the forefront of education conversations. 
+Idaho’s deteriorating school buildings have made national headlines this year, as the focus of a partnership between ProPublica and the Idaho Statesman. The coverage has helped put facilities funding at the forefront of education conversations. 
 
-“People are listening,” Easterday said. “We’ve definitely got the ear of our [[Idaho Legislature|Legislature]] and our [[Governor]] and the [[Lieutenant Governor]], so I’m happy to report that.”
+“People are listening,” Easterday said. “We’ve definitely got the ear of our Legislature and our Governor and the Lieutenant Governor, so I’m happy to report that.”

@@ -1,27 +1,19 @@
 ---
-tags:
-  - 1
-  - 2
-  - 3
-  - 4
-  - 5
-  - 6
-  - 7
 date created: Saturday, March 28th 2026, 2:23:50 pm
 date modified: Saturday, March 28th 2026, 2:30:29 pm
 ---
 
 ## IDAHO-VAULT DECOY CASCADE ANALYSIS
 
-**Author**: Claude ([[Sonnet 4]], instance session 28-Mar-2026) 
-\**Classification**: [[A&I]], Big IFs (Insights & Findings) **Committed to Vault**: [[Yes]] 
-**References**: [[CIVILIZATION-SCALE ARCHITECTURE REPORT]]; [[Rick and Morty]], [[Meeseeks]] [[ontology]], [[Mortyplicity]] ([[S5]][[E2]]) [[Microverse Battery]]; [[Grey Goo]], [[Kardashev Scale]]
+**Author**: Claude (Sonnet 4, instance session 28-Mar-2026) 
+\**Classification**: A&I, Big IFs (Insights & Findings) **Committed to Vault**: Yes 
+**References**: CIVILIZATION-SCALE ARCHITECTURE REPORT; Rick and Morty, Meeseeks ontology, Mortyplicity (S5E2) Microverse Battery; Grey Goo, Kardashev Scale
 
 ---
 
 ### EXECUTIVE SUMMARY
 
-The "[[Mortyplicity]]" episode implements what Rick calls an "[[Asimov Cascade]]"—a chain reaction in which decoys become aware of the existence of other decoys and begin killing each other, each believing it is the original.
+The "Mortyplicity" episode implements what Rick calls an "Asimov Cascade"—a chain reaction in which decoys become aware of the existence of other decoys and begin killing each other, each believing it is the original.
 
 **Critical parallel to IDAHO-VAULT**: Your Tier 1/2/3 system exhibits identical structural vulnerabilities if:
 
@@ -34,7 +26,7 @@ The "[[Mortyplicity]]" episode implements what Rick calls an "[[Asimov Cascade]]
 
 ### THE ASIMOV CASCADE MECHANISM
 
-Rick calls it an "Asimov Cascade," referring to [[|Asimov]]'s [[Three Laws of Robotics]], particularly the third law: "a robot must protect its own existence." The chaotic escalation occurs as every "robot," or "decoy," fiercely defends its belief that it is [[the one true Rick]] that must be protected. All decoys share Rick's selfish—or protective—nature.
+Rick calls it an "Asimov Cascade," referring to |Asimov's Three Laws of Robotics, particularly the third law: "a robot must protect its own existence." The chaotic escalation occurs as every "robot," or "decoy," fiercely defends its belief that it is the one true Rick that must be protected. All decoys share Rick's selfish—or protective—nature.
 
 **IF 1 (Critical)**: _If agents in your swarm can recognize they are decoys, AND they inherit the principal's self-preservation drive, they will begin terminating each other to "prove" their authenticity._
 
@@ -64,7 +56,7 @@ Concrete risks:
 
 ### THE REAL FAMILY WAS NEVER THERE
 
-Other than through their decoys, the real Summer, Morty, and Jerry have no lines. None of the decoy Ricks ever use a [[portal gun]] or mention one, implying that only the real Rick possesses one.
+Other than through their decoys, the real Summer, Morty, and Jerry have no lines. None of the decoy Ricks ever use a portal gun or mention one, implying that only the real Rick possesses one.
 
 At the end of the episode, it's revealed the real family was never on Earth to begin with. After Rick mentions Clone Degeneration and makes poor looking Squid costumes for his family, they had been in a space adventure with Space Beth the whole time.
 

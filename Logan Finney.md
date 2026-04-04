@@ -1,10 +1,7 @@
 ---
-tags:
-  - people
-  - people/journalists
 ---
-me! [[Bonner County|7B]] Boy, Born-and-Raised
+me! 7B Boy, Born-and-Raised
 
 Documentary Journalist
 
-reporter/producer for [[Idaho Reports]] at [[Idaho Public Television]] 
+reporter/producer for Idaho Reports at Idaho Public Television 

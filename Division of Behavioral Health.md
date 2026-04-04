@@ -1,5 +1,3 @@
 ---
-tags:
-  - governments/state/executive/departments/divisions
 ---
-[[Department of Health and Welfare]] 
+Department of Health and Welfare 

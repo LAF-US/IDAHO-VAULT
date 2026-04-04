@@ -1,17 +1,13 @@
 ---
-tags:
-  - 2020/01/27
-  - 2020/session
-  - bills
 cmte:
-  - "[[House Judiciary, Rules and Administration]]"
-  - "[[Senate Judiciary and Rules]]"
+  - "House Judiciary, Rules and Administration"
+  - "Senate Judiciary and Rules"
 ---
-Joint [[House Judiciary, Rules and Administration]] & [[Senate Judiciary and Rules]] presentation from IDOC
+Joint House Judiciary, Rules and Administration & Senate Judiciary and Rules presentation from IDOC
 
 “Public Safety Through Individual Success”
 
-[[Josh Tewalt]], Director of the Idaho [[Department of Correction]]
+Josh Tewalt, Director of the Idaho Department of Correction
 
 Overview
 
@@ -41,7 +37,7 @@ Revolving Door
 
 Unprecedented prison growth
 
-Aging [[infrastructure]] not meeting needs
+Aging infrastructure not meeting needs
 
 3/4 people entering IDOC prisons for new term commitments have failed on community supervision (not recidivism)
 
@@ -59,7 +55,7 @@ All of IDOC core programming will be available there,
 
 TX contract about 20% are afforded a job, in CO will be 75%
 
-Aging [[infrastructure]]; maintenance, alterations & repairs. [[Office of Performance Evaluations]] report tomorrow
+Aging infrastructure; maintenance, alterations & repairs. Office of Performance Evaluations report tomorrow
 
 $218M spent on prisons, $38M spent on in-community support (6x difference)
 
@@ -73,7 +69,7 @@ Creating reentry savings accounts (pending legislation this session)
 
 Transitional housing partnerships
 
-Increasing capacity: 160 CRC beds in Twin Falls (Oct 2020), 150 men’s prison beds (July 2020), 500 additional out-of-state beds (FY 2021), 150 Beds St Anthony Work Camp (FY 22), 130 Community Reentry Center (CRC) beds in [[North Idaho]]  
+Increasing capacity: 160 CRC beds in Twin Falls (Oct 2020), 150 men’s prison beds (July 2020), 500 additional out-of-state beds (FY 2021), 150 Beds St Anthony Work Camp (FY 22), 130 Community Reentry Center (CRC) beds in North Idaho  
 New capacity to realign with population needs later years
 
 Ways for legislators to be involved
@@ -82,4 +78,4 @@ Visit IDOC facilities, also talk to people who’ve gone through the system, wor
 
 Jury is still out on impact of Medicaid Expansion, but hopeful
 
-[[Idaho Correctional Industries]] – self funded, depending on leadership can be totally bottom-line profit driven or can be focused on inmates, opportunities & skills once folks are out of custody
+Idaho Correctional Industries – self funded, depending on leadership can be totally bottom-line profit driven or can be focused on inmates, opportunities & skills once folks are out of custody

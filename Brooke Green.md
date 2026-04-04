@@ -1,8 +1,4 @@
 ---
-tags:
-  - party/democratic
-  - people/elected/legislative
-  - people/candidate/legislative
-residence: "[[Boise]]"
+residence: "Boise"
 ---
-[[Legislative District 18|LD18]] [[House member]] from [[Boise County|Boise]]
+LD18 House member from Boise

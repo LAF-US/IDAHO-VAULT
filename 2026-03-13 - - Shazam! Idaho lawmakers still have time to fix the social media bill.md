@@ -1,14 +1,11 @@
 ---
 source: "https://www.mountainstatespolicy.org/post/shazam-idaho-lawmakers-still-have-time-to-fix-the-social-media-bill"
 author:
-  - "[[Chris Cargill]]"
+  - "Chris Cargill"
 published: 2026-03-13
 created: 2026-03-25
 title: 2026-03-13 - - Shazam! Idaho lawmakers still have time to fix the social media bill
-aliases: [2026-03-13 - - Shazam! Idaho lawmakers still have time to fix the social media bill]
 linter-yaml-title-alias: 2026-03-13 - - Shazam! Idaho lawmakers still have time to fix the social media bill
-tags:
-  - 2026/03/13
 ---
 
 Idaho lawmakers are right to take the harms of social media seriously. Parents across the state see how addictive design features, targeted advertising, and algorithm-driven feeds can affect children. The impulse behind [House Bill 542—the](https://legislature.idaho.gov/sessioninfo/2026/legislation/H0542/) [*Stop Harms from Addictive Social Media Act*](https://legislature.idaho.gov/sessioninfo/2026/legislation/H0542/) *(what lawmakers are calling the Shazam act)* —comes from a legitimate concern: protecting kids online.

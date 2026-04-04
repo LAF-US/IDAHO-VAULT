@@ -1,7 +1,7 @@
 ---
 source: "https://www.muckrock.com/api/"
 author:
-  - "[[MuckRock]]"
+  - "MuckRock"
 published:
 created: 2026-03-30
 ---

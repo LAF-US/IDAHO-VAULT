@@ -1,5 +1,3 @@
 ---
-aliases:
-  - book
 ---
-[[libraries]]
+libraries

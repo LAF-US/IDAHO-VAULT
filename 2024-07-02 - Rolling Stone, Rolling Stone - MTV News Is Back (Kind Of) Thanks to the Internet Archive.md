@@ -1,7 +1,7 @@
 ---
 source: "https://www.rollingstone.com/music/music-news/mtv-news-saved-internet-archive-1235051776/"
 author:
-  - "[[Jon Blistein]]"
+  - "Jon Blistein"
 published: 2024-07-02
 created: 2026-03-30
 ---

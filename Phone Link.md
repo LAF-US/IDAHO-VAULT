@@ -2,12 +2,6 @@
 title: "Phone Link"
 updated: 2026-04-02
 status: active
-tags:
-  - infrastructure/intake
-  - tools/phone-link
-aliases:
-  - Phone Link intake
-  - phone to laptop
 ---
 
 # Phone Link
@@ -18,7 +12,7 @@ aliases:
 
 ## What It Is
 
-[[Phone Link]] is the Windows built-in app that bridges an Android phone to a Windows laptop. Among other features, it syncs files transferred from the phone into a dedicated folder at `C:\Users\loganf\Downloads\Phone Link`.
+Phone Link is the Windows built-in app that bridges an Android phone to a Windows laptop. Among other features, it syncs files transferred from the phone into a dedicated folder at `C:\Users\loganf\Downloads\Phone Link`.
 
 This makes it a **reliable, zero-config intake vector** for getting phone-captured content (photos, screenshots, voice memos, documents) onto the laptop and into the vault.
 
@@ -72,6 +66,6 @@ python .github/scripts/phone_link_intake.py --git-add
 
 ## See Also
 
-- [[VAULT-CONVENTIONS]] — Vault structure and intake rules
+- VAULT-CONVENTIONS — Vault structure and intake rules
 - `INBOX/` — General intake staging area
 - `.github/scripts/phone_link_intake.py` — The intake automation script

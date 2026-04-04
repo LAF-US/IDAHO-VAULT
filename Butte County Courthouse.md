@@ -1,1 +1,1 @@
-[[magistrate court]] [[Butte County]] [[courthouses|courthouse]] 
+magistrate court Butte County courthouse 

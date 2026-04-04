@@ -1,7 +1,3 @@
 ---
-aliases:
-  - Mitchell Wagner
-tags:
-  - people
 ---
-[[Patriot Front]] member, [[Missouri]] resident 
+Patriot Front member, Missouri resident 

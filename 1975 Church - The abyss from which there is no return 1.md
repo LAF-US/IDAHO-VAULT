@@ -1,9 +1,7 @@
 ---
-tags:
-  - Category/Facet/Speeches
 date: 1975-08-18
 ---
-# Sen. [[Frank Church]], (D)-Idaho
+# Sen. Frank Church, (D)-Idaho
 ## Chairman, Select Committee on Intelligence Activities
 
 *In the need to develop a capacity to know what potential enemies are doing*, the United States government has perfected **a technological capability that enables us to monitor the messages that go through the air**. These messages are between ships at sea, they can be between military units in the field. *We have a very extensive capability of intercepting messages, wherever they may be in the airwaves*.

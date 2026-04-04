@@ -1,8 +1,6 @@
 ---
 date created: Sunday, March 29th 2026, 1:32:36 pm
 date modified: Sunday, March 29th 2026, 1:33:19 pm
-aliases:
-  - BELLHOPS
 purpose: "Narrative placeholder / test data — example bellhop coordination text"
 provenance: "Original content from IDAHO-VAULT session artifact; source/licensing status: original placeholder for session context"
 ---

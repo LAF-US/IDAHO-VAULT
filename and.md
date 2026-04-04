@@ -1,12 +1,7 @@
 ---
-aliases:
-  - as well as
-  - also
-  - "&"
-  - "[ & ]"
 ---
-[[syntax]]
+syntax
 
-[[CODEX]] 
+CODEX 
 
-[[The world is quiet here.]] -LAF
+The world is quiet here. -LAF

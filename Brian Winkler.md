@@ -1,7 +1,4 @@
 ---
-tags:
-  - party/republican
-  - people/candidate/city/council
-residence: "[[Coeur d'Alene]]"
+residence: "Coeur d'Alene"
 ---
-- 2023 [[Coeur d'Alene|CDA]] [[city council]] candidate endorsed by [[Kootenai County Republican Central Committee|KCRCC]], challenged [[Christie Wood]] 
+- 2023 CDA city council candidate endorsed by KCRCC, challenged Christie Wood 

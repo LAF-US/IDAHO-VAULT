@@ -1,11 +1,5 @@
 ---
-tags:
-  - people/candidate/city/mayor
-  - people/elected/city/mayor
-  - people/candidate/statewide/governor
-  - party/democratic
-  - party/republican
-residence: "[[Sandpoint]]"
+residence: "Sandpoint"
 ---
-- former [[Sandpoint]] [[mayor]] 
-- declared [[Idaho Democratic Party|Democratic]] candidacy for [[Governor]] but messed up filing, had to run as [[write-in campaign]] and lost [[primary election|primary]] to [[Stephen Heidt]] 
+- former Sandpoint mayor 
+- declared Democratic candidacy for Governor but messed up filing, had to run as write-in campaign and lost primary to Stephen Heidt 

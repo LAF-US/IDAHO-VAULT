@@ -1,1 +1,1 @@
-[[magistrate court]] [[Elmore County]] [[courthouses|courthouse]] 
+magistrate court Elmore County courthouse 

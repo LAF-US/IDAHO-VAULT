@@ -1,6 +1,3 @@
 ---
-tags:
-  - party/republican
 ---
-
-[[North Idaho]] [[Idaho Republican Party]] 
+North Idaho Idaho Republican Party 

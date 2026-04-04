@@ -1,14 +1,11 @@
 ---
 source: "https://www.mountainstatespolicy.org/post/what-are-the-next-steps-for-a-safe-online-experience-for-our-children"
 author:
-  - "[[Sebastian Griffin]]"
+  - "Sebastian Griffin"
 published: 2025-09-23
 created: 2026-03-25
 title: 2026-03-25 - - Next steps for ensuring a safe online experience for our children
-aliases: [2026-03-25 - - Next steps for ensuring a safe online experience for our children]
 linter-yaml-title-alias: 2026-03-25 - - Next steps for ensuring a safe online experience for our children
-tags:
-  - 2026/03/25
 ---
 
 ![](https://static.wixstatic.com/media/09a46f_8ca8d4b6e22445e0877b0eabf90afa45~mv2.png/v1/fill/w_925,h_616,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/09a46f_8ca8d4b6e22445e0877b0eabf90afa45~mv2.png)

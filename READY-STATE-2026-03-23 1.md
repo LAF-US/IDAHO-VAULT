@@ -1,8 +1,4 @@
 ---
-tags:
-  - administration/context
-  - administration/handoff
-  - administration/agents
 created: 2026-03-23
 source: commit
 status: draft
@@ -11,9 +7,9 @@ verified-through: 2026-03-23
 # READY STATE — VAULT CONTEXT PACKAGE (2026-03-23)
 
 **Author:** ChatGPT Codex
-**Role:** Direct-write support agent acting under [[LOGAN]]'s instruction
+**Role:** Direct-write support agent acting under LOGAN's instruction
 **Purpose:** Provide a verified, relay-ready context snapshot so additional vault agents can start from shared ground without re-discovering core repo state.
-**Audience:** [[Gemini]], [[Claude]], and any Logan-routed swarm agent that needs an on-record starting point.
+**Audience:** Gemini, Claude, and any Logan-routed swarm agent that needs an on-record starting point.
 
 ---
 
@@ -21,7 +17,7 @@ verified-through: 2026-03-23
 
 This file is a verified context snapshot for the current repo-visible state on 2026-03-23. It is meant to reduce repeated orientation work across agents.
 
-It is **not** an authorization document. [[LOGAN]] remains the sole decision-maker. Agents execute; they do not decide.
+It is **not** an authorization document. LOGAN remains the sole decision-maker. Agents execute; they do not decide.
 
 It is **not** a claim of total truth about Logan's broader system. It only summarizes what is directly visible in this repository and its tracked governance/context files.
 
@@ -29,8 +25,8 @@ It is **not** a claim of total truth about Logan's broader system. It only summa
 
 ## 2. GOVERNING ASSUMPTIONS
 
-1. [[LOGAN]] is the human supervisor and sole decision-maker.
-2. All agent-to-agent coordination flows through or is visible to [[LOGAN]].
+1. LOGAN is the human supervisor and sole decision-maker.
+2. All agent-to-agent coordination flows through or is visible to LOGAN.
 3. Public repo means on-the-record.
 4. Durable decisions belong in vault files; ephemeral chat is not the system of record.
 5. Agents must distinguish verified repo state from described-but-unverified conversational claims.
@@ -91,7 +87,7 @@ This means the vault already has the beginnings of a repeatable context-ingestio
 - Read the six controlling files listed above.
 - Treat repo text as canonical over paraphrased claims.
 - Before changing governance or automation files, compare work against current `AGENTS.md`, `PROTOCOL.md`, and branch-status/context docs.
-- If overlapping work is detected, FLAG and pause for [[LOGAN]].
+- If overlapping work is detected, FLAG and pause for LOGAN.
 
 ### If the agent DOES NOT have repo access
 

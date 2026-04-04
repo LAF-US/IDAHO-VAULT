@@ -1,9 +1,4 @@
 ---
-tags:
-  - people/elected/legislative
-  - people/elected
-  - party/republican
-  - people
-residence: "[[Grangeville]]"
+residence: "Grangeville"
 ---
-former [[Senate member]] for [[Legislative District 7|LD7]], lost [[primary election|primary]] to [[Cindy Carlson]] 
+former Senate member for LD7, lost primary to Cindy Carlson 

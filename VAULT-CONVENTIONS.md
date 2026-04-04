@@ -262,7 +262,7 @@ tags:
 
   - people/elected/legislative
 
-residence: "[[Boise]]"
+residence: "Boise"
 
 ```
 
@@ -274,9 +274,9 @@ residence: "[[Boise]]"
 
 ```yaml
 
-author: "[[Reporter Name]]"
+author: "Reporter Name"
 
-outlet: "[[Outlet Name]]"
+outlet: "Outlet Name"
 
 URL: https://...
 
@@ -306,9 +306,9 @@ aliases:
 
   - HB 24
 
-cmte: ["[[Committee Name]]"]
+cmte: ["Committee Name"]
 
-sponsor: ["[[Sponsor Name]]"]
+sponsor: ["Sponsor Name"]
 
 URL: https://legislature.idaho.gov/...
 
@@ -322,7 +322,7 @@ URL: https://legislature.idaho.gov/...
 
 ```yaml
 
-cmte: "[[Committee Name]]"
+cmte: "Committee Name"
 
 tags:
 
@@ -340,7 +340,7 @@ tags:
 
 
 
-Use `[[Full Name]]` for all internal links Ã¢â‚¬â€ people, places, organizations, bills, topics. This is how Obsidian builds the knowledge graph. Link densely in source documents.
+Use `Full Name` for all internal links Ã¢â‚¬â€ people, places, organizations, bills, topics. This is how Obsidian builds the knowledge graph. Link densely in source documents.
 
 
 
@@ -858,7 +858,7 @@ These are Windows reserved device names inherited from MS-DOS. They cannot exist
 When a stub or note would collide with a reserved name or a case-insensitive duplicate:
 
 1. Prefix the filename with `_` (e.g., `AUX.md` becomes `_AUX.md`)
-2. Add `aliases: [ORIGINAL]` to the YAML frontmatter so Obsidian wikilinks (`[[AUX]]`) still resolve
+2. Add `aliases: [ORIGINAL]` to the YAML frontmatter so Obsidian wikilinks (`AUX`) still resolve
 
 This preserves the connectome while respecting filesystem constraints.
 

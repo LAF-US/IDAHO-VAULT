@@ -1,5 +1,3 @@
 ---
-tags:
-  - geography/land/places/communities
 ---
-[[Elmore County]] 
+Elmore County 

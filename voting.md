@@ -1,1 +1,1 @@
-[[early voting]], [[absentee voting]], [[Election Day]] 
+early voting, absentee voting, Election Day 

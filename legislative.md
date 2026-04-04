@@ -1,1 +1,1 @@
-[[Idaho Legislature|Legislature]] [[and]] [[Idaho Legislature|legislators]] [[context]] [[window]] 
+Legislature and legislators context window 

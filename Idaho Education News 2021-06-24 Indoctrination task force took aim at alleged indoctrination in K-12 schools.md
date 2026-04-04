@@ -1,13 +1,10 @@
 ---
-tags:
-  - media/articles
-  - 2021/06/24
 ---
 https://www.idahoednews.org/news/indoctrination-task-force-pivots-to-k-12-in-hours-long-meeting/ 
 
-[[Blake Jones]], [[Idaho Education News]]
+Blake Jones, Idaho Education News
 
-The “[[Task Force to Examine Indoctrination in Idaho Education]]” reconvened Thursday — in a meeting marked by a rocky start, a tense middle and a slow end.
+The “Task Force to Examine Indoctrination in Idaho Education” reconvened Thursday — in a meeting marked by a rocky start, a tense middle and a slow end.
 
 Sound system issues put an early pause on the meeting — and co-chair Rep. Priscilla Giddings, R-White Bird, called the glitches an “intentional” move orchestrated by Idaho Public Television. Giddings, now running for lieutenant governor, had sought to defund Public TV during the 2021 legislative session, decrying what she called “partisan” content, the Idaho Press reported,
 
@@ -33,9 +30,9 @@ Midway through the meeting, as the task force discussed the State Board’s abse
 
 But one parent, Mark Hodges, complained of leftist teachings at Meridian’s Compass Public Charter School, after saying he has been the victim of discrimination. Growing up in Hawaii, he said he was refused service because he is white. At one point, Hodges defended racial profiling, saying, “some prejudice is not bad, and it’s well-founded.”
 
-Politics was never far from the surface Thursday. McGeachin, who is challenging incumbent Gov. Brad Little, said she invited candidates for state superintendent to participate Thursday. [[Branden Durst]], a former Democratic Idaho legislator and GOP superintendent candidate, was the only candidate to take up her offer.
+Politics was never far from the surface Thursday. McGeachin, who is challenging incumbent Gov. Brad Little, said she invited candidates for state superintendent to participate Thursday. Branden Durst, a former Democratic Idaho legislator and GOP superintendent candidate, was the only candidate to take up her offer.
 
-Other speakers included an intern for McGeachin, who discussed State Board policy, and [[Sonya Harris]] — a task force member and Blackfoot school trustee — who called on viewers to strike out perceived leftist indoctrination by getting involved in their local school boards.
+Other speakers included an intern for McGeachin, who discussed State Board policy, and Sonya Harris — a task force member and Blackfoot school trustee — who called on viewers to strike out perceived leftist indoctrination by getting involved in their local school boards.
 
 Live public comment was not accepted, as was the case at the task force’s first meeting. McGeachin explained that public comment will be accepted once the task force presents policy recommendations at future meetings.
 

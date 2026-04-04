@@ -1,6 +1,3 @@
 ---
-tags:
-  - party/republican
-  - people/elected/statewide/governor
 ---
-[[Governor]] of [[Utah]] 
+Governor of Utah 

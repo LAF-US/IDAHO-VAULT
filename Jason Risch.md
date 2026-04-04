@@ -1,7 +1,5 @@
 ---
-tags:
-  - people
 ---
-Residence: [[Boise]]
-- [[Risch Pisca, PLLC]]
-- son of [[Jim Risch]] 
+Residence: Boise
+- Risch Pisca, PLLC
+- son of Jim Risch 

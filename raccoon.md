@@ -1,1 +1,1 @@
-[[animals]], [[predatory species]]
+animals, predatory species

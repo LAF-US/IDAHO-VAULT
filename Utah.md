@@ -1,8 +1,3 @@
 ---
-tags:
-  - governments/state
-  - geography/land/state
-aliases:
-  - UT
 ---
-one of the [[United States of America]], borders [[State of Idaho|Idaho]] to the southeast
+one of the United States of America, borders Idaho to the southeast

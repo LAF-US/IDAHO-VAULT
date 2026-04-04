@@ -1,1 +1,1 @@
-[[IDACORP]] 
+IDACORP 

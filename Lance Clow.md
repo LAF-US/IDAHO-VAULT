@@ -1,10 +1,5 @@
 ---
-tags:
-  - people/elected/legislative
-  - party/republican
-  - people/elected
-  - people
 ---
-Residence: [[Twin Falls]]
+Residence: Twin Falls
 
-- Former [[House Education]] chairman 
+- Former House Education chairman 

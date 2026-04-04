@@ -1,11 +1,9 @@
 ---
-outlet: "[[Mountain States Policy Center]]"
+outlet: "Mountain States Policy Center"
 url: "https://www.mountainstatespolicy.org/post/idaho-is-preparing-students-and-educators-for-an-ai-driven-future"
 author:
-  - "[[Meg Goudy]]"
-tags: ["media/articles"]
+  - "Meg Goudy"
 title: "- Mountain States Policy Center - Idaho is preparing students and educators for an AI-driven future"
-aliases: ["- Mountain States Policy Center - Idaho is preparing students and educators for an AI-driven future"]
 linter-yaml-title-alias: "- Mountain States Policy Center - Idaho is preparing students and educators for an AI-driven future"
 ---
 

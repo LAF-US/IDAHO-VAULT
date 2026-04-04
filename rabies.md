@@ -1,1 +1,1 @@
-[[diseases|disease]] affecting [[animals]] like [[dogs]] ; transmissible to [[humans]] 
+disease affecting animals like dogs ; transmissible to humans 

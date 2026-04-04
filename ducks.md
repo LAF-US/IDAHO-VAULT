@@ -1,1 +1,1 @@
-[[birds]], [[waterfowl species]]
+birds, waterfowl species

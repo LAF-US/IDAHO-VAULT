@@ -1,14 +1,9 @@
 ---
-tags:
-  - people/elected
-  - party/democratic
-  - people/elected/legislative
-  - party/republican
-residence: "[[Boise]]"
+residence: "Boise"
 ---
 
-- Former [[West Bonner County School District]] superintendent
-- Former [[Idaho Freedom Foundation]] education policy analyst
-- 2022 [[Idaho Republican Party|Republican]] bid for [[Superintendent of Public Instruction]] 
-- Former [[Idaho Democratic Party|Democratic]] [[House member|House member]] and [[Senate member|Senate member]] 
+- Former West Bonner County School District superintendent
+- Former Idaho Freedom Foundation education policy analyst
+- 2022 Republican bid for Superintendent of Public Instruction 
+- Former Democratic House member and Senate member 
 

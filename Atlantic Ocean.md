@@ -1,5 +1,3 @@
 ---
-tags:
-  - geography/water/ocean
 ---
-[[East Coast]] 
+East Coast 

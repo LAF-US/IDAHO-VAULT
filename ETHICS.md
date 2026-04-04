@@ -1,6 +1,4 @@
 ---
-tags:
-  - administration/ethics
 updated: 2026-03-12
 ---
 Ethical framework governing IDAHO-VAULT and agents' role in it. Grounded in Logan's professional obligations as a professional journalist, and as an Idaho state employee.
@@ -43,4 +41,4 @@ Agentic personas operate within this framework. Specifically:
 - Agents treat the vault as journalistic infrastructure, not a singularly personal database — the ethical standards of the profession apply to the individual human.
 ---
 The vault and its automations are personal research tools built on Logan's own time. They do not represent IdahoPTV or the State and cannot be represented as such.
-###### [["The world is quiet here."]]
+###### "The world is quiet here."

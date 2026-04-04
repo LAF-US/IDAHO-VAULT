@@ -1,12 +1,9 @@
 ---
 author:
-  - "[[Zach Hagadone]]"
+  - "Zach Hagadone"
 outlet:
-  - "[[Sandpoint Reader]]"
+  - "Sandpoint Reader"
 URL: https://sandpointreader.com/woodward-will-seek-dist-1-senate-seat/
-tags:
-  - media/articles
-  - 2023/08/13
 ---
 *‘I focus on a broader picture using real Idaho values which benefit the majority’*
 
@@ -14,11 +11,11 @@ As candidates have filed to run for local office in the November election, Jim W
 
 Woodward served in the Dist. 1 position for two terms, from 2018-2022, until being bested by Herndon in a GOP primary marked by hitherto unprecedented negative campaigning — primarily from the latter, putting out numerous ads on various platforms labeling Woodward “Liberal Jim” and making claims about his record that Woodward spent much of the election cycle disproving.
 
-Still, Herndon won with 56.17% of the vote to Woodward’s 43.83%. Since then, Herndon has made more than a few headlines with his sponsorship and support of bills focused on hot-button partisan issues such as [[abortion]] access, school choice and education savings accounts, firearms regulation, voter ID and more.
+Still, Herndon won with 56.17% of the vote to Woodward’s 43.83%. Since then, Herndon has made more than a few headlines with his sponsorship and support of bills focused on hot-button partisan issues such as abortion access, school choice and education savings accounts, firearms regulation, voter ID and more.
 
 Herndon has yet to issue a formal announcement that he will run in 2024. However, in his announcement, Woodward took aim at Herndon’s first-term record, stating it “reflects neither real Idaho values nor embraces principles held dear by a majority of North Idahoans.”
 
-Woodward, who spent a 21-year career as a Navy submariner before retiring as a commander to operate his own marine excavation and construction business, added: “I spent years of my life underwater, in defense of the entire population of the [[United States of America|United States]], on a submarine ready to fight an actual war. Herndon’s culture wars are based on his personal interests. I focus on a broader picture using real Idaho values which benefit the majority.”
+Woodward, who spent a 21-year career as a Navy submariner before retiring as a commander to operate his own marine excavation and construction business, added: “I spent years of my life underwater, in defense of the entire population of the United States, on a submarine ready to fight an actual war. Herndon’s culture wars are based on his personal interests. I focus on a broader picture using real Idaho values which benefit the majority.”
 
 In an interview with the Reader, Woodward emphasized his own record of focusing on what he called “the business of the day,” including adequate education funding, transportation infrastructure and access to quality health care — the latter “especially with the legislation that’s passed in recent years.”
 

@@ -1,7 +1,5 @@
 ---
-tags:
-  - media/outlets
 outlet:
-  - "[[Spokesman-Review]]"
+  - "Spokesman-Review"
 ---
-[[Spokane]], [[Washington]] [[newspapers|newspaper]] - owned by [[Cowles Company]] 
+Spokane, Washington newspaper - owned by Cowles Company 

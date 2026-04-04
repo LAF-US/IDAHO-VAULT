@@ -1,1 +1,1 @@
-statewide [[parent teacher association]] organization 
+statewide parent teacher association organization 

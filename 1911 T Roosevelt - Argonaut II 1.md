@@ -1,9 +1,7 @@
 ---
-tags:
-  - Category/Facet/Articles
 date: 1911-04-19
 ---
->![[argonaut_04191911.jpg]]
+>!argonaut_04191911.jpg
 
 # The University Argonaut
 ## COL. ROOSEVELT WAS GUEST OF UNIVERSITY
@@ -12,7 +10,7 @@ BY ARTHUR P. BECKNER, '11
 
 Editor's Note
 
-[[Theodore Roosevelt]]
+Theodore Roosevelt
 
 ---
 
@@ -20,6 +18,6 @@ Editor's Note
 
 ---
 
-- [[1911 T Roosevelt - University of Idaho]] 
+- 1911 T Roosevelt - University of Idaho 
 
-![[Argonaut April 19 1911.pdf]]
+!Argonaut April 19 1911.pdf

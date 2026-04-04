@@ -6,24 +6,24 @@
 
 ## WHO IS "LOGAN"?
 
-**[[Logan Finney]]** ([[L]][[A]][[F]]) 
-- [[HUMAN]]: only [[authority]] directing the [[IDAHO-VAULT]] project and protocols
+**Logan Finney** (LAF) 
+- HUMAN: only authority directing the IDAHO-VAULT project and protocols
 - Current domicile: Boise Bench, Ada, ID
 - Self-identity: Documentary Journalist
 - Legal spouse: Aurora Gonzalez
 - Date of Birth: September 6th, 1997
-- Astrological signs: [[Virgo]]/[[Scorpio]]/[ ? ]
-- Hometown: [[Sandpoint]] born-and-raised
+- Astrological signs: Virgo/Scorpio/[ ? ]
+- Hometown: Sandpoint born-and-raised
 - My email: loganfinney27@gmail.com
 - Old emails: lfinney@imaxmail.net; [ ? ]
 - UI email: lfinney@alumni.uidaho.edu
 - PTV email: logan.finney@idahoptv.org
-- Employer: [[Idaho Public Television]] (IdahoPTV/IDPTV) / *Idaho Reports* (IR)
+- Employer: Idaho Public Television (IdahoPTV/IDPTV) / *Idaho Reports* (IR)
 ---
 
 ## LOGAN'S PROJECT
 
-**[[Definition]]: The [[unachievable]] [[end goal]] on the [[horizon]]. The [[threshold]] of the [[temple]].**
+**Definition: The unachievable end goal on the horizon. The threshold of the temple.**
 
 Logan is iterating on backend systems for management of Obsidian vault database:
 - Real-time legislative intelligence (Idaho Legislature bill tracking and data feeds)
@@ -33,24 +33,24 @@ Logan is iterating on backend systems for management of Obsidian vault database:
 
 **Automation of repetitive vault ingestion, research, publication, and my workflows.**
 
-Agentic integrations swarmed across multiple [[AI]] "[[assistant]]" [[persona]] [[systems]]:
-- [[Google]]: [[Gemini]], [[Assistant]], [[Drive]], [[Home]], [[NotebookLM]], [[Pinpoint]], [[Cloud]], and full [[Google ecosystem]] suite of web toolsets
-- [[Anthropic]]: [[Claude]]
-- [[OpenAI]]: [[ChatGPT]]
-- [[Spotify]]: [[DJ X]]
-- [[X]] / [[Xai]]: [[Grok]]
-- [[Perplexity]]: [[Perplexity]]
-- [[GitHub]]: [[Copilot]] (interface, repo coder)
-- [[Microsoft Copilot]] (mine), [[M365]] (work)
+Agentic integrations swarmed across multiple AI "assistant" persona systems:
+- Google: Gemini, Assistant, Drive, Home, NotebookLM, Pinpoint, Cloud, and full Google ecosystem suite of web toolsets
+- Anthropic: Claude
+- OpenAI: ChatGPT
+- Spotify: DJ X
+- X / Xai: Grok
+- Perplexity: Perplexity
+- GitHub: Copilot (interface, repo coder)
+- Microsoft Copilot (mine), M365 (work)
 - Fictive "personas" ; Others as identified
 
-[[CONSTITUTION|The goal]] is ambitious, and impossible to fully articulate — but incremental progress toward it drives at vaulted meaning-making.
+The goal is ambitious, and impossible to fully articulate — but incremental progress toward it drives at vaulted meaning-making.
 
 ---
 
 ## LOGAN'S PROTOCOLS
 
-[ ? ] - [[BOMBINATING BEAST]] is detected. Ingest Frameworks + Protocols to advance.
+[ ? ] - BOMBINATING BEAST is detected. Ingest Frameworks + Protocols to advance.
 
 ---
 ## KNOWN ACTIVE PROJECTS
@@ -61,7 +61,7 @@ Agentic integrations swarmed across multiple [[AI]] "[[assistant]]" [[persona]] 
 - **Constraints:** IDPTV as a state entity
 
 **Current state:**
-- Six lawmakers interviewed over five [[Google Record]] audio tapes: Bruce, Manwaring, Ward-Engelking, Wintrow, Woodward and Cook
+- Six lawmakers interviewed over five Google Record audio tapes: Bruce, Manwaring, Ward-Engelking, Wintrow, Woodward and Cook
 - More interview ideas: Rasor, Troy, [ ? ]
 - Quotes pending audio verification (hard gate before publication)
 - Contacts needed: Grow/Tanner
@@ -71,13 +71,13 @@ Agentic integrations swarmed across multiple [[AI]] "[[assistant]]" [[persona]] 
 - **Tier:** Direct write via PERMANENT: AUTHORITY: CODE
 - **Branch:** `claude/idaho-legislature-scraper-RI6Ku` (dormant, terminated)
 - **Workflows:** Daily bill scraping, GitHub Issues digest posting
-- **Outstanding:** Message re: [[Legislative Services Office|LSO]] data link
+- **Outstanding:** Message re: LSO data link
 
 ---
 
 ## PAUSED INITIATIVES
 
-### [[FāVS]] Freelancing Pitches
+### FāVS Freelancing Pitches
 - **Status:** Paused (awaiting Logan's duties)
 - **Reason:** IdahoPTV management directed
 - **Next step:** Work performance improves
@@ -134,5 +134,5 @@ As of Wednesday 2026-03-18 at [ ? ] UTC:
 
 Needs: reformatting and simplification - vault-wide survey and census and scanning and wiki-linking and overall vault-sorting.
 
-[[UNIFIED (US) SWARM]] designed and written in [[Logan's Project & Protocols]] syntaxic codes.
-###### [["The world is quiet here."]]
+UNIFIED (US) SWARM designed and written in Logan's Project & Protocols syntaxic codes.
+###### "The world is quiet here."

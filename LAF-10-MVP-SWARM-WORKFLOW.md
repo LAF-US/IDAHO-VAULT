@@ -1,7 +1,4 @@
 ---
-tags:
-  - operations/swarm
-  - workflow/mvp
 updated: 2026-03-25
 status: draft
 source: linear/LAF-10

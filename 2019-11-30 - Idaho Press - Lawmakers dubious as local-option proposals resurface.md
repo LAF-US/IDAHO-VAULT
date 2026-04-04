@@ -1,20 +1,17 @@
 ---
 author:
-  - "[[Betsy Russell]]"
+  - "Betsy Russell"
 outlet:
-  - "[[Idaho Press]]"
+  - "Idaho Press"
 URL: https://www.idahopress.com/news/local/lawmakers-dubious-as-local-option-proposals-resurface/article_edddb39f-b653-5e56-bfea-d5c599046166.html
-tags:
-  - media/articles
-  - 2019/11/30
 ---
 BOISE — Idaho counties and cities have been pleading with state lawmakers for decades to give them another way of funding basic local services and projects, from jails to courtrooms to roads, besides the much-hated property tax: Local-option sales taxes.
 
 In Idaho, only resort cities with populations of less than 10,000 are allowed to ask their local voters if they want to impose a local sales tax. Fourteen have done so, from Sun Valley to Sandpoint, and from Donnelly to Victor.
 
-But Boise can’t ask voters if they want to tack on another cent of sales tax to fund transit or other local priorities, like most major cities around the country do, according to the [[Tax Foundation]]. Other Idaho cities can’t turn to local sales taxes to fund fire stations or road improvements or police patrols. [[Canyon County]] can’t ask its citizens whether they’d be more supportive of funding a badly needed new jail if it could be paid for with [[sales tax|sales taxes]], rather than more [[property tax|property taxes]].
+But Boise can’t ask voters if they want to tack on another cent of sales tax to fund transit or other local priorities, like most major cities around the country do, according to the Tax Foundation. Other Idaho cities can’t turn to local sales taxes to fund fire stations or road improvements or police patrols. Canyon County can’t ask its citizens whether they’d be more supportive of funding a badly needed new jail if it could be paid for with sales taxes, rather than more property taxes.
 
-“I’m not hearing a lot of support for local option, unfortunately, from the Legislature,” said [[Seth Grigg]], executive director of the [[Idaho Association of Counties]]. “The voters, they’re feeling the pressure on the property tax side, and they’re just not inclined to pass a bond to pay for a jail. … Absent an alternative like a local option, I just don’t know how we’re going to build jails in the future.”
+“I’m not hearing a lot of support for local option, unfortunately, from the Legislature,” said Seth Grigg, executive director of the Idaho Association of Counties. “The voters, they’re feeling the pressure on the property tax side, and they’re just not inclined to pass a bond to pay for a jail. … Absent an alternative like a local option, I just don’t know how we’re going to build jails in the future.”
 
 **HISTORY OF DEBATE**
 
@@ -32,7 +29,7 @@ Among those voting against the bill was then-Sen. Gary Schroeder, R-Moscow, who 
 
 The bill passed and Kootenai County voters approved a local half-cent sales tax that helped fund a new jail. But the law was challenged in court, and in 2002, the Idaho Supreme Court overturned it as an unconstitutional “local and special law” forbidden by the state Constitution. Laws are supposed to apply statewide, or to a broad category of locations or groups.
 
-In 2003, [[North Idaho]] lawmakers joined with others from around the state to propose a new version that would apply to any county, but such a measure was a tough sell. After multiple tries, the bill that finally, narrowly passed allowed only a half-cent local sales tax for paying off debt for a jail, only with a two-thirds vote of county residents, and only for 10 years. Kootenai County tried multiple times to pass a local tax under the law, but couldn’t hit the two-thirds supermajority; Nez Perce County was the only Idaho county that successfully used the law to build a new jail.
+In 2003, North Idaho lawmakers joined with others from around the state to propose a new version that would apply to any county, but such a measure was a tough sell. After multiple tries, the bill that finally, narrowly passed allowed only a half-cent local sales tax for paying off debt for a jail, only with a two-thirds vote of county residents, and only for 10 years. Kootenai County tried multiple times to pass a local tax under the law, but couldn’t hit the two-thirds supermajority; Nez Perce County was the only Idaho county that successfully used the law to build a new jail.
 
 In 2009, the law expired and the Legislature refused to extend it.
 
@@ -48,7 +45,7 @@ Those range from prosecution of felony crimes to zoning regulations to solid was
 
 Tovey read from the opening lines of the 2003 bill, which expired on Dec. 31, 2009.
 
-“The legislature hereby finds that the increase in growth of the population of certain counties and the influx of great numbers of people traveling to those counties for sport, recreation and business have created a drain on the county [[infrastructure]] that is borne to an inequitable degree by the property owners of those counties,” he read. “The legislature finds that it is both equitable and desirable to shift this tax burden in part from the property owners of the county to those visitors partaking of the services of the county.”
+“The legislature hereby finds that the increase in growth of the population of certain counties and the influx of great numbers of people traveling to those counties for sport, recreation and business have created a drain on the county infrastructure that is borne to an inequitable degree by the property owners of those counties,” he read. “The legislature finds that it is both equitable and desirable to shift this tax burden in part from the property owners of the county to those visitors partaking of the services of the county.”
 
 “The legislature also finds that this objective must be subject to the approval and supervision of the voters of the county both through their elected officials and through direct input at the ballot box,” the law stated.
 
@@ -112,6 +109,6 @@ Longtime Idaho political observer and BSU emeritus professor Jim Weatherby said,
 
 Kootenai County Sheriff Ben Wolfinger noted that when his county built a $12 million jail expansion in 2000 using local-option sales taxes, it only took three and a half years to pay off. “It’s a huge benefit,” he said. “You’re having other people help pay for it.”
 
-He added, “Let’s face it, jails aren’t sexy. But they’re a critical part of [[infrastructure]] in a growing community.”
+He added, “Let’s face it, jails aren’t sexy. But they’re a critical part of infrastructure in a growing community.”
 
-Hall, the [[Twin Falls County|Twin Falls]] [[County Commissioners|county commissioner]], said, “We’re not asking the [[Idaho Legislature|Legislature]] to authorize us to impose a local option tax. We’re asking the Legislature to give us the authority to ask our taxpayers, our citizens, if they want to impose a [[local option sales tax|local option tax]]. … It would take the tax burden off the people who own property within our county.”
+Hall, the Twin Falls county commissioner, said, “We’re not asking the Legislature to authorize us to impose a local option tax. We’re asking the Legislature to give us the authority to ask our taxpayers, our citizens, if they want to impose a local option tax. … It would take the tax burden off the people who own property within our county.”

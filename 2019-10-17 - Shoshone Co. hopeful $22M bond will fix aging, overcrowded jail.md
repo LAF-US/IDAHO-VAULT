@@ -1,13 +1,10 @@
 ---
 outlet:
-  - "[[KREM]]"
+  - "KREM"
 url: https://www.krem.com/article/news/local/shoshone-co-hopeful-22m-bond-will-fix-aging-overcrowded-jail/293-da6573d0-395b-4032-ba1b-a5f7245ac0c9
 author:
-  - "[[Taylor Viydo]]"
+  - "Taylor Viydo"
 published: 2019-10-17
-tags:
-  - media/articles
-  - 2019/10/17
 ---
 The Shoshone County Jail was built in the early 1970s and has been showing increasing symptoms of wear and tear in recent years
 
@@ -15,7 +12,7 @@ WALLACE, Idaho — Silver Valley leaders are hopeful a $22 million bond will be 
 
 Area voters will have to sign off first, however.
 
-The public safety building in Wallace, which also contains the Shoshone County jail, was built in the early 1970s and has been showing increasing symptoms of wear and tear in recent years, according to Sheriff [[Mike Gunderson]]. Crowded jail cells and pods may also cause the jail to lose certification from the state’s sheriffs association.
+The public safety building in Wallace, which also contains the Shoshone County jail, was built in the early 1970s and has been showing increasing symptoms of wear and tear in recent years, according to Sheriff Mike Gunderson. Crowded jail cells and pods may also cause the jail to lose certification from the state’s sheriffs association.
 
 “The building is just deteriorating and falling apart,” said Gunderson on Thursday. 
 

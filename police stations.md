@@ -1,2 +1,2 @@
-[[cities]] 
-[[police]] 
+cities 
+police 

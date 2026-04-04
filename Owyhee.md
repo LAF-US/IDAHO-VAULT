@@ -1,5 +1,3 @@
 ---
-tags:
-  - geography/land/places/communities
 ---
-[[Nevada]] town on [[Duck Valley Indian Reservation]] 
+Nevada town on Duck Valley Indian Reservation 

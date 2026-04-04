@@ -1,8 +1,3 @@
 ---
-tags:
-  - party/republican
-aliases:
-  - College Republicans
-  - Idaho College Republicans
 ---
-College student affiliate of the [[Idaho Republican Party]]
+College student affiliate of the Idaho Republican Party

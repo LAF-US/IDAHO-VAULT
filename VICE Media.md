@@ -1,7 +1,5 @@
 ---
-tags:
-  - media/outlets
 outlet:
-  - "[[VICE Media]]"
+  - "VICE Media"
 ---
-[[Internet|online]] and [[television]] news entertainment company 
+online and television news entertainment company 

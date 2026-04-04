@@ -1,1 +1,1 @@
-[[magistrate court]] [[Washington County]] [[courthouses|courthouse]] 
+magistrate court Washington County courthouse 

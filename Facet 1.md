@@ -1,6 +1,4 @@
 ---
-tags:
-  - Category
 ---
 *A particular side or aspect*
 

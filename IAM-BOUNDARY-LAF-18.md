@@ -3,16 +3,12 @@ title: "IAM Boundary Table — LAF-18"
 created: 2026-04-01
 updated: 2026-04-01
 status: draft
-authority: "[[LOGAN]]"
+authority: "LOGAN"
 authors:
   - ChatGPT Codex
 linear_id: "LAF-18"
 type: implementation-note
 source: issue/LAF-18
-tags:
-  - administration/iam
-  - administration/google-cloud
-  - administration/linear
 generated: false
 ---
 

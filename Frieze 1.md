@@ -1,6 +1,4 @@
 ---
-tags:
-  - Category
 ---
 *Horizontal bands of sculpted figures that decorate a structure* 
 

@@ -1,8 +1,3 @@
 ---
-tags:
-  - federal
-aliases:
-  - Payments in Lieu of Taxes
-  - PILT
 ---
-[[property tax]] replacement for [[federal land]] 
+property tax replacement for federal land 

@@ -1,20 +1,17 @@
 ---
-tags:
-  - media/articles
-  - 2023/05/02
 ---
 https://idahocapitalsun.com/2023/05/02/new-coalition-seeks-to-end-idahos-closed-primary-elections/
 *Idahoans for Open Primaries will attempt to qualify a ballot initiative for the November 2024 election*
 
-[[Clark Corbin]], [[Idaho Capital Sun]] 
+Clark Corbin, Idaho Capital Sun 
 
-Organizers with [[Reclaim Idaho]] have teamed up with several other organizations to file a ballot initiative for the 2024 general election that is designed to replace Idaho’s closed primary elections with open primaries that any Idaho voter could participate in, regardless of political affiliation. 
+Organizers with Reclaim Idaho have teamed up with several other organizations to file a ballot initiative for the 2024 general election that is designed to replace Idaho’s closed primary elections with open primaries that any Idaho voter could participate in, regardless of political affiliation. 
 
 The initiative would also change Idaho general elections by creating a new instant runoff — also known as ranked choice — voting system. 
 
-The new coalition, called [[Idahoans for Open Primaries]], represents a collaboration between the Idaho Task Force of Veterans for Political Innovation, North Idaho Women, Represent US Idaho, the Hope Coalition and [[Reclaim Idaho]]. Members of the Idahoans for Open Primaries coalition filed the initiative Tuesday morning at the [[Idaho Capitol|Idaho State Capitol]] in Boise.
+The new coalition, called Idahoans for Open Primaries, represents a collaboration between the Idaho Task Force of Veterans for Political Innovation, North Idaho Women, Represent US Idaho, the Hope Coalition and Reclaim Idaho. Members of the Idahoans for Open Primaries coalition filed the initiative Tuesday morning at the Idaho State Capitol in Boise.
 
-Supporters of the open primary initiative oppose the [[Idaho Republican Party]]’s closed primary election, which is only open to Idaho voters who file paperwork affiliating with the [[Idaho Republican Party]]. 
+Supporters of the open primary initiative oppose the Idaho Republican Party’s closed primary election, which is only open to Idaho voters who file paperwork affiliating with the Idaho Republican Party. 
 
 “This is a simple, common-sense reform that will give us better elections and better leadership,” former Republican Speaker of the Idaho House Bruce Newcomb said in a written statement provided to the Idaho Capital Sun. Newcomb was one of the first 20 people to sign the open primary initiative petition. 
 
@@ -76,7 +73,7 @@ That means Idahoans for Open Primaries organizers will need to gather signatures
 
 If the open primary ballot initiative receives enough signatures to qualify for the November 2024 election, it would take a simple majority — more than 50% — of voters to approve a change to Idaho’s law. 
 
-Organizers with [[Reclaim Idaho]] will help with the signature gathering effort. The nonpartisan, nonprofit organization has mobilized more than 1,000 volunteers across the state to gather signatures and push for approval of two recent Idaho ballot initiatives: the successful 2018 Medicaid expansion, which 60.6% of Idaho voters approved, and the Quality Education Act in 2022, which [[Reclaim Idaho]] pulled from the ballot after the Idaho Legislature took action that would have repealed and replaced the Quality Education Act. Some political observers and Democratic legislators have credited that campaign by [[Reclaim Idaho]] with pushing the Idaho Legislature to increase education funding by an amount nearly identical to what was proposed for the ballot initiative.
+Organizers with Reclaim Idaho will help with the signature gathering effort. The nonpartisan, nonprofit organization has mobilized more than 1,000 volunteers across the state to gather signatures and push for approval of two recent Idaho ballot initiatives: the successful 2018 Medicaid expansion, which 60.6% of Idaho voters approved, and the Quality Education Act in 2022, which Reclaim Idaho pulled from the ballot after the Idaho Legislature took action that would have repealed and replaced the Quality Education Act. Some political observers and Democratic legislators have credited that campaign by Reclaim Idaho with pushing the Idaho Legislature to increase education funding by an amount nearly identical to what was proposed for the ballot initiative.
 
 #### **Will the Idaho Legislature oppose or be able to repeal the open primary initiative?**
 

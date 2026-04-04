@@ -1,1 +1,1 @@
-[[FATHER]]
+FATHER

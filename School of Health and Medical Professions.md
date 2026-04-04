@@ -1,6 +1,3 @@
 ---
-aliases:
-  - SHAMP
 ---
-
-[[University of Idaho]] [[medical school]] 
+University of Idaho medical school 

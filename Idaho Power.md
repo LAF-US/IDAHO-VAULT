@@ -1,1 +1,1 @@
-major [[electricity|energy]] [[utility]] that serves [[State of Idaho|Idaho]] and [[Oregon]] 
+major energy utility that serves Idaho and Oregon 

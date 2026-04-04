@@ -1,5 +1,3 @@
 ---
-tags:
-  - people
 ---
-[[white supremacist]] [[neo-Nazi]] 
+white supremacist neo-Nazi 

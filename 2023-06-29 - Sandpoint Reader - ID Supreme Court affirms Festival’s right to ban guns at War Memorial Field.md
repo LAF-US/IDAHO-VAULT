@@ -1,12 +1,9 @@
 ---
 author:
-  - "[[Zach Hagadone]]"
+  - "Zach Hagadone"
 outlet:
-  - "[[Sandpoint Reader]]"
+  - "Sandpoint Reader"
 URL: https://sandpointreader.com/id-supreme-court-affirms-festivals-right-to-ban-guns-at-war-memorial-field/
-tags:
-  - media/articles
-  - 2023/06/29
 ---
 *Unanimous decision dismisses appeal from Dist. 1 Sen. Scott Herndon, who promises ‘legislative solution’ to ‘loophole’ in Idaho gun protections*
 
@@ -40,7 +37,7 @@ Finally, the court wrote that Herndon et al. overshot their constitutional argum
 
 Furthermore, the court ruled, “The Appellants claim that the City and The Festival used a corrupt and illegal process to enter contracts and leases, which establishes a claim under 42 U.S.C. section 1985. As we have held, nothing in the City’s conduct in granting The Festival a lease violated the City’s vast discretion. Thus, the process was not ‘illegal.’”
 
-In a statement issued June 22, the city of Sandpoint expressed its satisfaction with the ruling and “look[ed] forward to a successful Festival at Sandpoint concert season next month,” according to Mayor [[Shelby Rognstad]].
+In a statement issued June 22, the city of Sandpoint expressed its satisfaction with the ruling and “look[ed] forward to a successful Festival at Sandpoint concert season next month,” according to Mayor Shelby Rognstad.
 
 The Festival will celebrate its 40th annual season Thursday, July 27-Sunday, Aug. 6, bringing artists from around the country to War Memorial Field. In previous statements, Festival officials have said that without a no-weapons policy, many musical acts would be contractually obligated not to perform at the venue — potentially threatening the estimated $3.8 million or more that the event generates in regional economic activity. The city in its statement went further, adding that in addition the Festival is responsible for more than $1.7 million gross regional product and more than $1 million in total compensation along with 37 full-time-equivalent jobs. 
 

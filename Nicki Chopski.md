@@ -1,5 +1,3 @@
 ---
-tags:
-  - people
 ---
-bureau chief of [[Bureau of Health Professions]]  
+bureau chief of Bureau of Health Professions  

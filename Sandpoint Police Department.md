@@ -1,5 +1,3 @@
 ---
-aliases:
-  - Sandpoint Police
 ---
-[[Sandpoint]] [[police]] 
+Sandpoint police 

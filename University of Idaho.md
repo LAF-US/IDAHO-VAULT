@@ -1,9 +1,4 @@
 ---
-tags:
-  - category/frieze
-aliases:
-  - U of I
-  - UIdaho
 ---
 Land grant university in Moscow.
 

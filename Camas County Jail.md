@@ -1,1 +1,1 @@
-[[County Sheriff]], [[Camas County]] [[jails|jail]]
+County Sheriff, Camas County jail

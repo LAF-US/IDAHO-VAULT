@@ -1,7 +1,4 @@
 ---
-tags:
-  - people
 ---
-
-[[Idaho Freedom Foundation|IFF]] & [[Idaho Freedom PAC]]
-[[Freedom Bros Podcast]] 
+IFF & Idaho Freedom PAC
+Freedom Bros Podcast 

@@ -1,1 +1,1 @@
-[[County Sheriff]], [[Gem County]] [[jails|jail]]
+County Sheriff, Gem County jail

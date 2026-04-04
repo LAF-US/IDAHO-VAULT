@@ -3,7 +3,7 @@ title: "HANDOFF - Codex Registry Repair"
 created: 2026-04-02
 updated: 2026-04-02
 status: active
-authority: "[[LOGAN]]"
+authority: "LOGAN"
 authors:
   - ChatGPT Codex
 type: handoff
@@ -11,10 +11,6 @@ source: issue/LAF-28
 related:
   - LAF-25
   - LAF-28
-tags:
-  - administration/handoff
-  - administration/control-plane
-  - administration/registry
 ---
 
 # HANDOFF - Codex Registry Repair

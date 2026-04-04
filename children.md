@@ -1,2 +1,2 @@
-[[parents]]
-[[families]]
+parents
+families

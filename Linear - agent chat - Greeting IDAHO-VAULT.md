@@ -1,6 +1,4 @@
 ---
-tags:
-  - general
 date created: Sunday, March 29th 2026, 10:46:05 am
 date modified: Thursday, April 2nd 2026, 8:38:05 am
 status: session-artifact-with-extracted-governance

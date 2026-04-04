@@ -1,1 +1,1 @@
-[[MOTHER]]
+MOTHER

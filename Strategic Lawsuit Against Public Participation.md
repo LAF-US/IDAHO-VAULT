@@ -1,1 +1,1 @@
-[[anti-SLAPP]] 
+anti-SLAPP 

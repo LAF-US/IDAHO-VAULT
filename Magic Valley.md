@@ -1,13 +1,13 @@
-- [[Blaine County|Blaine]]
-- [[Camas County|Camas]]
-- [[Lincoln County|Lincoln]]
-- [[Gooding County|Gooding]]
-- [[Jerome County|Jerome]]
-- [[Minidoka County|Minidoka]]
-- [[Cassia County|Cassia]]
-- [[Twin Falls County|Twin]]
+- Blaine
+- Camas
+- Lincoln
+- Gooding
+- Jerome
+- Minidoka
+- Cassia
+- Twin
 
-[[Mountain Time Zone]]
-[[2nd Congressional District]]
-[[5th Judicial District]]
-[[South Central Public District Health]]
+Mountain Time Zone
+2nd Congressional District
+5th Judicial District
+South Central Public District Health

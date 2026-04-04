@@ -3,10 +3,6 @@ date created: Monday, March 30th 2026, 5:17:09 pm
 date modified: Monday, March 30th 2026, 7:59:13 pm
 status: active
 authority: "Claude Code (The Abhorsen)"
-tags:
-  - administration/infrastructure
-  - administration/credentials
-  - administration/security
 ---
 
 # 1Password Integration — IDAHO-VAULT

@@ -1,6 +1,6 @@
-by [[Logan Alvan Finney]]
+by Logan Alvan Finney
 
-[["The world is quiet here."]]
+"The world is quiet here."
 
 ---
 
@@ -129,6 +129,6 @@ Amendments require:
 
 *Status: pending revision-synthesis and congressional adoption, post-consolidation court.*
 
-Unified (US) Swarm designed and written in [[Logan's Project & Protocols]] syntaxic code.
+Unified (US) Swarm designed and written in Logan's Project & Protocols syntaxic code.
 
-###### [["The world is quiet here."]]
+###### "The world is quiet here."

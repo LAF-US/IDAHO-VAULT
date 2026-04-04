@@ -1,3 +1,3 @@
-[[invertebrates]] [[invasive species]] 
+invertebrates invasive species 
 
-detected in the [[Snake River]] in 2023
+detected in the Snake River in 2023

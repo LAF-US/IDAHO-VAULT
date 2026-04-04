@@ -1,16 +1,13 @@
 ---
 author:
-  - "[[Clark Corbin]]"
+  - "Clark Corbin"
 outlet:
-  - "[[Idaho Capital Sun]]"
+  - "Idaho Capital Sun"
 URL: https://idahocapitalsun.com/2021/10/06/a-look-inside-idahos-unredacted-mcgeachin-task-force-files/
-tags:
-  - media/articles
-  - 2021/10/06
 ---
 ### **Most comments push back against the “indoctrination” task force, which met at the Idaho Statehouse in Boise**
 
-The overwhelming majority of the 3,602 comments Idaho Lt. Gov. [[Janice McGeachin]] received regarding her education task force were critical of the task force or pushed back against McGeachin’s allegations of indoctrination in schools. 
+The overwhelming majority of the 3,602 comments Idaho Lt. Gov. Janice McGeachin received regarding her education task force were critical of the task force or pushed back against McGeachin’s allegations of indoctrination in schools. 
 
 More than 2,500 of the comments either criticized the task force, opposed McGeachin personally or denied that schools and teachers are indoctrinating students, according to an Idaho Capital Sun analysis of the 3,602 comments McGeachin’s office released last week. 
 
@@ -26,7 +23,7 @@ The unredacted comments, which McGeachin released to the Idaho Capital Sun on Th
 
 Other news organizations and groups have previously reported on the records. Idaho Education News received 100 of the 3,602 comments and reported on them July 28. 
 
-In August, the [[Foundation for Individual Rights and Expression|Foundation for Individual Rights in Education]], an organization that opposes limits on [[academic freedom]] and [[First Amendment]] rights, obtained the partially redacted records [[FIRE 2021-08-05 Idaho education task force may threaten academic freedom|and wrote about the comments]].
+In August, the Foundation for Individual Rights in Education, an organization that opposes limits on academic freedom and First Amendment rights, obtained the partially redacted records and wrote about the comments.
 
 Hundreds of comments accused McGeachin of using her political power to run a “witch hunt” in the same vein as former U.S. Sen. Joseph McCarthy’s accusations of widespread Communist infiltration in the 1950s. 
 
@@ -92,4 +89,4 @@ McGeachin is asking taxpayers to cover $50,000 worth of her legal costs, Boise S
 
 The Idaho Capital Sun has filed a public records request with McGeachin’s office seeking records of her legal expenses and was awaiting a response as of this article’s publication. 
 
-_Idaho Capital Sun editor [[Christina Lords]], senior reporter [[Audrey Dutton]] and reporter [[Kelcie Moseley-Morris]] contributed to this report._
+_Idaho Capital Sun editor Christina Lords, senior reporter Audrey Dutton and reporter Kelcie Moseley-Morris contributed to this report._

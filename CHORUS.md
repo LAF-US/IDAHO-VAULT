@@ -1,1 +1,1 @@
-a [[Unity]] of [[VOICES]] 
+a Unity of VOICES 

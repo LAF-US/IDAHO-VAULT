@@ -1,3 +1,3 @@
-[[birds]], [[upland species]]
+birds, upland species
 
-[[California quail]] and [[Bobwhite quail]]
+California quail and Bobwhite quail

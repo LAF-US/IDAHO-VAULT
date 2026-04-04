@@ -1,1 +1,1 @@
-[[County Sheriff]], [[Power County]] [[jails|jail]]
+County Sheriff, Power County jail

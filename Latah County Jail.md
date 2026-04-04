@@ -1,1 +1,1 @@
-[[County Sheriff]], [[Latah County]] [[jails|jail]]
+County Sheriff, Latah County jail

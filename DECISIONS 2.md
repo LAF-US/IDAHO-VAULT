@@ -2,11 +2,8 @@
 title: DECISIONS routing shim
 updated: 2026-04-02
 status: active
-authority: "[[LOGAN]]"
+authority: "LOGAN"
 source: root/DECISIONS.md
-tags:
-  - administration/shim
-  - administration/routing
 ---
 
 # `!/DECISIONS.md`

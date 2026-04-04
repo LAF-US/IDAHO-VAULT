@@ -1,6 +1,3 @@
 ---
-tags:
-  - governments/city
-  - geography/land/city
 ---
-Seat of [[Gem County]]
+Seat of Gem County

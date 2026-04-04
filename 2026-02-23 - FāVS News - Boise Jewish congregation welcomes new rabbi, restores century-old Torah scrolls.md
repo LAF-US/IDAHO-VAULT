@@ -1,11 +1,9 @@
 ---
 source: "https://favs.news/boise-jewish-congregation-welcomes-new-rabbi-restores-century-old-torah-scrolls/"
 author:
-  - "[[Logan Finney]]"
+  - "Logan Finney"
 published: 2026-02-23
 created: 2026-03-27
-tags:
-  - 2026/02/23
 ---
 Date:
 

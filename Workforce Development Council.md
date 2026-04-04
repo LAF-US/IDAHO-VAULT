@@ -1,10 +1,7 @@
 ---
-tags:
-  - governments/state/executive
 ---
+Independent advisory body under the Governor.
 
-Independent advisory body under the [[Governor]].
+Executive Director: Wendi Secrist
 
-Executive Director: [[Wendi Secrist]]
-
-Programs: [[Idaho Launch]], [[Next Steps Idaho]]
+Programs: Idaho Launch, Next Steps Idaho

@@ -1,1 +1,1 @@
-brand name of [[opioid reversal]] drug [[naloxone]] in nasal spray form 
+brand name of opioid reversal drug naloxone in nasal spray form 

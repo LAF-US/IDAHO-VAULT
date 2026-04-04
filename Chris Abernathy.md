@@ -1,7 +1,4 @@
 ---
-tags:
-  - party/democratic
-  - people/elected/legislative
-residence: "[[Pocatello]]"
+residence: "Pocatello"
 ---
-Residence: [[Pocatello]] 
+Residence: Pocatello 

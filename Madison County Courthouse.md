@@ -1,1 +1,1 @@
-[[magistrate court]] [[Madison County]] [[courthouses|courthouse]] 
+magistrate court Madison County courthouse 

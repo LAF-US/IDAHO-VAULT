@@ -1,16 +1,11 @@
 ---
-aliases:
-  - Idaho hasn’t assessed school buildings for 30 years. Students and educators helped us do it
 author:
-  - "[[Becca Savransky]]"
-  - "[[Asia Fields]]"
+  - "Becca Savransky"
+  - "Asia Fields"
 outlet:
-  - "[[Idaho Statesman]]"
-  - "[[ProPublica]]"
+  - "Idaho Statesman"
+  - "ProPublica"
 URL: https://www.idahostatesman.com/news/local/education/article283069803.html
-tags:
-  - media/articles
-  - 2023/12/15
 ---
 It’s no secret that Idaho’s school buildings have problems. The state’s superintendents, maintenance directors, teachers and students see the leaks, pack into crowded hallways and feel the extreme cold and heat throughout the year. But state officials don’t know the extent of the issues because the last full review of school buildings was completed in 1993. 
 
@@ -51,7 +46,7 @@ We also asked superintendents about how they would rate the physical conditions 
 
 We heard from 233 students, parents, teachers and others. In April, we published a callout. We wanted to talk to those most likely to be affected by facilities issues, such as people with disabilities or those in the most rural and remote corners of the state — where communities may not come across our online publications. 
 
-Dozens of [[Facebook]] and [[Reddit]] moderators supported our efforts to reach groups of educators, parents or residents in certain parts of Idaho. We spoke about our efforts at a meeting of the state’s special education advisory panel and handed out flyers at a conference for school administrators. The Idaho Education Association shared our callout with 10,000 members and asked for 200 flyers to put up in schools. Students and recent graduates told their friends about the callout while the Idaho Business for Education and the American Institute of Architects Idaho sent it to their members. Some local media outlets also helped spread the word, including Ben Reed with 99.1 La Perrona, who shared the Spanish translation of our callout. 
+Dozens of Facebook and Reddit moderators supported our efforts to reach groups of educators, parents or residents in certain parts of Idaho. We spoke about our efforts at a meeting of the state’s special education advisory panel and handed out flyers at a conference for school administrators. The Idaho Education Association shared our callout with 10,000 members and asked for 200 flyers to put up in schools. Students and recent graduates told their friends about the callout while the Idaho Business for Education and the American Institute of Architects Idaho sent it to their members. Some local media outlets also helped spread the word, including Ben Reed with 99.1 La Perrona, who shared the Spanish translation of our callout. 
 
 Teachers helped us hear from students. Moscow High School English teacher Rachel Lyon shared essays from her students. Ninth grade student Natasha Gartstein wrote, “The Moscow High School has been in use for nearly 90 years. That’s before the Kardashians, Michael Jackson, and even the Beatles.” 
 

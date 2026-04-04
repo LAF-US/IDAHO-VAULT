@@ -1,1 +1,1 @@
-[[magistrate court]] [[Bannock County]] [[courthouses|courthouse]] 
+magistrate court Bannock County courthouse 

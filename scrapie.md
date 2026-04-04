@@ -1,1 +1,1 @@
-[[spongiform encephalopathies]] in [[sheep]] and [[goats]] 
+spongiform encephalopathies in sheep and goats 

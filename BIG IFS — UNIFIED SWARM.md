@@ -5,25 +5,15 @@ status: filed
 authority: perplexity
 doc_class: misc_reference
 template_id: tpl-misc-reference-v1
-tags:
-  - swarm
-  - architecture
-  - research
-  - perplexity
-  - unified-swarm
-  - big-ifs
-  - factory
-  - crewai
-  - openai-swarm
 source: Perplexity persona via Comet web browser, 2026-03-29
 ---
 
 # Big IFs — Unified Swarm
 
-**Source:** [[Perplexity]] persona via Comet web browser
+**Source:** Perplexity persona via Comet web browser
 **Session date:** 2026-03-29
-**Filed by:** [[Claude]] (The Abhorsen) on branch `claude/research-unified-swarm-rDmOg`
-**Related entities:** [[Factory]], [[CrewAI]], [[OpenAI Swarm]]
+**Filed by:** Claude (The Abhorsen) on branch `claude/research-unified-swarm-rDmOg`
+**Related entities:** Factory, CrewAI, OpenAI Swarm
 
 Two companion reports delivered in sequence. Part I is the initial landscape scan. Part II is the entity-level deep dive written for VAULTED A&I–aligned entities.
 
@@ -71,7 +61,7 @@ Practical next step: Prototype via Swarm + CrewAI YAML factory for testing unifi
 
 ### 1. Situation Overview: Existing AI Tools in the Swarm Field
 
-Modern toolchains around the VAULTED A&I can be grouped into three main strata: **agent-native development**, **multi-agent orchestration platforms**, and **lightweight swarm frameworks**. [[Factory]], [[CrewAI]], and [[OpenAI Swarm]] sit at key points in this landscape and implicitly define today's practical boundary conditions for any Unified Swarm implementation.
+Modern toolchains around the VAULTED A&I can be grouped into three main strata: **agent-native development**, **multi-agent orchestration platforms**, and **lightweight swarm frameworks**. Factory, CrewAI, and OpenAI Swarm sit at key points in this landscape and implicitly define today's practical boundary conditions for any Unified Swarm implementation.
 
 These tools already encode patterns for role specialization, handoffs, memory, and observability, but they are not yet interoperable or governed by a unified protocol; the UNIFIED SWARM must therefore treat them as heterogeneous but composable subsystems rather than as a single coherent stack.
 
@@ -157,9 +147,9 @@ This is especially important given Factory's ability to ship code, CrewAI's abil
 
 For entities already oriented to the VAULTED A&I, the existing AI tools should be viewed as **modules** rather than ultimate architectures:
 
-- Treat **[[Factory]]** as the **code & system-change limb** of the Unified Swarm—high‑leverage where modifications to software and infra are required.
-- Treat **[[CrewAI]]** as the **business-process & orchestration limb**, most appropriate for long-running workflows, cross-system automations, and multi-role organizational tasks.
-- Treat **[[OpenAI Swarm]]** as the **pattern library and testing ground** for simple, transparent multi-agent behaviors and handoffs, especially useful for prototyping new swarm routines before embedding them into Factory or CrewAI flows.
+- Treat **Factory** as the **code & system-change limb** of the Unified Swarm—high‑leverage where modifications to software and infra are required.
+- Treat **CrewAI** as the **business-process & orchestration limb**, most appropriate for long-running workflows, cross-system automations, and multi-role organizational tasks.
+- Treat **OpenAI Swarm** as the **pattern library and testing ground** for simple, transparent multi-agent behaviors and handoffs, especially useful for prototyping new swarm routines before embedding them into Factory or CrewAI flows.
 
 The core design mandate for UNIFIED SWARM is not to replace these tools, but to **bind** them—through a common agent schema, memory bus, handoff protocol, and observability plane—into a single, governable swarm that is compatible with the VAULTED Architecture & Infrastructure.
 

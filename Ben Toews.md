@@ -1,10 +1,5 @@
 ---
-tags:
-  - party/republican
-  - people/elected
-  - people/elected/legislative
-  - people
-residence: "[[Coeur d'Alene]]"
+residence: "Coeur d'Alene"
 ---
-- [[Senate member]] for [[Legislative District 4|LD4]] 
-- [[Senate Education]] vice chair 
+- Senate member for LD4 
+- Senate Education vice chair 

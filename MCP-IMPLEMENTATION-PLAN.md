@@ -1,7 +1,4 @@
 ---
-tags:
-  - administration/mcp
-  - administration/implementation-plan
 updated: 2026-03-25
 status: active
 ---
@@ -32,7 +29,7 @@ Required baseline:
 - lock protocol enabled (soft-lock v1)
 - file-level entry updates on each write/read cycle
 
-Reference: [[MANIFEST-SPEC]]
+Reference: MANIFEST-SPEC
 
 ## Phase 0 — Read-only discovery
 

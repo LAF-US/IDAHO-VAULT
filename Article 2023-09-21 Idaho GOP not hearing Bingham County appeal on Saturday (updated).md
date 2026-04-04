@@ -1,14 +1,10 @@
 ---
-tags:
-  - media/articles
-  - 2023/09/21
-  - party/republican
 ---
-by [[Logan Finney]], [[Idaho Reports]]
+by Logan Finney, Idaho Reports
 
 _CORRECTION: This story originally stated the Idaho GOP executive committee would hear the Bingham County GOP appeal on Sept. 23 and was updated with more information from Trent Clark that morning._
 
-A [[Bingham County]] judge issued a temporary restraining order on Sept. 15, blocking the state Republican party from conducting a leadership election for the Bingham County Republican Central Committee. The lawsuit includes allegations from the local party that Idaho GOP chairwoman Dorothy Moon has been negating certain county elections to install her own political allies.
+A Bingham County judge issued a temporary restraining order on Sept. 15, blocking the state Republican party from conducting a leadership election for the Bingham County Republican Central Committee. The lawsuit includes allegations from the local party that Idaho GOP chairwoman Dorothy Moon has been negating certain county elections to install her own political allies.
 
 The restraining order blocks the state party from electing new Bingham County GOP officers while an internal party appeal process advances. The court will hear arguments on Sept. 28 regarding a preliminary injunction, which would replace the temporary restraining order.
 

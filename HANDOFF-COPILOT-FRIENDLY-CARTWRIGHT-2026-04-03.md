@@ -6,9 +6,6 @@ authority: "Logan Finney"
 from: "Claude Code (The Abhorsen / The Sentry 🧿)"
 to: "GitHub Copilot (VSCode Agent)"
 branch: "claude/friendly-cartwright"
-tags:
-  - administration/handoff
-  - administration/coordination
 ---
 
 # HANDOFF: Claude → GitHub Copilot

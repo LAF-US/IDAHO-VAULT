@@ -2,12 +2,10 @@
 title: "Ferguson signs AI protection bills as public increasingly embraces the technology"
 source: "https://www.spokesman.com/stories/2026/apr/01/ferguson-signs-ai-protection-bills-as-public-incre/?utm_source=newsshowcase&utm_medium=gnews&utm_campaign=CDAQ3Y2lp9fy5ZKTARjdmPe3i_C23a4BKhAIACoHCAowzvT9CjCymvYC&utm_content=rundown"
 author:
-  - "[[Mitchell Roland]]"
+  - "Mitchell Roland"
 published: 2026-04-01
 created: 2026-04-02
 description: "OLYMPIA – Gov. Bob Ferguson has signed a trio of bills to provide additional protections when using artificial intelligence amid increased use of the technology."
-tags:
-  - "clippings"
 date created: Thursday, April 2nd 2026, 11:51:12 am
 date modified: Thursday, April 2nd 2026, 11:51:20 am
 ---

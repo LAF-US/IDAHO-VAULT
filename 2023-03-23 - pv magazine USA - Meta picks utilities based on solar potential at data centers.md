@@ -1,7 +1,7 @@
 ---
 source: "https://pv-magazine-usa.com/2023/03/23/meta-picks-utilities-based-on-solar-potential-at-data-centers/"
 author:
-  - "[[John Fitzgerald Weaver and Michael Schoeck]]"
+  - "John Fitzgerald Weaver and Michael Schoeck"
 published: 2023-03-23
 created: 2026-03-30
 date created: Monday, March 30th 2026, 3:40:48 pm

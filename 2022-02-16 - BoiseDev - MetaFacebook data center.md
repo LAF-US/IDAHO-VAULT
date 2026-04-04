@@ -1,8 +1,8 @@
 ---
 source: "https://boisedev.com/project/meta-facebook-data-center/"
 author:
-  - "[[Don Day - BoiseDev Editor]]"
-  - "[[https://boisedev.com/author/idahonext/]]"
+  - "Don Day - BoiseDev Editor"
+  - "https://boisedev.com/author/idahonext/"
 published: 2022-02-16
 created: 2026-03-30
 date created: Monday, March 30th 2026, 3:28:19 pm

@@ -1,7 +1,3 @@
 ---
-aliases:
-  - CSI
-tags:
-  - schools/colleges/community
 ---
-[[Twin Falls County]]-based [[community colleges|community college]] overseen by [[Board of Trustees - CSI]] 
+Twin Falls County-based community college overseen by Board of Trustees - CSI 

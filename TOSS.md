@@ -1,7 +1,4 @@
 ---
-tags:
-  - administration/prompts
-  - protocol/passback
 created: 2026-03-20
 status: draft
 usage: Logan pastes this into a conversation window to trigger a terminal context extraction

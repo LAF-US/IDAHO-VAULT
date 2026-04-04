@@ -1,7 +1,3 @@
 ---
-tags:
-  - party/democratic
-  - position/elected/precinct
 ---
-
-Local [[Idaho Democratic Party]] [[precinct committeemen|precinct committee]] for [[Clearwater County]] 
+Local Idaho Democratic Party precinct committee for Clearwater County 

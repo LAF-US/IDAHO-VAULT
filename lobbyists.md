@@ -1,1 +1,1 @@
-people who participate in [[lobbying]] 
+people who participate in lobbying 

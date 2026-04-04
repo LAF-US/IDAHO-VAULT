@@ -1,7 +1,4 @@
 ---
-tags:
-  - administration/prompts
-  - protocol/passback
 created: 2026-03-20
 status: draft
 usage: Logan pastes this into CODE AUTHORITY along with a TOSS dump to trigger context ingestion

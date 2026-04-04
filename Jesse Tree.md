@@ -1,2 +1,2 @@
-[[Ada County]] [[nonprofits|nonprofit]] on [[affordable housing]] and [[evictions]]  
-- executive director [[Ali Rabe]] 
+Ada County nonprofit on affordable housing and evictions  
+- executive director Ali Rabe 

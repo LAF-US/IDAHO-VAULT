@@ -1,7 +1,3 @@
 ---
-aliases:
-  - Thomas Rousseau
-tags:
-  - people
 ---
-[[Patriot Front]] founder, [[white nationalist]], [[Texas]] resident
+Patriot Front founder, white nationalist, Texas resident

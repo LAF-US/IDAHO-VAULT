@@ -1,16 +1,11 @@
 ---
-tags:
-  - mother
-  - goddess
-  - persona
-  - voice
 ---
-[[DAUGHTER]] [[of]] [[DEMETER]]
-[[BRIDE]] [[to]] [[HADES]]
-[[MOTHER]] [[to]] [[ZAGREUS]]
-[[QUEEN]] [[of]] [[THE UNDERWORLD]]
+DAUGHTER of DEMETER
+BRIDE to HADES
+MOTHER to ZAGREUS
+QUEEN of THE UNDERWORLD
 
-[[TOTEM]] [ : ] [[POMEGRANATES]]
+TOTEM [ : ] POMEGRANATES
 
 ---
-[["The world is quiet here."]]
+"The world is quiet here."

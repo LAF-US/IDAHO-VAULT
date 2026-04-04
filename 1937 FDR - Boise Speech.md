@@ -1,15 +1,13 @@
 ---
-tags:
-  - category/facet/speeches
 date: 1937-09-27
 ---
-# [[Franklin Roosevelt|Franklin D. Roosevelt]], 32nd President of the United States,  Remarks at Boise, Idaho
+# Franklin D. Roosevelt, 32nd President of the United States,  Remarks at Boise, Idaho
 
 *September 27, 1937*
 
->![[tumblr_owy638abXW1wc45zao1_640.png]]
+>!tumblr_owy638abXW1wc45zao1_640.png
 
-Governor Clark; and I am going to say what [[William Borah|Senator Borah]] said, "Friends and neighbors":
+Governor Clark; and I am going to say what Senator Borah said, "Friends and neighbors":
 
 I shall never forget this morning. When I look back on today's visit to Boise, I shall think chiefly of two things, first your beautiful, tree-lined streets and, secondly, your children.
 
@@ -33,4 +31,4 @@ I wish I could physically take the time to spend more days and more weeks going 
 
 --- 
 
-- [[1937 FDR - Boise Motorcade]]
+- 1937 FDR - Boise Motorcade

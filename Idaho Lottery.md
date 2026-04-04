@@ -1,1 +1,1 @@
-overseen by [[State Lottery Commission]] 
+overseen by State Lottery Commission 

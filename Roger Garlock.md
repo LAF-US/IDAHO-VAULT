@@ -1,7 +1,4 @@
 ---
-tags:
-  - party/republican
-  - people/candidate/city/council
 ---
-Residence: [[Coeur d'Alene]]
-- candidate for [[Coeur d'Alene|CDA]] [[city council]] in 2023, endorsed by [[Kootenai County Republican Central Committee|KCRCC]], challenged [[Dan English]] 
+Residence: Coeur d'Alene
+- candidate for CDA city council in 2023, endorsed by KCRCC, challenged Dan English 

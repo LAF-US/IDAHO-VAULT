@@ -1,9 +1,5 @@
 ---
-tags:
-  - platforms/github
-  - tools/ai/code-review
 ---
-
 CodeRabbit GitHub integration (AI code review)
 
 - Documentation index: https://docs.coderabbit.ai/llms.txt (lists all docs). Primary GitHub guide: https://docs.coderabbit.ai/platforms/github-com

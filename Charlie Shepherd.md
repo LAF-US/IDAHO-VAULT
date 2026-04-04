@@ -1,10 +1,5 @@
 ---
-tags:
-  - party/republican
-  - people/elected
-  - people/elected/legislative
-  - people
-residence: "[[Pollock]]"
+residence: "Pollock"
 ---
-- [[House member]] for [[Legislative District 7]] 
-- son of [[Paul Shepherd]] 
+- House member for Legislative District 7 
+- son of Paul Shepherd 

@@ -4,13 +4,6 @@ updated: 2026-03-29
 status: stub
 authority: perplexity
 doc_class: organization
-tags:
-  - swarm
-  - r-and-d
-  - unified-swarm
-  - multi-agent
-  - orchestration
-  - tools
 url: https://crewai.com
 ---
 
@@ -24,7 +17,7 @@ It exposes both a visual editor for non-technical users and APIs for engineers, 
 
 **Flagged by Logan Finney, 2026-03-29**, via Perplexity unified swarm research session.
 
-In the [[BIG IFS — UNIFIED SWARM]] framework, CrewAI is identified as the **business-process & orchestration limb** of a hypothetical Unified Swarm—most appropriate for long-running workflows, cross-system automations, and multi-role organizational tasks.
+In the BIG IFS — UNIFIED SWARM framework, CrewAI is identified as the **business-process & orchestration limb** of a hypothetical Unified Swarm—most appropriate for long-running workflows, cross-system automations, and multi-role organizational tasks.
 
 Key architectural notes from the research:
 - CrewAI's **AMP-style tracing** provides a blueprint for observability & safety at the swarm level.
@@ -38,6 +31,6 @@ Open questions for R&D evaluation:
 
 ## See Also
 
-- [[BIG IFS — UNIFIED SWARM]]
-- [[Factory]]
-- [[OpenAI Swarm]]
+- BIG IFS — UNIFIED SWARM
+- Factory
+- OpenAI Swarm

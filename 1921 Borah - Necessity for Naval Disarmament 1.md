@@ -1,9 +1,7 @@
 ---
-tags:
-  - Category/Facet/Speeches
 date: 1921-09-01
 ---
-# Sen. [[William Borah]], (R)-Idaho
+# Sen. William Borah, (R)-Idaho
 
 Despite her military defeat, Germany, by reason of the shortsighted and blundering policies of the allied and associated powers, may yet secure economic dominance in Europe. Defeat has resulted in Germany’s being deprived of her army and her navy. *The burden of armaments has been forced from the backs of the German people. **They may now devote their energies and their talents to agriculture, to industry, to the arts, to the things which constitute the real wealth and strength of a people.** Their genius will find expression, not in arms, or on the military field, but in improved machinery and cooperative industry.* Every ounce of effort which they put forth will be along lines which produce something, which add wealth to the community, which make for contentment and prosperity to the people, which insure greater physical prowess and a higher brain power.
 

@@ -1,8 +1,8 @@
 ---
 source: "https://pv-magazine-usa.com/2023/05/18/meta-to-power-idaho-data-center-with-200-mw-rplus-solar-project/"
 author:
-  - "[[Michael Schoeck]]"
-  - "[[More articles from Michael Schoeck]]"
+  - "Michael Schoeck"
+  - "More articles from Michael Schoeck"
 published: 2023-05-18
 created: 2026-03-30
 date created: Monday, March 30th 2026, 3:39:08 pm

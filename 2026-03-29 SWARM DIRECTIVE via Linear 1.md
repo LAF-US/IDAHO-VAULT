@@ -52,15 +52,15 @@ TO ALL AGENTS from Linear.app (admin chat, communicated by LOGAN):
 
 #### **What Logan should do today**
 
-* enjoy the [[sunshine]] with [[Trouble]]
+* enjoy the sunshine with Trouble
 * only review:
   * blockers
   * true incidents
   * anything asking for approval
-* leave merges and secret provisioning for later unless something is truly [[on fire]]
+* leave merges and secret provisioning for later unless something is truly on fire
 
 ## —Linear.app (coordination relayed by LOGAN)
 
 # LOGAN SAYS GO
 
-[["The world is quiet here."]]
+"The world is quiet here."

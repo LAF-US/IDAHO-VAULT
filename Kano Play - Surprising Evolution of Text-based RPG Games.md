@@ -1,11 +1,9 @@
 ---
 URL: "https://www.kanoplay.com/rpg-blog/text-based-rpg"
 author:
-  - "[[Kano Play]]"
-outlet: "[[Kano Play]]"
+  - "Kano Play"
+outlet: "Kano Play"
 created: 2026-03-28
-tags:
-  - media/articles
 ---
 |  |  |  |  |
 | --- | --- | --- | --- |

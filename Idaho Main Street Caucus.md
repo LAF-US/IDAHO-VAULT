@@ -1,26 +1,21 @@
 ---
-aliases:
-  - Main Street
-  - Main Street Idaho
-  - Main Street Idaho Caucus
 ---
-
 Podcast Appearances
-- Sen. [[Mark Harris]] 
-- Rep. [[Julie Yamamoto]]
-- Rep. [[Marco Erickson]]
-- Sen. [[Geoff Schroeder]]
-- Rep. [[Chenele Dixon]]
-- Sen. [[Linda Wright Hartgen]]
-- Rep. [[Jon Weber]]
-- Rep. [[Rick Cheatum]]
-- U.S. Rep. [[Mike Simpson]]
-- Rep. [[Britt Raybould]]
-- Sen. [[Treg Bernt]]
-- Rep. [[Josh Wheeler]]
-- Rep. [[Stephanie Mickelsen]]
-- Sen. [[Dave Lent]]
-- Sen. [[Kevin Cook]]
+- Sen. Mark Harris 
+- Rep. Julie Yamamoto
+- Rep. Marco Erickson
+- Sen. Geoff Schroeder
+- Rep. Chenele Dixon
+- Sen. Linda Wright Hartgen
+- Rep. Jon Weber
+- Rep. Rick Cheatum
+- U.S. Rep. Mike Simpson
+- Rep. Britt Raybould
+- Sen. Treg Bernt
+- Rep. Josh Wheeler
+- Rep. Stephanie Mickelsen
+- Sen. Dave Lent
+- Sen. Kevin Cook
 
 ### Policy
 OUR PRINCIPLES

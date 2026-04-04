@@ -5,9 +5,6 @@ status: active
 authority: "Logan Finney"
 authored-by: "Claude Code (The Sentry 🧿)"
 for: "GitHub Copilot (VSCode Agent)"
-tags:
-  - administration/audit
-  - administration/github
 ---
 
 # GITHUB AUTOMATION AUDIT — 2026-04-03
@@ -264,4 +261,4 @@ CODEOWNERS is configured but only enforced if branch protection rules are active
 *Branch: `claude/friendly-cartwright` — travels with the workflow fix commits.*
 *Linear: LAF-30*
 
-###### [["The world is quiet here."]]
+###### "The world is quiet here."

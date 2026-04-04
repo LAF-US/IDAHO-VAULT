@@ -1,5 +1,3 @@
 ---
-aliases:
-  - healthcare
 ---
-[[doctors]], [[nurses]], [[emergency room]] 
+doctors, nurses, emergency room 

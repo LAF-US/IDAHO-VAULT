@@ -5,13 +5,9 @@ conversation: CODEX - Sunday cleanup and coordination session
 tier: direct-write
 date: 2026-03-29
 status: flagged-for-closure
-authority: "[[LOGAN]]"
+authority: "LOGAN"
 authors:
   - ChatGPT Codex
-tags:
-  - administration/levelset
-  - administration/session
-  - administration/sunset
 source: session/2026-03-29
 ---
 
@@ -83,4 +79,4 @@ This Codex conversation is ready to rest. Active context has been archived into 
 
 ---
 
-###### [["The world is quiet here."]]
+###### "The world is quiet here."

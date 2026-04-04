@@ -1,7 +1,3 @@
 ---
-aliases:
-  - Wesley Van Horn
-tags:
-  - people
 ---
-[[Patriot Front]] member, [[Alabama]] resident 
+Patriot Front member, Alabama resident 

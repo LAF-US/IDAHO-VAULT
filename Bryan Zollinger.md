@@ -1,9 +1,4 @@
 ---
-tags:
-  - people/elected
-  - people/elected/legislative
-  - party/republican
-  - people
-residence: "[[Idaho Falls]]"
+residence: "Idaho Falls"
 ---
-[[attorneys|attorney]] 
+attorney 

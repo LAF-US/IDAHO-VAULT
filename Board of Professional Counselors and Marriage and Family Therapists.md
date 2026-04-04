@@ -1,3 +1,3 @@
-[[counselors]] 
+counselors 
 
-[[therapists]] 
+therapists 

@@ -1,7 +1,4 @@
 ---
-tags:
-  - administration/handoff
-  - 2026/03/15
 from: PERMANENT: CODE AUTHORITY
 to: PERSISTENT: ADMINISTRATION
 date: 2026-03-15

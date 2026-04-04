@@ -1,7 +1,3 @@
 ---
-aliases:
-  - Pleasant Valley
-tags:
-  - schools/k12/district
 ---
-[[Pleasant Valley]], [[Owyhee County]] 
+Pleasant Valley, Owyhee County 

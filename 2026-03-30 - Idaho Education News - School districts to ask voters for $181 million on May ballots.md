@@ -1,7 +1,7 @@
 ---
 source: "https://www.idahoednews.org/top-news/school-districts-to-ask-voters-for-181-million-on-may-ballots/"
 author:
-  - "[[Emma Epperly]]"
+  - "Emma Epperly"
 published: 2026-03-30
 created: 2026-03-30
 date created: Monday, March 30th 2026, 2:12:37 pm
@@ -10,11 +10,11 @@ date modified: Monday, March 30th 2026, 2:18:56 pm
 
 Idaho school districts are asking voters for more than $181 million this May.
 
-The asks range from a $57 million bond in [[Kimberly]] to build a performing arts center to a $200,000 supplemental levy in [[Mackay]] to pay for athletics and building utilities over the course of two years.
+The asks range from a $57 million bond in Kimberly to build a performing arts center to a $200,000 supplemental levy in Mackay to pay for athletics and building utilities over the course of two years.
 
-The [[asks]] are more than double that of May 2025, [where voters considered $75 million in ballot measures.](https://www.idahoednews.org/elections25/voting-to-decide-tonight-on-75-million-in-levies-to-support-25-school-districts/) It dwarfs November’s [[ballot measure]] asks, which came in at [$159 million.](https://www.idahoednews.org/top-news/voters-to-consider-three-bonds-and-28-levies-in-november-election/)
+The asks are more than double that of May 2025, [where voters considered $75 million in ballot measures.](https://www.idahoednews.org/elections25/voting-to-decide-tonight-on-75-million-in-levies-to-support-25-school-districts/) It dwarfs November’s ballot measure asks, which came in at [$159 million.](https://www.idahoednews.org/top-news/voters-to-consider-three-bonds-and-28-levies-in-november-election/)
 
-School districts can only ask voters for additional funding from property taxes in [[May]] and [[November]]. Election dates for schools were reduced from four to two by [[the legislature]] over the course of the [2023](https://www.idahoednews.org/state-policy/lawmakers-rewrote-the-school-election-calendar-what-happens-next/) and [2024](https://www.idahoednews.org/top-news/constitutional-concerns-hang-over-blockbuster-facilities-bill/) sessions.
+School districts can only ask voters for additional funding from property taxes in May and November. Election dates for schools were reduced from four to two by the legislature over the course of the [2023](https://www.idahoednews.org/state-policy/lawmakers-rewrote-the-school-election-calendar-what-happens-next/) and [2024](https://www.idahoednews.org/top-news/constitutional-concerns-hang-over-blockbuster-facilities-bill/) sessions.
 
 EdNews reached out to county election offices statewide to compile this comprehensive list of school ballot measures.
 

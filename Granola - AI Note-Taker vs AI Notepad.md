@@ -1,7 +1,7 @@
 ---
 source: "https://www.granola.ai/ai-note-taker"
 author:
-  - "[[Granola]]"
+  - "Granola"
 published:
 created: 2026-03-28
 ---

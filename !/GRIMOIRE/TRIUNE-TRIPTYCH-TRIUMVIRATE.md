@@ -1,10 +1,5 @@
 ---
 title: "TRIUNE-TRIPTYCH-TRIUMVIRATE — The Sierpiński Covenant"
-tags:
-  - administration/grimoire
-  - administration/mythology
-  - swarm
-  - constitution
 status: active
 date created: 2026-04-04
 authority: "[[LOGAN]]"

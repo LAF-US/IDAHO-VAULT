@@ -1,6 +1,4 @@
 ---
-tags:
-  - people/journalists
 ---
-Residence: [[Boise]]
-- [[Idaho Capital Sun]] 
+Residence: Boise
+- Idaho Capital Sun 

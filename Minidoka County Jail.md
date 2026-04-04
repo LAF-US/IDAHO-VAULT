@@ -1,1 +1,1 @@
-[[County Sheriff]], [[Minidoka County]] [[jails|jail]]
+County Sheriff, Minidoka County jail

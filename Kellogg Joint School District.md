@@ -1,7 +1,3 @@
 ---
-aliases:
-  - Kellogg
-tags:
-  - schools/k12/district
 ---
-[[Kellogg]], [[Shoshone County]] 
+Kellogg, Shoshone County 

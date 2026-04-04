@@ -1,6 +1,3 @@
 ---
-aliases:
-  - adult websites
 ---
-
-[[pornography]] [[Internet|websites]] 
+pornography websites 

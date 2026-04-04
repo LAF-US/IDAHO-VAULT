@@ -1,9 +1,6 @@
 ---
 date created: Saturday, March 28th 2026, 4:25:31 pm
 date modified: Saturday, March 28th 2026, 6:02:13 pm
-tags:
-  - administration/reference
-  - ai/swarm
 ---
 
 # IDAHO-VAULT Swarm Loop (v0.1)

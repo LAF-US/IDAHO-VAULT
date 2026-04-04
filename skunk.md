@@ -1,1 +1,1 @@
-[[spotted skunk]] and [[striped skunk]] 
+spotted skunk and striped skunk 

@@ -1,5 +1,3 @@
 ---
 cmte: 
-tags:
-  - bills
 ---

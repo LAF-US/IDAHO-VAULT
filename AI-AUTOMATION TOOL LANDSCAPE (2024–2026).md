@@ -1,12 +1,9 @@
 ---
 date created: Saturday, March 28th 2026, 5:31:30 pm
 date modified: Saturday, March 28th 2026, 5:32:17 pm
-tags:
-  - administration/reference
-  - ai/tools
 ---
 
-[[Notebook LM]] [[2026-03-28]]
+Notebook LM 2026-03-28
 
 ---
 # AI + AUTOMATION TOOL LANDSCAPE (2024–2026)

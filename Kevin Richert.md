@@ -1,6 +1,3 @@
 ---
-tags:
-  - people/journalists
-  - people
 ---
-[[Idaho Education News]] 
+Idaho Education News 

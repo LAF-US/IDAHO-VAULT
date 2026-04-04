@@ -1,6 +1,3 @@
 ---
-tags:
-  - governments/taxingdistrict
 ---
-
-[[taxing districts]] for controlling [[noxious weeds]] 
+taxing districts for controlling noxious weeds 

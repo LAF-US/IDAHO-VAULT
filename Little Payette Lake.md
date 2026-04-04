@@ -1,8 +1,5 @@
 ---
-tags:
-  - geography/water/lake
 ---
+McCall lake 
 
-[[McCall]] [[lakes|lake]] 
-
-pair to [[Payette Lake]] 
+pair to Payette Lake 

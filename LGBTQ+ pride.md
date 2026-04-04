@@ -1,6 +1,3 @@
 ---
-aliases:
-  - Pride
-  - gay pride
 ---
-[[LGBTQ+ issues 1]] 
+LGBTQ+ issues 1 

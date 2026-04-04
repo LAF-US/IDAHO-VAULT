@@ -1,5 +1,3 @@
 ---
-tags:
-  - media/outlets
 ---
-[[Spokane]] [[religion]] [[Internet|website]] [[reporting]] [[and]] [[commentary]] 
+Spokane religion website reporting and commentary 

@@ -1,1 +1,1 @@
-[[magistrate court]] [[Lewis County]] [[courthouses|courthouse]] 
+magistrate court Lewis County courthouse 

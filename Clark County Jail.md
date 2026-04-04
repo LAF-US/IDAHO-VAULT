@@ -1,1 +1,1 @@
-[[County Sheriff]], [[Clark County]] [[jails|jail]]
+County Sheriff, Clark County jail

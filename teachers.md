@@ -1,5 +1,3 @@
 ---
-aliases:
-  - teacher
 ---
-[[school districts]] employees in classrooms
+school districts employees in classrooms

@@ -1,5 +1,3 @@
 ---
-tags:
-  - administration/protocol
 ---
-[[HECATE]] [[AWAKENS]]
+HECATE AWAKENS

@@ -1,5 +1,3 @@
 ---
-tags:
-  - 2021/session
 ---
-[[Idaho Legislature]] committee on [[American Rescue Plan Act|ARPA]] [[budget|budgets]] 
+Idaho Legislature committee on ARPA budgets 

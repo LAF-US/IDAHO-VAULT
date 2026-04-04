@@ -1,1 +1,1 @@
-[[County Sheriff]], [[Bonner County]] [[jails|jail]]
+County Sheriff, Bonner County jail

@@ -1,9 +1,4 @@
 ---
-tags:
-  - party/republican
-  - people/elected/legislative
-  - people/elected
-  - people
 ---
-Residence: [[Blackfoot]] 
-defeated [[Julie VanOrden]] in [[primary election]] after [[sex education]] bill
+Residence: Blackfoot 
+defeated Julie VanOrden in primary election after sex education bill

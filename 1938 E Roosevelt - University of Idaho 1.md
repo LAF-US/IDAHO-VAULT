@@ -1,21 +1,19 @@
 ---
-tags:
-  - Category/Facet/Photos
 date: 1938-03-26
 ---
-[[Eleanor Roosevelt]] visits [[University of Idaho]], March 26, 1938
+Eleanor Roosevelt visits University of Idaho, March 26, 1938
 
-![[Spec UIHP 168.jpg]]
+!Spec UIHP 168.jpg
 
-![[Ott 1203.jpg]]
+!Ott 1203.jpg
 
-![[Spec UIHP 165.jpg]]
+!Spec UIHP 165.jpg
 
-![[ott1202.jpg]]
+!ott1202.jpg
 
-![[Spec UIHP 164.jpg]]
+!Spec UIHP 164.jpg
 
-![[Ott 1200.jpg]]
+!Ott 1200.jpg
 
 ---
 
@@ -25,5 +23,5 @@ date: 1938-03-26
 
 ---
 
-- [[1938 E Roosevelt - My Day]] 
-- [[Borah - University of Idaho]] 
+- 1938 E Roosevelt - My Day 
+- Borah - University of Idaho 

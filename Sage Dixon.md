@@ -1,14 +1,9 @@
 ---
-tags:
-  - party/republican
-  - people/elected/legislative
-  - people/elected
-  - people
 ---
 er
-Residence: [[Ponderay]]
+Residence: Ponderay
 
-[[House Assistant Majority Leader]]
-- former [[House Ethics and Policy]] chair
-- former [[House Business]] chair
+House Assistant Majority Leader
+- former House Ethics and Policy chair
+- former House Business chair
 

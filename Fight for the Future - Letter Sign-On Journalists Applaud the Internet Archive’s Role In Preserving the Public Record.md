@@ -1,7 +1,7 @@
 ---
 source: "https://www.fightforthefuture.org/actions/internet-archive-journalist-signon/"
 author:
-  - "[[Fight for the Future]]"
+  - "Fight for the Future"
 published:
 created: 2026-03-30
 ---

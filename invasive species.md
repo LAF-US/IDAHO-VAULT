@@ -1,27 +1,27 @@
-managed by [[Department of Agriculture]] and [[Invasive Species Council]] 
+managed by Department of Agriculture and Invasive Species Council 
 
-**[[noxious weeds]]**
+**noxious weeds**
 *terrestrial* (54 species)
 - 
 *aquatic* (17 species)
 - milfoil
 
 **pests**
-*[[invertebrates]]*
-- [[quagga mussels]]
-- [[zebra mussels]]
-*[[insects]]*
+*invertebrates*
+- quagga mussels
+- zebra mussels
+*insects*
 - 
-*[[amphibians]]*
+*amphibians*
 -  American bullfrog
 - rough skinned newt
 *pathogens*
 -  
-*[[fish]]*
+*fish*
 - 
-*[[reptiles]]*
+*reptiles*
 -  
-*[[birds]]*
+*birds*
 -  monk parakeet
-*[[mammals]]*
+*mammals*
 - nutria

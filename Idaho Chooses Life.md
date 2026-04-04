@@ -1,1 +1,1 @@
-[[anti-abortion|pro-life]] organization 
+pro-life organization 

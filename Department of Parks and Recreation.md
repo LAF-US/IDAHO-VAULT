@@ -1,7 +1,3 @@
 ---
-aliases:
-  - Parks & Rec
-tags:
-  - governments/state/executive/departments
 ---
-[[State of Idaho]] [[parks]] 
+State of Idaho parks 

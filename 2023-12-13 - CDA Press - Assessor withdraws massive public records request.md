@@ -1,12 +1,9 @@
 ---
 author:
-  - "[[Kaye Thornbrugh]]"
+  - "Kaye Thornbrugh"
 outlet:
-  - "[[Coeur d'Alene Press]]"
+  - "Coeur d'Alene Press"
 URL: https://cdapress.com/news/2023/dec/13/assessor-withdraws-massive-public-records-request/
-tags:
-  - media/articles
-  - 2023/12/13
 ---
 COEUR d’ALENE — Kootenai County Assessor Béla Kovacs has withdrawn public record requests submitted to the treasurer’s office that were expected to generate many tens of thousands of documents and cost more than $20,000 in employee labor to fulfill.
 
@@ -14,11 +11,11 @@ Last week, Kovacs submitted a public records request to the treasurer’s office
 
 Kovacs also sought all correspondence between the treasurer’s office and the assessor’s office, as well as any communications between the treasurer’s office and the office of the county commissioners between Jan. 1, 2022, and Dec. 6 of this year.
 
-Kootenai County Treasurer Steve Matheson brought the matter before commissioners Tuesday, saying he intended to charge Kovacs for the request before his office fulfilled it, as permitted under [[Idaho Code|state law]], and that commissioners should expect Kovacs to ask the board to foot the bill.
+Kootenai County Treasurer Steve Matheson brought the matter before commissioners Tuesday, saying he intended to charge Kovacs for the request before his office fulfilled it, as permitted under state law, and that commissioners should expect Kovacs to ask the board to foot the bill.
 
 “I have tried to help Béla clarify and narrow his request,” Matheson told commissioners. “Unfortunately, he has only expanded it. Either Béla doesn’t understand the Idaho public records law or he is intentionally placing this financial burden onto the county and its taxpayers.”
 
-Kovacs told commissioners the sweeping public records requests were part of an effort to root out “systemic issues” at the county that caused problems like [[2023-12-09 - CDA Press - Assessor pins $53 million error on other county officials|a recent $53 million property tax value assessment error that affected seven taxing districts.]]
+Kovacs told commissioners the sweeping public records requests were part of an effort to root out “systemic issues” at the county that caused problems like a recent $53 million property tax value assessment error that affected seven taxing districts.
 
 “I do have concerns about some reoccurring issues and problems and so I’m looking for information to be able to tackle that,” Kovacs said. “That was the origin and the reason for my making the request.”
 

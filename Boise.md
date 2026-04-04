@@ -1,8 +1,5 @@
 ---
-tags:
-  - governments
 ---
+State of Idaho capital city
 
-[[State of Idaho]] capital city
-
-[[Ada County]] seat
+Ada County seat

@@ -1,8 +1,4 @@
 ---
-tags:
-  - administration/handoff
-  - administration/context
-  - governments/legislature
 created: 2026-03-24
 source: commit
 status: draft
@@ -11,7 +7,7 @@ verified-through: 2026-03-24
 # HANDOFF: LSO Minidata Ingest Transition (2026-03-24)
 
 **Author:** ChatGPT Codex  
-**Audience:** Future repo-aware agents working under [[LOGAN]]  
+**Audience:** Future repo-aware agents working under LOGAN  
 **Purpose:** Preserve the verified intake contract, CSV findings, M365 automation direction, and open implementation tasks for the Idaho Legislature ingest transition.
 
 ---

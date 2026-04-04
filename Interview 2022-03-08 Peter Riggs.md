@@ -1,17 +1,14 @@
 ---
 author:
-  - "[[Ruth Brown]]"
+  - "Ruth Brown"
 outlet:
-  - "[[Idaho Reports]]"
+  - "Idaho Reports"
 URL: https://youtu.be/5sQLKfTfBUY?si=bzjk3mmpnf5zY7XJ
-tags:
-  - 2022/03/08
-aliases:
 ---
 
-_[[Ruth Brown]], [[Idaho Reports]]_
+_Ruth Brown, Idaho Reports_
 
-[[Senate member|Sen.]] [[Peter Riggs]] thanks for joining me i wanted to talk to you today about [[(2022) Senate Bill 1327|Senate Bill 1327]] which came from the idaho [[Behavioral Health Council]]
+Sen. Peter Riggs thanks for joining me i wanted to talk to you today about Senate Bill 1327 which came from the idaho Behavioral Health Council
 thanks for being here 
 
 thanks for having
@@ -28,13 +25,13 @@ idahoans well i think but to to tell how
 13 27 is going to affect people we first
 have to talk about what house bill 316
 was from last year which was
-the with the [[Medicaid Expansion]] into
+the with the Medicaid Expansion into
 idaho there was going to be some overlap
-in what our [[indigent fund]] and
-[[catastrophic fund]] were doing for uh
+in what our indigent fund and
+catastrophic fund were doing for uh
 people in idaho that needed their
 support that now a lot of those people
-were being transitioned to [[Medicaid]] so
+were being transitioned to Medicaid so
 there was a plan to eventually kind of
 phase out the indigent fun and the
 catastrophic fun
@@ -122,7 +119,7 @@ that's a lot of what
 those issues and make it better for
 everyone that that is both being treated
 and doing the treatment
-sure the civil cl the [[civil commitments]]
+sure the civil cl the civil commitments
 Financial Shift
 apply to folks that are uh so acutely
 ill that perhaps they cannot make uh
@@ -256,6 +253,6 @@ we're not putting undue burden on their
 already fragile mental state
 great
 i appreciate your time today that bill
-now heads before the [[Idaho House of Representatives|house]] floor for a
+now heads before the house floor for a
 debate but until then i appreciate your
 time thanks

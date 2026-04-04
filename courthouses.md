@@ -1,6 +1,3 @@
 ---
-aliases:
-  - courthouse
-tags: []
 ---
-[[county courthouses]] 
+county courthouses 

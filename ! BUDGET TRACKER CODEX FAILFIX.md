@@ -1,7 +1,4 @@
 ---
-tags:
-  - s
-  - VALUE
 date created: Friday, April 3rd 2026, 2:04:25 am
 date modified: Friday, April 3rd 2026, 2:09:50 am
 ---
@@ -589,7 +586,7 @@ I see an issue — the dates for events 2+ are being stored as **serial numbers
 
 Fix serial date numbers → MM/DD text strings
 
-The serial numbers are persisting — the `numberFormat = [["@"]]` with a single-row array isn't applying to all 351 rows, and the values were already stored as numbers. Let me fix this properly:
+The serial numbers are persisting — the `numberFormat = "@"` with a single-row array isn't applying to all 351 rows, and the values were already stored as numbers. Let me fix this properly:
 
 Fix date columns: set text format then write MM/DD
 

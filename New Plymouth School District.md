@@ -1,7 +1,3 @@
 ---
-aliases:
-  - New Plymouth
-tags:
-  - schools/k12/district
 ---
-[[New Plymouth]], [[Payette County]] 
+New Plymouth, Payette County 

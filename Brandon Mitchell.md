@@ -1,11 +1,6 @@
 ---
-tags:
-  - party/republican
-  - people/elected
-  - people/elected/legislative
-  - people
-residence: "[[Moscow]]"
+residence: "Moscow"
 ---
-[[House member]] 
+House member 
 
-[[foster care]] 
+foster care 

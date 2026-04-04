@@ -1,5 +1,3 @@
 ---
-aliases:
-  - ER
 ---
-[[hospitals]] [[emergency care]] 
+hospitals emergency care 

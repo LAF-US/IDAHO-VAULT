@@ -1,24 +1,21 @@
 ---
 author:
-  - "[[Kaye Thornbrugh]]"
+  - "Kaye Thornbrugh"
 outlet:
-  - "[[Coeur d'Alene Press]]"
+  - "Coeur d'Alene Press"
 URL: https://cdapress.com/news/2023/dec/09/assessor-pins-53-million-error-on-other-county-officials/
-tags:
-  - media/articles
-  - 2023/12/09
 ---
-COEUR d’ALENE — Kootenai County Assessor [[Béla Kovacs]] has asked the [[Idaho State Tax Commission]] to audit the work processes of five county departments, including his own, according to emails obtained by [[Coeur d'Alene Press|The Press]].
+COEUR d’ALENE — Kootenai County Assessor Béla Kovacs has asked the Idaho State Tax Commission to audit the work processes of five county departments, including his own, according to emails obtained by The Press.
 
-In response, some [[county]] officials say they welcome an [[investigation]].
+In response, some county officials say they welcome an investigation.
 
-The request comes in the wake of a $53 million property value assessment error, which affected seven [[taxing districts]] and delayed the distribution of property tax notices until this week.
+The request comes in the wake of a $53 million property value assessment error, which affected seven taxing districts and delayed the distribution of property tax notices until this week.
 
-When an [[appraiser]] mistakenly entered the front footage of a [[lakefront property]] as 6,966 feet instead of 69.66 feet, the property’s valuation jumped from $1.4 million in 2022 to $54.3 million this year.
+When an appraiser mistakenly entered the front footage of a lakefront property as 6,966 feet instead of 69.66 feet, the property’s valuation jumped from $1.4 million in 2022 to $54.3 million this year.
 
 Last month, Kovacs told commissioners the valuation was reviewed by multiple employees in his office, including the appraiser, a manager and “business intelligence analysts,” but no one caught the error until October.
 
-The error affected seven [[taxing districts]], to the tune of nearly $200,000 in total: Kootenai County, the Coeur d’Alene School District, Worley Highway District No. 4, Worley Fire, Kootenai County EMS, North Idaho College and the Community Library Network.
+The error affected seven taxing districts, to the tune of nearly $200,000 in total: Kootenai County, the Coeur d’Alene School District, Worley Highway District No. 4, Worley Fire, Kootenai County EMS, North Idaho College and the Community Library Network.
 
 The original tax bill generated using the incorrect valuation, which was not mailed to the property owner, was $203,588.77. The correct tax bill was $2,468.87.
 
@@ -28,7 +25,7 @@ In a Nov. 22 email, Kovacs said he believes “systemic problems” beyond his c
 
 “This process is painstaking and fraught with problems,” Kovacs wrote. “It has taken a heavy toll on the people, morale and quality of work. Kootenai County needs to break with the past."
 
-He wrote that as the assessor, he needs a reliable [[computer system]] that is not built "on a house of cards." 
+He wrote that as the assessor, he needs a reliable computer system that is not built "on a house of cards." 
 
 Kovacs went on to say his email served as a request to the Idaho State Tax Commission for a “comprehensive audit of the computer system(s), work processes, business workflows, technical process steps” performed by the county’s IT department, as well as the offices of the assessor, clerk, treasurer and commissioners.
 
@@ -58,7 +55,7 @@ Kovacs also questioned why the treasurer did not take action Oct. 24 to “cance
 
 But Matheson said the treasurer has no authority to alter values determined by the assessor.
 
-“Your claim that a significant valuation error by the assessor is to be corrected by the treasurer as a ‘tax cancellation’ is absurd and once again demonstrates your lack of understanding how significant valuation errors affect [[taxing districts|taxing district]] levy rates,” Matheson said in a Dec. 3 email to Kovacs.
+“Your claim that a significant valuation error by the assessor is to be corrected by the treasurer as a ‘tax cancellation’ is absurd and once again demonstrates your lack of understanding how significant valuation errors affect taxing district levy rates,” Matheson said in a Dec. 3 email to Kovacs.
 
 Idaho law provides county commissioners with the authority to order a correction to be made prior to the distribution of tax notices, which must occur by the fourth Monday in November.
 
@@ -82,7 +79,7 @@ Kootenai County Commissioner Bill Brooks said he believes Kovacs’ complaint is
 
 Since commissioners, including Brooks, voted unanimously in May 2020 to appoint Kovacs to the office of assessor, his tenure has been rocked by controversy and challenges.
 
-Last year, more than 30 county employees publicly pleaded with voters not to elect Kovacs, calling him a detriment to the office. Kovacs delivered the 2022 property values more than a month late, leaving [[taxing districts]] temporarily unable to finalize their budgets. Commissioners then made the unprecedented decision to cut Kovacs’ pay in half last year, though a judge later ordered them to restore it.
+Last year, more than 30 county employees publicly pleaded with voters not to elect Kovacs, calling him a detriment to the office. Kovacs delivered the 2022 property values more than a month late, leaving taxing districts temporarily unable to finalize their budgets. Commissioners then made the unprecedented decision to cut Kovacs’ pay in half last year, though a judge later ordered them to restore it.
 
 Brooks said he never expected Kovacs to fill the shoes of his predecessor, the late and much-loved Rich Houser, who had worked in the assessor’s office from 1986 until his death in 2020.
 
