@@ -11,6 +11,6 @@ date modified: Monday, March 30th 2026, 10:29:51 am
 
 Seat: [[Preston]]
 Municipalities: [[Clifton]], [[Dayton]], [[Franklin]], [[Oxford]], [[Weston]]
-Communities: [[Mink Creek]], [[Thatcher]], [[Whitney]], [[Fairview]], [[Riverdale (Franklin)]] 
+Communities: [[Mink Creek]], [[Thatcher]], [[Whitney]], [[Fairview]], [[Riverdale (Franklin)|Riverdale]] 
 
 [[Cache Valley]] 
