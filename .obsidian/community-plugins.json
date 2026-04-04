@@ -8,8 +8,6 @@
   "better-search-views",
   "obsidian-git",
   "obsidian-importer",
-  "obsidian-local-rest-api",
-  "mcp-tools",
   "smart-connections",
   "roygbiv-day-accent",
   "omnisearch",
@@ -21,9 +19,8 @@
   "obsidian-extract-pdf-highlights",
   "handwritten-notes",
   "taskbone-ocr-plugin",
-  "ai-image-analyzer",
   "msg-handler",
+  "templater-obsidian",
   "ai-templater",
-  "smart-connections-visualizer",
-  "templater-obsidian"
+  "obsidian-annotator"
 ]
