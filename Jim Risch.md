@@ -1,4 +1,15 @@
 ---
+related:
+- Ada County
+- Boise
+- Governor
+- Idaho
+- Lieutenant Governor
+- Senate Majority Leader
+- Senate member
+- U.S. Senate
+- University of Idaho
+authority: LOGAN
 ---
 Residence: Boise
 Graduate: University of Idaho

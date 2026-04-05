@@ -1,4 +1,8 @@
 ---
+related:
+- Idaho
+- Judicial Districts
+authority: LOGAN
 ---
 Clearwater, Latah, Idaho, Lewis, Nez Perce
 

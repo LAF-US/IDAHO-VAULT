@@ -1,5 +1,30 @@
 ---
 source: commit
+related:
+- '324'
+- '338'
+- Ada County
+- Ammon
+- Clark Corbin
+- Eagle
+- Hawkins Companies v. Moyle
+- House Majority Leader
+- House member
+- ITD
+- ITD State Street Building Sale
+- Idaho
+- JFAC Working Groups
+- Jason Monks
+- Joint Finance-Appropriations Committee
+- Joint Rule Non-Adoption 2024-2025
+- Josh Tanner
+- Mike Moyle
+- Scott Grow
+- Star
+- Wendy Horman
+- children
+- threshold
+authority: LOGAN
 ---
 Mike Moyle is the longest-serving current Idaho House member (14th term, District 14, Star/Eagle), serving as House Majority Leader since 2006, who directed the non-adoption of Joint Rules at the December 2024 and 2025 organizational sessions and has never served on JFAC.
 

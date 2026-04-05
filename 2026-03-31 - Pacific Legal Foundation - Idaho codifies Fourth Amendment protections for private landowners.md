@@ -1,9 +1,24 @@
 ---
-source: "https://pacificlegal.org/press-release/idaho-codifies-fourth-amendment-protections-for-private-landowners/"
+source: https://pacificlegal.org/press-release/idaho-codifies-fourth-amendment-protections-for-private-landowners/
 author:
-  - "Ceanna Daniels"
+- Ceanna Daniels
 published: 2026-03-31
 created: 2026-04-02
+related:
+- '2026-03-31'
+- '2026-04-02'
+- About
+- Act
+- Boise
+- Brad Little
+- Governor
+- Idaho
+- PLF
+- U.S. Supreme Court
+- Washington
+- agent
+- attorney’s fees
+authority: LOGAN
 ---
 [Donate](https://pacificlegal.org/donate/)
 

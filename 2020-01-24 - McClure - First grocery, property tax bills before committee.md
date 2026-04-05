@@ -1,9 +1,63 @@
 ---
-author: "Logan Finney"
-outlet: "McClure Center"
+author: Logan Finney
+outlet: McClure Center
 URL: https://www.loganfinney.com/idaho-legislature-2020/1/24/first-house-tax-bills
+related:
+- '120'
+- '135'
+- Boise
+- Brad Little
+- Caldwell
+- Collins
+- Fiscal Year 2021
+- Gary Collins
+- Governor
+- House Majority Leader
+- House Revenue and Taxation
+- House Ways and Means
+- Idaho
+- Jason Monks
+- Jim Rice
+- Logan Finney
+- McClure Center
+- Meridian
+- Mike Moyle
+- Nampa
+- Oakley
+- Priscilla Giddings
+- Scott Bedke
+- Star
+- State Tax Commission
+- Steve Berch
+- Steven Harris
+- Tax Relief Fund
+- White Bird
+- administrative rules
+- budget
+- budgets
+- cities
+- construction
+- counties
+- dollars
+- foregone taxes
+- grocery tax
+- homeowners
+- homes
+- legislative
+- meeting
+- money
+- online sales tax
+- personal bill
+- property tax
+- property tax budget
+- sales tax
+- seniors
+- tax credits
+- tax exemptions
+- taxes
+- taxing districts
+authority: LOGAN
 ---
-
 Logan Finney, McClure Center 
 
 BOISE — The House Revenue and Taxation Committee is gearing up to consider this year’s tax proposals. Wednesday’s hearing saw the introduction of several bills aimed at |property and grocery taxes. 

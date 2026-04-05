@@ -1,8 +1,51 @@
 ---
-author: "Emily Jones"
+author: Emily Jones
 outlet:
-  - "Idaho Mountain Express"
+- Idaho Mountain Express
 URL: https://www.mtexpress.com/news/blaine_county/sawtooth-valley-ranch-owner-michael-boren-sues-county-commissioner-others-in-defamation-lawsuit/article_beb83f48-e839-11ec-b30f-c34c441b8470.html
+related:
+- '480'
+- Act
+- Blaine County
+- Boise
+- Challis
+- County Commissioners
+- Custer
+- Custer County
+- FAA
+- Federal Aviation Administration
+- First Amendment
+- Hailey
+- ICF
+- Idaho
+- Idaho Falls
+- Idaho Mountain Express
+- Ketchum
+- NRA
+- Post Register
+- Salmon
+- Salmon River
+- Sawtooth National Recreation Area
+- Squirrel
+- Stanley
+- Thomas
+- U.S. Forest Service
+- YouTube
+- air ambulance
+- airport
+- cattle
+- construction
+- emergency medical services
+- end goal
+- helicopter
+- individuals
+- irrigation
+- meeting
+- ranch
+- valley
+- wetlands
+- word
+authority: LOGAN
 ---
 A year after Custer County officials approved a conditional-use permit application from Boise businessman Michael Boren—officially recognizing a portion of his Stanley-area ranch as a private airstrip—Boren has sued four individuals, including Blaine County Commissioner Dick Fosbury, for defamation.
 

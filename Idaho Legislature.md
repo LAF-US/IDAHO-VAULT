@@ -1,4 +1,44 @@
 ---
+related:
+- Capitol Services Committee
+- Change in Employee Compensation
+- Change in Employee Compensation Committee
+- Child Protection Legislative Oversight Committee
+- Committee on Federalism
+- Committee on Uniform Accounting and Transparency
+- Council
+- Council on Indian Affairs
+- Criminal Justice Reinvestment Oversight Committee
+- Economic Outlook and Revenue Assessment Committee
+- Equitable Assessment of Costs Related to Medicaid Expansion Committee
+- Expenditure of ARPA Funds Study Committee
+- Idaho
+- Idaho Commission for Redistricting
+- Idaho Content Standards Study Committee
+- Idaho House of Representatives
+- Idaho Senate
+- Intrastate Commercial Air Service Study Committee
+- Joint Finance-Appropriations Committee
+- Joint Legislative Oversight Committee
+- Joint Millennium Fund Committee
+- Legislative Council
+- Legislative Services Office
+- Medicaid
+- Medicaid Expansion
+- Medicaid Managed Care Task Force
+- Millennium Fund
+- Natural Resources Interim Committee
+- Occupational Licensing and Certification Laws Committee
+- Occupational and Professional Licensure Review Committee
+- Property Taxes and Revenue Expenditures Study Committee
+- State of Idaho
+- legislative
+- working group - Education
+- working group - Finance-Appropriations
+- working group - Judiciary and Rules
+- working group - Property Tax
+- working group - State Affairs
+authority: LOGAN
 ---
 *Bicameral legislative branch of the State of Idaho. Administrative management by Legislative Council and the Legislative Services Office.*
 - **lower chamber**: Idaho House of Representatives - Representatives 

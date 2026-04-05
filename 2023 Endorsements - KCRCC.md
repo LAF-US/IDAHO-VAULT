@@ -1,4 +1,44 @@
 ---
+related:
+- Brian Winkler
+- Clark Albritton
+- Coeur d'Alene
+- Curt Jernigan
+- Dalton Gardens
+- Daniel Finley
+- Hauser
+- Hayden
+- Joe Malloy
+- John Hatcher
+- Jon Verkist
+- Justin Rupinski
+- Kootenai
+- Kootenai County
+- Kootenai County Fire & Rescue
+- Kootenai County Republican Central Committee
+- Larry Sanders
+- Luke Sommer
+- Matt Blatt
+- Michelle
+- Michelle Thompson
+- Mike Hill
+- Northern Lakes Fire Protection District
+- Post Falls
+- Ramona Grissom
+- Randi Bain
+- Randy Westlund
+- Rathdrum
+- Roger Garlock
+- Samantha Stiegleder
+- Sanders
+- Susan Jean Supp
+- Thomas
+- Thomas Shafer
+- Yasmin Harris
+- city council
+- mayor
+- school board
+authority: LOGAN
 ---
 Below are all candidates recommended by the Kootenai County Republican Central Committee this November:
 # Coeur d'Alene 

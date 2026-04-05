@@ -1,9 +1,21 @@
 ---
-author: 
+author: null
 outlet:
-  - "Associated Press"
-  - "KTVB"
+- Associated Press
+- KTVB
 URL: https://www.ktvb.com/article/news/local/jerome-county-plans-to-build-new-larger-jail/277-273508564
+related:
+- '135'
+- '250'
+- '277'
+- Associated Press
+- Idaho
+- Jerome
+- Jerome County
+- KTVB
+- inmates
+- jails
+authority: LOGAN
 ---
 Jerome -- Officials in Jerome County in south-central Idaho plan to break ground on a new jail and sheriff's office in March after voters finally approved an $11.2 million bond.
 

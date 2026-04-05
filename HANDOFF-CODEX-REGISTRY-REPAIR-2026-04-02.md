@@ -1,18 +1,37 @@
 ---
-title: "HANDOFF - Codex Registry Repair"
+title: HANDOFF - Codex Registry Repair
 created: 2026-04-02
 updated: 2026-04-02
 status: active
-authority: "LOGAN"
+authority: LOGAN
 authors:
-  - ChatGPT Codex
+- ChatGPT Codex
 type: handoff
 source: issue/LAF-28
 related:
-  - LAF-25
-  - LAF-28
+- -LAF
+- '2026-04-02'
+- AGENT-PROTOCOL
+- AGENT-REGISTRY
+- AGENTS
+- BRIEF-LAF-28-2026-04-02
+- CONSTITUTION
+- ChatGPT
+- DECISIONS
+- LAF
+- LAF-25
+- LAF-28
+- LEVELSET
+- LOGAN
+- PROTOCOL
+- README
+- README 1
+- The world is quiet here
+- VAULT-CONVENTIONS
+- agent
+- chain
+- codex
 ---
-
 # HANDOFF - Codex Registry Repair
 
 ## Why this repair was needed

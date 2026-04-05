@@ -1,12 +1,24 @@
 ---
-source: "https://www.loeb.com/en/insights/passle/2026/03/ninth-circuit-rules-parts-of-california-ageappropriate-design-code-are-effective-and-enforceable"
-author:
+source: https://www.loeb.com/en/insights/passle/2026/03/ninth-circuit-rules-parts-of-california-ageappropriate-design-code-are-effective-and-enforceable
+author: null
 published: 2026-03-17
 created: 2026-03-26
-title: 2026-03-17 -  Loeb & Loeb LLP - Ninth Circuit Rules Parts of California Age-Appropriate Design Code Are Effective and Enforceable
-linter-yaml-title-alias: 2026-03-17 -  Loeb & Loeb LLP - Ninth Circuit Rules Parts of California Age-Appropriate Design Code Are Effective and Enforceable
+title: 2026-03-17 -  Loeb & Loeb LLP - Ninth Circuit Rules Parts of California Age-Appropriate
+  Design Code Are Effective and Enforceable
+linter-yaml-title-alias: 2026-03-17 -  Loeb & Loeb LLP - Ninth Circuit Rules Parts
+  of California Age-Appropriate Design Code Are Effective and Enforceable
+related:
+- '2026-03-17'
+- '2026-03-26'
+- California
+- LLP
+- NOT
+- children
+- district court
+- parents
+- sign
+authority: LOGAN
 ---
-
 The Ninth Circuit issued another decision on the preliminary injunction enjoining the enactment of California's Age-Appropriate Design Code (AADC) on March 12, continuing the saga of the first AADC in America. The Ninth Circuit maintained an injunction enjoining some of the provisions, but many of the provisions are now active and enforceable. Below is a list of the provisions that are and are not effective after the March 12, 2026, decision.
 
 The following sections are NOT effective:

@@ -1,7 +1,27 @@
 ---
 author:
-  - "Josh Wheeler"
-  - "Idaho Main Street Caucus"
+- Josh Wheeler
+- Idaho Main Street Caucus
+related:
+- 2023 legislative session
+- Bear
+- Bear Lake
+- Boise
+- Idaho
+- Idaho Legislature
+- Idaho Main Street Caucus
+- Josh Wheeler
+- Lake
+- Legislative District 35
+- Meridian
+- Teton
+- Treg Bernt
+- counties
+- first responders
+- law enforcement
+- legislative
+- legislative session
+authority: LOGAN
 ---
 **As a freshman legislator, I found it immensely helpful to connect with legislators and mentors who shared my goal to practice principled conservatism in the Idaho Legislature.** Our East Idaho Coalition represents one example of this collaboration. Most of our east Idaho legislators saw the value of this group effort. They opted to participate in summits and informal discussions about issues important to our community all last year and throughout the 2023 legislative session.
 

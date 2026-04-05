@@ -1,9 +1,31 @@
 ---
 author:
-  - "Sydney Kidd"
+- Sydney Kidd
 outlet:
-  - "BoiseDev"
+- BoiseDev
 URL: https://boisedev.com/news/2023/12/18/ada-county-looking-to-run-jail-bond-again-timeline-tbd/
+related:
+- '949'
+- '985'
+- Ada County
+- Ada County Jail
+- BoiseDev
+- County Clerk
+- County Commissioners
+- County Sheriff
+- Idaho
+- Matt Clifford
+- bonds
+- construction
+- costs
+- election
+- general election
+- housing
+- inmates
+- meeting
+- money
+- primary election
+authority: LOGAN
 ---
 The Ada County Sheriff’s Office is not giving up after the attempt to expand its overcrowded jail via a bond narrowly failed in November.
 

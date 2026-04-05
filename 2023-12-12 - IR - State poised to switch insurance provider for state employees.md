@@ -1,9 +1,30 @@
 ---
 author:
-  - "Logan Finney"
+- Logan Finney
 outlet:
-  - "Idaho Reports"
+- Idaho Reports
 URL: https://blog.idahoreports.idahoptv.org/2023/12/12/state-considering-health-insurance-switch-for-employees/
+related:
+- Blue Cross of Idaho
+- Boise
+- CEC
+- Change in Employee Compensation
+- Change in Employee Compensation Committee
+- Fiscal Year 2025
+- Idaho
+- Idaho Reports
+- John Gannon
+- Logan Finney
+- Office of Group Insurance
+- PERSI
+- Regence BlueShield of Idaho
+- State of Idaho
+- costs
+- health insurance
+- money
+- school districts
+- teachers
+authority: LOGAN
 ---
 The State of Idaho is considering a new health insurance provider for its employees, lawmakers on the Change in Employee Compensation Committee (CEC) learned in a presentation Tuesday from representatives of the state’s purchasing division and office of group insurance. 
 

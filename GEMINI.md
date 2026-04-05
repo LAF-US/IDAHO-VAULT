@@ -1,8 +1,16 @@
 ---
 date created: Monday, March 23rd 2026, 4:54:52 pm
 date modified: Monday, March 30th 2026, 5:16:32 pm
+related:
+- AGENTS
+- CLI
+- CONSTITUTION
+- Gemini CLI
+- Google
+- IDE
+- agent
+authority: LOGAN
 ---
-
 # Gemini
 
 Gemini is the AI coding agent provided by Google, operating in IDAHO-VAULT as **"The Vault Advisor"** — holds the narrative lens, personal context, and Google Workspace productivity tools. Advises on framing, strategy, and provides direct codebase assistance via CLI/IDE integration.

@@ -1,9 +1,31 @@
 ---
 author:
-  - "David Pace"
+- David Pace
 outlet:
-  - "Post Register"
+- Post Register
 URL: https://www.postregister.com/news/local/bryan-smith-elected-as-idaho-gop-national-committeeman/article_de0cfcc8-2fee-11ee-92eb-b7cc4baad37d.html
+related:
+- Boise
+- Bonneville County
+- Bryan Smith
+- Challis
+- Damond Watkins
+- David Pace
+- Dorothy Moon
+- GOP
+- Idaho
+- Idaho Republican Party
+- Jefferson County
+- Legislative District 3
+- NCM
+- Post Register
+- RNC
+- Republican National Committee
+- election
+- meeting
+- voting
+- website
+authority: LOGAN
 ---
 Bryan Smith was elected as the Idaho GOP national committeeman at a special meeting of the Republican State Central Committee on Saturday in Boise.
 

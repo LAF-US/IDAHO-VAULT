@@ -1,4 +1,11 @@
 ---
+related:
+- Board of Pharmacy
+- Brad Little
+- Department of Health and Welfare
+- Division of Financial Management
+- Public Charter School Commission
+authority: LOGAN
 ---
 Gov. Brad Little administration
 - Department of Health and Welfare director 2024-

@@ -1,10 +1,28 @@
 ---
 outlet:
-  - "KREM"
+- KREM
 url: https://www.krem.com/article/news/local/shoshone-co-hopeful-22m-bond-will-fix-aging-overcrowded-jail/293-da6573d0-395b-4032-ba1b-a5f7245ac0c9
 author:
-  - "Taylor Viydo"
+- Taylor Viydo
 published: 2019-10-17
+related:
+- '293'
+- '800'
+- Idaho
+- Mike Gunderson
+- Nez Perce County
+- Shoshone
+- Shoshone County
+- Shoshone County Jail
+- Silver Valley
+- Wallace
+- construction
+- inmates
+- money
+- sign
+- supermajority
+- water
+authority: LOGAN
 ---
 The Shoshone County Jail was built in the early 1970s and has been showing increasing symptoms of wear and tear in recent years
 

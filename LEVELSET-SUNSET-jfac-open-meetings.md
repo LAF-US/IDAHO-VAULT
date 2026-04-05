@@ -6,8 +6,14 @@ tier: 1
 date: 2026-03-15
 branch: unknown
 status: flagged-for-sunset-synthesis-pending
+related:
+- '2026-03-15'
+- LEVELSET
+- LOGAN
+- Logan's
+- agent
+authority: LOGAN
 ---
-
 # LEVELSET Sunset Report — STORY: JFAC Open Meetings — 2026-03-15
 
 ---

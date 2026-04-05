@@ -1,8 +1,78 @@
 ---
 date created: Wednesday, April 1st 2026, 9:45:17 pm
 date modified: Wednesday, April 1st 2026, 9:45:59 pm
+related:
+- '150'
+- '2026-03-17'
+- '900'
+- '911'
+- Act
+- Anthropic
+- Boise
+- Bridge
+- CLAUDE
+- Cut
+- DIE
+- FOR
+- GAP
+- GCP
+- GEMINI
+- GitHub
+- Google
+- III
+- LAF
+- LEVELSET
+- LLM
+- LOG
+- LOGAN
+- MCP
+- MDS
+- MDT
+- Obsidian
+- PING
+- PROTOCOL
+- R&D
+- RAM
+- RING
+- SEE
+- SIGNAL
+- THE
+- TOUCHSTONE
+- The Librarian
+- YOU
+- 'Yes'
+- agent
+- assistant
+- budget
+- canon
+- chain
+- construction
+- definition
+- drag
+- end goal
+- fire
+- formula
+- index
+- infrastructure
+- initial
+- legislative
+- legislative session
+- links
+- math
+- meeting
+- node
+- nodes
+- persona
+- self
+- symbol
+- threshold
+- unachievable
+- verbal
+- voice
+- window
+- word
+authority: LOGAN
 ---
-
 Research inquiry: canon; D&D ; "Power Word"s (e.g. kill) ... [ ? ]
 
 ## Gemini said

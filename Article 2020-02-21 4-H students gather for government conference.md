@@ -1,4 +1,22 @@
 ---
+related:
+- '200'
+- Boise
+- Brad Little
+- C. Scott Green
+- Department of Agriculture
+- Governor
+- Idaho
+- Logan Finney
+- McClure Center
+- President
+- State of Idaho
+- U.S. Department of Agriculture
+- University of Idaho
+- judges
+- legislative
+- social media
+authority: LOGAN
 ---
 Secondary source: https://www.loganfinney.com/idaho-legislature-2020/2/21/4-h-government-conference 
 

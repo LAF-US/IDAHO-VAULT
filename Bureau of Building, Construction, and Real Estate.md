@@ -1,4 +1,9 @@
 ---
+related:
+- Factory
+- Idaho
+- Real Estate Commission
+authority: LOGAN
 ---
 ### **Bureau of Building, Construction, and Real Estate** – Amy Lorenzo
 Amy Lorenzo

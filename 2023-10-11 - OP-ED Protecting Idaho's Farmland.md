@@ -1,6 +1,16 @@
 ---
 author:
-  - "Idaho Main Street Caucus"
+- Idaho Main Street Caucus
+related:
+- Idaho
+- Idaho Main Street Caucus
+- Magic Valley
+- agriculture
+- housing
+- legislative
+- legislative session
+- water
+authority: LOGAN
 ---
 As the summer comes to an end and we enter the autumn season, farmers continue to bring in this year’s harvest. The fruits of summer’s labor are being realized and we pray that producers can bring in another successful crop here in the Magic Valley and around the state.
 

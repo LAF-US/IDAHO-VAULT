@@ -1,3 +1,16 @@
+---
+authority: LOGAN
+related:
+- '2026-03-30'
+- '2026-04-04'
+- GitHub
+- agent
+- codex
+- coordination
+- persona
+- template
+---
+
 ﻿# Branch Unification Status — 2026-04-04
 
 - Scope: remote branches on origin

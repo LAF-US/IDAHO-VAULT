@@ -1,4 +1,9 @@
 ---
+related:
+- Idaho
+- Idaho Public Television
+- Idaho Reports
+authority: LOGAN
 ---
 me! 7B Boy, Born-and-Raised
 

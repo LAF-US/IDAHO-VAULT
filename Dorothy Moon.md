@@ -1,4 +1,10 @@
 ---
+related:
+- Darr Moon
+- House member
+- Secretary of State
+- Stanley
+authority: LOGAN
 ---
 Residence: Stanley
 - IDGOP chairwoman 2023-

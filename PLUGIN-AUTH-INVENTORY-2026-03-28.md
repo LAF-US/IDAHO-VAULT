@@ -2,6 +2,21 @@
 created: 2026-03-28
 status: complete
 phase: auth-inventory
+related:
+- '2026-03-28'
+- Drive
+- GitHub
+- Google
+- LOGAN
+- Logan Finney
+- Logan's
+- MCP
+- agent
+- coordination
+- doctrine
+- format
+- infrastructure
+authority: LOGAN
 ---
 # Plugin Auth Inventory - 2026-03-28
 

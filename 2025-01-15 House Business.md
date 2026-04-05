@@ -1,6 +1,37 @@
 ---
 cmte:
-  - "House Business"
+- House Business
+related:
+- Act
+- Brent Crane
+- Cornel Rasor
+- Dean Cameron
+- Department of Insurance
+- Division of Occupational and Professional Licenses
+- HSB
+- Horseshoe Bend
+- House Business
+- Idaho
+- Idaho Athletic Commission
+- Jason Monks
+- Joe Palmer
+- Josh Wheeler
+- Kent Marmon
+- Kyle Harris
+- LSO
+- Lance Clow
+- Rob Beiswenger
+- Steve Berch
+- Surplus Lines Association of Idaho
+- costs
+- executive order
+- fire
+- firefighters
+- homeowners
+- money
+- voice
+- voice vote
+authority: LOGAN
 ---
 RS 31906 Idaho Building Code Act - Joe Palmer 
 

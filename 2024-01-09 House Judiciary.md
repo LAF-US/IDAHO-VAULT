@@ -1,6 +1,21 @@
 ---
 cmte:
-  - "House Judiciary, Rules and Administration"
+- House Judiciary, Rules and Administration
+related:
+- Bruce Skaug
+- House Health and Welfare
+- House Judiciary, Rules and Administration
+- Joe Alfieri
+- Kenny Wroten
+- artificial intelligence
+- child pornography
+- children
+- internet crimes against children
+- law enforcement
+- pornography
+- voice
+- voice vote
+authority: LOGAN
 ---
 2 RS from Bruce Skaug 
 

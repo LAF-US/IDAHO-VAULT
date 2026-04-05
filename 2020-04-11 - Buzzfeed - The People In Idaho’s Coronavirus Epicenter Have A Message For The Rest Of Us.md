@@ -1,9 +1,71 @@
 ---
 author:
-  - "Anne Helen Petersen"
+- Anne Helen Petersen
 outlet:
-  - "Buzzfeed News"
+- Buzzfeed News
 URL: https://www.buzzfeednews.com/article/annehelenpetersen/coronavirus-covid-19-idaho-blaine-county-sun-valley
+related:
+- '103'
+- '200'
+- '250'
+- '282'
+- '300'
+- '452'
+- '504'
+- '661'
+- '700'
+- Anne Helen Petersen
+- Arkansas
+- Bellevue
+- Blaine County
+- Blaine County School District
+- Boise
+- CDC
+- California
+- DNR
+- Facebook
+- Google
+- Hailey
+- ICU
+- Idaho
+- Ketchum
+- Mexico
+- Montana
+- Morgan
+- New York
+- Seattle
+- Sun Valley
+- Twin Falls
+- Washington
+- Wood River Valley
+- affordable housing
+- airport
+- children
+- cities
+- coronavirus
+- costs
+- emergency room
+- health care
+- homes
+- hospitals
+- housing
+- mayor
+- meeting
+- numbers
+- nurses
+- parents
+- ranch
+- roads
+- school board
+- self
+- social media
+- taxes
+- teachers
+- that moment
+- valley
+- wildfire
+- word
+authority: LOGAN
 ---
 *The rural area around Sun Valley, Idaho, became one of the earliest hot spots of COVID-19 cases in the US. Now, its residents can teach us something about what’s next.*
 

@@ -1,10 +1,15 @@
 ---
-title: "Taskbone"
+title: Taskbone
 updated: 2026-03-29
 status: active
 source: https://app.taskbone.com/documentation/how-to-guides/getting-started-with-obsidian
+related:
+- '2026-03-29'
+- OCR
+- Obsidian
+- character
+authority: LOGAN
 ---
-
 # Taskbone
 
 Taskbone is an Obsidian plugin that provides OCR (optical character recognition) capabilities and optional Todoist task sync. It can extract text from images pasted into notes.

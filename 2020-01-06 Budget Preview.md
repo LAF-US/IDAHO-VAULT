@@ -1,5 +1,31 @@
 ---
-cmte: 
+cmte: null
+related:
+- '146'
+- '806'
+- Alex Adams
+- BSU
+- Budget Stabilization Fund
+- CTE
+- Career Technical Education
+- College of Eastern Idaho
+- DAY
+- Eastern Idaho
+- General Fund
+- INL
+- ISU
+- Idaho
+- Joint Finance-Appropriations Committee
+- Kuna
+- Medicaid
+- Medicaid Expansion
+- Millennium Fund
+- TAX
+- Twin Falls
+- budget
+- counties
+- money
+authority: LOGAN
 ---
 Monday Jan 6
 

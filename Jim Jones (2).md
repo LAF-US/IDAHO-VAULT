@@ -1,5 +1,30 @@
 ---
 source: commit
+related:
+- '142'
+- '207'
+- '640'
+- Attorney General
+- Boise
+- Chief Justice
+- Eden
+- Idaho
+- Idaho Capital Sun
+- Idaho Code
+- Idaho Press
+- Idaho Press Club
+- Idaho Supreme Court
+- JFAC Working Groups
+- Jim Jones
+- Joint Finance-Appropriations Committee
+- OLC
+- Oregon
+- Star
+- Twin Falls
+- U.S. Senate
+- assistant
+- cancer
+authority: LOGAN
 ---
 Jim Jones is a retired Idaho Supreme Court Justice (2005–2017) who wrote the dissent in Idaho Press Club v. State Legislature containing footnote 13 — the statutory tension argument that undergirds the 2026 JFAC open-meetings challenge — and who continues to write about JFAC overreach as an Idaho Capital Sun columnist.
 

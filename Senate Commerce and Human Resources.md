@@ -1,4 +1,14 @@
 ---
+related:
+- Brian Lenney
+- Dan Foreman
+- Doug Ricks
+- Janie Ward-Engelking
+- Jim Guthrie
+- Kevin Cook
+- Linda Wright Hartgen
+- Todd Lakey
+authority: LOGAN
 ---
 # Roster
 ## 2023 Members

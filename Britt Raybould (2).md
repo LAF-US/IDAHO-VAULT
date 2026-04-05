@@ -1,5 +1,25 @@
 ---
 source: commit
+related:
+- Boise
+- Britt Raybould
+- CFO
+- GOP
+- House Appropriations
+- House member
+- IFF
+- Idaho
+- JFAC Working Groups
+- Joint Finance-Appropriations Committee
+- Logan Finney
+- MPC
+- Madison County
+- Mike Moyle
+- Rexburg
+- Ron Nate
+- budget
+- election
+authority: LOGAN
 ---
 Britt Raybould is a Republican Idaho House member from District 34B (Rexburg) who served on JFAC through 2024 and was removed from the committee and all appropriations work by Mike Moyle at the December 2024 organizational session.
 

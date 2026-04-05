@@ -1,4 +1,84 @@
 ---
+related:
+- Abby Lee
+- Alex Caval
+- Ali Rabe
+- Ben Fuhriman
+- Britt Raybould
+- Brooke Green
+- C. Scott Grow
+- Carrie Semmelroth
+- Chenele Dixon
+- Chris Mathias
+- Chuck Winder
+- Clay Handy
+- Dan Garner
+- Dave Lent
+- Dori Healey
+- Doug Ricks
+- Douglas Pickett
+- Dustin Manwaring
+- Geoff Schroeder
+- Greg Lanting
+- Idaho
+- Idaho Legislature
+- Idaho Prosperity Fund
+- Ilana Rubel
+- Jack Nelsen
+- James Petzke
+- James Ruchti
+- Janie Ward-Engelking
+- Jeff Agenbroad
+- Jeff Cornilles
+- Jeff Ehlers
+- Jerald Raymond
+- Jim Guthrie
+- Jim Woodward
+- John Shirts
+- Jon Weber
+- Josh Wheeler
+- Judy Boyle
+- Julie VanOrden
+- Julie Yamamoto
+- Kelly Anthon
+- Kenny Wroten
+- Kevin Cook
+- Lance Clow
+- Laurie Lickley
+- Linda Wright Hartgen
+- Lori Bishop
+- Lori Den Hartog
+- Lori McCann
+- Marco Erickson
+- Mark Harris
+- Mark Sauter
+- Matt Bundy
+- Megan Blanksma
+- Melissa Durrant
+- Melissa Wintrow
+- Mickelsen
+- Mike Moyle
+- Nate Roberts
+- Ned Burns
+- Raymond
+- Rick Cheatum
+- Robert Blair
+- Roberts
+- Rod Furniss
+- Sarah Chaney
+- Scott Grow
+- Scott Syme
+- Shawn Dygert
+- Soñia Galaviz
+- Stephanie Mickelsen
+- Steve Miller
+- Ted Hill
+- Todd Lakey
+- Treg Bernt
+- Van Burtenshaw
+- Wendy Horman
+- infrastructure
+authority: LOGAN
 ---
 Supported by IACI for 2024 Idaho Legislature elections.
 

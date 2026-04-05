@@ -1,8 +1,30 @@
 ---
 date created: Saturday, March 28th 2026, 5:27:10 pm
 date modified: Saturday, March 28th 2026, 5:29:47 pm
+related:
+- '2026-03-28'
+- BUT
+- FOR
+- Google
+- NOT
+- Notebook LM
+- SEO
+- THE
+- budgets
+- connections
+- copyright
+- costs
+- humans
+- initial
+- journalists
+- links
+- meeting
+- police
+- social media
+- systems
+- voice
+authority: LOGAN
 ---
-
 Notebook LM 2026-03-28
 
 ---

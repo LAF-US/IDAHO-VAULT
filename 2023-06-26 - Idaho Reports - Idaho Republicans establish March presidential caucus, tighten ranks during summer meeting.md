@@ -1,9 +1,51 @@
 ---
 author:
-  - "Melissa Davlin"
+- Melissa Davlin
 outlet:
-  - "Idaho Reports"
+- Idaho Reports
 URL: https://blog.idahoreports.idahoptv.org/2023/06/26/idaho-republicans-establish-march-presidential-caucus-tighten-ranks-during-summer-meeting/
+related:
+- 2023 legislative session
+- Bonner County
+- Bonner County Daily Bee
+- Bonner County Republican Central Committee
+- Brad Little
+- Challis
+- Dorothy Moon
+- GOP
+- Glenneda Zuiderveld
+- Idaho
+- Idaho Reports
+- Idaho Republican Party
+- Idaho Young Republicans
+- Lori McCann
+- Maria Nate
+- Mark Sauter
+- Melissa Davlin
+- Phil McGrane
+- Ron Nate
+- Secretary of State
+- Tom Luna
+- Twin Falls
+- abortion
+- central committees
+- children
+- counties
+- election
+- general election
+- legislative
+- legislative session
+- libraries
+- meeting
+- party platform
+- political parties
+- presidential primary
+- special session
+- veto
+- vocal
+- voice
+- voting
+authority: LOGAN
 ---
 During its summer meeting, the Idaho Republican Party easily passed a number of proposals that raised concerns among some long-time party members. While some Republicans praised the meeting as the most unified and well-organized the party has seen in a decade, others walked away worried leadership was shutting out dissent. 
 

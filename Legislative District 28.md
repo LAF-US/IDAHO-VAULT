@@ -1,4 +1,18 @@
 ---
+related:
+- Bannock County
+- Dan Garner
+- Franklin
+- Franklin County
+- Jim Guthrie
+- Kelley Packer
+- Kevin Andrus
+- Lake
+- Power County
+- Randy Armstrong
+- Rick Cheatum
+- Steve Bair
+authority: LOGAN
 ---
 Power County, Franklin County & part of Bannock County
 - formerly Power County & part of Bannock

@@ -1,8 +1,37 @@
 ---
-author: "Kaye Thornbrugh"
+author: Kaye Thornbrugh
 outlet:
-  - "Coeur d'Alene Press"
+- Coeur d'Alene Press
 URL: https://cdapress.com/news/2022/jun/14/patriot-front-arrestees-scheduled-arraignment/
+related:
+- '300'
+- '911'
+- Arkansas
+- Coeur d'Alene
+- Coeur d'Alene Press
+- Colorado
+- County Sheriff
+- Genesee
+- Idaho
+- Idaho Falls
+- Illinois
+- Kaye Thornbrugh
+- Kootenai
+- Kootenai County
+- Missouri
+- Oregon
+- Patriot Front
+- South Dakota
+- Spokane
+- Texas
+- Thomas
+- Thomas Ryan Rousseau
+- Utah
+- Wyoming
+- neo-Nazi
+- white nationalist
+- white supremacist
+authority: LOGAN
 ---
 COEUR D'ALENE -- The 31 men associated the white nationalist group Patriot Front who were arrested in Coeur d'Alene Saturday must appear in person before a Kootenai County judge next month.
 

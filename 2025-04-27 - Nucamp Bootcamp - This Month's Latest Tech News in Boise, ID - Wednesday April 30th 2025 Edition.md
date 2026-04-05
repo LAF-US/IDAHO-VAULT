@@ -1,9 +1,95 @@
 ---
-source: "https://www.nucamp.co/blog/this-months-latest-tech-news-in-boise-id--wednesday-april-30th-2025-edition"
+source: https://www.nucamp.co/blog/this-months-latest-tech-news-in-boise-id--wednesday-april-30th-2025-edition
 author:
-  - "Ludo Fourrage"
+- Ludo Fourrage
 published: 2025-04-27
 created: 2026-03-30
+related:
+- '200'
+- '2026-03-30'
+- '250'
+- '300'
+- '310'
+- '315'
+- '325'
+- '400'
+- '453'
+- '485'
+- '500'
+- '600'
+- '620'
+- '661'
+- '694'
+- '800'
+- '960'
+- AMD
+- Act
+- Boise
+- Boise State University
+- BoiseDev
+- CEO
+- CRM
+- ChatGPT
+- Colburn
+- Council
+- DGA
+- DLR
+- DOE
+- Florida
+- GDP
+- GPS
+- Google
+- Idaho
+- Idaho Capital Sun
+- Idaho Legislature
+- Idaho Power
+- Idaho Statesman
+- Ilana Rubel
+- Kuna
+- MSU
+- Mesa
+- Micron Technology
+- Montana
+- Morgan
+- New York
+- OpenAI
+- Oregon
+- Oregon Capital Chronicle
+- Paul
+- Pleasant Valley
+- Portland
+- President
+- RIA
+- STEM
+- San Francisco
+- U.S. Department of Energy
+- Utah
+- Virginia
+- Washington
+- 'Yes'
+- YouTube
+- artificial intelligence
+- children
+- cities
+- connections
+- construction
+- costs
+- economic development
+- electricity
+- fire
+- homes
+- infrastructure
+- legislative
+- legislative session
+- police
+- sales tax
+- systems
+- tax exemptions
+- utility
+- voiced
+- water
+- wildfire
+authority: LOGAN
 ---
 ![Aerial view of Boise, Idaho with digital graphics overlay symbolizing technology and AI data centers.](https://storage.googleapis.com/nucamp-production.appspot.com/aiseo-blogs/monthly-news-nucamp-utpaakmdmtidiami-wednesday-april-30th-2025/this-months-latest-tech-news-in-boise-id--wednesday-april-30th-2025-edition/thumbnail01.webp)
 

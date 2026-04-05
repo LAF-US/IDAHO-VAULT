@@ -1,4 +1,10 @@
 ---
+related:
+- Act
+- Frank Church
+- Idaho
+- U.S. Congress
+authority: LOGAN
 ---
 # Frank Church: A Featured Biography
 

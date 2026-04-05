@@ -1,4 +1,47 @@
 ---
+related:
+- American Falls
+- American Falls High School
+- Bill Gilbert
+- Boise
+- Brad Little
+- CEO
+- Chuck Winder
+- Dean Mortimer
+- Debbie Critchfield
+- Gary Marshall
+- Genesee
+- Genesee Joint School District
+- House Education
+- INL
+- Idaho
+- Idaho Education Association
+- Idaho Falls
+- Idaho House of Representatives
+- Idaho School Boards Association
+- Idaho Senate
+- Idaho State PTA
+- Janie Ward-Engelking
+- Jason Monks
+- Joint Finance-Appropriations Committee
+- Kimberly
+- Kimberly School District
+- Lance Clow
+- Lewiston
+- Mat Erpelding
+- Nampa
+- Nampa High School
+- PTA
+- President
+- Senate Education
+- Shawn Keough
+- Sherri Ybarra
+- St. Maries
+- State Board of Education
+- Superintendent of Public Instruction
+- Wendy Horman
+- West Ada School District
+authority: LOGAN
 ---
 commissioned by Gov. Butch Otter and continued by Brad Little 
 

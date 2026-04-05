@@ -1,6 +1,32 @@
 ---
 cmte:
-  - "Senate Commerce and Human Resources"
+- Senate Commerce and Human Resources
+related:
+- '490'
+- Building Contractors Association of Southwest Idaho
+- California
+- Counseling Compact
+- Human Resources
+- Idaho
+- Idaho Constitution
+- James Ruchti
+- Janie Ward-Engelking
+- Jim Guthrie
+- Mark Harris
+- New York
+- Senate Commerce and Human Resources
+- Tammy Nichols
+- Todd Lakey
+- Treg Bernt
+- administrative rules
+- building codes
+- construction
+- counselors
+- district court
+- therapists
+- voice
+- voice vote
+authority: LOGAN
 ---
 1:30pm Tuesday January 21
 

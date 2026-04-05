@@ -1,12 +1,26 @@
 ---
-outlet: "Mountain States Policy Center"
-url: "https://www.mountainstatespolicy.org/post/idaho-is-preparing-students-and-educators-for-an-ai-driven-future"
+outlet: Mountain States Policy Center
+url: https://www.mountainstatespolicy.org/post/idaho-is-preparing-students-and-educators-for-an-ai-driven-future
 author:
-  - "Meg Goudy"
-title: "- Mountain States Policy Center - Idaho is preparing students and educators for an AI-driven future"
-linter-yaml-title-alias: "- Mountain States Policy Center - Idaho is preparing students and educators for an AI-driven future"
+- Meg Goudy
+title: '- Mountain States Policy Center - Idaho is preparing students and educators
+  for an AI-driven future'
+linter-yaml-title-alias: '- Mountain States Policy Center - Idaho is preparing students
+  and educators for an AI-driven future'
+related:
+- Debbie Critchfield
+- Dirk Kempthorne
+- Google
+- Idaho
+- Kevin Cook
+- Mountain States Policy Center
+- Superintendent of Public Instruction
+- artificial intelligence
+- nonprofits
+- systems
+- teachers
+authority: LOGAN
 ---
-
 ![Students in a classroom using laptops, facing a projected presentation on a screen. Whiteboards with notes are visible in the background.](https://static.wixstatic.com/media/a52f4c_0fd70e0fe80a4e3e8e970f0a5b1170ef~mv2.jpg/v1/fill/w_640,h_640,al_c,q_85,enc_avif,quality_auto/a52f4c_0fd70e0fe80a4e3e8e970f0a5b1170ef~mv2.jpg)
 
 Students in a classroom using laptops, facing a projected presentation on a screen. Whiteboards with notes are visible in the background.

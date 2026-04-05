@@ -1,5 +1,21 @@
 ---
 source: commit
+related:
+- Ada County
+- CCA
+- Capitol Correspondents Association
+- Capitol Correspondents Association CCA Letter March 2026
+- Eagle
+- Idaho
+- Idaho Senate
+- JFAC Working Groups
+- Jeff Agenbroad
+- Joint Finance-Appropriations Committee
+- Josh Tanner
+- Mike Moyle
+- Senate member
+- Wendy Horman
+authority: LOGAN
 ---
 Scott Grow is the Republican Idaho Senate member from District 14 (Eagle) serving as JFAC Senate co-chair since 2023 and co-recipient of the CCA open-meetings letter in March 2026.
 

@@ -1,9 +1,121 @@
 ---
 author:
-  - "Anne Helen Petersen"
+- Anne Helen Petersen
 outlet:
-  - "Buzzfeed News"
+- Buzzfeed News
 URL: https://www.buzzfeednews.com/article/annehelenpetersen/idaho-redoubt-gun-control-rights-second-amendment
+related:
+- '105'
+- '444'
+- '700'
+- Anne Helen Petersen
+- Aryan Nations
+- Avery
+- Barack Obama
+- Bart Davis
+- Boise
+- Boise State University
+- Bonner County
+- Bridge
+- CEO
+- CVS
+- California
+- Canyon County
+- Chad Christensen
+- Colorado
+- County Sheriff
+- Dan McDonald
+- Daryl Wheeler
+- Davillier Law Group
+- Donald Trump
+- Eastern Idaho
+- Facebook
+- Festival at Sandpoint
+- Freedom
+- GOP
+- Greg Pruett
+- Heather Scott
+- Idaho
+- Idaho Constitution
+- Idaho Legislature
+- Idaho Second Amendment Alliance
+- Idaho State Journal
+- Idaho Statesman
+- Lake
+- Lake Pend Oreille
+- Lewiston
+- Liberty
+- Long Bridge
+- Medicaid
+- Medicaid Expansion
+- Montana
+- NRA
+- Nampa
+- Nevada
+- New York
+- North Idaho
+- Ohio
+- Oregon
+- Paris
+- Pocatello
+- Portland
+- Reclaim Idaho
+- Redoubt
+- Richard Butler
+- Sandpoint
+- Scott Bedke
+- Scott Herndon
+- Seattle
+- Second Amendment
+- Senate Majority Leader
+- Shelby Rognstad
+- Texas
+- Thomas
+- Treasure Valley
+- Twin Falls
+- Twin Falls County
+- USA
+- University of Idaho
+- Virginia
+- War Memorial Field
+- Washington
+- Wyoming
+- YouTube
+- abortion
+- anti-abortion
+- atheist
+- ballot initiatives
+- cannabis
+- children
+- cities
+- city council
+- costs
+- counties
+- deer
+- district court
+- election
+- elk
+- hunting
+- individuals
+- law enforcement
+- legislative
+- lobbying
+- math
+- mayor
+- meeting
+- money
+- police
+- right to bear arms
+- robocalls
+- self
+- sign
+- social media
+- taxes
+- turkey
+- voting
+- water
+- white supremacy
+authority: LOGAN
 ---
 *The national war over gun control remains at a standstill. But in the small Idaho town of Sandpoint, Second Amendment activists are fortifying the rights they say are constitutionally theirs — no matter the cost.*
 

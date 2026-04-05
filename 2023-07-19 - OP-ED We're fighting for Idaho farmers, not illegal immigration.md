@@ -1,6 +1,60 @@
 ---
 author:
-  - "Idaho Main Street Caucus"
+- Idaho Main Street Caucus
+related:
+- '101'
+- Abby Lee
+- Boise
+- Burley
+- C. Scott Grow
+- Chenele Dixon
+- Chuck Winder
+- Dave Lent
+- Doug Ricks
+- Eagle
+- Fruitland
+- Geoff Schroeder
+- Home
+- Idaho
+- Idaho Falls
+- Idaho Main Street Caucus
+- Idaho Republican Party
+- Jerald Raymond
+- Jim Guthrie
+- Joe Biden
+- Judy Boyle
+- Julie VanOrden
+- Kelly Anthon
+- Kevin Cook
+- Kimberly
+- Kuna
+- Linda Wright Hartgen
+- Lori Den Hartog
+- Mark Harris
+- McCammon
+- Melissa Durrant
+- Menan
+- Meridian
+- Mickelsen
+- Midvale
+- Mountain Home
+- Nampa
+- Pingree
+- President
+- Raymond
+- Rexburg
+- Rigby
+- Rod Furniss
+- Scott Grow
+- Soda Springs
+- Stephanie Mickelsen
+- Terreton
+- Todd Lakey
+- Treg Bernt
+- Twin Falls
+- Van Burtenshaw
+- agriculture
+authority: LOGAN
 ---
 The age-old saying goes “If you ate today, thank a farmer.”
 

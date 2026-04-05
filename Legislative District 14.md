@@ -1,4 +1,17 @@
 ---
+related:
+- Ada County
+- C. Scott Grow
+- Chuck Winder
+- Eagle
+- Gayann DeMordaunt
+- Gem County
+- Josh Tanner
+- Marv Hagedorn
+- Mike Moyle
+- Scott Grow
+- Ted Hill
+authority: LOGAN
 ---
 Gem County & northern Ada County including Eagle
 - formerly northern Ada County 

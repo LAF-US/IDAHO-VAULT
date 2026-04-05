@@ -1,3 +1,23 @@
+---
+authority: LOGAN
+related:
+- '2026-03-18'
+- '2026-03-22'
+- Copilot
+- GitHub
+- Logan's
+- Logan's Project & Protocols
+- NotebookLM
+- Obsidian
+- UNIFIED
+- UNIFIED (US) SWARM
+- UTC
+- agent
+- coordination
+- format
+- persona
+---
+
 # GitHub Copilot (Claude Haiku 4.5) Session Context
 
 **Agent:** GitHub Copilot running Claude Haiku 4.5

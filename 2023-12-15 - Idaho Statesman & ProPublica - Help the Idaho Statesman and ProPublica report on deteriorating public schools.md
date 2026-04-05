@@ -1,11 +1,31 @@
 ---
 author:
-  - "Becca Savransky"
-  - "Asia Fields"
+- Becca Savransky
+- Asia Fields
 outlet:
-  - "Idaho Statesman"
-  - "ProPublica"
+- Idaho Statesman
+- ProPublica
 URL: https://www.idahostatesman.com/news/local/education/article274241585.html
+related:
+- Becca Savransky
+- Bonners Ferry
+- FOR
+- HOW
+- Idaho
+- Idaho Statesman
+- ProPublica
+- Sarah Miller
+- View
+- fire
+- flooding
+- infrastructure
+- parents
+- systems
+- teachers
+- water
+- window
+- word
+authority: LOGAN
 ---
 Students and educators in Idaho describe challenging conditions in schools: bats getting in through a window casing; classrooms that are “sweltering” in the fall; an HVAC unit nearly catching fire; basements flooding during heavy rain; a lack of accessible bathrooms; and, in at least two districts, coal heating systems triggering people’s asthma. 
 

@@ -1,3 +1,19 @@
+---
+authority: LOGAN
+related:
+- Cascade
+- FOR
+- Logan's
+- PING
+- PROTOCOL
+- The world is quiet here
+- VFD
+- agent
+- coordination
+- persona
+- symbol
+---
+
 # XKCD PROTOCOL SUITE: Multi-Personality Interaction Framework
 ## Draft v0.1 — Logan Review & Synthesis
 

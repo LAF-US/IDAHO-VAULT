@@ -1,9 +1,27 @@
 ---
 author:
-  - "Rod Beck"
-  - "Ryan Davidson"
-  - "Tom Dayley"
+- Rod Beck
+- Ryan Davidson
+- Tom Dayley
 URL: https://www.idahostatesman.com/opinion/readers-opinion/article282809028.html
+related:
+- '501'
+- Ada County
+- Boise
+- County Commissioners
+- IAC
+- Idaho
+- Idaho Association of Counties
+- Tom Dayley
+- WCA
+- counties
+- hospitals
+- money
+- nonprofits
+- property tax
+- tax exemptions
+- taxes
+authority: LOGAN
 ---
 In the coming months, you will begin hearing more about a proposal in the Legislature that will allow counties in Idaho to evaluate property tax exemptions for nonprofit hospitals under the same rules as other nonprofits. Some of the criticisms you are already hearing are misleading. It is important, especially if you pay property taxes, to understand the facts. 
 

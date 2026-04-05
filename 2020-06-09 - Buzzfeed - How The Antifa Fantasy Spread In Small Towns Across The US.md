@@ -1,9 +1,52 @@
 ---
 author:
-  - "Anne Helen Petersen"
+- Anne Helen Petersen
 outlet:
-  - "Buzzfeed News"
+- Buzzfeed News
 URL: https://www.buzzfeednews.com/article/annehelenpetersen/antifa-rumors-george-floyd-protests
+related:
+- '500'
+- '800'
+- Anne Helen Petersen
+- Antifa
+- County Sheriff
+- Donald Trump
+- FBI
+- Facebook
+- III
+- Idaho
+- Lewiston
+- Liberty
+- Missoula
+- Montana
+- New York
+- North Idaho
+- Oregon
+- Payette
+- President
+- Reddit
+- Sandpoint
+- Seattle
+- Second Amendment
+- Snake River
+- Spokane
+- Twitter
+- Washington
+- arrests
+- cities
+- election
+- emoji
+- law enforcement
+- neo-Nazi
+- police
+- racism
+- religion
+- sign
+- social media
+- website
+- white nationalist
+- word
+authority: LOGAN
 ---
 *Rumors of roving bands of Antifa have followed small protests all over the United States. Why are people so ready to believe them?*
 

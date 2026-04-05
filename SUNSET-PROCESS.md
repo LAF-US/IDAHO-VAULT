@@ -2,8 +2,22 @@
 type: sunset-process
 version: 1.0
 date: 2026-03-15
+related:
+- '2026-03-15'
+- AGENT-REGISTRY
+- CLAUDE
+- GIT
+- GitHub
+- LEVELSET
+- LOGAN
+- Logan's
+- PUBLIC
+- agent
+- deliverables
+- format
+- template
+authority: LOGAN
 ---
-
 # Sunset Process — Non-Persistent Agent Lifecycle
 
 Formal workflow for identifying, flagging, synthesizing, and deleting ephemeral Claude Code agents in IDAHO-VAULT.

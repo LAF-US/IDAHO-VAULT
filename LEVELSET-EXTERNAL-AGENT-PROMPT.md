@@ -1,6 +1,23 @@
 ---
 created: 2026-03-22
 source: commit
+related:
+- '2026-03-22'
+- ARE
+- CONSTITUTION
+- GitHub
+- LEVELSET
+- LEVELSET-v3.2.6.1-PROMPT
+- LOGAN
+- Logan Finney
+- NOT
+- Obsidian
+- WHO
+- YOU
+- agent
+- infrastructure
+- template
+authority: LOGAN
 ---
 # STEP-0 LEVELSET — LOGAN + IDAHO-VAULT (EXTERNAL AGENT)
 

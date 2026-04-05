@@ -1,10 +1,36 @@
 ---
-title: "!README"
-linter-yaml-title-alias: "!README"
+title: '!README'
+linter-yaml-title-alias: '!README'
 date created: Monday, March 23rd 2026, 4:54:50 pm
 date modified: Saturday, March 28th 2026, 11:04:19 pm
+related:
+- BODY
+- CHARTER
+- CONSTITUTION
+- FRAMEWORKS
+- GRIMOIRE
+- GUESTBOOK
+- GUIDELINES
+- Logan's
+- Logan's Project & Protocols
+- MIND
+- Obsidian
+- PREFERENCES
+- PROCEDURES
+- PROTOCOLS
+- README
+- SOUL
+- THE
+- THE CORE
+- THE GHOST
+- THE PERIPHERY
+- TOUCHSTONE
+- The world is quiet here
+- UNIFIED
+- UNIFIED (US) SWARM
+- template
+authority: LOGAN
 ---
-
 This is Logan A. Finney's internal Obsidian.md vault. Agents must follow all frameworks.
 
 TOUCHSTONE FRAMEWORKS

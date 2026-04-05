@@ -1,4 +1,13 @@
 ---
+related:
+- '208'
+- '375'
+- '707'
+- Boise
+- Central Idaho
+- Idaho
+- Treasure Valley
+authority: LOGAN
 ---
 Director: Russ Duke  
 707 North Armstrong Place  

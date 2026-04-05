@@ -4,8 +4,23 @@ source: commit
 status: draft
 date created: Wednesday, April 1st 2026, 11:16:46 pm
 date modified: Thursday, April 2nd 2026, 10:36:55 pm
+related:
+- '2026-03-23'
+- AGENTS
+- CLAUDE
+- ChatGPT
+- FLAG
+- FOR
+- GEMINI
+- LEVELSET
+- LEVELSET-EXTERNAL-AGENT-PROMPT
+- LOGAN
+- READY-STATE-2026-03-23
+- YOU
+- agent
+- coordination
+authority: LOGAN
 ---
-
 # HANDOFF: ChatGPT Codex → Gemini (2026-03-23)
 
 **Date:** 2026-03-23

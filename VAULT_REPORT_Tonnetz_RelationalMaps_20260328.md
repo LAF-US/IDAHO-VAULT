@@ -1,8 +1,25 @@
 ---
 date created: Saturday, March 28th 2026, 2:45:08 pm
 date modified: Monday, March 30th 2026, 10:33:40 am
+related:
+- '1000'
+- '2026-03-28'
+- ISO
+- Logan Finney
+- Logan's
+- NOW
+- The world is quiet here
+- agent
+- bridges
+- coordination
+- math
+- nodes
+- synonym
+- systems
+- voice
+- window
+authority: LOGAN
 ---
-
 # IDAHO-VAULT Research Report
 
 ## Tonnetz \& Relational-Map Models for Swarm Coordination

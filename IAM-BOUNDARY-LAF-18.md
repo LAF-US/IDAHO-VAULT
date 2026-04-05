@@ -1,17 +1,31 @@
 ---
-title: "IAM Boundary Table — LAF-18"
+title: IAM Boundary Table — LAF-18
 created: 2026-04-01
 updated: 2026-04-01
 status: draft
-authority: "LOGAN"
+authority: LOGAN
 authors:
-  - ChatGPT Codex
-linear_id: "LAF-18"
+- ChatGPT Codex
+linear_id: LAF-18
 type: implementation-note
 source: issue/LAF-18
 generated: false
+related:
+- -LAF
+- '2026-03-30'
+- '2026-04-01'
+- '2026-04-04'
+- BRIEF-LAF-18-2026-03-30
+- ChatGPT
+- Cloud
+- GCS
+- Google
+- IAM
+- LAF
+- LOGAN
+- coordination
+- initial
 ---
-
 ## Purpose
 
 This file is the concrete IAM boundary artifact required by `!/BRIEF-LAF-18-2026-03-30.md` before any Gemini + Google Cloud automation lane is promoted beyond pilot.

@@ -1,4 +1,13 @@
 ---
+related:
+- Ada County
+- Ada County Republican Central Committee
+- Boise
+- Brad Little
+- Idaho
+- Idaho Power
+- University of Idaho
+authority: LOGAN
 ---
 Residence: Boise 
 Graduate: University of Idaho 

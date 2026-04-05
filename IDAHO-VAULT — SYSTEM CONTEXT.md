@@ -2,9 +2,40 @@
 date created: Saturday, March 28th 2026, 5:25:53 pm
 date modified: Saturday, March 28th 2026, 5:29:05 pm
 author:
-  - "ChatGPT"
+- ChatGPT
+related:
+- '2026-03-28'
+- '398'
+- '583'
+- '900'
+- AGENTS
+- API
+- ARCHITECTURE
+- CONSTITUTION
+- CSV
+- ChatGPT
+- DECISIONS
+- GAP
+- GitHub
+- Logan Finney
+- Logan's
+- MCP
+- MVP
+- NOT
+- Notebook LM
+- Obsidian
+- PDF
+- QUESTIONS
+- SOURCE
+- The world is quiet here
+- VAULT-CONVENTIONS
+- agent
+- coordination
+- infrastructure
+- legislative
+- systems
+authority: LOGAN
 ---
-
 Notebook LM 2026-03-28
 
 ---

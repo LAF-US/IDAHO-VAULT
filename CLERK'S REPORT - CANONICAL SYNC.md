@@ -1,8 +1,22 @@
 ---
 date created: Sunday, March 29th 2026, 11:05:20 pm
 date modified: Sunday, March 29th 2026, 11:06:03 pm
+related:
+- '2026-03-29'
+- Bartimaeus
+- CANONICAL
+- III
+- Idaho
+- LAF
+- LLM
+- LOGAN
+- PROTOCOL
+- PROTOCOLS
+- State of Idaho
+- THE
+- canon
+authority: LOGAN
 ---
-
 CANON: BOOKS ; STROUD
 CLERK'S REPORT: CANONICAL SYNC
 TO: Presiding Justice LOGAN

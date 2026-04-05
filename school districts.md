@@ -1,4 +1,325 @@
 ---
+related:
+- '101'
+- '111'
+- '121'
+- '131'
+- '132'
+- '133'
+- '134'
+- '135'
+- '136'
+- '137'
+- '139'
+- '148'
+- '149'
+- '150'
+- '151'
+- '161'
+- '171'
+- '181'
+- '182'
+- '191'
+- '192'
+- '193'
+- '201'
+- '202'
+- '215'
+- '221'
+- '231'
+- '232'
+- '233'
+- '234'
+- '242'
+- '243'
+- '244'
+- '251'
+- '252'
+- '253'
+- '261'
+- '262'
+- '271'
+- '272'
+- '273'
+- '274'
+- '281'
+- '282'
+- '283'
+- '285'
+- '287'
+- '288'
+- '291'
+- '292'
+- '302'
+- '304'
+- '305'
+- '312'
+- '314'
+- '316'
+- '321'
+- '322'
+- '331'
+- '341'
+- '342'
+- '351'
+- '363'
+- '364'
+- '365'
+- '370'
+- '371'
+- '372'
+- '373'
+- '381'
+- '382'
+- '383'
+- '391'
+- '392'
+- '393'
+- '394'
+- '401'
+- '411'
+- '412'
+- '413'
+- '414'
+- '415'
+- '416'
+- '417'
+- '418'
+- '421'
+- '422'
+- '431'
+- '432'
+- '433'
+- Aberdeen
+- Aberdeen School District
+- American Falls
+- American Falls Joint School District
+- Arbon
+- Arbon Elementary School District
+- Avery
+- Avery School District
+- Basin
+- Basin School District
+- Bear
+- Bear Lake
+- Bear Lake County
+- Bear Lake County School District
+- Blackfoot
+- Blackfoot School District
+- Blaine County
+- Blaine County School District
+- Bliss
+- Bliss Joint School District
+- Boise
+- Boise School District
+- Bonner County
+- Bonneville Joint School District
+- Boundary County
+- Boundary County School District
+- Bruneau
+- Bruneau-Grand View Joint School District
+- Buhl
+- Buhl Joint School District
+- Butte County
+- Butte County Joint School District
+- Caldwell
+- Caldwell School District
+- Camas County
+- Camas County School District
+- Cambridge
+- Cambridge Joint School District
+- Cascade
+- Cascade School District
+- Cassia County
+- Cassia County Joint School District
+- Castleford
+- Castleford School District
+- Challis
+- Challis Joint School District
+- Chubbuck
+- Clark County
+- Clark County School District
+- Coeur d'Alene
+- Coeur d'Alene School District
+- Cottonwood
+- Cottonwood Joint School District
+- Council
+- Council School District
+- Culdesac
+- Culdesac Joint School District
+- Dietrich
+- Dietrich School District
+- Donnelly
+- Emmett
+- Emmett Independent School District
+- Filer
+- Filer School District
+- Firth
+- Firth School District
+- Fremont County
+- Fremont County Joint School District
+- Fruitland
+- Fruitland School District
+- Garden Valley
+- Garden Valley School District
+- Genesee
+- Genesee Joint School District
+- Glenns Ferry
+- Glenns Ferry Joint School District
+- Gooding
+- Gooding Joint School District
+- Grace
+- Grace Joint School District
+- Grand View
+- Hagerman
+- Hagerman Joint School District
+- Hansen
+- Hansen School District
+- Highland Joint School District
+- Home
+- Homedale
+- Homedale Joint School District
+- Horseshoe Bend
+- Horseshoe Bend School District
+- Idaho
+- Idaho Falls
+- Idaho Falls School District
+- Jefferson County
+- Jefferson County School District
+- Jerome
+- Jerome Joint School District
+- Kamiah
+- Kamiah Joint School District
+- Kellogg
+- Kellogg Joint School District
+- Kendrick
+- Kendrick Joint School District
+- Kimberly
+- Kimberly School District
+- Kootenai
+- Kootenai School District
+- Kuna
+- Kuna Joint School District
+- Lake
+- Lake Pend Oreille
+- Lake Pend Oreille School District
+- Lakeland Joint School District
+- Lapwai
+- Lapwai School District
+- Lemhi
+- Lewiston
+- Lewiston Independent School District
+- Mackay
+- Mackay Joint School District
+- Madison School District
+- Marsh Valley
+- Marsh Valley Joint School District
+- Marsing
+- Marsing Joint School District
+- McCall
+- McCall-Donnelly Joint School District
+- Meadows
+- Meadows Valley Public School District
+- Melba
+- Melba Joint School District
+- Middleton
+- Middleton School District
+- Midvale
+- Midvale School District
+- Minidoka
+- Minidoka County
+- Minidoka County Joint School District
+- Moscow
+- Moscow School District
+- Mountain Home
+- Mountain Home School District
+- Mountain View School District
+- Mullan
+- Mullan School District
+- Murtaugh
+- Murtaugh Joint School District
+- Nampa
+- Nampa School District
+- New Plymouth
+- New Plymouth School District
+- Nezperce
+- Nezperce Joint School District
+- North Gem School District
+- Notus
+- Notus School District
+- Oneida County
+- Oneida County School District
+- Orofino
+- Orofino Joint School District
+- Parma
+- Parma School District
+- Payette
+- Payette Joint School District
+- Pleasant Valley
+- Pleasant Valley School District
+- Plummer
+- Plummer-Worley Joint School District
+- Pocatello
+- Pocatello-Chubbuck School District
+- Post Falls
+- Post Falls School District
+- Potlatch
+- Potlatch School District
+- Prairie
+- Prairie Elementary School District
+- Preston
+- Preston Joint School District
+- Richfield
+- Richfield School District
+- Ririe
+- Ririe Joint School District
+- Rockland
+- Rockland School District
+- Saint Maries Joint School District
+- Salmon
+- Salmon River
+- Salmon River Joint School District
+- Salmon School District
+- Shelley
+- Shelley Joint School District
+- Shoshone
+- Shoshone Joint School District
+- Snake River
+- Snake River School District
+- Soda Springs
+- Soda Springs Joint School District
+- South Lemhi School District
+- State of Idaho
+- Sugar-Salem Joint School District
+- Swan Valley
+- Swan Valley Elementary School District
+- Teton
+- Teton County
+- Teton County School District
+- Three Creek Joint Elementary School District
+- Troy
+- Troy School District
+- Twin Falls
+- Twin Falls School District
+- Valley School District
+- Vallivue School District
+- View
+- Wallace
+- Wallace School District
+- Weiser
+- Weiser School District
+- Wendell
+- Wendell School District
+- West Ada School District
+- West Bonner County School District
+- West Jefferson School District
+- West Side Joint School District
+- Whitepine Joint School District
+- Wilder
+- Wilder School District
+- Worley
+- bond elections
+authority: LOGAN
 ---
 All public school districts in the State of Idaho, by county (can run bond elections)
 

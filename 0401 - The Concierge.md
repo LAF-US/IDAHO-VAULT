@@ -1,8 +1,164 @@
 ---
 date created: Wednesday, April 1st 2026, 9:41:01 pm
 date modified: Wednesday, April 1st 2026, 9:45:00 pm
+related:
+- '116'
+- '150'
+- '2026-03-17'
+- '2026-04-01'
+- '354'
+- '371'
+- '469'
+- '609'
+- '674'
+- '729'
+- '820'
+- '895'
+- '897'
+- '911'
+- '978'
+- A&I
+- AGENTIC
+- API
+- ARE
+- AWAKENS
+- Act
+- Adam McCoy
+- Anthropic
+- Bartimaeus
+- Boise
+- Bridge
+- Britt Raybould
+- CLAUDE
+- ChatGPT
+- Cloud
+- CrewAI
+- DIE
+- Data Centers
+- FAC
+- FLAG
+- FOR
+- FRAMEWORK
+- GAP
+- GCP
+- GEMINI
+- GET
+- GUESTBOOK
+- GitHub
+- Google
+- HAS
+- HEX
+- III
+- INK
+- IRL
+- Idaho
+- Idaho Legislature
+- Idaho Public Television
+- Idaho Senate
+- Jacques
+- Joint Finance-Appropriations Committee
+- LAF
+- LCD
+- LEVELSET
+- LEVELSET-CURRENT
+- LFS
+- LLM
+- LOG
+- LOGAN
+- Logan Finney
+- Logan's
+- MCP
+- MDS
+- MDT
+- MOB
+- Melissa Davlin
+- Mickelsen
+- Mike Moyle
+- NUMBER
+- NotebookLM
+- OITS
+- ONE
+- Obsidian
+- Office of Information Technology Services
+- PDF
+- PING
+- PROTOCOLS
+- PTV
+- Pinpoint
+- Podcast
+- R&D
+- RAM
+- RED
+- RING
+- SUN
+- TAX
+- THE
+- THE CORE
+- The Concierge
+- The Librarian
+- The Stranger
+- The world is quiet here
+- UNIFIED
+- UNIFIED (US) SWARM
+- UTC
+- VAN
+- VFD
+- Van Burtenshaw
+- YOU
+- agent
+- agriculture
+- artificial intelligence
+- assistant
+- birds
+- blocked
+- bridges
+- budget
+- budgets
+- canon
+- character
+- codex
+- connections
+- construction
+- coordination
+- costs
+- definition
+- fire
+- fishing
+- format
+- homes
+- hunting
+- index
+- infrastructure
+- legislative
+- links
+- math
+- meeting
+- money
+- node
+- nodes
+- numbers
+- parents
+- passwords
+- persona
+- property tax
+- sales tax
+- self
+- sign
+- symbol
+- symbols
+- systems
+- tax exemptions
+- utility
+- verbal
+- voice
+- voting
+- water
+- water rights
+- web
+- window
+- word
+authority: LOGAN
 ---
-
 You said
 
 AUTHORITY QUESTIONED: THE MOB STIRS

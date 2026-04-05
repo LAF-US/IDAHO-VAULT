@@ -1,9 +1,45 @@
 ---
-source: "https://favs.news/idaho-lawmakers-pride-flag-bill-hearing/"
+source: https://favs.news/idaho-lawmakers-pride-flag-bill-hearing/
 author:
-  - "Logan Finney"
+- Logan Finney
 published: 2026-02-10
 created: 2026-03-27
+related:
+- '175'
+- '2026-03-27'
+- '277'
+- '501'
+- '561'
+- Ada County
+- Blanchard
+- Boise
+- Christian nationalism
+- Eagle
+- Franklin
+- FāVS
+- Heather Scott
+- House State Affairs
+- ICE
+- Idaho
+- Idaho Code
+- Jaron Crane
+- Joe Alfieri
+- LGBTQ+ pride
+- Lauren McLean
+- Logan Finney
+- Nampa
+- Spokane
+- Ted Hill
+- Washington
+- battery
+- cities
+- city council
+- journalists
+- mayor
+- religion
+- symbol
+- symbols
+authority: LOGAN
 ---
 ## Idaho bill would fine cities $2,000 daily for flying unapproved flags
 

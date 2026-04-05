@@ -2,6 +2,27 @@
 version: v0.1
 adopted: 2026-03-22
 status: active
+related:
+- '2026-03-22'
+- AGENTS
+- ARE
+- CONSTITUTION
+- CONTEXT-PASTE-BUNDLE
+- ChatGPT
+- Copilot
+- GitHub
+- III
+- LEVELSET
+- LOGAN
+- Logan Finney
+- Logan's
+- NOT
+- Obsidian
+- WHO
+- YOU
+- agent
+- infrastructure
+authority: LOGAN
 ---
 # ORIENT v0.1 — External Agent LEVELSET Protocol
 

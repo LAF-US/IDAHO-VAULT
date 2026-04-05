@@ -1,7 +1,49 @@
 ---
 URL: https://waterrights.utah.gov/meetinfo/task_force/wbanking/20180626-idaho_water_bank_faqs.pdf
+related:
+- '222'
+- '300'
+- '700'
+- Act
+- American Falls
+- Basin
+- Big Wood River
+- Boise
+- Burley
+- Department of Water Resources
+- III
+- Idaho
+- Idaho Code
+- Idaho Legislature
+- Idaho Water Resource Board
+- Lake
+- Lake Fork
+- Lemhi
+- Milner
+- Palisades
+- Payette
+- Payette River
+- Shoshone
+- Shoshone-Bannock Tribes
+- Snake River
+- Twin Falls
+- WSB
+- Wyoming
+- administrative rules
+- agent
+- beneficial use
+- costs
+- dollars
+- irrigation
+- links
+- prices
+- reservoirs
+- rivers
+- water
+- water rights
+- website
+authority: LOGAN
 ---
-
 ## Overview of the Idaho Water Supply Bank
 The Idaho Water Resource Board (Board) has the authority to operate the Idaho Water Supply Bank (Bank). The purposes of the Bank are to encourage the highest beneficial use of water, provide a source of adequate water supplies to benefit new and supplemental water uses, and provide a source of funding for improving water user facilities and efficiencies (Section 42-1761, Idaho Code). The Bank is essentially a water exchange market operated by the Board to assist in marketing the water rights of natural flow and water stored in Idaho reservoirs. It is a mechanism by which water rights that are not being used can be made available for use by others through the lease and rental process. 
 

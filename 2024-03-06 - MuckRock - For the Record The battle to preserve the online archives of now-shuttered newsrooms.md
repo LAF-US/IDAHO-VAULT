@@ -1,9 +1,36 @@
 ---
-source: "https://www.muckrock.com/news/archives/2024/mar/06/for-the-record-the-battle-to-preserve-the-online-archives-of-now-shuttered-newsrooms/"
+source: https://www.muckrock.com/news/archives/2024/mar/06/for-the-record-the-battle-to-preserve-the-online-archives-of-now-shuttered-newsrooms/
 author:
-  - "Kelly Kauffman"
+- Kelly Kauffman
 published: 2024-03-06
 created: 2026-03-30
+related:
+- '2026-03-30'
+- API
+- Act
+- CBS
+- CEO
+- Freedom
+- Internet
+- Mexico
+- NPR
+- Oregon
+- Texas
+- Twitter
+- USA
+- VICE Media
+- abortion
+- battery
+- cities
+- counties
+- fire
+- journalists
+- law enforcement
+- newspapers
+- prices
+- web
+- website
+authority: LOGAN
 ---
 The DCist.
 

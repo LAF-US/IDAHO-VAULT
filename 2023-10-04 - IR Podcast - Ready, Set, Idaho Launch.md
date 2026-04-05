@@ -1,9 +1,41 @@
 ---
 author:
-  - "Logan Finney"
+- Logan Finney
 outlet:
-  - "Idaho Reports"
+- Idaho Reports
 URL: https://blog.idahoreports.idahoptv.org/2023/10/04/podcast-ready-set-idaho-launch/
+related:
+- '240'
+- Council
+- Department of Labor
+- GPA
+- Governor
+- ISU
+- Idaho
+- Idaho Launch
+- Idaho Reports
+- Idaho State University
+- Logan Finney
+- Opportunity Scholarship
+- Pell Grants
+- State Board of Education
+- University of Idaho
+- Wendi Secrist
+- Workforce Development Council
+- community colleges
+- construction
+- health care
+- initial
+- legislative
+- legislative session
+- money
+- nurses
+- seniors
+- taxes
+- unemployment insurance
+- website
+- window
+authority: LOGAN
 ---
 One of the big headline bills during the last legislative session was setting up the Idaho Launch program, and this week, the applications for that grant have opened. Joining me to discuss Idaho Launch - and all of the work that went into getting it up and running - is Wendi Secrist, executive director of the Workforce Development Council. Thanks for joining us, Wendi.
 

@@ -1,4 +1,12 @@
 ---
+related:
+- House member
+- Idaho
+- Idaho State University
+- Nampa
+- Pocatello
+- Risch Pisca, PLLC
+authority: LOGAN
 ---
 Residence: Nampa 
 Hometown: Pocatello

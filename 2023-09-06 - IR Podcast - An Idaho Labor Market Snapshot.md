@@ -1,9 +1,30 @@
 ---
 author:
-  - "Logan Finney"
+- Logan Finney
 outlet:
-  - "Idaho Reports"
+- Idaho Reports
 URL: https://blog.idahoreports.idahoptv.org/2023/09/06/podcast-an-idaho-labor-market-snapshot/
+related:
+- '300'
+- Boise
+- Central Idaho
+- Commission on Hispanic Affairs
+- Department of Labor
+- Idaho
+- Idaho Reports
+- Logan Finney
+- MSA
+- North-Central Idaho
+- U.S. Bureau of Labor Statistics
+- U.S. Census
+- U.S. Census Bureau
+- 'Yes'
+- costs
+- humans
+- individuals
+- remote work
+- unemployment insurance
+authority: LOGAN
 ---
 *The Idaho Department of Labor had a lot of unanswered questions about labor trends and the effects of the COVID-19 pandemic – so they surveyed businesses across the state to ask them. Department of Labor regional economist Matthew Paskash joined Logan Finney this week to talk about the first annual Business Climate Survey and its findings.*
 

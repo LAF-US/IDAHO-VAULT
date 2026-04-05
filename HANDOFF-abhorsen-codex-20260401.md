@@ -1,3 +1,36 @@
+---
+authority: LOGAN
+related:
+- '104'
+- '113'
+- '114'
+- '115'
+- '118'
+- '119'
+- '120'
+- '121'
+- '122'
+- '134'
+- '150'
+- '2026-03-29'
+- '2026-04-01'
+- '403'
+- '438'
+- AGENTS
+- API
+- CrewAI
+- GitHub
+- Idaho
+- LEVELSET
+- LFS
+- Logan's
+- The world is quiet here
+- WIP
+- agent
+- blocked
+- coordination
+---
+
 HANDOFF: Claude Code (The Abhorsen) → Codex (Desktop)
 Date: 2026-04-01
 From: Claude Code — PERMANENT: AUTHORITY: CODE

@@ -1,4 +1,7 @@
 ---
+related:
+- Moscow
+authority: LOGAN
 ---
 Land grant university in Moscow.
 

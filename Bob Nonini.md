@@ -1,3 +1,6 @@
 ---
-residence: "Coeur d'Alene"
+residence: Coeur d'Alene
+related:
+- Coeur d'Alene
+authority: LOGAN
 ---

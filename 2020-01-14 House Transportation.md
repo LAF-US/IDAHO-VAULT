@@ -1,5 +1,50 @@
 ---
-cmte: "House Transportation and Defense"
+cmte: House Transportation and Defense
+related:
+- '101'
+- '203'
+- '272'
+- '309'
+- '373'
+- BPA
+- Bill Goesling
+- Budget Stabilization Fund
+- CEC
+- Clark Kauffman
+- Council
+- Division of Veterans Services
+- Federal Reserve
+- Gayann DeMordaunt
+- House Transportation and Defense
+- ITD
+- Joe Palmer
+- John Gannon
+- Keith Bybee
+- LSO
+- Local Highway Technical Assistance Council
+- Local Strategic Initiatives Program
+- Marv Hagedorn
+- Melissa Wintrow
+- Millennium Fund
+- Permanent Building Fund
+- Rainy Day Fund
+- Scott Syme
+- State Treasurer
+- Steven Harris
+- budget
+- budgets
+- definition
+- formula
+- highway districts
+- lobbyists
+- money
+- roads
+- sales tax
+- sales tax distribution formula
+- self
+- transportation
+- voice
+authority: LOGAN
 ---
 House Transportation and Defense, Jan 14, 1:30pm
 

@@ -1,3 +1,26 @@
+---
+authority: LOGAN
+related:
+- '2026-03-15'
+- '978'
+- API
+- CLAUDE
+- Copilot
+- DECISIONS
+- GitHub
+- Idaho
+- Idaho Public Television
+- Idaho Reports
+- LEVELSET
+- LEVELSET-CURRENT
+- LOGAN
+- Logan's
+- PROJECT
+- agent
+- assistant
+- web
+---
+
 LEVELSET PERMANENT: AUTHORITY: CODE — 2026-03-15
 
 ---

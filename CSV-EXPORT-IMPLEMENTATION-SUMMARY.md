@@ -1,3 +1,30 @@
+---
+authority: LOGAN
+related:
+- '200'
+- '2026-03-23'
+- '300'
+- '500'
+- API
+- CLI
+- CSV
+- GitHub
+- Governor
+- HCR
+- Idaho
+- Idaho Legislature
+- Idaho Reports
+- NOT
+- README
+- SCR
+- Senate Education
+- UTC
+- budget
+- format
+- legislative
+- syntax
+---
+
 # CSV Export Implementation - Summary
 
 **Date:** 2026-03-23

@@ -1,5 +1,33 @@
 ---
 source: commit
+related:
+- '207'
+- '770'
+- Attorney General
+- Boise
+- Clark Corbin
+- Conditions Limitations and Restrictions
+- FJM
+- Governor
+- Hawkins Companies v. Moyle
+- ITD
+- Idaho
+- Idaho Capital Sun
+- Idaho Code
+- Idaho Reports
+- Idaho Supreme Court
+- JFAC Working Groups
+- Jim Jones
+- Joint Finance-Appropriations Committee
+- Keith Bybee
+- Logan Finney
+- Mike Moyle
+- Phil McGrane
+- Wendy Horman
+- budget
+- budgets
+- costs
+authority: LOGAN
 ---
 On March 1, 2024, JFAC voted to insert intent language blocking the ITD Board's planned $51.7M sale of the State Street campus to a private buyer, generating a lawsuit, a gubernatorial rebuke, and an unresolved constitutional question about JFAC's authority to override executive-branch statutory power via appropriations language.
 

@@ -1,4 +1,13 @@
 ---
+related:
+- Act
+- U.S. Department of Housing and Urban Development
+- affordable housing
+- budget
+- construction
+- housing
+- tax credits
+authority: LOGAN
 ---
 administered by U.S. Department of Housing and Urban Development 
 

@@ -1,8 +1,20 @@
 ---
 date created: Sunday, March 29th 2026, 10:47:48 am
 date modified: Sunday, March 29th 2026, 10:48:33 am
+related:
+- GitHub
+- LAF
+- Logan Finney
+- THE
+- 'Yes'
+- agent
+- assistant
+- belonging
+- blocked
+- coordination
+- infrastructure
+authority: LOGAN
 ---
-
 # Manage Linear workspace and GitHub PRs
 
 ## User

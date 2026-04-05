@@ -1,7 +1,30 @@
 ---
-author: "Rachel Cohen"
-outlet: "Boise State Public Radio News"
+author: Rachel Cohen
+outlet: Boise State Public Radio News
 URL: https://www.boisestatepublicradio.org/news/2022-10-19/judge-dismisses-defamation-case-against-3-sawtooth-airstrip-defendants
+related:
+- Blaine County
+- Boise
+- Boise State Public Radio News
+- County Commissioners
+- Custer
+- Custer County
+- First Amendment
+- Idaho
+- Idaho Supreme Court
+- Sawtooth National Recreation Area
+- Strategic Lawsuit Against Public Participation
+- Thomas
+- YouTube
+- airport
+- anti-SLAPP
+- attorneys
+- character
+- construction
+- district court
+- housing
+- ranch
+authority: LOGAN
 ---
 An Idaho district court judge partially dismissed defamation claims made by Boise businessman Michael Boren against people who opposed his application for a private airstrip on his Sawtooth Valley ranch.
 

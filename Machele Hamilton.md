@@ -1,4 +1,16 @@
 ---
+related:
+- CDA
+- Clark Albritton
+- Idaho
+- Idaho Republican Party
+- Janice McGeachin
+- Jeff Cornilles
+- Nampa
+- Rick Youngblood
+- Sebastian Griffin
+- city council
+authority: LOGAN
 ---
 Residence: Nampa
 - listed as campaign treasurer for Clark Albritton in 2023 CDA city council race

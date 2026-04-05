@@ -1,8 +1,49 @@
 ---
 author:
-  - "Mike Simpson"
+- Mike Simpson
+related:
+- '120'
+- '250'
+- Act
+- California
+- Custer
+- Custer County
+- Dorothy Moon
+- FOR
+- Gowen Field
+- Home
+- INL
+- Idaho
+- Idaho National Laboratory
+- Idaho Republican Party
+- Jim Jordan
+- Mike Simpson
+- Mountain Home
+- Mountain Home Air Force Base
+- NOT
+- New York
+- Payments in Lieu of Taxes
+- Speaker of the House
+- THE
+- U.S. Congress
+- U.S. House
+- Washington
+- agriculture
+- counties
+- dollars
+- grouse
+- infrastructure
+- legislative
+- police
+- prices
+- property tax
+- transportation
+- voice
+- voting
+- wildfire
+- wolf
+authority: LOGAN
 ---
-
 I’M NOT OVER THE “MOON” FOR A SPEAKER JORDAN - IDAHO DESERVES BETTER
 
 Washington, October 20, 2023

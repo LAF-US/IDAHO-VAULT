@@ -1,9 +1,24 @@
 ---
 author:
-  - "Kalama Hines"
+- Kalama Hines
 outlet:
-  - "East Idaho News"
+- East Idaho News
 URL: https://www.eastidahonews.com/2023/12/many-fear-inkom-i-15-overpass-primed-for-catastrophic-failure-before-expected-2025-replacement/
+related:
+- Bible
+- East Idaho News
+- Eric Staats
+- ITD
+- Idaho
+- Inkom
+- Interstate 15
+- Kalama Hines
+- Pocatello
+- bridges
+- mayor
+- meeting
+- money
+authority: LOGAN
 ---
 INKOM — Some 25 Inkom residents gathered at the Inkom Community Bible Church Wednesday night to discuss a bridge.
 

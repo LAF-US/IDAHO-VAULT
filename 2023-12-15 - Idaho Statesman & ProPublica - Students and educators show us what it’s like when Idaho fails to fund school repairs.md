@@ -1,11 +1,115 @@
 ---
 author:
-  - "Becca Savransky"
-  - "Asia Fields"
+- Becca Savransky
+- Asia Fields
 outlet:
-  - "Idaho Statesman"
-  - "ProPublica"
+- Idaho Statesman
+- ProPublica
 URL: https://www.idahostatesman.com/news/local/education/article282967503.html
+related:
+- '108'
+- '115'
+- '200'
+- '233'
+- '250'
+- '400'
+- '814'
+- '900'
+- About
+- Act
+- Americans with Disabilities Act
+- Ammon
+- Avery
+- Avery School District
+- Basin
+- Basin School District
+- Becca Savransky
+- Boise
+- Boise School District
+- Butte County
+- Caldwell
+- Caldwell School District
+- Camas County
+- Camas County School District
+- Chubbuck
+- EPA
+- Emmett
+- Grace
+- Grace Joint School District
+- Heyburn
+- Home
+- Idaho
+- Idaho City
+- Idaho Falls
+- Idaho Falls School District
+- Idaho Statesman
+- Jefferson County
+- Jefferson County School District
+- Kamiah
+- Kootenai
+- Kootenai School District
+- Kuna
+- Lake
+- Lake Pend Oreille
+- Lake Pend Oreille School District
+- Meridian
+- Michelle
+- Moscow
+- Moscow School District
+- Moss
+- Mountain Home
+- Mountain Home School District
+- New Plymouth
+- New Plymouth School District
+- North Gem School District
+- Orofino
+- Paul
+- Peck
+- Plummer
+- Pocatello
+- Pocatello-Chubbuck School District
+- Post Falls
+- Post Falls School District
+- Potlatch
+- Potlatch School District
+- Priest River
+- ProPublica
+- Rigby
+- Salmon
+- Salmon School District
+- Shoshone
+- Snake River
+- St. Maries
+- Swan Valley
+- Syringa
+- Troy
+- Twin Falls
+- Twin Falls School District
+- University of Idaho
+- Valley School District
+- West Ada School District
+- West Jefferson School District
+- Worley
+- bond elections
+- bonds
+- bonds and levies
+- costs
+- dollars
+- ducks
+- election
+- fire
+- flooding
+- homes
+- infrastructure
+- meeting
+- money
+- parents
+- school districts
+- systems
+- teachers
+- water
+- window
+authority: LOGAN
 ---
 No other state spends less on school infrastructure per student than Idaho. As a result, many students, especially those in rural districts, deal with leaking ceilings, freezing classrooms and discolored drinking water. Some students have to miss school when the power or heat goes out. 
 

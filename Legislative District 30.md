@@ -1,4 +1,18 @@
 ---
+related:
+- Bingham County
+- Bonneville County
+- Butte County
+- David Cannon
+- Dean Mortimer
+- Elaine Smith
+- Gary Marshall
+- Julianne Young
+- Julie VanOrden
+- Kevin Cook
+- Roy
+- Wendy Horman
+authority: LOGAN
 ---
 Butte County & Bingham County
 - formerly part of Bonneville County

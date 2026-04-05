@@ -1,12 +1,33 @@
 ---
 cmte:
-  - "House Commerce and Human Resources"
-  - "House Education"
-  - "Senate Commerce and Human Resources"
+- House Commerce and Human Resources
+- House Education
+- Senate Commerce and Human Resources
 URL: https://legislature.idaho.gov/sessioninfo/2023/legislation/h0024/
 sponsor:
-  - "Megan Blanksma"
-  - "Dave Lent"
+- Megan Blanksma
+- Dave Lent
+related:
+- '174'
+- DEVELOPMENT
+- Dave Lent
+- Governor
+- Grant
+- HUMAN
+- House Commerce and Human Resources
+- House Education
+- Human Resources
+- Idaho
+- Idaho Launch
+- JRA
+- Megan Blanksma
+- Mickelsen
+- President
+- Raymond
+- Roberts
+- Senate Commerce and Human Resources
+- sunset clause
+authority: LOGAN
 ---
 by COMMERCE AND HUMAN RESOURCES COMMITTEE
 

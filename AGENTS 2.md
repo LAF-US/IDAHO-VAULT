@@ -2,11 +2,38 @@
 title: AGENTS
 updated: 2026-04-02
 status: active
-authority: "LOGAN"
+authority: LOGAN
 date created: Thursday, April 2nd 2026, 10:26:08 pm
 date modified: Thursday, April 2nd 2026, 11:44:55 pm
+related:
+- '2026-04-02'
+- AGENTS
+- Anthropic
+- CLAUDE
+- CLI
+- CONSTITUTION
+- Copilot
+- DECISIONS
+- GEMINI
+- GROK
+- Gemini CLI
+- GitHub
+- LEVELSET
+- LOGAN
+- OpenAI
+- PERPLEXITY
+- PERSEPHONE
+- VAULT-CONVENTIONS
+- ZAGREUS
+- agent
+- chain
+- codex
+- coordination
+- doctrine
+- index
+- infrastructure
+- persona
 ---
-
 # AGENTS - IDAHO-VAULT
 
 This is the canonical narrative registry for the vault's agent layer.

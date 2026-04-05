@@ -1,8 +1,37 @@
 ---
 URL: https://www.idahostatejournal.com/freeaccess/members-of-local-christian-congregations-hold-sit-in-protest-against-pocatello-drag-queen-reading-program/article_e00393e2-abfb-11ed-823a-db574748bf88.html
+related:
+- Bible
+- Chubbuck
+- Church of Jesus Christ of Latter-Day Saints
+- David Worley
+- First Amendment
+- Idaho
+- Idaho State Journal
+- LDS
+- Marshall Public Library
+- Pocatello
+- President
+- Reading Time with the Queens
+- Rexburg
+- Ron Nate
+- Southern Poverty Law Center
+- Worley
+- books
+- children
+- churches
+- doctrine
+- drag
+- fire
+- individuals
+- mayor
+- meeting
+- money
+- parents
+- sign
+- website
+authority: LOGAN
 ---
-
-
 Shelbie Harris, Idaho State Journal 
 
 Pocatello — East Idaho conservative leaders and members of local Christian churches held a peaceful sit-in to protest the Reading Time with the Queens event at the Marshall Public Library on Saturday.

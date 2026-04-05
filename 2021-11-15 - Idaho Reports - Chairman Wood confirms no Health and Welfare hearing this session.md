@@ -1,7 +1,28 @@
 ---
-author: "Melissa Davlin"
+author: Melissa Davlin
 outlet:
-  - "Idaho Reports"
+- Idaho Reports
+related:
+- '431'
+- Burley
+- Fred Wood
+- House Appropriations
+- House Business
+- House Health and Welfare
+- House Judiciary, Rules and Administration
+- House State Affairs
+- House Ways and Means
+- Idaho
+- Idaho Legislature
+- Idaho Reports
+- Melissa Davlin
+- Middleton
+- Randy Armstrong
+- Scott Bedke
+- Tammy Nichols
+- legislative
+- minors
+authority: LOGAN
 ---
 While the House Business Committee heard hours of testimony on vaccine and testing mandates, House Health and Welfare Committee chairman Rep. Fred Wood, R-Burley, spent Monday afternoon in his office, reading nine bills that House Speaker Scott Bedke had assigned to his committee. 
 

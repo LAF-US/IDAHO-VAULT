@@ -3,9 +3,36 @@ updated: 2026-03-17
 status: draft
 source: commit
 author:
-  - CODE AUTHORITY
+- CODE AUTHORITY
+related:
+- '2026-03-17'
+- ACK
+- AGENTS
+- CONSTITUTION
+- DECISIONS
+- ECHO
+- FLAG
+- FOR
+- III
+- ISO
+- LEVELSET
+- LEVELSET 2
+- LOG
+- LOGAN
+- Logan's
+- PROTOCOL
+- QUESTIONS
+- SIGNAL
+- VII
+- 'Yes'
+- agent
+- format
+- self
+- systems
+- verbal
+- voice
+authority: LOGAN
 ---
-
 # PROTOCOL: XKCD — Cross-Kind Communication Directive
 
 **Status:** DRAFT — awaiting Logan's review and synthesis

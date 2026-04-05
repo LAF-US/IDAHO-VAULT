@@ -1,4 +1,12 @@
 ---
+related:
+- Idaho
+- Idaho House of Representatives
+- Idaho Legislature
+- Idaho Senate
+- Rules of the House
+- Rules of the Senate
+authority: LOGAN
 ---
 **Idaho Legislature** 
 Rules of the House 

@@ -1,3 +1,9 @@
+---
+authority: LOGAN
+related:
+- Idaho
+---
+
 !IdahoCutDiagram.jpg
 
 # MASTHEAD

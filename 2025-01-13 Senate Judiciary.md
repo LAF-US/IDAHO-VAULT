@@ -1,8 +1,32 @@
 ---
 cmte:
-  - "Senate Judiciary and Rules"
+- Senate Judiciary and Rules
+related:
+- '180'
+- '250'
+- '400'
+- '978'
+- Blackfoot
+- Boise
+- Brian Lenney
+- First Amendment
+- ISP
+- Idaho
+- Nampa
+- Pocatello
+- Senate Judiciary and Rules
+- 'Yes'
+- anti-SLAPP
+- attorney’s fees
+- costs
+- definition
+- law enforcement
+- meeting
+- police
+- voice
+- voice vote
+authority: LOGAN
 ---
-
 Senate Judiciary and Rules
 
 January 13, 1:30 PM

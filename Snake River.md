@@ -1,4 +1,66 @@
 ---
+related:
+- American Falls
+- American Falls dam
+- American Falls reservoir
+- Bliss
+- Bliss dam
+- Bliss reservoir
+- Brownlee
+- Brownlee dam
+- Brownlee reservoir
+- CJ Strike dam
+- CJ Strike reservoir
+- Gem State dam
+- Hells Canyon
+- Hells Canyon dam
+- Hells Canyon dam complex
+- Hells Canyon reservoir
+- Ice Harbor dam
+- Idaho
+- Idaho Falls
+- Idaho Falls dams
+- Jackson
+- Jackson Lake
+- Jackson Lake dam
+- Lake
+- Lake Bryan
+- Lake Herbert G. West
+- Lake Sacajawea
+- Lake Walcott
+- Little Goose dam
+- Lower Granite Lake
+- Lower Granite dam
+- Lower Monumental dam
+- Lower Salmon Falls dam
+- Lower Salmon Falls reservoir
+- Milner
+- Milner Lake
+- Milner dam
+- Minidoka
+- Minidoka dam
+- Oregon
+- Oxbow dam
+- Oxbow reservoir
+- Palisades
+- Palisades dam
+- Palisades reservoir
+- Salmon
+- Shoshone
+- Shoshone Falls dam
+- Shoshone Falls reservoir
+- Swan Falls dam
+- Swan Falls reservoir
+- Twin Falls
+- Twin Falls dam
+- Twin Falls reservoir
+- Upper Salmon Falls dam
+- Upper Salmon Falls reservoir
+- Washington
+- Wyoming
+- dams
+- lower four Snake River dams
+authority: LOGAN
 ---
 major river that starts in Wyoming and flows through southern Idaho to Oregon and Washington, with numerous dams including the lower four Snake River dams and Hells Canyon dam complex 
 

@@ -1,9 +1,27 @@
 ---
 author:
-  - "Josh McDonald"
+- Josh McDonald
 outlet:
-  - "Shoshone News-Press"
+- Shoshone News-Press
 URL: https://shoshonenewspress.com/news/2023/oct/13/shoshone-county-loses-jail-certification/
+related:
+- '200'
+- '250'
+- ISA
+- Idaho
+- Mike Gunderson
+- Shoshone
+- Shoshone County
+- Shoshone County Jail
+- Shoshone News-Press
+- Wallace
+- cities
+- counties
+- election
+- housing
+- inmates
+- money
+authority: LOGAN
 ---
 Wallace –– “We have a major issue.”
 

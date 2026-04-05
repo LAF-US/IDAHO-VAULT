@@ -1,14 +1,40 @@
 ---
-source: "https://pv-magazine-usa.com/2023/05/18/meta-to-power-idaho-data-center-with-200-mw-rplus-solar-project/"
+source: https://pv-magazine-usa.com/2023/05/18/meta-to-power-idaho-data-center-with-200-mw-rplus-solar-project/
 author:
-  - "Michael Schoeck"
-  - "More articles from Michael Schoeck"
+- Michael Schoeck
+- More articles from Michael Schoeck
 published: 2023-05-18
 created: 2026-03-30
 date created: Monday, March 30th 2026, 3:39:08 pm
 date modified: Monday, March 30th 2026, 3:39:34 pm
+related:
+- '200'
+- '2026-03-30'
+- '220'
+- '280'
+- '644'
+- Ada County
+- Boise
+- DIY
+- EPC
+- Facebook
+- Idaho
+- Idaho Power
+- Lake
+- New York
+- PPA
+- Pleasant Valley
+- Salt Lake City
+- State of Idaho
+- Treasure Valley
+- USA
+- Utah
+- construction
+- new data center
+- social media
+- utility
+authority: LOGAN
 ---
-
 In its continuing quest to power [all of its data centers by renewable energy](https://pv-magazine-usa.com/2023/03/23/meta-picks-utilities-based-on-solar-potential-at-data-centers/), social media company Meta has moved into the Gem State of Idaho. The operator of Instagram, WhatsApp and Facebook turned to a Salt Lake City-based project developer to construct what could become the largest utility solar project in Idaho to support its Boise, Id., data operations, at 200 MW of power capacity.
 
 This week project developer rPlus Energies announced the signing of a long-term power purchase agreement (PPA) with investor-owned utility Idaho Power to install the 200 MW Pleasant Valley Solar project in Ada County, Idaho. Once completed, the utility solar project would be the largest solar farm in the utility’s service territory.

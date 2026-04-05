@@ -2,13 +2,23 @@
 title: 2026-03-28
 linter-yaml-title-alias: 2026-03-28
 weekday:
-  - Saturday
+- Saturday
 yesterday: 2026-03-27
 tomorrow: 2026-03-29
 date created: Friday, March 27th 2026, 10:10:22 am
 date modified: Sunday, March 29th 2026, 1:48:26 pm
+related:
+- '2026-03-27'
+- '2026-03-28'
+- '2026-03-29'
+- Franklin
+- PKG
+- Pierce
+- Rigby
+- TO DO LIST
+- WORK
+authority: LOGAN
 ---
-
 TO DO LIST
 - [x] VS Code extensions working well
 

@@ -1,4 +1,8 @@
 ---
+related:
+- Cassia County
+- Superintendent of Public Instruction
+authority: LOGAN
 ---
 Residence: Cassia County
 

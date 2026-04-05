@@ -1,4 +1,16 @@
 ---
+related:
+- Associated Taxpayers of Idaho
+- Blue Cross of Idaho
+- Boise
+- Boise State University
+- C.L. 'Butch' Otter
+- Eastern Idaho
+- Idaho
+- Idaho Republican Party
+- Idaho State University
+- Regence BlueShield of Idaho
+authority: LOGAN
 ---
 Residence: Boise 
 Hometown: Eastern Idaho 

@@ -1,8 +1,42 @@
 ---
 author:
-  - "Ruth Brown"
+- Ruth Brown
 outlet:
-  - "Idaho Reports"
+- Idaho Reports
+related:
+- '988'
+- Ammon
+- Behavioral Health Council
+- Blue Cross of Idaho
+- Boise
+- Brad Little
+- Burley
+- C.L. 'Butch' Otter
+- Council
+- DHW
+- Dave Jeppesen
+- Dean Cameron
+- Department of Health and Welfare
+- Department of Insurance
+- Eagle
+- Governor
+- Human Resources
+- Idaho
+- Idaho Reports
+- Medicaid
+- Medicaid Expansion
+- Ruth Brown
+- Senate Commerce and Human Resources
+- Senate Finance
+- Virginia
+- agent
+- budget
+- children
+- hospitals
+- individuals
+- legislative
+- systems
+authority: LOGAN
 ---
 Gov. Brad Little announced on Wednesday that Idaho Department of Health and Welfare Director Dave Jeppesen will retire at the end of 2023. 
 

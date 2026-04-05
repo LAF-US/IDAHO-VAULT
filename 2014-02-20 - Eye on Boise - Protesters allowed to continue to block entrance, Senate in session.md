@@ -1,10 +1,22 @@
 ---
 outlet:
-  - "Eye on Boise"
-  - "Spokesman-Review"
+- Eye on Boise
+- Spokesman-Review
 url: https://www.spokesman.com/blogs/boise/2014/feb/20/protesters-allowed-continue-block-entrance-senate-session/
 author:
-  - "Betsy Russell"
+- Betsy Russell
+related:
+- Add the Words
+- Betsy Russell
+- Boise
+- Eye on Boise
+- ISP
+- JPG
+- Sandpoint
+- Sandpoint High School
+- Spokesman-Review
+- police
+authority: LOGAN
 ---
 Thu., Feb. 20, 2014![Visiting high school students from Sandpoint High School, pep band members in town for a basketball tournament, briefly joined the ](https://thumb.spokesman.com/znJEQqsRCxOWjxvHf6sDGEomrkk=/810x0/media.spokesman.com/photos/2014/02/20/kids-phonepix_015.JPG)
 

@@ -1,5 +1,12 @@
 ---
 date: 1924-04-07
+related:
+- Idaho
+- U.S. Senate
+- William Borah
+- YOU
+- index
+authority: LOGAN
 ---
 !Campaign Contributions Cause Colossal Crimes.jpg
 

@@ -6,8 +6,15 @@ tier: 1
 date: 2026-03-15
 branch: claude/sunset-non-persistent-agents-4iLqH
 status: complete-awaiting-authorization
+related:
+- '2026-03-15'
+- AGENT-REGISTRY
+- LEVELSET
+- Logan's
+- SUNSET-PROCESS
+- agent
+authority: LOGAN
 ---
-
 # LEVELSET Final Report — TASK: Sunset non-persistent agents — 2026-03-15
 
 ## Work Complete

@@ -1,4 +1,13 @@
 ---
+related:
+- Ada County
+- Boise
+- Branden Durst
+- Brooke Green
+- Ilana Rubel
+- Janie Ward-Engelking
+- Julie Ellsworth
+authority: LOGAN
 ---
 Southeast Boise in Ada County
 

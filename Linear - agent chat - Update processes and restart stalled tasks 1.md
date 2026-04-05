@@ -1,8 +1,17 @@
 ---
 date created: Sunday, March 29th 2026, 10:47:02 am
 date modified: Sunday, March 29th 2026, 10:47:46 am
+related:
+- Copilot
+- GitHub
+- LAF
+- Logan Finney
+- agent
+- connections
+- coordination
+- template
+authority: LOGAN
 ---
-
 # Update processes and restart stalled tasks
 
 ## User

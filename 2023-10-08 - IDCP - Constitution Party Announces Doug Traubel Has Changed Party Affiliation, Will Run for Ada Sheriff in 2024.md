@@ -1,8 +1,27 @@
 ---
 author:
-  - "Idaho Constitution Party"
+- Idaho Constitution Party
+related:
+- Ada County
+- Ada County Republican Central Committee
+- County Sheriff
+- Doug Traubel
+- Elmore County
+- Elmore County Republican Central Committee
+- GOP
+- Idaho
+- Idaho Constitution
+- Idaho Constitution Party
+- Idaho Statesman
+- Matt Clifford
+- Victor
+- Victor Miller
+- churches
+- election
+- police
+- primary election
+authority: LOGAN
 ---
-
 2022 Candidate for Ada County County Sheriff, Doug Traubel, announces he will run for the office again in 2024. Traubel, a lifelong Republican, and once precinct committeeman for the Elmore County Republican Central Committee has changed his affiliation to the Constitution Party.
 
 Readers may recall that in 2021 Traubel was voted #1 by the Ada County Republican Central Committee to replace former Sheriff Bartlett who stepped down abruptly for reasons still unknown. With Traubel as the top-ranked candidate for appointment, the three finalists went before the Ada County Board of Commissioners. It was the prerogative of the commissioners to ignore the will of the Central Committee and vote/appoint out of order from the list of ranked finalists. The #3 candidate, Matt Clifford was appointed.

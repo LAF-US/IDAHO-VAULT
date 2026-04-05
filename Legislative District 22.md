@@ -1,4 +1,12 @@
 ---
+related:
+- Ada County
+- Jason Monks
+- John Vander Woude
+- Lori Den Hartog
+- Meridian
+- Russ Fulcher
+authority: LOGAN
 ---
 Southern Meridian in Ada County
 

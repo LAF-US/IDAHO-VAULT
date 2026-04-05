@@ -1,9 +1,31 @@
 ---
 author:
-  - "Ruth Brown"
+- Ruth Brown
 outlet:
-  - "Idaho Reports"
+- Idaho Reports
 URL: https://blog.idahoreports.idahoptv.org/2023/12/05/idaho-law-prohibits-hospitals-from-detaining-a-person-without-cause/
+related:
+- '326'
+- Bonneville County
+- County Sheriff
+- EMS
+- Eastern Idaho
+- Eastern Idaho Regional Medical Center
+- Idaho
+- Idaho Code
+- Idaho Reports
+- Jeremy Best
+- Ruth Brown
+- Swan Valley
+- Teton
+- Teton County
+- U.S. Constitution
+- Victor
+- hospitals
+- individuals
+- law enforcement
+- protective custody hold
+authority: LOGAN
 ---
 After a Bonneville County Sheriff’s deputy interacted with Jeremy Best on Nov. 30, and the following day he allegedly murdered his wife and unborn child, some questioned why he wasn’t detained.  
 

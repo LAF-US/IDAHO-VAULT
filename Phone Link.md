@@ -1,9 +1,14 @@
 ---
-title: "Phone Link"
+title: Phone Link
 updated: 2026-04-02
 status: active
+related:
+- '2026-04-02'
+- VAULT-CONVENTIONS
+- bridges
+- voice
+authority: LOGAN
 ---
-
 # Phone Link
 
 **Vector:** Phone → Laptop (reliable)

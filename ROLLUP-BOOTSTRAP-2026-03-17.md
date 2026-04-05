@@ -1,3 +1,34 @@
+---
+authority: LOGAN
+related:
+- '2026-03-17'
+- AGENTS
+- ARCHITECTURE
+- ARE
+- BLOB
+- BOOTSTRAP
+- Bartimaeus
+- DOWN
+- FLAG
+- FLAGS
+- FOR
+- GEMINI
+- Grace
+- LEVELSET
+- LOGAN
+- Logan Finney
+- Logan's
+- PROTOCOLS
+- R&D
+- SECURITY
+- THE
+- VFD
+- YOU
+- agent
+- blocked
+- window
+---
+
 ROLLUP/BOOTSTRAP -- CONVERSATION CONSOLIDATION
 Date: 2026-03-17
 Revised by: Logan Finney, modified from PERMANENT: ADMIN

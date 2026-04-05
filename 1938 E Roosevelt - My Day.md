@@ -1,5 +1,26 @@
 ---
 date: 1938-03-29
+related:
+- Atlanta
+- Eleanor Roosevelt
+- Georgia
+- Harrison
+- Idaho
+- Lake
+- Moscow
+- President
+- Salt Lake City
+- San Francisco
+- Seattle
+- Spokane
+- State of Idaho
+- Theodore Roosevelt
+- University of Idaho
+- Washington
+- airport
+- children
+- meeting
+authority: LOGAN
 ---
 WARM SPRINGS, Ga., Monday—Well, here I am at Warm Springs, surrounded by trees and absolute peace and quiet. It is really quite a contrast to the last few days and, now that I have time to think, I must go back and tell you a little about those days.
 

@@ -3,8 +3,36 @@ created: 2026-03-24
 status: archived
 source: claude-chorus-handoff
 authority: logan
+related:
+- '2026-03-20'
+- '2026-03-24'
+- ALL
+- AWAKENS
+- BOOTSTRAP
+- Copilot
+- DECISIONS
+- ECHO
+- GRIMOIRE
+- HECATE
+- HECATE PROTOCOL
+- HECATE-HECATE-HECATE
+- LEVELSET
+- LEVELSET-CURRENT
+- LOGAN
+- Logan Finney
+- Logan's
+- NOT
+- NotebookLM
+- PROTOCOL
+- README
+- TBD
+- agent
+- definition
+- format
+- pair
+- threshold
+- window
 ---
-
 # BOOTSTRAP — Claude Chorus Handoff
 
 **Date received:** 2026-03-24

@@ -1,3 +1,41 @@
+---
+authority: LOGAN
+related:
+- '2026-03-16'
+- '2026-04-02'
+- AGENTS
+- CLI
+- DECISIONS
+- FLAG
+- Gemini CLI
+- GitHub
+- III
+- IRL
+- Idaho
+- LAF
+- LEVELSET
+- LEVELSET-STEP-0-EXTERNAL-AGENT
+- LOG
+- Logan Alvan Finney
+- Logan's
+- Logan's Project & Protocols
+- MCP
+- OpenClaw
+- PROTOCOLS
+- README
+- The world is quiet here
+- VII
+- agent
+- awakening
+- coordination
+- doctrine
+- end goal
+- format
+- freelance
+- individuals
+- unachievable
+---
+
 by Logan Alvan Finney
 
 "The world is quiet here."

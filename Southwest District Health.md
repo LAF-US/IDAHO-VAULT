@@ -1,4 +1,15 @@
 ---
+related:
+- '208'
+- '455'
+- Caldwell
+- Central Idaho
+- Idaho
+- Owyhee
+- Payette
+- Treasure Valley
+- Washington
+authority: LOGAN
 ---
 Director: Nikole Zogg  
 13307 Miami Lane  

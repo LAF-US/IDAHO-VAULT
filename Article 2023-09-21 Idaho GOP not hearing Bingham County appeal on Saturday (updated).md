@@ -1,4 +1,29 @@
 ---
+related:
+- '107'
+- Bingham County
+- Bingham County Republican Central Committee
+- Dan Cravens
+- Dorothy Moon
+- GOP
+- Greg Chaney
+- Idaho
+- Idaho Reports
+- Idaho Republican Party
+- Idaho Statesman
+- Idahoans for Open Primaries
+- Logan Finney
+- Missouri
+- Power County
+- Power County Republican Central Committee
+- Prosecuting Attorney
+- Trent Clark
+- election
+- individuals
+- meeting
+- primary election
+- self
+authority: LOGAN
 ---
 by Logan Finney, Idaho Reports
 

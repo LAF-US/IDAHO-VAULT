@@ -1,4 +1,10 @@
 ---
+related:
+- Coeur d'Alene
+- Jack Riggs
+- Larry Craig
+- The People’s Pen
+authority: LOGAN
 ---
 Residence: Coeur d'Alene 
 - wife of former Lt. Gov Jack Riggs 

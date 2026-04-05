@@ -1,4 +1,10 @@
 ---
+related:
+- Gooding
+- House Minority Caucus Chair
+- House member
+- Legislative District 26
+authority: LOGAN
 ---
 Residence: Gooding
 - Retired teacher 

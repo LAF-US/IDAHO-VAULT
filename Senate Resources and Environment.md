@@ -1,4 +1,15 @@
 ---
+related:
+- Ben Adams
+- Carrie Semmelroth
+- Doug Okuniewicz
+- Geoff Schroeder
+- Jim Guthrie
+- Lori Den Hartog
+- Mark Harris
+- Ron Taylor
+- Van Burtenshaw
+authority: LOGAN
 ---
 # Roster
 ## 2023 Members

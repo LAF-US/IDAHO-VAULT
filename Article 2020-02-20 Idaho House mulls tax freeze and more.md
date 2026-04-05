@@ -1,7 +1,80 @@
 ---
-author: "Logan Finney"
-outlet: "McClure Center"
+author: Logan Finney
+outlet: McClure Center
 URL: https://www.loganfinney.com/idaho-legislature-2020/2/18/property-tax-deep-dive
+related:
+- '354'
+- '409'
+- ADA
+- Act
+- Americans with Disabilities Act
+- Association of Idaho Cities
+- Bannock County
+- Boise
+- Brad Little
+- Caldwell
+- California
+- Canyon County
+- County Clerk
+- County Commissioners
+- Custer
+- Custer County
+- Freedom
+- GOP
+- General Fund
+- Governor
+- House Majority Leader
+- House Minority Leader
+- House Revenue and Taxation
+- Idaho
+- Idaho Association of Counties
+- Idaho Freedom Foundation
+- Idaho Supreme Court
+- Ilana Rubel
+- Joint Finance-Appropriations Committee
+- Logan Finney
+- Madison County
+- McClure Center
+- Medicaid
+- Medicaid Expansion
+- Meridian
+- Mike Moyle
+- Nampa
+- Oneida County
+- President
+- Rob Mason
+- Spokesman-Review
+- Star
+- State Board of Education
+- State Tax Commission
+- Steven Harris
+- Treasure Valley
+- ambulance districts
+- ambulances
+- attorneys
+- bonds
+- budget
+- budgets
+- cities
+- construction
+- counties
+- fire
+- homeowners
+- index
+- individuals
+- infrastructure
+- numbers
+- police
+- property tax
+- property tax budget
+- recreation districts
+- sales tax
+- school districts
+- sewer districts
+- taxes
+- taxing districts
+- teachers
+authority: LOGAN
 ---
 _City and County Officials Detail Budget Woes to Lawmakers_
 

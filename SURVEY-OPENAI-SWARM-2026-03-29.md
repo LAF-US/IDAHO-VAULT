@@ -1,11 +1,32 @@
 ---
-title: "SURVEY - OpenAI Swarm"
+title: SURVEY - OpenAI Swarm
 updated: 2026-03-30
 status: draft
-authority: "LOGAN"
+authority: LOGAN
 type: survey
+related:
+- -LAF
+- '2026-03-25'
+- '2026-03-29'
+- '2026-03-30'
+- API
+- BRIEF-LAF-3-2026-03-25
+- CHECKPOINT
+- Copilot
+- GitHub
+- LAF
+- LOGAN
+- Logan's
+- OpenAI
+- OpenAI Swarm
+- README
+- SDK
+- SPEC-LINEAR-GATEWAY-2026-03-29
+- UNIFIED
+- agent
+- coordination
+- doctrine
 ---
-
 # SURVEY - OpenAI Swarm
 
 **Status:** Draft - informational survey for Logan's decision on swarm orchestration

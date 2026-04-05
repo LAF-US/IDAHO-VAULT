@@ -1,5 +1,5 @@
 ---
-title: "Study — Pokemon PC and Ender Chest — AI Mechanics Analogues"
+title: Study — Pokemon PC and Ender Chest — AI Mechanics Analogues
 created: 2026-04-01
 updated: 2026-04-01
 status: filed
@@ -7,8 +7,29 @@ authority: claude
 doc_class: misc_reference
 template_id: tpl-misc-reference-v1
 source: SWARM INQUIRY — A&I R&D, Logan Finney, 2026-04-01
+related:
+- '2026-04-01'
+- '729'
+- A&I
+- CLAUDE
+- Cloud
+- GEMINI
+- III
+- LEVELSET
+- LEVELSET-CURRENT
+- Logan Finney
+- Logan's
+- Obsidian
+- R&D
+- agent
+- character
+- codex
+- fire
+- homes
+- index
+- systems
+- window
 ---
-
 # Study — Pokemon PC and Ender Chest — AI Mechanics Analogues
 
 **Inquiry:** SWARM INQUIRY — A&I R&D

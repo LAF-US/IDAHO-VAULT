@@ -1,8 +1,28 @@
 ---
-author: 
+author: null
 outlet:
-  - "Associated Press"
+- Associated Press
 URL: https://apnews.com/article/drag-performer-defamation-blogger-idaho-c0f3188081e17843059b27d19d5be980
+related:
+- '250'
+- '926'
+- Associated Press
+- Facebook
+- Idaho
+- Kootenai
+- Kootenai County
+- North Idaho
+- Patriot Front
+- Post Falls
+- attorneys
+- children
+- drag
+- minors
+- police
+- symbol
+- website
+- white supremacist
+authority: LOGAN
 ---
 COEUR D’ALENE, Idaho (AP) — A jury has awarded more than $1.1 million to an Idaho drag performer who accused a far-right blogger of defaming him when she falsely claimed that he exposed himself to a crowd, including children, during a Pride event in June 2022.
 

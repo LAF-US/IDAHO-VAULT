@@ -1,5 +1,24 @@
 ---
 source: commit
+related:
+- Ada County
+- CCA
+- Capitol Correspondents Association
+- Capitol Correspondents Association CCA Letter March 2026
+- Eagle
+- House member
+- Idaho
+- JFAC Working Groups
+- Joint Finance-Appropriations Committee
+- Josh Tanner
+- Kelly Anthon
+- Meridian
+- Mike Moyle
+- Scott Grow
+- Superintendent of Public Instruction
+- Wendy Horman
+- voting
+authority: LOGAN
 ---
 Josh Tanner is the Republican Idaho House member from District 22A (Eagle) serving as JFAC House co-chair and co-recipient of the CCA open-meetings letter in March 2026.
 

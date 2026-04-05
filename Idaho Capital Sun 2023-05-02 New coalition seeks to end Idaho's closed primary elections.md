@@ -1,4 +1,55 @@
 ---
+related:
+- '179'
+- 2020 election
+- 2023 legislative session
+- '351'
+- '624'
+- '895'
+- Act
+- Alaska
+- Attorney General
+- Bingham County
+- Boise
+- Clark Corbin
+- Dale Hawkins
+- Dustin Manwaring
+- Fernwood
+- Hope
+- House State Affairs
+- Hyrum Erickson
+- Idaho
+- Idaho Capital Sun
+- Idaho Democratic Party
+- Idaho Legislature
+- Idaho Republican Party
+- Idaho Senate
+- Idaho Supreme Court
+- Idahoans for Open Primaries
+- Jack Nelsen
+- Jerome
+- Maine
+- Medicaid
+- North Idaho
+- Pocatello
+- RCV
+- Reclaim Idaho
+- Rexburg
+- Rick Cheatum
+- Secretary of State
+- agriculture
+- ballot initiatives
+- election
+- general election
+- legislative
+- legislative session
+- political parties
+- precinct committeemen
+- primary election
+- sign
+- supermajority
+- voting
+authority: LOGAN
 ---
 https://idahocapitalsun.com/2023/05/02/new-coalition-seeks-to-end-idahos-closed-primary-elections/
 *Idahoans for Open Primaries will attempt to qualify a ballot initiative for the November 2024 election*

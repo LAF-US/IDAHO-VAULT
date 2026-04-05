@@ -1,3 +1,14 @@
+---
+authority: LOGAN
+related:
+- affordable housing
+- apartments
+- homelessness
+- homeowners
+- homes
+- property tax
+---
+
 
 homes
 apartments

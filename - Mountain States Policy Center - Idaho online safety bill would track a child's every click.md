@@ -1,12 +1,30 @@
 ---
-outlet:
-url: "https://www.mountainstatespolicy.org/post/idaho-online-safety-bill-would-track-a-child-s-every-click"
+outlet: null
+url: https://www.mountainstatespolicy.org/post/idaho-online-safety-bill-would-track-a-child-s-every-click
 author:
-  - "Chris Cargill"
-title: "- Mountain States Policy Center - Idaho online safety bill would track a child's every click"
-linter-yaml-title-alias: "- Mountain States Policy Center - Idaho online safety bill would track a child's every click"
+- Chris Cargill
+title: '- Mountain States Policy Center - Idaho online safety bill would track a child''s
+  every click'
+linter-yaml-title-alias: '- Mountain States Policy Center - Idaho online safety bill
+  would track a child''s every click'
+related:
+- '542'
+- Act
+- Chris Cargill
+- Idaho
+- Mountain States Policy Center
+- age verification
+- children
+- hackers
+- infrastructure
+- math
+- minors
+- numbers
+- parents
+- social media
+- systems
+authority: LOGAN
 ---
-
 Idaho lawmakers are right to be concerned about how social media affects children. Parents across the state worry about addictive apps, manipulative design, and the data-harvesting practices of major tech companies. Those concerns are real, bipartisan, and worth addressing.
 
 But House Bill 542, the [*Stop Harms from Addictive Social Media Act*](https://legislature.idaho.gov/sessioninfo/2026/legislation/H0542/), takes a series of concerning turns — and risks creating new dangers for children, parents, and Idaho's digital economy.

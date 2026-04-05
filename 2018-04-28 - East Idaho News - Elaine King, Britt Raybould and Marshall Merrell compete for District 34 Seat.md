@@ -1,7 +1,41 @@
 ---
-author: "Mike Price"
-outlet: "East Idaho News"
+author: Mike Price
+outlet: East Idaho News
 URL: https://www.eastidahonews.com/2018/04/east-idaho-elects-elaine-king-britt-raybould-and-marshall-merrell-compete-for-district-34-seat/
+related:
+- BSU
+- Boise
+- Boise State University
+- Britt Raybould
+- CFO
+- California
+- Common Core
+- Dirk Kempthorne
+- East Idaho News
+- Eastern Idaho
+- Elaine King
+- Governor
+- Idaho
+- Idaho Falls
+- Idaho Legislature
+- Madison County
+- PAC
+- Rexburg
+- Ron Nate
+- Utah
+- children
+- committee chairmen
+- costs
+- election
+- grocery tax
+- health care
+- infrastructure
+- legislative
+- lobbyists
+- taxes
+- teachers
+- voice
+authority: LOGAN
 ---
 The current holder of District 34 seat B has chosen not to run for re-election leading to three candidates competing for the soon to be vacant seat. Get to know each of the three candidates by checking out our interviews with them below.
 

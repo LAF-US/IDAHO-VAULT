@@ -1,5 +1,19 @@
 ---
 source: commit
+related:
+- '202'
+- '208'
+- '500'
+- Dustin Manwaring
+- House member
+- Idaho
+- Idaho Code
+- JFAC Working Groups
+- Joint Finance-Appropriations Committee
+- Pocatello
+- blocked
+- self
+authority: LOGAN
 ---
 Dustin Manwaring is a Republican Idaho House member from District 29A (Pocatello) who served as Majority Caucus Chair 2022–2024, retains his JFAC seat as rank-and-file in 2026, and gave the most extensive on-record defense of working groups in interview while making significant unintentional admissions.
 

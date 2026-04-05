@@ -1,9 +1,30 @@
 ---
 author:
-  - "Zach Hagadone"
+- Zach Hagadone
 outlet:
-  - "Sandpoint Reader"
+- Sandpoint Reader
 URL: https://sandpointreader.com/three-n-idahoans-front-suit-challenging-constitutionality-of-covid-19-restrictions/
+related:
+- Associated Press
+- Boise
+- Brad Little
+- Dave Jeppesen
+- Department of Health and Welfare
+- Grangeville
+- Idaho
+- Idaho Association of Commerce and Industry
+- Idaho Senate
+- Laclede
+- Moscow
+- Sagle
+- Sandpoint
+- Sandpoint Reader
+- Scott Herndon
+- Zach Hagadone
+- abortion
+- churches
+- police
+authority: LOGAN
 ---
 Sagle resident Scott Herndon, who mounted an unsuccessful bid for Idaho Senate in 2018 and has since been in the forefront of a number of local hot-button issues from abortion to gun rights, is again in the regional news after filing a lawsuit challenging the constitutionality of statewide COVID-19 restrictions on public gatherings.
 

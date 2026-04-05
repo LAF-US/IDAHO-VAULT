@@ -1,8 +1,34 @@
 ---
 author:
-  - "Logan Finney"
+- Logan Finney
+related:
+- '250'
+- '360'
+- '400'
+- '450'
+- Bonner County
+- Chrystle Horvath
+- Coeur d'Alene
+- Drive
+- Idaho
+- Logan Finney
+- Nancy Hadley
+- Sandpoint
+- 'Yes'
+- affordable housing
+- budget
+- costs
+- ducks
+- homes
+- housing
+- infrastructure
+- math
+- money
+- numbers
+- nurses
+- water
+authority: LOGAN
 ---
-
 Logan Finney
 Well, Nancy, to start, can you introduce yourself and spell your full name for me?
 Nancy Hadley

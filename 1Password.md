@@ -2,9 +2,21 @@
 date created: Monday, March 30th 2026, 5:17:09 pm
 date modified: Monday, March 30th 2026, 7:59:13 pm
 status: active
-authority: "Claude Code (The Abhorsen)"
+authority: Claude Code (The Abhorsen)
+related:
+- '2026-03-30'
+- AGENTS
+- CLAUDE
+- CLI
+- CONSTITUTION
+- GitHub
+- Logan's
+- SSH
+- VAULT-CONVENTIONS
+- agent
+- infrastructure
+- template
 ---
-
 # 1Password Integration — IDAHO-VAULT
 
 **Status:** Infrastructure template deployed; awaiting Logan's local setup and GitHub Actions provisioning  

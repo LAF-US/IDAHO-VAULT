@@ -1,4 +1,14 @@
 ---
+related:
+- GOP
+- Idaho
+- Idaho Reports
+- Logan Finney
+- election
+- general election
+- legislative
+- primary election
+authority: LOGAN
 ---
 by Logan Finney, Idaho Reports
 

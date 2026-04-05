@@ -1,4 +1,24 @@
 ---
+related:
+- Ali Rabe
+- Carrie Semmelroth
+- Christy Zito
+- Cindy Carlson
+- Dan Foreman
+- Dan Johnson
+- David Nelson
+- Doug Ricks
+- Geoff Schroeder
+- Glenneda Zuiderveld
+- Jim Patrick
+- Linda Wright Hartgen
+- Lori Den Hartog
+- Phil Hart
+- Regina Bayer
+- Ron Taylor
+- Tammy Nichols
+- Van Burtenshaw
+authority: LOGAN
 ---
 Meets Tues & Thurs @ 8am in WW53
 

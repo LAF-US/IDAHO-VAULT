@@ -1,7 +1,39 @@
 ---
-author: "Logan Finney"
-outlet: "McClure Center"
+author: Logan Finney
+outlet: McClure Center
 URL: https://www.loganfinney.com/idaho-legislature-2020/2/5/bills-to-limit-bonds
+related:
+- '347'
+- '393'
+- Blackfoot
+- Blanchard
+- Heather Scott
+- House State Affairs
+- Idaho
+- Idaho Falls
+- Julianne Young
+- Logan Finney
+- Lori Den Hartog
+- McClure Center
+- Meridian
+- New Plymouth
+- Ryan Kerby
+- Senate State Affairs
+- Wendy Horman
+- bond elections
+- bonds
+- bonds and levies
+- election
+- jails
+- police
+- police stations
+- presidential primary
+- school districts
+- school facilities
+- supermajority
+- taxing districts
+- voice
+authority: LOGAN
 ---
 BOISE — Last week the Idaho House approved a bill that would affect the frequency of local bond elections, and the House State Affairs Committee takes up a second one this week.
 

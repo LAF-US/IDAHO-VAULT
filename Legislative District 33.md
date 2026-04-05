@@ -1,4 +1,12 @@
 ---
+related:
+- Barbara Ehardt
+- Bonneville County
+- Dave Lent
+- Idaho
+- Idaho Falls
+- Marco Erickson
+authority: LOGAN
 ---
 Idaho Falls, Bonneville County 
 ### 2023-2024 

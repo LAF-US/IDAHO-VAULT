@@ -1,6 +1,20 @@
 ---
 updated: 2026-03-16
 source: commit
+related:
+- '2026-03-16'
+- AGENTS
+- CONTEXT-PASSOVER-COPILOT-2026-03-16
+- Copilot
+- GROUND-TRUTH-VERIFICATION-2026-03-16
+- GitHub
+- LEVELSET
+- LEVELSET-TRANSMISSION-2026-03-16
+- Logan Finney
+- Logan's
+- PUBLIC
+- definition
+authority: LOGAN
 ---
 # HANDOFF TO GITHUB AGENTS — 2026-03-16
 

@@ -1,5 +1,26 @@
 ---
 source: commit
+related:
+- '208'
+- '332'
+- ACU
+- Boise
+- Boise State University
+- Freedom
+- House member
+- Idaho
+- JFAC Working Groups
+- Joint Finance-Appropriations Committee
+- Judy Boyle
+- Logan Finney
+- Midvale
+- Mike Moyle
+- NRA
+- University of Idaho
+- Washington
+- Washington County
+- budget
+authority: LOGAN
 ---
 Judy Boyle is a 9th-term Republican Idaho House member from District 9B (Midvale, Washington County) who challenged Mike Moyle for Majority Leader in November 2020 and is one of the six most senior House Republicans as of the 2023 session.
 

@@ -1,9 +1,50 @@
 ---
 author:
-  - "Logan Finney"
+- Logan Finney
 outlet:
-  - "Idaho Reports"
-url: "https://blog.idahoreports.idahoptv.org/2023/11/09/podcast-how-counties-manage-overcrowded-jails/"
+- Idaho Reports
+url: https://blog.idahoreports.idahoptv.org/2023/11/09/podcast-how-counties-manage-overcrowded-jails/
+related:
+- '150'
+- '224'
+- '254'
+- '260'
+- '287'
+- '290'
+- '600'
+- Act
+- Ada County
+- Buhl
+- County Sheriff
+- DUI
+- Doug Hughes
+- Filer
+- Hansen
+- Idaho
+- Idaho Reports
+- Jerome
+- Jerome County
+- Kimberly
+- Logan Finney
+- Nevada
+- Twin Falls
+- Twin Falls County
+- Twin Falls County Jail
+- 'Yes'
+- cities
+- coronavirus
+- counties
+- county jails
+- election
+- housing
+- inmates
+- jails
+- law enforcement
+- money
+- numbers
+- sales tax
+- systems
+authority: LOGAN
 ---
 *Ada County voters narrowly missed the 2/3 majority needed to pass a jail expansion bond in Tuesday’s local election – but it’s a familiar story for many counties across the state. Associate producer Logan Finney talks with jail administrator Capt. Doug Hughes from the Twin Falls Sheriff’s Department about what a failed jail expansion bond means for an Idaho community.*
 

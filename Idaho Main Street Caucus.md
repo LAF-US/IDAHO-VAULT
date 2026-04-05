@@ -1,4 +1,30 @@
 ---
+related:
+- Britt Raybould
+- Chenele Dixon
+- Dave Lent
+- Geoff Schroeder
+- Idaho
+- Jon Weber
+- Josh Wheeler
+- Julie Yamamoto
+- Kevin Cook
+- Linda Wright Hartgen
+- Marco Erickson
+- Mark Harris
+- Mickelsen
+- Mike Simpson
+- OUR
+- Podcast
+- Rick Cheatum
+- Stephanie Mickelsen
+- Treg Bernt
+- balanced budget
+- budget
+- dollars
+- individuals
+- money
+authority: LOGAN
 ---
 Podcast Appearances
 - Sen. Mark Harris 

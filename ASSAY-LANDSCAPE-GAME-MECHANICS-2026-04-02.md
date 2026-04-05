@@ -1,5 +1,5 @@
 ---
-title: "Landscape Assay — Game Mechanics Study Application"
+title: Landscape Assay — Game Mechanics Study Application
 created: 2026-04-02
 updated: 2026-04-02
 status: filed
@@ -8,8 +8,62 @@ doc_class: misc_reference
 source: SWARM INQUIRY — Study Application & Dot-Connection, Logan Finney, 2026-04-02
 date created: Wednesday, April 1st 2026, 11:16:46 pm
 date modified: Thursday, April 2nd 2026, 10:36:09 pm
+related:
+- '104'
+- '107'
+- '108'
+- '135'
+- '137'
+- '140'
+- '141'
+- '144'
+- '2026-03-23'
+- '2026-03-25'
+- '2026-03-28'
+- '2026-03-30'
+- '2026-04-01'
+- '2026-04-02'
+- '722'
+- AGENTS
+- API
+- BOOTSTRAP
+- Bartimaeus
+- CLAUDE
+- CSV
+- Copilot
+- CrewAI
+- DECISIONS
+- DOT
+- GEMINI
+- GROK
+- GitHub
+- LAF
+- LEVELSET
+- LEVELSET-CURRENT
+- Logan Finney
+- Logan's
+- MCP
+- MCP-DISCOVERY-2026-03-25
+- Microsoft Copilot
+- Obsidian
+- PERPLEXITY
+- PERSEPHONE
+- PROJECT
+- PROTOCOL
+- Phone Link
+- TRIUNE
+- VAULT-CONVENTIONS
+- WIP
+- ZAGREUS
+- agent
+- codex
+- coordination
+- definition
+- doctrine
+- index
+- systems
+- template
 ---
-
 # Landscape Assay — Game Mechanics Study Application
 
 **Inquiry:** CLAUDE CODE BOOTSTRAP PROMPT — Landscape assay + dot-connection

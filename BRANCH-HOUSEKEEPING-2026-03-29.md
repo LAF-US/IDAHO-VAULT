@@ -1,15 +1,22 @@
 ---
-title: "BRANCH-HOUSEKEEPING-2026-03-29"
+title: BRANCH-HOUSEKEEPING-2026-03-29
 created: 2026-03-29
 updated: 2026-03-29
 status: active
-authority: "LOGAN"
+authority: LOGAN
 authors:
-  - ChatGPT Codex
+- ChatGPT Codex
 source: commit
 zone: operational
+related:
+- '2026-03-29'
+- API
+- ChatGPT
+- GitHub
+- LOGAN
+- agent
+- format
 ---
-
 # Branch housekeeping report — 2026-03-29
 
 ## Request

@@ -1,5 +1,26 @@
 ---
 source: commit
+related:
+- '135'
+- '2026-03-16'
+- '250'
+- API
+- Anthropic
+- CVE
+- GTC
+- GitHub
+- Internet
+- NIM
+- OpenAI
+- agent
+- artificial intelligence
+- chain
+- facial recognition
+- hackers
+- humans
+- virtual private networks
+- web
+authority: LOGAN
 ---
 OpenClaw is an open-source, local-first autonomous AI agent created by Austrian developer Peter Steinberger in November 2025, notable as the first autonomous agent to achieve mass-market adoption — and as a case study in the security risks of unsupervised AI autonomy.
 

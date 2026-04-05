@@ -1,4 +1,34 @@
 ---
+related:
+- 2021 legislative session
+- Blackfoot
+- Boise
+- Brad Little
+- Branden Durst
+- First Amendment
+- GOP
+- Idaho
+- Idaho Education News
+- Idaho Press
+- Idaho Public Television
+- Idaho School Boards Association
+- Janice McGeachin
+- Meridian
+- Priscilla Giddings
+- Sherri Ybarra
+- Sonya Harris
+- State Board of Education
+- State Department of Education
+- Superintendent of Public Instruction
+- Task Force to Examine Indoctrination in Idaho Education
+- White Bird
+- children
+- legislative
+- legislative session
+- meeting
+- money
+- parents
+authority: LOGAN
 ---
 https://www.idahoednews.org/news/indoctrination-task-force-pivots-to-k-12-in-hours-long-meeting/ 
 

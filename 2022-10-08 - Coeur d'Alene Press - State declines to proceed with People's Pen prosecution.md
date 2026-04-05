@@ -1,8 +1,51 @@
 ---
-author: "Kaye Thornbrugh"
+author: Kaye Thornbrugh
 outlet:
-  - "Coeur d'Alene Press"
+- Coeur d'Alene Press
 URL: https://cdapress.com/news/2022/oct/08/peoples-pen-cleared-after-complaint/
+related:
+- '136'
+- '579'
+- '631'
+- Attorney General
+- Benewah
+- Benewah County
+- Brent Regan
+- Coeur d'Alene
+- Coeur d'Alene Press
+- GOP
+- Hari Heath
+- Idaho
+- Idaho Capital Sun
+- Idaho Code
+- Jack Riggs
+- Kaye Thornbrugh
+- Kootenai
+- Kootenai County
+- Kootenai County Republican Central Committee
+- Lawerence Denney
+- Lewiston
+- Lewiston Tribune
+- Moscow
+- Moscow-Pullman Daily News
+- North Idaho
+- North Idaho Republicans
+- Secretary of State
+- TPC
+- TPC Holdings
+- The People’s Pen
+- Wyoming
+- 'Yes'
+- agent
+- campaign finance
+- costs
+- dollars
+- election
+- money
+- newspapers
+- primary election
+- website
+authority: LOGAN
 ---
 COEUR d’ALENE — After investigating allegations that a publication called the The People’s Pen violated Idaho campaign finance laws, the Secretary of State’s Office has declined to proceed with prosecution at this time.
 

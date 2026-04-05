@@ -1,3 +1,10 @@
+---
+authority: LOGAN
+related:
+- The world is quiet here
+- cattle
+---
+
 **Verse One:**
 On a charming little cattle farm
 Near a pretty deadly lake,

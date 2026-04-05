@@ -2,10 +2,14 @@
 title: DECISIONS routing shim
 updated: 2026-04-02
 status: active
-authority: "LOGAN"
+authority: LOGAN
 source: root/DECISIONS.md
+related:
+- '2026-04-02'
+- DECISIONS
+- LOGAN
+- links
 ---
-
 # `!/DECISIONS.md`
 
 This is a routing shim for stable bootstrap context.

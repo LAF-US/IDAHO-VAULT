@@ -1,3 +1,27 @@
+---
+authority: LOGAN
+related:
+- '134'
+- '168'
+- '2026-03-16'
+- '241'
+- '392'
+- '430'
+- '503'
+- '978'
+- CLAUDE
+- DECISIONS
+- IDE
+- LEVELSET
+- Logan Finney
+- agent
+- agriculture
+- awakening
+- counties
+- hospitals
+- legislative
+---
+
 # LEVELSET v1 — IDAHO-VAULT
 
 **Date:** 2026-03-16

@@ -1,4 +1,16 @@
 ---
+related:
+- 1st Congressional District
+- 2nd Judicial District
+- 3rd Judicial District
+- 4th Judicial District
+- Boise
+- Central District Health
+- Custer
+- Lemhi
+- North Central Health District
+- Southwest District Health
+authority: LOGAN
 ---
 - Valley
 - Boise

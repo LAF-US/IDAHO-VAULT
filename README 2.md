@@ -1,6 +1,24 @@
 ---
 updated: 2026-04-02
 status: active
+related:
+- '2026-04-02'
+- AGENTS
+- CONSTITUTION
+- DECISIONS
+- LEVELSET
+- README
+- README 1
+- VAULT-CONVENTIONS
+- VAULT-METADATA-STANDARD
+- VAULT-TEMPLATES
+- agent
+- chain
+- doctrine
+- index
+- links
+- template
+authority: LOGAN
 ---
 # `IDAHO-VAULT/!` canonical anchor
 

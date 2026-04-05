@@ -1,9 +1,24 @@
 ---
 author:
-  - "Carly Flandro"
+- Carly Flandro
 outlet:
-  - "Idaho Education News"
+- Idaho Education News
 URL: https://www.idahoednews.org/news/after-a-dozen-failures-salmon-trustees-vote-to-float-another-bond/
+related:
+- Governor
+- Idaho
+- Idaho Education News
+- Idaho Statesman
+- Lieutenant Governor
+- ProPublica
+- Salmon
+- Troy
+- bonds
+- election
+- meeting
+- parents
+- supermajority
+authority: LOGAN
 ---
 A school district that’s known for its decaying buildings and repeatedly failing bond measures once again plans to ask taxpayers to chip in for facilities. 
 

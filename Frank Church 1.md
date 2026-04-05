@@ -1,4 +1,8 @@
 ---
+related:
+- Frank Church
+- Idaho
+authority: LOGAN
 ---
 Democratic Idaho U.S. Senator
 

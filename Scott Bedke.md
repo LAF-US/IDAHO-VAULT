@@ -1,4 +1,11 @@
 ---
+related:
+- Governor
+- House member
+- Legislative District 27
+- Lieutenant Governor
+- Oakley
+authority: LOGAN
 ---
 Residence: Oakley
 - Lieutenant Governor 2022-

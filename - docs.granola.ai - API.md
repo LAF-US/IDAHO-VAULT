@@ -1,8 +1,19 @@
 ---
-source: "https://docs.granola.ai/introduction.md"
-author:
-published:
+source: https://docs.granola.ai/introduction.md
+author: null
+published: null
 created: 2026-04-02
+related:
+- '2026-04-02'
+- '300'
+- '404'
+- '429'
+- API
+- budget
+- index
+- meeting
+- window
+authority: LOGAN
 ---
 ```
 > ## Documentation Index

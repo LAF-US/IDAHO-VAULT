@@ -1,5 +1,20 @@
 ---
 source: commit
+related:
+- '202'
+- '207'
+- '208'
+- '432'
+- Idaho
+- Idaho Code
+- Idaho Press
+- Idaho Press Club
+- JFAC Rules
+- JFAC Working Groups
+- definition
+- legislative
+- threshold
+authority: LOGAN
 ---
 Idaho Code §74-207 requires all meetings of any standing, special, or select legislative committee to be open to the public at all times, except in extraordinary circumstances provided specifically in the rules of procedure in either house; no exception exists in either chamber's rules for working groups.
 

@@ -1,9 +1,16 @@
 ---
-source: "https://claude.com/connectors/mermaid-chart"
+source: https://claude.com/connectors/mermaid-chart
 author:
-  - "Claude"
-published:
+- Claude
+published: null
 created: 2026-04-01
+related:
+- '2026-04-01'
+- MCP
+- SVG
+- syntax
+- web
+authority: LOGAN
 ---
 This MCP App validates Mermaid syntax, renders diagrams as high-quality SVG, and displays them instantly in an interactive UI where users can preview, zoom, and iterate in real time. It generates shareable playground URLs for collaboration and provides precise error diagnostics with actionable fixes for invalid code. The tool supports syntax checking, readability optimization, and preparing diagrams for embedding or documentation. It’s ideal for workflows that require reliable diagram validation, live rendering, and seamless sharing across teams.
 

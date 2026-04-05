@@ -1,8 +1,62 @@
 ---
 author:
-  - "David Pace"
+- David Pace
 outlet:
-  - "Post Register"
+- Post Register
+related:
+- '314'
+- '358'
+- '500'
+- '598'
+- AAA
+- Bingham County
+- Brad Little
+- Butte County
+- Butte County Republican Central Committee
+- CRT
+- Challis
+- Critical Race Theory
+- Damond Watkins
+- David Pace
+- Dorothy Moon
+- Eastern Idaho
+- Fairness in Women’s Sports
+- GOP
+- Governor
+- Idaho
+- Idaho Republican Party
+- Idaho Republican Party State Central Committee
+- Idaho Republican Women’s Federation
+- Idaho Young Republicans
+- Lemhi
+- Madison County
+- Madison High School
+- Post Register
+- Rexburg
+- Scott Bedke
+- Second Amendment
+- Teton
+- Teton County
+- central committees
+- costs
+- counties
+- credit rating
+- election
+- individuals
+- infrastructure
+- legislative
+- libraries
+- meeting
+- minors
+- parents
+- precinct committeemen
+- sign
+- taxes
+- veto
+- veto letter
+- voting
+- water
+authority: LOGAN
 ---
 The Republican central committees from six Eastern Idaho counties issued a joint statement of support for Gov. Brad Little at a Multi-County Republican Fall Banquet Saturday at Madison High School in Rexburg.
 

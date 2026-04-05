@@ -1,5 +1,10 @@
 ---
 date: 1975-08-18
+related:
+- Frank Church
+- Idaho
+- NBC
+authority: LOGAN
 ---
 # Sen. Frank Church, (D)-Idaho
 ## Chairman, Select Committee on Intelligence Activities

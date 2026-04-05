@@ -1,11 +1,18 @@
 ---
-source: "https://code.visualstudio.com/docs/supporting/troubleshoot-terminal-launch"
+source: https://code.visualstudio.com/docs/supporting/troubleshoot-terminal-launch
 author:
-  - "Microsoft"
+- Microsoft
 published: 2021-11-03
 created: 2026-03-29
+related:
+- '2026-03-29'
+- '259'
+- About
+- WSL
+- agent
+- node
+authority: LOGAN
 ---
-
 To start, we'd like to say we're sorry that you're here reading this document instead of having a good time using the Integrated Terminal in Visual Studio Code. The VS Code team works hard to make the terminal experience as seamless as possible but in some cases, there are issues with shell or terminal configurations that the VS Code editor can't work around.
 
 After having worked with hundreds of developers to diagnose their terminal launch failures, the VS Code team put together this article with the advice and troubleshooting tips that have helped people in the past. We hope you can find an answer here for your shell or terminal issue and can get back to work quickly.

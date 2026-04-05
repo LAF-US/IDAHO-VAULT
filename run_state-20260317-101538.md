@@ -1,3 +1,16 @@
+---
+authority: LOGAN
+related:
+- AGENTS
+- LEVELSET
+- Logan's
+- MAX
+- PROTOCOL
+- PROTOCOL-XKCD-DRAFT
+- QUESTIONS
+- XKCD-DRAFT
+---
+
 # CURRENT OBJECTIVE
 Swarm state layer v1 operational. Awaiting Logan's review.
 

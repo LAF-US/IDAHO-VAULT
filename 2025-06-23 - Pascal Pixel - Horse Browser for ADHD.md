@@ -1,8 +1,14 @@
 ---
-outlet:
-url: "https://pascalpixel.com/blog/horse-browser-for-adhd"
+outlet: null
+url: https://pascalpixel.com/blog/horse-browser-for-adhd
 author:
-  - "Pascal Pixel"
+- Pascal Pixel
+related:
+- About
+- MRR
+- Twitter
+- website
+authority: LOGAN
 ---
 [Horse Browser](https://gethorse.com/) is the browser for ADHD. I've updated the homepage to say that now. If you go look and give it a read, it actually makes a lot of sense. But I didn't want to do it, and if you'll indulge a bit of a rant, I'll explain why.  
 ``(´-ω-`)``

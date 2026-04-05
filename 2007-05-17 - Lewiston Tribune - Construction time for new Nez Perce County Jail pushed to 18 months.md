@@ -1,9 +1,30 @@
 ---
 author:
-  - "Sandra Lee"
+- Sandra Lee
 outlet:
-  - "Lewiston Tribune"
+- Lewiston Tribune
 URL: https://www.lmtribune.com/northwest/construction-time-for-new-nez-perce-county-jail-pushed-to-18-months/article_481f2c11-398a-5f83-86be-6edc084d7d35.html
+related:
+- '156'
+- '540'
+- '674'
+- Ellis
+- Internet
+- Lewiston
+- Lewiston Tribune
+- Nez Perce County
+- Nez Perce County Jail
+- Port of Lewiston
+- bonds
+- construction
+- costs
+- local option sales tax
+- meeting
+- numbers
+- property tax
+- sales tax
+- taxes
+authority: LOGAN
 ---
 Estimated construction time on a new Nez Perce County Jail was extended to about 18 months Wednesday because of concerns not enough time was being allowed.
 

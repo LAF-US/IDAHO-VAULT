@@ -1,4 +1,14 @@
 ---
+related:
+- Bingham County
+- Bingham County Republican Central Committee
+- Blackfoot
+- Gonzaga University
+- Human Rights Commission
+- Idaho
+- Idaho State University
+- Missouri
+authority: LOGAN
 ---
 Residence: Blackfoot 
 Graduate: Gonzaga University School of Law

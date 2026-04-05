@@ -1,5 +1,15 @@
 ---
 date: 1940-01-22
+related:
+- Franklin
+- Franklin Roosevelt
+- Idaho
+- President
+- U.S. Congress
+- William Borah
+- election
+- voice
+authority: LOGAN
 ---
 On a cold morning in January 1940, crowds lined the Capitol’s corridors hoping for admission to the Senate Chamber galleries. Shortly after noon, as senators took their seats, several hundred House members filed into the Chamber, followed by the Supreme Court, the cabinet, diplomats, and President Franklin Roosevelt. All had come for the funeral service of the 33-year Senate veteran whom _Time_ magazine anointed as the “most famed senator of the century”—the progressive Republican from Idaho, William E. Borah.
 

@@ -1,8 +1,18 @@
 ---
 author:
-  - "Dorothy Moon"
-  - "Idaho Republican Party"
+- Dorothy Moon
+- Idaho Republican Party
 URL: https://idgop.org/2024/01/04/turning-to-a-convention-of-states-in-times-of-national-crisis-is-not-the-answer/
+related:
+- Convention of States
+- Dorothy Moon
+- Idaho
+- Idaho Republican Party
+- balanced budget
+- budget
+- supermajority
+- the Civil War
+authority: LOGAN
 ---
 Our country is in a rough place right now, perhaps the worst since the Civil War. Spending is out of control, our southern border is wide open, and Congress seems to be unable (or unwilling) to rein in the deep state swamp. What can we do to save this country we all love?
 

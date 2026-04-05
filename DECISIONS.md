@@ -1,3 +1,53 @@
+---
+authority: LOGAN
+related:
+- '152'
+- '2026-03-15'
+- '2026-03-16'
+- '2026-03-22'
+- '2026-03-24'
+- '2026-03-28'
+- '2026-04-02'
+- '2026-04-03'
+- '461'
+- '485'
+- '551'
+- '583'
+- AGENTS
+- CAN
+- CLAUDE
+- CLI
+- CONSTITUTION
+- Copilot
+- END
+- GRIMOIRE
+- Gemini CLI
+- GitHub
+- LEVELSET
+- LEVELSET-STEP-0-EXTERNAL-AGENT
+- Logan Finney
+- Logan's
+- MCP
+- NOT
+- OpenClaw
+- PROTOCOL
+- RAW
+- Stone
+- THREAT-MODEL
+- VAULT-CONVENTIONS
+- YET
+- agent
+- chain
+- coordination
+- definition
+- doctrine
+- end goal
+- freelance
+- infrastructure
+- systems
+- unachievable
+---
+
 ﻿# DECISIONS.md â€” Confirmed Logan-Approved Decisions
 
 *Last updated: 2026-04-02*

@@ -1,9 +1,26 @@
 ---
 author:
-  - "Brad Little"
+- Brad Little
 URL: https://gov.idaho.gov/pressrelease/gov-little-announces-staff-changes-2/
+related:
+- Boise
+- Boise State University
+- Brad Little
+- Eastern Idaho
+- Governor
+- Hayden
+- Idaho
+- Idaho Power
+- KTVB
+- Nate Fisher
+- University of Idaho
+- children
+- election
+- housing
+- legislative
+- legislative session
+authority: LOGAN
 ---
-
 Boise, Idaho – Governor Brad Little announced today two changes to his staff.
 
 **Hayden Rogers** returned to the Governor’s Office after managing the Governor’s successful re-election campaign since May 2021. Rogers previously served in the Governor’s Office for two years and was a field director on the Governor’s first gubernatorial campaign from December 2017 to January 2019. As the Governor’s Senior Political Advisor, Rogers will work with key state agencies to advance the Governor’s priorities for Idaho relating to housing, finance, and technology. He also will serve as a liaison to communities in Eastern Idaho for the Governor. He is a graduate of Boise State University.

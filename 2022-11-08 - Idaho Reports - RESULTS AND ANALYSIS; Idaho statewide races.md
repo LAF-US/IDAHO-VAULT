@@ -1,7 +1,42 @@
 ---
-author: "Melissa Davlin"
+author: Melissa Davlin
 outlet:
-  - "Idaho Reports"
+- Idaho Reports
+related:
+- '105'
+- AJ Balukoff
+- Ammon
+- Benewah
+- Brad Little
+- Defend and Protect Idaho
+- Dianna David
+- Freedom
+- Gary Raney
+- Governor
+- Idaho
+- Idaho Freedom PAC
+- Idaho Public Television
+- Idaho Reports
+- Kootenai
+- Kootenai County
+- Lemhi
+- Lieutenant Governor
+- Melissa Davlin
+- North Idaho
+- PAC
+- Paul
+- Paulette Jordan
+- Ron Paul
+- Shawn Keenan
+- Stephen Heidt
+- Terri Pickens Manweiler
+- Terry Gilbert
+- 'Yes'
+- counties
+- election
+- general election
+- legislative
+authority: LOGAN
 ---
 Tuesday’s results offered no big surprises or upsets in the winners or losers, but there is plenty to pick apart when you look at the percentages each candidate got.
 

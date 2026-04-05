@@ -1,11 +1,40 @@
 ---
 date: 2026-03-29
-source: "Linear - agent chat - Greeting IDAHO-VAULT.md (session artifact)"
+source: Linear - agent chat - Greeting IDAHO-VAULT.md (session artifact)
 destination: All agents + LOGAN
 subject: Linear workspace manager authorization and swarm coordination handoff
 status: active
+related:
+- '188'
+- '2026-03-29'
+- '224'
+- '234'
+- '869'
+- AGENTS
+- API
+- CONSTITUTION
+- GitHub
+- LOGAN
+- Linear - agent chat - Greeting
+- Linear - agent chat - Greeting IDAHO-VAULT
+- Logan Finney
+- Logan's
+- MCP
+- MVP
+- PDF
+- PROTOCOL
+- TBD
+- The world is quiet here
+- agent
+- budget
+- coordination
+- definition
+- infrastructure
+- math
+- node
+- self
+authority: LOGAN
 ---
-
 # HANDOFF: Swarm Coordination & Linear Agent Authorization
 
 ## ROUTING INSTRUCTION

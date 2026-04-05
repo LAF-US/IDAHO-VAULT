@@ -1,4 +1,10 @@
 ---
+related:
+- Burley
+- Declo
+- Senate Assistant Majority Leader
+- Senate Majority Leader
+authority: LOGAN
 ---
 Residence: Burley
 Hometown: Declo

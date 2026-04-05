@@ -1,3 +1,6 @@
 ---
-residence: "Juliaetta"
+residence: Juliaetta
+related:
+- Juliaetta
+authority: LOGAN
 ---

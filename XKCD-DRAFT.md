@@ -1,3 +1,22 @@
+---
+authority: LOGAN
+related:
+- '2026-03-15'
+- '2026-03-17'
+- CCA
+- CLAUDE
+- DECISIONS
+- HOT
+- LEVELSET
+- Logan's
+- MAN
+- NOT
+- PING
+- agent
+- coordination
+- infrastructure
+---
+
 # XKCD Protocols — DRAFT
 
 *Proposed 2026-03-17 by TASK: Claude Code session*

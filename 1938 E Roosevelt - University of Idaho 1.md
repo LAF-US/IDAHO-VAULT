@@ -1,5 +1,16 @@
 ---
 date: 1938-03-26
+related:
+- '164'
+- '165'
+- '168'
+- 1938 E Roosevelt - My Day
+- Borah - University of Idaho
+- Eleanor Roosevelt
+- Idaho
+- Theodore Roosevelt
+- University of Idaho
+authority: LOGAN
 ---
 Eleanor Roosevelt visits University of Idaho, March 26, 1938
 

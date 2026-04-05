@@ -1,3 +1,14 @@
+---
+authority: LOGAN
+related:
+- '2026-03-30'
+- ChatGPT
+- Logan Finney
+- OpenAI
+- agent
+- codex
+---
+
 HANDOFF: OpenAI Code Agent → Logan
 Date: 2026-03-30
 From: ChatGPT Codex

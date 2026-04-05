@@ -1,9 +1,14 @@
 ---
-url: "https://www.ted.com/talks/rives_the_4_a_m_mystery"
+url: https://www.ted.com/talks/rives_the_4_a_m_mystery
 author:
-  - "John Rives"
+- John Rives
 year: 2007
-venue: "TED"
+venue: TED
+related:
+- John Rives
+- TED
+- The Museum of Four in the Morning
+authority: LOGAN
 ---
 John Rives — TED2007. ~8 minutes.
 

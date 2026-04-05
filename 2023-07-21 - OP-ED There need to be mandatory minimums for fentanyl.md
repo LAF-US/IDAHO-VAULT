@@ -1,6 +1,27 @@
 ---
 author:
-  - "Idaho Main Street Caucus"
+- Idaho Main Street Caucus
+related:
+- '152'
+- '353'
+- Chenele Dixon
+- Gooding
+- Idaho
+- Idaho Code
+- Idaho Main Street Caucus
+- Legislative District 24
+- Montana
+- Twin Falls
+- Wyoming
+- children
+- costs
+- counties
+- drug overdoses
+- fentanyl
+- index
+- morphine
+- opioids
+authority: LOGAN
 ---
 In a 2019 survey, 1 in 5 Idaho students reported being offered, sold or given an illegal drug in the past 30 days. Today, our children are increasingly likely to get offered fentanyl. Illegal fentanyl comes in powder and pill form. Recently, two drug busts on Highway 93 near Twin Falls confiscated 15 pounds of fentanyl. That quantity is enough to kill every man, woman and child in Idaho, Montana and Wyoming.
 

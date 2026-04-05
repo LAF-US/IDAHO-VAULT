@@ -1,8 +1,28 @@
 ---
-outlet:
-url: "https://www.boisestatepublicradio.org/news/2025-01-24/human-ear-idaho-david-lynch-death-blue-velvet-boise"
+outlet: null
+url: https://www.boisestatepublicradio.org/news/2025-01-24/human-ear-idaho-david-lynch-death-blue-velvet-boise
 author:
-  - "Julie Luchetta"
+- Julie Luchetta
+related:
+- BSU
+- Boise
+- Boise State University
+- Drive
+- Idaho
+- Idaho Press
+- McCall
+- Montana
+- Rick Just
+- Sandpoint
+- Virginia
+- 'Yes'
+- character
+- format
+- journalists
+- parents
+- police
+- voiced
+authority: LOGAN
 ---
 ![A close-up of David Lynch's face in profile. A older man with silver white hair, blue eyes looking to the left. ](https://npr.brightspotcdn.com/dims4/default/6b6a2e7/2147483647/strip/true/crop/3504x2336+0+0/resize/1760x1174!/format/webp/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F17%2Ffb%2F46c1b421453aa604e1387864bbb7%2Fap080804014423.jpg)
 

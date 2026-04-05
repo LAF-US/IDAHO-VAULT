@@ -1,9 +1,34 @@
 ---
 author:
-  - "Rett Nelson"
+- Rett Nelson
 outlet:
-  - "East Idaho News"
+- East Idaho News
 URL: https://www.eastidahonews.com/2023/12/bonneville-county-legislator-censured-for-violating-republican-party-platform-committee-issues-guidance-to-colleagues/
+related:
+- 2023 legislative session
+- Barbara Ehardt
+- Bonneville County
+- College of Eastern Idaho
+- Doyle Beck
+- East Idaho News
+- Eastern Idaho
+- GOP
+- Idaho
+- Kevin Cook
+- Legislative District 32
+- Mickelsen
+- Nick Contos
+- Stephanie Mickelsen
+- Wendy Horman
+- censured
+- election
+- legislative
+- legislative session
+- meeting
+- money
+- party platform
+- voting
+authority: LOGAN
 ---
 IDAHO FALLS — The committee that oversees Legislative District 32 is urging their state lawmakers to reaffirm their commitment to the Republican Party in 2024.
 

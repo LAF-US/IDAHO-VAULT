@@ -1,8 +1,36 @@
 ---
 author:
-  - "Patrick Whalen"
+- Patrick Whalen
 outlet:
-  - "Coeur d'Alene Press"
+- Coeur d'Alene Press
+related:
+- Board of Trustees - NIC
+- Boise
+- Brent Regan
+- Christian nationalism
+- Coeur d'Alene
+- Coeur d'Alene Press
+- Greg McKenzie
+- Idaho
+- Idaho Republican Party
+- Idaho State University
+- Kootenai
+- Kootenai County
+- Kootenai County Republican Central Committee
+- Legislative District 21
+- NIC
+- North Idaho
+- North Idaho Republicans
+- Todd Banducci
+- Treg Bernt
+- children
+- libraries
+- meeting
+- nuclear energy
+- vocal
+- website
+- white supremacy
+authority: LOGAN
 ---
 Last night I sat down to dinner with state Sen. Treg Bernt from Legislative District 21. Treg is a fourth-generation Idahoan and a graduate of Idaho State University. He is a lifelong Republican and a small business owner. You would recognize him — he is just the kind of stable, reasonable and intelligent Republican that is no longer welcome by today’s Kootenai County Republican Central Committee. I imagine they would refer to him as a “RINO” as they do so many of our staunchly conservative neighbors.
 

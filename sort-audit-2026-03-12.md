@@ -1,3 +1,500 @@
+---
+authority: LOGAN
+related:
+- 2020-01-22 - McClure - Committee considers narrowing presidential search finalists
+- 2020-01-24 - McClure - First grocery, property tax bills before committee
+- 2020-01-30 - McClure - Religious Freedom Day resolution stalls in committee
+- 2021-04-07 - Idaho Education News - Senate committee kills sex education ‘opt-in’
+  bill
+- 2021-11-15 - Idaho Reports - Chairman Wood confirms no Health and Welfare hearing
+  this session
+- 2022-05-15 - IR Podcast - Patriot Front Arrests
+- 2022-10-20 - IR Podcast - Legislative Races to Watch
+- 2023 Idaho Statesman & ProPublica - Idaho's crumbling schools
+- 2023-01-11 - LITTLE - Gov. Little announces staff changes
+- 2023-06-30 - OP-ED Presidential caucus isn't right answer for our state
+- 2023-07-19 - OP-ED Finding success through collaborating with fellow legislators
+- 2023-07-19 - OP-ED We're fighting for Idaho farmers, not illegal immigration
+- 2023-07-21 - OP-ED There need to be mandatory minimums for fentanyl
+- 2023-08-19 - OP-ED Main Street Idaho, a breath of fresh air
+- 2023-09-06 - IR Podcast - An Idaho Labor Market Snapshot
+- 2023-09-27 - IR Podcast - Quagga Mussels Detected in Snake River
+- 2023-10-02 - FIRE defends Idaho conservation officer sued for criticizing wealthy
+  ranch owner’s airstrip permit
+- 2023-10-04 - IR Podcast - Ready, Set, Idaho Launch
+- 2023-10-08 - IDCP - Constitution Party Announces Doug Traubel Has Changed Party
+  Affiliation, Will Run for Ada Sheriff in 2024
+- 2023-10-11 - IR Podcast - Early Endorsements for the Idaho Legislature
+- 2023-10-11 - OP-ED Protecting Idaho's Farmland
+- 2023-10-17 - IDGOP - Statement on Speaker of the House vote
+- 2023-10-18 - IR Podcast - The Rising Cost of Highway Right-of-Way
+- 2023-10-20 - IDGOP - Caribou County GOP Appeals Primary Endorsements to State Chair
+  Moon
+- 2023-10-20 - MOON - Local Elections Matter the Most
+- 2023-10-20 - SIMPSON - I’m Not Over the “Moon” for a Speaker Jordan, Idaho Deserves
+  Better
+- 2023-10-23 - Post Register - Six eastern Idaho GOP Central Committees issue statement
+  rallying around Gov. Little
+- 2023-10-25 - Idaho Capital Sun - Ada County Republican Central Committee elects
+  new officers after former group resigned
+- 2023-10-26 - IR Podcast - State Financial Forecast
+- 2023-11-01 - IR Podcast - Opposition to the Lava Ridge Wind Project
+- 2023-11-09 - IR Podcast - How Counties Manage Overcrowded Jails
+- 2023-11-15 - BOISE - City of Boise continues successful property tax rebate program
+- 2023-11-15 - IR Podcast - Finding Financing to Support Building Homes
+- 2023-11-28 - IDFC - Idaho Freedom Caucus Member, State Senator Brian Lenney, Spearheads
+  Anti-SLAPP Bill to Champion Free Speech
+- 2023-11-29 - SBOE - Finalists named in Idaho State University president search
+- 2023-12-01 - IR Podcast - Lawmakers Prepare for 2024
+- 2023-12-01 - MOON - Pocatello awards drag queen story time an award for 'Human and
+  Civil Rights,' Igniting concerns from parents over child exposure to gender confusion
+- 2023-12-05 - Idaho Statesman Opinion - Idaho’s laws help hide child abuse. These
+  two steps could bring more cases to justice
+- 2023-12-07 - Ada GOP - WHEREAS Senator Chuck Winder
+- 2023-12-07 - DHW - Idaho Behavioral Health Plan Implementation Update
+- 2023-12-08 - IDFC - Idaho Must Address the Fentanyl Crisis
+- 2023-12-10 - Ada County - All nonprofits should have tax transparency. Hospitals
+  shouldn’t have special rules
+- 2023-12-15 - Post Register - Local GOP committee censures Rep. Mickelsen, issues
+  ‘guidance’ to Rep. Horman and Sen. Cook
+- 2023-12-19 - East Idaho News - Bonneville County legislator ‘censured’ for violating
+  Republican Party platform; committee issues ‘guidance’ to colleagues
+- 2023-17-20 - OP-ED Legislature should approve May primary
+- '2026-03-12'
+- '373'
+- '988'
+- Ada County
+- Ada County Republican Central Committee
+- Administrative Office of the Courts
+- American Civil Liberties Union
+- Antifa
+- Aryan Nations
+- Associate Justices
+- Associated Taxpayers of Idaho
+- Atlantic Ocean
+- Attorney General
+- Behavioral Health Council
+- Bible
+- Board of Accountancy
+- Board of Correction
+- Board of Dentistry
+- Board of Engineers and Land Surveyors
+- Board of Medicine
+- Board of Nursing
+- Board of Pharmacy
+- Board of Professional Counselors and Marriage and Family Therapists
+- Board of Veterinary Medicine
+- Boise
+- Bonner County
+- Bonner County v. City of Sandpoint weapons ban lawsuit
+- Bonneville County
+- Bonneville Power Administration
+- Borah Peak
+- Brian Lenney
+- Broadband Advisory Board
+- Building Contractors Association of Southwest Idaho
+- Bureau of Building, Construction, and Real Estate
+- Bureau of Health Professions
+- Bureau of Occupational Licenses
+- Bureau of Regulatory & Legislative Affairs
+- Cache
+- Cache Valley
+- Capitol Services Committee
+- Caribou County
+- Change in Employee Compensation
+- Change in Employee Compensation Committee
+- Chief Justice
+- Child Protection Legislative Oversight Committee
+- Child Protection Services
+- Christian nationalism
+- Christianity
+- Chuck Winder
+- Coeur d'Alene
+- Coeur d'Alene Lake Advisory Committee
+- Commission for Libraries
+- Commission of Pardons and Parole
+- Commission on Hispanic Affairs
+- Committee on Federalism
+- Committee on Uniform Accounting and Transparency
+- Council
+- Council on Indian Affairs
+- Counseling Compact
+- Criminal Justice Reinvestment Oversight Committee
+- DEVELOPMENT
+- DHW
+- Davillier Law Group
+- Democratic National Committee
+- Deputy Attorney General
+- Division of Behavioral Health
+- Division of Building Safety
+- Division of Financial Management
+- Division of Human Resources
+- Division of Occupational and Professional Licenses
+- Division of Veterans Services
+- Doug Traubel
+- East Idaho News
+- Economic Advisory Council
+- Economic Outlook and Revenue Assessment Committee
+- Election Day
+- Equitable Assessment of Costs Related to Medicaid Expansion Committee
+- Europe
+- Expenditure of ARPA Funds Study Committee
+- Federalism Subcommittee on Education
+- Federalism Subcommittee on Federal Lands
+- Federalism Subcommittee on Health and Welfare
+- Festival at Sandpoint
+- Fraternal Order of Police
+- Freedom
+- GOP
+- GPS
+- GPS coordinates
+- GitHub
+- Global Positioning System
+- Governor
+- Governor's K-12 Education Task Force
+- Group Insurance Advisory Committee
+- Hells Canyon
+- House Assistant Majority Leader
+- House Assistant Minority Leader
+- House Majority Caucus Chair
+- House Majority Leader
+- House Minority Caucus Chair
+- House Minority Leader
+- House member
+- Human Resources
+- Human Rights Commission
+- ITN
+- Idaho
+- Idaho Air National Guard
+- Idaho Army National Guard
+- Idaho Athletic Commission
+- Idaho Capital Sun
+- Idaho Chooses Life
+- Idaho Code
+- Idaho Commission for Redistricting
+- Idaho Conservation League
+- Idaho Constitution
+- Idaho Constitution Party
+- Idaho Content Standards Study Committee
+- Idaho Court of Appeals
+- Idaho Criminal Justice Commission
+- Idaho Democratic Party
+- Idaho Democratic Party Platform
+- Idaho Education News
+- Idaho Fish and Game Commission
+- Idaho Freedom Caucus
+- Idaho Health Data Exchange
+- Idaho House of Representatives
+- Idaho Judicial Council
+- Idaho Launch
+- Idaho Legislature
+- Idaho Libertarian Party
+- Idaho Lottery
+- Idaho Military Division
+- Idaho Military History Museum
+- Idaho Press
+- Idaho Press Club
+- Idaho Public Television
+- Idaho Reports
+- Idaho Republican Party
+- Idaho Republican Party Platform
+- Idaho Republican Party State Central Committee
+- Idaho Senate
+- Idaho State University
+- Idaho Statesman
+- Idaho Supreme Court
+- Idaho Water Resource Board
+- Idaho Water Supply Bank
+- Idaho Youth ChalleNGe Academy
+- Information and Technology Services
+- Intrastate Commercial Air Service Study Committee
+- Islam
+- Joint Finance-Appropriations Committee
+- Joint Legislative Oversight Committee
+- Joint Millennium Fund Committee
+- Joint Senate and House Rules
+- Judaism
+- Judicial Districts
+- Kaiser Family Foundation
+- Lake
+- Lava Ridge Wind Project
+- Legislative Budget Book
+- Legislative Council
+- Legislative Services Office
+- Lewiston
+- Local Highway Technical Assistance Council
+- Long Valley
+- Los Angeles
+- Los Angeles Police Department
+- Lost River
+- Lost River Mountain Range
+- Low-Income Housing Tax Credit
+- Magic Valley
+- Malheur County
+- Malheur National Wildlife Refuge
+- Medicaid
+- Medicaid Expansion
+- Medicaid Expansion ballot initiative
+- Medicaid Managed Care Task Force
+- Mickelsen
+- Millennium Fund
+- Multnomah County
+- Narcan
+- Natural Resources Interim Committee
+- Occupational Licensing and Certification Laws Committee
+- Occupational and Professional Licensure Review Committee
+- Office of Administrative Rules Coordinator
+- Office of Broadband
+- Office of Emergency Management
+- Office of Group Insurance
+- Office of Performance Evaluations
+- Office of the Attorney General
+- Office of the State Appellate Public Defender
+- Office of the State Public Defender
+- Orange County
+- Outfitters and Guides Licensing Board
+- PERSI
+- PRIVATE
+- PUBLIC
+- Pacific Ocean
+- Paradise Ridge
+- Patriot Front
+- Payments in Lieu of Taxes
+- Pocatello
+- Podcast
+- Port of Lewiston
+- Post Register
+- President
+- ProPublica
+- Property Tax Rebate Program
+- Property Tax Reduction Program
+- Property Taxes and Revenue Expenditures Study Committee
+- Public Charter School Commission
+- Public Defense Commission
+- Public Utilities Commission
+- Quran
+- RFP
+- RINOs
+- Reading Time with the Queens
+- Real Estate Commission
+- Reddit
+- Republican National Committee
+- Rules of the House
+- Rules of the Senate
+- STARBASE
+- Sandpoint
+- Sandpoint Police Department
+- Sawtooth Mountain Range
+- Sawtooth National Recreation Area
+- Senate Assistant Majority Leader
+- Senate Assistant Minority Leader
+- Senate Majority Caucus Chair
+- Senate Majority Leader
+- Senate Minority Caucus Chair
+- Senate Minority Leader
+- Senate President Pro Tempore
+- Senate member
+- Silver Valley
+- Snake River
+- Southern Poverty Law Center
+- Speaker of the House
+- State Appellate Public Defender
+- State Athletic Commission
+- State Board of Canvassers
+- State Board of Education
+- State Board of Examiners
+- State Board of Land Commissioners
+- State Court System
+- State Department of Education
+- State Historical Society
+- State Lottery Commission
+- State Public Defender
+- State Tax Commission
+- State of Idaho
+- Summit County
+- Surplus Lines Association of Idaho
+- Task Force to Examine Indoctrination in Idaho Education
+- The Truth As Told by Mason Buttle
+- Torah
+- Treasure Valley
+- U.S. Constitution
+- U.S. Constitution Party
+- U.S. Democratic Party
+- U.S. Libertarian Party
+- U.S. Republican Party
+- USA
+- UTC
+- United States of America
+- VoIP
+- Wood River Valley
+- Workforce Development Council
+- YouTube
+- Your Health Idaho
+- abortion
+- addiction
+- ambulances
+- anti-abortion
+- artificial intelligence
+- atheist
+- attorney’s fees
+- balanced budget
+- ballot initiatives
+- battery
+- beneficial use
+- boat check stations
+- bond elections
+- bonds
+- bonds and levies
+- books
+- broadband
+- budget
+- building codes
+- campaign finance
+- censured
+- child pornography
+- child protection
+- children
+- churches
+- community colleges
+- construction
+- copyright
+- copyright laws
+- counselors
+- credit rating
+- dams
+- daylight saving time
+- district court
+- district judges
+- don't tread on me
+- drag
+- drag reading events
+- economic development
+- election
+- electioneering
+- electricity
+- emergency care
+- emergency medical services
+- emergency room
+- executive order
+- executive session
+- fentanyl
+- fiscal year
+- fishing
+- foregone taxes
+- formula
+- freedom of assembly
+- freedom of religion
+- freedom of speech
+- freedom of the press
+- gender identity
+- general election
+- gerrymandering
+- grocery tax
+- gubernatorial appointment
+- hatchery
+- health care
+- health insurance
+- holy book
+- homosexuality
+- hospitals
+- hotels
+- housing
+- hunters
+- hunting
+- independent repair company
+- infrastructure
+- internet crimes against children
+- internet service providers
+- interstate compact
+- judges
+- lakes
+- libraries
+- local option sales tax
+- magistrate court
+- magistrate judges
+- marijuana
+- medical marijuana
+- medical school
+- metropolitan statistical areas
+- minors
+- morphine
+- mosques
+- naloxone
+- national housing trust fund
+- national wildlife refuge
+- neo-Nazi
+- nicotine
+- nonprofits
+- nuclear energy
+- nurses
+- online sales tax
+- open enrollment
+- open primaries initiative
+- opioid reversal
+- opioids
+- original equipment manufacturer
+- outfitters and guides
+- parental permissions
+- parental rights
+- parents
+- party platform
+- places of worship
+- political action committee
+- political parties
+- pornography
+- precinct committeemen
+- pregnancy
+- presidential primary
+- primary election
+- property tax
+- property tax budget
+- public schools
+- ranch
+- ranger districts
+- raw milk
+- redistricting
+- religion
+- remote work
+- reservoirs
+- right to bear arms
+- right to petition the government
+- rivers
+- robocalls
+- sales tax
+- sales tax distribution formula
+- same-sex marriage
+- seniors
+- settlement funds
+- sex education
+- single-subject rule
+- smoking
+- social media
+- supplemental levy
+- synagogues
+- tax credits
+- tax exemptions
+- taxes
+- temples
+- the Civil War
+- therapists
+- tobacco
+- tobacco cessation
+- unclaimed property
+- unemployment insurance
+- unemployment insurance tax
+- utility
+- vaping
+- voting
+- voting precincts
+- water
+- water rights
+- watercraft inspections
+- wetlands
+- wildfire
+- working group - Property Tax
+- write-in campaign
+---
+
 # Vault Sort Audit — 2026-03-12
 
 _Generated 2026-03-12 02:18 UTC by GitHub Actions_

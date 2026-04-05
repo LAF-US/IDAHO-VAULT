@@ -1,3 +1,27 @@
+---
+authority: LOGAN
+related:
+- '2026-03-15'
+- API
+- CDX
+- CLAUDE
+- CONSTITUTION
+- DECISIONS
+- GitHub
+- Idaho
+- Idaho Legislature
+- Internet
+- LEVELSET
+- LOW
+- Logan's
+- Obsidian
+- OpenClaw
+- agent
+- chain
+- syntax
+- website
+---
+
 # Threat Model — IDAHO-VAULT
 
 Established 2026-03-15 following review of OpenClaw autonomous agent incident. This document describes the vault's attack surfaces, trust boundaries, and mitigations.

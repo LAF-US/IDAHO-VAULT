@@ -1,4 +1,12 @@
 ---
+related:
+- Brent Hill
+- Britt Raybould
+- Doug Ricks
+- Jon Weber
+- Madison County
+- Ron Nate
+authority: LOGAN
 ---
 Madison County
 ### 2023-2024 

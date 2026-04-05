@@ -2,9 +2,29 @@
 title: AGENT PROTOCOL
 updated: 2026-04-02
 status: active
-authority: "LOGAN"
+authority: LOGAN
+related:
+- 1Password
+- '2026-04-02'
+- AGENTS
+- CONSTITUTION
+- DECISIONS
+- GitHub
+- LEVELSET
+- LEVELSET-CURRENT
+- LOGAN
+- PROTOCOL
+- README
+- TRIUNE
+- VAULT-CONVENTIONS
+- agent
+- chain
+- codex
+- coordination
+- format
+- index
+- sign
 ---
-
 # AGENT PROTOCOL - IDAHO-VAULT
 
 **Document:** Local bootstrap protocol for agent invocation in IDAHO-VAULT  

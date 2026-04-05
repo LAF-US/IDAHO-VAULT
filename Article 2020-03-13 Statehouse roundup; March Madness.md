@@ -1,4 +1,63 @@
 ---
+related:
+- '120'
+- 2020 census
+- '354'
+- '409'
+- Boise
+- Brad Little
+- Brent Hill
+- Caldwell
+- Dalton Gardens
+- Governor
+- House Majority Leader
+- Idaho
+- Idaho Press
+- Idaho Press Club
+- Jim Patrick
+- Jim Rice
+- Joint Finance-Appropriations Committee
+- Lauren Necochea
+- Logan Finney
+- McClure Center
+- Medicaid
+- Mike Moyle
+- Oakley
+- President
+- Rexburg
+- Riggins
+- Scott Bedke
+- Senate President Pro Tempore
+- Senate State Affairs
+- Star
+- Steve Vick
+- Treasure Valley
+- Twin Falls
+- Utah
+- Washington
+- agriculture
+- balanced budget
+- budget
+- budgets
+- construction
+- coronavirus
+- counties
+- daylight saving time
+- fiscal year
+- hemp
+- index
+- legislative
+- legislative session
+- marijuana
+- property tax
+- redistricting
+- sales tax
+- seniors
+- systems
+- taxes
+- taxing districts
+- transportation
+authority: LOGAN
 ---
 https://www.loganfinney.com/idaho-legislature-2020/3/13/march-madness
 

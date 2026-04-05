@@ -1,8 +1,10 @@
 ---
 title: William Borah
 linter-yaml-title-alias: William Borah
+related:
+- Idaho
+authority: LOGAN
 ---
-
 Republican Idaho U.S. Senator
 
 ## The Lion of Idaho

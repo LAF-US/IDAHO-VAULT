@@ -1,4 +1,17 @@
 ---
+related:
+- Act
+- Americans with Disabilities Act
+- Blackfoot
+- Boise
+- Caldwell
+- Home
+- Hyrum Erickson
+- Mountain Home
+- Paul
+- President
+- Rexburg
+authority: LOGAN
 ---
 Statutory independent agency created in 1969 to protect Idahoans against illegal discrimination. Also handles complaints under the federal Civil Rights Act, Age Discrimination in Employment Act, and Americans with Disabilities Act. 
 

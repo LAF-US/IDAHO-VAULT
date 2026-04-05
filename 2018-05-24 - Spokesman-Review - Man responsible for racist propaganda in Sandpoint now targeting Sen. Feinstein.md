@@ -1,9 +1,38 @@
 ---
 author:
-  - "Chad Sokol"
+- Chad Sokol
 outlet:
-  - "Spokesman-Review"
+- Spokesman-Review
 URL: https://www.spokesman.com/stories/2018/may/24/sandpoint-man-responsible-for-flurry-of-racist-pro/
+related:
+- '350'
+- Alexandria
+- Ben Olson
+- California
+- Idaho
+- Los Angeles
+- North Idaho
+- Paul
+- San Diego
+- San Francisco
+- Sandpoint
+- Sandpoint High School
+- Sandpoint Reader
+- Shelby Rognstad
+- Spokesman-Review
+- The Road to Power
+- Virginia
+- cities
+- election
+- mayor
+- neo-Nazi
+- police
+- robocalls
+- social media
+- voice
+- website
+- white supremacist
+authority: LOGAN
 ---
 A Sandpoint man known for blanketing his city with racist, anti-Semitic propaganda appears to be responsible for a flurry of robocalls targeting U.S. Sen. Dianne Feinstein of California and urging residents of that state to “relocate to North Idaho, where very white is very right.”
 

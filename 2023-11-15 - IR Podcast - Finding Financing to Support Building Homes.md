@@ -1,9 +1,43 @@
 ---
 author:
-  - "Logan Finney"
+- Logan Finney
 outlet:
-  - "Idaho Reports"
+- Idaho Reports
 URL: https://blog.idahoreports.idahoptv.org/2023/11/15/podcast-finding-financing-to-support-building-homes/
+related:
+- '150'
+- AMI
+- Act
+- American Rescue Plan Act
+- Average Median Income
+- Boise
+- Idaho
+- Idaho Housing and Finance Association
+- Idaho Reports
+- Interview 2023-11-08 Jason Lantz
+- Jason Lantz
+- Ketchum
+- Logan Finney
+- Low-Income Housing Tax Credit
+- Treasure Valley
+- Workforce Housing Fund
+- 'Yes'
+- affordable housing
+- bridges
+- charter schools
+- counselors
+- economic development
+- first responders
+- homelessness
+- homes
+- housing
+- infrastructure
+- national housing trust fund
+- nurses
+- realtors
+- tax credits
+- teachers
+authority: LOGAN
 ---
 *Communities all over the state are grappling with housing affordability, but the sheer variety of programs available to support it can be overwhelming. Marketing and communications director Jason Lantz from the Idaho Housing and Finance Association discusses how IHFA supports affordable homes for Idahoans in all walks of life.*
 

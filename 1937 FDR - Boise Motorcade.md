@@ -1,5 +1,16 @@
 ---
 date: 1937-09-27
+related:
+- 1937 FDR - Boise Speech
+- Boise
+- Eleanor Roosevelt
+- FDR
+- Franklin
+- Franklin Roosevelt
+- Governor
+- Idaho
+- President
+authority: LOGAN
 ---
 *President Franklin Roosevelt, First Lady Eleanor Roosevelt and Idaho Governor Barzilla Clark*
 

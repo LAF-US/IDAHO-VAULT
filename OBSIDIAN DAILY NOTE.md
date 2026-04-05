@@ -1,15 +1,25 @@
 ---
-title: "OBSIDIAN DAILY NOTE"
+title: OBSIDIAN DAILY NOTE
 updated: 2026-04-01
 status: archived
-authority: "LOGAN"
+authority: LOGAN
 authors:
-  - ChatGPT Codex
+- ChatGPT Codex
 source:
-  - legacy-template-artifact
-  - note/2026-03-18
+- legacy-template-artifact
+- note/2026-03-18
+related:
+- '2026-03-18'
+- '2026-04-01'
+- ChatGPT
+- DAILY NOTE
+- DAILY NOTE TEMPLATE
+- LOGAN
+- The world is quiet here
+- dailynote
+- infrastructure
+- template
 ---
-
 # OBSIDIAN DAILY NOTE
 
 This file is retained as a legacy daily-note artifact to preserve backlinks and historical context. It is not active infrastructure.

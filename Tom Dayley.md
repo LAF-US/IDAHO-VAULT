@@ -1,4 +1,13 @@
 ---
+related:
+- Ada County
+- Boise
+- Burley
+- House member
+- Idaho
+- Idaho Commission for Redistricting
+- Scott Bedke
+authority: LOGAN
 ---
 Residence: Boise
 Hometown: Burley

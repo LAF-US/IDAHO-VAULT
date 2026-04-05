@@ -1,5 +1,11 @@
 ---
 date: 1930-06-01
+related:
+- Henry
+- President
+- Washington
+- William Borah
+authority: LOGAN
 ---
 !Herbert_Hoover_at_desk_with_group_standing_behind_him.jpg
 

@@ -1,8 +1,15 @@
 ---
-outlet: "Hacker News"
-url: "https://news.ycombinator.com/item?id=30345496"
+outlet: Hacker News
+url: https://news.ycombinator.com/item?id=30345496
 author:
-  - "ttiurani"
+- ttiurani
+related:
+- '1000'
+- GTD
+- chain
+- node
+- that moment
+authority: LOGAN
 ---
 **ttiurani** · 2022-02-15
 

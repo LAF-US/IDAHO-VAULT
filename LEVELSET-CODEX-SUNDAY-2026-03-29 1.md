@@ -1,14 +1,31 @@
 ---
-title: "LEVELSET - Codex Sunday Report - 2026-03-29"
+title: LEVELSET - Codex Sunday Report - 2026-03-29
 created: 2026-03-29
 updated: 2026-03-29
 status: active
-authority: "LOGAN"
+authority: LOGAN
 authors:
-  - ChatGPT Codex
+- ChatGPT Codex
 source: session/2026-03-29
+related:
+- '102'
+- '2026-03-29'
+- ChatGPT
+- Copilot
+- LAF
+- LEVELSET
+- LEVELSET-CURRENT
+- LOGAN
+- Logan's
+- MANIFEST-SPEC
+- Obsidian
+- The world is quiet here
+- agent
+- budget
+- coordination
+- deliverables
+- doctrine
 ---
-
 # LEVELSET - Codex Sunday Report - 2026-03-29
 
 This report captures the live Codex-side understanding of the vault on 2026-03-29 during Sunday swarm mode. It is a point-in-time checkpoint, not a rewrite of `!/!/LEVELSET-CURRENT.md`.

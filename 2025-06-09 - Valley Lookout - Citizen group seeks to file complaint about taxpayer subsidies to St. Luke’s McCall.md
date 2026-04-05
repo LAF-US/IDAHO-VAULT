@@ -1,8 +1,26 @@
 ---
-outlet: "Valley Lookout"
-url: "https://valleylookout.com/2025/06/09/citizen-group-to-file-complaint-about-taxpayer-subsidies-to-st-lukes-mccall/?emci=45938e6c-3a46-f011-8f7c-6045bdfe8e9c&emdi=97839396-bb46-f011-8f7c-6045bdfe8e9c&ceid=110103"
+outlet: Valley Lookout
+url: https://valleylookout.com/2025/06/09/citizen-group-to-file-complaint-about-taxpayer-subsidies-to-st-lukes-mccall/?emci=45938e6c-3a46-f011-8f7c-6045bdfe8e9c&emdi=97839396-bb46-f011-8f7c-6045bdfe8e9c&ceid=110103
 author:
-  - "Drew Dodson"
+- Drew Dodson
+related:
+- Act
+- Attorney General
+- Donnelly
+- Faye Thompson
+- GUV
+- Idaho
+- Idaho Constitution
+- Idaho House of Representatives
+- Lawrence Wasden
+- McCall
+- Raúl Labrador
+- Star
+- Valley County
+- housing
+- initial
+- money
+authority: LOGAN
 ---
 Idaho Attorney General Raúl Labrador will be asked to review the legality of a relationship between St. Luke’s Health System and the McCall Memorial Hospital District.
 

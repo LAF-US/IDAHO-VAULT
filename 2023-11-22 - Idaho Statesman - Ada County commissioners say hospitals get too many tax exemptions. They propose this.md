@@ -1,9 +1,71 @@
 ---
 author:
-  - "Ian Max Stevenson"
+- Ian Max Stevenson
 outlet:
-  - "Idaho Statesman"
+- Idaho Statesman
 URL: https://www.idahostatesman.com/news/politics-government/state-politics/article281907523.html
+related:
+- '109'
+- '110'
+- '130'
+- '401'
+- '501'
+- ARE
+- Ada County
+- Arco
+- Blackfoot
+- Boise
+- Butte County
+- Chuck Winder
+- County Assessor
+- Eagle
+- FOR
+- HOW
+- Harvard
+- IRS
+- Idaho
+- Idaho Association of Counties
+- Idaho Senate
+- Idaho Statesman
+- Idaho Supreme Court
+- Illinois
+- Josh Tanner
+- KFF
+- Kaiser Family Foundation
+- Lauren Necochea
+- Lost River
+- Medicaid
+- Meridian
+- Nampa
+- Oregon
+- Rhode Island
+- Saint Alphonsus Health System
+- Sanders
+- Senate Majority Leader
+- St. Luke's Health System
+- Tom Dayley
+- U.S. Senate
+- Utah
+- children
+- costs
+- counties
+- dollars
+- elk
+- emergency room
+- health care
+- highways
+- hospitals
+- legislative
+- legislative session
+- meeting
+- money
+- nonprofits
+- nurses
+- property tax
+- systems
+- tax exemptions
+- taxes
+authority: LOGAN
 ---
 Twenty-five years ago, Ada County leaders unsuccessfully challenged the tax exemptions received by one of Idaho’s largest employers by calling into question its charitable status. 
 

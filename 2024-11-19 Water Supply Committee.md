@@ -1,4 +1,27 @@
 ---
+related:
+- '208'
+- '871'
+- Department of Water Resources
+- Idaho
+- Idaho Power
+- King Hill
+- Lewiston
+- Milner
+- Moscow
+- NWS
+- North Idaho
+- Priest River
+- Salmon
+- Salmon River
+- Snake River
+- agriculture
+- creeks
+- livestock
+- reservoirs
+- systems
+- water
+authority: LOGAN
 ---
 Department of Water Resources Meeting
 

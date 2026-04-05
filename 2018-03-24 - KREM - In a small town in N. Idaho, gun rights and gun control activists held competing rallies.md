@@ -1,9 +1,31 @@
 ---
 author:
-  - "Samantha Kubota"
+- Samantha Kubota
 outlet:
-  - "KREM"
+- KREM
 URL: https://www.krem.com/article/news/local/bonner-county/in-a-small-town-in-n-idaho-gun-rights-and-gun-control-activists-held-competing-rallies/293-531826841
+related:
+- '293'
+- Bridge
+- Coeur d'Alene
+- Florida
+- Idaho
+- Long Bridge
+- North Idaho
+- Rebecca Holland
+- Sandpoint
+- Sandpoint High School
+- Second Amendment
+- Spokane
+- Washington
+- counselors
+- don't tread on me
+- homes
+- hunting
+- money
+- symbol
+- teachers
+authority: LOGAN
 ---
 *As the "March for our Lives" walked through downtown carrying signs that read "teachers should be in charge of grades, not Glocks," the "March for our Rights" walked across the Long Bridge with "don't tread on me" flags.*
 

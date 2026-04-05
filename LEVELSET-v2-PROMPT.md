@@ -1,3 +1,18 @@
+---
+authority: LOGAN
+related:
+- Idaho
+- Idaho Public Television
+- Idaho Reports
+- LEVELSET
+- LEVELSET-v2
+- Logan Finney
+- Obsidian
+- PROJECT
+- YOU
+- infrastructure
+---
+
 # LEVELSET v2 PROMPT
 *Distribute to all active conversations. Each conversation completes its own LEVELSET REPORT and returns it to TASK: LEVELSET reports for synthesis.*
 ---

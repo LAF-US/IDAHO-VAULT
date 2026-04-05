@@ -1,10 +1,72 @@
 ---
 author:
-  - "Lyndsie Kiebert"
-  - "Zach Hagadone"
+- Lyndsie Kiebert
+- Zach Hagadone
 outlet:
-  - "Sandpoint Reader"
+- Sandpoint Reader
 URL: https://sandpointreader.com/boiling-point-reached-in-gun-case/
+related:
+- '170'
+- '510'
+- '563'
+- ALL
+- Antifa
+- Attorney General
+- Ben Olson
+- Boise
+- Bonner County
+- Bonner County Courthouse
+- Bonner County v. City of Sandpoint weapons ban lawsuit
+- Christy Zito
+- County Commissioners
+- Dan McDonald
+- Daryl Wheeler
+- Davillier Law Group
+- Don Holland
+- Facebook
+- Festival at Sandpoint
+- Hammett
+- Idaho
+- Idaho Association of Counties
+- Idaho Capitol
+- Idaho Code
+- Idaho Second Amendment Alliance
+- Kootenai
+- Kootenai County
+- Lake
+- Lawrence Wasden
+- Prosecuting Attorney
+- Rebecca Holland
+- Sandpoint
+- Sandpoint Police Department
+- Sandpoint Reader
+- Scott Herndon
+- Second Amendment
+- Seth Grigg
+- Shelby Rognstad
+- Steve Wasylko
+- War Memorial Field
+- Zach Hagadone
+- attorney’s fees
+- battery
+- city council
+- construction
+- costs
+- district court
+- individuals
+- initial
+- law enforcement
+- legislative
+- mayor
+- meeting
+- money
+- sign
+- social media
+- transportation
+- vocal
+- voice
+- white supremacist
+authority: LOGAN
 ---
 As the Bonner County v. City of Sandpoint weapons ban lawsuit enters its fifth month, tensions have steadily increased, boiling over when an encounter between members of the public on either side of the issue resulted in a battery charge.
 

@@ -1,5 +1,17 @@
 ---
 source: commit
+related:
+- Dean Cameron
+- Department of Insurance
+- Freedom
+- GOP
+- IFF
+- Idaho
+- JFAC Working Groups
+- Joint Finance-Appropriations Committee
+- Lawrence Wasden
+- Maxine Bell
+authority: LOGAN
 ---
 Dean Cameron served as JFAC co-chair from 1993 to 2015 — the longest continuous co-chairship in committee history — and has served as Idaho Department of Insurance Director since 2015.
 

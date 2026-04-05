@@ -1,9 +1,118 @@
 ---
 author:
-  - "Anne Helen Petersen"
+- Anne Helen Petersen
 outlet:
-  - "Buzzfeed News"
+- Buzzfeed News
 URL: https://www.buzzfeednews.com/article/annehelenpetersen/idaho-medicaid-expansion-ballot-initiative
+related:
+- '125'
+- '138'
+- '199'
+- '200'
+- '285'
+- '400'
+- '665'
+- '676'
+- ACA
+- Act
+- Ada County
+- Anne Helen Petersen
+- Benewah
+- Benewah County
+- Blaine County
+- Boise
+- Boise State University
+- Bonneville County
+- Brent Regan
+- Colorado
+- DMV
+- Diana Lachiondo
+- Donald Trump
+- Driggs
+- Eagle
+- Election Day
+- Facebook
+- Freedom
+- GOP
+- GYN
+- Garrett Strizich
+- Governor
+- Grangeville
+- Hailey
+- Heather Scott
+- Hillary Clinton
+- House Minority Leader
+- House Ways and Means
+- Idaho
+- Idaho Democratic Party
+- Idaho Falls
+- Idaho Freedom Foundation
+- Idaho Legislature
+- John Goedde
+- Kaiser Family Foundation
+- Latah County
+- Lewiston
+- Luke Mayville
+- Maine
+- Mat Erpelding
+- McCall
+- Medicaid
+- Medicaid Expansion
+- Meridian
+- Montana
+- Morgan
+- North Idaho
+- Oregon
+- Orofino
+- Patti Anne Lodge
+- Paul
+- Paulette Jordan
+- President
+- RINOs
+- Raúl Labrador
+- Reclaim Idaho
+- Salmon
+- Sandpoint
+- St. Maries
+- Sun Valley
+- University of Idaho
+- Utah
+- Virginia
+- Wallace
+- Walt Minnick
+- Washington
+- 'Yes'
+- agent
+- bond elections
+- bonds
+- budget
+- cities
+- city council
+- costs
+- counties
+- election
+- emergency care
+- emergency room
+- health care
+- health insurance
+- hospitals
+- individuals
+- legislative
+- lobbying
+- marijuana
+- mayor
+- money
+- numbers
+- pair
+- school board
+- self
+- sign
+- taxes
+- teachers
+- voice
+- voting
+- window
+authority: LOGAN
 ---
 *State legislators in Idaho have refused to accept federal funding that could help thousands without health insurance get coverage. Meet “Reclaim Idaho,” the group that’s trying to do what elected officials won’t and put Medicaid Expansion up for a vote in November.*
 

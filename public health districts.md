@@ -1,4 +1,16 @@
 ---
+related:
+- Central District Health
+- Department of Health and Welfare
+- Eastern Idaho
+- Eastern Idaho Public Health
+- Idaho
+- North Central Health District
+- Panhandle Health District
+- South Central Public District Health
+- Southeastern Idaho Public Health
+- Southwest District Health
+authority: LOGAN
 ---
 Individual agencies overseen by Department of Health and Welfare and boards
 - District 1: Panhandle Health District 

@@ -1,4 +1,17 @@
 ---
+related:
+- Boise
+- Boise State University
+- Building Contractors Association of Southwest Idaho
+- C.L. 'Butch' Otter
+- Department of Insurance
+- Idaho
+- Idaho Republican Party
+- Idaho State University
+- Jayson Ronk
+- Micron Technology
+- election
+authority: LOGAN
 ---
 Jayson Ronk has joined Regence as its first vice president of government affairs. In this role, Ronk will oversee all Idaho intergovernmental relations activities, including those with the executive branch, Legislature and Department of Insurance, while also overseeing business liaison efforts.
 

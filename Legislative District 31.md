@@ -1,4 +1,21 @@
 ---
+related:
+- Bingham County
+- David Cannon
+- Jerald Raymond
+- John Tippets
+- Julianne Young
+- Julie VanOrden
+- Lemhi
+- Lemhi County
+- Marc Gibbs
+- Neil Anderson
+- Raymond
+- Rod Furniss
+- Steve Bair
+- Thomas
+- Van Burtenshaw
+authority: LOGAN
 ---
 Clark, Fremont, Jefferson & Lemhi County
 - formerly Bingham County

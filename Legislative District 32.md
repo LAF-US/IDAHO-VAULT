@@ -1,4 +1,21 @@
 ---
+related:
+- Bonneville County
+- Chad Christensen
+- Dean Mortimer
+- Idaho
+- Idaho Falls
+- Janice McGeachin
+- John Tippets
+- Kevin Cook
+- Marc Gibbs
+- Mark Harris
+- Mickelsen
+- Stephanie Mickelsen
+- Thomas
+- Wendy Horman
+- counties
+authority: LOGAN
 ---
 Western Bonneville County surrounding Idaho Falls
 ### 2023-2024 

@@ -1,6 +1,24 @@
 ---
 outlet:
-  - "Idaho Reports"
+- Idaho Reports
+related:
+- Add the Words
+- Boise
+- FOR
+- Garden City
+- Hy Kloc
+- Idaho
+- Idaho House of Representatives
+- Idaho Public Television
+- Idaho Reports
+- Legislative District 16
+- New York
+- Wallace
+- animals
+- election
+- legislative
+- vocal
+authority: LOGAN
 ---
 Former state Rep. Hy Kloc, D-Boise, passed away Tuesday night following a heart attack.
 

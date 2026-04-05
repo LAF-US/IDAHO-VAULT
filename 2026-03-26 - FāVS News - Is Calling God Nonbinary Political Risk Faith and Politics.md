@@ -1,9 +1,34 @@
 ---
-source: "https://favs.news/god-nonbinary-james-talarico-faith-politics-opinion/"
+source: https://favs.news/god-nonbinary-james-talarico-faith-politics-opinion/
 author:
-  - "Walter Hesford"
+- Walter Hesford
 published: 2026-03-26
 created: 2026-03-27
+related:
+- '2026-03-26'
+- '2026-03-27'
+- '501'
+- CBS
+- CNN
+- Christian nationalism
+- Christianity
+- FāVS
+- Idaho
+- Islam
+- Judaism
+- Moscow
+- Texas
+- U.S. Senate
+- USA
+- University of Idaho
+- WHY
+- Washington
+- YouTube
+- journalists
+- public schools
+- religion
+- symbol
+authority: LOGAN
 ---
 ## Is saying ‘God is nonbinary’ political suicide? One Texas Senate candidate won’t back down
 

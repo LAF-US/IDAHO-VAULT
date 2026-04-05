@@ -1,11 +1,27 @@
 ---
-title: "MANIFEST.json v1 Specification"
+title: MANIFEST.json v1 Specification
 updated: 2026-04-01
 status: active
-authority: "LOGAN"
+authority: LOGAN
 source: codex
+related:
+- '2026-04-01'
+- DAILY NOTE
+- DAILY NOTE TEMPLATE
+- FLAG
+- GitHub
+- ISO
+- LOGAN
+- MCP
+- Obsidian
+- TTL
+- UTC
+- agent
+- codex
+- coordination
+- doctrine
+- template
 ---
-
 # MANIFEST.json v1 Specification
 
 This file defines the GitHub-side execution and coordination layer for multi-agent operation in IDAHO-VAULT.

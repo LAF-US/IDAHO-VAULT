@@ -1,4 +1,20 @@
 ---
+related:
+- Brandon Mitchell
+- Chenele Dixon
+- Dori Healey
+- Ilana Rubel
+- Jacyn Gallagher
+- John Vander Woude
+- Jordan Redman
+- Josh Wheeler
+- Marco Erickson
+- Megan Blanksma
+- Mike Kingsley
+- Nate Roberts
+- Roberts
+- Sue Chew
+authority: LOGAN
 ---
 # Roster
 ## 2023 Members

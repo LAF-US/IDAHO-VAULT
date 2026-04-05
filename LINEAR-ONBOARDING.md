@@ -1,8 +1,11 @@
 ---
 updated: 2026-03-25
 status: active
+related:
+- '2026-03-25'
+- LAF
+authority: LOGAN
 ---
-
 # Linear onboarding (LAF-1)
 
 Quick-start references for getting familiar with Linear.

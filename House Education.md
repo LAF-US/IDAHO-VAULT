@@ -1,4 +1,23 @@
 ---
+related:
+- Barbara Ehardt
+- Chris Mathias
+- Dale Hawkins
+- Dan Garner
+- Elaine Price
+- Greg Lanting
+- Jack Nelsen
+- Judy Boyle
+- Julie Yamamoto
+- Lance Clow
+- Lori McCann
+- Mark Sauter
+- Ron Mendive
+- Soñia Galaviz
+- Steve Berch
+- Ted Hill
+- Tony Wisniewski
+authority: LOGAN
 ---
 # Roster
 ## 2023 Members

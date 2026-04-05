@@ -1,6 +1,24 @@
 ---
 updated: 2026-03-16
 source: commit
+related:
+- '2026-03-16'
+- AGENTS
+- Copilot
+- DECISIONS
+- FOR
+- GitHub
+- Google
+- LEVELSET
+- Logan Finney
+- PROJECT
+- PROTOCOL
+- PUBLIC
+- agent
+- definition
+- infrastructure
+- self
+authority: LOGAN
 ---
 # CONSULTATION: PUBLIC: CONVERSATION — What Makes Sense?
 

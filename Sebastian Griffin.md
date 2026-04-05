@@ -1,4 +1,14 @@
 ---
+related:
+- College of Western Idaho
+- Idaho
+- Jeff Cornilles
+- Machele Hamilton
+- Mountain States Policy Center
+- Nampa
+- Nampa High School
+- city council
+authority: LOGAN
 ---
 Residence: Nampa 
 Graduate: Nampa High School, College of Western Idaho 

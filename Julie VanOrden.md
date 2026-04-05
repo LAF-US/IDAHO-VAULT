@@ -1,4 +1,14 @@
 ---
+related:
+- House Education
+- House member
+- Julianne Young
+- Pingree
+- Senate Health and Welfare
+- election
+- primary election
+- sex education
+authority: LOGAN
 ---
 Residence: Pingree
 

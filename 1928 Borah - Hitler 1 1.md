@@ -1,5 +1,9 @@
 ---
 date: 1928-04-28
+related:
+- Idaho
+- Washington
+authority: LOGAN
 ---
 !hitler-speech-means-end-of-peace-talks-senator-borah-says-washington-dc-april.jpg
 

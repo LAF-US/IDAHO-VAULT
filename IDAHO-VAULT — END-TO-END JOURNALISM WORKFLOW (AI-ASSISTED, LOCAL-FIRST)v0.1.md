@@ -1,8 +1,24 @@
 ---
 date created: Saturday, March 28th 2026, 5:32:19 pm
 date modified: Saturday, March 28th 2026, 5:35:44 pm
+related:
+- '2026-03-28'
+- '402'
+- API
+- ChatGPT
+- END
+- HUMAN
+- Idaho
+- Idaho Legislature
+- NEVER
+- RAW
+- RSS
+- agent
+- budget
+- legislative
+- links
+authority: LOGAN
 ---
-
 ChatGPT 2026-03-28
 
 ---

@@ -1,4 +1,34 @@
 ---
+related:
+- Blackfoot
+- Clark Corbin
+- Common Core
+- Debbie Critchfield
+- Freedom
+- House Education
+- Idaho
+- Idaho Education News
+- Idaho Freedom Foundation
+- Idaho School Boards Association
+- President
+- Roberts
+- Salmon
+- Senate Education
+- Sherri Ybarra
+- Smarter Balanced Assessment Consortium
+- Sonya Harris
+- State Board of Education
+- State Department of Education
+- Superintendent of Public Instruction
+- Thomas
+- Treasure Valley
+- administrative rules
+- books
+- math
+- parents
+- school board
+- teachers
+authority: LOGAN
 ---
 https://www.idahoednews.org/news/majority-of-educators-support-english-standards-during-packed-common-core-hearing/
 

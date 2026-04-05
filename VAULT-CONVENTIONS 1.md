@@ -2,10 +2,14 @@
 title: VAULT-CONVENTIONS routing shim
 updated: 2026-04-02
 status: active
-authority: "LOGAN"
+authority: LOGAN
 source: root/VAULT-CONVENTIONS.md
+related:
+- '2026-04-02'
+- LOGAN
+- VAULT-CONVENTIONS
+- links
 ---
-
 # `!/VAULT-CONVENTIONS.md`
 
 This is a routing shim for stable bootstrap context.

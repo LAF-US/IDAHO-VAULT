@@ -2,6 +2,31 @@
 created: 2026-03-23
 source: commit
 status: draft
+related:
+- '2026-03-16'
+- '2026-03-22'
+- '2026-03-23'
+- AGENTS
+- BOOTSTRAP
+- BRANCH-STATUS-2026-03-22
+- CLAUDE
+- CONTEXT-PASSOVER-COPILOT-2026-03-16
+- ChatGPT
+- FLAG
+- GEMINI
+- GitHub
+- LEVELSET
+- LEVELSET-STEP-0-EXTERNAL-AGENT
+- LOGAN
+- Logan's
+- PROTOCOL
+- PROTOCOL-PASSBACK-SYNC
+- READY-STATE-2026-03-23
+- TOSS
+- agent
+- coordination
+- format
+authority: LOGAN
 ---
 # HANDOFF: ChatGPT Codex → Claude (2026-03-23)
 

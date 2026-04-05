@@ -1,4 +1,27 @@
 ---
+related:
+- Colorado
+- III
+- Idaho
+- Idaho Republican Party
+- Mexico
+- Paul
+- Pollock
+- President
+- South Carolina
+- Thomas
+- U.S. Congress
+- U.S. Senate
+- Washington
+- William Borah
+- blocked
+- election
+- law enforcement
+- lobbyists
+- meeting
+- self
+- voting
+authority: LOGAN
 ---
 # William Borah: A Featured Biography
 

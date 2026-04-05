@@ -2,8 +2,11 @@
 date: 1938-12-01
 title: 1938 Borah - Old Friends
 linter-yaml-title-alias: 1938 Borah - Old Friends
+related:
+- Idaho
+- Washington
+authority: LOGAN
 ---
-
 !old-friends-meet-after-50-years-washington-dc-may-26-sen-william-e-borah-left.jpg
 
 ---

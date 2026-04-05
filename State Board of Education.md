@@ -1,4 +1,14 @@
 ---
+related:
+- BSU
+- Governor
+- ISU
+- Idaho
+- Idaho Constitution
+- Superintendent of Public Instruction
+- charter schools
+- school districts
+authority: LOGAN
 ---
 Retains general supervision of K-12 education under the Idaho Constitution. 
 

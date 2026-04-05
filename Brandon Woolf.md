@@ -1,3 +1,6 @@
 ---
-residence: "Preston"
+residence: Preston
+related:
+- Preston
+authority: LOGAN
 ---

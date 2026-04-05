@@ -1,4 +1,43 @@
 ---
+related:
+- Boise
+- Boise State University
+- Critical Race Theory
+- Emmett
+- Governor
+- House Education
+- Idaho
+- Idaho Constitution
+- Idaho Education News
+- Janice McGeachin
+- Lincoln
+- Post Falls
+- Priscilla Giddings
+- Regina Bayer
+- Ryan Spoon
+- Senate Education
+- State Board of Education
+- State Department of Education
+- Steven Thayn
+- Tony Wisniewski
+- White Bird
+- administrative rules
+- children
+- costs
+- dollars
+- legislative
+- legislative session
+- meeting
+- money
+- pair
+- parents
+- public schools
+- racism
+- school choice
+- teachers
+- voice
+- voiced
+authority: LOGAN
 ---
 https://www.idahoednews.org/news/indoctrination-task-force-calls-on-legislature-to-make-slew-of-changes/
 

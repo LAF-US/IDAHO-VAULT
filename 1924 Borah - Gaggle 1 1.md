@@ -1,5 +1,8 @@
 ---
 date: 1924-06-11
+related:
+- Washington
+authority: LOGAN
 ---
 !borah-61124-1.jpg
 

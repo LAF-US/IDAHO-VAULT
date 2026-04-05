@@ -1,5 +1,8 @@
 ---
 URL: https://www.poetryfoundation.org/poems/45288/the-garden-of-proserpine
+related:
+- The world is quiet here
+authority: LOGAN
 ---
 By Algernon Charles Swinburne
 

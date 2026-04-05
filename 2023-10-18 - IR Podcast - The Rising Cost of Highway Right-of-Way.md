@@ -1,11 +1,33 @@
 ---
 author:
-  - "Logan Finney"
-  - "Margaret Carmel"
+- Logan Finney
+- Margaret Carmel
 outlet:
-  - "Idaho Reports"
-  - "BoiseDev"
+- Idaho Reports
+- BoiseDev
 URL: https://blog.idahoreports.idahoptv.org/2023/10/18/podcast-the-rising-cost-of-highway-right-of-way/
+related:
+- '189'
+- Ada County
+- BoiseDev
+- Eagle
+- Highway 16
+- ITD
+- Idaho
+- Idaho Reports
+- Logan Finney
+- Margaret Carmel
+- Meridian
+- Treasure Valley
+- budget
+- construction
+- highways
+- housing
+- infrastructure
+- numbers
+- prices
+- roads
+authority: LOGAN
 ---
 **Logan Finney, _Idaho Reports_:** As this journalist wrote to start her story, rising land values affect more than just housing prices in Idaho. Joining us this week is senior reporter Margaret Carmel from BoiseDev.com to talk about how rising land values affect specifically the right-of-way for highway projects at the Idaho Transportation Department. Margaret, thanks for joining us.
 

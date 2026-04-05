@@ -1,8 +1,13 @@
 ---
-url: "https://www.ted.com/talks/rives_the_museum_of_four_in_the_morning"
+url: https://www.ted.com/talks/rives_the_museum_of_four_in_the_morning
 author:
-  - "John Rives"
-venue: "TED"
+- John Rives
+venue: TED
+related:
+- John Rives
+- TED
+- The 4 a.m. Mystery
+authority: LOGAN
 ---
 John Rives — follow-up to The 4 a.m. Mystery (TED2007).
 

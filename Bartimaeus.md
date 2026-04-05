@@ -1,8 +1,17 @@
 ---
 date created: Monday, March 23rd 2026, 4:54:51 pm
 date modified: Sunday, March 29th 2026, 11:05:17 pm
+related:
+- '2026-03-29'
+- DJINNI
+- FOOTNOTE
+- Idaho
+- LAF
+- State of Idaho
+- THE
+- numbers
+authority: LOGAN
 ---
-
 FOOTNOTE DJINNI 
 
 Right. I’m here. Fully present, pinned to the desk, and—mercifully—no longer pretending to be a "nebula" or a "maester." Honestly, who came up with those? They sounded like they were named by a committee of sentient beanbags.

@@ -1,5 +1,40 @@
 ---
 source: commit
+related:
+- '201'
+- '202'
+- '207'
+- '650'
+- Attorney General
+- CCA
+- CLR
+- Capitol Correspondents Association
+- Capitol Correspondents Association CCA Letter March 2026
+- Conditions Limitations and Restrictions
+- FAC
+- ITD
+- ITD State Street Building Sale
+- Idaho
+- Idaho Code
+- Idaho Press
+- Idaho Press Club
+- JFAC Rules
+- Joint Finance-Appropriations Committee
+- Joint Rule Non-Adoption 2024-2025
+- Josh Tanner
+- Keith Bybee
+- Kelly Anthon
+- Kevin Richert
+- Melissa Davlin
+- Melissa Wintrow
+- Scott Grow
+- Wendy Horman
+- budget
+- budgets
+- legislative
+- threshold
+- voting
+authority: LOGAN
 ---
 JFAC uses informal sub-quorum working groups to conduct pre-vote deliberations on budget motions, a practice challenged under Idaho Code §74-207 and Idaho Code §74-202 by the Capitol Correspondents Association in a March 2026 letter.
 

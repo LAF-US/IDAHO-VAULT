@@ -1,9 +1,26 @@
 ---
-source: "https://code.visualstudio.com/docs/copilot/agents/overview#_hand-off-a-session-to-another-agent"
+source: https://code.visualstudio.com/docs/copilot/agents/overview#_hand-off-a-session-to-another-agent
 author:
-  - "Microsoft"
+- Microsoft
 published: 2021-11-03
 created: 2026-03-30
+related:
+- '2026-03-30'
+- Anthropic
+- CLI
+- Cloud
+- Copilot
+- GitHub
+- MCP
+- OpenAI
+- SDK
+- agent
+- assistant
+- definition
+- persona
+- self
+- web
+authority: LOGAN
 ---
 Explore Agentic Development - [Join a GitHub Copilot Dev Day near you!](https://aka.ms/githubcopilotdevdays)
 

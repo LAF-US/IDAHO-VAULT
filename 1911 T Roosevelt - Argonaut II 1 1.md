@@ -1,5 +1,14 @@
 ---
 date: 1911-04-19
+related:
+- 1911 T Roosevelt - University of Idaho
+- COL
+- Idaho
+- President
+- Theodore Roosevelt
+- University of Idaho
+- WAS
+authority: LOGAN
 ---
 >!argonaut_04191911.jpg
 

@@ -1,4 +1,16 @@
 ---
+related:
+- Bonner County
+- Boundary County
+- Eric Anderson
+- George Eskridge
+- Heather Scott
+- Jim Woodward
+- Mark Sauter
+- Sage Dixon
+- Scott Herndon
+- Shawn Keough
+authority: LOGAN
 ---
 Boundary County & most of Bonner County
 ### 2023-2024 

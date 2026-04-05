@@ -1,7 +1,36 @@
 ---
-author: "Logan Finney"
-outlet: "McClure Center"
+author: Logan Finney
+outlet: McClure Center
 URL: https://www.loganfinney.com/idaho-legislature-2020/1/30/religious-freedom-day
+related:
+- ACLU of Idaho
+- Bill of Rights
+- Blackfoot
+- Boise
+- Church of Jesus Christ of Latter-Day Saints
+- Dalton Gardens
+- Donald Trump
+- Ellis
+- First Amendment
+- Freedom
+- Grant
+- Grant Burgoyne
+- House State Affairs
+- Idaho
+- Idaho Constitution
+- Jake Ellis
+- Julianne Young
+- Logan Finney
+- McClure Center
+- President
+- State of Idaho
+- Thomas
+- Virginia
+- Vito Barbieri
+- religion
+- voice
+- voice vote
+authority: LOGAN
 ---
 BOISE — A proposal to designate January 16 as Religious Freedom Day in Idaho has been held in the House State Affairs Committee. The concurrent resolution sponsored by Rep. Jake Ellis, D-Boise, and Sen. Grant Burgoyne, D-Boise, would commemorate the 1786 adoption of the Virginia Statute for Religious Freedom drafted by Thomas Jefferson. 
 

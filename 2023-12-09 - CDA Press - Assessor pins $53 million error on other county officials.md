@@ -1,9 +1,33 @@
 ---
 author:
-  - "Kaye Thornbrugh"
+- Kaye Thornbrugh
 outlet:
-  - "Coeur d'Alene Press"
+- Coeur d'Alene Press
 URL: https://cdapress.com/news/2023/dec/09/assessor-pins-53-million-error-on-other-county-officials/
+related:
+- '200'
+- '203'
+- '468'
+- '588'
+- '966'
+- Coeur d'Alene
+- Coeur d'Alene Press
+- County Assessor
+- County Treasurer
+- EMS
+- Idaho
+- Kaye Thornbrugh
+- Kootenai
+- Kootenai County
+- North Idaho
+- North Idaho College
+- State Tax Commission
+- Worley
+- budgets
+- property tax
+- taxes
+- taxing districts
+authority: LOGAN
 ---
 COEUR d’ALENE — Kootenai County Assessor Béla Kovacs has asked the Idaho State Tax Commission to audit the work processes of five county departments, including his own, according to emails obtained by The Press.
 

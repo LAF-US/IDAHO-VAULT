@@ -1,4 +1,11 @@
 ---
+related:
+- 1st Congressional District
+- 2nd Judicial District
+- Idaho
+- North Central Health District
+- Washington
+authority: LOGAN
 ---
 - Clearwater
 - Nez Perce

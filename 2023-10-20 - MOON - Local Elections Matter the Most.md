@@ -1,10 +1,34 @@
 ---
 author:
-  - "Dorothy Moon"
-  - "Idaho Republican Party"
+- Dorothy Moon
+- Idaho Republican Party
 URL: https://idgop.org/2023/10/20/upcoming-november-7th-election-local-elections-matter-most/
+related:
+- ALL
+- Boise
+- Dorothy Moon
+- Election Day
+- Idaho
+- Idaho Republican Party
+- LGBTQ+ pride
+- abortion
+- budget
+- children
+- city council
+- dollars
+- election
+- judges
+- mayor
+- parents
+- police
+- racism
+- school board
+- taxes
+- voice
+- voting
+- word
+authority: LOGAN
 ---
-
 By Dorothy Moon, IDGOP Chairwoman
 
 It’s election season yet again. Early voting starts on October 23rd, leading up to Election Day on November 7th. There are many important races on the ballot this year, so make a plan to go vote!

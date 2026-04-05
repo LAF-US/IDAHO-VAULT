@@ -1,8 +1,77 @@
 ---
-outlet:
-url: "https://browser.horse/?via=victor&gad_source=1&gad_campaignid=21209728058&gbraid=0AAAAA9mgT7H0vEz_jRJWAen-v44-iGyrm&gclid=Cj0KCQjwve7NBhC-ARIsALZy9HUHXGkCuxp_Ia0m9oyoux-E04aC0RbjLEFdOK6CTQKikxnxTh8f40IaAuYGEALw_wcB"
+outlet: null
+url: https://browser.horse/?via=victor&gad_source=1&gad_campaignid=21209728058&gbraid=0AAAAA9mgT7H0vEz_jRJWAen-v44-iGyrm&gclid=Cj0KCQjwve7NBhC-ARIsALZy9HUHXGkCuxp_Ia0m9oyoux-E04aC0RbjLEFdOK6CTQKikxnxTh8f40IaAuYGEALw_wcB
 author:
-  - "Eleanor McKeown"
+- Eleanor McKeown
+related:
+- '102'
+- '108'
+- '113'
+- '125'
+- '137'
+- '147'
+- '162'
+- '175'
+- '187'
+- '188'
+- '212'
+- '213'
+- '225'
+- '233'
+- '252'
+- '260'
+- '262'
+- '271'
+- '287'
+- '288'
+- '293'
+- '300'
+- '325'
+- '337'
+- '358'
+- '375'
+- '425'
+- '465'
+- '488'
+- '525'
+- '563'
+- '586'
+- '625'
+- '627'
+- '643'
+- '666'
+- '675'
+- '686'
+- '713'
+- '725'
+- '775'
+- '787'
+- '788'
+- '826'
+- '862'
+- '863'
+- '887'
+- '888'
+- '913'
+- '925'
+- '938'
+- '962'
+- '963'
+- '974'
+- '975'
+- '987'
+- '988'
+- Golden
+- Google
+- NHS
+- OOO
+- connections
+- journal
+- links
+- rabbit
+- systems
+- web
+authority: LOGAN
 ---
 Horse Browser
 

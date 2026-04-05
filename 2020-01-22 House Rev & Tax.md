@@ -1,5 +1,28 @@
 ---
-cmte: "House Revenue and Taxation"
+cmte: House Revenue and Taxation
+related:
+- '120'
+- '124'
+- '135'
+- BPA
+- Collins
+- DFM
+- Gary Collins
+- House Revenue and Taxation
+- Idaho
+- LSO
+- Scott Bedke
+- Tax Relief Fund
+- budget
+- dollars
+- grocery tax
+- online sales tax
+- property tax
+- property tax budget
+- sales tax
+- seniors
+- taxes
+authority: LOGAN
 ---
 House Revenue and Taxation
 

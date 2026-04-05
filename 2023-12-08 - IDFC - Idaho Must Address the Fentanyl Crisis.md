@@ -1,7 +1,18 @@
 ---
 author:
-  - "Idaho Freedom Caucus"
+- Idaho Freedom Caucus
 URL: https://idahofreedomcaucus.substack.com/p/idaho-must-address-the-fentanyl-crisis
+related:
+- Freedom
+- Idaho
+- Idaho Freedom Caucus
+- drug overdoses
+- fentanyl
+- first responders
+- judges
+- law enforcement
+- morphine
+authority: LOGAN
 ---
 ### *Nearly four hundred people died of drug overdoses in our state last year, and almost half of these deaths came from fentanyl.* 
 

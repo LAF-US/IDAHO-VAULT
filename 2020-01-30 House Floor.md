@@ -1,6 +1,44 @@
 ---
 cmte:
-  - "Idaho House of Representatives"
+- Idaho House of Representatives
+related:
+- '257'
+- '347'
+- '350'
+- '357'
+- Bancroft
+- CMP
+- Chubbuck
+- Conda
+- Filer
+- Filer School District
+- Florida
+- HJM
+- Heather Scott
+- Idaho
+- Idaho Falls
+- Idaho Falls School District
+- Idaho House of Representatives
+- Judy Boyle
+- Julianne Young
+- Kellogg
+- Kellogg Joint School District
+- Minidoka
+- Minidoka County
+- Minidoka County Joint School District
+- Pocatello
+- Pocatello-Chubbuck School District
+- Ryan Kerby
+- Sally Toone
+- Shoshone
+- Shoshone Joint School District
+- bond elections
+- bonds
+- election
+- school districts
+- supermajority
+- taxing districts
+authority: LOGAN
 ---
 House Floor Jan 30 11am
 

@@ -1,4 +1,12 @@
 ---
+related:
+- Brad Little
+- C.L. 'Butch' Otter
+- Governor
+- House Revenue and Taxation
+- Senate Local Government and Taxation
+- sales tax
+authority: LOGAN
 ---
 Colloquialism for sales tax paid on food and groceries
 

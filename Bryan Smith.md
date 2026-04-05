@@ -1,5 +1,13 @@
 ---
-residence: "Idaho Falls"
+residence: Idaho Falls
+related:
+- GOP
+- Idaho
+- Idaho Falls
+- Mike Simpson
+- RNC
+- Wendy Horman
+authority: LOGAN
 ---
 attorney 
 - Challenged Wendy Horman for LD32 in 2024 

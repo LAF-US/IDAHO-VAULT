@@ -1,7 +1,35 @@
 ---
 outlet:
-  - "Idaho Statesman"
+- Idaho Statesman
 URL: https://www.idahostatesman.com/opinion/editorials/article273971290.html
+related:
+- '111'
+- '217'
+- '850'
+- Becca Savransky
+- Brad Little
+- Idaho
+- Idaho Constitution
+- Idaho Statesman
+- Idaho Supreme Court
+- Kuna
+- Office of Performance Evaluations
+- ProPublica
+- Salmon
+- Salmon School District
+- bond elections
+- bonds
+- budgets
+- children
+- election
+- fiscal year
+- property tax
+- school districts
+- supermajority
+- taxes
+- threshold
+- voting
+authority: LOGAN
 ---
 “(I)t shall be the duty of the legislature of Idaho, to establish and maintain a general, uniform and thorough system of public, free common schools.” – Idaho Constitution Some Idaho schools are in deplorable conditions, and each year that passes without solutions from the state, the problem only gets worse. In partnership with ProPublica, Idaho Statesman reporter Becca Savransky this week detailed the failing state of some Idaho schools, highlighting examples of leaky roofs, deteriorating pipes, broken toilets, flooded classrooms and even collapsing roofs. Idaho pays for new school buildings and building maintenance on the backs of property taxpayers in each individual school district. That creates a system of inequity, with students in some districts in brand-new buildings, with updated technology and healthy learning environments, while others are dealing with freezing conditions in winter, sweltering conditions in summer and facilities that are falling apart.
 

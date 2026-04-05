@@ -1,5 +1,19 @@
 ---
 source: commit
+related:
+- Clark Corbin
+- ITD
+- Idaho
+- Idaho Capital Sun
+- Idaho Legislature
+- Idaho Reports
+- JFAC Working Groups
+- Joint Finance-Appropriations Committee
+- Joint Rule Non-Adoption 2024-2025
+- OSC
+- chain
+- costs
+authority: LOGAN
 ---
 Clark Corbin is the Idaho Capital Sun reporter who covers JFAC and is the primary story carrier for the JFAC working groups open-meetings investigation.
 

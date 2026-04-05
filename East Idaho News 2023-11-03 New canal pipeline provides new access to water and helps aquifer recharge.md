@@ -1,4 +1,29 @@
 ---
+related:
+- '110'
+- '200'
+- '436'
+- '500'
+- '718'
+- Act
+- Bonneville Power Administration
+- Brad Little
+- Carey
+- East Idaho News
+- Idaho
+- Idaho Falls
+- Iona
+- PVC
+- Ririe
+- Snake River
+- construction
+- flooding
+- infrastructure
+- parents
+- water
+- water rights
+- website
+authority: LOGAN
 ---
 https://www.eastidahonews.com/2023/11/new-canal-pipeline-provides-new-access-to-water-and-helps-aquifer-recharge/
 
