@@ -61,6 +61,8 @@ This vault uses 1Password for centralized credential management. Credentials (AP
 
 See `!/VAULT-CONVENTIONS.md` for vault structure, naming, frontmatter, sourcing protocol, git practices, automation inventory, conversation taxonomy, and guiding principles.
 
+**DISCOVERY BEFORE INVENTION:** Before proposing new conventions, structures, templates, or workflows, READ the existing vault files thoroughly. Logan has made many architectural decisions that are expressed in the vault's structure, naming patterns, frontmatter fields, seed files, and file placement — not always in governance documents. If you encounter a pattern you don't recognize, investigate before overwriting it. The vault is the record of decisions already made. Follow existing conventions; do not reinvent them.
+
 ---
 
 ## Swarm Coordination
