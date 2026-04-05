@@ -103,6 +103,9 @@ Thumbs.db
 # Project-specific
 .env
 *.vault.json
+.remember/
+_private/
+_private/**
 .codex/tmp/
 tmp-minidata-msg/
 tmp-msg-extract/
@@ -169,6 +172,7 @@ tempfolder.txt
 # Claude Code local settings (machine-local, not for repo)
 .claude/settings.local.json
 .claude/worktrees/
+
 
 # Ignore local MCP server binary
 .obsidian/plugins/mcp-tools/bin/mcp-server.exe
