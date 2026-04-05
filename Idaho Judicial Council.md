@@ -1,4 +1,13 @@
 ---
+related:
+- Chief Justice
+- Council
+- Governor
+- Idaho
+- Idaho Supreme Court
+- attorneys
+- judges
+authority: LOGAN
 ---
 >The Idaho Judicial Council was created by the legislature in 1967 to investigate and act on allegations of a judge’s misconduct or disability. It is composed of three citizen members, two attorneys, one district jude and the Chief Justice of the Idaho Supreme Court, who review and act on all complaints made against judges.
 

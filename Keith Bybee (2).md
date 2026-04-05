@@ -1,5 +1,22 @@
 ---
 source: commit
+related:
+- CCA
+- Capitol Correspondents Association
+- Capitol Correspondents Association CCA Letter March 2026
+- Clark Corbin
+- ITD
+- ITD State Street Building Sale
+- Idaho
+- Idaho Capital Sun
+- JFAC Rules
+- Joint Finance-Appropriations Committee
+- Keith Bybee
+- LSO
+- Legislative Services Office
+- Wendy Horman
+- budget
+authority: LOGAN
 ---
 Keith Bybee is the LSO Staff Director / Budget and Policy Analysis who staffs both JFAC and EORAC, was CC'd on the March 2026 CCA letter, and in March 2024 unilaterally changed intent language in a budget bill after JFAC voted.
 

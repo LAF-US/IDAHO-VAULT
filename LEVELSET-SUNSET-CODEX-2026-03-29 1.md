@@ -5,12 +5,26 @@ conversation: CODEX - Sunday cleanup and coordination session
 tier: direct-write
 date: 2026-03-29
 status: flagged-for-closure
-authority: "LOGAN"
+authority: LOGAN
 authors:
-  - ChatGPT Codex
+- ChatGPT Codex
 source: session/2026-03-29
+related:
+- '2026-03-28'
+- '2026-03-29'
+- '2026-03-30'
+- ChatGPT
+- GEMINI
+- LAF
+- LEVELSET
+- LOGAN
+- Logan's
+- README
+- SESSION-2026-03-29
+- The world is quiet here
+- coordination
+- deliverables
 ---
-
 # LEVELSET Sunset Report - Codex Session - 2026-03-29
 
 ## 1. Identify Myself

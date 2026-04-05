@@ -1,13 +1,26 @@
 ---
-source: "https://docs.cloud.google.com/mcp/authenticate-mcp#create-oauth-client"
+source: https://docs.cloud.google.com/mcp/authenticate-mcp#create-oauth-client
 author:
-  - "Google"
-published:
+- Google
+published: null
 created: 2026-03-28
 date created: Saturday, March 28th 2026, 2:18:45 pm
 date modified: Saturday, March 28th 2026, 2:18:55 pm
+related:
+- '2026-03-28'
+- ADC
+- API
+- CLI
+- Cloud
+- Google
+- Grant
+- IAM
+- MCP
+- agent
+- libraries
+- sign
+authority: LOGAN
 ---
-
 Google and Google Cloud remote Model Context Protocol (MCP) servers implement the [MCP authorization specification](https://modelcontextprotocol.io/specification/2025-06-18/basic/authorization) for HTTP-based transports. Generally, your AI applications must authenticate to access these servers. This document describes the supported authentication methods.
 
 Some Google and Google Cloud MCP server endpoints don't require authentication. In such cases, no credentials are necessary.

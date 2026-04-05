@@ -1,8 +1,51 @@
 ---
-author: "Kurtis Lee"
+author: Kurtis Lee
 outlet:
-  - "The New York Times"
+- The New York Times
 URL: https://www.nytimes.com/2023/06/15/business/economy/oregon-idaho-marijuana.html
+related:
+- '104'
+- '200'
+- '500'
+- Boise
+- Brad Little
+- California
+- Colorado
+- Florida
+- Idaho
+- Idaho Statesman
+- Interstate 84
+- Joe Evans
+- Malheur County
+- New York
+- Ontario
+- Oregon
+- Portland
+- Snake River
+- State of Idaho
+- THC
+- Treasure Valley
+- Treasure Valley Cannabis Company
+- assistant
+- blocked
+- budget
+- cancer
+- cannabis
+- car-pooling
+- chain
+- costs
+- counties
+- dollars
+- health care
+- marijuana
+- mayor
+- medical marijuana
+- money
+- police
+- prices
+- taxes
+- transportation
+authority: LOGAN
 ---
 ### Tax revenue has surged since cannabis stores opened in Ontario, Ore., fueling a push in neighboring Idaho to legalize sales and get in on the action.
 

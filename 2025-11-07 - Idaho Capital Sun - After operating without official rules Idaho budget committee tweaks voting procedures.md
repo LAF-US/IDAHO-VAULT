@@ -3,6 +3,19 @@ author: Clark Corbin
 outlet: Idaho Capital Sun
 URL: https://idahocapitalsun.com/2025/11/07/after-operating-without-official-rules-idaho-budget-committee-tweaks-voting-procedures/
 source: commit
+related:
+- Clark Corbin
+- Idaho
+- Idaho Capital Sun
+- JFAC Rules
+- Joint Rule Non-Adoption 2024-2025
+- Josh Tanner
+- Kelly Anthon
+- Mike Moyle
+- budget
+- threshold
+- voting
+authority: LOGAN
 ---
 Clark Corbin reports that JFAC has been operating without officially adopted rules and that Mike Moyle deliberately directed the House not to adopt Joint Rules at the December 2024 organizational session, with Moyle citing Joint Rule 11 and acknowledging a two-thirds threshold for formal amendment.
 

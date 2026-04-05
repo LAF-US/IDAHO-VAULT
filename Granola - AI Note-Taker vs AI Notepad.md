@@ -1,9 +1,16 @@
 ---
-source: "https://www.granola.ai/ai-note-taker"
+source: https://www.granola.ai/ai-note-taker
 author:
-  - "Granola"
-published:
+- Granola
+published: null
 created: 2026-03-28
+related:
+- '180'
+- '2026-03-28'
+- CRM
+- San Francisco
+- meeting
+authority: LOGAN
 ---
 ## More than an AI note-taker
 

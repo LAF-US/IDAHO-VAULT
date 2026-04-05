@@ -1,9 +1,34 @@
 ---
 author:
-  - "Logan Finney"
+- Logan Finney
 outlet:
-  - "Idaho Reports"
+- Idaho Reports
 URL: https://blog.idahoreports.idahoptv.org/2023/09/21/idaho-gop-to-hear-bingham-county-appeal-on-saturday/
+related:
+- '107'
+- Bingham County
+- Bingham County Republican Central Committee
+- Dan Cravens
+- Dorothy Moon
+- GOP
+- Greg Chaney
+- Idaho
+- Idaho Reports
+- Idaho Republican Party
+- Idaho Statesman
+- Idahoans for Open Primaries
+- Logan Finney
+- Missouri
+- Power County
+- Power County Republican Central Committee
+- Prosecuting Attorney
+- Trent Clark
+- election
+- individuals
+- meeting
+- primary election
+- self
+authority: LOGAN
 ---
 _CORRECTION: This story originally stated the Idaho GOP executive committee would hear the Bingham County GOP appeal on Sept. 23 and was updated with more information from Trent Clark that morning._
 

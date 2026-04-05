@@ -1,3 +1,23 @@
+---
+authority: LOGAN
+related:
+- Atlantic Ocean
+- Connecticut
+- Delaware
+- Florida
+- Georgia
+- Maine
+- Maryland
+- Massachusetts
+- New Hampshire
+- New Jersey
+- New York
+- North Carolina
+- Rhode Island
+- South Carolina
+- Virginia
+---
+
 American coast on the Atlantic Ocean 
 - Maine 
 - New Hampshire 

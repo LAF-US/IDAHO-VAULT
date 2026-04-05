@@ -1,4 +1,12 @@
 ---
+related:
+- House Assistant Majority Leader
+- House Revenue and Taxation
+- House member
+- Legislative District 21
+- Meridian
+- Mike Moyle
+authority: LOGAN
 ---
 Residence: Meridian
 - House member for Legislative District 21 

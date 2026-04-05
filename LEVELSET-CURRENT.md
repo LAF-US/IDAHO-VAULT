@@ -1,3 +1,94 @@
+---
+authority: LOGAN
+related:
+- '104'
+- '108'
+- '144'
+- '145'
+- '150'
+- 1Password
+- '2026-03-12'
+- '2026-03-22'
+- '2026-03-23'
+- '2026-03-24'
+- '2026-03-28'
+- '2026-03-29'
+- '2026-03-30'
+- '2026-04-02'
+- '2026-04-03'
+- '2026-04-04'
+- '362'
+- '400'
+- A&I
+- AGENT-PROTOCOL
+- AGENTS
+- ARCHITECTURE
+- ASSAY-LANDSCAPE-GAME-MECHANICS-2026-04-02
+- Anthropic
+- Bartimaeus
+- CLAUDE
+- CLI
+- CONSTITUTION
+- Cloud
+- Copilot
+- CrewAI
+- DECISIONS
+- FāVS
+- GCP
+- GEMINI
+- GRIMOIRE
+- Gemini CLI
+- GitHub
+- Google
+- HECATE
+- HECATE-HECATE-HECATE
+- HUMAN
+- IDE
+- Idaho
+- LAF
+- LEVELSET
+- LEVELSET-STEP-0-EXTERNAL-AGENT
+- LEVELSET-v2
+- LOGAN
+- Logan Finney
+- Logan's
+- MCP
+- MCP-IMPLEMENTATION-PLAN
+- NEW
+- NOT
+- OpenAI
+- OpenClaw
+- PROJECT
+- PROTOCOL
+- Phone Link
+- README
+- SDK
+- SSH
+- Stone
+- THE
+- TRIUNE
+- TTT
+- The Concierge
+- The world is quiet here
+- UNIFIED
+- VAULT-CONVENTIONS
+- agent
+- awakening
+- blocked
+- chain
+- codex
+- coordination
+- counties
+- end goal
+- freelance
+- infrastructure
+- initial
+- symbol
+- template
+- unachievable
+- web
+---
+
 # LEVELSET-CURRENT — Live Ecosystem State
 
 **Date:** 2026-04-04 (updated: GARDENING; Esto Perpetua! declared; GRIMOIRE opened; TTT filed; Serena registered; -L decoded)

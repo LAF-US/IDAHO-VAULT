@@ -1,3 +1,31 @@
+---
+authority: LOGAN
+related:
+- '2026-03-12'
+- CANONICAL
+- CLAUDE
+- FOR
+- GitHub
+- Idaho
+- Idaho Public Television
+- Idaho Reports
+- KEY
+- LEVELSET
+- LEVELSET-v1
+- LOGAN
+- LOW
+- Logan Finney
+- Logan's
+- Obsidian
+- PROJECT
+- counties
+- format
+- infrastructure
+- legislative
+- self
+- sort-audit-2026-03-12
+---
+
 # LEVELSET v2 — Unified Synthesis
 
 **Date:** 2026-03-13

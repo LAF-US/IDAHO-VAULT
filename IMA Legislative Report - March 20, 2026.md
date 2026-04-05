@@ -1,8 +1,17 @@
 ---
 date created: Monday, March 30th 2026, 2:34:37 pm
 date modified: Monday, March 30th 2026, 2:35:25 pm
+related:
+- '860'
+- '988'
+- IMA
+- Idaho
+- Kelly Anthon
+- Rupert
+- Senate State Affairs
+- minors
+authority: LOGAN
 ---
-
 email newsletter clipping: 
 
 ---

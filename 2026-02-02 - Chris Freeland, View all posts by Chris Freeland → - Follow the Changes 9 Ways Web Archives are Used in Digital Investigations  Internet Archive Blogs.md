@@ -1,10 +1,41 @@
 ---
-source: "https://blog.archive.org/2026/02/02/follow-the-changes/"
+source: https://blog.archive.org/2026/02/02/follow-the-changes/
 author:
-  - "Chris Freeland"
-  - "View all posts by Chris Freeland →"
+- Chris Freeland
+- View all posts by Chris Freeland →
 published: 2026-02-02
 created: 2026-03-30
+related:
+- '2026-03-30'
+- '600'
+- API
+- About
+- Amsterdam
+- Barack Obama
+- Donald Trump
+- Facebook
+- Google
+- Internet
+- Joe Biden
+- Paris
+- Twitter
+- View
+- abortion
+- children
+- connections
+- copyright
+- hackers
+- homosexuality
+- index
+- individuals
+- journalists
+- links
+- minors
+- rabbit
+- social media
+- web
+- website
+authority: LOGAN
 ---
 ## Guest post from Thais Lobo, Liliana Bounegru & Jonathan W. Y. Gray, King’s College London.
 

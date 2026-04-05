@@ -1,12 +1,19 @@
 ---
-source: "https://developer.1password.com/docs/ssh/agent/?utm_medium=organic&utm_source=oph&utm_campaign=windows"
-author:
-published:
+source: https://developer.1password.com/docs/ssh/agent/?utm_medium=organic&utm_source=oph&utm_campaign=windows
+author: null
+published: null
 created: 2026-03-30
 date created: Monday, March 30th 2026, 6:34:48 pm
 date modified: Monday, March 30th 2026, 6:57:11 pm
+related:
+- 1Password
+- '2026-03-30'
+- RSA
+- SSH
+- agent
+- meeting
+authority: LOGAN
 ---
-
 The 1Password SSH agent uses the SSH keys you have saved in 1Password to seamlessly integrate with your Git and SSH workflows. It authenticates your Git and SSH clients without those clients ever being able to read your private key.
 
 In fact, your private key never even leaves the 1Password app. The SSH agent works with the SSH keys stored in 1Password, but never without your consent. Only SSH clients you explicitly authorize will be able to use your SSH keys until 1Password locks.

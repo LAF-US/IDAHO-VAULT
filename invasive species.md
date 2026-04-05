@@ -1,3 +1,17 @@
+---
+authority: LOGAN
+related:
+- Council
+- Department of Agriculture
+- Invasive Species Council
+- birds
+- fish
+- invertebrates
+- quagga mussels
+- species
+- zebra mussels
+---
+
 managed by Department of Agriculture and Invasive Species Council 
 
 **noxious weeds**

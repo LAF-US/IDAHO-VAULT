@@ -1,4 +1,35 @@
 ---
+related:
+- ASL
+- Chubbuck
+- Council
+- David Worley
+- East Idaho News
+- Facebook
+- First Amendment
+- Idaho
+- Idaho Capital Sun
+- Idaho Falls
+- Idaho Senate
+- LDS
+- Marshall Public Library
+- Pocatello
+- President
+- Reading Time with the Queens
+- Thornton
+- Worley
+- YouTube
+- books
+- children
+- churches
+- doctrine
+- drag
+- legislative
+- legislative session
+- parents
+- sign
+- website
+authority: LOGAN
 ---
 https://www.eastidahonews.com/2023/02/drag-queen-reading-time-attracts-a-packed-house-but-those-present-werent-fans/
 

@@ -1,8 +1,24 @@
 ---
-outlet:
-url: "https://lithub.com/breaking-david-lynch-has-thoughts-on-the-dark-side-of-1950s-suburbia/"
+outlet: null
+url: https://lithub.com/breaking-david-lynch-has-thoughts-on-the-dark-side-of-1950s-suburbia/
 author:
-  - "David Lynch"
+- David Lynch
+related:
+- ABC
+- Alexandria
+- Boise
+- Drive
+- Shoshone
+- Untitled
+- Virginia
+- Willard
+- books
+- fish
+- irrigation
+- nurses
+- police
+- window
+authority: LOGAN
 ---
 [Literary Hub](https://lithub.com/)
 

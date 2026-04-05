@@ -1,4 +1,21 @@
 ---
+related:
+- Adams County
+- Carl Crabtree
+- Charlie Shepherd
+- Cindy Carlson
+- Clearwater County
+- Dan Johnson
+- Idaho
+- Idaho County
+- Mike Kingsley
+- Nez Perce County
+- Paul
+- Paul Shepherd
+- Priscilla Giddings
+- Shoshone
+- Shoshone County
+authority: LOGAN
 ---
 Idaho County, Adams County & part of Nez Perce County
 - Formerly Idaho County, Clearwater County, Shoshone County & part of Bonner

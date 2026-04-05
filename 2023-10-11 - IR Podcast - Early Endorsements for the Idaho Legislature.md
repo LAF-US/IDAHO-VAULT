@@ -1,11 +1,80 @@
 ---
 author:
-  - "Logan Finney"
-  - "Kevin Richert"
+- Logan Finney
+- Kevin Richert
 outlet:
-  - "Idaho Reports"
-  - "Idaho Education News"
+- Idaho Reports
+- Idaho Education News
 URL: https://blog.idahoreports.idahoptv.org/2023/10/11/podcast-early-endorsements-for-the-idaho-legislature/
+related:
+- Brian Lenney
+- Caldwell
+- Canyon County
+- Chris Trakel
+- Christy Zito
+- Coeur d'Alene
+- County Clerk
+- Dave Lent
+- Elmore County
+- Freedom
+- Geoff Schroeder
+- Hammett
+- Home
+- House Education
+- IFF
+- Idaho
+- Idaho Association of Commerce and Industry
+- Idaho Education News
+- Idaho Freedom Action
+- Idaho Freedom Caucus
+- Idaho Freedom Foundation
+- Idaho Freedom PAC
+- Idaho Launch
+- Idaho Legislature
+- Idaho Reports
+- Idaho Republican Party
+- Jeff Agenbroad
+- Jim Woodward
+- Julie Yamamoto
+- Kevin Richert
+- Kootenai
+- Kootenai County
+- Kootenai County Republican Central Committee
+- Kuna
+- Logan Finney
+- Lori Bishop
+- Lori McCann
+- Meridian
+- Middleton
+- Mountain Home
+- Nampa
+- Nicole Trakel
+- PAC
+- Pocatello
+- Sagle
+- Scott Herndon
+- Senate Education
+- Tammy Nichols
+- Travis Manning
+- Twitter
+- bonds
+- bonds and levies
+- city council
+- election
+- fire
+- legislative
+- legislative session
+- lobbying
+- mayor
+- money
+- primary election
+- property tax
+- school board
+- school choice
+- school districts
+- social media
+- voice
+authority: LOGAN
 ---
 **Logan Finney, _Idaho Reports_:** Joining me this week is Kevin Richert with Idaho Education News to discuss a slate of endorsements for the 2024 Idaho Legislature — even though it's still 2023 and far before the filing deadline. Kevin, thanks for joining us.
 

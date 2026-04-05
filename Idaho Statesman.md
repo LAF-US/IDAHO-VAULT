@@ -1,6 +1,9 @@
 ---
 outlet:
-  - "Idaho Statesman"
+- Idaho Statesman
+related:
+- Boise
+- Idaho
+authority: LOGAN
 ---
-
 Boise newspaper 

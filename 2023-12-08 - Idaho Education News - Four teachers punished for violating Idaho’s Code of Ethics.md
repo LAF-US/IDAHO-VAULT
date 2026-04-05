@@ -1,9 +1,41 @@
 ---
 author:
-  - "Darren Svan"
+- Darren Svan
 outlet:
-  - "Idaho Education News"
+- Idaho Education News
 URL: https://www.idahoednews.org/west-idaho/four-teachers-punished-for-violating-idahos-code-of-ethics/
+related:
+- Blackfoot
+- Blackfoot School District
+- Boise
+- Boise School District
+- CSI
+- Idaho
+- Idaho Code
+- Idaho Education News
+- Internet
+- Kuna
+- Marsing
+- Mexico
+- Minidoka
+- Minidoka County
+- Notus
+- PSC
+- Parma
+- Plummer
+- Post Falls
+- Soda Springs
+- Stone
+- Wilder
+- Worley
+- battery
+- children
+- executive session
+- meeting
+- numbers
+- pornography
+- teachers
+authority: LOGAN
 ---
 Idaho’s Professional Standards Commission (PSC) took action Friday against four teachers who violated the state’s Code of Ethics for public educators.
 

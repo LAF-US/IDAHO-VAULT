@@ -1,9 +1,21 @@
 ---
 author:
-  - "Kevin Richert"
+- Kevin Richert
 outlet:
-  - "Idaho Education News"
+- Idaho Education News
 URL: https://www.idahoednews.org/top-news/little-touts-results-of-outside-empowering-parents-audit/
+related:
+- '180'
+- Brad Little
+- Idaho
+- Idaho Education News
+- Kevin Richert
+- State Board of Education
+- coronavirus
+- costs
+- money
+- parents
+authority: LOGAN
 ---
 Gov. Brad Little gave the Empowering Parents education microgrant program a clean bill of health Monday, after the release of an independent audit.
 

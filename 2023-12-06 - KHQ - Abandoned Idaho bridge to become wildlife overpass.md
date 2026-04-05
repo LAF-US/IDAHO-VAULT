@@ -1,9 +1,24 @@
 ---
 author:
-  - "John Webb"
+- John Webb
 outlet:
-  - "KHQ"
+- KHQ
 URL: https://www.khq.com/news/abandoned-idaho-bridge-to-become-wildlife-overpass/article_bc593f6c-9491-11ee-9a4f-2fa410540154.html
+related:
+- '250'
+- Facebook
+- ITD
+- Idaho
+- KHQ
+- NonStop Local
+- Osburn
+- PIO
+- Silver Valley
+- deer
+- elk
+- money
+- transportation
+authority: LOGAN
 ---
 Osburn, Idaho - This bridge over I-90 in the Silver Valley has been abandoned for years, and now a group of locals have set out to make the bridge a wildlife overpass. 
 

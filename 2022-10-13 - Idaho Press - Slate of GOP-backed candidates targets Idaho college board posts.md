@@ -1,8 +1,67 @@
 ---
-author: "Betsy Russell"
+author: Betsy Russell
 outlet:
-  - "Idaho Press"
+- Idaho Press
 URL: https://www.ktvb.com/article/news/politics/elections/slate-of-gop-backed-candidates-targets-idaho-college-board-posts-idaho-education/277-b3806067-baac-4f80-a7f0-6fe1c46bf67d
+related:
+- '132'
+- '277'
+- '600'
+- '681'
+- Ada County
+- Betsy Russell
+- Boise
+- Boise Pride Festival
+- Boise State University
+- Brent Regan
+- CWI
+- Caldwell
+- Canyon County
+- Christie Wood
+- Coeur d'Alene
+- College of Eastern Idaho
+- College of Southern Idaho
+- College of Western Idaho
+- Cut
+- Eastern Idaho
+- Facebook
+- Fiscal Year 2022
+- Freedom
+- GED
+- GOP
+- Idaho
+- Idaho Freedom Foundation
+- Idaho Press
+- John Goedde
+- Kootenai
+- Kootenai County
+- Luci Willits
+- Middleton
+- NIC
+- North Idaho
+- North Idaho College
+- Oregon
+- Ryan Spoon
+- Secretary of State
+- Senate Education
+- State Board of Education
+- Thad Butterworth
+- Treasure Valley
+- Twin Falls
+- Victor
+- Victor Miller
+- assistant
+- city council
+- community colleges
+- costs
+- election
+- links
+- money
+- police
+- property tax
+- school board
+- taxes
+authority: LOGAN
 ---
 ### _A slate of candidates backed by the Ada County GOP Central Committee is challenging every seat on the nonpartisan College of Western Idaho board up for a vote._
 

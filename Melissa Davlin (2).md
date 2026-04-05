@@ -1,5 +1,20 @@
 ---
 source: commit
+related:
+- CCA
+- Capitol Correspondents Association
+- Capitol Correspondents Association CCA Letter March 2026
+- Clark Corbin
+- IPC
+- Idaho
+- Idaho Capital Sun
+- Idaho Press
+- Idaho Press Club
+- Idaho Reports
+- Kevin Richert
+- Logan Finney
+- Melissa Davlin
+authority: LOGAN
 ---
 Melissa Davlin is the lead producer of Idaho Reports and president of the Idaho Press Club who co-signed the March 2026 CCA letter to JFAC co-chairs.
 

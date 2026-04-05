@@ -1,3 +1,15 @@
+---
+authority: LOGAN
+related:
+- CCA
+- Clark Corbin
+- FLAGS
+- FOR
+- Logan's
+- coordination
+- definition
+---
+
 **IDENTITY**
 Claude (Current Conversation) — Tier 3, orientation phase. Produced research tracking and memory scaffolding for JFAC transparency work.
 

@@ -1,5 +1,10 @@
 ---
-date:
+date: null
+related:
+- 1935 FDR - A Mule and a Plow
+- 1937 FDR - Years of Dust
+- FDR
+authority: LOGAN
 ---
 !FDR Alphabet Agencies Cartoon.jpg
 

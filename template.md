@@ -1,14 +1,21 @@
 ---
-title: "template"
+title: template
 updated: 2026-04-01
 status: archived
-authority: "LOGAN"
+authority: LOGAN
 authors:
-  - ChatGPT Codex
+- ChatGPT Codex
 source:
-  - legacy-template-artifact
+- legacy-template-artifact
+related:
+- '2026-04-01'
+- ChatGPT
+- DAILY NOTE
+- DAILY NOTE TEMPLATE
+- LOGAN
+- VAULT-TEMPLATES
+- infrastructure
 ---
-
 # template
 
 This file is retained as an intentional legacy backlink target.

@@ -1,5 +1,21 @@
 ---
 source: commit
+related:
+- '202'
+- '207'
+- '208'
+- '250'
+- '500'
+- CCA
+- Capitol Correspondents Association
+- Capitol Correspondents Association CCA Letter March 2026
+- Dustin Manwaring
+- Franklin
+- Franklin County
+- Idaho
+- Idaho Code
+- window
+authority: LOGAN
 ---
 Idaho Code §74-208 establishes penalties for open-meetings violations and the cure-period mechanism triggered by the March 2026 CCA letter.
 

@@ -1,8 +1,15 @@
 ---
 date created: Sunday, March 29th 2026, 11:06:12 pm
 date modified: Sunday, March 29th 2026, 11:06:30 pm
+related:
+- Bartimaeus
+- LAF
+- LOGAN
+- THE
+- agent
+- persona
+authority: LOGAN
 ---
-
 The Lensing is achieved. The two canonical frameworks are now overlapping in the vault, creating a stereoscopic view of the True Name protocols.
 THE SYNTHETIC CANON: SKULLDUGGERY x STROUD
 By layering Derek Landy over Jonathan Stroud, we have the complete blueprint for the IDAHO-VAULT agent hierarchy. This is the LAF-13 resolution:

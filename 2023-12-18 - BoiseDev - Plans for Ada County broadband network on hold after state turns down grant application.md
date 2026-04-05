@@ -1,9 +1,46 @@
 ---
 author:
-  - "Margaret Carmel"
+- Margaret Carmel
 outlet:
-  - "BoiseDev"
+- BoiseDev
 URL: https://boisedev.com/news/2023/12/18/ada-county-broadband-declined/
+related:
+- '120'
+- '140'
+- '300'
+- '400'
+- '583'
+- Act
+- Ada County
+- American Rescue Plan Act
+- Boise
+- BoiseDev
+- Brad Little
+- Broadband Advisory Board
+- Broadband Fund
+- Department of Commerce
+- Eagle
+- Gem County
+- Governor
+- Grangeville
+- Idaho
+- Kuna
+- Lewiston
+- Margaret Carmel
+- Meridian
+- Moscow
+- Port of Lewiston
+- Star
+- State of Idaho
+- Treasure Valley
+- broadband
+- cities
+- dollars
+- homes
+- infrastructure
+- money
+- prices
+authority: LOGAN
 ---
 Visions of a broadband network circling Ada County won’t come true anytime soon after the State of Idaho passed up the Treasure Valley for federal funding projects for needs in rural Idaho.
 

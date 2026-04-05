@@ -1,5 +1,20 @@
 ---
 source: commit
+related:
+- '207'
+- Attorney General
+- Idaho
+- Idaho Code
+- Idaho Press
+- Idaho Press Club
+- Idaho Reports
+- Idaho Supreme Court
+- JFAC Working Groups
+- Raúl Labrador
+- State Board of Education
+- University of Idaho
+- construction
+authority: LOGAN
 ---
 In *Labrador v. State Board of Education* (December 5, 2024, 4-1), the Idaho Supreme Court held that open-meetings exceptions must be narrowly construed and that subjective belief of compliance is insufficient; the case was dismissed June 2025 after the underlying transaction collapsed.
 

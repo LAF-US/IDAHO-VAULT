@@ -1,15 +1,24 @@
 ---
-source: "https://www.cs.ubc.ca/group/infovis/pubs/2023/dirty-data-in-the-newsroom/"
+source: https://www.cs.ubc.ca/group/infovis/pubs/2023/dirty-data-in-the-newsroom/
 author:
-  - "Stephen Kasica"
-  - "Charles Berret"
-  - "Tamara Munzner"
-published:
+- Stephen Kasica
+- Charles Berret
+- Tamara Munzner
+published: null
 created: 2026-03-30
 date created: Monday, March 30th 2026, 2:28:43 pm
 date modified: Monday, March 30th 2026, 2:35:38 pm
+related:
+- '2026-03-30'
+- CHI
+- DOI
+- OSF
+- PDF
+- UBC
+- ZIP
+- journalists
+authority: LOGAN
 ---
-
 Dirty Data in the Newsroom: Comparing Data Preparation in Journalism and Data Science
 
 [Stephen Kasica](https://www.cs.ubc.ca/~kasica) [Charles Berret](https://charlesberret.net/), and [Tamara Munzner](https://www.cs.ubc.ca/~tmm)

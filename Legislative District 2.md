@@ -1,4 +1,22 @@
 ---
+related:
+- Benewah
+- Benewah County
+- Bonner County
+- Clearwater County
+- Dale Hawkins
+- Doug Okuniewicz
+- Eric Redman
+- Heather Scott
+- Kootenai
+- Kootenai County
+- Phil Hart
+- Shoshone
+- Shoshone County
+- Steve Vick
+- Tim Remington
+- Vito Barbieri
+authority: LOGAN
 ---
 Shoshone County, Clearwater County, Benewah County, parts of Kootenai County & Bonner County
 - Formerly northern and eastern Kootenai County

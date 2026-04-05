@@ -1,6 +1,20 @@
 ---
 cmte:
-  - "Senate Judiciary and Rules"
+- Senate Judiciary and Rules
+related:
+- Brad Little
+- Department of Correction
+- Department of Juvenile Corrections
+- Erik Lehtinen
+- Keely Duke
+- Public Defense Commission
+- Senate Judiciary and Rules
+- State Appellate Public Defender
+- gubernatorial appointment
+- meeting
+- voice
+- voice vote
+authority: LOGAN
 ---
 voice vote to approve Keely Duke gubernatorial appointment from last meeting 
 

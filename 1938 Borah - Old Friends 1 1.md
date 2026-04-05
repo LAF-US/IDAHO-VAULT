@@ -1,5 +1,9 @@
 ---
 date: 1938-12-01
+related:
+- Idaho
+- Washington
+authority: LOGAN
 ---
 !old-friends-meet-after-50-years-washington-dc-may-26-sen-william-e-borah-left.jpg
 

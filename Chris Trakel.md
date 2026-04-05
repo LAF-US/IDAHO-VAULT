@@ -1,3 +1,6 @@
 ---
-residence: "Caldwell"
+residence: Caldwell
+related:
+- Caldwell
+authority: LOGAN
 ---

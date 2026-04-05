@@ -6,13 +6,25 @@ tier: 1
 date: 2026-03-14
 branch: claude/idaho-legislature-scraper-RI6Ku
 commits:
-  - 31eb718
-  - ebd9df6
-  - 6c639b7
-  - 449d365
+- 31eb718
+- ebd9df6
+- 6c639b7
+- 449d365
 status: terminated-clean
+related:
+- CLI
+- FLAG
+- GitHub
+- IDE
+- Idaho
+- Idaho Legislature
+- LEVELSET
+- format
+- legislative
+- legislative session
+- links
+authority: LOGAN
 ---
-
 # LEVELSET v2 — Idaho Legislature Scraper Conversation
 
 ## Identity

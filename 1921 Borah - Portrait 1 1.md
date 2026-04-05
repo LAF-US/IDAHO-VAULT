@@ -1,5 +1,8 @@
 ---
 date: 1921-01-01
+related:
+- Washington
+authority: LOGAN
 ---
 !sen-wm-e-borah-1.jpg
 

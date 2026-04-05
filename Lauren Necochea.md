@@ -1,4 +1,12 @@
 ---
+related:
+- Boise
+- House Assistant Minority Leader
+- House member
+- Idaho
+- Idaho Democratic Party
+- Legislative District 19
+authority: LOGAN
 ---
 Residence: Boise
 - House Assistant Minority Leader

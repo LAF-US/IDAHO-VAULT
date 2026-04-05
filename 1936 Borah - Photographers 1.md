@@ -1,5 +1,8 @@
 ---
 date: 1936-01-01
+related:
+- Washington
+authority: LOGAN
 ---
 !william-e-borah-and-photographers.jpg
 

@@ -1,6 +1,52 @@
 ---
 cmte:
-  - "House Revenue and Taxation"
+- House Revenue and Taxation
+related:
+- '300'
+- '439'
+- '500'
+- '634'
+- '740'
+- AYE
+- Advanced Opportunities
+- Alabama
+- Boise
+- Driggs
+- Eagle
+- Elk River
+- FTE
+- Governor
+- House Revenue and Taxation
+- Idaho
+- LSO
+- LWV
+- Meridian
+- Montana
+- Mountain States Policy Center
+- NAY
+- PTA
+- QUESTIONS
+- Raymond
+- Twin Falls
+- VIA
+- Wendy Horman
+- 'Yes'
+- budget
+- children
+- costs
+- math
+- money
+- open enrollment
+- parents
+- public schools
+- school choice
+- tax credits
+- taxes
+- teachers
+- threshold
+- transportation
+- window
+authority: LOGAN
 ---
 Wendy Horman - private education tax credit 
 

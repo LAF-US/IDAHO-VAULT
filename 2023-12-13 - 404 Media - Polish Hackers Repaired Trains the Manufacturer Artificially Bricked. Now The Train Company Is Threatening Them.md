@@ -1,9 +1,38 @@
 ---
 author:
-  - "Jason Koebler"
+- Jason Koebler
 outlet:
-  - "404 Media"
+- 404 Media
 URL: https://www.404media.co/polish-hackers-repaired-trains-the-manufacturer-artificially-bricked-now-the-train-company-is-threatening-them/
+related:
+- '404'
+- 404 Media
+- Act
+- DRM
+- Digital Millennium Copyright Act
+- Europe
+- GPS
+- GPS coordinates
+- GSM
+- Google
+- Jason Koebler
+- OEM
+- Poland
+- SPS
+- YouTube
+- acronym
+- copyright
+- copyright laws
+- hackers
+- independent repair company
+- infrastructure
+- lobbying
+- original equipment manufacturer
+- right to repair
+- systems
+- trains
+- website
+authority: LOGAN
 ---
 *After breaking trains simply because an independent repair shop had worked on them, NEWAG is now demanding that trains fixed by hackers be removed from service.*
 

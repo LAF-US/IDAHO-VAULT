@@ -1,3 +1,47 @@
+---
+authority: LOGAN
+related:
+- '201'
+- ALL
+- Anthropic
+- Bonner County
+- CCA
+- Capitol Correspondents Association
+- Clark Corbin
+- Copilot
+- FRAMEWORK
+- FRAMEWORKS
+- GitHub
+- IRE
+- Idaho
+- Idaho Capital Sun
+- Idaho Code
+- Idaho Press
+- Idaho Press Club
+- Idaho Public Television
+- Idaho Reports
+- LEVELSET
+- Logan Finney
+- Logan's
+- Microsoft Copilot
+- North Idaho
+- POV
+- RSS
+- TBD
+- WORK
+- XIV
+- YOU
+- agent
+- awakening
+- coordination
+- initialization
+- node
+- nodes
+- self
+- voting
+- window
+---
+
 # SWARM LEVELSET REPORT
 **Timestamp**: 2026-03-16T21:27:23-06:00  
 **Authority**: Claude (Anthropic) | Principal: Logan Finney  

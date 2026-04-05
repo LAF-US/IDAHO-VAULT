@@ -1,4 +1,8 @@
 ---
+related:
+- Jason Monks
+- Sage Dixon
+authority: LOGAN
 ---
 Sage Dixon
 

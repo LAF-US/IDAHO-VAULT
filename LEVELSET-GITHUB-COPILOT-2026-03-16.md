@@ -1,3 +1,16 @@
+---
+authority: LOGAN
+related:
+- '2026-03-16'
+- Copilot
+- GitHub
+- LEVELSET
+- UTC
+- assistant
+- format
+- initial
+---
+
 # LEVELSET Report
 
 ## Protocol Version: v3.2.6.1

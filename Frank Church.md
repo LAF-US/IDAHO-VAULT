@@ -1,4 +1,7 @@
 ---
+related:
+- Idaho
+authority: LOGAN
 ---
 Democratic Idaho U.S. Senator
 

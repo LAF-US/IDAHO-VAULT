@@ -1,12 +1,43 @@
 ---
-title: "GitHub Automation Audit — 2026-04-03"
+title: GitHub Automation Audit — 2026-04-03
 updated: 2026-04-03
 status: active
-authority: "Logan Finney"
-authored-by: "Claude Code (The Sentry 🧿)"
-for: "GitHub Copilot (VSCode Agent)"
+authority: Logan Finney
+authored-by: Claude Code (The Sentry 🧿)
+for: GitHub Copilot (VSCode Agent)
+related:
+- 1Password
+- '2026-04-03'
+- AGENTIC
+- CLAUDE
+- CSV
+- Cloud
+- Copilot
+- DECISIONS
+- FIX
+- GCP
+- GRIMOIRE
+- GitHub
+- III
+- Idaho
+- Idaho Legislature
+- LAF
+- LEVELSET
+- Logan Finney
+- Logan's
+- SOURCE
+- THE
+- The world is quiet here
+- UTC
+- VII
+- agent
+- budget
+- chain
+- codex
+- fire
+- initial
+- template
 ---
-
 # GITHUB AUTOMATION AUDIT — 2026-04-03
 
 **For:** GitHub Copilot (VSCode Agent) — action required items flagged ⚠️

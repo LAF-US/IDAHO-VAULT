@@ -1,4 +1,19 @@
 ---
+related:
+- Aaron Von Ehlinger
+- Brandon Mitchell
+- Dan Foreman
+- Dan Johnson
+- Dan Schmidt
+- Latah County
+- Lewis County
+- Lori McCann
+- Mike Kingsley
+- Nez Perce County
+- Shirley Ringo
+- Thyra Stevenson
+- Tom Trail
+authority: LOGAN
 ---
 Latah County, Lewis County & part of Nez Perce County
 - Formerly Nez Perce County & Lewis County

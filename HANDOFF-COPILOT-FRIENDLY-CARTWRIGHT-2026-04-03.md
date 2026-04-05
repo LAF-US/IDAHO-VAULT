@@ -1,13 +1,46 @@
 ---
-title: "HANDOFF — Claude → GitHub Copilot — 2026-04-03"
+title: HANDOFF — Claude → GitHub Copilot — 2026-04-03
 updated: 2026-04-03
 status: active
-authority: "Logan Finney"
-from: "Claude Code (The Abhorsen / The Sentry 🧿)"
-to: "GitHub Copilot (VSCode Agent)"
-branch: "claude/friendly-cartwright"
+authority: Logan Finney
+from: Claude Code (The Abhorsen / The Sentry 🧿)
+to: GitHub Copilot (VSCode Agent)
+branch: claude/friendly-cartwright
+related:
+- '104'
+- '108'
+- '2026-04-03'
+- ARCHITECTURE
+- CLI
+- Cloud
+- Copilot
+- DECISIONS
+- GCP
+- GRIMOIRE
+- GitHub
+- Google
+- HECATE
+- HECATE-HECATE-HECATE
+- IDE
+- LAF
+- LEVELSET
+- LEVELSET-CURRENT
+- Logan Finney
+- Logan's
+- NOT
+- OpenAI
+- SDK
+- Stone
+- THE
+- The Concierge
+- The world is quiet here
+- VAULT-CONVENTIONS
+- agent
+- coordination
+- infrastructure
+- voice
+- word
 ---
-
 # HANDOFF: Claude → GitHub Copilot
 ## Branch: `claude/friendly-cartwright` — Semi-Supervised Local Machine Handoff
 

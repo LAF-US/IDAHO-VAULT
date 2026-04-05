@@ -1,4 +1,9 @@
 ---
+related:
+- Michelle
+- Michelle Stennett
+- Moscow
+authority: LOGAN
 ---
 Residence: Moscow
 

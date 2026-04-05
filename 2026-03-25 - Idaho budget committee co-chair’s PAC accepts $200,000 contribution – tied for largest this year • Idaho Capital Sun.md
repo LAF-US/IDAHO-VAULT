@@ -1,14 +1,73 @@
 ---
-title: 2026-03-25 - Idaho budget committee co-chair’s PAC accepts $200,000 contribution – tied for largest this year • Idaho Capital Sun
-source: "https://idahocapitalsun.com/2026/03/25/idaho-budget-committee-co-chairmans-pac-accepts-200000-contribution/"
+title: 2026-03-25 - Idaho budget committee co-chair’s PAC accepts $200,000 contribution
+  – tied for largest this year • Idaho Capital Sun
+source: https://idahocapitalsun.com/2026/03/25/idaho-budget-committee-co-chairmans-pac-accepts-200000-contribution/
 author:
-  - "Clark Corbin"
+- Clark Corbin
 published: 2026-03-25
 created: 2026-03-26
-description: "The $200,000 contribution is tied for the largest individual campaign contribution made in Idaho in 2026, campaign finance records show."
-linter-yaml-title-alias: "2026-03-25 - Idaho budget committee co-chair’s PAC accepts $200,000 contribution – tied for largest this year • Idaho Capital Sun"
+description: The $200,000 contribution is tied for the largest individual campaign
+  contribution made in Idaho in 2026, campaign finance records show.
+linter-yaml-title-alias: 2026-03-25 - Idaho budget committee co-chair’s PAC accepts
+  $200,000 contribution – tied for largest this year • Idaho Capital Sun
+related:
+- '105'
+- '150'
+- '175'
+- '190'
+- '200'
+- 2026 legislative session
+- '2026-03-25'
+- '2026-03-26'
+- '250'
+- '337'
+- '443'
+- '500'
+- '715'
+- Act
+- Boise
+- Boise State University
+- Brad Little
+- Clark Corbin
+- Eagle
+- Idaho
+- Idaho Capital Sun
+- Idaho Capitol
+- Idaho Education News
+- Idaho Falls
+- Idaho House of Representatives
+- Idaho Legislature
+- Jaclyn Kettler
+- Jim Risch
+- Joint Finance-Appropriations Committee
+- Josh Tanner
+- LLC
+- Larry Craig
+- Mike Moyle
+- PAC
+- Phil McGrane
+- Post Register
+- Russ Fulcher
+- Secretary of State
+- Star
+- States Newsroom
+- Utah
+- Wendy Horman
+- budget
+- campaign finance
+- cannabis
+- election
+- general election
+- legislative
+- legislative session
+- money
+- political action committee
+- political parties
+- robocalls
+- school districts
+- website
+authority: LOGAN
 ---
-
 ## Idaho budget committee co-chair's PAC accepts $200,000 contribution – tied for largest this year
 
 ## Another, separate $200,000 contribution was also received by Natural Medicine Alliance of Idaho PAC, which is backing the Idaho Medical Cannabis Act

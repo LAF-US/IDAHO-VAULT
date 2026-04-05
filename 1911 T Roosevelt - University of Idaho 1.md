@@ -1,5 +1,13 @@
 ---
 date: 1911-04-09
+related:
+- 1911 T Roosevelt - Argonaut I
+- 1911 T Roosevelt - Argonaut II
+- Idaho
+- President
+- Theodore Roosevelt
+- University of Idaho
+authority: LOGAN
 ---
 President Theodore Roosevelt speaking at the University of Idaho 
 

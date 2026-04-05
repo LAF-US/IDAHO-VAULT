@@ -1,5 +1,49 @@
 ---
 date: 1976-03-18
+related:
+- '150'
+- '200'
+- '209'
+- '350'
+- '500'
+- '535'
+- Alabama
+- Boise
+- Boise County
+- Boise County Courthouse
+- Burke
+- California
+- Colorado
+- Connecticut
+- Frank Church
+- GUN
+- Georgia
+- Governor
+- Harvard
+- Henry
+- Idaho
+- Idaho City
+- Jackson
+- Los Angeles
+- Nevada
+- New Jersey
+- New York
+- Ohio
+- Oregon
+- Portland
+- President
+- Rhode Island
+- Star
+- Wallace
+- Washington
+- abortion
+- airport
+- assistant
+- cancer
+- hospitals
+- money
+- rivers
+authority: LOGAN
 ---
 # Senator Church Joins Presidential Race
 

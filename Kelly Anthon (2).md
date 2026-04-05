@@ -1,5 +1,21 @@
 ---
 source: commit
+related:
+- Burley
+- Declo
+- Idaho
+- Idaho Senate
+- JFAC Rules
+- Joint Finance-Appropriations Committee
+- Joint Rule Non-Adoption 2024-2025
+- Josh Tanner
+- Kelly Anthon
+- Lori Den Hartog
+- Medicaid
+- University of Idaho
+- children
+- voting
+authority: LOGAN
 ---
 Kelly Anthon is the Republican Idaho Senate Pro Tempore who co-signed the November 2025 letter announcing JFAC voting rule changes without a committee vote and has never served on JFAC.
 

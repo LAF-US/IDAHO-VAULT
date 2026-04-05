@@ -2,8 +2,29 @@
 updated: 2026-03-25
 status: draft
 source: commit
+related:
+- '2026-03-24'
+- '2026-03-25'
+- AGENTS
+- CLAUDE
+- CONSTITUTION
+- Copilot
+- DECISIONS
+- GEMINI
+- GitHub
+- LEVELSET
+- LOGAN
+- Logan's
+- MCP
+- PROTOCOL
+- README
+- The world is quiet here
+- VAULT-CONVENTIONS
+- agent
+- coordination
+- window
+authority: LOGAN
 ---
-
 # VAULT-ZONES — Governance Zone Definitions
 
 This document partitions the vault into three governance zones by write-authority requirements. It formalizes the boundaries that already exist mechanically in `classify_paths.py` (two-tier risk classification) and `CODEOWNERS` (path-based review gates).

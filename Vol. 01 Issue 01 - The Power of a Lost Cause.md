@@ -1,4 +1,7 @@
 ---
+related:
+- costs
+authority: LOGAN
 ---
 !INLAY-01-01.jpg
 # The Power of a Lost Cause?

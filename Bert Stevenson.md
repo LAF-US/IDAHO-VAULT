@@ -1,3 +1,6 @@
 ---
-residence: "Rupert"
+residence: Rupert
+related:
+- Rupert
+authority: LOGAN
 ---

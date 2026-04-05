@@ -1,14 +1,33 @@
 ---
 source: https://boisedev.com/news/2026/03/26/valorc3-emerald/
 author:
-  - "Don Day - BoiseDev Editor"
-  - "Don Day"
+- Don Day - BoiseDev Editor
+- Don Day
 published: 2026-03-26
 created: 2026-03-30
 date created: Monday, March 30th 2026, 11:55:13 am
 date modified: Monday, March 30th 2026, 3:39:10 pm
+related:
+- '2026-03-26'
+- '2026-03-30'
+- '960'
+- Boise
+- BoiseDev
+- CEO
+- Data Centers
+- Fiberpiper
+- Idaho
+- Kuna
+- Tonaquint
+- Utah
+- ValorC3
+- ValorC3 Data Centers
+- construction
+- infrastructure
+- initial
+- new data center
+authority: LOGAN
 ---
-
 A new data center is set to open next year on Emerald St. in Boise. Before it opens, an expansion will start.
 
 [As BoiseDev reported in 2020](https://boisedev.com/news/2020/07/07/fiberpipe-tonaquint-boise/), Utah firm Tonaquint purchased Boise-based Fiberpipe. Tonaquint then rebranded as ValorC3 Data Centers. ValorC3 operates the former Fiberpiper data center on Emerald St.

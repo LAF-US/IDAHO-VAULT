@@ -1,4 +1,22 @@
 ---
+related:
+- Dale Hawkins
+- Dori Healey
+- Elaine Price
+- James Holtzclaw
+- Jon Weber
+- Josh Wheeler
+- Lori McCann
+- Matt Bundy
+- Mike Kingsley
+- Nate Roberts
+- Rick Cheatum
+- Roberts
+- Steve Miller
+- Sue Chew
+- Tony Wisniewski
+- Wendy Horman
+authority: LOGAN
 ---
 # Roster
 ## 2023 Members

@@ -1,4 +1,24 @@
 ---
+related:
+- Boise
+- Boise County
+- Custer
+- Custer County
+- Dorothy Moon
+- Elmore County
+- Gem County
+- Geoff Schroeder
+- Lemhi
+- Lenore
+- Matt Bundy
+- Megan Blanksma
+- Paul
+- Paul Shepherd
+- Roberts
+- Steven Thayn
+- Terry Gestrin
+- Valley County
+authority: LOGAN
 ---
 Valley County, Custer County, Boise County & Elmore County
 - Formerly Valley, Boise, Custer, Lemhi & Gem County

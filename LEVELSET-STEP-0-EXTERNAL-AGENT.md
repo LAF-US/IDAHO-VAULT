@@ -1,6 +1,28 @@
 ---
 updated: 2026-03-22
 status: active
+related:
+- '2026-03-22'
+- AGENTS
+- ARE
+- CONSTITUTION
+- DECISIONS
+- GitHub
+- LEVELSET
+- LOGAN
+- Logan Finney
+- Logan's
+- NOT
+- Obsidian
+- PROTOCOL
+- WHO
+- YOU
+- agent
+- codex
+- format
+- infrastructure
+- persona
+authority: LOGAN
 ---
 # STEP-0 LEVELSET — LOGAN + IDAHO-VAULT (EXTERNAL AGENT)
 

@@ -1,4 +1,17 @@
 ---
+related:
+- Carmen
+- Cobalt
+- Elk Bend
+- Gibbonsville
+- Leadore
+- Lemhi
+- North Fork
+- Patterson
+- Salmon
+- Shoup
+- Tendoy
+authority: LOGAN
 ---
 Seat: Salmon
 Municipalities: Leadore

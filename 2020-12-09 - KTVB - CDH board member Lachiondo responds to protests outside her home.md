@@ -1,6 +1,21 @@
 ---
-author: "Brian Holmes"
-outlet: "KTVB"
+author: Brian Holmes
+outlet: KTVB
+related:
+- Ada County
+- Boise
+- Central District Health
+- Diana Lachiondo
+- Facebook
+- Idaho
+- KTVB
+- Kenyon
+- children
+- homes
+- meeting
+- police
+- warrants
+authority: LOGAN
 ---
 "I am sad. I am tired. I fear that, in my choosing to hold public office, my family has too-often paid the price," Diana Lachiondo told KTVB on Wednesday. 
 

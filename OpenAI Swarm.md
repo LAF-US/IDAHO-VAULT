@@ -1,5 +1,5 @@
 ---
-title: "OpenAI Swarm"
+title: OpenAI Swarm
 updated: 2026-03-29
 status: stub
 authority: perplexity
@@ -7,8 +7,25 @@ doc_class: organization
 url: https://github.com/openai/swarm
 date created: Monday, March 30th 2026, 10:25:05 am
 date modified: Monday, March 30th 2026, 10:29:50 am
+related:
+- '2026-03-29'
+- A&I
+- ARCHITECTURE
+- ARCHITECTURE & INFRASTRUCTURE REPORT
+- BIG
+- BIG IFS — UNIFIED SWARM
+- CIVILIZATION-SCALE ARCHITECTURE REPORT
+- CrewAI
+- Factory
+- IFS
+- Logan Finney
+- OpenAI
+- R&D
+- UNIFIED
+- VAULT-TEMPLATES
+- agent
+- infrastructure
 ---
-
 # OpenAI Swarm
 
 **OpenAI Swarm** is a lightweight, educational multi-agent framework focused on clarity and reliability of handoffs. Agents are simple Python classes with system prompts, tools, and routines, coordinated via explicit handoff functions rather than complex memory layers.

@@ -1,4 +1,8 @@
 ---
+related:
+- Home
+- Mountain Home
+authority: LOGAN
 ---
 Residence: Mountain Home
 

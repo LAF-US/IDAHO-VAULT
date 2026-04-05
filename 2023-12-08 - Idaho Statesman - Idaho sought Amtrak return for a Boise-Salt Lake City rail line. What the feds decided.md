@@ -1,10 +1,53 @@
 ---
 author:
-  - "Kevin Fixler"
-  - "Ian Max Stevenson"
+- Kevin Fixler
+- Ian Max Stevenson
 outlet:
-  - "Idaho Statesman"
+- Idaho Statesman
 URL: https://www.idahostatesman.com/news/local/traffic/article282562318.html
+related:
+- '340'
+- '500'
+- '750'
+- About
+- BUT
+- Boise
+- Brad Little
+- CEO
+- California
+- Canada
+- Collins
+- Colorado
+- Community Planning Association of Southwest Idaho
+- Department of Transportation
+- East Coast
+- FRA
+- Idaho
+- Idaho Statesman
+- Jim Risch
+- Joe Biden
+- Lake
+- Lauren McLean
+- Mike Simpson
+- NOT
+- Oregon
+- Portland
+- President
+- Salt Lake City
+- Treasure Valley
+- U.S. Senate
+- Utah
+- Washington
+- budget
+- cities
+- dollars
+- infrastructure
+- mayor
+- money
+- trains
+- transportation
+- word
+authority: LOGAN
 ---
 Boise residents hoping for future passenger rail service to Salt Lake City are again left waiting for their train. 
 

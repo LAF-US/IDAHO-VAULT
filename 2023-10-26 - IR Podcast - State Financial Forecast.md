@@ -1,13 +1,47 @@
 ---
 author:
-  - "Logan Finney"
+- Logan Finney
 outlet:
-  - "Idaho Reports"
+- Idaho Reports
 URL: https://blog.idahoreports.idahoptv.org/2023/10/27/podcast-state-financial-forecast/
 date created: Monday, March 23rd 2026, 4:54:51 pm
 date modified: Monday, March 30th 2026, 7:03:53 pm
+related:
+- '200'
+- '280'
+- '400'
+- '410'
+- '500'
+- AAA
+- Alex Adams
+- Division of Financial Management
+- General Fund
+- Governor
+- Idaho
+- Idaho Reports
+- Logan Finney
+- Rainy Day Fund
+- State Controller
+- 'Yes'
+- balanced budget
+- bridges
+- budget
+- costs
+- credit rating
+- fiscal year
+- housing
+- individuals
+- money
+- numbers
+- online sales tax
+- prices
+- property tax
+- sales tax
+- sign
+- special session
+- taxes
+authority: LOGAN
 ---
-
 Logan Finney, Idaho Reports   
 
 So we've got you here today to talk about the latest round of revenue numbers from the state, including the General Fund report for October. Can you tell us generally, what's the overall takeaway from this latest round of numbers? 

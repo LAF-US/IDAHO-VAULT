@@ -1,4 +1,11 @@
 ---
+related:
+- Megan Blanksma
+- Valley County
+- Valley County Republican Central Committee
+- election
+- primary election
+authority: LOGAN
 ---
 Valley County 
 

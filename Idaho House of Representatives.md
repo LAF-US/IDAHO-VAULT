@@ -1,4 +1,38 @@
 ---
+related:
+- Dustin Manwaring
+- House Agricultural Affairs
+- House Appropriations
+- House Assistant Majority Leader
+- House Assistant Minority Leader
+- House Business
+- House Commerce and Human Resources
+- House Education
+- House Environment, Energy and Technology
+- House Ethics and Policy
+- House Health and Welfare
+- House Judiciary, Rules and Administration
+- House Local Government
+- House Majority Caucus Chair
+- House Majority Leader
+- House Minority Caucus Chair
+- House Minority Leader
+- House Resources and Conservation
+- House Revenue and Taxation
+- House State Affairs
+- House Transportation and Defense
+- House Ways and Means
+- Human Resources
+- Idaho
+- Idaho Legislature
+- Ilana Rubel
+- Lauren Necochea
+- Megan Blanksma
+- Mike Moyle
+- Ned Burns
+- Sage Dixon
+- Speaker of the House
+authority: LOGAN
 ---
 The House of Representatives is the lower chamber of the Idaho Legislature. It has 70 members.
 Its presiding officer is the Speaker of the House.

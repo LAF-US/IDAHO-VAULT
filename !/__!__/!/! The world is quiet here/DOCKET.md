@@ -48,7 +48,7 @@ This is the live coordination board. Any agent arriving at THE COURTROOM reads t
 | **Phase 2 repo size rewrite** | Claude Code | **AWAITING LOGAN** | — | filter-repo ready; 332 MiB trash identified; branch protection disable required before force push |
 | **5 zombie branch deletions** | Claude Code / Gemini | **Partial Success** | — | Deletion attempted for core zombies; naming issues on others; 18/21 branches purged. |
 | **Project Courier (LAF-18)** | Gemini | **Staged** | LAF-18 | `vault-courier-sync.sh` + workflow created; awaiting `OP_SERVICE_ACCOUNT_TOKEN` provisioning. |
-| **Crawler Ignition (Phase 1)** | Gemini | **Complete** | — | **Local Cartographer** (no-credit scan) executed. 3,683/23,202 factual notes (16%) discovered. Neuron 100.md updated. |
+| **Unification Stream (Phases 1-3)** | Gemini | **COMPLETE** | LAF-7 | **SUCCESS**. 2,622 nodes hydrated with 'related' metadata (Omega -> Alpha). Neuron 100 updated. |
 
 
 ## PROJECT-SCOPED WORK ITEMS (BROKEN OUT FROM LAF-7)
@@ -62,7 +62,7 @@ This is the live coordination board. Any agent arriving at THE COURTROOM reads t
 | Publication gatekeeping | JFAC quote audio verification and publication blocking checks | Logan | Blocked | _(create child issue)_ | Keep evidence gate work separate from coordination docket |
 | Signal intake - Bartimaeus | Normalize LAF-17 signal into actionable workflow disposition | Codex | Completed | LAF-17 | Filed brief `!/BRIEF-LAF-17-2026-03-30.md` with recommended merge-gate checks for LAF-13/LAF-14 |
 | Gemini Architecture - LAF-18 | **Framework Staged**; Courier Workflow Ready | Gemini | In progress | LAF-18 | `vault-courier` automation scripts + GitHub Actions fixed; ready for secret provisioning. |
-| **Address Space Discovery** | **Local Cartographer SUCCESS** | Gemini | **Planned** | — | 23k stubs scanned; 3,683 factual nodes mapped (16%). Stats written to [100.md](100.md). Awaiting Phase 2 (Linker) logic decision. |
+| **Address Space Discovery** | Gemini | **Complete** | — | **SUCCESS**. 2,622 factual nodes mapped and hydrated (16% of stubs). Metadata-structural phase finished. |
 
 
 ## RECENTLY COMPLETED

@@ -1,8 +1,33 @@
 ---
-author: "Tana Kelley"
+author: Tana Kelley
 outlet:
-  - "KHQ"
+- KHQ
 URL: https://www.khq.com/news/new-republican-party-formed-in-north-idaho/article_9a0b0fec-c10e-11ec-bcce-b7dcf4ff85c6.html
+related:
+- Brent Regan
+- Coeur d'Alene
+- Facebook
+- GOP
+- Governor
+- Idaho
+- Idaho Republican Party
+- Internet
+- Jack Riggs
+- KHQ
+- Kootenai
+- Kootenai County
+- Kootenai County Republican Central Committee
+- NIC
+- North Idaho
+- North Idaho College
+- SOS
+- election
+- meeting
+- money
+- primary election
+- taxes
+- website
+authority: LOGAN
 ---
 KOOTENAI COUNTY, Idaho - Former elected leaders in Kootenai County, including sheriffs, representatives, lieutenant governors and mayors are forming a new Republican Party. It's a direct result of, they say, a takeover of the Republican Party by libertarians, constitutionalists, and John Birch society members.
 

@@ -1,4 +1,14 @@
 ---
+related:
+- Bates
+- Cache
+- Clementsville
+- Darby
+- Driggs
+- Felt
+- Tetonia
+- Victor
+authority: LOGAN
 ---
 Seat: Driggs 
 Municipalities: Victor, Tetonia 

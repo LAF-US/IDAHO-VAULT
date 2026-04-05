@@ -1,5 +1,16 @@
 ---
-cmte: "House State Affairs"
+cmte: House State Affairs
+related:
+- '344'
+- '347'
+- House State Affairs
+- Idaho
+- Jason Monks
+- Office of Emergency Management
+- bond elections
+- bonds
+- taxing districts
+authority: LOGAN
 ---
 House State Affairs Monday Jan 27
 

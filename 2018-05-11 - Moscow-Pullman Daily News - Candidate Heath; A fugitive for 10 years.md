@@ -1,9 +1,33 @@
 ---
 author:
-  - "Katie Short"
+- Katie Short
 outlet:
-  - "Moscow-Pullman Daily News"
+- Moscow-Pullman Daily News
 URL: https://dnews.com/local/candidate-heath-a-fugitive-for-10-years/article_f0c5a1ab-3dd2-58ff-965a-9b20151a41d4.html
+related:
+- '180'
+- Benewah
+- Benewah County
+- Bonner County
+- Bonner County Jail
+- County Sheriff
+- Google
+- Hari Heath
+- Idaho
+- Idaho County
+- Latah County
+- Latah County Jail
+- Moscow
+- Moscow-Pullman Daily News
+- Santa
+- U.S. Forest Service
+- assistant
+- construction
+- counties
+- legislative
+- taxes
+- word
+authority: LOGAN
 ---
 ## _State legislative candidate says he avoided serving sentence out of principle_ 
 

@@ -1,8 +1,13 @@
 ---
 date created: Wednesday, April 1st 2026, 11:16:48 pm
 date modified: Thursday, April 2nd 2026, 10:37:50 pm
+related:
+- Idaho
+- Idaho Constitution
+- Oregon
+- Washington
+authority: LOGAN
 ---
-
 !Idaho.png
 
 # The Gem State

@@ -1,4 +1,48 @@
 ---
+related:
+- 2023 legislative session
+- '436'
+- '501'
+- '628'
+- Act
+- Audrey Dutton
+- Boise
+- CEO
+- DHW
+- Department of Health and Welfare
+- Department of Insurance
+- Idaho
+- Idaho Capital Sun
+- Idaho Falls
+- Idaho Health Data Exchange
+- Idaho Legislature
+- Medicaid
+- OPE
+- Office of Performance Evaluations
+- Pocatello
+- Treasure Valley
+- Twin Falls
+- USD
+- attorneys
+- budget
+- costs
+- deliverables
+- emergency care
+- emergency room
+- hackers
+- health care
+- health insurance
+- hospitals
+- individuals
+- infrastructure
+- legislative
+- legislative session
+- meeting
+- money
+- systems
+- utility
+- website
+authority: LOGAN
 ---
 Audrey Dutton, Idaho Capital Sun
 ## Exchange ran into financial troubles after its leadership made funding deals that fell through, leading to bitter feud over contract

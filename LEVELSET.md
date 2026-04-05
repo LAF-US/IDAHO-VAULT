@@ -2,8 +2,25 @@
 updated: 2026-04-02
 status: active
 source: ground-truth
+related:
+- '2026-04-02'
+- AGENT-PROTOCOL
+- AGENTS
+- CONSTITUTION
+- DECISIONS
+- GitHub
+- LAF
+- PROTOCOL
+- README
+- VAULT-CONVENTIONS
+- agent
+- chain
+- codex
+- coordination
+- doctrine
+- index
+authority: LOGAN
 ---
-
 # LEVELSET
 
 Current status of the IDAHO-VAULT ecosystem as of **2026-04-02 (America/Denver)**.

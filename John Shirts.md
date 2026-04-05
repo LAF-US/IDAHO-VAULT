@@ -1,4 +1,11 @@
 ---
+related:
+- Bart Davis
+- House member
+- Judy Boyle
+- Legislative District 9
+- law enforcement
+authority: LOGAN
 ---
 Legislative District 9 House member 
 

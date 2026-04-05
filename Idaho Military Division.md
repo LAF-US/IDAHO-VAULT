@@ -1,4 +1,14 @@
 ---
+related:
+- Gowen Field
+- Idaho
+- Idaho Air National Guard
+- Idaho Army National Guard
+- Idaho Military History Museum
+- Idaho Youth ChalleNGe Academy
+- Office of Emergency Management
+- STARBASE
+authority: LOGAN
 ---
 state military department headquartered at Gowen Field 
 

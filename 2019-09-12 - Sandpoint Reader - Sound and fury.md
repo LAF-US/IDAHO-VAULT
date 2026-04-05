@@ -1,9 +1,42 @@
 ---
 author:
-  - "Zach Hagadone"
+- Zach Hagadone
 outlet:
-  - "Sandpoint Reader"
+- Sandpoint Reader
 URL: https://sandpointreader.com/sound-and-fury/
+related:
+- Alexandria
+- Alexandria Kincaid
+- Ben Olson
+- Boise
+- Bonner County
+- Canyon County
+- Facebook
+- Festival at Sandpoint
+- First Amendment
+- Greg Pruett
+- Idaho
+- Idaho Second Amendment Alliance
+- Jennifer Stapleton
+- President
+- Sandpoint
+- Sandpoint Reader
+- Scott Herndon
+- Second Amendment
+- Twin Falls
+- Twin Falls County
+- War Memorial Field
+- YouTube
+- Zach Hagadone
+- attorneys
+- attorney’s fees
+- cities
+- costs
+- counties
+- right to bear arms
+- social media
+- verbal
+authority: LOGAN
 ---
 ### Idaho Second Amendment Alliance raises $10K for possible suit vs. Sandpoint over Festival gun ban
 

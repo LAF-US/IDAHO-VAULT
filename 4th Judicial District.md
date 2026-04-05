@@ -1,4 +1,8 @@
 ---
+related:
+- Boise
+- Judicial Districts
+authority: LOGAN
 ---
 Ada, Boise, Elmore, Valley
 

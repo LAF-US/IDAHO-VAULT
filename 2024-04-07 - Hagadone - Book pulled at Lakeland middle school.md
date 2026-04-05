@@ -1,9 +1,27 @@
 ---
 author:
-  - "Carolyn Bostick"
+- Carolyn Bostick
 outlet:
-  - "Coeur d'Alene Press"
+- Coeur d'Alene Press
 URL: https://bonnercountydailybee.com/news/2024/apr/07/book-being-pulled-at-lakeland-middle-school-result/
+related:
+- Coeur d'Alene
+- Coeur d'Alene Press
+- Connor
+- Lakeland Joint School District
+- Michelle
+- Michelle Thompson
+- Ramona Grissom
+- Randi Bain
+- Rathdrum
+- The Truth As Told by Mason Buttle
+- executive session
+- meeting
+- parental permissions
+- parents
+- police
+- teachers
+authority: LOGAN
 ---
 Rathdrum — The pulling of “The Truth As Told by Mason Buttle” from three sixth grade classes at Lakeland Middle School turned into heated debate this week.
 

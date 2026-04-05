@@ -1,5 +1,18 @@
 ---
 date: 1938-07-01
+related:
+- 1938 Borah - Monopoly Committee
+- Attorney General
+- New York
+- Patterson
+- President
+- Texas
+- Utah
+- Wyoming
+- pair
+- prices
+- voting
+authority: LOGAN
 ---
 # COMMITTEE PLANS MONOPOLY INQUIRY
 

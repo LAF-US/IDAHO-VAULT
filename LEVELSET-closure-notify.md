@@ -6,8 +6,18 @@ tier: 1
 date: 2026-03-15
 branch: claude/levelset-closure-notification-ss7wR
 status: terminating
+related:
+- '2026-03-15'
+- CLI
+- GitHub
+- Idaho
+- Idaho Legislature
+- LEVELSET
+- LOGAN
+- Logan's
+- fire
+authority: LOGAN
 ---
-
 LEVELSET Claude Code – Levelset Closure Notification — 2026-03-15
 
 ---

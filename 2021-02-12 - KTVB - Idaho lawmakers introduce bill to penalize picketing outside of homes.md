@@ -1,6 +1,29 @@
 ---
 outlet:
-  - "KTVB"
+- KTVB
+related:
+- Ada County
+- Ammon
+- Boise
+- Brad Little
+- Brooke Green
+- Caldwell
+- Dave Jeppesen
+- Diana Lachiondo
+- Eagle
+- Emmett
+- Greg Chaney
+- House Judiciary, Rules and Administration
+- Idaho
+- KTVB
+- Lauren McLean
+- Meridian
+- anti-mask
+- homes
+- mayor
+- meeting
+- police
+authority: LOGAN
 ---
 ### _"Intimidation isn't a form of democratic expression; it's mob rule," said Rep. Greg Chaney, R-Caldwell._
 

@@ -1,4 +1,17 @@
 ---
+related:
+- Atlanta
+- Featherville
+- Glenns Ferry
+- Hammett
+- Home
+- King Hill
+- Mountain Home
+- Mountain Home Air Force Base
+- Pine
+- Prairie
+- Tipanuk
+authority: LOGAN
 ---
 Seat: Mountain Home
 Municipalities: Glenns Ferry

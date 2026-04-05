@@ -1,4 +1,22 @@
 ---
+related:
+- Board of Accountancy
+- Board of Dentistry
+- Board of Medicine
+- Board of Nursing
+- Board of Pharmacy
+- Board of Professional Counselors and Marriage and Family Therapists
+- Board of Veterinary Medicine
+- Bureau of Building, Construction, and Real Estate
+- Bureau of Health Professions
+- Bureau of Occupational Licenses
+- Factory
+- Governor
+- Home
+- Idaho
+- Outfitters and Guides Licensing Board
+- Real Estate Commission
+authority: LOGAN
 ---
 Administrator appointed by the Governor: Russell Barron 
 ### **Bureau of Health Professions**

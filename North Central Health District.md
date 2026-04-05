@@ -1,4 +1,13 @@
 ---
+related:
+- '208'
+- '215'
+- '799'
+- Central Idaho
+- Idaho
+- Lewiston
+- North-Central Idaho
+authority: LOGAN
 ---
 Director: Carol Moehrle  
 215 10th Street  

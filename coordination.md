@@ -1,3 +1,17 @@
+---
+authority: LOGAN
+related:
+- Anthropic
+- Copilot
+- GitHub
+- LEVELSET
+- Logan Finney
+- Microsoft Copilot
+- PROTOCOL
+- node
+- nodes
+---
+
 # SWARM COORDINATION PROTOCOL
 
 This document governs how swarm nodes coordinate with each other and with the principal.

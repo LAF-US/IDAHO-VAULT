@@ -1,7 +1,60 @@
 ---
-author: "Logan Finney"
-outlet: "Idaho Reports"
+author: Logan Finney
+outlet: Idaho Reports
 URL: https://blog.idahoreports.idahoptv.org/2021/12/10/chronic-wasting-disease-surveillance-underway-in-central-idaho/
+related:
+- '300'
+- '393'
+- '527'
+- '775'
+- Act
+- CWD
+- Canada
+- Central Idaho
+- Chronic Wasting Disease Research and Management Act
+- Colorado
+- Department of Agriculture
+- EHD
+- Game Management Unit 14
+- Idaho
+- Idaho County
+- Idaho Fish and Game Commission
+- Idaho Reports
+- Lewiston
+- Lewiston Tribune
+- Logan Finney
+- Lucile
+- Montana
+- North-Central Idaho
+- Oregon
+- Riggins
+- Slate Creek
+- South Korea
+- Texas
+- U.S. Centers for Disease Control
+- U.S. Department of Agriculture
+- U.S. House
+- U.S. Senate
+- Utah
+- Washington
+- White Bird
+- Wyoming
+- animals
+- caribou
+- chronic wasting disease
+- deer
+- elk
+- humans
+- hunters
+- mad cow disease
+- moose
+- mule deer
+- nodes
+- numbers
+- prion
+- water
+- white-tailed deer
+authority: LOGAN
 ---
 The arrival of a fatal neurological condition has Idaho Fish and Game officials concerned, but it’s not the only challenge facing Idaho’s deer and elk populations.
 

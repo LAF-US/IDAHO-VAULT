@@ -1,15 +1,39 @@
 ---
-source: "https://favs.news/idaho-bill-penalties-disrupting-church-services/"
+source: https://favs.news/idaho-bill-penalties-disrupting-church-services/
 author:
-  - "Logan Finney"
+- Logan Finney
 published: 2026-03-11
 created: 2026-03-27
 title: 2026-03-11 - FāVS News - Idaho Bill Targets Disruptions at Church Services
-linter-yaml-title-alias: 2026-03-11 - FāVS News - Idaho Bill Targets Disruptions at Church Services
+linter-yaml-title-alias: 2026-03-11 - FāVS News - Idaho Bill Targets Disruptions at
+  Church Services
 date created: Friday, March 27th 2026, 10:36:11 am
 date modified: Friday, March 27th 2026, 6:05:45 pm
+related:
+- '200'
+- '2026-03-27'
+- '501'
+- Boise
+- CNN
+- Chad Christensen
+- Christian nationalism
+- Cornel Rasor
+- FāVS
+- House Judiciary, Rules and Administration
+- Idaho
+- Idaho Falls
+- Logan Finney
+- Moscow
+- Sandpoint
+- USA
+- University of Idaho
+- Washington
+- arrests
+- journalists
+- law enforcement
+- religion
+authority: LOGAN
 ---
-
 ## Church trespass bill moves to Idaho House for consideration
 
 Date:

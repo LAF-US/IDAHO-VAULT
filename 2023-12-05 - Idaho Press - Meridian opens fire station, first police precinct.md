@@ -1,9 +1,26 @@
 ---
 author:
-  - "Carolyn Komatsoulis"
+- Carolyn Komatsoulis
 outlet:
-  - "Idaho Press"
+- Idaho Press
 URL: https://www.idahopress.com/news/local/meridian-opens-fire-station-first-police-precinct/article_6a02357c-93bd-11ee-b2b1-5705d9110b80.html
+related:
+- '150'
+- Ada County
+- Highway 16
+- Idaho
+- Idaho Press
+- Meridian
+- budget
+- construction
+- fire
+- firefighters
+- homes
+- initial
+- police
+- valley
+- website
+authority: LOGAN
 ---
 Meridian opened its eighth fire station and first police precinct on Tuesday, an unthinkable development for many who started on the force decades ago. But Meridian has grown tremendously and likely will continue to expand in the northwestern part of the city.  
   

@@ -1,8 +1,14 @@
 ---
 cmte:
-  - "House Revenue and Taxation"
+- House Revenue and Taxation
+related:
+- House Revenue and Taxation
+- Jeff Ehlers
+- Rick Cheatum
+- voice
+- voice vote
+authority: LOGAN
 ---
-
 House Revenue and Taxation
 
 Monday, Jan 13, 9am

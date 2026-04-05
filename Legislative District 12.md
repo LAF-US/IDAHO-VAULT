@@ -1,4 +1,17 @@
 ---
+related:
+- Ben Adams
+- Bruce Skaug
+- Canyon County
+- Collins
+- Gary Collins
+- Jaron Crane
+- Jeff Cornilles
+- Nampa
+- Rick Youngblood
+- Robert Anderst
+- Todd Lakey
+authority: LOGAN
 ---
 Western Nampa in Canyon County
 

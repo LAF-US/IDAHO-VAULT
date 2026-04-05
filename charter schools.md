@@ -1,4 +1,53 @@
 ---
+related:
+- Bingham County
+- Blackfoot
+- Blaine County
+- Boise
+- Bonner County
+- Bonneville County
+- Bridge
+- Canyon County
+- Carmen
+- Coeur d'Alene
+- Connor
+- Elmore County
+- Franklin
+- Franklin County
+- Fremont County
+- Gem County
+- Gooding
+- Gooding County
+- Hayden
+- Idaho
+- Island Park
+- Jerome
+- Jerome County
+- Kootenai
+- Kootenai County
+- Latah County
+- Lemhi
+- Lemhi County
+- Liberty
+- Meridian
+- Moscow
+- Nampa
+- North Idaho
+- Payette
+- Payette County
+- Payette River
+- Pine
+- Pocatello
+- Prairie
+- STEM
+- Star
+- State of Idaho
+- Syringa
+- Thomas
+- Treasure Valley
+- Twin Falls
+- Twin Falls County
+authority: LOGAN
 ---
 A list of charter schools and charter school networks in the State of Idaho Idaho by county.
 

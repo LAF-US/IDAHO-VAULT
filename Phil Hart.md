@@ -1,4 +1,10 @@
 ---
+related:
+- House member
+- Kellogg
+- Legislative District 2
+- Senate member
+authority: LOGAN
 ---
 Residence: Kellogg
 

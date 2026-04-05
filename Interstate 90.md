@@ -1,4 +1,34 @@
 ---
+related:
+- Cataldo
+- Coeur d'Alene
+- Coeur d'Alene River
+- Enaville
+- Fernan Lake
+- Huetter
+- Idaho
+- Kellogg
+- Kingston
+- Kootenai
+- Lake
+- Montana
+- Mullan
+- North Idaho
+- Osburn
+- Pinehurst
+- Post Falls
+- Rose
+- Rose Lake
+- Shoshone
+- Silverton
+- Smelterville
+- Spokane
+- Spokane River
+- State Line
+- Wallace
+- Washington
+- Wolf Lodge
+authority: LOGAN
 ---
 Major east-west interstate in North Idaho
 

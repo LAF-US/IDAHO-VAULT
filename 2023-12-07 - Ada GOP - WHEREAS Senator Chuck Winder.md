@@ -1,4 +1,23 @@
 ---
+related:
+- '110'
+- Ada County
+- Ada County Republican Central Committee
+- Brian Lenney
+- Chuck Winder
+- Glenneda Zuiderveld
+- Human Resources
+- Idaho
+- Idaho Constitution
+- Idaho Senate
+- Legislative District 20
+- President
+- Scott Herndon
+- Senate Commerce and Human Resources
+- Senate Ethics
+- Senate Health and Welfare
+- budget
+authority: LOGAN
 ---
 Ada County Republican Central Committee RESOLUTION
 

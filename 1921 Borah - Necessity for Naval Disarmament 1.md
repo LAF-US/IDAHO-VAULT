@@ -1,5 +1,14 @@
 ---
 date: 1921-09-01
+related:
+- '800'
+- Europe
+- Idaho
+- William Borah
+- agriculture
+- money
+- taxes
+authority: LOGAN
 ---
 # Sen. William Borah, (R)-Idaho
 

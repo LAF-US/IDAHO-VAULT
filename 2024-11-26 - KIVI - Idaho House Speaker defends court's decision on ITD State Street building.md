@@ -1,8 +1,16 @@
 ---
-outlet: "KIVI"
-url: "https://www.kivitv.com/downtown-boise/idaho-house-speaker-defends-courts-decision-on-itd-state-street-building"
+outlet: KIVI
+url: https://www.kivitv.com/downtown-boise/idaho-house-speaker-defends-courts-decision-on-itd-state-street-building
 author:
-  - "Don Nelson"
+- Don Nelson
+related:
+- '200'
+- ITD
+- Idaho
+- Mike Moyle
+- Phil Batt
+- dollars
+authority: LOGAN
 ---
 BOISE, Idaho — The talk about what to do with the aging Idaho Transportation Department's large building on State Street is still ongoing. I sat down with House Speaker Mike Moyle to understand why a deal to sell the property didn't happen.  
 

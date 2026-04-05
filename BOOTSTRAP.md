@@ -1,7 +1,18 @@
 ---
 created: 2026-03-20
 status: draft
-usage: Logan pastes this into CODE AUTHORITY along with a TOSS dump to trigger context ingestion
+usage: Logan pastes this into CODE AUTHORITY along with a TOSS dump to trigger context
+  ingestion
+related:
+- '2026-03-20'
+- AGENTS
+- DECISIONS
+- FLAG
+- LEVELSET
+- PROTOCOL
+- TOSS
+- agent
+authority: LOGAN
 ---
 # BOOTSTRAP PROMPT
 

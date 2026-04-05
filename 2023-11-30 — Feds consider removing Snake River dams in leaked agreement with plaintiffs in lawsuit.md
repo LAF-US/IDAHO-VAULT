@@ -1,10 +1,42 @@
 ---
 author:
-  - "Alex Baumhardt"
+- Alex Baumhardt
 outlet:
-  - "Washington State Standard"
-  - "Oregon Capital Chronicle"
+- Washington State Standard
+- Oregon Capital Chronicle
 URL: https://washingtonstatestandard.com/2023/11/30/feds-consider-removing-snake-river-dams-in-leaked-agreement-with-plaintiffs-in-lawsuit/
+related:
+- Basin
+- Bonneville Power Administration
+- Council
+- Facebook
+- Idaho
+- Joe Biden
+- Montana
+- Nevada
+- Nez Perce Tribe
+- Oregon
+- Oregon Capital Chronicle
+- Pacific Ocean
+- President
+- Russ Fulcher
+- Snake River
+- States Newsroom
+- Twitter
+- U.S. Army Corps of Engineers
+- Utah
+- Washington
+- Washington State Standard
+- Wyoming
+- dams
+- fish
+- fishing
+- hatchery
+- irrigation
+- prices
+- species
+- water
+authority: LOGAN
 ---
 ## _Federal scientists say there is a high likelihood of extinction for 13 Columbia Basin salmon and steelhead runs without immediate attention._
 

@@ -1,7 +1,28 @@
 ---
-author: "Logan Finney"
-outlet: "Idaho Reports"
+author: Logan Finney
+outlet: Idaho Reports
 URL: https://blog.idahoreports.idahoptv.org/2023/09/28/dispute-continues-between-state-and-county-gop/
+related:
+- 7th Judicial District
+- Bingham County
+- Bingham County Republican Central Committee
+- Bryan Smith
+- Caldwell
+- Dan Cravens
+- Dorothy Moon
+- GOP
+- Greg Chaney
+- Idaho
+- Idaho Falls
+- Idaho Reports
+- Idaho Republican Party
+- Logan Finney
+- Trent Clark
+- election
+- individuals
+- initial
+- meeting
+authority: LOGAN
 ---
 A dispute between the state Republican party and a local party continued in court on Thursday over whether the Bingham County Republican Central Committee violated its rules and bylaws during its election of new officers over the summer.
 

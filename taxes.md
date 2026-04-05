@@ -1,3 +1,23 @@
+---
+authority: LOGAN
+related:
+- Department of Revenue and Taxation
+- House Revenue and Taxation
+- Low-Income Housing Tax Credit
+- Payments in Lieu of Taxes
+- Senate Local Government and Taxation
+- State Tax Commission
+- budget
+- foregone taxes
+- grocery tax
+- property tax
+- property tax budget
+- sales tax
+- tax credits
+- tax exemptions
+- taxing districts
+---
+
 House Revenue and Taxation
 Senate Local Government and Taxation
 Department of Revenue and Taxation

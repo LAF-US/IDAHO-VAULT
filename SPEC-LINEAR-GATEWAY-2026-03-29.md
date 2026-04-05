@@ -1,13 +1,36 @@
 ---
-title: "SPEC — Swarm Linear Gateway"
+title: SPEC — Swarm Linear Gateway
 updated: 2026-03-29
 status: draft
-authority: "LOGAN"
+authority: LOGAN
 authors:
-  - GitHub Copilot
+- GitHub Copilot
 type: spec
+related:
+- '2026-03-29'
+- API
+- AWS
+- CHECKPOINT
+- CLI
+- Cloud
+- Copilot
+- DECISIONS
+- GitHub
+- ISO
+- LAF
+- LOGAN
+- Logan's
+- MCP
+- OpenAI
+- OpenAI Swarm
+- SURVEY-OPENAI-SWARM-2026-03-29
+- 'Yes'
+- agent
+- coordination
+- nodes
+- self
+- window
 ---
-
 # SPEC — Swarm Linear Gateway
 
 **Status:** Draft — awaiting Logan approval before any live-write credentials are issued

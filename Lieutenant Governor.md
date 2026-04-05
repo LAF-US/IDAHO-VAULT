@@ -1,4 +1,14 @@
 ---
+related:
+- Brad Little
+- David Leroy
+- Jack Riggs
+- Janice McGeachin
+- Jim Risch
+- Mark Ricks
+- Phil Batt
+- Scott Bedke
+authority: LOGAN
 ---
 Scott Bedke 2023-
 - Janice McGeachin 2019-2022

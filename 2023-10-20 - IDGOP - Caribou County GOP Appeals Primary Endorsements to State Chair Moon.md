@@ -1,6 +1,22 @@
 ---
 author:
-  - "Caribou County Republican Central Committee"
+- Caribou County Republican Central Committee
+related:
+- '208'
+- '221'
+- '547'
+- Bonneville County
+- Bonneville County Republican Central Committee
+- Caribou County
+- Caribou County Republican Central Committee
+- County Clerk
+- Dorothy Moon
+- GOP
+- Soda Springs
+- Trent Clark
+- election
+- primary election
+authority: LOGAN
 ---
 Friday, Oct. 20 , 2023                                  
 Contact Jill Stoor, Caribou County Clerk:  208-547-4324  

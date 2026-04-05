@@ -1,8 +1,30 @@
 ---
-outlet: "Idaho Press"
-url: "https://www.idahopress.com/news/local/idaho-state-approved-to-expand-meridian-campus/article_7bbad330-9d37-11ef-866d-ab6dec5b6b84.html"
+outlet: Idaho Press
+url: https://www.idahopress.com/news/local/idaho-state-approved-to-expand-meridian-campus/article_7bbad330-9d37-11ef-866d-ab6dec5b6b84.html
 author:
-  - "Emily White"
+- Emily White
+related:
+- Drive
+- Eagle
+- ISU
+- Idaho
+- Idaho Falls
+- Idaho Press
+- Idaho State University
+- Meridian
+- Pocatello
+- President
+- Twin Falls
+- assistant
+- city council
+- health care
+- hospitals
+- housing
+- infrastructure
+- medical school
+- nurses
+- therapists
+authority: LOGAN
 ---
 A bigger health science campus is coming to Meridian.
 

@@ -1,8 +1,16 @@
 ---
-source: "https://support.microsoft.com/en-us/office/sync-sharepoint-files-and-folders-c288e365-f097-424e-a3ae-799fb97c20e9"
-author:
-published:
+source: https://support.microsoft.com/en-us/office/sync-sharepoint-files-and-folders-c288e365-f097-424e-a3ae-799fb97c20e9
+author: null
+published: null
 created: 2026-03-30
+related:
+- '2026-03-30'
+- '365'
+- '800'
+- format
+- libraries
+- sign
+authority: LOGAN
 ---
 Sync the files in your Microsoft 365 or SharePoint site libraries so they’re always available on your computer, even when you’re offline.
 

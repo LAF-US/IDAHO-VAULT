@@ -1,5 +1,21 @@
 ---
 source: commit
+related:
+- CCA
+- Capitol Correspondents Association CCA Letter March 2026
+- Idaho
+- Idaho Education News
+- Idaho Legislature
+- Idaho Press
+- Idaho Press Club
+- Idaho Reports
+- Josh Tanner
+- Kevin Richert
+- Logan Finney
+- Melissa Davlin
+- President
+- Scott Grow
+authority: LOGAN
 ---
 The Capitol Correspondents Association (CCA) is the press credentialing body for the Idaho Legislature whose president Kevin Richert co-signed the March 2026 open-meetings letter to JFAC.
 

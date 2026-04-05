@@ -1,7 +1,58 @@
 ---
-author: "Logan Finney"
-outlet: "McClure Center"
+author: Logan Finney
+outlet: McClure Center
 URL: https://www.loganfinney.com/idaho-legislature-2020/3/30/tax-relief-fund-covid-19
+related:
+- '120'
+- '135'
+- '180'
+- '494'
+- Act
+- Boise
+- Brad Little
+- Caldwell
+- Department of Labor
+- Governor
+- House Minority Leader
+- House Revenue and Taxation
+- Idaho
+- Ilana Rubel
+- Jason Monks
+- Jim Rice
+- Logan Finney
+- McClure Center
+- Mike Moyle
+- NPR
+- Nampa
+- Oakley
+- PPE
+- Priscilla Giddings
+- Scott Bedke
+- South Dakota
+- Star
+- Tax Relief Fund
+- U.S. Supreme Court
+- White Bird
+- budget
+- cities
+- coronavirus
+- counties
+- executive order
+- first responders
+- fiscal year
+- formula
+- grocery tax
+- homeowners
+- money
+- online sales tax
+- property tax
+- sales tax
+- sales tax distribution formula
+- self
+- seniors
+- sine die
+- taxes
+authority: LOGAN
 ---
 ### _Governor appropriates $39.3 million for hospital equipment, supplies_
 

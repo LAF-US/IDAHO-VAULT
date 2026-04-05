@@ -1,4 +1,47 @@
 ---
+related:
+- 2023 legislative session
+- 2024 legislative session
+- '470'
+- '790'
+- Ada County
+- Attorney General
+- Boise
+- County Sheriff
+- DHW
+- Dave Jeppesen
+- Department of Administration
+- Department of Health and Welfare
+- Department of Insurance
+- Idaho
+- Idaho Capital Sun
+- Idaho Code
+- Idaho Health Data Exchange
+- Idaho Legislature
+- Joint Finance-Appropriations Committee
+- Joint Legislative Oversight Committee
+- Kyle Pfannenstiel
+- Medicaid
+- Mike Moyle
+- OPE
+- Office of Performance Evaluations
+- Speaker of the House
+- Washington
+- Your Health Idaho
+- budget
+- deliverables
+- diseases
+- dollars
+- emergency care
+- health care
+- legislative
+- legislative session
+- meeting
+- money
+- nonprofits
+- systems
+- utility
+authority: LOGAN
 ---
 Kyle Pfannenstiel, Idaho Capital Sun 
 ## Report, commissioned by Legislature, attributed lack of accountability in part to how state created data sharing service as nonprofit without clear oversight laws

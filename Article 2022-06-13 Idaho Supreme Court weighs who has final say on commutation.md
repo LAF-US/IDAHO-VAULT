@@ -1,4 +1,25 @@
 ---
+related:
+- Attorney General
+- Brad Little
+- Colleen Zahn
+- Commission of Pardons and Parole
+- Department of Correction
+- Deputy Attorney General
+- Governor
+- Idaho
+- Idaho Code
+- Idaho Constitution
+- Idaho County
+- Idaho Reports
+- Idaho Supreme Court
+- Joel
+- Logan Finney
+- attorneys
+- commutation
+- death row
+- warrants
+authority: LOGAN
 ---
 by Logan Finney, Idaho Reports
 

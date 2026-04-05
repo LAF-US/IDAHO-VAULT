@@ -1,7 +1,34 @@
 ---
 cmte:
-  - "House Judiciary, Rules and Administration"
-  - "Senate Judiciary and Rules"
+- House Judiciary, Rules and Administration
+- Senate Judiciary and Rules
+related:
+- '130'
+- '150'
+- '160'
+- '473'
+- '500'
+- '750'
+- CRC
+- Department of Correction
+- House Judiciary, Rules and Administration
+- Idaho
+- Josh Tewalt
+- Medicaid
+- Medicaid Expansion
+- North Idaho
+- Office of Performance Evaluations
+- Senate Judiciary and Rules
+- Texas
+- Twin Falls
+- county jails
+- housing
+- infrastructure
+- inmates
+- jails
+- meeting
+- self
+authority: LOGAN
 ---
 Joint House Judiciary, Rules and Administration & Senate Judiciary and Rules presentation from IDOC
 

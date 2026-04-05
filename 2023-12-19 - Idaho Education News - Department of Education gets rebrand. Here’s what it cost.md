@@ -1,9 +1,30 @@
 ---
 author:
-  - "Ryan Suppe"
+- Ryan Suppe
 outlet:
-  - "Idaho Education News"
+- Idaho Education News
 URL: https://www.idahoednews.org/top-news/department-of-education-gets-rebrand-heres-what-it-cost/
+related:
+- '200'
+- '298'
+- Ada County
+- Ada County Highway District
+- Boise
+- Boise School District
+- Debbie Critchfield
+- Idaho
+- Idaho Education News
+- Idaho Falls
+- Idaho Statesman
+- Ryan Suppe
+- Star
+- Superintendent of Public Instruction
+- Tamarack
+- University of Idaho
+- View
+- social media
+- website
+authority: LOGAN
 ---
 The Idaho Department of Education has a new look — a fresh logo and visual style to accompany State Superintendent of Public Instruction Debbie Critchfield’s first term.
 

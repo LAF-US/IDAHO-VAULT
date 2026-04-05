@@ -1,6 +1,43 @@
 ---
 author:
-  - "Logan Finney"
+- Logan Finney
+related:
+- 2022 legislative session
+- 2023-11-15 - IR Podcast - Finding Financing to Support Building Homes
+- AMI
+- Boise
+- Gerald Hunter
+- Grant
+- Idaho
+- Idaho Housing and Finance Association
+- Idaho Reports
+- Jason Lantz
+- Jeremy Pisca
+- Ketchum
+- Logan Finney
+- Low-Income Housing Tax Credit
+- Podcast
+- Treasure Valley
+- Workforce Housing Fund
+- 'Yes'
+- affordable housing
+- bridges
+- charter schools
+- counselors
+- economic development
+- first responders
+- homelessness
+- homes
+- housing
+- infrastructure
+- legislative
+- legislative session
+- lobbying
+- nurses
+- realtors
+- tax credits
+- teachers
+authority: LOGAN
 ---
 Interview for 2023-11-15 - IR Podcast - Finding Financing to Support Building Homes with Jason Lantz, marketing director for the Idaho Housing and Finance Association 
 

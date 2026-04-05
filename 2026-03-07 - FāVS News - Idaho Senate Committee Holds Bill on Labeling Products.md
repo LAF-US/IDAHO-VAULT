@@ -1,9 +1,43 @@
 ---
-source: "https://favs.news/idaho-bill-labeling-products-fetal-cell-lines-held/"
+source: https://favs.news/idaho-bill-labeling-products-fetal-cell-lines-held/
 author:
-  - "Logan Finney"
+- Logan Finney
 published: 2026-03-07
 created: 2026-03-27
+related:
+- '2026-03-27'
+- '501'
+- Ben Toews
+- Brian Lenney
+- CNN
+- California
+- Christian nationalism
+- DNA
+- Dan Foreman
+- FDA
+- FāVS
+- Human Resources
+- Idaho
+- Idaho Senate
+- James Ruchti
+- Jim Guthrie
+- Logan Finney
+- McCammon
+- Middleton
+- Moscow
+- Nampa
+- Pocatello
+- Senate State Affairs
+- Tammy Nichols
+- USA
+- University of Idaho
+- Washington
+- abortion
+- cancer
+- humans
+- journalists
+- religion
+authority: LOGAN
 ---
 ## Idaho bill to label products made with fetal cells dies in Senate committee
 

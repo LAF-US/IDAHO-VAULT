@@ -1,7 +1,21 @@
 ---
 author:
-  - "Department of Health and Welfare"
+- Department of Health and Welfare
 URL: https://healthandwelfare.idaho.gov/news/idaho-behavioral-health-plan-implementation-update
+related:
+- BPA
+- DHW
+- Dave Jeppesen
+- Department of Health and Welfare
+- Department of Juvenile Corrections
+- FOR
+- Idaho
+- MCO
+- Medicaid
+- coordination
+- health care
+- health insurance
+authority: LOGAN
 ---
 _NEWS RELEASE--FOR IMMEDIATE RELEASE      Date: December 7, 2023_
 

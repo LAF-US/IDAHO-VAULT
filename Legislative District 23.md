@@ -1,4 +1,23 @@
 ---
+related:
+- Ada County
+- Bert Brackett
+- Canyon County
+- Christy Zito
+- Elmore County
+- Jim Patrick
+- Kuna
+- Matt Bundy
+- Megan Blanksma
+- Melissa Durrant
+- Owyhee
+- Owyhee County
+- Stephen Hartgen
+- Tina Lambert
+- Todd Lakey
+- Twin Falls
+- Twin Falls County
+authority: LOGAN
 ---
 Owyhee County, southern parts of Canyon County & Ada County including Kuna
 - Formerly Owyhee County, Elmore County & part of Twin Falls County

@@ -1,9 +1,44 @@
 ---
 author:
-  - "Melissa Davlin"
+- Melissa Davlin
 outlet:
-  - "Idaho Reports"
+- Idaho Reports
 URL: https://blog.idahoreports.idahoptv.org/2023/11/01/podcast-opposition-to-the-lava-ridge-wind-project-with-sen-jim-risch/
+related:
+- '105'
+- '146'
+- Act
+- BLM
+- California
+- County Commissioners
+- Europe
+- INL
+- Idaho
+- Idaho Legislature
+- Idaho Reports
+- Jerome
+- Jerome County
+- Jim Risch
+- Lava Ridge Wind Project
+- Magic Valley
+- Melissa Davlin
+- Minidoka
+- Nevada
+- New York
+- President
+- RAC
+- Treasure Valley
+- U.S. Bureau of Land Management
+- Ukraine
+- abortion
+- birds
+- birds of prey
+- electricity
+- housing
+- money
+- nuclear energy
+- veto
+authority: LOGAN
 ---
 The proposed Lava Ridge Wind Project in remote Jerome County would add hundreds of wind turbines to public lands as part of President Biden's clean energy initiative. If it goes forward, the site would generate power from wind turbines hundreds of feet tall, with that power going to California and Nevada. But the proposal faces fierce opposition from Magic Valley residents, County Commissioners and the Idaho Legislature, with concerns ranging from land conservation to preserving the integrity and solemnity of the Minidoka Internment Camp National Historical Site. Senator Jim Risch joined me this week to discuss those concerns and his efforts to stop the project. 
 

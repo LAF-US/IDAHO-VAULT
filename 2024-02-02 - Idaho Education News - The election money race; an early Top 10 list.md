@@ -1,9 +1,70 @@
 ---
 author:
-  - "Kevin Richert"
+- Kevin Richert
 outlet:
-  - "Idaho Education News"
+- Idaho Education News
 URL: https://www.idahoednews.org/kevins-blog/the-money-race-an-early-top-10-list/
+related:
+- '105'
+- '106'
+- '110'
+- '150'
+- '155'
+- '170'
+- '279'
+- '310'
+- '539'
+- '568'
+- '574'
+- '602'
+- '700'
+- '750'
+- '764'
+- '860'
+- '980'
+- Abby Lee
+- Ammon
+- Ben Toews
+- Boise
+- Brent Regan
+- Bryan Smith
+- C. Scott Grow
+- Codi Galloway
+- Doyle Beck
+- Eagle
+- Freedom
+- Fruitland
+- GOP
+- House Education
+- Idaho
+- Idaho Chooses Life
+- Idaho Education News
+- Idaho Falls
+- Idaho Freedom Foundation
+- Idaho Power
+- Janice McGeachin
+- Jim Woodward
+- Joint Finance-Appropriations Committee
+- Josh Tanner
+- Kevin Richert
+- New Plymouth
+- Rick Just
+- Sagle
+- Scott Grow
+- Scott Herndon
+- Senate Education
+- Shawn Keough
+- Spokane
+- State Board of Education
+- Steve Berch
+- Ted Hill
+- connections
+- dollars
+- election
+- legislative
+- money
+- teachers
+authority: LOGAN
 ---
 As a contentious and costly election year begins, Idaho Education News will follow the dollars.
 

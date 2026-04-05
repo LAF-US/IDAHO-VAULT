@@ -1,4 +1,12 @@
 ---
+related:
+- Caldwell
+- House member
+- Sarah Chaney
+- election
+- primary election
+- redistricting
+authority: LOGAN
 ---
 Residence: Caldwell
 

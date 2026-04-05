@@ -1,7 +1,42 @@
 ---
-author: "Logan Finney"
-outlet: "McClure Center"
+author: Logan Finney
+outlet: McClure Center
 URL: https://www.loganfinney.com/idaho-legislature-2020/1/6/state-of-the-state
+related:
+- Advanced Opportunities
+- Boise
+- Boise State University
+- Brad Little
+- CTE
+- College of Eastern Idaho
+- Department of Juvenile Corrections
+- Eastern Idaho
+- Governor
+- Idaho
+- Idaho State University
+- Lewis-Clark State College
+- Logan Finney
+- McClure Center
+- Oakley
+- Opportunity Scholarship
+- Paul
+- Scott Bedke
+- State Board of Education
+- University of Idaho
+- administrative rules
+- broadband
+- budget
+- community colleges
+- construction
+- formula
+- grocery tax
+- money
+- school districts
+- supplemental levy
+- teacher career salary ladder
+- teachers
+- transportation
+authority: LOGAN
 ---
 BOISE — Governor Brad Little delivered his second State of the State address Monday, highlighting past achievements and calling for increased education spending amid an otherwise lean budget year. The governor’s proposed budget calls for improved K-3 literacy, increased teacher salaries, and investments in specific higher education programs. 
 

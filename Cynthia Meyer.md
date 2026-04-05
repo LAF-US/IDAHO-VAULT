@@ -1,4 +1,17 @@
 ---
+related:
+- 1st Judicial District
+- Board of Trustees - NIC
+- Brad Little
+- Idaho
+- Idaho Supreme Court
+- John Stegner
+- Kootenai
+- Kootenai County
+- NIC
+- North Idaho
+- North Idaho College
+authority: LOGAN
 ---
 Residence: Kootenai County
 - Appointed to Idaho Supreme Court to replace John Stegner by Gov. Brad Little

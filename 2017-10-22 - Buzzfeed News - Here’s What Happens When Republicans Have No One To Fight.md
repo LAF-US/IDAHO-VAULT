@@ -1,9 +1,121 @@
 ---
 author:
-  - "Anne Helen Petersen"
+- Anne Helen Petersen
 outlet:
-  - "Buzzfeed News"
+- Buzzfeed News
 URL: https://www.buzzfeednews.com/article/annehelenpetersen/wackadoodles-north-idaho
+related:
+- '125'
+- '130'
+- '154'
+- '500'
+- '600'
+- Alex Barron
+- Anne Helen Petersen
+- Aryan Nations
+- Barry Goldwater
+- Bible
+- Bill of Rights
+- Bjorn Handeen
+- Bob Nonini
+- Boise
+- Brad Corkill
+- Brent Regan
+- CDA
+- California
+- Christa Hazel
+- Coeur d'Alene
+- Coeur d'Alene Press
+- EPA
+- Facebook
+- Freedom
+- GOP
+- Gibson
+- Governor
+- Hayden
+- Heather Scott
+- Home
+- IRS
+- Idaho
+- Idaho Freedom Foundation
+- Idaho Republican Party
+- John Goedde
+- Kootenai
+- Kootenai County
+- Kootenai County Republican Central Committee
+- Larry Craig
+- Larry LaRocco
+- Lincoln
+- Los Angeles
+- Malheur National Wildlife Refuge
+- Mel Gibson
+- Montana
+- NFL
+- NOT
+- NRA
+- North Idaho
+- Orange County
+- Oregon
+- PAC
+- Phil Hart
+- President
+- RINOs
+- Raúl Labrador
+- Redoubt
+- Richard Butler
+- Rose
+- Ruby
+- Russia
+- Sandpoint
+- Shawn Keough
+- Spokesman-Review
+- Todd Banducci
+- Tommy Ahlquist
+- USC
+- View
+- Virginia
+- Vito Barbieri
+- Walt Minnick
+- Washington
+- Wyoming
+- abortion
+- acronym
+- cancer
+- character
+- children
+- churches
+- city council
+- construction
+- election
+- housing
+- humans
+- hunters
+- individuals
+- infrastructure
+- lakes
+- legislative
+- mayor
+- meeting
+- money
+- numbers
+- parents
+- police
+- primary election
+- public schools
+- racism
+- raw milk
+- school board
+- school choice
+- self
+- social media
+- unions
+- vocal
+- voice
+- voiced
+- voting
+- website
+- word
+authority: LOGAN
 ---
 ### Welcome to Idaho. Now Go Home.
 

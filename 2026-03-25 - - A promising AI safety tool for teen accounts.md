@@ -1,13 +1,24 @@
 ---
-source: "https://www.mountainstatespolicy.org/post/a-promising-ai-safety-tool-for-teen-accounts"
+source: https://www.mountainstatespolicy.org/post/a-promising-ai-safety-tool-for-teen-accounts
 author:
-  - "Sebastian Griffin"
+- Sebastian Griffin
 published: 2025-12-18
 created: 2026-03-25
 title: 2026-03-25 - - A promising AI safety tool for teen accounts
 linter-yaml-title-alias: 2026-03-25 - - A promising AI safety tool for teen accounts
+related:
+- '2026-03-25'
+- Canada
+- Facebook
+- Idaho
+- Sebastian Griffin
+- assistant
+- minors
+- parents
+- social media
+- systems
+authority: LOGAN
 ---
-
 ![](https://static.wixstatic.com/media/a52f4c_7ee8beedbf634443b8451d308386f2f7~mv2.jpeg/v1/fill/w_925,h_551,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/a52f4c_7ee8beedbf634443b8451d308386f2f7~mv2.jpeg)
 
 In October, Meta announced a new [“teen AI safety” approach for Instagram, Facebook, and its other platforms.](https://about.fb.com/news/2025/10/teen-ai-safety-approach/) The headline change is simple but important: parents will soon have a built-in "kill switch" for one-on-one chats between their teens and AI characters. Additionally, it'll provide better insight into what their teens are doing with AI on Meta's apps.

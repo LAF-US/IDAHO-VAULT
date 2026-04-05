@@ -1,9 +1,57 @@
 ---
 author:
-  - "Clark Corbin"
+- Clark Corbin
 outlet:
-  - "Idaho Capital Sun"
+- Idaho Capital Sun
 URL: https://idahocapitalsun.com/2021/10/06/a-look-inside-idahos-unredacted-mcgeachin-task-force-files/
+related:
+- '232'
+- '238'
+- '300'
+- '500'
+- '560'
+- '602'
+- '700'
+- ABC
+- Audrey Dutton
+- Boise
+- Boise State University
+- Christina Lords
+- Clark Corbin
+- Critical Race Theory
+- First Amendment
+- Florida
+- GOP
+- Governor
+- HOW
+- Idaho
+- Idaho Capital Sun
+- Idaho Education News
+- Idaho Press
+- Idaho Press Club
+- Idaho Statesman
+- Janice McGeachin
+- Kelcie Moseley-Morris
+- NEVER
+- NOT
+- Star
+- 'Yes'
+- books
+- children
+- costs
+- dollars
+- election
+- math
+- money
+- numbers
+- parents
+- public schools
+- self
+- teachers
+- voiced
+- website
+- word
+authority: LOGAN
 ---
 ### **Most comments push back against the “indoctrination” task force, which met at the Idaho Statehouse in Boise**
 

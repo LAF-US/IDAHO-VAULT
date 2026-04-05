@@ -1,8 +1,18 @@
 ---
-source: "https://developers.openai.com/codex/mcp#connect-codex-to-an-mcp-server"
-author:
-published:
+source: https://developers.openai.com/codex/mcp#connect-codex-to-an-mcp-server
+author: null
+published: null
 created: 2026-03-29
+related:
+- '2026-03-29'
+- CLI
+- GitHub
+- IDE
+- MCP
+- OpenAI
+- TUI
+- codex
+authority: LOGAN
 ---
 Model Context Protocol (MCP) connects models to tools and context. Use it to give Codex access to third-party documentation, or to let it interact with developer tools like your browser or Figma.
 

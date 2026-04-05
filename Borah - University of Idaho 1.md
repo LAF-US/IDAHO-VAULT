@@ -1,4 +1,22 @@
 ---
+related:
+- '441'
+- About
+- Eleanor Roosevelt
+- Frank Church
+- Governor
+- Harvard
+- Idaho
+- Illinois
+- Kellogg
+- Paris
+- Salmon
+- U.S. Senate
+- University of Idaho
+- William Borah
+- books
+- meeting
+authority: LOGAN
 ---
 # Senator William Borah
 

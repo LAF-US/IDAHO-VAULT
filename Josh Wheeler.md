@@ -1,4 +1,13 @@
 ---
+related:
+- Chad Christensen
+- House member
+- Idaho
+- Idaho Main Street Caucus
+- Legislative District 35
+- election
+- primary election
+authority: LOGAN
 ---
 Residence: 
 

@@ -1,9 +1,72 @@
 ---
 author:
-  - "Betsy Russell"
+- Betsy Russell
 outlet:
-  - "Idaho Press"
+- Idaho Press
 URL: https://www.idahopress.com/news/local/lawmakers-dubious-as-local-option-proposals-resurface/article_edddb39f-b653-5e56-bfea-d5c599046166.html
+related:
+- About
+- Alaska
+- BSU
+- Bannock County
+- Betsy Russell
+- Boise
+- Boise State University
+- Brent Crane
+- Canyon County
+- Chubbuck
+- Collins
+- County Sheriff
+- Donnelly
+- GOP
+- Gary Collins
+- House Majority Leader
+- Idaho
+- Idaho Association of Counties
+- Idaho Constitution
+- Idaho Falls
+- Idaho Press
+- Idaho Supreme Court
+- Kootenai
+- Kootenai County
+- Mike Moyle
+- Moscow
+- Nampa
+- Nez Perce County
+- North Idaho
+- Oakley
+- Pocatello
+- Rathdrum
+- Robert Anderst
+- Sandpoint
+- Scott Bedke
+- Seth Grigg
+- Star
+- Sun Valley
+- TAX
+- Twin Falls
+- Twin Falls County
+- Victor
+- bonds
+- cities
+- costs
+- counties
+- election
+- fire
+- general election
+- infrastructure
+- jails
+- legislative
+- numbers
+- police
+- property tax
+- roads
+- sales tax
+- supermajority
+- taxes
+- threshold
+- voting
+authority: LOGAN
 ---
 BOISE — Idaho counties and cities have been pleading with state lawmakers for decades to give them another way of funding basic local services and projects, from jails to courtrooms to roads, besides the much-hated property tax: Local-option sales taxes.
 

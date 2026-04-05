@@ -1,4 +1,15 @@
 ---
+related:
+- CWD
+- CWD Management Area
+- Idaho
+- caribou
+- deer
+- elk
+- moose
+- rabies
+- similar but different
+authority: LOGAN
 ---
 CWD Management Area
 

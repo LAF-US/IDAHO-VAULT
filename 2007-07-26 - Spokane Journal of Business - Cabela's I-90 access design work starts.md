@@ -1,8 +1,37 @@
 ---
-author: "Mike McLean"
+author: Mike McLean
 outlet:
-  - "Spokane Journal of Business"
+- Spokane Journal of Business
 URL: https://www.spokanejournal.com/local-news/cabelas-i-90-access-design-work-starts/
+related:
+- '130'
+- '200'
+- '550'
+- California
+- Coeur d'Alene
+- Franklin
+- HDR
+- ITD
+- Idaho
+- Idaho Legislature
+- Interstate 84
+- Interstate 90
+- MPC
+- Nampa
+- Post Falls
+- Spokane
+- Spokane Journal of Business
+- State Line
+- View
+- Washington
+- construction
+- costs
+- infrastructure
+- money
+- sales tax
+- taxes
+- utility
+authority: LOGAN
 ---
 Engineering work has begun for a planned new freeway interchange that would serve the big Cabela's Inc. sporting goods store that's under construction on the west edge of Post Falls.
 

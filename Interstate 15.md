@@ -1,4 +1,43 @@
 ---
+related:
+- Arimo
+- Blackfoot
+- Blackfoot River
+- Blackrock
+- Cherry Creek
+- Chubbuck
+- Downey
+- Dubois
+- Eastern Idaho
+- Fort Hall
+- Fort Hall Indian Reservation
+- Gibson
+- Hamer
+- Humphrey
+- Idaho
+- Idaho Falls
+- Inkom
+- Malad City
+- Malad River
+- Marsh Valley
+- McCammon
+- Monida Pass
+- Montana
+- Pocatello
+- Portneuf
+- Roberts
+- Sage Junction
+- Shelley
+- Southeast Idaho
+- Spencer
+- US 20
+- US 26
+- US 30
+- US 91
+- Utah
+- Virginia
+- Woodruff
+authority: LOGAN
 ---
 Primary north-south interstate in Southeast Idaho and Eastern Idaho 
 

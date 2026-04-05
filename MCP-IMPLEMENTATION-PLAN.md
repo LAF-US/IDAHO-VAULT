@@ -1,6 +1,14 @@
 ---
 updated: 2026-03-25
 status: active
+related:
+- '2026-03-25'
+- MANIFEST-SPEC
+- MCP
+- coordination
+- sign
+- template
+authority: LOGAN
 ---
 # MCP IMPLEMENTATION PLAN
 

@@ -2,9 +2,19 @@
 date created: Saturday, March 28th 2026, 5:27:10 pm
 date modified: Saturday, March 28th 2026, 5:28:51 pm
 author:
-  - "ChatGPT"
+- ChatGPT
+related:
+- AGENTIC
+- AGENTIC SWARM
+- ChatGPT
+- DECISIONS
+- DOWN
+- NOT
+- agent
+- coordination
+- systems
+authority: LOGAN
 ---
-
 # AGENTIC SWARM SYSTEMS — CAPABILITIES, LIMITS, AND TRADEOFFS
 
 ## OVERVIEW

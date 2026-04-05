@@ -1,3 +1,30 @@
+---
+authority: LOGAN
+related:
+- '113'
+- '2026-03-15'
+- CLAUDE
+- DECISIONS
+- HANDOFF-ADMIN-2026-03-15
+- Idaho
+- LEVELSET
+- LEVELSET-CURRENT
+- LEVELSET-v2
+- LEVELSET-v2-PROMPT
+- LEVELSET-v2-idaho-scraper
+- LEVELSET-v3.2.6-idaho-scraper
+- LEVELSET-v3.2.6.1-PROMPT
+- LOGAN
+- Logan's
+- PROJECT
+- README
+- agent
+- definition
+- infrastructure
+- template
+- wayback-preserve-2026-03-15
+---
+
 LEVELSET PERMANENT: CODE AUTHORITY — 2026-03-15
 
 ---

@@ -1,3 +1,68 @@
+---
+authority: LOGAN
+related:
+- 1Password
+- 2023-12-19 - GIAC meeting
+- '2026-04-02'
+- '218'
+- '260'
+- AGENTS
+- API
+- Act
+- Ada County
+- Boise
+- Brad Little
+- CLAUDE
+- CLI
+- CONSTITUTION
+- Copilot
+- DAILY NOTE
+- DAILY NOTE TEMPLATE
+- DECISIONS
+- DOS
+- GEMINI
+- GitHub
+- HFS
+- Idaho
+- Idaho Legislature
+- Idaho Public Television
+- Idaho Reports
+- Idaho Statesman
+- LEVELSET
+- Logan Finney
+- Logan's
+- MCP
+- OBSIDIAN DAILY NOTE
+- Obsidian
+- PROJECT
+- PROTOCOL
+- README
+- SSH
+- THE
+- The world is quiet here
+- UTC
+- VAULT-METADATA-STANDARD
+- VAULT-TEMPLATES
+- VAULT-ZONES
+- _AUX
+- agent
+- codex
+- coordination
+- doctrine
+- election
+- emoji
+- format
+- infrastructure
+- legislative
+- links
+- meeting
+- passwords
+- persona
+- syntax
+- systems
+- template
+---
+
 # VAULT-CONVENTIONS Ã¢â‚¬â€ Shared Reference for All Agents
 
 

@@ -1,4 +1,12 @@
 ---
+related:
+- Basin
+- Schweitzer ski resort
+- Soldier
+- Sun Valley
+- Sun Valley ski resort
+- Tamarack
+authority: LOGAN
 ---
 Bogus Basin ski resort
 

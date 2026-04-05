@@ -1,4 +1,17 @@
 ---
+related:
+- Coeur d'Alene
+- Coeur d'Alene Lake Advisory Committee
+- Dirk Kempthorne
+- Governor
+- Idaho
+- Jim Risch
+- Lake
+- Lieutenant Governor
+- North Idaho
+- North Idaho Republicans
+- Senate member
+authority: LOGAN
 ---
 Residence: Coeur d'Alene 
 - North Idaho Republicans founding member

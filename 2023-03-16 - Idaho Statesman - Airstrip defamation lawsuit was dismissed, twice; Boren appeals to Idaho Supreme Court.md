@@ -1,8 +1,31 @@
 ---
 outlet:
-  - "Idaho Statesman"
-author: "Nicole Blanchard"
+- Idaho Statesman
+author: Nicole Blanchard
 URL: https://www.idahostatesman.com/news/northwest/idaho/article273189600.html
+related:
+- Blaine County
+- Blaine County Housing Authority
+- Blanchard
+- Boise
+- Custer
+- Custer County
+- First Amendment
+- Idaho
+- Idaho Statesman
+- Idaho Supreme Court
+- Nicole Blanchard
+- Sawtooth National Recreation Area
+- Stanley
+- Strategic Lawsuit Against Public Participation
+- U.S. Congress
+- anti-SLAPP
+- attorneys
+- cancer
+- costs
+- initial
+- ranch
+authority: LOGAN
 ---
 Idaho businessman Mike Boren has elevated a twice-dismissed defamation lawsuit, against critics of his private airstrip in the Sawtooth Range, to the Idaho Supreme Court. 
 

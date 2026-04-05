@@ -1,5 +1,29 @@
 ---
 updated: 2026-03-15
+related:
+- '2026-03-15'
+- '979'
+- AGENTS
+- ARCHITECTURE
+- CLAUDE
+- CONSTITUTION
+- Copilot
+- DECISIONS
+- FLAG
+- GitHub
+- LEVELSET
+- LOGAN
+- Logan's
+- MCP
+- NEW
+- NOT
+- ONE
+- PROTOCOL
+- QUESTIONS
+- agent
+- coordination
+- infrastructure
+authority: LOGAN
 ---
 # HANDOFF: CODE AUTHORITY → ADMINISTRATION → GITHUB COPILOT
 

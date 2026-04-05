@@ -1,4 +1,15 @@
 ---
+related:
+- '208'
+- '522'
+- Custer
+- Drive
+- Eastern Idaho
+- Idaho
+- Idaho Falls
+- Lemhi
+- Teton
+authority: LOGAN
 ---
 Director: James Corbett  
 1250 Hollipark Drive  

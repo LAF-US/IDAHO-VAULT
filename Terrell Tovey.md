@@ -1,4 +1,12 @@
 ---
+related:
+- Bannock County
+- Elaine Smith
+- Idaho
+- Idaho Republican Party
+- Idaho State University
+- Pocatello
+authority: LOGAN
 ---
 Residence: Pocatello 
 Graduate: Idaho State University 

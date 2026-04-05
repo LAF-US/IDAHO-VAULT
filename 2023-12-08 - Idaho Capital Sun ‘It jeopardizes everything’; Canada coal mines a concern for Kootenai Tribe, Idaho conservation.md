@@ -1,9 +1,49 @@
 ---
 author:
-  - "Mia Maldonado"
+- Mia Maldonado
 outlet:
-  - "Idaho Capital Sun"
+- Idaho Capital Sun
 URL: https://idahocapitalsun.com/2023/12/08/it-jeopardizes-everything-canada-coal-mines-a-concern-for-kootenai-tribe-idaho-conservation/
+related:
+- '150'
+- '300'
+- '400'
+- '500'
+- Alaska
+- Basin
+- Bonners Ferry
+- Canada
+- Department of Environmental Quality
+- Elk River
+- GDP
+- Idaho
+- Idaho Capital Sun
+- Idaho Conservation League
+- Jim Risch
+- Kootenai
+- Kootenai Tribe
+- Lake
+- Montana
+- North Idaho
+- States Newsroom
+- U.S. Congress
+- University of Idaho
+- Washington
+- chain
+- construction
+- dams
+- fish
+- hatchery
+- infrastructure
+- lakes
+- rivers
+- species
+- threshold
+- transportation
+- tribes
+- water
+- website
+authority: LOGAN
 ---
 ## Kootenai Tribe, Idaho Conservation League say selenium pollution from British Columbia coal mines pose risk to fish, human health
 

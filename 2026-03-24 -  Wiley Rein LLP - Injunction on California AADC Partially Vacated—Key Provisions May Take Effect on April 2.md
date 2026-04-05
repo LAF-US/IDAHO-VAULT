@@ -1,12 +1,31 @@
 ---
-source: "https://www.wiley.law/alert-Injunction-on-California-AADC-Partially-Vacated-Key-Provisions-May-Take-Effect-on-April-2"
-author:
-published:
+source: https://www.wiley.law/alert-Injunction-on-California-AADC-Partially-Vacated-Key-Provisions-May-Take-Effect-on-April-2
+author: null
+published: null
 created: 2026-03-26
-title: 2026-03-24 -  Wiley Rein LLP - Injunction on California AADC Partially Vacated—Key Provisions May Take Effect on April 2
-linter-yaml-title-alias: 2026-03-24 -  Wiley Rein LLP - Injunction on California AADC Partially Vacated—Key Provisions May Take Effect on April 2
+title: 2026-03-24 -  Wiley Rein LLP - Injunction on California AADC Partially Vacated—Key
+  Provisions May Take Effect on April 2
+linter-yaml-title-alias: 2026-03-24 -  Wiley Rein LLP - Injunction on California AADC
+  Partially Vacated—Key Provisions May Take Effect on April 2
+related:
+- '2026-03-24'
+- '2026-03-26'
+- Act
+- California
+- Consumer Price Index
+- LLP
+- PIF
+- attorneys
+- broadband
+- children
+- definition
+- district court
+- minors
+- parents
+- sign
+- window
+authority: LOGAN
 ---
-
 Alert March 24, 2026
 
 March 24, 2026

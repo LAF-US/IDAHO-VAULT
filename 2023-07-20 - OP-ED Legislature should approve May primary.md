@@ -1,6 +1,24 @@
 ---
 author:
-  - "Idaho Main Street Caucus"
+- Idaho Main Street Caucus
+related:
+- 2023 legislative session
+- 2024 legislative session
+- Brad Little
+- Dorothy Moon
+- Idaho
+- Idaho Main Street Caucus
+- Idaho Republican Party
+- bonds
+- central committees
+- election
+- legislative
+- legislative session
+- meeting
+- money
+- presidential primary
+- voice
+authority: LOGAN
 ---
 With 10 declared candidates, the 2024 Republican Presidential Primary represents a true choice during the upcoming election. Unlike the Democrats who’re settling for Biden, Republicans will have an opportunity to make their voice heard in future primaries. But not in Idaho.
 

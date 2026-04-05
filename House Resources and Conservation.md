@@ -1,4 +1,26 @@
 ---
+related:
+- Britt Raybould
+- Charlie Shepherd
+- Douglas Pickett
+- Dustin Manwaring
+- Jack Nelsen
+- Jerald Raymond
+- John Vander Woude
+- Josh Tanner
+- Judy Boyle
+- Julie Yamamoto
+- Lauren Necochea
+- Megan Blanksma
+- Melissa Durrant
+- Mickelsen
+- Ned Burns
+- Raymond
+- Ron Mendive
+- Soñia Galaviz
+- Stephanie Mickelsen
+- Ted Hill
+authority: LOGAN
 ---
 # Roster
 ## 2023 Members

@@ -1,12 +1,28 @@
 ---
-title: "Factory"
+title: Factory
 updated: 2026-03-29
 status: stub
 authority: perplexity
 doc_class: organization
 url: https://factory.ai
+related:
+- '2026-03-29'
+- BIG
+- BIG IFS — UNIFIED SWARM
+- CLI
+- CrewAI
+- GitHub
+- IFS
+- Logan Finney
+- Obsidian
+- OpenAI
+- OpenAI Swarm
+- R&D
+- UNIFIED
+- agent
+- infrastructure
+- web
 ---
-
 # Factory
 
 **Factory** is an agent-native development platform built around task-specific AI agents called **Droids** that automate coding, testing, review, migrations, and broader software-delivery tasks across CLI, web, Slack/Teams, and project management tools.

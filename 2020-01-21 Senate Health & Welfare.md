@@ -1,5 +1,14 @@
 ---
-cmte: "Senate Health and Welfare"
+cmte: Senate Health and Welfare
+related:
+- Dorothy Moon
+- Fred Martin
+- Senate Health and Welfare
+- definition
+- hemp
+- marijuana
+- nurses
+authority: LOGAN
 ---
 Senate Health and Welfare – Jan 21
 

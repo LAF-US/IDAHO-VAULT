@@ -1,4 +1,12 @@
 ---
+related:
+- Coeur d'Alene
+- Kootenai
+- Kootenai County
+- Kootenai County Republican Central Committee
+- Secretary of State
+- Senate member
+authority: LOGAN
 ---
 Residence: Coeur d'Alene
 - Former nurse

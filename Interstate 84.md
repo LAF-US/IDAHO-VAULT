@@ -1,4 +1,48 @@
 ---
+related:
+- '184'
+- Bliss
+- Boise
+- Burley
+- Caldwell
+- Declo
+- Eagle
+- Fruitland
+- Glenns Ferry
+- Gooding
+- Greenwood
+- Hagerman
+- Hammett
+- Heyburn
+- Home
+- Idahome
+- Interstate 86
+- Jerome
+- Kimberly
+- King Hill
+- Kuna
+- Magic Valley
+- Meridian
+- Middleton
+- Minidoka
+- Moss
+- Mountain Home
+- Nampa
+- New Plymouth
+- Oregon
+- Payette
+- Sand Hollow
+- Stone
+- Treasure Valley
+- Twin Falls
+- US 20
+- US 26
+- US 30
+- US 93
+- US 95
+- Utah
+- Wendell
+authority: LOGAN
 ---
 Primary east-west interstate in Treasure Valley & Magic Valley
 

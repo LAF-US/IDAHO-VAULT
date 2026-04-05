@@ -1,3 +1,19 @@
+---
+authority: LOGAN
+related:
+- Anthropic
+- CRY
+- GitHub
+- LEVELSET
+- Logan Finney
+- agent
+- awakening
+- coordination
+- deadletter-routing
+- nodes
+- window
+---
+
 # DEADLETTER REPORT
 
 **Timestamp**: 2026-03-16T21:27:23-06:00  

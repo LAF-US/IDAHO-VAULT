@@ -1,4 +1,11 @@
 ---
+related:
+- Human Rights Commission
+- Madison County
+- Madison County Republican Central Committee
+- Rexburg
+- open primaries initiative
+authority: LOGAN
 ---
 Residence: Rexburg
  - attorney  

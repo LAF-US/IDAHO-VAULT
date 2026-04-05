@@ -1,13 +1,36 @@
 ---
-source: "https://www.mountainstatespolicy.org/post/shazam-idaho-lawmakers-still-have-time-to-fix-the-social-media-bill"
+source: https://www.mountainstatespolicy.org/post/shazam-idaho-lawmakers-still-have-time-to-fix-the-social-media-bill
 author:
-  - "Chris Cargill"
+- Chris Cargill
 published: 2026-03-13
 created: 2026-03-25
-title: 2026-03-13 - - Shazam! Idaho lawmakers still have time to fix the social media bill
-linter-yaml-title-alias: 2026-03-13 - - Shazam! Idaho lawmakers still have time to fix the social media bill
+title: 2026-03-13 - - Shazam! Idaho lawmakers still have time to fix the social media
+  bill
+linter-yaml-title-alias: 2026-03-13 - - Shazam! Idaho lawmakers still have time to
+  fix the social media bill
+related:
+- '2026-03-25'
+- '542'
+- Act
+- Attorney General
+- Chris Cargill
+- Facebook
+- Idaho
+- Twitter
+- YouTube
+- age verification
+- algorithm
+- child protection
+- children
+- hackers
+- individuals
+- minors
+- numbers
+- parents
+- social media
+- systems
+authority: LOGAN
 ---
-
 Idaho lawmakers are right to take the harms of social media seriously. Parents across the state see how addictive design features, targeted advertising, and algorithm-driven feeds can affect children. The impulse behind [House Bill 542—the](https://legislature.idaho.gov/sessioninfo/2026/legislation/H0542/) [*Stop Harms from Addictive Social Media Act*](https://legislature.idaho.gov/sessioninfo/2026/legislation/H0542/) *(what lawmakers are calling the Shazam act)* —comes from a legitimate concern: protecting kids online.
 
 ![3D icons of social media apps, including TikTok, Twitter, Facebook, YouTube, Instagram, and LinkedIn, on a blue background.](https://static.wixstatic.com/media/nsplsh_292aec31347f429da1574c35ad007738~mv2.jpg/v1/fill/w_454,h_239,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/nsplsh_292aec31347f429da1574c35ad007738~mv2.jpg)

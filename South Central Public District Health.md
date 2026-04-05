@@ -1,4 +1,15 @@
 ---
+related:
+- '208'
+- '737'
+- Gooding
+- Jerome
+- Lincoln
+- Magic Valley
+- Minidoka
+- Twin Falls
+- Washington
+authority: LOGAN
 ---
 District Director: Melody Bowyer  
 1020 Washington Street N.  

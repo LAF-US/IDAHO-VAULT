@@ -1,5 +1,8 @@
 ---
 date: 1913-01-01
+related:
+- Washington
+authority: LOGAN
 ---
 !william-e-borah-4.jpg
 

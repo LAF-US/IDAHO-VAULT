@@ -1,9 +1,31 @@
 ---
 outlet:
-  - "Idaho State Journal"
+- Idaho State Journal
 url: https://www.idahostatejournal.com/freeaccess/opinion-beware-of-reading-time-with-the-queens/article_0366ad88-b921-11ed-ab33-7f01a65b72a3.html
 author:
-  - "Mike Ewing"
+- Mike Ewing
+related:
+- AMI
+- Christopher Rufo
+- Europe
+- Idaho
+- Idaho State Journal
+- Michelle
+- Pocatello
+- San Francisco
+- Southeast Idaho
+- Thomas
+- 'Yes'
+- YouTube
+- books
+- children
+- definition
+- drag
+- end goal
+- pair
+- religion
+- teachers
+authority: LOGAN
 ---
 If you wonder who thinks it’s a good idea for adult drag queens to perform for young children, 3 to 8 years old, you might want to read an article titled, “In the War to Destroy Society, Drag Queens are the Shock Troops” by Paula Rinehart, The Federalist, Jan. 23, 2023. Rinehart draws heavily from an article titled “The Real Story Behind Drag Queen Story Hour” by Christopher Rufo, City-Journal, October 2022. Both articles include additional references to writings of authors — mostly university professors, list attached below. Here’s some background.
 

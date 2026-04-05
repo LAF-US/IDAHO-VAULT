@@ -1,3 +1,26 @@
+---
+authority: LOGAN
+related:
+- '300'
+- CSS
+- CSV
+- DOM
+- ETL
+- Obsidian
+- PDF
+- PERPLEXITY
+- TXT
+- URI
+- ZIP
+- assistant
+- format
+- humans
+- index
+- links
+- math
+- web
+---
+
 PERPLEXITY REPORT on Claude exporting 3/28/2026
 
 Developers tend to regret “lightweight” Claude export hacks (bookmarklets, single‑chat extensions, print‑to‑PDF, or asking Claude to reformat its own logs) once they hit hundreds of chats, because those methods are brittle, incomplete, and impossible to automate; the robust setups that emerge instead treat Claude as a data source in a proper ETL pipeline: bulk JSON exports → normalization → database or files → search/indexing. [github](https://github.com/agarwalvishal/claude-chat-exporter)

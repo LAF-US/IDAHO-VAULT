@@ -1,8 +1,28 @@
 ---
 author:
-  - "Ruth Brown"
+- Ruth Brown
 outlet:
-  - "Idaho Reports"
+- Idaho Reports
+related:
+- '204'
+- '206'
+- Brad Little
+- Division of Occupational and Professional Licenses
+- Idaho
+- Idaho Legislature
+- Idaho Reports
+- Idaho Supreme Court
+- Office of Administrative Rules Coordinator
+- Ruth Brown
+- Speaker of the House
+- State Athletic Commission
+- administrative rules
+- legislative
+- legislative session
+- sign
+- sine die
+- veto
+authority: LOGAN
 ---
 _By Ruth Brown, Idaho Reports_ 
 

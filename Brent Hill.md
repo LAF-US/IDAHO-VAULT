@@ -1,7 +1,15 @@
 ---
-residence: "Rexburg"
+residence: Rexburg
+related:
+- Legislative District 34
+- Madison High School
+- National Institute for Civil Discourse
+- President
+- Rexburg
+- Rigby
+- Senate President Pro Tempore
+authority: LOGAN
 ---
-
 Graduate: Madison High School
 
 National Institute for Civil Discourse Next Generation Program Director

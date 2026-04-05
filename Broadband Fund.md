@@ -1,1 +1,12 @@
+---
+authority: LOGAN
+related:
+- Broadband Advisory Board
+- Idaho
+- Idaho Code
+- broadband
+- economic development
+- infrastructure
+---
+
 "for the purpose of providing financial assistance in broadband infrastructure to promote equal access in economic development, public safety, telehealth, and education. Expenditures from the fund will be prioritized based on the statewide broadband plan developed by the Idaho Broadband Advisory Board established pursuant to section 67-4761, Idaho Code, and must be approved by the board." (HB127) 

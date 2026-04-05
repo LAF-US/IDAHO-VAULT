@@ -1,6 +1,37 @@
 ---
 cmte:
-  - "House Judiciary, Rules and Administration"
+- House Judiciary, Rules and Administration
+related:
+- '144'
+- Attorney General
+- Bruce Skaug
+- Deputy Attorney General
+- Dianna David
+- House Judiciary, Rules and Administration
+- Idaho
+- Ilana Rubel
+- Jaron Crane
+- John Gannon
+- John Shirts
+- Josh Tewalt
+- Murphy
+- Nampa
+- SCOTT
+- South Carolina
+- Twin Falls
+- artificial intelligence
+- budget
+- construction
+- costs
+- definition
+- dollars
+- judges
+- law enforcement
+- police
+- sign
+- threshold
+- voice
+authority: LOGAN
 ---
 RS 31863 – Judicial Salaries – Bruce Skaug
 

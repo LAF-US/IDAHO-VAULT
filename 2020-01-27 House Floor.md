@@ -1,5 +1,22 @@
 ---
-cmte: "Idaho House of Representatives"
+cmte: Idaho House of Representatives
+related:
+- '313'
+- '315'
+- '316'
+- '318'
+- '321'
+- '322'
+- '331'
+- FDA
+- HCR
+- Idaho
+- Idaho House of Representatives
+- STEM
+- presidential primary
+- voice
+- voice vote
+authority: LOGAN
 ---
 House Floor - Jan 27
 

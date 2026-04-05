@@ -1,7 +1,36 @@
 ---
-author: "Logan Finney"
-outlet: "Idaho Reports"
+author: Logan Finney
+outlet: Idaho Reports
 URL: https://blog.idahoreports.idahoptv.org/2023/11/08/chronic-wasting-disease-detected-in-new-meadows-mule-deer/
+related:
+- CWD
+- Department of Fish and Game
+- Idaho
+- Idaho Reports
+- Logan Finney
+- Meadows
+- New Meadows
+- Riggins
+- Slate Creek
+- Weiser
+- White Bird
+- animals
+- caribou
+- chain
+- chronic wasting disease
+- coordination
+- deer
+- diseases
+- elk
+- humans
+- hunters
+- hunting
+- initial
+- mad cow disease
+- moose
+- mule deer
+- prion
+authority: LOGAN
 ---
 The Idaho Department of Fish and Game announced Wednesday it received test results confirming another case of chronic wasting disease, the first outside of the Riggins area where the illness was first detected in Idaho. 
 

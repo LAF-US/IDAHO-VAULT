@@ -1,3 +1,15 @@
+---
+authority: LOGAN
+related:
+- '2026-03-15'
+- LEVELSET
+- PRIVATE
+- PUBLIC
+- coordination
+- deliverables
+- format
+---
+
 # IDAHO-VAULT — Shared Constitutional Framework
 
 This file governs all Claude and Claude Code conversations operating on this repository. Every conversation — regardless of tier, type, or model — must read and comply with this document.

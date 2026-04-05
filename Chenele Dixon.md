@@ -1,3 +1,6 @@
 ---
-residence: "Twin Falls"
+residence: Twin Falls
+related:
+- Twin Falls
+authority: LOGAN
 ---

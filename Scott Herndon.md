@@ -1,4 +1,10 @@
 ---
+related:
+- Bonner County
+- Bonner County Republican Central Committee
+- Legislative District 1
+- Sagle
+authority: LOGAN
 ---
 Residence: Sagle
 

@@ -1,5 +1,40 @@
 ---
 updated: 2026-03-22
+related:
+- 2023-12-19 - GIAC meeting
+- '2026-03-22'
+- AGENTS
+- Ada County
+- Boise
+- Brad Little
+- CLAUDE
+- CLI
+- CONSTITUTION
+- Copilot
+- DECISIONS
+- END
+- GitHub
+- Google
+- Idaho
+- Idaho Legislature
+- Idaho Public Television
+- Idaho Reports
+- Idaho Statesman
+- LEVELSET
+- Logan Finney
+- NON
+- ORIENT-v0.1
+- Obsidian
+- PROTOCOL
+- TBD
+- UTC
+- agent
+- counties
+- hospitals
+- legislative
+- links
+- meeting
+authority: LOGAN
 ---
 # CONTEXT PASTE BUNDLE — External Agent Orientation
 

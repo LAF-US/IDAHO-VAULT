@@ -1,9 +1,33 @@
 ---
 author:
-  - "Logan Finney"
+- Logan Finney
 outlet:
-  - "Idaho Reports"
+- Idaho Reports
 URL: https://blog.idahoreports.idahoptv.org/2023/03/23/porn-filter-bill-narrowly-rejected-by-senate/
+related:
+- Abby Lee
+- Brian Lenney
+- Dan Foreman
+- Freedom
+- Fruitland
+- Idaho
+- Idaho Freedom Foundation
+- Idaho Reports
+- Internet
+- James Ruchti
+- Logan Finney
+- Nampa
+- Pocatello
+- Sagle
+- Scott Herndon
+- Viola
+- children
+- daylight saving time
+- lobbying
+- minors
+- parents
+- pornography
+authority: LOGAN
 ---
 The Senate with a 17-18 vote on Thursday narrowly rejected legislation that sought to protect Idaho children from pornography. 
 

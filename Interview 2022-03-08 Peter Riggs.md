@@ -1,11 +1,29 @@
 ---
 author:
-  - "Ruth Brown"
+- Ruth Brown
 outlet:
-  - "Idaho Reports"
+- Idaho Reports
 URL: https://youtu.be/5sQLKfTfBUY?si=bzjk3mmpnf5zY7XJ
+related:
+- '316'
+- Behavioral Health Council
+- Council
+- Idaho
+- Idaho Reports
+- Medicaid
+- Medicaid Expansion
+- Peter Riggs
+- Ruth Brown
+- budgets
+- chain
+- civil commitments
+- costs
+- counties
+- hospitals
+- money
+- police
+authority: LOGAN
 ---
-
 _Ruth Brown, Idaho Reports_
 
 Sen. Peter Riggs thanks for joining me i wanted to talk to you today about Senate Bill 1327 which came from the idaho Behavioral Health Council

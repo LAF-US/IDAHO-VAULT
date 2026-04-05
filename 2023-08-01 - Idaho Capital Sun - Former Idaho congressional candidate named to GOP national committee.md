@@ -1,9 +1,28 @@
 ---
 author:
-  - "Clark Corbin"
+- Clark Corbin
 outlet:
-  - "Idaho Capital Sun"
+- Idaho Capital Sun
 URL: https://idahocapitalsun.com/2023/08/01/former-idaho-congressional-candidate-named-to-gop-national-committee/
+related:
+- Bryan Smith
+- Challis
+- Clark Corbin
+- Damond Watkins
+- Dorothy Moon
+- GOP
+- Idaho
+- Idaho Capital Sun
+- Idaho Falls
+- Idaho Republican Party
+- Mike Simpson
+- Post Register
+- RNC
+- U.S. House
+- election
+- meeting
+- primary election
+authority: LOGAN
 ---
 ## Attorney Bryan Smith will serve until the post is voted on at next year’s Republican state convention
 

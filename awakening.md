@@ -1,3 +1,17 @@
+---
+authority: LOGAN
+related:
+- AGENTS
+- Copilot
+- DECISIONS
+- GitHub
+- LEVELSET
+- NOW
+- PROTOCOL
+- agent
+- window
+---
+
 # SWARM AGENT AWAKENING PROTOCOL
 
 **When a new Claude, Copilot, or other agent window opens**, follow this sequence:

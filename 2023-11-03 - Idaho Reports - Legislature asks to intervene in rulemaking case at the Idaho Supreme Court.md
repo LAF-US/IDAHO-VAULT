@@ -1,8 +1,29 @@
 ---
 author:
-  - "Ruth Brown"
+- Ruth Brown
 outlet:
-  - "Idaho Reports"
+- Idaho Reports
+related:
+- '206'
+- Attorney General
+- Chuck Winder
+- Division of Occupational and Professional Licenses
+- Idaho
+- Idaho Legislature
+- Idaho Reports
+- Idaho Supreme Court
+- Legislative Services Office
+- Mike Moyle
+- President
+- Ruth Brown
+- Senate President Pro Tempore
+- State Athletic Commission
+- administrative rules
+- agriculture
+- fishing
+- hunting
+- voting
+authority: LOGAN
 ---
 The Idaho Legislature has asked to intervene in a case involving the State Athletic Commission asking for a petition to the Idaho Supreme Court.  
 

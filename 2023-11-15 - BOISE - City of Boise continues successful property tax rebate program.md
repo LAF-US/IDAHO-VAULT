@@ -1,6 +1,21 @@
 ---
 author:
-  - "Boise"
+- Boise
+related:
+- '500'
+- '655'
+- Boise
+- FOR
+- Lauren McLean
+- Property Tax Rebate Program
+- Property Tax Reduction Program
+- TAX
+- city council
+- homeowners
+- mayor
+- money
+- property tax
+authority: LOGAN
 ---
 **FOR IMMEDIATE RELEASE:  
 November 15, 2023

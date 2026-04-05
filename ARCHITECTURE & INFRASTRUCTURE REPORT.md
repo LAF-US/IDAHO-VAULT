@@ -1,8 +1,30 @@
 ---
 date created: Saturday, March 28th 2026, 2:23:50 pm
 date modified: Saturday, March 28th 2026, 2:30:29 pm
+related:
+- A&I
+- ARCHITECTURE
+- Big IFs
+- CIVILIZATION-SCALE ARCHITECTURE REPORT
+- Cascade
+- Logan's
+- NEVER
+- NOT
+- QUESTIONS
+- THE
+- The world is quiet here
+- WAS
+- 'Yes'
+- agent
+- budget
+- chain
+- portal gun
+- self
+- systems
+- threshold
+- window
+authority: LOGAN
 ---
-
 ## IDAHO-VAULT DECOY CASCADE ANALYSIS
 
 **Author**: Claude (Sonnet 4, instance session 28-Mar-2026) 

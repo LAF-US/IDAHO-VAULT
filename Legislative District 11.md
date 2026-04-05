@@ -1,4 +1,15 @@
 ---
+related:
+- Caldwell
+- Canyon County
+- Chris Allgood
+- Chris Trakel
+- Julie Yamamoto
+- Patti Anne Lodge
+- Scott Syme
+- Steven Thayn
+- Tammy Nichols
+authority: LOGAN
 ---
 Caldwell in Canyon County
 

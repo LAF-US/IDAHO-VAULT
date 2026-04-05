@@ -1,9 +1,41 @@
 ---
-outlet: "Idaho Capital Sun"
-url: "https://idahocapitalsun.com/2022/03/23/mcgeachin-casts-tie-breaking-vote-to-pass-medical-school-tuition-payback-bill/"
+outlet: Idaho Capital Sun
+url: https://idahocapitalsun.com/2022/03/23/mcgeachin-casts-tie-breaking-vote-to-pass-medical-school-tuition-payback-bill/
 author:
-  - "Kelcie Moseley-Morris"
-  - "Audrey Dutton"
+- Kelcie Moseley-Morris
+- Audrey Dutton
+related:
+- '120'
+- '718'
+- Alaska
+- Audrey Dutton
+- Department of Health and Welfare
+- Governor
+- Idaho
+- Idaho Capital Sun
+- Idaho Legislature
+- Idaho Senate
+- Janice McGeachin
+- Jeff Seegmiller
+- Kelcie Moseley-Morris
+- Kendrick
+- Lieutenant Governor
+- Meridian
+- Mike Moyle
+- Montana
+- Robert Blair
+- Star
+- University of Idaho
+- University of Washington
+- Utah
+- Washington
+- Wyoming
+- assistant
+- costs
+- dollars
+- medical school
+- meeting
+authority: LOGAN
 ---
 ## House bill requires WWAMI medical students to practice in Idaho or repay as much as $120,000 subsidized tuition
 

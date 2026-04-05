@@ -1,4 +1,19 @@
 ---
+related:
+- Ada County
+- Clifford Bayer
+- Greg Ferch
+- James Petzke
+- Jeff Ehlers
+- John Vander Woude
+- Megan Kiska
+- Meridian
+- Regina Bayer
+- Russ Fulcher
+- Steven Harris
+- Tom Dayley
+- Treg Bernt
+authority: LOGAN
 ---
 Meridian in Ada County
 

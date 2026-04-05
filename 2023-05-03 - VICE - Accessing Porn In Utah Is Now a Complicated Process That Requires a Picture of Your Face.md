@@ -1,9 +1,42 @@
 ---
 author:
-  - "Samantha Cole"
+- Samantha Cole
 outlet:
-  - "VICE Media"
+- VICE Media
 URL: https://www.vice.com/en/article/z3mnqx/utah-age-verification-pornhub-xhamster-laws
+related:
+- Alabama
+- Arkansas
+- California
+- ECP
+- Florida
+- Governor
+- Internet
+- Jason Koebler
+- Montana
+- New Jersey
+- Samantha Cole
+- South Carolina
+- South Dakota
+- Spencer
+- Spencer Cox
+- Texas
+- Twitter
+- Utah
+- VICE Media
+- VPN
+- Virginia
+- age verification
+- children
+- facial recognition
+- internet service providers
+- legislative
+- legislative session
+- minors
+- porn sites
+- virtual private networks
+- website
+authority: LOGAN
 ---
 As age verification technology legislation spreads across the country, time-consuming processes like what xHamster users in Utah now face may become the new norm for watching porn online.
 

@@ -1,7 +1,22 @@
 ---
 author:
-  - "Department of Labor"
+- Department of Labor
 URL: https://idahoatwork.com/2023/12/27/idahos-2023-population-growth-4th-in-nation/
+related:
+- '334'
+- '389'
+- '726'
+- '895'
+- '914'
+- '964'
+- Department of Labor
+- Idaho
+- U.S. Census
+- U.S. Census Bureau
+- cities
+- counties
+- metropolitan statistical areas
+authority: LOGAN
 ---
 Idaho’s population growth in 2023 was double the national average of 0.5%. The U.S. added 1.6 million people, bringing its population estimate to 334,914,895 — higher than the growth rate of 0.4% in 2022 and 0.2% in 2021.
 

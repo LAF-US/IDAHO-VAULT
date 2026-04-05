@@ -1,11 +1,45 @@
 ---
 author:
-  - "Becca Savransky"
-  - "Asia Fields"
+- Becca Savransky
+- Asia Fields
 outlet:
-  - "Idaho Statesman"
-  - "ProPublica"
+- Idaho Statesman
+- ProPublica
 URL: https://www.idahostatesman.com/news/local/education/article283069803.html
+related:
+- '115'
+- '200'
+- '233'
+- '677'
+- Arbon
+- Becca Savransky
+- Bliss
+- Caldwell
+- Caldwell School District
+- Council
+- Culdesac
+- Facebook
+- Idaho
+- Idaho Education Association
+- Idaho Statesman
+- Jackson
+- Kamiah
+- Moscow
+- Mullan
+- Pleasant Valley
+- Prairie
+- ProPublica
+- Reddit
+- Teton
+- Teton County
+- Troy
+- bond elections
+- meeting
+- parents
+- teachers
+- water
+- word
+authority: LOGAN
 ---
 It’s no secret that Idaho’s school buildings have problems. The state’s superintendents, maintenance directors, teachers and students see the leaks, pack into crowded hallways and feel the extreme cold and heat throughout the year. But state officials don’t know the extent of the issues because the last full review of school buildings was completed in 1993. 
 

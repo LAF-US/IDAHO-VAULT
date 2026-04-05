@@ -1,3 +1,13 @@
+---
+authority: LOGAN
+related:
+- Idaho
+- Idaho Legislature
+- format
+- web
+- website
+---
+
 # Plan
 
 1.  **Initial Normalization:** Create a Python script to transform the `minidata.csv` into a new `normalized_budget_data.csv` file. This script will map the existing fields to the new schema and leave the missing fields empty. This step is complete.

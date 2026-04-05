@@ -1,4 +1,16 @@
 ---
+related:
+- Cassia County
+- Clay Handy
+- Dean Cameron
+- Douglas Pickett
+- Fred Wood
+- Kelly Anthon
+- Minidoka
+- Minidoka County
+- Oneida County
+- Scott Bedke
+authority: LOGAN
 ---
 Minidoka County, Cassia County & Oneida County
 - formerly Minidoka & Cassia 

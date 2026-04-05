@@ -1,4 +1,37 @@
 ---
+related:
+- '184'
+- '191'
+- '195'
+- '287'
+- '410'
+- '630'
+- Interstate 15
+- Interstate 184
+- Interstate 84
+- Interstate 86
+- Interstate 90
+- State Highway System
+- U.S. highways
+- U.S. interstates
+- US 10
+- US 12
+- US 191
+- US 195
+- US 2
+- US 20
+- US 26
+- US 287
+- US 30
+- US 410
+- US 630
+- US 89
+- US 91
+- US 93
+- US 95
+- roads
+- state highways
+authority: LOGAN
 ---
 component roads of the State Highway System 
 # state highways

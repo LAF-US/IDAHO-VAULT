@@ -1,9 +1,44 @@
 ---
 author:
-  - "Ian Max Stevenson"
+- Ian Max Stevenson
 outlet:
-  - "Idaho Statesman"
+- Idaho Statesman
 URL: https://www.idahostatesman.com/news/local/community/boise/article282106198.html
+related:
+- '112'
+- '117'
+- '140'
+- '200'
+- '600'
+- About
+- Ada County
+- Ada County Jail
+- Boise
+- Brad Little
+- Chuck Winder
+- DID
+- Department of Correction
+- FOR
+- Idaho
+- Idaho Constitution
+- Idaho Statesman
+- Jeff Ray
+- President
+- THE
+- Tom Dayley
+- WHY
+- costs
+- counties
+- fiscal year
+- housing
+- inmates
+- jails
+- judges
+- law enforcement
+- meeting
+- money
+- threshold
+authority: LOGAN
 ---
 After narrowly losing on a ballot initiative to expand the Ada County Jail, Ada County leaders are asking for the state to increase the reimbursement rate the Sheriff’s Office receives for housing state prisoners. 
 

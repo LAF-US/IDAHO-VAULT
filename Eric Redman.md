@@ -1,4 +1,10 @@
 ---
+related:
+- Coeur d'Alene
+- Convention of States
+- House member
+- Jordan Redman
+authority: LOGAN
 ---
 Residence: Coeur d'Alene
 - active with Convention of States movement

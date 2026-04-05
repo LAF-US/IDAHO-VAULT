@@ -1,4 +1,24 @@
 ---
+related:
+- Britt Raybould
+- Chris Allgood
+- Heather Scott
+- Ilana Rubel
+- John Vander Woude
+- Jordan Redman
+- Josh Wheeler
+- Julianne Young
+- Lauren Necochea
+- Matt Bundy
+- Mickelsen
+- Rod Furniss
+- Stephanie Mickelsen
+- Sue Chew
+- Tina Lambert
+- Tony Wisniewski
+- Vito Barbieri
+- Wendy Horman
+authority: LOGAN
 ---
 # Roster
 ## 2023 Members

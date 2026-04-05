@@ -1,8 +1,29 @@
 ---
-author: "Daniel Ramirez"
+author: Daniel Ramirez
 outlet:
-  - "Post Register"
+- Post Register
 URL: https://www.postregister.com/news/local/jeremy-best-charged-with-two-counts-first-degree-murder/article_facfcfa0-92f6-11ee-9eb7-1797b00f2163.html
+related:
+- '911'
+- Act
+- Bonneville County
+- Bonneville County Jail
+- CPR
+- County Coroner
+- County Sheriff
+- Eastern Idaho
+- Eastern Idaho Regional Medical Center
+- Health Insurance Portability and Accountability Act
+- Idaho
+- Jeremy Best
+- Post Register
+- Prosecuting Attorney
+- Swan Valley
+- Teton
+- Teton County
+- Victor
+- voice
+authority: LOGAN
 ---
 Jeremy Best, 48, of Victor, has been charged with two felony counts of first-degree murder for the death of his wife, Kali Randall Best, and their unborn child.
 

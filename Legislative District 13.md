@@ -1,4 +1,16 @@
 ---
+related:
+- Ben Adams
+- Brent Crane
+- Brian Lenney
+- Canyon County
+- Collins
+- Gary Collins
+- Jeff Agenbroad
+- Kenny Wroten
+- Nampa
+- Patti Anne Lodge
+authority: LOGAN
 ---
 Western Nampa in Canyon County
 

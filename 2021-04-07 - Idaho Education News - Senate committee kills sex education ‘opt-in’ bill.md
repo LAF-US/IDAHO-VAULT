@@ -1,8 +1,41 @@
 ---
-author: "Kevin Richert"
+author: Kevin Richert
 outlet:
-  - "Idaho Education News"
+- Idaho Education News
 URL: https://www.idahoednews.org/top-news/senate-committee-kills-sex-education-opt-in-bill-2/
+related:
+- '249'
+- Barbara Ehardt
+- Blackfoot
+- Boise
+- Carl Crabtree
+- Dan Johnson
+- Dave Lent
+- David Nelson
+- Emmett
+- Grangeville
+- Idaho
+- Idaho Education News
+- Idaho Falls
+- Janie Ward-Engelking
+- Jim Woodward
+- Kevin Cook
+- Kevin Richert
+- Lewiston
+- Lori Den Hartog
+- Meridian
+- Moscow
+- Sagle
+- Senate Education
+- Sonya Harris
+- Steven Thayn
+- children
+- gender identity
+- parental rights
+- parents
+- school districts
+- sex education
+authority: LOGAN
 ---
 An “opt-in” bill for courses in human sexuality is dead for the session.
 

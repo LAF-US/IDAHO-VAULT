@@ -1,4 +1,12 @@
 ---
+related:
+- Ada County
+- Chuck Winder
+- James Holtzclaw
+- Joe Palmer
+- Marv Hagedorn
+- Meridian
+authority: LOGAN
 ---
 Northern Meridian in Ada County
 

@@ -1,4 +1,30 @@
 ---
+related:
+- Ali Rabe
+- Brooke Green
+- C. Scott Grow
+- Chuck Winder
+- Council
+- House Majority Leader
+- House Minority Leader
+- Idaho
+- Idaho Legislature
+- Ilana Rubel
+- James Ruchti
+- John Vander Woude
+- Kelly Anthon
+- Megan Blanksma
+- Melissa Wintrow
+- Mike Moyle
+- President
+- Scott Grow
+- Senate Majority Leader
+- Senate Minority Leader
+- Soñia Galaviz
+- Speaker of the House
+- Treg Bernt
+- Wendy Horman
+authority: LOGAN
 ---
 The Legislative Council oversees the management responsibilities of the Idaho Legislature. 
 **Membership:**

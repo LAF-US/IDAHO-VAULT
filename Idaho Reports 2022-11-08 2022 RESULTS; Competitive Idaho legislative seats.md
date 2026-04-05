@@ -1,4 +1,40 @@
 ---
+related:
+- 2022-10-20 - IR Podcast - Legislative Races to Watch
+- Ada County
+- Bannock County
+- Boise
+- Brandon Mitchell
+- Codi Galloway
+- Dan Foreman
+- David Nelson
+- David Worley
+- Dori Healey
+- Dustin Manwaring
+- Idaho
+- Idaho Reports
+- Jack Nelsen
+- James Ruchti
+- Jerome
+- Jerome County
+- Latah County
+- Laurie Lickley
+- Lincoln
+- Lori McCann
+- Magic Valley
+- Nate Roberts
+- Ned Burns
+- North Idaho
+- Pocatello
+- Podcast
+- Rick Just
+- Roberts
+- Ron Taylor
+- Steve Berch
+- Wood River Valley
+- Worley
+- counties
+authority: LOGAN
 ---
 Idaho Reports
 

@@ -1,10 +1,18 @@
 ---
-url: "https://www.ted.com/talks/charles_fleischer_all_things_are_moleeds"
-youtube: "https://youtu.be/UcnYqyQyHd8"
+url: https://www.ted.com/talks/charles_fleischer_all_things_are_moleeds
+youtube: https://youtu.be/UcnYqyQyHd8
 author:
-  - "Charles Fleischer"
+- Charles Fleischer
 year: 2005
-venue: "TED"
+venue: TED
+related:
+- Charles Fleischer
+- Golden
+- TED
+- The 4 a.m. Mystery
+- numbers
+- voice
+authority: LOGAN
 ---
 Charles Fleischer — TED2005. ~18 minutes.
 

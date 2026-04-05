@@ -1,6 +1,27 @@
 ---
 author:
-  - "Logan Finney"
+- Logan Finney
+related:
+- 2020-01-16 - McClure - Bill aims to shift drug policy from arrest to treatment
+- Grant
+- Grant Burgoyne
+- Idaho
+- Logan Finney
+- Senate Judiciary and Rules
+- Todd Lakey
+- addiction
+- books
+- children
+- civil commitments
+- connections
+- law enforcement
+- marijuana
+- minors
+- nicotine
+- opioids
+- tobacco
+- vaping
+authority: LOGAN
 ---
 Sen. Grant Burgoyne on drug decriminalization and civil commitments bill [https://legislature.idaho.gov/sessioninfo/2020/legislation/S1222/](https://legislature.idaho.gov/sessioninfo/2020/legislation/S1222/)
 

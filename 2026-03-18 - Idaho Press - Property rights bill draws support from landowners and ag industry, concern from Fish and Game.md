@@ -1,9 +1,45 @@
 ---
-source: "https://www.idahopress.com/news/local/property-rights-bill-draws-support-from-landowners-and-ag-industry-concern-from-fish-and-game/article_9251aa09-cd28-49f9-9417-8603379ad051.html"
+source: https://www.idahopress.com/news/local/property-rights-bill-draws-support-from-landowners-and-ag-industry-concern-from-fish-and-game/article_9251aa09-cd28-49f9-9417-8603379ad051.html
 author:
-  - "ROYCE MCCANDLESS rmccandless@idahopress.com"
+- ROYCE MCCANDLESS rmccandless@idahopress.com
 published: 2026-03-18
 created: 2026-04-02
+related:
+- '2026-03-18'
+- '2026-04-02'
+- Act
+- Boise
+- Department of Fish and Game
+- Gibson
+- House State Affairs
+- Idaho
+- Idaho Legislature
+- Joe Alfieri
+- Judy Boyle
+- Midvale
+- Snake River
+- Trout
+- U.S. Constitution
+- U.S. Supreme Court
+- agent
+- agriculture
+- doctrine
+- fish
+- fishing
+- hunters
+- hunting
+- individuals
+- law enforcement
+- legislative
+- money
+- police
+- sign
+- species
+- voiced
+- warrants
+- water
+- website
+authority: LOGAN
 ---
 This website uses certain cookies, pixels and similar tracking technologies in order enhance site navigation, analyze site usage, and assist in our marketing efforts. Certain information collected by that technology may be shared with our third party partners. By continuing to use this website, you agree to the use of these technologies.
 

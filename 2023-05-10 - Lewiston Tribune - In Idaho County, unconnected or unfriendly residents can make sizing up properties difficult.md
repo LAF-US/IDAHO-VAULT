@@ -1,9 +1,19 @@
 ---
 author:
-  - "Kathy Hedberg"
+- Kathy Hedberg
 outlet:
-  - "Lewiston Tribune"
+- Lewiston Tribune
 URL: https://www.lmtribune.com/northwest/in-idaho-county-unconnected-or-unfriendly-residents-can-make-sizing-up-properties-difficult/article_52f2287b-91fc-54c9-ad7c-036584d04779.html
+related:
+- County Assessor
+- County Commissioners
+- GPS
+- Idaho
+- Idaho County
+- Lewiston
+- Lewiston Tribune
+- template
+authority: LOGAN
 ---
 Property appraisers in Idaho County are facing increasing risks from people who are noncooperative and will not allow appraisers on their property.  
   

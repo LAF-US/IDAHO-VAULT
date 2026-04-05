@@ -1,3 +1,12 @@
+---
+authority: LOGAN
+related:
+- House Revenue and Taxation
+- Senate Local Government and Taxation
+- property tax
+- taxes
+---
+
 taxes on purchases 
 
 **Legislative History**

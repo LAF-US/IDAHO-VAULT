@@ -1,7 +1,33 @@
 ---
 created: 2026-03-28
 status: complete
-author: "Codex"
+author: Codex
+related:
+- '2026-03-28'
+- '2026-03-29'
+- AGENTS
+- API
+- Centerville
+- Drive
+- GEMINI
+- GitHub
+- Google
+- Idaho
+- Idaho Republican Party
+- LEVELSET
+- LEVELSET-CURRENT
+- MCP
+- OpenAI
+- PLUGIN-AUTH-INVENTORY-2026-03-28
+- README
+- VAULT-CONVENTIONS
+- agent
+- codex
+- infrastructure
+- persona
+- window
+- word
+authority: LOGAN
 ---
 # LEVELSET - Codex Archival - 2026-03-28
 

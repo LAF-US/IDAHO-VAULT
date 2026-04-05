@@ -1,8 +1,32 @@
 ---
 author:
-  - "State Board of Education"
+- State Board of Education
+related:
+- '600'
+- '700'
+- '800'
+- Arkansas
+- Career Technical Education
+- Chubbuck
+- Cloud
+- Colorado
+- ISU
+- Idaho
+- Idaho State University
+- Lewis-Clark State College
+- Meridian
+- Mesa
+- NKU
+- Pocatello
+- President
+- South Dakota
+- State Board of Education
+- USU
+- Utah
+- budget
+- website
+authority: LOGAN
 ---
-
 Five finalists have been picked from a list of over 80 candidates who applied to become Idaho State University’s 14th president.
 
 The finalists were selected after 12 semifinalists were interviewed earlier this week by the Idaho State University President Search Committee.

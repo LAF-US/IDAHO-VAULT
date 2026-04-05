@@ -1,9 +1,39 @@
 ---
 author:
-  - "Zach Hagadone"
+- Zach Hagadone
 outlet:
-  - "Sandpoint Reader"
+- Sandpoint Reader
 URL: https://sandpointreader.com/woodward-will-seek-dist-1-senate-seat/
+related:
+- Bonners Ferry
+- Dorothy Moon
+- Drive
+- GOP
+- Idaho
+- Idaho Legislature
+- Idaho Republican Party
+- Idaho Senate
+- Jim Woodward
+- North Idaho
+- Sagle
+- Sandpoint
+- Sandpoint Reader
+- Scott Herndon
+- University of Idaho
+- Zach Hagadone
+- abortion
+- construction
+- counties
+- election
+- health care
+- infrastructure
+- school choice
+- transportation
+- vocal
+- voting
+- water
+- website
+authority: LOGAN
 ---
 *‘I focus on a broader picture using real Idaho values which benefit the majority’*
 

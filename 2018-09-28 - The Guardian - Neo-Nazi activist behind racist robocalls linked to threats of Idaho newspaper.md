@@ -1,9 +1,42 @@
 ---
 author:
-  - "Jason Wilson"
+- Jason Wilson
 outlet:
-  - "The Guardian"
+- The Guardian
 URL: https://www.theguardian.com/world/2018/sep/28/idaho-robocalls-sandpoint-reader-neo-nazi
+related:
+- Alexandria
+- Ben Olson
+- California
+- Facebook
+- Florida
+- GOP
+- Idaho
+- North Idaho
+- San Francisco
+- Sandpoint
+- Sandpoint Reader
+- Scott Rhodes
+- Shelby Rognstad
+- Southern Poverty Law Center
+- Spokane
+- Spokesman-Review
+- The Guardian
+- The Road to Power
+- Virginia
+- Washington
+- YouTube
+- cancer
+- fire
+- high schools
+- mayor
+- neo-Nazi
+- newspapers
+- on fire
+- robocalls
+- self
+- voice
+authority: LOGAN
 ---
 *Sandpoint Reader is target of new calls describing publisher as ‘cancer’ that ‘needs to be burned out’*
 

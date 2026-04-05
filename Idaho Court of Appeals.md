@@ -1,4 +1,12 @@
 ---
+related:
+- Amanda Brailsford
+- David Gratton
+- Idaho
+- Idaho Supreme Court
+- Jessica Lorello
+- Molly Huskey
+authority: LOGAN
 ---
 Overseen by Idaho Supreme Court
 

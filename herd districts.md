@@ -1,4 +1,13 @@
 ---
+related:
+- cattle
+- goats
+- livestock
+- rangeland
+- sheep
+- taxing districts
+- unincorporated
+authority: LOGAN
 ---
 taxing districts for livestock and rangeland management
 

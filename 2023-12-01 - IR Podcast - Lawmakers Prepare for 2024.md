@@ -1,9 +1,52 @@
 ---
 author:
-  - "Logan Finney"
+- Logan Finney
 outlet:
-  - "Idaho Reports"
+- Idaho Reports
 URL: https://blog.idahoreports.idahoptv.org/2023/12/01/podcast-lawmakers-prepare-for-2024/
+related:
+- '292'
+- ATI
+- Associated Taxpayers of Idaho
+- Bellevue
+- Ben Adams
+- Boise
+- C. Scott Grow
+- Camas County
+- Canyon County
+- Doug Ricks
+- Eagle
+- Idaho
+- Idaho Reports
+- Jason Monks
+- Logan Finney
+- Meridian
+- Mike Moyle
+- Nampa
+- Ned Burns
+- Scott Grow
+- Star
+- State of Idaho
+- Ukraine
+- agriculture
+- budgets
+- committee chairmen
+- counties
+- dollars
+- legislative
+- legislative session
+- libraries
+- meeting
+- property tax
+- quagga mussels
+- sales tax
+- school choice
+- school districts
+- school facilities
+- taxes
+- taxing districts
+- water
+authority: LOGAN
 ---
 **Logan Finney, _Idaho Reports_:**
 

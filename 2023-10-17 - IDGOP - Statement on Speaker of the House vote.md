@@ -1,6 +1,15 @@
 ---
 author:
-  - "Idaho Republican Party"
+- Idaho Republican Party
+related:
+- Boise
+- Idaho
+- Idaho Republican Party
+- Jim Jordan
+- Mike Simpson
+- Speaker of the House
+- voting
+authority: LOGAN
 ---
 **October 17, 2023**
 

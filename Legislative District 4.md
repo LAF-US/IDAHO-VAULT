@@ -1,4 +1,17 @@
 ---
+related:
+- Ben Toews
+- Coeur d'Alene
+- Elaine Price
+- Jim Addis
+- Joe Alfieri
+- John Goedde
+- Kootenai
+- Kootenai County
+- Mary Souza
+- Paul
+- Paul Amador
+authority: LOGAN
 ---
 Coeur d'Alene in Kootenai County
 

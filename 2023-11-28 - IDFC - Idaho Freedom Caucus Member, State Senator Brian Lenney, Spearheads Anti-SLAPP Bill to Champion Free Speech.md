@@ -1,7 +1,22 @@
 ---
 author:
-  - "Brian Lenney"
-  - "Idaho Freedom Caucus"
+- Brian Lenney
+- Idaho Freedom Caucus
+related:
+- 2024 legislative session
+- American Civil Liberties Union
+- Boise
+- Brian Lenney
+- California
+- Freedom
+- Idaho
+- Idaho Freedom Caucus
+- Strategic Lawsuit Against Public Participation
+- Texas
+- anti-SLAPP
+- legislative
+- legislative session
+authority: LOGAN
 ---
 Boise, ID – November 27, 2023 – Today, Idaho Freedom Caucus member and State Senator Brian Lenney announced the introduction of a pivotal anti-SLAPP (Strategic Lawsuit Against Public Participation) bill in the 2024 legislative session. This legislative measure is designed to safeguard free speech in Idaho by providing robust protections against legal bullying through frivolous lawsuits.
 

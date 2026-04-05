@@ -1,4 +1,15 @@
 ---
+related:
+- Coeur d'Alene
+- Coeur d'Alene Tribe
+- Conkling Park
+- Harrison
+- Kootenai
+- Kootenai County
+- Peedee
+- Rockford Bay
+- Wolf Lodge
+authority: LOGAN
 ---
 Water body in Kootenai County. 
 

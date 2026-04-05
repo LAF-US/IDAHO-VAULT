@@ -1,13 +1,26 @@
 ---
-source: "https://developers.openai.com/codex/cli"
+source: https://developers.openai.com/codex/cli
 author:
-  - "OpenAI"
-published:
+- OpenAI
+published: null
 created: 2026-03-29
 date created: Sunday, March 29th 2026, 6:07:57 pm
 date modified: Sunday, March 29th 2026, 6:08:36 pm
+related:
+- '2026-03-29'
+- CLI
+- ChatGPT
+- Cloud
+- GPT
+- MCP
+- OpenAI
+- TUI
+- WSL
+- agent
+- codex
+- web
+authority: LOGAN
 ---
-
 # Codex CLI
 
 Codex CLI is OpenAI's coding agent that you can run locally from your terminal. It can read, change, and run code on your machine in the selected directory.

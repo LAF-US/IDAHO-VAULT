@@ -1,4 +1,12 @@
 ---
+related:
+- Freedom
+- Health Freedom Idaho
+- Idaho
+- Idaho Constitution
+- Idaho Constitution Party
+- Idaho Dispatch
+authority: LOGAN
 ---
 realtor
 

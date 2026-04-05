@@ -1,9 +1,45 @@
 ---
 author:
-  - "Chad Sokol"
+- Chad Sokol
 outlet:
-  - "Spokesman-Review"
+- Spokesman-Review
 URL: https://www.spokesman.com/stories/2018/sep/23/blocking-robocalls-even-racist-ones-is-a-giant-com/
+related:
+- '350'
+- '800'
+- Act
+- Aryan Nations
+- California
+- Christie Wood
+- FCC
+- Facebook
+- Florida
+- Google
+- Idaho
+- Kootenai
+- Kootenai County
+- Sandpoint
+- Scott Rhodes
+- Spokane
+- Spokesman-Review
+- TNS
+- The Road to Power
+- Virginia
+- VoIP
+- Washington
+- acronym
+- algorithm
+- costs
+- internet service providers
+- money
+- neo-Nazi
+- numbers
+- robocalls
+- social media
+- voting
+- web
+- white supremacist
+authority: LOGAN
 ---
 *Scott D. Rhodes, of Sandpoint, advocates a white supremacist takeover of the United States in an installment of his video podcast titled “The Road to Power.” He appears to be responsible for recent flurries of offensive automated phone calls in California and Spokane.*
 

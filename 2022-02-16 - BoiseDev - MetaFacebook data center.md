@@ -1,14 +1,36 @@
 ---
-source: "https://boisedev.com/project/meta-facebook-data-center/"
+source: https://boisedev.com/project/meta-facebook-data-center/
 author:
-  - "Don Day - BoiseDev Editor"
-  - "https://boisedev.com/author/idahonext/"
+- Don Day - BoiseDev Editor
+- https://boisedev.com/author/idahonext/
 published: 2022-02-16
 created: 2026-03-30
 date created: Monday, March 30th 2026, 3:28:19 pm
 date modified: Monday, March 30th 2026, 3:28:35 pm
+related:
+- '2026-03-30'
+- About
+- Boise
+- BoiseDev
+- Facebook
+- Idaho
+- Idaho Power
+- Kuna
+- Tamarack
+- airport
+- apartments
+- construction
+- hotels
+- money
+- property tax
+- ranch
+- roads
+- sales tax
+- tax credits
+- urban renewal districts
+- water
+authority: LOGAN
 ---
-
 ![Meta Facebook Kuna](https://boisedev.com/wp-content/uploads/2022/02/Screen-Shot-2022-02-16-at-10.14.48-AM.png)
 
 Meta Facebook Kuna

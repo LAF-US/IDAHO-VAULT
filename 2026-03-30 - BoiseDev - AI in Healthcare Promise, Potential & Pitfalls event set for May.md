@@ -1,9 +1,20 @@
 ---
-source: "https://boisedev.com/news/2026/03/30/intersection-ai-healthcare/"
+source: https://boisedev.com/news/2026/03/30/intersection-ai-healthcare/
 author:
-  - "Don Day - BoiseDev Editor"
+- Don Day - BoiseDev Editor
 published: 2026-03-30
 created: 2026-03-30
+related:
+- '2026-03-30'
+- Boise
+- BoiseDev
+- ChatGPT
+- Idaho
+- Regence BlueShield of Idaho
+- Saint Alphonsus Health System
+- homes
+- hospitals
+authority: LOGAN
 ---
 Artificial intelligence has been around for decades. But in the last few years, since the launch of ChatGPT in late 2022, the technology has spread and advanced at a breathtaking clip.
 

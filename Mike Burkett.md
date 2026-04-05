@@ -1,4 +1,11 @@
 ---
+related:
+- Attorney General
+- Boise
+- Jim Risch
+- Nicole LeFavor
+- Senate member
+authority: LOGAN
 ---
 Residence: Boise
 - former Senate member from LD19, succeeded by Nicole LeFavor 

@@ -1,9 +1,36 @@
 ---
 author:
-  - "Kevin Richert"
+- Kevin Richert
 outlet:
-  - "Idaho Education News"
+- Idaho Education News
 URL: https://www.idahoednews.org/top-news/a-divided-state-board-passes-cwi-cei-bachelors-programs/
+related:
+- '150'
+- '170'
+- '285'
+- '700'
+- Bill Gilbert
+- Boise
+- Boise State University
+- CEI
+- CWI
+- College of Eastern Idaho
+- College of Southern Idaho
+- College of Western Idaho
+- David Hill
+- Debbie Critchfield
+- Eastern Idaho
+- Idaho
+- Idaho Education News
+- Idaho State University
+- Kevin Richert
+- President
+- Shawn Keough
+- State Board of Education
+- executive session
+- money
+- word
+authority: LOGAN
 ---
 Supporters touted the promise of getting more students into college, and serving workforce needs.
 

@@ -1,4 +1,14 @@
 ---
+related:
+- 2nd Congressional District
+- 6th Judicial District
+- Bear
+- Bear Lake
+- Franklin
+- Idaho
+- Lake
+- Southeastern Idaho Public Health
+authority: LOGAN
 ---
 - Bannock
 - Caribou

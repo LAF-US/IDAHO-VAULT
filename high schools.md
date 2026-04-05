@@ -1,4 +1,158 @@
 ---
+related:
+- Aberdeen
+- American Falls
+- American Falls High School
+- Ammon
+- Arco
+- Arimo
+- Ashton
+- Bancroft
+- Bear
+- Bear Lake
+- Blackfoot
+- Bliss
+- Boise
+- Bonners Ferry
+- Bruneau
+- Buhl
+- Burley
+- Butte County
+- Caldwell
+- Camas County
+- Cambridge
+- Carey
+- Cascade
+- Castleford
+- Challis
+- Clark County
+- Clark Fork
+- Coeur d'Alene
+- Cottonwood
+- Council
+- Craigmont
+- Culdesac
+- Dayton
+- Deary
+- Declo
+- Dietrich
+- Donnelly
+- Driggs
+- Dubois
+- Eagle
+- Emmett
+- Fairfield
+- Filer
+- Firth
+- Fort Hall
+- Frank Church
+- Fruitland
+- Garden Valley
+- Genesee
+- Glenns Ferry
+- Gooding
+- Grace
+- Grangeville
+- Greenleaf
+- Hagerman
+- Hailey
+- Hansen
+- Harrison
+- Hayden
+- Hazelton
+- Home
+- Homedale
+- Horseshoe Bend
+- Idaho
+- Idaho City
+- Idaho Falls
+- Jerome
+- Kamiah
+- Kellogg
+- Kendrick
+- Kimberly
+- Kooskia
+- Kootenai
+- Kuna
+- Lake
+- Lapwai
+- Leadore
+- Lewiston
+- Liberty
+- Logos School
+- Mackay
+- Mackay High School
+- Madison High School
+- Magic Valley
+- Malad City
+- Malta
+- Marsh Valley
+- Marsing
+- McCall
+- Meadows
+- Melba
+- Meridian
+- Middleton
+- Midvale
+- Montpelier
+- Moscow
+- Mountain Home
+- Mullan
+- Murtaugh
+- Nampa
+- Nampa High School
+- New Meadows
+- New Plymouth
+- Nezperce
+- North Idaho
+- Notus
+- Oakley
+- Orofino
+- Owyhee
+- Parma
+- Payette
+- Plummer
+- Pocatello
+- Post Falls
+- Potlatch
+- Prairie
+- Preston
+- Priest River
+- Raft River
+- Rathdrum
+- Rexburg
+- Richfield
+- Rigby
+- Riggins
+- Ririe
+- Rockland
+- Rupert
+- Salmon
+- Salmon River
+- Sandpoint
+- Sandpoint High School
+- Shelley
+- Shoshone
+- Snake River
+- Soda Springs
+- Spirit Lake
+- St. Anthony
+- St. Maries
+- Star
+- State of Idaho
+- Sugar City
+- Sun Valley
+- Terreton
+- Teton
+- Troy
+- Twin Falls
+- View
+- Wallace
+- Weippe
+- Weiser
+- Wendell
+- Wilder
+authority: LOGAN
 ---
 This is a list of high schools (private, district and charter) in the State of Idaho by county.
 

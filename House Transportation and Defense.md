@@ -1,4 +1,23 @@
 ---
+related:
+- Brandon Mitchell
+- Charlie Shepherd
+- Clay Handy
+- Dustin Manwaring
+- Greg Lanting
+- James Holtzclaw
+- James Petzke
+- Jaron Crane
+- Jason Monks
+- Joe Palmer
+- John Gannon
+- Julie Yamamoto
+- Megan Blanksma
+- Ned Burns
+- Sage Dixon
+- Steve Miller
+- Ted Hill
+authority: LOGAN
 ---
 # Roster
 ## 2023 Members

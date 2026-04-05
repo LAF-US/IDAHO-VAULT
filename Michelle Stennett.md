@@ -1,4 +1,11 @@
 ---
+related:
+- Blaine County
+- Hailey
+- Legislative District 26
+- Senate Majority Leader
+- Senate member
+authority: LOGAN
 ---
 Residence: Hailey
 

@@ -1,5 +1,10 @@
 ---
 date: 1927-08-30
+related:
+- -30-
+- Idaho
+- Washington
+authority: LOGAN
 ---
 !senator-borah-stays-on-job-washington-dc-aug-30-while-other-senators-are-resting.jpg
 

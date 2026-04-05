@@ -1,5 +1,22 @@
 ---
 date: 1937-09-27
+related:
+- 1937 FDR - Boise Motorcade
+- Boise
+- FDR
+- Franklin
+- Governor
+- Idaho
+- President
+- Washington
+- agriculture
+- character
+- children
+- coordination
+- meeting
+- node
+- water
+authority: LOGAN
 ---
 # Franklin D. Roosevelt, 32nd President of the United States,  Remarks at Boise, Idaho
 
