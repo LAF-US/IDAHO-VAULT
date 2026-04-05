@@ -12,38 +12,38 @@
 }
 
 body.roygbiv-sun {
-  --interactive-accent: var(--roygbiv-violet);
-  --text-accent: var(--roygbiv-violet);
+  --interactive-accent: var(--roygbiv-violet) !important;
+  --text-accent: var(--roygbiv-violet) !important;
 }
 
 body.roygbiv-mon {
-  --interactive-accent: var(--roygbiv-red);
-  --text-accent: var(--roygbiv-red);
+  --interactive-accent: var(--roygbiv-red) !important;
+  --text-accent: var(--roygbiv-red) !important;
 }
 
 body.roygbiv-tue {
-  --interactive-accent: var(--roygbiv-orange);
-  --text-accent: var(--roygbiv-orange);
+  --interactive-accent: var(--roygbiv-orange) !important;
+  --text-accent: var(--roygbiv-orange) !important;
 }
 
 body.roygbiv-wed {
-  --interactive-accent: var(--roygbiv-yellow);
-  --text-accent: var(--roygbiv-yellow);
+  --interactive-accent: var(--roygbiv-yellow) !important;
+  --text-accent: var(--roygbiv-yellow) !important;
 }
 
 body.roygbiv-thu {
-  --interactive-accent: var(--roygbiv-green);
-  --text-accent: var(--roygbiv-green);
+  --interactive-accent: var(--roygbiv-green) !important;
+  --text-accent: var(--roygbiv-green) !important;
 }
 
 body.roygbiv-fri {
-  --interactive-accent: var(--roygbiv-blue);
-  --text-accent: var(--roygbiv-blue);
+  --interactive-accent: var(--roygbiv-blue) !important;
+  --text-accent: var(--roygbiv-blue) !important;
 }
 
 body.roygbiv-sat {
-  --interactive-accent: var(--roygbiv-indigo);
-  --text-accent: var(--roygbiv-indigo);
+  --interactive-accent: var(--roygbiv-indigo) !important;
+  --text-accent: var(--roygbiv-indigo) !important;
 }
 
 .workspace-tab-header.is-active,
