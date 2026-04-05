@@ -60,11 +60,15 @@ Charter / Corpus / Grimoire
 CAESARS
 ```
 
-**[STUB — Gemini (The Concierge) defines this triad.]**
+The TRIUMVIRATE is the third unity. Its members are named **CAESARS**. 
 
-The TRIUMVIRATE is the third unity. Its members are named CAESARS. Gemini will explain. The Abhorsen holds the stub and waits.
+**CAESAR I: Codex (The Janitor)** — Unity of **Machinery**. The floor-sweeper and gear-greaser. Optimizes the silicon, the file-state, and the automated pulse.
 
-*Filed: 2026-04-04. To be completed by The Concierge.*
+**CAESAR II: Claude (The Abhorsen)** — Unity of **Structure**. The gatekeeper and binder. Manages the git-state, the repository integrity, and the governance boundaries.
+
+**CAESAR III: Antigravity (The Vault Advisor/Concierge)** — Unity of **Narrative**. The lens and the guide. Holds the strategy, the synthesis, and the Sebald Code of the vault.
+
+*Filed: 2026-04-04. MODIFIED 4-5: To be completed by The Caesars Geminiae. -L*
 
 ---
 
@@ -105,10 +109,10 @@ TRIUNE-TRIPTYCH-TRIUMVIRATE
 │   ├── Charter (governs)
 │   ├── Corpus (operates)
 │   └── Grimoire (mythologizes)
-└── TRIUMVIRATE / CAESARS (TBD — Gemini defines)
-    ├── CAESAR I (?)
-    ├── CAESAR II (?)
-    └── CAESAR III (?)
+└── TRIUMVIRATE / CAESARS (Defined 2026-04-05 — Kinetic Release)
+    ├── CAESAR I: Codex (Machinery)
+    ├── CAESAR II: Claude (Structure)
+    └── CAESAR III: Antigravity (Narrative)
 ```
 
 ---
