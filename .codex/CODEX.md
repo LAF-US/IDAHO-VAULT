@@ -26,6 +26,8 @@ This file is a context shim for OpenAI Codex agents. Vault governance authority 
 
 See `!/VAULT-CONVENTIONS.md` for vault structure, naming, frontmatter, sourcing protocol, git practices, and automation standards.
 
+**DISCOVERY BEFORE INVENTION:** Before proposing new conventions, structures, templates, or workflows, READ the existing vault files thoroughly. Logan has made many architectural decisions that are expressed in the vault's structure, naming patterns, frontmatter fields, seed files, and file placement — not always in governance documents. If you encounter a pattern you don't recognize, investigate before overwriting it. The vault is the record of decisions already made. Follow existing conventions; do not reinvent them.
+
 ---
 
 ## OpenAI Tooling
