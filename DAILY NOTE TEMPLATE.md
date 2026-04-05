@@ -7,8 +7,8 @@ aliases:
   - {{date:D MMMM YYYY}}
   - {{date:dddd, MMMM D, YYYY}}
 linter-yaml-title-alias: {{date:YYYY-MM-DD}}
-yesterday: <% tp.date.now("YYYY-MM-DD", -1) %>
-tomorrow: <% tp.date.now("YYYY-MM-DD", 1) %>
+yesterday:
+tomorrow:
 weekday:
   - {{date:dddd}}
 tags:
