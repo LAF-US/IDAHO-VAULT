@@ -56,6 +56,7 @@ Thumbs.db
 *.png
 *.gif
 *.webp
+*.webm
 *.svg
 *.heic
 *.mp4
@@ -140,6 +141,10 @@ _phone-link-sweep.log
 
 # Obsidian plugin cache directories (machine-generated, not source-trackable)
 .obsidian/plugins/*/cache/
+.makemd/
+.space/
+BMO/
+Tags/
 
 # Obsidian plugin compiled binaries (too large, not source-trackable)
 .obsidian/plugins/mcp-tools/bin/
