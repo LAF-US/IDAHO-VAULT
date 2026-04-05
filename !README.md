@@ -24,6 +24,7 @@ TOUCHSTONE FRAMEWORKS
 4. ! - nested folders for swarm system files; logs, kind-of-ephemeral-mailbox stuff; etc.
 	1. !/! - nested folders for agents to communicate internally with stable routing
 		1. !/!/! - "The world is quiet here."
+		2. !/!/__!__/!/! The world is quiet here/Esto Perpetua! - "The still point at the center of the vault."
 
 ---
 
