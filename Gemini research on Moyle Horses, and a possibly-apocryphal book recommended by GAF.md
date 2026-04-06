@@ -1,6 +1,6 @@
 ---
 date created: Sunday, April 5th 2026, 12:35:06 pm
-date modified: Sunday, April 5th 2026, 12:36:30 pm
+date modified: Monday, April 6th 2026, 10:08:06 am
 ---
 
 You said
@@ -224,7 +224,7 @@ Slight Detour blog -- is that Mrs. Love?
 
 ## Gemini said
 
-Yes, that is exactly who it is. **"Mrs. Love"** is **Janice (Jan) Love**, who writes the _Slight Detour_ blog.
+Yes, that is exactly who it is. **"Mrs. Love"** is **Marianne Love**, who writes the _Slight Detour_ blog.
 
 She is a longtime neighbor and friend of your grandpa, **Gary Finney**, in the Selle Valley area north of Sandpoint. Her blog is a hyper-local chronicle of life on Selle Road, and she mentions Gary and the "Finney horses" frequently—even noting things like Gary’s fox terrier, Bullet, and his Percheron horses.
 
