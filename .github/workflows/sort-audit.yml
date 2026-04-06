@@ -35,7 +35,7 @@ jobs:
         run: echo "today=$(date -u +%Y-%m-%d)" >> "$GITHUB_OUTPUT"
 
       - name: Create sort audit pull request
-        uses: peter-evans/create-pull-request@v7
+        uses: peter-evans/create-pull-request@v8
         with:
           branch: bot/sort-audit-${{ steps.date.outputs.today }}
           commit-message: "sort audit ${{ steps.date.outputs.today }}"
