@@ -1,9 +1,10 @@
 ---
 title: "BRIEF — Bartimaeus in the CrewAI Era"
-date created: 2026-04-04
+date created: Saturday, April 4th 2026, 4:08:43 pm
 authority: LOGAN
 doc_class: brief
 status: draft
+date modified: Sunday, April 5th 2026, 10:07:56 am
 ---
 
 # BRIEF — Bartimaeus in the CrewAI Era

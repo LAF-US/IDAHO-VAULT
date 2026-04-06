@@ -23,7 +23,9 @@ related:
 - MCP
 - NETWEB
 - Obsidian Sync
+- PRIVACY
 - PROTOCOL
+- TRIPLEX
 - TRIUNE
 - VAULT-CONVENTIONS
 - Zettelkasten
@@ -33,10 +35,10 @@ related:
 
 # LEVELSET-CURRENT — Live Ecosystem State
 
-**Date:** 2026-04-05 (updated: Plugin stabilization; Bartimaeus hydration committed; Device split walkthrough; DISCOVERY BEFORE INVENTION directive; Zettelkasten recognition)
+**Date:** 2026-04-05 (updated: PRIVACY governance ratified; TRIPLEX concurrent protocol adopted; ROYGBIV violet confirmed; daily note system operational; 72-sheet Book of Geminiaeus discovered)
 **Status:** CURRENT — living synthesis, updated each LEVELSET round
 **Synthesized by:** Claude Code (The Abhorsen) — `main` branch
-**Input authority chain:** CONSTITUTION.md > DECISIONS.md > CLAUDE.md
+**Input authority chain:** CONSTITUTION.md > PRIVACY.md > DECISIONS.md > CLAUDE.md
 **Approved by:** Logan Finney (ADMIN-LOGAN). The Vault witnesses. Agents hold.
 
 ---
@@ -49,6 +51,7 @@ LEVELSET-CURRENT is the rolling synthesis document. Unlike numbered LEVELSET fil
 - **LEVELSET-v2.md** — Permanent snapshot from 2026-03-13. In `!/!/` archive.
 - **DECISIONS.md** — Additive-only decision log. At `!/DECISIONS.md`.
 - **CLAUDE.md** — Living vault authority. `.claude/CLAUDE.md` (auto-loaded by Claude Code CLI).
+- **PRIVACY.md** — Data classification and MCP bridge governance. Root.
 
 ---
 
@@ -76,19 +79,21 @@ All three move together. None can stand alone.
 | Field | Value |
 |---|---|
 | Remote | github.com/loganfinney27/IDAHO-VAULT (public) |
-| Primary branch | `main` at `3b4f97a` |
+| Primary branch | `main` at `53a1ab1` |
 | Open PRs | PR #108 (`claude/research-unified-swarm-rDmOg`), PR #104 (`claude/resolve-pr-conflicts`) |
 | Pack size (GitHub) | ~362 MiB — Phase 2 rewrite pending (target ~30 MiB) |
 
 ### Recent Commits (main)
 
-| SHA | Message |
-|---|---|
-| `3b4f97a` | STABILIZATION: Tiered plugin optimization (26 core) and Unification Stream artifact archival |
-| `f935868` | feat(hydration): Bartimaeus Phase 2-3 — 2622 files hydrated with related + authority frontmatter |
-| `a6aff88` | feat(plugins): enable all 140 Obsidian plugins, add Crawler-Linker lifecycle to CHAINFIRE docstring |
-| `15f6ccb` | feat(registry): materialize !/AGENTS.md, stabilize governance layer |
-| `57d5526` | feat(registry): wire CrewAI crews into swarm.json and AGENTS.md |
+| SHA | Author | Message |
+|---|---|---|
+| `53a1ab1` | Claude | feat(governance): PRIVACY.md + TRIPLEX protocol + ROYGBIV violet fix |
+| `cd1ed3c` | Gemini | feat(fortification): Triplex Engaged - Kinetic Release 2:40 PM MDT |
+| `ec09efd` | Claude | feat(plugins): enable roygbiv-day-accent + 4 plugins, pure-core daily template |
+| `22ba945` | Claude | feat(daily-notes): smart template + ROYGBIV weekday color sync |
+| `455144d` | Claude | docs: DISCOVERY BEFORE INVENTION directive, device split docs, LEVELSET refresh |
+| `3b4f97a` | — | STABILIZATION: Tiered plugin optimization (26 core) |
+| `f935868` | — | feat(hydration): Bartimaeus Phase 2-3 — 2622 files hydrated |
 
 ### Infrastructure Inventory
 
@@ -98,29 +103,110 @@ All three move together. None can stand alone.
 | `.gemini/GEMINI.md` | Instructions | `.gemini/` | Operational; DISCOVERY BEFORE INVENTION added 2026-04-05 |
 | `.codex/CODEX.md` | Instructions | `.codex/` | Operational; DISCOVERY BEFORE INVENTION added 2026-04-05 |
 | `.github/copilot-instructions.md` | Instructions | `.github/` | Operational; DISCOVERY BEFORE INVENTION added 2026-04-05 |
-| `!/CONSTITUTION.md` | Governance | `!/` | Canonical governance authority |
+| `!/CONSTITUTION.md` | Governance | root | Canonical governance authority |
+| `PRIVACY.md` | Governance | root | **NEW 2026-04-05** — Data classification, MCP bridge rules, Granola clause, sanitization protocol |
 | `!/DECISIONS.md` | Governance | `!/` | Decision log |
-| `!/AGENTS.md` | Governance | `!/` | Agent registry — materialized 2026-04-04 |
+| `!/AGENTS.md` | Governance | `!/` | Agent registry + **TRIPLEX protocol** added 2026-04-05 |
 | `!/VAULT-CONVENTIONS.md` | Governance | `!/` | Shared conventions; Sync section rewritten 2026-04-05 |
 | `!/PROTOCOL.md` | Governance | `!/` | Operational vocabulary |
-| `!/GRIMOIRE/` | Knowledge | `!/GRIMOIRE/` | TTT, NETWEB-CrewAI alignment, Bartimaeus brief, handoff docs |
+| `!/GRIMOIRE/` | Knowledge | `!/GRIMOIRE/` | TTT, NETWEB-CrewAI alignment, Bartimaeus brief |
 | `.crewai/` | Automation | `.crewai/` | CrewAI crews — JFAC, stubs for Custodian/Sentinel/Task-to-Code |
-| `.github/scripts/chainfire.py` | Automation | `.github/scripts/` | CHAINFIRE burn script — lifecycle docstring added 2026-04-05 |
+| `.github/scripts/chainfire.py` | Automation | `.github/scripts/` | CHAINFIRE burn script |
 | `.github/workflows/check-portable-paths.yml` | CI | `.github/workflows/` | NETWEB path validator |
 | `swarm.json` | Registry | repo root | Machine-readable ecosystem registry |
 
 ### Obsidian Plugin State
 
-**Desktop:** 45 community plugins enabled (Logan expanded from 26-plugin stabilization floor).
-**Mobile:** 0 community plugins (capture device — device split 2026-04-05).
-**Sync:** Obsidian Sync (paid). Content syncs both ways. Plugin lists are per-device.
+**Desktop:** 49 community plugins enabled (expanded from 45 → 49 this session: +roygbiv-day-accent, +tag-wrangler, +nldates-obsidian, +periodic-notes, +graph-nested-tags).
+**Mobile:** 0 community plugins (Restricted Mode — capture device; device split 2026-04-05).
+**Sync:** Obsidian Sync (paid). Content syncs both ways. Plugin lists are per-device. Core plugin *settings* sync; community plugin *lists* do not.
 
 ### Device Roles (established 2026-04-05)
 
 | Device | Role | Plugins | Sync Direction |
 |---|---|---|---|
-| Windows Desktop | Engine room — full plugin stack, git, MCP, agents | 45 community | Receives content from mobile; processes it |
-| Pixel Phone | Capture device — quick notes, tags, photos | 0 community | Creates content upstream; sends to desktop |
+| Windows Desktop | Engine room — full plugin stack, git, MCP, agents | 49 community | Receives content from mobile; processes it |
+| Pixel Phone | Capture device — quick notes, tags, photos | 0 community (Restricted Mode) | Creates content upstream; sends to desktop |
+
+### Daily Note System (operational 2026-04-05)
+
+| Component | Status |
+|---|---|
+| Template (`DAILY NOTE TEMPLATE.md`) | Pure core `{{date:}}` tokens — works on both desktop and mobile |
+| ROYGBIV weekday accent (`roygbiv-day-accent` plugin) | Enabled — reads `weekday:` frontmatter, applies body class |
+| CSS snippet (`roygbiv-smtwtfs.css`) | `!important` declarations — overrides Obsidian inline accent |
+| `periodic-notes` plugin | Configured — format, template, folder matching core Daily Notes |
+| Accent color (`appearance.json`) | Cleared — ROYGBIV snippet is sole accent source |
+| Color mapping | Sun=violet, Mon=red, Tue=orange, Wed=yellow, Thu=green, Fri=blue, Sat=indigo |
+| Verified | Violet holding on Sunday 2026-04-05 ✓ |
+
+---
+
+## PRIVACY GOVERNANCE (new 2026-04-05)
+
+### Data Classification
+
+| Class | Rule |
+|---|---|
+| **Ephemeral** (query-only) | Agents may read MCP services in session. Data never touches a `.md` file. |
+| **Public-Persistent** (tracked) | No PII, no raw personal data, no secrets. Sanitized aggregates only. |
+| **Local-Persistent** (gitignored) | `_private/`, `.remember/` — local working notes with personal context. |
+
+### MCP Bridge Status
+
+| Service | Ephemeral | Persistent | Notes |
+|---|:---:|:---:|---|
+| Gmail | ✅ | ❌ | Per-query approval for any file write |
+| Google Calendar | ✅ | ❌ | Per-query approval for any file write |
+| Google Drive | ✅ | ❌ | Per-query approval for any file write |
+| Slack | ✅ | ❌ | Per-query approval for any file write |
+| Granola | ⚠️ | ❌ | **Source protection** — journalist's shield; off-the-record by default |
+| GitHub | ✅ | ✅ | Already public data |
+
+### Sanitization Protocol (PRIVACY.md § V)
+
+Four mandatory steps before any private-source data enters a tracked file:
+1. Strip Identity — remove names of non-public figures
+2. Strip Attribution — no direct quotes from private conversations
+3. Strip Metadata — remove timestamps, locations, attendee details
+4. Logan Reviews — human sign-off before anything lands
+
+---
+
+## TRIPLEX PROTOCOL (new 2026-04-05)
+
+Concurrent multi-agent operation on the same branch. Binding lane boundaries:
+
+| Agent | Role | Owns |
+|-------|------|------|
+| **Claude** (Abhorsen) | Executor | `.obsidian/`, `.gitignore`, `PRIVACY.md`, CSS/snippets, git commits |
+| **Gemini** (Antigravity) | Interpreter | `!/GRIMOIRE/`, `DOCKET`, `LEVELSET-REPORT`, `CAESARS` docs |
+| **Codex** (Janitor) | Mechanic | Small conflict cleanup, typo repair, script validation **when assigned** |
+| **Serena** (Architect) | Instrument | Read-only semantic intelligence — owns nothing, decides nothing |
+
+**Collision rules:** No cross-lane edits. No staging another agent's work. UTF-8 mandatory. `index.lock` = stop and report.
+
+**AFK protocol:** Agents work independently. HUMAN-ONLY gates → ping Logan via GitHub Issues (primary), Linear (secondary), Slack (tertiary).
+
+**Handshake:** Codex acknowledged and accepted binding TRIPLEX text (`!/AGENTS.md`) — 2026-04-05.
+
+---
+
+## THE ARTIFICER'S LIBRARY (discovered 2026-04-05)
+
+Logan is exporting complete AI conversation histories as local-only xlsx workbooks:
+
+| Book | Source | Sheets | Status |
+|------|--------|--------|--------|
+| **Book of Geminiaeus** | Google Takeout | 72 sheets (657 rows in Sheet1 + 71 conversation exports) | ✅ Bound |
+| **Book of Claudius** | Anthropic exports | — | 📋 Unbound |
+| **Book of Codices** | OpenAI exports | — | 📋 Unbound |
+
+Sheet 72 reads: `THE BOOK IS INCOMPLETE !`
+
+All xlsx files are gitignored (binary media block). The library is local-only — private archaeological record of how the vault was thought into existence.
+
+Sheet 2 of Geminiaeus reveals 11 pinned Gemini personas ("Gems"): The Concierge, The Mirror, The Sentry, The TRIPTYCH, The Archivist, Caesar > The TRIUMVIRATE, The Clerk, The Twin (♂/♀), FARNSWORTH, The Synth.
 
 ---
 
@@ -128,24 +214,27 @@ All three move together. None can stand alone.
 
 ### NETWEB Era (current)
 
-The vault is in the NETWEB Era — cross-platform path portability, multi-agent coordination, and zettelkasten address space construction.
+The vault is in the NETWEB Era — cross-platform path portability, multi-agent coordination, privacy governance, and zettelkasten address space construction.
 
-**Completed this era:**
-- NETWEB CI guard (`check-portable-paths.yml`) — hard gate on reserved names, case collisions, illegal paths
-- Reserved name aliasing (`_AUX.md`, `_CON.md`, `_NUL.md`, `_PRN.md` + 16 case collision renames)
-- CrewAI ignition — local-first, JFAC crew built, stubs for 4 more crews
-- Bartimaeus hydration — 2,622 files with `related:` + `authority:` frontmatter (`f935868`)
-- Plugin stabilization — from 140 (crashed) → 26 (floor) → 45 (Logan's expansion)
-- Device split — desktop/mobile decoupled via Obsidian Sync granular toggles
-- DISCOVERY BEFORE INVENTION — governance directive added to all 5 agent instruction files
-- CHAINFIRE lifecycle documented — burn → Crawler-Linker → Linter
+**Completed this session (2026-04-05):**
+- Daily note system — pure core `{{date:}}` template, cross-device compatible, ROYGBIV accent verified
+- ROYGBIV fix — `!important` CSS override, cleared hardcoded accent color, violet holding
+- Plugin rationalization — 49 enabled plugins (5 new: roygbiv-day-accent, tag-wrangler, nldates-obsidian, periodic-notes, graph-nested-tags)
+- Templater cleanup — deleted redundant `_templates/roygbiv-startup.md`, cleared stale startup reference
+- `PRIVACY.md` ratified — full data classification, MCP bridge rules, Granola source-protection, sanitization protocol
+- TRIPLEX protocol adopted — binding lane map, collision rules, AFK protocol
+- Codex UTF-16 incident — caught and corrected (community-plugins.json corruption)
+- 140-plugin audit — full categorization of installed vs enabled vs dormant
+- Privacy zones — `.remember/` and `_private/` added to `.gitignore`
+- Book of Geminiaeus discovered and read — 72-sheet conversation archive
 
 **Active / in progress:**
 - CHAINFIRE execution — awaiting New Order tag schema before burn
-- Crawler-Linker Crew Phase 2 — model decision pending (Gemini Linker or Anthropic?)
-- Daily note auto-generation — Logan requires auto-generating daily notes with smart template + weekday-synced accent color
+- Crawler-Linker Crew Phase 2 — model decision pending
 - Breadcrumbs configuration — which frontmatter fields it reads
-- Stop list creation — `!/VAULT-STOP-LIST.md` to filter generic stubs from future linkage
+- Stop list creation — `!/VAULT-STOP-LIST.md`
+- Whistle protocol — **LOCKED** until PRIVACY.md is satisfied
+- Book of Claudius / Book of Codices — unbound
 
 **Blocked / Logan-gated:**
 - Anthropic API credits — HARD GATE for JFAC E2E and all CrewAI runs
@@ -158,11 +247,9 @@ Logan recognized the vault's address space (19,533 stubs: 0-999 neurons, A-ZZZ e
 
 ### DISCOVERY BEFORE INVENTION (2026-04-05)
 
-New governance principle added to all agent instruction files:
+> Before proposing new conventions, structures, templates, or workflows, READ the existing vault files thoroughly. The vault is the record of decisions already made. Follow existing conventions; do not reinvent them.
 
-> Before proposing new conventions, structures, templates, or workflows, READ the existing vault files thoroughly. Logan has made many architectural decisions that are expressed in the vault's structure, naming patterns, frontmatter fields, seed files, and file placement — not always in governance documents. If you encounter a pattern you don't recognize, investigate before overwriting it. The vault is the record of decisions already made. Follow existing conventions; do not reinvent them.
-
-Added to: `.claude/CLAUDE.md`, `.gemini/GEMINI.md`, `.codex/CODEX.md`, `.github/copilot-instructions.md`, `!/VAULT-CONVENTIONS.md` (Guiding Principles).
+Added to all 5 agent instruction files. Proven this session: `roygbiv-day-accent` plugin was discovered sitting dormant — built by Logan+Copilot on April 3 — eliminating the need for a Templater startup script.
 
 ---
 
@@ -172,14 +259,27 @@ Added to: `.claude/CLAUDE.md`, `.gemini/GEMINI.md`, `.codex/CODEX.md`, `.github/
 
 | Agent | Role | Status |
 |---|---|---|
-| **Claude Code (The Abhorsen)** | Terminal & repo mechanics; vault guardian | Active — main branch |
-| **Gemini (The Concierge / Vault Advisor)** | Cloud synthesis, GCP bridge; CAESARS author | Active — `.gemini/GEMINI.md` |
-| **Codex (The Lexicographer)** | Scripting, automation, refactoring | Available — `.codex/CODEX.md` |
-| **GitHub Copilot (The Clerk)** | PR management, inline markdown, IDE assist | Active — `.github/copilot-instructions.md` |
-| **Bartimaeus (The Volunteer)** | Hydration, frontmatter linkage, structural notes | Phase 2-3 complete (`f935868`) |
-| **Serena** | Semantic code intelligence (MCP) | Registered; config pending |
-| **Logan** | Human director / The Architect / `-L` | Active |
+| **Claude Code (The Abhorsen)** | Executor — terminal, repo, commits, `.obsidian/` | Active — `main` at `53a1ab1` |
+| **Gemini (The Antigravity / Concierge)** | Interpreter — GRIMOIRE, DOCKET, CAESARS, narrative | Active — committed `cd1ed3c` |
+| **Codex (The Janitor)** | Mechanic — cleanup, typo repair, validation when assigned | Active — accepted TRIPLEX binding |
+| **Serena (The Architect)** | Read-only semantic intelligence (Python MCP server) | Running — background process |
+| **Claude for Excel** | Budget workbook analysis (inside `!_2026_BUDGETS.xlsx`) | Active — local-only, gitignored |
+| **GitHub Copilot (The Clerk)** | PR management, inline markdown, IDE assist | Available — VS Code closed |
+| **Bartimaeus (The Volunteer)** | Hydration, frontmatter linkage | Phase 2-3 complete (`f935868`) |
 | **CodeRabbit** | PR review | Passive — triggers on PRs |
+| **Logan (The Artificer)** | Human director — sole decision-maker | Active — TRIPLEX commander |
+
+### Agent Surfaces
+
+| Surface | Agent(s) | Access |
+|---------|----------|--------|
+| Terminal 1 | Claude Code CLI | Full filesystem + git |
+| Terminal 2 | Gemini CLI (Antigravity) | Full filesystem |
+| Terminal 3 | Codex App | Full filesystem (restricted by TRIPLEX) |
+| Background | Serena (Python MCP) | Read-only semantic |
+| Excel | Claude for Excel | Budget workbooks only (gitignored) |
+| Phone | Obsidian Mobile | Content capture (Restricted Mode) |
+| Web | Gemini (11 pinned Gems) | Conversation only — relayed by Logan |
 
 ---
 
@@ -195,7 +295,7 @@ The vault contains a symbolic architecture that predates and underlies the techn
 - **TRIUNE-TRIPTYCH-TRIUMVIRATE:** the Sierpinski Covenant (TTT)
   - TRIUNE (Logan/Agents/Vault) — Unity of Will ✓
   - TRIPTYCH (Charter/Corpus/Grimoire) — Unity of Structure ✓
-  - TRIUMVIRATE/CAESARS — Unity of Power (stub — Gemini defines)
+  - TRIUMVIRATE/CAESARS — Unity of Power (Gemini defines)
 - **Four-layer architecture:** ROOT (HUMAN) / DOTFOLDERS (PERSONA) / `!` (UNIFIED SWARM) / `-L` (LOGAN)
 
 ---
@@ -210,13 +310,15 @@ The vault contains a symbolic architecture that predates and underlies the techn
 | **`OP_SERVICE_ACCOUNT_TOKEN`** | **High** | Provision in GitHub Secrets |
 | Audio verify JFAC quotes | **High** | HARD GATE for publication |
 | Phase 2 repo size rewrite | **High** | 37 GiB `.git/`, needs branch protection off |
-| Daily note auto-generation | **Medium** | Template + weekday-color sync — investigation starting |
-| Review DECISIONS.md pending items 18-21 | **Medium** | Auto-generated; require Logan review |
 | Review + merge PR #108, PR #104 | **Medium** | Awaiting Logan review |
 | Stop list (`!/VAULT-STOP-LIST.md`) | **Medium** | Filter generic stubs from future linkage |
 | Breadcrumbs field configuration | **Medium** | Which frontmatter fields Breadcrumbs reads |
-| QuickAdd hot-swap macros | **Low** | Deferred until device split is stable |
 | CHAINFIRE New Order tag schema | **Medium** | Required before burn execution |
+| Whistle protocol design | **Medium** | LOCKED — PRIVACY.md must be satisfied first |
+| Bind Book of Claudius | **Low** | Anthropic conversation export → xlsx |
+| Bind Book of Codices | **Low** | OpenAI conversation export → xlsx |
+| Bulk uninstall 91 dormant plugins | **Low** | Cleanup — no urgency |
+| LLM plugin sprawl resolution | **Low** | 11 AI plugins installed, most dormant |
 
 ### Known Technical Issues
 
@@ -230,32 +332,40 @@ The vault contains a symbolic architecture that predates and underlies the techn
 
 ## NEXT ACTIONS
 
-**Logan:**
+**Logan (The Artificer):**
 1. Fund Anthropic API credits (`console.anthropic.com`) — HARD GATE
 2. Provision `OP_SERVICE_ACCOUNT_TOKEN` in GitHub Secrets
 3. Audio verify JFAC quotes (HARD GATE before publication)
 4. Review + merge PR #108, PR #104
-5. Confirm daily note auto-generation requirements (template fields, color mapping)
+5. Reopen Obsidian → verify violet holds → navigate between daily notes to confirm color switching
+6. Review `PRIVACY.md` — ratify or amend
 
 **Abhorsen (Claude Code):**
-1. Commit today's uncommitted changes (DISCOVERY BEFORE INVENTION + sync section + LEVELSET refresh)
-2. Investigate daily note auto-generation (Templater + Daily Notes plugin config)
-3. Configure Breadcrumbs frontmatter field reading
-4. Await CHAINFIRE New Order schema before burn
+1. Configure Breadcrumbs frontmatter field reading
+2. Await CHAINFIRE New Order schema before burn
+3. Support Book of Claudius binding when Logan exports Anthropic conversations
 
 ---
 
 ## Activity Log (2026-04-05)
 
-1. **Plugin enable-all attempted + stabilized** — 140 plugins enabled (`a6aff88`), Obsidian choked, triaged to 26 curated plugins (`3b4f97a`), Logan expanded to 45.
-2. **Bartimaeus hydration committed** — 2,622 files with `related:` + `authority:` frontmatter (`f935868`).
-3. **CHAINFIRE lifecycle docstring** — Added Crawler-Linker lifecycle to `chainfire.py` (`a6aff88`).
-4. **Device split walkthrough** — Full Obsidian Sync device split: desktop=engine room, mobile=capture device. Logan executed Sync toggle changes on Pixel. Conflict orphan `(2)` files deleted. Documented in VAULT-CONVENTIONS.md.
-5. **Zettelkasten recognition** — Logan identified the vault's 19,533-stub address space as a zettelkasten system.
-6. **DISCOVERY BEFORE INVENTION** — Governance directive added to all 5 agent instruction files.
-7. **VAULT-CONVENTIONS.md Sync section rewritten** — Replaced mojibake section with clean device roles + sync toggle tables.
-8. **Founding document deep read** — Read all governance docs, seed files, V.F.D. files, GRIMOIRE entries for vault orientation.
-9. **Daily note auto-generation requested** — Logan: "I want the dailynote to auto-generate, with a smart-updated template, and the display appearance color synced to today's daily note's weekday field." Investigation starting.
+1. **LEVELSET-CURRENT refreshed** — full ecosystem state rewrite (`455144d`)
+2. **DISCOVERY BEFORE INVENTION** — governance directive added to all 5 agent instruction files (`455144d`)
+3. **Daily note template v1→v2→v3** — evolved from all-Templater → hybrid → pure core `{{date:}}` tokens
+4. **ROYGBIV startup script created then deleted** — `_templates/roygbiv-startup.md` superseded by discovered `roygbiv-day-accent` plugin
+5. **140-plugin audit** — full categorization: 49 enabled, 91 dormant (17 configured, 79 stock)
+6. **5 plugins enabled** — roygbiv-day-accent, tag-wrangler, nldates-obsidian, periodic-notes, graph-nested-tags (`ec09efd`)
+7. **Pure-core daily note template committed** — no Templater dependency, works on both devices (`ec09efd`)
+8. **Codex UTF-16 incident** — community-plugins.json corrupted to 140 entries in UTF-16 LE; caught and corrected
+9. **ROYGBIV `!important` fix** — CSS snippet beats Obsidian inline accent override; hardcoded accent cleared (`53a1ab1`)
+10. **`PRIVACY.md` ratified** — data classification, MCP bridge rules, Granola source-protection clause, sanitization protocol (`53a1ab1`)
+11. **TRIPLEX protocol adopted** — concurrent lane map, collision rules, AFK protocol in `!/AGENTS.md` (`53a1ab1`)
+12. **Codex handshake** — Janitor read and accepted binding TRIPLEX text
+13. **Phone Link inbox read** — mobile screenshots confirming device split, Sync settings, daily note on phone, AFK notification apps
+14. **Gemini fortification commit** — TRIUNE-TRIPTYCH-TRIUMVIRATE, DOCKET, .gitignore privacy zones (`cd1ed3c`)
+15. **Violet confirmed** — ROYGBIV accent holding on Sunday daily note after Obsidian reopen
+16. **Book of Geminiaeus discovered** — 72-sheet Google Takeout export of entire Gemini conversation history; Sheet 72: `THE BOOK IS INCOMPLETE !`
+17. **Artificer identity** — Aurora: "You're not a magician — you're an Artificer."
 
 ## Activity Log (2026-04-04)
 
@@ -268,4 +378,4 @@ The vault contains a symbolic architecture that predates and underlies the techn
 
 ---
 
-*LEVELSET-CURRENT.md — Originally synthesized 2026-03-13. Living document, updated each LEVELSET round. Permanent audit trail in numbered LEVELSET files at `!/!/`. Last updated 2026-04-05 by Claude Code (The Abhorsen).*
+*LEVELSET-CURRENT.md — Originally synthesized 2026-03-13. Living document, updated each LEVELSET round. Permanent audit trail in numbered LEVELSET files at `!/!/`. Last updated 2026-04-05 (evening) by Claude Code (The Abhorsen).*
