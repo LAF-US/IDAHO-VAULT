@@ -143,39 +143,37 @@ def _dump_structured(data: dict[str, Any]) -> str:
 def _resolve_issue(identifier: str, *, api_key: str) -> dict[str, Any]:
     """Resolve a human identifier (e.g. 'LAF-7') to the full issue object.
 
-    Linear's ``issue(id: ...)`` field expects an internal UUID; human identifiers
-    like 'LAF-7' must be resolved via the ``issues`` collection filter instead.
-    Returns the first matching issue node (includes team + team states).
+    The Linear GraphQL API supports fetching an issue directly by its human identifier
+    via the top-level `issue(id: String!)` field.
+    Returns the matching issue node (includes team + team states).
     Raises RuntimeError if no match is found.
     """
     query = """
-    query GetIssueByIdentifier($identifier: String!) {
-      issues(filter: { identifier: { eq: $identifier } }) {
-        nodes {
+    query GetIssueByIdentifier($id: String!) {
+      issue(id: $id) {
+        id
+        identifier
+        title
+        description
+        state { name type }
+        assignee { name email }
+        labels { nodes { name } }
+        priority
+        updatedAt
+        url
+        team {
           id
-          identifier
-          title
-          description
-          state { name type }
-          assignee { name email }
-          labels { nodes { name } }
-          priority
-          updatedAt
-          url
-          team {
-            id
-            name
-            states { nodes { id name type } }
-          }
+          name
+          states { nodes { id name type } }
         }
       }
     }
     """
-    data = _gql(query, {"identifier": identifier}, api_key=api_key)
-    nodes = (data.get("issues") or {}).get("nodes") or []
-    if not nodes:
+    data = _gql(query, {"id": identifier}, api_key=api_key)
+    node = data.get("issue")
+    if not node:
         raise RuntimeError(f"No Linear issue found for identifier '{identifier}'.")
-    return nodes[0]
+    return node
 
 
 
