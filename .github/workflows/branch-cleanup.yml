@@ -52,6 +52,9 @@ jobs:
           EVENT_NAME: ${{ github.event_name }}
           PR_HEAD_REF: ${{ github.event.pull_request.head.ref }}
           DRY_RUN: ${{ inputs.dry_run || 'false' }}
+          # Retention policy thresholds for no-PR branches
+          STALE_AGE_DAYS: 7
+          STALE_BEHIND_COMMITS: 100
         run: |
           # Must stay in sync with branch triggers in auto-pr.yml
           AGENT_PREFIXES="claude codex gemini copilot perplexity grok bot serena"
@@ -111,14 +114,30 @@ jobs:
                   KEPT=$((KEPT + 1))
                 fi
               else
-                # No PR at all — check if 0 commits ahead of main (zombie)
+                # No PR at all — check age and distance from main
                 AHEAD=$(git rev-list "origin/main..origin/${REF}" --count 2>/dev/null || echo "0")
+                BEHIND=$(git rev-list "origin/${REF}..origin/main" --count 2>/dev/null || echo "0")
+                # Age in days (seconds since last commit / 86400)
+                LAST_COMMIT_TS=$(git log -1 --format="%ct" "origin/${REF}" 2>/dev/null || echo "0")
+                NOW_TS=$(date +%s)
+                if [ "$LAST_COMMIT_TS" -gt 0 ]; then
+                  # Integer division (floor); sub-day precision not needed for the 7-day threshold
+                  AGE_DAYS=$(( (NOW_TS - LAST_COMMIT_TS) / 86400 ))
+                else
+                  AGE_DAYS=0
+                fi
                 if [ "$AHEAD" = "0" ]; then
                   # Nothing unique — zombie branch, safe to delete
                   delete_branch "$REF" "zombie: no PR, 0 ahead of main"
+                elif [ "$BEHIND" -ge "${STALE_BEHIND_COMMITS}" ]; then
+                  # Far behind main — priority prune
+                  delete_branch "$REF" "stale: no PR, ${BEHIND} behind main"
+                elif [ "$AGE_DAYS" -ge "${STALE_AGE_DAYS}" ]; then
+                  # Older than retention threshold with no PR — prune
+                  delete_branch "$REF" "stale: no PR, ${AGE_DAYS} days old"
                 else
-                  # Has unique commits, no PR yet → keep (agent may still be working)
-                  echo "  Keeping (no PR, ${AHEAD} ahead): $REF"
+                  # Recent branch with unique commits and no PR yet → keep
+                  echo "  Keeping (no PR, ${AHEAD} ahead, ${AGE_DAYS}d old): $REF"
                   KEPT=$((KEPT + 1))
                 fi
               fi
