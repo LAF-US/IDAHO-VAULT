@@ -1,13 +1,32 @@
 ---
-source: "https://www.mountainstatespolicy.org/post/mspc-provides-digital-safety-keynote-address-at-idaho-department-of-education-conference"
+source: https://www.mountainstatespolicy.org/post/mspc-provides-digital-safety-keynote-address-at-idaho-department-of-education-conference
 author:
-  - "Sebastian Griffin"
+- Sebastian Griffin
 published: 2025-11-05
 created: 2026-03-25
-title: 2026-03-25 - - MSPC provides digital safety keynote address at Idaho Department of Education conference
-linter-yaml-title-alias: 2026-03-25 - - MSPC provides digital safety keynote address at Idaho Department of Education conference
+title: 2026-03-25 - - MSPC provides digital safety keynote address at Idaho Department
+  of Education conference
+linter-yaml-title-alias: 2026-03-25 - - MSPC provides digital safety keynote address
+  at Idaho Department of Education conference
+related:
+- '2026-03-25'
+- '300'
+- Arkansas
+- California
+- Dirk Kempthorne
+- Idaho
+- Sebastian Griffin
+- Sun Valley
+- children
+- parental rights
+- parents
+- police
+- social media
+- systems
+- teachers
+- word
+authority: LOGAN
 ---
-
 ![](https://static.wixstatic.com/media/09a46f_26d9c8b4c0824842a4f78199370cb040~mv2.jpg/v1/fill/w_740,h_896,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/09a46f_26d9c8b4c0824842a4f78199370cb040~mv2.jpg)
 
 On October 24 <sup>th</sup>, 2025, I was honored to be a keynote speaker at the Idaho Department of Education's 10th Annual Family and Community Engagement Conference in Sun Valley, ID.

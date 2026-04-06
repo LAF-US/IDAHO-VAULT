@@ -1,13 +1,48 @@
 ---
-source: "https://boisedev.com/news/2025/03/14/data-power-costs/"
+source: https://boisedev.com/news/2025/03/14/data-power-costs/
 author:
-  - "Margaret Carmel - BoiseDev Sr. Reporter"
+- Margaret Carmel - BoiseDev Sr. Reporter
 published: 2025-03-20
 created: 2026-03-30
 date created: Monday, March 30th 2026, 3:34:11 pm
 date modified: Monday, March 30th 2026, 3:36:04 pm
+related:
+- '2026-03-30'
+- '395'
+- Blanchard
+- Boise
+- BoiseDev
+- Brent Crane
+- Clifton
+- Dan Garner
+- Facebook
+- Heather Scott
+- House State Affairs
+- Idaho
+- Idaho Association of Commerce and Industry
+- Idaho Capitol
+- Idaho Power
+- John Gannon
+- Kuna
+- Magic Valley
+- Margaret Carmel
+- Nampa
+- Public Utilities Commission
+- State of Idaho
+- Weston
+- cities
+- construction
+- costs
+- economic development
+- electricity
+- homeowners
+- threshold
+- valley
+- voice
+- voice vote
+- water
+authority: LOGAN
 ---
-
 ## ‘Growth paying for growth’ or ‘effective end’ to attracting business? Bill aimed at large power users moves forward
 
 Proposed data center for Meta Platforms Inc. in Kuna, Idaho. Photo: Courtesy Meta

@@ -1,3 +1,23 @@
+---
+authority: LOGAN
+related:
+- '2026-03-15'
+- ALL
+- BODY
+- DECISIONS
+- GitHub
+- Idaho
+- LEVELSET
+- LOGAN
+- Logan's
+- PAC
+- PROJECT
+- budget
+- campaign finance
+- infrastructure
+- links
+---
+
 # SIGNAL Protocol — IDAHO-VAULT
 
 **Version:** 1.0

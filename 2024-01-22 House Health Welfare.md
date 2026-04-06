@@ -1,8 +1,26 @@
 ---
 cmte:
-  - "House Health and Welfare"
+- House Health and Welfare
 sponsor:
-  - "Jordan Redman"
+- Jordan Redman
+related:
+- Board of Dentistry
+- Board of Medicine
+- Board of Pharmacy
+- Dori Healey
+- House Health and Welfare
+- Idaho
+- Jacyn Gallagher
+- Jordan Redman
+- Josh Wheeler
+- Medicaid
+- Medicaid Expansion
+- Nicki Chopski
+- President
+- budget
+- voice
+- voice vote
+authority: LOGAN
 ---
 **RS 30956 - Physicians and Physician Assistants Licensure**
 crafted to build upon the good work that Josh Wheeler did last year creating bridge year physician program 

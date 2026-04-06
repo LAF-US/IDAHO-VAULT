@@ -6,8 +6,26 @@ tier: 1
 date: 2026-03-15
 branch: claude/sunset-non-persistent-agents-4iLqH
 status: flagged-for-sunset
+related:
+- '2026-03-15'
+- AGENT-REGISTRY
+- CLAUDE
+- Idaho
+- Idaho Legislature
+- LEVELSET
+- LEVELSET-CURRENT
+- LEVELSET-SUNSET-jfac-open-meetings
+- LEVELSET-SUNSET-levelset-reports
+- LOGAN
+- Logan's
+- PUBLIC
+- SUNSET-PROCESS
+- agent
+- infrastructure
+- self
+- template
+authority: LOGAN
 ---
-
 # LEVELSET Sunset Report — TASK: Sunset non-persistent agents — 2026-03-15
 
 ---

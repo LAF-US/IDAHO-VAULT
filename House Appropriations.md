@@ -1,4 +1,17 @@
 ---
+related:
+- Britt Raybould
+- Brooke Green
+- Clay Handy
+- James Petzke
+- Joint Finance-Appropriations Committee
+- Josh Tanner
+- Matt Bundy
+- Rod Furniss
+- Steve Miller
+- Tina Lambert
+- Wendy Horman
+authority: LOGAN
 ---
 House side of Joint Finance-Appropriations Committee 
 

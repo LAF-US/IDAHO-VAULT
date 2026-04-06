@@ -1,13 +1,29 @@
 ---
-source: "https://pv-magazine-usa.com/2023/03/23/meta-picks-utilities-based-on-solar-potential-at-data-centers/"
+source: https://pv-magazine-usa.com/2023/03/23/meta-picks-utilities-based-on-solar-potential-at-data-centers/
 author:
-  - "John Fitzgerald Weaver and Michael Schoeck"
+- John Fitzgerald Weaver and Michael Schoeck
 published: 2023-03-23
 created: 2026-03-30
 date created: Monday, March 30th 2026, 3:40:48 pm
 date modified: Monday, March 30th 2026, 3:40:52 pm
+related:
+- '2026-03-30'
+- '720'
+- Act
+- Alabama
+- DIY
+- EMC
+- Facebook
+- IRA
+- New York
+- PPA
+- electricity
+- ranch
+- social media
+- utility
+- website
+authority: LOGAN
 ---
-
 Meta, the social media giant behind Facebook and Instagram, is focused on renewable energy deployments, which are currently expanding at an impressive 30% compound annual growth rate. Urvi Parekh, director of renewable energy, discussed the company’s clean energy initiatives at the Solar Energy Industry Association’s Finance, Tax and Buyers Seminar held in New York.
 
 At present, Meta stands as the largest [commercial and industrial purchaser](https://pv-magazine-usa.com/2022/11/29/corporate-solar-doubles-since-2019-displacing-20-4-million-tons-of-carbon-annually/) of solar power in the U.S., boasting close to 3.6 GW of installed solar capacity. Parekh also revealed that the company has over 9 GW of capacity awaiting development over the coming years.

@@ -13,6 +13,10 @@ Preserves:
   - All other frontmatter fields
   - Wikilinks in !/ directory (anchor points for Crawler Crew)
 
+Post-burn lifecycle:
+  CHAINFIRE (burn) → Crawler-Linker Crew (regrowth) → Linter (groundskeeper)
+  Crawler-Linker rebuilds tags/frontmatter; Linter formats what Crawler creates.
+
 Usage:
   python chainfire.py                 # Dry run (default)
   python chainfire.py --execute       # Execute the burn

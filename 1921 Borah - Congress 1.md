@@ -1,5 +1,8 @@
 ---
 date: 1921-01-01
+related:
+- Washington
+authority: LOGAN
 ---
 !hiram-johnson-wm-e-borah.jpg
 

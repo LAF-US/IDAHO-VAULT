@@ -1,4 +1,10 @@
 ---
+related:
+- House Education
+- Idaho
+- Idaho House of Representatives
+- New Plymouth
+authority: LOGAN
 ---
 Residence: New Plymouth
 

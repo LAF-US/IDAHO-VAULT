@@ -1,9 +1,31 @@
 ---
 author:
-  - "Mia Maldonado"
+- Mia Maldonado
 outlet:
-  - "Idaho Capital Sun"
+- Idaho Capital Sun
 URL: https://idahocapitalsun.com/2023/11/27/city-of-pocatello-honors-drag-reading-group-with-human-and-civil-rights-award/
+related:
+- East Idaho News
+- Idaho
+- Idaho Capital Sun
+- Idaho Falls
+- Marshall Public Library
+- Pocatello
+- Reading Time with the Queens
+- books
+- children
+- city council
+- drag
+- gender identity
+- individuals
+- mayor
+- nonprofits
+- parents
+- religion
+- self
+- sign
+- website
+authority: LOGAN
 ---
 ## Reading Time with the Queens has mission to read stories about acceptance and love to Idaho kids
 

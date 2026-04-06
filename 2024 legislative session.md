@@ -1,4 +1,20 @@
 ---
+related:
+- Idaho
+- Idaho Legislature
+- Idaho Statesman
+- ProPublica
+- anti-SLAPP
+- bond elections
+- formula
+- indecent materials in schools and libraries
+- libraries
+- presidential primary
+- property tax
+- school facilities
+- supermajority
+- threshold
+authority: LOGAN
 ---
 2nd Regular Session of the 67th Idaho Legislature 
 

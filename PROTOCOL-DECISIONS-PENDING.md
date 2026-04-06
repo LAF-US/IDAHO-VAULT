@@ -2,6 +2,22 @@
 updated: 2026-03-16
 status: draft
 source: commit
+related:
+- '2026-03-16'
+- AGENTS
+- API
+- GitHub
+- HOW
+- LLM
+- LOGAN
+- PROTOCOL
+- USE
+- WATCH
+- agent
+- fire
+- format
+- index
+authority: LOGAN
 ---
 # PROTOCOL.md — Pending Ambiguity Resolutions
 

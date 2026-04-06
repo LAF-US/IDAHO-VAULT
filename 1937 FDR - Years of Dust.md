@@ -1,5 +1,10 @@
 ---
-date:
+date: null
+related:
+- 1935 FDR - A Mule and a Plow
+- 1935 FDR - New Deal Lexicon
+- FDR
+authority: LOGAN
 ---
 !RA poster Years of Dust.jpg
 

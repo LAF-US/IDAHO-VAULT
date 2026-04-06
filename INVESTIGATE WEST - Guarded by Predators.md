@@ -1,9 +1,50 @@
 ---
 outlet:
-  - "InvestigateWest"
+- InvestigateWest
 url: https://www.investigatewest.org/guarded-by-predators/
 author:
-  - "Whitney Bryen"
+- Whitney Bryen
+related:
+- '208'
+- '266'
+- '509'
+- '790'
+- '918'
+- '999'
+- Act
+- Attorney General
+- Board of Correction
+- Boise
+- Coeur d'Alene
+- Coeur d'Alene Press
+- Council
+- Department of Correction
+- East Idaho News
+- Idaho
+- Idaho Press
+- Idaho State Police
+- Idaho Statesman
+- KHQ
+- KTVB
+- LLP
+- Lewiston
+- Lewiston Tribune
+- Moscow
+- Moscow-Pullman Daily News
+- OCT
+- Seattle
+- Spokane
+- THE
+- Whitney
+- definition
+- housing
+- inmates
+- law enforcement
+- meeting
+- nonprofits
+- police
+- voice
+authority: LOGAN
 ---
 Editor’s note: The “Guarded by Predators” series discusses sexual assault. This InvestigateWest project was supported by the Fund for Investigative Journalism and the Pulitzer Center.
 

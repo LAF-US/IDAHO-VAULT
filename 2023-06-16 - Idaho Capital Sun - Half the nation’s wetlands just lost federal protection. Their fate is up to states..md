@@ -1,10 +1,40 @@
 ---
 author:
-  - "Alex Brown"
+- Alex Brown
 outlet:
-  - "States Newsroom"
-  - "Idaho Capital Sun"
+- States Newsroom
+- Idaho Capital Sun
 URL: https://idahocapitalsun.com/2023/06/16/half-the-nations-wetlands-just-lost-federal-protection-their-fate-is-up-to-states/
+related:
+- '118'
+- Act
+- Colorado
+- Department of Environmental Quality
+- Environmental Protection Agency
+- Home
+- Idaho
+- Idaho Capital Sun
+- Illinois
+- Mexico
+- North Carolina
+- Paul
+- Roberts
+- Roy
+- States Newsroom
+- U.S. Supreme Court
+- Virginia
+- Washington
+- agriculture
+- books
+- lakes
+- legislative
+- legislative session
+- money
+- rivers
+- sign
+- water
+- wetlands
+authority: LOGAN
 ---
 ## Supreme Court’s narrowing of the Clean Water Act has left some states scrambling to enact safeguards and others questioning whether regulators can handle workload 
 

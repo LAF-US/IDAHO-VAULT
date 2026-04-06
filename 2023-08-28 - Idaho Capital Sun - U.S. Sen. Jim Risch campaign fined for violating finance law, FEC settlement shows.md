@@ -1,7 +1,27 @@
 ---
 outlet:
-  - "Idaho Capital Sun"
-author: "Mia Maldonado"
+- Idaho Capital Sun
+author: Mia Maldonado
+related:
+- 2020 election
+- '300'
+- '325'
+- '600'
+- '800'
+- FEC
+- Federal Election Commission
+- Idaho
+- Idaho Capital Sun
+- Jason Risch
+- Jim Risch
+- U.S. Senate
+- election
+- general election
+- individuals
+- money
+- primary election
+- website
+authority: LOGAN
 ---
 ## **Committee fined $4,325 after failing to resolve excessive contributions to campaign on time**
 

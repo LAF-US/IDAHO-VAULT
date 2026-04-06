@@ -1,4 +1,72 @@
 ---
+related:
+- 1st Congressional District
+- 2nd Congressional District
+- Ben Adams
+- Britt Raybould
+- Charlie Shepherd
+- Chenele Dixon
+- Chris Trakel
+- Chuck Winder
+- Clay Handy
+- Codi Galloway
+- Dan Garner
+- Dave Lent
+- David Cannon
+- Elaine Price
+- Idaho
+- Idaho Legislature
+- Jacyn Gallagher
+- James Petzke
+- Jaron Crane
+- Jason Monks
+- Jeff Cornilles
+- Josh Wheeler
+- Julianne Young
+- Julie VanOrden
+- Kenny Wroten
+- Kevin Andrus
+- Legislative District 10
+- Legislative District 11
+- Legislative District 12
+- Legislative District 13
+- Legislative District 15
+- Legislative District 20
+- Legislative District 21
+- Legislative District 22
+- Legislative District 23
+- Legislative District 24
+- Legislative District 25
+- Legislative District 27
+- Legislative District 28
+- Legislative District 30
+- Legislative District 31
+- Legislative District 32
+- Legislative District 33
+- Legislative District 34
+- Legislative District 35
+- Legislative District 4
+- Legislative District 6
+- Legislative District 7
+- Legislative District 8
+- Legislative District 9
+- Linda Wright Hartgen
+- Lori McCann
+- Mark Harris
+- Matt Bundy
+- Melissa Durrant
+- Mike Moyle
+- Mike Simpson
+- NRA
+- PAC
+- Rick Cheatum
+- Rod Furniss
+- Russ Fulcher
+- Tina Lambert
+- Treg Bernt
+- U.S. House
+- Wendy Horman
+authority: LOGAN
 ---
 NRA PAC for 2024 Idaho Legislature and U.S. House
 

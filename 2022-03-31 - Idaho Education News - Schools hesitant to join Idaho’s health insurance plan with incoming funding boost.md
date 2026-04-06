@@ -1,9 +1,37 @@
 ---
 author:
-  - "Blake Jones"
+- Blake Jones
 outlet:
-  - "Idaho Education News"
+- Idaho Education News
 URL: https://www.idahoednews.org/news/schools-hesitant-to-join-idahos-health-insurance-plan-with-incoming-funding-boost/
+related:
+- '105'
+- '400'
+- '500'
+- '600'
+- Alex Adams
+- Brad Little
+- Idaho
+- Idaho Education News
+- Melba
+- Nampa
+- Nampa School District
+- President
+- Rigby
+- Rod Furniss
+- Your Health Idaho
+- budget
+- budgets
+- costs
+- formula
+- health insurance
+- legislative
+- meeting
+- money
+- property tax
+- school districts
+- teachers
+authority: LOGAN
 ---
 Idaho lawmakers voted to send an additional $105 million annually to K-12 schools in hopes of improving employees’ health insurance. But some schools are hesitant to switch over to the state’s comparatively low-premium, high-benefit insurance plan for fear that the state funding won’t cover the costs.
 

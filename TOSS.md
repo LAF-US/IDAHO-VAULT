@@ -1,7 +1,25 @@
 ---
 created: 2026-03-20
 status: draft
-usage: Logan pastes this into a conversation window to trigger a terminal context extraction
+usage: Logan pastes this into a conversation window to trigger a terminal context
+  extraction
+related:
+- '2026-03-20'
+- BOOTSTRAP
+- FLAGS
+- LEVELSET
+- LOW
+- Logan's
+- NOT
+- PRIVATE
+- PROJECT
+- PROTOCOL
+- PUBLIC
+- WORK
+- agent
+- format
+- window
+authority: LOGAN
 ---
 # TOSS PROMPT
 

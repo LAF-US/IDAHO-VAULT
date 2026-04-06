@@ -1,9 +1,18 @@
 ---
-source: "https://www.fightforthefuture.org/actions/internet-archive-journalist-signon/"
+source: https://www.fightforthefuture.org/actions/internet-archive-journalist-signon/
 author:
-  - "Fight for the Future"
-published:
+- Fight for the Future
+published: null
 created: 2026-03-30
+related:
+- '2026-03-30'
+- Internet
+- journalists
+- libraries
+- newspapers
+- sign
+- web
+authority: LOGAN
 ---
 Fight for the Future, the Electronic Frontier Foundation, and Public Knowledge are organizing a letter thanking the Internet Archive for their respectful preservation of news and history and for being an important resource for journalists. This letter is coming at a time where many major media outlets are questioning whether to allow the Wayback Machine to continue to preserve journalism.
 

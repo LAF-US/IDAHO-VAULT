@@ -1,4 +1,30 @@
 ---
+related:
+- '253'
+- '443'
+- Andrea Powers
+- CEC
+- CFO
+- Department of Administration
+- Fiscal Year 2024
+- Fiscal Year 2025
+- Group Insurance Advisory Committee
+- ITN
+- Idaho
+- JRW
+- Nampa
+- Nampa School District
+- OGI
+- Office of Group Insurance
+- Paul
+- Regence BlueShield of Idaho
+- SCO
+- 'Yes'
+- fiscal year
+- health insurance
+- meeting
+- open enrollment
+authority: LOGAN
 ---
 JRW West Conference Room 
 Dec. 19, 2023 @ 3:PM

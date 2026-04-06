@@ -1,3 +1,9 @@
+---
+authority: LOGAN
+related:
+- GitHub
+---
+
 # Security Policy
 
 ## Reporting a Vulnerability

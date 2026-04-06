@@ -1,4 +1,25 @@
 ---
+related:
+- Benewah
+- Bill Goesling
+- Bob Nonini
+- Brandon Mitchell
+- Carl Bjerke
+- Caroline Nilsson Troy
+- Dan Foreman
+- Dan Schmidt
+- David Nelson
+- Jim Hammond
+- Kootenai
+- Kootenai County
+- Paulette Jordan
+- Post Falls
+- Ron Mendive
+- Shirley Ringo
+- Tony Wisniewski
+- Troy
+- counties
+authority: LOGAN
 ---
 Southwestern Kootenai County including Post Falls
 - Formerly Benewah & Latah counties

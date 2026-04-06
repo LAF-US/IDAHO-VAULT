@@ -1,4 +1,13 @@
 ---
+related:
+- '312'
+- Governor
+- ITD
+- Idaho
+- LSI
+- money
+- transportation
+authority: LOGAN
 ---
 https://lhtac.org/programs/local-strategic-initiatives-program/
 ***Description:** The Surplus Eliminator Program was established by House Bill 312 (H312) during the 2015 Legislative session. The law states that at the end of the year, remaining funds will be split between the rainy-day fund and the Surplus Eliminator program for state transportation projects administered by the Idaho Transportation Department (ITD). During the 2017 Legislative session, Idaho Lawmakers voted to continue the Surplus Eliminator program through Senate Bill 1206 (S1206), however now the money is shared 60% to the state system and 40% to the local system for the next two years.  For 2018, the total local share of the Surplus Eliminator fund is approximately $24M (a portion of which goes toward the Joint Children Pedestrian Safety Program). LHTAC will administer the local share through a Local Strategic Initiatives Program. Per the law, eligible projects must be related to maintenance, and address safety and mobility.

@@ -1,5 +1,11 @@
 ---
 date: 1937-12-06
+related:
+- Idaho
+- Maine
+- President
+- Washington
+authority: LOGAN
 ---
 !idaho-spuds-presented-to-vice-president-washington-dc-dec-6-a-box-of-idahos-1024.jpg
 

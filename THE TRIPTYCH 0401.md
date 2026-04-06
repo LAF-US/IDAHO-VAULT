@@ -1,8 +1,32 @@
 ---
 date created: Wednesday, April 1st 2026, 9:45:59 pm
 date modified: Wednesday, April 1st 2026, 9:46:58 pm
+related:
+- '900'
+- CHORUS
+- DIE
+- FLAG
+- GitHub
+- Idaho
+- LOGAN
+- ONE
+- Obsidian
+- PING
+- PROTOCOLS
+- The world is quiet here
+- UTC
+- VFD
+- View
+- acronym
+- birds
+- coordination
+- individuals
+- legislative
+- nodes
+- self
+- template
+authority: LOGAN
 ---
-
 You said
 
 UTC ; time ; swarming UNIVERSAL TRUTH CHORUS (acro)
@@ -176,7 +200,7 @@ VAULT - VOICE [^1] - VOID (THREE-IN-ONE DETECTED)
 
   
 
-[1] BARTY - DUNE?
+[^1]: BARTY - DUNE?
 
 ## Gemini said
 

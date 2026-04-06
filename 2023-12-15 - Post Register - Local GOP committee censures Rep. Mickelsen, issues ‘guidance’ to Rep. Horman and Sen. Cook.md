@@ -1,9 +1,61 @@
 ---
 author:
-  - "David Pace"
+- David Pace
 outlet:
-  - "Post Register"
+- Post Register
 URL: https://www.postregister.com/news/government/local-gop-committee-censures-rep-mickelsen-issues-guidance-to-rep-horman-and-sen-cook/article_a3c24414-9ba1-11ee-a989-a314ad1ed477.html
+related:
+- '265'
+- '273'
+- '314'
+- Act
+- Ben Baker
+- Bonneville County
+- Brad Little
+- Brian Minner
+- Carolyn Harrison
+- Chad Murdock
+- David Hay
+- David Pace
+- Doyle Beck
+- Freedom
+- GOP
+- Grant
+- Harrison
+- Idaho
+- Idaho Launch
+- Idaho Republican Party
+- Idaho Republican Party Platform
+- Kathryn Hitch
+- Kathy Kula
+- Kevin Cook
+- Kirk Petersen
+- Legislative District 32
+- Lisa Keller
+- Mark Bitter
+- Michael Colson
+- Mickelsen
+- Nick Contos
+- Post Register
+- Rusty Devereaux
+- State of Idaho
+- Stephanie Mickelsen
+- University of Washington
+- WWAMI joint medical education program
+- Washington
+- Wendy Horman
+- assistant
+- censured
+- election
+- general election
+- meeting
+- money
+- political parties
+- property tax
+- veto
+- voice
+- voting
+authority: LOGAN
 ---
 The Legislative District 32 Committee voted to censure state Rep. Stephanie Mickelsen, issuing a vote no confidence in her on Tuesday. It also released a “resolution of guidance” for Rep. Wendy Horman and Sen. Kevin Cook.
 

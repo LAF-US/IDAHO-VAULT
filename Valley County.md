@@ -1,4 +1,17 @@
 ---
+related:
+- Alpha
+- Cascade
+- Donnelly
+- Lake
+- Lake Fork
+- McCall
+- Pine
+- Roseberry
+- Smiths Ferry
+- Warm Lake
+- Yellow Pine
+authority: LOGAN
 ---
 Seat: Cascade
 Municipalities: McCall, Donnelly

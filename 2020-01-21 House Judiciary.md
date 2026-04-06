@@ -1,5 +1,42 @@
 ---
-cmte: "House Judiciary, Rules and Administration"
+cmte: House Judiciary, Rules and Administration
+related:
+- '150'
+- '157'
+- '403'
+- 4th Judicial District
+- 5th Judicial District
+- Ada County
+- Administrative Office of the Courts
+- Board of Correction
+- Doug Ricks
+- Elmore County
+- Gary Marshall
+- Governor
+- House Judiciary, Rules and Administration
+- JPE
+- Jason Monks
+- Jerome
+- Jerome County
+- Julianne Young
+- Melissa Wintrow
+- National Judicial College
+- Ryan Kerby
+- Secretary of State
+- Twin Falls
+- administrative rules
+- attorneys
+- civil commitments
+- counties
+- district judges
+- emergency room
+- hospitals
+- individuals
+- jails
+- judges
+- money
+- self
+authority: LOGAN
 ---
 House Judiciary, Rules and Administration – Jan 21
 

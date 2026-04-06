@@ -1,5 +1,21 @@
 ---
 source: commit
+related:
+- '207'
+- Idaho
+- Idaho Code
+- JFAC Working Groups
+- Joint Finance-Appropriations Committee
+- Joint Rule Non-Adoption 2024-2025
+- Josh Tanner
+- Kelly Anthon
+- LSO
+- Scott Grow
+- Wendy Horman
+- veto
+- voting
+- website
+authority: LOGAN
 ---
 The JFAC Rules are the governing procedural rules of the Joint Finance-Appropriations Committee, adopted January 12, 1999; they were removed from the LSO website without a committee vote and their current operative status is disputed.
 

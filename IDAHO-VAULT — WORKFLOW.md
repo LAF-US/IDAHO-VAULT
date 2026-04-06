@@ -2,9 +2,19 @@
 date created: Saturday, March 28th 2026, 5:32:19 pm
 date modified: Saturday, March 28th 2026, 5:35:32 pm
 author:
-  - "ChatGPT"
+- ChatGPT
+related:
+- '2026-03-28'
+- ChatGPT
+- HUMAN
+- KEY
+- NOT
+- Notebook LM
+- WORK
+- agent
+- coordination
+authority: LOGAN
 ---
-
 Notebook LM 2026-03-28
 
 ---

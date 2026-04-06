@@ -1,4 +1,59 @@
 ---
+related:
+- Associated Press
+- Bible
+- Blackfoot
+- Boise
+- Boise State University
+- Buhl
+- California
+- Coeur d'Alene
+- Common Core
+- Critical Race Theory
+- Elaine King
+- Freedom
+- Governor
+- Idaho
+- Idaho Education News
+- Idaho Freedom Foundation
+- Idaho House of Representatives
+- Idaho School Boards Association
+- Idaho State Journal
+- Internet
+- Janice McGeachin
+- Kootenai
+- Kootenai County
+- Lieutenant Governor
+- Marsh Valley
+- Melba
+- Nampa
+- North Idaho
+- President
+- Priest River
+- Priscilla Giddings
+- Rexburg
+- Ryan Spoon
+- San Francisco
+- Sonya Harris
+- State Board of Education
+- Task Force to Examine Indoctrination in Idaho Education
+- Treasure Valley
+- Washington
+- White Bird
+- books
+- budgets
+- children
+- district court
+- homes
+- legislative
+- legislative session
+- meeting
+- police
+- public schools
+- school board
+- sex education
+- voice
+authority: LOGAN
 ---
 https://www.idahoednews.org/news/mcgeachin-announces-indoctrination-task-force-members/
 

@@ -2,6 +2,27 @@
 author: Logan Finney
 outlet: Idaho Reports
 URL: https://blog.idahoreports.idahoptv.org/2022/11/10/2022-analysis-nature-abhors-a-power-vacuum/
+related:
+- Brent Crane
+- Britt Raybould
+- House member
+- Idaho
+- Idaho Reports
+- Jeff Agenbroad
+- Joe Palmer
+- John Vander Woude
+- Joint Finance-Appropriations Committee
+- Judy Boyle
+- Logan Finney
+- Mike Moyle
+- Ron Nate
+- Scott Grow
+- Vito Barbieri
+- Wendy Horman
+- election
+- legislative
+- redistricting
+authority: LOGAN
 ---
 Logan Finney analyzes the 47.6% legislative turnover following the 2022 election and redistricting, documenting simultaneous power vacuums at the top of both chambers and listing Judy Boyle among the six most senior House Republicans entering 2023.
 

@@ -1,9 +1,24 @@
 ---
 author:
-  - "Kyle Pfannenstiel"
+- Kyle Pfannenstiel
 outlet:
-  - "Idaho Capital Sun"
+- Idaho Capital Sun
 URL: https://idahocapitalsun.com/briefs/idaho-to-distribute-opioid-overdose-reversal-drug/
+related:
+- Department of Health and Welfare
+- Division of Behavioral Health
+- Idaho
+- Idaho Capital Sun
+- Idaho Press
+- Kootenai
+- Kootenai County
+- Kootenai County Fire & Rescue
+- Kyle Pfannenstiel
+- Narcan
+- law enforcement
+- naloxone
+- opioid reversal
+authority: LOGAN
 ---
 Idaho is re-activating a program to distribute Narcan, a brand of the opioid reversal drug naloxone.
 

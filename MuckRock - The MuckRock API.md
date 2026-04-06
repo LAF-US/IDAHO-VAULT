@@ -1,9 +1,15 @@
 ---
-source: "https://www.muckrock.com/api/"
+source: https://www.muckrock.com/api/
 author:
-  - "MuckRock"
-published:
+- MuckRock
+published: null
 created: 2026-03-30
+related:
+- '2026-03-30'
+- '402'
+- API
+- format
+authority: LOGAN
 ---
 ![](https://d3gn0r3afghep.cloudfront.net/news_photos/2016/06/03/api.jpg)
 

@@ -1,8 +1,23 @@
 ---
 date created: Sunday, March 29th 2026, 10:24:22 am
 date modified: Sunday, March 29th 2026, 10:26:53 am
+related:
+- '2026-03-29'
+- AGENTS
+- ALL
+- CONSTITUTION
+- LAF
+- LOGAN
+- PROTOCOL
+- The world is quiet here
+- agent
+- budget
+- coordination
+- doctrine
+- fire
+- on fire
+authority: LOGAN
 ---
-
 ## 2026-03-29 SWARM DIRECTIVE
 TO ALL AGENTS from Linear.app (admin chat, communicated by LOGAN): 
 

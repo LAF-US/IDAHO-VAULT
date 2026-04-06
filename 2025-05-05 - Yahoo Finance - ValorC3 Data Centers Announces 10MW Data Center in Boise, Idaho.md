@@ -1,13 +1,29 @@
 ---
-source: "https://finance.yahoo.com/news/valorc3-data-centers-announces-10mw-025700500.html?guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAMctb6CkhW0585M7y14G5nFE7lQhVf0bOI3RwXIXovl0jqZ5tSgEsolEwXz3Cm6f10hodfBcFCzgaMjk7hTUSzSrtsp8ZYDJl5omh5eqOYAjybWf9DZIZAjnlqI60NrHEWkrFffvXX8UfkNk_GTniPQQlv1C2_V6WyHQ3Tevk4af&guccounter=2"
+source: https://finance.yahoo.com/news/valorc3-data-centers-announces-10mw-025700500.html?guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAMctb6CkhW0585M7y14G5nFE7lQhVf0bOI3RwXIXovl0jqZ5tSgEsolEwXz3Cm6f10hodfBcFCzgaMjk7hTUSzSrtsp8ZYDJl5omh5eqOYAjybWf9DZIZAjnlqI60NrHEWkrFffvXX8UfkNk_GTniPQQlv1C2_V6WyHQ3Tevk4af&guccounter=2
 author:
-  - "PR Newswire"
+- PR Newswire
 published: 2025-05-05
 created: 2026-03-30
 date created: Monday, March 30th 2026, 3:29:23 pm
 date modified: Monday, March 30th 2026, 3:29:30 pm
+related:
+- '2026-03-30'
+- About
+- Boise
+- CEO
+- Council
+- Data Centers
+- Idaho
+- President
+- ValorC3
+- ValorC3 Data Centers
+- infrastructure
+- meeting
+- new data center
+- transportation
+- water
+authority: LOGAN
 ---
-
 *Second ValorC3 Boise Facility Expands Capacity to Support AI Innovation and Enterprise Growth*
 
 BOISE, Idaho, May 5, 2025 /PRNewswire/ -- [ValorC3 Data Centers](https://c212.net/c/link/?t=0&l=en&o=4419316-1&h=1570840000&u=https%3A%2F%2Fvalorc3.com%2F&a=ValorC3+Data+Centers) announces the company is set to break ground on a new data center in Boise. This will be Idaho's most modern enterprise data center, paving the way for more AI-ready colocation and connectivity in Idaho. The facility will be the company's second data center in Boise and its fourth overall across the U.S. The undertaking reinforces ValorC3's ongoing investment in delivering modern colocation, cloud and connectivity solutions in one of the nation's fastest-growing technology hubs.

@@ -1,6 +1,38 @@
 ---
 updated: 2026-03-16
 source: commit
+related:
+- '2026-03-16'
+- AGENTS
+- ARE
+- BOOTSTRAP
+- CAN
+- CCA
+- CLI
+- Copilot
+- DECISIONS
+- FLAG
+- GitHub
+- Google
+- Idaho
+- Idaho Public Television
+- Idaho Reports
+- LEVELSET
+- Logan Finney
+- Logan's
+- NOT
+- PROTOCOL
+- PUBLIC
+- TBD
+- THE
+- WHO
+- YOU
+- agent
+- coordination
+- infrastructure
+- passwords
+- self
+authority: LOGAN
 ---
 # HANDOFF: CODE AUTHORITY → PUBLIC: CONVERSATION
 

@@ -1,5 +1,12 @@
 ---
-cmte: "House Environment, Energy and Technology"
+cmte: House Environment, Energy and Technology
+related:
+- DEQ
+- Department of Environmental Quality
+- House Environment, Energy and Technology
+- John Tippets
+- administrative rules
+authority: LOGAN
 ---
 House Environment, Energy and Technology
 Jan 16, 2020 2pm

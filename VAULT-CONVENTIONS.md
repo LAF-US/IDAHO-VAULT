@@ -1,3 +1,68 @@
+---
+authority: LOGAN
+related:
+- 1Password
+- 2023-12-19 - GIAC meeting
+- '2026-04-02'
+- '218'
+- '260'
+- AGENTS
+- API
+- Act
+- Ada County
+- Boise
+- Brad Little
+- CLAUDE
+- CLI
+- CONSTITUTION
+- Copilot
+- DAILY NOTE
+- DAILY NOTE TEMPLATE
+- DECISIONS
+- DOS
+- GEMINI
+- GitHub
+- HFS
+- Idaho
+- Idaho Legislature
+- Idaho Public Television
+- Idaho Reports
+- Idaho Statesman
+- LEVELSET
+- Logan Finney
+- Logan's
+- MCP
+- OBSIDIAN DAILY NOTE
+- Obsidian
+- PROJECT
+- PROTOCOL
+- README
+- SSH
+- THE
+- The world is quiet here
+- UTC
+- VAULT-METADATA-STANDARD
+- VAULT-TEMPLATES
+- VAULT-ZONES
+- _AUX
+- agent
+- codex
+- coordination
+- doctrine
+- election
+- emoji
+- format
+- infrastructure
+- legislative
+- links
+- meeting
+- passwords
+- persona
+- syntax
+- systems
+- template
+---
+
 # VAULT-CONVENTIONS Ã¢â‚¬â€ Shared Reference for All Agents
 
 
@@ -641,48 +706,56 @@ When uncertain about sourcing category, **ask Logan**.
 
 ## Obsidian Sync / Git Boundary
 
-
-
 Two systems share the vault. They have distinct, non-overlapping responsibilities.
 
-
-
-| Layer | Obsidian Sync (paid) | Git / GitHub |
-
+| Layer | Obsidian Sync | Git / GitHub |
 | --- | --- | --- |
-
-| Plugin code (`main.js`, `manifest.json`) | Syncs across devices | Tracked Ã¢â‚¬â€ public record |
-
-| Plugin settings (`data.json`) | Syncs across devices, E2E encrypted | **Gitignored** Ã¢â‚¬â€ never reaches GitHub |
-
-| `community-plugins.json` | Syncs across devices | Tracked Ã¢â‚¬â€ canonical plugin list |
-
-| Workspace state (`workspace.json`, `graph.json`) | Syncs across devices | Gitignored Ã¢â‚¬â€ machine-local noise |
-
 | Vault content (`.md` files) | Syncs across devices | Tracked |
+| Plugin code (`main.js`, `manifest.json`) | Desktop only (see below) | Tracked — public record |
+| Plugin settings (`data.json`) | Desktop only, E2E encrypted | **Gitignored** — never reaches GitHub |
+| `community-plugins.json` | Per-device (not synced) | Tracked — canonical desktop plugin list |
+| Workspace state (`workspace.json`, `graph.json`) | Per-device | Gitignored — machine-local noise |
 
+**Rule:** Obsidian Sync is the private courier for credentials and machine state. Git is the public record for vault content and plugin presence. The `.gitignore` wildcard `.obsidian/plugins/*/data.json` is the firewall — no `data.json` reaches GitHub without a deliberate `git add --force`.
 
+### Device Roles
 
-**Rule:** Obsidian Sync is the private courier for credentials and machine state. Git is the public record for vault content and plugin presence. The `.gitignore` wildcard `.obsidian/plugins/*/data.json` is the firewall Ã¢â‚¬â€ no `data.json` reaches GitHub without a deliberate `git add --force`.
+| Device | Role | Community Plugins |
+| --- | --- | --- |
+| **Desktop** (Windows) | Engine room — full plugin stack, git, MCP servers, Linter, Breadcrumbs, agent infrastructure | 26 (curated tier) |
+| **Mobile** (Pixel) | Capture device — quick-jot notepad, read access | 0 (bare Obsidian) |
 
+The phone writes `.md` files. The desktop processes them.
 
+### Obsidian Sync Settings — Desktop
 
-**Required Obsidian Sync settings (enable on every device):**
+| Toggle | Setting |
+| --- | --- |
+| Core settings | ON |
+| Appearance | ON |
+| Hotkeys | ON |
+| Active core plugins | ON |
+| Active community plugins | ON |
+| Installed community plugins | ON |
 
+### Obsidian Sync Settings — Mobile (Pixel)
 
+| Toggle | Setting |
+| --- | --- |
+| Core settings | ON |
+| Appearance | ON |
+| Hotkeys | ON |
+| Active core plugins | OFF — phone does not need slides, audio-recorder, webviewer, etc. |
+| Active community plugins | OFF — decouples plugin lists; desktop keeps 26, phone keeps 0 |
+| Installed community plugins | OFF — phone does not need 140 plugin directories |
 
-- Settings Ã¢â€ â€™ Sync Ã¢â€ â€™ `Installed community plugins` Ã¢Å“â€œ
+### Why Per-Device Plugin Lists
 
-- Settings Ã¢â€ â€™ Sync Ã¢â€ â€™ `Plugin settings` Ã¢Å“â€œ
+Obsidian Sync defaults to pushing the same plugin list to all devices. On a 20K-file vault, the desktop's 26-plugin stack (Dataview indexing, Omnisearch search index, Linter watching saves, MCP tools looking for a REST API server) overwhelms mobile. Disabling community plugin sync on the phone lets each device run its own appropriate stack while content (`.md` files), appearance, and hotkeys still flow both ways.
 
+### Conflict Duplicates
 
-
-**Mobile:** When vault-mobile is added, Obsidian Sync carries plugins and settings automatically. Desktop-only plugins (e.g., `obsidian-local-rest-api`) will be silently skipped by mobile Obsidian.
-
-
-
----
-
+When both devices edit the same config file between syncs, Obsidian creates a `(2)` copy (e.g., `app (2).json`). These are already gitignored via `.obsidian/**(2)*.json`. Delete them when found — Obsidian only reads the original filename.
 
 
 ## Git Practices
@@ -723,19 +796,13 @@ Emojis are **first-class vault syntax** as of 2026-04-02 (Logan, superseding pri
 ---
 ## Guiding Principles
 
-
-
 - The five W's: who, what, when, where, why
-
 - The four C's: collect, capture, catalogue, collate
-
 - Public repo = on the record
-
 - Markdown for human product. Python for machine/procedural product.
-
 - Do not over-engineer. Keep it simple. Only build what's needed now.
-
 - Check in before anything irreversible.
+- **DISCOVERY BEFORE INVENTION:** Logan has made architectural decisions that live in the vault's structure, naming patterns, frontmatter fields, seed files, and file placement — not always in governance documents. Agents must READ existing conventions before proposing new ones. The vault is the record of decisions already made. Follow them; do not reinvent them. If you encounter a pattern you don't recognize, investigate before overwriting it.
 
 
 

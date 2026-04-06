@@ -1,6 +1,42 @@
 ---
 cmte:
-  - "House State Affairs"
+- House State Affairs
+related:
+- '358'
+- '402'
+- '504'
+- ACLU of Idaho
+- Christy Zito
+- DST
+- Dorothy Moon
+- Doug Ricks
+- Ellis
+- Freedom
+- GOP
+- Governor
+- Grant
+- Grant Burgoyne
+- HCR
+- House State Affairs
+- IVF
+- Idaho
+- Idaho Republican Party
+- Jake Ellis
+- President
+- Randy Armstrong
+- Raúl Labrador
+- Steven Harris
+- YouTube
+- campaign finance
+- daylight saving time
+- election
+- end goal
+- freedom of religion
+- meeting
+- presidential primary
+- primary election
+- religion
+authority: LOGAN
 ---
 House State Affairs, Jan 29th 9am
 

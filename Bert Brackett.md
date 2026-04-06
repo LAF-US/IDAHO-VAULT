@@ -1,3 +1,6 @@
 ---
-residence: "Rogerson"
+residence: Rogerson
+related:
+- Rogerson
+authority: LOGAN
 ---

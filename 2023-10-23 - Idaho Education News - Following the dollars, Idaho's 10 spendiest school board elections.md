@@ -1,8 +1,89 @@
 ---
 author:
-  - "Kevin Richert"
+- Kevin Richert
 outlet:
-  - "Idaho Education News"
+- Idaho Education News
+related:
+- '122'
+- '159'
+- '165'
+- '200'
+- '207'
+- '244'
+- '283'
+- '295'
+- '305'
+- '440'
+- '454'
+- '455'
+- '491'
+- '500'
+- '523'
+- '567'
+- '602'
+- '614'
+- '625'
+- '658'
+- '692'
+- '725'
+- '784'
+- '804'
+- '814'
+- '843'
+- '845'
+- '890'
+- '936'
+- '954'
+- AJ Balukoff
+- Blaine County
+- Boise
+- Brent Regan
+- Brownlee
+- Caldwell
+- Cindy Carlson
+- Coeur d'Alene
+- Freedom
+- Garden City
+- Grant
+- House Minority Leader
+- Idaho
+- Idaho Education News
+- Idaho Freedom Foundation
+- Ilana Rubel
+- Jack Riggs
+- Jim Jaquet
+- John Goedde
+- John McCrostie
+- Kent Marmon
+- Ketchum
+- Kevin Richert
+- Kootenai
+- Kootenai County
+- Kootenai County Republican Central Committee
+- Kuna
+- Luke Mayville
+- Meridian
+- Moore
+- Nampa
+- Nicole Trakel
+- North Idaho
+- North Idaho College
+- Paul
+- Reclaim Idaho
+- Riggins
+- Robert Simison
+- Stone
+- Susie Balukoff
+- Thomas
+- Travis Manning
+- Wendy Jaquet
+- Yasmin Harris
+- budget
+- campaign finance
+- mayor
+- school board
+- self
+authority: LOGAN
 ---
 Kevin Richert, Idaho Education News
 

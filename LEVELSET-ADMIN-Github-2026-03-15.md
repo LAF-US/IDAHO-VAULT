@@ -1,3 +1,11 @@
+---
+authority: LOGAN
+related:
+- '2026-03-15'
+- LEVELSET
+- agent
+---
+
 # LEVELSET Report for ADMIN Github Agent
 
 **Date:** 2026-03-15  

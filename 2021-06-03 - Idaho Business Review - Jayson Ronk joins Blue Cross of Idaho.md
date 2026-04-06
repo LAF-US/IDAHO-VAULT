@@ -1,8 +1,23 @@
 ---
-author: 
+author: null
 outlet:
-  - "Idaho Business Review"
+- Idaho Business Review
 URL: https://idahobusinessreview.com/2021/06/03/jayson-ronk-joins-blue-cross-of-idaho/
+related:
+- Associated Taxpayers of Idaho
+- Blue Cross of Idaho
+- Boise
+- Boise State University
+- Governor
+- Idaho
+- Idaho Association of Commerce and Industry
+- Idaho State University
+- Jayson Ronk
+- Micron Technology
+- Regence BlueShield of Idaho
+- Treasure Valley
+- nonprofits
+authority: LOGAN
 ---
 Blue Cross of Idaho has announced that Jayson Ronk has joined its public affairs team as vice president of public affairs. In his new role, he will oversee state public policy and regulatory efforts, serve as a liaison to state health entities and represent Blue Cross of Idaho on a variety of Idaho business and public interest organizations. He holds a Bachelor of Arts in political science from Idaho State University and a Master of Public Administration from Boise State University. He is active in a variety of statewide nonprofits and organizations including the Idaho March of Dimes, the Idaho Technology Association, the Associated Taxpayers of Idaho, St. Luke’s Treasure Valley Health Foundation and Buy Idaho Inc.
 

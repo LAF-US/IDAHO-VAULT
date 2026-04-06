@@ -1,4 +1,28 @@
 ---
+related:
+- Basin
+- Bonner County
+- Bonner County Daily Bee
+- Bonners Ferry
+- Bonners Ferry Herald
+- Clark Fork
+- Coeur d'Alene
+- Coeur d'Alene Press
+- Eagle
+- Idaho
+- Kootenai
+- Kootenai County
+- Lake
+- Montana
+- North Idaho
+- North Idaho Business Journal
+- Post Falls
+- Post Falls Press
+- Shoshone
+- Shoshone News-Press
+- Washington
+- newspapers
+authority: LOGAN
 ---
 Kootenai County business conglomerate founded by Duane Hagadone 
 

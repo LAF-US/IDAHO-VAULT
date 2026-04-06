@@ -1,4 +1,10 @@
 ---
+related:
+- Judicial Districts
+- Owyhee
+- Payette
+- Washington
+authority: LOGAN
 ---
 Adams, Canyon, Gem, Owyhee, Payette, Washington
 

@@ -2,7 +2,20 @@
 created: 2026-03-29
 updated: 2026-03-29
 status: active
-usage: Logan pastes this into a GitHub coding agent (Claude Code, Codex, Copilot) at session start to establish execution context and authority
+usage: Logan pastes this into a GitHub coding agent (Claude Code, Codex, Copilot)
+  at session start to establish execution context and authority
+related:
+- '2026-03-29'
+- Act
+- BOOTSTRAP
+- Copilot
+- GitHub
+- LOGAN
+- Logan's
+- agent
+- blocked
+- self
+authority: LOGAN
 ---
 # BOOTSTRAP — LOGAN'S EXECUTION DIRECTIVE
 

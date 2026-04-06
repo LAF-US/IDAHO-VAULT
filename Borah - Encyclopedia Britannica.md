@@ -1,4 +1,17 @@
 ---
+related:
+- Boise
+- Department of Labor
+- Fairfield
+- Idaho
+- Kellogg
+- Mexico
+- Paris
+- U.S. Senate
+- Washington
+- William Borah
+- election
+authority: LOGAN
 ---
 # William Borah
 

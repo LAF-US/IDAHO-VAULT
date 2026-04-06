@@ -1,6 +1,45 @@
 ---
 author:
-  - "Logan Finney"
+- Logan Finney
+related:
+- '250'
+- '280'
+- '300'
+- '500'
+- Average Median Income
+- Boise
+- Bonner Community Housing Agency
+- Bonner County
+- Boundary County
+- Chrystle Horvath
+- Coeur d'Alene
+- HUD
+- Idaho
+- Idaho Public Television
+- Idaho Reports
+- Logan Finney
+- Paul
+- Sandpoint
+- Workforce Housing Fund
+- 'Yes'
+- children
+- cities
+- connections
+- construction
+- costs
+- homes
+- housing
+- individuals
+- infrastructure
+- initial
+- law enforcement
+- meeting
+- money
+- nonprofits
+- numbers
+- nurses
+- prices
+authority: LOGAN
 ---
 Forrest Burger
 

@@ -1,4 +1,18 @@
 ---
+related:
+- Ben Adams
+- C. Scott Grow
+- Carl Bjerke
+- Dave Lent
+- Janie Ward-Engelking
+- Joint Finance-Appropriations Committee
+- Julie VanOrden
+- Kevin Cook
+- Rick Just
+- Scott Grow
+- Scott Herndon
+- Van Burtenshaw
+authority: LOGAN
 ---
 Senate side of Joint Finance-Appropriations Committee
 

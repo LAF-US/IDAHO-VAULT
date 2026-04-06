@@ -1,4 +1,24 @@
 ---
+related:
+- Barbara Ehardt
+- Bruce Skaug
+- Chenele Dixon
+- Chris Allgood
+- Chris Mathias
+- Clay Handy
+- Colin Nash
+- Dan Garner
+- David Cannon
+- Heather Scott
+- Jacyn Gallagher
+- Joe Alfieri
+- John Gannon
+- Julianne Young
+- Kenny Wroten
+- Marco Erickson
+- Mark Sauter
+- Tina Lambert
+authority: LOGAN
 ---
 # Roster
 ## 2023 Members

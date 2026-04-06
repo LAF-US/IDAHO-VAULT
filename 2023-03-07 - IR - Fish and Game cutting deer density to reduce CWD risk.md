@@ -1,7 +1,41 @@
 ---
-author: "Logan Finney"
-outlet: "Idaho Reports"
+author: Logan Finney
+outlet: Idaho Reports
 URL: https://blog.idahoreports.idahoptv.org/2023/03/07/fish-and-game-cutting-deer-density-to-reduce-cwd-risk/
+related:
+- '150'
+- '163'
+- '171'
+- '289'
+- '300'
+- '500'
+- Basin
+- CWD
+- Central Idaho
+- Department of Agriculture
+- Department of Fish and Game
+- Idaho
+- Idaho Reports
+- John Day Creek
+- Logan Finney
+- McKinzie Creek
+- Riggins
+- Roger Phillips
+- Salmon
+- Salmon River
+- Slate Creek
+- U.S. Centers for Disease Control
+- U.S. Department of Agriculture
+- animals
+- chronic wasting disease
+- deer
+- elk
+- fish
+- humans
+- hunting
+- moose
+- white-tailed deer
+authority: LOGAN
 ---
 Nearly 300 deer have been killed in a small area of Central Idaho as part of an Idaho Department of Fish and Game project to reduce animal density and decrease the risk of spreading chronic wasting disease.  
 

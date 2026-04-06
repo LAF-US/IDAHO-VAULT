@@ -1,4 +1,7 @@
 ---
+related:
+- Greg Chaney
+authority: LOGAN
 ---
 husband Greg Chaney
 

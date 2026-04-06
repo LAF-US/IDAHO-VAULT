@@ -1,4 +1,11 @@
 ---
+related:
+- Boise
+- Brad Little
+- Idaho
+- Idaho Army National Guard
+- Tom Dayley
+authority: LOGAN
 ---
 Residence: Boise
 - Idaho Army National Guard officer

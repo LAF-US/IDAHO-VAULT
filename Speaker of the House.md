@@ -1,4 +1,9 @@
 ---
+related:
+- Lawerence Denney
+- Mike Moyle
+- Scott Bedke
+authority: LOGAN
 ---
 Mike Moyle
 

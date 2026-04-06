@@ -1,8 +1,39 @@
 ---
 cmte:
-  - "Senate Judiciary and Rules"
+- Senate Judiciary and Rules
 sponsor:
-  - "Linda Wright Hartgen"
+- Linda Wright Hartgen
+related:
+- '250'
+- '600'
+- Abby Lee
+- CPS
+- Council
+- Dan Foreman
+- Dave Jeppesen
+- Department of Health and Welfare
+- Idaho
+- Idaho Judicial Council
+- Keely Duke
+- Kelly Anthon
+- Linda Wright Hartgen
+- Mark Harris
+- Melissa Wintrow
+- Phil Hart
+- Scott Herndon
+- Senate Judiciary and Rules
+- Todd Garbett
+- Todd Lakey
+- child protection
+- electioneering
+- gubernatorial appointment
+- law enforcement
+- parental rights
+- parents
+- police
+- voice
+- voice vote
+authority: LOGAN
 ---
 gubernatorial appointment vote - Jason Kreizenbeck to the Idaho Judicial Council - to be carried on floor by Sen. Todd Lakey
 

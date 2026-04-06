@@ -1,6 +1,58 @@
 ---
 author:
-  - "Idaho Main Street Caucus"
+- Idaho Main Street Caucus
+related:
+- 2023 legislative session
+- 2024 legislative session
+- Abby Lee
+- Brad Little
+- Britt Raybould
+- Chenele Dixon
+- Chris Allgood
+- Chuck Winder
+- Dan Garner
+- Dave Lent
+- Dorothy Moon
+- GOP
+- Geoff Schroeder
+- Greg Lanting
+- Idaho
+- Idaho Main Street Caucus
+- Idaho Republican Party
+- Jack Nelsen
+- James Petzke
+- Jerald Raymond
+- Jim Guthrie
+- Joe Biden
+- Jon Weber
+- Josh Wheeler
+- Julie VanOrden
+- Julie Yamamoto
+- Kevin Cook
+- Linda Wright Hartgen
+- Lori McCann
+- Marco Erickson
+- Mark Harris
+- Mark Sauter
+- Matt Bundy
+- Mickelsen
+- President
+- Raymond
+- Rick Cheatum
+- Rod Furniss
+- Stephanie Mickelsen
+- Treg Bernt
+- Van Burtenshaw
+- bonds
+- central committees
+- election
+- legislative
+- legislative session
+- meeting
+- money
+- presidential primary
+- voice
+authority: LOGAN
 ---
 ## **State GOP chair Moon stood in way of May primary, now wants to limit participation**
 

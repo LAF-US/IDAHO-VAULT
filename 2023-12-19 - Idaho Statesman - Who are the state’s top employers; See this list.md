@@ -1,9 +1,41 @@
 ---
 author:
-  - "Angela Palermo"
+- Angela Palermo
 outlet:
-  - "Idaho Statesman"
+- Idaho Statesman
 URL: https://www.idahostatesman.com/news/business/article282848943.html
+related:
+- '227'
+- '270'
+- '500'
+- '999'
+- Arkansas
+- Boise
+- Boise School District
+- Boise State University
+- Department of Labor
+- Idaho
+- Idaho Falls
+- Idaho National Laboratory
+- Idaho Statesman
+- Kootenai
+- Kootenai Health
+- Meridian
+- Montana
+- North Idaho
+- Saint Alphonsus Health System
+- Saint Alphonsus Regional Medical Center
+- St. Luke's Health System
+- State Controller
+- Treasure Valley
+- Washington
+- West Ada School District
+- chain
+- construction
+- health care
+- hospitals
+- systems
+authority: LOGAN
 ---
 Ever wondered who employs the most Idahoans? We’ve compiled a list, using data from the Idaho Department of Labor, tallying the biggest employers in the state as of 2023. It includes a mix of companies, nonprofit hospital systems and public-education institutions. Six are based in Boise. Idaho Labor reported employers’ head counts in ranges and said its top 10 list does not include one employer that declined to have its employment disclosed. The list also doesn’t include the federal government, which has 13,000-13,500 employees, or the state, which has about 24,227 employees, according to the Idaho State Controller’s Office. 
 

@@ -1,8 +1,15 @@
 ---
 title: Idaho
 linter-yaml-title-alias: Idaho
+related:
+- '2026-04-04'
+- CrewAI
+- Idaho Constitution
+- Oregon
+- POC
+- Washington
+authority: LOGAN
 ---
-
 !Idaho.png
 
 ## The Gem State

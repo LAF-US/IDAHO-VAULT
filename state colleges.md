@@ -1,4 +1,20 @@
 ---
+related:
+- Boise
+- Boise State University
+- College of Eastern Idaho
+- College of Southern Idaho
+- College of Western Idaho
+- Eastern Idaho
+- Idaho
+- Idaho State University
+- Lewis-Clark State College
+- North Idaho
+- North Idaho College
+- University of Idaho
+- community colleges
+- four-year state colleges
+authority: LOGAN
 ---
 four-year state colleges
 - University of Idaho

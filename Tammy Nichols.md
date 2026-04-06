@@ -1,4 +1,12 @@
 ---
+related:
+- House member
+- Legislative District 11
+- Legislative District 14
+- Middleton
+- Senate member
+- grocery tax
+authority: LOGAN
 ---
 Residence: Middleton
 - Senate member for Legislative District 14

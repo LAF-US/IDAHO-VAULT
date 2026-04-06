@@ -1,8 +1,81 @@
 ---
 author:
-  - "Kevin Richert"
+- Kevin Richert
 outlet:
-  - "Idaho Education News"
+- Idaho Education News
+related:
+- '101'
+- '159'
+- '165'
+- '200'
+- '232'
+- '240'
+- '330'
+- '347'
+- '455'
+- '500'
+- '575'
+- '658'
+- '725'
+- '750'
+- '784'
+- '954'
+- '955'
+- '995'
+- AJ Balukoff
+- Ada County
+- Boise
+- Brownlee
+- Caldwell
+- Caldwell School District
+- Canyon County
+- Carrie Semmelroth
+- Chris Trakel
+- Cindy Carlson
+- GOP
+- Grant
+- House Education
+- House Minority Leader
+- Idaho
+- Idaho Education News
+- Idaho House of Representatives
+- Idaho Statesman
+- Ilana Rubel
+- Internet
+- Janie Ward-Engelking
+- Julie Yamamoto
+- Kent Marmon
+- Kevin Richert
+- Kuna
+- Meridian
+- Moore
+- Nicole Trakel
+- Reynolds
+- Riggins
+- Senate Education
+- Soñia Galaviz
+- Steve Berch
+- Thomas
+- Thornton
+- Travis Manning
+- Treasure Valley
+- budget
+- children
+- connections
+- election
+- gender identity
+- legislative
+- links
+- meeting
+- money
+- primary election
+- school board
+- school districts
+- self
+- social media
+- voice
+- word
+authority: LOGAN
 ---
 The COVID-19 pandemic and culture wars have transformed school board elections — across the nation, and perhaps forever.
 

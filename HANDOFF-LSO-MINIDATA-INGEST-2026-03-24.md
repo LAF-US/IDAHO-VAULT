@@ -3,6 +3,32 @@ created: 2026-03-24
 source: commit
 status: draft
 verified-through: 2026-03-24
+related:
+- '2026-03-24'
+- '2026-03-25'
+- '226'
+- '228'
+- '726'
+- '740'
+- '752'
+- CAN
+- CSV
+- ChatGPT
+- Copilot
+- FINDINGS
+- Idaho
+- Idaho Legislature
+- LEFT
+- LOGAN
+- LSO
+- Legislative Services Office
+- M365
+- README
+- THE
+- VAULT-CONVENTIONS
+- budget
+- website
+authority: LOGAN
 ---
 # HANDOFF: LSO Minidata Ingest Transition (2026-03-24)
 

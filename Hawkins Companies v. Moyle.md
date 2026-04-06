@@ -1,5 +1,24 @@
 ---
 source: commit
+related:
+- CLR
+- Conditions Limitations and Restrictions
+- Department of Administration
+- FJM
+- Governor
+- House Majority Leader
+- ITD
+- ITD State Street Building Sale
+- Idaho
+- Idaho Supreme Court
+- Joint Finance-Appropriations Committee
+- Mike Moyle
+- Phil McGrane
+- Raúl Labrador
+- blocked
+- budgets
+- single-subject rule
+authority: LOGAN
 ---
 *Hawkins Companies v. Moyle* (Docket 51788-2024) challenged JFAC's use of intent language to block the ITD State Street Building Sale; the Idaho Supreme Court dismissed for lack of standing in August 2024, leaving the constitutional question open.
 

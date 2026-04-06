@@ -1,11 +1,42 @@
 ---
 author:
-  - "Michael Rezendes"
-  - "Jason Dearen"
+- Michael Rezendes
+- Jason Dearen
 outlet:
-  - "Associated Press"
-  - "Idaho Statesman"
+- Associated Press
+- Idaho Statesman
 URL: https://apnews.com/article/mormon-church-investigation-child-sex-abuse-9c301f750725c0f06344f948690caf16
+related:
+- '300'
+- About
+- Associated Press
+- California
+- Catholic Church
+- Church of Jesus Christ of Latter-Day Saints
+- Goodrich
+- Hailey
+- Home
+- Idaho
+- Idaho Statesman
+- Lake
+- Mountain Home
+- NOT
+- Paul
+- Salt Lake City
+- Utah
+- Virginia
+- Washington
+- agent
+- attorneys
+- children
+- dollars
+- individuals
+- initial
+- meeting
+- police
+- sign
+- voice
+authority: LOGAN
 ---
 Hailey, Idaho (AP) — Paul Rytting listened as a woman, voice quavering, told him her story. When she was a child, her father, a former bishop in The Church of Jesus Christ of Latter-Day Saints, had routinely slipped into bed with her while he was aroused, she said.
 

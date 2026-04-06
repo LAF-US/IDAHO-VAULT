@@ -1,9 +1,43 @@
 ---
 author:
-  - "Cameron Rasmusson"
+- Cameron Rasmusson
 outlet:
-  - "Sandpoint Reader"
+- Sandpoint Reader
 URL: https://sandpointreader.com/anti-abortion-protesters-disrupt-community/
+related:
+- '180'
+- '369'
+- Ben Olson
+- Bonner County
+- Bonner County Daily Bee
+- Christianity
+- Dan McDonald
+- Facebook
+- First Amendment
+- Idaho
+- North Idaho
+- Sagle
+- Sandpoint
+- Sandpoint Reader
+- Scott Herndon
+- Shelby Rognstad
+- Spencer
+- YouTube
+- abortion
+- anti-abortion
+- attorneys
+- children
+- churches
+- city council
+- freedom of speech
+- high schools
+- individuals
+- mayor
+- meeting
+- parents
+- sign
+- voice
+authority: LOGAN
 ---
 For a provocateur, Scott Herndon is unexpectedly calm and articulate.
 

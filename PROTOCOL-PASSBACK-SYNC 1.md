@@ -1,7 +1,29 @@
 ---
 created: 2026-03-20
 status: draft
-authority: "LOGAN"
+authority: LOGAN
+related:
+- '2026-03-20'
+- AGENTS
+- BOOTSTRAP
+- CONSTITUTION
+- DECISIONS
+- FLAG
+- FLAGS
+- III
+- LAD
+- LEVELSET
+- LOGAN
+- NOT
+- PROJECT
+- PROTOCOL
+- PROTOCOLS
+- TOSS
+- The world is quiet here
+- WORK
+- agent
+- format
+- window
 ---
 # PROTOCOL: PASSBACK SYNC HANDSHAKE
 

@@ -1,9 +1,23 @@
 ---
 author:
-  - "Ruth Brown"
+- Ruth Brown
 outlet:
-  - "Idaho Reports"
+- Idaho Reports
 URL: https://blog.idahoreports.idahoptv.org/2023/10/03/voting-bills-eliminating-use-of-student-id-at-polls-are-constitutional-says-judge/
+related:
+- '124'
+- '340'
+- Ada County
+- Idaho
+- Idaho Constitution
+- Idaho Legislature
+- Idaho Reports
+- Phil McGrane
+- Ruth Brown
+- Secretary of State
+- VOTE
+- voting
+authority: LOGAN
 ---
 An Ada County judge on Monday determined that two bills passed by the Idaho Legislature to eliminate the use of student ID cards for voter registration are constitutional. 
 

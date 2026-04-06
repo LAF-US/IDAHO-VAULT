@@ -1,9 +1,26 @@
 ---
 author:
-  - "Clark Corbin"
+- Clark Corbin
 outlet:
-  - "Idaho Capital Sun"
+- Idaho Capital Sun
 URL: https://idahocapitalsun.com/2023/12/04/feds-expand-migratory-big-game-initiative-into-idaho-montana/
+related:
+- Caldwell
+- Clark Corbin
+- Department of Agriculture
+- Idaho
+- Idaho Capital Sun
+- Montana
+- U.S. Department of Agriculture
+- Wyoming
+- agriculture
+- animals
+- deer
+- elk
+- hunters
+- livestock
+- pronghorn
+authority: LOGAN
 ---
 Officials with the U.S. Department of Agriculture are expanding into Idaho and Montana a program that offers financial incentives to ranchers and agriculture producers who voluntarily participate in conservation programs for migratory big game animals.
 

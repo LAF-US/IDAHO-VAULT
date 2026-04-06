@@ -1,4 +1,8 @@
 ---
+related:
+- index
+- sign
+authority: LOGAN
 ---
 CodeRabbit GitHub integration (AI code review)
 

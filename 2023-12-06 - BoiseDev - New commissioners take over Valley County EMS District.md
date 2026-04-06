@@ -1,9 +1,19 @@
 ---
 author:
-  - "Autumn Robertson"
+- Autumn Robertson
 outlet:
-  - "BoiseDev"
+- BoiseDev
 URL: https://boisedev.com/news/2023/12/06/valley-county-ems-district/
+related:
+- BoiseDev
+- Cascade
+- County Commissioners
+- Donnelly
+- EMS
+- McCall
+- Valley County
+- valley
+authority: LOGAN
 ---
 The management of the Valley County EMS District has changed.
 

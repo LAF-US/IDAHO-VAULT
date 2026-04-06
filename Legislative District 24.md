@@ -1,4 +1,18 @@
 ---
+related:
+- Camas County
+- Chenele Dixon
+- Glenneda Zuiderveld
+- Gooding
+- Gooding County
+- Lance Clow
+- Lee Heider
+- Linda Wright Hartgen
+- Stephen Hartgen
+- Steve Miller
+- Twin Falls
+- Twin Falls County
+authority: LOGAN
 ---
 Camas County, Gooding County & most of Twin Falls County
 

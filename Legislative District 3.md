@@ -1,4 +1,20 @@
 ---
+related:
+- Bob Nonini
+- Don Cheatham
+- Doug Okuniewicz
+- Hayden
+- Jordan Redman
+- Kootenai
+- Kootenai County
+- Peter Riggs
+- Phil Hart
+- Rathdrum
+- Ron Mendive
+- Steve Vick
+- Tony Wisniewski
+- Vito Barbieri
+authority: LOGAN
 ---
 Northern Kootenai County including Rathdrum & Hayden
 - Formerly southwestern Kootenai County

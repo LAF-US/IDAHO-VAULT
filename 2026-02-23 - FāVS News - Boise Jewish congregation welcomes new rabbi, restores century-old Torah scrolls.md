@@ -1,9 +1,36 @@
 ---
-source: "https://favs.news/boise-jewish-congregation-welcomes-new-rabbi-restores-century-old-torah-scrolls/"
+source: https://favs.news/boise-jewish-congregation-welcomes-new-rabbi-restores-century-old-torah-scrolls/
 author:
-  - "Logan Finney"
+- Logan Finney
 published: 2026-02-23
 created: 2026-03-27
+related:
+- '2026-03-27'
+- '501'
+- Alaska
+- Boise
+- California
+- Europe
+- FāVS
+- Idaho
+- Judaism
+- Logan Finney
+- Los Angeles
+- Moscow
+- New York
+- North Idaho
+- Orange County
+- Oregon
+- Spokane
+- Torah
+- Washington
+- belonging
+- fish
+- journalists
+- self
+- voice
+- word
+authority: LOGAN
 ---
 Date:
 

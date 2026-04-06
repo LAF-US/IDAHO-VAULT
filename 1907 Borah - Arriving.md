@@ -1,5 +1,8 @@
 ---
 date: 1907-01-01
+related:
+- Washington
+authority: LOGAN
 ---
 !borah-william-e-senator-from-idaho-1907--4-1024.jpg
 

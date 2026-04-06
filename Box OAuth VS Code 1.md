@@ -2,6 +2,11 @@
 updated: 2026-03-24
 status: draft
 source: commit
+related:
+- '127'
+- '2026-03-24'
+- URI
+authority: LOGAN
 ---
 # Box OAuth in VS Code (manual client registration)
 

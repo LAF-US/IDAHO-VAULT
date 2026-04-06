@@ -1,9 +1,22 @@
 ---
 author:
-  - "Kalama Hines"
+- Kalama Hines
 outlet:
-  - "East Idaho News"
+- East Idaho News
 URL: https://www.eastidahonews.com/2023/12/follow-up-inspection-completed-on-inkom-bridge-next-full-inspection-scheduled-for-summer/
+related:
+- East Idaho News
+- Eric Staats
+- ITD
+- Idaho
+- Inkom
+- Interstate 15
+- Kalama Hines
+- bridges
+- meeting
+- voiced
+- website
+authority: LOGAN
 ---
 Inkom — The latest Idaho Transportation Department inspection of the Inkom Interstate 15 overpass bridges shows “no changes.”
 

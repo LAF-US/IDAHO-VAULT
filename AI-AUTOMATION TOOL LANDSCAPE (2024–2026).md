@@ -1,8 +1,34 @@
 ---
 date created: Saturday, March 28th 2026, 5:31:30 pm
 date modified: Saturday, March 28th 2026, 5:32:17 pm
+related:
+- '2026-03-28'
+- ADD
+- API
+- CLI
+- CrewAI
+- DEVELOPMENT
+- FRAMEWORKS
+- GUI
+- GitHub
+- LLM
+- MCP
+- MVP
+- NOT
+- Notebook LM
+- OCR
+- Obsidian
+- OpenAI
+- OpenAI Swarm
+- PROTOCOL
+- RSS
+- agent
+- coordination
+- node
+- systems
+- web
+authority: LOGAN
 ---
-
 Notebook LM 2026-03-28
 
 ---

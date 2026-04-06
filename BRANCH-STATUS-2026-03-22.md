@@ -3,8 +3,26 @@ type: branch-status-report
 date: 2026-03-22
 compiled-by: claude/github-agent-setup-1N07i
 main-head: 932bab7
+related:
+- '115'
+- '131'
+- '133'
+- '2026-03-22'
+- CSV
+- Copilot
+- DECISIONS
+- LEVELSET
+- LEVELSET 1
+- LEVELSET 2
+- LEVELSET-CURRENT
+- LEVELSET-v2
+- agent
+- infrastructure
+- initial
+- self
+- threshold
+authority: LOGAN
 ---
-
 # Branch Status Report — 2026-03-22
 
 ## Executive Summary

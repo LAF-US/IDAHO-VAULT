@@ -1,4 +1,11 @@
 ---
+related:
+- Camas County
+- Fairfield
+- House member
+- Muffy Davis
+- redistricting
+authority: LOGAN
 ---
 Residence: Fairfield
 

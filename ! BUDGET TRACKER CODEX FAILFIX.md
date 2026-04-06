@@ -1,8 +1,66 @@
 ---
 date created: Friday, April 3rd 2026, 2:04:25 am
 date modified: Friday, April 3rd 2026, 2:09:50 am
+related:
+- '110'
+- '112'
+- '114'
+- '115'
+- '116'
+- '130'
+- '131'
+- '162'
+- '166'
+- '173'
+- '200'
+- '226'
+- '237'
+- '315'
+- '317'
+- '320'
+- '351'
+- '352'
+- '407'
+- Attorney General
+- CAN
+- Cache
+- ChatGPT
+- DFM
+- FLAG
+- Governor
+- Idaho
+- LAF
+- LET
+- LOG
+- NEW
+- NOT
+- NOW
+- ONE
+- OpenAI
+- PDF
+- PING
+- REF
+- TBD
+- THE
+- budget
+- chain
+- character
+- format
+- formula
+- legislative
+- legislative session
+- links
+- numbers
+- pair
+- self
+- sign
+- template
+- veto
+- voice
+- window
+- word
+authority: LOGAN
 ---
-
 PING -- Hello, Claude! Logan says welcome to MS Excel.
 
 Hello, Logan! Welcome! 👋

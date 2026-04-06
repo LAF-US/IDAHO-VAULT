@@ -1,5 +1,20 @@
 ---
 source: commit
+related:
+- '202'
+- Bonners Ferry
+- House member
+- Idaho
+- Idaho Code
+- JFAC Rules
+- JFAC Working Groups
+- Joint Finance-Appropriations Committee
+- Sandpoint
+- Scott Grow
+- election
+- meeting
+- website
+authority: LOGAN
 ---
 Denise Woodward is a Republican Idaho House member from District 1A (Bonners Ferry) who serves on JFAC, made procedural objections at the March 7, 2025 JFAC meeting, and voted against Scott Grow's re-election as co-chair in 2025.
 

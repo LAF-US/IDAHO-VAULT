@@ -1,9 +1,64 @@
 ---
 author:
-  - "Ryan Suppe"
+- Ryan Suppe
 outlet:
-  - "Idaho Education News"
+- Idaho Education News
 URL: https://www.idahoednews.org/top-news/did-new-school-facilities-funding-lower-property-taxes-it-depends/
+related:
+- '103'
+- '106'
+- '288'
+- '292'
+- '298'
+- '305'
+- '368'
+- '369'
+- '386'
+- '438'
+- '489'
+- '500'
+- '534'
+- '594'
+- '656'
+- '940'
+- Ada County
+- Boise
+- Boise School District
+- C. Scott Grow
+- Eagle
+- Idaho
+- Idaho Capital Sun
+- Idaho Education News
+- Idaho Falls
+- Legislative Services Office
+- Marsh Valley
+- Melba
+- Nampa
+- Nampa School District
+- Pocatello
+- Ryan Suppe
+- Scott Grow
+- Valley School District
+- Wendy Horman
+- West Ada School District
+- average daily attendance
+- bonds
+- bonds and levies
+- budget
+- construction
+- costs
+- dollars
+- homeowners
+- meeting
+- money
+- numbers
+- property tax
+- school districts
+- school facilities
+- supplemental levy
+- tax credits
+- taxes
+authority: LOGAN
 ---
 Idaho school districts are reaping the benefits of a new state fund that helps them pay down bonds and levies, and many property taxpayers are seeing decreases in their bills.
 

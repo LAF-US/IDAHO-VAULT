@@ -1,11 +1,61 @@
 ---
 author:
-  - "Becca Savransky"
-  - "Sarah Miller"
+- Becca Savransky
+- Sarah Miller
 outlet:
-  - "Idaho Statesman"
-  - "ProPublica"
+- Idaho Statesman
+- ProPublica
 URL: https://www.idahostatesman.com/news/local/education/article278735329.html
+related:
+- 2023 Idaho Statesman & ProPublica - Idaho's crumbling schools
+- '275'
+- About
+- Act
+- American Falls
+- Americans with Disabilities Act
+- Becca Savransky
+- Central Idaho
+- Freedom
+- Idaho
+- Idaho Freedom Foundation
+- Idaho Statesman
+- Idaho Supreme Court
+- North Idaho
+- OUR
+- Plummer
+- ProPublica
+- Salmon
+- Sarah Miller
+- Scott Bedke
+- Shawn Keough
+- Shoshone
+- State Board of Education
+- Troy
+- USE
+- Worley
+- bond elections
+- bonds
+- budget
+- children
+- district court
+- election
+- high schools
+- legislative
+- math
+- meeting
+- money
+- parents
+- public schools
+- school board
+- school districts
+- school facilities
+- social media
+- taxes
+- teachers
+- threshold
+- valley
+- water
+authority: LOGAN
 ---
 2023 Idaho Statesman & ProPublica - Idaho's crumbling schools 
 

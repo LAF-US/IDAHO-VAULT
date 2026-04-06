@@ -1,6 +1,17 @@
 ---
 cmte:
-  - "Senate Ethics"
+- Senate Ethics
+related:
+- Attorney General
+- III
+- Idaho
+- Idaho Code
+- President
+- Rules of the Senate
+- Senate member
+- executive session
+- warrants
+authority: LOGAN
 ---
 RULE 52
  

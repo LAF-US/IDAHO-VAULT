@@ -1,3 +1,56 @@
+---
+authority: LOGAN
+related:
+- '2026-03-12'
+- '2026-03-15'
+- '2026-03-16'
+- AGENTS
+- BIN
+- Boise
+- CCA
+- CLAUDE
+- CONSTITUTION
+- Clark Corbin
+- Copilot
+- Cornel Rasor
+- DECISIONS
+- Data Centers
+- Drive
+- FOR
+- FāVS
+- GitHub
+- Google
+- Idaho
+- Idaho Capital Sun
+- Kyle Harris
+- LEVELSET
+- LEVELSET-v3.2.6.1-PROMPT
+- LOGAN
+- Logan Finney
+- Logan's
+- M365
+- MCP
+- Melissa Davlin
+- NotebookLM
+- OpenClaw
+- PROJECT
+- PROTOCOLS
+- RESEARCH
+- RESEARCH-TIM-OREN
+- TBD
+- TFN
+- THE
+- TIM
+- Tim Oren
+- 'Yes'
+- agent
+- end goal
+- freelance
+- unachievable
+- voting
+- web
+---
+
 # MULTI-CONVERSATION COLLAPSE + CONTEXT VAULT
 *For: PERMANENT: AUTHORITY: CODE*
 *From: PERSISTENT: ADMINISTRATION*

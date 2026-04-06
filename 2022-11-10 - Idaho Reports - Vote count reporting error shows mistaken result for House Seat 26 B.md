@@ -1,8 +1,22 @@
 ---
 author:
-  - "Ruth Brown"
+- Ruth Brown
 outlet:
-  - "Idaho Reports"
+- Idaho Reports
+related:
+- County Clerk
+- Idaho
+- Idaho Capital Sun
+- Idaho Reports
+- Jack Nelsen
+- Jerome
+- Jerome County
+- Legislative District 26
+- Ruth Brown
+- Secretary of State
+- election
+- numbers
+authority: LOGAN
 ---
 _By Ruth Brown, Idaho Reports_
 

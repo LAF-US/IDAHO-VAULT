@@ -1,4 +1,23 @@
 ---
+related:
+- Ada County
+- Ben Fuhriman
+- Bingham County
+- Bingham County Republican Central Committee
+- Bryan Smith
+- Dan Cravens
+- Dorothy Moon
+- East Idaho News
+- GOP
+- Greg Chaney
+- Idaho
+- Idaho Republican Party
+- blocked
+- counties
+- election
+- initial
+- meeting
+authority: LOGAN
 ---
 https://www.eastidahonews.com/2023/10/judge-sides-with-bingham-county-republicans-in-ongoing-legal-battle/
 

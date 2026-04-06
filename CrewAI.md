@@ -1,12 +1,25 @@
 ---
-title: "CrewAI"
+title: CrewAI
 updated: 2026-03-29
 status: stub
 authority: perplexity
 doc_class: organization
 url: https://crewai.com
+related:
+- '2026-03-29'
+- AGENTS
+- AMP
+- BIG
+- BIG IFS — UNIFIED SWARM
+- Factory
+- IFS
+- Logan Finney
+- OpenAI
+- OpenAI Swarm
+- R&D
+- UNIFIED
+- agent
 ---
-
 # CrewAI
 
 **CrewAI** is a multi-agent orchestration framework and platform (AMP + Studio) that lets builders define role-based agents, coordinate them as "crews," and run them with tracing, testing, events, and serverless scaling in cloud or on-prem environments.

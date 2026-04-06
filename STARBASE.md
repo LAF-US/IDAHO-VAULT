@@ -1,3 +1,16 @@
+---
+authority: LOGAN
+related:
+- Boise
+- Gowen Field
+- Grace
+- Idaho
+- Middleton
+- STEM
+- U.S. Department of Defense
+- Whitney
+---
+
 U.S. Department of Defense youth outreach STEM program 
 
 https://www.imd.idaho.gov/starbase/

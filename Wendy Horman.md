@@ -1,4 +1,10 @@
 ---
+related:
+- Idaho
+- Idaho Falls
+- Joint Finance-Appropriations Committee
+- Scott Bedke
+authority: LOGAN
 ---
 Residence: Idaho Falls
 

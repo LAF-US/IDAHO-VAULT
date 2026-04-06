@@ -1,9 +1,34 @@
 ---
 author:
-  - "Ruth Brown"
+- Ruth Brown
 outlet:
-  - "Idaho Reports"
+- Idaho Reports
 URL: https://blog.idahoreports.idahoptv.org/2023/12/06/idaho-supreme-court-hears-arguments-on-rulemaking-dispute/
+related:
+- '206'
+- Brad Little
+- Burke
+- Cynthia Meyer
+- Gregory Moeller
+- III
+- Idaho
+- Idaho Constitution
+- Idaho Legislature
+- Idaho Reports
+- Idaho Supreme Court
+- John Stegner
+- Ruth Brown
+- State Athletic Commission
+- U.S. Constitution
+- administrative rules
+- attorneys
+- costs
+- definition
+- legislative
+- legislative session
+- sign
+- veto
+authority: LOGAN
 ---
 By Ruth Brown, Idaho Reports 
 

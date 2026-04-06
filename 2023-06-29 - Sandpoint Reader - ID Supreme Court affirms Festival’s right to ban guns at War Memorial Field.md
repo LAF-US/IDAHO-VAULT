@@ -1,9 +1,45 @@
 ---
 author:
-  - "Zach Hagadone"
+- Zach Hagadone
 outlet:
-  - "Sandpoint Reader"
+- Sandpoint Reader
 URL: https://sandpointreader.com/id-supreme-court-affirms-festivals-right-to-ban-guns-at-war-memorial-field/
+related:
+- '320'
+- Avery
+- Boise
+- Bonner County
+- Daryl Wheeler
+- Festival at Sandpoint
+- Freedom
+- Idaho
+- Idaho Code
+- Idaho Constitution
+- Idaho Freedom Caucus
+- Idaho Second Amendment Alliance
+- Idaho Senate
+- Idaho Supreme Court
+- Mark Sauter
+- Ponderay
+- Sage Dixon
+- Sandpoint
+- Sandpoint Police Department
+- Sandpoint Reader
+- Scott Herndon
+- Second Amendment
+- Shelby Rognstad
+- War Memorial Field
+- Washington
+- Zach Hagadone
+- city council
+- district court
+- law enforcement
+- legislative
+- mayor
+- national forests
+- self
+- special session
+authority: LOGAN
 ---
 *Unanimous decision dismisses appeal from Dist. 1 Sen. Scott Herndon, who promises ‘legislative solution’ to ‘loophole’ in Idaho gun protections*
 

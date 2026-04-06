@@ -1,8 +1,23 @@
 ---
 date created: 2026-03-30
 date modified: 2026-03-30
+related:
+- 1Password
+- '2026-03-29'
+- '2026-03-30'
+- '595'
+- AGENTS
+- CONSTITUTION
+- DECISIONS
+- LEVELSET
+- Logan's
+- PROTOCOL
+- TRIUNE
+- UTC
+- VAULT-CONVENTIONS
+- VAULT-ZONES
+authority: LOGAN
 ---
-
 ## Triune Alignment Report
 
 ### Context

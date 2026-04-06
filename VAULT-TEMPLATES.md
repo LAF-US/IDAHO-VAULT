@@ -1,14 +1,39 @@
 ---
-title: "VAULT-TEMPLATES — Document Class and Template System"
+title: VAULT-TEMPLATES — Document Class and Template System
 created: 2026-03-25
 updated: 2026-04-01
 status: draft
-authority: "LOGAN"
+authority: LOGAN
 authors:
-  - ChatGPT Codex
+- ChatGPT Codex
 source: issue/LAF-9
+related:
+- '2026-03-25'
+- '2026-04-01'
+- CONSTITUTION
+- ChatGPT
+- DAILY NOTE
+- DAILY NOTE TEMPLATE
+- DECISIONS
+- FLAG
+- GitHub
+- Home
+- ISO
+- LAF
+- LOGAN
+- OBSIDIAN DAILY NOTE
+- Obsidian
+- PROTOCOL
+- VAULT-METADATA-STANDARD
+- VAULT-ZONES
+- 'Yes'
+- canon
+- doctrine
+- infrastructure
+- links
+- meeting
+- template
 ---
-
 # VAULT-TEMPLATES — Document Class and Template System
 
 This file defines the canonical template system for IDAHO-VAULT. Its purpose is to eliminate ambiguity in document routing, naming, and maintenance.

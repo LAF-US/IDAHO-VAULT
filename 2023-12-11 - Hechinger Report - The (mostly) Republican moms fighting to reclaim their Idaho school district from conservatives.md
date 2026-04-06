@@ -1,9 +1,79 @@
 ---
 author:
-  - "Laura Pappano"
+- Laura Pappano
 outlet:
-  - "The Hechinger Report"
+- The Hechinger Report
 URL: https://hechingerreport.org/the-mostly-republican-idaho-moms-fighting-to-reclaim-their-school-district-from-hard-right-conservatives/
+related:
+- '105'
+- '125'
+- '295'
+- '420'
+- '781'
+- ARE
+- Boise
+- Bonner County
+- Bonner County Republican Central Committee
+- Branden Durst
+- CRT
+- Election Day
+- Facebook
+- Freedom
+- GOP
+- IFF
+- Idaho
+- Idaho Freedom Foundation
+- Idaho Supreme Court
+- Jim Jones
+- Lake
+- Lake Pend Oreille
+- Lake Pend Oreille School District
+- Liberty
+- North Idaho
+- Paul
+- Priest River
+- SEL
+- Sandpoint
+- Second Amendment
+- Spokane
+- Troy
+- Washington
+- West Bonner County School District
+- Whitney
+- bonds
+- books
+- budget
+- campaign finance
+- cancer
+- cattle
+- children
+- costs
+- counselors
+- district court
+- dollars
+- election
+- elk
+- hunting
+- lakes
+- laughs
+- meeting
+- numbers
+- parents
+- police
+- pornography
+- property tax
+- public schools
+- roads
+- school board
+- self
+- supplemental levy
+- teachers
+- transportation
+- voice
+- voting
+- water
+- website
+authority: LOGAN
 ---
 *The far-right takeover of West Bonner school district disrupted learning and prompted an exodus of students and teachers. A group of moms – many of them Republican – organized to fight back*
 

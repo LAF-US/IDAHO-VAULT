@@ -1,7 +1,45 @@
 ---
-author: "Margaret Carmel"
-outlet: "BoiseDev"
+author: Margaret Carmel
+outlet: BoiseDev
 URL: https://boisedev.com/news/2023/10/25/emmett-downtown-businesses/
+related:
+- '107'
+- '117'
+- '119'
+- '122'
+- '123'
+- '125'
+- '127'
+- '131'
+- '132'
+- '136'
+- '142'
+- Boise
+- BoiseDev
+- County Assessor
+- Delaware
+- Emmett
+- Gem County
+- Highway 16
+- Highway 52
+- Home
+- Idaho
+- LLC
+- Margaret Carmel
+- Oregon
+- Payette
+- Payette River
+- Secretary of State
+- Sweet
+- Treasure Valley
+- Washington
+- agent
+- mayor
+- money
+- property tax
+- water
+- website
+authority: LOGAN
 ---
 Like the rest of the Treasure Valley, Emmett is drawing in new residents for its mountain setting and small-town feel.
 

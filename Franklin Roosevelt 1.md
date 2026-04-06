@@ -1,4 +1,8 @@
 ---
+related:
+- FDR
+- President
+authority: LOGAN
 ---
 !content/Images/tumblr_owx4eg6HZq1wc45zao1_1280.png
 

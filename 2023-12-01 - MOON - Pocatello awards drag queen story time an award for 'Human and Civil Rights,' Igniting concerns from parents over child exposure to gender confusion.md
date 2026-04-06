@@ -1,8 +1,22 @@
 ---
 author:
-  - "Dorothy Moon"
-  - "Idaho Republican Party"
+- Dorothy Moon
+- Idaho Republican Party
 URL: https://idgop.org/2023/12/01/pocatello-awards-drag-queen-storytime-an-award-for-human-and-civil-rights-igniting-concerns-from-parents-over-child-exposure-to-gender-confusion/
+related:
+- Dorothy Moon
+- Idaho
+- Idaho Republican Party
+- Pocatello
+- XIV
+- children
+- city council
+- drag
+- drag reading events
+- mayor
+- minors
+- parents
+authority: LOGAN
 ---
 https://idgop.org/2023/12/01/pocatello-awards-drag-queen-storytime-an-award-for-human-and-civil-rights-igniting-concerns-from-parents-over-child-exposure-to-gender-confusion/
 

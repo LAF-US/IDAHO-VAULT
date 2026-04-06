@@ -1,4 +1,38 @@
 ---
+related:
+- '548'
+- Attorney General
+- Brent Hill
+- Division of Financial Management
+- House State Affairs
+- Huston
+- Idaho
+- Idaho Falls
+- Jim Addis
+- Joint Finance-Appropriations Committee
+- Ketchum
+- Logan Finney
+- McClure Center
+- Medicaid
+- Medicaid Expansion
+- Michelle
+- Michelle Stennett
+- Patti Anne Lodge
+- President
+- Reclaim Idaho
+- Rexburg
+- Secretary of State
+- Senate Minority Leader
+- Senate President Pro Tempore
+- Senate State Affairs
+- Wendy Horman
+- budget
+- campaign finance
+- election
+- fiscal year
+- sign
+- word
+authority: LOGAN
 ---
 https://www.loganfinney.com/idaho-legislature-2020/3/3/ballot-initiative-process
 

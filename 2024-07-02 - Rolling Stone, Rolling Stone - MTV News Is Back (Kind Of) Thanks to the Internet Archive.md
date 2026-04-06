@@ -1,9 +1,25 @@
 ---
-source: "https://www.rollingstone.com/music/music-news/mtv-news-saved-internet-archive-1235051776/"
+source: https://www.rollingstone.com/music/music-news/mtv-news-saved-internet-archive-1235051776/
 author:
-  - "Jon Blistein"
+- Jon Blistein
 published: 2024-07-02
 created: 2026-03-30
+related:
+- '2026-03-30'
+- '412'
+- '460'
+- '575'
+- CMT
+- Internet
+- MTV
+- New York
+- Stone
+- books
+- copyright
+- sign
+- web
+- website
+authority: LOGAN
 ---
 ![Atmosphere during 2006 MTV Video Music Awards - MTV News Red Carpet at Radio City Music Hall in New York City, New York, United States. (Photo by Jason Merritt/FilmMagic)](https://www.rollingstone.com/wp-content/uploads/2024/07/GettyImages-107483637.jpg?w=1581&h=1054&crop=1)
 

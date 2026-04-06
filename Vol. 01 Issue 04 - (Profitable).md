@@ -1,4 +1,8 @@
 ---
+related:
+- '250'
+- money
+authority: LOGAN
 ---
 !INLAY-01-04.jpg
 # (Profitable)

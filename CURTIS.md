@@ -1,4 +1,7 @@
 ---
+related:
+- The world is quiet here
+authority: LOGAN
 ---
 HOME
 

@@ -1,4 +1,10 @@
 ---
+related:
+- Blaine County
+- House member
+- Ketchum
+- Legislative District 26
+authority: LOGAN
 ---
 Residence: Ketchum
 - Blaine County Commissioner

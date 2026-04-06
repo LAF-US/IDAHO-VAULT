@@ -1,4 +1,25 @@
 ---
+related:
+- Bert Stevenson
+- Blaine County
+- Camas County
+- Dean Cameron
+- Gooding
+- Gooding County
+- Jack Nelsen
+- Jerome
+- Jerome County
+- Lincoln
+- Lincoln County
+- Maxine Bell
+- Michelle
+- Michelle Stennett
+- Muffy Davis
+- Ned Burns
+- Ron Taylor
+- Sally Toone
+- Steve Miller
+authority: LOGAN
 ---
 Blaine County, Lincoln County & Jerome County
 - Formerly Blaine County, Camas County, Gooding County & Lincoln County

@@ -1,5 +1,41 @@
 ---
 source: commit
+related:
+- '202'
+- '207'
+- '208'
+- Ada County
+- Attorney General
+- Britt Raybould
+- CCA
+- Capitol Correspondents Association
+- Capitol Correspondents Association CCA Letter March 2026
+- Conditions Limitations and Restrictions
+- Denise Woodward
+- Dustin Manwaring
+- Eagle
+- FAC
+- Idaho
+- Idaho Code
+- JFAC Rules
+- JFAC Working Groups
+- Jennifer Novak
+- Jim Jones
+- Joint Finance-Appropriations Committee
+- Joint Rule Non-Adoption 2024-2025
+- Josh Tanner
+- Judy Boyle
+- Keith Bybee
+- LSO
+- Mark Harris
+- Melissa Wintrow
+- Millennium Fund
+- Scott Grow
+- doctrine
+- election
+- meeting
+- voting
+authority: LOGAN
 ---
 This is the compiled master research brief for the JFAC Working Groups open-meetings investigation as of March 12, 2026. It is a research working document, not a published source. All items flagged [TRANS] require audio verification; all [UNVERIFIED] items require primary source confirmation.
 

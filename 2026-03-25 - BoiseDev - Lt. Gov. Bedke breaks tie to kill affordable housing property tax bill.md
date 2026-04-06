@@ -1,9 +1,47 @@
 ---
-source: "https://boisedev.com/news/2026/03/24/bedke-tie-affordable/"
+source: https://boisedev.com/news/2026/03/24/bedke-tie-affordable/
 author:
-  - "Margaret Carmel - BoiseDev Sr. Reporter"
+- Margaret Carmel - BoiseDev Sr. Reporter
 published: 2026-03-25
 created: 2026-03-30
+related:
+- '2026-03-25'
+- '2026-03-30'
+- '760'
+- Boise
+- BoiseDev
+- Brian Lenney
+- Governor
+- IMG
+- Idaho
+- Idaho Capitol
+- Idaho Senate
+- Jon Weber
+- Margaret Carmel
+- Mark Harris
+- Meridian
+- Nampa
+- President
+- ROS
+- Rexburg
+- Scott Bedke
+- Soda Springs
+- Treasure Valley
+- Treg Bernt
+- Twin Falls
+- affordable housing
+- cities
+- costs
+- counties
+- dollars
+- housing
+- meeting
+- nonprofits
+- property tax
+- tax exemptions
+- valley
+- water
+authority: LOGAN
 ---
 ## Bill to provide affordable housing tax credit dies at the finish line… twice
 

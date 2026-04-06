@@ -1,5 +1,11 @@
 ---
 date: 1938-12-01
+related:
+- 1938 Borah - Committee Monopoly Inquiry
+- Idaho
+- Utah
+- Washington
+authority: LOGAN
 ---
 !examine-first-evidence-offered-to-monopoly-committee-washington-dc-dec-1-senator-1024.jpg
 

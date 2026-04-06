@@ -1,3 +1,41 @@
+---
+authority: LOGAN
+related:
+- '2026-03-15'
+- '2026-03-16'
+- AGENTS
+- API
+- CCA
+- CLAUDE
+- CONSOLIDATED-HANDOFF-2026-03-16
+- Copilot
+- DECISIONS
+- FLAG
+- FOR
+- FāVS
+- GitHub
+- Idaho
+- LEVELSET
+- LEVELSET-v2
+- LEVELSET-v2-idaho-scraper
+- LEVELSET-v3.2.6-idaho-scraper
+- LEVELSET-v3.2.6.1-PROMPT
+- LEVELSET-v3.2.6.1-idaho-swarm-alert
+- Logan Finney
+- Logan's
+- NOT
+- RESEARCH
+- RESEARCH-TIM-OREN
+- TIM
+- agent
+- blocked
+- coordination
+- end goal
+- freelance
+- unachievable
+- web
+---
+
 # UPWARD RESOLUTION FLAG — Multi-Conversation Consolidation
 
 **TO:** CODE AUTHORITY (and Logan Finney)

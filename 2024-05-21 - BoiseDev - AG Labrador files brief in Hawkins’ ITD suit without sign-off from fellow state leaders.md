@@ -1,9 +1,31 @@
 ---
 author:
-  - "Margaret Carmel"
+- Margaret Carmel
 outlet:
-  - "BoiseDev"
+- BoiseDev
 URL: https://boisedev.com/news/2024/05/21/labrador-brief-itd/
+related:
+- Attorney General
+- BoiseDev
+- Brad Little
+- Department of Lands
+- ITD
+- Idaho
+- Idaho Legislature
+- Idaho Supreme Court
+- Madison Hardy
+- Margaret Carmel
+- Phil McGrane
+- Raúl Labrador
+- Secretary of State
+- State Controller
+- State of Idaho
+- budget
+- executive session
+- meeting
+- sign
+- website
+authority: LOGAN
 ---
 The State of Idaho responded to a lawsuit over a decision to pull out of a planned sale of the ITD campus on State Street, but it came without the approval of top officials.
 

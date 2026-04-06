@@ -1,6 +1,22 @@
 ---
 URL: https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/about-rulesets
 date accessed: 03/09/2026
+related:
+- '215'
+- '264'
+- '275'
+- '326'
+- '379'
+- '749'
+- '751'
+- '773'
+- '879'
+- About
+- Cloud
+- GitHub
+- character
+- syntax
+authority: LOGAN
 ---
 # About rulesets
 

@@ -1,1 +1,8 @@
+---
+authority: LOGAN
+related:
+- cities
+- counties
+---
+
 Legislature sometime in 2021-22 passed a bill that allowed cities and counties to issue tax rebates to residents in the vein of the circuit breaker 

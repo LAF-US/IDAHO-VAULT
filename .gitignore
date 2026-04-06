@@ -56,6 +56,7 @@ Thumbs.db
 *.png
 *.gif
 *.webp
+*.webm
 *.svg
 *.heic
 *.mp4
@@ -102,6 +103,9 @@ Thumbs.db
 # Project-specific
 .env
 *.vault.json
+.remember/
+_private/
+_private/**
 .codex/tmp/
 tmp-minidata-msg/
 tmp-msg-extract/
@@ -140,6 +144,10 @@ _phone-link-sweep.log
 
 # Obsidian plugin cache directories (machine-generated, not source-trackable)
 .obsidian/plugins/*/cache/
+.makemd/
+.space/
+BMO/
+Tags/
 
 # Obsidian plugin compiled binaries (too large, not source-trackable)
 .obsidian/plugins/mcp-tools/bin/
@@ -164,6 +172,7 @@ tempfolder.txt
 # Claude Code local settings (machine-local, not for repo)
 .claude/settings.local.json
 .claude/worktrees/
+
 
 # Ignore local MCP server binary
 .obsidian/plugins/mcp-tools/bin/mcp-server.exe

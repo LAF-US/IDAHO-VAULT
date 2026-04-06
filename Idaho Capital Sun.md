@@ -1,5 +1,15 @@
 ---
 source: commit
+related:
+- Clark Corbin
+- ITD
+- Idaho
+- Idaho Reports
+- JFAC Working Groups
+- Jim Jones
+- OSC
+- chain
+authority: LOGAN
 ---
 The Idaho Capital Sun is a nonprofit digital news outlet that is the primary story carrier for the JFAC working groups open-meetings investigation and publishes Idaho Reports content under a CC BY-ND 4.0 syndication agreement.
 

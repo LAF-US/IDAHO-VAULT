@@ -1,5 +1,18 @@
 ---
-cmte: "House State Affairs"
+cmte: House State Affairs
+related:
+- '106'
+- Heather Scott
+- House State Affairs
+- Randy Armstrong
+- State Treasurer
+- Steven Harris
+- bond elections
+- bonds
+- election
+- taxing districts
+- unclaimed property
+authority: LOGAN
 ---
 House State Affairs - Jan 21, 2020
 

@@ -1,4 +1,28 @@
 ---
+related:
+- '191'
+- '195'
+- '287'
+- '410'
+- '630'
+- Idaho
+- US 10
+- US 12
+- US 191
+- US 195
+- US 2
+- US 20
+- US 26
+- US 287
+- US 30
+- US 410
+- US 630
+- US 89
+- US 91
+- US 93
+- US 95
+- highways
+authority: LOGAN
 ---
 American highways owned and maintained by Idaho Transportation Department 
 - US 2

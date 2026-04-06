@@ -1,6 +1,44 @@
 ---
 author:
-  - "Idaho Main Street Caucus"
+- Idaho Main Street Caucus
+related:
+- Abby Lee
+- Britt Raybould
+- Chenele Dixon
+- Chuck Winder
+- Dan Garner
+- Dave Lent
+- Doug Ricks
+- Geoff Schroeder
+- Governor
+- Greg Lanting
+- Idaho
+- Idaho Main Street Caucus
+- Jack Nelsen
+- Jerald Raymond
+- Jim Guthrie
+- Jon Weber
+- Josh Wheeler
+- Julie VanOrden
+- Julie Yamamoto
+- Linda Wright Hartgen
+- Lori McCann
+- Mark Sauter
+- Mickelsen
+- Raymond
+- Rick Cheatum
+- Rod Furniss
+- Spencer
+- Spencer Cox
+- Stephanie Mickelsen
+- Todd Lakey
+- Treg Bernt
+- Utah
+- Van Burtenshaw
+- individuals
+- self
+- tribes
+authority: LOGAN
 ---
 Every July, we celebrate our nation’s independence with respect for our past and an eye for the future. Too often, we fail to remember a key lesson from our founders. They disagreed vigorously about how to govern our nation in the chambers of Independence Hall. Even as they shared the cost of standing shoulder-to-shoulder on the battlefield, they embraced the challenge of building a country free of unelected kings with citizens empowered to pursue self-governance.
 

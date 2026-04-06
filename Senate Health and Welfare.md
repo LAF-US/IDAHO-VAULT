@@ -1,4 +1,13 @@
 ---
+related:
+- Abby Lee
+- Carl Bjerke
+- Glenneda Zuiderveld
+- Julie VanOrden
+- Mark Harris
+- Melissa Wintrow
+- Ron Taylor
+authority: LOGAN
 ---
 # Roster
 ## 2023 Members

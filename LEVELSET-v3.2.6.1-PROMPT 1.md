@@ -1,3 +1,22 @@
+---
+authority: LOGAN
+related:
+- '900'
+- CLAUDE
+- GitHub
+- Idaho
+- Idaho Public Television
+- Idaho Reports
+- LEVELSET
+- LOGAN
+- Logan Finney
+- Logan's
+- Obsidian
+- YOU
+- infrastructure
+- window
+---
+
 # LEVELSET v3.2.6.1 PROMPT
 *Version: 2026-03-14. Supersedes v3.2.6.*
 *Patch notes: ROUTING section reframed - automation is the end state and default, manual bridge is the interim fallback.*

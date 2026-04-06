@@ -1,7 +1,41 @@
 ---
-author: "Logan Finney"
-outlet: "Idaho Reports"
+author: Logan Finney
+outlet: Idaho Reports
 URL: https://blog.idahoreports.idahoptv.org/2022/10/24/fish-and-game-detects-first-chronic-wasting-disease-of-2022-hunting-season/
+related:
+- '500'
+- CWD
+- CWD Management Area
+- Central Idaho
+- Department of Fish and Game
+- Game Management Unit 14
+- Grangeville
+- Idaho
+- Idaho County
+- Idaho Reports
+- Logan Finney
+- Montana
+- Riggins
+- Slate Creek
+- U.S. Centers for Disease Control
+- Utah
+- Wyoming
+- animals
+- caribou
+- chronic wasting disease
+- deer
+- elk
+- fish
+- humans
+- hunters
+- hunting
+- mad cow disease
+- moose
+- mule deer
+- nodes
+- prion
+- white-tailed deer
+authority: LOGAN
 ---
 The Idaho Department of Fish and Game has found seven positive samples of chronic wasting disease from elk and deer in the last two years. 
 

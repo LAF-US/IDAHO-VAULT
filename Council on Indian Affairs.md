@@ -1,4 +1,24 @@
 ---
+related:
+- Coeur d'Alene
+- Coeur d'Alene Tribe
+- Governor
+- Idaho
+- Idaho Legislature
+- Kootenai
+- Kootenai Tribe
+- Nez Perce Tribe
+- President
+- Senate President Pro Tempore
+- Shoshone
+- Shoshone-Bannock Tribes
+- Shoshone-Paiute Tribes
+- Speaker of the House
+- State of Idaho
+- indigenous peoples
+- tribal chairman
+- tribal council
+authority: LOGAN
 ---
 Idaho Legislature House and Senate statutorily created (1999) council on relationship between the State of Idaho and indigenous peoples. 
 

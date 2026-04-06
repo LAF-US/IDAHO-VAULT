@@ -1,5 +1,32 @@
 ---
 source: commit
+related:
+- '142'
+- '207'
+- '640'
+- Betsy Russell
+- Boise
+- CCA
+- Council
+- Franklin
+- Franklin County
+- III
+- IPC
+- Idaho
+- Idaho Code
+- Idaho Constitution
+- Idaho Press
+- Idaho Press Club
+- Idaho Supreme Court
+- JFAC Working Groups
+- Jim Jones
+- Kootenai
+- Kootenai County
+- Lawrence Wasden
+- State Board of Education
+- costs
+- legislative
+authority: LOGAN
 ---
 In *Idaho Press Club v. State Legislature*, 142 Idaho 640 (2006), the Idaho Supreme Court held that Art. III §12 of the Idaho Constitution does not require legislative committees to be open to the public, but left the statutory open-meetings obligation under §67-2346 (now Idaho Code §74-207) untouched.
 

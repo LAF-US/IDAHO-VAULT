@@ -1,8 +1,80 @@
 ---
 date created: Saturday, March 28th 2026, 2:53:19 pm
 date modified: Saturday, March 28th 2026, 2:55:09 pm
+related:
+- '201'
+- '2026-03-16'
+- '2026-03-18'
+- '900'
+- API
+- Adam McCoy
+- Alpha
+- BLOB
+- Bartimaeus
+- CCA
+- CHARTER
+- CONSTITUTION
+- Capitol Correspondents Association
+- Clark Corbin
+- Copilot
+- Drive
+- FāVS
+- GOP
+- GRIMOIRE
+- GUESTBOOK
+- GUIDELINES
+- GitHub
+- Google
+- IRE
+- Idaho
+- Idaho Capital Sun
+- Idaho Code
+- Idaho Legislature
+- Idaho Press
+- Idaho Press Club
+- Idaho Public Television
+- Idaho Reports
+- Joe Alfieri
+- KFF
+- Kevin Richert
+- LEVELSET
+- Logan Finney
+- Logan's
+- M365
+- MAGNUS
+- MCP
+- Medicaid
+- Melissa Davlin
+- Microsoft Copilot
+- North Idaho
+- NotebookLM
+- Obsidian
+- PBS
+- PREFERENCES
+- PROCEDURES
+- PROTOCOL
+- PROTOCOLS
+- RSS
+- SSD
+- State Board of Education
+- THE
+- The world is quiet here
+- University of Idaho
+- VFD
+- XIV
+- 'Yes'
+- agent
+- budgets
+- connections
+- coordination
+- format
+- individuals
+- infrastructure
+- node
+- transportation
+- voting
+authority: LOGAN
 ---
-
 # IDAHO-VAULT
 
 https://github.com/loganfinney27/IDAHO-VAULT

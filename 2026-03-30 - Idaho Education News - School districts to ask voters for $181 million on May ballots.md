@@ -1,13 +1,129 @@
 ---
-source: "https://www.idahoednews.org/top-news/school-districts-to-ask-voters-for-181-million-on-may-ballots/"
+source: https://www.idahoednews.org/top-news/school-districts-to-ask-voters-for-181-million-on-may-ballots/
 author:
-  - "Emma Epperly"
+- Emma Epperly
 published: 2026-03-30
 created: 2026-03-30
 date created: Monday, March 30th 2026, 2:12:37 pm
 date modified: Monday, March 30th 2026, 2:18:56 pm
+related:
+- '104'
+- '110'
+- '111'
+- '119'
+- '120'
+- '122'
+- '129'
+- '148'
+- '150'
+- '157'
+- '159'
+- '170'
+- '181'
+- '192'
+- '193'
+- '200'
+- '201'
+- '2026-03-30'
+- '212'
+- '222'
+- '225'
+- '238'
+- '240'
+- '243'
+- '245'
+- '250'
+- '251'
+- '253'
+- '256'
+- '275'
+- '277'
+- '285'
+- '331'
+- '350'
+- '355'
+- '360'
+- '374'
+- '402'
+- '445'
+- '495'
+- '500'
+- '520'
+- '521'
+- '525'
+- '528'
+- '550'
+- '564'
+- '592'
+- '595'
+- '600'
+- '630'
+- '694'
+- '695'
+- '700'
+- '736'
+- '745'
+- '780'
+- '788'
+- '805'
+- '880'
+- '887'
+- '900'
+- '950'
+- '990'
+- '993'
+- '995'
+- Aberdeen
+- American Falls
+- Career Technical Education
+- Cottonwood
+- Council
+- Culdesac
+- Emma Epperly
+- Emmett
+- FFA
+- Filer
+- Glenns Ferry
+- Grangeville
+- Idaho
+- Kellogg
+- Kimberly
+- Mackay
+- Marsh Valley
+- Middleton
+- Minidoka
+- Payette
+- Preston
+- Richfield
+- Ririe
+- Rockland
+- Salmon
+- Salmon River
+- Shoshone
+- Snake River
+- Soda Springs
+- Wendell
+- agriculture
+- average daily attendance
+- bonds
+- bonds and levies
+- books
+- budget
+- construction
+- costs
+- counselors
+- election
+- money
+- property tax
+- school districts
+- supermajority
+- supplemental levy
+- taxes
+- teachers
+- transportation
+- voting
+authority: LOGAN
 ---
-
 Idaho school districts are asking voters for more than $181 million this May.
 
 The asks range from a $57 million bond in Kimberly to build a performing arts center to a $200,000 supplemental levy in Mackay to pay for athletics and building utilities over the course of two years.

@@ -1,6 +1,19 @@
 ---
 outlet:
-  - "KTVB"
+- KTVB
+related:
+- David Pettinger
+- Diana Lachiondo
+- Eagle
+- Idaho
+- Idaho Capitol
+- Idaho Press
+- Idaho State Police
+- KTVB
+- Star
+- meeting
+- warrants
+authority: LOGAN
 ---
 BOISE, Idaho — An Eagle man who showed up at the Idaho Capitol Wednesday was arrested on outstanding warrants. 
 

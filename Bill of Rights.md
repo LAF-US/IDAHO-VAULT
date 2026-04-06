@@ -1,3 +1,11 @@
+---
+authority: LOGAN
+related:
+- First Amendment
+- Second Amendment
+- U.S. Constitution
+---
+
 U.S. Constitution
 - First Amendment
 - Second Amendment

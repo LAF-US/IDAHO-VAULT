@@ -1,5 +1,32 @@
 ---
 source: commit
+related:
+- '201'
+- '207'
+- '208'
+- '250'
+- '500'
+- CCA
+- Capitol Correspondents Association
+- Clark Corbin
+- IPC
+- Idaho
+- Idaho Capital Sun
+- Idaho Code
+- Idaho Legislature
+- Idaho Press
+- Idaho Press Club
+- Idaho Reports
+- JFAC Working Groups
+- Joint Finance-Appropriations Committee
+- Josh Tanner
+- Keith Bybee
+- Kevin Richert
+- LSO
+- Logan Finney
+- Melissa Davlin
+- Scott Grow
+authority: LOGAN
 ---
 On March 4, 2026, Capitol Correspondents Association president Kevin Richert and Idaho Press Club president Melissa Davlin sent a formal open-meetings complaint letter to JFAC co-chairs Scott Grow and Josh Tanner, triggering a statutory response deadline of approximately March 18, 2026.
 

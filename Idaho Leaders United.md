@@ -1,3 +1,23 @@
+---
+authority: LOGAN
+related:
+- Ammon
+- Bill Shawver
+- Carl Crabtree
+- Cortney Liddiard
+- Doug Gross
+- Gary Raney
+- Idaho
+- Jack Nelsen
+- Jim Hammond
+- Laurie Lickley
+- Odette Bolano
+- State of Idaho
+- Tommy Ahlquist
+- children
+- legislative
+---
+
 Vocally opposed to political violence, especially Ammon Bundy 
 
 Inaugural reception on #2023/11/03 honored Jim Hammond with Pillar of Idaho award. Attendees included Carl Crabtree, Jack Nelsen, Laurie Lickley

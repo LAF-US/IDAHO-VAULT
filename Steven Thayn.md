@@ -1,4 +1,10 @@
 ---
+related:
+- Emmett
+- Senate Education
+- Senate member
+- redistricting
+authority: LOGAN
 ---
 Residence: Emmett
 

@@ -1,4 +1,14 @@
 ---
+related:
+- CDA
+- Coeur d'Alene
+- Post Falls
+- Senate member
+- city administrator
+- city council
+- mayor
+- redistricting
+authority: LOGAN
 ---
 Residence: Coeur d'Alene
 - CDA mayor since 2021

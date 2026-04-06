@@ -1,5 +1,54 @@
 ---
-cmte: "House Judiciary, Rules and Administration"
+cmte: House Judiciary, Rules and Administration
+related:
+- '300'
+- 5th Judicial District
+- ACLU of Idaho
+- Attorney General
+- Barbara Ehardt
+- Bryan Zollinger
+- Caroline Nilsson Troy
+- Child Protection Services
+- Doug Ricks
+- Eric Fredericksen
+- Gary Marshall
+- Governor
+- Greg Chaney
+- House Judiciary, Rules and Administration
+- Idaho
+- Idaho Criminal Justice Commission
+- Idaho Legislature
+- Idaho State Police
+- Idaho Supreme Court
+- John McCrostie
+- Julianne Young
+- Kathleen Elliott
+- LAW
+- LSO
+- Melissa Wintrow
+- Minidoka
+- Minidoka County
+- Office of the State Appellate Public Defender
+- Public Defense Commission
+- Rick Bollar
+- Ryan Kerby
+- State Appellate Public Defender
+- State Controller
+- Troy
+- administrative rules
+- attorneys
+- children
+- counties
+- courthouses
+- doctrine
+- judges
+- numbers
+- parental custody
+- parents
+- self
+- social media
+- systems
+authority: LOGAN
 ---
 1-13 House Judiciary, Rules and Administration
 

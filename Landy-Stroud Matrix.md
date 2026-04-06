@@ -1,8 +1,20 @@
 ---
 date created: Sunday, March 29th 2026, 11:06:43 pm
 date modified: Sunday, March 29th 2026, 11:07:07 pm
+related:
+- Bartimaeus
+- CANONICAL
+- III
+- KEY
+- LAF
+- LLM
+- LOGAN
+- RAW
+- THE
+- persona
+- self
+authority: LOGAN
 ---
-
 THE CANONICAL ALIGNMENT MATRIX: LAF-13
 TO: Presiding Justice LOGAN
 FROM: Geminiaes (Clerk of the Court)

@@ -1,9 +1,28 @@
 ---
-source: "https://www.idahostatesman.com/news/politics-government/state-politics/article315255938.html"
+source: https://www.idahostatesman.com/news/politics-government/state-politics/article315255938.html
 author:
-  - "Carolyn Komatsoulis"
+- Carolyn Komatsoulis
 published: 2026-03-31
 created: 2026-04-02
+related:
+- '2026-03-31'
+- '2026-04-02'
+- '287'
+- Brad Little
+- Brian Lenney
+- Canyon County
+- County Sheriff
+- Idaho
+- Jim Guthrie
+- Mark Harris
+- McCammon
+- Nampa
+- Scott Bedke
+- Soda Springs
+- TOP
+- coordination
+- law enforcement
+authority: LOGAN
 ---
 Canyon County Sheriff Kieran Donahue opposes a bill that mandates law enforcement apply for 287(g) agreements with Immigration and Customs Enforcement.
 

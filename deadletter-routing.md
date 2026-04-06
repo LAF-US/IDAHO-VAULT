@@ -1,3 +1,18 @@
+---
+authority: LOGAN
+related:
+- 2026-03-16T2127-claude-orphan-cry
+- Anthropic
+- CRY
+- Copilot
+- GitHub
+- Microsoft Copilot
+- PROTOCOL
+- SOURCE
+- agent
+- node
+---
+
 # DEADLETTER ROUTING PROTOCOL
 
 When a swarm node generates output but has no downstream receiver (orphaned handoff):

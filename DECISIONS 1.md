@@ -1,3 +1,27 @@
+---
+authority: LOGAN
+related:
+- '2026-03-16'
+- AGENTS
+- CLAUDE
+- Copilot
+- DECISIONS
+- FāVS
+- GitHub
+- LEVELSET
+- Logan's
+- MCP
+- NOT
+- OpenClaw
+- YET
+- agent
+- coordination
+- definition
+- end goal
+- freelance
+- unachievable
+---
+
 # DECISIONS.md — Confirmed Logan-Approved Decisions
 
 *Last updated: 2026-03-16*

@@ -1,4 +1,39 @@
 ---
+related:
+- '377'
+- '540'
+- '560'
+- Act
+- Audrey Dutton
+- Boise
+- Boise State University
+- Brad Little
+- CEO
+- Facebook
+- First Amendment
+- Foundation for Individual Rights and Expression
+- Freedom
+- Idaho
+- Idaho Capital Sun
+- Idaho Press
+- Idaho Press Club
+- Idaho Statesman
+- Janice McGeachin
+- President
+- election
+- fish
+- fishing
+- initial
+- journalists
+- law enforcement
+- legislative
+- money
+- newspapers
+- parents
+- symbols
+- teachers
+- website
+authority: LOGAN
 ---
 https://www.thefire.org/news/idaho-education-task-force-may-threaten-academic-freedom
 

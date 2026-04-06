@@ -1,6 +1,58 @@
 ---
 updated: 2026-03-16
 source: commit
+related:
+- '2026-03-16'
+- '365'
+- '403'
+- '900'
+- AGENTS
+- API
+- ARE
+- CCA
+- CHECKPOINT
+- CLAUDE
+- CLI
+- Copilot
+- DECISIONS
+- Europe
+- GitHub
+- Google
+- Idaho
+- Idaho Code
+- Idaho Constitution
+- Idaho Public Television
+- Idaho Reports
+- Idaho Statesman
+- KEY
+- Kaiser Family Foundation
+- LEVELSET
+- LOGAN
+- Logan Finney
+- Logan's
+- M365
+- NWR
+- NotebookLM
+- Obsidian
+- PROJECT
+- PROTOCOL
+- PROTOCOL-DECISIONS-PENDING
+- PUBLIC
+- ProPublica
+- State of Idaho
+- TBD
+- THE
+- USA
+- WHO
+- YOU
+- agent
+- coordination
+- counties
+- definition
+- infrastructure
+- persona
+- web
+authority: LOGAN
 ---
 # CONVERGENCE CHECKPOINT — 2026-03-16
 

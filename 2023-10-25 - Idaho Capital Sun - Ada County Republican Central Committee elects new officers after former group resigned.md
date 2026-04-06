@@ -1,8 +1,38 @@
 ---
 author:
-  - "Clark Corbin"
+- Clark Corbin
 outlet:
-  - "Idaho Capital Sun"
+- Idaho Capital Sun
+related:
+- '183'
+- Ada County
+- Ada County Republican Central Committee
+- Cheryl Hurd
+- Clark Corbin
+- College of Western Idaho
+- Facebook
+- GOP
+- Idaho
+- Idaho Capital Sun
+- Idaho Education News
+- Idaho Republican Party
+- Janice McGeachin
+- Ryan Spoon
+- Scott Cleveland
+- Sue Gaston
+- Sue Hoffer
+- Thad Butterworth
+- U.S. Senate
+- Victor
+- Victor Miller
+- Washington
+- election
+- legislative
+- meeting
+- precinct committeemen
+- public schools
+- taxes
+authority: LOGAN
 ---
 ## **Two new GOP officials ran unsuccessfully for College of Western Idaho’s board of trustees**
 

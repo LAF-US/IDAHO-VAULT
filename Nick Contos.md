@@ -1,4 +1,9 @@
 ---
+related:
+- Bonneville County
+- Bonneville County Republican Central Committee
+- GOP
+authority: LOGAN
 ---
 Residence: Bonneville County 
 - Bonneville County Republican Central Committee chairman 

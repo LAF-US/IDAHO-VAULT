@@ -1,9 +1,33 @@
 ---
 author:
-  - "Logan Finney"
+- Logan Finney
 outlet:
-  - "Idaho Reports"
+- Idaho Reports
 URL: https://blog.idahoreports.idahoptv.org/2024/01/22/bills-printed-to-limit-medicaid-expansion-expand-physician-training/
+related:
+- '109'
+- '136'
+- '153'
+- '163'
+- '418'
+- '419'
+- Brad Little
+- Department of Health and Welfare
+- House Health and Welfare
+- Idaho
+- Idaho Capital Sun
+- Idaho Reports
+- Jordan Redman
+- Logan Finney
+- Medicaid
+- Medicaid Expansion
+- assistant
+- budget
+- health insurance
+- individuals
+- medical school
+- minors
+authority: LOGAN
 ---
 Lawmakers on the House Health and Welfare Committee introduced legislation on Monday that would effectively repeal expanded Medicaid coverage in 2025 if certain requirements are not met.
 

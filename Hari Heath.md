@@ -1,4 +1,22 @@
 ---
+related:
+- Act
+- Benewah
+- Benewah County
+- Bill Goesling
+- Brandon Mitchell
+- Council
+- Department of Lands
+- Idaho
+- Idaho Legislature
+- Janice McGeachin
+- Legislative District 5
+- Liberty
+- North Idaho
+- Santa
+- judges
+- self
+authority: LOGAN
 ---
 Residence: Santa 
 - former candidate for Idaho House in Legislative District 5 

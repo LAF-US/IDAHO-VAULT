@@ -1,4 +1,18 @@
 ---
+related:
+- ARE
+- CONSTITUTION
+- GitHub
+- LEVELSET
+- LOGAN
+- Logan Finney
+- NOT
+- Obsidian
+- WHO
+- YOU
+- agent
+- infrastructure
+authority: LOGAN
 ---
 STEP-0 LEVELSET — LOGAN + IDAHO-VAULT (EXTERNAL AGENT)
 

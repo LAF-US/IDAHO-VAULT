@@ -1,9 +1,26 @@
 ---
 author:
-  - "Logan Finney"
+- Logan Finney
 outlet:
-  - "Idaho Reports"
+- Idaho Reports
 URL: https://blog.idahoreports.idahoptv.org/2024/01/22/bill-would-move-electioneering-boundary-to-250-feet/
+related:
+- '250'
+- '300'
+- Idaho
+- Idaho Reports
+- Kootenai
+- Kootenai County
+- Linda Wright Hartgen
+- Logan Finney
+- Nampa
+- Senate Judiciary and Rules
+- Todd Lakey
+- Twin Falls
+- electioneering
+- money
+- voting
+authority: LOGAN
 ---
 The Senate Judiciary and Rules Committee introduced a bill Monday to strengthen and clarify an Idaho law that bans electioneering at the polls. The bill would amend the state’s ban on electioneering from 100 feet to 250 feet from polling places, as well as increase the associated penalties.
 

@@ -1,9 +1,44 @@
 ---
 author:
-  - "Sophia Petros"
+- Sophia Petros
 outlet:
-  - "Brown Political Review"
+- Brown Political Review
 URL: https://brownpoliticalreview.org/2017/11/blaine-no-gain/
+related:
+- Blaine County
+- Bonner County
+- California
+- Idaho
+- Idaho Mountain Express
+- Jackson
+- Jackson Hole
+- Moore
+- Oregon
+- Park City
+- President
+- Rhode Island
+- Roberts
+- Schweitzer ski resort
+- Seattle
+- State of Idaho
+- Summit County
+- Sun Valley
+- Sun Valley ski resort
+- Teton
+- Teton County
+- USA
+- USA Today
+- Washington
+- cities
+- counties
+- election
+- gerrymandering
+- numbers
+- ranch
+- ski resorts
+- taxes
+- voting
+authority: LOGAN
 ---
 Nestled in the center of Idaho lies Blaine County: an oddly-shaped shaped area nearly twice the size of Rhode Island, with a panhandle extending to the south – a remnant of gerrymandering in the 1880’s. More notable than its shape, however, is its voting history. Though the State of Idaho has supported a Republican President in every election since 1968, Blaine County has voted contrary to this trend since 1992. In the 2016 election, its nearly 60% vote for Clinton starkly contrasted that of the surrounding counties, which hovered around 70% support for Trump. In a state where the counties containing the most populous cities vote consistently conservative, a county at its heart pumping blue blood stands out sharply. Michael Leach, the Republican County Chair for Blaine, echoed this thought over the phone. He recognized the “real dichotomy” between his county and the rest of the state, and described the blue county as “bizarre” and a “fluke.”
 

@@ -1,10 +1,43 @@
 ---
 author:
-  - "Alex Brown"
+- Alex Brown
 outlet:
-  - "States Newsroom"
-  - "Idaho Capital Sun"
+- States Newsroom
+- Idaho Capital Sun
 URL: https://idahocapitalsun.com/2023/12/07/after-clean-water-act-ruling-states-that-want-to-protect-affected-wetlands-need-millions/
+related:
+- '118'
+- '600'
+- Act
+- California
+- Colorado
+- Council
+- EPA
+- Environmental Protection Agency
+- Idaho
+- Idaho Capital Sun
+- Illinois
+- Mexico
+- New York
+- North Carolina
+- States Newsroom
+- U.S. Army Corps of Engineers
+- U.S. Supreme Court
+- Washington
+- assistant
+- books
+- budget
+- costs
+- definition
+- dollars
+- flooding
+- initial
+- legislative
+- species
+- tribes
+- water
+- wetlands
+authority: LOGAN
 ---
 Earlier this year, the U.S. Supreme Court stripped federal oversight from millions of acres of wetlands long protected under the Clean Water Act. Now, erecting safeguards to ensure those waters are not polluted, drained or filled in by developers falls to the states.
 

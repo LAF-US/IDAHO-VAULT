@@ -2,10 +2,14 @@
 title: LEVELSET routing shim
 updated: 2026-04-02
 status: active
-authority: "LOGAN"
+authority: LOGAN
 source: root/LEVELSET.md
+related:
+- '2026-04-02'
+- LEVELSET
+- LOGAN
+- links
 ---
-
 # `!/LEVELSET.md`
 
 This is a routing shim for stable bootstrap context.

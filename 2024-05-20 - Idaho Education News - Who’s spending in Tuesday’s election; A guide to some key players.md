@@ -1,9 +1,111 @@
 ---
 author:
-  - "Kevin Richert"
+- Kevin Richert
 outlet:
-  - "Idaho Education News"
+- Idaho Education News
 URL: https://www.idahoednews.org/elections24/whos-spending-in-tuesdays-election-a-guide-to-some-key-players/
+related:
+- '104'
+- '110'
+- '122'
+- '156'
+- '200'
+- '291'
+- '302'
+- '390'
+- '398'
+- '400'
+- '442'
+- '484'
+- '500'
+- '546'
+- '605'
+- '655'
+- '656'
+- '710'
+- '774'
+- '800'
+- '900'
+- '940'
+- '953'
+- Ada County
+- Alexandria
+- Ammon
+- Ben Adams
+- Boise
+- Bonneville County
+- Brad Little
+- Brian Lenney
+- Bryan Smith
+- C. Scott Green
+- CEO
+- Caldwell
+- Catholic Church
+- Chris Trakel
+- Chuck Winder
+- Dan Foreman
+- Doyle Beck
+- Dustin Hurst
+- Eagle
+- Elaine Price
+- Freedom
+- GOP
+- Glenneda Zuiderveld
+- Hayden
+- House Revenue and Taxation
+- Idaho
+- Idaho Education Association
+- Idaho Education News
+- Idaho Falls
+- Idaho Freedom Caucus
+- Idaho Freedom Foundation
+- Idaho Freedom PAC
+- Jacyn Gallagher
+- Joint Finance-Appropriations Committee
+- Julie VanOrden
+- Karey Hanks
+- Kenny Wroten
+- Kevin Richert
+- Kuna
+- Latah County
+- Lewiston
+- Liberty
+- Melissa Durrant
+- Meridian
+- Middleton
+- Mike Kingsley
+- Mike Moyle
+- Moore
+- Moscow
+- Nampa
+- North Idaho
+- PAC
+- Pingree
+- Pocatello
+- President
+- Ryan Spoon
+- SMC
+- St. Anthony
+- Star
+- Tammy Nichols
+- Texas
+- Tina Lambert
+- Twin Falls
+- University of Idaho
+- Viola
+- Washington
+- Weiser
+- Wendy Horman
+- YAL
+- dollars
+- election
+- legislative
+- mayor
+- money
+- school board
+- school choice
+- web
+authority: LOGAN
 ---
 A complicated — and competing — network of outside groups has funneled hundreds of thousands of dollars into Tuesday’s legislative primaries.
 

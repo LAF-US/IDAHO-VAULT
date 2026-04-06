@@ -1,4 +1,14 @@
 ---
+related:
+- Broadband Advisory Board
+- Council
+- Economic Advisory Council
+- JC Watson Packing Company
+- Parma
+- Treasure Valley
+- city council
+- mayor
+authority: LOGAN
 ---
 Residence: Parma
 - JC Watson Packing Company 

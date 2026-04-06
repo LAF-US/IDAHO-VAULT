@@ -1,4 +1,23 @@
 ---
+related:
+- Brandon Mitchell
+- Brent Crane
+- Brooke Green
+- Greg Lanting
+- Ilana Rubel
+- James Petzke
+- Jaron Crane
+- Jeff Cornilles
+- Jeff Ehlers
+- Joe Palmer
+- Jordan Redman
+- Kevin Andrus
+- Lance Clow
+- Rod Furniss
+- Sage Dixon
+- Steve Berch
+- Vito Barbieri
+authority: LOGAN
 ---
 # Roster
 ## 2023 Members

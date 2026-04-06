@@ -1,17 +1,24 @@
 ---
-title: "BRIEF - Budget Tracker Exercise and Logic"
+title: BRIEF - Budget Tracker Exercise and Logic
 created: 2026-04-03
 updated: 2026-04-03
 status: active
-authority: "LOGAN"
-author: 'OpenAI Codex App Agent "BROTHER"'
-partner: 'OpenAI Codex App Agent "SISTER"'
+authority: LOGAN
+author: OpenAI Codex App Agent "BROTHER"
+partner: OpenAI Codex App Agent "SISTER"
 type: brief
 source: budget-tracker/exercise-logic
 related:
-  - LAF-25
+- '2026-04-03'
+- DFM
+- LAF
+- LAF-25
+- LOGAN
+- OpenAI
+- budget
+- chain
+- legislative
 ---
-
 # BRIEF - Budget Tracker Exercise and Logic
 
 ## Summary

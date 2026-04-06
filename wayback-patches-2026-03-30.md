@@ -1,3 +1,17 @@
+---
+authority: LOGAN
+related:
+- 2016-08-12 - Sandpoint Reader - Anti-abortion protesters disrupt community
+- 2020-05-14 - Sandpoint Reader - Three N. Idahoans front suit challenging constitutionality
+  of COVID-19 restrictions
+- '2026-03-30'
+- Sandpoint
+- Sandpoint Reader
+- abortion
+- anti-abortion
+- web
+---
+
 # Wayback Patches — 2026-03-30
 
 Proposed `wayback:` frontmatter additions for notes with dead URLs.

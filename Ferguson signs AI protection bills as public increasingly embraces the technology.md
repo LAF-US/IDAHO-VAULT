@@ -1,15 +1,28 @@
 ---
-title: "Ferguson signs AI protection bills as public increasingly embraces the technology"
-source: "https://www.spokesman.com/stories/2026/apr/01/ferguson-signs-ai-protection-bills-as-public-incre/?utm_source=newsshowcase&utm_medium=gnews&utm_campaign=CDAQ3Y2lp9fy5ZKTARjdmPe3i_C23a4BKhAIACoHCAowzvT9CjCymvYC&utm_content=rundown"
+title: Ferguson signs AI protection bills as public increasingly embraces the technology
+source: https://www.spokesman.com/stories/2026/apr/01/ferguson-signs-ai-protection-bills-as-public-incre/?utm_source=newsshowcase&utm_medium=gnews&utm_campaign=CDAQ3Y2lp9fy5ZKTARjdmPe3i_C23a4BKhAIACoHCAowzvT9CjCymvYC&utm_content=rundown
 author:
-  - "Mitchell Roland"
+- Mitchell Roland
 published: 2026-04-01
 created: 2026-04-02
-description: "OLYMPIA – Gov. Bob Ferguson has signed a trio of bills to provide additional protections when using artificial intelligence amid increased use of the technology."
+description: OLYMPIA – Gov. Bob Ferguson has signed a trio of bills to provide additional
+  protections when using artificial intelligence amid increased use of the technology.
 date created: Thursday, April 2nd 2026, 11:51:12 am
 date modified: Thursday, April 2nd 2026, 11:51:20 am
+related:
+- '2026-04-01'
+- '2026-04-02'
+- ChatGPT
+- SMS
+- Washington
+- artificial intelligence
+- law enforcement
+- minors
+- self
+- social media
+- systems
+authority: LOGAN
 ---
-
 ![AI (Artificial Intelligence) letters and robot hand are placed on computer motherboard in this illustration created on June 23, 2023.  (Dado Ruvic/Reuters)](https://thumb.spokesman.com/g0MldfAB0MTpwSIPkKP6CGwlW4M=/2500x0/smart/media.spokesman.com/photos/2026/02/05/6984f36b0b657.image.jpg)
 
 AI (Artificial Intelligence) letters and robot hand are placed on computer motherboard in this illustration created on June 23, 2023. (Dado Ruvic/Reuters)

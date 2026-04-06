@@ -1,9 +1,30 @@
 ---
 author:
-  - "Ruth Brown"
+- Ruth Brown
 outlet:
-  - "Idaho Reports"
+- Idaho Reports
 URL: https://blog.idahoreports.idahoptv.org/2023/12/11/supreme-court-hears-appeal-on-student-ids-for-voting/
+related:
+- '124'
+- '340'
+- Attorney General
+- Cynthia Meyer
+- Deputy Attorney General
+- Gregory Moeller
+- Idaho
+- Idaho Reports
+- Idaho Supreme Court
+- John Stegner
+- LLP
+- Robyn Brody
+- Ruth Brown
+- Secretary of State
+- VOTE
+- district court
+- fundamental right
+- transportation
+- voting
+authority: LOGAN
 ---
 The Idaho Supreme Court heard arguments Monday with a courtroom full of more than 40 listeners, in an appeal over two voting bills the Legislature passed earlier this year. 
 

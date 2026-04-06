@@ -1,9 +1,33 @@
 ---
 author:
-  - "Margaret Carmel"
+- Margaret Carmel
 outlet:
-  - "BoiseDev"
+- BoiseDev
 URL: https://boisedev.com/2024/05/23/itd-department-of-admin-hire-outside-lawyer-after-labrador-files-brief-without-approval/
+related:
+- 2024 legislative session
+- Attorney General
+- Boise
+- BoiseDev
+- Department of Administration
+- ITD
+- Idaho
+- Idaho Constitution
+- Idaho Legislature
+- Idaho Supreme Court
+- Joan Callahan
+- Margaret Carmel
+- Phil McGrane
+- Raúl Labrador
+- Secretary of State
+- budget
+- budgets
+- fiscal year
+- legislative
+- legislative session
+- money
+- sign
+authority: LOGAN
 ---
 Two state agencies involved in the lawsuit over whether it was legal for the Idaho Legislature to end the planned sale of the State Street ITD campus will now have their own lawyer, instead of relying on the Attorney General.
 

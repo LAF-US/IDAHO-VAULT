@@ -1,7 +1,28 @@
 ---
 author:
-  - "Idaho Press Club"
+- Idaho Press Club
 URL: https://idahopressclub.org/the-american-redoubt-series-by-the-sandpoint-reader/
+related:
+- '500'
+- Alex Barron
+- Ben Olson
+- Heather Scott
+- Idaho
+- Idaho Press
+- Idaho Press Club
+- Montana
+- North Idaho
+- Oregon
+- Redoubt
+- Sandpoint
+- Sandpoint Reader
+- Washington
+- Wyoming
+- abortion
+- religion
+- same-sex marriage
+- website
+authority: LOGAN
 ---
 *Note: Ben Olson, publisher of the Sandpoint Reader, won an Idaho Press Club Don Watkins Mid-Career Scholarship of $500 to aid in this project. You, too, can apply for the mid-career scholarship, which is available for any Idaho Press Club member to use for any training or project that will benefit the working press in Idaho. The deadline to apply each year is Feb. 15; there’s more information at our website, www.idahopressclub.org.*
 

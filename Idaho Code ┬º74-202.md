@@ -1,5 +1,18 @@
 ---
 source: commit
+related:
+- '202'
+- '207'
+- '208'
+- Attorney General
+- Idaho
+- Idaho Code
+- JFAC Working Groups
+- budget
+- definition
+- doctrine
+- threshold
+authority: LOGAN
 ---
 Idaho Code §74-202 defines "deliberation" as the receipt or exchange of information or opinion relating to a decision, with no quorum threshold — making it the statute most directly applicable to working groups and the one members appear least aware of.
 

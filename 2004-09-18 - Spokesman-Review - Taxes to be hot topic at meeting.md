@@ -1,9 +1,54 @@
 ---
 author:
-  - "Erica Curless"
+- Erica Curless
 outlet:
-  - "Spokesman-Review"
+- Spokesman-Review
 URL: https://www.spokesman.com/stories/2004/sep/18/taxes-to-be-hot-topic-at-meeting/
+related:
+- '200'
+- '213'
+- '873'
+- Association of Idaho Cities
+- Boise
+- Coeur d'Alene
+- County Assessor
+- County Commissioners
+- Idaho
+- Idaho Association of Counties
+- Kootenai
+- Kootenai County
+- Post Falls
+- Prairie
+- Rathdrum
+- Sandpoint
+- Spokesman-Review
+- cities
+- costs
+- counties
+- district court
+- election
+- fire
+- general election
+- highways
+- homeowners
+- homes
+- initial
+- jails
+- legislative
+- libraries
+- lobbying
+- mayor
+- meeting
+- money
+- police
+- prices
+- property tax
+- roads
+- sales tax
+- tax exemptions
+- taxes
+- taxing districts
+authority: LOGAN
 ---
 Helping longtime residents afford the taxes on their homes could become a major topic of next week’s Idaho Association of Counties annual conference that will bring nearly 200 elected officials to Coeur d'Alene.
 

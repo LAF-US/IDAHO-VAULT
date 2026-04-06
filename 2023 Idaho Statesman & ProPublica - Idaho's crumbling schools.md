@@ -1,10 +1,18 @@
 ---
 outlet:
-  - "Idaho Statesman"
-  - "ProPublica"
+- Idaho Statesman
+- ProPublica
 author:
-  - "Becca Savransky"
-  - "Asia Fields"
+- Becca Savransky
+- Asia Fields
+related:
+- Becca Savransky
+- Idaho
+- Idaho Statesman
+- ProPublica
+- public schools
+- school facilities
+authority: LOGAN
 ---
 investigation into school facilities by Idaho Statesman education reporter Becca Savransky and ProPublica reporter Asia Fields 
 ### Articles 

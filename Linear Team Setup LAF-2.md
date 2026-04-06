@@ -1,8 +1,15 @@
 ---
 updated: 2026-03-25
 status: in-progress
+related:
+- '2026-03-25'
+- CSV
+- LAF
+- coordination
+- initial
+- links
+authority: LOGAN
 ---
-
 # Linear workspace — team setup (LAF-2)
 
 Workspace reminder: the Linear workspace is the container for the organization’s work and workflows.

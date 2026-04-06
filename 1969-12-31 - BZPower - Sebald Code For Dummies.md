@@ -1,9 +1,19 @@
 ---
-source: "https://www.bzpower.com/blogs/entry/7915-sebald-code-for-dummies/"
+source: https://www.bzpower.com/blogs/entry/7915-sebald-code-for-dummies/
 author:
-  - "Aanchir"
+- Aanchir
 published: 1969-12-31
 created: 2026-03-30
+related:
+- '143'
+- '2026-03-30'
+- Connor
+- Lake
+- index
+- self
+- voice
+- word
+authority: LOGAN
 ---
 Hello. If you are reading this then you are not only in a large minority intent on self-inflicted misery, but you may also be a reader of my epic, [Frost Rising](https://www.bzpower.com/forum/index.php?act=ST&f=25&t=224525&st=0&do=findComment&comment=4040089). Regardless, you are probably interested in finding the answer to one question: What is Sebald Code?
 

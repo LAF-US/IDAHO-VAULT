@@ -1,4 +1,17 @@
 ---
+related:
+- Ada County
+- Bruce Skaug
+- Canyon County
+- Greg Chaney
+- Jarom Wagoner
+- Jim Rice
+- Julie Yamamoto
+- Middleton
+- Mike Moyle
+- Star
+- Tammy Nichols
+authority: LOGAN
 ---
 Northern Canyon County including Middleton & part of Ada County including Star
 - Formerly western Canyon County

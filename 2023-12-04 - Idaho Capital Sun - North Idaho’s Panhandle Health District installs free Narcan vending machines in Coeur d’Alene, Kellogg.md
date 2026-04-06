@@ -1,9 +1,34 @@
 ---
 author:
-  - "Christina Lords"
+- Christina Lords
 outlet:
-  - "Idaho Capital Sun"
+- Idaho Capital Sun
 URL: https://idahocapitalsun.com/briefs/north-idahos-panhandle-health-district-installs-free-narcan-vending-machines-in-coeur-dalene-kellogg/
+related:
+- '381'
+- '911'
+- Christina Lords
+- Coeur d'Alene
+- Idaho
+- Idaho Capital Sun
+- Kellogg
+- Kootenai
+- Kootenai County
+- Narcan
+- North Idaho
+- Panhandle Health District
+- Paul
+- Shoshone
+- Shoshone County
+- Shoshone County Fire District
+- Shoshone County Fire District No. 2
+- drug overdoses
+- fentanyl
+- first responders
+- naloxone
+- opioid reversal
+- opioids
+authority: LOGAN
 ---
 Two new vending machines offering Narcan, a lifesaving medication that can help with opioid overdose, have been installed at The Pantry at St. Vincent de Paul in Coeur d'Alene and the Shoshone County Fire District in Kellogg.
 

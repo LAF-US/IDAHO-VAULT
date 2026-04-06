@@ -2,6 +2,22 @@
 created: 2026-03-25
 status: complete
 phase: 0
+related:
+- '2026-03-25'
+- Google
+- Idaho
+- Idaho Reports
+- LOGAN
+- MCP
+- MCP-IMPLEMENTATION-PLAN
+- PDF
+- The world is quiet here
+- URI
+- agent
+- coordination
+- legislative
+- template
+authority: LOGAN
 ---
 # MCP Phase 0 — Read-Only Discovery Log
 

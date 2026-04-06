@@ -1,3 +1,54 @@
+---
+authority: LOGAN
+related:
+- animals
+- badger
+- beaver
+- big game species
+- bighorn sheep
+- birds
+- black bear
+- bobcat
+- chukar
+- coots
+- coyote
+- crow
+- deer
+- doves
+- ducks
+- elk
+- ermine
+- fox
+- furbearer species
+- geese
+- grouse
+- hunting
+- marten
+- mink
+- moose
+- mountain goat
+- mountain lion
+- muskrat
+- pheasant
+- predatory species
+- pronghorn
+- quail
+- rabbit
+- raccoon
+- river otter
+- sandhill cranes
+- sheep
+- skunk
+- snipe
+- species
+- trophy species
+- turkey
+- upland species
+- waterfowl species
+- weasel
+- wolf
+---
+
 hunting animals, mostly mammals and birds 
 
 big game species: 

@@ -1,14 +1,30 @@
 ---
-source: "https://www.alstonprivacy.com/ninth-circuit-partially-lifts-injunction-against-california-age-appropriate-design-code-act/"
+source: https://www.alstonprivacy.com/ninth-circuit-partially-lifts-injunction-against-california-age-appropriate-design-code-act/
 author:
-  - "Maki DePalo"
-  - "Hyun Jai Oh"
+- Maki DePalo
+- Hyun Jai Oh
 published: 2026-03-16
 created: 2026-03-26
-title: 2026-03-16 - Alston & Bird Privacy, Cyber & Data Strategy Blog - Ninth Circuit Partially Lifts Injunction Against California Age-Appropriate Design Code Act
-linter-yaml-title-alias: "2026-03-16 - Alston & Bird Privacy, Cyber & Data Strategy Blog - Ninth Circuit Partially Lifts Injunction Against California Age-Appropriate Design Code Act"
+title: 2026-03-16 - Alston & Bird Privacy, Cyber & Data Strategy Blog - Ninth Circuit
+  Partially Lifts Injunction Against California Age-Appropriate Design Code Act
+linter-yaml-title-alias: 2026-03-16 - Alston & Bird Privacy, Cyber & Data Strategy
+  Blog - Ninth Circuit Partially Lifts Injunction Against California Age-Appropriate
+  Design Code Act
+related:
+- '2026-03-16'
+- '2026-03-26'
+- Act
+- Attorney General
+- California
+- First Amendment
+- blocked
+- children
+- definition
+- district court
+- parents
+- social media
+authority: LOGAN
 ---
-
 [![](https://www.alstonprivacy.com/wp-content/uploads/2024/10/AdobeStock_803543330-scaled.jpeg)](https://www.alstonprivacy.com/wp-content/uploads/2024/10/AdobeStock_803543330-scaled.jpeg)
 
 On March 12, 2026, the United Sates Court of Appeals for the Ninth Circuit (Ninth Circuit) [partially vacated](https://cdn.ca9.uscourts.gov/datastore/opinions/2026/03/12/25-2366.pdf) the preliminary injunction by the United States District Court for the Northern District of California (district court) that had blocked the enforcement of the California Age-Appropriate Design Code Act (CAADCA). Several key CAADCA provisions remain enjoined, but the Ninth Circuit's latest decision allows a number of substantive obligations to take effect as the case returns to the district court for further review.

@@ -1,4 +1,43 @@
 ---
+related:
+- 2020 legislative session
+- Act
+- Board of Dentistry
+- Brad Little
+- Governor
+- Idaho
+- Idaho Press
+- Idaho Supreme Court
+- Joe Palmer
+- Logan Finney
+- Mary Souza
+- McClure Center
+- Meridian
+- Mike Moyle
+- Parma
+- Ron Mendive
+- Star
+- Texas
+- Tim Remington
+- addiction
+- administrative rules
+- bridges
+- children
+- coronavirus
+- death row
+- formula
+- legislative
+- legislative session
+- minors
+- property tax
+- sales tax
+- sign
+- taxes
+- transportation
+- veto
+- veto letter
+- voting
+authority: LOGAN
 ---
 https://www.loganfinney.com/idaho-legislature-2020/4/3/veto-review
 

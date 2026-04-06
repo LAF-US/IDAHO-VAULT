@@ -1,6 +1,27 @@
 ---
 cmte:
-  - "Senate Local Government and Taxation"
+- Senate Local Government and Taxation
+related:
+- '120'
+- '400'
+- '500'
+- Ben Adams
+- Ben Toews
+- C. Scott Grow
+- Doug Ricks
+- Lori Den Hartog
+- Ron Taylor
+- Scott Grow
+- Senate Local Government and Taxation
+- State Tax Commission
+- children
+- cities
+- city council
+- costs
+- election
+- property tax
+- taxes
+authority: LOGAN
 ---
 RS 32201 Ben Toews
 Exemption to education-related property tax levies for families with school age children not using the public school system

@@ -1,4 +1,9 @@
 ---
+related:
+- Kevin Andrus
+- agriculture
+- personal bill
+authority: LOGAN
 ---
 AGRICULTURE – Adds to existing law to provide for agriculture protection areas.
 

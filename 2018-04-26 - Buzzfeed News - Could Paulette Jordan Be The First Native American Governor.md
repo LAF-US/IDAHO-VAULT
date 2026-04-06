@@ -1,9 +1,89 @@
 ---
 author:
-  - "Anne Helen Petersen"
+- Anne Helen Petersen
 outlet:
-  - "Buzzfeed News"
+- Buzzfeed News
 URL: https://www.buzzfeednews.com/article/annehelenpetersen/paulette-jordan-first-native-american-governor-idaho
+related:
+- '122'
+- '250'
+- '500'
+- '524'
+- Alabama
+- Anne Helen Petersen
+- Basin
+- Boise
+- Brad Little
+- California
+- Cecil Andrus
+- Coeur d'Alene
+- Council
+- EPA
+- Facebook
+- Freedom
+- GOP
+- Gonzaga University
+- Governor
+- Grant
+- Heather Scott
+- Hillary Clinton
+- Idaho
+- Idaho Democratic Party
+- Idaho Freedom Foundation
+- Idaho Senate
+- Lake
+- Larry Echo Hawk
+- Medicaid
+- Mike Simpson
+- Montana
+- Moore
+- Moscow
+- NBA
+- NBC
+- North America
+- North Idaho
+- PAC
+- Paulette Jordan
+- Plummer
+- President
+- Raúl Labrador
+- Roy
+- Sanders
+- Seattle
+- Second Amendment
+- Shoshone
+- Spokane
+- St. Maries
+- Tommy Ahlquist
+- University of Idaho
+- University of Washington
+- Washington
+- Worley
+- addiction
+- charter schools
+- city council
+- election
+- fishing
+- general election
+- legislative
+- lobbying
+- marijuana
+- mayor
+- meeting
+- money
+- parents
+- police
+- ranch
+- redistricting
+- religion
+- school board
+- taxes
+- teachers
+- tribal council
+- tribes
+- voting
+- word
+authority: LOGAN
 ---
 *In Idaho, any Democrat running is a long shot. But Paulette Jordan — who, if elected, would become the first Native American to serve as a Governor — doesn’t mind the odds, and isn’t heeding calls to let an older, white, established candidate take her place.*
 

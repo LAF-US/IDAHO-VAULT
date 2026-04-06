@@ -1,11 +1,37 @@
 ---
 author:
-  - "Betsy Russell"
-  - "Jessie Bonner"
+- Betsy Russell
+- Jessie Bonner
 outlet:
-  - "Eye on Boise"
-  - "Spokesman-Review"
-  - "Associated Press"
+- Eye on Boise
+- Spokesman-Review
+- Associated Press
+related:
+- '500'
+- Associated Press
+- Attorney General
+- Betsy Russell
+- Bible
+- Boise
+- Deputy Attorney General
+- Eye on Boise
+- First Amendment
+- Idaho
+- Idaho Constitution
+- Nampa
+- Public Charter School Commission
+- Spokesman-Review
+- U.S. 9th Circuit Court of Appeals
+- U.S. Constitution
+- U.S. Supreme Court
+- books
+- character
+- charter schools
+- parents
+- public schools
+- school board
+- teachers
+authority: LOGAN
 ---
 Betsy Russell, Eye on Boise, Spokesman-Review 
 

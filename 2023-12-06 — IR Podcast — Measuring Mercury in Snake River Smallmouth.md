@@ -1,9 +1,39 @@
 ---
 author:
-  - "Logan Finney"
+- Logan Finney
 outlet:
-  - "Idaho Reports"
+- Idaho Reports
 URL: https://blog.idahoreports.idahoptv.org/2023/12/06/podcast-measuring-mercury-in-snake-river-smallmouth/
+related:
+- American Falls
+- Brownlee
+- Hells Canyon
+- Hells Canyon reservoir
+- Idaho
+- Idaho Power
+- Idaho Reports
+- Lake
+- Lewiston
+- Logan Finney
+- Oregon
+- Snake River
+- Washington
+- children
+- dams
+- fish
+- fishing
+- humans
+- hunting
+- invasive species
+- irrigation
+- lakes
+- quagga mussels
+- reservoirs
+- rivers
+- species
+- systems
+- water
+authority: LOGAN
 ---
 The Snake River has been in the news a lot recently, but the recent detection of quagga mussels is not the only ecological issue facing the mighty river. Scientists with the U.S. Geological Survey released a study this week that takes a look at how the habitat conditions behind dams affect the level of mercury found in smallmouth bass. USGS research ecologist Colin Eagles-Smith joins Logan Finney this week to talk through the findings.
 

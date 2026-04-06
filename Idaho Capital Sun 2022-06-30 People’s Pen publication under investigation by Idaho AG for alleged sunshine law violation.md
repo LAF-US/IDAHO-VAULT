@@ -1,9 +1,65 @@
 ---
 author:
-  - "Kelcie Moseley-Morris"
+- Kelcie Moseley-Morris
 outlet:
-  - "Idaho Capital Sun"
+- Idaho Capital Sun
 URL: https://idahocapitalsun.com/2022/06/30/peoples-pen-publication-under-investigation-by-idaho-ag-for-alleged-sunshine-law-violation/
+related:
+- '136'
+- '200'
+- '400'
+- '500'
+- '579'
+- '631'
+- '800'
+- Attorney General
+- Benewah
+- Bonner County
+- Brent Regan
+- Carl Bjerke
+- Cloud
+- Coeur d'Alene
+- Coeur d'Alene Press
+- Deputy Attorney General
+- Freedom
+- Idaho
+- Idaho Capital Sun
+- Idaho Freedom Foundation
+- Jack Riggs
+- Kelcie Moseley-Morris
+- Kootenai
+- Kootenai County
+- Kootenai County Republican Central Committee
+- Larry Craig
+- Lawrence Wasden
+- Lewiston
+- Lewiston Tribune
+- Moscow
+- Moscow-Pullman Daily News
+- North Idaho
+- North Idaho Republicans
+- Peter Riggs
+- Post Falls
+- Sandpoint
+- Secretary of State
+- Shoshone
+- TPC
+- TPC Holdings
+- The People’s Pen
+- Wyoming
+- agent
+- campaign finance
+- central committees
+- counties
+- election
+- electioneering
+- money
+- newspapers
+- political action committee
+- primary election
+- school board
+- website
+authority: LOGAN
 ---
 ### Complaint accuses Kootenai County Republican Central Committee of owning newspaper that was distributed before primary election  
 

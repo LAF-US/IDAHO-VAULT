@@ -1,8 +1,71 @@
 ---
 date created: Sunday, March 29th 2026, 10:48:49 am
 date modified: Sunday, March 29th 2026, 10:49:49 am
+related:
+- '2026-03-28'
+- '2026-03-29'
+- '382'
+- AGENTS
+- ALL
+- API
+- Act
+- BOOTSTRAP
+- BOOTSTRAP-GITHUB-AGENT
+- CHECKPOINT
+- CHECKPOINT-2026-03-29
+- CLI
+- Copilot
+- DECISIONS
+- FYI
+- GHA
+- GPT
+- GUI
+- Gemini CLI
+- GitHub
+- HUMAN
+- Idaho
+- Idaho Reports
+- LAF
+- LEVELSET
+- LEVELSET-CURRENT
+- LOGAN
+- Logan's
+- MANIFEST-SPEC
+- MVP
+- OpenAI
+- OpenAI Swarm
+- POV
+- RUN
+- SEE
+- THE
+- TOSS
+- The world is quiet here
+- UNIFIED
+- VAULT-CONVENTIONS
+- 'Yes'
+- agent
+- blocked
+- budget
+- chain
+- coordination
+- definition
+- deliverables
+- doctrine
+- fire
+- format
+- humans
+- links
+- numbers
+- on fire
+- pair
+- self
+- syntax
+- systems
+- template
+- threshold
+- window
+authority: LOGAN
 ---
-
 # Greeting
 
 ## User

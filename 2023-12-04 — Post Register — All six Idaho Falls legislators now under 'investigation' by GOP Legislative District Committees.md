@@ -1,8 +1,67 @@
 ---
-author: "David Pace"
+author: David Pace
 outlet:
-  - "Post Register"
+- Post Register
 URL: https://www.postregister.com/news/local/all-six-idaho-falls-legislators-now-under-investigation-by-gop-legislative-district-committees/article_6c8d6112-92fb-11ee-867f-db25952d8723.html
+related:
+- '138'
+- '150'
+- '213'
+- '273'
+- '293'
+- '313'
+- '314'
+- Act
+- Barbara Ehardt
+- Bonneville County
+- CEI
+- Carolyn Harrison
+- Challis
+- Council
+- Dave Lent
+- David Pace
+- Doyle Beck
+- Freedom
+- GOP
+- Governor
+- Harrison
+- Idaho
+- Idaho Falls
+- Idaho Freedom Foundation
+- Idaho Launch
+- Kevin Cook
+- Legislative District 32
+- Legislative District 33
+- Lisa Keller
+- Marco Erickson
+- Mickelsen
+- Nick Contos
+- Paul
+- Post Register
+- Rusty Devereaux
+- Speaker of the House
+- Stephanie Mickelsen
+- WWAMI joint medical education program
+- Wendy Horman
+- abortion
+- budget
+- charter schools
+- counties
+- election
+- executive session
+- general election
+- initial
+- legislative
+- legislative session
+- meeting
+- political parties
+- presidential primary
+- primary election
+- property tax
+- public schools
+- veto
+- voting
+authority: LOGAN
 ---
 Idaho Falls Reps. Barbara Ehardt, Marco Erickson and Sen. Dave Lent have been added to the list of state legislators called into hearings by Idaho GOP Legislative District 32 and 33 committees for alleged violations of the Idaho GOP platform.
 

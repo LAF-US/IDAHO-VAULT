@@ -1,5 +1,22 @@
 ---
 source: commit
+related:
+- Ammon
+- CLR
+- Conditions Limitations and Restrictions
+- House member
+- Idaho
+- Idaho Falls
+- JFAC Working Groups
+- Joint Finance-Appropriations Committee
+- Josh Tanner
+- Keith Bybee
+- Mike Moyle
+- Scott Bedke
+- Scott Grow
+- Superintendent of Public Instruction
+- Wendy Horman
+authority: LOGAN
 ---
 Wendy Horman is a Republican Idaho House member from District 30A (Ammon) who served as JFAC House co-chair 2023–2024, co-authored the February 2023 letter formalizing working groups, and publicly introduced the CLR framework before resigning to run unsuccessfully for Superintendent of Public Instruction.
 

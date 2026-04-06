@@ -1,5 +1,19 @@
 ---
 source: commit
+related:
+- '432'
+- Clark Corbin
+- Idaho
+- Idaho Capital Sun
+- Idaho Code
+- Idaho Legislature
+- JFAC Rules
+- JFAC Working Groups
+- Jason Monks
+- Joint Finance-Appropriations Committee
+- Mike Moyle
+- threshold
+authority: LOGAN
 ---
 At the December 2024 and December 2025 organizational sessions, the Idaho House — on a Monks motion directed by Mike Moyle — adopted House Rules only, omitting Joint Rules, leaving JFAC without a jointly adopted governing document.
 

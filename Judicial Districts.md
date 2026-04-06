@@ -1,3 +1,15 @@
+---
+authority: LOGAN
+related:
+- 1st Judicial District
+- 2nd Judicial District
+- 3rd Judicial District
+- 4th Judicial District
+- 5th Judicial District
+- 6th Judicial District
+- 7th Judicial District
+---
+
 1st Judicial District
 2nd Judicial District
 3rd Judicial District

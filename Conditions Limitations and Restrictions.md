@@ -1,5 +1,18 @@
 ---
 source: commit
+related:
+- CLR
+- DEI
+- Elizabeth Bowen
+- Hawkins Companies v. Moyle
+- ITD
+- ITD State Street Building Sale
+- JFAC Working Groups
+- Joint Finance-Appropriations Committee
+- LSO
+- Wendy Horman
+- budget
+authority: LOGAN
 ---
 Conditions, Limitations, and Restrictions (CLRs) are a LSO-formalized drafting approach introduced to JFAC in fall 2025 by Elizabeth Bowen that writes budget directives into operative bill sections rather than intent language, making them judicially enforceable as binding statute.
 

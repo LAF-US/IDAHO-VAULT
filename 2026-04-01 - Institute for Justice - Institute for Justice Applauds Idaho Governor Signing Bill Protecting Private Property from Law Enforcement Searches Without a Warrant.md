@@ -1,9 +1,21 @@
 ---
-source: "https://ij.org/press-release/institute-for-justice-applauds-idaho-governor-signing-bill-protecting-private-property-from-law-enforcement-searches-without-a-warrant/"
+source: https://ij.org/press-release/institute-for-justice-applauds-idaho-governor-signing-bill-protecting-private-property-from-law-enforcement-searches-without-a-warrant/
 author:
-  - "Phillip Suderman"
+- Phillip Suderman
 published: 2026-04-01
 created: 2026-04-02
+related:
+- '2026-04-01'
+- '2026-04-02'
+- '407'
+- Brad Little
+- Governor
+- Idaho
+- Whitney
+- doctrine
+- individuals
+- law enforcement
+authority: LOGAN
 ---
 Phillip Suderman ·
 

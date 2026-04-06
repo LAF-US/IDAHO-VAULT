@@ -1,9 +1,31 @@
 ---
 author:
-  - "Mia Maldonado"
+- Mia Maldonado
 outlet:
-  - "Idaho Capital Sun"
+- Idaho Capital Sun
 URL: https://idahocapitalsun.com/2023/12/14/three-idaho-republican-women-launch-organization-to-preserve-access-to-contraceptives/
+related:
+- '374'
+- Boise
+- Brad Little
+- Brent Crane
+- Idaho
+- Idaho Capital Sun
+- Idaho Reports
+- Idaho Senate
+- KTVB
+- Kelley Packer
+- Laurie Lickley
+- Nampa
+- abortion
+- anti-abortion
+- individuals
+- legislative
+- legislative session
+- police
+- pregnancy
+- website
+authority: LOGAN
 ---
 A new organization focused on educating Idahoans about their contraceptive options is in the early stages of formation. 
 

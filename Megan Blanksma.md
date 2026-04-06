@@ -1,4 +1,9 @@
 ---
+related:
+- Hammett
+- House Majority Caucus Chair
+- House Majority Leader
+authority: LOGAN
 ---
 Residence: Hammett
 

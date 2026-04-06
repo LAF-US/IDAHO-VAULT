@@ -1,9 +1,35 @@
 ---
 author:
-  - "Samantha Cole"
+- Samantha Cole
 outlet:
-  - "404 Media"
+- 404 Media
 URL: https://www.404media.co/north-carolina-montana-pornhub-blocked-vpn/
+related:
+- '404'
+- 404 Media
+- '544'
+- Arkansas
+- Facebook
+- Google
+- Montana
+- North Carolina
+- Samantha Cole
+- Texas
+- Twitter
+- Utah
+- VPN
+- Virginia
+- age verification
+- blocked
+- child sexual abuse material
+- children
+- lobbying
+- porn sites
+- pornography
+- social media
+- virtual private networks
+- website
+authority: LOGAN
 ---
 As North Carolina and Montana enact new age verification laws effective January 1, residents can’t view sites in Pornhub’s parent company network.
 

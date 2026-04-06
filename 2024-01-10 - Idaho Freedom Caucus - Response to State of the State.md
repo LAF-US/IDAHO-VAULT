@@ -1,9 +1,25 @@
 ---
 author:
-  - "Idaho Freedom Caucus"
-URL:
+- Idaho Freedom Caucus
+URL: null
+related:
+- Brad Little
+- Freedom
+- Governor
+- Heather Scott
+- Idaho
+- Idaho Freedom Caucus
+- Maria Nate
+- State of Idaho
+- Tammy Nichols
+- balanced budget
+- budget
+- children
+- currency
+- dollars
+- money
+authority: LOGAN
 ---
-
 Media Contact:
 Rep. Heather Scott  
 Sen. Tammy Nichols  

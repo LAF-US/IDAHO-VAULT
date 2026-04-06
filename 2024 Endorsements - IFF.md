@@ -1,4 +1,40 @@
 ---
+related:
+- Ben Toews
+- Brian Lenney
+- Bryan Smith
+- Christy Zito
+- Cindy Carlson
+- Cornel Rasor
+- Dale Hawkins
+- Dan Foreman
+- Elaine Price
+- Faye Thompson
+- Freedom
+- Glenneda Zuiderveld
+- Golden
+- Heather Scott
+- Idaho
+- Idaho Freedom PAC
+- Idaho Legislature
+- Jackson
+- Jacyn Gallagher
+- Joe Alfieri
+- Jordan Redman
+- Josh Tanner
+- Julianne Young
+- Karey Hanks
+- Kent Marmon
+- Kyle Harris
+- PAC
+- Phil Hart
+- Rob Beiswenger
+- Scott Herndon
+- Tammy Nichols
+- Tina Lambert
+- Tony Wisniewski
+- Vito Barbieri
+authority: LOGAN
 ---
 Supported by Idaho Freedom PAC for 2024 Idaho Legislature elections.
 

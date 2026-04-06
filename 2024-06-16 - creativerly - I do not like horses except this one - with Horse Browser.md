@@ -1,8 +1,24 @@
 ---
-outlet:
-url: "https://www.creativerly.com/i-do-not-like-horses-except-this-one-with-horse-browser/"
+outlet: null
+url: https://www.creativerly.com/i-do-not-like-horses-except-this-one-with-horse-browser/
 author:
-  - "Philipp Temmel"
+- Philipp Temmel
+related:
+- About
+- CEO
+- Paris
+- 'Yes'
+- costs
+- emoji
+- initial
+- journal
+- links
+- parents
+- social media
+- systems
+- web
+- website
+authority: LOGAN
 ---
 As a child, I got faced multiple times with the same situation. After I introduced myself to friends or acquaintances of my parents, and they heard my name, suddenly they felt the urge to explain that my name dates back to *Philippos*, which is Greek and means *philos = aficionado* and *hippos = horse,* so to them *Philipp* basically meant *horse lover.* I always felt a bit annoyed hearing that, because I just do not like horses. They are unpredictable, they have a lot of power, and I heard a lot of stories of accidents from friends and families where horses were involved. So, yeah, I do not like horses.
 

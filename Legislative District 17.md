@@ -1,4 +1,12 @@
 ---
+related:
+- Ada County
+- Boise
+- Carrie Semmelroth
+- John Gannon
+- Maryanne Jordan
+- Sue Chew
+authority: LOGAN
 ---
 Boise Bench in Ada County
 

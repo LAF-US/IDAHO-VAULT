@@ -1,5 +1,16 @@
 ---
 source: commit
+related:
+- Ada County
+- Idaho
+- Jason Monks
+- Joint Finance-Appropriations Committee
+- Joint Rule Non-Adoption 2024-2025
+- Josh Tanner
+- Meridian
+- Mike Moyle
+- Nampa
+authority: LOGAN
 ---
 Jason Monks is the Republican Idaho House Speaker Pro Tempore from District 22B (Meridian) who made the motion to adopt House Rules only — omitting Joint Rules — at the December 2024 organizational session on Mike Moyle's direction.
 

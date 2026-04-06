@@ -1,9 +1,35 @@
 ---
-source: "https://www.idahofb.org/news-room/posts/warrantless-searches-part-3-what-idaho-is-doing-to-restore-the-protections-of-the-4th-amendment/"
+source: https://www.idahofb.org/news-room/posts/warrantless-searches-part-3-what-idaho-is-doing-to-restore-the-protections-of-the-4th-amendment/
 author:
-  - "Idaho Farm Bureau"
+- Idaho Farm Bureau
 published: 2026-02-26
 created: 2026-04-02
+related:
+- '2026-04-02'
+- Canyon County
+- County Sheriff
+- Elmore County
+- Home
+- Idaho
+- Idaho Senate
+- Kelly Anthon
+- Kendrick
+- MAC
+- Mike Moyle
+- Owyhee
+- Owyhee County
+- President
+- Speaker of the House
+- agriculture
+- doctrine
+- fish
+- geese
+- hunting
+- law enforcement
+- legislative
+- meeting
+- self
+authority: LOGAN
 ---
 ![](https://www.youtube.com/watch?v=bDvkbXp3ujY)
 

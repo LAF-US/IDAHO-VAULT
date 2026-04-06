@@ -1,11 +1,22 @@
 ---
 created: 2026-03-20
 status: draft
-usage: Logan pastes this into CODE AUTHORITY along with a TOSS dump to trigger context ingestion
+usage: Logan pastes this into CODE AUTHORITY along with a TOSS dump to trigger context
+  ingestion
 date created: Wednesday, April 1st 2026, 11:16:46 pm
 date modified: Thursday, April 2nd 2026, 10:37:00 pm
+related:
+- '2026-03-20'
+- AGENTS
+- BOOTSTRAP
+- DECISIONS
+- FLAG
+- LEVELSET
+- PROTOCOL
+- TOSS
+- agent
+authority: LOGAN
 ---
-
 # BOOTSTRAP PROMPT
 
 **Usage:** After running TOSS on a conversation and copying the output, paste the BOOTSTRAP prompt below into CODE AUTHORITY (Claude Code), followed by the TOSS dump. CODE AUTHORITY will validate, vault, and integrate the context.

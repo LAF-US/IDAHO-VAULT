@@ -1,9 +1,51 @@
 ---
 author:
-  - "Nicole Blanchard"
+- Nicole Blanchard
 outlet:
-  - "Idaho Statesman"
+- Idaho Statesman
 URL: https://www.idahostatesman.com/news/politics-government/state-politics/article278461254.html?ac_cid=DM840144&ac_bid=-480438101
+related:
+- 2023 legislative session
+- '314'
+- AUG
+- Aaron Von Ehlinger
+- Blanchard
+- Boise
+- Boise State University
+- Brad Little
+- Caldwell
+- Challis
+- Dorothy Moon
+- GOP
+- Home
+- Idaho
+- Idaho Republican Party
+- Idaho Statesman
+- Julie Yamamoto
+- Latah County
+- Latah County Republican Central Committee
+- Lori McCann
+- Mark Sauter
+- Matt Bundy
+- Mountain Home
+- Nicole Blanchard
+- Sandpoint
+- VOTE
+- books
+- budgets
+- censured
+- central committees
+- counties
+- drag
+- election
+- legislative
+- legislative session
+- meeting
+- parents
+- political parties
+- property tax
+- voting
+authority: LOGAN
 ---
 Lori McCann decided she couldn’t sit back and take it anymore, she told the Idaho Statesman. 
 

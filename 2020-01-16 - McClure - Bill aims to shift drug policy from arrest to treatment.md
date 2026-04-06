@@ -1,7 +1,17 @@
 ---
-author: "Logan Finney"
-outlet: "McClure Center"
+author: Logan Finney
+outlet: McClure Center
 URL: https://www.loganfinney.com/idaho-legislature-2020/1/16/drug-trafficking
+related:
+- Boise
+- Grant
+- Grant Burgoyne
+- Interview 2020-01-16 Grant Burgoyne
+- Logan Finney
+- McClure Center
+- opioids
+- personal bill
+authority: LOGAN
 ---
 (*based on Interview 2020-01-16 Grant Burgoyne*)
 

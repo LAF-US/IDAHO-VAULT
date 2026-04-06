@@ -1,4 +1,18 @@
 ---
+related:
+- Bannock County
+- Chris Abernathy
+- Dustin Manwaring
+- Elaine Smith
+- James Ruchti
+- Jim Guthrie
+- Mark Nye
+- Nate Roberts
+- Pocatello
+- Roberts
+- Roy
+- Smiths Ferry
+authority: LOGAN
 ---
 Pocatello in Bannock County
 

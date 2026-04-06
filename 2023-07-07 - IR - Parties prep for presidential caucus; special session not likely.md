@@ -1,9 +1,50 @@
 ---
 author:
-  - "Logan Finney"
+- Logan Finney
 outlet:
-  - "Idaho Reports"
+- Idaho Reports
 URL: https://blog.idahoreports.idahoptv.org/2023/07/07/parties-prep-for-presidential-caucus-special-session-not-likely/
+related:
+- '102'
+- '138'
+- 2023 legislative session
+- Boise
+- Brad Little
+- California
+- Dorothy Moon
+- GOP
+- Governor
+- Idaho
+- Idaho Democratic Party
+- Idaho Legislature
+- Idaho Reports
+- Idaho Republican Party
+- Joe Biden
+- Lauren Necochea
+- Logan Finney
+- Madison Hardy
+- Middleton
+- Mike Moyle
+- Phil McGrane
+- President
+- SJR
+- Sanders
+- Secretary of State
+- Star
+- Tammy Nichols
+- Texas
+- central committees
+- dollars
+- election
+- legislative
+- legislative session
+- meeting
+- parents
+- political parties
+- presidential primary
+- special session
+- website
+authority: LOGAN
 ---
 Both the Republican and Democratic parties have called on Idaho lawmakers to reinstate the state’s presidential primary for 2024 – but without an agreement on when to hold it, the chances of a special session this summer are slim.
 

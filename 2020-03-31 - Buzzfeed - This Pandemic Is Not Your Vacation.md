@@ -1,9 +1,79 @@
 ---
 author:
-  - "Anne Helen Petersen"
+- Anne Helen Petersen
 outlet:
-  - "Buzzfeed News"
+- Buzzfeed News
 URL: https://www.buzzfeednews.com/article/annehelenpetersen/coronavirus-covid-cities-second-homes-rural-small-towns
+related:
+- '187'
+- '200'
+- '250'
+- '500'
+- Anne Helen Petersen
+- Banks
+- Blaine County
+- Boise
+- Colorado
+- Connecticut
+- Facebook
+- Grangeville
+- ICU
+- Idaho
+- Idaho Statesman
+- Lake
+- Maine
+- Medicaid
+- Missoula
+- Montana
+- Netflix
+- New York
+- North Carolina
+- North Idaho
+- OUT
+- Oregon
+- Portland
+- San Francisco
+- Seattle
+- Summit County
+- Sun Valley
+- Texas
+- Twitter
+- Utah
+- Washington
+- Wyoming
+- affordable housing
+- airport
+- apartments
+- broadband
+- chain
+- children
+- cities
+- connections
+- coronavirus
+- counties
+- dollars
+- economic development
+- emergency room
+- fishing
+- flooding
+- health care
+- homes
+- hospitals
+- housing
+- infrastructure
+- nurses
+- parents
+- police
+- self
+- sign
+- ski resorts
+- social media
+- systems
+- taxes
+- teachers
+- water
+- window
+authority: LOGAN
 ---
 *You might not want to spend your quarantine in a city. But the rural places many Americans treat as playgrounds, and the workers who keep them running, will suffer for it.*
 

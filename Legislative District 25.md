@@ -1,4 +1,18 @@
 ---
+related:
+- Clark Kauffman
+- Greg Lanting
+- Jim Patrick
+- Lance Clow
+- Laurie Lickley
+- Linda Wright Hartgen
+- Maxine Bell
+- Michelle
+- Michelle Stennett
+- Twin Falls
+- Twin Falls County
+- Wendy Jaquet
+authority: LOGAN
 ---
 Twin Falls in Twin Falls County
 

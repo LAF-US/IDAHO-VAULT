@@ -1,9 +1,42 @@
 ---
 author:
-  - "Logan Finney"
+- Logan Finney
 outlet:
-  - "Idaho Reports"
+- Idaho Reports
 URL: https://blog.idahoreports.idahoptv.org/2024/01/19/idahoans-weigh-fentanyl-mandatory-minimum-sentences/
+related:
+- '250'
+- '270'
+- '406'
+- '500'
+- Ada County
+- Bruce Skaug
+- County Sheriff
+- Department of Health and Welfare
+- Eagle
+- FOR
+- Grant
+- HOW
+- House Judiciary, Rules and Administration
+- Idaho
+- Idaho Reports
+- Logan Finney
+- Matt Clifford
+- Montana
+- Nampa
+- SET
+- Senate Judiciary and Rules
+- Ted Hill
+- Todd Lakey
+- Twin Falls
+- Twin Falls County
+- Wyoming
+- blocked
+- fentanyl
+- judges
+- law enforcement
+- meeting
+authority: LOGAN
 ---
 Lawmakers this week began the latest push to add fentanyl to Idaho’s list of substances that carry a mandatory minimum prison sentence for drug trafficking. The same committee that blocked the legislation last year heard around three hours of testimony Friday morning.
 

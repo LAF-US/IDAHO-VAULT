@@ -1,3 +1,32 @@
+---
+authority: LOGAN
+related:
+- '2026-03-21'
+- abortion
+- anti-abortion
+- arrests
+- blocked
+- broadband
+- construction
+- coronavirus
+- counties
+- drag
+- election
+- fire
+- fish
+- hackers
+- housing
+- legislative
+- money
+- ranch
+- robocalls
+- taxes
+- trains
+- valley
+- voting
+- water
+---
+
 # Wayback Preservation Log — 2026-03-21
 
 URLs submitted to Save Page Now on push to main.

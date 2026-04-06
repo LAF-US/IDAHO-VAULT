@@ -1,4 +1,22 @@
 ---
+related:
+- '2026-04-04'
+- Brad Little
+- C.L. 'Butch' Otter
+- Cecil Andrus
+- CrewAI
+- Dirk Kempthorne
+- Don Samuelson
+- Idaho
+- Idaho Army National Guard
+- Jim Risch
+- John Evans
+- Len B. Jordan
+- POC
+- Phil Batt
+- State of Idaho
+- budget
+authority: LOGAN
 ---
 State of Idaho Chief Executive
 Commander in Chief of Idaho Army National Guard

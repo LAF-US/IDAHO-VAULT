@@ -1,6 +1,34 @@
 ---
 author:
-  - "Idaho Democratic Party"
+- Idaho Democratic Party
+related:
+- '436'
+- '600'
+- General Fund
+- Idaho
+- Idaho Democratic Party
+- Ilana Rubel
+- Janie Ward-Engelking
+- Lauren Necochea
+- Michelle
+- Michelle Stennett
+- Office of Performance Evaluations
+- Tax Relief Fund
+- bonds
+- bonds and levies
+- costs
+- emergency medical services
+- grocery tax
+- homeowners
+- housing
+- money
+- online sales tax
+- property tax
+- sales tax
+- school districts
+- school facilities
+- taxes
+authority: LOGAN
 ---
 ## Working Families Agenda
 Idaho Democratic Party's alternatives to HB 436 tax cut  

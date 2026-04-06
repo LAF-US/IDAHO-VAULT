@@ -1,4 +1,8 @@
 ---
+related:
+- Idaho
+- William Borah
+authority: LOGAN
 ---
 Republican Idaho U.S. Senator
 

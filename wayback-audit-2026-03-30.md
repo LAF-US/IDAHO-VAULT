@@ -1,3 +1,111 @@
+---
+authority: LOGAN
+related:
+- '137'
+- '177'
+- 2016-08-12 - Sandpoint Reader - Anti-abortion protesters disrupt community
+- 2017-11-03 - Brown Political Review - All Blaine, No Gain
+- 2018-01-04 - Sandpoint Reader - Person of interest in racist CD distribution at
+  SHS also investigated in Virginia for similar actions
+- 2019-09-12 - Sandpoint Reader - Sound and fury
+- 2020-01-30 - Sandpoint Reader - Boiling point reached in gun case
+- 2020-05-14 - Sandpoint Reader - Three N. Idahoans front suit challenging constitutionality
+  of COVID-19 restrictions
+- 2021-04-28 - Sandpoint Reader - Judge hears cross motions in second Festival gun
+  suit
+- 2023-03-16 - Idaho Statesman - Airstrip defamation lawsuit was dismissed, twice;
+  Boren appeals to Idaho Supreme Court
+- 2023-06-15 - New York Times - Oregon Town's Marijuana Boom Yields Envy in Idaho
+- 2023-06-29 - Sandpoint Reader - ID Supreme Court affirms Festival’s right to ban
+  guns at War Memorial Field
+- 2023-08-13 - Sandpoint Reader - Woodward will seek Dist. 1 Senate seat
+- 2023-09-06 - Idaho Statesman & ProPublica - Idaho created a $25 million fund to
+  fix unsafe schools; Why is nobody using it
+- 2023-10-25 - BoiseDev - ‘Ridiculous situation’ More than a dozen downtown Emmett
+  storefronts owned by the same owner, nearly half are empty
+- 2023-11-08 - BoiseDev - Bond to expand Ada County jail fails
+- 2023-11-22 - Idaho Statesman - Ada County commissioners say hospitals get too many
+  tax exemptions. They propose this
+- 2023-11-27 - Idaho Statesman - After jail bond fails, Ada County leaders ask for
+  help from the Idaho Legislature
+- 2023-12-05 - Idaho Statesman Opinion - Idaho’s laws help hide child abuse. These
+  two steps could bring more cases to justice
+- 2023-12-06 - BoiseDev - New commissioners take over Valley County EMS District
+- 2023-12-08 - IDFC - Idaho Must Address the Fentanyl Crisis
+- 2023-12-08 - Idaho Statesman - Idaho sought Amtrak return for a Boise-Salt Lake
+  City rail line. What the feds decided
+- 2023-12-10 - Ada County - All nonprofits should have tax transparency. Hospitals
+  shouldn’t have special rules
+- 2023-12-14 - Idaho Statesman & ProPublica - Idaho Republicans are discussing a proposal
+  that would make it easier to repair schools
+- 2023-12-15 - Idaho Statesman & ProPublica - Help the Idaho Statesman and ProPublica
+  report on deteriorating public schools
+- 2023-12-15 - Idaho Statesman & ProPublica - Leaking roofs, collapsing pipes, freezing
+  classrooms; How did Idaho schools get here
+- 2023-12-15 - Idaho Statesman & ProPublica - Students and educators show us what
+  it’s like when Idaho fails to fund school repairs
+- 2023-12-15 - Idaho Statesman & ProPublica- Idaho hasn’t assessed school buildings
+  for 30 years; Students and educators helped us do it
+- 2023-12-15 - Idaho Statesman Opinion - Idaho’s shame; Failure to maintain school
+  buildings that are in deplorable condition
+- 2023-12-18 - BoiseDev - Ada County looking to run jail bond again, timeline TBD
+- 2023-12-18 - BoiseDev - Plans for Ada County broadband network on hold after state
+  turns down grant application
+- 2023-12-19 - Idaho Statesman - Who are the state’s top employers; See this list
+- 2024-01-10 - Idaho Freedom Caucus - Response to State of the State
+- 2024-04-02 - Idaho Reports - JFAC puts forward new ITD budget but keeps State Street
+  language
+- 2024-05-21 - BoiseDev - AG Labrador files brief in Hawkins’ ITD suit without sign-off
+  from fellow state leaders
+- 2024-05-24 - BoiseDev - New outside lawyers replace Labrador on ITD campus case,
+  make change in legal argument
+- '2026-03-30'
+- '403'
+- '404'
+- Ada County
+- Boise
+- BoiseDev
+- EMS
+- Emmett
+- Freedom
+- GOP
+- ITD
+- Idaho
+- Idaho Freedom Caucus
+- Idaho Legislature
+- Idaho Reports
+- Idaho Statesman
+- Idaho Supreme Court
+- Kano Play - Surprising Evolution of Text-based RPG Games
+- Lake
+- New York
+- Oregon
+- ProPublica
+- RPG
+- SHS
+- Salt Lake City
+- Sandpoint
+- Sandpoint Reader
+- TBD
+- VAULT-CONVENTIONS
+- Valley County
+- Virginia
+- War Memorial Field
+- abortion
+- anti-abortion
+- broadband
+- budget
+- fentanyl
+- hospitals
+- marijuana
+- nonprofits
+- public schools
+- sign
+- tax exemptions
+- valley
+- web
+---
+
 # Wayback Audit — 2026-03-30
 
 Scanned 177 notes with URL fields.

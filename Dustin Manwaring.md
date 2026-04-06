@@ -1,4 +1,8 @@
 ---
+related:
+- House Majority Caucus Chair
+- Pocatello
+authority: LOGAN
 ---
 Residence: Pocatello
 

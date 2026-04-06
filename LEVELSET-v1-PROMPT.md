@@ -1,3 +1,20 @@
+---
+authority: LOGAN
+related:
+- '900'
+- ARE
+- GitHub
+- LEVELSET
+- LEVELSET-v2
+- LEVELSET-v2-PROMPT
+- Logan Finney
+- Logan's
+- Obsidian
+- WHO
+- YOU
+- infrastructure
+---
+
 # LEVELSET
 This prompt is being run simultaneously across all active Claude conversations. Each conversation should respond with its own LEVELSET REPORT using the structure below. The goal is a unified picture of where we are across all parallel sessions.
 ---

@@ -1,13 +1,84 @@
 ---
 author:
-  - "Anne Helen Petersen"
+- Anne Helen Petersen
 outlet:
-  - "Buzzfeed News"
+- Buzzfeed News
 URL: https://www.buzzfeednews.com/article/annehelenpetersen/love-lives-in-whitefish-but-so-do-neo-nazis
 date created: Monday, March 23rd 2026, 4:54:50 pm
 date modified: Monday, March 30th 2026, 10:27:12 am
+related:
+- '150'
+- '250'
+- '400'
+- '500'
+- '635'
+- ALL
+- Anne Helen Petersen
+- Antifa
+- CNN
+- California
+- Donald Trump
+- East Coast
+- Europe
+- Facebook
+- Florida
+- Georgia
+- Helena
+- IWW
+- Idaho
+- Islam
+- Liberty
+- Mexico
+- Missoula
+- Montana
+- New York
+- RED
+- Richard Spencer
+- Rose
+- Ruby
+- SUV
+- San Francisco
+- Seattle
+- Southern Poverty Law Center
+- Spencer
+- Spokane
+- Texas
+- Washington
+- 'Yes'
+- abortion
+- agent
+- airport
+- anti-abortion
+- books
+- cancer
+- children
+- churches
+- cities
+- city council
+- connections
+- counties
+- diseases
+- election
+- lobbying
+- mayor
+- meeting
+- neo-Nazi
+- numbers
+- parents
+- police
+- racism
+- religion
+- sign
+- the Civil War
+- valley
+- website
+- white nationalism
+- white nationalist
+- white supremacist
+- window
+- word
+authority: LOGAN
 ---
-
 *When neo-Nazis started trolling Whitefish, Montana, the town had to make a definitive stand against hate. But the deepest-rooted intolerance in places like Whitefish isn't the kind that makes headlines.*
 
 “I’ll tell you why these neo-Nazis and fascists move here,” a man named Phil, who’d moved up to Glacier National Park after graduating from a liberal arts college, told me over dinner. “During the summer, I’d work at this place that rented all sorts of stuff to tourists in the park. So this woman comes in with a Southern accent, I ask where she’s from, she says Georgia. She rents one of those infant backpacks — the kind you put your kid in. And then she says, ‘This place is just so great — did you move here because there’s no black people?’

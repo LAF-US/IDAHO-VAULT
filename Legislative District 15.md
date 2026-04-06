@@ -1,4 +1,16 @@
 ---
+related:
+- Ada County
+- Boise
+- Codi Galloway
+- Dori Healey
+- Ellis
+- Fred Martin
+- Jake Ellis
+- Patterson
+- Rick Just
+- Steve Berch
+authority: LOGAN
 ---
 West Boise in Ada County
 - one of few competitive districts between Republican and Democratic candidates

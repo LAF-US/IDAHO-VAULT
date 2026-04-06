@@ -1,4 +1,15 @@
 ---
+related:
+- Brigham Young University
+- Brigham Young University-Idaho
+- Britt Raybould
+- Freedom
+- House member
+- Idaho
+- Idaho Freedom Foundation
+- Legislative District 34
+- Rexburg
+authority: LOGAN
 ---
 Residence: Rexburg
 

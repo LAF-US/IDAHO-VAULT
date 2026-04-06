@@ -1,5 +1,58 @@
 ---
-cmte: "Joint Finance-Appropriations Committee"
+cmte: Joint Finance-Appropriations Committee
+related:
+- '102'
+- '109'
+- '160'
+- '500'
+- '579'
+- '597'
+- '756'
+- Advanced Opportunities
+- Alex Adams
+- BPA
+- Budget Stabilization Fund
+- Change in Employee Compensation
+- Department of Correction
+- Department of Finance
+- Eastern Idaho
+- GIS
+- General Fund
+- Governor
+- ITS
+- Idaho
+- Information and Technology Services
+- Joint Finance-Appropriations Committee
+- LBB
+- LSO
+- Legislative Budget Book
+- Medicaid
+- Medicaid Expansion
+- Melissa Wintrow
+- Millennium Fund
+- Opportunity Scholarship
+- PERSI
+- Paul
+- Paul Headlee
+- Public Education Stabilization Fund
+- Rainy Day Fund
+- Social emotional learning
+- Tax Relief Fund
+- Twin Falls
+- YTD
+- broadband
+- budget
+- budgets
+- costs
+- counties
+- fish
+- grocery tax
+- meeting
+- online sales tax
+- sales tax
+- teacher career salary ladder
+- website
+authority: LOGAN
 ---
 **Joint Finance-Appropriations Committee opening meeting**
 Jan 7, 2020 @ 8am

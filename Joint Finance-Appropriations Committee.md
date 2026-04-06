@@ -1,5 +1,43 @@
 ---
 source: commit
+related:
+- '207'
+- '432'
+- CLR
+- Capitol Correspondents Association
+- Change in Employee Compensation
+- Change in Employee Compensation Committee
+- Conditions Limitations and Restrictions
+- Dean Cameron
+- Don Samuelson
+- Eagle
+- Elizabeth Bowen
+- Governor
+- House Appropriations
+- House Majority Leader
+- ITD
+- ITD State Street Building Sale
+- Idaho
+- Idaho Code
+- JFAC Rules
+- JFAC Working Groups
+- Jeff Agenbroad
+- Joint Legislative Oversight Committee
+- Joint Millennium Fund Committee
+- Joint Rule Non-Adoption 2024-2025
+- Josh Tanner
+- Keith Bybee
+- LSO
+- Maxine Bell
+- Mike Moyle
+- Millennium Fund
+- Rick Youngblood
+- Scott Grow
+- Senate Finance
+- Wendy Horman
+- budget
+- website
+authority: LOGAN
 ---
 The Idaho Joint Finance-Appropriations Committee (JFAC) is a statutory joint committee created by Idaho Code §67-432 in 1967 to set the state budget; it is to Grow's knowledge the only joint appropriations committee of its kind in the 50 states.
 

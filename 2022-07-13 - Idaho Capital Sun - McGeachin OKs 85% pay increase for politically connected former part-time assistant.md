@@ -1,8 +1,43 @@
 ---
-author: "Clark Corbin"
+author: Clark Corbin
 outlet:
-  - "Idaho Capital Sun"
+- Idaho Capital Sun
 URL: https://idahocapitalsun.com/2022/07/13/mcgeachin-oks-85-pay-increase-for-politically-connected-former-part-time-assistant/
+related:
+- 2022 legislative session
+- '405'
+- '501'
+- '713'
+- Associated Press
+- Clark Corbin
+- Division of Financial Management
+- Division of Human Resources
+- Governor
+- Human Resources
+- Idaho
+- Idaho Capital Sun
+- Idaho Legislature
+- Idaho Press
+- Idaho Press Club
+- Idaho Republican Party
+- Janice McGeachin
+- Joint Finance-Appropriations Committee
+- Lieutenant Governor
+- Machele Hamilton
+- Scott Bedke
+- Terri Pickens Manweiler
+- assistant
+- budget
+- budgets
+- costs
+- election
+- fiscal year
+- health insurance
+- legislative
+- legislative session
+- primary election
+- supermajority
+authority: LOGAN
 ---
 ### *Two Idaho lieutenant governor candidates running to succeed McGeachin question her budget decisions*
 

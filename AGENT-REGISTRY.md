@@ -2,10 +2,20 @@
 title: AGENT REGISTRY (LEGACY)
 updated: 2026-04-02
 status: archived
-authority: "LOGAN"
+authority: LOGAN
 source: historical/2026-03-15-sunset-pass
+related:
+- '2026-03-15'
+- '2026-04-02'
+- AGENTS
+- Idaho
+- Idaho Legislature
+- LEVELSET
+- LOGAN
+- agent
+- index
+- infrastructure
 ---
-
 # AGENT REGISTRY (LEGACY)
 
 This file is preserved as a historical artifact from the 2026-03-15 sunset workflow.

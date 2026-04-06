@@ -1,5 +1,39 @@
 ---
-cmte: "House Education"
+cmte: House Education
+related:
+- '128'
+- '293'
+- ADA
+- CTE
+- Career Technical Education
+- David Hill
+- Debbie Critchfield
+- FTE
+- Gary Marshall
+- House Education
+- ISC
+- LEA
+- President
+- Ryan Kerby
+- State Board of Education
+- Steve Berch
+- Tracie Bent
+- Washington
+- 'Yes'
+- average daily attendance
+- charter schools
+- definition
+- dollars
+- formula
+- legislative
+- math
+- meeting
+- money
+- numbers
+- school districts
+- systems
+- teachers
+authority: LOGAN
 ---
 Wed Jan 8, 2020 - 9am
 

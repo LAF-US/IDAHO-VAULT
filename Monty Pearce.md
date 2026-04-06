@@ -1,4 +1,14 @@
 ---
+related:
+- Abby Lee
+- Brigham Young University
+- House member
+- New Plymouth
+- Paul
+- Ron Paul
+- Senate member
+- presidential primary
+authority: LOGAN
 ---
 Residence: New Plymouth
 Graduate: Ricks College, Brigham Young University 

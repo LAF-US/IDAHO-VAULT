@@ -1,4 +1,9 @@
 ---
+related:
+- Blanchard
+- Legislative District 2
+- redistricting
+authority: LOGAN
 ---
 Residence: Blanchard
 

@@ -1,7 +1,30 @@
 ---
-author: "Logan Finney"
-outlet: "McClure Center"
+author: Logan Finney
+outlet: McClure Center
 URL: https://www.loganfinney.com/idaho-legislature-2020/2/13/fish-and-game-party
+related:
+- Boise
+- Bonner County
+- Brad Little
+- Governor
+- House Minority Leader
+- House Ways and Means
+- Idaho
+- Idaho Fish and Game Commission
+- Ilana Rubel
+- Legislative District 7
+- Lewiston
+- Logan Finney
+- McClure Center
+- Paul
+- Paul Shepherd
+- Riggins
+- Salmon
+- Salmon River
+- Shoshone
+- counties
+- fish
+authority: LOGAN
 ---
 BOISE — State lawmakers have introduced a bill to remove partisan requirements for members of the Idaho Fish and Game Commission. Under existing law, no more than four members of the seven-person commission may belong to the same political party.
 

@@ -1,8 +1,45 @@
 ---
-outlet: "Cache Valley Daily"
-url: "https://www.cachevalleydaily.com/news/oxford-city-with-its-rich-history-disenfranchised-in-december/article_20d4f334-d8eb-11ef-8d29-afa3b891def6.html"
+outlet: Cache Valley Daily
+url: https://www.cachevalleydaily.com/news/oxford-city-with-its-rich-history-disenfranchised-in-december/article_20d4f334-d8eb-11ef-8d29-afa3b891def6.html
 author:
-  - "Rod Boam"
+- Rod Boam
+related:
+- '200'
+- Act
+- Bear
+- Bear River
+- Blackfoot
+- Cache
+- Cache Valley
+- Church of Jesus Christ of Latter-Day Saints
+- Clifton
+- County Clerk
+- Franklin
+- Franklin County
+- Idaho
+- LDS
+- Lake
+- Montana
+- Oxford
+- Pocatello
+- President
+- Preston
+- Snake River
+- U.S. Census
+- U.S. Census Bureau
+- Utah
+- Weston
+- building codes
+- cattle
+- churches
+- cities
+- city council
+- hotels
+- mayor
+- meeting
+- roads
+- water
+authority: LOGAN
 ---
 Oxford - One of the oldest settlements in Idaho, Oxford was disincorporated in a December 9 Franklin County Commission meeting.
 

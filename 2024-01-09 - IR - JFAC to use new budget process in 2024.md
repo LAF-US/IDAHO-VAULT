@@ -1,11 +1,37 @@
 ---
 author:
-  - "Logan Finney"
+- Logan Finney
 outlet:
-  - "Idaho Reports"
+- Idaho Reports
 URL: https://blog.idahoreports.idahoptv.org/2024/01/09/jfac-to-use-new-budget-process-in-2024/
+related:
+- Boise
+- Brooke Green
+- C. Scott Grow
+- Caldwell
+- Eagle
+- House Appropriations
+- Idaho
+- Idaho Falls
+- Idaho Reports
+- Janie Ward-Engelking
+- Joint Finance-Appropriations Committee
+- Logan Finney
+- Sagle
+- Scott Grow
+- Scott Herndon
+- Senate Finance
+- Tina Lambert
+- Utah
+- Wendy Horman
+- budget
+- budgets
+- dollars
+- legislative
+- legislative session
+- maintenance budget
+authority: LOGAN
 ---
-
 The lawmakers crafting Idaho’s state budget will use a new process on a revamped schedule this year, with goals of increased transparency and a faster timeline for the legislative session that began this week, though the changes prompted concern from some of their colleagues.
 
 Previously, the Joint Finance-Appropriations Committee would typically hear back-to-back presentations from agency heads for the first several weeks of session, followed by setting all of the budgets in succession. In 2024, lawmakers will instead rely on presentations from legislative analysts, and they intend to write budgets on a rolling basis about two weeks after the presentations.

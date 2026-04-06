@@ -1,8 +1,31 @@
 ---
 author:
-  - "David Pace"
+- David Pace
 outlet:
-  - "Post Register"
+- Post Register
+related:
+- Bonneville County
+- Bonneville County Republican Central Committee
+- Challis
+- David Pace
+- Doyle Beck
+- GOP
+- Idaho
+- Idaho Launch
+- Idaho Republican Party
+- Idaho Republican Party Platform
+- Kevin Cook
+- Legislative District 32
+- Mickelsen
+- Nick Contos
+- Post Register
+- Stephanie Mickelsen
+- Wendy Horman
+- central committees
+- format
+- meeting
+- voting
+authority: LOGAN
 ---
 David Pace, Post Register | Oct 27, 2023 Updated Oct 28, 2023 
 

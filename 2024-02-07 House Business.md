@@ -1,6 +1,24 @@
 ---
 cmte:
-  - "House Business"
+- House Business
+related:
+- Brandon Mitchell
+- Brent Crane
+- House Business
+- House State Affairs
+- Jeff Ehlers
+- Joe Palmer
+- John Gannon
+- John Vander Woude
+- Jordan Redman
+- Meridian
+- Mickelsen
+- Stephanie Mickelsen
+- counties
+- self
+- voice
+- voice vote
+authority: LOGAN
 ---
 RS hearings 
 

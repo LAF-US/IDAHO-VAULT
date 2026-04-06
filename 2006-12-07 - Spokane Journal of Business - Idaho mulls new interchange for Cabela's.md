@@ -1,8 +1,42 @@
 ---
-author: "Mike McLean"
+author: Mike McLean
 outlet:
-  - "Spokane Journal of Business"
+- Spokane Journal of Business
 URL: https://www.spokanejournal.com/local-news/idaho-mulls-new-interchange-for-cabelas/
+related:
+- '125'
+- '200'
+- '250'
+- '299'
+- '925'
+- Bob Nonini
+- California
+- Coeur d'Alene
+- ITD
+- Idaho
+- Idaho Legislature
+- Interstate 90
+- Jim Hammond
+- Jim Risch
+- North Idaho
+- Post Falls
+- Spokane
+- Spokane Journal of Business
+- Spokane River
+- View
+- Washington
+- construction
+- costs
+- dollars
+- economic development
+- infrastructure
+- legislative
+- legislative session
+- mayor
+- money
+- sales tax
+- transportation
+authority: LOGAN
 ---
 The Idaho Legislature is expected this coming session to consider a measure that would allow sales tax dollars to be diverted to public improvement projects, including a proposed new Interstate 90 interchange that would serve the big new Cabela's Inc. store planned in Post Falls.
 

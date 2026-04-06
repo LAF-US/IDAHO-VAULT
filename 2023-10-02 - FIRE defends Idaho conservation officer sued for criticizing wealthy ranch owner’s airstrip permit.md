@@ -1,7 +1,32 @@
 ---
 author:
-  - "Foundation for Individual Rights in Education"
+- Foundation for Individual Rights in Education
 URL: https://www.thefire.org/news/new-fire-defends-idaho-conservation-officer-sued-criticizing-wealthy-ranch-owners-airstrip
+related:
+- '215'
+- '717'
+- Blaine County
+- Boise
+- Challis
+- Deborah Ferguson
+- FOR
+- First Amendment
+- Foundation for Individual Rights and Expression
+- Idaho
+- Idaho Supreme Court
+- LLP
+- Salmon
+- Salmon–Challis National Forest
+- Sawtooth National Recreation Area
+- Stanley
+- Strategic Lawsuit Against Public Participation
+- USE
+- anti-SLAPP
+- fire
+- nonprofits
+- ranch
+- self
+authority: LOGAN
 ---
 ## FIRE will defend retired search-and-rescue operator Gary Gadwa at the Idaho Supreme Court
 

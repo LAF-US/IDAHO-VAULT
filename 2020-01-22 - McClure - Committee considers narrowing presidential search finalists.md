@@ -1,7 +1,25 @@
 ---
-author: "Logan Finney"
-outlet: "McClure Center"
+author: Logan Finney
+outlet: McClure Center
 URL: https://www.loganfinney.com/idaho-legislature-2020/1/21/university-president-finalists
+related:
+- Act
+- Boise
+- Boise State University
+- C. Scott Green
+- Idaho
+- Idaho Senate
+- Idaho State University
+- Lewis-Clark State College
+- Logan Finney
+- McClure Center
+- Senate Education
+- State Board of Education
+- State Court System
+- University of Idaho
+- costs
+- math
+authority: LOGAN
 ---
 BOISE — The Idaho Senate Education Committee is considering a bill that would decrease the number of finalists that public state universities must name in presidential searches.
 

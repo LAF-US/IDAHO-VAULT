@@ -1,5 +1,15 @@
 ---
 date: 1911-04-05
+related:
+- 1911 T Roosevelt - University of Idaho
+- Act
+- Governor
+- Idaho
+- Moscow
+- Spokane
+- Theodore Roosevelt
+- University of Idaho
+authority: LOGAN
 ---
 >!argonaut_04051911.jpg
 

@@ -1,4 +1,10 @@
 ---
+related:
+- Boise
+- Idaho
+- Reclaim Idaho
+- U.S. Attorney for the District of Idaho
+authority: LOGAN
 ---
 Residence: Boise
 - attorney 

@@ -1,8 +1,20 @@
 ---
-source: "https://developer.1password.com/docs/cli/use-cases/#secrets"
-author:
-published:
+source: https://developer.1password.com/docs/cli/use-cases/#secrets
+author: null
+published: null
 created: 2026-03-30
+related:
+- 1Password
+- '2026-03-30'
+- CLI
+- GitHub
+- Grant
+- format
+- sign
+- syntax
+- web
+- window
+authority: LOGAN
 ---
 ## Use cases
 

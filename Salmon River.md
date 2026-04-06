@@ -1,4 +1,8 @@
 ---
+related:
+- Idaho
+- Idaho County
+authority: LOGAN
 ---
 major river in Idaho County 
 

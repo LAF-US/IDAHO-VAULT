@@ -1,9 +1,43 @@
 ---
 author:
-  - "Laura Guido"
+- Laura Guido
 outlet:
-  - "Idaho Press"
+- Idaho Press
 URL: https://www.idahopress.com/news/local/governor-seeks-outside-lawyer-in-itd-lawsuit/article_e4ec2826-193f-11ef-a420-cf1f41c61233.html
+related:
+- '592'
+- Attorney General
+- Boise
+- BoiseDev
+- Brad Little
+- Brandon Woolf
+- David Leroy
+- Department of Administration
+- Governor
+- ITD
+- Idaho
+- Idaho Legislature
+- Idaho Press
+- Idaho Supreme Court
+- Joan Callahan
+- Madison Hardy
+- Mike Moyle
+- Office of the Attorney General
+- Phil McGrane
+- Raúl Labrador
+- Secretary of State
+- State Controller
+- attorneys
+- budget
+- budgets
+- executive session
+- infrastructure
+- meeting
+- sign
+- transportation
+- veto
+- voting
+authority: LOGAN
 ---
 The Governor has hired his own lawyer in the lawsuit challenging the Idaho Legislature’s move to tank a planned sale of the vacant Idaho Transportation Department campus.
 

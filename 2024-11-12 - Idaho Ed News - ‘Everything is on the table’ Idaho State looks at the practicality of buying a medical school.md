@@ -1,8 +1,49 @@
 ---
-outlet: "Idaho Education News"
-url: "https://www.idahoednews.org/top-news/everything-is-on-the-table-idaho-state-looks-at-the-practicality-of-buying-a-medical-school/"
+outlet: Idaho Education News
+url: https://www.idahoednews.org/top-news/everything-is-on-the-table-idaho-state-looks-at-the-practicality-of-buying-a-medical-school/
 author:
-  - "Kevin Richert"
+- Kevin Richert
+related:
+- '160'
+- '162'
+- '400'
+- '550'
+- '685'
+- '700'
+- About
+- Alaska
+- CEO
+- College of Southern Idaho
+- Council
+- ISU
+- Idaho
+- Idaho Capital Sun
+- Idaho College of Osteopathic Medicine
+- Idaho Education News
+- Idaho Press
+- Idaho State University
+- Janice McGeachin
+- Kevin Richert
+- Lewis-Clark State College
+- Meridian
+- Mike Moyle
+- Montana
+- President
+- Star
+- State Board of Education
+- TPG
+- University of Idaho
+- University of Washington
+- Utah
+- Washington
+- Wyoming
+- connections
+- dollars
+- health care
+- medical school
+- money
+- sign
+authority: LOGAN
 ---
 Idaho State University is looking at the feasibility of buying a private medical school in Meridian.
 

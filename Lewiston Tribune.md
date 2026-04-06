@@ -1,5 +1,8 @@
 ---
 outlet:
-  - "Lewiston Tribune"
+- Lewiston Tribune
+related:
+- Lewiston
+authority: LOGAN
 ---
 Lewiston newspaper 

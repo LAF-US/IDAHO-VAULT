@@ -1,3 +1,76 @@
+---
+authority: LOGAN
+related:
+- '2026-03-18'
+- '2026-03-19'
+- AGENTS
+- ALL
+- Anthropic
+- BIN
+- BOMBINATING BEAST
+- Boise
+- CLAUDE
+- ChatGPT
+- Cloud
+- Copilot
+- Cornel Rasor
+- DECISIONS
+- DJ X
+- Drive
+- FOR
+- FāVS
+- GitHub
+- Google
+- Google Record
+- Google ecosystem
+- HUMAN
+- Home
+- Idaho
+- Idaho Legislature
+- Idaho Public Television
+- Idaho Reports
+- Kyle Harris
+- LAF
+- LSO
+- Logan Alvan Finney
+- Logan Finney
+- Logan's
+- Logan's Project & Protocols
+- M365
+- Melissa Davlin
+- Microsoft Copilot
+- NotebookLM
+- Obsidian
+- OpenAI
+- PROJECT
+- PROTOCOLS
+- PTV
+- Pinpoint
+- Sandpoint
+- Scorpio
+- Spotify
+- The world is quiet here
+- Troy
+- UNIFIED
+- UNIFIED (US) SWARM
+- UTC
+- Virgo
+- WHO
+- Xai
+- agent
+- assistant
+- end goal
+- journal
+- legislative
+- money
+- persona
+- systems
+- temple
+- threshold
+- unachievable
+- web
+---
+
 # Logan Alvan Finney
 
 *Updated: 2026-03-18*

@@ -1,14 +1,31 @@
 ---
-title: "VAULT-METADATA-STANDARD — Header and Footer Standard"
+title: VAULT-METADATA-STANDARD — Header and Footer Standard
 created: 2026-03-25
 updated: 2026-04-01
 status: active
-authority: "LOGAN"
+authority: LOGAN
 authors:
-  - ChatGPT Codex
+- ChatGPT Codex
 source: issue/LAF-13
+related:
+- '2026-03-20'
+- '2026-03-25'
+- '2026-04-01'
+- CLI
+- ChatGPT
+- ISO
+- LAF
+- LOGAN
+- Obsidian
+- SSZ
+- UTC
+- VAULT-TEMPLATES
+- chain
+- doctrine
+- humans
+- index
+- template
 ---
-
 # VAULT-METADATA-STANDARD — Header and Footer Standard
 
 This standard defines the metadata contract for markdown files in IDAHO-VAULT so humans and agents produce consistent, durable records.

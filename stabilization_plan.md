@@ -1,3 +1,10 @@
+---
+authority: LOGAN
+related:
+- agent
+- run_state
+---
+
 # CONTEXT
 Manual context-passing between sessions causes state loss and reconstruction overhead.
 File-based persistence layer replaces baton-passing with a shared, human-readable state file.

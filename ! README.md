@@ -1,9 +1,29 @@
 ---
-title: "!README"
-aliases: ["!README"]
-linter-yaml-title-alias: "!README"
+title: '!README'
+aliases:
+- '!README'
+linter-yaml-title-alias: '!README'
+related:
+- CHARTER
+- CONSTITUTION
+- FRAMEWORKS
+- GRIMOIRE
+- GUESTBOOK
+- GUIDELINES
+- Logan's
+- Logan's Project & Protocols
+- Obsidian
+- PREFERENCES
+- PROCEDURES
+- PROTOCOLS
+- README
+- TOUCHSTONE
+- The world is quiet here
+- UNIFIED
+- UNIFIED (US) SWARM
+- template
+authority: LOGAN
 ---
-
 This is an Obsidian.md vault.
 
 [[TOUCHSTONE]] [[FRAMEWORKS]]:

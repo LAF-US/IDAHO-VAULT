@@ -1,9 +1,32 @@
 ---
 author:
-  - "Ruth Brown"
+- Ruth Brown
 outlet:
-  - "Idaho Reports"
+- Idaho Reports
 URL: https://blog.idahoreports.idahoptv.org/2023/12/01/lawsuit-over-idahos-public-defense-system-back-in-court/
+related:
+- Act
+- Attorney General
+- Brad Little
+- Deputy Attorney General
+- Eric Fredericksen
+- Idaho
+- Idaho Legislature
+- Idaho Reports
+- Idaho Supreme Court
+- Office of the State Public Defender
+- Public Defense Commission
+- Ruth Brown
+- State Public Defender
+- U.S. Constitution
+- attorneys
+- counties
+- county jails
+- initial
+- jails
+- law enforcement
+- numbers
+authority: LOGAN
 ---
 Ruth Brown, Idaho Reports 
 

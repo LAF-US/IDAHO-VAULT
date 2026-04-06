@@ -1,9 +1,25 @@
 ---
 author:
-  - "Kaye Thornbrugh"
+- Kaye Thornbrugh
 outlet:
-  - "Coeur d'Alene Press"
+- Coeur d'Alene Press
 URL: https://cdapress.com/news/2023/dec/13/assessor-withdraws-massive-public-records-request/
+related:
+- '741'
+- '779'
+- Coeur d'Alene
+- Coeur d'Alene Press
+- County Assessor
+- County Treasurer
+- Idaho
+- Kaye Thornbrugh
+- Kootenai
+- Kootenai County
+- State Tax Commission
+- meeting
+- property tax
+- taxing districts
+authority: LOGAN
 ---
 COEUR d’ALENE — Kootenai County Assessor Béla Kovacs has withdrawn public record requests submitted to the treasurer’s office that were expected to generate many tens of thousands of documents and cost more than $20,000 in employee labor to fulfill.
 

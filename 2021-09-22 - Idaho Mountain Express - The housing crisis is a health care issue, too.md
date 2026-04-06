@@ -1,9 +1,37 @@
 ---
 author:
-  - "Sophia DeKlotz"
+- Sophia DeKlotz
 outlet:
-  - "Idaho Mountain Express"
+- Idaho Mountain Express
 URL: https://www.mtexpress.com/opinion/guest_opinions/the-housing-crisis-is-a-health-care-issue-too/article_e55c20ce-1b20-11ec-8309-a75eebbe458c.html
+related:
+- '158'
+- '217'
+- '300'
+- '368'
+- '500'
+- '843'
+- '980'
+- Blaine County
+- Hailey
+- Idaho
+- Idaho Mountain Express
+- Medicaid
+- Sophia DeKlotz
+- University of Washington
+- Washington
+- Wood River Valley
+- affordable housing
+- budget
+- children
+- counties
+- formula
+- homes
+- housing
+- medical school
+- parents
+- transportation
+authority: LOGAN
 ---
 Since my family moved to Hailey in 2012, the value of homes in our neighborhood has quadrupled. The change was shocking to me, but it is all too familiar to many people who live here year-round. This past summer, I got to return to my hometown after my first year of medical school to complete a summer clinical rotation at the St. Luke’s clinic. Most people think of medical school as training in the basics of a physical exam, learning bedside manner and how to make a diagnosis and treatment plan. While I am learning the nuts and bolts of medicine, I’ve also found myself in conversations about public health, and one of the biggest threats facing the health of Wood River Valley residents is the housing crisis.
 

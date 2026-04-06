@@ -1,9 +1,37 @@
 ---
 author:
-  - "Logan Finney"
+- Logan Finney
 outlet:
-  - "Idaho Reports"
+- Idaho Reports
 URL: https://blog.idahoreports.idahoptv.org/2023/09/27/podcast-quagga-mussels-detected-in-snake-river/
+related:
+- Basin
+- Colorado
+- Department of Agriculture
+- EPA
+- Idaho
+- Idaho Reports
+- Logan Finney
+- Magic Valley
+- Oregon
+- Snake River
+- Twin Falls
+- Washington
+- 'Yes'
+- boat check stations
+- cities
+- counties
+- dollars
+- fishing
+- invasive species
+- irrigation
+- law enforcement
+- quagga mussels
+- species
+- water
+- watercraft inspections
+- zebra mussels
+authority: LOGAN
 ---
 *The Idaho State Department of Agriculture announced last week the presence of invasive quagga mussel larvae in the Snake River near Twin Falls. Director Chanel Tewalt joins Logan Finney to discuss what this means for Idaho and the state’s response plan.*
 

@@ -1,4 +1,19 @@
 ---
+related:
+- Dustin Manwaring
+- House Assistant Majority Leader
+- House Assistant Minority Leader
+- House Majority Caucus Chair
+- House Majority Leader
+- House Minority Caucus Chair
+- House Minority Leader
+- Ilana Rubel
+- Jon Weber
+- Lauren Necochea
+- Megan Blanksma
+- Ned Burns
+- Sage Dixon
+authority: LOGAN
 ---
 Printing committee, does not hold hearings to advance legislation.
  - House Majority Leader, House Assistant Majority Leader, House Majority Caucus Chair

@@ -1,8 +1,19 @@
 ---
-author: 
+author: null
 outlet:
-  - "Idaho Reports"
+- Idaho Reports
 URL: https://blog.idahoreports.idahoptv.org/2015/06/15/tippets-named-deq-director/
+related:
+- Bennington
+- Boise
+- DEQ
+- Department of Environmental Quality
+- Idaho
+- Idaho Legislature
+- Idaho Public Television
+- Idaho Reports
+- John Tippets
+authority: LOGAN
 ---
 Sen. John Tippets, R-Bennington, has been appointed as the new director of the Idaho Department of Environmental Quality, as first reported by Idaho Reporter.
 

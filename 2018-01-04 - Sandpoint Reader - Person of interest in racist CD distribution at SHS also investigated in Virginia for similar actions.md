@@ -1,10 +1,36 @@
 ---
 author:
-  - "Cameron Rasmusson"
-  - "Ben Olson"
+- Cameron Rasmusson
+- Ben Olson
 outlet:
-  - "Sandpoint Reader"
+- Sandpoint Reader
 URL: https://sandpointreader.com/person-interest-racist-cd-distribution-shs-also-investigated-virginia-similar-actions/
+related:
+- Act
+- Alexandria
+- Ben Olson
+- Bonner County
+- Facebook
+- First Amendment
+- Freedom
+- Lake
+- Lake Pend Oreille
+- Lake Pend Oreille School District
+- Sandpoint
+- Sandpoint High School
+- Sandpoint Police Department
+- Sandpoint Reader
+- Scott Rhodes
+- Shelby Rognstad
+- Virginia
+- character
+- city council
+- journalists
+- mayor
+- numbers
+- police
+- word
+authority: LOGAN
 ---
 Scott Rhodes, the person of interest in the distribution of racist propaganda at Sandpoint High School, has been investigated by another police department over suspicious activity, according to a Sandpoint Police Department report.
 

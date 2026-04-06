@@ -1,8 +1,34 @@
 ---
 author:
-  - "Ruth Brown"
+- Ruth Brown
 outlet:
-  - "Idaho Reports"
+- Idaho Reports
+related:
+- 1st Judicial District
+- Attorney General
+- Brad Little
+- College of Idaho
+- Council
+- Cynthia Meyer
+- Governor
+- Idaho
+- Idaho Judicial Council
+- Idaho Reports
+- Idaho Supreme Court
+- John Stegner
+- Kootenai
+- Kootenai County
+- Lawrence Wasden
+- NIC
+- North Idaho
+- North Idaho College
+- President
+- Ruth Brown
+- Utah
+- fire
+- individuals
+- judges
+authority: LOGAN
 ---
 Gov. Brad Little announced Monday that 1st Judicial District Judge Cynthia Meyer will replace John Stegner on the Idaho Supreme Court.  
 

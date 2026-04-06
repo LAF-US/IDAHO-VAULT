@@ -1,9 +1,36 @@
 ---
 author:
-  - "Lyndsie Kiebert"
+- Lyndsie Kiebert
 outlet:
-  - "Sandpoint Reader"
+- Sandpoint Reader
 URL: https://sandpointreader.com/judge-hears-cross-motions-in-second-festival-gun-suit/
+related:
+- Alexandria
+- Alexandria Kincaid
+- Arthur Bistline
+- Avery
+- Bellevue
+- Ben Olson
+- Boise
+- Bonner County
+- California
+- Festival at Sandpoint
+- Idaho
+- Idaho Second Amendment Alliance
+- Kootenai
+- Kootenai County
+- Lake
+- New York
+- North Idaho
+- Oregon
+- Sandpoint
+- Sandpoint Reader
+- Scott Herndon
+- Second Amendment
+- War Memorial Field
+- individuals
+- word
+authority: LOGAN
 ---
 Kootenai County District Judge Lansing L. Haynes heard cross motions for summary judgment April 26 in the case against the Festival at Sandpoint and city of Sandpoint, in which two private citizens allege that their constitutional rights were violated when they were denied entrance to the concert series in 2019 because they were carrying firearms.
 

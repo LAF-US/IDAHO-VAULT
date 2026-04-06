@@ -1,9 +1,13 @@
 ---
-source: "https://docs.github.com/en/actions/how-tos/manage-workflow-runs/approve-runs-from-forks"
+source: https://docs.github.com/en/actions/how-tos/manage-workflow-runs/approve-runs-from-forks
 author:
-  - "GitHub Docs"
-published:
+- GitHub Docs
+published: null
 created: 2026-03-29
+related:
+- '2026-03-29'
+- GitHub
+authority: LOGAN
 ---
 Workflow runs triggered by a contributor's pull request from a fork may require manual approval from a maintainer with write access. You can configure workflow approval requirements for a [repository](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository#configuring-required-approval-for-workflows-from-public-forks), [organization](https://docs.github.com/en/organizations/managing-organization-settings/disabling-or-limiting-github-actions-for-your-organization#configuring-required-approval-for-workflows-from-public-forks), or [enterprise](https://docs.github.com/en/enterprise-cloud@latest/admin/policies/enforcing-policies-for-your-enterprise/enforcing-policies-for-github-actions-in-your-enterprise#enforcing-a-policy-for-fork-pull-requests-in-your-enterprise).
 

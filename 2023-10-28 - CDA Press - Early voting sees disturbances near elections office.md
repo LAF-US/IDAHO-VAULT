@@ -1,10 +1,26 @@
 ---
-cmte: 
+cmte: null
 author:
-  - "Kaye Thornbrugh"
+- Kaye Thornbrugh
 outlet:
-  - "Coeur d'Alene Press"
+- Coeur d'Alene Press
 URL: https://cdapress.com/news/2023/oct/28/early-voting-sees-disturbances-near-elections-office/
+related:
+- Coeur d'Alene
+- Coeur d'Alene Press
+- County Clerk
+- Election Day
+- Kaye Thornbrugh
+- Kootenai
+- Kootenai County
+- battery
+- election
+- electioneering
+- freedom of speech
+- police
+- social media
+- voting
+authority: LOGAN
 ---
 COEUR d’ALENE — Quarrels outside the Kootenai County elections office this week have prompted police responses and caused county staff to make peacekeeping efforts.
 

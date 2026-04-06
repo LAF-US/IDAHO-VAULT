@@ -1,4 +1,8 @@
 ---
+related:
+- dollars
+- symbols
+authority: LOGAN
 ---
 !INLAY-01-06.jpg
 # Members of the Celebrity Movement Globally Speaking 

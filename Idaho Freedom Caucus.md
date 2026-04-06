@@ -1,4 +1,21 @@
 ---
+related:
+- Brian Lenney
+- Cindy Carlson
+- Dale Hawkins
+- Dan Foreman
+- Elaine Price
+- Freedom
+- Glenneda Zuiderveld
+- Heather Scott
+- Jacyn Gallagher
+- Joe Alfieri
+- Maria Nate
+- Mike Kingsley
+- Scott Herndon
+- Tammy Nichols
+- Tony Wisniewski
+authority: LOGAN
 ---
 Affiliate of the State Freedom Caucus Network as of 2022
 State Director: Maria Nate

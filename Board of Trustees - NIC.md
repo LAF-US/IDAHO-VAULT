@@ -1,4 +1,18 @@
 ---
+related:
+- Brad Corkill
+- Christie Wood
+- Greg McKenzie
+- Idaho
+- John Goedde
+- Kootenai
+- Kootenai County
+- Mike Waggoner
+- North Idaho
+- North Idaho College
+- Tarie Zimmerman
+- Todd Banducci
+authority: LOGAN
 ---
 Governing board for North Idaho College, elected in Kootenai County 
 - Greg McKenzie 

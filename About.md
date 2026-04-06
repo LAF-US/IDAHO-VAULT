@@ -1,8 +1,10 @@
 ---
 title: About
 linter-yaml-title-alias: About
+related:
+- Idaho
+authority: LOGAN
 ---
-
 !IdahoCutDiagram.jpg
 
 ## MASTHEAD

@@ -1,7 +1,35 @@
 ---
-author: "Clark Corbin"
-outlet: "Idaho Capital Sun"
+author: Clark Corbin
+outlet: Idaho Capital Sun
 URL: https://idahocapitalsun.com/2023/03/24/idaho-house-introduces-late-session-medical-cannabis-bill/
+related:
+- '370'
+- ALS
+- Act
+- Clark Corbin
+- House Health and Welfare
+- Idaho
+- Idaho Capital Sun
+- Idaho House of Representatives
+- John Vander Woude
+- Montana
+- Moscow
+- Moscow-Pullman Daily News
+- Nampa
+- Nevada
+- Oregon
+- Tom Trail
+- Utah
+- Washington
+- Wyoming
+- cancer
+- cannabis
+- legislative
+- marijuana
+- medical marijuana
+- meeting
+- personal bill
+authority: LOGAN
 ---
 ### *House Health and Welfare Committee Chairman John Vander Woude’s personal bill is not likely to advance this year* 
 

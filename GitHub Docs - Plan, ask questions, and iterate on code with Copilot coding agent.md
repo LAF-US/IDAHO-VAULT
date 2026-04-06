@@ -1,8 +1,14 @@
 ---
 URL: https://docs.github.com/en/early-access/github/articles/plan-ask-questions-and-iterate-on-code-with-copilot-coding-agent
 date-accessed: 2026-03-19
-date-published: "[ ? ]"
+date-published: '[ ? ]'
 date-updated: 03/19/2026
+related:
+- '2026-03-19'
+- Copilot
+- View
+- agent
+authority: LOGAN
 ---
 # Plan, ask questions, and iterate on code with Copilot coding agent
 Copilot coding agent can now plan, answer questions about your codebase, and make code changes, all from a single conversation.

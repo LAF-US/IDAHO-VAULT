@@ -1,9 +1,26 @@
 ---
 author:
-  - "Bryan Clark"
+- Bryan Clark
 outlet:
-  - "Idaho Statesman"
+- Idaho Statesman
 URL: https://www.idahostatesman.com/opinion/opn-columns-blogs/article282677188.html
+related:
+- '300'
+- Associated Press
+- Church of Jesus Christ of Latter-Day Saints
+- Eastern Idaho
+- Goodrich
+- Home
+- Idaho
+- Idaho Statesman
+- LDS
+- Mountain Home
+- Texas
+- children
+- law enforcement
+- religion
+- teachers
+authority: LOGAN
 ---
 The Associated Press issued a heartbreaking report Monday. 
 

@@ -1,9 +1,29 @@
 ---
 outlet:
-  - "Idaho Statesman"
+- Idaho Statesman
 author:
-  - "Ryan Suppe"
+- Ryan Suppe
 URL: https://www.idahostatesman.com/news/local/community/boise/article280193289.html
+related:
+- Ada County
+- Bingham County
+- Bingham County Republican Central Committee
+- Dorothy Moon
+- FOR
+- GOP
+- Idaho
+- Idaho Republican Party
+- Idaho Statesman
+- Ryan Suppe
+- Victor
+- Victor Miller
+- central committees
+- counties
+- drag
+- election
+- parents
+- school board
+authority: LOGAN
 ---
 Six top members of the Ada County Republican Party, including its chairman, quit Thursday, citing decisions by the state party that have made it “impossible” to effectively lead. 
 

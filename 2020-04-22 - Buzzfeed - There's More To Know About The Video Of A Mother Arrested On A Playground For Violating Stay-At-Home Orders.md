@@ -1,10 +1,33 @@
 ---
 author:
-  - "Anne Helen Petersen"
-  - "Lester Feder"
+- Anne Helen Petersen
+- Lester Feder
 outlet:
-  - "Buzzfeed News"
+- Buzzfeed News
 URL: https://www.buzzfeednews.com/article/lesterfeder/coronavirus-sara-walton-brady-video
+related:
+- Ammon
+- Anne Helen Petersen
+- Blaine County
+- Facebook
+- Freedom
+- Heather Scott
+- Idaho
+- Idaho Freedom Foundation
+- Idaho Second Amendment Alliance
+- Idaho Statesman
+- Malheur National Wildlife Refuge
+- Meridian
+- Nampa
+- North Idaho
+- Sara Walton Brady
+- Second Amendment
+- connections
+- coronavirus
+- police
+- social media
+- symbol
+authority: LOGAN
 ---
 A video of a mother arrested in Idaho at a playground that was closed under stay-at-home orders during the coronavirus pandemic has quickly gone viral, with far-right social media accounts rallying around her.
 

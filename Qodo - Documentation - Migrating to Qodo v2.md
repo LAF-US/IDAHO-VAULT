@@ -1,9 +1,16 @@
 ---
-source: "https://docs.qodo.ai/code-review/migrating-to-qodo-v2"
+source: https://docs.qodo.ai/code-review/migrating-to-qodo-v2
 author:
-  - "Qodo Documentation"
-published:
+- Qodo Documentation
+published: null
 created: 2026-03-29
+related:
+- '2026-03-29'
+- Cloud
+- GitHub
+- ONE
+- agent
+authority: LOGAN
 ---
 Starting February 4, 2026, new Qodo accounts will not have access to the Qodo v1 code review experience.
 
