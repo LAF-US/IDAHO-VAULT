@@ -1,5 +1,15 @@
 /* ROYGBIV weekday display colors for Obsidian UI + calendar headers */
-/* Day class is set by plugin: .roygbiv-mon, .roygbiv-tue, etc. */
+/*
+ * Two activation paths:
+ *
+ *   1. body.roygbiv-{day}  — set by an external plugin (global UI theming)
+ *   2. cssclasses frontmatter — set by daily_rollover.py and DAILY NOTE TEMPLATE
+ *      Applies the class to the note view container (.markdown-source-view /
+ *      .markdown-reading-view), scoping color to the open daily note.
+ *
+ * Both paths coexist. Path 1 lights up the whole vault UI; path 2 lights up
+ * only the active daily note view and works without any plugin.
+ */
 
 :root {
   --roygbiv-red: #e53935;
@@ -46,6 +56,42 @@ body.roygbiv-sat {
   --text-accent: var(--roygbiv-indigo) !important;
 }
 
+/* ---------------------------------------------------------------------------
+ * Path 2: cssclasses note-level selectors (no plugin needed)
+ * These activate when cssclasses: [roygbiv-{day}] is in the frontmatter.
+ * Scoped to the note view only; does not affect sidebar/ribbon.
+ * --------------------------------------------------------------------------- */
+
+.markdown-source-view.roygbiv-sun, .markdown-reading-view.roygbiv-sun {
+  --interactive-accent: var(--roygbiv-violet);
+  --text-accent: var(--roygbiv-violet);
+}
+.markdown-source-view.roygbiv-mon, .markdown-reading-view.roygbiv-mon {
+  --interactive-accent: var(--roygbiv-red);
+  --text-accent: var(--roygbiv-red);
+}
+.markdown-source-view.roygbiv-tue, .markdown-reading-view.roygbiv-tue {
+  --interactive-accent: var(--roygbiv-orange);
+  --text-accent: var(--roygbiv-orange);
+}
+.markdown-source-view.roygbiv-wed, .markdown-reading-view.roygbiv-wed {
+  --interactive-accent: var(--roygbiv-yellow);
+  --text-accent: var(--roygbiv-yellow);
+}
+.markdown-source-view.roygbiv-thu, .markdown-reading-view.roygbiv-thu {
+  --interactive-accent: var(--roygbiv-green);
+  --text-accent: var(--roygbiv-green);
+}
+.markdown-source-view.roygbiv-fri, .markdown-reading-view.roygbiv-fri {
+  --interactive-accent: var(--roygbiv-blue);
+  --text-accent: var(--roygbiv-blue);
+}
+.markdown-source-view.roygbiv-sat, .markdown-reading-view.roygbiv-sat {
+  --interactive-accent: var(--roygbiv-indigo);
+  --text-accent: var(--roygbiv-indigo);
+}
+
+/* Active links + tab headers pick up the accent from the note view */
 .workspace-tab-header.is-active,
 .mod-active .workspace-tab-header-inner,
 a.internal-link {

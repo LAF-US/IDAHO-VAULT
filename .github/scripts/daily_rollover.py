@@ -149,6 +149,12 @@ def _ordinal(n: int) -> str:
     return f"{n}{['th', 'st', 'nd', 'rd', 'th'][min(n % 10, 4)]}"
 
 
+_WEEKDAY_ABBREV = {
+    "Monday": "mon", "Tuesday": "tue", "Wednesday": "wed",
+    "Thursday": "thu", "Friday": "fri", "Saturday": "sat", "Sunday": "sun",
+}
+
+
 def date_aliases(target_date: date) -> list[str]:
     """Return the canonical set of date aliases for a daily note."""
     weekday = target_date.strftime("%A")
@@ -175,6 +181,7 @@ def build_frontmatter(target_date: date) -> str:
     created = f"{weekday}, {month} {day_ord} {year}, 12:00:00 am"
     tag_date = target_date.strftime("%Y/%m/%d")
     alias_lines = "".join(f"  - {a}\n" for a in date_aliases(target_date))
+    cssclass = f"roygbiv-{_WEEKDAY_ABBREV[weekday]}"
 
     return (
         f"---\n"
@@ -186,6 +193,8 @@ def build_frontmatter(target_date: date) -> str:
         f"tomorrow: {tomorrow}\n"
         f"weekday:\n"
         f"  - {weekday}\n"
+        f"cssclasses:\n"
+        f"  - {cssclass}\n"
         f"tags:\n"
         f"  - today\n"
         f"  - {tag_date}\n"
@@ -336,6 +345,7 @@ def ensure_daily_frontmatter(content: str, target_date: date) -> str:
                 "yesterday:",
                 "tomorrow:",
                 "weekday:",
+                "cssclasses:",
                 "tags:",
                 "date created:",
                 "date modified:",
@@ -346,6 +356,7 @@ def ensure_daily_frontmatter(content: str, target_date: date) -> str:
         expected_linter_alias = f"linter-yaml-title-alias: {target_date}"
         expected_weekday = target_date.strftime("%A")
         expected_tag_date = target_date.strftime("%Y/%m/%d")
+        expected_cssclass = f"roygbiv-{_WEEKDAY_ABBREV[expected_weekday]}"
 
         match = FRONTMATTER_RE.match(content)
         canonical = build_frontmatter(target_date)
@@ -362,6 +373,7 @@ def ensure_daily_frontmatter(content: str, target_date: date) -> str:
                 expected_linter_alias in frontmatter_block,
                 f"  - {expected_weekday}" in frontmatter_block,
                 f"  - {expected_tag_date}" in frontmatter_block,
+                expected_cssclass in frontmatter_block,
         ])
 
         if has_all_keys and matches_target_date:

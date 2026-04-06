@@ -11,6 +11,8 @@ yesterday:
 tomorrow:
 weekday:
   - {{date:dddd}}
+cssclasses:
+  - roygbiv-{{date:ddd}}
 tags:
   - today
   - {{date:YYYY/MM/DD}}
