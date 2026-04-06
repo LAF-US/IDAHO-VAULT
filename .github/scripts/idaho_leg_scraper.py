@@ -88,9 +88,12 @@ from pathlib import Path
 import requests
 from bs4 import BeautifulSoup, Tag
 
-# ── TODO: LEVELSET REPORTS ────────────────────────────────────────────────────
-# FLAG: This scraper needs to be integrated with / clued in on LEVELSET REPORTS.
-# Context pending — revisit when more information is available.
+# ── LEVELSET REPORTS integration ─────────────────────────────────────────────
+# After each scrape run the scraper appends a timestamped entry to a run-log
+# file inside the vault (GOVERNMENTS/IDAHO - LEGISLATIVE/SCRAPER-RUN-LOG.md).
+# This gives Logan — and any LEVELSET synthesis pass — a vault-side record of
+# what changed each time the automation ran.  The log uses LEVELSET-compatible
+# frontmatter so it surfaces naturally in Obsidian graph and search.
 # ─────────────────────────────────────────────────────────────────────────────
 
 
@@ -165,6 +168,7 @@ log = logging.getLogger("idleg")
 # ── Vault paths ───────────────────────────────────────────────────────────────
 VAULT_ROOT = Path(__file__).resolve().parents[2]
 BILLS_DIR = VAULT_ROOT / "GOVERNMENTS" / "IDAHO - LEGISLATIVE" / "BILLS"
+SCRAPER_RUN_LOG = VAULT_ROOT / "GOVERNMENTS" / "IDAHO - LEGISLATIVE" / "SCRAPER-RUN-LOG.md"
 
 # ── Scraper settings ──────────────────────────────────────────────────────────
 DEFAULT_YEAR = "2026"
@@ -1332,6 +1336,86 @@ def export_bills_to_csv(bill_list: list[dict], output_path: Path, year: str) -> 
 
 
 # ─────────────────────────────────────────────────────────────────────────────
+# LEVELSET run log
+# ─────────────────────────────────────────────────────────────────────────────
+
+_LOG_FRONTMATTER = """\
+---
+type: scraper-log
+related:
+  - Idaho Legislature
+  - LEVELSET
+authority: LOGAN
+---
+"""
+
+_LOG_HEADER = """\
+# Idaho Legislature Scraper — Run Log
+
+Automated record of each scraper invocation.  Newest entries first.
+Maintained by `.github/scripts/idaho_leg_scraper.py`.
+
+---
+
+"""
+
+
+def write_scraper_run_log(
+    year: str,
+    new: int,
+    updated: int,
+    unchanged: int,
+    errors: int,
+    elapsed: float,
+    dry_run: bool,
+) -> None:
+    """Append a timestamped run entry to SCRAPER-RUN-LOG.md in the vault.
+
+    Creates the file with LEVELSET-compatible frontmatter if it does not yet
+    exist.  Each call prepends one entry so the newest run appears at the top
+    of the log body (below the fixed header).
+    """
+    now_str = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    mode = "dry-run" if dry_run else "live"
+
+    entry_lines = [
+        f"## {now_str}",
+        "",
+        f"| Field | Value |",
+        f"|---|---|",
+        f"| Year | {year} |",
+        f"| Mode | {mode} |",
+        f"| New bills | {new} |",
+        f"| Updated bills | {updated} |",
+        f"| Unchanged bills | {unchanged} |",
+        f"| Fetch errors | {errors} |",
+        f"| Total processed | {new + updated + unchanged} |",
+        f"| Elapsed | {elapsed:.1f}s |",
+        "",
+        "---",
+        "",
+    ]
+    entry = "\n".join(entry_lines)
+
+    if SCRAPER_RUN_LOG.exists():
+        existing = SCRAPER_RUN_LOG.read_text(encoding="utf-8")
+        # Insert the new entry after the fixed header block (after the first "---\n\n")
+        header_end = existing.find(_LOG_HEADER)
+        if header_end != -1:
+            insert_at = header_end + len(_LOG_HEADER)
+            new_content = existing[:insert_at] + entry + existing[insert_at:]
+        else:
+            # Fallback: append
+            new_content = existing.rstrip() + "\n\n" + entry
+    else:
+        SCRAPER_RUN_LOG.parent.mkdir(parents=True, exist_ok=True)
+        new_content = _LOG_FRONTMATTER + _LOG_HEADER + entry
+
+    SCRAPER_RUN_LOG.write_text(new_content, encoding="utf-8")
+    log.info("Run log updated: %s", SCRAPER_RUN_LOG.name)
+
+
+# ─────────────────────────────────────────────────────────────────────────────
 # Entry point
 # ─────────────────────────────────────────────────────────────────────────────
 
@@ -1447,6 +1531,21 @@ def main() -> int:
             f.write(f"| Fetch errors | {errors} |\n")
             f.write(f"\nTotal processed: {new + updated + unchanged}\n")
             f.write(f"Elapsed: {elapsed:.1f}s\n")
+
+    # Write vault-side run log (LEVELSET integration)
+    if not args.dry_run:
+        try:
+            write_scraper_run_log(
+                year=args.year,
+                new=new,
+                updated=updated,
+                unchanged=unchanged,
+                errors=errors,
+                elapsed=elapsed,
+                dry_run=args.dry_run,
+            )
+        except Exception as exc:
+            log.warning("Could not write scraper run log: %s", exc)
 
     return 1 if errors > (new + updated + unchanged) else 0
 
