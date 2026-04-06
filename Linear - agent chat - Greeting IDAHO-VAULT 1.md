@@ -1,122 +1,123 @@
 ---
 date created: Sunday, March 29th 2026, 10:46:05 am
-date modified: Sunday, March 29th 2026, 10:47:00 am
+date modified: Monday, April 6th 2026, 9:49:11 am
 status: session-artifact-with-extracted-governance
 related:
-- '2026-03-24'
-- '2026-03-29'
-- '243'
-- '250'
-- AGENTS
-- AIM
-- ALL
-- API
-- APP
-- ARCHITECTURE
-- Act
-- BODY
-- Big IFs
-- CANONICAL
-- CCA
-- CHARTER
-- CONSTITUTION
-- CTO
-- ChatGPT
-- Cloud
-- Copilot
-- Council
-- DECISIONS
-- DOWN
-- Drive
-- FOR
-- FRAMEWORKS
-- Factory
-- GDT
-- GEMINI
-- GRIMOIRE
-- GUESTBOOK
-- GUIDELINES
-- GitHub
-- Google
-- HANDOFF-Swarm-Coordination-2026-03-29
-- HUMAN
-- IRC
-- Idaho
-- Idaho Legislature
-- Idaho Public Television
-- Internet
-- LAF
-- LEVELSET
-- LLM
-- Logan Finney
-- Logan's
-- Logan's Project & Protocols
-- MCP
-- MIND
-- MSN
-- MVP
-- MVW
-- NOT
-- NOW
-- Obsidian
-- OpenAI
-- PAT
-- PBS
-- PDF
-- PREFERENCES
-- PROCEDURES
-- PROTOCOLS
-- README
-- RESEARCH
-- RFC
-- SOUL
-- State Board of Education
-- THE
-- THE CORE
-- THE GHOST
-- THE PERIPHERY
-- TOUCHSTONE
-- The world is quiet here
-- UNIFIED
-- UNIFIED (US) SWARM
-- VAULT-ZONES
-- YOU
-- 'Yes'
-- YouTube
-- agent
-- birds
-- budget
-- canon
-- chain
-- construction
-- coordination
-- definition
-- doctrine
-- format
-- index
-- individuals
-- infrastructure
-- initial
-- legislative
-- links
-- math
-- node
-- nodes
-- nonprofits
-- pair
-- persona
-- self
-- systems
-- template
-- threshold
-- verbal
-- veto
-- voice
-- web
-- window
-- word
+  - '2026-03-24'
+  - '2026-03-29'
+  - '243'
+  - '250'
+  - AGENTS
+  - AIM
+  - ALL
+  - API
+  - APP
+  - ARCHITECTURE
+  - Act
+  - BODY
+  - Big IFs
+  - CANONICAL
+  - CCA
+  - CHARTER
+  - CONSTITUTION
+  - CTO
+  - ChatGPT
+  - Cloud
+  - Copilot
+  - Council
+  - DECISIONS
+  - DOWN
+  - Drive
+  - FOR
+  - FRAMEWORKS
+  - Factory
+  - GDT
+  - GEMINI
+  - GRIMOIRE
+  - GUESTBOOK
+  - GUIDELINES
+  - GitHub
+  - Google
+  - HANDOFF-Swarm-Coordination-2026-03-29
+  - HUMAN
+  - IRC
+  - Idaho
+  - Idaho Legislature
+  - Idaho Public Television
+  - Internet
+  - LAF
+  - LEVELSET
+  - LLM
+  - Logan Finney
+  - Logan's
+  - Logan's Project & Protocols
+  - MCP
+  - MIND
+  - MSN
+  - MVP
+  - MVW
+  - NOT
+  - NOW
+  - Obsidian
+  - OpenAI
+  - PAT
+  - PBS
+  - PDF
+  - PREFERENCES
+  - PROCEDURES
+  - PROTOCOLS
+  - README
+  - RESEARCH
+  - RFC
+  - SOUL
+  - State Board of Education
+  - THE
+  - THE CORE
+  - THE GHOST
+  - THE PERIPHERY
+  - TOUCHSTONE
+  - The world is quiet here
+  - UNIFIED
+  - UNIFIED (US) SWARM
+  - VAULT-ZONES
+  - YOU
+  - 'Yes'
+  - YouTube
+  - agent
+  - birds
+  - budget
+  - canon
+  - chain
+  - construction
+  - coordination
+  - definition
+  - doctrine
+  - format
+  - index
+  - individuals
+  - infrastructure
+  - initial
+  - legislative
+  - links
+  - math
+  - node
+  - nodes
+  - nonprofits
+  - pair
+  - persona
+  - self
+  - systems
+  - template
+  - threshold
+  - verbal
+  - veto
+  - voice
+  - web
+  - window
+  - word
 authority: LOGAN
 ---
+
 > **NOTE:** Durable governance decisions and swarm coordination guidance from this session have been extracted to canonical vault documents. See `HANDOFF-Swarm-Coordination-2026-03-29.md` at vault root and `!/AGENTS.md` (Linear agent entry added 2026-03-29). This file remains as a session transcript for reference; core decisions are now in the permanent record.
 
 # Greeting IDAHO-VAULT

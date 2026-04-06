@@ -17,7 +17,14 @@ tags:
   - today
   - {{date:YYYY/MM/DD}}
   - dailynote
+date created: Sunday, April 5th 2026, 1:03:13 pm
+date modified: Monday, April 6th 2026, 9:58:58 am
 ---
-obsidian://open?vault=IDAHO-VAULT&file={{date:YYYY-MM-DD}}
 
 [[TO DO LIST]]
+- WORK
+- []
+- PERSONAL
+- []
+- VAULT
+- []
