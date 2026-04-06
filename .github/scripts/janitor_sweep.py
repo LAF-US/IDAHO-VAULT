@@ -99,7 +99,7 @@ def parse_failed_event(event_path: Path) -> FailedRunEvent | None:
         repository=repo.get("full_name", ""),
         branch=workflow_run.get("head_branch", ""),
         conclusion=workflow_run.get("conclusion", ""),
-        run_id=int(workflow_run.get("id", 0)),
+        run_id=int(workflow_run.get("id") or 0),
     )
 
 
