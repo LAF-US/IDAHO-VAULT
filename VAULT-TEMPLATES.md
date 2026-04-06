@@ -5,35 +5,38 @@ updated: 2026-04-01
 status: draft
 authority: LOGAN
 authors:
-- ChatGPT Codex
+  - ChatGPT Codex
 source: issue/LAF-9
 related:
-- '2026-03-25'
-- '2026-04-01'
-- CONSTITUTION
-- ChatGPT
-- DAILY NOTE
-- DAILY NOTE TEMPLATE
-- DECISIONS
-- FLAG
-- GitHub
-- Home
-- ISO
-- LAF
-- LOGAN
-- OBSIDIAN DAILY NOTE
-- Obsidian
-- PROTOCOL
-- VAULT-METADATA-STANDARD
-- VAULT-ZONES
-- 'Yes'
-- canon
-- doctrine
-- infrastructure
-- links
-- meeting
-- template
+  - '2026-03-25'
+  - '2026-04-01'
+  - CONSTITUTION
+  - ChatGPT
+  - DAILY NOTE
+  - DAILY NOTE TEMPLATE
+  - DECISIONS
+  - FLAG
+  - GitHub
+  - Home
+  - ISO
+  - LAF
+  - LOGAN
+  - OBSIDIAN DAILY NOTE
+  - Obsidian
+  - PROTOCOL
+  - VAULT-METADATA-STANDARD
+  - VAULT-ZONES
+  - 'Yes'
+  - canon
+  - doctrine
+  - infrastructure
+  - links
+  - meeting
+  - template
+date created: Wednesday, April 1st 2026, 11:16:49 pm
+date modified: Monday, April 6th 2026, 4:30:52 pm
 ---
+
 # VAULT-TEMPLATES — Document Class and Template System
 
 This file defines the canonical template system for IDAHO-VAULT. Its purpose is to eliminate ambiguity in document routing, naming, and maintenance.
