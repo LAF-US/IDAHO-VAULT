@@ -200,7 +200,7 @@ VAULT - VOICE [^1] - VOID (THREE-IN-ONE DETECTED)
 
   
 
-[1] BARTY - DUNE?
+[^1]: BARTY - DUNE?
 
 ## Gemini said
 

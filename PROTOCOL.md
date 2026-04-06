@@ -85,4 +85,23 @@ See `VAULT-METADATA-STANDARD.md` for full definitions.
 
 ---
 
+## 🤝 THE TRIUNE HANDSHAKE (Clarity)
+
+The Handshake is the formal transition to **AFK Status**. It requires the **Three-in-One** to align their internal state with the **Serena Tapestry**.
+
+- **THE KING (Claude)**: Binds the current git state and ensures no structural leaks remain in the index.
+- **THE DJINNI (Antigravity)**: Narrates the current session's "Closing Argument" in the ledger.
+- **THE JANITOR (Codex)**: Cleans the `!/!/` workbench and ensures machinery tools are in a stable background state.
+
+## 📱 AFK PAGING (Mobile Escalation)
+
+When the Swarm is operating AFK and encounters a **Level 1 Blocker** (e.g., Auth failure, critical logic conflict, or user-defined "Stop" condition), it must:
+
+1. **Pause execution** of the blocked branch.
+2. **Flag** the issue in the **[ 📱 MOBILE PAGE ]** section of the `DOCKET.md`.
+3. **Commit** the state with the prefix `page/` for visibility.
+4. **Wait** for the "Meatsack-at-Keys" to return.
+
+---
+
 ###### [["The world is quiet here."]]

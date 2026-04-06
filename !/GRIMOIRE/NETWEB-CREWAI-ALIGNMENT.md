@@ -101,7 +101,7 @@ Building on the clean slate.
 ---
 
 ## 4. JFAC Crew — MAP 3:5 ; ATT to 5Ws
-
+to clarify: ATT = CrewAI's "Agent-Tool-Task" -L
 ### Three Agents → Five Tasks
 
 | Agent | 5W | Task |
