@@ -61,14 +61,27 @@ jobs:
             --agent-id "github-actions[bot]" \
             --phase release
 
-      - name: Commit ingest artifact
+      - name: Commit and Create PR
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          BRANCH_NAME="ingest-${{ steps.plan_ingest.outputs.timestamp }}"
+          git checkout -b "$BRANCH_NAME"
+          
           git add -- '!/' manifest.json
           if git diff --cached --quiet; then
             echo "No changes to commit"
             exit 0
           fi
+          
           git commit -m "ingest: initialize pipeline"
-          git push
+          git push origin "$BRANCH_NAME"
+          
+          gh pr create \
+            --title "Vault Ingest: ${{ steps.plan_ingest.outputs.timestamp }}" \
+            --body "Automated ingest pipeline run." \
+            --base main \
+            --head "$BRANCH_NAME"
