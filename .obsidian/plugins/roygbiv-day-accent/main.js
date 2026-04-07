@@ -31,7 +31,9 @@ const WEEKDAY_TO_INDEX = {
 };
 
 module.exports = class RoygbivDayAccentPlugin extends Plugin {
-  onload() {
+  async onload() {
+    this.settings = Object.assign({ lastActiveDayIndex: new Date().getDay() }, await this.loadData());
+
     this.applyDayClass();
 
     this.registerEvent(
@@ -57,11 +59,20 @@ module.exports = class RoygbivDayAccentPlugin extends Plugin {
     }
   }
 
-  applyDayClass() {
+  async applyDayClass() {
     if (!document || !document.body) return;
     this.clearDayClasses();
 
-    const dayIndex = this.resolveDayFromFrontmatter() ?? new Date().getDay();
+    const resolvedIndex = this.resolveDayFromFrontmatter();
+    if (resolvedIndex !== null) {
+      if (!this.settings || this.settings.lastActiveDayIndex !== resolvedIndex) {
+        this.settings = this.settings || {};
+        this.settings.lastActiveDayIndex = resolvedIndex;
+        await this.saveData(this.settings);
+      }
+    }
+
+    const dayIndex = resolvedIndex ?? this.settings?.lastActiveDayIndex ?? new Date().getDay();
     document.body.classList.add(DAY_CLASSES[dayIndex]);
   }
 
