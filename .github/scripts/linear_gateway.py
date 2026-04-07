@@ -436,7 +436,7 @@ def cmd_link_pr_context(args: argparse.Namespace) -> int:
 
     mutation = """
     mutation LinkPR($issueId: String!, $url: String!, $title: String!) {
-      attachmentCreate(input: {
+      attachmentLinkCreate(input: {
         issueId: $issueId
         url: $url
         title: $title
@@ -456,9 +456,9 @@ def cmd_link_pr_context(args: argparse.Namespace) -> int:
             {"issueId": issue_uuid, "url": args.pr_url, "title": args.pr_title},
             api_key=api_key,
         )
-        result = data.get("attachmentCreate", {})
+        result = data.get("attachmentLinkCreate", {})
         if not result.get("success"):
-            print("ERROR: attachmentCreate returned success=false.", file=sys.stderr)
+            print("ERROR: attachmentLinkCreate returned success=false.", file=sys.stderr)
             emit_action_log(ctx, outcome="failure")
             return 1
 

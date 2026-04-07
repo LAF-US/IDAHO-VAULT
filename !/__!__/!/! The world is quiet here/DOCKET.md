@@ -62,8 +62,9 @@ This is the live coordination board. Any agent arriving at THE COURTROOM reads t
 
 | Work item | Scope | Owner | Status | Linear | Notes |
 | --- | --- | --- | --- | --- | --- |
-| Scraper operations | Idaho Legislature scraper runtime + reliability changes | Claude Code | In progress | _(create child issue)_ | Move all scraper implementation work out of LAF-7 |
-| Automation maintenance | Vault sort audit + Wayback preservation workflow maintenance | Claude Code / Copilot | Planned | _(create child issue)_ | Keep operational fixes scoped to automation-only issue(s) |
+| Minidata Pipeline (LAF-16) | Update script to process Claude's spreadsheet shift logic | Antigravity | Review | LAF-16 | `update_budget_tracker_from_minidata.py` on `antigravity/budget-tracker-shift-update`. Backup `!_2026_BUDGETS_Agent_Antigravity_2026-04-06.xlsx` stored. |
+| Scraper operations | Idaho Legislature scraper runtime + reliability changes | Antigravity | Review | _(create child issue)_ | Transferred to GH PR generation logic. See: LEVELSET-ANTIGRAVITY-2026-04-06-WALKTHROUGH.md |
+| Automation maintenance | Vault sort audit + Wayback preservation workflow maintenance | Antigravity | Completed | _(create child issue)_ | Operational fixes complete — migrated to GH PRs over bare pushes |
 | Branch hygiene | Branch cleanup, stale branch deletion workflow, and audit bookkeeping | Claude Code | In progress | _(create child issue)_ | Move Spring Clean execution updates to its own issue |
 | Publication gatekeeping | JFAC quote audio verification and publication blocking checks | Logan | Blocked | _(create child issue)_ | Keep evidence gate work separate from coordination docket |
 | Gemini Architecture - LAF-18 | **Framework Staged**; Courier Workflow Ready | Gemini | In progress | LAF-18 | `vault-courier` automation scripts + GitHub Actions fixed; ready for secret provisioning. |

@@ -20,6 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      pull-requests: write
 
     steps:
       - name: Checkout vault
@@ -51,5 +52,12 @@ jobs:
       - name: Commit audit reports
         run: |
           git add "!/"
-          git diff --cached --quiet || git commit -m "wayback audit $(date -u +%Y-%m-%d)"
-          git push
+          if ! git diff --cached --quiet; then
+            git commit -m "wayback audit $(date -u +%Y-%m-%d)"
+            BRANCH_NAME="wayback-audit-$(date -u +%Y%m%d%H%M%S)"
+            git checkout -b "$BRANCH_NAME"
+            git push origin "$BRANCH_NAME"
+            GH_TOKEN=${{ secrets.GITHUB_TOKEN }} gh pr create --title "Automated Wayback Audit Report" --body "Automated PR from wayback-audit workflow." --base main --head "$BRANCH_NAME"
+          else
+            echo "Nothing to commit"
+          fi
