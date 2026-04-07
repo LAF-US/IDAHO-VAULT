@@ -26,6 +26,20 @@ ADVANCED_TOKENS = (
 )
 
 
+def simplify_status(raw_status: str) -> str:
+    """Strip branch (H/S), dates (MM/DD), and vote tallies (A-B-C) from status."""
+    if not raw_status:
+        return ""
+    # Remove branch indicator: (H) or (S)
+    s = re.sub(r"^\([HS]\)\s*", "", raw_status.strip(), flags=re.IGNORECASE)
+    # Remove date fragments: MM/DD or M/D
+    s = re.sub(r"\b\d{1,2}/\d{1,2}\b", "", s)
+    # Remove vote counts: A-B-C or [A-B-C]
+    s = re.sub(r"\[?\b\d{1,3}-\d{1,3}-\d{1,3}\b\]?", "", s)
+    # Collapse whitespace
+    return re.sub(r"\s+", " ", s).strip()
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description=(
@@ -139,7 +153,7 @@ def main() -> int:
     sheet = workbook[workbook.sheetnames[0]]
     snapshot_date = normalize_snapshot_date(args.snapshot_date)
 
-    changes: list[tuple[int, str, str, str, str]] = []
+    changes: list[tuple[int, str, str, str, str, str]] = []
     for row_number in range(2, sheet.max_row + 1):
         bill_id = extract_bill_id(sheet[f"V{row_number}"].value, sheet[f"X{row_number}"].value)
         if not bill_id or bill_id not in minidata_rows:
@@ -161,7 +175,8 @@ def main() -> int:
             if current_summary == raw_status:
                 continue
 
-        changes.append((row_number, bill_id, current_summary, raw_status, raw_status))
+        simple_status = simplify_status(raw_status)
+        changes.append((row_number, bill_id, current_summary, raw_status, raw_status, simple_status))
         
         if not args.dry_run:
             # Shift events rightward
@@ -196,6 +211,9 @@ def main() -> int:
             if "WITHDRAWN" in raw_status.upper() or "MOTION FAILED" in raw_status.upper():
                 sheet[f"BB{row_number}"] = raw_status
 
+            # Write simplified status to Column E (5th column)
+            sheet[f"E{row_number}"] = simple_status
+
     if not args.dry_run and changes:
         workbook.calculation.calcMode = "auto"
         workbook.calculation.fullCalcOnLoad = True
@@ -207,12 +225,13 @@ def main() -> int:
     print(f"row_changes: {len(changes)}")
 
     seen_bills: set[str] = set()
-    for row_number, bill_id, old_action, new_action, raw_status in changes:
+    for row_number, bill_id, old_action, new_action, raw_status, simple_status in changes:
         if bill_id in seen_bills:
             continue
         seen_bills.add(bill_id)
         print(
             f"bill {bill_id}: {old_action} -> {new_action} "
+            f"[Simple: {simple_status}] "
             f"(first row {row_number})"
         )
 

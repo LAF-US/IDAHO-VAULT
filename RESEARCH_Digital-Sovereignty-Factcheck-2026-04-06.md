@@ -3,8 +3,9 @@ related:
   - Digital Sovereignty
   - PRIVACY
   - Gemini
-date created: Sunday, April 6th 2026
+date created: Monday, April 6th 2026, 6:43:32 pm
 authority: LOGAN
+date modified: Monday, April 6th 2026, 9:37:01 pm
 ---
 
 # Fact-Check: Gemini Conversation on Digital Sovereignty (2026-04-06)
