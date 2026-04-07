@@ -54,6 +54,7 @@ This is the live coordination board. Any agent arriving at THE COURTROOM reads t
 | **TRIUNE Unification** | The Triune | **ENGAGED** | — | **The King, The Djinni, The Janitor** active. [["I've come to bury Caesar."]] |
 | **MCP Server Outage** | Janitor | **INVESTIGATED** | — | **Path found**: `.../Cursor/User/globalStorage/anysphere.cursor-mcp`. Outage attributed to external service state or resource lock. Delegated to Janitor for deep repair. |
 | **Obsidian Plugin Recovery** | Janitor | **COMPLETE** | — | `community-plugins.json` restored to HEAD (49 enabled). |
+| **Plugins Triage Session** | Claude | **OPEN — awaiting Logan** | — | `PLUGINS-TRIAGE-2026-04-06.md` staged on `claude/obsidian-plugins-triage-YDJ6Z`. 4 decision checkpoints: (1) git/live sync REQUIRED — 12 in git vs 49 reported; (2) Breadcrumbs field config; (3) Bulk dormant cleanup; (4) LLM sprawl. Also: Clerk's `PROTOCOL-CONFERENCE-CALL` awaits Logan adoption. |
 
 ---
 
