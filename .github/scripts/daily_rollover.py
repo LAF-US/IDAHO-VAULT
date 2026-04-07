@@ -50,25 +50,20 @@ def extract_todo_section(content: str) -> list[str]:
     """
     Return lines from the canonical [[TO DO LIST]] marker.
 
-    Stop at the next frontmatter-style separator or when the block clearly hands
-    off to another non-task section after checklist content has begun.
+    Stop at the next frontmatter-style separator, next-level header, 
+    or end of file. Preserves organizational bullets (- WORK, - PERSONAL).
     """
     lines = content.splitlines()
     in_todo = False
-    saw_task = False
     todo_lines = []
     for line in lines:
         if is_todo_marker(line):
             in_todo = True
             continue
         if in_todo:
-            if line.strip() == "---":
+            # Stop if we hit a substantial new section or divider
+            if line.strip() == "---" or line.startswith("## ") or line.startswith("Notes:"):
                 break
-            match = TASK_RE.match(line)
-            if saw_task and line.strip() and not match and line.strip() != PLACEHOLDER_LINE:
-                break
-            if match:
-                saw_task = True
             todo_lines.append(line)
     return todo_lines
 
@@ -247,20 +242,40 @@ def _split_todo_blocks(lines: list[str]) -> list[list[str]]:
     return blocks
 
 
-def merge_todo_lines(carried: list[str], existing: list[str]) -> list[str]:
+def merge_todo_lines(source_items: list[str], target_items: list[str], sync_completions: bool = False) -> list[str]:
     """
-    Keep carried items first, then preserve any existing lines already written in
-    today's note. Duplicate whole blocks are skipped, while tasks that share the
+    Keep source items first, then preserve any target items already present.
+    Duplicate whole blocks are skipped, while tasks that share the
     same parent merge their children by parent context instead of raw line text.
+
+    If sync_completions is True:
+    If an item in target_items is marked [ ] but is marked [x] in source_items,
+    it will be marked [x] in the result.
     """
     merged_blocks = []
     block_index_by_parent = {}
     standalone_seen = set()
 
-    for source in (carried, existing):
+    # Map of task text -> completion status in source
+    source_status = {}
+    if sync_completions:
+        for block in _split_todo_blocks(source_items):
+            m = TASK_RE.match(block[0])
+            if m:
+                # Use the clean text (group 3) as the key
+                source_status[m.group(3).strip()] = (m.group(2).lower() == "x")
+
+    for source in (source_items, target_items):
         for block in _split_todo_blocks(source):
             parent = block[0]
             parent_match = TASK_RE.match(parent)
+
+            # If we are in sync_completions mode and this task has a status in source
+            if sync_completions and parent_match:
+                task_text = parent_match.group(3).strip()
+                if task_text in source_status:
+                    if source_status[task_text]:
+                        parent = parent.replace("[ ]", "[x]")
 
             if not parent_match or len(parent_match.group(1)) != 0:
                 block_key = tuple(block)
@@ -327,60 +342,59 @@ def patch_nav_links(content: str, target_date: date) -> str:
 
 
 def ensure_daily_frontmatter(content: str, target_date: date) -> str:
-        """
-        Ensure a daily note has canonical frontmatter.
+    """
+    Ensure a daily note has canonical frontmatter.
 
-        Behavior:
-            - If frontmatter is missing, prepend canonical daily frontmatter.
-            - If frontmatter exists but misses required keys, replace frontmatter
-                with canonical daily frontmatter and preserve body.
-            - If frontmatter exists but date-bound fields do not match target_date,
-                replace frontmatter with canonical daily frontmatter and preserve body.
-            - If frontmatter exists and matches, preserve it as-is.
-        """
-        required_keys = [
-                "title:",
-                "aliases:",
-                "linter-yaml-title-alias:",
-                "yesterday:",
-                "tomorrow:",
-                "weekday:",
-                "cssclasses:",
-                "tags:",
-                "date created:",
-                "date modified:",
-        ]
+    Behavior:
+        - If frontmatter is missing, prepend canonical daily frontmatter.
+        - If frontmatter exists but misses required keys, or if date-bound fields
+          do not match the target_date (authoritative), replace with canonical.
+    """
+    required_keys = [
+        "title:",
+        "aliases:",
+        "linter-yaml-title-alias:",
+        "yesterday:",
+        "tomorrow:",
+        "weekday:",
+        "cssclasses:",
+        "tags:",
+        "date created:",
+        "date modified:",
+    ]
 
-        expected_title = f"title: {target_date}"
-        expected_alias = f"  - {target_date}"
-        expected_linter_alias = f"linter-yaml-title-alias: {target_date}"
-        expected_weekday = target_date.strftime("%A")
-        expected_tag_date = target_date.strftime("%Y/%m/%d")
-        expected_cssclass = f"roygbiv-{_WEEKDAY_ABBREV[expected_weekday]}"
+    expected_title = f"title: {target_date}"
+    expected_linter_alias = f"linter-yaml-title-alias: {target_date}"
+    expected_weekday = target_date.strftime("%A")
+    expected_tag_date = target_date.strftime("%Y/%m/%d")
+    # Using lowercase for roygbiv class persistence
+    expected_cssclass = f"roygbiv-{_WEEKDAY_ABBREV[expected_weekday].lower()}"
 
-        match = FRONTMATTER_RE.match(content)
-        canonical = build_frontmatter(target_date)
+    match = FRONTMATTER_RE.match(content)
+    canonical = build_frontmatter(target_date)
 
-        if not match:
-                body = content.lstrip("\r\n")
-                return f"{canonical}\n\n{body}" if body else f"{canonical}\n"
-
-        frontmatter_block = match.group("frontmatter")
-        has_all_keys = all(key in frontmatter_block for key in required_keys)
-        matches_target_date = all([
-                expected_title in frontmatter_block,
-                expected_alias in frontmatter_block,
-                expected_linter_alias in frontmatter_block,
-                f"  - {expected_weekday}" in frontmatter_block,
-                f"  - {expected_tag_date}" in frontmatter_block,
-                expected_cssclass in frontmatter_block,
-        ])
-
-        if has_all_keys and matches_target_date:
-                return content
-
-        body = content[match.end():].lstrip("\r\n")
+    if not match:
+        body = content.lstrip("\r\n")
         return f"{canonical}\n\n{body}" if body else f"{canonical}\n"
+
+    frontmatter_block = match.group("frontmatter")
+    has_all_keys = all(key in frontmatter_block for key in required_keys)
+    
+    # Check for authoritative date agreement
+    matches_target_date = all([
+        expected_title in frontmatter_block,
+        expected_linter_alias in frontmatter_block,
+        f"  - {expected_weekday}" in frontmatter_block,
+        f"  - {expected_tag_date}" in frontmatter_block,
+        expected_cssclass in frontmatter_block,
+    ])
+
+    if has_all_keys and matches_target_date:
+        return content
+
+    # If garbled or missing, we preserve the body and overwrite the frontmatter
+    body = content[match.end():].lstrip("\r\n")
+    return f"{canonical}\n\n{body}" if body else f"{canonical}\n"
 
 
 # ---------------------------------------------------------------------------
@@ -448,9 +462,11 @@ def update_today_note(
         log(f"Updated {today_file.name}")
 
 
-def update_todo_list_md(carried: list[str], dry_run: bool = False) -> None:
-    block = todo_block_text(carried)
-
+def update_todo_list_md(source_todo_lines: list[str], carried: list[str], dry_run: bool = False) -> None:
+    """
+    Sync source items (completed ones) back to TO DO LIST.md and then add the new
+    completed items carried forward.
+    """
     if TODO_LIST_FILE.exists():
         content = TODO_LIST_FILE.read_text(encoding="utf-8")
     else:
@@ -465,7 +481,12 @@ def update_todo_list_md(carried: list[str], dry_run: bool = False) -> None:
         )
 
     existing_active = extract_active_section(content)
-    merged_active = merge_todo_lines(carried, existing_active)
+    
+    # First, sync completions from yesterday's full task list back to the active section
+    # Then merge in the incomplete items carried forward
+    merged_active = merge_todo_lines(source_todo_lines, existing_active, sync_completions=True)
+    merged_active = merge_todo_lines(carried, merged_active)
+    
     active_block = todo_block_text(merged_active)
 
     if "## Active" in content:
@@ -564,7 +585,7 @@ def main() -> None:
         log("No incomplete items found - nothing to carry forward.")
 
     update_today_note(target_date, merged_backlog, dry_run=args.dry_run)
-    update_todo_list_md(merged_backlog, dry_run=args.dry_run)
+    update_todo_list_md(todo_lines, merged_backlog, dry_run=args.dry_run)
 
 
 if __name__ == "__main__":
