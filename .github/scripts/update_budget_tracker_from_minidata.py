@@ -29,8 +29,9 @@ ADVANCED_TOKENS = (
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description=(
-            "Sync the !_2026_BUDGETS.xlsx helper status column (AB) from minidata. "
-            "This script does not rewrite the sheet's current event/date prose in AE/AG."
+            "Sync the !_2026_BUDGETS.xlsx event columns from minidata. "
+            "This script shifts historical events to the right (AE/AG -> AH/AI, etc.) "
+            "and sets the STATUS_OVERRIDE (BB) when necessary."
         )
     )
     parser.add_argument(
@@ -139,27 +140,61 @@ def main() -> int:
     snapshot_date = normalize_snapshot_date(args.snapshot_date)
 
     changes: list[tuple[int, str, str, str, str]] = []
-    manual_review: list[tuple[int, str, str, str, str, str]] = []
     for row_number in range(2, sheet.max_row + 1):
         bill_id = extract_bill_id(sheet[f"V{row_number}"].value, sheet[f"X{row_number}"].value)
         if not bill_id or bill_id not in minidata_rows:
             continue
 
         _title, raw_status, vote = minidata_rows[bill_id]
-        new_status = map_tracker_status(raw_status)
-        old_status = (sheet[f"AB{row_number}"].value or "").strip()
-        if not new_status or new_status == old_status:
-            continue
-
-        changes.append((row_number, bill_id, old_status, new_status, raw_status))
+        
+        current_date_val = sheet[f"AE{row_number}"].value
+        current_action_val = sheet[f"AG{row_number}"].value
+        current_date = (str(current_date_val) if current_date_val else "").strip()
+        current_summary = (str(current_action_val) if current_action_val else "").strip()
+        
+        # Determine if we should record a change
+        # If the minidata snapshot doesn't offer a new date, but the raw_status changed:
         if snapshot_date:
-            current_date = (sheet[f"AE{row_number}"].value or "").strip()
-            current_summary = (sheet[f"AG{row_number}"].value or "").strip()
-            manual_review.append(
-                (row_number, bill_id, current_date, current_summary, raw_status, vote)
-            )
+            if current_date == snapshot_date and current_summary == raw_status:
+                continue
+        else:
+            if current_summary == raw_status:
+                continue
+
+        changes.append((row_number, bill_id, current_summary, raw_status, raw_status))
+        
         if not args.dry_run:
-            sheet[f"AB{row_number}"] = new_status
+            # Shift events rightward
+            sheet[f"AT{row_number}"] = sheet[f"AR{row_number}"].value
+            sheet[f"AU{row_number}"] = sheet[f"AS{row_number}"].value
+            
+            sheet[f"AR{row_number}"] = sheet[f"AP{row_number}"].value
+            sheet[f"AS{row_number}"] = sheet[f"AQ{row_number}"].value
+            
+            sheet[f"AP{row_number}"] = sheet[f"AN{row_number}"].value
+            sheet[f"AQ{row_number}"] = sheet[f"AO{row_number}"].value
+            
+            sheet[f"AN{row_number}"] = sheet[f"AL{row_number}"].value
+            sheet[f"AO{row_number}"] = sheet[f"AM{row_number}"].value
+            
+            sheet[f"AL{row_number}"] = sheet[f"AJ{row_number}"].value
+            sheet[f"AM{row_number}"] = sheet[f"AK{row_number}"].value
+            
+            sheet[f"AJ{row_number}"] = sheet[f"AH{row_number}"].value
+            sheet[f"AK{row_number}"] = sheet[f"AI{row_number}"].value
+            
+            sheet[f"AH{row_number}"] = sheet[f"AE{row_number}"].value
+            sheet[f"AI{row_number}"] = sheet[f"AG{row_number}"].value
+            
+            # Write new event
+            if snapshot_date:
+                sheet[f"AE{row_number}"] = snapshot_date
+            sheet[f"AG{row_number}"] = raw_status
+            
+            # Write STATUS_OVERRIDE if applicable
+            # AB represents standard statuses, BB is strictly the override slot.
+            if "WITHDRAWN" in raw_status.upper() or "MOTION FAILED" in raw_status.upper():
+                sheet[f"BB{row_number}"] = raw_status
 
     if not args.dry_run and changes:
         workbook.calculation.calcMode = "auto"
@@ -172,30 +207,13 @@ def main() -> int:
     print(f"row_changes: {len(changes)}")
 
     seen_bills: set[str] = set()
-    for row_number, bill_id, old_status, new_status, raw_status in changes:
+    for row_number, bill_id, old_action, new_action, raw_status in changes:
         if bill_id in seen_bills:
             continue
         seen_bills.add(bill_id)
         print(
-            f"bill {bill_id}: {old_status or '(blank)'} -> {new_status} "
-            f"(minidata: {raw_status}, first row {row_number})"
-        )
-
-    if manual_review:
-        print("\nmanual_event_review_required:")
-        seen_review: set[str] = set()
-        for row_number, bill_id, current_date, current_summary, raw_status, vote in manual_review:
-            if bill_id in seen_review:
-                continue
-            seen_review.add(bill_id)
-            print(
-                f"bill {bill_id}: snapshot {snapshot_date}, raw_status={raw_status}, "
-                f"vote={vote or '(none)'}, current_event={current_date or '(blank)'} :: "
-                f"{current_summary or '(blank)'}"
-            )
-        print(
-            "note: AB helper sync is safe here; AE/AG should only move when the previous "
-            "current event is pushed down into history in the sheet's existing style."
+            f"bill {bill_id}: {old_action} -> {new_action} "
+            f"(first row {row_number})"
         )
 
     return 0
