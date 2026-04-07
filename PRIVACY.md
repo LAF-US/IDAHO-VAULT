@@ -4,6 +4,7 @@ related:
   - CONSTITUTION
   - AGENTS
   - VAULT-CONVENTIONS
+  - Digital Sovereignty
 date created: Sunday, April 5th 2026, 2:39:09 pm
 date modified: Sunday, April 5th 2026, 5:33:49 pm
 ---
@@ -155,7 +156,35 @@ When Logan approves moving information from a private source (meeting transcript
 
 ---
 
-## VI. AGENT OBLIGATIONS
+## VI. INTELLECTUAL PROPERTY BOUNDARY (Disentanglement Protocol)
+
+Logan is employed by Idaho Public Television (IdahoPTV), an agency under the Idaho State Board of Education. This creates a legal boundary between **employer work product** and **personal intellectual property** that the vault must respect.
+
+### A. THE BOUNDARY
+
+| Category | Owner | Vault Rule |
+|----------|-------|------------|
+| Content created in scope of employment for IdahoPTV (scripts, research for segments, interview notes, production assets) | Employer (Work for Hire — 17 U.S.C. § 101) | **Must not appear in tracked vault files.** No unpublished IdahoPTV work product in this repository. |
+| Published/broadcast IdahoPTV content | Employer holds copyright; content is public | May be referenced or linked like any public-record source. Do not reproduce full texts. |
+| Public-record information (legislation, committee minutes, published government data) | Public domain / fair use | Permitted — this is the vault's core subject matter. |
+| Personal analysis, philosophy, PKM methodology, vault architecture, meta-commentary | Logan (personal intellectual property) | Permitted — this is the vault's personal layer. |
+| Personal notes created solely for Logan's own use, not shared with any person or entity | Logan — exempt from public records under Idaho Code § 74-101(13) | Permitted in local-persistent zones (`_private/`). Exercise caution before committing to tracked files. |
+
+### B. PRACTICAL RULES FOR AGENTS
+
+1. **No agent may commit unpublished employer work product** to any tracked branch. If uncertain whether content originated from Logan's employment duties, treat it as employer property and ask Logan.
+2. **Public-record legislative content** (bill text, vote tallies, committee schedules, published fiscal data) is fair game. It was public before it entered the vault.
+3. **Personal intellectual work** — Logan's reflections, vault design decisions, philosophical writing, PKM methodology, and creative projects unrelated to IdahoPTV duties — belongs to Logan.
+4. **Git timestamps as provenance:** Commit metadata (time, author, device) serves as evidence of when and where content was created. Agents should not obscure or fabricate commit metadata.
+5. **Device separation:** Content created on employer hardware/networks during work hours carries higher risk of employer IP claims. Agents cannot verify device context — Logan is responsible for ensuring his personal vault work occurs on personal infrastructure.
+
+### C. WHAT THIS SECTION DOES NOT DO
+
+This section documents the boundary as understood by the vault owner. It is **not legal advice**. Logan should consult legal counsel for specific questions about scope of employment, substantial use of resources, or the interplay between Idaho's Public Records Act and federal copyright law.
+
+---
+
+## VII. AGENT OBLIGATIONS
 
 1. **No agent may build automated sync pipelines** that pull personal service data into tracked vault files without a Privacy Gate review.
 2. **Agents must audit their own output** before any commit that touches files generated from MCP queries.
@@ -165,7 +194,7 @@ When Logan approves moving information from a private source (meeting transcript
 
 ---
 
-## VII. AMENDMENT
+## VIII. AMENDMENT
 
 This document may only be amended by Logan. Agents may propose amendments via PR or conversation, but no agent may modify this file directly without Logan's explicit instruction.
 
