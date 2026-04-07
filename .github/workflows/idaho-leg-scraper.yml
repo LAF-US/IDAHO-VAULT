@@ -17,7 +17,7 @@ on:
       force:
         description: "Force re-fetch all bills (including finalized)"
         required: false
-        default: "false"
+        default: false
         type: boolean
       bill:
         description: "Scrape only one bill (e.g. H0001, S0042). Leave blank for all."
@@ -27,7 +27,7 @@ on:
       members:
         description: "Also scrape House/Senate member profiles"
         required: false
-        default: "false"
+        default: false
         type: boolean
 
 jobs:
@@ -37,6 +37,7 @@ jobs:
 
     permissions:
       contents: write
+      pull-requests: write
       issues: write    # needed to post digest comments
 
     steps:
@@ -103,7 +104,10 @@ jobs:
           else
             CHANGED=$(git diff --cached --name-only | wc -l)
             git commit -m "scrape Idaho legislature — ${CHANGED} file(s) $(date -u +%Y-%m-%d)"
-            git push
+            BRANCH_NAME="idaho-leg-scraper-$(date -u +%Y%m%d%H%M%S)"
+            git checkout -b "$BRANCH_NAME"
+            git push origin "$BRANCH_NAME"
+            GH_TOKEN=${{ secrets.GITHUB_TOKEN }} gh pr create --title "Automated Scrape: Idaho Legislature" --body "Automated PR from scraper workflow." --base main --head "$BRANCH_NAME"
             echo "committed=true"  >> $GITHUB_OUTPUT
             echo "file_count=${CHANGED}" >> $GITHUB_OUTPUT
           fi

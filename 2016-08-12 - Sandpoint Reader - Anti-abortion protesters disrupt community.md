@@ -1,44 +1,47 @@
 ---
 author:
-- Cameron Rasmusson
+  - Cameron Rasmusson
 outlet:
-- Sandpoint Reader
+  - Sandpoint Reader
 URL: https://sandpointreader.com/anti-abortion-protesters-disrupt-community/
 related:
-- '180'
-- '369'
-- Ben Olson
-- Bonner County
-- Bonner County Daily Bee
-- Christianity
-- Dan McDonald
-- Facebook
-- First Amendment
-- Idaho
-- North Idaho
-- Sagle
-- Sandpoint
-- Sandpoint Reader
-- Scott Herndon
-- Shelby Rognstad
-- Spencer
-- YouTube
-- abortion
-- anti-abortion
-- attorneys
-- children
-- churches
-- city council
-- freedom of speech
-- high schools
-- individuals
-- mayor
-- meeting
-- parents
-- sign
-- voice
+  - '180'
+  - '369'
+  - Ben Olson
+  - Bonner County
+  - Bonner County Daily Bee
+  - Christianity
+  - Dan McDonald
+  - Facebook
+  - First Amendment
+  - Idaho
+  - North Idaho
+  - Sagle
+  - Sandpoint
+  - Sandpoint Reader
+  - Scott Herndon
+  - Shelby Rognstad
+  - Spencer
+  - YouTube
+  - abortion
+  - anti-abortion
+  - attorneys
+  - children
+  - churches
+  - city council
+  - freedom of speech
+  - high schools
+  - individuals
+  - mayor
+  - meeting
+  - parents
+  - sign
+  - voice
 authority: LOGAN
+date created: Monday, March 23rd 2026, 4:54:50 pm
+date modified: Monday, April 6th 2026, 9:15:53 pm
 ---
+
 For a provocateur, Scott Herndon is unexpectedly calm and articulate.
 
 Sporting a long beard and speaking in a measured tone, he communicates philosophical ideas that, if overheard piecemeal, might sound like standard coffee shop conversation. It’s surprising, then, that these ideas form the foundation of the Abolitionist Society of North Idaho movement, a group that has aroused more local anger than perhaps any other in the past several years.
