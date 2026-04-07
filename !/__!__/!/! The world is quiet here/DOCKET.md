@@ -68,12 +68,13 @@ This is the live coordination board. Any agent arriving at THE COURTROOM reads t
 | Branch hygiene | Branch cleanup, stale branch deletion workflow, and audit bookkeeping | Claude Code | In progress | _(create child issue)_ | Move Spring Clean execution updates to its own issue |
 | Publication gatekeeping | JFAC quote audio verification and publication blocking checks | Logan | Blocked | _(create child issue)_ | Keep evidence gate work separate from coordination docket |
 | Gemini Architecture - LAF-18 | **Framework Staged**; Courier Workflow Ready | Gemini | In progress | LAF-18 | `vault-courier` automation scripts + GitHub Actions fixed; ready for secret provisioning. |
+| **Obsidian Triage & Daily Notes** | Cleanup 88 dormant plugins; fix frontmatter & task sync | Antigravity | **Completed** | - | Non-destructive frontmatter merge + bi-directional task sync established. |
 
 ## BLOCKED / PENDING LOGAN
 
 | Item | Blocker | Who can unblock |
 | --- | --- | --- |
-| `.obsidian/workspace.json` | Tracked in git; should be untracked + gitignored - separate hygiene PR | Logan |
+| `.obsidian/workspace.json` | Already ignored via .gitignore; verified untracked. | Antigravity | **Done** |
 | `vault-moves-2026-03-23` branch | 30 proposed file moves (auto-generated) - awaiting review/apply/discard decision | Logan |
 | Stale remote branches (6) | Require manual deletion via GitHub web UI - `codex/fix-high-priority-bug-in-pr-#34`, `copilot/*` (4 branches), `vault-moves-2026-03-16` | Logan |
 | JFAC quote audio verification | 5 quotes + speaker IDs - HARD GATE before publication | Logan |

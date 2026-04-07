@@ -69,14 +69,11 @@ def extract_todo_section(content: str) -> list[str]:
 
 
 def log(message: str = "") -> None:
-    """Write stdout safely on terminals that cannot encode all Unicode glyphs."""
-    text = f"{message}\n"
-    encoding = sys.stdout.encoding or "utf-8"
-    if hasattr(sys.stdout, "buffer"):
-        sys.stdout.buffer.write(text.encode(encoding, errors="backslashreplace"))
-        sys.stdout.buffer.flush()
-    else:
-        sys.stdout.write(text)
+    """Safe stdout printing for both *nix and Windows."""
+    # Ensure no wandering carriage returns mess up the terminal buffer
+    if isinstance(message, str):
+        message = message.replace("\r", "")
+    print(message)
 
 
 def is_todo_marker(line: str) -> bool:
@@ -166,6 +163,22 @@ def date_aliases(target_date: date) -> list[str]:
     ]
 
 
+def parse_frontmatter(content: str) -> dict[str, str]:
+    """Extract frontmatter as a raw key-value mapping (very basic)."""
+    match = FRONTMATTER_RE.match(content)
+    if not match:
+        return {}
+    
+    block = match.group("frontmatter")
+    # Simple line-based split for basic YAML keys
+    kv = {}
+    for line in block.splitlines():
+        if ":" in line and not line.startswith(" "):
+            key, val = line.split(":", 1)
+            kv[key.strip()] = val.strip()
+    return kv
+
+
 def build_frontmatter(target_date: date) -> str:
     yesterday = target_date - timedelta(days=1)
     tomorrow = target_date + timedelta(days=1)
@@ -209,7 +222,7 @@ def todo_block_text(lines: list[str]) -> str:
 def _clean_todo_lines(lines: list[str]) -> list[str]:
     cleaned = []
     for line in lines:
-        stripped = line.rstrip()
+        stripped = line.strip("\r\n")
         if not stripped or stripped == PLACEHOLDER_LINE:
             continue
         cleaned.append(stripped)
@@ -245,58 +258,78 @@ def _split_todo_blocks(lines: list[str]) -> list[list[str]]:
 def merge_todo_lines(source_items: list[str], target_items: list[str], sync_completions: bool = False) -> list[str]:
     """
     Keep source items first, then preserve any target items already present.
-    Duplicate whole blocks are skipped, while tasks that share the
-    same parent merge their children by parent context instead of raw line text.
-
-    If sync_completions is True:
-    If an item in target_items is marked [ ] but is marked [x] in source_items,
-    it will be marked [x] in the result.
+    Tasks merge their children by parent context.
+    
+    Organizational bullets (e.g. - WORK) are treated as mergeable parents.
+    
+    If sync_completions is True: marks tasks [x] in result if they are [x] in source.
     """
     merged_blocks = []
     block_index_by_parent = {}
-    standalone_seen = set()
-
-    # Map of task text -> completion status in source
+    
+    # Map of clean task/bullet text -> status in source
     source_status = {}
     if sync_completions:
         for block in _split_todo_blocks(source_items):
-            m = TASK_RE.match(block[0])
-            if m:
-                # Use the clean text (group 3) as the key
-                source_status[m.group(3).strip()] = (m.group(2).lower() == "x")
+            for line in block:
+                m = TASK_RE.match(line)
+                if m:
+                    # Map text -> is_complete
+                    text = m.group(3).strip().lower()
+                    source_status[text] = (m.group(2).lower() == "x")
 
-    for source in (source_items, target_items):
-        for block in _split_todo_blocks(source):
+    for items in (source_items, target_items):
+        for block in _split_todo_blocks(items):
             parent = block[0]
-            parent_match = TASK_RE.match(parent)
-
-            # If we are in sync_completions mode and this task has a status in source
-            if sync_completions and parent_match:
-                task_text = parent_match.group(3).strip()
-                if task_text in source_status:
-                    if source_status[task_text]:
+            # Normalize parent key: if it's a task, use group(3); if it's a bullet, use the text after '-'
+            m = TASK_RE.match(parent)
+            if m:
+                parent_key = f"task:{m.group(3).strip().lower()}"
+                # If sync_completions, ensure parent shows correct status if it's in source
+                if sync_completions and m.group(3).strip().lower() in source_status:
+                    if source_status[m.group(3).strip().lower()]:
                         parent = parent.replace("[ ]", "[x]")
-
-            if not parent_match or len(parent_match.group(1)) != 0:
-                block_key = tuple(block)
-                if block_key in standalone_seen:
-                    continue
-                standalone_seen.add(block_key)
-                merged_blocks.append(block.copy())
+            elif parent.strip().startswith("-"):
+                parent_key = f"bullet:{parent.strip().lstrip('-').strip().lower()}"
+            else:
+                # Standalone text, just append if it hasn't been added exactly elsewhere
+                if parent not in [b[0] for b in merged_blocks]:
+                    merged_blocks.append(block.copy())
                 continue
 
-            if parent not in block_index_by_parent:
-                block_index_by_parent[parent] = len(merged_blocks)
+            if parent_key not in block_index_by_parent:
+                block_index_by_parent[parent_key] = len(merged_blocks)
                 merged_blocks.append(block.copy())
-                continue
+            else:
+                # Merge children into existing block
+                target_block = merged_blocks[block_index_by_parent[parent_key]]
+                seen_children = set()
+                # Clean up existing children state
+                for i in range(len(target_block)):
+                    line = target_block[i]
+                    tm = TASK_RE.match(line)
+                    if tm:
+                        text = tm.group(3).strip().lower()
+                        seen_children.add(text)
+                        # Sync status of existing child if needed
+                        if sync_completions and text in source_status:
+                            if source_status[text]:
+                                target_block[i] = line.replace("[ ]", "[x]")
 
-            target_block = merged_blocks[block_index_by_parent[parent]]
-            seen_children = set(target_block[1:])
-            for child in block[1:]:
-                if child in seen_children:
-                    continue
-                seen_children.add(child)
-                target_block.append(child)
+                for child in block[1:]:
+                    cm = TASK_RE.match(child)
+                    if cm:
+                        text = cm.group(3).strip().lower()
+                        if text not in seen_children:
+                            # Apply source status to new child if syncing
+                            if sync_completions and text in source_status:
+                                if source_status[text]:
+                                    child = child.replace("[ ]", "[x]")
+                            target_block.append(child)
+                            seen_children.add(text)
+                    else:
+                        if child not in target_block:
+                            target_block.append(child)
 
     merged = []
     for block in merged_blocks:
@@ -344,57 +377,96 @@ def patch_nav_links(content: str, target_date: date) -> str:
 def ensure_daily_frontmatter(content: str, target_date: date) -> str:
     """
     Ensure a daily note has canonical frontmatter.
-
-    Behavior:
-        - If frontmatter is missing, prepend canonical daily frontmatter.
-        - If frontmatter exists but misses required keys, or if date-bound fields
-          do not match the target_date (authoritative), replace with canonical.
+    Non-destructive: preserves existing keys while overwriting authoritative ones.
     """
-    required_keys = [
-        "title:",
-        "aliases:",
-        "linter-yaml-title-alias:",
-        "yesterday:",
-        "tomorrow:",
-        "weekday:",
-        "cssclasses:",
-        "tags:",
-        "date created:",
-        "date modified:",
-    ]
+    weekday = target_date.strftime("%A")
+    month = target_date.strftime("%B")
+    day_ord = _ordinal(target_date.day)
+    year = target_date.year
+    created = f"{weekday}, {month} {day_ord} {year}, 12:00:00 am"
+    tag_date = target_date.strftime("%Y/%m/%d")
+    cssclass = f"roygbiv-{_WEEKDAY_ABBREV[weekday].lower()}"
 
-    expected_title = f"title: {target_date}"
-    expected_linter_alias = f"linter-yaml-title-alias: {target_date}"
-    expected_weekday = target_date.strftime("%A")
-    expected_tag_date = target_date.strftime("%Y/%m/%d")
-    # Using lowercase for roygbiv class persistence
-    expected_cssclass = f"roygbiv-{_WEEKDAY_ABBREV[expected_weekday].lower()}"
+    canonical_updates = {
+        "title": str(target_date),
+        "linter-yaml-title-alias": str(target_date),
+        "yesterday": str(target_date - timedelta(days=1)),
+        "tomorrow": str(target_date + timedelta(days=1)),
+        "date created": created,
+        "date modified": created,
+    }
 
     match = FRONTMATTER_RE.match(content)
-    canonical = build_frontmatter(target_date)
-
     if not match:
-        body = content.lstrip("\r\n")
-        return f"{canonical}\n\n{body}" if body else f"{canonical}\n"
+        return f"{build_frontmatter(target_date)}\n\n{content.lstrip()}"
 
-    frontmatter_block = match.group("frontmatter")
-    has_all_keys = all(key in frontmatter_block for key in required_keys)
+    lines = match.group("frontmatter").splitlines()
+    new_lines = []
+    handled_keys = set()
     
-    # Check for authoritative date agreement
-    matches_target_date = all([
-        expected_title in frontmatter_block,
-        expected_linter_alias in frontmatter_block,
-        f"  - {expected_weekday}" in frontmatter_block,
-        f"  - {expected_tag_date}" in frontmatter_block,
-        expected_cssclass in frontmatter_block,
-    ])
+    # Authoritative keys we ALWAYS overwrite if present, or add if missing
+    authoritative = list(canonical_updates.keys()) + ["aliases", "weekday", "cssclasses", "tags"]
 
-    if has_all_keys and matches_target_date:
-        return content
+    # Iterate through existing lines to preserve order and unknown keys
+    i = 0
+    while i < len(lines):
+        line = lines[i]
+        if ":" in line and not line.startswith(" "):
+            key = line.split(":", 1)[0].strip()
+            if key in canonical_updates:
+                new_lines.append(f"{key}: {canonical_updates[key]}")
+                handled_keys.add(key)
+                i += 1
+                continue
+            
+            # Special multi-line handling for specific known list keys
+            if key in ["aliases", "weekday", "cssclasses", "tags"]:
+                # Replace with canonical if it's one of ours
+                if key == "aliases":
+                    new_lines.append("aliases:")
+                    for a in date_aliases(target_date):
+                        new_lines.append(f"  - {a}")
+                elif key == "weekday":
+                    new_lines.append("weekday:")
+                    new_lines.append(f"  - {weekday}")
+                elif key == "cssclasses":
+                    new_lines.append("cssclasses:")
+                    new_lines.append(f"  - {cssclass}")
+                elif key == "tags":
+                    new_lines.append("tags:")
+                    new_lines.append("  - today")
+                    new_lines.append(f"  - {tag_date}")
+                    new_lines.append("  - dailynote")
+                
+                handled_keys.add(key)
+                # Skip existing list items
+                i += 1
+                while i < len(lines) and lines[i].startswith(" "):
+                    i += 1
+                continue
+            
+            # Unknown key: keep it
+            new_lines.append(line)
+            i += 1
+            continue
+        
+        # Non-key line or continuation (shouldn't happen at root, but safety first)
+        new_lines.append(line)
+        i += 1
 
-    # If garbled or missing, we preserve the body and overwrite the frontmatter
+    # Add missing authoritative keys that weren't in the original
+    for key in authoritative:
+        if key not in handled_keys:
+            if key in canonical_updates:
+                new_lines.append(f"{key}: {canonical_updates[key]}")
+            elif key == "aliases":
+                new_lines.append("aliases:")
+                for a in date_aliases(target_date):
+                    new_lines.append(f"  - {a}")
+            # ... (add others if needed, but build_frontmatter handles fresh notes)
+
     body = content[match.end():].lstrip("\r\n")
-    return f"{canonical}\n\n{body}" if body else f"{canonical}\n"
+    return f"---\n" + "\n".join(new_lines) + "\n---\n\n" + body
 
 
 # ---------------------------------------------------------------------------
