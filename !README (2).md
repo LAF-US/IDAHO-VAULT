@@ -1,3 +1,8 @@
+---
+date created: Monday, April 6th 2026, 10:30:43 pm
+date modified: Tuesday, April 7th 2026, 11:06:10 am
+---
+
 This is Logan A. Finney's internal Obsidian.md vault. Agents must follow all frameworks.
 
 [[TOUCHSTONE]] [[FRAMEWORKS]]

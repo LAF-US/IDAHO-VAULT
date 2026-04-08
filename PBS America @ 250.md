@@ -3,7 +3,10 @@ aliases:
   - America at 250 | PBS
   - History & Biographies
   - Artifacts & Objects
+date created: Monday, April 6th 2026, 10:30:44 pm
+date modified: Tuesday, April 7th 2026, 11:05:35 am
 ---
+
 Join [[PBS]] in commemorating the country’s [[America 250|250th Anniversary]] with content exploring how [[the United States]] came together, showcasing its rich history, treasured artifacts, and performances and art that define America.
 
 ## History & Biographies

@@ -1,23 +1,26 @@
 ---
 source: https://www.qodo.ai/blog/the-next-generation-of-ai-code-review-from-isolated-to-system-intelligence/?utm_campaign=331946206-2026-02-Onboarding%20Emails&utm_source=email&utm_medium=email
 author:
-- Bar Fingerman
+  - Bar Fingerman
 published: 2026-01-21
 created: 2026-03-31
 related:
-- '2026-03-31'
-- API
-- GitHub
-- LLM
-- View
-- agent
-- coordination
-- index
-- self
-- warrants
-- window
+  - '2026-03-31'
+  - API
+  - GitHub
+  - LLM
+  - View
+  - agent
+  - coordination
+  - index
+  - self
+  - warrants
+  - window
 authority: LOGAN
+date created: Tuesday, March 31st 2026, 11:22:27 pm
+date modified: Tuesday, April 7th 2026, 2:53:48 pm
 ---
+
 [Skip to content](https://www.qodo.ai/blog/the-next-generation-of-ai-code-review-from-isolated-to-system-intelligence/?utm_campaign=331946206-2026-02-Onboarding%20Emails&utm_source=email&utm_medium=email#wp--skip-link--target)
 
 ![](https://www.qodo.ai/wp-content/uploads/2026/01/agenti-review-blog-cover-1024x687.png)

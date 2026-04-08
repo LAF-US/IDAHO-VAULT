@@ -4,7 +4,10 @@ author:
   - "[[News-Examiner Staff]]"
 published: 2026-04-04
 created: 2026-04-06
+date created: Monday, April 6th 2026, 10:30:43 pm
+date modified: Tuesday, April 7th 2026, 11:05:50 am
 ---
+
 This website uses certain cookies, pixels and similar tracking technologies in order enhance site navigation, analyze site usage, and assist in our marketing efforts. Certain information collected by that technology may be shared with our third party partners. By continuing to use this website, you agree to the use of these technologies.
 
 ![Deer crossing](https://bloximages.chicago2.vip.townnews.com/hjnews.com/content/tncms/assets/v3/editorial/1/c7/1c7357ab-d520-552e-9c8c-8a4886593b84/69d1d33875277.image.png)

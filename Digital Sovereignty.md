@@ -4,7 +4,8 @@ related:
   - CONSTITUTION
   - RESEARCH_Digital-Sovereignty-Factcheck-2026-04-06
 authority: LOGAN
-date created: Sunday, April 6th 2026
+date created: Monday, April 6th 2026, 10:30:43 pm
+date modified: Tuesday, April 7th 2026, 11:06:01 am
 ---
 
 # Digital Sovereignty
