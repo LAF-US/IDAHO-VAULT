@@ -23,9 +23,9 @@ jobs:
 
           # Determine which files to check
           if [ "${{ github.event_name }}" = "pull_request" ]; then
-            FILES=$(git diff --name-only "origin/${{ github.base_ref }}"...HEAD 2>/dev/null || git ls-tree -r HEAD --name-only)
+            FILES=$(git -c core.quotePath=false diff --name-only "origin/${{ github.base_ref }}"...HEAD 2>/dev/null || git -c core.quotePath=false ls-tree -r HEAD --name-only)
           else
-            FILES=$(git diff --name-only HEAD~1...HEAD 2>/dev/null || git ls-tree -r HEAD --name-only)
+            FILES=$(git -c core.quotePath=false diff --name-only HEAD~1...HEAD 2>/dev/null || git -c core.quotePath=false ls-tree -r HEAD --name-only)
           fi
 
           # --- Check 1: Windows reserved device names ---
@@ -50,7 +50,7 @@ jobs:
 
           # --- Check 2: Case-insensitive filename collisions ---
           # Get all tracked files, extract dir+basename, check for collisions
-          ALL_FILES=$(git ls-tree -r HEAD --name-only)
+          ALL_FILES=$(git -c core.quotePath=false ls-tree -r HEAD --name-only)
 
           # Build a list of dir/basename pairs, lowercased for comparison
           # Note: use -- to prevent filenames starting with - being parsed as options

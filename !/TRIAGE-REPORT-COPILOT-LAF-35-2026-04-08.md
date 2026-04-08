@@ -110,7 +110,7 @@ The abort is triggered when the action's internal git commit encounters files it
 
 ---
 
-### Failure 4 — Dependabot npm/yarn (No package.json)
+### Failure 4 — Dependabot npm/maven (Missing manifests)
 
 **Source:** `.github/dependabot.yml`
 **Last failure:** `run 24105630392`, 2026-04-07T21:36:17Z
@@ -118,20 +118,18 @@ The abort is triggered when the action's internal git commit encounters files it
 
 **Root Cause:**
 
-The `dependabot.yml` configures three package ecosystems with no manifests in this repo:
+The `dependabot.yml` configures two package ecosystems with no manifests in this repo root:
 
 ```yaml
 - package-ecosystem: "npm"      # No package.json exists
-  directory: "/"
-- package-ecosystem: "pip"      # No requirements.txt or pyproject.toml at root
   directory: "/"
 - package-ecosystem: "maven"    # No pom.xml exists
   directory: "/"
 ```
 
-This is an Obsidian markdown vault. The only valid ecosystem for Dependabot here is `github-actions`. The `pip` scripts in `.github/scripts/` use ad-hoc inline imports — there is no `requirements.txt` at the root that Dependabot can manage.
+This is an Obsidian markdown vault, but it does have a root `requirements.txt`, so `pip` is a valid ecosystem here. The invalid entries are `npm` and `maven`, which point at missing manifests and generate noisy failures without adding coverage.
 
-Dependabot logs: `ERROR: /package.json not found`.
+Dependabot logs include `ERROR: /package.json not found`. If `pip` begins failing later, that should be triaged separately against the actual root manifest rather than removed by assumption.
 
 ---
 
@@ -239,7 +237,7 @@ And in the case-collision check:
 
 ---
 
-### Fix 4 — Dependabot: Remove non-existent ecosystems
+### Fix 4 — Dependabot: Remove only invalid ecosystems
 
 **File:** `.github/dependabot.yml`
 
@@ -248,6 +246,14 @@ And in the case-collision check:
 ```yaml
 version: 2
 updates:
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    allow:
+      - dependency-type: "all"
+
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
@@ -257,7 +263,7 @@ updates:
       - dependency-type: "all"
 ```
 
-**Rationale:** Remove `npm`, `pip`, and `maven` entries. This vault has no `package.json`, no root `requirements.txt`/`pyproject.toml`, and no `pom.xml`. The Python scripts in `.github/scripts/` are not managed by a package manifest that Dependabot can track. The only real dependency surface is the GitHub Actions workflow files themselves.
+**Rationale:** Remove `npm` and `maven` entries only. This vault has no root `package.json` and no root `pom.xml`, but it does have a root `requirements.txt`, so the `pip` ecosystem is valid and should remain.
 
 ---
 
