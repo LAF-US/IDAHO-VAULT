@@ -65,7 +65,7 @@ jobs:
 
       - name: Create rollover pull request
         if: steps.changes.outputs.has_changes == 'true' && github.event.inputs.dry_run != 'true'
-        uses: peter-evans/create-pull-request@v7
+        uses: peter-evans/create-pull-request@v8
         with:
           branch: bot/daily-rollover-${{ steps.changes.outputs.target_date }}
           commit-message: "rollover: carry incomplete to-dos to ${{ steps.changes.outputs.target_date }}"
