@@ -47,13 +47,11 @@
 
 ---
 
-## CrewAI Crews
+## CrewAI Layer
 
-| Crew | Entrypoint | Status | Agents |
+| Surface | Path | Status | Notes |
 | --- | --- | --- | --- |
-| **JFAC Crew** | `.crewai/run_jfac.py` | Active (blocked on API credits) | Budget Scout, Legislative Tracker |
-| **Crawler Crew** | — | Planned | Cartographer, Linker, Archivist |
-| **Task-to-Code** | — | Stub | — |
+| **CrewAI Python Layer** | `.crewai/` | Scaffold only | The initial demo harbor was retired; CrewAI remains reserved as a Python-layer implementation surface |
 
 ---
 
