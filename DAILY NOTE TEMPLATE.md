@@ -1,25 +1,32 @@
----
-title: {{date:YYYY-MM-DD}}
+<%*
+const parsed = moment(tp.file.title, "YYYY-MM-DD", true);
+const d = parsed.isValid() ? parsed : moment();
+const weekday = d.format("dddd");
+const weekdayShort = d.format("ddd").toLowerCase();
+const stamp = `${weekday}, ${d.format("MMMM Do YYYY")}, 12:00:00 am`;
+tR += `---
+title: ${d.format("YYYY-MM-DD")}
 aliases:
-  - {{date:YYYY-MM-DD}}
-  - {{date:MMMM D, YYYY}}
-  - {{date:MMMM Do, YYYY}}
-  - {{date:D MMMM YYYY}}
-  - {{date:dddd, MMMM D, YYYY}}
-linter-yaml-title-alias: {{date:YYYY-MM-DD}}
-yesterday:
-tomorrow:
+  - ${d.format("YYYY-MM-DD")}
+  - ${d.format("MMMM D, YYYY")}
+  - ${d.format("MMMM Do, YYYY")}
+  - ${d.format("D MMMM YYYY")}
+  - ${d.format("dddd, MMMM D, YYYY")}
+linter-yaml-title-alias: ${d.format("YYYY-MM-DD")}
+yesterday: ${d.clone().subtract(1, "day").format("YYYY-MM-DD")}
+tomorrow: ${d.clone().add(1, "day").format("YYYY-MM-DD")}
 weekday:
-  - {{date:dddd}}
+  - ${weekday}
 cssclasses:
-  - roygbiv-{{date:ddd}}
+  - roygbiv-${weekdayShort}
 tags:
   - today
-  - {{date:YYYY/MM/DD}}
+  - ${d.format("YYYY/MM/DD")}
   - dailynote
-date created: Sunday, April 5th 2026, 1:03:13 pm
-date modified: Monday, April 6th 2026, 9:58:58 am
----
+date created: ${stamp}
+date modified: ${stamp}
+---`;
+%>
 
 [[TO DO LIST]]
 - WORK

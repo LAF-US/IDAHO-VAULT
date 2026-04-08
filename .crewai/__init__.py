@@ -1,1 +1,1 @@
-# CrewAI configuration for IDAHO-VAULT
+# CrewAI Python layer scaffold for IDAHO-VAULT

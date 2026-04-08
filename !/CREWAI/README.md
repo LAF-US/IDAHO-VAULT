@@ -6,13 +6,6 @@ doc_class: index
 
 # !/CREWAI/ — Output Staging
 
-All CrewAI crew output lands here for Logan's review before integration into the vault corpus.
+This directory is reserved for future CrewAI output and also preserves notes from the retired demo implementation.
 
-Files in this directory are **machine-generated** and **human-reviewed**. Nothing moves from here into the main vault without Logan's approval.
-
-## Crews
-
-| Crew | Purpose | Status |
-|------|---------|--------|
-| JFAC Crew | Budget/appropriations analysis pipeline | Active |
-| Crawler Crew | Post-CHAINFIRE vault mapping | Planned |
+There are currently **no active CrewAI runners** in the repo. Treat the contents here as historical artifacts or reserved staging space until the redesigned Python layer lands.

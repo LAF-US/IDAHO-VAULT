@@ -63,12 +63,11 @@ The canonical local bootstrap chain is `!/AGENTS.md` -> `swarm.json` -> `!/agent
 
 ---
 
-## CrewAI Crews (Quick Reference)
+## CrewAI Layer (Quick Reference)
 
-| Crew | Entrypoint | Status | Agents |
+| Surface | Path | Status | Notes |
 | --- | --- | --- | --- |
-| **JFAC Crew** | `.crewai/run_jfac.py` | Active (blocked on API credits) | Budget Scout, Legislative Tracker |
-| **Crawler Crew** | — | Planned | Cartographer, Linker, Archivist |
+| **CrewAI Python Layer** | `.crewai/` | Scaffold only | Demo crews were retired pending redesign; no active runners are registered |
 
 ---
 
