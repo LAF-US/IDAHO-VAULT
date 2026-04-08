@@ -4,7 +4,7 @@ volumes: II, III
 transcribed_by: Claude Code (from PXL_20250701 photos)
 note: Transcribed from photographed pages. Some text at page edges or in shadow is marked [?] where uncertain. Portraits described but not transcribed.
 date created: Monday, April 6th 2026, 2:32:44 pm
-date modified: Monday, April 6th 2026, 4:02:52 pm
+date modified: Tuesday, April 7th 2026, 11:05:47 am
 ---
 
 # History of Idaho — The Gem of the Mountains (1920)
