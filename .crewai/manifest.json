@@ -1,107 +1,11 @@
 {
-  "// note": "Machine-readable registry of all CrewAI crews in IDAHO-VAULT. See !/GRIMOIRE/NETWEB-CREWAI-ALIGNMENT.md for the protocol.",
-  "// principle": "LINUX }!{ — all execution targets Linux-native",
-  "// output": "!/CREWAI/ — staging directory for Logan's review",
-  "version": "0.1.0",
+  "// note": "Machine-readable scaffold for the CrewAI Python layer in IDAHO-VAULT.",
+  "// status": "The initial demo harbor was retired pending redesign.",
+  "version": "0.2.0",
   "crewai_version": "1.12.2",
   "vault": "github.com/loganfinney27/IDAHO-VAULT",
-  "crews": [
-    {
-      "id": "jfac-crew",
-      "name": "JFAC Crew",
-      "purpose": "Idaho Joint Finance-Appropriations Committee budget analysis",
-      "status": "active",
-      "entrypoint": ".crewai/run_jfac.py",
-      "definition": ".crewai/crews/jfac_crew.py",
-      "output_dir": "!/CREWAI/",
-      "process": "sequential",
-      "framework": "MAP 3:5 — 3 agents, 5 tasks, ATT to 5Ws",
-      "agents": [
-        {
-          "id": "budget-scout",
-          "role": "Budget Scout",
-          "5w": ["WHO", "WHAT"],
-          "tools": ["minidata_reader"],
-          "status": "active"
-        },
-        {
-          "id": "legislative-tracker",
-          "role": "Legislative Tracker",
-          "5w": ["WHEN", "WHERE"],
-          "tools": ["appropriations_timeline", "bill_status_checker"],
-          "status": "active"
-        },
-        {
-          "id": "h911-parser",
-          "role": "H911 Parser",
-          "5w": ["WHY"],
-          "tools": [],
-          "status": "stub-phase-2"
-        }
-      ],
-      "tools": [
-        {
-          "id": "minidata_reader",
-          "file": ".crewai/tools/minidata_tool.py",
-          "wraps": ".github/scripts/normalize_budget_data.py"
-        },
-        {
-          "id": "appropriations_timeline",
-          "file": ".crewai/tools/timeline_tool.py",
-          "wraps": ".github/scripts/minidata_appropriations_timeline.py"
-        },
-        {
-          "id": "bill_status_checker",
-          "file": ".crewai/tools/scraper_tool.py",
-          "wraps": ".github/scripts/idaho_leg_scraper.py"
-        },
-        {
-          "id": "address_space_writer",
-          "file": ".crewai/tools/address_tool.py",
-          "wraps": null
-        }
-      ]
-    },
-    {
-      "id": "crawler-crew",
-      "name": "Crawler Crew",
-      "purpose": "Post-CHAINFIRE vault mapping and connection discovery",
-      "status": "planned",
-      "entrypoint": null,
-      "definition": null,
-      "output_dir": "!/CREWAI/",
-      "agents": [
-        {
-          "id": "cartographer",
-          "role": "Cartographer",
-          "candidate_persona": "Bartimaeus",
-          "status": "planned"
-        },
-        {
-          "id": "linker",
-          "role": "Linker",
-          "status": "planned"
-        },
-        {
-          "id": "archivist",
-          "role": "Archivist",
-          "status": "planned"
-        }
-      ]
-    }
-  ],
-  "address_space": {
-    "numbers": {
-      "range": "0-999",
-      "purpose": "Crew state memory (neurons)",
-      "initialized": [100, 101, 102, 103, 104, 105, 106, 107, 108, 109],
-      "poc_run": "POC-20260404-214321"
-    },
-    "letters": {
-      "range": "A-ZZZ",
-      "purpose": "Entity nodes (discovered by Crawler Crew)",
-      "initialized": ["Idaho", "Budget", "Governor", "General Fund", "Medicaid", "Transportation", "Public Schools", "$"]
-    },
-    "voyager_records": ["7929.gif", "7930.gif"]
-  }
+  "status": "scaffold",
+  "output_dir": "!/CREWAI/",
+  "active_runners": [],
+  "crews": []
 }

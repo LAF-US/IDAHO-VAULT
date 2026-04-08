@@ -1,1 +1,1 @@
-# CrewAI crew definitions for IDAHO-VAULT
+# Crew definitions will live here when the redesigned CrewAI layer is implemented

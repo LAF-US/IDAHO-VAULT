@@ -7,7 +7,7 @@ doc_class: handoff
 
 # CrewAI Operations Handoff
 
-How to run, inspect, and extend the CrewAI harbor in IDAHO-VAULT.
+Historical note for the retired demo harbor. Do not use this file as the current runbook for the redesigned CrewAI Python layer.
 
 ---
 
@@ -24,11 +24,11 @@ How to run, inspect, and extend the CrewAI harbor in IDAHO-VAULT.
    ```bash
    pip install -r requirements.txt
    ```
-   Key packages: `crewai[tools,anthropic]>=1.12.0`, `python-dotenv>=1.0.0`
+   Key packages: `crewai[tools,anthropic]>=1.12.0`, `python-dotenv>=1.0.0`, `op` (1Password CLI)
 
-3. **API key in `.env`** (gitignored — never committed):
+3. **API key via `op run`** (local-only — never committed):
    ```
-   ANTHROPIC_API_KEY=sk-ant-...
+   ANTHROPIC_API_KEY=op://YOUR_VAULT/YOUR_ITEM/YOUR_FIELD
    ```
    Fetch from [console.anthropic.com/settings/keys](https://console.anthropic.com/settings/keys).
    Account must have API credits loaded at [console.anthropic.com/settings/plans](https://console.anthropic.com/settings/plans).
@@ -41,11 +41,11 @@ How to run, inspect, and extend the CrewAI harbor in IDAHO-VAULT.
 
 ```bash
 # From vault root
-python .crewai/run_jfac.py
+scripts/op-run-jfac.ps1
 ```
 
 **What happens:**
-1. Loads `.env` for API key
+1. Loads API key from the environment, ideally provisioned by `op run`
 2. Instantiates 3 agents (Budget Scout, Legislative Tracker, H911 Parser)
 3. Runs 5 sequential tasks (WHO, WHAT, WHEN, WHERE, WHY)
 4. Writes output to `!/CREWAI/jfac-analysis-{run_id}.md`
@@ -85,7 +85,7 @@ crew_run_id: "{run_id}"
 | Crew output (analysis files) | **Yes** — committed to vault | `!/CREWAI/` |
 | Runtime cache | No — gitignored | `.crewai_cache/` |
 | Execution logs | No — gitignored | `.crewai/logs/` |
-| API key | No — gitignored | `.env` |
+| API key | No — local-only | `_private/idaho-vault.env.tpl` + `op run` |
 
 ---
 
@@ -101,7 +101,7 @@ crew_run_id: "{run_id}"
    - Wrap existing vault scripts where possible
 
 3. **Create a runner** at `.crewai/run_{name}.py`
-   - Load `.env` with `override=True`
+   - Prefer environment variables already injected by `op run`
    - Configure LLM
    - Write output to `!/CREWAI/` with vault frontmatter
 
@@ -115,7 +115,7 @@ crew_run_id: "{run_id}"
 ## Known Constraints
 
 - **Windows encoding:** CrewAI's event bus emits emoji characters that Windows `charmap` can't encode. Set `PYTHONIOENCODING=utf-8` when running on Windows, or run on Linux/WSL.
-- **dotenv override:** The `.env` loader must use `override=True` because system environment may have empty placeholder vars that shadow the `.env` values.
+- **Runtime secret source:** `op run` is the preferred path. `.crewai/run_jfac.py` only falls back to local env files when no model key is already present in the environment.
 - **API billing:** The Anthropic API key must have credits loaded. CrewAI will fail with a 400 error if the balance is zero.
 - **JFAC hard gate:** JFAC quotes require audio verification by Logan before publication. CrewAI output is analysis, not publication — but the gate applies to any content derived from it.
 
@@ -137,7 +137,7 @@ crew_run_id: "{run_id}"
 
 .crewai_cache/              ← Runtime cache (gitignored)
 .crewai/logs/               ← Execution logs (gitignored)
-.env                        ← API keys (gitignored)
+_private/idaho-vault.env.tpl ← 1Password secret refs (gitignored)
 ```
 
 ---
