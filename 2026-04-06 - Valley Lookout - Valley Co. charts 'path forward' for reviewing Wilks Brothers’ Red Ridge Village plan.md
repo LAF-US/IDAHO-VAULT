@@ -4,7 +4,10 @@ author:
   - "[[Drew Dodson - Valley Lookout Editor]]"
 published: 2026-04-06
 created: 2026-04-07
+date created: Tuesday, April 7th 2026, 2:51:15 pm
+date modified: Tuesday, April 7th 2026, 11:08:39 pm
 ---
+
 ## Valley Co. charts ‘path forward’ for reviewing Wilks Brothers’ Red Ridge Village plan
 
 ![](https://valleylookout.com/wp-content/uploads/sites/2/2026/01/valleylookout.com-wilks-brothers-submit-new-plans-for-700-homes-near-mccall-screenshot-2026-01-13-at-12.50.18-pm.jpeg)

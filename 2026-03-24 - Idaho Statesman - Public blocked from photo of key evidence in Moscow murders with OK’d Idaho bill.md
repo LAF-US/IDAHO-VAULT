@@ -4,7 +4,10 @@ author:
   - "[[Kevin Fixler]]"
 published: 2026-03-24
 created: 2026-04-07
+date created: Tuesday, April 7th 2026, 2:49:18 pm
+date modified: Tuesday, April 7th 2026, 11:08:40 pm
 ---
+
 <video aria-label="Connatix video player" role="application" title="" src="blob:https://www.idahostatesman.com/e83168fa-4a34-4407-9285-0707badf3ca8" controls=""></video>
 
 Alivea Goncalves, older sister of Moscow murder victim Kaylee Goncalves, testifies virtually at a legislative hearing on a bill to restrict public access to photos of deceased individuals on Feb. 11, 2026.

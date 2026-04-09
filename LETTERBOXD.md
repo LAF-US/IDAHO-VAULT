@@ -1,6 +1,6 @@
 ---
 date created: Monday, April 6th 2026, 9:10:21 pm
-date modified: Monday, April 6th 2026, 10:09:15 pm
+date modified: Tuesday, April 7th 2026, 11:07:57 pm
 ---
 
 - Watched  [Smile](https://letterboxd.com/loganfinney/film/smile-2022/) (★★½) on [[2026-04-05]] 

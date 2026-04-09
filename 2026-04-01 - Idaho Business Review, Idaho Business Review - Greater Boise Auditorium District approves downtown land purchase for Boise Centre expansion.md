@@ -4,7 +4,10 @@ author:
   - "[[IBR Staff]]"
 published: 2026-04-01
 created: 2026-04-07
+date created: Tuesday, April 7th 2026, 2:45:25 pm
+date modified: Tuesday, April 7th 2026, 11:08:32 pm
 ---
+
 Listen to this article
 
 BOISE ― The Greater Auditorium District has approved a for a that could eventually anchor a major expansion of the.
