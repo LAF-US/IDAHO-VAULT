@@ -55,9 +55,10 @@ jobs:
           [ -z "$TARGET_DATE" ] && TARGET_DATE="$(TZ=America/Boise date +%Y-%m-%d)"
           echo "target_date=${TARGET_DATE}" >> "$GITHUB_OUTPUT"
 
-          mapfile -t CHANGED < <(git status --porcelain=v1 | awk '{print substr($0,4)}')
+          mapfile -d '' -t STATUS_ENTRIES < <(git -c core.quotepath=false status --porcelain=v1 -z)
           UNEXPECTED=()
-          for path in "${CHANGED[@]}"; do
+          for entry in "${STATUS_ENTRIES[@]}"; do
+            path="${entry:3}"
             case "$path" in
               "${TARGET_DATE}.md"|"TO DO LIST.md")
                 ;;
