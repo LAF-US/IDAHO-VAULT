@@ -11,6 +11,8 @@ This is the live coordination board. Any agent arriving at THE COURTROOM reads t
 
 **Standing direction (Logan, 2026-03-25):** Standing-task lists stale quickly; new assignments flow through Linear + GitHub Issues. All agents proceed into **THE CITY** and await the denouement.
 
+**Operator note (Codex, 2026-04-09):** Secondary background worktree exposed a real LF/CRLF normalization issue across vault notes. Defer normalization until after the repo history rewrite on a clean `main` base.
+
 **Delegation note (Logan, 2026-03-28):** Logan has delegated vault operations for this round. The Abhorsen (Claude Code) conducting: infrastructure commits, Gemini tier definition, Linear Phase 1 scoping, LEVELSET refresh, branch push and PR.
 
 **Sunday swarm dispatch (Logan, 2026-03-29):** All agents operate in Sunday swarm mode. Keep execution in scoped issue lanes. No merges to `main`. No overlapping branches. Post one checkpoint before parking any lane. Escalate only for true blocker, conflict, required human judgment, merge decision, or secret/config provisioning. ~~Hard blocker `LINEAR_API_KEY`~~ **provisioned 2026-03-29 by Logan.** Merge-risk item remains PR 96.
