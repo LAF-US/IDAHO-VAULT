@@ -33,6 +33,13 @@ jobs:
         with:
           fetch-depth: 1
 
+      - name: Normalize checkout line endings
+        run: |
+          git config --local core.autocrlf false
+          git config --local core.eol lf
+          git config --local core.safecrlf false
+          git reset --hard HEAD
+
       - name: Set up Python
         uses: actions/setup-python@v6
         with:
