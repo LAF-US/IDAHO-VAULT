@@ -69,14 +69,15 @@ jobs:
           UNEXPECTED+=("${UNTRACKED[@]}")
 
           if [ ${#UNEXPECTED[@]} -gt 0 ]; then
-            echo "Unexpected worktree churn detected outside the rollover file set." >&2
+            echo "Unexpected worktree churn detected outside the rollover file set; staging will remain limited to the approved files." >&2
             {
-              echo "### Daily rollover aborted"
+              echo "### Daily rollover warning"
               echo
               echo "Unexpected worktree changes were detected outside the allowed file set:"
               printf -- '- %s\n' "${UNEXPECTED[@]}"
+              echo
+              echo "Only \`${TARGET_DATE}.md\` and \`TO DO LIST.md\` will be staged for the PR."
             } >> "$GITHUB_STEP_SUMMARY"
-            exit 1
           fi
 
           git add "${TARGET_DATE}.md" "TO DO LIST.md" 2>/dev/null || true
