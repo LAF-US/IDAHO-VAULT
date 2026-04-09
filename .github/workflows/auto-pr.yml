@@ -27,6 +27,17 @@ jobs:
       - name: Get changed files and classify
         id: classify
         run: |
+          if ! git merge-base origin/main HEAD >/dev/null 2>&1; then
+            echo "No merge base with origin/main; skipping auto-PR for history-rewrite branch."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            {
+              echo "### Auto PR skipped"
+              echo
+              echo "Branch has no merge base with \`origin/main\`; treating this as a history-rewrite branch."
+            } >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+
           CHANGED=$(git diff --name-only origin/main...HEAD)
           if [ -z "$CHANGED" ]; then
             echo "No changes vs main"

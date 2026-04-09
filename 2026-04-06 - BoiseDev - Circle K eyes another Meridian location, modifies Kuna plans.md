@@ -43,7 +43,7 @@ Meanwhile, in Valley County, the Donnelly City Council approved plans in Novembe
 
 Senior Edge Legal 2026 - 2:1
 
-<iframe width="100%" height="100%" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBAM2o7PiQqwk15LC1XRH2e_KJ-jUa7KYk&amp;zoom=15&amp;maptype=roadmap&amp;q=1515+W+Ustick+Rd%2C+Meridian%2C+ID" title="Google map of 1515 W Ustick Rd, Meridian, ID"></iframe>
+[Map: 1515 W Ustick Rd, Meridian, ID](https://www.google.com/maps/search/?api=1&query=1515+W+Ustick+Rd%2C+Meridian%2C+ID)
 
 ### Latest Stories
 
