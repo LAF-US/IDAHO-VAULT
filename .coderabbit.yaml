@@ -4,5 +4,10 @@
 reviews:
   auto_review:
     enabled: true
-  # Vault governance note: PRs touching !/ require Logan's approval
-  # All committed content is on the record (public repo)
+    # drafts: false — skip draft PRs; only review ready-for-review PRs
+    drafts: false
+    # Review PRs from all authors, including bots (e.g. github-actions[bot])
+    # Vault governance note: PRs touching !/ require Logan's approval
+    # All committed content is on the record (public repo)
+  base_branches:
+    - main
