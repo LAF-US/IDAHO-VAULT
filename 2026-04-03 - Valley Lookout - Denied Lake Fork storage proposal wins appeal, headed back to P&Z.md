@@ -73,7 +73,7 @@ She also suggested that the county should consider changes to its land use compa
 
 In January, the City of McCall adopted a ban on commercial storage facilities in city limits. The ban followed a string of [storage unit applications](https://valleylookout.com/2025/02/10/mccall-revisits-storage-complex-proposal-after-another-valley-co-reversal/) for areas near the city in recent years, many of which [drew significant public opposition](https://valleylookout.com/2026/03/11/people-wont-even-know-its-there-valley-co-oks-stor-it-expansion-near-mccall/) over concerns related to traffic, noise, and aesthetics.
 
-[Map: 14014 Idaho 55, Lake Fork, ID](https://www.google.com/maps/search/?api=1&query=14014+Idaho+55)
+[Map: 14014 Idaho 55, Lake Fork, ID](https://www.google.com/maps/search/?api=1&query=14014+Idaho+55%2C+Lake+Fork%2C+ID)
 
 ### Latest Stories
 
