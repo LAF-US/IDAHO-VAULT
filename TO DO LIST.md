@@ -15,7 +15,12 @@ authority: LOGAN
 
 ## Active
 
+- [ ] [[YESTERDAY]]
+- VAULT
 - [ ] FIX DAILY NOTE SYNCING/CARRYFORWARD
 	- [ ] Tasks completed on a DAY were not checked off here.
 	- [ ] Tasks uncomplete on a DAY were not added to here.
-
+- WORK
+- [x] A250 REVISON WRITING
+- PERSONAL
+- [x] RESET Obsidian Sync Vault
