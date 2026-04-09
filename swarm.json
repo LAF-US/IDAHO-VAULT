@@ -333,11 +333,14 @@
     ]
   },
   "crews": {
-    "// note": "CrewAI remains a reserved Python-layer surface. The initial demo harbor was retired pending redesign.",
+    "// note": "CrewAI is an active layer under re-foundation. swarm.json registers the layer but does not carry CrewAI crew, task, or runner topology.",
     "manifest": ".crewai/manifest.json",
+    "manifest_doc": ".crewai/MANIFEST.md",
     "crewai_version": "1.12.2",
-    "status": "scaffold",
+    "status": "refoundation",
     "output_dir": "!/CREWAI/",
+    "runtime_class": "linux-native disposable runtime slice",
+    "authority_boundary": "Cross-agent control-plane facts only; live CrewAI topology and promotion rules live in .crewai/MANIFEST.md.",
     "principle": "LINUX }!{ — all execution targets Linux-native",
     "roster": []
   },

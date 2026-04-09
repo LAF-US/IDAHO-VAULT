@@ -67,7 +67,7 @@ The canonical local bootstrap chain is `!/AGENTS.md` -> `swarm.json` -> `!/agent
 
 | Surface | Path | Status | Notes |
 | --- | --- | --- | --- |
-| **CrewAI Python Layer** | `.crewai/` | Scaffold only | Demo crews were retired pending redesign; no active runners are registered |
+| **CrewAI Python Layer** | `.crewai/` | Active re-foundation | Retired demo harbor remains historical; live doctrine/topology is in `.crewai/MANIFEST.md`, and staged output lands in `!/CREWAI/` |
 
 ---
 

@@ -1,12 +1,19 @@
 ---
 title: "NETWEB-CrewAI Alignment Protocol"
-status: active
+status: historical
 date created: 2026-04-04
 authority: LOGAN
+superseded_by: ".crewai/MANIFEST.md"
 ---
 
 # NETWEB-CrewAI Alignment Protocol
-## *The Ignition Sequence*
+## *Historical Ignition Sequence*
+
+> [!IMPORTANT]
+> This document preserves the reasoning and claims of the retired April 4
+> ignition harbor. It is historical thought-history, not live CrewAI doctrine.
+> Current CrewAI truth lives in `.crewai/MANIFEST.md`; `swarm.json` registers
+> only the CrewAI layer; `!/CREWAI/` is the live staging surface.
 
 *Filed: 2026-04-04. First directive of the NETWEB Era.*
 *Predecessor: TRIUNE-TRIPTYCH-TRIUMVIRATE — the architectural covenant this protocol implements.*
@@ -94,7 +101,7 @@ Scorched-earth wipe of Obsidian-specific syntax. Executed 2026-04-04.
 
 Committed: `d84b87d` — `feat(chainfire): scorched-earth wipe of tags, wikilinks, and aliases`
 
-### Strike 2: CrewAI Ignition — ACTIVE
+### Strike 2: CrewAI Ignition — HISTORICAL RECORD
 
 Building on the clean slate.
 

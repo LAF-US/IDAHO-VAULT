@@ -51,7 +51,7 @@
 
 | Surface | Path | Status | Notes |
 | --- | --- | --- | --- |
-| **CrewAI Python Layer** | `.crewai/` | Scaffold only | The initial demo harbor was retired; CrewAI remains reserved as a Python-layer implementation surface |
+| **CrewAI Python Layer** | `.crewai/` | Active re-foundation | The initial demo harbor is retired; live doctrine/topology now lives in `.crewai/MANIFEST.md`, and staged output lands in `!/CREWAI/` |
 
 ---
 
