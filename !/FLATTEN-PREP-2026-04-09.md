@@ -108,6 +108,7 @@ These are currently in scope for doctrinal absorption after rewrite cutover:
 Current first-pass inventory:
 
 - total in-scope files: `1,970`
+- distinct basenames that would collide with existing root filenames: `213`
 - direct collisions with existing root filenames: `298`
 - duplicate basenames across in-scope folders: `210`
 - total duplicate-file instances inside those duplicate groups: `437`
@@ -153,6 +154,11 @@ Current `INBOX/` file count:
 
 - `15`
 
+Additional readiness note:
+
+- `INBOX/` behaves like intake/transit, not canonical corpus
+- its contents should be triaged or promoted before flatten, not mixed directly into the root corpus
+
 Observed current `INBOX/PHONE-LINK/` contents include:
 
 - screenshots
@@ -165,6 +171,11 @@ This further supports treating `INBOX/` as intake, not corpus.
 ## Collision Shape
 
 Most collision pressure is concentrated in `SCRATCH FOLDER`.
+
+Operational implication:
+
+- `SCRATCH FOLDER` should not be treated as a one-pass root absorption candidate
+- it is the largest entropy source and the largest collision source in the current in-scope set
 
 Examples of duplicate basenames across in-scope folders:
 
