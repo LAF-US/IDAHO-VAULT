@@ -180,7 +180,7 @@ Concurrent multi-agent operation on the same branch. Binding lane boundaries:
 | Agent | Role | Owns |
 |-------|------|------|
 | **Claude** (Abhorsen) | Executor | `.obsidian/`, `.gitignore`, `PRIVACY.md`, CSS/snippets, git commits |
-| **Gemini** (Antigravity) | Interpreter | `!/GRIMOIRE/`, `DOCKET`, `LEVELSET-REPORT`, `CAESARS` docs |
+| **Gemini** (The Vault Advisor; historical alias: Antigravity) | Interpreter | `!/GRIMOIRE/`, `DOCKET`, `LEVELSET-REPORT`, `CAESARS` docs |
 | **Codex** (Janitor) | Mechanic | Small conflict cleanup, typo repair, script validation **when assigned** |
 | **Serena** (Architect) | Instrument | Read-only semantic intelligence — owns nothing, decides nothing |
 
@@ -260,7 +260,7 @@ Added to all 5 agent instruction files. Proven this session: `roygbiv-day-accent
 | Agent | Role | Status |
 |---|---|---|
 | **Claude Code (The Abhorsen)** | Executor — terminal, repo, commits, `.obsidian/` | Active — `main` at `53a1ab1` |
-| **Gemini (The Antigravity / Concierge)** | Interpreter — GRIMOIRE, DOCKET, CAESARS, narrative | Active — committed `cd1ed3c` |
+| **Gemini (The Vault Advisor; historical aliases: Antigravity / Concierge)** | Interpreter — GRIMOIRE, DOCKET, CAESARS, narrative | Active — committed `cd1ed3c` |
 | **Codex (The Janitor)** | Mechanic — cleanup, typo repair, validation when assigned | Active — accepted TRIPLEX binding |
 | **Serena (The Architect)** | Read-only semantic intelligence (Python MCP server) | Running — background process |
 | **Claude for Excel** | Budget workbook analysis (inside `!_2026_BUDGETS.xlsx`) | Active — local-only, gitignored |
@@ -274,7 +274,7 @@ Added to all 5 agent instruction files. Proven this session: `roygbiv-day-accent
 | Surface | Agent(s) | Access |
 |---------|----------|--------|
 | Terminal 1 | Claude Code CLI | Full filesystem + git |
-| Terminal 2 | Gemini CLI (Antigravity) | Full filesystem |
+| Terminal 2 | Gemini CLI (The Vault Advisor; historical alias: Antigravity) | Full filesystem |
 | Terminal 3 | Codex App | Full filesystem (restricted by TRIPLEX) |
 | Background | Serena (Python MCP) | Read-only semantic |
 | Excel | Claude for Excel | Budget workbooks only (gitignored) |
