@@ -77,6 +77,7 @@ jobs:
         run: |
           gh label create "auto-merge" --color "0E8A16" --description "Low-risk, eligible for auto-merge" --force 2>/dev/null || true
           gh label create "review-required" --color "D93F0B" --description "High-risk, requires Logan's review" --force 2>/dev/null || true
+          gh label create "agent-review-pending" --color "BFD4F2" --description "Waiting for agent review grace period before auto-merge" --force 2>/dev/null || true
 
       - name: Create PR
         if: steps.classify.outputs.skip != 'true' && steps.check-pr.outputs.pr_exists != 'true'
@@ -94,7 +95,7 @@ jobs:
           DIFFSTAT=$(git diff --stat origin/main...HEAD)
 
           if [ "$TIER" = "low" ]; then
-            LABEL="auto-merge"
+            LABEL="agent-review-pending"
           else
             LABEL="review-required"
           fi
@@ -136,28 +137,8 @@ jobs:
           gh pr comment "$PR_NUM" --body "@Qodo /review"
           gh pr comment "$PR_NUM" --body "@gemini-code-assist review"
 
-      - name: Enable auto-merge if low risk
-        if: steps.classify.outputs.skip != 'true' && steps.classify.outputs.tier == 'low'
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Log grace period start
+        if: steps.classify.outputs.skip != 'true' && steps.classify.outputs.tier == 'low' && steps.check-pr.outputs.pr_exists != 'true'
         run: |
-          BRANCH="${GITHUB_REF_NAME}"
-
-          # Re-classify as defense in depth
-          CHANGED=$(git diff --name-only origin/main...HEAD)
-          TIER=$(echo "$CHANGED" | python3 .github/scripts/classify_paths.py | python3 -c "import sys,json; print(json.load(sys.stdin)['tier'])")
-
-          if [ "$TIER" != "low" ]; then
-            echo "Reclassified as high-risk on re-check. Skipping auto-merge."
-            exit 0
-          fi
-
-          # Find the PR number
-          PR_NUM=$(gh pr list --head "$BRANCH" --state open --json number --jq '.[0].number // empty' 2>/dev/null || true)
-          if [ -z "$PR_NUM" ]; then
-            echo "No open PR found to merge"
-            exit 0
-          fi
-
-          echo "Enabling auto-merge for PR #$PR_NUM (low risk)"
-          gh pr merge "$PR_NUM" --squash --delete-branch --auto
+          echo "Low-risk PR created with agent-review-pending label." >> "$GITHUB_STEP_SUMMARY"
+          echo "Auto-merge is gated: the agent-review-gate workflow will promote to auto-merge after a **30-minute** review grace period, giving agent reviewers time to post feedback." >> "$GITHUB_STEP_SUMMARY"
