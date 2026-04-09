@@ -30,8 +30,14 @@ def simplify_status(raw_status: str) -> str:
     """Strip branch (H/S), dates (MM/DD), and vote tallies (A-B-C) from status."""
     if not raw_status:
         return ""
-    # Remove branch indicator: (H) or (S)
-    s = re.sub(r"^\([HS]\)\s*", "", raw_status.strip(), flags=re.IGNORECASE)
+    
+    # Map special tokens
+    s = raw_status.strip().upper()
+    if s == "LAW+":
+        return "PASSED"
+        
+    # Remove branch indicators: (H), (S), H , S at start
+    s = re.sub(r"^(\([HS]\)|[HS])\s+", "", s, flags=re.IGNORECASE)
     # Remove date fragments: MM/DD or M/D
     s = re.sub(r"\b\d{1,2}/\d{1,2}\b", "", s)
     # Remove vote counts: A-B-C or [A-B-C]
@@ -152,6 +158,9 @@ def main() -> int:
     workbook = load_workbook(workbook_path)
     sheet = workbook[workbook.sheetnames[0]]
     snapshot_date = normalize_snapshot_date(args.snapshot_date)
+    
+    # Update Column E header for reporting
+    sheet["E1"] = "Status (Simplified)"
 
     changes: list[tuple[int, str, str, str, str, str]] = []
     for row_number in range(2, sheet.max_row + 1):

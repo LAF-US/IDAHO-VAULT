@@ -20,6 +20,14 @@
       "hugging_face": "research_sidecar_read_only"
     }
   },
+  "crewai_layer": {
+    "status": "refoundation",
+    "manifest": ".crewai/manifest.json",
+    "manifest_doc": ".crewai/MANIFEST.md",
+    "output_dir": "!/CREWAI/",
+    "runtime_class": "linux-native disposable runtime slice",
+    "authority_boundary": "Cross-agent control-plane facts only; live CrewAI topology and promotion rules live in .crewai/MANIFEST.md."
+  },
   "agents": {
     "claude": {
       "id": "claude-code",
