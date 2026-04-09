@@ -108,6 +108,24 @@ jobs:
           echo "pr_url=$PR_URL" >> "$GITHUB_OUTPUT"
           echo "Created PR: $PR_URL"
 
+      - name: Trigger agent reviews
+        if: steps.classify.outputs.skip != 'true' && steps.check-pr.outputs.pr_exists != 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          BRANCH="${GITHUB_REF_NAME}"
+          PR_NUM=$(gh pr list --head "$BRANCH" --state open --json number --jq '.[0].number // empty' 2>/dev/null || true)
+          if [ -z "$PR_NUM" ] || ! [[ "$PR_NUM" =~ ^[0-9]+$ ]]; then
+            echo "No open PR found to trigger reviews on"
+            exit 0
+          fi
+
+          # Post explicit review triggers so bots fire even on bot-authored PRs.
+          # Each tool is a separate comment so independent apps see their own trigger.
+          gh pr comment "$PR_NUM" --body "@coderabbitai review"
+          gh pr comment "$PR_NUM" --body "@Qodo /review"
+          gh pr comment "$PR_NUM" --body "@gemini-code-assist review"
+
       - name: Enable auto-merge if low risk
         if: steps.classify.outputs.skip != 'true' && steps.classify.outputs.tier == 'low'
         env:

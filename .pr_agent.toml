@@ -9,6 +9,8 @@ pr_commands = [
 ]
 
 [pr_reviewer]
+# Review PRs authored by bots (e.g. github-actions[bot] from auto-pr workflow)
+ignore_pr_author_bot = false
 # Vault-specific review guidance:
 # - All committed content is ON THE RECORD (public repo)
 # - Governance files in !/ require Logan's explicit approval before merge
