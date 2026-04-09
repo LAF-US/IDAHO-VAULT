@@ -55,21 +55,18 @@ jobs:
           [ -z "$TARGET_DATE" ] && TARGET_DATE="$(TZ=America/Boise date +%Y-%m-%d)"
           echo "target_date=${TARGET_DATE}" >> "$GITHUB_OUTPUT"
 
-          mapfile -d '' -t STATUS_ENTRIES < <(git -c core.quotepath=false status --porcelain=v1 -z)
           UNEXPECTED=()
-          for entry in "${STATUS_ENTRIES[@]}"; do
-            path="${entry:3}"
-            path="${path//$'\r'/}"
-            path="${path//$'\n'/}"
-            [ -z "$path" ] && continue
-            case "$path" in
-              "${TARGET_DATE}.md"|"TO DO LIST.md")
-                ;;
-              *)
-                UNEXPECTED+=("$path")
-                ;;
-            esac
-          done
+          mapfile -d '' -t UNEXPECTED < <(
+            git diff --name-only -z -- . \
+              ":(exclude)${TARGET_DATE}.md" \
+              ":(exclude)TO DO LIST.md"
+          )
+          mapfile -d '' -t UNTRACKED < <(
+            git ls-files --others --exclude-standard -z -- . \
+              ":(exclude)${TARGET_DATE}.md" \
+              ":(exclude)TO DO LIST.md"
+          )
+          UNEXPECTED+=("${UNTRACKED[@]}")
 
           if [ ${#UNEXPECTED[@]} -gt 0 ]; then
             echo "Unexpected worktree churn detected outside the rollover file set." >&2
