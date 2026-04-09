@@ -35,6 +35,7 @@ def load_json(path: Path) -> dict:
 
 def build_bootstrap_index(swarm: dict) -> dict:
     control_plane = swarm["control_plane"]
+    crews = swarm.get("crews", {})
     agents: dict[str, dict] = {}
 
     for agent in swarm.get("agents", []):
@@ -89,6 +90,14 @@ def build_bootstrap_index(swarm: dict) -> dict:
             "coordination_hub_issue": control_plane["coordination_hub_issue"],
             "scoped_issue": control_plane["scoped_issue"],
             "system_roles": control_plane["system_roles"],
+        },
+        "crewai_layer": {
+            "status": crews.get("status"),
+            "manifest": crews.get("manifest"),
+            "manifest_doc": crews.get("manifest_doc"),
+            "output_dir": crews.get("output_dir"),
+            "runtime_class": crews.get("runtime_class"),
+            "authority_boundary": crews.get("authority_boundary"),
         },
         "agents": dict(sorted(agents.items())),
     }

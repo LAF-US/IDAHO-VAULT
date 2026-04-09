@@ -8,7 +8,7 @@ set -e
 # Configuration
 SOURCE_DIR="!"
 DEST_BUCKET="gs://the-ledger-bucket/ledger"
-INITIATING_AGENT="agent:antigravity"
+INITIATING_AGENT="agent:gemini"
 CORRELATION_ID="LAF-18-$(date +%Y%m%d%H%M%S)"
 RELATED_REF="!/__!__/!/! The world is quiet here/DOCKET.md"
 
