@@ -9,9 +9,9 @@ permissions:
   contents: write
 
 jobs:
-  acknowledge-review:
+  acknowledge-changes-requested:
     if: >
-      (github.event.review.state == 'changes_requested' || github.event.review.state == 'commented') &&
+      github.event.review.state == 'changes_requested' &&
       github.event.pull_request.user.login != github.event.review.user.login
     runs-on: ubuntu-latest
     steps:
@@ -36,3 +36,24 @@ jobs:
           gh pr edit "$PR_NUMBER" --add-label "review-required" 2>/dev/null || true
 
           gh pr comment "$PR_NUMBER" --body "Acknowledged review by @$REVIEWER (${REVIEW_STATE}). Auto-merge paused until recommended changes are addressed. [Review link]($REVIEW_URL)"
+
+  acknowledge-commentary:
+    if: >
+      github.event.review.state == 'commented' &&
+      github.event.pull_request.user.login != github.event.review.user.login
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Acknowledge advisory review without pausing auto-merge
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REVIEWER: ${{ github.event.review.user.login }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          REVIEW_ID: ${{ github.event.review.id }}
+          REVIEW_STATE: ${{ github.event.review.state }}
+        run: |
+          REVIEW_URL="${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/pull/${PR_NUMBER}#pullrequestreview-${REVIEW_ID}"
+
+          gh pr comment "$PR_NUMBER" --body "Acknowledged advisory review by @$REVIEWER (${REVIEW_STATE}). Auto-merge remains eligible unless a blocking review or Logan-directed change says otherwise. [Review link]($REVIEW_URL)"
