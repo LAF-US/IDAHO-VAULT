@@ -269,7 +269,7 @@ Concrete Markdown files named by tracked Obsidian client config as templates mus
 
 - `manifest.json` for execution/interface inventory
 
-- `swarm.json` for the broader swarm registry
+- `swarm.json` for the broader swarm and connector registry
 
 
 
@@ -458,6 +458,14 @@ Use `Full Name` for all internal links Ã¢â‚¬â€ people, places, organi
 - **Linear** is execution-state support for ownership, status, and planning.
 
 - **Chat/Slack** is transient coordination; durable decisions or context must be promoted into the vault and/or execution systems.
+
+- **Core connector hub:** GitHub, Linear, and Slack form the active connector hub. GitHub executes, Linear tracks execution state, and Slack carries tertiary paging/breadcrumbs only.
+
+- **Adjunct connectors:** Gmail, Google Calendar, Google Drive, and Box are read-first context lanes. They may inform work, but they do not become durable authorities until their outputs are explicitly promoted.
+
+- **Deferred platform connectors:** Cloudflare and Hugging Face are classified in the connector registry but are not active operating authorities without a separate Logan-approved activation plan.
+
+- **Registry surfaces:** `swarm.json` is the machine-readable connector registry. `SPEC-CONNECTOR-HUB-2026-04-09.md` is the human-readable bridge for the connector hub and maze census.
 
 Root governance files hold doctrine. The `!/` layer keeps bootstrap paths and control-plane breadcrumbs stable across tools.
 

@@ -64,7 +64,7 @@ This is the live coordination board. Any agent arriving at THE COURTROOM reads t
 
 | Work item | Scope | Owner | Status | Linear | Notes |
 | --- | --- | --- | --- | --- | --- |
-| Minidata Pipeline (LAF-16) | Update script to process Claude's spreadsheet shift logic | Antigravity | Review | LAF-16 | `update_budget_tracker_from_minidata.py` on `antigravity/budget-tracker-shift-update`. Backup `!_2026_BUDGETS_Agent_Antigravity_2026-04-06.xlsx` stored. |
+| Minidata Pipeline (LAF-16) | Update script to process Claude's spreadsheet shift logic | Antigravity | Completed | LAF-16 | Column E simplified for end-of-session reporting; script refined on `antigravity/budget-tracker-shift-update`. |
 | Scraper operations | Idaho Legislature scraper runtime + reliability changes | Antigravity | Review | _(create child issue)_ | Transferred to GH PR generation logic. See: LEVELSET-ANTIGRAVITY-2026-04-06-WALKTHROUGH.md |
 | Automation maintenance | Vault sort audit + Wayback preservation workflow maintenance | Antigravity | Completed | _(create child issue)_ | Operational fixes complete — migrated to GH PRs over bare pushes |
 | Branch hygiene | Branch cleanup, stale branch deletion workflow, and audit bookkeeping | Claude Code | In progress | _(create child issue)_ | Move Spring Clean execution updates to its own issue |

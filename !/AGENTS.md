@@ -65,6 +65,32 @@
 
 ---
 
+## Connector Hub
+
+The active connector hub is intentionally small:
+
+- **GitHub** = execution and transport
+- **Linear** = execution state
+- **Slack** = tertiary paging and breadcrumbs only
+
+Connector classifications:
+
+| Connector Group | Members | Posture |
+| --- | --- | --- |
+| **Core** | GitHub, Linear, Slack | Active operating hub |
+| **Adjunct** | Gmail, Google Calendar, Google Drive, Box | Read-first context lanes; promote durable outcomes explicitly |
+| **Deferred** | Cloudflare, Hugging Face | Classified in registry only; not active authorities without a separate Logan-approved activation plan |
+
+Registry surfaces:
+
+- `swarm.json` = machine-readable connector registry
+- `SPEC-CONNECTOR-HUB-2026-04-09.md` = human-readable connector hub and maze census spec
+- `LEVELSET-CURRENT.md` = current-state connector maze matrix
+
+The vault remains the durable record. Connectors inform, transport, or track work, but they do not silently become doctrine.
+
+---
+
 ## TRIPLEX Protocol (Concurrent Operation)
 
 *Adopted: 2026-04-05*

@@ -1,17 +1,17 @@
 #!/usr/bin/env python3
 """
 Phone Link Intake — moves files from the Phone Link download folder
-into the vault's INBOX/phone-link/ staging area.
+into the vault's standardized !/INBOX staging area.
 
 Usage:
     python .github/scripts/phone_link_intake.py [OPTIONS]
 
 Options:
     --source PATH     Override the Phone Link folder path
-    --dry-run         Show what would happen without moving files
+    --live-write      Explicitly allow moving files to the vault
     --copy            Copy instead of move (preserve originals)
     --git-add         Stage ingested files with git add
-    --include-large   Include files over 50 MB (skipped by default)
+    --include_large   Include files over 50 MB (skipped by default)
 
 Designed for local use on Logan's Windows laptop.
 """
@@ -21,14 +21,22 @@ import hashlib
 import os
 import shutil
 import sys
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
+
+# Try to import guardrails from the same directory
+try:
+    import mcp_guardrails as guard
+except ImportError:
+    # Fallback if run from root
+    sys.path.append(os.path.join(os.getcwd(), ".github", "scripts"))
+    import mcp_guardrails as guard
 
 # Default Phone Link path on Logan's machine
 DEFAULT_SOURCE = Path(r"C:\Users\loganf\Downloads\Phone Link")
 
-# Vault-relative destination
-INBOX_BASE = "INBOX/phone-link"
+# Vault-relative destination (Infrastructure style)
+INBOX_BASE = Path("!") / "INBOX"
 
 # Size threshold for "large" files (50 MB)
 LARGE_FILE_THRESHOLD = 50 * 1024 * 1024
@@ -68,12 +76,10 @@ EXTENSION_MAP = {
 
 def get_vault_root() -> Path:
     """Find the vault root by walking up from this script's location."""
-    script_dir = Path(__file__).resolve().parent
-    # Script lives at .github/scripts/ — vault root is two levels up
-    vault_root = script_dir.parent.parent
-    if not (vault_root / ".git").exists():
-        print(f"Warning: no .git found at {vault_root}, proceeding anyway")
-    return vault_root
+    script_path = Path(__file__).resolve()
+    # Script lives at .github/scripts/phone_link_intake.py
+    # Vault root is 3 levels up from the file itself
+    return script_path.parents[2]
 
 
 def classify_file(filepath: Path) -> str:
@@ -88,8 +94,8 @@ def classify_file(filepath: Path) -> str:
     return EXTENSION_MAP.get(ext, "other")
 
 
-def normalize_filename(filepath: Path, timestamp: str) -> str:
-    """Normalize filename: date prefix, lowercase, hyphens for spaces."""
+def normalize_filename(filepath: Path, date_prefix: str) -> str:
+    """Normalize filename: date prefix, lowercase, hyphens for spaces (NETWEB)."""
     name = filepath.stem
     ext = filepath.suffix.lower()
 
@@ -102,15 +108,15 @@ def normalize_filename(filepath: Path, timestamp: str) -> str:
     while "--" in normalized:
         normalized = normalized.replace("--", "-")
 
-    # Add date prefix if not already date-prefixed
+    # Add date prefix if not already date-prefixed (YYYY-MM-DD-)
     if not normalized[:10].replace("-", "").isdigit():
-        normalized = f"{timestamp}-{normalized}"
+        normalized = f"{date_prefix}-{normalized}"
 
     return f"{normalized}{ext}"
 
 
 def file_hash(filepath: Path) -> str:
-    """Compute SHA-256 hash of a file for dedup."""
+    """Compute SHA-256 hash fragment for dedup/collisions."""
     h = hashlib.sha256()
     with open(filepath, "rb") as f:
         for chunk in iter(lambda: f.read(8192), b""):
@@ -119,149 +125,124 @@ def file_hash(filepath: Path) -> str:
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Phone Link → Vault intake")
+    parser = argparse.ArgumentParser(description="Phone Link → Vault Intake (Flattened)")
     parser.add_argument("--source", type=Path, default=DEFAULT_SOURCE,
                         help="Phone Link folder path")
+    parser.add_argument("--live-write", action="store_true",
+                        help="Allow file movements (fails closed without this)")
     parser.add_argument("--dry-run", action="store_true",
-                        help="Preview without moving files")
+                        help="Synonym for not passing --live-write (preview only)")
     parser.add_argument("--copy", action="store_true",
-                        help="Copy instead of move")
+                        help="Copy instead of move (preserve originals)")
     parser.add_argument("--git-add", action="store_true",
                         help="Stage ingested files with git add")
     parser.add_argument("--include-large", action="store_true",
                         help="Include files over 50 MB")
     args = parser.parse_args()
 
+    # Resolve live_write status via guardrails
+    is_live = guard.resolve_live_write(args.live_write)
+    
     source = args.source.resolve()
     if not source.exists():
-        print(f"Source folder not found: {source}")
-        print("Is Phone Link installed and has files been transferred?")
-        sys.exit(1)
-
-    if not source.is_dir():
-        print(f"Source is not a directory: {source}")
+        print(f"ERROR: Source folder not found: {source}")
         sys.exit(1)
 
     vault_root = get_vault_root()
     inbox_path = vault_root / INBOX_BASE
-    timestamp = datetime.now().strftime("%Y-%m-%d")
-    batch_id = datetime.now().strftime("%Y-%m-%dT%H%M%S")
+    date_prefix = datetime.now().strftime("%Y-%m-%d")
+    batch_timestamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
 
-    # Collect files (non-recursive — Phone Link uses a flat folder)
+    # Collect files (flat only)
     files = sorted(f for f in source.iterdir() if f.is_file())
 
     if not files:
-        print("No files found in Phone Link folder.")
+        print(f"INFO: No files found in {source}")
         sys.exit(0)
 
-    print(f"Found {len(files)} file(s) in {source}")
-    print(f"Vault root: {vault_root}")
-    print(f"Destination: {inbox_path}")
-    if args.dry_run:
-        print("--- DRY RUN ---")
+    print(f"STABILIZING: {len(files)} file(s) from Phone Link")
+    print(f"DESTINATION: {inbox_path}")
+    if not is_live:
+        print("!!! PREVIEW MODE (Run with --live-write to execute) !!!")
     print()
 
-    moved = []
-    skipped_large = []
-    skipped_dup = []
-
+    processed_items = []
+    
     for filepath in files:
         size = filepath.stat().st_size
         category = classify_file(filepath)
         dest_dir = inbox_path / category
-        new_name = normalize_filename(filepath, timestamp)
+        new_name = normalize_filename(filepath, date_prefix)
         dest_file = dest_dir / new_name
 
         # Large file check
         if size > LARGE_FILE_THRESHOLD and not args.include_large:
-            size_mb = size / (1024 * 1024)
-            print(f"  SKIP (large, {size_mb:.1f} MB): {filepath.name}")
-            skipped_large.append(filepath.name)
+            print(f"  SKIP (large): {filepath.name}")
             continue
 
-        # Dedup: if destination exists with same hash, skip
+        # Check for duplication (hash-based)
         if dest_file.exists():
             if file_hash(filepath) == file_hash(dest_file):
-                print(f"  SKIP (duplicate): {filepath.name}")
-                skipped_dup.append(filepath.name)
+                print(f"  EXISTS (duplicate): {filepath.name}")
                 continue
-            # Name collision but different content — append hash fragment
+            # Collision but unique: append hash
             fhash = file_hash(filepath)
-            stem = dest_file.stem
-            ext = dest_file.suffix
-            dest_file = dest_dir / f"{stem}-{fhash}{ext}"
+            dest_file = dest_dir / f"{dest_file.stem}-{fhash}{dest_file.suffix}"
 
-        if args.dry_run:
-            action = "COPY" if args.copy else "MOVE"
-            print(f"  {action}: {filepath.name} → {category}/{new_name}")
-        else:
-            dest_dir.mkdir(parents=True, exist_ok=True)
-            if args.copy:
-                shutil.copy2(filepath, dest_file)
-                print(f"  COPIED: {filepath.name} → {category}/{new_name}")
+        # Prepare Action Context for Logging
+        context = guard.MCPActionContext(
+            action_type="move_phone_link" if not args.copy else "copy_phone_link",
+            system_or_resource_id="local_phone_link",
+            initiating_agent="Gemini", 
+            related_ref=f"Downloads/Phone Link/{filepath.name}",
+            payload={"dest": str(dest_file.relative_to(vault_root))},
+            live_write=is_live
+        )
+
+        try:
+            if is_live:
+                dest_dir.mkdir(parents=True, exist_ok=True)
+                if args.copy:
+                    shutil.copy2(filepath, dest_file)
+                else:
+                    shutil.move(str(filepath), str(dest_file))
+                outcome = "success"
+                processed_items.append({"source": filepath.name, "dest": str(dest_file.relative_to(inbox_path)), "size": size})
             else:
-                shutil.move(str(filepath), str(dest_file))
-                print(f"  MOVED: {filepath.name} → {category}/{new_name}")
+                outcome = "success" # Dry run is a 'success' in planning
+                print(f"  [WOULD {('COPY' if args.copy else 'MOVE')}]: {filepath.name} -> {category}/{dest_file.name}")
+            
+            # Emit structured action log to stdout
+            # (Note: for mass batching, we might want to emit once at end, 
+            # but guardrails design usually favors per-action atomic logs)
+            # In this refactor, we emit per file for maximal auditability.
+            guard.emit_action_log(context, outcome=outcome)
+            
+        except Exception as e:
+            print(f"  ERROR: {filepath.name} failed: {e}")
+            guard.emit_action_log(context, outcome="failure")
 
-        moved.append({
-            "source": filepath.name,
-            "dest": f"{category}/{new_name}",
-            "size": size,
-            "category": category,
-        })
-
-    # Summary
-    print()
-    print(f"Processed: {len(moved)} file(s)")
-    if skipped_large:
-        print(f"Skipped (large): {len(skipped_large)} — use --include-large to override")
-    if skipped_dup:
-        print(f"Skipped (duplicate): {len(skipped_dup)}")
-
-    # Write intake log
-    if moved and not args.dry_run:
+    # Update the human-readable intake-log.md
+    if processed_items and is_live:
         log_path = inbox_path / "intake-log.md"
-        log_entry = f"\n## Batch {batch_id}\n\n"
-        log_entry += f"Source: `{source}`\n"
-        log_entry += f"Files: {len(moved)}\n\n"
-        log_entry += "| File | Category | Size |\n"
-        log_entry += "| --- | --- | --- |\n"
-        for item in moved:
-            size_str = f"{item['size'] / 1024:.1f} KB"
-            if item["size"] > 1024 * 1024:
-                size_str = f"{item['size'] / (1024 * 1024):.1f} MB"
-            log_entry += f"| `{item['dest']}` | {item['category']} | {size_str} |\n"
-
-        # Append or create
-        if log_path.exists():
+        log_entry = f"\n## Batch {batch_timestamp}\n\n"
+        log_entry += f"Source: `Phone Link`\n"
+        log_entry += "| File | Size |\n"
+        log_entry += "| --- | --- |\n"
+        for item in processed_items:
+            log_entry += f"| `{item['dest']}` | {item['size']} B |\n"
+            
+        if not log_path.exists():
+            header = f"---\ntitle: INBOX Intake Log\nstatus: active\nauthority: LOGAN\n---\n# INBOX Intake Log\n\nOperational record of ingested files.\n"
+            log_path.write_text(header + log_entry, encoding="utf-8")
+        else:
             with open(log_path, "a", encoding="utf-8") as f:
                 f.write(log_entry)
-        else:
-            inbox_path.mkdir(parents=True, exist_ok=True)
-            with open(log_path, "w", encoding="utf-8") as f:
-                f.write("---\ntitle: Phone Link Intake Log\n")
-                f.write("updated: " + timestamp + "\n")
-                f.write("status: active\n")
-                f.write("tags:\n  - infrastructure/intake\n---\n\n")
-                f.write("# Phone Link Intake Log\n\n")
-                f.write("Batch records of files ingested from Phone Link.\n")
-                f.write(log_entry)
-        print(f"Intake log updated: {log_path}")
 
-    # Git add if requested
-    if args.git_add and moved and not args.dry_run:
+    if args.git_add and processed_items and is_live:
         import subprocess
-        result = subprocess.run(
-            ["git", "add", str(inbox_path)],
-            cwd=str(vault_root),
-            capture_output=True,
-            text=True,
-        )
-        if result.returncode == 0:
-            print(f"Staged {INBOX_BASE}/ for commit")
-        else:
-            print(f"git add failed: {result.stderr}")
-
+        subprocess.run(["git", "add", "!"], cwd=str(vault_root))
+        print("INFO: Staged `!` folder for commit.")
 
 if __name__ == "__main__":
     main()
