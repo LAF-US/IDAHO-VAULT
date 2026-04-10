@@ -46,7 +46,25 @@ Root `AGENTS.md` is the auto-loaded cross-tool entrypoint.
 See [!/AGENTS.md](!/AGENTS.md) for the canonical narrative registry: capability tiers, boundary rules, bootstrap rules, and the master agent roster.
 
 The machine-readable source of truth remains `swarm.json`.
-The canonical local bootstrap chain is `!/AGENTS.md` -> `swarm.json` -> `!/agents.json` -> `!/agent.sh`.
+The canonical local execution bootstrap chain is `swarm.json` -> `!/agents.json` -> `!/agent.sh`.
+
+## Fresh Agent Boot Order
+
+1. Read this root `AGENTS.md` as a pointer and compatibility surface only.
+2. Read `!README.md` for the Touchstone Tree and orienting doctrine.
+3. Read `!/AGENTS.md` for the live roster, lane rules, and current connector posture.
+4. Read `CONSTITUTION.md` for binding governance.
+5. Read `swarm.json` for machine-readable compiled state.
+6. Use `swarm.json` -> `!/agents.json` -> `!/agent.sh` for canonical local execution bootstrap.
+7. Treat historical CrewAI harbor notes as non-live unless `.crewai/MANIFEST.md` or `!/AGENTS.md` says otherwise.
+
+The current active connector hub is:
+
+- GitHub = execution and transport
+- Linear = execution state
+- Slack = tertiary paging and breadcrumbs
+
+The full connector classification lives in `!/AGENTS.md`, `swarm.json`, and `SPEC-CONNECTOR-HUB-2026-04-09.md`.
 
 ---
 
