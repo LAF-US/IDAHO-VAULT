@@ -12,6 +12,6 @@ Rendering started on 11/3/2022 at 1:53:08 PM
   Output To: E:\FYIdaho\FYID-Green.psd    11/3/2022 1:53:08 PM: Finished composition “Comp 2”.
 
 
-  Total Time Elapsed: 0 Seconds
+  Total Time Elapsed: 0 Seconds
 Log closed on 11/3/2022 at 1:53:08 PM
 
