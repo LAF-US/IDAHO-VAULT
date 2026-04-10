@@ -8,15 +8,15 @@ import json
 from pathlib import Path
 
 REQUIRED_CONTEXT = [
-    "!/README.md",
-    "!/CONSTITUTION.md",
+    "!README.md",
+    "CONSTITUTION.md",
     "!/AGENTS.md",
-    "!/DECISIONS.md",
-    "!/VAULT-CONVENTIONS.md",
+    "DECISIONS.md",
+    "VAULT-CONVENTIONS.md",
 ]
 
 OPTIONAL_CONTEXT = [
-    "!/LEVELSET.md",
+    "LEVELSET.md",
 ]
 
 BOOTSTRAP_FIELDS = [

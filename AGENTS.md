@@ -51,19 +51,20 @@ The canonical local bootstrap chain is `!/AGENTS.md` -> `swarm.json` -> `!/agent
 ## Fresh Agent Boot Order
 
 1. Read this root `AGENTS.md` as a pointer and compatibility surface only.
-2. Read `!/AGENTS.md` for the live roster, lane rules, and connector posture.
-3. Read `CONSTITUTION.md` for binding governance.
-4. Read `swarm.json` for machine-readable compiled state.
-5. Treat `!README.md` as architectural origin/history unless a newer canonical surface explicitly promotes it.
-6. Treat historical CrewAI harbor notes as non-live unless `.crewai/MANIFEST.md` or `!/AGENTS.md` says otherwise.
+2. Read `!README.md` for the Touchstone Tree and orienting doctrine.
+3. Read `!/AGENTS.md` for the live roster, lane rules, and current connector posture.
+4. Read `CONSTITUTION.md` for binding governance.
+5. Read `swarm.json` for machine-readable compiled state.
+6. Use `!/agents.json` -> `!/agent.sh` for canonical local bootstrap.
+7. Treat historical CrewAI harbor notes as non-live unless `.crewai/MANIFEST.md` or `!/AGENTS.md` says otherwise.
 
-The active connector hub is:
+The current active connector hub is:
 
 - GitHub = execution and transport
 - Linear = execution state
 - Slack = tertiary paging and breadcrumbs
 
-The full connector classification and maze census live in `!/AGENTS.md`, `swarm.json`, and `SPEC-CONNECTOR-HUB-2026-04-09.md`.
+The full connector classification lives in `!/AGENTS.md`, `swarm.json`, and `SPEC-CONNECTOR-HUB-2026-04-09.md`.
 
 ---
 

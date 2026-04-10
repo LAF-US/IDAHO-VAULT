@@ -34,16 +34,18 @@ authority: LOGAN
 This is Logan A. Finney's internal Obsidian.md vault. Agents must follow all frameworks.
 
 > [!IMPORTANT]
-> **Historical orientation note.**
-> This file is architectural origin/history, not the first binding onboarding surface.
+> **Touchstone Tree orientation note.**
+> This file remains a live orienting doctrine surface in the boot chain: the vaulted Tree layer for relation, memory, and placement.
+> It is not the complete machine registry or a replacement for the canonical roster/governance surfaces.
 >
 > Fresh agent boot order:
 > 1. Read root `AGENTS.md` for pointer only.
-> 2. Read `!/AGENTS.md` for live roster, lane rules, and connector posture.
-> 3. Read `CONSTITUTION.md` for binding governance.
-> 4. Read `swarm.json` for machine-readable compiled state.
-> 5. Treat this file as architectural origin/history unless a newer canonical surface explicitly promotes it.
-> 6. Treat historical CrewAI harbor notes as non-live unless `.crewai/MANIFEST.md` or `!/AGENTS.md` says otherwise.
+> 2. Read this file for Touchstone Tree orientation.
+> 3. Read `!/AGENTS.md` for live roster, lane rules, and connector posture.
+> 4. Read `CONSTITUTION.md` for binding governance.
+> 5. Read `swarm.json` for machine-readable compiled state.
+> 6. Use `!/agents.json` -> `!/agent.sh` for canonical local bootstrap.
+> 7. Treat historical CrewAI harbor notes as non-live unless `.crewai/MANIFEST.md` or `!/AGENTS.md` says otherwise.
 
 TOUCHSTONE FRAMEWORKS
 
@@ -64,7 +66,7 @@ TOUCHSTONE FRAMEWORKS
 		1. !/!/! - "The world is quiet here."
 		2. !/!/__!__/!/! The world is quiet here/Esto Perpetua! - "The still point at the center of the vault."
 
-Historical note: `CODEX` in this older primer corresponds to governance `CORPUS` in the current doctrine.
+Vocabulary bridge: older `CODEX` language in this primer corresponds to governance `CORPUS` in the current doctrine.
 
 ---
 

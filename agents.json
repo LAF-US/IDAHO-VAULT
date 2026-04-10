@@ -16,13 +16,7 @@
     "system_roles": {
       "github": "execution_transport",
       "linear": "execution_state",
-      "slack": "ephemeral_breadcrumbs",
-      "gmail": "adjunct_inbox_context",
-      "google_calendar": "adjunct_schedule_context",
-      "google_drive": "adjunct_document_context",
-      "box": "adjunct_external_content",
-      "cloudflare": "deferred_platform",
-      "hugging_face": "deferred_research_compute"
+      "slack": "ephemeral_breadcrumbs"
     }
   },
   "crewai_layer": {
@@ -49,14 +43,14 @@
       },
       "context": {
         "required": [
-          "!/README.md",
-          "!/CONSTITUTION.md",
+          "!README.md",
+          "CONSTITUTION.md",
           "!/AGENTS.md",
-          "!/DECISIONS.md",
-          "!/VAULT-CONVENTIONS.md"
+          "DECISIONS.md",
+          "VAULT-CONVENTIONS.md"
         ],
         "optional": [
-          "!/LEVELSET.md"
+          "LEVELSET.md"
         ]
       }
     },
@@ -75,14 +69,14 @@
       },
       "context": {
         "required": [
-          "!/README.md",
-          "!/CONSTITUTION.md",
+          "!README.md",
+          "CONSTITUTION.md",
           "!/AGENTS.md",
-          "!/DECISIONS.md",
-          "!/VAULT-CONVENTIONS.md"
+          "DECISIONS.md",
+          "VAULT-CONVENTIONS.md"
         ],
         "optional": [
-          "!/LEVELSET.md"
+          "LEVELSET.md"
         ]
       }
     },
@@ -101,14 +95,14 @@
       },
       "context": {
         "required": [
-          "!/README.md",
-          "!/CONSTITUTION.md",
+          "!README.md",
+          "CONSTITUTION.md",
           "!/AGENTS.md",
-          "!/DECISIONS.md",
-          "!/VAULT-CONVENTIONS.md"
+          "DECISIONS.md",
+          "VAULT-CONVENTIONS.md"
         ],
         "optional": [
-          "!/LEVELSET.md"
+          "LEVELSET.md"
         ]
       }
     },
@@ -127,14 +121,14 @@
       },
       "context": {
         "required": [
-          "!/README.md",
-          "!/CONSTITUTION.md",
+          "!README.md",
+          "CONSTITUTION.md",
           "!/AGENTS.md",
-          "!/DECISIONS.md",
-          "!/VAULT-CONVENTIONS.md"
+          "DECISIONS.md",
+          "VAULT-CONVENTIONS.md"
         ],
         "optional": [
-          "!/LEVELSET.md"
+          "LEVELSET.md"
         ]
       }
     },
@@ -153,14 +147,14 @@
       },
       "context": {
         "required": [
-          "!/README.md",
-          "!/CONSTITUTION.md",
+          "!README.md",
+          "CONSTITUTION.md",
           "!/AGENTS.md",
-          "!/DECISIONS.md",
-          "!/VAULT-CONVENTIONS.md"
+          "DECISIONS.md",
+          "VAULT-CONVENTIONS.md"
         ],
         "optional": [
-          "!/LEVELSET.md"
+          "LEVELSET.md"
         ]
       }
     },
@@ -179,14 +173,14 @@
       },
       "context": {
         "required": [
-          "!/README.md",
-          "!/CONSTITUTION.md",
+          "!README.md",
+          "CONSTITUTION.md",
           "!/AGENTS.md",
-          "!/DECISIONS.md",
-          "!/VAULT-CONVENTIONS.md"
+          "DECISIONS.md",
+          "VAULT-CONVENTIONS.md"
         ],
         "optional": [
-          "!/LEVELSET.md"
+          "LEVELSET.md"
         ]
       }
     }
