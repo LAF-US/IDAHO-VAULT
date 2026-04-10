@@ -52,7 +52,7 @@ TOUCHSTONE FRAMEWORKS
 1. THE CORE: MIND
 	1. CONSTITUTION
 	2. CHARTER
-	3. CODEX
+	3. CORPUS
 2. THE PERIPHERY: BODY
 	1. PROTOCOLS
 	2. PROCEDURES
@@ -65,8 +65,6 @@ TOUCHSTONE FRAMEWORKS
 	1. !/! - nested folders for agents to communicate internally with stable routing
 		1. !/!/! - "The world is quiet here."
 		2. !/!/__!__/!/! The world is quiet here/Esto Perpetua! - "The still point at the center of the vault."
-
-Vocabulary bridge: older `CODEX` language in this primer corresponds to governance `CORPUS` in the current doctrine.
 
 ---
 
