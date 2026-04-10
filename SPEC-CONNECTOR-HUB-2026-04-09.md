@@ -1,6 +1,6 @@
 ---
 title: SPEC - Connector Hub and Connector Maze Census
-updated: 2026-04-09
+updated: 2026-04-10
 status: active
 authority: LOGAN
 type: spec

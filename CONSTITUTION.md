@@ -43,7 +43,7 @@ by Logan Alvan Finney
 ---
 
 *Adopted: 2026-03-16*
-*Revised: 2026-04-02* by Codex, following the LAF-25 / LAF-28 registry repair
+*Revised: 2026-04-10* by Codex, following the LAF-25 / LAF-28 registry repair
 *Replaces: Claude.md (v0.0) Frameworks*
 
 ---
@@ -163,7 +163,7 @@ Amendments require:
 
 ---
 
-*Last updated: 2026-04-02*
+*Last updated: 2026-04-10*
 
 *Status: pending revision-synthesis and congressional adoption, post-consolidation court.*
 
