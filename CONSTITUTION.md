@@ -111,9 +111,9 @@ The documentary C's remain an active naming grammar: capture, collect, collate, 
 ## V. CONSTRAINTS
 
 - **No scope creep.** Core protocols rule, avoiding overrun of complexity for its own sake.
-- **`!/` is the stable routing and bootstrap layer.** Agents may rely on `!/README.md`, `!/AGENTS.md`, `!/agents.json`, and `!/agent.sh` for orientation and local bootstrap. Root governance files remain the doctrine layer.
+- **`!/` is the stable routing and bootstrap layer.** Agents may rely on `!/AGENTS.md`, `!/agents.json`, and `!/agent.sh` for orientation and local bootstrap. Root governance files remain the doctrine layer.
 - **Agentic guardrails:**
-  - Must ingest `!/README.md` and Logan's active framework stack before acting.
+  - Must follow the live boot order: root `AGENTS.md` pointer, then `!/AGENTS.md`, then `CONSTITUTION.md`, then `swarm.json`.
   - Must declare an explicit capability tier.
   - Must not grant write access to the routing/bootstrap layer or rewrite governance without Logan's approval.
 - **No unauthorized restructuring.** Agents surface suggestions and best-practice recommendations for systemic reorganization, but Logan approves any structural change first.
@@ -127,7 +127,7 @@ The documentary C's remain an active naming grammar: capture, collect, collate, 
 - **Legislative Sessions directory:** dynamic session note creation remains active
 - **`.github/workflows/`**: check for schedule-trigger conflicts before adding new workflows
 - **`.gitignore`**: additions must be additive and deliberate
-- **Shared coordination model:** GitHub is execution transport, Linear is active coordination, Slack is breadcrumb-only
+- **Shared coordination model:** GitHub is execution transport, Linear is execution state, Slack is breadcrumb-only
 
 ---
 
