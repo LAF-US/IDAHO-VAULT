@@ -1,32 +1,25 @@
-<%*
-const parsed = moment(tp.file.title, "YYYY-MM-DD", true);
-const d = parsed.isValid() ? parsed : moment();
-const weekday = d.format("dddd");
-const weekdayShort = d.format("ddd").toLowerCase();
-const stamp = `${weekday}, ${d.format("MMMM Do YYYY")}, 12:00:00 am`;
-tR += `---
-title: ${d.format("YYYY-MM-DD")}
+---
+title: 2026-04-09
 aliases:
-  - ${d.format("YYYY-MM-DD")}
-  - ${d.format("MMMM D, YYYY")}
-  - ${d.format("MMMM Do, YYYY")}
-  - ${d.format("D MMMM YYYY")}
-  - ${d.format("dddd, MMMM D, YYYY")}
-linter-yaml-title-alias: ${d.format("YYYY-MM-DD")}
-yesterday: ${d.clone().subtract(1, "day").format("YYYY-MM-DD")}
-tomorrow: ${d.clone().add(1, "day").format("YYYY-MM-DD")}
+  - 2026-04-09
+  - April 9, 2026
+  - April 9th, 2026
+  - 9 April 2026
+  - Thursday, April 9, 2026
+linter-yaml-title-alias: 2026-04-09
+yesterday: 2026-04-08
+tomorrow: 2026-04-10
 weekday:
-  - ${weekday}
+  - Thursday
 cssclasses:
-  - roygbiv-${weekdayShort}
+  - roygbiv-thu
 tags:
   - today
-  - ${d.format("YYYY/MM/DD")}
+  - 2026/04/09
   - dailynote
-date created: ${stamp}
-date modified: ${stamp}
----`;
-%>
+date created: Thursday, April 9th 2026, 12:00:00 am
+date modified: Thursday, April 9th 2026, 12:00:00 am
+---
 
 [[TO DO LIST]]
 - WORK
