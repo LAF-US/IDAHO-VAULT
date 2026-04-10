@@ -48,6 +48,14 @@ See [!/AGENTS.md](!/AGENTS.md) for the canonical narrative registry: capability 
 The machine-readable source of truth remains `swarm.json`.
 The canonical local bootstrap chain is `!/AGENTS.md` -> `swarm.json` -> `!/agents.json` -> `!/agent.sh`.
 
+The active connector hub is:
+
+- GitHub = execution and transport
+- Linear = execution state
+- Slack = tertiary paging and breadcrumbs
+
+The full connector classification and maze census live in `!/AGENTS.md`, `swarm.json`, and `SPEC-CONNECTOR-HUB-2026-04-09.md`.
+
 ---
 
 ## Agent Dotfolders (Quick Reference)

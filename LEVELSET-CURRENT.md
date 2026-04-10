@@ -163,6 +163,20 @@ All three move together. None can stand alone.
 | Granola | ⚠️ | ❌ | **Source protection** — journalist's shield; off-the-record by default |
 | GitHub | ✅ | ✅ | Already public data |
 
+### Connector Maze Census (2026-04-09)
+
+| Connector | Category | Status | Write Mode | Current Role | Promotion Path | Notes |
+|---|---|---|---|---|---|---|
+| GitHub | `core` | active | `gated-write` | Execution and transport | Vault + Linear | Issues, PRs, workflows, automation output |
+| Linear | `core` | active | `gated-write` | Execution state | Vault + GitHub | `linear_gateway.py`, `linear_pr_sync.py`, SWARM label |
+| Slack | `core` | active | `notification-write` | Tertiary paging and breadcrumbs | Vault + GitHub + Linear | Not durable; notifications and quick coordination only |
+| Gmail | `adjunct` | available | `read-only` | Inbox and message context | Vault + GitHub + Linear | Durable use requires explicit promotion and sanitization |
+| Google Calendar | `adjunct` | available | `read-only` | Scheduling and availability context | Vault + GitHub + Linear | Scheduling writes are out of scope for the hub |
+| Google Drive | `adjunct` | available | `read-only` | Document and evidence retrieval | Vault + GitHub + Linear | Drive content is not the operational record |
+| Box | `adjunct` | available | `read-only` | External content retrieval | Vault + GitHub + Linear | No repo-tracked automation seam yet |
+| Cloudflare | `deferred` | plugin available | `deferred` | Platform and deployment lane | Vault + GitHub + Linear | Requires separate activation plan before live use |
+| Hugging Face | `deferred` | plugin available | `deferred` | Research and remote compute lane | Vault + GitHub + Linear | Requires separate activation plan before live use |
+
 ### Sanitization Protocol (PRIVACY.md § V)
 
 Four mandatory steps before any private-source data enters a tracked file:
