@@ -365,18 +365,18 @@ load_vault_context() {
     return 1
   fi
 
-  export VAULT_README="$(resolve_repo_path '!/README.md')"
-  export VAULT_CONSTITUTION="$(resolve_repo_path '!/CONSTITUTION.md')"
+  export VAULT_README="$(resolve_repo_path '!README.md')"
+  export VAULT_CONSTITUTION="$(resolve_repo_path 'CONSTITUTION.md')"
   export VAULT_AGENTS="$(resolve_repo_path '!/AGENTS.md')"
-  export VAULT_DECISIONS="$(resolve_repo_path '!/DECISIONS.md')"
-  export VAULT_CONVENTIONS="$(resolve_repo_path '!/VAULT-CONVENTIONS.md')"
+  export VAULT_DECISIONS="$(resolve_repo_path 'DECISIONS.md')"
+  export VAULT_CONVENTIONS="$(resolve_repo_path 'VAULT-CONVENTIONS.md')"
 
-  if [ -f "$(resolve_repo_path '!/LEVELSET.md')" ]; then
-    export VAULT_LEVELSET="$(resolve_repo_path '!/LEVELSET.md')"
-    echo "[ok] Optional advisory context loaded: !/LEVELSET.md"
+  if [ -f "$(resolve_repo_path 'LEVELSET.md')" ]; then
+    export VAULT_LEVELSET="$(resolve_repo_path 'LEVELSET.md')"
+    echo "[ok] Optional advisory context loaded: LEVELSET.md"
   else
     export VAULT_LEVELSET=""
-    echo "[warn] Optional advisory context not present: !/LEVELSET.md"
+    echo "[warn] Optional advisory context not present: LEVELSET.md"
   fi
 
   echo "[ok] Vault context loaded: README, CONSTITUTION, AGENTS, DECISIONS, VAULT-CONVENTIONS"

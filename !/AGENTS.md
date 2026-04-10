@@ -15,10 +15,22 @@
 ## Authority Chain
 
 1. `AGENTS.md` (root) -> Cross-tool pointer
-2. `!/AGENTS.md` (this file) -> Canonical Narrative Registry
-3. `swarm.json` (root) -> Machine-readable source of truth
-4. `!/agents.json` -> Canonical generated bootstrap index
-5. `!/agent.sh` -> Canonical local bootstrap entrypoint
+2. `!README.md` (root) -> Touchstone Tree / live orienting doctrine
+3. `!/AGENTS.md` (this file) -> Canonical Narrative Registry
+4. `CONSTITUTION.md` (root) -> Binding governance
+5. `swarm.json` (root) -> Machine-readable source of truth
+6. `!/agents.json` -> Canonical generated bootstrap index
+7. `!/agent.sh` -> Canonical local bootstrap entrypoint
+
+## Fresh Agent Boot Order
+
+1. Read root `AGENTS.md` as pointer only.
+2. Read `!README.md` for Touchstone Tree orientation and relation.
+3. Read this file for the live roster, lane rules, and current connector posture.
+4. Read `CONSTITUTION.md` for binding governance.
+5. Read `swarm.json` for machine-readable compiled state.
+6. Use `!/agents.json` -> `!/agent.sh` for canonical local bootstrap.
+7. Treat historical CrewAI harbor notes as non-live unless `.crewai/MANIFEST.md` or this file says otherwise.
 
 ---
 
@@ -62,6 +74,32 @@
 - **Linear Hub**: Active tasks are tracked via the **SWARM** label in Linear.
 - **NETWEB Standard**: All filenames must respect cross-platform path portability.
 - **Privacy Gate**: All MCP-sourced personal data is governed by `PRIVACY.md`. No exceptions.
+
+---
+
+## Connector Hub
+
+The current active connector hub is intentionally small:
+
+- **GitHub** = execution and transport
+- **Linear** = execution state
+- **Slack** = tertiary paging and breadcrumbs only
+
+Connector classifications:
+
+| Connector Group | Members | Posture |
+| --- | --- | --- |
+| **Core** | GitHub, Linear, Slack | Current operating hub |
+| **Adjunct** | Gmail, Google Calendar, Google Drive, Box | Read-first context lanes; promote durable outcomes explicitly |
+| **Deferred** | Cloudflare, Hugging Face | Classified in registry only; not active authorities without a separate Logan-approved activation plan |
+
+Registry surfaces:
+
+- `swarm.json` = machine-readable connector registry
+- `SPEC-CONNECTOR-HUB-2026-04-09.md` = human-readable connector hub and maze census spec
+- `LEVELSET-CURRENT.md` = mid-future connector survey and review surface
+
+The vault remains the durable record. Connectors inform, transport, or track work, but they do not silently become doctrine.
 
 ---
 
