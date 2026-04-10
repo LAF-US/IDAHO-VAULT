@@ -21,6 +21,10 @@ authority: LOGAN
 	- [ ] Tasks completed on a DAY were not checked off here.
 	- [ ] Tasks uncomplete on a DAY were not added to here.
 - WORK
+- [ ] FMLA PAPERWORK
+- PERSONAL
+- [ ] 
+- VAULT
 - [x] A250 REVISON WRITING
 - PERSONAL
 - [x] RESET Obsidian Sync Vault
