@@ -137,3 +137,10 @@ V2 does **not** auto-enable new writes.
 - `VAULT-CONVENTIONS.md` remains the higher doctrine for vault vs GitHub vs Linear vs Slack.
 
 This spec is the human-readable bridge between those surfaces.
+
+## DOCUMENT METADATA
+
+- Created: 2026-04-09
+- Last Updated: 2026-04-10
+- Status: active
+- Authority: LOGAN

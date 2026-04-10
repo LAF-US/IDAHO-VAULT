@@ -372,7 +372,7 @@
       "notes": "Source-sensitive communication lane; treat as ephemeral until promoted."
     },
     {
-      "id": "google-calendar",
+      "id": "google_calendar",
       "name": "Google Calendar",
       "category": "adjunct",
       "role": "Read-first scheduling and availability context lane",
@@ -391,7 +391,7 @@
       "notes": "Scheduling context only in v1."
     },
     {
-      "id": "google-drive",
+      "id": "google_drive",
       "name": "Google Drive",
       "category": "adjunct",
       "role": "Read-first document and evidence retrieval lane",
@@ -448,7 +448,7 @@
       "notes": "Deferred until a separate runtime and deployment plan exists."
     },
     {
-      "id": "hugging-face",
+      "id": "hugging_face",
       "name": "Hugging Face",
       "category": "deferred",
       "role": "Research and remote compute connector, not part of the v1 ops hub",
