@@ -127,7 +127,7 @@ The documentary C's remain an active naming grammar: capture, collect, collate, 
 - **Legislative Sessions directory:** dynamic session note creation remains active
 - **`.github/workflows/`**: check for schedule-trigger conflicts before adding new workflows
 - **`.gitignore`**: additions must be additive and deliberate
-- **Shared coordination model:** GitHub is execution transport, Linear is execution state, Slack is breadcrumb-only
+- **Shared coordination model:** GitHub is execution transport, Linear is execution state, Slack is ephemeral paging and breadcrumbs
 
 ---
 
