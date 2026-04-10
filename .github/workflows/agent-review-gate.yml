@@ -34,7 +34,17 @@ jobs:
           import json, os, subprocess, sys
           from datetime import datetime, timezone
 
-          grace_minutes = int(os.environ.get("GRACE_MINUTES", "30"))
+          default_grace_minutes = 30
+          raw_grace_minutes = os.environ.get("GRACE_MINUTES", str(default_grace_minutes))
+          try:
+              grace_minutes = int((raw_grace_minutes or "").strip())
+          except ValueError:
+              print(
+                  f"Invalid GRACE_MINUTES value {raw_grace_minutes!r}; "
+                  f"falling back to default of {default_grace_minutes}.",
+                  file=sys.stderr,
+              )
+              grace_minutes = default_grace_minutes
           grace_seconds = grace_minutes * 60
 
           result = subprocess.run(
