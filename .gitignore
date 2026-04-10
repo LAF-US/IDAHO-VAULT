@@ -9,6 +9,7 @@ dist/
 build/
 .venv/
 venv/
+.uv-cache/
 
 # CrewAI
 .crewai_cache/
@@ -25,6 +26,7 @@ venv/
 # OS
 .DS_Store
 Thumbs.db
+desktop.ini
 *.exe
 *.lnk
 *.url
