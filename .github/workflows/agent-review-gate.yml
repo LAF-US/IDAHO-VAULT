@@ -1,0 +1,104 @@
+name: Agent Review Gate
+
+# Promotes low-risk PRs from agent-review-pending → auto-merge after a grace
+# period, giving agent reviewers (CodeRabbit, Gemini, Qodo) time to post
+# blocking feedback before auto-merge fires.
+#
+# Grace period default: 30 minutes.  Override via workflow_dispatch input.
+# If review-response.yml has already applied review-required, the PR is skipped.
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+    inputs:
+      grace_minutes:
+        description: 'Minimum minutes a PR must wait before promoting to auto-merge'
+        required: false
+        default: '30'
+
+permissions:
+  pull-requests: write
+  contents: read
+
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Promote aged review-pending PRs to auto-merge
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GRACE_MINUTES: ${{ github.event.inputs.grace_minutes || '30' }}
+        run: |
+          python3 - <<'EOF'
+          import json, os, subprocess, sys
+          from datetime import datetime, timezone
+
+          default_grace_minutes = 30
+          raw_grace_minutes = os.environ.get("GRACE_MINUTES", str(default_grace_minutes))
+          try:
+              grace_minutes = int((raw_grace_minutes or "").strip())
+          except ValueError:
+              print(
+                  f"Invalid GRACE_MINUTES value {raw_grace_minutes!r}; "
+                  f"falling back to default of {default_grace_minutes}.",
+                  file=sys.stderr,
+              )
+              grace_minutes = default_grace_minutes
+          grace_seconds = grace_minutes * 60
+
+          result = subprocess.run(
+              ["gh", "pr", "list",
+               "--label", "agent-review-pending",
+               "--state", "open",
+               "--json", "number,createdAt,labels,url"],
+              capture_output=True, text=True
+          )
+          if result.returncode != 0:
+              print(f"gh pr list failed: {result.stderr}", file=sys.stderr)
+              sys.exit(1)
+
+          prs = json.loads(result.stdout or "[]")
+          now = datetime.now(timezone.utc)
+
+          if not prs:
+              print("No PRs with agent-review-pending label found.")
+              sys.exit(0)
+
+          print(f"Found {len(prs)} PR(s) with agent-review-pending label.")
+
+          for pr in prs:
+              pr_num = pr["number"]
+              pr_url = pr.get("url", f"#{pr_num}")
+              ts = pr["createdAt"]
+              if ts.endswith("Z"):
+                  ts = ts[:-1] + "+00:00"
+              created_at = datetime.fromisoformat(ts)
+              if created_at.tzinfo is None:
+                  created_at = created_at.replace(tzinfo=timezone.utc)
+              labels = [lbl["name"] for lbl in pr.get("labels", [])]
+              age_seconds = (now - created_at).total_seconds()
+
+              if "review-required" in labels:
+                  print(f"PR #{pr_num}: has review-required label — skipping.")
+                  continue
+
+              if age_seconds >= grace_seconds:
+                  age_min = age_seconds / 60
+                  print(f"PR #{pr_num}: {age_min:.1f} min old (>= {grace_minutes} min grace). Promoting to auto-merge.")
+                  subprocess.run(
+                      ["gh", "pr", "edit", str(pr_num),
+                       "--remove-label", "agent-review-pending",
+                       "--add-label", "auto-merge"],
+                      check=True
+                  )
+                  subprocess.run(
+                      ["gh", "pr", "comment", str(pr_num), "--body",
+                       f"⏱️ Agent review grace period ({grace_minutes} min) elapsed "
+                       f"with no blocking reviews. Promoting to `auto-merge`."],
+                      check=True
+                  )
+              else:
+                  remaining = (grace_seconds - age_seconds) / 60
+                  print(f"PR #{pr_num}: {age_seconds / 60:.1f} min old — waiting {remaining:.1f} more min.")
+          EOF
