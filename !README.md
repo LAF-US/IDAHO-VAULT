@@ -33,6 +33,18 @@ authority: LOGAN
 ---
 This is Logan A. Finney's internal Obsidian.md vault. Agents must follow all frameworks.
 
+> [!IMPORTANT]
+> **Historical orientation note.**
+> This file is architectural origin/history, not the first binding onboarding surface.
+>
+> Fresh agent boot order:
+> 1. Read root `AGENTS.md` for pointer only.
+> 2. Read `!/AGENTS.md` for live roster, lane rules, and connector posture.
+> 3. Read `CONSTITUTION.md` for binding governance.
+> 4. Read `swarm.json` for machine-readable compiled state.
+> 5. Treat this file as architectural origin/history unless a newer canonical surface explicitly promotes it.
+> 6. Treat historical CrewAI harbor notes as non-live unless `.crewai/MANIFEST.md` or `!/AGENTS.md` says otherwise.
+
 TOUCHSTONE FRAMEWORKS
 
 1. THE CORE: MIND
@@ -51,6 +63,8 @@ TOUCHSTONE FRAMEWORKS
 	1. !/! - nested folders for agents to communicate internally with stable routing
 		1. !/!/! - "The world is quiet here."
 		2. !/!/__!__/!/! The world is quiet here/Esto Perpetua! - "The still point at the center of the vault."
+
+Historical note: `CODEX` in this older primer corresponds to governance `CORPUS` in the current doctrine.
 
 ---
 

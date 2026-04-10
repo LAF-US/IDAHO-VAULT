@@ -20,6 +20,15 @@
 4. `!/agents.json` -> Canonical generated bootstrap index
 5. `!/agent.sh` -> Canonical local bootstrap entrypoint
 
+## Fresh Agent Boot Order
+
+1. Read root `AGENTS.md` as pointer only.
+2. Read this file for the live roster, lane rules, and connector posture.
+3. Read `CONSTITUTION.md` for binding governance.
+4. Read `swarm.json` for machine-readable compiled state.
+5. Treat `!README.md` as architectural origin/history unless a newer canonical surface explicitly promotes it.
+6. Treat historical CrewAI harbor notes as non-live unless `.crewai/MANIFEST.md` or this file says otherwise.
+
 ---
 
 ## Agent Roster (The Swarm)
