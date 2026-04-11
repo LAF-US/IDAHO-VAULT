@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "linear": {
+      "command": "op",
+      "args": [
+        "run",
+        "--",
+        "npx",
+        "-y",
+        "@linear/mcp-server@latest"
+      ],
+      "env": {
+        "LINEAR_API_KEY": "op://IDAHO-VAULT/Linear API Key/credential"
+      }
+    }
+  }
+}
