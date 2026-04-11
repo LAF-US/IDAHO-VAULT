@@ -7,7 +7,7 @@
         "--",
         "npx",
         "-y",
-        "@linear/mcp-server@latest"
+        "linear-mcp-server@latest"
       ],
       "env": {
         "LINEAR_API_KEY": "op://IDAHO-VAULT/Linear API Key/credential"
