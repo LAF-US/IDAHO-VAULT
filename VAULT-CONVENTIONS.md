@@ -900,6 +900,25 @@ If a decision must be recoverable in six months, store it in the vault. If it ne
 
 
 
+### LAF Issue POSIWID Audit
+
+A real system terminates in artifacts; a working system terminates in handoff-capable artifacts.
+
+Use this audit when evaluating Linear issues and adjacent work tickets:
+
+1. **Intent** - The issue says in one sentence what it is supposed to produce.
+2. **Artifact** - The issue names a downstream artifact. Acceptable classes are a durable document, a runnable or configured integration, a produced dataset/report/output, or a verified handoff to another operational system.
+3. **External termination** - The issue terminates in something outside itself. If it only points to more tickets, more prose, or future setup, it fails here.
+4. **Repeatability** - Another worker can reproduce, update, or rerun the result from the issue and its linked artifacts.
+5. **Fresh-agent viability** - A fresh agent can pick it up cold and continue without hidden chat context, oral history, or mythology.
+
+Scoring:
+
+- **Pass** - All five hold; the artifact is reachable and real.
+- **Weak pass** - Something real exists, but pointer-chain or repeatability is incomplete.
+- **Fail** - No external artifact, no usable downstream state, or the issue is self-referential.
+- **Governance vapor** - The issue contains framing, planning, or prestige language but terminates in none of the artifact classes above.
+
 ---
 
 
