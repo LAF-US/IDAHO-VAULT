@@ -111,9 +111,9 @@ The documentary C's remain an active naming grammar: capture, collect, collate, 
 ## V. CONSTRAINTS
 
 - **No scope creep.** Core protocols rule, avoiding overrun of complexity for its own sake.
-- **`!/` is the stable routing and bootstrap layer.** Agents may rely on `!/README.md`, `!/AGENTS.md`, `!/agents.json`, and `!/agent.sh` for orientation and local bootstrap. Root governance files remain the doctrine layer.
+- **`!/` is the stable routing and bootstrap layer.** Agents may rely on `!/AGENTS.md`, `!/agents.json`, and `!/agent.sh` for orientation and local bootstrap. Root governance files remain the doctrine layer.
 - **Agentic guardrails:**
-  - Must ingest `!/README.md` and Logan's active framework stack before acting.
+  - Must ingest `AGENTS.md`, `!/AGENTS.md`, and Logan's active framework stack before acting.
   - Must declare an explicit capability tier.
   - Must not grant write access to the routing/bootstrap layer or rewrite governance without Logan's approval.
 - **No unauthorized restructuring.** Agents surface suggestions and best-practice recommendations for systemic reorganization, but Logan approves any structural change first.

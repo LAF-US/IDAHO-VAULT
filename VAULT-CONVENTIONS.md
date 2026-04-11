@@ -101,13 +101,13 @@ This is a personal journalism research vault. It contains notes on Idaho politic
 
 This file is the shared delegation layer for day-to-day vault behavior. When rules overlap, use this precedence:
 
-1. `!/README.md` for orientation and canonical path language
+1. `!README.md` for architectural origin and historical path language
 2. `VAULT-CONVENTIONS.md` for shared routing and write conventions
 3. `VAULT-METADATA-STANDARD.md` for governed-note metadata and lifecycle rules
 4. `VAULT-TEMPLATES.md` for class, filename, and template expectations
 5. Live implementation wiring in `.obsidian/`, `.github/`, and `manifest.json` only insofar as it conforms to the documents above
 
-`!/VAULT-CONVENTIONS.md` is a routing shim for bootstrap stability.
+`VAULT-CONVENTIONS.md` is a root governance file and the canonical reference for shared routing and write conventions.
 `VAULT-METADATA-STANDARD.md` outranks template guidance whenever metadata fields or lifecycle semantics overlap.
 
 
@@ -474,7 +474,7 @@ Root governance files hold doctrine. The `!/` layer keeps bootstrap paths and co
 
 | -------------------------- | ---------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ | ------------------------------------------------------------------- |
 
-| **Core / Mind**<br>governing doctrine | Constitution, Charter, Codex, decision logs, doctrine/guidance updates, LEVELSET snapshots                           | Work items to draft/revise doctrine; link PRs/issues to vault artifacts | Quick clarifications; capture any decision back into Vault/PR issue |
+| **Core / Mind**<br>governing doctrine | Constitution, Charter, Corpus, decision logs, doctrine/guidance updates, LEVELSET snapshots                           | Work items to draft/revise doctrine; link PRs/issues to vault artifacts | Quick clarifications; capture any decision back into Vault/PR issue |
 
 | **Periphery / Body**<br>operating mechanics | Protocols, procedures, preferences, templates/SOPs, stable checklists, automation docs                                   | Tasks/epics for doing the work, tracking status, ownership, deadlines | Live coordination, handoffs, Q&A; move outcomes to Linear/Vault     |
 
