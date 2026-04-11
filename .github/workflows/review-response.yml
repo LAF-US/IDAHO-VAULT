@@ -4,6 +4,10 @@ on:
   pull_request_review:
     types: [submitted]
 
+concurrency:
+  group: review-response-pr-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
 permissions:
   pull-requests: write
   contents: write
@@ -25,14 +29,33 @@ jobs:
           PR_NUMBER: ${{ github.event.pull_request.number }}
           REVIEW_ID: ${{ github.event.review.id }}
           REVIEW_STATE: ${{ github.event.review.state }}
+          REVIEW_COMMIT: ${{ github.event.review.commit_id }}
         run: |
+          echo "Waiting 30 minutes before acting on review feedback so new commits and rapid fixes can settle."
+          sleep 1800
+
+          CURRENT_SHA=$(gh api repos/${GITHUB_REPOSITORY}/pulls/${PR_NUMBER} --jq '.head.sha')
+          if [ "$CURRENT_SHA" != "$REVIEW_COMMIT" ]; then
+            echo "PR head moved from review commit ${REVIEW_COMMIT} to ${CURRENT_SHA}; skipping delayed review acknowledgement."
+            exit 0
+          fi
+
           gh label create "review-required" --color "D93F0B" --description "High-risk, requires Logan's review" --force 2>/dev/null || true
 
           REVIEW_URL="${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/pull/${PR_NUMBER}#pullrequestreview-${REVIEW_ID}"
 
+          HAS_REVIEW_REQUIRED=$(gh pr view "$PR_NUMBER" --json labels --jq '[.labels[].name] | index("review-required") != null')
+
           # Pause auto-merge until feedback is addressed
-          gh pr merge "$PR_NUMBER" --disable-auto 2>/dev/null || true
+          DISABLED_AUTO_MERGE=false
+          if gh pr merge "$PR_NUMBER" --disable-auto 2>/dev/null; then
+            DISABLED_AUTO_MERGE=true
+          fi
           gh pr edit "$PR_NUMBER" --remove-label "auto-merge" 2>/dev/null || true
           gh pr edit "$PR_NUMBER" --add-label "review-required" 2>/dev/null || true
 
-          gh pr comment "$PR_NUMBER" --body "Acknowledged review by @$REVIEWER (${REVIEW_STATE}). Auto-merge paused until recommended changes are addressed. [Review link]($REVIEW_URL)"
+          if [ "$DISABLED_AUTO_MERGE" = "true" ] || [ "$HAS_REVIEW_REQUIRED" != "true" ]; then
+            gh pr comment "$PR_NUMBER" --body "Acknowledged review by @$REVIEWER (${REVIEW_STATE}) after the 30-minute resolution window. Auto-merge remains paused until recommended changes are addressed. [Review link]($REVIEW_URL)"
+          else
+            echo "PR already required review and auto-merge was not active; skipping acknowledgement comment to avoid review sediment."
+          fi

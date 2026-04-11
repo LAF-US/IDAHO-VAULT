@@ -11,6 +11,10 @@ on:
       - 'grok/**'
       - 'serena/**'
 
+concurrency:
+  group: auto-pr-${{ github.ref_name }}
+  cancel-in-progress: true
+
 jobs:
   auto-pr:
     runs-on: ubuntu-latest
@@ -117,6 +121,12 @@ jobs:
             --label "$LABEL" 2>&1 || true)
 
           echo "Created PR: $PR_URL"
+
+      - name: Wait before triggering agent reviews
+        if: steps.classify.outputs.skip != 'true' && steps.check-pr.outputs.pr_exists != 'true'
+        run: |
+          echo "Waiting 30 minutes before triggering agent reviews so PR checks and follow-up pushes can settle."
+          sleep 1800
 
       - name: Trigger agent reviews
         if: steps.classify.outputs.skip != 'true' && steps.check-pr.outputs.pr_exists != 'true'
