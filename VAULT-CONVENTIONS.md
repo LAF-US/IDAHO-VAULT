@@ -201,6 +201,25 @@ restructure the current vault.
 
 
 
+### Obsidian Filename Rule
+
+In this vault, the filename is part of the note interface. Obsidian uses it in
+the sidebar, quick switcher, wikilinks, backlinks, embeds, and everyday
+retrieval.
+
+Rules:
+
+1. Optimize note filenames for Obsidian-visible identity and human retrieval,
+   not just filesystem safety.
+2. Keep filenames cross-platform safe, but preserve the natural note title when
+   the platform allows it.
+3. When filesystem constraints force a compromise, preserve the exact work name
+   in frontmatter `title` and add `aliases` for likely link forms.
+4. Do not replace a human-facing title with an arbitrary slug when the note is
+   meant to be read, linked, and found by humans inside Obsidian.
+
+
+
 ---
 
 
@@ -437,10 +456,13 @@ Use `Full Name` for all internal links Ã¢â‚¬â€ people, places, organi
 
 2. If it is governance or operational doctrine, prefer the root canonical files unless the artifact is specifically a routing shim, breadcrumb, DOCKET update, or bootstrap surface.
 3. If it is corpus content, choose a document class first, then create the note at repo root using the canonical filename pattern and required metadata.
+4. For Obsidian-facing notes, treat the filename as part of the user
+   interface: choose a human-recognizable note name first, then use `title` and
+   `aliases` to preserve exact forms when needed.
 
-4. For daily notes, let Obsidian create the file from `DAILY NOTE TEMPLATE.md` and let the daily-note scripts maintain carryforward and normalization.
+5. For daily notes, let Obsidian create the file from `DAILY NOTE TEMPLATE.md` and let the daily-note scripts maintain carryforward and normalization.
 
-5. GitHub automation may write files and update transport artifacts, but those writes must conform to vault doctrine rather than redefine it.
+6. GitHub automation may write files and update transport artifacts, but those writes must conform to vault doctrine rather than redefine it.
 
 
 

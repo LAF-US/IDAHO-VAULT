@@ -62,10 +62,12 @@ The full connector classification and maze census live in `!/AGENTS.md`, `swarm.
 
 | Agent | Dotfolder | Governance shim | Auto-loaded? | Role |
 | --- | --- | --- | --- | --- |
-| Claude Code | `.claude/` | `.claude/CLAUDE.md` | Yes | **The Abhorsen** (Code Authority) |
-| Gemini CLI | `.gemini/` | `.gemini/GEMINI.md` | Yes | **The Vault Advisor** (Support) |
-| OpenAI Codex | `.codex/` | `.codex/CODEX.md` | Yes | **The Lexicographer** (Scripting) |
+| Claude Code | `.claude/` | `.claude/CLAUDE.md` | Yes | **The Abhorsen** (Claudius) |
+| Gemini CLI | `.gemini/` | `.gemini/GEMINI.md` | Yes | **The Vault Advisor** (Geminiaeus) |
+| OpenAI Codex | `.codex/` | `.codex/CODEX.md` | Yes | **The Lexicographer** (Codices) |
 | GitHub Copilot | `.github/` | `.github/copilot-instructions.md` | Yes | **The Clerk** (Admin) |
+
+
 
 *Full roster including **Grok**, **Perplexity**, **DeepSeek**, **Serena**, and the **Cartographer** available in the [!/AGENTS.md](!/AGENTS.md) ledger.*
 
@@ -107,7 +109,7 @@ config lives in `.vscode/mcp.json`.
 
 Root governance files remain authoritative: `CONSTITUTION.md`, `DECISIONS.md`, `LEVELSET.md`, and `VAULT-CONVENTIONS.md`.
 
-**NETWEB Path Standard:** All filenames must respect cross-platform path portability. See `VAULT-CONVENTIONS.md` for reserved name rules.
+**NETWEB Path Standard:** All filenames must respect cross-platform path portability while remaining Obsidian-native note identities when applicable. See `VAULT-CONVENTIONS.md` for naming, title, and alias rules.
 
 ---
 

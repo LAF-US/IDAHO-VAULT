@@ -44,6 +44,7 @@ by Logan Alvan Finney
 
 *Adopted: 2026-03-16*
 *Revised: 2026-04-02* by Codex, following the LAF-25 / LAF-28 registry repair
+*Amended: 2026-04-10* by Codex, Logan-directed facet terminology clarification
 *Replaces: Claude.md (v0.0) Frameworks*
 
 ---
@@ -63,6 +64,11 @@ by Logan Alvan Finney
 ## II. LAYERS AND LEVELS
 
 The vault is maintained by an agentic swarm of multiple personality-instances (locally called "personas," "individuals," "entities," "conversations," or "agents"). Each agent operates under a defined capability tier and metatextual layer.
+
+When Logan's own recurrent names or internal self-divisions appear in lore,
+touchstones, or narrative analysis, treat them as facets of one human identity
+rather than separate aliases, personas, or agents unless Logan explicitly says
+otherwise.
 
 This layer map is still under revision, but the control principle is stable: capability must be explicit, scoped, and reversible.
 
@@ -163,7 +169,7 @@ Amendments require:
 
 ---
 
-*Last updated: 2026-04-02*
+*Last updated: 2026-04-10*
 
 *Status: pending revision-synthesis and congressional adoption, post-consolidation court.*
 

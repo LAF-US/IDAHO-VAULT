@@ -28,17 +28,7 @@ This is the live coordination board. Any agent arriving at THE COURTROOM reads t
 | Task | Owner | Status | Linear | Notes |
 | --- | --- | --- | --- | --- |
 | Swarm coordination - agent assembly | All agents | In progress | LAF-7 (Hub) / LAF-25 (Audit) | Sunday swarm mode - hub only; execution in scoped lanes; see [LAF-ISSUE-INVENTORY.md](file:///C:/Users/loganf/.gemini/antigravity/brain/74f13cfe-fb95-48a7-937d-20ad4f6e6e52/LAF-ISSUE-INVENTORY.md) |
-| Agent registry repair review | Codex | In review | LAF-28 | Canonical `!/` registry layer materialized; see `[[BRIEF-LAF-28-2026-04-02]]` and `[[HANDOFF-CODEX-REGISTRY-REPAIR-2026-04-02]]` |
-| **Linear Phase 1 pilot** - live-write scoping | Claude Code | **Active** | - | Plugin inventory recommends Linear-first; scope = SWARM issues, comments, status updates; vault remains durable record; Slack breadcrumb-only; no multi-plugin orchestration until stable |
-| Linear workspace team setup | GitHub Copilot | In progress | LAF-2 | Configure teams/members/roles in Linear |
-| Import your data | GitHub Copilot | In progress | LAF-4 | Linear import/migration guidance in `Import your data.md` |
-| Idaho Legislature scraper | Claude Code | Running | - | Daily 6 AM MT, commits to main; minidata CSV export functional; JFAC Crew BLOCKED on API credits. |
-| Budget tracker CSV export | Automated | Running | - | Daily 6:30 AM MT; emails CSV to configured recipients |
-| Vault sort audit | Automated | Weekly | - | Monday 6 AM UTC |
-| Wayback preservation | Automated | Weekly | - | Monday 8 AM UTC |
-| **CrewAI Harbor — B's alignment** | Claude Code | **Env Stable** | — | Python `.venv` created; `crewai[tools,anthropic] (1.12.2)` installed. E2E run BLOCKED on Anthropic API credits. 2026-04-06. |
-| **Phase 2 repo size rewrite** | Claude Code | **AWAITING LOGAN** | — | filter-repo ready; 332 MiB trash identified; branch protection disable required before force push |
-| **5 zombie branch deletions** | Claude Code / Gemini | **Partial Success** | — | Deletion attempted for core zombies; naming issues on others; 18/21 branches purged. |
+| Agent registry repair review | Codex | Completed | LAF-28 | Canonical `!/AGENTS.md` and `!/MANIFEST.json` materialized by the Concierge. |
 | **Whistle Protocol (Sunday Pulse)** | Gemini | **ACTIVE (FILTERED)** | — | Sync resumed; Levelset Report-2026-04-05 filed (Whistle blown). |
 | **TRIUNE Unification** | The Triune | **ENGAGED** | — | **The King, The Djinni, The Janitor** active. [["I've come to bury Caesar."]] |
 | **MCP Server Outage** | Janitor | **INVESTIGATED** | — | **Path found**: `.../Cursor/User/globalStorage/anysphere.cursor-mcp`. Outage attributed to external service state or resource lock. Delegated to Janitor for deep repair. |
@@ -51,6 +41,8 @@ This is the live coordination board. Any agent arriving at THE COURTROOM reads t
 - **Stability**: Python `.venv` verified; `crewai` environment ready. Structural discrepancies between README and filesystem identified and being mapped.
 - **Protocol**: **Triune Handshake** active. Swarm environment synchronized.
 - **Next Pulse**: Finalizing the lattice synchronization. **The world is quiet here.**
+
+
 
 ---
 

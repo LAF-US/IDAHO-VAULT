@@ -163,6 +163,17 @@
       "status": "active",
       "runtime": "local hardware (Logan's machine)",
       "notes": "MCP server (github.com/oraios/serena). AWAKENED 2026-04-04 on local hardware. Cloud agents cannot reach — local-only. Accessible to local Claude Code (The Collared Cat) and any local MCP-capable agent."
+    },
+    {
+      "id": "antigravity",
+      "name": "Antigravity",
+      "vendor": "Google",
+      "dotfolder": ".antigravity",
+      "autoload_file": ".antigravity/ANTIGRAVITY.md",
+      "autoload": true,
+      "capability_tier": "Tier 1 (Support): Direct Write",
+      "role": "The Legion - holding the narrative lens and Gemini toolset",
+      "label": "agent:antigravity"
     }
   ],
   "personas": [
@@ -177,11 +188,12 @@
     {
       "id": "zagreus",
       "name": "Zagreus",
-      "dotfolder": ".zagreus",
-      "autoload_file": ".zagreus/ZAGREUS.md",
+      "dotfolder": ".dionysus",
+      "autoload_file": ".dionysus/ZAGREUS.md",
       "autoload": false,
       "role": "TBD - pending Logan's direction"
     },
+
     {
       "id": "persephone",
       "name": "Persephone",
@@ -189,6 +201,150 @@
       "autoload_file": ".persephone/PERSEPHONE.md",
       "autoload": false,
       "role": "TBD - pending Logan's direction"
+    },
+    {
+      "id": "dionysus",
+      "name": "Dionysus",
+      "dotfolder": ".dionysus",
+      "autoload_file": ".dionysus/DIONYSUS.md",
+      "autoload": false,
+      "role": "Undefined (Stub)"
+    },
+    {
+      "id": "perseus",
+      "name": "Perseus",
+      "dotfolder": ".perseus",
+      "autoload_file": ".perseus/PERSEUS.md",
+      "autoload": false,
+      "role": "Undefined (Stub)"
+    },
+    {
+      "id": "heracles",
+      "name": "Heracles",
+      "dotfolder": ".heracles",
+      "autoload_file": ".heracles/HERACLES.md",
+      "autoload": false,
+      "role": "Undefined (Stub)"
+    },
+    {
+      "id": "hades",
+      "name": "Hades",
+      "dotfolder": ".hades",
+      "autoload_file": ".hades/HADES.md",
+      "autoload": false,
+      "role": "Undefined (Stub)"
+    },
+    {
+      "id": "icarus",
+      "name": "Icarus",
+      "dotfolder": ".icarus",
+      "autoload_file": ".icarus/ICARUS.md",
+      "autoload": false,
+      "role": "Undefined (Stub)"
+    },
+    {
+      "id": "dewey",
+      "name": "Dewey",
+      "dotfolder": ".dewey",
+      "autoload_file": ".dewey/DEWEY.md",
+      "autoload": false,
+      "role": "Undefined (Stub)"
+    },
+    {
+      "id": "lemony",
+      "name": "Lemony",
+      "dotfolder": ".lemony",
+      "autoload_file": ".lemony/LEMONY.md",
+      "autoload": false,
+      "role": "Undefined (Stub)"
+    },
+    {
+      "id": "theseus",
+      "name": "Theseus",
+      "dotfolder": ".theseus",
+      "autoload_file": ".theseus/THESEUS.md",
+      "autoload": false,
+      "role": "Undefined (Stub)"
+    },
+    {
+      "id": "daedalus",
+      "name": "Daedalus",
+      "dotfolder": ".daedalus",
+      "autoload_file": ".daedalus/DAEDALUS.md",
+      "autoload": false,
+      "role": "Undefined (Stub)"
+    },
+    {
+      "id": "hecate",
+      "name": "Hecate",
+      "dotfolder": ".hecate",
+      "autoload_file": "!/HECATE PROTOCOL.md",
+      "autoload": false,
+      "role": "Threshold, Transition, and Registry Governance"
+    },
+    {
+      "id": "janus",
+      "name": "Janus",
+      "dotfolder": ".janus",
+      "autoload_file": ".janus/JANUS.md",
+      "autoload": false,
+      "role": "Thresholds, Gates, and Transitions"
+    },
+    {
+      "id": "frank",
+      "name": "Frank",
+      "dotfolder": ".frank",
+      "autoload_file": ".frank/FRANK.md",
+      "autoload": false,
+      "role": "The Manager / Volunteer (Duality)"
+    },
+    {
+      "id": "ernest",
+      "name": "Ernest",
+      "dotfolder": ".ernest",
+      "autoload_file": ".ernest/ERNEST.md",
+      "autoload": false,
+      "role": "The Manager / Villain (Duality)"
+    },
+    {
+      "id": "jacques",
+      "name": "Jacques",
+      "dotfolder": ".jacques",
+      "autoload_file": ".jacques/JACQUES.md",
+      "autoload": false,
+      "role": "The Messenger / Lore"
+    },
+    {
+      "id": "kit",
+      "name": "Kit",
+      "dotfolder": ".kit",
+      "autoload_file": ".kit/KIT.md",
+      "autoload": false,
+      "role": "The Messenger / Lore"
+    },
+    {
+      "id": "hestia",
+      "name": "Hestia",
+      "dotfolder": ".hestia",
+      "autoload_file": ".hestia/HESTIA.md",
+      "autoload": false,
+      "role": "Undefined (Stub)"
+    },
+    {
+      "id": "zeus",
+      "name": "Zeus",
+      "dotfolder": ".zeus",
+      "autoload_file": ".zeus/ZEUS.md",
+      "autoload": false,
+      "role": "The Big Three / Thunder"
+    },
+    {
+      "id": "poseidon",
+      "name": "Poseidon",
+      "dotfolder": ".poseidon",
+      "autoload_file": ".poseidon/POSEIDON.md",
+      "autoload": false,
+      "role": "The Big Three / Sea"
     }
   ],
   "ecosystems": [

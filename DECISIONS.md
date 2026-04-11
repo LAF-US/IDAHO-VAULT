@@ -50,7 +50,7 @@ related:
 
 ﻿# DECISIONS.md â€” Confirmed Logan-Approved Decisions
 
-*Last updated: 2026-04-02*
+*Last updated: 2026-04-10*
 
 ---
 
@@ -92,6 +92,7 @@ related:
 | 20         | 2026-03-28 | Manifest-Based Coordination                   | â³ Pending   | Inter-agent coordination via shared manifest, not peer-to-peer messaging  |
 | 21         | 2026-03-28 | Agent Behavioral Model (No Fabrication)       | âš ï¸ CODE AUTHORITY REVIEW | Ground truth only; critical guard against hallucination |
 | 22         | 2026-04-03 | Grimoire opened — `!/GRIMOIRE/` canonical     | ✅ CONFIRMED | Chorus Bootstrap Decision 2 executed. Three-layer model (Charter / Corpus / Grimoire) adopted. Codex→Corpus in VAULT-CONVENTIONS.md. Rosetta Stone filed by Gemini. |
+| 23         | 2026-04-10 | Facet terminology for Logan self-divisions     | CONFIRMED    | Logan / Alvan / Francois and similar recurrent divisions are facets of one stone, not separate aliases, personas, or agents unless Logan says otherwise. |
 
 ---
 
@@ -272,6 +273,15 @@ Principles reviewed. Findings:
 - Safeguard 2 ("If a file is not visible, it does not exist") â€” **note nuance**: applies to external chat agents (who only see what Logan pastes). Code agents with filesystem access (Claude Code, Codex, Gemini CLI) CAN read files not in their active context. Recommend scoping this safeguard to external/chat agents or rewording to "If a file has not been read or provided, do not assume its content."
 - No technical conflicts with existing governance identified.
 - **Verdict:** Sound principles. Pending Logan's approval to confirm as official decision. Minor reword on Safeguard 2 recommended before publishing.
+
+### Decision 23: Facet Terminology for Logan's Self-Divisions
+
+**Date:** 2026-04-10
+**Topic:** Interpretive terminology for recurrent Logan-name divisions
+**Status:** CONFIRMED
+**Decision:** When Logan's recurrent names or internal self-divisions appear in lore, touchstones, or narrative analysis, treat them as facets of one human identity rather than separate aliases, personas, or agents unless Logan explicitly says otherwise.
+**Examples:** Logan / Alvan / Francois in GEMINIAEUS-era material are facets of the same stone.
+**Rationale:** `facet` matches the vault's gemstone grammar better than `alias`, `persona`, or `mode`. It preserves one underlying human identity while allowing multiple true cuts, faces, or angles of the same stone.
 
 ---
 

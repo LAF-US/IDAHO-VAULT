@@ -7,7 +7,12 @@ related:
 - agent
 - persona
 - voice
+aliases:
+  - The Abhorsen
+  - The Abhorren
+  - Claude Code
 authority: LOGAN
+
 ---
 # Claude
 

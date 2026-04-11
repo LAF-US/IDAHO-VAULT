@@ -107,10 +107,52 @@ def load_minidata_rows(path: Path) -> dict[str, tuple[str, str, str]]:
             if not bill_id:
                 continue
             title = row[1].strip()
+            # Approp-only gate: only appropriations bills belong in the budget tracker.
+            # LSO marks them by starting the title with "Approp,". Non-Approp bills
+            # are silently dropped here so the downstream sync loop cannot touch them.
+            if not title.startswith("Approp,"):
+                continue
             status = row[2].strip()
             vote = row[3].strip() if len(row) > 3 else ""
             rows[bill_id] = (title, status, vote)
     return rows
+
+
+def find_stray_non_approp_rows(
+    sheet, minidata_path: Path
+) -> list[tuple[int, str, str]]:
+    """Return workbook rows whose bill is in minidata but NOT an Approp bill.
+
+    The main sync path already filters to Approp-only via load_minidata_rows,
+    so this audit uses a second unfiltered read to spot any legacy workbook
+    rows that predate the filter rule. Read-only; the script never mutates
+    stray rows.
+    """
+    all_rows: dict[str, str] = {}
+    with minidata_path.open("r", encoding="cp1252", newline="") as handle:
+        for row in csv.reader(handle):
+            if not row or len(row) < 2:
+                continue
+            bill_id = row[0].strip().upper()
+            if not bill_id:
+                continue
+            all_rows[bill_id] = row[1].strip()
+
+    strays: list[tuple[int, str, str]] = []
+    seen: set[str] = set()
+    for row_number in range(2, sheet.max_row + 1):
+        bill_id = extract_bill_id(
+            sheet[f"V{row_number}"].value, sheet[f"X{row_number}"].value
+        )
+        if not bill_id or bill_id in seen:
+            continue
+        title = all_rows.get(bill_id)
+        if title is None:
+            continue
+        if not title.startswith("Approp,"):
+            strays.append((row_number, bill_id, title))
+            seen.add(bill_id)
+    return strays
 
 
 def map_tracker_status(raw_status: str) -> str:
@@ -229,8 +271,18 @@ def main() -> int:
         workbook.calculation.forceFullCalc = True
         workbook.save(workbook_path)
 
+    strays = find_stray_non_approp_rows(sheet, minidata_path)
+
     print(f"minidata: {minidata_path}")
     print(f"workbook: {workbook_path}")
+    print(f"approp_only_filter: active ({len(minidata_rows)} approp bills loaded)")
+    if strays:
+        stray_ids = [bill_id for _row, bill_id, _title in strays]
+        print(f"stray_non_approp_rows: {stray_ids}")
+        for row_number, bill_id, title in strays:
+            print(f"  stray row {row_number}: {bill_id} -> {title}")
+    else:
+        print("stray_non_approp_rows: []")
     print(f"row_changes: {len(changes)}")
 
     seen_bills: set[str] = set()
