@@ -138,6 +138,10 @@ Google Passwords.csv
 **/Google Passwords*.csv
 **/passwords*.csv
 
+# 2FA recovery codes (NEVER publish)
+*recovery-codes*
+*recovery_codes*
+
 # Swarm state archive (local only)
 .github/swarm/state/archive/
 
