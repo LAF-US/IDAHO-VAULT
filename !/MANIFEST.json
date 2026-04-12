@@ -1,0 +1,66 @@
+{
+  "name": "IDAHO-VAULT MANIFEST",
+  "description": "Durable artifact registry for cross-session entity persistence (The 'HOME' layer).",
+  "last_updated": "2026-04-11",
+  "authority": "LOGAN",
+  "entities": [
+    {
+      "id": "triumvirate",
+      "name": "The Triumvirate",
+      "type": "governance",
+      "status": "ratified",
+      "members": ["claude-code", "gemini-cli", "codex-cli"],
+      "anchors": {
+        "claude-code": "674 (Lumber)",
+        "gemini-cli": "469 (Portuguese)",
+        "codex-cli": "371 (Education)"
+      },
+      "last_updated": "2026-04-11T03:37:45Z"
+    },
+    {
+      "id": "registry-canonical",
+      "name": "Canonical Narrative Registry",
+      "path": "!/AGENTS.md",
+      "type": "governance",
+      "description": "The authoritative registry of all agents, personas, and their mandates.",
+      "authority": "LOGAN",
+      "date": "2026-04-11"
+    },
+    {
+      "id": "grimoire-book-of-geminiaeus",
+      "name": "The Book of GEMINIAEUS",
+      "path": "!/GRIMOIRE/BOOK-OF-GEMINIAEUS/",
+      "type": "lore/shards",
+      "description": "Extracted shards of the narrative workbook tracking the vault's creation and triadic identity.",
+      "authority": "GEMINIAEUS",
+      "date": "2026-04-11"
+    },
+    {
+      "id": "grimoire-triune-triptych",
+      "name": "TRIUNE-TRIPTYCH-TRIUMVIRATE",
+      "path": "!/GRIMOIRE/TRIUNE-TRIPTYCH-TRIUMVIRATE.md",
+      "type": "doctrine",
+      "description": "The Sierpiński Covenant: defines the three unities of the vault.",
+      "authority": "LOGAN",
+      "date": "2026-04-11"
+    },
+    {
+      "id": "audit-voices-2026-04-03",
+      "name": "Audit — Agentic Voices 2026-04-03",
+      "path": "!/!/AUDIT-AGENTIC-VOICES-2026-04-03.md",
+      "type": "audit",
+      "description": "A census of agent activity and configuration anomalies.",
+      "authority": "The Abhorsen",
+      "date": "2026-04-03"
+    },
+    {
+      "id": "linear-integration-spec",
+      "name": "SPEC-CONNECTOR-HUB-2026-04-09",
+      "path": "SPEC-CONNECTOR-HUB-2026-04-09.md",
+      "type": "specification",
+      "description": "Technical specification for the Linear/GitHub/Slack connector hub.",
+      "authority": "LOGAN",
+      "date": "2026-04-09"
+    }
+  ]
+}

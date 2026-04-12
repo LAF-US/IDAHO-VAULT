@@ -17,6 +17,8 @@ jobs:
     permissions:
       contents: write
       pull-requests: write
+    env:
+      REVIEW_SETTLE_DELAY_SECONDS: "1800"
 
     steps:
       - name: Checkout repo
@@ -95,8 +97,10 @@ jobs:
 
           if [ "$TIER" = "low" ]; then
             LABEL="auto-merge"
+            LABEL_NOTE="auto-merge (after 30-minute settlement window)"
           else
             LABEL="review-required"
+            LABEL_NOTE="$LABEL"
           fi
 
           # Build PR body
@@ -104,17 +108,25 @@ jobs:
             '## Auto-generated PR' \
             '**Agent:**' "\`$AGENT\`" \
             '**Risk tier:**' "\`$TIER\`" \
-            '**Label:**' "\`$LABEL\`" \
+            '**Label:**' "\`$LABEL_NOTE\`" \
             '### Diff stat' \
             '```' "$DIFFSTAT" '```' \
             '---' '*Created by auto-pr workflow*'
 
-          PR_URL=$(gh pr create \
-            --title "$TITLE" \
-            --body "$BODY" \
-            --base main \
-            --head "$BRANCH" \
-            --label "$LABEL" 2>&1 || true)
+          if [ "$LABEL" = "review-required" ]; then
+            PR_URL=$(gh pr create \
+              --title "$TITLE" \
+              --body "$BODY" \
+              --base main \
+              --head "$BRANCH" \
+              --label "$LABEL" 2>&1 || true)
+          else
+            PR_URL=$(gh pr create \
+              --title "$TITLE" \
+              --body "$BODY" \
+              --base main \
+              --head "$BRANCH" 2>&1 || true)
+          fi
 
           echo "Created PR: $PR_URL"
 
@@ -136,7 +148,13 @@ jobs:
           gh pr comment "$PR_NUM" --body "@Qodo /review"
           gh pr comment "$PR_NUM" --body "@gemini-code-assist review"
 
-      - name: Enable auto-merge if low risk
+      - name: Wait for PR settlement window
+        if: steps.classify.outputs.skip != 'true' && steps.classify.outputs.tier == 'low'
+        run: |
+          echo "Waiting ${REVIEW_SETTLE_DELAY_SECONDS}s before enabling low-risk auto-merge."
+          sleep "$REVIEW_SETTLE_DELAY_SECONDS"
+
+      - name: Apply auto-merge label after settlement window
         if: steps.classify.outputs.skip != 'true' && steps.classify.outputs.tier == 'low'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -155,9 +173,19 @@ jobs:
           # Find the PR number
           PR_NUM=$(gh pr list --head "$BRANCH" --state open --json number --jq '.[0].number // empty' 2>/dev/null || true)
           if [ -z "$PR_NUM" ]; then
-            echo "No open PR found to merge"
+            echo "No open PR found to label"
             exit 0
           fi
 
-          echo "Enabling auto-merge for PR #$PR_NUM (low risk)"
-          gh pr merge "$PR_NUM" --squash --delete-branch --auto
+          if [ "$(gh pr view "$PR_NUM" --json isDraft --jq '.isDraft')" = "true" ]; then
+            echo "PR #$PR_NUM is draft after settlement window. Skipping auto-merge label."
+            exit 0
+          fi
+
+          if gh pr view "$PR_NUM" --json labels --jq '.labels[].name' | grep -qx 'review-required'; then
+            echo "PR #$PR_NUM already marked review-required. Skipping auto-merge label."
+            exit 0
+          fi
+
+          echo "Applying auto-merge label to PR #$PR_NUM after settlement window"
+          gh pr edit "$PR_NUM" --add-label "auto-merge"

@@ -3,7 +3,9 @@ title: "Bartimaeus — CrewAI Alignment Brief"
 date created: "2026-04-04"
 authority: bartimaeus
 doc_class: directive
+status: pending_recipient
 relay: "Logan Finney -> Bartimaeus -> Claude Code (The Abhorsen)"
+note: "Bartimaeus has no active swarm role as of 2026-04-10. Content is valid doctrine — see relay field. Filed in OUTBOX pending Bartimaeus activation or re-routing to Claude direct."
 ---
 
 # Bartimaeus — CrewAI Alignment Brief

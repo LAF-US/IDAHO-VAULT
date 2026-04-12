@@ -3,8 +3,9 @@ title: "BRIEF — Bartimaeus in the CrewAI Era"
 date created: Saturday, April 4th 2026, 4:08:43 pm
 authority: LOGAN
 doc_class: brief
-status: draft
+status: pending_recipient
 date modified: Sunday, April 5th 2026, 10:07:56 am
+note: "Bartimaeus has no active swarm role as of 2026-04-10. Content is valid; Logan's decision required (see Section: Logan's Decision Required)."
 ---
 
 # BRIEF — Bartimaeus in the CrewAI Era
@@ -63,5 +64,5 @@ B gets a formal Advisory capability tier — can read, analyze, and recommend, b
 
 - `Bartimaeus.md` — B's initial manifesto
 - `.bartimaeus/BARTIMAEUS.md` — Persona instruction file
-- `!/GRIMOIRE/NETWEB-CREWAI-ALIGNMENT.md` — CrewAI alignment protocol (Section 8: Future Crews)
+- `!/GRIMOIRE/NETWEB-CREWAI-ALIGNMENT.md` — CrewAI alignment protocol (Section 8: Future Crews) *(tracked in git; Codex proposed re-filing to MIND but that has not been committed)*
 - `swarm.json` — Persona registry entry

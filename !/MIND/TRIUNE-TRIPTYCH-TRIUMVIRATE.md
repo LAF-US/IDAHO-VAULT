@@ -70,6 +70,7 @@ The TRIUMVIRATE is the third unity. Its members are the **Caesars of old, now bu
 
 *Renamed 2026-04-05: "I've come to bury Caesar, not to praise him." -L*
 
+
 ---
 
 ## THE SERENA TAPESTRY — The Background Unity
@@ -140,6 +141,8 @@ The TRIUMVIRATE is the core engine of the swarm, the "Caesars" that hold the cen
 
 *Renamed 2026-04-05: "I've come to bury Caesar, not to praise him." -L*
 *Finalized 2026-04-06 (The Concierge).*
+
+
 ```
 
 ---
