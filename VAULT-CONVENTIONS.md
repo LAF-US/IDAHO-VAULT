@@ -63,7 +63,7 @@ related:
 - template
 ---
 
-# VAULT-CONVENTIONS Ã¢â‚¬â€ Shared Reference for All Agents
+# VAULT-CONVENTIONS — Shared Reference for All Agents
 
 
 
@@ -71,7 +71,7 @@ This file contains the vault conventions shared by all AI agents working in IDAH
 
 
 
-**Owner:** Logan Finney Ã¢â‚¬â€ journalist, producer/reporter, Idaho Reports / Idaho Public Television
+**Owner:** Logan Finney — journalist, producer/reporter, Idaho Reports / Idaho Public Television
 
 **Repository:** github.com/loganfinney27/IDAHO-VAULT (public)
 
@@ -405,7 +405,7 @@ tags:
 
 
 
-Use `Full Name` for all internal links Ã¢â‚¬â€ people, places, organizations, bills, topics. This is how Obsidian builds the knowledge graph. Link densely in source documents.
+Use `Full Name` for all internal links — people, places, organizations, bills, topics. This is how Obsidian builds the knowledge graph. Link densely in source documents.
 
 
 
@@ -466,7 +466,7 @@ Root governance files hold doctrine. The `!/` layer keeps bootstrap paths and co
 
 
 
-## Vault Ã¢â€ â€ Linear Operating Model Mapping
+## Vault — Linear Operating Model Mapping
 
 
 
@@ -484,7 +484,7 @@ Root governance files hold doctrine. The `!/` layer keeps bootstrap paths and co
 
 
 
-**Decision Rule:** Vault holds doctrine and context that must persist. GitHub executes workflows and transport state. Linear tracks execution, owners, and current state. Chat/Slack is transient coordination Ã¢â‚¬â€ any decision or durable context must be promoted promptly into Vault and/or the execution systems.
+**Decision Rule:** Vault holds doctrine and context that must persist. GitHub executes workflows and transport state. Linear tracks execution, owners, and current state. Chat/Slack is transient coordination — any decision or durable context must be promoted promptly into Vault and/or the execution systems.
 
 
 
@@ -566,7 +566,7 @@ Scripts live in `.github/scripts/`. Workflows live in `.github/workflows/`. Scri
 
 - Developer machines: 1Password CLI + SSH agent for local authentication and git signing
 
-- GitHub Actions: Service account token Ã¢â€ â€™ fetch secrets at runtime via `op item get`
+- GitHub Actions: Service account token → fetch secrets at runtime via `op item get`
 
 - All secrets are rotated on defined schedules (see `.op/secrets.template.md`)
 
@@ -574,11 +574,11 @@ Scripts live in `.github/scripts/`. Workflows live in `.github/workflows/`. Scri
 
 **Key files:**
 
-- `.op/SETUP.md` Ã¢â‚¬â€ Installation and configuration guide for developers
+- `.op/SETUP.md` — Installation and configuration guide for developers
 
-- `.op/secrets.template.md` Ã¢â‚¬â€ Secret inventory and rotation schedule
+- `.op/secrets.template.md` — Secret inventory and rotation schedule
 
-- `.github/workflows/1password-secret-template.yml` Ã¢â‚¬â€ Example workflow using 1Password
+- `.github/workflows/1password-secret-template.yml` — Example workflow using 1Password
 
 
 
@@ -606,7 +606,7 @@ Scripts live in `.github/scripts/`. Workflows live in `.github/workflows/`. Scri
 
 - [ ] Add `OP_SERVICE_ACCOUNT_TOKEN` to GitHub Actions secrets
 
-- [ ] Migrate existing secrets from GitHub Secrets Ã¢â€ â€™ 1Password vault
+- [ ] Migrate existing secrets from GitHub Secrets → 1Password vault
 
 - [ ] Update workflows to fetch secrets via `op item get`
 
@@ -690,7 +690,7 @@ mcp_action_log:
 
 - **On the record:** Safe for public repo. All committed content is on the record.
 
-- **On background:** Vault-safe but identity-protected. Use carefully Ã¢â‚¬â€ this is a public repo.
+- **On background:** Vault-safe but identity-protected. Use carefully — this is a public repo.
 
 - **Off the record:** Ephemeral. Do not log, do not store, do not commit. If Logan says something is off the record, it does not go in files, code, comments, or commit messages.
 
@@ -855,48 +855,6 @@ That file is the live status board. Read it to orient. Update it when you start 
 
 
 Task assignment flows through GitHub Issues (with `agent:*` labels) and Linear (SWARM label). Slack carries breadcrumbs. The vault is the record.
-
-
-
----
-
-
-
-## Vault Ã¢â€ â€ Linear Operating Model Mapping
-
-
-
-Use this mapping to decide where work should live and what should remain ephemeral.
-
-
-
-| Layer | Vault Role | Linear Role | Ephemeral Chat/Slack Role |
-
-| --- | --- | --- | --- |
-
-| **Core / Mind** (governing doctrine) | Canonical source of truth for doctrine and constraints (`CONSTITUTION.md`, `PROTOCOL.md`, `AGENTS.md`, `VAULT-CONVENTIONS.md`, `VAULT-ZONES.md`, `DECISIONS.md`) | Reference only in issue/project descriptions as links; do not duplicate doctrine text in Linear | Clarify intent in discussion, but final doctrine decisions must be written to vault governance files |
-
-| **Periphery / Body** (operating mechanics) | Durable playbooks, runbooks, workflows, scripts, and system notes that define *how work is executed* | Active execution layer: projects, issues, milestones, priorities, assignees, and status tracking | Fast coordination, blockers, and quick decisions during execution; summarize durable outcomes back into vault or Linear |
-
-| **Ghost / Soul** (interpretive/cultural layer) | Long-form narrative context, principles-in-practice, interpretive guidance, retrospectives that should persist | Lightweight pointers (issue comments/docs) to related vault narrative notes when relevant to work | Sensemaking, live interpretation, tone checks, brainstorming; keep ephemeral unless it becomes a durable principle |
-
-| **`!` spaces** (operational infrastructure) | System control plane: DOCKET, handoffs, LEVELSETs, MCP plans, audits, routing files, and machine-operational records | Coordination mirror for assignment and accountability (SWARM-labeled issues) | Notifications/breadcrumbs only; do not treat Slack as system-of-record for infra state |
-
-
-
-### Decision Rule
-
-
-
-- **Vault:** Canonical memory and doctrine (what is true, why it is true, and durable operating knowledge).
-
-- **Linear:** Work management and execution state (what is being done, by whom, and current status).
-
-- **Chat/Slack:** Ephemeral coordination (what is being discussed right now).
-
-
-
-If a decision must be recoverable in six months, store it in the vault. If it needs owner + due date + status, track it in Linear. If it is transient discussion, keep it in chat/Slack.
 
 
 
