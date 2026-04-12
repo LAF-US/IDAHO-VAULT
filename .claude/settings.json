@@ -1,4 +1,5 @@
 {
+  "enabledMcpjsonServers": ["linear"],
   "hooks": {
     "SessionStart": [
       {

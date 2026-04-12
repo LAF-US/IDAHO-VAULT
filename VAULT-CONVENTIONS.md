@@ -904,6 +904,14 @@ If a decision must be recoverable in six months, store it in the vault. If it ne
 
 
 
+## Runtime Portability Standard (MESHWEB)
+
+Cross-environment runtime portability — cloud instance vs. local CLI vs. GitHub Actions CI. Defines which capabilities are available in each environment, substitution conventions for gaps, and the MESHWEB Registry of env-scoped artifacts.
+
+See `MESHWEB.md` for the full standard.
+
+---
+
 ## Portable Path Standard (NETWEB)
 
 
