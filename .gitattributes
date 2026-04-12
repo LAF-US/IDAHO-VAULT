@@ -62,10 +62,10 @@
 *.psm1 text eol=lf
 *.psd1 text eol=lf
 *.bat text eol=lf
-*.cmd text eol=lf
+*.cmd -text
 *.ini text eol=lf
 *.cfg text eol=lf
 *.conf text eol=lf
-*.csv text eol=lf
+*.csv -text
 *.tsv text eol=lf
 *.mdx text eol=lf
