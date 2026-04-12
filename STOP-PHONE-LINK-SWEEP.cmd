@@ -1,8 +1,10 @@
 @echo off
 setlocal
 
+set "PID_FILE=%~dp0!\INBOX\_phone-link-watcher.pid"
+
 powershell -NoLogo -NoProfile -ExecutionPolicy Bypass -Command ^
-	"$procs = Get-CimInstance Win32_Process | Where-Object { $_.Name -match '^powershell(\.exe)?$' -and $_.CommandLine -match '-File' -and $_.CommandLine -match 'phone-link-auto-sweep\.ps1' }; $stopped = 0; foreach ($p in $procs) { try { Stop-Process -Id $p.ProcessId -Force -ErrorAction Stop; $stopped++; Write-Host ('Stopped PID ' + $p.ProcessId) } catch { Write-Host ('Could not stop PID ' + $p.ProcessId) } }; Write-Host ('Stopped ' + $stopped + ' autosweep process(es).')"
+	"$pidFile = '%PID_FILE%'; if (-not (Test-Path -LiteralPath $pidFile)) { Write-Host 'No watcher PID file found.'; exit 0 }; $raw = Get-Content -LiteralPath $pidFile -ErrorAction SilentlyContinue | Select-Object -First 1; if (-not $raw) { Write-Host 'Watcher PID file is empty.'; Remove-Item -LiteralPath $pidFile -Force -ErrorAction SilentlyContinue; exit 0 }; $targetPid = 0; if (-not [int]::TryParse($raw, [ref]$targetPid)) { Write-Host ('Watcher PID file is invalid: ' + $raw); Remove-Item -LiteralPath $pidFile -Force -ErrorAction SilentlyContinue; exit 0 }; $proc = Get-Process -Id $targetPid -ErrorAction SilentlyContinue; if ($null -eq $proc) { Write-Host ('Watcher process ' + $targetPid + ' is not running.'); Remove-Item -LiteralPath $pidFile -Force -ErrorAction SilentlyContinue; exit 0 }; try { Stop-Process -Id $targetPid -Force -ErrorAction Stop; Write-Host ('Stopped PID ' + $targetPid) } catch { Write-Host ('Could not stop PID ' + $targetPid) }; Remove-Item -LiteralPath $pidFile -Force -ErrorAction SilentlyContinue"
 
 endlocal
 exit /b 0

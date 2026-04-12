@@ -23,7 +23,6 @@ import zipfile
 from dataclasses import dataclass
 from datetime import UTC, datetime
 from pathlib import Path
-from tempfile import TemporaryDirectory
 from typing import Any
 
 from openpyxl import Workbook
@@ -76,14 +75,16 @@ def load_export_json(input_path: Path) -> Any:
     if input_path.suffix.lower() != ".zip":
         raise ValueError(f"Unsupported input type: {input_path.suffix}")
 
-    with TemporaryDirectory() as tmpdir:
-        with zipfile.ZipFile(input_path) as archive:
-            archive.extractall(tmpdir)
-        extracted = Path(tmpdir)
-        matches = list(extracted.rglob("conversations.json"))
-        if not matches:
+    with zipfile.ZipFile(input_path) as archive:
+        match = next(
+            (name for name in archive.namelist() if name.endswith("conversations.json")),
+            None,
+        )
+        if not match:
             raise FileNotFoundError("Could not find conversations.json inside zip export")
-        return json.loads(matches[0].read_text(encoding="utf-8-sig"))
+        with archive.open(match) as handle:
+            payload = handle.read().decode("utf-8-sig")
+    return json.loads(payload)
 
 
 def safe_sheet_title(raw: str, fallback: str, used: set[str]) -> str:
@@ -224,7 +225,9 @@ def parse_openai_export(data: Any) -> list[Conversation]:
     return result
 
 
-def build_workbook(provider: str, conversations: list[Conversation], output_path: Path) -> None:
+def build_workbook(
+    provider: str, conversations: list[Conversation], input_path: Path, output_path: Path
+) -> None:
     workbook = Workbook()
     index = workbook.active
     index.title = "Sheet1"
@@ -232,7 +235,14 @@ def build_workbook(provider: str, conversations: list[Conversation], output_path
     index.append([f"Bound on {datetime.now(UTC).isoformat()}"])
     index.append(["title", "created_at", "messages", "source_id"])
 
-    used_titles = {"Sheet1"}
+    metadata = workbook.create_sheet("Metadata")
+    metadata.append(["provider", provider])
+    metadata.append(["source_path", str(input_path)])
+    metadata.append(["conversation_count", len(conversations)])
+    metadata.append(["message_count", sum(len(conv.messages) for conv in conversations)])
+    metadata.append(["bound_at", datetime.now(UTC).isoformat()])
+
+    used_titles = {"Sheet1", "Metadata"}
     for conv in conversations:
         index.append([conv.title, conv.created_at, len(conv.messages), conv.source_id])
         sheet = workbook.create_sheet(
@@ -268,7 +278,7 @@ def main() -> None:
         conversations = parse_openai_export(data)
         provider_name = "Codices"
 
-    build_workbook(provider_name, conversations, args.output)
+    build_workbook(provider_name, conversations, args.input, args.output)
     print(f"bound: {args.output}")
     print(f"conversations: {len(conversations)}")
 

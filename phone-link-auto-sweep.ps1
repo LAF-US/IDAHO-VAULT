@@ -7,18 +7,25 @@ param(
 $ErrorActionPreference = 'Stop'
 $TargetDir = Join-Path $VaultDir "!\INBOX"
 $LogPath = Join-Path $TargetDir "_phone-link-watcher.log"
+$PidPath = Join-Path $TargetDir "_phone-link-watcher.pid"
 
 $mutexName = 'Global\IDAHO_VAULT_PHONE_LINK_SWEEP'
 $createdNew = $false
 $mutex = New-Object System.Threading.Mutex($true, $mutexName, [ref]$createdNew)
 if (-not $createdNew) {
-    Write-Output 'Phone Link watcher is already running. Exiting duplicate launch.'
+    if (-not (Test-Path -Path $TargetDir)) { New-Item -ItemType Directory -Force -Path $TargetDir | Out-Null }
+    $line = "$(Get-Date -Format s)  Phone Link watcher is already running. Exiting duplicate launch."
+    Write-Output $line
+    Add-Content -Path $LogPath -Value $line
     exit 0
 }
 
 # Ensure directories exist
 if (-not (Test-Path -Path $SourceDir)) { New-Item -ItemType Directory -Force -Path $SourceDir | Out-Null }
 if (-not (Test-Path -Path $TargetDir)) { New-Item -ItemType Directory -Force -Path $TargetDir | Out-Null }
+
+# Persist the watcher PID so stop/restart can work without CIM access.
+Set-Content -Path $PidPath -Value $PID -Encoding ascii
 
 function Write-Log([string]$msg) {
     $line = "$(Get-Date -Format s)  $msg"
@@ -79,6 +86,7 @@ finally {
     if ($timerSub) { Unregister-Event -SubscriptionId $timerSub.SubscriptionId -ErrorAction SilentlyContinue }
     if ($fsw) { $fsw.Dispose() }
     if ($timer) { $timer.Dispose() }
+    if (Test-Path -Path $PidPath) { Remove-Item -Path $PidPath -Force -ErrorAction SilentlyContinue }
     if ($mutex) {
         try { $mutex.ReleaseMutex() | Out-Null } catch {}
         $mutex.Dispose()

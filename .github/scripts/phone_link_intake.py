@@ -183,7 +183,11 @@ def main():
         # Check for duplication (hash-based)
         if dest_file.exists():
             if file_hash(filepath) == file_hash(dest_file):
-                print(f"  EXISTS (duplicate): {filepath.name}")
+                if is_live and not args.copy:
+                    filepath.unlink()
+                    print(f"  CLEARED (duplicate): {filepath.name}")
+                else:
+                    print(f"  EXISTS (duplicate): {filepath.name}")
                 continue
             # Collision but unique: append hash
             fhash = file_hash(filepath)

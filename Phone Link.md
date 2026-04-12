@@ -44,6 +44,7 @@ This makes it a **reliable, zero-config intake vector** for getting phone-captur
 
 **Script:** `.github/scripts/phone_link_intake.py`
 **Daemon:** `phone-link-auto-sweep.ps1` (local PowerShell watcher)
+**Watcher log:** `!/INBOX/_phone-link-watcher.log`
 
 ### Usage
 
@@ -56,6 +57,9 @@ python .github/scripts/phone_link_intake.py --live-write
 
 # Process and auto-stage for git
 python .github/scripts/phone_link_intake.py --live-write --git-add
+
+# Ensure the watcher starts at login
+START-PHONE-LINK-SWEEP.cmd --register-startup
 ```
 
 ## Conventions
@@ -65,6 +69,7 @@ python .github/scripts/phone_link_intake.py --live-write --git-add
 - **NETWEB Portability:** Filenames are lowercased and date-prefixed.
 - **MCP Guardrails:** Execution requires the `--live-write` flag. Each batch emits a structured YAML `mcp_action_log`.
 - **Durable Record:** A human-readable batch entry is appended to `!/INBOX/intake-log.md`.
+- **Login Persistence:** `START-PHONE-LINK-SWEEP.cmd --register-startup` installs the user-level launcher; `STOP-PHONE-LINK-SWEEP.cmd` uses the watcher PID file instead of CIM process inspection.
 
 ## See Also
 
