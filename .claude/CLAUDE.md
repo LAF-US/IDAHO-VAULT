@@ -38,10 +38,12 @@ This vault uses 1Password for centralized credential management. Credentials (AP
 1. Install 1Password CLI via `scoop install 1password` (or equivalent)
 2. Configure 1Password SSH agent for git signing
 3. Set up 1Password authentication in shell (see `.op/SETUP.md`)
+4. If `op whoami` disagrees with reality, verify `op vault list` or `op item get` before assuming the desktop session is broken
 
 **GitHub Actions:**
 - `OP_SERVICE_ACCOUNT_TOKEN` is the only credential stored in GitHub Secrets
-- All other secrets are fetched from 1Password vault at runtime using `op item get`
+- All other secrets are fetched from 1Password at runtime via secret references and workflow actions
+- Local visible vault names may differ from CI secret-reference paths such as `op://vault-operations/...`
 - Example workflow: `.github/workflows/1password-secret-template.yml`
 
 **Credential inventory:** See `.op/secrets.template.md` for list of secrets, rotation schedules, and access procedures.

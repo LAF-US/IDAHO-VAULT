@@ -6,9 +6,9 @@ type: reference
 
 # 1Password Secrets Inventory
 
-**Vault:** IDAHO-VAULT (or suitable 1Password team vault)  
-**Management:** All secrets centralized in 1Password; GitHub Actions synced via `OP_SERVICE_ACCOUNT_TOKEN`  
-**Updated:** 2026-03-30
+**Vault:** Use the real visible vault from `op vault list`  
+**Management:** Secrets centralized in 1Password; GitHub Actions synced via `OP_SERVICE_ACCOUNT_TOKEN`  
+**Updated:** 2026-04-12
 
 ---
 
@@ -16,12 +16,13 @@ type: reference
 
 | Secret Name | Type | Used By | Current Status | Next Action |
 |---|---|---|---|---|
-| `GitHub Personal Access Token` | Personal Access Token | GitHub API (Linear sync, scraper) | ❌ Not created | Create in 1Password + migrate from GitHub Secrets |
-| `GitHub SSH Key` | SSH Key (Ed25519) | Git commits, pushes, SSH auth | ❌ Not created | Generate or import + register in 1Password |
-| `Linear API Key` | API Key | Linear workspace sync (GitHub Actions) | ⚠️ In GitHub Secrets | Migrate from GitHub Secrets → 1Password |
-| `Idaho Legislature API Key` | API Key | Scraper authentication | ❌ Not created | Create if legislator.idaho.gov requires auth |
-| `Email SMTP Credentials` | Username + Password | Budget tracker email delivery | ❌ Not created | Create if using SMTP service |
-| `OP_SERVICE_ACCOUNT_TOKEN` | Service Token | GitHub Actions → 1Password auth | ⚠️ In GitHub Secrets | Sync from 1Password via manual provisioning |
+| `GitHub Personal Access Token` | Personal Access Token | GitHub API | Not created | Create in 1Password or migrate |
+| `GitHub SSH Key` | SSH Key | Git commits and pushes | Not created | Generate or import |
+| `Linear API Key` | API Key | Linear sync | In GitHub Secrets | Migrate from GitHub Secrets to 1Password |
+| `Idaho Legislature API Key` | API Key | Scraper auth | Not created | Create if needed |
+| `Email SMTP Credentials` | Username + Password | Budget tracker email | Not created | Create if needed |
+| `what3words API Key` | API Key | what3words desktop / CLI lookup | Live item verified | Use `Vault / what3words / credential`; investigate `HTTP 401` behavior |
+| `OP_SERVICE_ACCOUNT_TOKEN` | Service Token | GitHub Actions to 1Password auth | In GitHub Secrets | Sync from 1Password via manual provisioning |
 
 ---
 
@@ -29,141 +30,100 @@ type: reference
 
 | Secret | Rotation Frequency | Last Rotated | Next Due |
 |---|---|---|---|
-| GitHub PAT | 90 days | — | — |
-| SSH Key | Annual or on compromise | — | — |
-| Linear API Key | 180 days | — | — |
-| SMTP credentials | 180 days | — | — |
-| Service account token | 90 days | — | — |
+| GitHub PAT | 90 days | - | - |
+| SSH Key | Annual or on compromise | - | - |
+| Linear API Key | 180 days | - | - |
+| what3words API Key | Provider policy | - | - |
+| SMTP credentials | 180 days | - | - |
+| Service account token | 90 days | - | - |
 
 ---
 
 ## Access Control
 
-- **1Password vault:** Team vault "IDAHO-VAULT" (if org account) or Personal vault (individual account)
-- **GitHub Actions:** Only `OP_SERVICE_ACCOUNT_TOKEN` exposed; all other secrets fetched at runtime via `op item get`
-- **Local developer:** Full access via `op` CLI after authentication
-- **Emergency access:** Backup codes stored in secure location (not repo)
-
----
-
-## Deprecation / Cleanup
-
-| Item | Status | Date Marked | Cleanup Date |
-|---|---|---|---|
-| *(none currently)* | — | — | — |
+- Use the visible vault list from the live desktop account, not a guessed vault name
+- GitHub Actions should expose only `OP_SERVICE_ACCOUNT_TOKEN`
+- Local developer workflows should use `op` against the signed-in desktop context
+- Emergency access remains outside the repo
 
 ---
 
 ## How to Add a New Secret
 
-1. **In 1Password desktop app:**
-   - Vault → "IDAHO-VAULT"
-   - Create new item (Password, SSH Key, or appropriate type)
-   - Title: `[Service] [Credential Type]` (e.g., `Slack Bot Token`)
-   - Save
+1. In the 1Password desktop app:
+   - choose the real target vault
+   - create the item
+   - title it clearly
 
-2. **In GitHub Actions workflow:**
-   ```yaml
-   - name: Fetch Secret from 1Password
-     run: |
-       SECRET=$(op item get "[Service] [Credential Type]" --fields password)
-       echo "::add-mask::$SECRET"
-       echo "SECRET_NAME=$SECRET" >> $GITHUB_ENV
-   ```
+2. In GitHub Actions:
 
-3. **In this file:**
-   - Add row to "Secrets Currently in Use" table
+```yaml
+- name: Fetch Secret from 1Password
+  run: |
+    SECRET=$(op item get "[Secret Name]" --fields password)
+    echo "::add-mask::$SECRET"
+```
+
+3. In this file:
+   - add the secret row
 
 ---
 
 ## How to Rotate a Secret
 
-1. **Generate new credential:**
-   ```bash
-   op generate --length 32 --symbols  # For passwords
-   ssh-keygen -t ed25519 -f ~/.ssh/id_new  # For SSH keys
-   ```
+1. Generate the new credential
+2. Update the 1Password item
+3. Update dependent systems
+4. Update this file
+5. Confirm retrieval:
 
-2. **Update in 1Password:**
-   - Edit item → paste new value
-   - Note old value in history comment: "Rotated from [old]; expires [date]"
-   - Save
-
-3. **Update in dependent systems:**
-   - GitHub (if using PAT)
-   - Linear workspace (if API key)
-   - Third-party services
-   - Local `.ssh/config` (if SSH key)
-
-4. **Update this file:**
-   - Set "Last Rotated" timestamp
-   - Update "Next Due" date
-
-5. **Confirm in workflows:**
-   ```bash
-   op item get "[Secret Name]"  # Verify new value is returned
-   ```
+```bash
+op item get "[Secret Name]"
+```
 
 ---
 
 ## Emergency Procedures
 
-### If a Secret is Compromised
+### If a Secret Is Compromised
 
-1. **Immediately revoke** in source system (GitHub, Linear, service provider)
-2. **Generate replacement** 
-3. **Update in 1Password**
-4. **Rotate in all dependent systems**
-5. **Audit logs** — check for unauthorized access in GitHub Actions, Linear, etc.
-6. **Notify team** (if applicable)
+1. Revoke it in the source system
+2. Generate a replacement
+3. Update it in 1Password
+4. Rotate all dependent systems
+5. Audit logs
 
-### If 1Password Account is Compromised
-
-1. **Change 1Password account password**
-2. **Revoke all service tokens** in 1Password vault
-3. **Generate new `OP_SERVICE_ACCOUNT_TOKEN`**
-4. **Update GitHub Secrets** with new token
-5. **Rotate all secrets** that may have been exposed
-6. **Contact 1Password support** if account unauthorized access detected
-
-### Access Denied After Setup
+### Access Denied or Confusing Auth State
 
 ```bash
-# Re-authenticate
-op signin
-
-# Check current session
-op whoami
-
-# List available vaults
+op account list
 op vault list
-
-# Check vault permissions
-op vault get IDAHO-VAULT
+op whoami
 ```
+
+If `op whoami` and `op vault list` disagree, trust the live retrieval test from `op item get` before concluding the local install is broken.
 
 ---
 
 ## Testing
 
-**Local test (after setup):**
+Local test:
+
 ```bash
-op item get "GitHub Personal Access Token" --fields password
-# Should return the token without errors
+op item get "what3words" --vault Vault --fields label=credential
 ```
 
-**GitHub Actions test:**
-Add a test workflow step:
-```yaml
-- name: Test 1Password Access
-  run: |
-    op item list --vault IDAHO-VAULT
-```
+Expected outcome on Logan's machine as of 2026-04-12:
+
+- secret retrieval succeeds
+- downstream what3words API probe still returns `HTTP 401`
+
+That means the remaining blocker is now most likely the what3words key policy, restriction, or entitlement rather than a missing 1Password secret.
 
 ---
 
 ## Related Documentation
 
-- `.op/SETUP.md` — Installation and configuration steps
-- `!/VAULT-CONVENTIONS.md` — Vault secret management section
-- `.claude/CLAUDE.md` — Claude Code operational context
+- `.op/SETUP.md`
+- `1Password.md`
+- `what3words.md`

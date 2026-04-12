@@ -325,15 +325,29 @@ authenticate_1password() {
     return 1
   fi
 
-  if [ -z "${OP_SERVICE_ACCOUNT_TOKEN:-}" ] && ! op whoami >/dev/null 2>&1; then
-    echo "[warn] 1Password is not authenticated. Run: op signin"
-    AUTH_STATUS="unauthenticated"
-    return 1
+  if [ -n "${OP_SERVICE_ACCOUNT_TOKEN:-}" ]; then
+    echo "[ok] 1Password authenticated via service account token"
+    AUTH_STATUS="service-account-token"
+    return 0
   fi
 
-  echo "[ok] 1Password authenticated"
-  AUTH_STATUS="authenticated"
-  return 0
+  if op whoami >/dev/null 2>&1; then
+    echo "[ok] 1Password authenticated"
+    AUTH_STATUS="authenticated"
+    return 0
+  fi
+
+  # On Logan's Windows desktop, `op whoami` can report a signed-out state
+  # while the live desktop bridge still permits vault and item access.
+  if op vault list >/dev/null 2>&1; then
+    echo "[warn] 1Password desktop session is usable even though 'op whoami' failed"
+    AUTH_STATUS="desktop-session-usable"
+    return 0
+  fi
+
+  echo "[warn] 1Password is not authenticated. Run: op signin"
+  AUTH_STATUS="unauthenticated"
+  return 1
 }
 
 

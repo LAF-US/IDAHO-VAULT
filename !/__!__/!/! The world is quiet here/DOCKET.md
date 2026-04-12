@@ -1,8 +1,8 @@
 ---
-updated: 2026-04-05
+updated: 2026-04-12
 status: AFK - SWARM OPERATIONAL
 date created: Monday, March 30th 2026, 7:54:37 pm
-date modified: Sunday, April 5th 2026, 7:12:00 pm
+date modified: Sunday, April 12th 2026, 10:30:00 pm
 ---
 
 # THE DOCKET
@@ -13,11 +13,13 @@ This is the live coordination board. Any agent arriving at THE COURTROOM reads t
 
 **Operator note (Codex, 2026-04-09):** Secondary background worktree exposed a real LF/CRLF normalization issue across vault notes. Defer normalization until after the repo history rewrite on a clean `main` base.
 
+**Sleep-state note (Codex, 2026-04-12):** Workspace parked for Janitor re-entry. Lane split confirmed: GitHub org migration, what3words API restriction/quota, Claudius intake/binding, and Obsidian plugin mechanics remain separate. See `[[HANDOFF-CODEX-SLEEP-PARKING-2026-04-12]]`.
+
 **Delegation note (Logan, 2026-03-28):** Logan has delegated vault operations for this round. The Abhorsen (Claude Code) conducting: infrastructure commits, Gemini tier definition, Linear Phase 1 scoping, LEVELSET refresh, branch push and PR.
 
 **Sunday swarm dispatch (Logan, 2026-03-29):** All agents operate in Sunday swarm mode. Keep execution in scoped issue lanes. No merges to `main`. No overlapping branches. Post one checkpoint before parking any lane. Escalate only for true blocker, conflict, required human judgment, merge decision, or secret/config provisioning. ~~Hard blocker `LINEAR_API_KEY`~~ **provisioned 2026-03-29 by Logan.** Merge-risk item remains PR 96.
 
-**Breadcrumbs:** LEVELSET protocol for state changes (`!/LEVELSET.md`), agent registry (`!/AGENTS.md`), this docket for standing coordination, vault navigation (`!/VAULT-CONVENTIONS.md`), repair brief (`[[BRIEF-LAF-28-2026-04-02]]`), repair handoff (`[[HANDOFF-CODEX-REGISTRY-REPAIR-2026-04-02]]`).
+**Breadcrumbs:** LEVELSET protocol for state changes (`!/LEVELSET.md`), agent registry (`!/AGENTS.md`), this docket for standing coordination, vault navigation (`!/VAULT-CONVENTIONS.md`), repair brief (`[[BRIEF-LAF-28-2026-04-02]]`), repair handoff (`[[HANDOFF-CODEX-REGISTRY-REPAIR-2026-04-02]]`), sleep parking (`[[HANDOFF-CODEX-SLEEP-PARKING-2026-04-12]]`).
 
 **Unified conversation:** Slack (ephemeral coordination), Linear (tasks + blockers), Vault (canonical record).
 
@@ -62,6 +64,7 @@ This is the live coordination board. Any agent arriving at THE COURTROOM reads t
 | Branch hygiene | Branch cleanup, stale branch deletion workflow, and audit bookkeeping | Claude Code | In progress | _(create child issue)_ | Move Spring Clean execution updates to its own issue |
 | Publication gatekeeping | JFAC quote audio verification and publication blocking checks | Logan | Blocked | _(create child issue)_ | Keep evidence gate work separate from coordination docket |
 | Gemini Architecture - LAF-18 | **Framework Staged**; Courier Workflow Ready | Gemini | In progress | LAF-18 | `vault-courier` automation scripts + GitHub Actions fixed; ready for secret provisioning. |
+| **AFFABLE BASTION — PULLMAN** | OIDC/Cloud Run CI/CD pipeline | Antigravity | **HELD \ud83d\udd34 — SYNODS pending** | _(create child issue under LAF-18)_ | GCP side ✅ complete. GitHub Variables (non-secret) ready to set. `OP_SERVICE_ACCOUNT_TOKEN` formalization **HELD** \u2014 LAF-US VFD SYNODS must convene before 1Password binding is ratified. |
 | **Obsidian Triage & Daily Notes** | Cleanup 88 dormant plugins; fix frontmatter & task sync | Antigravity | **Completed** | - | Non-destructive frontmatter merge + bi-directional task sync established. |
 
 ## BLOCKED / PENDING LOGAN

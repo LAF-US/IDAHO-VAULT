@@ -1,0 +1,136 @@
+# AFFABLE BASTION — PULLMAN Deploy Pipeline
+# GitHub Actions → Artifact Registry → Cloud Run → GCS vault sync
+#
+# Authentication: OIDC (Workload Identity Federation) — zero stored secrets
+# Secrets at runtime: injected via 1Password CLI (op)
+# Vault sync: rclone → GCS
+#
+# WIF Pool:     github-pool
+# WIF Provider: github-provider
+# SA:           github-actions-sa@idaho-vault.iam.gserviceaccount.com
+# Project:      idaho-vault (#1091966715900)
+
+name: PULLMAN — Cloud Run Deploy
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'Dockerfile'
+      - '.github/workflows/cloud-run-deploy.yml'
+  workflow_dispatch:   # Manual trigger from GitHub Actions UI
+
+permissions:
+  contents: read
+  id-token: write      # Required for OIDC token generation
+
+env:
+  REGION: us-central1
+  SERVICE_NAME: idaho-vault-swarm
+  REGISTRY: us-central1-docker.pkg.dev
+  AR_REPO: idaho-vault
+  PROJECT_ID: idaho-vault
+
+jobs:
+  pullman:
+    name: "🚂 PULLMAN — Build → Push → Deploy → Sync"
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # ── 1PASSWORD SECRET INJECTION ────────────────────────────────────────
+      - name: Install 1Password CLI
+        uses: 1password/install-cli-action@v1
+
+      - name: Load runtime secrets via op
+        uses: 1password/load-secrets-action@v2
+        with:
+          export-env: true
+        env:
+          OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
+          # Secrets resolved from 1Password at runtime — no plaintext in repo
+          # e.g. RCLONE_GCS_BUCKET: op://IDAHO-VAULT/rclone-gcs/bucket
+          # HELD pending SYNODS — op injection skipped until OP_SERVICE_ACCOUNT_TOKEN ratified
+          # Fallback: bucket name set as a plain variable until SYNODS conclude
+          RCLONE_GCS_BUCKET: "the-ledger-bucket"
+
+      # ── OIDC AUTHENTICATION ───────────────────────────────────────────────
+      - name: Authenticate to Google Cloud (OIDC — keyless)
+        id: auth
+        uses: google-github-actions/auth@v2
+        with:
+          workload_identity_provider: ${{ vars.GCP_WORKLOAD_IDENTITY_PROVIDER }}
+          service_account: ${{ vars.GCP_SERVICE_ACCOUNT }}
+
+      - name: Set up Cloud SDK
+        uses: google-github-actions/setup-gcloud@v2
+
+      - name: Configure Docker for Artifact Registry
+        run: gcloud auth configure-docker ${{ env.REGISTRY }} --quiet
+
+      # ── BUILD & PUSH ──────────────────────────────────────────────────────
+      - name: Set image reference
+        id: image
+        run: |
+          echo "ref=${{ env.REGISTRY }}/${{ env.PROJECT_ID }}/${{ env.AR_REPO }}/${{ env.SERVICE_NAME }}:${{ github.sha }}" >> $GITHUB_OUTPUT
+
+      - name: Build Docker image
+        run: |
+          docker build \
+            --tag ${{ steps.image.outputs.ref }} \
+            --label "git-commit=${{ github.sha }}" \
+            --label "git-ref=${{ github.ref_name }}" \
+            --label "vault-project=idaho-vault" \
+            --label "codename=affable-bastion" \
+            --label "transport=pullman" \
+            .
+
+      - name: Push image to Artifact Registry
+        run: docker push ${{ steps.image.outputs.ref }}
+
+      # ── CLOUD RUN DEPLOY ──────────────────────────────────────────────────
+      - name: Deploy to Cloud Run
+        run: |
+          gcloud run deploy ${{ env.SERVICE_NAME }} \
+            --image=${{ steps.image.outputs.ref }} \
+            --region=${{ env.REGION }} \
+            --platform=managed \
+            --project=${{ env.PROJECT_ID }}
+
+      - name: Output service URL
+        id: service
+        run: |
+          URL=$(gcloud run services describe ${{ env.SERVICE_NAME }} \
+            --region=${{ env.REGION }} \
+            --project=${{ env.PROJECT_ID }} \
+            --format="value(status.url)")
+          echo "url=$URL" >> $GITHUB_OUTPUT
+          echo "### 🚂 PULLMAN arrived: [$URL]($URL)" >> $GITHUB_STEP_SUMMARY
+
+      # ── RCLONE VAULT SYNC → GCS ───────────────────────────────────────────
+      - name: Install rclone
+        run: |
+          curl https://rclone.org/install.sh | sudo bash
+          rclone version
+
+      - name: Configure rclone for GCS (via OIDC SA token)
+        run: |
+          mkdir -p ~/.config/rclone
+          cat <<EOF > ~/.config/rclone/rclone.conf
+          [gcs]
+          type = google cloud storage
+          env_auth = true
+          project_number = 1091966715900
+          location = us-central1
+          storage_class = STANDARD
+          EOF
+
+      - name: Sync vault artifacts to GCS
+        run: |
+          rclone sync . gcs:${{ env.RCLONE_GCS_BUCKET }}/vault-snapshots/${{ github.sha }} \
+            --filter-from .github/rclone-filter.txt \
+            --transfers=8 \
+            --checksum \
+            --verbose

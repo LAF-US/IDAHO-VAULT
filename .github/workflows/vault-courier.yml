@@ -28,7 +28,14 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
+      - name: Fail clearly when 1Password token is missing
+        if: env.OP_SERVICE_ACCOUNT_TOKEN == ''
+        run: |
+          echo "OP_SERVICE_ACCOUNT_TOKEN is not configured; vault-courier cannot load GCP_SA_KEY from 1Password." >&2
+          exit 1
+
       - name: Load Secrets from 1Password
+        if: env.OP_SERVICE_ACCOUNT_TOKEN != ''
         uses: 1password/load-secrets-action@v4
         with:
           export-env: true

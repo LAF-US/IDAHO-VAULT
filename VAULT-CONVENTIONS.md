@@ -588,7 +588,7 @@ Scripts live in `.github/scripts/`. Workflows live in `.github/workflows/`. Scri
 
 
 
-**Requirement:** All credentials (API keys, tokens, SSH keys, passwords) are managed centrally in 1Password. GitHub Actions uses `OP_SERVICE_ACCOUNT_TOKEN` to fetch secrets at runtime. No credentials are hardcoded in workflows or stored directly in GitHub Secrets (with the exception of the service account token itself).
+**Requirement:** All credentials (API keys, tokens, SSH keys, passwords) are managed centrally in 1Password. GitHub Actions uses `OP_SERVICE_ACCOUNT_TOKEN` plus runtime secret references to fetch secrets. No credentials are hardcoded in workflows or stored directly in GitHub Secrets (with the exception of the service account token itself).
 
 
 
@@ -596,7 +596,7 @@ Scripts live in `.github/scripts/`. Workflows live in `.github/workflows/`. Scri
 
 - Developer machines: 1Password CLI + SSH agent for local authentication and git signing
 
-- GitHub Actions: Service account token Ã¢â€ â€™ fetch secrets at runtime via `op item get`
+- GitHub Actions: service account token plus runtime secret references fetch secrets inside workflows
 
 - All secrets are rotated on defined schedules (see `.op/secrets.template.md`)
 
@@ -618,11 +618,13 @@ Scripts live in `.github/scripts/`. Workflows live in `.github/workflows/`. Scri
 
 2. All GitHub Actions secrets (except `OP_SERVICE_ACCOUNT_TOKEN`) are fetched from 1Password at runtime
 
-3. Use `::add-mask::` in workflows to prevent accidental credential leakage in logs
+3. Do not assume a developer machine's visible desktop vault names match CI secret-reference paths such as `op://vault-operations/...`
 
-4. Rotate credentials on schedule; update `.op/secrets.template.md` with rotation date
+4. Use `::add-mask::` in workflows to prevent accidental credential leakage in logs
 
-5. SSH keys for git signing are managed via 1Password SSH agent on developer machines
+5. Rotate credentials on schedule; update `.op/secrets.template.md` with rotation date
+
+6. SSH keys for git signing are managed via 1Password SSH agent on developer machines
 
 
 

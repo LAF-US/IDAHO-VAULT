@@ -99,6 +99,7 @@ Optional advisory context:
 
 - Checks whether `op` is available.
 - Reuses an existing 1Password session when possible.
+- Treats successful live vault access as a usable desktop-auth signal even if `op whoami` disagrees.
 - Warns and continues if secrets are unavailable.
 
 ### 2. Identification

@@ -1,10 +1,11 @@
 ---
 date created: Monday, March 30th 2026, 5:17:09 pm
-date modified: Monday, March 30th 2026, 7:59:13 pm
+date modified: Sunday, April 12th 2026, 1:35:00 am
 status: active
 authority: Claude Code (The Abhorsen)
 related:
 - '2026-03-30'
+- '2026-04-12'
 - AGENTS
 - CLAUDE
 - CLI
@@ -13,102 +14,113 @@ related:
 - Logan's
 - SSH
 - VAULT-CONVENTIONS
+- what3words
 - agent
 - infrastructure
 - template
 ---
-# 1Password Integration — IDAHO-VAULT
+# 1Password Integration - IDAHO-VAULT
 
-**Status:** Infrastructure template deployed; awaiting Logan's local setup and GitHub Actions provisioning  
+**Status:** Infrastructure template deployed; local desktop reality now partially verified  
 **Scope:** CLI + SSH agent (developer machines) + secret injection (GitHub Actions)  
-**Updated:** 2026-03-30
+**Updated:** 2026-04-12
 
 ---
 
 ## What This Is
 
-IDAHO-VAULT now has a complete infrastructure for centralized credential management via 1Password. This replaces ad-hoc secret storage in GitHub Secrets and provides:
+IDAHO-VAULT has a documented 1Password integration layer for:
 
-1. **Developer machines** — 1Password CLI + SSH agent for git signing and local secret access
-2. **GitHub Actions** — Service account token → runtime secret fetching via `op item get`
-3. **Credential inventory** — Centralized record of all secrets, rotation schedules, and access procedures
+1. Developer machines - 1Password CLI + SSH agent for git signing and local secret access
+2. GitHub Actions - service account token plus runtime secret fetching via `op item get`
+3. Credential inventory - a durable record of secret expectations and rotation
 
 ---
 
 ## Files Deployed
 
-### Configuration & Setup
-
 | File | Purpose |
 |---|---|
-| `.op/SETUP.md` | Complete installation + configuration guide for developer machines |
+| `.op/SETUP.md` | Installation and configuration guide for developer machines |
 | `.op/secrets.template.md` | Secret inventory, rotation schedule, and emergency procedures |
 | `.github/workflows/1password-secret-template.yml` | Example workflow using 1Password for secret injection |
-
-### Documentation Updates
-
-| File | Change |
-|---|---|
-| `!/VAULT-CONVENTIONS.md` | Added "Secret Management via 1Password" subsection |
-| `.claude/CLAUDE.md` | Added "1Password Integration" section with setup requirements |
-| `1Password.md` (this file) | Integration summary and status |
+| `1Password.md` | Integration summary and current desktop findings |
 
 ---
 
-## Next Steps (Logan)
+## 2026-04-12 Desktop Verification
 
-1. **Install 1Password CLI** on your machine
-   - Guide: `.op/SETUP.md` Part 1
-   - Verify: `op --version` and `op account list`
+The local re-test from this machine established the following:
 
-2. **Configure SSH agent + git signing**
-   - Guide: `.op/SETUP.md` Part 4–5
-   - Test: `git commit --allow-empty -m "test"` and check `git log --show-signature`
+- `op` is installed and healthy:
+  - version `2.33.1`
+- A saved CLI account exists:
+  - URL: `my.1password.com`
+  - email: `loganfinney27@gmail.com`
+  - user id: `X6OLMRVXDJAI3EGF7ITRFLFMDM`
+- The sandboxed shell produced a false-looking first symptom:
+  - `connecting to desktop app ... Access is denied`
+- Re-running outside the sandbox clarified the real state:
+  - `op account list` works
+  - `op vault list` works
+  - `op item get` works for at least one live secret
+  - `op whoami` still reports `account is not signed in`
 
-3. **Create 1Password service account**
-   - Generate or retrieve `OP_SERVICE_ACCOUNT_TOKEN`
-   - Guide: `.op/SETUP.md` Part 2
+Visible vaults from the live desktop context:
 
-4. **Provision GitHub Actions secret**
-   - Add `OP_SERVICE_ACCOUNT_TOKEN` to GitHub repo settings → Secrets
-   - Verify: Check Actions workflow can authenticate
+- `Private`
+- `Personal`
+- `Vault`
+- `Wallet`
+- `Work`
 
-5. **Create secret items in 1Password vault**
-   - Migrate existing GitHub Secrets → 1Password items
-   - Inventory: `.op/secrets.template.md`
+Important correction:
 
-6. **Update workflows to use 1Password**
-   - Use `.github/workflows/1password-secret-template.yml` as template
-   - Start with one workflow (e.g., Linear sync) and test
+- the live desktop account does **not** expose a vault literally named `IDAHO-VAULT`
 
----
-
-## Key Design Decisions
-
-| Decision | Rationale |
-|---|---|
-| **Only `OP_SERVICE_ACCOUNT_TOKEN` in GitHub Secrets** | Minimizes credential surface; all other secrets fetched at runtime |
-| **SSH agent for git signing** | Signs commits via 1Password SSH key; verifiable without storing key locally |
-| **`.op/` dotfolder** | Agent-friendly configuration; follows vault dotfolder conventions |
-| **Centralized rotation schedule** | `.op/secrets.template.md` is source of truth for credential lifecycle |
+That means the earlier documentation was too abstract. The local 1Password setup is not simply "broken," but the repo was assuming a vault name and sign-in state that do not match the current desktop context.
 
 ---
 
-## Security Notes
+## what3words Secret Path
 
-- All secrets are **masked in GitHub Actions logs** via `::add-mask::`
-- SSH keys never leave 1Password; used only via SSH agent
-- Service account token should be rotated every 90 days
-- Emergency access procedures in `.op/secrets.template.md`
+The local what3words credential was positively identified in 1Password:
+
+- vault: `Vault`
+- item: `what3words`
+- field: `credential`
+- username field value: `IDAHO-VAULT`
+
+The secret can be fetched successfully from the live desktop context.
+
+This matters because it rules out the earlier fear that 1Password could not supply the what3words key at all.
 
 ---
 
-## Related Files
+## Current Diagnostic Reading
 
-- `!/VAULT-CONVENTIONS.md` — Vault conventions (updated with secret management section)
-- `.claude/CLAUDE.md` — Claude Code instructions (updated with 1Password context)
-- `!/AGENTS.md` — Agent capability tiers (reference only)
-- `!/CONSTITUTION.md` — Governance authority (reference only)
+The what3words failure is a two-layer story:
+
+1. **1Password context**
+   - local `op` access exists, but the CLI sign-in state is not cleanly represented by `op whoami`
+   - the old assumption that the live vault is named `IDAHO-VAULT` is wrong
+
+2. **what3words API behavior**
+   - after fetching the live secret from 1Password, a direct API probe to `convert-to-3wa` returned `HTTP 401`
+   - screenshot evidence in `!/INBOX/images/2026-04-11-screenshot-2026-04-11-204911.jpg` still shows the key is restriction-enabled
+
+Operational rule:
+
+- do not blame 1Password first if the sandbox is involved
+- verify the real desktop `op` path and real vault/item name
+- then test the external API
+
+That sequence now shows:
+
+- secret retrieval works
+- API call still fails
+
+So the remaining blocker is now best read as a what3words credential policy, restriction, or entitlement issue rather than a missing 1Password secret.
 
 ---
 
@@ -116,18 +128,74 @@ IDAHO-VAULT now has a complete infrastructure for centralized credential managem
 
 | Component | Status | Notes |
 |---|---|---|
-| 1Password CLI template | ✅ Deployed | `.op/SETUP.md` complete |
-| SSH agent configuration | ✅ Deployed | Part 4–5 of SETUP.md |
-| Git signing setup | ✅ Deployed | Part 5 of SETUP.md + test steps |
-| Service account flow | ✅ Deployed | Part 2 of SETUP.md |
-| Workflow template | ✅ Deployed | `.github/workflows/1password-secret-template.yml` |
-| Secret inventory | ✅ Deployed | `.op/secrets.template.md` with rotation schedule |
-| Vault conventions update | ✅ Merged | `!/VAULT-CONVENTIONS.md` |
-| CLAUDE.md update | ✅ Merged | `.claude/CLAUDE.md` |
-| **Local setup execution** | ⏳ Awaiting Logan | SETUP.md Part 1–5 |
-| **GitHub Actions provisioning** | ⏳ Awaiting Logan | Add `OP_SERVICE_ACCOUNT_TOKEN` + test workflow |
-| **Credential migration** | ⏳ Awaiting Logan | Move secrets from GitHub Secrets → 1Password |
+| 1Password CLI template | complete | `.op/SETUP.md` exists |
+| SSH agent configuration docs | complete | documented, not re-tested in this session |
+| Git signing docs | complete | documented, not re-tested in this session |
+| Service account flow | complete | template exists |
+| Workflow template | complete | `.github/workflows/1password-secret-template.yml` |
+| Secret inventory | complete | `.op/secrets.template.md` |
+| Local CLI installation | verified | `op 2.33.1` present |
+| Local account discovery | verified | `my.1password.com` / `loganfinney27@gmail.com` |
+| Live vault naming assumption | corrected | no literal `IDAHO-VAULT` vault |
+| what3words secret path | verified | `Vault / what3words / credential` |
+| what3words API success | blocked | direct probe returned `HTTP 401` |
 
 ---
 
-**Handoff:** Infrastructure deployed. Ready for Logan to execute local setup and GitHub Actions integration.
+## Other OP Workflows Checked
+
+The repo now shows three distinct 1Password workflow patterns:
+
+1. `!/agent.sh`
+   - local bootstrap path for agent sessions
+   - previously treated `op whoami` as the only success condition
+   - now adjusted to accept live `op vault list` access as a usable desktop-auth fallback when `op whoami` lies
+
+2. `.github/workflows/linear-pr-sync.yml`
+   - guarded correctly with `if: env.OP_SERVICE_ACCOUNT_TOKEN != ''`
+   - already has a GitHub Secrets fallback for `LINEAR_API_KEY`
+
+3. `.github/workflows/vault-courier.yml`
+   - depends on `1password/load-secrets-action@v4` to fetch `op://vault-operations/idaho-vault-courier-key/credential`
+   - did not previously guard the load step when `OP_SERVICE_ACCOUNT_TOKEN` was missing
+   - now fails early with a direct message instead of letting the 1Password action fail opaquely
+
+Important distinction:
+
+- the local desktop path and the GitHub Actions service-account path are not the same thing
+- local desktop testing exposed visible vaults like `Vault`, `Private`, and `Work`
+- the workflows still intentionally reference `op://vault-operations/...` for CI
+- that means a local mismatch in visible vault names does **not** automatically mean the GitHub Actions secret references are wrong
+
+---
+
+## Failing Process Signals
+
+The live 1Password process and log check on `2026-04-12` showed:
+
+- several old `1Password` and `1Password-BrowserSupport` processes still running from `2026-04-09` and `2026-04-10`
+- fresh `1Password.exe` launches at approximately `2026-04-12 01:27:41` and `2026-04-12 01:32:33`
+- repeated native-messaging `EndConnection` errors in `1Password_r00032.log`
+- one `process tree is empty` SSH/session error
+- repeated `BiometryUnavailable` warnings
+- a fresh log line saying `1Password is already running, closing`
+
+Current reading:
+
+- there is evidence of noisy desktop-bridge churn
+- there is evidence of duplicated or lingering 1Password processes
+- there is **not** strong evidence here that the what3words secret path itself is failing
+- the process noise helps explain why `op whoami` is not a reliable single probe on this machine
+
+---
+
+## Handoff
+
+1Password is no longer the primary suspected blocker for what3words lookups on this machine.
+
+The durable next question is the what3words key itself:
+
+- restriction model
+- allowed client type
+- endpoint entitlement
+- whether a separate server/CLI key should exist
