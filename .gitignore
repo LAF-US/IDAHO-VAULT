@@ -90,6 +90,10 @@ desktop.ini
 *.shp
 *.gpx
 
+# Email files (contain internal PII — headers, staff addresses, Exchange infra)
+*.eml
+*.msg
+
 # Production/editing source formats (local media workspace artifacts)
 *.psd
 *.ai
