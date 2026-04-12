@@ -2,31 +2,21 @@
 authority: LOGAN
 related:
   - AI-CAPTURES
-  - INBOX
-  - HOME layer
+  - PHONE-LINK
+  - MESHWEB
 status: active
 date created: Sunday, April 12th 2026
 ---
 
-# INBOX — Intake and Staging
+# INBOX — File Drop Zone
 
-Raw intake. Content lands here before it is classified, processed, or promoted into the vault proper.
+Raw intake. Files land here before they are processed into the vault.
 
-**Rule:** Do not auto-empty or normalize this folder. Leave files until explicitly processed and cleared.
+**Automation and protocol live in `!/INBOX/` — this is the drop face only.**
 
----
+| Subdirectory | Source | Protocol |
+|---|---|---|
+| `AI-CAPTURES/` | Chrome extension exports, AI conversation Markdown | See `!/INBOX/AI-CAPTURES/README.md` |
+| `PHONE-LINK/` | Windows Phone Link auto-sweep | See `!/INBOX/PHONE-LINK/phone-link-auto-sweep.ps1` |
 
-## Subdirectories
-
-| Folder | Purpose |
-|---|---|
-| `AI-CAPTURES/` | Exported AI conversation logs (Chat Claude, Gemini, Perplexity, etc.) |
-
----
-
-## General Drop Rules
-
-1. Drop files with descriptive names — date prefix preferred
-2. Add frontmatter if you have it; leave raw if you don't
-3. Commit and push — The Abhorsen monitors via GitHub
-4. Processing happens in a separate pass; don't block on it
+**Rules:** Do not auto-empty. Do not normalize. Files stay until explicitly processed and cleared.
