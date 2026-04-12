@@ -114,6 +114,8 @@ _private/**
 tmp-minidata-msg/
 tmp-msg-extract/
 _phone-link-sweep.log
+_phone-link-watcher.log
+_phone-link-watcher.pid
 
 # Local media app cache artifacts
 *.cfa
