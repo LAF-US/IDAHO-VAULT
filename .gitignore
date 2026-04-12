@@ -110,6 +110,8 @@ desktop.ini
 .remember/
 _private/
 _private/**
+@/
+@/**
 .codex/tmp/
 tmp-minidata-msg/
 tmp-msg-extract/
