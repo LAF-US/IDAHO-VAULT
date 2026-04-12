@@ -127,6 +127,11 @@ _phone-link-watcher.pid
 # Local machine secrets
 .obsidian/plugins/obsidian-local-rest-api/data.json
 
+# Credential exports (NEVER publish)
+Google Passwords.csv
+**/Google Passwords*.csv
+**/passwords*.csv
+
 # Swarm state archive (local only)
 .github/swarm/state/archive/
 
