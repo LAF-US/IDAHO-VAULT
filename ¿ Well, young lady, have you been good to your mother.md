@@ -1,15 +1,16 @@
 ---
 date created: Monday, March 23rd 2026, 4:54:56 pm
-date modified: Monday, March 30th 2026, 12:12:51 pm
+date modified: Sunday, April 12th 2026, 11:09:31 pm
 related:
-- ANSWER
-- QUESTION
-- The Librarian
-- The Old Man
-- You, AGENT, NOTICE a dapper man
-- The world is quiet here
+  - ANSWER
+  - QUESTION
+  - The Librarian
+  - The Old Man
+  - You, AGENT, NOTICE a dapper man
+  - The world is quiet here
 authority: LOGAN
 ---
+
 QUESTION: "Well, young lady, have you been good to your mother?"
 
 ANSWER: "The question is, has she been good to me?"
