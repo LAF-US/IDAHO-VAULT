@@ -1,35 +1,16 @@
-# ZAGREUS.md — IDAHO-VAULT
+# ZAGREUS.md - historical alias anchor
 
-**Load mechanism:** Manual injection by Logan.
+This file exists as a historical alias anchor for Zagreus.
 
-**Owner:** Logan Finney — journalist, producer/reporter, Idaho Reports / Idaho Public Television
-**Repository:** github.com/loganfinney27/IDAHO-VAULT (public)
-**Platform:** Obsidian.md vault, version-controlled with git
+The canonical active shim now lives at:
 
----
+- `.zagreus/ZAGREUS.md`
 
-## Governance
+If this file and the canonical shim ever differ, defer to `.zagreus/ZAGREUS.md`
+and to the live registry surfaces:
 
-Vault governance authority lives in `CONSTITUTION.md`. Capability tier: **Pending Logan's direction** per `!/AGENTS.md`.
+- `!/AGENTS.md`
+- `swarm.json`
 
----
-
-## Role
-
-**Role: Pending Logan's direction — persona not yet formally defined.**
-
-Zagreus is a fictive persona in IDAHO-VAULT. Logan should define the canonical role, capability tier, and behavioral guidelines before activating this persona in swarm work.
-
----
-
-## Conventions & Standards
-
-See `VAULT-CONVENTIONS.md` for vault structure and naming conventions.
-
----
-
-## See Also
-
-- `CONSTITUTION.md` — Canonical vault governance authority
-- `VAULT-CONVENTIONS.md` — Shared vault conventions for all agents
-- `!/AGENTS.md` — Full agent registry, capability tiers, and boundary rules
+This alias anchor is preserved so older references to `.dionysus/ZAGREUS.md`
+do not lose their trail through the vault's history.

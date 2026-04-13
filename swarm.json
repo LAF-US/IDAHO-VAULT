@@ -516,16 +516,188 @@
       }
     ]
   },
+  "plugin_layer": {
+    "// note": "Machine-readable registration of the Obsidian plugin layer. Live doctrine, topology, and promotion rules live in !/PLUGIN-REGISTRY.md.",
+    "manifest_doc": "!/PLUGIN-REGISTRY.md",
+    "interface_state_files": [
+      ".obsidian/community-plugins.json",
+      ".obsidian/core-plugins.json"
+    ],
+    "payload_root": ".obsidian/plugins/",
+    "status": "active",
+    "authority_boundary": "swarm.json registers the plugin layer; live plugin doctrine, topology, dependency declarations, and promotion rules live in !/PLUGIN-REGISTRY.md.",
+    "promotion_gate": "No plugin-state change counts as legitimate until !/PLUGIN-REGISTRY.md is updated.",
+    "counts": {
+      "enabled_community": 26,
+      "enabled_core": 31,
+      "dormant_installed": 28,
+      "installed_total": 54
+    },
+    "entrypoints": [
+      {
+        "id": "plugin-manifest",
+        "path": "!/PLUGIN-REGISTRY.md",
+        "role": "canonical plugin doctrine"
+      },
+      {
+        "id": "community-plugins",
+        "path": ".obsidian/community-plugins.json",
+        "role": "enabled community-plugin interface state"
+      },
+      {
+        "id": "core-plugins",
+        "path": ".obsidian/core-plugins.json",
+        "role": "enabled core-plugin interface state"
+      },
+      {
+        "id": "plugin-payloads",
+        "path": ".obsidian/plugins/",
+        "role": "installed community-plugin payloads"
+      }
+    ],
+    "families": {
+      "enabled": [
+        "infrastructure_agent",
+        "navigation_search",
+        "content_creation_editing",
+        "daily_notes_calendar"
+      ],
+      "dormant": [
+        "ai_llm",
+        "content_organization",
+        "calendar_date",
+        "pdf_document",
+        "table_editing",
+        "visual_ui",
+        "specialty"
+      ]
+    },
+    "dependency_edges": [
+      {
+        "parent": "obsidian-local-rest-api",
+        "child": "mcp-tools",
+        "type": "required_runtime"
+      },
+      {
+        "parent": "smart-connections",
+        "child": "smart-connections-visualizer",
+        "type": "feature_extension"
+      },
+      {
+        "parent": "templater-obsidian",
+        "child": "ai-templater",
+        "type": "functional_extension"
+      },
+      {
+        "parent": "periodic-notes",
+        "child": "roygbiv-day-accent",
+        "type": "data_dependency"
+      }
+    ],
+    "writable_surfaces": [
+      {
+        "path": "!/PLUGIN-REGISTRY.md",
+        "persistence": "durable"
+      },
+      {
+        "path": ".obsidian/community-plugins.json",
+        "persistence": "durable_interface_state"
+      },
+      {
+        "path": ".obsidian/core-plugins.json",
+        "persistence": "durable_interface_state"
+      },
+      {
+        "path": ".obsidian/plugins/*/manifest.json",
+        "persistence": "durable_when_tracked"
+      },
+      {
+        "path": ".obsidian/plugins/*/data.json",
+        "persistence": "ephemeral_gitignored"
+      },
+      {
+        "path": ".obsidian/plugins/*/cache/",
+        "persistence": "ephemeral_gitignored"
+      },
+      {
+        "path": ".smart-env/",
+        "persistence": "ephemeral_local_runtime"
+      },
+      {
+        "path": ".makemd/",
+        "persistence": "ephemeral_local_runtime"
+      },
+      {
+        "path": ".space/",
+        "persistence": "ephemeral_local_runtime"
+      }
+    ]
+  },
+  "cross_swarm_sync": {
+    "// note": "Machine-readable registration of the vault-native cross-swarm signaling bus. Protocol lives in !/SIGNALS/README.md.",
+    "protocol_doc": "!/SIGNALS/README.md",
+    "signal_root": "!/SIGNALS/",
+    "live_board": "!/__!__/!/! The world is quiet here/DOCKET.md",
+    "status": "active",
+    "transport_model": "vault_native_async_signal_bus",
+    "authority_boundary": "swarm.json registers the signaling bus; the live protocol lives in !/SIGNALS/README.md; execution state remains in GitHub and Linear; the Courtroom DOCKET is the live visibility surface.",
+    "entrypoints": [
+      {
+        "id": "signal-protocol",
+        "path": "!/SIGNALS/README.md",
+        "role": "canonical signaling protocol"
+      },
+      {
+        "id": "signal-root",
+        "path": "!/SIGNALS/",
+        "role": "durable cross-agent signal files"
+      },
+      {
+        "id": "courtroom-docket",
+        "path": "!/__!__/!/! The world is quiet here/DOCKET.md",
+        "role": "live board for signal visibility and active coordination"
+      },
+      {
+        "id": "narrative-registry",
+        "path": "!/AGENTS.md",
+        "role": "agent handles and lane rules"
+      }
+    ],
+    "status_values": [
+      "OPEN",
+      "ACKNOWLEDGED",
+      "REPLIED",
+      "CLOSED",
+      "OVERRIDDEN"
+    ],
+    "required_fields": [
+      "sig_id",
+      "from",
+      "to",
+      "re",
+      "date",
+      "status",
+      "thread",
+      "replying_to"
+    ],
+    "runtime_rules": [
+      "Any agent may write a signal file.",
+      "Recipients check OPEN signals at session start.",
+      "Replies are new files, not body edits.",
+      "No secrets belong in signal files."
+    ],
+    "promotion_gate": "Signals may coordinate work, but durable decisions and execution commitments must still be promoted into the vault, GitHub, or Linear explicitly."
+  },
   "crews": {
     "// note": "CrewAI is an active layer under re-foundation. swarm.json registers the layer but does not carry CrewAI crew, task, or runner topology.",
     "manifest": ".crewai/manifest.json",
     "manifest_doc": ".crewai/MANIFEST.md",
-    "crewai_version": "1.12.2",
+    "crewai_version": "1.14.1",
     "status": "refoundation",
     "output_dir": "!/CREWAI/",
-    "runtime_class": "linux-native disposable runtime slice",
-    "authority_boundary": "Cross-agent control-plane facts only; live CrewAI topology and promotion rules live in .crewai/MANIFEST.md.",
-    "principle": "LINUX }!{ — all execution targets Linux-native",
+    "runtime_class": "vault-contained local runtime slice",
+    "authority_boundary": "swarm.json registers the layer; live CrewAI topology and promotion rules live in .crewai/MANIFEST.md.",
+    "principle": "Portable authority over local runtime romance",
     "roster": []
   },
   "protocols": [

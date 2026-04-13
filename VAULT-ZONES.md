@@ -80,7 +80,7 @@ The `!` path family is a nested routing system with three distinct roles:
 |---|---|---|---|
 | `!` | **Constitutional control plane** | Active governance files and canonical system rules (`CONSTITUTION`, `PROTOCOL`, `AGENTS`, `DECISIONS`, `VAULT-ZONES`, `VAULT-CONVENTIONS`, active protocol references) | Stable + durable (authoritative record) |
 | `!/!` | **Routing workbench** | Time-scoped handoffs, levelsets, context packets, branch triage notes, protocol drafts, and in-flight coordination artifacts | Semi-stable: durable archive, but not canonical policy |
-| `!/!/!` | **Live operations board** | The Courtroom and session-level coordination surface (`DOCKET.md`, immediate queue state, short operational status files) | Ephemeral exchange surface with periodic promotion |
+| `!/!/!` | **Live operations board** | The Courtroom and session-level convening surface (`DOCKET.md`, immediate queue state, short operational status files) | Ephemeral exchange surface with periodic promotion |
 
 ### Stable routing vs ephemeral exchange
 
@@ -102,6 +102,7 @@ Rule of thumb:
 
 1. **Capture at point of action (`!/!/!`)**
    - Log active work state in the Courtroom/DOCKET layer while work is in progress.
+   - Keep the Courtroom thin: convene, orient, surface live motion, then point outward.
 
 2. **Package when context matures (`!/!`)**
    - When a thread becomes transferable (handoff, levelset, context bundle), move it into `!/!` as a dated artifact.
@@ -136,7 +137,7 @@ This means CODE AUTHORITY's "Direct write" capability tier (per AGENTS) describe
 |-------|---------|------------------|-----------------|
 | `!` | Constitutional anchor and pointer to the governance stack | `CONSTITUTION.md`, `DECISIONS.md`, `AGENTS.md`, `PROTOCOL.md`, `VAULT-CONVENTIONS.md`, `VAULT-ZONES.md`, `CLAUDE.md`, `GEMINI.md`, `Ethics.md`, `Logan.md`, `!/README.md` | **Stable only.** No scratch notes; use for canonical governance and orientation. |
 | `!/!` | Routing spine for structured coordination and context packages | `LEVELSET-*`, `HANDOFF-*`, DOCKET/READY-STATE bundles, branch triage, MCP discovery, context passovers | **Stable routing.** Updates can churn but remain in-versioned artifacts. Promote final decisions to `!/DECISIONS.md` or other constitutional files. |
-| `!/!/!` (`"The world is quiet here"`) | Live courtroom for active swarm coordination | `DOCKET.md`, live status updates, short-term instructions for in-flight sessions | **Hot but stable.** Use for real-time updates; roll durable outcomes into `!/!/` (handoffs/LEVELSET) or `!/` (DECISIONS/PROTOCOL) once settled. |
+| `!/!/!` (`"The world is quiet here"`) | Live courtroom for active swarm coordination and convening | `DOCKET.md`, live status updates, short-term instructions for in-flight sessions | **Hot but stable.** Use for real-time updates and brief convening only; roll durable outcomes into `!/!/` (handoffs/LEVELSET) or `!/` (DECISIONS/PROTOCOL) once settled. |
 
 ### Stable routing vs. ephemeral exchange
 
@@ -148,6 +149,7 @@ This means CODE AUTHORITY's "Direct write" capability tier (per AGENTS) describe
 1. Capture outcomes from ephemeral channels into `!/!/!` (DOCKET) when work is active, or directly into `!/!/` handoffs/LEVELSET packages when handing over.
 2. When a decision is confirmed, promote it to the appropriate constitutional file in `!/` (e.g., `DECISIONS.md`, `PROTOCOL.md`, `VAULT-CONVENTIONS.md`).
 3. Do not park scratch content in `!` or `!/!`; either discard ephemeral notes or convert them into structured handoffs before committing.
+4. Do not let the DOCKET become a shadow backlog, project database, or archival warehouse; keep only the minimum live convening state there.
 
 ---
 

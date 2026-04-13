@@ -122,16 +122,17 @@ All three move together. None can stand alone.
 
 ### Obsidian Plugin State
 
-**Desktop:** 49 community plugins enabled (expanded from 45 → 49 this session: +roygbiv-day-accent, +tag-wrangler, +nldates-obsidian, +periodic-notes, +graph-nested-tags).
+**Desktop:** 26 community plugins enabled, 54 total installed (26 enabled + 28 dormant).
 **Mobile:** 0 community plugins (Restricted Mode — capture device; device split 2026-04-05).
-**Sync:** Obsidian Sync (paid). Content syncs both ways. Plugin lists are per-device. Core plugin *settings* sync; community plugin *lists* do not.
+**Sync:** Obsidian Sync (paid), remote vault "LAF-US". Content syncs both ways. Core plugin settings OFF (prevents circular dependency where Sync syncs its own selective-sync config). Community plugin lists are per-device.
+**Plugin governance:** `!/PLUGIN-REGISTRY.md` — authoritative registry following CrewAI MANIFEST pattern (ESSENTIAL/ACTIVE/DORMANT layered model with promotion rules).
 
 ### Device Roles (established 2026-04-05)
 
 | Device | Role | Plugins | Sync Direction |
 |---|---|---|---|
-| Windows Desktop | Engine room — full plugin stack, git, MCP, agents | 49 community | Receives content from mobile; processes it |
-| Pixel Phone | Capture device — quick notes, tags, photos | 0 community (Restricted Mode) | Creates content upstream; sends to desktop |
+| Windows Desktop | Workspace — full plugin stack, git, MCP, agents | 26 community (4 essential + 22 active) | Receives content from mobile; processes it |
+| Pixel Phone | Capture — quick notes, tags, photos, audio | 0 community (Restricted Mode) | Creates content upstream; sends to desktop |
 
 ### Daily Note System (operational 2026-04-05)
 
@@ -240,7 +241,7 @@ The vault is in the NETWEB Era — cross-platform path portability, multi-agent 
 **Completed this session (2026-04-05):**
 - Daily note system — pure core `{{date:}}` template, cross-device compatible, ROYGBIV accent verified
 - ROYGBIV fix — `!important` CSS override, cleared hardcoded accent color, violet holding
-- Plugin rationalization — 49 enabled plugins (5 new: roygbiv-day-accent, tag-wrangler, nldates-obsidian, periodic-notes, graph-nested-tags)
+- Plugin rationalization — 26 enabled plugins from 54 installed (5 enabled that session: roygbiv-day-accent, tag-wrangler, nldates-obsidian, periodic-notes, graph-nested-tags)
 - Templater cleanup — deleted redundant `_templates/roygbiv-startup.md`, cleared stale startup reference
 - `PRIVACY.md` ratified — full data classification, MCP bridge rules, Granola source-protection, sanitization protocol
 - TRIPLEX protocol adopted — binding lane map, collision rules, AFK protocol
@@ -338,8 +339,8 @@ The vault contains a symbolic architecture that predates and underlies the techn
 | Whistle protocol design | **Medium** | LOCKED — PRIVACY.md must be satisfied first |
 | Bind Book of Claudius | **Low** | Anthropic conversation export → xlsx |
 | Bind Book of Codices | **Low** | OpenAI conversation export → xlsx |
-| Bulk uninstall 91 dormant plugins | **Low** | Cleanup — no urgency |
-| LLM plugin sprawl resolution | **Low** | 11 AI plugins installed, most dormant |
+| Triage 28 dormant plugins (Logan decides per PLUGIN-REGISTRY.md) | **Low** | Cleanup — no urgency |
+| LLM plugin sprawl resolution | **Low** | 6 AI plugins installed dormant |
 
 ### Known Technical Issues
 
@@ -374,7 +375,7 @@ The vault contains a symbolic architecture that predates and underlies the techn
 2. **DISCOVERY BEFORE INVENTION** — governance directive added to all 5 agent instruction files (`455144d`)
 3. **Daily note template v1→v2→v3** — evolved from all-Templater → hybrid → pure core `{{date:}}` tokens
 4. **ROYGBIV startup script created then deleted** — `_templates/roygbiv-startup.md` superseded by discovered `roygbiv-day-accent` plugin
-5. **140-plugin audit** — full categorization: 49 enabled, 91 dormant (17 configured, 79 stock)
+5. **140-plugin audit** — full categorization: 26 enabled, 28 dormant (corrected 2026-04-12; original count inflated by Codex UTF-16 incident)
 6. **5 plugins enabled** — roygbiv-day-accent, tag-wrangler, nldates-obsidian, periodic-notes, graph-nested-tags (`ec09efd`)
 7. **Pure-core daily note template committed** — no Templater dependency, works on both devices (`ec09efd`)
 8. **Codex UTF-16 incident** — community-plugins.json corrupted to 140 entries in UTF-16 LE; caught and corrected

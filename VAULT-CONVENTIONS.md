@@ -1,66 +1,68 @@
 ---
 authority: LOGAN
 related:
-- 1Password
-- 2023-12-19 - GIAC meeting
-- '2026-04-02'
-- '218'
-- '260'
-- AGENTS
-- API
-- Act
-- Ada County
-- Boise
-- Brad Little
-- CLAUDE
-- CLI
-- CONSTITUTION
-- Copilot
-- DAILY NOTE
-- DAILY NOTE TEMPLATE
-- DECISIONS
-- DOS
-- GEMINI
-- GitHub
-- HFS
-- Idaho
-- Idaho Legislature
-- Idaho Public Television
-- Idaho Reports
-- Idaho Statesman
-- LEVELSET
-- Logan Finney
-- Logan's
-- MCP
-- OBSIDIAN DAILY NOTE
-- Obsidian
-- PROJECT
-- PROTOCOL
-- README
-- SSH
-- THE
-- The world is quiet here
-- UTC
-- VAULT-METADATA-STANDARD
-- VAULT-TEMPLATES
-- VAULT-ZONES
-- _AUX
-- agent
-- codex
-- coordination
-- doctrine
-- election
-- emoji
-- format
-- infrastructure
-- legislative
-- links
-- meeting
-- passwords
-- persona
-- syntax
-- systems
-- template
+  - 1Password
+  - 2023-12-19 - GIAC meeting
+  - '2026-04-02'
+  - '218'
+  - '260'
+  - AGENTS
+  - API
+  - Act
+  - Ada County
+  - Boise
+  - Brad Little
+  - CLAUDE
+  - CLI
+  - CONSTITUTION
+  - Copilot
+  - DAILY NOTE
+  - DAILY NOTE TEMPLATE
+  - DECISIONS
+  - DOS
+  - GEMINI
+  - GitHub
+  - HFS
+  - Idaho
+  - Idaho Legislature
+  - Idaho Public Television
+  - Idaho Reports
+  - Idaho Statesman
+  - LEVELSET
+  - Logan Finney
+  - Logan's
+  - MCP
+  - OBSIDIAN DAILY NOTE
+  - Obsidian
+  - PROJECT
+  - PROTOCOL
+  - README
+  - SSH
+  - THE
+  - The world is quiet here
+  - UTC
+  - VAULT-METADATA-STANDARD
+  - VAULT-TEMPLATES
+  - VAULT-ZONES
+  - _AUX
+  - agent
+  - codex
+  - coordination
+  - doctrine
+  - election
+  - emoji
+  - format
+  - infrastructure
+  - legislative
+  - links
+  - meeting
+  - passwords
+  - persona
+  - syntax
+  - systems
+  - template
+date created: Sunday, April 12th 2026, 4:02:32 am
+date modified: Sunday, April 12th 2026, 9:15:35 pm
 ---
 
 # VAULT-CONVENTIONS — Shared Reference for All Agents
@@ -741,27 +743,31 @@ Two systems share the vault. They have distinct, non-overlapping responsibilitie
 
 The phone writes `.md` files. The desktop processes them.
 
-### Obsidian Sync Settings — Desktop
+### Obsidian Sync Settings — Desktop (Workspace)
 
 | Toggle | Setting |
 | --- | --- |
-| Core settings | ON |
+| Core settings | OFF — prevents circular dependency (Sync is a core plugin; syncing core plugin settings makes Sync's own selective-sync config vault-wide instead of per-device) |
 | Appearance | ON |
 | Hotkeys | ON |
 | Active core plugins | ON |
 | Active community plugins | ON |
 | Installed community plugins | ON |
 
-### Obsidian Sync Settings — Mobile (Pixel)
+### Obsidian Sync Settings — Mobile (Pixel — Capture)
 
 | Toggle | Setting |
 | --- | --- |
-| Core settings | ON |
+| Core settings | OFF — same circular dependency fix; each device controls its own media sync toggles independently |
 | Appearance | ON |
 | Hotkeys | ON |
 | Active core plugins | OFF — phone does not need slides, audio-recorder, webviewer, etc. |
 | Active community plugins | OFF — decouples plugin lists; desktop keeps 26, phone keeps 0 |
-| Installed community plugins | OFF — phone does not need 140 plugin directories |
+| Installed community plugins | OFF — phone does not need 54 plugin directories |
+
+### Why Core Plugin Settings Are OFF
+
+Sync is itself a core plugin. With "Core plugin settings: ON," Sync's selective-sync configuration (audio/video/PDF toggles) propagates between devices — making those toggles vault-wide, not per-device. This creates a circular dependency: the phone needs media sync ON (capture device), but the laptop needs it OFF (workspace). Turning core plugin settings OFF on both devices breaks this circle and lets each device control its own Sync behavior independently.
 
 ### Why Per-Device Plugin Lists
 
@@ -864,7 +870,13 @@ All agents coordinate through THE COURTROOM: `!/!/!/! The world is quiet here/DO
 
 
 
-That file is the live status board. Read it to orient. Update it when you start or finish work.
+That file is the live convening board. Read it to orient. Update it for
+arrival, live motion, open signals, and immediate blockers.
+
+It is not the full project tracker, not the durable backlog, not the archive,
+and not the final record of policy. Detailed execution state belongs in Linear
+and GitHub; durable handoff context belongs in `!/!`; binding decisions belong
+in canonical governance files.
 
 
 

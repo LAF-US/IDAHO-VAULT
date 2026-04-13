@@ -61,6 +61,7 @@ machine, path, or runtime container.
 | Status | Active re-foundation from scaffold |
 | Active runners | `uv run crewai run`, `uv run idaho_vault` |
 | Active crews | `idaho_vault.bootstrap` |
+| Training-ready crews | None yet |
 | Output staging | `!/CREWAI/` (live staging / output) |
 | Runtime class | Vault-contained local runtime slice |
 | Promotion gate | Logan approval required before staged output enters canon |
@@ -74,6 +75,12 @@ machine, path, or runtime container.
 | Crew | Path | Purpose | Status |
 |---|---|---|---|
 | `idaho_vault.bootstrap` | `src/idaho_vault/crew.py` | Validate the project contract, lockfile, and package wiring without external model credentials | Active |
+
+### Active crew internals
+
+| Crew | Agent surface | Task surface | Training posture |
+|---|---|---|---|
+| `idaho_vault.bootstrap` | `src/idaho_vault/config/agents.yaml` -> `bootstrap_validator` | `src/idaho_vault/config/tasks.yaml` -> `deployment_probe` | Registered and runnable, but not a live human-feedback training target |
 
 ### Active runners
 
@@ -103,6 +110,7 @@ machine, path, or runtime container.
 3. Promotion from `!/CREWAI/` into canon requires Logan approval.
 4. Runtime caches, logs, and secret-bearing material never self-promote.
 5. `swarm.json` registers the CrewAI layer, but crew/task/runner topology lives here.
+6. A crew may be active without being training-ready.
 
 ---
 
@@ -151,3 +159,10 @@ The current deployment pass is focused on:
 
 Any future crews, tools, or runners must be added as fresh re-foundation work
 and registered here before they count as live topology.
+
+Training doctrine note:
+
+- `idaho_vault.bootstrap` is the first live crew, but it exists to validate the
+  deployment contract and runtime containment.
+- Credentialed or human-feedback training work begins only after a future crew
+  is both registered here and explicitly treated as training-ready.
