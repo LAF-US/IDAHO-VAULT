@@ -743,27 +743,31 @@ Two systems share the vault. They have distinct, non-overlapping responsibilitie
 
 The phone writes `.md` files. The desktop processes them.
 
-### Obsidian Sync Settings — Desktop
+### Obsidian Sync Settings — Desktop (Workspace)
 
 | Toggle | Setting |
 | --- | --- |
-| Core settings | ON |
+| Core settings | OFF — prevents circular dependency (Sync is a core plugin; syncing core plugin settings makes Sync's own selective-sync config vault-wide instead of per-device) |
 | Appearance | ON |
 | Hotkeys | ON |
 | Active core plugins | ON |
 | Active community plugins | ON |
 | Installed community plugins | ON |
 
-### Obsidian Sync Settings — Mobile (Pixel)
+### Obsidian Sync Settings — Mobile (Pixel — Capture)
 
 | Toggle | Setting |
 | --- | --- |
-| Core settings | ON |
+| Core settings | OFF — same circular dependency fix; each device controls its own media sync toggles independently |
 | Appearance | ON |
 | Hotkeys | ON |
 | Active core plugins | OFF — phone does not need slides, audio-recorder, webviewer, etc. |
 | Active community plugins | OFF — decouples plugin lists; desktop keeps 26, phone keeps 0 |
-| Installed community plugins | OFF — phone does not need 140 plugin directories |
+| Installed community plugins | OFF — phone does not need 54 plugin directories |
+
+### Why Core Plugin Settings Are OFF
+
+Sync is itself a core plugin. With "Core plugin settings: ON," Sync's selective-sync configuration (audio/video/PDF toggles) propagates between devices — making those toggles vault-wide, not per-device. This creates a circular dependency: the phone needs media sync ON (capture device), but the laptop needs it OFF (workspace). Turning core plugin settings OFF on both devices breaks this circle and lets each device control its own Sync behavior independently.
 
 ### Why Per-Device Plugin Lists
 
