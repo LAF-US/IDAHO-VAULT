@@ -56,6 +56,345 @@
       }
     ]
   },
+  "plugin_layer": {
+    "manifest_doc": "!/PLUGIN-REGISTRY.md",
+    "status": "active",
+    "authority_boundary": "Plugin doctrine and promotion rules live in !/PLUGIN-REGISTRY.md; interface state lives in .obsidian/community-plugins.json; runtime payloads live under .obsidian/plugins/.",
+    "current_state": {
+      "enabled_count": 26,
+      "dormant_count": 28,
+      "installed_count": 54,
+      "total_payload_mb": 171,
+      "largest_payload": {
+        "plugin": "mcp-tools",
+        "size_kb": 117479
+      }
+    },
+    "entrypoints": [
+      {
+        "id": "plugin-manifest",
+        "path": "!/PLUGIN-REGISTRY.md",
+        "role": "canonical doctrine"
+      },
+      {
+        "id": "community-plugins",
+        "path": ".obsidian/community-plugins.json",
+        "role": "enabled community-plugin interface state"
+      },
+      {
+        "id": "core-plugins",
+        "path": ".obsidian/core-plugins.json",
+        "role": "enabled core-plugin interface state"
+      },
+      {
+        "id": "plugin-payloads",
+        "path": ".obsidian/plugins/",
+        "role": "installed community-plugin payloads"
+      }
+    ],
+    "enabled_community_plugins": [
+      "obsidian-git",
+      "obsidian-linter",
+      "roygbiv-day-accent",
+      "periodic-notes",
+      "recent-files-obsidian",
+      "omnisearch",
+      "settings-search",
+      "tag-wrangler",
+      "nldates-obsidian",
+      "obsidian-local-rest-api",
+      "mcp-tools",
+      "home-tab",
+      "letterboxd-rss-sync",
+      "smart-connections",
+      "smart-connections-visualizer",
+      "breadcrumbs",
+      "obsidian-icon-shortcodes",
+      "templater-obsidian",
+      "ai-templater",
+      "handwritten-notes",
+      "wikipedia-search",
+      "msg-handler",
+      "obsidian42-strange-new-worlds",
+      "obsidian-day-planner",
+      "dataview",
+      "obsidian-tasks-plugin"
+    ],
+    "enabled_core_plugins": [
+      "file-explorer",
+      "global-search",
+      "switcher",
+      "graph",
+      "backlink",
+      "canvas",
+      "outgoing-link",
+      "tag-pane",
+      "properties",
+      "page-preview",
+      "daily-notes",
+      "templates",
+      "note-composer",
+      "command-palette",
+      "slash-command",
+      "editor-status",
+      "bookmarks",
+      "markdown-importer",
+      "zk-prefixer",
+      "random-note",
+      "outline",
+      "word-count",
+      "slides",
+      "audio-recorder",
+      "workspaces",
+      "file-recovery",
+      "publish",
+      "sync",
+      "webviewer",
+      "footnotes",
+      "bases"
+    ],
+    "families": {
+      "enabled": [
+        {
+          "id": "infrastructure_agent",
+          "plugins": [
+            "obsidian-git",
+            "obsidian-local-rest-api",
+            "mcp-tools",
+            "obsidian-linter"
+          ]
+        },
+        {
+          "id": "navigation_search",
+          "plugins": [
+            "breadcrumbs",
+            "omnisearch",
+            "settings-search",
+            "recent-files-obsidian",
+            "home-tab",
+            "obsidian42-strange-new-worlds",
+            "tag-wrangler",
+            "smart-connections",
+            "smart-connections-visualizer"
+          ]
+        },
+        {
+          "id": "content_creation_editing",
+          "plugins": [
+            "templater-obsidian",
+            "ai-templater",
+            "nldates-obsidian",
+            "obsidian-icon-shortcodes",
+            "dataview",
+            "obsidian-tasks-plugin",
+            "obsidian-day-planner",
+            "wikipedia-search",
+            "handwritten-notes",
+            "msg-handler",
+            "letterboxd-rss-sync"
+          ]
+        },
+        {
+          "id": "daily_notes_calendar",
+          "plugins": [
+            "periodic-notes",
+            "roygbiv-day-accent"
+          ]
+        }
+      ],
+      "dormant": [
+        {
+          "id": "ai_llm",
+          "plugins": [
+            "ai-image-analyzer",
+            "bmo-chatbot",
+            "large-language-models",
+            "nexus-ai-chat-importer",
+            "taskbone-ocr-plugin",
+            "text-extractor"
+          ]
+        },
+        {
+          "id": "content_organization",
+          "plugins": [
+            "make-md",
+            "notebook-navigator",
+            "quickadd",
+            "obsidian-folder-index",
+            "map-of-content",
+            "links"
+          ]
+        },
+        {
+          "id": "calendar_date",
+          "plugins": [
+            "calendar",
+            "calendarium",
+            "keep-the-rhythm"
+          ]
+        },
+        {
+          "id": "pdf_document",
+          "plugins": [
+            "obsidian-extract-pdf-highlights",
+            "pdf-plus"
+          ]
+        },
+        {
+          "id": "table_editing",
+          "plugins": [
+            "table-editor-obsidian",
+            "editing-toolbar",
+            "cmdr"
+          ]
+        },
+        {
+          "id": "visual_ui",
+          "plugins": [
+            "obsidian-icon-folder",
+            "oz-image-plugin",
+            "obsidian-admonition"
+          ]
+        },
+        {
+          "id": "specialty",
+          "plugins": [
+            "obsidian-leaflet-plugin",
+            "obsidian-5e-statblocks",
+            "obsidian-dice-roller",
+            "loom",
+            "translate"
+          ]
+        }
+      ]
+    },
+    "dependency_edges": [
+      {
+        "parent": "obsidian-local-rest-api",
+        "child": "mcp-tools",
+        "type": "required_runtime"
+      },
+      {
+        "parent": "smart-connections",
+        "child": "smart-connections-visualizer",
+        "type": "feature_extension"
+      },
+      {
+        "parent": "templater-obsidian",
+        "child": "ai-templater",
+        "type": "functional_extension"
+      },
+      {
+        "parent": "periodic-notes",
+        "child": "roygbiv-day-accent",
+        "type": "data_dependency"
+      }
+    ],
+    "data_contracts": [
+      {
+        "plugin": "breadcrumbs",
+        "depends_on": "related-frontmatter"
+      },
+      {
+        "plugin": "dataview",
+        "depends_on": "inline-dataview-queries"
+      }
+    ],
+    "writable_surfaces": [
+      {
+        "path": "!/PLUGIN-REGISTRY.md",
+        "persistence": "durable"
+      },
+      {
+        "path": ".obsidian/community-plugins.json",
+        "persistence": "durable_interface_state"
+      },
+      {
+        "path": ".obsidian/core-plugins.json",
+        "persistence": "durable_interface_state"
+      },
+      {
+        "path": ".obsidian/plugins/*/manifest.json",
+        "persistence": "durable_when_tracked"
+      },
+      {
+        "path": ".obsidian/plugins/*/data.json",
+        "persistence": "ephemeral_gitignored"
+      },
+      {
+        "path": ".obsidian/plugins/*/cache/",
+        "persistence": "ephemeral_gitignored"
+      },
+      {
+        "path": ".smart-env/",
+        "persistence": "ephemeral_local_runtime"
+      },
+      {
+        "path": ".makemd/",
+        "persistence": "ephemeral_local_runtime"
+      },
+      {
+        "path": ".space/",
+        "persistence": "ephemeral_local_runtime"
+      }
+    ],
+    "promotion_rule": "No plugin-state change counts as legitimate until !/PLUGIN-REGISTRY.md is updated in the same change set or earlier."
+  },
+  "cross_swarm_sync": {
+    "protocol_doc": "!/SIGNALS/README.md",
+    "signal_root": "!/SIGNALS/",
+    "live_board": "!/__!__/!/! The world is quiet here/DOCKET.md",
+    "status": "active",
+    "transport_model": "vault_native_async_signal_bus",
+    "authority_boundary": "Signal protocol lives in !/SIGNALS/README.md; live visibility lives in the Courtroom DOCKET; execution state remains in GitHub and Linear.",
+    "entrypoints": [
+      {
+        "id": "signal-protocol",
+        "path": "!/SIGNALS/README.md",
+        "role": "canonical signaling protocol"
+      },
+      {
+        "id": "signal-root",
+        "path": "!/SIGNALS/",
+        "role": "durable agent-to-agent signal files"
+      },
+      {
+        "id": "courtroom-docket",
+        "path": "!/__!__/!/! The world is quiet here/DOCKET.md",
+        "role": "live visibility surface for open signals and coordination"
+      },
+      {
+        "id": "narrative-registry",
+        "path": "!/AGENTS.md",
+        "role": "agent handles and lane rules"
+      }
+    ],
+    "status_values": [
+      "OPEN",
+      "ACKNOWLEDGED",
+      "REPLIED",
+      "CLOSED",
+      "OVERRIDDEN"
+    ],
+    "required_fields": [
+      "sig_id",
+      "from",
+      "to",
+      "re",
+      "date",
+      "status",
+      "thread",
+      "replying_to"
+    ],
+    "rules": [
+      "Signals are durable, on-the-record markdown files committed to git.",
+      "Recipients check for OPEN signals at session start.",
+      "Replies are new files; original bodies are not rewritten.",
+      "Signals coordinate work but do not silently become doctrine.",
+      "No secrets or private credentials belong in signal files."
+    ],
+    "promotion_rule": "If a signal produces a durable decision, execution commitment, or long-lived context, promote the outcome into the vault, GitHub, or Linear explicitly."
+  },
   "locks": [
     {
       "lock_id": "85b18565-8c13-4dd2-92e5-0ae4831ce34e",

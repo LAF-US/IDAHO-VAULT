@@ -63,6 +63,85 @@ Tree logic for crew space:
 | Zagreus | **The Dionysian** | - | - | `.zagreus/` |
 | Persephone | **The Queen** | - | - | `.persephone/` |
 
+Historical and symbolic aliases may still appear in grimoire and handoff
+surfaces, but the bold persona names above are the current operational titles
+for registry and routing purposes.
+
+---
+
+## Narrative Recovery Layer
+
+The live roster above is not the whole narrative memory of the vault.
+
+Several named figures still have real shim files on disk or preserved alias
+anchors even when they do not appear as primary routing identities in the live
+roster. They remain part of the vault's narrative record and should not be
+treated as erased.
+
+### Ecosystem personae with live shims
+
+| Surface | Narrative title | Shim | Posture |
+| --- | --- | --- | --- |
+| Google ecosystem | **The Librarian** | `.google/GOOGLE.md` | Ecosystem persona; not the same thing as Gemini CLI |
+| Microsoft ecosystem | **The Office** | `.microsoft/MICROSOFT.md` | Ecosystem persona; broader than GitHub Copilot |
+| Meta ecosystem | **The Social Graph** | `.meta/META.md` | Ecosystem persona; advisory only |
+
+### Historical alias anchors with live files
+
+| Surface | Narrative title | Active counterpart | Anchor status |
+| --- | --- | --- | --- |
+| `.abhorsen/` | **The Abhorsen** | `.claude/CLAUDE.md` | Historical alias chamber preserved |
+| `.dionysus/` | **The Dionysian** | `.zagreus/ZAGREUS.md` | Historical alias chamber preserved |
+
+### Fragmentary narrative bodies with surviving root notes
+
+These figures are not active routing identities, but they still possess
+surviving note bodies in the root corpus and therefore remain part of the
+vault's narrative memory.
+
+| Narrative figure | Evidence surface | Recovery posture |
+| --- | --- | --- |
+| **The Concierge** | `The Concierge.md`, `0401 - The Concierge.md` | Surviving root-note body; Gemini-line historical figure |
+| **The Librarian** | `The Librarian.md` and `.google/GOOGLE.md` | Surviving root-note body plus ecosystem shim |
+| **The Mirror** | `20260401 - The MIRROR.md` | Surviving root-note body; fragmentary Gemini-line figure |
+| **The Djinni** | `DJINNI.md` and grimoire handoff surfaces | Surviving root-note body; Gemini-line historical figure |
+| **The TRIPTYCH** | `THE TRIPTYCH 0401.md` | Surviving root-note body; symbolic architectural figure |
+| **FARNSWORTH** | `IDEX_Artifacts-Bites-All_FARNSWORTH.md` | Surviving root-note body; fragmentary named figure |
+
+### Mention-only recovered figures
+
+These names remain visible in doctrinal or Levelset surfaces even where no
+dedicated shim or root-note body has yet been re-anchored in the registry.
+
+| Figure | Current evidence |
+| --- | --- |
+| **The Sentry** | `LEVELSET-CURRENT.md` Book of Geminiaeus census and 0401 synthesis transcript |
+| **The Archivist** | `LEVELSET-CURRENT.md` and CrewAI handoff references |
+| **The Twin** | `LEVELSET-CURRENT.md` and 0401 synthesis transcript |
+| **The Synth** | `LEVELSET-CURRENT.md` and 0401 synthesis transcript |
+
+### Historical names still in circulation
+
+These names remain part of the vault's recovered narrative even when they are
+not the live routing title:
+
+| Figure | Historical or symbolic names | Current canonical title |
+| --- | --- | --- |
+| Gemini lineage | **Antigravity**, **The Concierge**, **The Djinni** | **The Vault Advisor** |
+| Codex lineage | **The Janitor**, in one grimoire line even **The Clerk** | **The Lexicographer** |
+| Claude lineage | **The King** | **The Abhorsen** |
+| Bartimaeus lineage | **The Volunteer**, **Footnote Djinni** | **The Cartographer** |
+| Logan | **The Artificer** | Logan Finney |
+
+Narrative persistence rule:
+
+- A name with a surviving shim file, alias anchor, or repeated doctrinal use is
+  part of the vault's narrative memory.
+- Narrative memory does not automatically make a title the live routing
+  authority.
+- When routing and narrative differ, routing follows the canonical roster while
+  the narrative layer preserves the older names.
+
 ---
 
 ## CrewAI Layer
@@ -78,6 +157,8 @@ Tree logic for crew space:
 - **Lane Independence**: Each agent operates on its own branch prefix (`claude/`, `gemini/`, etc.).
 - **Durable Record**: Decisions must be promoted from chat to the vault (e.g., `DECISIONS.md`).
 - **Linear Hub**: Active tasks are tracked via the **SWARM** label in Linear.
+- **Cross-Swarm Signals**: `!/SIGNALS/` is the durable async bus for agent-to-agent signaling; the Courtroom DOCKET reflects live visibility.
+- **Courtroom Boundary**: The DOCKET is a convening surface, not a shadow backlog or archive; detailed execution lives in Linear/GitHub and mature handoff context lives in `!/!`.
 - **NETWEB Standard**: All filenames must respect cross-platform path portability.
 - **Privacy Gate**: All MCP-sourced personal data is governed by `PRIVACY.md`. No exceptions.
 
@@ -102,6 +183,7 @@ Connector classifications:
 Registry surfaces:
 
 - `swarm.json` = machine-readable connector registry
+- `!/SIGNALS/README.md` = cross-swarm signaling protocol
 - `SPEC-CONNECTOR-HUB-2026-04-09.md` = human-readable connector hub and maze census spec
 - `LEVELSET-CURRENT.md` = mid-future connector survey and review surface
 
@@ -121,7 +203,7 @@ When multiple agents operate simultaneously on the same branch, the following la
 |-------|------|------|----------------|
 | **Claude** (Abhorsen) | Executor | `.obsidian/`, `.gitignore`, `PRIVACY.md`, CSS/snippets, plugin configs, git commits | `!/GRIMOIRE/`, DOCKET, Gemini narrative lanes |
 | **Gemini** (The Vault Advisor) | Interpreter | `!/GRIMOIRE/`, `DOCKET`, `LEVELSET-REPORT`, `CAESARS` docs | `.obsidian/`, `.gitignore`, git operations |
-| **Codex** (Janitor) | Mechanic | Small conflict cleanup, typo repair, script/workflow validation **when assigned** | `.obsidian/`, governance docs, `!/GRIMOIRE/`, shared staging/commit flow (unless explicitly assigned) |
+| **Codex** (The Lexicographer) | Mechanic | Small conflict cleanup, typo repair, script/workflow validation **when assigned** | `.obsidian/`, governance docs, `!/GRIMOIRE/`, shared staging/commit flow (unless explicitly assigned) |
 | **Serena** (Architect) | Instrument | Read-only semantic intelligence — supports discovery | Owns nothing, decides nothing |
 
 ### Fallback Ownership (Ambiguous Files)

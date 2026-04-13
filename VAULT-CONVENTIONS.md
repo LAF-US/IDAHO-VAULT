@@ -1,66 +1,68 @@
 ---
 authority: LOGAN
 related:
-- 1Password
-- 2023-12-19 - GIAC meeting
-- '2026-04-02'
-- '218'
-- '260'
-- AGENTS
-- API
-- Act
-- Ada County
-- Boise
-- Brad Little
-- CLAUDE
-- CLI
-- CONSTITUTION
-- Copilot
-- DAILY NOTE
-- DAILY NOTE TEMPLATE
-- DECISIONS
-- DOS
-- GEMINI
-- GitHub
-- HFS
-- Idaho
-- Idaho Legislature
-- Idaho Public Television
-- Idaho Reports
-- Idaho Statesman
-- LEVELSET
-- Logan Finney
-- Logan's
-- MCP
-- OBSIDIAN DAILY NOTE
-- Obsidian
-- PROJECT
-- PROTOCOL
-- README
-- SSH
-- THE
-- The world is quiet here
-- UTC
-- VAULT-METADATA-STANDARD
-- VAULT-TEMPLATES
-- VAULT-ZONES
-- _AUX
-- agent
-- codex
-- coordination
-- doctrine
-- election
-- emoji
-- format
-- infrastructure
-- legislative
-- links
-- meeting
-- passwords
-- persona
-- syntax
-- systems
-- template
+  - 1Password
+  - 2023-12-19 - GIAC meeting
+  - '2026-04-02'
+  - '218'
+  - '260'
+  - AGENTS
+  - API
+  - Act
+  - Ada County
+  - Boise
+  - Brad Little
+  - CLAUDE
+  - CLI
+  - CONSTITUTION
+  - Copilot
+  - DAILY NOTE
+  - DAILY NOTE TEMPLATE
+  - DECISIONS
+  - DOS
+  - GEMINI
+  - GitHub
+  - HFS
+  - Idaho
+  - Idaho Legislature
+  - Idaho Public Television
+  - Idaho Reports
+  - Idaho Statesman
+  - LEVELSET
+  - Logan Finney
+  - Logan's
+  - MCP
+  - OBSIDIAN DAILY NOTE
+  - Obsidian
+  - PROJECT
+  - PROTOCOL
+  - README
+  - SSH
+  - THE
+  - The world is quiet here
+  - UTC
+  - VAULT-METADATA-STANDARD
+  - VAULT-TEMPLATES
+  - VAULT-ZONES
+  - _AUX
+  - agent
+  - codex
+  - coordination
+  - doctrine
+  - election
+  - emoji
+  - format
+  - infrastructure
+  - legislative
+  - links
+  - meeting
+  - passwords
+  - persona
+  - syntax
+  - systems
+  - template
+date created: Sunday, April 12th 2026, 4:02:32 am
+date modified: Sunday, April 12th 2026, 9:15:35 pm
 ---
 
 # VAULT-CONVENTIONS — Shared Reference for All Agents
@@ -864,7 +866,13 @@ All agents coordinate through THE COURTROOM: `!/!/!/! The world is quiet here/DO
 
 
 
-That file is the live status board. Read it to orient. Update it when you start or finish work.
+That file is the live convening board. Read it to orient. Update it for
+arrival, live motion, open signals, and immediate blockers.
+
+It is not the full project tracker, not the durable backlog, not the archive,
+and not the final record of policy. Detailed execution state belongs in Linear
+and GitHub; durable handoff context belongs in `!/!`; binding decisions belong
+in canonical governance files.
 
 
 

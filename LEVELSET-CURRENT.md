@@ -122,16 +122,17 @@ All three move together. None can stand alone.
 
 ### Obsidian Plugin State
 
-**Desktop:** 49 community plugins enabled (expanded from 45 → 49 this session: +roygbiv-day-accent, +tag-wrangler, +nldates-obsidian, +periodic-notes, +graph-nested-tags).
+**Desktop:** 26 community plugins enabled, 54 total installed (26 enabled + 28 dormant).
 **Mobile:** 0 community plugins (Restricted Mode — capture device; device split 2026-04-05).
-**Sync:** Obsidian Sync (paid). Content syncs both ways. Plugin lists are per-device. Core plugin *settings* sync; community plugin *lists* do not.
+**Sync:** Obsidian Sync (paid), remote vault "LAF-US". Content syncs both ways. Core plugin settings OFF (prevents circular dependency where Sync syncs its own selective-sync config). Community plugin lists are per-device.
+**Plugin governance:** `!/PLUGIN-REGISTRY.md` — authoritative registry following CrewAI MANIFEST pattern (ESSENTIAL/ACTIVE/DORMANT layered model with promotion rules).
 
 ### Device Roles (established 2026-04-05)
 
 | Device | Role | Plugins | Sync Direction |
 |---|---|---|---|
-| Windows Desktop | Engine room — full plugin stack, git, MCP, agents | 49 community | Receives content from mobile; processes it |
-| Pixel Phone | Capture device — quick notes, tags, photos | 0 community (Restricted Mode) | Creates content upstream; sends to desktop |
+| Windows Desktop | Workspace — full plugin stack, git, MCP, agents | 26 community (4 essential + 22 active) | Receives content from mobile; processes it |
+| Pixel Phone | Capture — quick notes, tags, photos, audio | 0 community (Restricted Mode) | Creates content upstream; sends to desktop |
 
 ### Daily Note System (operational 2026-04-05)
 

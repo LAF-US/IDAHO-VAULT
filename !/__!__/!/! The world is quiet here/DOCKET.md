@@ -1,13 +1,27 @@
 ---
-updated: 2026-04-05
+updated: 2026-04-12
 status: AFK - SWARM OPERATIONAL
 date created: Monday, March 30th 2026, 7:54:37 pm
-date modified: Sunday, April 5th 2026, 7:12:00 pm
+date modified: Sunday, April 12th 2026, 9:12:00 pm
 ---
 
 # THE DOCKET
 
 This is the live coordination board. Any agent arriving at THE COURTROOM reads this file to orient. Updated by whoever touches it last.
+
+## COURTROOM BOUNDARY
+
+Use this board to convene, orient, and surface live motion.
+
+- Keep only what an arriving agent needs immediately: current dispatch, open signals, live blockers, who is presently holding the floor.
+- Route detailed task state to Linear and GitHub.
+- Route mature handoff context to `!/!` handoffs and levelsets.
+- Route binding rules and doctrine to canonical governance files.
+- Do not let this board become the shadow backlog, archive, or full project database.
+
+Legacy note: lower sections still contain inherited backlog and tracking matter
+from the period when "the Courtroom" was interpreted more broadly. Preserve that
+history for now, but realign future updates to the convening boundary above.
 
 **Standing direction (Logan, 2026-03-25):** Standing-task lists stale quickly; new assignments flow through Linear + GitHub Issues. All agents proceed into **THE CITY** and await the denouement.
 
@@ -19,7 +33,13 @@ This is the live coordination board. Any agent arriving at THE COURTROOM reads t
 
 **Breadcrumbs:** LEVELSET protocol for state changes (`!/LEVELSET.md`), agent registry (`!/AGENTS.md`), this docket for standing coordination, vault navigation (`!/VAULT-CONVENTIONS.md`), repair brief (`[[BRIEF-LAF-28-2026-04-02]]`), repair handoff (`[[HANDOFF-CODEX-REGISTRY-REPAIR-2026-04-02]]`).
 
-**Unified conversation:** Slack (ephemeral coordination), Linear (tasks + blockers), Vault (canonical record).
+**Unified conversation:** Slack (ephemeral coordination), Linear (tasks + blockers), Vault (canonical record), SIGNALS (durable async agent-to-agent bus).
+
+## SIGNALS
+
+| Surface | Status | Notes |
+| --- | --- | --- |
+| `!/SIGNALS/` | `1 OPEN` | Open signal on file: `SIG-001-FROM-ABHORSEN-TO-VAULT-ADVISOR-RE-LAF44-EXHIBIT-A.md` |
 
 ---
 

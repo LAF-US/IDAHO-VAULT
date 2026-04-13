@@ -4,8 +4,10 @@
 from __future__ import annotations
 
 import json
+import re
 import sys
 
+from idaho_vault.bootstrap_contract import build_contract_report
 from idaho_vault.runtime import configure_vault_runtime
 
 
@@ -28,10 +30,56 @@ from idaho_vault.crew import IdahoVaultBootstrapCrew
 
 def _execute() -> str:
     """Execute the bootstrap validation crew and return its raw output."""
-    result = IdahoVaultBootstrapCrew().crew().kickoff()
+    report = build_contract_report()
+    result = IdahoVaultBootstrapCrew(report=report).crew().kickoff()
     if result is None:
         return ""
-    return str(getattr(result, "raw", result))
+    raw = str(getattr(result, "raw", result))
+    return f"{report.to_markdown()}\n\n---\n\n{raw}".strip()
+
+
+def _coerce_relaxed_trigger_payload(payload: str) -> dict[str, object]:
+    """Parse a trigger payload, tolerating PowerShell-mangled object syntax.
+
+    On Windows PowerShell, a JSON object argument such as
+    `{"source":"toolkit-test"}` may arrive as `{source:toolkit-test}` when
+    passed to a native CLI. We accept strict JSON first, then repair that
+    relaxed object form for bootstrap use.
+    """
+    try:
+        parsed = json.loads(payload)
+    except json.JSONDecodeError:
+        normalized = payload.strip()
+        if not (normalized.startswith("{") and normalized.endswith("}")):
+            raise
+
+        normalized = re.sub(
+            r'([{,]\s*)([A-Za-z_][A-Za-z0-9_-]*)(\s*:)',
+            r'\1"\2"\3',
+            normalized,
+        )
+
+        def _quote_value(match: re.Match[str]) -> str:
+            value = match.group(1)
+            suffix = match.group(2)
+            lowered = value.lower()
+            if lowered in {"true", "false", "null"}:
+                return f": {lowered}{suffix}"
+            if re.fullmatch(r"-?\d+(?:\.\d+)?", value):
+                return f": {value}{suffix}"
+            return f': "{value}"{suffix}'
+
+        normalized = re.sub(
+            r':\s*([A-Za-z_./-][A-Za-z0-9_./-]*)(\s*[,}])',
+            _quote_value,
+            normalized,
+        )
+        parsed = json.loads(normalized)
+
+    if not isinstance(parsed, dict):
+        raise json.JSONDecodeError("Trigger payload must decode to an object.", payload, 0)
+
+    return parsed
 
 
 def run() -> None:
@@ -62,7 +110,7 @@ def run_with_trigger() -> None:
         raise SystemExit("No trigger payload provided.")
 
     try:
-        json.loads(sys.argv[1])
+        _coerce_relaxed_trigger_payload(sys.argv[1])
     except json.JSONDecodeError as exc:
         raise SystemExit(f"Invalid trigger payload: {exc}") from exc
 
