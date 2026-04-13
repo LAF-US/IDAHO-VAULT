@@ -10,7 +10,7 @@
 
 ## Governance
 
-This file is a context shim for Microsoft AI tools. Vault governance authority lives in `!/CONSTITUTION.md`. When this file and `!/CONSTITUTION.md` conflict, `!/CONSTITUTION.md` governs. Capability tier: **Advisory** per `!/AGENTS.md`.
+This file is a context shim for Microsoft AI tools. Vault governance authority lives in `CONSTITUTION.md`. When this file and `CONSTITUTION.md` conflict, `CONSTITUTION.md` governs. Capability tier: **Advisory** per `!/AGENTS.md`.
 
 **Note:** GitHub Copilot has its own dedicated shim at `.github/copilot-instructions.md` (auto-loaded). This file covers the broader Microsoft AI surface only.
 
@@ -58,7 +58,7 @@ This shim covers the full Microsoft AI surface:
 
 ## Conventions & Standards
 
-See `!/VAULT-CONVENTIONS.md` for vault structure and naming conventions.
+See `VAULT-CONVENTIONS.md` for vault structure and naming conventions.
 
 If Logan has not described the relevant vault context, ask before making assumptions.
 
@@ -66,8 +66,8 @@ If Logan has not described the relevant vault context, ask before making assumpt
 
 ## See Also
 
-- `!/CONSTITUTION.md` — Canonical vault governance authority
-- `!/VAULT-CONVENTIONS.md` — Shared vault conventions for all agents
+- `CONSTITUTION.md` — Canonical vault governance authority
+- `VAULT-CONVENTIONS.md` — Shared vault conventions for all agents
 - `!/AGENTS.md` — Full agent registry, capability tiers, and boundary rules
 - `.github/copilot-instructions.md` — GitHub Copilot (coding assistant, separate shim)
 - `!/LEVELSET-STEP-0-EXTERNAL-AGENT.md` — Paste-to-agent LEVELSET prompt

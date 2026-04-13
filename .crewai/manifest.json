@@ -1,14 +1,32 @@
 {
   "// note": "Machine-readable registry for the CrewAI layer in IDAHO-VAULT.",
-  "// status": "CrewAI is active as a re-foundation from scaffold. Internal topology and doctrine live in .crewai/MANIFEST.md.",
+  "// status": "CrewAI is active as a re-foundation with a live bootstrap-validation shard. Internal topology and doctrine live in .crewai/MANIFEST.md.",
   "version": "0.3.0",
-  "crewai_version": "1.12.2",
+  "crewai_version": "1.14.1",
   "vault": "github.com/loganfinney27/IDAHO-VAULT",
   "status": "refoundation",
   "manifest_path": ".crewai/MANIFEST.md",
   "output_dir": "!/CREWAI/",
-  "runtime_class": "linux-native disposable runtime slice",
+  "runtime_class": "vault-contained local runtime slice",
   "authority_boundary": "swarm.json registers the layer; live CrewAI topology and promotion rules live in .crewai/MANIFEST.md.",
-  "active_runners": [],
-  "crews": []
+  "active_runners": [
+    {
+      "id": "crewai-cli",
+      "command": "uv run crewai run",
+      "status": "active"
+    },
+    {
+      "id": "package-entrypoint",
+      "command": "uv run idaho_vault",
+      "status": "active"
+    }
+  ],
+  "crews": [
+    {
+      "id": "idaho-vault-bootstrap",
+      "path": "src/idaho_vault/crew.py",
+      "status": "active",
+      "purpose": "Validate the local CrewAI deployment contract with a vault-local mock LLM."
+    }
+  ]
 }

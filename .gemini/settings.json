@@ -4,10 +4,10 @@
     "fileName": [
       "GEMINI.md",
       "AGENTS.md",
-      "!/VAULT-CONVENTIONS.md",
-      "!/CONSTITUTION.md",
-      "!/!/LEVELSET-CURRENT.md",
-      "!/!/!/! The world is quiet here/DOCKET.md"
+      "VAULT-CONVENTIONS.md",
+      "CONSTITUTION.md",
+      "LEVELSET-CURRENT.md",
+      "!/__!__/!/! The world is quiet here/DOCKET.md"
     ]
   },
   "mcpServers": {

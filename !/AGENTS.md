@@ -22,6 +22,12 @@
 6. `!/agents.json` -> Canonical generated bootstrap index
 7. `!/agent.sh` -> Canonical local bootstrap entrypoint
 
+Tree logic for crew space:
+
+- `!` is the Swarmic Nest: collective group space.
+- `.*` dotfolders are individual agent space.
+- Registry, routing, and coordination should preserve that distinction.
+
 ## Fresh Agent Boot Order
 
 1. Read root `AGENTS.md` as pointer only.

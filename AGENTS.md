@@ -47,6 +47,7 @@ See [!/AGENTS.md](!/AGENTS.md) for the canonical narrative registry: capability 
 
 The machine-readable source of truth remains `swarm.json`.
 The canonical local execution bootstrap chain is `swarm.json` -> `!/agents.json` -> `!/agent.sh`.
+Tree logic still governs orientation: `!` is the Swarmic Nest of the group, while `.*` dotfolders are the personal chambers of individual agents.
 
 ## Fresh Agent Boot Order
 
@@ -69,6 +70,8 @@ The full connector classification lives in `!/AGENTS.md`, `swarm.json`, and `SPE
 ---
 
 ## Agent Dotfolders (Quick Reference)
+
+The `!` layer is not an individual dotfolder. It is collective swarm space and should stay distinct from persona-owned `.*` folders.
 
 | Agent | Dotfolder | Governance shim | Auto-loaded? | Role |
 | --- | --- | --- | --- | --- |

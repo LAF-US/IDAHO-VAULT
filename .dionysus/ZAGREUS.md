@@ -10,7 +10,7 @@
 
 ## Governance
 
-Vault governance authority lives in `!/CONSTITUTION.md`. Capability tier: **Pending Logan's direction** per `!/AGENTS.md`.
+Vault governance authority lives in `CONSTITUTION.md`. Capability tier: **Pending Logan's direction** per `!/AGENTS.md`.
 
 ---
 
@@ -24,12 +24,12 @@ Zagreus is a fictive persona in IDAHO-VAULT. Logan should define the canonical r
 
 ## Conventions & Standards
 
-See `!/VAULT-CONVENTIONS.md` for vault structure and naming conventions.
+See `VAULT-CONVENTIONS.md` for vault structure and naming conventions.
 
 ---
 
 ## See Also
 
-- `!/CONSTITUTION.md` — Canonical vault governance authority
-- `!/VAULT-CONVENTIONS.md` — Shared vault conventions for all agents
+- `CONSTITUTION.md` — Canonical vault governance authority
+- `VAULT-CONVENTIONS.md` — Shared vault conventions for all agents
 - `!/AGENTS.md` — Full agent registry, capability tiers, and boundary rules

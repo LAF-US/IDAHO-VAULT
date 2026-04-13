@@ -1,25 +1,27 @@
 ---
 authority: LOGAN
 related:
-- -LAF
-- '2026-03-25'
-- '2026-04-02'
-- AGENTS
-- BRIEF-LAF-3-2026-03-25
-- CONSTITUTION
-- DECISIONS
-- FLAG
-- LAF
-- LEVELSET
-- MCP
-- The world is quiet here
-- VAULT-METADATA-STANDARD
-- VAULT-ZONES
-- VML
-- agent
-- coordination
-- node
-- persona
+  - -LAF
+  - '2026-03-25'
+  - '2026-04-02'
+  - AGENTS
+  - BRIEF-LAF-3-2026-03-25
+  - CONSTITUTION
+  - DECISIONS
+  - FLAG
+  - LAF
+  - LEVELSET
+  - MCP
+  - The world is quiet here
+  - VAULT-METADATA-STANDARD
+  - VAULT-ZONES
+  - VML
+  - agent
+  - coordination
+  - node
+  - persona
+date created: Sunday, April 12th 2026, 4:00:33 am
+date modified: Sunday, April 12th 2026, 5:55:08 pm
 ---
 
 # PROTOCOL.md — Operational Vocabulary

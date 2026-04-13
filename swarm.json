@@ -1,7 +1,7 @@
 {
   "// note": "Machine-readable structured registry of all swarm elements. See AGENTS.md (human-readable) and !/AGENTS.md (canonical narrative registry).",
-  "// governance": "!/CONSTITUTION.md",
-  "// conventions": "!/VAULT-CONVENTIONS.md",
+  "// governance": "CONSTITUTION.md",
+  "// conventions": "VAULT-CONVENTIONS.md",
   "principal": "Logan Finney",
   "vault_authority": "https://github.com/loganfinney27/IDAHO-VAULT",
   "agents": [

@@ -1,36 +1,41 @@
 ---
 authority: LOGAN
 related:
-- 1Password
-- '2026-04-04'
-- '2026-04-05'
-- AGENTS
-- Anthropic
-- Bartimaeus
-- Breadcrumbs
-- CHAINFIRE
-- CLAUDE
-- CONSTITUTION
-- CrewAI
-- DECISIONS
-- GCP
-- GEMINI
-- GRIMOIRE
-- GitHub
-- LEVELSET
-- LOGAN
-- Logan Finney
-- MCP
-- NETWEB
-- Obsidian Sync
-- PRIVACY
-- PROTOCOL
-- TRIPLEX
-- TRIUNE
-- VAULT-CONVENTIONS
-- Zettelkasten
-- agent
-- infrastructure
+  - 1Password
+  - '2026-04-04'
+  - '2026-04-05'
+  - AGENTS
+  - Anthropic
+  - Bartimaeus
+  - Breadcrumbs
+  - CHAINFIRE
+  - CLAUDE
+  - CONSTITUTION
+  - CrewAI
+  - DECISIONS
+  - GCP
+  - GEMINI
+  - GRIMOIRE
+  - GitHub
+  - LEVELSET
+  - LOGAN
+  - Logan Finney
+  - MCP
+  - NETWEB
+  - Obsidian Sync
+  - PRIVACY
+  - PROTOCOL
+  - TRIPLEX
+  - TRIUNE
+  - VAULT-CONVENTIONS
+  - Zettelkasten
+  - agent
+  - infrastructure
+tags:
+  - 108
+  - 104
+date created: Sunday, April 12th 2026, 6:14:58 pm
+date modified: Sunday, April 12th 2026, 6:32:04 pm
 ---
 
 # LEVELSET-CURRENT — Live Ecosystem State
@@ -78,9 +83,9 @@ All three move together. None can stand alone.
 
 | Field | Value |
 |---|---|
-| Remote | github.com/loganfinney27/IDAHO-VAULT (public) |
+| Remote | github.com/LAF-US/IDAHO-VAULT (public) |
 | Primary branch | `main` at `53a1ab1` |
-| Open PRs | PR #108 (`claude/research-unified-swarm-rDmOg`), PR #104 (`claude/resolve-pr-conflicts`) |
+| Open PRs | PR 108 (`claude/research-unified-swarm-rDmOg`), PR 104 (`claude/resolve-pr-conflicts`) |
 | Pack size (GitHub) | ~362 MiB — Phase 2 rewrite pending (target ~30 MiB) |
 
 ### Recent Commits (main)
@@ -326,7 +331,7 @@ The vault contains a symbolic architecture that predates and underlies the techn
 | **`OP_SERVICE_ACCOUNT_TOKEN`** | **High** | Provision in GitHub Secrets |
 | Audio verify JFAC quotes | **High** | HARD GATE for publication |
 | Phase 2 repo size rewrite | **High** | 37 GiB `.git/`, needs branch protection off |
-| Review + merge PR #108, PR #104 | **Medium** | Awaiting Logan review |
+| Review + merge PR 108, PR 104 | **Medium** | Awaiting Logan review |
 | Stop list (`!/VAULT-STOP-LIST.md`) | **Medium** | Filter generic stubs from future linkage |
 | Breadcrumbs field configuration | **Medium** | Which frontmatter fields Breadcrumbs reads |
 | CHAINFIRE New Order tag schema | **Medium** | Required before burn execution |
@@ -352,7 +357,7 @@ The vault contains a symbolic architecture that predates and underlies the techn
 1. Fund Anthropic API credits (`console.anthropic.com`) — HARD GATE
 2. Provision `OP_SERVICE_ACCOUNT_TOKEN` in GitHub Secrets
 3. Audio verify JFAC quotes (HARD GATE before publication)
-4. Review + merge PR #108, PR #104
+4. Review + merge PR 108, PR 104
 5. Reopen Obsidian → verify violet holds → navigate between daily notes to confirm color switching
 6. Review `PRIVACY.md` — ratify or amend
 

@@ -1,5 +1,5 @@
 # CodeRabbit review configuration (auto-loaded by CodeRabbit)
-# See !/VAULT-CONVENTIONS.md for vault governance conventions
+# See VAULT-CONVENTIONS.md for vault governance conventions
 
 reviews:
   auto_review:

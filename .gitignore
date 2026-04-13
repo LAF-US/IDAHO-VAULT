@@ -10,6 +10,14 @@ build/
 .venv/
 venv/
 .uv-cache/
+.pip-cache/
+.npm-cache/
+.tmp/
+.cache/
+.state/
+.pycache/
+.agent-home/
+.codex/home/
 
 # CrewAI
 .crewai_cache/
@@ -90,6 +98,10 @@ desktop.ini
 *.shp
 *.gpx
 
+# Email files (contain internal PII — headers, staff addresses, Exchange infra)
+*.eml
+*.msg
+
 # Production/editing source formats (local media workspace artifacts)
 *.psd
 *.ai
@@ -110,6 +122,8 @@ desktop.ini
 .remember/
 _private/
 _private/**
+@/
+@/**
 .codex/tmp/
 tmp-minidata-msg/
 tmp-msg-extract/
@@ -131,6 +145,10 @@ _phone-link-watcher.pid
 Google Passwords.csv
 **/Google Passwords*.csv
 **/passwords*.csv
+
+# 2FA recovery codes (NEVER publish)
+*recovery-codes*
+*recovery_codes*
 
 # Swarm state archive (local only)
 .github/swarm/state/archive/
