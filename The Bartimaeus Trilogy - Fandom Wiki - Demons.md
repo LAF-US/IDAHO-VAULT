@@ -4,7 +4,10 @@ author:
   - "[[Contributors to The Bartimaeus Trilogy]]"
 published:
 created: 2026-04-13
+date created: Monday, April 13th 2026, 11:31:34 am
+date modified: Monday, April 13th 2026, 11:56:35 am
 ---
+
 **Demons**, more politely known as a **Spirits**, is a general term for all of the supernatural entities originating from [the Other Place](https://bartimaeus.fandom.com/wiki/The_Other_Place "The Other Place"). They are commonly enslaved by [magicians](https://bartimaeus.fandom.com/wiki/Magicians "Magicians").
 
 Although considered disparaging and more than a little disrespectful by [Bartimaeus](https://bartimaeus.fandom.com/wiki/Bartimaeus "Bartimaeus"), the term “demon" is commonly used by [magicians](https://bartimaeus.fandom.com/wiki/Magicians "Magicians"), particularly during their incantations.
