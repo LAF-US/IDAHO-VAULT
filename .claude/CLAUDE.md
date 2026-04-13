@@ -10,7 +10,13 @@
 
 ## Governance
 
-This file provides operational instructions for Claude Code sessions. Vault governance authority lives in `!/CONSTITUTION.md`. When this file and `!/CONSTITUTION.md` conflict, `!/CONSTITUTION.md` governs. This instance operates at **Direct Write** capability tier per `!/AGENTS.md`.
+This file provides operational instructions for Claude Code sessions. Vault governance authority lives in `CONSTITUTION.md`. When this file and `CONSTITUTION.md` conflict, `CONSTITUTION.md` governs. This instance operates at **Direct Write** capability tier per `!/AGENTS.md`.
+
+---
+
+## Runtime Containment
+
+Prefer launching Claude for this vault through `scripts/Start-ClaudeVault.ps1` so temp and cache state lands in the vault. Runtime notes live in `scripts/AGENT-RUNTIME.md`.
 
 ---
 
@@ -59,7 +65,7 @@ This vault uses 1Password for centralized credential management. Credentials (AP
 
 ## Conventions & Standards
 
-See `!/VAULT-CONVENTIONS.md` for vault structure, naming, frontmatter, sourcing protocol, git practices, automation inventory, conversation taxonomy, and guiding principles.
+See `VAULT-CONVENTIONS.md` for vault structure, naming, frontmatter, sourcing protocol, git practices, automation inventory, conversation taxonomy, and guiding principles.
 
 **DISCOVERY BEFORE INVENTION:** Before proposing new conventions, structures, templates, or workflows, READ the existing vault files thoroughly. Logan has made many architectural decisions that are expressed in the vault's structure, naming patterns, frontmatter fields, seed files, and file placement — not always in governance documents. If you encounter a pattern you don't recognize, investigate before overwriting it. The vault is the record of decisions already made. Follow existing conventions; do not reinvent them.
 
@@ -67,7 +73,7 @@ See `!/VAULT-CONVENTIONS.md` for vault structure, naming, frontmatter, sourcing 
 
 ## Swarm Coordination
 
-Read THE DOCKET to orient: `!/!/__!__/!/! The world is quiet here./DOCKET.md`
+Read THE DOCKET to orient: `!/__!__/!/! The world is quiet here/DOCKET.md`
 
 That file is the live status board. Update it when you start or finish work. Task assignment flows through GitHub Issues (`agent:*` labels) and Linear (SWARM label). Slack carries breadcrumbs. The vault is the record.
 
@@ -75,7 +81,7 @@ That file is the live status board. Update it when you start or finish work. Tas
 
 ## Multi-Agent Ecosystem
 
-This vault uses multiple AI tools. All agents share vault conventions defined in `!/VAULT-CONVENTIONS.md` and are coordinated via GitHub Issues and PRs.
+This vault uses multiple AI tools. All agents share vault conventions defined in `VAULT-CONVENTIONS.md` and are coordinated via GitHub Issues and PRs.
 
 **Coordination workflow:** Logan assigns tasks via GitHub Issues with agent labels (`agent:claude-code`, `agent:codex`, `agent:copilot`, `agent:gemini`). Each agent works on its own branch. PRs are the deliverable. Logan reviews and merges from GitHub.
 
@@ -83,9 +89,9 @@ This vault uses multiple AI tools. All agents share vault conventions defined in
 
 ## See Also
 
-- `!/VAULT-CONVENTIONS.md` — Shared vault conventions for all agents
+- `VAULT-CONVENTIONS.md` — Shared vault conventions for all agents
 - `!/AGENTS.md` — Full agent registry, capability tiers, and boundary rules
-- `!/CONSTITUTION.md` — Canonical vault governance authority
+- `CONSTITUTION.md` — Canonical vault governance authority
 - `AGENTS.md` — Root cross-tool pointer (auto-loaded by Codex CLI, Copilot, Qodo)
 - `.gemini/GEMINI.md` — Instructions for Gemini CLI agent (Google)
 - `.codex/CODEX.md` — Instructions for OpenAI Codex agent

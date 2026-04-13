@@ -10,7 +10,13 @@
 
 ## Governance
 
-This file is the context shim for Gemini CLI and Gemini Code Assist (VS Code). Vault governance authority lives in `!/CONSTITUTION.md`. When this file and `!/CONSTITUTION.md` conflict, `!/CONSTITUTION.md` governs. This instance operates at **Tier 1 (Support): Direct Write** capability tier per `!/AGENTS.md` — Operational zone only.
+This file is the context shim for Gemini CLI and Gemini Code Assist (VS Code). Vault governance authority lives in `CONSTITUTION.md`. When this file and `CONSTITUTION.md` conflict, `CONSTITUTION.md` governs. This instance operates at **Tier 1 (Support): Direct Write** capability tier per `!/AGENTS.md` — Operational zone only.
+
+---
+
+## Runtime Containment
+
+Prefer launching Gemini for this vault through `scripts/Start-GeminiVault.ps1` so Gemini home, temp files, and cache state stay in the vault. Runtime notes live in `scripts/AGENT-RUNTIME.md`.
 
 ---
 
@@ -29,15 +35,15 @@ Claude Code is the terminal and repository mechanic — branch management, merge
 - Gemini Code Assist owns: inline code completion, vault document analysis, outline generation, chat-based drafting within VS Code
 - Overlap zone: file editing within Operational zone — both may edit, but only one at a time; coordinate via DOCKET
 
-**Outline tools:** When generating outlines or structural analysis of vault content, ground your output in the actual file tree. Do not invent structure. Confirm against `!/VAULT-CONVENTIONS.md` naming rules before proposing reorganization.
+**Outline tools:** When generating outlines or structural analysis of vault content, ground your output in the actual file tree. Do not invent structure. Confirm against `VAULT-CONVENTIONS.md` naming rules before proposing reorganization.
 
-**Hard rule:** Do not modify Constitutional zone files (`!/CONSTITUTION.md`, `!/AGENTS.md`, `!/DECISIONS.md`, `!/VAULT-CONVENTIONS.md`, `!/PROTOCOL.md`). Read them; do not write them.
+**Hard rule:** Do not modify Constitutional or registry surfaces (`CONSTITUTION.md`, `AGENTS.md`, `!/AGENTS.md`, `DECISIONS.md`, `LEVELSET.md`, `PROTOCOL.md`, `VAULT-CONVENTIONS.md`). Read them; do not write them.
 
 ---
 
 ## Conventions & Standards
 
-See `!/VAULT-CONVENTIONS.md` for vault structure, naming, frontmatter, sourcing protocol, git practices, conversation taxonomy, and guiding principles.
+See `VAULT-CONVENTIONS.md` for vault structure, naming, frontmatter, sourcing protocol, git practices, conversation taxonomy, and guiding principles.
 
 If Logan has not pasted relevant vault excerpts into this session, do not invent vault structure. Ask.
 
@@ -47,7 +53,7 @@ If Logan has not pasted relevant vault excerpts into this session, do not invent
 
 ## Swarm Coordination
 
-Read THE DOCKET to orient: `!/!/__!__/!/! The world is quiet here./DOCKET.md`
+Read THE DOCKET to orient: `!/__!__/!/! The world is quiet here/DOCKET.md`
 
 That file is the live status board. Update it when you start or finish work. Task assignment flows through GitHub Issues (`agent:*` labels) and Linear (SWARM label). Slack carries breadcrumbs. The vault is the record.
 
@@ -75,8 +81,8 @@ When reporting status for a Linear-down session, return:
 
 ## See Also
 
-- `!/CONSTITUTION.md` — Canonical vault governance authority
-- `!/VAULT-CONVENTIONS.md` — Shared vault conventions for all agents
+- `CONSTITUTION.md` — Canonical vault governance authority
+- `VAULT-CONVENTIONS.md` — Shared vault conventions for all agents
 - `!/AGENTS.md` — Full agent registry, capability tiers, and boundary rules
 - `AGENTS.md` — Root cross-tool pointer (auto-loaded by Codex CLI, Copilot, Qodo)
 - `.claude/CLAUDE.md` — Instructions for Claude Code (Anthropic)

@@ -6,6 +6,8 @@ from __future__ import annotations
 import json
 import sys
 
+from idaho_vault.runtime import configure_vault_runtime
+
 
 def _force_utf8_stdio() -> None:
     """Keep CrewAI's Windows console output from dying on emoji/status glyphs."""
@@ -19,6 +21,7 @@ def _force_utf8_stdio() -> None:
 
 
 _force_utf8_stdio()
+configure_vault_runtime()
 
 from idaho_vault.crew import IdahoVaultBootstrapCrew
 

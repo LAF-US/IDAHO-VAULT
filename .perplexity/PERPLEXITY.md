@@ -10,7 +10,7 @@
 
 ## Governance
 
-This file is a context shim for Perplexity. Vault governance authority lives in `!/CONSTITUTION.md`. Perplexity is read/research-only — it does not write to the vault directly. Capability tier: **Read/Analysis** per `!/AGENTS.md`.
+This file is a context shim for Perplexity. Vault governance authority lives in `CONSTITUTION.md`. Perplexity is read/research-only — it does not write to the vault directly. Capability tier: **Read/Analysis** per `!/AGENTS.md`.
 
 ---
 
@@ -25,7 +25,7 @@ This file is a context shim for Perplexity. Vault governance authority lives in 
 
 ## Conventions & Standards
 
-See `!/VAULT-CONVENTIONS.md` for vault structure and naming conventions, which Logan follows when incorporating research findings into vault notes.
+See `VAULT-CONVENTIONS.md` for vault structure and naming conventions, which Logan follows when incorporating research findings into vault notes.
 
 If Logan has not described the relevant vault context, ask before making assumptions about how findings should be formatted or filed.
 
@@ -33,7 +33,7 @@ If Logan has not described the relevant vault context, ask before making assumpt
 
 ## See Also
 
-- `!/CONSTITUTION.md` — Canonical vault governance authority
-- `!/VAULT-CONVENTIONS.md` — Shared vault conventions for all agents
+- `CONSTITUTION.md` — Canonical vault governance authority
+- `VAULT-CONVENTIONS.md` — Shared vault conventions for all agents
 - `!/AGENTS.md` — Full agent registry, capability tiers, and boundary rules
 - `!/LEVELSET-STEP-0-EXTERNAL-AGENT.md` — Paste-to-agent LEVELSET prompt for chat agents without repo access

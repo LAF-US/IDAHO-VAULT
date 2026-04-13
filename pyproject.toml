@@ -23,5 +23,10 @@ build-backend = "hatchling.build"
 [tool.hatch.build.targets.wheel]
 packages = ["src/idaho_vault"]
 
+[tool.uv]
+cache-dir = ".uv-cache"
+python-downloads = "manual"
+python-preference = "system"
+
 [tool.crewai]
 type = "crew"

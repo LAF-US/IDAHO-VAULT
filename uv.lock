@@ -1012,7 +1012,7 @@ dependencies = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "crewai", extras = ["tools", "anthropic"], specifier = ">=1.12.2" }]
+requires-dist = [{ name = "crewai", extras = ["tools", "anthropic"], specifier = ">=1.14.1" }]
 
 [[package]]
 name = "idna"

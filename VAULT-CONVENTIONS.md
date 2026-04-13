@@ -139,33 +139,30 @@ restructure the current vault.
 
 | --- | --- | --- |
 
-| `!/` | Stable routing, bootstrap aliases, shims, DOCKET, and control-plane breadcrumbs | Read first for stable system paths. Do not restructure, rename, or clean without Logan's explicit direction. |
+| `!/` | The Swarmic Nest: collective routing, bootstrap aliases, shims, DOCKET, staging, and control-plane breadcrumbs | Read first for stable system paths and collective crew space. Do not restructure, rename, or clean without Logan's explicit direction. |
 | Repo root `.md` files | Primary note corpus and working knowledge base | Root-flat notes are intentional. Do not mass-move them into category folders without explicit authorization. |
 
-| `INBOX/` | Intake and staging area | Use for intake only when directed. Do not auto-empty or normalize it. |
-
-| `swarm/` | Swarm support artifacts and structured coordination data | Treat as infrastructure, not general note taxonomy. |
-
-| `.github/` | Automation, workflows, scripts, and GitHub-specific instructions | Safe to modify only within assigned automation work and governance boundaries. |
+| Agent/persona dotfolders such as `.claude/`, `.codex/`, `.gemini/`, `.grok/`, `.deepseek/`, `.google/`, `.meta/`, `.microsoft/`, `.perplexity/`, `.persephone/`, `.zagreus/`, `.bartimaeus/` | Individual bodies: agent/persona shims, governance files, local identity infrastructure, and personal continuity surfaces | Protected. Do not delete, rename, consolidate, or "clean up" these folders unless it is your own dotfolder or Logan explicitly directs the change. |
 
 | `.obsidian/` | Obsidian application configuration | Not note content. Respect sync and git boundaries before changing anything here. |
 
-| Agent/persona dotfolders such as `.claude/`, `.codex/`, `.gemini/`, `.grok/`, `.deepseek/`, `.google/`, `.meta/`, `.microsoft/`, `.perplexity/`, `.persephone/`, `.zagreus/`, `.bartimaeus/` | Agent/persona shims, governance files, and local identity infrastructure | Protected. Do not delete, rename, consolidate, or "clean up" these folders unless it is your own dotfolder or Logan explicitly directs the change. |
+| `.github/` | Automation, workflows, scripts, and GitHub-specific instructions | Safe to modify only within assigned automation work and governance boundaries. |
 
 | Tooling folders such as `.venv/`, `.vscode/`, `.qodo/` | Local environment or tool support | Do not infer that a hidden folder is disposable just because it is small, empty, or unfamiliar. |
-
-
 
 ### Folder Rules For Emerging Agents
 
 
 
-- Treat `!/` as the vault control-plane routing layer.
+- Treat `!/` as the Swarmic Nest: the vault's collective routing and staging layer.
 - Treat root-flat notes as a deliberate operating choice, not a mistake to fix.
+- Treat the Nest as group space, not as an individual persona folder.
 
 - Treat persona dotfolders as keystone infrastructure, even when they contain
 
   only a shim file or appear empty.
+
+- Treat persona dotfolders as individual agent space, personal chambers, not as shared staging.
 
 - If a folder's purpose is unclear, stop and ask Logan before proposing
 
@@ -417,11 +414,28 @@ Use `Full Name` for all internal links — people, places, organizations, bill
 
 
 
-- **Markdown** = human product, attributable to Logan. Notes, stories, analysis.
+- **Markdown** = primary human-and-agent surface, attributable to Logan. Notes, stories, analysis, doctrine, and durable narrative record.
 
-- **Python** = machine/procedural product, attributable to AI agents. Scripts, scrapers, automation.
+- **YAML** = declarative machine-and-agent surface. Frontmatter, lightweight structured configuration, and rule expression where line-oriented human audit still matters.
 
-- **Administrative** = vault infrastructure. Instruction files, audit reports.
+- **JSON** = registry, state, interchange, and machine-readable indexing surface for robots and agents.
+
+- **Python** = machine/procedural product, attributable to AI agents. Scripts, scrapers, automation, transforms, and validation.
+
+- **Administrative** = vault infrastructure. Instruction files, audit reports, and governance support.
+
+### Blessed Working Surfaces
+
+The Architect's blessed working set for durable vault labor is:
+
+- `.md` for humans and agents
+- `.yaml` / `.yml` for robots and agents
+- `.json` for robots and agents
+- `.py` for machinery
+
+When adding new durable machinery, prefer one of those surfaces first.
+
+Auxiliary wrapper/config surfaces such as `.toml`, `.sh`, `.ps1`, `.cmd`, `.css`, and `.xml` may exist as local launchers, tool glue, editor/plugin support, or interoperability shims, but they are not the vault's primary doctrinal or registry surfaces. Keep them subordinate to a canonical `.md`, `.yaml`, `.json`, or `.py` source whenever practical.
 
 
 
@@ -799,7 +813,7 @@ Emojis are **first-class vault syntax** as of 2026-04-02 (Logan, superseding pri
 - The five W's: who, what, when, where, why
 - The four C's: collect, capture, catalogue, collate
 - Public repo = on the record
-- Markdown for human product. Python for machine/procedural product.
+- Markdown is the primary human-and-agent surface; YAML, JSON, and Python are the primary machine-and-agent surfaces.
 - Do not over-engineer. Keep it simple. Only build what's needed now.
 - Check in before anything irreversible.
 - **DISCOVERY BEFORE INVENTION:** Logan has made architectural decisions that live in the vault's structure, naming patterns, frontmatter fields, seed files, and file placement — not always in governance documents. Agents must READ existing conventions before proposing new ones. The vault is the record of decisions already made. Follow them; do not reinvent them. If you encounter a pattern you don't recognize, investigate before overwriting it.
@@ -855,6 +869,8 @@ That file is the live status board. Read it to orient. Update it when you start 
 
 
 Task assignment flows through GitHub Issues (with `agent:*` labels) and Linear (SWARM label). Slack carries breadcrumbs. The vault is the record.
+
+Tree-aligned routing rule: `!` is collective crew space, while `.*` dotfolders are individual agent space. Route shared coordination through the Nest and keep personal runtime or identity continuity inside the appropriate dotfolder.
 
 
 

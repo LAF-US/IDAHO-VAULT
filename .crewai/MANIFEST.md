@@ -1,7 +1,7 @@
 ---
 title: "CrewAI Python Layer Manifest"
 date created: "2026-04-04"
-date updated: "2026-04-09"
+date updated: "2026-04-12"
 authority: crewai
 doc_class: manifest
 status: active
@@ -13,9 +13,10 @@ phase: refoundation
 This file is the single live doctrine and topology surface for the CrewAI
 Python layer in IDAHO-VAULT.
 
-Current phase: a fresh re-foundation from scaffold. The initial demo harbor is
-retired and historical. No legacy crew, runner, tool, or workflow claim
-survives unless it is reintroduced here on purpose.
+Current phase: a fresh re-foundation from scaffold, now with a live
+bootstrap-validation shard. The initial demo harbor is retired and historical.
+No legacy crew, runner, tool, or workflow claim survives unless it is
+reintroduced here on purpose.
 
 **Control-plane registration:** `swarm.json` (layer metadata only)
 **Live staging/output surface:** `!/CREWAI/`
@@ -54,14 +55,14 @@ machine, path, or runtime container.
 
 | Key | Value |
 |---|---|
-| Package | `crewai[tools,anthropic]>=1.12.0` |
+| Package | `crewai[tools,anthropic]>=1.14.1` |
 | Python | 3.13+ |
-| Environment | `.venv/` (repo-local) |
+| Environment | `.venv/` (repo-local, uv-managed) |
 | Status | Active re-foundation from scaffold |
-| Active runners | None |
-| Active crews | None |
+| Active runners | `uv run crewai run`, `uv run idaho_vault` |
+| Active crews | `idaho_vault.bootstrap` |
 | Output staging | `!/CREWAI/` (live staging / output) |
-| Runtime class | Linux-native disposable execution slice |
+| Runtime class | Vault-contained local runtime slice |
 | Promotion gate | Logan approval required before staged output enters canon |
 
 ---
@@ -70,23 +71,30 @@ machine, path, or runtime container.
 
 ### Active crews
 
-No crews are registered yet. Any future crew introduced under `.crewai/` is new
-implementation work, not a revived harbor assumption.
+| Crew | Path | Purpose | Status |
+|---|---|---|---|
+| `idaho_vault.bootstrap` | `src/idaho_vault/crew.py` | Validate the project contract, lockfile, and package wiring without external model credentials | Active |
 
 ### Active runners
 
-No runners are registered yet. Future runners must be declared here before they
-count as live topology.
+| Runner | Invocation | Purpose | Status |
+|---|---|---|---|
+| CrewAI CLI | `uv run crewai run` | Canonical local bootstrap validation run | Active |
+| Package entrypoint | `uv run idaho_vault` | Direct invocation of the same bootstrap shard | Active |
+| Vault launcher | `powershell -ExecutionPolicy Bypass -File .\scripts\Start-CrewAIVault.ps1` | Vault-contained local invocation with isolated home/AppData paths | Active |
 
 ### Writable surfaces
 
 | Surface | Purpose | Persistence |
 |---|---|---|
-| `.crewai/` | Committed CrewAI code, manifests, and topology | Durable in git |
+| `.crewai/` | CrewAI registry, manifests, and training surfaces | Durable in git |
+| `src/idaho_vault/` | CrewAI Python package, bootstrap crew, and runtime containment code | Durable in git |
 | `!/CREWAI/` | Staged CrewAI outputs | Durable in git, not canonical by default |
 | `.crewai/logs/` | Execution logs | Ephemeral / gitignored |
 | `.crewai_cache/` | Runtime cache | Ephemeral / gitignored |
 | `.venv/` | Local Python environment | Ephemeral / local runtime |
+| `.agent-home/crewai/` | Vault-local AppData/Home indirection for CrewAI runtime storage | Ephemeral / local runtime |
+| `.cache/`, `.state/`, `.tmp/` | Shared vault-local cache/state/temp surfaces | Ephemeral / local runtime |
 
 ### Promotion rules
 
@@ -115,8 +123,8 @@ count as live topology.
 - `.crewai/crews/__init__.py`
 - `.crewai/tools/__init__.py`
 
-These files preserve the package boundary so the real implementation can be
-built without reintroducing retired harbor assumptions.
+These files preserve the package boundary and local CrewAI registry layer while
+the Python implementation lives under `src/idaho_vault/`.
 
 ---
 
@@ -134,12 +142,12 @@ pretending the earlier harbor is current.
 
 ## First Deployment Pass
 
-The first deployment pass should begin from this scaffold and focus on:
+The current deployment pass is focused on:
 
-1. bootstrap regeneration from `swarm.json`
-2. `Gemini` / `Antigravity` live-file split cleanup
-3. workflow and config patching
-4. best-effort enterprise hookup with blockers recorded clearly
+1. keeping the bootstrap shard runnable under a vault-contained local runtime
+2. validating the package, lockfile, and entrypoint contract without external model credentials
+3. recording blockers clearly before any expansion into additional crews or tools
+4. extending topology only after new crews are registered here on purpose
 
 Any future crews, tools, or runners must be added as fresh re-foundation work
 and registered here before they count as live topology.
