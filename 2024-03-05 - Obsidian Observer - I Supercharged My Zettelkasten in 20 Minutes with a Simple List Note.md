@@ -4,7 +4,10 @@ author:
   - "[[David Rhoades]]"
 published: 2024-03-05
 created: 2026-04-13
+date created: Monday, April 13th 2026, 11:06:02 pm
+date modified: Tuesday, April 14th 2026, 10:26:22 am
 ---
+
 [Mastodon](https://me.dm/@rhoadey)
 
 ## [Obsidian Observer](https://medium.com/obsidian-observer?source=post_page---publication_nav-dc0a52745260-f1c65945f41e---------------------------------------)
