@@ -178,6 +178,6 @@ This means CODE AUTHORITY's "Direct write" capability tier (per AGENTS) describe
 ## DOCUMENT METADATA
 
 - **Created:** 2026-03-24
-- **Author:** PERMANENT: AUTHORITY: CODE (draft)
+- **Author:** Code Authority (Claude Code)
 - **Status:** Draft — awaiting LOGAN's review
 - **Authority:** LOGAN's discretion
