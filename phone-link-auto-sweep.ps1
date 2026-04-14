@@ -10,7 +10,15 @@ $LogPath = Join-Path $TargetDir '_phone-link-sweep.log'
 
 $mutexName = 'Global\IDAHO_VAULT_PHONE_LINK_SWEEP'
 $createdNew = $false
-$mutex = New-Object System.Threading.Mutex($true, $mutexName, [ref]$createdNew)
+$mutex = $null
+try {
+    $mutex = New-Object System.Threading.Mutex($true, $mutexName, [ref]$createdNew)
+} catch [System.Threading.AbandonedMutexException] {
+    # Previous process crashed without releasing. Ownership is granted — continue.
+    $mutex = $_.Exception.Mutex
+    $createdNew = $true
+    Write-Warning 'Phone Link sweep: orphaned mutex reclaimed from crashed process.'
+}
 if (-not $createdNew) {
     Write-Output 'Phone Link autosweep is already running. Exiting duplicate launch.'
     exit 0

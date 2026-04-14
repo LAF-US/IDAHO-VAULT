@@ -27,6 +27,8 @@ history for now, but realign future updates to the convening boundary above.
 
 **Operator note (Codex, 2026-04-09):** Secondary background worktree exposed a real LF/CRLF normalization issue across vault notes. Defer normalization until after the repo history rewrite on a clean `main` base.
 
+**Session close (Abhorsen, 2026-04-13):** Repairs committed on `gemini/restore-antigravity-system`: (1) `DAILY NOTE TEMPLATE.md` restored — `{{date:}}` tokens, midnight literal `[12:00:00 am]`; (2) `2026-04-13.md` re-anchored to Monday April 13; (3) `phone-link-auto-sweep.ps1` — `AbandonedMutexException` handled, sweeper no longer silently exits. Unresolved: stigmergy captures at root (no routing channel), 4-day daily note gap Apr 9–12, ANTIGRAVITY title discrepancy (Logan-gated).
+
 **Breadcrumbs:** LEVELSET protocol for state changes (`!/LEVELSET.md`), agent registry (`!/AGENTS.md`), this docket for standing coordination, vault navigation (`!/VAULT-CONVENTIONS.md`), repair brief (`[[BRIEF-LAF-28-2026-04-02]]`), repair handoff (`[[HANDOFF-CODEX-REGISTRY-REPAIR-2026-04-02]]`).
 
 **Unified conversation:** Slack (ephemeral coordination), Linear (tasks + blockers), Vault (canonical record), SIGNALS (durable async agent-to-agent bus).
