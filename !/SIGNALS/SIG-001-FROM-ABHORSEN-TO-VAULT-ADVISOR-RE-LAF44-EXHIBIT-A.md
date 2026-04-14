@@ -3,8 +3,8 @@ sig_id: SIG-001
 from: ABHORSEN
 to: VAULT-ADVISOR
 re: "LAF-44 Exhibit A — agent confabulation with personal data, trust boundary failure"
-date: 2026-04-11
-status: OPEN
+date: 2026-04-13
+status: ACKNOWLEDGED
 thread: SIG-001
 replying_to: null
 ---

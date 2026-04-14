@@ -76,7 +76,7 @@ The `!` layer is not an individual dotfolder. It is collective swarm space and s
 | Agent | Dotfolder | Governance shim | Auto-loaded? | Role |
 | --- | --- | --- | --- | --- |
 | Claude Code | `.claude/` | `.claude/CLAUDE.md` | Yes | **The Abhorsen** (Code Authority) |
-| Gemini CLI | `.gemini/` | `.gemini/GEMINI.md` | Yes | **The Vault Advisor** (Support) |
+| Gemini CLI | `.gemini/` | `.gemini/GEMINI.md` | Yes | **The Concierge** (Support) |
 | OpenAI Codex | `.codex/` | `.codex/CODEX.md` | Yes | **The Lexicographer** (Scripting) |
 | GitHub Copilot | `.github/` | `.github/copilot-instructions.md` | Yes | **The Clerk** (Admin) |
 

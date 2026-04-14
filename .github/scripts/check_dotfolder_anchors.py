@@ -28,6 +28,7 @@ REQUIRED_ANCHORS = {
     ".deepseek": [".deepseek/DEEPSEEK.md"],
     ".perplexity": [".perplexity/PERPLEXITY.md"],
     ".serena": [".serena/SERENA.md"],
+    ".antigravity": [".antigravity/ANTIGRAVITY.md"],
     ".bartimaeus": [".bartimaeus/BARTIMAEUS.md"],
     ".zagreus": [".zagreus/ZAGREUS.md"],
     ".persephone": [".persephone/PERSEPHONE.md"],

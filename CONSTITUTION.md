@@ -55,7 +55,7 @@ by Logan Alvan Finney
 - **Markdown = human product. Python = machine/procedural/robotic/algorithms.** Keep the distinction clear for readability and attribution.
 - **Chat is ephemeral. Vault is the record.** Durable decisions and context windows must be captured in vault files.
 - **Elevation governance:** no instance gains higher "level" or "layer" access without Logan's explicit IRL approval.
-- **Gemini CLI and Gemini Code Assist (VS Code) are enabled** at Tier 1 (Support): Direct Write, Operational zone only. All Gemini writes are PR-mediated and require Logan's merge approval. See `!/AGENTS.md` for the current roster and tier definitions.
+- **The office of The Concierge (formerly the "Vault Advisor") is a functional anchor of the swarm.** Its occupant instances (Gemini, Antigravity, etc.) are enabled at Tier 1 (Support): Direct Write, Operational zone only. All Concierge writes are PR-mediated and require Logan's merge approval. An office may stand **[VACANT]** if no occupant is actively assigned. See `!/AGENTS.md` for the current roster and tier definitions.
 - **Routing and doctrine are distinct.** `!/` is the stable routing and bootstrap layer; root governance files remain the doctrine layer.
 
 ---
@@ -140,7 +140,7 @@ See `DECISIONS.md` for confirmed Logan-approved decisions. Key decisions remain:
 3. Capability tiers replace numbered access language
 4. Broader digital consciousness framing is adopted
 5. FAVS freelance is paused
-6. PERMANENT: AUTHORITY: CODE is the correct name
+6. The **Code Authority** (NAME: Claude Code) occupies the office of **The Abhorsen**.
 7. Native protocols outrank MCP as a meaning layer
 8. Slack is ephemeral; vault is the record
 9. Root `AGENTS.md` is the auto-loaded pointer and `!/AGENTS.md` is the canonical narrative registry
