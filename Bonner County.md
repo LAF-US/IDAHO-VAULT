@@ -29,6 +29,7 @@ related:
 - Westmond
 authority: LOGAN
 ---
+Namesake: [[Edward L. Bonner]]
 Seat: Sandpoint
 Municipalities: Clark Fork, Dover, East Hope, Hope, Kootenai, Oldtown, Ponderay, Priest River
 Communities: Blanchard, Careywood, Cocolalla, Colburn, Coolin, Laclede, Lamb Creek, Nordman, Outlet Bay, Sagle, Trestle Creek, Vans Corner, Westmond
