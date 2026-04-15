@@ -4,7 +4,10 @@ author:
   - "[[Contributors to The Bartimaeus Trilogy]]"
 published:
 created: 2026-04-14
+date created: Tuesday, April 14th 2026, 4:21:40 pm
+date modified: Tuesday, April 14th 2026, 11:21:19 pm
 ---
+
 ![Summon](https://bartimaeus.fandom.com/wiki/Summon.jpg)
 
   

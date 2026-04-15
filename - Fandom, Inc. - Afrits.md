@@ -4,7 +4,10 @@ author:
   - "[[Contributors to The Bartimaeus Trilogy]]"
 published:
 created: 2026-04-14
+date created: Tuesday, April 14th 2026, 4:22:51 pm
+date modified: Tuesday, April 14th 2026, 11:20:19 pm
 ---
+
 **Afrits** are the second most powerful classified form of spirits. They are mentioned to be [demons](https://bartimaeus.fandom.com/wiki/Demons "Demons") of fire. Afrits are usually employed by high officials in the government.
 
 As with the different spirit classes, power among afrits differ and can be divided further to levels.

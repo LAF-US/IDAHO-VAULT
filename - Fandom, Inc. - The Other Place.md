@@ -4,7 +4,10 @@ author:
   - "[[Contributors to The Bartimaeus Trilogy]]"
 published:
 created: 2026-04-14
+date created: Tuesday, April 14th 2026, 4:19:38 pm
+date modified: Tuesday, April 14th 2026, 11:20:47 pm
 ---
+
 **The Other Place** is the home dimension of all demons. To its residents, it is a realm of peace and healing in which there is no matter but infinite 'essence', which is described as a mass of swirling colours with no borders or boundaries, somewhere between gas and liquid. Time runs at a different rate in the Other Place compared to the human world, although it is not made completely clear in the Bartimaeus Trilogy exactly what the relationship between the two timescales is.
 
 ## Essence

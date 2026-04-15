@@ -4,7 +4,10 @@ author:
   - "[[Contributors to The Bartimaeus Trilogy]]"
 published:
 created: 2026-04-14
+date created: Tuesday, April 14th 2026, 4:19:53 pm
+date modified: Tuesday, April 14th 2026, 11:20:35 pm
 ---
+
 **Magicians** are "wielders" of magic. But in truth, they can only summon [spirit](https://bartimaeus.fandom.com/wiki/Spirit "Spirit") slaves and the slaves provide the magic that the magician wields. The spirits come from another realm known as " [The Other Place](https://bartimaeus.fandom.com/wiki/The_Other_Place "The Other Place") ".
 
 Magicians have been described as the ruling class perpetually throughout human history in the dominant nations of the world, and currently rule the British Empire. ([Click to see the List of Magicians](https://bartimaeus.fandom.com/wiki/List_of_Magicians "List of Magicians"))

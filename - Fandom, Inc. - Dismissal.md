@@ -4,7 +4,10 @@ author:
   - "[[Contributors to The Bartimaeus Trilogy]]"
 published:
 created: 2026-04-14
+date created: Tuesday, April 14th 2026, 4:41:58 pm
+date modified: Tuesday, April 14th 2026, 11:21:02 pm
 ---
+
 A **Dismissal** is the means by which a [magician](https://bartimaeus.fandom.com/wiki/Magicians "Magicians") releases a [demon](https://bartimaeus.fandom.com/wiki/Demons "Demons") from its earthly obligations and sends it back to the [Other Place](https://bartimaeus.fandom.com/wiki/Other_Place "Other Place").
 
 As with other forms of [magic](https://bartimaeus.fandom.com/wiki/Magic "Magic"), a Dismissal requires a specific procedure and words and will not work correctly, or may even backfire, if done incorrectly. A Dismissal requires a pentacle, which has certain lines and Heiroglyphs to cancel out other commands and bindings, such as Adelbrand's pentacle requires a certain circle to cancel it.
