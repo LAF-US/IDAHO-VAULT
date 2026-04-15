@@ -8,16 +8,14 @@ date created: Wednesday, April 15th 2026, 2:44:28 pm
 date modified: Wednesday, April 15th 2026, 3:09:48 pm
 ---
 
-- Purchase/rental options available:
-	- [Buy Article for $14.00 (USD)](https://muse.jhu.edu/purchase/add/article/687491)
-		- [Rent from DeepDyve](https://www.deepdyve.com/lp/university-of-nebraska-press/the-kootenai-war-of-74-8TMXzAncbb?key=projectmuse)
+## Abstract
 
-Abstract
+On Sept. 20, 1974, the 67-member Kootenai Nation of northern Idaho declared
+war on the United States. Ian Chambers argues that the episode drew together
+familiar elements of Native American / U.S. negotiation: a skeptical state
+government, aggressive local law enforcement, an outsized police response, the
+involvement of outside supporters and "friends of the Indian," intense media
+coverage, and eventually government-to-government negotiations. The result was
+a reservation and funding that helped pull the Nation back from extinction.
 
-A mouse roared on September 20, 1974, when the sixty-seven-member Kootenai Nation of northern Idaho declared war on the United States. As the war developed, the familiar tools of traditional Native American/US negotiations unfolded. A jaundiced state governor, an aggressive leader of local law enforcement, an excessive show of police force, the involvement of “friends of the Indian,” and passionate media all concluded with government-to-government negotiations. At the end of the negotiations, the Kootenai Nation had secured a reservation and funding to save the nation from extinction.
-
-![pdf](https://muse.jhu.edu/article/687491/pdfimage)
-
-collapse
-
-**You are not currently authenticated.** [Authenticate](https://muse.jhu.edu/account)
+This note preserves the article abstract only.
