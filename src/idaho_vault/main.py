@@ -6,6 +6,8 @@ from __future__ import annotations
 import json
 import re
 import sys
+import unittest
+from pathlib import Path
 
 from idaho_vault.bootstrap_contract import build_contract_report
 from idaho_vault.runtime import configure_vault_runtime
@@ -25,11 +27,10 @@ def _force_utf8_stdio() -> None:
 _force_utf8_stdio()
 configure_vault_runtime()
 
-from idaho_vault.crew import IdahoVaultBootstrapCrew
-
-
 def _execute() -> str:
     """Execute the bootstrap validation crew and return its raw output."""
+    from idaho_vault.crew import IdahoVaultBootstrapCrew
+
     report = build_contract_report()
     result = IdahoVaultBootstrapCrew(report=report).crew().kickoff()
     if result is None:
@@ -100,8 +101,20 @@ def replay() -> None:
 
 
 def test() -> None:
-    """Testing is intentionally deferred for the bootstrap shard."""
-    raise SystemExit("Use `crewai run` for bootstrap validation; eval LLM testing is not configured yet.")
+    """Run the repository test suite from a plain checkout or installed environment."""
+    repo_root = Path(__file__).resolve().parents[2]
+    src_root = repo_root / "src"
+    tests_root = repo_root / "tests"
+
+    if str(src_root) not in sys.path:
+        sys.path.insert(0, str(src_root))
+
+    suite = unittest.defaultTestLoader.discover(
+        start_dir=str(tests_root),
+        pattern="test_*.py",
+    )
+    result = unittest.TextTestRunner(verbosity=2).run(suite)
+    raise SystemExit(0 if result.wasSuccessful() else 1)
 
 
 def run_with_trigger() -> None:

@@ -1,10 +1,10 @@
 name: Agent Review Gate
 
-# Promotes low-risk PRs from agent-review-pending → auto-merge after a grace
+# Promotes low-risk PRs from agent-review-pending -> auto-merge after a grace
 # period, giving agent reviewers (CodeRabbit, Gemini, Qodo) time to post
 # blocking feedback before auto-merge fires.
 #
-# Grace period default: 30 minutes.  Override via workflow_dispatch input.
+# Grace period default: 30 minutes. Override via workflow_dispatch input.
 # If review-response.yml has already applied review-required, the PR is skipped.
 
 on:
@@ -25,6 +25,9 @@ jobs:
   gate:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout trusted workflow surfaces
+        uses: actions/checkout@v4
+
       - name: Promote aged review-pending PRs to auto-merge
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -32,7 +35,10 @@ jobs:
           GRACE_MINUTES: ${{ github.event.inputs.grace_minutes || '30' }}
         run: |
           python3 - <<'EOF'
-          import json, os, subprocess, sys
+          import json
+          import os
+          import subprocess
+          import sys
           from datetime import datetime, timezone
 
           default_grace_minutes = 30
@@ -49,11 +55,19 @@ jobs:
           grace_seconds = grace_minutes * 60
 
           result = subprocess.run(
-              ["gh", "pr", "list",
-               "--label", "agent-review-pending",
-               "--state", "open",
-               "--json", "number,createdAt,labels,url"],
-              capture_output=True, text=True
+              [
+                  "gh",
+                  "pr",
+                  "list",
+                  "--label",
+                  "agent-review-pending",
+                  "--state",
+                  "open",
+                  "--json",
+                  "number,createdAt,labels,url",
+              ],
+              capture_output=True,
+              text=True,
           )
           if result.returncode != 0:
               print(f"gh pr list failed: {result.stderr}", file=sys.stderr)
@@ -68,9 +82,59 @@ jobs:
 
           print(f"Found {len(prs)} PR(s) with agent-review-pending label.")
 
+          thread_query = """
+          query($owner:String!, $name:String!, $number:Int!) {
+            repository(owner: $owner, name: $name) {
+              pullRequest(number: $number) {
+                reviewThreads(first: 100) {
+                  nodes {
+                    isResolved
+                  }
+                }
+              }
+            }
+          }
+          """
+
+          owner, repo = os.environ["GH_REPO"].split("/", 1)
+
+          def unresolved_thread_count(pr_number: int) -> int:
+              query_result = subprocess.run(
+                  [
+                      "gh",
+                      "api",
+                      "graphql",
+                      "-f",
+                      f"query={thread_query}",
+                      "-f",
+                      f"owner={owner}",
+                      "-f",
+                      f"name={repo}",
+                      "-F",
+                      f"number={pr_number}",
+                  ],
+                  capture_output=True,
+                  text=True,
+              )
+              if query_result.returncode != 0:
+                  print(
+                      f"gh api graphql failed for PR #{pr_number}: {query_result.stderr}",
+                      file=sys.stderr,
+                  )
+                  sys.exit(1)
+
+              payload = json.loads(query_result.stdout or "{}")
+              threads = (
+                  payload.get("data", {})
+                  .get("repository", {})
+                  .get("pullRequest", {})
+                  .get("reviewThreads", {})
+                  .get("nodes", [])
+              )
+              return sum(1 for thread in threads if not thread.get("isResolved"))
+
           for pr in prs:
               pr_num = pr["number"]
-              pr_url = pr.get("url", f"#{pr_num}")
               ts = pr["createdAt"]
               if ts.endswith("Z"):
                   ts = ts[:-1] + "+00:00"
@@ -81,25 +145,55 @@ jobs:
               age_seconds = (now - created_at).total_seconds()
 
               if "review-required" in labels:
-                  print(f"PR #{pr_num}: has review-required label — skipping.")
+                  print(f"PR #{pr_num}: has review-required label - skipping.")
+                  continue
+
+              unresolved_threads = unresolved_thread_count(pr_num)
+              if unresolved_threads:
+                  print(
+                      f"PR #{pr_num}: has {unresolved_threads} unresolved review thread(s) - "
+                      "skipping auto-merge promotion."
+                  )
                   continue
 
               if age_seconds >= grace_seconds:
                   age_min = age_seconds / 60
-                  print(f"PR #{pr_num}: {age_min:.1f} min old (>= {grace_minutes} min grace). Promoting to auto-merge.")
-                  subprocess.run(
-                      ["gh", "pr", "edit", str(pr_num),
-                       "--remove-label", "agent-review-pending",
-                       "--add-label", "auto-merge"],
-                      check=True
+                  print(
+                      f"PR #{pr_num}: {age_min:.1f} min old (>= {grace_minutes} min grace). "
+                      "Promoting to auto-merge."
                   )
                   subprocess.run(
-                      ["gh", "pr", "comment", str(pr_num), "--body",
-                       f"⏱️ Agent review grace period ({grace_minutes} min) elapsed "
-                       f"with no blocking reviews. Promoting to `auto-merge`."],
-                      check=True
+                      [
+                          "gh",
+                          "pr",
+                          "edit",
+                          str(pr_num),
+                          "--remove-label",
+                          "agent-review-pending",
+                          "--add-label",
+                          "auto-merge",
+                      ],
+                      check=True,
+                  )
+                  subprocess.run(
+                      [
+                          "gh",
+                          "pr",
+                          "comment",
+                          str(pr_num),
+                          "--body",
+                          (
+                              f"Agent review grace period ({grace_minutes} min) elapsed "
+                              "with no blocking reviews or unresolved threads. "
+                              "Promoting to `auto-merge`."
+                          ),
+                      ],
+                      check=True,
                   )
               else:
                   remaining = (grace_seconds - age_seconds) / 60
-                  print(f"PR #{pr_num}: {age_seconds / 60:.1f} min old — waiting {remaining:.1f} more min.")
+                  print(
+                      f"PR #{pr_num}: {age_seconds / 60:.1f} min old - "
+                      f"waiting {remaining:.1f} more min."
+                  )
           EOF

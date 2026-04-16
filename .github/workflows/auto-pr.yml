@@ -1,18 +1,29 @@
 name: Auto PR for Agent Branches
 
 on:
-  push:
-    branches:
-      - 'claude/**'
-      - 'codex/**'
-      - 'gemini/**'
-      - 'copilot/**'
-      - 'perplexity/**'
-      - 'grok/**'
-      - 'serena/**'
+  create:
+  workflow_dispatch:
 
 jobs:
   auto-pr:
+    if: >
+      (github.event_name == 'create' &&
+       github.event.ref_type == 'branch' &&
+       (startsWith(github.event.ref, 'claude/') ||
+        startsWith(github.event.ref, 'codex/') ||
+        startsWith(github.event.ref, 'gemini/') ||
+        startsWith(github.event.ref, 'copilot/') ||
+        startsWith(github.event.ref, 'perplexity/') ||
+        startsWith(github.event.ref, 'grok/') ||
+        startsWith(github.event.ref, 'serena/'))) ||
+      (github.event_name == 'workflow_dispatch' &&
+       (startsWith(github.ref_name, 'claude/') ||
+        startsWith(github.ref_name, 'codex/') ||
+        startsWith(github.ref_name, 'gemini/') ||
+        startsWith(github.ref_name, 'copilot/') ||
+        startsWith(github.ref_name, 'perplexity/') ||
+        startsWith(github.ref_name, 'grok/') ||
+        startsWith(github.ref_name, 'serena/')))
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -23,6 +34,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          ref: ${{ github.event_name == 'create' && github.event.ref || github.ref_name }}
 
       - name: Get changed files and classify
         id: classify
@@ -60,8 +72,9 @@ jobs:
         id: check-pr
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH_NAME: ${{ github.event_name == 'create' && github.event.ref || github.ref_name }}
         run: |
-          BRANCH="${GITHUB_REF_NAME}"
+          BRANCH="${BRANCH_NAME}"
           EXISTING=$(gh pr list --head "$BRANCH" --state open --json number --jq '.[0].number // empty' 2>/dev/null || true)
           if [ -n "$EXISTING" ]; then
             echo "pr_exists=true" >> "$GITHUB_OUTPUT"
@@ -78,6 +91,7 @@ jobs:
           gh label create "auto-merge" --color "0E8A16" --description "Low-risk, eligible for auto-merge" --force 2>/dev/null || true
           gh label create "review-required" --color "D93F0B" --description "High-risk, requires Logan's review" --force 2>/dev/null || true
           gh label create "agent-review-pending" --color "BFD4F2" --description "Waiting for agent review grace period before auto-merge" --force 2>/dev/null || true
+          python3 .github/scripts/pr_lifecycle.py ensure-labels
 
       - name: Create PR
         if: steps.classify.outputs.skip != 'true' && steps.check-pr.outputs.pr_exists != 'true'
@@ -85,8 +99,9 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           RISK_TIER: ${{ steps.classify.outputs.tier }}
+          BRANCH_NAME: ${{ github.event_name == 'create' && github.event.ref || github.ref_name }}
         run: |
-          BRANCH="${GITHUB_REF_NAME}"
+          BRANCH="${BRANCH_NAME}"
           # Derive title: strip agent prefix (claude/, codex/, gemini/, etc.) and session suffix
           TITLE=$(echo "$BRANCH" | sed 's|^[^/]*/||' | sed 's|-[a-zA-Z0-9]*$||' | tr '-' ' ')
           # Extract agent name from branch prefix
@@ -101,9 +116,10 @@ jobs:
           fi
 
           # Build PR body
-          printf -v BODY '%s\n\n%s\n%s\n%s\n%s\n\n%s\n%s\n%s\n%s\n\n%s\n%s' \
+          printf -v BODY '%s\n\n%s\n%s\n%s\n%s\n%s\n%s\n\n%s\n%s\n%s\n%s\n\n%s\n%s' \
             '## Auto-generated PR' \
             '**Agent:**' "\`$AGENT\`" \
+            '**Lifecycle:**' "\`staged\`" \
             '**Risk tier:**' "\`$TIER\`" \
             '**Label:**' "\`$LABEL\`" \
             '### Diff stat' \
@@ -119,12 +135,27 @@ jobs:
 
           echo "Created PR: $PR_URL"
 
+      - name: Mark PR lifecycle as staged
+        if: steps.classify.outputs.skip != 'true' && steps.check-pr.outputs.pr_exists != 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH_NAME: ${{ github.event_name == 'create' && github.event.ref || github.ref_name }}
+        run: |
+          PR_NUM=$(gh pr list --head "$BRANCH_NAME" --state open --json number --jq '.[0].number // empty' 2>/dev/null || true)
+          if [ -z "$PR_NUM" ] || ! [[ "$PR_NUM" =~ ^[0-9]+$ ]]; then
+            echo "No open PR found to mark lifecycle state on"
+            exit 0
+          fi
+
+          python3 .github/scripts/pr_lifecycle.py set-state --pr-number "$PR_NUM" --state staged
+
       - name: Trigger agent reviews
         if: steps.classify.outputs.skip != 'true' && steps.check-pr.outputs.pr_exists != 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH_NAME: ${{ github.event_name == 'create' && github.event.ref || github.ref_name }}
         run: |
-          BRANCH="${GITHUB_REF_NAME}"
+          BRANCH="${BRANCH_NAME}"
           PR_NUM=$(gh pr list --head "$BRANCH" --state open --json number --jq '.[0].number // empty' 2>/dev/null || true)
           if [ -z "$PR_NUM" ] || ! [[ "$PR_NUM" =~ ^[0-9]+$ ]]; then
             echo "No open PR found to trigger reviews on"
@@ -140,5 +171,6 @@ jobs:
       - name: Log grace period start
         if: steps.classify.outputs.skip != 'true' && steps.classify.outputs.tier == 'low' && steps.check-pr.outputs.pr_exists != 'true'
         run: |
+          echo "Lifecycle set to \`lifecycle/staged\`." >> "$GITHUB_STEP_SUMMARY"
           echo "Low-risk PR created with agent-review-pending label." >> "$GITHUB_STEP_SUMMARY"
           echo "Auto-merge is gated: the agent-review-gate workflow will promote to auto-merge after a **30-minute** review grace period, giving agent reviewers time to post feedback." >> "$GITHUB_STEP_SUMMARY"

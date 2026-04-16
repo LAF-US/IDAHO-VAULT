@@ -174,6 +174,23 @@ restructure the current vault.
 
   standing authorization to reorganize the live vault.
 
+### Dotfolder Boundary Contract
+
+Treat each persona dotfolder as a small boundary system with three possible
+surface types:
+
+- `OWNER`: owner-writable by default. Other agents may inspect for orientation
+  but must not rewrite without Logan's direction or an explicit shared contract.
+- `SHARED`: explicitly named shim or protocol surfaces that other agents may
+  write only when the local shim or live governance says they are shared.
+- `ARCHIVE`: preserved memory, residue, or historical continuity surfaces.
+  Read-only by default unless Logan or a live surface explicitly reactivates
+  them.
+
+A dotfolder may contain all three surface types, but they are not
+interchangeable. Do not treat persona body, shared shim, and archive as the
+same slot just because they live under one hidden folder.
+
 
 
 ---
@@ -303,6 +320,11 @@ status: <draft|active|superseded|archived>
 authority: "<decision authority>"
 
 ```
+
+These note-level statuses do not replace the repo-wide lifecycle vocabulary in
+`CONSTITUTION.md`. Terms such as `live`, `staged`, `merged`, `abandoned`,
+`dormant`, and `reactivated` govern branches, chambers, and historical surfaces
+even when a note keeps a narrower frontmatter status set.
 
 
 
@@ -816,6 +838,17 @@ When both devices edit the same config file between syncs, Obsidian creates a `(
   - `copilot/description` for GitHub Copilot branches
 
   - `gemini/description` for Gemini agent branches
+
+- Branch lifecycle defaults:
+
+  - Branches are temporary working instances by default, not standing provinces.
+
+  - Resolve each branch explicitly as `merged`, `superseded`, `archived`,
+    `abandoned`, `dormant`, or `reactivated` under the shared lifecycle
+    vocabulary in `CONSTITUTION.md`.
+
+  - A long-lived branch requires a named purpose, a steward, and a review
+    cadence. "Still exists" is not legitimacy.
 
 - Commit messages: Clear, descriptive, explain the "why"
 
