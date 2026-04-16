@@ -1,6 +1,8 @@
 ---
 aliases:
+  - vector databases and Obsidian.md.md
   - vector databases and Obsidian.md
+  - vector databases and Obsidian
 ---
 # vector databases and Obsidian
 

@@ -3,7 +3,8 @@ source: "https://docs.github.com/en/repositories/configuring-branches-and-merges
 author: "GitHub Docs contributors"
 publisher: "GitHub Docs"
 license: "CC BY 4.0"
-attribution_modified: false
+attribution_modified: true
+attribution_note: "Body content copied from source; only frontmatter metadata added."
 published:
 created: 2026-04-16
 ---
