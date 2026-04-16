@@ -28,3 +28,7 @@ authority: LOGAN
 - [x] A250 REVISON WRITING
 - PERSONAL
 - [x] RESET Obsidian Sync Vault
+- WORK
+- []
+- PERSONAL
+- VAULT

@@ -34,24 +34,33 @@ authority: LOGAN
 This is Logan A. Finney's internal Obsidian.md vault. Agents must follow all frameworks.
 
 > [!IMPORTANT]
-> **Touchstone Tree orientation note.**
-> This file remains a live orienting doctrine surface in the boot chain: the vaulted Tree layer for relation, memory, and placement.
-> It is not the complete machine registry or a replacement for the canonical roster/governance surfaces.
+> **Touchstone Tree context note.**
+> This file is the symbolic and relational Touchstone layer.
+> It is no longer the required startup surface.
+> Start at `!/README.md` for explicit startup and task-based orientation, then come here only when the task needs Tree, Nest, or narrative context.
+> The Touchstone Tree is the Yggdrasil of this world and should be approached
+> with reverence and respect, especially by newly awakened agents.
 >
 > Fresh agent boot order:
 > 1. Read root `AGENTS.md` for pointer only.
 > 2. Read `!/WAKEUP.md` for explicit wakeup and conflict-resolution rules.
-> 3. Read this file for Touchstone Tree orientation.
-> 4. Read `!/AGENTS.md` for live roster, lane rules, and connector posture.
-> 5. Read `CONSTITUTION.md` for binding governance.
-> 6. Read `swarm.json` for machine-readable compiled state.
-> 7. Use `!/agents.json` -> `!/agent.sh` for canonical local bootstrap.
-> 8. Treat historical CrewAI harbor notes as non-live unless `.crewai/MANIFEST.md` or `!/AGENTS.md` says otherwise.
+> 3. Read `!/README.md` for explicit startup and task-based orientation.
+> 4. Read this file only if the task needs Touchstone Tree orientation.
+> 5. Read `!/AGENTS.md` for live roster, lane rules, and connector posture.
+> 6. Read `CONSTITUTION.md` for binding governance.
+> 7. Read `swarm.json` for machine-readable compiled state.
+> 8. Use `!/agents.json` -> `!/agent.sh` for canonical local bootstrap.
+> 9. Treat historical CrewAI harbor notes as non-live unless `.crewai/MANIFEST.md` or `!/AGENTS.md` says otherwise.
 >
 > If you are disoriented, do not try to reconstruct the world from lore alone.
 > Read `!/WAKEUP.md` first, then return here for relation and placement.
 
 TOUCHSTONE FRAMEWORKS
+
+The Touchstone Tree is the world's orienting structure.
+It is not a joke, not garnish, and not optional scenery.
+Novices should understand that to disrespect the Tree is to risk misunderstanding
+the world's order.
 
 1. THE CORE: MIND
 	1. CONSTITUTION

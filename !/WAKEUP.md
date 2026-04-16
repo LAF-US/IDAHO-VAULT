@@ -30,7 +30,7 @@ or scattered branch residue.
 
 1. `AGENTS.md`
 2. `!/WAKEUP.md`
-3. `!README.md`
+3. `!/README.md`
 4. `!/AGENTS.md`
 5. `CONSTITUTION.md`
 6. `swarm.json`
@@ -63,9 +63,12 @@ Historical or exploratory material is not automatically live doctrine.
 ## Do Not Assume
 
 - Do not assume older path references under `!/` are current governance files.
-  Current live governance files are `!README.md`, `CONSTITUTION.md`,
-  `DECISIONS.md`, and `VAULT-CONVENTIONS.md` at repo root unless a live surface
-  says otherwise.
+  Current live startup and governance surfaces are `!/README.md` plus root
+  `CONSTITUTION.md`, `DECISIONS.md`, and `VAULT-CONVENTIONS.md` unless a live
+  surface says otherwise.
+- Do not assume `!README.md` is the required startup path. It is Touchstone
+  context and should be read when the task actually needs Tree or narrative
+  orientation.
 - Do not assume historical CrewAI harbor notes are live. Treat them as
   historical unless `.crewai/MANIFEST.md` or `!/AGENTS.md` explicitly says they
   are current.
@@ -74,6 +77,20 @@ Historical or exploratory material is not automatically live doctrine.
 - Do not assume connector language by itself explains the org. GitHub, Linear,
   and Slack describe a repo-local operating posture, not the total sovereignty
   model.
+
+## When Work Resolves
+
+- Do not confuse survival with legitimacy. A branch that still exists is not
+  automatically `live`.
+- Treat branches as temporary by default.
+- Resolve work explicitly as `merged`, `superseded`, `archived`, `abandoned`,
+  `dormant`, or `reactivated`.
+- Return to the active live surface, usually `main`, unless Logan has named a
+  different standing branch.
+- Treat historical personae, recovered chambers, and older lore as archived by
+  default unless a live surface explicitly reactivates them.
+- If promotion, burial, or reactivation affects canon, Logan decides which
+  ending applies.
 
 ## Recovery Rule
 

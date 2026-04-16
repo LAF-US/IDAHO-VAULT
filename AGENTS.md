@@ -63,19 +63,20 @@ Immediate wakeup facts:
   `IDAHO-VAULT`, not the full `LAF-US` sovereignty model.
 - Historical harbor notes, abandoned branches, and exploratory scaffolds are
   non-live unless a live surface explicitly reactivates them.
-- Current root governance files live at repo root: `!README.md`,
+- Current live startup and governance surfaces are `!/README.md`,
   `CONSTITUTION.md`, `DECISIONS.md`, and `VAULT-CONVENTIONS.md`.
 
 ## Fresh Agent Boot Order
 
 1. Read this root `AGENTS.md` as a pointer and compatibility surface only.
 2. Read `!/WAKEUP.md` for explicit anti-confusion orientation and conflict precedence.
-3. Read `!README.md` for the Touchstone Tree and orienting doctrine.
+3. Read `!/README.md` for explicit startup and task-based orientation.
 4. Read `!/AGENTS.md` for the live roster, lane rules, and current connector posture.
 5. Read `CONSTITUTION.md` for binding governance.
 6. Read `swarm.json` for machine-readable compiled state.
 7. Use `swarm.json` -> `!/agents.json` -> `!/agent.sh` for canonical local execution bootstrap.
-8. Treat historical CrewAI harbor notes as non-live unless `.crewai/MANIFEST.md` or `!/AGENTS.md` says otherwise.
+8. Read `!README.md` only when the task needs Touchstone Tree or narrative context.
+9. Treat historical CrewAI harbor notes as non-live unless `.crewai/MANIFEST.md` or `!/AGENTS.md` says otherwise.
 
 When live surfaces disagree, follow this order:
 

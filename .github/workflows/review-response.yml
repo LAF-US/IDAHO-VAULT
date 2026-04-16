@@ -27,6 +27,7 @@ jobs:
           REVIEW_STATE: ${{ github.event.review.state }}
         run: |
           gh label create "review-required" --color "D93F0B" --description "High-risk, requires Logan's review" --force 2>/dev/null || true
+          gh label create "review-threads-open" --color "FBCA04" --description "Unresolved review threads still need attention before merge." --force 2>/dev/null || true
 
           REVIEW_URL="${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/pull/${PR_NUMBER}#pullrequestreview-${REVIEW_ID}"
 
@@ -35,6 +36,7 @@ jobs:
           gh pr edit "$PR_NUMBER" --remove-label "auto-merge" 2>/dev/null || true
           gh pr edit "$PR_NUMBER" --remove-label "agent-review-pending" 2>/dev/null || true
           gh pr edit "$PR_NUMBER" --add-label "review-required" 2>/dev/null || true
+          gh pr edit "$PR_NUMBER" --add-label "review-threads-open" 2>/dev/null || true
 
           gh pr comment "$PR_NUMBER" --body "Acknowledged review by @$REVIEWER (${REVIEW_STATE}). Auto-merge paused until recommended changes are addressed. [Review link]($REVIEW_URL)"
 
@@ -55,6 +57,9 @@ jobs:
           REVIEW_ID: ${{ github.event.review.id }}
           REVIEW_STATE: ${{ github.event.review.state }}
         run: |
+          gh label create "review-threads-open" --color "FBCA04" --description "Unresolved review threads still need attention before merge." --force 2>/dev/null || true
+
           REVIEW_URL="${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/pull/${PR_NUMBER}#pullrequestreview-${REVIEW_ID}"
 
+          gh pr edit "$PR_NUMBER" --add-label "review-threads-open" 2>/dev/null || true
           gh pr comment "$PR_NUMBER" --body "Acknowledged advisory review by @$REVIEWER (${REVIEW_STATE}). Auto-merge remains eligible unless a blocking review or Logan-directed change says otherwise. [Review link]($REVIEW_URL)"

@@ -133,7 +133,37 @@ The documentary C's remain an active naming grammar: capture, collect, collate, 
 
 ---
 
-## VII. DECISIONS LOG
+## VII. LIFECYCLE STATES
+
+The vault must name endings before automation enforces them.
+
+Unless Logan explicitly grants standing, branches are temporary working
+instances and historical surfaces are non-live by default.
+
+Shared lifecycle vocabulary:
+
+- `live`: currently authoritative and operative
+- `staged`: active work or candidate output not yet promoted to canon
+- `merged`: accepted into a live surface, usually `main` or another explicitly sanctioned standing branch
+- `superseded`: retained for traceability but replaced by a newer live surface
+- `archived`: preserved as record, not ordinary execution truth
+- `abandoned`: work stopped without promotion; presence alone does not confer legitimacy
+- `dormant`: intentionally kept standing but inactive
+- `reactivated`: a dormant or archived surface explicitly returned to live use
+
+Default application rules:
+
+1. Branches resolve explicitly. The ordinary endings are `merged`, `superseded`,
+   `archived`, or `abandoned`.
+2. A long-lived branch requires a named purpose, a steward, and a review cadence.
+3. Historical personae, aliases, chambers, and recovered lore are archived by
+   default unless a live surface explicitly marks them `reactivated`.
+4. Tooling may enforce lifecycle transitions only after doctrine names the
+   state being enforced.
+
+---
+
+## VIII. DECISIONS LOG
 
 See `DECISIONS.md` for confirmed Logan-approved decisions. Key decisions remain:
 
@@ -154,7 +184,7 @@ See `DECISIONS.md` for confirmed Logan-approved decisions. Key decisions remain:
 
 ---
 
-## VIII. REVIEW AND AMENDMENTS
+## IX. REVIEW AND AMENDMENTS
 
 This document is the root canonical constitution for vault governance.
 Amendments require:
