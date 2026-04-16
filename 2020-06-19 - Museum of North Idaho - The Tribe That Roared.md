@@ -4,7 +4,10 @@ author:
   - "[[Museum of North Idaho]]"
 published: 2020-06-19
 created: 2026-04-15
+date created: Wednesday, April 15th 2026, 2:44:01 pm
+date modified: Wednesday, April 15th 2026, 3:48:17 pm
 ---
+
 On Sept. 20, 1974, Kootenai Tribal Council chair Amy Trice and tribal
 representative Doug Wheaton formally notified the U.S. government that a
 state of war existed between the Tribe and the United States.

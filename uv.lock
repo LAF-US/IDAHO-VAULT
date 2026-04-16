@@ -1009,10 +1009,14 @@ version = "0.1.0"
 source = { editable = "." }
 dependencies = [
     { name = "crewai", extra = ["anthropic", "tools"] },
+    { name = "pydantic" },
 ]
 
 [package.metadata]
-requires-dist = [{ name = "crewai", extras = ["tools", "anthropic"], specifier = ">=1.14.1" }]
+requires-dist = [
+    { name = "crewai", extras = ["tools", "anthropic"], specifier = ">=1.14.1" },
+    { name = "pydantic" },
+]
 
 [[package]]
 name = "idna"
