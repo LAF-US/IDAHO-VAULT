@@ -68,6 +68,10 @@ from idaho_vault.five_wizards.staging import (
     build_workflow_artifact_pack,
     materialize_artifact_pack,
 )
+from idaho_vault.five_wizards.service import (
+    FiveWizardsStageRequest,
+    run_and_stage_five_wizards,
+)
 from idaho_vault.five_wizards.who_lane import WhoLaneRunInput, run_who_thou_lane
 from idaho_vault.five_wizards.when_lane import WhenLaneRunInput, run_when_then_lane
 from idaho_vault.five_wizards.where_lane import WhereLaneRunInput, run_where_there_lane
@@ -1069,6 +1073,64 @@ class FiveWizardsTest(unittest.TestCase):
             self.assertIn('"artifact_count"', manifest_text)
         finally:
             shutil.rmtree(tempdir, ignore_errors=True)
+
+    def test_run_and_stage_service_supports_dry_run(self) -> None:
+        request = FiveWizardsStageRequest(
+            workflow=FiveWizardsWorkflowInput(
+                run_id="run-001",
+                session_id="workflow-session-006",
+                lane_runs=[self.make_lane_run_input(domain) for domain in LaneDomain],
+            ),
+            materialize=False,
+        )
+
+        result = run_and_stage_five_wizards(request)
+
+        self.assertFalse(result.materialized)
+        self.assertIsNone(result.pack_root)
+        self.assertEqual(result.materialized_paths, [])
+        self.assertEqual(result.workflow.run_id, "run-001")
+        self.assertEqual(result.artifact_pack.run_id, "run-001")
+        self.assertIn("materialized=no", result.summary)
+
+    def test_run_and_stage_service_materializes_to_selected_root(self) -> None:
+        tempdir = Path.cwd() / "_tmp_five_wizards_service"
+        try:
+            shutil.rmtree(tempdir, ignore_errors=True)
+            tempdir.mkdir(exist_ok=True)
+            request = FiveWizardsStageRequest(
+                workflow=FiveWizardsWorkflowInput(
+                    run_id="run-001",
+                    session_id="workflow-session-007",
+                    lane_runs=[self.make_lane_run_input(domain) for domain in LaneDomain],
+                ),
+                stage_root=str(tempdir),
+                materialize=True,
+            )
+
+            result = run_and_stage_five_wizards(request)
+
+            self.assertTrue(result.materialized)
+            self.assertEqual(result.pack_root, str(tempdir / "run-001"))
+            self.assertGreater(len(result.materialized_paths), 0)
+            self.assertTrue((tempdir / "run-001").exists())
+            self.assertTrue(
+                any(path.endswith("workflow-artifact-manifest.json") for path in result.materialized_paths)
+            )
+            self.assertIn("materialized=yes", result.summary)
+        finally:
+            shutil.rmtree(tempdir, ignore_errors=True)
+
+    def test_run_and_stage_service_requires_stage_root_when_materializing(self) -> None:
+        with self.assertRaisesRegex(ValueError, "stage_root is required"):
+            FiveWizardsStageRequest(
+                workflow=FiveWizardsWorkflowInput(
+                    run_id="run-001",
+                    session_id="workflow-session-008",
+                    lane_runs=[self.make_lane_run_input(domain) for domain in LaneDomain],
+                ),
+                materialize=True,
+            )
 
     def test_json_round_trip_for_core_schemas(self) -> None:
         claim = self.make_claim(LaneDomain.WHY)

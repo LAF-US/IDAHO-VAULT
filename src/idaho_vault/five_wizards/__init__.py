@@ -55,6 +55,11 @@ from idaho_vault.five_wizards.staging import (
     build_workflow_artifact_pack,
     materialize_artifact_pack,
 )
+from idaho_vault.five_wizards.service import (
+    FiveWizardsStageRequest,
+    FiveWizardsStageResult,
+    run_and_stage_five_wizards,
+)
 from idaho_vault.five_wizards.pipelines import (
     awaken_council,
     challenge_council_report,
@@ -194,6 +199,8 @@ __all__ = [
     "draft_council_report",
     "finalize_council_report",
     "FiveWizardsWorkflowArtifacts",
+    "FiveWizardsStageRequest",
+    "FiveWizardsStageResult",
     "FiveWizardsWorkflowInput",
     "lane_artifact_group",
     "lane_inquiry_prompt",
@@ -209,6 +216,7 @@ __all__ = [
     "render_personal_note_markdown",
     "render_validation_verdict_markdown",
     "render_workflow_markdown",
+    "run_and_stage_five_wizards",
     "run_five_wizards_workflow",
     "run_lane",
     "run_when_then_lane",
