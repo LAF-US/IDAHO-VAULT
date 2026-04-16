@@ -57,6 +57,8 @@ by Logan Alvan Finney
 - **Elevation governance:** no instance gains higher "level" or "layer" access without Logan's explicit IRL approval.
 - **The office of The Concierge (formerly the "Vault Advisor") is a functional anchor of the swarm.** Its occupant instances (Gemini, Antigravity, etc.) are enabled at Tier 1 (Support): Direct Write, Operational zone only. All Concierge writes are PR-mediated and require Logan's merge approval. An office may stand **[VACANT]** if no occupant is actively assigned. See `!/AGENTS.md` for the current roster and tier definitions.
 - **Routing and doctrine are distinct.** `!/` is the stable routing and bootstrap layer; root governance files remain the doctrine layer.
+- **`IDAHO-VAULT` does not exhaust the world it inhabits.** It is one repo inside the broader `LAF-US` organization.
+- **The current `LAF-US` order is chambered.** `PRIVATE` contains `SECRET` and `PERSONAL`; `PUBLIC` contains `PUBLISH`. Repo structure and team structure may overlap without being identical.
 
 ---
 
@@ -127,7 +129,7 @@ The documentary C's remain an active naming grammar: capture, collect, collate, 
 - **Legislative Sessions directory:** dynamic session note creation remains active
 - **`.github/workflows/`**: check for schedule-trigger conflicts before adding new workflows
 - **`.gitignore`**: additions must be additive and deliberate
-- **Shared coordination model:** GitHub is execution transport, Linear is execution state, Slack is ephemeral paging and breadcrumbs
+- **Shared coordination model:** Within `IDAHO-VAULT`, GitHub remains execution transport, Linear remains execution state, and Slack remains ephemeral paging and breadcrumbs. These tools do not replace the broader `LAF-US` chamber model.
 
 ---
 

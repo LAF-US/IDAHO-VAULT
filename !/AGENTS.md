@@ -8,19 +8,20 @@
 ---
 
 **Owner:** Logan Finney — journalist, producer/reporter, Idaho Reports / Idaho Public Television
-**Repository:** github.com/loganfinney27/IDAHO-VAULT (public)
+**Repository:** github.com/LAF-US/IDAHO-VAULT (public)
 
 ---
 
 ## Authority Chain
 
 1. `AGENTS.md` (root) -> Cross-tool pointer
-2. `!README.md` (root) -> Touchstone Tree / live orienting doctrine
-3. `!/AGENTS.md` (this file) -> Canonical Narrative Registry
-4. `CONSTITUTION.md` (root) -> Binding governance
-5. `swarm.json` (root) -> Machine-readable source of truth
-6. `!/agents.json` -> Canonical generated bootstrap index
-7. `!/agent.sh` -> Canonical local bootstrap entrypoint
+2. `!/WAKEUP.md` -> Explicit wakeup and conflict-resolution surface
+3. `!README.md` (root) -> Touchstone Tree / live orienting doctrine
+4. `!/AGENTS.md` (this file) -> Canonical Narrative Registry
+5. `CONSTITUTION.md` (root) -> Binding governance
+6. `swarm.json` (root) -> Machine-readable source of truth
+7. `!/agents.json` -> Canonical generated bootstrap index
+8. `!/agent.sh` -> Canonical local bootstrap entrypoint
 
 Tree logic for crew space:
 
@@ -31,12 +32,38 @@ Tree logic for crew space:
 ## Fresh Agent Boot Order
 
 1. Read root `AGENTS.md` as pointer only.
-2. Read `!README.md` for Touchstone Tree orientation and relation.
-3. Read this file for the live roster, lane rules, and current connector posture.
-4. Read `CONSTITUTION.md` for binding governance.
-5. Read `swarm.json` for machine-readable compiled state.
-6. Use `!/agents.json` -> `!/agent.sh` for canonical local bootstrap.
-7. Treat historical CrewAI harbor notes as non-live unless `.crewai/MANIFEST.md` or this file says otherwise.
+2. Read `!/WAKEUP.md` before interpreting lore, branch residue, or older scaffolds.
+3. Read `!README.md` for Touchstone Tree orientation and relation.
+4. Read this file for the live roster, lane rules, and current connector posture.
+5. Read `CONSTITUTION.md` for binding governance.
+6. Read `swarm.json` for machine-readable compiled state.
+7. Use `!/agents.json` -> `!/agent.sh` for canonical local bootstrap.
+8. Treat historical CrewAI harbor notes as non-live unless `.crewai/MANIFEST.md` or this file says otherwise.
+
+## Disorientation Rule
+
+If you wake with conflicting assumptions, do not improvise a world model from
+partial memory.
+
+Follow this precedence:
+
+1. Logan's direct instruction
+2. `CONSTITUTION.md`
+3. `!/WAKEUP.md` and `!/AGENTS.md`
+4. `swarm.json`
+5. generated bootstrap surfaces
+6. historical notes, abandoned branch artifacts, and exploratory files
+
+Immediate wakeup facts:
+
+- `IDAHO-VAULT` is one repo inside `LAF-US`, not the whole `LAF-US` world.
+- Repo topology and GitHub team topology are related but not identical.
+- The narrow GitHub/Linear/Slack connector posture here is repo-local, not the
+  total sovereignty model.
+- Historical CrewAI harbor notes and stale scaffolds are non-live unless
+  `.crewai/MANIFEST.md` or this file explicitly says otherwise.
+- Current live governance files are `!README.md`, `CONSTITUTION.md`,
+  `DECISIONS.md`, and `VAULT-CONVENTIONS.md` at repo root.
 
 ---
 
@@ -153,6 +180,45 @@ Narrative persistence rule:
 
 ---
 
+## LAF-US Topology
+
+`IDAHO-VAULT` is one repo inside the broader GitHub organization `LAF-US`.
+
+Current working distinction:
+
+- **Repo layer:** chamber anchors and child repos
+- **Team layer:** GitHub teams and review/delegation groupings
+
+Current repo-layer chamber anchors:
+
+- `PRIVATE`
+- `SECRET`
+- `PERSONAL`
+- `PUBLIC`
+- `PUBLISH`
+
+Current flagship child repos explicitly visible in this chambered model:
+
+- `IDAHO-VAULT`
+- `THE-GEMSTONE`
+
+Current team-layer anchors and public-side subteams reported in the live org:
+
+- `LAF-PRIVATE`
+- `LAF-PUBLIC`
+- `LAF-USA`
+- `LAF-USB`
+- `LAF-USC`
+
+Repo topology and team topology are related, but they are not the same thing.
+`LAF-USB` therefore names both a live GitHub team surface and an active
+migration current in the doctrine.
+
+See `!/LAF-USB-FIVE-CORES-MIGRATION-2026-04-15.md` for the current internal
+migration note.
+
+---
+
 ## Coordination Protocols
 
 - **Lane Independence**: Each agent operates on its own branch prefix (`claude/`, `gemini/`, etc.).
@@ -167,7 +233,11 @@ Narrative persistence rule:
 
 ## Connector Hub
 
-The current active connector hub is intentionally small:
+Connector posture is subordinate to the wider `LAF-US` chamber and team
+topology above.
+
+Within `IDAHO-VAULT`, the current active connector posture remains
+intentionally narrow:
 
 - **GitHub** = execution and transport
 - **Linear** = execution state
@@ -188,7 +258,9 @@ Registry surfaces:
 - `SPEC-CONNECTOR-HUB-2026-04-09.md` = human-readable connector hub and maze census spec
 - `LEVELSET-CURRENT.md` = mid-future connector survey and review surface
 
-The vault remains the durable record. Connectors inform, transport, or track work, but they do not silently become doctrine.
+The vault remains the authoritative memory surface for this repo. Connectors
+inform, transport, or track work, but they do not silently become doctrine or
+replace the broader `LAF-US` sovereignty model.
 
 ---
 

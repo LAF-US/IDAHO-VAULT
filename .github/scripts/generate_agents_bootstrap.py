@@ -8,6 +8,7 @@ import json
 from pathlib import Path
 
 REQUIRED_CONTEXT = [
+    "!/WAKEUP.md",
     "!README.md",
     "CONSTITUTION.md",
     "!/AGENTS.md",
@@ -86,10 +87,12 @@ def build_bootstrap_index(swarm: dict) -> dict:
             "compatibility_mirror": "agents.json",
             "compatibility_wrapper": "agent.sh",
         },
+        "wakeup_protocol": swarm.get("wakeup_protocol", {}),
         "control_plane": {
             "coordination_hub_issue": control_plane["coordination_hub_issue"],
             "scoped_issue": control_plane["scoped_issue"],
             "system_roles": control_plane["system_roles"],
+            "scope_note": control_plane.get("scope_note"),
         },
         "crewai_layer": {
             "status": crews.get("status"),
