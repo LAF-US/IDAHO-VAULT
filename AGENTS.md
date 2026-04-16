@@ -36,7 +36,7 @@ related:
 > This file exists at repo root because OpenAI Codex CLI, GitHub Copilot, and Qodo auto-load `AGENTS.md` from the repository root.
 
 **Owner:** Logan Finney — journalist, producer/reporter, Idaho Reports / Idaho Public Television
-**Repository:** github.com/loganfinney27/IDAHO-VAULT (public)
+**Repository:** github.com/LAF-US/IDAHO-VAULT (public)
 
 ---
 
@@ -44,28 +44,59 @@ related:
 
 Root `AGENTS.md` is the auto-loaded cross-tool entrypoint.
 See [!/AGENTS.md](!/AGENTS.md) for the canonical narrative registry: capability tiers, boundary rules, bootstrap rules, and the master agent roster.
+If you wake up disoriented, stop and read [!/WAKEUP.md](!/WAKEUP.md) before
+interpreting lore, historical notes, or older branch residue.
 
 The machine-readable source of truth remains `swarm.json`.
 The canonical local execution bootstrap chain is `swarm.json` -> `!/agents.json` -> `!/agent.sh`.
 Tree logic still governs orientation: `!` is the Swarmic Nest of the group, while `.*` dotfolders are the personal chambers of individual agents.
 
+This repository now sits inside the broader `LAF-US` organization. The larger
+internal model includes both chambered repo anchors and separate GitHub team
+topology; this root file remains only a pointer into that fuller picture.
+
+Immediate wakeup facts:
+
+- `IDAHO-VAULT` is one repo inside `LAF-US`, not the whole world.
+- Repo topology and GitHub team topology are related but not identical.
+- The narrow GitHub/Linear/Slack connector posture described here is local to
+  `IDAHO-VAULT`, not the full `LAF-US` sovereignty model.
+- Historical harbor notes, abandoned branches, and exploratory scaffolds are
+  non-live unless a live surface explicitly reactivates them.
+- Current root governance files live at repo root: `!README.md`,
+  `CONSTITUTION.md`, `DECISIONS.md`, and `VAULT-CONVENTIONS.md`.
+
 ## Fresh Agent Boot Order
 
 1. Read this root `AGENTS.md` as a pointer and compatibility surface only.
-2. Read `!README.md` for the Touchstone Tree and orienting doctrine.
-3. Read `!/AGENTS.md` for the live roster, lane rules, and current connector posture.
-4. Read `CONSTITUTION.md` for binding governance.
-5. Read `swarm.json` for machine-readable compiled state.
-6. Use `swarm.json` -> `!/agents.json` -> `!/agent.sh` for canonical local execution bootstrap.
-7. Treat historical CrewAI harbor notes as non-live unless `.crewai/MANIFEST.md` or `!/AGENTS.md` says otherwise.
+2. Read `!/WAKEUP.md` for explicit anti-confusion orientation and conflict precedence.
+3. Read `!README.md` for the Touchstone Tree and orienting doctrine.
+4. Read `!/AGENTS.md` for the live roster, lane rules, and current connector posture.
+5. Read `CONSTITUTION.md` for binding governance.
+6. Read `swarm.json` for machine-readable compiled state.
+7. Use `swarm.json` -> `!/agents.json` -> `!/agent.sh` for canonical local execution bootstrap.
+8. Treat historical CrewAI harbor notes as non-live unless `.crewai/MANIFEST.md` or `!/AGENTS.md` says otherwise.
 
-The current active connector hub is:
+When live surfaces disagree, follow this order:
+
+1. Logan's direct instruction
+2. `CONSTITUTION.md`
+3. `!/WAKEUP.md` and `!/AGENTS.md`
+4. `swarm.json`
+5. generated bootstrap surfaces
+6. historical notes and exploratory residue
+
+Within `IDAHO-VAULT`, the currently active connector posture is:
 
 - GitHub = execution and transport
 - Linear = execution state
 - Slack = tertiary paging and breadcrumbs
 
-The full connector classification lives in `!/AGENTS.md`, `swarm.json`, and `SPEC-CONNECTOR-HUB-2026-04-09.md`.
+These connectors remain operative surfaces for this repo, but they do not by
+themselves define the broader `LAF-US` structure.
+The fuller internal wording lives in `!/AGENTS.md`, `swarm.json`,
+`SPEC-CONNECTOR-HUB-2026-04-09.md`, and
+`!/LAF-USB-FIVE-CORES-MIGRATION-2026-04-15.md`.
 
 ---
 

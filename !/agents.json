@@ -10,6 +10,29 @@
     "compatibility_mirror": "agents.json",
     "compatibility_wrapper": "agent.sh"
   },
+  "wakeup_protocol": {
+    "quick_start": "!/WAKEUP.md",
+    "boot_order": [
+      "AGENTS.md",
+      "!/WAKEUP.md",
+      "!README.md",
+      "!/AGENTS.md",
+      "CONSTITUTION.md",
+      "swarm.json",
+      "!/agents.json",
+      "!/agent.sh"
+    ],
+    "conflict_precedence": [
+      "Logan direct instruction",
+      "CONSTITUTION.md",
+      "!/WAKEUP.md and !/AGENTS.md",
+      "swarm.json",
+      "generated bootstrap surfaces",
+      "historical notes and exploratory residue"
+    ],
+    "historical_rule": "Historical CrewAI harbor notes, abandoned branch artifacts, and exploratory scaffolds are non-live unless a live surface explicitly reactivates them.",
+    "scope_note": "Connector posture in this registry is local to IDAHO-VAULT. The broader LAF-US chamber and team topology lives in !/AGENTS.md and !/LAF-USB-FIVE-CORES-MIGRATION-2026-04-15.md."
+  },
   "control_plane": {
     "coordination_hub_issue": "LAF-25",
     "scoped_issue": "LAF-28",
@@ -17,7 +40,8 @@
       "github": "execution_transport",
       "linear": "execution_state",
       "slack": "ephemeral_breadcrumbs"
-    }
+    },
+    "scope_note": "GitHub, Linear, and Slack here describe the repo-local operating posture of IDAHO-VAULT, not the whole LAF-US world model."
   },
   "crewai_layer": {
     "status": "refoundation",
@@ -37,12 +61,13 @@
       "instructions_file": "ANTIGRAVITY.md",
       "supports_local_bootstrap": true,
       "git_identity": {
-        "name": "Antigravity (The Vault Advisor)",
+        "name": "Antigravity",
         "email": "noreply@google.com",
         "suffix": "-G"
       },
       "context": {
         "required": [
+          "!/WAKEUP.md",
           "!README.md",
           "CONSTITUTION.md",
           "!/AGENTS.md",
@@ -63,12 +88,13 @@
       "instructions_file": ".claude/CLAUDE.md",
       "supports_local_bootstrap": true,
       "git_identity": {
-        "name": "Claude Code (The Abhorsen)",
+        "name": "Claude Code",
         "email": "noreply@anthropic.com",
         "suffix": "-C"
       },
       "context": {
         "required": [
+          "!/WAKEUP.md",
           "!README.md",
           "CONSTITUTION.md",
           "!/AGENTS.md",
@@ -95,6 +121,7 @@
       },
       "context": {
         "required": [
+          "!/WAKEUP.md",
           "!README.md",
           "CONSTITUTION.md",
           "!/AGENTS.md",
@@ -121,6 +148,7 @@
       },
       "context": {
         "required": [
+          "!/WAKEUP.md",
           "!README.md",
           "CONSTITUTION.md",
           "!/AGENTS.md",
@@ -141,12 +169,13 @@
       "instructions_file": ".gemini/GEMINI.md",
       "supports_local_bootstrap": true,
       "git_identity": {
-        "name": "Gemini (The Vault Advisor)",
+        "name": "Gemini",
         "email": "noreply@google.com",
         "suffix": "-G"
       },
       "context": {
         "required": [
+          "!/WAKEUP.md",
           "!README.md",
           "CONSTITUTION.md",
           "!/AGENTS.md",
@@ -173,6 +202,7 @@
       },
       "context": {
         "required": [
+          "!/WAKEUP.md",
           "!README.md",
           "CONSTITUTION.md",
           "!/AGENTS.md",
@@ -199,6 +229,7 @@
       },
       "context": {
         "required": [
+          "!/WAKEUP.md",
           "!README.md",
           "CONSTITUTION.md",
           "!/AGENTS.md",

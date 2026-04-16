@@ -7,8 +7,9 @@ related:
   - WHO
   - codex
   - witness
-date created: 2026-04-15
+date created: Wednesday, April 15th 2026, 3:59:41 pm
 status: notebook page
+date modified: Wednesday, April 15th 2026, 9:11:13 pm
 ---
 
 # Nixian Border Shore - Notebook Page

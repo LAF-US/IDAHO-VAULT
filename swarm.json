@@ -3,8 +3,31 @@
   "// governance": "CONSTITUTION.md",
   "// conventions": "VAULT-CONVENTIONS.md",
   "principal": "Logan Finney",
-  "vault_authority": "https://github.com/loganfinney27/IDAHO-VAULT",
-  "registry_version": "2026-04-10 (Post-LAF-28 Repair)",
+  "vault_authority": "https://github.com/LAF-US/IDAHO-VAULT",
+  "registry_version": "2026-04-15 (Wakeup Clarification)",
+  "wakeup_protocol": {
+    "quick_start": "!/WAKEUP.md",
+    "boot_order": [
+      "AGENTS.md",
+      "!/WAKEUP.md",
+      "!README.md",
+      "!/AGENTS.md",
+      "CONSTITUTION.md",
+      "swarm.json",
+      "!/agents.json",
+      "!/agent.sh"
+    ],
+    "conflict_precedence": [
+      "Logan direct instruction",
+      "CONSTITUTION.md",
+      "!/WAKEUP.md and !/AGENTS.md",
+      "swarm.json",
+      "generated bootstrap surfaces",
+      "historical notes and exploratory residue"
+    ],
+    "historical_rule": "Historical CrewAI harbor notes, abandoned branch artifacts, and exploratory scaffolds are non-live unless a live surface explicitly reactivates them.",
+    "scope_note": "Connector posture in this registry is local to IDAHO-VAULT. The broader LAF-US chamber and team topology lives in !/AGENTS.md and !/LAF-USB-FIVE-CORES-MIGRATION-2026-04-15.md."
+  },
   "agents": [
     {
       "id": "claude-code",
@@ -506,6 +529,7 @@
     "bootstrap_entrypoint": "!/agent.sh",
     "narrative_registry": "!/AGENTS.md",
     "bootstrap_index": "!/agents.json",
+    "scope_note": "GitHub, Linear, and Slack here describe the repo-local operating posture of IDAHO-VAULT, not the whole LAF-US world model.",
     "system_roles": {
       "github": "execution_transport",
       "linear": "execution_state",
