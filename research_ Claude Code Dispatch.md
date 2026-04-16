@@ -164,14 +164,14 @@ If you tell me your exact environment (Windows vs Mac, personal vs newsroom IT m
 
 ---
 
-# User loganf on state-owned IDPTV Windows machine
+# User on managed Windows machine
 
-You’re on a locked‑down, state IT–managed Windows box, so you almost certainly can’t get the level of local admin Claude Desktop really wants directly on your `loganf` account. The realistic move is to route this through IT and/or use a separate machine or VM they’ll let you control.
+You’re on a locked‑down, IT-managed Windows box, so you almost certainly can’t get the level of local admin Claude Desktop really wants directly on your everyday account. The realistic move is to route this through IT and/or use a separate machine or VM they’ll let you control.
 
 ## What’s likely blocked right now
 
 - Cowork/Dispatch on Windows expects to be installed and run under an account with local admin at install time; standard users often hit missing permissions, drivers, and update problems afterward.[^5_1][^5_2]
-- On a state-owned IDPTV machine, group policy probably forbids granting your everyday `loganf` profile those admin rights long‑term, and may also block background network traffic or file access Claude wants.[^5_3][^5_1]
+- On tightly managed organizational machines, group policy may forbid granting your everyday profile those admin rights long‑term, and may also block background network traffic or file access Claude wants.[^5_3][^5_1]
 
 
 ## Concrete ask you can send to IT
@@ -181,8 +181,8 @@ Something like this (short and non-scary):
 > “For a limited pilot, I need to run Anthropic’s Claude Code / Cowork desktop app to assist with research and scripting. It requires local admin at install time.
 >
 > Could you either:
-> 1) Temporarily grant my `loganf` profile local admin so you can install Claude Desktop with Cowork and required permissions, then remove admin again after install; or
-> 2) Provision a small Windows VM or spare workstation where I have local admin so I can install and test Claude Desktop there instead of on my main IDPTV machine.
+> 1) Temporarily grant my profile local admin so you can install Claude Desktop with Cowork and required permissions, then remove admin again after install; or
+> 2) Provision a small Windows VM or spare workstation where I have local admin so I can install and test Claude Desktop there instead of on my main work machine.
 >
 > I’m happy to use a non‑production environment and keep it off any sensitive drives or systems.”
 
@@ -190,7 +190,7 @@ That frames it as a controlled pilot on non‑sensitive data and gives them two 
 
 ## Workarounds if they say no
 
-- Use Claude via the browser only, on the IDPTV machine, and reserve all Cowork/Dispatch/swarm experiments for a personal laptop at home where you can be admin.[^5_3]
+- Use Claude via the browser only on your managed work machine, and reserve all Cowork/Dispatch/swarm experiments for a personal laptop at home where you can be admin.[^5_3]
 - Or ask IT if they can host a lab VM in their environment with looser policy, which you RDP into specifically for AI tooling; that’s often easier for public‑sector IT to approve than loosening rules on your primary workstation.[^5_5][^5_3]
 
 <div align="center">⁂</div>
@@ -515,4 +515,3 @@ If you want to formalize this for the DOCKET, you could log:
 - Owner: `laf`
 - Constraints: non‑admin Windows, Dispatch flakiness, IDAHO‑VAULT = canonical store
 - Next action: “Propose v0 swarm architecture for IDPTV use case (reporting + vault), then test on personal/VM sandbox.”
-

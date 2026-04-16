@@ -1,6 +1,8 @@
-<img src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" style="height:64px;margin-right:32px"/>
-
-# vector databases and Obsidian.md
+---
+aliases:
+  - vector databases and Obsidian.md
+---
+# vector databases and Obsidian
 
 Vector databases pair well with Obsidian when you want **semantic search** across notes instead of only keyword matching. The most common setup is to embed your markdown notes locally and store those vectors in something like Qdrant, Chroma, LanceDB, DuckDB VSS, or a PostgreSQL extension such as pgvector [^1_1][^1_2][^1_3].
 
@@ -201,4 +203,3 @@ If you want the shortest path to a working local RAG system, start with **LlamaI
 [^4_7]: https://github.com/infiniflow/ragflow
 
 [^4_8]: https://pub.towardsai.net/introduction-to-rag-basics-to-mastery-1-build-your-own-local-rag-pipeline-no-cloud-no-api-keys-162ccf9ebc20
-

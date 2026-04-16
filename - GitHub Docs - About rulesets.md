@@ -1,6 +1,9 @@
 ---
 source: "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/about-rulesets"
-author:
+author: "GitHub Docs contributors"
+publisher: "GitHub Docs"
+license: "CC BY 4.0"
+attribution_modified: false
 published:
 created: 2026-04-16
 ---
