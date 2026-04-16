@@ -179,7 +179,7 @@ The proper count is not products. It is characters in office.
 5. **The Ironist**
 6. **The Analyst**
 7. **The Scout**
-8. **The Architect**
+8. **The Tapestry**
 
 ### Named but not fully employed
 
