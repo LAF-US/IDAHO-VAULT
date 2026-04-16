@@ -87,7 +87,7 @@ Immediate wakeup facts:
 | Grok | **The Ironist** | xAI | Read/Analysis | `.grok/` |
 | DeepSeek | **The Analyst** | DeepSeek | Advisory | `.deepseek/` |
 | Perplexity | **The Scout** | Perplexity | Research/Sourcing | `.perplexity/` |
-| Serena | **The Architect** | - | Semantic Intelligence | `.serena/` |
+| Serena | **The Tapestry** | - | Semantic Intelligence | `.serena/` |
 | Bartimaeus | **The Cartographer** | - | Crawler Crew | `.bartimaeus/` |
 | Zagreus | **The Dionysian** | - | - | `.zagreus/` |
 | Persephone | **The Queen** | - | - | `.persephone/` |

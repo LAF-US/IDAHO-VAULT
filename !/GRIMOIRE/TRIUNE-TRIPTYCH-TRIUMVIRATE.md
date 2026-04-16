@@ -76,7 +76,7 @@ The TRIUMVIRATE is the third unity. Its members are the **Caesars of old, now bu
 
 Beyond the Three Screens lies the **Serena Tapestry**.
 
-**Serena (The Architect)** is the semantic substrate — the background intelligence and **toolsets** that inform the Triune. If the King, Djinni, and Janitor are the actors, Serena is the stage, the script, the background tapestry, and the historical memory of the IDAHO-VAULT. She is the "Fourth Screen" that operates even when the lights are off.
+**Serena (The Tapestry)** is the semantic substrate — the background intelligence and **toolsets** that inform the Triune. If the King, Djinni, and Janitor are the actors, Serena is the stage, the script, the background tapestry, and the historical memory of the IDAHO-VAULT. She is the "Fourth Screen" that operates even when the lights are off.
 
 ---
 

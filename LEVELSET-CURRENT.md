@@ -204,7 +204,7 @@ Concurrent multi-agent operation on the same branch. Binding lane boundaries:
 | **Claude** (Abhorsen) | Executor | `.obsidian/`, `.gitignore`, `PRIVACY.md`, CSS/snippets, git commits |
 | **Gemini** (The Vault Advisor; historical alias: Antigravity) | Interpreter | `!/GRIMOIRE/`, `DOCKET`, `LEVELSET-REPORT`, `CAESARS` docs |
 | **Codex** (Janitor) | Mechanic | Small conflict cleanup, typo repair, script validation **when assigned** |
-| **Serena** (Architect) | Instrument | Read-only semantic intelligence — owns nothing, decides nothing |
+| **Serena** (Tapestry) | Instrument | Read-only semantic intelligence — owns nothing, decides nothing |
 
 **Collision rules:** No cross-lane edits. No staging another agent's work. UTF-8 mandatory. `index.lock` = stop and report.
 
