@@ -1,34 +1,3 @@
----
-authority: LOGAN
-related:
-- '146'
-- '500'
-- '978'
-- API
-- CDP
-- ChatGPT
-- GUI
-- LLM
-- MCP
-- MDM
-- MGE
-- Perplexity Comet
-- RPA
-- VNC
-- agent
-- assistant
-- chain
-- definition
-- index
-- journal
-- node
-- pair
-- sign
-- systems
-- web
-- window
----
-
 <img src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" style="height:64px;margin-right:32px"/>
 
 # Can I remote-control the Perplexity Comet web browser?
