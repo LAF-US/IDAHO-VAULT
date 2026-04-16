@@ -1,24 +1,24 @@
 ---
-title: 2026-04-09
+title: {{date:YYYY-MM-DD}}
 aliases:
-  - 2026-04-09
-  - April 9, 2026
-  - April 9th, 2026
-  - 9 April 2026
-  - Thursday, April 9, 2026
-linter-yaml-title-alias: 2026-04-09
-yesterday: 2026-04-08
-tomorrow: 2026-04-10
+  - {{date:YYYY-MM-DD}}
+  - {{date:MMMM D, YYYY}}
+  - {{date:MMMM Do, YYYY}}
+  - {{date:D MMMM YYYY}}
+  - {{date:dddd, MMMM D, YYYY}}
+linter-yaml-title-alias: {{date:YYYY-MM-DD}}
+yesterday: {{date-1d:YYYY-MM-DD}}
+tomorrow: {{date+1d:YYYY-MM-DD}}
 weekday:
-  - Thursday
+  - {{date:dddd}}
 cssclasses:
-  - roygbiv-thu
+  - roygbiv-{{date:ddd}}
 tags:
   - today
-  - 2026/04/09
+  - {{date:YYYY/MM/DD}}
   - dailynote
-date created: Thursday, April 9th 2026, 12:00:00 am
-date modified: Thursday, April 9th 2026, 12:00:00 am
+date created: {{date:dddd, MMMM Do YYYY, [12:00:00 am]}}
+date modified: {{date:dddd, MMMM Do YYYY, [12:00:00 am]}}
 ---
 
 [[TO DO LIST]]

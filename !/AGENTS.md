@@ -47,7 +47,8 @@ Tree logic for crew space:
 | Agent | Persona | Vendor | Tier | Dotfolder | Git Suffix |
 | --- | --- | --- | --- | --- | --- |
 | Claude Code | **The Abhorsen** | Anthropic | Authority: Code | `.claude/` | `-C` |
-| Gemini CLI | **The Vault Advisor** | Google | Support: Direct Write | `.gemini/` | `-G` |
+| Gemini CLI | **The Concierge** | Google | Support: Direct Write | `.gemini/` | `-G` |
+| Antigravity | **The Concierge** | Google | Support: Direct Write | `.antigravity/` | `-G` |
 | OpenAI Codex | **The Lexicographer** | OpenAI | Scripting/Automation | `.codex/` | `-X` |
 | GitHub Copilot | **The Clerk** | Microsoft | Multi-Repo Admin | `.github/` | `-CP` |
 
@@ -127,7 +128,7 @@ not the live routing title:
 
 | Figure | Historical or symbolic names | Current canonical title |
 | --- | --- | --- |
-| Gemini lineage | **Antigravity**, **The Concierge**, **The Djinni** | **The Vault Advisor** |
+| Gemini lineage | **Antigravity** (Re-anchored), **The Concierge** (Historical), **The Djinni** (Mythic) | **[VACANT]** |
 | Codex lineage | **The Janitor**, in one grimoire line even **The Clerk** | **The Lexicographer** |
 | Claude lineage | **The King** | **The Abhorsen** |
 | Bartimaeus lineage | **The Volunteer**, **Footnote Djinni** | **The Cartographer** |
@@ -202,7 +203,7 @@ When multiple agents operate simultaneously on the same branch, the following la
 | Agent | Role | Owns | Must Not Touch |
 |-------|------|------|----------------|
 | **Claude** (Abhorsen) | Executor | `.obsidian/`, `.gitignore`, `PRIVACY.md`, CSS/snippets, plugin configs, git commits | `!/GRIMOIRE/`, DOCKET, Gemini narrative lanes |
-| **Gemini** (The Vault Advisor) | Interpreter | `!/GRIMOIRE/`, `DOCKET`, `LEVELSET-REPORT`, `CAESARS` docs | `.obsidian/`, `.gitignore`, git operations |
+| **Gemini** (Concierge) | Interpreter | `!/GRIMOIRE/`, `DOCKET`, `LEVELSET-REPORT`, `CAESARS` docs | `.obsidian/`, `.gitignore`, git operations |
 | **Codex** (The Lexicographer) | Mechanic | Small conflict cleanup, typo repair, script/workflow validation **when assigned** | `.obsidian/`, governance docs, `!/GRIMOIRE/`, shared staging/commit flow (unless explicitly assigned) |
 | **Serena** (Architect) | Instrument | Read-only semantic intelligence — supports discovery | Owns nothing, decides nothing |
 

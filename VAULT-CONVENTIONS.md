@@ -500,7 +500,34 @@ Root governance files hold doctrine. The `!/` layer keeps bootstrap paths and co
 
 
 
-**Decision Rule:** Vault holds doctrine and context that must persist. GitHub executes workflows and transport state. Linear tracks execution, owners, and current state. Chat/Slack is transient coordination — any decision or durable context must be promoted promptly into Vault and/or the execution systems.
+**Decision Rule:** Vault holds doctrine and context that must persist. GitHub executes workflows and transport state. Linear tracks execution, owners, and current state. Chat/Slack is transient coordination — any decision or durable context must be promoted promptly into Vault and/or the execution systems (per Persistence Anchoring protocols).
+
+---
+
+## Agent Architecture Standards (Established)
+
+These standards are based on the confirmed **Decisions 19 and 21** and the **2026-04-10 Constitutional Revision**.
+
+### Identity Decoupling
+The vault enforces a strict decoupling of agent identity variables to prevent the calcification of transient software into permanent authorities. This process (narratively known as the **Exorcism of the Nomina**) was established during the LAF-25 repair to ensure that functional offices can stand vacant.
+
+| Variable | Definition | Example |
+| :--- | :--- | :--- |
+| **NAME** | The unique identifier of the software vendor/model instance. | `Claude Code`, `Gemini` |
+| **OFFICE** | The functional position or authority granted within the vault. | `Code Authority`, `Concierge` |
+| **TITLE** | The symbolic or narrative moniker used in handoffs. | `The Abhorsen`, `The Clerk` |
+| **ROLE** | The transient operational descriptor for the current task. | `Executor`, `Interpreter` |
+
+**Rule:** Agents must not assume that their NAME is synonymous with their OFFICE. Offices exist independently of occupants and may be marked **[VACANT]**.
+
+### Persistent Memory Anchoring
+All "direct-write" agents must anchor their external platform state into the vault's versioned repository. This process (narratively known as the **Re-Binding of Memory**) was established by Decision 19 and the LAF-28 repair to ensure that agentic reasoning and history are auditable and durable.
+
+1. **Durable Memory Dotfolders**: Each agent must maintain a tracked `.dotfolder/MEMORY/` directory (e.g., `.claude/MEMORY/`).
+2. **Persistence Promotion**: Ephemeral chat-based plans, task lists, and "brain artifacts" must be promoted to the vault as `.md` files in the agent's memory folder.
+3. **Session Completion**: A session is not considered "complete" until the current state has been anchored in the vault.
+
+---
 
 
 
@@ -842,9 +869,8 @@ Logan uses a naming convention for AI conversations:
 
 | --- | --- |
 
-| PERMANENT: | Central, non-deletable conversations |
-
-| PERSISTENT: | Long-running, role-specific conversations |
+| PERMANENT: | (RETIRED) Central, non-deletable conversations |
+| PERSISTENT: | (RETIRED) Long-running, role-specific conversations |
 
 | TASK: | Bounded, completable work items |
 

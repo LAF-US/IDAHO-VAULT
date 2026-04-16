@@ -1,6 +1,6 @@
 param(
     [Parameter(Mandatory = $true)]
-    [ValidateSet("codex", "claude", "gemini", "crewai")]
+    [ValidateSet("codex", "claude", "gemini", "crewai", "antigravity")]
     [string]$Agent,
 
     [switch]$IsolateHome,
@@ -67,6 +67,13 @@ switch ($Agent) {
     "gemini" {
         $roaming = Join-Path $agentHomeRoot "gemini\\AppData\\Roaming"
         $local = Join-Path $agentHomeRoot "gemini\\AppData\\Local"
+        Set-EnvValue -Name "APPDATA" -Value $roaming
+        Set-EnvValue -Name "LOCALAPPDATA" -Value $local
+        $IsolateHome = $true
+    }
+    "antigravity" {
+        $roaming = Join-Path $agentHomeRoot "antigravity\\AppData\\Roaming"
+        $local = Join-Path $agentHomeRoot "antigravity\\AppData\\Local"
         Set-EnvValue -Name "APPDATA" -Value $roaming
         Set-EnvValue -Name "LOCALAPPDATA" -Value $local
         $IsolateHome = $true

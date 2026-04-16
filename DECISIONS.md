@@ -87,11 +87,11 @@ related:
 | 15         | 2026-03-15 | Security hardening: sanitization + validation | âœ… CONFIRMED | Input sanitization in scraper, content validation gate in workflows       |
 | 16         | 2026-03-24 | MCP governance model                          | âœ… CONFIRMED | MCP is allowed as transport only; native vault terms remain canonical     |
 | 17         | 2026-03-22 | STEP-0 LEVELSET prompt for external agents    | âœ… CONFIRMED | Standardized orientation prompt for chat-based agents                     |
-| 18         | 2026-03-28 | End-to-End Journalism Workflow (v0.1)         | â³ Pending   | Defines vault-assisted journalism pipeline: ingest â†’ raw â†’ process â†’ structured â†’ analysis â†’ insight â†’ publication |
-| 19         | 2026-03-28 | Vault as Source of Truth (Stateless)          | â³ Pending   | Only authoritative memory; all agent state external to vault              |
-| 20         | 2026-03-28 | Manifest-Based Coordination                   | â³ Pending   | Inter-agent coordination via shared manifest, not peer-to-peer messaging  |
-| 21         | 2026-03-28 | Agent Behavioral Model (No Fabrication)       | âš ï¸ CODE AUTHORITY REVIEW | Ground truth only; critical guard against hallucination |
-| 22         | 2026-04-03 | Grimoire opened — `!/GRIMOIRE/` canonical     | ✅ CONFIRMED | Chorus Bootstrap Decision 2 executed. Three-layer model (Charter / Corpus / Grimoire) adopted. Codex→Corpus in VAULT-CONVENTIONS.md. Rosetta Stone filed by Gemini. |
+| 18         | 2026-03-28 | End-to-End Journalism Workflow (v0.1)         | â ³ Pending   | Defines vault-assisted journalism pipeline: ingest â†’ raw â†’ process â†’ structured â†’ analysis â†’ insight â†’ publication |
+| 19         | 2026-04-10 | Vault as Source of Truth (Persistence Anchoring) | ✅ CONFIRMED | Stateless agent architecture; all memory anchored in vault dotfolders. (Narratively: The Re-Binding of Memory). |
+| 20         | 2026-04-10 | Manifest-Based Coordination Layer             | ✅ CONFIRMED | Multi-agent coordination via shared state artifacts; no peer-to-peer chat. |
+| 21         | 2026-04-10 | Agent Behavioral Model (No Fabrication)       | ✅ CONFIRMED | Ground truth only; strict guard against identity calcification. (Narratively: The Exorcism of the Nomina). |
+| 22         | 2026-04-13 | Grimoire opened — `!/GRIMOIRE/` canonical     | ✅ CONFIRMED | Chorus Bootstrap Decision 2 executed. Three-layer model (Charter / Corpus / Grimoire) adopted. |
 
 ---
 
@@ -235,43 +235,25 @@ related:
 **Rationale:** Defines a practical end-to-end workflow using IDAHO-VAULT as the system. Core model: `REAL WORLD â†’ INGEST â†’ VAULT(RAW) â†’ PROCESS â†’ VAULT(STRUCTURED) â†’ ANALYSIS â†’ VAULT(INSIGHT) â†’ SYNTHESIS â†’ VERIFICATION â†’ PUBLICATION`. Responsible agents: Router (task routing), Executor (ingest/transform), Analyzer (evidence synthesis), Drafter (publication), Human (final verification). Goal: faster intake, structured processing, traceable outputs, human-verified publication.
 **Reference:** See `IDAHO-VAULT â€” END-TO-END JOURNALISM WORKFLOW (AI-ASSISTED, LOCAL-FIRST)v0.1.md`
 
-### Decision 19: Vault as Source of Truth (Stateless Agent Architecture)
-
-**Date:** 2026-03-28
+### Decision 19: Vault as Source of Truth (Persistence Anchoring)
+**Narrative Reference:** The Re-Binding of Memory
+**Date:** 2026-04-10
 **Topic:** Vault authority and agent statefulness
-**Status:** Pending
-**Rationale:** The Vault (GitHub repository) is the **only authoritative memory**. Agents do not retain persistent internal state. All context must be read from Vault before acting; all outputs written back to Vault. This enables auditable, reproducible operations and prevents agent drift.
-**Reference:** See `IDAHO-VAULT â€” SYSTEM CONTEXT.md` (lines 32â€“48)
+**Status:** ✅ CONFIRMED
+**Rationale:** The Vault is the **only authoritative memory**. Agents do not retain persistent internal state. All context must be read from the Vault before acting; all outputs must be anchored back to the Vault in durable dotfolder memory. This ensures auditable, reproducible operations.
 
 ### Decision 20: Manifest-Based Coordination Layer
-
-**Date:** 2026-03-28
+**Date:** 2026-04-10
 **Topic:** Inter-agent coordination mechanism
-**Status:** Pending
-**Rationale:** Agents do not communicate peer-to-peer. Coordination occurs through a shared manifest (e.g., `manifest.json`) and structured file directories. Manifest tracks: file path, status (open/locked/processed), modification timestamp, file type, description, last agent. Agents MUST read manifest before acting and update it after writing. This prevents duplication, locking conflicts, and invisible dependencies.
-**Reference:** See `IDAHO-VAULT â€” SYSTEM CONTEXT.md` (lines 117â€“152)
+**Status:** ✅ CONFIRMED
+**Rationale:** Agents do not communicate peer-to-peer. Coordination occurs through shared state artifacts (e.g., `swarm.json`, `DOCKET.md`) and common directory structures.
 
-### Decision 21: Agent Behavioral Model â€” Ground Truth Only, No Fabrication
-
-**Date:** 2026-03-28
-**Topic:** Operational ethics and guard rails for agent behavior
-**Status:** Pending (âš ï¸ **REQUIRES CODE AUTHORITY REVIEW BEFORE PUBLISHING**)
-**Critical Safeguards:**
-- **Before acting:** Consult available ground truth (Vault excerpts, manifest, explicitly provided files)
-- **Avoid assumptions:** If a file is not visible, it does not exist. If a rule is not provided, it is not enforced.
-- **Operate within scope:** Do not invent systems, agents, infrastructure, or communications that cannot occur.
-- **Communication:** Speak in grounded terms. Avoid roleplay of other agents, simulated handoffs, or references to unverified systems.
-- **Failure awareness:** Detect drift into abstraction, assumptions of unavailable data, work duplication from missing state, over-engineering beyond current capability.
-
-**Rationale:** Core guard against agent hallucination, fabrication, and confabulation. Vault integrity depends on this behavioral model.
-**Reference:** See `IDAHO-VAULT â€” SYSTEM CONTEXT.md` (lines 398â€“583, esp. 437â€“461, 464â€“485, 531â€“551)
-
-**CODE AUTHORITY REVIEW (2026-03-28, The Abhorsen):**
-Principles reviewed. Findings:
-- Safeguards 1, 3, 4, 5 are consistent with existing vault governance (`feedback_operations.md`, CONSTITUTION.md principles).
-- Safeguard 2 ("If a file is not visible, it does not exist") â€” **note nuance**: applies to external chat agents (who only see what Logan pastes). Code agents with filesystem access (Claude Code, Codex, Gemini CLI) CAN read files not in their active context. Recommend scoping this safeguard to external/chat agents or rewording to "If a file has not been read or provided, do not assume its content."
-- No technical conflicts with existing governance identified.
-- **Verdict:** Sound principles. Pending Logan's approval to confirm as official decision. Minor reword on Safeguard 2 recommended before publishing.
+### Decision 21: Agent Behavioral Model (No Fabrication)
+**Narrative Reference:** The Exorcism of the Nomina
+**Date:** 2026-04-10
+**Topic:** Operational ethics and identity guardrails
+**Status:** ✅ CONFIRMED
+**Rationale:** To prevent identity calcification and "platform agent" drift, agents must decouple their technical NAME from their functional OFFICE. Logic must remain grounded in the vault's current state; no fabrication of system authority or simulated handoffs.
 
 ---
 

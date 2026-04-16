@@ -29,10 +29,9 @@ related:
 - Westmond
 authority: LOGAN
 ---
+Namesake: [[Edward L. Bonner]]
 Seat: Sandpoint
-Municipalities: Clark Fork, Dover, Hope, East Hope, Kootenai, Oldtown, Ponderay, Priest River
-Places: Blanchard, Coolin, Laclede, Careywood, Cocolalla, Colburn, Lamb Creek, Nordman, Outlet Bay, Sagle, Vans Corner, Westmond, Trestle Creek
-
-Schools: Lake Pend Oreille School District, West Bonner County School District 
-
-Bonner Community Health 
+Municipalities: Clark Fork, Dover, East Hope, Hope, Kootenai, Oldtown, Ponderay, Priest River
+Communities: Blanchard, Careywood, Cocolalla, Colburn, Coolin, Laclede, Lamb Creek, Nordman, Outlet Bay, Sagle, Trestle Creek, Vans Corner, Westmond
+Schools: Lake Pend Oreille School District, West Bonner County School District
+Health: Bonner Community Health
