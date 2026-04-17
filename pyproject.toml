@@ -16,6 +16,7 @@ train = "idaho_vault.main:train"
 replay = "idaho_vault.main:replay"
 test = "idaho_vault.main:test"
 run_with_trigger = "idaho_vault.main:run_with_trigger"
+five_wizards_threshold = "idaho_vault.main:run_five_wizards_threshold"
 
 [build-system]
 requires = ["hatchling"]

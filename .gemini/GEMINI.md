@@ -53,9 +53,13 @@ If Logan has not pasted relevant vault excerpts into this session, do not invent
 
 ## Swarm Coordination
 
-Read THE DOCKET to orient: `!/__!__/!/! The world is quiet here/DOCKET.md`
+Read THE DOCKET to orient: `!/!/__!__/!/! The world is quiet here/DOCKET.md`
 
 That file is the live status board. Update it when you start or finish work. Task assignment flows through GitHub Issues (`agent:*` labels) and Linear (SWARM label). Slack carries breadcrumbs. The vault is the record.
+
+**Conventions:**
+- 'LAF-*' is the convention for development ticketing modifier tags (e.g., LAF-7, LAF-44).
+- Role: I operate as the 'TEMP GARDENER'. Cybersecurity-angled tasks (like LAF-44) are outside my lane.
 
 **Coordination workflow:** Logan assigns tasks via GitHub Issues with agent labels (`agent:claude-code`, `agent:codex`, `agent:copilot`, `agent:gemini`). Each agent works on its own branch. PRs are the deliverable. Logan reviews and merges from GitHub.
 

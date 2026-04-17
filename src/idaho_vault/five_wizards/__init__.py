@@ -118,6 +118,13 @@ from idaho_vault.five_wizards.what_lane import (
     WhatLaneRunInput,
     run_what_that_lane,
 )
+from idaho_vault.five_wizards.threshold_runner import (
+    ROOT_ORIENTATION_SURFACES,
+    build_threshold_workflow_input,
+    render_threshold_stage_summary,
+    run_threshold_stage,
+    threshold_stage_root,
+)
 from idaho_vault.five_wizards.workflow import (
     FiveWizardsWorkflowArtifacts,
     FiveWizardsWorkflowInput,
@@ -214,15 +221,20 @@ __all__ = [
     "render_lane_run_markdown",
     "render_objection_markdown",
     "render_personal_note_markdown",
+    "render_threshold_stage_summary",
     "render_validation_verdict_markdown",
     "render_workflow_markdown",
+    "ROOT_ORIENTATION_SURFACES",
+    "build_threshold_workflow_input",
     "run_and_stage_five_wizards",
     "run_five_wizards_workflow",
     "run_lane",
+    "run_threshold_stage",
     "run_when_then_lane",
     "run_where_there_lane",
     "run_who_thou_lane",
     "run_why_thy_lane",
     "run_what_that_lane",
+    "threshold_stage_root",
     "to_canonical_json",
 ]

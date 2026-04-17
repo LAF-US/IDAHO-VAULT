@@ -80,14 +80,6 @@ Beyond the Three Screens lies the **Serena Tapestry**.
 
 ---
 
-## THE TRIPLEX HANDSHAKE — Operational Continuity
-
-The **Triplex Handshake** is the protocol for moving between **Active (Meatsack-at-Keys)** and **AFK (Swarm Operational)** states.
-
-1.  **Alignment**: The King, Djinni, and Janitor must confirm their current mission status in the DOCKET.
-2.  **Snapshot**: A git commit marks the human's last point of intervention.
-3.  **Paging**: The **Mobile Page** signal is armed in the DOCKET.
-4.  **Handoff**: The human (Logan) moves to AFK, and the Swarm continues on the Serena tapestry.
 
 ---
 

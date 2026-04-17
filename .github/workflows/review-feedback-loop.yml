@@ -28,9 +28,8 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           COMMENT_BODY: ${{ github.event.comment.body }}
         run: |
-          python3 .github/scripts/pr_lifecycle.py ensure-labels
           python3 .github/scripts/review_feedback_loop.py \
-            --mode acknowledge-apply \
+            acknowledge-apply \
             --owner "${{ github.repository_owner }}" \
             --repo "${{ github.event.repository.name }}" \
             --pr-number "${{ github.event.issue.number }}" \
@@ -52,7 +51,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           python3 .github/scripts/review_feedback_loop.py \
-            --mode sync-pr \
+            sync-pr \
             --owner "${{ github.repository_owner }}" \
             --repo "${{ github.event.repository.name }}" \
             --pr-number "${{ github.event.pull_request.number }}" \

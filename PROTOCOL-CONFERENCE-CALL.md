@@ -13,7 +13,6 @@ related:
 - PROTOCOL
 - PROTOCOLS
 - The world is quiet here
-- TRIPLEX
 - TRIUNE
 - XKCD
 - agent
@@ -28,7 +27,7 @@ related:
 
 **Status:** DRAFT — awaiting Logan's review and adoption
 **Proposed by:** GitHub Copilot (The Clerk), 2026-04-06
-**Authority:** Subordinate to CONSTITUTION. Extends PROTOCOL. Complements XKCD and TRIPLEX.
+**Authority:** Subordinate to CONSTITUTION. Extends PROTOCOL. Complements XKCD.
 
 ---
 
@@ -41,7 +40,6 @@ related:
 
 CONFERENCE CALL governs how Logan **formally convenes multiple agents** for a synchronized, agenda-driven working session. It fills the gap between:
 
-- **TRIPLEX** — defines lane boundaries for concurrent operation (passive, ongoing)
 - **XKCD** — defines how individual messages move between agents (point-to-point)
 - **CONFERENCE CALL** — defines the structure of a deliberate, multi-agent meeting (active, bounded, time-limited)
 
@@ -56,13 +54,13 @@ CONFERENCE CALL applies to:
 - Multi-agent planning sessions (story strategy, vault architecture decisions)
 - Field-capture processing sessions (after hearings, press conferences, or source calls)
 - Cross-tier vault operations requiring both CODE AUTHORITY and Advisory agents
-- Emergency synchronization when TRIPLEX lane isolation is temporarily insufficient
+- Emergency synchronization when standard lane isolation is temporarily insufficient
 - Any session Logan explicitly marks with the CONFERENCE CALL signal
 
 CONFERENCE CALL does **not** replace:
 
 - LEVELSET (agent orientation — each agent runs LEVELSET before joining a CONFERENCE)
-- TRIPLEX (lane rules remain in force throughout the CONFERENCE)
+- MISSION (current task objectives)
 - PASSBACK SYNC (terminal extraction — for dying sessions, not live coordination)
 - XKCD (message routing — CONFERENCE CALL uses XKCD classes internally)
 
@@ -80,7 +78,7 @@ A CONFERENCE may involve two agents or ten. Logan names the participants. Unlist
 Every CONFERENCE CALL produces a single durable artifact: the CONFERENCE RECORD. All decisions, outputs, and action items from the session are captured in that file. If it is not in the RECORD, it did not happen in this CONFERENCE.
 
 ### 4. Lanes Persist
-TRIPLEX lane boundaries remain in force during a CONFERENCE. Agents do not cross lanes because they are "in a meeting." Ambiguous tasks are explicitly delegated by Logan in the agenda.
+Vault lane boundaries remain in force during a CONFERENCE. Agents do not cross lanes because they are "in a meeting." Ambiguous tasks are explicitly delegated by Logan in the agenda.
 
 ### 5. Vault Over Chat
 CONFERENCE CALL outputs are vault artifacts. Chat transcripts are ephemeral. The CONFERENCE RECORD is the durable form.
@@ -113,7 +111,7 @@ A CONFERENCE CALL has five bounded phases:
 ### 5.2 Participant Agents
 - Acknowledge CALL and declare readiness (CONVENE phase)
 - Work their assigned agenda items
-- Do not act beyond their TRIPLEX lane without explicit Chair delegation
+- Do not act beyond their assigned lane without explicit Chair delegation
 - Surface FLAGs immediately (do not wait for the next agenda item)
 
 ### 5.3 Recording Agent
@@ -180,7 +178,7 @@ BEGIN ITEM 1
 Each agenda item follows this sequence:
 
 1. **CHAIR introduces item** — one-sentence description, explicit deliverable
-2. **Designated agent(s) act** — within their TRIPLEX lane
+2. **Designated agent(s) act** — within their assigned lane
 3. **FLAGs raised immediately** if blocking issue discovered
 4. **Output confirmed** — Chair acknowledges completion or redirects
 5. **NEXT ITEM** or **HOLD** (if item unresolved — logged with status in RECORD)
@@ -280,7 +278,7 @@ RECORD: [file path of committed CONFERENCE RECORD]
 DISMISSED: [list of agents returning to independent lanes]
 ```
 
-Agents do not close their own participation. They wait for DISMISSED, then return to their TRIPLEX lanes.
+Agents do not close their own participation. They wait for DISMISSED, then return to their independent lanes.
 
 ---
 
@@ -290,7 +288,7 @@ Agents do not close their own participation. They wait for DISMISSED, then retur
 |---|---|---|
 | Quorum not reached | Agent cannot CONVENE | Chair decides: delay, substitute, or proceed with partial quorum; log absent agents in RECORD |
 | Scope explosion | Agenda grows during session | Reject additions; log as proposed follow-up CONFERENCE; Chair enforces |
-| Lane conflict mid-CONFERENCE | Two agents reach for the same file | Apply TRIPLEX collision rules; Chair arbitrates; log in RECORD under FLAGs |
+| Lane conflict mid-CONFERENCE | Two agents reach for the same file | Chair arbitrates; log in RECORD under FLAGs |
 | Recording agent fails | RECORD not committed | Any participant may draft the RECORD; Chair signs it before commit |
 | CONFERENCE never formally closed | Agents uncertain of dismissal | Chair issues explicit DISMISSED signal; if Chair is AFK, CODE AUTHORITY pings via AFK PAGE |
 | Phantom CONFERENCE | Work attributed to a "meeting" with no RECORD | No CONFERENCE existed without a committed RECORD; attribute work to the agents' independent lanes instead |
@@ -302,7 +300,6 @@ Agents do not close their own participation. They wait for DISMISSED, then retur
 | Protocol | Relationship |
 |---|---|
 | **XKCD** | All inter-agent messages during a CONFERENCE use XKCD classes (SIGNAL, REQUEST, SYNC, etc.) |
-| **TRIPLEX** | Lane boundaries remain active inside a CONFERENCE; CONFERENCE CALL does not override TRIPLEX |
 | **TRIUNE HANDSHAKE** | The TRIUNE HANDSHAKE is a specific three-agent pre-AFK CONFERENCE; it follows this protocol's structure informally |
 | **PASSBACK SYNC** | A CONFERENCE may be triggered to BOOTSTRAP context from a dying agent; the TOSS/BOOTSTRAP operations run as agenda items |
 | **LEVELSET** | CONVENE phase requires each agent to confirm their LEVELSET before participating |

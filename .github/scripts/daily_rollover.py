@@ -40,6 +40,7 @@ TASK_RE = re.compile(r'^([ \t]*)- \[( |x|X)\] (.+)$')
 TODO_MARKER = "[[TO DO LIST]]"
 PLACEHOLDER_LINE = "*(no incomplete items carried forward)*"
 FRONTMATTER_RE = re.compile(r'\A---\r?\n(?P<frontmatter>.*?)\r?\n---\r?\n?', re.DOTALL)
+ROOT_GROUP = "__root__"
 
 
 # ---------------------------------------------------------------------------
@@ -80,6 +81,228 @@ def is_todo_marker(line: str) -> bool:
     return line.strip() == TODO_MARKER
 
 
+def _clean_line(line: str) -> str:
+    return line.rstrip("\r\n")
+
+
+def _is_placeholder_bullet(line: str) -> bool:
+    return _clean_line(line).strip() == "- []"
+
+
+def _task_key(line: str) -> str | None:
+    match = TASK_RE.match(_clean_line(line))
+    if not match:
+        return None
+    text = match.group(3).strip()
+    if not text:
+        return None
+    return text.lower()
+
+
+def _is_top_level_task(line: str) -> bool:
+    match = TASK_RE.match(_clean_line(line))
+    return bool(match and len(match.group(1)) == 0)
+
+
+def _is_org_bullet(line: str) -> bool:
+    cleaned = _clean_line(line).strip()
+    if not cleaned.startswith("- "):
+        return False
+    if _is_placeholder_bullet(cleaned):
+        return False
+    return TASK_RE.match(cleaned) is None
+
+
+def _new_todo_model() -> dict[str, object]:
+    return {
+        "group_order": [ROOT_GROUP],
+        "groups": {
+            ROOT_GROUP: {
+                "label": None,
+                "blocks": [],
+            }
+        },
+        "task_index": {},
+    }
+
+
+def _copy_todo_model(model: dict[str, object]) -> dict[str, object]:
+    copied = _new_todo_model()
+    copied["group_order"] = list(model["group_order"])
+    copied["groups"] = {
+        key: {
+            "label": value["label"],
+            "blocks": [block[:] for block in value["blocks"]],
+        }
+        for key, value in model["groups"].items()
+    }
+    copied["task_index"] = dict(model["task_index"])
+    return copied
+
+
+def _ensure_group(model: dict[str, object], group_key: str, group_label: str | None) -> None:
+    groups = model["groups"]
+    group_order = model["group_order"]
+    if group_key in groups:
+        return
+    groups[group_key] = {
+        "label": group_label,
+        "blocks": [],
+    }
+    group_order.append(group_key)
+
+
+def _add_block(model: dict[str, object], group_key: str, group_label: str | None, block: list[str]) -> None:
+    key = _task_key(block[0])
+    if key is None:
+        return
+    task_index = model["task_index"]
+    if key in task_index:
+        return
+    _ensure_group(model, group_key, group_label)
+    groups = model["groups"]
+    blocks = groups[group_key]["blocks"]
+    task_index[key] = (group_key, len(blocks))
+    blocks.append(block[:])
+
+
+def _normalize_task_block(block: list[str], keep_completed: bool) -> list[str] | None:
+    if not block:
+        return None
+
+    parent = TASK_RE.match(_clean_line(block[0]))
+    if not parent:
+        return None
+
+    parent_text = parent.group(3).strip()
+    if not parent_text:
+        return None
+
+    parent_complete = parent.group(2).lower() == "x"
+    if parent_complete and not keep_completed:
+        return None
+
+    normalized = [_clean_line(block[0])]
+    for line in block[1:]:
+        cleaned = _clean_line(line)
+        if not cleaned.strip():
+            continue
+        match = TASK_RE.match(cleaned)
+        if match:
+            child_text = match.group(3).strip()
+            if not child_text:
+                continue
+            child_complete = match.group(2).lower() == "x"
+            if child_complete and not keep_completed:
+                continue
+            normalized.append(cleaned)
+            continue
+        normalized.append(cleaned)
+
+    return normalized
+
+
+def parse_todo_model(lines: list[str], keep_completed: bool) -> dict[str, object]:
+    """Parse a TODO section into ordered root/category task groups."""
+
+    model = _new_todo_model()
+    current_group_key = ROOT_GROUP
+    current_group_label = None
+    i = 0
+
+    while i < len(lines):
+        line = _clean_line(lines[i])
+
+        if not line.strip() or _is_placeholder_bullet(line):
+            i += 1
+            continue
+
+        if _is_org_bullet(line):
+            current_group_label = line.strip()[2:].strip()
+            current_group_key = current_group_label.lower()
+            _ensure_group(model, current_group_key, current_group_label)
+            i += 1
+            continue
+
+        if not _is_top_level_task(line):
+            i += 1
+            continue
+
+        block = [line]
+        i += 1
+        while i < len(lines):
+            next_line = _clean_line(lines[i])
+            if _is_org_bullet(next_line) or _is_top_level_task(next_line):
+                break
+            block.append(next_line)
+            i += 1
+
+        normalized = _normalize_task_block(block, keep_completed=keep_completed)
+        if normalized is not None:
+            _add_block(model, current_group_key, current_group_label, normalized)
+
+    return model
+
+
+def todo_task_keys(lines: list[str], keep_completed: bool = True) -> set[str]:
+    """Return normalized top-level task keys from a TODO section."""
+
+    model = parse_todo_model(lines, keep_completed=keep_completed)
+    return set(model["task_index"])
+
+
+def exclude_task_keys(model: dict[str, object], excluded_keys: set[str]) -> dict[str, object]:
+    """Return a copy of the TODO model without the excluded tasks."""
+
+    filtered = _new_todo_model()
+    for group_key in model["group_order"]:
+        group = model["groups"][group_key]
+        for block in group["blocks"]:
+            key = _task_key(block[0])
+            if key in excluded_keys:
+                continue
+            _add_block(filtered, group_key, group["label"], block)
+    return filtered
+
+
+def merge_todo_models(primary: dict[str, object], secondary: dict[str, object]) -> dict[str, object]:
+    """Merge TODO models, preserving primary order and authority for duplicate tasks."""
+
+    merged = _copy_todo_model(primary)
+    for group_key in secondary["group_order"]:
+        group = secondary["groups"][group_key]
+        for block in group["blocks"]:
+            _add_block(merged, group_key, group["label"], block)
+    return merged
+
+
+def render_todo_model(model: dict[str, object]) -> list[str]:
+    """Render a TODO model back to flat markdown lines."""
+
+    rendered: list[str] = []
+    root_group = model["groups"][ROOT_GROUP]
+    for block in root_group["blocks"]:
+        rendered.extend(block)
+
+    for group_key in model["group_order"]:
+        if group_key == ROOT_GROUP:
+            continue
+        group = model["groups"][group_key]
+        if not group["blocks"]:
+            continue
+        rendered.append(f"- {group['label']}")
+        for block in group["blocks"]:
+            rendered.extend(block)
+
+    return rendered
+
+
+def count_todo_tasks(model: dict[str, object]) -> int:
+    """Return the number of top-level tasks in a TODO model."""
+
+    return len(model["task_index"])
+
+
 def carry_forward(todo_lines: list[str]) -> list[str]:
     """
     Given raw task lines from a daily note's TODO section, return only the
@@ -91,44 +314,7 @@ def carry_forward(todo_lines: list[str]) -> list[str]:
       - If a [ ] parent has ALL sub-items done: parent kept, no sub-items
         (parent not marked complete by the user yet).
     """
-    result = []
-    i = 0
-
-    while i < len(todo_lines):
-        line = todo_lines[i]
-        m = TASK_RE.match(line)
-
-        if not m:
-            i += 1
-            continue
-
-        indent_level = len(m.group(1))
-        done = m.group(2).lower() == "x"
-
-        if indent_level > 0:
-            i += 1
-            continue
-
-        block = [line]
-        j = i + 1
-        while j < len(todo_lines):
-            next_line = todo_lines[j]
-            next_m = TASK_RE.match(next_line)
-            if next_m and len(next_m.group(1)) == 0:
-                break
-            block.append(next_line)
-            j += 1
-
-        if not done:
-            result.append(block[0].rstrip())
-            for sub_line in block[1:]:
-                sub_m = TASK_RE.match(sub_line)
-                if sub_m and sub_m.group(2).lower() != "x":
-                    result.append(sub_line.rstrip())
-
-        i = j
-
-    return result
+    return render_todo_model(parse_todo_model(todo_lines, keep_completed=False))
 
 
 # ---------------------------------------------------------------------------
@@ -223,7 +409,7 @@ def _clean_todo_lines(lines: list[str]) -> list[str]:
     cleaned = []
     for line in lines:
         stripped = line.strip("\r\n")
-        if not stripped or stripped == PLACEHOLDER_LINE:
+        if not stripped or stripped == PLACEHOLDER_LINE or _is_placeholder_bullet(stripped):
             continue
         cleaned.append(stripped)
     return cleaned
@@ -261,80 +447,12 @@ def merge_todo_lines(source_items: list[str], target_items: list[str], sync_comp
     Tasks merge their children by parent context.
     
     Organizational bullets (e.g. - WORK) are treated as mergeable parents.
-    
+
     If sync_completions is True: marks tasks [x] in result if they are [x] in source.
     """
-    merged_blocks = []
-    block_index_by_parent = {}
-    
-    # Map of clean task/bullet text -> status in source
-    source_status = {}
-    if sync_completions:
-        for block in _split_todo_blocks(source_items):
-            for line in block:
-                m = TASK_RE.match(line)
-                if m:
-                    # Map text -> is_complete
-                    text = m.group(3).strip().lower()
-                    source_status[text] = (m.group(2).lower() == "x")
-
-    for items in (source_items, target_items):
-        for block in _split_todo_blocks(items):
-            parent = block[0]
-            # Normalize parent key: if it's a task, use group(3); if it's a bullet, use the text after '-'
-            m = TASK_RE.match(parent)
-            if m:
-                parent_key = f"task:{m.group(3).strip().lower()}"
-                # If sync_completions, ensure parent shows correct status if it's in source
-                if sync_completions and m.group(3).strip().lower() in source_status:
-                    if source_status[m.group(3).strip().lower()]:
-                        parent = parent.replace("[ ]", "[x]")
-            elif parent.strip().startswith("-"):
-                parent_key = f"bullet:{parent.strip().lstrip('-').strip().lower()}"
-            else:
-                # Standalone text, just append if it hasn't been added exactly elsewhere
-                if parent not in [b[0] for b in merged_blocks]:
-                    merged_blocks.append(block.copy())
-                continue
-
-            if parent_key not in block_index_by_parent:
-                block_index_by_parent[parent_key] = len(merged_blocks)
-                merged_blocks.append(block.copy())
-            else:
-                # Merge children into existing block
-                target_block = merged_blocks[block_index_by_parent[parent_key]]
-                seen_children = set()
-                # Clean up existing children state
-                for i in range(len(target_block)):
-                    line = target_block[i]
-                    tm = TASK_RE.match(line)
-                    if tm:
-                        text = tm.group(3).strip().lower()
-                        seen_children.add(text)
-                        # Sync status of existing child if needed
-                        if sync_completions and text in source_status:
-                            if source_status[text]:
-                                target_block[i] = line.replace("[ ]", "[x]")
-
-                for child in block[1:]:
-                    cm = TASK_RE.match(child)
-                    if cm:
-                        text = cm.group(3).strip().lower()
-                        if text not in seen_children:
-                            # Apply source status to new child if syncing
-                            if sync_completions and text in source_status:
-                                if source_status[text]:
-                                    child = child.replace("[ ]", "[x]")
-                            target_block.append(child)
-                            seen_children.add(text)
-                    else:
-                        if child not in target_block:
-                            target_block.append(child)
-
-    merged = []
-    for block in merged_blocks:
-        merged.extend(block)
-    return merged
+    primary = parse_todo_model(source_items, keep_completed=True)
+    secondary = parse_todo_model(target_items, keep_completed=True)
+    return render_todo_model(merge_todo_models(primary, secondary))
 
 
 def extract_active_section(content: str) -> list[str]:
@@ -359,6 +477,39 @@ def extract_active_section(content: str) -> list[str]:
             active_lines.append(line)
 
     return active_lines
+
+
+def _find_todo_section_bounds(lines: list[str]) -> tuple[int | None, int | None]:
+    """Return the marker line index and the exclusive end index for the TODO section."""
+
+    marker_index = None
+    for index, line in enumerate(lines):
+        if is_todo_marker(line):
+            marker_index = index
+            break
+
+    if marker_index is None:
+        return None, None
+
+    end_index = len(lines)
+    for index in range(marker_index + 1, len(lines)):
+        line = lines[index]
+        if line.strip() == "---" or line.startswith("## ") or line.startswith("Notes:"):
+            end_index = index
+            break
+
+    return marker_index, end_index
+
+
+def build_backlog_lines(source_todo_lines: list[str], active_todo_lines: list[str]) -> list[str]:
+    """Build the next active backlog from yesterday's note and the persistent active list."""
+
+    source_open = parse_todo_model(source_todo_lines, keep_completed=False)
+    source_seen_keys = todo_task_keys(source_todo_lines, keep_completed=True)
+    persistent_open = parse_todo_model(active_todo_lines, keep_completed=False)
+    pending_persistent = exclude_task_keys(persistent_open, source_seen_keys)
+    backlog = merge_todo_models(source_open, pending_persistent)
+    return render_todo_model(backlog)
 
 
 def patch_nav_links(content: str, target_date: date) -> str:
@@ -486,40 +637,20 @@ def update_today_note(
         content = ensure_daily_frontmatter(content, target_date)
         content = patch_nav_links(content, target_date)
         lines = content.splitlines()
-        if any(is_todo_marker(line) for line in lines):
-            new_lines = []
-            in_todo = False
-            inserted = False
-            existing_todo_lines = []
+        marker_index, end_index = _find_todo_section_bounds(lines)
+        if marker_index is not None and end_index is not None:
+            existing_todo_lines = lines[marker_index + 1:end_index]
+            existing_model = parse_todo_model(existing_todo_lines, keep_completed=True)
+            carried_model = parse_todo_model(carried, keep_completed=False)
+            merged = render_todo_model(merge_todo_models(existing_model, carried_model))
 
-            for line in lines:
-                if is_todo_marker(line) and not inserted:
-                    in_todo = True
-                    inserted = True
-                    new_lines.append(line)
-                    continue
-
-                if in_todo:
-                    m = TASK_RE.match(line)
-                    if m or line.strip() == "" or line.strip() == PLACEHOLDER_LINE:
-                        existing_todo_lines.append(line)
-                        continue
-
-                    merged = merge_todo_lines(carried, existing_todo_lines)
-                    new_lines.append("")
-                    new_lines.extend(merged if merged else [PLACEHOLDER_LINE])
-                    in_todo = False
-                    new_lines.append(line)
-                    continue
-
-                new_lines.append(line)
-
-            if in_todo:
-                merged = merge_todo_lines(carried, existing_todo_lines)
+            new_lines = lines[:marker_index + 1]
+            new_lines.append("")
+            new_lines.extend(merged if merged else [PLACEHOLDER_LINE])
+            if end_index < len(lines) and lines[end_index].strip():
                 new_lines.append("")
-                new_lines.extend(merged if merged else [PLACEHOLDER_LINE])
-
-            new_content = "\n".join(new_lines) + "\n"
+            new_lines.extend(lines[end_index:])
+            new_content = "\n".join(new_lines).rstrip() + "\n"
         else:
             new_content = content.rstrip() + f"\n\n{TODO_MARKER}\n\n{block}\n"
     else:
@@ -534,10 +665,9 @@ def update_today_note(
         log(f"Updated {today_file.name}")
 
 
-def update_todo_list_md(source_todo_lines: list[str], carried: list[str], dry_run: bool = False) -> None:
+def update_todo_list_md(carried: list[str], dry_run: bool = False) -> None:
     """
-    Sync source items (completed ones) back to TO DO LIST.md and then add the new
-    completed items carried forward.
+    Rewrite TO DO LIST.md's active section from the normalized carried backlog.
     """
     if TODO_LIST_FILE.exists():
         content = TODO_LIST_FILE.read_text(encoding="utf-8")
@@ -552,14 +682,7 @@ def update_todo_list_md(source_todo_lines: list[str], carried: list[str], dry_ru
             "*Persistent list - incomplete items carry forward daily.*\n"
         )
 
-    existing_active = extract_active_section(content)
-    
-    # First, sync completions from yesterday's full task list back to the active section
-    # Then merge in the incomplete items carried forward
-    merged_active = merge_todo_lines(source_todo_lines, existing_active, sync_completions=True)
-    merged_active = merge_todo_lines(carried, merged_active)
-    
-    active_block = todo_block_text(merged_active)
+    active_block = todo_block_text(carried)
 
     if "## Active" in content:
         lines = content.splitlines()
@@ -570,7 +693,7 @@ def update_todo_list_md(source_todo_lines: list[str], carried: list[str], dry_ru
                 in_active = True
                 new_lines.append(line)
                 new_lines.append("")
-                new_lines.extend(merged_active if merged_active else [PLACEHOLDER_LINE])
+                new_lines.extend(carried if carried else [PLACEHOLDER_LINE])
                 new_lines.append("")
                 continue
             if in_active:
@@ -645,19 +768,18 @@ def main() -> None:
 
     source_content = source_file.read_text(encoding="utf-8")
     todo_lines = extract_todo_section(source_content)
-    carried = carry_forward(todo_lines)
     persistent_active = load_active_todo_list_lines()
-    merged_backlog = merge_todo_lines(carried, persistent_active)
+    merged_backlog = build_backlog_lines(todo_lines, persistent_active)
 
     if merged_backlog:
-        log(f"Carrying forward {len([l for l in merged_backlog if TASK_RE.match(l)])} incomplete item(s):")
+        log(f"Carrying forward {len([l for l in merged_backlog if _is_top_level_task(l)])} incomplete item(s):")
         for line in merged_backlog:
             log(f"  {line}")
     else:
         log("No incomplete items found - nothing to carry forward.")
 
     update_today_note(target_date, merged_backlog, dry_run=args.dry_run)
-    update_todo_list_md(todo_lines, merged_backlog, dry_run=args.dry_run)
+    update_todo_list_md(merged_backlog, dry_run=args.dry_run)
 
 
 if __name__ == "__main__":

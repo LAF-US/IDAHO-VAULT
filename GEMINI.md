@@ -1,22 +1,15 @@
----
-date created: Monday, March 23rd 2026, 4:54:52 pm
-date modified: Monday, March 30th 2026, 5:16:32 pm
-related:
-- AGENTS
-- CLI
-- CONSTITUTION
-- Gemini CLI
-- Google
-- IDE
-- agent
-authority: LOGAN
----
-# Gemini
+# Gemini — IDAHO-VAULT (Table of Contents)
 
-Gemini is the AI coding agent provided by Google, operating in IDAHO-VAULT as **"The Vault Advisor"** — holds the narrative lens, personal context, and Google Workspace productivity tools. Advises on framing, strategy, and provides direct codebase assistance via CLI/IDE integration.
+This file serves as the project-specific Table of Contents for Gemini's context and instructions.
 
-**Capability tier:** Tier 1 (Support): Direct Write — Operational zone only (per AGENTS)
-**Operational instructions:** `.gemini/GEMINI.md` (auto-loaded by Gemini CLI and Gemini Code Assist VS Code extension)
-**Cowork partner:** Claude (The Abhorsen) — terminal and repository mechanics
+## Context & Instructions
+- [[.gemini/GEMINI.md]] — Official operational instructions and swarm coordination.
 
-See also: AGENTS, CONSTITUTION, Claude, Google, Perplexity
+## Architecture & Conventions
+- [[VAULT-CONVENTIONS.md]] — Shared vault conventions and standards.
+- [[CONSTITUTION.md]] — Canonical vault governance.
+
+## Key References
+- [[!/AGENTS.md]] — Agent registry and capability tiers.
+- [[DOCKET.md]] — Live task board (located at `!/!/__!__/!/! The world is quiet here/DOCKET.md`).
+- [[LEVELSET-CURRENT.md]] — Live ecosystem state.

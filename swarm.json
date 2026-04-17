@@ -212,7 +212,7 @@
       "autoload_file": ".serena/SERENA.md",
       "autoload": false,
       "capability_tier": "Support",
-      "role": "Semantic code intelligence \u2014 symbol navigation, codebase analysis, refactoring assistance",
+      "role": "Semantic code intelligence — symbol navigation, codebase analysis, refactoring assistance",
       "label": null,
       "protocol": "MCP",
       "launched": "2026-04-04",

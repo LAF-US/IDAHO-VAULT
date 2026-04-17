@@ -6,60 +6,28 @@ on:
 
 permissions:
   pull-requests: write
-  contents: write
+  contents: read
 
 jobs:
-  acknowledge-changes-requested:
-    if: >
-      github.event.review.state == 'changes_requested' &&
-      github.event.pull_request.user.login != github.event.review.user.login
+  sync-review-state:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Checkout trusted workflow surfaces
         uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
 
-      - name: Acknowledge review and pause auto-merge
+      - name: Recompute derived review state
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          REVIEWER: ${{ github.event.review.user.login }}
-          PR_NUMBER: ${{ github.event.pull_request.number }}
-          REVIEW_ID: ${{ github.event.review.id }}
-          REVIEW_STATE: ${{ github.event.review.state }}
         run: |
-          gh label create "review-required" --color "D93F0B" --description "High-risk, requires Logan's review" --force 2>/dev/null || true
-          gh label create "review-threads-open" --color "FBCA04" --description "Unresolved review threads still need attention before merge." --force 2>/dev/null || true
-
-          REVIEW_URL="${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/pull/${PR_NUMBER}#pullrequestreview-${REVIEW_ID}"
-
-          # Pause auto-merge until feedback is addressed
-          gh pr merge "$PR_NUMBER" --disable-auto 2>/dev/null || true
-          gh pr edit "$PR_NUMBER" --remove-label "auto-merge" 2>/dev/null || true
-          gh pr edit "$PR_NUMBER" --remove-label "agent-review-pending" 2>/dev/null || true
-          gh pr edit "$PR_NUMBER" --add-label "review-required" 2>/dev/null || true
-          gh pr edit "$PR_NUMBER" --add-label "review-threads-open" 2>/dev/null || true
-
-          gh pr comment "$PR_NUMBER" --body "Acknowledged review by @$REVIEWER (${REVIEW_STATE}). Auto-merge paused until recommended changes are addressed. [Review link]($REVIEW_URL)"
-
-  acknowledge-commentary:
-    if: >
-      github.event.review.state == 'commented' &&
-      github.event.pull_request.user.login != github.event.review.user.login
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Acknowledge advisory review without pausing auto-merge
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          REVIEWER: ${{ github.event.review.user.login }}
-          PR_NUMBER: ${{ github.event.pull_request.number }}
-          REVIEW_ID: ${{ github.event.review.id }}
-          REVIEW_STATE: ${{ github.event.review.state }}
-        run: |
-          gh label create "review-threads-open" --color "FBCA04" --description "Unresolved review threads still need attention before merge." --force 2>/dev/null || true
-
-          REVIEW_URL="${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/pull/${PR_NUMBER}#pullrequestreview-${REVIEW_ID}"
-
-          gh pr edit "$PR_NUMBER" --add-label "review-threads-open" 2>/dev/null || true
-          gh pr comment "$PR_NUMBER" --body "Acknowledged advisory review by @$REVIEWER (${REVIEW_STATE}). Auto-merge remains eligible unless a blocking review or Logan-directed change says otherwise. [Review link]($REVIEW_URL)"
+          python3 .github/scripts/review_feedback_loop.py \
+            review-submitted \
+            --owner "${{ github.repository_owner }}" \
+            --repo "${{ github.event.repository.name }}" \
+            --pr-number "${{ github.event.pull_request.number }}" \
+            --pr-author "${{ github.event.pull_request.user.login }}" \
+            --pr-url "${{ github.event.pull_request.html_url }}" \
+            --review-author "${{ github.event.review.user.login }}" \
+            --review-id "${{ github.event.review.id }}" \
+            --review-state "${{ github.event.review.state }}"

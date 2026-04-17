@@ -30,8 +30,6 @@ related: []
 
 - PROTOCOL-CONFERENCE-CALL
 
-- TRIPLEX
-
 - agent
 
 - plugins
@@ -92,7 +90,7 @@ This document consolidates all agented plugin documentation, surfaces the discre
 
 | `VAULT-CONVENTIONS.md` ┬ºObsidian Sync / Git Boundary | Collaborative | Current | Device split policy; desktop plugin lists do not sync to mobile |
 
-| `!/AGENTS.md` ΓÇö TRIPLEX Protocol | Claude (Abhorsen) | 2026-04-05 | Lane ownership: Claude owns `.obsidian/`; Codex handles cleanup when assigned |
+| `!/AGENTS.md` ΓÇö Agent Registry | Claude (Abhorsen) | 2026-04-05 | Lane ownership: Claude owns `.obsidian/`; Codex handles cleanup when assigned |
 
 | `PLUGIN-AUTH-INVENTORY-2026-03-28.md` | Claude (Abhorsen) | 2026-03-28 | External MCP connector audit (GitHub, Linear, Slack, GCal, GDrive, HuggingFace, Cloudflare) ΓÇö Linear-first recommended |
 
@@ -300,7 +298,7 @@ The Clerk's `PROTOCOL-CONFERENCE-CALL` document is visible in Obsidian's unlinke
 
 
 
-**Logan's decision needed:** Adopt the Clerk's conference call record format (commit and ratify), defer, or discard. If adopted, Claude can commit it to `!/` on this branch per TRIPLEX (Claude owns git commits; content in `!/` is Gemini's lane, but structural format docs are Claude-lane).
+**Logan's decision needed:** Adopt the Clerk's conference call record format (commit and ratify), defer, or discard. If adopted, Claude can commit it to `!/` on this branch per lane boundaries (Claude owns git commits; content in `!/` is Gemini's lane, but structural format docs are Claude-lane).
 
 
 

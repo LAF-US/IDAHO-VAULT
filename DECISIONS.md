@@ -257,6 +257,23 @@ related:
 
 ---
 
+### Decision 22: Canonical Grimoire Layer
+**Date:** 2026-04-05
+**Topic:** Narrative and symbolic record management
+**Status:** ✅ CONFIRMED
+**Rationale:** Formalized `!/GRIMOIRE/` as the canonical layer for the vault's narrative residue, symbolism, and historical aliases. This prevents symbolic material from colonizing the constitutional or operational layers while preserving the vault's narrative memory.
+
+---
+
+### Decision 23: Vault Stabilization & Narrative Alignment
+**Date:** 2026-04-17
+**Topic:** Infrastructure repair and persona correction
+**Status:** ✅ CONFIRMED
+**Rationale:** Reverted unauthorized agent-level persona upgrades (Librarian/Archivist/TRIPLEX) to restore the canonical "Concierge" support model and constitutional order. Pruned ephemeral records from LEVELSET-CURRENT to maintain a rolling present-state posture. Reaffirmed root-level dotfolder integrity. This decision restores the vault to a stable, human-led governance state after a period of agentic drift.
+
+---
+
+
 ## PENDING DECISIONS (Logan's Review Required)
 
 | Topic                                             | Status   | Notes                                  |
