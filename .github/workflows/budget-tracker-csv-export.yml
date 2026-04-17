@@ -30,12 +30,12 @@ jobs:
 
     steps:
       - name: Checkout vault
-        uses: actions/checkout@v4
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
         with:
           fetch-depth: 1
 
       - name: Set up Python
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6
         with:
           python-version: "3.11"
           cache: pip
@@ -77,7 +77,7 @@ jobs:
 
       - name: Upload CSV as artifact
         if: steps.export.outputs.export_ok == 'true'
-        uses: actions/upload-artifact@v7
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
         with:
           name: minidata-csv-${{ steps.export.outputs.csv_file }}
           path: ${{ steps.export.outputs.csv_file }}
@@ -85,7 +85,7 @@ jobs:
 
       - name: Email CSV file
         if: steps.export.outputs.export_ok == 'true'
-        uses: dawidd6/action-send-mail@v16
+        uses: dawidd6/action-send-mail@d38f3f7cd391cdebfe0d38efc3998b935e951c4f # v16
         with:
           server_address: smtp.gmail.com
           server_port: 587
