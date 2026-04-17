@@ -132,10 +132,12 @@ def run_with_trigger() -> None:
 
 def run_five_wizards_threshold() -> None:
     """Run the fixed 5Wizards threshold slice and stage it to !/CREWAI/."""
+    from idaho_vault.operator_context import load_operator_context
     from idaho_vault.five_wizards.threshold_runner import (
         render_threshold_stage_summary,
         run_threshold_stage,
     )
 
-    result = run_threshold_stage()
-    print(render_threshold_stage_summary(result))
+    context = load_operator_context()
+    result = run_threshold_stage(context=context)
+    print(render_threshold_stage_summary(result, context=context))
