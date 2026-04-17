@@ -514,14 +514,25 @@ def build_backlog_lines(source_todo_lines: list[str], active_todo_lines: list[st
 
 def patch_nav_links(content: str, target_date: date) -> str:
     """
-    Fill in blank yesterday:/tomorrow: frontmatter fields.
-    Handles notes created from the Obsidian template, which leaves these empty.
-    Only patches lines that are genuinely blank (e.g. 'yesterday:' or 'yesterday: ').
+    Fill in blank or unresolved yesterday:/tomorrow: frontmatter fields.
+    Handles notes created from the Obsidian core Templates plugin, which may leave these
+    blank ('yesterday: ') or holding an unresolved token ('yesterday: {{date-1d:YYYY-MM-DD}}').
+    The Periodic Notes plugin expands relative tokens; core Templates does not.
     """
     yesterday = str(target_date - timedelta(days=1))
     tomorrow = str(target_date + timedelta(days=1))
-    content = re.sub(r'^yesterday:\s*$', f'yesterday: {yesterday}', content, flags=re.MULTILINE)
-    content = re.sub(r'^tomorrow:\s*$', f'tomorrow: {tomorrow}', content, flags=re.MULTILINE)
+    content = re.sub(
+        r'^yesterday:\s*(\{\{[^}]*\}\})?\s*$',
+        f'yesterday: {yesterday}',
+        content,
+        flags=re.MULTILINE,
+    )
+    content = re.sub(
+        r'^tomorrow:\s*(\{\{[^}]*\}\})?\s*$',
+        f'tomorrow: {tomorrow}',
+        content,
+        flags=re.MULTILINE,
+    )
     return content
 
 
