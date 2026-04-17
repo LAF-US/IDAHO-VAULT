@@ -96,6 +96,11 @@ def _resolve_thread(thread_id: str) -> None:
     _graphql(mutation, threadId=thread_id)
 
 
+def _is_forbidden_integration_error(exc: RuntimeError) -> bool:
+    text = str(exc)
+    return "FORBIDDEN" in text or "Resource not accessible by integration" in text
+
+
 def _ensure_label(name: str, color: str, description: str) -> None:
     _run(
         [
@@ -194,6 +199,7 @@ def sync_pr(args: argparse.Namespace) -> int:
     resolved_count = 0
     remaining_unresolved = 0
     current_unresolved = 0
+    can_auto_resolve = True
 
     for thread in threads:
         if thread.get("isResolved"):
@@ -201,9 +207,20 @@ def sync_pr(args: argparse.Namespace) -> int:
 
         authors = _thread_authors(thread)
         if thread.get("isOutdated") and authors and authors.issubset(auto_resolve_reviewers):
-            _resolve_thread(thread["id"])
-            resolved_count += 1
-            continue
+            if can_auto_resolve:
+                try:
+                    _resolve_thread(thread["id"])
+                    resolved_count += 1
+                    continue
+                except RuntimeError as exc:
+                    if _is_forbidden_integration_error(exc):
+                        can_auto_resolve = False
+                        print(
+                            "Skipping auto-resolve of review threads: token lacks permission.",
+                            file=sys.stderr,
+                        )
+                    else:
+                        raise
 
         remaining_unresolved += 1
         if not thread.get("isOutdated"):
