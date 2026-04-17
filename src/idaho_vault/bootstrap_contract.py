@@ -243,9 +243,8 @@ def _check_python_version(root: Path) -> ContractCheck:
     )
 
 
-def build_contract_report() -> ContractReport:
-    """Inspect the repository and return a bootstrap contract report."""
-    root = _project_root()
+def build_contract_report_for_root(root: Path) -> ContractReport:
+    """Inspect the provided repository root and return a bootstrap contract report."""
     checks = (
         _check_pyproject(root),
         _check_lockfile(root),
@@ -262,3 +261,8 @@ def build_contract_report() -> ContractReport:
         ok=all(check.ok for check in checks),
         checks=checks,
     )
+
+
+def build_contract_report() -> ContractReport:
+    """Inspect the repository and return a bootstrap contract report."""
+    return build_contract_report_for_root(_project_root())
