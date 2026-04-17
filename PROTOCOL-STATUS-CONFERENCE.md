@@ -77,7 +77,7 @@ What is missing is the **status conference gate** — a structured pre-flight re
 
 A STATUS CONFERENCE must be held before:
 
-1. **AGENT TRIAL** — activating a new agent persona for the first time; giving an advisory agent direct-write access for the first time; onboarding any new agent into the TRIPLEX lane map
+1. **AGENT TRIAL** — activating a new agent persona for the first time; giving an advisory agent direct-write access for the first time; onboarding any new agent into the vault.
 2. **BETA TEST** — running a new automation script (workflow, Python tool, crew) in a live environment for the first time; deploying a new CI pipeline job; activating a new CrewAI crew in production mode
 
 > **Exception:** Read-only discovery, dry-run executions with `--dry-run` flag, and stub/placeholder activations do not require a formal STATUS CONFERENCE. They are pre-conference reconnaissance.
@@ -93,7 +93,7 @@ A STATUS CONFERENCE is complete when all items below are answered in writing bef
 - [ ] What is the name of the agent, crew, or system being trialed?
 - [ ] What is the declared scope of this trial? (What will it do? What will it NOT do?)
 - [ ] What Linear issue or GitHub issue tracks this trial? (Required. No trial without a ticket.)
-- [ ] Which vault lane does this agent/system own? (Per the TRIPLEX lane map in `!/AGENTS.md`)
+- [ ] Which vault lane does this agent/system own? (Per the agent registry in `!/AGENTS.md`)
 
 ### B. Readiness
 

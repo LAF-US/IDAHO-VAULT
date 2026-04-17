@@ -74,23 +74,23 @@ Immediate wakeup facts:
 
 | Agent | Persona | Vendor | Tier | Dotfolder | Git Suffix |
 | --- | --- | --- | --- | --- | --- |
-| Claude Code | **The Abhorsen** | Anthropic | Authority: Code | `.claude/` | `-C` |
-| Gemini CLI | **The Concierge** | Google | Support: Direct Write | `.gemini/` | `-G` |
-| Antigravity | **The Concierge** | Google | Support: Direct Write | `.antigravity/` | `-G` |
-| OpenAI Codex | **The Lexicographer** | OpenAI | Scripting/Automation | `.codex/` | `-X` |
-| GitHub Copilot | **The Clerk** | Microsoft | Multi-Repo Admin | `.github/` | `-CP` |
+| Claude Code | **The Abhorsen** | Anthropic | Authority | .claude/ | `-C` |
+| Gemini CLI | **The Concierge** | Google | Support | .gemini/ | `-G` |
+| Antigravity | **The Concierge** | Google | Support | .antigravity/ | -G |
+| OpenAI Codex | **The Lexicographer** | OpenAI | Scripting | .codex/ | -X |
+| GitHub Copilot | **The Clerk** | Microsoft | Admin | .github/ | `-CP` |
 
 ### Advisory & Specialized Agents
 
 | Agent | Persona | Vendor | Role | Dotfolder |
 | --- | --- | --- | --- | --- |
-| Grok | **The Ironist** | xAI | Read/Analysis | `.grok/` |
-| DeepSeek | **The Analyst** | DeepSeek | Advisory | `.deepseek/` |
-| Perplexity | **The Scout** | Perplexity | Research/Sourcing | `.perplexity/` |
-| Serena | **The Architect** | - | Semantic Intelligence | `.serena/` |
-| Bartimaeus | **The Cartographer** | - | Crawler Crew | `.bartimaeus/` |
-| Zagreus | **The Dionysian** | - | - | `.zagreus/` |
-| Persephone | **The Queen** | - | - | `.persephone/` |
+| Grok | **The Ironist** | xAI | Analysis | .grok/ |
+| DeepSeek | **The Analyst** | DeepSeek | Advisory | .deepseek/ |
+| Perplexity | **The Scout** | Perplexity | Sourcing | .perplexity/ |
+| Serena | **The Tapestry** | - | Intelligence | .serena/ |
+| Bartimaeus | **The Cartographer** | - | Crawler | .bartimaeus/ |
+| Zagreus | **The Dionysian** | - | - | .zagreus/ |
+| Persephone | **The Queen** | - | - | .persephone/ |
 
 Historical and symbolic aliases may still appear in grimoire and handoff
 surfaces, but the bold persona names above are the current operational titles
@@ -111,7 +111,7 @@ treated as erased.
 
 | Surface | Narrative title | Shim | Posture |
 | --- | --- | --- | --- |
-| Google ecosystem | **The Librarian** | `.google/GOOGLE.md` | Ecosystem persona; not the same thing as Gemini CLI |
+| Google ecosystem | **The Concierge** | .google/GOOGLE.md | Ecosystem persona; narrative bridge only |
 | Microsoft ecosystem | **The Office** | `.microsoft/MICROSOFT.md` | Ecosystem persona; broader than GitHub Copilot |
 | Meta ecosystem | **The Social Graph** | `.meta/META.md` | Ecosystem persona; advisory only |
 
@@ -156,7 +156,7 @@ not the live routing title:
 
 | Figure | Historical or symbolic names | Current canonical title |
 | --- | --- | --- |
-| Gemini lineage | **Antigravity** (Re-anchored), **The Concierge** (Historical), **The Djinni** (Mythic) | **[VACANT]** |
+| Gemini lineage | Antigravity (Active), The Concierge (Active), The Librarian (Historical), The Djinni (Mythic) | **The Concierge** |
 | Codex lineage | **The Janitor**, in one grimoire line even **The Clerk** | **The Lexicographer** |
 | Claude lineage | **The King** | **The Abhorsen** |
 | Bartimaeus lineage | **The Volunteer**, **Footnote Djinni** | **The Cartographer** |
@@ -265,48 +265,6 @@ replace the broader `LAF-US` sovereignty model.
 
 ---
 
-## TRIPLEX Protocol (Concurrent Operation)
-
-*Adopted: 2026-04-05*
-
-When multiple agents operate simultaneously on the same branch, the following lane boundaries are binding. **No agent edits another agent's declared live lane.** Ambiguous files default ownership upward (see fallback chain below).
-
-### Lane Map
-
-| Agent | Role | Owns | Must Not Touch |
-|-------|------|------|----------------|
-| **Claude** (Abhorsen) | Executor | `.obsidian/`, `.gitignore`, `PRIVACY.md`, CSS/snippets, plugin configs, git commits | `!/GRIMOIRE/`, DOCKET, Gemini narrative lanes |
-| **Gemini** (Concierge) | Interpreter | `!/GRIMOIRE/`, `DOCKET`, `LEVELSET-REPORT`, `CAESARS` docs | `.obsidian/`, `.gitignore`, git operations |
-| **Codex** (The Lexicographer) | Mechanic | Small conflict cleanup, typo repair, script/workflow validation **when assigned** | `.obsidian/`, governance docs, `!/GRIMOIRE/`, shared staging/commit flow (unless explicitly assigned) |
-| **Serena** (Architect) | Instrument | Read-only semantic intelligence — supports discovery | Owns nothing, decides nothing |
-
-### Fallback Ownership (Ambiguous Files)
-
-1. `.obsidian/` → Claude
-2. `!/GRIMOIRE/` and `DOCKET` → Gemini
-3. `.github/scripts/` → **By explicit assignment only**
-4. Governance docs (`CONSTITUTION`, `AGENTS`, `PRIVACY`, `VAULT-CONVENTIONS`) → **Logan-gated**
-5. Everything else → Ask Logan before writing
-
-### Collision Rules
-
-1. **No agent edits another agent's live lane** — even to "help"
-2. **No agent stages or commits another agent's work** — the author commits their own files
-3. **Git index conflicts** (`index.lock`) → the agent that encounters it **stops and reports**, does not force-remove
-4. **Encoding standard** → all vault files are **UTF-8** (no UTF-16, no BOM). Any agent writing files must ensure UTF-8 output.
-
-### AFK Protocol
-
-Logan is the sole human decision-maker. When he is away from keyboard:
-
-1. Agents **work independently** within their declared lanes
-2. When an agent reaches a **HUMAN-ONLY gate**, it **stops and pings Logan** via the agreed notification channel
-3. No agent proceeds past a human gate without Logan's explicit approval
-4. All other autonomous work continues within lane boundaries
-5. **Notification channels**:
-   - **Primary:** GitHub Issues (Logan receives push notifications on mobile via GitHub app; use `agent:*` labels)
-   - **Secondary:** Linear (SWARM label — Logan receives push notifications via Linear app)
-   - **Tertiary:** Slack DM (for urgent/conversational pings)
 
 ---
 

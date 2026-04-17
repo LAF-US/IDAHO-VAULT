@@ -128,3 +128,14 @@ def run_with_trigger() -> None:
         raise SystemExit(f"Invalid trigger payload: {exc}") from exc
 
     run()
+
+
+def run_five_wizards_threshold() -> None:
+    """Run the fixed 5Wizards threshold slice and stage it to !/CREWAI/."""
+    from idaho_vault.five_wizards.threshold_runner import (
+        render_threshold_stage_summary,
+        run_threshold_stage,
+    )
+
+    result = run_threshold_stage()
+    print(render_threshold_stage_summary(result))

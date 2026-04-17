@@ -88,9 +88,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          gh label create "auto-merge" --color "0E8A16" --description "Low-risk, eligible for auto-merge" --force 2>/dev/null || true
-          gh label create "review-required" --color "D93F0B" --description "High-risk, requires Logan's review" --force 2>/dev/null || true
-          gh label create "agent-review-pending" --color "BFD4F2" --description "Waiting for agent review grace period before auto-merge" --force 2>/dev/null || true
+          python3 .github/scripts/review_feedback_loop.py ensure-labels
           python3 .github/scripts/pr_lifecycle.py ensure-labels
 
       - name: Create PR
@@ -111,8 +109,10 @@ jobs:
 
           if [ "$TIER" = "low" ]; then
             LABEL="agent-review-pending"
+            LABEL_MARKER="$LABEL"
           else
-            LABEL="review-required"
+            LABEL=""
+            LABEL_MARKER="none"
           fi
 
           # Build PR body
@@ -121,17 +121,22 @@ jobs:
             '**Agent:**' "\`$AGENT\`" \
             '**Lifecycle:**' "\`staged\`" \
             '**Risk tier:**' "\`$TIER\`" \
-            '**Label:**' "\`$LABEL\`" \
+            '**Label:**' "\`$LABEL_MARKER\`" \
             '### Diff stat' \
             '```' "$DIFFSTAT" '```' \
             '---' '*Created by auto-pr workflow*'
 
-          PR_URL=$(gh pr create \
-            --title "$TITLE" \
-            --body "$BODY" \
-            --base main \
-            --head "$BRANCH" \
-            --label "$LABEL" 2>&1 || true)
+          CREATE_ARGS=(
+            --title "$TITLE"
+            --body "$BODY"
+            --base main
+            --head "$BRANCH"
+          )
+          if [ -n "$LABEL" ]; then
+            CREATE_ARGS+=(--label "$LABEL")
+          fi
+
+          PR_URL=$(gh pr create "${CREATE_ARGS[@]}" 2>&1 || true)
 
           echo "Created PR: $PR_URL"
 
