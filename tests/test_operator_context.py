@@ -1,8 +1,8 @@
 from __future__ import annotations
 
 from datetime import date
+import shutil
 import sys
-import tempfile
 import unittest
 from pathlib import Path
 
@@ -21,8 +21,10 @@ from idaho_vault.operator_context import (
 
 class OperatorContextTest(unittest.TestCase):
     def test_load_operator_context_resolves_daily_note_and_backlog(self) -> None:
-        with tempfile.TemporaryDirectory() as temp_dir:
-            root = Path(temp_dir)
+        root = PROJECT_ROOT / "tests" / "_tmp_operator_context_case"
+        shutil.rmtree(root, ignore_errors=True)
+        root.mkdir(parents=True, exist_ok=True)
+        try:
             for relpath in (*BOOT_CHAIN_SURFACES, *OPERATOR_FRONT_DOOR_SURFACES):
                 path = root / relpath
                 path.parent.mkdir(parents=True, exist_ok=True)
@@ -61,6 +63,8 @@ class OperatorContextTest(unittest.TestCase):
             )
 
             context = load_operator_context(root=root, target_date=date(2026, 4, 17))
+        finally:
+            shutil.rmtree(root, ignore_errors=True)
 
         self.assertTrue(context.boot_chain_ok)
         self.assertTrue(context.front_door_ok)
@@ -75,8 +79,10 @@ class OperatorContextTest(unittest.TestCase):
         )
 
     def test_evaluate_evidence_refs_reports_missing_and_untracked_refs(self) -> None:
-        with tempfile.TemporaryDirectory() as temp_dir:
-            root = Path(temp_dir)
+        root = PROJECT_ROOT / "tests" / "_tmp_operator_context_evidence"
+        shutil.rmtree(root, ignore_errors=True)
+        root.mkdir(parents=True, exist_ok=True)
+        try:
             present = root / "present.md"
             present.write_text("present", encoding="utf-8")
 
@@ -85,6 +91,8 @@ class OperatorContextTest(unittest.TestCase):
                 root=root,
                 tracked_files={"missing.md"},
             )
+        finally:
+            shutil.rmtree(root, ignore_errors=True)
 
         self.assertEqual(len(statuses), 2)
         self.assertTrue(statuses[0].exists)

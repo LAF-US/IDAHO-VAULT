@@ -17,8 +17,15 @@ HIGH_RISK_PREFIXES = (
 )
 
 HIGH_RISK_EXACT = {
+    "AGENTS.md",
     "CLAUDE.md",
+    "CONSTITUTION.md",
+    "DECISIONS.md",
+    "LEVELSET.md",
+    "VAULT-CONVENTIONS.md",
+    "swarm.json",
     ".gitignore",
+    ".github/CODEOWNERS",
     ".github/copilot-instructions.md",
     # Note: governance files under !/ are covered by HIGH_RISK_PREFIXES ("!/")
     # Old !ADMIN/ and !ADMINISTRATION/ paths removed — those folders no longer exist

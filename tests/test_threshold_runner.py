@@ -3,7 +3,6 @@ from __future__ import annotations
 from datetime import date
 import shutil
 import sys
-import tempfile
 import unittest
 from pathlib import Path
 
@@ -79,8 +78,10 @@ class ThresholdRunnerTest(unittest.TestCase):
             shutil.rmtree(pack_root, ignore_errors=True)
 
     def test_run_threshold_stage_refuses_missing_front_door(self) -> None:
-        with tempfile.TemporaryDirectory() as temp_dir:
-            root = Path(temp_dir)
+        root = PROJECT_ROOT / "tests" / "_tmp_threshold_runner_case"
+        shutil.rmtree(root, ignore_errors=True)
+        root.mkdir(parents=True, exist_ok=True)
+        try:
             for relpath in (
                 "AGENTS.md",
                 "!/WAKEUP.md",
@@ -97,15 +98,17 @@ class ThresholdRunnerTest(unittest.TestCase):
                 path.parent.mkdir(parents=True, exist_ok=True)
                 path.write_text("{}", encoding="utf-8")
 
-            # Omit TO DO LIST.md and the target daily note to force front-door failure.
             context = load_operator_context(root=root, target_date=date(2026, 4, 17))
 
-            with self.assertRaises(ThresholdContractError):
+            with self.assertRaises(ThresholdContractError) as exc:
                 run_threshold_stage(
                     run_id="threshold-run-missing-front-door",
                     materialize=False,
                     context=context,
                 )
+            self.assertIn("operator front door", str(exc.exception))
+        finally:
+            shutil.rmtree(root, ignore_errors=True)
 
 
 if __name__ == "__main__":

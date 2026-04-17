@@ -67,6 +67,14 @@ def _tracked_daily_note_ref(context: OperatorContext) -> str | None:
     return None
 
 
+def _tracked_surface_ref(context: OperatorContext, relpath: str) -> str | None:
+    normalized = Path(relpath).as_posix()
+    for check in (*context.boot_chain_checks, *context.front_door_checks):
+        if check.relpath == normalized and check.exists and check.tracked is not False:
+            return normalized
+    return None
+
+
 def _backlog_preview(context: OperatorContext, limit: int = 2) -> str:
     items = []
     for line in context.open_backlog_items[:limit]:
@@ -80,6 +88,13 @@ def _backlog_preview(context: OperatorContext, limit: int = 2) -> str:
 
 def _lane_spec(domain: LaneDomain, context: OperatorContext) -> dict[str, object]:
     current_note_ref = _tracked_daily_note_ref(context)
+    daily_notes_config_ref = _tracked_surface_ref(context, ".obsidian/daily-notes.json")
+    periodic_notes_config_ref = _tracked_surface_ref(
+        context,
+        ".obsidian/plugins/periodic-notes/data.json",
+    )
+    daily_template_ref = _tracked_surface_ref(context, "DAILY NOTE TEMPLATE.md")
+    daily_rollover_ref = _tracked_surface_ref(context, ".github/scripts/daily_rollover.py")
     backlog_refs = ["TO DO LIST.md"]
     if current_note_ref is not None:
         backlog_refs.append(current_note_ref)
@@ -122,12 +137,14 @@ def _lane_spec(domain: LaneDomain, context: OperatorContext) -> dict[str, object
                 "first execution success or first contact with today's work queue."
             ),
             "anchor_value": "after staging and review",
-            "evidence_refs": [
-                "DAILY NOTE TEMPLATE.md",
-                ".obsidian/daily-notes.json",
-                ".obsidian/plugins/periodic-notes/data.json",
-                *backlog_refs,
-            ],
+            "evidence_refs": _dedupe(
+                [
+                    *( [daily_template_ref] if daily_template_ref is not None else [] ),
+                    *( [daily_notes_config_ref] if daily_notes_config_ref is not None else [] ),
+                    *( [periodic_notes_config_ref] if periodic_notes_config_ref is not None else [] ),
+                    *backlog_refs,
+                ]
+            ),
             "wizard_note_text": (
                 "The candidate's clock does not stop at execution; the lawful ending comes "
                 f"only after explicit review and named state transition. Today's note: {context.daily_note_path}"
@@ -143,13 +160,15 @@ def _lane_spec(domain: LaneDomain, context: OperatorContext) -> dict[str, object
                 "door resolves through the configured daily note system and TO DO LIST.md."
             ),
             "anchor_value": "!/CREWAI/",
-            "evidence_refs": [
-                ".crewai/MANIFEST.md",
-                "!/CREWAI/README.md",
-                "DAILY NOTE TEMPLATE.md",
-                ".github/scripts/daily_rollover.py",
-                *backlog_refs,
-            ],
+            "evidence_refs": _dedupe(
+                [
+                    ".crewai/MANIFEST.md",
+                    "!/CREWAI/README.md",
+                    *( [daily_template_ref] if daily_template_ref is not None else [] ),
+                    *( [daily_rollover_ref] if daily_rollover_ref is not None else [] ),
+                    *backlog_refs,
+                ]
+            ),
             "wizard_note_text": (
                 "Threshold competence includes knowing which room is staging and which "
                 "room is canon."

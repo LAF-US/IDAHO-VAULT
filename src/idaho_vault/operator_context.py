@@ -88,11 +88,19 @@ class OperatorContext:
 
     @property
     def live_boot_chain_refs(self) -> tuple[str, ...]:
-        return tuple(check.relpath for check in self.boot_chain_checks if check.exists)
+        return tuple(
+            check.relpath
+            for check in self.boot_chain_checks
+            if check.exists and check.tracked is not False
+        )
 
     @property
     def live_front_door_refs(self) -> tuple[str, ...]:
-        refs = [check.relpath for check in self.front_door_checks if check.exists]
+        refs = [
+            check.relpath
+            for check in self.front_door_checks
+            if check.exists and check.tracked is not False
+        ]
         if self.daily_note_exists and self.daily_note_tracked is not False:
             refs.append(self.daily_note_path)
         return tuple(refs)
