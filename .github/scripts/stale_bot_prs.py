@@ -17,7 +17,10 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
+from pr_lifecycle import ensure_labels, set_state
+
 BOT_LOGINS = {"app/dependabot", "app/github-actions", "dependabot[bot]", "github-actions[bot]"}
+STALE_LIFECYCLE_STATE = "abandoned"
 
 
 def run_json(cmd: list[str]) -> object:
@@ -45,6 +48,43 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
+def find_stale_bot_prs(
+    open_prs: list[dict[str, object]],
+    *,
+    now: datetime,
+    age_days: int,
+    merge_state_by_number: dict[int, str],
+) -> list[dict[str, object]]:
+    stale: list[dict[str, object]] = []
+    for pr in open_prs:
+        author = (pr.get("author") or {}).get("login")
+        if author not in BOT_LOGINS:
+            continue
+
+        updated_at = datetime.fromisoformat(str(pr["updatedAt"]).replace("Z", "+00:00"))
+        pr_number = int(pr["number"])
+        pr_age_days = (now - updated_at).days
+        merge_state = merge_state_by_number.get(pr_number, "UNKNOWN")
+
+        if merge_state == "CLEAN" or pr_age_days < age_days:
+            continue
+
+        stale.append(
+            {
+                "number": pr_number,
+                "title": pr["title"],
+                "url": pr["url"],
+                "head": pr["headRefName"],
+                "author": author,
+                "age_days": pr_age_days,
+                "merge_state": merge_state,
+                "lifecycle_state": STALE_LIFECYCLE_STATE,
+            }
+        )
+
+    return stale
+
+
 def main() -> int:
     args = parse_args()
     now = datetime.now(timezone.utc)
@@ -60,34 +100,26 @@ def main() -> int:
         ]
     )
 
-    stale: list[dict[str, object]] = []
+    merge_state_by_number: dict[int, str] = {}
     for pr in open_prs:
         author = (pr.get("author") or {}).get("login")
         if author not in BOT_LOGINS:
             continue
 
-        updated_at = datetime.fromisoformat(pr["updatedAt"].replace("Z", "+00:00"))
-        age_days = (now - updated_at).days
         merge_info = run_json(["gh", "pr", "view", str(pr["number"]), "--json", "mergeStateStatus"])
-        merge_state = merge_info["mergeStateStatus"]
+        merge_state_by_number[int(pr["number"])] = str(merge_info["mergeStateStatus"])
 
-        if merge_state == "CLEAN" or age_days < args.age_days:
-            continue
-
-        stale.append(
-            {
-                "number": pr["number"],
-                "title": pr["title"],
-                "url": pr["url"],
-                "head": pr["headRefName"],
-                "author": author,
-                "age_days": age_days,
-                "merge_state": merge_state,
-            }
-        )
+    stale = find_stale_bot_prs(
+        open_prs,
+        now=now,
+        age_days=args.age_days,
+        merge_state_by_number=merge_state_by_number,
+    )
 
     if args.apply:
+        ensure_labels()
         for pr in stale:
+            set_state(int(pr["number"]), str(pr["lifecycle_state"]))
             subprocess.run(
                 [
                     "gh",
@@ -115,6 +147,8 @@ def main() -> int:
                 f"- PR #{pr['number']} `{pr['head']}` — {pr['merge_state']}, {pr['age_days']}d old"
             )
             lines.append(f"  {pr['title']}")
+            lines.append(f"  lifecycle/{pr['lifecycle_state']}")
+            lines.append(f"  {pr['url']}")
     else:
         lines.append("No stale conflicted bot PRs found.")
 

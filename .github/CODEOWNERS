@@ -2,7 +2,25 @@
 # Requires branch protection to be active for enforcement.
 # These paths require Logan's explicit review before merge.
 
+# Canonical governance and startup surfaces
+AGENTS.md @loganfinney27
 CLAUDE.md @loganfinney27
+CONSTITUTION.md @loganfinney27
+DECISIONS.md @loganfinney27
+LEVELSET.md @loganfinney27
+VAULT-CONVENTIONS.md @loganfinney27
+swarm.json @loganfinney27
+
+# Auto-loaded agent instruction surfaces
+/.claude/CLAUDE.md @loganfinney27
+/.codex/CODEX.md @loganfinney27
+/.gemini/GEMINI.md @loganfinney27
+
+# Canonical inward surfaces
 /!/ @loganfinney27
+
+# GitHub forge control plane
+/.github/CODEOWNERS @loganfinney27
+/.github/copilot-instructions.md @loganfinney27
 /.github/workflows/ @loganfinney27
 /.github/scripts/ @loganfinney27
