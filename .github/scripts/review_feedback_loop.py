@@ -199,7 +199,6 @@ def sync_pr(args: argparse.Namespace) -> int:
     resolved_count = 0
     remaining_unresolved = 0
     current_unresolved = 0
-    can_auto_resolve = True
 
     for thread in threads:
         if thread.get("isResolved"):
@@ -207,20 +206,18 @@ def sync_pr(args: argparse.Namespace) -> int:
 
         authors = _thread_authors(thread)
         if thread.get("isOutdated") and authors and authors.issubset(auto_resolve_reviewers):
-            if can_auto_resolve:
-                try:
-                    _resolve_thread(thread["id"])
-                    resolved_count += 1
-                    continue
-                except RuntimeError as exc:
-                    if _is_forbidden_integration_error(exc):
-                        can_auto_resolve = False
-                        print(
-                            "Skipping auto-resolve of review threads: token lacks permission.",
-                            file=sys.stderr,
-                        )
-                    else:
-                        raise
+            try:
+                _resolve_thread(thread["id"])
+                resolved_count += 1
+                continue
+            except RuntimeError as exc:
+                if _is_forbidden_integration_error(exc):
+                    print(
+                        f"Skipping auto-resolve for thread {thread['id']}: token lacks permission.",
+                        file=sys.stderr,
+                    )
+                else:
+                    raise
 
         remaining_unresolved += 1
         if not thread.get("isOutdated"):
