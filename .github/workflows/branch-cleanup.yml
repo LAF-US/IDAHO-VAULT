@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
     inputs:
       dry_run:
-        description: 'Dry run — list branches that would be deleted without deleting them'
+        description: 'Dry run - list branches that would be deleted without deleting them'
         type: boolean
         default: false
 
@@ -38,7 +38,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      pull-requests: read
+      pull-requests: write
 
     steps:
       - name: Checkout repo
@@ -50,13 +50,13 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           EVENT_NAME: ${{ github.event_name }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          PR_MERGED: ${{ github.event.pull_request.merged }}
           PR_HEAD_REF: ${{ github.event.pull_request.head.ref }}
           DRY_RUN: ${{ inputs.dry_run || 'false' }}
-          # Retention policy thresholds for no-PR branches
           STALE_AGE_DAYS: 7
           STALE_BEHIND_COMMITS: 100
         run: |
-          # Must stay in sync with branch triggers in auto-pr.yml
           AGENT_PREFIXES="claude codex gemini copilot perplexity grok bot serena"
           DELETED=0
           KEPT=0
@@ -75,16 +75,27 @@ jobs:
             DELETED_LIST="${DELETED_LIST}\n  - \`${REF}\` (${REASON})"
           }
 
-          # ── On PR close: delete the specific branch immediately ──────────────
+          # On PR close: set an exact lifecycle state, then prune the branch.
           if [ "$EVENT_NAME" = "pull_request" ]; then
             BRANCH="$PR_HEAD_REF"
-            echo "PR closed — pruning branch: $BRANCH"
-            delete_branch "$BRANCH" "PR closed"
+            if [ "$PR_MERGED" = "true" ]; then
+              LIFECYCLE_STATE="merged"
+            else
+              LIFECYCLE_STATE="abandoned"
+            fi
+
+            if [ -n "$PR_NUMBER" ]; then
+              python3 .github/scripts/pr_lifecycle.py ensure-labels
+              python3 .github/scripts/pr_lifecycle.py set-state --pr-number "$PR_NUMBER" --state "$LIFECYCLE_STATE"
+            fi
+
+            echo "PR closed - lifecycle/$LIFECYCLE_STATE - pruning branch: $BRANCH"
+            delete_branch "$BRANCH" "$LIFECYCLE_STATE"
             echo "Done."
             exit 0
           fi
 
-          # ── On schedule / workflow_dispatch: full sweep ───────────────────────
+          # On schedule / workflow_dispatch: operational sweep only.
           echo "Scanning agent branches for pruning..."
           git fetch --prune origin
 
@@ -92,13 +103,11 @@ jobs:
             while IFS= read -r REF; do
               [ -z "$REF" ] && continue
 
-              # 1. Merged into main → delete
               if git branch -r --merged origin/main | grep -qF "origin/${REF}"; then
-                delete_branch "$REF" "merged into main"
+                delete_branch "$REF" "merged"
                 continue
               fi
 
-              # 2. Single API call to check PR state (open, closed, or none)
               PR_INFO=$(gh pr list --head "$REF" --state all --json number,state \
                 --jq '.[0] | "\(.number):\(.state)"' 2>/dev/null || true)
 
@@ -106,37 +115,28 @@ jobs:
                 PR_NUM=$(echo "$PR_INFO" | cut -d: -f1)
                 PR_STATE=$(echo "$PR_INFO" | cut -d: -f2)
                 if [ "$PR_STATE" = "CLOSED" ]; then
-                  # Closed PR (merged or abandoned) → delete
                   delete_branch "$REF" "closed PR #${PR_NUM}"
                 else
-                  # Open PR → keep (Logan or automation still working)
                   echo "  Keeping (open PR #${PR_NUM}): $REF"
                   KEPT=$((KEPT + 1))
                 fi
               else
-                # No PR at all — check age and distance from main
                 AHEAD=$(git rev-list "origin/main..origin/${REF}" --count 2>/dev/null || echo "0")
                 BEHIND=$(git rev-list "origin/${REF}..origin/main" --count 2>/dev/null || echo "0")
-                # Age in days (seconds since last commit / 86400)
                 LAST_COMMIT_TS=$(git log -1 --format="%ct" "origin/${REF}" 2>/dev/null || echo "0")
                 NOW_TS=$(date +%s)
                 if [ "$LAST_COMMIT_TS" -gt 0 ]; then
-                  # Integer division (floor); sub-day precision not needed for the 7-day threshold
                   AGE_DAYS=$(( (NOW_TS - LAST_COMMIT_TS) / 86400 ))
                 else
                   AGE_DAYS=0
                 fi
                 if [ "$AHEAD" = "0" ]; then
-                  # Nothing unique — zombie branch, safe to delete
-                  delete_branch "$REF" "zombie: no PR, 0 ahead of main"
+                  delete_branch "$REF" "no PR, 0 ahead of main"
                 elif [ "$BEHIND" -ge "${STALE_BEHIND_COMMITS}" ]; then
-                  # Far behind main — priority prune
-                  delete_branch "$REF" "stale: no PR, ${BEHIND} behind main"
+                  delete_branch "$REF" "no PR, ${BEHIND} behind main"
                 elif [ "$AGE_DAYS" -ge "${STALE_AGE_DAYS}" ]; then
-                  # Older than retention threshold with no PR — prune
-                  delete_branch "$REF" "stale: no PR, ${AGE_DAYS} days old"
+                  delete_branch "$REF" "no PR, ${AGE_DAYS} days old"
                 else
-                  # Recent branch with unique commits and no PR yet → keep
                   echo "  Keeping (no PR, ${AHEAD} ahead, ${AGE_DAYS}d old): $REF"
                   KEPT=$((KEPT + 1))
                 fi
@@ -144,20 +144,18 @@ jobs:
             done < <(git branch -r | grep "origin/${PREFIX}/" | sed 's|.*origin/||' | tr -d ' ')
           done
 
-          # ── Summary ──────────────────────────────────────────────────────────
           echo ""
           echo "=== Branch Cleanup Summary ==="
           echo "Mode:    $([ "$DRY_RUN" = "true" ] && echo "DRY RUN" || echo "LIVE")"
           echo "Deleted: $DELETED"
           echo "Kept:    $KEPT"
 
-          # Write job summary
           {
             echo "## Branch Cleanup"
             echo ""
             echo "| | Count |"
             echo "|---|---|"
-            echo "| Mode | $([ "$DRY_RUN" = "true" ] && echo "🔍 Dry run" || echo "🗑️ Live") |"
+            echo "| Mode | $([ "$DRY_RUN" = "true" ] && echo "Dry run" || echo "Live") |"
             echo "| Deleted | $DELETED |"
             echo "| Kept | $KEPT |"
             if [ -n "$DELETED_LIST" ]; then

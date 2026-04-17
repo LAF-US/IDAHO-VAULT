@@ -16,7 +16,7 @@
 
 1. `AGENTS.md` (root) -> Cross-tool pointer
 2. `!/WAKEUP.md` -> Explicit wakeup and conflict-resolution surface
-3. `!README.md` (root) -> Touchstone Tree / live orienting doctrine
+3. `!/README.md` -> Explicit startup and task-based orientation suite
 4. `!/AGENTS.md` (this file) -> Canonical Narrative Registry
 5. `CONSTITUTION.md` (root) -> Binding governance
 6. `swarm.json` (root) -> Machine-readable source of truth
@@ -33,12 +33,13 @@ Tree logic for crew space:
 
 1. Read root `AGENTS.md` as pointer only.
 2. Read `!/WAKEUP.md` before interpreting lore, branch residue, or older scaffolds.
-3. Read `!README.md` for Touchstone Tree orientation and relation.
+3. Read `!/README.md` for explicit startup and task-based routing.
 4. Read this file for the live roster, lane rules, and current connector posture.
 5. Read `CONSTITUTION.md` for binding governance.
 6. Read `swarm.json` for machine-readable compiled state.
 7. Use `!/agents.json` -> `!/agent.sh` for canonical local bootstrap.
-8. Treat historical CrewAI harbor notes as non-live unless `.crewai/MANIFEST.md` or this file says otherwise.
+8. Read `!README.md` only when the task needs Touchstone Tree or narrative context.
+9. Treat historical CrewAI harbor notes as non-live unless `.crewai/MANIFEST.md` or this file says otherwise.
 
 ## Disorientation Rule
 
@@ -62,8 +63,8 @@ Immediate wakeup facts:
   total sovereignty model.
 - Historical CrewAI harbor notes and stale scaffolds are non-live unless
   `.crewai/MANIFEST.md` or this file explicitly says otherwise.
-- Current live governance files are `!README.md`, `CONSTITUTION.md`,
-  `DECISIONS.md`, and `VAULT-CONVENTIONS.md` at repo root.
+- Current live startup and governance surfaces are `!/README.md` plus root
+  `CONSTITUTION.md`, `DECISIONS.md`, and `VAULT-CONVENTIONS.md`.
 
 ---
 
