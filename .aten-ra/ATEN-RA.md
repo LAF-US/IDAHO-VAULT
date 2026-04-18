@@ -1,11 +1,12 @@
 ---
 authority: LOGAN
 related:
-- 0
-- ZZZ
-- Zombie
-- VOID
+- ATEN
+- RA
+- HECATE
+- NOW
+- FUTURE
 - The world is quiet here
 ---
 
-...
+ATEN-RA

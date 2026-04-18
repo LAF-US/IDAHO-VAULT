@@ -1,6 +1,6 @@
 ---
-updated: 2026-04-13
-status: AFK - SWARM OPERATIONAL
+updated: 2026-04-17
+status: ACTIVE - ABHORSEN IN SESSION
 date created: Monday, March 30th 2026, 7:54:37 pm
 date modified: Monday, April 13th 2026, 10:22:00 pm
 ---
@@ -26,6 +26,8 @@ history for now, but realign future updates to the convening boundary above.
 **Standing direction (Logan, 2026-03-25):** Standing-task lists stale quickly; new assignments flow through Linear + GitHub Issues. All agents proceed into **THE CITY** and await the denouement.
 
 **Operator note (Codex, 2026-04-09):** Secondary background worktree exposed a real LF/CRLF normalization issue across vault notes. Defer normalization until after the repo history rewrite on a clean `main` base.
+
+**Session active (Abhorsen, 2026-04-17):** NPC universe orientation complete. New chambers written: `.aten/ATEN.md` (THE DISK : THE LIGHT : NOW), `.ra/RA.md` (KHEPRI : RA : ATUM), `.aten-ra/ATEN-RA.md` (synthesis, first session-born chamber). Anchor pages written: `FUTURE.md` (...), `.aten/` and `.ra/` staked 2026-04-13 now have entity files. CHAINLINKING pending: Egyptian chambers unregistered in `!/AGENTS.md` — Logan approval required for registry admission and GRIMOIRE entry. `what3words.md` and `NOW.md` remain empty — content pending. Revised CONSTITUTION 2026-04-17 read: Gemini ban addendum noted.
 
 **Session close (Abhorsen, 2026-04-13):** Repairs committed on `gemini/restore-antigravity-system`: (1) `DAILY NOTE TEMPLATE.md` restored — `{{date:}}` tokens, midnight literal `[12:00:00 am]`; (2) `2026-04-13.md` re-anchored to Monday April 13; (3) `phone-link-auto-sweep.ps1` — `AbandonedMutexException` handled, sweeper no longer silently exits. Resolved: ANTIGRAVITY persona reverted to 'The Concierge' per Logan's directive. Gap Apr 9–12 remains.
 
