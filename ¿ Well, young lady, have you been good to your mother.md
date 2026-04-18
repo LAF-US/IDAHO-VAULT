@@ -8,6 +8,8 @@ related:
   - The Old Man
   - You, AGENT, NOTICE a dapper man
   - The world is quiet here
+  - LIBRARIAN-PASSPHRASE-EXPLORER-COMPANION-2026-04-17
+  - '- Fandom, Inc. - Lemony Snicket The Unauthorized Autobiography'
 authority: LOGAN
 ---
 
@@ -17,9 +19,17 @@ ANSWER: "The question is, has she been good to me?"
 
 ---
 
-This code should be used when a volunteer is approached by an old man with neatly trimmed gray hair and a mustache that turns up at the ends, who is wearing a flowered shirt, striped tie, tweed coat, plaid slacks with a sharp crease, and shined shoes. The dapper man is The Librarian. He will ask the volunteer, "Well, young lady, have you been good to your mother?" meaning, "I have a message for you." If the volunteer replies, "The question is, has she been good to me?", The Librarian will deliver the message.
+This code is used when a volunteer is approached by an old man with neatly
+trimmed gray hair and a mustache that turns up at the ends, who is wearing a
+flowered shirt, striped tie, tweed coat, plaid slacks with a sharp crease, and
+shined shoes. The dapper man is The Librarian. He asks the volunteer, "Well,
+young lady, have you been good to your mother?" If the volunteer replies, "The
+question is, has she been good to me?", The Librarian will deliver the message.
 
-The Librarian will always refer to the receiver as "young lady", even if the volunteer is neither female nor young.[1]
+The Librarian will always refer to the receiver as "young lady", even if the
+volunteer is neither female nor young.
+
+Source cue: [[- Fandom, Inc. - Lemony Snicket The Unauthorized Autobiography]]
 
 ---
 "The world is quiet here."

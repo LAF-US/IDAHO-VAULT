@@ -6,34 +6,35 @@ from pydantic import BaseModel, ConfigDict, Field, model_validator
 
 from idaho_vault.five_wizards.enums import (
     AnchorType,
-    CharacterId,
-    CharacterMode,
     ClaimConfidence,
     ClaimStatus,
+    COUNCIL_ENTITY,
+    COUNCIL_FAMILIAR,
+    COUNCIL_FAMILIAR_MODE,
+    COUNCIL_PERSONALITY,
+    COUNCIL_SURFACE_MODE,
     CouncilDomain,
     CouncilReportStatus,
     CouncilSessionStatus,
     FamiliarId,
     FamiliarMode,
     GateState,
+    InstitutionId,
     LaneDomain,
+    LANE_TO_ANCHOR,
+    LANE_TO_ENTITY,
+    LANE_TO_FAMILIAR,
+    LANE_TO_FAMILIAR_MODE,
+    LANE_TO_PERSONALITY,
+    MirageCategory,
     NoteAuthorKind,
     NoteVisibility,
     ObjectionScope,
     ObjectionSeverity,
     ObjectionStatus,
-    MirageCategory,
-    LANE_TO_ANCHOR,
-    LANE_TO_CHARACTER,
-    LANE_TO_FAMILIAR,
-    LANE_TO_FAMILIAR_MODE,
-    LANE_TO_INQUIRY_PROMPT,
-    COUNCIL_INQUIRY_PROMPT,
-    COUNCIL_ANCHOR,
-    COUNCIL_CHARACTER,
-    COUNCIL_CHARACTER_MODE,
-    COUNCIL_FAMILIAR,
-    COUNCIL_FAMILIAR_MODE,
+    SurfaceMode,
+    WizardEntityId,
+    WizardPersonalityId,
 )
 
 
@@ -46,10 +47,12 @@ class WizardBaseModel(BaseModel):
 class PersonalNote(WizardBaseModel):
     note_id: str = Field(min_length=1)
     run_id: str = Field(min_length=1)
+    institution: InstitutionId = InstitutionId.FIVE_WIZARDS
     domain: LaneDomain
     author_kind: NoteAuthorKind
-    character: CharacterId
-    character_mode: CharacterMode
+    entity: WizardEntityId
+    personality: WizardPersonalityId
+    surface_mode: SurfaceMode
     familiar: FamiliarId
     familiar_mode: FamiliarMode | None = None
     text: str = Field(min_length=1)
@@ -63,10 +66,14 @@ class PersonalNote(WizardBaseModel):
 
     @model_validator(mode="after")
     def validate_note_mapping(self) -> "PersonalNote":
-        if self.character is not LANE_TO_CHARACTER[self.domain]:
-            raise ValueError("Personal note character does not match lane domain mapping.")
-        if self.character_mode is not CharacterMode.LANE:
-            raise ValueError("Personal notes must use `character_mode=LANE`.")
+        if self.institution is not InstitutionId.FIVE_WIZARDS:
+            raise ValueError("Personal notes currently belong only to the FIVE_WIZARDS institution.")
+        if self.entity is not LANE_TO_ENTITY[self.domain]:
+            raise ValueError("Personal note entity does not match lane domain mapping.")
+        if self.personality is not LANE_TO_PERSONALITY[self.domain]:
+            raise ValueError("Personal note personality does not match lane domain mapping.")
+        if self.surface_mode is not SurfaceMode.LANE:
+            raise ValueError("Personal notes must use `surface_mode=LANE`.")
         if self.familiar is not LANE_TO_FAMILIAR[self.domain]:
             raise ValueError("Personal note familiar does not match lane domain mapping.")
         if self.familiar_mode != LANE_TO_FAMILIAR_MODE[self.domain]:
@@ -79,12 +86,14 @@ class PersonalNote(WizardBaseModel):
 class Objection(WizardBaseModel):
     objection_id: str = Field(min_length=1)
     run_id: str = Field(min_length=1)
+    institution: InstitutionId = InstitutionId.FIVE_WIZARDS
     target_claim_id: str = Field(min_length=1)
     scope: ObjectionScope
     lane_domain: LaneDomain | None = None
     council_domain: CouncilDomain | None = None
-    character: CharacterId
-    character_mode: CharacterMode
+    entity: WizardEntityId
+    personality: WizardPersonalityId
+    surface_mode: SurfaceMode
     familiar: FamiliarId
     familiar_mode: FamiliarMode | None = None
     severity: ObjectionSeverity
@@ -96,13 +105,17 @@ class Objection(WizardBaseModel):
 
     @model_validator(mode="after")
     def validate_scope_mapping(self) -> "Objection":
+        if self.institution is not InstitutionId.FIVE_WIZARDS:
+            raise ValueError("Objections currently belong only to the FIVE_WIZARDS institution.")
         if self.scope is ObjectionScope.LANE:
             if self.lane_domain is None or self.council_domain is not None:
                 raise ValueError("Lane objections require `lane_domain` and forbid `council_domain`.")
-            if self.character is not LANE_TO_CHARACTER[self.lane_domain]:
-                raise ValueError("Lane objection character does not match domain mapping.")
-            if self.character_mode is not CharacterMode.LANE:
-                raise ValueError("Lane objections require `character_mode=LANE`.")
+            if self.entity is not LANE_TO_ENTITY[self.lane_domain]:
+                raise ValueError("Lane objection entity does not match domain mapping.")
+            if self.personality is not LANE_TO_PERSONALITY[self.lane_domain]:
+                raise ValueError("Lane objection personality does not match domain mapping.")
+            if self.surface_mode is not SurfaceMode.LANE:
+                raise ValueError("Lane objections require `surface_mode=LANE`.")
             if self.familiar is not LANE_TO_FAMILIAR[self.lane_domain]:
                 raise ValueError("Lane objection familiar does not match domain mapping.")
             if self.familiar_mode != LANE_TO_FAMILIAR_MODE[self.lane_domain]:
@@ -112,8 +125,12 @@ class Objection(WizardBaseModel):
                 raise ValueError("Council objections require `council_domain` and forbid `lane_domain`.")
             if self.council_domain is not CouncilDomain.HOW:
                 raise ValueError("Council objections currently support only `HOW`.")
-            if self.character is not COUNCIL_CHARACTER or self.character_mode is not COUNCIL_CHARACTER_MODE:
-                raise ValueError("Council objections must use WHY_HOW in COUNCIL mode.")
+            if self.entity is not COUNCIL_ENTITY:
+                raise ValueError("Council objections must use WHY as the council entity.")
+            if self.personality is not COUNCIL_PERSONALITY:
+                raise ValueError("Council objections must use HOW as the council personality.")
+            if self.surface_mode is not COUNCIL_SURFACE_MODE:
+                raise ValueError("Council objections must use `surface_mode=COUNCIL`.")
             if self.familiar is not COUNCIL_FAMILIAR or self.familiar_mode is not COUNCIL_FAMILIAR_MODE:
                 raise ValueError("Council objections must use THY_THE in THE mode.")
         return self
@@ -122,9 +139,11 @@ class Objection(WizardBaseModel):
 class Claim(WizardBaseModel):
     claim_id: str = Field(min_length=1)
     run_id: str = Field(min_length=1)
+    institution: InstitutionId = InstitutionId.FIVE_WIZARDS
     domain: LaneDomain
-    character: CharacterId
-    character_mode: CharacterMode
+    entity: WizardEntityId
+    personality: WizardPersonalityId
+    surface_mode: SurfaceMode
     wizard_role: str = Field(min_length=1)
     familiar: FamiliarId
     familiar_mode: FamiliarMode | None = None
@@ -138,10 +157,14 @@ class Claim(WizardBaseModel):
 
     @model_validator(mode="after")
     def validate_lane_mapping(self) -> "Claim":
-        if self.character is not LANE_TO_CHARACTER[self.domain]:
-            raise ValueError("Claim character does not match lane domain mapping.")
-        if self.character_mode is not CharacterMode.LANE:
-            raise ValueError("Claims must use `character_mode=LANE`.")
+        if self.institution is not InstitutionId.FIVE_WIZARDS:
+            raise ValueError("Claims currently belong only to the FIVE_WIZARDS institution.")
+        if self.entity is not LANE_TO_ENTITY[self.domain]:
+            raise ValueError("Claim entity does not match lane domain mapping.")
+        if self.personality is not LANE_TO_PERSONALITY[self.domain]:
+            raise ValueError("Claim personality does not match lane domain mapping.")
+        if self.surface_mode is not SurfaceMode.LANE:
+            raise ValueError("Claims must use `surface_mode=LANE`.")
         if self.familiar is not LANE_TO_FAMILIAR[self.domain]:
             raise ValueError("Claim familiar does not match lane domain mapping.")
         if self.familiar_mode != LANE_TO_FAMILIAR_MODE[self.domain]:
@@ -157,9 +180,11 @@ class Claim(WizardBaseModel):
 class CouncilReport(WizardBaseModel):
     report_id: str = Field(min_length=1)
     run_id: str = Field(min_length=1)
+    institution: InstitutionId = InstitutionId.FIVE_WIZARDS
     domain: LaneDomain
-    character: CharacterId
-    character_mode: CharacterMode
+    entity: WizardEntityId
+    personality: WizardPersonalityId
+    surface_mode: SurfaceMode
     wizard_role: str = Field(min_length=1)
     familiar: FamiliarId
     familiar_mode: FamiliarMode | None = None
@@ -174,9 +199,13 @@ class CouncilReport(WizardBaseModel):
 
     @model_validator(mode="after")
     def validate_report_mapping(self) -> "CouncilReport":
-        if self.character is not LANE_TO_CHARACTER[self.domain]:
-            raise ValueError("Council report character does not match lane domain mapping.")
-        if self.character_mode is not CharacterMode.LANE:
+        if self.institution is not InstitutionId.FIVE_WIZARDS:
+            raise ValueError("Council reports currently belong only to the FIVE_WIZARDS institution.")
+        if self.entity is not LANE_TO_ENTITY[self.domain]:
+            raise ValueError("Council report entity does not match lane domain mapping.")
+        if self.personality is not LANE_TO_PERSONALITY[self.domain]:
+            raise ValueError("Council report personality does not match lane domain mapping.")
+        if self.surface_mode is not SurfaceMode.LANE:
             raise ValueError("Council reports remain wizard-owned lane artifacts.")
         if self.familiar is not LANE_TO_FAMILIAR[self.domain]:
             raise ValueError("Council report familiar does not match lane domain mapping.")
@@ -190,9 +219,11 @@ class CouncilReport(WizardBaseModel):
 class FamiliarGaggleNote(WizardBaseModel):
     note_id: str = Field(min_length=1)
     run_id: str = Field(min_length=1)
+    institution: InstitutionId = InstitutionId.FIVE_WIZARDS
     council_domain: CouncilDomain
-    host_character: CharacterId
-    host_character_mode: CharacterMode
+    host_entity: WizardEntityId
+    host_personality: WizardPersonalityId
+    host_surface_mode: SurfaceMode
     host_familiar: FamiliarId
     host_familiar_mode: FamiliarMode
     participant_familiars: list[FamiliarId]
@@ -204,10 +235,16 @@ class FamiliarGaggleNote(WizardBaseModel):
 
     @model_validator(mode="after")
     def validate_gaggle(self) -> "FamiliarGaggleNote":
+        if self.institution is not InstitutionId.FIVE_WIZARDS:
+            raise ValueError("Familiar gaggle notes currently belong only to the FIVE_WIZARDS institution.")
         if self.council_domain is not CouncilDomain.HOW:
             raise ValueError("Familiar gaggle notes currently belong to the HOW council domain.")
-        if self.host_character is not COUNCIL_CHARACTER or self.host_character_mode is not COUNCIL_CHARACTER_MODE:
-            raise ValueError("Familiar gaggle notes must be hosted by WHY_HOW in COUNCIL mode.")
+        if self.host_entity is not COUNCIL_ENTITY:
+            raise ValueError("Familiar gaggle notes must use WHY as the host entity.")
+        if self.host_personality is not COUNCIL_PERSONALITY:
+            raise ValueError("Familiar gaggle notes must use HOW as the host personality.")
+        if self.host_surface_mode is not COUNCIL_SURFACE_MODE:
+            raise ValueError("Familiar gaggle notes must use `host_surface_mode=COUNCIL`.")
         if self.host_familiar is not COUNCIL_FAMILIAR or self.host_familiar_mode is not COUNCIL_FAMILIAR_MODE:
             raise ValueError("Familiar gaggle notes must use THY_THE in THE mode as host.")
         if len(self.participant_familiars) != len(self.participant_modes):
@@ -218,9 +255,11 @@ class FamiliarGaggleNote(WizardBaseModel):
 class CouncilSession(WizardBaseModel):
     session_id: str = Field(min_length=1)
     run_id: str = Field(min_length=1)
+    institution: InstitutionId = InstitutionId.FIVE_WIZARDS
     council_domain: CouncilDomain
-    convener_character: CharacterId
-    convener_character_mode: CharacterMode
+    convener_entity: WizardEntityId
+    convener_personality: WizardPersonalityId
+    convener_surface_mode: SurfaceMode
     convener_familiar: FamiliarId
     convener_familiar_mode: FamiliarMode
     status: CouncilSessionStatus
@@ -234,10 +273,16 @@ class CouncilSession(WizardBaseModel):
 
     @model_validator(mode="after")
     def validate_session(self) -> "CouncilSession":
+        if self.institution is not InstitutionId.FIVE_WIZARDS:
+            raise ValueError("Council sessions currently belong only to the FIVE_WIZARDS institution.")
         if self.council_domain is not CouncilDomain.HOW:
             raise ValueError("Council sessions currently belong to the HOW council domain.")
-        if self.convener_character is not COUNCIL_CHARACTER or self.convener_character_mode is not COUNCIL_CHARACTER_MODE:
-            raise ValueError("Council sessions must be convened by WHY_HOW in COUNCIL mode.")
+        if self.convener_entity is not COUNCIL_ENTITY:
+            raise ValueError("Council sessions must use WHY as the convener entity.")
+        if self.convener_personality is not COUNCIL_PERSONALITY:
+            raise ValueError("Council sessions must use HOW as the convener personality.")
+        if self.convener_surface_mode is not COUNCIL_SURFACE_MODE:
+            raise ValueError("Council sessions must use `convener_surface_mode=COUNCIL`.")
         if self.convener_familiar is not COUNCIL_FAMILIAR or self.convener_familiar_mode is not COUNCIL_FAMILIAR_MODE:
             raise ValueError("Council sessions must use THY_THE in THE mode as familiar host.")
         if not self.inquiry_question.strip():
@@ -248,9 +293,11 @@ class CouncilSession(WizardBaseModel):
 class ValidationVerdict(WizardBaseModel):
     claim_id: str = Field(min_length=1)
     run_id: str = Field(min_length=1)
+    institution: InstitutionId = InstitutionId.FIVE_WIZARDS
     domain: LaneDomain
-    character: CharacterId
-    character_mode: CharacterMode
+    entity: WizardEntityId
+    personality: WizardPersonalityId
+    surface_mode: SurfaceMode
     status: ClaimStatus
     reason: str = Field(min_length=1)
     mirage_categories: list[MirageCategory] = Field(default_factory=list)
@@ -261,18 +308,25 @@ class ValidationVerdict(WizardBaseModel):
 
     @model_validator(mode="after")
     def validate_verdict_mapping(self) -> "ValidationVerdict":
-        if self.character is not LANE_TO_CHARACTER[self.domain]:
-            raise ValueError("Validation verdict character does not match lane mapping.")
-        if self.character_mode is not CharacterMode.LANE:
-            raise ValueError("Validation verdicts must use `character_mode=LANE`.")
+        if self.institution is not InstitutionId.FIVE_WIZARDS:
+            raise ValueError("Validation verdicts currently belong only to the FIVE_WIZARDS institution.")
+        if self.entity is not LANE_TO_ENTITY[self.domain]:
+            raise ValueError("Validation verdict entity does not match lane mapping.")
+        if self.personality is not LANE_TO_PERSONALITY[self.domain]:
+            raise ValueError("Validation verdict personality does not match lane mapping.")
+        if self.surface_mode is not SurfaceMode.LANE:
+            raise ValueError("Validation verdicts must use `surface_mode=LANE`.")
         return self
 
 
 class GateReport(WizardBaseModel):
     run_id: str = Field(min_length=1)
+    institution: InstitutionId = InstitutionId.FIVE_WIZARDS
     overall_state: GateState
     lane_states: dict[LaneDomain, GateState]
-    council_character: CharacterId
+    council_entity: WizardEntityId
+    council_personality: WizardPersonalityId
+    council_surface_mode: SurfaceMode
     council_domain: CouncilDomain
     council_ready: bool
     claim_counts: dict[ClaimStatus, int]
@@ -282,8 +336,14 @@ class GateReport(WizardBaseModel):
 
     @model_validator(mode="after")
     def validate_gate_report(self) -> "GateReport":
-        if self.council_character is not COUNCIL_CHARACTER:
-            raise ValueError("Gate reports must use WHY_HOW as the council character.")
+        if self.institution is not InstitutionId.FIVE_WIZARDS:
+            raise ValueError("Gate reports currently belong only to the FIVE_WIZARDS institution.")
+        if self.council_entity is not COUNCIL_ENTITY:
+            raise ValueError("Gate reports must use WHY as the council entity.")
+        if self.council_personality is not COUNCIL_PERSONALITY:
+            raise ValueError("Gate reports must use HOW as the council personality.")
+        if self.council_surface_mode is not COUNCIL_SURFACE_MODE:
+            raise ValueError("Gate reports must use `council_surface_mode=COUNCIL`.")
         if self.council_domain is not CouncilDomain.HOW:
             raise ValueError("Gate reports must use HOW as the council domain.")
         if set(self.lane_states) != set(LaneDomain):

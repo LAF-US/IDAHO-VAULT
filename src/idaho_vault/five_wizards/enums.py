@@ -12,6 +12,10 @@ class StringEnum(str, Enum):
         return self.value
 
 
+class InstitutionId(StringEnum):
+    FIVE_WIZARDS = "FIVE_WIZARDS"
+
+
 class LaneDomain(StringEnum):
     WHO = "WHO"
     WHAT = "WHAT"
@@ -24,15 +28,24 @@ class CouncilDomain(StringEnum):
     HOW = "HOW"
 
 
-class CharacterId(StringEnum):
+class WizardEntityId(StringEnum):
     WHO = "WHO"
     WHAT = "WHAT"
     WHEN = "WHEN"
     WHERE = "WHERE"
-    WHY_HOW = "WHY_HOW"
+    WHY = "WHY"
 
 
-class CharacterMode(StringEnum):
+class WizardPersonalityId(StringEnum):
+    WHO = "WHO"
+    WHAT = "WHAT"
+    WHEN = "WHEN"
+    WHERE = "WHERE"
+    WHY = "WHY"
+    HOW = "HOW"
+
+
+class SurfaceMode(StringEnum):
     LANE = "LANE"
     COUNCIL = "COUNCIL"
 
@@ -132,12 +145,20 @@ class CouncilSessionStatus(StringEnum):
     ADJOURNED = "adjourned"
 
 
-LANE_TO_CHARACTER: dict[LaneDomain, CharacterId] = {
-    LaneDomain.WHO: CharacterId.WHO,
-    LaneDomain.WHAT: CharacterId.WHAT,
-    LaneDomain.WHEN: CharacterId.WHEN,
-    LaneDomain.WHERE: CharacterId.WHERE,
-    LaneDomain.WHY: CharacterId.WHY_HOW,
+LANE_TO_ENTITY: dict[LaneDomain, WizardEntityId] = {
+    LaneDomain.WHO: WizardEntityId.WHO,
+    LaneDomain.WHAT: WizardEntityId.WHAT,
+    LaneDomain.WHEN: WizardEntityId.WHEN,
+    LaneDomain.WHERE: WizardEntityId.WHERE,
+    LaneDomain.WHY: WizardEntityId.WHY,
+}
+
+LANE_TO_PERSONALITY: dict[LaneDomain, WizardPersonalityId] = {
+    LaneDomain.WHO: WizardPersonalityId.WHO,
+    LaneDomain.WHAT: WizardPersonalityId.WHAT,
+    LaneDomain.WHEN: WizardPersonalityId.WHEN,
+    LaneDomain.WHERE: WizardPersonalityId.WHERE,
+    LaneDomain.WHY: WizardPersonalityId.WHY,
 }
 
 LANE_TO_FAMILIAR: dict[LaneDomain, FamiliarId] = {
@@ -164,8 +185,10 @@ LANE_TO_ANCHOR: dict[LaneDomain, AnchorType] = {
     LaneDomain.WHY: AnchorType.THY,
 }
 
-COUNCIL_CHARACTER = CharacterId.WHY_HOW
-COUNCIL_CHARACTER_MODE = CharacterMode.COUNCIL
+COUNCIL_INSTITUTION = InstitutionId.FIVE_WIZARDS
+COUNCIL_ENTITY = WizardEntityId.WHY
+COUNCIL_PERSONALITY = WizardPersonalityId.HOW
+COUNCIL_SURFACE_MODE = SurfaceMode.COUNCIL
 COUNCIL_FAMILIAR = FamiliarId.THY_THE
 COUNCIL_FAMILIAR_MODE = FamiliarMode.THE
 COUNCIL_ANCHOR = AnchorType.THE
@@ -183,8 +206,12 @@ COUNCIL_INQUIRY_PROMPT = (
 )
 
 
-def lane_character(domain: LaneDomain) -> CharacterId:
-    return LANE_TO_CHARACTER[domain]
+def lane_entity(domain: LaneDomain) -> WizardEntityId:
+    return LANE_TO_ENTITY[domain]
+
+
+def lane_personality(domain: LaneDomain) -> WizardPersonalityId:
+    return LANE_TO_PERSONALITY[domain]
 
 
 def lane_familiar(domain: LaneDomain) -> FamiliarId:
