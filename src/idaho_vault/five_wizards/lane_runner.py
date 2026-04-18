@@ -7,10 +7,10 @@ from collections import Counter
 from pydantic import BaseModel, ConfigDict, Field, model_validator
 
 from idaho_vault.five_wizards.enums import (
-    CharacterMode,
     ClaimConfidence,
     ClaimStatus,
     GateState,
+    InstitutionId,
     LaneDomain,
     MirageCategory,
     NoteAuthorKind,
@@ -18,11 +18,13 @@ from idaho_vault.five_wizards.enums import (
     ObjectionScope,
     ObjectionSeverity,
     ObjectionStatus,
+    SurfaceMode,
     familiar_label,
     lane_anchor_type,
-    lane_character,
+    lane_entity,
     lane_familiar,
     lane_familiar_mode,
+    lane_personality,
 )
 from idaho_vault.five_wizards.models import (
     Claim,
@@ -252,12 +254,14 @@ def _build_claim(
         Objection(
             objection_id=challenge.objection_id,
             run_id=run_id,
+            institution=InstitutionId.FIVE_WIZARDS,
             target_claim_id=claim_input.claim_id,
             scope=ObjectionScope.LANE,
             lane_domain=lane_domain,
             council_domain=None,
-            character=lane_character(lane_domain),
-            character_mode=CharacterMode.LANE,
+            entity=lane_entity(lane_domain),
+            personality=lane_personality(lane_domain),
+            surface_mode=SurfaceMode.LANE,
             familiar=lane_familiar(lane_domain),
             familiar_mode=lane_familiar_mode(lane_domain),
             severity=challenge.severity,
@@ -272,9 +276,11 @@ def _build_claim(
     return Claim(
         claim_id=claim_input.claim_id,
         run_id=run_id,
+        institution=InstitutionId.FIVE_WIZARDS,
         domain=lane_domain,
-        character=lane_character(lane_domain),
-        character_mode=CharacterMode.LANE,
+        entity=lane_entity(lane_domain),
+        personality=lane_personality(lane_domain),
+        surface_mode=SurfaceMode.LANE,
         wizard_role=wizard_role,
         familiar=lane_familiar(lane_domain),
         familiar_mode=lane_familiar_mode(lane_domain),
