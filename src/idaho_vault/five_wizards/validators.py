@@ -6,19 +6,23 @@ from collections import defaultdict
 from typing import Iterable
 
 from idaho_vault.five_wizards.enums import (
-    CharacterMode,
     ClaimStatus,
+    COUNCIL_ENTITY,
+    COUNCIL_PERSONALITY,
+    COUNCIL_SURFACE_MODE,
+    CouncilDomain,
     GateState,
+    InstitutionId,
     LaneDomain,
     LANE_TO_ANCHOR,
-    LANE_TO_CHARACTER,
+    LANE_TO_ENTITY,
     LANE_TO_FAMILIAR,
     LANE_TO_FAMILIAR_MODE,
+    LANE_TO_PERSONALITY,
     MirageCategory,
     ObjectionSeverity,
     ObjectionStatus,
-    COUNCIL_CHARACTER,
-    CouncilDomain,
+    SurfaceMode,
 )
 from idaho_vault.five_wizards.models import Claim, GateReport, ValidationVerdict
 
@@ -27,10 +31,14 @@ VALIDATOR_NAME = "idaho_vault.five_wizards.validators.adjudicate_claim"
 
 
 def _mapping_violation_reason(claim: Claim) -> str | None:
-    if claim.character is not LANE_TO_CHARACTER[claim.domain]:
-        return "character mismatch for lane domain"
-    if claim.character_mode is not CharacterMode.LANE:
-        return "claims must use LANE character mode"
+    if claim.institution is not InstitutionId.FIVE_WIZARDS:
+        return "claim must stay inside the FIVE_WIZARDS institution"
+    if claim.entity is not LANE_TO_ENTITY[claim.domain]:
+        return "entity mismatch for lane domain"
+    if claim.personality is not LANE_TO_PERSONALITY[claim.domain]:
+        return "personality mismatch for lane domain"
+    if claim.surface_mode is not SurfaceMode.LANE:
+        return "claims must use LANE surface mode"
     if claim.familiar is not LANE_TO_FAMILIAR[claim.domain]:
         return "familiar mismatch for lane domain"
     if claim.familiar_mode != LANE_TO_FAMILIAR_MODE[claim.domain]:
@@ -47,9 +55,11 @@ def adjudicate_claim(claim: Claim, *, validator: str = VALIDATOR_NAME) -> Valida
         return ValidationVerdict(
             claim_id=claim.claim_id,
             run_id=claim.run_id,
+            institution=claim.institution,
             domain=claim.domain,
-            character=claim.character,
-            character_mode=claim.character_mode,
+            entity=claim.entity,
+            personality=claim.personality,
+            surface_mode=claim.surface_mode,
             status=ClaimStatus.FAIL,
             reason="missing_anchor",
             mirage_categories=[MirageCategory.MISSING_ANCHOR],
@@ -63,9 +73,11 @@ def adjudicate_claim(claim: Claim, *, validator: str = VALIDATOR_NAME) -> Valida
         return ValidationVerdict(
             claim_id=claim.claim_id,
             run_id=claim.run_id,
+            institution=claim.institution,
             domain=claim.domain,
-            character=claim.character,
-            character_mode=claim.character_mode,
+            entity=claim.entity,
+            personality=claim.personality,
+            surface_mode=claim.surface_mode,
             status=ClaimStatus.FAIL,
             reason="missing_evidence",
             mirage_categories=[MirageCategory.MISSING_EVIDENCE],
@@ -80,9 +92,11 @@ def adjudicate_claim(claim: Claim, *, validator: str = VALIDATOR_NAME) -> Valida
         return ValidationVerdict(
             claim_id=claim.claim_id,
             run_id=claim.run_id,
+            institution=InstitutionId.FIVE_WIZARDS,
             domain=claim.domain,
-            character=LANE_TO_CHARACTER[claim.domain],
-            character_mode=CharacterMode.LANE,
+            entity=LANE_TO_ENTITY[claim.domain],
+            personality=LANE_TO_PERSONALITY[claim.domain],
+            surface_mode=SurfaceMode.LANE,
             status=ClaimStatus.BLOCKED,
             reason="invalid_mapping",
             mirage_categories=[],
@@ -101,9 +115,11 @@ def adjudicate_claim(claim: Claim, *, validator: str = VALIDATOR_NAME) -> Valida
         return ValidationVerdict(
             claim_id=claim.claim_id,
             run_id=claim.run_id,
+            institution=claim.institution,
             domain=claim.domain,
-            character=claim.character,
-            character_mode=claim.character_mode,
+            entity=claim.entity,
+            personality=claim.personality,
+            surface_mode=claim.surface_mode,
             status=ClaimStatus.DISPUTED,
             reason="fatal_objection",
             mirage_categories=[],
@@ -116,9 +132,11 @@ def adjudicate_claim(claim: Claim, *, validator: str = VALIDATOR_NAME) -> Valida
     return ValidationVerdict(
         claim_id=claim.claim_id,
         run_id=claim.run_id,
+        institution=claim.institution,
         domain=claim.domain,
-        character=claim.character,
-        character_mode=claim.character_mode,
+        entity=claim.entity,
+        personality=claim.personality,
+        surface_mode=claim.surface_mode,
         status=ClaimStatus.PASS,
         reason="grounded_for_current_scope",
         mirage_categories=[],
@@ -181,9 +199,12 @@ def build_gate_report(verdicts: Iterable[ValidationVerdict]) -> GateReport:
 
     return GateReport(
         run_id=run_id,
+        institution=InstitutionId.FIVE_WIZARDS,
         overall_state=overall_state,
         lane_states=lane_states,
-        council_character=COUNCIL_CHARACTER,
+        council_entity=COUNCIL_ENTITY,
+        council_personality=COUNCIL_PERSONALITY,
+        council_surface_mode=COUNCIL_SURFACE_MODE,
         council_domain=CouncilDomain.HOW,
         council_ready=council_ready,
         claim_counts=claim_counts,

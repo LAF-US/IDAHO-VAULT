@@ -12,8 +12,6 @@ if str(SRC_ROOT) not in sys.path:
 
 from idaho_vault.five_wizards.enums import (
     AnchorType,
-    CharacterId,
-    CharacterMode,
     ClaimConfidence,
     ClaimStatus,
     CouncilDomain,
@@ -22,6 +20,7 @@ from idaho_vault.five_wizards.enums import (
     FamiliarId,
     FamiliarMode,
     GateState,
+    InstitutionId,
     LaneDomain,
     MirageCategory,
     NoteAuthorKind,
@@ -29,6 +28,9 @@ from idaho_vault.five_wizards.enums import (
     ObjectionScope,
     ObjectionSeverity,
     ObjectionStatus,
+    SurfaceMode,
+    WizardEntityId,
+    WizardPersonalityId,
     lane_inquiry_prompt,
     COUNCIL_INQUIRY_PROMPT,
 )
@@ -103,8 +105,9 @@ class FiveWizardsTest(unittest.TestCase):
                 claim_id="who-001",
                 run_id="run-001",
                 domain=LaneDomain.WHO,
-                character=CharacterId.WHO,
-                character_mode=CharacterMode.LANE,
+                entity=WizardEntityId.WHO,
+                personality=WizardPersonalityId.WHO,
+                surface_mode=SurfaceMode.LANE,
                 wizard_role="identity scholar",
                 familiar=FamiliarId.THOU,
                 familiar_mode=None,
@@ -121,8 +124,9 @@ class FiveWizardsTest(unittest.TestCase):
                 claim_id="what-001",
                 run_id="run-001",
                 domain=LaneDomain.WHAT,
-                character=CharacterId.WHAT,
-                character_mode=CharacterMode.LANE,
+                entity=WizardEntityId.WHAT,
+                personality=WizardPersonalityId.WHAT,
+                surface_mode=SurfaceMode.LANE,
                 wizard_role="content scholar",
                 familiar=FamiliarId.THAT,
                 familiar_mode=None,
@@ -139,8 +143,9 @@ class FiveWizardsTest(unittest.TestCase):
                 claim_id="when-001",
                 run_id="run-001",
                 domain=LaneDomain.WHEN,
-                character=CharacterId.WHEN,
-                character_mode=CharacterMode.LANE,
+                entity=WizardEntityId.WHEN,
+                personality=WizardPersonalityId.WHEN,
+                surface_mode=SurfaceMode.LANE,
                 wizard_role="temporal scholar",
                 familiar=FamiliarId.THEN,
                 familiar_mode=None,
@@ -157,8 +162,9 @@ class FiveWizardsTest(unittest.TestCase):
                 claim_id="where-001",
                 run_id="run-001",
                 domain=LaneDomain.WHERE,
-                character=CharacterId.WHERE,
-                character_mode=CharacterMode.LANE,
+                entity=WizardEntityId.WHERE,
+                personality=WizardPersonalityId.WHERE,
+                surface_mode=SurfaceMode.LANE,
                 wizard_role="spatial scholar",
                 familiar=FamiliarId.THERE,
                 familiar_mode=None,
@@ -175,8 +181,9 @@ class FiveWizardsTest(unittest.TestCase):
                 claim_id="why-001",
                 run_id="run-001",
                 domain=LaneDomain.WHY,
-                character=CharacterId.WHY_HOW,
-                character_mode=CharacterMode.LANE,
+                entity=WizardEntityId.WHY,
+                personality=WizardPersonalityId.WHY,
+                surface_mode=SurfaceMode.LANE,
                 wizard_role="meaning scholar",
                 familiar=FamiliarId.THY_THE,
                 familiar_mode=FamiliarMode.THY,
@@ -197,8 +204,9 @@ class FiveWizardsTest(unittest.TestCase):
             run_id=claim.run_id,
             domain=claim.domain,
             author_kind=NoteAuthorKind.WIZARD,
-            character=claim.character,
-            character_mode=claim.character_mode,
+            entity=claim.entity,
+            personality=claim.personality,
+            surface_mode=claim.surface_mode,
             familiar=claim.familiar,
             familiar_mode=claim.familiar_mode,
             text=f"Private note for {domain.value}.",
@@ -219,8 +227,9 @@ class FiveWizardsTest(unittest.TestCase):
             scope=ObjectionScope.LANE,
             lane_domain=LaneDomain.WHO,
             council_domain=None,
-            character=CharacterId.WHO,
-            character_mode=CharacterMode.LANE,
+            entity=WizardEntityId.WHO,
+            personality=WizardPersonalityId.WHO,
+            surface_mode=SurfaceMode.LANE,
             familiar=FamiliarId.THOU,
             familiar_mode=None,
             severity=ObjectionSeverity.NOTE,
@@ -239,8 +248,9 @@ class FiveWizardsTest(unittest.TestCase):
             scope=ObjectionScope.COUNCIL,
             lane_domain=None,
             council_domain=CouncilDomain.HOW,
-            character=CharacterId.WHY_HOW,
-            character_mode=CharacterMode.COUNCIL,
+            entity=WizardEntityId.WHY,
+            personality=WizardPersonalityId.HOW,
+            surface_mode=SurfaceMode.COUNCIL,
             familiar=FamiliarId.THY_THE,
             familiar_mode=FamiliarMode.THE,
             severity=ObjectionSeverity.CONCERN,
@@ -258,8 +268,9 @@ class FiveWizardsTest(unittest.TestCase):
             report_id=f"{domain.value.lower()}-report-001",
             run_id=claim.run_id,
             domain=claim.domain,
-            character=claim.character,
-            character_mode=claim.character_mode,
+            entity=claim.entity,
+            personality=claim.personality,
+            surface_mode=claim.surface_mode,
             wizard_role=claim.wizard_role,
             familiar=claim.familiar,
             familiar_mode=claim.familiar_mode,
@@ -278,8 +289,9 @@ class FiveWizardsTest(unittest.TestCase):
             note_id="gaggle-001",
             run_id="run-001",
             council_domain=CouncilDomain.HOW,
-            host_character=CharacterId.WHY_HOW,
-            host_character_mode=CharacterMode.COUNCIL,
+            host_entity=WizardEntityId.WHY,
+            host_personality=WizardPersonalityId.HOW,
+            host_surface_mode=SurfaceMode.COUNCIL,
             host_familiar=FamiliarId.THY_THE,
             host_familiar_mode=FamiliarMode.THE,
             participant_familiars=[
@@ -301,8 +313,9 @@ class FiveWizardsTest(unittest.TestCase):
             session_id="session-001",
             run_id="run-001",
             council_domain=CouncilDomain.HOW,
-            convener_character=CharacterId.WHY_HOW,
-            convener_character_mode=CharacterMode.COUNCIL,
+            convener_entity=WizardEntityId.WHY,
+            convener_personality=WizardPersonalityId.HOW,
+            convener_surface_mode=SurfaceMode.COUNCIL,
             convener_familiar=FamiliarId.THY_THE,
             convener_familiar_mode=FamiliarMode.THE,
             status=CouncilSessionStatus.CONVENED,
@@ -413,12 +426,14 @@ class FiveWizardsTest(unittest.TestCase):
     def test_why_and_how_switch_modes(self) -> None:
         why_claim = self.make_claim(LaneDomain.WHY)
         how_objection = self.make_council_objection()
-        self.assertEqual(why_claim.character, CharacterId.WHY_HOW)
-        self.assertEqual(why_claim.character_mode, CharacterMode.LANE)
+        self.assertEqual(why_claim.entity, WizardEntityId.WHY)
+        self.assertEqual(why_claim.personality, WizardPersonalityId.WHY)
+        self.assertEqual(why_claim.surface_mode, SurfaceMode.LANE)
         self.assertEqual(why_claim.familiar, FamiliarId.THY_THE)
         self.assertEqual(why_claim.familiar_mode, FamiliarMode.THY)
-        self.assertEqual(how_objection.character, CharacterId.WHY_HOW)
-        self.assertEqual(how_objection.character_mode, CharacterMode.COUNCIL)
+        self.assertEqual(how_objection.entity, WizardEntityId.WHY)
+        self.assertEqual(how_objection.personality, WizardPersonalityId.HOW)
+        self.assertEqual(how_objection.surface_mode, SurfaceMode.COUNCIL)
         self.assertEqual(how_objection.familiar, FamiliarId.THY_THE)
         self.assertEqual(how_objection.familiar_mode, FamiliarMode.THE)
 
@@ -471,9 +486,11 @@ class FiveWizardsTest(unittest.TestCase):
         claim = Claim.model_construct(
             claim_id="who-001",
             run_id="run-001",
+            institution=InstitutionId.FIVE_WIZARDS,
             domain=LaneDomain.WHO,
-            character=CharacterId.WHAT,
-            character_mode=CharacterMode.LANE,
+            entity=WizardEntityId.WHAT,
+            personality=WizardPersonalityId.WHAT,
+            surface_mode=SurfaceMode.LANE,
             wizard_role="identity scholar",
             familiar=FamiliarId.THOU,
             familiar_mode=None,
@@ -635,8 +652,9 @@ class FiveWizardsTest(unittest.TestCase):
         self.assertEqual(session.status, CouncilSessionStatus.CONVENED)
         self.assertEqual(session.council_report_ids, [report.report_id for report in reports])
         self.assertEqual(session.familiar_gaggle_note_ids, [gaggle.note_id])
-        self.assertEqual(session.convener_character, CharacterId.WHY_HOW)
-        self.assertEqual(session.convener_character_mode, CharacterMode.COUNCIL)
+        self.assertEqual(session.convener_entity, WizardEntityId.WHY)
+        self.assertEqual(session.convener_personality, WizardPersonalityId.HOW)
+        self.assertEqual(session.convener_surface_mode, SurfaceMode.COUNCIL)
         self.assertEqual(gaggle.participant_familiars[-1], FamiliarId.THY_THE)
         self.assertEqual(gaggle.participant_modes[-1], FamiliarMode.THY)
 
@@ -843,7 +861,8 @@ class FiveWizardsTest(unittest.TestCase):
         result = run_lane(request)
 
         self.assertEqual(result.lane_domain, LaneDomain.WHO)
-        self.assertEqual(result.claims[0].character, CharacterId.WHO)
+        self.assertEqual(result.claims[0].entity, WizardEntityId.WHO)
+        self.assertEqual(result.claims[0].personality, WizardPersonalityId.WHO)
         self.assertEqual(result.claims[0].familiar, FamiliarId.THOU)
         self.assertIsNone(result.claims[0].familiar_mode)
         self.assertEqual(result.lane_state, GateState.GREEN)
@@ -878,8 +897,9 @@ class FiveWizardsTest(unittest.TestCase):
         result = run_lane(request)
 
         self.assertEqual(result.lane_domain, LaneDomain.WHY)
-        self.assertEqual(result.claims[0].character, CharacterId.WHY_HOW)
-        self.assertEqual(result.claims[0].character_mode, CharacterMode.LANE)
+        self.assertEqual(result.claims[0].entity, WizardEntityId.WHY)
+        self.assertEqual(result.claims[0].personality, WizardPersonalityId.WHY)
+        self.assertEqual(result.claims[0].surface_mode, SurfaceMode.LANE)
         self.assertEqual(result.claims[0].familiar, FamiliarId.THY_THE)
         self.assertEqual(result.claims[0].familiar_mode, FamiliarMode.THY)
         self.assertEqual(result.wizard_note.familiar_mode, FamiliarMode.THY)
@@ -935,7 +955,8 @@ class FiveWizardsTest(unittest.TestCase):
         self.assertEqual(where_result.lane_domain, LaneDomain.WHERE)
         self.assertEqual(where_result.claims[0].familiar, FamiliarId.THERE)
         self.assertEqual(why_result.lane_domain, LaneDomain.WHY)
-        self.assertEqual(why_result.claims[0].character, CharacterId.WHY_HOW)
+        self.assertEqual(why_result.claims[0].entity, WizardEntityId.WHY)
+        self.assertEqual(why_result.claims[0].personality, WizardPersonalityId.WHY)
         self.assertEqual(why_result.claims[0].familiar, FamiliarId.THY_THE)
         self.assertEqual(why_result.claims[0].familiar_mode, FamiliarMode.THY)
 
@@ -1196,17 +1217,20 @@ class FiveWizardsTest(unittest.TestCase):
 
         session_md = render_council_session_markdown(session)
         self.assertIn("CONVENED", session_md.upper())
-        self.assertIn("WHY_HOW", session_md)
+        self.assertIn("Convener Entity", session_md)
+        self.assertIn("Convener Personality", session_md)
+        self.assertIn("HOW", session_md)
         self.assertIn("Method Warnings", session_md)
         self.assertIn("Debate Threads", session_md)
 
         verdict_md = render_validation_verdict_markdown(verdict)
         self.assertIn("pass", verdict_md)
-        self.assertIn("Character Mode", verdict_md)
+        self.assertIn("Surface Mode", verdict_md)
 
         report_md = render_gate_report_markdown(report)
         self.assertIn("HOW", report_md)
-        self.assertIn("WHY_HOW", report_md)
+        self.assertIn("Council Entity", report_md)
+        self.assertIn("Council Personality", report_md)
         self.assertIn("green", report_md)
 
 
