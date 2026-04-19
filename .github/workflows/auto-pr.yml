@@ -100,8 +100,20 @@ jobs:
           BRANCH_NAME: ${{ github.event_name == 'create' && github.event.ref || github.ref_name }}
         run: |
           BRANCH="${BRANCH_NAME}"
-          # Derive title: strip agent prefix (claude/, codex/, gemini/, etc.) and session suffix
-          TITLE=$(echo "$BRANCH" | sed 's|^[^/]*/||' | sed 's|-[a-zA-Z0-9]*$||' | tr '-' ' ')
+          # Derive title: strip agent prefix (claude/, codex/, gemini/, etc.);
+          # then conditionally strip a trailing session-token segment.
+          #
+          # A session token looks like a short mixed-case alphanumeric with
+          # at least one digit or uppercase letter (e.g. "U4XDk", "aB3xY2").
+          # Plain lowercase words at the end (e.g. "audit", "probe", "purge")
+          # are kept — they carry real intent.
+          TITLE_BARE=$(echo "$BRANCH" | sed 's|^[^/]*/||')
+          LAST_SEG=$(echo "$TITLE_BARE" | sed 's|^.*-||')
+          if [[ "$LAST_SEG" =~ [A-Z0-9] ]]; then
+            TITLE=$(echo "$TITLE_BARE" | sed 's|-[^-]*$||' | tr '-' ' ')
+          else
+            TITLE=$(echo "$TITLE_BARE" | tr '-' ' ')
+          fi
           # Extract agent name from branch prefix
           AGENT=$(echo "$BRANCH" | sed 's|/.*||')
           TIER="$RISK_TIER"
