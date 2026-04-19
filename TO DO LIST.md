@@ -2,7 +2,7 @@
 title: TO DO LIST
 linter-yaml-title-alias: TO DO LIST
 date created: Friday, March 27th 2026, 10:09:45 am
-date modified: Tuesday, April 7th 2026, 12:21:52 pm
+date modified: Sunday, April 19th 2026, 12:11:07 pm
 related:
   - DAILY NOTE
   - Data Centers
