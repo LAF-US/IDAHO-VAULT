@@ -15,13 +15,15 @@ Persistent list. Incomplete items carry forward daily.
 
 ## Active
 
-- WORK
-- [ ] FMLA PAPERWORK
 - VAULT
+- [ ] FIX DAILY NOTE SYNCING/CARRYFORWARD
+	- [ ] Tasks completed on a DAY were not checked off here.
+	- [ ] Tasks uncomplete on a DAY were not added to here.
 - [ ] FIX DAILY NOTE SYNCING / CARRYFORWARD
 	- [ ] Tasks completed on a daily note should be reflected here intentionally.
 	- [ ] Tasks left unfinished on a daily note should be carried forward intentionally.
-- PERSONAL
+- WORK
+- [ ] FMLA PAPERWORK
 
 ## Recently Finished
 
