@@ -42,7 +42,7 @@ class BackfillDailyNotesTest(unittest.TestCase):
 
                     [[TO DO LIST]]
 
-                    - [ ] [[YESTERDAY]]
+                    - [ ] LEGACY BACKLOG TASK
                     - VAULT
                     - [ ] FIX DAILY NOTE SYNCING/CARRYFORWARD
                     \t- [ ] Tasks completed on a DAY were not checked off here.

@@ -1,0 +1,80 @@
+name: Daily Notes Placeholder Check
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  check-date-placeholders:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+        with:
+          fetch-depth: 0
+
+      - name: Check for unresolved date-placeholder tokens
+        shell: bash
+        run: |
+          set +H  # Disable bash history expansion
+
+          # Determine which files to check. If the diff command fails (e.g. base
+          # ref missing from checkout), fall back to the full tree so the check
+          # still runs — a silent empty-file-list would make the job pass vacuously.
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            DIFF_TARGET="origin/${{ github.base_ref }}...HEAD"
+          else
+            DIFF_TARGET="HEAD~1...HEAD"
+          fi
+
+          if ! FILES=$(git -c core.quotePath=false diff --name-only "$DIFF_TARGET" 2>/dev/null); then
+            FILES=$(git -c core.quotePath=false ls-tree -r HEAD --name-only)
+          fi
+
+          VIOLATIONS=""
+
+          while IFS= read -r filepath; do
+            [ -z "$filepath" ] && continue
+            [ ! -f "$filepath" ] && continue
+
+            # Scope: daily-note files (YYYY-MM-DD.md at repo root) or TO DO LIST.md
+            base=$(basename -- "$filepath")
+            dir=$(dirname -- "$filepath")
+
+            scoped=false
+            if [ "$dir" = "." ]; then
+              if [[ "$base" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}\.md$ ]]; then
+                scoped=true
+              elif [ "$base" = "TO DO LIST.md" ]; then
+                scoped=true
+              fi
+            fi
+            [ "$scoped" = "false" ] && continue
+
+            # Grep for unresolved placeholder tokens with line numbers
+            if hits=$(grep -nE '\[\[(YESTERDAY|TOMORROW|TODAY)\]\]' "$filepath"); then
+              while IFS= read -r hit; do
+                VIOLATIONS="${VIOLATIONS}  ${filepath}:${hit}\n"
+              done <<< "$hits"
+            fi
+          done <<< "$FILES"
+
+          if [ -n "$VIOLATIONS" ]; then
+            echo "::error::Unresolved date-placeholder tokens detected in daily notes or TO DO LIST.md"
+            echo ""
+            echo "These tokens ([[YESTERDAY]], [[TOMORROW]], [[TODAY]]) are syntactically"
+            echo "valid wikilinks but resolve to non-existent files. When they land in"
+            echo "persistent carryforward surfaces, daily_rollover.py propagates them"
+            echo "every run, contaminating subsequent notes."
+            echo ""
+            echo "Offending lines:"
+            echo -e "$VIOLATIONS"
+            echo ""
+            echo "Fix: either replace with a concrete task or delete the line."
+            exit 1
+          fi
+
+          echo "No unresolved date-placeholder tokens in daily notes or TO DO LIST.md."

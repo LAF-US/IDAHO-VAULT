@@ -50,6 +50,11 @@ DANGEROUS_PATTERNS = [
     re.compile(r"<embed", re.IGNORECASE),
 ]
 
+# Unresolved date-placeholder tokens must not persist in daily notes or the
+# carryforward list. They compound across rollover runs (see PR for context).
+DATE_PLACEHOLDER_RE = re.compile(r"\[\[(YESTERDAY|TOMORROW|TODAY)\]\]")
+DAILY_NOTE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}\.md$")
+
 # Sponsor names should be alphabetic with common punctuation
 SPONSOR_NAME_RE = re.compile(r"^[A-Za-z\s.\-',()]+$")
 
@@ -102,6 +107,20 @@ def validate_file_size(path: Path) -> list[str]:
     if path.exists() and path.stat().st_size > MAX_FILE_SIZE_BYTES:
         size_kb = path.stat().st_size / 1024
         errors.append(f"{path}: File too large ({size_kb:.1f} KB > {MAX_FILE_SIZE_BYTES // 1024} KB limit)")
+    return errors
+
+
+def validate_date_placeholders(path: Path, content: str) -> list[str]:
+    """Scope-limited check: no [[YESTERDAY]]/[[TOMORROW]]/[[TODAY]] in daily
+    notes or TO DO LIST.md. Other files may legitimately mention the tokens
+    in prose (VAULT-CONVENTIONS.md, agent instructions, etc.)."""
+    name = path.name
+    if not (DAILY_NOTE_RE.match(name) or name == "TO DO LIST.md"):
+        return []
+    errors = []
+    for i, line in enumerate(content.splitlines(), 1):
+        if DATE_PLACEHOLDER_RE.search(line):
+            errors.append(f"{path}:{i}: unresolved date placeholder token")
     return errors
 
 
@@ -159,6 +178,7 @@ def main() -> int:
             content = path.read_text(encoding="utf-8", errors="replace")
             all_errors.extend(validate_frontmatter(path, content))
             all_errors.extend(validate_content_safety(path, content))
+            all_errors.extend(validate_date_placeholders(path, content))
             all_errors.extend(validate_sponsor_names(path, content))
 
     if all_errors:
