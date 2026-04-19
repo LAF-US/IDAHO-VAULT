@@ -366,6 +366,12 @@ def _build_gate_report(
     grace_minutes: int = DEFAULT_GRACE_MINUTES,
     auto_resolve_reviewers: set[str] | None = None,
 ) -> dict[str, object]:
+    # The cron is a gardener, not a re-gater. It scans only PRs already in
+    # `agent-review-pending` and performs the single forward-advance transition
+    # (pending -> auto-merge) when the grace window has elapsed and nothing is
+    # blocking. The full five-axis label projection lives in event-driven
+    # workflows (push/comment/review) where there is actually new information
+    # to react to; a 30-minute tick is not new information.
     open_prs = json.loads(
         _run(
             [
@@ -374,6 +380,8 @@ def _build_gate_report(
                 "list",
                 "--state",
                 "open",
+                "--label",
+                DEFAULT_REVIEW_PENDING_LABEL,
                 "--json",
                 "number",
             ]
@@ -393,10 +401,23 @@ def _build_gate_report(
             auto_resolve_reviewers=auto_resolve_reviewers,
         )
 
-        actions = apply_review_state_projection(pr_number, state)
-        if state["eligible_for_auto_merge"] and DEFAULT_AUTO_MERGE_LABEL not in set(state["labels"]):
+        actions: list[str] = []
+        current_labels = set(state["labels"])
+        if (
+            state["eligible_for_auto_merge"]
+            and not bool(state["merge_blocked"])
+            and DEFAULT_AUTO_MERGE_LABEL not in current_labels
+        ):
+            if DEFAULT_REVIEW_PENDING_LABEL in current_labels:
+                _edit_label(pr_number, remove=DEFAULT_REVIEW_PENDING_LABEL)
+                actions.append(f"remove:{DEFAULT_REVIEW_PENDING_LABEL}")
             _edit_label(pr_number, add=DEFAULT_AUTO_MERGE_LABEL)
             actions.append(f"add:{DEFAULT_AUTO_MERGE_LABEL}")
+            _comment(
+                pr_number,
+                f"⏱️ Agent review grace period ({grace_minutes} min) elapsed "
+                f"with no blocking feedback. Promoting to `auto-merge`.",
+            )
             promoted.append(pr_number)
 
         evaluated.append(
