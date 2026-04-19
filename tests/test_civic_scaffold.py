@@ -12,15 +12,21 @@ if str(SRC_ROOT) not in sys.path:
     sys.path.insert(0, str(SRC_ROOT))
 
 from idaho_vault.civic_scaffold import (
-    COMMON_LOOP,
-    PACKET_REFS,
+    CIVIC_ENTITY_AUTHORITY,
+    CIVIC_ENTITY_ID,
+    CIVIC_ENTITY_TITLE,
+    FIVE_WIZARDS_TITLE,
+    GOVERNANCE_SURFACES,
     STAGING_SURFACE,
     DistrictId,
+    DistrictKind,
     DistrictReadiness,
+    InstitutionKind,
     StandingRank,
     build_civic_scaffold,
     render_civic_scaffold_markdown,
 )
+from idaho_vault.five_wizards.enums import CouncilDomain, InstitutionId as RuntimeInstitutionId
 from idaho_vault.operator_context import (
     BOOT_CHAIN_SURFACES,
     OPERATOR_FRONT_DOOR_SURFACES,
@@ -67,13 +73,30 @@ class CivicScaffoldTest(unittest.TestCase):
             shutil.rmtree(root, ignore_errors=True)
 
         district_map = {district.district_id: district for district in scaffold.districts}
+        institution_map = {
+            institution.institution_id: institution for institution in scaffold.institutions
+        }
 
-        self.assertEqual(scaffold.current_rank, StandingRank.WITNESS)
-        self.assertTrue(scaffold.boot_chain_ok)
-        self.assertTrue(scaffold.operator_front_door_ok)
-        self.assertEqual(scaffold.staging_surface, STAGING_SURFACE)
-        self.assertEqual(scaffold.common_loop, COMMON_LOOP)
-        self.assertEqual(scaffold.packet_refs, PACKET_REFS)
+        self.assertEqual(scaffold.entity.entity_id, CIVIC_ENTITY_ID)
+        self.assertEqual(scaffold.entity.title, CIVIC_ENTITY_TITLE)
+        self.assertEqual(scaffold.entity.authority, CIVIC_ENTITY_AUTHORITY)
+        self.assertEqual(scaffold.entity.current_rank, StandingRank.WITNESS)
+        self.assertTrue(scaffold.entity.boot_chain_ok)
+        self.assertTrue(scaffold.entity.operator_front_door_ok)
+        self.assertEqual(scaffold.entity.governance_surfaces, GOVERNANCE_SURFACES)
+        self.assertEqual(scaffold.entity.staging_surface, STAGING_SURFACE)
+        self.assertEqual(
+            institution_map[RuntimeInstitutionId.FIVE_WIZARDS.value].title,
+            FIVE_WIZARDS_TITLE,
+        )
+        self.assertEqual(
+            institution_map[RuntimeInstitutionId.FIVE_WIZARDS.value].kind,
+            InstitutionKind.COUNCIL,
+        )
+        self.assertEqual(
+            institution_map[RuntimeInstitutionId.FIVE_WIZARDS.value].council_domains,
+            (CouncilDomain.HOW.value,),
+        )
         self.assertEqual(
             district_map[DistrictId.ROOT_AWAKENING].readiness,
             DistrictReadiness.SCAFFOLDED,
@@ -94,12 +117,31 @@ class CivicScaffoldTest(unittest.TestCase):
             district_map[DistrictId.POST_ROOM].readiness,
             DistrictReadiness.DECLARED,
         )
+        self.assertEqual(
+            district_map[DistrictId.FORGE].kind,
+            DistrictKind.TRANSPORT,
+        )
+        self.assertFalse(district_map[DistrictId.DOCKET].locally_executable)
         self.assertIn("2026-04-17.md", district_map[DistrictId.ORIENTATION_HALL].surfaces)
+        self.assertEqual(
+            district_map[DistrictId.FORGE].institutions,
+            (RuntimeInstitutionId.FIVE_WIZARDS.value,),
+        )
+        self.assertEqual(
+            district_map[DistrictId.ORIENTATION_HALL].missing_requirements,
+            (),
+        )
 
         markdown = render_civic_scaffold_markdown(scaffold)
         self.assertIn("# Civic Scaffold", markdown)
+        self.assertIn("## Civic Entity", markdown)
+        self.assertIn("## Institutions", markdown)
+        self.assertIn(CIVIC_ENTITY_TITLE, markdown)
+        self.assertIn(FIVE_WIZARDS_TITLE, markdown)
         self.assertIn(STAGING_SURFACE, markdown)
-        self.assertIn("Spawn / Root Awakening", markdown)
+        self.assertIn("Root Awakening", markdown)
+        self.assertIn("- Kind: `transport`", markdown)
+        self.assertNotIn("- Lesson:", markdown)
 
     def test_build_civic_scaffold_blocks_front_door_when_surfaces_are_missing(self) -> None:
         root = PROJECT_ROOT / "tests" / "_tmp_civic_scaffold_missing"
@@ -115,10 +157,17 @@ class CivicScaffoldTest(unittest.TestCase):
             shutil.rmtree(root, ignore_errors=True)
 
         district_map = {district.district_id: district for district in scaffold.districts}
+        institution_map = {
+            institution.institution_id: institution for institution in scaffold.institutions
+        }
 
-        self.assertEqual(scaffold.current_rank, StandingRank.NOVICE)
-        self.assertTrue(scaffold.boot_chain_ok)
-        self.assertFalse(scaffold.operator_front_door_ok)
+        self.assertEqual(scaffold.entity.current_rank, StandingRank.NOVICE)
+        self.assertTrue(scaffold.entity.boot_chain_ok)
+        self.assertFalse(scaffold.entity.operator_front_door_ok)
+        self.assertEqual(
+            institution_map[RuntimeInstitutionId.FIVE_WIZARDS.value].readiness,
+            DistrictReadiness.BLOCKED,
+        )
         self.assertEqual(
             district_map[DistrictId.ORIENTATION_HALL].readiness,
             DistrictReadiness.BLOCKED,
@@ -131,6 +180,7 @@ class CivicScaffoldTest(unittest.TestCase):
             district_map[DistrictId.MACHINERY_FLOOR].readiness,
             DistrictReadiness.SCAFFOLDED,
         )
+        self.assertIn("2026-04-17.md", district_map[DistrictId.FORGE].missing_requirements)
 
 
 if __name__ == "__main__":

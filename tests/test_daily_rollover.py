@@ -23,6 +23,46 @@ daily_rollover = _load_daily_rollover_module()
 
 
 class DailyRolloverTest(unittest.TestCase):
+    def test_extract_todo_section_respects_marker_inside_named_carryforward_section(self) -> None:
+        content = textwrap.dedent(
+            """\
+            ---
+            title: 2026-04-19
+            ---
+
+            ## Day planner
+
+            - [ ] 08:00 Morning startup
+
+            ## Carryforward From [[TO DO LIST]]
+
+            [[TO DO LIST]]
+
+            - WORK
+            - [ ] Restore the real marker
+            - VAULT
+            - [ ] Keep rollover truthful
+
+            ## Habits
+
+            - [ ] Startup
+            """
+        )
+
+        todo_lines = daily_rollover.extract_todo_section(content)
+
+        self.assertEqual(
+            todo_lines,
+            [
+                "",
+                "- WORK",
+                "- [ ] Restore the real marker",
+                "- VAULT",
+                "- [ ] Keep rollover truthful",
+                "",
+            ],
+        )
+
     def test_build_backlog_lines_uses_source_as_authority_and_drops_placeholders(self) -> None:
         source_lines = [
             "- WORK",

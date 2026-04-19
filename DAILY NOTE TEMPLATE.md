@@ -19,49 +19,21 @@ tags:
   - dailynote
 related:
   - TO DO LIST
-  - HABIT TRACKER
 date created: {{date:dddd, MMMM Do YYYY, [12:00:00 am]}}
 date modified: {{date:dddd, MMMM Do YYYY, [12:00:00 am]}}
 ---
 
 # {{date:dddd, MMMM D, YYYY}}
 
-## Top Line
-
-- Main outcome:
-- Must win:
-- Nice to have:
-
-## Top 3
-
-- [ ] 
-- [ ] 
-- [ ] 
-
 ## Day planner
 
-- [ ] 08:00 Morning startup
-- [ ] 13:00 Main work block
-- [ ] 17:00 Close and carryforward
+## Daily Queue
 
-## Carryforward From [[TO DO LIST]]
+[[TO DO LIST]]
 
-```tasks
-not done
-path includes TO DO LIST.md
-sort by description
-```
+*(no incomplete items carried forward)*
 
-## Habits
-
-- [ ] Morning startup and orient to live surfaces #habit
-- [ ] Review [[TO DO LIST]] and choose today's Top 3 #habit
-- [ ] Advance one WORK item #habit
-- [ ] Advance one VAULT item #habit
-- [ ] Handle one PERSONAL or admin item #habit
-- [ ] End-of-day close and carryforward #habit
-
-## Notes / Capture
+## Notes
 
 - 
 

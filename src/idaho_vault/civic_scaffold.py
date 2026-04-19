@@ -1,4 +1,4 @@
-"""Bare-bones civic-fantasy scaffold built from live operator machinery."""
+"""Bare-bones civic scaffold built from live operator machinery."""
 
 from __future__ import annotations
 
@@ -7,6 +7,11 @@ from enum import Enum
 from pathlib import Path
 from typing import Any
 
+from idaho_vault.five_wizards.enums import (
+    CouncilDomain,
+    InstitutionId as RuntimeInstitutionId,
+    LaneDomain,
+)
 from idaho_vault.operator_context import (
     BOOT_CHAIN_SURFACES,
     OPERATOR_FRONT_DOOR_SURFACES,
@@ -49,24 +54,33 @@ class DistrictId(StringEnum):
     MACHINERY_FLOOR = "machinery-floor"
 
 
-PACKET_REFS = (
-    "!/STUDIO-PACKET-SYNTHESIS-CIVIC-FANTASY-2026-04-17.md",
-    "!/STANDING-ENGINE-AND-LAWFUL-ENDINGS-2026-04-17.md",
-    "!/HUB-WORLD-ROUTE-MAP-2026-04-17.md",
-    "!/CIVIC-LAW-AND-VAULTED-SYNTAX-2026-04-17.md",
-)
+class DistrictKind(StringEnum):
+    """Neutral district classification for the scaffold."""
 
+    BOOT = "boot"
+    ORIENTATION = "orientation"
+    TRANSPORT = "transport"
+    CASEWORK = "casework"
+    INTAKE = "intake"
+    RECORD = "record"
+    MACHINERY = "machinery"
+
+CIVIC_ENTITY_ID = "idaho-vault"
+CIVIC_ENTITY_TITLE = "IDAHO-VAULT"
+CIVIC_ENTITY_AUTHORITY = "LOGAN"
+GOVERNANCE_SURFACES = ("CONSTITUTION.md", "DECISIONS.md", "VAULT-CONVENTIONS.md")
 LOCAL_MACHINERY_REFS = (
     "src/idaho_vault/operator_context.py",
     "src/idaho_vault/bootstrap_contract.py",
     "src/idaho_vault/five_wizards/workflow.py",
     "src/idaho_vault/five_wizards/threshold_runner.py",
 )
-
-COMMON_LOOP = (
-    "awakening at root -> orientation through live surfaces -> entry into a district -> "
-    "threshold trial -> truthful artifact -> return to center -> Logan decides "
-    "promotion, staging, deferment, burial, or merge"
+FIVE_WIZARDS_TITLE = "5Wizards' Council of Journalistic Inquiries"
+FIVE_WIZARDS_RUNTIME_SURFACES = (
+    "src/idaho_vault/five_wizards/workflow.py",
+    "src/idaho_vault/five_wizards/service.py",
+    "src/idaho_vault/five_wizards/staging.py",
+    "src/idaho_vault/five_wizards/threshold_runner.py",
 )
 
 STAGING_SURFACE = "!/CREWAI/"
@@ -78,12 +92,13 @@ class RouteDistrict:
 
     district_id: DistrictId
     title: str
+    kind: DistrictKind
     readiness: DistrictReadiness
-    lesson: str
-    artifact: str
-    return_condition: str
+    locally_executable: bool
     surfaces: tuple[str, ...]
-    notes: tuple[str, ...] = ()
+    institutions: tuple[str, ...] = ()
+    requirements: tuple[str, ...] = ()
+    missing_requirements: tuple[str, ...] = ()
 
     def to_dict(self) -> dict[str, Any]:
         """Return a machine-readable representation of the district."""
@@ -91,27 +106,95 @@ class RouteDistrict:
         return {
             "district_id": self.district_id.value,
             "title": self.title,
+            "kind": self.kind.value,
             "readiness": self.readiness.value,
-            "lesson": self.lesson,
-            "artifact": self.artifact,
-            "return_condition": self.return_condition,
+            "locally_executable": self.locally_executable,
             "surfaces": list(self.surfaces),
-            "notes": list(self.notes),
+            "institutions": list(self.institutions),
+            "requirements": list(self.requirements),
+            "missing_requirements": list(self.missing_requirements),
+        }
+
+
+@dataclass(frozen=True)
+class CivicEntitySetup:
+    """Top-level civic entity contract for the scaffold."""
+
+    entity_id: str
+    title: str
+    authority: str
+    current_rank: StandingRank
+    boot_chain_ok: bool
+    operator_front_door_ok: bool
+    governance_surfaces: tuple[str, ...]
+    boot_chain_surfaces: tuple[str, ...]
+    operator_front_door_surfaces: tuple[str, ...]
+    staging_surface: str
+
+    def to_dict(self) -> dict[str, Any]:
+        """Return a machine-readable representation of the civic entity setup."""
+
+        return {
+            "entity_id": self.entity_id,
+            "title": self.title,
+            "authority": self.authority,
+            "current_rank": self.current_rank.value,
+            "boot_chain_ok": self.boot_chain_ok,
+            "operator_front_door_ok": self.operator_front_door_ok,
+            "governance_surfaces": list(self.governance_surfaces),
+            "boot_chain_surfaces": list(self.boot_chain_surfaces),
+            "operator_front_door_surfaces": list(self.operator_front_door_surfaces),
+            "staging_surface": self.staging_surface,
+        }
+
+
+class InstitutionKind(StringEnum):
+    """High-level institution type mounted inside the civic entity."""
+
+    COUNCIL = "council"
+
+
+@dataclass(frozen=True)
+class ResidentInstitution:
+    """A concrete institution mounted inside the civic entity."""
+
+    institution_id: str
+    title: str
+    kind: InstitutionKind
+    readiness: DistrictReadiness
+    locally_executable: bool
+    authority: str
+    home_districts: tuple[DistrictId, ...]
+    runtime_surfaces: tuple[str, ...]
+    lane_domains: tuple[str, ...] = ()
+    council_domains: tuple[str, ...] = ()
+    staging_surface: str | None = None
+
+    def to_dict(self) -> dict[str, Any]:
+        """Return a machine-readable representation of the institution."""
+
+        return {
+            "institution_id": self.institution_id,
+            "title": self.title,
+            "kind": self.kind.value,
+            "readiness": self.readiness.value,
+            "locally_executable": self.locally_executable,
+            "authority": self.authority,
+            "home_districts": [district.value for district in self.home_districts],
+            "runtime_surfaces": list(self.runtime_surfaces),
+            "lane_domains": list(self.lane_domains),
+            "council_domains": list(self.council_domains),
+            "staging_surface": self.staging_surface,
         }
 
 
 @dataclass(frozen=True)
 class CivicScaffold:
-    """Machine-readable civic-fantasy scaffold derived from current repo truth."""
+    """Machine-readable civic scaffold derived from current repo truth."""
 
     root: Path
-    current_rank: StandingRank
-    boot_chain_ok: bool
-    operator_front_door_ok: bool
-    staging_surface: str
-    common_loop: str
-    packet_refs: tuple[str, ...]
-    local_machinery_refs: tuple[str, ...]
+    entity: CivicEntitySetup
+    institutions: tuple[ResidentInstitution, ...]
     districts: tuple[RouteDistrict, ...]
 
     def to_dict(self) -> dict[str, Any]:
@@ -119,13 +202,8 @@ class CivicScaffold:
 
         return {
             "root": str(self.root),
-            "current_rank": self.current_rank.value,
-            "boot_chain_ok": self.boot_chain_ok,
-            "operator_front_door_ok": self.operator_front_door_ok,
-            "staging_surface": self.staging_surface,
-            "common_loop": self.common_loop,
-            "packet_refs": list(self.packet_refs),
-            "local_machinery_refs": list(self.local_machinery_refs),
+            "entity": self.entity.to_dict(),
+            "institutions": [institution.to_dict() for institution in self.institutions],
             "districts": [district.to_dict() for district in self.districts],
         }
 
@@ -135,33 +213,94 @@ class CivicScaffold:
         lines = [
             "# Civic Scaffold",
             "",
-            f"- Current rank: `{self.current_rank.value}`",
-            f"- Boot chain ok: `{'yes' if self.boot_chain_ok else 'no'}`",
-            f"- Operator front door ok: `{'yes' if self.operator_front_door_ok else 'no'}`",
-            f"- Staging surface: `{self.staging_surface}`",
+            "## Civic Entity",
             "",
-            "## Common Loop",
+            f"- Id: `{self.entity.entity_id}`",
+            f"- Title: `{self.entity.title}`",
+            f"- Authority: `{self.entity.authority}`",
+            f"- Current rank: `{self.entity.current_rank.value}`",
+            f"- Boot chain ok: `{'yes' if self.entity.boot_chain_ok else 'no'}`",
+            (
+                "- Operator front door ok: "
+                f"`{'yes' if self.entity.operator_front_door_ok else 'no'}`"
+            ),
+            "- Governance surfaces: "
+            + ", ".join(f"`{surface}`" for surface in self.entity.governance_surfaces),
+            "- Staging surface: "
+            + f"`{self.entity.staging_surface}`",
             "",
-            self.common_loop,
-            "",
-            "## Districts",
+            "## Institutions",
             "",
         ]
+
+        for institution in self.institutions:
+            lines.extend(
+                [
+                    f"### {institution.title}",
+                    "",
+                    f"- Id: `{institution.institution_id}`",
+                    f"- Kind: `{institution.kind.value}`",
+                    f"- Readiness: `{institution.readiness.value}`",
+                    f"- Local execution: `{'yes' if institution.locally_executable else 'no'}`",
+                    f"- Authority: `{institution.authority}`",
+                    "- Home districts: "
+                    + ", ".join(f"`{district.value}`" for district in institution.home_districts),
+                    "- Runtime surfaces: "
+                    + ", ".join(f"`{surface}`" for surface in institution.runtime_surfaces),
+                ]
+            )
+            if institution.lane_domains:
+                lines.append(
+                    "- Lane domains: "
+                    + ", ".join(f"`{domain}`" for domain in institution.lane_domains)
+                )
+            if institution.council_domains:
+                lines.append(
+                    "- Council domains: "
+                    + ", ".join(f"`{domain}`" for domain in institution.council_domains)
+                )
+            if institution.staging_surface is not None:
+                lines.append(f"- Staging surface: `{institution.staging_surface}`")
+            lines.extend(
+                [
+                    "",
+                ]
+            )
+
+        lines.extend(
+            [
+                "",
+                "## Districts",
+                "",
+            ]
+        )
 
         for district in self.districts:
             lines.extend(
                 [
                     f"### {district.title}",
                     "",
+                    f"- Kind: `{district.kind.value}`",
                     f"- Readiness: `{district.readiness.value}`",
-                    f"- Lesson: {district.lesson}",
-                    f"- Artifact: {district.artifact}",
-                    f"- Return condition: {district.return_condition}",
+                    f"- Local execution: `{'yes' if district.locally_executable else 'no'}`",
                     f"- Surfaces: {', '.join(f'`{surface}`' for surface in district.surfaces)}",
                 ]
             )
-            if district.notes:
-                lines.append(f"- Notes: {' '.join(district.notes)}")
+            if district.institutions:
+                lines.append(
+                    "- Institutions: "
+                    + ", ".join(f"`{institution}`" for institution in district.institutions)
+                )
+            if district.requirements:
+                lines.append(
+                    "- Requirements: "
+                    + ", ".join(f"`{surface}`" for surface in district.requirements)
+                )
+            if district.missing_requirements:
+                lines.append(
+                    "- Missing requirements: "
+                    + ", ".join(f"`{surface}`" for surface in district.missing_requirements)
+                )
             lines.append("")
 
         return "\n".join(lines).strip()
@@ -179,107 +318,130 @@ def _readiness_for_front_door(context: OperatorContext) -> DistrictReadiness:
     )
 
 
-def _missing_clause(prefix: str, missing: tuple[str, ...]) -> str:
-    if not missing:
-        return prefix
-    return f"{prefix} Missing: {', '.join(missing)}."
+def _front_door_requirements(context: OperatorContext) -> tuple[str, ...]:
+    return (*OPERATOR_FRONT_DOOR_SURFACES, context.daily_note_path)
+
+
+def _readiness_for_local_institution(context: OperatorContext) -> DistrictReadiness:
+    if context.boot_chain_ok and context.operator_front_door_ok:
+        return DistrictReadiness.SCAFFOLDED
+    return DistrictReadiness.BLOCKED
 
 
 def _build_districts(context: OperatorContext) -> tuple[RouteDistrict, ...]:
     return (
         RouteDistrict(
             district_id=DistrictId.ROOT_AWAKENING,
-            title="Spawn / Root Awakening",
+            title="Root Awakening",
+            kind=DistrictKind.BOOT,
             readiness=_readiness_for_boot(context),
-            lesson="You wake with little legitimacy and must identify the live boot chain.",
-            artifact="first witness",
-            return_condition="Identify live startup surfaces instead of following noise.",
+            locally_executable=True,
             surfaces=BOOT_CHAIN_SURFACES,
-            notes=(
-                _missing_clause(
-                    "This district is grounded in the canonical boot chain.",
-                    context.missing_boot_chain,
-                ),
-            ),
+            requirements=BOOT_CHAIN_SURFACES,
+            missing_requirements=context.missing_boot_chain,
         ),
         RouteDistrict(
             district_id=DistrictId.ORIENTATION_HALL,
             title="Orientation Hall",
+            kind=DistrictKind.ORIENTATION,
             readiness=_readiness_for_front_door(context),
-            lesson="Surfaces are not equal; doctrine, front door, staging, and residue differ.",
-            artifact="classified hall read",
-            return_condition="Name what is live, what is staged, and what merely shouts.",
-            surfaces=(*OPERATOR_FRONT_DOOR_SURFACES, context.daily_note_path),
-            notes=(
-                _missing_clause(
-                    "This district depends on the operator front door staying truthful.",
-                    context.missing_operator_front_door,
-                ),
-            ),
+            locally_executable=True,
+            surfaces=_front_door_requirements(context),
+            requirements=_front_door_requirements(context),
+            missing_requirements=context.missing_operator_front_door,
         ),
         RouteDistrict(
             district_id=DistrictId.FORGE,
             title="Forge",
+            kind=DistrictKind.TRANSPORT,
             readiness=_readiness_for_front_door(context),
-            lesson="Transport is not promotion; branching and staging still return for judgment.",
-            artifact="lawful PR-ready seam",
-            return_condition="Stage work and return without self-merging in spirit.",
+            locally_executable=True,
             surfaces=(
                 ".github/workflows/",
                 "src/idaho_vault/five_wizards/threshold_runner.py",
                 STAGING_SURFACE,
             ),
-            notes=(
-                "Uses existing repo automation and the singular `!/CREWAI/` staging surface.",
-            ),
+            institutions=(RuntimeInstitutionId.FIVE_WIZARDS.value,),
+            requirements=_front_door_requirements(context),
+            missing_requirements=context.missing_operator_front_door,
         ),
         RouteDistrict(
             district_id=DistrictId.DOCKET,
             title="Docket",
+            kind=DistrictKind.CASEWORK,
             readiness=DistrictReadiness.DECLARED,
-            lesson="Work has status, queue, precedence, and unresolved consequence.",
-            artifact="issue state witness",
-            return_condition="Report state truthfully instead of overstating closure.",
+            locally_executable=False,
             surfaces=("Linear",),
-            notes=(
-                "Declared as a district by the packet, but not claimed as locally executable by this scaffold.",
-            ),
         ),
         RouteDistrict(
             district_id=DistrictId.POST_ROOM,
             title="Post Room",
+            kind=DistrictKind.INTAKE,
             readiness=DistrictReadiness.DECLARED,
-            lesson="Not all incoming signal deserves inward consequence; triage matters.",
-            artifact="intake brief",
-            return_condition="Separate urgency from mere loudness.",
+            locally_executable=False,
             surfaces=("Gmail",),
-            notes=(
-                "Declared as a district by the packet, but not claimed as locally executable by this scaffold.",
-            ),
         ),
         RouteDistrict(
             district_id=DistrictId.SCRIBES_CHAMBER,
             title="Scribe's Chamber",
+            kind=DistrictKind.RECORD,
             readiness=_readiness_for_front_door(context),
-            lesson="Witness belongs beside the record; adjacency is part of truthfulness.",
-            artifact="witness note",
-            return_condition="Write clearly without collapsing source and interpretation.",
+            locally_executable=True,
             surfaces=("!/README.md", "!/AGENTS.md", "TO DO LIST.md", context.daily_note_path),
-            notes=(
-                "This district is already supported by the live root and operator-note surfaces.",
-            ),
+            institutions=(RuntimeInstitutionId.FIVE_WIZARDS.value,),
+            requirements=_front_door_requirements(context),
+            missing_requirements=context.missing_operator_front_door,
         ),
         RouteDistrict(
             district_id=DistrictId.MACHINERY_FLOOR,
-            title="Workshop / Machinery Floor",
+            title="Machinery Floor",
+            kind=DistrictKind.MACHINERY,
             readiness=_readiness_for_boot(context),
-            lesson="Procedural fluency is not sanction; machinery must remain bounded by doctrine.",
-            artifact="machine-readable report",
-            return_condition="Stop before consecration and hand off a legible mechanism.",
+            locally_executable=True,
             surfaces=LOCAL_MACHINERY_REFS,
-            notes=(
-                "This is the first truthful implementation seam for the packet.",
+            institutions=(RuntimeInstitutionId.FIVE_WIZARDS.value,),
+            requirements=BOOT_CHAIN_SURFACES,
+            missing_requirements=context.missing_boot_chain,
+        ),
+    )
+
+
+def _build_entity_setup(context: OperatorContext) -> CivicEntitySetup:
+    current_rank = (
+        StandingRank.WITNESS if context.operator_front_door_ok else StandingRank.NOVICE
+    )
+    return CivicEntitySetup(
+        entity_id=CIVIC_ENTITY_ID,
+        title=CIVIC_ENTITY_TITLE,
+        authority=CIVIC_ENTITY_AUTHORITY,
+        current_rank=current_rank,
+        boot_chain_ok=context.boot_chain_ok,
+        operator_front_door_ok=context.operator_front_door_ok,
+        governance_surfaces=GOVERNANCE_SURFACES,
+        boot_chain_surfaces=BOOT_CHAIN_SURFACES,
+        operator_front_door_surfaces=_front_door_requirements(context),
+        staging_surface=STAGING_SURFACE,
+    )
+
+
+def _build_institutions(context: OperatorContext) -> tuple[ResidentInstitution, ...]:
+    return (
+        ResidentInstitution(
+            institution_id=RuntimeInstitutionId.FIVE_WIZARDS.value,
+            title=FIVE_WIZARDS_TITLE,
+            kind=InstitutionKind.COUNCIL,
+            readiness=_readiness_for_local_institution(context),
+            locally_executable=True,
+            authority=CIVIC_ENTITY_AUTHORITY,
+            home_districts=(
+                DistrictId.FORGE,
+                DistrictId.SCRIBES_CHAMBER,
+                DistrictId.MACHINERY_FLOOR,
             ),
+            runtime_surfaces=FIVE_WIZARDS_RUNTIME_SURFACES,
+            lane_domains=tuple(domain.value for domain in LaneDomain),
+            council_domains=(CouncilDomain.HOW.value,),
+            staging_surface=STAGING_SURFACE,
         ),
     )
 
@@ -287,22 +449,14 @@ def _build_districts(context: OperatorContext) -> tuple[RouteDistrict, ...]:
 def build_civic_scaffold(
     context: OperatorContext | None = None,
 ) -> CivicScaffold:
-    """Build a thin civic-fantasy scaffold from the current operator context."""
+    """Build a thin civic scaffold from the current operator context."""
 
     resolved_context = context or load_operator_context()
-    current_rank = (
-        StandingRank.WITNESS if resolved_context.operator_front_door_ok else StandingRank.NOVICE
-    )
 
     return CivicScaffold(
         root=resolved_context.root,
-        current_rank=current_rank,
-        boot_chain_ok=resolved_context.boot_chain_ok,
-        operator_front_door_ok=resolved_context.operator_front_door_ok,
-        staging_surface=STAGING_SURFACE,
-        common_loop=COMMON_LOOP,
-        packet_refs=PACKET_REFS,
-        local_machinery_refs=LOCAL_MACHINERY_REFS,
+        entity=_build_entity_setup(resolved_context),
+        institutions=_build_institutions(resolved_context),
         districts=_build_districts(resolved_context),
     )
 

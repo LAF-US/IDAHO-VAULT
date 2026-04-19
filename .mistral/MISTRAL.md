@@ -41,7 +41,7 @@ Prefer launching Mistral Vibe for this vault through `scripts/Start-MistralVault
 
 ```bash
 cd "C:/Users/loganf/Documents/IDAHO-VAULT"
-mistral
+vibe-acp
 ```
 
 Config: `.mistral/config.toml` (vault-local project config)
@@ -75,10 +75,11 @@ Reference: `- Offline - Local  Mistral Docs.md`
 API key lives in 1Password. Fetch via 1Password CLI:
 
 ```bash
-export MISTRAL_API_KEY=$(op item get "Mistral API Key" --fields credential)
+export MISTRAL_API_KEY=$(op read "op://Vault/Mistral/credential")
+vibe-acp
 ```
 
-Item name: `Mistral API Key` (confirm actual item name in 1Password before use).
+Secret reference: `op://Vault/Mistral/credential`
 
 ---
 
