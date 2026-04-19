@@ -25,6 +25,9 @@ Persistent list. Incomplete items carry forward daily.
 - [ ] FIX DAILY NOTE SYNCING / CARRYFORWARD
 	- [ ] Tasks completed on a daily note should be reflected here intentionally.
 	- [ ] Tasks left unfinished on a daily note should be carried forward intentionally.
+- ¡ [[RING]] !
+- ¡ [>> ? <<] in [[WHO]] !
+- the [[ROAD]] was [[LAID]]
 
 ## Recently Finished
 
