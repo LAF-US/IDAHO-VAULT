@@ -99,6 +99,41 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertFalse(ready_state["should_have_agent_review_pending"])
         self.assertTrue(ready_state["eligible_for_auto_merge"])
 
+    def test_risk_label_is_canonical_over_body_marker(self) -> None:
+        """Label-based risk tier wins when body marker was overwritten by an editor."""
+        now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
+
+        # Body has no marker (agent rewrote it), but risk/low label is present.
+        state = review_feedback_loop.evaluate_review_state(
+            _pr(
+                created_at=now - timedelta(minutes=45),
+                labels=("risk/low", "agent-review-pending"),
+                body="## Real description\n\nSummary of changes.",
+            ),
+            now=now,
+        )
+
+        self.assertTrue(state["low_risk"])
+        self.assertTrue(state["grace_elapsed"])
+        self.assertTrue(state["eligible_for_auto_merge"])
+
+    def test_risk_high_label_keeps_pr_out_of_auto_merge(self) -> None:
+        """risk/high label alone must classify the PR as high-risk even if body is missing/empty."""
+        now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
+
+        state = review_feedback_loop.evaluate_review_state(
+            _pr(
+                created_at=now - timedelta(minutes=45),
+                labels=("risk/high",),
+                body="",
+            ),
+            now=now,
+        )
+
+        self.assertFalse(state["low_risk"])
+        self.assertFalse(state["eligible_for_auto_merge"])
+        self.assertFalse(state["should_have_agent_review_pending"])
+
     def test_changes_requested_review_blocks_merge(self) -> None:
         state = review_feedback_loop.evaluate_review_state(
             _pr(
