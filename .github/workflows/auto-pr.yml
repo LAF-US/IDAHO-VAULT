@@ -143,6 +143,7 @@ jobs:
             --body "$BODY"
             --base main
             --head "$BRANCH"
+            --label "risk/$TIER"
           )
           if [ -n "$LABEL" ]; then
             CREATE_ARGS+=(--label "$LABEL")

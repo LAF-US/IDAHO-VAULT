@@ -35,6 +35,8 @@ DEFAULT_THREAD_LABEL = "review-threads-open"
 DEFAULT_PENDING_LABEL = "copilot-apply-pending"
 DEFAULT_REVIEW_PENDING_LABEL = "agent-review-pending"
 DEFAULT_AUTO_MERGE_LABEL = "auto-merge"
+RISK_LOW_LABEL = "risk/low"
+RISK_HIGH_LABEL = "risk/high"
 
 LABEL_SPECS: dict[str, tuple[str, str]] = {
     DEFAULT_AUTO_MERGE_LABEL: (
@@ -56,6 +58,14 @@ LABEL_SPECS: dict[str, tuple[str, str]] = {
     DEFAULT_REVIEW_PENDING_LABEL: (
         "BFD4F2",
         "Low-risk PR is not yet eligible for auto-merge promotion.",
+    ),
+    RISK_LOW_LABEL: (
+        "C2E0C6",
+        "Risk tier: low (only low-risk paths changed).",
+    ),
+    RISK_HIGH_LABEL: (
+        "E99695",
+        "Risk tier: high (at least one high-risk path changed).",
     ),
 }
 
@@ -214,6 +224,12 @@ def _parse_body_marker_value(body: str, marker: str) -> str | None:
 
 
 def _risk_tier_for_pr(body: str, labels: set[str]) -> str:
+    # Label is canonical: survives body rewrites by human or agent editors.
+    if RISK_LOW_LABEL in labels:
+        return "low"
+    if RISK_HIGH_LABEL in labels:
+        return "high"
+    # Back-compat: body marker for PRs created before the label migration.
     parsed = _parse_body_marker_value(body, "**Risk tier:**")
     if parsed in {"low", "high"}:
         return parsed
