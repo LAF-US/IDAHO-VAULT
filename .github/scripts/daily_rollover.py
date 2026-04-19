@@ -43,6 +43,7 @@ FRONTMATTER_RE = re.compile(r'\A---\r?\n(?P<frontmatter>.*?)\r?\n---\r?\n?', re.
 ROOT_GROUP = "__root__"
 ORG_BULLET_RE = re.compile(r"^- ([A-Z][A-Z0-9 /&'()-]*)$")
 EMPTY_TASK_SHELL_RE = re.compile(r'^[ \t]*- \[(?: |x|X)\]\s*$')
+DATE_PLACEHOLDER_RE = re.compile(r'\[\[(YESTERDAY|TOMORROW|TODAY)\]\]')
 
 
 # ---------------------------------------------------------------------------
@@ -105,6 +106,10 @@ def _task_key(line: str) -> str | None:
     return text.lower()
 
 
+def _has_date_placeholder(line: str) -> bool:
+    return bool(DATE_PLACEHOLDER_RE.search(line))
+
+
 def _is_top_level_task(line: str) -> bool:
     match = TASK_RE.match(_clean_line(line))
     return bool(match and len(match.group(1)) == 0)
@@ -161,6 +166,8 @@ def _ensure_group(model: dict[str, object], group_key: str, group_label: str | N
 def _add_block(model: dict[str, object], group_key: str, group_label: str | None, block: list[str]) -> None:
     key = _task_key(block[0])
     if key is None:
+        return
+    if any(_has_date_placeholder(ln) for ln in block):
         return
     task_index = model["task_index"]
     if key in task_index:

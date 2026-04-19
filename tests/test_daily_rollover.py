@@ -142,7 +142,7 @@ class DailyRolloverTest(unittest.TestCase):
 
                     [[TO DO LIST]]
 
-                    - [ ] [[YESTERDAY]]
+                    - [ ] LEGACY BACKLOG TASK
                     - VAULT
                     - [ ] FIX DAILY NOTE SYNCING/CARRYFORWARD
                     \t- [ ] Tasks completed on a DAY were not checked off here.
@@ -171,7 +171,7 @@ class DailyRolloverTest(unittest.TestCase):
 
                     ## Active
 
-                    - [ ] [[YESTERDAY]]
+                    - [ ] LEGACY BACKLOG TASK
                     - VAULT
                     - [ ] FIX DAILY NOTE SYNCING/CARRYFORWARD
                     \t- [ ] Tasks completed on a DAY were not checked off here.
@@ -218,6 +218,17 @@ class DailyRolloverTest(unittest.TestCase):
             self.assertNotIn("RESET Obsidian Sync Vault", todo_text)
             self.assertNotIn("\n- []\n", todo_text)
             self.assertNotIn("\n- [ ] \n", todo_text)
+
+            # Regression: ensure carryforward never propagates ALLCAPS date
+            # placeholder tokens, even if a daily note or the persistent list
+            # contains them. See _add_block + DATE_PLACEHOLDER_RE in
+            # daily_rollover.py.
+            self.assertNotIn("[[YESTERDAY]]", today_text)
+            self.assertNotIn("[[TOMORROW]]", today_text)
+            self.assertNotIn("[[TODAY]]", today_text)
+            self.assertNotIn("[[YESTERDAY]]", todo_text)
+            self.assertNotIn("[[TOMORROW]]", todo_text)
+            self.assertNotIn("[[TODAY]]", todo_text)
         finally:
             shutil.rmtree(vault_root, ignore_errors=True)
 
