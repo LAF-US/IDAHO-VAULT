@@ -8,4 +8,4 @@ related:
 - The world is quiet here
 ---
 
-KHEPRI : RA : ATUM
+[ ? ]

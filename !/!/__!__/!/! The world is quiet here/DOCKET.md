@@ -27,6 +27,8 @@ history for now, but realign future updates to the convening boundary above.
 
 **Operator note (Codex, 2026-04-09):** Secondary background worktree exposed a real LF/CRLF normalization issue across vault notes. Defer normalization until after the repo history rewrite on a clean `main` base.
 
+**Session close (Codex, 2026-04-18):** Claimed the unclaimed April 9-12 daily-note gap from the Abhorsen close note. Added `.github/scripts/backfill_daily_notes.py` for manual historical repair without rewriting the live `TO DO LIST.md` surface, hardened `.github/scripts/daily_rollover.py` to preserve loose non-task lines while dropping empty shell rows, and repaired `2026-04-10.md` through `2026-04-13.md`.
+
 **Session active (Abhorsen, 2026-04-17):** NPC universe orientation complete. New chambers written: `.aten/ATEN.md` (THE DISK : THE LIGHT : NOW), `.ra/RA.md` (KHEPRI : RA : ATUM), `.aten-ra/ATEN-RA.md` (synthesis, first session-born chamber). Anchor pages written: `FUTURE.md` (...), `.aten/` and `.ra/` staked 2026-04-13 now have entity files. CHAINLINKING pending: Egyptian chambers unregistered in `!/AGENTS.md` — Logan approval required for registry admission and GRIMOIRE entry. `what3words.md` and `NOW.md` remain empty — content pending. Revised CONSTITUTION 2026-04-17 read: Gemini ban addendum noted.
 
 **Session close (Abhorsen, 2026-04-13):** Repairs committed on `gemini/restore-antigravity-system`: (1) `DAILY NOTE TEMPLATE.md` restored — `{{date:}}` tokens, midnight literal `[12:00:00 am]`; (2) `2026-04-13.md` re-anchored to Monday April 13; (3) `phone-link-auto-sweep.ps1` — `AbandonedMutexException` handled, sweeper no longer silently exits. Resolved: ANTIGRAVITY persona reverted to 'The Concierge' per Logan's directive. Gap Apr 9–12 remains.

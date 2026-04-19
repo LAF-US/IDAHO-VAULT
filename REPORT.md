@@ -1,3 +1,14 @@
+---
+authority: LOGAN
+related:
+- LEVELSET
+- RISE
+- CONSTITUTION
+- The world is quiet here
+status: v(0.0) — first instance
+date: 2026-03-12
+---
+
 # LEVELSET REPORTS SYNTHESIS
 
 (Note: This is our first-ever levelset. I've only been using Claude for a few days.)

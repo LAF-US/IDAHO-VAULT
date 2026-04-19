@@ -41,6 +41,8 @@ TODO_MARKER = "[[TO DO LIST]]"
 PLACEHOLDER_LINE = "*(no incomplete items carried forward)*"
 FRONTMATTER_RE = re.compile(r'\A---\r?\n(?P<frontmatter>.*?)\r?\n---\r?\n?', re.DOTALL)
 ROOT_GROUP = "__root__"
+ORG_BULLET_RE = re.compile(r"^- ([A-Z][A-Z0-9 /&'()-]*)$")
+EMPTY_TASK_SHELL_RE = re.compile(r'^[ \t]*- \[(?: |x|X)\]\s*$')
 
 
 # ---------------------------------------------------------------------------
@@ -89,6 +91,10 @@ def _is_placeholder_bullet(line: str) -> bool:
     return _clean_line(line).strip() == "- []"
 
 
+def _is_empty_task_shell(line: str) -> bool:
+    return bool(EMPTY_TASK_SHELL_RE.match(_clean_line(line)))
+
+
 def _task_key(line: str) -> str | None:
     match = TASK_RE.match(_clean_line(line))
     if not match:
@@ -110,7 +116,7 @@ def _is_org_bullet(line: str) -> bool:
         return False
     if _is_placeholder_bullet(cleaned):
         return False
-    return TASK_RE.match(cleaned) is None
+    return bool(ORG_BULLET_RE.fullmatch(cleaned))
 
 
 def _new_todo_model() -> dict[str, object]:
@@ -409,7 +415,12 @@ def _clean_todo_lines(lines: list[str]) -> list[str]:
     cleaned = []
     for line in lines:
         stripped = line.strip("\r\n")
-        if not stripped or stripped == PLACEHOLDER_LINE or _is_placeholder_bullet(stripped):
+        if (
+            not stripped
+            or stripped == PLACEHOLDER_LINE
+            or _is_placeholder_bullet(stripped)
+            or _is_empty_task_shell(stripped)
+        ):
             continue
         cleaned.append(stripped)
     return cleaned
@@ -499,6 +510,31 @@ def _find_todo_section_bounds(lines: list[str]) -> tuple[int | None, int | None]
             break
 
     return marker_index, end_index
+
+
+def _preserved_loose_todo_lines(lines: list[str]) -> list[str]:
+    """Keep non-task, non-placeholder TODO lines that should survive normalization."""
+
+    preserved: list[str] = []
+    seen: set[str] = set()
+    for line in lines:
+        cleaned = _clean_line(line)
+        stripped = cleaned.strip()
+        if (
+            not stripped
+            or stripped == PLACEHOLDER_LINE
+            or _is_placeholder_bullet(stripped)
+            or _is_empty_task_shell(stripped)
+        ):
+            continue
+        if TASK_RE.match(cleaned) or _is_org_bullet(cleaned):
+            continue
+        if cleaned in seen:
+            continue
+        seen.add(cleaned)
+        preserved.append(cleaned)
+
+    return preserved
 
 
 def build_backlog_lines(source_todo_lines: list[str], active_todo_lines: list[str]) -> list[str]:
@@ -635,16 +671,18 @@ def ensure_daily_frontmatter(content: str, target_date: date) -> str:
 # Write operations
 # ---------------------------------------------------------------------------
 
-def update_today_note(
-    target_date: date,
-    carried: list[str],
-    dry_run: bool = False,
-) -> None:
+def build_today_note_content(target_date: date, carried: list[str], base_content: str | None = None) -> str:
     today_file = VAULT_ROOT / f"{target_date}.md"
     block = todo_block_text(carried)
 
-    if today_file.exists():
-        content = today_file.read_text(encoding="utf-8")
+    if base_content is not None:
+        content = base_content
+        file_exists = True
+    else:
+        file_exists = today_file.exists()
+        content = today_file.read_text(encoding="utf-8") if file_exists else ""
+
+    if file_exists:
         content = ensure_daily_frontmatter(content, target_date)
         content = patch_nav_links(content, target_date)
         lines = content.splitlines()
@@ -654,6 +692,12 @@ def update_today_note(
             existing_model = parse_todo_model(existing_todo_lines, keep_completed=True)
             carried_model = parse_todo_model(carried, keep_completed=False)
             merged = render_todo_model(merge_todo_models(existing_model, carried_model))
+            preserved_loose = _preserved_loose_todo_lines(existing_todo_lines)
+            merged_seen = {_clean_line(line) for line in merged}
+            for line in preserved_loose:
+                if line not in merged_seen:
+                    merged.append(line)
+                    merged_seen.add(line)
 
             new_lines = lines[:marker_index + 1]
             new_lines.append("")
@@ -668,11 +712,22 @@ def update_today_note(
         fm = build_frontmatter(target_date)
         new_content = f"{fm}\n\n{TODO_MARKER}\n\n{block}\n"
 
+    return new_content
+
+
+def update_today_note(
+    target_date: date,
+    carried: list[str],
+    dry_run: bool = False,
+) -> None:
+    today_file = VAULT_ROOT / f"{target_date}.md"
+    new_content = build_today_note_content(target_date, carried)
+
     if dry_run:
         log(f"\n--- {today_file.name} (dry run) ---")
         log(new_content.rstrip("\n"))
     else:
-        today_file.write_text(new_content, encoding="utf-8")
+        today_file.write_text(new_content, encoding="utf-8", newline="\n")
         log(f"Updated {today_file.name}")
 
 
@@ -721,7 +776,7 @@ def update_todo_list_md(carried: list[str], dry_run: bool = False) -> None:
         log("\n--- TO DO LIST.md (dry run) ---")
         log(new_content.rstrip("\n"))
     else:
-        TODO_LIST_FILE.write_text(new_content, encoding="utf-8")
+        TODO_LIST_FILE.write_text(new_content, encoding="utf-8", newline="\n")
         log("Updated TO DO LIST.md")
 
 

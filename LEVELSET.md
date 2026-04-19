@@ -10,6 +10,7 @@ related:
 - DECISIONS
 - GitHub
 - LAF
+- LEVELSET-CURRENT
 - PROTOCOL
 - README
 - VAULT-CONVENTIONS
@@ -68,6 +69,10 @@ Use these files as the active orientation stack:
   - GitHub: execution transport
   - Linear: active coordination
   - Slack: breadcrumb-only
+
+## Anchored Child
+
+**[[LEVELSET-CURRENT]]** — rolling live snapshot, updated in place each round. This file (LEVELSET.md) is the permanent mother anchor. LEVELSET-CURRENT must not accumulate doctrine; doctrine returns here and to canonical governance files.
 
 ## Operator Guidance (Now)
 
