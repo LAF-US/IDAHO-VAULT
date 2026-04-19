@@ -27,6 +27,11 @@ Persistent list. Incomplete items carry forward daily.
 - ¡ [[RING]] !
 - ¡ [>> ? <<] in [[WHO]] !
 - the [[ROAD]] was [[LAID]]
+```tasks
+not done
+path includes TO DO LIST.md
+sort by description
+```
 
 ## Recently Finished
 
