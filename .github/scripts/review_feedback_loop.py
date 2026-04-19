@@ -147,6 +147,11 @@ def _resolve_thread(thread_id: str) -> None:
     _graphql(mutation, threadId=thread_id)
 
 
+def _is_forbidden_integration_error(exc: RuntimeError) -> bool:
+    text = str(exc)
+    return "FORBIDDEN" in text or "Resource not accessible by integration" in text
+
+
 def _ensure_label(name: str, color: str, description: str) -> None:
     _run(
         [
@@ -369,8 +374,17 @@ def _resolve_outdated_advisory_threads(pr: dict, auto_resolve_reviewers: set[str
 
         authors = _thread_authors(thread)
         if authors and authors.issubset(auto_resolve_reviewers):
-            _resolve_thread(thread["id"])
-            resolved_count += 1
+            try:
+                _resolve_thread(thread["id"])
+                resolved_count += 1
+            except RuntimeError as exc:
+                if _is_forbidden_integration_error(exc):
+                    print(
+                        f"Skipping auto-resolve for thread {thread['id']}: token lacks permission.",
+                        file=sys.stderr,
+                    )
+                else:
+                    raise
     return resolved_count
 
 
