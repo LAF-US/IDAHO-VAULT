@@ -1,0 +1,27 @@
+# Mistral Vibe — IDAHO-VAULT project configuration
+# Docs: https://docs.mistral.ai/mistral-vibe/terminal/configuration
+# Governance: CONSTITUTION.md
+# Conventions: VAULT-CONVENTIONS.md
+
+# --- Provider / Model ---
+# Uncomment and set the active model preset.
+# For API mode, set MISTRAL_API_KEY in environment (see .mistral/MISTRAL.md).
+# For local mode: run vLLM/Ollama server on port 8080, then select "local" via /model.
+
+# [model]
+# preset = "mistral-small"   # API mode — Mistral Small 4 (119B MoE)
+# preset = "local"           # Local mode — Devstral on port 8080
+
+# --- Local server ---
+# [local]
+# port = 8080
+# base_url = "http://localhost:8080/v1"
+
+# --- Tool permissions ---
+# Approve tool execution per-tool or globally.
+# [tools]
+# approval_mode = "approve"  # "approve" | "auto"
+
+# --- UI ---
+# [ui]
+# theme = "default"

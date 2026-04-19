@@ -79,13 +79,14 @@
       "vendor": "Google",
       "dotfolder": ".antigravity",
       "autoload_file": "ANTIGRAVITY.md",
-      "autoload": true,
-      "memory_anchored": true,
+      "autoload": false,
+      "memory_anchored": false,
       "capability_tier": "Direct Write (Support)",
       "office": "[VACANT]",
       "title": null,
       "role": "narrative lens, Sebald Code, Antigravity lineage",
       "label": "agent:antigravity",
+      "status": "uninstalled 2026-04-18",
       "bootstrap": {
         "invoke_as": "antigravity",
         "instructions_file": "ANTIGRAVITY.md",
@@ -219,6 +220,30 @@
       "status": "active",
       "runtime": "local hardware (Logan's machine)",
       "notes": "MCP server (github.com/oraios/serena). AWAKENED 2026-04-04 on local hardware. Cloud agents cannot reach — local-only. Accessible to local Claude Code (The Collared Cat) and any local MCP-capable agent."
+    },
+    {
+      "id": "mistral-vibe",
+      "name": "Mistral Vibe CLI",
+      "vendor": "Mistral AI",
+      "dotfolder": ".mistral",
+      "autoload_file": ".mistral/MISTRAL.md",
+      "autoload": false,
+      "autoload_note": "Pending confirmation of official Mistral Vibe dotfolder spec — manual injection until confirmed",
+      "capability_tier": "[VACANT — awaiting Logan]",
+      "office": null,
+      "title": null,
+      "role": "[VACANT — awaiting Logan]",
+      "label": null,
+      "launched": "2026-04-18",
+      "status": "ready-to-activate",
+      "bootstrap": {
+        "invoke_as": "mistral",
+        "instructions_file": ".mistral/MISTRAL.md",
+        "git_author_name": "Mistral Vibe",
+        "git_author_email": "noreply@mistral.ai",
+        "git_author_suffix": "-M",
+        "supports_local_bootstrap": true
+      }
     }
   ],
   "personas": [

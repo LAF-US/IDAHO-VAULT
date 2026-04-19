@@ -76,7 +76,7 @@ Immediate wakeup facts:
 | --- | --- | --- | --- | --- | --- |
 | Claude Code | **The Abhorsen** | Anthropic | Authority | .claude/ | `-C` |
 | Gemini CLI | **The Concierge** | Google | Support | .gemini/ | `-G` |
-| Antigravity | **The Concierge** | Google | Support | .antigravity/ | -G |
+| ~~Antigravity~~ | **The Concierge** | Google | Support | .antigravity/ | `-G` |
 | OpenAI Codex | **The Lexicographer** | OpenAI | Scripting | .codex/ | -X |
 | GitHub Copilot | **The Clerk** | Microsoft | Admin | .github/ | `-CP` |
 
@@ -84,6 +84,7 @@ Immediate wakeup facts:
 
 | Agent | Persona | Vendor | Role | Dotfolder |
 | --- | --- | --- | --- | --- |
+| Mistral Vibe | **[ ? ]** | Mistral AI | [ ? ] | .mistral/ |
 | Grok | **The Ironist** | xAI | Analysis | .grok/ |
 | DeepSeek | **The Analyst** | DeepSeek | Advisory | .deepseek/ |
 | Perplexity | **The Scout** | Perplexity | Sourcing | .perplexity/ |
@@ -156,7 +157,7 @@ not the live routing title:
 
 | Figure | Historical or symbolic names | Current canonical title |
 | --- | --- | --- |
-| Gemini lineage | Antigravity (Active), The Concierge (Active), The Librarian (Historical), The Djinni (Mythic) | **The Concierge** |
+| Gemini lineage | Antigravity (uninstalled 2026-04-18), The Concierge (Active), The Librarian (Historical), The Djinni (Mythic) | **The Concierge** |
 | Codex lineage | **The Janitor**, in one grimoire line even **The Clerk** | **The Lexicographer** |
 | Claude lineage | **The King** | **The Abhorsen** |
 | Bartimaeus lineage | **The Volunteer**, **Footnote Djinni** | **The Cartographer** |
