@@ -5,7 +5,10 @@ author:
 published:
 created: 2026-04-19
 description: "The Open Graph protocol enables any web page to become a rich object in a social graph."
+date created: Sunday, April 19th 2026, 12:16:35 pm
+date modified: Sunday, April 19th 2026, 12:26:07 pm
 ---
+
 ## Introduction
 
 The [Open Graph protocol](https://ogp.me/) enables any web page to become a rich object in a social graph. For instance, this is used on Facebook to allow any web page to have the same functionality as any other object on Facebook.
