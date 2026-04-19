@@ -21,6 +21,7 @@ Persistent list. Incomplete items carry forward daily.
 - [ ] FIX DAILY NOTE SYNCING/CARRYFORWARD
 	- [ ] Tasks completed on a DAY were not checked off here.
 	- [ ] Tasks uncomplete on a DAY were not added to here.
+	- [[CODEX]] explores the [[VAULT]]...
 - [ ] FIX DAILY NOTE SYNCING / CARRYFORWARD
 	- [ ] Tasks completed on a daily note should be reflected here intentionally.
 	- [ ] Tasks left unfinished on a daily note should be carried forward intentionally.
