@@ -15,6 +15,8 @@ Persistent list. Incomplete items carry forward daily.
 
 ## Active
 
+- WORK
+- [ ] FMLA PAPERWORK
 - VAULT
 - [ ] FIX DAILY NOTE SYNCING/CARRYFORWARD
 	- [ ] Tasks completed on a DAY were not checked off here.
@@ -25,8 +27,6 @@ Persistent list. Incomplete items carry forward daily.
 - ¡ [[RING]] !
 - ¡ [>> ? <<] in [[WHO]] !
 - the [[ROAD]] was [[LAID]]
-- WORK
-- [ ] FMLA PAPERWORK
 
 ## Recently Finished
 
