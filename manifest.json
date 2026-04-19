@@ -1,6 +1,6 @@
 {
   "manifest_version": "1.0.0",
-  "generated_at": "2026-04-16T13:15:26.501791Z",
+  "generated_at": "2026-04-18T12:43:56.724080Z",
   "authority": {
     "canonical_system": "vault",
     "execution_system": "github",
@@ -483,6 +483,14 @@
       "created_at": "2026-04-16T13:15:26.426941Z",
       "expires_at": "2026-04-16T13:30:26.426941Z",
       "state": "released"
+    },
+    {
+      "lock_id": "414eaeaa-0500-4b49-b99e-c9dcdf140b81",
+      "file_path": "!/ingest-2026-04-18T124356Z.md",
+      "agent_id": "github-actions[bot]",
+      "created_at": "2026-04-18T12:43:56.662934Z",
+      "expires_at": "2026-04-18T12:58:56.662934Z",
+      "state": "released"
     }
   ],
   "entries": {
@@ -583,6 +591,15 @@
       "last_read_at": "2026-04-16T13:15:26.501791Z",
       "status": "active",
       "lock_id": "c8ea37ee-8c2d-4ade-82fa-8581536a2866",
+      "version": 1
+    },
+    "!/ingest-2026-04-18T124356Z.md": {
+      "content_hash": "sha256:6d945975fb55b6383b9f76b307ab67146e011a71266be936f27c8d28864806c9",
+      "last_writer": "github-actions[bot]",
+      "last_write_at": "2026-04-18T12:43:56.724080Z",
+      "last_read_at": "2026-04-18T12:43:56.724080Z",
+      "status": "active",
+      "lock_id": "414eaeaa-0500-4b49-b99e-c9dcdf140b81",
       "version": 1
     }
   }
