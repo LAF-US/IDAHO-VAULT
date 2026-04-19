@@ -21,6 +21,7 @@ type: reference
 | `Linear API Key` | API Key | Linear workspace sync (GitHub Actions) | ⚠️ In GitHub Secrets | Migrate from GitHub Secrets → 1Password |
 | `Idaho Legislature API Key` | API Key | Scraper authentication | ❌ Not created | Create if legislator.idaho.gov requires auth |
 | `Email SMTP Credentials` | Username + Password | Budget tracker email delivery | ❌ Not created | Create if using SMTP service |
+| `Todoist API Token` | API Token | Todoist probe + future bridge (`.github/workflows/todoist-probe.yml`) | ❌ Not created | Create in 1Password as `todoist-api-token`, field `credential` |
 | `OP_SERVICE_ACCOUNT_TOKEN` | Service Token | GitHub Actions → 1Password auth | ⚠️ In GitHub Secrets | Sync from 1Password via manual provisioning |
 
 ---
