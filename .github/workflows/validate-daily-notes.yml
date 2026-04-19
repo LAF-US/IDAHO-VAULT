@@ -21,11 +21,17 @@ jobs:
         run: |
           set +H  # Disable bash history expansion
 
-          # Determine which files to check
+          # Determine which files to check. If the diff command fails (e.g. base
+          # ref missing from checkout), fall back to the full tree so the check
+          # still runs — a silent empty-file-list would make the job pass vacuously.
           if [ "${{ github.event_name }}" = "pull_request" ]; then
-            FILES=$(git -c core.quotePath=false diff --name-only "origin/${{ github.base_ref }}"...HEAD 2>/dev/null || true)
+            DIFF_TARGET="origin/${{ github.base_ref }}...HEAD"
           else
-            FILES=$(git -c core.quotePath=false diff --name-only HEAD~1...HEAD 2>/dev/null || true)
+            DIFF_TARGET="HEAD~1...HEAD"
+          fi
+
+          if ! FILES=$(git -c core.quotePath=false diff --name-only "$DIFF_TARGET" 2>/dev/null); then
+            FILES=$(git -c core.quotePath=false ls-tree -r HEAD --name-only)
           fi
 
           VIOLATIONS=""
