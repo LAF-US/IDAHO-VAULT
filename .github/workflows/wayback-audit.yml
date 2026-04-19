@@ -49,15 +49,34 @@ jobs:
           python3 .github/scripts/validate_content.py --scope admin
           git reset HEAD
 
-      - name: Commit audit reports
+      - name: Commit and Push Changes
+        id: commit_push
         run: |
           git add "!/"
           if ! git diff --cached --quiet; then
-            git commit -m "wayback audit $(date -u +%Y-%m-%d)"
             BRANCH_NAME="wayback-audit-$(date -u +%Y%m%d%H%M%S)"
+            echo "branch_name=${BRANCH_NAME}" >> "$GITHUB_OUTPUT"
+            git commit -m "wayback audit $(date -u +%Y-%m-%d)"
             git checkout -b "$BRANCH_NAME"
             git push origin "$BRANCH_NAME"
-            GH_TOKEN=${{ secrets.GITHUB_TOKEN }} gh pr create --title "Automated Wayback Audit Report" --body "Automated PR from wayback-audit workflow." --base main --head "$BRANCH_NAME"
+            echo "has_changes=true" >> "$GITHUB_OUTPUT"
           else
+            echo "has_changes=false" >> "$GITHUB_OUTPUT"
             echo "Nothing to commit"
           fi
+
+      - name: Check for existing PR
+        if: steps.commit_push.outputs.has_changes == 'true'
+        id: check-pr
+        uses: ./.github/actions/idempotent-pr-create
+        with:
+          branch: ${{ steps.commit_push.outputs.branch_name }}
+          gh-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Create Pull Request
+        if: steps.check-pr.outputs.pr_exists != 'true' && steps.commit_push.outputs.has_changes == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH_NAME: ${{ steps.commit_push.outputs.branch_name }}
+        run: |
+          gh pr create --title "Automated Wayback Audit Report" --body "Automated PR from wayback-audit workflow." --base main --head "$BRANCH_NAME"

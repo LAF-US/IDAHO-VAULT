@@ -62,7 +62,8 @@ jobs:
             --agent-id "github-actions[bot]" \
             --phase release
 
-      - name: Commit and Create PR
+      - name: Commit and Push Changes
+        id: commit_push
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
@@ -70,17 +71,34 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           
           BRANCH_NAME="ingest-${{ steps.plan_ingest.outputs.timestamp }}"
+          echo "branch_name=${BRANCH_NAME}" >> "$GITHUB_OUTPUT"
           git checkout -b "$BRANCH_NAME"
           
           git add -- '!/' manifest.json
           if git diff --cached --quiet; then
+            echo "has_changes=false" >> "$GITHUB_OUTPUT"
             echo "No changes to commit"
             exit 0
           fi
           
           git commit -m "ingest: initialize pipeline"
           git push origin "$BRANCH_NAME"
-          
+          echo "has_changes=true" >> "$GITHUB_OUTPUT"
+
+      - name: Check for existing PR
+        if: steps.commit_push.outputs.has_changes == 'true'
+        id: check-pr
+        uses: ./.github/actions/idempotent-pr-create
+        with:
+          branch: ${{ steps.commit_push.outputs.branch_name }}
+          gh-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Create Pull Request
+        if: steps.check-pr.outputs.pr_exists != 'true' && steps.commit_push.outputs.has_changes == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BRANCH_NAME: ${{ steps.commit_push.outputs.branch_name }}
+        run: |
           gh pr create \
             --title "Vault Ingest: ${{ steps.plan_ingest.outputs.timestamp }}" \
             --body "Automated ingest pipeline run." \

@@ -234,10 +234,7 @@ def _risk_tier_for_pr(body: str, labels: set[str]) -> str:
         return "low"
     if RISK_HIGH_LABEL in labels:
         return "high"
-    # Back-compat: body marker for PRs created before the label migration.
-    parsed = _parse_body_marker_value(body, "**Risk tier:**")
-    if parsed in {"low", "high"}:
-        return parsed
+    # Fallback for older PRs or states where risk is not yet labeled.
     if DEFAULT_REVIEW_PENDING_LABEL in labels:
         return "low"
     return "unknown"

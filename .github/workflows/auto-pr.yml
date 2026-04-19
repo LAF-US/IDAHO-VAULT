@@ -120,15 +120,22 @@ jobs:
           fi
 
           # Build PR body
-          printf -v BODY '%s\n\n%s\n%s\n%s\n%s\n%s\n%s\n\n%s\n%s\n%s\n%s\n\n%s\n%s' \
-            '## Auto-generated PR' \
-            '**Agent:**' "\`$AGENT\`" \
-            '**Lifecycle:**' "\`staged\`" \
-            '**Risk tier:**' "\`$TIER\`" \
-            '**Label:**' "\`$LABEL_MARKER\`" \
-            '### Diff stat' \
-            '```' "$DIFFSTAT" '```' \
-            '---' '*Created by auto-pr workflow*'
+          BODY=$(cat <<EOF
+## Auto-generated PR
+
+**Agent:** \`$AGENT\`
+**Lifecycle:** \`staged\`
+**Label:** \`$LABEL_MARKER\`
+
+### Diff stat
+\`\`\`
+$DIFFSTAT
+\`\`\`
+
+---
+*Created by auto-pr workflow*
+EOF
+)
 
           CREATE_ARGS=(
             --title "$TITLE"

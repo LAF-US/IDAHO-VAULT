@@ -89,8 +89,8 @@ jobs:
           python3 .github/scripts/validate_content.py --scope bills
           git reset HEAD  # unstage so commit step handles staging
 
-      - name: Commit changes
-        id: commit
+      - name: Commit and Push Changes
+        id: commit_push
         if: steps.scrape.outcome == 'success'
         run: |
           git add "GOVERNMENTS/IDAHO - LEGISLATIVE/BILLS/"
@@ -99,21 +99,37 @@ jobs:
           git add "GOVERNMENTS/IDAHO - LEGISLATIVE/IDAHO SENATE/"
 
           if git diff --cached --quiet; then
-            echo "committed=false" >> $GITHUB_OUTPUT
+            echo "has_changes=false" >> $GITHUB_OUTPUT
             echo "No changes to commit."
           else
             CHANGED=$(git diff --cached --name-only | wc -l)
-            git commit -m "scrape Idaho legislature — ${CHANGED} file(s) $(date -u +%Y-%m-%d)"
+            echo "has_changes=true"  >> $GITHUB_OUTPUT
+            echo "file_count=${CHANGED}" >> $GITHUB_OUTPUT
             BRANCH_NAME="idaho-leg-scraper-$(date -u +%Y%m%d%H%M%S)"
+            echo "branch_name=${BRANCH_NAME}" >> "$GITHUB_OUTPUT"
+            git commit -m "scrape Idaho legislature — ${CHANGED} file(s) $(date -u +%Y-%m-%d)"
             git checkout -b "$BRANCH_NAME"
             git push origin "$BRANCH_NAME"
-            GH_TOKEN=${{ secrets.GITHUB_TOKEN }} gh pr create --title "Automated Scrape: Idaho Legislature" --body "Automated PR from scraper workflow." --base main --head "$BRANCH_NAME"
-            echo "committed=true"  >> $GITHUB_OUTPUT
-            echo "file_count=${CHANGED}" >> $GITHUB_OUTPUT
           fi
 
+      - name: Check for existing PR
+        if: steps.commit_push.outputs.has_changes == 'true'
+        id: check-pr
+        uses: ./.github/actions/idempotent-pr-create
+        with:
+          branch: ${{ steps.commit_push.outputs.branch_name }}
+          gh-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Create Pull Request
+        if: steps.check-pr.outputs.pr_exists != 'true' && steps.commit_push.outputs.has_changes == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH_NAME: ${{ steps.commit_push.outputs.branch_name }}
+        run: |
+          gh pr create --title "Automated Scrape: Idaho Legislature" --body "Automated PR from scraper workflow." --base main --head "$BRANCH_NAME"
+
       - name: Post digest comment to tracking issue
-        if: steps.commit.outputs.committed == 'true'
+        if: steps.commit_push.outputs.has_changes == 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           YEAR:     ${{ github.event.inputs.year || '2026' }}
