@@ -2,7 +2,7 @@
 title: TO DO LIST
 linter-yaml-title-alias: TO DO LIST
 date created: Friday, March 27th 2026, 10:09:45 am
-date modified: Sunday, April 19th 2026, 12:00:00 am
+date modified: Sunday, April 19th 2026, 12:11:07 pm
 related:
   - DAILY NOTE
   - DAILY NOTE TEMPLATE
@@ -37,3 +37,7 @@ sort by description
 
 - [x] A250 REVISION WRITING
 - [x] RESET Obsidian Sync Vault
+- WORK
+- []
+- PERSONAL
+- VAULT
