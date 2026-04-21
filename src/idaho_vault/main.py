@@ -55,7 +55,7 @@ def _load_repo_script_module(script_name: str, *, command_name: str):
     normalized_script_name = re.sub(r"[^A-Za-z0-9_]", "_", script_name)
     module_name = f"idaho_vault_{normalized_script_name}"
     spec = importlib.util.spec_from_file_location(module_name, script_path)
-    if spec is None or spec.loader is None:
+    if spec is None or spec.loader is None or not hasattr(spec.loader, "exec_module"):
         raise SystemExit(f"Unable to load script module from: {script_path}")
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)
@@ -137,6 +137,7 @@ def replay() -> None:
 
 def test() -> None:
     """Run the repository test suite from a plain checkout or installed environment."""
+    # Test discovery depends on the repository's tracked tests directory and root wiring.
     repo_root = _require_checkout("test", required_paths=("tests",))
     src_root = repo_root / "src"
     tests_root = repo_root / "tests"

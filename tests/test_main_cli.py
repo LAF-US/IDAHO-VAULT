@@ -15,11 +15,11 @@ if str(SRC_ROOT) not in sys.path:
 from idaho_vault import main
 
 
-class MainCliTest(unittest.TestCase):
+class TestMainCli(unittest.TestCase):
     def test_require_checkout_fails_with_clear_message(self) -> None:
         from tempfile import TemporaryDirectory
 
-        with TemporaryDirectory(prefix="main_cli_checkout_") as temp_dir:
+        with TemporaryDirectory(prefix="test_require_checkout_") as temp_dir:
             temp_root = Path(temp_dir)
             with mock.patch.object(main, "_repo_root", return_value=temp_root):
                 with self.assertRaises(SystemExit) as exc:
@@ -73,7 +73,7 @@ class MainCliTest(unittest.TestCase):
     def test_run_metadata_survey_supports_markdown_output_file(self) -> None:
         from tempfile import TemporaryDirectory
 
-        with TemporaryDirectory(prefix="main_cli_metadata_") as temp_dir:
+        with TemporaryDirectory(prefix="test_metadata_survey_output_") as temp_dir:
             temp_root = Path(temp_dir)
             output = temp_root / "survey.md"
             fake_module = SimpleNamespace(
