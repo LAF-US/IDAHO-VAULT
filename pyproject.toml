@@ -17,6 +17,8 @@ replay = "idaho_vault.main:replay"
 test = "idaho_vault.main:test"
 run_with_trigger = "idaho_vault.main:run_with_trigger"
 five_wizards_threshold = "idaho_vault.main:run_five_wizards_threshold"
+civic_scaffold = "idaho_vault.main:run_civic_scaffold"
+metadata_survey = "idaho_vault.main:run_metadata_survey"
 
 [build-system]
 requires = ["hatchling"]

@@ -1,0 +1,99 @@
+from __future__ import annotations
+
+import json
+import shutil
+import sys
+import tempfile
+import unittest
+from pathlib import Path
+from types import SimpleNamespace
+from unittest import mock
+
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+SRC_ROOT = PROJECT_ROOT / "src"
+if str(SRC_ROOT) not in sys.path:
+    sys.path.insert(0, str(SRC_ROOT))
+
+from idaho_vault import main
+
+
+class MainCliTest(unittest.TestCase):
+    def test_require_checkout_fails_with_clear_message(self) -> None:
+        temp_root = Path(tempfile.mkdtemp(prefix="main_cli_checkout_"))
+        try:
+            with mock.patch.object(main, "_repo_root", return_value=temp_root):
+                with self.assertRaises(SystemExit) as exc:
+                    main._require_checkout("metadata_survey")
+            self.assertIn("checkout-only", str(exc.exception))
+            self.assertIn("AGENTS.md", str(exc.exception))
+        finally:
+            shutil.rmtree(temp_root, ignore_errors=True)
+
+    def test_run_five_wizards_threshold_supports_dry_run_and_run_id(self) -> None:
+        fake_context = object()
+        fake_result = object()
+        with (
+            mock.patch.object(main, "_require_checkout", return_value=PROJECT_ROOT),
+            mock.patch("idaho_vault.operator_context.load_operator_context", return_value=fake_context),
+            mock.patch(
+                "idaho_vault.five_wizards.threshold_runner.run_threshold_stage",
+                return_value=fake_result,
+            ) as run_stage,
+            mock.patch(
+                "idaho_vault.five_wizards.threshold_runner.render_threshold_stage_summary",
+                return_value="summary",
+            ),
+            mock.patch.object(sys, "argv", ["five_wizards_threshold", "--dry-run", "--run-id", "run-123"]),
+            mock.patch("builtins.print") as fake_print,
+        ):
+            main.run_five_wizards_threshold()
+
+        run_stage.assert_called_once_with(
+            run_id="run-123",
+            materialize=False,
+            context=fake_context,
+        )
+        fake_print.assert_called_once_with("summary")
+
+    def test_run_civic_scaffold_can_emit_json(self) -> None:
+        fake_scaffold = SimpleNamespace(to_dict=lambda: {"entity": {"title": "IDAHO-VAULT"}})
+        with (
+            mock.patch.object(main, "_require_checkout", return_value=PROJECT_ROOT),
+            mock.patch("idaho_vault.operator_context.load_operator_context", return_value=object()),
+            mock.patch("idaho_vault.civic_scaffold.build_civic_scaffold", return_value=fake_scaffold),
+            mock.patch.object(sys, "argv", ["civic_scaffold", "--format", "json"]),
+            mock.patch("builtins.print") as fake_print,
+        ):
+            main.run_civic_scaffold()
+
+        printed = fake_print.call_args.args[0]
+        self.assertEqual(json.loads(printed), {"entity": {"title": "IDAHO-VAULT"}})
+
+    def test_run_metadata_survey_supports_markdown_output_file(self) -> None:
+        temp_root = Path(tempfile.mkdtemp(prefix="main_cli_metadata_"))
+        try:
+            output = temp_root / "survey.md"
+            fake_module = SimpleNamespace(
+                survey_vault=mock.Mock(return_value={"scanned_files": 1}),
+                render_markdown=mock.Mock(return_value="# Metadata Survey"),
+            )
+            with (
+                mock.patch.object(main, "_require_checkout", return_value=PROJECT_ROOT),
+                mock.patch.object(main, "_load_repo_script_module", return_value=fake_module),
+                mock.patch.object(
+                    sys,
+                    "argv",
+                    ["metadata_survey", "--format", "markdown", "--output", str(output)],
+                ),
+            ):
+                main.run_metadata_survey()
+
+            self.assertEqual(output.read_text(encoding="utf-8"), "# Metadata Survey")
+            fake_module.survey_vault.assert_called_once_with(PROJECT_ROOT, include_private=False)
+            fake_module.render_markdown.assert_called_once()
+        finally:
+            shutil.rmtree(temp_root, ignore_errors=True)
+
+
+if __name__ == "__main__":
+    unittest.main()

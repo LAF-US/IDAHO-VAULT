@@ -3,6 +3,8 @@
 
 from __future__ import annotations
 
+import argparse
+import importlib.util
 import json
 import re
 import sys
@@ -26,6 +28,38 @@ def _force_utf8_stdio() -> None:
 
 _force_utf8_stdio()
 configure_vault_runtime()
+
+
+def _repo_root() -> Path:
+    return Path(__file__).resolve().parents[2]
+
+
+def _require_checkout(command_name: str, *, required_paths: tuple[str, ...] = ()) -> Path:
+    repo_root = _repo_root()
+    required = ("AGENTS.md", "CONSTITUTION.md", *required_paths)
+    missing = [relpath for relpath in required if not (repo_root / relpath).exists()]
+    if missing:
+        missing_rendered = ", ".join(missing)
+        raise SystemExit(
+            f"{command_name} is checkout-only and must run from an IDAHO-VAULT repository root. "
+            f"Missing required path(s): {missing_rendered}"
+        )
+    return repo_root
+
+
+def _load_repo_script_module(script_name: str):
+    repo_root = _require_checkout("metadata_survey")
+    script_path = repo_root / ".github" / "scripts" / script_name
+    if not script_path.exists():
+        raise SystemExit(f"Required script was not found: {script_path}")
+    module_name = f"idaho_vault_{script_name.replace('.', '_')}"
+    spec = importlib.util.spec_from_file_location(module_name, script_path)
+    if spec is None or spec.loader is None:
+        raise SystemExit(f"Unable to load script module from: {script_path}")
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
+
 
 def _execute() -> str:
     """Execute the bootstrap validation crew and return its raw output."""
@@ -102,7 +136,7 @@ def replay() -> None:
 
 def test() -> None:
     """Run the repository test suite from a plain checkout or installed environment."""
-    repo_root = Path(__file__).resolve().parents[2]
+    repo_root = _require_checkout("test", required_paths=("tests",))
     src_root = repo_root / "src"
     tests_root = repo_root / "tests"
 
@@ -132,12 +166,104 @@ def run_with_trigger() -> None:
 
 def run_five_wizards_threshold() -> None:
     """Run the fixed 5Wizards threshold slice and stage it to !/CREWAI/."""
+    parser = argparse.ArgumentParser(
+        prog="five_wizards_threshold",
+        description="Run the 5Wizards threshold slice from a local vault checkout.",
+    )
+    parser.add_argument(
+        "--run-id",
+        help="Optional explicit run id for deterministic staging paths.",
+    )
+    parser.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="Evaluate and render without writing staged artifacts.",
+    )
+    args = parser.parse_args(sys.argv[1:])
+
+    repo_root = _require_checkout("five_wizards_threshold")
     from idaho_vault.operator_context import load_operator_context
     from idaho_vault.five_wizards.threshold_runner import (
         render_threshold_stage_summary,
         run_threshold_stage,
     )
 
-    context = load_operator_context()
-    result = run_threshold_stage(context=context)
+    context = load_operator_context(root=repo_root)
+    result = run_threshold_stage(
+        run_id=args.run_id,
+        materialize=not args.dry_run,
+        context=context,
+    )
     print(render_threshold_stage_summary(result, context=context))
+
+
+def run_civic_scaffold() -> None:
+    """Render the current civic scaffold through a truthful local CLI front door."""
+    parser = argparse.ArgumentParser(
+        prog="civic_scaffold",
+        description="Render the civic scaffold from the current local checkout.",
+    )
+    parser.add_argument(
+        "--format",
+        choices=("markdown", "json"),
+        default="markdown",
+        help="Output format.",
+    )
+    parser.add_argument(
+        "--output",
+        help="Optional output file path. Defaults to stdout.",
+    )
+    args = parser.parse_args(sys.argv[1:])
+
+    repo_root = _require_checkout("civic_scaffold")
+    from idaho_vault.civic_scaffold import build_civic_scaffold, render_civic_scaffold_markdown
+    from idaho_vault.operator_context import load_operator_context
+
+    context = load_operator_context(root=repo_root)
+    scaffold = build_civic_scaffold(context=context)
+    if args.format == "json":
+        rendered = json.dumps(scaffold.to_dict(), indent=2, ensure_ascii=False)
+    else:
+        rendered = render_civic_scaffold_markdown(scaffold)
+
+    if args.output:
+        Path(args.output).write_text(rendered, encoding="utf-8")
+        return
+    print(rendered)
+
+
+def run_metadata_survey() -> None:
+    """Run the metadata/frontmatter survey from the local checkout."""
+    parser = argparse.ArgumentParser(
+        prog="metadata_survey",
+        description="Survey markdown frontmatter state for this vault checkout.",
+    )
+    parser.add_argument(
+        "--include-private",
+        action="store_true",
+        help="Include the _private directory in the scan.",
+    )
+    parser.add_argument(
+        "--format",
+        choices=("json", "markdown"),
+        default="json",
+        help="Output format.",
+    )
+    parser.add_argument(
+        "--output",
+        help="Optional output path. Defaults to stdout.",
+    )
+    args = parser.parse_args(sys.argv[1:])
+
+    repo_root = _require_checkout("metadata_survey")
+    metadata_survey = _load_repo_script_module("metadata_survey.py")
+    summary = metadata_survey.survey_vault(repo_root, include_private=args.include_private)
+    if args.format == "markdown":
+        rendered = metadata_survey.render_markdown(summary)
+    else:
+        rendered = json.dumps(summary, indent=2, ensure_ascii=False)
+
+    if args.output:
+        Path(args.output).write_text(rendered, encoding="utf-8")
+        return
+    print(rendered)

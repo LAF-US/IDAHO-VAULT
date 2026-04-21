@@ -167,7 +167,7 @@ EOF
           python3 .github/scripts/pr_lifecycle.py set-state --pr-number "$PR_NUM" --state staged
 
       - name: Trigger agent reviews
-        if: steps.classify.outputs.skip != 'true' && steps.check-pr.outputs.pr_exists != 'true'
+        if: steps.classify.outputs.skip != 'true' && steps.check-pr.outputs.pr_exists != 'true' && steps.classify.outputs.tier == 'low'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH_NAME: ${{ github.event_name == 'create' && github.event.ref || github.ref_name }}
@@ -179,7 +179,7 @@ EOF
             exit 0
           fi
 
-          # Post explicit review triggers so bots fire even on bot-authored PRs.
+          # Post explicit review triggers for low-risk PRs only.
           # Each tool is a separate comment so independent apps see their own trigger.
           gh pr comment "$PR_NUM" --body "@coderabbitai review"
           gh pr comment "$PR_NUM" --body "@Qodo /review"
