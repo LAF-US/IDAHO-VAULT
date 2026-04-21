@@ -1,9 +1,7 @@
 from __future__ import annotations
 
 import json
-import shutil
 import sys
-import tempfile
 import unittest
 from pathlib import Path
 from types import SimpleNamespace
@@ -19,23 +17,23 @@ from idaho_vault import main
 
 class MainCliTest(unittest.TestCase):
     def test_require_checkout_fails_with_clear_message(self) -> None:
-        temp_root = Path(tempfile.mkdtemp(prefix="main_cli_checkout_"))
-        try:
+        from tempfile import TemporaryDirectory
+
+        with TemporaryDirectory(prefix="main_cli_checkout_") as temp_dir:
+            temp_root = Path(temp_dir)
             with mock.patch.object(main, "_repo_root", return_value=temp_root):
                 with self.assertRaises(SystemExit) as exc:
                     main._require_checkout("metadata_survey")
             message = str(exc.exception.code)
             self.assertIn("checkout-only", message)
             self.assertIn("AGENTS.md", message)
-        finally:
-            shutil.rmtree(temp_root, ignore_errors=True)
 
     def test_run_five_wizards_threshold_supports_dry_run_and_run_id(self) -> None:
         fake_context = object()
         fake_result = object()
         with (
             mock.patch.object(main, "_require_checkout", return_value=PROJECT_ROOT),
-            mock.patch("idaho_vault.operator_context.load_operator_context", return_value=fake_context),
+            mock.patch("idaho_vault.operator_context.load_operator_context", return_value=fake_context) as load_context,
             mock.patch(
                 "idaho_vault.five_wizards.threshold_runner.run_threshold_stage",
                 return_value=fake_result,
@@ -54,13 +52,14 @@ class MainCliTest(unittest.TestCase):
             materialize=False,
             context=fake_context,
         )
+        load_context.assert_called_once_with(root=PROJECT_ROOT)
         fake_print.assert_called_once_with("summary")
 
     def test_run_civic_scaffold_can_emit_json(self) -> None:
         fake_scaffold = SimpleNamespace(to_dict=lambda: {"entity": {"title": "IDAHO-VAULT"}})
         with (
             mock.patch.object(main, "_require_checkout", return_value=PROJECT_ROOT),
-            mock.patch("idaho_vault.operator_context.load_operator_context", return_value=object()),
+            mock.patch("idaho_vault.operator_context.load_operator_context", return_value=object()) as load_context,
             mock.patch("idaho_vault.civic_scaffold.build_civic_scaffold", return_value=fake_scaffold),
             mock.patch.object(sys, "argv", ["civic_scaffold", "--format", "json"]),
             mock.patch("builtins.print") as fake_print,
@@ -69,10 +68,13 @@ class MainCliTest(unittest.TestCase):
 
         printed = fake_print.call_args.args[0]
         self.assertEqual(json.loads(printed), {"entity": {"title": "IDAHO-VAULT"}})
+        load_context.assert_called_once_with(root=PROJECT_ROOT)
 
     def test_run_metadata_survey_supports_markdown_output_file(self) -> None:
-        temp_root = Path(tempfile.mkdtemp(prefix="main_cli_metadata_"))
-        try:
+        from tempfile import TemporaryDirectory
+
+        with TemporaryDirectory(prefix="main_cli_metadata_") as temp_dir:
+            temp_root = Path(temp_dir)
             output = temp_root / "survey.md"
             fake_module = SimpleNamespace(
                 survey_vault=mock.Mock(return_value={"scanned_files": 1}),
@@ -92,8 +94,6 @@ class MainCliTest(unittest.TestCase):
             self.assertEqual(output.read_text(encoding="utf-8"), "# Metadata Survey")
             fake_module.survey_vault.assert_called_once_with(PROJECT_ROOT, include_private=False)
             fake_module.render_markdown.assert_called_once()
-        finally:
-            shutil.rmtree(temp_root, ignore_errors=True)
 
 
 if __name__ == "__main__":

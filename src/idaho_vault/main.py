@@ -52,7 +52,8 @@ def _load_repo_script_module(script_name: str, *, command_name: str):
     script_path = repo_root / ".github" / "scripts" / script_name
     if not script_path.exists():
         raise SystemExit(f"Required script was not found: {script_path}")
-    module_name = f"idaho_vault_{script_name.replace('.', '_')}"
+    normalized_script_name = re.sub(r"[^A-Za-z0-9_]", "_", script_name)
+    module_name = f"idaho_vault_{normalized_script_name}"
     spec = importlib.util.spec_from_file_location(module_name, script_path)
     if spec is None or spec.loader is None:
         raise SystemExit(f"Unable to load script module from: {script_path}")
