@@ -34,6 +34,10 @@ def _repo_root() -> Path:
     return Path(__file__).resolve().parents[2]
 
 
+def _is_valid_module_spec(spec: object) -> bool:
+    return bool(spec is not None and spec.loader is not None and hasattr(spec.loader, "exec_module"))
+
+
 def _require_checkout(command_name: str, *, required_paths: tuple[str, ...] = ()) -> Path:
     repo_root = _repo_root()
     required = ("AGENTS.md", "CONSTITUTION.md", *required_paths)
@@ -55,7 +59,7 @@ def _load_repo_script_module(script_name: str, *, command_name: str):
     normalized_script_name = re.sub(r"[^A-Za-z0-9_]", "_", script_name)
     module_name = f"idaho_vault_{normalized_script_name}"
     spec = importlib.util.spec_from_file_location(module_name, script_path)
-    if spec is None or spec.loader is None or not hasattr(spec.loader, "exec_module"):
+    if not _is_valid_module_spec(spec):
         raise SystemExit(f"Unable to load script module from: {script_path}")
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)

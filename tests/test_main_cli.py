@@ -76,13 +76,17 @@ class TestMainCli(unittest.TestCase):
         with TemporaryDirectory(prefix="test_metadata_survey_output_") as temp_dir:
             temp_root = Path(temp_dir)
             output = temp_root / "survey.md"
-            fake_module = SimpleNamespace(
+            mock_metadata_survey_module = SimpleNamespace(
                 survey_vault=mock.Mock(return_value={"scanned_files": 1}),
                 render_markdown=mock.Mock(return_value="# Metadata Survey"),
             )
             with (
                 mock.patch.object(main, "_require_checkout", return_value=PROJECT_ROOT),
-                mock.patch.object(main, "_load_repo_script_module", return_value=fake_module),
+                mock.patch.object(
+                    main,
+                    "_load_repo_script_module",
+                    return_value=mock_metadata_survey_module,
+                ),
                 mock.patch.object(
                     sys,
                     "argv",
@@ -92,8 +96,11 @@ class TestMainCli(unittest.TestCase):
                 main.run_metadata_survey()
 
             self.assertEqual(output.read_text(encoding="utf-8"), "# Metadata Survey")
-            fake_module.survey_vault.assert_called_once_with(PROJECT_ROOT, include_private=False)
-            fake_module.render_markdown.assert_called_once()
+            mock_metadata_survey_module.survey_vault.assert_called_once_with(
+                PROJECT_ROOT,
+                include_private=False,
+            )
+            mock_metadata_survey_module.render_markdown.assert_called_once()
 
 
 if __name__ == "__main__":
