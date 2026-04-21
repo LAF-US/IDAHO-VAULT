@@ -24,8 +24,9 @@ class MainCliTest(unittest.TestCase):
             with mock.patch.object(main, "_repo_root", return_value=temp_root):
                 with self.assertRaises(SystemExit) as exc:
                     main._require_checkout("metadata_survey")
-            self.assertIn("checkout-only", str(exc.exception))
-            self.assertIn("AGENTS.md", str(exc.exception))
+            message = str(exc.exception.code)
+            self.assertIn("checkout-only", message)
+            self.assertIn("AGENTS.md", message)
         finally:
             shutil.rmtree(temp_root, ignore_errors=True)
 

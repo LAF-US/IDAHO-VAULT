@@ -47,8 +47,8 @@ def _require_checkout(command_name: str, *, required_paths: tuple[str, ...] = ()
     return repo_root
 
 
-def _load_repo_script_module(script_name: str):
-    repo_root = _require_checkout("metadata_survey")
+def _load_repo_script_module(script_name: str, *, command_name: str):
+    repo_root = _require_checkout(command_name)
     script_path = repo_root / ".github" / "scripts" / script_name
     if not script_path.exists():
         raise SystemExit(f"Required script was not found: {script_path}")
@@ -256,7 +256,7 @@ def run_metadata_survey() -> None:
     args = parser.parse_args(sys.argv[1:])
 
     repo_root = _require_checkout("metadata_survey")
-    metadata_survey = _load_repo_script_module("metadata_survey.py")
+    metadata_survey = _load_repo_script_module("metadata_survey.py", command_name="metadata_survey")
     summary = metadata_survey.survey_vault(repo_root, include_private=args.include_private)
     if args.format == "markdown":
         rendered = metadata_survey.render_markdown(summary)
