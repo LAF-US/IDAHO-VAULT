@@ -1,0 +1,18 @@
+# Qodo PR Agent configuration (auto-loaded by Qodo PR review)
+# See VAULT-CONVENTIONS.md for vault governance conventions
+# See !/AGENTS.md for agent registry and capability tiers
+
+[github_app]
+pr_commands = [
+  "/agentic_describe",
+  "/agentic_review"
+]
+
+[pr_reviewer]
+# Review PRs authored by bots (e.g. github-actions[bot] from auto-pr workflow)
+ignore_pr_author_bot = false
+# Vault-specific review guidance:
+# - All committed content is ON THE RECORD (public repo)
+# - Root governance files and !/ routing/bootstrap surfaces require Logan's explicit approval before merge
+# - Python files (.github/scripts/) are machine/procedural product
+# - Markdown files are human product (attributable to Logan)

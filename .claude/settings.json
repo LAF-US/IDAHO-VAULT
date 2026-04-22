@@ -1,0 +1,24 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '--- IDAHO-VAULT CONTEXT INJECTION ---' && echo 'Date:' $(date '+%Y-%m-%d') && echo 'Branch:' $(git branch --show-current) && echo '' && echo 'LEVELSET: Read LEVELSET-CURRENT.md (repo root) for current vault state.' && echo 'CLAUDE.md: Loaded automatically — single source of truth for operations.' && echo 'DECISIONS: Governance file at DECISIONS.md — read only, do not use as relay surface.' && echo '' && echo 'Vault owner: Logan Finney — journalist, Idaho Reports / Idaho Public Television' && echo 'All committed content is ON THE RECORD and PUBLISHABLE.' && echo '--- END CONTEXT INJECTION ---'"
+          }
+        ]
+      }
+    ]
+  },
+  "permissions": {
+    "allow": [
+      "Bash",
+      "Edit",
+      "Read",
+      "Glob",
+      "Grep",
+      "Agent"
+    ]
+  }
+}

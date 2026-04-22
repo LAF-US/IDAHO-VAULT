@@ -1,0 +1,52 @@
+name: Branch Garden Report
+
+on:
+  schedule:
+    - cron: '0 10 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+  pull-requests: read
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+        with:
+          fetch-depth: 0
+
+      - name: Fetch remote state
+        run: git fetch --prune origin
+
+      - name: Set up Python
+        uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6
+        with:
+          python-version: '3.11'
+
+      - name: Build report
+        id: report
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python .github/scripts/branch_garden_report.py --report-path branch-garden-report.md
+
+      - name: Publish summary
+        run: cat branch-garden-report.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Open or update issue when findings exist
+        if: steps.report.outputs.has_findings == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          ISSUE_NUMBER=$(gh issue list --state open --search "\"[Branch Garden] Weekly report\" in:title" --json number --jq '.[0].number')
+          if [ -z "$ISSUE_NUMBER" ] || [ "$ISSUE_NUMBER" = "null" ]; then
+            gh issue create \
+              --title "[Branch Garden] Weekly report" \
+              --body-file branch-garden-report.md
+          else
+            gh issue comment "$ISSUE_NUMBER" --body-file branch-garden-report.md
+          fi

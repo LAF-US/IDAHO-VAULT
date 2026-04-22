@@ -1,0 +1,82 @@
+{
+  "name": "nimble_map",
+  "description": "Discover all URLs on a website by crawling its pages and sitemap.\n\nReturns a flat list of URLs found on the site. Useful for understanding\nsite structure before targeted extraction or crawling.\n\nArgs:\n    url: The website URL to map. The tool will discover all linked pages\n        starting from this URL.\n\n    limit: Maximum number of URLs to return. If not specified, the API\n        default is used.\n\n    sitemap: How to use the site's sitemap for URL discovery:\n        - \"include\": Use sitemap in addition to link following (default)\n        - \"skip\": Ignore sitemap, only follow links\n        - \"only\": Only return URLs found in sitemap\n\n    domain_filter: Control URL scope for discovery:\n        - \"domain\": Only URLs on the exact domain (default)\n        - \"subdomain\": Include URLs from subdomains\n        - \"all\": Include all discovered URLs regardless of domain\n\n    tool_reasoning: Optional reasoning about why this tool was selected.\n    tool_description: Optional description of the tool's purpose.\n\nReturns:\n    dict: A dictionary containing:\n        - links (list): List of discovered URLs with optional title and description\n        - success (bool): Whether the mapping completed successfully\n        - task_id (str): Unique task identifier",
+  "arguments": {
+    "type": "object",
+    "properties": {
+      "url": {
+        "title": "Url",
+        "type": "string"
+      },
+      "limit": {
+        "anyOf": [
+          {
+            "type": "integer"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Limit"
+      },
+      "sitemap": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Sitemap"
+      },
+      "domain_filter": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Domain Filter"
+      },
+      "tool_reasoning": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Tool Reasoning"
+      },
+      "tool_description": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Tool Description"
+      }
+    },
+    "required": [
+      "url"
+    ]
+  },
+  "outputSchema": {
+    "type": "object",
+    "additionalProperties": true
+  },
+  "plugin": "nimble",
+  "marketplace": "claude-plugins-official"
+}

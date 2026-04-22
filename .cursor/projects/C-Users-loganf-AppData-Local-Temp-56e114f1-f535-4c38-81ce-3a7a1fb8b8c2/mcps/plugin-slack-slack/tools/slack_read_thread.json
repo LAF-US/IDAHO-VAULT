@@ -1,0 +1,43 @@
+{
+  "name": "slack_read_thread",
+  "description": "Reads messages from a specific Slack thread (parent message + all replies). Read-only.\n\nRequires channel_id and message_ts of the parent message. Use slack_search_public or slack_read_channel to find these values. Use slack_search_public with \"is:thread\" to find threads by content. Use slack_send_message with thread_ts to reply to a thread.\n",
+  "arguments": {
+    "type": "object",
+    "properties": {
+      "channel_id": {
+        "type": "string",
+        "description": "Channel, private group, or IM channel to fetch thread replies for"
+      },
+      "message_ts": {
+        "type": "string",
+        "description": "Timestamp of the parent message to fetch replies for"
+      },
+      "limit": {
+        "type": "integer",
+        "description": "Number of messages to return, between 1 and 1000. Default value is 100."
+      },
+      "cursor": {
+        "type": "string",
+        "description": "Paginate through collections of data by setting the cursor parameter to a next_cursor attribute returned by a previous request"
+      },
+      "latest": {
+        "type": "string",
+        "description": "End of time range of messages to include in results (timestamp)"
+      },
+      "oldest": {
+        "type": "string",
+        "description": "Start of time range of messages to include in results (timestamp)"
+      },
+      "response_format": {
+        "type": "string",
+        "description": "Level of detail (default: 'detailed'). Options: 'detailed', 'concise'"
+      }
+    },
+    "required": [
+      "channel_id",
+      "message_ts"
+    ]
+  },
+  "plugin": "slack",
+  "marketplace": "claude-plugins-official"
+}

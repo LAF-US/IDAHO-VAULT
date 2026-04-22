@@ -1,0 +1,3233 @@
+Folder PATH listing for volume Windows
+Volume serial number is 2024-8A79
+C:\USERS\LOGANF\DOCUMENTS\IDAHO-VAULT
++---!ADMINISTRATION
+¦       !README.md
+¦       
++---.obsidian
+¦   ¦   app.json
+¦   ¦   appearance.json
+¦   ¦   backlink.json
+¦   ¦   community-plugins.json
+¦   ¦   core-plugins-migration.json
+¦   ¦   core-plugins.json
+¦   ¦   daily-notes.json
+¦   ¦   graph.json
+¦   ¦   hotkeys.json
+¦   ¦   note-composer.json
+¦   ¦   page-preview.json
+¦   ¦   templates.json
+¦   ¦   types.json
+¦   ¦   workspace.json
+¦   ¦   
+¦   +---plugins
+¦       +---better-search-views
+¦       ¦       main.js
+¦       ¦       manifest.json
+¦       ¦       styles.css
+¦       ¦       
+¦       +---graph-nested-tags
+¦       ¦       main.js
+¦       ¦       manifest.json
+¦       ¦       
+¦       +---multi-tag
+¦       ¦       data.json
+¦       ¦       main.js
+¦       ¦       manifest.json
+¦       ¦       
+¦       +---obsidian-mind-map
+¦       ¦       main.js
+¦       ¦       manifest.json
+¦       ¦       
+¦       +---obsidian42-strange-new-worlds
+¦       ¦       main.js
+¦       ¦       manifest.json
+¦       ¦       styles.css
+¦       ¦       
+¦       +---recent-files-obsidian
+¦       ¦       data.json
+¦       ¦       main.js
+¦       ¦       manifest.json
+¦       ¦       styles.css
+¦       ¦       
+¦       +---tag-wrangler
+¦               main.js
+¦               manifest.json
+¦               styles.css
+¦               
++---ATTACHMENTS
+¦   +---DOCUMENTS
+¦   ¦       Broadband Strategic Plan.pdf
+¦   ¦       Historic Survey of Roads in Idaho’s State Highway System Volume 1 - Historic Context.pdf
+¦   ¦       Historic Survey of Roads in Idaho’s State Highway System Volume 2 - Application of the National Register of Historic Places Criteria for Evaluation.pdf
+¦   ¦       History of Property Tax in Idaho.pdf
+¦   ¦       ID Property Tax Limitations and Initiatives 1978–present.pdf
+¦   ¦       Sign_Cha***REMOVED***Supplement.pdf
+¦   ¦       
+¦   +---MAPS
+¦   ¦       Legislative District Map 2021.pdf
+¦   ¦       Snake River Dams.jpg
+¦   ¦       Wildlife Management Units.png
+¦   ¦       
+¦   +---TEMPLATES
+¦           X - Article.md
+¦           X - Hearing.md
+¦           X - OP-ED.md
+¦           X - Press Release.md
+¦           
++---GOVERNMENTS
+¦   ¦   Board of Professional Counselors and Marriage and Family Therapists.md
+¦   ¦   Idaho Code.md
+¦   ¦   Idaho Constitution.md
+¦   ¦   
+¦   +---IDAHO - EXECUTIVE
+¦   ¦   ¦   Behavioral Health Council.md
+¦   ¦   ¦   Board of Accountancy.md
+¦   ¦   ¦   Board of Correction.md
+¦   ¦   ¦   Board of Dentistry.md
+¦   ¦   ¦   Board of Engineers and Land Surveyors.md
+¦   ¦   ¦   Board of Medicine.md
+¦   ¦   ¦   Board of Nursing.md
+¦   ¦   ¦   Board of Pharmacy.md
+¦   ¦   ¦   Board of Veterinary Medicine.md
+¦   ¦   ¦   Broadband Advisory Board.md
+¦   ¦   ¦   Bureau of Building, Construction, and Real Estate.md
+¦   ¦   ¦   Bureau of Health Professions.md
+¦   ¦   ¦   Bureau of Occupational Licenses.md
+¦   ¦   ¦   Bureau of Regulatory & Legislative Affairs.md
+¦   ¦   ¦   Child Protection Services.md
+¦   ¦   ¦   Coeur d'Alene Lake Advisory Committee.md
+¦   ¦   ¦   Commission for Libraries.md
+¦   ¦   ¦   Commission of Pardons and Parole.md
+¦   ¦   ¦   Commission on Hispanic Affairs.md
+¦   ¦   ¦   Division of Behavioral Health.md
+¦   ¦   ¦   Division of Building Safety.md
+¦   ¦   ¦   Division of Financial Management.md
+¦   ¦   ¦   Division of Human Resources.md
+¦   ¦   ¦   Division of Occupational and Professional Licenses.md
+¦   ¦   ¦   Division of Veterans Services.md
+¦   ¦   ¦   Economic Advisory Council.md
+¦   ¦   ¦   Governor's K-12 Education Task Force.md
+¦   ¦   ¦   Group Insurance Advisory Committee.md
+¦   ¦   ¦   Human Rights Commission.md
+¦   ¦   ¦   Idaho Air National Guard.md
+¦   ¦   ¦   Idaho Army National Guard.md
+¦   ¦   ¦   Idaho Athletic Commission.md
+¦   ¦   ¦   Idaho Criminal Justice Commission.md
+¦   ¦   ¦   Idaho Fish and Game Commission.md
+¦   ¦   ¦   Idaho Judicial Council.md
+¦   ¦   ¦   Idaho Lottery.md
+¦   ¦   ¦   Idaho Military Division.md
+¦   ¦   ¦   Idaho Military History Museum.md
+¦   ¦   ¦   Idaho Public Television.md
+¦   ¦   ¦   Idaho Water Resource Board.md
+¦   ¦   ¦   Idaho Water Supply Bank.md
+¦   ¦   ¦   Information and Technology Services.md
+¦   ¦   ¦   Local Highway Technical Assistance Council.md
+¦   ¦   ¦   Office of Administrative Rules Coordinator.md
+¦   ¦   ¦   Office of Broadband.md
+¦   ¦   ¦   Office of Emergency Management.md
+¦   ¦   ¦   Office of Group Insurance.md
+¦   ¦   ¦   Office of the Attorney General.md
+¦   ¦   ¦   Office of the State Appellate Public Defender.md
+¦   ¦   ¦   Office of the State Public Defender.md
+¦   ¦   ¦   Outfitters and Guides Licensing Board.md
+¦   ¦   ¦   Public Charter School Commission.md
+¦   ¦   ¦   Public Defense Commission.md
+¦   ¦   ¦   Public Utilities Commission.md
+¦   ¦   ¦   Real Estate Commission.md
+¦   ¦   ¦   State Appellate Public Defender.md
+¦   ¦   ¦   State Athletic Commission.md
+¦   ¦   ¦   State Department of Education.md
+¦   ¦   ¦   State Historical Society.md
+¦   ¦   ¦   State Lottery Commission.md
+¦   ¦   ¦   State Public Defender.md
+¦   ¦   ¦   State Tax Commission.md
+¦   ¦   ¦   Task Force to Examine Indoctrination in Idaho Education.md
+¦   ¦   ¦   Workforce Development Council.md
+¦   ¦   ¦   
+¦   ¦   +---AGRICULTURAL COMMISSIONS
+¦   ¦   ¦       Alfalfa and Clover Seed Commission.md
+¦   ¦   ¦       Apple Commission.md
+¦   ¦   ¦       Barley Commission.md
+¦   ¦   ¦       Bean Commission.md
+¦   ¦   ¦       Beef Council.md
+¦   ¦   ¦       Cherry Commission.md
+¦   ¦   ¦       Dairy Products Commission.md
+¦   ¦   ¦       Forest Products Commission.md
+¦   ¦   ¦       Honey Commission.md
+¦   ¦   ¦       Hop Growers Commission.md
+¦   ¦   ¦       Horse Board.md
+¦   ¦   ¦       Invasive Species Council.md
+¦   ¦   ¦       Mint Commission.md
+¦   ¦   ¦       Oilseed Commission.md
+¦   ¦   ¦       Pea and Lentil Commission.md
+¦   ¦   ¦       Potato Commission.md
+¦   ¦   ¦       Rangeland Resource Commission.md
+¦   ¦   ¦       Sheep & Goat Health Board.md
+¦   ¦   ¦       State Brand Board.md
+¦   ¦   ¦       Wheat Commission.md
+¦   ¦   ¦       Wine Commission.md
+¦   ¦   ¦       
+¦   ¦   +---CONSTITUTIONAL
+¦   ¦   ¦   ¦   Idaho Commission for Redistricting.md
+¦   ¦   ¦   ¦   State Board of Canvassers.md
+¦   ¦   ¦   ¦   State Board of Education.md
+¦   ¦   ¦   ¦   State Board of Examiners.md
+¦   ¦   ¦   ¦   State Board of Land Commissioners.md
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---OFFICERS
+¦   ¦   ¦           Attorney General.md
+¦   ¦   ¦           Governor.md
+¦   ¦   ¦           Lieutenant Governor.md
+¦   ¦   ¦           Secretary of State.md
+¦   ¦   ¦           State Controller.md
+¦   ¦   ¦           State Treasurer.md
+¦   ¦   ¦           Superintendent of Public Instruction.md
+¦   ¦   ¦           
+¦   ¦   +---COUNTIES & CITIES
+¦   ¦   ¦       city administrator.md
+¦   ¦   ¦       city council.md
+¦   ¦   ¦       County Assessor.md
+¦   ¦   ¦       County Clerk.md
+¦   ¦   ¦       County Commissioners.md
+¦   ¦   ¦       County Coroner.md
+¦   ¦   ¦       County Sheriff.md
+¦   ¦   ¦       County Treasurer.md
+¦   ¦   ¦       mayor.md
+¦   ¦   ¦       police.md
+¦   ¦   ¦       Prosecuting Attorney.md
+¦   ¦   ¦       
+¦   ¦   +---DEPARTMENTS
+¦   ¦   ¦       Department of Administration.md
+¦   ¦   ¦       Department of Agriculture.md
+¦   ¦   ¦       Department of Commerce.md
+¦   ¦   ¦       Department of Correction.md
+¦   ¦   ¦       Department of Environmental Quality.md
+¦   ¦   ¦       Department of Finance.md
+¦   ¦   ¦       Department of Fish and Game.md
+¦   ¦   ¦       Department of Health and Welfare.md
+¦   ¦   ¦       Department of Insurance.md
+¦   ¦   ¦       Department of Juvenile Corrections.md
+¦   ¦   ¦       Department of Labor.md
+¦   ¦   ¦       Department of Lands.md
+¦   ¦   ¦       Department of Parks and Recreation.md
+¦   ¦   ¦       Department of Revenue and Taxation.md
+¦   ¦   ¦       Department of Self-Governing Agencies.md
+¦   ¦   ¦       Department of Transportation.md
+¦   ¦   ¦       Department of Water Resources.md
+¦   ¦   ¦       Idaho State Police.md
+¦   ¦   ¦       Industrial Commission.md
+¦   ¦   ¦       
+¦   ¦   +---HEALTH DISTRICTS
+¦   ¦           Central District Health.md
+¦   ¦           Eastern Idaho Public Health.md
+¦   ¦           North Central Health District.md
+¦   ¦           Panhandle Health District.md
+¦   ¦           South Central Public District Health.md
+¦   ¦           Southeastern Idaho Public Health.md
+¦   ¦           Southwest District Health.md
+¦   ¦           
+¦   +---IDAHO - JUDICIAL
+¦   ¦   ¦   Administrative Office of the Courts.md
+¦   ¦   ¦   Associate Justices.md
+¦   ¦   ¦   Chief Justice.md
+¦   ¦   ¦   district court.md
+¦   ¦   ¦   district judges.md
+¦   ¦   ¦   Idaho Court of Appeals.md
+¦   ¦   ¦   Idaho Supreme Court.md
+¦   ¦   ¦   judges.md
+¦   ¦   ¦   Judicial Districts.md
+¦   ¦   ¦   magistrate court.md
+¦   ¦   ¦   magistrate judges.md
+¦   ¦   ¦   State Court System.md
+¦   ¦   ¦   
+¦   ¦   +---COUNTY COURTHOUSES
+¦   ¦   ¦       Ada County Courthouse.md
+¦   ¦   ¦       Adams County Courthouse.md
+¦   ¦   ¦       Bannock County Courthouse.md
+¦   ¦   ¦       Bear Lake County Courthouse.md
+¦   ¦   ¦       Benewah County Courthouse.md
+¦   ¦   ¦       Bingham County Courthouse.md
+¦   ¦   ¦       Blaine County Courthouse.md
+¦   ¦   ¦       Boise County Courthouse.md
+¦   ¦   ¦       Bonner County Courthouse.md
+¦   ¦   ¦       Bonneville County Courthouse.md
+¦   ¦   ¦       Boundary County Courthouse.md
+¦   ¦   ¦       Butte County Courthouse.md
+¦   ¦   ¦       Camas County Courthouse.md
+¦   ¦   ¦       Canyon County Courthouse.md
+¦   ¦   ¦       Caribou County Courthouse.md
+¦   ¦   ¦       Cassia County Courthouse.md
+¦   ¦   ¦       Clark County Courthouse.md
+¦   ¦   ¦       Clearwater County Courthouse.md
+¦   ¦   ¦       Custer County Courthouse.md
+¦   ¦   ¦       Elmore County Courthouse.md
+¦   ¦   ¦       Franklin County Courthouse.md
+¦   ¦   ¦       Fremont County Courthouse.md
+¦   ¦   ¦       Gem County Courthouse.md
+¦   ¦   ¦       Gooding County Courthouse.md
+¦   ¦   ¦       Idaho County Courthouse.md
+¦   ¦   ¦       Jefferson County Courthouse.md
+¦   ¦   ¦       Jerome County Courthouse.md
+¦   ¦   ¦       Kootenai County Courthouse.md
+¦   ¦   ¦       Latah County Courthouse.md
+¦   ¦   ¦       Lemhi County Courthouse.md
+¦   ¦   ¦       Lewis County Courthouse.md
+¦   ¦   ¦       Lincoln County Courthouse.md
+¦   ¦   ¦       Madison County Courthouse.md
+¦   ¦   ¦       Minidoka County Courthouse.md
+¦   ¦   ¦       Nez Perce County Courthouse.md
+¦   ¦   ¦       Oneida County Courthouse.md
+¦   ¦   ¦       Owyhee County Courthouse.md
+¦   ¦   ¦       Payette County Courthouse.md
+¦   ¦   ¦       Power County Courthouse.md
+¦   ¦   ¦       Shoshone County Courthouse.md
+¦   ¦   ¦       Teton County Courthouse.md
+¦   ¦   ¦       Twin Falls County Courthouse.md
+¦   ¦   ¦       Valley County Courthouse.md
+¦   ¦   ¦       Washington County Courthouse.md
+¦   ¦   ¦       
+¦   ¦   +---JUDICIAL DISTRICTS
+¦   ¦           1st Judicial District.md
+¦   ¦           2nd Judicial District.md
+¦   ¦           3rd Judicial District.md
+¦   ¦           4th Judicial District.md
+¦   ¦           5th Judicial District.md
+¦   ¦           6th Judicial District.md
+¦   ¦           7th Judicial District.md
+¦   ¦           
+¦   +---IDAHO - LEGISLATIVE
+¦   ¦   ¦   Idaho Legislature.md
+¦   ¦   ¦   Joint Senate and House Rules.md
+¦   ¦   ¦   Legislative Budget Book.md
+¦   ¦   ¦   Legislative Services Office.md
+¦   ¦   ¦   Office of Performance Evaluations.md
+¦   ¦   ¦   
+¦   ¦   +---BILLS
+¦   ¦   ¦       (2021) House Bill 127.md
+¦   ¦   ¦       (2022) House Bill 701.md
+¦   ¦   ¦       (2023) House Bill 24.md
+¦   ¦   ¦       (2023) House Bill 314.md
+¦   ¦   ¦       (2023) House Bill 377.md
+¦   ¦   ¦       (2023) Senate Joint Memorial 101.md
+¦   ¦   ¦       
+¦   ¦   +---DISTRICTS
+¦   ¦   ¦       Legislative District 1.md
+¦   ¦   ¦       Legislative District 10.md
+¦   ¦   ¦       Legislative District 11.md
+¦   ¦   ¦       Legislative District 12.md
+¦   ¦   ¦       Legislative District 13.md
+¦   ¦   ¦       Legislative District 14.md
+¦   ¦   ¦       Legislative District 15.md
+¦   ¦   ¦       Legislative District 16.md
+¦   ¦   ¦       Legislative District 17.md
+¦   ¦   ¦       Legislative District 18.md
+¦   ¦   ¦       Legislative District 19.md
+¦   ¦   ¦       Legislative District 2.md
+¦   ¦   ¦       Legislative District 20.md
+¦   ¦   ¦       Legislative District 21.md
+¦   ¦   ¦       Legislative District 22.md
+¦   ¦   ¦       Legislative District 23.md
+¦   ¦   ¦       Legislative District 24.md
+¦   ¦   ¦       Legislative District 25.md
+¦   ¦   ¦       Legislative District 26.md
+¦   ¦   ¦       Legislative District 27.md
+¦   ¦   ¦       Legislative District 28.md
+¦   ¦   ¦       Legislative District 29.md
+¦   ¦   ¦       Legislative District 3.md
+¦   ¦   ¦       Legislative District 30.md
+¦   ¦   ¦       Legislative District 31.md
+¦   ¦   ¦       Legislative District 32.md
+¦   ¦   ¦       Legislative District 33.md
+¦   ¦   ¦       Legislative District 34.md
+¦   ¦   ¦       Legislative District 35.md
+¦   ¦   ¦       Legislative District 4.md
+¦   ¦   ¦       Legislative District 5.md
+¦   ¦   ¦       Legislative District 6.md
+¦   ¦   ¦       Legislative District 7.md
+¦   ¦   ¦       Legislative District 8.md
+¦   ¦   ¦       Legislative District 9.md
+¦   ¦   ¦       
+¦   ¦   +---IDAHO HOUSE
+¦   ¦   ¦   ¦   House Assistant Majority Leader.md
+¦   ¦   ¦   ¦   House Assistant Minority Leader.md
+¦   ¦   ¦   ¦   House Majority Caucus Chair.md
+¦   ¦   ¦   ¦   House Majority Leader.md
+¦   ¦   ¦   ¦   House member.md
+¦   ¦   ¦   ¦   House Minority Caucus Chair.md
+¦   ¦   ¦   ¦   House Minority Leader.md
+¦   ¦   ¦   ¦   Idaho House of Representatives.md
+¦   ¦   ¦   ¦   Rules of the House.md
+¦   ¦   ¦   ¦   Speaker of the House.md
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---HOUSE COMMITTEES
+¦   ¦   ¦           House Agricultural Affairs.md
+¦   ¦   ¦           House Appropriations.md
+¦   ¦   ¦           House Business.md
+¦   ¦   ¦           House Commerce and Human Resources.md
+¦   ¦   ¦           House Education.md
+¦   ¦   ¦           House Environment, Energy and Technology.md
+¦   ¦   ¦           House Ethics and Policy.md
+¦   ¦   ¦           House Health and Welfare.md
+¦   ¦   ¦           House Judiciary, Rules and Administration.md
+¦   ¦   ¦           House Local Government.md
+¦   ¦   ¦           House Resources and Conservation.md
+¦   ¦   ¦           House Revenue and Taxation.md
+¦   ¦   ¦           House State Affairs.md
+¦   ¦   ¦           House Transportation and Defense.md
+¦   ¦   ¦           House Ways and Means.md
+¦   ¦   ¦           
+¦   ¦   +---IDAHO SENATE
+¦   ¦   ¦   ¦   Idaho Senate.md
+¦   ¦   ¦   ¦   Rules of the Senate.md
+¦   ¦   ¦   ¦   Senate Assistant Majority Leader.md
+¦   ¦   ¦   ¦   Senate Assistant Minority Leader.md
+¦   ¦   ¦   ¦   Senate Majority Caucus Chair.md
+¦   ¦   ¦   ¦   Senate Majority Leader.md
+¦   ¦   ¦   ¦   Senate member.md
+¦   ¦   ¦   ¦   Senate Minority Caucus Chair.md
+¦   ¦   ¦   ¦   Senate Minority Leader.md
+¦   ¦   ¦   ¦   Senate President Pro Tempore.md
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---SENATE COMMITTEES
+¦   ¦   ¦           Senate Agricultural Affairs.md
+¦   ¦   ¦           Senate Commerce and Human Resources.md
+¦   ¦   ¦           Senate Education.md
+¦   ¦   ¦           Senate Ethics.md
+¦   ¦   ¦           Senate Finance.md
+¦   ¦   ¦           Senate Health and Welfare.md
+¦   ¦   ¦           Senate Judiciary and Rules.md
+¦   ¦   ¦           Senate Local Government and Taxation.md
+¦   ¦   ¦           Senate Resources and Environment.md
+¦   ¦   ¦           Senate State Affairs.md
+¦   ¦   ¦           Senate Transportation.md
+¦   ¦   ¦           
+¦   ¦   +---JOINT COMMITTEES
+¦   ¦   ¦   ¦   Change in Employee Compensation Committee.md
+¦   ¦   ¦   ¦   Committee on Federalism.md
+¦   ¦   ¦   ¦   Committee on Uniform Accounting and Transparency.md
+¦   ¦   ¦   ¦   Council on Indian Affairs.md
+¦   ¦   ¦   ¦   Economic Outlook and Revenue Assessment Committee.md
+¦   ¦   ¦   ¦   Joint Finance-Appropriations Committee.md
+¦   ¦   ¦   ¦   Joint Legislative Oversight Committee.md
+¦   ¦   ¦   ¦   Joint Millennium Fund Committee.md
+¦   ¦   ¦   ¦   Legislative Council.md
+¦   ¦   ¦   ¦   Medicaid Managed Care Task Force.md
+¦   ¦   ¦   ¦   Natural Resources Interim Committee.md
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---PAST COMMITTEES
+¦   ¦   ¦       ¦   Capitol Services Committee.md
+¦   ¦   ¦       ¦   Child Protection Legislative Oversight Committee.md
+¦   ¦   ¦       ¦   Criminal Justice Reinvestment Oversight Committee.md
+¦   ¦   ¦       ¦   Equitable Assessment of Costs Related to Medicaid Expansion Committee.md
+¦   ¦   ¦       ¦   Expenditure of ARPA Funds Study Committee.md
+¦   ¦   ¦       ¦   Federalism Subcommittee on Education.md
+¦   ¦   ¦       ¦   Federalism Subcommittee on Federal Lands.md
+¦   ¦   ¦       ¦   Federalism Subcommittee on Health and Welfare.md
+¦   ¦   ¦       ¦   Idaho Content Standards Study Committee.md
+¦   ¦   ¦       ¦   Intrastate Commercial Air Service Study Committee.md
+¦   ¦   ¦       ¦   Medicaid Expansion ballot initiative.md
+¦   ¦   ¦       ¦   Occupational and Professional Licensure Review Committee.md
+¦   ¦   ¦       ¦   Occupational Licensing and Certification Laws Committee.md
+¦   ¦   ¦       ¦   Property Taxes and Revenue Expenditures Study Committee.md
+¦   ¦   ¦       ¦   working group - Property Tax.md
+¦   ¦   ¦       ¦   
+¦   ¦   ¦       +---WORKING GROUPS
+¦   ¦   ¦               working group - Education.md
+¦   ¦   ¦               working group - Finance-Appropriations.md
+¦   ¦   ¦               working group - Judiciary and Rules.md
+¦   ¦   ¦               working group - State Affairs.md
+¦   ¦   ¦               
+¦   ¦   +---SESSIONS
+¦   ¦           1999 legislative session.md
+¦   ¦           2019 legislative session.md
+¦   ¦           2020 legislative session.md
+¦   ¦           2021 legislative session.md
+¦   ¦           2021 special session.md
+¦   ¦           2022 legislative session.md
+¦   ¦           2023 legislative session.md
+¦   ¦           2024 legislative session.md
+¦   ¦           
+¦   +---USA - FEDERAL
+¦   ¦   ¦   Bonneville Power Administration.md
+¦   ¦   ¦   Lava Ridge Wind Project.md
+¦   ¦   ¦   Low-Income Housing Tax Credit.md
+¦   ¦   ¦   national housing trust fund.md
+¦   ¦   ¦   national wildlife refuge.md
+¦   ¦   ¦   Payments in Lieu of Taxes.md
+¦   ¦   ¦   President.md
+¦   ¦   ¦   STARBASE.md
+¦   ¦   ¦   
+¦   ¦   +---CENSUS YEARS
+¦   ¦   ¦       2000 census.md
+¦   ¦   ¦       2010 census.md
+¦   ¦   ¦       2020 census.md
+¦   ¦   ¦       2030 census.md
+¦   ¦   ¦       
+¦   ¦   +---ENTITIES
+¦   ¦   ¦       Environmental Protection Agency.md
+¦   ¦   ¦       Federal Aviation Administration.md
+¦   ¦   ¦       Federal Election Commission.md
+¦   ¦   ¦       Federal Emergency Management Agency.md
+¦   ¦   ¦       Federal Reserve.md
+¦   ¦   ¦       U.S. 9th Circuit Court of Appeals.md
+¦   ¦   ¦       U.S. Army Corps of Engineers.md
+¦   ¦   ¦       U.S. Attorney for the District of Idaho.md
+¦   ¦   ¦       U.S. Bureau of Labor Statistics.md
+¦   ¦   ¦       U.S. Bureau of Land Management.md
+¦   ¦   ¦       U.S. Census Bureau.md
+¦   ¦   ¦       U.S. Census.md
+¦   ¦   ¦       U.S. Centers for Disease Control.md
+¦   ¦   ¦       U.S. Congress.md
+¦   ¦   ¦       U.S. Department of Agriculture.md
+¦   ¦   ¦       U.S. Department of Defense.md
+¦   ¦   ¦       U.S. Department of Energy.md
+¦   ¦   ¦       U.S. Department of Housing and Urban Development.md
+¦   ¦   ¦       U.S. Department of the Interior.md
+¦   ¦   ¦       U.S. Fish and Wildlife Service.md
+¦   ¦   ¦       U.S. Forest Service.md
+¦   ¦   ¦       U.S. House.md
+¦   ¦   ¦       U.S. Senate.md
+¦   ¦   ¦       U.S. Supreme Court.md
+¦   ¦   ¦       
+¦   ¦   +---LEGISLATION
+¦   ¦   ¦       American Rescue Plan Act.md
+¦   ¦   ¦       Americans with Disabilities Act.md
+¦   ¦   ¦       Bill of Rights.md
+¦   ¦   ¦       Chronic Wasting Disease Research and Management Act.md
+¦   ¦   ¦       Coronavirus Aid, Relief, and Economic Security Act.md
+¦   ¦   ¦       Digital Millennium Copyright Act.md
+¦   ¦   ¦       Health Insurance Portability and Accountability Act.md
+¦   ¦   ¦       U.S. Constitution.md
+¦   ¦   ¦       
+¦   ¦   +---WILDLIFE REFUGES
+¦   ¦           Bear Lake National Wildlife Refuge.md
+¦   ¦           Camas National Wildlife Refuge.md
+¦   ¦           Deer Flat National Wildlife Refuge.md
+¦   ¦           Greys Lake National Wildlife Refuge.md
+¦   ¦           Kootenai National Wildlife Refuge.md
+¦   ¦           Minidoka National Wildlife Refuge.md
+¦   ¦           Oxford Slough Waterfowl Protection Area.md
+¦   ¦           
+¦   +---USA - TRIBES
+¦       ¦   Coeur d'Alene Tribe.md
+¦       ¦   indigenous peoples.md
+¦       ¦   Kootenai Tribe.md
+¦       ¦   Nez Perce Tribe.md
+¦       ¦   Shoshone-Bannock Tribes.md
+¦       ¦   Shoshone-Paiute Tribes.md
+¦       ¦   tribal chairman.md
+¦       ¦   tribal council.md
+¦       ¦   tribes.md
+¦       ¦   
+¦       +---TRIBES
++---ORGANIZATIONS
+¦   ¦   American Civil Liberties Union.md
+¦   ¦   Associated Taxpayers of Idaho.md
+¦   ¦   Building Contractors Association of Southwest Idaho.md
+¦   ¦   Davillier Law Group.md
+¦   ¦   Festival at Sandpoint.md
+¦   ¦   Fraternal Order of Police.md
+¦   ¦   Idaho Chooses Life.md
+¦   ¦   Idaho Conservation League.md
+¦   ¦   Idaho Press Club.md
+¦   ¦   Los Angeles Police Department.md
+¦   ¦   Reading Time with the Queens.md
+¦   ¦   Sandpoint Police Department.md
+¦   ¦   Southern Poverty Law Center.md
+¦   ¦   Surplus Lines Association of Idaho.md
+¦   ¦   
+¦   +---CHURCHES
+¦   ¦       Catholic Church.md
+¦   ¦       Christ Church of Moscow.md
+¦   ¦       Church of Jesus Christ of Latter-Day Saints.md
+¦   ¦       
+¦   +---COMPANIES
+¦   ¦       Adams Publishing Group.md
+¦   ¦       Blue Cross of Idaho.md
+¦   ¦       Cabela's Inc..md
+¦   ¦       Ida-West Energy.md
+¦   ¦       IDACORP Financial.md
+¦   ¦       IDACORP.md
+¦   ¦       Idaho Power.md
+¦   ¦       JC Watson Packing Company.md
+¦   ¦       MH Solutions.md
+¦   ¦       Micron Technology.md
+¦   ¦       MPC Corp..md
+¦   ¦       Regence BlueShield of Idaho.md
+¦   ¦       Risch Pisca, PLLC.md
+¦   ¦       Sun Valley ski resort.md
+¦   ¦       The Hagadone Corporation.md
+¦   ¦       TPC Holdings.md
+¦   ¦       Treasure Valley Cannabis Company.md
+¦   ¦       Watkins Distributing.md
+¦   ¦       
+¦   +---DEVELOPMENT
+¦   ¦       Blaine County Housing Authority.md
+¦   ¦       Bonner Community Housing Agency.md
+¦   ¦       Community Planning Association of Southwest Idaho.md
+¦   ¦       Idaho Housing and Finance Association.md
+¦   ¦       Jesse Tree.md
+¦   ¦       National Association of Realtors.md
+¦   ¦       
+¦   +---EDUCATION
+¦   ¦       Idaho College of Osteopathic Medicine.md
+¦   ¦       Idaho Digital Learning Alliance.md
+¦   ¦       Idaho School Boards Association.md
+¦   ¦       Idaho State PTA.md
+¦   ¦       McClure Center.md
+¦   ¦       School of Health and Medical Professions.md
+¦   ¦       
+¦   +---HOSPITALS
+¦   ¦       Bonner Community Health.md
+¦   ¦       Eastern Idaho Regional Medical Center.md
+¦   ¦       Kootenai Health.md
+¦   ¦       Saint Alphonsus Health System.md
+¦   ¦       Saint Alphonsus Regional Medical Center.md
+¦   ¦       St. Luke's Health System.md
+¦   ¦       
+¦   +---LEGAL
+¦   ¦       ACLU of Idaho.md
+¦   ¦       Foundation for Individual Rights and Expression.md
+¦   ¦       National Judicial College.md
+¦   ¦       
+¦   +---PARTIES
+¦   ¦   ¦   Democratic National Committee.md
+¦   ¦   ¦   Idaho Constitution Party.md
+¦   ¦   ¦   Idaho Democratic Party Platform.md
+¦   ¦   ¦   Idaho Democratic Party.md
+¦   ¦   ¦   Idaho Libertarian Party.md
+¦   ¦   ¦   Idaho Republican Party Platform.md
+¦   ¦   ¦   Idaho Republican Party State Central Committee.md
+¦   ¦   ¦   Idaho Republican Party.md
+¦   ¦   ¦   Republican National Committee.md
+¦   ¦   ¦   U.S. Constitution Party.md
+¦   ¦   ¦   U.S. Democratic Party.md
+¦   ¦   ¦   U.S. Libertarian Party.md
+¦   ¦   ¦   U.S. Republican Party.md
+¦   ¦   ¦   
+¦   ¦   +---CENTRAL COMMITTEES
+¦   ¦   ¦       Ada County Democratic Central Committee.md
+¦   ¦   ¦       Ada County Republican Central Committee.md
+¦   ¦   ¦       Adams County Democratic Central Committee.md
+¦   ¦   ¦       Adams County Republican Central Committee.md
+¦   ¦   ¦       Bannock County Democratic Central Committee.md
+¦   ¦   ¦       Bannock County Republican Central Committee.md
+¦   ¦   ¦       Bear Lake County Democratic Central Committee.md
+¦   ¦   ¦       Bear Lake County Republican Central Committee.md
+¦   ¦   ¦       Benewah County Democratic Central Committee.md
+¦   ¦   ¦       Benewah County Republican Central Committee.md
+¦   ¦   ¦       Bingham County Democratic Central Committee.md
+¦   ¦   ¦       Bingham County Republican Central Committee.md
+¦   ¦   ¦       Blaine County Democratic Central Committee.md
+¦   ¦   ¦       Blaine County Republican Central Committee.md
+¦   ¦   ¦       Boise County Democratic Central Committee.md
+¦   ¦   ¦       Boise County Republican Central Committee.md
+¦   ¦   ¦       Bonner County Democratic Central Committee.md
+¦   ¦   ¦       Bonner County Republican Central Committee.md
+¦   ¦   ¦       Bonneville County Democratic Central Committee.md
+¦   ¦   ¦       Bonneville County Republican Central Committee.md
+¦   ¦   ¦       Boundary County Democratic Central Committee.md
+¦   ¦   ¦       Boundary County Republican Central Committee.md
+¦   ¦   ¦       Butte County Democratic Central Committee.md
+¦   ¦   ¦       Butte County Republican Central Committee.md
+¦   ¦   ¦       Camas County Democratic Central Committee.md
+¦   ¦   ¦       Camas County Republican Central Committee.md
+¦   ¦   ¦       Canyon County Democratic Central Committee.md
+¦   ¦   ¦       Canyon County Republican Central Committee.md
+¦   ¦   ¦       Caribou County Democratic Central Committee.md
+¦   ¦   ¦       Caribou County Republican Central Committee.md
+¦   ¦   ¦       Cassia County Democratic Central Committee.md
+¦   ¦   ¦       Cassia County Republican Central Committee.md
+¦   ¦   ¦       Clark County Democratic Central Committee.md
+¦   ¦   ¦       Clark County Republican Central Committee.md
+¦   ¦   ¦       Clearwater County Democratic Central Committee.md
+¦   ¦   ¦       Clearwater County Republican Central Committee.md
+¦   ¦   ¦       Custer County Democratic Central Committee.md
+¦   ¦   ¦       Custer County Republican Central Committee.md
+¦   ¦   ¦       Elmore County Democratic Central Committee.md
+¦   ¦   ¦       Elmore County Republican Central Committee.md
+¦   ¦   ¦       Franklin County Democratic Central Committee.md
+¦   ¦   ¦       Franklin County Republican Central Committee.md
+¦   ¦   ¦       Fremont County Democratic Central Committee.md
+¦   ¦   ¦       Fremont County Republican Central Committee.md
+¦   ¦   ¦       Gem County Democratic Central Committee.md
+¦   ¦   ¦       Gem County Republican Central Committee.md
+¦   ¦   ¦       Gooding County Democratic Central Committee.md
+¦   ¦   ¦       Gooding County Republican Central Committee.md
+¦   ¦   ¦       Idaho County Democratic Central Committee.md
+¦   ¦   ¦       Idaho County Republican Central Committee.md
+¦   ¦   ¦       Jefferson County Democratic Central Committee.md
+¦   ¦   ¦       Jefferson County Republican Central Committee.md
+¦   ¦   ¦       Jerome County Democratic Central Committee.md
+¦   ¦   ¦       Jerome County Republican Central Committee.md
+¦   ¦   ¦       Kootenai County Democratic Central Committee.md
+¦   ¦   ¦       Kootenai County Republican Central Committee.md
+¦   ¦   ¦       Latah County Democratic Central Committee.md
+¦   ¦   ¦       Latah County Republican Central Committee.md
+¦   ¦   ¦       Lemhi County Democratic Central Committee.md
+¦   ¦   ¦       Lemhi County Republican Central Committee.md
+¦   ¦   ¦       Lewis County Democratic Central Committee.md
+¦   ¦   ¦       Lewis County Republican Central Committee.md
+¦   ¦   ¦       Lincoln County Democratic Central Committee.md
+¦   ¦   ¦       Lincoln County Republican Central Committee.md
+¦   ¦   ¦       Madison County Democratic Central Committee.md
+¦   ¦   ¦       Madison County Republican Central Committee.md
+¦   ¦   ¦       Minidoka County Democratic Central Committee.md
+¦   ¦   ¦       Minidoka County Republican Central Committee.md
+¦   ¦   ¦       Nez Perce County Democratic Central Committee.md
+¦   ¦   ¦       Nez Perce County Republican Central Committee.md
+¦   ¦   ¦       Oneida County Democratic Central Committee.md
+¦   ¦   ¦       Oneida County Republican Central Committee.md
+¦   ¦   ¦       Owyhee County Democratic Central Committee.md
+¦   ¦   ¦       Owyhee County Republican Central Committee.md
+¦   ¦   ¦       Payette County Democratic Central Committee.md
+¦   ¦   ¦       Payette County Republican Central Committee.md
+¦   ¦   ¦       Power County Democratic Central Committee.md
+¦   ¦   ¦       Power County Republican Central Committee.md
+¦   ¦   ¦       Shoshone County Democratic Central Committee.md
+¦   ¦   ¦       Shoshone County Republican Central Committee.md
+¦   ¦   ¦       Teton County Democratic Central Committee.md
+¦   ¦   ¦       Teton County Republican Central Committee.md
+¦   ¦   ¦       Twin Falls County Democratic Central Committee.md
+¦   ¦   ¦       Twin Falls County Republican Central Committee.md
+¦   ¦   ¦       Valley County Democratic Central Committee.md
+¦   ¦   ¦       Valley County Republican Central Committee.md
+¦   ¦   ¦       Washington County Democratic Central Committee.md
+¦   ¦   ¦       Washington County Republican Central Committee.md
+¦   ¦   ¦       
+¦   ¦   +---GROUPS
+¦   ¦           College Republicans of Idaho.md
+¦   ¦           Idaho Freedom Caucus.md
+¦   ¦           Idaho Main Street Caucus.md
+¦   ¦           Idaho Republican Women’s Federation.md
+¦   ¦           Idaho Young Republicans.md
+¦   ¦           North Idaho Republicans.md
+¦   ¦           
+¦   +---POLITICS
+¦   ¦       Association of Idaho Cities.md
+¦   ¦       Boise Pride Festival.md
+¦   ¦       Convention of States.md
+¦   ¦       Defend and Protect Idaho.md
+¦   ¦       Health Freedom Idaho.md
+¦   ¦       Idaho Association of Commerce and Industry.md
+¦   ¦       Idaho Association of Counties.md
+¦   ¦       Idaho Freedom Action.md
+¦   ¦       Idaho Freedom Foundation.md
+¦   ¦       Idaho Freedom PAC.md
+¦   ¦       Idaho Leaders United.md
+¦   ¦       Idaho on Fire.md
+¦   ¦       Idaho Prosperity Fund.md
+¦   ¦       Idaho Second Amendment Alliance.md
+¦   ¦       Idahoans for Open Primaries.md
+¦   ¦       John Birch Society.md
+¦   ¦       Mountain States Policy Center.md
+¦   ¦       National Institute for Civil Discourse.md
+¦   ¦       Pacific NorthWest Economic Region.md
+¦   ¦       Patriot Front.md
+¦   ¦       Reclaim Idaho.md
+¦   ¦       
+¦   +---PUBLICATIONS
+¦   ¦       404 Media.md
+¦   ¦       Associated Press.md
+¦   ¦       Bingham News Chronicle.md
+¦   ¦       Boise State Public Radio News.md
+¦   ¦       Boise Weekly.md
+¦   ¦       BoiseDev.md
+¦   ¦       Bonner County Daily Bee.md
+¦   ¦       Bonners Ferry Herald.md
+¦   ¦       Challis Messenger.md
+¦   ¦       Coeur d'Alene Press.md
+¦   ¦       Daily Montanan.md
+¦   ¦       East Idaho News.md
+¦   ¦       Emmett Messenger Index.md
+¦   ¦       Eye on Boise.md
+¦   ¦       Freedom Bros Podcast.md
+¦   ¦       Idaho Capital Sun.md
+¦   ¦       Idaho Dispatch.md
+¦   ¦       Idaho Education News.md
+¦   ¦       Idaho Mountain Express.md
+¦   ¦       Idaho Press.md
+¦   ¦       Idaho Reports.md
+¦   ¦       Idaho State Journal.md
+¦   ¦       Idaho Statesman.md
+¦   ¦       Jefferson Star.md
+¦   ¦       KHQ.md
+¦   ¦       KTVB.md
+¦   ¦       Kuna Melba News.md
+¦   ¦       Lewiston Tribune.md
+¦   ¦       Magic Valley Times-News.md
+¦   ¦       Meridian Press.md
+¦   ¦       Montpelier News-Examiner.md
+¦   ¦       Moscow-Pullman Daily News.md
+¦   ¦       NonStop Local.md
+¦   ¦       North Idaho Business Journal.md
+¦   ¦       Oregon Capital Chronicle.md
+¦   ¦       Post Falls Press.md
+¦   ¦       Post Register.md
+¦   ¦       Preston Citizen.md
+¦   ¦       ProPublica.md
+¦   ¦       Rexburg Standard Journal.md
+¦   ¦       Sandpoint Reader.md
+¦   ¦       Shoshone News-Press.md
+¦   ¦       Spokane Journal of Business.md
+¦   ¦       Spokesman-Review.md
+¦   ¦       States Newsroom.md
+¦   ¦       Teton Valley News.md
+¦   ¦       The Argonaut.md
+¦   ¦       The Guardian.md
+¦   ¦       The People’s Pen.md
+¦   ¦       The Road to Power.md
+¦   ¦       USA Today.md
+¦   ¦       VICE Media.md
+¦   ¦       Washington State Standard.md
+¦   ¦       
+¦   +---UNIONS
+¦           AFL-CIO of Idaho.md
+¦           Idaho Education Association.md
+¦           
++---PEOPLE
+¦       Aaron Von Ehlinger.md
+¦       Abby Lee.md
+¦       AJ Balukoff.md
+¦       Alex Adams.md
+¦       Alex Barron.md
+¦       Alex Caval.md
+¦       Alexander Nicholai Sisenstein.md
+¦       Alexandria Kincaid.md
+¦       Ali Rabe.md
+¦       Amanda Brailsford.md
+¦       Andrea Powers.md
+¦       Andy Emerson.md
+¦       Arthur Bistline.md
+¦       Audrey Dutton.md
+¦       Barack Obama.md
+¦       Barbara Ehardt.md
+¦       Barry Goldwater.md
+¦       Bart Davis.md
+¦       Becca Savransky.md
+¦       Ben Adams.md
+¦       Ben Baker.md
+¦       Ben Fuhriman.md
+¦       Ben Olson.md
+¦       Ben Toews.md
+¦       Ben Ysursa.md
+¦       Bert Brackett.md
+¦       Bert Stevenson.md
+¦       Betsy Russell.md
+¦       Bill Gilbert.md
+¦       Bill Goesling.md
+¦       Bill Shawver.md
+¦       Bjorn Handeen.md
+¦       Bob Nonini.md
+¦       Brad Corkill.md
+¦       Brad Little.md
+¦       Branden Durst.md
+¦       Branden Mitchel Haney.md
+¦       Brandon Mitchell.md
+¦       Brandon Woolf.md
+¦       Brent Crane.md
+¦       Brent Hill.md
+¦       Brent Regan.md
+¦       Brian Lenney.md
+¦       Brian Minner.md
+¦       Brian Winkler.md
+¦       Britt Raybould.md
+¦       Brooke Green.md
+¦       Bruce Skaug.md
+¦       Bryan Smith.md
+¦       Bryan Zollinger.md
+¦       C. Scott Green.md
+¦       C. Scott Grow.md
+¦       C.L. 'Butch' Otter.md
+¦       Cameron Kathan Pruitt.md
+¦       Carl Bjerke.md
+¦       Carl Crabtree.md
+¦       Caroline Nilsson Troy.md
+¦       Carolyn Harrison.md
+¦       Carrie Semmelroth.md
+¦       Cecil Andrus.md
+¦       Chad Christensen.md
+¦       Chad Murdock.md
+¦       Charlie Shepherd.md
+¦       Chenele Dixon.md
+¦       Cherie Buckner-Webb.md
+¦       Cheryl Hurd.md
+¦       Chris Abernathy.md
+¦       Chris Allgood.md
+¦       Chris Mathias.md
+¦       Chris Trakel.md
+¦       Christa Hazel.md
+¦       Christie Wood.md
+¦       Christina Lords.md
+¦       Christopher Rufo.md
+¦       Christy Zito.md
+¦       Chrystle Horvath.md
+¦       Chuck Winder.md
+¦       Cindy Carlson.md
+¦       Clark Albritton.md
+¦       Clark Corbin.md
+¦       Clark Kauffman.md
+¦       Clay Handy.md
+¦       Clifford Bayer.md
+¦       Codi Galloway.md
+¦       Colin Nash.md
+¦       Colleen Zahn.md
+¦       Colton Michael Brown.md
+¦       Connor Patrick Moran.md
+¦       Conor James Ryan.md
+¦       Cornel Rasor.md
+¦       Cortney Liddiard.md
+¦       Curt Fransen.md
+¦       Curt Jernigan.md
+¦       Cynthia Meyer.md
+¦       Dakota Ray Tabler.md
+¦       Dale Hawkins.md
+¦       Damond Watkins.md
+¦       Dan Cravens.md
+¦       Dan Foreman.md
+¦       Dan Garner.md
+¦       Dan Gookin.md
+¦       Dan Johnson.md
+¦       Dan McDonald.md
+¦       Dan Schmidt.md
+¦       Daniel Finley.md
+¦       Darr Moon.md
+¦       Daryl Wheeler.md
+¦       Dave Jeppesen.md
+¦       Dave Lent.md
+¦       David Cannon.md
+¦       David Gratton.md
+¦       David Hay.md
+¦       David Hill.md
+¦       David Lambert.md
+¦       David Nelson.md
+¦       David Pace.md
+¦       David Pettinger.md
+¦       David Worley.md
+¦       Dean Cameron.md
+¦       Dean Mortimer.md
+¦       Debbie Critchfield.md
+¦       Deborah Ferguson.md
+¦       Derek Joseph Smith.md
+¦       Devin Wayne Center.md
+¦       Diana Lachiondo.md
+¦       Dianna David.md
+¦       Dirk Kempthorne.md
+¦       Don Cheatham.md
+¦       Don Duffy.md
+¦       Don Holland.md
+¦       Don Samuelson.md
+¦       Donald Trump.md
+¦       Dori Healey.md
+¦       Dorothy Moon.md
+¦       Doug Gross.md
+¦       Doug Hughes.md
+¦       Doug Okuniewicz.md
+¦       Doug Ricks.md
+¦       Doug Traubel.md
+¦       Douglas Pickett.md
+¦       Douglas Wilson.md
+¦       Doyle Beck.md
+¦       Dustin Hurst.md
+¦       Dustin Manwaring.md
+¦       Dylan Carter Corio.md
+¦       Elaine King.md
+¦       Elaine Price.md
+¦       Elaine Smith.md
+¦       Emily Strizich.md
+¦       Eric Anderson.md
+¦       Eric Fredericksen.md
+¦       Eric Redman.md
+¦       Eric Staats.md
+¦       Erik Lehtinen.md
+¦       Faye Thompson.md
+¦       Forrest Clark Rankin.md
+¦       Fred Martin.md
+¦       Fred Wood.md
+¦       G. Richard Bevan.md
+¦       Garret Joseph Garland.md
+¦       Garrett Strizich.md
+¦       Gary Collins.md
+¦       Gary Marshall.md
+¦       Gary Raney.md
+¦       Gayann DeMordaunt.md
+¦       Geoff Schroeder.md
+¦       George Eskridge.md
+¦       Gerald Hunter.md
+¦       Glenneda Zuiderveld.md
+¦       Graham Jones Whitsom.md
+¦       Grant Burgoyne.md
+¦       Greg Chaney.md
+¦       Greg Ferch.md
+¦       Greg Lanting.md
+¦       Greg McKenzie.md
+¦       Greg Pruett.md
+¦       Gregory Moeller.md
+¦       Hari Heath.md
+¦       Heather Scott.md
+¦       Hillary Clinton.md
+¦       Hy Kloc.md
+¦       Hyrum Erickson.md
+¦       Ilana Rubel.md
+¦       Jack Nelsen.md
+¦       Jack Riggs.md
+¦       Jaclyn Kettler.md
+¦       Jacyn Gallagher.md
+¦       Jake Ellis.md
+¦       James Holtzclaw.md
+¦       James Julius Johnson.md
+¦       James Michael Johnson.md
+¦       James Petzke.md
+¦       James Ruchti.md
+¦       Jani Revier.md
+¦       Janice McGeachin.md
+¦       Janie Ward-Engelking.md
+¦       Jared Michael Boyce.md
+¦       Jarom Wagoner.md
+¦       Jaron Crane.md
+¦       Jason Koebler.md
+¦       Jason Lantz.md
+¦       Jason Monks.md
+¦       Jason Risch.md
+¦       Jayson Ronk.md
+¦       Jeff Agenbroad.md
+¦       Jeff Cornilles.md
+¦       Jeff Ehlers.md
+¦       Jeff Ray.md
+¦       Jeff Seegmiller.md
+¦       Jennifer Stapleton.md
+¦       Jerald Raymond.md
+¦       Jeremy Best.md
+¦       Jeremy Pisca.md
+¦       Jessica Lorello.md
+¦       Jim Addis.md
+¦       Jim Guthrie.md
+¦       Jim Hammond.md
+¦       Jim Jaquet.md
+¦       Jim Jones.md
+¦       Jim Jordan.md
+¦       Jim Patrick.md
+¦       Jim Rice.md
+¦       Jim Risch.md
+¦       Jim Woodward.md
+¦       Joan Callahan.md
+¦       Joe Alfieri.md
+¦       Joe Biden.md
+¦       Joe Evans.md
+¦       Joe Malloy.md
+¦       Joe Palmer.md
+¦       John Evans.md
+¦       John Gannon.md
+¦       John Goedde.md
+¦       John Hatcher.md
+¦       John McCrostie.md
+¦       John Shirts.md
+¦       John Stegner.md
+¦       John Tippets.md
+¦       John Vander Woude.md
+¦       Jon Verkist.md
+¦       Jon Weber.md
+¦       Jordan Redman.md
+¦       Josh Tanner.md
+¦       Josh Tewalt.md
+¦       Josh Wheeler.md
+¦       Josiah Daniel Buster.md
+¦       Judy Boyle.md
+¦       Julianne Young.md
+¦       Julie Ellsworth.md
+¦       Julie VanOrden.md
+¦       Julie Yamamoto.md
+¦       Justin Michael O'Leary.md
+¦       Justin Rupinski.md
+¦       Kalama Hines.md
+¦       Karey Hanks.md
+¦       Kathleen Elliott.md
+¦       Kathryn Hitch.md
+¦       Kathy Kula.md
+¦       Kaye Thornbrugh.md
+¦       Keely Duke.md
+¦       Keith Allred.md
+¦       Keith Bybee.md
+¦       Kelcie Moseley-Morris.md
+¦       Kelley Packer.md
+¦       Kelly Anthon.md
+¦       Kenny Wroten.md
+¦       Kent Marmon.md
+¦       Kevin Andrus.md
+¦       Kevin Cook.md
+¦       Kevin McCarthy.md
+¦       Kevin Richert.md
+¦       Kieran Padraig Morris.md
+¦       Kirk Petersen.md
+¦       Kyle Harris.md
+¦       Kyle Pfannenstiel.md
+¦       Lance Clow.md
+¦       Larry Craig.md
+¦       Larry Echo Hawk.md
+¦       Larry LaRocco.md
+¦       Larry Sanders.md
+¦       Lauren McLean.md
+¦       Lauren Necochea.md
+¦       Laurie Lickley.md
+¦       Lawerence Denney.md
+¦       Lawrence Alexander Norman.md
+¦       Lawrence Wasden.md
+¦       Lee Heider.md
+¦       Len B. Jordan.md
+¦       Linda Wright Hartgen.md
+¦       Lisa Keller.md
+¦       Logan Finney.md
+¦       Lori Bishop.md
+¦       Lori Den Hartog.md
+¦       Lori McCann.md
+¦       Luci Willits.md
+¦       Luke Mayville.md
+¦       Luke Sommer.md
+¦       Machele Hamilton.md
+¦       Madison Hardy.md
+¦       Marc Gibbs.md
+¦       Marco Erickson.md
+¦       Margaret Carmel.md
+¦       Margie Watson.md
+¦       Maria Nate.md
+¦       Mark Bitter.md
+¦       Mark Harris.md
+¦       Mark Nye.md
+¦       Mark Ricks.md
+¦       Mark Sauter.md
+¦       Marv Hagedorn.md
+¦       Mary Souza.md
+¦       Maryanne Jordan.md
+¦       Mat Erpelding.md
+¦       Matt Blatt.md
+¦       Matt Bundy.md
+¦       Matt Clifford.md
+¦       Maxine Bell.md
+¦       Megan Blanksma.md
+¦       Megan Kiska.md
+¦       Mel Gibson.md
+¦       Melissa Davlin.md
+¦       Melissa Durrant.md
+¦       Melissa Wintrow.md
+¦       Michael Colson.md
+¦       Michelle Stennett.md
+¦       Michelle Thompson.md
+¦       Miguel Legarreta.md
+¦       Mike Burkett.md
+¦       Mike Gunderson.md
+¦       Mike Hill.md
+¦       Mike Kingsley.md
+¦       Mike Moyle.md
+¦       Mike Simpson.md
+¦       Mike Waggoner.md
+¦       Mishael Joshua Buster.md
+¦       Miste Karlfeldt.md
+¦       Mitch Watkins.md
+¦       Mitchell Frederick Wagner.md
+¦       Molly Huskey.md
+¦       Monty Pearce.md
+¦       Muffy Davis.md
+¦       Nancy Hadley.md
+¦       Nate Fisher.md
+¦       Nate Roberts.md
+¦       Nathan David Brenner.md
+¦       Nathaniel Taylor Whitfield.md
+¦       Ned Burns.md
+¦       Neil Anderson.md
+¦       Nick Contos.md
+¦       Nicki Chopski.md
+¦       Nicole Blanchard.md
+¦       Nicole LeFavor.md
+¦       Nicole Trakel.md
+¦       Odette Bolano.md
+¦       Patti Anne Lodge.md
+¦       Paul Amador.md
+¦       Paul Headlee.md
+¦       Paul Shepherd.md
+¦       Paulette Jordan.md
+¦       Pete Cenarrusa.md
+¦       Peter Riggs.md
+¦       Phil Batt.md
+¦       Phil Hart.md
+¦       Phil McGrane.md
+¦       Priscilla Giddings.md
+¦       Ramona Grissom.md
+¦       Randi Bain.md
+¦       Randy Armstrong.md
+¦       Randy Westlund.md
+¦       Raúl Labrador.md
+¦       Rebecca Holland.md
+¦       Regina Bayer.md
+¦       Richard Butler.md
+¦       Richard Jacob Jessop.md
+¦       Richard Spencer.md
+¦       Rick Bollar.md
+¦       Rick Cheatum.md
+¦       Rick Just.md
+¦       Rick Youngblood.md
+¦       Rob Beiswenger.md
+¦       Rob Mason.md
+¦       Robert Anderst.md
+¦       Robert Benjamin Whitted.md
+¦       Robert Blair.md
+¦       Robert Simison.md
+¦       Robyn Brody.md
+¦       Rod Furniss.md
+¦       Roger Burdick.md
+¦       Roger Garlock.md
+¦       Roger Phillips.md
+¦       Ron Crane.md
+¦       Ron Mendive.md
+¦       Ron Nate.md
+¦       Ron Paul.md
+¦       Ron Taylor.md
+¦       Russ Fulcher.md
+¦       Rusty Devereaux.md
+¦       Ruth Brown.md
+¦       Ruth York.md
+¦       Ryan Kerby.md
+¦       Ryan Spoon.md
+¦       Ryan Suppe.md
+¦       Sage Dixon.md
+¦       Sally Toone.md
+¦       Samantha Cole.md
+¦       Samantha Stiegleder.md
+¦       Sandra Patano.md
+¦       Sara Omundson.md
+¦       Sara Walton Brady.md
+¦       Sarah Chaney.md
+¦       Sarah Clendenon.md
+¦       Sarah Miller.md
+¦       Scott Bedke.md
+¦       Scott Cleveland.md
+¦       Scott Herndon.md
+¦       Scott Rhodes.md
+¦       Scott Syme.md
+¦       Scott Wood.md
+¦       Sebastian Griffin.md
+¦       Seth Grigg.md
+¦       Shawn Dygert.md
+¦       Shawn Keenan.md
+¦       Shawn Keough.md
+¦       Shelby Rognstad.md
+¦       Sherri Ybarra.md
+¦       Sonya Harris.md
+¦       Sophia DeKlotz.md
+¦       Soñia Galaviz.md
+¦       Spencer Cox.md
+¦       Spencer Thomas Simpson.md
+¦       Stephanie Mickelsen.md
+¦       Stephen Hartgen.md
+¦       Stephen Heidt.md
+¦       Steve Bair.md
+¦       Steve Berch.md
+¦       Steve Miller.md
+¦       Steve Vick.md
+¦       Steve Wasylko.md
+¦       Steven Derrick Tucker.md
+¦       Steven Harris.md
+¦       Steven Thayn.md
+¦       Sue Chew.md
+¦       Sue Gaston.md
+¦       Sue Hoffer.md
+¦       Susan Jean Supp.md
+¦       Susie Balukoff.md
+¦       Tammy Nichols.md
+¦       Tarie Zimmerman.md
+¦       Ted Hill.md
+¦       Terrell Tovey.md
+¦       Terri Pickens Manweiler.md
+¦       Terry Gestrin.md
+¦       Terry Gilbert.md
+¦       Thad Butterworth.md
+¦       Thomas Ryan Rousseau.md
+¦       Thomas Shafer.md
+¦       Thyra Stevenson.md
+¦       Tim Remington.md
+¦       Tina Lambert.md
+¦       Todd Banducci.md
+¦       Todd Garbett.md
+¦       Todd Lakey.md
+¦       Tom Dayley.md
+¦       Tom Luna.md
+¦       Tom Trail.md
+¦       Tommy Ahlquist.md
+¦       Tony Wisniewski.md
+¦       Tracie Bent.md
+¦       Travis Manning.md
+¦       Treg Bernt.md
+¦       Trent Clark.md
+¦       Van Burtenshaw.md
+¦       Victor Miller.md
+¦       Vito Barbieri.md
+¦       Walt Minnick.md
+¦       Wayne Hoffman.md
+¦       Wendi Secrist.md
+¦       Wendy Horman.md
+¦       Wendy Jaquet.md
+¦       Wesley Evan Van Horn.md
+¦       Winston Worth Durham.md
+¦       Yasmin Harris.md
+¦       Zach Hagadone.md
+¦       
++---PLACES
+¦   ¦   Europe.md
+¦   ¦   Malheur National Wildlife Refuge.md
+¦   ¦   State of Idaho.md
+¦   ¦   United States of America.md
+¦   ¦   
+¦   +---CITIES
+¦   ¦       Aberdeen.md
+¦   ¦       Acequia.md
+¦   ¦       Albion.md
+¦   ¦       American Falls.md
+¦   ¦       Ammon.md
+¦   ¦       Arco.md
+¦   ¦       Arimo.md
+¦   ¦       Ashton.md
+¦   ¦       Athol.md
+¦   ¦       Atomic City.md
+¦   ¦       Bancroft.md
+¦   ¦       Basalt.md
+¦   ¦       Bellevue.md
+¦   ¦       Blackfoot.md
+¦   ¦       Bliss.md
+¦   ¦       Bloomington.md
+¦   ¦       Boise.md
+¦   ¦       Bonners Ferry.md
+¦   ¦       Bovill.md
+¦   ¦       Buhl.md
+¦   ¦       Burley.md
+¦   ¦       Butte City.md
+¦   ¦       Caldwell.md
+¦   ¦       Cambridge.md
+¦   ¦       Carey.md
+¦   ¦       Cascade.md
+¦   ¦       Castleford.md
+¦   ¦       Challis.md
+¦   ¦       Chubbuck.md
+¦   ¦       Clark Fork.md
+¦   ¦       Clayton.md
+¦   ¦       Clifton.md
+¦   ¦       Coeur d'Alene.md
+¦   ¦       Cottonwood.md
+¦   ¦       Council.md
+¦   ¦       Craigmont.md
+¦   ¦       Crouch.md
+¦   ¦       Culdesac.md
+¦   ¦       Dalton Gardens.md
+¦   ¦       Dayton.md
+¦   ¦       Deary.md
+¦   ¦       Declo.md
+¦   ¦       Dietrich.md
+¦   ¦       Donnelly.md
+¦   ¦       Dover.md
+¦   ¦       Downey.md
+¦   ¦       Driggs.md
+¦   ¦       Drummond.md
+¦   ¦       Dubois.md
+¦   ¦       Eagle.md
+¦   ¦       East Hope.md
+¦   ¦       Eden.md
+¦   ¦       Elk River.md
+¦   ¦       Emmett.md
+¦   ¦       Fairfield.md
+¦   ¦       Ferdinand.md
+¦   ¦       Fernan Lake.md
+¦   ¦       Filer.md
+¦   ¦       Firth.md
+¦   ¦       Franklin.md
+¦   ¦       Fruitland.md
+¦   ¦       Garden City.md
+¦   ¦       Genesee.md
+¦   ¦       Georgetown.md
+¦   ¦       Glenns Ferry.md
+¦   ¦       Gooding.md
+¦   ¦       Grace.md
+¦   ¦       Grand View.md
+¦   ¦       Grangeville.md
+¦   ¦       Greenleaf.md
+¦   ¦       Hagerman.md
+¦   ¦       Hailey.md
+¦   ¦       Hamer.md
+¦   ¦       Hansen.md
+¦   ¦       Harrison.md
+¦   ¦       Hauser.md
+¦   ¦       Hayden Lake.md
+¦   ¦       Hayden.md
+¦   ¦       Hazelton.md
+¦   ¦       Heyburn.md
+¦   ¦       Hollister.md
+¦   ¦       Homedale.md
+¦   ¦       Hope.md
+¦   ¦       Horseshoe Bend.md
+¦   ¦       Huetter.md
+¦   ¦       Idaho City.md
+¦   ¦       Idaho Falls.md
+¦   ¦       Inkom.md
+¦   ¦       Iona.md
+¦   ¦       Irwin.md
+¦   ¦       Island Park.md
+¦   ¦       Jerome.md
+¦   ¦       Juliaetta.md
+¦   ¦       Kamiah.md
+¦   ¦       Kellogg.md
+¦   ¦       Kendrick.md
+¦   ¦       Ketchum.md
+¦   ¦       Kimberly.md
+¦   ¦       Kooskia.md
+¦   ¦       Kootenai.md
+¦   ¦       Kuna.md
+¦   ¦       Lapwai.md
+¦   ¦       Lava Hot Springs.md
+¦   ¦       Leadore.md
+¦   ¦       Lewiston.md
+¦   ¦       Lewisville.md
+¦   ¦       Lost River.md
+¦   ¦       Mackay.md
+¦   ¦       Malad City.md
+¦   ¦       Malta.md
+¦   ¦       Marsing.md
+¦   ¦       McCall.md
+¦   ¦       McCammon.md
+¦   ¦       Melba.md
+¦   ¦       Menan.md
+¦   ¦       Meridian.md
+¦   ¦       Middleton.md
+¦   ¦       Midvale.md
+¦   ¦       Minidoka.md
+¦   ¦       Montpelier.md
+¦   ¦       Moore.md
+¦   ¦       Moscow.md
+¦   ¦       Mountain Home.md
+¦   ¦       Moyie Springs.md
+¦   ¦       Mud Lake.md
+¦   ¦       Mullan.md
+¦   ¦       Murphy.md
+¦   ¦       Murtaugh.md
+¦   ¦       Nampa.md
+¦   ¦       New Meadows.md
+¦   ¦       New Plymouth.md
+¦   ¦       Newdale.md
+¦   ¦       Nezperce.md
+¦   ¦       Notus.md
+¦   ¦       Oakley.md
+¦   ¦       Oldtown.md
+¦   ¦       Onaway.md
+¦   ¦       Orofino.md
+¦   ¦       Osburn.md
+¦   ¦       Oxford.md
+¦   ¦       Paris.md
+¦   ¦       Parker.md
+¦   ¦       Parma.md
+¦   ¦       Paul.md
+¦   ¦       Payette.md
+¦   ¦       Peck.md
+¦   ¦       Pierce.md
+¦   ¦       Pinehurst.md
+¦   ¦       Placerville.md
+¦   ¦       Plummer.md
+¦   ¦       Pocatello.md
+¦   ¦       Ponderay.md
+¦   ¦       Post Falls.md
+¦   ¦       Potlatch.md
+¦   ¦       Preston.md
+¦   ¦       Priest River.md
+¦   ¦       Rathdrum.md
+¦   ¦       Reubens.md
+¦   ¦       Rexburg.md
+¦   ¦       Richfield.md
+¦   ¦       Rigby.md
+¦   ¦       Riggins.md
+¦   ¦       Ririe.md
+¦   ¦       Roberts.md
+¦   ¦       Rockland.md
+¦   ¦       Rupert.md
+¦   ¦       Salmon.md
+¦   ¦       Sandpoint.md
+¦   ¦       Shelley.md
+¦   ¦       Shoshone.md
+¦   ¦       Smelterville.md
+¦   ¦       Soda Springs.md
+¦   ¦       Spencer.md
+¦   ¦       Spirit Lake.md
+¦   ¦       St. Anthony.md
+¦   ¦       St. Charles.md
+¦   ¦       St. Maries.md
+¦   ¦       Stanley.md
+¦   ¦       Star.md
+¦   ¦       State Line.md
+¦   ¦       Stites.md
+¦   ¦       Sugar City.md
+¦   ¦       Sun Valley.md
+¦   ¦       Swan Valley.md
+¦   ¦       Tensed.md
+¦   ¦       Teton.md
+¦   ¦       Tetonia.md
+¦   ¦       Troy.md
+¦   ¦       Twin Falls.md
+¦   ¦       Ucon.md
+¦   ¦       Victor.md
+¦   ¦       Wallace.md
+¦   ¦       Wardner.md
+¦   ¦       Warm River.md
+¦   ¦       Weippe.md
+¦   ¦       Weiser.md
+¦   ¦       Wendell.md
+¦   ¦       Weston.md
+¦   ¦       White Bird.md
+¦   ¦       Wilder.md
+¦   ¦       Winchester.md
+¦   ¦       Worley.md
+¦   ¦       Worleyship.md
+¦   ¦       
+¦   +---COMMUNITIES
+¦   ¦       Adair.md
+¦   ¦       Ahsahka.md
+¦   ¦       Almo.md
+¦   ¦       Alpha.md
+¦   ¦       Alpine.md
+¦   ¦       Alridge.md
+¦   ¦       Amsterdam.md
+¦   ¦       Arbon Valley.md
+¦   ¦       Arbon.md
+¦   ¦       Archer.md
+¦   ¦       Artesian City.md
+¦   ¦       Atlanta.md
+¦   ¦       Avery.md
+¦   ¦       Avimor.md
+¦   ¦       Avon.md
+¦   ¦       Banks.md
+¦   ¦       Basin.md
+¦   ¦       Bates.md
+¦   ¦       Bayhorse.md
+¦   ¦       Bayview.md
+¦   ¦       Beachs Corner.md
+¦   ¦       Bear.md
+¦   ¦       Beetville.md
+¦   ¦       Benewah.md
+¦   ¦       Bennington.md
+¦   ¦       Bern.md
+¦   ¦       Big Creek (Shoshone).md
+¦   ¦       Big Creek (Valley).md
+¦   ¦       Big Springs.md
+¦   ¦       Blackrock.md
+¦   ¦       Blanchard.md
+¦   ¦       Bonanza.md
+¦   ¦       Bone.md
+¦   ¦       Bowmont.md
+¦   ¦       Bridge.md
+¦   ¦       Brownlee.md
+¦   ¦       Bruneau.md
+¦   ¦       Burgdorf.md
+¦   ¦       Burke.md
+¦   ¦       Burton.md
+¦   ¦       Cache.md
+¦   ¦       Calder.md
+¦   ¦       Caldron Linn.md
+¦   ¦       Cardiff.md
+¦   ¦       Cardwell.md
+¦   ¦       Careywood.md
+¦   ¦       Carmen.md
+¦   ¦       Cataldo.md
+¦   ¦       Cathedral Pines.md
+¦   ¦       Cavendish.md
+¦   ¦       Centerville.md
+¦   ¦       Cerro Grande.md
+¦   ¦       Chacolet.md
+¦   ¦       Cherry Creek.md
+¦   ¦       Chester.md
+¦   ¦       Clarkia.md
+¦   ¦       Clarkson.md
+¦   ¦       Clarksville.md
+¦   ¦       Claytonia.md
+¦   ¦       Clementsville.md
+¦   ¦       Clover.md
+¦   ¦       Cobalt.md
+¦   ¦       Cocolalla.md
+¦   ¦       Coffee Point.md
+¦   ¦       Colburn.md
+¦   ¦       Collins.md
+¦   ¦       Conda.md
+¦   ¦       Conkling Park.md
+¦   ¦       Connor.md
+¦   ¦       Coolin.md
+¦   ¦       Copeland.md
+¦   ¦       Corral.md
+¦   ¦       Cuprum.md
+¦   ¦       Curley Creek.md
+¦   ¦       Curry.md
+¦   ¦       Custer.md
+¦   ¦       Darby.md
+¦   ¦       Darlington.md
+¦   ¦       De Smet.md
+¦   ¦       Deep Creek.md
+¦   ¦       Dent.md
+¦   ¦       Devils Ladder.md
+¦   ¦       Dickey.md
+¦   ¦       Dingle.md
+¦   ¦       Dixie (Elmore).md
+¦   ¦       Dixie (Idaho).md
+¦   ¦       Doniphan.md
+¦   ¦       Eastport.md
+¦   ¦       Eddyville.md
+¦   ¦       Egin.md
+¦   ¦       Elba.md
+¦   ¦       Elk Bend.md
+¦   ¦       Elk City.md
+¦   ¦       Ellis.md
+¦   ¦       Emerson.md
+¦   ¦       Emida.md
+¦   ¦       Enaville.md
+¦   ¦       Erlmo.md
+¦   ¦       Fairview.md
+¦   ¦       Featherville.md
+¦   ¦       Felt.md
+¦   ¦       Fenn.md
+¦   ¦       Fernwood.md
+¦   ¦       Fish Haven.md
+¦   ¦       Flat Creek.md
+¦   ¦       Fort Hall.md
+¦   ¦       Freedom.md
+¦   ¦       Fruitvale.md
+¦   ¦       Galena.md
+¦   ¦       Gannett.md
+¦   ¦       Garden Valley.md
+¦   ¦       Gardena.md
+¦   ¦       Garwood.md
+¦   ¦       Geneva.md
+¦   ¦       Gibbonsville.md
+¦   ¦       Gibson.md
+¦   ¦       Gifford.md
+¦   ¦       Gimlet.md
+¦   ¦       Glendale.md
+¦   ¦       Godwin.md
+¦   ¦       Gold Creek.md
+¦   ¦       Goldburg.md
+¦   ¦       Golden Valley.md
+¦   ¦       Golden.md
+¦   ¦       Good Grief.md
+¦   ¦       Goodrich.md
+¦   ¦       Goshen.md
+¦   ¦       Grandjean.md
+¦   ¦       Grangemont.md
+¦   ¦       Grant.md
+¦   ¦       Greencreek.md
+¦   ¦       Greenwood.md
+¦   ¦       Greer.md
+¦   ¦       Grimes Pass.md
+¦   ¦       Hamilton Corner.md
+¦   ¦       Hammett.md
+¦   ¦       Harpster.md
+¦   ¦       Harvard.md
+¦   ¦       Hawleys Landing.md
+¦   ¦       Headquarters.md
+¦   ¦       Heise.md
+¦   ¦       Helena.md
+¦   ¦       Helmer.md
+¦   ¦       Henry.md
+¦   ¦       Herrick.md
+¦   ¦       Hibbard.md
+¦   ¦       Hidden Springs.md
+¦   ¦       Hidden Valley.md
+¦   ¦       Hill City.md
+¦   ¦       Hobson.md
+¦   ¦       Holbrook.md
+¦   ¦       Hollywood.md
+¦   ¦       Howe.md
+¦   ¦       Hoyt.md
+¦   ¦       Humphrey.md
+¦   ¦       Huston.md
+¦   ¦       Idahome.md
+¦   ¦       Indian Valley.md
+¦   ¦       Jackson.md
+¦   ¦       Jacques.md
+¦   ¦       Jameston.md
+¦   ¦       Joel.md
+¦   ¦       Judge Town.md
+¦   ¦       Kasota.md
+¦   ¦       Kenyon.md
+¦   ¦       Kilgore.md
+¦   ¦       Kimama.md
+¦   ¦       King Hill.md
+¦   ¦       Kingston.md
+¦   ¦       Knull.md
+¦   ¦       Konkolville.md
+¦   ¦       LaBelle.md
+¦   ¦       Laclede.md
+¦   ¦       Lake Fork.md
+¦   ¦       Lake.md
+¦   ¦       Lamb Creek.md
+¦   ¦       Lemhi.md
+¦   ¦       Lenore.md
+¦   ¦       Letha.md
+¦   ¦       Liberty.md
+¦   ¦       Lincoln.md
+¦   ¦       Lotus.md
+¦   ¦       Lowman.md
+¦   ¦       Lucile.md
+¦   ¦       Macks Inn.md
+¦   ¦       Marion.md
+¦   ¦       Marsh Valley.md
+¦   ¦       Mashburn.md
+¦   ¦       May.md
+¦   ¦       McDonaldville.md
+¦   ¦       Meadowhurst.md
+¦   ¦       Meadows.md
+¦   ¦       Medimont.md
+¦   ¦       Mesa.md
+¦   ¦       Milner.md
+¦   ¦       Miltown.md
+¦   ¦       Mink Creek.md
+¦   ¦       Monida Pass.md
+¦   ¦       Monteview.md
+¦   ¦       Moose City.md
+¦   ¦       Mora.md
+¦   ¦       Morgan.md
+¦   ¦       Moss.md
+¦   ¦       Mowry.md
+¦   ¦       Murphy Hot Springs.md
+¦   ¦       Murray.md
+¦   ¦       Myers.md
+¦   ¦       Myrtle.md
+¦   ¦       Naples.md
+¦   ¦       Neeley.md
+¦   ¦       New Centerville.md
+¦   ¦       Nordman.md
+¦   ¦       Norland.md
+¦   ¦       North Fork.md
+¦   ¦       North Pole.md
+¦   ¦       North South Ski Bowl.md
+¦   ¦       Nounan.md
+¦   ¦       Ola.md
+¦   ¦       Omega.md
+¦   ¦       Oreana.md
+¦   ¦       Orogrande.md
+¦   ¦       Osgood.md
+¦   ¦       Outlet Bay.md
+¦   ¦       Ovid.md
+¦   ¦       Owyhee.md
+¦   ¦       Palisades.md
+¦   ¦       Parkline.md
+¦   ¦       Patterson.md
+¦   ¦       Pauline.md
+¦   ¦       Peavey.md
+¦   ¦       Peedee.md
+¦   ¦       Pegram.md
+¦   ¦       Pella.md
+¦   ¦       Picabo.md
+¦   ¦       Pine Ridge.md
+¦   ¦       Pine.md
+¦   ¦       Pingree.md
+¦   ¦       Pioneerville.md
+¦   ¦       Pleasant Valley.md
+¦   ¦       Pleasantview.md
+¦   ¦       Plummer Junction.md
+¦   ¦       Pollock.md
+¦   ¦       Porthill.md
+¦   ¦       Portneuf.md
+¦   ¦       Prairie.md
+¦   ¦       Prichard.md
+¦   ¦       Princeton.md
+¦   ¦       Quartzburg.md
+¦   ¦       Raft River.md
+¦   ¦       Ramsdell.md
+¦   ¦       Raymond.md
+¦   ¦       Renfrew.md
+¦   ¦       Reynolds.md
+¦   ¦       Riddle.md
+¦   ¦       Rising River.md
+¦   ¦       Riverdale (Benewah).md
+¦   ¦       Riverdale (Franklin).md
+¦   ¦       Riverside.md
+¦   ¦       Robie Creek.md
+¦   ¦       Robin.md
+¦   ¦       Rock Creek.md
+¦   ¦       Rockford Bay.md
+¦   ¦       Rocky Point.md
+¦   ¦       Rogerson.md
+¦   ¦       Rose Lake.md
+¦   ¦       Rose.md
+¦   ¦       Roseberry.md
+¦   ¦       Roswell.md
+¦   ¦       Rover.md
+¦   ¦       Roy.md
+¦   ¦       Ruby.md
+¦   ¦       Sage Junction.md
+¦   ¦       Sagle.md
+¦   ¦       Saint Joe.md
+¦   ¦       Samaria.md
+¦   ¦       Sand Hollow.md
+¦   ¦       Sanders.md
+¦   ¦       Santa.md
+¦   ¦       Sawtooth City.md
+¦   ¦       Shoup.md
+¦   ¦       Silver City.md
+¦   ¦       Silvertip Landing.md
+¦   ¦       Silverton.md
+¦   ¦       Slickpoo.md
+¦   ¦       Smiths Ferry.md
+¦   ¦       Soldier.md
+¦   ¦       Southwick.md
+¦   ¦       Spalding.md
+¦   ¦       Springdale.md
+¦   ¦       Springfield.md
+¦   ¦       Squirrel.md
+¦   ¦       Stanton Crossing.md
+¦   ¦       Starkey.md
+¦   ¦       Sterling.md
+¦   ¦       Stone.md
+¦   ¦       Sublett.md
+¦   ¦       Sunnyslope.md
+¦   ¦       Swanlake.md
+¦   ¦       Sweet.md
+¦   ¦       Sweetwater.md
+¦   ¦       Syringa.md
+¦   ¦       Tamarack.md
+¦   ¦       Teakean.md
+¦   ¦       Tendoy.md
+¦   ¦       Terreton.md
+¦   ¦       Thatcher.md
+¦   ¦       Thomas.md
+¦   ¦       Thornton.md
+¦   ¦       Tikura.md
+¦   ¦       Tipanuk.md
+¦   ¦       Trestle Creek.md
+¦   ¦       Triumph.md
+¦   ¦       Trout.md
+¦   ¦       Tyhee.md
+¦   ¦       Tyson Creek Station.md
+¦   ¦       Unity.md
+¦   ¦       Ustick.md
+¦   ¦       Vans Corner.md
+¦   ¦       View.md
+¦   ¦       Viola.md
+¦   ¦       Virginia (Bannock).md
+¦   ¦       Waha.md
+¦   ¦       Walters Ferry.md
+¦   ¦       Wapello.md
+¦   ¦       Wardboro.md
+¦   ¦       Warm Lake.md
+¦   ¦       Warren.md
+¦   ¦       Washington Mill.md
+¦   ¦       Wayan.md
+¦   ¦       Wayland.md
+¦   ¦       Westmond.md
+¦   ¦       Whitney.md
+¦   ¦       Wildhorse.md
+¦   ¦       Wilford.md
+¦   ¦       Willard.md
+¦   ¦       Wolf Lodge.md
+¦   ¦       Wolverine.md
+¦   ¦       Woodland.md
+¦   ¦       Woodruff.md
+¦   ¦       Woodville.md
+¦   ¦       Wooleys.md
+¦   ¦       Yellow Pine.md
+¦   ¦       Zenda.md
+¦   ¦       
+¦   +---COUNTIES
+¦   ¦       Ada County.md
+¦   ¦       Adams County.md
+¦   ¦       Bannock County.md
+¦   ¦       Bear Lake County.md
+¦   ¦       Benewah County.md
+¦   ¦       Bingham County.md
+¦   ¦       Blaine County.md
+¦   ¦       Boise County.md
+¦   ¦       Bonner County.md
+¦   ¦       Bonneville County.md
+¦   ¦       Boundary County.md
+¦   ¦       Butte County.md
+¦   ¦       Camas County.md
+¦   ¦       Canyon County.md
+¦   ¦       Caribou County.md
+¦   ¦       Cassia County.md
+¦   ¦       Clark County.md
+¦   ¦       Clearwater County.md
+¦   ¦       Custer County.md
+¦   ¦       Elmore County.md
+¦   ¦       Franklin County.md
+¦   ¦       Fremont County.md
+¦   ¦       Gem County.md
+¦   ¦       Gooding County.md
+¦   ¦       Idaho County.md
+¦   ¦       Jefferson County.md
+¦   ¦       Jerome County.md
+¦   ¦       Kootenai County.md
+¦   ¦       Latah County.md
+¦   ¦       Lemhi County.md
+¦   ¦       Lewis County.md
+¦   ¦       Lincoln County.md
+¦   ¦       Madison County.md
+¦   ¦       Minidoka County.md
+¦   ¦       Nez Perce County.md
+¦   ¦       Oneida County.md
+¦   ¦       Owyhee County.md
+¦   ¦       Payette County.md
+¦   ¦       Power County.md
+¦   ¦       Shoshone County.md
+¦   ¦       Teton County.md
+¦   ¦       Twin Falls County.md
+¦   ¦       Valley County.md
+¦   ¦       Washington County.md
+¦   ¦       
+¦   +---COUNTY JAILS
+¦   ¦       Ada County Jail.md
+¦   ¦       Adams County Jail.md
+¦   ¦       Bannock County Jail.md
+¦   ¦       Bear Lake County Jail.md
+¦   ¦       Benewah County Jail.md
+¦   ¦       Bingham County Jail.md
+¦   ¦       Blaine County Jail.md
+¦   ¦       Boise County Jail.md
+¦   ¦       Bonner County Jail.md
+¦   ¦       Bonneville County Jail.md
+¦   ¦       Boundary County Jail.md
+¦   ¦       Butte County Jail.md
+¦   ¦       Camas County Jail.md
+¦   ¦       Canyon County Jail.md
+¦   ¦       Caribou County Jail.md
+¦   ¦       Cassia County Jail.md
+¦   ¦       Clark County Jail.md
+¦   ¦       Clearwater County Jail.md
+¦   ¦       Custer County Jail.md
+¦   ¦       Elmore County Jail.md
+¦   ¦       Franklin County Jail.md
+¦   ¦       Fremont County Jail.md
+¦   ¦       Gem County Jail.md
+¦   ¦       Gooding County Jail.md
+¦   ¦       Idaho County Jail.md
+¦   ¦       Jefferson County Jail.md
+¦   ¦       Jerome County Jail.md
+¦   ¦       Kootenai County Jail.md
+¦   ¦       Latah County Jail.md
+¦   ¦       Lemhi County Jail.md
+¦   ¦       Lewis County Jail.md
+¦   ¦       Lincoln County Jail.md
+¦   ¦       Madison County Jail.md
+¦   ¦       Minidoka County Jail.md
+¦   ¦       Nez Perce County Jail.md
+¦   ¦       Oneida County Jail.md
+¦   ¦       Owyhee County Jail.md
+¦   ¦       Payette County Jail.md
+¦   ¦       Power County Jail.md
+¦   ¦       Shoshone County Jail.md
+¦   ¦       Teton County Jail.md
+¦   ¦       Twin Falls County Jail.md
+¦   ¦       Valley County Jail.md
+¦   ¦       Washington County Jail.md
+¦   ¦       
+¦   +---GAME UNITS
+¦   ¦       CWD Management Area.md
+¦   ¦       Dworshak-Elk City Zone.md
+¦   ¦       Game Management Unit 1.md
+¦   ¦       Game Management Unit 10.md
+¦   ¦       Game Management Unit 10A.md
+¦   ¦       Game Management Unit 11.md
+¦   ¦       Game Management Unit 11A.md
+¦   ¦       Game Management Unit 12.md
+¦   ¦       Game Management Unit 13.md
+¦   ¦       Game Management Unit 14.md
+¦   ¦       Game Management Unit 15.md
+¦   ¦       Game Management Unit 16.md
+¦   ¦       Game Management Unit 16A.md
+¦   ¦       Game Management Unit 17.md
+¦   ¦       Game Management Unit 18.md
+¦   ¦       Game Management Unit 19.md
+¦   ¦       Game Management Unit 19A.md
+¦   ¦       Game Management Unit 2.md
+¦   ¦       Game Management Unit 20.md
+¦   ¦       Game Management Unit 20A.md
+¦   ¦       Game Management Unit 21.md
+¦   ¦       Game Management Unit 21A.md
+¦   ¦       Game Management Unit 22.md
+¦   ¦       Game Management Unit 23.md
+¦   ¦       Game Management Unit 24.md
+¦   ¦       Game Management Unit 25.md
+¦   ¦       Game Management Unit 26.md
+¦   ¦       Game Management Unit 27.md
+¦   ¦       Game Management Unit 28.md
+¦   ¦       Game Management Unit 29.md
+¦   ¦       Game Management Unit 3.md
+¦   ¦       Game Management Unit 30.md
+¦   ¦       Game Management Unit 30A.md
+¦   ¦       Game Management Unit 31.md
+¦   ¦       Game Management Unit 32.md
+¦   ¦       Game Management Unit 32A.md
+¦   ¦       Game Management Unit 33.md
+¦   ¦       Game Management Unit 34.md
+¦   ¦       Game Management Unit 35.md
+¦   ¦       Game Management Unit 36.md
+¦   ¦       Game Management Unit 36A.md
+¦   ¦       Game Management Unit 36B.md
+¦   ¦       Game Management Unit 37.md
+¦   ¦       Game Management Unit 37A.md
+¦   ¦       Game Management Unit 38.md
+¦   ¦       Game Management Unit 39.md
+¦   ¦       Game Management Unit 4.md
+¦   ¦       Game Management Unit 40.md
+¦   ¦       Game Management Unit 41.md
+¦   ¦       Game Management Unit 42.md
+¦   ¦       Game Management Unit 43.md
+¦   ¦       Game Management Unit 44.md
+¦   ¦       Game Management Unit 45.md
+¦   ¦       Game Management Unit 46.md
+¦   ¦       Game Management Unit 47.md
+¦   ¦       Game Management Unit 48.md
+¦   ¦       Game Management Unit 49.md
+¦   ¦       Game Management Unit 4A.md
+¦   ¦       Game Management Unit 5.md
+¦   ¦       Game Management Unit 50.md
+¦   ¦       Game Management Unit 51.md
+¦   ¦       Game Management Unit 52.md
+¦   ¦       Game Management Unit 52A.md
+¦   ¦       Game Management Unit 53.md
+¦   ¦       Game Management Unit 54.md
+¦   ¦       Game Management Unit 55.md
+¦   ¦       Game Management Unit 56.md
+¦   ¦       Game Management Unit 57.md
+¦   ¦       Game Management Unit 58.md
+¦   ¦       Game Management Unit 59.md
+¦   ¦       Game Management Unit 59A.md
+¦   ¦       Game Management Unit 6.md
+¦   ¦       Game Management Unit 60.md
+¦   ¦       Game Management Unit 60A.md
+¦   ¦       Game Management Unit 61.md
+¦   ¦       Game Management Unit 62.md
+¦   ¦       Game Management Unit 62A.md
+¦   ¦       Game Management Unit 63.md
+¦   ¦       Game Management Unit 63A.md
+¦   ¦       Game Management Unit 64.md
+¦   ¦       Game Management Unit 65.md
+¦   ¦       Game Management Unit 66.md
+¦   ¦       Game Management Unit 66A.md
+¦   ¦       Game Management Unit 67.md
+¦   ¦       Game Management Unit 68.md
+¦   ¦       Game Management Unit 68A.md
+¦   ¦       Game Management Unit 69.md
+¦   ¦       Game Management Unit 7.md
+¦   ¦       Game Management Unit 70.md
+¦   ¦       Game Management Unit 71.md
+¦   ¦       Game Management Unit 72.md
+¦   ¦       Game Management Unit 73.md
+¦   ¦       Game Management Unit 73A.md
+¦   ¦       Game Management Unit 74.md
+¦   ¦       Game Management Unit 75.md
+¦   ¦       Game Management Unit 76.md
+¦   ¦       Game Management Unit 77.md
+¦   ¦       Game Management Unit 78.md
+¦   ¦       Game Management Unit 8.md
+¦   ¦       Game Management Unit 8A.md
+¦   ¦       Game Management Unit 9.md
+¦   ¦       Lolo Zone.md
+¦   ¦       McCall-Weiser Zone.md
+¦   ¦       Middle Fork Zone.md
+¦   ¦       Palouse-Hell's Canyon Zone.md
+¦   ¦       Panhandle Zone.md
+¦   ¦       Salmon Zone.md
+¦   ¦       Sawtooth Zone.md
+¦   ¦       Selway Zone.md
+¦   ¦       Southern Idaho Zone.md
+¦   ¦       Southern Mountains Zone.md
+¦   ¦       Upper Snake Zone.md
+¦   ¦       
+¦   +---GEOGRAPHY
+¦   ¦   +---LAND
+¦   ¦   ¦   ¦   Borah Peak.md
+¦   ¦   ¦   ¦   Cache Valley.md
+¦   ¦   ¦   ¦   Hells Canyon.md
+¦   ¦   ¦   ¦   Long Valley.md
+¦   ¦   ¦   ¦   Lost River Mountain Range.md
+¦   ¦   ¦   ¦   Magic Valley.md
+¦   ¦   ¦   ¦   Paradise Ridge.md
+¦   ¦   ¦   ¦   Sawtooth Mountain Range.md
+¦   ¦   ¦   ¦   Sawtooth National Recreation Area.md
+¦   ¦   ¦   ¦   Silver Valley.md
+¦   ¦   ¦   ¦   Treasure Valley.md
+¦   ¦   ¦   ¦   Wood River Valley.md
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---NATIONAL FORESTS
+¦   ¦   ¦           Bitterroot National Forest.md
+¦   ¦   ¦           Boise National Forest.md
+¦   ¦   ¦           Clearwater National Forest.md
+¦   ¦   ¦           Coeur d'Alene National Forest.md
+¦   ¦   ¦           Idaho Panhandle National Forests.md
+¦   ¦   ¦           Kaniksu National Forest.md
+¦   ¦   ¦           Kootenai National Forest.md
+¦   ¦   ¦           Nez Perce National Forest.md
+¦   ¦   ¦           Payette National Forest.md
+¦   ¦   ¦           Salmon–Challis National Forest.md
+¦   ¦   ¦           St. Joe National Forest.md
+¦   ¦   ¦           Wallowa-Whiteman National Forest.md
+¦   ¦   ¦           
+¦   ¦   +---WATER
+¦   ¦       ¦   Atlantic Ocean.md
+¦   ¦       ¦   Pacific Ocean.md
+¦   ¦       ¦   
+¦   ¦       +---DAMS
+¦   ¦       ¦       American Falls dam.md
+¦   ¦       ¦       Bliss dam.md
+¦   ¦       ¦       Brownlee dam.md
+¦   ¦       ¦       Cascade Dam.md
+¦   ¦       ¦       CJ Strike dam.md
+¦   ¦       ¦       Deer Flat dam.md
+¦   ¦       ¦       Gem State dam.md
+¦   ¦       ¦       Hells Canyon dam complex.md
+¦   ¦       ¦       Hells Canyon dam.md
+¦   ¦       ¦       Ice Harbor dam.md
+¦   ¦       ¦       Idaho Falls dams.md
+¦   ¦       ¦       Jackson Lake dam.md
+¦   ¦       ¦       Little Goose dam.md
+¦   ¦       ¦       lower four Snake River dams.md
+¦   ¦       ¦       Lower Granite dam.md
+¦   ¦       ¦       Lower Monumental dam.md
+¦   ¦       ¦       Lower Salmon Falls dam.md
+¦   ¦       ¦       Milner dam.md
+¦   ¦       ¦       Minidoka dam.md
+¦   ¦       ¦       Oxbow dam.md
+¦   ¦       ¦       Palisades dam.md
+¦   ¦       ¦       Shoshone Falls dam.md
+¦   ¦       ¦       Swan Falls dam.md
+¦   ¦       ¦       Twin Falls dam.md
+¦   ¦       ¦       Upper Salmon Falls dam.md
+¦   ¦       ¦       
+¦   ¦       +---LAKES AND RESERVOIRS
+¦   ¦       ¦       American Falls reservoir.md
+¦   ¦       ¦       Bear Lake.md
+¦   ¦       ¦       Bliss reservoir.md
+¦   ¦       ¦       Brownlee reservoir.md
+¦   ¦       ¦       Cascade Reservoir.md
+¦   ¦       ¦       CJ Strike reservoir.md
+¦   ¦       ¦       Hells Canyon reservoir.md
+¦   ¦       ¦       Jackson Lake.md
+¦   ¦       ¦       Lake Bryan.md
+¦   ¦       ¦       Lake Coeur d'Alene.md
+¦   ¦       ¦       Lake Herbert G. West.md
+¦   ¦       ¦       Lake Lowell.md
+¦   ¦       ¦       Lake Pend Oreille.md
+¦   ¦       ¦       Lake Sacajawea.md
+¦   ¦       ¦       Lake Walcott.md
+¦   ¦       ¦       Little Payette Lake.md
+¦   ¦       ¦       Lower Granite Lake.md
+¦   ¦       ¦       Lower Salmon Falls reservoir.md
+¦   ¦       ¦       Milner Lake.md
+¦   ¦       ¦       Oxbow reservoir.md
+¦   ¦       ¦       Palisades reservoir.md
+¦   ¦       ¦       Payette Lake.md
+¦   ¦       ¦       Shoshone Falls reservoir.md
+¦   ¦       ¦       Swan Falls reservoir.md
+¦   ¦       ¦       Twin Falls reservoir.md
+¦   ¦       ¦       Upper Salmon Falls reservoir.md
+¦   ¦       ¦       
+¦   ¦       +---RIVERS AND CREEKS
+¦   ¦               Bear River.md
+¦   ¦               Big Wood River.md
+¦   ¦               Blackfoot River.md
+¦   ¦               Bruneau River.md
+¦   ¦               Clearwater River.md
+¦   ¦               Coeur d'Alene River.md
+¦   ¦               creeks.md
+¦   ¦               John Day Creek.md
+¦   ¦               Malad River.md
+¦   ¦               McKinzie Creek.md
+¦   ¦               Paradise Creek.md
+¦   ¦               Payette River.md
+¦   ¦               Salmon River.md
+¦   ¦               Slate Creek.md
+¦   ¦               Snake River.md
+¦   ¦               Spokane River.md
+¦   ¦               
+¦   +---LIBRARIES
+¦   ¦       Marshall Public Library.md
+¦   ¦       
+¦   +---LOCATIONS
+¦   ¦       Gowen Field.md
+¦   ¦       Idaho Capitol.md
+¦   ¦       Idaho National Laboratory.md
+¦   ¦       Mountain Home Air Force Base.md
+¦   ¦       Schweitzer ski resort.md
+¦   ¦       War Memorial Field.md
+¦   ¦       
+¦   +---OTHER
+¦   ¦   +---CITIES
+¦   ¦   ¦       Alexandria.md
+¦   ¦   ¦       Jackson Hole.md
+¦   ¦   ¦       Los Angeles.md
+¦   ¦   ¦       Missoula.md
+¦   ¦   ¦       Ontario.md
+¦   ¦   ¦       Park City.md
+¦   ¦   ¦       Portland.md
+¦   ¦   ¦       Salt Lake City.md
+¦   ¦   ¦       San Diego.md
+¦   ¦   ¦       San Francisco.md
+¦   ¦   ¦       Seattle.md
+¦   ¦   ¦       Spokane.md
+¦   ¦   ¦       
+¦   ¦   +---COUNTIES
+¦   ¦   ¦       Malheur County.md
+¦   ¦   ¦       Multnomah County.md
+¦   ¦   ¦       Orange County.md
+¦   ¦   ¦       Summit County.md
+¦   ¦   ¦       Teton County (WY).md
+¦   ¦   ¦       
+¦   ¦   +---COUNTRIES
+¦   ¦   ¦       Canada.md
+¦   ¦   ¦       Mexico.md
+¦   ¦   ¦       Poland.md
+¦   ¦   ¦       Russia.md
+¦   ¦   ¦       South Korea.md
+¦   ¦   ¦       Ukraine.md
+¦   ¦   ¦       
+¦   ¦   +---STATES
+¦   ¦           Alabama.md
+¦   ¦           Alaska.md
+¦   ¦           Arkansas.md
+¦   ¦           California.md
+¦   ¦           Colorado.md
+¦   ¦           Connecticut.md
+¦   ¦           Delaware.md
+¦   ¦           Florida.md
+¦   ¦           Georgia.md
+¦   ¦           Illinois.md
+¦   ¦           Maine.md
+¦   ¦           Maryland.md
+¦   ¦           Massachusetts.md
+¦   ¦           Missouri.md
+¦   ¦           Montana.md
+¦   ¦           Nevada.md
+¦   ¦           New Hampshire.md
+¦   ¦           New Jersey.md
+¦   ¦           New York.md
+¦   ¦           North Carolina.md
+¦   ¦           Ohio.md
+¦   ¦           Oregon.md
+¦   ¦           Rhode Island.md
+¦   ¦           South Carolina.md
+¦   ¦           South Dakota.md
+¦   ¦           Texas.md
+¦   ¦           Utah.md
+¦   ¦           Virginia.md
+¦   ¦           Washington.md
+¦   ¦           Wyoming.md
+¦   ¦           
+¦   +---REGIONS
+¦   ¦       1st Congressional District.md
+¦   ¦       2nd Congressional District.md
+¦   ¦       Central Idaho.md
+¦   ¦       East Coast.md
+¦   ¦       Eastern Idaho.md
+¦   ¦       North America.md
+¦   ¦       North Idaho.md
+¦   ¦       North-Central Idaho.md
+¦   ¦       Southeast Idaho.md
+¦   ¦       West Coast.md
+¦   ¦       
+¦   +---RESERVATIONS
+¦   ¦       Coeur d'Alene Indian Reservation.md
+¦   ¦       Duck Valley Indian Reservation.md
+¦   ¦       Fort Hall Indian Reservation.md
+¦   ¦       Kootenai Indian Reservation.md
+¦   ¦       Nez Perce Indian Reservation.md
+¦   ¦       
+¦   +---ROADS
+¦   ¦       Highway 16.md
+¦   ¦       Highway 34.md
+¦   ¦       Highway 52.md
+¦   ¦       Interstate 15.md
+¦   ¦       Interstate 184.md
+¦   ¦       Interstate 84.md
+¦   ¦       Interstate 86.md
+¦   ¦       Interstate 90.md
+¦   ¦       Long Bridge.md
+¦   ¦       US 10.md
+¦   ¦       US 12.md
+¦   ¦       US 191.md
+¦   ¦       US 195.md
+¦   ¦       US 2.md
+¦   ¦       US 20.md
+¦   ¦       US 26.md
+¦   ¦       US 287.md
+¦   ¦       US 30.md
+¦   ¦       US 410.md
+¦   ¦       US 630.md
+¦   ¦       US 89.md
+¦   ¦       US 91.md
+¦   ¦       US 93.md
+¦   ¦       US 95.md
+¦   ¦       
+¦   +---SCHOOL DISTRICTS
+¦   ¦       Aberdeen School District.md
+¦   ¦       American Falls Joint School District.md
+¦   ¦       Arbon Elementary School District.md
+¦   ¦       Avery School District.md
+¦   ¦       Basin School District.md
+¦   ¦       Bear Lake County School District.md
+¦   ¦       Blackfoot School District.md
+¦   ¦       Blaine County School District.md
+¦   ¦       Bliss Joint School District.md
+¦   ¦       Boise School District.md
+¦   ¦       Bonneville Joint School District.md
+¦   ¦       Boundary County School District.md
+¦   ¦       Bruneau-Grand View Joint School District.md
+¦   ¦       Buhl Joint School District.md
+¦   ¦       Butte County Joint School District.md
+¦   ¦       Caldwell School District.md
+¦   ¦       Camas County School District.md
+¦   ¦       Cambridge Joint School District.md
+¦   ¦       Cascade School District.md
+¦   ¦       Cassia County Joint School District.md
+¦   ¦       Castleford School District.md
+¦   ¦       Challis Joint School District.md
+¦   ¦       Clark County School District.md
+¦   ¦       Coeur d'Alene School District.md
+¦   ¦       Cottonwood Joint School District.md
+¦   ¦       Council School District.md
+¦   ¦       Culdesac Joint School District.md
+¦   ¦       Dietrich School District.md
+¦   ¦       Emmett Independent School District.md
+¦   ¦       Filer School District.md
+¦   ¦       Firth School District.md
+¦   ¦       Fremont County Joint School District.md
+¦   ¦       Fruitland School District.md
+¦   ¦       Garden Valley School District.md
+¦   ¦       Genesee Joint School District.md
+¦   ¦       Glenns Ferry Joint School District.md
+¦   ¦       Gooding Joint School District.md
+¦   ¦       Grace Joint School District.md
+¦   ¦       Hagerman Joint School District.md
+¦   ¦       Hansen School District.md
+¦   ¦       Highland Joint School District.md
+¦   ¦       Homedale Joint School District.md
+¦   ¦       Horseshoe Bend School District.md
+¦   ¦       Idaho Falls School District.md
+¦   ¦       Jefferson County School District.md
+¦   ¦       Jerome Joint School District.md
+¦   ¦       Kamiah Joint School District.md
+¦   ¦       Kellogg Joint School District.md
+¦   ¦       Kendrick Joint School District.md
+¦   ¦       Kimberly School District.md
+¦   ¦       Kootenai School District.md
+¦   ¦       Kuna Joint School District.md
+¦   ¦       Lake Pend Oreille School District.md
+¦   ¦       Lakeland Joint School District.md
+¦   ¦       Lapwai School District.md
+¦   ¦       Lewiston Independent School District.md
+¦   ¦       Mackay Joint School District.md
+¦   ¦       Madison School District.md
+¦   ¦       Marsh Valley Joint School District.md
+¦   ¦       Marsing Joint School District.md
+¦   ¦       McCall-Donnelly Joint School District.md
+¦   ¦       Meadows Valley Public School District.md
+¦   ¦       Melba Joint School District.md
+¦   ¦       Middleton School District.md
+¦   ¦       Midvale School District.md
+¦   ¦       Minidoka County Joint School District.md
+¦   ¦       Moscow School District.md
+¦   ¦       Mountain Home School District.md
+¦   ¦       Mountain View School District.md
+¦   ¦       Mullan School District.md
+¦   ¦       Murtaugh Joint School District.md
+¦   ¦       Nampa School District.md
+¦   ¦       New Plymouth School District.md
+¦   ¦       Nezperce Joint School District.md
+¦   ¦       North Gem School District.md
+¦   ¦       Notus School District.md
+¦   ¦       Oneida County School District.md
+¦   ¦       Orofino Joint School District.md
+¦   ¦       Parma School District.md
+¦   ¦       Payette Joint School District.md
+¦   ¦       Pleasant Valley School District.md
+¦   ¦       Plummer-Worley Joint School District.md
+¦   ¦       Pocatello-Chubbuck School District.md
+¦   ¦       Post Falls School District.md
+¦   ¦       Potlatch School District.md
+¦   ¦       Prairie Elementary School District.md
+¦   ¦       Preston Joint School District.md
+¦   ¦       Richfield School District.md
+¦   ¦       Ririe Joint School District.md
+¦   ¦       Rockland School District.md
+¦   ¦       Saint Maries Joint School District.md
+¦   ¦       Salmon River Joint School District.md
+¦   ¦       Salmon School District.md
+¦   ¦       Shelley Joint School District.md
+¦   ¦       Shoshone Joint School District.md
+¦   ¦       Snake River School District.md
+¦   ¦       Soda Springs Joint School District.md
+¦   ¦       South Lemhi School District.md
+¦   ¦       Sugar-Salem Joint School District.md
+¦   ¦       Swan Valley Elementary School District.md
+¦   ¦       Teton County School District.md
+¦   ¦       Three Creek Joint Elementary School District.md
+¦   ¦       Troy School District.md
+¦   ¦       Twin Falls School District.md
+¦   ¦       Valley School District.md
+¦   ¦       Vallivue School District.md
+¦   ¦       Wallace School District.md
+¦   ¦       Weiser School District.md
+¦   ¦       Wendell School District.md
+¦   ¦       West Ada School District.md
+¦   ¦       West Bonner County School District.md
+¦   ¦       West Jefferson School District.md
+¦   ¦       West Side Joint School District.md
+¦   ¦       Whitepine Joint School District.md
+¦   ¦       Wilder School District.md
+¦   ¦       
+¦   +---SCHOOLS
+¦   ¦   ¦   Idaho Youth ChalleNGe Academy.md
+¦   ¦   ¦   
+¦   ¦   +---COLLEGES AND UNIVERSITIES
+¦   ¦   ¦   +---COMMUNITY COLLEGES
+¦   ¦   ¦   ¦       Board of Trustees - CEI.md
+¦   ¦   ¦   ¦       Board of Trustees - CSI.md
+¦   ¦   ¦   ¦       Board of Trustees - CWI.md
+¦   ¦   ¦   ¦       Board of Trustees - NIC.md
+¦   ¦   ¦   ¦       College of Eastern Idaho.md
+¦   ¦   ¦   ¦       College of Southern Idaho.md
+¦   ¦   ¦   ¦       College of Western Idaho.md
+¦   ¦   ¦   ¦       North Idaho College.md
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---PRIVATE COLLEGES
+¦   ¦   ¦   ¦       Brigham Young University-Idaho.md
+¦   ¦   ¦   ¦       Brigham Young University.md
+¦   ¦   ¦   ¦       College of Idaho.md
+¦   ¦   ¦   ¦       Gonzaga University.md
+¦   ¦   ¦   ¦       New Saint Andrews.md
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---STATE COLLEGES
+¦   ¦   ¦           Boise State University.md
+¦   ¦   ¦           Idaho State University.md
+¦   ¦   ¦           Lewis-Clark State College.md
+¦   ¦   ¦           University of Idaho.md
+¦   ¦   ¦           University of Washington.md
+¦   ¦   ¦           
+¦   ¦   +---PRIVATE SCHOOLS
+¦   ¦   ¦       Logos School.md
+¦   ¦   ¦       
+¦   ¦   +---PUBLIC SCHOOLS
+¦   ¦           American Falls High School.md
+¦   ¦           Mackay High School.md
+¦   ¦           Madison High School.md
+¦   ¦           Nampa High School.md
+¦   ¦           Sandpoint High School.md
+¦   ¦           
+¦   +---TAXING DISTRICTS
+¦       ¦   Port of Lewiston.md
+¦       ¦   
+¦       +---FIRE PROTECTION DISTRICTS
+¦       ¦       Kootenai County Fire & Rescue.md
+¦       ¦       Northern Lakes Fire Protection District.md
+¦       ¦       Shoshone County Fire District No. 1.md
+¦       ¦       Shoshone County Fire District No. 2.md
+¦       ¦       Shoshone County Fire District No. 3.md
+¦       ¦       Shoshone County Fire District.md
+¦       ¦       St. Joe Valley Fire.md
+¦       ¦       
+¦       +---HIGHWAY DISTRICTS
+¦               Ada County Highway District.md
+¦               
++---SOURCES
+¦   +---EDITORIALS
+¦   ¦   ¦   2023-10-02 - FIRE defends Idaho conservation officer sued for criticizing wealthy ranch owner’s airstrip permit.md
+¦   ¦   ¦   2023-10-20 - SIMPSON - I’m Not Over the “Moon” for a Speaker Jordan, Idaho Deserves Better.md
+¦   ¦   ¦   2023-12-05 - Idaho Statesman Opinion - Idaho’s laws help hide child abuse. These two steps could bring more cases to justice.md
+¦   ¦   ¦   2023-12-10 - Ada County - All nonprofits should have tax transparency. Hospitals shouldn’t have special rules.md
+¦   ¦   ¦   
+¦   ¦   +---MAIN STREET IDAHO CAUCUS
+¦   ¦   ¦       2023-06-30 - OP-ED Presidential caucus isn't right answer for our state.md
+¦   ¦   ¦       2023-07-19 - OP-ED Finding success through collaborating with fellow legislators.md
+¦   ¦   ¦       2023-07-19 - OP-ED We're fighting for Idaho farmers, not illegal immigration.md
+¦   ¦   ¦       2023-07-21 - OP-ED There need to be mandatory minimums for fentanyl.md
+¦   ¦   ¦       2023-08-19 - OP-ED Main Street Idaho, a breath of fresh air.md
+¦   ¦   ¦       2023-08-29 - OP-ED Turn down the political temperature and 'Disagree Better'.md
+¦   ¦   ¦       2023-10-11 - OP-ED Protecting Idaho's Farmland.md
+¦   ¦   ¦       2023-17-20 - OP-ED Legislature should approve May primary.md
+¦   ¦   ¦       
+¦   ¦   +---MOON - CHAIRWOMAN'S COLUMN
+¦   ¦           2023-10-20 - MOON - Local Elections Matter the Most.md
+¦   ¦           2023-12-01 - MOON - Pocatello awards drag queen story time an award for 'Human and Civil Rights,' Igniting concerns from parents over child exposure to gender confusion.md
+¦   ¦           
+¦   +---HEARINGS
+¦   ¦   +---2020
+¦   ¦   ¦       2020-01-06 Budget Preview.md
+¦   ¦   ¦       2020-01-07 JFAC opening meeting.md
+¦   ¦   ¦       2020-01-08 House Education.md
+¦   ¦   ¦       2020-01-13 House Jud Rules.md
+¦   ¦   ¦       2020-01-14 House Transportation.md
+¦   ¦   ¦       2020-01-16 House Environment.md
+¦   ¦   ¦       2020-01-21 House Judiciary.md
+¦   ¦   ¦       2020-01-21 House State Affairs.md
+¦   ¦   ¦       2020-01-21 Senate Health & Welfare.md
+¦   ¦   ¦       2020-01-22 House Rev & Tax.md
+¦   ¦   ¦       2020-01-27 House Floor.md
+¦   ¦   ¦       2020-01-27 House State Affairs.md
+¦   ¦   ¦       2020-01-27 Joint Judiciary Cmtes.md
+¦   ¦   ¦       2020-01-28 House HW.md
+¦   ¦   ¦       2020-01-29 House State Affairs.md
+¦   ¦   ¦       2020-01-30 House Floor.md
+¦   ¦   ¦       
+¦   ¦   +---2021
+¦   ¦   +---2022
+¦   ¦   ¦       2022-02-16 Dems Presser - Working Families Agenda.md
+¦   ¦   ¦       
+¦   ¦   +---2023
+¦   ¦   ¦       2023-12-19 - GIAC meeting.md
+¦   ¦   ¦       
+¦   ¦   +---2024
+¦   ¦   ¦       2024-01-09 House Judiciary.md
+¦   ¦   ¦       2024-01-22 House Health Welfare.md
+¦   ¦   ¦       2024-01-22 Senate Judiciary.md
+¦   ¦   ¦       2024-01-24 Senate Judiciary.md
+¦   ¦   ¦       2024-02-07 House Business.md
+¦   ¦   ¦       2024-11-19 Water Supply Committee.md
+¦   ¦   ¦       
+¦   ¦   +---2025
+¦   ¦           2025-01-13 House Revenue & Taxation.md
+¦   ¦           2025-01-13 Senate Judiciary.md
+¦   ¦           2025-01-15 House Business.md
+¦   ¦           2025-01-21 Senate Commerce.md
+¦   ¦           2025-02-03 House Judiciary, Firing Squad.md
+¦   ¦           2025-02-05 House Revenue, Private School Tax Credit.md
+¦   ¦           2025-02-06 Senate Local Gov.md
+¦   ¦           
+¦   +---INTERVIEWS
+¦   ¦       Interview 2020-01-16 Grant Burgoyne.md
+¦   ¦       Interview 2022-03-08 Peter Riggs.md
+¦   ¦       Interview 2023-08-14 Chrystle Horvath.md
+¦   ¦       Interview 2023-08-14 Nancy Hadley.md
+¦   ¦       Interview 2023-11-08 Jason Lantz.md
+¦   ¦       
+¦   +---LISTS
+¦   ¦       2023 Endorsements - KCRCC.md
+¦   ¦       2024 Endorsements - Farm Bureau.md
+¦   ¦       2024 Endorsements - FOP.md
+¦   ¦       2024 Endorsements - IACI.md
+¦   ¦       2024 Endorsements - IFF.md
+¦   ¦       2024 Endorsements - NRA.md
+¦   ¦       agricultural commissions.md
+¦   ¦       central committees.md
+¦   ¦       charter schools.md
+¦   ¦       cities.md
+¦   ¦       Congressional Districts.md
+¦   ¦       counties.md
+¦   ¦       county courthouses.md
+¦   ¦       county jails.md
+¦   ¦       Game Management Units.md
+¦   ¦       high schools.md
+¦   ¦       highways.md
+¦   ¦       Legislative Districts.md
+¦   ¦       national forests.md
+¦   ¦       public health districts.md
+¦   ¦       school districts.md
+¦   ¦       ski resorts.md
+¦   ¦       
+¦   +---NEWS MEDIA
+¦   ¦       2004-09-18 - Spokesman-Review - Taxes to be hot topic at meeting.md
+¦   ¦       2006-09-02 - Spokesman-Review - Risch turns down debate invitation.md
+¦   ¦       2006-12-07 - Spokane Journal of Business - Idaho mulls new interchange for Cabela's.md
+¦   ¦       2007-05-17 - Lewiston Tribune - Construction time for new Nez Perce County Jail pushed to 18 months.md
+¦   ¦       2007-07-26 - Spokane Journal of Business - Cabela's I-90 access design work starts.md
+¦   ¦       2011-08-18 - Spokesman-Review - Idaho charter school loses federal appeal over Bible teaching.md
+¦   ¦       2014-11-13 - Associated Press - Jerome County plans to build new, larger jail.md
+¦   ¦       2015-06-05 - Idaho Reports - Tippets named DEQ director.md
+¦   ¦       2016-04-27 - Eye on Boise - Kuna-Melba News to become a publication of the Idaho Press-Tribune.md
+¦   ¦       2018-04-28 - East Idaho News - Elaine King, Britt Raybould and Marshall Merrell compete for District 34 Seat.md
+¦   ¦       2018-05-11 - Moscow-Pullman Daily News - Candidate Heath; A fugitive for 10 years.md
+¦   ¦       2020-01-06 - McClure - Little sets education priorities in state of the state address.md
+¦   ¦       2020-01-16 - McClure - Bill aims to shift drug policy from arrest to treatment.md
+¦   ¦       2020-01-22 - McClure - Committee considers narrowing presidential search finalists.md
+¦   ¦       2020-01-24 - McClure - First grocery, property tax bills before committee.md
+¦   ¦       2020-01-30 - McClure - Religious Freedom Day resolution stalls in committee.md
+¦   ¦       2020-02-05 - McClure - Two bills advance to limit bond elections.md
+¦   ¦       2020-02-14 - McClure - Lawmaker seeks to remove party affiliation for Fish and Game Commission.md
+¦   ¦       2020-02-19 - Idaho Business Review - Jayson Ronk joins Regence BlueShield of Idaho as VP of government affairs.md
+¦   ¦       2020-12-09 - KTVB - CDH board member Lachiondo responds to protests outside her home.md
+¦   ¦       2021-02-12 - KTVB - Idaho lawmakers introduce bill to penalize picketing outside of homes.md
+¦   ¦       2021-02-18 - KTVB - Protester arrested again at Idaho Capitol.md
+¦   ¦       2021-04-07 - Idaho Education News - Senate committee kills sex education ‘opt-in’ bill.md
+¦   ¦       2021-06-03 - Idaho Business Review - Jayson Ronk joins Blue Cross of Idaho.md
+¦   ¦       2021-11-15 - Idaho Reports - Chairman Wood confirms no Health and Welfare hearing this session.md
+¦   ¦       2021-12-10 - IR - Chronic wasting disease surveillance underway in central Idaho.md
+¦   ¦       2022-04-20 - KHQ - New Republican Party formed in North Idaho.md
+¦   ¦       2022-06-10 - Idaho Mountain Express - Sawtooth Valley ranch owner Michael Boren sues county commissioner, others in defamation lawsuit.md
+¦   ¦       2022-06-14 - Coeur d'Alene Press - Patriot Front arrestees scheduled for arraignment.md
+¦   ¦       2022-10-08 - Coeur d'Alene Press - State declines to proceed with People's Pen prosecution.md
+¦   ¦       2022-10-13 - Idaho Press - Slate of GOP-backed candidates targets Idaho college board posts.md
+¦   ¦       2022-10-19 - Boise State Public Radio - Judge dismisses defamation case against 3 Sawtooth airstrip defendants.md
+¦   ¦       2022-10-24 - IR - Fish and Game detects first chronic wasting disease of 2022 hunting season.md
+¦   ¦       2022-11-08 - Idaho Reports - RESULTS AND ANALYSIS; Idaho statewide races.md
+¦   ¦       2022-11-10 - Idaho Reports - Vote count reporting error shows mistaken result for House Seat 26 B.md
+¦   ¦       2022-12-09 - Idaho Reports - Remembering former legislator Hy Kloc.md
+¦   ¦       2023 Idaho Statesman & ProPublica - Idaho's crumbling schools.md
+¦   ¦       2023-03-07 - IR - Fish and Game cutting deer density to reduce CWD risk.md
+¦   ¦       2023-03-16 - Idaho Statesman - Airstrip defamation lawsuit was dismissed, twice; Boren appeals to Idaho Supreme Court.md
+¦   ¦       2023-05-03 - VICE - Accessing Porn In Utah Is Now a Complicated Process That Requires a Picture of Your Face.md
+¦   ¦       2023-06-15 - New York Times - Oregon Town's Marijuana Boom Yields Envy in Idaho.md
+¦   ¦       2023-08-28 - Idaho Capital Sun - U.S. Sen. Jim Risch campaign fined for violating finance law, FEC settlement shows.md
+¦   ¦       2023-09-28 - IR - Dispute continues between state and county GOP.md
+¦   ¦       2023-10-03 - Idaho Reports - Voting bills eliminating use of student ID at polls are constitutional, says judge.md
+¦   ¦       2023-10-06 - Idaho Statesman - 'Impossible' to lead, Ada County GOP leaders resign to protest state party's 'new oligarchy'.md
+¦   ¦       2023-10-23 - Idaho Education News - Following the dollars, Idaho's 10 spendiest school board elections.md
+¦   ¦       2023-10-23 - Post Register - Six eastern Idaho GOP Central Committees issue statement rallying around Gov. Little.md
+¦   ¦       2023-10-25 - BoiseDev - ‘Ridiculous situation’ More than a dozen downtown Emmett storefronts owned by the same owner, nearly half are empty.md
+¦   ¦       2023-10-25 - Idaho Capital Sun - Ada County Republican Central Committee elects new officers after former group resigned.md
+¦   ¦       2023-10-26 - Idaho Education News - Money makes a big mark in (some) school board elections.md
+¦   ¦       2023-10-27 - Post Register - Bonneville GOP calls state legislators on the carpet.md
+¦   ¦       2023-10-31 - Idaho Reports - Changes to rulemaking process unconstitutional, state commission alleges.md
+¦   ¦       2023-11-03 - Idaho Reports - Legislature asks to intervene in rulemaking case at the Idaho Supreme Court.md
+¦   ¦       2023-11-06 - Idaho Reports - Governor Little names Cynthia Meyer new Idaho Supreme Court justice.md
+¦   ¦       2023-11-08 - IR - Chronic wasting disease detected in New Meadows mule deer.md
+¦   ¦       2023-11-15 - Idaho Reports - Health and Welfare Director Jeppesen to retire.md
+¦   ¦       2023-12-04 - Idaho Capital Sun - Feds expand migratory big game initiative into Idaho, Montana.md
+¦   ¦       2023-12-04 - Idaho Capital Sun - North Idaho’s Panhandle Health District installs free Narcan vending machines in Coeur d’Alene, Kellogg.md
+¦   ¦       2023-12-06 - KHQ - Abandoned Idaho bridge to become wildlife overpass.md
+¦   ¦       2023-12-07 - Idaho Capital Sun - After Clean Water Act ruling, states that want to protect affected wetlands need millions.md
+¦   ¦       2023-12-09 - East Idaho News - Many fear Inkom I-15 overpass primed for ‘catastrophic failure’ before expected 2025 replacement.md
+¦   ¦       2023-12-11 - Idaho Reports - Supreme Court hears appeal on student IDs for voting.md
+¦   ¦       2023-12-13 - 404 Media - Polish Hackers Repaired Trains the Manufacturer Artificially Bricked. Now The Train Company Is Threatening Them.md
+¦   ¦       2023-12-15 - Post Register - Local GOP committee censures Rep. Mickelsen, issues ‘guidance’ to Rep. Horman and Sen. Cook.md
+¦   ¦       2023-12-18 - BoiseDev - Plans for Ada County broadband network on hold after state turns down grant application.md
+¦   ¦       2023-12-19 - East Idaho News - Bonneville County legislator ‘censured’ for violating Republican Party platform; committee issues ‘guidance’ to colleagues.md
+¦   ¦       2023-12-19 - Idaho Education News - Department of Education gets rebrand. Here’s what it cost.md
+¦   ¦       2023-12-30 - East Idaho News - ‘Follow-up’ inspection completed on Inkom bridge; next full inspection scheduled for summer.md
+¦   ¦       2024-01-02 - 404 Media - North Carolina and Montana Just Lost Access to Pornhub.md
+¦   ¦       2024-04-07 - Hagadone - Book pulled at Lakeland middle school.md
+¦   ¦       2024-06-27- Argonaut - UI approves new school in the healthcare field.md
+¦   ¦       
+¦   +---PODCASTS
+¦   ¦       2022-05-15 - IR Podcast - Patriot Front Arrests.md
+¦   ¦       2022-10-20 - IR Podcast - Legislative Races to Watch.md
+¦   ¦       2023-09-06 - IR Podcast - An Idaho Labor Market Snapshot.md
+¦   ¦       2023-09-27 - IR Podcast - Quagga Mussels Detected in Snake River.md
+¦   ¦       2023-10-04 - IR Podcast - Ready, Set, Idaho Launch.md
+¦   ¦       2023-10-11 - IR Podcast - Early Endorsements for the Idaho Legislature.md
+¦   ¦       2023-10-18 - IR Podcast - The Rising Cost of Highway Right-of-Way.md
+¦   ¦       2023-10-26 - IR Podcast - State Financial Forecast.md
+¦   ¦       2023-11-01 - IR Podcast - Opposition to the Lava Ridge Wind Project.md
+¦   ¦       2023-11-09 - IR Podcast - How Counties Manage Overcrowded Jails.md
+¦   ¦       2023-11-15 - IR Podcast - Finding Financing to Support Building Homes.md
+¦   ¦       2023-12-01 - IR Podcast - Lawmakers Prepare for 2024.md
+¦   ¦       
+¦   +---PRESS RELEASES
+¦   ¦       2023-01-11 - LITTLE - Gov. Little announces staff changes.md
+¦   ¦       2023-10-08 - IDCP - Constitution Party Announces Doug Traubel Has Changed Party Affiliation, Will Run for Ada Sheriff in 2024.md
+¦   ¦       2023-10-17 - IDGOP - Statement on Speaker of the House vote.md
+¦   ¦       2023-10-20 - IDGOP - Caribou County GOP Appeals Primary Endorsements to State Chair Moon.md
+¦   ¦       2023-11-15 - BOISE - City of Boise continues successful property tax rebate program.md
+¦   ¦       2023-11-28 - IDFC - Idaho Freedom Caucus Member, State Senator Brian Lenney, Spearheads Anti-SLAPP Bill to Champion Free Speech.md
+¦   ¦       2023-11-29 - SBOE - Finalists named in Idaho State University president search.md
+¦   ¦       2023-12-07 - DHW - Idaho Behavioral Health Plan Implementation Update.md
+¦   ¦       2023-12-08 - IDFC - Idaho Must Address the Fentanyl Crisis.md
+¦   ¦       
+¦   +---REPORTS
+¦   +---RESOLUTIONS
+¦           2023-12-07 - Ada GOP - WHEREAS Senator Chuck Winder.md
+¦           
++---TOPICS
+¦   ¦   abortion.md
+¦   ¦   anti-abortion.md
+¦   ¦   Antifa.md
+¦   ¦   artificial intelligence.md
+¦   ¦   Aryan Nations.md
+¦   ¦   atheist.md
+¦   ¦   attorney’s fees.md
+¦   ¦   balanced budget.md
+¦   ¦   battery.md
+¦   ¦   beneficial use.md
+¦   ¦   Bible.md
+¦   ¦   Bonner County v. City of Sandpoint weapons ban lawsuit.md
+¦   ¦   books.md
+¦   ¦   building codes.md
+¦   ¦   campaign finance.md
+¦   ¦   censured.md
+¦   ¦   child pornography.md
+¦   ¦   child protection.md
+¦   ¦   children.md
+¦   ¦   Christian nationalism.md
+¦   ¦   Christianity.md
+¦   ¦   churches.md
+¦   ¦   construction.md
+¦   ¦   Counseling Compact.md
+¦   ¦   counselors.md
+¦   ¦   daylight saving time.md
+¦   ¦   Deputy Attorney General.md
+¦   ¦   don't tread on me.md
+¦   ¦   drag reading events.md
+¦   ¦   drag.md
+¦   ¦   electioneering.md
+¦   ¦   executive order.md
+¦   ¦   executive session.md
+¦   ¦   freedom of assembly.md
+¦   ¦   freedom of religion.md
+¦   ¦   freedom of speech.md
+¦   ¦   freedom of the press.md
+¦   ¦   gender identity.md
+¦   ¦   gerrymandering.md
+¦   ¦   gubernatorial appointment.md
+¦   ¦   hatchery.md
+¦   ¦   holy book.md
+¦   ¦   homosexuality.md
+¦   ¦   Idaho Health Data Exchange.md
+¦   ¦   internet crimes against children.md
+¦   ¦   internet service providers.md
+¦   ¦   interstate compact.md
+¦   ¦   Islam.md
+¦   ¦   Judaism.md
+¦   ¦   Kaiser Family Foundation.md
+¦   ¦   medical school.md
+¦   ¦   metropolitan statistical areas.md
+¦   ¦   minors.md
+¦   ¦   mosques.md
+¦   ¦   neo-Nazi.md
+¦   ¦   parental permissions.md
+¦   ¦   parental rights.md
+¦   ¦   parents.md
+¦   ¦   party platform.md
+¦   ¦   places of worship.md
+¦   ¦   pregnancy.md
+¦   ¦   Quran.md
+¦   ¦   raw milk.md
+¦   ¦   Reddit.md
+¦   ¦   religion.md
+¦   ¦   right to bear arms.md
+¦   ¦   right to petition the government.md
+¦   ¦   RINOs.md
+¦   ¦   robocalls.md
+¦   ¦   same-sex marriage.md
+¦   ¦   single-subject rule.md
+¦   ¦   social media.md
+¦   ¦   synagogues.md
+¦   ¦   temples.md
+¦   ¦   the Civil War.md
+¦   ¦   The Truth As Told by Mason Buttle.md
+¦   ¦   therapists.md
+¦   ¦   Torah.md
+¦   ¦   VoIP.md
+¦   ¦   water rights.md
+¦   ¦   wildfire.md
+¦   ¦   write-in campaign.md
+¦   ¦   Your Health Idaho.md
+¦   ¦   YouTube.md
+¦   ¦   
+¦   +---AGRICULTURE
+¦   ¦       agriculture.md
+¦   ¦       cattle.md
+¦   ¦       goats.md
+¦   ¦       hemp.md
+¦   ¦       irrigation.md
+¦   ¦       livestock.md
+¦   ¦       mad cow disease.md
+¦   ¦       Organic Certification Program.md
+¦   ¦       pigs.md
+¦   ¦       ranch.md
+¦   ¦       rangeland.md
+¦   ¦       scrapie.md
+¦   ¦       sheep.md
+¦   ¦       
+¦   +---CONCEPTS
+¦   ¦       anti-mask.md
+¦   ¦       Critical Race Theory.md
+¦   ¦       LGBTQ+ pride.md
+¦   ¦       Redoubt.md
+¦   ¦       right to repair.md
+¦   ¦       unincorporated.md
+¦   ¦       white nationalism.md
+¦   ¦       white nationalist.md
+¦   ¦       white supremacist.md
+¦   ¦       white supremacy.md
+¦   ¦       
+¦   +---ECONOMY
+¦   ¦   ¦   broadband.md
+¦   ¦   ¦   copyright laws.md
+¦   ¦   ¦   copyright.md
+¦   ¦   ¦   economic development.md
+¦   ¦   ¦   hotels.md
+¦   ¦   ¦   independent repair company.md
+¦   ¦   ¦   infrastructure.md
+¦   ¦   ¦   nuclear energy.md
+¦   ¦   ¦   original equipment manufacturer.md
+¦   ¦   ¦   remote work.md
+¦   ¦   ¦   seniors.md
+¦   ¦   ¦   
+¦   ¦   +---LABOR
+¦   ¦   ¦       Average Median Income.md
+¦   ¦   ¦       occupational and professional licensing.md
+¦   ¦   ¦       unemployment insurance.md
+¦   ¦   ¦       unions.md
+¦   ¦   ¦       
+¦   ¦   +---RESIDENTIAL
+¦   ¦           affordable housing.md
+¦   ¦           apartments.md
+¦   ¦           homelessness.md
+¦   ¦           homeowners.md
+¦   ¦           homes.md
+¦   ¦           housing.md
+¦   ¦           real estate agents.md
+¦   ¦           realtors.md
+¦   ¦           
+¦   +---EDUCATION
+¦   ¦   ¦   libraries.md
+¦   ¦   ¦   public schools.md
+¦   ¦   ¦   
+¦   ¦   +---HIGHER EDUCATION
+¦   ¦   ¦       community colleges.md
+¦   ¦   ¦       four-year state colleges.md
+¦   ¦   ¦       Idaho Launch.md
+¦   ¦   ¦       Opportunity Scholarship.md
+¦   ¦   ¦       Pell Grants.md
+¦   ¦   ¦       state colleges.md
+¦   ¦   ¦       WWAMI joint medical education program.md
+¦   ¦   ¦       
+¦   ¦   +---K-12
+¦   ¦           Advanced Opportunities.md
+¦   ¦           average daily attendance.md
+¦   ¦           Career Technical Education.md
+¦   ¦           Common Core.md
+¦   ¦           school board.md
+¦   ¦           school choice.md
+¦   ¦           school facilities.md
+¦   ¦           school superintendents.md
+¦   ¦           sex education.md
+¦   ¦           Smarter Balanced Assessment Consortium.md
+¦   ¦           Social emotional learning.md
+¦   ¦           standardized testing.md
+¦   ¦           STEM.md
+¦   ¦           teacher career salary ladder.md
+¦   ¦           teachers.md
+¦   ¦           
+¦   +---ELECTIONS
+¦   ¦   ¦   ballot initiatives.md
+¦   ¦   ¦   bond elections.md
+¦   ¦   ¦   community colleges.md
+¦   ¦   ¦   Election Day.md
+¦   ¦   ¦   election.md
+¦   ¦   ¦   general election.md
+¦   ¦   ¦   open primaries initiative.md
+¦   ¦   ¦   political action committee.md
+¦   ¦   ¦   political parties.md
+¦   ¦   ¦   precinct committeemen.md
+¦   ¦   ¦   presidential primary.md
+¦   ¦   ¦   primary election.md
+¦   ¦   ¦   redistricting.md
+¦   ¦   ¦   voting precincts.md
+¦   ¦   ¦   voting.md
+¦   ¦   ¦   
+¦   ¦   +---ELECTION YEARS
+¦   ¦           2020 election.md
+¦   ¦           
+¦   +---FISCAL
+¦   ¦   ¦   bonds and levies.md
+¦   ¦   ¦   bonds.md
+¦   ¦   ¦   budget.md
+¦   ¦   ¦   credit rating.md
+¦   ¦   ¦   fiscal year.md
+¦   ¦   ¦   ITN.md
+¦   ¦   ¦   nonprofits.md
+¦   ¦   ¦   PERSI.md
+¦   ¦   ¦   property tax budget.md
+¦   ¦   ¦   RFP.md
+¦   ¦   ¦   sales tax distribution formula.md
+¦   ¦   ¦   settlement funds.md
+¦   ¦   ¦   supplemental levy.md
+¦   ¦   ¦   unclaimed property.md
+¦   ¦   ¦   
+¦   ¦   +---FISCAL YEARS
+¦   ¦           Fiscal Year 2019.md
+¦   ¦           Fiscal Year 2020.md
+¦   ¦           Fiscal Year 2021.md
+¦   ¦           Fiscal Year 2022.md
+¦   ¦           Fiscal Year 2023.md
+¦   ¦           Fiscal Year 2024.md
+¦   ¦           Fiscal Year 2025.md
+¦   ¦           
+¦   +---FUNDS
+¦   ¦       Broadband Fund.md
+¦   ¦       Budget Stabilization Fund.md
+¦   ¦       General Fund.md
+¦   ¦       Millennium Fund.md
+¦   ¦       Permanent Building Fund.md
+¦   ¦       Public Education Stabilization Fund.md
+¦   ¦       Rainy Day Fund.md
+¦   ¦       Tax Relief Fund.md
+¦   ¦       Unemployment Insurance Trust Fund.md
+¦   ¦       Workforce Housing Fund.md
+¦   ¦       
+¦   +---HEALTH
+¦   ¦   ¦   988.md
+¦   ¦   ¦   addiction.md
+¦   ¦   ¦   ambulances.md
+¦   ¦   ¦   emergency care.md
+¦   ¦   ¦   emergency medical services.md
+¦   ¦   ¦   emergency room.md
+¦   ¦   ¦   health care.md
+¦   ¦   ¦   health insurance.md
+¦   ¦   ¦   hospitals.md
+¦   ¦   ¦   Medicaid Expansion.md
+¦   ¦   ¦   Medicaid.md
+¦   ¦   ¦   medical marijuana.md
+¦   ¦   ¦   morphine.md
+¦   ¦   ¦   naloxone.md
+¦   ¦   ¦   Narcan.md
+¦   ¦   ¦   nicotine.md
+¦   ¦   ¦   nurses.md
+¦   ¦   ¦   open enrollment.md
+¦   ¦   ¦   opioid reversal.md
+¦   ¦   ¦   opioids.md
+¦   ¦   ¦   smoking.md
+¦   ¦   ¦   tobacco cessation.md
+¦   ¦   ¦   tobacco.md
+¦   ¦   ¦   vaping.md
+¦   ¦   ¦   
+¦   ¦   +---DISEASES
+¦   ¦           cancer.md
+¦   ¦           coronavirus.md
+¦   ¦           diseases.md
+¦   ¦           spongiform encephalopathies.md
+¦   ¦           
+¦   +---IDLEG
+¦   ¦       administrative rules.md
+¦   ¦       Change in Employee Compensation.md
+¦   ¦       committee chairmen.md
+¦   ¦       Idaho in Session.md
+¦   ¦       legislative session.md
+¦   ¦       lobbying.md
+¦   ¦       lobbyists.md
+¦   ¦       OPE reports.md
+¦   ¦       personal bill.md
+¦   ¦       RS.md
+¦   ¦       sine die.md
+¦   ¦       special session.md
+¦   ¦       sunset clause.md
+¦   ¦       supermajority.md
+¦   ¦       veto letter.md
+¦   ¦       veto.md
+¦   ¦       voice vote.md
+¦   ¦       
+¦   +---INTERNET
+¦   ¦       digital rights management.md
+¦   ¦       Facebook.md
+¦   ¦       facial recognition.md
+¦   ¦       hackers.md
+¦   ¦       Internet.md
+¦   ¦       porn sites.md
+¦   ¦       Twitter.md
+¦   ¦       virtual private networks.md
+¦   ¦       
+¦   +---LEGAL
+¦   ¦       anti-SLAPP.md
+¦   ¦       attorneys.md
+¦   ¦       civil commitments.md
+¦   ¦       commutation.md
+¦   ¦       courthouses.md
+¦   ¦       death row.md
+¦   ¦       fundamental right.md
+¦   ¦       parental custody.md
+¦   ¦       Strategic Lawsuit Against Public Participation.md
+¦   ¦       warrants.md
+¦   ¦       
+¦   +---PUBLIC SAFETY
+¦   ¦       911.md
+¦   ¦       air ambulance.md
+¦   ¦       arrests.md
+¦   ¦       child sexual abuse material.md
+¦   ¦       drug overdoses.md
+¦   ¦       fentanyl.md
+¦   ¦       firefighters.md
+¦   ¦       first responders.md
+¦   ¦       flooding.md
+¦   ¦       inmates.md
+¦   ¦       jails.md
+¦   ¦       law enforcement.md
+¦   ¦       marijuana.md
+¦   ¦       police stations.md
+¦   ¦       protective custody hold.md
+¦   ¦       THC.md
+¦   ¦       
+¦   +---RESOURCES
+¦   ¦   ¦   boat check stations.md
+¦   ¦   ¦   dams.md
+¦   ¦   ¦   electricity.md
+¦   ¦   ¦   fishing.md
+¦   ¦   ¦   Global Positioning System.md
+¦   ¦   ¦   GPS coordinates.md
+¦   ¦   ¦   hunters.md
+¦   ¦   ¦   hunting.md
+¦   ¦   ¦   lakes.md
+¦   ¦   ¦   outfitters and guides.md
+¦   ¦   ¦   ranger districts.md
+¦   ¦   ¦   reservoirs.md
+¦   ¦   ¦   rivers.md
+¦   ¦   ¦   utility.md
+¦   ¦   ¦   water.md
+¦   ¦   ¦   watercraft inspections.md
+¦   ¦   ¦   wetlands.md
+¦   ¦   ¦   
+¦   ¦   +---WILDLIFE
+¦   ¦           animals.md
+¦   ¦           badger.md
+¦   ¦           beaver.md
+¦   ¦           big game species.md
+¦   ¦           bighorn sheep.md
+¦   ¦           birds of prey.md
+¦   ¦           birds.md
+¦   ¦           black bear.md
+¦   ¦           bobcat.md
+¦   ¦           caribou.md
+¦   ¦           chronic wasting disease.md
+¦   ¦           chukar.md
+¦   ¦           coots.md
+¦   ¦           coyote.md
+¦   ¦           crow.md
+¦   ¦           deer.md
+¦   ¦           doves.md
+¦   ¦           ducks.md
+¦   ¦           elk.md
+¦   ¦           ermine.md
+¦   ¦           fish.md
+¦   ¦           fox.md
+¦   ¦           furbearer species.md
+¦   ¦           game species.md
+¦   ¦           geese.md
+¦   ¦           grouse.md
+¦   ¦           invasive species.md
+¦   ¦           invertebrates.md
+¦   ¦           marten.md
+¦   ¦           migratory birds.md
+¦   ¦           mink.md
+¦   ¦           moose.md
+¦   ¦           mountain goat.md
+¦   ¦           mountain lion.md
+¦   ¦           mule deer.md
+¦   ¦           muskrat.md
+¦   ¦           pheasant.md
+¦   ¦           predatory species.md
+¦   ¦           pronghorn.md
+¦   ¦           quagga mussels.md
+¦   ¦           quail.md
+¦   ¦           rabbit.md
+¦   ¦           raccoon.md
+¦   ¦           river otter.md
+¦   ¦           sandhill cranes.md
+¦   ¦           skunk.md
+¦   ¦           snipe.md
+¦   ¦           species.md
+¦   ¦           starling.md
+¦   ¦           trophy species.md
+¦   ¦           turkey.md
+¦   ¦           upland species.md
+¦   ¦           waterfowl species.md
+¦   ¦           weasel.md
+¦   ¦           white-tailed deer.md
+¦   ¦           wolf.md
+¦   ¦           zebra mussels.md
+¦   ¦           
+¦   +---STATE AFFAIRS
+¦   ¦       Add the Words.md
+¦   ¦       age verification.md
+¦   ¦       cannabis.md
+¦   ¦       Fairness in Women’s Sports.md
+¦   ¦       First Amendment.md
+¦   ¦       Human Resources.md
+¦   ¦       indecent materials in schools and libraries.md
+¦   ¦       LGBTQ+ issues.md
+¦   ¦       newspapers.md
+¦   ¦       pornography.md
+¦   ¦       racism.md
+¦   ¦       recreational marijuana.md
+¦   ¦       Second Amendment.md
+¦   ¦       
+¦   +---TAXES
+¦   ¦   ¦   foregone taxes.md
+¦   ¦   ¦   grocery tax.md
+¦   ¦   ¦   local option sales tax.md
+¦   ¦   ¦   online sales tax.md
+¦   ¦   ¦   Property Tax Rebate Program.md
+¦   ¦   ¦   Property Tax Reduction Program.md
+¦   ¦   ¦   property tax.md
+¦   ¦   ¦   sales tax.md
+¦   ¦   ¦   tax credits.md
+¦   ¦   ¦   tax exemptions.md
+¦   ¦   ¦   taxes.md
+¦   ¦   ¦   unemployment insurance tax.md
+¦   ¦   ¦   
+¦   ¦   +---TAXING DISTRICTS
+¦   ¦           ambulance districts.md
+¦   ¦           auditorium districts.md
+¦   ¦           cemetery districts.md
+¦   ¦           community infrastructure districts.md
+¦   ¦           drainage districts.md
+¦   ¦           fire protection districts.md
+¦   ¦           flood districts.md
+¦   ¦           herd districts.md
+¦   ¦           hospital districts.md
+¦   ¦           levee districts.md
+¦   ¦           library districts.md
+¦   ¦           mosquito abatement districts.md
+¦   ¦           pest control districts.md
+¦   ¦           port districts.md
+¦   ¦           recreation districts.md
+¦   ¦           sewer and water districts.md
+¦   ¦           sewer districts.md
+¦   ¦           solid waste districts.md
+¦   ¦           taxing districts.md
+¦   ¦           urban renewal districts.md
+¦   ¦           water districts.md
+¦   ¦           watershed districts.md
+¦   ¦           weather modification districts.md
+¦   ¦           weed control districts.md
+¦   ¦           
+¦   +---TRANSPORTATION
+¦           airport.md
+¦           bridges.md
+¦           car-pooling.md
+¦           helicopter.md
+¦           highway districts.md
+¦           Local Strategic Initiatives Program.md
+¦           roads.md
+¦           State Highway System.md
+¦           state highways.md
+¦           trains.md
+¦           Transportation Expansion and Congestion Mitigation.md
+¦           transportation.md
+¦           U.S. highways.md
+¦           U.S. interstates.md
+¦           
++---X LABELER
+    +---x hey you make sure to link these
+            2014-02-20 - Eye on Boise - Protesters allowed to continue to block entrance, Senate in session.md
+            2016-08-12 - Sandpoint Reader - Anti-abortion protesters disrupt community.md
+            2017-02-12 - Buzzfeed News - Love Lives In Whitefish, Montana, But So Do Neo-Nazis.md
+            2017-10-22 - Buzzfeed News - Here’s What Happens When Republicans Have No One To Fight.md
+            2017-11-03 - Brown Political Review - All Blaine, No Gain.md
+            2018 - Idaho Press Club - The American Redoubt Series by the Sandpoint Reader.md
+            2018-01-04 - Sandpoint Reader - Person of interest in racist CD distribution at SHS also investigated in Virginia for similar actions.md
+            2018-03-24 - KREM - In a small town in N. Idaho, gun rights and gun control activists held competing rallies.md
+            2018-04-12 - Buzzfeed News - These Volunteers Are Battling Idaho’s Government To Expand Medicaid.md
+            2018-04-26 - Buzzfeed News - Could Paulette Jordan Be The First Native American Governor.md
+            2018-05-24 - Spokesman-Review - Man responsible for racist propaganda in Sandpoint now targeting Sen. Feinstein.md
+            2018-09-23 - Spokesman-Review - Blocking robocalls – even racist ones – is a giant, complicated challenge, experts say.md
+            2018-09-28 - The Guardian - Neo-Nazi activist behind racist robocalls linked to threats of Idaho newspaper.md
+            2019-09-12 - Sandpoint Reader - Sound and fury.md
+            2019-10-17 - Shoshone Co. hopeful $22M bond will fix aging, overcrowded jail.md
+            2019-11-22 - Buzzfeed News - THE  FIGHT TO BEAR ARMS.md
+            2019-11-30 - Idaho Press - Lawmakers dubious as local-option proposals resurface.md
+            2020-01-30 - Sandpoint Reader - Boiling point reached in gun case.md
+            2020-03-31 - Buzzfeed - This Pandemic Is Not Your Vacation.md
+            2020-04-11 - Buzzfeed - The People In Idaho’s Coronavirus Epicenter Have A Message For The Rest Of Us.md
+            2020-04-22 - Buzzfeed - There's More To Know About The Video Of A Mother Arrested On A Playground For Violating Stay-At-Home Orders.md
+            2020-05-14 - Sandpoint Reader - Three N. Idahoans front suit challenging constitutionality of COVID-19 restrictions.md
+            2020-06-09 - Buzzfeed - How The Antifa Fantasy Spread In Small Towns Across The US.md
+            2021-04-28 - Sandpoint Reader - Judge hears cross motions in second Festival gun suit.md
+            2021-09-22 - Idaho Mountain Express - The housing crisis is a health care issue, too.md
+            2022-03-23- Idaho Capital Sun - McGeachin casts tie-breaking vote to pass medical school tuition payback bill.md
+            2022-03-31 - Idaho Education News - Schools hesitant to join Idaho’s health insurance plan with incoming funding boost.md
+            2022-07-13 - Idaho Capital Sun - McGeachin OKs 85% pay increase for politically connected former part-time assistant.md
+            2023-03-03 - Idaho State Journal - Beware of Reading Time With the Queens.md
+            2023-03-23 - IR - Porn filter bill narrowly rejected by Senate.md
+            2023-05-10 - Lewiston Tribune - In Idaho County, unconnected or unfriendly residents can make sizing up properties difficult.md
+            2023-06-16 - Idaho Capital Sun - Half the nation’s wetlands just lost federal protection. Their fate is up to states..md
+            2023-06-26 - Idaho Reports - Idaho Republicans establish March presidential caucus, tighten ranks during summer meeting.md
+            2023-06-29 - Sandpoint Reader - ID Supreme Court affirms Festival’s right to ban guns at War Memorial Field.md
+            2023-07-07 - IR - Parties prep for presidential caucus; special session not likely.md
+            2023-07-22 - Post Register - AN UNCIVIL WAR - Damond Watkins says his resignation from state RNC role was coerced.md
+            2023-07-31 - Post Register - Bryan Smith elected as Idaho GOP National Committeeman.md
+            2023-08-01 - Idaho Capital Sun - Former Idaho congressional candidate named to GOP national committee.md
+            2023-08-13 - Sandpoint Reader - Woodward will seek Dist. 1 Senate seat.md
+            2023-08-28 - Idaho Statesman - ‘Dangerous trend’; Idaho Republicans push back at party censures over ‘extreme policies’.md
+            2023-09-06 - Idaho Statesman & ProPublica - Idaho created a $25 million fund to fix unsafe schools; Why is nobody using it.md
+            2023-09-23 - Idaho Reports - Update; Idaho GOP not hearing Bingham County appeal on Saturday.md
+            2023-10-13 - Shoshone News-Press - Shoshone County loses jail certification.md
+            2023-10-28 - CDA Press - Early voting sees disturbances near elections office.md
+            2023-10-30 - KXLY - 'It felt reckless'; Kootenai County Elections Office sees trouble before Election Day.md
+            2023-11-08 - BoiseDev - Bond to expand Ada County jail fails.md
+            2023-11-22 - Idaho Statesman - Ada County commissioners say hospitals get too many tax exemptions. They propose this.md
+            2023-11-27 - Idaho Capital Sun - City of Pocatello honors drag reading group with Human and Civil Rights Award.md
+            2023-11-27 - Idaho Statesman - After jail bond fails, Ada County leaders ask for help from the Idaho Legislature.md
+            2023-11-30 — Associated Press — Leaked document says US is willing to build energy projects in case Snake River dams are breached.md
+            2023-11-30 — Feds consider removing Snake River dams in leaked agreement with plaintiffs in lawsuit.md
+            2023-12-01 — Idaho Reports — Lawsuit over Idaho’s public defense system back in court.md
+            2023-12-04 - Idaho Education News - Did new school facilities funding lower property taxes; It depends.md
+            2023-12-04 — Associated Press — Recordings show how the Mormon church protects itself from child sex abuse claims.md
+            2023-12-04 — Post Register — All six Idaho Falls legislators now under 'investigation' by GOP Legislative District Committees.md
+            2023-12-04 — Post Register — Jeremy Best charged with two counts first-degree murder.md
+            2023-12-05 - Idaho Press - Meridian opens fire station, first police precinct.md
+            2023-12-05 — Idaho Reports — Idaho law prohibits hospitals from detaining a person without cause.md
+            2023-12-06 - BoiseDev - New commissioners take over Valley County EMS District.md
+            2023-12-06 — Idaho Reports — Idaho Supreme Court hears arguments on rulemaking dispute.md
+            2023-12-06 — IR Podcast — Measuring Mercury in Snake River Smallmouth.md
+            2023-12-08 - Idaho Capital Sun ‘It jeopardizes everything’; Canada coal mines a concern for Kootenai Tribe, Idaho conservation.md
+            2023-12-08 - Idaho Education News - Four teachers punished for violating Idaho’s Code of Ethics.md
+            2023-12-08 - Idaho Statesman - Idaho sought Amtrak return for a Boise-Salt Lake City rail line. What the feds decided.md
+            2023-12-09 - CDA Press - Assessor pins $53 million error on other county officials.md
+            2023-12-11 - Hechinger Report - The (mostly) Republican moms fighting to reclaim their Idaho school district from conservatives.md
+            2023-12-12 - IR - State poised to switch insurance provider for state employees.md
+            2023-12-13 - CDA Press - Assessor withdraws massive public records request.md
+            2023-12-13 - Idaho Education News - A divided State Board passes CWI, CEI bachelor’s programs.md
+            2023-12-14 - Idaho Capital Sun - Three Idaho Republican women launch organization to preserve access to contraceptives.md
+            2023-12-14 - Idaho Statesman & ProPublica - Idaho Republicans are discussing a proposal that would make it easier to repair schools.md
+            2023-12-15 - Idaho Statesman & ProPublica - Help the Idaho Statesman and ProPublica report on deteriorating public schools.md
+            2023-12-15 - Idaho Statesman & ProPublica - Leaking roofs, collapsing pipes, freezing classrooms; How did Idaho schools get here.md
+            2023-12-15 - Idaho Statesman & ProPublica - Students and educators show us what it’s like when Idaho fails to fund school repairs.md
+            2023-12-15 - Idaho Statesman & ProPublica- Idaho hasn’t assessed school buildings for 30 years; Students and educators helped us do it.md
+            2023-12-15 - Idaho Statesman Opinion - Idaho’s shame; Failure to maintain school buildings that are in deplorable condition.md
+            2023-12-18 - BoiseDev - Ada County looking to run jail bond again, timeline TBD.md
+            2023-12-18 - Idaho Capital Sun - Idaho to distribute opioid overdose reversal drug.md
+            2023-12-18 - Idaho Education News - Little touts results of outside Empowering Parents audit.md
+            2023-12-19 - Idaho Education News - After a dozen failures, Salmon trustees vote to float another bond.md
+            2023-12-19 - Idaho Statesman - Who are the state’s top employers; See this list.md
+            2024-01-04 - MOON - Turning to a Convention of States in Times of National Crisis is Not the Answer.md
+            2024-01-05 - Labor - Idaho’s 2023 population growth outpaces the nation.md
+            2024-01-09 - IR - JFAC to use new budget process in 2024.md
+            2024-01-10 - Idaho Freedom Caucus - Response to State of the State.md
+            2024-01-19 - IR - Idahoans weigh fentanyl mandatory minimum sentences.md
+            2024-01-22 - IR - Bill would move electioneering boundary to 250 feet.md
+            2024-01-22 - IR - Bills printed to limit Medicaid Expansion, expand physician training.md
+            2024-02-02 - Idaho Education News - The election money race; an early Top 10 list.md
+            2024-05-20 - Idaho Education News - Who’s spending in Tuesday’s election; A guide to some key players.md
+            2024-05-21 - BoiseDev - AG Labrador files brief in Hawkins’ ITD suit without sign-off from fellow state leaders.md
+            2024-05-23 - Idaho Press - Governor seeks outside lawyer in ITD lawsuit.md
+            2024-05-24 - BoiseDev - New outside lawyers replace Labrador on ITD campus case, make change in legal argument.md
+            2024-05-25 - Associated Press - Idaho drag performer awarded $1.1 million in defamation case against far-right blogger.md
+            2024-11-08 - Idaho Press - Idaho State approved to expand Meridian campus.md
+            2024-11-12 - Idaho Ed News - ‘Everything is on the table’ Idaho State looks at the practicality of buying a medical school.md
+            2024-11-26 - KIVI - Idaho House Speaker defends court's decision on ITD State Street building.md
+            2025-01-22 - Cache Valley Daily - Oxford City, with its rich history, disincorporated in December.md
+            2025-06-09 - Valley Lookout - Citizen group seeks to file complaint about taxpayer subsidies to St. Luke’s McCall.md
+            2025-06-10 - KREM - Latah County Jail transitioning to court holding, booking facility for potential jail renovations.md
+            Article 2020-02-20 Idaho House mulls tax freeze and more.md
+            Article 2020-02-21 4-H students gather for government conference.md
+            Article 2020-03-03 Legislature aims to refine initiative process.md
+            Article 2020-03-13 Statehouse roundup; March Madness.md
+            Article 2020-03-30 Tax relief funds directed to COVID-19 response.md
+            Article 2020-04-03 Governor Little processes final legislation.md
+            Article 2022-05-12 Most Idaho lawmakers seek reelection, but face challengers along the way.md
+            Article 2022-05-19 A mix of fresh and familiar; most legislative incumbents survived, but most of the party nominees are new.md
+            Article 2022-06-13 Idaho Supreme Court weighs who has final say on commutation.md
+            Article 2022-06-14 White nationalists from 12 states arrested in Coeur d’Alene.md
+            Article 2022-11-10 2022 ANALYSIS; Nature abhors a power vacuum.md
+            Article 2023-09-21 Idaho GOP not hearing Bingham County appeal on Saturday (updated).md
+            BoiseDev 2023-11-27 Ada County GOP finances under audit following complaint to state party, abrupt resignation of central committee leadership.md
+            East Idaho News 2023-02-13 Local drag queen reading time attracts a packed house — but those in attendance weren’t fans.md
+            East Idaho News 2023-10-12 Judge sides with Bingham County Republicans in ongoing legal battle.md
+            East Idaho News 2023-11-03 New canal pipeline provides new access to water and helps aquifer recharge.md
+            FIRE 2021-08-05 Idaho education task force may threaten academic freedom.md
+            Idaho Capital Sun 2021-10-06 A look inside Idaho’s unredacted McGeachin task force files.md
+            Idaho Capital Sun 2022-06-30 People’s Pen publication under investigation by Idaho AG for alleged sunshine law violation.md
+            Idaho Capital Sun 2022-10-14 No action on election-related publication, Idaho Secretary of State decides.md
+            Idaho Capital Sun 2023-03-24 Idaho House introduces late-session medical cannabis bill.md
+            Idaho Capital Sun 2023-05-02 New coalition seeks to end Idaho's closed primary elections.md
+            Idaho Capital Sun 2023-06-28 What happened to the Idaho Health Data Exchange, and can other states learn from it.md
+            Idaho Capital Sun 2023-11-06 Idaho built few accountability measures into Health Data Exchange, watchdog report finds.md
+            Idaho Education News 2020-01-15 Majority of educators support English standards during packed Common Core hearing.md
+            Idaho Education News 2021-05-20 Education indoctrination task force members; updated list and bios.md
+            Idaho Education News 2021-05-21 Conservative lawmaker announces run for lieutenant governor.md
+            Idaho Education News 2021-05-27 Indoctrination task force talks social justice, stirs dissent in first meeting.md
+            Idaho Education News 2021-06-04 ISBA rep leaves indoctrination task force, decrying ‘partisan campaigning’.md
+            Idaho Education News 2021-06-14 McGeachin names indoctrination task force replacement.md
+            Idaho Education News 2021-06-24 Indoctrination task force took aim at alleged indoctrination in K-12 schools.md
+            Idaho Education News 2021-08-26 Indoctrination task force calls on Legislature to make slew of changes.md
+            Idaho Reports 2022-11-08 2022 RESULTS; Competitive Idaho legislative seats.md
+            Idaho State Journal 2023-02-17 Members of local Christian congregations hold sit-in protest against Pocatello drag queen reading program.md
+            

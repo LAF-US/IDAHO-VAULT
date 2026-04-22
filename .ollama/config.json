@@ -1,0 +1,29 @@
+{
+  "integrations": {
+    "claude": {
+      "models": [
+        "kimi-k2.5:cloud"
+      ]
+    },
+    "codex": {
+      "models": [
+        "kimi-k2.5:cloud"
+      ]
+    },
+    "openclaw": {
+      "models": [
+        "mistral:7b-instruct-q4_K_M",
+        "mistral",
+        "kimi-k2.5:cloud"
+      ]
+    },
+    "pi": {
+      "models": [
+        "kimi-k2.5:cloud",
+        "mistral"
+      ]
+    }
+  },
+  "last_model": "kimi-k2.5:cloud",
+  "last_selection": "openclaw"
+}

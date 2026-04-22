@@ -1,0 +1,35 @@
+{
+  "name": "slack_send_message",
+  "description": "Sends a message to a Slack channel or user. To DM a user, use their user_id as channel_id. If the user wants to send a message to themselves, the current logged in user's user_id is U0ALJEJMJM9. Return the message link to the user.\n\nMessage uses standard markdown (**bold**, _italic_, `code`, ~strikethrough~, lists, links, code blocks). Limited to 5000 chars per text element. Do not include sensitive info in link query params. Cannot post to externally shared (Slack Connect) channels.\n\nThread replies: set thread_ts to parent message timestamp, reply_broadcast=true to also post to channel.\n\nUse slack_search_channels to find channel IDs, slack_search_users to find user IDs.\nIf user has not reviewed the message, use slack_send_message_draft instead.\n",
+  "arguments": {
+    "type": "object",
+    "properties": {
+      "channel_id": {
+        "type": "string",
+        "description": "ID of the Channel"
+      },
+      "message": {
+        "type": "string",
+        "description": "Add a message"
+      },
+      "thread_ts": {
+        "type": "string",
+        "description": "Provide another message's ts value to make this message a reply"
+      },
+      "reply_broadcast": {
+        "type": "boolean",
+        "description": "Also send to conversation"
+      },
+      "draft_id": {
+        "type": "string",
+        "description": "ID of the draft to delete after sending"
+      }
+    },
+    "required": [
+      "channel_id",
+      "message"
+    ]
+  },
+  "plugin": "slack",
+  "marketplace": "claude-plugins-official"
+}

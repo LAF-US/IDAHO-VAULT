@@ -1,0 +1,54 @@
+{
+  "name": "nimble_crawl_list",
+  "description": "List crawl jobs, optionally filtered by status.\n\nArgs:\n    status: Optional filter by crawl status:\n        - \"queued\": Waiting to start\n        - \"running\": Currently in progress\n        - \"succeeded\": Completed successfully\n        - \"failed\": Completed with errors\n        - \"canceled\": Manually terminated\n        - \"all\": Show all statuses (default if not specified)\n\n    limit: Maximum number of crawl jobs to return (default: 20).\n\n    tool_reasoning: Optional reasoning about why this tool was selected.\n    tool_description: Optional description of the tool's purpose.\n\nReturns:\n    dict: List of crawl jobs with their status and metadata.",
+  "arguments": {
+    "type": "object",
+    "properties": {
+      "status": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Status"
+      },
+      "limit": {
+        "default": 20,
+        "title": "Limit",
+        "type": "integer"
+      },
+      "tool_reasoning": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Tool Reasoning"
+      },
+      "tool_description": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Tool Description"
+      }
+    }
+  },
+  "outputSchema": {
+    "type": "object",
+    "additionalProperties": true
+  }
+}

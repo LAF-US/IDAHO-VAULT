@@ -1,0 +1,77 @@
+{
+  "name": "nimble_agents_list",
+  "description": "Browse the catalog of pre-built Nimble agents.\n\nUse this tool as the first step to find an existing agent for a data collection task.\nEach agent is purpose-built for a specific website or data type (e.g. Amazon products,\nLinkedIn profiles, Google Maps reviews).\n\nTypical workflow: list → get (inspect details) → run (collect data).\n\nArgs:\n    skip: Offset for pagination. Use 0 for the first page.\n    limit: Maximum number of agents to return (1-100).\n    query: Short keyword filter (e.g. 'amazon', 'reviews'). Use 1-2 words.\n\nReturns:\n    Paginated list of agents with name, description, and pagination metadata.",
+  "arguments": {
+    "type": "object",
+    "properties": {
+      "skip": {
+        "default": 0,
+        "description": "Offset for pagination. Use 0 for the first page.",
+        "title": "Skip",
+        "type": "integer"
+      },
+      "limit": {
+        "default": 50,
+        "description": "Maximum number of agents to return in one page (1-100).",
+        "title": "Limit",
+        "type": "integer"
+      },
+      "query": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Short keyword to filter agents by name or domain (e.g. 'amazon', 'linkedin'). Use 1-2 words for best results.",
+        "title": "Query"
+      }
+    }
+  },
+  "outputSchema": {
+    "type": "object",
+    "properties": {
+      "agents": {
+        "description": "List of agent objects, each containing name, description, and configuration",
+        "items": {
+          "additionalProperties": true,
+          "type": "object"
+        },
+        "title": "Agents",
+        "type": "array"
+      },
+      "skip": {
+        "description": "Offset used for this page",
+        "title": "Skip",
+        "type": "integer"
+      },
+      "limit": {
+        "description": "Limit used for this page",
+        "title": "Limit",
+        "type": "integer"
+      },
+      "curr_count": {
+        "description": "Count of agents in the current page",
+        "title": "Curr Count",
+        "type": "integer"
+      },
+      "count": {
+        "description": "Total count of available agents",
+        "title": "Count",
+        "type": "integer"
+      }
+    },
+    "required": [
+      "agents",
+      "skip",
+      "limit",
+      "curr_count",
+      "count"
+    ],
+    "description": "Paginated list of raw agent/template payloads.",
+    "title": "PaginatedAgentList"
+  }
+}
