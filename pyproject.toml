@@ -1,0 +1,36 @@
+[project]
+name = "idaho-vault"
+version = "0.1.0"
+description = "CrewAI deployment-validation shard for IDAHO-VAULT"
+authors = [{ name = "Logan Finney" }]
+requires-python = ">=3.10,<3.14"
+dependencies = [
+    "crewai[tools,anthropic]>=1.14.1",
+    "pydantic",
+]
+
+[project.scripts]
+idaho_vault = "idaho_vault.main:run"
+run_crew = "idaho_vault.main:run"
+train = "idaho_vault.main:train"
+replay = "idaho_vault.main:replay"
+test = "idaho_vault.main:test"
+run_with_trigger = "idaho_vault.main:run_with_trigger"
+five_wizards_threshold = "idaho_vault.main:run_five_wizards_threshold"
+civic_scaffold = "idaho_vault.main:run_civic_scaffold"
+metadata_survey = "idaho_vault.main:run_metadata_survey"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/idaho_vault"]
+
+[tool.uv]
+cache-dir = ".uv-cache"
+python-downloads = "manual"
+python-preference = "system"
+
+[tool.crewai]
+type = "crew"
