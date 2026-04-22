@@ -18,6 +18,7 @@ venv/
 .pycache/
 .agent-home/
 .codex/home/
+!.python/
 
 # CrewAI
 .crewai_cache/
@@ -257,3 +258,6 @@ data-backup*
 **/tool-results/
 **/shared_proto_db/
 .pi/agent/sessions/
+
+# SBP pheromone blackboard (runtime state)
+!/sbp-blackboard.json
