@@ -226,6 +226,12 @@ tempfolder.txt
 .claude/.credentials.json
 .codex/auth.json
 
+# Backup files and bundles (local machine artifacts)
+*.bundle
+.claude/backups/
+*-backup*.json
+data-backup*
+
 # AI/tool runtime caches and local auth state (never commit)
 .antigravity/
 .gemini/
