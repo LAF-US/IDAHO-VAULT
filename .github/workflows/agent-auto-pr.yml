@@ -148,8 +148,8 @@ EOF
             CREATE_ARGS+=(--label "$LABEL")
           fi
 
-          PR_URL=$(gh pr create "${CREATE_ARGS[@]}" 2>&1 || true)
-
+          PR_URL=$(gh pr create "${CREATE_ARGS[@]}")
+          echo "pr_url=$PR_URL" >> "$GITHUB_OUTPUT"
           echo "Created PR: $PR_URL"
 
       - name: Mark PR lifecycle as staged
