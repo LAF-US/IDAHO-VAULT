@@ -237,6 +237,10 @@ data-backup*
 .gemini/
 .openclaw/
 .claude/projects/
+.copilot/session-state/
+.cursor/projects/
+.factory/auth.v2.*
+.pi/agent/auth.json
 .claude/plugins/cache/
 .cursor/plugins/cache/
 .factory/plugins/marketplaces/
