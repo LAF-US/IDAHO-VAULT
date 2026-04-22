@@ -1,6 +1,6 @@
 @echo off
 REM Phone Link Intake — run from vault root
-REM Moves files from Phone Link downloads into INBOX/phone-link/
+REM Moves files from Phone Link downloads into the vault root.
 REM
 REM Usage:
 REM   phone-link-intake.bat              (normal run)
@@ -16,5 +16,5 @@ if %ERRORLEVEL% NEQ 0 (
     exit /b 1
 )
 echo.
-echo Done. Review INBOX/phone-link/ for ingested files.
+echo Done. Review the vault root for ingested files.
 pause
