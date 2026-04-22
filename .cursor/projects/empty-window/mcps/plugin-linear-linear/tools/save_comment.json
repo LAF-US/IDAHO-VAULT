@@ -1,0 +1,29 @@
+{
+  "name": "save_comment",
+  "description": "Create or update a comment on a Linear issue. If `id` is provided, updates the existing comment; otherwise creates a new one. When creating, `issueId` and `body` are required.",
+  "arguments": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "description": "Comment ID. If provided, updates the existing comment",
+        "type": "string"
+      },
+      "issueId": {
+        "description": "Issue ID or identifier (e.g., LIN-123) (required when creating)",
+        "type": "string"
+      },
+      "parentId": {
+        "description": "Parent comment ID (for replies, only when creating)",
+        "type": "string"
+      },
+      "body": {
+        "type": "string",
+        "description": "Content as Markdown. Do not escape the string — use literal newlines and special characters, not escape sequences"
+      }
+    },
+    "required": [
+      "body"
+    ],
+    "$schema": "http://json-schema.org/draft-07/schema#"
+  }
+}

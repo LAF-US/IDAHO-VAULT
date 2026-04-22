@@ -17,6 +17,7 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import fnmatch
 import json
 import re
 from collections import Counter, defaultdict
@@ -53,6 +54,7 @@ SKIP_DIRS = {
     "node_modules",
 }
 SKIP_GLOBS = (
+    "_tmp*",
     "pytest-cache-files-*",
     "tmp*",
 )
@@ -63,6 +65,10 @@ class FrontmatterResult:
     state: str
     data: dict[str, Any] | None
     error: str | None = None
+
+
+def _matches_skip_glob(name: str) -> bool:
+    return any(fnmatch.fnmatchcase(name, pattern) for pattern in SKIP_GLOBS)
 
 
 def _should_skip_dir(path: Path, root: Path, include_private: bool) -> bool:
@@ -81,23 +87,27 @@ def _should_skip_dir(path: Path, root: Path, include_private: bool) -> bool:
         return True
     if first == ".obsidian" and len(rel_parts) > 1 and rel_parts[1] == "plugins":
         return True
-    return any(path.name.startswith(pattern[:-1]) for pattern in SKIP_GLOBS if pattern.endswith("*"))
+    return any(_matches_skip_glob(part) for part in rel_parts)
 
 
 def iter_markdown_files(root: Path, include_private: bool = False) -> list[Path]:
     results: list[Path] = []
     for path in root.rglob("*.md"):
-        if any(_should_skip_dir(parent, root, include_private) for parent in [path.parent]):
+        if _should_skip_dir(path.parent, root, include_private):
             continue
-        if any(part in SKIP_DIRS for part in path.parts):
+        try:
+            rel_parts = path.relative_to(root).parts
+        except ValueError:
             continue
-        if any(part == "_private" for part in path.parts) and not include_private:
+        if any(part in SKIP_DIRS for part in rel_parts):
             continue
-        if ".obsidian" in path.parts:
-            obsidian_index = path.parts.index(".obsidian")
-            if len(path.parts) > obsidian_index + 1 and path.parts[obsidian_index + 1] == "plugins":
+        if any(part == "_private" for part in rel_parts) and not include_private:
+            continue
+        if ".obsidian" in rel_parts:
+            obsidian_index = rel_parts.index(".obsidian")
+            if len(rel_parts) > obsidian_index + 1 and rel_parts[obsidian_index + 1] == "plugins":
                 continue
-        if any(re.fullmatch(pattern.replace("*", ".*"), path.parts[0]) for pattern in SKIP_GLOBS):
+        if any(_matches_skip_glob(part) for part in rel_parts):
             continue
         results.append(path)
     return sorted(results)

@@ -1,0 +1,124 @@
+{
+  "mcpServers": {
+    "cloudrun": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@google-cloud/cloud-run-mcp"
+      ]
+    },
+    "chrome-devtools-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "chrome-devtools-mcp@latest"
+      ],
+      "disabled": true
+    },
+    "google-developer-knowledge": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://developerknowledge.googleapis.com/mcp",
+        "--header",
+        "X-Goog-Api-Key: AQ.Ab8RN6JU0fLjdHR92YqYVvF1Tzeo_QQPOV8Zloe3FCI2K3aUKw"
+      ]
+    },
+    "gmp-code-assist": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@googlemaps/code-assist-mcp@latest"
+      ],
+      "env": {
+        "SOURCE": "antigravity"
+      }
+    },
+    "sequential-thinking": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking"
+      ]
+    },
+    "atlassian-mcp-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://mcp.atlassian.com/v1/sse"
+      ]
+    },
+    "linear-mcp-server": {
+      "$typeName": "exa.cascade_plugins_pb.CascadePluginCommandTemplate",
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://mcp.linear.app/sse"
+      ],
+      "env": {}
+    },
+    "github-mcp-server": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "-e",
+        "GITHUB_PERSONAL_ACCESS_TOKEN",
+        "ghcr.io/github/github-mcp-server"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "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"
+      }
+    },
+    "firebase-mcp-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "firebase-tools@latest",
+        "mcp"
+      ]
+    },
+    "gke-oss": {
+      "command": "go",
+      "args": [
+        "run",
+        "github.com/GoogleCloudPlatform/gke-mcp@latest"
+      ]
+    },
+    "bigquery": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@toolbox-sdk/server@>=0.26.0",
+        "--prebuilt",
+        "bigquery",
+        "--stdio",
+        "--user-agent-metadata",
+        "antigravity"
+      ],
+      "env": {
+        "BIGQUERY_LOCATION": "US",
+        "BIGQUERY_PROJECT": "idaho-vault"
+      }
+    },
+    "dataplex": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@toolbox-sdk/server@>=0.26.0",
+        "--prebuilt",
+        "dataplex",
+        "--stdio",
+        "--user-agent-metadata",
+        "antigravity"
+      ],
+      "env": {
+        "DATAPLEX_PROJECT": "idaho-vault"
+      }
+    }
+  }
+}

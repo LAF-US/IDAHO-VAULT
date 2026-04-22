@@ -1,0 +1,184 @@
+{
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "ollama/mistral:7b-instruct-q4_K_M"
+      },
+      "workspace": "C:\\Users\\loganf\\.openclaw\\workspace"
+    }
+  },
+  "channels": {
+    "whatsapp": {
+      "enabled": true
+    },
+    "signal": {
+      "enabled": true,
+      "number": {
+        "$secretRef": {
+          "provider": "1password",
+          "id": "OpenClaw Signal Account",
+          "field": "number"
+        }
+      },
+      "cliPath": "signal-cli",
+      "dataPath": "C:\\Users\\loganf\\.openclaw\\credentials\\signal"
+    },
+    "discord": {
+      "enabled": true,
+      "token": {
+        "$secretRef": {
+          "provider": "1password",
+          "id": "OpenClaw Discord Bot",
+          "field": "token"
+        }
+      },
+      "applicationId": {
+        "$secretRef": {
+          "provider": "1password",
+          "id": "OpenClaw Discord Bot",
+          "field": "applicationId"
+        }
+      }
+    }
+  },
+  "gateway": {
+    "auth": {
+      "mode": "token",
+      "token": {
+        "$secretRef": {
+          "provider": "1password",
+          "id": "OpenClaw Gateway Token",
+          "field": "token"
+        }
+      }
+    },
+    "bind": "loopback",
+    "mode": "local",
+    "port": 18789,
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    }
+  },
+  "meta": {
+    "lastTouchedAt": "2026-04-20T20:48:00.000Z",
+    "lastTouchedVersion": "2026.4.15",
+    "signalConfigured": true
+  },
+  "models": {
+    "mode": "merge",
+    "providers": {
+      "ollama": {
+        "api": "ollama",
+        "apiKey": "ollama-local",
+        "baseUrl": "http://127.0.0.1:11434",
+        "models": [
+          {
+            "contextWindow": 32768,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "mistral:7b-instruct-q4_K_M",
+            "input": [
+              "text"
+            ],
+            "name": "mistral:7b-instruct-q4_K_M"
+          },
+          {
+            "contextWindow": 32768,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "mistral",
+            "input": [
+              "text"
+            ],
+            "name": "mistral"
+          },
+          {
+            "contextWindow": 4096,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "openrouter/model_name:version",
+            "input": [
+              "text"
+            ],
+            "name": "OpenRouter API Gateway",
+            "provider": "OpenRouter",
+            "description": "A gateway to multiple LLM providers via OpenRouter API key. Requires 'OpenRouter API Key' secret."
+          }
+        ]
+      }
+    }
+  },
+  "plugins": {
+    "allow": [
+      "openclaw-web-search",
+      "whatsapp",
+      "discord",
+      "ollama",
+      "memory-core"
+    ],
+    "entries": {
+      "ollama": {
+        "enabled": true
+      },
+      "openclaw-web-search": {
+        "enabled": true
+      }
+    },
+    "installs": {
+      "openclaw-web-search": {
+        "installPath": "C:\\Users\\loganf\\.openclaw\\extensions\\openclaw-web-search",
+        "source": "npm",
+        "spec": "@ollama/openclaw-web-search"
+      }
+    }
+  },
+  "session": {
+    "dmScope": "per-channel-peer"
+  },
+  "tools": {
+    "alsoAllow": [
+      "ollama_web_search",
+      "ollama_web_fetch"
+    ],
+    "profile": "coding",
+    "web": {
+      "fetch": {
+        "enabled": false
+      },
+      "search": {
+        "enabled": false
+      }
+    }
+  },
+  "secrets": {
+    "providers": {
+      "1password": {
+        "enabled": true,
+        "source": "exec",
+        "command": "op",
+        "args": ["item", "get", "--field", "password"],
+        "description": "The 1Password CLI provider, used for all secure credential retrieval."
+      }
+    },
+    "defaultProvider": "1password"
+  },
+  "wizard": {
+    "lastRunAt": "2026-04-19T23:32:22.752Z",
+    "lastRunCommand": "onboard",
+    "lastRunMode": "local",
+    "lastRunVersion": "2026.4.15"
+  }
+}

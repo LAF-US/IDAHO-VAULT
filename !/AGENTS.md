@@ -14,10 +14,12 @@
 
 ## Authority Chain
 
-1. `AGENTS.md` (root) -> Cross-tool pointer
-2. `!/WAKEUP.md` -> Explicit wakeup and conflict-resolution surface
-3. `!/README.md` -> Explicit startup and task-based orientation suite
-4. `!/AGENTS.md` (this file) -> Canonical Narrative Registry
+---
+
+1. `start_SPARKSEED.sh` (root) -> **Foundational Bootstrapping Protocol**. This script must be the first command executed.
+2. Root `AGENTS.md` (root) -> Cross-tool pointer
+3. `!/WAKEUP.md` -> Explicit wakeup and conflict-resolution surface
+4. `!/README.md` -> Explicit startup and task-based orientation suite
 5. `CONSTITUTION.md` (root) -> Binding governance
 6. `swarm.json` (root) -> Machine-readable source of truth
 7. `!/agents.json` -> Canonical generated bootstrap index

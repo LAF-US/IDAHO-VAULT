@@ -5,6 +5,7 @@ import shutil
 import sys
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 SRC_ROOT = PROJECT_ROOT / "src"
@@ -14,6 +15,7 @@ if str(SRC_ROOT) not in sys.path:
 from idaho_vault.operator_context import (
     BOOT_CHAIN_SURFACES,
     OPERATOR_FRONT_DOOR_SURFACES,
+    _tracked_files,
     evaluate_evidence_refs,
     load_operator_context,
 )
@@ -99,6 +101,10 @@ class OperatorContextTest(unittest.TestCase):
         self.assertFalse(statuses[0].tracked)
         self.assertFalse(statuses[1].exists)
         self.assertTrue(statuses[1].tracked)
+
+    def test_tracked_files_returns_none_when_git_is_unavailable(self) -> None:
+        with patch("idaho_vault.operator_context.subprocess.run", side_effect=FileNotFoundError):
+            self.assertIsNone(_tracked_files(PROJECT_ROOT))
 
 
 if __name__ == "__main__":

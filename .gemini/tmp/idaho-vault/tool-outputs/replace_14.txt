@@ -1,0 +1,14 @@
+Successfully modified file: C:\Users\loganf\Documents\IDAHO-VAULT\LEVELSET-CURRENT.md (1 replacements). Here is the updated code:
+...
+**Active / in progress:**
+- CHAINFIRE execution — awaiting New Order tag schema before burn
+- Crawler-Linker Crew Phase 2 — model decision pending
+- Breadcrumbs configuration — which frontmatter fields it reads
+- Stop list creation — `!/VAULT-STOP-LIST.md`
+
+- Book of Claudius / Book of Codices — unbound
+
+**Blocked / Logan-gated:**
+- Anthropic API credits — HARD GATE for JFAC E2E and all CrewAI runs
+- Phase 2 repo rewrite — 37 GiB `.git/`, needs branch protection off
+...

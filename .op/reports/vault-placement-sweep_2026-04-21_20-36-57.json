@@ -1,0 +1,1259 @@
+{
+    "generated_at":  "2026-04-21T20:36:57",
+    "apply":  false,
+    "include_low_confidence":  false,
+    "apply_threshold":  "high",
+    "candidates":  [
+                       {
+                           "id":  "7n62r3gmqye5ycfdhte7oddusa",
+                           "current_vault":  "Personal",
+                           "target_vault":  "Vault",
+                           "confidence":  "high",
+                           "category":  "API_CREDENTIAL",
+                           "title":  "CoinbaseAPI",
+                           "username":  "API Key",
+                           "host":  "",
+                           "hints":  [
+                                         "coinbase"
+                                     ],
+                           "reasons":  [
+                                           "API credentials and SSH keys are managed centrally in Vault."
+                                       ]
+                       },
+                       {
+                           "id":  "u2ia55zbz52fmbswmhbt3xwnxy",
+                           "current_vault":  "Personal",
+                           "target_vault":  "Vault",
+                           "confidence":  "high",
+                           "category":  "API_CREDENTIAL",
+                           "title":  "Discord OpenClaw",
+                           "username":  "API Key",
+                           "host":  "",
+                           "hints":  [
+                                         "discord"
+                                     ],
+                           "reasons":  [
+                                           "API credentials and SSH keys are managed centrally in Vault."
+                                       ]
+                       },
+                       {
+                           "id":  "hfsluivlxiceatbkb4qllqx26a",
+                           "current_vault":  "Personal",
+                           "target_vault":  "Vault",
+                           "confidence":  "high",
+                           "category":  "API_CREDENTIAL",
+                           "title":  "OpenRouter API Key",
+                           "username":  "",
+                           "host":  "",
+                           "hints":  [
+                                         "openrouter"
+                                     ],
+                           "reasons":  [
+                                           "API credentials and SSH keys are managed centrally in Vault."
+                                       ]
+                       },
+                       {
+                           "id":  "24woolaq5zfr5azyfygvfyma7u",
+                           "current_vault":  "Personal",
+                           "target_vault":  "Vault",
+                           "confidence":  "high",
+                           "category":  "API_CREDENTIAL",
+                           "title":  "Shade",
+                           "username":  "API Key",
+                           "host":  "",
+                           "hints":  [
+
+                                     ],
+                           "reasons":  [
+                                           "API credentials and SSH keys are managed centrally in Vault."
+                                       ]
+                       },
+                       {
+                           "id":  "ynqimm5duduppknigmhcxyq2oy",
+                           "current_vault":  "Personal",
+                           "target_vault":  "Wallet",
+                           "confidence":  "high",
+                           "category":  "LOGIN",
+                           "title":  "app.chime.com",
+                           "username":  "loganfinney27@gmail.com",
+                           "host":  "app.chime.com",
+                           "hints":  [
+
+                                     ],
+                           "reasons":  [
+                                           "Financial/billing service belongs in Wallet."
+                                       ]
+                       },
+                       {
+                           "id":  "xmrsunlolycq6uwhwtq5hb472m",
+                           "current_vault":  "Personal",
+                           "target_vault":  "Wallet",
+                           "confidence":  "high",
+                           "category":  "LOGIN",
+                           "title":  "auth.freetaxusa.com",
+                           "username":  "loganfinney27",
+                           "host":  "auth.freetaxusa.com",
+                           "hints":  [
+
+                                     ],
+                           "reasons":  [
+                                           "Financial/billing service belongs in Wallet."
+                                       ]
+                       },
+                       {
+                           "id":  "hjg25ji5phrii7nscpwxwdbc6u",
+                           "current_vault":  "Personal",
+                           "target_vault":  "Wallet",
+                           "confidence":  "high",
+                           "category":  "LOGIN",
+                           "title":  "chime.com",
+                           "username":  "loganfinney27@gmail.com",
+                           "host":  "app.chime.com",
+                           "hints":  [
+
+                                     ],
+                           "reasons":  [
+                                           "Financial/billing service belongs in Wallet."
+                                       ]
+                       },
+                       {
+                           "id":  "ieepo4djypgh3gmzpgjnuglmh4",
+                           "current_vault":  "Personal",
+                           "target_vault":  "Wallet",
+                           "confidence":  "high",
+                           "category":  "LOGIN",
+                           "title":  "chime.com",
+                           "username":  "loganfinney27@gmail.com",
+                           "host":  "member.chime.com",
+                           "hints":  [
+
+                                     ],
+                           "reasons":  [
+                                           "Financial/billing service belongs in Wallet."
+                                       ]
+                       },
+                       {
+                           "id":  "vw47hb5sep5oqspasyo7erib54",
+                           "current_vault":  "Personal",
+                           "target_vault":  "Wallet",
+                           "confidence":  "high",
+                           "category":  "LOGIN",
+                           "title":  "fnbo.upstart.com",
+                           "username":  "loganfinney27@gmail.com",
+                           "host":  "fnbo.upstart.com",
+                           "hints":  [
+
+                                     ],
+                           "reasons":  [
+                                           "Financial/billing service belongs in Wallet."
+                                       ]
+                       },
+                       {
+                           "id":  "tpx3buaxbhd3pzesqtsesbnlpm",
+                           "current_vault":  "Personal",
+                           "target_vault":  "Wallet",
+                           "confidence":  "high",
+                           "category":  "LOGIN",
+                           "title":  "home.personalcapital.com",
+                           "username":  "loganfinney27@gmail.com",
+                           "host":  "home.personalcapital.com",
+                           "hints":  [
+
+                                     ],
+                           "reasons":  [
+                                           "Financial/billing service belongs in Wallet."
+                                       ]
+                       },
+                       {
+                           "id":  "5fsio4nlx2lqtk2f664sscwez4",
+                           "current_vault":  "Personal",
+                           "target_vault":  "Wallet",
+                           "confidence":  "high",
+                           "category":  "LOGIN",
+                           "title":  "member.chime.com",
+                           "username":  "loganfinney27@gmail.com",
+                           "host":  "member.chime.com",
+                           "hints":  [
+
+                                     ],
+                           "reasons":  [
+                                           "Financial/billing service belongs in Wallet."
+                                       ]
+                       },
+                       {
+                           "id":  "67xii6nshig3fp2r2jqfikzqoi",
+                           "current_vault":  "Personal",
+                           "target_vault":  "Wallet",
+                           "confidence":  "high",
+                           "category":  "LOGIN",
+                           "title":  "Stripe",
+                           "username":  "loganfinney27@gmail.com",
+                           "host":  "connect.stripe.com",
+                           "hints":  [
+                                         "stripe"
+                                     ],
+                           "reasons":  [
+                                           "Financial/billing service belongs in Wallet."
+                                       ]
+                       },
+                       {
+                           "id":  "iidgyx7zk7vmhameodghfwor3y",
+                           "current_vault":  "Personal",
+                           "target_vault":  "Wallet",
+                           "confidence":  "high",
+                           "category":  "LOGIN",
+                           "title":  "sts.upstart.com",
+                           "username":  "loganfinney27@gmail.com",
+                           "host":  "sts.upstart.com",
+                           "hints":  [
+
+                                     ],
+                           "reasons":  [
+                                           "Financial/billing service belongs in Wallet."
+                                       ]
+                       },
+                       {
+                           "id":  "2xgrexae2ksgmm5psgsel6lmom",
+                           "current_vault":  "Personal",
+                           "target_vault":  "Wallet",
+                           "confidence":  "high",
+                           "category":  "LOGIN",
+                           "title":  "venmo.com",
+                           "username":  "2086279028",
+                           "host":  "venmo.com",
+                           "hints":  [
+
+                                     ],
+                           "reasons":  [
+                                           "Financial/billing service belongs in Wallet."
+                                       ]
+                       },
+                       {
+                           "id":  "pmwpd4f5iuiejsozhyu3kw275u",
+                           "current_vault":  "Personal",
+                           "target_vault":  "Wallet",
+                           "confidence":  "high",
+                           "category":  "LOGIN",
+                           "title":  "www.freetaxusa.com",
+                           "username":  "loganfinney27",
+                           "host":  "www.freetaxusa.com",
+                           "hints":  [
+
+                                     ],
+                           "reasons":  [
+                                           "Financial/billing service belongs in Wallet."
+                                       ]
+                       },
+                       {
+                           "id":  "jtz5ciyaz6zswzxvcoqokobqqq",
+                           "current_vault":  "Personal",
+                           "target_vault":  "Wallet",
+                           "confidence":  "high",
+                           "category":  "LOGIN",
+                           "title":  "www.pay.gov",
+                           "username":  "loganfinney27",
+                           "host":  "www.pay.gov",
+                           "hints":  [
+
+                                     ],
+                           "reasons":  [
+                                           "Financial/billing service belongs in Wallet."
+                                       ]
+                       },
+                       {
+                           "id":  "or2mrxisevsyw3safj3kt5rlbe",
+                           "current_vault":  "Personal",
+                           "target_vault":  "Wallet",
+                           "confidence":  "high",
+                           "category":  "LOGIN",
+                           "title":  "www.personalcapital.com",
+                           "username":  "loganfinney27@gmail.com",
+                           "host":  "www.personalcapital.com",
+                           "hints":  [
+
+                                     ],
+                           "reasons":  [
+                                           "Financial/billing service belongs in Wallet."
+                                       ]
+                       },
+                       {
+                           "id":  "z4tpehuz5luiefkraxqfeukcom",
+                           "current_vault":  "Personal",
+                           "target_vault":  "Wallet",
+                           "confidence":  "high",
+                           "category":  "LOGIN",
+                           "title":  "www.stlukesbillpay.com",
+                           "username":  "loganfinney27@gmail.com",
+                           "host":  "www.stlukesbillpay.com",
+                           "hints":  [
+
+                                     ],
+                           "reasons":  [
+                                           "Financial/billing service belongs in Wallet."
+                                       ]
+                       },
+                       {
+                           "id":  "jzgdhshqkj47zamampb4zwyyeu",
+                           "current_vault":  "Personal",
+                           "target_vault":  "Wallet",
+                           "confidence":  "high",
+                           "category":  "LOGIN",
+                           "title":  "www.upstart.com",
+                           "username":  "loganfinney27@gmail.com",
+                           "host":  "www.upstart.com",
+                           "hints":  [
+
+                                     ],
+                           "reasons":  [
+                                           "Financial/billing service belongs in Wallet."
+                                       ]
+                       },
+                       {
+                           "id":  "ydyflmhnojhcgtwijkhvzdjcf4",
+                           "current_vault":  "Personal",
+                           "target_vault":  "Wallet",
+                           "confidence":  "high",
+                           "category":  "LOGIN",
+                           "title":  "www.upstart.com",
+                           "username":  "logan.finney27@gmail.com",
+                           "host":  "www.upstart.com",
+                           "hints":  [
+
+                                     ],
+                           "reasons":  [
+                                           "Financial/billing service belongs in Wallet."
+                                       ]
+                       },
+                       {
+                           "id":  "d4fmykb36ds6bb4c5xey4icl34",
+                           "current_vault":  "Personal",
+                           "target_vault":  "Work",
+                           "confidence":  "high",
+                           "category":  "LOGIN",
+                           "title":  "account.envato.com",
+                           "username":  "idahoptv",
+                           "host":  "account.envato.com",
+                           "hints":  [
+
+                                     ],
+                           "reasons":  [
+                                           "Uses an idahoptv.org identity or org-specific handle."
+                                       ]
+                       },
+                       {
+                           "id":  "aluzf3dt5kop46adnetsxr4kj4",
+                           "current_vault":  "Personal",
+                           "target_vault":  "Work",
+                           "confidence":  "high",
+                           "category":  "LOGIN",
+                           "title":  "account.idahostatesman.com",
+                           "username":  "bruce.reichert@idahoptv.org",
+                           "host":  "account.idahostatesman.com",
+                           "hints":  [
+
+                                     ],
+                           "reasons":  [
+                                           "Uses an idahoptv.org identity or org-specific handle."
+                                       ]
+                       },
+                       {
+                           "id":  "45kfcmnu2ftbjqk6f77cfi7cza",
+                           "current_vault":  "Personal",
+                           "target_vault":  "Work",
+                           "confidence":  "high",
+                           "category":  "LOGIN",
+                           "title":  "adobe.com",
+                           "username":  "avid4@idahoptv.org",
+                           "host":  "auth.services.adobe.com",
+                           "hints":  [
+
+                                     ],
+                           "reasons":  [
+                                           "Uses an idahoptv.org identity or org-specific handle."
+                                       ]
+                       },
+                       {
+                           "id":  "muacsllkscf6onxvjta6yg54ma",
+                           "current_vault":  "Personal",
+                           "target_vault":  "Work",
+                           "confidence":  "high",
+                           "category":  "LOGIN",
+                           "title":  "apg05.newzware.com",
+                           "username":  "bill.manny@idahoptv.org",
+                           "host":  "apg05.newzware.com",
+                           "hints":  [
+
+                                     ],
+                           "reasons":  [
+                                           "Uses an idahoptv.org identity or org-specific handle."
+                                       ]
+                       },
+                       {
+                           "id":  "opy5hlftoxoieokbr3cxf6rvi4",
+                           "current_vault":  "Personal",
+                           "target_vault":  "Work",
+                           "confidence":  "high",
+                           "category":  "LOGIN",
+                           "title":  "auth.services.adobe.com",
+                           "username":  "avid4@idahoptv.org",
+                           "host":  "auth.services.adobe.com",
+                           "hints":  [
+
+                                     ],
+                           "reasons":  [
+                                           "Uses an idahoptv.org identity or org-specific handle."
+                                       ]
+                       },
+                       {
+                           "id":  "ot3i6saihwu3bqeiq4eorpgptq",
+                           "current_vault":  "Personal",
+                           "target_vault":  "Work",
+                           "confidence":  "high",
+                           "category":  "LOGIN",
+                           "title":  "depositphotos.com",
+                           "username":  "idahoptv",
+                           "host":  "depositphotos.com",
+                           "hints":  [
+
+                                     ],
+                           "reasons":  [
+                                           "Uses an idahoptv.org identity or org-specific handle."
+                                       ]
+                       },
+                       {
+                           "id":  "a26xtde5oxmcjljbswct5bmxfu",
+                           "current_vault":  "Personal",
+                           "target_vault":  "Work",
+                           "confidence":  "high",
+                           "category":  "LOGIN",
+                           "title":  "elements.envato.com",
+                           "username":  "idahoptv",
+                           "host":  "elements.envato.com",
+                           "hints":  [
+
+                                     ],
+                           "reasons":  [
+                                           "Uses an idahoptv.org identity or org-specific handle."
+                                       ]
+                       },
+                       {
+                           "id":  "xsuvfzupsjlr25ot7fxfieg4ym",
+                           "current_vault":  "Personal",
+                           "target_vault":  "Work",
+                           "confidence":  "high",
+                           "category":  "LOGIN",
+                           "title":  "envato.com",
+                           "username":  "idahoptv",
+                           "host":  "elements.envato.com",
+                           "hints":  [
+
+                                     ],
+                           "reasons":  [
+                                           "Uses an idahoptv.org identity or org-specific handle."
+                                       ]
+                       },
+                       {
+                           "id":  "mglfjkhug3vxecyy545rbzzfym",
+                           "current_vault":  "Personal",
+                           "target_vault":  "Work",
+                           "confidence":  "high",
+                           "category":  "LOGIN",
+                           "title":  "envato.com",
+                           "username":  "idahoptv",
+                           "host":  "account.envato.com",
+                           "hints":  [
+
+                                     ],
+                           "reasons":  [
+                                           "Uses an idahoptv.org identity or org-specific handle."
+                                       ]
+                       },
+                       {
+                           "id":  "thouz57z53siahtb7qxdeubysm",
+                           "current_vault":  "Personal",
+                           "target_vault":  "Work",
+                           "confidence":  "high",
+                           "category":  "LOGIN",
+                           "title":  "hightail.com",
+                           "username":  "jeff.tucker@idahoptv.org",
+                           "host":  "spaces.hightail.com",
+                           "hints":  [
+
+                                     ],
+                           "reasons":  [
+                                           "Uses an idahoptv.org identity or org-specific handle."
+                                       ]
+                       },
+                       {
+                           "id":  "orjeny5ez66zly7lccgqpobkh4",
+                           "current_vault":  "Personal",
+                           "target_vault":  "Work",
+                           "confidence":  "high",
+                           "category":  "LOGIN",
+                           "title":  "hightail.com",
+                           "username":  "files@idahoptv.org",
+                           "host":  "spaces.hightail.com",
+                           "hints":  [
+
+                                     ],
+                           "reasons":  [
+                                           "Uses an idahoptv.org identity or org-specific handle."
+                                       ]
+                       },
+                       {
+                           "id":  "4g2f37saevlltngbw4huz2llom",
+                           "current_vault":  "Personal",
+                           "target_vault":  "Work",
+                           "confidence":  "high",
+                           "category":  "LOGIN",
+                           "title":  "hootsuite.com",
+                           "username":  "idahoptv@gmail.com",
+                           "host":  "hootsuite.com",
+                           "hints":  [
+
+                                     ],
+                           "reasons":  [
+                                           "Uses an idahoptv.org identity or org-specific handle."
+                                       ]
+                       },
+                       {
+                           "id":  "22tucuuy67p7lppjcy7opaey7e",
+                           "current_vault":  "Personal",
+                           "target_vault":  "Work",
+                           "confidence":  "high",
+                           "category":  "LOGIN",
+                           "title":  "idahobusinessreview.com",
+                           "username":  "jenifer.johnson@idahoptv.org",
+                           "host":  "idahobusinessreview.com",
+                           "hints":  [
+
+                                     ],
+                           "reasons":  [
+                                           "Uses an idahoptv.org identity or org-specific handle."
+                                       ]
+                       },
+                       {
+                           "id":  "iketzctwcaezsmfnujdqpmbbcy",
+                           "current_vault":  "Personal",
+                           "target_vault":  "Work",
+                           "confidence":  "high",
+                           "category":  "LOGIN",
+                           "title":  "idahostatesman.com",
+                           "username":  "bruce.reichert@idahoptv.org",
+                           "host":  "account.idahostatesman.com",
+                           "hints":  [
+
+                                     ],
+                           "reasons":  [
+                                           "Uses an idahoptv.org identity or org-specific handle."
+                                       ]
+                       },
+                       {
+                           "id":  "thilkdngpg6kdip55sobjevzni",
+                           "current_vault":  "Personal",
+                           "target_vault":  "Work",
+                           "confidence":  "high",
+                           "category":  "LOGIN",
+                           "title":  "mcclatchy.us.auth0.com",
+                           "username":  "bruce.reichert@idahoptv.org",
+                           "host":  "mcclatchy.us.auth0.com",
+                           "hints":  [
+
+                                     ],
+                           "reasons":  [
+                                           "Uses an idahoptv.org identity or org-specific handle."
+                                       ]
+                       },
+                       {
+                           "id":  "vvrh3fx5xugx63oqdebsfh5cru",
+                           "current_vault":  "Personal",
+                           "target_vault":  "Work",
+                           "confidence":  "high",
+                           "category":  "LOGIN",
+                           "title":  "myaccount.nytimes.com",
+                           "username":  "jch@idahoptv.org",
+                           "host":  "myaccount.nytimes.com",
+                           "hints":  [
+
+                                     ],
+                           "reasons":  [
+                                           "Uses an idahoptv.org identity or org-specific handle."
+                                       ]
+                       },
+                       {
+                           "id":  "5kucpyx2udzkxgqln3hs7yb7xi",
+                           "current_vault":  "Personal",
+                           "target_vault":  "Work",
+                           "confidence":  "high",
+                           "category":  "LOGIN",
+                           "title":  "newzware.com",
+                           "username":  "bill.manny@idahoptv.org",
+                           "host":  "apg05.newzware.com",
+                           "hints":  [
+
+                                     ],
+                           "reasons":  [
+                                           "Uses an idahoptv.org identity or org-specific handle."
+                                       ]
+                       },
+                       {
+                           "id":  "n2pitjafc5uzaur2xag52ea4vm",
+                           "current_vault":  "Personal",
+                           "target_vault":  "Work",
+                           "confidence":  "high",
+                           "category":  "LOGIN",
+                           "title":  "nytimes.com",
+                           "username":  "jch@idahoptv.org",
+                           "host":  "myaccount.nytimes.com",
+                           "hints":  [
+
+                                     ],
+                           "reasons":  [
+                                           "Uses an idahoptv.org identity or org-specific handle."
+                                       ]
+                       },
+                       {
+                           "id":  "glzaqcaurxfna2ymeie6dmniji",
+                           "current_vault":  "Personal",
+                           "target_vault":  "Work",
+                           "confidence":  "high",
+                           "category":  "LOGIN",
+                           "title":  "ORCHID",
+                           "username":  "logan.finney@idahoptv.org",
+                           "host":  "orcid.org",
+                           "hints":  [
+
+                                     ],
+                           "reasons":  [
+                                           "Uses an idahoptv.org identity or org-specific handle."
+                                       ]
+                       },
+                       {
+                           "id":  "n7uvplw6nkspu6zqnx2rtlb6p4",
+                           "current_vault":  "Personal",
+                           "target_vault":  "Work",
+                           "confidence":  "high",
+                           "category":  "LOGIN",
+                           "title":  "spaces.hightail.com",
+                           "username":  "jeff.tucker@idahoptv.org",
+                           "host":  "spaces.hightail.com",
+                           "hints":  [
+
+                                     ],
+                           "reasons":  [
+                                           "Uses an idahoptv.org identity or org-specific handle."
+                                       ]
+                       },
+                       {
+                           "id":  "w37vs6g5xjh6yw7ngzcqvnqvli",
+                           "current_vault":  "Personal",
+                           "target_vault":  "Work",
+                           "confidence":  "high",
+                           "category":  "LOGIN",
+                           "title":  "spaces.hightail.com",
+                           "username":  "files@idahoptv.org",
+                           "host":  "spaces.hightail.com",
+                           "hints":  [
+
+                                     ],
+                           "reasons":  [
+                                           "Uses an idahoptv.org identity or org-specific handle."
+                                       ]
+                       },
+                       {
+                           "id":  "e3zjkzetloq56ehronzdrv4lji",
+                           "current_vault":  "Personal",
+                           "target_vault":  "Work",
+                           "confidence":  "high",
+                           "category":  "LOGIN",
+                           "title":  "www.newspapers.com",
+                           "username":  "bill.manny@idahoptv.org",
+                           "host":  "www.newspapers.com",
+                           "hints":  [
+
+                                     ],
+                           "reasons":  [
+                                           "Uses an idahoptv.org identity or org-specific handle."
+                                       ]
+                       },
+                       {
+                           "id":  "iq5on5fki3s4cy5jbbgeriha6e",
+                           "current_vault":  "Personal",
+                           "target_vault":  "Work",
+                           "confidence":  "high",
+                           "category":  "LOGIN",
+                           "title":  "www.newspapers.com",
+                           "username":  "idahoptv",
+                           "host":  "www.newspapers.com",
+                           "hints":  [
+
+                                     ],
+                           "reasons":  [
+                                           "Uses an idahoptv.org identity or org-specific handle."
+                                       ]
+                       },
+                       {
+                           "id":  "q3x2okmxh2dcyr4iif5gvwnkzy",
+                           "current_vault":  "Personal",
+                           "target_vault":  "Vault",
+                           "confidence":  "medium",
+                           "category":  "LOGIN",
+                           "title":  "GitKraken",
+                           "username":  "Signs in with GitHub",
+                           "host":  "gitkraken.dev",
+                           "hints":  [
+                                         "github"
+                                     ],
+                           "reasons":  [
+                                           "Developer/tooling credential matches managed services tracked in Vault."
+                                       ]
+                       },
+                       {
+                           "id":  "mghzkdk4ogkpqfcsogfmmphz6u",
+                           "current_vault":  "Personal",
+                           "target_vault":  "Vault",
+                           "confidence":  "medium",
+                           "category":  "LOGIN",
+                           "title":  "GitLab",
+                           "username":  "Signs in with GitHub",
+                           "host":  "gitlab.com",
+                           "hints":  [
+                                         "github",
+                                         "gitlab"
+                                     ],
+                           "reasons":  [
+                                           "Developer/tooling credential matches managed services tracked in Vault."
+                                       ]
+                       },
+                       {
+                           "id":  "a2afahsrgmfjfexshyhw5sbbtm",
+                           "current_vault":  "Personal",
+                           "target_vault":  "Vault",
+                           "confidence":  "medium",
+                           "category":  "LOGIN",
+                           "title":  "Langchain",
+                           "username":  "Signs in with GitHub",
+                           "host":  "smith.langchain.com",
+                           "hints":  [
+                                         "github"
+                                     ],
+                           "reasons":  [
+                                           "Developer/tooling credential matches managed services tracked in Vault."
+                                       ]
+                       },
+                       {
+                           "id":  "cde4bzidk2kb4bq4al73ksnakq",
+                           "current_vault":  "Personal",
+                           "target_vault":  "Vault",
+                           "confidence":  "medium",
+                           "category":  "LOGIN",
+                           "title":  "Login",
+                           "username":  "loganfinney27@gmail.com",
+                           "host":  "com.what3words.android",
+                           "hints":  [
+                                         "what3words"
+                                     ],
+                           "reasons":  [
+                                           "Developer/tooling credential matches managed services tracked in Vault."
+                                       ]
+                       },
+                       {
+                           "id":  "kuokvzgf5vrj7zptfhzq6hljzq",
+                           "current_vault":  "Personal",
+                           "target_vault":  "Vault",
+                           "confidence":  "medium",
+                           "category":  "LOGIN",
+                           "title":  "Muckrock",
+                           "username":  "Signs in with GitHub",
+                           "host":  "accounts.muckrock.com",
+                           "hints":  [
+                                         "github"
+                                     ],
+                           "reasons":  [
+                                           "Developer/tooling credential matches managed services tracked in Vault."
+                                       ]
+                       },
+                       {
+                           "id":  "6cviclcubi3swkrwfeewutocue",
+                           "current_vault":  "Personal",
+                           "target_vault":  "Vault",
+                           "confidence":  "medium",
+                           "category":  "LOGIN",
+                           "title":  "Ollama",
+                           "username":  "Signs in with GitHub",
+                           "host":  "signin.ollama.com",
+                           "hints":  [
+                                         "github"
+                                     ],
+                           "reasons":  [
+                                           "Developer/tooling credential matches managed services tracked in Vault."
+                                       ]
+                       },
+                       {
+                           "id":  "kbnv3yyu2l6hrrmwwrz2eoq3x4",
+                           "current_vault":  "Personal",
+                           "target_vault":  "Vault",
+                           "confidence":  "medium",
+                           "category":  "LOGIN",
+                           "title":  "OpenAI",
+                           "username":  "Signs in with Google",
+                           "host":  "auth.openai.com",
+                           "hints":  [
+                                         "openai",
+                                         "google"
+                                     ],
+                           "reasons":  [
+                                           "Developer/tooling credential matches managed services tracked in Vault."
+                                       ]
+                       },
+                       {
+                           "id":  "6pdnmzwzrbs5v5qtrjlzls3cim",
+                           "current_vault":  "Personal",
+                           "target_vault":  "Vault",
+                           "confidence":  "medium",
+                           "category":  "LOGIN",
+                           "title":  "openai.com",
+                           "username":  "loganfinney27@gmail.com",
+                           "host":  "auth0.openai.com",
+                           "hints":  [
+                                         "openai"
+                                     ],
+                           "reasons":  [
+                                           "Developer/tooling credential matches managed services tracked in Vault."
+                                       ]
+                       },
+                       {
+                           "id":  "eh2jwip2ghf3exznouxcgcth2i",
+                           "current_vault":  "Personal",
+                           "target_vault":  "Vault",
+                           "confidence":  "medium",
+                           "category":  "LOGIN",
+                           "title":  "OpenRouter",
+                           "username":  "Signs in with GitHub",
+                           "host":  "openrouter.ai",
+                           "hints":  [
+                                         "openrouter",
+                                         "github"
+                                     ],
+                           "reasons":  [
+                                           "Developer/tooling credential matches managed services tracked in Vault."
+                                       ]
+                       },
+                       {
+                           "id":  "6h4o2ted7q3ahanob36omibuqe",
+                           "current_vault":  "Personal",
+                           "target_vault":  "Vault",
+                           "confidence":  "medium",
+                           "category":  "LOGIN",
+                           "title":  "what3words: Navigation \u0026 Maps",
+                           "username":  "loganfinney27@gmail.com",
+                           "host":  "com.what3words.android",
+                           "hints":  [
+                                         "what3words"
+                                     ],
+                           "reasons":  [
+                                           "Developer/tooling credential matches managed services tracked in Vault."
+                                       ]
+                       },
+                       {
+                           "id":  "7aucn3dseh37cllesexigwwybi",
+                           "current_vault":  "Private",
+                           "target_vault":  "Personal",
+                           "confidence":  "medium",
+                           "category":  "LOGIN",
+                           "title":  "eggplant.media",
+                           "username":  "queerboned@gmail.com",
+                           "host":  "eggplant.media",
+                           "hints":  [
+
+                                     ],
+                           "reasons":  [
+                                           "Personal email identity."
+                                       ]
+                       },
+                       {
+                           "id":  "gmr333xpaqng6pzn24rzruaneu",
+                           "current_vault":  "Private",
+                           "target_vault":  "Personal",
+                           "confidence":  "medium",
+                           "category":  "LOGIN",
+                           "title":  "ffister.com",
+                           "username":  "queerboned@gmail.com",
+                           "host":  "ffister.com",
+                           "hints":  [
+
+                                     ],
+                           "reasons":  [
+                                           "Personal email identity."
+                                       ]
+                       },
+                       {
+                           "id":  "pnr6xuv2377kgp5275ba3witwu",
+                           "current_vault":  "Private",
+                           "target_vault":  "Personal",
+                           "confidence":  "medium",
+                           "category":  "LOGIN",
+                           "title":  "justfor.fans",
+                           "username":  "queerboned@gmail.com",
+                           "host":  "justfor.fans",
+                           "hints":  [
+
+                                     ],
+                           "reasons":  [
+                                           "Personal email identity."
+                                       ]
+                       },
+                       {
+                           "id":  "b3ik2ekqi6p4fnziot73hgohw4",
+                           "current_vault":  "Private",
+                           "target_vault":  "Personal",
+                           "confidence":  "medium",
+                           "category":  "LOGIN",
+                           "title":  "justfor.fans",
+                           "username":  "queerbone3@gmail.com",
+                           "host":  "justfor.fans",
+                           "hints":  [
+
+                                     ],
+                           "reasons":  [
+                                           "Personal email identity."
+                                       ]
+                       },
+                       {
+                           "id":  "rn4llre2b7aqewel7makjczq4a",
+                           "current_vault":  "Private",
+                           "target_vault":  "Personal",
+                           "confidence":  "medium",
+                           "category":  "LOGIN",
+                           "title":  "Login",
+                           "username":  "queerbone3@gmail.com",
+                           "host":  "com.zhiliaoapp.musically",
+                           "hints":  [
+
+                                     ],
+                           "reasons":  [
+                                           "Personal email identity."
+                                       ]
+                       },
+                       {
+                           "id":  "4zy3j6uhncr7manf7vhl7jmewa",
+                           "current_vault":  "Private",
+                           "target_vault":  "Personal",
+                           "confidence":  "medium",
+                           "category":  "LOGIN",
+                           "title":  "Login",
+                           "username":  "queerboned@gmail.com",
+                           "host":  "com.t101.android3.recon",
+                           "hints":  [
+
+                                     ],
+                           "reasons":  [
+                                           "Personal email identity."
+                                       ]
+                       },
+                       {
+                           "id":  "sjns2oobrpqmbp73luurc2qc34",
+                           "current_vault":  "Private",
+                           "target_vault":  "Personal",
+                           "confidence":  "medium",
+                           "category":  "LOGIN",
+                           "title":  "pilot.recon.com",
+                           "username":  "queerboned@gmail.com",
+                           "host":  "pilot.recon.com",
+                           "hints":  [
+
+                                     ],
+                           "reasons":  [
+                                           "Personal email identity."
+                                       ]
+                       },
+                       {
+                           "id":  "n2rf6uqvukizzyiopff7ob2pt4",
+                           "current_vault":  "Private",
+                           "target_vault":  "Personal",
+                           "confidence":  "medium",
+                           "category":  "LOGIN",
+                           "title":  "recon.android3.t101.com",
+                           "username":  "queerboned@gmail.com",
+                           "host":  "com.t101.android3.recon",
+                           "hints":  [
+
+                                     ],
+                           "reasons":  [
+                                           "Personal email identity."
+                                       ]
+                       },
+                       {
+                           "id":  "n55inb35axcsdcxdy53667vul4",
+                           "current_vault":  "Private",
+                           "target_vault":  "Personal",
+                           "confidence":  "medium",
+                           "category":  "LOGIN",
+                           "title":  "rugiet.com",
+                           "username":  "queerboned@gmail.com",
+                           "host":  "start.rugiet.com",
+                           "hints":  [
+
+                                     ],
+                           "reasons":  [
+                                           "Personal email identity."
+                                       ]
+                       },
+                       {
+                           "id":  "xvluy2kdwf73v45khchcew4vmq",
+                           "current_vault":  "Private",
+                           "target_vault":  "Personal",
+                           "confidence":  "medium",
+                           "category":  "LOGIN",
+                           "title":  "start.rugiet.com",
+                           "username":  "queerboned@gmail.com",
+                           "host":  "start.rugiet.com",
+                           "hints":  [
+
+                                     ],
+                           "reasons":  [
+                                           "Personal email identity."
+                                       ]
+                       },
+                       {
+                           "id":  "5g62pre5r6mblaynvo6hkruzgq",
+                           "current_vault":  "Private",
+                           "target_vault":  "Personal",
+                           "confidence":  "medium",
+                           "category":  "LOGIN",
+                           "title":  "tiktok.com",
+                           "username":  "queerbone3@gmail.com",
+                           "host":  "com.zhiliaoapp.musically",
+                           "hints":  [
+
+                                     ],
+                           "reasons":  [
+                                           "Personal email identity."
+                                       ]
+                       },
+                       {
+                           "id":  "e2ivpxy5z7jfy2p6tyupuzr7he",
+                           "current_vault":  "Private",
+                           "target_vault":  "Personal",
+                           "confidence":  "medium",
+                           "category":  "LOGIN",
+                           "title":  "www.asspig.com",
+                           "username":  "loganfinney27@gmail.com",
+                           "host":  "www.asspig.com",
+                           "hints":  [
+
+                                     ],
+                           "reasons":  [
+                                           "Personal email identity."
+                                       ]
+                       },
+                       {
+                           "id":  "vdqsi64kn7lw7lirafoxy2rdoy",
+                           "current_vault":  "Private",
+                           "target_vault":  "Personal",
+                           "confidence":  "medium",
+                           "category":  "LOGIN",
+                           "title":  "www.mrhankeystoys.com",
+                           "username":  "queerboned@gmail.com",
+                           "host":  "www.mrhankeystoys.com",
+                           "hints":  [
+
+                                     ],
+                           "reasons":  [
+                                           "Personal email identity."
+                                       ]
+                       },
+                       {
+                           "id":  "pzqg5tkxbgm7vy2l3k4ww73wxa",
+                           "current_vault":  "Private",
+                           "target_vault":  "Personal",
+                           "confidence":  "medium",
+                           "category":  "LOGIN",
+                           "title":  "www.recon.com",
+                           "username":  "queerboned@gmail.com",
+                           "host":  "www.recon.com",
+                           "hints":  [
+
+                                     ],
+                           "reasons":  [
+                                           "Personal email identity."
+                                       ]
+                       },
+                       {
+                           "id":  "l5a7f5i6cpmnsxdzeusyt646gy",
+                           "current_vault":  "Vault",
+                           "target_vault":  "Personal",
+                           "confidence":  "medium",
+                           "category":  "LOGIN",
+                           "title":  "account.box.com",
+                           "username":  "loganfinney27@gmail.com",
+                           "host":  "account.box.com",
+                           "hints":  [
+
+                                     ],
+                           "reasons":  [
+                                           "Personal email identity."
+                                       ]
+                       },
+                       {
+                           "id":  "aaeuf5vqkwvcycpy5sppk3y36q",
+                           "current_vault":  "Vault",
+                           "target_vault":  "Personal",
+                           "confidence":  "medium",
+                           "category":  "LOGIN",
+                           "title":  "account.ghost.org",
+                           "username":  "loganfinney27@gmail.com",
+                           "host":  "account.ghost.org",
+                           "hints":  [
+
+                                     ],
+                           "reasons":  [
+                                           "Personal email identity."
+                                       ]
+                       },
+                       {
+                           "id":  "qtvwylykzvo3tl52jdbdenb73e",
+                           "current_vault":  "Vault",
+                           "target_vault":  "Personal",
+                           "confidence":  "medium",
+                           "category":  "LOGIN",
+                           "title":  "accounts.firefox.com",
+                           "username":  "loganfinney27@gmail.com",
+                           "host":  "accounts.firefox.com",
+                           "hints":  [
+
+                                     ],
+                           "reasons":  [
+                                           "Personal email identity."
+                                       ]
+                       },
+                       {
+                           "id":  "wooundpggcsiyrmpkiwavpv2rq",
+                           "current_vault":  "Vault",
+                           "target_vault":  "Personal",
+                           "confidence":  "medium",
+                           "category":  "LOGIN",
+                           "title":  "arc.net",
+                           "username":  "loganfinney27@gmail.com",
+                           "host":  "arc.net",
+                           "hints":  [
+
+                                     ],
+                           "reasons":  [
+                                           "Personal email identity."
+                                       ]
+                       },
+                       {
+                           "id":  "k4xwac63sug24sqs6mlf3yjgny",
+                           "current_vault":  "Vault",
+                           "target_vault":  "Personal",
+                           "confidence":  "medium",
+                           "category":  "LOGIN",
+                           "title":  "authory.com",
+                           "username":  "loganfinney27@gmail.com",
+                           "host":  "authory.com",
+                           "hints":  [
+
+                                     ],
+                           "reasons":  [
+                                           "Personal email identity."
+                                       ]
+                       },
+                       {
+                           "id":  "vrwtq64rovy35f7uuvgmurhi34",
+                           "current_vault":  "Vault",
+                           "target_vault":  "Personal",
+                           "confidence":  "medium",
+                           "category":  "LOGIN",
+                           "title":  "Box",
+                           "username":  "loganfinney27@gmail.com",
+                           "host":  "account.box.com",
+                           "hints":  [
+
+                                     ],
+                           "reasons":  [
+                                           "Personal email identity."
+                                       ]
+                       },
+                       {
+                           "id":  "f6x5ui2dztamazvew7rtdlvleq",
+                           "current_vault":  "Vault",
+                           "target_vault":  "Personal",
+                           "confidence":  "medium",
+                           "category":  "LOGIN",
+                           "title":  "Kinopio",
+                           "username":  "loganfinney27@gmail.com",
+                           "host":  "kinopio.club",
+                           "hints":  [
+
+                                     ],
+                           "reasons":  [
+                                           "Personal email identity."
+                                       ]
+                       },
+                       {
+                           "id":  "eayenvzpjkbbnedo53slqqdooy",
+                           "current_vault":  "Vault",
+                           "target_vault":  "Personal",
+                           "confidence":  "medium",
+                           "category":  "LOGIN",
+                           "title":  "my.1password.com",
+                           "username":  "loganfinney27@gmail.com",
+                           "host":  "my.1password.com",
+                           "hints":  [
+
+                                     ],
+                           "reasons":  [
+                                           "Personal email identity."
+                                       ]
+                       },
+                       {
+                           "id":  "khhexrc2ahnncp6mzkerxdyjhu",
+                           "current_vault":  "Vault",
+                           "target_vault":  "Personal",
+                           "confidence":  "medium",
+                           "category":  "LOGIN",
+                           "title":  "Remotelysave",
+                           "username":  "loganfinney27@gmail.com",
+                           "host":  "remotelysave.com",
+                           "hints":  [
+
+                                     ],
+                           "reasons":  [
+                                           "Personal email identity."
+                                       ]
+                       },
+                       {
+                           "id":  "edjxpfvnhkoipt7pzl5ouezway",
+                           "current_vault":  "Vault",
+                           "target_vault":  "Personal",
+                           "confidence":  "medium",
+                           "category":  "LOGIN",
+                           "title":  "the-gemstone.ghost.io",
+                           "username":  "loganfinney27@gmail.com",
+                           "host":  "the-gemstone.ghost.io",
+                           "hints":  [
+
+                                     ],
+                           "reasons":  [
+                                           "Personal email identity."
+                                       ]
+                       },
+                       {
+                           "id":  "t5qj7iukphxjjci6n4urrjtxmm",
+                           "current_vault":  "Vault",
+                           "target_vault":  "Personal",
+                           "confidence":  "medium",
+                           "category":  "LOGIN",
+                           "title":  "tokenfoundry.com",
+                           "username":  "loganfinney27@gmail.com",
+                           "host":  "tokenfoundry.com",
+                           "hints":  [
+
+                                     ],
+                           "reasons":  [
+                                           "Personal email identity."
+                                       ]
+                       }
+                   ]
+}

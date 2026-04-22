@@ -1,0 +1,2 @@
+Output: File copy operation completed for all specified dotfolders.
+Process Group PGID: 45900

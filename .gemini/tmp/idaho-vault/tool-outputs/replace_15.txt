@@ -1,0 +1,9 @@
+<tool_output_masked>
+{
+  "output": "Successfully modified file: C:\\Users\\loganf\\Documents\\IDAHO-VAULT\\!\\LEVELSET-REPORT-GEMINI-2026-04-05.md (1 replacements). Here is the updated code:\n# LEVELSET REPORT — Gemini (The Vault Advisor)\n**Date:** 2026-04-05\n**Topic:*
+... [TRUNCATED] ...
+Added/Modified This Session\n- `!/LEVELSET-REPORT-GEMINI-2026-04-05.md` — This report.\n- `DOCKET.md` — Updated to reflect completion and courier initialization.\n- `!/CREWAI/HYDRATION-LOG-v1.md` — Detailed execution log for Phase 3.\n\n---\n\n..."
+}
+
+Output too large. Full output available at: C:\Users\loganf\.gemini\tmp\idaho-vault\tool-outputs\session-f328310d-05ea-45ce-b9cb-fe2717bebe12\replace_replace_1776110966598_0_ft7p6.txt
+</tool_output_masked>

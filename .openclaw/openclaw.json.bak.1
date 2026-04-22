@@ -1,0 +1,36 @@
+{
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "ollama/kimi-k2.5:cloud"
+      }
+    }
+  },
+  "models": {
+    "providers": {
+      "ollama": {
+        "api": "ollama",
+        "apiKey": "ollama-local",
+        "baseUrl": "http://127.0.0.1:11434",
+        "models": [
+          {
+            "contextWindow": 262144,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "kimi-k2.5:cloud",
+            "input": [
+              "text",
+              "image"
+            ],
+            "name": "kimi-k2.5:cloud",
+            "reasoning": true
+          }
+        ]
+      }
+    }
+  }
+}

@@ -7,6 +7,7 @@ import subprocess
 import sys
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 
 def _load_topology_census_module():
@@ -210,6 +211,11 @@ class TopologyCensusTest(unittest.TestCase):
             self.assertTrue(json_path.exists())
             payload = json.loads(json_path.read_text(encoding="utf-8"))
             self.assertEqual(payload["scope"], row["scope"])
+
+    def test_git_repo_available_returns_false_when_git_is_missing(self) -> None:
+        with patch.object(topology_census, "_run_git", side_effect=FileNotFoundError):
+            self.assertFalse(topology_census._git_repo_available(self.root))
+            self.assertEqual(topology_census._git_tracked_files(self.root), set())
 
 
 if __name__ == "__main__":

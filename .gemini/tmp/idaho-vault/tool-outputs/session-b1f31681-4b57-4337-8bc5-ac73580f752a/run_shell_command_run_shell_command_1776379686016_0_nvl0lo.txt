@@ -1,0 +1,3 @@
+{
+  "output": "Output:   claude/sync-fixes-lore-2026-04-13\n+ codex/5wizards-contained-review\n  codex/exploration-adventure\n  gemini/restore-antigravity-system\n* main\n  remotes/origin/HEAD -> origin/main\n  remotes/origin/codex/exploration-adventure\n  remotes/origin/main\nProcess Group PGID: 22008"
+}

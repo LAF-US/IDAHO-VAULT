@@ -1,0 +1,3 @@
+{
+  "output": "Successfully created and wrote to new file: C:\\Users\\loganf\\Documents\\IDAHO-VAULT\\Mental Model - The Three-Circle System.md. Here is the updated code:\n---\r\ntitle: \"Mental Model: The Three-Circle System\"\r\nupdated: 2026-04-19\r\nstatus: draft\r\nauthority: gemini\r\n---\r\n\r\n```mermaid\r\nvennDiagram\r\n    A: The Bullet Journal\r\n    B: The Zettelkasten\r\n    C: The UNIFIED SWARM\r\n```\r\n\r\n*   **The Bullet Journal (A):** User's daily context & tasks.\r\n*   **The Zettelkasten (B):** Vault's networked knowledge base.\r\n*   **The UNIFIED SWARM (C):** AI agents for Retrieval-Augmented Generation (RAG).\r\n"
+}

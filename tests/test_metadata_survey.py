@@ -119,6 +119,10 @@ class MetadataSurveyTest(unittest.TestCase):
             encoding="utf-8",
         )
 
+        tmp_dir = self.root / "notes" / "_tmp_generated"
+        tmp_dir.mkdir(parents=True)
+        (tmp_dir / "ignored.md").write_text("# should be skipped\n", encoding="utf-8")
+
         plugins_dir = self.root / ".obsidian" / "plugins" / "fake-plugin"
         plugins_dir.mkdir(parents=True)
         (plugins_dir / "README.md").write_text("# plugin docs\n", encoding="utf-8")

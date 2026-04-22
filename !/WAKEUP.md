@@ -28,14 +28,17 @@ or scattered branch residue.
 
 ## Read In This Order
 
-1. `AGENTS.md`
-2. `!/WAKEUP.md`
-3. `!/README.md`
-4. `!/AGENTS.md`
-5. `CONSTITUTION.md`
-6. `swarm.json`
-7. `!/agents.json`
-8. `!/agent.sh`
+## Read In This Order
+
+1. `start_SPARKSEED.sh` (Mandatory Bootstrap). This must run first.
+2. `!/WAKEUP.md` to clear stale world models and conflict assumptions.
+3. `!/README.md` for explicit startup and task-based orientation.
+4. `!/AGENTS.md` for the live roster, lane rules, and current connector posture.
+5. `CONSTITUTION.md` for binding governance.
+6. `swarm.json` for machine-readable compiled state.
+7. Use `!/agents.json` -> `!/agent.sh` for canonical local bootstrap.
+8. Read `!README.md` only when the task needs Touchstone Tree or narrative context.
+9. Treat historical CrewAI harbor notes as non-live unless `.crewai/MANIFEST.md` or `!/AGENTS.md` says otherwise.
 
 ## If Two Things Conflict
 

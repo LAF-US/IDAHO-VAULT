@@ -1,0 +1,3 @@
+{
+  "output": "Current topic: \"Consulting a Local Wizard\"\nTopic summary: The user has given the instruction \"CONSULT a local WIZARD...\". I will interpret this by first searching for a specific file that might represent this \"wizard\". I will use the `glob` tool to search the entire vault for any files containing \"wizard\" in their name. This is the most direct and safest first step to understanding and executing the user's command.\n\nStrategic Intent: Search for a file representing the \"local WIZARD\" that the user wants me to consult, starting with a vault-wide search for files with \"wizard\" in their name."
+}

@@ -1,10 +1,10 @@
 """
 Twitter Archive → IDAHO-VAULT Markdown Extractor
 Converts tweets.js from a Twitter/X data export into individual
-markdown notes in @/ (the social archive folder).
+markdown notes in the tweets/ folder \(social archive\).
 
 Output structure:
-  @/tweets/YYYY/YYYY-MM-DD - @lfinneytweets - <truncated text>.md
+  tweets/YYYY/YYYY-MM-DD - @lfinneytweets - <truncated text>.md
 
 Each note gets YAML frontmatter with metadata and the full tweet text.
 """
@@ -13,6 +13,7 @@ import json
 import os
 import re
 import sys
+import tempfile
 from datetime import datetime
 from pathlib import Path
 from html import unescape
@@ -20,8 +21,8 @@ import zipfile
 import shutil
 
 VAULT_ROOT = Path(r"c:\Users\loganf\Documents\IDAHO-VAULT")
-TEMP_DIR = Path(os.environ["TEMP"]) / "twitter-extract"
-OUTPUT_DIR = VAULT_ROOT / "@" / "tweets"
+TEMP_DIR = Path(os.environ.get("TEMP") or os.environ.get("TMP") or tempfile.gettempdir()) / "twitter-extract"
+OUTPUT_DIR = VAULT_ROOT / "tweets"
 
 # --- Helpers ---
 
@@ -297,3 +298,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+

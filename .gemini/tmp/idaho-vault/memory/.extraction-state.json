@@ -1,0 +1,51 @@
+{
+  "runs": [
+    {
+      "runAt": "2026-04-15T03:08:13.883Z",
+      "sessionIds": [
+        "f328310d-05ea-45ce-b9cb-fe2717bebe12",
+        "264c2788-ae99-40c4-85fe-55a210a6c9d7",
+        "8bb72f01-1a8c-4740-b2b9-fd93f2c870f9"
+      ],
+      "skillsCreated": [
+        "cleanup-docket",
+        "run-levelset-protocol",
+        "scrub-protocol-references",
+        "transcript-synthesis"
+      ]
+    },
+    {
+      "runAt": "2026-04-16T22:40:18.482Z",
+      "sessionIds": [
+        "931adb45-8b05-4dae-946c-77f54785c24c"
+      ],
+      "skillsCreated": [
+        "manage-1password-secrets",
+        "manage-agent-dotfolders",
+        "navigate-narrative-denials"
+      ]
+    },
+    {
+      "runAt": "2026-04-19T19:27:18.754Z",
+      "sessionIds": [
+        "b1f31681-4b57-4337-8bc5-ac73580f752a",
+        "3d743a4f-68bb-4ab3-bd73-61aa8698ab20"
+      ],
+      "skillsCreated": [
+        "arborscaping-branch-pruning",
+        "perform-vault-bootstrap"
+      ]
+    },
+    {
+      "runAt": "2026-04-20T04:29:48.013Z",
+      "sessionIds": [
+        "8e4be862-5d3d-42a1-972a-256140b5a480"
+      ],
+      "skillsCreated": [
+        "anchor-persistent-memory",
+        "investigate-pr-scope-mismatch",
+        "isolate-agent-runtime"
+      ]
+    }
+  ]
+}

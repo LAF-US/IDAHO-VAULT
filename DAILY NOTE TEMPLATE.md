@@ -12,7 +12,7 @@ tomorrow: {{date+1d:YYYY-MM-DD}}
 weekday:
   - {{date:dddd}}
 cssclasses:
-  - roygbiv-{{date:ddd}}
+  - roygbiv-<% tp.date.now("ddd", 0, tp.file.title, "YYYY-MM-DD").toLowerCase() %>
 tags:
   - today
   - {{date:YYYY/MM/DD}}
@@ -25,8 +25,6 @@ date modified: {{date:dddd, MMMM Do YYYY, [12:00:00 am]}}
 
 # {{date:dddd, MMMM D, YYYY}}
 
-## Day planner
-
 ## Daily Queue
 
 [[TO DO LIST]]
@@ -36,9 +34,3 @@ date modified: {{date:dddd, MMMM Do YYYY, [12:00:00 am]}}
 ## Notes
 
 - 
-
-## End Of Day
-
-- Wins:
-- Blockers:
-- Carry forward:

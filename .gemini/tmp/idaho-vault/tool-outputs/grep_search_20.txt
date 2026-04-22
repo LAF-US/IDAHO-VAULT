@@ -1,0 +1,12 @@
+Found 4 matches for pattern "Whistle Protocol" in path ".":
+---
+File: !\LEVELSET-REPORT-GEMINI-2026-04-05.md
+L3: **Topic:** Sunday Pulse — Whistle Protocol Initialization
+---
+File: !\!\__!__\!\! The world is quiet here\DOCKET.md
+L56: | **Whistle Protocol (Sunday Pulse)** | Gemini | **ACTIVE (FILTERED)** | — | Sync resumed; Levelset Report-2026-04-05 filed (Whistle blown). |
+---
+File: LEVELSET-CURRENT.md
+L258: - Whistle protocol — **LOCKED** until PRIVACY.md is satisfied
+L339: | Whistle protocol design | **Medium** | LOCKED — PRIVACY.md must be satisfied first |
+---

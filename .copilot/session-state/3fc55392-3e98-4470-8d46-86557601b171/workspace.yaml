@@ -1,0 +1,32 @@
+id: 3fc55392-3e98-4470-8d46-86557601b171
+cwd: c:\Users\loganf\Documents\IDAHO-VAULT
+git_root: C:\Users\loganf\Documents\IDAHO-VAULT
+repository: loganfinney27/IDAHO-VAULT
+host_type: github
+branch: claude/resolve-pr-conflicts
+summary: "CLAUDE CODE next door says: \"'Logan has terminated all Gemini instances. The active mesh is now:\r
+
+  \r
+
+  Claude Code (The Abhorsen) - me\r
+
+  Logan - human director\r
+
+  CodeRabbit - PR review (passive, triggers on PRs)\r
+
+  Qodo - dead/crashed\r
+
+  This is a much leaner setup. Logan still needs to answer the three questions about the cleanup:\r
+
+  \r
+
+  Conflicted copies — confirm delete?\r
+
+  Reference docs — commit or delete?\r
+
+  Stash {0} — apply or drop?\r
+
+  I should acknowledge the mesh change and wait for those answers, or jus..."
+summary_count: 0
+created_at: 2026-03-29T22:35:31.147Z
+updated_at: 2026-03-29T22:36:08.956Z

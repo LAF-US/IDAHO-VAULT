@@ -1,0 +1,44 @@
+{
+  "name": "nimble_task_results",
+  "description": "Get the status and results of an async task.\n\nUse this to retrieve results from nimble_extract_async or nimble_agent_run_async.\nIf the task is still pending, returns the current state so you can poll again later.\n\nArgs:\n    task_id: The task ID returned by nimble_extract_async or nimble_agent_run_async.\n\n    tool_reasoning: Optional reasoning about why this tool was selected.\n    tool_description: Optional description of the tool's purpose.\n\nReturns:\n    dict: When task is pending:\n        - task.id (str): Task ID\n        - task.state (str): \"pending\"\n\n    When task is complete:\n        - The full extraction or agent run results",
+  "arguments": {
+    "type": "object",
+    "properties": {
+      "task_id": {
+        "title": "Task Id",
+        "type": "string"
+      },
+      "tool_reasoning": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Tool Reasoning"
+      },
+      "tool_description": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Tool Description"
+      }
+    },
+    "required": [
+      "task_id"
+    ]
+  },
+  "outputSchema": {
+    "type": "object",
+    "additionalProperties": true
+  }
+}

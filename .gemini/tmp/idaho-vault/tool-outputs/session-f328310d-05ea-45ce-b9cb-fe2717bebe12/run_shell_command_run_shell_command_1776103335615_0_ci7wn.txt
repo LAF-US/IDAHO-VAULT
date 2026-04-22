@@ -1,0 +1,3 @@
+{
+  "output": "Output: .abhorsen\n.agent-home\n.bartimaeus\n.cache\n.claude\n.codex\n.crewai\n.deepseek\n.dionysus\n.gemini\n.git\n.github\n.google\n.grok\n.makemd\n.meta\n.microsoft\n.npm-cache\n.obsidian\n.op\n.perplexity\n.persephone\n.pip-cache\n.pycache\n.reference-map\n.remember\n.serena\n.slack\n.smart-env\n.space\n.state\n.tmp\n.uv-cache\n.venv\n.vscode\n.zagreus\nProcess Group PGID: 74244"
+}

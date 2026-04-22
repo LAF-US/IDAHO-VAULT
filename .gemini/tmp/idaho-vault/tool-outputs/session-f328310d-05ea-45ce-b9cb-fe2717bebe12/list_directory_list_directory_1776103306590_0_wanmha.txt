@@ -1,0 +1,3 @@
+{
+  "output": "Directory listing for C:\\Users\\loganf\\Documents\\IDAHO-VAULT:\n"
+}

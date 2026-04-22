@@ -23,6 +23,27 @@ daily_rollover = _load_daily_rollover_module()
 
 
 class DailyRolloverTest(unittest.TestCase):
+    def test_ensure_daily_frontmatter_adds_missing_canonical_list_fields(self) -> None:
+        content = textwrap.dedent(
+            """\
+            ---
+            title: 2026-04-16
+            yesterday:
+            tomorrow:
+            ---
+
+            [[TO DO LIST]]
+            """
+        )
+
+        repaired = daily_rollover.ensure_daily_frontmatter(content, daily_rollover.date.fromisoformat("2026-04-16"))
+
+        self.assertIn("aliases:", repaired)
+        self.assertIn("linter-yaml-title-alias: 2026-04-16", repaired)
+        self.assertIn("weekday:\n  - Thursday", repaired)
+        self.assertIn("cssclasses:\n  - roygbiv-thu", repaired)
+        self.assertIn("tags:\n  - today\n  - 2026/04/16\n  - dailynote", repaired)
+
     def test_extract_todo_section_respects_marker_inside_named_carryforward_section(self) -> None:
         content = textwrap.dedent(
             """\
@@ -101,6 +122,87 @@ class DailyRolloverTest(unittest.TestCase):
                 "- [ ] backlog vault",
             ],
         )
+
+    def test_task_keys_normalize_spacing_around_punctuation(self) -> None:
+        keys = daily_rollover.todo_task_keys(
+            [
+                "- [ ] FIX DAILY NOTE SYNCING/CARRYFORWARD",
+                "- [ ] fix daily note syncing / carryforward",
+                "- [ ] Fix  daily note syncing  /  carryforward",
+            ]
+        )
+
+        self.assertEqual(keys, {"fix daily note syncing/carryforward"})
+
+    def test_main_reconciles_today_from_todo_list_when_yesterday_is_missing(self) -> None:
+        project_root = Path(__file__).resolve().parents[1]
+        vault_root = project_root / "tests" / "_tmp_daily_rollover_reconcile_case"
+        shutil.rmtree(vault_root, ignore_errors=True)
+        vault_root.mkdir(parents=True, exist_ok=True)
+        try:
+            today_file = vault_root / "2026-04-16.md"
+            todo_file = vault_root / "TO DO LIST.md"
+
+            today_file.write_text(
+                textwrap.dedent(
+                    """\
+                    ---
+                    title: 2026-04-16
+                    cssclasses:
+                      - roygbiv-Wed
+                    yesterday: 2026-04-15
+                    tomorrow: 2026-04-17
+                    ---
+
+                    [[TO DO LIST]]
+
+                    *(no incomplete items carried forward)*
+                    """
+                ),
+                encoding="utf-8",
+            )
+
+            todo_file.write_text(
+                textwrap.dedent(
+                    """\
+                    ---
+                    title: TO DO LIST
+                    ---
+
+                    ## Active
+
+                    - WORK
+                    - [ ] FIX DAILY NOTE SYNCING/CARRYFORWARD
+                    - [ ] fix daily note syncing / carryforward
+                    - VAULT
+                    - [ ] FMLA PAPERWORK
+                    """
+                ),
+                encoding="utf-8",
+            )
+
+            with mock.patch.object(daily_rollover, "VAULT_ROOT", vault_root), mock.patch.object(
+                daily_rollover, "TODO_LIST_FILE", todo_file
+            ), mock.patch.object(
+                sys,
+                "argv",
+                ["daily_rollover.py", "--date", "2026-04-16"],
+            ):
+                daily_rollover.main()
+
+            today_text = today_file.read_text(encoding="utf-8")
+            todo_text = todo_file.read_text(encoding="utf-8")
+
+            self.assertIn("cssclasses:\n  - roygbiv-wed", today_text)
+            self.assertEqual(today_text.count("FIX DAILY NOTE SYNCING/CARRYFORWARD"), 1)
+            self.assertNotIn("fix daily note syncing / carryforward", today_text)
+            self.assertIn("FMLA PAPERWORK", today_text)
+            self.assertNotIn("*(no incomplete items carried forward)*", today_text)
+
+            self.assertEqual(todo_text.count("FIX DAILY NOTE SYNCING/CARRYFORWARD"), 1)
+            self.assertNotIn("fix daily note syncing / carryforward", todo_text)
+        finally:
+            shutil.rmtree(vault_root, ignore_errors=True)
 
     def test_main_rewrites_today_and_active_backlog_without_duplicate_sections(self) -> None:
         project_root = Path(__file__).resolve().parents[1]

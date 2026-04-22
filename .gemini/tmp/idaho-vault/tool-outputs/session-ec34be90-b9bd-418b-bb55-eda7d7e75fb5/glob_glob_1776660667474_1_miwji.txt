@@ -1,0 +1,3 @@
+{
+  "output": "Found 4 file(s) matching \"*wizard*\" within C:\\Users\\loganf\\Documents\\IDAHO-VAULT, sorted by modification time (newest first):\nC:\\Users\\loganf\\Documents\\IDAHO-VAULT\\- D&D Beyond - Wizard School Combinations  - Wizard - Class Forums - D&D Beyond Forums.md\nC:\\Users\\loganf\\Documents\\IDAHO-VAULT\\! - Wizard's Rules.md\nC:\\Users\\loganf\\Documents\\IDAHO-VAULT\\salt-wizard.png\nC:\\Users\\loganf\\Documents\\IDAHO-VAULT\\The_Wizard_s_Rules_manual_for_reality.m4a"
+}

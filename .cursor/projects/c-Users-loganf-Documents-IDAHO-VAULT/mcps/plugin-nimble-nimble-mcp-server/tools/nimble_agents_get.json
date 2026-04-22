@@ -1,0 +1,33 @@
+{
+  "name": "nimble_agents_get",
+  "description": "Get full details of a specific agent including its input/output schema.\n\nUse after nimble_agents_list to inspect an agent before running it. The response\nincludes the agent's input_schema (what parameters it needs) and output_schema\n(what fields it returns), along with description and metadata.\n\nArgs:\n    agent_id: Exact agent name from nimble_agents_list or nimble_agents_publish.\n\nReturns:\n    Agent details including name, description, input_schema, and output_schema.",
+  "arguments": {
+    "type": "object",
+    "properties": {
+      "agent_id": {
+        "description": "Exact agent name as returned by nimble_agents_list or nimble_agents_publish.",
+        "title": "Agent Id",
+        "type": "string"
+      }
+    },
+    "required": [
+      "agent_id"
+    ]
+  },
+  "outputSchema": {
+    "type": "object",
+    "properties": {
+      "agent": {
+        "additionalProperties": true,
+        "description": "Raw enriched agent/template payload returned by Bakery for the requested agent name. Includes backend-defined metadata and configuration fields.",
+        "title": "Agent",
+        "type": "object"
+      }
+    },
+    "required": [
+      "agent"
+    ],
+    "description": "Response shape for nimble_agents_get.",
+    "title": "AgentDetailsResult"
+  }
+}

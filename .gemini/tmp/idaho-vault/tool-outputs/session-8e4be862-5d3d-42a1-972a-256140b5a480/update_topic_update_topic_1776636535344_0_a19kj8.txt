@@ -1,0 +1,3 @@
+{
+  "output": "Current topic: \"Investigating Pull Requests\"\nTopic summary: ...\n\nStrategic Intent: I will investigate the pull requests as suggested by the user to understand the origin of the problematic changes."
+}

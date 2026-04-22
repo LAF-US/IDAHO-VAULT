@@ -1,0 +1,18 @@
+{
+  "sessionId": "12e731c6-4e5a-474c-b7c6-b88195fc5a10",
+  "projectHash": "f528f00f72f21423df709bb5104dfe181c28474fac473cf1028c3bfd64be534a",
+  "startTime": "2026-03-30T08:29:59.164Z",
+  "lastUpdated": "2026-03-30T08:29:59.164Z",
+  "messages": [
+    {
+      "id": "33fdc958-069b-4b3a-9f13-c5015f96b76c",
+      "timestamp": "2026-03-30T08:29:59.164Z",
+      "type": "user",
+      "content": [
+        {
+          "text": "**IDAHO-VAULT** **.gemini** crewai create crew latest-ai-development\n"
+        }
+      ]
+    }
+  ]
+}

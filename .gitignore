@@ -131,6 +131,11 @@ _phone-link-sweep.log
 _phone-link-watcher.log
 _phone-link-watcher.pid
 
+# Preserve persona/chamber dotfolders, but ignore heavyweight local runtimes within them
+.local/share/claude/versions/
+.ollama/models/blobs/
+.ollama/models/manifests/
+
 # Local media app cache artifacts
 *.cfa
 *.pek

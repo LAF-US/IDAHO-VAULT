@@ -1,0 +1,47 @@
+{
+  "sessionId": "b9d28477-6950-4d22-838c-2380d35ff50c",
+  "projectHash": "f1995df9c87a82ef506b53a326bbf585c7afc98971408df384653f9daafe1cb4",
+  "startTime": "2026-04-13T17:57:28.212Z",
+  "lastUpdated": "2026-04-13T17:57:55.564Z",
+  "messages": [
+    {
+      "id": "c3cdb46f-9bd9-4feb-825c-3f00cb548c71",
+      "timestamp": "2026-04-13T17:57:28.212Z",
+      "type": "info",
+      "content": "Update successful! The new version will be used on your next run."
+    },
+    {
+      "id": "ba5a0802-b5af-4e63-8f9b-65bde5625b81",
+      "timestamp": "2026-04-13T17:57:52.225Z",
+      "type": "user",
+      "content": [
+        {
+          "text": "restart"
+        }
+      ]
+    },
+    {
+      "id": "1aaaa6b6-d5ce-4847-baa4-7eb81abc5899",
+      "timestamp": "2026-04-13T17:57:55.564Z",
+      "type": "gemini",
+      "content": "Session restarted. All context has been reset.",
+      "thoughts": [
+        {
+          "subject": "Acknowledging the Restart",
+          "description": "I see the request to restart the session. My primary focus is to acknowledge the user's command. I will then confirm the session context reset. Proceeding accordingly.",
+          "timestamp": "2026-04-13T17:57:55.501Z"
+        }
+      ],
+      "tokens": {
+        "input": 101572,
+        "output": 9,
+        "cached": 0,
+        "thoughts": 48,
+        "tool": 0,
+        "total": 101629
+      },
+      "model": "gemini-2.5-flash"
+    }
+  ],
+  "kind": "main"
+}

@@ -142,3 +142,34 @@ jobs:
             --base main \
             --head "$BRANCH_NAME" \
             --label auto-merge
+
+      - name: Resolve rollover PR number
+        if: steps.changes.outputs.has_changes == 'true' && github.event.inputs.dry_run != 'true'
+        id: resolve-pr
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BRANCH_NAME: ${{ steps.commit_push.outputs.branch_name }}
+          EXISTING_PR_NUMBER: ${{ steps.check-pr.outputs.pr_number }}
+        run: |
+          PR_NUMBER="$EXISTING_PR_NUMBER"
+          if [ -z "$PR_NUMBER" ]; then
+            PR_NUMBER=$(gh pr list --head "$BRANCH_NAME" --state open --json number --jq '.[0].number // empty')
+          fi
+
+          if [ -z "$PR_NUMBER" ]; then
+            echo "Unable to resolve an open rollover PR for branch $BRANCH_NAME." >&2
+            exit 1
+          fi
+
+          echo "pr_number=$PR_NUMBER" >> "$GITHUB_OUTPUT"
+
+      - name: Arm auto-merge for rollover PR
+        if: steps.resolve-pr.outputs.pr_number != ''
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 .github/scripts/review_feedback_loop.py \
+            enable-auto-merge \
+            --owner "${{ github.repository_owner }}" \
+            --repo "${{ github.event.repository.name }}" \
+            --pr-number "${{ steps.resolve-pr.outputs.pr_number }}"

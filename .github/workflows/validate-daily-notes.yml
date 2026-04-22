@@ -78,3 +78,60 @@ jobs:
           fi
 
           echo "No unresolved date-placeholder tokens in daily notes or TO DO LIST.md."
+
+      - name: Check latest daily note against active backlog
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from __future__ import annotations
+
+          import importlib.util
+          import re
+          import sys
+          from pathlib import Path
+
+          root = Path(".")
+          todo_file = root / "TO DO LIST.md"
+          note_files = sorted(root.glob("????-??-??.md"))
+
+          if not todo_file.exists() or not note_files:
+              raise SystemExit(0)
+
+          latest_note = note_files[-1]
+          spec = importlib.util.spec_from_file_location(
+              "daily_rollover_validation_module",
+              root / ".github" / "scripts" / "daily_rollover.py",
+          )
+          module = importlib.util.module_from_spec(spec)
+          assert spec.loader is not None
+          spec.loader.exec_module(module)
+
+          active_lines = module.extract_active_section(todo_file.read_text(encoding="utf-8"))
+          note_lines = module.extract_todo_section(latest_note.read_text(encoding="utf-8"))
+          active_keys = module.todo_task_keys(active_lines, keep_completed=False)
+          note_keys = module.todo_task_keys(note_lines, keep_completed=False)
+          missing = sorted(active_keys - note_keys)
+
+          if missing:
+              preview = ", ".join(missing[:5])
+              print(
+                  "::error::Latest daily note is missing active carryforward tasks from TO DO LIST.md",
+                  file=sys.stderr,
+              )
+              print(
+                  f"Latest note: {latest_note} | Missing normalized task keys: {preview}",
+                  file=sys.stderr,
+              )
+              raise SystemExit(1)
+
+          latest_text = latest_note.read_text(encoding="utf-8")
+          if re.search(r"roygbiv-[A-Z][a-z]{2}\b", latest_text):
+              print(
+                  "::error::Latest daily note still contains template-style mixed-case roygbiv cssclasses",
+                  file=sys.stderr,
+              )
+              print(f"Latest note: {latest_note}", file=sys.stderr)
+              raise SystemExit(1)
+
+          print(f"Latest daily note {latest_note} includes the active backlog.")
+          PY

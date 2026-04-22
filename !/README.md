@@ -49,11 +49,14 @@ governance stack are meant to stay legible within that larger order.
 
 ## Startup Sequence
 
-1. Read root `AGENTS.md` for cross-tool pointer context only.
-2. Read `!/WAKEUP.md` to clear stale world models and conflict assumptions.
-3. Read this file to choose the right task branch.
-4. Read only the branch documents needed for the current task.
-5. Escalate to Logan when the task crosses branches, crosses lane ownership, or touches canon.
+## Startup Sequence
+
+1. **Mandatory Initialization**: Execute `start_SPARKSEED.sh` to establish the operational environment and validate all necessary services/tokens.
+2. Read root `AGENTS.md` for cross-tool pointer context only.
+3. Read `!/WAKEUP.md` to clear stale world models and conflict assumptions.
+4. Read this file to choose the right task branch.
+5. Read only the branch documents needed for the current task.
+6. Escalate to Logan when the task crosses branches, crosses lane ownership, or touches canon.
 
 ## Choose Your Branch
 

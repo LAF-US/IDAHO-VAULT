@@ -1,0 +1,3 @@
+{
+  "output": "Output: File copy operation completed for all specified dotfolders.\nProcess Group PGID: 45900"
+}

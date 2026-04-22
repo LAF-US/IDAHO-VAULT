@@ -1,0 +1,9 @@
+<tool_output_masked>
+{
+  "output": "Successfully modified file: C:\\Users\\loganf\\Documents\\IDAHO-VAULT\\!\\!\\__!__\\!\\! The world is quiet here\\DOCKET.md (1 replacements). Here is the updated code:\n...\n| Budget tracker CSV export | Automated | Running | - | Daily
+... [TRUNCATED] ...
+rewrite** | Claude Code | **AWAITING LOGAN** | — | filter-repo ready; 332 MiB trash identified; branch protection disable required before force push |\n\n---\n\n## 📱 [ MOBILE PAGE ] - ARMED 🧿\n*No active pages. Swarm is in Kinetic Release.*\n..."
+}
+
+Output too large. Full output available at: C:\Users\loganf\.gemini\tmp\idaho-vault\tool-outputs\session-f328310d-05ea-45ce-b9cb-fe2717bebe12\replace_replace_1776110967787_2_tk955n.txt
+</tool_output_masked>

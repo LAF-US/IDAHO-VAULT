@@ -1,0 +1,37 @@
+Output: .abhorsen
+.agent-home
+.bartimaeus
+.cache
+.claude
+.codex
+.crewai
+.deepseek
+.dionysus
+.gemini
+.git
+.github
+.google
+.grok
+.makemd
+.meta
+.microsoft
+.npm-cache
+.obsidian
+.op
+.perplexity
+.persephone
+.pip-cache
+.pycache
+.reference-map
+.remember
+.serena
+.slack
+.smart-env
+.space
+.state
+.tmp
+.uv-cache
+.venv
+.vscode
+.zagreus
+Process Group PGID: 74244

@@ -1,0 +1,3 @@
+{
+  "output": "Found 5 matches for pattern \"gardener\" in path \".\":\n---\nFile: BRIEF-LAF-25-2026-04-04.md\nL262: **Flag:** The swarm should hire a dedicated GitHub Gardener.\n---\nFile: _private\\touchstone-repair-clean\\BRIEF-LAF-25-2026-04-04.md\nL262: **Flag:** The swarm should hire a dedicated GitHub Gardener.\n---\nFile: _private\\touchstone-repair\\BRIEF-LAF-25-2026-04-04.md\nL262: **Flag:** The swarm should hire a dedicated GitHub Gardener.\n---\nFile: _private\\workflow-fix-clean\\BRIEF-LAF-25-2026-04-04.md\nL262: **Flag:** The swarm should hire a dedicated GitHub Gardener.\n---\nFile: _private\\rewrite-prep-dirty-2026-04-09\\BRIEF-LAF-25-2026-04-04.md\nL262: **Flag:** The swarm should hire a dedicated GitHub Gardener.\n---"
+}

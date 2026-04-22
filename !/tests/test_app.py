@@ -1,31 +1,31 @@
 from __future__ import annotations
 
-import json
-import tempfile
+import importlib.util
 import unittest
 from pathlib import Path
-from unittest.mock import patch
-
-import swarm.app as app
 
 
-class AppLoopTest(unittest.TestCase):
-    def test_process_document_writes_file_and_manifest(self):
-        with tempfile.TemporaryDirectory() as tmpdir:
-            vault_root = Path(tmpdir)
-            manifest = vault_root / "manifest.json"
-            manifest.write_text('{"files": []}\n', encoding="utf-8")
+def load_app_module():
+    repo_root = Path(__file__).resolve().parents[2]
+    module_path = repo_root / "main.py"
+    spec = importlib.util.spec_from_file_location("vault_main", module_path)
+    if spec is None or spec.loader is None:
+        raise RuntimeError(f"Unable to load app module from {module_path}")
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
 
-            with patch.object(app, "VAULT_ROOT", vault_root), patch.object(app, "MANIFEST_PATH", manifest):
-                entry = app.run("process document")
 
-            created_file = vault_root / entry["path"]
-            self.assertTrue(created_file.exists())
+class AppRouteTest(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.app_module = load_app_module()
+        cls.client = cls.app_module.app.test_client()
 
-            data = json.loads(manifest.read_text(encoding="utf-8"))
-            self.assertEqual(1, len(data["files"]))
-            self.assertEqual(entry["path"], data["files"][0]["path"])
-            self.assertEqual("ingest", data["files"][0]["type"])
+    def test_post_handler_returns_ok(self):
+        response = self.client.post("/")
+        self.assertEqual(200, response.status_code)
+        self.assertEqual("OK", response.get_data(as_text=True))
 
 
 if __name__ == "__main__":

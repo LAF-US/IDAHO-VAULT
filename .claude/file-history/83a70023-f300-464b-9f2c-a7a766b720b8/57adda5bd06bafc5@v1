@@ -1,0 +1,47 @@
+{
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "claudeCode.preferredLocation": "panel",
+    "mcpServers": {},
+    "codium.git.showCommitNotification": false,
+    "codium.codeCompletion.enable": true,
+    "codium.customInstructions.allMessages": "Help maintain and develop https://www.github.com/loganfinney27/IDAHO-VAULT",
+    "codium.customInstructions.specificCommands": {},
+    "codium.editorButton": true,
+    "codium.rag.maxRemoteSnippets": 5,
+    "codium.terminalAllowedCommands": [],
+    "codium.terminalBlockedCommands": [],
+    "codium.commitMessage.format": "",
+    "codium.agenticAiCliCommands": [],
+    "claudeCode.useCtrlEnterToSend": true,
+    "workbench.startupEditor": "none",
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": true,
+        "scminput": false
+    },
+    "git.enableSmartCommit": true,
+    "chat.mcp.gallery.enabled": true,
+    "geminicodeassist.project": "idaho-vault",
+    "diffEditor.codeLens": true,
+    "chatgpt.followUpQueueMode": "steer",
+    "python.analysis.typeCheckingMode": "standard",
+    "python.analysis.diagnosticSeverityOverrides": {},
+    "geminicodeassist.outlines.automaticOutlineGeneration": true,
+    "chat.useNestedAgentsMdFiles": true,
+    "inlineChat.notebookAgent": true,
+    "geminicodeassist.agentDebugMode": true,
+    "github.copilot.chat.agent.autoFix": true,
+    "github.copilot.chat.switchAgent.enabled": true,
+    "chat.subagents.allowInvocationsFromSubagents": true,
+    "workbench.editorAssociations": {
+        "*.copilotmd": "vscode.markdown.preview.editor",
+        "*.vsix": "default"
+    },
+    "workbench.editor.autoLockGroups": {
+        "workbench.editor.processExplorer": false,
+        "terminalEditor": false
+    },
+    "coderabbit.autoReviewMode": "auto"
+}

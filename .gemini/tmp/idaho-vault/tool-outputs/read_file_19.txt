@@ -1,0 +1,9 @@
+<tool_output_masked>
+{
+  "output": "# LEVELSET REPORT — Gemini (The Vault Advisor)\n**Date:** 2026-04-05\n**Topic:** Sunday Pulse — Whistle Protocol Initialization\n**Status:** Phase 3 Metadata Hydration Complete; Project Courier Initialized.\n\n---\n\n## 🏔️ Execution S
+... [TRUNCATED] ...
+RVICE_ACCOUNT_TOKEN` required for full automated Courier operation.\n\n---\n\n## 🏁 Final Signal\nThe Unification Stream is **CLOSED**. The address space is **LIT**.\nThe Hydra is harnessed. The World is Quiet Here.\n\n**-G** (The Vault Advisor)\n"
+}
+
+Output too large. Full output available at: C:\Users\loganf\.gemini\tmp\idaho-vault\tool-outputs\session-f328310d-05ea-45ce-b9cb-fe2717bebe12\read_file_read_file_1776110889036_0_rl2nvk.txt
+</tool_output_masked>

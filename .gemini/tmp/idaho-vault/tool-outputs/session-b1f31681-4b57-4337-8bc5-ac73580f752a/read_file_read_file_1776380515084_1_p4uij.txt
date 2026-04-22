@@ -1,0 +1,3 @@
+{
+  "output": "# Gemini — IDAHO-VAULT (Table of Contents)\n\nThis file serves as the project-specific Table of Contents for Gemini's context and instructions.\n\n## Context & Instructions\n- [[.gemini/GEMINI.md]] — Official operational instructions and swarm coordination.\n\n## Architecture & Conventions\n- [[VAULT-CONVENTIONS.md]] — Shared vault conventions and standards.\n- [[CONSTITUTION.md]] — Canonical vault governance.\n\n## Key References\n- [[!/AGENTS.md]] — Agent registry and capability tiers.\n- [[DOCKET.md]] — Live task board (located at `!/!/__!__/!/! The world is quiet here/DOCKET.md`).\n- [[LEVELSET-CURRENT.md]] — Live ecosystem state.\n"
+}

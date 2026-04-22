@@ -1,0 +1,55 @@
+{"id":"019d19a2-6ff2-7cf3-a8e7-16f38b9dee35","thread_name":"List available tools","updated_at":"2026-03-23T07:39:38.225548Z"}
+{"id":"019d1d8a-4053-7f93-b610-7061e9b7a152","thread_name":"Explain codebase structure","updated_at":"2026-03-24T01:52:00.2880545Z"}
+{"id":"019d2308-c368-7ca0-8331-65a7d470352c","thread_name":"Refactor note tags","updated_at":"2026-03-25T03:29:04.3551265Z"}
+{"id":"019d368d-a650-7db0-9143-3effeda1048a","thread_name":"Clarify request details","updated_at":"2026-03-28T22:25:52.8756125Z"}
+{"id":"019d3697-3280-7cc3-91d5-6792af9f021e","thread_name":"Review uncommitted changes","updated_at":"2026-03-28T22:36:18.9042147Z"}
+{"id":"019d369f-6db6-7be2-927a-18ee1739008a","thread_name":"Review habit tracker diff","updated_at":"2026-03-28T22:45:20.3179887Z"}
+{"id":"019d37ae-a1a0-7702-884f-3bac1a1b3ac8","thread_name":"Fix docker spawn ENOENT","updated_at":"2026-03-29T03:41:32.6024521Z"}
+{"id":"019d46ed-4410-7883-8e83-afd2f6be9fe2","thread_name":"Awaken Codex alert","updated_at":"2026-04-01T02:44:36.620154Z"}
+{"id":"019d4719-21ce-7f20-8d3c-4223205e2a58","thread_name":"Clarify task prompt","updated_at":"2026-04-01T03:32:09.5367126Z"}
+{"id":"019d4719-4228-7893-be08-b264860b51aa","thread_name":"Handle empty prompt","updated_at":"2026-04-01T03:32:21.5199485Z"}
+{"id":"019d4719-5460-7b10-bdb3-4728ca6f3192","thread_name":"Clarify empty prompt","updated_at":"2026-04-01T03:32:22.4808662Z"}
+{"id":"019d4719-6674-7242-b28e-5b97403f1c29","thread_name":"Clarify empty prompt","updated_at":"2026-04-01T03:32:28.9750415Z"}
+{"id":"019d4722-0ff9-75e0-8965-28d7e43e19a0","thread_name":"Clarify task details","updated_at":"2026-04-01T03:41:59.3396492Z"}
+{"id":"019d472b-7f7b-7000-becf-70e849c16620","thread_name":"Verify thread completion","updated_at":"2026-04-01T03:52:13.8483053Z"}
+{"id":"019d472b-9b44-7812-9781-8ff3c28d4634","thread_name":"Verify thread completion","updated_at":"2026-04-01T03:52:23.3508176Z"}
+{"id":"019d472b-ab89-7760-bad1-d438eb2db294","thread_name":"Verify thread completion","updated_at":"2026-04-01T03:52:24.6521355Z"}
+{"id":"019d472b-c29c-7b80-9e58-c26c3f3c9093","thread_name":"Verify thread complete","updated_at":"2026-04-01T03:52:31.0158143Z"}
+{"id":"019d4740-17ac-79a2-8cf9-f40035bc90c5","thread_name":"Verify thread completion","updated_at":"2026-04-01T04:14:43.8219512Z"}
+{"id":"019d474f-4ad3-72a3-94f3-9a47dedd9fd4","thread_name":"Set Codex status signals","updated_at":"2026-04-01T04:31:25.9210098Z"}
+{"id":"019d474f-4ad3-72a3-94f3-9a47dedd9fd4","thread_name":"CODEX APP","updated_at":"2026-04-01T04:31:37.0510413Z"}
+{"id":"019d47a1-9e9c-7171-b063-752c5657820e","thread_name":"Hunt vault zombies and ghosts","updated_at":"2026-04-01T06:02:00.6292815Z"}
+{"id":"019d47a1-9e9c-7171-b063-752c5657820e","thread_name":"The Hunter","updated_at":"2026-04-01T06:20:26.2004898Z"}
+{"id":"019d474f-4ad3-72a3-94f3-9a47dedd9fd4","thread_name":"CODEX ADMIN","updated_at":"2026-04-02T01:28:53.5296154Z"}
+{"id":"019d4bd1-2171-7741-bde3-b3c57fb032e8","thread_name":"Link GitHub Linear Slack","updated_at":"2026-04-02T01:33:32.4122757Z"}
+{"id":"019d474f-4ad3-72a3-94f3-9a47dedd9fd4","thread_name":"CODEX \"BROTHER\"","updated_at":"2026-04-02T03:07:10.9817248Z"}
+{"id":"019d4bd1-2171-7741-bde3-b3c57fb032e8","thread_name":"CODEX \"SISTER\"","updated_at":"2026-04-02T03:07:19.9443253Z"}
+{"id":"019d4c8e-bc81-77f1-8073-f5464335ed6a","thread_name":"Install Google Antigravity IDE","updated_at":"2026-04-02T04:58:45.4223475Z"}
+{"id":"019d50e7-0024-70b2-ad77-923977703877","thread_name":"Fix VS Code startup error","updated_at":"2026-04-03T01:13:41.4564331Z"}
+{"id":"019d50e7-0024-70b2-ad77-923977703877","thread_name":"The Janitor","updated_at":"2026-04-03T09:10:32.7957334Z"}
+{"id":"019d50e7-0024-70b2-ad77-923977703877","thread_name":"THE JANITOR","updated_at":"2026-04-08T04:15:05.0707801Z"}
+{"id":"019d6bc1-4508-7ab2-a7ed-85dee1b47375","thread_name":"Draft rewrite readiness checklist","updated_at":"2026-04-08T06:22:14.7684776Z"}
+{"id":"019d6bc1-5c79-7381-a053-825c3cfcca3c","thread_name":"Plan rewrite cleanup","updated_at":"2026-04-08T06:22:19.9151563Z"}
+{"id":"019d6bc1-cb76-7433-9fec-4d756d3028f4","thread_name":"Plan local rewrite cleanup","updated_at":"2026-04-08T06:22:48.1619028Z"}
+{"id":"019d710e-3c2c-7bc1-aec7-aed6bc4cf349","thread_name":"Handle empty prompt","updated_at":"2026-04-09T07:04:18.8430652Z"}
+{"id":"019d7112-72a5-7823-956a-9cbfee415bd6","thread_name":"Prepare filter-repo purge plan","updated_at":"2026-04-09T07:08:58.8738481Z"}
+{"id":"019d719f-fdf4-7ec1-a5be-17cd8836b721","thread_name":"Clarify unclear request","updated_at":"2026-04-09T09:43:36.344719Z"}
+{"id":"019d719f-fdf4-7ec1-a5be-17cd8836b721","thread_name":"THE TRAINEE","updated_at":"2026-04-09T19:13:59.7969741Z"}
+{"id":"019d73ac-451c-7d50-97c9-83f8d8fe33a1","thread_name":"Review flatten prep scope","updated_at":"2026-04-09T19:16:14.9099834Z"}
+{"id":"019d77fe-7b09-7793-bbc1-e38935737005","thread_name":"Audit onboarding contradictions","updated_at":"2026-04-10T15:24:37.3006393Z"}
+{"id":"019d77fe-94a3-7983-b1bd-85db399ade53","thread_name":"Audit deployment blockers","updated_at":"2026-04-10T15:24:44.0284875Z"}
+{"id":"019d781a-be34-7041-abb1-577f9360b907","thread_name":"Audit detritus patterns","updated_at":"2026-04-10T15:55:22.6676737Z"}
+{"id":"019d7a4e-3d7a-7f22-b897-1f24ab274883","thread_name":"Diagnose line-ending churn","updated_at":"2026-04-11T02:10:54.5195518Z"}
+{"id":"019d7f6a-a6ca-7372-851c-b89dce684808","thread_name":"Locate Trouble context","updated_at":"2026-04-12T01:59:56.8022007Z"}
+{"id":"019d7f6a-a6ca-7372-851c-b89dce684808","thread_name":"PLUGIN MECHANIC","updated_at":"2026-04-12T02:34:00.3765595Z"}
+{"id":"019d8405-e4ef-78a3-a3c4-e907ec9c1a10","thread_name":"Investigate ship clockwork","updated_at":"2026-04-12T23:28:07.6450306Z"}
+{"id":"019d87d0-f876-7003-bc52-bbef2e77a24c","thread_name":"Create hello world","updated_at":"2026-04-13T17:08:56.0093543Z"}
+{"id":"019d9249-e0ee-7020-a305-b6369cd02251","thread_name":"Boot CrewAI assistant","updated_at":"2026-04-15T17:57:16.4989539Z"}
+{"id":"019d924b-53f5-78f1-a0d4-69aa13191f54","thread_name":"Inspect CrewAI bootstrap path","updated_at":"2026-04-15T17:58:36.013841Z"}
+{"id":"019d924b-6bc1-7fa2-aa36-5e5a0e068c59","thread_name":"Inspect CrewAI boot blockers","updated_at":"2026-04-15T17:58:43.3183951Z"}
+{"id":"019d97e5-5518-7300-95bd-df0e652db663","thread_name":"Review syntactical coherence","updated_at":"2026-04-16T20:05:01.971106Z"}
+{"id":"019d87d0-f876-7003-bc52-bbef2e77a24c","thread_name":"PLAYTESTER","updated_at":"2026-04-16T20:43:33.8230322Z"}
+{"id":"019d97e5-5518-7300-95bd-df0e652db663","thread_name":"SENIOR GAME DEV","updated_at":"2026-04-16T20:43:39.7534153Z"}
+{"id":"019d97e5-5518-7300-95bd-df0e652db663","thread_name":"GAME DEV","updated_at":"2026-04-16T20:43:46.5322971Z"}
+{"id":"019d97e5-5518-7300-95bd-df0e652db663","thread_name":"SENIOR DEV","updated_at":"2026-04-17T02:20:45.3224838Z"}
+{"id":"019d97e5-5518-7300-95bd-df0e652db663","thread_name":"GAME DEV","updated_at":"2026-04-17T20:49:31.0269383Z"}

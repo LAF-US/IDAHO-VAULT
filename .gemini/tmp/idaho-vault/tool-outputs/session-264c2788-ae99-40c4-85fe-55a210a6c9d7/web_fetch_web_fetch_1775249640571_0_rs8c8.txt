@@ -1,0 +1,4 @@
+{
+  "output": "Error: Error during fallback processing: The user aborted a request.",
+  "error": "[Operation Cancelled] User cancelled tool execution."
+}

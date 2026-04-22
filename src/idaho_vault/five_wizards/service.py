@@ -55,7 +55,11 @@ class FiveWizardsStageResult(ServiceBaseModel):
         if self.materialized:
             if not self.stage_root or not self.pack_root or not self.materialized_paths:
                 raise ValueError("Materialized results require stage_root, pack_root, and materialized_paths.")
+            if self.pack_root != _pack_root(self.stage_root, self.run_id):
+                raise ValueError("Materialized results must report the canonical pack_root.")
         else:
+            if self.pack_root is not None:
+                raise ValueError("Dry-run service results must not report a pack_root.")
             if self.materialized_paths:
                 raise ValueError("Dry-run service results must not report written paths.")
         return self

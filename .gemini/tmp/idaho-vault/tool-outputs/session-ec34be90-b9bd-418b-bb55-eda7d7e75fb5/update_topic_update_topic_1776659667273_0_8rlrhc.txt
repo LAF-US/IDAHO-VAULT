@@ -1,0 +1,3 @@
+{
+  "output": "Current topic: \"Awaiting Mental Model Description\"\nTopic summary: The user has indicated they are about to share a 'mental model' they have been constructing. My next action is to simply listen and understand what they are about to describe. I will signal my readiness to receive this information.\n\nStrategic Intent: Acknowledge the user's intention to describe a mental model and signal readiness to receive the information."
+}

@@ -1,0 +1,9 @@
+<tool_output_masked>
+{
+  "output": "---\nauthority: LOGAN\nrelated:\n  - 1Password\n  - '2026-04-04'\n  - '2026-04-05'\n  - AGENTS\n  - Anthropic\n  - Bartimaeus\n  - Breadcrumbs\n  - CHAINFIRE\n  - CLAUDE\n  - CONSTITUTION\n  - CrewAI\n  - DECISIONS\n  - GCP\n  - GEMINI
+... [TRUNCATED] ...
+ycles\n\n---\n\n*LEVELSET-CURRENT.md — Originally synthesized 2026-03-13. Living document, updated each LEVELSET round. Permanent audit trail in numbered LEVELSET files at `!/!/`. Last updated 2026-04-05 (evening) by Claude Code (The Abhorsen).*\n"
+}
+
+Output too large. Full output available at: C:\Users\loganf\.gemini\tmp\idaho-vault\tool-outputs\session-f328310d-05ea-45ce-b9cb-fe2717bebe12\read_file_read_file_1776110974829_0_24kmva.txt
+</tool_output_masked>

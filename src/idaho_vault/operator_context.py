@@ -127,11 +127,14 @@ def _normalize_relpath(relpath: str) -> str:
 
 
 def _tracked_files(root: Path) -> set[str] | None:
-    result = subprocess.run(
-        ["git", "-C", str(root), "ls-files"],
-        capture_output=True,
-        text=True,
-    )
+    try:
+        result = subprocess.run(
+            ["git", "-C", str(root), "ls-files"],
+            capture_output=True,
+            text=True,
+        )
+    except OSError:
+        return None
     if result.returncode != 0:
         return None
     return {_normalize_relpath(line) for line in result.stdout.splitlines() if line.strip()}

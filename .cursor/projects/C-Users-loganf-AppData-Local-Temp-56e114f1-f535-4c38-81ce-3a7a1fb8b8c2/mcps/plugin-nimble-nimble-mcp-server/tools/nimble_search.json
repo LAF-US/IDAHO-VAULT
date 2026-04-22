@@ -1,0 +1,191 @@
+{
+  "name": "nimble_search",
+  "description": "Search the web using Nimble's Search API with configurable content richness.\n\nThis tool provides comprehensive web search capabilities across multiple sources and formats.\nUse for research, fact-checking, finding sources, or gathering current information.\n\nArgs:\n    query: The search query to execute. Can be natural language questions or keywords.\n\n    max_results: Maximum number of search results to return (1-100). Default is 3.\n        Actual count may be less depending on available results.\n        - Use 3-5 for quick lookups or simple questions\n        - Use 10-20 for standard research tasks\n        - Use 50+ for comprehensive research or when you need diverse sources\n\n    focus: Search focus mode that determines content sources and ranking.\n        Can be a single mode string or a list of explicit subagent names.\n\n        Single mode options:\n        - \"general\": Standard web search (default)\n        - \"news\": Real-time news search\n        - \"location\": Location-based search\n        - \"shopping\": E-commerce and product search (AI-powered)\n        - \"geo\": Generative engine optimization (AI-powered)\n        - \"social\": Social media content search (AI-powered)\n\n        Or a list of explicit agent names (e.g., [\"amazon_serp\", \"target_serp\"])\n        for fine-grained control over AI-powered searches. Max 10 items.\n\n    output_format: Content output format for extracted pages:\n        - \"markdown\": Markdown-formatted content with structure (default)\n        - \"plain_text\": Plain text without formatting\n        - \"simplified_html\": Clean HTML without scripts/styles\n\n    locale: Language/locale code (e.g., \"en\", \"fr\", \"de\"). Defaults to \"en\".\n\n    country: Country code for geo-targeted results (e.g., \"US\", \"GB\", \"IL\").\n        Defaults to \"US\".\n\n    search_depth: Content richness level. Default is \"lite\".\n        - \"lite\": Metadata only (title, description, URL). Fast (1-3 seconds).\n            Use for quick lookups, getting links, or simple fact-checking.\n        - \"deep\": Full page scraping with complete article text. Slower (5-15 seconds).\n            Use for in-depth research, analysis, and detailed answers.\n\n    include_answer: Generate an LLM-powered answer summary based on search results.\n        Default is False.\n\n    include_domains: Whitelist of domains to include in search results (max 50).\n        Only results from these domains will be returned.\n        Example: [\"wikipedia.org\", \"britannica.com\"]\n\n    exclude_domains: Blacklist of domains to exclude from search results (max 50).\n        Results from these domains will be filtered out.\n        Example: [\"pinterest.com\", \"facebook.com\"]\n\n    start_date: Filter results after this date. Format: YYYY-MM-DD or YYYY.\n        Cannot be combined with time_range.\n\n    end_date: Filter results before this date. Format: YYYY-MM-DD or YYYY.\n        Cannot be combined with time_range.\n\n    time_range: Filter by recency with predefined periods.\n        Cannot be combined with start_date/end_date.\n        Options: \"hour\", \"day\", \"week\", \"month\", \"year\"\n\n    content_type: Filter by content type (only supported with focus=\"general\").\n        Supports semantic groups (\"documents\", \"spreadsheets\", \"presentations\")\n        and specific formats (\"pdf\", \"docx\", \"xlsx\", etc.).\n\n    max_subagents: Maximum number of parallel agents for AI-powered focus modes (1-10).\n        Default is 3. Only applies to shopping, social, geo focus modes\n        and explicit agent lists. Ignored for general, news, location modes.\n\n    tool_reasoning: Optional reasoning about why this tool was selected.\n    tool_description: Optional description of the tool's purpose.\n\nReturns:\n    dict: A dictionary containing:\n        - results (list): List of search result objects with content and metadata\n        - answer (str, optional): LLM-generated answer if include_answer=True",
+  "arguments": {
+    "type": "object",
+    "properties": {
+      "query": {
+        "title": "Query",
+        "type": "string"
+      },
+      "max_results": {
+        "default": 3,
+        "title": "Max Results",
+        "type": "integer"
+      },
+      "focus": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        ],
+        "default": "general",
+        "title": "Focus"
+      },
+      "output_format": {
+        "default": "markdown",
+        "title": "Output Format",
+        "type": "string"
+      },
+      "locale": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Locale"
+      },
+      "country": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Country"
+      },
+      "search_depth": {
+        "default": "lite",
+        "title": "Search Depth",
+        "type": "string"
+      },
+      "include_answer": {
+        "default": false,
+        "title": "Include Answer",
+        "type": "boolean"
+      },
+      "include_domains": {
+        "anyOf": [
+          {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Include Domains"
+      },
+      "exclude_domains": {
+        "anyOf": [
+          {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Exclude Domains"
+      },
+      "start_date": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Start Date"
+      },
+      "end_date": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "End Date"
+      },
+      "time_range": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Time Range"
+      },
+      "content_type": {
+        "anyOf": [
+          {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Content Type"
+      },
+      "max_subagents": {
+        "default": 3,
+        "title": "Max Subagents",
+        "type": "integer"
+      },
+      "tool_reasoning": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Tool Reasoning"
+      },
+      "tool_description": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Tool Description"
+      }
+    },
+    "required": [
+      "query"
+    ]
+  },
+  "outputSchema": {
+    "type": "object",
+    "additionalProperties": true
+  },
+  "plugin": "nimble",
+  "marketplace": "claude-plugins-official"
+}

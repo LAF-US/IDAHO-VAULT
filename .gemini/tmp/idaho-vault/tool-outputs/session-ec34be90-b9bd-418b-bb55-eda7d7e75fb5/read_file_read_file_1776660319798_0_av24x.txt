@@ -1,0 +1,3 @@
+{
+  "output": "---\ntitle: \"Mental Model: The Three-Circle System\"\nupdated: 2026-04-19\nstatus: draft\nauthority: gemini\n---\n\n```mermaid\nvennDiagram\n    A: BULLET JOURNAL\n    B: ZETTEL KASTEN\n```\n\n*   **The Bullet Journal (A):** User's daily context & tasks.\n*   **The Zettelkasten (B):** Vault's networked knowledge base.\n*   **The UNIFIED SWARM (C):** AI agents for Retrieval-Augmented Generation (RAG).\n"
+}

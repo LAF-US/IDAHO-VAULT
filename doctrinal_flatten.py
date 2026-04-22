@@ -252,6 +252,13 @@ def summarize(entries: list[dict[str, object]]) -> dict[str, int]:
     return dict(sorted(counts.items()))
 
 
+def display_manifest_path(repo_root: Path, manifest_path: Path) -> str:
+    try:
+        return str(manifest_path.relative_to(repo_root))
+    except ValueError:
+        return str(manifest_path)
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Execute the doctrinal vault flatten with a manifest-first move plan.")
     parser.add_argument("--repo-root", default=".", help="Path to the vault root")
@@ -273,7 +280,7 @@ def main() -> int:
     remove_empty_directories(repo_root)
 
     summary = summarize(manifest_entries)
-    print(json.dumps({"manifest": str(manifest_path.relative_to(repo_root)), "summary": summary}, indent=2))
+    print(json.dumps({"manifest": display_manifest_path(repo_root, manifest_path), "summary": summary}, indent=2))
     return 0
 
 

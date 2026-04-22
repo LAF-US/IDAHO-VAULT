@@ -1,0 +1,109 @@
+# Incident Brief — PR Sync Failure (LAF-14 / LAF-15)
+
+## Context
+
+LAF-14 delivered `linear-pr-sync.yml` via PR #87 (merged). LAF-15 is Codex's v2 safeguards pass (PR #85, closed but code consolidated into Copilot PR #96, open). Every run of the sync workflow since deployment has failed. This brief captures the confirmed failure point, root cause, secondary risks, and acceptance criteria for Codex's fix.
+
+---
+
+## Confirmed Failure Point
+
+**`LINEAR_API_KEY` is not set in GitHub Actions secrets.**
+
+Every run fails at the first line of the Python block:
+
+```
+LINEAR_API_KEY:
+LINEAR_API_KEY is not set.
+##[error]Process completed with exit code 1.
+```
+
+`gh secret list` confirms the repository has only `DEEPSEEK_V3_0324` and `OPENAI_GPT_5`. `LINEAR_API_KEY` has never been configured. This affects 100% of sync runs across all PR events.
+
+---
+
+## Likely Root Cause
+
+Workflow was merged (LAF-14 / PR #87) before the prerequisite secret was added to the repository. The code is correct — it fails intentionally — but the operational setup step was never completed.
+
+**This is a config gap, not a code bug.** No code change can resolve it. Logan must add `LINEAR_API_KEY` in GitHub → Settings → Secrets and Variables → Actions.
+
+---
+
+## Secondary Risks
+
+### 1. Broken trigger chain in PR #96 (Copilot omnibus)
+
+If PR #96 merges as-is, the sync breaks entirely by a different mechanism:
+
+- On `main` today: `linear-pr-sync.yml` has `on: pull_request: types: [...]` — a direct trigger.
+- On the Copilot branch: `linear-pr-sync.yml` was changed to `on: workflow_call:` only. `pr-linear-sync.yml` is also `workflow_call: + workflow_dispatch:` only.
+- **There is no caller workflow** that bridges `pull_request` events into either reusable workflow.
+- After merge: no PR events would trigger any Linear sync. The feature would silently disappear.
+
+The `pr-linear-sync.yml` comment acknowledges this:
+> "Another workflow (e.g., linear-pr-sync.yml) should call it via `workflow_call`... to avoid duplicate Linear updates."
+
+But that caller was never written.
+
+### 2. `workflow_call` context propagation gap
+
+`pr-linear-sync.yml` passes `github.event.pull_request.*` env vars to the Python script. In a `workflow_call` context, the caller's `pull_request` event context is NOT automatically inherited — it must be explicitly passed as `inputs:`. Without this, the called workflow receives empty PR data even when the secret is present.
+
+### 3. Duplicate state IDs secret dependency
+
+`pr-linear-sync.yml` expects `LINEAR_PR_OPEN_STATE_ID` and `LINEAR_PR_MERGED_STATE_ID` as additional secrets. The v1 workflow dynamically resolves state IDs via GraphQL (resilient). The v2 approach requires pre-populating two more secrets with team-specific Linear UUIDs — an op burden that v1 avoids. If these aren't set, v2 won't function even with `LINEAR_API_KEY` present.
+
+### 4. `review-response.yml` noise (minor, separate)
+
+PR #85 showed three consecutive `acknowledge-review` failures from CodeRabbit automated reviews. Not related to sync logic, but worth noting as workflow noise.
+
+---
+
+## Recommended Acceptance Criteria for the Fix
+
+**Must have:**
+1. `LINEAR_API_KEY` added to GitHub Actions secrets (Logan ops task — blocks everything else).
+2. Exactly one workflow owns the `on: pull_request: types: [opened, reopened, ready_for_review, closed]` trigger — no duplication, no silent removal.
+3. Draft PRs are skipped (do not fire sync until `ready_for_review`).
+4. Branch-name fallback for issue ID extraction (e.g., `laf-123` in branch name resolves to `LAF-123`).
+5. Closed-without-merge events exit 0 cleanly (already correct in v1).
+6. Actionable log output distinguishing: missing secret / no issue ID found / Linear API error / state not found.
+
+**Should have:**
+7. If `pr-linear-sync.yml` remains as a reusable workflow, a concrete caller workflow must exist with the direct PR trigger that passes required context as `inputs:`.
+8. Dynamic state ID resolution (v1 approach) preferred over secret-backed state IDs — reduces ops burden and is resilient to team workflow changes.
+
+**Nice to have:**
+9. Optional linkback comment to Linear when PR opens or merges (`LINEAR_POST_LINKBACK` var, off by default).
+
+---
+
+## Review of Codex's Direction
+
+Codex's LAF-15 implementation (`linear_pr_sync.py` + `pr-linear-sync.yml`) is solid on code quality:
+- Branch-name fallback: present ✓
+- Draft guard: needs verification in actual event handling
+- Better error messages: present ✓
+- Modular/testable: yes ✓
+
+**Gaps not covered by Codex:**
+- The missing `LINEAR_API_KEY` secret (ops, not code — Logan's action).
+- The missing caller workflow after the `workflow_call` refactor — this is the merge safety risk.
+- `workflow_call` context propagation for PR event data (likely a bug in how env vars are set).
+- The two new secret dependencies (`LINEAR_PR_OPEN_STATE_ID`, `LINEAR_PR_MERGED_STATE_ID`) that weren't needed in v1.
+
+**Recommendation for Codex:** Before PR #96 merges, verify that either:
+  - `linear-pr-sync.yml` retains a direct `pull_request:` trigger (and calls `pr-linear-sync.yml` as a reusable step), OR
+  - A new wrapper workflow is added that owns the `pull_request:` trigger and passes PR context to the called workflow.
+
+Do not merge PR #96 until this trigger chain is verified end-to-end.
+
+---
+
+## Critical Files
+
+- [.github/workflows/linear-pr-sync.yml](.github/workflows/linear-pr-sync.yml) — v1, on `main`, has direct trigger (currently failing on missing secret)
+- `.github/workflows/pr-linear-sync.yml` — v2, on Copilot branch only, `workflow_call` only (no direct trigger)
+- `.github/scripts/linear_pr_sync.py` — v2 sync script, on Copilot branch only
+- PR #96 (`copilot/logans-project-execution`) — omnibus merge that converts both workflows to `workflow_call`-only

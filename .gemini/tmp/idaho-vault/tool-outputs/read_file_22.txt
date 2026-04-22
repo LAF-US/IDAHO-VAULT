@@ -1,0 +1,9 @@
+<tool_output_masked>
+{
+  "output": "---\nupdated: 2026-04-12\nstatus: AFK - SWARM OPERATIONAL\ndate created: Monday, March 30th 2026, 7:54:37 pm\ndate modified: Sunday, April 12th 2026, 9:12:00 pm\n---\n\n# THE DOCKET\n\nThis is the live coordination board. Any agent arr
+... [TRUNCATED] ...
+and merges. No agent merges without Logan's approval.\n4. If two agents touch the same file, **stop and flag it**.\n5. This file is the live status board. Update it when you start or finish work.\n\n---\n\n###### [[\"The world is quiet here.\"]]\n"
+}
+
+Output too large. Full output available at: C:\Users\loganf\.gemini\tmp\idaho-vault\tool-outputs\session-f328310d-05ea-45ce-b9cb-fe2717bebe12\read_file_read_file_1776110817788_0_470q1k.txt
+</tool_output_masked>

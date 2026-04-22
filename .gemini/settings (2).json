@@ -1,0 +1,66 @@
+{
+  "security": {
+    "auth": {
+      "selectedType": "oauth-personal"
+    },
+    "environmentVariableRedaction": {
+      "enabled": true
+    },
+    "enableConseca": false,
+    "disableYoloMode": true,
+    "enablePermanentToolApproval": true,
+    "autoAddToPolicyByDefault": true,
+    "blockGitExtensions": false
+  },
+  "ide": {
+    "hasSeenNudge": true,
+    "enabled": true
+  },
+  "model": {
+    "name": "auto-gemini-2.5",
+    "compressionThreshold": 0.75
+  },
+  "experimental": {
+    "contextManagement": true,
+    "worktrees": true,
+    "modelSteering": true,
+    "directWebFetch": true,
+    "memoryManager": true,
+    "generalistProfile": true,
+    "topicUpdateNarration": true
+  },
+  "ui": {
+    "footer": {
+      "hideContextPercentage": false
+    },
+    "inlineThinkingMode": "full",
+    "showStatusInTitle": true,
+    "hideTips": false,
+    "escapePastedAtSymbols": true,
+    "showCitations": true,
+    "showModelInfoInChat": true,
+    "useAlternateBuffer": true,
+    "terminalBuffer": true,
+    "loadingPhrases": "all",
+    "errorVerbosity": "full"
+  },
+  "general": {
+    "plan": {
+      "directory": ""
+    }
+  },
+  "context": {
+    "loadMemoryFromIncludeDirectories": true,
+    "fileFiltering": {
+      "respectGitIgnore": false,
+      "respectGeminiIgnore": false,
+      "enableRecursiveFileSearch": false
+    }
+  },
+  "tools": {
+    "disableLLMCorrection": false
+  },
+  "hooksConfig": {
+    "notifications": true
+  }
+}

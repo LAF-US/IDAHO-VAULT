@@ -1,0 +1,1117 @@
+=== ai-templater ===
+{
+  "defaultEndpoint": "",
+  "defaultModel": "gpt-4-turbo",
+  "defaultApiKey": "",
+  "defaultMaxOutgoingCharacters": 4096,
+  "defaultMaxNumTokens": 1024,
+  "debugToConsole": true,
+  "displayTokenUsageDesktop": true,
+  "displayTokenUsageMobile": true,
+  "defaultSystemMessage": "You are a helpful assistant."
+}
+=== breadcrumbs ===
+{
+  "is_dirty": false,
+  "edge_fields": [
+    {
+      "label": "up"
+    },
+    {
+      "label": "down"
+    },
+    {
+      "label": "same"
+    },
+    {
+      "label": "next"
+    },
+    {
+      "label": "prev"
+    },
+    {
+      "label": "parent"
+    },
+    {
+      "label": "tags"
+    },
+    {
+      "label": "related"
+    }
+  ],
+  "edge_field_groups": [
+    {
+      "label": "ups",
+      "fields": [
+        "up",
+        "parent",
+        "tags"
+      ]
+    },
+    {
+      "label": "downs",
+      "fields": [
+        "down"
+      ]
+    },
+    {
+      "label": "sames",
+      "fields": [
+        "same",
+        "related"
+      ]
+    },
+    {
+      "label": "nexts",
+      "fields": [
+        "next"
+      ]
+    },
+    {
+      "label": "prevs",
+      "fields": [
+        "prev"
+      ]
+    }
+  ],
+  "implied_relations": {
+    "transitive": [
+      {
+        "name": "",
+        "rounds": 1,
+        "chain": [
+          {
+            "field": "up"
+          }
+        ],
+        "close_field": "down",
+        "close_reversed": true
+      },
+      {
+        "name": "",
+        "rounds": 1,
+        "chain": [
+          {
+            "field": "down"
+          }
+        ],
+        "close_field": "up",
+        "close_reversed": true
+      },
+      {
+        "name": "",
+        "rounds": 1,
+        "chain": [
+          {
+            "field": "same"
+          }
+        ],
+        "close_field": "same",
+        "close_reversed": true
+      },
+      {
+        "name": "",
+        "rounds": 1,
+        "chain": [
+          {
+            "field": "next"
+          }
+        ],
+        "close_field": "prev",
+        "close_reversed": true
+      },
+      {
+        "name": "",
+        "rounds": 1,
+        "chain": [
+          {
+            "field": "prev"
+          }
+        ],
+        "close_field": "next",
+        "close_reversed": true
+      }
+    ]
+  },
+  "explicit_edge_sources": {
+    "typed_link": {},
+    "list_note": {
+      "default_neighbour_field": ""
+    },
+    "tag_note": {
+      "default_field": "up"
+    },
+    "regex_note": {
+      "default_field": "up"
+    },
+    "dendron_note": {
+      "enabled": false,
+      "delimiter": ".",
+      "default_field": "up",
+      "display_trimmed": false
+    },
+    "johnny_decimal_note": {
+      "enabled": false,
+      "delimiter": ".",
+      "default_field": "up"
+    },
+    "date_note": {
+      "enabled": false,
+      "date_format": "yyyy-MM-dd",
+      "default_field": "next",
+      "stretch_to_existing": false
+    }
+  },
+  "views": {
+    "page": {
+      "all": {
+        "sticky": false,
+        "readable_line_width": true
+      },
+      "trail": {
+        "enabled": true,
+        "format": "grid",
+        "selection": "all",
+        "default_depth": 999,
+        "no_path_message": "",
+        "show_controls": true,
+        "merge_fields": false,
+        "field_group_labels": [
+          "ups"
+        ],
+        "show_node_options": {
+          "ext": false,
+          "folder": false,
+          "alias": false
+        }
+      },
+      "prev_next": {
+        "enabled": true,
+        "show_node_options": {
+          "ext": false,
+          "folder": false,
+          "alias": false
+        },
+        "field_group_labels": {
+          "prev": [
+            "prevs"
+          ],
+          "next": [
+            "nexts"
+          ]
+        }
+      }
+    },
+    "side": {
+      "matrix": {
+        "collapse": false,
+        "edge_sort_id": {
+          "field": "basename",
+          "order": 1
+        },
+        "show_node_options": {
+          "ext": false,
+          "folder": false,
+          "alias": false
+        },
+        "show_attributes": [
+          "source",
+          "implied_kind",
+          "round"
+        ],
+        "field_group_labels": [
+          "ups",
+          "downs",
+          "sames",
+          "nexts",
+          "prevs"
+        ],
+        "lock_view": false,
+        "lock_path": ""
+      },
+      "tree": {
+        "collapse": false,
+        "show_attributes": [],
+        "merge_fields": false,
+        "lock_view": false,
+        "lock_path": "",
+        "field_group_labels": [
+          "downs"
+        ],
+        "edge_sort_id": {
+          "field": "basename",
+          "order": 1
+        },
+        "show_node_options": {
+          "ext": false,
+          "folder": false,
+          "alias": false
+        }
+      }
+    },
+    "codeblocks": {
+      "show_node_options": {
+        "ext": false,
+        "folder": false,
+        "alias": false
+      }
+    }
+  },
+  "commands": {
+    "rebuild_graph": {
+      "notify": true,
+      "trigger": {
+        "note_save": false,
+        "layout_change": false
+      }
+    },
+    "list_index": {
+      "default_options": {
+        "fields": [],
+        "indent": "\\t",
+        "link_kind": "wiki",
+        "show_attributes": [],
+        "field_group_labels": [],
+        "edge_sort_id": {
+          "order": 1,
+          "field": "basename"
+        },
+        "show_node_options": {
+          "ext": false,
+          "alias": true,
+          "folder": false
+        }
+      }
+    },
+    "freeze_implied_edges": {
+      "default_options": {
+        "destination": "frontmatter",
+        "included_fields": [],
+        "use_alias": true
+      }
+    },
+    "thread": {
+      "default_options": {
+        "destination": "frontmatter",
+        "target_path_template": "{{source.folder}}/{{attr.field}} {{source.basename}}"
+      }
+    }
+  },
+  "suggestors": {
+    "edge_field": {
+      "enabled": false,
+      "trigger": "."
+    }
+  },
+  "debug": {
+    "level": "INFO"
+  }
+}
+=== dataview ===
+{
+  "renderNullAs": "[]",
+  "taskCompletionTracking": true,
+  "taskCompletionUseEmojiShorthand": true,
+  "taskCompletionText": "completion",
+  "taskCompletionDateFormat": "yyyy-MM-dd",
+  "recursiveSubTaskCompletion": true,
+  "warnOnEmptyResult": true,
+  "refreshEnabled": true,
+  "refreshInterval": 2500,
+  "defaultDateFormat": "yyyy/mm/dd",
+  "defaultDateTimeFormat": "h:mm a - MMMM dd, yyyy",
+  "maxRecursiveRenderDepth": 4,
+  "tableIdColumnName": "File",
+  "tableGroupColumnName": "Group",
+  "showResultCount": true,
+  "allowHtml": true,
+  "inlineQueryPrefix": "=",
+  "inlineJsQueryPrefix": "$=",
+  "inlineQueriesInCodeblocks": true,
+  "enableInlineDataview": true,
+  "enableDataviewJs": true,
+  "enableInlineDataviewJs": true,
+  "prettyRenderInlineFields": true,
+  "prettyRenderInlineFieldsInLivePreview": true,
+  "dataviewJsKeyword": "dataviewjs"
+}
+=== handwritten-notes ===
+{
+  "defaultPath": "",
+  "assetUrl": "",
+  "useRelativePaths": true,
+  "showWelcomeModal": false,
+  "collapseEmbeds": true,
+  "favoriteTemplate": "blank.pdf",
+  "templatesAtCustom": false,
+  "templatesPath": "/templates/",
+  "openInNewTab": true,
+  "createFolderIfNotExists": false
+}
+=== home-tab ===
+{
+  "logoType": "default",
+  "logo": {
+    "lucideIcon": "",
+    "imagePath": "",
+    "imageLink": ""
+  },
+  "logoScale": 1.2,
+  "iconColorType": "default",
+  "wordmark": "The Vault",
+  "customFont": "textFont",
+  "fontSize": "4em",
+  "fontColorType": "default",
+  "fontWeight": 600,
+  "maxResults": 5,
+  "showbookmarkedFiles": true,
+  "showRecentFiles": true,
+  "maxRecentFiles": 5,
+  "storeRecentFile": true,
+  "showPath": true,
+  "selectionHighlight": "default",
+  "showShortcuts": true,
+  "markdownOnly": false,
+  "unresolvedLinks": true,
+  "recentFilesStore": [
+    {
+      "filepath": "_ACT.md",
+      "timestamp": 1776441650195
+    }
+  ],
+  "bookmarkedFileStore": [],
+  "searchDelay": 0,
+  "replaceNewTabs": true,
+  "newTabOnStart": false,
+  "closePreviousSessionTabs": false,
+  "omnisearch": true,
+  "showOmnisearchExcerpt": true
+}
+=== letterboxd-rss-sync ===
+{
+  "username": "loganfinney",
+  "dateFormat": "YYYY-MM-DD",
+  "path": "LETTERBOXD",
+  "sort": "New",
+  "callout": "ListReview",
+  "stars": 1,
+  "addReferenceId": true,
+  "linkDate": true
+}
+=== msg-handler ===
+{
+  "searchEnabled": true,
+  "logEnabled": true
+}
+=== nldates-obsidian ===
+{
+  "autosuggestToggleLink": true,
+  "autocompleteTriggerPhrase": "@",
+  "isAutosuggestEnabled": true,
+  "format": "YYYY-MM-DD",
+  "timeFormat": "HH:mm:ss",
+  "separator": " _",
+  "weekStart": "locale-default",
+  "modalToggleTime": false,
+  "modalToggleLink": false,
+  "modalMomentFormat": "YYYY-MM-DD HH:mm"
+}
+=== obsidian-day-planner ===
+{
+  "snapStepMinutes": 10,
+  "progressIndicator": "bar",
+  "showTaskNotification": true,
+  "zoomLevel": 1,
+  "timelineIcon": "calendar-with-checkmark",
+  "endLabel": "All done",
+  "startHour": 6,
+  "timelineDateFormat": "YYYY-MM-DD",
+  "centerNeedle": true,
+  "plannerHeading": "Day planner",
+  "plannerHeadingLevel": 1,
+  "timelineColored": true,
+  "timelineStartColor": "#ffffff",
+  "timelineEndColor": "#000000",
+  "timestampFormat": "HH:mm",
+  "hourFormat": "H",
+  "dataviewSource": "",
+  "extendDurationUntilNext": true,
+  "defaultDurationMinutes": 30,
+  "minimalDurationMinutes": 10,
+  "showTimestampInTaskBlock": true,
+  "showUncheduledTasks": true,
+  "showUnscheduledNestedTasks": true,
+  "showNow": true,
+  "showNext": true,
+  "pluginVersion": "0.28.0",
+  "showCompletedTasks": true,
+  "showSubtasksInTaskBlocks": true,
+  "icals": [],
+  "colorOverrides": [],
+  "releaseNotes": true,
+  "taskStatusOnCreation": " ",
+  "eventFormatOnCreation": "task",
+  "sortTasksInPlanAfterEdit": true,
+  "firstDayOfWeek": "monday",
+  "multiDayRange": "3-days",
+  "showTimeTracker": true,
+  "showActiveClocks": false,
+  "rawIcals": []
+}
+=== obsidian-git ===
+{
+  "commitMessage": "vault backup: {{date}}",
+  "autoCommitMessage": "vault backup: {{date}}",
+  "commitMessageScript": "",
+  "commitDateFormat": "YYYY-MM-DD HH:mm:ss",
+  "autoSaveInterval": 0,
+  "autoPushInterval": 0,
+  "autoPullInterval": 0,
+  "autoPullOnBoot": true,
+  "autoCommitOnlyStaged": true,
+  "disablePush": false,
+  "pullBeforePush": true,
+  "disablePopups": false,
+  "showErrorNotices": true,
+  "disablePopupsForNoChanges": true,
+  "listChangedFilesInMessageBody": true,
+  "showStatusBar": true,
+  "updateSubmodules": false,
+  "syncMethod": "merge",
+  "mergeStrategy": "none",
+  "customMessageOnAutoBackup": true,
+  "autoBackupAfterFileChange": false,
+  "treeStructure": false,
+  "refreshSourceControl": true,
+  "basePath": "",
+  "differentIntervalCommitAndPush": true,
+  "changedFilesInStatusBar": true,
+  "showedMobileNotice": true,
+  "refreshSourceControlTimer": 7000,
+  "showBranchStatusBar": true,
+  "setLastSaveToLastCommit": true,
+  "submoduleRecurseCheckout": false,
+  "gitDir": "",
+  "showFileMenu": true,
+  "authorInHistoryView": "initials",
+  "dateInHistoryView": true,
+  "diffStyle": "split",
+  "hunks": {
+    "showSigns": true,
+    "hunkCommands": true,
+    "statusBar": "colored"
+  },
+  "lineAuthor": {
+    "show": false,
+    "followMovement": "inactive",
+    "authorDisplay": "initials",
+    "showCommitHash": true,
+    "dateTimeFormatOptions": "date",
+    "dateTimeFormatCustomString": "YYYY-MM-DD HH:mm",
+    "dateTimeTimezone": "viewer-local",
+    "coloringMaxAge": "1y",
+    "colorNew": {
+      "r": 255,
+      "g": 150,
+      "b": 150
+    },
+    "colorOld": {
+      "r": 120,
+      "g": 160,
+      "b": 255
+    },
+    "textColorCss": "var(--text-muted)",
+    "ignoreWhitespace": true,
+    "gutterSpacingFallbackLength": 12,
+    "lastShownAuthorDisplay": "initials",
+    "lastShownDateTimeFormatOptions": "date"
+  }
+}
+=== obsidian-icon-shortcodes ===
+{
+  "code2emoji": true,
+  "suggester": true,
+  "disabledPacks": [],
+  "triggerWithTrailingSpace": true,
+  "spaceAfterSC": true,
+  "isMigrated": false
+}
+=== obsidian-linter ===
+{
+  "ruleConfigs": {
+    "add-blank-line-after-yaml": {
+      "enabled": true
+    },
+    "dedupe-yaml-array-values": {
+      "enabled": true,
+      "dedupe-alias-key": true,
+      "dedupe-tag-key": true,
+      "dedupe-array-keys": true,
+      "ignore-keys": ""
+    },
+    "escape-yaml-special-characters": {
+      "enabled": false,
+      "try-to-escape-single-line-arrays": false
+    },
+    "force-yaml-escape": {
+      "enabled": false,
+      "force-yaml-escape-keys": ""
+    },
+    "format-tags-in-yaml": {
+      "enabled": true
+    },
+    "format-yaml-array": {
+      "enabled": false,
+      "alias-key": true,
+      "tag-key": true,
+      "default-array-style": "single-line",
+      "default-array-keys": true,
+      "force-single-line-array-style": "",
+      "force-multi-line-array-style": ""
+    },
+    "insert-yaml-attributes": {
+      "enabled": false,
+      "text-to-insert": "aliases: \ntags: "
+    },
+    "move-tags-to-yaml": {
+      "enabled": true,
+      "how-to-handle-existing-tags": "Remove hashtag",
+      "tags-to-ignore": ""
+    },
+    "remove-yaml-keys": {
+      "enabled": false,
+      "yaml-keys-to-remove": ""
+    },
+    "sort-yaml-array-values": {
+      "enabled": false,
+      "sort-alias-key": true,
+      "sort-tag-key": true,
+      "sort-array-keys": true,
+      "ignore-keys": "",
+      "sort-order": "Ascending Alphabetical"
+    },
+    "yaml-key-sort": {
+      "enabled": false,
+      "yaml-key-priority-sort-order": "",
+      "priority-keys-at-start-of-yaml": true,
+      "yaml-sort-order-for-other-keys": "None"
+    },
+    "yaml-timestamp": {
+      "enabled": true,
+      "date-created": true,
+      "date-created-key": "date created",
+      "date-created-source-of-truth": "file system",
+      "date-modified": true,
+      "date-modified-key": "date modified",
+      "date-modified-source-of-truth": "file system",
+      "format": "dddd, MMMM Do YYYY, h:mm:ss a",
+      "convert-to-utc": false,
+      "update-on-file-contents-updated": "never"
+    },
+    "yaml-title": {
+      "enabled": false,
+      "title-key": "title",
+      "mode": "first-h1-or-filename-if-h1-missing"
+    },
+    "yaml-title-alias": {
+      "enabled": false,
+      "preserve-existing-alias-section-style": true,
+      "keep-alias-that-matches-the-filename": false,
+      "use-yaml-key-to-keep-track-of-old-filename-or-heading": true,
+      "alias-helper-key": "linter-yaml-title-alias"
+    },
+    "capitalize-headings": {
+      "enabled": false,
+      "style": "Title Case",
+      "ignore-case-words": true,
+      "ignore-words": "macOS, iOS, iPhone, iPad, JavaScript, TypeScript, AppleScript, I",
+      "lowercase-words": "a, an, the, aboard, about, abt., above, abreast, absent, across, after, against, along, aloft, alongside, amid, amidst, mid, midst, among, amongst, anti, apropos, around, round, as, aslant, astride, at, atop, ontop, bar, barring, before, B4, behind, below, beneath, neath, beside, besides, between, 'tween, beyond, but, by, chez, circa, c., ca., come, concerning, contra, counting, cum, despite, spite, down, during, effective, ere, except, excepting, excluding, failing, following, for, from, in, including, inside, into, less, like, minus, modulo, mod, near, nearer, nearest, next, notwithstanding, of, o', off, offshore, on, onto, opposite, out, outside, over, o'er, pace, past, pending, per, plus, post, pre, pro, qua, re, regarding, respecting, sans, save, saving, short, since, sub, than, through, thru, throughout, thruout, till, times, to, t', touching, toward, towards, under, underneath, unlike, until, unto, up, upon, versus, vs., v., via, vice, vis-à-vis, wanting, with, w/, w., c̄, within, w/i, without, 'thout, w/o, abroad, adrift, aft, afterward, afterwards, ahead, apart, ashore, aside, away, back, backward, backwards, beforehand, downhill, downstage, downstairs, downstream, downward, downwards, downwind, east, eastward, eastwards, forth, forward, forwards, heavenward, heavenwards, hence, henceforth, here, hereby, herein, hereof, hereto, herewith, home, homeward, homewards, indoors, inward, inwards, leftward, leftwards, north, northeast, northward, northwards, northwest, now, onward, onwards, outdoors, outward, outwards, overboard, overhead, overland, overseas, rightward, rightwards, seaward, seawards, skywards, skyward, south, southeast, southwards, southward, southwest, then, thence, thenceforth, there, thereby, therein, thereof, thereto, therewith, together, underfoot, underground, uphill, upstage, upstairs, upstream, upward, upwards, upwind, west, westward, westwards, when, whence, where, whereby, wherein, whereto, wherewith, although, because, considering, given, granted, if, lest, once, provided, providing, seeing, so, supposing, though, unless, whenever, whereas, wherever, while, whilst, ago, inasmuch, even, whether, whose, whoever, why, how, whatever, what, both, and, or, either, neither, nor, just, rather, such, that, yet, is, it"
+    },
+    "file-name-heading": {
+      "enabled": false
+    },
+    "header-increment": {
+      "enabled": false,
+      "start-at-h2": false
+    },
+    "headings-start-line": {
+      "enabled": false
+    },
+    "remove-trailing-punctuation-in-heading": {
+      "enabled": false,
+      "punctuation-to-remove": ".,;:!。，；：！"
+    },
+    "footnote-after-punctuation": {
+      "enabled": false
+    },
+    "move-footnotes-to-the-bottom": {
+      "enabled": false,
+      "include-blank-line-between-footnotes": false
+    },
+    "re-index-footnotes": {
+      "enabled": false
+    },
+    "auto-correct-common-misspellings": {
+      "enabled": false,
+      "ignore-words": "",
+      "skip-words-with-multiple-capitals": false,
+      "extra-auto-correct-files": []
+    },
+    "blockquote-style": {
+      "enabled": false,
+      "style": "space"
+    },
+    "convert-bullet-list-markers": {
+      "enabled": false
+    },
+    "default-language-for-code-fences": {
+      "enabled": false,
+      "default-language": ""
+    },
+    "emphasis-style": {
+      "enabled": false,
+      "style": "consistent"
+    },
+    "no-bare-urls": {
+      "enabled": false,
+      "no-bare-uris": false
+    },
+    "ordered-list-style": {
+      "enabled": false,
+      "number-style": "ascending",
+      "list-end-style": "."
+    },
+    "proper-ellipsis": {
+      "enabled": false
+    },
+    "quote-style": {
+      "enabled": false,
+      "single-quote-enabled": true,
+      "single-quote-style": "''",
+      "double-quote-enabled": true,
+      "double-quote-style": "\"\""
+    },
+    "remove-consecutive-list-markers": {
+      "enabled": false
+    },
+    "remove-empty-list-markers": {
+      "enabled": false
+    },
+    "remove-hyphenated-line-breaks": {
+      "enabled": false
+    },
+    "remove-multiple-spaces": {
+      "enabled": false
+    },
+    "strong-style": {
+      "enabled": false,
+      "style": "consistent"
+    },
+    "two-spaces-between-lines-with-content": {
+      "enabled": false,
+      "line-break-indicator": "  "
+    },
+    "unordered-list-style": {
+      "enabled": false,
+      "list-style": "consistent"
+    },
+    "compact-yaml": {
+      "enabled": false,
+      "inner-new-lines": false
+    },
+    "consecutive-blank-lines": {
+      "enabled": false
+    },
+    "convert-spaces-to-tabs": {
+      "enabled": false,
+      "tabsize": 4
+    },
+    "empty-line-around-blockquotes": {
+      "enabled": false
+    },
+    "empty-line-around-code-fences": {
+      "enabled": false
+    },
+    "empty-line-around-horizontal-rules": {
+      "enabled": false
+    },
+    "empty-line-around-math-blocks": {
+      "enabled": false
+    },
+    "empty-line-around-tables": {
+      "enabled": false
+    },
+    "heading-blank-lines": {
+      "enabled": false,
+      "bottom": true,
+      "empty-line-after-yaml": true
+    },
+    "line-break-at-document-end": {
+      "enabled": false
+    },
+    "move-math-block-indicators-to-their-own-line": {
+      "enabled": false
+    },
+    "paragraph-blank-lines": {
+      "enabled": false
+    },
+    "remove-empty-lines-between-list-markers-and-checklists": {
+      "enabled": false
+    },
+    "remove-link-spacing": {
+      "enabled": false
+    },
+    "remove-space-around-characters": {
+      "enabled": false,
+      "include-fullwidth-forms": true,
+      "include-cjk-symbols-and-punctuation": true,
+      "include-dashes": true,
+      "other-symbols": ""
+    },
+    "remove-space-before-or-after-characters": {
+      "enabled": false,
+      "characters-to-remove-space-before": ",!?;:).’”]",
+      "characters-to-remove-space-after": "¿¡‘“(["
+    },
+    "space-after-list-markers": {
+      "enabled": false
+    },
+    "space-between-chinese-japanese-or-korean-and-english-or-numbers": {
+      "enabled": false,
+      "english-symbols-punctuation-before": "-+;:'\"°%$)]",
+      "english-symbols-punctuation-after": "-+'\"([¥$"
+    },
+    "trailing-spaces": {
+      "enabled": false,
+      "two-space-line-break": false
+    },
+    "add-blockquote-indentation-on-paste": {
+      "enabled": false
+    },
+    "prevent-double-checklist-indicator-on-paste": {
+      "enabled": false
+    },
+    "prevent-double-list-item-indicator-on-paste": {
+      "enabled": false
+    },
+    "proper-ellipsis-on-paste": {
+      "enabled": false
+    },
+    "remove-hyphens-on-paste": {
+      "enabled": false
+    },
+    "remove-leading-or-trailing-whitespace-on-paste": {
+      "enabled": false
+    },
+    "remove-leftover-footnotes-from-quote-on-paste": {
+      "enabled": false
+    },
+    "remove-multiple-blank-lines-on-paste": {
+      "enabled": false
+    }
+  },
+  "lintOnSave": true,
+  "recordLintOnSaveLogs": false,
+  "displayChanged": false,
+  "suppressMessageWhenNoChange": true,
+  "lintOnFileChange": true,
+  "displayLintOnFileChangeNotice": true,
+  "settingsConvertedToConfigKeyValues": true,
+  "additionalFileExtensions": [],
+  "foldersToIgnore": [],
+  "filesToIgnore": [],
+  "linterLocale": "system-default",
+  "logLevel": "ERROR",
+  "lintCommands": [],
+  "customRegexes": [],
+  "commonStyles": {
+    "aliasArrayStyle": "multi-line",
+    "tagArrayStyle": "multi-line",
+    "minimumNumberOfDollarSignsToBeAMathBlock": 2,
+    "escapeCharacter": "\"",
+    "removeUnnecessaryEscapeCharsForMultiLineArrays": false
+  }
+}
+=== obsidian-local-rest-api ===
+{
+  "port": 27124,
+  "insecurePort": 27123,
+  "enableInsecureServer": false,
+  "apiKey": "9a637b0754f5b56fa73fb538f1240672f23cea37520ce7cdd221b5747746db2a",
+  "crypto": {
+    "cert": "-----BEGIN CERTIFICATE-----\r\nMIIDRTCCAi2gAwIBAgIBATANBgkqhkiG9w0BAQsFADAiMSAwHgYDVQQDExdPYnNp\r\nZGlhbiBMb2NhbCBSRVNUIEFQSTAeFw0yNjAzMjQwMDA3NDFaFw0yNzAzMjQwMDA3\r\nNDFaMCIxIDAeBgNVBAMTF09ic2lkaWFuIExvY2FsIFJFU1QgQVBJMIIBIjANBgkq\r\nhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5s3lQKCsiMF7r6AhvZfxReigG8duqobs\r\nRicxdkbqXBAmThm9PnEAo6Z4GKpgaqn7vyjgRYwWK9M/XW3JMa9EeoS1FgCUzDjL\r\nNGTDfkeT3jiJL0tcBg9XtdCLkKMvxzwcTHfdRh4egvc7dCIbJI13nAB51bMTyeei\r\nRBAF7IcGjEX6FQ0BImRaOpUHmnqrbiDxU1oxRAvpiVZzoysz9D0iNgKpp7gDkTNP\r\nfwPXP9ex0H7BEa3QC1XLI7J45H8qQeDng9IRL1FSadGSDfMleKCrVs16bcgDRIpL\r\n3gKZTjsE3nMNTIIHMZEk1hAJnyA/vKl1ODdEMyCykn+CHVMnExxoyQIDAQABo4GF\r\nMIGCMA8GA1UdEwEB/wQFMAMBAf8wDgYDVR0PAQH/BAQDAgLEMDsGA1UdJQQ0MDIG\r\nCCsGAQUFBwMBBggrBgEFBQcDAgYIKwYBBQUHAwMGCCsGAQUFBwMEBggrBgEFBQcD\r\nCDARBglghkgBhvhCAQEEBAMCAPcwDwYDVR0RBAgwBocEfwAAATANBgkqhkiG9w0B\r\nAQsFAAOCAQEA3dYZ0bKcSfs3KnUQwnG/gRX+eemCs6Fzmr9wA+tgmkiMOeUGtG5j\r\nfE7TYqNV8jUAZr2PujCeNFG0eQ8FMgNLFACi1rHlXBJmq9cJwTwd3O11dZF66v3I\r\njwuMlJsgoquVWJYOBEMwB9rZ6T7zmV2kad8dKEfWzgskUbLJj3p0x7vNXobh7Vb2\r\n7AK6HiBJyuosI7Ldz/g9RiSkEHevhXKB3yvW5y94QDTPqS52cO2uhdV8sp79GqDv\r\n03lheO5iMIbMZGtkaeHAPa6Re9fVmkNvUaP8jdpfc1GZiP+T9n272jIoew8hdVeB\r\nyLVmdrcWhOlSogWr8GDe17jO3KGVOosruw==\r\n-----END CERTIFICATE-----\r\n",
+    "privateKey": "-----BEGIN RSA PRIVATE KEY-----\r\nMIIEogIBAAKCAQEA5s3lQKCsiMF7r6AhvZfxReigG8duqobsRicxdkbqXBAmThm9\r\nPnEAo6Z4GKpgaqn7vyjgRYwWK9M/XW3JMa9EeoS1FgCUzDjLNGTDfkeT3jiJL0tc\r\nBg9XtdCLkKMvxzwcTHfdRh4egvc7dCIbJI13nAB51bMTyeeiRBAF7IcGjEX6FQ0B\r\nImRaOpUHmnqrbiDxU1oxRAvpiVZzoysz9D0iNgKpp7gDkTNPfwPXP9ex0H7BEa3Q\r\nC1XLI7J45H8qQeDng9IRL1FSadGSDfMleKCrVs16bcgDRIpL3gKZTjsE3nMNTIIH\r\nMZEk1hAJnyA/vKl1ODdEMyCykn+CHVMnExxoyQIDAQABAoIBAACfA3vO6uPz1FnC\r\nxjB4zxYLdBnbCavVEN/39Ui+lF0i0H2TkWgwfOpT1X0ogTmsQzCOozrgr4MW7pPZ\r\naqoS8Q3c21Fntz7M9NQLZODLP8VAdPMPAnyEME3dlbCSFdv1CBT3Gh35EQc0c+Ei\r\nQd0xccXWVP2bnaUkldHV0rRCIUUBnmWZaNKqSc9rMkCw32yUp1XhNbvIsUuaTy3G\r\nhIkE9DdaswkSxrWFUYE6ClAMPDJMb2eTJYvU9a8frQNQTuJ3iNYGsNZJfR0tkt+z\r\n8yHUcqIMALNExntE0MKGjYppW+yjRfRY7JFhHZGQ6PL4gRbK7gJb3HTyK+6cfPaQ\r\n391MmkECgYEA9UHTD3JWlDWckb70Da/cO0xozrBPxR7lQvm/ZzgvHqZxx0tHLTIG\r\nUxi8aT+gACnHbU5F0r2MsYkjY6813jb2l2eBs2WFp15v3IeJAZ04sR+A0wBaehWX\r\nOzeaWA3PjD9mzelEs7eycmFtaTbuh7mUwGWv3CTLpTYnuA1AiHOrOMECgYEA8OoB\r\nRNtBJ4KxdAaGRIvmIB28yXUuJc0rp+u4o37tjv9E184b4V70V5gbd061QMB4QcmA\r\nICt8g0HcWxMS8UpaLenWR6+PNq+q7qMny0aEJzgCc96tN9aGKhmGdTFTN095ssjW\r\nCHebpJWv2V5IfhE0kB4C3bjfeuXNbi4QLj736gkCgYArbdWG9bM5GWk5MbwbtFlm\r\nMriYaQYnHLpyKrFnAL7vSX/6T20yJpqSGl46sOaPQNasl2Cr2Z7RTTx0CXGbgNYX\r\np1+DOeX55jIete1f2MxSKQbx1i0vUyVtegIdt4xaBFwa+ESPImc58+Cg8fY5GHar\r\nvxXuAKIDBlzwLYCQ6RKXwQKBgBnacuJpyRctXk++N4B5puuBZXYVHiuuVeYCVOEu\r\nyN2UpVWnZ7SK1RvlVeU6zBaz0PP2ZMqPACCx26zmYh0ExqKwum8c9vh+Z5COb8HP\r\nwnTW/ORkXCBm5CT2ckh3T5/a5ot6JAXqmAhUi/d+t7bXr9VbcyFKKqlsqdwOE2xz\r\nE3XJAoGAF+yizg7tPLKdioFDzj4HWlJZCpWRQdJyg+/7U7GpgS9AZi1aXGpY+O3k\r\nuFebXCLFPErImeurJ8EcfK+dF/ErhTPNMVhUxufkRtZLyVx5eKVXHcvoWeNqugAz\r\nrr/zMAgFIMQVXunCRL4XC+w1zdGfXQyyNkZ/rje6QK2W3TTkqVg=\r\n-----END RSA PRIVATE KEY-----\r\n",
+    "publicKey": "-----BEGIN PUBLIC KEY-----\r\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5s3lQKCsiMF7r6AhvZfx\r\nReigG8duqobsRicxdkbqXBAmThm9PnEAo6Z4GKpgaqn7vyjgRYwWK9M/XW3JMa9E\r\neoS1FgCUzDjLNGTDfkeT3jiJL0tcBg9XtdCLkKMvxzwcTHfdRh4egvc7dCIbJI13\r\nnAB51bMTyeeiRBAF7IcGjEX6FQ0BImRaOpUHmnqrbiDxU1oxRAvpiVZzoysz9D0i\r\nNgKpp7gDkTNPfwPXP9ex0H7BEa3QC1XLI7J45H8qQeDng9IRL1FSadGSDfMleKCr\r\nVs16bcgDRIpL3gKZTjsE3nMNTIIHMZEk1hAJnyA/vKl1ODdEMyCykn+CHVMnExxo\r\nyQIDAQAB\r\n-----END PUBLIC KEY-----\r\n"
+  }
+}
+=== obsidian-tasks-plugin ===
+{
+  "presets": {
+    "this_file": "path includes {{query.file.path}}",
+    "this_folder": "folder includes {{query.file.folder}}",
+    "this_folder_only": "filter by function task.file.folder === query.file.folder",
+    "this_root": "root includes {{query.file.root}}",
+    "hide_date_fields": "# Hide any values for all date fields\nhide due date\nhide scheduled date\nhide start date\nhide created date\nhide done date\nhide cancelled date",
+    "hide_non_date_fields": "# Hide all the non-date fields, but not tags\nhide id\nhide depends on\nhide recurrence rule\nhide on completion\nhide priority",
+    "hide_query_elements": "# Hide toolbar, postpone, edit and backlinks\nhide toolbar\nhide postpone button\nhide edit button\nhide backlinks",
+    "hide_everything": "# Hide everything except description and any tags\npreset hide_date_fields\npreset hide_non_date_fields\npreset hide_query_elements"
+  },
+  "globalQuery": "",
+  "globalFilter": "",
+  "removeGlobalFilter": false,
+  "taskFormat": "tasksPluginEmoji",
+  "setCreatedDate": true,
+  "setDoneDate": true,
+  "setCancelledDate": true,
+  "autoSuggestInEditor": true,
+  "autoSuggestMinMatch": 0,
+  "autoSuggestMaxItems": 20,
+  "provideAccessKeys": true,
+  "useFilenameAsScheduledDate": true,
+  "filenameAsScheduledDateFormat": "",
+  "filenameAsDateFolders": [],
+  "recurrenceOnNextLine": true,
+  "removeScheduledDateOnRecurrence": false,
+  "statusSettings": {
+    "coreStatuses": [
+      {
+        "symbol": " ",
+        "name": "Todo",
+        "nextStatusSymbol": "x",
+        "availableAsCommand": true,
+        "type": "TODO"
+      },
+      {
+        "symbol": "x",
+        "name": "Done",
+        "nextStatusSymbol": " ",
+        "availableAsCommand": true,
+        "type": "DONE"
+      }
+    ],
+    "customStatuses": [
+      {
+        "symbol": "/",
+        "name": "In Progress",
+        "nextStatusSymbol": "x",
+        "availableAsCommand": true,
+        "type": "IN_PROGRESS"
+      },
+      {
+        "symbol": "-",
+        "name": "Cancelled",
+        "nextStatusSymbol": " ",
+        "availableAsCommand": true,
+        "type": "CANCELLED"
+      }
+    ]
+  },
+  "isShownInEditModal": {
+    "priority": true,
+    "recurrence": true,
+    "due": true,
+    "scheduled": true,
+    "start": true,
+    "before_this": true,
+    "after_this": true,
+    "status": true,
+    "created": true,
+    "done": true,
+    "cancelled": true
+  },
+  "features": {
+    "INTERNAL_TESTING_ENABLED_BY_DEFAULT": true
+  },
+  "generalSettings": {},
+  "headingOpened": {
+    "Core Statuses": true,
+    "Custom Statuses": true
+  },
+  "debugSettings": {
+    "ignoreSortInstructions": false,
+    "showTaskHiddenData": false,
+    "recordTimings": false
+  },
+  "loggingOptions": {
+    "minLevels": {
+      "": "info",
+      "tasks": "info",
+      "tasks.Cache": "info",
+      "tasks.Events": "info",
+      "tasks.File": "info",
+      "tasks.Query": "info",
+      "tasks.Task": "info"
+    }
+  }
+}
+=== omnisearch ===
+{
+  "useCache": false,
+  "hideExcluded": false,
+  "recencyBoost": "3",
+  "downrankedFoldersFilters": [
+    "!"
+  ],
+  "ignoreDiacritics": true,
+  "ignoreArabicDiacritics": false,
+  "indexedFileTypes": [],
+  "displayTitle": "canonical reference",
+  "PDFIndexing": true,
+  "officeIndexing": true,
+  "imagesIndexing": true,
+  "aiImageIndexing": false,
+  "unsupportedFilesIndexing": "default",
+  "splitCamelCase": true,
+  "openInNewPane": true,
+  "vimLikeNavigationShortcut": false,
+  "ribbonIcon": true,
+  "showExcerpt": true,
+  "maxEmbeds": 5,
+  "renderLineReturnInExcerpts": true,
+  "showCreateButton": true,
+  "highlight": true,
+  "showPreviousQueryResults": true,
+  "simpleSearch": true,
+  "tokenizeUrls": true,
+  "fuzziness": "2",
+  "weightBasename": 10,
+  "weightDirectory": 7,
+  "weightH1": 6,
+  "weightH2": 5,
+  "weightH3": 4,
+  "weightUnmarkedTags": 2,
+  "weightCustomProperties": [],
+  "httpApiEnabled": true,
+  "httpApiPort": "51361",
+  "httpApiNotice": true,
+  "welcomeMessage": "1.21.0",
+  "verboseLogging": true,
+  "DANGER_httpHost": null,
+  "DANGER_forceSaveCache": false
+}
+=== periodic-notes ===
+{
+  "showGettingStartedBanner": false,
+  "hasMigratedDailyNoteSettings": true,
+  "hasMigratedWeeklyNoteSettings": true,
+  "daily": {
+    "format": "YYYY-MM-DD",
+    "template": "DAILY NOTE TEMPLATE",
+    "folder": "",
+    "enabled": true
+  },
+  "weekly": {
+    "format": "GGGG-[W]WW",
+    "template": "WEEKLY NOTE TEMPLATE",
+    "folder": "",
+    "enabled": true
+  },
+  "monthly": {
+    "format": "YYYY-MM",
+    "template": "MONTHLY NOTE TEMPLATE",
+    "folder": "",
+    "enabled": true
+  },
+  "quarterly": {
+    "format": "YYYY-[Q]Q",
+    "template": "QUARTERLY NOTE TEMPLATE",
+    "folder": "",
+    "enabled": true
+  },
+  "yearly": {
+    "format": "YYYY",
+    "template": "YEARLY NOTE TEMPLATE",
+    "folder": "",
+    "enabled": true
+  }
+}
+=== roygbiv-day-accent ===
+{
+  "lastActiveDayIndex": 4
+}
+=== smart-connections ===
+{
+  "installed_at": 1774825054299,
+  "last_version": "4.1.8"
+}
+=== smart-connections-visualizer ===
+{
+  "relevanceScoreThreshold": 0.5,
+  "nodeSize": 4,
+  "linkThickness": 0.3,
+  "repelForce": 400,
+  "linkForce": 0.4,
+  "linkDistance": 70,
+  "centerForce": 0.1,
+  "textFadeThreshold": 1.1,
+  "minLinkThickness": 0.3,
+  "maxLinkThickness": 0.6,
+  "maxLabelCharacters": 18,
+  "linkLabelSize": 7,
+  "nodeLabelSize": 6,
+  "connectionType": "both",
+  "noteFillColor": "#7c8594",
+  "blockFillColor": "#926ec9"
+}
+=== templater-obsidian ===
+{
+  "command_timeout": 5,
+  "templates_folder": "_templates",
+  "templates_pairs": [
+    [
+      "",
+      ""
+    ]
+  ],
+  "trigger_on_file_creation": true,
+  "auto_jump_to_cursor": false,
+  "enable_system_commands": false,
+  "shell_path": "",
+  "user_scripts_folder": "",
+  "enable_folder_templates": true,
+  "folder_templates": [
+    {
+      "folder": "",
+      "template": ""
+    }
+  ],
+  "enable_file_templates": false,
+  "file_templates": [
+    {
+      "regex": ".*",
+      "template": ""
+    }
+  ],
+  "syntax_highlighting": true,
+  "syntax_highlighting_mobile": false,
+  "enabled_templates_hotkeys": [
+    ""
+  ],
+  "startup_templates": [],
+  "intellisense_render": 1
+}
+=== wikipedia-search ===
+{
+  "language": "en",
+  "searchLimit": 10,
+  "thumbnailWidth": null,
+  "defaultNotePath": "/",
+  "templates": [
+    {
+      "name": "Default",
+      "templateString": "[{title}]({url})",
+      "createNote": false,
+      "customPath": "",
+      "useTemplateFile": false,
+      "templateFilePath": ""
+    }
+  ],
+  "autoInsertSingleResponseQueries": false,
+  "autoSearchNoteTitle": false,
+  "prioritizeArticleTitle": false,
+  "cleanupIntros": true,
+  "openArticleInFullscreen": false,
+  "openCreatedNotes": false,
+  "overrideFiles": false,
+  "showedWebviewerMessage": false
+}

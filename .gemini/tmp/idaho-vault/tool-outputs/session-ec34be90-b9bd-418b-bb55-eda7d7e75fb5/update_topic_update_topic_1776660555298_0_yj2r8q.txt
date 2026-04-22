@@ -1,0 +1,3 @@
+{
+  "output": "Current topic: \"Clarifying User's README Query\"\nTopic summary: The user has issued an ambiguous query, `?README`. To avoid making incorrect assumptions, especially given our recent interactions, I will first use the `glob` tool to search for all files named `README.md` within the vault. Once I have a clear list of the available README files, I will ask the user for clarification on which one they would like me to interact with. This ensures I am acting on a clear and explicit instruction.\n\nStrategic Intent: Clarify which README file the user is referring to by first searching for all README files in the vault and then asking for more specific instructions."
+}

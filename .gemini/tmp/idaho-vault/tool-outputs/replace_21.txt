@@ -1,0 +1,9 @@
+<tool_output_masked>
+{
+  "output": "Successfully modified file: C:\\Users\\loganf\\Documents\\IDAHO-VAULT\\!\\!\\__!__\\!\\! The world is quiet here\\DOCKET.md (1 replacements). Here is the updated code:\n---\nupdated: 2026-04-13\nstatus: AFK - SWARM OPERATIONAL\ndate cr
+... [TRUNCATED] ...
+ Tracker Normalization PR | Gemini LAF-16 artifacts on `gemini/resolve-pr-conflicts` branch. LOGAN must resolve any cross-agent conflicts; scraper mods needed before merge | Logan / Copilot |\n\n---\n\n## WHERE THINGS LIVE\n\n| What | Where |\n..."
+}
+
+Output too large. Full output available at: C:\Users\loganf\.gemini\tmp\idaho-vault\tool-outputs\session-f328310d-05ea-45ce-b9cb-fe2717bebe12\replace_replace_1776110861843_0_7zxgd.txt
+</tool_output_masked>

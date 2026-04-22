@@ -44,6 +44,9 @@ ROOT_GROUP = "__root__"
 ORG_BULLET_RE = re.compile(r"^- ([A-Z][A-Z0-9 /&'()-]*)$")
 EMPTY_TASK_SHELL_RE = re.compile(r'^[ \t]*- \[(?: |x|X)\]\s*$')
 DATE_PLACEHOLDER_RE = re.compile(r'\[\[(YESTERDAY|TOMORROW|TODAY)\]\]')
+TASK_SLASH_RE = re.compile(r"\s*/\s*")
+TASK_AMPERSAND_RE = re.compile(r"\s*&\s*")
+TASK_SPACE_RE = re.compile(r"\s+")
 
 
 # ---------------------------------------------------------------------------
@@ -100,10 +103,22 @@ def _task_key(line: str) -> str | None:
     match = TASK_RE.match(_clean_line(line))
     if not match:
         return None
-    text = match.group(3).strip()
+    text = _normalize_task_text(match.group(3))
     if not text:
         return None
-    return text.lower()
+    return text
+
+
+def _normalize_task_text(text: str) -> str:
+    """Collapse punctuation spacing drift so obvious duplicate tasks merge."""
+
+    cleaned = text.strip().lower()
+    cleaned = cleaned.replace("\u2010", "-").replace("\u2011", "-").replace("\u2012", "-")
+    cleaned = cleaned.replace("\u2013", "-").replace("\u2014", "-").replace("\u2212", "-")
+    cleaned = TASK_SLASH_RE.sub("/", cleaned)
+    cleaned = TASK_AMPERSAND_RE.sub("&", cleaned)
+    cleaned = TASK_SPACE_RE.sub(" ", cleaned)
+    return cleaned
 
 
 def _has_date_placeholder(line: str) -> bool:
@@ -555,6 +570,12 @@ def build_backlog_lines(source_todo_lines: list[str], active_todo_lines: list[st
     return render_todo_model(backlog)
 
 
+def normalize_active_backlog_lines(active_todo_lines: list[str]) -> list[str]:
+    """Normalize the persistent active backlog into canonical carryforward lines."""
+
+    return render_todo_model(parse_todo_model(active_todo_lines, keep_completed=False))
+
+
 def patch_nav_links(content: str, target_date: date) -> str:
     """
     Fill in blank or unresolved yesterday:/tomorrow: frontmatter fields.
@@ -668,7 +689,17 @@ def ensure_daily_frontmatter(content: str, target_date: date) -> str:
                 new_lines.append("aliases:")
                 for a in date_aliases(target_date):
                     new_lines.append(f"  - {a}")
-            # ... (add others if needed, but build_frontmatter handles fresh notes)
+            elif key == "weekday":
+                new_lines.append("weekday:")
+                new_lines.append(f"  - {weekday}")
+            elif key == "cssclasses":
+                new_lines.append("cssclasses:")
+                new_lines.append(f"  - {cssclass}")
+            elif key == "tags":
+                new_lines.append("tags:")
+                new_lines.append("  - today")
+                new_lines.append(f"  - {tag_date}")
+                new_lines.append("  - dailynote")
 
     body = content[match.end():].lstrip("\r\n")
     return f"---\n" + "\n".join(new_lines) + "\n---\n\n" + body
@@ -835,14 +866,14 @@ def main() -> None:
 
     log(f"Rolling over: {source_date} -> {target_date}")
 
-    if not source_file.exists():
-        log(f"No daily note found for {source_date} - nothing to carry forward.")
-        sys.exit(0)
-
-    source_content = source_file.read_text(encoding="utf-8")
-    todo_lines = extract_todo_section(source_content)
     persistent_active = load_active_todo_list_lines()
-    merged_backlog = build_backlog_lines(todo_lines, persistent_active)
+    if not source_file.exists():
+        log(f"No daily note found for {source_date} - reconciling from TO DO LIST.md only.")
+        merged_backlog = normalize_active_backlog_lines(persistent_active)
+    else:
+        source_content = source_file.read_text(encoding="utf-8")
+        todo_lines = extract_todo_section(source_content)
+        merged_backlog = build_backlog_lines(todo_lines, persistent_active)
 
     if merged_backlog:
         log(f"Carrying forward {len([l for l in merged_backlog if _is_top_level_task(l)])} incomplete item(s):")

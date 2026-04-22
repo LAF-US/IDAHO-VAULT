@@ -1,0 +1,28 @@
+<tool_output_masked>
+Output: Collecting Flask==3.1.3 (from -r requirements.txt (line 1))
+  Downloading flask-3.1.3-py3-none-any.whl.metadata (3.2 kB)
+Collecting gunicorn==25.3.0 (from -r requirements.txt (line 2))
+  Downloading gunicorn-25.3.0-py3-none-any.whl.metadata (5.5 kB)
+Requirement already satisfied: requests==2.32.5 in .\.venv\Lib\site-packages (from -r requirements.txt (line 3)) (2.32.5)
+Collecting google-cloud-storage==3.10.1 (from -r requirements.txt (line 4))
+  Downloading google_cloud_storage-3.10.1-py3-none-any.whl.metadata (15 kB)
+Collecting google-cloud-secret-manager==2.27.0 (from -r requirements.txt (line 5))
+  Downloading google_cloud_secret_manager-2.27.0-py3-none-any.whl.metadata (9.6 kB)
+Collecting google-cloud-pubsub==2.37.0 (from -r requirements.txt (line 6))
+
+... [204 lines omitted] ...
+
+Downloading grpc_google_iam_v1-0.14.4-py3-none-any.whl (32 kB)
+Downloading grpcio_status-1.71.2-py3-none-any.whl (14 kB)
+Downloading proto_plus-1.27.2-py3-none-any.whl (50 kB)
+Downloading blinker-1.9.0-py3-none-any.whl (8.5 kB)
+Downloading itsdangerous-2.2.0-py3-none-any.whl (16 kB)
+Downloading pyasn1_modules-0.4.2-py3-none-any.whl (181 kB)
+Downloading pyasn1-0.6.3-py3-none-any.whl (83 kB)
+Downloading werkzeug-3.1.8-py3-none-any.whl (226 kB)
+Installing collected packages: werkzeug, pyasn1, proto-plus, itsdangerous, gunicorn, google-crc32c, blinker, pyasn1-modules, grpcio-status, google-resumable-media, Flask, grpc-google-iam-v1, google-auth, google-api-core, google-cloud-core, google-cloud-storage, google-cloud-secret-manager, google-cloud-pubsub
+Successfully installed Flask-3.1.3 blinker-1.9.0 google-api-core-2.30.3 google-auth-2.49.2 google-cloud-core-2.5.1 google-cloud-pubsub-2.37.0 google-cloud-secret-manager-2.27.0 google-cloud-storage-3.10.1 google-crc32c-1.8.0 google-resumable-media-2.8.2 grpc-google-iam-v1-0.14.4 grpcio-status-1.71.2 gunicorn-25.3.0 itsdangerous-2.2.0 proto-plus-1.27.2 pyasn1-0.6.3 pyasn1-modules-0.4.2 werkzeug-3.1.8
+Process Group PGID: 9876
+
+Output too large. Full output available at: C:\Users\loganf\.gemini\tmp\idaho-vault\tool-outputs\session-f328310d-05ea-45ce-b9cb-fe2717bebe12\run_shell_command_run_shell_command_1776117809374_0_ba4cz.txt
+</tool_output_masked>

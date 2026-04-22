@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "plugins": {
+    "core@factory-plugins": [
+      {
+        "scope": "dynamic",
+        "installPath": "C:\\Users\\loganf\\.factory\\plugins\\cache\\factory-plugins\\core\\5e938b7ef9e3",
+        "version": "5e938b7ef9e3",
+        "installedAt": "2026-04-20T03:48:59.480Z",
+        "lastUpdated": "2026-04-20T03:48:59.480Z",
+        "source": "factory-plugins"
+      }
+    ]
+  }
+}

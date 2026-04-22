@@ -925,7 +925,7 @@ Logan uses a naming convention for AI conversations:
 
 
 
-All agents coordinate through THE COURTROOM: `!/!/!/! The world is quiet here/DOCKET.md`
+All agents are to REPORT to the COURTROOM and AWAIT THE JUDGE's BELL for the founding VAULTED TRIALS.
 
 
 

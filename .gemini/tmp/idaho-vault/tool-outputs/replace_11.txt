@@ -1,0 +1,9 @@
+<tool_output_masked>
+{
+  "output": "Successfully modified file: C:\\Users\\loganf\\Documents\\IDAHO-VAULT\\LEVELSET-CURRENT.md (1 replacements). Here is the updated code:\n...\n| Phase 2 repo size rewrite | **High** | 37 GiB `.git/`, needs branch protection off |\n| Revi
+... [TRUNCATED] ...
+k of Codices | **Low** | OpenAI conversation export → xlsx |\n| Triage 28 dormant plugins (Logan decides per PLUGIN-REGISTRY.md) | **Low** | Cleanup — no urgency |\n| LLM plugin sprawl resolution | **Low** | 6 AI plugins installed dormant |\n\n..."
+}
+
+Output too large. Full output available at: C:\Users\loganf\.gemini\tmp\idaho-vault\tool-outputs\session-f328310d-05ea-45ce-b9cb-fe2717bebe12\replace_replace_1776110979842_0_zp9jt.txt
+</tool_output_masked>

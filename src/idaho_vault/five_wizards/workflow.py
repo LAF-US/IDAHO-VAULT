@@ -93,6 +93,8 @@ class FiveWizardsWorkflowArtifacts(WorkflowBaseModel):
             if self.familiar_gaggle_note is None or self.convened_session is None:
                 raise ValueError("Green workflow runs must produce a gaggle note and a convened session.")
         else:
+            if self.familiar_gaggle_note is not None:
+                raise ValueError("Non-green workflow runs must not produce a gaggle note.")
             if self.convened_session is not None:
                 raise ValueError("Non-green workflow runs must not produce a convened session.")
         return self
