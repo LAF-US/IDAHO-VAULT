@@ -1,0 +1,76 @@
+Report created: 
+	12/06/2020	14:46:37
+
+Project name: 2020_1616_WBM_CS_HandDrawnSlidesTitles.aep
+
+Source files collected to: 
+	C:\Users\jhayes\AppData\Local\Temp\aegraphic\0639697f-3ee1-44e1-a324-21f0835a36a9\collectprj
+
+Source files collected: For target comp
+
+Collected comps:  
+	Comp 1
+	Background 1
+	Cutout1
+	Side Text 01
+	Paragraph Text
+	Main Title Text
+	Arrow Text 02
+	Arrow Text 01
+	bg
+	AllBg
+	Maintext inner
+	Comp 2
+	Master
+	Scribble Mask
+	Comp 3
+	bg 3
+	Cutout2
+	Comp 4
+	bg 4
+	Cutout3
+	circle 2
+	circle 3
+	x
+	underline
+	ARROW 01
+	Arrow 02
+	Comp 5
+	
+Number of collected files:  3
+
+Size of collected files:  10.8 MB
+
+Collected source files: 
+	E:\AE_Work_Z\1_MotionTemplates\4_PrepFolder\Batch_32_Prep\WBM-MoTemp-1616-CS-HandDrawnSlidesTitles\REVIEW_01\(Footage)\blackboard.png
+	E:\AE_Work_Z\1_MotionTemplates\4_PrepFolder\Batch_32_Prep\WBM-MoTemp-1616-CS-HandDrawnSlidesTitles\REVIEW_01\(Footage)\paperbackground.jpg
+	E:\AE_Work_Z\1_MotionTemplates\4_PrepFolder\Batch_32_Prep\WBM-MoTemp-1616-CS-HandDrawnSlidesTitles\REVIEW_01\(Footage)\stroke 7.png
+	
+Rendering plug-ins:
+	Classic 3D
+	
+Effects used:  9
+
+Effect:  Color Control
+	
+Effect:  Fill
+	
+Effect:  Linear Wipe
+	
+Effect:  Posterize Time
+	
+Effect:  Roughen Edges
+	
+Effect:  Simple Choker
+	
+Effect:  Slider Control
+	
+Effect:  Tritone
+	
+Effect:  Turbulent Displace
+	
+
+Layer:  Text Layer
+	External dependencies:  
+		Font family: “Roboto”, Font style: “Black Italic”
+

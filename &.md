@@ -1,0 +1,8 @@
+---
+authority: LOGAN
+related:
+- ampersand
+- symbol
+---
+
+ampersand symbol : "and"

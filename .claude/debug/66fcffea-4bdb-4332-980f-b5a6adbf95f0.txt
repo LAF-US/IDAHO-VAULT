@@ -1,0 +1,10 @@
+2026-03-31T01:42:26.902Z [DEBUG] MDM settings load completed in 3ms
+2026-03-31T01:42:26.924Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: C:\Users\loganf\AppData\Local\Programs\Microsoft VS Code\.claude\settings.json
+2026-03-31T01:42:26.925Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: C:\Users\loganf\AppData\Local\Programs\Microsoft VS Code\.claude\settings.local.json
+2026-03-31T01:42:26.938Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: C:\Program Files\ClaudeCode\managed-settings.json
+2026-03-31T01:42:26.940Z [DEBUG] CA certs: Config fallback - globalEnv keys: , settingsEnv keys: none
+2026-03-31T01:42:26.942Z [DEBUG] [init] configureGlobalMTLS starting
+2026-03-31T01:42:26.943Z [DEBUG] [init] configureGlobalMTLS complete
+2026-03-31T01:42:26.943Z [DEBUG] [init] configureGlobalAgents starting
+2026-03-31T01:42:26.944Z [DEBUG] CA certs: useSystemCA=false, extraCertsPath=undefined
+2026-03-31T01:42:26.944Z [DEBUG] [init] configureGlobalAgents complete

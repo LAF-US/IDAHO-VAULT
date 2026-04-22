@@ -1,0 +1,5 @@
+- [x] Update `main.js` in `roygbiv-day-accent` to cache `lastActiveDayIndex` inside `this.settings`.
+- [x] Refactor Linear Gateway API: Update `link_pr_context` mutation in `linear_gateway.py` from `attachmentCreate` to `attachmentLinkCreate` to resolve HTTP 400 bad request error.
+- [x] Workflow: Convert bare `git push` in `idaho-leg-scraper.yml` into a dynamic branch (`gh pr create`).
+- [x] Workflow: Convert bare `git push` in `wayback-preserve.yml` into a dynamic branch (`gh pr create`).
+- [x] Workflow: Convert bare `git push` in `wayback-audit.yml` into a dynamic branch (`gh pr create`).

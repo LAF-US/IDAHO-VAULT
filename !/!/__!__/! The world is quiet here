@@ -1,0 +1,34 @@
+---
+title: "100 — JFAC Crew — Run Index"
+date created: "2026-04-04"
+authority: crewai/address-space
+doc_class: neuron
+neuron_id: 100
+---
+
+# 100 — JFAC Crew — Run Index
+
+Master index of all JFAC crew runs. Each run appends its ID and timestamp here.
+
+## Log
+
+- **POC-20260404-214321**: Neuron initialized by address_poc.py
+
+
+## Cartographer Snapshot — 2026-04-05
+
+The local mapping of the root-flat Address Space is complete.
+
+| Metric | Count |
+|--------|-------|
+| Total Stubs Scanned | 23202 |
+| Factual Notes discovered | 3683 |
+| Empty Stubs Remaining | 19519 |
+| Governed Notes (with frontmatter) | 3169 |
+| **Discovery Percent** | **15.87%** |
+
+### Sample Factual Nodes
+- ! BUDGET TRACKER CODEX FAILFIX.md, !.md, !README.md, !STEP-0-LEVELSET.md, $.md
+
+---
+*Updated by The Local Cartographer (Bartimaeus) at 2026-04-05 00:41:29 UTC*

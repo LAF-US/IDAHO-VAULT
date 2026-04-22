@@ -1,0 +1,67 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+
+# IDE
+.vscode/*
+!.vscode/mcp.json
+!.vscode/settings.json
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project-specific
+.env
+*.vault.json
+
+# Local machine secrets
+.obsidian/plugins/obsidian-local-rest-api/data.json
+# Swarm state archive (local only)
+.github/swarm/state/archive/
+
+# Swarm operational logs (ephemeral)
+\!/swarm/logs/*
+!\!/swarm/logs/.gitkeep
+
+# Obsidian system/state files (noisy, machine-local)
+.obsidian/workspace.json
+.obsidian/workspace*.json
+.obsidian/graph.json
+.obsidian/types.json
+.obsidian/backlink.json
+.obsidian/file-recovery.json
+.obsidian/page-preview.json
+.obsidian/switcher.json
+.obsidian/webviewer.json
+.obsidian/note-composer.json
+
+# Obsidian plugin runtime data / secrets (API keys live here — never commit)
+.obsidian/plugins/*/data.json
+
+# Obsidian plugin compiled binaries (too large, not source-trackable)
+.obsidian/plugins/mcp-tools/bin/
+
+# Smart Connections embedding cache (machine-generated, can be hundreds of MB)
+.smart-env/
+.obsidian/plugins/smart-connections/.smart-env/
+
+# Obsidian conflict duplicates
+.obsidian/**(2)*.json
+
+# Daily notes (ephemeral, personal)
+DAILYNOTES/
+
+# Claude Code local settings (machine-local, not for repo)
+.claude/settings.local.json

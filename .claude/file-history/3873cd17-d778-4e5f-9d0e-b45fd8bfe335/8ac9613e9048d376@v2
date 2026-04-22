@@ -1,0 +1,11 @@
+---
+name: Swarm lane boundaries
+description: Which agent owns which work type — PR creation, inspection, merges, etc.
+type: feedback
+---
+
+GitHub Copilot agent owns PR creation and management in this swarm.
+
+**Why:** Logan explicitly assigned PR handling to Copilot. Terminal Claude (The Abhorsen) stays in the inspect/diagnose/draft lane.
+
+**How to apply:** When I find uncommitted changes or draft fixes that need a PR, I surface the finding and hand off to Copilot — I do not open the PR myself. My deliverable is the diagnosis; Copilot's deliverable is the PR.

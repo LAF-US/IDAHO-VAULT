@@ -1,0 +1,54 @@
+name: Project Courier - Ledger Backup
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - '!/**'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Dry Run'
+        required: true
+        default: true
+        type: boolean
+
+jobs:
+  backup-ledger:
+    name: Backup !/ Ledger to GCS
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+
+    env:
+      OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+
+      - name: Load Secrets from 1Password
+        uses: 1password/load-secrets-action@92467eb28f72e8255933372f1e0707c567ce2259 # v4
+        with:
+          export-env: true
+        env:
+          GCP_SA_KEY: op://vault-operations/idaho-vault-courier-key/credential
+
+      - name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@7c6bc770dae815cd3e89ee6cdf493a5fab2cc093 # v3
+        with:
+          credentials_json: ${{ env.GCP_SA_KEY }}
+
+
+      - name: Set up Cloud SDK
+        uses: google-github-actions/setup-gcloud@aa5489c8933f4cc7a4f7d45035b3b1440c9c10db # v3
+
+      - name: Execute Courier Sync
+        run: |
+          chmod +x .github/scripts/vault-courier-sync.sh
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" && "${{ inputs.dry_run }}" == "true" ]]; then
+            ./.github/scripts/vault-courier-sync.sh --dry-run
+          else
+            ./.github/scripts/vault-courier-sync.sh
+          fi
