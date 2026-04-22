@@ -1,0 +1,1 @@
+When passing string values to tools, send the content directly without escape sequences. For example, use real newlines in markdown content rather than literal backslash-n (\n) characters.

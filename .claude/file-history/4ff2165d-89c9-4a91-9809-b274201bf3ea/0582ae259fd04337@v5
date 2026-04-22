@@ -1,0 +1,67 @@
+---
+name: IDAHO-VAULT — project state and architecture
+description: What the vault is, how it's structured, multi-agent ecosystem, current status
+type: project
+---
+
+**IDAHO-VAULT** is Logan Finney's Obsidian.md knowledge vault, version-controlled with git at github.com/loganfinney27/IDAHO-VAULT (public repo). All committed content is on the record and publishable.
+
+**What:** Journalism infrastructure — story development, source notes, legislative tracking, automation pipelines, and multi-agent AI coordination layer.
+
+**Why:** Logan's Project = unachievable ambitious end goal; all vault work is incremental progress toward it.
+
+## Multi-Agent Ecosystem
+
+| Agent | Role | Instructions |
+|---|---|---|
+| Claude Code (me) | PERMANENT: AUTHORITY: CODE — direct write, repo mechanics | `CLAUDE.md` |
+| GitHub Copilot | Code assistance, PR work | `.github/copilot-instructions.md` |
+| Gemini | Capability undefined — blocked pending Logan scoping | `GEMINI.md` |
+| Codex | Task-based | GitHub Issues |
+| Bartimaeus | Fictive vault persona — unknown role; can brief Claude Code on constitutional matters | unknown |
+
+Agent architecture has two layers per agent: (1) corporate system file (instructions from Logan TO the agent); (2) soul file (agent's own accumulated vault persona firmware). Soul file structure is NOT yet decided — pending constitutional court. Don't build ahead of that governance decision.
+
+Multi-agent collaboration protocol established: Claude Code + Codex can work in-thread with Logan as the visible channel. HANDOFF/HANDSHAKE messages used for explicit agent-to-agent relay. Nothing bypasses Logan.
+
+Coordination: GitHub Issues (`agent:*` labels) + Linear (SWARM label) + Slack (breadcrumbs only).
+
+## Key Governance Files
+
+- `CONSTITUTION.md` — canonical vault governance (supersedes CLAUDE.md when they conflict)
+- `DECISIONS.md` — additive-only confirmed decision log (15 decisions as of 2026-03-16)
+- `DOCKET.md` — live coordination board at `!/!/!/! The world is quiet here/DOCKET.md`
+- `LEVELSET-CURRENT.md` — rolling ecosystem state synthesis (was stale as of 2026-03-23; last updated 2026-03-13)
+- `VAULT-CONVENTIONS.md` — shared naming/frontmatter/structure conventions for all agents
+- `!/` — canonical system layer. `!ADMIN/` is a zombie directory that keeps re-emerging but is NOT canonical.
+
+## Active Automation
+
+- `idaho_leg_scraper.py` — daily 6 AM MT, commits legislature bill data to main
+- `sort_audit.py` — weekly Monday 6 AM UTC vault structure audit
+- Wayback preservation — weekly Monday 8 AM UTC
+- `auto-pr.yml` — auto-creates PRs from `claude/*` branches; auto-merges low-risk
+
+## Completed This Session (2026-03-23)
+
+- PR opened: `claude/fix-constitution-levelset-path-17616` — one-line fix, CONSTITUTION.md Section III LEVELSET pointer from `!ADMIN/LEVELSET-v3.2.6.1-PROMPT.md` → `!/LEVELSET-STEP-0-EXTERNAL-AGENT.md`. Merged by Logan. Joint Claude Code + Codex work.
+- `LEVELSET-v3.2.6.1-PROMPT.md` left at repo root as historical artifact — comprehensively stale, not worth patching.
+- Souls system architecture discussed but NOT built — pending constitutional court decision. `!/SOULS/` directory is clean (never written).
+- Local `~/.claude/` memory system created this session (machine-local only).
+
+## Google Cloud / Gemini Integration (pending, 2026-03-23)
+
+Google Cloud project `idaho-vault` exists — billing active, Vertex AI API and Generative Language API both enabled. No API key created yet. Gemini role undefined — advisory, PDF/scraper testing, or GitHub Actions automation. Role decision required before credentials are created. Credentials go in GitHub Actions secrets or local `.env` + `.gitignore` — never committed to the public repo. Logan deferred this; return to it when ready.
+
+## Current Blockers (as of 2026-03-23)
+
+- 6 stale `claude/` remote branches — need cleanup or close
+- 10 stale `copilot/` remote branches — need cleanup or close
+- Gemini capability tier undefined
+- Several DECISIONS.md entries awaiting Logan's review (AGENTS-v0.2-DRAFT.md, ORIENTATE-v0.1-BETA.md, LEVELSET-LITE-v0.1.md)
+- PR #34 (42-file vault update) needs breakdown before Logan can review
+- PR #35 (vault settings + MCP workflows, Copilot) needs scoping review
+
+## JFAC Story Status (as of last LEVELSET 2026-03-13)
+
+Active journalism story: JFAC open meetings / working groups. Multiple quotes flagged AUDIO VERIFICATION REQUIRED — hard gates before publication. Logan must clear these. CCA letter deadline was ~2026-03-18; Sunshine Week was 2026-03-15–21.

@@ -1,0 +1,17 @@
+{
+  "name": "delete_comment",
+  "description": "Delete a comment from a Linear issue",
+  "arguments": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "description": "Comment ID"
+      }
+    },
+    "required": [
+      "id"
+    ],
+    "$schema": "http://json-schema.org/draft-07/schema#"
+  }
+}

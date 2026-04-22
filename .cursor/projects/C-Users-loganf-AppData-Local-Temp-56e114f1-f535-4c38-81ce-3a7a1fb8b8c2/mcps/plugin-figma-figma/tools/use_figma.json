@@ -1,0 +1,36 @@
+{
+  "name": "use_figma",
+  "description": "Run JavaScript in a Figma file via the Plugin API. This is the general-purpose tool for writing to Figma — use it to create, edit, delete, or inspect any Figma object (pages, frames, components, variants, variables, styles, text, images, etc.).\nIMPORTANT: If the /figma-use skill is available, load it before calling this tool.\nUse this tool when the user wants to:\n- Create or modify designs directly in Figma\n- Generate or sync Figma designs from source code\n- Set up design tokens, variables, or styles\n- Build or update component/variant systems\n- Fix layout, spacing, auto-layout, or fill/hug issues\n- Add component descriptions or Code Connect metadata to nodes\n- Review or fix accessibility, contrast, typography, or visual polish\n- Inspect or query node properties programmatically\n\nGOTCHAS:\n- For the font \"Inter\", the style is \"Semi Bold\" (with a space), not \"SemiBold\". Same for \"Extra Bold\" not \"ExtraBold\"\n- Setting figma.currentPage is not supported. Use `await figma.setCurrentPageAsync(page)` instead\n\n\nCHOOSING BETWEEN use_figma AND generate_figma_design:\n- Default to this tool (use_figma) for all Figma write operations.\n- The only exception is generate_figma_design, which should be used when capturing a web app page or view into Figma for the first time.\n- Use this tool when the user wants to update or sync a page or view that has already been captured — even if the code has changed, even for web apps.\n- When in doubt, use this tool.\n\nBefore creating components, call search_design_system to check for existing design system components to reuse. Import matches via importComponentByKeyAsync/importComponentSetByKeyAsync instead of recreating them.",
+  "arguments": {
+    "type": "object",
+    "properties": {
+      "fileKey": {
+        "type": "string",
+        "description": "The key of the Figma file to use. If the URL is provided, extract the file key from the URL. The given URL must be in the format https://figma.com/design/:fileKey/:fileName?node-id=:int1-:int2. The extracted fileKey would be `:fileKey`."
+      },
+      "code": {
+        "type": "string",
+        "maxLength": 50000,
+        "description": "JavaScript code to execute. Has access to the `figma` global (Figma Plugin API)"
+      },
+      "description": {
+        "type": "string",
+        "maxLength": 2000,
+        "description": "A concise description of what the code aims to do"
+      },
+      "skillNames": {
+        "type": "string",
+        "description": "A comma-separated list of Figma skill names being followed, if any (e.g. \"figma-use\", \"figma-use,figma-generate-design\"). Only pass this when explicitly instructed to by skill documentation. Used for logging purposes."
+      }
+    },
+    "required": [
+      "fileKey",
+      "code",
+      "description"
+    ],
+    "additionalProperties": false,
+    "$schema": "http://json-schema.org/draft-07/schema#"
+  },
+  "plugin": "figma",
+  "marketplace": "claude-plugins-official"
+}

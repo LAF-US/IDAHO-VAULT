@@ -1,0 +1,335 @@
+﻿Budget,Program,Bill,Status,Description
+<b>Maintenance</b>,<i>Public Schools</i>,☐,☐,<b>2/13: <i>public schools excluded</b><br>from holdbacks and reductions</i>
+<b>Maintenance</b>,<i>Constitutional Officers</i>,☐,☐,<b>2/13: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i>Secretary of State excluded</i>
+<b>Maintenance</b>,<i>Economic Development</i>,☐,☐,<b>2/13: 5% base reduction</b><br>Governor's 3% + JFAC's 2%
+<b>Maintenance</b>,<i>General Government</i>,☐,☐,<b>2/13: 5% base reduction</b><br>Governor's 3% + JFAC's 2%
+<b>Maintenance</b>,<i>Judicial Branch</i>,☐,☐,<b>2/13: 5% base reduction</b><br>Governor's 3% + JFAC's 2%
+<b>Maintenance</b>,<i>Legislative Branch</i>,☐,☐,<b>2/13: 5% base reduction</b><br>Governor's 3% + JFAC's 2%
+<b>Maintenance</b>,<i>Natural Resources</i>,☐,☐,<b>2/13: 5% base reduction</b><br>Governor's 3% + JFAC's 2%
+<b>Maintenance</b>,<i>State Board of Education</i>,☐,☐,<b>2/13: 5% base reduction</b><br>Governor's 3% + JFAC's 2%
+<b>Maintenance</b>,<i>Public Safety</i>,☐,☐,<b>2/13: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i>Dept. of Correction and<br>Idaho State Police excluded</i>
+<b>Maintenance</b>,<i>Health & Human Services</i>,☐,☐,<b>2/13: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i>Medicaid program excluded</i>
+Reduction,<i>Constitutional Officers</i><br><b>Attorney General</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Constitutional Officers</i><br><b>Governor</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Constitutional Officers</i><br><b>Lieutenant Governor</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Constitutional Officers</i><br><b>Secretary of State</b>,☐,☐,"<b>2/6:</b> <i>In my first budget as<br>Secretary of State, the<br>Legislature appropriated<br>$10 million in one-time<br>funding to modernize<br>Idaho’s election technology.<br>Through a careful review<br>of how these systems<br>are hosted and managed,<br>we identified an<br>opportunity to reduce<br>long-term costs by<br>transitioning hosting<br>responsibilities to vendors.<br>As a result, we have<br>identified a total of <br><b>$850,000 in one-time,<br>FY26 funds</b> we can revert<br>back from the original<br>appropriation while fully<br>funding these systems<br>for the originally proposed<br>five years. This represents<br>approximately 15 percent<br>of the Secretary of State’s<br>base budget and exceeds<br>the combined FY26 and<br>FY27 dollar value of the<br>requested reductions,<br>allowing us to contribute<br>meaningfully to addressing<br>the budget shortfall without<br>creating operational risk.</i>"
+Reduction,<i>Constitutional Officers</i><br><b>State Controller</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Constitutional Officers</i><br><b>State Treasurer</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Constitutional Officers</i><br>State Treasurer<br><b>Millennium Fund</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Economic Development</i><br><b>Dept. of Agriculture</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Economic Development</i><br><b>Dept. of Commerce</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Economic Development</i><br><b>Dept. of Finance</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Economic Development</i><br><b>Dept. of Insurance</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Economic Development</i><br><b>Dept. of Labor</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Economic Development</i><br><b>Industrial Commission</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Economic Development</i><br><b>Public Utilities Commission</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Economic Development</i><br>Dept. of Agriculture<br><b>Soil & Water Conservation Commission</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Economic Development</i><br>Dept. of Self-Governing Agencies<br><b>Commission for Libraries</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Economic Development</i><br>Dept. of Self-Governing Agencies<br><b>Commission of Pardons & Parole</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Economic Development</i><br>Dept. of Self-Governing Agencies<br><b>Commission on Hispanic Affairs</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Economic Development</i><br>Dept. of Self-Governing Agencies<br><b>Div. of Occupational & Professional Licenses</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Economic Development</i><br>Dept. of Self-Governing Agencies<br><b>Div. of Veterans Services</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Economic Development</i><br>Dept. of Self-Governing Agencies<br><b>Office of Administrative Hearings</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Economic Development</i><br>Dept. of Self-Governing Agencies<br><b>Office of Health & Social Services Ombudsman</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Economic Development</i><br>Dept. of Self-Governing Agencies<br><b>Office of the State Public Defender</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Economic Development</i><br>Dept. of Self-Governing Agencies<br><b>Public Defense Commission</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Economic Development</i><br>Dept. of Self-Governing Agencies<br><b>State Appellate Public Defender</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Economic Development</i><br>Dept. of Self-Governing Agencies<br><b>State Historical Society</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Economic Development</i><br>Dept. of Self-Governing Agencies<br><b>State Lottery</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Economic Development</i><br>Dept. of Transportation<br><b>Contract Construction & Right-of-Way</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Economic Development</i><br>Dept. of Transportation<br><b>Highway Operations</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Economic Development</i><br>Dept. of Transportation<br><b>Motor Vehicles</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Economic Development</i><br>Dept. of Transportation<br><b>Transportation Services</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>General Government</i><br><b>Dept. of Administration</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>General Government</i><br>Dept. of Administration<br><b>Capitol Commission</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>General Government</i><br>Dept. of Administration<br><b>Permanent Building Fund</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>General Government</i><br>Dept. of Revenue & Taxation<br><b>Board of Tax Appeals</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>General Government</i><br>Dept. of Revenue & Taxation<br><b>State Tax Commission</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>General Government</i><br>Office of the Governor<br><b>Commission for the Blind & Visually Impaired</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>General Government</i><br>Office of the Governor<br><b>Commission on Aging</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>General Government</i><br>Office of the Governor<br><b>Commission on the Arts</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>General Government</i><br>Office of the Governor<br><b>Div. of Financial Management</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>General Government</i><br>Office of the Governor<br><b>Div. of Human Resources</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>General Government</i><br>Office of the Governor<br><b>Military Division</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>General Government</i><br>Office of the Governor<br><b>Office of Drug Policy</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>General Government</i><br>Office of the Governor<br><b>Office of Energy & Mineral Resources</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>General Government</i><br>Office of the Governor<br><b>Office of Information Technology Services</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>General Government</i><br>Office of the Governor<br><b>Office of Species Conservation</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>General Government</i><br>Office of the Governor<br><b>Public Employee Retirement System</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>General Government</i><br>Office of the Governor<br><b>State Liquor Division</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>General Government</i><br>Office of the Governor<br><b>STEM Action Center</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>General Government</i><br>Office of the Governor<br><b>Wolf Depredation Control Board</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>General Government</i><br>Office of the Governor<br><b>Workforce Development Council</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Health & Human Services</i><br><b>State Independent Living Council</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Health & Human Services</i><br>Dept. of Health & Welfare<br><b>Child Welfare</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Health & Human Services</i><br>Dept. of Health & Welfare<br><b>Div. of Medicaid</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Health & Human Services</i><br>Dept. of Health & Welfare<br><b>Div. of Welfare</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Health & Human Services</i><br>Dept. of Health & Welfare<br><b>Independent Councils</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Health & Human Services</i><br>Dept. of Health & Welfare<br><b>Indirect Support Services</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Health & Human Services</i><br>Dept. of Health & Welfare<br><b>Licensing & Certification</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Health & Human Services</i><br>Dept. of Health & Welfare<br><b>Mental Health Services</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Health & Human Services</i><br>Dept. of Health & Welfare<br><b>Psychiatric Hospitalization</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Health & Human Services</i><br>Dept. of Health & Welfare<br><b>Public Health Services</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Health & Human Services</i><br>Dept. of Health & Welfare<br><b>Service Integration</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Health & Human Services</i><br>Dept. of Health & Welfare<br><b>Services for the Developmentally Disabled</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Health & Human Services</i><br>Dept. of Health & Welfare<br><b>Substance Abuse Treatment & Prevention</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Judicial Branch</i><br><b>Court Operations</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Judicial Branch</i><br><b>Guardian Ad Litem Program</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Judicial Branch</i><br><b>Judicial Council</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Legislative Branch</i><br><b>Legislative Services Office</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Legislative Branch</i><br><b>Legislative Technology</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Legislative Branch</i><br><b>Legislature</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Legislative Branch</i><br><b>Office of Performance Evaluations</b>,☐,☐,"<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br>OPE proposes reductions<br>of an additional $11,300 in<br>personnel spending authority<br>for the 1% reduction scenario…<br>OPE experienced a departure of<br>a Senior Evaluator in December.<br>We are accruing salary savings<br>while we are hiring a replacement,<br>which we anticipate doing by<br>March 1st... With these salary<br>savings, we will not need to<br>reduce staff or impose furloughs<br>and the reductions would<br>not affect OPE’s ability to<br>complete program evaluations<br>for the Legislature during<br>the 2026 Legislative Session.</i>"
+Reduction,<i>Natural Resources</i><br><b>Dept. of Environmental Quality</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Natural Resources</i><br><b>Dept. of Fish & Game</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Natural Resources</i><br><b>Dept. of Parks & Recreation</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Natural Resources</i><br><b>Dept. of Water Resources</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Natural Resources</i><br>Land Board<br><b>Dept. of Lands</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Natural Resources</i><br>Land Board<br><b>Endowment Fund Investment Board</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Public Safety</i><br><b>Dept. of Juvenile Corrections</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Public Safety</i><br><b>Idaho State Police</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Public Safety</i><br>Dept. of Correction<br><b>Community Corrections</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Public Safety</i><br>Dept. of Correction<br><b>Community-Based SUDS Treatment</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Public Safety</i><br>Dept. of Correction<br><b>County & Out-of-State Placement</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Public Safety</i><br>Dept. of Correction<br><b>Management Services</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Public Safety</i><br>Dept. of Correction<br><b>Medical Services</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Public Safety</i><br>Dept. of Correction<br><b>State Prisons</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Public Safety</i><br>Idaho State Police<br><b>Brand Inspection</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Public Safety</i><br>Idaho State Police<br><b>POST Academy</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Public Safety</i><br>Idaho State Police<br><b>Racing Commission</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Public Schools</i><br><b>Administrators</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Public Schools</i><br><b>Central Services</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Public Schools</i><br><b>Children's Programs</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Public Schools</i><br><b>Facilities</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Public Schools</i><br><b>Idaho Digital Learning Academy</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Public Schools</i><br><b>Operations</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Public Schools</i><br><b>Services for the Deaf & the Blind</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Public Schools</i><br><b>Student Support</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>Public Schools</i><br><b>Teachers</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>State Board of Education</i><br><b>Agricultural Research & Extension Service</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>State Board of Education</i><br><b>Career Technical Education</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>State Board of Education</i><br><b>Charter School Commission</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>State Board of Education</i><br><b>College & Universities</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>State Board of Education</i><br><b>Community Colleges</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>State Board of Education</i><br><b>Dept. of Education</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>State Board of Education</i><br><b>Health Education Programs</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>State Board of Education</i><br><b>Idaho Public Television</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>State Board of Education</i><br><b>Office of the State Board of Education</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>State Board of Education</i><br><b>Special Programs</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Reduction,<i>State Board of Education</i><br><b>Vocational Rehabilitation</b>,☐,☐,<b>2/6: 4% mid-year reduction</b><br>Governor's 3% + JFAC's 1%<br><i><b>FY 26 Additional 1% scenario:</b><br></i>
+Maintenance,<i>Constitutional Officers</i><br><b>Attorney General</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Constitutional Officers</i><br><b>Governor</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Constitutional Officers</i><br><b>Lieutenant Governor</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Constitutional Officers</i><br><b>Secretary of State</b>,☐,☐,"<b>2/6:</b> <i>In my first budget as<br>Secretary of State, the<br>Legislature appropriated<br>$10 million in one-time<br>funding to modernize<br>Idaho’s election technology.<br>Through a careful review<br>of how these systems<br>are hosted and managed,<br>we identified an<br>opportunity to reduce<br>long-term costs by<br>transitioning hosting<br>responsibilities to vendors.<br>As a result, we have<br>identified a total of <br><b>$850,000 in one-time,<br>FY26 funds</b> we can revert<br>back from the original<br>appropriation while fully<br>funding these systems<br>for the originally proposed<br>five years. This represents<br>approximately 15 percent<br>of the Secretary of State’s<br>base budget and exceeds<br>the combined FY26 and<br>FY27 dollar value of the<br>requested reductions,<br>allowing us to contribute<br>meaningfully to addressing<br>the budget shortfall without<br>creating operational risk.</i>"
+Maintenance,<i>Constitutional Officers</i><br><b>State Controller</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Constitutional Officers</i><br><b>State Treasurer</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Constitutional Officers</i><br>State Treasurer<br><b>Millennium Fund</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Economic Development</i><br><b>Dept. of Agriculture</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Economic Development</i><br><b>Dept. of Commerce</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Economic Development</i><br><b>Dept. of Finance</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Economic Development</i><br><b>Dept. of Insurance</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Economic Development</i><br><b>Dept. of Labor</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Economic Development</i><br><b>Industrial Commission</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Economic Development</i><br><b>Public Utilities Commission</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Economic Development</i><br>Dept. of Agriculture<br><b>Soil & Water Conservation Commission</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Economic Development</i><br>Dept. of Self-Governing Agencies<br><b>Commission for Libraries</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Economic Development</i><br>Dept. of Self-Governing Agencies<br><b>Commission of Pardons & Parole</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Economic Development</i><br>Dept. of Self-Governing Agencies<br><b>Commission on Hispanic Affairs</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Economic Development</i><br>Dept. of Self-Governing Agencies<br><b>Div. of Occupational & Professional Licenses</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Economic Development</i><br>Dept. of Self-Governing Agencies<br><b>Div. of Veterans Services</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Economic Development</i><br>Dept. of Self-Governing Agencies<br><b>Office of Administrative Hearings</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Economic Development</i><br>Dept. of Self-Governing Agencies<br><b>Office of Health & Social Services Ombudsman</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Economic Development</i><br>Dept. of Self-Governing Agencies<br><b>Office of the State Public Defender</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Economic Development</i><br>Dept. of Self-Governing Agencies<br><b>Public Defense Commission</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Economic Development</i><br>Dept. of Self-Governing Agencies<br><b>State Appellate Public Defender</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Economic Development</i><br>Dept. of Self-Governing Agencies<br><b>State Historical Society</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Economic Development</i><br>Dept. of Self-Governing Agencies<br><b>State Lottery</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Economic Development</i><br>Dept. of Transportation<br><b>Contract Construction & Right-of-Way</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Economic Development</i><br>Dept. of Transportation<br><b>Highway Operations</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Economic Development</i><br>Dept. of Transportation<br><b>Motor Vehicles</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Economic Development</i><br>Dept. of Transportation<br><b>Transportation Services</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>General Government</i><br><b>Dept. of Administration</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>General Government</i><br>Dept. of Administration<br><b>Capitol Commission</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>General Government</i><br>Dept. of Administration<br><b>Permanent Building Fund</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>General Government</i><br>Dept. of Revenue & Taxation<br><b>Board of Tax Appeals</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>General Government</i><br>Dept. of Revenue & Taxation<br><b>State Tax Commission</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>General Government</i><br>Office of the Governor<br><b>Commission for the Blind & Visually Impaired</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>General Government</i><br>Office of the Governor<br><b>Commission on Aging</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>General Government</i><br>Office of the Governor<br><b>Commission on the Arts</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>General Government</i><br>Office of the Governor<br><b>Div. of Financial Management</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>General Government</i><br>Office of the Governor<br><b>Div. of Human Resources</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>General Government</i><br>Office of the Governor<br><b>Military Division</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>General Government</i><br>Office of the Governor<br><b>Office of Drug Policy</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>General Government</i><br>Office of the Governor<br><b>Office of Energy & Mineral Resources</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>General Government</i><br>Office of the Governor<br><b>Office of Information Technology Services</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>General Government</i><br>Office of the Governor<br><b>Office of Species Conservation</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>General Government</i><br>Office of the Governor<br><b>Public Employee Retirement System</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>General Government</i><br>Office of the Governor<br><b>State Liquor Division</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>General Government</i><br>Office of the Governor<br><b>STEM Action Center</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>General Government</i><br>Office of the Governor<br><b>Wolf Depredation Control Board</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>General Government</i><br>Office of the Governor<br><b>Workforce Development Council</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Health & Human Services</i><br><b>State Independent Living Council</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Health & Human Services</i><br>Dept. of Health & Welfare<br><b>Child Welfare</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Health & Human Services</i><br>Dept. of Health & Welfare<br><b>Div. of Medicaid</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Health & Human Services</i><br>Dept. of Health & Welfare<br><b>Div. of Welfare</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Health & Human Services</i><br>Dept. of Health & Welfare<br><b>Independent Councils</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Health & Human Services</i><br>Dept. of Health & Welfare<br><b>Indirect Support Services</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Health & Human Services</i><br>Dept. of Health & Welfare<br><b>Licensing & Certification</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Health & Human Services</i><br>Dept. of Health & Welfare<br><b>Mental Health Services</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Health & Human Services</i><br>Dept. of Health & Welfare<br><b>Psychiatric Hospitalization</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Health & Human Services</i><br>Dept. of Health & Welfare<br><b>Public Health Services</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Health & Human Services</i><br>Dept. of Health & Welfare<br><b>Service Integration</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Health & Human Services</i><br>Dept. of Health & Welfare<br><b>Services for the Developmentally Disabled</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Health & Human Services</i><br>Dept. of Health & Welfare<br><b>Substance Abuse Treatment & Prevention</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Judicial Branch</i><br><b>Court Operations</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Judicial Branch</i><br><b>Guardian Ad Litem Program</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Judicial Branch</i><br><b>Judicial Council</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Legislative Branch</i><br><b>Legislative Services Office</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Legislative Branch</i><br><b>Legislative Technology</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Legislative Branch</i><br><b>Legislature</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Legislative Branch</i><br><b>Office of Performance Evaluations</b>,☐,☐,"<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br><i>OPE has requested that the<br>original 3% reduction come<br>out of our operating spending<br>authority, which represents a<br>45% decrease in our operating<br>budget. These savings will<br>come from reduced out-of-<br>state travel, reduced use of<br>consultants, eliminating a<br>legal services subscription,<br>and consolidating software.</i>"
+Maintenance,<i>Natural Resources</i><br><b>Dept. of Environmental Quality</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Natural Resources</i><br><b>Dept. of Fish & Game</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Natural Resources</i><br><b>Dept. of Parks & Recreation</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Natural Resources</i><br><b>Dept. of Water Resources</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Natural Resources</i><br>Land Board<br><b>Dept. of Lands</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Natural Resources</i><br>Land Board<br><b>Endowment Fund Investment Board</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Public Safety</i><br><b>Dept. of Juvenile Corrections</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Public Safety</i><br><b>Idaho State Police</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Public Safety</i><br>Dept. of Correction<br><b>Community Corrections</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Public Safety</i><br>Dept. of Correction<br><b>Community-Based SUDS Treatment</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Public Safety</i><br>Dept. of Correction<br><b>County & Out-of-State Placement</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Public Safety</i><br>Dept. of Correction<br><b>Management Services</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Public Safety</i><br>Dept. of Correction<br><b>Medical Services</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Public Safety</i><br>Dept. of Correction<br><b>State Prisons</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Public Safety</i><br>Idaho State Police<br><b>Brand Inspection</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Public Safety</i><br>Idaho State Police<br><b>POST Academy</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Public Safety</i><br>Idaho State Police<br><b>Racing Commission</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Public Schools</i><br><b>Administrators</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Public Schools</i><br><b>Central Services</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Public Schools</i><br><b>Children's Programs</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Public Schools</i><br><b>Facilities</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Public Schools</i><br><b>Idaho Digital Learning Academy</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Public Schools</i><br><b>Operations</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Public Schools</i><br><b>Services for the Deaf & the Blind</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Public Schools</i><br><b>Student Support</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>Public Schools</i><br><b>Teachers</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>State Board of Education</i><br><b>Agricultural Research & Extension Service</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>State Board of Education</i><br><b>Career Technical Education</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>State Board of Education</i><br><b>Charter School Commission</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>State Board of Education</i><br><b>College & Universities</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>State Board of Education</i><br><b>Community Colleges</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>State Board of Education</i><br><b>Dept. of Education</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>State Board of Education</i><br><b>Health Education Programs</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>State Board of Education</i><br><b>Idaho Public Television</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>State Board of Education</i><br><b>Office of the State Board of Education</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>State Board of Education</i><br><b>Special Programs</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Maintenance,<i>State Board of Education</i><br><b>Vocational Rehabilitation</b>,☐,☐,<b>2/6: 5% base reduction</b><br>Governor's 3% + JFAC's 2%<br><i><b>FY 27 Additional 2% scenario:</b><br></i>
+Enhancement,<i>Constitutional Officers</i><br><b>Attorney General</b>,☐,☐,☐
+Enhancement,<i>Constitutional Officers</i><br><b>Governor</b>,☐,☐,☐
+Enhancement,<i>Constitutional Officers</i><br><b>Lieutenant Governor</b>,☐,☐,☐
+Enhancement,<i>Constitutional Officers</i><br><b>Secretary of State</b>,☐,☐,☐
+Enhancement,<i>Constitutional Officers</i><br><b>State Controller</b>,☐,☐,☐
+Enhancement,<i>Constitutional Officers</i><br><b>State Treasurer</b>,☐,☐,☐
+Enhancement,<i>Constitutional Officers</i><br>State Treasurer<br><b>Millennium Fund</b>,☐,☐,☐
+Enhancement,<i>Economic Development</i><br><b>Dept. of Agriculture</b>,☐,☐,☐
+Enhancement,<i>Economic Development</i><br><b>Dept. of Commerce</b>,☐,☐,☐
+Enhancement,<i>Economic Development</i><br><b>Dept. of Finance</b>,☐,☐,☐
+Enhancement,<i>Economic Development</i><br><b>Dept. of Insurance</b>,☐,☐,☐
+Enhancement,<i>Economic Development</i><br><b>Dept. of Labor</b>,☐,☐,☐
+Enhancement,<i>Economic Development</i><br><b>Industrial Commission</b>,☐,☐,☐
+Enhancement,<i>Economic Development</i><br><b>Public Utilities Commission</b>,☐,☐,☐
+Enhancement,<i>Economic Development</i><br>Dept. of Agriculture<br><b>Soil & Water Conservation Commission</b>,☐,☐,☐
+Enhancement,<i>Economic Development</i><br>Dept. of Self-Governing Agencies<br><b>Commission for Libraries</b>,☐,☐,☐
+Enhancement,<i>Economic Development</i><br>Dept. of Self-Governing Agencies<br><b>Commission of Pardons & Parole</b>,☐,☐,☐
+Enhancement,<i>Economic Development</i><br>Dept. of Self-Governing Agencies<br><b>Commission on Hispanic Affairs</b>,☐,☐,☐
+Enhancement,<i>Economic Development</i><br>Dept. of Self-Governing Agencies<br><b>Div. of Occupational & Professional Licenses</b>,☐,☐,☐
+Enhancement,<i>Economic Development</i><br>Dept. of Self-Governing Agencies<br><b>Div. of Veterans Services</b>,☐,☐,☐
+Enhancement,<i>Economic Development</i><br>Dept. of Self-Governing Agencies<br><b>Office of Administrative Hearings</b>,☐,☐,☐
+Enhancement,<i>Economic Development</i><br>Dept. of Self-Governing Agencies<br><b>Office of Health & Social Services Ombudsman</b>,☐,☐,☐
+Enhancement,<i>Economic Development</i><br>Dept. of Self-Governing Agencies<br><b>Office of the State Public Defender</b>,☐,☐,☐
+Enhancement,<i>Economic Development</i><br>Dept. of Self-Governing Agencies<br><b>Public Defense Commission</b>,☐,☐,☐
+Enhancement,<i>Economic Development</i><br>Dept. of Self-Governing Agencies<br><b>State Appellate Public Defender</b>,☐,☐,☐
+Enhancement,<i>Economic Development</i><br>Dept. of Self-Governing Agencies<br><b>State Historical Society</b>,☐,☐,☐
+Enhancement,<i>Economic Development</i><br>Dept. of Self-Governing Agencies<br><b>State Lottery</b>,☐,☐,☐
+Enhancement,<i>Economic Development</i><br>Dept. of Transportation<br><b>Contract Construction & Right-of-Way</b>,☐,☐,☐
+Enhancement,<i>Economic Development</i><br>Dept. of Transportation<br><b>Highway Operations</b>,☐,☐,☐
+Enhancement,<i>Economic Development</i><br>Dept. of Transportation<br><b>Motor Vehicles</b>,☐,☐,☐
+Enhancement,<i>Economic Development</i><br>Dept. of Transportation<br><b>Transportation Services</b>,☐,☐,☐
+Enhancement,<i>General Government</i><br><b>Dept. of Administration</b>,☐,☐,☐
+Enhancement,<i>General Government</i><br>Dept. of Administration<br><b>Capitol Commission</b>,☐,☐,☐
+Enhancement,<i>General Government</i><br>Dept. of Administration<br><b>Permanent Building Fund</b>,☐,☐,☐
+Enhancement,<i>General Government</i><br>Dept. of Revenue & Taxation<br><b>Board of Tax Appeals</b>,☐,☐,☐
+Enhancement,<i>General Government</i><br>Dept. of Revenue & Taxation<br><b>State Tax Commission</b>,☐,☐,☐
+Enhancement,<i>General Government</i><br>Office of the Governor<br><b>Commission for the Blind & Visually Impaired</b>,☐,☐,☐
+Enhancement,<i>General Government</i><br>Office of the Governor<br><b>Commission on Aging</b>,☐,☐,☐
+Enhancement,<i>General Government</i><br>Office of the Governor<br><b>Commission on the Arts</b>,☐,☐,☐
+Enhancement,<i>General Government</i><br>Office of the Governor<br><b>Div. of Financial Management</b>,☐,☐,☐
+Enhancement,<i>General Government</i><br>Office of the Governor<br><b>Div. of Human Resources</b>,☐,☐,☐
+Enhancement,<i>General Government</i><br>Office of the Governor<br><b>Military Division</b>,☐,☐,☐
+Enhancement,<i>General Government</i><br>Office of the Governor<br><b>Office of Drug Policy</b>,☐,☐,☐
+Enhancement,<i>General Government</i><br>Office of the Governor<br><b>Office of Energy & Mineral Resources</b>,☐,☐,☐
+Enhancement,<i>General Government</i><br>Office of the Governor<br><b>Office of Information Technology Services</b>,☐,☐,☐
+Enhancement,<i>General Government</i><br>Office of the Governor<br><b>Office of Species Conservation</b>,☐,☐,☐
+Enhancement,<i>General Government</i><br>Office of the Governor<br><b>Public Employee Retirement System</b>,☐,☐,☐
+Enhancement,<i>General Government</i><br>Office of the Governor<br><b>State Liquor Division</b>,☐,☐,☐
+Enhancement,<i>General Government</i><br>Office of the Governor<br><b>STEM Action Center</b>,☐,☐,☐
+Enhancement,<i>General Government</i><br>Office of the Governor<br><b>Wolf Depredation Control Board</b>,☐,☐,☐
+Enhancement,<i>General Government</i><br>Office of the Governor<br><b>Workforce Development Council</b>,☐,☐,☐
+Enhancement,<i>Health & Human Services</i><br><b>State Independent Living Council</b>,☐,☐,☐
+Enhancement,<i>Health & Human Services</i><br>Dept. of Health & Welfare<br><b>Child Welfare</b>,☐,☐,☐
+Enhancement,<i>Health & Human Services</i><br>Dept. of Health & Welfare<br><b>Div. of Medicaid</b>,☐,☐,☐
+Enhancement,<i>Health & Human Services</i><br>Dept. of Health & Welfare<br><b>Div. of Welfare</b>,☐,☐,☐
+Enhancement,<i>Health & Human Services</i><br>Dept. of Health & Welfare<br><b>Independent Councils</b>,☐,☐,☐
+Enhancement,<i>Health & Human Services</i><br>Dept. of Health & Welfare<br><b>Indirect Support Services</b>,☐,☐,☐
+Enhancement,<i>Health & Human Services</i><br>Dept. of Health & Welfare<br><b>Licensing & Certification</b>,☐,☐,☐
+Enhancement,<i>Health & Human Services</i><br>Dept. of Health & Welfare<br><b>Mental Health Services</b>,☐,☐,☐
+Enhancement,<i>Health & Human Services</i><br>Dept. of Health & Welfare<br><b>Psychiatric Hospitalization</b>,☐,☐,☐
+Enhancement,<i>Health & Human Services</i><br>Dept. of Health & Welfare<br><b>Public Health Services</b>,☐,☐,☐
+Enhancement,<i>Health & Human Services</i><br>Dept. of Health & Welfare<br><b>Service Integration</b>,☐,☐,☐
+Enhancement,<i>Health & Human Services</i><br>Dept. of Health & Welfare<br><b>Services for the Developmentally Disabled</b>,☐,☐,☐
+Enhancement,<i>Health & Human Services</i><br>Dept. of Health & Welfare<br><b>Substance Abuse Treatment & Prevention</b>,☐,☐,☐
+Enhancement,<i>Judicial Branch</i><br><b>Court Operations</b>,☐,☐,☐
+Enhancement,<i>Judicial Branch</i><br><b>Guardian Ad Litem Program</b>,☐,☐,☐
+Enhancement,<i>Judicial Branch</i><br><b>Judicial Council</b>,☐,☐,☐
+Enhancement,<i>Legislative Branch</i><br><b>Legislative Services Office</b>,☐,☐,☐
+Enhancement,<i>Legislative Branch</i><br><b>Legislative Technology</b>,☐,☐,☐
+Enhancement,<i>Legislative Branch</i><br><b>Legislature</b>,☐,☐,☐
+Enhancement,<i>Legislative Branch</i><br><b>Office of Performance Evaluations</b>,☐,☐,☐
+Enhancement,<i>Natural Resources</i><br><b>Dept. of Environmental Quality</b>,☐,☐,☐
+Enhancement,<i>Natural Resources</i><br><b>Dept. of Fish & Game</b>,☐,☐,☐
+Enhancement,<i>Natural Resources</i><br><b>Dept. of Parks & Recreation</b>,☐,☐,☐
+Enhancement,<i>Natural Resources</i><br><b>Dept. of Water Resources</b>,☐,☐,☐
+Enhancement,<i>Natural Resources</i><br>Land Board<br><b>Dept. of Lands</b>,☐,☐,☐
+Enhancement,<i>Natural Resources</i><br>Land Board<br><b>Endowment Fund Investment Board</b>,☐,☐,☐
+Enhancement,<i>Public Safety</i><br><b>Dept. of Juvenile Corrections</b>,☐,☐,☐
+Enhancement,<i>Public Safety</i><br><b>Idaho State Police</b>,☐,☐,☐
+Enhancement,<i>Public Safety</i><br>Dept. of Correction<br><b>Community Corrections</b>,☐,☐,☐
+Enhancement,<i>Public Safety</i><br>Dept. of Correction<br><b>Community-Based SUDS Treatment</b>,☐,☐,☐
+Enhancement,<i>Public Safety</i><br>Dept. of Correction<br><b>County & Out-of-State Placement</b>,☐,☐,☐
+Enhancement,<i>Public Safety</i><br>Dept. of Correction<br><b>Management Services</b>,☐,☐,☐
+Enhancement,<i>Public Safety</i><br>Dept. of Correction<br><b>Medical Services</b>,☐,☐,☐
+Enhancement,<i>Public Safety</i><br>Dept. of Correction<br><b>State Prisons</b>,☐,☐,☐
+Enhancement,<i>Public Safety</i><br>Idaho State Police<br><b>Brand Inspection</b>,☐,☐,☐
+Enhancement,<i>Public Safety</i><br>Idaho State Police<br><b>POST Academy</b>,☐,☐,☐
+Enhancement,<i>Public Safety</i><br>Idaho State Police<br><b>Racing Commission</b>,☐,☐,☐
+Enhancement,<i>Public Schools</i><br><b>Administrators</b>,☐,☐,☐
+Enhancement,<i>Public Schools</i><br><b>Central Services</b>,☐,☐,☐
+Enhancement,<i>Public Schools</i><br><b>Children's Programs</b>,☐,☐,☐
+Enhancement,<i>Public Schools</i><br><b>Facilities</b>,☐,☐,☐
+Enhancement,<i>Public Schools</i><br><b>Idaho Digital Learning Academy</b>,☐,☐,☐
+Enhancement,<i>Public Schools</i><br><b>Operations</b>,☐,☐,☐
+Enhancement,<i>Public Schools</i><br><b>Services for the Deaf & the Blind</b>,☐,☐,☐
+Enhancement,<i>Public Schools</i><br><b>Student Support</b>,☐,☐,☐
+Enhancement,<i>Public Schools</i><br><b>Teachers</b>,☐,☐,☐
+Enhancement,<i>State Board of Education</i><br><b>Agricultural Research & Extension Service</b>,☐,☐,☐
+Enhancement,<i>State Board of Education</i><br><b>Career Technical Education</b>,☐,☐,☐
+Enhancement,<i>State Board of Education</i><br><b>Charter School Commission</b>,☐,☐,☐
+Enhancement,<i>State Board of Education</i><br><b>College & Universities</b>,☐,☐,☐
+Enhancement,<i>State Board of Education</i><br><b>Community Colleges</b>,☐,☐,☐
+Enhancement,<i>State Board of Education</i><br><b>Dept. of Education</b>,☐,☐,☐
+Enhancement,<i>State Board of Education</i><br><b>Health Education Programs</b>,☐,☐,☐
+Enhancement,<i>State Board of Education</i><br><b>Idaho Public Television</b>,☐,☐,☐
+Enhancement,<i>State Board of Education</i><br><b>Office of the State Board of Education</b>,☐,☐,☐
+Enhancement,<i>State Board of Education</i><br><b>Special Programs</b>,☐,☐,☐
+Enhancement,<i>State Board of Education</i><br><b>Vocational Rehabilitation</b>,☐,☐,☐

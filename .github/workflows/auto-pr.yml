@@ -1,0 +1,193 @@
+name: Auto PR for Agent Branches
+
+on:
+  create:
+  workflow_dispatch:
+
+jobs:
+  auto-pr:
+    if: >
+      (github.event_name == 'create' &&
+       github.event.ref_type == 'branch' &&
+       (startsWith(github.event.ref, 'claude/') ||
+        startsWith(github.event.ref, 'codex/') ||
+        startsWith(github.event.ref, 'gemini/') ||
+        startsWith(github.event.ref, 'copilot/') ||
+        startsWith(github.event.ref, 'perplexity/') ||
+        startsWith(github.event.ref, 'grok/') ||
+        startsWith(github.event.ref, 'serena/'))) ||
+      (github.event_name == 'workflow_dispatch' &&
+       (startsWith(github.ref_name, 'claude/') ||
+        startsWith(github.ref_name, 'codex/') ||
+        startsWith(github.ref_name, 'gemini/') ||
+        startsWith(github.ref_name, 'copilot/') ||
+        startsWith(github.ref_name, 'perplexity/') ||
+        startsWith(github.ref_name, 'grok/') ||
+        startsWith(github.ref_name, 'serena/')))
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+        with:
+          fetch-depth: 0
+          ref: ${{ github.event_name == 'create' && github.event.ref || github.ref_name }}
+
+      - name: Get changed files and classify
+        id: classify
+        run: |
+          if ! git merge-base origin/main HEAD >/dev/null 2>&1; then
+            echo "No merge base with origin/main; skipping auto-PR for history-rewrite branch."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            {
+              echo "### Auto PR skipped"
+              echo
+              echo "Branch has no merge base with \`origin/main\`; treating this as a history-rewrite branch."
+            } >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+
+          CHANGED=$(git diff --name-only origin/main...HEAD)
+          if [ -z "$CHANGED" ]; then
+            echo "No changes vs main"
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          echo "skip=false" >> "$GITHUB_OUTPUT"
+
+          RESULT=$(echo "$CHANGED" | python3 .github/scripts/classify_paths.py)
+          TIER=$(echo "$RESULT" | python3 -c "import sys,json; print(json.load(sys.stdin)['tier'])")
+          echo "tier=$TIER" >> "$GITHUB_OUTPUT"
+          echo "result=$RESULT" >> "$GITHUB_OUTPUT"
+
+          echo "### Changed files" >> "$GITHUB_STEP_SUMMARY"
+          echo "$CHANGED" >> "$GITHUB_STEP_SUMMARY"
+          echo "### Risk tier: $TIER" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Check for existing PR
+        if: steps.classify.outputs.skip != 'true'
+        id: check-pr
+        uses: ./.github/actions/idempotent-pr-create
+        with:
+          branch: ${{ github.event_name == 'create' && github.event.ref || github.ref_name }}
+          gh-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Ensure labels exist
+        if: steps.classify.outputs.skip != 'true' && steps.check-pr.outputs.pr_exists != 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 .github/scripts/review_feedback_loop.py ensure-labels
+          python3 .github/scripts/pr_lifecycle.py ensure-labels
+
+      - name: Create PR
+        if: steps.classify.outputs.skip != 'true' && steps.check-pr.outputs.pr_exists != 'true'
+        id: create-pr
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          RISK_TIER: ${{ steps.classify.outputs.tier }}
+          BRANCH_NAME: ${{ github.event_name == 'create' && github.event.ref || github.ref_name }}
+        run: |
+          BRANCH="${BRANCH_NAME}"
+          # Derive title: strip agent prefix (claude/, codex/, gemini/, etc.);
+          # then conditionally strip a trailing session-token segment.
+          #
+          # A session token looks like a short mixed-case alphanumeric with
+          # at least one digit or uppercase letter (e.g. "U4XDk", "aB3xY2").
+          # Plain lowercase words at the end (e.g. "audit", "probe", "purge")
+          # are kept — they carry real intent.
+          TITLE_BARE=$(echo "$BRANCH" | sed 's|^[^/]*/||')
+          LAST_SEG=$(echo "$TITLE_BARE" | sed 's|^.*-||')
+          if [[ "$LAST_SEG" =~ [A-Z0-9] ]]; then
+            TITLE=$(echo "$TITLE_BARE" | sed 's|-[^-]*$||' | tr '-' ' ')
+          else
+            TITLE=$(echo "$TITLE_BARE" | tr '-' ' ')
+          fi
+          # Extract agent name from branch prefix
+          AGENT=$(echo "$BRANCH" | sed 's|/.*||')
+          TIER="$RISK_TIER"
+          DIFFSTAT=$(git diff --stat origin/main...HEAD)
+
+          if [ "$TIER" = "low" ]; then
+            LABEL="agent-review-pending"
+            LABEL_MARKER="$LABEL"
+          else
+            LABEL=""
+            LABEL_MARKER="none"
+          fi
+
+          # Build PR body
+          BODY=$(cat <<EOF
+## Auto-generated PR
+
+**Agent:** \`$AGENT\`
+**Lifecycle:** \`staged\`
+**Label:** \`$LABEL_MARKER\`
+
+### Diff stat
+\`\`\`
+$DIFFSTAT
+\`\`\`
+
+---
+*Created by auto-pr workflow*
+EOF
+)
+
+          CREATE_ARGS=(
+            --title "$TITLE"
+            --body "$BODY"
+            --base main
+            --head "$BRANCH"
+            --label "risk/$TIER"
+          )
+          if [ -n "$LABEL" ]; then
+            CREATE_ARGS+=(--label "$LABEL")
+          fi
+
+          PR_URL=$(gh pr create "${CREATE_ARGS[@]}" 2>&1 || true)
+
+          echo "Created PR: $PR_URL"
+
+      - name: Mark PR lifecycle as staged
+        if: steps.classify.outputs.skip != 'true' && steps.check-pr.outputs.pr_exists != 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH_NAME: ${{ github.event_name == 'create' && github.event.ref || github.ref_name }}
+        run: |
+          PR_NUM=$(gh pr list --head "$BRANCH_NAME" --state open --json number --jq '.[0].number // empty' 2>/dev/null || true)
+          if [ -z "$PR_NUM" ] || ! [[ "$PR_NUM" =~ ^[0-9]+$ ]]; then
+            echo "No open PR found to mark lifecycle state on"
+            exit 0
+          fi
+
+          python3 .github/scripts/pr_lifecycle.py set-state --pr-number "$PR_NUM" --state staged
+
+      - name: Trigger agent reviews
+        if: steps.classify.outputs.skip != 'true' && steps.check-pr.outputs.pr_exists != 'true' && steps.classify.outputs.tier == 'low'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH_NAME: ${{ github.event_name == 'create' && github.event.ref || github.ref_name }}
+        run: |
+          BRANCH="${BRANCH_NAME}"
+          PR_NUM=$(gh pr list --head "$BRANCH" --state open --json number --jq '.[0].number // empty' 2>/dev/null || true)
+          if [ -z "$PR_NUM" ] || ! [[ "$PR_NUM" =~ ^[0-9]+$ ]]; then
+            echo "No open PR found to trigger reviews on"
+            exit 0
+          fi
+
+          # Post explicit review triggers for low-risk PRs only.
+          # Each tool is a separate comment so independent apps see their own trigger.
+          gh pr comment "$PR_NUM" --body "@coderabbitai review"
+          gh pr comment "$PR_NUM" --body "@Qodo /review"
+          gh pr comment "$PR_NUM" --body "@gemini-code-assist review"
+
+      - name: Log grace period start
+        if: steps.classify.outputs.skip != 'true' && steps.classify.outputs.tier == 'low' && steps.check-pr.outputs.pr_exists != 'true'
+        run: |
+          echo "Lifecycle set to \`lifecycle/staged\`." >> "$GITHUB_STEP_SUMMARY"
+          echo "Low-risk PR created with agent-review-pending label." >> "$GITHUB_STEP_SUMMARY"
+          echo "Auto-merge is gated: the agent-review-gate workflow will promote to auto-merge after a **30-minute** review grace period, giving agent reviewers time to post feedback." >> "$GITHUB_STEP_SUMMARY"

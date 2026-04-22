@@ -1,0 +1,45 @@
+name: Sync PR state to Linear
+
+on:
+  pull_request_target:
+    types: [opened, reopened, ready_for_review, closed]
+  workflow_dispatch:
+
+jobs:
+  sync:
+    name: Sync PR → Linear
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: read
+    
+    env:
+      OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+
+      - name: Load Secrets from 1Password
+        id: op-load-secrets
+        if: env.OP_SERVICE_ACCOUNT_TOKEN != ''
+        uses: 1password/load-secrets-action@92467eb28f72e8255933372f1e0707c567ce2259 # v4
+        with:
+          export-env: true
+        env:
+          LINEAR_API_KEY: op://vault-operations/linear-api-key/credential
+
+      - name: Fallback to GitHub Secrets if 1Password is missing
+        if: env.OP_SERVICE_ACCOUNT_TOKEN == ''
+        run: |
+          echo "OP_SERVICE_ACCOUNT_TOKEN is not configured; using GitHub secrets fallback."
+          echo "LINEAR_API_KEY=${{ secrets.LINEAR_API_KEY }}" >> "$GITHUB_ENV"
+
+      - name: Sync PR lifecycle to Linear
+        env:
+          LINEAR_PR_OPEN_STATE_ID: ${{ secrets.LINEAR_PR_OPEN_STATE_ID }}
+          LINEAR_PR_MERGED_STATE_ID: ${{ secrets.LINEAR_PR_MERGED_STATE_ID }}
+          LINEAR_POST_LINKBACK: ${{ vars.LINEAR_POST_LINKBACK || 'true' }}
+          LINEAR_SYNC_STRICT: ${{ vars.LINEAR_SYNC_STRICT || 'false' }}
+        run: |
+          python3 .github/scripts/linear_pr_sync.py

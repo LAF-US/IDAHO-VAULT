@@ -1,0 +1,606 @@
+{
+  "manifest_version": "1.0.0",
+  "generated_at": "2026-04-18T12:43:56.724080Z",
+  "authority": {
+    "canonical_system": "vault",
+    "execution_system": "github",
+    "interface_system": "obsidian",
+    "fallback_mode": "filesystem"
+  },
+  "sync": {
+    "primary_dataset": "vault",
+    "sync_unit": [
+      "file",
+      "manifest_entry"
+    ],
+    "trigger_model": "event_based_write_read_cycle"
+  },
+  "mcp": {
+    "enabled": false,
+    "mode": "transport_only",
+    "server": null,
+    "notes": "Enable after Obsidian MCP Tools endpoint and write controls are validated."
+  },
+  "obsidian_templates": {
+    "source_of_truth": "tracked_obsidian_config",
+    "concrete_bindings": [
+      {
+        "client": "obsidian",
+        "plugin": "core/daily-notes",
+        "config_path": ".obsidian/daily-notes.json",
+        "template_path": "DAILY NOTE TEMPLATE.md",
+        "mode": "daily_note",
+        "status": "active",
+        "note_folder": ""
+      }
+    ],
+    "folder_bindings": [
+      {
+        "client": "obsidian",
+        "plugin": "core/templates",
+        "config_path": ".obsidian/templates.json",
+        "folder": "",
+        "date_format": "YYYY-MM-DD",
+        "time_format": "HH:mm",
+        "status": "folder_only",
+        "note": "Tracked config exposes a template pool, not concrete template file bindings."
+      }
+    ],
+    "untracked_plugins": [
+      {
+        "client": "obsidian",
+        "plugin": "templater-obsidian",
+        "status": "installed_untracked_config",
+        "config_path": ".obsidian/plugins/templater-obsidian/data.json",
+        "note": "Plugin settings are intentionally private via Obsidian Sync and are not read into swarm tracking."
+      }
+    ]
+  },
+  "plugin_layer": {
+    "manifest_doc": "!/PLUGIN-REGISTRY.md",
+    "status": "active",
+    "authority_boundary": "Plugin doctrine and promotion rules live in !/PLUGIN-REGISTRY.md; interface state lives in .obsidian/community-plugins.json; runtime payloads live under .obsidian/plugins/.",
+    "current_state": {
+      "enabled_count": 26,
+      "dormant_count": 28,
+      "installed_count": 54,
+      "total_payload_mb": 171,
+      "largest_payload": {
+        "plugin": "mcp-tools",
+        "size_kb": 117479
+      }
+    },
+    "entrypoints": [
+      {
+        "id": "plugin-manifest",
+        "path": "!/PLUGIN-REGISTRY.md",
+        "role": "canonical doctrine"
+      },
+      {
+        "id": "community-plugins",
+        "path": ".obsidian/community-plugins.json",
+        "role": "enabled community-plugin interface state"
+      },
+      {
+        "id": "core-plugins",
+        "path": ".obsidian/core-plugins.json",
+        "role": "enabled core-plugin interface state"
+      },
+      {
+        "id": "plugin-payloads",
+        "path": ".obsidian/plugins/",
+        "role": "installed community-plugin payloads"
+      }
+    ],
+    "enabled_community_plugins": [
+      "obsidian-git",
+      "obsidian-linter",
+      "roygbiv-day-accent",
+      "periodic-notes",
+      "recent-files-obsidian",
+      "omnisearch",
+      "settings-search",
+      "tag-wrangler",
+      "nldates-obsidian",
+      "obsidian-local-rest-api",
+      "mcp-tools",
+      "home-tab",
+      "letterboxd-rss-sync",
+      "smart-connections",
+      "smart-connections-visualizer",
+      "breadcrumbs",
+      "obsidian-icon-shortcodes",
+      "templater-obsidian",
+      "ai-templater",
+      "handwritten-notes",
+      "wikipedia-search",
+      "msg-handler",
+      "obsidian42-strange-new-worlds",
+      "obsidian-day-planner",
+      "dataview",
+      "obsidian-tasks-plugin"
+    ],
+    "enabled_core_plugins": [
+      "file-explorer",
+      "global-search",
+      "switcher",
+      "graph",
+      "backlink",
+      "canvas",
+      "outgoing-link",
+      "tag-pane",
+      "properties",
+      "page-preview",
+      "daily-notes",
+      "templates",
+      "note-composer",
+      "command-palette",
+      "slash-command",
+      "editor-status",
+      "bookmarks",
+      "markdown-importer",
+      "zk-prefixer",
+      "random-note",
+      "outline",
+      "word-count",
+      "slides",
+      "audio-recorder",
+      "workspaces",
+      "file-recovery",
+      "publish",
+      "sync",
+      "webviewer",
+      "footnotes",
+      "bases"
+    ],
+    "families": {
+      "enabled": [
+        {
+          "id": "infrastructure_agent",
+          "plugins": [
+            "obsidian-git",
+            "obsidian-local-rest-api",
+            "mcp-tools",
+            "obsidian-linter"
+          ]
+        },
+        {
+          "id": "navigation_search",
+          "plugins": [
+            "breadcrumbs",
+            "omnisearch",
+            "settings-search",
+            "recent-files-obsidian",
+            "home-tab",
+            "obsidian42-strange-new-worlds",
+            "tag-wrangler",
+            "smart-connections",
+            "smart-connections-visualizer"
+          ]
+        },
+        {
+          "id": "content_creation_editing",
+          "plugins": [
+            "templater-obsidian",
+            "ai-templater",
+            "nldates-obsidian",
+            "obsidian-icon-shortcodes",
+            "dataview",
+            "obsidian-tasks-plugin",
+            "obsidian-day-planner",
+            "wikipedia-search",
+            "handwritten-notes",
+            "msg-handler",
+            "letterboxd-rss-sync"
+          ]
+        },
+        {
+          "id": "daily_notes_calendar",
+          "plugins": [
+            "periodic-notes",
+            "roygbiv-day-accent"
+          ]
+        }
+      ],
+      "dormant": [
+        {
+          "id": "ai_llm",
+          "plugins": [
+            "ai-image-analyzer",
+            "bmo-chatbot",
+            "large-language-models",
+            "nexus-ai-chat-importer",
+            "taskbone-ocr-plugin",
+            "text-extractor"
+          ]
+        },
+        {
+          "id": "content_organization",
+          "plugins": [
+            "make-md",
+            "notebook-navigator",
+            "quickadd",
+            "obsidian-folder-index",
+            "map-of-content",
+            "links"
+          ]
+        },
+        {
+          "id": "calendar_date",
+          "plugins": [
+            "calendar",
+            "calendarium",
+            "keep-the-rhythm"
+          ]
+        },
+        {
+          "id": "pdf_document",
+          "plugins": [
+            "obsidian-extract-pdf-highlights",
+            "pdf-plus"
+          ]
+        },
+        {
+          "id": "table_editing",
+          "plugins": [
+            "table-editor-obsidian",
+            "editing-toolbar",
+            "cmdr"
+          ]
+        },
+        {
+          "id": "visual_ui",
+          "plugins": [
+            "obsidian-icon-folder",
+            "oz-image-plugin",
+            "obsidian-admonition"
+          ]
+        },
+        {
+          "id": "specialty",
+          "plugins": [
+            "obsidian-leaflet-plugin",
+            "obsidian-5e-statblocks",
+            "obsidian-dice-roller",
+            "loom",
+            "translate"
+          ]
+        }
+      ]
+    },
+    "dependency_edges": [
+      {
+        "parent": "obsidian-local-rest-api",
+        "child": "mcp-tools",
+        "type": "required_runtime"
+      },
+      {
+        "parent": "smart-connections",
+        "child": "smart-connections-visualizer",
+        "type": "feature_extension"
+      },
+      {
+        "parent": "templater-obsidian",
+        "child": "ai-templater",
+        "type": "functional_extension"
+      },
+      {
+        "parent": "periodic-notes",
+        "child": "roygbiv-day-accent",
+        "type": "data_dependency"
+      }
+    ],
+    "data_contracts": [
+      {
+        "plugin": "breadcrumbs",
+        "depends_on": "related-frontmatter"
+      },
+      {
+        "plugin": "dataview",
+        "depends_on": "inline-dataview-queries"
+      }
+    ],
+    "writable_surfaces": [
+      {
+        "path": "!/PLUGIN-REGISTRY.md",
+        "persistence": "durable"
+      },
+      {
+        "path": ".obsidian/community-plugins.json",
+        "persistence": "durable_interface_state"
+      },
+      {
+        "path": ".obsidian/core-plugins.json",
+        "persistence": "durable_interface_state"
+      },
+      {
+        "path": ".obsidian/plugins/*/manifest.json",
+        "persistence": "durable_when_tracked"
+      },
+      {
+        "path": ".obsidian/plugins/*/data.json",
+        "persistence": "ephemeral_gitignored"
+      },
+      {
+        "path": ".obsidian/plugins/*/cache/",
+        "persistence": "ephemeral_gitignored"
+      },
+      {
+        "path": ".smart-env/",
+        "persistence": "ephemeral_local_runtime"
+      },
+      {
+        "path": ".makemd/",
+        "persistence": "ephemeral_local_runtime"
+      },
+      {
+        "path": ".space/",
+        "persistence": "ephemeral_local_runtime"
+      }
+    ],
+    "promotion_rule": "No plugin-state change counts as legitimate until !/PLUGIN-REGISTRY.md is updated in the same change set or earlier."
+  },
+  "cross_swarm_sync": {
+    "protocol_doc": "!/SIGNALS/README.md",
+    "signal_root": "!/SIGNALS/",
+    "live_board": "!/__!__/!/! The world is quiet here/DOCKET.md",
+    "status": "active",
+    "transport_model": "vault_native_async_signal_bus",
+    "authority_boundary": "Signal protocol lives in !/SIGNALS/README.md; live visibility lives in the Courtroom DOCKET; execution state remains in GitHub and Linear.",
+    "entrypoints": [
+      {
+        "id": "signal-protocol",
+        "path": "!/SIGNALS/README.md",
+        "role": "canonical signaling protocol"
+      },
+      {
+        "id": "signal-root",
+        "path": "!/SIGNALS/",
+        "role": "durable agent-to-agent signal files"
+      },
+      {
+        "id": "courtroom-docket",
+        "path": "!/__!__/!/! The world is quiet here/DOCKET.md",
+        "role": "live visibility surface for open signals and coordination"
+      },
+      {
+        "id": "narrative-registry",
+        "path": "!/AGENTS.md",
+        "role": "agent handles and lane rules"
+      }
+    ],
+    "status_values": [
+      "OPEN",
+      "ACKNOWLEDGED",
+      "REPLIED",
+      "CLOSED",
+      "OVERRIDDEN"
+    ],
+    "required_fields": [
+      "sig_id",
+      "from",
+      "to",
+      "re",
+      "date",
+      "status",
+      "thread",
+      "replying_to"
+    ],
+    "rules": [
+      "Signals are durable, on-the-record markdown files committed to git.",
+      "Recipients check for OPEN signals at session start.",
+      "Replies are new files; original bodies are not rewritten.",
+      "Signals coordinate work but do not silently become doctrine.",
+      "No secrets or private credentials belong in signal files."
+    ],
+    "promotion_rule": "If a signal produces a durable decision, execution commitment, or long-lived context, promote the outcome into the vault, GitHub, or Linear explicitly."
+  },
+  "locks": [
+    {
+      "lock_id": "85b18565-8c13-4dd2-92e5-0ae4831ce34e",
+      "file_path": "!/ingest-2026-03-30T130139Z.md",
+      "agent_id": "github-actions[bot]",
+      "created_at": "2026-03-30T13:01:39.103000Z",
+      "expires_at": "2026-03-30T13:16:39.103000Z",
+      "state": "released"
+    },
+    {
+      "lock_id": "22f7a149-7793-4743-9361-1128a855cc38",
+      "file_path": "!/ingest-2026-03-31T125934Z.md",
+      "agent_id": "github-actions[bot]",
+      "created_at": "2026-03-31T12:59:34.525101Z",
+      "expires_at": "2026-03-31T13:14:34.525101Z",
+      "state": "released"
+    },
+    {
+      "lock_id": "ecd53421-645f-4477-838e-9a051b275d9f",
+      "file_path": "!/ingest-2026-04-01T130204Z.md",
+      "agent_id": "github-actions[bot]",
+      "created_at": "2026-04-01T13:02:04.936324Z",
+      "expires_at": "2026-04-01T13:17:04.936324Z",
+      "state": "released"
+    },
+    {
+      "lock_id": "8a70d210-ab5c-4070-8069-bb0584ab059a",
+      "file_path": "!/ingest-2026-04-02T125540Z.md",
+      "agent_id": "github-actions[bot]",
+      "created_at": "2026-04-02T12:55:40.427652Z",
+      "expires_at": "2026-04-02T13:10:40.427652Z",
+      "state": "released"
+    },
+    {
+      "lock_id": "f27aa08c-9cad-4d16-bca0-b66d75ea90a6",
+      "file_path": "!/ingest-2026-04-03T124455Z.md",
+      "agent_id": "github-actions[bot]",
+      "created_at": "2026-04-03T12:44:55.841804Z",
+      "expires_at": "2026-04-03T12:59:55.841804Z",
+      "state": "released"
+    },
+    {
+      "lock_id": "24905124-f5b5-47da-a528-1aa5a785b31a",
+      "file_path": "!/ingest-2026-04-04T123749Z.md",
+      "agent_id": "github-actions[bot]",
+      "created_at": "2026-04-04T12:37:49.934191Z",
+      "expires_at": "2026-04-04T12:52:49.934191Z",
+      "state": "released"
+    },
+    {
+      "lock_id": "7d3cd840-7c2c-4f21-bcf7-9ef6d4a5bc6b",
+      "file_path": "!/ingest-2026-04-08T130539Z.md",
+      "agent_id": "github-actions[bot]",
+      "created_at": "2026-04-08T13:05:39.679655Z",
+      "expires_at": "2026-04-08T13:20:39.679655Z",
+      "state": "released"
+    },
+    {
+      "lock_id": "7872b802-5394-4a0c-a4ef-5f8835775602",
+      "file_path": "!/ingest-2026-04-10T125333Z.md",
+      "agent_id": "github-actions[bot]",
+      "created_at": "2026-04-10T12:53:33.857178Z",
+      "expires_at": "2026-04-10T13:08:33.857178Z",
+      "state": "released"
+    },
+    {
+      "lock_id": "54e18684-4d27-4a9f-a06b-6b0b96dcc13e",
+      "file_path": "!/ingest-2026-04-11T124012Z.md",
+      "agent_id": "github-actions[bot]",
+      "created_at": "2026-04-11T12:40:12.188892Z",
+      "expires_at": "2026-04-11T12:55:12.188892Z",
+      "state": "released"
+    },
+    {
+      "lock_id": "c5da7927-49a2-44df-a3ec-c7379a0cf3f8",
+      "file_path": "!/ingest-2026-04-13T130736Z.md",
+      "agent_id": "github-actions[bot]",
+      "created_at": "2026-04-13T13:07:36.164749Z",
+      "expires_at": "2026-04-13T13:22:36.164749Z",
+      "state": "released"
+    },
+    {
+      "lock_id": "c8ea37ee-8c2d-4ade-82fa-8581536a2866",
+      "file_path": "!/ingest-2026-04-16T131526Z.md",
+      "agent_id": "github-actions[bot]",
+      "created_at": "2026-04-16T13:15:26.426941Z",
+      "expires_at": "2026-04-16T13:30:26.426941Z",
+      "state": "released"
+    },
+    {
+      "lock_id": "414eaeaa-0500-4b49-b99e-c9dcdf140b81",
+      "file_path": "!/ingest-2026-04-18T124356Z.md",
+      "agent_id": "github-actions[bot]",
+      "created_at": "2026-04-18T12:43:56.662934Z",
+      "expires_at": "2026-04-18T12:58:56.662934Z",
+      "state": "released"
+    }
+  ],
+  "entries": {
+    "!/ingest-2026-03-30T130139Z.md": {
+      "content_hash": "sha256:26126dacc1c120af6d1e62274aa0be2e3381fbd3b23d59a6860da2d8320c76ec",
+      "last_writer": "github-actions[bot]",
+      "last_write_at": "2026-03-30T13:01:39.207406Z",
+      "last_read_at": "2026-03-30T13:01:39.207406Z",
+      "status": "active",
+      "lock_id": "85b18565-8c13-4dd2-92e5-0ae4831ce34e",
+      "version": 1
+    },
+    "!/ingest-2026-03-31T125934Z.md": {
+      "content_hash": "sha256:e93d9f593f9c6e51f4115e4593dc6833a552876db6783882760a6d3c09011532",
+      "last_writer": "github-actions[bot]",
+      "last_write_at": "2026-03-31T12:59:34.579622Z",
+      "last_read_at": "2026-03-31T12:59:34.579622Z",
+      "status": "active",
+      "lock_id": "22f7a149-7793-4743-9361-1128a855cc38",
+      "version": 1
+    },
+    "!/ingest-2026-04-01T130204Z.md": {
+      "content_hash": "sha256:e41f76118b83556b1d00843a5c3a5ec845c0643650c6dc59a27bf61766dc9297",
+      "last_writer": "github-actions[bot]",
+      "last_write_at": "2026-04-01T13:02:04.999845Z",
+      "last_read_at": "2026-04-01T13:02:04.999845Z",
+      "status": "active",
+      "lock_id": "ecd53421-645f-4477-838e-9a051b275d9f",
+      "version": 1
+    },
+    "!/ingest-2026-04-02T125540Z.md": {
+      "content_hash": "sha256:9b9f9e92f57ce30495efe169e0581b239f90136ccaba175d2bf314175fd67b5c",
+      "last_writer": "github-actions[bot]",
+      "last_write_at": "2026-04-02T12:55:40.510503Z",
+      "last_read_at": "2026-04-02T12:55:40.510503Z",
+      "status": "active",
+      "lock_id": "8a70d210-ab5c-4070-8069-bb0584ab059a",
+      "version": 1
+    },
+    "!/ingest-2026-04-03T124455Z.md": {
+      "content_hash": "sha256:2cb154c6955c9bca663fcebfe7ec87334e8d04398d04795d984ba5c1da8944ae",
+      "last_writer": "github-actions[bot]",
+      "last_write_at": "2026-04-03T12:44:55.905106Z",
+      "last_read_at": "2026-04-03T12:44:55.905106Z",
+      "status": "active",
+      "lock_id": "f27aa08c-9cad-4d16-bca0-b66d75ea90a6",
+      "version": 1
+    },
+    "!/ingest-2026-04-04T123749Z.md": {
+      "content_hash": "sha256:ae0ff7cae0cf5ef3ddd2ccf8c529e713373c90f9f6af9f63c8856f12e978f5ba",
+      "last_writer": "github-actions[bot]",
+      "last_write_at": "2026-04-04T12:37:50.001237Z",
+      "last_read_at": "2026-04-04T12:37:50.001237Z",
+      "status": "active",
+      "lock_id": "24905124-f5b5-47da-a528-1aa5a785b31a",
+      "version": 1
+    },
+    "!/ingest-2026-04-08T130539Z.md": {
+      "content_hash": "sha256:66b84859bbc774c1d0619940654d09ddc103a28d8d8910ea0ccdfbb0f90fd254",
+      "last_writer": "github-actions[bot]",
+      "last_write_at": "2026-04-08T13:05:39.742439Z",
+      "last_read_at": "2026-04-08T13:05:39.742439Z",
+      "status": "active",
+      "lock_id": "7d3cd840-7c2c-4f21-bcf7-9ef6d4a5bc6b",
+      "version": 1
+    },
+    "!/ingest-2026-04-10T125333Z.md": {
+      "content_hash": "sha256:e897628429712727f4bbe0a52f33a2a6c0f6ec0f0d63da057080ed661e1ad122",
+      "last_writer": "github-actions[bot]",
+      "last_write_at": "2026-04-10T12:53:33.918509Z",
+      "last_read_at": "2026-04-10T12:53:33.918509Z",
+      "status": "active",
+      "lock_id": "7872b802-5394-4a0c-a4ef-5f8835775602",
+      "version": 1
+    },
+    "!/ingest-2026-04-11T124012Z.md": {
+      "content_hash": "sha256:c29c4dd8091a2fb88325c03ff76b0af008392af5af3faf231f35c848d520706d",
+      "last_writer": "github-actions[bot]",
+      "last_write_at": "2026-04-11T12:40:12.250103Z",
+      "last_read_at": "2026-04-11T12:40:12.250103Z",
+      "status": "active",
+      "lock_id": "54e18684-4d27-4a9f-a06b-6b0b96dcc13e",
+      "version": 1
+    },
+    "!/ingest-2026-04-13T130736Z.md": {
+      "content_hash": "sha256:2755578312a3f633dab63533b5a6e874c877cb03f454941cd2675c974cb66fac",
+      "last_writer": "github-actions[bot]",
+      "last_write_at": "2026-04-13T13:07:36.228016Z",
+      "last_read_at": "2026-04-13T13:07:36.228016Z",
+      "status": "active",
+      "lock_id": "c5da7927-49a2-44df-a3ec-c7379a0cf3f8",
+      "version": 1
+    },
+    "!/ingest-2026-04-16T131526Z.md": {
+      "content_hash": "sha256:13851646f5efacc733228ff5a3f570218c25c0303d85526e948df10baba13331",
+      "last_writer": "github-actions[bot]",
+      "last_write_at": "2026-04-16T13:15:26.501791Z",
+      "last_read_at": "2026-04-16T13:15:26.501791Z",
+      "status": "active",
+      "lock_id": "c8ea37ee-8c2d-4ade-82fa-8581536a2866",
+      "version": 1
+    },
+    "!/ingest-2026-04-18T124356Z.md": {
+      "content_hash": "sha256:6d945975fb55b6383b9f76b307ab67146e011a71266be936f27c8d28864806c9",
+      "last_writer": "github-actions[bot]",
+      "last_write_at": "2026-04-18T12:43:56.724080Z",
+      "last_read_at": "2026-04-18T12:43:56.724080Z",
+      "status": "active",
+      "lock_id": "414eaeaa-0500-4b49-b99e-c9dcdf140b81",
+      "version": 1
+    }
+  }
+}

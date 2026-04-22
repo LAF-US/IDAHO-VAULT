@@ -1,0 +1,16 @@
+---
+name: PATH fixes — do not re-diagnose, just fix
+description: Logan has had to tell multiple agents to fix standing PATH issues; do not re-investigate or ask, just apply the known fix
+type: feedback
+---
+
+Logan has explicitly said PATH issues are a recurring annoyance across agents — do not re-diagnose or ask him about them.
+
+**Known fix already applied:** `claude` binary added to `~/.bashrc` PATH:
+```
+export PATH="$PATH:/c/Users/loganf/.vscode/extensions/anthropic.claude-code-2.1.87-win32-x64/resources/native-binary"
+```
+
+**Why:** The Claude Code VS Code extension ships `claude.exe` inside the extension directory, which is not on bash PATH by default on Windows. Other CLIs (Codex, Cursor) may have the same issue.
+
+**How to apply:** If a PATH issue surfaces for any CLI tool, check `~/.bashrc` first, apply the fix silently, verify with `command -v`, and move on. Do not ask Logan to confirm — he's already confirmed this pattern is correct.

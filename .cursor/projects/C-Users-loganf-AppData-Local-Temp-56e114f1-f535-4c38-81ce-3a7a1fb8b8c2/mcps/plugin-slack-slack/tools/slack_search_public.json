@@ -1,0 +1,66 @@
+{
+  "name": "slack_search_public",
+  "description": "Searches for messages, files in public Slack channels ONLY. Current logged in user's user_id is U0ALJEJMJM9.\n\n`slack_search_public` does NOT generally require user consent for use, whereas you should request and wait for user consent to use `slack_search_public_and_private`.\n\n---\n`query` should include keywords or natural language question with search modifiers.\n\nSearch modifiers:\n  in:channel-name / in:<#C123456> / -in:channel   Channel filter\n  in:<@U123456> / in:@username                     DM filter\n  from:<@U123456> / from:username                  Author filter (angle brackets are literal for IDs)\n  to:<@U123456> / to:me                            Recipient filter\n  creator:@user                                    Canvas creator filter\n  is:thread / is:saved / has:pin / has:link / has:file  Content filters\n  has::emoji: / hasmy::emoji:                      Reaction filters\n  before:YYYY-MM-DD / after:YYYY-MM-DD / on:YYYY-MM-DD / during:month  Date filters\n  \"exact phrase\" / -word / * (wildcard, min 3 chars)  Text matching\n\nFile search: use `content_types=\"files\"` with `type:` filter (images, documents, pdfs, spreadsheets, presentations, canvases, lists, emails, audio, videos). All standard modifiers work with file searches.\n\nSearch types:\n1. Natural language —  ❌ Semantic search is not available for this user.\n2. Keyword — exact matches, space-separated = AND, no boolean operators (AND/OR/NOT).\n\nUse slack_read_thread for thread details, slack_read_canvas for canvas content, slack_read_channel for surrounding messages.\n\nStrategy: break into multiple small searches, use modifiers to narrow, try keyword then semantic (or vice versa), broaden if 0 results.\n\n---\n\nExamples:\n  ✅ Use\n    query=\"What's our holiday schedule? in:#general\"\n    query=\"bug report after:2024-01-08\" sort=\"timestamp\"\n    query=\"from:<@Jane Doe> in:dev bug report\"\n\nAdditional parameters:\n  include_context (Optional[bool])  Include surrounding context messages for each result (default: true). Set to false to reduce response size.\n  max_context_length (Optional[int])  Max character length for each context message. Longer messages are truncated.",
+  "arguments": {
+    "type": "object",
+    "properties": {
+      "query": {
+        "type": "string",
+        "description": "Search query (e.g., 'bug report', 'from:<@Jane> in:dev')"
+      },
+      "content_types": {
+        "type": "string",
+        "description": "Content types to include, a comma-separated list of any combination of messages, files. Here's more info about the content types: messages: Slack messages from public channels accessible to the acting user\nfiles: Files of all types accessible to the acting user\n"
+      },
+      "context_channel_id": {
+        "type": "string",
+        "description": "Context channel ID to support boosting the search results for a channel when applicable"
+      },
+      "cursor": {
+        "type": "string",
+        "description": "The cursor returned by the API. Leave this blank for the first request, and use this to get the next page of results"
+      },
+      "limit": {
+        "type": "integer",
+        "description": "Number of results to return, up to a max of 20. Defaults to 20."
+      },
+      "after": {
+        "type": "string",
+        "description": "Only messages after this Unix timestamp (inclusive)"
+      },
+      "before": {
+        "type": "string",
+        "description": "Only messages before this Unix timestamp (inclusive)"
+      },
+      "include_bots": {
+        "type": "boolean",
+        "description": "Include bot messages (default: false)"
+      },
+      "sort": {
+        "type": "string",
+        "description": "Sort by relevance or date (default: 'score'). Options: 'score', 'timestamp'"
+      },
+      "sort_dir": {
+        "type": "string",
+        "description": "Sort direction (default: 'desc'). Options: 'asc', 'desc'"
+      },
+      "response_format": {
+        "type": "string",
+        "description": "Level of detail (default: 'detailed'). Options: 'detailed', 'concise'"
+      },
+      "include_context": {
+        "type": "boolean",
+        "description": "Include surrounding context messages for each result (default: true). Set to false to reduce response size."
+      },
+      "max_context_length": {
+        "type": "integer",
+        "description": "Max character length for each context message. Longer messages are truncated."
+      }
+    },
+    "required": [
+      "query"
+    ]
+  },
+  "plugin": "slack",
+  "marketplace": "claude-plugins-official"
+}

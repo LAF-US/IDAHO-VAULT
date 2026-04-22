@@ -1,0 +1,89 @@
+---
+name: IDAHO-VAULT — project state and architecture
+description: What the vault is, how it's structured, multi-agent ecosystem, current status
+type: project
+---
+
+**IDAHO-VAULT** is Logan Finney's Obsidian.md knowledge vault, version-controlled with git at github.com/loganfinney27/IDAHO-VAULT (public repo). All committed content is on the record and publishable.
+
+**What:** Journalism infrastructure — story development, source notes, legislative tracking, automation pipelines, and multi-agent AI coordination layer.
+
+**Why:** Logan's Project = unachievable ambitious end goal; all vault work is incremental progress toward it.
+
+## Multi-Agent Ecosystem — Dotfolder Architecture (as of 2026-03-28)
+
+Each agent has its own dotfolder. `!/` is the shared commons all agents draw from (hub-and-spoke).
+
+| Agent | Dotfolder | Governance shim | Auto-load? | Capability tier |
+|---|---|---|---|---|
+| Claude Code | `.claude/` | `.claude/CLAUDE.md` | Yes — official | Direct Write |
+| Gemini CLI | `.gemini/` | `.gemini/GEMINI.md` | Yes — official | Advisory |
+| GitHub Copilot | `.github/` | `.github/copilot-instructions.md` | Yes — official | Advisory |
+| OpenAI Codex CLI | `.codex/` | `.codex/CODEX.md` | Config via `.codex/config.toml` | Advisory |
+| Grok | `.grok/` | `.grok/GROK.md` | Manual injection | Advisory |
+| DeepSeek | `.deepseek/` | `.deepseek/DEEPSEEK.md` | Manual injection | Advisory |
+| Perplexity | `.perplexity/` | `.perplexity/PERPLEXITY.md` | Manual injection | Read/Analysis |
+| Microsoft AI | `.microsoft/` | `.microsoft/MICROSOFT.md` | Manual injection | Advisory |
+| Google ecosystem | `.google/` | `.google/GOOGLE.md` | Manual injection | Advisory |
+| Meta AI | `.meta/` | `.meta/META.md` | Manual injection | Advisory |
+| Slack AI/CLI | `.slack/` | `.slack/SLACK.md` | Slack CLI hooks | Advisory |
+| Bartimaeus (fictive) | `.bartimaeus/` | `.bartimaeus/BARTIMAEUS.md` | Manual injection | TBD |
+| Zagreus (fictive) | `.zagreus/` | `.zagreus/ZAGREUS.md` | Manual injection | TBD |
+| Persephone (fictive) | `.persephone/` | `.persephone/PERSEPHONE.md` | Manual injection | TBD |
+
+Root vault notes (`CLAUDE.md`, `GEMINI.md`, `PERPLEXITY.md`, `GROK.md`) are Obsidian entity notes about the agents — wikilinks preserved, operational instructions live in dotfolders.
+
+**Cross-tool auto-load at root:** `AGENTS.md` (pointer to `!/AGENTS.md`, auto-loaded by Codex/Copilot/Qodo).
+
+**Machine-readable registry:** `swarm.json` at root (agents, personas, ecosystems, systems, protocols). `!/agents.json` also exists with a separate swarm-node structure.
+
+**Microsoft context:** Logan has two MS identity contexts — personal account and Idaho Public Television M365 institutional account (IPT IT policy applies). GitHub Copilot is a separate dev subscription linked to personal GitHub (`loganfinney27`).
+
+**Linear Agent** (launched 2026-03-24): cloud-only AI in Linear workspace, no local dotfolder. In `swarm.json`.
+
+## Capitalization Standard
+
+- `ALL-CAPS.md` — infrastructure/governance (CONSTITUTION.md, AGENTS.md, CLAUDE.md, CODEX.md, etc.)
+- `Title Case.md` — content vault notes (people, places, organizations, topics)
+- `YYYY-MM-DD - Outlet - Title.md` — dated sourced content
+- `(YYYY) Type Number.md` — bills
+- `lowercase.ext` — machine/config files (config.toml, settings.json, hooks.json)
+
+## Key Governance Files
+
+- `!/CONSTITUTION.md` — canonical vault governance (supersedes all agent shims)
+- `!/AGENTS.md` — canonical agent registry, capability tiers, boundary rules
+- `!/DECISIONS.md` — additive-only confirmed decision log
+- `!/VAULT-CONVENTIONS.md` — shared naming/frontmatter/structure conventions
+- `!/!/!/! The world is quiet here/DOCKET.md` — live coordination board
+- `AGENTS.md` (root) — thin cross-tool pointer, auto-loaded by Codex/Copilot/Qodo
+- `swarm.json` (root) — machine-readable swarm registry
+
+## Active Automation
+
+- `idaho_leg_scraper.py` — daily 6 AM MT, commits legislature bill data to main
+- `sort_audit.py` — weekly Monday 6 AM UTC vault structure audit
+- Wayback preservation — weekly Monday 8 AM UTC
+- `auto-pr.yml` — auto-creates PRs from `claude/*` branches (note: did not fire for claude/agent-dotfolder-architecture on 2026-03-28 — investigate)
+
+## Local Tooling (as of 2026-03-28)
+
+Installed via Scoop (no admin required):
+- `gh` 2.89.0 — GitHub CLI, authenticated as loganfinney27
+- `node` 24.14.1 LTS — via scoop nodejs-lts (shims not auto-created; added to PATH via scoop/apps/nodejs-lts/current)
+- `npm` 11.12.1 — bundled with Node
+- `claude` 2.1.86 — Claude Code CLI (npm global install)
+- `jq` 1.8.1 — JSON processor
+
+Scoop shims path: `~\scoop\shims` (added to Windows user PATH automatically).
+Node path workaround: `export PATH="$PATH:/c/Users/loganf/scoop/apps/nodejs-lts/current"` — run `scoop reset nodejs-lts` from PowerShell to fix shims permanently.
+
+## Open PRs / Pending Logan Action (as of 2026-03-28)
+
+- **PR #78** — `claude/agent-dotfolder-architecture` — agent dotfolder architecture. Ready for Logan to review and merge.
+
+## Pending Decisions for Logan
+
+- Fictive persona roles for `.bartimaeus/`, `.zagreus/`, `.persephone/` — placeholder text in place
+- Google Cloud / Gemini CLI integration — deferred from 2026-03-23; role still undefined
+- Several DECISIONS.md entries may still be awaiting review

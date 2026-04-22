@@ -1,0 +1,17 @@
+Adobe After Effects v23.0 Windows 64 render log for project “FYIdahoTitles.aep”
+
+Rendering started on 11/3/2022 at 7:27:53 PM
+
+  11/3/2022 7:27:54 PM: Starting composition “Master”.
+
+  Output To: C:\Users\loganf\Desktop\Master.mp4    11/3/2022 7:28:06 PM: Finished composition “Master”.
+
+
+  11/3/2022 7:28:06 PM: Starting composition “Comp 2”.
+
+  Output To: C:\Users\loganf\Desktop\Comp 2.mp4  After Effects warning: Could not open the file 'E:\Adobe Media Cache and Scratch Disk\Adobe\After Effects\23.0\Disk Cache - logan-xps7590.noindex\27\2725a976-50f3-d6b5-976d-06169cbf5f43.ADBE LCV.B38063B.WAEAAL8AAADQBQAA7gIAAFgBAAC-AAAA0AUAAO4CAAAAAAAAAAAAAIAHAAA4BAAAAAAAAAAAAACABwAAOAQAAAAAAAA=.aecache'.    Render stopped by user.    11/3/2022 7:28:12 PM: Finished composition “Comp 2”.
+
+
+  Total Time Elapsed: 18 Seconds
+Log closed on 11/3/2022 at 7:28:12 PM
+

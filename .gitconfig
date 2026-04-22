@@ -1,0 +1,15 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = logan
+	email = 136375980+loganfinney27@users.noreply.github.com
+[core]
+	autocrlf = false
+	eol = lf
+	safecrlf = false
+[safe]
+	directory = Z:\\
+	directory = %(prefix)///10.93.91.25/IDEX_Artifacts/

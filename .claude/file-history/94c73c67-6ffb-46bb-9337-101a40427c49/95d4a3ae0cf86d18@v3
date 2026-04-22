@@ -1,0 +1,22 @@
+{
+    "codium.codeCompletion.enable": true,
+    "python.testing.unittestEnabled": true,
+    "python.testing.pytestEnabled": false,
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        "-p",
+        "*test*.py"
+    ],
+    "geminicodeassist.enable": true,
+    "geminicodeassist.inlineCompletion.enable": true,
+    "geminicodeassist.project": "idaho-vault",
+    "chat.tools.terminal.autoApprove": {
+        "Get-Command": true,
+        "where.exe": true,
+        "Test-Path": true
+    },
+    "grunt.autoDetect": "on",
+    "gulp.autoDetect": "on",
+    "jake.autoDetect": "on"
+}

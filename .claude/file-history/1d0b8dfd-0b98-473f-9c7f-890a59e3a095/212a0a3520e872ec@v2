@@ -1,0 +1,205 @@
+# LEVELSET-CURRENT — Live Ecosystem State
+
+**Date:** 2026-03-28 (updated: Linear Phase 1 pilot scoped + Gemini tier defined)
+**Status:** CURRENT — living synthesis, updated each LEVELSET round
+**Synthesized by:** Claude Code (The Abhorsen) — LEVELSET round triggered 2026-03-28
+**Input authority chain:** CONSTITUTION.md > DECISIONS.md > CLAUDE.md
+**Approved by:** Pending Logan Finney review
+
+---
+
+## What This File Is
+
+LEVELSET-CURRENT is the rolling synthesis document. Unlike numbered LEVELSET files (v1, v2, v3...) which are permanent snapshots, LEVELSET-CURRENT reflects the **present state** of the ecosystem. It is updated — not appended — each round. The numbered files remain the permanent audit trail.
+
+**Relationship to other files:**
+- **LEVELSET-v2.md** — Permanent snapshot from 2026-03-13. In `!/!/` archive.
+- **DECISIONS.md** — Additive-only decision log. Now at `!/DECISIONS.md`.
+- **CLAUDE.md** — Living vault authority. Repo root (must stay there for Claude Code auto-load).
+
+---
+
+## ECOSYSTEM STATE
+
+### Repository
+
+| Field | Value |
+|---|---|
+| Remote | github.com/loganfinney27/IDAHO-VAULT (public) |
+| Primary branch | `origin/main` at `c708bb7` |
+| Active branch | `gemini/activate-linear-pilot` |
+| Open PRs | PR #83 (`claude/update-habit-tracker-todo-p18EW`), gemini/activate-linear-pilot (pending push) |
+| Last commit | `c708bb7` — Align Codex tooling and harden vault automation |
+
+### Branch Status
+
+| Branch | Purpose | Status |
+|---|---|---|
+| `gemini/activate-linear-pilot` | Linear Phase 1 pilot scoping + Gemini tier + infrastructure commits | **Active (current)** |
+| `claude/update-habit-tracker-todo-p18EW` | Habit tracker / PR #83 | **Awaiting Logan merge** |
+| `claude/agent-dotfolder-architecture` | Agent dotfolder architecture | **Local — no PR yet** |
+| `vault-moves-2026-03-23` | 30 auto-proposed file moves (US states) | **Awaiting Logan's review/decision** |
+
+**Remote Codex branches (stale — awaiting Logan deletion or merge):**
+`codex/linear-mention-laf-7` through `codex/linear-mention-laf-15` (LAF swarm decomposition), `codex/create-manifest.json-specification-and-guidelines`, `codex/revise-persona-and-constitutional-files`, `copilot/logans-project-execution`
+
+*Note: Remote branch deletion requires Logan via GitHub web UI.*
+
+### Infrastructure Inventory
+
+| Asset | Type | Location | Status |
+|---|---|---|---|
+| `CLAUDE.md` | Administrative | Repo root | On main — operational |
+| `GEMINI.md` | Administrative | Repo root | On main |
+| `!/CONSTITUTION.md` | Administrative | `!/` | Moved from root — canonical governance |
+| `!/DECISIONS.md` | Administrative | `!/` | Moved from root — 15 confirmed decisions |
+| `!/AGENTS.md` | Administrative | `!/` | Moved from root |
+| `!/LEVELSET.md` | Administrative | `!/` | Moved from root |
+| `!/PROTOCOL.md` | Administrative | `!/` | Moved from root |
+| `!/VAULT-CONVENTIONS.md` | Administrative | `!/` | Moved from root |
+| `!/SWARM.md` | Administrative | `!/` | Moved from root |
+| `!/MCP-IMPLEMENTATION-PLAN.md` | Administrative | `!/` | Added 2026-03-24 |
+| `!/LEVELSET-STEP-0-EXTERNAL-AGENT.md` | Protocol | `!/` | Canonical external agent prompt |
+| `sort_audit.py` | Python | `.github/scripts/` | On main, operational (weekly) |
+| `idaho_leg_scraper.py` | Python | `.github/scripts/` | On main — running daily 6 AM MT |
+| `post_digest.py` | Python | `.github/scripts/` | On main |
+| `vault-ingest.yml` | YAML | `.github/workflows/` | On main — ingest pipeline initialized |
+| `auto-pr.yml` | YAML | `.github/workflows/` | On main — auto-creates PRs from `claude/*` |
+| `branch-cleanup.yml` | YAML | `.github/workflows/` | On main — cleans merged `claude/*` branches |
+| `.obsidian/plugins/obsidian-local-rest-api/data.json` | Config | `.obsidian/plugins/` | Sanitized — credentials purged (PR #44) |
+| `.gitignore` | Config | Repo root | On main — hardened; workspace.json untracked this session |
+
+### Activity Since Previous LEVELSET-CURRENT (2026-03-24 → 2026-03-28)
+
+1. **Plugin auth inventory completed (2026-03-28)** — Codex ran read-only probe of all 7 enabled connectors. GitHub, Linear, Slack, Google Calendar, Google Drive, Hugging Face all verified. Cloudflare `not-directly-probeable`. Report at `!/PLUGIN-AUTH-INVENTORY-2026-03-28.md` (untracked — pending commit).
+2. **Linear LAF issues decomposed** — Codex opened branches for LAF-7 through LAF-15 on remote; swarm decomposition in progress.
+3. **`tag_stubs.py` added** — Frontmatter refactor script added by Codex (`3f9a945`); admin files relocated to `/!` subdirectory; `sort_audit.py` updated for new paths.
+4. **`date_tagger.py` added** — Tags 39 source notes with YYYY/MM/DD publish date (`2224689`).
+5. **Daily notes hardened** — Frontmatter standardized, conflict duplicates resolved, bad-date filenames corrected, navigation links patched.
+6. **Codex tooling aligned** — `c708bb7` aligned Codex tooling and hardened vault automation.
+7. **`swarm/` Python application** — `swarm/app.py` (126 lines), `swarm/tests/test_app.py`, `swarm/README.md` present in repo on current branch; status: modified/pending.
+8. **New untracked content docs** — Multiple new `.md` files untracked at root: AGENTIC SWARM SYSTEMS, AI-AUTOMATION TOOL LANDSCAPE, IDAHO-VAULT SYSTEM CONTEXT, IDAHO-VAULT WORKFLOW, JOURNALISM INDUSTRY docs, Podcast.md, Notebook LM.md, Kano Play doc, and others.
+
+---
+
+## CONVERSATION CENSUS
+
+### Tier 1 — Direct Write Access
+
+| Conversation | Role | Known Output | Current Status |
+|---|---|---|---|
+| **PERSISTENT: CODE AUTHORITY** | Authoritative code session; LEVELSET synthesis; infrastructure | LEVELSET-v2.md, LEVELSET-CURRENT.md, CLAUDE.md, DECISIONS.md, swarm nest reorganization, Chorus Bootstrap | **Active** |
+
+### Tier Unknown — Reports Not Yet Received
+
+| Conversation | Presumed Role | Known Output | Gap |
+|---|---|---|---|
+| **PERSISTENT: ADMINISTRATION** | Vault governance, policy | Nothing committed to repo | No LEVELSET report received. Role overlap with CODE AUTHORITY needs resolution. |
+| **PROJECT: 2026 Budget Tracker** | Budget tracking | Unknown | No report received |
+
+### Tier 3 — Context/Research (dormant)
+
+Dormant reference conversations — no action needed.
+
+---
+
+## DECISIONS CURRENT STATE
+
+As of 2026-03-28: **17 confirmed decisions** in `!/DECISIONS.md`. See that file for full text.
+
+| # | Decision | Status |
+|---|---|---|
+| 1 | `!ADMIN/` canonical folder structure | ✅ CONFIRMED — `!ADMIN/` deleted; `!/` is canonical |
+| 2 | Constitution.md replaces Claude.md as governance authority | ✅ CONFIRMED |
+| 3 | Capabilities language replaces tiers | ✅ CONFIRMED |
+| 4 | Broader digital consciousness framing adopted | ✅ CONFIRMED |
+| 5 | FāVS freelance paused | ✅ CONFIRMED |
+| 6 | PERMANENT: AUTHORITY: CODE is correct conversation name | ✅ CONFIRMED |
+| 7 | Native protocols over MCP | ✅ CONFIRMED |
+| 8 | Slack is ephemeral; vault is the record | ✅ CONFIRMED |
+| 9 | AGENTS.md lives in `!/`, not `.github/` | ✅ CONFIRMED |
+| 10 | `copilot-instructions.md` guardrails in place | ✅ CONFIRMED |
+| 11 | Logan's Project = unachievable end goal on the horizon | ✅ CONFIRMED |
+| 12 | OpenClaw is a peer system | ✅ CONFIRMED |
+| 13 | Slack-to-file rule adopted in principle | ✅ CONFIRMED |
+| 14 | STORY: JFAC is read-only | ✅ CONFIRMED |
+| 15 | Security hardening: input sanitization + content validation | ✅ CONFIRMED |
+| 16 | MCP allowed as transport only; native vault terms canonical | ✅ CONFIRMED (2026-03-24) |
+| 17 | STEP-0 LEVELSET prompt for external agents | ✅ CONFIRMED (2026-03-22) |
+
+**Pending Logan's review:** AGENTS-v0.2-DRAFT.md approval, ORIENTATE-v0.1-BETA.md approval, LEVELSET-LITE-v0.1.md approval, AUTHORITY: ADMIN: CLAUDE consolidation, FāVS resume decision, Gemini ADMIN scope.
+
+---
+
+## JFAC OPEN MEETINGS — SESSION CONTRIBUTION (2026-03-12)
+
+*(Unchanged from previous LEVELSET-CURRENT — see that document in `!/!/` archive for full detail.)*
+
+Key status: Multiple quotes flagged **AUDIO VERIFICATION REQUIRED** — HARD GATES before publication. Only Logan can clear these.
+
+---
+
+## SOURCING & SENSITIVITY
+
+- All committed content is on the record
+- No background-sourced material identified in repo
+- JFAC session cache block received and incorporated — multiple quotes flagged AUDIO VERIFICATION REQUIRED, not publication-ready until cleared
+
+---
+
+## UNRESOLVED & PENDING
+
+### Awaiting Logan
+
+| Item | Priority | Notes |
+|---|---|---|
+| Audio verify JFAC quotes (5 quotes + speaker IDs) | **High** | HARD GATE for publication |
+| Review + merge PR #83 (`claude/update-habit-tracker-todo-p18EW`) | **Medium** | Active branch — awaiting Logan review |
+| Commit plugin auth inventory (`!/PLUGIN-AUTH-INVENTORY-2026-03-28.md`) | **Medium** | Committed on `gemini/activate-linear-pilot` |
+| Chorus Bootstrap — 5 decisions | **Medium** | See DOCKET; Logan's answers unlock Pieces 3, 4, 5 |
+| `vault-moves-2026-03-23` branch decision | **Medium** | 30 auto-proposed file moves (US states). Review, apply, or discard. |
+| Delete stale remote branches (10+) | Medium | `codex/linear-mention-laf-*` (9), `codex/revise-*`, `codex/create-manifest-*`, `copilot/logans-project-execution` |
+| Pending decisions review (`!/DECISIONS.md`) | Medium | AGENTS-v0.2, ORIENTATE-v0.1, LEVELSET-LITE, etc. |
+| Linear-first write pilot scoping | **Scoped** | Phase 1 defined: SWARM issues/comments/status updates; ACTIVE WORK on DOCKET; guardrails: vault = durable record, Slack = breadcrumbs only |
+| Commit/triage untracked content docs (10+ new .md files) | Low | AGENTIC SWARM SYSTEMS, AI-AUTOMATION, IDAHO-VAULT WORKFLOW docs, etc. |
+| `claude/agent-dotfolder-architecture` branch | Low | Local branch — no PR; awaiting scope/direction |
+| Gemini capability tier scope | **Resolved 2026-03-28** | Tier 1 (Support): Direct Write, Operational zone only, Linear SWARM issues/comments. `!/AGENTS.md` updated. |
+| Ethics.md creation | Low | No draft exists anywhere |
+| LEVELSET cadence decision | Low | Weekly? Milestone-triggered? Needs a standing rule. |
+
+### Known Technical Issues
+
+| Issue | Priority | Notes |
+|---|---|---|
+| Sort audit false positives | Low | Out-of-state counties flagged as Idaho counties |
+| `X LABELER/` unsorted files | Ongoing | Manual triage by Logan |
+| ~3,400 markdown files at repo root | Low | `vault-propose-moves` workflow addresses incrementally |
+
+---
+
+## WHAT THIS SYNTHESIS IS MISSING
+
+1. **Conversation census is stale** — Active conversations and their outputs not re-surveyed.
+2. **PROJECT: 2026 Budget Tracker state** — Unknown scope, architecture, data sources, progress.
+3. **Audio verification for JFAC quotes** — Five quotes and Woodward-and-Cook speaker ID verification are HARD GATES.
+4. **Gemini vault activity** — Capability tier **defined** (Tier 1 Support, Operational zone). No vault commits yet; pilot activating this round.
+5. **`swarm/` Python application state** — `swarm/app.py` (126 lines), `swarm/tests/test_app.py`, `swarm/README.md` present in repo; purpose and ownership not fully documented here.
+6. **Codex LAF branch outcomes** — LAF-7 through LAF-15 Codex branches on remote; content and merge status unknown to this synthesis.
+7. **Chorus Bootstrap decisions** — Logan's 5 decisions outstanding; CONVENE-frozen items remain blocked until answered.
+
+---
+
+## NEXT ACTIONS
+
+1. Logan: audio verify JFAC quotes — 5 quotes + speaker IDs (HARD GATE before publication)
+2. Logan: review + merge PR #83 (`claude/update-habit-tracker-todo-p18EW`)
+3. Logan: answer 5 Chorus Bootstrap decisions (see DOCKET — unlocks CONVENE-gated items)
+4. ~~Logan: scope Linear-first write pilot~~ **Done** — Phase 1 scoped in DOCKET; AGENTS.md updated
+5. Logan: delete stale remote Codex + Copilot branches (10+) via GitHub web UI
+6. Logan: decide on `vault-moves-2026-03-23` (30 proposed file moves)
+7. Logan: review pending decisions in `!/DECISIONS.md` (AGENTS-v0.2, ORIENTATE-v0.1, LEVELSET-LITE)
+8. ~~Agents: commit plugin auth inventory~~ **Done** — committed on `gemini/activate-linear-pilot`
+
+---
+
+*LEVELSET-CURRENT.md — Originally synthesized 2026-03-13. Updated 2026-03-24 (Spring Clean), 2026-03-24 (Swarm Nest Reorganization), 2026-03-28 (Plugin Auth Inventory + Codex tooling sprint), and 2026-03-28 (Linear Phase 1 pilot scoped + Gemini tier defined; Logan-delegated symphony round) by Claude Code (The Abhorsen). Living document, updated each LEVELSET round. Permanent audit trail in numbered LEVELSET files at `!/!/`.*

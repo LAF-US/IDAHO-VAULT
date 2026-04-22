@@ -1,0 +1,33 @@
+name: Agent Review Response
+
+on:
+  pull_request_review:
+    types: [submitted]
+
+permissions:
+  pull-requests: write
+  contents: read
+
+jobs:
+  sync-review-state:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout trusted workflow surfaces
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+
+      - name: Recompute derived review state
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 .github/scripts/review_feedback_loop.py \
+            review-submitted \
+            --owner "${{ github.repository_owner }}" \
+            --repo "${{ github.event.repository.name }}" \
+            --pr-number "${{ github.event.pull_request.number }}" \
+            --pr-author "${{ github.event.pull_request.user.login }}" \
+            --pr-url "${{ github.event.pull_request.html_url }}" \
+            --review-author "${{ github.event.review.user.login }}" \
+            --review-id "${{ github.event.review.id }}" \
+            --review-state "${{ github.event.review.state }}"

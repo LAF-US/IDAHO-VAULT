@@ -1,0 +1,10 @@
+# Plan: Post LAF-16 coordination note
+
+## Context
+Gemini completed its LAF-16 normalization pass and updated DOCKET.md for handoff. Two untracked artifacts (`normalize_budget_data.py`, `deliverables.md`) are sitting in the working tree on `claude/resolve-pr-conflicts` — Claude's branch, not Gemini's. They need a durable breadcrumb on LAF-16 so Copilot knows to pick them up and Claude doesn't accidentally commit them.
+
+## Action
+Post one comment to LAF-16 using `mcp__claude_ai_Linear__save_comment` with the exact text Logan/Codex approved (reproduced in the message). No file edits, no commits, no DOCKET modification.
+
+## Verification
+Comment appears on LAF-16 in Linear. Lane holds. Untracked files remain untouched.

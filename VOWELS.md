@@ -1,0 +1,2 @@
+AEIOU(Y)
+dipole : consonants

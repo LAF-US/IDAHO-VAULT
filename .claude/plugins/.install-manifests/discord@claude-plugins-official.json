@@ -1,0 +1,17 @@
+{
+  "pluginId": "discord@claude-plugins-official",
+  "createdAt": "2026-04-04T03:58:03.942Z",
+  "files": {
+    ".claude-plugin\\plugin.json": "3e559b00317540f96fe3b24aee4a816af8b43d648f6e1dd9896e59aa835cd3d8",
+    ".mcp.json": "01c15597e40a5999d7b1c15bd6f9656abc8a04d3a0956704a9dfd2df01b74960",
+    ".npmrc": "3a951f66e7e0f3e2dd1832473a871357c4a507b51100636b73bcf6ff0dd78b6c",
+    "ACCESS.md": "73a4078a35ab2d3feb5c27f53437acc4fe6c1a2040e58f6f52d3c0791bfdaa89",
+    "bun.lock": "c3d69584e51e46a758bd9c8a8bfef12b46fe9f2bb57a367f4deb073edd26c55e",
+    "LICENSE": "dfd016a63459229ceb791be757c3bede084fb22303c36b61342db1b8f58cc450",
+    "package.json": "fa2ece9108aca2ae17e7b1909f468ee8f055e53a45882eb25108a3e394f17e46",
+    "README.md": "98d6b28cc5d6860382e3fcf3da8539a4c5533c0db27cd9b6b5200c6d1be06c30",
+    "server.ts": "f634be3115c873b6181960de014181d01e28c2be556e0d41736733a941f5d451",
+    "skills\\access\\SKILL.md": "4fc3da872e033c37576a904b15a1bcac6b1ce6c7bc43f1f96abd7cad4855ac7a",
+    "skills\\configure\\SKILL.md": "9364d7895d6f38b917a711128e7b391884fb8b8d69a62c7d72a81e95b6e2b948"
+  }
+}

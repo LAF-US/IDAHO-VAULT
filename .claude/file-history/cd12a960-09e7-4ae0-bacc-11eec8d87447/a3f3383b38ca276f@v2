@@ -1,0 +1,170 @@
+# Plan: Reorganize `!/` Canonical Swarm Nest
+
+## Context
+
+The `!` directory is the canonical agent/swarm coordination hub for IDAHO-VAULT. Over months of multi-agent work, swarm files have accumulated across three problem zones:
+1. **Inside `!/`** — non-swarm content (`DAILYNOTES/`, stale `DECISIONS.md`) that doesn't belong
+2. **`!ADMIN/`** — the zombie directory (confirmed dead in Decision 1) that kept re-emerging; it still holds live files and needs to be drained and deleted
+3. **Repo root** — ~60+ swarm/governance files that accumulated as agents worked and never got homed
+
+**Target state:** `!/` = swarm only. Root = content vault + agent config files that must stay there. `!ADMIN/` = gone.
+
+---
+
+## Critical Files That MUST Stay at Root
+
+These are consumed by agent auto-load mechanisms and cannot move:
+- `CLAUDE.md` — Claude Code reads from repo root automatically
+- `GEMINI.md` — Gemini agent instructions
+- `.github/`, `.gitignore`, `.obsidian/`
+
+---
+
+## Execution: Single Branch
+
+Branch: `claude/reorganize-swarm-nest-XXXXX` (auto-named by `auto-pr.yml`)
+
+Use `git mv` for all moves to preserve history. This PR touches governance files — **high-risk, requires Logan review** (will not auto-merge).
+
+---
+
+## Phase 1: Tidy `!/` Internally
+
+**Problem files:**
+| File | Action | Reason |
+|---|---|---|
+| `!/DAILYNOTES/2026-03-21.md` | Move → root `DAILYNOTES/2026-03-21.md` (create folder) | Daily notes are content, not swarm |
+| `!/DECISIONS.md` | Delete | Stale (14 entries, 2026-03-16); superseded by root `DECISIONS.md` (15 entries) which moves in during Phase 3 |
+
+**Unchanged (correct as-is):**
+- `!/README.md`, `!/LEVELSET-STEP-0-EXTERNAL-AGENT.md`
+- `!/!/` structure (LEVELSET-CURRENT, SESSION, BRANCH-TRIAGE)
+- `!/!/!/! The world is quiet here/` (DOCKET, lore)
+
+**Update:** `!/README.md` lists `!ADMIN/` as an adjacent anchor → remove that reference after Phase 2.
+
+---
+
+## Phase 2: Drain `!ADMIN/` → `!/!/`, Then Delete
+
+All `!ADMIN/` files are swarm-internal (sessions, contexts, prompts, logs) → land in `!/!/`.
+
+**Moves to `!/!/CONTEXTS/`:**
+- `!ADMIN/CONTEXTS/HANDOFF-CODE-TO-CLAUDE-2026-03-23.md`
+- `!ADMIN/CONTEXTS/HANDOFF-CODE-TO-GEMINI-2026-03-23.md`
+- `!ADMIN/CONTEXTS/READY-STATE-2026-03-23.md`
+
+**Moves to `!/!/PROMPTS/`:**
+- `!ADMIN/PROMPTS/BOOTSTRAP.md`
+- `!ADMIN/PROMPTS/TOSS.md`
+
+**Moves to `!/!/`:**
+- `!ADMIN/BRANCH-STATUS-2026-03-22.md`
+- `!ADMIN/CONTEXT-PASTE-BUNDLE.md`
+- `!ADMIN/GITHUB-AGENT-SETUP-SUMMARY-2026-03-22.md`
+- `!ADMIN/ORIENT-v0.1.md`
+- `!ADMIN/PROTOCOL-PASSBACK-SYNC.md`
+- `!ADMIN/sort-audit-2026-03-23.md`
+- `!ADMIN/wayback-preserve-2026-03-21.md`
+- `!ADMIN/.claude-haiku-github/SESSION-LOG.md` → `!/!/.claude-haiku-github/SESSION-LOG.md`
+
+**Delete (duplicate):**
+- `!ADMIN/LEVELSET-EXTERNAL-AGENT-PROMPT.md` — same content as `!/LEVELSET-STEP-0-EXTERNAL-AGENT.md`
+
+**Delete (empty):**
+- `!ADMIN/ROUTING/.gitkeep` → remove folder
+- `!ADMIN/CONTEXTS/.gitkeep`, `!ADMIN/PROMPTS/.gitkeep` → gitkeeps not needed after move
+
+After drain: `git rm -r !ADMIN/` removes the zombie directory.
+
+---
+
+## Phase 3: Move Root Swarm Files → `!/`
+
+### Active governance → `!/` (top level, stable)
+
+| Root file | Destination | Notes |
+|---|---|---|
+| `AGENTS.md` | `!/AGENTS.md` | Decision 9 canonical location |
+| `CONSTITUTION.md` | `!/CONSTITUTION.md` | Core governance |
+| `DECISIONS.md` | `!/DECISIONS.md` | Replaces stale `!/DECISIONS.md` deleted in Phase 1 |
+| `LEVELSET.md` | `!/LEVELSET.md` | |
+| `PROTOCOL.md` | `!/PROTOCOL.md` | |
+| `PROTOCOLS.md` | `!/PROTOCOLS.md` | Check for dup content with PROTOCOL.md |
+| `SWARM.md` | `!/SWARM.md` | |
+| `AGENTIC SWARM.md` | `!/AGENTIC SWARM.md` | |
+| `UNIFIED (US) SWARM.md` | `!/UNIFIED (US) SWARM.md` | |
+| `HECATE PROTOCOL.md` | `!/HECATE PROTOCOL.md` | |
+| `MAGNUS-SWARM.md` | `!/MAGNUS-SWARM.md` | |
+| `agents.json` | `!/agents.json` | |
+| `VAULT-CONVENTIONS.md` | `!/VAULT-CONVENTIONS.md` | Update `CLAUDE.md` reference |
+
+**After moving `VAULT-CONVENTIONS.md`:** Update the reference in `CLAUDE.md` line that says "see `VAULT-CONVENTIONS.md`" → `!/VAULT-CONVENTIONS.md`.
+
+### Historical/archived → `!/!/` (ephemeral layer)
+
+Move all of these (they are old coordination records, not active governance):
+- `LEVELSET-v1.md`, `LEVELSET-v2.md`, `LEVELSET-CURRENT.md` (root copy — stale, `!/!/` has canonical)
+- `LEVELSET-v1-PROMPT.md`, `LEVELSET-v2-PROMPT.md`, `LEVELSET-v3.2.6.1-PROMPT.md`
+- `LEVELSET-v2-idaho-scraper.md`, `LEVELSET-v3.2.6.md`, `LEVELSET-v3.2.6-idaho-scraper.md`
+- `LEVELSET-v3.2.6.1-idaho-swarm-alert.md`
+- `LEVELSET-ADMIN-Github-2026-03-15.md`, `LEVELSET-CODE-AUTHORITY-2026-03-15.md`, `LEVELSET-CODE-AUTHORITY-2026-03-15-v2.md`
+- `LEVELSET-CASCADE-2026-03-16.md`, `LEVELSET-GITHUB-COPILOT-2026-03-16.md`
+- `LEVELSET-TRANSMISSION-2026-03-16.md`, `LEVELSET-FINAL-sunset-agents.md`, `LEVELSET-closure-notify.md`
+- `HANDOFF-ADMIN-2026-03-15.md`, `HANDOFF-CODE-TO-COPILOT-2026-03-15.md`
+- `HANDOFF-CODE-TO-SWARM-2026-03-15.md`, `HANDOFF-TO-GITHUB-AGENTS-2026-03-16.md`
+- `HANDOFF-TO-PUBLIC-CONVERSATION-2026-03-16.md`
+- `CONSOLIDATED-HANDOFF-2026-03-16.md`
+- `CONTEXT-PASSOVER-COPILOT-2026-03-16.md`, `CONTEXT-VAULT-2026-03-16.md`
+- `ROLLUP-BOOTSTRAP-2026-03-17.md`
+- `PROTOCOL-DECISIONS-PENDING.md`, `PROTOCOL-XKCD-DRAFT.md`, `PROTOCOLS_XKCD_DRAFT.md`
+- `context.md`
+- `Agent Swarm Management and Repository Constitution - Agent Swarm Management and Repository Constitution.csv`
+
+### Delete (Obsidian conflict duplicates — `" 1"` files)
+
+These are auto-generated Obsidian conflict copies. They duplicate the primary file:
+- `AGENTS 1.md`, `CONSTITUTION 1.md`, `DECISIONS 1.md`, `LEVELSET 1.md`, `LEVELSET 2.md`, `PROTOCOL 1.md`
+- `CONSOLIDATED-HANDOFF-2026-03-16 1.md`, `CONTEXT-PASSOVER-COPILOT-2026-03-16 1.md`
+- `CONTEXT-VAULT-2026-03-16 1.md`, `HANDOFF-ADMIN-2026-03-15 1.md`
+- `HANDOFF-CODE-TO-COPILOT-2026-03-15 1.md`, `HANDOFF-CODE-TO-SWARM-2026-03-15 1.md`
+- `HANDOFF-TO-GITHUB-AGENTS-2026-03-16 1.md`, `HANDOFF-TO-PUBLIC-CONVERSATION-2026-03-16 1.md`
+- `LEVELSET-ADMIN-Github-2026-03-15 1.md`, `LEVELSET-CASCADE-2026-03-16 1.md`
+- `LEVELSET-CODE-AUTHORITY-2026-03-15 1.md`, `LEVELSET-CODE-AUTHORITY-2026-03-15-v2 1.md`
+- `LEVELSET-GITHUB-COPILOT-2026-03-16 1.md`, `LEVELSET-TRANSMISSION-2026-03-16 1.md`
+- `LEVELSET-v1 1.md`, `LEVELSET-v1-PROMPT 1.md`, `LEVELSET-v2 1.md`, `LEVELSET-v2-PROMPT 1.md`
+- `LEVELSET-v2-idaho-scraper 1.md`, `LEVELSET-v3.2.6-idaho-scraper 1.md`
+- `LEVELSET-v3.2.6.1-PROMPT 1.md`, `LEVELSET-v3.2.6.1-idaho-swarm-alert 1.md`
+- `PROTOCOL-DECISIONS-PENDING 1.md`, `PROTOCOL-XKCD-DRAFT 1.md`
+
+### Delete (stale root-level files superseded by canonical versions)
+
+- `!STEP-0-LEVELSET.md` — same content as `!/LEVELSET-STEP-0-EXTERNAL-AGENT.md`
+
+---
+
+## Phase 4: Update `!/README.md`
+
+Remove `!ADMIN/` from the adjacent anchors list. Update any reference to `DECISIONS.md` location if needed.
+
+---
+
+## Update LEVELSET-CURRENT
+
+After all moves: update `!/!/LEVELSET-CURRENT.md` to reflect:
+- `!ADMIN/` deleted
+- All governance files now at `!/` (not root)
+- New branch status
+
+---
+
+## Verification
+
+1. `git status` — confirm all expected moves are staged, no unintended changes
+2. `ls !/` — verify governance files landed correctly
+3. `ls !/!/` — verify session/historical files landed correctly
+4. Confirm `!ADMIN/` no longer exists
+5. Confirm root is clean of swarm files (except `CLAUDE.md`, `GEMINI.md`)
+6. `grep -r "!ADMIN" !/README.md` — confirm reference removed
+7. Confirm `CLAUDE.md` reference to `VAULT-CONVENTIONS.md` updated to `!/VAULT-CONVENTIONS.md`
+8. Open PR — flag as high-risk/Logan review required (governance files)

@@ -1,0 +1,56 @@
+---
+related:
+- House Agricultural Affairs
+- House Appropriations
+- House Business
+- House Commerce and Human Resources
+- House Education
+- House Environment, Energy and Technology
+- House Ethics and Policy
+- House Health and Welfare
+- House Judiciary, Rules and Administration
+- House Local Government
+- House Resources and Conservation
+- House Revenue and Taxation
+- House State Affairs
+- House Transportation and Defense
+- House Ways and Means
+- Human Resources
+- Senate Agricultural Affairs
+- Senate Commerce and Human Resources
+- Senate Education
+- Senate Finance
+- Senate Health and Welfare
+- Senate Judiciary and Rules
+- Senate Local Government and Taxation
+- Senate Resources and Environment
+- Senate State Affairs
+- Senate Transportation
+authority: LOGAN
+---
+- House Agricultural Affairs
+- House Appropriations
+- House Business
+- House Commerce and Human Resources
+- House Education
+- House Environment, Energy and Technology
+- House Ethics and Policy
+- House Health and Welfare
+- House Judiciary, Rules and Administration
+- House Local Government
+- House Resources and Conservation
+- House Revenue and Taxation
+- House State Affairs
+- House Transportation and Defense
+- House Ways and Means
+
+- Senate Agricultural Affairs
+- Senate Commerce and Human Resources
+- Senate Education
+- Senate Finance
+- Senate Health and Welfare
+- Senate Judiciary and Rules
+- Senate Local Government and Taxation
+- Senate Resources and Environment
+- Senate State Affairs
+- Senate Transportation

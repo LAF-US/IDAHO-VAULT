@@ -1,0 +1,6 @@
+---
+pid: 84260
+cwd: |
+  C:\Users\loganf
+---
+PS C:\Users\loganf>
