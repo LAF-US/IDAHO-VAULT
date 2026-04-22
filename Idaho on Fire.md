@@ -1,0 +1,8 @@
+---
+authority: LOGAN
+related:
+- Darr Moon
+- fire
+---
+
+organization started by Darr Moon that advocates for fire prevention through logging and multiple-use designations of federal land 

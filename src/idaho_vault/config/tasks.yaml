@@ -1,0 +1,7 @@
+deployment_probe:
+  description: >
+    Validate the root CrewAI deployment contract for IDAHO-VAULT, including the
+    pyproject contract, uv lockfile, and src/idaho_vault runtime package.
+  expected_output: >
+    A concise markdown validation note confirming the bootstrap shard is wired correctly.
+  agent: bootstrap_validator

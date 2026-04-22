@@ -1,0 +1,8 @@
+---
+authority: LOGAN
+related:
+- Adam McCoy
+- EMERGED
+---
+
+"This isn't just notes, this is like... your life's work." -Adam McCoy (TERM EMERGED)

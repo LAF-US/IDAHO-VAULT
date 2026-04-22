@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+METHOD:PUBLISH
+CALSCALE:GREGORIAN
+PRODID:-//YourMembership.com//NONSGML v1.0//EN
+BEGIN:VEVENT
+DTSTART:20260910T050000Z
+DTEND:20260913T050000Z
+DTSTAMP:20251016T113249Z
+SUMMARY:NLGJA: The Association of LGBTQ+ Journalists 2026 National Convention
+DESCRIPTION:DATE/TIME: 9/10/2026 12:00 AM GMT -5:00\n\nWHERE: Hyatt Regency San Francisco\n5 Embarcadero Center\nSan Francisco\, California 94111\nUnited States\n\nCONTACT: NLGJA: The Association of LGBTQ+ Journalists \n\n\nJoin more than 700 journalists\, news executives\, communications professionals and educators at the 2026 NLGJA: The Association of LGBTQ+ Journalists National Convention\, September 10-13\, 2026.
+LOCATION:Hyatt Regency San Francisco
+UID:A029F6D8-B7C8-4E87-BE25-FADAED5CCC7B
+END:VEVENT
+END:VCALENDAR

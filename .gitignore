@@ -1,0 +1,235 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+.uv-cache/
+.pip-cache/
+.npm-cache/
+.tmp/
+.cache/
+.state/
+.pycache/
+.agent-home/
+.codex/home/
+
+# CrewAI
+.crewai_cache/
+.crewai/logs/
+
+# IDE
+.vscode/*
+!.vscode/mcp.json
+!.vscode/settings.json
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+*.exe
+*.lnk
+*.url
+~$*.doc
+~$*.docx
+~$*.xls
+~$*.xlsx
+~$*.ppt
+~$*.pptx
+
+# NETWEB: Windows reserved device names (cannot exist on NTFS - any case, any extension)
+# https://learn.microsoft.com/en-us/windows/win32/fileio/naming-a-file
+[Aa][Uu][Xx]
+[Aa][Uu][Xx].*
+[Cc][Oo][Nn]
+[Cc][Oo][Nn].*
+[Nn][Uu][Ll]
+[Nn][Uu][Ll].*
+[Pp][Rr][Nn]
+[Pp][Rr][Nn].*
+[Cc][Oo][Mm][0-9]
+[Cc][Oo][Mm][0-9].*
+[Ll][Pp][Tt][0-9]
+[Ll][Pp][Tt][0-9].*
+
+# Media / binary files (prevent repo bloat - vault content is markdown, not media)
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.webp
+*.webm
+*.svg
+*.heic
+*.mp4
+*.mp3
+*.m4a
+*.wav
+*.flac
+*.mov
+*.avi
+*.mpg
+*.mpeg
+*.pdf
+*.doc
+*.docx
+*.xls
+*.xlsx
+*.ppt
+*.pptx
+*.zip
+*.tar
+*.tar.gz
+*.gz
+*.bin
+*.db
+*.sqlite
+*.geojson
+*.kml
+*.kmz
+*.shp
+*.gpx
+
+# Email files (contain internal PII — headers, staff addresses, Exchange infra)
+*.eml
+*.msg
+
+# Production/editing source formats (local media workspace artifacts)
+*.psd
+*.ai
+*.indd
+*.aep
+*.aegraphic
+*.mogrt
+*.prproj
+*.mxf
+*.xmp
+*.cr2
+*.tif
+*.tiff
+
+# Project-specific
+.env
+*.vault.json
+.remember/
+_private/
+_private/**
+@/
+@/**
+.codex/tmp/
+tmp-minidata-msg/
+tmp-msg-extract/
+_phone-link-sweep.log
+_phone-link-watcher.log
+_phone-link-watcher.pid
+
+# Preserve persona/chamber dotfolders, but ignore heavyweight local runtimes within them
+.local/share/claude/versions/
+.ollama/models/blobs/
+.ollama/models/manifests/
+
+# Local media app cache artifacts
+*.cfa
+*.pek
+
+# AppleDouble sidecar files
+._*
+
+# Local machine secrets
+.obsidian/plugins/obsidian-local-rest-api/data.json
+vault-courier-key.json
+*-key.json
+
+# Credential exports (NEVER publish)
+Google Passwords.csv
+**/Google Passwords*.csv
+**/passwords*.csv
+
+# 2FA recovery codes (NEVER publish)
+*recovery-codes*
+*recovery_codes*
+
+# Swarm state archive (local only)
+.github/swarm/state/archive/
+
+# Swarm operational logs (ephemeral)
+\!/swarm/logs/*
+!\!/swarm/logs/.gitkeep
+
+# Obsidian system/state files (noisy, machine-local)
+.obsidian/workspace.json
+.obsidian/workspace*.json
+.obsidian/graph.json
+.obsidian/types.json
+.obsidian/backlink.json
+.obsidian/file-recovery.json
+.obsidian/page-preview.json
+.obsidian/switcher.json
+.obsidian/webviewer.json
+.obsidian/note-composer.json
+
+# Obsidian plugin runtime data / secrets (machine-local, not source)
+.obsidian/plugins/*/data.json
+.obsidian/plugins/recent-files-obsidian/data.json
+
+# Obsidian plugin cache directories (machine-generated, not source-trackable)
+.obsidian/plugins/*/cache/
+.makemd/
+.space/
+BMO/
+Tags/
+
+# Obsidian plugin compiled binaries (too large, not source-trackable)
+.obsidian/plugins/mcp-tools/bin/
+.obsidian/plugins/*/main.js
+.obsidian/plugins/*/styles.css
+.obsidian/plugins/*/manifest.json
+
+# Smart Connections embedding cache (machine-generated, can be hundreds of MB)
+.smart-env/
+.obsidian/plugins/smart-connections/.smart-env/
+
+# Obsidian conflict duplicates
+.obsidian/**(2)*.json
+
+# Daily notes (ephemeral, personal)
+DAILYNOTES/
+
+# Local runtime inbox artifacts (do not track phone-link intake payloads)
+INBOX/PHONE-LINK/*
+
+# Local conflicted duplicates and temp placeholders
+* (Conflicted copy *).md
+tempfolder.txt
+
+# Claude Code local settings (machine-local, not for repo)
+.claude/settings.local.json
+.claude/worktrees/
+**/.claude/worktrees/
+
+# 1Password local runtime files and generated reports
+.op/openrouter.env
+.op/reports/
+
+# AI/tool runtime caches and local auth state (never commit)
+.antigravity/
+.gemini/
+.openclaw/
+.claude/projects/
+.claude/plugins/cache/
+.cursor/plugins/cache/
+.factory/plugins/marketplaces/
+
+# Session transcripts and machine-local logs
+*.jsonl
+**/tool-results/
+**/shared_proto_db/
+.pi/agent/sessions/

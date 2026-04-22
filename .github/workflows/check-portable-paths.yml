@@ -1,0 +1,114 @@
+name: NETWEB Path Portability Check
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  check-paths:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+        with:
+          fetch-depth: 0
+
+      - name: Check for cross-platform path violations
+        shell: bash
+        run: |
+          set +H  # Disable bash history expansion (paths contain !)
+
+          VIOLATIONS=""
+          EXIT_CODE=0
+
+          # Determine which files to check
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            FILES=$(git -c core.quotePath=false diff --name-only "origin/${{ github.base_ref }}"...HEAD 2>/dev/null || git -c core.quotePath=false ls-tree -r HEAD --name-only)
+          else
+            FILES=$(git -c core.quotePath=false diff --name-only HEAD~1...HEAD 2>/dev/null || git -c core.quotePath=false ls-tree -r HEAD --name-only)
+          fi
+
+          # --- Check 1: Windows reserved device names ---
+          while IFS= read -r filepath; do
+            [ -z "$filepath" ] && continue
+
+            # Check each path component
+            IFS='/' read -ra PARTS <<< "$filepath"
+            for part in "${PARTS[@]}"; do
+              name_no_ext="${part%%.*}"
+              upper=$(echo "$name_no_ext" | tr '[:lower:]' '[:upper:]')
+              case "$upper" in
+                AUX|CON|NUL|PRN)
+                  VIOLATIONS="${VIOLATIONS}  RESERVED NAME: ${filepath} (component: ${part})\n"
+                  ;;
+                COM[0-9]|LPT[0-9])
+                  VIOLATIONS="${VIOLATIONS}  RESERVED NAME: ${filepath} (component: ${part})\n"
+                  ;;
+              esac
+            done
+          done <<< "$FILES"
+
+          # --- Check 2: Case-insensitive filename collisions ---
+          # Get all tracked files, extract dir+basename, check for collisions
+          ALL_FILES=$(git -c core.quotePath=false ls-tree -r HEAD --name-only)
+
+          # Build a list of dir/basename pairs, lowercased for comparison
+          # Note: use -- to prevent filenames starting with - being parsed as options
+          echo "$ALL_FILES" | while IFS= read -r f; do
+            dir=$(dirname -- "$f")
+            base=$(basename -- "$f")
+            echo "${dir}/${base}"
+          done | sort -f | uniq -diD > /tmp/case_collisions.txt 2>/dev/null || true
+
+          if [ -s /tmp/case_collisions.txt ]; then
+            # Check if any changed file is involved in a collision
+            while IFS= read -r filepath; do
+              [ -z "$filepath" ] && continue
+              dir=$(dirname -- "$filepath")
+              base=$(basename -- "$filepath")
+              lookup="${dir}/${base}"
+              if grep -qiF "$lookup" /tmp/case_collisions.txt 2>/dev/null; then
+                VIOLATIONS="${VIOLATIONS}  CASE COLLISION: ${filepath} (conflicts with another file differing only in case)\n"
+              fi
+            done <<< "$FILES"
+          fi
+
+          # --- Check 3: Illegal path patterns ---
+          while IFS= read -r filepath; do
+            [ -z "$filepath" ] && continue
+
+            # Trailing period or space in any path component
+            if echo "$filepath" | grep -qE '(\.[[:space:]]*/)|(\.[[:space:]]*$)|( /)|( $)'; then
+              VIOLATIONS="${VIOLATIONS}  TRAILING PERIOD/SPACE: ${filepath}\n"
+            fi
+
+            # Windows illegal characters: < > : " | ? *
+            if echo "$filepath" | grep -qE '[<>:"|?*]'; then
+              VIOLATIONS="${VIOLATIONS}  ILLEGAL CHARACTER: ${filepath} (contains < > : \" | ? or *)\n"
+            fi
+
+            # Path length check (218 = 260 MAX_PATH - 42 char typical local prefix)
+            if [ ${#filepath} -gt 218 ]; then
+              VIOLATIONS="${VIOLATIONS}  PATH TOO LONG: ${filepath} (${#filepath} chars, max 218)\n"
+            fi
+          done <<< "$FILES"
+
+          # --- Report ---
+          if [ -n "$VIOLATIONS" ]; then
+            echo "::error::NETWEB: Cross-platform path violations detected"
+            echo ""
+            echo "The following paths are not portable across Windows/macOS/Linux:"
+            echo ""
+            echo -e "$VIOLATIONS"
+            echo ""
+            echo "Fix: rename files to avoid reserved names, case collisions,"
+            echo "trailing periods/spaces, illegal characters, or excessive length."
+            echo ""
+            echo "For reserved-name stubs, use the _PREFIX alias convention:"
+            echo "  e.g., AUX.md -> _AUX.md with 'aliases: [AUX]' frontmatter"
+            echo ""
+            echo "Ref: https://learn.microsoft.com/en-us/windows/win32/fileio/naming-a-file"
+            exit 1
+          fi
+
+          echo "All paths are cross-platform portable."

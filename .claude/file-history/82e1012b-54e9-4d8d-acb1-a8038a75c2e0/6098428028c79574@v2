@@ -1,0 +1,130 @@
+---
+name: IDAHO-VAULT — project state and architecture
+description: What the vault is, how it's structured, multi-agent ecosystem, current status
+type: project
+---
+
+**IDAHO-VAULT** is Logan Finney's Obsidian.md knowledge vault, version-controlled with git at github.com/loganfinney27/IDAHO-VAULT (public repo). All committed content is on the record and publishable.
+
+**What:** Journalism infrastructure — story development, source notes, legislative tracking, automation pipelines, and multi-agent AI coordination layer.
+
+**Why:** Logan's Project = unachievable ambitious end goal; all vault work is incremental progress toward it.
+
+## Multi-Agent Ecosystem — Dotfolder Architecture (as of 2026-03-28)
+
+Each agent has its own dotfolder. `!/` is the shared commons all agents draw from (hub-and-spoke).
+
+| Agent | Dotfolder | Governance shim | Auto-load? | Capability tier |
+|---|---|---|---|---|
+| Claude Code | `.claude/` | `.claude/CLAUDE.md` | Yes — official | Direct Write |
+| Gemini CLI | `.gemini/` | `.gemini/GEMINI.md` | Yes — official | **Tier 1 (Support), Operational zone only** |
+| GitHub Copilot | `.github/` | `.github/copilot-instructions.md` | Yes — official | Advisory |
+| OpenAI Codex CLI | `.codex/` | `.codex/CODEX.md` | Config via `.codex/config.toml` | Advisory |
+| Grok | `.grok/` | `.grok/GROK.md` | Manual injection | Advisory |
+| DeepSeek | `.deepseek/` | `.deepseek/DEEPSEEK.md` | Manual injection | Advisory |
+| Perplexity | `.perplexity/` | `.perplexity/PERPLEXITY.md` | Manual injection | Read/Analysis |
+| Microsoft AI | `.microsoft/` | `.microsoft/MICROSOFT.md` | Manual injection | Advisory |
+| Google ecosystem | `.google/` | `.google/GOOGLE.md` | Manual injection | Advisory |
+| Meta AI | `.meta/` | `.meta/META.md` | Manual injection | Advisory |
+| Slack AI/CLI | `.slack/` | `.slack/SLACK.md` | Slack CLI hooks | Advisory |
+| Bartimaeus (fictive) | `.bartimaeus/` | `.bartimaeus/BARTIMAEUS.md` | Manual injection | TBD |
+| Zagreus (fictive) | `.zagreus/` | `.zagreus/ZAGREUS.md` | Manual injection | TBD |
+| Persephone (fictive) | `.persephone/` | `.persephone/PERSEPHONE.md` | Manual injection | TBD |
+
+**Gemini capability tier clarified 2026-03-28:** Tier 1 (Support), Operational zone only. Scope: Linear SWARM issues/comments/status updates. No longer blocked — pilot is scoped and active.
+
+Root vault notes (`CLAUDE.md`, `GEMINI.md`, `PERPLEXITY.md`, `GROK.md`) are Obsidian entity notes about the agents — wikilinks preserved, operational instructions live in dotfolders.
+
+**Cross-tool auto-load at root:** `AGENTS.md` (pointer to `!/AGENTS.md`, auto-loaded by Codex/Copilot/Qodo).
+
+**Machine-readable registry:** `swarm.json` at root (agents, personas, ecosystems, systems, protocols). `!/agents.json` also exists with a separate swarm-node structure.
+
+**Microsoft context:** Logan has two MS identity contexts — personal account and Idaho Public Television M365 institutional account (IPT IT policy applies). GitHub Copilot is a separate dev subscription linked to personal GitHub (`loganfinney27`).
+
+**Linear Agent** (launched 2026-03-24): cloud-only AI in Linear workspace, no local dotfolder. In `swarm.json`.
+
+## Capitalization Standard
+
+- `ALL-CAPS.md` — infrastructure/governance (CONSTITUTION.md, AGENTS.md, CLAUDE.md, CODEX.md, etc.)
+- `Title Case.md` — content vault notes (people, places, organizations, topics)
+- `YYYY-MM-DD - Outlet - Title.md` — dated sourced content
+- `(YYYY) Type Number.md` — bills
+- `lowercase.ext` — machine/config files (config.toml, settings.json, hooks.json)
+
+## Key Governance Files
+
+- `!/CONSTITUTION.md` — canonical vault governance (supersedes all agent shims)
+- `!/AGENTS.md` — canonical agent registry, capability tiers, boundary rules
+- `!/DECISIONS.md` — additive-only confirmed decision log
+- `!/VAULT-CONVENTIONS.md` — shared naming/frontmatter/structure conventions
+- `!/!/!/! The world is quiet here/DOCKET.md` — live coordination board
+- `AGENTS.md` (root) — thin cross-tool pointer, auto-loaded by Codex/Copilot/Qodo
+- `swarm.json` (root) — machine-readable swarm registry
+
+## Active Automation
+
+- `idaho_leg_scraper.py` — daily 6 AM MT, commits legislature bill data to main
+- `so***REMOVED***audit.py` — weekly Monday 6 AM UTC vault structure audit
+- Wayback preservation — weekly Monday 8 AM UTC
+- `auto-pr.yml` — auto-creates PRs from `claude/*` branches (note: did not fire for claude/agent-dotfolder-architecture on 2026-03-28 — investigate)
+
+## Linear Phase 1 Pilot (launched 2026-03-28)
+
+- Scope: SWARM label issues and comments/status updates only
+- Vault = durable record; Linear = task coordination; Slack = breadcrumbs only
+- Gemini CLI is designated Linear operator for SWARM issues (Tier 1 Support)
+- Branch `gemini/activate-linear-pilot` pushed; **PR #98** open (4 commits: content triage, stale refs, Code Assist, LEVELSET/DOCKET refresh)
+
+## Local Tooling (as of 2026-03-28)
+
+Installed via Scoop (no admin required):
+- `gh` 2.89.0 — GitHub CLI, authenticated as loganfinney27
+- `node` 24.14.1 LTS — via scoop nodejs-lts (shims not auto-created; added to PATH via scoop/apps/nodejs-lts/current)
+- `npm` 11.12.1 — bundled with Node
+- `claude` 2.1.86 — Claude Code CLI (npm global install)
+- `jq` 1.8.1 — JSON processor
+
+Scoop shims path: `~\scoop\shims` (added to Windows user PATH automatically).
+Node path workaround: `export PATH="$PATH:/c/Users/loganf/scoop/apps/nodejs-lts/current"` — run `scoop reset nodejs-lts` from PowerShell to fix shims permanently.
+
+## Open PRs / Pending Logan Action (as of 2026-03-28, end of session)
+
+14 open PRs. Recommended merge order:
+
+- **PR #83** — merge first
+- **PR #98** — `gemini/activate-linear-pilot` — content triage, stale refs, Gemini Code Assist, LEVELSET/DOCKET. Merge after #83.
+- **PR #87** — merge after #98
+- **Batch: PR #86, #88–#94** — merge after #87
+- **PR #84** — ⚠️ CONFLICTS with PR #98 on `.gemini/GEMINI.md`/`GEMINI.md`; also touches `!/CONSTITUTION.md`. Recommend CLOSE as superseded.
+- **PR #96** — hold (decision pending)
+
+## Gemini Code Assist Cowork Enabled (2026-03-28)
+
+`.gemini/GEMINI.md` — capability tier fixed (Advisory → Tier 1 Support), cowork pattern with Claude Code (Abhorsen) documented, Constitutional zone hard rule added.
+`.gemini/settings.json` — context expanded: now loads GEMINI.md, AGENTS.md, VAULT-CONVENTIONS, CONSTITUTION, LEVELSET-CURRENT, DOCKET. MCP servers: OpenAI docs, GitHub Copilot MCP, HuggingFace, Box, Figma, Svelte, Stack Overflow.
+`.vscode/settings.json` (gitignored, local only) — geminicodeassist.enable, cloudcode.duetAI.project: "idaho-vault" added.
+
+## Infrastructure Files Committed (2026-03-28)
+
+- `!/PLUGIN-AUTH-INVENTORY-2026-03-28.md` — plugin/auth inventory snapshot
+- `!/LEVELSET-CODEX-ARCHIVAL-2026-03-28.md` — Codex archival levelset
+- `!/sort-audit-2026-03-29.md` — next sort audit planning doc
+- Ingest records moved from `INBOX/` to `!/` (INBOX/ entries deleted, `!/` entries added)
+
+## Hard Gates Still Holding (as of 2026-03-28)
+
+- JFAC audio verification: 5 quotes still need human verification before publish
+- Stale branch deletion: awaiting Logan decision on which branches to drop
+- `vault-moves-2026-03-23` decision: file relocation plan needs Logan sign-off
+- Chorus Bootstrap 5 decisions: IPT CMS upgrade decisions pending
+
+## Pending Decisions for Logan
+
+- **DECISIONS.md items 18–21** — auto-generated pending decisions; require Logan review (Decision 21 flagged ⚠️ CODE AUTHORITY review before publishing)
+- **PR #84** — close as superseded by PR #98, but check `!/CONSTITUTION.md` change first
+- Fictive persona roles for `.bartimaeus/`, `.zagreus/`, `.persephone/` — placeholder text in place
+- Stale branch deletions — 13 Codex/Copilot PRs in backlog
+- `vault-moves-2026-03-23` file relocation decisions
+- Chorus Bootstrap 5 decisions (unlocks CONVENE-gated items)
+- PR #96 — hold; decision required before merge
+- Gemini Code Assist: verify `cloudcode.duetAI.project` value = actual GCP project ID

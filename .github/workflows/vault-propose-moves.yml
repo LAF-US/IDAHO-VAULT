@@ -1,0 +1,14 @@
+name: Legacy Vault Propose Moves (Superseded)
+
+on:
+  workflow_dispatch:
+
+jobs:
+  propose-moves:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Report superseded status
+        run: |
+          echo "Move-proposal automation is superseded in this phase."
+          echo "Use .github/scripts/topology_census.py for doctrine-first census reporting."
