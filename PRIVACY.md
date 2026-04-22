@@ -87,7 +87,6 @@ The following directories are designated as **local-only** and must be listed in
 | `_private/` | Local-only working notes with personal data | REQUIRED |
 | `.remember/` | Agent memory buffer (may contain session PII) | REQUIRED |
 | `.smart-env/` | Smart Connections embeddings cache | Already ignored |
-| `INBOX/PHONE-LINK/` | Phone intake payloads | Already ignored |
 | `DAILYNOTES/` | Ephemeral personal daily notes | Already ignored |
 
 ---
