@@ -1,12 +1,11 @@
 ﻿param(
     [string]$SourceDir = "$env:USERPROFILE\Downloads\Phone Link",
-    [string]$VaultDir = "C:\Users\loganf\Documents\IDAHO-VAULT",
-    [string]$TargetSubdir = "INBOX\PHONE-LINK"
+    [string]$VaultDir = "C:\Users\loganf\Documents\IDAHO-VAULT"
 )
 
 $ErrorActionPreference = 'Stop'
-$TargetDir = Join-Path $VaultDir $TargetSubdir
-$LogPath = Join-Path $TargetDir '_phone-link-sweep.log'
+$TargetDir = $VaultDir
+$LogPath = Join-Path $VaultDir '!\INBOX\_phone-link-watcher.log'
 
 $mutexName = 'Global\IDAHO_VAULT_PHONE_LINK_SWEEP'
 $createdNew = $false
@@ -26,6 +25,7 @@ if (-not $createdNew) {
 
 New-Item -ItemType Directory -Force -Path $SourceDir | Out-Null
 New-Item -ItemType Directory -Force -Path $TargetDir | Out-Null
+New-Item -ItemType Directory -Force -Path (Split-Path -Parent $LogPath) | Out-Null
 
 function Write-Log([string]$msg) {
     $line = "$(Get-Date -Format s)  $msg"
@@ -45,6 +45,54 @@ function Test-Unlocked([string]$Path) {
     return $false
 }
 
+function Get-ShortFileHash([string]$Path) {
+    return (Get-FileHash -LiteralPath $Path -Algorithm SHA256).Hash.Substring(0, 16).ToLowerInvariant()
+}
+
+function Resolve-Destination([string]$Path) {
+    $name = [System.IO.Path]::GetFileName($Path)
+    $dest = Join-Path $TargetDir $name
+    if (-not (Test-Path -LiteralPath $dest)) {
+        return @{
+            Path = $dest
+            Disposition = 'direct'
+        }
+    }
+
+    $incomingHash = Get-ShortFileHash -Path $Path
+    $existingHash = Get-ShortFileHash -Path $dest
+    if ($incomingHash -eq $existingHash) {
+        return @{
+            Path = $null
+            Disposition = 'duplicate'
+        }
+    }
+
+    $base = [System.IO.Path]::GetFileNameWithoutExtension($name)
+    $ext = [System.IO.Path]::GetExtension($name)
+    $stamp = Get-Date -Format 'yyyyMMdd-HHmmss'
+    $attempt = 0
+    while ($true) {
+        $suffix = if ($attempt -eq 0) { "$stamp-$incomingHash" } else { "$stamp-$incomingHash-$attempt" }
+        $candidate = Join-Path $TargetDir ("$base-$suffix$ext")
+        if (-not (Test-Path -LiteralPath $candidate)) {
+            return @{
+                Path = $candidate
+                Disposition = 'collision'
+            }
+        }
+
+        if ((Get-ShortFileHash -Path $candidate) -eq $incomingHash) {
+            return @{
+                Path = $null
+                Disposition = 'duplicate'
+            }
+        }
+
+        $attempt++
+    }
+}
+
 function Move-One([string]$Path) {
     if (-not (Test-Path -LiteralPath $Path)) { return }
     $name = [System.IO.Path]::GetFileName($Path)
@@ -56,16 +104,32 @@ function Move-One([string]$Path) {
         return
     }
 
-    $dest = Join-Path $TargetDir $name
-    if (Test-Path -LiteralPath $dest) {
-        $base = [System.IO.Path]::GetFileNameWithoutExtension($name)
-        $ext = [System.IO.Path]::GetExtension($name)
-        $stamp = Get-Date -Format 'yyyyMMdd-HHmmss'
-        $dest = Join-Path $TargetDir ("$base-$stamp$ext")
+    $resolution = Resolve-Destination -Path $Path
+    if ($null -eq $resolution.Path) {
+        Write-Log "SKIP (duplicate): $name"
+        return
     }
 
-    Move-Item -LiteralPath $Path -Destination $dest -Force
-    Write-Log "MOVED: $name -> $dest"
+    $dest = $resolution.Path
+    while ($true) {
+        try {
+            Move-Item -LiteralPath $Path -Destination $dest -ErrorAction Stop
+            Write-Log "MOVED: $name -> $dest"
+            return
+        }
+        catch {
+            if (-not (Test-Path -LiteralPath $Path)) { return }
+            if ($_.Exception -isnot [System.IO.IOException]) { throw }
+
+            $resolution = Resolve-Destination -Path $Path
+            if ($null -eq $resolution.Path) {
+                Write-Log "SKIP (duplicate): $name"
+                return
+            }
+
+            $dest = $resolution.Path
+        }
+    }
 }
 
 Get-ChildItem -LiteralPath $SourceDir -File -Force | ForEach-Object { Move-One -Path $_.FullName }

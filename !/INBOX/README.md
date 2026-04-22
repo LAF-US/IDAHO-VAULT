@@ -25,10 +25,10 @@ date created: Sunday, April 12th 2026
 
 | Source | Automation | Drop target |
 |---|---|---|
-| `PHONE-LINK/` | `phone-link-auto-sweep.ps1` — watches `%USERPROFILE%\Downloads\Phone Link`, auto-moves to root `INBOX\PHONE-LINK\` | root `INBOX/PHONE-LINK/` |
+| `PHONE-LINK/` | `phone-link-auto-sweep.ps1` — watches `%USERPROFILE%\Downloads\Phone Link`, auto-moves directly to vault root | vault root |
 | `AI-CAPTURES/` | Protocol and naming convention — Chrome extension drops Markdown exports | root `INBOX/AI-CAPTURES/` |
 
 ---
 
 *See `!/INBOX/AI-CAPTURES/README.md` for the AI conversation capture protocol.*  
-*See `!/INBOX/PHONE-LINK/phone-link-auto-sweep.ps1` for the phone sweep automation.*
+*See root `phone-link-auto-sweep.ps1` for the phone sweep automation.*
