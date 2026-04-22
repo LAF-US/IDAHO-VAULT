@@ -1,8 +1,9 @@
 name: Agent Review Gate
 
-# Promotes low-risk PRs from agent-review-pending -> auto-merge only after the
-# shared review-state evaluator says the grace window has elapsed and no live
-# GitHub review/thread block remains.
+# Periodically re-derives open PR review state from GitHub truth so drift can be
+# corrected without waiting for a fresh webhook event. Eligible low-risk PRs are
+# also re-promoted / re-armed for auto-merge here if the event-driven path was
+# missed.
 
 on:
   schedule:
@@ -27,13 +28,13 @@ jobs:
         with:
           ref: ${{ github.event.repository.default_branch }}
 
-      - name: Promote eligible low-risk PRs to auto-merge
+      - name: Reconcile open PR review state
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GRACE_MINUTES: ${{ github.event.inputs.grace_minutes || '30' }}
         run: |
           python3 .github/scripts/review_feedback_loop.py \
-            promote-ready \
+            reconcile-open-prs \
             --owner "${{ github.repository_owner }}" \
             --repo "${{ github.event.repository.name }}" \
             --grace-minutes "$GRACE_MINUTES"

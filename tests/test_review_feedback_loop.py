@@ -57,6 +57,7 @@ def _pr(
     draft: bool = False,
     threads: tuple[dict[str, object], ...] = (),
     body: str = "## Auto-generated PR\n\n**Risk tier:**\n`low`\n",
+    auto_merge_enabled: bool = False,
 ) -> dict[str, object]:
     created_at = created_at or datetime(2026, 4, 16, 2, 0, tzinfo=timezone.utc)
     return {
@@ -66,6 +67,7 @@ def _pr(
         "createdAt": created_at.isoformat().replace("+00:00", "Z"),
         "isDraft": draft,
         "reviewDecision": review_decision,
+        "autoMergeRequest": {"enabledAt": created_at.isoformat().replace("+00:00", "Z")} if auto_merge_enabled else None,
         "labels": _labels(*labels),
         "reviewThreads": {"nodes": list(threads)},
     }
@@ -230,6 +232,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             "current_unresolved_threads": 0,
             "should_have_agent_review_pending": False,
             "merge_blocked": True,
+            "eligible_for_auto_merge": False,
         }
 
         with mock.patch.object(review_feedback_loop, "_edit_label") as edit_label, mock.patch.object(
@@ -252,6 +255,25 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             ],
         )
         disable_auto_merge.assert_called_once_with(29)
+
+    def test_apply_review_state_projection_clears_stale_auto_merge_when_not_eligible(self) -> None:
+        state = {
+            "labels": ["auto-merge"],
+            "blocking_review": False,
+            "current_unresolved_threads": 0,
+            "should_have_agent_review_pending": False,
+            "merge_blocked": False,
+            "eligible_for_auto_merge": False,
+        }
+
+        with mock.patch.object(review_feedback_loop, "_edit_label") as edit_label, mock.patch.object(
+            review_feedback_loop, "_disable_auto_merge"
+        ) as disable_auto_merge:
+            actions = review_feedback_loop.apply_review_state_projection(31, state)
+
+        self.assertEqual(actions, ["remove:auto-merge"])
+        edit_label.assert_called_once_with(31, remove="auto-merge")
+        disable_auto_merge.assert_called_once_with(31)
 
     def test_acknowledge_apply_marks_pending_after_trusted_request(self) -> None:
         args = SimpleNamespace(
@@ -324,6 +346,78 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertEqual(result, 0)
         disable_auto_merge.assert_called_once_with(73)
         run.assert_not_called()
+
+    def test_enable_auto_merge_refuses_to_arm_when_not_eligible(self) -> None:
+        args = SimpleNamespace(
+            owner="LAF-US",
+            repo="IDAHO-VAULT",
+            pr_number=74,
+            grace_minutes=30,
+        )
+
+        with mock.patch.object(review_feedback_loop, "ensure_labels"), mock.patch.object(
+            review_feedback_loop,
+            "_fetch_pr",
+            return_value=_pr(
+                labels=("auto-merge",),
+                body="## Auto-generated PR\n\n**Risk tier:**\n`high`\n",
+            ),
+        ), mock.patch.object(review_feedback_loop, "_edit_label"), mock.patch.object(
+            review_feedback_loop, "_disable_auto_merge"
+        ) as disable_auto_merge, mock.patch.object(review_feedback_loop, "_run") as run:
+            result = review_feedback_loop.enable_auto_merge(args)
+
+        self.assertEqual(result, 0)
+        disable_auto_merge.assert_called_once_with(74)
+        run.assert_not_called()
+
+    def test_reconcile_open_prs_repairs_drift_and_rearms_auto_merge(self) -> None:
+        args = SimpleNamespace(
+            owner="LAF-US",
+            repo="IDAHO-VAULT",
+            grace_minutes=30,
+        )
+        ready_pr = _pr(
+            number=88,
+            created_at=datetime(2026, 4, 16, 1, 0, tzinfo=timezone.utc),
+            labels=("agent-review-pending",),
+        )
+
+        with mock.patch.object(review_feedback_loop, "ensure_labels"), mock.patch.object(
+            review_feedback_loop,
+            "_list_open_pr_numbers",
+            return_value=[88],
+        ), mock.patch.object(
+            review_feedback_loop,
+            "_fetch_pr",
+            side_effect=[ready_pr],
+        ), mock.patch.object(
+            review_feedback_loop,
+            "_resolve_outdated_advisory_threads",
+            return_value=0,
+        ), mock.patch.object(
+            review_feedback_loop, "apply_review_state_projection", return_value=[]
+        ), mock.patch.object(
+            review_feedback_loop, "_edit_label"
+        ) as edit_label, mock.patch.object(
+            review_feedback_loop, "_comment"
+        ) as comment, mock.patch.object(review_feedback_loop, "_run") as run:
+            result = review_feedback_loop.reconcile_open_prs(args)
+
+        self.assertEqual(result, 0)
+        edit_label.assert_called_once_with(88, add="auto-merge")
+        comment.assert_called_once()
+        run.assert_called_once_with(
+            [
+                "gh",
+                "pr",
+                "merge",
+                "88",
+                "--squash",
+                "--delete-branch",
+                "--auto",
+            ]
+        )
 
 
 if __name__ == "__main__":
