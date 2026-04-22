@@ -238,9 +238,16 @@ data-backup*
 .openclaw/
 .claude/projects/
 .copilot/session-state/
+!.cursor/
+.cursor/
 .cursor/projects/
+.cursor/extensions/
 .factory/auth.v2.*
 .pi/agent/auth.json
+!.cursor/skills-cursor/
+!.cursor/plugins/cache/
+!.cursor/plugins/*/skills/
+!.cursor/skills/
 .claude/plugins/cache/
 .cursor/plugins/cache/
 .factory/plugins/marketplaces/
