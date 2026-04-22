@@ -158,7 +158,7 @@
 		"@types/node": "^10.17.60",
 		"@types/uuid": "^9.0.8",
 		"@types/vscode": "^1.63.1",
-		"esbuild": "^0.14.48",
+		"esbuild": "^0.28.0",
 		"mocha": "^9.2.2",
 		"typescript": "^4.8.3",
 		"uglify-js": "^3.16.1"
