@@ -10,8 +10,9 @@ Modes:
   - review-submitted: recompute review-derived state after a submitted review
     and pause auto-merge only when a non-author changes-requested review creates
     a real merge block.
-  - promote-ready: scan open PRs and promote low-risk PRs to `auto-merge` only
-    when the grace window has elapsed and derived state says they are ready.
+  - promote-ready: compatibility alias for scheduled reconciliation.
+  - reconcile-open-prs: rescan open PR truth, repair drifted labels, promote
+    eligible low-risk PRs, and re-arm GitHub auto-merge when needed.
   - enable-auto-merge: perform one final derived-state safety check before
     arming GitHub auto-merge for a PR labeled `auto-merge`.
 """
@@ -107,6 +108,9 @@ def _fetch_pr(owner: str, name: str, number: int) -> dict:
           createdAt
           isDraft
           reviewDecision
+          autoMergeRequest {
+            enabledAt
+          }
           labels(first: 50) {
             nodes { name }
           }
@@ -354,7 +358,13 @@ def apply_review_state_projection(
         actions.append(f"remove:{DEFAULT_PENDING_LABEL}")
         current_labels.discard(DEFAULT_PENDING_LABEL)
 
-    if bool(state["merge_blocked"]) and DEFAULT_AUTO_MERGE_LABEL in current_labels:
+    if (
+        DEFAULT_AUTO_MERGE_LABEL in current_labels
+        and (
+            bool(state["merge_blocked"])
+            or not bool(state["eligible_for_auto_merge"])
+        )
+    ):
         _disable_auto_merge(pr_number)
         _edit_label(pr_number, remove=DEFAULT_AUTO_MERGE_LABEL)
         actions.append(f"remove:{DEFAULT_AUTO_MERGE_LABEL}")
@@ -385,7 +395,27 @@ def _resolve_outdated_advisory_threads(pr: dict, auto_resolve_reviewers: set[str
     return resolved_count
 
 
-def _build_gate_report(
+def _list_open_pr_numbers(owner: str, repo: str) -> list[int]:
+    open_prs = json.loads(
+        _run(
+            [
+                "gh",
+                "pr",
+                "list",
+                "--repo",
+                f"{owner}/{repo}",
+                "--state",
+                "open",
+                "--json",
+                "number",
+            ]
+        ).stdout
+        or "[]"
+    )
+    return [int(pr_row["number"]) for pr_row in open_prs]
+
+
+def _build_reconciliation_report(
     owner: str,
     repo: str,
     *,
@@ -393,34 +423,18 @@ def _build_gate_report(
     grace_minutes: int = DEFAULT_GRACE_MINUTES,
     auto_resolve_reviewers: set[str] | None = None,
 ) -> dict[str, object]:
-    # The cron is a gardener, not a re-gater. It scans only PRs already in
-    # `agent-review-pending` and performs the single forward-advance transition
-    # (pending -> auto-merge) when the grace window has elapsed and nothing is
-    # blocking. The full five-axis label projection lives in event-driven
-    # workflows (push/comment/review) where there is actually new information
-    # to react to; a 30-minute tick is not new information.
-    open_prs = json.loads(
-        _run(
-            [
-                "gh",
-                "pr",
-                "list",
-                "--state",
-                "open",
-                "--label",
-                DEFAULT_REVIEW_PENDING_LABEL,
-                "--json",
-                "number",
-            ]
-        ).stdout
-        or "[]"
-    )
-
     evaluated: list[dict[str, object]] = []
     promoted: list[int] = []
-    for pr_row in open_prs:
-        pr_number = int(pr_row["number"])
+    rearmed: list[int] = []
+    total_resolved_outdated_threads = 0
+
+    for pr_number in _list_open_pr_numbers(owner, repo):
         pr = _fetch_pr(owner, repo, pr_number)
+        resolved_count = _resolve_outdated_advisory_threads(pr, auto_resolve_reviewers or set())
+        total_resolved_outdated_threads += resolved_count
+        if resolved_count:
+            pr = _fetch_pr(owner, repo, pr_number)
+
         state = evaluate_review_state(
             pr,
             now=now,
@@ -428,16 +442,17 @@ def _build_gate_report(
             auto_resolve_reviewers=auto_resolve_reviewers,
         )
 
-        actions: list[str] = []
+        actions = apply_review_state_projection(pr_number, state)
         current_labels = set(state["labels"])
+        auto_merge_enabled = bool((pr.get("autoMergeRequest") or {}).get("enabledAt"))
         if (
             state["eligible_for_auto_merge"]
             and not bool(state["merge_blocked"])
             and DEFAULT_AUTO_MERGE_LABEL not in current_labels
         ):
             if DEFAULT_REVIEW_PENDING_LABEL in current_labels:
-                _edit_label(pr_number, remove=DEFAULT_REVIEW_PENDING_LABEL)
-                actions.append(f"remove:{DEFAULT_REVIEW_PENDING_LABEL}")
+                current_labels.discard(DEFAULT_REVIEW_PENDING_LABEL)
+            current_labels.add(DEFAULT_AUTO_MERGE_LABEL)
             _edit_label(pr_number, add=DEFAULT_AUTO_MERGE_LABEL)
             actions.append(f"add:{DEFAULT_AUTO_MERGE_LABEL}")
             _comment(
@@ -446,6 +461,26 @@ def _build_gate_report(
                 f"with no blocking feedback. Promoting to `auto-merge`.",
             )
             promoted.append(pr_number)
+            auto_merge_enabled = False
+
+        if (
+            DEFAULT_AUTO_MERGE_LABEL in current_labels
+            and bool(state["eligible_for_auto_merge"])
+            and not bool(state["merge_blocked"])
+            and not auto_merge_enabled
+        ):
+            _run(
+                [
+                    "gh",
+                    "pr",
+                    "merge",
+                    str(pr_number),
+                    "--squash",
+                    "--delete-branch",
+                    "--auto",
+                ]
+            )
+            rearmed.append(pr_number)
 
         evaluated.append(
             {
@@ -454,6 +489,8 @@ def _build_gate_report(
                 "low_risk": state["low_risk"],
                 "merge_blocked": state["merge_blocked"],
                 "blocking_reasons": state["blocking_reasons"],
+                "resolved_outdated_threads": resolved_count,
+                "auto_merge_enabled": auto_merge_enabled,
                 "actions": actions,
             }
         )
@@ -461,6 +498,8 @@ def _build_gate_report(
     return {
         "checked_prs": len(evaluated),
         "promoted_prs": promoted,
+        "rearmed_prs": rearmed,
+        "resolved_outdated_threads": total_resolved_outdated_threads,
         "evaluated": evaluated,
     }
 
@@ -597,7 +636,23 @@ def promote_ready(args: argparse.Namespace) -> int:
         "AUTO_RESOLVE_REVIEWERS",
         "copilot-pull-request-reviewer",
     )
-    report = _build_gate_report(
+    report = _build_reconciliation_report(
+        args.owner,
+        args.repo,
+        grace_minutes=args.grace_minutes,
+        auto_resolve_reviewers=auto_resolve_reviewers,
+    )
+    print(json.dumps(report))
+    return 0
+
+
+def reconcile_open_prs(args: argparse.Namespace) -> int:
+    ensure_labels()
+    auto_resolve_reviewers = _csv_env(
+        "AUTO_RESOLVE_REVIEWERS",
+        "copilot-pull-request-reviewer",
+    )
+    report = _build_reconciliation_report(
         args.owner,
         args.repo,
         grace_minutes=args.grace_minutes,
@@ -623,7 +678,11 @@ def enable_auto_merge(args: argparse.Namespace) -> int:
     labels = set(state["labels"])
 
     enabled = False
-    if DEFAULT_AUTO_MERGE_LABEL in labels and not bool(state["merge_blocked"]):
+    if (
+        DEFAULT_AUTO_MERGE_LABEL in labels
+        and bool(state["eligible_for_auto_merge"])
+        and not bool(state["merge_blocked"])
+    ):
         _run(
             [
                 "gh",
@@ -687,6 +746,11 @@ def build_parser() -> argparse.ArgumentParser:
     promote.add_argument("--repo", required=True)
     promote.add_argument("--grace-minutes", type=int, default=DEFAULT_GRACE_MINUTES)
 
+    reconcile = subparsers.add_parser("reconcile-open-prs")
+    reconcile.add_argument("--owner", required=True)
+    reconcile.add_argument("--repo", required=True)
+    reconcile.add_argument("--grace-minutes", type=int, default=DEFAULT_GRACE_MINUTES)
+
     enable = subparsers.add_parser("enable-auto-merge")
     enable.add_argument("--owner", required=True)
     enable.add_argument("--repo", required=True)
@@ -709,6 +773,8 @@ def main() -> int:
         return review_submitted(args)
     if args.command == "promote-ready":
         return promote_ready(args)
+    if args.command == "reconcile-open-prs":
+        return reconcile_open_prs(args)
     return enable_auto_merge(args)
 
 
