@@ -219,6 +219,13 @@ tempfolder.txt
 .op/openrouter.env
 .op/reports/
 
+# MCP authentication state (contains OAuth tokens - NEVER track)
+.mcp-auth/
+
+# Codex and Claude authentication state (contains OAuth tokens - NEVER track)
+.claude/.credentials.json
+.codex/auth.json
+
 # AI/tool runtime caches and local auth state (never commit)
 .antigravity/
 .gemini/
