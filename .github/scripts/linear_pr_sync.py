@@ -30,6 +30,7 @@ class Config:
     event_path: str
     post_linkback: bool
     strict_mode: bool
+    trusted_author_associations: set[str]
 
 
 class LinearSyncError(RuntimeError):
@@ -45,13 +46,34 @@ def read_json(path: str) -> Dict[str, Any]:
         return json.load(fh)
 
 
-def find_issue_identifier(pr: Dict[str, Any]) -> Optional[str]:
-    candidates = [
-        pr.get("title", ""),
-        pr.get("body", "") or "",
-        pr.get("head", {}).get("ref", ""),
-        pr.get("base", {}).get("ref", ""),
-    ]
+def _csv_env(name: str, default: str = "") -> set[str]:
+    raw = os.getenv(name, default)
+    return {item.strip().upper() for item in raw.split(",") if item.strip()}
+
+
+def is_trusted_pr_source(pr: Dict[str, Any], *, trusted_author_associations: set[str]) -> tuple[bool, str]:
+    head_repo = (pr.get("head") or {}).get("repo") or {}
+    base_repo = (pr.get("base") or {}).get("repo") or {}
+
+    head_full_name = str(head_repo.get("full_name") or "").lower()
+    base_full_name = str(base_repo.get("full_name") or "").lower()
+    if not head_full_name or not base_full_name or head_full_name != base_full_name:
+        return False, "PR originates from an untrusted repository context; skipping secret-backed Linear sync."
+
+    author_association = str(pr.get("author_association") or "").upper()
+    if author_association not in trusted_author_associations:
+        return (
+            False,
+            f"PR author association {author_association!r} is not trusted for secret-backed Linear sync.",
+        )
+
+    return True, ""
+
+
+def find_issue_identifier(pr: Dict[str, Any], *, trusted_metadata: bool) -> Optional[str]:
+    candidates = [pr.get("head", {}).get("ref", "")]
+    if trusted_metadata:
+        candidates.extend([pr.get("title", ""), pr.get("body", "") or ""])
     for text in candidates:
         match = ISSUE_RE.search(text)
         if match:
@@ -188,6 +210,10 @@ def load_config() -> Config:
         event_path=event_path,
         post_linkback=post_linkback_env in {"1", "true", "yes", "on"},
         strict_mode=strict_mode,
+        trusted_author_associations=_csv_env(
+            "LINEAR_TRUSTED_AUTHOR_ASSOCIATIONS",
+            "OWNER,MEMBER,COLLABORATOR",
+        ),
     )
 
 
@@ -236,9 +262,17 @@ def main() -> int:
             log("Draft PR detected; skipping sync until ready_for_review.")
             return 0
 
-        identifier = find_issue_identifier(pr)
+        trusted_source, trust_reason = is_trusted_pr_source(
+            pr,
+            trusted_author_associations=cfg.trusted_author_associations,
+        )
+        if not trusted_source:
+            log(trust_reason)
+            return 0
+
+        identifier = find_issue_identifier(pr, trusted_metadata=True)
         if not identifier:
-            log("No Linear-style issue identifier found in title/body/branch. Skipping.")
+            log("No trusted Linear-style issue identifier found in branch/title/body. Skipping.")
             return 0
         log(f"Matched Linear identifier: {identifier}")
 
