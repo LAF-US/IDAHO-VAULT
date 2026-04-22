@@ -1,0 +1,62 @@
+---
+related:
+- Adams County
+- Carl Crabtree
+- Charlie Shepherd
+- Cindy Carlson
+- Clearwater County
+- Dan Johnson
+- Idaho
+- Idaho County
+- Mike Kingsley
+- Nez Perce County
+- Paul
+- Paul Shepherd
+- Priscilla Giddings
+- Shoshone
+- Shoshone County
+authority: LOGAN
+---
+Idaho County, Adams County & part of Nez Perce County
+- Formerly Idaho County, Clearwater County, Shoshone County & part of Bonner
+
+### 2023-2024 
+Sen. Cindy Carlson
+Rep. Mike Kingsley
+Rep. Charlie Shepherd
+
+> REDISTRICTING 
+### 2021-2022
+Sen. Carl Crabtree
+Rep. Priscilla Giddings
+Rep. Charlie Shepherd
+
+### 2019-2020
+Sen. Carl Crabtree
+Rep. Priscilla Giddings
+Rep. Paul Shepherd 
+
+### 2017-2018
+Sen. Carl Crabtree
+Rep. Priscilla Giddings
+Rep. Paul Shepherd
+### 2015-2016
+Sen. Sheryl Nuxoll
+Rep. Shannon McMillan
+Rep. Paul Shepherd
+
+### 2013-2014
+Sen. Sheryl Nuxoll
+Rep. Shannon McMillan
+Rep. Paul Shepherd
+
+> REDISTRICTING 
+### 2011-2012
+Sen. Dan Johnson
+Rep. Jeff Nesset
+Rep. John Rusche
+
+### 2009-2010
+Sen. 
+Rep. 
+Rep. 

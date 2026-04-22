@@ -1,0 +1,40 @@
+name: Idempotent PR lookup
+description: >
+  Return the open PR number for a given head branch, or indicate absence.
+  Used by workflows that conditionally skip PR-creation when one already exists,
+  preventing duplicate PRs on rerun or concurrent triggers.
+
+inputs:
+  branch:
+    description: Head branch name to look up (without refs/heads/ prefix).
+    required: true
+  gh-token:
+    description: GitHub token with repo read access.
+    required: true
+
+outputs:
+  pr_exists:
+    description: "'true' if an open PR exists for the branch, 'false' otherwise."
+    value: ${{ steps.lookup.outputs.pr_exists }}
+  pr_number:
+    description: PR number if one exists, empty string otherwise.
+    value: ${{ steps.lookup.outputs.pr_number }}
+
+runs:
+  using: composite
+  steps:
+    - name: Look up open PR for branch
+      id: lookup
+      shell: bash
+      env:
+        GH_TOKEN: ${{ inputs.gh-token }}
+        BRANCH_NAME: ${{ inputs.branch }}
+      run: |
+        EXISTING=$(gh pr list --head "$BRANCH_NAME" --state open --json number --jq '.[0].number // empty' 2>/dev/null || true)
+        if [ -n "$EXISTING" ]; then
+          echo "pr_exists=true" >> "$GITHUB_OUTPUT"
+          echo "pr_number=$EXISTING" >> "$GITHUB_OUTPUT"
+        else
+          echo "pr_exists=false" >> "$GITHUB_OUTPUT"
+          echo "pr_number=" >> "$GITHUB_OUTPUT"
+        fi

@@ -1,0 +1,175 @@
+name: Daily To-Do Rollover
+
+# Carries incomplete to-do items from yesterday's daily note into today's.
+# Runs at 4 AM MT (10:00 UTC), a liminal hour. See [[The 4 a.m. Mystery]] by [[Rives]].
+# Can also be triggered manually from the Actions tab.
+
+on:
+  schedule:
+    - cron: '0 10 * * *'  # 4 AM MT, see [[The 4 a.m. Mystery]] by [[Rives]]
+  workflow_dispatch:
+    inputs:
+      date:
+        description: 'Target date to roll INTO (YYYY-MM-DD). Defaults to today.'
+        required: false
+        default: ''
+      dry_run:
+        description: 'Dry run - print output without writing files'
+        required: false
+        default: 'false'
+        type: boolean
+
+jobs:
+  rollover:
+    name: Roll over incomplete to-dos
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout vault
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+        with:
+          fetch-depth: 1
+
+      - name: Normalize checkout line endings
+        run: |
+          git config --local core.autocrlf false
+          git config --local core.eol lf
+          git config --local core.safecrlf false
+          git reset --hard HEAD
+
+      - name: Set up Python
+        uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6
+        with:
+          python-version: '3.11'
+
+      - name: Run daily rollover
+        run: |
+          ARGS=()
+          DATE="${{ github.event.inputs.date }}"
+          DRY="${{ github.event.inputs.dry_run }}"
+          [ -z "$DATE" ] && DATE="$(TZ=America/Boise date +%Y-%m-%d)"
+          [ -n "$DATE" ] && ARGS+=("--date" "$DATE")
+          [ "$DRY" = "true" ] && ARGS+=("--dry-run")
+          python3 .github/scripts/daily_rollover.py "${ARGS[@]}"
+
+      - name: Prepare rollover changes
+        id: changes
+        run: |
+          TARGET_DATE="${{ github.event.inputs.date }}"
+          [ -z "$TARGET_DATE" ] && TARGET_DATE="$(TZ=America/Boise date +%Y-%m-%d)"
+          echo "target_date=${TARGET_DATE}" >> "$GITHUB_OUTPUT"
+
+          UNEXPECTED=()
+          mapfile -d '' -t UNEXPECTED < <(
+            git diff --name-only -z -- . \
+              ":(exclude)${TARGET_DATE}.md" \
+              ":(exclude)TO DO LIST.md"
+          )
+          mapfile -d '' -t UNTRACKED < <(
+            git ls-files --others --exclude-standard -z -- . \
+              ":(exclude)${TARGET_DATE}.md" \
+              ":(exclude)TO DO LIST.md"
+          )
+          UNEXPECTED+=("${UNTRACKED[@]}")
+
+          if [ ${#UNEXPECTED[@]} -gt 0 ]; then
+            echo "Unexpected worktree churn detected outside the rollover file set; staging will remain limited to the approved files." >&2
+            {
+              echo "### Daily rollover warning"
+              echo
+              echo "Unexpected worktree changes were detected outside the allowed file set:"
+              printf -- '- %s\n' "${UNEXPECTED[@]}"
+              echo
+              echo "Only \`${TARGET_DATE}.md\` and \`TO DO LIST.md\` will be staged for the PR."
+            } >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+          git add "${TARGET_DATE}.md" "TO DO LIST.md" 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "has_changes=false" >> "$GITHUB_OUTPUT"
+            echo "No changes to commit - to-dos already current."
+          else
+            echo "has_changes=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit and Push Changes
+        if: steps.changes.outputs.has_changes == 'true' && github.event.inputs.dry_run != 'true'
+        id: commit_push
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TARGET_DATE="${{ steps.changes.outputs.target_date }}"
+          BRANCH_NAME="bot/daily-rollover-${TARGET_DATE}"
+          echo "branch_name=${BRANCH_NAME}" >> "$GITHUB_OUTPUT"
+          TITLE="rollover: carry incomplete to-dos to ${TARGET_DATE}"
+          echo "title=${TITLE}" >> "$GITHUB_OUTPUT"
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git checkout -B "$BRANCH_NAME"
+          git add "${TARGET_DATE}.md" "TO DO LIST.md"
+          if git diff --cached --quiet; then
+            echo "No staged rollover changes found."
+            exit 0
+          fi
+
+          git commit -m "$TITLE"
+          git push --force-with-lease origin "$BRANCH_NAME"
+
+      - name: Check for existing PR
+        if: steps.changes.outputs.has_changes == 'true' && github.event.inputs.dry_run != 'true'
+        id: check-pr
+        uses: ./.github/actions/idempotent-pr-create
+        with:
+          branch: ${{ steps.commit_push.outputs.branch_name }}
+          gh-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Create Pull Request
+        if: steps.check-pr.outputs.pr_exists != 'true' && steps.changes.outputs.has_changes == 'true' && github.event.inputs.dry_run != 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BRANCH_NAME: ${{ steps.commit_push.outputs.branch_name }}
+          TITLE: ${{ steps.commit_push.outputs.title }}
+          BODY: "Automated daily rollover update generated by GitHub Actions."
+        run: |
+          gh pr create \
+            --title "$TITLE" \
+            --body "$BODY" \
+            --base main \
+            --head "$BRANCH_NAME" \
+            --label auto-merge
+
+      - name: Resolve rollover PR number
+        if: steps.changes.outputs.has_changes == 'true' && github.event.inputs.dry_run != 'true'
+        id: resolve-pr
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BRANCH_NAME: ${{ steps.commit_push.outputs.branch_name }}
+          EXISTING_PR_NUMBER: ${{ steps.check-pr.outputs.pr_number }}
+        run: |
+          PR_NUMBER="$EXISTING_PR_NUMBER"
+          if [ -z "$PR_NUMBER" ]; then
+            PR_NUMBER=$(gh pr list --head "$BRANCH_NAME" --state open --json number --jq '.[0].number // empty')
+          fi
+
+          if [ -z "$PR_NUMBER" ]; then
+            echo "Unable to resolve an open rollover PR for branch $BRANCH_NAME." >&2
+            exit 1
+          fi
+
+          echo "pr_number=$PR_NUMBER" >> "$GITHUB_OUTPUT"
+
+      - name: Arm auto-merge for rollover PR
+        if: steps.resolve-pr.outputs.pr_number != ''
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 .github/scripts/review_feedback_loop.py \
+            enable-auto-merge \
+            --owner "${{ github.repository_owner }}" \
+            --repo "${{ github.event.repository.name }}" \
+            --pr-number "${{ steps.resolve-pr.outputs.pr_number }}"

@@ -1,0 +1,33 @@
+{
+  "name": "nimble_agents_publish",
+  "description": "Save a generated agent so it becomes reusable and searchable.\n\nCall after a successful nimble_agents_generate + nimble_agents_run cycle. The agent\nis persisted and appears in future nimble_agents_list searches.\n\nOnly publish with explicit user confirmation. Uses the same session_id from generate.\n\nArgs:\n    session_id: Session ID from the nimble_agents_generate flow.\n\nReturns:\n    Published agent details (same shape as nimble_agents_get).",
+  "arguments": {
+    "type": "object",
+    "properties": {
+      "session_id": {
+        "description": "The same session_id used in nimble_agents_generate. The generated agent will be saved and become searchable via nimble_agents_list.",
+        "title": "Session Id",
+        "type": "string"
+      }
+    },
+    "required": [
+      "session_id"
+    ]
+  },
+  "outputSchema": {
+    "type": "object",
+    "properties": {
+      "agent": {
+        "additionalProperties": true,
+        "description": "Raw enriched agent/template payload returned by Bakery for the requested agent name. Includes backend-defined metadata and configuration fields.",
+        "title": "Agent",
+        "type": "object"
+      }
+    },
+    "required": [
+      "agent"
+    ],
+    "description": "Response shape for nimble_agents_get.",
+    "title": "AgentDetailsResult"
+  }
+}

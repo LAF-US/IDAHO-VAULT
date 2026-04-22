@@ -1,0 +1,20 @@
+{
+  "pluginId": "math-olympiad@claude-plugins-official",
+  "createdAt": "2026-04-04T04:01:51.286Z",
+  "files": {
+    ".claude-plugin\\plugin.json": "8c74f63e67cb9cbea57752f12c8afe5dcab569ae978503f28b18b07416bcae73",
+    "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "README.md": "c16490a5a7c6cb753e1f0d26457b832ad34e2693b745b8d49b5646d4e3070194",
+    "skills\\math-olympiad\\evals\\trigger_eval.json": "672a9d8c3804c74683cd779126ab6a7c310081b290f04de863962f3631ebb196",
+    "skills\\math-olympiad\\references\\adversarial_prompts.md": "686f5913da4e3291d64989f1bacb8f99fe69cdb3b5b9e64c8390151e870bae2a",
+    "skills\\math-olympiad\\references\\attempt_agent.md": "8716d7cad5ec2a05d8e6e48f4042721638b97dec83bd11eee1f7734697ba84bf",
+    "skills\\math-olympiad\\references\\known_constructions.md": "5135bca2eb1c448f1144cda2b1cfa796be5cb6a082306e589ad8308636b1e065",
+    "skills\\math-olympiad\\references\\model_tier_defaults.md": "fa44e35b3c73c12c4098568df2d8fc6ff54dbed16b8d592e82272554c3eeaeb0",
+    "skills\\math-olympiad\\references\\presentation_prompts.md": "19eb3e242eb5879a5fe2768eea9d0e5a35b3df38a5c02cccd101e0b1f07e7d09",
+    "skills\\math-olympiad\\references\\solver_heuristics.md": "a934fc5252d1a0776e6390c5a943af7f7b32324cf5454e3dce94b3681daa842e",
+    "skills\\math-olympiad\\references\\verifier_patterns.md": "b72657c916d5cd0baa464d5ad59fce9fedb6f870f46b8dd9610632b08a591f56",
+    "skills\\math-olympiad\\scripts\\check_latex.sh": "052151934c82b7a5d91a5bb3ba2a1611f22fc661929cf819f7e3d954bdb22721",
+    "skills\\math-olympiad\\scripts\\compile_pdf.sh": "1e990d377d79b1d08b993833e7dcce8c5c82ed5ab34ad72c009b42f2e068b243",
+    "skills\\math-olympiad\\SKILL.md": "f697e195d343520f3db551bd4fb44c5120504ee2c47a9cc2016cd57767f23403"
+  }
+}

@@ -1,0 +1,10 @@
+# MEMORY INDEX
+
+Memory for the IDAHO-VAULT Claude Code session. Read relevant files before answering.
+
+| File | Type | Description |
+|---|---|---|
+| [user_logan.md](user_logan.md) | user | Logan Finney — role, profession, collaboration style, what he values |
+| [project_vault_state.md](project_vault_state.md) | project | IDAHO-VAULT architecture, multi-agent ecosystem, current status and blockers |
+| [feedback_operations.md](feedback_operations.md) | feedback | Operational principles, four failure modes (fabrication, confabulation, etc.), rules |
+| [reference_vault_locations.md](reference_vault_locations.md) | reference | Key file paths, external coordination systems, orientation protocol |

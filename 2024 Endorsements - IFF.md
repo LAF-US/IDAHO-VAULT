@@ -1,0 +1,92 @@
+---
+related:
+- Ben Toews
+- Brian Lenney
+- Bryan Smith
+- Christy Zito
+- Cindy Carlson
+- Cornel Rasor
+- Dale Hawkins
+- Dan Foreman
+- Elaine Price
+- Faye Thompson
+- Freedom
+- Glenneda Zuiderveld
+- Golden
+- Heather Scott
+- Idaho
+- Idaho Freedom PAC
+- Idaho Legislature
+- Jackson
+- Jacyn Gallagher
+- Joe Alfieri
+- Jordan Redman
+- Josh Tanner
+- Julianne Young
+- Karey Hanks
+- Kent Marmon
+- Kyle Harris
+- PAC
+- Phil Hart
+- Rob Beiswenger
+- Scott Herndon
+- Tammy Nichols
+- Tina Lambert
+- Tony Wisniewski
+- Vito Barbieri
+authority: LOGAN
+---
+Supported by Idaho Freedom PAC for 2024 Idaho Legislature elections.
+
+- Scott Herndon for LD1 Senate (10/02/2023)
+- Cornel Rasor for LD1 House A (11/02/2023)
+- Phil Hart for LD2 Senate (04/25/2024)
+- Heather Scott for LD2 House A (04/25/2024)
+- Dale Hawkins for LD2 House B (04/25/2024)
+- Vito Barbieri for LD3 House A (04/25/2024)
+- Jordan Redman for LD3 House B (04/25/2024)
+- Ben Toews for LD4 Senate (04/25/2024)
+- Joe Alfieri for LD4 House **A** (04/25/2024)
+- Elaine Price for LD4 House B (04/25/2024)
+- Tony Wisniewski for LD5 House B (04/25/2024)
+- Dan Foreman for LD6 Senate (04/25/2024)
+- Cindy Carlson for LD7 Senate (04/25/2024)
+- Kyle Harris for LD7 House A (04/25/2024)
+- Larry Dunn for LD7 House B (04/25/2024)
+- Christy Zito for LD8 Senate (05/12/2023)
+- Rob Beiswenger for LD8 House A (10/02/2023)
+- Faye Thompson for LD8 House B (04/25/2024)
+- Brandon Shippy for LD9 Senate (10/02/2023)
+- Jacyn Gallagher for LD9 House A (12/12/2023)
+- Tammy Nichols for LD10 Senate (12/12/2023)
+- Rachel Hazelip for LD10 (04/25/2024)
+- Kent Marmon for LD11 House A (11/02/2023)
+- Lucas Cayler for LD11 House B (11/02/2023)
+- Jarome Bell for LD12 House A (04/25/2024)
+- Brian Lenney for LD13 Senate (10/02/2023)
+- Steve Tanner for LD13 House B (04/25/2024)
+- Josh Tanner for LD14 House B (04/25/2024)
+- Jackie Davidson for LD16 House B (04/25/2024)
+- Benjamin Chafetz for LD17 Senate (04/25/2024)
+- Jim Feederle for LD19 House A (04/25/2024)
+- Josh Keyser for LD20 Senate (12/12/2023)
+- Brenda Bourn for LD21 Senate (04/25/2024)
+- Chris Bruce for LD23 House A (04/25/2024)
+- Tina Lambert for LD23 House B (04/25/2024)
+- Glenneda Zuiderveld for LD24 Senate (11/02/2023)
+- Clint Hostetler for LD24 House A (04/25/2024)
+- Josh Kohl for LD25 Senate (04/25/2024)
+- David Leavitt for LD25 House B (04/25/2024)
+- Kally Schiffler for LD26 House A (04/25/2024)
+- Lyle Johnstone for LD26 House B (04/25/2024)
+- Patrick Field for LD27 House B (04/25/2024)
+- James Lamborn for LD28 House A (04/25/2024)
+- Kirk Jackson for LD28 House B (04/25/2024)
+- Tanya Burgoyne for LD29 House B (04/25/2024)
+- Julianne Young for LD30 House B (04/25/2024)
+- Karey Hanks for LD31 House B (10/02/2023)
+- Kelly Golden for LD32 House A (04/25/2024)
+- Bryan Smith for LD32 House B (04/25/2024)
+- Bryan Scholz for LD33 Senate (04/25/2024)
+- Jilene Burger for LD33 House B (04/25/2024)
+- Brett Skidmore for LD35 House B (11/02/2023)

@@ -1,0 +1,144 @@
+{
+  "name": "nimble_agents_status",
+  "description": "Check the current status of a generate or update session.\n\nUse this after nimble_agents_generate, nimble_agents_update_from_agent, or\nnimble_agents_update_session returns \"processing\" status.\nWorks for both generate and update sessions — they share the same polling mechanism.\n\nStatus flow:\n- \"processing\": Still in progress — call again after ~30 seconds.\n- \"waiting\": Backend needs more info — call nimble_agents_update_session\n  with the same session_id and the user's answer as prompt.\n- \"complete\": Agent ready — agent_name is set, proceed to nimble_agents_run.\n- \"error\"/\"failed\": Something went wrong — check error and message fields for diagnostics.\n  Use these to compose a retry prompt (see retry-with-fix protocol).",
+  "arguments": {
+    "type": "object",
+    "properties": {
+      "session_id": {
+        "description": "The session_id from a previous nimble_agents_generate, nimble_agents_update_from_agent, or nimble_agents_update_session call.",
+        "title": "Session Id",
+        "type": "string"
+      }
+    },
+    "required": [
+      "session_id"
+    ]
+  },
+  "outputSchema": {
+    "type": "object",
+    "properties": {
+      "status": {
+        "description": "Conversation state from API: waiting, processing, complete, or error. failed is used only for local/tool-level failures.",
+        "enum": [
+          "waiting",
+          "processing",
+          "complete",
+          "error",
+          "failed"
+        ],
+        "title": "Status",
+        "type": "string"
+      },
+      "session_id": {
+        "description": "Conversation session ID for conversational generate/publish flow. On first generate call, create a unique value (UUID-like recommended), then reuse the same value for all follow-up generate calls and publish.",
+        "title": "Session Id",
+        "type": "string"
+      },
+      "message": {
+        "description": "Question to answer, status update, or success message",
+        "title": "Message",
+        "type": "string"
+      },
+      "domain": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Collected: domain from URL",
+        "title": "Domain"
+      },
+      "input_schema": {
+        "anyOf": [
+          {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Collected: input fields schema",
+        "title": "Input Schema"
+      },
+      "output_schema": {
+        "anyOf": [
+          {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Collected: output fields schema",
+        "title": "Output Schema"
+      },
+      "agent_name": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Generated agent identifier",
+        "title": "Agent Name"
+      },
+      "error": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Error message if failed",
+        "title": "Error"
+      },
+      "source_agent_name": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Agent name currently being edited by the session.",
+        "title": "Source Agent Name"
+      },
+      "forked_from_agent_name": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Original agent name when this session started from a fork.",
+        "title": "Forked From Agent Name"
+      }
+    },
+    "required": [
+      "status",
+      "session_id",
+      "message"
+    ],
+    "description": "Response from nimble_agents_generate.\n\nUses conversational pattern:\n- status=\"waiting\"/\"processing\": Tool is asking a question (see message field)\n- status=\"complete\": Agent generated successfully\n- status=\"error\"/\"failed\": Error occurred (see error field)",
+    "title": "AgentGenerateResult"
+  }
+}

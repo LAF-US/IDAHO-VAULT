@@ -1,0 +1,7 @@
+{
+  "refresh_token": "70121-e41ae02a-4e49-4be6-bb33-ca5c3df38c9f:IIynyMoYREaliQlD:DVF3BmUe9jjYxnQL9nELhrdc_IV5D0y8",
+  "access_token": "70121-e41ae02a-4e49-4be6-bb33-ca5c3df38c9f:IIynyMoYREaliQlD:Z17qppiVx1IXQO838AFzowjACeZkHgKQ",
+  "token_type": "bearer",
+  "expires_in": 28320,
+  "scope": "openid email profile"
+}

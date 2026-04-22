@@ -1,0 +1,14 @@
+{
+  "pluginId": "fakechat@claude-plugins-official",
+  "createdAt": "2026-04-04T03:56:25.023Z",
+  "files": {
+    ".claude-plugin\\plugin.json": "f8ab6ee13afeb0f988a1e48ac6c955efd671c9ed3a67b47ad8c6e1fd8a215f48",
+    ".mcp.json": "3917f449284d362f213a42e0d7ef3bb9a75db795b7909d6febdb1fd94d0df68e",
+    ".npmrc": "3a951f66e7e0f3e2dd1832473a871357c4a507b51100636b73bcf6ff0dd78b6c",
+    "bun.lock": "0e8824bc40543533673d7af36a7ff271007cf87e6a12d31ea4580296a83370d0",
+    "LICENSE": "dfd016a63459229ceb791be757c3bede084fb22303c36b61342db1b8f58cc450",
+    "package.json": "e3e02600f8a2a35124a984070be5fb04303744fb77bb6cd2155434aac43bba02",
+    "README.md": "be41e946d68e0c78b995ecb4f88d28bfb1a1cee4a65d99be5cb0243afa5c2af8",
+    "server.ts": "7e1748e0935ce85681067cab06a6f7ab0920821811c00802702cfbe4fe706708"
+  }
+}

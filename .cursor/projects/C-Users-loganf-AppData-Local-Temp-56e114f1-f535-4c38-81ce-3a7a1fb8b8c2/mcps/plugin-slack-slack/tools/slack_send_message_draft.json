@@ -1,0 +1,27 @@
+{
+  "name": "slack_send_message_draft",
+  "description": "Creates a draft message in a Slack channel. The draft is saved to the user's \"Drafts & Sent\" in Slack without sending it.\n\n## When to Use\n- User wants to prepare a message without sending it immediately\n- User needs to compose a message for later review or sending\n- User wants to draft a message to a specific channel\n\n## When NOT to Use\n- User wants to send a message immediately (use `slack_send_message` instead)\n- User wants to schedule a message (use `slack_send_message` with scheduling)\n- User wants to create drafts in multiple channels (call this tool multiple times)\n- Channel is externally shared (Slack Connect channel) - drafts in externally shared channels are not supported\n\n## Input Parameters:\n- `channel_id`: Single channel ID where the draft should be created\n- `message`: The draft message content using standard markdown. Supports **bold**, _italic_, `code`, ~strikethrough~, >blockquotes, lists, links, and code blocks.\n- `thread_ts` (optional): Timestamp of the parent message to create a draft reply in a thread (e.g., \"1234567890.123456\")\n\n## Output:\nReturns `channel_link` - a Slack web client URL (e.g., https://app.slack.com/client/T123/C456) that opens the channel in the web app where the draft was created.\n\n## Finding value for `channel_id` input:\n- Use `slack_search_users` tool to find user ID for DMs, then use their user_id as the channel_id\n\n## Error Codes:\n- `channel_not_found`: Invalid channel ID or user does not have access to the channel\n- `draft_already_exists`: A draft already exists for this channel (user should edit or delete the existing draft first)\n- `failed_to_create_draft`: Draft creation failed for an unknown reason\n- `mcp_externally_shared_channel_restricted`: Cannot create drafts in externally shared channels (Slack Connect channels)\n\n## Notes:\n- Drafts are created as attached drafts (linked to the specific channel)\n- User must have write access to the channel\n- Only one attached draft is allowed per channel - if a draft already exists, you'll get an error\n",
+  "arguments": {
+    "type": "object",
+    "properties": {
+      "channel_id": {
+        "type": "string",
+        "description": "Channel to create draft in"
+      },
+      "message": {
+        "type": "string",
+        "description": "The message content in standard markdown"
+      },
+      "thread_ts": {
+        "type": "string",
+        "description": "Timestamp of the parent message to create a draft reply in a thread"
+      }
+    },
+    "required": [
+      "channel_id",
+      "message"
+    ]
+  },
+  "plugin": "slack",
+  "marketplace": "claude-plugins-official"
+}

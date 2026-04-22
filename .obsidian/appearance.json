@@ -1,0 +1,8 @@
+{
+  "accentColor": "#ffffff",
+  "theme": "obsidian",
+  "enabledCssSnippets": [
+    "roygbiv-smtwtfs",
+    "custom-admonitions.acaba3"
+  ]
+}
