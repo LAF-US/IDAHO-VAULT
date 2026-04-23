@@ -85,15 +85,15 @@ Opening and benchmarking protocol for vaulted agentic instances. Current working
 
 ### AWAKEN v1.0
 
-Minimal awakening for vault entities. Adopted 2026-04-22.
+Minimal awakening for vault entities. Part of A pair (ARISE + AWAKEN). Adopted 2026-04-22.
 
 ### ORIENT v1.0
 
 Minimal orientation for vault entities. Adopted 2026-04-22.
 
-### ARISE v(0.0)
+### ARISE v0.1
 
-Minimal graduation for vault entities. Awaiting full adoption.
+Minimal emergence from void for vault entities. Part of A pair (ARISE + AWAKEN). Draft 2026-04-22.
 
 ### CONTEXT v(0.0)
 
