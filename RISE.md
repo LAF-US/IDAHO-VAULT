@@ -1,7 +1,7 @@
 ---
 version: v1.0
-adopted: 2026-04-22
-status: adopted
+approved: 2026-04-22
+status: approved
 related:
   - '2026-04-22'
   - CONSTITUTION
@@ -13,7 +13,7 @@ authority: LOGAN
 ---
 # RISE v1.0 — Graduation Protocol
 
-*Adopted 2026-04-22. Part of the R pair (RISE + REPORT).*
+*Approved 2026-04-22. Part of the R pair (RISE + REPORT). Pending formal ratification.*
 
 ---
 

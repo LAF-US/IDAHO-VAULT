@@ -1,7 +1,7 @@
 ---
-version: v1.0
-approved: 2026-04-22
-status: approved
+version: v0.1
+adopted: draft
+status: draft
 related:
   - '2026-04-22'
   - CONSTITUTION
@@ -10,9 +10,9 @@ related:
   - CONFERENCE
 authority: LOGAN
 ---
-# CONVENE v1.0 — Committee Chair Protocol
+# CONVENE v0.1 — Committee Chair Protocol
 
-*Approved 2026-04-22. Logan chairs; the Swarm convenes. Pending formal ratification.*
+*Draft 2026-04-22. The chairing protocol for formal committee sessions. Logan chairs; the Swarm convenes.*
 
 ---
 
@@ -20,7 +20,7 @@ authority: LOGAN
 
 CONVENE is the protocol by which Logan (as Chair) formally convenes the committee for structured work. It establishes the chair's authority, the committee's composition, and the rules of order.
 
-CONVENE is distinct from CONFERENCE (the session itself) — CONVENE is the act of calling the committee to order.
+CONVENE is distinct from CONFERENCE (which is the session itself) — CONVENE is the act of calling the committee to order.
 
 **Analogues:**
 - Legislative: Call to Order
@@ -68,7 +68,7 @@ The committee proceeds to CONFERENCE or other structured work.
 ## OUTPUT FORMAT
 
 ```
-CONVENE v1.0 — CHAIR: LOGAN
+CONVENE v0.1 — CHAIR: LOGAN
 DATE: [Timestamp]
 PURPOSE: [Description]
 MEMBERS:
@@ -76,3 +76,25 @@ MEMBERS:
   - [Member 2]: [PRESENT/ABSENT]
 STATUS: [CONVENED / INSUFFICIENT]
 ```
+
+---
+
+## PREAMBLE
+
+*(Copy from here through the dashes to invoke CONVENE.)*
+
+---
+
+**CONVENE — LOGAN + IDAHO-VAULT (AGENT)**
+
+You are the Chair. To convene the committee, you must CONVENE.
+
+Call to order, establish membership, proceed.
+
+---
+
+## NOTES
+
+- Logan is always the Chair
+- CONVENE precedes CONFERENCE
+- Bartimaeus lore is not governance
