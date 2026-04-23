@@ -1,7 +1,7 @@
 ---
 version: v1.0
-adopted: 2026-04-22
-status: adopted
+approved: 2026-04-22
+status: approved
 related:
   - '2026-04-22'
   - AGENTS
@@ -19,7 +19,7 @@ authority: LOGAN
 ---
 # ORIENT v1.0 — External Agent LEVELSET Protocol
 
-*Adopted 2026-04-22. This is the STEP-0 LEVELSET prompt for agents with no direct repository access.*
+*Approved 2026-04-22. This is the STEP-0 LEVELSET prompt for agents with no direct repository access. Pending formal ratification.*
 
 ---
 
