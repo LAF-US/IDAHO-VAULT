@@ -32,5 +32,6 @@
   "taskbone-ocr-plugin",
   "tipa-support",
   "beautiful-contact-cards",
-  "phone-to-roam-to-obsidian"
+  "phone-to-roam-to-obsidian",
+  "nostr-writer"
 ]
