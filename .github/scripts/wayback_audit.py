@@ -39,6 +39,18 @@ UA = "IDAHO-VAULT/1.0 (Idaho Reports journalism archive; github.com/loganfinney2
 DEAD_STATUSES = {400, 403, 404, 410, 451, 500, 502, 503, 504}
 
 
+def build_frontmatter(title: str, date_str: str) -> list[str]:
+    return [
+        "---",
+        f"title: {title}",
+        f"updated: {date_str}",
+        "status: draft",
+        "authority: github-actions",
+        "---",
+        "",
+    ]
+
+
 def head_request(url: str) -> int | None:
     try:
         req = urllib.request.Request(url, method="HEAD", headers={"User-Agent": UA})
@@ -216,7 +228,7 @@ def main():
     repo***REMOVED***path = ADMIN_DIR / f"wayback-audit-{date_str}.md"
     patches_path = ADMIN_DIR / f"wayback-patches-{date_str}.md"
 
-    repo***REMOVED***lines = [
+    repo***REMOVED***lines = build_frontmatter(f"Wayback Audit — {date_str}", date_str) + [
         f"# Wayback Audit — {date_str}", "",
         f"Scanned {total_urls} notes with URL fields.", "",
         "| Status | Count |", "|---|---|",
@@ -270,7 +282,7 @@ def main():
     print(f"\nReport written to {repo***REMOVED***path}")
 
     if patches:
-        patch_lines = [
+        patch_lines = build_frontmatter(f"Wayback Patches — {date_str}", date_str) + [
             f"# Wayback Patches — {date_str}", "",
             "Proposed `wayback:` frontmatter additions for notes with dead URLs.",
             "Insert the `wayback:` line directly after the `URL:` field.", "",

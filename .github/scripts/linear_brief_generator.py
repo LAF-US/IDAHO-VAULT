@@ -141,8 +141,9 @@ def build_frontmatter(payload: dict, date_str: str) -> str:
     lines = [
         "---",
         f"title: \"BRIEF — {title}\"",
+        f"updated: {date_str}",
+        "authority: github-actions",
         f"linear_id: \"{linear_id}\"",
-        f"date: {date_str}",
         "status: draft",
         "type: brief",
         "source: Linear",

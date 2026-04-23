@@ -193,7 +193,7 @@ class DailyRolloverTest(unittest.TestCase):
             today_text = today_file.read_text(encoding="utf-8")
             todo_text = todo_file.read_text(encoding="utf-8")
 
-            self.assertIn("cssclasses:\n  - roygbiv-wed", today_text)
+            self.assertIn("cssclasses:\n  - roygbiv-thu", today_text)
             self.assertEqual(today_text.count("FIX DAILY NOTE SYNCING/CARRYFORWARD"), 1)
             self.assertNotIn("fix daily note syncing / carryforward", today_text)
             self.assertIn("FMLA PAPERWORK", today_text)
