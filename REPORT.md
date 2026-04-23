@@ -13,7 +13,7 @@ authority: LOGAN
 ---
 # REPORT v1.0 — Reporting Protocol
 
-*Adopted 2026-04-22. Inspired by legislative committee reporting procedure and Mason's Manual of Legislative Procedure.*
+*Adopted 2026-04-22. Part of the R pair (RISE + REPORT).*
 
 ---
 
