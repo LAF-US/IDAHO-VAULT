@@ -16,6 +16,13 @@ HIGH_RISK_PREFIXES = (
     ".github/scripts/",
 )
 
+PROBE_PREFIXES = (
+    ".github/workflows/probe-",
+    ".github/workflows/example-",
+    ".github/scripts/probe-",
+    ".github/scripts/example-",
+)
+
 HIGH_RISK_EXACT = {
     "AGENTS.md",
     "CLAUDE.md",
@@ -51,6 +58,9 @@ def classify(path: str) -> str:
     for prefix in HIGH_RISK_PREFIXES:
         if path.startswith(prefix):
             return "high"
+    for prefix in PROBE_PREFIXES:
+        if path.startswith(prefix):
+            return "low"
     for prefix in LOW_RISK_PREFIXES:
         if path.startswith(prefix):
             return "low"

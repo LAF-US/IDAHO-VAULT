@@ -31,11 +31,11 @@ from datetime import datetime, timezone
 APPLY_RE = re.compile(r"@copilot\b[\s\S]*?\bapply changes\b", re.IGNORECASE)
 DEFAULT_GRACE_MINUTES = 30
 
-DEFAULT_REVIEW_REQUIRED_LABEL = "review-required"
-DEFAULT_THREAD_LABEL = "review-threads-open"
-DEFAULT_PENDING_LABEL = "copilot-apply-pending"
-DEFAULT_REVIEW_PENDING_LABEL = "agent-review-pending"
-DEFAULT_AUTO_MERGE_LABEL = "auto-merge"
+DEFAULT_REVIEW_REQUIRED_LABEL = "review/required"
+DEFAULT_THREAD_LABEL = "review/threads-open"
+DEFAULT_PENDING_LABEL = "merge/copilot-apply-pending"
+DEFAULT_REVIEW_PENDING_LABEL = "review/pending"
+DEFAULT_AUTO_MERGE_LABEL = "merge/auto"
 RISK_LOW_LABEL = "risk/low"
 RISK_HIGH_LABEL = "risk/high"
 AUTO_MERGE_AUTHZ_FRAGMENT = (
