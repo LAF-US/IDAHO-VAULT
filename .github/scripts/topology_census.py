@@ -654,10 +654,23 @@ def _render_citations(citations: list[dict[str, object]]) -> list[str]:
     ]
 
 
+def _frontmatter(title: str, updated: str) -> list[str]:
+    return [
+        "---",
+        f"title: {title}",
+        f"updated: {updated}",
+        "status: draft",
+        "authority: github-actions",
+        "---",
+        "",
+    ]
+
+
 def render_scope_markdown(report: dict[str, object]) -> str:
     scope = report["scope"]
     summary = report["summary"]
-    lines = [
+    updated = report["generated_at"][:10]
+    lines = _frontmatter(f"Topology Census — {scope}", updated) + [
         f"# Topology Census — {scope}",
         "",
         f"- Generated: `{report['generated_at']}`",
@@ -771,7 +784,8 @@ def _artifact_paths(output_dir: Path, scope: str, run_id: str) -> tuple[Path, Pa
 
 
 def render_index_markdown(run_id: str, generated: list[dict[str, str]]) -> str:
-    lines = [
+    updated = run_id[:10]
+    lines = _frontmatter(f"Topology Census Index — {run_id}", updated) + [
         f"# Topology Census Index — {run_id}",
         "",
         "## Generated Artifacts",
