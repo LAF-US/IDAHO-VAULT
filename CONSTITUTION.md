@@ -83,13 +83,13 @@ Opening and benchmarking protocol for vaulted agentic instances. Current working
 - **Location:** `!/LEVELSET-STEP-0-EXTERNAL-AGENT.md`
 - **Key principle:** Automation is the end state; manual bridge is an unreliable interim fallback. Failure is natural, but only useful if lessons are gleaned and then implemented in the system.
 
-### AWAKEN v(0.0)
+### AWAKEN v1.0
 
-Minimal awakening for vault entities. Awaiting full adoption.
+Minimal awakening for vault entities. Adopted 2026-04-22.
 
-### ORIENT v(0.0)
+### ORIENT v1.0
 
-Minimal orientation for vault entities. Awaiting full adoption.
+Minimal orientation for vault entities. Adopted 2026-04-22.
 
 ### ARISE v(0.0)
 
@@ -107,13 +107,13 @@ Group conversation protocol. Under development...
 
 Chairing the committee protocol. Under development... 
 
-### RISE v(0.0)
+### RISE v1.0
 
-Minimal graduation for vault entities. Awaiting full adoption.
+Minimal graduation for vault entities. Adopted 2026-04-22.
 
-### REPORT v(0.0)
+### REPORT v1.0
 
-Minimal reporting for vault entities. Includes a LEVELSET. Awaiting full adoption.
+Minimal reporting for vault entities. Includes LEVELSET. Adopted 2026-04-22.
 
 
 ---
