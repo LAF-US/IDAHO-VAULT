@@ -38,6 +38,10 @@ DEFAULT_REVIEW_PENDING_LABEL = "agent-review-pending"
 DEFAULT_AUTO_MERGE_LABEL = "auto-merge"
 RISK_LOW_LABEL = "risk/low"
 RISK_HIGH_LABEL = "risk/high"
+AUTO_MERGE_AUTHZ_FRAGMENT = (
+    "Pull request User is not authorized for this protected branch "
+    "(enablePullRequestAutoMerge)"
+)
 
 LABEL_SPECS: dict[str, tuple[str, str]] = {
     DEFAULT_AUTO_MERGE_LABEL: (
@@ -80,6 +84,29 @@ def _run(cmd: list[str], check: bool = True) -> subprocess.CompletedProcess[str]
             f"stderr:\n{result.stderr}"
         )
     return result
+
+
+def _arm_auto_merge(pr_number: int) -> tuple[bool, str | None]:
+    try:
+        _run(
+            [
+                "gh",
+                "pr",
+                "merge",
+                str(pr_number),
+                "--squash",
+                "--delete-branch",
+                "--auto",
+            ]
+        )
+    except RuntimeError as exc:
+        if AUTO_MERGE_AUTHZ_FRAGMENT not in str(exc):
+            raise
+        return (
+            False,
+            "GitHub Actions is not authorized to enable auto-merge on the protected base branch.",
+        )
+    return True, None
 
 
 def _graphql(query: str, **variables: object) -> dict:
@@ -426,6 +453,7 @@ def _build_reconciliation_report(
     evaluated: list[dict[str, object]] = []
     promoted: list[int] = []
     rearmed: list[int] = []
+    auto_merge_authorization_blocked: list[int] = []
     total_resolved_outdated_threads = 0
 
     for pr_number in _list_open_pr_numbers(owner, repo):
@@ -445,6 +473,7 @@ def _build_reconciliation_report(
         actions = apply_review_state_projection(pr_number, state)
         current_labels = set(state["labels"])
         auto_merge_enabled = bool((pr.get("autoMergeRequest") or {}).get("enabledAt"))
+        arm_error = None
         if (
             state["eligible_for_auto_merge"]
             and not bool(state["merge_blocked"])
@@ -469,18 +498,11 @@ def _build_reconciliation_report(
             and not bool(state["merge_blocked"])
             and not auto_merge_enabled
         ):
-            _run(
-                [
-                    "gh",
-                    "pr",
-                    "merge",
-                    str(pr_number),
-                    "--squash",
-                    "--delete-branch",
-                    "--auto",
-                ]
-            )
-            rearmed.append(pr_number)
+            auto_merge_enabled, arm_error = _arm_auto_merge(pr_number)
+            if auto_merge_enabled:
+                rearmed.append(pr_number)
+            else:
+                auto_merge_authorization_blocked.append(pr_number)
 
         evaluated.append(
             {
@@ -491,6 +513,7 @@ def _build_reconciliation_report(
                 "blocking_reasons": state["blocking_reasons"],
                 "resolved_outdated_threads": resolved_count,
                 "auto_merge_enabled": auto_merge_enabled,
+                "auto_merge_arm_error": arm_error,
                 "actions": actions,
             }
         )
@@ -499,6 +522,7 @@ def _build_reconciliation_report(
         "checked_prs": len(evaluated),
         "promoted_prs": promoted,
         "rearmed_prs": rearmed,
+        "auto_merge_authorization_blocked": auto_merge_authorization_blocked,
         "resolved_outdated_threads": total_resolved_outdated_threads,
         "evaluated": evaluated,
     }
@@ -678,28 +702,19 @@ def enable_auto_merge(args: argparse.Namespace) -> int:
     labels = set(state["labels"])
 
     enabled = False
+    arm_error = None
     if (
         DEFAULT_AUTO_MERGE_LABEL in labels
         and bool(state["eligible_for_auto_merge"])
         and not bool(state["merge_blocked"])
     ):
-        _run(
-            [
-                "gh",
-                "pr",
-                "merge",
-                str(args.pr_number),
-                "--squash",
-                "--delete-branch",
-                "--auto",
-            ]
-        )
-        enabled = True
+        enabled, arm_error = _arm_auto_merge(args.pr_number)
 
     print(
         json.dumps(
             {
                 "enabled": enabled,
+                "arm_error": arm_error,
                 "merge_blocked": state["merge_blocked"],
                 "blocking_reasons": state["blocking_reasons"],
                 "label_actions": label_actions,

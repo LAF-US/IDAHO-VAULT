@@ -371,6 +371,21 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         disable_auto_merge.assert_called_once_with(74)
         run.assert_not_called()
 
+    def test_arm_auto_merge_degrades_when_protected_branch_blocks_enablement(self) -> None:
+        error = RuntimeError(
+            "Command failed (1): gh pr merge 289 --squash --delete-branch --auto\n"
+            "stdout:\n\n"
+            "stderr:\n"
+            "GraphQL: Pull request User is not authorized for this protected branch "
+            "(enablePullRequestAutoMerge)\n"
+        )
+
+        with mock.patch.object(review_feedback_loop, "_run", side_effect=error):
+            enabled, arm_error = review_feedback_loop._arm_auto_merge(289)
+
+        self.assertFalse(enabled)
+        self.assertIn("not authorized to enable auto-merge", arm_error)
+
     def test_reconcile_open_prs_repairs_drift_and_rearms_auto_merge(self) -> None:
         args = SimpleNamespace(
             owner="LAF-US",
@@ -401,22 +416,69 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             review_feedback_loop, "_edit_label"
         ) as edit_label, mock.patch.object(
             review_feedback_loop, "_comment"
-        ) as comment, mock.patch.object(review_feedback_loop, "_run") as run:
+        ) as comment, mock.patch.object(
+            review_feedback_loop, "_arm_auto_merge", return_value=(True, None)
+        ) as arm_auto_merge:
             result = review_feedback_loop.reconcile_open_prs(args)
 
         self.assertEqual(result, 0)
         edit_label.assert_called_once_with(88, add="auto-merge")
         comment.assert_called_once()
-        run.assert_called_once_with(
-            [
-                "gh",
-                "pr",
-                "merge",
-                "88",
-                "--squash",
-                "--delete-branch",
-                "--auto",
-            ]
+        arm_auto_merge.assert_called_once_with(88)
+
+    def test_reconcile_open_prs_reports_auth_blocked_auto_merge(self) -> None:
+        args = SimpleNamespace(
+            owner="LAF-US",
+            repo="IDAHO-VAULT",
+            grace_minutes=30,
+        )
+        ready_pr = _pr(
+            number=89,
+            created_at=datetime(2026, 4, 16, 1, 0, tzinfo=timezone.utc),
+            labels=("auto-merge",),
+        )
+
+        with mock.patch.object(review_feedback_loop, "ensure_labels"), mock.patch.object(
+            review_feedback_loop,
+            "_list_open_pr_numbers",
+            return_value=[89],
+        ), mock.patch.object(
+            review_feedback_loop,
+            "_fetch_pr",
+            side_effect=[ready_pr],
+        ), mock.patch.object(
+            review_feedback_loop,
+            "_resolve_outdated_advisory_threads",
+            return_value=0,
+        ), mock.patch.object(
+            review_feedback_loop,
+            "evaluate_review_state",
+            return_value={
+                "labels": {"auto-merge"},
+                "low_risk": True,
+                "eligible_for_auto_merge": True,
+                "merge_blocked": False,
+                "blocking_reasons": [],
+            },
+        ), mock.patch.object(
+            review_feedback_loop, "apply_review_state_projection", return_value=[]
+        ), mock.patch.object(
+            review_feedback_loop, "_arm_auto_merge", return_value=(
+                False,
+                "GitHub Actions is not authorized to enable auto-merge on the protected base branch.",
+            )
+        ):
+            report = review_feedback_loop._build_reconciliation_report(
+                "LAF-US",
+                "IDAHO-VAULT",
+                grace_minutes=30,
+            )
+
+        self.assertEqual(report["rearmed_prs"], [])
+        self.assertEqual(report["auto_merge_authorization_blocked"], [89])
+        self.assertEqual(
+            report["evaluated"][0]["auto_merge_arm_error"],
+            "GitHub Actions is not authorized to enable auto-merge on the protected base branch.",
         )
 
 

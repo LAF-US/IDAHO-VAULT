@@ -33,7 +33,10 @@ jobs:
         startsWith(github.event.pull_request.head.ref, 'perplexity/') ||
         startsWith(github.event.pull_request.head.ref, 'grok/') ||
         startsWith(github.event.pull_request.head.ref, 'bot/') ||
-        startsWith(github.event.pull_request.head.ref, 'serena/')
+        startsWith(github.event.pull_request.head.ref, 'serena/') ||
+        startsWith(github.event.pull_request.head.ref, 'ingest-') ||
+        startsWith(github.event.pull_request.head.ref, 'wayback-audit-') ||
+        startsWith(github.event.pull_request.head.ref, 'topology-census-')
       ))
     runs-on: ubuntu-latest
     permissions:
@@ -57,7 +60,7 @@ jobs:
           STALE_AGE_DAYS: 7
           STALE_BEHIND_COMMITS: 100
         run: |
-          AGENT_PREFIXES="claude codex gemini copilot perplexity grok bot serena"
+          AGENT_BRANCH_PATTERNS="claude/ codex/ gemini/ copilot/ perplexity/ grok/ bot/ serena/ ingest- wayback-audit- topology-census-"
           DELETED=0
           KEPT=0
           DELETED_LIST=""
@@ -99,7 +102,7 @@ jobs:
           echo "Scanning agent branches for pruning..."
           git fetch --prune origin
 
-          for PREFIX in $AGENT_PREFIXES; do
+          for PREFIX in $AGENT_BRANCH_PATTERNS; do
             while IFS= read -r REF; do
               [ -z "$REF" ] && continue
 
@@ -141,7 +144,7 @@ jobs:
                   KEPT=$((KEPT + 1))
                 fi
               fi
-            done < <(git branch -r | grep "origin/${PREFIX}/" | sed 's|.*origin/||' | tr -d ' ')
+            done < <(git branch -r | grep "origin/${PREFIX}" | sed 's|.*origin/||' | tr -d ' ')
           done
 
           echo ""

@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import importlib.util
+import sys
 import types
 import unittest
 from pathlib import Path
@@ -15,6 +16,7 @@ def _load_module(module_name: str, relative_path: str):
     spec = importlib.util.spec_from_file_location(module_name, script_path)
     module = importlib.util.module_from_spec(spec)
     assert spec.loader is not None
+    sys.modules[spec.name] = module
     spec.loader.exec_module(module)
     return module
 
@@ -56,7 +58,7 @@ class HelperScriptsTest(unittest.TestCase):
             [str(check_syntax.REPO_ROOT / file_path) for file_path in check_syntax.FILES_TO_CHECK],
         )
         mock_run.assert_called_once_with(
-            ["python", "-m", "unittest", check_syntax.UNITTEST_TARGET, "-v"],
+            [check_syntax.sys.executable, "-m", "unittest", check_syntax.UNITTEST_TARGET, "-v"],
             cwd=check_syntax.REPO_ROOT,
             capture_output=True,
             text=True,

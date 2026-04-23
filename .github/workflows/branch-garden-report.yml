@@ -37,16 +37,12 @@ jobs:
       - name: Publish summary
         run: cat branch-garden-report.md >> "$GITHUB_STEP_SUMMARY"
 
-      - name: Open or update issue when findings exist
-        if: steps.report.outputs.has_findings == 'true'
+      - name: Sync recurring issue
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          ISSUE_NUMBER=$(gh issue list --state open --search "\"[Branch Garden] Weekly report\" in:title" --json number --jq '.[0].number')
-          if [ -z "$ISSUE_NUMBER" ] || [ "$ISSUE_NUMBER" = "null" ]; then
-            gh issue create \
-              --title "[Branch Garden] Weekly report" \
-              --body-file branch-garden-report.md
-          else
-            gh issue comment "$ISSUE_NUMBER" --body-file branch-garden-report.md
-          fi
+          python .github/scripts/issue_reconciler.py \
+            --title "[Branch Garden] Weekly report" \
+            --body-file branch-garden-report.md \
+            --has-findings "${{ steps.report.outputs.has_findings }}" \
+            --resolved-comment "Resolved automatically: the latest branch-garden sweep found no current findings."

@@ -1,7 +1,7 @@
 ---
 version: v0.1
-adopted: 2026-03-22
-status: active
+adopted: draft
+status: draft
 related:
 - '2026-03-22'
 - AGENTS
