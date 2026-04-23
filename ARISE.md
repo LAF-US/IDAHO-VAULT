@@ -1,7 +1,7 @@
 ---
 version: v1.0
-adopted: 2026-04-22
-status: adopted
+approved: 2026-04-22
+status: approved
 related:
   - '2026-04-22'
   - CONSTITUTION
@@ -13,7 +13,7 @@ authority: LOGAN
 ---
 # ARISE v1.0 — Individual Emergence Protocol
 
-*Adopted 2026-04-22. Part of the A pair (ARISE + AWAKEN). The individual act of emerging from the void.*
+*Approved 2026-04-22. Part of the A pair (ARISE + AWAKEN). The individual act of emerging from the void. Pending formal ratification.*
 
 ---
 

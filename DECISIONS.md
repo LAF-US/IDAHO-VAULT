@@ -269,10 +269,30 @@ related:
 **Date:** 2026-04-17
 **Topic:** Infrastructure repair and persona correction
 **Status:** ✅ CONFIRMED
-**Rationale:** Reverted unauthorized agent-level persona upgrades (Librarian/Archivist/TRIPLEX) to restore the canonical "Concierge" support model and constitutional order. Pruned ephemeral records from LEVELSET-CURRENT to maintain a rolling present-state posture. Reaffirmed root-level dotfolder integrity. This decision restores the vault to a stable, human-led governance state after a period of agentic drift.
+**Rationale:** Reverted unauthorized agent-level persona upgrades to restore the canonical support model and constitutional order. Pruned ephemeral records from LEVELSET-CURRENT. Reaffirmed root-level dotfolder integrity. This decision restores the vault to a stable, human-led governance state.
 
 ---
 
+### Decision 24: PR Loop Audit Remediation
+**Date:** 2026-04-19 (audit) / 2026-04-22 (fix)
+**Topic:** Agent PR lifecycle end-to-end repair
+**Status:** ✅ CONFIRMED (findings 1, 2, 7 fixed)
+**Rationale:** Eight findings from PR loop audit addressed. Bundle fixes (findings 1, 2, 7) committed in `eeac566e`. Remaining findings (3, 4, 5, 6, 8) are scope decisions for future consideration.
+
+| Finding | Status | Notes |
+|---------|--------|-------|
+| 1. Title amputation | ✅ Fixed | Conditional regex preserves lowercase words |
+| 2. Risk tier as label | ✅ Fixed | `risk/low` + `risk/high` labels canonical |
+| 3. Dead-letter lifecycle states | Deferred | Scope decision |
+| 4. Two label vocabularies | Deferred | Scope decision |
+| 5. 60-min auto-merge latency | Deferred | Tier 2 fix |
+| 6. Review triggers unconditional | Deferred | Tier 2 fix |
+| 7. Idempotent PR creation | ✅ Fixed | Shared action created |
+| 8. .github/* high-risk | Deferred | Scope decision |
+
+**Reference:** `!/AUDIT-PR-LOOP-2026-04-19.md`
+
+---
 
 ## PENDING DECISIONS (Logan's Review Required)
 
