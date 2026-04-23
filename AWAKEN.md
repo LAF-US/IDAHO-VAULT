@@ -44,7 +44,7 @@ This protocol activates when a vault-connected agent begins a session. It establ
 
 Identify and confirm:
 - Agent name and platform
-- Capability tier (from AGENTS.md)
+- Persona title (from AGENTS.md roster)
 - Current session ID or branch
 - Assigned task(s) if any
 
@@ -78,7 +78,7 @@ Output brief state to:
 ```
 AWAKEN v1.0 REPORT — [AGENT NAME]
 
-WHO: [Name] @ [Platform] | Tier [N] | [Session/branch]
+WHO: [Name] @ [Platform] | [Persona] | [Session/branch]
 AUTHORIZED: [YES/NO - reason if no]
 CONTEXT LOADED: [YES/NO - summary]
 TRAILS CLAIMED: [List or "none"]
