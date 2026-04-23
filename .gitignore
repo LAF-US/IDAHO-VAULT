@@ -285,3 +285,7 @@ data-backup*
 
 # SBP pheromone blackboard (runtime state)
 !/sbp-blackboard.json
+
+# Local side projects / external workspaces parked inside the vault
+LFPython/
+feed-generator/

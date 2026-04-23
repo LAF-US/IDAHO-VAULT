@@ -13,7 +13,7 @@ authority: LOGAN
 ---
 # RISE v1.0 — Graduation Protocol
 
-*Adopted 2026-04-22. Inspired by legislative committee procedure and Mason's Manual of Legislative Procedure.*
+*Adopted 2026-04-22. Part of the R pair (RISE + REPORT).*
 
 ---
 

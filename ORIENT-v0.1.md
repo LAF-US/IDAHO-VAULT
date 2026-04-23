@@ -116,6 +116,6 @@ For Logan: the following files provide the context external agents need. Paste t
 ## NOTES
 
 - This protocol is tool-agnostic. It works for any AI platform (ChatGPT, Gemini, Grok, etc.).
-- External agents operate at **Tier 4: Advisory** — they produce drafts and analysis only. No vault commits.
+- External agents produce drafts and analysis only. No vault commits without Logan approval.
 - Logan relays information between external agents and vault-connected agents (Claude Code, GitHub Copilot).
-- LEVELSET reports from external agents should be captured by Logan and committed to the Nest manually or via a Tier 1 agent.
+- LEVELSET reports from external agents should be captured by Logan and committed to the Nest manually.
