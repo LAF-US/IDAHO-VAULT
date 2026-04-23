@@ -555,12 +555,22 @@ All "direct-write" agents must anchor their external platform state into the vau
 
 The following protocols are adopted as the canonical operational suite for vault-connected agents:
 
+**Protocol Pairs:**
+
+| Pair | Protocols | Function |
+| --- | --- | --- |
+| **A pair** | ARISE → AWAKEN | Individual emergence from void + consciousness |
+| **R pair** | RISE → REPORT | Formal completion + reporting back |
+
+**Protocol Registry:**
+
 | Protocol | Status | Purpose |
 | --- | --- | --- |
+| **ARISE** | v0.1 draft | Individual emergence from void — like being summoned from the Other Place |
 | **AWAKEN** | v1.0 adopted | Agent wake protocol — establishes identity, authorization, context load |
 | **ORIENT** | v1.0 adopted | External agent orientation — for AI agents without direct repo access |
-| **RISE** | v1.0 adopted | Graduation protocol — formal task/role completion with legislative procedure |
-| **REPORT** | v1.0 adopted | Reporting protocol — includes LEVELSET, produces durable record |
+| **RISE** | v1.0 adopted | Individual graduation — formal task/role completion |
+| **REPORT** | v1.0 adopted | Group completion — reporting findings to assigning body |
 | **LEVELSET** | v1.0 stable | Six-part status report: WHO, WHAT YOU KNOW, WHAT YOU'VE DONE, UNRESOLVED, WHAT YOU NEED, COLLISION RISKS |
 
 **Provenance Rule:** Draft versions (`-v0.1.md`) preserve the logic evolution and decision trail. Adopted versions (`{PROTOCOL}.md`) are the canonical reference.
@@ -569,6 +579,7 @@ The following protocols are adopted as the canonical operational suite for vault
 - Persona/role names replace numbered tiers (see `!/AGENTS.md` for current roster)
 - The Nest (`!`) is collective space; dotfolders (`.*`) are individual agent space
 - External agents produce drafts/analysis only — no vault commits without Logan approval
+- Bartimaeus is lore, not governance
 
 ---
 

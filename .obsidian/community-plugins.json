@@ -33,5 +33,11 @@
   "tipa-support",
   "beautiful-contact-cards",
   "phone-to-roam-to-obsidian",
-  "nostr-writer"
+  "nostr-writer",
+  "dataview-properties",
+  "moviegrabber",
+  "todoist-context-bridge",
+  "move-cursor-on-startup",
+  "dataview-autocompletion",
+  "desk"
 ]
