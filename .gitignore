@@ -289,3 +289,4 @@ data-backup*
 # Local side projects / external workspaces parked inside the vault
 LFPython/
 feed-generator/
+.codex/vendor_imports/skills/
