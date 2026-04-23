@@ -85,35 +85,35 @@ Opening and benchmarking protocol for vaulted agentic instances. Current working
 
 ### AWAKEN v1.0
 
-Minimal awakening for vault entities. Part of A pair (ARISE + AWAKEN). Adopted 2026-04-22.
+Minimal awakening for vault entities. Part of A pair (ARISE + AWAKEN). Approved 2026-04-22.
 
 ### ORIENT v1.0
 
-Minimal orientation for vault entities. Adopted 2026-04-22.
+Minimal orientation for vault entities. Approved 2026-04-22.
 
 ### ARISE v0.1
 
-Minimal emergence from void for vault entities. Part of A pair (ARISE + AWAKEN). Draft 2026-04-22.
+Individual emergence from void. Part of A pair (ARISE + AWAKEN). Draft 2026-04-22.
 
-### CONTEXT v(0.0)
+### CONTEXT v1.0
 
-Under development... 
+Field context protocol. Integrates with stigmergy field. Approved 2026-04-22.
 
-### CONFERENCE v(0.0)
+### CONFERENCE v1.0
 
-Group conversation protocol. Under development... 
+Multi-agent synchronized work session. Approved 2026-04-22.
 
-### CONVENE v(0.0)
+### CONVENE v1.0
 
-Chairing the committee protocol. Under development... 
+Committee chair protocol. Approved 2026-04-22.
 
 ### RISE v1.0
 
-Minimal graduation for vault entities. Adopted 2026-04-22.
+Individual graduation. Part of R pair (RISE + REPORT). Approved 2026-04-22.
 
 ### REPORT v1.0
 
-Minimal reporting for vault entities. Includes LEVELSET. Adopted 2026-04-22.
+Minimal reporting for vault entities. Includes LEVELSET. Approved 2026-04-22.
 
 
 ---
