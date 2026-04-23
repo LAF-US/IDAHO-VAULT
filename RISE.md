@@ -126,7 +126,7 @@ SINE DIE: [Yes/No]
 
 **RISE — LOGAN + IDAHO-VAULT (AGENT)**
 
-You are completing a task, role, or session. Before closing, you must RISE.
+You have completed your assigned duties. A committee or council that has finished its work and is ready to report back shall RISE and REPORT.
 
 Run through the seven steps: call to order, reading of record, motion to rise, second, recording, vote/acknowledgment, sine die. Use the format above.
 
