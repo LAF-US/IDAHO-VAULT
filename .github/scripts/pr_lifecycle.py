@@ -12,14 +12,20 @@ import subprocess
 
 
 LIFECYCLE_LABELS: dict[str, tuple[str, str]] = {
-    "live": ("0E8A16", "Lifecycle state: live"),
     "staged": ("1D76DB", "Lifecycle state: staged"),
     "merged": ("6F42C1", "Lifecycle state: merged"),
-    "superseded": ("8250DF", "Lifecycle state: superseded"),
-    "archived": ("8B949E", "Lifecycle state: archived"),
     "abandoned": ("D1242F", "Lifecycle state: abandoned"),
-    "dormant": ("C69026", "Lifecycle state: dormant"),
-    "reactivated": ("0A7F6F", "Lifecycle state: reactivated"),
+}
+
+LIFECYCLE_DOCUMENTED: set[str] = {
+    "staged",
+    "merged",
+    "abandoned",
+    "live",
+    "superseded",
+    "dormant",
+    "reactivated",
+    "archived",
 }
 
 
@@ -81,6 +87,33 @@ def set_state(pr_number: int, state: str) -> None:
         ],
         check=False,
     )
+
+
+LIFECYCLE_HUMAN_ONLY: set[str] = {
+    "live",
+    "superseded",
+    "dormant",
+    "reactivated",
+    "archived",
+}
+
+
+def document_states() -> None:
+    for state in LIFECYCLE_HUMAN_ONLY:
+        _run(
+            [
+                "gh",
+                "label",
+                "create",
+                f"lifecycle/{state}",
+                "--color",
+                "8B949E",
+                "--description",
+                f"[Human-only] Deprecated lifecycle state: {state}",
+                "--force",
+            ],
+            check=False,
+        )
 
 
 def build_parser() -> argparse.ArgumentParser:
