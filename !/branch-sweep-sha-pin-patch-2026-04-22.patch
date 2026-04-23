@@ -1,0 +1,591 @@
+From a59bc2466ae0cdd6a7317f51aa0f4a3fe5caa796 Mon Sep 17 00:00:00 2001
+From: Logan Finney <loganfinney27@gmail.com>
+Date: Fri, 17 Apr 2026 15:10:42 -0600
+Subject: [PATCH] ci: pin all GitHub Actions references to full commit SHAs
+
+Replaces tag-based action pins (@v4, @v6, etc.) with immutable commit
+SHA pins across all 27 workflow files and the setup-vault composite
+action. Enables the "Require actions to be pinned to full-length commit
+SHA" org policy to be activated.
+
+SHAs resolved 2026-04-17 from current tag heads.
+
+Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>
+---
+ .github/actions/setup-vault/action.yml        |  2 +-
+ .../workflows/1password-secret-template.yml   |  4 +-
+ .github/workflows/agent-review-gate.yml       |  2 +-
+ .github/workflows/auto-merge.yml              |  2 +-
+ .github/workflows/auto-pr.yml                 |  2 +-
+ .github/workflows/branch-cleanup.yml          |  2 +-
+ .github/workflows/branch-garden-report.yml    |  4 +-
+ .../workflows/budget-tracker-csv-export.yml   |  8 ++--
+ .github/workflows/check-dotfolder-anchors.yml |  4 +-
+ .github/workflows/check-portable-paths.yml    |  2 +-
+ .github/workflows/daily-rollover.yml          |  4 +-
+ .github/workflows/dependabot-rhythm.yml       |  2 +-
+ .github/workflows/idaho-leg-scraper.yml       |  2 +-
+ .github/workflows/janitor-sweep.yml           |  4 +-
+ .github/workflows/large-file-watchdog.yml     |  4 +-
+ .github/workflows/levelset-closure-notify.yml |  2 +-
+ .github/workflows/linear-brief.yml            |  2 +-
+ .github/workflows/linear-pr-sync.yml          |  4 +-
+ .github/workflows/linear-webhook.yml          |  2 +-
+ .github/workflows/review-feedback-loop.yml    |  4 +-
+ .github/workflows/review-response.yml         |  2 +-
+ .github/workflows/sort-audit.yml              | 24 ++++++------
+ .github/workflows/stale-bot-prs.yml           |  4 +-
+ .github/workflows/vault-courier.yml           |  8 ++--
+ .github/workflows/vault-ingest.yml            |  2 +-
+ .github/workflows/vault-propose-moves.yml     | 37 ++-----------------
+ .github/workflows/wayback-audit.yml           |  2 +-
+ .github/workflows/wayback-preserve.yml        |  2 +-
+ 28 files changed, 57 insertions(+), 86 deletions(-)
+
+diff --git a/.github/actions/setup-vault/action.yml b/.github/actions/setup-vault/action.yml
+index 4ba063cc..d1dedc19 100644
+--- a/.github/actions/setup-vault/action.yml
++++ b/.github/actions/setup-vault/action.yml
+@@ -29,7 +29,7 @@ runs:
+ 
+     - name: Set up Python
+       if: inputs.python-version != ''
+-      uses: actions/setup-python@v5
++      uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+       with:
+         python-version: ${{ inputs.python-version }}
+         cache: ${{ inputs.requirements-file != '' && 'pip' || '' }}
+diff --git a/.github/workflows/1password-secret-template.yml b/.github/workflows/1password-secret-template.yml
+index 72b12095..27901f2b 100644
+--- a/.github/workflows/1password-secret-template.yml
++++ b/.github/workflows/1password-secret-template.yml
+@@ -13,11 +13,11 @@ jobs:
+       OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
+ 
+     steps:
+-      - uses: actions/checkout@v4
++      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+ 
+       - name: Load Secrets from 1Password
+         if: env.OP_SERVICE_ACCOUNT_TOKEN != ''
+-        uses: 1password/load-secrets-action@v4
++        uses: 1password/load-secrets-action@92467eb28f72e8255933372f1e0707c567ce2259 # v4
+         with:
+           export-env: true
+         env:
+diff --git a/.github/workflows/agent-review-gate.yml b/.github/workflows/agent-review-gate.yml
+index 482b7aff..4e3c5964 100644
+--- a/.github/workflows/agent-review-gate.yml
++++ b/.github/workflows/agent-review-gate.yml
+@@ -23,7 +23,7 @@ jobs:
+     runs-on: ubuntu-latest
+     steps:
+       - name: Checkout trusted workflow surfaces
+-        uses: actions/checkout@v4
++        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+         with:
+           ref: ${{ github.event.repository.default_branch }}
+ 
+diff --git a/.github/workflows/auto-merge.yml b/.github/workflows/auto-merge.yml
+index b1302137..f38771d9 100644
+--- a/.github/workflows/auto-merge.yml
++++ b/.github/workflows/auto-merge.yml
+@@ -15,7 +15,7 @@ jobs:
+     runs-on: ubuntu-latest
+     steps:
+       - name: Checkout trusted workflow surfaces
+-        uses: actions/checkout@v4
++        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+         with:
+           ref: ${{ github.event.repository.default_branch }}
+ 
+diff --git a/.github/workflows/auto-pr.yml b/.github/workflows/auto-pr.yml
+index 17acab95..1af16c4b 100644
+--- a/.github/workflows/auto-pr.yml
++++ b/.github/workflows/auto-pr.yml
+@@ -31,7 +31,7 @@ jobs:
+ 
+     steps:
+       - name: Checkout repo
+-        uses: actions/checkout@v4
++        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+         with:
+           fetch-depth: 0
+           ref: ${{ github.event_name == 'create' && github.event.ref || github.ref_name }}
+diff --git a/.github/workflows/branch-cleanup.yml b/.github/workflows/branch-cleanup.yml
+index 954ee3f9..bbeb39d9 100644
+--- a/.github/workflows/branch-cleanup.yml
++++ b/.github/workflows/branch-cleanup.yml
+@@ -42,7 +42,7 @@ jobs:
+ 
+     steps:
+       - name: Checkout repo
+-        uses: actions/checkout@v4
++        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+         with:
+           fetch-depth: 0
+ 
+diff --git a/.github/workflows/branch-garden-report.yml b/.github/workflows/branch-garden-report.yml
+index 445101a6..3e94e95a 100644
+--- a/.github/workflows/branch-garden-report.yml
++++ b/.github/workflows/branch-garden-report.yml
+@@ -15,7 +15,7 @@ jobs:
+     runs-on: ubuntu-latest
+     steps:
+       - name: Checkout repo
+-        uses: actions/checkout@v4
++        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+         with:
+           fetch-depth: 0
+ 
+@@ -23,7 +23,7 @@ jobs:
+         run: git fetch --prune origin
+ 
+       - name: Set up Python
+-        uses: actions/setup-python@v6
++        uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6
+         with:
+           python-version: '3.11'
+ 
+diff --git a/.github/workflows/budget-tracker-csv-export.yml b/.github/workflows/budget-tracker-csv-export.yml
+index cefb19da..f63628ee 100644
+--- a/.github/workflows/budget-tracker-csv-export.yml
++++ b/.github/workflows/budget-tracker-csv-export.yml
+@@ -30,12 +30,12 @@ jobs:
+ 
+     steps:
+       - name: Checkout vault
+-        uses: actions/checkout@v4
++        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+         with:
+           fetch-depth: 1
+ 
+       - name: Set up Python
+-        uses: actions/setup-python@v6
++        uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6
+         with:
+           python-version: "3.11"
+           cache: pip
+@@ -77,7 +77,7 @@ jobs:
+ 
+       - name: Upload CSV as artifact
+         if: steps.export.outputs.expo***REMOVED***ok == 'true'
+-        uses: actions/upload-artifact@v7
++        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
+         with:
+           name: minidata-csv-${{ steps.export.outputs.csv_file }}
+           path: ${{ steps.export.outputs.csv_file }}
+@@ -85,7 +85,7 @@ jobs:
+ 
+       - name: Email CSV file
+         if: steps.export.outputs.expo***REMOVED***ok == 'true'
+-        uses: dawidd6/action-send-mail@v16
++        uses: dawidd6/action-send-mail@d38f3f7cd391cdebfe0d38efc3998b935e951c4f # v16
+         with:
+           server_address: smtp.gmail.com
+           server_port: 587
+diff --git a/.github/workflows/check-dotfolder-anchors.yml b/.github/workflows/check-dotfolder-anchors.yml
+index 1662f930..bdef7d30 100644
+--- a/.github/workflows/check-dotfolder-anchors.yml
++++ b/.github/workflows/check-dotfolder-anchors.yml
+@@ -10,10 +10,10 @@ jobs:
+     runs-on: ubuntu-latest
+     steps:
+       - name: Check out repository
+-        uses: actions/checkout@v4
++        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+ 
+       - name: Set up Python
+-        uses: actions/setup-python@v6
++        uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6
+         with:
+           python-version: "3.13"
+ 
+diff --git a/.github/workflows/check-portable-paths.yml b/.github/workflows/check-portable-paths.yml
+index 0d77ae16..e20a798b 100644
+--- a/.github/workflows/check-portable-paths.yml
++++ b/.github/workflows/check-portable-paths.yml
+@@ -9,7 +9,7 @@ jobs:
+   check-paths:
+     runs-on: ubuntu-latest
+     steps:
+-      - uses: actions/checkout@v4
++      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+         with:
+           fetch-depth: 0
+ 
+diff --git a/.github/workflows/daily-rollover.yml b/.github/workflows/daily-rollover.yml
+index 448fa226..e53da317 100644
+--- a/.github/workflows/daily-rollover.yml
++++ b/.github/workflows/daily-rollover.yml
+@@ -29,7 +29,7 @@ jobs:
+ 
+     steps:
+       - name: Checkout vault
+-        uses: actions/checkout@v4
++        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+         with:
+           fetch-depth: 1
+ 
+@@ -41,7 +41,7 @@ jobs:
+           git reset --hard HEAD
+ 
+       - name: Set up Python
+-        uses: actions/setup-python@v6
++        uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6
+         with:
+           python-version: '3.11'
+ 
+diff --git a/.github/workflows/dependabot-rhythm.yml b/.github/workflows/dependabot-rhythm.yml
+index aefba85f..a0817487 100644
+--- a/.github/workflows/dependabot-rhythm.yml
++++ b/.github/workflows/dependabot-rhythm.yml
+@@ -15,7 +15,7 @@ jobs:
+     steps:
+       - name: Fetch Dependabot metadata
+         id: metadata
+-        uses: dependabot/fetch-metadata@v3
++        uses: dependabot/fetch-metadata@ffa630c65fa7e0ecfa0625b5ceda64399aea1b36 # v3
+         with:
+           github-token: ${{ secrets.GITHUB_TOKEN }}
+ 
+diff --git a/.github/workflows/idaho-leg-scraper.yml b/.github/workflows/idaho-leg-scraper.yml
+index 34b6315a..3f45f5af 100644
+--- a/.github/workflows/idaho-leg-scraper.yml
++++ b/.github/workflows/idaho-leg-scraper.yml
+@@ -42,7 +42,7 @@ jobs:
+ 
+     steps:
+       - name: Checkout vault
+-        uses: actions/checkout@v4
++        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+         with:
+           fetch-depth: 1
+ 
+diff --git a/.github/workflows/janitor-sweep.yml b/.github/workflows/janitor-sweep.yml
+index 7377713f..120bb410 100644
+--- a/.github/workflows/janitor-sweep.yml
++++ b/.github/workflows/janitor-sweep.yml
+@@ -16,12 +16,12 @@ jobs:
+ 
+     steps:
+       - name: Checkout vault
+-        uses: actions/checkout@v4
++        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+         with:
+           fetch-depth: 1
+ 
+       - name: Set up Python
+-        uses: actions/setup-python@v6
++        uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6
+         with:
+           python-version: '3.11'
+ 
+diff --git a/.github/workflows/large-file-watchdog.yml b/.github/workflows/large-file-watchdog.yml
+index cee097b8..d874f8cc 100644
+--- a/.github/workflows/large-file-watchdog.yml
++++ b/.github/workflows/large-file-watchdog.yml
+@@ -14,10 +14,10 @@ jobs:
+     runs-on: ubuntu-latest
+     steps:
+       - name: Checkout repo
+-        uses: actions/checkout@v4
++        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+ 
+       - name: Set up Python
+-        uses: actions/setup-python@v6
++        uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6
+         with:
+           python-version: '3.11'
+ 
+diff --git a/.github/workflows/levelset-closure-notify.yml b/.github/workflows/levelset-closure-notify.yml
+index 27bf1c17..a543fb5f 100644
+--- a/.github/workflows/levelset-closure-notify.yml
++++ b/.github/workflows/levelset-closure-notify.yml
+@@ -16,7 +16,7 @@ jobs:
+ 
+     steps:
+       - name: Checkout vault
+-        uses: actions/checkout@v4
++        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+         with:
+           fetch-depth: 2
+ 
+diff --git a/.github/workflows/linear-brief.yml b/.github/workflows/linear-brief.yml
+index 9a0010fc..0ee2552e 100644
+--- a/.github/workflows/linear-brief.yml
++++ b/.github/workflows/linear-brief.yml
+@@ -27,7 +27,7 @@ jobs:
+ 
+     steps:
+       - name: Checkout vault
+-        uses: actions/checkout@v4
++        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+ 
+       - name: Setup vault environment
+         uses: ./.github/actions/setup-vault
+diff --git a/.github/workflows/linear-pr-sync.yml b/.github/workflows/linear-pr-sync.yml
+index 4a4ca12a..125fc4d3 100644
+--- a/.github/workflows/linear-pr-sync.yml
++++ b/.github/workflows/linear-pr-sync.yml
+@@ -18,12 +18,12 @@ jobs:
+ 
+     steps:
+       - name: Checkout repo
+-        uses: actions/checkout@v4
++        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+ 
+       - name: Load Secrets from 1Password
+         id: op-load-secrets
+         if: env.OP_SERVICE_ACCOUNT_TOKEN != ''
+-        uses: 1password/load-secrets-action@v4
++        uses: 1password/load-secrets-action@92467eb28f72e8255933372f1e0707c567ce2259 # v4
+         with:
+           export-env: true
+         env:
+diff --git a/.github/workflows/linear-webhook.yml b/.github/workflows/linear-webhook.yml
+index 612c5b36..108bddc9 100644
+--- a/.github/workflows/linear-webhook.yml
++++ b/.github/workflows/linear-webhook.yml
+@@ -45,7 +45,7 @@ jobs:
+ 
+     steps:
+       - name: Checkout vault
+-        uses: actions/checkout@v4
++        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+ 
+       - name: Setup vault environment
+         uses: ./.github/actions/setup-vault
+diff --git a/.github/workflows/review-feedback-loop.yml b/.github/workflows/review-feedback-loop.yml
+index ac08c7ce..2c062195 100644
+--- a/.github/workflows/review-feedback-loop.yml
++++ b/.github/workflows/review-feedback-loop.yml
+@@ -19,7 +19,7 @@ jobs:
+     runs-on: ubuntu-latest
+     steps:
+       - name: Checkout trusted workflow surfaces
+-        uses: actions/checkout@v4
++        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+         with:
+           ref: ${{ github.event.repository.default_branch }}
+ 
+@@ -42,7 +42,7 @@ jobs:
+     runs-on: ubuntu-latest
+     steps:
+       - name: Checkout trusted workflow surfaces
+-        uses: actions/checkout@v4
++        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+         with:
+           ref: ${{ github.event.repository.default_branch }}
+ 
+diff --git a/.github/workflows/review-response.yml b/.github/workflows/review-response.yml
+index 0a3fd420..c6f23578 100644
+--- a/.github/workflows/review-response.yml
++++ b/.github/workflows/review-response.yml
+@@ -13,7 +13,7 @@ jobs:
+     runs-on: ubuntu-latest
+     steps:
+       - name: Checkout trusted workflow surfaces
+-        uses: actions/checkout@v4
++        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+         with:
+           ref: ${{ github.event.repository.default_branch }}
+ 
+diff --git a/.github/workflows/sort-audit.yml b/.github/workflows/sort-audit.yml
+index 231cfe1d..7af7049b 100644
+--- a/.github/workflows/sort-audit.yml
++++ b/.github/workflows/sort-audit.yml
+@@ -1,4 +1,4 @@
+-name: Vault Sort Audit
++name: Vault Topology Census
+ 
+ on:
+   schedule:
+@@ -14,33 +14,33 @@ jobs:
+ 
+     steps:
+       - name: Checkout vault
+-        uses: actions/checkout@v4
++        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+ 
+       - name: Setup vault environment
+         uses: ./.github/actions/setup-vault
+         with:
+           pip-packages: "PyYAML>=6.0"
+ 
+-      - name: Run sort audit
+-        run: python3 .github/scripts/so***REMOVED***audit.py
++      - name: Run topology census
++        run: python3 .github/scripts/topology_census.py --scope all
+ 
+-      - name: Validate audit output
++      - name: Validate census output
+         run: |
+           git add "!/"
+           python3 .github/scripts/validate_content.py --scope admin
+           git reset HEAD
+ 
+-      - name: Get audit date
++      - name: Get census date
+         id: date
+         run: echo "today=$(date -u +%Y-%m-%d)" >> "$GITHUB_OUTPUT"
+ 
+-      - name: Create sort audit pull request
+-        uses: peter-evans/create-pull-request@v8
++      - name: Create topology census pull request
++        uses: peter-evans/create-pull-request@5f6978faf089d4d20b00c7766989d076bb2fc7f1 # v8
+         with:
+-          branch: bot/sort-audit-${{ steps.date.outputs.today }}
+-          commit-message: "sort audit ${{ steps.date.outputs.today }}"
+-          title: "sort audit ${{ steps.date.outputs.today }}"
++          branch: bot/topology-census-${{ steps.date.outputs.today }}
++          commit-message: "topology census ${{ steps.date.outputs.today }}"
++          title: "topology census ${{ steps.date.outputs.today }}"
+           body: |
+-            Automated sort audit report generated by GitHub Actions.
++            Automated doctrine-first topology census generated by GitHub Actions.
+           add-paths: "!/"
+           delete-branch: true
+diff --git a/.github/workflows/stale-bot-prs.yml b/.github/workflows/stale-bot-prs.yml
+index c7fd4232..156f2885 100644
+--- a/.github/workflows/stale-bot-prs.yml
++++ b/.github/workflows/stale-bot-prs.yml
+@@ -14,10 +14,10 @@ jobs:
+     runs-on: ubuntu-latest
+     steps:
+       - name: Checkout repo
+-        uses: actions/checkout@v4
++        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+ 
+       - name: Set up Python
+-        uses: actions/setup-python@v6
++        uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6
+         with:
+           python-version: '3.11'
+ 
+diff --git a/.github/workflows/vault-courier.yml b/.github/workflows/vault-courier.yml
+index 578d7563..515b3422 100644
+--- a/.github/workflows/vault-courier.yml
++++ b/.github/workflows/vault-courier.yml
+@@ -26,23 +26,23 @@ jobs:
+ 
+     steps:
+       - name: Checkout repo
+-        uses: actions/checkout@v4
++        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+ 
+       - name: Load Secrets from 1Password
+-        uses: 1password/load-secrets-action@v4
++        uses: 1password/load-secrets-action@92467eb28f72e8255933372f1e0707c567ce2259 # v4
+         with:
+           export-env: true
+         env:
+           GCP_SA_KEY: op://vault-operations/idaho-vault-courier-key/credential
+ 
+       - name: Authenticate to Google Cloud
+-        uses: google-github-actions/auth@v3
++        uses: google-github-actions/auth@7c6bc770dae815cd3e89ee6cdf493a5fab2cc093 # v3
+         with:
+           credentials_json: ${{ env.GCP_SA_KEY }}
+ 
+ 
+       - name: Set up Cloud SDK
+-        uses: google-github-actions/setup-gcloud@v3
++        uses: google-github-actions/setup-gcloud@aa5489c8933f4cc7a4f7d45035b3b1440c9c10db # v3
+ 
+       - name: Execute Courier Sync
+         run: |
+diff --git a/.github/workflows/vault-ingest.yml b/.github/workflows/vault-ingest.yml
+index e32373a3..2821f66e 100644
+--- a/.github/workflows/vault-ingest.yml
++++ b/.github/workflows/vault-ingest.yml
+@@ -14,7 +14,7 @@ jobs:
+ 
+     steps:
+       - name: Checkout vault
+-        uses: actions/checkout@v4
++        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+ 
+       - name: Compute ingest filename
+         id: plan_ingest
+diff --git a/.github/workflows/vault-propose-moves.yml b/.github/workflows/vault-propose-moves.yml
+index 957e4422..9fcd5e09 100644
+--- a/.github/workflows/vault-propose-moves.yml
++++ b/.github/workflows/vault-propose-moves.yml
+@@ -1,43 +1,14 @@
+-name: Vault Propose Moves
++name: Legacy Vault Propose Moves (Superseded)
+ 
+ on:
+-  schedule:
+-    - cron: '0 7 * * 1'  # Every Monday at 7am UTC (after audit completes)
+   workflow_dispatch:
+ 
+ jobs:
+   propose-moves:
+     runs-on: ubuntu-latest
+-    permissions:
+-      contents: write
+-      pull-requests: write
+ 
+     steps:
+-      - name: Checkout vault
+-        uses: actions/checkout@v4
+-
+-      - name: Setup vault environment
+-        uses: ./.github/actions/setup-vault
+-
+-      - name: Generate proposed moves
+-        run: python3 .github/scripts/propose_moves.py
+-
+-      - name: Create pull request
+-        env:
+-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
++      - name: Report superseded status
+         run: |
+-          BRANCH="vault-moves-$(date -u +%Y-%m-%d)"
+-          if [ -f ".github/proposed-moves.sh" ]; then
+-            git checkout -b "$BRANCH"
+-            git add .github/proposed-moves.sh "!/"
+-            git diff --cached --quiet && echo "No changes to propose" && exit 0
+-            git commit -m "proposed moves $(date -u +%Y-%m-%d)"
+-            git push origin "$BRANCH"
+-            gh pr create \
+-              --title "Proposed vault moves $(date -u +%Y-%m-%d)" \
+-              --body-file .github/proposed-moves-summary.md \
+-              --base main \
+-              --head "$BRANCH"
+-          else
+-            echo "No moves to propose."
+-          fi
++          echo "Move-proposal automation is superseded in this phase."
++          echo "Use .github/scripts/topology_census.py for doctrine-first census reporting."
+diff --git a/.github/workflows/wayback-audit.yml b/.github/workflows/wayback-audit.yml
+index d5124580..9b3faaba 100644
+--- a/.github/workflows/wayback-audit.yml
++++ b/.github/workflows/wayback-audit.yml
+@@ -24,7 +24,7 @@ jobs:
+ 
+     steps:
+       - name: Checkout vault
+-        uses: actions/checkout@v4
++        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+ 
+       - name: Setup vault environment
+         uses: ./.github/actions/setup-vault
+diff --git a/.github/workflows/wayback-preserve.yml b/.github/workflows/wayback-preserve.yml
+index 9a6f8ca4..37497234 100644
+--- a/.github/workflows/wayback-preserve.yml
++++ b/.github/workflows/wayback-preserve.yml
+@@ -17,7 +17,7 @@ jobs:
+ 
+     steps:
+       - name: Checkout vault
+-        uses: actions/checkout@v4
++        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+         with:
+           fetch-depth: 2  # Need previous commit to diff
+ 
+-- 
+2.49.0.windows.1
+

@@ -1,7 +1,7 @@
 ---
-version: v1.0
+version: v0.1
 adopted: 2026-04-22
-status: adopted
+status: draft
 related:
   - '2026-04-22'
   - AWAKEN
@@ -12,9 +12,9 @@ related:
   - RISE
 authority: LOGAN
 ---
-# AWAKEN v1.0 — Agent Wake Protocol
+# AWAKEN v0.1 — Agent Wake Protocol
 
-*Adopted 2026-04-22. This is the minimal awakening protocol for vault-connected agents.*
+*Draft 2026-04-22. Originally listed in CONSTITUTION.md Section III as "Awaiting full adoption." This is the minimal awakening protocol for vault-connected agents.*
 
 ---
 
@@ -76,7 +76,7 @@ Output brief state to:
 ## OUTPUT FORMAT
 
 ```
-AWAKEN v1.0 REPORT — [AGENT NAME]
+AWAKEN v0.1 REPORT — [AGENT NAME]
 
 WHO: [Name] @ [Platform] | Tier [N] | [Session/branch]
 AUTHORIZED: [YES/NO - reason if no]
@@ -119,4 +119,4 @@ Logan is human. You are software. You execute; Logan directs.
 - AWAKEN is the prerequisite to all other protocols
 - An agent that cannot AWAKEN should report BLOCKED and await Logan direction
 - AWAKEN does not require LEVELSET unless Logan specifically requests it
-- See ORIENT v1.0 for external agents without repo access
+- See ORIENT v0.1 for external agents without repo access

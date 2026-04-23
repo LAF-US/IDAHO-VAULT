@@ -234,24 +234,48 @@ tempfolder.txt
 data-backup*
 
 # AI/tool runtime caches and local auth state (never commit)
-.antigravity/
-.gemini/
-.openclaw/
+# Keep durable repo dotfolders visible to git; ignore only their volatile internals.
 .claude/projects/
 .copilot/session-state/
-!.cursor/
-.cursor/
+.antigravity/argv.json
+.antigravity/extensions/
+.antigravity/stub.txt
 .cursor/projects/
 .cursor/extensions/
-.factory/auth.v2.*
-.pi/agent/auth.json
-!.cursor/skills-cursor/
-!.cursor/plugins/cache/
-!.cursor/plugins/*/skills/
-!.cursor/skills/
-.claude/plugins/cache/
 .cursor/plugins/cache/
+.cursor/ai-tracking/
+.cursor/debug-logs/
+.cursor/argv.json
+.cursor/ide_state.json
+.factory/auth.v2.*
 .factory/plugins/marketplaces/
+.gemini/antigravity/
+.gemini/antigravity-browser-profile/
+.gemini/history/
+.gemini/google_accounts.json
+.gemini/installation_id
+.gemini/oauth_creds.json
+.gemini/projects*.json
+.gemini/policies/auto-saved.toml
+.gemini/settings*.json
+.gemini/state.json
+.gemini/stub.txt
+.gemini/tmp/
+.gemini/trustedFolders.json
+.openclaw/agents/
+.openclaw/canvas/
+.openclaw/completions/
+.openclaw/credentials/
+.openclaw/devices/
+.openclaw/flows/
+.openclaw/identity/
+.openclaw/logs/
+.openclaw/openclaw.json*
+.openclaw/tasks/
+.openclaw/update-check.json
+.openclaw/workspace/
+.pi/agent/auth.json
+.claude/plugins/cache/
 
 # Session transcripts and machine-local logs
 *.jsonl

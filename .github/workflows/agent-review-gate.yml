@@ -18,6 +18,7 @@ on:
 permissions:
   pull-requests: write
   contents: read
+  issues: write
 
 jobs:
   gate:
@@ -29,6 +30,7 @@ jobs:
           ref: ${{ github.event.repository.default_branch }}
 
       - name: Reconcile open PR review state
+        id: reconcile
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GRACE_MINUTES: ${{ github.event.inputs.grace_minutes || '30' }}
@@ -37,4 +39,25 @@ jobs:
             reconcile-open-prs \
             --owner "${{ github.repository_owner }}" \
             --repo "${{ github.event.repository.name }}" \
-            --grace-minutes "$GRACE_MINUTES"
+            --grace-minutes "$GRACE_MINUTES" > pr-loop-reconcile.json
+          cat pr-loop-reconcile.json
+
+      - name: Build PR loop watchdog report
+        id: watchdog
+        run: |
+          python3 .github/scripts/pr_loop_watchdog.py \
+            --report-json pr-loop-reconcile.json \
+            --report-path pr-loop-watchdog.md
+
+      - name: Publish PR loop summary
+        run: cat pr-loop-watchdog.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Sync PR loop watchdog issue
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 .github/scripts/issue_reconciler.py \
+            --title "[PR Loop Watchdog] Reconciliation report" \
+            --body-file pr-loop-watchdog.md \
+            --has-findings "${{ steps.watchdog.outputs.has_findings }}" \
+            --resolved-comment "Resolved automatically: the latest PR reconciliation found no unresolved blockers."

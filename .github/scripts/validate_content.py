@@ -57,6 +57,16 @@ DAILY_NOTE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}\.md$")
 
 # Sponsor names should be alphabetic with common punctuation
 SPONSOR_NAME_RE = re.compile(r"^[A-Za-z\s.\-',()]+$")
+ROOT_GOVERNED_FILES = {
+    "AGENTS.md",
+    "CONSTITUTION.md",
+    "DECISIONS.md",
+    "README.md",
+    "VAULT-CONVENTIONS.md",
+    "VAULT-METADATA-STANDARD.md",
+    "VAULT-TEMPLATES.md",
+}
+REQUIRED_GOVERNED_FIELDS = ("title", "updated", "status", "authority")
 
 
 # ── Helpers ──────────────────────────────────────────────────────────────────
@@ -73,22 +83,34 @@ def get_staged_files() -> list[Path]:
 
 def validate_frontmatter(path: Path, content: str) -> list[str]:
     """Check that YAML frontmatter parses cleanly."""
+    _, errors = parse_frontmatter(path, content)
+    return errors
+
+
+def parse_frontmatter(path: Path, content: str) -> tuple[dict | None, list[str]]:
+    """Parse YAML frontmatter and return a mapping when present."""
     errors = []
     if not content.startswith("---"):
-        return []  # no frontmatter to validate
+        return None, []  # no frontmatter to validate
 
     parts = content.split("---", 2)
     if len(parts) < 3:
         errors.append(f"{path}: Malformed frontmatter (missing closing ---)")
-        return errors
+        return None, errors
 
     import yaml
     try:
-        yaml.safe_load(parts[1])
+        loaded = yaml.safe_load(parts[1])
     except yaml.YAMLError as e:
         errors.append(f"{path}: YAML frontmatter parse error: {e}")
+        return None, errors
 
-    return errors
+    if loaded is None:
+        return {}, errors
+    if not isinstance(loaded, dict):
+        errors.append(f"{path}: YAML frontmatter must parse to a mapping")
+        return None, errors
+    return loaded, errors
 
 
 def validate_content_safety(path: Path, content: str) -> list[str]:
@@ -156,6 +178,29 @@ def validate_directory(path: Path, scope: str) -> list[str]:
     return errors
 
 
+def is_governed_note(path: Path, scope: str) -> bool:
+    """Limit schema enforcement to the currently governed automation lane."""
+    path_str = str(path).replace("\\", "/")
+    if DAILY_NOTE_RE.match(path.name) or path.name == "TO DO LIST.md":
+        return False
+    if path.name in ROOT_GOVERNED_FILES:
+        return True
+    return scope in {"admin", "generated"} and path_str.startswith("!/")
+
+
+def validate_governed_metadata(path: Path, frontmatter: dict | None, scope: str) -> list[str]:
+    """Require doctrinal baseline fields for governed notes."""
+    if not is_governed_note(path, scope):
+        return []
+    if frontmatter is None:
+        return [f"{path}: Governed note missing YAML frontmatter"]
+
+    missing = [field for field in REQUIRED_GOVERNED_FIELDS if not frontmatter.get(field)]
+    if not missing:
+        return []
+    return [f"{path}: Governed note missing required frontmatter field(s): {', '.join(missing)}"]
+
+
 # ── Main ─────────────────────────────────────────────────────────────────────
 
 def main() -> int:
@@ -176,7 +221,9 @@ def main() -> int:
 
         if path.exists():
             content = path.read_text(encoding="utf-8", errors="replace")
-            all_errors.extend(validate_frontmatter(path, content))
+            frontmatter, frontmatter_errors = parse_frontmatter(path, content)
+            all_errors.extend(frontmatter_errors)
+            all_errors.extend(validate_governed_metadata(path, frontmatter, args.scope))
             all_errors.extend(validate_content_safety(path, content))
             all_errors.extend(validate_date_placeholders(path, content))
             all_errors.extend(validate_sponsor_names(path, content))

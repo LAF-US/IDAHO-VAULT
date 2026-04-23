@@ -30,7 +30,16 @@ SKIP_REASONS = {
 
 
 def find_latest_audit() -> Path | None:
-    reports = sorted(ADMIN_DIR.glob("sort-audit-*.md"), reverse=True)
+    reports = sorted(
+        {
+            *ADMIN_DIR.glob("sort-audit-*.md"),
+            *VAULT_ROOT.glob("sort-audit-*.md"),
+        },
+        reverse=True,
+    )
+    for report in reports:
+        if parse_misplaced(report):
+            return report
     return reports[0] if reports else None
 
 
