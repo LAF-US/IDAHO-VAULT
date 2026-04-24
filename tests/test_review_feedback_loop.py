@@ -80,14 +80,14 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         early_state = review_feedback_loop.evaluate_review_state(
             _pr(
                 created_at=now - timedelta(minutes=10),
-                labels=("agent-review-pending",),
+                labels=(review_feedback_loop.DEFAULT_REVIEW_PENDING_LABEL,),
             ),
             now=now,
         )
         ready_state = review_feedback_loop.evaluate_review_state(
             _pr(
                 created_at=now - timedelta(minutes=45),
-                labels=("agent-review-pending",),
+                labels=(review_feedback_loop.DEFAULT_REVIEW_PENDING_LABEL,),
             ),
             now=now,
         )
@@ -139,7 +139,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
     def test_changes_requested_review_blocks_merge(self) -> None:
         state = review_feedback_loop.evaluate_review_state(
             _pr(
-                labels=("auto-merge",),
+                labels=(review_feedback_loop.DEFAULT_AUTO_MERGE_LABEL,),
                 review_decision="CHANGES_REQUESTED",
             ),
             now=datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc),
@@ -185,10 +185,10 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
     def test_apply_review_state_projection_clears_stale_labels(self) -> None:
         state = {
             "labels": [
-                "review-required",
-                "review-threads-open",
-                "agent-review-pending",
-                "copilot-apply-pending",
+                review_feedback_loop.DEFAULT_REVIEW_REQUIRED_LABEL,
+                review_feedback_loop.DEFAULT_THREAD_LABEL,
+                review_feedback_loop.DEFAULT_REVIEW_PENDING_LABEL,
+                review_feedback_loop.DEFAULT_PENDING_LABEL,
             ],
             "blocking_review": False,
             "current_unresolved_threads": 0,
@@ -208,26 +208,26 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertEqual(
             actions,
             [
-                "remove:review-required",
-                "remove:review-threads-open",
-                "remove:agent-review-pending",
-                "remove:copilot-apply-pending",
+                f"remove:{review_feedback_loop.DEFAULT_REVIEW_REQUIRED_LABEL}",
+                f"remove:{review_feedback_loop.DEFAULT_THREAD_LABEL}",
+                f"remove:{review_feedback_loop.DEFAULT_REVIEW_PENDING_LABEL}",
+                f"remove:{review_feedback_loop.DEFAULT_PENDING_LABEL}",
             ],
         )
         self.assertEqual(
             edit_label.call_args_list,
             [
-                mock.call(17, remove="review-required"),
-                mock.call(17, remove="review-threads-open"),
-                mock.call(17, remove="agent-review-pending"),
-                mock.call(17, remove="copilot-apply-pending"),
+                mock.call(17, remove=review_feedback_loop.DEFAULT_REVIEW_REQUIRED_LABEL),
+                mock.call(17, remove=review_feedback_loop.DEFAULT_THREAD_LABEL),
+                mock.call(17, remove=review_feedback_loop.DEFAULT_REVIEW_PENDING_LABEL),
+                mock.call(17, remove=review_feedback_loop.DEFAULT_PENDING_LABEL),
             ],
         )
         disable_auto_merge.assert_not_called()
 
     def test_apply_review_state_projection_disables_auto_merge_when_blocked(self) -> None:
         state = {
-            "labels": ["auto-merge"],
+            "labels": [review_feedback_loop.DEFAULT_AUTO_MERGE_LABEL],
             "blocking_review": True,
             "current_unresolved_threads": 0,
             "should_have_agent_review_pending": False,
@@ -243,22 +243,22 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertEqual(
             actions,
             [
-                "add:review-required",
-                "remove:auto-merge",
+                f"add:{review_feedback_loop.DEFAULT_REVIEW_REQUIRED_LABEL}",
+                f"remove:{review_feedback_loop.DEFAULT_AUTO_MERGE_LABEL}",
             ],
         )
         self.assertEqual(
             edit_label.call_args_list,
             [
-                mock.call(29, add="review-required"),
-                mock.call(29, remove="auto-merge"),
+                mock.call(29, add=review_feedback_loop.DEFAULT_REVIEW_REQUIRED_LABEL),
+                mock.call(29, remove=review_feedback_loop.DEFAULT_AUTO_MERGE_LABEL),
             ],
         )
         disable_auto_merge.assert_called_once_with(29)
 
     def test_apply_review_state_projection_clears_stale_auto_merge_when_not_eligible(self) -> None:
         state = {
-            "labels": ["auto-merge"],
+            "labels": [review_feedback_loop.DEFAULT_AUTO_MERGE_LABEL],
             "blocking_review": False,
             "current_unresolved_threads": 0,
             "should_have_agent_review_pending": False,
@@ -271,8 +271,8 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         ) as disable_auto_merge:
             actions = review_feedback_loop.apply_review_state_projection(31, state)
 
-        self.assertEqual(actions, ["remove:auto-merge"])
-        edit_label.assert_called_once_with(31, remove="auto-merge")
+        self.assertEqual(actions, [f"remove:{review_feedback_loop.DEFAULT_AUTO_MERGE_LABEL}"])
+        edit_label.assert_called_once_with(31, remove=review_feedback_loop.DEFAULT_AUTO_MERGE_LABEL)
         disable_auto_merge.assert_called_once_with(31)
 
     def test_acknowledge_apply_marks_pending_after_trusted_request(self) -> None:
@@ -295,7 +295,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             result = review_feedback_loop.acknowledge_apply(args)
 
         self.assertEqual(result, 0)
-        edit_label.assert_called_once_with(41, add="copilot-apply-pending")
+        edit_label.assert_called_once_with(41, add=review_feedback_loop.DEFAULT_PENDING_LABEL)
         comment.assert_called_once()
 
     def test_sync_pr_clears_pending_only_for_allowed_completion_actors(self) -> None:
@@ -310,7 +310,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         with mock.patch.object(review_feedback_loop, "ensure_labels"), mock.patch.object(
             review_feedback_loop,
             "_fetch_pr",
-            return_value=_pr(labels=("copilot-apply-pending",)),
+            return_value=_pr(labels=(review_feedback_loop.DEFAULT_PENDING_LABEL,)),
         ), mock.patch.object(
             review_feedback_loop,
             "_resolve_outdated_advisory_threads",
@@ -335,7 +335,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             review_feedback_loop,
             "_fetch_pr",
             return_value=_pr(
-                labels=("auto-merge",),
+                labels=(review_feedback_loop.DEFAULT_AUTO_MERGE_LABEL,),
                 review_decision="CHANGES_REQUESTED",
             ),
         ), mock.patch.object(review_feedback_loop, "_edit_label"), mock.patch.object(
@@ -359,7 +359,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             review_feedback_loop,
             "_fetch_pr",
             return_value=_pr(
-                labels=("auto-merge",),
+                labels=(review_feedback_loop.DEFAULT_AUTO_MERGE_LABEL,),
                 body="## Auto-generated PR\n\n**Risk tier:**\n`high`\n",
             ),
         ), mock.patch.object(review_feedback_loop, "_edit_label"), mock.patch.object(
@@ -395,7 +395,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         ready_pr = _pr(
             number=88,
             created_at=datetime(2026, 4, 16, 1, 0, tzinfo=timezone.utc),
-            labels=("agent-review-pending",),
+            labels=(review_feedback_loop.DEFAULT_REVIEW_PENDING_LABEL,),
         )
 
         with mock.patch.object(review_feedback_loop, "ensure_labels"), mock.patch.object(
@@ -422,7 +422,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             result = review_feedback_loop.reconcile_open_prs(args)
 
         self.assertEqual(result, 0)
-        edit_label.assert_called_once_with(88, add="auto-merge")
+        edit_label.assert_called_once_with(88, add=review_feedback_loop.DEFAULT_AUTO_MERGE_LABEL)
         comment.assert_called_once()
         arm_auto_merge.assert_called_once_with(88)
 
@@ -435,7 +435,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         ready_pr = _pr(
             number=89,
             created_at=datetime(2026, 4, 16, 1, 0, tzinfo=timezone.utc),
-            labels=("auto-merge",),
+            labels=(review_feedback_loop.DEFAULT_AUTO_MERGE_LABEL,),
         )
 
         with mock.patch.object(review_feedback_loop, "ensure_labels"), mock.patch.object(
@@ -454,7 +454,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             review_feedback_loop,
             "evaluate_review_state",
             return_value={
-                "labels": {"auto-merge"},
+                "labels": {review_feedback_loop.DEFAULT_AUTO_MERGE_LABEL},
                 "low_risk": True,
                 "eligible_for_auto_merge": True,
                 "merge_blocked": False,
