@@ -141,7 +141,7 @@ jobs:
             --body "$BODY" \
             --base main \
             --head "$BRANCH_NAME" \
-            --label auto-merge
+            --label merge/auto
 
       - name: Resolve rollover PR number
         if: steps.changes.outputs.has_changes == 'true' && github.event.inputs.dry_run != 'true'
