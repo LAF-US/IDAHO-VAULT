@@ -21,6 +21,7 @@ class SecretField:
     item: str
     field: str
     env_name: str
+    fallback_fields: tuple[str, ...] = ()
 
 
 REQUIRED_SECRET_FIELDS = (
@@ -28,6 +29,14 @@ REQUIRED_SECRET_FIELDS = (
     SecretField(item="OpenClaw Discord Bot", field="token", env_name="DISCORD_BOT_TOKEN"),
     SecretField(item="OpenClaw Discord Bot", field="applicationId", env_name="DISCORD_APP_ID"),
     SecretField(item="OpenClaw Signal Account", field="number", env_name="SIGNAL_NUMBER"),
+    SecretField(item="Nostr (Orpheus)", field="password", env_name="NOSTR_PRIVATE_KEY"),
+    SecretField(item="Nostr (Orpheus)", field="username", env_name="NOSTR_PUBLIC_KEY"),
+    SecretField(item="GitHub", field="private key", env_name="GITHUB_SSH_KEY", fallback_fields=("password",)),
+    SecretField(item="Linear API Key", field="credential", env_name="LINEAR_API_KEY", fallback_fields=("password",)),
+    SecretField(item="Mistral", field="credential", env_name="MISTRAL_API_KEY", fallback_fields=("password",)),
+    SecretField(item="Obsidian Sync", field="password", env_name="OBSIDIAN_SYNC_TOKEN"),
+    SecretField(item="Claude", field="credential", env_name="ANTHROPIC_API_KEY", fallback_fields=("password",)),
+    SecretField(item="Qodo API Key", field="credential", env_name="QODO_API_KEY", fallback_fields=("password",)),
 )
 
 OPENCLAW_BOOT_SEQUENCE = (
@@ -77,7 +86,17 @@ def ensure_op_signed_in() -> None:
     """Confirm that the local 1Password CLI session is already available."""
 
     _require_command("op")
-    command = ["op", "whoami"]
+    if os.environ.get("OP_ACCOUNT"):
+        command = ["op", "whoami"]
+    else:
+        command = ["op", "signin"]
+        result = subprocess.run(
+            command,
+            env=os.environ.copy(),
+            check=False,
+        )
+        if result.returncode != 0:
+            command = ["op", "whoami"]
     result = _run_capture(command)
     _check_success(result, command)
 
@@ -88,6 +107,11 @@ def _resolve_secret(spec: SecretField) -> str:
     _check_success(result, command)
     value = result.stdout.strip()
     if not value:
+        for fallback in spec.fallback_fields:
+            command = ["op", "item", "get", spec.item, "--field", fallback]
+            result = _run_capture(command)
+            if result.returncode == 0 and result.stdout.strip():
+                return result.stdout.strip()
         raise SparkseedError(
             f"1Password field resolved empty for '{spec.item}' field '{spec.field}'."
         )
