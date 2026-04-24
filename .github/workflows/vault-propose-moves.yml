@@ -6,6 +6,8 @@ on:
 jobs:
   propose-moves:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
 
     steps:
       - name: Report superseded status
