@@ -38,9 +38,10 @@ DEFAULT_REVIEW_PENDING_LABEL = "review/pending"
 DEFAULT_AUTO_MERGE_LABEL = "merge/auto"
 RISK_LOW_LABEL = "risk/low"
 RISK_HIGH_LABEL = "risk/high"
-AUTO_MERGE_AUTHZ_FRAGMENT = (
+AUTO_MERGE_AUTHZ_FRAGMENTS = (
     "Pull request User is not authorized for this protected branch "
-    "(enablePullRequestAutoMerge)"
+    "(enablePullRequestAutoMerge)",
+    "Resource not accessible by integration (enablePullRequestAutoMerge)",
 )
 
 LABEL_SPECS: dict[str, tuple[str, str]] = {
@@ -100,7 +101,7 @@ def _arm_auto_merge(pr_number: int) -> tuple[bool, str | None]:
             ]
         )
     except RuntimeError as exc:
-        if AUTO_MERGE_AUTHZ_FRAGMENT not in str(exc):
+        if not any(fragment in str(exc) for fragment in AUTO_MERGE_AUTHZ_FRAGMENTS):
             raise
         return (
             False,
