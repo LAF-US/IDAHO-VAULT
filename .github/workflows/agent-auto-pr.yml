@@ -1,8 +1,6 @@
 name: Auto PR for Agent Branches
 
-on:
-  create:
-  workflow_dispatch:
+on: [create, workflow_dispatch]
 
 jobs:
   auto-pr:
