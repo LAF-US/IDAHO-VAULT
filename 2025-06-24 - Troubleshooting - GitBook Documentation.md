@@ -1,0 +1,100 @@
+---
+source: "https://gitbook.com/docs/getting-started/git-sync/troubleshooting"
+author:
+published: 2025-06-24
+created: 2026-04-23
+---
+## I have a GitHub sync error
+
+### Be sure to only create readme files in your repo
+
+When Git Sync is enabled, be careful not to create readme files through the GitBook UI. Creating readme files through the GitBook UI:
+
+- Creates duplicate README files in your repository
+- Causes rendering conflicts between GitBook and GitHub
+- May break builds and deployment processes
+- Results in unpredictable file precedence
+
+This includes files named README.md, readme.md, Readme.md, and README (without extension). Instead, remember to manage your README file directly in your git repository.
+
+### Still facing errors?
+
+Make sure that:‌
+
+- Your repository **has a** `README.md` **file** at its root (or at the `root` folder specified in your `.gitbook.yaml`) that was created directly in your git repository. This file is required and is used as the homepage for your documentation. For more details, refer to our [content configuration](https://gitbook.com/docs/getting-started/git-sync/content-configuration).
+- If you have YAML frontmatters in your Markdown files, make sure they are valid using a [linter](http://www.yamllint.com/).
+
+## GitBook is not using my docs folder
+
+By default, GitBook uses the root of the repository as a starting point. A specific directory can be specified to scope the markdown files. Take a look at our documentation on [content configuration](https://gitbook.com/docs/getting-started/git-sync/content-configuration) for more details.‌
+
+## GitBook is creating new markdown files
+
+**When synchronizing and editing from GitBook** with an existing Git repository, GitBook may create new markdown files instead of using the existing ones.‌ This is done to ensure GitBook doesn't overrite files that existed in your repository before.
+
+## Redirects aren't working correctly
+
+The YAML file needs to be correctly formatted for the redirects to work. Errors such as incorrect indentation or whitespace can result in your redirects not working. [Validating your YAML file](https://www.yamllint.com/) can ensure that the redirects will work smoothly.
+
+When setting redirects, do not add any leading slashes. For example, trying to redirect to `./misc/support.md` will not work.
+
+It's also important to consider that as long as a page exists for a path, GitBook won’t be looking for a possible redirect. So if you're setting up a redirect for an old page to a new one, you will need to remove the old page in order for the redirect to work.
+
+## My repository is not listed
+
+### For GitHub repositories
+
+Make sure that you have installed the GitBook GitHub app to the correct locations (when installing the app, you can choose to install it to your personal GitHub, or to any organization you have permissions for) and that you have given the app the correct repository permissions.
+
+### For GitLab repositories
+
+Make sure that your access token has been configured with the following access:
+
+- `api`
+- `read_repository`
+- `write_repository`
+
+## Nothing happens on GitBook after adding a new file to my repository
+
+**This section specifically addresses problems when a** `**SUMMARY.md**` **file already exists**
+
+If your repository does not include a `SUMMARY.md` file, GitBook will automatically create one upon the first sync. This means that if you edited your content from GitBook at least once after setting up Git sync, GitBook should have created this file automatically.‌
+
+If after updating your repository by adding or modifying a markdown file, you do not see the update reflected on GitBook and the sidebar doesn’t indicate an error during the sync, your modified file(s) is probably not listed in [your `SUMMARY.md` file](https://gitbook.com/docs/getting-started/git-sync/content-configuration#summary).‌
+
+This could either be because you created the file manually, or because you made an edit on GitBook and the GitBook to Git export phase of the sync created it for you.
+
+The content of this file mirrors your [table of contents](https://gitbook.com/docs/resources/gitbook-ui#table-of-contents) on GitBook and is used during the Git to GitBook import phase of the sync to recreate your table of contents and re-conciliate upcoming updates from the repository with your existing content on GitBook.‌
+
+If after ensuring that all your files are included in the `SUMMARY.md` file there’s still nothing happening on GitBook, don’t hesitate to [contact support](https://gitbook.com/docs/help-center/further-help/how-do-i-contact-support) for assistance.
+
+## GitHub preview is not showing
+
+If your GitHub preview is not showing, it might be because your GitSync integration was configured before January 2022. Versions of GitSync configured before this date do not include GitHub Preview.
+
+You should have received a notification requesting you to accept an updated permission request to enable read-only access to PRs.
+
+In case you did not receive the notification, to troubleshoot you need to update to the new version:
+
+1. Uninstall the GitSync integration from your organization.
+2. Reinstall the new version with the updated permissions.
+
+Please note that uninstalling the GitSync integration will require reconfiguring the integration again on any spaces it was previously connected to.
+
+## Potential duplicated accounts when signing in
+
+This error usually occurs when the GitHub account that you use to set up the sync is already associated with a different GitBook user account.
+
+A good way to identify which GitBook account the GitHub account is already linked to is:
+
+1. Log out from your current GitBook user session (i.e. `name@email.com`)
+2. Log out from any GitHub user sessions.
+3. Go to [the Log in page](https://app.gitbook.com/login).
+4. Enter your GitHub credentials.
+5. Once logged in, go to [the account settings](https://app.gitbook.com/account) and either:
+	1. Delete the account altogether if you do not need it.
+6. Log out from the session.
+7. Log back in using your `name@email.com` GitBook account.
+8. Try to set up Git Sync again.
+
+Last updated
