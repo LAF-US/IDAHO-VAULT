@@ -35,7 +35,14 @@ def can_read_secret(secret_ref: str) -> bool:
     return result.returncode == 0
 
 
-def resolve_secret_reference(vault: str) -> str:
+def find_op_reference(vault: str) -> str:
+    """Return a 1Password item reference path (op://...) for the OpenRouter API key.
+
+    This function returns a reference path, not the actual secret value.
+    The returned string is safe to store in a local .env file because it
+    is resolved to the real credential only when a 1Password-aware tool
+    reads the file (e.g. ``op run --env-file=...``).
+    """
     candidates = [
         "op://Personal/API Credentials/credential",
         "op://Personal/OpenRouter/password",
@@ -53,16 +60,21 @@ def resolve_secret_reference(vault: str) -> str:
         if can_read_secret(candidate):
             return candidate
 
-    raise SystemExit(f"Could not resolve any known OpenRouter secret reference in vault '{vault}'.")
+    raise SystemExit(f"Could not resolve any known OpenRouter item reference in vault '{vault}'.")
 
 
-def render_env(secret_ref: str) -> str:
+def render_op_env_file(op_ref: str) -> str:
+    """Render a .env file containing 1Password item references (op://...) for OpenRouter.
+
+    The values are reference paths, not actual credentials.  Tools like
+    ``op run --env-file=...`` resolve them at execution time.
+    """
     lines = [
-        f"OPENROUTER_API_KEY={secret_ref}",
-        f"OPENAI_API_KEY={secret_ref}",
+        f"OPENROUTER_API_KEY={op_ref}",
+        f"OPENAI_API_KEY={op_ref}",
         "OPENAI_BASE_URL=https://openrouter.ai/api/v1",
         "OPENAI_MODEL=openrouter/auto",
-        f"ANTHROPIC_AUTH_TOKEN={secret_ref}",
+        f"ANTHROPIC_AUTH_TOKEN={op_ref}",
         "ANTHROPIC_BASE_URL=https://openrouter.ai/api",
         "ANTHROPIC_API_KEY=",
     ]
@@ -81,10 +93,10 @@ def main() -> int:
 
     ensure_op_available()
     ensure_op_signed_in()
-    secret_ref = resolve_secret_reference(args.vault)
+    op_ref = find_op_reference(args.vault)
 
-    out_file.write_text(render_env(secret_ref), encoding="utf-8", newline="")
-    print(f"Wrote {out_file} using {secret_ref}")
+    out_file.write_text(render_op_env_file(op_ref), encoding="utf-8", newline="")
+    print(f"Wrote {out_file} using item reference: {op_ref}")
     return 0
 
 
