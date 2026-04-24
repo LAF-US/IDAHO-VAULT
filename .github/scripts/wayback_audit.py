@@ -122,7 +122,7 @@ def extract_url(content: str) -> str | None:
     if not url or url.lower() == "null" or url.lower() == "n/a":
         return None
     parsed = urllib.parse.urlparse(url)
-    if parsed.hostname in ("web.archive.org", "timetravel.mementoweb.org"):
+    if parsed.hostname and parsed.hostname in ("web.archive.org", "timetravel.mementoweb.org"):
         return None
     return url
 
