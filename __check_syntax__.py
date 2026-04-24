@@ -24,9 +24,9 @@ def run_syntax_checks() -> bool:
         full_path = REPO_ROOT / file_path
         try:
             py_compile.compile(str(full_path), doraise=True)
-            print(f"✓ {file_path} - PASSED")
+            print(f"[PASS] {file_path}")
         except py_compile.PyCompileError as exc:
-            print(f"✗ {file_path} - FAILED")
+            print(f"[FAIL] {file_path}")
             print(f"  Error: {exc}")
             all_passed = False
     return all_passed
