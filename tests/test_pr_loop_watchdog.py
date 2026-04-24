@@ -60,7 +60,7 @@ class PrLoopWatchdogTest(unittest.TestCase):
                         "merge_blocked": False,
                         "auto_merge_enabled": True,
                         "blocking_reasons": [],
-                        "actions": ["add:auto-merge"],
+                        "actions": ["add:merge/auto"],
                         "auto_merge_arm_error": None,
                     }
                 ],
@@ -69,7 +69,7 @@ class PrLoopWatchdogTest(unittest.TestCase):
 
         self.assertFalse(has_findings)
         self.assertIn("No unresolved PR-loop blockers remain after reconciliation.", markdown)
-        self.assertIn("Promoted to `auto-merge`: **1**", markdown)
+        self.assertIn("Promoted to `merge/auto`: **1**", markdown)
 
 
 if __name__ == "__main__":
