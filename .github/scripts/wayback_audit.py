@@ -121,7 +121,8 @@ def extract_url(content: str) -> str | None:
     url = m.group(1).strip()
     if not url or url.lower() == "null" or url.lower() == "n/a":
         return None
-    if "web.archive.org" in url:
+    parsed = urllib.parse.urlparse(url)
+    if parsed.hostname in ("web.archive.org", "timetravel.mementoweb.org"):
         return None
     return url
 
