@@ -23,7 +23,7 @@ def build_report(report: dict[str, object]) -> tuple[str, bool]:
         "# PR Loop Watchdog",
         "",
         f"Open PRs checked: **{checked_prs}**",
-        f"Promoted to `auto-merge`: **{len(promoted)}**",
+        f"Promoted to `merge/auto`: **{len(promoted)}**",
         f"Auto-merge re-armed: **{len(rearmed)}**",
         f"Outdated advisory threads resolved: **{resolved_threads}**",
         "",

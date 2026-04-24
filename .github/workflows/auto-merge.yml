@@ -11,7 +11,7 @@ permissions:
 jobs:
   enable-auto-merge:
     if: >
-      contains(github.event.pull_request.labels.*.name, 'auto-merge')
+      contains(github.event.pull_request.labels.*.name, 'merge/auto')
     runs-on: ubuntu-latest
     steps:
       - name: Checkout trusted workflow surfaces
