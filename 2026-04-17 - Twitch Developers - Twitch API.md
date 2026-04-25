@@ -3,7 +3,10 @@ source: "https://dev.twitch.tv/docs/api/"
 author:
 published: 2026-04-17
 created: 2026-04-23
+date created: Thursday, April 23rd 2026, 7:20:46 pm
+date modified: Friday, April 24th 2026, 11:02:32 am
 ---
+
 [Contents](#)
 
 The Twitch API provides the tools and data used to develop Twitch integrations. The data models and systems are designed to provide relevant data in an easy, consistent, and reliable way. For the full list of endpoints that you can use in your integration, explore the [Twitch API Reference](https://dev.twitch.tv/docs/api/reference/).

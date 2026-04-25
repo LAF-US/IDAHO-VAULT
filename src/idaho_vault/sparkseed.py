@@ -25,30 +25,33 @@ class SecretField:
 
 
 REQUIRED_SECRET_FIELDS = (
-    SecretField(item="OpenClaw Gateway Token", field="token", env_name="GATEWAY_TOKEN"),
-    SecretField(item="OpenClaw Discord Bot", field="token", env_name="DISCORD_BOT_TOKEN"),
-    SecretField(item="OpenClaw Discord Bot", field="applicationId", env_name="DISCORD_APP_ID"),
-    SecretField(item="OpenClaw Signal Account", field="number", env_name="SIGNAL_NUMBER"),
+    SecretField(item="OpenRouter API Key", field="credential", env_name="OPENROUTER_API_KEY"),
+    SecretField(item="OpenClaw Gateway Token", field="credential", env_name="GATEWAY_TOKEN"),
+    SecretField(item="Discord OpenClaw Bot", field="credential", env_name="DISCORD_BOT_TOKEN"),
+    SecretField(item="Discord OpenClaw Bot", field="credential", env_name="DISCORD_APP_ID"),
+    SecretField(item="Signal", field="number", env_name="SIGNAL_NUMBER"),
     SecretField(item="Nostr (Orpheus)", field="password", env_name="NOSTR_PRIVATE_KEY"),
     SecretField(item="Nostr (Orpheus)", field="username", env_name="NOSTR_PUBLIC_KEY"),
-    SecretField(item="GitHub", field="private key", env_name="GITHUB_SSH_KEY", fallback_fields=("password",)),
+    SecretField(item="GitHub", field="private_key", env_name="GITHUB_SSH_KEY", fallback_fields=("password",)),
     SecretField(item="Linear API Key", field="credential", env_name="LINEAR_API_KEY", fallback_fields=("password",)),
     SecretField(item="Mistral", field="credential", env_name="MISTRAL_API_KEY", fallback_fields=("password",)),
     SecretField(item="Obsidian Sync", field="password", env_name="OBSIDIAN_SYNC_TOKEN"),
-    SecretField(item="Claude", field="credential", env_name="ANTHROPIC_API_KEY", fallback_fields=("password",)),
+    SecretField(item="Claude", field="password", env_name="ANTHROPIC_API_KEY", fallback_fields=("credential", "username")),
     SecretField(item="Qodo API Key", field="credential", env_name="QODO_API_KEY", fallback_fields=("password",)),
+    SecretField(item="Telegram Bot", field="credential", env_name="TELEGRAM_BOT_TOKEN"),
 )
 
 OPENCLAW_BOOT_SEQUENCE = (
-    ("gateway", "start"),
+    ("gateway", "run"),
     ("secrets", "reload"),
     ("secrets", "audit"),
 )
 
 
-def _require_command(name: str) -> None:
+def _require_command(name: str) -> str:
     if shutil.which(name) is None:
         raise SparkseedError(f"Required command was not found on PATH: {name}")
+    return shutil.which(name)
 
 
 def _format_command(command: list[str]) -> str:
@@ -102,7 +105,7 @@ def ensure_op_signed_in() -> None:
 
 
 def _resolve_secret(spec: SecretField) -> str:
-    command = ["op", "item", "get", spec.item, "--field", spec.field]
+    command = ["op", "item", "get", spec.item, "--field", spec.field, "--vault", "Vault"]
     result = _run_capture(command)
     _check_success(result, command)
     value = result.stdout.strip()
@@ -122,7 +125,15 @@ def build_secret_env() -> dict[str, str]:
     """Resolve the required OpenClaw secrets into environment variables."""
 
     ensure_op_signed_in()
-    return {spec.env_name: _resolve_secret(spec) for spec in REQUIRED_SECRET_FIELDS}
+    env = {}
+    for spec in REQUIRED_SECRET_FIELDS:
+        try:
+            value = _resolve_secret(spec)
+            if value:
+                env[spec.env_name] = value
+        except SparkseedError:
+            pass
+    return env
 
 
 def _announce(message: str) -> None:
@@ -132,7 +143,7 @@ def _announce(message: str) -> None:
 def run_sparkseed() -> None:
     """Run the SPARKSEED bootstrap in the same order as the legacy shell script."""
 
-    _require_command("openclaw")
+    openclaw_path = _require_command("openclaw")
     _announce("=" * 83)
     _announce("SPARKSEED bootstrap: preparing the local OpenClaw edge from vault state.")
     _announce("=" * 83)
@@ -140,13 +151,13 @@ def run_sparkseed() -> None:
     _announce("[1/4] Loading the required OpenClaw secrets from 1Password.")
     env = os.environ.copy()
     env.update(build_secret_env())
-    _announce("Resolved gateway, Discord, and Signal values for this process.")
+    _announce("Resolved gateway, Discord, Signal, and OpenRouter values for this process.")
     _announce("-" * 83)
 
     for index, command_tail in enumerate(OPENCLAW_BOOT_SEQUENCE, start=2):
-        command = ["openclaw", *command_tail]
-        if command_tail == ("gateway", "start"):
-            _announce(f"[{index}/4] Starting the gateway surface.")
+        command = [openclaw_path, *command_tail]
+        if command_tail == ("gateway", "run"):
+            _announce(f"[{index}/4] Starting the gateway surface (OpenRouter routed).")
         elif command_tail == ("secrets", "reload"):
             _announce(f"[{index}/4] Reloading the active secret manifest.")
         else:
@@ -157,7 +168,7 @@ def run_sparkseed() -> None:
             _announce("-" * 83)
 
     _announce("=" * 83)
-    _announce("SPARKSEED bootstrap complete. From here the machinery has to speak for itself.")
+    _announce("SPARKSEED bootstrap complete. OpenRouter is now the unified model layer.")
     _announce("=" * 83)
 
 

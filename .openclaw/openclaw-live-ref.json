@@ -1,0 +1,186 @@
+{
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "openrouter/google/gemini-2.5-flash-preview-05-20"
+      },
+      "models": {}
+    }
+  },
+  "auth": {
+    "profiles": {
+      "openrouter:default": {
+        "mode": "api_key",
+        "provider": "openrouter"
+      }
+    }
+  },
+  "channels": {
+    "discord": {
+      "enabled": true,
+      "token": "env:DISCORD_OPENCLAW_TOKEN"
+    },
+    "whatsapp": {
+      "enabled": true
+    },
+    "signal": {
+      "enabled": false
+    },
+    "nostr": {
+      "enabled": false
+    }
+  },
+  "gateway": {
+    "auth": {
+      "mode": "token",
+      "token": "884da6483cfc01fb5bc7ac939cbd105e73ea78ce9866949e"
+    },
+    "bind": "loopback",
+    "mode": "local",
+    "port": 18789,
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    }
+  },
+  "meta": {
+    "lastTouchedAt": "2026-04-23T23:59:30.297Z",
+    "lastTouchedVersion": "2026.4.15"
+  },
+  "models": {
+    "mode": "merge",
+    "providers": {
+      "openrouter": {
+        "api": "openai-completions",
+        "baseUrl": "https://openrouter.ai/api/v1",
+        "apiKey": "env:OPENROUTER_API_KEY",
+        "models": [
+          {
+            "contextWindow": 1048576,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "google/gemini-2.5-flash-preview-05-20",
+            "input": [
+              "text",
+              "image"
+            ],
+            "name": "Gemini 2.5 Flash (Free)",
+            "reasoning": true
+          },
+          {
+            "contextWindow": 286720,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "openai/gpt-4o-mini",
+            "input": [
+              "text",
+              "image"
+            ],
+            "name": "GPT-4o Mini (Free)",
+            "reasoning": false
+          },
+          {
+            "contextWindow": 131072,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "anthropic/claude-3.5-haiku",
+            "input": [
+              "text",
+              "image"
+            ],
+            "name": "Claude 3.5 Haiku (Free)",
+            "reasoning": false
+          }
+        ]
+      },
+      "ollama": {
+        "api": "ollama",
+        "apiKey": "ollama-local",
+        "baseUrl": "http://127.0.0.1:11434",
+        "models": []
+      }
+    }
+  },
+  "plugins": {
+    "allow": [
+      "openclaw-web-search",
+      "openrouter",
+      "ollama",
+      "memory-core",
+      "discord",
+      "whatsapp",
+      "perplexity"
+    ],
+    "entries": {
+      "openrouter": {
+        "enabled": true
+      },
+      "ollama": {
+        "enabled": true
+      },
+      "openclaw-web-search": {
+        "enabled": true
+      },
+      "perplexity": {
+        "enabled": false
+      }
+    },
+    "installs": {
+      "openclaw-web-search": {
+        "installPath": "C:\\Users\\loganf\\.openclaw\\extensions\\openclaw-web-search",
+        "source": "npm",
+        "spec": "@ollama/openclaw-web-search"
+      }
+    }
+  },
+  "session": {
+    "dmScope": "per-channel-peer"
+  },
+  "secrets": {
+    "providers": {
+      "1password": {
+        "source": "exec",
+        "command": "C:\\Users\\loganf\\scoop\\apps\\1password-cli\\current\\op.exe",
+        "args": [
+          "item",
+          "get",
+          "--field",
+          "password"
+        ]
+      }
+    }
+  },
+  "tools": {
+    "alsoAllow": [
+      "ollama_web_search",
+      "ollama_web_fetch"
+    ],
+    "profile": "coding",
+    "web": {
+      "fetch": {
+        "enabled": false
+      },
+      "search": {
+        "enabled": false
+      }
+    }
+  },
+  "wizard": {
+    "lastRunAt": "2026-04-20T20:32:09.177Z",
+    "lastRunCommand": "configure",
+    "lastRunMode": "local",
+    "lastRunVersion": "2026.4.15"
+  }
+}
