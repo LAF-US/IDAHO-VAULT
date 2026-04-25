@@ -1,4 +1,4 @@
-﻿param(
+param(
     [string]$SourceDir = "$env:USERPROFILE\Downloads\Phone Link",
     [string]$VaultDir = "C:\Users\loganf\Documents\IDAHO-VAULT"
 )
@@ -19,7 +19,6 @@ try {
     Write-Warning 'Phone Link sweep: orphaned mutex reclaimed from crashed process.'
 }
 if (-not $createdNew) {
-    Write-Output 'Phone Link autosweep is already running. Exiting duplicate launch.'
     exit 0
 }
 

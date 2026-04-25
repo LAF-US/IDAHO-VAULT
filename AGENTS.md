@@ -59,7 +59,7 @@ Immediate wakeup facts:
 
 - `IDAHO-VAULT` is one repo inside `LAF-US`, not the whole world.
 - Repo topology and GitHub team topology are related but not identical.
-- The narrow GitHub/Linear/Slack connector posture described here is local to
+- The GitHub-only connector posture is local to
   `IDAHO-VAULT`, not the full `LAF-US` sovereignty model.
 - Historical harbor notes, abandoned branches, and exploratory scaffolds are
   non-live unless a live surface explicitly reactivates them.
