@@ -15,13 +15,15 @@ $ErrorActionPreference = "Stop"
 
 $scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
 $vaultRoot = Split-Path -Parent $scriptDir
-$envFile = Join-Path $vaultRoot ".op\openrouter.env"
-$resolver = Join-Path $vaultRoot "!\resolve-openrouter-secret.ps1"
-$runtimeHelper = Join-Path $scriptDir "Use-VaultAgentEnv.ps1"
+$commonModule = Join-Path $scriptDir "vault-common.ps1"
 
-if (-not (Get-Command op -ErrorAction SilentlyContinue)) {
-    Write-Error "1Password CLI 'op' is not installed or not on PATH."
+if (Test-Path $commonModule) {
+    . $commonModule
 }
+
+$envFile = Get-EnvFilePath $vaultRoot
+$resolver = Get-ResolverScript $vaultRoot
+$runtimeHelper = Join-Path $scriptDir "Use-VaultAgentEnv.ps1"
 
 $requiredKeys = switch ($Agent) {
     "codex" { @("OPENAI_API_KEY", "OPENAI_BASE_URL") }
@@ -39,20 +41,39 @@ if (-not $needsRefresh) {
     }
 }
 
-if ($needsRefresh) {
-    & $resolver | Out-Null
+$useOp = Assert-OpAvailable
+
+if ($needsRefresh -and $useOp) {
+    try {
+        & $resolver | Out-Null
+    }
+    catch {
+        Write-Warning "Failed to refresh env file from 1Password: $_"
+    }
 }
 
-$null = & op whoami 2>$null
-if ($LASTEXITCODE -ne 0) {
-    Write-Error "1Password CLI is not signed in. Run 'op signin' or unlock desktop integration first."
+if ($useOp) {
+    $opWhoami = op whoami 2>$null
+    if ($LASTEXITCODE -eq 0) {
+        $envArg = "--env-file=$envFile"
+        $command = @("op", "run", $envArg, "--", $CliName)
+        if ($Args) {
+            $command += $Args
+        }
+        & $runtimeHelper -Agent $Agent -Command $command
+        exit $LASTEXITCODE
+    }
 }
 
-$envArg = "--env-file=$envFile"
-$command = @("op", "run", $envArg, "--", $CliName)
-if ($Args) {
-    $command += $Args
+Write-Warning "1Password CLI not available. Attempting direct env file usage..."
+if (-not (Test-Path -LiteralPath $envFile)) {
+    Write-Error "Env file not found: $envFile. Run !/resolve-openrouter-secret.ps1 first."
 }
 
-& $runtimeHelper -Agent $Agent -Command $command
+$envVars = Load-EnvFile $envFile
+foreach ($key in $envVars.Keys) {
+    Set-Item -Path "env:$key" -Value $envVars[$key] -ErrorAction SilentlyContinue
+}
+
+& $runtimeHelper -Agent $Agent -Command @($CliName) -Args $Args
 exit $LASTEXITCODE

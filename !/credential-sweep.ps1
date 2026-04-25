@@ -2,17 +2,30 @@ param(
     [string]$OutDir = "",
     [switch]$IncludeAllItems,
     [ValidateSet("api-surface", "account-surface", "all")]
-    [string]$Mode = "api-surface"
+    [string]$Mode = "api-surface",
+    [switch]$SkipIfOpUnavailable
 )
 
-$ErrorActionPreference = "Stop"
+Set-StrictMode -Version Latest
+$ErrorActionPreference = "Continue"
+
+$scriptRoot = Split-Path -Parent $PSScriptRoot
+$commonModule = Join-Path (Split-Path -Parent $scriptRoot) "scripts" "vault-common.ps1"
+
+if (Test-Path $commonModule) {
+    . $commonModule
+}
 
 function Ensure-OpSession {
-    if (-not (Get-Command op -ErrorAction SilentlyContinue)) {
-        throw "1Password CLI 'op' is not installed or not on PATH."
+    if (-not (Assert-OpAvailable)) {
+        return $false
     }
-
-    & op signin | Out-Null
+    $result = op whoami 2>$null
+    if ($LASTEXITCODE -ne 0) {
+        Write-Warning "1Password CLI not signed in. Run 'op signin' first."
+        return $false
+    }
+    return $true
 }
 
 function Get-ServiceHints {
@@ -178,14 +191,20 @@ function New-MarkdownReport {
     Set-Content -Path $Path -Value ($lines -join "`r`n")
 }
 
-$repoRoot = Split-Path -Parent $PSScriptRoot
+$repoRoot = Split-Path -Parent $scriptRoot
 if (-not $OutDir) {
-    $OutDir = Join-Path $repoRoot ".op\reports"
+    $OutDir = Join-Path $repoRoot ".op" "reports"
 }
 
 New-Item -ItemType Directory -Force -Path $OutDir | Out-Null
 
-Ensure-OpSession
+if (-not (Ensure-OpSession)) {
+    if ($SkipIfOpUnavailable) {
+        Write-Output "1Password unavailable. Skipping credential sweep."
+        exit 0
+    }
+    Write-Warning "1Password CLI required but not available. Some features may not work."
+}
 
 $items = op item list --format json | ConvertFrom-Json
 $detailRows = New-Object System.Collections.Generic.List[object]

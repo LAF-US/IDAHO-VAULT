@@ -2,14 +2,26 @@ param(
     [string]$OutDir = ""
 )
 
-$ErrorActionPreference = "Stop"
+Set-StrictMode -Version Latest
+$ErrorActionPreference = "Continue"
 
-$repoRoot = Split-Path -Parent $PSScriptRoot
+$scriptRoot = Split-Path -Parent $PSScriptRoot
+$commonModule = Join-Path (Split-Path -Parent $scriptRoot) "scripts" "vault-common.ps1"
+
+if (Test-Path $commonModule) {
+    . $commonModule
+}
+
+$repoRoot = Split-Path -Parent $scriptRoot
 if (-not $OutDir) {
-    $OutDir = Join-Path $repoRoot ".op\reports"
+    $OutDir = Join-Path $repoRoot ".op" "reports"
 }
 
 New-Item -ItemType Directory -Force -Path $OutDir | Out-Null
+
+if (-not (Assert-CommandAvailable "rg" "ripgrep")) {
+    Write-Warning "ripgrep (rg) not found. Security sweep will use slower fallback with Select-String."
+}
 
 $patterns = @(
     @{ name = "1password_refs"; pattern = 'op://' },
@@ -24,8 +36,29 @@ $patterns = @(
 
 $results = New-Object System.Collections.Generic.List[object]
 
+$excludeGlobs = @('**/node_modules/**', '**/.git/**', '**/.claude/cache/**', '**/.codex/sessions/**', '**/.codex/log/**', '**/.op/reports/**')
+
 foreach ($entry in $patterns) {
-    $matches = rg -n --hidden --glob '!**/node_modules/**' --glob '!**/.git/**' --glob '!**/.claude/cache/**' --glob '!**/.codex/sessions/**' --glob '!**/.codex/log/**' --glob '!**/.op/reports/**' $entry.pattern $repoRoot 2>$null
+    if (Test-CommandAvailable "rg") {
+        $matches = rg -n --hidden $entry.pattern $repoRoot 2>$null | Where-Object {
+            $line = $_
+            $excluded = $false
+            foreach ($glob in $excludeGlobs) {
+                if ($line -match [regex]::Escape($glob)) {
+                    $excluded = $true
+                    break
+                }
+            }
+            -not $excluded
+        }
+    }
+    else {
+        $matches = Get-ChildItem -Path $repoRoot -Recurse -File -Exclude "*.dll","*.exe","*.bin" -ErrorAction SilentlyContinue |
+            Where-Object { $_.FullName -notmatch 'node_modules|\.git|\.claude/cache|\.codex/sessions|\.codex/log|\.op/reports' } |
+            Select-String -Pattern $entry.pattern -SimpleMatch |
+            ForEach-Object { "{0}:{1}:{2}" -f $_.Path, $_.LineNumber, $_.Line }
+    }
+
     if (-not $matches) {
         continue
     }

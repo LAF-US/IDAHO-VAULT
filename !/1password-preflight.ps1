@@ -1,22 +1,44 @@
 param(
-    [string]$OutDir = ""
+    [string]$OutDir = "",
+    [switch]$SkipIfOpUnavailable
 )
 
-$ErrorActionPreference = "Stop"
-. (Join-Path $PSScriptRoot "1password-policy.ps1")
-. (Join-Path $PSScriptRoot "report-safety.ps1")
+Set-StrictMode -Version Latest
+$ErrorActionPreference = "Continue"
 
-function Ensure-OpSession {
-    if (-not (Get-Command op -ErrorAction SilentlyContinue)) {
-        throw "1Password CLI 'op' is not installed or not on PATH."
-    }
+$scriptRoot = Split-Path -Parent $PSScriptRoot
+$commonModule = Join-Path (Split-Path -Parent $scriptRoot) "scripts" "vault-common.ps1"
 
-    & op signin | Out-Null
+if (Test-Path $commonModule) {
+    . $commonModule
 }
 
-$repoRoot = Split-Path -Parent $PSScriptRoot
+. (Join-Path $scriptRoot "1password-policy.ps1")
+. (Join-Path $scriptRoot "report-safety.ps1")
+
+function Ensure-OpSession {
+    if (-not (Assert-OpAvailable)) {
+        return $false
+    }
+    $result = op whoami 2>$null
+    if ($LASTEXITCODE -ne 0) {
+        Write-Warning "1Password CLI not signed in. Run 'op signin' first."
+        return $false
+    }
+    return $true
+}
+
+$repoRoot = Split-Path -Parent $scriptRoot
 $OutDir = Initialize-ReportOutDir -RepoRoot $repoRoot -RequestedOutDir $OutDir
-Ensure-OpSession
+
+if (-not (Ensure-OpSession)) {
+    if ($SkipIfOpUnavailable) {
+        Write-Output "1Password unavailable. Skipping preflight check."
+        exit 0
+    }
+    Write-Warning "1Password preflight check skipped due to unavailable 1Password CLI."
+    Write-Output "To skip when 1Password unavailable, use -SkipIfOpUnavailable flag."
+}
 
 $policy = Get-1PasswordPolicy
 $items = op item list --format json | ConvertFrom-Json
@@ -44,7 +66,7 @@ $latestMd = Join-Path $OutDir "1password-preflight_latest.md"
 
 $payload = [pscustomobject]@{
     generated_at = (Get-Date).ToString("s")
-    policy_path  = Join-Path $repoRoot ".op\1password-hygiene-policy.json"
+    policy_path  = Join-Path $repoRoot ".op" "1password-hygiene-policy.json"
     safety_limits = $policy.safety_limits
     vault_summary = $vaultSummary
 }
