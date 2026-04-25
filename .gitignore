@@ -148,6 +148,7 @@ _phone-link-watcher.pid
 .obsidian/plugins/obsidian-local-rest-api/data.json
 vault-courier-key.json
 *-key.json
+secrets/
 
 # Credential exports (NEVER publish)
 Google Passwords.csv

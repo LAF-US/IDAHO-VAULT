@@ -61,7 +61,7 @@ Immediate wakeup facts:
 
 - `IDAHO-VAULT` is one repo inside `LAF-US`, not the whole `LAF-US` world.
 - Repo topology and GitHub team topology are related but not identical.
-- The narrow GitHub/Linear/Slack connector posture here is repo-local, not the
+- The GitHub-only connector posture is repo-local, not the
   total sovereignty model.
 - Historical CrewAI harbor notes and stale scaffolds are non-live unless
   `.crewai/MANIFEST.md` or this file explicitly says otherwise.
@@ -294,26 +294,24 @@ migration note.
 Connector posture is subordinate to the wider `LAF-US` chamber and team
 topology above.
 
-Within `IDAHO-VAULT`, the current active connector posture remains
-intentionally narrow:
+Within `IDAHO-VAULT`, GitHub is the sole authority:
 
-- **GitHub** = execution and transport
-- **Linear** = execution state
+- **GitHub** = execution, transport, and coordination primacy
+- **Linear** = execution state (mirrored from GitHub)
 - **Slack** = tertiary paging and breadcrumbs only
 
 Connector classifications:
 
 | Connector Group | Members | Posture |
 | --- | --- | --- |
-| **Core** | GitHub, Linear, Slack | Current operating hub |
-| **Adjunct** | Gmail, Google Calendar, Google Drive, Box | Read-first context lanes; promote durable outcomes explicitly |
-| **Deferred** | Cloudflare, Hugging Face | Classified in registry only; not active authorities without a separate Logan-approved activation plan |
+| **Core** | GitHub | Single source of truth |
+| **Auxiliary** | Linear, Slack | Mirrored from GitHub / breadcrumbs only |
 
 Registry surfaces:
 
 - `swarm.json` = machine-readable connector registry
 - `!/SIGNALS/README.md` = cross-swarm signaling protocol
-- `SPEC-CONNECTOR-HUB-2026-04-09.md` = human-readable connector hub and maze census spec
+- `SPEC-CONNECTOR-HUB-2026-04-09.md` = human-readable connector hub spec
 - `LEVELSET-CURRENT.md` = mid-future connector survey and review surface
 
 The vault remains the authoritative memory surface for this repo. Connectors
