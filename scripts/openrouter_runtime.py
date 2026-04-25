@@ -49,7 +49,10 @@ def apply_runtime_env(agent: str) -> dict[str, str]:
 
 def ensure_op_available() -> None:
     if shutil.which("op") is None:
-        raise SystemExit("1Password CLI 'op' is not installed or not on PATH.")
+        raise SystemExit(
+            "1Password CLI 'op' is not installed or not on PATH.\n"
+            "If .op/openrouter.env exists, you can use the env file directly."
+        )
 
 
 def ensure_op_signed_in() -> None:
@@ -61,7 +64,8 @@ def ensure_op_signed_in() -> None:
     )
     if result.returncode != 0:
         raise SystemExit(
-            "1Password CLI is not signed in. Run 'op signin' or unlock desktop integration first."
+            "1Password CLI is not signed in. Run 'op signin' or unlock desktop integration.\n"
+            "If .op/openrouter.env exists, you can use the env file directly."
         )
 
 
@@ -77,6 +81,11 @@ def ensure_env_file(agent: str) -> Path:
         needs_refresh = any(f"{key}=" not in content for key in required_keys)
 
     if needs_refresh:
+        if shutil.which("op") is None:
+            raise SystemExit(
+                f"Env file missing or incomplete and 1Password CLI not available.\n"
+                f"Please create {ENV_FILE} with your OpenRouter API key."
+            )
         subprocess.run([sys.executable, str(RESOLVER)], check=True)
 
     return ENV_FILE
@@ -103,24 +112,27 @@ def launch_agent(agent: str, cli_name: str, args: list[str]) -> int:
     if is_help_request(args):
         return exec_agent(agent, cli_name, args)
 
-    ensure_op_available()
-    ensure_op_signed_in()
     env_file = ensure_env_file(agent)
 
-    command = [
-        "op",
-        "run",
-        f"--env-file={env_file}",
-        "--",
-        sys.executable,
-        str(Path(__file__).resolve()),
-        "--exec",
-        agent,
-        cli_name,
-        *args,
-    ]
-    result = subprocess.run(command, check=False)
-    return result.returncode
+    if shutil.which("op") is not None:
+        result = subprocess.run(["op", "whoami"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, check=False)
+        if result.returncode == 0:
+            command = [
+                "op",
+                "run",
+                f"--env-file={env_file}",
+                "--",
+                sys.executable,
+                str(Path(__file__).resolve()),
+                "--exec",
+                agent,
+                cli_name,
+                *args,
+            ]
+            result = subprocess.run(command, check=False)
+            return result.returncode
+
+    return exec_agent(agent, cli_name, args)
 
 
 def main() -> int:

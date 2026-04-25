@@ -9,7 +9,11 @@ from pathlib import Path
 
 def ensure_op_available() -> None:
     if shutil.which("op") is None:
-        raise SystemExit("1Password CLI 'op' is not installed or not on PATH.")
+        raise SystemExit(
+            "1Password CLI 'op' is not installed or not on PATH.\n"
+            "If the env file already exists, you can continue. "
+            "Otherwise, install 1Password CLI or provide the key manually."
+        )
 
 
 def ensure_op_signed_in() -> None:
@@ -21,7 +25,9 @@ def ensure_op_signed_in() -> None:
     )
     if result.returncode != 0:
         raise SystemExit(
-            "1Password CLI is not signed in. Run 'op signin' or unlock desktop integration first."
+            "1Password CLI is not signed in. Run 'op signin' or unlock desktop integration.\n"
+            "If the env file already exists, you can continue. "
+            "Otherwise, sign in to 1Password or provide the key manually."
         )
 
 
@@ -82,16 +88,24 @@ def main() -> int:
     parser = argparse.ArgumentParser(description="Generate a local OpenRouter env file from 1Password refs.")
     parser.add_argument("--vault", default="Vault", help="1Password vault name to search")
     parser.add_argument("--out-file", default="", help="Destination env file path")
+    parser.add_argument("--force", action="store_true", help="Force regeneration even if file exists")
     args = parser.parse_args()
 
     repo_root = Path(__file__).resolve().parent.parent
     out_file = Path(args.out_file) if args.out_file else repo_root / ".op" / "openrouter.env"
-    out_file.parent.mkdir(parents=True, exist_ok=True)
+
+    if out_file.exists() and not args.force:
+        with open(out_file) as f:
+            content = f.read()
+        if "OPENROUTER_API_KEY=sk-" in content:
+            print(f"Env file already exists at {out_file}. Use --force to regenerate.")
+            return 0
 
     ensure_op_available()
     ensure_op_signed_in()
     op_ref = find_op_reference(args.vault)
 
+    out_file.parent.mkdir(parents=True, exist_ok=True)
     out_file.write_text(render_op_env_file(op_ref), encoding="utf-8", newline="")
     print(f"Wrote {out_file} using item reference: {op_ref}")
     return 0
