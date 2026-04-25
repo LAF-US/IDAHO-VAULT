@@ -8,6 +8,7 @@ import shutil
 import subprocess
 import sys
 from dataclasses import dataclass
+from pathlib import Path
 
 
 class SparkseedError(RuntimeError):
@@ -88,7 +89,11 @@ def _check_success(result: subprocess.CompletedProcess[str], command: list[str])
 def ensure_op_signed_in() -> None:
     """Confirm that the local 1Password CLI session is already available."""
 
-    _require_command("op")
+    if shutil.which("op") is None:
+        raise SparkseedError(
+            "1Password CLI 'op' is not installed or not on PATH.\n"
+            "For local testing without 1Password, ensure .op/openrouter.env exists."
+        )
     if os.environ.get("OP_ACCOUNT"):
         command = ["op", "whoami"]
     else:
@@ -124,8 +129,26 @@ def _resolve_secret(spec: SecretField) -> str:
 def build_secret_env() -> dict[str, str]:
     """Resolve the required OpenClaw secrets into environment variables."""
 
-    ensure_op_signed_in()
     env = {}
+    repo_root = Path(__file__).resolve().parent.parent.parent
+    env_file = repo_root / ".op" / "openrouter.env"
+
+    if shutil.which("op") is None:
+        if env_file.exists():
+            _announce("1Password CLI unavailable. Loading OpenRouter key from .op/openrouter.env")
+            env = _load_env_file(env_file)
+            return env
+        else:
+            _announce("1Password CLI unavailable and .op/openrouter.env not found.")
+            _announce("Some secrets will not be available until 1Password CLI is configured.")
+            return env
+
+    try:
+        ensure_op_signed_in()
+    except SparkseedError:
+        _announce("1Password CLI not signed in. Some secrets may be unavailable.")
+        return env
+
     for spec in REQUIRED_SECRET_FIELDS:
         try:
             value = _resolve_secret(spec)
@@ -133,6 +156,18 @@ def build_secret_env() -> dict[str, str]:
                 env[spec.env_name] = value
         except SparkseedError:
             pass
+    return env
+
+
+def _load_env_file(env_path: Path) -> dict[str, str]:
+    """Load key=value pairs from an env file, skipping comments and empty lines."""
+    env = {}
+    if env_path.exists():
+        for line in env_path.read_text().splitlines():
+            line = line.strip()
+            if line and not line.startswith("#") and "=" in line:
+                key, _, value = line.partition("=")
+                env[key.strip()] = value.strip()
     return env
 
 
