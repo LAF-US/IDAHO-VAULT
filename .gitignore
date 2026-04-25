@@ -275,6 +275,7 @@ data-backup*
 .openclaw/tasks/
 .openclaw/update-check.json
 .openclaw/workspace/
+.obsidian\plugins\obsidianclaw\.git
 .pi/agent/auth.json
 .claude/plugins/cache/
 
