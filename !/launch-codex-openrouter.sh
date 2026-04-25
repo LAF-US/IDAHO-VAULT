@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 set -e
 
 ACTUAL_SCRIPT="$(readlink -f "$0" 2>/dev/null || echo "$0")"

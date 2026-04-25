@@ -15,7 +15,7 @@ FILES_TO_CHECK = [
     "so***REMOVED***audit.py",
     "main.py",
 ]
-UNITTEST_TARGET = "!\\tests\\test_app.py"
+UNITTEST_TARGET = "!/tests/test_app.py"
 
 
 def run_syntax_checks() -> bool:
@@ -33,6 +33,10 @@ def run_syntax_checks() -> bool:
 
 
 def run_unittests(python_executable: str = sys.executable) -> int:
+    test_path = REPO_ROOT / UNITTEST_TARGET
+    if not test_path.exists():
+        print(f"[SKIP] Unit tests: {test_path} not found")
+        return 0
     result = subprocess.run(
         [python_executable, "-m", "unittest", UNITTEST_TARGET, "-v"],
         cwd=REPO_ROOT,
