@@ -7,11 +7,21 @@ param(
     [string[]]$Vaults = @(),
     [int]$MaxMoves = 25,
     [switch]$ForceLargeBatch,
-    [string]$ConfirmToken = ""
+    [string]$ConfirmToken = "",
+    [switch]$SkipIfOpUnavailable
 )
 
-$ErrorActionPreference = "Stop"
-. (Join-Path $PSScriptRoot "1password-policy.ps1")
+Set-StrictMode -Version Latest
+$ErrorActionPreference = "Continue"
+
+$scriptRoot = Split-Path -Parent $PSScriptRoot
+$commonModule = Join-Path (Split-Path -Parent $scriptRoot) "scripts" "vault-common.ps1"
+
+if (Test-Path $commonModule) {
+    . $commonModule
+}
+
+. (Join-Path $scriptRoot "1password-policy.ps1")
 $Policy = Get-1PasswordPolicy
 
 if ($PSBoundParameters.ContainsKey("MaxMoves") -eq $false) {
@@ -19,11 +29,15 @@ if ($PSBoundParameters.ContainsKey("MaxMoves") -eq $false) {
 }
 
 function Ensure-OpSession {
-    if (-not (Get-Command op -ErrorAction SilentlyContinue)) {
-        throw "1Password CLI 'op' is not installed or not on PATH."
+    if (-not (Assert-OpAvailable)) {
+        return $false
     }
-
-    & op signin | Out-Null
+    $result = op whoami 2>$null
+    if ($LASTEXITCODE -ne 0) {
+        Write-Warning "1Password CLI not signed in."
+        return $false
+    }
+    return $true
 }
 
 function Assert-ApplySafety {
@@ -210,13 +224,21 @@ function Get-ConfidenceRank {
     }
 }
 
-$repoRoot = Split-Path -Parent $PSScriptRoot
+$repoRoot = Split-Path -Parent $scriptRoot
 if (-not $OutDir) {
-    $OutDir = Join-Path $repoRoot ".op\reports"
+    $OutDir = Join-Path $repoRoot ".op" "reports"
 }
 
 New-Item -ItemType Directory -Force -Path $OutDir | Out-Null
-Ensure-OpSession
+
+if (-not (Ensure-OpSession)) {
+    if ($SkipIfOpUnavailable) {
+        Write-Output "1Password unavailable. Skipping vault placement sweep."
+        exit 0
+    }
+    Write-Warning "1Password CLI required but not available. Cannot proceed."
+    exit 1
+}
 
 $items = op item list --format json | ConvertFrom-Json
 $candidates = New-Object System.Collections.Generic.List[object]
