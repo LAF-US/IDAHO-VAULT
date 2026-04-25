@@ -1,4 +1,9 @@
 @echo off
 setlocal
 
-python "%~dp0..\scripts\sta***REMOVED***claude_openrouter.py" %*
+set "REPO_ROOT=%~dp0.."
+set "ENV_FILE=%REPO_ROOT%\.op\openrouter.env"
+set "PS_CMD=$ErrorActionPreference = 'Stop'; op run --env-file='%ENV_FILE%' -- claude %*"
+
+powershell -ExecutionPolicy Bypass -Command "%PS_CMD%"
+exit /b %ERRORLEVEL%

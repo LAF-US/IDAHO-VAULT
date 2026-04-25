@@ -44,16 +44,13 @@ def find_op_reference(vault: str) -> str:
     reads the file (e.g. ``op run --env-file=...``).
     """
     candidates = [
-        "op://Personal/API Credentials/credential",
-        "op://Personal/OpenRouter/password",
+        "op://Vault/OpenRouter API Key/credential",
+        "op://Vault/OpenRouter API Key/password",
+        f"op://{vault}/OpenRouter API Key/credential",
         f"op://{vault}/openrouter-api-key/credential",
         f"op://{vault}/openrouter-api-key/password",
         f"op://{vault}/openrouter/credential",
         f"op://{vault}/openrouter/password",
-        f"op://{vault}/openrouter-api/credential",
-        f"op://{vault}/openrouter-api/password",
-        f"op://{vault}/open-router-api-key/credential",
-        f"op://{vault}/open-router-api-key/password",
     ]
 
     for candidate in candidates:
@@ -83,7 +80,7 @@ def render_op_env_file(op_ref: str) -> str:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Generate a local OpenRouter env file from 1Password refs.")
-    parser.add_argument("--vault", default="vault-operations", help="1Password vault name to search")
+    parser.add_argument("--vault", default="Vault", help="1Password vault name to search")
     parser.add_argument("--out-file", default="", help="Destination env file path")
     args = parser.parse_args()
 

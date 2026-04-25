@@ -505,25 +505,23 @@ Root governance files hold doctrine. The `!/` layer keeps bootstrap paths and co
 
 
 
-## Vault — Linear Operating Model Mapping
+## Vault — GitHub Operating Model Mapping
 
-
-
-| Layer (purpose)            | Vault (canonical memory)                                                                                         | Linear (execution state)                                           | Chat/Slack (ephemeral)                                              |
+| Layer (purpose)            | Vault (canonical memory)                                                                                         | GitHub (execution authority)                                     | Linear (mirrored) / Slack (ephemeral)                           |
 
 | -------------------------- | ---------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ | ------------------------------------------------------------------- |
 
-| **Core / Mind**<br>governing doctrine | Constitution, Charter, Codex, decision logs, doctrine/guidance updates, LEVELSET snapshots                           | Work items to draft/revise doctrine; link PRs/issues to vault artifacts | Quick clarifications; capture any decision back into Vault/PR issue |
+| **Core / Mind**<br>governing doctrine | Constitution, Charter, Corpus, decision logs, doctrine/guidance updates, LEVELSET snapshots                           | Issues/PRs for drafting/revising; link to vault artifacts | Mirrored from GitHub / breadcrumbs only |
 
-| **Periphery / Body**<br>operating mechanics | Protocols, procedures, preferences, templates/SOPs, stable checklists, automation docs                                   | Tasks/epics for doing the work, tracking status, ownership, deadlines | Live coordination, handoffs, Q&A; move outcomes to Linear/Vault     |
+| **Periphery / Body**<br>operating mechanics | Protocols, procedures, preferences, templates/SOPs, stable checklists, automation docs                                   | Workflows, automation, tasks, tracking, ownership, deadlines | Mirrored from GitHub / live coordination |
 
-| **Ghost / Soul**<br>interpretive/cultural layer | Guidelines, grimoire/interpretive notes, guestbook/cultural norms, context vaults                                          | Action items emerging from interpretive work (e.g., follow-ups, retro tasks) | Brainstorms, vibes, drafts; memorialize decisions/insights in Vault |
+| **Ghost / Soul**<br>interpretive/cultural layer | Guidelines, grimoire/interpretive notes, guestbook/cultural norms, context vaults                                          | Action items emerging from interpretive work                     | Mirrored / brainstorms |
 
-| **`!` spaces**<br>operational infrastructure | System files, DOCKET, LEVELSET, agent routing, audit/log artifacts, workflow outputs that must persist                     | Incidents/infra tasks, runbooks in execution, workflow status, tickets | Real-time paging/alerts; record outcomes in Linear and Vault        |
+| **`!` spaces**<br>operational infrastructure | System files, DOCKET, LEVELSET, agent routing, audit/log artifacts, workflow outputs that must persist                     | Workflow status, incidents, automation output, tickets           | Mirrored / real-time alerts |
 
 
 
-**Decision Rule:** Vault holds doctrine and context that must persist. GitHub executes workflows and transport state. Linear tracks execution, owners, and current state. Chat/Slack is transient coordination — any decision or durable context must be promoted promptly into Vault and/or the execution systems (per Persistence Anchoring protocols).
+**Decision Rule:** Vault holds doctrine and context that must persist. GitHub is the sole execution authority — issues, PRs, workflows, and automation are the system of record. Linear mirrors from GitHub for human visibility. Slack is tertiary paging only — any durable context must be promoted into Vault and/or GitHub.
 
 ---
 
