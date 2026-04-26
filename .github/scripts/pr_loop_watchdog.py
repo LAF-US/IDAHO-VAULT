@@ -92,9 +92,9 @@ def build_parser() -> argparse.ArgumentParser:
 
 def main() -> int:
     args = build_parser().parse_args()
-    report = json.loads(args.repo***REMOVED***json.read_text(encoding="utf-8"))
+    report = json.loads(args.report_json.read_text(encoding="utf-8"))
     markdown, has_findings = build_report(report)
-    args.repo***REMOVED***path.write_text(markdown, encoding="utf-8")
+    args.report_path.write_text(markdown, encoding="utf-8")
 
     github_output = os.environ.get("GITHUB_OUTPUT")
     if github_output:
