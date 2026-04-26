@@ -281,6 +281,25 @@ migration note.
 ## Coordination Protocols
 
 - **Lane Independence**: Each agent operates on its own branch prefix (`claude/`, `gemini/`, etc.).
+- **Branch Prefix Standard**: All agent work must use branch prefixes. Automation detects origin by prefix, not by committer identity.
+
+### Branch Prefix Standard (Canonical)
+
+| Origin | Branch Prefix | Automation Triggered |
+|---|---|---|
+| Claude Code | `claude/*` | ✅ auto-pr, review-gate, auto-merge |
+| OpenAI Codex | `codex/*` | ✅ auto-pr, review-gate, auto-merge |
+| Gemini CLI | `gemini/*` | ✅ auto-pr, review-gate, auto-merge |
+| GitHub Copilot | `copilot/*` | ✅ auto-pr, review-gate, auto-merge |
+| Perplexity | `perplexity/*` | ✅ auto-pr, review-gate, auto-merge |
+| Grok | `grok/*` | ✅ auto-pr, review-gate, auto-merge |
+| Big Pickle | `bigpickle/*` | ✅ auto-pr, review-gate, auto-merge |
+| Serena | `serena/*` | ✅ auto-pr, review-gate, auto-merge |
+| Dependabot | `dependabot[bot]` (author) | ✅ auto-pr, review-gate, auto-merge |
+| vault-auto (bot) | `bot/*` | ✅ auto-pr, review-gate, auto-merge |
+
+**Rule**: Branch prefix IS the truth. Automation uses branch prefix to classify origin, not git author identity.
+
 - **Durable Record**: Decisions must be promoted from chat to the vault (e.g., `DECISIONS.md`).
 - **Linear Hub**: Active tasks are tracked via the **SWARM** label in Linear.
 - **Cross-Swarm Signals**: `!/SIGNALS/` is the durable async bus for agent-to-agent signaling; the Courtroom DOCKET reflects live visibility.
