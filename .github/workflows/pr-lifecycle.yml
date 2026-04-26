@@ -26,6 +26,8 @@ jobs:
   create-pr:
     runs-on: ubuntu-latest
     if: github.event_name == 'create'
+    env:
+      GH_TOKEN: ${{ github.token }}
     steps:
       - name: Gate on agent branch
         id: gate
@@ -108,9 +110,25 @@ jobs:
             --report-path pr-watchdog.md
           cat pr-watchdog.md >> "$GITHUB_STEP_SUMMARY"
 
-  auto-merge:
+auto-merge:
     runs-on: ubuntu-latest
     if: github.event_name == 'pull_request_target' && contains(github.event.pull_request.labels.*.name, 'merge/auto')
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+
+  label-handler:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request' && github.event.action != 'closed'
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+
+  cleanup:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request' && github.event.action == 'closed'
+    env:
+      GH_TOKEN: ${{ github.token }}
     steps:
       - name: Enable auto-merge
         run: |
