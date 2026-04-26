@@ -1,6 +1,12 @@
 name: Auto PR for Agent Branches
 
-on: [create, workflow_dispatch]
+on: 
+  create:
+  pull_request:
+    types: [opened, reopened]
+    branches:
+      - main
+  workflow_dispatch:
 
 jobs:
   auto-pr:
@@ -22,18 +28,27 @@ jobs:
               exit 0
             fi
             BRANCH_NAME="${{ github.event.ref }}"
+            AUTHOR="ghost"
           else
-            BRANCH_NAME="${{ github.ref_name }}"
+            BRANCH_NAME="${{ github.event.pull_request.head.ref }}"
+            AUTHOR="${{ github.event.pull_request.user.login }}"
           fi
 
-          case "$BRANCH_NAME" in
-            claude/*|codex/*|gemini/*|copilot/*|perplexity/*|grok/*|serena/*)
+          # Normalize for matching
+          BRANCH_LOWER=$(echo "$BRANCH_NAME" | tr '[:upper:]' '[:lower:]')
+          AUTHOR_LOWER=$(echo "$AUTHOR" | tr '[:upper:]' '[:lower:]')
+
+          # Match agent prefixes OR bot prefixes OR trusted bots
+          case "$BRANCH_LOWER" in
+            claude/*|codex/*|gemini/*|copilot/*|perplexity/*|grok/*|serena/*|bigpickle/*|bot/*|dependabot[bot])
               echo "skip=false" >> "$GITHUB_OUTPUT"
               echo "branch_name=$BRANCH_NAME" >> "$GITHUB_OUTPUT"
+              echo "author=$AUTHOR" >> "$GITHUB_OUTPUT"
               ;;
             *)
               echo "skip=true" >> "$GITHUB_OUTPUT"
               echo "branch_name=$BRANCH_NAME" >> "$GITHUB_OUTPUT"
+              echo "author=$AUTHOR" >> "$GITHUB_OUTPUT"
               ;;
           esac
 
