@@ -27,19 +27,23 @@ This is the live **Pending-Logan agenda unit**. Any agent arriving at THE COURTR
 
 ## PENDING CONSOLIDATION
 
-Remaining workflow redundancies:
-
-| Candidate | Current | Action |
+| Before | After | Status |
 |---|---|---|
-| stale-bot-prs.yml + branch-cleanup.yml | 2 | Merge into branch-cleanup |
-| linear-pr-sync + linear-webhook + linear-brief | 3 | Distinct purposes - KEEP |
+| 31 workflows | **28 workflows** | ✅ COMPLETE |
 
 ## SIGNALS FOR LOGAN
 
-- automation unification: Phase 1 complete ~ 30 → 29 workflows
-- Branch prefix standard now in AGENTS.md (canonical)
-- pr_loop_watchdog.py fixed on main (was syntax error)
-- All agent/bot/dependabot now covered by agent-auto-pr
+- **AUTOMATION UNITY COMPLETE**: 31 → 28 workflows
+  - pr_loop_watchdog.py fixed (syntax error)
+  - agent-auto-pr unified (all origins)
+  - dependabot-rhythm deleted
+  - stale-bot-prs merged into branch-cleanup
+  - Branch prefix standard in AGENTS.md
+- **OPENCLAW**: LIVE on MacBook
+  - Discord channel enabled
+  - WhatsApp channel enabled
+  - Gateway at http://127.0.0.1:18789/
+  - Session store active
 
 ## DONE
 
@@ -47,7 +51,8 @@ Remaining workflow redundancies:
 - ✅ Branch prefix standard documented in !/AGENTS.md
 - ✅ pr_loop_watchdog.py syntax error healed
 - ✅ agent-auto-pr.yml unified trigger for all origins
-- ✅ PR #307 merged to main
+- ✅ stale-bot-prs.yml merged into branch-cleanup.yml
+- ✅ OpenClaw gateway running (helped Big Pickle set up)
 
 ---
 
