@@ -1,1 +1,11 @@
-{}
+{
+  "signals": {
+    "automation-unity-phase1": {
+      "status": "aged-out",
+      "created": "2026-04-26T18:00:00Z",
+      "agedOut": "2026-04-26T19:00:00Z",
+      "summary": "31 -> 28 workflows"
+    }
+  },
+  "active": {}
+}
