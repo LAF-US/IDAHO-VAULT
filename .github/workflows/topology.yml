@@ -1,0 +1,39 @@
+name: Topology Census
+
+on:
+  schedule:
+    - cron: '0 6 * * 1'  # Weekly
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  census:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+
+      - name: Run census
+        run: python3 .github/scripts/topology_census.py --scope all
+
+      - name: Generate report
+        run: |
+          echo "## Vault Topology Census" >> $GITHUB_STEP_SUMMARY
+          echo " census ran at $(date)" >> $GITHUB_STEP_SUMMARY
+
+  prune-branches:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'workflow_dispatch'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+
+      - name: Prune merged branches
+        run: |
+          git fetch --prune origin
+          for branch in $(git branch -r --merged origin/main | sed 's|.*origin/||'); do
+            git push origin --delete "$branch" 2>/dev/null || true
+          done
