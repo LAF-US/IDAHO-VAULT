@@ -1,0 +1,157 @@
+name: PR Lifecycle
+
+# Unified PR automation: create → reconcile → merge → cleanup
+# THREE-IN-ONE: One system doing one job
+
+on:
+  create:
+    branches: [claude/*, codex/*, gemini/*, copilot/*, perplexity/*, grok/*, bigpickle/*, serena/*, bot/*]
+  pull_request:
+    types: [opened, reopened, synchronize, ready_for_review]
+    branches:
+      - main
+  pull_request_target:
+    types: [labeled]
+    branches:
+      - main
+  schedule:
+    - cron: '*/10 * * * *'  # Every 10 minutes
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  create-pr:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'create'
+    steps:
+      - name: Gate on agent branch
+        id: gate
+        run: |
+          REF="${{ github.event.ref }}"
+          case "$REF" in
+            claude/*|codex/*|gemini/*|copilot/*|perplexity/*|bigpickle/*|serena/*|bot/*)
+              echo "match=true" >> "$GITHUB_OUTPUT"
+              ;;
+            *)
+              echo "match=false" >> "$GITHUB_OUTPUT"
+              ;;
+          esac
+
+      - name: Checkout branch
+        if: steps.gate.outputs.match == 'true'
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ github.event.ref }}
+
+      - name: Check for existing PR
+        id: check-pr
+        run: |
+          PR=$(gh pr list --head "${{ github.event.ref }}" --state open --json number --jq '.[0].number // empty' 2>/dev/null || true)
+          if [ -n "$PR" ]; then
+            echo "pr_exists=true" >> "$GITHUB_OUTPUT"
+            echo "pr_number=$PR" >> "$GITHUB_OUTPUT"
+          else
+            echo "pr_exists=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Create PR
+        if: steps.check-pr.outputs.pr_exists == 'false'
+        run: |
+          python3 .github/scripts/review_feedback_loop.py ensure-labels
+          python3 .github/scripts/pr_lifecycle.py ensure-labels
+          
+          CHANGED=$(git diff --name-only origin/main...HEAD)
+          TIER=$(echo "$CHANGED" | python3 .github/scripts/classify_paths.py | python3 -c "import sys,json; print(json.load(sys.stdin)['tier'])")
+          
+          gh pr create \
+            --title "$(echo '${{ github.event.ref }}' | sed 's|/|: |')" \
+            --body "Auto-created PR for agent branch." \
+            --base main \
+            --head "${{ github.event.ref }}" \
+            --label "risk/$TIER" \
+            --label "origin/agent" \
+            --label "review/pending"
+
+      - name: Set lifecycle
+        if: steps.check-pr.outputs.pr_exists == 'false'
+        run: |
+          PR=$(gh pr list --head "${{ github.event.ref }}" --state open --json number --jq '.[0].number')
+          python3 .github/scripts/pr_lifecycle.py set-state --pr-number "$PR" --state staged
+
+  reconcile:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Reconcile PRs
+        run: |
+          python3 .github/scripts/review_feedback_loop.py reconcile-open-prs \
+            --owner "${{ github.repository_owner }}" \
+            --repo "${{ github.event.repository.name }}" \
+            --grace-minutes 30 > pr-reconcile.json
+          cat pr-reconcile.json
+
+      - name: Report
+        run: |
+          python3 .github/scripts/pr_loop_watchdog.py \
+            --report-json pr-reconcile.json \
+            --report-path pr-watchdog.md
+          cat pr-watchdog.md >> "$GITHUB_STEP_SUMMARY"
+
+  auto-merge:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request_target' && contains(github.event.pull_request.labels.*.name, 'merge/auto')
+    steps:
+      - name: Enable auto-merge
+        run: |
+          python3 .github/scripts/review_feedback_loop.py enable-auto-merge \
+            --owner "${{ github.repository_owner }}" \
+            --repo "${{ github.event.repository.name }}" \
+            --pr-number "${{ github.event.pull_request.number }}"
+
+  label-handler:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request' && github.event.action != 'closed'
+    steps:
+      - name: Handle new PR
+        run: |
+          python3 .github/scripts/review_feedback_loop.py ensure-labels
+          
+          BRANCH="${{ github.event.pull_request.head.ref }}"
+          AUTHOR="${{ github.event.pull_request.user.login }}"
+          
+          if [[ "$BRANCH" == claude/* ]] || [[ "$BRANCH" == codex/* ]] || [[ "$BRANCH" == gemini/* ]] || [[ "$BRANCH" == copilot/* ]] || [[ "$BRANCH" == perplexity/* ]] || [[ "$BRANCH" == bigpickle/* ]] || [[ "$BRANCH" == bot/* ]]; then
+            gh pr edit "${{ github.event.pull_request.number }}" --add-label "origin/agent"
+          elif [[ "$AUTHOR" == "dependabot[bot]" ]]; then
+            gh pr edit "${{ github.event.pull_request.number }}" --add-label "origin/bot"
+          else
+            gh pr edit "${{ github.event.pull_request.number }}" --add-label "origin/human"
+          fi
+
+  cleanup:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request' && github.event.action == 'closed'
+    steps:
+      - name: Cleanup branch
+        run: |
+          python3 .github/scripts/pr_lifecycle.py ensure-labels
+          
+          if "${{ github.event.pull_request.merged }}" == "true"; then
+            STATE="merged"
+          else
+            STATE="abandoned"
+          fi
+          
+          python3 .github/scripts/pr_lifecycle.py set-state \
+            --pr-number "${{ github.event.pull_request.number }}" \
+            --state "$STATE"
+          
+          git push origin --delete "${{ github.event.pull_request.head.ref }}" || true
