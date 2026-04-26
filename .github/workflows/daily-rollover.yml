@@ -163,15 +163,13 @@ jobs:
 
           echo "pr_number=$PR_NUMBER" >> "$GITHUB_OUTPUT"
 
-      # - name: Arm auto-merge for rollover PR
-      #   # DISABLED: github-actions[bot] can't auto-merge into protected main branch
-      #   # Fix: either disable main branch protection or manually merge the PR
-      # if: steps.resolve-pr.outputs.pr_number != ''
-      # env:
-      #   GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      # run: |
-      #   python3 .github/scripts/review_feedback_loop.py \
-      #     enable-auto-merge \
-      #     --owner "${{ github.repository_owner }}" \
-      #     --repo "${{ github.event.repository.name }}" \
-      #     --pr-number "${{ steps.resolve-pr.outputs.pr_number }}"
+- name: Arm auto-merge for rollover PR
+        if: steps.resolve-pr.outputs.pr_number != ''
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 .github/scripts/review_feedback_loop.py \
+            enable-auto-merge \
+            --owner "${{ github.repository_owner }}" \
+            --repo "${{ github.event.repository.name }}" \
+            --pr-number "${{ steps.resolve-pr.outputs.pr_number }}"
