@@ -1,4 +1,4 @@
-name: Branch Cleanup
+name: Branch & PR Cleanup
 
 on:
   pull_request:
@@ -7,6 +7,7 @@ on:
       - main
   schedule:
     - cron: '0 9 * * 1'  # Every Monday at 9am UTC
+    - cron: '0 13 * * *'  # Daily at 1pm UTC - stale PR sweep
   workflow_dispatch:
     inputs:
       dry_run:
@@ -169,3 +170,12 @@ jobs:
           } >> "$GITHUB_STEP_SUMMARY"
 
           echo "Done."
+
+          # Daily stale PR sweep (runs on daily schedule trigger)
+          if [ "$EVENT_NAME" = "schedule" ] && [ "$(date -u +%H)" = "13" ]; then
+            python .github/scripts/stale_bot_prs.py \
+              --apply \
+              --age-days 2 \
+              --report-path stale-prs-cleanup.md \
+              2>/dev/null || echo "Stale PR sweep: no stale PRs found"
+          fi
