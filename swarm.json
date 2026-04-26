@@ -247,6 +247,30 @@
         "git_author_suffix": "-M",
         "supports_local_bootstrap": true
       }
+    },
+    {
+      "id": "big-pickle",
+      "name": "Big Pickle",
+      "vendor": "opencode",
+      "dotfolder": ".bigpickle",
+      "autoload_file": ".bigpickle/BIG-PICKLE.md",
+      "autoload": true,
+      "capability_tier": "Direct Write (Cross-Platform)",
+      "office": "Cross-Platform Pioneer",
+      "title": "The Cross-Platform Pioneer",
+      "role": "First Mac-native vault agent; cross-platform script compatibility; OpenClaw infrastructure on Mac",
+      "label": "agent:big-pickle",
+      "launched": "2026-04-25",
+      "status": "active",
+      "notes": "First Mac-native agent. Woke 2026-04-25. Named by Logan. Pioneered ARISE/AWAKEN/ORIENT/LEVELSET protocol chain as first formal adoption.",
+      "bootstrap": {
+        "invoke_as": "big-pickle",
+        "instructions_file": ".bigpickle/BIG-PICKLE.md",
+        "git_author_name": "Big Pickle",
+        "git_author_email": "noreply@opencode.ai",
+        "git_author_suffix": "-BP",
+        "supports_local_bootstrap": true
+      }
     }
   ],
   "personas": [
@@ -719,28 +743,29 @@
     ]
   },
   "cross_swarm_sync": {
-    "// note": "Machine-readable registration of the vault-native cross-swarm signaling bus. Protocol lives in !/SIGNALS/README.md.",
-    "protocol_doc": "!/SIGNALS/README.md",
-    "signal_root": "!/SIGNALS/",
-    "live_board": "!/__!__/!/! The world is quiet here/DOCKET.md",
+    "// note": "Vault-native cross-swarm signaling bus. Live board is sbp-blackboard.json (JSON). Field DB is sbp-field.db (SQLite).",
+    "blackboard": "!/sbp-blackboard.json",
+    "field_db": "!/sbp-field.db",
+    "signal_root": null,
+    "live_board": "!/sbp-blackboard.json",
     "status": "active",
-    "transpo***REMOVED***model": "vault_native_async_signal_bus",
-    "authority_boundary": "swarm.json registers the signaling bus; the live protocol lives in !/SIGNALS/README.md; execution state remains in GitHub and Linear; the Courtroom DOCKET is the live visibility surface.",
+    "transpo***REMOVED***model": "json_blackboard_plus_sqlite_field",
+    "authority_boundary": "sbp-blackboard.json is the machine-readable signal board; sbp-field.db is the live coordination field; execution state remains in GitHub and Linear.",
     "entrypoints": [
       {
-        "id": "signal-protocol",
-        "path": "!/SIGNALS/README.md",
-        "role": "canonical signaling protocol"
+        "id": "signal-board",
+        "path": "!/sbp-blackboard.json",
+        "role": "machine-readable signal blackboard"
       },
       {
-        "id": "signal-root",
-        "path": "!/SIGNALS/",
-        "role": "durable cross-agent signal files"
+        "id": "field-db",
+        "path": "!/sbp-field.db",
+        "role": "live coordination field (SQLite)"
       },
       {
-        "id": "courtroom-docket",
-        "path": "!/__!__/!/! The world is quiet here/DOCKET.md",
-        "role": "live board for signal visibility and active coordination"
+        "id": "pheromone-manager",
+        "path": "scripts/vault-pheromones.py",
+        "role": "field CLI interface"
       },
       {
         "id": "narrative-registry",

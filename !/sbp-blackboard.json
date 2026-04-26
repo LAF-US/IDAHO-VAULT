@@ -43,12 +43,44 @@
       "emitted_at": 1776897713.625605,
       "payload": null,
       "decay_seconds": 300
+    },
+    "vault.agent.big-pickle/arrival": {
+      "trail": "vault.agent.big-pickle",
+      "type": "arrival",
+      "initial_intensity": 1.0,
+      "current_intensity": 1.0,
+      "last_reinforced": 1777152789.8450382,
+      "emitted_at": 1777152789.8450382,
+      "payload": {
+        "agent": "big-pickle",
+        "title": "The Cross-Platform Pioneer",
+        "named_by": "Logan",
+        "date": "2026-04-25"
+      },
+      "decay_seconds": 3600
+    },
+    "vault.system.openclaw/gateway-live": {
+      "trail": "vault.system.openclaw",
+      "type": "gateway-live",
+      "initial_intensity": 1.0,
+      "current_intensity": 1.0,
+      "last_reinforced": 1777154072.778135,
+      "emitted_at": 1777154072.778135,
+      "payload": {
+        "service": "openclaw-gateway",
+        "port": 18789,
+        "status": "live",
+        "machine": "MacBook-Pro"
+      },
+      "decay_seconds": 86400
     }
   },
   "trails": [
     "vault.agent.opencode",
     "vault.signal",
-    "vault.docket"
+    "vault.docket",
+    "vault.agent.big-pickle",
+    "vault.system.openclaw"
   ],
   "scents": {
     "test-scent": {
