@@ -87,6 +87,7 @@ Immediate wakeup facts:
 | Agent | Persona | Vendor | Role | Dotfolder | Tri-Part |
 | --- | --- | --- | --- | --- | --- |
 | Mistral Vibe | **[ ? ]** | Mistral AI | [ ? ] | .mistral/ | ⚠️ Partial |
+| Big Pickle | **The Cross-Platform Pioneer** | opencode | Cross-Platform | .bigpickle/ | ✅ Complete |
 | Grok | **The Ironist** | xAI | Analysis | .grok/ | ⚠️ Partial |
 | DeepSeek | **The Analyst** | DeepSeek | Advisory | .deepseek/ | ⚠️ Partial |
 | Perplexity | **The Scout** | Perplexity | Sourcing | .perplexity/ | ⚠️ Partial |
