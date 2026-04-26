@@ -16,7 +16,6 @@ on:
       - main
   schedule:
     - cron: '*/10 * * * *'
-  workflow_dispatch:  # Every 10 minutes
   workflow_dispatch:
 
 permissions:
