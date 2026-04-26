@@ -1,29 +1,29 @@
 ---
-title: {{date:YYYY-MM-DD}}
+title: 2026-04-26
 aliases:
-  - {{date:YYYY-MM-DD}}
-  - {{date:MMMM D, YYYY}}
-  - {{date:MMMM Do, YYYY}}
-  - {{date:D MMMM YYYY}}
-  - {{date:dddd, MMMM D, YYYY}}
-linter-yaml-title-alias: {{date:YYYY-MM-DD}}
-yesterday: {{date-1d:YYYY-MM-DD}}
-tomorrow: {{date+1d:YYYY-MM-DD}}
+  - 2026-04-26
+  - April 26, 2026
+  - April 26th, 2026
+  - 26 April 2026
+  - Sunday, April 26, 2026
+linter-yaml-title-alias: 2026-04-26
+yesterday: 2026-04-25
+tomorrow: 2026-04-27
 weekday:
-  - {{date:dddd}}
+  - Sunday
 cssclasses:
-  - roygbiv-<% tp.date.now("ddd", 0, tp.file.title, "YYYY-MM-DD").toLowerCase() %>
+  - roygbiv-sun
 tags:
   - today
-  - {{date:YYYY/MM/DD}}
+  - 2026/04/26
   - dailynote
 related:
   - TO DO LIST
-date created: {{date:dddd, MMMM Do YYYY, [12:00:00 am]}}
-date modified: {{date:dddd, MMMM Do YYYY, [12:00:00 am]}}
+date created: Sunday, April 26th 2026, 12:00:00 am
+date modified: Sunday, April 26th 2026, 12:00:00 am
 ---
 
-# {{date:dddd, MMMM D, YYYY}}
+# Sunday, April 26, 2026
 
 ## Daily Queue
 
@@ -34,3 +34,9 @@ date modified: {{date:dddd, MMMM Do YYYY, [12:00:00 am]}}
 ## Notes
 
 - 
+
+## End Of Day
+
+**What got done today:**
+
+**What I'll carry forward:**
