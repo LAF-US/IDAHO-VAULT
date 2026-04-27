@@ -1,8 +1,7 @@
 name: Daily To-Do Rollover (SHA-Pinned)
 
 # Carries incomplete to-do items from yesterday's daily note into today's.
-# Runs at 4 AM MT (10:00 UTC), a liminal hour.
-# Can also be triggered manually from the Actions tab or via workflow_dispatch.
+# Trigger: schedule (4 AM MT) + manual workflow_dispatch
 # SHA-pinned to comply with LAF-US security policies.
 
 on:
