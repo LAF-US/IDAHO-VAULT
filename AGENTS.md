@@ -78,6 +78,14 @@ Immediate wakeup facts:
 8. Read `!README.md` only when the task needs Touchstone Tree or narrative context.
 9. Treat historical CrewAI harbor notes as non-live unless `.crewai/MANIFEST.md` or `!/AGENTS.md` says otherwise.
 
+## Discovery Before Construction
+
+Before proposing builds, new packages, or invention: discover and read existing documentation first. Do not assume tooling is missing or scaffolding is required without checking what's already present in the vault.
+
+## Fix Errors, Don't Disable
+
+When code throws errors, the error means something needs fixed. Do not disable security checks, linters, or validators to silence errors. Fix the underlying issue.
+
 When live surfaces disagree, follow this order:
 
 1. Logan's direct instruction
