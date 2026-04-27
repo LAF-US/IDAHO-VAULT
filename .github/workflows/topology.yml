@@ -3,9 +3,6 @@ name: Topology Census
 on:
   schedule:
     - cron: '0 6 * * 1'  # Weekly
-  workflow_dispatch:
-
-permissions:
   contents: write
   pull-requests: write
 

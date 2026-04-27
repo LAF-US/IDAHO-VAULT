@@ -12,15 +12,6 @@ on:
     - cron: "30 13 * * *"
 
   # Triggerable from GitHub mobile → Actions tab → Run workflow
-  workflow_dispatch:
-    inputs:
-      year:
-        description: "Session year to export"
-        required: false
-        default: "2026"
-        type: string
-
-jobs:
   export-csv:
     name: Export Bills to CSV for Flourish
     runs-on: ubuntu-latest

@@ -1,9 +1,6 @@
 name: Legacy Vault Propose Moves (Superseded)
 
 on:
-  workflow_dispatch:
-
-jobs:
   propose-moves:
     runs-on: ubuntu-latest
     permissions:

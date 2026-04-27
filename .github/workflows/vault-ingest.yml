@@ -3,9 +3,6 @@ name: Vault Ingest
 on:
   schedule:
     - cron: '0 12 * * *'
-  workflow_dispatch:
-
-jobs:
   ingest:
     runs-on: ubuntu-latest
     permissions:

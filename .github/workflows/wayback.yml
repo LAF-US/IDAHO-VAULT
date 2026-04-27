@@ -9,19 +9,6 @@ on:
       - 'TOPICS/**'
   schedule:
     - cron: '0 8 * * 1'  # Weekly audit
-  workflow_dispatch:
-    inputs:
-      limit:
-        description: 'Limit to N URLs (0 = all)'
-        required: false
-        default: '0'
-      save:
-        description: 'Submit dead URLs to Save Page Now'
-        type: boolean
-        required: false
-        default: false
-
-permissions:
   contents: write
 
 jobs:
