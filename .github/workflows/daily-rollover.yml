@@ -1,14 +1,9 @@
-name: Daily To-Do Rollover (SHA-Pinned)
-
-# Carries incomplete to-do items from yesterday's daily note into today's.
-# Runs at 4 AM MT (10:00 UTC).
-# SHA-pinned for LAF-US security compliance.
+name: Daily To-Do Rollover
 
 on:
   schedule:
     - cron: '0 10 * * *'  # 4 AM MT
   workflow_dispatch:
-  push:
 
 jobs:
   rollover:
@@ -18,84 +13,28 @@ jobs:
       contents: write
 
     steps:
-       - name: Checkout vault
-         uses: actions/checkout@0c366fd6a839edf440554fa01a7085ccba70ac98
-         with:
-           fetch-depth: 1
+      - name: Checkout vault
+        uses: actions/checkout@v4
 
-      - name: Normalize checkout line endings
-        run: |
-          git config --local core.autocrlf false
-          git config --local core.eol lf
-          git config --local core.safecrlf false
-          git reset --hard HEAD
-
-       - name: Set up Python
-         uses: actions/setup-python@c8813ba1bc76ebf779b911ad8ffccbf2e449cb48
-         with:
-           python-version: '3.11'
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
 
       - name: Run daily rollover
-        id: rollover
         run: |
           DATE="$(TZ=America/Boise date +%Y-%m-%d)"
           python3 .github/scripts/daily_rollover.py --date "$DATE"
 
-      - name: Prepare rollover changes
-        id: changes
+      - name: Commit and Push Changes
         run: |
           TARGET_DATE="$(TZ=America/Boise date +%Y-%m-%d)"
-          echo "target_date=${TARGET_DATE}" >> "$GITHUB_OUTPUT"
-
-          # Check for any unexpected changes outside expected files
-          UNEXPECTED=()
-          mapfile -d '' -t UNEXPECTED < <(
-            git diff --name-only -z -- . \
-              ":(exclude)${TARGET_DATE}.md" \
-              ":(exclude)TO DO LIST.md" 2>/dev/null || true
-          )
-          mapfile -d '' -t UNTRACKED < <(
-            git ls-files --others --exclude-standard -z -- . \
-              ":(exclude)${TARGET_DATE}.md" \
-              ":(exclude)TO DO LIST.md" 2>/dev/null || true
-          )
-          UNEXPECTED+=("${UNTRACKED[@]}")
-
-          if [ ${#UNEXPECTED[@]} -gt 0 ]; then
-            echo "### Daily rollover warning" >> "$GITHUB_STEP_SUMMARY"
-            echo "" >> "$GITHUB_STEP_SUMMARY"
-            echo "Unexpected worktree changes detected outside approved files:" >> "$GITHUB_STEP_SUMMARY"
-            printf -- '- %s\n' "${UNEXPECTED[@]}" >> "$GITHUB_STEP_SUMMARY"
-            echo "" >> "$GITHUB_STEP_SUMMARY"
-            echo "Only \`${TARGET_DATE}.md\` and \`TO DO LIST.md\` will be staged." >> "$GITHUB_STEP_SUMMARY"
-          fi
-
-          # Stage only expected files
-          git add "${TARGET_DATE}.md" "TO DO LIST.md" 2>/dev/null || true
-          if git diff --cached --quiet; then
-            echo "has_changes=false" >> "$GITHUB_OUTPUT"
-            echo "✅ No changes to commit - to-dos already current."
-          else
-            echo "has_changes=true" >> "$GITHUB_OUTPUT"
-            echo "✅ Changes ready to commit."
-          fi
-
-      - name: Commit and Push Changes
-        if: steps.changes.outputs.has_changes == 'true'
-        id: commit
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          TARGET_DATE="${{ steps.changes.outputs.target_date }}"
-          TITLE="rollover: carry incomplete to-dos to ${TARGET_DATE}"
-          echo "title=${TITLE}" >> "$GITHUB_OUTPUT"
-
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add "${TARGET_DATE}.md" "TO DO LIST.md"
           if git diff --cached --quiet; then
-            echo "No staged rollover changes found."
+            echo "No changes to commit"
             exit 0
           fi
-          git commit -m "$TITLE"
+          git commit -m "rollover: carry incomplete to-dos to ${TARGET_DATE}"
           git push origin main
