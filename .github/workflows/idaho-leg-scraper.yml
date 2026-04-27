@@ -7,30 +7,6 @@ on:
   #   - cron: "0 13 * * *"
 
   # Triggerable from GitHub mobile → Actions tab → Run workflow
-  workflow_dispatch:
-    inputs:
-      year:
-        description: "Session year to scrape"
-        required: false
-        default: "2026"
-        type: string
-      force:
-        description: "Force re-fetch all bills (including finalized)"
-        required: false
-        default: false
-        type: boolean
-      bill:
-        description: "Scrape only one bill (e.g. H0001, S0042). Leave blank for all."
-        required: false
-        default: ""
-        type: string
-      members:
-        description: "Also scrape House/Senate member profiles"
-        required: false
-        default: false
-        type: boolean
-
-jobs:
   scrape:
     name: Scrape Idaho Legislature
     runs-on: ubuntu-latest
