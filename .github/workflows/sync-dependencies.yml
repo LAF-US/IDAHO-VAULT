@@ -1,0 +1,34 @@
+name: Sync Dependencies
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - pyproject.toml
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@0c366fd6a839edf440554fa01a7085ccba70ac98
+
+      - uses: actions/setup-python@c8813ba1bc76ebf779b911ad8ffccbf2e449cb48
+        with:
+          python-version: "3.13"
+
+      - name: Generate requirements.txt
+        run: |
+          uv pip compile pyproject.toml -o requirements.txt
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add requirements.txt
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: sync requirements.txt from pyproject.toml"
+            git push origin main
+          fi
