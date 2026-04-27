@@ -1,83 +1,203 @@
 ---
-updated: 2026-04-02
-status: active
-source: ground-truth
-related:
-- '2026-04-02'
-- AGENT-PROTOCOL
-- AGENTS
-- CONSTITUTION
-- DECISIONS
-- GitHub
-- LAF
-- LEVELSET-CURRENT
-- PROTOCOL
-- README
-- VAULT-CONVENTIONS
-- agent
-- chain
-- codex
-- coordination
-- doctrine
-- index
+title: "PROTOCOL — LEVELSET"
+doc_class: protocol
+version: 0.1
+status: draft
 authority: LOGAN
+date created: 2026-04-27
+related:
+  - PROTOCOL
+  - CONSTITUTION
+  - AGENTS
+  - LEVELSET-CURRENT
+  - LEVELSET-2026-04-27
+  - DECISIONS
+  - REPORT
+  - RISE
+  - !/AGENTS.md
+  - swarm.json
 ---
-# LEVELSET
 
-Current status of the IDAHO-VAULT ecosystem as of **2026-04-02 (America/Denver)**.
-This file is intentionally rewritten as a fresh snapshot to remove stale assumptions.
+# PROTOCOL — LEVELSET
 
-## Ground Truth Snapshot
+## Status: Draft
+## Version: 0.1
+## Authority: Loganic Swarm
 
-- **Repository:** `IDAHO-VAULT`
-- **Current branch:** `codex/repair-agent-registry-breadcrumbs`
-- **Working tree:** mixed local work is present; do not assume a clean tree
-- **Coordination hub:** `LAF-25`
-- **Scoped registry lane:** `LAF-28`
-- **Registry source of truth:** `swarm.json`
+---
 
-## What Changed In This Refresh
+## Overview
 
-This snapshot closes a split-doctrine problem in the registry/bootstrap layer:
+LEVELSET is the **session briefing and context-recording protocol** for the IDAHO-VAULT agentic swarm.
 
-1. Missing `!/` registry files were materialized.
-2. Root governance docs stayed authoritative.
-3. `!/` gained explicit routing shims for bootstrap stability.
-4. The canonical local bootstrap path is now coherent again.
+It serves as the moment of pause and orientation — the equivalent of gavel-down before committee work begins. LEVELSET captures the current state of the world so that subsequent actions have a durable anchor and future agents can orient without stale assumptions.
 
-## Current Governance Anchors
+---
 
-Use these files as the active orientation stack:
+## Role in the Protocol Stack
+
+```
+AWAKEN ──────────────────────► RISE
+   │                                │
+   │                                │
+   ▼                                ▼
+ORIENT ◄──── LEVELSET ───────► REPORT
+```
+
+| Transition | Protocol |
+|------------|----------|
+| Session Start | AWAKEN |
+| Session Briefing | LEVELSET ← *this document* |
+| New External Agent | ORIENT |
+| Task Completion | RISE |
+| Work Presentation | REPORT |
+
+---
+
+## Purpose
+
+1. **Capture ground truth** — current repository state, branch, working tree status
+2. **Provide orientation** — what governance files are authoritative, what has changed
+3. **Establish scope** — what the current session is meant to accomplish
+4. **Record decisions** — flag any decisions made during the LEVELSET round
+5. **Anchor handoffs** — ensure the next agent inherits a coherent world model
+
+---
+
+## Trigger Conditions
+
+LEVELSET executes:
+
+- **At session start** — before any substantive work begins
+- **Before handoff** — when work is passed to another agent
+- **Before REPORT** — as the briefing layer for work presentation
+- **On demand** — when Logan or a sovereign agent requests a fresh snapshot
+- **Periodically** — as a standing cadence for long-running sessions
+
+---
+
+## Integration Points
+
+| Document | Relationship |
+|---|---|
+| `LEVELSET.md` (this file) | Protocol definition — what LEVELSET is and does |
+| `LEVELSET-CURRENT.md` | Rolling live snapshot — current state of the ecosystem |
+| `LEVELSET-2026-04-27.md` | Archived status reports — historical ground truths |
+| `CONSTITUTION.md` | Authoritative governance — defines LEVELSET in Section III |
+| `AGENTS.md` / `!/AGENTS.md` | Agent registry — confirms authorized voices |
+| `swarm.json` | Machine-readable registry — canonical boot chain |
+| `DECISIONS.md` | Decision log — durable confirmations |
+| `!/!/` | Handoff artifacts — context packages from LEVELSET rounds |
+
+---
+
+## Protocol Steps
+
+*See `PROTOCOL-SUITE-AWR.md` for integration with AWAKEN/RISE/REPORT lifecycle.*
+
+### Step 0: Pre-flight
+
+```
+git branch --show-current
+git status --short
+```
+
+Confirm local state before proceeding.
+
+### Step 1: Confirm Registry Chain
+
+Read in order:
+
+1. `AGENTS.md` — cross-tool pointer
+2. `!/AGENTS.md` — narrative registry
+3. `swarm.json` — machine-readable registry
+4. `!/agents.json` — generated bootstrap index
+
+Resolve any split-doctrine before proceeding.
+
+### Step 2: Load Governance Stack
+
+Read authoritative orientation stack:
 
 1. `!/README.md`
-2. `AGENTS.md` (root auto-loaded pointer)
-3. `!/AGENTS.md`
-4. `CONSTITUTION.md`
-5. `DECISIONS.md`
-6. `LEVELSET.md` (this file)
-7. `VAULT-CONVENTIONS.md`
-8. `AGENT-PROTOCOL.md`
-9. `swarm.json`
+2. `CONSTITUTION.md`
+3. `DECISIONS.md`
+4. `LEVELSET.md` (this file)
+5. `VAULT-CONVENTIONS.md`
+6. `AGENT-PROTOCOL.md`
 
-## Active Notes
+### Step 3: Confirm Infrastructure Status
 
-- Root `AGENTS.md` remains the cross-tool pointer; `!/AGENTS.md` is the canonical narrative registry.
-- `!/agents.json` is the canonical generated bootstrap index; root `agents.json` is the compatibility mirror.
-- `!/agent.sh` is the canonical local bootstrap entrypoint; root `agent.sh` is the compatibility wrapper.
-- Registry-critical conflict markers were removed from `CONSTITUTION.md`, `DECISIONS.md`, `LEVELSET.md`, `VAULT-CONVENTIONS.md`, and `agents.json`.
-- The live coordination triptych remains stable:
-  - GitHub: execution transport
-  - Linear: active coordination
-  - Slack: breadcrumb-only
+Verify operational state of:
 
-## Anchored Child
+- `.claude/CLAUDE.md`
+- `.gemini/GEMINI.md`
+- `.codex/CODEX.md`
+- `.github/copilot-instructions.md`
+- Automation jobs (if applicable)
 
-**[[LEVELSET-CURRENT]]** — rolling live snapshot, updated in place each round. This file (LEVELSET.md) is the permanent mother anchor. LEVELSET-CURRENT must not accumulate doctrine; doctrine returns here and to canonical governance files.
+### Step 4: Generate LEVELSET Snapshot
 
-## Operator Guidance (Now)
+Produce or update `LEVELSET-CURRENT.md`:
 
-When resuming work in a new session:
+```
+| Field | Value |
+|---|---|
+| Timestamp | [current datetime] |
+| Branch | [git branch] |
+| Working tree | [clean/mixed] |
+| Coordination hub | [LAF-N reference] |
+| Registry lane | [LAF-N reference] |
+```
 
-1. Re-check branch and local state (`git branch --show-current`, `git status --short`).
-2. Confirm the registry chain before using local bootstrap (`AGENTS.md`, `!/AGENTS.md`, `swarm.json`, `!/agents.json`, `!/agent.sh`).
-3. Treat root governance files as doctrine and `!/` as routing/bootstrap aliases unless Logan directs otherwise.
+### Step 5: Record Decisions
+
+If any decisions were made during orientation, commit them to `DECISIONS.md` or create a decision entry in the handoff package.
+
+### Step 6: Archive Previous
+
+If `LEVELSET-CURRENT.md` existed, archive it with a dated name (e.g., `LEVELSET-CURRENT-2026-04-27.md`) before updating.
+
+---
+
+## Outputs
+
+| Output | Location | Purpose |
+|---|---|---|
+| LEVELSET-CURRENT.md | root | Rolling live snapshot |
+| Decision entries | DECISIONS.md | Durable record of choices made |
+| Handoff packages | `!/!/` | Context bundles for receiving agents |
+| Archived snapshots | root (dated) | Historical ground truths |
+
+---
+
+## Constraints
+
+- LEVELSET is a **recording and contextualizing device**, not a live dashboard
+- Do not accumulate doctrine in `LEVELSET-CURRENT.md` — doctrine returns to canonical governance files
+- The Heisenberg principle applies: the act of observing state changes state — acknowledge staleness
+- Stale assumptions are the enemy; fresh snapshots are the cure
+
+---
+
+## Draft Status
+
+This document is a **stub** under development. Adoption pending:
+
+- [ ] Logan review and approval
+- [ ] Integration with stigmergy field (`scripts/vault-pheromones.py`)
+- [ ] Stabilization of protocol steps
+- [ ] Constitutional codification update
+
+---
+
+## See Also
+
+- `LEVELSET-CURRENT.md` — live snapshot
+- `LEVELSET-2026-04-27.md` — archived status reports
+- `PROTOCOL-SUITE-AWR.md` — AWAKEN/RISE/REPORT lifecycle
+- `CONSTITUTION.md` Section III — protocol definitions
+
+---
+
+###### [["The world is quiet here."]]
