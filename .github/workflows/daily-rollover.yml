@@ -1,23 +1,12 @@
 name: Daily To-Do Rollover (SHA-Pinned)
 
 # Carries incomplete to-do items from yesterday's daily note into today's.
-# Trigger: schedule (4 AM MT) + manual workflow_dispatch
-# SHA-pinned to comply with LAF-US security policies.
+# Runs at 4 AM MT (10:00 UTC).
+# SHA-pinned for LAF-US security compliance.
 
 on:
   schedule:
     - cron: '0 10 * * *'  # 4 AM MT
-  workflow_dispatch:
-    inputs:
-      date:
-        description: 'Target date to roll INTO (YYYY-MM-DD). Defaults to today.'
-        required: false
-        default: ''
-      dry_run:
-        description: 'Dry run - print output without writing files'
-        required: false
-        default: 'false'
-        type: boolean
 
 jobs:
   rollover:
@@ -48,19 +37,13 @@ jobs:
       - name: Run daily rollover
         id: rollover
         run: |
-          ARGS=()
-          DATE="${{ github.event.inputs.date }}"
-          DRY="${{ github.event.inputs.dry_run }}"
-          [ -z "$DATE" ] && DATE="$(TZ=America/Boise date +%Y-%m-%d)"
-          [ -n "$DATE" ] && ARGS+=("--date" "$DATE")
-          [ "$DRY" = "true" ] && ARGS+=("--dry-run")
-          python3 .github/scripts/daily_rollover.py "${ARGS[@]}"
+          DATE="$(TZ=America/Boise date +%Y-%m-%d)"
+          python3 .github/scripts/daily_rollover.py --date "$DATE"
 
       - name: Prepare rollover changes
         id: changes
         run: |
-          TARGET_DATE="${{ github.event.inputs.date }}"
-          [ -z "$TARGET_DATE" ] && TARGET_DATE="$(TZ=America/Boise date +%Y-%m-%d)"
+          TARGET_DATE="$(TZ=America/Boise date +%Y-%m-%d)"
           echo "target_date=${TARGET_DATE}" >> "$GITHUB_OUTPUT"
 
           # Check for any unexpected changes outside expected files
@@ -97,7 +80,7 @@ jobs:
           fi
 
       - name: Commit and Push Changes
-        if: steps.changes.outputs.has_changes == 'true' && github.event.inputs.dry_run != 'true'
+        if: steps.changes.outputs.has_changes == 'true'
         id: commit
         env:
           GH_TOKEN: ${{ github.token }}
@@ -120,7 +103,7 @@ jobs:
           git push --force-with-lease origin "$BRANCH_NAME"
 
       - name: Find or Create PR
-        if: steps.changes.outputs.has_changes == 'true' && github.event.inputs.dry_run != 'true'
+        if: steps.changes.outputs.has_changes == 'true'
         id: pr
         env:
           GH_TOKEN: ${{ github.token }}
@@ -146,7 +129,7 @@ jobs:
           fi
 
       - name: Arm auto-merge
-        if: steps.pr.outputs.pr_number != '' && github.event.inputs.dry_run != 'true'
+        if: steps.pr.outputs.pr_number != ''
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
