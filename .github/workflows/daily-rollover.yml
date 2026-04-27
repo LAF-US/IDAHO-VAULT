@@ -7,6 +7,8 @@ name: Daily To-Do Rollover (SHA-Pinned)
 on:
   schedule:
     - cron: '0 10 * * *'  # 4 AM MT
+  workflow_dispatch:
+  push:
 
 jobs:
   rollover:
