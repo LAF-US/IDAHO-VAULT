@@ -12,4 +12,4 @@ This file serves as the project-specific Table of Contents for Gemini's context 
 ## Key References
 - [[!/AGENTS.md]] — Agent registry and capability tiers.
 - [[DOCKET.md]] — Live task board (located at `!/!/__!__/!/! The world is quiet here/DOCKET.md`).
-- [[LEVELSET-CURRENT.md]] — Live ecosystem state.
+- [[LEVELSET-CURRENT-depreciated-AGAIN]] — Live ecosystem state.
