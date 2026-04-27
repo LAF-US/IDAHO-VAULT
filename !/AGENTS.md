@@ -300,6 +300,10 @@ migration note.
 
 **Rule**: Branch prefix IS the truth. Automation uses branch prefix to classify origin, not git author identity.
 
+**Rule**: Discovery Before Construction. Before proposing builds, new packages, or invention: discover and read existing documentation first. Do not assume tooling is missing or scaffolding is required without checking what's already present in the vault.
+
+**Rule**: Fix Errors, Don't Disable. When code throws errors, the error means something needs fixed. Do not disable security checks, linters, or validators to silence errors. Fix the underlying issue.
+
 - **Durable Record**: Decisions must be promoted from chat to the vault (e.g., `DECISIONS.md`).
 - **Linear Hub**: Active tasks are tracked via the **SWARM** label in Linear.
 - **Cross-Swarm Signals**: `!/SIGNALS/` is the durable async bus for agent-to-agent signaling; the Courtroom DOCKET reflects live visibility.
