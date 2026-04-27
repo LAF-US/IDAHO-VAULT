@@ -5,9 +5,6 @@ name: Todoist Probe
 # back to itself. Layer a real bridge on top of this once it's green.
 
 on:
-  workflow_dispatch:
-
-jobs:
   probe:
     runs-on: ubuntu-latest
     permissions:
