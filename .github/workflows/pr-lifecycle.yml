@@ -2,7 +2,6 @@ name: PR Lifecycle
 
 # Unified PR automation: create → reconcile → merge → cleanup
 # THREE-IN-ONE: One system doing one job
-# NOTE: Removed workflow_dispatch - GitHub API bug causes 422 errors
 
 on:
   create:
@@ -17,7 +16,6 @@ on:
       - main
   schedule:
     - cron: '*/10 * * * *'
-  workflow_dispatch:
 
 permissions:
   contents: write
@@ -87,7 +85,7 @@ jobs:
 
   reconcile:
     runs-on: ubuntu-latest
-    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    if: github.event_name == 'schedule'
     env:
       GH_TOKEN: ${{ github.token }}
     steps:
