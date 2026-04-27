@@ -21,8 +21,21 @@ Arguments:
 import argparse
 import re
 import sys
+import typing
 from datetime import date, timedelta
 from pathlib import Path
+
+
+def _print(message: typing.Any) -> None:
+    """Safe stdout printing for both *nix and Windows."""
+    if isinstance(message, str):
+        message = message.replace("\r", "")
+    print(message)
+
+
+def log(message: typing.Any) -> None:
+    """Alias for _print to maintain backward compatibility."""
+    _print(message)
 
 # ---------------------------------------------------------------------------
 # Paths
@@ -30,6 +43,7 @@ from pathlib import Path
 
 VAULT_ROOT = Path(__file__).resolve().parents[2]
 TODO_LIST_FILE = VAULT_ROOT / "TO DO LIST.md"
+DAILY_NOTES_DIR = VAULT_ROOT / "daily_notes"
 
 # ---------------------------------------------------------------------------
 # Regex
@@ -55,36 +69,77 @@ TASK_SPACE_RE = re.compile(r"\s+")
 
 def extract_todo_section(content: str) -> list[str]:
     """
-    Return lines from the canonical [[TO DO LIST]] marker.
-
-    Stop at the next frontmatter-style separator, next-level header, 
-    or end of file. Preserves organizational bullets (- WORK, - PERSONAL).
+    Return lines between the [[TO DO LIST]] marker and the next --- separator
+    (or end of file). The marker line itself is excluded.
     """
     lines = content.splitlines()
-    in_todo = False
-    todo_lines = []
-    for line in lines:
-        if is_todo_marker(line):
-            in_todo = True
-            continue
-        if in_todo:
-            # Stop if we hit a substantial new section or divider
-            if line.strip() == "---" or line.startswith("## ") or line.startswith("Notes:"):
-                break
-            todo_lines.append(line)
-    return todo_lines
+    start_idx = None
+    for idx, line in enumerate(lines):
+        if line.strip() == "[[TO DO LIST]]":
+            start_idx = idx + 1
+            break
+    if start_idx is None:
+        return []
+    
+    end_idx = len(lines)
+    for idx in range(start_idx, len(lines)):
+        if lines[idx].startswith("---"):
+            end_idx = idx
+            break
+    
+    return lines[start_idx:end_idx]
 
 
-def log(message: str = "") -> None:
-    """Safe stdout printing for both *nix and Windows."""
-    # Ensure no wandering carriage returns mess up the terminal buffer
-    if isinstance(message, str):
-        message = message.replace("\r", "")
-    print(message)
+def extract_daily_queue_section(content: str) -> list[str]:
+    """
+    Return lines between the "## Daily Queue" header and the next top-level header
+    (or end of file). The header line itself is excluded.
+    """
+    lines = content.splitlines()
+    start_idx = None
+    for idx, line in enumerate(lines):
+        if line.strip() == "## Daily Queue":
+            start_idx = idx + 1
+            break
+    if start_idx is None:
+        return []
+    
+    end_idx = len(lines)
+    for idx in range(start_idx, len(lines)):
+        if lines[idx].startswith("## ") and idx != start_idx - 1:
+            end_idx = idx
+            break
+    
+    return lines[start_idx:end_idx]
 
 
-def is_todo_marker(line: str) -> bool:
-    return line.strip() == TODO_MARKER
+def extract_tasks_from_daily_note(content: str) -> dict[str, dict]:
+    """
+    Extract tasks from the "## Daily Queue" section of a daily note.
+    Returns a dictionary of {task_key: {"status": "complete" | "incomplete", "text": str, "group": str}}.
+    """
+    daily_queue_lines = extract_daily_queue_section(content)
+    tasks = {}
+    current_group = None
+    
+    for line in daily_queue_lines:
+        stripped = line.strip()
+        if stripped.startswith("-") and not stripped.startswith("- ["):
+            # Top-level group (e.g., "- WORK")
+            current_group = stripped[1:].strip()
+        elif TASK_RE.match(line):
+            # Task line (e.g., "- [ ] FMLA PAPERWORK")
+            match = TASK_RE.match(line)
+            status = "complete" if match.group(2).lower() == "x" else "incomplete"
+            text = match.group(3).strip()
+            task_key = _normalize_task_text(text)
+            tasks[task_key] = {
+                "status": status,
+                "text": text,
+                "group": current_group
+            }
+    
+    return tasks
 
 
 def _clean_line(line: str) -> str:
@@ -99,7 +154,7 @@ def _is_empty_task_shell(line: str) -> bool:
     return bool(EMPTY_TASK_SHELL_RE.match(_clean_line(line)))
 
 
-def _task_key(line: str) -> str | None:
+def _task_key(line: str) -> typing.Optional[str]:
     match = TASK_RE.match(_clean_line(line))
     if not match:
         return None
@@ -123,6 +178,11 @@ def _normalize_task_text(text: str) -> str:
 
 def _has_date_placeholder(line: str) -> bool:
     return bool(DATE_PLACEHOLDER_RE.search(line))
+
+
+def is_todo_marker(line: str) -> bool:
+    """Return True if the line is the [[TO DO LIST]] marker."""
+    return line.strip() == TODO_MARKER
 
 
 def _is_top_level_task(line: str) -> bool:
@@ -166,7 +226,7 @@ def _copy_todo_model(model: dict[str, object]) -> dict[str, object]:
     return copied
 
 
-def _ensure_group(model: dict[str, object], group_key: str, group_label: str | None) -> None:
+def _ensure_group(model: dict[str, object], group_key: str, group_label: typing.Optional[str]) -> None:
     groups = model["groups"]
     group_order = model["group_order"]
     if group_key in groups:
@@ -178,7 +238,7 @@ def _ensure_group(model: dict[str, object], group_key: str, group_label: str | N
     group_order.append(group_key)
 
 
-def _add_block(model: dict[str, object], group_key: str, group_label: str | None, block: list[str]) -> None:
+def _add_block(model: dict[str, object], group_key: str, group_label: typing.Optional[str], block: list[str]) -> None:
     key = _task_key(block[0])
     if key is None:
         return
@@ -194,7 +254,7 @@ def _add_block(model: dict[str, object], group_key: str, group_label: str | None
     blocks.append(block[:])
 
 
-def _normalize_task_block(block: list[str], keep_completed: bool) -> list[str] | None:
+def _normalize_task_block(block: list[str], keep_completed: bool) -> typing.Optional[list[str]]:
     if not block:
         return None
 
@@ -294,12 +354,30 @@ def exclude_task_keys(model: dict[str, object], excluded_keys: set[str]) -> dict
 
 
 def merge_todo_models(primary: dict[str, object], secondary: dict[str, object]) -> dict[str, object]:
-    """Merge TODO models, preserving primary order and authority for duplicate tasks."""
-
+    """Merge TODO models, preserving primary order and authority for duplicate tasks.
+    
+    Only carries forward incomplete tasks from secondary that don't already exist in primary.
+    """
     merged = _copy_todo_model(primary)
+
+    # Extract existing task keys from primary for dedupe
+    existing_keys = set()
+    for group_key in merged["group_order"]:
+        group = merged["groups"][group_key]
+        for block in group["blocks"]:
+            for line in block:
+                if TASK_RE.match(line):
+                    existing_keys.add(line.strip())
+
     for group_key in secondary["group_order"]:
         group = secondary["groups"][group_key]
         for block in group["blocks"]:
+            # Skip completed tasks
+            if any(line.strip().startswith("- [x]") or line.strip().startswith("- [X]") for line in block):
+                continue
+            # Skip tasks already in primary
+            if any(line.strip() in existing_keys for line in block):
+                continue
             _add_block(merged, group_key, group["label"], block)
     return merged
 
@@ -512,7 +590,7 @@ def extract_active_section(content: str) -> list[str]:
     return active_lines
 
 
-def _find_todo_section_bounds(lines: list[str]) -> tuple[int | None, int | None]:
+def _find_todo_section_bounds(lines: list[str]) -> tuple[typing.Optional[int], typing.Optional[int]]:
     """Return the marker line index and the exclusive end index for the TODO section."""
 
     marker_index = None
@@ -709,7 +787,7 @@ def ensure_daily_frontmatter(content: str, target_date: date) -> str:
 # Write operations
 # ---------------------------------------------------------------------------
 
-def build_today_note_content(target_date: date, carried: list[str], base_content: str | None = None) -> str:
+def build_today_note_content(target_date: date, carried: list[str], base_content: typing.Optional[str] = None) -> str:
     today_file = VAULT_ROOT / f"{target_date}.md"
     block = todo_block_text(carried)
 
@@ -825,17 +903,85 @@ def load_active_todo_list_lines() -> list[str]:
     return extract_active_section(TODO_LIST_FILE.read_text(encoding="utf-8"))
 
 
-# ---------------------------------------------------------------------------
-# Future extension point: habit tracker
-# ---------------------------------------------------------------------------
+def sync_tasks_to_todo_list(todo_list_content: str, daily_note_tasks: dict[str, dict]) -> str:
+    """
+    Sync incomplete tasks from daily notes to TO DO LIST.md.
+    Marks tasks as complete in TO DO LIST.md if they are completed in daily notes.
+    """
+    todo_list_lines = extract_todo_section(todo_list_content)
+    todo_model = parse_todo_model(todo_list_lines, keep_completed=True)
+    
+    # Extract existing task keys from TO DO LIST.md
+    existing_keys = set()
+    for group_key in todo_model["group_order"]:
+        group = todo_model["groups"][group_key]
+        for block in group["blocks"]:
+            for line in block:
+                if TASK_RE.match(line):
+                    task_key = _normalize_task_text(TASK_RE.match(line).group(3))
+                    existing_keys.add(task_key)
+    
+    # Sync tasks from daily notes to TO DO LIST.md
+    for task_key, task_data in daily_note_tasks.items():
+        if task_data["status"] == "complete":
+            # Mark task as complete in TO DO LIST.md
+            for group_key in todo_model["group_order"]:
+                group = todo_model["groups"][group_key]
+                for block in group["blocks"]:
+                    for i, line in enumerate(block):
+                        if TASK_RE.match(line):
+                            current_key = _normalize_task_text(TASK_RE.match(line).group(3))
+                            if current_key == task_key:
+                                block[i] = line.replace("- [ ]", "- [x]")
+        elif task_key not in existing_keys:
+            # Add incomplete task to TO DO LIST.md
+            group_label = task_data["group"] or ROOT_GROUP
+            if group_label not in todo_model["groups"]:
+                todo_model["groups"][group_label] = {"label": group_label, "blocks": []}
+                todo_model["group_order"].append(group_label)
+            task_line = f"- [ ] {task_data['text']}"
+            _add_block(todo_model, group_label, group_label, [task_line])
+    
+    return render_todo_model(todo_model)
 
-# def inject_habit_section(target_date: date, dry_run: bool = False) -> None:
-#     """
-#     Stage 2: inject a habit-tracking section into today's daily note.
-#     Habits defined in a config (e.g. !/HABITS.md or .claude/habits.json).
-#     Each habit renders as an unchecked box for the user to fill in Obsidian.
-#     """
-#     pass
+
+def sync_completed_to_daily_note(daily_note_content: str, todo_list_tasks: dict[str, dict]) -> str:
+    """
+    Sync completed tasks from TO DO LIST.md to daily notes.
+    """
+    lines = daily_note_content.splitlines()
+    daily_queue_start = None
+    daily_queue_end = None
+    
+    # Find the "## Daily Queue" section
+    for idx, line in enumerate(lines):
+        if line.strip() == "## Daily Queue":
+            daily_queue_start = idx + 1
+            break
+    if daily_queue_start is None:
+        return daily_note_content
+    
+    # Find the end of the "## Daily Queue" section
+    for idx in range(daily_queue_start, len(lines)):
+        if lines[idx].startswith("## ") and idx != daily_queue_start - 1:
+            daily_queue_end = idx
+            break
+    if daily_queue_end is None:
+        daily_queue_end = len(lines)
+    
+    # Extract the daily queue section
+    daily_queue_lines = lines[daily_queue_start:daily_queue_end]
+    
+    # Sync completed tasks
+    for i, line in enumerate(daily_queue_lines):
+        if TASK_RE.match(line):
+            task_key = _normalize_task_text(TASK_RE.match(line).group(3))
+            if task_key in todo_list_tasks and todo_list_tasks[task_key]["status"] == "complete":
+                daily_queue_lines[i] = line.replace("- [ ]", "- [x]")
+    
+    # Rebuild the daily note content
+    updated_lines = lines[:daily_queue_start] + daily_queue_lines + lines[daily_queue_end:]
+    return "\n".join(updated_lines)
 
 
 # ---------------------------------------------------------------------------
@@ -860,15 +1006,48 @@ def main() -> None:
         target_date = date.fromisoformat(args.date)
     else:
         target_date = date.today()
-
     source_date = target_date - timedelta(days=1)
     source_file = VAULT_ROOT / f"{source_date}.md"
 
     log(f"Rolling over: {source_date} -> {target_date}")
 
+    # Read TO DO LIST.md
+    if not TODO_LIST_FILE.exists():
+        log(f"ERROR: {TODO_LIST_FILE} not found.")
+        sys.exit(1)
+    todo_list_content = TODO_LIST_FILE.read_text(encoding="utf-8", errors="replace")
+
+    # Extract tasks from daily note
+    daily_note_tasks = {}
+    if source_file.exists():
+        source_content = source_file.read_text(encoding="utf-8")
+        daily_note_tasks = extract_tasks_from_daily_note(source_content)
+    else:
+        log(f"No daily note found for {source_date} - reconciling from TO DO LIST.md only.")
+
+    # Extract tasks from TO DO LIST.md
+    todo_list_lines = extract_todo_section(todo_list_content)
+    todo_list_model = parse_todo_model(todo_list_lines, keep_completed=True)
+    todo_list_tasks = {}
+    for group_key in todo_list_model["group_order"]:
+        group = todo_list_model["groups"][group_key]
+        for block in group["blocks"]:
+            for line in block:
+                if TASK_RE.match(line):
+                    task_key = _normalize_task_text(TASK_RE.match(line).group(3))
+                    status = "complete" if "[x]" in line else "incomplete"
+                    todo_list_tasks[task_key] = {
+                        "status": status,
+                        "text": TASK_RE.match(line).group(3).strip(),
+                        "group": group_key
+                    }
+
+    # Sync tasks from daily note to TO DO LIST.md
+    updated_todo_list_content = sync_tasks_to_todo_list(todo_list_content, daily_note_tasks)
+
+    # Build backlog
     persistent_active = load_active_todo_list_lines()
     if not source_file.exists():
-        log(f"No daily note found for {source_date} - reconciling from TO DO LIST.md only.")
         merged_backlog = normalize_active_backlog_lines(persistent_active)
     else:
         source_content = source_file.read_text(encoding="utf-8")
@@ -882,8 +1061,20 @@ def main() -> None:
     else:
         log("No incomplete items found - nothing to carry forward.")
 
-    update_today_note(target_date, merged_backlog, dry_run=args.dry_run)
-    update_todo_list_md(merged_backlog, dry_run=args.dry_run)
+    # Build today's note content
+    today_note_content = build_today_note_content(target_date, merged_backlog)
+
+    # Sync completed tasks from TO DO LIST.md to today's note
+    today_note_content = sync_completed_to_daily_note(today_note_content, todo_list_tasks)
+
+    # Update files
+    if not args.dry_run:
+        TODO_LIST_FILE.write_text("\n".join(updated_todo_list_content), encoding="utf-8", newline="\n")
+    else:
+        log("\n--- TO DO LIST.md (dry run) ---")
+        log("\n".join(updated_todo_list_content).rstrip("\n"))
+
+    update_today_note(target_date, [line for line in today_note_content.splitlines() if line.strip()], args.dry_run)
 
 
 if __name__ == "__main__":
