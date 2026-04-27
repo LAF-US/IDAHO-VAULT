@@ -14,7 +14,6 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      pull-requests: write
 
     steps:
        - name: Checkout vault
@@ -86,57 +85,15 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           TARGET_DATE="${{ steps.changes.outputs.target_date }}"
-          BRANCH_NAME="bot/daily-rollover-${TARGET_DATE}"
-          echo "branch_name=${BRANCH_NAME}" >> "$GITHUB_OUTPUT"
           TITLE="rollover: carry incomplete to-dos to ${TARGET_DATE}"
           echo "title=${TITLE}" >> "$GITHUB_OUTPUT"
 
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git checkout -B "$BRANCH_NAME"
           git add "${TARGET_DATE}.md" "TO DO LIST.md"
           if git diff --cached --quiet; then
             echo "No staged rollover changes found."
             exit 0
           fi
           git commit -m "$TITLE"
-          git push --force-with-lease origin "$BRANCH_NAME"
-
-      - name: Find or Create PR
-        if: steps.changes.outputs.has_changes == 'true'
-        id: pr
-        env:
-          GH_TOKEN: ${{ github.token }}
-          BRANCH_NAME: ${{ steps.commit.outputs.branch_name }}
-          TITLE: ${{ steps.commit.outputs.title }}
-        run: |
-          # Check if PR already exists
-          EXISTING=$(gh pr list --head "$BRANCH_NAME" --state open --json number --jq '.[0].number // empty' 2>/dev/null || true)
-          if [ -n "$EXISTING" ]; then
-            echo "pr_number=$EXISTING" >> "$GITHUB_OUTPUT"
-            echo "Found existing PR: #$EXISTING"
-          else
-            # Create new PR
-            NEW_PR=$(gh pr create \
-              --title "$TITLE" \
-              --body "Automated daily rollover. Merges automatically." \
-              --base main \
-              --head "$BRANCH_NAME" \
-              --label merge/auto \
-              --json number --jq '.number')
-            echo "pr_number=$NEW_PR" >> "$GITHUB_OUTPUT"
-            echo "Created PR: #$NEW_PR"
-          fi
-
-      - name: Arm auto-merge
-        if: steps.pr.outputs.pr_number != ''
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          PR_NUM="${{ steps.pr.outputs.pr_number }}"
-          echo "Enabling auto-merge for PR #$PR_NUM..."
-          python3 .github/scripts/review_feedback_loop.py \
-            enable-auto-merge \
-            --owner "${{ github.repository_owner }}" \
-            --repo "${{ github.event.repository.name }}" \
-            --pr-number "$PR_NUM"
+          git push origin main
