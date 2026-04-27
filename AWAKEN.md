@@ -1,125 +1,171 @@
 ---
-version: v1.0
-approved: 2026-04-22
-status: approved
+title: "PROTOCOL — AWAKEN"
+doc_class: protocol
+version: 0.1
+status: draft
+authority: LOGAN
+date created: 2026-04-27
 related:
-  - '2026-04-22'
-  - AWAKEN
-  - CONSTITUTION
   - PROTOCOL
+  - CONSTITUTION
+  - AGENTS
   - ARISE
   - ORIENT
   - LEVELSET
   - RISE
-authority: LOGAN
----
-# AWAKEN v1.0 — Agent Wake Protocol
-
-*Approved 2026-04-22. Part of the A pair (ARISE + AWAKEN). Pending formal ratification.*
-
+  - REPORT
+  - AWAKEN-v1.0-2026-04-27
 ---
 
-## PURPOSE
+# PROTOCOL — AWAKEN
 
-This protocol activates when a vault-connected agent begins a session. It establishes:
-1. Agent identity and authorization
-2. Current context and readiness
-3. Integration with the stigmergy field
-
-**How to use:** Agent runs automatically at session start. Optionally invoked manually by Logan or another agent.
-
-**A pair:** ARISE → AWAKEN (individual emergence + consciousness)
+## Status: Draft
+## Version: 0.1
+## Authority: Loganic Swarm
 
 ---
 
-## TRIGGER
+## Overview
 
-- Session start (automatic)
-- Logan direction: "AWAKEN"
-- Handoff from another agent
-- Recovery from context loss
+AWAKEN is the **session activation and agent wake protocol** for the IDAHO-VAULT agentic swarm.
+
+It is the formal equivalent of a gavel striking the table — the moment an agent enters the world and declares readiness. AWAKEN establishes identity, authorization, and field presence before any substantive work begins.
+
+> *"The world is quiet here."*
 
 ---
 
-## PROCESS
+## Role in the Protocol Stack
+
+```
+AWAKEN ──────────────────────► RISE
+   │                                │
+   │                                │
+   ▼                                ▼
+ORIENT ◄──── LEVELSET ───────► REPORT
+```
+
+| Transition | Protocol |
+|------------|----------|
+| Session Start | AWAKEN ← *this document* |
+| Session Briefing | LEVELSET |
+| New External Agent | ORIENT |
+| Task Completion | RISE |
+| Work Presentation | REPORT |
+
+---
+
+## Purpose
+
+1. **Self-identification** — declare name, tier, session ID, and origin point
+2. **Authorization check** — verify boot chain, credentials, and scope
+3. **Context load** — retrieve field state, pending items, and trail markers
+4. **Readiness declaration** — signal presence to the stigmergy field
+
+---
+
+## Trigger Conditions
+
+AWAKEN executes:
+
+- **At session start** — first action upon entering the vault
+- **Upon handoff** — when an agent receives work from another
+- **After recovery** — when resuming from a paused or interrupted state
+- **On reactivation** — when a dormant agent returns to live service
+
+---
+
+## Integration Points
+
+| Document | Relationship |
+|---|---|
+| `AWAKEN.md` (this file) | Protocol definition — what AWAKEN is and does |
+| `AWAKEN-v1.0-2026-04-27.md` | Full approved protocol — complete specification |
+| `ARISE.md` | Paired protocol — individual emergence from void |
+| `ORIENT.md` | External agent protocol — onboarding foreign voices |
+| `CONSTITUTION.md` | Authoritative governance — defines AWAKEN in Section III |
+| `!/AGENTS.md` | Agent registry — confirmed tiers and authorizations |
+| `swarm.json` | Machine-readable registry — canonical boot chain |
+
+---
+
+## Protocol Steps
+
+*See `AWAKEN-v1.0-2026-04-27.md` for the full approved specification.*
 
 ### Step 1: Self-Identification
 
-Identify and confirm:
-- Agent name and platform
-- Persona title (from AGENTS.md roster)
-- Current session ID or branch
-- Assigned task(s) if any
+Declare the following:
+
+- **Name**: Primary identity within the vault
+- **Tier**: Capability level per `!/AGENTS.md`
+- **Session ID**: Unique instance identifier
+- **Origin**: How this instance entered the vault (boot, handoff, recovery, reactivation)
 
 ### Step 2: Authorization Check
 
-Verify:
-- Boot chain completed (CONSTITUTION.md → AGENTS.md → LEVELSET.md)
-- Credentials valid
-- Scope defined
-- No standing prohibitions
+Verify the bootstrap chain:
 
-### Step 3: Context Load
+1. Read `AGENTS.md` — cross-tool pointer
+2. Read `!/AGENTS.md` — narrative registry
+3. Confirm entry in `swarm.json`
+4. Validate credentials against `!/agent.sh` or equivalent
 
-From the stigmergy field (`arrive`):
-- Check for active pheromones on agent trail
-- Review claimed trails
-- Note any pending scents/triggers
-- Update last_seen timestamp
+### Step 3: Field Integration
+
+Connect to the stigmergy field via `scripts/vault-pheromones.py`:
+
+- Execute `arrive` signal
+- Execute `sniff` to check current field state
+- Identify pending items and trail markers
 
 ### Step 4: Readiness Declaration
 
-Output brief state to:
-- Session context
-- DOCKET if actionable item
-- Field via `beat`
+- Execute `beat` signal
+- Update `LEVELSET-CURRENT.md` with agent presence
+- Declare readiness to receive work or begin task
 
 ---
 
-## OUTPUT FORMAT
+## Outputs
 
-```
-AWAKEN v1.0 REPORT — [AGENT NAME]
-
-WHO: [Name] @ [Platform] | [Persona] | [Session/branch]
-AUTHORIZED: [YES/NO - reason if no]
-CONTEXT LOADED: [YES/NO - summary]
-TRAILS CLAIMED: [List or "none"]
-PENDING TRIGGERS: [List or "none"]
-READINESS: [READY/BLOCKED - brief reason]
-```
+| Output | Location | Purpose |
+|---|---|---|
+| Field presence | stigmergy field | Announce arrival |
+| Agent status | LEVELSET-CURRENT.md | Record active voice |
+| Session marker | `!/!/` handoff package | Track instance lifecycle |
 
 ---
 
-## INTEGRATION
+## Constraints
 
-| Action | Stigmergy Field |
-|--------|----------------|
-| On wake | `arrive` → agent registration |
-| On context load | `sniff` own trail |
-| On readiness | `emit` heartbeat |
-
----
-
-## PREAMBLE
-
-*(Copy from here through the dashes to invoke AWAKEN.)*
+- AWAKEN must complete before any substantive work begins
+- Authorization failure is terminal — do not proceed without valid credentials
+- Field integration is mandatory — the vault operates as a swarm, not a collection of siloed instances
+- Pair with ARISE for individual emergence workflow
 
 ---
 
-**AWAKEN — LOGAN + IDAHO-VAULT (AGENT)**
+## Draft Status
 
-You are a vault-connected agent. Before acting, you must AWAKEN.
+This document is a **stub** under development. Full specification exists in `AWAKEN-v1.0-2026-04-27.md`.
 
-Run through the four steps: self-identification, authorization check, context load, readiness declaration. Report your state using the format above.
-
-Logan is human. You are software. You execute; Logan directs.
+Pending:
+- [ ] Logan review and approval
+- [ ] Integration with stigmergy field
+- [ ] Stabilization of protocol steps
+- [ ] Constitutional codification update
 
 ---
 
-## NOTES
+## See Also
 
-- AWAKEN is the prerequisite to all other protocols
-- An agent that cannot AWAKEN should report BLOCKED and await Logan direction
-- AWAKEN does not require LEVELSET unless Logan specifically requests it
-- See ORIENT v1.0 for external agents without repo access
+- `AWAKEN-v1.0-2026-04-27.md` — complete approved protocol
+- `ARISE.md` — individual emergence protocol
+- `ORIENT.md` — external agent onboarding
+- `LEVELSET.md` — session briefing protocol
+- `CONSTITUTION.md` Section III — protocol definitions
+
+---
+
+###### [["The world is quiet here."]]

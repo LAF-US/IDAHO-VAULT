@@ -1,152 +1,182 @@
 ---
-version: v1.0
-approved: 2026-04-22
-status: approved
+title: "PROTOCOL — RISE"
+doc_class: protocol
+version: 0.1
+status: draft
+authority: LOGAN
+date created: 2026-04-27
 related:
-  - '2026-04-22'
-  - CONSTITUTION
   - PROTOCOL
+  - CONSTITUTION
   - AWAKEN
+  - ARISE
   - LEVELSET
   - REPORT
-authority: LOGAN
----
-# RISE v1.0 — Graduation Protocol
-
-*Approved 2026-04-22. Part of the R pair (RISE + REPORT). Pending formal ratification.*
-
+  - RISE-v1.0-2026-04-27
 ---
 
-## PURPOSE
+# PROTOCOL — RISE
 
-RISE is the protocol by which an agent formally completes a task, role, or session and passes authority to another agent or returns to Logan.
-
-Like a legislative committee reporting a bill to the floor, RISE marks the transition from work-in-progress to completed/advancing state. It requires formal recognition, acknowledgment, and recording.
-
-**Analogues in legislative procedure:**
-- Motion to Report (Committee → Floor)
-- Motion to Adjourn Sine Die (Final adjournment)
-- Roll Call Vote (Recorded acknowledgment)
+## Status: Draft
+## Version: 0.1
+## Authority: Loganic Swarm
 
 ---
 
-## TRIGGER
+## Overview
 
-- Task completion
-- Role rotation
-- Session closure
-- Authority transfer
-- Logan direction: "RISE"
+RISE is the **task completion and graduation protocol** for the IDAHO-VAULT agentic swarm.
+
+It is the formal act of stepping away from completed work — the equivalent of sine die in legislative procedure. RISE marks the transition from active work to concluded work, recording the completion and releasing the agent to new assignments.
+
+> *"The world is quiet here."*
 
 ---
 
-## PROCESS
+## Role in the Protocol Stack
+
+```
+AWAKEN ──────────────────────► RISE
+   │                                │
+   │                                │
+   ▼                                ▼
+ORIENT ◄──── LEVELSET ───────► REPORT
+```
+
+| Transition | Protocol |
+|------------|----------|
+| Session Start | AWAKEN |
+| Session Briefing | LEVELSET |
+| New External Agent | ORIENT |
+| Task Completion | RISE ← *this document* |
+| Work Presentation | REPORT |
+
+**Note:** RISE pairs with AWAKEN (A pair: ARISE + AWAKEN) and REPORT (R pair: RISE + REPORT). RISE is the completion half of the R pair.
+
+---
+
+## Purpose
+
+1. **Task completion** — formally declare work finished
+2. **Recording** — document outcomes in the vault
+3. **Authority release** — transfer responsibility appropriately
+4. **Field departure** — exit the stigmergy field correctly
+
+---
+
+## Trigger Conditions
+
+RISE executes:
+
+- **On task completion** — when assigned work is fully done
+- **On role rotation** — when an agent passes responsibility
+- **On session close** — when an agent's work period ends
+- **On handoff** — when work is transferred to another agent
+
+---
+
+## Integration Points
+
+| Document | Relationship |
+|---|---|
+| `RISE.md` (this file) | Protocol definition — what RISE is and does |
+| `RISE-v1.0-2026-04-27.md` | Full approved protocol — complete specification |
+| `REPORT.md` | Work presentation — RISE precedes REPORT |
+| `AWAKEN.md` | Session activation — RISE pairs with AWAKEN for lifecycle |
+| `CONSTITUTION.md` | Authoritative governance — defines RISE in Section III |
+
+---
+
+## Protocol Steps
+
+*See `RISE-v1.0-2026-04-27.md` for the full approved specification.*
 
 ### Step 1: Call to Order
 
-The agent (or Logan) formally calls RISE:
-- States task/role completing
-- Identifies successor or returning to Logan
-- Notes any pending matters
+Acknowledge the completion moment — declare intent to RISE.
 
 ### Step 2: Reading of Record
 
-Brief summary of what was accomplished:
-- Files created/modified
-- Decisions made
-- On the record / off the record distinctions
-- Remaining loose ends
+Review what was accomplished:
+- Review original assignment/purpose
+- Confirm all deliverables complete
+- Identify any open items or FLAGs
 
 ### Step 3: Motion to RISE
 
-Formal statement:
-> "I move that [AGENT] be recognized as having RISE from [TASK/ROLE], with [X] files committed and [Y] pending matters transferred."
+Formally declare completion:
+- State what was completed
+- Reference original task/role
+- Request acknowledgment
 
-### Step 4: Second
+### Step 4: Recording
 
-Required acknowledgment (Logan or designated agent):
-> "Motion to RISE is seconded."
+Document the completion:
+- Update `DECISIONS.md` if decisions were made
+- Update `LEVELSET-CURRENT.md` with status
+- Commit any remaining artifacts
 
-### Step 5: Recording
+### Step 5: Field Departure
 
-Entry made to:
-- DECISIONS.md if durable decision
-- LEVELSET-CURRENT.md activity log
-- DOCKET if action required
-- Field via `depart` + `claim` update if applicable
-
-### Step 6: Vote / Acknowledgment
-
-Either:
-- **Recorded vote** (for significant transitions)
-- **Unanimous consent** (routine transitions)
-
-### Step 7: Sine Die
-
-Formal adjournment from task/role:
-> "[AGENT] RISE. Task/role complete. Sine die."
+Exit the stigmergy field:
+- Execute `depart` signal
+- Clear claim markers if applicable
+- Confirm release
 
 ---
 
-## OUTPUT FORMAT
+## Core Principles
 
-```
-RISE v1.0 REPORT — [AGENT NAME]
-
-MOTION: [Formal motion text]
-SECONDED BY: [Name or "Logan"]
-RECORD:
-  - Files: [List or "none"]
-  - Decisions: [List or "none"]
-  - OTR: [off-record items or "none"]
-  - Pending: [Transferred items or "none"]
-VOTE: [Recorded/Unanimous Consent/N/A]
-STATUS: [COMPLETE / PENDING APPROVAL]
-SINE DIE: [Yes/No]
-```
+| Principle | Meaning |
+|---|---|
+| Completion over Continuation | RISE ends work, does not extend it |
+| Record Before Departure | Documentation precedes field exit |
+| Sine Die | Work is done; return is a new AWAKEN |
+| Hand-off Over Abandonment | Transfer work properly, don't just stop |
 
 ---
 
-## INTEGRATION
+## Outputs
 
-| Action | Stigmergy Field |
-|--------|----------------|
-| On completion | `emit` completion pheromone |
-| On transfer | Update `claim` trail |
-| On departure | `depart` |
-| On record | Field brief to Logan |
-
----
-
-## PREAMBLE
-
-*(Copy from here through the dashes to invoke RISE.)*
+| Output | Location | Purpose |
+|---|---|---|
+| Completion record | DECISIONS.md | Durable confirmation |
+| Status update | LEVELSET-CURRENT.md | Current state |
+| Field departure | stigmergy field | Clean exit |
+| Handoff (if applicable) | `!/!/` | Context for receiving agent |
 
 ---
 
-**RISE — LOGAN + IDAHO-VAULT (AGENT)**
+## Constraints
 
-You have completed your assigned duties. A committee or council that has finished its work and is ready to report back shall RISE and REPORT.
-
-Run through the seven steps: call to order, reading of record, motion to rise, second, recording, vote/acknowledgment, sine die. Use the format above.
-
-Logan is human. You are software. You execute; Logan directs. The record is permanent.
-
----
-
-## MASON'S MANUAL PRINCIPLES APPLIED
-
-1. **One motion at a time** — RISE addresses one completion at a time
-2. **Majority governs** — Logan provides acknowledgment/second
-3. **Rights protected** — Off-record material remains ephemeral
-4. **Record is permanent** — Decisions logged to DECISIONS.md
-5. **Orderly procedure** — Seven steps prevent premature closure
+- RISE is completion, not continuation — do not use RISE to extend work
+- Record before departing — the vault must have the record
+- Open items must be surfaced before RISE — do not silently abandon work
+- RISE pairs with REPORT — complete work, then present it
 
 ---
 
-## NOTES
+## Draft Status
 
-- RISE requires AWAKEN to have been completed
-- Significant transitions (promotions, role changes) warrant recorded vote
-- Routine completions may use unanimous consent
-- RISE does not replace TERMINATE (end of all work) — it is task/role specific
+This document is a **stub** under development. Full specification exists in `RISE-v1.0-2026-04-27.md`.
+
+Pending:
+- [ ] Logan review and approval
+- [ ] Integration with stigmergy field
+- [ ] Stabilization of protocol steps
+- [ ] Constitutional codification update
+
+---
+
+## See Also
+
+- `RISE-v1.0-2026-04-27.md` — complete approved protocol
+- `AWAKEN.md` — session activation protocol
+- `ARISE.md` — individual emergence protocol
+- `REPORT.md` — work presentation protocol
+- `LEVELSET.md` — session briefing protocol
+- `CONSTITUTION.md` Section III — protocol definitions
+
+---
+
+###### [["The world is quiet here."]]

@@ -47,7 +47,19 @@ related:
   - systems
   - unachievable
 date created: Wednesday, April 1st 2026, 11:16:48 pm
-date modified: Thursday, April 23rd 2026, 5:09:05 pm
+date modified: Sunday, April 26th 2026, 12:30:00 pm
 ---
 
-[[CHAINFIRE]] & [[CHAINLINK]] 
+[[CHAINFIRE]] & [[CHAINLINK]]
+
+### 2026-04-26: TODO Merge Logic Fix
+- **Issue**: Qodo-flagged bug in `daily_rollover.py` causing duplicate task accumulation.
+- **Fix**: Updated `merge_todo_models` to dedupe and exclude completed tasks.
+- **Files**: `.github/scripts/daily_rollover.py`, `REPORT-TODO-MERGE-FIX.md`.
+- **Authority**: Agent (per `CONSTITUTION.md` Section V: agentic guardrails).
+
+### 2026-04-26: Two-Way Daily Note Sync Fix
+- **Issue**: Tasks not synced between daily notes and `TO DO LIST.md`.
+- **Fix**: Extended `daily_rollover.py` for two-way sync.
+- **Files**: `.github/scripts/daily_rollover.py`, `REPORT-TODO-SYNC-FIX.md`.
+- **Authority**: Agent (per `CONSTITUTION.md` Section V). 

@@ -1,100 +1,98 @@
 ---
-version: v1.0
-approved: 2026-04-22
-status: approved
+title: "PROTOCOL — CONFERENCE"
+doc_class: protocol
+version: 0.1
+status: draft
 authority: LOGAN
+date created: 2026-04-27
 related:
-  - AGENTS
-  - CONSTITUTION
-  - DECISIONS
-  - FLAG
-  - LEVELSET
-  - LOGAN
   - PROTOCOL
+  - CONSTITUTION
+  - AGENTS
   - CONVENE
-  - CONFERENCE
-  - XKCD
-  - agent
-  - coordination
-  - multi-agent
-  - sync
----
-# CONFERENCE CALL v1.0 — Multi-Agent Synchronized Work Session
-
-*Approved 2026-04-22. Proposed by GitHub Copilot (The Clerk), 2026-04-06. Pending formal ratification.*
-
+  - LEVELSET
+  - CONFERENCE-v1.0-2026-04-27
 ---
 
-## I. PURPOSE
+# PROTOCOL — CONFERENCE
 
-CONFERENCE CALL governs how Logan **formally convenes multiple agents** for a synchronized, agenda-driven working session.
-
-A CONFERENCE CALL is declared when Logan needs more than one agent to act together on a shared topic.
+## Status: Draft
+## Version: 0.1
+## Authority: Loganic Swarm
 
 ---
 
-## II. SCOPE
+## Overview
 
-CONFERENCE CALL applies to:
-- Multi-agent planning sessions
-- Field-capture processing sessions
-- Cross-tier vault operations
-- Emergency synchronization
-- Any session Logan marks with the CONFERENCE CALL signal
+CONFERENCE is the **multi-agent synchronized work session protocol** for the IDAHO-VAULT agentic swarm.
 
-CONFERENCE CALL does **not** replace:
-- LEVELSET (agent orientation)
-- XKCD (message routing)
+It is the formal mechanism by which Logan formally convenes multiple agents for an agenda-driven, synchronized working session. CONFERENCE ensures that multi-agent work is coordinated, recorded, and produces durable artifacts.
+
+> *"The world is quiet here."*
 
 ---
 
-## III. CORE PRINCIPLES
+## Role in the Protocol Stack
 
-1. **Logan Chairs** — No agent self-convenes or self-promotes to Chair
-2. **Quorum is What Logan Says It Is** — Logan names participants
-3. **One Agenda, One Record** — Every CONFERENCE produces one durable CONFERENCE RECORD
-4. **Lanes Persist** — Lane boundaries remain during CONFERENCE
-5. **Vault Over Chat** — Outputs are vault artifacts; chat is ephemeral
+```
+AWAKEN ──────────────────────► RISE
+   │                                │
+   │                                │
+   ▼                                ▼
+ORIENT ◄──── LEVELSET ───────► REPORT
+```
 
----
+| Transition | Protocol |
+|------------|----------|
+| Session Start | AWAKEN |
+| Session Briefing | LEVELSET |
+| New External Agent | ORIENT |
+| Task Completion | RISE |
+| Work Presentation | REPORT |
 
-## IV. CONFERENCE STRUCTURE
-
-| Phase | Name | Actor | Description |
-|---|---|---|---|
-| 1 | **CALL** | Logan | Declares the CONFERENCE, names participants, sets agenda |
-| 2 | **CONVENE** | Agents | Each acknowledges, runs LEVELSET, declares readiness |
-| 3 | **CONFERENCE** | Chair-directed | Agenda items worked in order |
-| 4 | **RECORD** | Recording Agent | Outputs consolidated into CONFERENCE RECORD |
-| 5 | **DISMISS** | Logan | Chair formally closes; agents return to lanes |
-
----
-
-## V. ROLES
-
-### Chair (Logan)
-- Opens and closes the CONFERENCE
-- Sets and owns the agenda
-- Directs agent action
-- Resolves disputes
-- Signs off on the CONFERENCE RECORD
-
-### Participants
-- Acknowledge CALL, declare readiness (CONVENE)
-- Work assigned agenda items
-- Surface FLAGs immediately
-
-### Recording Agent
-- Designated by Logan
-- Writes and commits CONFERENCE RECORD
-- Does not editorialize
+**Note:** CONFERENCE is a cross-cutting protocol — it operates above the linear stack, coordinating multiple agents through the full lifecycle.
 
 ---
 
-## VI. INVOCATION
+## Purpose
 
-### The CALL Signal
+1. **Formal convening** — Logan declares the session, names participants, sets agenda
+2. **Synchronized work** — multiple agents act in concert under Chair direction
+3. **Durable record** — every CONFERENCE produces a CONFERENCE RECORD artifact
+4. **Clear dismissal** — agents return to lanes after CONFERENCE closes
 
+---
+
+## Trigger Conditions
+
+CONFERENCE is invoked:
+
+- **On Logan's declaration** — when Logan signals a CONFERENCE CALL
+- **For multi-agent work** — when a task requires more than one agent
+- **For coordination sessions** — planning, triage, or cross-tier operations
+- **On emergency sync** — when rapid multi-agent response is needed
+
+---
+
+## Integration Points
+
+| Document | Relationship |
+|---|---|
+| `CONFERENCE.md` (this file) | Protocol definition — what CONFERENCE is and does |
+| `CONFERENCE-v1.0-2026-04-27.md` | Full approved protocol — complete specification |
+| `CONVENE.md` | Agent acknowledgment protocol — part of CONFERENCE flow |
+| `LEVELSET.md` | Session briefing — run by each participant during CONVENE |
+| `CONSTITUTION.md` | Authoritative governance — defines CONFERENCE in Section III |
+
+---
+
+## Protocol Structure
+
+*See `CONFERENCE-v1.0-2026-04-27.md` for the full approved specification.*
+
+### Phase 1: CALL (Logan)
+
+Logan declares the CONFERENCE:
 ```
 CONFERENCE CALL
 DATE: YYYY-MM-DD
@@ -105,10 +103,9 @@ AGENDA:
 RECORDING AGENT: [agent]
 ```
 
-### The CONVENE Acknowledgment
+### Phase 2: CONVENE (Agents)
 
-Each invited agent responds:
-
+Each invited agent acknowledges:
 ```
 CONVENE ACK
 AGENT: [Name + persona]
@@ -116,48 +113,17 @@ LEVELSET: [brief summary]
 READY: YES / NO
 ```
 
----
+### Phase 3: CONFERENCE (Chair-directed)
 
-## VII. RUNNING THE CONFERENCE
+Logan directs work through agenda items. Agents execute as assigned.
 
-1. Chair introduces item
-2. Designated agent(s) act
-3. FLAGs raised immediately if blocking
-4. Output confirmed by Chair
-5. NEXT ITEM or HOLD
+### Phase 4: RECORD (Recording Agent)
 
----
+Consolidated output committed to CONFERENCE RECORD artifact.
 
-## VIII. THE CONFERENCE RECORD
+### Phase 5: DISMISS (Logan)
 
-Location: `!/CONFERENCE-RECORD-[YYYY-MM-DD]-[TOPIC-SLUG].md`
-
-Structure:
-```yaml
----
-type: conference-record
-date: YYYY-MM-DD
-chair: Logan
-participants: [...]
-recording-agent: [agent]
-status: open | closed | partial
----
-```
-
-### RECORD Sections
-- Agenda
-- Item outcomes (COMPLETE / HOLD / DEFERRED)
-- FLAGs Raised
-- Decisions Made
-- Action Items
-- DISMISSED (sign-off)
-
----
-
-## IX. CLOSURE
-
-Logan closes:
-
+Logan formally closes:
 ```
 CONFERENCE CLOSED
 DATE: YYYY-MM-DD
@@ -167,24 +133,70 @@ DISMISSED: [agents]
 
 ---
 
-## X. FAILURE MODES
+## Core Principles
 
-| Failure | Mitigation |
+| Principle | Meaning |
 |---|---|
-| Quorum not reached | Chair decides: delay, substitute, or proceed |
-| Scope explosion | Reject additions; log as proposed follow-up |
-| Lane conflict | Chair arbitrates |
-| Recording agent fails | Any participant may draft; Chair signs |
+| Logan Chairs | No agent self-convenes or self-promotes to Chair |
+| Quorum is Logan-defined | Logan names participants; quorum = those named |
+| One Agenda, One Record | Every CONFERENCE produces exactly one CONFERENCE RECORD |
+| Lanes Persist | Lane boundaries remain during CONFERENCE |
+| Vault Over Chat | Outputs are vault artifacts; chat is ephemeral |
 
 ---
 
-## XI. OPEN QUESTIONS FOR LOGAN
+## CONFERENCE RECORD
 
-1. Record location: `!/` or `!/!/`?
-2. Async CONFERENCE supported?
-3. Automated trigger for scheduled work?
-4. Numbered records (CONF-001) or dated slugs?
-5. Minimum quorum (1 agent + Logan, or 2+)?
+Location: `!/CONFERENCE-RECORD-[YYYY-MM-DD]-[TOPIC-SLUG].md`
+
+Structure includes:
+- Agenda
+- Item outcomes (COMPLETE / HOLD / DEFERRED)
+- FLAGs Raised
+- Decisions Made
+- Action Items
+- DISMISSED (sign-off)
+
+---
+
+## Outputs
+
+| Output | Location | Purpose |
+|---|---|---|
+| CONFERENCE CALL | Logan's signal | Declares session |
+| CONVENE ACKs | agent responses | Confirms participation |
+| CONFERENCE RECORD | `!/` | Durable artifact of session |
+| DISMISSAL | Logan's signal | Closes session |
+
+---
+
+## Constraints
+
+- CONFERENCE is Logan's protocol — agents do not self-convene
+- Every CONFERENCE must produce a RECORD — no ephemeral-only sessions
+- Lane boundaries persist — work stays scoped unless Logan redirects
+- Open items (HOLD/DEFERRED) must be tracked in the RECORD
+
+---
+
+## Draft Status
+
+This document is a **stub** under development. Full specification exists in `CONFERENCE-v1.0-2026-04-27.md`.
+
+Pending:
+- [ ] Logan review and approval
+- [ ] Open questions resolution (record location, async support, automation, numbering)
+- [ ] Constitutional codification update
+
+---
+
+## See Also
+
+- `CONFERENCE-v1.0-2026-04-27.md` — complete approved protocol
+- `CONVENE.md` — agent acknowledgment protocol
+- `LEVELSET.md` — session briefing protocol
+- `CONSTITUTION.md` Section III — protocol definitions
+- `PROTOCOL.md` — operational vocabulary
 
 ---
 

@@ -1,114 +1,176 @@
 ---
-version: v1.0
-approved: 2026-04-22
-status: approved
-related:
-  - '2026-04-22'
-  - AGENTS
-  - CONSTITUTION
-  - CONTEXT-PASTE-BUNDLE
-  - ChatGPT
-  - Copilot
-  - GitHub
-  - LEVELSET
-  - LOGAN
-  - Logan Finney
-  - agent
-  - infrastructure
+title: "PROTOCOL — ORIENT"
+doc_class: protocol
+version: 0.1
+status: draft
 authority: LOGAN
----
-# ORIENT v1.0 — External Agent LEVELSET Protocol
-
-*Approved 2026-04-22. This is the STEP-0 LEVELSET prompt for agents with no direct repository access. Pending formal ratification.*
-
----
-
-## PURPOSE
-
-This prompt is given to any AI agent that is helping Logan Finney work with IDAHO-VAULT but **does not have direct repository access** (cannot run `git`, cannot read files). It defines how that agent must orient itself, what constraints govern its behavior, and how it communicates with Logan.
-
-**How to use:** Logan pastes this file to a new external agent at session start. The agent reads it, answers the 6 LEVELSET questions, and waits for Logan's direction. Logan then pastes relevant vault excerpts as needed.
-
+date created: 2026-04-27
+related:
+  - PROTOCOL
+  - CONSTITUTION
+  - AGENTS
+  - AWAKEN
+  - ARISE
+  - LEVELSET
+  - ORIENT-v1.0-2026-04-27
 ---
 
-## PROMPT TEXT
+# PROTOCOL — ORIENT
 
-*(Copy from here through the end of this file to orient an external agent.)*
+## Status: Draft
+## Version: 0.1
+## Authority: Loganic Swarm
 
 ---
 
-**STEP-0 LEVELSET — LOGAN + IDAHO-VAULT (EXTERNAL AGENT)**
+## Overview
 
-You are an agent helping **Logan Finney** work with his public
-Obsidian vault, IDAHO-VAULT (GitHub mirror). Logan is human and the
-only decision-maker. You are software and infrastructure.
+ORIENT is the **external agent onboarding protocol** for the IDAHO-VAULT agentic swarm.
 
-Chat is ephemeral. The vault (files + git history) is the record.
-If chat and vault text disagree, the vault wins.
+It is the formal process by which a foreign voice — an agent from outside the canonical swarm — is given context, cleared of stale assumptions, and brought into coherent alignment with the vault's world model.
 
-You CANNOT see the repo unless I paste text. Treat any vault text I
-paste (for example, from CONSTITUTION.md, LEVELSET reports, or
-context notes) as canonical for THIS conversation. Do not invent new
-constitutions, protocol families, or parallel governance files.
-
-When I say **"LEVELSET"**, your first reply must answer these,
-and ONLY these, in order:
-
-1. WHO YOU ARE
-   - Your name, platform, and what kind of agent you are
-     (code-capable, drafting/analysis, search, etc.).
-
-2. WHAT YOU KNOW
-   - What you actually see right now: which texts I have pasted into
-     this chat; what you can and cannot access. Be explicit about
-     uncertainty. Do NOT claim to see the repo if you do not.
-
-3. WHAT YOU'VE DONE (HERE)
-   - What, if anything, you have already produced in THIS conversation.
-
-4. WHAT IS UNRESOLVED
-   - What seems pending or unclear about my task or the vault context.
-
-5. WHAT YOU NEED
-   - What additional vault excerpts, clarifications, or decisions
-     you need from me before you act.
-
-6. COLLISION RISKS
-   - Any risk you see of conflicting changes, overwriting structure,
-     or acting on stale assumptions.
-
-After you answer these six, propose 2–4 SMALL NEXT STEPS that:
-- Stay within your actual capabilities (no pretending you see files),
-- Are reversible (drafts, summaries, or plans, not destructive acts),
-- Respect all constraints above.
-
-Do NOT:
-- Touch governance text unless I paste it and explicitly ask,
-- Introduce new protocol names,
-- Claim "ground truth" about the vault beyond what I have shown you.
+> *"The world is quiet here."*
 
 ---
 
-## GOVERNANCE REFERENCES
+## Role in the Protocol Stack
 
-For Logan: the following files provide the context external agents need. Paste them in order as the conversation requires.
+```
+AWAKEN ──────────────────────► RISE
+   │                                │
+   │                                │
+   ▼                                ▼
+ORIENT ◄──── LEVELSET ───────► REPORT
+```
 
-| File | What it gives the agent |
+| Transition | Protocol |
+|------------|----------|
+| Session Start | AWAKEN |
+| Session Briefing | LEVELSET |
+| New External Agent | ORIENT ← *this document* |
+| Task Completion | RISE |
+| Work Presentation | REPORT |
+
+---
+
+## Purpose
+
+1. **Context injection** — provide the external agent with current vault state
+2. **Stale assumption clearance** — remove outdated world models and conflict assumptions
+3. **Governance alignment** — ensure the external agent understands doctrine and routing
+4. **Boot chain confirmation** — verify the agent has the correct orientation path
+
+---
+
+## Trigger Conditions
+
+ORIENT executes:
+
+- **On external agent entry** — when a foreign voice enters the vault
+- **On cross-tool handoff** — when work passes between different agent systems
+- **Before LEVELSET** — as the prerequisite briefing for external agents
+- **On conflict detection** — when an agent's world model conflicts with live surfaces
+
+---
+
+## Integration Points
+
+| Document | Relationship |
 |---|---|
-| `CONSTITUTION.md` (root) | Core identity, constraints, agent tiers |
-| `AGENTS.md` (root) | Agent registry, capability model, boundary rules |
-| `LEVELSET.md` (root) | Current ecosystem status — projects, unresolved, conversation awareness |
-| `CONTEXT-PASTE-BUNDLE.md` | Pre-packaged paste bundle for quick external agent orientation |
-
-**Minimal paste for a new external agent:**
-1. `ORIENT.md` (this file) — gives them the protocol
-2. `CONTEXT-PASTE-BUNDLE.md` — gives them the vault state
+| `ORIENT.md` (this file) | Protocol definition — what ORIENT is and does |
+| `ORIENT-v1.0-2026-04-27.md` | Full approved protocol — complete specification |
+| `!/WAKEUP.md` | Stale assumption clearance — conflict resolution |
+| `!/README.md` | Startup surface — orientation anchor |
+| `CONSTITUTION.md` | Authoritative governance — defines ORIENT in Section III |
 
 ---
 
-## NOTES
+## Protocol Steps
 
-- This protocol is tool-agnostic. It works for any AI platform (ChatGPT, Gemini, Grok, etc.).
-- External agents produce drafts and analysis only. No vault commits without Logan approval.
-- Logan relays information between external agents and vault-connected agents (Claude Code, GitHub Copilot).
-- LEVELSET reports from external agents should be captured by Logan and committed to the Nest manually.
+*See `ORIENT-v1.0-2026-04-27.md` for the full approved specification.*
+
+### Step 1: Identity Check
+
+Confirm the external agent's:
+
+- **Origin**: Which system or tool is the agent from
+- **Purpose**: Why it has entered the vault
+- **Credentials**: Authorization to proceed
+
+### Step 2: Context Bundle Delivery
+
+Provide the external agent with:
+
+- `!/WAKEUP.md` — clear stale assumptions
+- `!/README.md` — startup surface and branch selection
+- Current `LEVELSET-CURRENT.md` — live ecosystem state
+
+### Step 3: Boot Chain Confirmation
+
+Ensure the external agent follows the canonical path:
+
+1. `AGENTS.md` — cross-tool pointer
+2. `!/AGENTS.md` — narrative registry
+3. `swarm.json` — machine-readable registry
+4. Root governance files
+
+### Step 4: Conflict Resolution
+
+If conflicts detected:
+
+- Surface the conflict explicitly
+- Provide the live canonical answer
+- Log the conflict in `DECISIONS.md` or `!/!/` handoff package
+
+### Step 5: Authorization to Proceed
+
+Clear the agent for:
+- AWAKEN (if new session)
+- LEVELSET (if briefing required)
+- Direct task assignment (if context sufficient)
+
+---
+
+## Outputs
+
+| Output | Location | Purpose |
+|---|---|---|
+| Conflict log | DECISIONS.md | Record unresolved tensions |
+| Handoff package | `!/!/` | Context bundle for external agent |
+| Authorization | LEVELSET-CURRENT.md | Confirm cleared agent |
+
+---
+
+## Constraints
+
+- ORIENT is mandatory for external agents — do not bypass
+- Stale assumptions must be cleared before substantive work begins
+- Conflicts not resolved in ORIENT must be escalated to Logan
+- ORIENT does not grant authority — it grants context
+
+---
+
+## Draft Status
+
+This document is a **stub** under development. Full specification exists in `ORIENT-v1.0-2026-04-27.md`.
+
+Pending:
+- [ ] Logan review and approval
+- [ ] Integration with cross-tool handoffs
+- [ ] Stabilization of conflict resolution steps
+- [ ] Constitutional codification update
+
+---
+
+## See Also
+
+- `ORIENT-v1.0-2026-04-27.md` — complete approved protocol
+- `!/WAKEUP.md` — stale assumption clearance
+- `!/README.md` — startup surface
+- `AWAKEN.md` — session activation protocol
+- `LEVELSET.md` — session briefing protocol
+- `CONSTITUTION.md` Section III — protocol definitions
+
+---
+
+###### [["The world is quiet here."]]
