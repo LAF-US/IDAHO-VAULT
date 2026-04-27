@@ -14,10 +14,10 @@ jobs:
 
     steps:
       - name: Checkout vault
-        uses: actions/checkout@11a7a4dddce5a8ad1e3b1707a3a53d5b30fc24ba
+        uses: actions/checkout@0c366fd6a839edf440554fa01a7085ccba70ac98
 
       - name: Set up Python
-        uses: actions/setup-python@5f6a6e3d60ebc0e51d10e784a826b6866fda95ed
+        uses: actions/setup-python@c8813ba1bc76ebf779b911ad8ffccbf2e449cb48
         with:
           python-version: '3.11'
 
