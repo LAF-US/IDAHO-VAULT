@@ -2,6 +2,7 @@ name: PR Lifecycle
 
 # Unified PR automation: create → reconcile → merge → cleanup
 # THREE-IN-ONE: One system doing one job
+# NOTE: Removed workflow_dispatch - GitHub API bug causes 422 errors
 
 on:
   create:
