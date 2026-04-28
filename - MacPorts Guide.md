@@ -1,10 +1,11 @@
 ---
-title: "MacPorts Guide"
-source: "https://guide.macports.org/"
+title: MacPorts Guide
+source: https://guide.macports.org/
 author:
 published:
 created: 2026-04-25
 description:
+dv_Perl modules are ordinarily assumed to be built with ExtUtils: MakeMaker. Use this keyword if a module must be built using Module::Build instead.
 ---
 ## Chapter 1. Introduction
 
