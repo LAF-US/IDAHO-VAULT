@@ -1,0 +1,34 @@
+# OpenClaw Local Mesh Configuration
+# This config switches OpenClaw to local-first operation to avoid rate limits
+
+agent:
+  name: "big-pickle"
+  model: "ollama/phi3:mini"  # Local model
+  profile: "local-mesh"
+
+gateway:
+  port: 18789
+  bind: "127.0.0.1"  # Local only for mesh networking
+  model: "ollama/phi3:mini"
+
+plugins:
+  - name: "memory-core"
+    enabled: true
+
+channels:
+  - type: "mesh"
+    enabled: true
+    scope: "local"  # Local device mesh only
+
+logging:
+  file: "/tmp/openclaw/openclaw-local-mesh.log"
+  level: "info"
+
+# Disable cloud models to avoid rate limits
+models:
+  deny:
+    - "ollama/kimi-k2.6:cloud"
+    - "openrouter/*"
+  
+  allow:
+    - "ollama/*"  # Only allow local Ollama models
