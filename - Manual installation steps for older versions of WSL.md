@@ -6,7 +6,10 @@ author:
 published:
 created: 2026-04-28
 description: "Step by step instructions to manually install WSL on older versions of Windows, rather than using the wsl install command."
+date created: Tuesday, April 28th 2026, 5:40:47 pm
+date modified: Tuesday, April 28th 2026, 5:41:24 pm
 ---
+
 For simplicity, we generally recommend using the [`wsl --install`](https://learn.microsoft.com/en-us/windows/wsl/install) to install Windows Subsystem for Linux, but if you're running an older build of Windows, or Windows Server Core, that may not be supported. We have included the manual installation steps below. If you run into an issue during the install process, check the [installation section of the troubleshooting guide](https://learn.microsoft.com/en-us/windows/wsl/troubleshooting#installation-issues).
 
 ## Step 1 - Enable the Windows Subsystem for Linux
