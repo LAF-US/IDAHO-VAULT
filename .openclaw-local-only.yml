@@ -1,0 +1,40 @@
+# OpenClaw Local-First Mesh Configuration
+# This config FORCES local operation to eliminate rate limits
+
+agent:
+  name: "big-pickle"
+  model: "ollama/phi3:mini"  # Local only - no cloud calls
+  profile: "local-mesh"
+  fallbacks: []  # NO fallbacks to cloud models
+
+gateway:
+  port: 18789
+  bind: "127.0.0.1"  # Localhost only for mesh
+  model: "ollama/phi3:mini"
+  fallbacks: []  # NO cloud fallbacks
+
+# DISABLE ALL CLOUD MODELS - no rate limits possible
+models:
+  deny:
+    - "*"  # Deny ALL models by default
+  allow:
+    - "ollama/*"  # Only allow local Ollama models
+
+plugins:
+  - name: "memory-core"
+    enabled: true
+
+channels:
+  - type: "mesh"
+    enabled: true
+    scope: "local"  # Local device mesh only
+    bind: "127.0.0.1"
+
+logging:
+  file: "/tmp/openclaw/openclaw-local-mesh.log"
+  level: "info"
+
+# Security: no external API calls
+security:
+  allow-external: false  # BLOCK all external API calls
+  allow-local: true
