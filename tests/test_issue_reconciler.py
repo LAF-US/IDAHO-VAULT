@@ -43,9 +43,9 @@ class IssueReconcilerTest(unittest.TestCase):
                 resolved_comment="done",
             )
 
-        create_issue.asse***REMOVED***called_once_with("[Branch Garden] Weekly report", body_file)
-        comment_issue.asse***REMOVED***not_called()
-        close_issue.asse***REMOVED***not_called()
+        create_issue.assert_called_once_with("[Branch Garden] Weekly report", body_file)
+        comment_issue.assert_not_called()
+        close_issue.assert_not_called()
         self.assertEqual(report["issue_action"], "created")
         self.assertEqual(report["issue_number"], 321)
 
@@ -71,9 +71,9 @@ class IssueReconcilerTest(unittest.TestCase):
                 resolved_comment="done",
             )
 
-        comment_issue.asse***REMOVED***called_once_with(99, body_file)
-        create_issue.asse***REMOVED***not_called()
-        close_issue.asse***REMOVED***not_called()
+        comment_issue.assert_called_once_with(99, body_file)
+        create_issue.assert_not_called()
+        close_issue.assert_not_called()
         self.assertEqual(report["issue_action"], "commented")
         self.assertEqual(report["issue_number"], 99)
 
@@ -97,7 +97,7 @@ class IssueReconcilerTest(unittest.TestCase):
                 resolved_comment="Resolved automatically.",
             )
 
-        gh.asse***REMOVED***called_once_with(
+        gh.assert_called_once_with(
             "issue",
             "comment",
             "41",
@@ -106,7 +106,7 @@ class IssueReconcilerTest(unittest.TestCase):
             "--body",
             "Resolved automatically.",
         )
-        close_issue.asse***REMOVED***called_once_with(41)
+        close_issue.assert_called_once_with(41)
         self.assertEqual(report["issue_action"], "closed")
 
 
