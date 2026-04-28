@@ -53,7 +53,7 @@ function Get-1PasswordPolicy {
             "turbotax",
             "potlatchno1federalcreditunion"
         )
-        impo***REMOVED***tag_patterns = @(
+        import_tag_patterns = @(
             "^(Imported .+)$",
             "^(CSV Import .+)$",
             "^Starter Kit$"
