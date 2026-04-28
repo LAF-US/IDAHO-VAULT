@@ -114,7 +114,9 @@ httpx==0.28.1
 httpx-sse==0.4.3
     # via mcp
 huggingface-hub==1.12.0
-    # via tokenizers
+    # via
+    #   idaho-vault (pyproject.toml)
+    #   tokenizers
 idna==3.13
     # via
     #   anyio
@@ -322,7 +324,9 @@ requests==2.33.1
     #   posthog
     #   requests-oauthlib
 requests-oauthlib==2.0.0
-    # via kubernetes
+    # via
+    #   idaho-vault (pyproject.toml)
+    #   kubernetes
 rich==14.3.4
     # via
     #   chromadb
