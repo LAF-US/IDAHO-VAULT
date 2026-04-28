@@ -24,7 +24,7 @@ from typing import Any
 
 def _canonical_json(value: Any) -> str:
     """Serialize a value deterministically for hashing and debug output."""
-    return json.dumps(value, so***REMOVED***keys=True, separators=(",", ":"), ensure_ascii=True)
+    return json.dumps(value, sort_keys=True, separators=(",", ":"), ensure_ascii=True)
 
 
 def _truthy(value: str | None) -> bool:

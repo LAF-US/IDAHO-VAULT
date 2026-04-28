@@ -13,10 +13,10 @@ from idaho_vault.five_wizards.renderers import (
     council_artifact_group,
     lane_artifact_group,
     render_claim_markdown,
-    render_council_repo***REMOVED***markdown,
+    render_council_report_markdown,
     render_council_session_markdown,
     render_familiar_gaggle_markdown,
-    render_gate_repo***REMOVED***markdown,
+    render_gate_report_markdown,
     render_lane_run_markdown,
     render_objection_markdown,
     render_personal_note_markdown,
@@ -207,23 +207,23 @@ def _lane_entries(lane_run: LaneRunArtifacts) -> list[StagedArtifact]:
             )
         )
 
-    repo***REMOVED***specs = [
+    report_specs = [
         ("draft", lane_run.draft_report),
         ("challenged", lane_run.challenged_report),
     ]
     if lane_run.finalized_report is not None:
-        repo***REMOVED***specs.append(("finalized", lane_run.finalized_report))
-    for stage_name, report in repo***REMOVED***specs:
+        report_specs.append(("finalized", lane_run.finalized_report))
+    for stage_name, report in report_specs:
         artifacts.extend(
             _pair_artifacts(
                 group=group,
                 directory=f"{group}/reports",
                 run_id=lane_run.run_id,
-                stem=f"council-report-{stage_name}-{report.repo***REMOVED***id}",
+                stem=f"council-report-{stage_name}-{report.report_id}",
                 source_type="council-report",
-                source_id=report.repo***REMOVED***id,
+                source_id=report.report_id,
                 json_content=to_canonical_json(report),
-                markdown_content=render_council_repo***REMOVED***markdown(report),
+                markdown_content=render_council_report_markdown(report),
             )
         )
 
@@ -247,7 +247,7 @@ def _pack_manifest(pack: ArtifactPack) -> str:
             for artifact in pack.artifacts
         ],
     }
-    return json.dumps(manifest, indent=2, so***REMOVED***keys=True)
+    return json.dumps(manifest, indent=2, sort_keys=True)
 
 
 def build_lane_artifact_pack(lane_run: LaneRunArtifacts) -> ArtifactPack:
@@ -311,7 +311,7 @@ def build_workflow_artifact_pack(workflow: FiveWizardsWorkflowArtifacts) -> Arti
             source_type="gate-report",
             source_id=workflow.run_id,
             json_content=to_canonical_json(workflow.gate_report),
-            markdown_content=render_gate_repo***REMOVED***markdown(workflow.gate_report),
+            markdown_content=render_gate_report_markdown(workflow.gate_report),
         )
     )
     artifacts.extend(
