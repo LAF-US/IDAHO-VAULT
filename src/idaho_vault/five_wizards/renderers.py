@@ -24,7 +24,7 @@ from idaho_vault.five_wizards.workflow import FiveWizardsWorkflowArtifacts
 def to_canonical_json(model: BaseModel) -> str:
     """Serialize a model to stable, human-readable JSON."""
 
-    return json.dumps(model.model_dump(mode="json"), indent=2, so***REMOVED***keys=True)
+    return json.dumps(model.model_dump(mode="json"), indent=2, sort_keys=True)
 
 
 def lane_artifact_group(domain: LaneDomain) -> str:
@@ -155,9 +155,9 @@ def render_claim_markdown(claim: Claim) -> str:
     return "\n".join(lines)
 
 
-def render_council_repo***REMOVED***markdown(report: CouncilReport) -> str:
+def render_council_report_markdown(report: CouncilReport) -> str:
     lines = [
-        f"# Council Report `{report.repo***REMOVED***id}`",
+        f"# Council Report `{report.report_id}`",
         "",
         f"- Run ID: `{report.run_id}`",
         f"- Institution: `{report.institution.value}`",
@@ -193,7 +193,7 @@ def render_familiar_gaggle_markdown(note: FamiliarGaggleNote) -> str:
         f"`{_render_familiar(familiar, mode)}`"
         for familiar, mode in zip(note.participant_familiars, note.participant_modes)
     ) or "None"
-    watched = ", ".join(f"`{repo***REMOVED***id}`" for repo***REMOVED***id in note.watched_repo***REMOVED***ids) or "None"
+    watched = ", ".join(f"`{report_id}`" for report_id in note.watched_report_ids) or "None"
     return "\n".join(
         [
             f"# Familiar Gaggle Note `{note.note_id}`",
@@ -218,7 +218,7 @@ def render_familiar_gaggle_markdown(note: FamiliarGaggleNote) -> str:
 
 
 def render_council_session_markdown(session: CouncilSession) -> str:
-    reports = ", ".join(f"`{repo***REMOVED***id}`" for repo***REMOVED***id in session.council_repo***REMOVED***ids) or "None"
+    reports = ", ".join(f"`{report_id}`" for report_id in session.council_report_ids) or "None"
     gaggle = ", ".join(f"`{note_id}`" for note_id in session.familiar_gaggle_note_ids) or "None"
     lines = [
         f"# Council Session `{session.session_id}`",
@@ -293,7 +293,7 @@ def render_validation_verdict_markdown(verdict: ValidationVerdict) -> str:
     return "\n".join(lines)
 
 
-def render_gate_repo***REMOVED***markdown(report: GateReport) -> str:
+def render_gate_report_markdown(report: GateReport) -> str:
     lines = [
         f"# Gate Report `{report.run_id}`",
         "",

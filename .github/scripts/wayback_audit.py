@@ -39,18 +39,6 @@ UA = "IDAHO-VAULT/1.0 (Idaho Reports journalism archive; github.com/loganfinney2
 DEAD_STATUSES = {400, 403, 404, 410, 451, 500, 502, 503, 504}
 
 
-def build_frontmatter(title: str, date_str: str) -> list[str]:
-    return [
-        "---",
-        f"title: {title}",
-        f"updated: {date_str}",
-        "status: draft",
-        "authority: github-actions",
-        "---",
-        "",
-    ]
-
-
 def head_request(url: str) -> int | None:
     try:
         req = urllib.request.Request(url, method="HEAD", headers={"User-Agent": UA})
@@ -121,8 +109,7 @@ def extract_url(content: str) -> str | None:
     url = m.group(1).strip()
     if not url or url.lower() == "null" or url.lower() == "n/a":
         return None
-    parsed = urllib.parse.urlparse(url)
-    if parsed.hostname and parsed.hostname in ("web.archive.org", "timetravel.mementoweb.org"):
+    if "web.archive.org" in url:
         return None
     return url
 
@@ -226,10 +213,10 @@ def main():
             no_archive.append(item)
 
     ADMIN_DIR.mkdir(exist_ok=True)
-    repo***REMOVED***path = ADMIN_DIR / f"wayback-audit-{date_str}.md"
+    report_path = ADMIN_DIR / f"wayback-audit-{date_str}.md"
     patches_path = ADMIN_DIR / f"wayback-patches-{date_str}.md"
 
-    repo***REMOVED***lines = build_frontmatter(f"Wayback Audit — {date_str}", date_str) + [
+    report_lines = [
         f"# Wayback Audit — {date_str}", "",
         f"Scanned {total_urls} notes with URL fields.", "",
         "| Status | Count |", "|---|---|",
@@ -242,7 +229,7 @@ def main():
     ]
 
     if patches:
-        repo***REMOVED***lines += [
+        report_lines += [
             "## Dead — Wayback Snapshot Found", "",
             "| Note | Original URL | Snapshot | Archived |",
             "|---|---|---|---|",
@@ -251,39 +238,39 @@ def main():
             snap = item["snapshot"]
             ts = snap["timestamp"]
             archived_date = f"{ts[0:4]}-{ts[4:6]}-{ts[6:8]}"
-            repo***REMOVED***lines.append(
+            report_lines.append(
                 f"| `{item['path'].name}` "
                 f"| [{item['url'][:60]}]({item['url']}) "
                 f"| [snapshot]({snap['snapshot_url']}) "
                 f"| {archived_date} |"
             )
-        repo***REMOVED***lines.append("")
+        report_lines.append("")
 
     if no_archive:
-        repo***REMOVED***lines += [
+        report_lines += [
             "## Dead — No Archive Found", "",
             "| Note | Dead URL | HTTP Status |", "|---|---|---|",
         ]
         for item in no_archive:
-            repo***REMOVED***lines.append(
+            report_lines.append(
                 f"| `{item['path'].name}` | {item['url'][:80]} | {item['live_status']} |"
             )
-        repo***REMOVED***lines.append("")
+        report_lines.append("")
 
     if unreachable:
-        repo***REMOVED***lines += [
+        report_lines += [
             "## Unreachable (Network Error)", "",
             "| Note | URL |", "|---|---|",
         ]
         for item in unreachable:
-            repo***REMOVED***lines.append(f"| `{item['path'].name}` | {item['url'][:80]} |")
-        repo***REMOVED***lines.append("")
+            report_lines.append(f"| `{item['path'].name}` | {item['url'][:80]} |")
+        report_lines.append("")
 
-    repo***REMOVED***path.write_text("\n".join(repo***REMOVED***lines), encoding="utf-8")
-    print(f"\nReport written to {repo***REMOVED***path}")
+    report_path.write_text("\n".join(report_lines), encoding="utf-8")
+    print(f"\nReport written to {report_path}")
 
     if patches:
-        patch_lines = build_frontmatter(f"Wayback Patches — {date_str}", date_str) + [
+        patch_lines = [
             f"# Wayback Patches — {date_str}", "",
             "Proposed `wayback:` frontmatter additions for notes with dead URLs.",
             "Insert the `wayback:` line directly after the `URL:` field.", "",

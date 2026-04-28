@@ -31,11 +31,11 @@ def _top_level_task_count(lines: list[str]) -> int:
     return len([line for line in lines if daily_rollover._is_top_level_task(line)])
 
 
-def backfill_range(sta***REMOVED***date: date, end_date: date, dry_run: bool = False) -> None:
-    if end_date < sta***REMOVED***date:
+def backfill_range(start_date: date, end_date: date, dry_run: bool = False) -> None:
+    if end_date < start_date:
         raise ValueError("--end must be on or after --start")
 
-    current_date = sta***REMOVED***date
+    current_date = start_date
     simulated_notes: dict[date, str] = {}
     while current_date <= end_date:
         source_date = current_date - timedelta(days=1)
@@ -104,9 +104,9 @@ def main() -> None:
     )
     args = parser.parse_args()
 
-    sta***REMOVED***date = date.fromisoformat(args.start)
+    start_date = date.fromisoformat(args.start)
     end_date = date.fromisoformat(args.end)
-    backfill_range(sta***REMOVED***date, end_date, dry_run=args.dry_run)
+    backfill_range(start_date, end_date, dry_run=args.dry_run)
 
 
 if __name__ == "__main__":

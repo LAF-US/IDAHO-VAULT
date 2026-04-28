@@ -388,7 +388,7 @@ def main() -> int:
     root = Path(args.root).resolve()
     summary = survey_vault(root=root, include_private=args.include_private)
     rendered = (
-        json.dumps(summary, indent=2, so***REMOVED***keys=True)
+        json.dumps(summary, indent=2, sort_keys=True)
         if args.format == "json"
         else render_markdown(summary)
     )

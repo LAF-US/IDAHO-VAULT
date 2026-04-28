@@ -46,10 +46,10 @@ from idaho_vault.five_wizards.models import (
 )
 from idaho_vault.five_wizards.renderers import (
     render_claim_markdown,
-    render_council_repo***REMOVED***markdown,
+    render_council_report_markdown,
     render_council_session_markdown,
     render_familiar_gaggle_markdown,
-    render_gate_repo***REMOVED***markdown,
+    render_gate_report_markdown,
     render_objection_markdown,
     render_personal_note_markdown,
     render_validation_verdict_markdown,
@@ -265,7 +265,7 @@ class FiveWizardsTest(unittest.TestCase):
         claim = self.make_claim(domain)
         note = self.make_personal_note(domain)
         return CouncilReport(
-            repo***REMOVED***id=f"{domain.value.lower()}-report-001",
+            report_id=f"{domain.value.lower()}-report-001",
             run_id=claim.run_id,
             domain=claim.domain,
             entity=claim.entity,
@@ -302,7 +302,7 @@ class FiveWizardsTest(unittest.TestCase):
                 FamiliarId.THY_THE,
             ],
             participant_modes=[None, None, None, None, FamiliarMode.THY],
-            watched_repo***REMOVED***ids=["who-report-001", "why-report-001"],
+            watched_report_ids=["who-report-001", "why-report-001"],
             gossip_text="The familiars traded skeptical notes while the council debated.",
             evidence_refs=["src-06#l1"],
             include_in_final_report=True,
@@ -319,7 +319,7 @@ class FiveWizardsTest(unittest.TestCase):
             convener_familiar=FamiliarId.THY_THE,
             convener_familiar_mode=FamiliarMode.THE,
             status=CouncilSessionStatus.CONVENED,
-            council_repo***REMOVED***ids=[f"{domain.value.lower()}-report-001" for domain in LaneDomain],
+            council_report_ids=[f"{domain.value.lower()}-report-001" for domain in LaneDomain],
             familiar_gaggle_note_ids=["gaggle-001"],
             inquiry_question=COUNCIL_INQUIRY_PROMPT,
             debate_threads=[
@@ -357,7 +357,7 @@ class FiveWizardsTest(unittest.TestCase):
             unresolved_tensions=["One challenge still shadows the lane."],
         )
         draft = draft_council_report(
-            repo***REMOVED***id=f"{domain.value.lower()}-pipeline-report",
+            report_id=f"{domain.value.lower()}-pipeline-report",
             run_id=claim.run_id,
             domain=domain,
             wizard_role=claim.wizard_role,
@@ -393,7 +393,7 @@ class FiveWizardsTest(unittest.TestCase):
         return LaneRunInput(
             lane_domain=domain,
             run_id=claim.run_id,
-            repo***REMOVED***id=f"{domain.value.lower()}-lane-run-report",
+            report_id=f"{domain.value.lower()}-lane-run-report",
             claims=[
                 LaneClaimInput(
                     claim_id=f"{domain.value.lower()}-lane-run-claim",
@@ -448,7 +448,7 @@ class FiveWizardsTest(unittest.TestCase):
             restored = Objection.model_validate_json(payload)
             self.assertEqual(restored, objection)
 
-    def test_council_repo***REMOVED***round_trip(self) -> None:
+    def test_council_report_round_trip(self) -> None:
         report = self.make_council_report(LaneDomain.WHY)
         restored = CouncilReport.model_validate_json(to_canonical_json(report))
         self.assertEqual(restored, report)
@@ -565,7 +565,7 @@ class FiveWizardsTest(unittest.TestCase):
         )
 
         draft = draft_council_report(
-            repo***REMOVED***id="who-report-pipeline-002",
+            report_id="who-report-pipeline-002",
             run_id="run-001",
             domain=LaneDomain.WHO,
             wizard_role="identity scholar",
@@ -604,7 +604,7 @@ class FiveWizardsTest(unittest.TestCase):
 
     def test_pipeline_rejects_open_fatal_challenge_during_finalization(self) -> None:
         draft = draft_council_report(
-            repo***REMOVED***id="who-report-pipeline-003",
+            report_id="who-report-pipeline-003",
             run_id="run-001",
             domain=LaneDomain.WHO,
             wizard_role="identity scholar",
@@ -650,7 +650,7 @@ class FiveWizardsTest(unittest.TestCase):
         )
 
         self.assertEqual(session.status, CouncilSessionStatus.CONVENED)
-        self.assertEqual(session.council_repo***REMOVED***ids, [report.repo***REMOVED***id for report in reports])
+        self.assertEqual(session.council_report_ids, [report.report_id for report in reports])
         self.assertEqual(session.familiar_gaggle_note_ids, [gaggle.note_id])
         self.assertEqual(session.convener_entity, WizardEntityId.WHY)
         self.assertEqual(session.convener_personality, WizardPersonalityId.HOW)
@@ -667,7 +667,7 @@ class FiveWizardsTest(unittest.TestCase):
     def test_what_lane_runner_green_path(self) -> None:
         request = WhatLaneRunInput(
             run_id="run-what-001",
-            repo***REMOVED***id="what-report-operator-001",
+            report_id="what-report-operator-001",
             claims=[
                 WhatClaimInput(
                     claim_id="what-operator-001",
@@ -716,10 +716,10 @@ class FiveWizardsTest(unittest.TestCase):
         self.assertEqual(result.blocking_claim_ids, [])
         self.assertIn("state=green", result.summary)
 
-    def test_what_lane_runner_withholds_final_repo***REMOVED***for_open_fatal_objection(self) -> None:
+    def test_what_lane_runner_withholds_final_report_for_open_fatal_objection(self) -> None:
         request = WhatLaneRunInput(
             run_id="run-what-002",
-            repo***REMOVED***id="what-report-operator-002",
+            report_id="what-report-operator-002",
             claims=[
                 WhatClaimInput(
                     claim_id="what-operator-002",
@@ -762,7 +762,7 @@ class FiveWizardsTest(unittest.TestCase):
     def test_what_lane_runner_red_state_can_still_finalize_report(self) -> None:
         request = WhatLaneRunInput(
             run_id="run-what-003",
-            repo***REMOVED***id="what-report-operator-003",
+            report_id="what-report-operator-003",
             claims=[
                 WhatClaimInput(
                     claim_id="what-operator-003",
@@ -796,7 +796,7 @@ class FiveWizardsTest(unittest.TestCase):
     def test_what_lane_runner_round_trip(self) -> None:
         request = WhatLaneRunInput(
             run_id="run-what-004",
-            repo***REMOVED***id="what-report-operator-004",
+            report_id="what-report-operator-004",
             claims=[
                 WhatClaimInput(
                     claim_id="what-operator-004",
@@ -827,7 +827,7 @@ class FiveWizardsTest(unittest.TestCase):
         request = LaneRunInput(
             lane_domain=LaneDomain.WHO,
             run_id="run-who-001",
-            repo***REMOVED***id="who-report-operator-001",
+            report_id="who-report-operator-001",
             claims=[
                 LaneClaimInput(
                     claim_id="who-operator-001",
@@ -873,7 +873,7 @@ class FiveWizardsTest(unittest.TestCase):
         request = LaneRunInput(
             lane_domain=LaneDomain.WHY,
             run_id="run-why-001",
-            repo***REMOVED***id="why-report-operator-001",
+            report_id="why-report-operator-001",
             claims=[
                 LaneClaimInput(
                     claim_id="why-operator-001",
@@ -910,7 +910,7 @@ class FiveWizardsTest(unittest.TestCase):
         request = LaneRunInput(
             lane_domain=LaneDomain.WHERE,
             run_id="run-where-001",
-            repo***REMOVED***id="where-report-operator-001",
+            report_id="where-report-operator-001",
             claims=[
                 LaneClaimInput(
                     claim_id="where-operator-001",
@@ -1205,11 +1205,11 @@ class FiveWizardsTest(unittest.TestCase):
         self.assertIn("THY_THE[THE]", objection_md)
         self.assertIn("contradictory-evidence", objection_md)
 
-        council_repo***REMOVED***md = render_council_repo***REMOVED***markdown(council_report)
-        self.assertIn("finalized", council_repo***REMOVED***md)
-        self.assertIn("THY_THE[THY]", council_repo***REMOVED***md)
-        self.assertIn("Unresolved Questions", council_repo***REMOVED***md)
-        self.assertIn("Cautions", council_repo***REMOVED***md)
+        council_report_md = render_council_report_markdown(council_report)
+        self.assertIn("finalized", council_report_md)
+        self.assertIn("THY_THE[THY]", council_report_md)
+        self.assertIn("Unresolved Questions", council_report_md)
+        self.assertIn("Cautions", council_report_md)
 
         gaggle_md = render_familiar_gaggle_markdown(gaggle)
         self.assertIn("Gossip Text", gaggle_md)
@@ -1227,11 +1227,11 @@ class FiveWizardsTest(unittest.TestCase):
         self.assertIn("pass", verdict_md)
         self.assertIn("Surface Mode", verdict_md)
 
-        repo***REMOVED***md = render_gate_repo***REMOVED***markdown(report)
-        self.assertIn("HOW", repo***REMOVED***md)
-        self.assertIn("Council Entity", repo***REMOVED***md)
-        self.assertIn("Council Personality", repo***REMOVED***md)
-        self.assertIn("green", repo***REMOVED***md)
+        report_md = render_gate_report_markdown(report)
+        self.assertIn("HOW", report_md)
+        self.assertIn("Council Entity", report_md)
+        self.assertIn("Council Personality", report_md)
+        self.assertIn("green", report_md)
 
 
 if __name__ == "__main__":

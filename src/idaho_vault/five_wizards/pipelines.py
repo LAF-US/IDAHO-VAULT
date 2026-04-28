@@ -53,25 +53,25 @@ def _merge_text_items(existing: Sequence[str], extra: Sequence[str] | None) -> l
     return _dedupe([*existing, *extra])
 
 
-def _asse***REMOVED***same_run(expected_run_id: str, actual_run_id: str, artifact_label: str) -> None:
+def _assert_same_run(expected_run_id: str, actual_run_id: str, artifact_label: str) -> None:
     if actual_run_id != expected_run_id:
         raise ValueError(
             f"{artifact_label} run id `{actual_run_id}` does not match expected run `{expected_run_id}`."
         )
 
 
-def _asse***REMOVED***lane_notes(run_id: str, domain: LaneDomain, notes: Sequence[PersonalNote]) -> None:
+def _assert_lane_notes(run_id: str, domain: LaneDomain, notes: Sequence[PersonalNote]) -> None:
     if not notes:
         raise ValueError("Drafting a council report requires at least one personal note.")
     for note in notes:
-        _asse***REMOVED***same_run(run_id, note.run_id, "Personal note")
+        _assert_same_run(run_id, note.run_id, "Personal note")
         if note.domain is not domain:
             raise ValueError("All personal notes must belong to the same lane domain as the council report.")
 
 
-def _asse***REMOVED***lane_objections(run_id: str, domain: LaneDomain, objections: Sequence[Objection]) -> None:
+def _assert_lane_objections(run_id: str, domain: LaneDomain, objections: Sequence[Objection]) -> None:
     for objection in objections:
-        _asse***REMOVED***same_run(run_id, objection.run_id, "Objection")
+        _assert_same_run(run_id, objection.run_id, "Objection")
         if objection.scope is not ObjectionScope.LANE:
             raise ValueError("Council report challenges must be expressed as lane objections.")
         if objection.lane_domain is not domain:
@@ -87,19 +87,19 @@ def _ordered_reports(
     if not reports:
         raise ValueError("Council work requires at least one council report.")
 
-    repo***REMOVED***by_domain: dict[LaneDomain, CouncilReport] = {}
+    report_by_domain: dict[LaneDomain, CouncilReport] = {}
     for report in reports:
-        _asse***REMOVED***same_run(run_id, report.run_id, "Council report")
+        _assert_same_run(run_id, report.run_id, "Council report")
         if report.status is not CouncilReportStatus.FINALIZED:
             raise ValueError("Council reports must be finalized before council-side use.")
-        if report.domain in repo***REMOVED***by_domain:
+        if report.domain in report_by_domain:
             raise ValueError("Only one council report may be supplied per lane domain.")
-        repo***REMOVED***by_domain[report.domain] = report
+        report_by_domain[report.domain] = report
 
-    if require_all_lanes and set(repo***REMOVED***by_domain) != set(LaneDomain):
+    if require_all_lanes and set(report_by_domain) != set(LaneDomain):
         raise ValueError("Convening the council requires one finalized report from each of the five lanes.")
 
-    return [repo***REMOVED***by_domain[domain] for domain in LaneDomain if domain in repo***REMOVED***by_domain]
+    return [report_by_domain[domain] for domain in LaneDomain if domain in report_by_domain]
 
 
 def create_personal_note(
@@ -146,7 +146,7 @@ def create_personal_note(
 
 def draft_council_report(
     *,
-    repo***REMOVED***id: str,
+    report_id: str,
     run_id: str,
     domain: LaneDomain,
     wizard_role: str,
@@ -158,7 +158,7 @@ def draft_council_report(
 ) -> CouncilReport:
     """Draft a wizard's council report from the pair's private notes."""
 
-    _asse***REMOVED***lane_notes(run_id, domain, personal_notes)
+    _assert_lane_notes(run_id, domain, personal_notes)
 
     inferred_evidence = _dedupe(
         list(evidence_refs)
@@ -177,7 +177,7 @@ def draft_council_report(
     )
 
     return CouncilReport(
-        repo***REMOVED***id=repo***REMOVED***id,
+        report_id=report_id,
         run_id=run_id,
         institution=InstitutionId.FIVE_WIZARDS,
         domain=domain,
@@ -210,7 +210,7 @@ def challenge_council_report(
 
     if report.status not in {CouncilReportStatus.DRAFT, CouncilReportStatus.CHALLENGED}:
         raise ValueError("Only draft or already challenged reports may enter the challenge stage.")
-    _asse***REMOVED***lane_objections(report.run_id, report.domain, objections)
+    _assert_lane_objections(report.run_id, report.domain, objections)
     challenge_ids = _dedupe([*report.challenge_objection_ids, *(obj.objection_id for obj in objections)])
 
     return report.model_copy(
@@ -237,7 +237,7 @@ def finalize_council_report(
 
     if report.status not in {CouncilReportStatus.DRAFT, CouncilReportStatus.CHALLENGED}:
         raise ValueError("Only draft or challenged reports may be finalized.")
-    _asse***REMOVED***lane_objections(report.run_id, report.domain, objections)
+    _assert_lane_objections(report.run_id, report.domain, objections)
 
     objection_ids = {objection.objection_id for objection in objections}
     missing_challenges = [
@@ -306,7 +306,7 @@ def record_familiar_gaggle(
         host_familiar_mode=COUNCIL_FAMILIAR_MODE,
         participant_familiars=[report.familiar for report in ordered_reports],
         participant_modes=[report.familiar_mode for report in ordered_reports],
-        watched_repo***REMOVED***ids=[report.repo***REMOVED***id for report in ordered_reports],
+        watched_report_ids=[report.report_id for report in ordered_reports],
         gossip_text=gossip_text,
         evidence_refs=resolved_evidence,
         include_in_final_report=include_in_final_report,
@@ -335,7 +335,7 @@ def awaken_council(
         convener_familiar=COUNCIL_FAMILIAR,
         convener_familiar_mode=COUNCIL_FAMILIAR_MODE,
         status=CouncilSessionStatus.AWAKENED,
-        council_repo***REMOVED***ids=[],
+        council_report_ids=[],
         familiar_gaggle_note_ids=[],
         inquiry_question=COUNCIL_INQUIRY_PROMPT,
         debate_threads=list(debate_threads),
@@ -361,14 +361,14 @@ def convene_council(
         raise ValueError("Only an awakened council session may be convened.")
     ordered_reports = _ordered_reports(session.run_id, council_reports, require_all_lanes=True)
     for gaggle_note in familiar_gaggle_notes:
-        _asse***REMOVED***same_run(session.run_id, gaggle_note.run_id, "Familiar gaggle note")
+        _assert_same_run(session.run_id, gaggle_note.run_id, "Familiar gaggle note")
         if gaggle_note.council_domain is not CouncilDomain.HOW:
             raise ValueError("Council gaggle notes must belong to HOW.")
 
     return session.model_copy(
         update={
             "status": CouncilSessionStatus.CONVENED,
-            "council_repo***REMOVED***ids": [report.repo***REMOVED***id for report in ordered_reports],
+            "council_report_ids": [report.report_id for report in ordered_reports],
             "familiar_gaggle_note_ids": [note.note_id for note in familiar_gaggle_notes],
             "debate_threads": list(debate_threads),
             "method_warnings": list(method_warnings),

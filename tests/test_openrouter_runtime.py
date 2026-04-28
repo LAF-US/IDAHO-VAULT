@@ -35,10 +35,10 @@ class OpenRouterRuntimeTest(unittest.TestCase):
             status = openrouter_runtime.launch_agent("claude", "claude", ["--help"])
 
         self.assertEqual(status, 0)
-        exec_agent.asse***REMOVED***called_once_with("claude", "claude", ["--help"])
-        ensure_op_available.asse***REMOVED***not_called()
-        ensure_op_signed_in.asse***REMOVED***not_called()
-        ensure_env_file.asse***REMOVED***not_called()
+        exec_agent.assert_called_once_with("claude", "claude", ["--help"])
+        ensure_op_available.assert_not_called()
+        ensure_op_signed_in.assert_not_called()
+        ensure_env_file.assert_not_called()
 
     def test_exec_agent_resolves_full_cli_path(self) -> None:
         with (
@@ -48,8 +48,8 @@ class OpenRouterRuntimeTest(unittest.TestCase):
         ):
             openrouter_runtime.exec_agent("codex", "codex", ["--help"])
 
-        which.asse***REMOVED***called_once_with("codex", path=r"C:\mock\bin")
-        run.asse***REMOVED***called_once_with([r"C:\mock\bin\codex.cmd", "--help"], env={"PATH": r"C:\mock\bin"}, check=False)
+        which.assert_called_once_with("codex", path=r"C:\mock\bin")
+        run.assert_called_once_with([r"C:\mock\bin\codex.cmd", "--help"], env={"PATH": r"C:\mock\bin"}, check=False)
 
     def test_exec_agent_raises_clear_error_when_cli_is_missing(self) -> None:
         with (

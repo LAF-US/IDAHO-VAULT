@@ -12,10 +12,10 @@ REPO_ROOT = Path(__file__).resolve().parent
 FILES_TO_CHECK = [
     "scripts/render_flatten_attribution.py",
     "doctrinal_flatten.py",
-    "so***REMOVED***audit.py",
+    "sort_audit.py",
     "main.py",
 ]
-UNITTEST_TARGET = "!/tests/test_app.py"
+UNITTEST_TARGET = "!\\tests\\test_app.py"
 
 
 def run_syntax_checks() -> bool:
@@ -24,19 +24,15 @@ def run_syntax_checks() -> bool:
         full_path = REPO_ROOT / file_path
         try:
             py_compile.compile(str(full_path), doraise=True)
-            print(f"[PASS] {file_path}")
+            print(f"[OK] {file_path} - PASSED")
         except py_compile.PyCompileError as exc:
-            print(f"[FAIL] {file_path}")
+            print(f"[FAIL] {file_path} - FAILED")
             print(f"  Error: {exc}")
             all_passed = False
     return all_passed
 
 
 def run_unittests(python_executable: str = sys.executable) -> int:
-    test_path = REPO_ROOT / UNITTEST_TARGET
-    if not test_path.exists():
-        print(f"[SKIP] Unit tests: {test_path} not found")
-        return 0
     result = subprocess.run(
         [python_executable, "-m", "unittest", UNITTEST_TARGET, "-v"],
         cwd=REPO_ROOT,
