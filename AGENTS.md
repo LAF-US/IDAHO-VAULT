@@ -164,4 +164,42 @@ Root governance files remain authoritative: `CONSTITUTION.md`, `DECISIONS.md`, `
 
 ---
 
+## LAF-US Organization & IDAHO-VAULT Placement
+
+### Five Cores Model
+The `LAF-US` organization uses a **Five Cores model** for repository and team topology:
+
+```
+LAF-US (Organization)
+├── PRIVATE (Internal, restricted access)
+│   ├── IDAHO-VAULT (GitHub: LAF-US/IDAHO-VAULT)
+│   │   ├── GitHub = execution and transport
+│   │   ├── Linear = execution state
+│   │   └── Slack = tertiary paging and breadcrumbs
+│   └── Other PRIVATE repos (if any)
+├── SECRET (Highly restricted, not used by IDAHO-VAULT)
+├── PERSONAL (Individual/subset repos under PRIVATE)
+├── PUBLIC (Open-source, public repos)
+└── PUBLISH (Content distribution, e.g., documentation, media)
+```
+
+### IDAHO-VAULT Placement
+- **Core**: `PERSONAL` (subset under `PRIVATE`)
+- **GitHub Team**: `LAF-US` organization
+- **Repository**: `github.com/LAF-US/IDAHO-VAULT`
+- **Connector Posture**:
+  - GitHub = execution and transport
+  - Linear = execution state
+  - Slack = tertiary paging and breadcrumbs
+
+### Wakeup Protocol Alignment
+The `swarm.json` wakeup protocol aligns with the migration document (`!/LAF-USB-FIVE-CORES-MIGRATION-2026-04-15.md`).
+
+### Key References
+- `!/LAF-USB-FIVE-CORES-MIGRATION-2026-04-15.md`: LAF-US organization structure and migration status
+- `swarm.json`: Connector posture registry for IDAHO-VAULT (only)
+- `!/AGENTS.md` (nested): Live roster, lane rules, and current connector posture for LAF-US
+
+---
+
 ###### [["The world is quiet here."]]

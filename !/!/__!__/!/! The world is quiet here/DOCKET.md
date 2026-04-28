@@ -18,6 +18,7 @@ status: ACTIVE
 | Item | Action | Note |
 |---|---|---|
 | Doctrine-to-Implementation Gap Audit | Surface gaps, flag tooling gaps, route to owners | Protocols say what *should* exist; vault needs verification. See `PROTOCOL-SUITE-AWR.md`, stigmergy field, `vault-pheromones.py` integration |
+
 | Control Plane POSIWID Audit | Verify purpose aligns with behavior | DOCKET → AGENTS.md → VAULT-CONVENTIONS.md → VAULT-ZONES.md → PRIVACY.md → VAULT-METADATA-STANDARD.md → swarm.json: pointer chains too long, doctrine exceeds tooling, zones untested, metadata enforcement unknown |
 | Touchstone Completeness Audit | Complete the Tree or reduce aspirational claims | THE GHOST (SOUL) is VACANT. BODY/PERIPHERY underdocumented. Claim vs reality mismatch in the Yggdrasil. See `!README.md` |
 
