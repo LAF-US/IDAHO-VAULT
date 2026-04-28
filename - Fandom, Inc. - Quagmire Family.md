@@ -31,7 +31,7 @@ It is often speculated that the Quagmires are related to the [Denouement Family]
 
 In the Netflix adaptation of *[A Series of Unfortunate Events](https://snicket.fandom.com/wiki/A_Series_of_Unfortunate_Events_\(TV_series\) "A Series of Unfortunate Events (TV series)")*, a mysterious husband and wife credited as only "Mother" and "Father" appear throughout the season. For most of the episodes the audience are led to believe through various clues that they are the [Baudelaire parents](https://snicket.fandom.com/wiki/Baudelaire_Family "Baudelaire Family"), having survived the fire and subsequently been kidnapped.
 
-In " [The Miserable Mill: Part One](https://snicket.fandom.com/wiki/The_Miserable_Mill:_Pa***REMOVED***One "The Miserable Mill: Part One") ", after arriving at a door identical to the one that the Baudelaires wait on the inside of in the [Lucky Smells Lumbermill](https://snicket.fandom.com/wiki/Lucky_Smells_Lumbermill "Lucky Smells Lumbermill"), the parents are revealed to be the parents not of the Baudelaires but of the Quagmires, therefore identifying them as "Mr. and Mrs. Quagmire".
+In " [The Miserable Mill: Part One](https://snicket.fandom.com/wiki/The_Miserable_Mill:_Part_One "The Miserable Mill: Part One") ", after arriving at a door identical to the one that the Baudelaires wait on the inside of in the [Lucky Smells Lumbermill](https://snicket.fandom.com/wiki/Lucky_Smells_Lumbermill "Lucky Smells Lumbermill"), the parents are revealed to be the parents not of the Baudelaires but of the Quagmires, therefore identifying them as "Mr. and Mrs. Quagmire".
 
 When [Count Olaf](https://snicket.fandom.com/wiki/Count_Olaf "Count Olaf") meets Duncan and Isadora at [Prufrock Preparatory School](https://snicket.fandom.com/wiki/Prufrock_Preparatory_School "Prufrock Preparatory School"), Duncan calls him a miscreant. Olaf immediately remembers about Mrs. Quagmire and calls her a tiresome woman telling the two of three triplets how she once told him 'You miscreant, never again will you darken the doors of this hangar.'.
 
@@ -77,12 +77,12 @@ Quagmire Triplets.
 
 [^1]: [PROSE](https://snicket.fandom.com/wiki/PROSE "PROSE"): *[The Slippery Slope](https://snicket.fandom.com/wiki/The_Slippery_Slope "The Slippery Slope")*
 
-[^2]: [TV](https://snicket.fandom.com/wiki/TV "TV"): *[The Miserable Mill: Part One](https://snicket.fandom.com/wiki/The_Miserable_Mill:_Pa***REMOVED***One "The Miserable Mill: Part One")*
+[^2]: [TV](https://snicket.fandom.com/wiki/TV "TV"): *[The Miserable Mill: Part One](https://snicket.fandom.com/wiki/The_Miserable_Mill:_Part_One "The Miserable Mill: Part One")*
 
-[^3]: [TV](https://snicket.fandom.com/wiki/TV "TV"): *[The Miserable Mill: Part Two](https://snicket.fandom.com/wiki/The_Miserable_Mill:_Pa***REMOVED***Two "The Miserable Mill: Part Two")*
+[^3]: [TV](https://snicket.fandom.com/wiki/TV "TV"): *[The Miserable Mill: Part Two](https://snicket.fandom.com/wiki/The_Miserable_Mill:_Part_Two "The Miserable Mill: Part Two")*
 
 [^4]: [PROSE](https://snicket.fandom.com/wiki/PROSE "PROSE"): *[The Penultimate Peril](https://snicket.fandom.com/wiki/The_Penultimate_Peril "The Penultimate Peril")*
 
 [^5]: [Oxford Learners Dictionary](https://www.oxfordlearnersdictionaries.com/us/definition/american_english/quagmire)
 
-[^6]: [TV](https://snicket.fandom.com/wiki/TV "TV"): *[The Austere Academy: Part One](https://snicket.fandom.com/wiki/The_Austere_Academy:_Pa***REMOVED***One "The Austere Academy: Part One")*
+[^6]: [TV](https://snicket.fandom.com/wiki/TV "TV"): *[The Austere Academy: Part One](https://snicket.fandom.com/wiki/The_Austere_Academy:_Part_One "The Austere Academy: Part One")*

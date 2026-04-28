@@ -77,6 +77,7 @@ Immediate wakeup facts:
 7. Use `swarm.json` -> `!/agents.json` -> `!/agent.sh` for canonical local execution bootstrap.
 8. Read `!README.md` only when the task needs Touchstone Tree or narrative context.
 9. Treat historical CrewAI harbor notes as non-live unless `.crewai/MANIFEST.md` or `!/AGENTS.md` says otherwise.
+10. OpenCode AI is a sandboxed tooling dependency, not a live agent.
 
 ## Discovery Before Construction
 

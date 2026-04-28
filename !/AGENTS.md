@@ -16,7 +16,7 @@
 
 ---
 
-1. `sta***REMOVED***SPARKSEED.sh` (root) -> **Foundational Bootstrapping Protocol**. This script must be the first command executed.
+1. `start_SPARKSEED.py` (root) -> **Foundational Bootstrapping Protocol**. This script must be the first command executed.
 2. Root `AGENTS.md` (root) -> Cross-tool pointer
 3. `!/WAKEUP.md` -> Explicit wakeup and conflict-resolution surface
 4. `!/README.md` -> Explicit startup and task-based orientation suite
@@ -56,6 +56,8 @@ Follow this precedence:
 4. `swarm.json`
 5. generated bootstrap surfaces
 6. historical notes, abandoned branch artifacts, and exploratory files
+
+Google Gemini is banned from making decisions unless Logan is present.
 
 Immediate wakeup facts:
 
