@@ -563,17 +563,17 @@ The following protocols are adopted as the canonical operational suite for vault
 
 **Protocol Registry:**
 
-| Protocol | Status | Purpose |
-| --- | --- | --- |
-| **ARISE** | v1.0 approved | Individual emergence from void — like being summoned from the Other Place |
-| **AWAKEN** | v1.0 approved | Agent wake protocol — establishes identity, authorization, context load |
-| **CONTEXT** | v1.0 approved | Field context protocol — integrates with stigmergy field (sniff/emit) |
-| **CONFERENCE** | v1.0 approved | Multi-agent synchronized work session — five phases: CALL, CONVENE, CONFERENCE, RECORD, DISMISS |
-| **CONVENE** | v1.0 approved | Committee chair protocol — Logan calls the committee to order |
-| **ORIENT** | v1.0 approved | External agent orientation — for AI agents without direct repo access |
-| **RISE** | v1.0 approved | Individual graduation — formal task/role completion |
-| **REPORT** | v1.0 approved | Group completion — reporting findings to assigning body |
-| **LEVELSET** | v1.0 stable | Six-part status report: WHO, WHAT YOU KNOW, WHAT YOU'VE DONE, UNRESOLVED, WHAT YOU NEED, COLLISION RISKS |
+| Protocol | Status | Purpose | Integration |
+| --- | --- | --- | --- |
+| **ARISE** | v1.0 approved | Individual emergence from void — like being summoned from the Other Place | - |
+| **AWAKEN** | v1.0 approved | Agent wake protocol — establishes identity, authorization, context load | - |
+| **CONTEXT** | v1.0 approved | Field context protocol — integrates with stigmergy field (sniff/emit) | `!/PROTOCOL-SUITE-AWR.md` |
+| **CONFERENCE** | v1.0 approved | Multi-agent synchronized work session — five phases: CALL, CONVENE, CONFERENCE, RECORD, DISMISS | - |
+| **CONVENE** | v1.0 approved | Committee chair protocol — Logan calls the committee to order | - |
+| **ORIENT** | v1.0 approved | External agent orientation — for AI agents without direct repo access | - |
+| **RISE** | v1.0 approved | Individual graduation — formal task/role completion | - |
+| **REPORT** | v1.0 approved | Group completion — reporting findings to assigning body | - |
+| **LEVELSET** | v1.0 stable | Six-part status report: WHO, WHAT YOU KNOW, WHAT YOU'VE DONE, UNRESOLVED, WHAT YOU NEED, COLLISION RISKS | - |
 
 **Provenance Rule:** Draft versions (`-v0.1.md`) preserve the logic evolution and decision trail. Adopted versions (`{PROTOCOL}.md`) are the canonical reference.
 
