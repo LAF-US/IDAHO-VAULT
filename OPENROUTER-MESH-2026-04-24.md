@@ -31,7 +31,7 @@ All AI model calls centralized through OpenRouter for:
 
 | Component | Status | Model |
 |-----------|--------|-------|
-| OpenClaw Gateway | ✅ Running | `google/gemini-2.5-flash-preview-05-20` |
+| OpenClaw Gateway | ✅ Running | `openrouter/openai/gpt-4o-mini` |
 | Codex | ✅ Ready | Via launch scripts |
 | Claude Code | ✅ Ready | Via launch scripts |
 | Discord | ⚠️ Enabled | Needs token verification |
@@ -59,17 +59,29 @@ All AI model calls centralized through OpenRouter for:
 
 | Model | Context | Use |
 |-------|---------|-----|
-| `google/gemini-2.5-flash-preview-05-20` | 1M | Primary (reasoning) |
-| `openai/gpt-4o-mini` | 286K | Secondary |
+| `openai/gpt-4o-mini` | 286K | Primary / default |
 | `anthropic/claude-3.5-haiku` | 131K | Claude tasks |
+| `mistralai/mistral-large-2411` | 131K | Paid / larger context |
+| `mistralai/mistral-small-2603` | 131K | Free / lightweight |
+
+## Current Live Binding
+
+- Gateway bind: `loopback`
+- Auth mode: `token`
+- Primary model: `openrouter/openai/gpt-4o-mini`
 
 ## Bootstrap
 
-Run `sta***REMOVED***SPARKSEED.py` to:
+Run the canonical local bootstrap chain to:
 1. Load secrets from 1Password
 2. Start OpenClaw gateway
 3. Reload secrets
 4. Audit configuration
+
+Current runtime helpers:
+- `python3 !/resolve_openrouter_secret.py`
+- `python3 scripts/validate_openrouter.py`
+- `python3 scripts/validate_services.py --write-matrix`
 
 ## 1Password Items (Vault)
 
@@ -102,5 +114,11 @@ Run `sta***REMOVED***SPARKSEED.py` to:
 # Codex via OpenRouter
 .\!launch-codex-openrouter.cmd
 ```
+
+## Validation Surfaces
+
+- Compatibility snapshot: `!/INTEGRATIONS/COMPATIBILITY.md`
+- Health log: `!/MONITORING/health-log.md`
+- SSH/Git signing guidance remains separate in the harvested 1Password SSH agent docs.
 
 ###### [["The world is quiet here."]]

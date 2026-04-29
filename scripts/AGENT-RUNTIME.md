@@ -34,6 +34,7 @@ powershell -ExecutionPolicy Bypass -File .\scripts\Start-CodexVault.ps1 --help
 powershell -ExecutionPolicy Bypass -File .\scripts\Start-GeminiVault.ps1 -m gemini-2.5-pro
 powershell -ExecutionPolicy Bypass -File .\scripts\Start-CrewAIVault.ps1
 powershell -ExecutionPolicy Bypass -File .\scripts\Start-CrewAIVault.ps1 test
+python scripts/validate_bootstrap.py
 ```
 
 ## Notes
@@ -46,3 +47,5 @@ powershell -ExecutionPolicy Bypass -File .\scripts\Start-CrewAIVault.ps1 test
 - `crewai` is launched with vault-local `APPDATA`, `LOCALAPPDATA`, and home
   paths under `.agent-home/crewai/` so SQLite storage and other runtime files
   stay inside the vault.
+- Use `python scripts/validate_bootstrap.py` as the checkout-bound preflight
+  before treating the CrewAI shard as healthy on a new machine.

@@ -29,6 +29,7 @@ Consolidated AI model routing through OpenRouter for zero-cost, flexible model s
 | `.op/openrouter.env` | Fixed 1Password path to `op://Vault/OpenRouter API Key/credential` |
 | `!resolve_openrouter_secret.py` | Updated vault to `Vault`, prioritized `OpenRouter API Key` item |
 | `.op/openrouter.env.template` | Template updated with correct reference |
+| `.op/openrouter.env` | Anthropic compatibility keys now ride the same OpenRouter contract |
 
 ### 2. OpenClaw → OpenRouter Migration
 
@@ -89,6 +90,8 @@ Config: `token: env:DISCORD_OPENCLAW_TOKEN` (resolved by SPARKSEED)
 | Document | Purpose |
 |----------|---------|
 | `OPENROUTER-MESH-2026-04-24.md` | Live mesh topology and status |
+| `!/INTEGRATIONS/COMPATIBILITY.md` | Canonical runtime/provider compatibility snapshot |
+| `!/MONITORING/health-log.md` | Canonical health snapshot log |
 
 ---
 
@@ -217,6 +220,19 @@ All channels enabled in OpenClaw config but require tokens:
 | taskflow | Durable task flows |
 | taskflow-inbox-triage | Inbox triage patterns |
 | weather | Weather via wttr.in |
+
+---
+
+## Current Live Override
+
+The original implementation report captured the April 24 migration state. The
+active workstation now uses:
+
+- `gateway.bind = loopback`
+- `agents.defaults.model.primary = openrouter/openai/gpt-4o-mini`
+- OpenRouter provider models aligned to the live JSON in `~/.openclaw/openclaw.json`
+- Validator scripts now provide the live runtime contract check instead of
+  relying on this report as the only source of truth
 
 ### Skills Needing Setup (38)
 
