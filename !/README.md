@@ -49,8 +49,6 @@ governance stack are meant to stay legible within that larger order.
 
 ## Startup Sequence
 
-## Startup Sequence
-
 1. **Mandatory Initialization**: Execute `start_SPARKSEED.py` to establish the operational environment and validate all necessary services/tokens.
 2. Read root `AGENTS.md` for cross-tool pointer context only.
 3. Read `!/WAKEUP.md` to clear stale world models and conflict assumptions.

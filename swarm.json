@@ -10,7 +10,7 @@
     "boot_order": [
       "AGENTS.md",
       "!/WAKEUP.md",
-      "!README.md",
+      "!/README.md",
       "!/AGENTS.md",
       "CONSTITUTION.md",
       "swarm.json",

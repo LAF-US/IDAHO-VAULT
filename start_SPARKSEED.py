@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 """Repo-root wrapper for the Python-native SPARKSEED bootstrap."""
 
 from __future__ import annotations

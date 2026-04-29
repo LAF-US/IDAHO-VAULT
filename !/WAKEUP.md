@@ -28,8 +28,6 @@ or scattered branch residue.
 
 ## Read In This Order
 
-## Read In This Order
-
 1. `start_SPARKSEED.py` (Mandatory Bootstrap). This must run first.
 2. `!/WAKEUP.md` to clear stale world models and conflict assumptions.
 3. `!/README.md` for explicit startup and task-based orientation.
