@@ -1,6 +1,6 @@
-# Service Health Monitor Skill
+# Service Health Monitor Reference
 
-This skill monitors external API health for services integrated with the vault.
+This note maps service-health guidance to the live monitoring script.
 
 ## Monitored Services
 - GitHub API (`https://api.github.com`)
@@ -10,17 +10,14 @@ This skill monitors external API health for services integrated with the vault.
 
 ## Usage
 ```bash
-# Check GitHub API health
-curl -s -o /dev/null -w "%{http_code}" https://api.github.com
-
-# Check Linear API
-curl -s -o /dev/null -w "%{http_code}" https://linear.app/api
-
-# Full health report
 python3 scripts/health_monitor.py
+python3 scripts/health_monitor.py --write-log
 ```
 
 ## Notes
 - Run before initiating external integrations.
 - Failed health checks should block automated workflows.
-- Log results to `!/MONITORING/health-log.md`.
+- `scripts/health_monitor.py` writes canonical snapshots to
+  `!/MONITORING/health-log.md`.
+- Treat this file as a reference note. The live check surface is the Python
+  script.
