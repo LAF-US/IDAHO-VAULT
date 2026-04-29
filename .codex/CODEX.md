@@ -3,7 +3,7 @@
 **Load mechanism:** Codex auto-loads `AGENTS.md` files in the Codex/global and project path. Project-scoped Codex config lives in `.codex/config.toml`. This `CODEX.md` file is a Codex-specific reference shim for this repo and may be injected manually by Logan.
 
 **Owner:** Logan Finney - journalist, producer/reporter, Idaho Reports / Idaho Public Television
-**Repository:** github.com/loganfinney27/IDAHO-VAULT (public)
+**Repository:** github.com/LAF-US/IDAHO-VAULT (public)
 **Platform:** Obsidian.md vault, version-controlled with git
 
 ---
@@ -40,6 +40,8 @@ See `VAULT-CONVENTIONS.md` for vault structure, naming, frontmatter, sourcing pr
 
 - OpenAI developer docs MCP is configured in `.codex/config.toml` as `openaiDeveloperDocs`.
 - For OpenAI API, ChatGPT Apps SDK, or Codex-specific questions, use the OpenAI developer docs MCP first, then fall back to official OpenAI domains only if needed.
+- Codex CLI and Codex IDE should share `.codex/config.toml` as the project-scoped configuration surface unless Logan explicitly establishes a separate compatibility shim.
+- The vault's default multi-provider transport is OpenRouter compatibility mode for agent runtimes, not OpenAI-only transport. Keep that distinction explicit in docs and scripts so provider redundancy stays understandable.
 
 ---
 
