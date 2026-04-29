@@ -69,6 +69,17 @@ def ensure_op_signed_in() -> None:
         )
 
 
+def parse_env_content(content: str) -> dict[str, str]:
+    values: dict[str, str] = {}
+    for raw_line in content.splitlines():
+        line = raw_line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, value = line.split("=", 1)
+        values[key.strip()] = value.strip()
+    return values
+
+
 def ensure_env_file(agent: str) -> Path:
     required_keys = {
         "codex": ["OPENAI_API_KEY", "OPENAI_BASE_URL"],
@@ -77,8 +88,8 @@ def ensure_env_file(agent: str) -> Path:
 
     needs_refresh = not ENV_FILE.exists()
     if not needs_refresh:
-        content = ENV_FILE.read_text(encoding="utf-8")
-        needs_refresh = any(f"{key}=" not in content for key in required_keys)
+        env_values = parse_env_content(ENV_FILE.read_text(encoding="utf-8"))
+        needs_refresh = any(not env_values.get(key) for key in required_keys)
 
     if needs_refresh:
         if shutil.which("op") is None:

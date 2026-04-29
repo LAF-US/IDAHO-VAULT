@@ -192,7 +192,7 @@ def load_manifest(path: Path) -> dict:
         },
         "mcp": {
             "enabled": False,
-            "mode": "transpo***REMOVED***only",
+            "mode": "transport_only",
             "server": None,
             "notes": "Enable after Obsidian MCP Tools endpoint and write controls are validated.",
         },

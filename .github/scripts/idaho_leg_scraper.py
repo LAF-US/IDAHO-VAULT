@@ -1275,7 +1275,7 @@ def ensure_session_note(year: str) -> None:
 # CSV export for Flourish Budget Tracker
 # ─────────────────────────────────────────────────────────────────────────────
 
-def expo***REMOVED***bills_to_csv(bill_list: list[dict], output_path: Path, year: str) -> int:
+def export_bills_to_csv(bill_list: list[dict], output_path: Path, year: str) -> int:
     """
     Export bill data to CSV format for Flourish Budget Tracker.
 
@@ -1402,8 +1402,8 @@ def write_scraper_run_log(
         # Insert the new entry after the fixed header block (after the first "---\n\n")
         header_end = existing.find(_LOG_HEADER)
         if header_end != -1:
-            inse***REMOVED***at = header_end + len(_LOG_HEADER)
-            new_content = existing[:inse***REMOVED***at] + entry + existing[inse***REMOVED***at:]
+            insert_at = header_end + len(_LOG_HEADER)
+            new_content = existing[:insert_at] + entry + existing[insert_at:]
         else:
             # Fallback: append
             new_content = existing.rstrip() + "\n\n" + entry
@@ -1473,7 +1473,7 @@ def main() -> int:
             return 1
 
         csv_path = Path(args.csv_export)
-        exported_count = expo***REMOVED***bills_to_csv(bill_list, csv_path, args.year)
+        exported_count = export_bills_to_csv(bill_list, csv_path, args.year)
 
         elapsed = (datetime.now(timezone.utc) - start).total_seconds()
         log.info("CSV export complete in %.1fs — %d bills exported to %s",

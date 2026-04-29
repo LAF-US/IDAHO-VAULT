@@ -68,7 +68,7 @@ $content = @(
     "OPENAI_MODEL=openrouter/auto"
     "ANTHROPIC_AUTH_TOKEN=$resolvedRef"
     "ANTHROPIC_BASE_URL=https://openrouter.ai/api"
-    "ANTHROPIC_API_KEY="
+    "ANTHROPIC_API_KEY=$resolvedRef"
 ) -join "`r`n"
 
 $OutFileDir = Split-Path -Parent $OutFile
