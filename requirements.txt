@@ -239,7 +239,7 @@ pillow==12.2.0
     # via pdfplumber
 platformdirs==4.9.6
     # via textual
-portalocker==2.7.0
+portalocker==3.2.0
     # via crewai
 posthog==5.4.0
     # via chromadb
