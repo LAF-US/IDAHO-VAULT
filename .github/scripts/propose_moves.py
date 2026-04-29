@@ -30,21 +30,12 @@ SKIP_REASONS = {
 
 
 def find_latest_audit() -> Path | None:
-    reports = sorted(
-        {
-            *ADMIN_DIR.glob("sort-audit-*.md"),
-            *VAULT_ROOT.glob("sort-audit-*.md"),
-        },
-        reverse=True,
-    )
-    for report in reports:
-        if parse_misplaced(report):
-            return report
+    reports = sorted(ADMIN_DIR.glob("sort-audit-*.md"), reverse=True)
     return reports[0] if reports else None
 
 
-def parse_misplaced(repo***REMOVED***path: Path) -> list[dict]:
-    content = repo***REMOVED***path.read_text(encoding="utf-8")
+def parse_misplaced(report_path: Path) -> list[dict]:
+    content = report_path.read_text(encoding="utf-8")
     section = re.search(
         r"## Likely Misplaced Files.*?\n(.*?)(?=\n---|\Z)",
         content, re.DOTALL
@@ -82,7 +73,7 @@ def generate_mv_command(file_path: str, suggested_folder: str) -> str | None:
 def main():
     report = find_latest_audit()
     if not report:
-        print("No audit report found. Run so***REMOVED***audit.py first.")
+        print("No audit report found. Run sort_audit.py first.")
         return
 
     print(f"Reading audit report: {report}")
