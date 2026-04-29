@@ -54,12 +54,13 @@
 - Ollama models: `~/.ollama/models/`
 - OpenClaw logs: `/tmp/openclaw/openclaw-local-mesh.log`
 
-## Skills Created (in `skills/`)
-- `openrouter-config.md` — OpenRouter API key management
-- `1password-resolver.md` — 1Password CLI integration
-- `service-health-monitor.md` — External API health checks
-- `oauth-configurator.md` — OAuth flow handling
-- `service-compat-validator.md` — Service compatibility checks
+## Supporting Runtime Surfaces
+- `skills/openrouter-config.md` — reference note for the live OpenRouter env path
+- `skills/1password-resolver.md` — reference note for 1Password-backed runtime secret resolution
+- `skills/service-health-monitor.md` — reference note for `scripts/health_monitor.py`
+- `skills/service-compat-validator.md` — reference note for `scripts/validate_openrouter.py` and `scripts/validate_services.py`
+- `!/MONITORING/health-log.md` — canonical health snapshot log
+- `!/INTEGRATIONS/COMPATIBILITY.md` — canonical compatibility output
 
 ## Next Steps
 1. **Use local config** for all future OpenClaw sessions.
