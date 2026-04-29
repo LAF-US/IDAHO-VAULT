@@ -1,6 +1,6 @@
-# Service Compatibility Validator Skill
+# Service Compatibility Validator Reference
 
-This skill validates external service compatibility with the vault’s current configuration and dependencies.
+This note maps compatibility guidance to the live validation scripts.
 
 ## Checks Performed
 - API version compatibility (e.g., OpenRouter API v1)
@@ -10,14 +10,15 @@ This skill validates external service compatibility with the vault’s current c
 
 ## Usage
 ```bash
-# Validate OpenRouter API compatibility
 python3 scripts/validate_openrouter.py
-
-# Check all services
 python3 scripts/validate_services.py
+python3 scripts/validate_services.py --write-matrix
 ```
 
 ## Notes
 - Run before adding new external integrations.
-- Document compatibility matrix in `!/INTEGRATIONS/COMPATIBILITY.md`.
-- Flag deprecated APIs for replacement.
+- `scripts/validate_openrouter.py` checks the provider runtime contract.
+- `scripts/validate_services.py` checks the broader documented surface and can
+  write the compatibility matrix to `!/INTEGRATIONS/COMPATIBILITY.md`.
+- Treat this file as a reference note. The live compatibility logic is in the
+  Python scripts above.

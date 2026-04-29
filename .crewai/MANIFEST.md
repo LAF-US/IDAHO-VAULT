@@ -90,6 +90,7 @@ machine, path, or runtime container.
 | Package entrypoint | `uv run idaho_vault` | Direct invocation of the same bootstrap shard | Active |
 | Threshold slice runner | `uv run five_wizards_threshold` | Root-first local `5Wizards` threshold run that stages only to `!/CREWAI/` and leaves promotion to Logan | Active |
 | Vault launcher | `powershell -ExecutionPolicy Bypass -File .\scripts\Start-CrewAIVault.ps1` | Vault-contained local invocation with isolated home/AppData paths | Active |
+| Bootstrap validator | `python scripts/validate_bootstrap.py` | Checkout-bound preflight for lockfile, launcher, doctrine, and import posture | Active |
 
 ### Writable surfaces
 

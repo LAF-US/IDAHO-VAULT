@@ -1,13 +1,21 @@
 #!/bin/bash
 # IDAHO-VAULT Dependency Installation Script
+# Historical helper for ad hoc dependency repair.
 # This script installs core dependencies for IDAHO-VAULT
-# Note: lancedb platform compatibility issue with macOS 12 needs to be addressed separately
+# It is not the canonical truth surface for whether the bootstrap shard is healthy.
+# Start with `python scripts/validate_bootstrap.py` and `uv.lock`.
+# Note: lancedb platform compatibility issue with macOS 12 is documented as
+# historical platform-specific reference material in DEPENDENCY_RESOLUTION_PLAN.md.
 
 set -e
 
 echo "=========================================="
 echo "IDAHO-VAULT Dependency Installation"
 echo "=========================================="
+echo ""
+echo "Historical helper only: validate the checkout first with:"
+echo "  python scripts/validate_bootstrap.py"
+echo "Compiled pip compatibility surface: requirements.txt"
 echo ""
 
 # Set environment variables for simdutf
@@ -104,9 +112,9 @@ echo "    incompatibility with macOS 12."
 echo ""
 
 echo "📋 Next Steps:"
-echo "   1. Review DEPENDENCY_INSTALLATION_STATUS.md"
-echo "   2. Address lancedb platform compatibility issue"
-echo "   3. Install remaining dependencies manually or use alternative"
+echo "   1. Run python scripts/validate_bootstrap.py"
+echo "   2. Review DEPENDENCY_RESOLUTION_PLAN.md for platform-specific history"
+echo "   3. Address any remaining blockers the validator reports"
 echo ""
 
 echo "=========================================="
