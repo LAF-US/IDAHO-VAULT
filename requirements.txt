@@ -231,7 +231,7 @@ packaging==26.2
     #   huggingface-hub
     #   lancedb
     #   onnxruntime
-pdfminer-six==20251230
+pdfminer-six==20260107
     # via pdfplumber
 pdfplumber==0.11.9
     # via crewai
