@@ -70,11 +70,11 @@ class StaleBotPrsTest(unittest.TestCase):
         self.assertEqual(stale[0]["lifecycle_state"], "abandoned")
 
     def test_main_sets_lifecycle_before_closing_stale_prs(self) -> None:
-        repo***REMOVED***path = Path(__file__).resolve().parent / "_tmp_stale_bot_prs_report.md"
+        report_path = Path(__file__).resolve().parent / "_tmp_stale_bot_prs_report.md"
         args = SimpleNamespace(
             age_days=2,
             apply=True,
-            repo***REMOVED***path=repo***REMOVED***path,
+            report_path=report_path,
             comment="closing stale bot pr",
         )
         events: list[object] = []
@@ -132,10 +132,10 @@ class StaleBotPrsTest(unittest.TestCase):
                     ),
                 ],
             )
-            self.assertTrue(repo***REMOVED***path.exists())
-            self.assertIn("lifecycle/abandoned", repo***REMOVED***path.read_text(encoding="utf-8"))
+            self.assertTrue(report_path.exists())
+            self.assertIn("lifecycle/abandoned", report_path.read_text(encoding="utf-8"))
         finally:
-            repo***REMOVED***path.unlink(missing_ok=True)
+            report_path.unlink(missing_ok=True)
 
 
 if __name__ == "__main__":

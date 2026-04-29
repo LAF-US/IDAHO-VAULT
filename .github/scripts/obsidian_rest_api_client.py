@@ -196,7 +196,7 @@ def main() -> int:
     args = parser.parse_args()
 
     live_write = resolve_live_write(args.live_write)
-    api_key = args.api_key or __impo***REMOVED***_("os").environ.get("OBSIDIAN_REST_API_KEY")
+    api_key = args.api_key or __import__("os").environ.get("OBSIDIAN_REST_API_KEY")
     needs_api_key = args.command in {"list-root", "read", "search-simple"} or (
         args.command in {"write", "patch"} and live_write
     )

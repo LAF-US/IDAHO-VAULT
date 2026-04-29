@@ -101,7 +101,7 @@ class PhoneLinkIntakeTest(unittest.TestCase):
                 status = phone_link_intake.main(["--source", str(source), "--git-add"])
 
             self.assertEqual(status, 0)
-            mock_run.asse***REMOVED***called_once_with(
+            mock_run.assert_called_once_with(
                 ["git", "add", str(vault_root / "voice-note.m4a")],
                 cwd=str(vault_root),
                 capture_output=True,

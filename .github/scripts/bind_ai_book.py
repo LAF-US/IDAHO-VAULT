@@ -69,7 +69,7 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
-def load_expo***REMOVED***json(input_path: Path) -> Any:
+def load_export_json(input_path: Path) -> Any:
     if input_path.suffix.lower() == ".json":
         return json.loads(input_path.read_text(encoding="utf-8-sig"))
 
@@ -259,7 +259,7 @@ def build_workbook(provider: str, conversations: list[Conversation], output_path
 def main() -> None:
     args = parse_args()
     provider = args.provider.lower()
-    data = load_expo***REMOVED***json(args.input)
+    data = load_export_json(args.input)
 
     if provider in {"anthropic", "claude"}:
         conversations = parse_anthropic_export(data)

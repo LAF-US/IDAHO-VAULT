@@ -64,7 +64,7 @@ def main() -> int:
     else:
         lines.extend(["No tracked files exceed the per-file threshold.", ""])
 
-    args.repo***REMOVED***path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    args.report_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
     github_output = os.environ.get("GITHUB_OUTPUT")
     if github_output:
