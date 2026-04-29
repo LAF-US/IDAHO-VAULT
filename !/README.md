@@ -28,6 +28,25 @@ Its job is simple:
 
 This is a routing surface, not a replacement for governance.
 
+## GitBook Sync
+
+GitBook sync for this repository should treat `!/` as the documentation root,
+not the repository root.
+
+The repo-level `.gitbook.yaml` now scopes GitBook to this lane and uses
+`!/SUMMARY.md` as the explicit navigation surface. That keeps operational files
+such as root control-plane data, scripts, and generated machine surfaces out of
+the GitBook import path.
+
+If GitBook sync is reconfigured, keep these rules intact:
+
+- use the repo root only as the Git provider entrypoint
+- use `!/` as the content root
+- keep `README.md` and `SUMMARY.md` inside `!/` as the GitBook landing and
+  navigation surfaces
+- do not treat `swarm.json`, generated bootstrap files, or shell/runtime
+  artifacts as GitBook content
+
 ## Touchstone Rule
 
 The Touchstone Tree is not disposable flavor text.
