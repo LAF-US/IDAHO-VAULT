@@ -429,7 +429,7 @@
 
 /* SINCE COMPONENT PATTERN SETTINGS */
 
-.setting-component[data-setting="sma***REMOVED***change.active"] {
+.setting-component[data-setting="smart_change.active"] {
   display: none;
 }
 
