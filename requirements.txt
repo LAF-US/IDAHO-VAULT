@@ -191,7 +191,7 @@ openai==2.32.0
     #   instructor
 openpyxl==3.1.5
     # via crewai
-opentelemetry-api==1.34.1
+opentelemetry-api==1.41.1
     # via
     #   chromadb
     #   crewai
