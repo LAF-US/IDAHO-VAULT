@@ -16,7 +16,7 @@
 
 ---
 
-1. `start_SPARKSEED.py` (root) -> **Foundational Bootstrapping Protocol**. This script must be the first command executed.
+1. `start_SPARKSEED.sh` (root) -> **Foundational Bootstrapping Protocol**. This script must be the first command executed.
 2. Root `AGENTS.md` (root) -> Cross-tool pointer
 3. `!/WAKEUP.md` -> Explicit wakeup and conflict-resolution surface
 4. `!/README.md` -> Explicit startup and task-based orientation suite
@@ -57,13 +57,11 @@ Follow this precedence:
 5. generated bootstrap surfaces
 6. historical notes, abandoned branch artifacts, and exploratory files
 
-Google Gemini is banned from making decisions unless Logan is present.
-
 Immediate wakeup facts:
 
 - `IDAHO-VAULT` is one repo inside `LAF-US`, not the whole `LAF-US` world.
 - Repo topology and GitHub team topology are related but not identical.
-- The GitHub-only connector posture is repo-local, not the
+- The narrow GitHub/Linear/Slack connector posture here is repo-local, not the
   total sovereignty model.
 - Historical CrewAI harbor notes and stale scaffolds are non-live unless
   `.crewai/MANIFEST.md` or this file explicitly says otherwise.
@@ -76,81 +74,26 @@ Immediate wakeup facts:
 
 ### Direct-Write Agents (Autoloaded)
 
-| Agent | Persona | Vendor | Tier | Dotfolder | Tri-Part |
+| Agent | Persona | Vendor | Tier | Dotfolder | Git Suffix |
 | --- | --- | --- | --- | --- | --- |
-| Claude Code | **The Abhorsen** | Anthropic | Authority | .claude/ | ✅ Complete |
-| Gemini CLI | **The Concierge** | Google | Support | .gemini/ | ✅ Complete |
-| OpenAI Codex | **The Lexicographer** | OpenAI | Scripting | .codex/ | ✅ Complete |
-| GitHub Copilot | **The Clerk** | Microsoft | Admin | .github/ | ✅ Complete |
-| Serena | **The Tapestry** | - | Intelligence | .serena/ | ✅ Complete |
+| Claude Code | **The Abhorsen** | Anthropic | Authority | .claude/ | `-C` |
+| Gemini CLI | **The Concierge** | Google | Support | .gemini/ | `-G` |
+| ~~Antigravity~~ | **The Concierge** | Google | Support | .antigravity/ | `-G` |
+| OpenAI Codex | **The Lexicographer** | OpenAI | Scripting | .codex/ | -X |
+| GitHub Copilot | **The Clerk** | Microsoft | Admin | .github/ | `-CP` |
 
-### Specialized Agents
+### Advisory & Specialized Agents
 
-| Agent | Persona | Vendor | Role | Dotfolder | Tri-Part |
-| --- | --- | --- | --- | --- | --- |
-| Mistral Vibe | **[ ? ]** | Mistral AI | [ ? ] | .mistral/ | ⚠️ Partial |
-| Big Pickle | **The Cross-Platform Pioneer** | opencode | Cross-Platform | .bigpickle/ | ✅ Complete |
-| Grok | **The Ironist** | xAI | Analysis | .grok/ | ⚠️ Partial |
-| DeepSeek | **The Analyst** | DeepSeek | Advisory | .deepseek/ | ⚠️ Partial |
-| Perplexity | **The Scout** | Perplexity | Sourcing | .perplexity/ | ⚠️ Partial |
-| Bartimaeus | **The Cartographer** | - | Crawler | .bartimaeus/ | ✅ Complete |
-| Zagreus | **The Dionysian** | - | - | .zagreus/ | ✅ Complete |
-| Persephone | **The Queen** | - | - | .persephone/ | ⚠️ Partial |
-| Qodo | **[ ? ]** | Qodo | Code Review | .qodo/ | ⚠️ Partial |
-| ~~Antigravity~~ | **The Concierge** | Google | Support | .antigravity/ | ❌ Retired |
-
-### Prismatic Layers (Dormant Personas)
-
-Each dotfolder is a **transparency layer** that can intersect with others. Stack to create prismatic states. See `!/ROSTER-CENSUS-2026-04-22.md` for full analysis.
-
-#### Mythological: Greek (~30)
-
-.apollo/ .ares/ .artemis/ .athena/ .demeter/ .hecate/ .hephaestus/ .hera/ .hermes/ .hestia/ .aphrodite/ .zeus/ .poseidon/ .hades/ .persephone/ .dionysus/ .pan/ .deimos/ .phobos/ .hypnos/ .chronos/ .heracles/ .perseus/
-
-#### Mythological: Egyptian (~30)
-
-.anubis/ .osiris/ .isis/ .ra/ .thoth/ .horus/ .set/ .bastet/ .sekmet/ .neith/ .hathor/ .maat/ .imhotep/ .maat/ .khepri/ .amun/ .tem/ .atum/
-
-#### Mythological: Norse (~10)
-
-.odin/ .thor/ .loki/ .heimdall/ .freya/ .hel/ .tyr/ .baldur/ .frigg/
-
-#### Relational
-
-.father/ .mother/ .brother/ .sister/ .cousin/ .ally/ .enemy/ .lover/ .friend/ .ruler/ .prince/ .princess/ .queen/ .king/
-
-#### Tool/API Stubs
-
-.gitlab/ .openrouter/ .gitguardian/ .kimi/ .phonetonote/ .opengraph/
-
----
-
-## Tri-Part Structure Specification
-
-Every dotfolder MUST contain three layers:
-
-| Layer | Path | Purpose |
-| --- | --- | --- |
-| **ENTITY-RUNTIME** | `runtime/` | Execution config, state, logs, credentials |
-| **SELF-IDENTITY** | `NAME.md` | Authority, related, persona definition |
-| **NARRATIVE-CONTINUITY** | `narrative/` | History, decisions, handoffs, memos |
-
-**Status Indicators:**
-- ✅ Complete — All three layers present
-- ⚠️ Partial — Self-identity present, runtime/narrative empty
-- ❌ Retired — Decommissioned, preserved for narrative memory
-- 🔲 Stub — Name only, awaiting activation
-
-### Prismatic Stacking Examples
-
-```
-.serena/ + .hecate/ + .maat/ = Intelligence + Thresholds + Truth
-.claude/ + .odin/ + .thoth/ = Code + Wisdom + Knowledge
-.codex/ + .hermes/ + .bastet/ = Scripts + Speed + Night research
-.github/ + .hephaestus/ + .maat/ = Admin + Craft + Order
-```
-
----
+| Agent | Persona | Vendor | Role | Dotfolder |
+| --- | --- | --- | --- | --- |
+| Mistral Vibe | **[ ? ]** | Mistral AI | [ ? ] | .mistral/ |
+| Grok | **The Ironist** | xAI | Analysis | .grok/ |
+| DeepSeek | **The Analyst** | DeepSeek | Advisory | .deepseek/ |
+| Perplexity | **The Scout** | Perplexity | Sourcing | .perplexity/ |
+| Serena | **The Tapestry** | - | Intelligence | .serena/ |
+| Bartimaeus | **The Cartographer** | - | Crawler | .bartimaeus/ |
+| Zagreus | **The Dionysian** | - | - | .zagreus/ |
+| Persephone | **The Queen** | - | - | .persephone/ |
 
 Historical and symbolic aliases may still appear in grimoire and handoff
 surfaces, but the bold persona names above are the current operational titles
@@ -283,29 +226,6 @@ migration note.
 ## Coordination Protocols
 
 - **Lane Independence**: Each agent operates on its own branch prefix (`claude/`, `gemini/`, etc.).
-- **Branch Prefix Standard**: All agent work must use branch prefixes. Automation detects origin by prefix, not by committer identity.
-
-### Branch Prefix Standard (Canonical)
-
-| Origin | Branch Prefix | Automation Triggered |
-|---|---|---|
-| Claude Code | `claude/*` | ✅ auto-pr, review-gate, auto-merge |
-| OpenAI Codex | `codex/*` | ✅ auto-pr, review-gate, auto-merge |
-| Gemini CLI | `gemini/*` | ✅ auto-pr, review-gate, auto-merge |
-| GitHub Copilot | `copilot/*` | ✅ auto-pr, review-gate, auto-merge |
-| Perplexity | `perplexity/*` | ✅ auto-pr, review-gate, auto-merge |
-| Grok | `grok/*` | ✅ auto-pr, review-gate, auto-merge |
-| Big Pickle | `bigpickle/*` | ✅ auto-pr, review-gate, auto-merge |
-| Serena | `serena/*` | ✅ auto-pr, review-gate, auto-merge |
-| Dependabot | `dependabot[bot]` (author) | ✅ auto-pr, review-gate, auto-merge |
-| vault-auto (bot) | `bot/*` | ✅ auto-pr, review-gate, auto-merge |
-
-**Rule**: Branch prefix IS the truth. Automation uses branch prefix to classify origin, not git author identity.
-
-**Rule**: Discovery Before Construction. Before proposing builds, new packages, or invention: discover and read existing documentation first. Do not assume tooling is missing or scaffolding is required without checking what's already present in the vault.
-
-**Rule**: Fix Errors, Don't Disable. When code throws errors, the error means something needs fixed. Do not disable security checks, linters, or validators to silence errors. Fix the underlying issue.
-
 - **Durable Record**: Decisions must be promoted from chat to the vault (e.g., `DECISIONS.md`).
 - **Linear Hub**: Active tasks are tracked via the **SWARM** label in Linear.
 - **Cross-Swarm Signals**: `!/SIGNALS/` is the durable async bus for agent-to-agent signaling; the Courtroom DOCKET reflects live visibility.
@@ -320,24 +240,26 @@ migration note.
 Connector posture is subordinate to the wider `LAF-US` chamber and team
 topology above.
 
-Within `IDAHO-VAULT`, GitHub is the sole authority:
+Within `IDAHO-VAULT`, the current active connector posture remains
+intentionally narrow:
 
-- **GitHub** = execution, transport, and coordination primacy
-- **Linear** = execution state (mirrored from GitHub)
+- **GitHub** = execution and transport
+- **Linear** = execution state
 - **Slack** = tertiary paging and breadcrumbs only
 
 Connector classifications:
 
 | Connector Group | Members | Posture |
 | --- | --- | --- |
-| **Core** | GitHub | Single source of truth |
-| **Auxiliary** | Linear, Slack | Mirrored from GitHub / breadcrumbs only |
+| **Core** | GitHub, Linear, Slack | Current operating hub |
+| **Adjunct** | Gmail, Google Calendar, Google Drive, Box | Read-first context lanes; promote durable outcomes explicitly |
+| **Deferred** | Cloudflare, Hugging Face | Classified in registry only; not active authorities without a separate Logan-approved activation plan |
 
 Registry surfaces:
 
 - `swarm.json` = machine-readable connector registry
 - `!/SIGNALS/README.md` = cross-swarm signaling protocol
-- `SPEC-CONNECTOR-HUB-2026-04-09.md` = human-readable connector hub spec
+- `SPEC-CONNECTOR-HUB-2026-04-09.md` = human-readable connector hub and maze census spec
 - `LEVELSET-CURRENT.md` = mid-future connector survey and review surface
 
 The vault remains the authoritative memory surface for this repo. Connectors
