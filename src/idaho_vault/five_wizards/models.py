@@ -178,7 +178,7 @@ class Claim(WizardBaseModel):
 
 
 class CouncilReport(WizardBaseModel):
-    repo***REMOVED***id: str = Field(min_length=1)
+    report_id: str = Field(min_length=1)
     run_id: str = Field(min_length=1)
     institution: InstitutionId = InstitutionId.FIVE_WIZARDS
     domain: LaneDomain
@@ -198,7 +198,7 @@ class CouncilReport(WizardBaseModel):
     evidence_refs: list[str] = Field(default_factory=list)
 
     @model_validator(mode="after")
-    def validate_repo***REMOVED***mapping(self) -> "CouncilReport":
+    def validate_report_mapping(self) -> "CouncilReport":
         if self.institution is not InstitutionId.FIVE_WIZARDS:
             raise ValueError("Council reports currently belong only to the FIVE_WIZARDS institution.")
         if self.entity is not LANE_TO_ENTITY[self.domain]:
@@ -228,7 +228,7 @@ class FamiliarGaggleNote(WizardBaseModel):
     host_familiar_mode: FamiliarMode
     participant_familiars: list[FamiliarId]
     participant_modes: list[FamiliarMode | None]
-    watched_repo***REMOVED***ids: list[str] = Field(default_factory=list)
+    watched_report_ids: list[str] = Field(default_factory=list)
     gossip_text: str = Field(min_length=1)
     evidence_refs: list[str] = Field(default_factory=list)
     include_in_final_report: bool = True
@@ -263,7 +263,7 @@ class CouncilSession(WizardBaseModel):
     convener_familiar: FamiliarId
     convener_familiar_mode: FamiliarMode
     status: CouncilSessionStatus
-    council_repo***REMOVED***ids: list[str] = Field(default_factory=list)
+    council_report_ids: list[str] = Field(default_factory=list)
     familiar_gaggle_note_ids: list[str] = Field(default_factory=list)
     inquiry_question: str = Field(min_length=1)
     debate_threads: list[str] = Field(default_factory=list)
