@@ -3,9 +3,9 @@ authority: LOGAN
 related:
   - 1Password
   - 2023-12-19 - GIAC meeting
-  - 2026-04-02
-  - "218"
-  - "260"
+  - '2026-04-02'
+  - '218'
+  - '260'
   - AGENTS
   - API
   - Act
@@ -63,7 +63,6 @@ related:
   - template
 date created: Sunday, April 12th 2026, 4:02:32 am
 date modified: Sunday, April 12th 2026, 9:15:35 pm
-"dv_Use ": add-mask::` in workflows to prevent accidental credential leakage in logs
 ---
 
 # VAULT-CONVENTIONS — Shared Reference for All Agents
@@ -505,23 +504,25 @@ Root governance files hold doctrine. The `!/` layer keeps bootstrap paths and co
 
 
 
-## Vault — GitHub Operating Model Mapping
+## Vault — Linear Operating Model Mapping
 
-| Layer (purpose)            | Vault (canonical memory)                                                                                         | GitHub (execution authority)                                     | Linear (mirrored) / Slack (ephemeral)                           |
+
+
+| Layer (purpose)            | Vault (canonical memory)                                                                                         | Linear (execution state)                                           | Chat/Slack (ephemeral)                                              |
 
 | -------------------------- | ---------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ | ------------------------------------------------------------------- |
 
-| **Core / Mind**<br>governing doctrine | Constitution, Charter, Corpus, decision logs, doctrine/guidance updates, LEVELSET snapshots                           | Issues/PRs for drafting/revising; link to vault artifacts | Mirrored from GitHub / breadcrumbs only |
+| **Core / Mind**<br>governing doctrine | Constitution, Charter, Codex, decision logs, doctrine/guidance updates, LEVELSET snapshots                           | Work items to draft/revise doctrine; link PRs/issues to vault artifacts | Quick clarifications; capture any decision back into Vault/PR issue |
 
-| **Periphery / Body**<br>operating mechanics | Protocols, procedures, preferences, templates/SOPs, stable checklists, automation docs                                   | Workflows, automation, tasks, tracking, ownership, deadlines | Mirrored from GitHub / live coordination |
+| **Periphery / Body**<br>operating mechanics | Protocols, procedures, preferences, templates/SOPs, stable checklists, automation docs                                   | Tasks/epics for doing the work, tracking status, ownership, deadlines | Live coordination, handoffs, Q&A; move outcomes to Linear/Vault     |
 
-| **Ghost / Soul**<br>interpretive/cultural layer | Guidelines, grimoire/interpretive notes, guestbook/cultural norms, context vaults                                          | Action items emerging from interpretive work                     | Mirrored / brainstorms |
+| **Ghost / Soul**<br>interpretive/cultural layer | Guidelines, grimoire/interpretive notes, guestbook/cultural norms, context vaults                                          | Action items emerging from interpretive work (e.g., follow-ups, retro tasks) | Brainstorms, vibes, drafts; memorialize decisions/insights in Vault |
 
-| **`!` spaces**<br>operational infrastructure | System files, DOCKET, LEVELSET, agent routing, audit/log artifacts, workflow outputs that must persist                     | Workflow status, incidents, automation output, tickets           | Mirrored / real-time alerts |
+| **`!` spaces**<br>operational infrastructure | System files, DOCKET, LEVELSET, agent routing, audit/log artifacts, workflow outputs that must persist                     | Incidents/infra tasks, runbooks in execution, workflow status, tickets | Real-time paging/alerts; record outcomes in Linear and Vault        |
 
 
 
-**Decision Rule:** Vault holds doctrine and context that must persist. GitHub is the sole execution authority — issues, PRs, workflows, and automation are the system of record. Linear mirrors from GitHub for human visibility. Slack is tertiary paging only — any durable context must be promoted into Vault and/or GitHub.
+**Decision Rule:** Vault holds doctrine and context that must persist. GitHub executes workflows and transport state. Linear tracks execution, owners, and current state. Chat/Slack is transient coordination — any decision or durable context must be promoted promptly into Vault and/or the execution systems (per Persistence Anchoring protocols).
 
 ---
 
@@ -550,41 +551,6 @@ All "direct-write" agents must anchor their external platform state into the vau
 
 ---
 
-## Protocol Suite (Adopted)
-
-The following protocols are adopted as the canonical operational suite for vault-connected agents:
-
-**Protocol Pairs:**
-
-| Pair | Protocols | Function |
-| --- | --- | --- |
-| **A pair** | ARISE → AWAKEN | Individual emergence from void + consciousness |
-| **R pair** | RISE → REPORT | Formal completion + reporting back |
-
-**Protocol Registry:**
-
-| Protocol | Status | Purpose | Integration |
-| --- | --- | --- | --- |
-| **ARISE** | v1.0 approved | Individual emergence from void — like being summoned from the Other Place | - |
-| **AWAKEN** | v1.0 approved | Agent wake protocol — establishes identity, authorization, context load | - |
-| **CONTEXT** | v1.0 approved | Field context protocol — integrates with stigmergy field (sniff/emit) | `!/PROTOCOL-SUITE-AWR.md` |
-| **CONFERENCE** | v1.0 approved | Multi-agent synchronized work session — five phases: CALL, CONVENE, CONFERENCE, RECORD, DISMISS | - |
-| **CONVENE** | v1.0 approved | Committee chair protocol — Logan calls the committee to order | - |
-| **ORIENT** | v1.0 approved | External agent orientation — for AI agents without direct repo access | - |
-| **RISE** | v1.0 approved | Individual graduation — formal task/role completion | - |
-| **REPORT** | v1.0 approved | Group completion — reporting findings to assigning body | - |
-| **LEVELSET** | v1.0 stable | Six-part status report: WHO, WHAT YOU KNOW, WHAT YOU'VE DONE, UNRESOLVED, WHAT YOU NEED, COLLISION RISKS | - |
-
-**Provenance Rule:** Draft versions (`-v0.1.md`) preserve the logic evolution and decision trail. Adopted versions (`{PROTOCOL}.md`) are the canonical reference.
-
-**Key Conventions:**
-- Persona/role names replace numbered tiers (see `!/AGENTS.md` for current roster)
-- The Nest (`!`) is collective space; dotfolders (`.*`) are individual agent space
-- External agents produce drafts/analysis only — no vault commits without Logan approval
-- Bartimaeus is lore, not governance
-
----
-
 
 
 ---
@@ -603,7 +569,7 @@ The following protocols are adopted as the canonical operational suite for vault
 
 | ---------------------- | ------------------------------------------- | ------------------------------- |
 
-| `so***REMOVED***audit.py`        | Audits vault structure for misplaced files  | Weekly Monday 6 AM UTC + manual |
+| `sort_audit.py`        | Audits vault structure for misplaced files  | Weekly Monday 6 AM UTC + manual |
 
 | `idaho_leg_scraper.py` | Scrapes Idaho Legislature bill data         | Daily 6 AM MT + manual          |
 

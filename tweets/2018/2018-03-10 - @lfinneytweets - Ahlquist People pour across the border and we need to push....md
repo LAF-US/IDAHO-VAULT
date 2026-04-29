@@ -12,6 +12,8 @@ reply_to: "@lfinneytweets"
 related:
   - Twitter
   - lfinneytweets
+date created: Monday, April 27th 2026, 10:44:38 pm
+date modified: Tuesday, April 28th 2026, 5:42:08 pm
 ---
 
 Ahlquist: People "pour across the border" and we need to push the federal govt to deal with immigration so we can put Idahoans in Idaho jobs. 

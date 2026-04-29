@@ -152,8 +152,9 @@ Always use the OpenAI developer documentation MCP server if you need to work
 with the OpenAI API, ChatGPT Apps SDK, Codex, or OpenAI tooling without Logan
 having to explicitly ask.
 
-Codex project config for this lives in `.codex/config.toml`. VS Code agent-mode
-config lives in `.vscode/mcp.json`.
+Codex project config for this lives in `.codex/config.toml`. Codex CLI and
+Codex IDE surfaces should share the same `config.toml` layer unless Logan
+explicitly establishes a separate compatibility shim.
 
 ---
 
