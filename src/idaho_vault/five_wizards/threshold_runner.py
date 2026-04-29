@@ -5,7 +5,7 @@ from __future__ import annotations
 from datetime import datetime, timezone
 from pathlib import Path
 
-from idaho_vault.bootstrap_contract import build_contract_repo***REMOVED***for_root
+from idaho_vault.bootstrap_contract import build_contract_report_for_root
 from idaho_vault.five_wizards.enums import LaneDomain
 from idaho_vault.five_wizards.lane_runner import (
     LaneClaimInput,
@@ -221,7 +221,7 @@ def build_threshold_workflow_input(
             LaneRunInput(
                 lane_domain=domain,
                 run_id=resolved_run_id,
-                repo***REMOVED***id=f"{lane_stub}-threshold-report",
+                report_id=f"{lane_stub}-threshold-report",
                 claims=[
                     LaneClaimInput(
                         claim_id=f"{lane_stub}-threshold-claim",
@@ -313,7 +313,7 @@ def _require_threshold_contract(
     context: OperatorContext,
     workflow: FiveWizardsWorkflowInput,
 ) -> None:
-    bootstrap_report = build_contract_repo***REMOVED***for_root(context.root)
+    bootstrap_report = build_contract_report_for_root(context.root)
     errors: list[str] = []
 
     if not bootstrap_report.ok:

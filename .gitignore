@@ -227,6 +227,26 @@ tempfolder.txt
 # Codex and Claude authentication state (contains OAuth tokens - NEVER track)
 .claude/.credentials.json
 .codex/auth.json
+.codex/.codex-global-state.json
+.codex/.personality_migration
+.codex/.sandbox/
+.codex/cache/
+.codex/cap_sid
+.codex/config (2).toml
+.codex/installation_id
+.codex/log/
+.codex/logs_*.sqlite
+.codex/logs_*.sqlite-shm
+.codex/logs_*.sqlite-wal
+.codex/models_cache.json
+.codex/plugins/cache/
+.codex/sandbox.log
+.codex/state_*.sqlite
+.codex/state_*.sqlite-shm
+.codex/state_*.sqlite-wal
+.codex/stub.txt
+.codex/vendor_imports/skills-curated-cache.json
+.codex/version.json
 
 # Backup files and bundles (local machine artifacts)
 *.bundle

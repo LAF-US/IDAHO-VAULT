@@ -150,7 +150,7 @@ def test() -> None:
         sys.path.insert(0, str(src_root))
 
     suite = unittest.defaultTestLoader.discover(
-        sta***REMOVED***dir=str(tests_root),
+        start_dir=str(tests_root),
         pattern="test_*.py",
     )
     result = unittest.TextTestRunner(verbosity=2).run(suite)
