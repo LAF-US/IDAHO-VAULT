@@ -153,7 +153,7 @@ lance-namespace==0.7.2
     # via lancedb
 lance-namespace-urllib3-client==0.7.2
     # via lance-namespace
-lancedb==0.30.0
+lancedb==0.30.2
     # via crewai
 linkify-it-py==2.1.0
     # via markdown-it-py
