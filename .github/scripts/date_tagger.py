@@ -97,8 +97,8 @@ def inject_tags_field(content: str, tag: str) -> str:
     match = FM_CLOSE_RE.search(content, 3)
     if not match:
         return content
-    inse***REMOVED***pos = match.start()
-    return content[:inse***REMOVED***pos] + f'\ntags:\n  - {tag}' + content[inse***REMOVED***pos:]
+    insert_pos = match.start()
+    return content[:insert_pos] + f'\ntags:\n  - {tag}' + content[insert_pos:]
 
 
 def prepend_frontmatter(content: str, tag: str) -> str:
