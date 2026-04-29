@@ -1,28 +1,27 @@
-# 1Password API Key Resolver Skill
+# 1Password Runtime Resolver Reference
 
-This skill resolves API keys from 1Password CLI for external services used in the vault.
+This note maps 1Password-backed runtime secret resolution to the live vault
+scripts. It is reference guidance, not the executable implementation.
 
 ## Requirements
 - 1Password CLI installed and authenticated.
 - API keys stored in 1Password vault with consistent naming.
 
-## Supported Services
-- `openrouter-api-key`
-- `linear-api-key`
-- `slack-webhook-url`
-- `github-token`
+## Canonical runtime path
+- `!/resolve_openrouter_secret.py`
+- `!/resolve-openrouter-secret.ps1`
+- `.op/openrouter.env`
+- `scripts/validate_openrouter.py`
 
 ## Usage
 ```bash
-# Resolve key for a service
-op get item openrouter-api-key --fields password
-
-# Example in Python
-import subprocess
-key = subprocess.getoutput("op get item openrouter-api-key --fields password")
+python3 !/resolve_openrouter_secret.py
+pwsh -File !/resolve-openrouter-secret.ps1
+python3 scripts/validate_openrouter.py
 ```
 
 ## Notes
-- Keys are never hardcoded in scripts.
-- All external API calls should use this resolver.
-- Validate key exists before attempting API calls.
+- Runtime provider secrets should resolve through the vault scripts above.
+- Prefer `op://...` references in `.op/openrouter.env` over plaintext values.
+- The harvested 1Password SSH agent docs are a separate local machine workflow
+  for SSH and Git signing, not the provider runtime secret path.

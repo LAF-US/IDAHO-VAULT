@@ -5,7 +5,12 @@ author:
 published:
 created: 2026-04-28
 description: "This guide will help you understand the basics of Nostr and get you all set up and ready to use Nostr with a new account. We’ll cover how to create a new lightning wallet, create an account, and sign into a client safely."
+tags:
+  - nostr
+date created: Tuesday, April 28th 2026, 6:29:34 pm
+date modified: Tuesday, April 28th 2026, 8:47:48 pm
 ---
+
 This guide will help you understand the basics of Nostr and get you all set up and ready to use Nostr with a new account. We’ll cover how to create a new lightning wallet, create an account, and sign into a client safely.
 
 ## Understanding keys
@@ -36,7 +41,7 @@ Try out some of our favorite Nostr apps:
 ## Find friends to follow
 
 - If you know someone is on Nostr, find their profile by searching for their public key.
-- Many Twitter users are tweeting their Nostr pubkeys with the hashtag #nostr so searching this hashtag can give you a good start.
+- Many Twitter users are tweeting their Nostr pubkeys with the hashtag nostr so searching this hashtag can give you a good start.
 - [nostr.directory](https://nostr.directory/?utm_source=nostr.how&ref=nostr.how) is a database mapping twitter users to their Nostr pubkeys.
 
 ## What does “Signing” mean?

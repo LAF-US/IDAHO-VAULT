@@ -1,5 +1,11 @@
 # Dependency Resolution Plan - IDAHO-VAULT
 
+> [!IMPORTANT]
+> This document is a platform-specific historical/reference plan from a macOS
+> dependency incident. It is not the canonical live bootstrap truth surface.
+> Start with `python scripts/validate_bootstrap.py` and
+> `!/CREWAI/BOOTSTRAP-COMPATIBILITY.md`.
+
 ## 🎯 EXECUTIVE SUMMARY
 
 ### ✅ COMPLETED TASKS
@@ -51,6 +57,20 @@
 **Missing**: macosx_12_0_x86_64 (current macOS version)
 
 ---
+
+## Current Live Bootstrap Path
+
+Use this checkout-bound validation path before following any machine-specific
+repair guidance below:
+
+```bash
+python scripts/validate_bootstrap.py
+powershell -ExecutionPolicy Bypass -File .\scripts\Start-CrewAIVault.ps1
+```
+
+The strategy sections below remain useful historical context for the macOS 12
+`lancedb` incident, but they are not themselves the authoritative runtime
+contract.
 
 ## 📋 RESOLUTION STRATEGIES
 
