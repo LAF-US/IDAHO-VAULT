@@ -32,9 +32,9 @@ $requiredKeys = switch ($Agent) {
 
 $needsRefresh = -not (Test-Path -LiteralPath $envFile)
 if (-not $needsRefresh) {
-    $content = Get-Content -LiteralPath $envFile -Raw
+    $envVars = Load-EnvFile $envFile
     foreach ($requiredKey in $requiredKeys) {
-        if ($content -notmatch "(?m)^$([regex]::Escape($requiredKey))=") {
+        if (-not $envVars.ContainsKey($requiredKey) -or [string]::IsNullOrWhiteSpace($envVars[$requiredKey])) {
             $needsRefresh = $true
             break
         }

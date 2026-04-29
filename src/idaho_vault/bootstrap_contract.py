@@ -243,7 +243,7 @@ def _check_python_version(root: Path) -> ContractCheck:
     )
 
 
-def build_contract_repo***REMOVED***for_root(root: Path) -> ContractReport:
+def build_contract_report_for_root(root: Path) -> ContractReport:
     """Inspect the provided repository root and return a bootstrap contract report."""
     checks = (
         _check_pyproject(root),
@@ -265,4 +265,4 @@ def build_contract_repo***REMOVED***for_root(root: Path) -> ContractReport:
 
 def build_contract_report() -> ContractReport:
     """Inspect the repository and return a bootstrap contract report."""
-    return build_contract_repo***REMOVED***for_root(_project_root())
+    return build_contract_report_for_root(_project_root())

@@ -79,7 +79,7 @@ def render_op_env_file(op_ref: str) -> str:
         "OPENAI_MODEL=openrouter/auto",
         f"ANTHROPIC_AUTH_TOKEN={op_ref}",
         "ANTHROPIC_BASE_URL=https://openrouter.ai/api",
-        "ANTHROPIC_API_KEY=",
+        f"ANTHROPIC_API_KEY={op_ref}",
     ]
     return "\r\n".join(lines)
 

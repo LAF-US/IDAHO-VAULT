@@ -81,7 +81,7 @@ function Get-ImportArtifactTags {
     $artifactTags = New-Object System.Collections.Generic.List[string]
     foreach ($tag in @($Tags)) {
         if (-not $tag) { continue }
-        if (Test-PatternListMatch -Text $tag -Patterns $Policy.impo***REMOVED***tag_patterns) {
+        if (Test-PatternListMatch -Text $tag -Patterns $Policy.import_tag_patterns) {
             $artifactTags.Add($tag)
         }
     }

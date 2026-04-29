@@ -294,7 +294,7 @@ def main():
             total_aliases_removed += 1
         total_wikilinks_stripped += result.get("wikilinks_stripped", 0)
 
-        if not args.repo***REMOVED***only:
+        if not args.report_only:
             rel_path = result["path"]
             parts = []
             if result.get("tags_removed"):

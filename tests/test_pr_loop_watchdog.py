@@ -19,7 +19,7 @@ pr_loop_watchdog = _load_pr_loop_watchdog_module()
 
 
 class PrLoopWatchdogTest(unittest.TestCase):
-    def test_build_repo***REMOVED***marks_blocked_authorizations_as_findings(self) -> None:
+    def test_build_report_marks_blocked_authorizations_as_findings(self) -> None:
         markdown, has_findings = pr_loop_watchdog.build_report(
             {
                 "checked_prs": 1,
@@ -45,7 +45,7 @@ class PrLoopWatchdogTest(unittest.TestCase):
         self.assertIn("PR #89", markdown)
         self.assertIn("not authorized to enable auto-merge", markdown)
 
-    def test_build_repo***REMOVED***renders_healthy_reconciliation_without_findings(self) -> None:
+    def test_build_report_renders_healthy_reconciliation_without_findings(self) -> None:
         markdown, has_findings = pr_loop_watchdog.build_report(
             {
                 "checked_prs": 2,

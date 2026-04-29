@@ -113,7 +113,7 @@ def _get_api_key() -> str:
 
 # ── Permission helpers ─────────────────────────────────────────────────────────
 
-def _asse***REMOVED***write_role(role: str, command: str) -> None:
+def _assert_write_role(role: str, command: str) -> None:
     if role not in WRITE_ROLES:
         print(
             f"ERROR: Role '{role}' cannot perform '{command}'. "
@@ -133,7 +133,7 @@ def _dump_structured(data: dict[str, Any]) -> str:
     """
     try:
         import yaml  # type: ignore[import]
-        return yaml.safe_dump(data, allow_unicode=True, so***REMOVED***keys=False, default_flow_style=False)
+        return yaml.safe_dump(data, allow_unicode=True, sort_keys=False, default_flow_style=False)
     except ImportError:
         return json.dumps(data, indent=2, ensure_ascii=False)
 
@@ -274,7 +274,7 @@ def cmd_list_project_issues(args: argparse.Namespace) -> int:
 
 def cmd_post_comment(args: argparse.Namespace) -> int:
     """Post a comment on a Linear issue. Dry-run by default."""
-    _asse***REMOVED***write_role(args.role, "post_comment")
+    _assert_write_role(args.role, "post_comment")
 
     live = resolve_live_write(args.live_write)
 
@@ -328,7 +328,7 @@ def cmd_post_comment(args: argparse.Namespace) -> int:
 
 def cmd_update_issue_status(args: argparse.Namespace) -> int:
     """Update a Linear issue's workflow state. Dry-run by default."""
-    _asse***REMOVED***write_role(args.role, "update_issue_status")
+    _assert_write_role(args.role, "update_issue_status")
 
     if not args.reason:
         print("ERROR: --reason is required for update_issue_status.", file=sys.stderr)
@@ -411,7 +411,7 @@ def cmd_update_issue_status(args: argparse.Namespace) -> int:
 
 def cmd_link_pr_context(args: argparse.Namespace) -> int:
     """Attach a PR URL to a Linear issue. Dry-run by default."""
-    _asse***REMOVED***write_role(args.role, "link_pr_context")
+    _assert_write_role(args.role, "link_pr_context")
 
     live = resolve_live_write(args.live_write)
 

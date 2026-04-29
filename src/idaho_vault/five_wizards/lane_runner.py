@@ -91,7 +91,7 @@ class LaneNoteInput(LaneRunnerBaseModel):
 class LaneRunInput(LaneRunnerBaseModel):
     lane_domain: LaneDomain
     run_id: str = Field(min_length=1)
-    repo***REMOVED***id: str = Field(min_length=1)
+    report_id: str = Field(min_length=1)
     claims: list[LaneClaimInput]
     wizard_note: LaneNoteInput
     familiar_note: LaneNoteInput
@@ -179,7 +179,7 @@ def _wizard_role_for_lane(request: LaneRunInput) -> str:
     return request.wizard_role or DEFAULT_WIZARD_ROLE_BY_LANE[request.lane_domain]
 
 
-def _draft_repo***REMOVED***text(request: LaneRunInput) -> str:
+def _draft_report_text(request: LaneRunInput) -> str:
     if request.draft_council_text:
         return request.draft_council_text
     claim_ids = ", ".join(f"`{claim.claim_id}`" for claim in request.claims)
@@ -190,7 +190,7 @@ def _draft_repo***REMOVED***text(request: LaneRunInput) -> str:
     )
 
 
-def _challenged_repo***REMOVED***text(
+def _challenged_report_text(
     request: LaneRunInput,
     objections: list[Objection],
     verdicts: list[ValidationVerdict],
@@ -208,7 +208,7 @@ def _challenged_repo***REMOVED***text(
     )
 
 
-def _final_repo***REMOVED***text(
+def _final_report_text(
     request: LaneRunInput,
     lane_state: GateState,
     verdicts: list[ValidationVerdict],
@@ -306,7 +306,7 @@ def _collect_objection_insights(objections: list[Objection]) -> tuple[list[str],
     return _dedupe(unresolved), _dedupe(cautions)
 
 
-def _repo***REMOVED***evidence(
+def _report_evidence(
     wizard_note: PersonalNote,
     familiar_note: PersonalNote,
     claims: list[Claim],
@@ -341,21 +341,21 @@ def run_lane(request: LaneRunInput) -> LaneRunArtifacts:
     verdicts = [adjudicate_claim(claim) for claim in claims]
     lane_state = _lane_state(verdicts)
     unresolved_questions, caution_additions = _collect_objection_insights(objections)
-    shared_evidence_refs = _repo***REMOVED***evidence(wizard_note, familiar_note, claims, objections)
+    shared_evidence_refs = _report_evidence(wizard_note, familiar_note, claims, objections)
 
     draft_report = draft_council_report(
-        repo***REMOVED***id=request.repo***REMOVED***id,
+        report_id=request.report_id,
         run_id=request.run_id,
         domain=request.lane_domain,
         wizard_role=wizard_role,
-        council_text=_draft_repo***REMOVED***text(request),
+        council_text=_draft_report_text(request),
         personal_notes=[wizard_note, familiar_note],
         evidence_refs=shared_evidence_refs,
     )
     challenged_report = challenge_council_report(
         draft_report,
         objections,
-        revised_council_text=_challenged_repo***REMOVED***text(request, objections, verdicts),
+        revised_council_text=_challenged_report_text(request, objections, verdicts),
         unresolved_questions=unresolved_questions,
         cautions=caution_additions,
     )
@@ -366,7 +366,7 @@ def run_lane(request: LaneRunInput) -> LaneRunArtifacts:
         finalized_report = finalize_council_report(
             challenged_report,
             objections,
-            final_council_text=_final_repo***REMOVED***text(request, lane_state, verdicts),
+            final_council_text=_final_report_text(request, lane_state, verdicts),
             evidence_refs=shared_evidence_refs,
         )
     except ValueError as exc:
