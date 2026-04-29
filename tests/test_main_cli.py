@@ -47,13 +47,13 @@ class TestMainCli(unittest.TestCase):
         ):
             main.run_five_wizards_threshold()
 
-        run_stage.asse***REMOVED***called_once_with(
+        run_stage.assert_called_once_with(
             run_id="run-123",
             materialize=False,
             context=fake_context,
         )
-        load_context.asse***REMOVED***called_once_with(root=PROJECT_ROOT)
-        fake_print.asse***REMOVED***called_once_with("summary")
+        load_context.assert_called_once_with(root=PROJECT_ROOT)
+        fake_print.assert_called_once_with("summary")
 
     def test_run_civic_scaffold_can_emit_json(self) -> None:
         fake_scaffold = SimpleNamespace(to_dict=lambda: {"entity": {"title": "IDAHO-VAULT"}})
@@ -68,7 +68,7 @@ class TestMainCli(unittest.TestCase):
 
         printed = fake_print.call_args.args[0]
         self.assertEqual(json.loads(printed), {"entity": {"title": "IDAHO-VAULT"}})
-        load_context.asse***REMOVED***called_once_with(root=PROJECT_ROOT)
+        load_context.assert_called_once_with(root=PROJECT_ROOT)
 
     def test_run_metadata_survey_supports_markdown_output_file(self) -> None:
         from tempfile import TemporaryDirectory
@@ -96,11 +96,11 @@ class TestMainCli(unittest.TestCase):
                 main.run_metadata_survey()
 
             self.assertEqual(output.read_text(encoding="utf-8"), "# Metadata Survey")
-            mock_metadata_survey_module.survey_vault.asse***REMOVED***called_once_with(
+            mock_metadata_survey_module.survey_vault.assert_called_once_with(
                 PROJECT_ROOT,
                 include_private=False,
             )
-            mock_metadata_survey_module.render_markdown.asse***REMOVED***called_once()
+            mock_metadata_survey_module.render_markdown.assert_called_once()
 
 
 if __name__ == "__main__":
