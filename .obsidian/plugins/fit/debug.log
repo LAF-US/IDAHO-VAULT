@@ -1,0 +1,8 @@
+﻿[2026-05-04T19:24:37.218Z] [Plugin] Starting plugin initialization
+[2026-05-04T19:24:37.822Z] .. 📦 [Cache] Loaded SHA caches from storage: {
+  "source": "plugin data.json",
+  "localShaCount": 0,
+  "remoteShaCount": 0,
+  "lastCommit": null
+}
+[2026-05-04T19:24:37.826Z] [Plugin] Plugin initialization completed successfully

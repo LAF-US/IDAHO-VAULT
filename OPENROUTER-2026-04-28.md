@@ -4,6 +4,7 @@ subtitle: "Deep Research Report"
 type: research
 source: web-search-2026-04-28
 tags:
+<<<<<<< Updated upstream
 - openrouter
 - unified-api
 - llm-aggregation
@@ -11,6 +12,17 @@ tags:
 - free-models
 created: 2026-04-28
 author: Logan Finney
+=======
+  - openrouter
+  - unified-api
+  - llm-aggregation
+  - ai-infrastructure
+  - free-models
+created: 2026-04-28
+author: Logan Finney
+date created: Tuesday, April 28th 2026, 11:14:02 pm
+date modified: Friday, May 1st 2026, 4:29:47 pm
+>>>>>>> Stashed changes
 ---
 
 # OPENROUTER
