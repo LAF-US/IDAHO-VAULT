@@ -3,7 +3,10 @@ source: "https://blacksmithgu.github.io/obsidian-dataview/reference/sources/"
 author:
 published:
 created: 2026-04-28
+date created: Tuesday, April 28th 2026, 9:46:21 pm
+date modified: Friday, May 1st 2026, 3:07:12 pm
 ---
+
 ## Sources
 
 A dataview **source** is something that identifies a set of files, tasks, or other data. Sources are indexed internally by Dataview, so they are fast to query. The most prominent use of sources is the [FROM data command](https://blacksmithgu.github.io/obsidian-dataview/queries/data-commands.md#from). They are also used in various JavaScript API query calls.
