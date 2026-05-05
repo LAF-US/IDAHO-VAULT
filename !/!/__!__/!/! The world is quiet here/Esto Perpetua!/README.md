@@ -2,9 +2,9 @@
 
 
 
-Here where the world is quiet rests the \*\*CANON CORE `\[ ! ]`\*\* of the IDAHO-VAULT; May it be forever.
+Here, where the world is quiet, rests the \*\*CANON CORE `\[ ! ]`\*\* of the IDAHO-VAULT; May it be forever.
 
 
 
-\-LAF
+-LAF
 
