@@ -313,3 +313,7 @@ LFPython/
 feed-generator/
 .codex/vendor_imports/skills/
 .obsidian/plugins/obsidianclaw/
+
+!/sort-audit*.md  # Large sort audit files (17MB+)
+
+.codex/logs/  # Log files
