@@ -149,6 +149,8 @@ _phone-link-watcher.pid
 vault-courier-key.json
 *-key.json
 secrets/
+*service-account.json
+archive-secrets-*.json
 
 # Credential exports (NEVER publish)
 Google Passwords.csv
