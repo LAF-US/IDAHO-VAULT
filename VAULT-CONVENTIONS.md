@@ -91,6 +91,11 @@ This file contains the vault conventions shared by all AI agents working in IDAH
 
 This is a personal journalism research vault. It contains notes on Idaho politics, government, legislation, people, organizations, and source documents. All committed content is **on the record** and should be treated as **publishable**.
 
+Media, documents, and binaries may be source material. Storage limits are
+governed by `VAULT-MEDIA-STORAGE.md`: ordinary source files may be committed,
+large files use Git LFS, and files over the GitHub LFS ceiling use external
+durable storage plus a committed vault reference.
+
 
 
 ---
