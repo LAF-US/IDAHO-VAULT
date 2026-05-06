@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+set -eu
+
+python .github/scripts/sync_obsidian_plugin_registry.py --write
+git add manifest.json swarm.json
+python .github/scripts/sync_obsidian_plugin_registry.py --check
+python .github/scripts/check_large_files.py --staged
