@@ -57,24 +57,21 @@
     ]
   },
   "plugin_layer": {
-    "manifest_doc": "!/PLUGIN-REGISTRY.md",
+    "manifest_doc": "!-PLUGIN-REGISTRY.md",
     "status": "active",
-    "authority_boundary": "Plugin doctrine and promotion rules live in !/PLUGIN-REGISTRY.md; interface state lives in .obsidian/community-plugins.json; runtime payloads live under .obsidian/plugins/.",
+    "authority_boundary": "Obsidian config files define interface state; the plugin registry document defines doctrine and promotion rules.",
     "current_state": {
-      "enabled_count": 26,
-      "dormant_count": 28,
-      "installed_count": 54,
-      "total_payload_mb": 171,
-      "largest_payload": {
-        "plugin": "mcp-tools",
-        "size_kb": 117479
-      }
+      "enabled_community_count": 46,
+      "enabled_core_count": 31,
+      "installed_community_count": 20,
+      "dormant_installed_count": 6,
+      "enabled_missing_manifest_count": 32
     },
     "entrypoints": [
       {
         "id": "plugin-manifest",
-        "path": "!/PLUGIN-REGISTRY.md",
-        "role": "canonical doctrine"
+        "path": "!-PLUGIN-REGISTRY.md",
+        "role": "plugin doctrine and promotion rules"
       },
       {
         "id": "community-plugins",
@@ -89,7 +86,7 @@
       {
         "id": "plugin-payloads",
         "path": ".obsidian/plugins/",
-        "role": "installed community-plugin payloads"
+        "role": "installed community-plugin manifests and payloads"
       }
     ],
     "enabled_community_plugins": [
@@ -111,14 +108,34 @@
       "breadcrumbs",
       "obsidian-icon-shortcodes",
       "templater-obsidian",
-      "ai-templater",
       "handwritten-notes",
       "wikipedia-search",
       "msg-handler",
       "obsidian42-strange-new-worlds",
       "obsidian-day-planner",
       "dataview",
-      "obsidian-tasks-plugin"
+      "obsidian-tasks-plugin",
+      "calendar",
+      "obsidian-folder-index",
+      "obsidian-icon-folder",
+      "oz-image-plugin",
+      "tipa-support",
+      "phone-to-roam-to-obsidian",
+      "nostr-writer",
+      "moviegrabber",
+      "todoist-context-bridge",
+      "move-cursor-on-startup",
+      "map-of-content",
+      "obsidian-footnotes",
+      "habit-calendar",
+      "heatmap-calendar",
+      "metadata-menu",
+      "notebook-navigator",
+      "quickadd",
+      "obsidian-tidy-footnotes",
+      "time-ruler",
+      "translate",
+      "fit"
     ],
     "enabled_core_plugins": [
       "file-explorer",
@@ -129,6 +146,7 @@
       "canvas",
       "outgoing-link",
       "tag-pane",
+      "footnotes",
       "properties",
       "page-preview",
       "daily-notes",
@@ -149,9 +167,8 @@
       "file-recovery",
       "publish",
       "sync",
-      "webviewer",
-      "footnotes",
-      "bases"
+      "bases",
+      "webviewer"
     ],
     "families": {
       "enabled": [
@@ -338,7 +355,173 @@
         "persistence": "ephemeral_local_runtime"
       }
     ],
-    "promotion_rule": "No plugin-state change counts as legitimate until !/PLUGIN-REGISTRY.md is updated in the same change set or earlier."
+    "promotion_rule": "Any committed Obsidian plugin config change must be accompanied by synced manifest.json and swarm.json plugin_layer blocks.",
+    "source_of_truth": "tracked_obsidian_config",
+    "generated_by": ".github/scripts/sync_obsidian_plugin_registry.py",
+    "installed_community_plugins": [
+      {
+        "id": "ai-image-analyzer",
+        "name": "AI image analyzer",
+        "version": "1.2.1",
+        "path": ".obsidian/plugins/ai-image-analyzer/manifest.json"
+      },
+      {
+        "id": "ai-templater",
+        "name": "AI for Templater",
+        "version": "1.0.20",
+        "path": ".obsidian/plugins/ai-templater/manifest.json"
+      },
+      {
+        "id": "handwritten-notes",
+        "name": "Handwritten Notes",
+        "version": "1.4.0",
+        "path": ".obsidian/plugins/handwritten-notes/manifest.json"
+      },
+      {
+        "id": "mcp-tools",
+        "name": "MCP Tools",
+        "version": "0.2.27",
+        "path": ".obsidian/plugins/mcp-tools/manifest.json"
+      },
+      {
+        "id": "msg-handler",
+        "name": "MSG Handler",
+        "version": "0.0.6",
+        "path": ".obsidian/plugins/msg-handler/manifest.json"
+      },
+      {
+        "id": "obsidian-extract-pdf-highlights",
+        "name": "PDF Highlights",
+        "version": "0.0.4",
+        "path": ".obsidian/plugins/obsidian-extract-pdf-highlights/manifest.json"
+      },
+      {
+        "id": "obsidian-git",
+        "name": "Git",
+        "version": "2.38.2",
+        "path": ".obsidian/plugins/obsidian-git/manifest.json"
+      },
+      {
+        "id": "obsidian-linter",
+        "name": "Linter",
+        "version": "1.31.2",
+        "path": ".obsidian/plugins/obsidian-linter/manifest.json"
+      },
+      {
+        "id": "obsidian-local-rest-api",
+        "name": "Local REST API",
+        "version": "3.5.0",
+        "path": ".obsidian/plugins/obsidian-local-rest-api/manifest.json"
+      },
+      {
+        "id": "omnisearch",
+        "name": "Omnisearch",
+        "version": "1.28.2",
+        "path": ".obsidian/plugins/omnisearch/manifest.json"
+      },
+      {
+        "id": "oz-image-plugin",
+        "name": "Image in Editor",
+        "version": "2.2.6",
+        "path": ".obsidian/plugins/oz-image-plugin/manifest.json"
+      },
+      {
+        "id": "pdf-plus",
+        "name": "PDF++",
+        "version": "0.40.31",
+        "path": ".obsidian/plugins/pdf-plus/manifest.json"
+      },
+      {
+        "id": "recent-files-obsidian",
+        "name": "Recent Files",
+        "version": "1.7.6",
+        "path": ".obsidian/plugins/recent-files-obsidian/manifest.json"
+      },
+      {
+        "id": "roygbiv-day-accent",
+        "name": "ROYGBIV Day Accent",
+        "version": "1.0.0",
+        "path": ".obsidian/plugins/roygbiv-day-accent/manifest.json"
+      },
+      {
+        "id": "smart-connections",
+        "name": "Smart Connections",
+        "version": "4.1.8",
+        "path": ".obsidian/plugins/smart-connections/manifest.json"
+      },
+      {
+        "id": "smart-connections-visualizer",
+        "name": "Smart Connections Visualizer",
+        "version": "1.0.27",
+        "path": ".obsidian/plugins/smart-connections-visualizer/manifest.json"
+      },
+      {
+        "id": "tag-wrangler",
+        "name": "Tag Wrangler",
+        "version": "0.6.4",
+        "path": ".obsidian/plugins/tag-wrangler/manifest.json"
+      },
+      {
+        "id": "taskbone-ocr-plugin",
+        "name": "Taskbone",
+        "version": "2.3.2",
+        "path": ".obsidian/plugins/taskbone-ocr-plugin/manifest.json"
+      },
+      {
+        "id": "templater-obsidian",
+        "name": "Templater",
+        "version": "2.18.1",
+        "path": ".obsidian/plugins/templater-obsidian/manifest.json"
+      },
+      {
+        "id": "text-extractor",
+        "name": "Text Extractor",
+        "version": "0.7.0",
+        "path": ".obsidian/plugins/text-extractor/manifest.json"
+      }
+    ],
+    "dormant_installed_plugins": [
+      "ai-image-analyzer",
+      "ai-templater",
+      "obsidian-extract-pdf-highlights",
+      "pdf-plus",
+      "taskbone-ocr-plugin",
+      "text-extractor"
+    ],
+    "enabled_plugins_missing_manifest": [
+      "periodic-notes",
+      "settings-search",
+      "nldates-obsidian",
+      "home-tab",
+      "letterboxd-rss-sync",
+      "breadcrumbs",
+      "obsidian-icon-shortcodes",
+      "wikipedia-search",
+      "obsidian42-strange-new-worlds",
+      "obsidian-day-planner",
+      "dataview",
+      "obsidian-tasks-plugin",
+      "calendar",
+      "obsidian-folder-index",
+      "obsidian-icon-folder",
+      "tipa-support",
+      "phone-to-roam-to-obsidian",
+      "nostr-writer",
+      "moviegrabber",
+      "todoist-context-bridge",
+      "move-cursor-on-startup",
+      "map-of-content",
+      "obsidian-footnotes",
+      "habit-calendar",
+      "heatmap-calendar",
+      "metadata-menu",
+      "notebook-navigator",
+      "quickadd",
+      "obsidian-tidy-footnotes",
+      "time-ruler",
+      "translate",
+      "fit"
+    ]
   },
   "cross_swarm_sync": {
     "protocol_doc": "!/SIGNALS/README.md",
