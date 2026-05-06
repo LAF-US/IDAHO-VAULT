@@ -4,8 +4,10 @@ related:
 - Git
 - GitHub
 - Git LFS
+- gcloud
 - rclone
 - rsync
+- LAF-USB
 - VAULT-CONVENTIONS
 - media
 - source documents
@@ -27,14 +29,22 @@ workflow, but Git is not the storage backend for every raw object.
 
 ## Transport and Mirrors
 
-rclone and rsync are the intended transport tools for distribution, mirroring,
-caching, and backup lanes. Git remains the authoritative index for small source
-files, LFS pointers, manifests, and notes. rclone/rsync carry object payloads
-that are too large or too operationally heavy for GitHub.
+rclone, rsync, and `gcloud storage rsync` are the intended transport tools for
+distribution, mirroring, caching, and backup lanes. Git remains the
+authoritative index for small source files, LFS pointers, manifests, and notes.
+These tools carry object payloads that are too large or too operationally heavy
+for GitHub.
+
+The Universal Sync Bus protocol is not yet live. Treat
+`.github/scripts/vault-courier-sync.sh` as disabled historical scaffolding: it
+depended on a credential that leaked and has not been reprovisioned. Do not use
+that script as the active sync path. See `LAF-USB-PROTOCOL-FRAMEWORK.md` for
+the proposed high-level framework. USB transport events may later be observed
+through SBP pheromone trails, but SBP does not authorize transfers.
 
 Track durable inventories and reference notes. Do not track local rclone
-configs, tokens, caches, logs, rsync partial directories, or machine-local
-mirror state.
+configs, gcloud credential stores, tokens, caches, logs, rsync partial
+directories, or machine-local mirror state.
 
 ## External Object References
 
