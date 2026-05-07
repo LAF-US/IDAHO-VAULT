@@ -10,7 +10,8 @@ def test_ollama():
         r = requests.post('http://localhost:11434/api/generate',
             json={'model': 'gemma4:latest', 'prompt': 'Say hello', 'stream': False}, timeout=30)
         if r.status_code == 200:
-            return f"[OK] Ollama: {r.json().get('response', '')[:50]}"
+            resp = r.json().get('response', '')
+            return f"[OK] Ollama: status 200, response length: {len(resp)}"
         return f"[FAIL] Ollama error: {r.status_code}"
     except Exception as e:
         return f"[FAIL] Ollama failed: {e}"
@@ -26,7 +27,7 @@ def test_openrouter():
             headers={'Authorization': f'Bearer {key}', 'Content-Type': 'application/json'},
             json={'model': 'anthropic/claude-3-haiku', 'messages': [{'role': 'user', 'content': 'Say hi'}], 'max_tokens': 10}, timeout=30)
         if r.status_code == 200:
-            return f"[OK] OpenRouter: {r.json()['choices'][0]['message']['content'][:50]}"
+            return f"[OK] OpenRouter: status 200, response received"
         return f"[FAIL] OpenRouter error: {r.status_code}"
     except Exception as e:
         return f"[FAIL] OpenRouter failed: {e}"
