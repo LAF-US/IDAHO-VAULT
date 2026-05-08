@@ -17,11 +17,21 @@ This plan is non-destructive. It records intended routing and review order only.
 
 ## Canonical Roles
 
-| Drive | Role       | Target behavior                                                                                                                                       |
-| ----- | ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `D:`  | Home Desk  | Broad home-base archive and staging surface for personal, school, paperwork, photos, music, older projects, and material needing slower review.       |
-| `E:`  | Work Desk  | Professional archive and working surface for Idaho Reports, Legislature, IDEX, FYIdaho, OI, production media, exports, and source/reference packages. |
-| `F:`  | Travel Bag | Portable active-work SSD. Keep lean. Carry current field/project files only, then offload back to Home Desk or Work Desk.                             |
+The canonical identities are roles, not drive letters. Windows drive letters are
+local mount observations and may change across machines, boots, docks, USB
+ports, operating systems, and environments.
+
+| Canonical role | Observed Windows mount | Observed volume label | Target behavior                                                                                                                                       |
+| -------------- | ---------------------- | --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Home Desk      | `D:`                   | LoganF                | Broad home-base archive and staging surface for personal, school, paperwork, photos, music, older projects, and material needing slower review.       |
+| Work Desk      | `E:`                   | Expansion             | Professional archive and working surface for Idaho Reports, Legislature, IDEX, FYIdaho, OI, production media, exports, and source/reference packages. |
+| Travel Bag     | `F:`                   | ExternalSSD           | Portable active-work SSD. Keep lean. Carry current field/project files only, then offload back to Home Desk or Work Desk.                             |
+
+Portable tooling must resolve a drive by role plus available evidence, not by a
+bare path prefix. On Windows this may include drive letter, volume label, volume
+serial, device model, and filesystem. On macOS/Linux this may include mount
+point, volume label, filesystem UUID, block-device identity, and operator
+confirmation.
 
 ## Current Pressure
 
@@ -57,11 +67,11 @@ This plan is non-destructive. It records intended routing and review order only.
 
 ## Non-Destructive Migration Order
 
-1. Stabilize `F:` Travel Bag first: classify cache, recycle, temp, active work,
-   and durable archive candidates.
-2. Move or copy durable professional media from `F:` to `E:` Work Desk only
+1. Stabilize Travel Bag first: classify cache, recycle, temp, active work, and
+   durable archive candidates.
+2. Move or copy durable professional media from Travel Bag to Work Desk only
    after checksums or duplicate evidence exist.
-3. Move or copy personal material from `F:` to `D:` Home Desk only after folder
+3. Move or copy personal material from Travel Bag to Home Desk only after folder
    intent is clear.
 4. Compare cross-drive professional overlaps: `IR` / `Idaho Reports`,
    `Legislature`, `Dialogue`, `Idaho Debates`, `PREMIERE EXPORTS`, and
@@ -76,5 +86,7 @@ This plan is non-destructive. It records intended routing and review order only.
 - Do not move cloud-synced roots without checking sync behavior.
 - Do not rely on drive letters alone in future automation; use role plus volume
   label/device identity where possible.
-- Treat `F:` as portable and fallible: it should carry active working sets, not
-  the only copy of anything important.
+- Treat Travel Bag as portable and fallible: it should carry active working
+  sets, not the only copy of anything important.
+- Record the observed mount path in manifests, but do not make it the durable
+  identifier.

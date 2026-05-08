@@ -21,19 +21,25 @@ formatted, deduplicated, or rewritten.
 | `E:`  | Expansion   | Seagate Expansion HDD USB       | exFAT      |      3.64 TB |      2.99 TB | Healthy |
 | `F:`  | ExternalSSD | Samsung Portable SSD T5 USB SSD | exFAT      |       931 GB |       162 GB | Healthy |
 
-## Canonical External Drive Roles
+## External Drive Identity Model
 
 Logan assigned the current external-drive roles on 2026-05-08:
 
-| Drive | Role       | Working meaning                                                                                                                       |
-| ----- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| `D:`  | Home Desk  | Home-base storage, broad personal archive, older school/paperwork/photos/music, and staging space for careful sorting.                |
-| `E:`  | Work Desk  | Professional/work storage for Idaho Reports, Legislature, IDEX, FYIdaho, OI, production media, exports, and related working archives. |
-| `F:`  | Travel Bag | Lean portable SSD for active field/project material only. Not a long-term archive or cache dump.                                      |
+| Canonical role | Observed Windows mount | Observed volume label | Observed device                 | Working meaning                                                                                                                       |
+| -------------- | ---------------------- | --------------------- | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| Home Desk      | `D:`                   | LoganF                | WD easystore 2624 USB HDD       | Home-base storage, broad personal archive, older school/paperwork/photos/music, and staging space for careful sorting.                |
+| Work Desk      | `E:`                   | Expansion             | Seagate Expansion HDD USB       | Professional/work storage for Idaho Reports, Legislature, IDEX, FYIdaho, OI, production media, exports, and related working archives. |
+| Travel Bag     | `F:`                   | ExternalSSD           | Samsung Portable SSD T5 USB SSD | Lean portable SSD for active field/project material only. Not a long-term archive or cache dump.                                      |
 
 All three drives are currently mixed: each may contain both professional and
 personal files. These roles are migration targets, not claims that the current
 contents are already cleanly separated.
+
+The drive letters are local Windows mount designators, not persistent device
+identities. IDAHO-VAULT frameworks must treat `D:`, `E:`, and `F:` as observed
+mounts from this audit pass only. Cross-OS or cross-machine automation should
+identify these drives by canonical role plus available device evidence such as
+volume label, filesystem UUID/serial, hardware model, and operator confirmation.
 
 ## Top-Level Folder Summary
 
