@@ -21,7 +21,10 @@ MB = 1024 * 1024
 GB = 1024 * MB
 
 DEFAULT_LFS_REQUIRED_BYTES = 100 * MB
-DEFAULT_LFS_MAX_BYTES = 5 * GB
+# GitHub's hard LFS per-file limit is 2 GB (2147483648 bytes).
+# Do not raise above this without verifying GitHub's current limit.
+GITHUB_LFS_MAX_BYTES = 2 * GB
+DEFAULT_LFS_MAX_BYTES = GITHUB_LFS_MAX_BYTES
 
 
 @dataclass(frozen=True)
