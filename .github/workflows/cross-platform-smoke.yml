@@ -1,0 +1,41 @@
+name: Cross-Platform Smoke
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  smoke:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+        python: ["3.10", "3.13"]
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - uses: actions/checkout@0c366fd6a839edf440554fa01a7085ccba70ac98
+
+      - uses: actions/setup-python@c8813ba1bc76ebf779b911ad8ffccbf2e449cb48
+        with:
+          python-version: ${{ matrix.python }}
+
+      - name: Verify startup surfaces exist
+        run: |
+          python -c "from pathlib import Path; missing=[p for p in ['AGENTS.md','!-WAKEUP.md','!/README.md','swarm.json','start_SPARKSEED.py'] if not Path(p).is_file()]; print('Missing: '+', '.join(missing)) if missing else print('Startup surfaces present.'); raise SystemExit(1 if missing else 0)"
+
+      - name: Validate swarm.json
+        run: python -m json.tool swarm.json
+
+      - name: Bootstrap entrypoint help
+        run: python -m py_compile start_SPARKSEED.py
+
+      - name: MESHNET/NETWEB/WEBMESH portability check
+        run: python .github/scripts/meshnetweb_portability_check.py
+
+      - name: MESHNET/NETWEB/WEBMESH portability check strict on PR
+        if: github.event_name == 'pull_request'
+        run: python .github/scripts/meshnetweb_portability_check.py --strict
