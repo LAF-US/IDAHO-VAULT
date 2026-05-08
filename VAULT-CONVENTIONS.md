@@ -968,6 +968,8 @@ See `MESHWEB.md` for the full standard.
 
 The vault must work identically on **any platform** — Windows (NTFS), macOS (APFS/HFS+), Linux (ext4), iOS/Android (Obsidian mobile), and CI runners (GitHub Actions). Both NTFS and APFS are **case-insensitive**; only Linux is case-sensitive. This standard targets the **lowest common denominator** of all target filesystems.
 
+MESHNET/NETWEB/WEBMESH automation must also be OS- and environment-agnostic. Do not hardcode host-local user paths, Unix-only temp directories, shell-specific behavior, or assumptions that only hold on one runner family. Prefer Python `pathlib`, repository-relative paths, and GitHub Actions matrix coverage across Windows, macOS, and Linux for core bootstrap surfaces.
+
 
 
 ### Forbidden filenames (any extension, any case)
