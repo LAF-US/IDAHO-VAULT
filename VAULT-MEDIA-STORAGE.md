@@ -1,16 +1,16 @@
 ---
 authority: LOGAN
 related:
-- Git
-- GitHub
-- Git LFS
-- gcloud
-- rclone
-- rsync
-- LAF-USB
-- VAULT-CONVENTIONS
-- media
-- source documents
+  - Git
+  - GitHub
+  - Git LFS
+  - gcloud
+  - rclone
+  - rsync
+  - LAF-USB
+  - VAULT-CONVENTIONS
+  - media
+  - source documents
 ---
 
 # VAULT-MEDIA-STORAGE
@@ -24,8 +24,11 @@ workflow, but Git is not the storage backend for every raw object.
 1. Files at or below normal GitHub limits can be committed directly when they
    are intentional vault content.
 2. Files over 100 MB must be covered by Git LFS attributes before commit.
-3. Files over 5 GB must not be committed to Git or Git LFS. Store the object in
+3. Files over 2 GB must not be committed to Git or Git LFS. Store the object in
    external durable storage and commit a Markdown note or manifest reference.
+
+The 2 GB ceiling is the GitHub LFS per-object platform limit. Older vault notes
+may refer to a 5 GB ceiling; for GitHub transport, treat 2 GB as authoritative.
 
 ## Transport and Mirrors
 
