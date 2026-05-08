@@ -38,16 +38,21 @@ The largest unresolved professional overlap is the `IR` / `Idaho Reports` family
 across all three drives. It is not safe to treat these as duplicates by name
 alone: sizes and file counts differ substantially.
 
+Second-pass light comparisons found that `Idaho Debates`, `Legislature`, and
+`Dialogue` are partial overlaps between Home Desk and Work Desk. They contain
+some matching relative paths and sizes, but also substantial role-specific
+material.
+
 ## High-Priority Overlaps
 
-| Overlap family                 | Roles observed                   | Live size/count signal                                                                                                                 | Risk       | Recommended next action                                                                                            |
-| ------------------------------ | -------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- | ---------- | ------------------------------------------------------------------------------------------------------------------ |
-| `Social media experiments`     | Work Desk, Travel Bag            | Work Desk: 174 files / 43.91 GB. Travel Bag: 174 files / 43.91 GB. Relative path + size match: 174/174.                                | Low        | Optional checksum sample or full checksum, then mark Travel Bag copy as retirement candidate after Logan approval. |
-| `IR` / `Idaho Reports`         | Home Desk, Work Desk, Travel Bag | Home Desk `IR`: 1,488 files / 58.34 GB. Work Desk `Idaho Reports`: 4,088 files / 452.61 GB. Travel Bag `IR`: 10,557 files / 261.62 GB. | High       | Build subfolder-level maps before any merge. Do not equate by name alone.                                          |
-| `Legislature`                  | Home Desk, Work Desk             | Home Desk: 708 files / 29.21 GB. Work Desk: 949 files / 71.00 GB.                                                                      | Medium     | Build relative-path/size comparison; likely related but not identical.                                             |
-| `Dialogue`                     | Home Desk, Work Desk             | Home Desk: 1,345 files / 12.28 GB. Work Desk: 1,382 files / 38.30 GB.                                                                  | Medium     | Build relative-path/size comparison; expect partial overlap or divergent versions.                                 |
-| `Idaho Debates`                | Home Desk, Work Desk             | Home Desk: 72 files / 3.07 GB. Work Desk: 153 files / 3.28 GB.                                                                         | Medium-low | Build relative-path/size comparison; small enough for quick verification.                                          |
-| `IDEX` / `IDEX_Artifacts_temp` | Work Desk, Travel Bag            | Work Desk `IDEX`: 48 files / 0.31 GB. Travel Bag `IDEX_Artifacts_temp`: 10 files / 57.08 GB.                                           | High       | Review temp artifacts manually before archive classification. Size profile implies different payloads.             |
+| Overlap family                 | Roles observed                   | Live size/count signal                                                                                                                                                | Risk       | Recommended next action                                                                                              |
+| ------------------------------ | -------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | -------------------------------------------------------------------------------------------------------------------- |
+| `Social media experiments`     | Work Desk, Travel Bag            | Work Desk: 174 files / 43.91 GB. Travel Bag: 174 files / 43.91 GB. Relative path + size match: 174/174.                                                               | Low        | Optional checksum sample or full checksum, then mark Travel Bag copy as retirement candidate after Logan approval.   |
+| `IR` / `Idaho Reports`         | Home Desk, Work Desk, Travel Bag | Home Desk `IR`: 1,488 files / 58.34 GB. Work Desk `Idaho Reports`: 4,088 files / 452.61 GB. Travel Bag `IR`: 10,557 files / 261.62 GB.                                | High       | Build subfolder-level maps before any merge. Do not equate by name alone.                                            |
+| `Legislature`                  | Home Desk, Work Desk             | Home Desk: 708 files / 29.21 GB. Work Desk: 949 files / 71.00 GB. Relative path + size match: 515. Size mismatches: 2. Home Desk only: 191. Work Desk only: 432.      | Medium     | Treat as partial overlap. Preserve both sides until unmatched files are reviewed.                                    |
+| `Dialogue`                     | Home Desk, Work Desk             | Home Desk: 1,345 files / 12.28 GB. Work Desk: 1,382 files / 38.30 GB. Relative path + size match: 634. Size mismatches: 27. Home Desk only: 684. Work Desk only: 721. | Medium     | Treat as partial overlap with divergent content. Review mismatches and unmatched sets before consolidation.          |
+| `Idaho Debates`                | Home Desk, Work Desk             | Home Desk: 72 files / 3.07 GB. Work Desk: 153 files / 3.28 GB. Relative path + size match: 61. Size mismatches: 0. Home Desk only: 11. Work Desk only: 92.            | Medium-low | Treat as partial overlap. Work Desk appears more complete by count; verify unmatched files before retiring anything. |
+| `IDEX` / `IDEX_Artifacts_temp` | Work Desk, Travel Bag            | Work Desk `IDEX`: 48 files / 0.31 GB. Travel Bag `IDEX_Artifacts_temp`: 10 files / 57.08 GB.                                                                          | High       | Review temp artifacts manually before archive classification. Size profile implies different payloads.               |
 
 ## Cleanup-Adjacent Overlaps
 
@@ -100,13 +105,13 @@ Travel Bag should be made lean. The report identifies three different classes:
 
 1. Finish `Social media experiments` verification because the relative-path and
    size match is already exact.
-2. Compare `Idaho Debates` by relative path and size because it is small.
-3. Compare `Legislature` and `Dialogue` by relative path and size.
-4. Build subfolder-level maps for `IR` / `Idaho Reports` across all three
+2. Build subfolder-level maps for `IR` / `Idaho Reports` across all three
    roles.
-5. Review `IDEX_Artifacts_temp` manually before deciding whether it belongs in
+3. Review unmatched `Idaho Debates`, `Legislature`, and `Dialogue` sets before
+   any consolidation.
+4. Review `IDEX_Artifacts_temp` manually before deciding whether it belongs in
    Work Desk `IDEX`, another Work Desk lane, or a temporary cleanup lane.
-6. Only after Logan approval, perform cleanup actions for recycle/trash or
+5. Only after Logan approval, perform cleanup actions for recycle/trash or
    cache/scratch categories.
 
 ## Guardrails
