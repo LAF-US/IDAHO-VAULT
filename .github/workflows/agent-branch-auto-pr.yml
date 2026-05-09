@@ -186,3 +186,4 @@ jobs:
           echo "Lifecycle set to \`lifecycle/staged\`." >> "$GITHUB_STEP_SUMMARY"
           echo "Low-risk PR created with \`review/pending\`." >> "$GITHUB_STEP_SUMMARY"
           echo "Auto-merge is gated: the agent-review-gate workflow will promote to \`merge/auto\` after a 30-minute review grace period if no blocking feedback appears." >> "$GITHUB_STEP_SUMMARY"
+
