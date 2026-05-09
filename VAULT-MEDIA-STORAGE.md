@@ -32,18 +32,20 @@ may refer to a 5 GB ceiling; for GitHub transport, treat 2 GB as authoritative.
 
 ## Transport and Mirrors
 
-rclone, rsync, and `gcloud storage rsync` are the intended transport tools for
-distribution, mirroring, caching, and backup lanes. Git remains the
-authoritative index for small source files, LFS pointers, manifests, and notes.
-These tools carry object payloads that are too large or too operationally heavy
-for GitHub.
+Vault Toolbox `rclone`, Vault Toolbox `rsync`, and `gcloud storage rsync` are
+the intended transport tools for distribution, mirroring, caching, and backup
+lanes. Git remains the authoritative index for small source files, LFS pointers,
+manifests, and notes. These tools carry object payloads that are too large or
+too operationally heavy for GitHub.
 
-The Universal Sync Bus protocol is not yet live. Treat
-`.github/scripts/vault-courier-sync.sh` as disabled historical scaffolding: it
-depended on a credential that leaked and has not been reprovisioned. Do not use
-that script as the active sync path. See `LAF-USB-PROTOCOL-FRAMEWORK.md` for
-the proposed high-level framework. USB transport events may later be observed
-through SBP pheromone trails, but SBP does not authorize transfers.
+The Universal Sync Bus transfer layer is not yet delete-capable or fully
+automated. Treat `.github/scripts/vault-courier-sync.sh` as disabled historical
+scaffolding: it depended on a credential that leaked and has not been
+reprovisioned. Do not use that script as the active sync path. See
+`LAF-USB-PROTOCOL-FRAMEWORK.md` for the staged framework and
+`.github/scripts/laf_usb_manifest.py` for the stable manifest connector. USB
+transport events may later be observed through SBP pheromone trails, but SBP
+does not authorize transfers.
 
 Track durable inventories and reference notes. Do not track local rclone
 configs, gcloud credential stores, tokens, caches, logs, rsync partial
