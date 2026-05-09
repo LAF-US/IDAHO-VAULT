@@ -1,0 +1,26 @@
+{
+  "Overall": true,
+  "Functions": {
+    "Check-LEVELSETCompliance": true,
+    "Test-SystemDependency": true,
+    "New-StabilizationSession": true,
+    "ModuleImport": true,
+    "Handle-StabilizationError": true,
+    "Update-StabilizationSession": true
+  },
+  "State": {
+    "File": "C:\\Users\\loganf\\Documents\\IDAHO-VAULT\\!\\STATE\\skeptical-test.json",
+    "Works": true
+  },
+  "Dependencies": {
+    "Compliance": true,
+    "Ollama": true
+  },
+  "Files": {
+    "STABILIZATION-PLAN.md": true,
+    "!\\STATE\\final-verification.json": true,
+    "STABILIZATION-STATUS.json": true,
+    "STABILIZATION-REPORT.md": true,
+    "SimpleStabilization.ps1": true
+  }
+}
