@@ -1,0 +1,43 @@
+{
+  "schema": "laf-usb-object-manifest/v1",
+  "updated": "2026-05-08",
+  "authority": "LOGAN",
+  "status": "staged",
+  "purpose": "Seed reference manifest for files that exceed GitHub's 2 GB Git LFS object limit and require external durable storage before Git tracking can be retired. This file proves the manifest connector shape; it is not yet the complete 38-object registry.",
+  "laf_usb_objects": [
+    {
+      "id": "laf-usb:IDAHO-VAULT:2026:XD4_6602",
+      "original_filename": "XD4_6602.MXF",
+      "git_policy": "external-over-lfs-limit",
+      "carrier_lane": "provider-manual",
+      "topology_role": "cold",
+      "runtime_scope": "local",
+      "storage_key": "pending:IDAHO-VAULT/oversize/XD4_6602.MXF",
+      "size_bytes": 22580764692,
+      "checksum": {
+        "algorithm": "sha256",
+        "value": null
+      },
+      "verification_state": "pending",
+      "sensitivity": "unknown",
+      "related": ["HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"]
+    },
+    {
+      "id": "laf-usb:IDAHO-VAULT:2026:XD4_6594",
+      "original_filename": "XD4_6594.MXF",
+      "git_policy": "external-over-lfs-limit",
+      "carrier_lane": "provider-manual",
+      "topology_role": "cold",
+      "runtime_scope": "local",
+      "storage_key": "pending:IDAHO-VAULT/oversize/XD4_6594.MXF",
+      "size_bytes": 20776976384,
+      "checksum": {
+        "algorithm": "sha256",
+        "value": null
+      },
+      "verification_state": "pending",
+      "sensitivity": "unknown",
+      "related": ["HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"]
+    }
+  ]
+}
