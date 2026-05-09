@@ -38,3 +38,4 @@ jobs:
           fi
           git commit -m "rollover: carry incomplete to-dos to ${TARGET_DATE}"
           git push origin main
+
