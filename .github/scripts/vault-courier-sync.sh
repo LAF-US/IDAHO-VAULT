@@ -2,6 +2,14 @@
 # Project Courier: Vault Ledger Sync
 # Part of LAF-18 Phase 2 (Promotion to Production)
 # Synchronizes '!/' local directory to 'gs://the-ledger-bucket/ledger/'
+#
+# STATUS: DISABLED.
+# This path depended on a credential that leaked and has not been reprovisioned.
+# Do not reactivate this script as the Universal Sync Bus. The replacement
+# protocol is TBD and must be explicitly re-established before use.
+
+echo "vault-courier-sync.sh is disabled: credential was revoked and Universal Sync Bus is TBD." >&2
+exit 2
 
 set -e
 

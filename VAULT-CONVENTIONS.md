@@ -91,6 +91,11 @@ This file contains the vault conventions shared by all AI agents working in IDAH
 
 This is a personal journalism research vault. It contains notes on Idaho politics, government, legislation, people, organizations, and source documents. All committed content is **on the record** and should be treated as **publishable**.
 
+Media, documents, and binaries may be source material. Storage limits are
+governed by `VAULT-MEDIA-STORAGE.md`: ordinary source files may be committed,
+large files use Git LFS, and files over the GitHub LFS ceiling use external
+durable storage plus a committed vault reference.
+
 
 
 ---
@@ -962,6 +967,8 @@ See `MESHWEB.md` for the full standard.
 
 
 The vault must work identically on **any platform** — Windows (NTFS), macOS (APFS/HFS+), Linux (ext4), iOS/Android (Obsidian mobile), and CI runners (GitHub Actions). Both NTFS and APFS are **case-insensitive**; only Linux is case-sensitive. This standard targets the **lowest common denominator** of all target filesystems.
+
+MESHNET/NETWEB/WEBMESH automation must also be OS- and environment-agnostic. Do not hardcode host-local user paths, Unix-only temp directories, shell-specific behavior, or assumptions that only hold on one runner family. Prefer Python `pathlib`, repository-relative paths, and GitHub Actions matrix coverage across Windows, macOS, and Linux for core bootstrap surfaces.
 
 
 

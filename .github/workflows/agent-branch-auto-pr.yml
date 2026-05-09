@@ -134,22 +134,22 @@ jobs:
             LABEL_MARKER="none"
           fi
 
-          BODY=$(cat <<EOF
-## Auto-generated PR
-
-**Agent:** \`$AGENT\`
-**Lifecycle:** \`staged\`
-**Label:** \`$LABEL_MARKER\`
-
-### Diff stat
-\`\`\`
-$DIFFSTAT
-\`\`\`
-
----
-*Created by auto-pr workflow*
-EOF
-)
+          BODY=$(
+            printf '%s\n' \
+              "## Auto-generated PR" \
+              "" \
+              "**Agent:** \`$AGENT\`" \
+              "**Lifecycle:** \`staged\`" \
+              "**Label:** \`$LABEL_MARKER\`" \
+              "" \
+              "### Diff stat" \
+              "\`\`\`" \
+              "$DIFFSTAT" \
+              "\`\`\`" \
+              "" \
+              "---" \
+              "*Created by auto-pr workflow*"
+          )
 
           CREATE_ARGS=(
             --title "$TITLE"

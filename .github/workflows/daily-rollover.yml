@@ -2,7 +2,7 @@ name: Daily To-Do Rollover
 
 on:
   schedule:
-    - cron: '0 10 * * *'  # 4 AM MT
+    - cron: "0 10 * * *" # 4 AM MT
   workflow_dispatch:
 
 jobs:
@@ -19,7 +19,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@c8813ba1bc76ebf779b911ad8ffccbf2e449cb48
         with:
-          python-version: '3.11'
+          python-version: "3.11"
 
       - name: Run daily rollover
         run: |

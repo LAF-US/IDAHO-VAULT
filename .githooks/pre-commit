@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+set -eu
+
+python .github/scripts/sync_obsidian_plugin_registry.py --write
+git add manifest.json swarm.json
+python .github/scripts/sync_obsidian_plugin_registry.py --check
+python .github/scripts/laf_usb_manifest.py LAF-USB-OBJECT-MANIFEST*.json
+python .github/scripts/check_secret_patterns.py --staged
+python .github/scripts/check_large_files.py --staged

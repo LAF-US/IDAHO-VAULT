@@ -1,0 +1,35 @@
+name: LAF-USB Manifest Policy
+
+on:
+  pull_request:
+    paths:
+      - "LAF-USB-OBJECT-MANIFEST*.json"
+      - ".github/scripts/laf_usb_manifest.py"
+      - ".github/workflows/laf-usb-manifest-policy.yml"
+  push:
+    branches:
+      - main
+    paths:
+      - "LAF-USB-OBJECT-MANIFEST*.json"
+      - ".github/scripts/laf_usb_manifest.py"
+      - ".github/workflows/laf-usb-manifest-policy.yml"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout vault
+        uses: actions/checkout@v6
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+      - name: Validate LAF-USB manifests
+        run: |
+          shopt -s nullglob
+          manifests=(LAF-USB-OBJECT-MANIFEST*.json)
+          if [ "${#manifests[@]}" -eq 0 ]; then
+            echo "No LAF-USB object manifests found."
+            exit 0
+          fi
+          python .github/scripts/laf_usb_manifest.py "${manifests[@]}"
