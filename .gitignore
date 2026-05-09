@@ -1,44 +1,286 @@
-# Python
+# IDAHO-VAULT gitignore
+#
+# First principle: the vault is the record. Markdown notes, structured
+# registries, scripts, source documents, media, attachments, and durable agent
+# memory stay visible to git by default.
+#
+# This file exists mainly to shield secrets and suppress machine churn. It
+# excludes local runtime state, dependency installs, caches, logs, credentials,
+# editor/workspace noise, and NETWEB-invalid names. Existing tracked files are
+# not untracked by these rules; use explicit git index cleanup when Logan
+# decides a tracked artifact is no longer part of the record.
+
+# ---------------------------------------------------------------------------
+# Secrets and credentials
+# ---------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+!.env.template
+.envrc
+
+.op/openrouter.env
+.op/reports/
+.mcp-auth/
+secrets/
+vault-courier-key.json
+*-key.json
+*service-account.json
+archive-secrets-*.json
+application_default_credentials.json
+credentials.json
+token.json
+tokens.json
+oauth*.json
+client_secret*.json
+
+# Private key material and local certificate/key stores.
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+id_rsa.*
+id_ed25519
+id_ed25519.*
+known_hosts
+
+# Tool/package manager auth files commonly containing tokens.
+.npmrc
+.pypirc
+.netrc
+.aws/
+.azure/
+.config/gcloud/
+.gsutil/
+.config/rclone/
+rclone.conf
+*.rclone.conf
+
+# Credential exports and recovery codes must never enter the public record.
+Google Passwords.csv
+**/Google Passwords*.csv
+**/passwords*.csv
+*recovery-codes*
+*recovery_codes*
+
+# Tool auth state
+.claude/.credentials.json
+.codex/auth.json
+.codex/.codex-global-state.json
+.pi/agent/auth.json
+.gemini/oauth_creds.json
+.gemini/google_accounts.json
+.factory/auth.v2.*
+.openclaw/credentials/
+
+# ---------------------------------------------------------------------------
+# Python, JavaScript, and package runtime infrastructure
+# ---------------------------------------------------------------------------
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
+*.py[cod]
+*$py.class
 .Python
-*.egg-info/
-dist/
-build/
+.python_history
+!.python/
+!.python/**
+
 .venv/
 venv/
+env/
+ENV/
 .uv-cache/
 .pip-cache/
+*.egg-info/
+build/
+dist/
+
+node_modules/
+**/node_modules/
 .npm-cache/
-.tmp/
+
+# External SDK/runtime installs parked locally are not vault content.
+google-cloud-sdk/
+LFPython/
+feed-generator/
+.local/share/claude/versions/
+.ollama/models/blobs/
+.ollama/models/manifests/
+
+# ---------------------------------------------------------------------------
+# Local caches, temp, state, and generated databases
+# ---------------------------------------------------------------------------
 .cache/
+.tmp/
 .state/
 .pycache/
-.agent-home/
-.codex/home/
-!.python/
+.smart-env/
+.makemd/
+.space/
+BMO/
+Tags/
 
-# CrewAI
+tmp/
+temp/
+*.tmp
+*.temp
+*.bak
+*.backup
+*-backup*.json
+data-backup*
+*.bundle
+*.download
+.rsync-partial/
+**/.rsync-partial/
+*.partial
+*.part
+
+*.log
+*.pid
+*.lock
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+*.db
+
+logs/
+**/logs/
+**/cache/
+**/.cache/
+**/tool-results/
+**/shared_proto_db/
+
+# Local media-app cache artifacts, not source documents.
+*.cfa
+*.pek
+
+# ---------------------------------------------------------------------------
+# Agent and tool runtime internals
+# ---------------------------------------------------------------------------
+# Preserve agent dotfolders and durable memory by default; ignore only volatile
+# runtime/auth/cache surfaces.
+.agent-home/
+
+.claude/settings.local.json
+.claude/backups/
+.claude/cache/
+.claude/debug/
+.claude/file-history/
+.claude/projects/
+.claude/worktrees/
+.claude/plugins/cache/
+**/.claude/worktrees/
+
+.codex/.personality_migration
+.codex/.sandbox/
+.codex/cache/
+.codex/cap_sid
+.codex/home/
+.codex/installation_id
+.codex/log/
+.codex/logs_*.sqlite*
+.codex/models_cache.json
+.codex/plugins/cache/
+.codex/sandbox.log
+.codex/state_*.sqlite*
+.codex/tmp/
+.codex/vendor_imports/
+.codex/version.json
+
+.antigravity/argv.json
+.antigravity/extensions/
+.copilot/session-state/
+.cursor/projects/
+.cursor/extensions/
+.cursor/plugins/cache/
+.cursor/ai-tracking/
+.cursor/debug-logs/
+.cursor/argv.json
+.cursor/ide_state.json
+.factory/plugins/marketplaces/
+.gemini/antigravity/
+.gemini/antigravity-browser-profile/
+.gemini/history/
+.gemini/installation_id
+.gemini/projects*.json
+.gemini/policies/auto-saved.toml
+.gemini/settings*.json
+.gemini/state.json
+.gemini/tmp/
+.gemini/trustedFolders.json
+.openclaw/agents/
+.openclaw/canvas/
+.openclaw/completions/
+.openclaw/devices/
+.openclaw/flows/
+.openclaw/identity/
+.openclaw/logs/
+.openclaw/openclaw.json*
+.openclaw/tasks/
+.openclaw/update-check.json
+.openclaw/workspace/
+.openclaw/images.jpg
+.pi/agent/sessions/
+
+# CrewAI runtime layer: durable doctrine and source stay tracked.
 .crewai_cache/
 .crewai/logs/
 
-# IDE
+# ---------------------------------------------------------------------------
+# Obsidian local state and plugin runtime data
+# ---------------------------------------------------------------------------
+# Track vault-facing interface state and plugin manifests. Do not track private
+# plugin data, caches, indexes, or machine-local workspace state.
+.obsidian/workspace.json
+.obsidian/workspace*.json
+.obsidian/graph.json
+.obsidian/types.json
+.obsidian/backlink.json
+.obsidian/file-recovery.json
+.obsidian/page-preview.json
+.obsidian/switcher.json
+.obsidian/webviewer.json
+.obsidian/note-composer.json
+.obsidian/app.json
+.obsidian/appearance.json
+
+.obsidian/plugins/*/data.json
+.obsidian/plugins/*/cache/
+.obsidian/plugins/smart-connections/.smart-env/
+.obsidian/plugins/mcp-tools/bin/
+.obsidian/plugins/*/main.js
+.obsidian/plugins/*/styles.css
+.obsidian/plugins/obsidianclaw/
+.obsidian/plugins/fit/debug.log
+.obsidian/**(2)*.json
+
+!.obsidian/community-plugins.json
+!.obsidian/core-plugins.json
+!.obsidian/plugins/*/manifest.json
+!.obsidian/plugins/roygbiv-day-accent/main.js
+
+# ---------------------------------------------------------------------------
+# Editor, OS, and sync noise
+# ---------------------------------------------------------------------------
 .vscode/*
-!.vscode/mcp.json
 !.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/mcp.json
+
 .idea/
 *.swp
 *.swo
+*~
 
-# OS
 .DS_Store
 Thumbs.db
 desktop.ini
-*.exe
-*.lnk
-*.url
+ehthumbs.db
+._*
+
+# Office temporary lock files, not documents.
 ~$*.doc
 ~$*.docx
 ~$*.xls
@@ -46,8 +288,72 @@ desktop.ini
 ~$*.ppt
 ~$*.pptx
 
-# NETWEB: Windows reserved device names (cannot exist on NTFS - any case, any extension)
-# https://learn.microsoft.com/en-us/windows/win32/fileio/naming-a-file
+# Obsidian/cloud conflict duplicates and temporary placeholders.
+* (Conflicted copy *)*
+tempfolder.txt
+
+# ---------------------------------------------------------------------------
+# Local intake/runtime holding areas
+# ---------------------------------------------------------------------------
+tmp-minidata-msg/
+tmp-msg-extract/
+INBOX/PHONE-LINK/*
+DAILYNOTES/
+
+_phone-link-sweep.log
+_phone-link-watcher.log
+_phone-link-watcher.pid
+
+# Swarm runtime state; durable reports should be promoted to markdown/json
+# surfaces intentionally.
+!/swarm/logs/*
+!!/swarm/logs/*
+!/sbp-blackboard.json
+.github/swarm/state/archive/
+
+# Explicit local/private holding spaces from the old desktop rule set. These
+# are not source-document classes; they are operator-controlled private/runtime
+# lanes unless Logan promotes a specific file.
+.remember/
+_private/
+@/
+*.vault.json
+
+# ---------------------------------------------------------------------------
+# GitHub service surfaces: GitBook and GitGuardian
+# ---------------------------------------------------------------------------
+# GitBook and GitGuardian are part of the GitHub-side environment. Their
+# tracked configuration/documentation surfaces must stay visible to git.
+!.gitbook.yaml
+!.gitbook/
+!.gitbook/**
+!.gitguardian/
+!.gitguardian/**
+!-SUMMARY.md
+
+# Local scanner/build output is churn unless promoted into a durable report.
+.gitbook/cache/
+.gitbook/tmp/
+.gitguardian/cache/
+.gitguardian/reports/
+ggshield-report.*
+gitguardian-report.*
+
+# ---------------------------------------------------------------------------
+# rclone/rsync transport surfaces
+# ---------------------------------------------------------------------------
+# Track durable manifests and vault notes that describe mirrored objects. Do
+# not track local transfer credentials, token stores, caches, or partial files.
+.rclone-cache/
+rclone-cache/
+**/.rclone-cache/
+**/rclone-cache/
+
+# ---------------------------------------------------------------------------
+# NETWEB: Windows reserved device names
+# ---------------------------------------------------------------------------
+# These names are invalid on Windows regardless of extension. Use the vault
+# alias convention instead, e.g. _AUX.md with aliases: [AUX].
 [Aa][Uu][Xx]
 [Aa][Uu][Xx].*
 [Cc][Oo][Nn]
@@ -61,260 +367,10 @@ desktop.ini
 [Ll][Pp][Tt][0-9]
 [Ll][Pp][Tt][0-9].*
 
-# Media / binary files (prevent repo bloat - vault content is markdown, not media)
-*.jpg
-*.jpeg
-*.png
-*.gif
-*.webp
-*.webm
-*.svg
-*.heic
-*.mp4
-*.mp3
-*.m4a
-*.wav
-*.flac
-*.mov
-*.avi
-*.mpg
-*.mpeg
-*.pdf
-*.doc
-*.docx
-*.xls
-*.xlsx
-*.ppt
-*.pptx
-*.zip
-*.tar
-*.tar.gz
-*.gz
-*.bin
-*.db
-*.sqlite
-*.geojson
-*.kml
-*.kmz
-*.shp
-*.gpx
-
-# Email files (contain internal PII — headers, staff addresses, Exchange infra)
-*.eml
-*.msg
-
-# Production/editing source formats (local media workspace artifacts)
-*.psd
-*.ai
-*.indd
-*.aep
-*.aegraphic
-*.mogrt
-*.prproj
-*.mxf
-*.xmp
-*.cr2
-*.tif
-*.tiff
-
-# Project-specific
-.env
-*.vault.json
-.remember/
-_private/
-_private/**
-@/
-@/**
-.codex/tmp/
-tmp-minidata-msg/
-tmp-msg-extract/
-_phone-link-sweep.log
-_phone-link-watcher.log
-_phone-link-watcher.pid
-
-# Preserve persona/chamber dotfolders, but ignore heavyweight local runtimes within them
-.local/share/claude/versions/
-.ollama/models/blobs/
-.ollama/models/manifests/
-
-# Local media app cache artifacts
-*.cfa
-*.pek
-
-# AppleDouble sidecar files
-._*
-
-# Local machine secrets
-.obsidian/plugins/obsidian-local-rest-api/data.json
-vault-courier-key.json
-*-key.json
-secrets/
-*service-account.json
-archive-secrets-*.json
-
-# Credential exports (NEVER publish)
-Google Passwords.csv
-**/Google Passwords*.csv
-**/passwords*.csv
-
-# 2FA recovery codes (NEVER publish)
-*recovery-codes*
-*recovery_codes*
-
-# Swarm state archive (local only)
-.github/swarm/state/archive/
-
-# Swarm operational logs (ephemeral)
-\!/swarm/logs/*
-!\!/swarm/logs/.gitkeep
-
-# Obsidian system/state files (noisy, machine-local)
-.obsidian/workspace.json
-.obsidian/workspace*.json
-.obsidian/graph.json
-.obsidian/types.json
-.obsidian/backlink.json
-.obsidian/file-recovery.json
-.obsidian/page-preview.json
-.obsidian/switcher.json
-.obsidian/webviewer.json
-.obsidian/note-composer.json
-
-# Obsidian plugin runtime data / secrets (machine-local, not source)
-.obsidian/plugins/*/data.json
-.obsidian/plugins/recent-files-obsidian/data.json
-
-# Obsidian plugin cache directories (machine-generated, not source-trackable)
-.obsidian/plugins/*/cache/
-.makemd/
-.space/
-BMO/
-Tags/
-
-# Obsidian plugin compiled binaries (too large, not source-trackable)
-.obsidian/plugins/mcp-tools/bin/
-.obsidian/plugins/*/main.js
-.obsidian/plugins/*/styles.css
-.obsidian/plugins/*/manifest.json
-
-# Smart Connections embedding cache (machine-generated, can be hundreds of MB)
-.smart-env/
-.obsidian/plugins/smart-connections/.smart-env/
-
-# Obsidian conflict duplicates
-.obsidian/**(2)*.json
-
-# Daily notes (ephemeral, personal)
-DAILYNOTES/
-
-# Local runtime inbox artifacts (do not track phone-link intake payloads)
-INBOX/PHONE-LINK/*
-
-# Local conflicted duplicates and temp placeholders
-* (Conflicted copy *).md
-tempfolder.txt
-
-# Claude Code local settings (machine-local, not for repo)
-.claude/settings.local.json
-.claude/worktrees/
-**/.claude/worktrees/
-
-# 1Password local runtime files and generated reports
-.op/openrouter.env
-.op/reports/
-
-# MCP authentication state (contains OAuth tokens - NEVER track)
-.mcp-auth/
-
-# Codex and Claude authentication state (contains OAuth tokens - NEVER track)
-.claude/.credentials.json
-.codex/auth.json
-.codex/.codex-global-state.json
-.codex/.personality_migration
-.codex/.sandbox/
-.codex/cache/
-.codex/cap_sid
-.codex/config (2).toml
-.codex/installation_id
-.codex/log/
-.codex/logs_*.sqlite
-.codex/logs_*.sqlite-shm
-.codex/logs_*.sqlite-wal
-.codex/models_cache.json
-.codex/plugins/cache/
-.codex/sandbox.log
-.codex/state_*.sqlite
-.codex/state_*.sqlite-shm
-.codex/state_*.sqlite-wal
-.codex/stub.txt
-.codex/vendor_imports/skills-curated-cache.json
-.codex/version.json
-
-# Backup files and bundles (local machine artifacts)
-*.bundle
-.claude/backups/
-*-backup*.json
-data-backup*
-
-# AI/tool runtime caches and local auth state (never commit)
-# Keep durable repo dotfolders visible to git; ignore only their volatile internals.
-.claude/projects/
-.copilot/session-state/
-.antigravity/argv.json
-.antigravity/extensions/
-.antigravity/stub.txt
-.cursor/projects/
-.cursor/extensions/
-.cursor/plugins/cache/
-.cursor/ai-tracking/
-.cursor/debug-logs/
-.cursor/argv.json
-.cursor/ide_state.json
-.factory/auth.v2.*
-.factory/plugins/marketplaces/
-.gemini/antigravity/
-.gemini/antigravity-browser-profile/
-.gemini/history/
-.gemini/google_accounts.json
-.gemini/installation_id
-.gemini/oauth_creds.json
-.gemini/projects*.json
-.gemini/policies/auto-saved.toml
-.gemini/settings*.json
-.gemini/state.json
-.gemini/stub.txt
-.gemini/tmp/
-.gemini/trustedFolders.json
-.openclaw/agents/
-.openclaw/canvas/
-.openclaw/completions/
-.openclaw/credentials/
-.openclaw/devices/
-.openclaw/flows/
-.openclaw/identity/
-.openclaw/logs/
-.openclaw/openclaw.json*
-.openclaw/tasks/
-.openclaw/update-check.json
-.openclaw/workspace/
-.obsidian\plugins\obsidianclaw\.git
-.pi/agent/auth.json
-.claude/plugins/cache/
-
-# Session transcripts and machine-local logs
-*.jsonl
-**/tool-results/
-**/shared_proto_db/
-.pi/agent/sessions/
-
-# SBP pheromone blackboard (runtime state)
-!/sbp-blackboard.json
-
-# Local side projects / external workspaces parked inside the vault
-LFPython/
-feed-generator/
-.codex/vendor_imports/skills/
-.obsidian/plugins/obsidianclaw/
-
-
-google-cloud-sdk/
+# ---------------------------------------------------------------------------
+# Explicit non-rules
+# ---------------------------------------------------------------------------
+# Do not blanket-ignore media, PDFs, Office files, email files, archives, or
+# production source formats here. In this vault those may be source documents.
+# Exclude a specific sensitive or draft artifact only by explicit path, a
+# separate local exclude rule, or an approved metadata-driven workflow.
