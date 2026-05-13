@@ -327,7 +327,7 @@ requests-oauthlib==2.0.0
     # via
     #   idaho-vault (pyproject.toml)
     #   kubernetes
-rich==14.3.4
+rich==15.0.0
     # via
     #   chromadb
     #   instructor
