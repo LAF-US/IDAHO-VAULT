@@ -157,7 +157,7 @@ lancedb==0.30.0
     # via crewai
 linkify-it-py==2.1.0
     # via markdown-it-py
-markdown-it-py[linkify]==4.0.0
+markdown-it-py[linkify]==4.2.0
     # via
     #   mdit-py-plugins
     #   rich
