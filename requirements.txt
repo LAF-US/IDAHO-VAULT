@@ -151,7 +151,7 @@ kubernetes==35.0.0
     # via chromadb
 lance-namespace==0.7.2
     # via lancedb
-lance-namespace-urllib3-client==0.7.2
+lance-namespace-urllib3-client==0.7.6
     # via lance-namespace
 lancedb==0.30.0
     # via crewai
