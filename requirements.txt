@@ -316,7 +316,7 @@ referencing==0.37.0
     #   jsonschema-specifications
 regex==2026.1.15
     # via crewai
-requests==2.33.1
+requests==2.34.1
     # via
     #   instructor
     #   kubernetes
