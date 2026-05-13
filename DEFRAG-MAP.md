@@ -41,7 +41,7 @@ status: live
 
 | INGEST Folder | Objects | Size | Status |
 |---|---|---|---|
-| `Documents/` | 17,949 | 4.759 GiB | **INCOMPLETE** — stopped at 09:21, 64% of file count (17,835/27,847). Only small text files transferred. Large files in Documents NOT yet in INGEST. Needs resumption. |
+| `Documents/` | 17,949+ | 4.759 GiB+ | **RESUMING** — restarted 2026-05-12 ~18:00. Remaining ~310 GB is `.git/lfs/objects` (321 GB LFS blob cache). Long-running. Check `D:\rclone-logs\documents-resume.log` for progress. |
 | `Desktop-SCRATCH/` | 1,199 | 31.810 GiB | Complete (100%) |
 | `Videos/` | 123 | ~16.6 GiB | Complete (100%) |
 | `Creative-Cloud-Files/` | 259 | 12.309 GiB | Complete (100%) |
@@ -49,7 +49,7 @@ status: live
 | `.ssh/` | 2 | 470 B | Complete (100%) |
 | **TOTAL** | **19,521** | **51.491 GiB** | Documents transfer must be resumed |
 
-**Note on Documents gap:** Local `Documents\` measures 317 GB but only 4.759 GiB reached INGEST. The bulk of 317 GB is likely large files (media, archives, node_modules sibling dirs) that the rclone transfer did not reach before stopping. Resume with `rclone copy "C:\Users\loganf\Documents" "gdrive-personal:INGEST/windows-2026-05-12/Documents"` — rclone skips already-transferred files.
+**Note on Documents:** 315 of the 317 GB is `IDAHO-VAULT/.git/lfs/objects` (321 GB LFS blob cache — mp4 videos, PDFs stored as SHA256-named binary files). Working tree markdown content transferred in first run. Second run (resumed 2026-05-12 ~18:00) uploading the LFS blob store. Will run for many hours. Log: `D:\rclone-logs\documents-resume.log`.
 
 ### A2. Work OneDrive (`OneDrive - Idaho Public Television\`, 7.27 GB)
 
@@ -187,15 +187,22 @@ Active journalism folders — work-managed by Idaho PTV, NOT for personal consol
 - IDAHO-VAULT git repos: in Documents → INGEST; also on GitHub — git history is canonical
 - `gdrive-personal:Takeout/` (121.4 GB, 54 zips from 2026-05-03) — likely Google Photos export; don't double-import if Photos are already in drive/INGEST
 
-### E3. Open Questions
+### E3. Open Questions / Blockers
 
-- [ ] **Documents transfer needs resumption** — 4.759 GiB of ~317 GB transferred; where did the large files go? Check what's actually in `C:\Users\loganf\Documents\` beyond the vault copies.
-- [ ] **Dropbox 304 GB gap** — not shared folders (API confirmed empty). Check Dropbox web → Paper and Settings → Connected Devices for source.
-- [ ] **OneDrive Personal Vault** — contents locked behind extra Microsoft auth. Likely small (account = 145 GB, Imports+Pictures = 145 GB, leaves ~0 for Vault). Confirm by unlocking in browser.
-- [x] ~~What is OneDrive `Imports/` (139 GB)?~~ — **Answered: direct copy of gdrive-personal from 2026-05-04 import**
-- [ ] How much free space on the 5TB drive? (MacBook Claude to answer)
+**Requires Logan action in browser:**
+- [ ] **GitHub LFS budget** — push blocked. Buy data pack at `github.com/settings/billing` → "Git LFS Data" ($5/mo, 50 GB). One pack should unblock `git push origin main`.
+- [ ] **Dropbox 304 GB gap** — not shared folders (API confirmed nothing). Check `dropbox.com` → left sidebar → "Paper" for doc count; Settings → Connected Devices for orphaned storage.
+- [ ] **OneDrive Personal Vault** — locked. Open `onedrive.live.com` → Personal Vault → authenticate. Likely near-empty (Imports+Pictures already = 145 GB of 145 GB quota).
+
+**Requires MacBook Claude:**
+- [ ] Section B (MacBook local + 5TB inventory) — `git pull` IDAHO-VAULT then fill in and commit.
+
+**Resolved/In-progress:**
+- [x] ~~Documents transfer needs resumption~~ — **RUNNING** as of ~18:00. Check `D:\rclone-logs\documents-resume.log`.
+- [x] ~~What is OneDrive `Imports/` (139 GB)?~~ — Answered: direct copy of gdrive-personal from 2026-05-04.
+- [ ] How much free space on the 5TB drive? (MacBook Claude to answer in Section B)
 - [ ] Is `gdrive-personal:Photos` Google Photos backup or a separate folder?
-- [ ] What's in `gdrive-personal:Takeout`? Confirm it's Google Photos export + which date range.
+- [ ] What's in `gdrive-personal:Takeout`? Confirm it's Google Photos export + date range.
 
 ---
 
@@ -205,4 +212,5 @@ Active journalism folders — work-managed by Idaho PTV, NOT for personal consol
 |---|---|---|
 | 2026-05-12T12:30 | Initial inventory (Windows side) | Claude (Windows) |
 | 2026-05-12T18:00 | Updated INGEST status; investigated Dropbox gap (no shared folders via API); identified OneDrive Imports as gdrive-personal duplicate; updated pull priority stack | Claude (Windows) |
+| 2026-05-12T18:35 | Resumed Documents transfer (321 GB LFS blobs); clarified blockers requiring Logan vs MacBook action | Claude (Windows) |
 | | *(MacBook Claude: add your entry here)* | |
