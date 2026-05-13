@@ -243,7 +243,7 @@ portalocker==2.7.0
     # via crewai
 posthog==5.4.0
     # via chromadb
-propcache==0.4.1
+propcache==0.5.2
     # via
     #   aiohttp
     #   yarl
