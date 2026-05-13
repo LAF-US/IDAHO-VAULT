@@ -105,13 +105,13 @@ Active journalism folders — work-managed by Idaho PTV, NOT for personal consol
 
 | Folder | Size | Files | Notes |
 |---|---|---|---|
-| `Archive/` | 12.6 GB | 1,891 | 123 Google Docs/Sheets (unknown size — underestimate). 2 dangling shortcuts. Oldest content (2018). |
+| `Archive/` | 12.6 GB | 1,891 | 123 Google Docs/Sheets (unknown size — underestimate). 2 dangling shortcuts. Personal/misc storage: Finney Project FARE, car insurance, NIDSA, Reclaim ID, School. Oldest content (2018). |
 | `FINNEY FaVS News/` | 46 MB | 26 | FaVS News journalism content, 10 Google native docs |
 | `Google Earth/` | 0 B | 0 | Empty |
 | `Idaho PTV/` | 14.6 GB | 648 | 181 Google native docs (underestimate). 3 dangling shortcuts. Journalism/production files. |
-| `Photos/` | 2.5 GB | 989 | Drive-linked photos only. Actual Google Photos library much larger — see Takeout. |
+| `Photos/` | 2.5 GB | 989 | **Manual folder, NOT Google Photos library.** 10 subfolders of personal/family media (2015–2020): PILLOWMAN videos, Adam Dunes 2015, Boise Women's March 2020, Cody Finney, Mom, Tracie Finney, Tim Malm, Uni-Presidents-JFAC, etc. Google Photos library is in Takeout group 5. |
 | `Saved from Chrome/` | 3.3 MB | 3 | Tiny |
-| `Takeout/` | 121.4 GB | 57 | **54 Takeout zips from 2026-05-03 + 3 journalism video files.** Almost certainly a Google Photos export. This may explain the "missing" ~350 GB in Drive quota (Google Photos stored separately but counted in quota). |
+| `Takeout/` | 121.4 GB | 57 | **Google Takeout export from 2026-05-03T18:29Z.** 54 zips in 3 service groups: group 5 (40 zips ~80 GB = Google Photos), group 7 (13 zips ~26 GB), group 9 (3 zips ~6 GB, probably Drive/Mail/etc.), 1 index zip (1 MB). Plus 3 journalism video files (Sweet Land of Liberty, Pillowman reel, IDEX Artifacts). |
 | `INGEST/windows-2026-05-12/` | 25.5 GB (growing) | 12,545 | Active Windows push — in progress |
 
 **Google Drive native files** (Docs, Sheets, Slides) have unknown size in rclone — counts are underestimates. Actual Drive storage is ~526 GB per account settings.
@@ -120,7 +120,7 @@ Active journalism folders — work-managed by Idaho PTV, NOT for personal consol
 
 | Folder | Size | Files | Notes |
 |---|---|---|---|
-| `Camera Uploads/` | 5.2 GB | 884 | Phone camera auto-uploads |
+| `Camera Uploads/` | 5.2 GB | 884 | Phone camera auto-uploads. Date range: **2025-09-06 to 2026-05-12** — recent 8 months only. Likely overlaps with CrossDevice/OneDrive Pictures. |
 | `Apps/remotely-save/` | 0 B | 0 | Obsidian Remotely Save plugin — empty/unused |
 
 **Total accessible via rclone: ~5.2 GB**
@@ -201,8 +201,8 @@ Active journalism folders — work-managed by Idaho PTV, NOT for personal consol
 - [x] ~~Documents transfer needs resumption~~ — **RUNNING** as of ~18:00. Check `D:\rclone-logs\documents-resume.log`.
 - [x] ~~What is OneDrive `Imports/` (139 GB)?~~ — Answered: direct copy of gdrive-personal from 2026-05-04.
 - [ ] How much free space on the 5TB drive? (MacBook Claude to answer in Section B)
-- [ ] Is `gdrive-personal:Photos` Google Photos backup or a separate folder?
-- [ ] What's in `gdrive-personal:Takeout`? Confirm it's Google Photos export + date range.
+- [x] ~~Is `gdrive-personal:Photos` Google Photos backup or a separate folder?~~ — **Manual folder, personal/family media 2015–2020. NOT Google Photos.**
+- [x] ~~What's in `gdrive-personal:Takeout`?~~ — **Confirmed: Google Takeout export from 2026-05-03. Group 5 (40 zips, ~80 GB) = Google Photos library. Groups 7+9 = other services. Plus 3 journalism videos.**
 
 ---
 
@@ -213,4 +213,5 @@ Active journalism folders — work-managed by Idaho PTV, NOT for personal consol
 | 2026-05-12T12:30 | Initial inventory (Windows side) | Claude (Windows) |
 | 2026-05-12T18:00 | Updated INGEST status; investigated Dropbox gap (no shared folders via API); identified OneDrive Imports as gdrive-personal duplicate; updated pull priority stack | Claude (Windows) |
 | 2026-05-12T18:35 | Resumed Documents transfer (321 GB LFS blobs); clarified blockers requiring Logan vs MacBook action | Claude (Windows) |
+| 2026-05-12T19:50 | Closed open questions: Takeout confirmed Google Photos export (2026-05-03); Photos folder is manual personal media; Camera Uploads date range 2025-09–2026-05; Archive contents identified | Claude (Windows) |
 | | *(MacBook Claude: add your entry here)* | |
