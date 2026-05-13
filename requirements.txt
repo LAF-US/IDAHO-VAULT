@@ -402,7 +402,7 @@ typing-inspection==0.4.2
     #   pydantic-settings
 uc-micro-py==2.0.0
     # via linkify-it-py
-urllib3==2.6.3
+urllib3==2.7.0
     # via
     #   kubernetes
     #   lance-namespace-urllib3-client
