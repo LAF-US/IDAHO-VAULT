@@ -37,10 +37,19 @@ status: live
 | `node_modules\`, `scoop\`, `openclaw_env\`, `.sbx-denybin\`, `.ollama\` | — | Rebuild artifacts — **skip** |
 | `OneDrive\` (personal stub) | 0 B | Not synced locally; cloud copy is canonical |
 
-**INGEST transfer status as of ~12:30:**
-- 25.5 GB transferred of ~370 GB total (~7% complete)
-- Folders in INGEST: `Documents/`, `Desktop-SCRATCH/`, `Videos/`, `Creative-Cloud-Files/`, `Downloads/`, `.ssh/`
-- ETA: ~1-2 hours remaining (Videos + CC-Files are the tail)
+**INGEST transfer status as of 17:53 on 2026-05-12 (all rclone processes stopped):**
+
+| INGEST Folder | Objects | Size | Status |
+|---|---|---|---|
+| `Documents/` | 17,949 | 4.759 GiB | **INCOMPLETE** — stopped at 09:21, 64% of file count (17,835/27,847). Only small text files transferred. Large files in Documents NOT yet in INGEST. Needs resumption. |
+| `Desktop-SCRATCH/` | 1,199 | 31.810 GiB | Complete (100%) |
+| `Videos/` | 123 | ~16.6 GiB | Complete (100%) |
+| `Creative-Cloud-Files/` | 259 | 12.309 GiB | Complete (100%) |
+| `Downloads/` | 103 | 43 MiB | Complete (100%) |
+| `.ssh/` | 2 | 470 B | Complete (100%) |
+| **TOTAL** | **19,521** | **51.491 GiB** | Documents transfer must be resumed |
+
+**Note on Documents gap:** Local `Documents\` measures 317 GB but only 4.759 GiB reached INGEST. The bulk of 317 GB is likely large files (media, archives, node_modules sibling dirs) that the rclone transfer did not reach before stopping. Resume with `rclone copy "C:\Users\loganf\Documents" "gdrive-personal:INGEST/windows-2026-05-12/Documents"` — rclone skips already-transferred files.
 
 ### A2. Work OneDrive (`OneDrive - Idaho Public Television\`, 7.27 GB)
 
@@ -116,19 +125,31 @@ Active journalism folders — work-managed by Idaho PTV, NOT for personal consol
 
 **Total accessible via rclone: ~5.2 GB**
 
-**Important discrepancy:** Dropbox account dashboard shows ~309 GB used. The gap (~304 GB) is likely in **shared/team folders** that rclone cannot see with default settings. To access: `rclone config` → set `shared_folders = true` for the dropbox remote, or use `rclone lsd dropbox: --drive-shared-with-me`. Investigate before assuming Dropbox is small.
+**304 GB gap — investigated 2026-05-12:**
+- `rclone about dropbox:` confirms 309 GB used against 2 TB quota
+- `rclone lsd dropbox: --dropbox-shared-folders` returns **nothing** — no shared folders accessible via API
+- This means the 304 GB is **not** shared-with-me folders (those would surface via the flag)
+- Most likely candidates: (a) **Dropbox Paper documents** (count toward quota but aren't in the file API), (b) orphaned blocks from a previously connected device that has since been unlinked, or (c) files in a team/work Dropbox namespace not visible on personal account
+- **Action required:** Check Dropbox web → left sidebar → "Paper" for documents; and Settings → Connected devices for orphaned storage. Until confirmed personal content, treat Dropbox as 5.2 GB accessible.
 
 ### C3. OneDrive Personal (`onedrive:`)
 
 | Folder | Size | Files | Notes |
 |---|---|---|---|
-| `Imports/` | 139.3 GB | 1,539 | **The bulk** — likely large media/photo import |
+| `Imports/` | 139.3 GB | 1,539 | **⚠️ DUPLICATE of gdrive-personal** — see note below |
 | `Pictures/` | 5.7 GB | 788 | Photo library |
 | `Attachments/` | 0 B | 0 | Empty |
 | `Documents/` | 0 B | 0 | Empty |
-| `Personal Vault/` | *(locked)* | — | Requires additional auth — rclone errors on it |
+| `Personal Vault/` | *(locked)* | — | Requires additional Microsoft auth — rclone returns `invalidResourceId` error |
 
-**Total accessible: ~145 GB** (matches account size — Personal Vault likely small)
+**Total accessible: ~145 GB** (matches account size — Personal Vault likely small or empty)
+
+**⚠️ CRITICAL DEDUP FINDING — OneDrive Imports:**
+`onedrive:Imports/loganfinney27@gmail.com - Google Drive/` contains the **exact same folder structure** as `gdrive-personal:`:
+- Archive, FINNEY FaVS News, Google Earth, Idaho PTV, Photos, Saved from Chrome, Takeout
+- This was a Microsoft OneDrive import of Google Drive (run ~2026-05-04, matching last modified dates)
+- **139.3 GB of OneDrive Imports is a direct copy of gdrive-personal content**
+- **Decision: gdrive-personal is canonical. Do NOT pull OneDrive Imports to 5TB separately — it would create pure redundancy. Skip or delete the OneDrive import after verifying gdrive-personal is intact.**
 
 ---
 
@@ -148,29 +169,33 @@ Active journalism folders — work-managed by Idaho PTV, NOT for personal consol
 
 *To be filled in after MacBook Claude completes Section B.*
 
-### E1. Pull Priority Stack (draft)
+### E1. Pull Priority Stack (updated 2026-05-12)
 
-1. **INGEST/windows-2026-05-12/** → 5TB (after transfers complete, ~today)
-2. **OneDrive personal Imports/** → 5TB (139 GB — largest single unknown)
-3. **OneDrive personal Pictures/** → 5TB (5.7 GB)
-4. **Dropbox Camera Uploads/** → 5TB (5.2 GB — likely photo duplicates)
-5. **gdrive-personal existing content** → 5TB (Archive, Photos, Takeout, etc.)
-6. **Dropbox shared folders** → investigate size first, then pull if personal
+1. **Resume Documents INGEST** → run `rclone copy "C:\Users\loganf\Documents" "gdrive-personal:INGEST/windows-2026-05-12/Documents"` (stopped at 64%)
+2. **INGEST/windows-2026-05-12/** → MacBook pull to 5TB (after Documents transfer completes)
+3. **gdrive-personal existing content** → 5TB (Archive 12.6GB, Idaho PTV 14.6GB, Photos 2.5GB, Takeout 121.4GB)
+4. **Dropbox Camera Uploads/** → 5TB (5.2 GB — likely photo duplicates, dedupe after pull)
+5. **OneDrive Pictures/** → 5TB (5.7 GB — check for overlap with Dropbox Camera Uploads)
+6. **~~OneDrive Imports/~~** → **SKIP** — confirmed duplicate of gdrive-personal
+7. **Dropbox Paper + orphan investigation** → web interface only; not pullable via rclone
 
 ### E2. Known Dedup Hotspots
 
+- **OneDrive Imports = gdrive-personal copy** (139.3 GB duplicated) — delete Imports after verifying gdrive is intact
 - Phone camera photos likely appear in: Dropbox Camera Uploads + OneDrive Pictures + gdrive Photos + CrossDevice
-- Work Adobe content appears in: CC Files local + INGEST (already pushed) — flag as work
+- Work Adobe content: CC Files local + INGEST (already pushed) — flag as work
 - IDAHO-VAULT git repos: in Documents → INGEST; also on GitHub — git history is canonical
+- `gdrive-personal:Takeout/` (121.4 GB, 54 zips from 2026-05-03) — likely Google Photos export; don't double-import if Photos are already in drive/INGEST
 
 ### E3. Open Questions
 
-- [ ] What is OneDrive `Imports/` (139 GB)? Media? Email archive? Needs investigation.
-- [ ] What is in Dropbox shared folders (~304 GB)? Personal or work?
-- [ ] How much space is free on the 5TB drive?
+- [ ] **Documents transfer needs resumption** — 4.759 GiB of ~317 GB transferred; where did the large files go? Check what's actually in `C:\Users\loganf\Documents\` beyond the vault copies.
+- [ ] **Dropbox 304 GB gap** — not shared folders (API confirmed empty). Check Dropbox web → Paper and Settings → Connected Devices for source.
+- [ ] **OneDrive Personal Vault** — contents locked behind extra Microsoft auth. Likely small (account = 145 GB, Imports+Pictures = 145 GB, leaves ~0 for Vault). Confirm by unlocking in browser.
+- [x] ~~What is OneDrive `Imports/` (139 GB)?~~ — **Answered: direct copy of gdrive-personal from 2026-05-04 import**
+- [ ] How much free space on the 5TB drive? (MacBook Claude to answer)
 - [ ] Is `gdrive-personal:Photos` Google Photos backup or a separate folder?
-- [ ] What's in `gdrive-personal:Takeout`? Which services/dates?
-- [ ] Personal Vault contents (OneDrive) — what's locked inside?
+- [ ] What's in `gdrive-personal:Takeout`? Confirm it's Google Photos export + which date range.
 
 ---
 
@@ -178,5 +203,6 @@ Active journalism folders — work-managed by Idaho PTV, NOT for personal consol
 
 | Date | Change | Author |
 |---|---|---|
-| 2026-05-12 | Initial inventory (Windows side) | Claude (Windows) |
+| 2026-05-12T12:30 | Initial inventory (Windows side) | Claude (Windows) |
+| 2026-05-12T18:00 | Updated INGEST status; investigated Dropbox gap (no shared folders via API); identified OneDrive Imports as gdrive-personal duplicate; updated pull priority stack | Claude (Windows) |
 | | *(MacBook Claude: add your entry here)* | |
