@@ -217,6 +217,13 @@ That means one of these must be clarified later:
 This note does not force that answer. It records the conflict so it is not
 silently ignored.
 
+**→ RESOLVED 2026-05-13:** See `[[FIVE-CORES-VENN-WITNESS-2026-05-13]]`. The
+Five Cores are a Venn Diagram, not a tree. PERSONAL is the *intersection* of
+PRIVATE and PUBLIC — not a subset of either. IDAHO-VAULT living in PERSONAL
+and being publicly visible is correct, not contradictory. The tree model
+(including the Mermaid diagram in this document) was an approximation that
+could not represent overlap. The Venn holds what the tree cannot.
+
 ### 2. Five cores vs flagship child repos
 
 If Logan means literally **only five durable repos plus org exceptions**, then
@@ -274,6 +281,13 @@ The cleanest next operational pass is:
 3. document the team layer explicitly, especially the meaning of `LAF-USB`
 4. then rewrite `!/AGENTS.md`, `CONSTITUTION.md`, and `swarm.json` so they stop
    describing the world as flatter than it now is
+
+## See Also
+
+- `[[FIVE-CORES-VENN-WITNESS-2026-05-13]]` — resolves Tension 1; records the
+  Venn Diagram as Logan's original design for the Five Cores
+
+---
 
 ## Current Working Interpretation
 

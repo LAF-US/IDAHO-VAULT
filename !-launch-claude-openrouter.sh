@@ -4,17 +4,15 @@ set -e
 ACTUAL_SCRIPT="$(readlink -f "$0" 2>/dev/null || echo "$0")"
 SCRIPT_DIR="$(cd "$(dirname "$ACTUAL_SCRIPT")" && pwd)"
 REPO_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
-ENV_FILE="$REPO_ROOT/.op/openrouter.env"
+RESOLVER="$REPO_ROOT/!/resolve_openrouter_secret.py"
 
-if [ ! -f "$ENV_FILE" ]; then
-    echo "Error: $ENV_FILE not found"
-    echo "Expected: $ENV_FILE"
+if [ ! -x "$RESOLVER" ]; then
+    echo "Error: $RESOLVER not found or not executable"
+    echo "Expected: $RESOLVER"
     echo "REPO_ROOT: $REPO_ROOT"
     exit 1
 fi
 
-set -a
-source "$ENV_FILE"
-set +a
+export OPENROUTER_API_KEY="$("$RESOLVER")"
 
 exec claude "$@"

@@ -1,23 +1,21 @@
 #!/usr/bin/env bash
 #
 # openclaw-daemon.sh
-# Start/restart OpenClaw gateway as LaunchDaemon
+# Start/restart the local OpenClaw gateway LaunchAgent.
 #
 
 set -e
 
-GATEWAY_TOKEN="***REMOVED***"
-
 echo "=== OpenClaw Gateway ==="
 
-openclaw daemon status 2>/dev/null || echo "Daemon not running"
+openclaw gateway status 2>/dev/null || echo "Gateway service not running"
 
-echo "Starting gateway..."
-openclaw daemon start 2>/dev/null
+echo "Starting/restarting gateway..."
+openclaw gateway restart
 
 sleep 3
 
-if openclaw health 2>/dev/null | grep -q "ok"; then
+if openclaw gateway status 2>/dev/null | grep -q "Connectivity probe: ok"; then
     echo "Gateway: LIVE"
 else
     echo "Gateway: CHECK FAILED"

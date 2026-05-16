@@ -1,0 +1,14 @@
+{
+	"id": "todoist-context-bridge",
+	"name": "Todoist Context Bridge",
+	"version": "1.1.1",
+	"minAppVersion": "0.15.0",
+	"description": "Bridge your note-taking and Todoist task management workflows with contextual connections. Seamlessly integrate with Dataview and Tasks plugins.",
+	"author": "wenlzhang",
+	"authorUrl": "https://github.com/wenlzhang",
+	"fundingUrl": {
+		"Buy Me a Coffee": "https://ko-fi.com/f84556",
+		"GitHub Sponsor": "https://github.com/sponsors/wenlzhang"
+	},
+	"isDesktopOnly": false
+}
