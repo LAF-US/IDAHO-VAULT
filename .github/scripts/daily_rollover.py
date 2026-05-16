@@ -69,7 +69,7 @@ TASK_SPACE_RE = re.compile(r"\s+")
 
 def extract_todo_section(content: str) -> list[str]:
     """
-    Return lines between the [[TO DO LIST]] marker and the next --- separator
+    Return lines between the [[TO DO LIST]] marker and the next section boundary
     (or end of file). The marker line itself is excluded.
     """
     lines = content.splitlines()
@@ -83,7 +83,7 @@ def extract_todo_section(content: str) -> list[str]:
     
     end_idx = len(lines)
     for idx in range(start_idx, len(lines)):
-        if lines[idx].startswith("---"):
+        if lines[idx].startswith("---") or lines[idx].startswith("## "):
             end_idx = idx
             break
     
@@ -780,7 +780,7 @@ def ensure_daily_frontmatter(content: str, target_date: date) -> str:
                 new_lines.append("  - dailynote")
 
     body = content[match.end():].lstrip("\r\n")
-    return f"---\n" + "\n".join(new_lines) + "\n---\n\n" + body
+    return "---\n" + "\n".join(new_lines) + "\n---\n\n" + body
 
 
 # ---------------------------------------------------------------------------
@@ -1015,35 +1015,8 @@ def main() -> None:
     if not TODO_LIST_FILE.exists():
         log(f"ERROR: {TODO_LIST_FILE} not found.")
         sys.exit(1)
-    todo_list_content = TODO_LIST_FILE.read_text(encoding="utf-8", errors="replace")
-
-    # Extract tasks from daily note
-    daily_note_tasks = {}
-    if source_file.exists():
-        source_content = source_file.read_text(encoding="utf-8")
-        daily_note_tasks = extract_tasks_from_daily_note(source_content)
-    else:
+    if not source_file.exists():
         log(f"No daily note found for {source_date} - reconciling from TO DO LIST.md only.")
-
-    # Extract tasks from TO DO LIST.md
-    todo_list_lines = extract_todo_section(todo_list_content)
-    todo_list_model = parse_todo_model(todo_list_lines, keep_completed=True)
-    todo_list_tasks = {}
-    for group_key in todo_list_model["group_order"]:
-        group = todo_list_model["groups"][group_key]
-        for block in group["blocks"]:
-            for line in block:
-                if TASK_RE.match(line):
-                    task_key = _normalize_task_text(TASK_RE.match(line).group(3))
-                    status = "complete" if "[x]" in line else "incomplete"
-                    todo_list_tasks[task_key] = {
-                        "status": status,
-                        "text": TASK_RE.match(line).group(3).strip(),
-                        "group": group_key
-                    }
-
-    # Sync tasks from daily note to TO DO LIST.md
-    updated_todo_list_content = sync_tasks_to_todo_list(todo_list_content, daily_note_tasks)
 
     # Build backlog
     persistent_active = load_active_todo_list_lines()
@@ -1055,26 +1028,15 @@ def main() -> None:
         merged_backlog = build_backlog_lines(todo_lines, persistent_active)
 
     if merged_backlog:
-        log(f"Carrying forward {len([l for l in merged_backlog if _is_top_level_task(l)])} incomplete item(s):")
+        open_task_count = sum(1 for line in merged_backlog if _is_top_level_task(line))
+        log(f"Carrying forward {open_task_count} incomplete item(s):")
         for line in merged_backlog:
             log(f"  {line}")
     else:
         log("No incomplete items found - nothing to carry forward.")
 
-    # Build today's note content
-    today_note_content = build_today_note_content(target_date, merged_backlog)
-
-    # Sync completed tasks from TO DO LIST.md to today's note
-    today_note_content = sync_completed_to_daily_note(today_note_content, todo_list_tasks)
-
-    # Update files
-    if not args.dry_run:
-        TODO_LIST_FILE.write_text("\n".join(updated_todo_list_content), encoding="utf-8", newline="\n")
-    else:
-        log("\n--- TO DO LIST.md (dry run) ---")
-        log("\n".join(updated_todo_list_content).rstrip("\n"))
-
-    update_today_note(target_date, [line for line in today_note_content.splitlines() if line.strip()], args.dry_run)
+    update_todo_list_md(merged_backlog, args.dry_run)
+    update_today_note(target_date, merged_backlog, args.dry_run)
 
 
 if __name__ == "__main__":
