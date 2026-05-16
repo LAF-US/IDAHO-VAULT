@@ -37,7 +37,7 @@ backoff==2.2.1
     # via posthog
 bcrypt==5.0.0
     # via chromadb
-build==1.4.4
+build==1.5.0
     # via chromadb
 certifi==2026.4.22
     # via
@@ -113,7 +113,7 @@ httpx==0.28.1
     #   openai
 httpx-sse==0.4.3
     # via mcp
-huggingface-hub==1.12.0
+huggingface-hub==1.14.0
     # via
     #   idaho-vault (pyproject.toml)
     #   tokenizers
@@ -151,13 +151,13 @@ kubernetes==35.0.0
     # via chromadb
 lance-namespace==0.7.2
     # via lancedb
-lance-namespace-urllib3-client==0.7.2
+lance-namespace-urllib3-client==0.7.6
     # via lance-namespace
 lancedb==0.30.0
     # via crewai
 linkify-it-py==2.1.0
     # via markdown-it-py
-markdown-it-py[linkify]==4.0.0
+markdown-it-py[linkify]==4.2.0
     # via
     #   mdit-py-plugins
     #   rich
@@ -316,7 +316,7 @@ referencing==0.37.0
     #   jsonschema-specifications
 regex==2026.1.15
     # via crewai
-requests==2.33.1
+requests==2.34.1
     # via
     #   instructor
     #   kubernetes
@@ -356,7 +356,7 @@ tenacity==9.1.4
     # via
     #   chromadb
     #   instructor
-textual==8.2.4
+textual==8.2.6
     # via crewai
 tokenizers==0.23.1
     # via
