@@ -18,7 +18,9 @@ related:
 
 ## Executive Summary
 
-Consolidated AI model routing through OpenRouter for zero-cost, flexible model selection across all agentic tools. Single API key in 1Password, unified gateway, coordinated channels.
+Consolidated AI model routing through OpenRouter for flexible model selection across agentic tools. Single API key in 1Password, unified gateway, coordinated channels.
+
+2026-05-14 note: the April model list below is historical. The current Mac runtime is documented in **Current Live Override** and uses `openrouter/mistralai/mistral-small-2603` as the OpenClaw default. Preferred hosted family order is Mistral, Claude, then ChatGPT/OpenAI. Gemini is banned from active routing; Phi, Qwen, and Gemma are disfavored and excluded from active routing. Local Ollama remains installed but has no active OpenClaw route because allowed local Mistral-family models did not return promptly on this Mac.
 
 ## Completed
 
@@ -38,11 +40,11 @@ Consolidated AI model routing through OpenRouter for zero-cost, flexible model s
 | Change | Before | After |
 |--------|--------|-------|
 | Provider | `mistral` (paid), `ollama` (cloud, paid) | `openrouter` (free tier) |
-| Primary Model | `ollama/kimi-k2.5:cloud` | `openrouter/google/gemini-2.5-flash-preview-05-20` |
-| Available Models | Paid Mistral, cloud Ollama | Gemini 2.5 Flash, GPT-4o Mini, Claude 3.5 Haiku (all free) |
+| Primary Model | `ollama/kimi-k2.5:cloud` | Historical cloud experiment, no longer active |
+| Available Models | Paid Mistral, cloud Ollama | Historical free-tier experiment, no longer active |
 
-**Models added to OpenClaw:**
-- `google/gemini-2.5-flash-preview-05-20` (1M context, reasoning)
+**Historical models added to OpenClaw in April, now superseded:**
+- Google experimental route: removed from active routing; Gemini is banned.
 - `openai/gpt-4o-mini` (286K context)
 - `anthropic/claude-3.5-haiku` (131K context)
 
@@ -160,7 +162,7 @@ All channels enabled in OpenClaw config but require tokens:
                     ┌─────────────────────────────────────┐
                     │         OpenRouter.ai                 │
                     │    openrouter.ai/api/v1 = unified    │
-                    │         (free tier models)          │
+                    │       (cloud model routing)         │
                     └─────────────────────────────────────┘
                        ▲     ▲     ▲     ▲     ▲
                        │     │     │     │     │
@@ -209,7 +211,7 @@ All channels enabled in OpenClaw config but require tokens:
 | 1password | 1Password CLI integration |
 | coding-agent | Codex, Claude Code, or Pi agents |
 | discord | Discord operations via message tool |
-| gemini | Gemini CLI for Q&A and summaries |
+| gemini | Historical only; Gemini is banned from active OpenClaw routing |
 | gh-issues | GitHub issues and PRs |
 | github | GitHub CLI operations |
 | healthcheck | Security hardening checks |
@@ -229,8 +231,17 @@ The original implementation report captured the April 24 migration state. The
 active workstation now uses:
 
 - `gateway.bind = loopback`
-- `agents.defaults.model.primary = openrouter/openai/gpt-4o-mini`
+- `agents.defaults.model.primary = openrouter/mistralai/mistral-small-2603`
+- Preferred hosted family order: Mistral -> Claude -> ChatGPT/OpenAI
+- Fallbacks: `openrouter/mistralai/mistral-medium-3-5`, `openrouter/anthropic/claude-sonnet-4.6`, `openrouter/openai/gpt-5.3-codex`, `openrouter/mistralai/mistral-large-2512`
+- Specialist aliases: `mistral-coder` -> `openrouter/mistralai/devstral-2512`
+- Magistral was tested and removed because OpenClaw `model.run` received no usable text output from the OpenRouter routes.
+- Local Ollama aliases: none active
+- Local `codestral:latest` and `devstral:latest` were tested and removed because they did not return promptly on this Mac
+- `phi3:mini`, Qwen, and Gemma are intentionally excluded from OpenClaw routing
+- Gemini is banned from active OpenClaw routing
 - OpenRouter provider models aligned to the live JSON in `~/.openclaw/openclaw.json`
+- OpenRouter auth uses an exec SecretRef resolver; the temporary `.op/openrouter.env` fallback is chmod `600` until 1Password CLI is configured
 - Validator scripts now provide the live runtime contract check instead of
   relying on this report as the only source of truth
 
