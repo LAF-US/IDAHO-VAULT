@@ -613,9 +613,9 @@
     "authority_boundary": "Obsidian config files define interface state; the plugin registry document defines doctrine and promotion rules.",
     "promotion_gate": "No plugin-state change counts as legitimate until !/PLUGIN-REGISTRY.md is updated.",
     "counts": {
-      "enabled_community": 46,
+      "enabled_community": 44,
       "enabled_core": 31,
-      "dormant_installed": 30,
+      "dormant_installed": 32,
       "installed_total": 76,
       "enabled_missing_manifest": 0
     },
@@ -721,14 +721,13 @@
     "source_of_truth": "tracked_obsidian_config",
     "generated_by": ".github/scripts/sync_obsidian_plugin_registry.py",
     "current_state": {
-      "enabled_community_count": 46,
+      "enabled_community_count": 44,
       "enabled_core_count": 31,
       "installed_community_count": 76,
-      "dormant_installed_count": 30,
+      "dormant_installed_count": 32,
       "enabled_missing_manifest_count": 0
     },
     "enabled_community_plugins": [
-      "obsidian-git",
       "obsidian-linter",
       "roygbiv-day-accent",
       "periodic-notes",
@@ -772,8 +771,7 @@
       "quickadd",
       "obsidian-tidy-footnotes",
       "time-ruler",
-      "translate",
-      "fit"
+      "translate"
     ],
     "enabled_core_plugins": [
       "file-explorer",
@@ -1076,7 +1074,7 @@
       {
         "id": "obsidian-git",
         "name": "Git",
-        "version": "2.38.2",
+        "version": "2.38.3",
         "path": ".obsidian/plugins/obsidian-git/manifest.json"
       },
       {
@@ -1279,6 +1277,7 @@
       "days-since",
       "desk",
       "editing-toolbar",
+      "fit",
       "keep-the-rhythm",
       "large-language-models",
       "links",
@@ -1290,6 +1289,7 @@
       "obsidian-dice-roller",
       "obsidian-extract-pdf-highlights",
       "obsidian-file-cooker",
+      "obsidian-git",
       "obsidian-leaflet-plugin",
       "obsidian42-brat",
       "openclaw",
