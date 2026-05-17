@@ -946,21 +946,5 @@
   "first_transfer_candidates": [
     "Any publishable file once Logan approves routing and rclone internetarchive remote is configured."
   ],
-  "unmatched_lfs_objects": [
-    {
-      "oid": "13be547422e9f6a4",
-      "size_gib": 3.7,
-      "note": "no manifest match — Logan to identify"
-    },
-    {
-      "oid": "12d56583f86d8ab4",
-      "size_gib": 15.7,
-      "note": "large unknown — possible Sony MXF not in HANDOFF"
-    },
-    {
-      "oid": "21935e1e1fd4afb1",
-      "size_gib": 16.43,
-      "note": "large unknown — possible Sony MXF not in HANDOFF"
-    }
-  ]
+  "unmatched_lfs_objects": []
 }
