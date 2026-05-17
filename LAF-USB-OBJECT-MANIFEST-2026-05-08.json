@@ -1,9 +1,14 @@
 {
   "schema": "laf-usb-object-manifest/v1",
-  "updated": "2026-05-08",
+  "updated": "2026-05-17",
   "authority": "LOGAN",
   "status": "staged",
-  "purpose": "Seed reference manifest for files that exceed GitHub's 2 GB Git LFS object limit and require external durable storage before Git tracking can be retired. This file proves the manifest connector shape; it is not yet the complete 38-object registry.",
+  "purpose": "Complete registry of 38 files that exceed GitHub's 2 GB Git LFS per-file limit. All objects confirmed present locally in .git/lfs/objects/ (323 GB total). Routing classifications are provisional — Logan must approve before any carrier transfer executes.",
+  "routing_notes": {
+    "public-record": "Legislature chamber sessions, committee hearings, press conferences, public rallies. Routed to Internet Archive as the immutable/public ledger lane. Logan must confirm each item before upload.",
+    "production-private": "Idaho Reports / IPTV production originals, raw camera footage (MXF/MOV), internal production files. Routed to GCS the-ledger-bucket (cold) pending Logan decision between GCS and THE-CITY 5TB drive.",
+    "staging-pending": "Items whose sensitivity or destination is unclear without Logan review."
+  },
   "laf_usb_objects": [
     {
       "id": "laf-usb:IDAHO-VAULT:2026:XD4_6602",
@@ -12,15 +17,19 @@
       "carrier_lane": "provider-manual",
       "topology_role": "cold",
       "runtime_scope": "local",
-      "storage_key": "pending:IDAHO-VAULT/oversize/XD4_6602.MXF",
+      "storage_key": "pending:gcs:the-ledger-bucket/IDAHO-VAULT/oversize/XD4_6602.MXF",
       "size_bytes": 22580764692,
       "checksum": {
         "algorithm": "sha256",
         "value": null
       },
       "verification_state": "pending",
-      "sensitivity": "unknown",
-      "related": ["HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"]
+      "sensitivity": "private",
+      "routing_class": "production-private",
+      "notes": "Sony camera raw original. Production footage.",
+      "related": [
+        "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
+      ]
     },
     {
       "id": "laf-usb:IDAHO-VAULT:2026:XD4_6594",
@@ -29,15 +38,805 @@
       "carrier_lane": "provider-manual",
       "topology_role": "cold",
       "runtime_scope": "local",
-      "storage_key": "pending:IDAHO-VAULT/oversize/XD4_6594.MXF",
+      "storage_key": "pending:gcs:the-ledger-bucket/IDAHO-VAULT/oversize/XD4_6594.MXF",
       "size_bytes": 20776976384,
       "checksum": {
         "algorithm": "sha256",
         "value": null
       },
       "verification_state": "pending",
+      "sensitivity": "private",
+      "routing_class": "production-private",
+      "notes": "Sony camera raw original. Production footage.",
+      "related": [
+        "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
+      ]
+    },
+    {
+      "id": "laf-usb:IDAHO-VAULT:2026:251106_jfac_0800AM",
+      "original_filename": "251106_jfac_0800AM-Meeting.mp4",
+      "git_policy": "external-over-lfs-limit",
+      "carrier_lane": "provider-manual",
+      "topology_role": "cold",
+      "runtime_scope": "local",
+      "storage_key": "pending:internet-archive:idaho-vault-media/251106_jfac_0800AM-Meeting.mp4",
+      "size_bytes": 9771991777,
+      "checksum": {
+        "algorithm": "sha256",
+        "value": null
+      },
+      "verification_state": "pending",
+      "sensitivity": "publishable",
+      "routing_class": "public-record",
+      "notes": "JFAC (Joint Finance-Appropriations Committee) meeting 2025-11-06. Public record legislature hearing.",
+      "related": [
+        "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
+      ]
+    },
+    {
+      "id": "laf-usb:IDAHO-VAULT:2026:260325_sh-w_0200PM",
+      "original_filename": "260325_sh&w_0200PM-Meeting.mp4",
+      "git_policy": "external-over-lfs-limit",
+      "carrier_lane": "provider-manual",
+      "topology_role": "cold",
+      "runtime_scope": "local",
+      "storage_key": "pending:internet-archive:idaho-vault-media/260325_shw_0200PM-Meeting.mp4",
+      "size_bytes": 8074620928,
+      "checksum": {
+        "algorithm": "sha256",
+        "value": null
+      },
+      "verification_state": "pending",
+      "sensitivity": "publishable",
+      "routing_class": "public-record",
+      "notes": "State House & Ways (?) committee meeting 2026-03-25. Public record.",
+      "related": [
+        "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
+      ]
+    },
+    {
+      "id": "laf-usb:IDAHO-VAULT:2026:20240116_140342",
+      "original_filename": "20240116_140342.mp4",
+      "git_policy": "external-over-lfs-limit",
+      "carrier_lane": "provider-manual",
+      "topology_role": "cold",
+      "runtime_scope": "local",
+      "storage_key": "pending:REVIEW-REQUIRED",
+      "size_bytes": 7025459200,
+      "checksum": {
+        "algorithm": "sha256",
+        "value": null
+      },
+      "verification_state": "pending",
       "sensitivity": "unknown",
-      "related": ["HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"]
+      "routing_class": "staging-pending",
+      "notes": "Camera-format filename (device timestamp). Date: 2024-01-16 14:03. Contents unknown — Logan must identify before routing.",
+      "related": [
+        "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
+      ]
+    },
+    {
+      "id": "laf-usb:IDAHO-VAULT:2026:SenateChambers03-25-2026",
+      "original_filename": "SenateChambers03-25-2026.mp4",
+      "git_policy": "external-over-lfs-limit",
+      "carrier_lane": "provider-manual",
+      "topology_role": "cold",
+      "runtime_scope": "local",
+      "storage_key": "pending:internet-archive:idaho-vault-media/SenateChambers03-25-2026.mp4",
+      "size_bytes": 6979321856,
+      "checksum": {
+        "algorithm": "sha256",
+        "value": null
+      },
+      "verification_state": "pending",
+      "sensitivity": "publishable",
+      "routing_class": "public-record",
+      "notes": "Idaho Senate chamber session 2026-03-25. Public record. File LOOSE on Desktop SCRATCH FOLDER — ready for first carrier transfer.",
+      "loose_copy_path": "C:/Users/loganf/Desktop/SCRATCH FOLDER/SenateChambers03-25-2026.mp4",
+      "related": [
+        "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
+      ]
+    },
+    {
+      "id": "laf-usb:IDAHO-VAULT:2026:SenateChambers03-02-2026",
+      "original_filename": "SenateChambers03-02-2026.mp4",
+      "git_policy": "external-over-lfs-limit",
+      "carrier_lane": "provider-manual",
+      "topology_role": "cold",
+      "runtime_scope": "local",
+      "storage_key": "pending:internet-archive:idaho-vault-media/SenateChambers03-02-2026.mp4",
+      "size_bytes": 5787918336,
+      "checksum": {
+        "algorithm": "sha256",
+        "value": null
+      },
+      "verification_state": "pending",
+      "sensitivity": "publishable",
+      "routing_class": "public-record",
+      "notes": "Idaho Senate chamber session 2026-03-02. Public record. File LOOSE on Desktop SCRATCH FOLDER/SCRATCH BIN — ready for first carrier transfer.",
+      "loose_copy_path": "C:/Users/loganf/Desktop/SCRATCH FOLDER/SCRATCH BIN/SenateChambers03-02-2026.mp4",
+      "related": [
+        "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
+      ]
+    },
+    {
+      "id": "laf-usb:IDAHO-VAULT:2026:260121_jfac_0800AM",
+      "original_filename": "260121_jfac_0800AM-Meeting.mp4",
+      "git_policy": "external-over-lfs-limit",
+      "carrier_lane": "provider-manual",
+      "topology_role": "cold",
+      "runtime_scope": "local",
+      "storage_key": "pending:internet-archive:idaho-vault-media/260121_jfac_0800AM-Meeting.mp4",
+      "size_bytes": 5712543744,
+      "checksum": {
+        "algorithm": "sha256",
+        "value": null
+      },
+      "verification_state": "pending",
+      "sensitivity": "publishable",
+      "routing_class": "public-record",
+      "notes": "JFAC meeting 2026-01-21. Public record legislature hearing.",
+      "related": [
+        "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
+      ]
+    },
+    {
+      "id": "laf-usb:IDAHO-VAULT:2026:SenateChambers03-16-2023",
+      "original_filename": "SenateChambers03-16-2023.mp4",
+      "git_policy": "external-over-lfs-limit",
+      "carrier_lane": "provider-manual",
+      "topology_role": "cold",
+      "runtime_scope": "local",
+      "storage_key": "pending:internet-archive:idaho-vault-media/SenateChambers03-16-2023.mp4",
+      "size_bytes": 5693530112,
+      "checksum": {
+        "algorithm": "sha256",
+        "value": null
+      },
+      "verification_state": "pending",
+      "sensitivity": "publishable",
+      "routing_class": "public-record",
+      "notes": "Idaho Senate chamber session 2023-03-16. Public record.",
+      "related": [
+        "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
+      ]
+    },
+    {
+      "id": "laf-usb:IDAHO-VAULT:2026:HouseChambers03-25-2026",
+      "original_filename": "HouseChambers03-25-2026.mp4",
+      "git_policy": "external-over-lfs-limit",
+      "carrier_lane": "provider-manual",
+      "topology_role": "cold",
+      "runtime_scope": "local",
+      "storage_key": "pending:internet-archive:idaho-vault-media/HouseChambers03-25-2026.mp4",
+      "size_bytes": 4820439040,
+      "checksum": {
+        "algorithm": "sha256",
+        "value": null
+      },
+      "verification_state": "pending",
+      "sensitivity": "publishable",
+      "routing_class": "public-record",
+      "notes": "Idaho House chamber session 2026-03-25. Public record.",
+      "related": [
+        "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
+      ]
+    },
+    {
+      "id": "laf-usb:IDAHO-VAULT:2026:Feb2_IllegalImmigration",
+      "original_filename": "Feb 2_Illegal Immigration Bills Presser Full.mp4",
+      "git_policy": "external-over-lfs-limit",
+      "carrier_lane": "provider-manual",
+      "topology_role": "cold",
+      "runtime_scope": "local",
+      "storage_key": "pending:internet-archive:idaho-vault-media/Feb2_IllegalImmigrationBillsPresserFull.mp4",
+      "size_bytes": 4779376640,
+      "checksum": {
+        "algorithm": "sha256",
+        "value": null
+      },
+      "verification_state": "pending",
+      "sensitivity": "publishable",
+      "routing_class": "public-record",
+      "notes": "Press conference on Illegal Immigration Bills, Feb 2. Public record journalism source.",
+      "related": [
+        "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
+      ]
+    },
+    {
+      "id": "laf-usb:IDAHO-VAULT:2026:XD4_6595",
+      "original_filename": "XD4_6595.MXF",
+      "git_policy": "external-over-lfs-limit",
+      "carrier_lane": "provider-manual",
+      "topology_role": "cold",
+      "runtime_scope": "local",
+      "storage_key": "pending:gcs:the-ledger-bucket/IDAHO-VAULT/oversize/XD4_6595.MXF",
+      "size_bytes": 4676812800,
+      "checksum": {
+        "algorithm": "sha256",
+        "value": null
+      },
+      "verification_state": "pending",
+      "sensitivity": "private",
+      "routing_class": "production-private",
+      "notes": "Sony camera raw original. Production footage.",
+      "related": [
+        "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
+      ]
+    },
+    {
+      "id": "laf-usb:IDAHO-VAULT:2026:Woodward-Full",
+      "original_filename": "Woodward-Full.mp4",
+      "git_policy": "external-over-lfs-limit",
+      "carrier_lane": "provider-manual",
+      "topology_role": "cold",
+      "runtime_scope": "local",
+      "storage_key": "pending:REVIEW-REQUIRED",
+      "size_bytes": 4609761280,
+      "checksum": {
+        "algorithm": "sha256",
+        "value": null
+      },
+      "verification_state": "pending",
+      "sensitivity": "unknown",
+      "routing_class": "staging-pending",
+      "notes": "Named for subject 'Woodward'. Could be interview or press conference. Logan must identify — public-record or private production?",
+      "related": [
+        "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
+      ]
+    },
+    {
+      "id": "laf-usb:IDAHO-VAULT:2026:IDEX_Artifacts-Bites-All",
+      "original_filename": "IDEX_Artifacts-Bites-All.mp4",
+      "git_policy": "external-over-lfs-limit",
+      "carrier_lane": "provider-manual",
+      "topology_role": "cold",
+      "runtime_scope": "local",
+      "storage_key": "pending:gcs:the-ledger-bucket/IDAHO-VAULT/oversize/IDEX_Artifacts-Bites-All.mp4",
+      "size_bytes": 4432619520,
+      "checksum": {
+        "algorithm": "sha256",
+        "value": null
+      },
+      "verification_state": "pending",
+      "sensitivity": "private",
+      "routing_class": "production-private",
+      "notes": "IDEX production compilation (interview bites/artifacts). Internal production file.",
+      "related": [
+        "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
+      ]
+    },
+    {
+      "id": "laf-usb:IDAHO-VAULT:2026:SenateChambers03-31-2025",
+      "original_filename": "SenateChambers03-31-2025.mp4",
+      "git_policy": "external-over-lfs-limit",
+      "carrier_lane": "provider-manual",
+      "topology_role": "cold",
+      "runtime_scope": "local",
+      "storage_key": "pending:internet-archive:idaho-vault-media/SenateChambers03-31-2025.mp4",
+      "size_bytes": 4369203200,
+      "checksum": {
+        "algorithm": "sha256",
+        "value": null
+      },
+      "verification_state": "pending",
+      "sensitivity": "publishable",
+      "routing_class": "public-record",
+      "notes": "Idaho Senate chamber session 2025-03-31. Public record.",
+      "related": [
+        "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
+      ]
+    },
+    {
+      "id": "laf-usb:IDAHO-VAULT:2026:OUID3805_1080HD",
+      "original_filename": "OUID3805_1080HD.mp4",
+      "git_policy": "external-over-lfs-limit",
+      "carrier_lane": "provider-manual",
+      "topology_role": "cold",
+      "runtime_scope": "local",
+      "storage_key": "pending:gcs:the-ledger-bucket/IDAHO-VAULT/oversize/OUID3805_1080HD.mp4",
+      "size_bytes": 4327497728,
+      "checksum": {
+        "algorithm": "sha256",
+        "value": null
+      },
+      "verification_state": "pending",
+      "sensitivity": "private",
+      "routing_class": "production-private",
+      "notes": "Idaho Reports / IPTV production file (OUID series). Internal production.",
+      "related": [
+        "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
+      ]
+    },
+    {
+      "id": "laf-usb:IDAHO-VAULT:2026:2_files_IR_Special_Media_Manager",
+      "original_filename": "2_files_from_IR_Special_Media_Manager.zip",
+      "git_policy": "external-over-lfs-limit",
+      "carrier_lane": "provider-manual",
+      "topology_role": "cold",
+      "runtime_scope": "local",
+      "storage_key": "pending:gcs:the-ledger-bucket/IDAHO-VAULT/oversize/2_files_from_IR_Special_Media_Manager.zip",
+      "size_bytes": 4187017216,
+      "checksum": {
+        "algorithm": "sha256",
+        "value": null
+      },
+      "verification_state": "pending",
+      "sensitivity": "private",
+      "routing_class": "production-private",
+      "notes": "Zip archive from Idaho Reports Special Media Manager. Internal production archive.",
+      "related": [
+        "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
+      ]
+    },
+    {
+      "id": "laf-usb:IDAHO-VAULT:2026:IRIC0000_HD1080",
+      "original_filename": "IRIC0000_HD1080.mp4",
+      "git_policy": "external-over-lfs-limit",
+      "carrier_lane": "provider-manual",
+      "topology_role": "cold",
+      "runtime_scope": "local",
+      "storage_key": "pending:gcs:the-ledger-bucket/IDAHO-VAULT/oversize/IRIC0000_HD1080.mp4",
+      "size_bytes": 4186701824,
+      "checksum": {
+        "algorithm": "sha256",
+        "value": null
+      },
+      "verification_state": "pending",
+      "sensitivity": "private",
+      "routing_class": "production-private",
+      "notes": "Idaho Reports production file (IRIC series). Internal production.",
+      "related": [
+        "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
+      ]
+    },
+    {
+      "id": "laf-usb:IDAHO-VAULT:2026:260313_jloc_1215PM",
+      "original_filename": "260313_jloc_1215PM-Meeting.mp4",
+      "git_policy": "external-over-lfs-limit",
+      "carrier_lane": "provider-manual",
+      "topology_role": "cold",
+      "runtime_scope": "local",
+      "storage_key": "pending:internet-archive:idaho-vault-media/260313_jloc_1215PM-Meeting.mp4",
+      "size_bytes": 3897753600,
+      "checksum": {
+        "algorithm": "sha256",
+        "value": null
+      },
+      "verification_state": "pending",
+      "sensitivity": "publishable",
+      "routing_class": "public-record",
+      "notes": "JLOC (Joint Legislative Oversight Committee) meeting 2026-03-13. Public record.",
+      "related": [
+        "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
+      ]
+    },
+    {
+      "id": "laf-usb:IDAHO-VAULT:2026:JFAC_Panel_Fullv2",
+      "original_filename": "JFAC Panel Fullv2.mp4",
+      "git_policy": "external-over-lfs-limit",
+      "carrier_lane": "provider-manual",
+      "topology_role": "cold",
+      "runtime_scope": "local",
+      "storage_key": "pending:internet-archive:idaho-vault-media/JFAC_Panel_Fullv2.mp4",
+      "size_bytes": 3779297280,
+      "checksum": {
+        "algorithm": "sha256",
+        "value": null
+      },
+      "verification_state": "pending",
+      "sensitivity": "publishable",
+      "routing_class": "public-record",
+      "notes": "JFAC panel recording, version 2. Public record. Note: JFAC_Panel_Full.mp4 is near-duplicate — verify before uploading both.",
+      "related": [
+        "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
+      ]
+    },
+    {
+      "id": "laf-usb:IDAHO-VAULT:2026:JFAC_Panel_Full",
+      "original_filename": "JFAC Panel Full.mp4",
+      "git_policy": "external-over-lfs-limit",
+      "carrier_lane": "provider-manual",
+      "topology_role": "cold",
+      "runtime_scope": "local",
+      "storage_key": "pending:internet-archive:idaho-vault-media/JFAC_Panel_Full.mp4",
+      "size_bytes": 3779297280,
+      "checksum": {
+        "algorithm": "sha256",
+        "value": null
+      },
+      "verification_state": "pending",
+      "sensitivity": "publishable",
+      "routing_class": "public-record",
+      "notes": "JFAC panel recording. Identical size to JFAC_Panel_Fullv2 — SHA256 comparison recommended before uploading both to IA.",
+      "related": [
+        "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
+      ]
+    },
+    {
+      "id": "laf-usb:IDAHO-VAULT:2026:OI3502_1080HD",
+      "original_filename": "OI3502_1080HD.mp4",
+      "git_policy": "external-over-lfs-limit",
+      "carrier_lane": "provider-manual",
+      "topology_role": "cold",
+      "runtime_scope": "local",
+      "storage_key": "pending:gcs:the-ledger-bucket/IDAHO-VAULT/oversize/OI3502_1080HD.mp4",
+      "size_bytes": 3542067200,
+      "checksum": {
+        "algorithm": "sha256",
+        "value": null
+      },
+      "verification_state": "pending",
+      "sensitivity": "private",
+      "routing_class": "production-private",
+      "notes": "Idaho Reports production file (OI series). Internal production.",
+      "related": [
+        "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
+      ]
+    },
+    {
+      "id": "laf-usb:IDAHO-VAULT:2026:OI3704_1080HD",
+      "original_filename": "OI3704_1080HD.mp4",
+      "git_policy": "external-over-lfs-limit",
+      "carrier_lane": "provider-manual",
+      "topology_role": "cold",
+      "runtime_scope": "local",
+      "storage_key": "pending:gcs:the-ledger-bucket/IDAHO-VAULT/oversize/OI3704_1080HD.mp4",
+      "size_bytes": 3489464320,
+      "checksum": {
+        "algorithm": "sha256",
+        "value": null
+      },
+      "verification_state": "pending",
+      "sensitivity": "private",
+      "routing_class": "production-private",
+      "notes": "Idaho Reports production file (OI series). Internal production.",
+      "related": [
+        "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
+      ]
+    },
+    {
+      "id": "laf-usb:IDAHO-VAULT:2026:OI3304_HD",
+      "original_filename": "OI3304_HD.mp4",
+      "git_policy": "external-over-lfs-limit",
+      "carrier_lane": "provider-manual",
+      "topology_role": "cold",
+      "runtime_scope": "local",
+      "storage_key": "pending:gcs:the-ledger-bucket/IDAHO-VAULT/oversize/OI3304_HD.mp4",
+      "size_bytes": 3467862016,
+      "checksum": {
+        "algorithm": "sha256",
+        "value": null
+      },
+      "verification_state": "pending",
+      "sensitivity": "private",
+      "routing_class": "production-private",
+      "notes": "Idaho Reports production file (OI series). Internal production.",
+      "related": [
+        "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
+      ]
+    },
+    {
+      "id": "laf-usb:IDAHO-VAULT:2026:260227_jfac_0800AM",
+      "original_filename": "260227_jfac_0800AM-Meeting.mp4",
+      "git_policy": "external-over-lfs-limit",
+      "carrier_lane": "provider-manual",
+      "topology_role": "cold",
+      "runtime_scope": "local",
+      "storage_key": "pending:internet-archive:idaho-vault-media/260227_jfac_0800AM-Meeting.mp4",
+      "size_bytes": 3229614080,
+      "checksum": {
+        "algorithm": "sha256",
+        "value": null
+      },
+      "verification_state": "pending",
+      "sensitivity": "publishable",
+      "routing_class": "public-record",
+      "notes": "JFAC meeting 2026-02-27. Public record.",
+      "related": [
+        "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
+      ]
+    },
+    {
+      "id": "laf-usb:IDAHO-VAULT:2026:MVI_1487",
+      "original_filename": "MVI_1487.MOV",
+      "git_policy": "external-over-lfs-limit",
+      "carrier_lane": "provider-manual",
+      "topology_role": "cold",
+      "runtime_scope": "local",
+      "storage_key": "pending:REVIEW-REQUIRED",
+      "size_bytes": 3145728000,
+      "checksum": {
+        "algorithm": "sha256",
+        "value": null
+      },
+      "verification_state": "pending",
+      "sensitivity": "unknown",
+      "routing_class": "staging-pending",
+      "notes": "Canon camera clip (MVI series). Content unknown without playback. Could be field footage (public) or interview (private).",
+      "related": [
+        "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
+      ]
+    },
+    {
+      "id": "laf-usb:IDAHO-VAULT:2026:260220_jfac_0800AM",
+      "original_filename": "260220_jfac_0800AM-Meeting.mp4",
+      "git_policy": "external-over-lfs-limit",
+      "carrier_lane": "provider-manual",
+      "topology_role": "cold",
+      "runtime_scope": "local",
+      "storage_key": "pending:internet-archive:idaho-vault-media/260220_jfac_0800AM-Meeting.mp4",
+      "size_bytes": 3082321920,
+      "checksum": {
+        "algorithm": "sha256",
+        "value": null
+      },
+      "verification_state": "pending",
+      "sensitivity": "publishable",
+      "routing_class": "public-record",
+      "notes": "JFAC meeting 2026-02-20. Public record.",
+      "related": [
+        "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
+      ]
+    },
+    {
+      "id": "laf-usb:IDAHO-VAULT:2026:260303_schr_0130PM",
+      "original_filename": "260303_schr_0130PM-Meeting.mp4",
+      "git_policy": "external-over-lfs-limit",
+      "carrier_lane": "provider-manual",
+      "topology_role": "cold",
+      "runtime_scope": "local",
+      "storage_key": "pending:internet-archive:idaho-vault-media/260303_schr_0130PM-Meeting.mp4",
+      "size_bytes": 2906521600,
+      "checksum": {
+        "algorithm": "sha256",
+        "value": null
+      },
+      "verification_state": "pending",
+      "sensitivity": "publishable",
+      "routing_class": "public-record",
+      "notes": "Senate Commerce and Human Resources (SCHR) committee meeting 2026-03-03. Public record.",
+      "related": [
+        "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
+      ]
+    },
+    {
+      "id": "laf-usb:IDAHO-VAULT:2026:260309_hjud_0130PM",
+      "original_filename": "260309_hjud_0130PM-Meeting.mp4",
+      "git_policy": "external-over-lfs-limit",
+      "carrier_lane": "provider-manual",
+      "topology_role": "cold",
+      "runtime_scope": "local",
+      "storage_key": "pending:internet-archive:idaho-vault-media/260309_hjud_0130PM-Meeting.mp4",
+      "size_bytes": 2748317696,
+      "checksum": {
+        "algorithm": "sha256",
+        "value": null
+      },
+      "verification_state": "pending",
+      "sensitivity": "publishable",
+      "routing_class": "public-record",
+      "notes": "House Judiciary (HJUD) committee meeting 2026-03-09. Public record.",
+      "related": [
+        "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
+      ]
+    },
+    {
+      "id": "laf-usb:IDAHO-VAULT:2026:260223_jfac_0800AM",
+      "original_filename": "260223_jfac_0800AM-Meeting.mp4",
+      "git_policy": "external-over-lfs-limit",
+      "carrier_lane": "provider-manual",
+      "topology_role": "cold",
+      "runtime_scope": "local",
+      "storage_key": "pending:internet-archive:idaho-vault-media/260223_jfac_0800AM-Meeting.mp4",
+      "size_bytes": 2748317696,
+      "checksum": {
+        "algorithm": "sha256",
+        "value": null
+      },
+      "verification_state": "pending",
+      "sensitivity": "publishable",
+      "routing_class": "public-record",
+      "notes": "JFAC meeting 2026-02-23. Public record.",
+      "related": [
+        "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
+      ]
+    },
+    {
+      "id": "laf-usb:IDAHO-VAULT:2026:FightOligarchyRally",
+      "original_filename": "Fight Oligarchy Rally.mp4",
+      "git_policy": "external-over-lfs-limit",
+      "carrier_lane": "provider-manual",
+      "topology_role": "cold",
+      "runtime_scope": "local",
+      "storage_key": "pending:internet-archive:idaho-vault-media/FightOligarchyRally.mp4",
+      "size_bytes": 2717908992,
+      "checksum": {
+        "algorithm": "sha256",
+        "value": null
+      },
+      "verification_state": "pending",
+      "sensitivity": "publishable",
+      "routing_class": "public-record",
+      "notes": "Public rally recording. Public record journalism source.",
+      "related": [
+        "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
+      ]
+    },
+    {
+      "id": "laf-usb:IDAHO-VAULT:2026:IDRE5406HDBA_MM",
+      "original_filename": "IDRE5406HDBA_MM.mp4",
+      "git_policy": "external-over-lfs-limit",
+      "carrier_lane": "provider-manual",
+      "topology_role": "cold",
+      "runtime_scope": "local",
+      "storage_key": "pending:gcs:the-ledger-bucket/IDAHO-VAULT/oversize/IDRE5406HDBA_MM.mp4",
+      "size_bytes": 2664456192,
+      "checksum": {
+        "algorithm": "sha256",
+        "value": null
+      },
+      "verification_state": "pending",
+      "sensitivity": "private",
+      "routing_class": "production-private",
+      "notes": "Idaho Reports Episode production file (IDRE series). Internal production.",
+      "related": [
+        "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
+      ]
+    },
+    {
+      "id": "laf-usb:IDAHO-VAULT:2026:IDRE5406HDBA_MMv2",
+      "original_filename": "IDRE5406HDBA_MMv2.mp4",
+      "git_policy": "external-over-lfs-limit",
+      "carrier_lane": "provider-manual",
+      "topology_role": "cold",
+      "runtime_scope": "local",
+      "storage_key": "pending:gcs:the-ledger-bucket/IDAHO-VAULT/oversize/IDRE5406HDBA_MMv2.mp4",
+      "size_bytes": 2664456192,
+      "checksum": {
+        "algorithm": "sha256",
+        "value": null
+      },
+      "verification_state": "pending",
+      "sensitivity": "private",
+      "routing_class": "production-private",
+      "notes": "Idaho Reports Episode production file v2 (IDRE series). Identical size to v1 — SHA256 comparison recommended.",
+      "related": [
+        "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
+      ]
+    },
+    {
+      "id": "laf-usb:IDAHO-VAULT:2026:MVI_1486",
+      "original_filename": "MVI_1486.MOV",
+      "git_policy": "external-over-lfs-limit",
+      "carrier_lane": "provider-manual",
+      "topology_role": "cold",
+      "runtime_scope": "local",
+      "storage_key": "pending:REVIEW-REQUIRED",
+      "size_bytes": 2566914048,
+      "checksum": {
+        "algorithm": "sha256",
+        "value": null
+      },
+      "verification_state": "pending",
+      "sensitivity": "unknown",
+      "routing_class": "staging-pending",
+      "notes": "Canon camera clip (MVI series). Content unknown without playback.",
+      "related": [
+        "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
+      ]
+    },
+    {
+      "id": "laf-usb:IDAHO-VAULT:2026:female-hand-touch-screen",
+      "original_filename": "female-hand-on-touch-screen-2023-11-27-04-52-48-utc.mov",
+      "git_policy": "external-over-lfs-limit",
+      "carrier_lane": "provider-manual",
+      "topology_role": "cold",
+      "runtime_scope": "local",
+      "storage_key": "pending:gcs:the-ledger-bucket/IDAHO-VAULT/oversize/female-hand-on-touch-screen-2023-11-27-04-52-48-utc.mov",
+      "size_bytes": 2461696000,
+      "checksum": {
+        "algorithm": "sha256",
+        "value": null
+      },
+      "verification_state": "pending",
+      "sensitivity": "private",
+      "routing_class": "production-private",
+      "notes": "Stock/B-roll footage (UTC timestamp in filename is stock site format). Licensed stock — do NOT upload to Internet Archive. GCS cold storage.",
+      "related": [
+        "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
+      ]
+    },
+    {
+      "id": "laf-usb:IDAHO-VAULT:2026:MedicaidPanelFull",
+      "original_filename": "Medicaid Panel Full.mp4",
+      "git_policy": "external-over-lfs-limit",
+      "carrier_lane": "provider-manual",
+      "topology_role": "cold",
+      "runtime_scope": "local",
+      "storage_key": "pending:REVIEW-REQUIRED",
+      "size_bytes": 2385256448,
+      "checksum": {
+        "algorithm": "sha256",
+        "value": null
+      },
+      "verification_state": "pending",
+      "sensitivity": "unknown",
+      "routing_class": "staging-pending",
+      "notes": "Medicaid panel recording. Could be public legislative hearing (→ Internet Archive) or private production panel (→ GCS). Logan must confirm.",
+      "related": [
+        "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
+      ]
+    },
+    {
+      "id": "laf-usb:IDAHO-VAULT:2026:250318_slgt_0200PM",
+      "original_filename": "250318_slgt_0200PM-Meeting.mp4",
+      "git_policy": "external-over-lfs-limit",
+      "carrier_lane": "provider-manual",
+      "topology_role": "cold",
+      "runtime_scope": "local",
+      "storage_key": "pending:internet-archive:idaho-vault-media/250318_slgt_0200PM-Meeting.mp4",
+      "size_bytes": 2189426688,
+      "checksum": {
+        "algorithm": "sha256",
+        "value": null
+      },
+      "verification_state": "pending",
+      "sensitivity": "publishable",
+      "routing_class": "public-record",
+      "notes": "SLGT committee meeting 2025-03-18. Public record legislature hearing.",
+      "related": [
+        "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
+      ]
+    },
+    {
+      "id": "laf-usb:IDAHO-VAULT:2026:MVI_1484",
+      "original_filename": "MVI_1484.MOV",
+      "git_policy": "external-over-lfs-limit",
+      "carrier_lane": "provider-manual",
+      "topology_role": "cold",
+      "runtime_scope": "local",
+      "storage_key": "pending:REVIEW-REQUIRED",
+      "size_bytes": 2159542272,
+      "checksum": {
+        "algorithm": "sha256",
+        "value": null
+      },
+      "verification_state": "pending",
+      "sensitivity": "unknown",
+      "routing_class": "staging-pending",
+      "notes": "Canon camera clip (MVI series). Content unknown without playback.",
+      "related": [
+        "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
+      ]
     }
+  ],
+  "routing_summary": {
+    "public-record": 20,
+    "production-private": 13,
+    "staging-pending": 5,
+    "total": 38
+  },
+  "items_requiring_logan_review": [
+    "20240116_140342.mp4 — device timestamp, contents unknown",
+    "Woodward-Full.mp4 — subject name only, public or private?",
+    "MVI_1487.MOV — Canon camera clip, content unknown",
+    "MVI_1486.MOV — Canon camera clip, content unknown",
+    "MVI_1484.MOV — Canon camera clip, content unknown",
+    "Medicaid Panel Full.mp4 — hearing or production panel?"
+  ],
+  "first_transfer_candidates": [
+    "SenateChambers03-25-2026.mp4 — already loose on Desktop, clear public-record routing to Internet Archive",
+    "SenateChambers03-02-2026.mp4 — already loose on Desktop/SCRATCH BIN, same routing"
+  ],
+  "duplicate_pairs_to_verify": [
+    [
+      "JFAC Panel Full.mp4",
+      "JFAC Panel Fullv2.mp4"
+    ],
+    [
+      "IDRE5406HDBA_MM.mp4",
+      "IDRE5406HDBA_MMv2.mp4"
+    ]
   ]
 }
