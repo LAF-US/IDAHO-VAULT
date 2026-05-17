@@ -883,13 +883,57 @@
         "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
       ],
       "size_bytes_actual": 2160080300
+    },
+    {
+      "id": "laf-usb:IDAHO-VAULT:2026:IRPOD5405_Quinn_Perry",
+      "original_filename": "IRPOD5405_Quinn Perry.mp4",
+      "git_policy": "external-over-lfs-limit",
+      "carrier_lane": "provider-manual",
+      "topology_role": "cold",
+      "runtime_scope": "local",
+      "storage_key": "pending:gcs:the-ledger-bucket/IDAHO-VAULT/oversize/IRPOD5405_Quinn Perry.mp4",
+      "size_bytes": 2009265309,
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "77cc8b8dea6e6090b85ae9aee83d3331b677e394e73f5de6483f6e60ccd6f855",
+        "note": "OID from git-lfs object store (orphaned blob, identified via git fsck)"
+      },
+      "verification_state": "pending",
+      "sensitivity": "private",
+      "routing_class": "production-private",
+      "notes": "Idaho Reports production interview — Quinn Perry. Orphaned from git history.",
+      "related": [
+        "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
+      ]
+    },
+    {
+      "id": "laf-usb:IDAHO-VAULT:2026:XD4_6597",
+      "original_filename": "XD4_6597.MXF",
+      "git_policy": "external-over-lfs-limit",
+      "carrier_lane": "provider-manual",
+      "topology_role": "cold",
+      "runtime_scope": "local",
+      "storage_key": "pending:gcs:the-ledger-bucket/IDAHO-VAULT/oversize/XD4_6597.MXF",
+      "size_bytes": 2128813628,
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "6a332745506dad8d11bb0faad232bea61ffff4e788e5a2203a63b7355047f888",
+        "note": "OID from git-lfs object store (orphaned blob, identified via git fsck)"
+      },
+      "verification_state": "pending",
+      "sensitivity": "private",
+      "routing_class": "production-private",
+      "notes": "Sony camera raw original. XD4 series footage. Orphaned from git history.",
+      "related": [
+        "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
+      ]
     }
   ],
   "routing_summary": {
-    "public-record": 20,
-    "production-private": 13,
-    "staging-pending": 5,
-    "total": 38
+    "public-record": 19,
+    "production-private": 15,
+    "staging-pending": 6,
+    "total": 40
   },
   "items_requiring_logan_review": [
     "20240116_140342.mp4 â€” device timestamp, contents unknown",
@@ -903,21 +947,6 @@
     "Any publishable file once Logan approves routing and rclone internetarchive remote is configured."
   ],
   "unmatched_lfs_objects": [
-    {
-      "oid": "77cc8b8dea6e6090",
-      "size_gib": 1.87,
-      "note": "below HANDOFF threshold, unknown"
-    },
-    {
-      "oid": "6a332745506dad8d",
-      "size_gib": 1.98,
-      "note": "below HANDOFF threshold, unknown"
-    },
-    {
-      "oid": "d0c0fae53aec1968",
-      "size_gib": 2.58,
-      "note": "possible 260223_jfac alt version, 17.7MB off"
-    },
     {
       "oid": "13be547422e9f6a4",
       "size_gib": 3.7,
