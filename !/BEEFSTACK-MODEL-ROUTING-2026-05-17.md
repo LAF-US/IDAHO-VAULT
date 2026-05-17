@@ -37,6 +37,7 @@ Logan's canonical agentic LLM provider rankings, in order of preference:
 - Robust cloud fallbacks required for resilience
 - Control over data retention and tracking takes priority over convenience
 - Banned providers are excluded from all config, catalogs, and fallback chains
+- All config and tooling must be portable across macOS, Windows, and Linux
 
 ---
 
@@ -111,25 +112,41 @@ If an openclaw update re-introduces any of these as defaults, remove them manual
 
 ## Live Config Location
 
+Config path is OS-agnostic — `openclaw` resolves `~/.openclaw/` correctly on macOS, Windows, and Linux:
+
 ```
 ~/.openclaw/openclaw.json  →  agents.defaults.model
 ```
 
-To inspect the live stack:
+All model IDs in the BEEFSTACK use provider-prefixed strings (`ollama/`, `mistral/`, `openrouter/`, `codex/`, `anthropic/`) that are resolved by the OpenClaw gateway — no OS-specific paths in the model chain itself.
+
+To inspect the live stack (any OS):
 ```bash
 openclaw models list
 ```
 
-To validate after any edit:
+To validate after any edit (any OS):
 ```bash
 openclaw config validate
 openclaw gateway restart
 openclaw gateway health
 ```
 
+**Gateway service name varies by OS:**
+
+| OS | Service mechanism |
+|----|-------------------|
+| macOS | launchd (`~/Library/LaunchAgents/ai.openclaw.gateway.plist`) |
+| Windows | Startup folder login item (`%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\OpenClaw Gateway.cmd`) |
+| Linux | systemd (`openclaw-gateway.service`) |
+
+`openclaw gateway install` / `restart` / `stop` abstracts over all three — prefer the CLI over touching service files directly.
+
 ---
 
 ## Installed Local Models (as of 2026-05-17)
+
+Ollama models are portable — `ollama pull <model>` works identically on macOS, Windows, and Linux. The model store lives in `~/.ollama/models/` on all platforms.
 
 | Model | Size | Status |
 |-------|------|--------|
@@ -146,3 +163,14 @@ openclaw gateway health
 | ~~ollama/qwen:latest~~ | 2.3 GB | **BANNED** — do not use |
 
 `gpt-oss`, `nemotron`, and `llama3.2-vision` are installed but not yet validated for agentic use. Logan to decide whether to slot them in after testing.
+
+To replicate the local model stack on a new machine:
+```bash
+ollama pull magistral
+ollama pull devstral
+ollama pull mistral-small
+ollama pull mistral-nemo
+ollama pull mistral
+ollama pull mixtral
+ollama pull mistral-large
+```
