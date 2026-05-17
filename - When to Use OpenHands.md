@@ -5,7 +5,10 @@ author:
 published:
 created: 2026-05-06
 description: "Guidance on when OpenHands is the right tool for your task"
+date created: Wednesday, May 6th 2026, 9:56:21 pm
+date modified: Sunday, May 17th 2026, 2:16:28 am
 ---
+
 OpenHands excels at many development tasks, but knowing when to use it—and when to handle things yourself—helps you get the best results. This guide helps you identify the right tasks for OpenHands and set yourself up for success.
 
 ## Task Complexity Guidance
