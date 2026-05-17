@@ -131,8 +131,7 @@
       "verification_state": "pending",
       "sensitivity": "publishable",
       "routing_class": "public-record",
-      "notes": "Idaho Senate chamber session 2026-03-25. Public record. File LOOSE on Desktop SCRATCH FOLDER — ready for first carrier transfer.",
-      "loose_copy_path": "C:/Users/loganf/Desktop/SCRATCH FOLDER/SenateChambers03-25-2026.mp4",
+      "notes": "Idaho Senate chamber session 2026-03-25. Public record.",
       "related": [
         "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
       ]
@@ -153,8 +152,7 @@
       "verification_state": "pending",
       "sensitivity": "publishable",
       "routing_class": "public-record",
-      "notes": "Idaho Senate chamber session 2026-03-02. Public record. File LOOSE on Desktop SCRATCH FOLDER/SCRATCH BIN — ready for first carrier transfer.",
-      "loose_copy_path": "C:/Users/loganf/Desktop/SCRATCH FOLDER/SCRATCH BIN/SenateChambers03-02-2026.mp4",
+      "notes": "Idaho Senate chamber session 2026-03-02. Public record.",
       "related": [
         "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
       ]
@@ -826,8 +824,7 @@
     "Medicaid Panel Full.mp4 — hearing or production panel?"
   ],
   "first_transfer_candidates": [
-    "SenateChambers03-25-2026.mp4 — already loose on Desktop, clear public-record routing to Internet Archive",
-    "SenateChambers03-02-2026.mp4 — already loose on Desktop/SCRATCH BIN, same routing"
+    "Any publishable file once Logan approves routing and rclone internetarchive remote is configured."
   ],
   "duplicate_pairs_to_verify": [
     [
