@@ -3,7 +3,7 @@
   "updated": "2026-05-17",
   "authority": "LOGAN",
   "status": "staged",
-  "purpose": "Complete registry of 38 files that exceed GitHub's 2 GB Git LFS per-file limit. All objects confirmed present locally in .git/lfs/objects/ (323 GB total). Routing classifications are provisional — Logan must approve before any carrier transfer executes.",
+  "purpose": "Complete registry of 38 files that exceed GitHub's 2 GB Git LFS per-file limit. All objects confirmed present locally in .git/lfs/objects/ (323 GB total). Routing classifications are provisional â€” Logan must approve before any carrier transfer executes.",
   "routing_notes": {
     "public-record": "Legislature chamber sessions, committee hearings, press conferences, public rallies. Routed to Internet Archive as the immutable/public ledger lane. Logan must confirm each item before upload.",
     "production-private": "Idaho Reports / IPTV production originals, raw camera footage (MXF/MOV), internal production files. Routed to GCS the-ledger-bucket (cold) pending Logan decision between GCS and THE-CITY 5TB drive.",
@@ -21,7 +21,8 @@
       "size_bytes": 22580764692,
       "checksum": {
         "algorithm": "sha256",
-        "value": null
+        "value": "ad9210f35564ea10bef52101e0a046d451997a84e8a3ed3d8ccb4a469bb63ae1",
+        "note": "OID from git-lfs object store (size delta 3352KB)"
       },
       "verification_state": "pending",
       "sensitivity": "private",
@@ -29,7 +30,8 @@
       "notes": "Sony camera raw original. Production footage.",
       "related": [
         "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
-      ]
+      ],
+      "size_bytes_actual": 22584116796
     },
     {
       "id": "laf-usb:IDAHO-VAULT:2026:XD4_6594",
@@ -42,7 +44,8 @@
       "size_bytes": 20776976384,
       "checksum": {
         "algorithm": "sha256",
-        "value": null
+        "value": "6b94f0e3d1c1ee341f67edad73914ff40616903f3d6fd8f693095e63d22375f5",
+        "note": "OID from git-lfs object store (size delta 884KB)"
       },
       "verification_state": "pending",
       "sensitivity": "private",
@@ -50,7 +53,8 @@
       "notes": "Sony camera raw original. Production footage.",
       "related": [
         "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
-      ]
+      ],
+      "size_bytes_actual": 20776092220
     },
     {
       "id": "laf-usb:IDAHO-VAULT:2026:251106_jfac_0800AM",
@@ -63,7 +67,8 @@
       "size_bytes": 9771991777,
       "checksum": {
         "algorithm": "sha256",
-        "value": null
+        "value": "01bf5173e3d5a02cf37c3745ce6f67833e5ac847a62d6d94aab4d85d048c444e",
+        "note": "OID from git-lfs object store (size delta 5237KB)"
       },
       "verification_state": "pending",
       "sensitivity": "publishable",
@@ -71,7 +76,8 @@
       "notes": "JFAC (Joint Finance-Appropriations Committee) meeting 2025-11-06. Public record legislature hearing.",
       "related": [
         "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
-      ]
+      ],
+      "size_bytes_actual": 9766754150
     },
     {
       "id": "laf-usb:IDAHO-VAULT:2026:260325_sh-w_0200PM",
@@ -84,7 +90,8 @@
       "size_bytes": 8074620928,
       "checksum": {
         "algorithm": "sha256",
-        "value": null
+        "value": "ff1946edc8e7d31e8298c233859974cf28bafc7fefb81f1486a0277075388313",
+        "note": "OID from git-lfs object store (size delta 1414KB)"
       },
       "verification_state": "pending",
       "sensitivity": "publishable",
@@ -92,7 +99,8 @@
       "notes": "State House & Ways (?) committee meeting 2026-03-25. Public record.",
       "related": [
         "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
-      ]
+      ],
+      "size_bytes_actual": 8076035434
     },
     {
       "id": "laf-usb:IDAHO-VAULT:2026:20240116_140342",
@@ -105,15 +113,17 @@
       "size_bytes": 7025459200,
       "checksum": {
         "algorithm": "sha256",
-        "value": null
+        "value": "673e596422e1b2a83a6326c8d81ac6f7def64497b185e753b31286fd45d76278",
+        "note": "OID from git-lfs object store (size delta 10011KB)"
       },
       "verification_state": "pending",
       "sensitivity": "unknown",
       "routing_class": "staging-pending",
-      "notes": "Camera-format filename (device timestamp). Date: 2024-01-16 14:03. Contents unknown — Logan must identify before routing.",
+      "notes": "Camera-format filename (device timestamp). Date: 2024-01-16 14:03. Contents unknown â€” Logan must identify before routing.",
       "related": [
         "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
-      ]
+      ],
+      "size_bytes_actual": 7035471021
     },
     {
       "id": "laf-usb:IDAHO-VAULT:2026:SenateChambers03-25-2026",
@@ -126,7 +136,8 @@
       "size_bytes": 6979321856,
       "checksum": {
         "algorithm": "sha256",
-        "value": null
+        "value": "74447b9b5519481fc610723f5c3c629a5bd7f1a9c2a1f3dd9a767eafb271d993",
+        "note": "OID from git-lfs object store (size delta 4091KB)"
       },
       "verification_state": "pending",
       "sensitivity": "publishable",
@@ -134,7 +145,8 @@
       "notes": "Idaho Senate chamber session 2026-03-25. Public record.",
       "related": [
         "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
-      ]
+      ],
+      "size_bytes_actual": 6983413580
     },
     {
       "id": "laf-usb:IDAHO-VAULT:2026:SenateChambers03-02-2026",
@@ -147,7 +159,8 @@
       "size_bytes": 5787918336,
       "checksum": {
         "algorithm": "sha256",
-        "value": null
+        "value": "31498b33d44d447ad762dc0828974a3a3b29ad3b35632354946b7a8c9e33a210",
+        "note": "OID from git-lfs object store (size delta 2371KB)"
       },
       "verification_state": "pending",
       "sensitivity": "publishable",
@@ -155,7 +168,8 @@
       "notes": "Idaho Senate chamber session 2026-03-02. Public record.",
       "related": [
         "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
-      ]
+      ],
+      "size_bytes_actual": 5785546564
     },
     {
       "id": "laf-usb:IDAHO-VAULT:2026:260121_jfac_0800AM",
@@ -168,7 +182,8 @@
       "size_bytes": 5712543744,
       "checksum": {
         "algorithm": "sha256",
-        "value": null
+        "value": "0aca0f4186d4056eab613d67642e4a4aac69f394656cbbf7f5525b875ba93d09",
+        "note": "OID from git-lfs object store (size delta 3801KB)"
       },
       "verification_state": "pending",
       "sensitivity": "publishable",
@@ -176,7 +191,8 @@
       "notes": "JFAC meeting 2026-01-21. Public record legislature hearing.",
       "related": [
         "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
-      ]
+      ],
+      "size_bytes_actual": 5708742228
     },
     {
       "id": "laf-usb:IDAHO-VAULT:2026:SenateChambers03-16-2023",
@@ -189,7 +205,8 @@
       "size_bytes": 5693530112,
       "checksum": {
         "algorithm": "sha256",
-        "value": null
+        "value": "50674bea156613c346ae0206f33d348b76c1c3967951f696465951eada3b8f75",
+        "note": "OID from git-lfs object store (size delta 5805KB)"
       },
       "verification_state": "pending",
       "sensitivity": "publishable",
@@ -197,7 +214,8 @@
       "notes": "Idaho Senate chamber session 2023-03-16. Public record.",
       "related": [
         "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
-      ]
+      ],
+      "size_bytes_actual": 5687724216
     },
     {
       "id": "laf-usb:IDAHO-VAULT:2026:HouseChambers03-25-2026",
@@ -210,7 +228,8 @@
       "size_bytes": 4820439040,
       "checksum": {
         "algorithm": "sha256",
-        "value": null
+        "value": "be6c75d809a8149d2139f38551474b48f478e8d96c06a7ef8d6d0ac0a139deb3",
+        "note": "OID from git-lfs object store (size delta 1066KB)"
       },
       "verification_state": "pending",
       "sensitivity": "publishable",
@@ -218,7 +237,8 @@
       "notes": "Idaho House chamber session 2026-03-25. Public record.",
       "related": [
         "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
-      ]
+      ],
+      "size_bytes_actual": 4819372205
     },
     {
       "id": "laf-usb:IDAHO-VAULT:2026:Feb2_IllegalImmigration",
@@ -231,7 +251,8 @@
       "size_bytes": 4779376640,
       "checksum": {
         "algorithm": "sha256",
-        "value": null
+        "value": "25c75e92a69ebb716b4301e2d7e8c58c1fc8409140ca3e9fc9d34dadc2ed09f2",
+        "note": "OID from git-lfs object store (size delta 1394KB)"
       },
       "verification_state": "pending",
       "sensitivity": "publishable",
@@ -239,7 +260,8 @@
       "notes": "Press conference on Illegal Immigration Bills, Feb 2. Public record journalism source.",
       "related": [
         "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
-      ]
+      ],
+      "size_bytes_actual": 4777981913
     },
     {
       "id": "laf-usb:IDAHO-VAULT:2026:XD4_6595",
@@ -252,7 +274,8 @@
       "size_bytes": 4676812800,
       "checksum": {
         "algorithm": "sha256",
-        "value": null
+        "value": "b8dc7228734af520b33362ff74aa7328ab22934e3f46ff71f5db6f648c841135",
+        "note": "OID from git-lfs object store (size delta 6963KB)"
       },
       "verification_state": "pending",
       "sensitivity": "private",
@@ -260,7 +283,8 @@
       "notes": "Sony camera raw original. Production footage.",
       "related": [
         "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
-      ]
+      ],
+      "size_bytes_actual": 4669849148
     },
     {
       "id": "laf-usb:IDAHO-VAULT:2026:Woodward-Full",
@@ -273,15 +297,17 @@
       "size_bytes": 4609761280,
       "checksum": {
         "algorithm": "sha256",
-        "value": null
+        "value": "1337af18a5dc448ddf73697452163df37ce4cb3101a995bf1f6cd02224e8876c",
+        "note": "OID from git-lfs object store (size delta 2655KB)"
       },
       "verification_state": "pending",
       "sensitivity": "unknown",
       "routing_class": "staging-pending",
-      "notes": "Named for subject 'Woodward'. Could be interview or press conference. Logan must identify — public-record or private production?",
+      "notes": "Named for subject 'Woodward'. Could be interview or press conference. Logan must identify â€” public-record or private production?",
       "related": [
         "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
-      ]
+      ],
+      "size_bytes_actual": 4607105936
     },
     {
       "id": "laf-usb:IDAHO-VAULT:2026:IDEX_Artifacts-Bites-All",
@@ -294,7 +320,8 @@
       "size_bytes": 4432619520,
       "checksum": {
         "algorithm": "sha256",
-        "value": null
+        "value": "92c4b19a3436aa101517e7d841a2a171319d5543bc98601a87e113df9ab7764e",
+        "note": "OID from git-lfs object store (size delta 1236KB)"
       },
       "verification_state": "pending",
       "sensitivity": "private",
@@ -302,7 +329,8 @@
       "notes": "IDEX production compilation (interview bites/artifacts). Internal production file.",
       "related": [
         "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
-      ]
+      ],
+      "size_bytes_actual": 4433855985
     },
     {
       "id": "laf-usb:IDAHO-VAULT:2026:SenateChambers03-31-2025",
@@ -315,7 +343,8 @@
       "size_bytes": 4369203200,
       "checksum": {
         "algorithm": "sha256",
-        "value": null
+        "value": "49fa996e09fab8087bc6ff66c0afb12c5e91287e91cbc0342292313ad58188a4",
+        "note": "OID from git-lfs object store (size delta 1888KB)"
       },
       "verification_state": "pending",
       "sensitivity": "publishable",
@@ -323,7 +352,8 @@
       "notes": "Idaho Senate chamber session 2025-03-31. Public record.",
       "related": [
         "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
-      ]
+      ],
+      "size_bytes_actual": 4371091695
     },
     {
       "id": "laf-usb:IDAHO-VAULT:2026:OUID3805_1080HD",
@@ -336,7 +366,8 @@
       "size_bytes": 4327497728,
       "checksum": {
         "algorithm": "sha256",
-        "value": null
+        "value": "b0044ff39330162311e9e7f996f77c9f513cb81a3337f7973c3c69ae6be3722f",
+        "note": "OID from git-lfs object store (size delta 4365KB)"
       },
       "verification_state": "pending",
       "sensitivity": "private",
@@ -344,7 +375,8 @@
       "notes": "Idaho Reports / IPTV production file (OUID series). Internal production.",
       "related": [
         "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
-      ]
+      ],
+      "size_bytes_actual": 4323132215
     },
     {
       "id": "laf-usb:IDAHO-VAULT:2026:2_files_IR_Special_Media_Manager",
@@ -357,7 +389,8 @@
       "size_bytes": 4187017216,
       "checksum": {
         "algorithm": "sha256",
-        "value": null
+        "value": "3ed797fb9fcc91a9d262c777b2e4e9250d6d98dbb4330e35c6b61465eeb03ff8",
+        "note": "OID from git-lfs object store (size delta 1678KB)"
       },
       "verification_state": "pending",
       "sensitivity": "private",
@@ -365,7 +398,8 @@
       "notes": "Zip archive from Idaho Reports Special Media Manager. Internal production archive.",
       "related": [
         "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
-      ]
+      ],
+      "size_bytes_actual": 4185339170
     },
     {
       "id": "laf-usb:IDAHO-VAULT:2026:IRIC0000_HD1080",
@@ -378,7 +412,8 @@
       "size_bytes": 4186701824,
       "checksum": {
         "algorithm": "sha256",
-        "value": null
+        "value": "237078a19b25c5da81fbbc93de20571fb4aef70ee299ffd65a5781fdbbabb95b",
+        "note": "OID from git-lfs object store (size delta 2300KB)"
       },
       "verification_state": "pending",
       "sensitivity": "private",
@@ -386,7 +421,8 @@
       "notes": "Idaho Reports production file (IRIC series). Internal production.",
       "related": [
         "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
-      ]
+      ],
+      "size_bytes_actual": 4184401533
     },
     {
       "id": "laf-usb:IDAHO-VAULT:2026:260313_jloc_1215PM",
@@ -399,7 +435,8 @@
       "size_bytes": 3897753600,
       "checksum": {
         "algorithm": "sha256",
-        "value": null
+        "value": "a0b01ad59e9dbe74081cf3ba4a825417d673f1d150ad7780c52da8abeb1b2705",
+        "note": "OID from git-lfs object store (size delta 1123KB)"
       },
       "verification_state": "pending",
       "sensitivity": "publishable",
@@ -407,7 +444,8 @@
       "notes": "JLOC (Joint Legislative Oversight Committee) meeting 2026-03-13. Public record.",
       "related": [
         "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
-      ]
+      ],
+      "size_bytes_actual": 3898876766
     },
     {
       "id": "laf-usb:IDAHO-VAULT:2026:JFAC_Panel_Fullv2",
@@ -420,15 +458,17 @@
       "size_bytes": 3779297280,
       "checksum": {
         "algorithm": "sha256",
-        "value": null
+        "value": "677977b23d64cced06b38717b59671b6e362f065bb5ac58ef262c37b9584b667",
+        "note": "OID from git-lfs object store (size delta 3772KB)"
       },
       "verification_state": "pending",
       "sensitivity": "publishable",
       "routing_class": "public-record",
-      "notes": "JFAC panel recording, version 2. Public record. Note: JFAC_Panel_Full.mp4 is near-duplicate — verify before uploading both.",
+      "notes": "JFAC panel recording, version 2. Public record. Note: JFAC_Panel_Full.mp4 is near-duplicate â€” verify before uploading both.",
       "related": [
         "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
-      ]
+      ],
+      "size_bytes_actual": 3775524742
     },
     {
       "id": "laf-usb:IDAHO-VAULT:2026:JFAC_Panel_Full",
@@ -441,15 +481,17 @@
       "size_bytes": 3779297280,
       "checksum": {
         "algorithm": "sha256",
-        "value": null
+        "value": "a39935ca93952b48a367f7ccaa5d97d963470ee2e0216693fafb16730f7f7e32",
+        "note": "OID from git-lfs object store (size delta 2980KB)"
       },
       "verification_state": "pending",
       "sensitivity": "publishable",
       "routing_class": "public-record",
-      "notes": "JFAC panel recording. Identical size to JFAC_Panel_Fullv2 — SHA256 comparison recommended before uploading both to IA.",
+      "notes": "JFAC panel recording. Identical size to JFAC_Panel_Fullv2 â€” SHA256 comparison recommended before uploading both to IA.",
       "related": [
         "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
-      ]
+      ],
+      "size_bytes_actual": 3782277295
     },
     {
       "id": "laf-usb:IDAHO-VAULT:2026:OI3502_1080HD",
@@ -462,7 +504,8 @@
       "size_bytes": 3542067200,
       "checksum": {
         "algorithm": "sha256",
-        "value": null
+        "value": "3c9c0ca3c82d83ed20e8b5672af6d981c0d60185f6810b9d08e6a320e1c45885",
+        "note": "OID from git-lfs object store (size delta 115KB)"
       },
       "verification_state": "pending",
       "sensitivity": "private",
@@ -470,7 +513,8 @@
       "notes": "Idaho Reports production file (OI series). Internal production.",
       "related": [
         "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
-      ]
+      ],
+      "size_bytes_actual": 3541951659
     },
     {
       "id": "laf-usb:IDAHO-VAULT:2026:OI3704_1080HD",
@@ -483,7 +527,8 @@
       "size_bytes": 3489464320,
       "checksum": {
         "algorithm": "sha256",
-        "value": null
+        "value": "52ec8833e343db35e98182b0d0acba21b451502c24332cc275f12b38c590dc49",
+        "note": "OID from git-lfs object store (size delta 999KB)"
       },
       "verification_state": "pending",
       "sensitivity": "private",
@@ -491,7 +536,8 @@
       "notes": "Idaho Reports production file (OI series). Internal production.",
       "related": [
         "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
-      ]
+      ],
+      "size_bytes_actual": 3490463748
     },
     {
       "id": "laf-usb:IDAHO-VAULT:2026:OI3304_HD",
@@ -504,7 +550,8 @@
       "size_bytes": 3467862016,
       "checksum": {
         "algorithm": "sha256",
-        "value": null
+        "value": "ca594b61b9e698fea0a720a548fa2e13159196925820aa55f2bea6c1f9081072",
+        "note": "OID from git-lfs object store (size delta 3578KB)"
       },
       "verification_state": "pending",
       "sensitivity": "private",
@@ -512,7 +559,8 @@
       "notes": "Idaho Reports production file (OI series). Internal production.",
       "related": [
         "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
-      ]
+      ],
+      "size_bytes_actual": 3464283310
     },
     {
       "id": "laf-usb:IDAHO-VAULT:2026:260227_jfac_0800AM",
@@ -525,7 +573,8 @@
       "size_bytes": 3229614080,
       "checksum": {
         "algorithm": "sha256",
-        "value": null
+        "value": "17d904fe7ce5b6b87a1ca7c272b8a1347b9de3dd216d997a4b0ec1cf3c302717",
+        "note": "OID from git-lfs object store (size delta 5549KB)"
       },
       "verification_state": "pending",
       "sensitivity": "publishable",
@@ -533,7 +582,8 @@
       "notes": "JFAC meeting 2026-02-27. Public record.",
       "related": [
         "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
-      ]
+      ],
+      "size_bytes_actual": 3235163364
     },
     {
       "id": "laf-usb:IDAHO-VAULT:2026:MVI_1487",
@@ -546,7 +596,8 @@
       "size_bytes": 3145728000,
       "checksum": {
         "algorithm": "sha256",
-        "value": null
+        "value": "0b1a625a5c86f12141aae130eaf5d0ea934f1b5139b89ae346942cac8fab01b4",
+        "note": "OID from git-lfs object store (size delta 234KB)"
       },
       "verification_state": "pending",
       "sensitivity": "unknown",
@@ -554,7 +605,8 @@
       "notes": "Canon camera clip (MVI series). Content unknown without playback. Could be field footage (public) or interview (private).",
       "related": [
         "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
-      ]
+      ],
+      "size_bytes_actual": 3145962112
     },
     {
       "id": "laf-usb:IDAHO-VAULT:2026:260220_jfac_0800AM",
@@ -567,7 +619,8 @@
       "size_bytes": 3082321920,
       "checksum": {
         "algorithm": "sha256",
-        "value": null
+        "value": "c69a68a5ab640ddea18dfc5c6c889f793a08af4f974935c3bd03a4c3d69f432e",
+        "note": "OID from git-lfs object store (size delta 3503KB)"
       },
       "verification_state": "pending",
       "sensitivity": "publishable",
@@ -575,7 +628,8 @@
       "notes": "JFAC meeting 2026-02-20. Public record.",
       "related": [
         "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
-      ]
+      ],
+      "size_bytes_actual": 3085825139
     },
     {
       "id": "laf-usb:IDAHO-VAULT:2026:260303_schr_0130PM",
@@ -588,7 +642,8 @@
       "size_bytes": 2906521600,
       "checksum": {
         "algorithm": "sha256",
-        "value": null
+        "value": "03c13a286ea533e5ed3ee1b48ae0cc1f9ebf3f578671703fb7906079801393f3",
+        "note": "OID from git-lfs object store (size delta 5397KB)"
       },
       "verification_state": "pending",
       "sensitivity": "publishable",
@@ -596,7 +651,8 @@
       "notes": "Senate Commerce and Human Resources (SCHR) committee meeting 2026-03-03. Public record.",
       "related": [
         "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
-      ]
+      ],
+      "size_bytes_actual": 2911919006
     },
     {
       "id": "laf-usb:IDAHO-VAULT:2026:260309_hjud_0130PM",
@@ -609,7 +665,8 @@
       "size_bytes": 2748317696,
       "checksum": {
         "algorithm": "sha256",
-        "value": null
+        "value": "df5a42b615efbaf923eb2d14e93d83d5ccfa62721890ac4a54539c444eb16534",
+        "note": "OID from git-lfs object store (size delta 649KB)"
       },
       "verification_state": "pending",
       "sensitivity": "publishable",
@@ -617,7 +674,8 @@
       "notes": "House Judiciary (HJUD) committee meeting 2026-03-09. Public record.",
       "related": [
         "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
-      ]
+      ],
+      "size_bytes_actual": 2748966715
     },
     {
       "id": "laf-usb:IDAHO-VAULT:2026:260223_jfac_0800AM",
@@ -630,7 +688,8 @@
       "size_bytes": 2748317696,
       "checksum": {
         "algorithm": "sha256",
-        "value": null
+        "value": "d0c0fae53aec19687a7a57c66b9c1cef49282526dda8378d41f117b90315edef",
+        "note": "OID from git-lfs object store (size delta 17697KB)"
       },
       "verification_state": "pending",
       "sensitivity": "publishable",
@@ -638,7 +697,8 @@
       "notes": "JFAC meeting 2026-02-23. Public record.",
       "related": [
         "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
-      ]
+      ],
+      "size_bytes_actual": 2766014927
     },
     {
       "id": "laf-usb:IDAHO-VAULT:2026:FightOligarchyRally",
@@ -651,7 +711,8 @@
       "size_bytes": 2717908992,
       "checksum": {
         "algorithm": "sha256",
-        "value": null
+        "value": "c9d525fddca6fadb71512abb1b35aa5f20ed802e46a6002043683812e2357597",
+        "note": "OID from git-lfs object store (size delta 3369KB)"
       },
       "verification_state": "pending",
       "sensitivity": "publishable",
@@ -659,7 +720,8 @@
       "notes": "Public rally recording. Public record journalism source.",
       "related": [
         "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
-      ]
+      ],
+      "size_bytes_actual": 2721278254
     },
     {
       "id": "laf-usb:IDAHO-VAULT:2026:IDRE5406HDBA_MM",
@@ -672,7 +734,8 @@
       "size_bytes": 2664456192,
       "checksum": {
         "algorithm": "sha256",
-        "value": null
+        "value": "686fd4cf976e041acffff2f4f46fa96371be37b89aa1d6b9b7f392dc924383e6",
+        "note": "OID from git-lfs object store (size delta 3699KB)"
       },
       "verification_state": "pending",
       "sensitivity": "private",
@@ -680,7 +743,8 @@
       "notes": "Idaho Reports Episode production file (IDRE series). Internal production.",
       "related": [
         "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
-      ]
+      ],
+      "size_bytes_actual": 2660757127
     },
     {
       "id": "laf-usb:IDAHO-VAULT:2026:IDRE5406HDBA_MMv2",
@@ -693,15 +757,17 @@
       "size_bytes": 2664456192,
       "checksum": {
         "algorithm": "sha256",
-        "value": null
+        "value": "96dd028b804731d9b92cf122664c803800745629526bb13ba5fa892d91c88ce3",
+        "note": "OID from git-lfs object store (size delta 3668KB)"
       },
       "verification_state": "pending",
       "sensitivity": "private",
       "routing_class": "production-private",
-      "notes": "Idaho Reports Episode production file v2 (IDRE series). Identical size to v1 — SHA256 comparison recommended.",
+      "notes": "Idaho Reports Episode production file v2 (IDRE series). Identical size to v1 â€” SHA256 comparison recommended.",
       "related": [
         "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
-      ]
+      ],
+      "size_bytes_actual": 2660787227
     },
     {
       "id": "laf-usb:IDAHO-VAULT:2026:MVI_1486",
@@ -714,7 +780,8 @@
       "size_bytes": 2566914048,
       "checksum": {
         "algorithm": "sha256",
-        "value": null
+        "value": "f17496b7e291e7d2b7b91a5cdbb0ed5daca2f1c27eea69f70b3f8949289586f7",
+        "note": "OID from git-lfs object store (size delta 3504KB)"
       },
       "verification_state": "pending",
       "sensitivity": "unknown",
@@ -722,7 +789,8 @@
       "notes": "Canon camera clip (MVI series). Content unknown without playback.",
       "related": [
         "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
-      ]
+      ],
+      "size_bytes_actual": 2563409552
     },
     {
       "id": "laf-usb:IDAHO-VAULT:2026:female-hand-touch-screen",
@@ -735,15 +803,17 @@
       "size_bytes": 2461696000,
       "checksum": {
         "algorithm": "sha256",
-        "value": null
+        "value": "5a77101a6929ebcec8b1ffd3d5675d817ee242659ee76c3b622791e89c194b42",
+        "note": "OID from git-lfs object store (size delta 1377KB)"
       },
       "verification_state": "pending",
       "sensitivity": "private",
       "routing_class": "production-private",
-      "notes": "Stock/B-roll footage (UTC timestamp in filename is stock site format). Licensed stock — do NOT upload to Internet Archive. GCS cold storage.",
+      "notes": "Stock/B-roll footage (UTC timestamp in filename is stock site format). Licensed stock â€” do NOT upload to Internet Archive. GCS cold storage.",
       "related": [
         "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
-      ]
+      ],
+      "size_bytes_actual": 2463073764
     },
     {
       "id": "laf-usb:IDAHO-VAULT:2026:MedicaidPanelFull",
@@ -756,15 +826,17 @@
       "size_bytes": 2385256448,
       "checksum": {
         "algorithm": "sha256",
-        "value": null
+        "value": "3b8c53c0c76754d428e02369a703999aba651dca5319aa5c37537046f60222b2",
+        "note": "OID from git-lfs object store (size delta 5249KB)"
       },
       "verification_state": "pending",
       "sensitivity": "unknown",
       "routing_class": "staging-pending",
-      "notes": "Medicaid panel recording. Could be public legislative hearing (→ Internet Archive) or private production panel (→ GCS). Logan must confirm.",
+      "notes": "Medicaid panel recording. Could be public legislative hearing (â†’ Internet Archive) or private production panel (â†’ GCS). Logan must confirm.",
       "related": [
         "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
-      ]
+      ],
+      "size_bytes_actual": 2380006846
     },
     {
       "id": "laf-usb:IDAHO-VAULT:2026:250318_slgt_0200PM",
@@ -777,7 +849,8 @@
       "size_bytes": 2189426688,
       "checksum": {
         "algorithm": "sha256",
-        "value": null
+        "value": "dcaa2272e7d62cef285d1612bcf326bdfbf0b90648c19a70e6b30cac3ae11a48",
+        "note": "OID from git-lfs object store (size delta 3779KB)"
       },
       "verification_state": "pending",
       "sensitivity": "publishable",
@@ -785,7 +858,8 @@
       "notes": "SLGT committee meeting 2025-03-18. Public record legislature hearing.",
       "related": [
         "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
-      ]
+      ],
+      "size_bytes_actual": 2193206597
     },
     {
       "id": "laf-usb:IDAHO-VAULT:2026:MVI_1484",
@@ -798,7 +872,8 @@
       "size_bytes": 2159542272,
       "checksum": {
         "algorithm": "sha256",
-        "value": null
+        "value": "9ff604b21c183c8e7301b2fc42dade21b0483c98e34159efb4309192820b4197",
+        "note": "OID from git-lfs object store (size delta 538KB)"
       },
       "verification_state": "pending",
       "sensitivity": "unknown",
@@ -806,7 +881,8 @@
       "notes": "Canon camera clip (MVI series). Content unknown without playback.",
       "related": [
         "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
-      ]
+      ],
+      "size_bytes_actual": 2160080300
     }
   ],
   "routing_summary": {
@@ -816,24 +892,46 @@
     "total": 38
   },
   "items_requiring_logan_review": [
-    "20240116_140342.mp4 — device timestamp, contents unknown",
-    "Woodward-Full.mp4 — subject name only, public or private?",
-    "MVI_1487.MOV — Canon camera clip, content unknown",
-    "MVI_1486.MOV — Canon camera clip, content unknown",
-    "MVI_1484.MOV — Canon camera clip, content unknown",
-    "Medicaid Panel Full.mp4 — hearing or production panel?"
+    "20240116_140342.mp4 â€” device timestamp, contents unknown",
+    "Woodward-Full.mp4 â€” subject name only, public or private?",
+    "MVI_1487.MOV â€” Canon camera clip, content unknown",
+    "MVI_1486.MOV â€” Canon camera clip, content unknown",
+    "MVI_1484.MOV â€” Canon camera clip, content unknown",
+    "Medicaid Panel Full.mp4 â€” hearing or production panel?"
   ],
   "first_transfer_candidates": [
     "Any publishable file once Logan approves routing and rclone internetarchive remote is configured."
   ],
-  "duplicate_pairs_to_verify": [
-    [
-      "JFAC Panel Full.mp4",
-      "JFAC Panel Fullv2.mp4"
-    ],
-    [
-      "IDRE5406HDBA_MM.mp4",
-      "IDRE5406HDBA_MMv2.mp4"
-    ]
+  "unmatched_lfs_objects": [
+    {
+      "oid": "77cc8b8dea6e6090",
+      "size_gib": 1.87,
+      "note": "below HANDOFF threshold, unknown"
+    },
+    {
+      "oid": "6a332745506dad8d",
+      "size_gib": 1.98,
+      "note": "below HANDOFF threshold, unknown"
+    },
+    {
+      "oid": "d0c0fae53aec1968",
+      "size_gib": 2.58,
+      "note": "possible 260223_jfac alt version, 17.7MB off"
+    },
+    {
+      "oid": "13be547422e9f6a4",
+      "size_gib": 3.7,
+      "note": "no manifest match — Logan to identify"
+    },
+    {
+      "oid": "12d56583f86d8ab4",
+      "size_gib": 15.7,
+      "note": "large unknown — possible Sony MXF not in HANDOFF"
+    },
+    {
+      "oid": "21935e1e1fd4afb1",
+      "size_gib": 16.43,
+      "note": "large unknown — possible Sony MXF not in HANDOFF"
+    }
   ]
 }
