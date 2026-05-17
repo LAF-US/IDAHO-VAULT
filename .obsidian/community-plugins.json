@@ -1,5 +1,4 @@
 [
-  "obsidian-git",
   "obsidian-linter",
   "roygbiv-day-accent",
   "periodic-notes",
@@ -43,6 +42,5 @@
   "quickadd",
   "obsidian-tidy-footnotes",
   "time-ruler",
-  "translate",
-  "fit"
+  "translate"
 ]
