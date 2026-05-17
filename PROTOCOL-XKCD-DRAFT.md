@@ -38,6 +38,8 @@ authority: LOGAN
 **Proposed by:** CODE AUTHORITY session (2026-03-17)
 **Authority:** Subordinate to CONSTITUTION. Extends PROTOCOL.
 
+**2026-05-17 note:** Logan approved a minimal active implementation for live Mac/Windows and cross-agent handoffs. See [[!-XKCD-MINIMAL-HANDOFF-2026-05-17]]. The full draft remains unpromoted unless Logan separately adopts it into canonical governance.
+
 ---
 
 > *"The single biggest problem in communication is the illusion that it has taken place."*

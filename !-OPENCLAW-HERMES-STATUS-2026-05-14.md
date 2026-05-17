@@ -5,6 +5,9 @@ Related:
 - [[!-MAC-SETUP-STATUS-2026-04-26]]
 - [[IMPL-MESH-OPENROUTER-2026-04-24]]
 - [[SOURCES-OPENCLAW-OLLAMA-DIAGNOSTICS-2026-05-07]]
+- [[!-OPENCLAW-HERMES-MAC-WINDOWS-STABILITY-2026-05-17]]
+
+Successor note: [[!-OPENCLAW-HERMES-MAC-WINDOWS-STABILITY-2026-05-17]] records the completed Mac/Windows OpenClaw tunnel, node pairing, loopback hardening, and stability test results.
 
 ## Current OpenClaw State
 
