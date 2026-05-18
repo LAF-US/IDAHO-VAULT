@@ -17,6 +17,8 @@ related:
 - canon
 authority: LOGAN
 ---
+> 2026-05-18 correction: historical/persona note. The "XKCD-1883" phrase below is metaphorical residue, not a live XKCD protocol reference. Logan clarified that XKCD points to the standards-proliferation warning.
+
 CANON: BOOKS ; STROUD
 CLERK'S REPORT: CANONICAL SYNC
 TO: Presiding Justice LOGAN
