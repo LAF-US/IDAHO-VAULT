@@ -59,6 +59,18 @@ class Finding:
     rule: str
 
 
+def is_allowed_content_match(rule: str, line: str) -> bool:
+    """Allow narrow, explicit non-secret patterns without muting real values."""
+    if "secret-pattern: allow" in line:
+        return True
+    if rule != "generic_secret_assignment":
+        return False
+    return bool(
+        re.search(r"\bprocess\.env\.[A-Z0-9_]+\b", line)
+        or re.search(r"(?i)\breplace-with-[A-Za-z0-9_-]+\b", line)
+    )
+
+
 def run_git(args: list[str]) -> subprocess.CompletedProcess[str]:
     return subprocess.run(
         ["git", *args],
@@ -127,6 +139,8 @@ def content_findings(path: str, data: bytes) -> list[Finding]:
     for line_number, line in enumerate(text.splitlines(), start=1):
         for rule, pattern in SECRET_CONTENT_PATTERNS.items():
             if pattern.search(line):
+                if is_allowed_content_match(rule, line):
+                    continue
                 findings.append(Finding(path=path, line=line_number, rule=rule))
     return findings
 
