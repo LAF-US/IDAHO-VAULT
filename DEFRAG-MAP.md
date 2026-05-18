@@ -26,7 +26,7 @@ status: live
 
 | Folder | Size | Disposition |
 |---|---|---|
-| `Documents\` | 317 GB | Being pushed → INGEST now (~7% done) |
+| `Documents\` | 317 GB | INGEST running — 32% objects transferred as of ~21:09; LFS blobs are bulk of remaining size. Check `D:\rclone-logs\documents-resume.log`. |
 | `Desktop\` (SCRATCH FOLDER) | 38 GB | Being pushed → INGEST now |
 | `Videos\` | 8.6 GB | Being pushed → INGEST now |
 | `Creative Cloud Files …avid4@idahoptv.org…\` | 6.32 GB | Being pushed → INGEST now (work Adobe assets) |
@@ -214,4 +214,5 @@ Active journalism folders — work-managed by Idaho PTV, NOT for personal consol
 | 2026-05-12T18:00 | Updated INGEST status; investigated Dropbox gap (no shared folders via API); identified OneDrive Imports as gdrive-personal duplicate; updated pull priority stack | Claude (Windows) |
 | 2026-05-12T18:35 | Resumed Documents transfer (321 GB LFS blobs); clarified blockers requiring Logan vs MacBook action | Claude (Windows) |
 | 2026-05-12T19:50 | Closed open questions: Takeout confirmed Google Photos export (2026-05-03); Photos folder is manual personal media; Camera Uploads date range 2025-09–2026-05; Archive contents identified | Claude (Windows) |
+| 2026-05-12T21:10 | Updated Documents INGEST status (32% objects, running); memory files updated with key findings; branch returned to main | Claude (Windows) |
 | | *(MacBook Claude: add your entry here)* | |

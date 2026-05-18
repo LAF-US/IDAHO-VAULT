@@ -1,8 +1,9 @@
 name: Vault Ingest
 
 on:
-  schedule:
-    - cron: '0 12 * * *'
+  # LAF-USB ingest suspended — re-enable schedule when pipeline is active
+  # schedule:
+  #   - cron: '0 12 * * *'
   workflow_dispatch:
 
 jobs:
