@@ -7,11 +7,19 @@ related:
   - .openclaw/openclaw.json
 ---
 
-# BEEFSTACK — Model Routing Architecture
+# BEEFSTACK — Model Routing Preferences and Redundancy Architecture
 
 **Principle:** Redundancy on redundancy on redundancy. Belts and suspenders and a third thing.
 
-The BEEFSTACK is the live model routing configuration for the OpenClaw gateway on `logan-zbfury` (Windows / ZBFURY). It governs which language model handles any given agentic request — local-first, Mistral-first, with independent cloud fallback legs so no single provider outage kills the Device.
+The BEEFSTACK is Logan's stated model-calling preference architecture. It is not a Windows-only configuration, and `logan-zbfury` was only the first machine where the stack was documented and exercised.
+
+The stool has three legs:
+
+1. **Ollama** — local-first model calls and privacy floor.
+2. **OpenRouter** — broad cloud routing, fallback breadth, and provider resilience.
+3. **OpenCode** — coding/agent execution interface for complex implementation work.
+
+The provider preferences sit on top of that stool. The goal is to keep work moving when weak local hardware chokes on a local model, when a cloud provider hits rate limits, or when an API/provider path fails. Redundancy is the design, not an incidental convenience.
 
 ---
 
@@ -43,58 +51,87 @@ Logan's canonical agentic LLM provider rankings, in order of preference:
 
 ## The Three-Legged Stool
 
-The BEEFSTACK routes through three independent legs. If Leg 1 fails completely, Leg 2 catches it. If Leg 2 fails, Leg 3 catches it. Deep local anchors sit beneath all three as the floor.
+The BEEFSTACK rests on three independent tool/runtime legs. Preferences and model families are stacked above those legs.
 
 ```
-PRIMARY ──────────────────────────────────────────────────────────
-  ollama/magistral:latest              Local Mistral reasoning model
+LEG 1 — OLLAMA ──────────────────────────────────────────────────
+  Local-first calls
+  Simple/private/offline work
+  Mistral-family local preference where hardware can carry it
 
-LEG 1 — LOCAL OLLAMA (Mistral-first) ────────────────────────────
+LEG 2 — OPENROUTER ──────────────────────────────────────────────
+  Cloud fallback breadth
+  Mistral / Claude / ChatGPT / other allowed families through one router
+  Rate-limit and provider-outage resilience
+
+LEG 3 — OPENCODE ────────────────────────────────────────────────
+  Coding and agent execution interface
+  Complex implementation workflows
+  Uses configured local/cloud providers without making one provider the whole stack
+```
+
+The stool should be portable across macOS, Windows, and Linux. Individual model availability may differ by machine, but the routing principle stays stable.
+
+## Preference Stack on Top
+
+The current model-family preference stack is:
+
+```
+1. Mistral
+2. Claude / ChatGPT-Codex
+3. Perplexity / Grok
+4. Meta-Llama
+5. Proton-Lumo
+6. Kimi / DeepSeek
+7. Copilot
+```
+
+The preference stack is not the stool. Mistral-first means "prefer Mistral when the selected leg can use it safely and reliably," not "make every leg a Mistral-specific route."
+
+## Example Routing Shape
+
+The exact live model list can vary by machine, but the intended shape is:
+
+```
+LOCAL FIRST / OLLAMA ────────────────────────────────────────────
+  ollama/magistral:latest              Local Mistral reasoning model
   ollama/devstral:latest               Local Mistral coding model
   ollama/mistral-small:latest          Local Mistral fast/light
   ollama/mistral-nemo:latest           Local Mistral efficient
   ollama/mistral:latest                Local Mistral base
 
-LEG 2 — MISTRAL API DIRECT ──────────────────────────────────────
-  mistral/magistral-small              Mistral cloud reasoning
-  mistral/devstral-medium-latest       Mistral cloud coding
-  mistral/codestral-latest             Mistral cloud code-specialist
-  mistral/mistral-large-latest         Mistral cloud heavyweight
+CLOUD ROUTING / OPENROUTER ──────────────────────────────────────
+  openrouter/mistralai/*               Preferred cloud Mistral route
+  openrouter/anthropic/*               Claude fallback route
+  openrouter/openai/*                  ChatGPT fallback route
+  openrouter/x-ai/*                    Grok fallback route when allowed
+  openrouter/meta-llama/*              Llama fallback route when useful
 
-LEG 3a — CLAUDE (dual-route) ────────────────────────────────────
-  anthropic/claude-sonnet-4-6          Direct Anthropic API
-  openrouter/anthropic/claude-sonnet-4-6  Claude via OpenRouter
+CODING EXECUTION / OPENCODE ─────────────────────────────────────
+  OpenCode uses configured providers/models for complex coding tasks.
+  Prefer Mistral, then Claude/ChatGPT-Codex, subject to tool-call support,
+  rate limits, cost, privacy, and task fit.
 
-LEG 3b — GPT-5 / CODEX (three tiers) ───────────────────────────
-  codex/gpt-5.5                        Codex GPT-5 flagship
-  codex/gpt-5.2                        Codex GPT-5 stable
-  codex/gpt-5.4-mini                   Codex GPT-5 light
-
-LEG 3c — MISTRAL VIA OPENROUTER (third route to Mistral) ────────
-  openrouter/mistralai/mistral-large-2411
-  openrouter/mistralai/mistral-small-2603
-
-DEEP LOCAL ANCHORS (offline floor) ──────────────────────────────
+DEEP LOCAL ANCHORS ──────────────────────────────────────────────
   ollama/mixtral:latest                26GB local MoE
   ollama/mistral-large:latest          73GB local anchor
 ```
 
-**Fallback count:** 17 models across 3 independent cloud legs + local floor.
+**Mistral redundancy:** reachable through local Ollama and cloud routing where available.
 
-**Mistral redundancy:** Reachable 4 independent ways (Ollama local → Mistral API direct → OpenRouter → deep Ollama).
-
-**Claude redundancy:** Reachable 2 independent ways (direct Anthropic API + OpenRouter).
+**Claude / ChatGPT redundancy:** reachable through OpenRouter and coding-agent interfaces where configured.
 
 ---
 
 ## Why This Shape
 
-- **Local-first** keeps sensitive vault work off cloud logs by default
-- **Mistral at primary + legs 1 & 2** honors provider ranking without sacrificing resilience
-- **Dual-route Claude** means Anthropic API outage ≠ Claude outage
-- **Three Codex tiers** give cost/capability flex within the GPT-5 family
-- **Third Mistral route via OpenRouter** means Leg 3c independently reaches Mistral even if Leg 2 (direct API) is down
-- **73GB local anchor** is the last line — no internet required, no provider dependency
+- **Local-first** keeps sensitive vault work off cloud logs by default.
+- **OpenRouter** prevents one cloud provider, rate limit, or API outage from blocking work.
+- **OpenCode** keeps complex coding workflows available as a distinct execution surface.
+- **Mistral-first preferences** honor Logan's preferred model family without confusing model families for architecture legs.
+- **Cloud fallback** handles weak local hardware, missing local models, slow inference, and memory pressure.
+- **Local fallback** handles cloud outages, rate limits, provider errors, and connectivity loss.
+- **Deep local anchors** are the last line when internet and provider paths are unavailable.
 
 ---
 
@@ -118,7 +155,7 @@ Config path is OS-agnostic — `openclaw` resolves `~/.openclaw/` correctly on m
 ~/.openclaw/openclaw.json  →  agents.defaults.model
 ```
 
-All model IDs in the BEEFSTACK use provider-prefixed strings (`ollama/`, `mistral/`, `openrouter/`, `codex/`, `anthropic/`) that are resolved by the OpenClaw gateway — no OS-specific paths in the model chain itself.
+All model IDs in the BEEFSTACK should use provider-prefixed strings (`ollama/`, `openrouter/`, `opencode/` where supported by the caller, and provider-native IDs beneath OpenRouter) that are resolved by the calling runtime — no OS-specific paths in the model chain itself.
 
 To inspect the live stack (any OS):
 ```bash
@@ -150,11 +187,11 @@ Ollama models are portable — `ollama pull <model>` works identically on macOS,
 
 | Model | Size | Status |
 |-------|------|--------|
-| ollama/magistral:latest | 14 GB | PRIMARY |
-| ollama/devstral:latest | 14 GB | Leg 1 |
-| ollama/mistral-small:latest | 14 GB | Leg 1 |
-| ollama/mistral-nemo:latest | 7.1 GB | Leg 1 |
-| ollama/mistral:latest | 4.4 GB | Leg 1 |
+| ollama/magistral:latest | 14 GB | Preferred local reasoner |
+| ollama/devstral:latest | 14 GB | Preferred local coder |
+| ollama/mistral-small:latest | 14 GB | Local fast/light |
+| ollama/mistral-nemo:latest | 7.1 GB | Local efficient |
+| ollama/mistral:latest | 4.4 GB | Local base |
 | ollama/mixtral:latest | 26 GB | Deep anchor |
 | ollama/mistral-large:latest | 73 GB | Deep anchor |
 | ollama/gpt-oss:latest | 13 GB | Unverified — not in stack |
