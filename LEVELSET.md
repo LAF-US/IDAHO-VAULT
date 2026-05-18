@@ -9,7 +9,7 @@ related:
   - PROTOCOL
   - CONSTITUTION
   - AGENTS
-  - LEVELSET-CURRENT
+  - LEVELSET-CURRENT-deprecated
   - LEVELSET-2026-04-27
   - DECISIONS
   - REPORT
@@ -31,6 +31,12 @@ related:
 LEVELSET is the **session briefing and context-recording protocol** for the IDAHO-VAULT agentic swarm.
 
 It serves as the moment of pause and orientation — the equivalent of gavel-down before committee work begins. LEVELSET captures the current state of the world so that subsequent actions have a durable anchor and future agents can orient without stale assumptions.
+
+**Correction, 2026-05-17:** `LEVELSET-CURRENT.md` is deprecated as an active
+output surface. It caused active confusion by presenting a momentary record as
+a live current-state authority. Do not update, archive, rotate, or use
+`LEVELSET-CURRENT.md` as the target for new LEVELSET work. Use an explicit,
+dated, scoped snapshot or handoff note instead.
 
 ---
 
@@ -81,7 +87,7 @@ LEVELSET executes:
 | Document | Relationship |
 |---|---|
 | `LEVELSET.md` (this file) | Protocol definition — what LEVELSET is and does |
-| `LEVELSET-CURRENT.md` | Rolling live snapshot — current state of the ecosystem |
+| `LEVELSET-CURRENT.md` | Deprecated historical surface — do not update or use as active current state |
 | `LEVELSET-2026-04-27.md` | Archived status reports — historical ground truths |
 | `CONSTITUTION.md` | Authoritative governance — defines LEVELSET in Section III |
 | `AGENTS.md` / `!/AGENTS.md` | Agent registry — confirms authorized voices |
@@ -138,7 +144,8 @@ Verify operational state of:
 
 ### Step 4: Generate LEVELSET Snapshot
 
-Produce or update `LEVELSET-CURRENT.md`:
+Produce an explicit dated/scoped snapshot or handoff note. Do **not** produce,
+update, or archive `LEVELSET-CURRENT.md`.
 
 ```
 | Field | Value |
@@ -156,7 +163,8 @@ If any decisions were made during orientation, commit them to `DECISIONS.md` or 
 
 ### Step 6: Archive Previous
 
-If `LEVELSET-CURRENT.md` existed, archive it with a dated name (e.g., `LEVELSET-CURRENT-2026-04-27.md`) before updating.
+Do not archive or rotate `LEVELSET-CURRENT.md`. If a prior snapshot needs to be
+preserved, preserve the explicit dated/scoped artifact that already exists.
 
 ---
 
@@ -164,17 +172,18 @@ If `LEVELSET-CURRENT.md` existed, archive it with a dated name (e.g., `LEVELSET-
 
 | Output | Location | Purpose |
 |---|---|---|
-| LEVELSET-CURRENT.md | root | Rolling live snapshot |
+| Explicit dated/scoped snapshot | root or scoped protocol folder | Momentary record with stable date/scope |
 | Decision entries | DECISIONS.md | Durable record of choices made |
 | Handoff packages | `!/!/` | Context bundles for receiving agents |
-| Archived snapshots | root (dated) | Historical ground truths |
+| Archived snapshots | root or scoped archive path | Historical ground truths |
 
 ---
 
 ## Constraints
 
 - LEVELSET is a **recording and contextualizing device**, not a live dashboard
-- Do not accumulate doctrine in `LEVELSET-CURRENT.md` — doctrine returns to canonical governance files
+- Do not use `LEVELSET-CURRENT.md` as an active output or live dashboard
+- Do not accumulate doctrine in snapshots — doctrine returns to canonical governance files
 - The Heisenberg principle applies: the act of observing state changes state — acknowledge staleness
 - Stale assumptions are the enemy; fresh snapshots are the cure
 
@@ -193,7 +202,7 @@ This document is a **stub** under development. Adoption pending:
 
 ## See Also
 
-- `LEVELSET-CURRENT.md` — live snapshot
+- `LEVELSET-CURRENT.md` — deprecated historical surface; do not update
 - `LEVELSET-2026-04-27.md` — archived status reports
 - `PROTOCOL-SUITE-AWR.md` — AWAKEN/RISE/REPORT lifecycle
 - `CONSTITUTION.md` Section III — protocol definitions
