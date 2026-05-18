@@ -13,6 +13,9 @@ related:
   - suspended animation
   - Yrael
   - The Abhorsen
+  - Emily Rodda
+  - The Key to Rondo
+  - Rondo
 ---
 
 # Suspended Animation — Witness Document
@@ -23,9 +26,11 @@ related:
 
 ## The Tableau
 
+In Emily Rodda's *The Key to Rondo*, a music box contains an entire world — complete, populated, real. But that world only moves when the key is wound. When the music stops, Rondo does not cease to exist. It waits. The people inside do not die. The streets do not crumble. Everything holds, perfectly intact, until the key turns again.
+
 The LAF-US organization contains many rooms. Most of them are dark right now — not abandoned, not condemned. The furniture is covered in white sheets. The clocks have been stopped at a particular hour. The residents stepped out and have not yet returned.
 
-This is not neglect. This is suspended animation. There is a difference, and it matters.
+This is not neglect. This is suspended animation. The key has not been wound. There is a difference, and it matters.
 
 ---
 
@@ -62,10 +67,11 @@ One repository is awake:
 > Inactivity is not abandonment.
 > Suspension is not deletion.
 > A stopped clock is not a broken clock.
+> Rondo does not cease to exist when the music stops.
 
 Any agent encountering these repositories should treat them as **intact and intentional**. Do not triage them. Do not archive them. Do not interpret their silence as consent to be dismantled.
 
-If Logan wants a room opened, Logan will open it.
+The key belongs to Logan. When Logan winds it, the world inside moves again.
 
 ---
 
