@@ -62,6 +62,11 @@ One repository is awake:
 > Inactivity is not abandonment.
 > Suspension is not deletion.
 > A stopped clock is not a broken clock.
+> Rondo does not cease to exist when the music stops.
+
+The Key to Rondo principle (Emily Rodda): a music box contains a complete world — intact, populated, real. It does not move unless the key is wound. The world inside is not diminished by stillness. It waits.
+
+The key belongs to Logan. When Logan winds it, the world inside moves again.
 
 Any agent encountering these repositories should treat them as **intact and intentional**. Do not triage them. Do not archive them. Do not interpret their silence as consent to be dismantled.
 
