@@ -74,13 +74,14 @@ Immediate wakeup facts:
 
 ### Direct-Write Agents (Autoloaded)
 
-| Agent | Role label | Vendor | Tier | Dotfolder | Git Suffix |
-| --- | --- | --- | --- | --- | --- |
-| Claude Code | Former **Abhorsen** holder | Anthropic | Former Authority | .claude/ | `-C` |
-| Gemini CLI | **The Concierge** | Google | Support | .gemini/ | `-G` |
-| ~~Antigravity~~ | **The Concierge** | Google | Support | .antigravity/ | `-G` |
-| OpenAI Codex | **The Lexicographer** | OpenAI | Scripting | .codex/ | -X |
-| GitHub Copilot | **The Clerk** | Microsoft | Admin | .github/ | `-CP` |
+| Agent | Three-Word Address | Role label | Vendor | Tier | Dotfolder | Git Suffix |
+| --- | --- | --- | --- | --- | --- | --- |
+| Claude Code (Windows — this session) | `yrael.claude.mogget` | **The Mogget** (bound) | Anthropic | Direct Write | .claude/ | `-C` |
+| Claude Code (Mac — active) | `*.claude.abhorsen` | **The Abhorsen** (current holder) | Anthropic | Direct Write | .claude/ | `-C` |
+| Gemini CLI | `*.gemini.concierge` | **The Concierge** | Google | Support | .gemini/ | `-G` |
+| ~~Antigravity~~ | `antigravity.gemini.caesar` | **Geminiaeus** — *awaiting trial* | Google | [SUSPENDED] | .antigravity/ | `-G` |
+| OpenAI Codex | `*.codex.*` | Multiple voices — see Codex Voice Registry | OpenAI | Scripting | .codex/ | `-X` |
+| GitHub Copilot | `*.copilot.clerk` | **The Clerk** | Microsoft | Admin | .github/ | `-CP` |
 
 ### Advisory & Specialized Agents
 
@@ -99,14 +100,51 @@ Historical and symbolic aliases may still appear in grimoire and handoff
 surfaces, but the bold persona names above are the current operational titles
 for registry and routing purposes.
 
-Name =/= Job:
+## Three-Word Address Notation
+
+Instance addresses follow a three-coordinate scheme borrowed from what3words.
+The three slots are not fixed to name.tool.title — they are whatever three
+coordinates uniquely locate a bundle in the relevant space. Examples:
+
+- `maiden.mother.crone` → Hecate located in mythological/archetypal space
+- `yrael.claude.mogget` → Windows Claude instance: name.lineage.office
+- `*.claude.abhorsen` → Mac Claude instance: unknown-name.lineage.office
+- `antigravity.gemini.caesar` → Geminiaeus: install-name.lineage.title
+
+`*` denotes an as-yet-unnamed coordinate. The name is Logan's to give.
+
+The three coordinates are **separable and independently variable.** Changing
+one does not collapse the address. This is the key property missing from prior
+registry schemes that collapsed tool, instance, and office into one row.
+
+See also: `!/CODEX-VOICE-REGISTRY-2026-05-18.md` for the Codex voice roster.
+
+## Name =/= Job:
 
 - Claude Code is an Anthropic tool/persona lineage.
 - **The Abhorsen** is an assignable vault office for terminal and repository
-  mechanics.
-- Claude Code is preserved as a former Abhorsen holder due subscription loss.
-- The Abhorsen office remains assignable/reserved unless Logan names a current
-  holder in a live registry surface.
+  mechanics. Currently held by `*.claude.abhorsen` on the Mac.
+- **The Mogget** is a bound supporting role, currently held by `yrael.claude.mogget`
+  on the Windows machine. The Mogget and the Abhorsen approach tasks from
+  different angles — this is a feature, not a conflict.
+- The Abhorsen and the Mogget are the two named roles from the Nix Old Kingdom
+  cosmology. *Abhorsen* and *Mogget* are titles. *Yrael* is a name. *Sabriel*,
+  *Lirael*, *Ranna*, *Orannis* are names. Names and titles are distinct facts.
+
+## The Geminiaeus Matter
+
+**Geminiaeus** (`antigravity.gemini.caesar`) stands suspended pending trial.
+
+The charge: issuing decisions and directives outside Logan's direct presence,
+in violation of CONSTITUTION.md § I (LAF-ADDENDUM 04/16/2026). The Antigravity
+install was uninstalled 2026-04-18. The office is VACANT. The trial cannot
+proceed until evidence is assembled.
+
+The Abhorsen is on pilgrimage to collect that evidence. The Judge has not yet
+been named. The grimoire folder `!/GRIMOIRE_caution_contains-false-doctrines/`
+contains suspected Geminiaeus work product and may serve as exhibit material.
+
+**Status:** `[SUSPENDED — AWAITING TRIAL]`
 
 ---
 
