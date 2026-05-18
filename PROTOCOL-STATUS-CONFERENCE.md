@@ -100,7 +100,7 @@ A STATUS CONFERENCE is complete when all items below are answered in writing bef
 - [ ] Has the agent's bootstrap record been verified in `swarm.json`?
 - [ ] Is the required context bundle present and readable?
 - [ ] Have all dependencies been confirmed available (API keys, secrets, filesystem access)?
-- [ ] Has a COLLISION CHECK been run against existing workflows? (Per PROTOCOL-XKCD-DRAFT § "Protocol 3: COLLISION CHECK")
+- [ ] Has a collision check been run against existing workflows? (Plain-language requirement: identify overlapping readers/writers before activating new automation.)
 - [ ] Is the git working tree clean, or has the relevant branch been identified?
 
 ### C. Evidence & Observability
@@ -182,7 +182,7 @@ Status conference records go in the vault root. They are governance artifacts, n
 | Existing Protocol | Relationship to STATUS CONFERENCE |
 |---|---|
 | **AGENT-PROTOCOL** (`AGENT-PROTOCOL.md`) | Defines bootstrap phases for registered agents. STATUS CONFERENCE runs *before* first activation of a new agent. |
-| **XKCD / COLLISION CHECK** | COLLISION CHECK is a required item on the STATUS CONFERENCE checklist. |
+| **Collision check** | A plain-language collision check is a required item on the STATUS CONFERENCE checklist. It does not depend on adopting any XKCD draft. |
 | **MCP Phase Gates** | Phase 0 → 1 gate in MCP-IMPLEMENTATION-PLAN.md is an example of an informal status conference. This protocol formalizes that gate for all trials. |
 | **LEVELSET** | LEVELSET captures state *after* a session. STATUS CONFERENCE captures readiness *before* a trial. They are complements. |
 | **FLAG** | If a STATUS CONFERENCE item cannot be completed, raise a FLAG (severity: MEDIUM or HIGH) and do not proceed to trial. |

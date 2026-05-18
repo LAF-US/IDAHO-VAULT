@@ -88,6 +88,6 @@ Policy exclusions:
 - Add a durable runbook for restarting the tunnel and Windows node without leaking the gateway token.
 - Keep gateway loopback-only unless Logan explicitly approves another exposure model.
 - Prefer SSH tunnel over LAN exposure for cross-machine work.
-- Record cross-machine handoffs using [[!-XKCD-MINIMAL-HANDOFF-2026-05-17]] until Logan promotes a fuller protocol.
+- Record cross-machine handoffs in plain language. [[!-XKCD-MINIMAL-HANDOFF-2026-05-17]] is guidance, not a required protocol.
 
 ###### [["The world is quiet here."]]

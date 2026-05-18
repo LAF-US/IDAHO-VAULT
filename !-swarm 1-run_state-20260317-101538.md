@@ -1,6 +1,8 @@
 # CURRENT OBJECTIVE
 Swarm state layer v1 operational. Awaiting Logan's review.
 
+> 2026-05-18 correction: historical state file. XKCD was not adopted as a protocol suite; Logan clarified it was a standards-proliferation warning.
+
 # KNOWN FACTS
 - Vault ecosystem operational with Constitution, PROTOCOL, AGENTS, LEVELSET stack
 - XKCD protocol drafted, awaiting Logan's review

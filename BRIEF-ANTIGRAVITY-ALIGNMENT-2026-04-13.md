@@ -5,7 +5,6 @@ related:
 - AGENTS
 - CONSTITUTION
 - DECISIONS
-- XKCD
 - Threshold Report
 ---
 

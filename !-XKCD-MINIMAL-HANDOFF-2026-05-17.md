@@ -1,31 +1,36 @@
 ---
-title: "XKCD Minimal Handoff"
+title: "Plain Minimal Handoff"
 date: 2026-05-17
-status: active-minimal
+updated: 2026-05-18
+status: guidance
 authority: LOGAN
-doc_class: protocol_implementation
+doc_class: guidance
 related:
   - PROTOCOL-XKCD-DRAFT
   - VAULT-ZONES
   - "!-OPENCLAW-HERMES-MAC-WINDOWS-STABILITY-2026-05-17"
 ---
 
-# XKCD Minimal Handoff - 2026-05-17
+# Plain Minimal Handoff - 2026-05-17
 
-Logan approved a minimal implementation of [[PROTOCOL-XKCD-DRAFT]] for live Mac/Windows and cross-agent relay work.
+Logan approved a minimal handoff aid for live Mac/Windows and cross-agent relay work.
 
-This is not a full constitutional promotion of the draft. It is the smallest active operating rule needed to prevent false coordination between machines, sessions, and agents.
+This is not a full constitutional promotion of [[PROTOCOL-XKCD-DRAFT]]. It is not a new protocol suite. "XKCD" here refers to the standards-proliferation warning from xkcd 927: do not create a new standard when plain communication is enough.
 
-## Active Rule
+## Guidance
 
 No agent should assume another agent, machine, or chat session has received context unless Logan relays it or a durable vault note records it.
 
+Agents must not expand, strengthen, rename, or promote XKCD from inference. If Logan asks for protocol work, the agent should either make the specifically requested edit or mark broader ideas as proposed for Logan review.
+
+Borrowed shorthand is not active unless the receiving party has been given the protocol. Use plain language by default.
+
 ## Minimal Transfer Format
 
-Use this block when passing live operational state between agents or machines:
+Use this block when it helps. Do not require it when ordinary plain language is clearer.
 
 ```text
-XKCD TRANSFER
+PLAIN TRANSFER
 FROM:
 TO:
 CLASS: SIGNAL | REQUEST | SYNC | PATCH | ECHO
@@ -36,7 +41,7 @@ ASK:
 VERIFY:
 ```
 
-## Class Meanings
+## Optional Class Meanings
 
 - `SIGNAL`: one-way status update; no action required.
 - `REQUEST`: asks another agent or machine to act.
@@ -59,21 +64,23 @@ For OpenClaw Mac/Windows work:
 - Any state needed after the session ends belongs in a dated status, handoff, or levelset note.
 - Do not edit constitutional governance files only to capture transient coordination.
 
-## Acknowledgement Rule
+## Receipt Pattern
 
-When receiving a transfer, the receiving agent should respond with:
+When receiving a transfer, the receiving agent may respond with:
 
 ```text
-ACK:
-PARSE:
+RECEIVED:
+UNDERSTOOD:
 NEXT:
 ```
 
-This confirms receipt, states what was understood, and names the next action.
+This confirms receipt, states what was understood, and names the next action. It is a readability aid, not ritual language.
+
+Do not substitute `ACK` or other protocol abbreviations unless Logan explicitly asks for that vocabulary in the current coordination thread.
 
 ## Open Questions Deferred
 
-- Whether to batch all XKCD traffic into a log.
+- Whether to batch handoff notes into a log.
 - Whether to rename historical handoffs.
 - Whether to promote the full draft into canonical governance.
 - Whether to require self-identification in every commit message.
