@@ -52,6 +52,11 @@ date modified: Sunday, April 26th 2026, 12:30:00 pm
 
 [[CHAINFIRE]] & [[CHAINLINK]]
 
+### 2026-05-18: Emanationism Principle
+- **Decision**: Record the Emanationism Principle as active doctrine-adjacent guidance in `!/EMANATIONISM-PRINCIPLE-2026-05-18.md`.
+- **Rule**: Authority originates with Logan and must degrade into scoped, auditable, reversible capability as it passes through doctrine, registries, protocols, transports, agents, tool calls, and artifacts.
+- **Authority**: Logan direct instruction.
+
 ### 2026-04-26: TODO Merge Logic Fix
 - **Issue**: Qodo-flagged bug in `daily_rollover.py` causing duplicate task accumulation.
 - **Fix**: Updated `merge_todo_models` to dedupe and exclude completed tasks.
