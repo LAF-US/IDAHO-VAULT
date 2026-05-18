@@ -21,6 +21,7 @@
 
 .op/openrouter.env
 .op/reports/
+.op/
 .mcp-auth/
 secrets/
 vault-courier-key.json
@@ -72,7 +73,10 @@ Google Passwords.csv
 .gemini/oauth_creds.json
 .gemini/google_accounts.json
 .factory/auth.v2.*
+.factory/certs/
 .openclaw/credentials/
+.ollama/id_ed25519
+.ollama/id_ed25519.pub
 
 # ---------------------------------------------------------------------------
 # Python, JavaScript, and package runtime infrastructure
@@ -167,6 +171,7 @@ logs/
 .claude/debug/
 .claude/file-history/
 .claude/projects/
+.claude/shell-snapshots/
 .claude/worktrees/
 .claude/plugins/cache/
 **/.claude/worktrees/
@@ -251,7 +256,7 @@ logs/
 .obsidian/plugins/*/main.js
 .obsidian/plugins/*/styles.css
 .obsidian/plugins/obsidianclaw/
-.obsidian/plugins/fit/debug.log
+.obsidian/plugins/fit/debug.log*
 .obsidian/**(2)*.json
 
 !.obsidian/community-plugins.json
