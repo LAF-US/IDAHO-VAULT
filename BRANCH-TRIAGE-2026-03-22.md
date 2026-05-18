@@ -36,6 +36,8 @@ authority: LOGAN
 ---
 # Branch Triage — 2026-03-22
 
+> 2026-05-18 correction: references to XKCD branch artifacts in this triage are historical inventory only. Logan clarified that XKCD points to the standards-proliferation warning, not an adopted protocol suite.
+
 **Performed by:** TASK: resolve-merge-conflicts (Claude Code, session Ln5Cg)
 **Triggered by:** Logan's GitHub mobile app showing main in a state that didn't match desktop; open branches with merge conflicts.
 **Working branch:** `claude/resolve-merge-conflicts-Ln5Cg`

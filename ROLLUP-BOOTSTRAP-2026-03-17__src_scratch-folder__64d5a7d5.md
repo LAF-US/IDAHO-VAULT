@@ -39,6 +39,8 @@ PROTOCOLS PRODUCED (awaiting CODE AUTHORITY commit):
 - CLOSURE v0.1
 - AGENTS.md v0.2 (BOOK BLOB verified, domains sanitized)
 
+2026-05-18 correction: this is historical rollup state, not adoption. Logan clarified that XKCD was a reference to the standards-proliferation warning, not authority to create or enforce a new protocol suite.
+
 PROJECTS:
 - BOOK BLOB: Social(ist) Media -- located, vault stub created
 - GOLEMSWARM + MAGNUSNET -- Logan's Project Protocols engaged

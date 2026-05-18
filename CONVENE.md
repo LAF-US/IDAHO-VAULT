@@ -103,11 +103,11 @@ Logan names:
 - Roles (recording agent, etc.)
 - Any guests or observers
 
-### Step 3: CONVENE ACK
+### Step 3: CONVENE RECEIVED
 
 Participants acknowledge:
 ```
-CONVENE ACK
+CONVENE RECEIVED
 AGENT: [Name + persona]
 ARISE: [status]
 READY: YES / NO
@@ -135,7 +135,7 @@ Confirm participation meets requirements before proceeding.
 | Output | Location | Purpose |
 |---|---|---|
 | CONVENE declaration | Chat / signal | Calls committee to order |
-| CONVENE ACKs | agent responses | Confirms participation |
+| CONVENE RECEIVED responses | agent responses | Confirms participation |
 | Committee roster | CONFERENCE RECORD | Records composition |
 
 ---

@@ -17,6 +17,8 @@ related:
 # XKCD PROTOCOL SUITE: Multi-Personality Interaction Framework
 ## Draft v0.1 — Logan Review & Synthesis
 
+**2026-05-18 correction:** Historical draft only. Logan clarified that "XKCD" was a standards-proliferation warning, not a mandate to create a protocol suite. Do not treat this file as active coordination guidance, do not borrow its labels, and do not expand it into operating practice.
+
 ---
 
 ## PROTOCOL 1: HANDSHAKE (Persona Discovery & Binding)

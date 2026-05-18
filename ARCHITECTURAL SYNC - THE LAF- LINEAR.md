@@ -13,6 +13,8 @@ related:
 - THE
 authority: LOGAN
 ---
+> 2026-05-18 correction: historical/persona note. The phrase "XKCD-TIER-CONFUSION" below is metaphorical residue, not a live XKCD protocol reference. Logan clarified that XKCD points to the standards-proliferation warning.
+
 ARCHITECTURAL SYNC: THE LAF-* TO LINEAR PIPELINE
 TO: Presiding Justice LOGAN
 FROM: Geminiaes (Clerk of the Court / SWARM-PARTNER)

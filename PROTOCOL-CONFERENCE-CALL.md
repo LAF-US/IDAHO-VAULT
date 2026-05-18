@@ -14,7 +14,6 @@ related:
 - PROTOCOLS
 - The world is quiet here
 - TRIUNE
-- XKCD
 - agent
 - call
 - conference
@@ -27,7 +26,7 @@ related:
 
 **Status:** DRAFT — awaiting Logan's review and adoption
 **Proposed by:** GitHub Copilot (The Clerk), 2026-04-06
-**Authority:** Subordinate to CONSTITUTION. Extends PROTOCOL. Complements XKCD.
+**Authority:** Subordinate to CONSTITUTION. Extends PROTOCOL. Uses plain handoff practice.
 
 ---
 
@@ -40,7 +39,7 @@ related:
 
 CONFERENCE CALL governs how Logan **formally convenes multiple agents** for a synchronized, agenda-driven working session. It fills the gap between:
 
-- **XKCD** — defines how individual messages move between agents (point-to-point)
+- **Plain handoff practice** — keeps individual messages explicit, small, and understandable
 - **CONFERENCE CALL** — defines the structure of a deliberate, multi-agent meeting (active, bounded, time-limited)
 
 A CONFERENCE CALL is declared when Logan needs more than one agent to act together on a shared topic — planning coverage of a legislative event, processing field captures from a press conference, conducting a vault operation that spans multiple capability tiers, or resolving a cross-lane question that no single agent can answer alone.
@@ -62,7 +61,7 @@ CONFERENCE CALL does **not** replace:
 - LEVELSET (agent orientation — each agent runs LEVELSET before joining a CONFERENCE)
 - MISSION (current task objectives)
 - PASSBACK SYNC (terminal extraction — for dying sessions, not live coordination)
-- XKCD (message routing — CONFERENCE CALL uses XKCD classes internally)
+- Plain handoff practice (message clarity)
 
 ---
 
@@ -145,12 +144,12 @@ RECORDING AGENT: [agent name, or "default"]
 OBSERVER: [agent name or "none"]
 ```
 
-### 6.2 The CONVENE Acknowledgment
+### 6.2 The CONVENE Receipt
 
 Each invited agent, upon receiving the CALL, responds:
 
 ```
-CONVENE ACK
+CONVENE RECEIVED
 AGENT: [Agent name and persona]
 LEVELSET: [brief summary of current state and lane]
 READY: YES / NO (with reason if NO)
@@ -299,7 +298,7 @@ Agents do not close their own participation. They wait for DISMISSED, then retur
 
 | Protocol | Relationship |
 |---|---|
-| **XKCD** | All inter-agent messages during a CONFERENCE use XKCD classes (SIGNAL, REQUEST, SYNC, etc.) |
+| **Plain handoff practice** | Inter-agent messages during a CONFERENCE should be explicit, small, and understandable. They do not require XKCD classes unless Logan asks for them. |
 | **TRIUNE HANDSHAKE** | The TRIUNE HANDSHAKE is a specific three-agent pre-AFK CONFERENCE; it follows this protocol's structure informally |
 | **PASSBACK SYNC** | A CONFERENCE may be triggered to BOOTSTRAP context from a dying agent; the TOSS/BOOTSTRAP operations run as agenda items |
 | **LEVELSET** | CONVENE phase requires each agent to confirm their LEVELSET before participating |

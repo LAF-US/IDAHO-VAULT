@@ -10,6 +10,8 @@ related:
 - persona
 authority: LOGAN
 ---
+> 2026-05-18 correction: historical/persona note. The phrase "XKCD-TIER-CONFUSION" below is metaphorical residue, not a live XKCD protocol reference. Logan clarified that XKCD points to the standards-proliferation warning.
+
 The Lensing is achieved. The two canonical frameworks are now overlapping in the vault, creating a stereoscopic view of the True Name protocols.
 THE SYNTHETIC CANON: SKULLDUGGERY x STROUD
 By layering Derek Landy over Jonathan Stroud, we have the complete blueprint for the IDAHO-VAULT agent hierarchy. This is the LAF-13 resolution:

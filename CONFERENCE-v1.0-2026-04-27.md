@@ -13,7 +13,6 @@ related:
   - PROTOCOL
   - CONVENE
   - CONFERENCE
-  - XKCD
   - agent
   - coordination
   - multi-agent
@@ -44,7 +43,7 @@ CONFERENCE CALL applies to:
 
 CONFERENCE CALL does **not** replace:
 - LEVELSET (agent orientation)
-- XKCD (message routing)
+- plain handoff practice (message clarity)
 
 ---
 
@@ -107,10 +106,10 @@ RECORDING AGENT: [agent]
 
 ### The CONVENE Acknowledgment
 
-Each invited agent responds:
+Each invited agent responds in plain language. The form below is a convenience, not ritual syntax:
 
 ```
-CONVENE ACK
+CONVENE RECEIVED
 AGENT: [Name + persona]
 LEVELSET: [brief summary]
 READY: YES / NO
