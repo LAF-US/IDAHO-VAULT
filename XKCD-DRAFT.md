@@ -20,16 +20,18 @@ related:
 # XKCD Protocols — DRAFT
 
 *Proposed 2026-03-17 by TASK: Claude Code session*
-*Status: DRAFT — requires Logan's review and synthesis*
+*Status: HISTORICAL DRAFT — not active protocol*
 *Named for Randall Munroe's principle: if it can't fit on a napkin, it's too complex.*
+
+**2026-05-18 correction:** Logan clarified that "XKCD" was a reference to the xkcd standards-proliferation comic, not a request to create another standard. This file is historical draft material. Do not implement it, cite it as active protocol, require agents to acknowledge it, or borrow its vocabulary unless Logan explicitly revives a specific part.
 
 ---
 
-## What This Is
+## What This Was
 
-Simple coordination primitives for the vault's agent swarm. These are not replacements for LEVELSET (which handles checkpointing) or the Constitution (which handles identity and authority). These are the small, mechanical rules that prevent agents from stepping on each other.
+This was a proposal for simple coordination primitives. It is not active guidance.
 
-Think of it as traffic signals, not urban planning.
+Current guidance: use plain language, existing vault notes, and Logan's explicit direction. Do not turn this draft into a protocol suite.
 
 ---
 
@@ -164,9 +166,9 @@ These protocols are strictly mechanical coordination. They have no opinions abou
 
 ---
 
-## Implementation
+## Historical Proposed Implementation
 
-If Logan approves:
+This was a proposed implementation path, not an active instruction:
 1. This file moves to `!ADMIN/XKCD.md` (after the Monday rename)
 2. Reference added to Constitution.md under a "Coordination Protocols" section
 3. Each agent's next LEVELSET should acknowledge XKCD protocols

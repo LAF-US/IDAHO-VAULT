@@ -107,7 +107,7 @@ RECORDING AGENT: [agent]
 
 Each invited agent acknowledges:
 ```
-CONVENE ACK
+CONVENE RECEIVED
 AGENT: [Name + persona]
 LEVELSET: [brief summary]
 READY: YES / NO
