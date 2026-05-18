@@ -178,13 +178,15 @@ As of 2026-05-18, the MacBook runtime contract is:
 - Windows-ZBFURY reaches the Mac gateway through an SSH tunnel, not public gateway exposure.
 
 **Hermes Agent**
-- Primary: `ollama/devstral:latest`
+- Universal doctrine: local-first remains the desired system posture.
+- MacBook operational override: primary is `openrouter` / `mistralai/mistral-medium-3-5` because this hardware has repeatedly hung on local `devstral:latest` calls.
 - Fallback chain:
-  - `openrouter` / `mistralai/mistral-medium-3-5`
+  - `openrouter` / `mistralai/mistral-small-2603`
   - `openrouter` / `anthropic/claude-sonnet-4.6`
   - `openrouter` / `openai/gpt-5.3-codex`
   - `openrouter` / `mistralai/mistral-large-2512`
 - `OPENROUTER_API_KEY` is present in `~/.hermes/.env`; keep the source of truth in the vault's `.op/openrouter.env` / 1Password path.
+- Local Ollama remains a preferred doctrine and an explicit/manual contingency, but this MacBook should not pretend local inference is the reliable live default.
 - Gemini is allowed for TTS / Google infrastructure only. It is not part of the agentic LLM fallback chain.
 
 **OpenCode**

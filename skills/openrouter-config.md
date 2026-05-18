@@ -85,16 +85,18 @@ Use these values unless the vault explicitly updates them:
 
 ## Current Hermes contract
 
-Hermes should match the same BEEFSTACK posture:
+Hermes should match the same BEEFSTACK posture, with machine-specific routing
+allowed when local hardware cannot reliably carry live inference. On this
+MacBook, the desired local-first doctrine remains intact, but live Hermes
+messages should default to OpenRouter because local `devstral:latest` hangs.
 
 ```yaml
 model:
-  provider: ollama
-  default: ollama/devstral:latest
-  base_url: http://127.0.0.1:11434/v1
+  provider: openrouter
+  default: mistralai/mistral-medium-3-5
 fallback_providers:
   - provider: openrouter
-    model: mistralai/mistral-medium-3-5
+    model: mistralai/mistral-small-2603
   - provider: openrouter
     model: anthropic/claude-sonnet-4.6
   - provider: openrouter
