@@ -43,7 +43,7 @@ The local branch topology was surveyed, triaged, and resolved:
 Earlier in the session, before ARBORSCAPING began:
 
 - LAF-USB Object Manifest: 40 entries finalized; 3 ghost OIDs laid to rest; 2 entries added (Quinn Perry interview, XD4 MXF)
-- BEEFSTACK model routing configured and documented: 17-fallback three-legged stack, Mistral-first, local-first, banned models purged
+- BEEFSTACK model routing configured and documented: three-legged stool of Ollama + OpenRouter + OpenCode, with Logan's model-family preferences stacked on top; redundancy handles local hardware limits, cloud rate limits, API failures, and banned-model hygiene
 - OpenClaw gateway confirmed healthy; Discord security hardened (guild allowlist)
 - Suspended Animation Witness written and committed, with Key to Rondo doctrine
 - rclone transfer (322 GiB LFS objects → gdrive-personal) running in background

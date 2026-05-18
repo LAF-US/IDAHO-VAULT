@@ -31,7 +31,8 @@ python3 scripts/validate_openrouter.py
 - Materializes `.op/openrouter.env` for Codex and Claude launchers.
 - Prefers `op://...` references instead of plaintext credentials.
 - Validates the runtime contract with `scripts/validate_openrouter.py`.
-- Keeps OpenClaw aligned to the vault's live Mistral-first provider chain.
+- Keeps OpenClaw aligned to the vault's BEEFSTACK shape: Ollama +
+  OpenRouter + OpenCode, with Logan's model-family preferences layered on top.
 - Keeps model IDs in OpenRouter format, including the `mistralai/` prefix.
 
 ## Current OpenClaw contract
