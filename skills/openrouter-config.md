@@ -19,6 +19,8 @@ not in this markdown file.
 - `!/launch-codex-openrouter.cmd`
 - `!/launch-claude-openrouter.cmd`
 - `~/.openclaw/openclaw.json`
+- `~/.hermes/config.yaml`
+- `~/.hermes/.env`
 
 ## Live commands
 ```bash
@@ -54,10 +56,13 @@ Use these values unless the vault explicitly updates them:
         "apiKey": "env:OPENROUTER_API_KEY",
         "baseUrl": "https://openrouter.ai/api/v1",
         "models": [
-          {"id": "openai/gpt-4o-mini"},
-          {"id": "anthropic/claude-3.5-haiku"},
-          {"id": "mistralai/mistral-large-2411"},
-          {"id": "mistralai/mistral-small-2603"}
+          {"id": "mistralai/mistral-small-2603"},
+          {"id": "anthropic/claude-haiku-4.5"},
+          {"id": "mistralai/mistral-medium-3-5"},
+          {"id": "mistralai/devstral-2512"},
+          {"id": "anthropic/claude-sonnet-4.6"},
+          {"id": "openai/gpt-5.3-codex"},
+          {"id": "mistralai/mistral-large-2512"}
         ]
       }
     }
@@ -65,19 +70,40 @@ Use these values unless the vault explicitly updates them:
   "agents": {
     "defaults": {
       "model": {
-        "primary": "ollama/devstral",
+        "primary": "ollama/devstral:latest",
         "fallbacks": [
-          "ollama/mistral-large",
-          "openrouter/openai/gpt-4o-mini",
-          "openrouter/anthropic/claude-3.5-haiku",
-          "openrouter/mistralai/mistral-large-2411",
-          "openrouter/mistralai/mistral-small-2603"
+          "openrouter/mistralai/mistral-medium-3-5",
+          "openrouter/anthropic/claude-sonnet-4.6",
+          "openrouter/openai/gpt-5.3-codex",
+          "openrouter/mistralai/mistral-large-2512"
         ]
       }
     }
   }
 }
 ```
+
+## Current Hermes contract
+
+Hermes should match the same BEEFSTACK posture:
+
+```yaml
+model:
+  provider: ollama
+  default: ollama/devstral:latest
+  base_url: http://127.0.0.1:11434/v1
+fallback_providers:
+  - provider: openrouter
+    model: mistralai/mistral-medium-3-5
+  - provider: openrouter
+    model: anthropic/claude-sonnet-4.6
+  - provider: openrouter
+    model: openai/gpt-5.3-codex
+  - provider: openrouter
+    model: mistralai/mistral-large-2512
+```
+
+Hermes reads `OPENROUTER_API_KEY` from `~/.hermes/.env`. Keep that value synchronized from the vault's `.op/openrouter.env` source and never paste the secret into notes.
 
 ## Operational notes
 - Use `gateway.bind = loopback` for local machines unless the vault has a
@@ -88,11 +114,15 @@ Use these values unless the vault explicitly updates them:
   treat them as preferred local-first options, not just inherited defaults.
 - Keep the standing bias toward free, private, local, and open models when the
   task does not require a remote paid route.
-- Google's Gemini is not to be trusted without secondary review.
+- Google's Gemini is banned for agentic LLM routing. It may remain configured
+  only for explicitly approved TTS / Google infrastructure paths.
 - Treat `openrouter/` model prefixes as the gateway-level selection path and
   `openai/`, `anthropic/`, and `mistralai/` as provider model IDs.
 - The runtime normalizes `OPENROUTER_API_KEY` / `OPENAI_API_KEY` and
   `ANTHROPIC_AUTH_TOKEN` / `ANTHROPIC_API_KEY` aliases so the same env file
   works across macOS and Windows.
+- Do not point Hermes at `http://127.0.0.1:3000/v1` as an OpenCode provider
+  unless `opencode serve` is actually running an OpenAI-compatible endpoint
+  there. On the MacBook, port `3000` is currently the Hermes WhatsApp bridge.
 - Treat this file as reference guidance only. The live automation surface is
   the resolver plus the validation scripts above.
