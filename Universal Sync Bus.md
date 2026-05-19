@@ -29,10 +29,24 @@ can see the concept.
 
 See [[LAF-USB-PROTOCOL-FRAMEWORK]] for the staged protocol details.
 
+## On the Name
+
+The name is a backronym from Universal Serial Bus — the hardware standard that
+replaced a chaos of incompatible ports (serial, parallel, PS/2, proprietary)
+with a single bus any compliant device could plug into. This is not a
+coincidence. Both standards address the same structural problem: a proliferation
+of incompatible transport methods that each require their own handling, replaced
+by a single governed interface that any compliant carrier can join.
+
+A fuller treatment of this convergence — and what it means that two different
+engineering domains arrived at the same solution independently — exists elsewhere
+in the vault. This note records that the parallel is intentional and the
+backronym is load-bearing, not decorative.
+
 ## DOCUMENT METADATA
 
 - **Created:** 2026-05-08
-- **Last Updated:** 2026-05-08
+- **Last Updated:** 2026-05-19
 - **Status:** Staged
 - **Authority:** LOGAN
-- **Change Note:** Added canonical concept note for the Universal Sync Bus.
+- **Change Note:** Added backronym origin and hardware analogy note; fuller convergent treatment deferred to existing vault passage.
