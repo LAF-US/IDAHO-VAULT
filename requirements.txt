@@ -421,7 +421,7 @@ websocket-client==1.9.0
     # via kubernetes
 websockets==16.0
     # via uvicorn
-yarl==1.23.0
+yarl==1.24.2
     # via aiohttp
 zipp==3.23.1
     # via importlib-metadata
