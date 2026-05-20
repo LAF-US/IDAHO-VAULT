@@ -86,7 +86,7 @@ frozenlist==1.8.0
     #   aiosignal
 fsspec==2026.3.0
     # via huggingface-hub
-googleapis-common-protos==1.74.0
+googleapis-common-protos==1.75.0
     # via
     #   opentelemetry-exporter-otlp-proto-grpc
     #   opentelemetry-exporter-otlp-proto-http
