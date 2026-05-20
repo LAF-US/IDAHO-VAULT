@@ -364,7 +364,7 @@ tokenizers==0.23.1
     #   crewai
 tomli==2.0.2
     # via crewai
-tomli-w==1.1.0
+tomli-w==1.2.0
     # via crewai
 tqdm==4.67.3
     # via
