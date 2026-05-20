@@ -409,7 +409,7 @@ urllib3==2.6.3
     #   requests
 uv==0.11.8
     # via crewai
-uvicorn[standard]==0.46.0
+uvicorn[standard]==0.47.0
     # via
     #   chromadb
     #   mcp
