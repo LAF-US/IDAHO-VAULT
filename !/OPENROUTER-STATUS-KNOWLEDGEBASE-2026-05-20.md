@@ -132,6 +132,31 @@ Current best interpretation:
 - It was not proven to be a Hermes bug.
 - It was not reproduced in the later Windows raw OpenRouter test.
 
+## BYOK Rate-Limit Addendum
+
+Later Hermes evidence showed a different failure mode:
+
+```text
+HTTP 429 Provider returned error
+provider_name: Mistral
+is_byok: true
+raw provider code: 1300
+```
+
+The next direct Mistral fallback also returned `429 Rate limit exceeded` with the same provider code. A later OpenRouter Mistral Small route succeeded.
+
+Interpretation:
+
+- This is not the same as the earlier OpenRouter `403 Budget limit exceeded`.
+- This is not explained by the OpenRouter runtime key's own key-level cap.
+- This is a provider-side Mistral BYOK rate limit.
+- OpenRouter BYOK Mistral and direct Mistral can share the same upstream rate-limit bucket.
+- Fallback chains should diversify by provider bucket, not merely by model family.
+
+Operational implication:
+
+After a Mistral BYOK `429`, the next automatic fallback should usually move to a different provider bucket, such as non-BYOK OpenRouter capacity if available, Claude, OpenAI/Codex, or local Ollama. Direct Mistral is still useful for OpenRouter transport/account failures, but it is not a good immediate fallback for exhausted Mistral BYOK capacity.
+
 ## Safe Operating Rules
 
 Read-only actions are allowed for diagnostics:
