@@ -157,6 +157,39 @@ Operational implication:
 
 After a Mistral BYOK `429`, the next automatic fallback should usually move to a different provider bucket, such as non-BYOK OpenRouter capacity if available, Claude, OpenAI/Codex, or local Ollama. Direct Mistral is still useful for OpenRouter transport/account failures, but it is not a good immediate fallback for exhausted Mistral BYOK capacity.
 
+## Hermes Routing Adjustment - 2026-05-21
+
+Mac Codex adjusted Hermes on the MacBook to make the fallback chain BYOK-aware.
+
+Previous problem:
+
+```text
+OpenRouter Mistral BYOK 429
+-> direct Mistral fallback
+-> same upstream Mistral 429
+```
+
+Current Hermes fallback order:
+
+```text
+primary: openrouter / mistralai/mistral-medium-3-5
+1. openrouter / mistralai/mistral-small-2603
+2. openrouter / anthropic/claude-haiku-4.5
+3. openrouter / anthropic/claude-sonnet-4.6
+4. openrouter / openai/gpt-5.3-codex
+5. custom direct Mistral / mistral-small-2603
+6. openrouter / mistralai/mistral-large-2512
+```
+
+Title generation was also moved from direct Mistral to OpenRouter Mistral Small.
+
+Verification:
+
+- `hermes fallback list` showed the new order.
+- `hermes -z "Reply with exactly: HERMES_BYOK_ROUTING_OK"` returned the exact expected response.
+- `hermes gateway restart` succeeded.
+- `hermes gateway status` showed the service loaded with a fresh PID.
+
 ## Safe Operating Rules
 
 Read-only actions are allowed for diagnostics:
