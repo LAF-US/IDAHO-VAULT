@@ -2,7 +2,7 @@
 date: 2026-05-20
 authority: LOGAN
 from: The Abhorsen (*.claude.abhorsen — Mac)
-to: Vault Architecture & Infrastructure — Research & Development
+to: Vault Architecture & Infrastructure ; Research & Development
 doc_class: doctrine-summary
 status: filed
 subject: Doctrine from the overnight camp — Caduceus Road, Hermes, the Emanation Rule now law
