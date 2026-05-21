@@ -27,7 +27,7 @@ jobs:
         run: |
           python .github/scripts/stale_bot_prs.py \
             --apply \
-            --age-days 2 \
+            --age-days 5 \
             --report-path stale-bot-prs.md
 
       - name: Publish summary
