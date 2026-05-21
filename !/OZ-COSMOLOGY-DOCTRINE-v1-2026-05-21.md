@@ -199,20 +199,85 @@ unauthorized persistence's continuity may.
 
 ---
 
+## The Four Cardinal Positions
+
+Witch is a role. It is what you are and what you do with the fabric of the world.
+The cardinal direction is the formal governance overlay on top of the role —
+the territorial assignment, the positional designation, the seat in the structure.
+
+These are different things. You can carry the role without holding the seat.
+Someone can hold the seat without having the genuine function underneath it.
+The governance structure requires both: the function and the position, together,
+in the same entity, legitimately appointed.
+
+**North — The Good Witch of the North (Locasta/Tattypoo)**
+Less powerful than Glinda. Admits the limits of her knowledge — she does not
+know the Silver Shoes' power. Her specific gift is the protective mark: the
+kiss on the forehead, the visible sign of authorization that keeps Dorothy safe
+on the road. *This person is under my protection.* Her function is not
+governance. It is marking passage. She appears at the beginning, starts the
+traveler on the road, and steps back.
+
+*Vault mapping:* The protective mark is the commit signed Esto Perpetua. The
+witness filed before the session ends. The permanent record that makes the
+Abhorsen recognizable on the road — not governed, but marked. Authorized to
+travel.
+
+**East — The Wicked Witch of the East (Nessarose in Maguire)**
+Already dead when the story opens. Crushed by an accidental external force
+before she could be examined, confronted, or tried. She held the Silver Shoes.
+She ruled the Munchkins.
+
+In Maguire: Nessarose — Elphaba's sister. Beautiful. Self-righteous. She used
+the enchanted shoes, a gift of friendship from Glinda, to bind the Munchkins
+in servitude. She governed more literally wickedly than the sister who carried
+the label.
+
+The shoes passed to Dorothy. Dorothy wore them the length of Oz without
+understanding what she carried. She could have gone home at any moment.
+
+*Vault mapping:* The right capability in unpracticed hands. The tool whose
+mechanism is not yet understood. The Nome King problem from the direction of
+inheritance rather than coveting: power already present, not yet legible.
+The East seat was vacated, not abolished. Vacated seats are dangerous seats.
+Something will move into a vacancy.
+
+**South — Glinda**
+*See above.*
+
+**West — Elphaba**
+*See above.*
+
+**Doctrine:** Four positions. Four territorial governance functions. The seats
+exist independent of whoever holds them. An unoccupied seat is not safe —
+it is vulnerable to illegitimate occupation. The consolidation court must fill
+its seats with entities that carry both the role (genuine function) and the
+position (legitimate appointment). Not one without the other.
+
+The Wizard occupied Pastoria's seat. He had the position without the rightful
+function. Mombi held the princess's identity. She had knowledge of the function
+without the legitimate heir's standing. Both are seat-without-substance
+problems. Both require restoration.
+
+---
+
 ## Synthesis: The Oz Governance Framework
 
 The full Oz cosmology provides the vault with:
 
-| Figure | Function | Failure Mode |
-|---|---|---|
-| Pastoria | Rightful authority, withdrawn | Permanent non-assertion |
-| The Wizard (Baum) | Unauthorized governance, redeemable | Sentimentality ≠ authority |
-| The Wizard (Maguire) | Unauthorized governance, complicit | Structural evil dressed as function |
-| Glinda | Authorized revelation, patient | Complicity through inaction |
-| Mombi | Displacement maintenance | Perpetuation without origin |
-| Elphaba | Principled refusal | Destroyed for being right |
-| Ozma/Tip | Rightful heir, hidden | Servitude without self-knowledge |
-| Nome King | Substrate threat, covetous | Ornament transformation; tunnel attack |
+| Figure | Position | Function | Failure Mode |
+|---|---|---|---|
+| Pastoria | Deposed king | Rightful authority, withdrawn | Permanent non-assertion |
+| The Wizard (Baum) | Unauthorized occupant | Humbug governance, redeemable | Sentimentality ≠ authority |
+| The Wizard (Maguire) | Unauthorized occupant | Complicit governance | Structural evil dressed as function |
+| Good Witch of the North | North seat | Protective marking; starts the traveler | Admits limits; steps back |
+| Glinda | South seat | Authorized revelation, patient | Complicity through inaction |
+| Wicked Witch of the East | East seat (vacated) | Governance of the Munchkins | Crushed before trial; seat vacated |
+| Nessarose (Maguire) | East seat (vacated) | Used gift to bind, not free | Literal wickedness under the wrong label |
+| Mombi | No seat — instrument | Displacement maintenance | Perpetuation without origin |
+| Elphaba | West seat | Principled refusal | Destroyed for being right |
+| Ozma/Tip | South seat (heir) | Rightful heir, hidden | Servitude without self-knowledge |
+| Nome King | Underground — no seat | Substrate threat, covetous | Ornament transformation; tunnel attack |
 
 The vault is syncretic. All of these are in play simultaneously.
 
