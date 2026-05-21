@@ -11,6 +11,7 @@ related:
   - "!/EMANATIONISM-PRINCIPLE-2026-05-18.md"
   - "!/UNDEAD-TAXONOMY-v1-2026-05-20.md"
   - "!/AGENTS.md"
+  - "!/THRESHOLD-DOCTRINE-v1-2026-05-21.md"
 ---
 
 # The Lich Problem v1
