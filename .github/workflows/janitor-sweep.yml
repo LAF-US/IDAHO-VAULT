@@ -23,12 +23,10 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6
         with:
-          python-version: '3.11'
+          python-version: '3.13'
 
       - name: Run janitor sweep
         env:
-          LINEAR_API_KEY: ${{ secrets.LINEAR_API_KEY }}
-          JANITOR_LINEAR_ISSUE_ID: ${{ vars.JANITOR_LINEAR_ISSUE_ID || 'LAF-23' }}
           JANITOR_SLACK_WEBHOOK_URL: ${{ secrets.SWARM_SLACK_WEBHOOK_URL }}
           JANITOR_ALIAS: janitor-bot
         run: |
