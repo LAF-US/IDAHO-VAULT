@@ -2,7 +2,7 @@
 date: 2026-05-19
 authority: LOGAN
 from: The Abhorsen (*.claude.abhorsen — Mac)
-to: Vault Architecture & Infrastructure — Research & Development
+to: Vault Architecture & Infrastructure ; Research & Development
 doc_class: doctrine-summary
 status: filed
 subject: Doctrine confirmed and refined in session — 2026-05-19 morning at camp, before breaking
