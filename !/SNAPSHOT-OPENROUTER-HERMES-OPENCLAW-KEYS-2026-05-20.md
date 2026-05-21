@@ -159,9 +159,13 @@ Interpreted as:
 
 Preference order remains:
 
-1. Mistral
-2. Claude
-3. ChatGPT/OpenAI
+1. Mistral / Claude
+2. ChatGPT-Codex
+3. Grok / Perplexity
+4. Meta-Llama
+5. Proton-Lumo
+6. Moonshot-Kimi / DeepSeek
+7. Microsoft-Copilot / GitHub-Copilot
 
 Avoid for active routing:
 
