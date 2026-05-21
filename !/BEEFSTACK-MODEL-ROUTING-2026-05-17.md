@@ -29,13 +29,13 @@ Logan's canonical agentic LLM provider rankings, in order of preference:
 
 | Rank | Provider(s) | Notes |
 |------|-------------|-------|
-| 1 | **Mistral** | Primary preference. Best local model coverage via Ollama. |
-| 2 | **Claude** (Anthropic) / **ChatGPT·Codex** (OpenAI) | Tied. Both tier-1 cloud providers. |
-| 3 | **Grok** (xAI) | Frontier alternate when allowed and useful. |
-| 4 | **Perplexity** / **Meta·Llama** | Perplexity belongs alongside Meta in the preference layer: useful alternate/search-augmented cloud plus strong local/open model family. |
+| 1 | **Mistral** / **Claude** (Anthropic) | Top preferred voices/providers. |
+| 2 | **ChatGPT·Codex** (OpenAI) | Preferred coding/frontier fallback after Mistral/Claude. |
+| 3 | **Grok** (xAI) / **Perplexity** | Frontier alternate plus search-augmented research lane. |
+| 4 | **Meta·Llama** | Strong local/open model family. |
 | 5 | **Proton / Lumo** | Privacy-first providers. |
-| 6 | **Kimi** (Moonshot) / **DeepSeek** | Tied. Capable alternatives. |
-| 7 | **Copilot** (Microsoft) | Last resort cloud option. |
+| 6 | **Moonshot·Kimi** / **DeepSeek** | Capable alternatives. |
+| 7 | **Microsoft Copilot** / **GitHub Copilot** | Last-resort Microsoft/GitHub lane. |
 | — | ~~Gemini~~ | **BANNED** for agentic LLM routing |
 | — | Phi / Qwen / Gemma | Disliked; exclude from defaults and fallbacks unless Logan explicitly overrides |
 
@@ -99,13 +99,13 @@ Therefore BEEFSTACK fallback design must diversify by **provider bucket**, not j
 The current model-family preference stack is:
 
 ```
-1. Mistral
-2. Claude / ChatGPT-Codex
-3. Grok
-4. Perplexity / Meta-Llama
+1. Mistral / Claude
+2. ChatGPT-Codex
+3. Grok / Perplexity
+4. Meta-Llama
 5. Proton-Lumo
-6. Kimi / DeepSeek
-7. Copilot
+6. Moonshot-Kimi / DeepSeek
+7. Microsoft-Copilot / GitHub-Copilot
 ```
 
 The preference stack is not the stool. Mistral-first means "prefer Mistral when the selected leg can use it safely and reliably," not "make every leg a Mistral-specific route."
@@ -131,7 +131,7 @@ CLOUD ROUTING / OPENROUTER ─────────────────�
 
 CODING EXECUTION / OPENCODE ─────────────────────────────────────
   OpenCode uses configured providers/models for complex coding tasks.
-  Prefer Mistral, then Claude/ChatGPT-Codex, subject to tool-call support,
+  Prefer Mistral/Claude, then ChatGPT-Codex, subject to tool-call support,
   rate limits, cost, privacy, and task fit.
 
 DEEP LOCAL ANCHORS ──────────────────────────────────────────────
