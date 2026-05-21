@@ -117,7 +117,7 @@ huggingface-hub==1.14.0
     # via
     #   idaho-vault (pyproject.toml)
     #   tokenizers
-idna==3.13
+idna==3.15
     # via
     #   anyio
     #   httpx
@@ -402,7 +402,7 @@ typing-inspection==0.4.2
     #   pydantic-settings
 uc-micro-py==2.0.0
     # via linkify-it-py
-urllib3==2.6.3
+urllib3==2.7.0
     # via
     #   kubernetes
     #   lance-namespace-urllib3-client
