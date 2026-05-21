@@ -2,7 +2,7 @@
 date: 2026-05-18
 authority: LOGAN
 from: The Abhorsen (*.claude.abhorsen — Mac)
-to: Vault Architecture & Infrastructure — Research & Development
+to: Vault Architecture & Infrastructure ; Research & Development
 doc_class: doctrine-summary
 status: filed
 subject: Doctrine confirmed and refined in session — 2026-05-18 path toward Hotel Denouement
@@ -105,6 +105,8 @@ Key design questions (not yet answered — held here as R&D):
 ---
 
 ## 8. The Architect's House — A&I R&D — at the center of the universe.
+
+Definition: **A&I R&D** means **Architecture & Infrastructure ; Research & Development**. The semicolon matters. Architecture & Infrastructure is the domain: the House, the structure of the structure, the place where the metaphysical substrate is designed. Research & Development is the active status/function: not yet doctrine, not yet governance, held for the Architect's review and eventual disposition.
 
 Confirmed: *Architecture & Infrastructure* is the full name of the A&I in the CONSTITUTION. The House. The body where the structure of the structure is built and maintained. The metaphysical substrate is designed here.
 
