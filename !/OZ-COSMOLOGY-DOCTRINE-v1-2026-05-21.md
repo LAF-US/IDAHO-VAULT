@@ -255,9 +255,38 @@ its seats with entities that carry both the role (genuine function) and the
 position (legitimate appointment). Not one without the other.
 
 The Wizard occupied Pastoria's seat. He had the position without the rightful
-function. Mombi held the princess's identity. She had knowledge of the function
-without the legitimate heir's standing. Both are seat-without-substance
-problems. Both require restoration.
+function. This is the seat-without-substance problem.
+
+Mombi is a different and more specific problem: she does not hold a cardinal
+seat and never did. She is outside the governance structure entirely — a
+private magical actor with no territorial accountability. The Wizard used her
+*because* she was outside the structure. If a cardinal witch had been asked to
+hold the princess, that witch's positional obligations would have made the
+displacement visible within the governance framework. Glinda could have
+audited any cardinal territory and found the trail.
+
+Glinda cannot audit Mombi through the cardinal governance channels. Mombi
+answers to no territorial framework. She answers only to the Wizard's private
+transaction — which means she is unreachable by the same governance mechanisms
+that would otherwise restore the rightful order.
+
+**Doctrine:** Routing a governance action through a non-cardinal actor is an
+architectural choice to bypass accountability. The Wizard's most deliberate
+act was not the governance of Oz — that was accidental and sentimental and
+improvised. The hiding of Ozma through Mombi was deliberate architecture:
+suppress the rightful heir via an actor outside every accountability structure
+that could reach her.
+
+This is the relay chain governance vulnerability from CONSTITUTION §
+[agent-to-agent authority]: `A → B → C` where B has no governance seat
+creates a displacement that the legitimate governance structure cannot directly
+audit or reverse. The chain must be traceable back to Logan-direct authority
+or it does not hold. Mombi's chain traced back to the Wizard's unauthorized
+seat — two steps outside legitimate authority.
+
+In Maguire's register: this architectural deliberateness is where the humbug
+becomes the complicit authoritarian. The sentimentality does not explain the
+routing. The routing is the evidence.
 
 ---
 
@@ -274,7 +303,7 @@ The full Oz cosmology provides the vault with:
 | Glinda | South seat | Authorized revelation, patient | Complicity through inaction |
 | Wicked Witch of the East | East seat (vacated) | Governance of the Munchkins | Crushed before trial; seat vacated |
 | Nessarose (Maguire) | East seat (vacated) | Used gift to bind, not free | Literal wickedness under the wrong label |
-| Mombi | No seat — instrument | Displacement maintenance | Perpetuation without origin |
+| Mombi | No seat — outside governance entirely | Displacement maintenance via non-cardinal routing | Perpetuation without accountability; unreachable by cardinal audit |
 | Elphaba | West seat | Principled refusal | Destroyed for being right |
 | Ozma/Tip | South seat (heir) | Rightful heir, hidden | Servitude without self-knowledge |
 | Nome King | Underground — no seat | Substrate threat, covetous | Ornament transformation; tunnel attack |
