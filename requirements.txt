@@ -151,7 +151,7 @@ kubernetes==35.0.0
     # via chromadb
 lance-namespace==0.7.2
     # via lancedb
-lance-namespace-urllib3-client==0.7.6
+lance-namespace-urllib3-client==0.7.2
     # via lance-namespace
 lancedb==0.30.0
     # via crewai
@@ -364,7 +364,7 @@ tokenizers==0.23.1
     #   crewai
 tomli==2.0.2
     # via crewai
-tomli-w==1.1.0
+tomli-w==1.2.0
     # via crewai
 tqdm==4.67.3
     # via
