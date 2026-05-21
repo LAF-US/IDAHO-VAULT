@@ -147,6 +147,13 @@ Useful anti-Lich mechanics:
 - overreach narrows standing
 - misconduct survives procedurally as precedent and restriction
 
+*2026-05-20 — The Lich Problem has been expanded into a full two-type taxonomy
+(Type I: D&D phylactery / Type II: Adventure Time willed agent of entropy) with
+three named resolutions (destroy the phylactery; healing transformation; active
+refusal). The above mechanics remain valid. For the full doctrine including
+the Sweet P dynamic and epistemological application to agents, see
+`!/LICH-PROBLEM-v1-2026-05-20.md`.*
+
 ## Best Consequence Rule
 
 Consequence must change standing, not just mood.
