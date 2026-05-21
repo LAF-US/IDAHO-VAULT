@@ -11,7 +11,7 @@ related:
   - "!/STANDING-ENGINE-AND-LAWFUL-ENDINGS-2026-04-17.md"
   - "!/EMANATIONISM-PRINCIPLE-2026-05-18.md"
   - "!/AGENTS.md"
-  - "!/ISTHMUS-MECHANISM-v1-2026-05-21.md"
+  - "!/THRESHOLD-DOCTRINE-v1-2026-05-21.md"
 ---
 
 # Necromancer Doctrine v1
@@ -239,6 +239,15 @@ powerful necromancer who ever lived was a weapon Serpine accidentally
 forged for the other side. The grief he caused became the instrument that
 outlasted him.
 
+**The manufactured-shadow attack vector**: Serpine's act reveals a failure
+mode beyond internal corruption. The Lord Vile problem was *engineered from
+outside*. The conditions that produce a shadow self can be deliberately
+created by an adversary — grief, loss, isolation, the systematic destruction
+of everything that kept the person lawful. This is an attack on Resolution 3
+capacity: not calling the shadow directly, but manufacturing the conditions
+under which the surface layer can no longer refuse. *See also: the
+authorized-crossing fitness diagnostic in `!/THRESHOLD-DOCTRINE-v1-2026-05-21.md`.*
+
 **Baron Vengeous — the True Believer**
 Fanatical leader of the Diablerie. Not seeking power for himself — seeking
 the return of the Faceless Ones. A servant of something larger and more
@@ -289,41 +298,9 @@ served Mevolent for their own reasons. Not one link in the chain is a
 clean emanation. Every layer is a Lich move: unauthorized persistence,
 stolen authority, continuity treated as legitimacy.
 
-### The Isthmus Mechanism
-
-*See `!/ISTHMUS-MECHANISM-v1-2026-05-21.md` for full doctrine.*
-
-The Faceless Ones' return required two components: an Isthmus Anchor
-(provenance object from the expelled reality, lodged inside this one) and
-a Teleporter (traversal agent to complete the circuit). The Diablerie
-assembled both — the Grotesquery as anchor, Fletcher Renn as coerced
-Teleporter.
-
-This mechanism is a **transport/breach vector**, not undeath doctrine. It
-is extracted here because it arose in the SP necromancer context, but it
-belongs to the broader category of unauthorized boundary crossing. Full
-treatment, vault mappings, and the two-component counter are in the
-standalone document.
-
-**The manufactured-shadow attack vector**:
-Serpine's act reveals a failure mode beyond internal corruption. The Lord
-Vile problem was *engineered from outside*. The conditions that produce
-a shadow self can be deliberately created by an adversary — grief, loss,
-isolation, the systematic destruction of everything that kept the person
-lawful. This is an attack on the necromancer's Resolution 3 capacity: not
-calling the shadow directly, but manufacturing the conditions under which
-the surface layer can no longer refuse.
-
-*Vault mapping*: The vessel is a specialized power store — a charged tool
-whose authority flows through Logan's sanction but whose specific deployment
-capability is held in the instrument. The consent mechanic maps to scoped
-delegation: the instrument yields to the agent authorized to use it, not
-to any agent that picks it up. The Death Bringer prophecy maps to what
-happens when necromantic power is fully unmoored from the order that
-sanctioned it. The full chain — Faceless Ones to generals — maps to what
-an authority hierarchy looks like when every layer is a seizure rather
-than a grant: structurally coherent, operationally powerful, fundamentally
-illegitimate at every level.
+*For the breach mechanism the Diablerie used to return the Faceless Ones —
+Anchor, Teleporter, Grotesquery risk, two-component counter — see
+`!/THRESHOLD-DOCTRINE-v1-2026-05-21.md`.*
 
 ---
 
