@@ -4,14 +4,13 @@
 Hexagonal design:
   - Input adapter: GitHub workflow_run event payload parser.
   - Domain model: FailedRunEvent dataclass.
-  - Output adapters: Linear comment reporter + Slack webhook reporter.
+  - Output adapters: Slack webhook reporter.
 """
 
 from __future__ import annotations
 
 import json
 import os
-import subprocess
 import sys
 import urllib.request
 from dataclasses import dataclass
@@ -31,38 +30,6 @@ class FailedRunEvent:
 
 class Reporter(Protocol):
     def send(self, event: FailedRunEvent, body: str) -> tuple[bool, str]: ...
-
-
-class LinearReporter:
-    def __init__(self, issue_id: str, alias: str) -> None:
-        self.issue_id = issue_id
-        self.alias = alias
-
-    def send(self, event: FailedRunEvent, body: str) -> tuple[bool, str]:
-        script = Path(__file__).with_name("linear_gateway.py")
-        cmd = [
-            "python3",
-            str(script),
-            "post_comment",
-            "--issue-id",
-            self.issue_id,
-            "--body",
-            body,
-            "--initiating-agent",
-            self.alias,
-            "--role",
-            "secretary",
-            "--live-write",
-        ]
-        env = {**os.environ, "MCP_LIVE_WRITE": "true"}
-        try:
-            proc = subprocess.run(cmd, capture_output=True, text=True, timeout=60, env=env)
-        except subprocess.TimeoutExpired:
-            return False, "linear failed: timeout while posting comment"
-        if proc.returncode == 0:
-            return True, "linear comment posted"
-        detail = (proc.stderr or proc.stdout).strip()[-240:]
-        return False, f"linear failed: {detail}"
 
 
 class SlackReporter:
@@ -129,10 +96,6 @@ def main() -> int:
     alias = os.environ.get("JANITOR_ALIAS", "janitor-bot")
 
     reporters: list[Reporter] = []
-    linear_issue = os.environ.get("JANITOR_LINEAR_ISSUE_ID", "").strip()
-    if linear_issue and os.environ.get("LINEAR_API_KEY", "").strip():
-        reporters.append(LinearReporter(issue_id=linear_issue, alias=alias))
-
     slack_webhook = os.environ.get("JANITOR_SLACK_WEBHOOK_URL", "").strip()
     if slack_webhook:
         reporters.append(SlackReporter(slack_webhook))
