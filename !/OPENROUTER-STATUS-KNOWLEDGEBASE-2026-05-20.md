@@ -74,15 +74,42 @@ Known mappings:
 | --- | --- | --- |
 | Windows 1Password runtime item | `op://Vault/OpenRouter API Key/credential` | Matches `SWARM ROUTER KEY`. |
 | Vault OpenRouter env path | `.op/openrouter.env -> op://Vault/OpenRouter API Key/credential` | Matches `SWARM ROUTER KEY`. |
+| OpenCode Windows credential store | `~/.local/share/opencode/auth.json` provider `openrouter` | Matches `SWARM ROUTER KEY` by SHA256 prefix `160f2dcf`; secret value not printed. |
+| OpenClaw Windows provider env | `~/.openclaw/openclaw.json` `env.vars.OPENROUTER_API_KEY` | Matches `SWARM ROUTER KEY` by SHA256 prefix `160f2dcf`; secret value not printed. |
 
 Unknown or not fully mapped:
 
 | surface | status |
 | --- | --- |
-| Hermes Mac | Needs Mac-side confirmation against `~/.hermes/.env` or another redacted `/api/v1/key` check. |
-| OpenCode | Needs credential-path inspection before it can be mapped. |
+| Hermes Mac | Mac-side snapshot says Hermes maps to the same `SWARM ROUTER KEY`; Windows has not directly inspected Mac `~/.hermes/.env`. |
 | OpenClaw Mac gateway | No current evidence that the gateway itself uses OpenRouter directly. |
-| OpenClaw Windows node | Not a model caller unless invoked by a higher-level workflow. |
+| OpenClaw Windows node | Node transport identity is separate from model routing; Windows config does have an OpenRouter provider wired to `OPENROUTER_API_KEY`. |
+
+## 2026-05-20 Windows Surface Mapping Addendum
+
+Windows Codex performed a read-only mapping pass across OpenCode and OpenClaw after Mac pushed the key/status snapshot. No key, model, OpenClaw, Hermes, or OpenCode configuration was changed.
+
+OpenCode:
+
+- `opencode providers list` reports three stored API credentials: OpenCode Zen, OpenRouter, and Mistral.
+- The global OpenCode config at `~/.config/opencode/opencode.jsonc` currently contains only the schema pointer.
+- The stored OpenCode `openrouter` credential hashes to SHA256 prefix `160f2dcf`, matching `SWARM ROUTER KEY`.
+- The stored OpenCode `mistral` credential hashes to SHA256 prefix `d4d78398`.
+- The stored OpenCode `opencode` credential hashes to SHA256 prefix `c66b70ef`.
+
+OpenClaw Windows:
+
+- `~/.openclaw/node.json` identifies the Windows node as `Windows-ZBFURY`, node id `windows-zbfury-20260516`, targeting gateway host `127.0.0.1` port `18790`.
+- `~/.openclaw/openclaw.json` includes model providers for `openrouter` and `ollama`.
+- The OpenClaw `openrouter` provider uses `https://openrouter.ai/api/v1` and `apiKey: env:OPENROUTER_API_KEY`.
+- `env.vars.OPENROUTER_API_KEY` hashes to SHA256 prefix `160f2dcf`, matching `SWARM ROUTER KEY`.
+- The Windows OpenClaw config currently stores provider env values directly in the user-profile config, not only as `op://` references. This is an observation, not a mutation request.
+
+Current interpretation:
+
+- Windows OpenCode and Windows OpenClaw are both mapped to the same OpenRouter runtime key as the vault runtime item.
+- The OpenCode and OpenClaw findings reinforce that the earlier `403 Budget limit exceeded (daily limit)` was not caused by an unknown Windows runtime key.
+- The remaining mature-hardening question is key separation and cap design by surface, not emergency key repair.
 
 ## Budget Failure Status
 
@@ -130,9 +157,9 @@ The Management Key must remain in the secret store or in process memory only. It
 ## Recommended Near-Term Plan
 
 1. Ask Mac Codex to confirm whether Hermes Mac currently maps to the same `SWARM ROUTER KEY` using a redacted `/api/v1/key` check.
-2. Inspect OpenCode credential path separately and map it to an OpenRouter key if present.
-3. Keep `SWARM ROUTER KEY` as the shared fallback until every active surface is mapped.
-4. After mapping, propose separate capped runtime keys for distinct surfaces.
+2. Keep `SWARM ROUTER KEY` as the shared fallback until every active surface is mapped and Logan approves separation.
+3. After mapping, propose separate capped runtime keys for distinct surfaces.
+4. Decide whether Windows OpenClaw should continue carrying plaintext provider env values in `~/.openclaw/openclaw.json`, or move to a 1Password-backed launch path.
 5. Do not mutate OpenRouter key state until Logan explicitly approves the specific mutation plan.
 
 ## Proposed Future Key Shape
