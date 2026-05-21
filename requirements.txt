@@ -86,7 +86,7 @@ frozenlist==1.8.0
     #   aiosignal
 fsspec==2026.3.0
     # via huggingface-hub
-googleapis-common-protos==1.74.0
+googleapis-common-protos==1.75.0
     # via
     #   opentelemetry-exporter-otlp-proto-grpc
     #   opentelemetry-exporter-otlp-proto-http
@@ -203,11 +203,11 @@ opentelemetry-exporter-otlp-proto-common==1.34.1
     # via
     #   opentelemetry-exporter-otlp-proto-grpc
     #   opentelemetry-exporter-otlp-proto-http
-opentelemetry-exporter-otlp-proto-grpc==1.34.1
+opentelemetry-exporter-otlp-proto-grpc==1.42.0
     # via chromadb
 opentelemetry-exporter-otlp-proto-http==1.34.1
     # via crewai
-opentelemetry-proto==1.34.1
+opentelemetry-proto==1.42.0
     # via
     #   opentelemetry-exporter-otlp-proto-common
     #   opentelemetry-exporter-otlp-proto-grpc
@@ -409,7 +409,7 @@ urllib3==2.6.3
     #   requests
 uv==0.11.8
     # via crewai
-uvicorn[standard]==0.46.0
+uvicorn[standard]==0.47.0
     # via
     #   chromadb
     #   mcp
@@ -421,7 +421,7 @@ websocket-client==1.9.0
     # via kubernetes
 websockets==16.0
     # via uvicorn
-yarl==1.23.0
+yarl==1.24.2
     # via aiohttp
 zipp==3.23.1
     # via importlib-metadata
