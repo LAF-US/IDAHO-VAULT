@@ -63,6 +63,7 @@ LEG 2 — OPENROUTER ───────────────────�
   Cloud fallback breadth
   Mistral / Claude / ChatGPT / other allowed families through one router
   Rate-limit and provider-outage resilience
+  Must distinguish shared OpenRouter capacity from BYOK provider lanes
 
 LEG 3 — OPENCODE ────────────────────────────────────────────────
   Coding and agent execution interface
@@ -71,6 +72,27 @@ LEG 3 — OPENCODE ────────────────────�
 ```
 
 The stool should be portable across macOS, Windows, and Linux. Individual model availability may differ by machine, but the routing principle stays stable.
+
+## OpenRouter Is Not One Lane
+
+OpenRouter is the cloud routing leg, but it is not a single uniform failure domain. It can carry several distinct lanes:
+
+| Lane | Meaning | Failure mode |
+|------|---------|--------------|
+| OpenRouter shared capacity | OpenRouter-hosted provider access billed through OpenRouter. | OpenRouter credit, workspace, or shared-provider routing limits. |
+| OpenRouter BYOK | OpenRouter request brokered through Logan's own provider key. | The upstream provider key's rate limits, spend limits, or provider policy. |
+| Direct provider API | Hermes/OpenCode/etc. call Mistral, Anthropic, OpenAI, or another provider without OpenRouter. | That provider key's direct limit, independent of OpenRouter transport. |
+
+This distinction matters. A route like `openrouter/mistralai/mistral-medium-3-5` can fail because the selected OpenRouter route is using Mistral BYOK, not because the OpenRouter runtime key itself is capped. A direct Mistral fallback may then fail with the same upstream Mistral `429` because it shares the same provider-side limit.
+
+Recent evidence:
+
+- OpenRouter returned `429 Provider returned error` for `mistralai/mistral-medium-3-5`.
+- The error metadata identified `provider_name: Mistral` and `is_byok: True`.
+- Direct Mistral fallback returned the same `429 Rate limit exceeded` / provider code `1300`.
+- A later OpenRouter Mistral Small route succeeded, showing that the whole OpenRouter account was not necessarily blocked.
+
+Therefore BEEFSTACK fallback design must diversify by **provider bucket**, not just by model name or preferred family. If the first failure is Mistral BYOK, the next automatic fallback should usually jump to another bucket, such as non-BYOK OpenRouter capacity, Claude, OpenAI/Codex, or local Ollama, before retrying another route that uses the same exhausted Mistral provider key.
 
 ## Preference Stack on Top
 
@@ -133,6 +155,10 @@ DEEP LOCAL ANCHORS ────────────────────�
 - **Local fallback** handles cloud outages, rate limits, provider errors, and connectivity loss.
 - **Deep local anchors** are the last line when internet and provider paths are unavailable.
 
+**BYOK-aware fallback rule:** after a provider-specific BYOK `429`, do not immediately retry the same upstream provider through a different wrapper unless the caller knows the next route uses a different capacity pool. Treat `OpenRouter -> Mistral BYOK` and `Direct Mistral` as potentially the same rate-limit bucket.
+
+**Router-aware fallback rule:** after an OpenRouter account/workspace/key failure, direct provider calls can be a useful escape route. After an upstream provider failure, another OpenRouter route with a different provider can be the escape route.
+
 ---
 
 ## Banned Model Hygiene
@@ -188,11 +214,13 @@ As of 2026-05-18, the MacBook runtime contract is:
 - `OPENROUTER_API_KEY` is present in `~/.hermes/.env`; keep the source of truth in the vault's `.op/openrouter.env` / 1Password path.
 - Local Ollama remains a preferred doctrine and an explicit/manual contingency, but this MacBook should not pretend local inference is the reliable live default.
 - Gemini is allowed for TTS / Google infrastructure only. It is not part of the agentic LLM fallback chain.
+- BYOK caveat: when OpenRouter reports `is_byok: true` and a provider-specific `429`, Hermes should prefer a fallback in a different provider bucket instead of immediately retrying the same provider through a direct API route.
 
 **OpenCode**
 - OpenCode is the third leg as a coding/agent execution interface.
 - Do not configure Hermes to call `http://127.0.0.1:3000/v1` as an OpenCode model endpoint unless an actual `opencode serve` OpenAI-compatible endpoint is running there.
 - On the MacBook, port `3000` is currently used by the Hermes WhatsApp bridge, so it must not be treated as an OpenCode LLM provider.
+- OpenCode has its own provider credential store and can use both OpenRouter and direct provider keys. Treat those as separate routing surfaces but not automatically separate rate-limit buckets if they point at the same BYOK upstream provider.
 
 To inspect the live stack (any OS):
 ```bash
