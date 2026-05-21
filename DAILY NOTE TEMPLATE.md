@@ -1,24 +1,25 @@
+<%* const d = moment(tp.file.title, "YYYY-MM-DD") -%>
 ---
-title: {{date:YYYY-MM-DD}}
+title: <% d.format("YYYY-MM-DD") %>
 aliases:
-  - {{date:YYYY-MM-DD}}
-  - {{date:MMMM D, YYYY}}
-  - {{date:MMMM Do, YYYY}}
-  - {{date:D MMMM YYYY}}
-  - {{date:dddd, MMMM D, YYYY}}
-linter-yaml-title-alias: {{date:YYYY-MM-DD}}
-yesterday: {{date-1d:YYYY-MM-DD}}
-tomorrow: {{date+1d:YYYY-MM-DD}}
+  - <% d.format("YYYY-MM-DD") %>
+  - <% d.format("MMMM D, YYYY") %>
+  - <% d.format("MMMM Do, YYYY") %>
+  - <% d.format("D MMMM YYYY") %>
+  - <% d.format("dddd, MMMM D, YYYY") %>
+linter-yaml-title-alias: <% d.format("YYYY-MM-DD") %>
+yesterday: <% d.clone().subtract(1,"d").format("YYYY-MM-DD") %>
+tomorrow: <% d.clone().add(1,"d").format("YYYY-MM-DD") %>
 weekday:
-  - {{date:dddd}}
+  - <% d.format("dddd") %>
 cssclasses:
-  - roygbiv-{{date:ddd}}
+  - roygbiv-<% d.format("ddd").toLowerCase() %>
 tags:
   - today
-  - {{date:YYYY/MM/DD}}
+  - <% d.format("YYYY/MM/DD") %>
   - dailynote
-date created: {{date:dddd, MMMM Do YYYY, h:mm:ss a}}
-date modified: {{date:dddd, MMMM Do YYYY, h:mm:ss a}}
+date created: <% d.format("dddd, MMMM Do YYYY, h:mm:ss a") %>
+date modified: <% d.format("dddd, MMMM Do YYYY, h:mm:ss a") %>
 ---
 
 [[TO DO LIST]]
