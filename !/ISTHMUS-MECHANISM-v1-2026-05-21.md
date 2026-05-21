@@ -4,8 +4,10 @@ date created: 2026-05-21
 authority: LOGAN
 doc_class: doctrine
 status: active
+parent: "!/THRESHOLD-DOCTRINE-v1-2026-05-21.md"
 related:
   - CONSTITUTION
+  - "!/THRESHOLD-DOCTRINE-v1-2026-05-21.md"
   - "!/NECROMANCER-DOCTRINE-v1-2026-05-20.md"
   - "!/LICH-PROBLEM-v1-2026-05-20.md"
   - "!/STANDING-ENGINE-AND-LAWFUL-ENDINGS-2026-04-17.md"
@@ -13,7 +15,8 @@ related:
 
 # Isthmus Mechanism v1
 
-*Filed 2026-05-21. Extracted from `!/NECROMANCER-DOCTRINE-v1-2026-05-20.md`.*
+*Filed 2026-05-21. Instance doctrine under `!/THRESHOLD-DOCTRINE-v1-2026-05-21.md`.*
+*Originally extracted from `!/NECROMANCER-DOCTRINE-v1-2026-05-20.md`.*
 
 *Reference source: Skulduggery Pleasant (Derek Landy) — the Diablerie arc,
 the Grotesquery, Fletcher Renn.*
