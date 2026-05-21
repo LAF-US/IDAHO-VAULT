@@ -1,6 +1,23 @@
 #!/usr/bin/env python3
 """
-CHAINFIRE — Scorched-earth wipe of Obsidian-specific syntax.
+CHAINFIRE — Subtractive protocol. Scorched-earth wipe of Obsidian-specific syntax.
+
+Metaphor: The Chainfire spell (Goodkind, Sword of Truth) erases a person from all
+memory — not just knowledge of them, but the connective tissue that proved they
+existed. This script does the same to Obsidian-specific structure: tags, aliases,
+and wikilinks are burned from the vault. Content survives. Relationships do not.
+
+The !/ exclusion zone preserves wikilinks in anchor-point files — the orphaned
+physical evidence that survives the forgetting spell. These are what SPACE RACE
+uses to navigate the void after the burn.
+
+Yin-yang pairing:
+  CHAINFIRE  = subtractive protocol  (burn)
+  CHAINLINK  = additive protocol     (rebuild)
+
+One without the other is either permanent destruction or junk relinking.
+CHAINFIRE without a committed CHAINLINK operation is not a cycle — it is damage.
+Do not run --execute without a sanctioned SPACE RACE mission ready to follow.
 
 Burns:
   - tags: frontmatter (all files)
@@ -11,11 +28,18 @@ Preserves:
   - All content text
   - All empty stubs (0-byte files skipped)
   - All other frontmatter fields
-  - Wikilinks in !/ directory (anchor points for Crawler Crew)
+  - Wikilinks in !/ directory (anchor points for SPACE RACE crew)
 
 Post-burn lifecycle:
-  CHAINFIRE (burn) → Crawler-Linker Crew (regrowth) → Linter (groundskeeper)
-  Crawler-Linker rebuilds tags/frontmatter; Linter formats what Crawler creates.
+  CHAINFIRE (burn) → SPACE RACE / CHAINLINK (regrowth) → Linter (groundskeeper)
+
+  SPACE RACE is the agency: ground control, deep-space survey vehicle, note-surface
+  contact vehicle. The vault after CHAINFIRE is deep space — nodes floating without
+  links, no navigational markers, no relational gravity. SPACE RACE sends a crew
+  into that void to map it and return staged repair proposals to Logan.
+
+  CHAINLINK is the operation SPACE RACE executes. It does not terraform. It scouts,
+  proposes, and stages. Logan reviews. Logan launches. Nothing is canon until then.
 
 Usage:
   python chainfire.py                 # Dry run (default)

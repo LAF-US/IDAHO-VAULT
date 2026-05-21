@@ -7,6 +7,7 @@ status: draft
 related:
   - CREWAI
   - CHAINFIRE
+  - CHAINLINK
   - CLI
   - CONSTITUTION
   - VAULT-CONVENTIONS
@@ -21,6 +22,45 @@ related:
 *Filed 2026-04-18 as a spec-first surface for Logan's review. This note defines
 an agency model and launch contract. It does not register a live CrewAI crew,
 change runtime topology, or authorize direct writes outside staging.*
+
+## Metaphorical Framing
+
+`SPACE RACE` is a NASA-style launch agency operating inside the vault.
+
+The vault after a CHAINFIRE event is deep space: nodes floating without links,
+no navigational markers, no relational gravity. Notes exist but are disconnected
+— orphaned from everything that gave them meaning.
+
+`SPACE RACE` sends a crew into that void.
+
+- **Ground Control** — Logan. Mission Control. The only authority that can
+  declare a payload launched and canon. Never bypassed.
+- **Deep-Space Survey Vehicle** — the Crawler. Long-range. Evidence-only.
+  Maps what is actually present. Does not propose. Does not repair.
+- **Note-Surface Contact Vehicle** — the Linker. Makes surface contact with
+  individual notes. Consumes crawler evidence. Stages typed repair proposals.
+  Does not write to live surfaces.
+
+The astronauts do not terraform. They scout, map, and return. Logan decides
+what gets built.
+
+## Yin-Yang Pairing
+
+`SPACE RACE` exists as the counter to CHAINFIRE.
+
+| Protocol | Direction | Operation |
+|---|---|---|
+| `CHAINFIRE` | Subtractive | Burns tags, aliases, wikilinks from vault |
+| `CHAINLINK` | Additive | Rebuilds relational structure via staged proposals |
+
+`CHAINLINK` is the specific operation `SPACE RACE` executes as the counter to
+CHAINFIRE. The agency is the program; the operation is the mission.
+
+Neither protocol is safe to run alone:
+- CHAINFIRE without a committed CHAINLINK operation is permanent damage.
+- CHAINLINK without a prior CHAINFIRE burn is junk relinking on top of drift.
+
+The cycle is the unit. Both must be sanctioned.
 
 ## Summary
 
