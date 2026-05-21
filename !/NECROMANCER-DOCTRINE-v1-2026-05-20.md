@@ -11,11 +11,12 @@ related:
   - "!/STANDING-ENGINE-AND-LAWFUL-ENDINGS-2026-04-17.md"
   - "!/EMANATIONISM-PRINCIPLE-2026-05-18.md"
   - "!/AGENTS.md"
+  - "!/ISTHMUS-MECHANISM-v1-2026-05-21.md"
 ---
 
 # Necromancer Doctrine v1
 
-*Filed 2026-05-20 as draft — pending additions.*
+*Filed 2026-05-20 as active. Isthmus Mechanism extracted 2026-05-21 to standalone doc.*
 
 *Reference sources: Dungeons & Dragons (necromancy school, Animate Dead
 mechanics); Skulduggery Pleasant — Derek Landy (power vessels, Lord Vile,
@@ -288,51 +289,21 @@ served Mevolent for their own reasons. Not one link in the chain is a
 clean emanation. Every layer is a Lich move: unauthorized persistence,
 stolen authority, continuity treated as legitimacy.
 
-### The Isthmus Mechanism — Anchor and Teleporter
+### The Isthmus Mechanism
 
-The Faceless Ones cannot breach the boundary between realities by force
-alone. They were expelled; the expulsion holds. To return, they require
-two components operating in conjunction:
+*See `!/ISTHMUS-MECHANISM-v1-2026-05-21.md` for full doctrine.*
 
-**The Isthmus Anchor**: an object that originates in one reality but
-currently resides in another. The displacement is the power. The object
-carries the provenance signature of the expelled world, lodged inside the
-world that expelled it. That signature is what makes an opening possible.
+The Faceless Ones' return required two components: an Isthmus Anchor
+(provenance object from the expelled reality, lodged inside this one) and
+a Teleporter (traversal agent to complete the circuit). The Diablerie
+assembled both — the Grotesquery as anchor, Fletcher Renn as coerced
+Teleporter.
 
-**The Teleporter**: an agent with traversal capability — the ability to
-cross space and dimensional boundaries instantly. The anchor provides the
-coordinate; the Teleporter provides the crossing. Neither is sufficient
-alone.
-
-The Diablerie assembled both: the Grotesquery (a composite horror built
-from pieces of a Faceless One — a displaced provenance object assembled
-*inside* this reality from parts of the expelled one) as the anchor, and
-Fletcher Renn (a Teleporter) kidnapped and forced to complete the circuit.
-Three Faceless Ones came through.
-
-**The two risk models:**
-
-| Component | Risk Model | Nature of the Threat |
-|---|---|---|
-| Isthmus Anchor | The Grotesquery | A thing assembled from expelled material, lodged inside the sanctioned system, carrying the signature of what was banished |
-| Teleporter | The Diablerie / Fletcher Renn | An agent with traversal capability — willing servant or coerced actor — who completes the circuit |
-
-**The counter**: break either component. The anchor without a Teleporter
-cannot open the gate. The Teleporter without an anchor has no coordinate.
-Two components; either one interrupted is sufficient to prevent the breach.
-
-*Vault mapping*: The Isthmus mechanism is the two-component unauthorized
-boundary crossing. The **Grotesquery risk** is any object assembled from
-pieces of an expelled or unauthorized source, present inside the system,
-carrying that source's provenance signature — capable of serving as an
-anchor for a breach. The **Diablerie risk** is any agent within the system
-(or accessible to coercion) who has traversal capability and could be
-induced or forced to complete the circuit.
-
-The vault counter mirrors the fictional one: identify and isolate either
-component before they operate in conjunction. An anchor with no Teleporter
-is inert. A Teleporter with no anchor has no target. The threat is the
-combination.
+This mechanism is a **transport/breach vector**, not undeath doctrine. It
+is extracted here because it arose in the SP necromancer context, but it
+belongs to the broader category of unauthorized boundary crossing. Full
+treatment, vault mappings, and the two-component counter are in the
+standalone document.
 
 **The manufactured-shadow attack vector**:
 Serpine's act reveals a failure mode beyond internal corruption. The Lord
