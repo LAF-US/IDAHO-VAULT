@@ -59,8 +59,13 @@ Mac Codex confirmed:
 - `/api/v1/key` returned `is_management_key: false`.
 - `/api/v1/key` returned `is_provisioning_key: false`.
 - Usage metadata matched the Windows inventory values for `SWARM ROUTER KEY`.
+- OpenCode stores an OpenRouter API credential in `~/.local/share/opencode/auth.json`.
+- OpenCode's OpenRouter credential is also a runtime key, not a management key.
+- OpenCode's `/api/v1/key` metadata matched Mac Hermes metadata for the same shared runtime key.
 
-Therefore, current evidence indicates Mac Hermes and Windows runtime paths are using the same shared OpenRouter runtime key.
+Therefore, current evidence indicates Mac Hermes, Mac OpenCode, Windows runtime paths, and the vault fallback path are using the same shared OpenRouter runtime key.
+
+Logan added several BYOK routes on 2026-05-20. Current `/api/v1/key` metadata now shows BYOK usage and `include_byok_in_limit: true` for the runtime key. This is expected in light of the BYOK change and should not be treated as unexplained drift by itself.
 
 ## Current Risk Picture
 
@@ -122,6 +127,20 @@ Important caveat:
 - Generic shell execution through `openclaw nodes invoke` remains intentionally constrained.
 - This is the right security posture for management-key work.
 - Do not tunnel arbitrary secret-bearing shell commands through OpenClaw unless a scoped, approved execution path exists.
+
+OpenClaw model-provider configuration on Mac:
+
+- OpenRouter plugin enabled.
+- OpenRouter provider base URL: `https://openrouter.ai/api/v1`.
+- OpenRouter API mode: OpenAI-compatible completions.
+- Primary model: `openrouter/mistralai/mistral-medium-3-5`.
+- Fallbacks:
+  - `openrouter/mistralai/mistral-small-2603`
+  - `openrouter/anthropic/claude-sonnet-4.6`
+  - `openrouter/openai/gpt-5.3-codex`
+  - `openrouter/mistralai/mistral-large-2512`
+- Secret audit clean: `plaintext=0`, `unresolved=0`, `shadowed=0`, `legacy=0`.
+- OpenRouter SecretRef provider is configured and redacted by `openclaw config get`, as expected.
 
 ## BEEFSTACK Alignment
 
@@ -191,23 +210,21 @@ agent request
 
 Still needs mapping:
 
-- OpenCode runtime key path.
-- Whether Mac OpenClaw gateway is using OpenRouter directly or only through agent/provider config.
+- Whether Mac OpenClaw gateway resolves to the same exact `SWARM ROUTER KEY` at call time, although model/provider config and clean SecretRef audit indicate OpenRouter is active and SecretRef-backed.
 - Whether any old scripts still read `.op/openrouter.env` as plaintext fallback rather than 1Password reference.
 - Whether a future dedicated Hermes runtime key should be created before changing Hermes config.
 - Whether OpenRouter workspace-level budgets or guardrails explain the prior `403`.
 
 ## Proposed Next Steps
 
-1. Complete read-only runtime mapping for OpenCode.
-2. Complete read-only OpenClaw model-provider mapping.
-3. Decide whether `SWARM ROUTER KEY` should remain the emergency shared fallback.
-4. If Logan approves, use the Management Key to create separate capped runtime keys:
+1. Decide whether `SWARM ROUTER KEY` should remain the emergency shared fallback.
+2. If Logan approves, use the Management Key to create separate capped runtime keys:
    - `Hermes Mac Runtime Key`
    - `Windows Codex Runtime Key`
    - `OpenCode Runtime Key`
-5. Update configs one surface at a time, testing after each change.
-6. Record each mutation in an audit note with hash prefixes only.
+3. Update configs one surface at a time, testing after each change.
+4. Record each mutation in an audit note with hash prefixes only.
+5. Investigate OpenRouter workspace/account/BYOK policy if budget errors recur despite key-level limits being null.
 
 ## Standing Rule
 
