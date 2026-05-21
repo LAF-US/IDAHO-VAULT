@@ -31,8 +31,8 @@ Logan's canonical agentic LLM provider rankings, in order of preference:
 |------|-------------|-------|
 | 1 | **Mistral** | Primary preference. Best local model coverage via Ollama. |
 | 2 | **Claude** (Anthropic) / **ChatGPT·Codex** (OpenAI) | Tied. Both tier-1 cloud providers. |
-| 3 | **Perplexity** / **Grok** (xAI) | Tied. Search-augmented and frontier tiers. |
-| 4 | **Meta / Llama** | Strong local fallback via Ollama (llama3.2-vision). |
+| 3 | **Grok** (xAI) | Frontier alternate when allowed and useful. |
+| 4 | **Perplexity** / **Meta·Llama** | Perplexity belongs alongside Meta in the preference layer: useful alternate/search-augmented cloud plus strong local/open model family. |
 | 5 | **Proton / Lumo** | Privacy-first providers. |
 | 6 | **Kimi** (Moonshot) / **DeepSeek** | Tied. Capable alternatives. |
 | 7 | **Copilot** (Microsoft) | Last resort cloud option. |
@@ -101,8 +101,8 @@ The current model-family preference stack is:
 ```
 1. Mistral
 2. Claude / ChatGPT-Codex
-3. Perplexity / Grok
-4. Meta-Llama
+3. Grok
+4. Perplexity / Meta-Llama
 5. Proton-Lumo
 6. Kimi / DeepSeek
 7. Copilot
@@ -206,15 +206,18 @@ As of 2026-05-18, the MacBook runtime contract is:
 **Hermes Agent**
 - Universal doctrine: local-first remains the desired system posture.
 - MacBook operational override: primary is `openrouter` / `mistralai/mistral-medium-3-5` because this hardware has repeatedly hung on local `devstral:latest` calls.
-- Fallback chain:
+- Fallback chain as of 2026-05-21:
   - `openrouter` / `mistralai/mistral-small-2603`
+  - `openrouter` / `anthropic/claude-haiku-4.5`
   - `openrouter` / `anthropic/claude-sonnet-4.6`
   - `openrouter` / `openai/gpt-5.3-codex`
+  - `custom` / `mistral-small-2603` via direct Mistral API
   - `openrouter` / `mistralai/mistral-large-2512`
 - `OPENROUTER_API_KEY` is present in `~/.hermes/.env`; keep the source of truth in the vault's `.op/openrouter.env` / 1Password path.
 - Local Ollama remains a preferred doctrine and an explicit/manual contingency, but this MacBook should not pretend local inference is the reliable live default.
 - Gemini is allowed for TTS / Google infrastructure only. It is not part of the agentic LLM fallback chain.
 - BYOK caveat: when OpenRouter reports `is_byok: true` and a provider-specific `429`, Hermes should prefer a fallback in a different provider bucket instead of immediately retrying the same provider through a direct API route.
+- Direct Mistral remains configured, but it is now late in the chain as an OpenRouter transport/account contingency rather than the immediate fallback after a Mistral BYOK rate limit.
 
 **OpenCode**
 - OpenCode is the third leg as a coding/agent execution interface.
