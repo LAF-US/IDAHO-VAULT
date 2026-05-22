@@ -19,7 +19,7 @@ jobs:
       - name: Checkout vault
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
         with:
-          fetch-depth: 2  # Need previous commit to diff
+          fetch-depth: 0
 
       - name: Setup vault environment
         uses: ./.github/actions/setup-vault
@@ -27,8 +27,13 @@ jobs:
       - name: Extract new URLs from changed notes
         id: extract
         run: |
-          # Get files changed in this push
-          git diff --name-only HEAD~1 HEAD -- '*.md' > /tmp/changed_files.txt
+          before="${{ github.event.before }}"
+          after="${{ github.sha }}"
+          if [[ "$before" == "0000000000000000000000000000000000000000" ]]; then
+            git ls-tree -r --name-only "$after" -- '*.md' > /tmp/changed_files.txt
+          else
+            git diff --name-only "$before" "$after" -- '*.md' > /tmp/changed_files.txt
+          fi
           echo "Changed files:"
           cat /tmp/changed_files.txt
 
@@ -152,4 +157,3 @@ jobs:
           BRANCH_NAME: ${{ steps.commit_push.outputs.branch_name }}
         run: |
           gh pr create --title "Automated Wayback Preservation Log" --body "Automated PR from wayback-preserve workflow." --base main --head "$BRANCH_NAME"
-
