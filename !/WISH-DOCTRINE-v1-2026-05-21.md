@@ -298,7 +298,9 @@ LICH'S WISH: extinction of all life
 JAKE'S WISH: change the Lich's words mid-utterance
   └─ Branch B (Main Timeline): Lich's wish redirected → spent on nothing
        → Lich dormant in Time Room (wish spent; no life to kill; torpor)
-       → Finn and Jake arrive asking about Citadel → Lich's opening
+       → Finn and Jake arrive; Lich does not acknowledge them
+       → Prismo describes Citadel prisoners → vocation-relevant trigger
+       → Lich activates; knocks heroes aside; kills Prismo
        → kills Prismo (cosmic crime; entry fee for Citadel operation)
        → Citadel: plans to recruit "the Ancients" as multiverse army
        → healing blood → Sweet P (plan ends at its first step)
