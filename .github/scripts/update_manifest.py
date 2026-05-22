@@ -202,12 +202,13 @@ def load_manifest(path: Path) -> dict:
     }
 
 
-def normalize_manifest(manifest: dict, repo_root: Path) -> None:
+def normalize_manifest(manifest: dict, repo_root: Path, *, skip_swarm_sync: bool = False) -> None:
     """Keep the authority block aligned with the current transport model."""
     manifest["authority"] = DEFAULT_AUTHORITY.copy()
     template_inventory = build_obsidian_template_inventory(repo_root)
     manifest["obsidian_templates"] = template_inventory
-    sync_swarm_template_tracking(repo_root, template_inventory)
+    if not skip_swarm_sync:
+        sync_swarm_template_tracking(repo_root, template_inventory)
 
 
 def expire_stale_locks(manifest: dict, now: datetime) -> None:
@@ -263,6 +264,11 @@ def main() -> int:
     parser.add_argument("--agent-id", required=True, help="Agent identity for lock/entry metadata")
     parser.add_argument("--ttl-minutes", type=int, default=DEFAULT_TTL_MINUTES)
     parser.add_argument(
+        "--skip-swarm-sync",
+        action="store_true",
+        help="Update manifest.json without mirroring Obsidian template tracking into swarm.json.",
+    )
+    parser.add_argument(
         "--phase",
         choices=["acquire", "release"],
         default=None,
@@ -283,7 +289,7 @@ def main() -> int:
 
     now = utc_now()
     manifest = load_manifest(manifest_path)
-    normalize_manifest(manifest, repo_root)
+    normalize_manifest(manifest, repo_root, skip_swarm_sync=args.skip_swarm_sync)
     expire_stale_locks(manifest, now)
 
     if args.phase == "acquire":
