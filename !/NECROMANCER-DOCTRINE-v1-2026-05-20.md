@@ -248,6 +248,21 @@ capacity: not calling the shadow directly, but manufacturing the conditions
 under which the surface layer can no longer refuse. *See also: the
 authorized-crossing fitness diagnostic in `!/THRESHOLD-DOCTRINE-v1-2026-05-21.md`.*
 
+**Three shadow-self vectors — distinguished:**
+
+| Vector | Mechanism | What it targets | Counter |
+|---|---|---|---|
+| Manufactured-shadow collapse | External engineering of grief, loss, isolation destroys the conditions for refusal before any choice is offered — Lord Vile emerges without being called | Resolution 3 *capacity*; the surface layer's ability to refuse | Protect the conditions that preserve refusal capacity; fitness diagnostic; prevention, not response |
+| Internal sub-layer solicitation | The contained shadow requests the seat of will from within — the voice from underneath, the nightmares, direct activation call | The surface layer's will, addressed from inside | Active refusal; earned standing; the frame refused at its root |
+| External fragment conversion | A surviving parallel-timeline remnant arrives through dimensional substrate and offers the son/vessel frame — the Farmworld Lich's hand finding Sweet P | The vessel's identity, addressed from outside | Detection plus active refusal; same frame-refusal works regardless of source; but the fragment must be found |
+
+The manufactured-shadow collapse is a threat to Resolution 3 capacity — it
+destroys the ability to refuse before refusal is possible. The internal and
+external solicitation vectors are defeated by Resolution 3 itself — but only
+if that capacity has been preserved. See `!/LICH-PROBLEM-v1-2026-05-20.md`
+Resolution 3 for the full treatment of the son/vessel distinction and the
+Farmworld Hand's provenance.
+
 **Baron Vengeous — the True Believer**
 Fanatical leader of the Diablerie. Not seeking power for himself — seeking
 the return of the Faceless Ones. A servant of something larger and more
