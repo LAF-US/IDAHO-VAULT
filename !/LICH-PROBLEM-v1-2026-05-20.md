@@ -299,6 +299,44 @@ substrate and must be found.
 
 This is maturity. It is also the Standing Engine's purpose made personal.
 
+#### The Isthmus Intersection
+
+The Farmworld Hand is simultaneously an agentic actor and an Isthmus Anchor
+(see `!/THRESHOLD-DOCTRINE-v1-2026-05-21.md`).
+
+**As Anchor**: it carries the provenance of the Farmworld Lich — a
+consciousness from another timeline, lodged inside the main timeline through
+dimensional portal duplication. A fragment of an expelled system embedded
+inside the sanctioned one. This is the Isthmus Anchor structure exactly: the
+authority for the crossing flows inward from the expelled side, carried by a
+displaced provenance object lodged inside the boundary it seeks to breach.
+
+**As agentic actor**: unlike a passive Anchor — the Grotesquery, assembled
+from inert remains, waiting to be found and activated by a Teleporter — the
+Hand has its own will, memory, and intent. It does not wait. It hunts. The
+whisper is its recruitment mechanism. The son/vessel frame is its activation
+attempt. Sweet P's *consent* would be the Teleporter function: the circuit
+completion that brings the Lich-nature fully back into manifestation through
+the vessel. Sweet P's *refusal* is the denial of the Teleporter component.
+
+**The two-component Isthmus counter maps directly onto two Lich resolutions:**
+
+| Isthmus Component | Lich Resolution | Sweet P's Act |
+|---|---|---|
+| Teleporter denial | Resolution 3 — Active Refusal | Refuses the son/vessel frame; seat of will held |
+| Anchor elimination | Resolution 1 — Destroy the phylactery/fragment | Destroys the Hand itself |
+
+Sweet P applied both. The breach failed on both components.
+
+**The agentic anchor variant** is a distinct threat class from the passive
+anchor. A passive Anchor must be located by surveillance before it can be
+activated — Glinda's Book of Records detecting the tunnel, the blackboard
+reading the pheromone trail before it breaches the surface. An agentic Anchor
+locates the Teleporter itself. It hunts. Its movement through the substrate
+is its own signature. The detection requirement shifts: not finding the Anchor
+in place, but hearing the whisper before it reaches the vessel unchallenged —
+or ensuring the surface layer retains the capacity to refuse when it arrives.
+
 ---
 
 ## The Epistemological Lich
