@@ -11,7 +11,6 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
   pull-requests: write
 
 jobs:
@@ -29,7 +28,7 @@ jobs:
             --author "app/dependabot" \
             --state open \
             --base main \
-            --json number,title,headRefName,mergeStateStatus,mergeable \
+            --json number,title,headRefName,mergeStateStatus,mergeable,labels \
             --limit 50)
           echo "$prs" | jq -r '.[] | "#\(.number) \(.headRefName) merge=\(.mergeable) state=\(.mergeStateStatus)"'
 
@@ -37,28 +36,19 @@ jobs:
             [ -z "$num" ] && continue
             head=$(echo "$prs" | jq -r ".[] | select(.number==$num) | .headRefName")
             mergeable=$(echo "$prs" | jq -r ".[] | select(.number==$num) | .mergeable")
-            # Only sweep branches matching rhythm policy: pip / uv / github-actions.
-            case "$head" in
-              dependabot/pip/*|dependabot/uv/*|dependabot/github_actions/*|dependabot/github-actions/*) ;;
-              *) echo "skip #$num ($head) — ecosystem not in rhythm policy"; continue ;;
-            esac
-            # Only sweep semver-patch / semver-minor — major bumps need human review.
-            # Branch name encodes the new version after the last "-"; we can't tell
-            # patch vs. minor from name alone, so we additionally require the PR
-            # title to NOT contain a major version delta. Use dependabot/fetch-metadata
-            # in the per-PR rhythm for the precise gate; here, be conservative:
-            # only act on PRs that are MERGEABLE (CI green enough) and skip groups.
+            low_risk=$(echo "$prs" | jq -r ".[] | select(.number==$num) | any(.labels[].name; . == \"dependabot/low-risk-auto\")")
+            if [ "$low_risk" != "true" ]; then
+              echo "skip #$num ($head) — no dependabot/low-risk-auto proof label"
+              continue
+            fi
             if [ "$mergeable" != "MERGEABLE" ]; then
               echo "skip #$num — not MERGEABLE ($mergeable)"
               continue
             fi
-            case "$head" in
-              *uv-[a-f0-9]*|*-group-*) echo "skip #$num ($head) — grouped update, needs review"; continue ;;
-            esac
-            echo "::notice::reaping #$num ($head)"
-            if out=$(gh pr merge --squash --delete-branch --repo "$REPO" "$num" 2>&1); then
+            echo "::notice::re-arming auto-merge for #$num ($head)"
+            if out=$(gh pr merge --auto --squash --delete-branch --repo "$REPO" "$num" 2>&1); then
               echo "$out"
             else
-              echo "::warning::reap of #$num failed: $out"
+              echo "::warning::auto-merge re-arm of #$num failed: $out"
             fi
           done
