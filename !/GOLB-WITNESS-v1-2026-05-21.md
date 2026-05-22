@@ -302,6 +302,7 @@ before the spinoff:
 | Episode | Season | Frame | Key doctrinal detail |
 |---|---|---|---|
 | "Fionna and Cake" | S3E9 | Ice King reads story to captured Finn and Jake | First appearance; Ice King as author established |
+| "Mystery Dungeon" | S5E8 | Ice King leads dungeon crawl heist to reach the Ancient Sleeping Magi of Life Giving | **Love made action**: Ice King throws his F&C book into the Magi's fire to bring the characters to life; Magi brings the *book* to life instead — Monkey's Paw failure; vessel animated, not content |
 | "Bad Little Boy" | S5E11 | Marceline writes her own F&C story to show Ice King "how it's done" | Derivative authorship; Ice King insists his version is still better |
 | "The Prince Who Wanted Everything" | S6E9 | LSP brings Ice King a story about Lumpy Space Prince | LSP explicitly believes Ice King reading her story could make it real — "since Ice King originated the genderbent universe" |
 | "Five Short Tables" | S7E34 | Ice King's five vignettes; one segment features Ice Queen doing a table read of her own fan-fiction | **The Matryoshka episode** — confirmed |
