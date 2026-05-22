@@ -288,7 +288,52 @@ is no inside.
 
 ## IV. Simon & Fionna — The Dandelion Universe (S01E09–10)
 
-*Reference: "Casper & Nova" (S01E09) and "Cheers" (S01E10).*
+*Reference: "Casper & Nova" (S01E09) and "Cheers" (S01E10). The
+canon development of the Fionna-world begins in the original AT series
+Fionna and Cake episodes, long before the spinoff reveals the mechanics.*
+
+### The Canon Context
+
+*Logan holds the causal question open.*
+
+Throughout the original Adventure Time series, the Ice King — Simon Petrikov
+under the Crown's influence — wrote Fionna and Cake stories: a gender-swapped
+version of his world and the people in it. His own friends rewritten. His own
+world at a remove from itself. These were presented as his creative output
+across multiple seasons of the original show.
+
+In the Fionna and Cake spinoff (S01E04), Prismo reveals that he created an
+unauthorized Fionna and Cake universe and hid it within the Ice King's mind.
+The episode description does not specify which came first.
+
+Two readings are possible:
+
+**Ice King's original fanfic that Prismo and Ooo were fans of**: The Ice
+King's stories existed first and circulated within Ooo — other characters
+read them, reacted to them, knew them. Prismo, among those who loved the
+stories, actualized the fiction without institutional sanction and hid the
+result in the mind of their author.
+
+**Prismo's creation hidden in Simon's crazybrains that surfaced through
+writings**: Prismo created the universe first and hid it in the Ice King's
+mind; the Crown's influence and the resulting madness allowed the hidden
+universe to surface through the Ice King's writing — the stories were the
+hidden world expressing itself through its carrier.
+
+The causal direction may not matter greatly for doctrine. What holds in either
+reading: this universe is not a stranger's unauthorized creation that Simon
+happened to carry. It was woven into his creative life — either as his
+creation that Prismo actualized, or as Prismo's creation that lived in him
+long enough to become his fiction. The "unauthorized" descriptor is accurate
+as an institutional designation of Prismo's act. It does not capture the
+intimacy between Simon and the world he carried.
+
+When the Ice King became Simon — when the Crown's influence was removed —
+the universe lost its magical qualities. The sustaining link was severed by
+the carrier's healing. The universe survived without magic; Simon survived
+without the Crown; each adrift from the other.
+
+---
 
 The final arc crosses two episodes. In "Casper & Nova," after the Lich's
 absorption, GOLB performs a second act — not crushing, but displacement.
@@ -334,8 +379,9 @@ Before returning to his own universe, Simon gives Fionna a magical dandelion.
 
 Fionna blows on it. The seeds scatter.
 
-Fionna's world — the unauthorized universe Prismo created and hid within the
-Ice King's mind, the universe that lost its magic when Ice King became Simon,
+Fionna's world — the universe the Ice King authored, his own fiction made
+real by Prismo without institutional sanction and hidden within the very mind
+that wrote it; the universe that lost its magic when the author was healed;
 the universe Scarab arrived to erase — becomes an authorized universe.
 
 The authorization does not come from Prismo. It does not come from the Time
@@ -396,13 +442,25 @@ The successful responses to GOLB in the canon are:
 None of these are combat. The question with GOLB is never "how do we fight it"
 but "what is the right relationship to something that does not stop for you."
 
-**The authorization arc**: Unauthorized existence is not sustainable without
-either a carrier who maintains it (Ice King holding the universe) or the
-inhabitants achieving authorization from within. When the carrier fails, the
-window for the interior act opens — but it requires the right agent. Fionna
-is the right agent because she IS the unauthorized universe: she is the story
-that was unauthorized, and her act of blowing the dandelion is the universe
-asserting its own standing.
+**The authorization arc**: The Fionna-world's standing question is not simply
+"unauthorized existence seeking sanction." It is the arc of a world achieving
+independence from the relationship that produced it — whether that was the
+Ice King's creative imagination, or Prismo's actualization hidden in Simon's
+mind, or both in sequence. Either way, the world's existence was intimately
+bound to Simon's state, and when Simon's state changed (healing = loss of
+the Crown = loss of the world's magic), the world was adrift.
+
+Fionna is the right agent not merely because she is an inhabitant who can
+authorize from within, but because she IS the world made real — whatever
+direction the causation ran. Her act of blowing the dandelion is the
+world's inhabitants completing what neither the author nor the actualizer
+could complete for it. Simon giving her the dandelion is the healed carrier
+releasing the world to its own standing — passing the act of authorization
+to the one who lives there rather than the one who created or actualized it.
+
+The authorization does not override the institutional question. It supersedes
+it: the world achieves independence from its origin, and independence is what
+authorization ratifies.
 
 **The Casper/Nova recognition**: The grief that drives ritual (trying to revive,
 undo, restore) may be built on a misframing of the original loss. Simon's ritual
