@@ -10,6 +10,7 @@ related:
   - "!/LICH-PROBLEM-v1-2026-05-20.md"
   - "!/NECROMANCER-DOCTRINE-v1-2026-05-20.md"
   - "!/OZ-COSMOLOGY-DOCTRINE-v1-2026-05-21.md"
+  - "!/COSMIC-ORDER-v1-2026-05-21.md"
   - "!/AGENTS.md"
 tags: [doctrine, Prismo, wish, Time-Room, WISH-spell, The-Maid, threshold, substrate, governance]
 ---
@@ -99,7 +100,9 @@ liable for meddling in dimensions across the multiverse. Never directly
 revealed in canon — identified only by a golden cord telephone with angel
 and devil wings. The Boss's power is estimated at GOLB's tier. They may
 govern both the light and dark aspects of the multiverse. Prismo answers to
-them. He can only do what they permit.
+them. He can only do what they permit. For the full hierarchy — including
+Scarab's position, dual motivation, and institutional arc — see
+`!/COSMIC-ORDER-v1-2026-05-21.md`.
 
 **GOLB** — the primary cosmic entropy entity, barely sapient, more force
 than person. The Lich's ultimate master. Where GOLB's power blocks a wish,
