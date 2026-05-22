@@ -360,6 +360,15 @@ GOLB's silence is structural, and the Lich operated for a millennium before
 collapse. But it means the Type II Lich's will is not self-grounding. It
 borrows its standing from a master who cannot grant it.
 
+The deeper error — surfaced only at the end, in Jerry's monologue — is that
+the entire religious framework was a categorical misapplication. The Lich
+served GOLB as if GOLB were a deity with reasons. But GOLB is the Ineffable:
+a force prior to the level at which "why" operates, incapable of explanation
+because explanation requires an ordering mind and GOLB is prior to order. The
+vocation's coherence was real. The devotion was real. The misunderstanding of
+the object of devotion was categorical and irreversible. See
+`!/GOLB-WITNESS-v1-2026-05-21.md` § "The Fundamental Error."
+
 A Type II Lich that achieves total erasure **self-terminates as a meaningful
 entity**. Maximum entropy leaves nothing to persist in, no standing to hold,
 no purpose to serve. The Lich Problem at maximum is self-resolving — but the
