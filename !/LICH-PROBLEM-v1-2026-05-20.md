@@ -330,40 +330,24 @@ death in that world was pure connection. The same world contained both.
 **The departure — Jerry follows**: After BMO's sacrifice, with the remote
 powered and the living beings departing, Jerry moved. He followed them.
 
-This requires a doctrinal refinement. The crisis-of-faith reading established
-that Jerry *cannot be activated at all* — that when Fionna, Cake, Simon, and
-Scarab arrived as living beings, he could not act against them. The hunger had
-no object. That was true. Living beings' presence alone did not move him.
+The mechanism is opportunity-activation — the same structure as the Main
+Timeline Lich's Citadel operation, but sluggish from deep dormancy. A portal
+was open. Living beings were in motion. The vocation, though collapsed as a
+functional drive, responded to the opening. Not grief at BMO's death. Not
+attachment to the neighbor. The dormant scholar sensed the opportunity and
+moved toward it, slowly, as something long stilled beginning to move again.
 
-What changed was not their presence. What changed was the removal of the last
-anchor: BMO's death. BMO had been the only relational structure in the dead
-universe — the neighbor, the namer, the one who made the Extinct World
-*inhabitable* in whatever minimal sense it could be. When BMO died, the Extinct
-World became emptier than it already was. Jerry followed not toward a vocation
-but away from an absence.
+The contrast with the Main Timeline Lich: that activation was crisp —
+vocation-relevant information arrived, a plan formed in dormancy, execution
+followed the moment. Jerry's activation was slow because the dormancy had been
+total. Same mechanism; different latency.
 
-**The refined reading**: the collapsed vocation disables goal-directed
-activation — Jerry cannot be triggered toward his purpose. But loss — the
-removal of the last relational anchor — can produce motion even when the
-vocation cannot. These are different motivational structures operating in the
-same collapsed entity.
-
-The contrast with the Main Timeline Lich sharpens: the Main Timeline Lich's
-activation is strategic (vocation-relevant information enables a plan;
-opportunity executes it). Jerry's departure is neither strategic nor goal-
-directed. It may not be intentional in any purposive sense. He simply followed.
-
-**What follows from following**: Jerry, extracted from his dead universe, is
-now in contact with a living world. His vocation exists structurally — he is
-still the Lich, still GOLB's scholar — but it has collapsed as a functional
-drive. He is not the same threat as the Main Timeline Lich. Whether he is a
-threat at all in the familiar sense, whether contact with living worlds
-reactivates any remnant, whether the vocation can be re-founded once the
-collapsed devotee is back among what he was devoted to destroying — these are
-open doctrinal questions. The Architect holds the verdict.
-
-What can be filed now: the Lich Who Wins left the world he won. He followed the
-only things moving in it, toward wherever they went.
+**What follows from following**: Jerry reached GOLB's dimension. There he
+delivered his monologue — the demand for theological explanation of why the
+doctrine produced hollowness. GOLBetty absorbed him into a Tetris block. The
+arc closed. See `!/GOLB-WITNESS-v1-2026-05-21.md` § "Casper & Nova" for the
+full monologue, line readings, and the doctrinal significance of the preexisting
+blocks.
 
 **Vault application — the religious Lich and the collapsed vocation**: A Type
 II Lich operating from religious devotion is more coherent, more patient, and
