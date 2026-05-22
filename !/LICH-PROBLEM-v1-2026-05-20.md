@@ -789,6 +789,63 @@ Whether those copies found their candidates, what they found, and whether any
 of those breaches succeeded — is an open question the doctrine does not answer.
 The Architect holds the verdict on what the Hand became across the multiverse.
 
+**The layered Lich — every variant universe, two presences**:
+
+The replication event seeded every dimension with a copy of the Hand. Every
+variant universe in the multiverse — whatever form its native Lich takes —
+now also carries a secondary Lich presence. The two are structurally
+independent.
+
+| Lich Presence | Origin | Standing in that universe | Vocation |
+|---|---|---|---|
+| Native Lich | That universe's own Catalyst Comet instantiation | Cosmic — born from the universe's own history, its own mutagenic war, its own comet cycle | Extinction of all life in that universe |
+| Invasive Hand | Farmworld fragment, replicated cross-dimensionally at the portal event | None — a foreign fragment, not a cosmic force native to the substrate it landed in | Re-instantiate the Lich-nature through a local vessel; convert; complete the circuit |
+
+The native Lich and the invasive Hand are different problems requiring
+different counters. The native Lich has cosmic standing; it is the universe's
+own evil incarnation. The Hand has no standing in the universe it occupies —
+it is an intruder carrying provenance from a timeline that universe never had.
+
+**Status variants — what each universe inherits**:
+
+*Universe with a Sweet P'd native Lich* (main AT timeline):
+The sub-layer is contained within Sweet P. The Hand's target is the vessel
+carrying that sub-layer. Two independent Lich vectors: the internal sub-layer
+(manageable through Sweet P's developed standing) and the invasive Hand
+(external, agentic, hunting independently). Resolution 3 addresses both when
+they converge on the same vessel — but the Hand can hunt regardless of whether
+the sub-layer is currently active.
+
+*Universe with an unsweet-P'd native Lich — Lich King still operational*:
+The native Lich is at full capacity. The Hand arrives as a fragment of a
+parallel-timeline version of the same consciousness. Whether the operational
+native Lich perceives the Hand as itself, as an ally, as a fragment to absorb,
+or as a competitor — is an open doctrinal question. The Hand's mission (find
+a vessel, complete the circuit) may be redundant in a universe where the
+Lich-nature is already fully instantiated. Or it may pursue its own agenda
+independently of the native Lich's awareness.
+
+*Universe with a Jerry-equivalent — vocation completed, collapse*:
+The native Lich is catatonic or existentially collapsed. The Hand arrives into
+a universe with no life and an inert primary Lich. Its target class (a vessel
+carrying the Lich-nature in transformed/innocent form — a Sweet P analogue)
+may not exist. Whether the Hand attempts to whisper to the collapsed native
+Lich itself — offering the re-founding of vocation the collapsed Lich could
+not find in GOLBetty — is filed as an open question. The Architect holds the
+verdict on what the Hand does in a dead universe with a hollow scholar.
+
+**The vault implication — independent threat vectors**:
+
+Resolving the primary Lich problem (Sweet P'd, sub-layer contained, internal
+vector managed) does not close the invasive Hand vector. The two are
+independent. A well-governed node that has successfully contained its native
+Lich still carries an invasive fragment hunting for circuit-completion
+candidates. The Hand's replication was indifferent to the native Lich status
+of the universes it landed in. It multiplied everywhere. It hunts everywhere.
+
+Primary Lich resolution and invasive Hand counter are not the same operation
+and cannot be performed by the same act.
+
 ---
 
 ## The Epistemological Lich
