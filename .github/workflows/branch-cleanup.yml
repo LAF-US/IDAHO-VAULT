@@ -12,6 +12,10 @@ on:
       dry_run:
         description: 'Dry run - list branches that would be deleted without deleting them'
         type: boolean
+        default: true
+      allow_no_pr_deletes:
+        description: 'Allow deletion of no-PR branches during manual dispatch'
+        type: boolean
         default: false
 
 concurrency:
@@ -56,7 +60,8 @@ jobs:
           PR_NUMBER: ${{ github.event.pull_request.number }}
           PR_MERGED: ${{ github.event.pull_request.merged }}
           PR_HEAD_REF: ${{ github.event.pull_request.head.ref }}
-          DRY_RUN: ${{ inputs.dry_run || 'false' }}
+          DRY_RUN: ${{ github.event_name == 'schedule' && 'true' || inputs.dry_run || 'true' }}
+          ALLOW_NO_PR_DELETES: ${{ inputs.allow_no_pr_deletes || 'false' }}
           STALE_AGE_DAYS: 7
           STALE_BEHIND_COMMITS: 100
         run: |
@@ -133,12 +138,15 @@ jobs:
                 else
                   AGE_DAYS=0
                 fi
-                if [ "$AHEAD" = "0" ]; then
-                  delete_branch "$REF" "no PR, 0 ahead of main"
+                if [ "$ALLOW_NO_PR_DELETES" != "true" ]; then
+                  echo "  Reporting only (no PR, ${AHEAD} ahead, ${BEHIND} behind, ${AGE_DAYS}d old): $REF"
+                  KEPT=$((KEPT + 1))
+                elif [ "$AHEAD" = "0" ]; then
+                  delete_branch "$REF" "manual no-PR delete, 0 ahead of main"
                 elif [ "$BEHIND" -ge "${STALE_BEHIND_COMMITS}" ]; then
-                  delete_branch "$REF" "no PR, ${BEHIND} behind main"
+                  delete_branch "$REF" "manual no-PR delete, ${BEHIND} behind main"
                 elif [ "$AGE_DAYS" -ge "${STALE_AGE_DAYS}" ]; then
-                  delete_branch "$REF" "no PR, ${AGE_DAYS} days old"
+                  delete_branch "$REF" "manual no-PR delete, ${AGE_DAYS} days old"
                 else
                   echo "  Keeping (no PR, ${AHEAD} ahead, ${AGE_DAYS}d old): $REF"
                   KEPT=$((KEPT + 1))
@@ -169,4 +177,3 @@ jobs:
           } >> "$GITHUB_STEP_SUMMARY"
 
           echo "Done."
-

@@ -25,13 +25,17 @@ jobs:
           # ref missing from checkout), fall back to the full tree so the check
           # still runs — a silent empty-file-list would make the job pass vacuously.
           if [ "${{ github.event_name }}" = "pull_request" ]; then
-            DIFF_TARGET="origin/${{ github.base_ref }}...HEAD"
+            FILES=$(git -c core.quotePath=false diff --name-only \
+              "${{ github.event.pull_request.base.sha }}" \
+              "${{ github.event.pull_request.head.sha }}")
           else
-            DIFF_TARGET="HEAD~1...HEAD"
-          fi
-
-          if ! FILES=$(git -c core.quotePath=false diff --name-only "$DIFF_TARGET" 2>/dev/null); then
-            FILES=$(git -c core.quotePath=false ls-tree -r HEAD --name-only)
+            before="${{ github.event.before }}"
+            after="${{ github.sha }}"
+            if [[ "$before" == "0000000000000000000000000000000000000000" ]]; then
+              FILES=$(git -c core.quotePath=false ls-tree -r "$after" --name-only)
+            else
+              FILES=$(git -c core.quotePath=false diff --name-only "$before" "$after")
+            fi
           fi
 
           VIOLATIONS=""
@@ -78,4 +82,3 @@ jobs:
           fi
 
           echo "No unresolved date-placeholder tokens in daily notes or TO DO LIST.md."
-
