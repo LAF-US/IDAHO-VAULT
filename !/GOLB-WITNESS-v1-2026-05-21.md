@@ -337,13 +337,55 @@ King's head — is a deliberate plant for the spinoff's revelation and
 supports this reading: Prismo was actively downloading into the Ice King
 the whole time.
 
-The causal direction may not matter greatly for doctrine. What holds in either
-reading: this universe is not a stranger's unauthorized creation that Simon
-happened to carry. It was woven into his creative life — either as his
-creation that Prismo actualized, or as Prismo's creation that lived in him
-long enough to become his fiction. The "unauthorized" descriptor is accurate
-as an institutional designation of Prismo's act. It does not capture the
-intimacy between Simon and the world he carried.
+What holds in either reading: this universe is not a stranger's unauthorized
+creation that Simon happened to carry. It was woven into his creative life —
+either as his creation that Prismo actualized, or as Prismo's creation that
+lived in him long enough to become his fiction. The "unauthorized" descriptor
+is accurate as an institutional designation of Prismo's act. It does not
+capture the intimacy between Simon and the world he carried.
+
+**Reading 1 + Reading 2 — The Synthesis**
+
+The two readings are not competing hypotheses. They describe the same
+structure at different levels of causation.
+
+Prismo did what LSP attempted — but as a cosmic being, he did it
+*metaphysically*. LSP's move was: recognize the canonical author's
+reality-generative standing, then route a derivative work through that
+standing by having him read it. Prismo's move was constitutive rather than
+derivative: embed the universe directly inside the canonical author's mind.
+Not through the channel — *as* the channel.
+
+In the spinoff, Prismo mentions being able to hide the universe there
+*because of the Crown's chaotic interference*. The Crown's madness was not
+incidental — it was the mechanism. The noise floor of disrupted
+consciousness the Crown generated provided concealment; the interference
+that made Simon's mind volatile also made it a viable vessel for something
+that needed to remain hidden. Prismo lodged the universe in the static.
+
+This means the two readings are entangled at the source: the Crown produced
+the madness; the madness produced the stories (Reading 1 — surface
+expression); the madness also concealed the universe Prismo had placed
+there (Reading 2 — substrate). Ice King's creative acts were happening in
+the same mind where the hidden universe already lived. The author was
+writing from inside it, or beside it, or above it — the Crown's
+interference made both possible simultaneously.
+
+LSP saw the surface of this structure from outside and tried to exploit the
+canonical author's standing. Prismo had already worked the structural
+condition directly: the Crown as embedding mechanism, Simon's mind as
+vessel, the creative acts as the visible exhaust of something running
+underneath.
+
+When the Crown was removed and Simon was healed, the embedding mechanism
+broke. The universe lost its magic not merely because the carrier was
+healed, but because the chaotic interference that kept the universe lodged
+— that sustained the channel — was gone. The Crown was both prison (for
+Simon) and medium (for the hidden world). Healing one severed the other.
+
+The dandelion is the correction to this severance: authorization from
+within, by the inhabitants, independent of the channel that originally
+embedded the world there.
 
 **The Matryoshka Doll — Emanationism in practice**: In the original AT series,
 there is a meta episode in which the Ice Queen — the gender-swapped Ice King
