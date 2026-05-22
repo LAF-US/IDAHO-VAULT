@@ -163,13 +163,34 @@ end of the war, the Lich came into being through the mutagenic waste it
 produced. His career spans the thousand-year history of Ooo: multiverse-spanning
 operations toward the extinction wish that was intercepted.
 
-**Terminus**: *Escape from the Citadel*. After the wish interception, the Lich
-killed the original Prismo — a separate act; a substrate attack to commit a
-cosmic crime and gain access to the Citadel (not revenge, tactics). At the
-Citadel, Finn's grass sword makes contact with Citadel Guardian blood — a
-massive healing force — and overwhelms the Lich. The result is not destruction:
-transformation. The Lich is reduced to a giant, gentle baby. Left at Tree
-Trunks and Mr. Pig's doorstep. Named Sweet Pig-Trunks. Named Sweet P.
+**The Citadel operation**: After the wish interception, the Lich killed the
+original Prismo — a substrate attack to commit a cosmic crime and be admitted
+to the Citadel. The purpose was not revenge for the intercepted wish. His own
+monologue at the Citadel states it:
+
+> *"You are alone, child. There is only darkness for you, and only death for
+> your people. These Ancients are just the beginning. I will command a great
+> and terrible army; and we will sail to a billion worlds. We will sail until
+> every light has been extinguished. You are strong, child. But I am beyond
+> strength. I am the end. And I have come for you, Finn."*
+
+The Citadel is a prison for cosmic criminals — the Ancients. The Lich's plan:
+commit a cosmic crime to be taken there, free and recruit the Ancients as the
+first wave of a multiverse-spanning army. Prismo's death was the entry fee.
+The army was the objective. Killing Prismo was not incidental and not emotional
+— it was the specific mechanism that opened the specific door.
+
+Note: in this monologue the Lich calls himself *"the end"* — a primary cosmic
+force, not GOLB's vassal. The servant framing and the autonomous-force framing
+both appear in canon. The Extinct World collapse (the religious devotee who
+found the temple empty) favors the servant reading; the Citadel speech
+presents as primary. The Architect holds the verdict.
+
+**Terminus**: At the Citadel, Finn's grass sword makes contact with Citadel
+Guardian blood — a massive healing force — and overwhelms the Lich. The result
+is not destruction: transformation. The Lich is reduced to a giant, gentle
+baby. Left at Tree Trunks and Mr. Pig's doorstep. Named Sweet Pig-Trunks.
+Named Sweet P.
 
 The Lich's spirit was not destroyed. It became a sub-layer — documented in
 Resolution 2 and Resolution 3 below.
