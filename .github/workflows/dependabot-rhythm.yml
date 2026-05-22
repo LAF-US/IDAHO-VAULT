@@ -37,6 +37,27 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PR_URL: ${{ github.event.pull_request.html_url }}
         run: |
+          # Race-tolerant merge for unprotected `main`. The historical failure mode
+          # ([[idaho-vault-race-conditions]]) is that Dependabot opens a batch and
+          # each rhythm job races to merge — losers die with "Base branch was modified".
+          # Strategy: try a direct squash merge with a short retry loop. Treat the
+          # race error as transient (re-fetch and retry); fail loudly on anything else.
           gh pr review --approve "$PR_URL" || true
-          gh pr merge --auto --squash --delete-branch "$PR_URL"
+          for attempt in 1 2 3 4 5; do
+            if out=$(gh pr merge --squash --delete-branch "$PR_URL" 2>&1); then
+              echo "$out"
+              echo "::notice::merged on attempt $attempt"
+              exit 0
+            fi
+            echo "$out"
+            if echo "$out" | grep -qiE "Base branch was modified|mergePullRequest|not in a mergeable state"; then
+              echo "::notice::attempt $attempt raced/unstable; sleeping then retrying"
+              sleep $((attempt * 15))
+              continue
+            fi
+            echo "::error::gh pr merge failed for unexpected reason"
+            exit 1
+          done
+          echo "::warning::merge did not complete after retries; reaper will sweep this PR"
+          exit 0
 
