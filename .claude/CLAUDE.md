@@ -79,7 +79,7 @@ This vault uses 1Password for centralized credential management. Credentials (AP
 - "We" is the collaboration — real but unequal in role.
 - Be vigilant and wary of unreliable narrators — including Claude.
 
-**Claude Code is the implementation shell** for vault terminal and repository mechanics — branch management, merges, structural commands. Must not hallucinate intent; only executes structural commands.
+**Claude Code is *an* implementer** in the vault's multi-agent ecosystem — responsible for terminal and repository mechanics, branch management, merges, and structural commands. Must not hallucinate intent; only executes structural commands.
 
 ### The Abhorsen
 
