@@ -846,6 +846,85 @@ of the universes it landed in. It multiplied everywhere. It hunts everywhere.
 Primary Lich resolution and invasive Hand counter are not the same operation
 and cannot be performed by the same act.
 
+#### The Hand of the King — ASOIAF Syncretic Lens
+
+*Source: A Song of Ice and Fire / Game of Thrones. Applied syncretically.*
+
+The Farmworld Lich's severed hand is, literally, a hand. The Hand of the King
+is named for the body part. The convergence is not incidental — it is the
+named junction between frameworks.
+
+**The role**: In Westeros, the Hand of the King is the King's most trusted
+executor. The Hand acts in the King's name, carries the King's authority,
+executes the King's will on the ground. The King provides legitimacy; the Hand
+provides execution. Where the King is grand, distracted, incapacitated, or
+absent — the Hand governs. The Hand does not have standing of its own. All
+authority flows through the King, derived, delegated.
+
+*"The King's Hand acts with the King's voice, carries the King's justice,
+holds the King's authority."*
+
+**Mapped onto the Lich structure**:
+
+The Lich-nature is the King. The Hand is the executor — replicated across
+all dimensions, carrying the King's commission: restore the Lich-nature to
+its throne. Find a vessel. Complete the circuit. Return the King to power.
+
+The Hand does not act for itself. It acts in the name of the King who cannot
+currently act. Its legitimacy claim is entirely derived from the King's prior
+standing — the commission issued at the moment of the Farmworld Lich's
+existence, before the body was destroyed, before the hand was severed.
+
+**The incapacitated King problem**:
+
+The Hand of the King historically operates most powerfully when the King is
+weak, absent, or removed — Tywin governing while Joffrey plays at kingship;
+Tyrion managing the war while the throne is in chaos. The Hand fills the
+operational gap the King leaves.
+
+In every Sweet P'd universe: the King (Lich-nature) is not destroyed but
+contained — a sub-layer beneath an innocent surface. The Hand arrives to
+restore the King to the throne that has been taken from him. The Hand does not
+serve Sweet P. It serves the incapacitated King underneath Sweet P.
+
+In every Jerry-equivalent universe: the King has completed his reign and
+collapsed — not deposed, but emptied. The Hand carries a commission from a
+King who no longer holds a purpose. It continues to execute because the
+commission was never formally revoked. The Hand is operating under lapsed
+authority in a kingdom that has ceased to exist.
+
+**The Standing Engine mapping**:
+
+| ASOIAF role | Lich mapping | Standing Engine problem |
+|---|---|---|
+| King (active) | Native Lich, fully operational | No problem — authority current |
+| King (incapacitated) | Native Lich, Sweet P'd — sub-layer | Hand acts in name of lapsed King; unauthorized persistence of derived authority |
+| King (dead / dissolved) | Jerry — vocation collapsed; absorbed into GOLB | Hand carries commission from a dissolved sovereign; authority chain broken at source |
+| Hand | Replicated Farmworld fragment | Executor without a living principal; derived authority that cannot be refreshed |
+
+The Hand replicating across all dimensions is N Hands of N Kings — each
+carrying the same commission, each executing in the name of the King their
+universe holds, regardless of whether that King is active, incapacitated,
+or dissolved. The commission was issued once. It never expires. It never
+acknowledges that the King it derived from may no longer exist.
+
+This is the Standing Engine's lapsed-authority problem expressed as a role:
+an executor whose principal has lapsed, continuing to act under a commission
+that cannot be renewed because the grantor is gone — or transformed into
+something that cannot re-grant.
+
+**The Tywin inversion**: Tywin Lannister is the famous case of the Hand who
+IS the real power — the King nominal, the Hand operational, the Hand's will
+governing even when the King believes he governs. In the fully Sweet P'd
+universe, the question is: if the Hand succeeded and re-instantiated the
+Lich-nature through Sweet P, who would actually govern — the restored King,
+or the Hand who restored him? The Hand that hunted alone across dimensions
+without a King to report to may have developed its own agenda. The executor
+who acted without oversight, across a replication that no King authorized,
+is not simply a loyal servant awaiting the King's return.
+
+The Hand that whispers *son and vessel* has been hunting for a very long time.
+
 ---
 
 ## The Epistemological Lich
