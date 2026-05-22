@@ -242,12 +242,19 @@ against if the wisher does not know an interceptor is present.
 
 The main timeline Lich then — Season 6, "Wake Up" — killed the original
 Prismo separately: a substrate attack on the sleeping old man, to commit a
-cosmic crime and gain access to the Citadel. This was not revenge for the wish;
-it was a separate tactical move. The Lich's one wish was already gone. The
-Prismo assassination is a distinct act from the wish interception.
+cosmic crime and be admitted to the Citadel. Not revenge for the intercepted
+wish. The Citadel is a prison for cosmic criminals — the Ancients. His plan was
+to recruit them as the first wave of a multiverse-spanning army. His monologue
+at the Citadel states the objective directly: *"These Ancients are just the
+beginning. I will command a great and terrible army; and we will sail to a
+billion worlds. We will sail until every light has been extinguished."* Prismo's
+death was the entry fee for that operation. The assassination and the wish
+interception are distinct acts: one is the mechanism of his defeat; the other
+is his next campaign.
 
 The main timeline Lich reached the Citadel, was overwhelmed by healing blood
-from a wounded Citadel Guardian, transformed into Sweet P. See LICH-PROBLEM.
+from a wounded Citadel Guardian, transformed into Sweet P — the army-building
+campaign ended at its first step. See LICH-PROBLEM.
 
 ---
 
@@ -290,8 +297,9 @@ LICH'S WISH: extinction of all life
 
 JAKE'S WISH: change the Lich's words mid-utterance
   └─ Branch B (Main AT): Lich's wish redirected → spent on nothing
-       → Lich kills original Prismo (Season 6, separate act)
-       → Lich at Citadel → healing blood → Sweet P transformation
+       → Lich kills original Prismo (commits cosmic crime to enter Citadel)
+       → Citadel: plans to recruit "the Ancients" as multiverse army
+       → healing blood → Sweet P transformation (plan fails at terminus)
        → Lich spirit persists as sub-layer
        → [Branch C Hand arrives from outside → "Whispers"]
 
