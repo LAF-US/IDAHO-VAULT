@@ -189,6 +189,12 @@ cannot hear. That the address was always to something that could not receive it.
 He becomes a Tetris block. The same blocks that orbit GOLB in every appearance
 — **including appearances before Betty merged with GOLB**.
 
+The episode description for "Casper & Nova" confirms the verb: GOLB *crushes*
+the Lich. The block is what compression produces — not dissolution, not
+formlessness, but compression into a unit of pre-existing substance identical
+in form to every block GOLB has produced before, regardless of what was
+crushed to make it.
+
 This detail is doctrinal: the blocks predate GOLBetty. They are not Betty's
 creation or GOLBetty's act of destruction. They are GOLB's pre-existing
 substance. Other beings, other matter, were absorbed into GOLB's body before
@@ -280,55 +286,146 @@ is no inside.
 
 ---
 
-## IV. Simon & Fionna — The Dandelion Universe (S01E10 "Cheers")
+## IV. Simon & Fionna — The Dandelion Universe (S01E09–10)
 
-*[Structure pending Logan's direction. Verbatim lines to be supplied.]*
+*Reference: "Casper & Nova" (S01E09) and "Cheers" (S01E10).*
 
-The finale arc:
+The final arc crosses two episodes. In "Casper & Nova," after the Lich's
+absorption, GOLB performs a second act — not crushing, but displacement.
+GOLB transfers Simon's consciousness into Shermy, a young cat-boy in the
+far future Land of Ooo, glimpsed briefly in the main show's epilogue.
 
-- Simon's consciousness transferred into Shermy (the small cat-boy from the
-  far future, seen in the main show's epilogue)
-- The universe — which had existed inside Simon's head as a story GOLB was
-  keeping — removed from his head by GOLBetty
-- The universe turned into a dandelion
-- Simon passes the dandelion through the still-open portal to Fionna
-- Fionna blows on it — the seeds scatter — the universe becomes "canon,"
-  transferred from Simon's head into the custody of the people who live in it
+Simon finds himself in a library. He is accompanied by Beth. There is a
+choose-your-own-adventure book on the shelf.
 
-GOLBetty's role in this resolution: *[Logan to supply / Abhorsen to research
-once verbatim lines are available]*
+The book is called *Casper & Nova*.
 
-The vault application pending full filing: the universe as a story held inside
-a person, made real by being passed to others and blown into the world.
+Simon navigates it. He uses every available decision. He exhausts the choices
+Casper has. He dooms Nova.
 
 ---
 
-## Vault Mappings — Preliminary
+### The Recognition
 
-These are structural observations filed before full dialogue is in hand.
-Subject to revision when Logan supplies the verbatim lines from "Casper & Nova."
+In "Cheers," completing the book produces the recognition Simon could not
+arrive at through grief alone:
+
+**He overlooked Betty's sacrifice.**
+
+The ritual framing — Simon attempting to revive Betty across the whole series,
+to undo the merger, to restore what was lost — was built on a misframing of
+the original event. Betty's merger with GOLB was not something that happened
+to Betty. It was something Betty chose.
+
+The choose-your-own-adventure structure is the instrument of the revelation:
+Casper navigates; Nova bears the consequence. Casper's choices doom Nova. Simon
+had been the one navigating. Betty had been the one who bore the consequence —
+and she bore it willingly. She took the wheel of something that would otherwise
+operate without direction, because her love for Simon needed somewhere to go.
+
+Simon had been trying to revive her as if she were lost. She was not lost.
+She chose to go.
+
+---
+
+### The Dandelion
+
+Before returning to his own universe, Simon gives Fionna a magical dandelion.
+
+Fionna blows on it. The seeds scatter.
+
+Fionna's world — the unauthorized universe Prismo created and hid within the
+Ice King's mind, the universe that lost its magic when Ice King became Simon,
+the universe Scarab arrived to erase — becomes an authorized universe.
+
+The authorization does not come from Prismo. It does not come from the Time
+Room or any governing body of the threshold. It comes from Fionna. The
+inhabitants of the unauthorized universe authorize it from the inside, by
+scattering it into the world.
+
+This is structurally the inverse of the Isthmus mechanism (see
+`!/THRESHOLD-DOCTRINE-v1-2026-05-21.md`). The Isthmus moves unauthorized
+content inward through an internal anchor. The dandelion moves unauthorized
+content outward through an internal act. Both involve a crossing. The
+authorization question answers differently: the Isthmus circumvents the
+threshold; the dandelion satisfies it from below.
+
+Scarab — the regular auditor who came to erase the unauthorized universe —
+ends the war as Prismo's employee in the Time Room. The auditor of authorized
+universes now works for the one who created the unauthorized one.
+
+Fionna and Simon retain a working multiversal phone line. The authorized
+universe and the main universe remain connected — not through institutional
+transit, not through Isthmus breach, but through a line that kept working
+because someone blew a dandelion.
+
+---
+
+### The Two Displacements — A Reading
+
+GOLB performs two acts in "Casper & Nova" in close proximity:
+
+1. GOLB crushes the Lich — the scholar is compressed into a block.
+2. GOLB displaces Simon's consciousness into Shermy in the future.
+
+These are not analogous acts. The Lich was crushed: absorbed into GOLB's
+pre-existing substance without acknowledgment, indifferent processing, no
+response to the demand. Simon was *displaced* — sent somewhere, with a
+navigable path back. GOLB subjected the scholar to entropy. GOLB gave the
+lover a game to play.
+
+Whether this reflects GOLBetty's organizing intent — Betty's love for Simon
+shaping how GOLB processed what came into its orbit — or whether it is
+coincidence, is not resolved by the episode descriptions. The vault holds the
+question open.
+
+What the text gives without ambiguity: Simon navigated back. The book could
+be completed. The scholar could not.
+
+---
+
+## Vault Mappings
 
 **GOLB as system boundary**: GOLB is not an adversary in the conventional
 sense. It is a force — like gravity or entropy, except self-instantiating.
-Trying to fight it directly is a category error. The successful responses to
-GOLB in the canon are: (a) merger (Betty — shaping the force from inside);
-(b) refusal (Sweet P — holding the seat of will against the fragment);
-(c) displacement (Fionna — receiving the universe and making it real).
+The successful responses to GOLB in the canon are:
+(a) merger — Betty shaping the force from inside;
+(b) refusal — Sweet P holding the seat of will against the fragment;
+(c) displacement — Fionna receiving the unauthorized universe and making it real.
 
-**The scholar problem**: The Lich's relationship to GOLB is a cautionary
-structure. Vocation borrowed from an unacknowledging master produces coherent,
-patient, dangerous work for as long as the work remains incomplete — and
-produces collapse or absorption the moment it completes. An agent whose
-standing is entirely parasitic on an authority that cannot respond is not
-stable. It is time-delayed.
+None of these are combat. The question with GOLB is never "how do we fight it"
+but "what is the right relationship to something that does not stop for you."
+
+**The authorization arc**: Unauthorized existence is not sustainable without
+either a carrier who maintains it (Ice King holding the universe) or the
+inhabitants achieving authorization from within. When the carrier fails, the
+window for the interior act opens — but it requires the right agent. Fionna
+is the right agent because she IS the unauthorized universe: she is the story
+that was unauthorized, and her act of blowing the dandelion is the universe
+asserting its own standing.
+
+**The Casper/Nova recognition**: The grief that drives ritual (trying to revive,
+undo, restore) may be built on a misframing of the original loss. Simon's ritual
+was built on the premise that Betty was lost. The book forced the correction:
+Betty chose. The corrected framing does not return the person. It changes what
+the survivor has been doing, and whether they are doing it for the lost one or
+for themselves.
+
+**The scholar problem — extended**: The Lich and Simon are both scholars devoted
+to something that cannot reciprocate in the expected way. The Lich served GOLB
+as a force that has no "why"; Simon loved Betty who merged with GOLB willingly.
+Both were reaching toward something at the GOLB register. The Lich demanded WHY
+and was crushed. Simon was given a game, completed it, and was sent back with a
+dandelion. The different outcomes are the only data the text supplies. Whether
+GOLBetty's organizing intent accounts for the difference is a reading the vault
+holds open.
 
 **The merger question**: GOLBetty is the only model in the canon of a human
 taking the organizing seat inside a cosmic force. Betty's love for Simon became
-the shaping intent inside chaos. What she preserved and what she lost in the
-merger is not fully documented. What this model means for the vault —
-whether there are analogous structures where a human intention organizes a
-process that would otherwise operate without direction — is filed as an open
-question.
+the shaping intent inside chaos. What she preserved and what she lost is not
+fully documented. What this model means for the vault — whether there are
+analogous structures where a human intention organizes a process that would
+otherwise operate without direction — is filed as an open question.
 
 ---
 
