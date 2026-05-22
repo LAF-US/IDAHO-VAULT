@@ -317,8 +317,8 @@ The full Oz cosmology provides the vault with:
 |---|---|---|---|
 | Pastoria | Deposed king | Rightful authority, withdrawn | Permanent non-assertion |
 | The Wizard (Baum) | Unauthorized occupant | Humbug governance, redeemable | Sentimentality ≠ authority |
-| The Wizard (Maguire) = MBBNHF | Unauthorized occupant | Complicit governance; trains Olaf-equivalents | Structural evil dressed as function |
-| Madame Morrible = WHNHB | No cardinal seat — institutional apparatus | Controls pipeline; weaponizes narrative | Accountability-bypass via institutional infrastructure |
+| The Wizard (Maguire) — see: the Man with a Beard But No Hair | Unauthorized occupant | Complicit governance; trains Olaf-equivalents | Structural evil dressed as function |
+| Madame Morrible — see: the Woman with Hair But No Beard | No cardinal seat — institutional apparatus | Controls pipeline; weaponizes narrative | Accountability-bypass via institutional infrastructure |
 | Good Witch of the North | North seat | Protective marking; starts the traveler | Admits limits; steps back |
 | Glinda | South seat | Authorized revelation, patient | Complicity through inaction |
 | Wicked Witch of the East | East seat (vacated) | Governance of the Munchkins | Crushed before trial; seat vacated |
