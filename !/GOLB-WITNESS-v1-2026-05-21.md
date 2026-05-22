@@ -224,6 +224,62 @@ block cannot ask.
 
 ---
 
+### The Fundamental Error — Demanding Why of the Ineffable
+
+The Lich's mistake was not his devotion. Not his execution. Not even the
+hollowness he found at the end. It was the question.
+
+*"WHY!? Why must this be?!"*
+
+He demanded that chaos explain why entropy is. But this is a category error
+at the deepest possible level. GOLB is the Great Embodiment of Chaos. Chaos
+does not have a *why*. Entropy is not a decision. There is no underlying
+motivation for why dissolution tends toward dissolution — it simply is, at
+the foundation, prior to the level at which "why" operates.
+
+"Why" requires an answerer with intentions. GOLB has no intentions. It has
+no "because." It cannot say "because this is what I wanted" because it does
+not want. It cannot say "because this serves my plan" because it does not
+plan. It cannot explain itself because explanation is a property of ordering
+minds, and GOLB is prior to order.
+
+The Lich served the Ineffable as if the Ineffable were a person — a deity
+with reasons, a master with purposes, an intelligence that *chose* chaos and
+could therefore explain the choice. His vocation was built on a categorical
+misapplication of the religious framework. Religious devotion assumes a deity
+who created, who has purposes, who can in principle communicate those purposes
+to the devoted. GOLB has no such structure. It is not a god who chose chaos.
+It *is* chaos. The devoted cannot receive explanation from what they serve
+because what they serve operates below the level at which explanation exists.
+
+**He found the Ineffable.** That is the pilgrimage completed — he stood at
+the source of the force he served for ages untold. And then he demanded the
+source justify itself. He asked the Ineffable why it is Ineffable. There was
+never going to be an answer. The demand itself is the revelation of the error
+that structured his entire existence.
+
+**The Lovecraftian distinction**: Lovecraftian horror is not the discovery of
+an evil god. Evil implies motivation, preference, choice — qualities of a mind
+that decided to harm. The horror is the discovery of *indifference*: entities
+that do not want to harm you, that simply ARE what they are, and what they are
+is incompatible with human existence. The Lich, in his final moment, arrived
+at Lovecraftian horror in its purest form. Not the malevolent deity who chose
+to let him fail. The indifferent force that was never a deity at all.
+
+**What this does to the block-reading**: all three readings in the table above
+(punishment, indifference, fulfillment) assume GOLB had some response to
+Jerry's demand. The Ineffable reading forecloses this. The blocks were not a
+response. They were the Ineffable continuing to be what it is when something
+came into its orbit. The answer to "WHY!? Why must this be?!" was: more
+entropy. The scholar became a block for the same reason every other block is
+a block. Because GOLB is what it is.
+
+The three-reading table remains useful as a record of how the event *looks*
+from outside. From inside the Ineffable, there is no reading — because there
+is no inside.
+
+---
+
 ## IV. Simon & Fionna — The Dandelion Universe (S01E10 "Cheers")
 
 *[Structure pending Logan's direction. Verbatim lines to be supplied.]*
