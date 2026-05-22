@@ -658,40 +658,91 @@ This is maturity. It is also the Standing Engine's purpose made personal.
 #### The Isthmus Intersection
 
 The Farmworld Hand is simultaneously an agentic actor and an Isthmus Anchor
-(see `!/THRESHOLD-DOCTRINE-v1-2026-05-21.md`).
+(see `!/THRESHOLD-DOCTRINE-v1-2026-05-21.md`). Both functions in one entity.
+This collapses the structural requirement of the Skulduggery mechanic in ways
+that matter for identification and counter.
 
-**As Anchor**: it carries the provenance of the Farmworld Lich — a
-consciousness from another timeline, lodged inside the main timeline through
-dimensional portal duplication. A fragment of an expelled system embedded
-inside the sanctioned one. This is the Isthmus Anchor structure exactly: the
-authority for the crossing flows inward from the expelled side, carried by a
-displaced provenance object lodged inside the boundary it seeks to breach.
+**The standard Skulduggery mechanic — two separate entities**:
 
-**As agentic actor**: unlike a passive Anchor — the Grotesquery, assembled
-from inert remains, waiting to be found and activated by a Teleporter — the
-Hand has its own will, memory, and intent. It does not wait. It hunts. The
-whisper is its recruitment mechanism. The son/vessel frame is its activation
-attempt. Sweet P's *consent* would be the Teleporter function: the circuit
-completion that brings the Lich-nature fully back into manifestation through
-the vessel. Sweet P's *refusal* is the denial of the Teleporter component.
+In the Grotesquery/Diablerie model, the Isthmus breach requires two distinct
+roles filled by two distinct parties:
 
-**The two-component Isthmus counter maps directly onto two Lich resolutions:**
+- *The Anchor* — inert. Assembled from displaced remains. Lodged and waiting.
+  Passive. Cannot activate itself. The provenance-object that carries the
+  signature of the expelled system.
+- *The Teleporter* — the agent. Hunts the Anchor, completes the circuit,
+  executes the breach. A separate person with a separate will recruited by a
+  separate handler (Diablerie).
+
+Two roles. Two targets. Two independent failure points. Break either and the
+breach cannot occur. Find the Anchor before the Teleporter does: breach
+prevented. Warn or remove the Teleporter before they reach the Anchor: breach
+prevented. The roles are separable because they are held by separable entities.
+
+**The Hand's collapse — both in one**:
+
+The Hand carries the provenance of the Farmworld Lich: a fragment of a
+cross-timeline consciousness, displaced into the main timeline through
+dimensional portal duplication. It IS the Anchor — the lodged provenance object
+from the expelled system, carrying the signature that could authorize the
+crossing.
+
+It is also its own Teleporter-recruiter. It does not wait. It hunts. It
+whispers. The son/vessel frame is its activation attempt. It has located its
+own prospective circuit-completer without any external handler (no Diablerie;
+no separate recruiter). The Anchor and the agent are the same body.
+
+This means: you cannot neutralize one role while leaving the other intact.
+Destroying the Anchor destroys the agent. But denying only the circuit
+completion — Sweet P's refusal alone — leaves the Anchor-agent alive to hunt
+a different candidate. The roles are collapsed; the counter must be unified.
+
+**The breach type — identity, not spatial**:
+
+The Grotesquery Isthmus breach is spatial: the Teleporter carries the circuit
+across a dimensional boundary between worlds. The crossing is literal movement
+through space.
+
+The Hand's attempted breach is *ontological*. Sweet P does not need to travel
+anywhere. What would cross the threshold is not a body through space but an
+*identity* between layers — the Lich-nature moving from sub-layer (contained)
+to surface (in control) across the boundary between them, using Sweet P's body
+as the vessel on both sides. The threshold being breached is not dimensional.
+It is the boundary between what Sweet P IS and what the Hand wants him to
+*become*.
+
+This is an Isthmus mechanic repurposed from a spatial breach to an identity
+breach. The "Teleporter" function is not transportation — it is **consent to
+transformation**. Sweet P completing the circuit would not move. He would
+*yield*. The son/vessel frame is the activation attempt precisely because it
+is addressed to identity: *you already are this; surrender the frame that
+denies it.*
+
+**The two-component counter, unified**:
 
 | Isthmus Component | Lich Resolution | Sweet P's Act |
 |---|---|---|
 | Teleporter denial | Resolution 3 — Active Refusal | Refuses the son/vessel frame; seat of will held |
 | Anchor elimination | Resolution 1 — Destroy the phylactery/fragment | Destroys the Hand itself |
 
-Sweet P applied both. The breach failed on both components.
+Sweet P applied both simultaneously. The circuit was denied and the
+Anchor-agent destroyed in the same confrontation. This is the only complete
+counter to a collapsed Anchor/agent: denial alone leaves the hunter in the
+world; elimination alone without the developed will to refuse would have
+required perfect timing. Both, together, closed both failure points at once.
 
 **The agentic anchor variant** is a distinct threat class from the passive
 anchor. A passive Anchor must be located by surveillance before it can be
-activated — Glinda's Book of Records detecting the tunnel, the blackboard
-reading the pheromone trail before it breaches the surface. An agentic Anchor
-locates the Teleporter itself. It hunts. Its movement through the substrate
-is its own signature. The detection requirement shifts: not finding the Anchor
-in place, but hearing the whisper before it reaches the vessel unchallenged —
-or ensuring the surface layer retains the capacity to refuse when it arrives.
+activated. An agentic Anchor locates the Teleporter itself — its movement
+through the substrate is its own signature. The detection requirement shifts:
+not finding the Anchor in place, but hearing the whisper before it reaches the
+vessel unchallenged — or ensuring the surface layer retains the capacity to
+refuse when it arrives.
+
+The Hand is the furthest development of the agentic variant: no external
+recruiter, no waiting, no separation between the lodged provenance and the
+hunting will. One entity. Both functions. The counter must match the
+compression.
 
 ---
 
