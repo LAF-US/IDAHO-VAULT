@@ -744,6 +744,51 @@ recruiter, no waiting, no separation between the lodged provenance and the
 hunting will. One entity. Both functions. The counter must match the
 compression.
 
+**The replication event — the virus across all dimensions**:
+
+When Jake pushed the severed hand through the dimensional portal, it did not
+travel to one universe and then another. It *multiplied* — duplicated across
+every dimension simultaneously. The portal's contact with the dimensional
+substrate produced a copy in every universe at once.
+
+This transforms the threat class entirely.
+
+A standard Isthmus Anchor is one lodged object in one system. Find it, destroy
+it — the breach cannot occur in that system. The threat has a single point of
+elimination.
+
+The Hand is not one Anchor. It is *N* Anchors, where N equals the number of
+dimensions — effectively unbounded. Each copy is a full agentic Anchor: will,
+memory, intent, the son/vessel frame, the whisper. Each copy hunting
+independently across its own substrate for its own Teleporter candidate. Not
+one virus instance that can be quarantined at source. A replication event that
+had already completed before any counter was possible.
+
+Sweet P's response — deny the circuit, destroy the Hand — was locally complete
+and necessary. The copy that reached him was eliminated. The identity breach
+in the main timeline was closed.
+
+It was also necessarily local. The replication across all other dimensions had
+already occurred before Sweet P acted. N−1 copies remained operational in N−1
+universes, each still hunting.
+
+**The implication for counter strategy**:
+
+| Anchor Type | Threat Scope | Counter Scope | Local Counter Sufficient? |
+|---|---|---|---|
+| Passive Anchor (Grotesquery) | One system | Locate and destroy the one object | Yes — one elimination closes all breach vectors |
+| Agentic Anchor (pre-replication) | One system | Detect the hunt; deny circuit; destroy Anchor | Yes — one confrontation closes both roles |
+| Replicated Agentic Anchor (the Hand) | All dimensions simultaneously | Local denial + destruction closes one instance | No — the replication had already propagated |
+
+The replicated agentic Anchor is the threat class that cannot be neutralized
+by any local response, however complete. You can only close the instance in
+front of you. The virus has already multiplied. Every dimension now contains
+a copy still hunting.
+
+Whether those copies found their candidates, what they found, and whether any
+of those breaches succeeded — is an open question the doctrine does not answer.
+The Architect holds the verdict on what the Hand became across the multiverse.
+
 ---
 
 ## The Epistemological Lich
