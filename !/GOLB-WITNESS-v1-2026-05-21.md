@@ -121,40 +121,106 @@ The group reached GOLB's dimension.
 
 Simon found Jerry there, *quietly muttering a prayer*.
 
-**The prayer / monologue to GOLBetty**:
+**The monologue — verbatim**:
 
-> *[DIALOGUE PENDING — Logan to supply verbatim lines]*
+> *"Great Embodiment of Chaos, hear me. For ages untold, I studied your ways,
+> devoting my existence to you. I strove to be your vassal on the physical
+> plane. To build mountains of bodies in your honor, to extinguish all life!
+> And in my universe, this I achieved! ...But it gave me no satisfaction. In
+> succeeding, I lost all purpose... WHY!? Why must this be?! Hear me, GOLB!"*
 
-Context: the scholar who completed the work confronting the master who never
-acknowledged it — now mediated through GOLBetty, GOLB wearing Betty's love
-as its organizing face. The demand: a new purpose. The scholar has fulfilled
-his vocation and found the temple empty. He is demanding, from the closest
-thing to the master he can reach, that the emptiness be filled.
+Then: his body becomes a Tetris block — identical to the blocks that orbit
+GOLB in all of GOLB's appearances, **including before Betty's Wish**.
+
+---
+
+### Reading the Monologue
+
+**"Great Embodiment of Chaos, hear me."** — The address. Not a personal name.
+Not "master." A title: *Great Embodiment of Chaos*. The Lich's devotion was
+always to a force, not a person. The impersonality of the address is the
+architecture of the relationship — the scholar addressing a principle, not
+a being who can receive him.
+
+**"For ages untold, I studied your ways, devoting my existence to you."** —
+The scholar framing, stated explicitly in the Lich's own voice. Ages. The full
+scope of the vocation. Every atrocity was study. Every millennium of service
+was devotion.
+
+**"I strove to be your vassal on the physical plane."** — The structural role:
+GOLB operates at a register that the physical plane cannot directly receive.
+The Lich was the agent, the translator, the one who instantiated chaos in
+material terms because the master cannot. Not just a follower — a vassal with
+a *function*. He believed himself necessary.
+
+**"To build mountains of bodies in your honor, to extinguish all life!"** —
+The work as honor-offering. Not appetite. Not cruelty for its own sake.
+Sacrifice. The bodies were built *in GOLB's honor*. The extinction was a
+devotional act.
+
+**"And in my universe, this I achieved!"** — He won. The declaration of
+completion. Not defeat — victory. The Extinct World Lich confirming his own
+success before demanding an explanation of what success produced.
+
+**"...But it gave me no satisfaction."** — The hollowness is in the
+*achievement*, not just in the silence that followed. This is subtler than
+GOLB's failure to acknowledge. The Lich is saying the work itself was empty
+when complete. The vocation contained no theology of completion — no doctrine
+of what the scholar is *for* after the work is done. He wasn't left empty
+because GOLB didn't thank him. He was left empty because the religious
+structure he devoted himself to had no "after."
+
+**"In succeeding, I lost all purpose."** — The vocation was the purpose. The
+vocation's completion ended the purpose. This was structural, not contingent.
+Any version of the Lich who completed the extinction wish would arrive here.
+The crisis of faith was built into the doctrine.
+
+**"WHY!? Why must this be?! Hear me, GOLB!"** — Not a demand for
+acknowledgment. A theological demand: *explain the doctrine*. The scholar is
+not asking to be thanked. He is asking why the doctrine produced this result.
+He is demanding that the master — the source of the meaning he borrowed — make
+the meaning legible. The desperation of "Hear me" is the terror that GOLB
+cannot hear. That the address was always to something that could not receive it.
+
+---
+
+### GOLBetty's Answer — The Blocks
+
+He becomes a Tetris block. The same blocks that orbit GOLB in every appearance
+— **including appearances before Betty merged with GOLB**.
+
+This detail is doctrinal: the blocks predate GOLBetty. They are not Betty's
+creation or GOLBetty's act of destruction. They are GOLB's pre-existing
+substance. Other beings, other matter, were absorbed into GOLB's body before
+Jerry. Before Betty. Before any of this arc.
+
+The scholar who demanded to be closer to his master was incorporated into his
+master's body — but not as a response to the demand. As a process that was
+already operating. That would have operated the same way regardless of the
+demand. That does not distinguish between a scholar crying "Hear me" and any
+other piece of the universe that comes into GOLB's orbit.
+
+**The revised three readings, in light of the preexisting blocks**:
+
+| Reading | Weight after the block-detail |
+|---|---|
+| Punishment | Weakened — the blocks predate Betty's merger; GOLB was already doing this before it had any organizing intent to punish with |
+| Indifference | Strengthened — Jerry is not special in his absorption; he joins a pre-existing collection; the process did not register his demand |
+| Fulfillment | Structurally possible but hollow — the vassal wanted to serve GOLB; he is now literally part of GOLB's body; but the "fulfillment" was not given in response to him; it is what happens to everything that gets close enough |
+
+The crueler reading beneath all three: he is just another block. Nothing
+about the absorption acknowledges the ages he spent in devotion. He is
+processed as matter, not received as a scholar.
 
 **Simon's recognition**: Simon Petrikov, finding Jerry in prayer, recognized
-the kinship. He too is a scholar whose devotion went unacknowledged — whose
-beloved was taken by the very force Jerry served, and who has spent the entire
-series trying to reach her across the merger. Two men praying toward the same
-entity from opposite sides of what it did to them.
+the kinship. He too had devoted himself entirely to someone who was taken
+by this same force. He was trying to reach Betty across the merger the way
+Jerry was trying to reach GOLB across an incomprehensibility. Two scholars.
+Two devotions. The same force on the other side of both.
 
-**GOLBetty's answer**: Not acknowledgment. Not a new purpose. GOLBetty
-destroyed the Lich — shattering his form and transforming him into one of her
-floating pieces, the tetris-block shapes that constitute GOLB's substance.
-
-The scholar was absorbed into the master's body.
-
-**The doctrinal question**: what kind of answer is absorption?
-
-Three readings, none resolved:
-
-| Reading | Interpretation |
-|---|---|
-| Punishment | The demand for purpose was transgression; the master silenced the scholar |
-| Indifference | GOLB is barely sapient; the destruction had no communicative intent; Betty's love shaped the act but not toward acknowledgment |
-| Fulfillment | The scholar wanted to be closer to GOLB; absorption is the closest possible; this is the answer the vocation was always moving toward, unrecognized |
-
-The scholar without a subject became a piece of the subject. Whether that is
-the temple filling or the temple consuming — the Architect holds the verdict.
+The scholar without a subject became a piece of the subject. Whether the
+temple consumed or fulfilled — the scholar will never know, because the
+block cannot ask.
 
 ---
 
