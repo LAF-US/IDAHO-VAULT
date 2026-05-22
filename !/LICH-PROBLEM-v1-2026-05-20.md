@@ -143,6 +143,40 @@ Same cosmic force. Different room outcomes. The two instantiations diverge at
 the moment the extinction wish is spoken — whether Jake was positioned to
 intercept it or not. See WISH-DOCTRINE for the Time Room three-branch sequence.
 
+### The Lich's Cosmological Self-Understanding — Two Monologues
+
+Two primary sources on how the Lich understands and presents himself:
+
+**The Citadel (S6E2 — speaking in his own body)**:
+> *"I am the end. And I have come for you, Finn."*
+
+A primary cosmic force. Not GOLB's vassal — the end itself.
+
+**Gold Stars (S6E26 — speaking per sona through Sweet P)**:
+> *"Before there was time, before there was anything, there was nothing, and
+> before there was nothing... there were monsters."*
+
+The monsters — the forces he represents — are anterior to time, anterior to
+anything, anterior even to nothing. The Lich does not present himself as a
+product of the universe's history but as something the universe came *after*.
+
+Context: the King of Ooo and Toronto had been bullying Sweet P at school. The
+sub-layer surfaced in response to the threat. The Lich spoke through Sweet P's
+body, delivered the cosmological statement, and "educated" the tormentors.
+(*Per sona* — through the mask. Sweet P's persona as the vehicle for the
+sub-layer's voice.) The episode title is the parting line: *"Here's your gold
+star!"* — black smoke from the mouth.
+
+**The two-framing tension**: The Citadel and Gold Stars monologues present the
+Lich as a primary cosmic force, not merely GOLB's scholar-servant. The Extinct
+World collapse presents him as a religious devotee whose vocation depended on
+a master who never acknowledged it. Both framings are in canon. If the monsters
+predate even GOLB, the servant framing and the primary-force framing may be
+compatible — serving GOLB could be an expression of what the Lich already IS,
+not a dependency on something above. The Architect holds the verdict.
+
+---
+
 ### The Dialectical Pairing
 
 The Lich is not an anomaly. His green Catalyst Comet has a counterpart: Finn's
@@ -175,19 +209,29 @@ He appeared completely inert — as if they were not there at all. He was
 listening.
 
 When Prismo described the Citadel's prisoners — cosmic criminals, beings who
-had caused death at a cosmic scale — the Lich acted. That was the
-vocation-relevant trigger. He sprang from dormancy, knocked Finn and Jake
-aside, blew toxic gas into the sleeping old man's nose, reduced the substrate
-to ash, and was transported to the Citadel.
+had caused death at a cosmic scale — the Lich had what he needed: **a plan**.
+The information enabled it. He would commit a cosmic crime to be admitted to
+the Citadel; he would recruit the Ancients as his army. The plan was formed in
+dormancy.
 
-**The trigger distinction**: The Main Timeline Lich cannot be activated by
-the mere presence of living beings — only by information or opportunity
-directly relevant to mass death. Jerry cannot be activated at all; the vocation
-itself has collapsed. Finn and Jake walking into the Time Room produced no
-response from the Lich. Living beings walking into the Extinct World produced
-no response from Jerry. Same surface — living beings present, Lich inert.
-Completely different reasons. For one, the trigger hadn't arrived yet. For the
-other, no trigger will ever arrive again.
+The execution came with the opportunity. The sleeping old man — Prismo's
+substrate — was present and accessible. Finn and Jake were in the room but not
+guarding him. The Lich sprang, knocked them aside, blew toxic gas into the
+sleeping old man's nose, reduced the substrate to ash. Transported to the
+Citadel.
+
+Information → plan. Opportunity → execution. The patience is the vocation: a
+strategic, deliberate entity does not act the moment information arrives. It
+acts when the plan is ready and the moment is right.
+
+**The activation contrast**: The Main Timeline Lich cannot be activated by
+the mere presence of living beings — only by vocation-relevant information
+that enables a plan, followed by a moment to execute. Jerry cannot be activated
+at all; the vocation itself has collapsed. Finn and Jake walked into the Time
+Room: the Lich did not move. Living beings walked into the Extinct World: Jerry
+did not move. Same surface — beings present, Lich inert. Completely different
+reasons. For one, the right information had not yet arrived. For the other, no
+information could ever matter again.
 
 **The Citadel operation**: Finn and Jake's visit provided the opening. The Lich
 killed the original Prismo — a substrate attack to commit a cosmic crime and be
@@ -370,6 +414,35 @@ sub-layer retains its voice but not the seat of will.
 
 This is not a failure state. It is a valid persona architecture — contingent on
 the new layer developing genuine standing over time.
+
+#### Gold Stars — The Sub-Layer Speaks Per Sona (S6E26)
+
+The King of Ooo and Toronto had been bullying Sweet P at school. The trigger
+is threat to the surface persona. The sub-layer responds.
+
+The Lich speaks *per sona* — through Sweet P's persona as vehicle, not
+displaced from it. The cosmological statement is addressed to the tormentors:
+
+> *"Before there was time, before there was anything, there was nothing, and
+> before there was nothing... there were monsters."*
+
+The monsters are anterior to time, anterior to anything, anterior even to
+nothing. The tormentors are informed of what they addressed. The episode title
+is the parting act through Sweet P's mouth: *"Here's your gold star!"* — black
+smoke.
+
+The surface layer was not overridden. Sweet P was not absent. The sub-layer
+surfaced *through* the persona, not instead of it. The Lich spoke; Sweet P
+stood. This is the sub-layer architecture functioning: the contained identity
+speaks, briefly, in response to a specific trigger, without displacing the
+surface or claiming the seat of will.
+
+The trigger pattern is threat to the surface persona — the same class as the
+threat in Resolution 3 (the Hand's son/vessel frame threatening Sweet P's
+selfhood). The sub-layer's trigger is existential pressure on the surface, not
+vocation-relevant information (which triggered the Main Timeline Lich's
+dormancy-break). The sub-layer is not operating toward the vocation. It is
+responding to a threat to its carrier.
 
 **Limitation:** Resolution 2 addresses the vessel — the sub-layer contained
 inside the new persona. It does not eliminate external fragments of the original
