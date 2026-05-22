@@ -110,12 +110,31 @@ intent that actively hunts its Teleporter rather than waiting to be used.
 |---|---|---|---|
 | Passive (Grotesquery) | Lodged and inert; requires external Teleporter to locate and activate | Surveillance finds the Anchor before the Teleporter does | Locate and eliminate the Anchor |
 | Agentic (Farmworld Hand) | Hunts the vessel it needs; the whisper is the recruitment; the offered frame is the activation attempt | The Anchor's own movement and solicitation is its signature | Ensure the prospective Teleporter can still refuse; detect the whisper; eliminate the Anchor |
+| Replicated Agentic (Farmworld Hand — post-portal) | Duplicated across every dimension simultaneously at the replication event; each copy agentic, each hunting independently | No single surveillance point; each universe contains its own live instance | Local denial + destruction closes one instance only; the replication cannot be recalled |
+
+**The replication event**: when the Hand was pushed through the dimensional
+portal, it did not travel sequentially — it multiplied simultaneously across
+every dimension. Each copy is a full agentic Anchor: will, memory, intent,
+the whisper, the identity frame. Not one instance that can be quarantined at
+source. A propagation that had already completed before any counter was
+possible.
+
+A standard Anchor is eliminable at source — one object, one destruction, all
+breach vectors closed. The replicated agentic Anchor is the threat class for
+which no local counter is globally sufficient. Sweet P's response was locally
+complete. The N−1 copies in N−1 other dimensions remained operational.
+
+The replicated agentic Anchor is the computer virus of the Isthmus taxonomy:
+it multiplies faster than it can be found, it is agentic in every instance,
+and local quarantine is necessary but cannot address the copies already
+propagated.
 
 In the agentic variant, the prospective Teleporter's capacity for refusal is
 the second line of defense — not the first. The first line is detection of
 the hunting Anchor before it reaches the vessel unchallenged. See
 `!/LICH-PROBLEM-v1-2026-05-20.md` Resolution 3 for the full treatment of
-the son/vessel frame and the two-component counter as applied by Sweet P.
+the son/vessel frame, the two-component counter, and the replication threat
+class.
 
 ---
 
