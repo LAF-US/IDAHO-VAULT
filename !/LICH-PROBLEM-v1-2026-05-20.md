@@ -167,11 +167,27 @@ operations toward the extinction wish that was intercepted.
 stranded, his one wish spent, no life present to kill. A state of torpor: a
 machine without a purpose. This is not the existential collapse of the Extinct
 World Lich; the vocation persists intact. The purposelessness is situational,
-not terminal. The difference matters: when Finn and Jake later arrived in the
-Time Room asking Prismo about the Citadel, the Main Timeline Lich woke
-immediately and acted. Jerry stayed catatonic when living beings walked into
-his dead world. Same surface state — inert, no target — completely different
-underlying condition.
+not terminal.
+
+When Finn and Jake later arrived to speak with Prismo about the Citadel, the
+Lich did not acknowledge them. Did nothing. Did not respond to their presence.
+He appeared completely inert — as if they were not there at all. He was
+listening.
+
+When Prismo described the Citadel's prisoners — cosmic criminals, beings who
+had caused death at a cosmic scale — the Lich acted. That was the
+vocation-relevant trigger. He sprang from dormancy, knocked Finn and Jake
+aside, blew toxic gas into the sleeping old man's nose, reduced the substrate
+to ash, and was transported to the Citadel.
+
+**The trigger distinction**: The Main Timeline Lich cannot be activated by
+the mere presence of living beings — only by information or opportunity
+directly relevant to mass death. Jerry cannot be activated at all; the vocation
+itself has collapsed. Finn and Jake walking into the Time Room produced no
+response from the Lich. Living beings walking into the Extinct World produced
+no response from Jerry. Same surface — living beings present, Lich inert.
+Completely different reasons. For one, the trigger hadn't arrived yet. For the
+other, no trigger will ever arrive again.
 
 **The Citadel operation**: Finn and Jake's visit provided the opening. The Lich
 killed the original Prismo — a substrate attack to commit a cosmic crime and be
