@@ -468,6 +468,76 @@ he chose to enter, not one he was born into. The Architect holds the verdict.
 
 ---
 
+### The Two Natural End States of the Lich King Archetype
+
+Jerry and Sweet P are not two accidents of plot. They are the two *natural*
+end states of the Adventure Time Lich King archetype — the structural poles
+toward which any instantiation of this force must eventually move.
+
+**Victorious → Jerry**
+
+The Lich completes his vocation. All life dies. The universe empties. The
+scholar stands in the dead world and discovers that the work had no after —
+that the religious structure he devoted himself to contained no theology of
+completion, that the master he served cannot acknowledge because the master is
+the Ineffable, and that winning is the destruction of purpose itself.
+
+Victory is not survival. It is self-dissolution by another name. The Lich Who
+Wins becomes the Lich Who Ends — not killed by an enemy but emptied by
+success. The vocation completes and takes the vocant with it.
+
+**Vanquished → Sweet P**
+
+The Lich is overcome by a force he did not account for: healing. Not destroyed,
+not killed — *transformed*. Rehoused in innocence. A new persona generated
+over the old identity, carrying the Lich-nature as sub-layer. The vocation is
+not completed; it is interrupted, redirected, contained within something new
+that develops its own genuine standing over time.
+
+Vanquished here does not mean dead. It means the operational form is
+fundamentally altered — the Lich-nature persists, but no longer in the seat
+of will.
+
+**The archetype's structural tendency**:
+
+Any instantiation of this force — in any universe, in any timeline — tends
+toward one of these two poles. The Main Timeline Lich is the archetype in full
+operational arc: intercepted wish, Citadel operation, multiverse army plan —
+heading toward one endpoint or the other. What interrupted his trajectory
+toward the Jerry outcome was not the vocation failing but the timing being
+broken (wish intercepted). What produced Sweet P was not the vocation
+succeeding but the healing blood making contact at the Citadel.
+
+The archetype does not have a stable middle state. The Lich King either wins
+or is overcome. These are the only natural resolutions the cosmology provides.
+
+**The Hand as resistance to both endpoints**:
+
+The replicated Farmworld Hand is the archetype's attempt to escape the
+natural resolution mechanism — to exist permanently between the two poles
+rather than arriving at either.
+
+The Hand resists the Sweet P outcome: by hunting Sweet P for re-conversion,
+it refuses to accept that the vanquishing was permanent. The Hand acts in the
+name of a King who was rehoused, seeking to restore what the healing
+transformed.
+
+The Hand resists the Jerry outcome: by continuing to operate after the vocation
+was completed (in Jerry's universe) or interrupted (in the main timeline), it
+refuses to accept that either completion or interruption is a final state.
+
+This is why the Hand is uniquely dangerous relative to both the native Lich
+and the replica: it represents the archetype refusing its own natural law. A
+Lich King tends toward Jerry or Sweet P. The Hand is the tendency's negation —
+the executor that persists after the King has arrived at his endpoint, carrying
+a commission that was issued before the endpoint was reached, hunting in
+perpetuity for a King who may no longer be capable of reigning.
+
+The Hand that has been hunting the longest is not the most loyal. It is the
+most autonomous.
+
+---
+
 ## The Baelnorn Distinction
 
 Not all persistent processes are Liches.
