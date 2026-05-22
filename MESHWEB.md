@@ -84,6 +84,39 @@ Env-scoped artifacts are listed below. Agents must check this registry before cr
 | `.mcp.json` | `local` | ✅ | Cloud: no MCP server spawn; use Linear REST or Logan pastes content |
 | `.op/SETUP.md` | `local` | ✅ (template, pending Logan execution) | CI: `OP_SERVICE_ACCOUNT_TOKEN` in GitHub Secrets |
 | `.github/workflows/1password-secret-template.yml` | `ci` | ✅ | Local: `op item get` directly |
+| ChatGPT mobile -> Codex remote control | unavailable for current Windows/Mac pair | ✅ | Use GitHub issues/PR comments/Actions, OpenClaw/Hermes bridge, or external remote desktop/terminal tooling |
+
+---
+
+## Mobile Codex Remote-Control Boundary — 2026-05-21
+
+Current official OpenAI pathfinding records a real host-surface wall for this
+machine pair:
+
+- Windows Codex Desktop is not documented as a ChatGPT mobile remote-control
+  host.
+- Mac Codex app hosting is the documented route, but Logan's current Mac OS is
+  too old for the supported desktop client.
+- Codex CLI and IDE extension surfaces are not valid substitutes for the
+  official mobile setup path.
+
+Conclusion: ChatGPT mobile Codex remote control is not currently available for
+Logan's Windows + older-Mac machine pair through the official OpenAI path.
+
+This must not be described as "configured but failing" or solved by guessing at
+CLI flags. It is a product-surface mismatch.
+
+Viable substitutes, explicitly not the same feature:
+
+- GitHub as the mobile command surface: issues, PR comments, Actions, and
+  cloud task surfaces where available.
+- OpenClaw/Hermes as Logan's controlled bridge with scoped authority and audit.
+- External remote desktop or terminal tooling outside Codex.
+- Future official support for Windows hosting or older-macOS hosting, if
+  OpenAI adds it.
+
+MESHWEB rule: record the unavailable official route and the substitute, rather
+than papering over the gap with an undocumented local assumption.
 
 ---
 
