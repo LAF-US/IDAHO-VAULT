@@ -296,29 +296,45 @@ Fionna and Cake episodes, long before the spinoff reveals the mechanics.*
 
 *Logan holds the causal question open.*
 
-Throughout the original Adventure Time series, the Ice King — Simon Petrikov
-under the Crown's influence — wrote Fionna and Cake stories: a gender-swapped
-version of his world and the people in it. His own friends rewritten. His own
-world at a remove from itself. These were presented as his creative output
-across multiple seasons of the original show.
+The Fionna and Cake story arc spans the following main-series AT episodes
+before the spinoff:
+
+| Episode | Season | Frame | Key doctrinal detail |
+|---|---|---|---|
+| "Fionna and Cake" | S3E9 | Ice King reads story to captured Finn and Jake | First appearance; Ice King as author established |
+| "Bad Little Boy" | S5E11 | Marceline writes her own F&C story to show Ice King "how it's done" | Derivative authorship; Ice King insists his version is still better |
+| "The Prince Who Wanted Everything" | S6E9 | LSP brings Ice King a story about Lumpy Space Prince | LSP explicitly believes Ice King reading her story could make it real — "since Ice King originated the genderbent universe" |
+| "Five Short Tables" | S7E34 | Ice King's five vignettes; one segment features Ice Queen doing a table read of her own fan-fiction | **The Matryoshka episode** — confirmed |
+| "Fionna and Cake and Fionna" | S9E12 | Ice King reads at public library; ends with red beam from sky into Ice King's head transmitting Fionna and Cake images | Direct pre-spinoff plant — Prismo actively downloading into the Ice King's mind |
+
+The Ice King keeps a **fanfiction vault** — a physical secured archive in
+his castle housing his creative works. In "Five Short Tables," Gunter broke
+in and edited the stored stories; Ice King froze him for it. His creative
+works are protected property.
 
 In the Fionna and Cake spinoff (S01E04), Prismo reveals that he created an
 unauthorized Fionna and Cake universe and hid it within the Ice King's mind.
 The episode description does not specify which came first.
 
-Two readings are possible:
+Two readings are possible, and the main-series episodes supply evidence for
+each:
 
 **Ice King's original fanfic that Prismo and Ooo were fans of**: The Ice
 King's stories existed first and circulated within Ooo — other characters
-read them, reacted to them, knew them. Prismo, among those who loved the
-stories, actualized the fiction without institutional sanction and hid the
-result in the mind of their author.
+read them, reacted to them, knew them. LSP in S6E9 explicitly acknowledges
+the Ice King as the one who "originated the genderbent universe," believing
+his authorial act has reality-generative power derivative works lack. Prismo,
+among those who loved the stories, actualized the fiction without institutional
+sanction and hid the result in the mind of their author.
 
 **Prismo's creation hidden in Simon's crazybrains that surfaced through
 writings**: Prismo created the universe first and hid it in the Ice King's
 mind; the Crown's influence and the resulting madness allowed the hidden
-universe to surface through the Ice King's writing — the stories were the
-hidden world expressing itself through its carrier.
+universe to surface through the Ice King's writing. The S9E12 red beam
+ending — Prismo transmitting Fionna and Cake images directly into the Ice
+King's head — is a deliberate plant for the spinoff's revelation and
+supports this reading: Prismo was actively downloading into the Ice King
+the whole time.
 
 The causal direction may not matter greatly for doctrine. What holds in either
 reading: this universe is not a stranger's unauthorized creation that Simon
@@ -367,11 +383,18 @@ the original AT series, the Ice King demonstrates genuine love for the
 characters he created. They are not a writing project. They are people he
 cares about.
 
-This cultural presence generated derivative works. Other Ooo denizens —
-including Lumpy Space Princess — wrote their own Fionna and Cake stories,
-fanfic of the Ice King's "published" fiction. The Ice King held these as
-inferior. He had a canonical vision; others could write in his world, but not
-as he had written it.
+This cultural presence generated derivative works. Marceline wrote her own
+F&C story to demonstrate superior craft ("Bad Little Boy," S5E11) — Ice King
+conceded nothing. Lumpy Space Princess wrote a story about Lumpy Space Prince
+and brought it to Ice King, hoping he would read it — because she explicitly
+believed his reading would make it come true ("since Ice King originated the
+genderbent universe"; "The Prince Who Wanted Everything," S6E9). Ice King held
+all derivative works as inferior to his canonical version.
+
+Two things are notable in LSP's approach: (a) she recognized the Ice King as
+the canonical originator, with a generative authority derivative authors lack;
+(b) she tried to exploit that authority by having him perform her story —
+hoping to route her derivative work through the canonical channel.
 
 The emanationist table acquires a lateral dimension:
 
