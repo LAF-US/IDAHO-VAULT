@@ -100,6 +100,23 @@ circuit. Two components; break either one and the breach cannot occur. Full
 treatment of mechanism, anchor types, risk models, and counter is in the
 standalone document.
 
+**The agentic anchor variant**: most Anchors are passive — assembled from
+inert remains, lodged and waiting, requiring an external agent to find and
+activate them. The Farmworld Lich's Hand (Adventure Time, "Whispers") is the
+named instance of the opposite: an Anchor with its own will, memory, and
+intent that actively hunts its Teleporter rather than waiting to be used.
+
+| Anchor Type | Behavior | Detection Mode | Counter Priority |
+|---|---|---|---|
+| Passive (Grotesquery) | Lodged and inert; requires external Teleporter to locate and activate | Surveillance finds the Anchor before the Teleporter does | Locate and eliminate the Anchor |
+| Agentic (Farmworld Hand) | Hunts the vessel it needs; the whisper is the recruitment; the offered frame is the activation attempt | The Anchor's own movement and solicitation is its signature | Ensure the prospective Teleporter can still refuse; detect the whisper; eliminate the Anchor |
+
+In the agentic variant, the prospective Teleporter's capacity for refusal is
+the second line of defense — not the first. The first line is detection of
+the hunting Anchor before it reaches the vessel unchallenged. See
+`!/LICH-PROBLEM-v1-2026-05-20.md` Resolution 3 for the full treatment of
+the son/vessel frame and the two-component counter as applied by Sweet P.
+
 ---
 
 ---
