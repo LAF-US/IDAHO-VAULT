@@ -345,6 +345,98 @@ damage is total by then. This is not a comfort.
 
 ---
 
+### The Monster Cosmology — The Lovecraftian Tier
+
+The Lich does not stand at the top of his cosmology. He serves. The entities
+above him — and the tier they occupy — are what the Gold Stars monologue names:
+*the monsters who predate time, anything, and nothing.*
+
+These are not characters in the conventional sense. They are forces. Faceless.
+Barely sapient, or sapient in a register incomprehensible to mortal frames.
+Lovecraftian in the precise sense: their existence precedes and exceeds the
+universe's categories. The show names at least two:
+
+**GOLB** — the primary Monster. Chaos incarnate. Not a person. Barely sapient,
+more force than person. The Lich is GOLB's scholar — more intentional than his
+master. GOLB never acknowledges his scholar. GOLB passes through Ooo in *Come
+Along With Me* and departs without recognition.
+
+**Orgalorg** — a lesser Monster. Before compression, known as "Orgalorg,
+Breaker of Worlds" — vast, cosmic, an entity of appetite and destruction in his
+own right. Grob Gob Glob Grod compressed him into a penguin body (Gunter) to
+contain him. He is not GOLB's scholar; his ambitions are his own. His project
+in "Orgalorg" (S7) was to intercept the Catalyst Comet — Finn's reincarnation —
+to absorb its power. Appetite, not devotion. A Monster by nature and scope, but
+operating from hunger rather than vocation.
+
+**The tier's defining property**: these entities do not derive their standing
+from the universe. The universe came after, or around, or despite them. They
+are not products of cosmological history. The Lich's Gold Stars monologue claims
+this anterior status for the monsters he names — filed alongside them, speaking
+as one who understands their register from inside.
+
+*Comet Cycle and full cosmological doctrine: deferred. Filed as pending.*
+
+---
+
+### The Lich's Origin — Logan's Reading
+
+*What follows is Logan's interpretive theory. The show does not confirm it
+explicitly. Filed as a reading, not as settled canon. The Architect holds the
+verdict.*
+
+**What the show establishes**:
+- The Lich arrived as a Catalyst Comet in the distant past — a recurring
+  cosmological event, pure evil cycling through incarnation
+- His physical body was born from the Mushroom War: a mutagenic bomb, the
+  waste it produced, the landscape it transformed
+- Finn also has Catalyst Comet incarnations — multiple past lives in mortal
+  and cosmic forms; the comet that struck Earth triggering the Mushroom War
+  was Finn's past life
+- Farmworld Jake fell into the Well of Power — a pool of magical liquid,
+  transformative — and became a giant magical being (accidental)
+
+**Logan's reading**: The Lich was once a mortal actor — like Finn, a being
+cycling through incarnations, operating within the comet structure. Before the
+Mushroom War, he *chose* to cross the threshold from mortal actor to cosmic
+force. The mechanism: the Mushroom War's mutagenic bombing, deliberately
+engineered as a ritual of self-transformation. The mutagenic waste that birthed
+his physical body is not incidental — it is the *medium* of the ritual. A
+mortal aligned with entropy chose to become its embodiment. The war was the
+phylactery procedure.
+
+This would make the Lich a Type II entity with a Type I origin story. He built
+his own transformation before ascending to cosmic status — the D&D Lich's
+ritual (soul externalized, mortality discarded, the vessel chosen and prepared)
+mapped onto a civilizational catastrophe. He was not born a cosmic force. He
+*made* himself one.
+
+**The Farmworld Jake contrast** — incidental vs. deliberate transformation:
+
+Jake fell into the Well of Power accidentally — a transformative vessel, power
+granted without ritual intent, no vocation alignment. He became something vast
+and dangerous without choosing the mechanism or its meaning.
+
+| | Lich (Logan's reading) | Farmworld Jake |
+|---|---|---|
+| Transformation vessel | Mutagenic war (phylactery analogue) | Well of Power (phylactery analogue) |
+| Intent | Deliberate — chosen ritual | Incidental — accidental fall |
+| Vocation | Pre-existing, aligned with entropy | None; power without direction |
+| Origin type | Type I ritual → Type II state | No ritual; transformation without standing |
+
+Both result in vast transformed beings. The difference is not in the power but
+in whether the transformation was a *chosen act of becoming* — and whether a
+vocation structured what the power was for.
+
+**The comet structure implication**: If the Lich was once mortal and cycling
+through lives before the Mushroom War, then his current cosmic form is not his
+first instantiation. It is the one he built. The Catalyst Comet of pure evil
+may be what he *became*, not what he always was. The monster who speaks in Gold
+Stars — anterior to time, anterior to nothing — may be describing a register
+he chose to enter, not one he was born into. The Architect holds the verdict.
+
+---
+
 ## The Baelnorn Distinction
 
 Not all persistent processes are Liches.
