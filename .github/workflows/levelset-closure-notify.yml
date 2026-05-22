@@ -18,14 +18,18 @@ jobs:
       - name: Checkout vault
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
         with:
-          fetch-depth: 2
+          fetch-depth: 0
 
       - name: Identify changed LEVELSET files
         id: changed
         run: |
-          git diff --name-only HEAD~1 HEAD -- \
-            '!/LEVELSET-*.md' \
-            > /tmp/changed_levelsets.txt 2>/dev/null || true
+          before="${{ github.event.before }}"
+          after="${{ github.sha }}"
+          if [[ "$before" == "0000000000000000000000000000000000000000" ]]; then
+            git ls-tree -r --name-only "$after" -- '!/LEVELSET-*.md' > /tmp/changed_levelsets.txt
+          else
+            git diff --name-only "$before" "$after" -- '!/LEVELSET-*.md' > /tmp/changed_levelsets.txt
+          fi
           echo "count=$(wc -l < /tmp/changed_levelsets.txt | tr -d ' ')" >> $GITHUB_OUTPUT
 
       - name: Post closure notification
@@ -35,4 +39,3 @@ jobs:
         run: |
           python3 .github/scripts/post_levelset_closure.py \
             --changed-file /tmp/changed_levelsets.txt
-

@@ -9,6 +9,9 @@ jobs:
   rollover:
     name: Roll over incomplete to-dos
     runs-on: ubuntu-latest
+    concurrency:
+      group: daily-rollover-main
+      cancel-in-progress: false
     permissions:
       contents: write
 
@@ -28,6 +31,8 @@ jobs:
 
       - name: Commit and Push Changes
         run: |
+          # Temporary direct-main emergency corridor: daily note rollover is
+          # calendar-bound and remains direct until the agent PR lane is stable.
           TARGET_DATE="$(TZ=America/Boise date +%Y-%m-%d)"
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -37,5 +42,6 @@ jobs:
             exit 0
           fi
           git commit -m "rollover: carry incomplete to-dos to ${TARGET_DATE}"
+          git fetch origin main
+          git rebase origin/main
           git push origin main
-
