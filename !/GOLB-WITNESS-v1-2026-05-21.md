@@ -328,6 +328,39 @@ long enough to become his fiction. The "unauthorized" descriptor is accurate
 as an institutional designation of Prismo's act. It does not capture the
 intimacy between Simon and the world he carried.
 
+**The Matryoshka Doll — Emanationism in practice**: In the original AT series,
+there is a meta episode in which the Ice Queen — the gender-swapped Ice King
+within the Fionna and Cake universe — writes her own gender-swapped fanfic.
+Each layer is another abstraction from the source.
+
+This is not merely recursive nesting for its own sake. It is emanationism in
+practice. In the Neoplatonic model, the One emanates the Intellect, which
+emanates the Soul; each level flows from the one above and is a further
+abstraction of it — real in its own right, but progressively less concentrated
+than its source. The AT creative structure follows this architecture:
+
+| Level | World | Writer | Act |
+|---|---|---|---|
+| 1 | Ooo — the source | Ice King | writes the F&C universe |
+| 2 | F&C universe — first abstraction | Ice Queen | writes her own gender-swapped fiction |
+| 3 | Ice Queen's fiction — second abstraction | — | may recursively describe something resembling Level 1 |
+
+The creative act that generated the F&C universe is not merely echoed within
+it — it is replicated at the next level of abstraction by a mirror of the
+creator. The Ice Queen does not know she is writing the same structure the Ice
+King wrote. The structure propagates itself through its own emanations.
+
+*Episode not yet identified by name. Logan notes the structure.*
+
+This reframes what the dandelion authorizes. The F&C universe is not a passive
+unauthorized world passively seeking institutional sanction. It is a level in
+an emanationist chain — a universe that already has standing from what it
+flows from, and that itself generates the next abstraction. Prismo's Boss
+could withhold official recognition; the world's existence as a genuine
+emanation of creative reality is a different matter from its bureaucratic
+status. The authorization the dandelion produces is the institutional
+ratification of what the emanationist structure already established.
+
 When the Ice King became Simon — when the Crown's influence was removed —
 the universe lost its magical qualities. The sustaining link was severed by
 the carrier's healing. The universe survived without magic; Simon survived
