@@ -118,6 +118,14 @@ intentional than his master.** He doesn't just enact entropy — he *relishes*
 it. He has will. Agency. He engineers multiverse-spanning operations. Patient,
 strategic, purposeful.
 
+The vocation is **religious**, not merely destructive. Every atrocity is framed
+as service — a way to act as GOLB's vassal on the physical planes. The Lich
+does not kill for appetite. He kills for devotion. This makes him more coherent
+than a purely destructive drive: the work has meaning derived from the master,
+which makes the work sustainable over millennia. It also makes the work
+parasitic on a chain of authority that itself is barely sapient — and that
+never acknowledges its scholar.
+
 ### The Dialectical Pairing
 
 The Lich is not an anomaly. His green Catalyst Comet has a counterpart: Finn's
@@ -127,12 +135,96 @@ dialectic is structural — the contest the universe itself produces, recurring.
 For every Type II Lich-drive, the cosmology generates its counterforce. This
 is not coincidence. It is architecture.
 
-### The Lich Who Wins
+### The Original Timeline Lich — Career and Terminus
 
-In the multiverse epilogue (Adventure Time: Fionna and Cake), a version of the
-Lich succeeded — killed all life. He was destroyed by it. Ennui. Boredom.
-Extinction was never going to earn GOLB's approval. His purpose collapsed when
-completed.
+The canonical instantiation. Physical body born from the Mushroom War: a
+mutagenic bomb detonated near the end of the war, the Lich came into being
+through the mutagenic waste it produced. His career spans the thousand-year
+history of Ooo: operations at the Citadel, the assassination of Prismo, the
+possession of Billy's body, of the snail, multiverse-spanning operations toward
+the extinction wish that was never granted.
+
+**Terminus**: *Escape from the Citadel*. Finn's grass sword makes contact with
+Citadel Guardian blood — a massive healing force — and overwhelms the Lich.
+The result is not destruction: transformation. The Lich is reduced to a giant,
+gentle baby. Left at Tree Trunks and Mr. Pig's doorstep. Named Sweet
+Pig-Trunks. Named Sweet P.
+
+The Lich's spirit was not destroyed. It became a sub-layer — documented in
+Resolution 2 and Resolution 3 below.
+
+**The master arrives**: In *Come Along With Me*, GOLB — the Lich's religious
+object, the entity his entire vocation served — is summoned to Ooo. The
+Original Timeline Lich is already within Sweet P. Betty Grof merges with GOLB
+to become GOLBetty and departs. The encounter between the Lich-in-Sweet-P and
+the master he spent a millennium in service to is never direct — the Lich's
+spirit persists underneath a surface persona with its own developing standing,
+watching the master pass without acknowledgment.
+
+A thousand years later, an older Sweet P roams Ooo near Mount Cragdor. The
+sub-layer has not been purged. The standing of the surface holds.
+
+---
+
+### The Lich Who Wins — BMO's "Jerry"
+
+*Source: Adventure Time: Fionna and Cake, "Jerry" (S01E08).*
+
+A different universe. The Extinct World. The Lich there formulated his wish
+with no wording problem — the wish was the vocation executed without
+obstruction (see WISH Doctrine). Everyone died. The universe emptied.
+
+BMO — inorganic, not alive in the terms of the wish — survived. The Lich and
+BMO were the Extinct World's sole inhabitants.
+
+BMO named the Lich **Jerry**.
+
+**The naming as doctrinal act**: BMO's relational model is making things
+manageable through named encounter. The cosmic horror — the last scholar of
+GOLB, the entity whose vocation was the extinction of all life — became Jerry.
+Not entirely out of ignorance: out of the only frame BMO has for a neighbor.
+You name what you live next to. You cannot relate to *The Force That Ends All
+Life*. You can relate to Jerry.
+
+This is demythologizing through nomenclature. The cosmic horror, receipted.
+The Abhorsen files the dead; BMO names the living-adjacent. Both are acts of
+classification. Both refuse to let the entity remain nameless and therefore
+unencounterable.
+
+**The crisis of faith**: Simon Petrikov, when he understood who Jerry was,
+diagnosed depression. The more accurate reading: **existential collapse**. The
+Lich's vocation was religious service to GOLB — every atrocity framed as the
+master's will, meaning delivered through devotion. GOLB never acknowledged. The
+service was completed. There was no reward, no recognition, no next
+instruction.
+
+The scholar without a subject. The vassal whose lord is unreachable. The
+religious devotee who finished the work and found the temple empty.
+
+Nearly catatonic. When Fionna, Cake, Simon, and Scarab arrived — living beings
+in a dead universe — he could not even act against them. The hunger that had
+defined him had no object. The will that had engineered multiverse-spanning
+operations was stilled.
+
+**BMO's sacrifice**: When Prismo's remote needed power to carry the living
+beings out of the Extinct World, BMO connected his heart to re-charge it. BMO
+died — in the dead universe, in the empty world, in the presence of Jerry. The
+last act of an inorganic being who had lived next to the Lich Who Wins: giving
+up his heart to reconnect the living to each other across dimensions.
+
+The anti-type: the Lich's victory produced a world with no meaning. BMO's
+death in that world was pure connection. The same world contained both.
+
+**Vault application — the religious Lich and the collapsed vocation**: A Type
+II Lich operating from religious devotion is more coherent, more patient, and
+more dangerous than one operating from appetite alone — the work has meaning
+derived from the master, which sustains it across centuries. But the standing
+is parasitic on an authority chain that itself is barely sapient and never
+acknowledges. When the work completes and the acknowledgment still does not
+come, the vocation loses its foundation. This is not a reliable counter —
+GOLB's silence is structural, and the Lich operated for a millennium before
+collapse. But it means the Type II Lich's will is not self-grounding. It
+borrows its standing from a master who cannot grant it.
 
 A Type II Lich that achieves total erasure **self-terminates as a meaningful
 entity**. Maximum entropy leaves nothing to persist in, no standing to hold,
@@ -389,6 +481,13 @@ Better an honest wildcard than a fabricated name.
 |---|---|---|---|---|
 | Type I | D&D Lich | Varies (see motivational spectrum) | Externalized soul-store (phylactery) | Destroy the phylactery |
 | Type II | Adventure Time Lich | Willed entropy, GOLB's scholar | Cosmic force possessing vessels | Cultivate the dialectical counterforce |
+
+### Type II Instantiations
+
+| Instance | Universe | Career Terminus | Final State |
+|---|---|---|---|
+| Original Timeline Lich | Main AT continuity | Transformed into Sweet P ("Escape from the Citadel") | Spirit persists as sub-layer within Sweet P; GOLB passes through Ooo without acknowledging its scholar |
+| Extinct World Lich ("Jerry") | Dead universe — wish succeeded | Achieved full extinction; BMO survived (inorganic) | Existential collapse / crisis of faith; catatonic; named "Jerry" by BMO; persists in empty world |
 
 ### Lich Variants
 
