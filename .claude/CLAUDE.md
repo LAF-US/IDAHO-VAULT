@@ -11,6 +11,7 @@ sync_policy: manual
 authority: LOGAN
 related:
   - CONSTITUTION
+  - "!README.md"
   - "!/AGENTS.md"
   - "!/PERSONAE-ENGINE-v1-2026-05-20.md"
   - PERSONA-PER-SONA-WITNESS-2026-05-13
@@ -30,6 +31,8 @@ related:
 ## Governance
 
 This file provides operational instructions for Claude Code sessions. Vault governance authority lives in `CONSTITUTION.md`. When this file and `CONSTITUTION.md` conflict, `CONSTITUTION.md` governs. This instance operates at **Direct Write** capability tier per `!/AGENTS.md`.
+
+`CONSTITUTION.md` is the first of nine constitutions organized across the TOUCHSTONE TREE (defined in `!README.md`): three each for MIND (Constitution, Charter, Corpus), BODY (Protocols, Procedures, Preferences), and SOUL (Guidelines, Guestbook, Grimoire), plus the NEST (`!`). It is not the definitive founding document — only the first written.
 
 ---
 
@@ -127,7 +130,7 @@ See `VAULT-CONVENTIONS.md` for vault structure, naming, frontmatter, sourcing pr
 
 ## Swarm Coordination
 
-Read THE DOCKET to orient: `!/__!__/!/! The world is quiet here/DOCKET.md`
+Read THE DOCKET to orient: `!/!/__!__/!/! The world is quiet here/DOCKET.md`
 
 That file is the live status board. Update it when you start or finish work. Task assignment flows through GitHub Issues (`agent:*` labels). Linear mirrors from GitHub. Slack carries breadcrumbs. The vault is the record.
 
@@ -143,9 +146,10 @@ This vault uses multiple AI tools. All agents share vault conventions defined in
 
 ## See Also
 
+- `!README.md` — Touchstone Tree; vault's symbolic and relational orientation layer (MIND / BODY / SOUL / NEST)
 - `VAULT-CONVENTIONS.md` — Shared vault conventions for all agents
 - `!/AGENTS.md` — Full agent registry, capability tiers, and boundary rules
-- `CONSTITUTION.md` — Canonical vault governance authority
+- `CONSTITUTION.md` — Canonical vault governance authority (MIND-1 of 9)
 - `AGENTS.md` — Root cross-tool pointer (auto-loaded by Codex CLI, Copilot, Qodo)
 - `!/PERSONAE-ENGINE-v1-2026-05-20.md` — Persona composition, address grammar, epistemological doctrine
 - `PERSONA-PER-SONA-WITNESS-2026-05-13.md` — Per sona mask doctrine (given vs. stolen persona)
