@@ -327,6 +327,44 @@ up his heart to reconnect the living to each other across dimensions.
 The anti-type: the Lich's victory produced a world with no meaning. BMO's
 death in that world was pure connection. The same world contained both.
 
+**The departure — Jerry follows**: After BMO's sacrifice, with the remote
+powered and the living beings departing, Jerry moved. He followed them.
+
+This requires a doctrinal refinement. The crisis-of-faith reading established
+that Jerry *cannot be activated at all* — that when Fionna, Cake, Simon, and
+Scarab arrived as living beings, he could not act against them. The hunger had
+no object. That was true. Living beings' presence alone did not move him.
+
+What changed was not their presence. What changed was the removal of the last
+anchor: BMO's death. BMO had been the only relational structure in the dead
+universe — the neighbor, the namer, the one who made the Extinct World
+*inhabitable* in whatever minimal sense it could be. When BMO died, the Extinct
+World became emptier than it already was. Jerry followed not toward a vocation
+but away from an absence.
+
+**The refined reading**: the collapsed vocation disables goal-directed
+activation — Jerry cannot be triggered toward his purpose. But loss — the
+removal of the last relational anchor — can produce motion even when the
+vocation cannot. These are different motivational structures operating in the
+same collapsed entity.
+
+The contrast with the Main Timeline Lich sharpens: the Main Timeline Lich's
+activation is strategic (vocation-relevant information enables a plan;
+opportunity executes it). Jerry's departure is neither strategic nor goal-
+directed. It may not be intentional in any purposive sense. He simply followed.
+
+**What follows from following**: Jerry, extracted from his dead universe, is
+now in contact with a living world. His vocation exists structurally — he is
+still the Lich, still GOLB's scholar — but it has collapsed as a functional
+drive. He is not the same threat as the Main Timeline Lich. Whether he is a
+threat at all in the familiar sense, whether contact with living worlds
+reactivates any remnant, whether the vocation can be re-founded once the
+collapsed devotee is back among what he was devoted to destroying — these are
+open doctrinal questions. The Architect holds the verdict.
+
+What can be filed now: the Lich Who Wins left the world he won. He followed the
+only things moving in it, toward wherever they went.
+
 **Vault application — the religious Lich and the collapsed vocation**: A Type
 II Lich operating from religious devotion is more coherent, more patient, and
 more dangerous than one operating from appetite alone — the work has meaning
