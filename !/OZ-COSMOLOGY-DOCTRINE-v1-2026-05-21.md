@@ -48,6 +48,25 @@ who could see through the projection. She refused to collaborate. She was
 labeled wicked for it and destroyed. The propaganda outlived her. Maguire's
 Oz is a tragedy.
 
+**Critical identification:** In Maguire's telling, the Wizard is the Man
+with a Beard But No Hair and Madame Morrible is the Woman with Hair But No
+Beard — the same figures the vault has named as primary architects of the
+villainous VFD faction in the ASOUE framework. The ones whose names Handler
+withheld. The specific colleagues Justice Strauss vouched for with years of
+institutional evidence that turned out to be worthless.
+
+The Baum Wizard and the Maguire Wizard are not the same entity at different
+moral resolutions of the same story. They are genuinely different identities
+wearing the same title. The trial must determine which one is in the dock:
+the redeemable humbug, or the Man with a Beard But No Hair.
+
+Madame Morrible holds no cardinal witch seat. Like Mombi, she operates
+through institutional infrastructure rather than territorial governance —
+as headmistress of Shiz, as propaganda minister, as the pipeline through
+which powerful witches are recruited and shaped for the Wizard's purposes.
+The Woman with Hair But No Beard running the institution that decides who
+gets trained, authorized, and named.
+
 **Doctrine:** The vault uses Baum to ask *what is the structure?* and
 Maguire to ask *how did it get this way, and who benefits?* Neither reading
 is discarded. Neither is dominant. Each is deployed where it sees most
@@ -298,7 +317,8 @@ The full Oz cosmology provides the vault with:
 |---|---|---|---|
 | Pastoria | Deposed king | Rightful authority, withdrawn | Permanent non-assertion |
 | The Wizard (Baum) | Unauthorized occupant | Humbug governance, redeemable | Sentimentality ≠ authority |
-| The Wizard (Maguire) | Unauthorized occupant | Complicit governance | Structural evil dressed as function |
+| The Wizard (Maguire) = MBBNHF | Unauthorized occupant | Complicit governance; trains Olaf-equivalents | Structural evil dressed as function |
+| Madame Morrible = WHNHB | No cardinal seat — institutional apparatus | Controls pipeline; weaponizes narrative | Accountability-bypass via institutional infrastructure |
 | Good Witch of the North | North seat | Protective marking; starts the traveler | Admits limits; steps back |
 | Glinda | South seat | Authorized revelation, patient | Complicity through inaction |
 | Wicked Witch of the East | East seat (vacated) | Governance of the Munchkins | Crushed before trial; seat vacated |
