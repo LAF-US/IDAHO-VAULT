@@ -296,10 +296,12 @@ LICH'S WISH: extinction of all life
   └─ [Jake's interception prevents Branch A in the main timeline]
 
 JAKE'S WISH: change the Lich's words mid-utterance
-  └─ Branch B (Main AT): Lich's wish redirected → spent on nothing
-       → Lich kills original Prismo (commits cosmic crime to enter Citadel)
+  └─ Branch B (Main Timeline): Lich's wish redirected → spent on nothing
+       → Lich dormant in Time Room (wish spent; no life to kill; torpor)
+       → Finn and Jake arrive asking about Citadel → Lich's opening
+       → kills Prismo (cosmic crime; entry fee for Citadel operation)
        → Citadel: plans to recruit "the Ancients" as multiverse army
-       → healing blood → Sweet P transformation (plan fails at terminus)
+       → healing blood → Sweet P (plan ends at its first step)
        → Lich spirit persists as sub-layer
        → [Branch C Hand arrives from outside → "Whispers"]
 
