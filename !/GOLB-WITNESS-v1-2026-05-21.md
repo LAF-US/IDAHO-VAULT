@@ -361,6 +361,37 @@ emanation of creative reality is a different matter from its bureaucratic
 status. The authorization the dandelion produces is the institutional
 ratification of what the emanationist structure already established.
 
+**The love, and the derivative works**: The Ice King's relationship to Fionna
+and Cake is not merely creative — it is affectionate. In non-F&C episodes of
+the original AT series, the Ice King demonstrates genuine love for the
+characters he created. They are not a writing project. They are people he
+cares about.
+
+This cultural presence generated derivative works. Other Ooo denizens —
+including Lumpy Space Princess — wrote their own Fionna and Cake stories,
+fanfic of the Ice King's "published" fiction. The Ice King held these as
+inferior. He had a canonical vision; others could write in his world, but not
+as he had written it.
+
+The emanationist table acquires a lateral dimension:
+
+| Level | Material | Voice | Standing |
+|---|---|---|---|
+| 1 | Ooo | — | source |
+| 2 — canonical | Ice King's F&C stories | Ice King | primary emanation; the canonical line |
+| 2 — derivative | Other Ooo denizens' F&C stories (LSP, etc.) | various | lateral emanation from the same source; considered inferior by the canonical voice |
+| 2 — actualized | The real F&C universe | Prismo | actualization of the canonical line, not the derivative versions |
+| 3 | Ice Queen's fiction within the F&C universe | Ice Queen | second-order abstraction from within the actualized Level 2 |
+
+If reading 1 is correct — Ice King wrote first, Prismo loved and actualized —
+then what Prismo actualized was specifically the canonical line. Not LSP's
+version. Not the derivative works. The Ice King's Fionna. This distinguishes
+creative authority (who speaks for the characters) from institutional
+authorization (who sanctions the universe) as already distinct categories
+within the structure: the Ice King held creative authority; Prismo supplied
+actualization without institutional sanction; the canonical standing of the
+characters preceded both.
+
 When the Ice King became Simon — when the Crown's influence was removed —
 the universe lost its magical qualities. The sustaining link was severed by
 the carrier's healing. The universe survived without magic; Simon survived
