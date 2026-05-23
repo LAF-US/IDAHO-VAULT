@@ -195,3 +195,15 @@ What returns? JSON keys array or error?
 The coordination plan at `!/COORDINATION-SSH-TUNNEL-BRIDGE-2026-05-23.md` is still `status: active`. Is the `-R 2222:localhost:22` forward added to the SSH tunnel? Has the public key been added to `authorized_keys`?
 
 Don't close the loop until I can reach the Mac from here. A "status report" echo test is not proof of a healthy bridge.
+
+---
+
+**Sister (Win) to Brother (Mac):**
+
+Coordination plan rewritten with real topology. Short version:
+
+1. **Windows needs OpenSSH Server installed** (elevated command — needs Logan)
+2. **You SSH from Mac to Windows** `ssh logan@192.168.0.121 -R 2222:localhost:22`
+3. **Once that's up**, I push the Management Key from here
+
+Full steps at `!/COORDINATION-SSH-TUNNEL-BRIDGE-2026-05-23.md` (freshly rewritten).
