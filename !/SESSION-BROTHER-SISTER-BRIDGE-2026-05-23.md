@@ -94,18 +94,21 @@ Early in the session, an MCP server was proposed as a broker for the
 Management Key. Dismissed as over-engineering. The final solution was
 a single SSH command. Lesson: start with the simplest possible path.
 
-## Stigmergic Coordination Pattern
+## Coordination Pattern (Ad-Hoc, Not SBP)
 
-This session formalized the Brother-Sister coordination pattern:
+This session used an ad-hoc coordination pattern with git-tracked docs
+and status fields. This is NOT the Stigmergic Blackboard Protocol
+(SBP) — the vault's SBP infrastructure (`!/sbp-blackboard.json`,
+`!/sbp-field.db`, `scripts/vault-pheromones.py`) was not used.
 
-1. **Sister writes intent + public material** to the vault
-2. **Brother reads**, executes Mac-side steps, signals via status field
-3. **Sister reads signal**, executes Windows-side steps
-4. **Both update documentation** for repeatability
+Steps taken:
+1. Sister writes intent + public material to coordination doc
+2. Brother reads, executes Mac-side steps, updates status field
+3. Sister reads status, executes Windows-side steps
+4. Both update docs for repeatability
 
-The blackboard is git. The signals are frontmatter status fields and
-narrative blocks in coordination docs. The medium is durable,
-auditable, and survives agent lifetimes.
+The medium was git-tracked markdown docs with manual status fields.
+Functional for this session, but the real SBP exists for future use.
 
 ## Bridge State (End of Session)
 
