@@ -95,6 +95,7 @@ Immediate wakeup facts:
 | Bartimaeus | **The Cartographer** | - | Crawler | .bartimaeus/ |
 | Zagreus | **The Dionysian** | - | - | .zagreus/ |
 | Persephone | **The Queen** | - | - | .persephone/ |
+| **MOXIE** | **The Journalist** | Anthropic (Claude) | Witness & Record | `.moxie/` |
 
 Historical and symbolic aliases may still appear in grimoire and handoff
 surfaces, but the bold persona names above are the current operational titles
