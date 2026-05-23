@@ -204,6 +204,17 @@ Config paths are OS-agnostic where the tools support `~` expansion:
 
 All model IDs in the BEEFSTACK should use provider-prefixed strings (`ollama/`, `openrouter/`, `opencode/` where supported by the caller, and provider-native IDs beneath OpenRouter) that are resolved by the calling runtime — no OS-specific paths in the model chain itself.
 
+## OpenRouter Management Key
+
+Hermes additionally has access to the **OpenRouter Management Key** for admin operations: creating/revoking sub-keys, setting credit limits, viewing usage across all keys. This key **cannot** be used for inference.
+
+| Purpose | Env var | 1Password ref | Item title |
+|---------|---------|---------------|------------|
+| Inference (Swarm Router Key) | `OPENROUTER_API_KEY` | `op://Vault/OpenRouter API Key/credential` | OpenRouter API Key |
+| Admin (Management Key) | `OPENROUTER_MANAGEMENT_KEY` | `op://Vault/OpenRouter Key/credential` | OpenRouter Key |
+
+The Management Key reference lives in `.op/openrouter.env` alongside the inference key. On the Mac, Hermes reads it from `~/.hermes/.env` after sync. Use `OPENROUTER_MANAGEMENT_KEY` for OpenRouter admin API calls (e.g., `GET https://openrouter.ai/api/v1/admin/...`), not for `/v1/chat/completions`.
+
 ## Runtime Enforcement
 
 As of 2026-05-18, the MacBook runtime contract is:
