@@ -94,6 +94,21 @@ Recent evidence:
 
 Therefore BEEFSTACK fallback design must diversify by **provider bucket**, not just by model name or preferred family. If the first failure is Mistral BYOK, the next automatic fallback should usually jump to another bucket, such as non-BYOK OpenRouter capacity, Claude, OpenAI/Codex, or local Ollama, before retrying another route that uses the same exhausted Mistral provider key.
 
+## Dual-Modal Capabilities Across the Stack
+
+Each BEEFSTACK leg possesses dual operational modes that create an even richer redundancy mesh:
+
+- **Ollama**: Can operate both **Local** (on-device) and **Cloud** (remote instances via `OLLAMA_HOST`)
+- **OpenRouter**: Can operate both **Routed** (shared capacity) and **Direct/BYOK** (using personal provider keys)  
+- **OpenCode**: Can operate both **Routed** (via intermediaries like OpenRouter) and **Direct** (provider API calls)
+- **Provider Access**: Can be both **Shared** (platform-managed) and **Dedicated** (personal keys/endpoints)
+
+This means true redundancy exists not just between the three legs, but within each leg's operational modes. A failure in one mode (e.g., OpenRouter Routed due to shared capacity limits) can often be bypassed by switching to another mode of the same leg (e.g., OpenRouter Direct/BYOK or Direct Provider API) without changing the fundamental leg.
+
+The most resilient configurations leverage orthogonal combinations - for example, using OpenCode Direct Provider API calls when both OpenRouter modes are experiencing issues, or using Ollama Cloud instances when local Ollama is unavailable but remote devices are accessible.
+
+Understanding these dual capabilities allows for more sophisticated fallback strategies that don't just swap between legs, but can switch operational modes within the same leg to maintain continuity when specific pathways encounter issues.
+
 ## Preference Stack on Top
 
 The current model-family preference stack is:
