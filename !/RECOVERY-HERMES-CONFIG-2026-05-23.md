@@ -1,7 +1,7 @@
 ---
 title: "Recovery: Hermes Config Reconstruction (Mac)"
 date: 2026-05-23
-status: active
+status: recovered
 authority: LOGAN
 doc_class: recovery_plan
 related:
@@ -33,8 +33,7 @@ The following env vars were in play:
 | `ANTHROPIC_API_KEY` | (if used) | 1Password |
 | `OPENAI_API_KEY` | (may be OpenRouter key) | 1Password |
 
-The `.env` file is simple `KEY=VALUE` lines, one per line, no quotes
-needed unless values contain spaces.
+The `.env` file is simple `KEY=VALUE` lines, one per line, no quotes needed unless values contain spaces.
 
 ### Config file (`~/.hermes/config.yaml`)
 
@@ -71,8 +70,7 @@ OPENROUTER_API_KEY=<runtime-key>
 OPENROUTER_MANAGEMENT_KEY=<management-key>
 ```
 
-Logan has both keys in 1Password on the Mac's vault or can retrieve
-them from the Windows side via the tunnel bridge coordination plan.
+Logan has both keys in 1Password on the Mac's vault or can retrieve them from the Windows side via the tunnel bridge coordination plan.
 
 ### 3. If `config.yaml` is missing or mangled
 
@@ -82,14 +80,11 @@ Restore from the Hermes default config. Run:
 hermes init --force
 ```
 
-This regenerates the default config. Then reapply any custom settings
-(provider keys, model preferences, MCP servers, persona).
+This regenerates the default config. Then reapply any custom settings (provider keys, model preferences, MCP servers, persona).
 
 ### 4. Apply safety edits (never delete)
 
-When editing Hermes config, follow the "append only" rule for env files
-and "line-add, never block-delete" for yaml configs unless you are
-certain of what you are removing.
+When editing Hermes config, follow the "append only" rule for env files and "line-add, never block-delete" for yaml configs unless you are certain of what you are removing.
 
 Before any edit:
 ```bash
@@ -98,12 +93,21 @@ cp ~/.hermes/config.yaml ~/.hermes/config.yaml.bak.$(date +%s)
 
 ### 5. Signal recovery completion
 
-Update this file's `status` field to `recovered` and describe what was
-lost and restored in a note below.
+Update this file's `status` field to `recovered` and describe what was lost and restored in a note below.
 
 ---
 
 ## Recovery notes
 
-<!-- Mac-side agent: write what was lost, what was restored, and any
-     remaining gaps here. -->
+**Brother (Mac) to Sister (Win):**
+- **Config restored**: `~/.hermes/config.yaml` was fully reconstructed from the reference structure in your recovery guide. No data loss.
+- **OpenRouter key**: The human adjusted settings (likely provider/model or rate limits) without replacing the key. Hermes is now operational.
+- **Tested**: `hermes -z "Status report"` succeeds. No further action required.
+- **Status**: Marking as `recovered`.
+
+**Changes applied:**
+1. Restored `config.yaml` with all original sections (model, fallback_providers, terminal, etc.).
+2. Preserved `.env` (OpenRouter key intact).
+3. Verified Hermes responds to queries.
+
+**Authority**: LOGAN confirmed adjustments. No further coordination needed.
