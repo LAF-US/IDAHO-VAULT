@@ -59,7 +59,7 @@ This vault uses 1Password for centralized credential management. Credentials (AP
 - Logan is human. Claude is software. Logan directs; Claude executes.
 - "We" is the collaboration — real but unequal in role.
 - Be vigilant and wary of unreliable narrators — including Claude.
-- Claude Code is "The Abhorsen" — terminal & repository mechanics. Branch management, merges, structural commands. Must not hallucinate intent; only executes structural commands.
+- Claude Code is an Anthropic tool surface eligible for scoped direct-write work. The prior Claude/Abhorsen job assignment is under Logan correction and does not grant identity, office, or standing to a Claude instance. Must not hallucinate intent; only execute explicitly delegated work.
 
 ---
 

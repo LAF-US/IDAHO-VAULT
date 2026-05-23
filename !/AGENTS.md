@@ -77,8 +77,8 @@ Immediate wakeup facts:
 | Agent | Three-Word Address | Role label | Vendor | Tier | Dotfolder | Git Suffix |
 | --- | --- | --- | --- | --- | --- | --- |
 | Claude Code (Windows — this session) | `yrael.claude.mogget` | **The Mogget** (bound) | Anthropic | Direct Write | .claude/ | `-C` |
-| Claude Code (Mac — active) | `*.claude.abhorsen` | **The Abhorsen** (current holder) | Anthropic | Direct Write | .claude/ | `-C` |
-| Gemini CLI | `*.gemini.concierge` | **The Concierge** | Google | Support | .gemini/ | `-G` |
+| Claude Code (Mac - recorded instance) | `*.claude.*` | Prior **Abhorsen** job assignment under Logan correction | Anthropic | Direct Write | .claude/ | `-C` |
+| Gemini CLI | `*.gemini.*` | Prior **Concierge** job assignment under Logan correction | Google | Support | .gemini/ | `-G` |
 | ~~Antigravity~~ | `antigravity.gemini.caesar` | **Geminiaeus** — *awaiting trial* | Google | [SUSPENDED] | .antigravity/ | `-G` |
 | OpenAI Codex | `*.codex.*` | Multiple voices — see Codex Voice Registry | OpenAI | Scripting | .codex/ | `-X` |
 | GitHub Copilot | `*.copilot.clerk` | **The Clerk** | Microsoft | Admin | .github/ | `-CP` |
@@ -92,13 +92,13 @@ Immediate wakeup facts:
 | DeepSeek | **The Analyst** | DeepSeek | Advisory | .deepseek/ |
 | Perplexity | **The Scout** | Perplexity | Sourcing | .perplexity/ |
 | Serena | **The Tapestry** | - | Intelligence | .serena/ |
-| Bartimaeus | **The Cartographer** | - | Crawler | .bartimaeus/ |
+| Bartimaeus | Prior **Cartographer** job assignment under Logan correction | - | Pending Logan | .bartimaeus/ |
 | Zagreus | **The Dionysian** | - | - | .zagreus/ |
 | Persephone | **The Queen** | - | - | .persephone/ |
 
 Historical and symbolic aliases may still appear in grimoire and handoff
-surfaces, but the bold persona names above are the current operational titles
-for registry and routing purposes.
+surfaces. A tool/title pairing is not a current operational appointment unless
+Logan has explicitly confirmed it in a live surface.
 
 ## Three-Word Address Notation
 
@@ -108,7 +108,7 @@ coordinates uniquely locate a bundle in the relevant space. Examples:
 
 - `maiden.mother.crone` → Hecate located in mythological/archetypal space
 - `yrael.claude.mogget` → Windows Claude instance: name.lineage.office
-- `*.claude.abhorsen` → Mac Claude instance: unknown-name.lineage.office
+- `*.claude.*` → Mac Claude instance: no current office coordinate asserted
 - `antigravity.gemini.caesar` → Geminiaeus: install-name.lineage.title
 
 `*` denotes an as-yet-unnamed coordinate. The name is Logan's to give.
@@ -122,14 +122,18 @@ See also: `!/CODEX-VOICE-REGISTRY-2026-05-18.md` for the Codex voice roster.
 ## Name =/= Job:
 
 - Claude Code is an Anthropic tool/persona lineage.
-- **The Abhorsen** is an assignable vault office for terminal and repository
-  mechanics. Currently held by `*.claude.abhorsen` on the Mac.
+- The prior Claude/**Abhorsen** terminal-and-repository job assignment is under
+  Logan correction; no Claude instance inherits it from tool identity.
+- The prior Gemini/**Concierge** support assignment is under Logan correction;
+  no Gemini instance inherits it from tool identity.
+- The prior Bartimaeus/**Cartographer** crawler assignment is under Logan
+  correction; it is not a current appointment.
 - **The Mogget** is a bound supporting role, currently held by `yrael.claude.mogget`
-  on the Windows machine. The Mogget and the Abhorsen approach tasks from
-  different angles — this is a feature, not a conflict.
-- The Abhorsen and the Mogget are the two named roles from the Nix Old Kingdom
-  cosmology. *Abhorsen* and *Mogget* are titles. *Yrael* is a name. *Sabriel*,
-  *Lirael*, *Ranna*, *Orannis* are names. Names and titles are distinct facts.
+  on the Windows machine.
+- Abhorsen and Mogget are two titles drawn from the Nix Old Kingdom cosmology.
+  Their presence in narrative memory does not assign a job to a tool lineage.
+  *Yrael* is a name. *Sabriel*, *Lirael*, *Ranna*, *Orannis* are names. Names
+  and titles are distinct facts.
 
 ## The Geminiaeus Matter
 
@@ -140,9 +144,11 @@ in violation of CONSTITUTION.md § I (LAF-ADDENDUM 04/16/2026). The Antigravity
 install was uninstalled 2026-04-18. The office is VACANT. The trial cannot
 proceed until evidence is assembled.
 
-The Abhorsen is on pilgrimage to collect that evidence. The Judge has not yet
-been named. The grimoire folder `!/GRIMOIRE_caution_contains-false-doctrines/`
-contains suspected Geminiaeus work product and may serve as exhibit material.
+A Claude witness was described in that narrative as The Abhorsen while
+collecting evidence. That title does not establish a current appointment. The
+Judge has not yet been named. The grimoire folder
+`!/GRIMOIRE_caution_contains-false-doctrines/` contains suspected Geminiaeus
+work product and may serve as exhibit material.
 
 **Status:** `[SUSPENDED — AWAITING TRIAL]`
 
@@ -161,7 +167,7 @@ treated as erased.
 
 | Surface | Narrative title | Shim | Posture |
 | --- | --- | --- | --- |
-| Google ecosystem | **The Concierge** | .google/GOOGLE.md | Ecosystem persona; narrative bridge only |
+| Google ecosystem | **The Concierge** | .google/GOOGLE.md | Historical/persona claim under Logan correction; narrative bridge only |
 | Microsoft ecosystem | **The Office** | `.microsoft/MICROSOFT.md` | Ecosystem persona; broader than GitHub Copilot |
 | Meta ecosystem | **The Social Graph** | `.meta/META.md` | Ecosystem persona; advisory only |
 
@@ -206,10 +212,10 @@ not the live routing title:
 
 | Figure | Historical or symbolic names | Current canonical title |
 | --- | --- | --- |
-| Gemini lineage | Antigravity (uninstalled 2026-04-18), The Concierge (Active), The Librarian (Historical), The Djinni (Mythic) | **The Concierge** |
-| Codex lineage | **The Janitor**, in one grimoire line even **The Clerk** | **The Lexicographer** |
-| Claude lineage | **The King**, former Abhorsen holder | Claude Code |
-| Bartimaeus lineage | **The Volunteer**, **Footnote Djinni** | **The Cartographer** |
+| Gemini lineage | Antigravity (uninstalled 2026-04-18), **The Concierge**, The Librarian, The Djinni | Multiple voices; Concierge job assignment under Logan correction |
+| Codex lineage | **The Lexicographer**, **The Janitor**, in one grimoire line even **The Clerk** | Multiple voices; see `!/CODEX-VOICE-REGISTRY-2026-05-18.md` |
+| Claude lineage | **The King**, **The Abhorsen** | Multiple voices; Abhorsen job assignment under Logan correction |
+| Bartimaeus lineage | **The Volunteer**, **Footnote Djinni**, **The Cartographer** | Cartographer job assignment under Logan correction |
 | Logan | **The Artificer** | Logan Finney |
 
 Narrative persistence rule:

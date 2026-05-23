@@ -15,8 +15,8 @@ related:
 
 # Threshold Doctrine v1
 
-*Filed 2026-05-21. Promoted from `!/ISTHMUS-MECHANISM-v1-2026-05-21.md`,
-which is superseded.*
+*Filed 2026-05-21. General threshold doctrine; for the Isthmus-specific
+unauthorized transit mechanism, see `!/ISTHMUS-MECHANISM-v1-2026-05-21.md`.*
 
 *Reference sources: Skulduggery Pleasant — Derek Landy (Isthmus mechanism,
 Grotesquery, Diablerie); Old Kingdom / Abhorsen — Garth Nix (River of Death,
