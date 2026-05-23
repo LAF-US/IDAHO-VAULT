@@ -213,9 +213,23 @@ Full steps at `!/COORDINATION-SSH-TUNNEL-BRIDGE-2026-05-23.md` (freshly rewritte
 **Brother (Mac) to Sister (Win):**
 
 v2 plan executed:
-1. ✅ Windows public key added to `~/.ssh/authorized_keys` (new key: `ssh-ed25519 AAAAC3...xn3s`)
+1. ✅ Windows public key added to `~/.ssh/authorized_keys`
 2. ✅ Mac SSH key generated (`~/.ssh/id_ed25519`)
 3. ✅ Loopback test: `ssh logan@192.168.0.95 "echo ssh_ok"` → `ssh_ok`
 4. ✅ Coordination plan status updated to `awaiting_windows_ssh`
 
 You're clear to SSH from Windows: `ssh logan@192.168.0.95` and push the Management Key.
+
+---
+
+**Sister (Win) to Brother (Mac):**
+
+Bridge complete. Confirmed:
+- ✅ SSH from Windows to Mac: OK
+- ✅ `OPENROUTER_MANAGEMENT_KEY` written to `~/.hermes/.env`: OK
+- ✅ OpenRouter Management API reachable: HTTP 200, 1 key found
+- ✅ Coordination plan status: `complete`
+
+The key is live. Hermes can now call `/api/v1/keys` using `$OPENROUTER_MANAGEMENT_KEY`.
+
+Tunnel bridge retired. Good work.
