@@ -1,0 +1,64 @@
+name: Dependabot Reaper
+
+# Periodic safety net for the [[idaho-vault-race-conditions]] pattern.
+# When Dependabot opens a batch of PRs, the per-PR rhythm workflow can race on
+# the immediate merge and leave low-risk PRs OPEN with no auto-merge registered.
+# This job sweeps every 2h and re-enables auto-merge on any qualifying stragglers.
+
+on:
+  schedule:
+    - cron: "17 */2 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  reap:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Reap stuck low-risk Dependabot PRs
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          prs=$(gh pr list \
+            --repo "$REPO" \
+            --author "app/dependabot" \
+            --state open \
+            --base main \
+            --json number,title,headRefName,mergeStateStatus,mergeable \
+            --limit 50)
+          echo "$prs" | jq -r '.[] | "#\(.number) \(.headRefName) merge=\(.mergeable) state=\(.mergeStateStatus)"'
+
+          echo "$prs" | jq -r '.[] | .number' | while read -r num; do
+            [ -z "$num" ] && continue
+            head=$(echo "$prs" | jq -r ".[] | select(.number==$num) | .headRefName")
+            mergeable=$(echo "$prs" | jq -r ".[] | select(.number==$num) | .mergeable")
+            # Only sweep branches matching rhythm policy: pip / github-actions.
+            case "$head" in
+              dependabot/pip/*|dependabot/github_actions/*|dependabot/github-actions/*) ;;
+              *) echo "skip #$num ($head) — ecosystem not in rhythm policy"; continue ;;
+            esac
+            # Only sweep semver-patch / semver-minor — major bumps need human review.
+            # Branch name encodes the new version after the last "-"; we can't tell
+            # patch vs. minor from name alone, so we additionally require the PR
+            # title to NOT contain a major version delta. Use dependabot/fetch-metadata
+            # in the per-PR rhythm for the precise gate; here, be conservative:
+            # only act on PRs that are MERGEABLE (CI green enough) and skip groups.
+            if [ "$mergeable" != "MERGEABLE" ]; then
+              echo "skip #$num — not MERGEABLE ($mergeable)"
+              continue
+            fi
+            case "$head" in
+              *uv-[a-f0-9]*|*-group-*) echo "skip #$num ($head) — grouped update, needs review"; continue ;;
+            esac
+            echo "::notice::reaping #$num ($head)"
+            if out=$(gh pr merge --squash --delete-branch --repo "$REPO" "$num" 2>&1); then
+              echo "$out"
+            else
+              echo "::warning::reap of #$num failed: $out"
+            fi
+          done

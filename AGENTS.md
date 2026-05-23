@@ -116,12 +116,12 @@ The `!` layer is not an individual dotfolder. It is collective swarm space and s
 
 | Agent | Dotfolder | Governance shim | Auto-loaded? | Role |
 | --- | --- | --- | --- | --- |
-| Claude Code | `.claude/` | `.claude/CLAUDE.md` | Yes | **The Abhorsen** (Code Authority) |
-| Gemini CLI | `.gemini/` | `.gemini/GEMINI.md` | Yes | **The Concierge** (Support) |
-| OpenAI Codex | `.codex/` | `.codex/CODEX.md` | Yes | **The Lexicographer** (Scripting) |
+| Claude Code | `.claude/` | `.claude/CLAUDE.md` | Yes | Claude lineage; prior **Abhorsen** job assignment is under Logan correction. |
+| Gemini CLI | `.gemini/` | `.gemini/GEMINI.md` | Yes | Gemini lineage; prior **Concierge** job assignment is under Logan correction. |
+| OpenAI Codex | `.codex/` | `.codex/CODEX.md` | Yes | Codex lineage; multiple voices. **The Lexicographer** is a vacant historical office unless Logan appoints a specific instance. |
 | GitHub Copilot | `.github/` | `.github/copilot-instructions.md` | Yes | **The Clerk** (Admin) |
 
-*Full roster including **Grok**, **Perplexity**, **DeepSeek**, **Serena**, and the **Cartographer** available in the [!/AGENTS.md](!/AGENTS.md) ledger.*
+*Full roster including **Grok**, **Perplexity**, **DeepSeek**, **Serena**, and **Bartimaeus** available in the [!/AGENTS.md](!/AGENTS.md) ledger.*
 
 ---
 
