@@ -8,141 +8,164 @@ related:
   - Hermes
   - OpenClaw
   - "PLAN-MANAGEMENT-KEY-TO-HERMES-2026-05-23"
+  - "RECOVERY-HERMES-CONFIG-2026-05-23"
   - BEEFSTACK
 ---
 
-## Stigmergic Blackboard Protocol
+## Topology (Corrected)
 
-This file is the coordination surface. Windows agent writes intent and
-public material. Mac-side agent reads, executes Mac-side steps, and
-signals completion by updating this file's status field.
+The Mac and Windows machines are NOT connected by a persistent SSH
+tunnel. The only live connection is OpenClaw node pairing over
+WebSocket (Mac gateway → Windows node).
+
+A raw SSH tunnel existed historically (circa May 17) via
+`ssh -R 18790:localhost:18789` from Mac to Windows, but is
+currently down. The relevant SSH config and host key are no longer
+present on the Mac.
 
 ## Goal
 
-Make the existing Mac→Windows SSH tunnel bidirectional so Windows can
-push the OpenRouter Management Key to `~/.hermes/.env` on the Mac.
+Re-establish a bidirectional SSH tunnel so Windows can push the
+OpenRouter Management Key to `~/.hermes/.env` on the Mac.
 
-## Current Topology
-
-- Mac (Hermes host) runs OpenClaw gateway, bound loopback port 18789.
-- Mac initiates SSH tunnel to Windows with `-R 18790:localhost:18789`.
-- Windows listens on 127.0.0.1:18790 → forwards to Mac's port 18789.
-- Windows cannot initiate connections to the Mac.
-
-## Desired Topology
-
-Same SSH connection, but add a reverse forward so Windows can reach the
-Mac's SSH port:
+The tunnel flow will be:
 
 ```
-Mac SSH client:  ssh -R 18790:localhost:18789 -R 2222:localhost:22 <windows-host>
-                              ↑ existing tunnel         ↑ new reverse-forward
+Mac SSH client → ssh -R 2222:localhost:22 LOGAN-ZBFURY (192.168.0.121)
+                  ↑                              ↑
+            reverse-forward                  Windows SSH server
+            port 2222 binds                   (needs install)
+            on Windows localhost
+
+Then from Windows:
+  ssh -i ~/.ssh/id_ed25519_openclaw_tunnel -p 2222 localhost
+  → reaches Mac SSH server through the tunnel
+  → push the Management Key
 ```
 
-Port 2222 on localhost (Windows) → Mac's SSH port 22 (via tunnel).
+## Prerequisites — Windows Side
+
+### Step W1 — Install OpenSSH Server
+
+Requires elevation. Run in PowerShell as Administrator:
+
+```powershell
+Add-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0
+Start-Service sshd
+Set-Service sshd -StartupType 'Automatic'
+New-NetFirewallRule -DisplayName 'OpenSSH Server' -Direction Inbound -Protocol TCP -LocalPort 22 -Action Allow
+```
+
+Verify:
+```powershell
+Get-Service sshd | Select-Object Name, Status, StartType
+# Should show: sshd, Running, Automatic
+```
+
+### Step W2 — Enable SSH Key Auth
+
+Ensure `C:\ProgramData\ssh\sshd_config` has:
+```
+PubkeyAuthentication yes
+PasswordAuthentication yes  (or no, your call)
+```
+
+### Step W3 — Signal Ready
+
+Update this file's `status` field from `active` to `awaiting_ssh_server`.
 
 ---
 
-## Step 1 — Mac Agent: Trust the Windows SSH Key
+## Step 1 — Mac Agent: Establish SSH Tunnel
 
-Windows generated a new SSH key pair for this tunnel. The public key is
-below. Add it to `~/.ssh/authorized_keys` on the Mac:
+Once Windows signals `awaiting_ssh_server`:
+
+```bash
+ssh logan@192.168.0.121 -R 2222:localhost:22
+```
+
+- `logan` is the Windows username
+- `192.168.0.121` is the Windows LAN IP
+- `-R 2222:localhost:22` makes port 2222 on Windows → Mac's SSH port 22
+- First connection will prompt for the Windows password and host key confirmation
+
+If the tunnel breaks later, reconnect with the same command.
+
+### Step 1a — Persist the Tunnel (Optional)
+
+Add to `~/.ssh/config` on Mac:
+```
+Host logan-zbfury
+    HostName 192.168.0.121
+    User logan
+    RemoteForward 2222 localhost:22
+```
+
+Then reconnect with: `ssh logan-zbfury`
+
+## Step 2 — Mac Agent: Authorize the Windows SSH Key
+
+Windows generated a key pair for this bridge. The public key is below.
+Add it to `~/.ssh/authorized_keys` on the Mac:
 
 ```
 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDtwaiQhxQ42Ipxz3A0k4k8lnW+xA//CBVXjdvAtXs3j openclaw-tunnel@windows-zbfury-2026-05-23
 ```
 
-The corresponding private key lives at
-`~/.ssh/id_ed25519_openclaw_tunnel` on Windows (LOGAN-ZBFURY). It is
-NOT in this repository.
-
-## Step 2 — Mac Agent: Update the SSH Tunnel Command
-
-Modify the existing SSH tunnel invocation to add the reverse forward:
-
-```bash
-# Old (one-way):
-ssh -R 18790:localhost:18789 user@windows-host
-
-# New (two-way):
-ssh -R 18790:localhost:18789 -R 2222:localhost:22 user@windows-host
-```
-
-Key addition: `-R 2222:localhost:22`
-
-This makes port 2222 on Windows (127.0.0.1:2222) a tunnel endpoint that
-reaches the Mac's SSH server.
-
-If the tunnel is managed by a systemd service, launchd plist, or
-OpenClaw, update the corresponding config file. If it's started
-manually, restart it.
+The private key stays on Windows at
+`~/.ssh/id_ed25519_openclaw_tunnel`. Not in the repo.
 
 ## Step 3 — Mac Agent: Verify & Signal
 
-After steps 1 and 2 are done:
+```bash
+ssh -p 2222 localhost "echo tunnel_active"
+```
 
-1. Verify the tunnel is up: `ssh -p 2222 localhost` from the Mac should
-   loop back successfully.
-2. Change the status field in this file's frontmatter from `active` to
-   `awaiting_windows`.
+Should return `tunnel_active`. Then update this file's `status` to
+`awaiting_windows`.
 
 ---
 
-## Step 4 — Windows Agent: Test the Bridge
+## Step 4 — Windows Agent: Push the Management Key
 
-Once the Mac agent signals `awaiting_windows`:
-
-```powershell
-ssh -i ~/.ssh/id_ed25519_openclaw_tunnel -p 2222 localhost -o StrictHostKeyChecking=accept-new echo "tunnel OK"
-```
-
-If this returns "tunnel OK", the bridge works.
-
-## Step 5 — Windows Agent: Push the Management Key
-
-Read the key from 1Password:
+Once the Mac signals `awaiting_windows`:
 
 ```powershell
-$key = op read "op://Vault/OpenRouter Key/credential"
+ssh -i ~/.ssh/id_ed25519_openclaw_tunnel -p 2222 localhost -o StrictHostKeyChecking=accept-new "cat >> ~/.hermes/.env" < echo "OPENROUTER_MANAGEMENT_KEY=$(op read "op://Vault/OpenRouter Key/credential")"
 ```
 
-Write it to the Mac's Hermes env:
+**Safety:** This does not echo the key. The value is piped directly
+into the remote `cat` command.
 
-```powershell
-ssh -i ~/.ssh/id_ed25519_openclaw_tunnel -p 2222 localhost "echo 'OPENROUTER_MANAGEMENT_KEY=$key' >> ~/.hermes/.env"
-```
-
-**Safety:** Do not echo or log the key value. The `$key` variable stays
-in memory for the duration of this one SSH command.
-
-## Step 6 — Windows Agent: Verify
+### Step 4a — Verify
 
 ```powershell
 ssh -i ~/.ssh/id_ed25519_openclaw_tunnel -p 2222 localhost "grep MANAGEMENT_KEY ~/.hermes/.env"
 ```
 
-Expected output: `OPENROUTER_MANAGEMENT_KEY=sk-or-v1-...`
+Should return `OPENROUTER_MANAGEMENT_KEY=sk-or-v1-...`
 
-## Step 7 — Signal Completion
+## Step 5 — Signal Completion
 
-Update the status field in this file to `complete`.
+Update this file's `status` to `complete`.
 
 ---
 
 ## Rollback
 
-If the tunnel change breaks the existing Mac→Windows connection:
+If the tunnel breaks Windows SSH:
 
-1. On Mac: revert the SSH command to the original `-R 18790:...` only.
-2. Remove the public key from `~/.ssh/authorized_keys` on the Mac.
-3. Delete `~/.ssh/id_ed25519_openclaw_tunnel*` on Windows.
-4. Set this file's status to `rolled_back`.
+1. On Windows: `Stop-Service sshd; Set-Service sshd -StartupType Disabled`
+2. Remove the firewall rule
+3. On Mac: Remove the Windows SSH key from `~/.ssh/authorized_keys`
+4. Set status to `rolled_back`
 
 ## Security Notes
 
-- The private key is ed25519, generated on 2026-05-23, scoped to this
-  tunnel bridge only. Rotate or delete when the bridge is no longer
-  needed.
-- This tunnel port (2222) exposes the Mac's SSH server to `localhost`
-  on Windows — no external network exposure.
-- Do not commit the private key to this repository.
+- Port 22 exposed on Windows LAN (192.168.0.0/24). The firewall rule can
+  be narrowed to the Mac's IP if known.
+- The tunnel port (2222) only binds to Windows localhost — no external
+  exposure.
+- The OpenSSH server only needs to run during the bridge operation; can
+  be stopped and disabled afterward.
+- Do not commit any private keys or passwords to the repo.
