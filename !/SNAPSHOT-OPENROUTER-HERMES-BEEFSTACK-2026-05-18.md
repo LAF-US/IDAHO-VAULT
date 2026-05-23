@@ -225,6 +225,19 @@ Likely fixes are in the OpenRouter dashboard, not in Hermes:
 - Move the affected BYOK keys from prioritized to fallback if shared capacity should be tried first.
 - Add or select a non-capped direct provider route for Hermes if OpenRouter is intentionally budget-restricted.
 
+## Dual-Modal Capability Insight (Post-Incident)
+
+The resolution path revealed an important aspect of the BEEFSTACK architecture: each leg possesses dual operational modes that create additional redundancy pathways:
+
+- **Ollama**: Local (on-device) vs Cloud (remote instances)
+- **OpenRouter**: Routed (shared capacity) vs Direct/BYOK (personal provider keys)
+- **OpenCode**: Routed (via intermediaries) vs Direct (provider API calls)
+- **Provider Access**: Shared (platform-managed) vs Dedicated (personal keys/endpoints)
+
+This means that when one operational mode encounters issues (like OpenRouter Routed hitting BYOK budget limits), another mode of the same system (like Direct Provider API) can often provide an independent pathway without changing the fundamental leg.
+
+The implemented solution—switching Hermes from OpenRouter-routed Mistral access to Direct Mistral API access—exemplifies this principle by activating an alternative operational mode within the provider access layer rather than simply switching between legs.
+
 ## Standing Decisions
 
 - Do not change universal BEEFSTACK doctrine from local-first.
