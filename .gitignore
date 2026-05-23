@@ -379,3 +379,9 @@ rclone-cache/
 # production source formats here. In this vault those may be source documents.
 # Exclude a specific sensitive or draft artifact only by explicit path, a
 # separate local exclude rule, or an approved metadata-driven workflow.
+
+
+
+
+# Ignore Smart Environment folder
+.smart-env
