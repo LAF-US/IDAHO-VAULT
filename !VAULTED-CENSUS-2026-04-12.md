@@ -1,8 +1,10 @@
 ---
 title: "Vaulted Census 2026-04-12"
-updated: 2026-04-12
+updated: 2026-05-22
 status: active
+census_status: historical
 authority: "Logan Finney"
+doctrine_warning: "Correct as a 2026-04-12 census reading; see body warning."
 related:
   - AGENTS
   - swarm
@@ -10,12 +12,17 @@ related:
   - VAULT-CONVENTIONS
   - CREWAI
 date created: Sunday, April 12th 2026, 9:01:48 pm
-date modified: Sunday, April 12th 2026, 9:15:46 pm
 ---
 
 # Vaulted Census
 
 *Filed by Codex - 2026-04-12*
+
+> [!WARNING]
+> Historical census reading. A census is a recurring event, and this census was
+> correct for the survey moment in which it was written: 2026-04-12. Preserve it
+> as a dated count, not as current routing authority. Later Codex/Lexicographer
+> corrections govern present standing unless Logan issues a new census.
 
 This census names the characters and the jobs.
 

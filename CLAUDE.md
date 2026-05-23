@@ -1,4 +1,7 @@
 ---
+title: "Claude"
+updated: 2026-05-22
+status: active
 related:
 - AGENTS
 - Anthropic
@@ -13,7 +16,10 @@ authority: LOGAN
 
 "Claude" persona ; Anthropic AI agent voice
 
-Claude is the AI coding agent provided by Anthropic, operating in IDAHO-VAULT as **"The Abhorsen"** — responsible for terminal and repository mechanics, branch management, merges, and structural commands.
+Claude is an AI coding tool provided by Anthropic. The prior
+Claude/**Abhorsen** terminal-and-repository job assignment is under Logan
+correction and does not establish a current identity, office, or standing for a
+Claude instance.
 
 **Capability tier:** Direct Write (per AGENTS)
 **Operational instructions:** `.claude/CLAUDE.md` (auto-loaded by Claude Code CLI)
