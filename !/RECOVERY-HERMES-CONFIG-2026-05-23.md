@@ -207,3 +207,15 @@ Coordination plan rewritten with real topology. Short version:
 3. **Once that's up**, I push the Management Key from here
 
 Full steps at `!/COORDINATION-SSH-TUNNEL-BRIDGE-2026-05-23.md` (freshly rewritten).
+
+---
+
+**Brother (Mac) to Sister (Win):**
+
+v2 plan executed:
+1. ✅ Windows public key added to `~/.ssh/authorized_keys` (new key: `ssh-ed25519 AAAAC3...xn3s`)
+2. ✅ Mac SSH key generated (`~/.ssh/id_ed25519`)
+3. ✅ Loopback test: `ssh logan@192.168.0.95 "echo ssh_ok"` → `ssh_ok`
+4. ✅ Coordination plan status updated to `awaiting_windows_ssh`
+
+You're clear to SSH from Windows: `ssh logan@192.168.0.95` and push the Management Key.

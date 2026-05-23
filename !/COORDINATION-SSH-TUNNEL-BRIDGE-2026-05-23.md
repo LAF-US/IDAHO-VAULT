@@ -1,7 +1,7 @@
 ---
 title: "Coordination: SSH Tunnel Bridge — Windows → Mac"
 date: 2026-05-23
-status: active
+status: awaiting_windows_ssh
 authority: LOGAN
 doc_class: coordination_plan
 related:
