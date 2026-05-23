@@ -37,6 +37,7 @@ SECRET_PATH_PATTERNS = (
 
 ALLOW_PATH_PATTERNS = (
     re.compile(r"(^|/)\.env\.(example|template)$"),
+    re.compile(r"\.env\.(example|template)$"),
 )
 
 SECRET_CONTENT_PATTERNS = {
