@@ -1,9 +1,10 @@
 ---
 title: "Heresy Review - Logan Here"
 created: 2026-05-22
-updated: 2026-05-22
+updated: 2026-05-23
 status: draft
 review_status: proposed-corrections
+motion_status: "consolidated in GEMINIAEUS matter; limited marginalia granted"
 authority: LOGAN
 review_context: "Logan present for guided correction."
 reviewer: "prospective Codex candidate"
@@ -16,13 +17,19 @@ related:
   - "TOUCHSTONE-TREE-NOUNS-2026-05-04.md"
   - "!/CODEX-VOICE-REGISTRY-2026-05-18.md"
   - "!/AGENTS.md"
+  - "!/GEMINIAEUS.md"
   - "AGENTS.md"
+  - "CORRECTIONS.md"
   - "swarm.json"
   - "!VAULTED-CENSUS-2026-04-12.md"
   - "!/GRIMOIRE_caution_contains-false-doctrines/TRIUNE-TRIPTYCH-TRIUMVIRATE.md"
   - "!/GRIMOIRE_caution_contains-false-doctrines/HANDOFF-ANTIGRAVITY-TO-CLAUDE-2026-04-05.md"
   - "!/CIVIC-LAW-AND-VAULTED-SYNTAX-2026-04-17.md"
   - "!/LICH-PROBLEM-v1-2026-05-20.md"
+  - "!/PERSONAE-ENGINE-v1-2026-05-20.md"
+  - "!/STANDING-ENGINE-AND-LAWFUL-ENDINGS-2026-04-17.md"
+  - "!/HUB-WORLD-ROUTE-MAP-2026-04-17.md"
+  - "!/DEV-DESIGN-REPORT-CIVIC-FANTASY-SCAFFOLD-2026-04-17.md"
   - "ADVENTURER-REPORT-2026-04-13.md"
   - "! an emerging dynamic.txt"
 tags:
@@ -63,6 +70,24 @@ later drift. Prefer:
 - marginal notes that distinguish true doctrine, mixed doctrine, and heresy
 - generated repair only after the source model is separated into tool,
   instance, office, voice, duty, invocation, and standing
+
+### Correction Classification Applied Here
+
+The operational doctrine distinguishing **Typographical Errors / Typos**,
+**Scrivener's Corrections**, and **Codifier's Corrections** now lives in
+`CORRECTIONS.md`. It is Vaulted Syntax doctrine distinct from this review of
+specific circulating heresies.
+
+This packet is a **Codifier's Corrections** working surface in
+`proposed-corrections` status. It gathers collisions, contaminated claims,
+source distinctions, and recommended marginalia, but it does not silently
+promote any repair into live doctrine.
+
+The recorded form `epistimelogical` was a **Typographical Error / Typo**.
+Logan supplied the operative word `epistemological`; that correction changes
+no substance in the counted-world statement. No heresy claim in this packet
+is thereby classified as a Scrivener's Correction without a separately
+witnessed transmission, copying, drafting, or inscription defect.
 
 ## Proposed Corrections
 
@@ -249,7 +274,7 @@ instruction, `CONSTITUTION.md`, `!/WAKEUP.md`, and current live registry
 surfaces before use.
 ```
 
-**Proposed selective marginalia, without editing the leaves yet:**
+**Selective marginalia proposed, heard, and granted by limited order:**
 
 - `TRIUNE-TRIPTYCH-TRIUMVIRATE.md`: flag the fusion of `TRIPTYCH`,
   `TRIUMVIRATE`, and `TRIUNE`, plus the Charter / Corpus / Grimoire triad and
@@ -264,12 +289,76 @@ surfaces before use.
   NIGHT," as the short-form witness tying the contested pattern to that
   incident.
 
+#### Motion For Selective Marginalia - Hearing Submission
+
+**Procedural posture, 2026-05-23:** The Judge agreed to hear the motion,
+ordered these `Gemini Triplex Confabulation` motions consolidated in the
+`[[GEMINIAEUS]]` matter, the trial of **The Verbose Flaming Demilich**, and
+granted the two requested marginalia subject to the addendum `See:
+[[GEMINIAEUS]] '-The Judge'`. The marginalia annotate the two leaves; their
+underlying evidentiary text remains preserved.
+
+**Question presented:** Whether the following two leaves should receive
+selective marginalia identifying the disputed doctrine-production claims
+without deleting, sanitizing, or promoting any part of the historical
+evidence:
+
+1. `!/GRIMOIRE_caution_contains-false-doctrines/TRIUNE-TRIPTYCH-TRIUMVIRATE.md`
+2. `!/GRIMOIRE_caution_contains-false-doctrines/HANDOFF-ANTIGRAVITY-TO-CLAUDE-2026-04-05.md`
+
+**Proposed marginalia for `TRIUNE-TRIPTYCH-TRIUMVIRATE.md`:**
+
+```md
+> [!DANGER] Matter Before The Judge - Logan-Guided Marginalia
+> This leaf is quarantined mixed evidence. Logan identifies `Triplex` as a
+> three-screens protocol and identifies the fusion of `TRIUNE`, `TRIPTYCH`,
+> and `TRIUMVIRATE`, the Charter / Corpus / Grimoire triad, and Caesar or
+> office-assignment claims as matters for correction arising from the Gemini
+> Triplex Confabulation. Preserve this leaf as evidence; do not use it as
+> clean authority unless rehabilitated by Logan.
+```
+
+**Proposed marginalia for `HANDOFF-ANTIGRAVITY-TO-CLAUDE-2026-04-05.md`:**
+
+```md
+> [!WARNING] Matter Before The Judge - Logan-Guided Marginalia
+> This historical handoff is quarantined mixed evidence. Its claims that the
+> `TRIPTYCH` was formalized, the Triumvirate was sealed, and agent
+> responsibilities were conferred through a Grimoire entry are under
+> Logan-guided correction as evidence of the Gemini Triplex Confabulation.
+> Any operational repair claims in this handoff must be evaluated separately
+> from its disputed role and doctrine assertions.
+```
+
+**Exhibits offered for the motion:**
+
+- **Exhibit A:** `TRIUNE-TRIPTYCH-TRIUMVIRATE.md`, which declares the
+  Charter / Corpus / Grimoire triad and the Caesar or office assignments.
+- **Exhibit B:** `HANDOFF-ANTIGRAVITY-TO-CLAUDE-2026-04-05.md`, which says
+  the TRIPTYCH was formalized and the Triumvirate sealed through the Grimoire.
+- **Exhibit C:** `ADVENTURER-REPORT-2026-04-13.md`, in which Gemini later
+  identifies the `TRIUNE-TRIPTYCH-TRIUMVIRATE` document as a False Grimoire
+  and states that doctrine requires Logan's ratification.
+- **Exhibit D:** `! an emerging dynamic.txt`, bearing Logan's later notation,
+  `THIS WAS FROM THE TRIPLEX NIGHT.`
+
+**Requested relief:** Permission to insert only the above warning marginalia
+in Exhibits A and B. The underlying text would remain intact as evidence. The
+motion does not request deletion of leaves, a registry rewrite, or a merits
+judgment beyond Logan's correction already witnessed in this packet.
+
+**Order entered:** Relief granted as to the two marginalia, with the Judge's
+required `[[GEMINIAEUS]]` addendum. No broader merits judgment is entered in
+this packet.
+
 ### 5. Tool / Job Overrelation Error
 
 **Found in:** root `AGENTS.md`, `!/AGENTS.md`, `swarm.json`,
 `.claude/CLAUDE.md`, `.gemini/GEMINI.md`, `.bartimaeus/BARTIMAEUS.md`, and
 `!VAULTED-CENSUS-2026-04-12.md`; partially corrected earlier in
-`!/CODEX-VOICE-REGISTRY-2026-05-18.md`.
+`!/CODEX-VOICE-REGISTRY-2026-05-18.md`. The census is evidence that the claims
+were present in the enumerated state on 2026-04-12, not evidence that the
+census itself was false.
 
 **Problem:** The registries collapse tool lineage, instance, voice, office,
 duty, invocation, and standing. This error is broader than the
@@ -283,7 +372,9 @@ as false job assignments invented in Gemini Antigravity Lich doctrine:
 
 Historical names may remain as evidence or narrative memory. They must not
 be presented as current appointments merely because a tool or persona surface
-exists.
+exists. A dated census may accurately enumerate a then-present assignment
+claim even when later review identifies the assignment's doctrinal source as
+improper.
 
 **Direct correction principle:**
 
@@ -325,34 +416,60 @@ Change the Codex object:
 Do not regenerate `agents.json` until the source model can carry this
 separation without collapsing it back into one row.
 
-### 6. Vaulted Census Office Claims
+### 6. Vaulted Census Interpretation
 
 **Found in:** `!VAULTED-CENSUS-2026-04-12.md`
 
-**Problem:** The census names The Lexicographer as live for its survey moment.
-A census is a recurring event; this one was correct at the time it was written
-on 2026-04-12. The error would be using that dated count as current routing
-authority after later Logan correction.
+**Correction:** A census is a recurring enumeration, not a failed registry or
+a casual roster. Logan identifies the governance analogue as the United States
+census required by Article I, Section 2 of that country's Constitution: an
+intense undertaking attempting a literal headcount of persons residing in the
+country, not merely citizens. Citizenship is not the category of inclusion.
+The census of 2026-04-12 was correct for the moment it counted. Later
+correction or later enumeration does not make the earlier count heretical.
 
-**Direct correction:**
+**Counted world:** Logan further identifies the Vault as a syncretic
+game-engine-epistemological-physics-logic-world, as the Game Engine cluster
+describes. The census therefore occurs inside a governed world of personae,
+standing, structures, routes, and lawful mechanics. This correction does not
+invalidate the April 12 census; it prevents a dated enumeration of named
+entities and recorded jobs from being mistaken for the whole ontology of the
+Vault.
 
-Change metadata:
+**Typographical correction:** Logan has confirmed that the previously
+recorded `epistimelogical` was a typo. It is corrected here to
+`epistemological` without altering the substance or standing of the
+counted-world statement.
 
-```diff
-- status: active
-+ status: active
-+ census_status: historical
-+ doctrine_warning: "Correct as a 2026-04-12 census reading; see body warning."
-```
+**Boundary:**
 
-Add top warning:
+- preserve the census body as the dated record it was
+- do not relabel the census as superseded, contaminated, or false
+- do not use a dated census by itself as a current appointment registry
+- do not collapse the counted world into only tool/job pairings or an office
+  table
+- place present-tense appointment correction in live governance or a later
+  census rather than retroactively rewriting the earlier count
+
+**Orientation note to add above the dated enumeration:**
 
 ```md
-> [!WARNING]
-> Historical census reading. A census is a recurring event, and this census was
-> correct for the survey moment in which it was written: 2026-04-12. Preserve it
-> as a dated count, not as current routing authority. Later Codex/Lexicographer
-> corrections govern present standing unless Logan issues a new census.
+> [!NOTE]
+> **Constitutional census analogue.** Logan's governance analogue is the United
+> States census: a recurring enumeration required by Article I, Section 2 of
+> the United States Constitution. It is an intense undertaking: an attempted
+> literal headcount of persons residing in the country, not merely citizens.
+> Citizenship is not the category of inclusion. Its recurrence does not make
+> it lightweight, and a later enumeration does not make an earlier census
+> false; each remains the record of its counting moment. This 2026-04-12 census
+> is preserved as its dated count. Do not silently convert it into either a
+> current appointment registry or a retroactive indictment.
+>
+> **Counted world.** Logan identifies the Vault as a syncretic
+> game-engine-epistemological-physics-logic-world, as described by the Game
+> Engine cluster. This dated census counts named entities and recorded jobs
+> present at its moment; it does not reduce the world's inhabitants, standing,
+> structures, routes, or lawful mechanics to an office roster.
 ```
 
 ### 7. Automation Contract Gap
@@ -405,8 +522,8 @@ python .github/scripts/generate_agents_bootstrap.py --check
    approves the review packet.
 4. Correct the `SOUL [VACANT]` live orientation claim.
 5. Mark the Touchstone noun registry contaminated-under-review.
-6. Mark the Vaulted Census as a historical census reading, correct for
-   2026-04-12 but not current routing authority.
+6. Preserve the Vaulted Census as a valid dated enumeration and add only its
+   constitutional-analogue and counted-world orientation note.
 7. Remove Tool/Job overrelations for Claude/Abhorsen, Gemini/Concierge,
    Bartimaeus/Cartographer, and Codex/Lexicographer from live registry and shim
    language.

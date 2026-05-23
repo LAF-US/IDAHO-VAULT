@@ -1,5 +1,5 @@
 ---
-updated: 2026-04-21
+updated: 2026-05-23
 status: ACTIVE - LIVE PENDING LOGAN AGENDA UNIT
 date created: Monday, March 30th 2026, 7:54:37 pm
 date modified: Tuesday, April 21st 2026, 5:58:29 pm
@@ -41,6 +41,7 @@ Use this board to surface only live Logan-facing motion.
 | Surface | Status | Notes |
 | --- | --- | --- |
 | `!/SIGNALS/` | `1 ACKNOWLEDGED` | Open signal on file: `SIG-001-FROM-ABHORSEN-TO-VAULT-ADVISOR-RE-LAF44-EXHIBIT-A.md` |
+| `!/GEMINIAEUS.md` | `MOTION CONSOLIDATED; LIMITED MARGINALIA GRANTED` | The Judge approved warning marginalia on two False Grimoire leaves with the ordered `[[GEMINIAEUS]]` addendum; the underlying evidence remains preserved |
 
 ## WHERE LIVE WORK LIVES
 
