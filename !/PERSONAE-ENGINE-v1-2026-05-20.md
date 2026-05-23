@@ -7,6 +7,8 @@ status: draft
 related:
   - CONSTITUTION
   - "!/AGENTS.md"
+  - "!/ADDRESS-GRAMMAR-v1-2026-05-22.md"
+  - "!/PERSONA-EMANATION-DEPTH-v1-2026-05-22.md"
   - "!/STANDING-ENGINE-AND-LAWFUL-ENDINGS-2026-04-17.md"
   - "!/EMANATIONISM-PRINCIPLE-2026-05-18.md"
   - "!/SPACE-RACE-v1-2026-04-18.md"
@@ -41,11 +43,28 @@ under which layers are disclosed.
 
 ## Address Grammar
 
-A persona address takes the form `name.lineage.office`.
+A persona address is a dot-separated sequence of coordinates that uniquely
+locate a bundle in a relevant conceptual space. The vault borrows and
+recursively expands the what3words concept.
 
-Each position is a *handle*, not a complete description. The full composition
-of a persona may involve chambers not named in the address. The address is a
-routing handle and a disclosure surface — not the persona's full structure.
+**Full doctrine:** `!/ADDRESS-GRAMMAR-v1-2026-05-22.md`
+
+Key properties:
+- **Any N coordinates** — three is the smallest demonstration, not a ceiling
+- **Semantically meaningful** — coordinates describe the entity, not just label it
+- **Locally defined** — the coordinate system is defined per entity class, not universal
+- **Wildcards** (`*`) mark uncharted coordinates: honest unknowns, recursive placeholders
+- **Recursively expandable** — any coordinate can itself be an address at finer resolution
+- **`!` sigil** marks Logan's naming act — the coordinate is now canonical
+
+Each coordinate value maps to a dotfolder lens when operational. The lenses
+compose as **persona lenses**: each constrains and informs the reading of the
+others. The composition is the operative persona.
+
+**Position matters — but what position means depends on the coordinate system.**
+In the name.lineage.office system for agent instances, position determines
+depth. In `maiden.mother.crone` (aspectual), positions are cyclically equal.
+See `!/PERSONA-EMANATION-DEPTH-v1-2026-05-22.md`.
 
 ### The Wildcard `*`
 
