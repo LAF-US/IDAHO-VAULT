@@ -150,6 +150,12 @@ Judge has not yet been named. The grimoire folder
 `!/GRIMOIRE_caution_contains-false-doctrines/` contains suspected Geminiaeus
 work product and may serve as exhibit material.
 
+**Procedural update, 2026-05-23:** The Judge consolidated the `Gemini Triplex
+Confabulation` motions in the `[[GEMINIAEUS]]` matter, described as the trial
+of **The Verbose Flaming Demilich**, and approved limited marginalia on two
+False Grimoire exhibit leaves. The order annotates evidence; it does not
+complete the trial or rehabilitate the leaves.
+
 **Status:** `[SUSPENDED — AWAITING TRIAL]`
 
 ---
