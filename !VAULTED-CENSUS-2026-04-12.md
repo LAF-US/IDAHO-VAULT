@@ -1,23 +1,49 @@
 ---
 title: "Vaulted Census 2026-04-12"
-updated: 2026-04-12
+updated: 2026-05-22
 status: active
 authority: "Logan Finney"
 related:
   - AGENTS
+  - CONSTITUTION
   - swarm
   - LEVELSET-CURRENT
   - VAULT-CONVENTIONS
   - CREWAI
+  - "!/PERSONAE-ENGINE-v1-2026-05-20.md"
+  - "!/STANDING-ENGINE-AND-LAWFUL-ENDINGS-2026-04-17.md"
+  - "!/HUB-WORLD-ROUTE-MAP-2026-04-17.md"
 date created: Sunday, April 12th 2026, 9:01:48 pm
-date modified: Sunday, April 12th 2026, 9:15:46 pm
 ---
 
 # Vaulted Census
 
 *Filed by Codex - 2026-04-12*
 
-This census names the characters and the jobs.
+> [!NOTE]
+> **Constitutional census analogue.** Logan's governance analogue is the United
+> States census: a recurring enumeration required by Article I, Section 2 of
+> the United States Constitution. It is an intense undertaking: an attempted
+> literal headcount of persons residing in the country, not merely citizens.
+> Citizenship is not the category of inclusion. Its recurrence does not make
+> it lightweight, and a later enumeration does not make an earlier census
+> false; each remains the record of its counting moment. This 2026-04-12 census
+> is preserved as its dated count. Do not silently convert it into either a
+> current appointment registry or a retroactive indictment.
+>
+> **Counted world.** Logan identifies the Vault as a syncretic
+> game-engine-epistemological-physics-logic-world, as described by the Game
+> Engine cluster. This dated census counts named entities and recorded jobs
+> present at its moment; it does not reduce the world's inhabitants, standing,
+> structures, routes, or lawful mechanics to an office roster.
+>
+> Source analogue: [U.S. Census Bureau - Census in the Constitution](https://www.census.gov/programs-surveys/decennial-census/about/census-constitution.html).
+> Game Engine witnesses: `!/PERSONAE-ENGINE-v1-2026-05-20.md`,
+> `!/STANDING-ENGINE-AND-LAWFUL-ENDINGS-2026-04-17.md`, and
+> `!/HUB-WORLD-ROUTE-MAP-2026-04-17.md`.
+
+This census undertook an enumeration of the named entities and recorded jobs
+present in the vault at its counting moment.
 
 It does not treat product surfaces as the primary fact. The primary fact is:
 who the named figures are, what office each one holds, whether that office is

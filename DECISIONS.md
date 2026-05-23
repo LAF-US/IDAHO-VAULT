@@ -18,6 +18,7 @@ related:
   - CLAUDE
   - CLI
   - CONSTITUTION
+  - CORRECTIONS
   - Copilot
   - END
   - GRIMOIRE
@@ -35,6 +36,7 @@ related:
   - Stone
   - THREAT-MODEL
   - VAULT-CONVENTIONS
+  - VAULTED-SYNTAX
   - YET
   - agent
   - chain
@@ -51,6 +53,12 @@ date modified: Sunday, April 26th 2026, 12:30:00 pm
 ---
 
 [[CHAINFIRE]] & [[CHAINLINK]]
+
+### 2026-05-23: Corrections Classification Doctrine
+- **Decision**: Adopt `CORRECTIONS.md` as active Vaulted Syntax operational doctrine, distinct from any case-specific heresy review packet.
+- **Rule**: Keep three correction classifications distinct: **Typographical Errors / Typos**, **Scrivener's Corrections**, and **Codifier's Corrections**. A particular typo does not eliminate the Scrivener classification; a codifier surface does not silently create doctrine.
+- **Application**: `!/HERESY-REVIEW-LOGAN-HERE-2026-05-22.md` remains a proposed-corrections review surface applying this doctrine, not the doctrine's canonical home.
+- **Authority**: Logan direct instruction.
 
 ### 2026-05-18: Emanationism Principle
 - **Decision**: Record the Emanationism Principle as active doctrine-adjacent guidance in `!/EMANATIONISM-PRINCIPLE-2026-05-18.md`.
