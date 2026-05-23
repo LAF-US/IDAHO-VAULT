@@ -1,13 +1,15 @@
 ---
 title: "Touchstone Tree Noun Registry"
 created: 2026-05-04
-updated: 2026-05-04
+updated: 2026-05-22
 status: active
+review_status: contaminated-under-review
 authority: LOGAN
 authors:
   - Codex
 type: tree-noun-registry
 machine_registry: TOUCHSTONE-TREE-NOUNS-2026-05-04.json
+doctrine_warning: "Contains Charter/Corpus/Grimoire triad residue; see body warning."
 related:
   - "!README"
   - TOUCHSTONE-TREE-NOUNS-2026-05-04
@@ -23,8 +25,14 @@ tags:
 # Touchstone Tree Noun Registry
 
 This note is the human-readable review surface for the Touchstone Tree noun
-standard. The machine-readable source of truth is
-`TOUCHSTONE-TREE-NOUNS-2026-05-04.json`.
+standard. The machine-readable registry is a generated or candidate surface,
+not a clean source of truth while this note remains contaminated-under-review.
+
+> [!WARNING]
+> Logan correction, 2026-05-22: this review surface contains
+> Charter/Corpus/Grimoire triad residue now under Logan-guided correction.
+> Treat it as contaminated-under-review until the Tree nouns are revised and
+> regenerated from a separated source model.
 
 The Tree noun standard is separate from persona chamber standards. Tree noun
 dotfolders such as `.core/`, `.soul/`, and `.nest/` are symbolic anchors. They

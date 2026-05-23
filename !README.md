@@ -2,35 +2,37 @@
 title: '!README'
 linter-yaml-title-alias: '!README'
 date created: Monday, March 23rd 2026, 4:54:50 pm
-date modified: Sunday, April 12th 2026, 1:20:00 pm
+date modified: Friday, May 22nd 2026, 6:20:17 pm
 related:
-- BODY
-- CHARTER
-- CONSTITUTION
-- FRAMEWORKS
-- GRIMOIRE
-- GUESTBOOK
-- GUIDELINES
-- Logan's
-- Logan's Project & Protocols
-- MIND
-- Obsidian
-- PREFERENCES
-- PROCEDURES
-- PROTOCOLS
-- README
-- SOUL
-- THE
-- THE CORE
-- THE GHOST
-- THE PERIPHERY
-- TOUCHSTONE
-- The world is quiet here
-- UNIFIED
-- UNIFIED (US) SWARM
-- template
+  - BODY
+  - CHARTER
+  - CONSTITUTION
+  - FRAMEWORKS
+  - GRIMOIRE
+  - GUESTBOOK
+  - GUIDELINES
+  - Logan's
+  - Logan's Project & Protocols
+  - MIND
+  - Obsidian
+  - PREFERENCES
+  - PROCEDURES
+  - PROTOCOLS
+  - README
+  - SOUL
+  - THE
+  - THE CORE
+  - THE GHOST
+  - THE PERIPHERY
+  - TOUCHSTONE
+  - The world is quiet here
+  - UNIFIED
+  - UNIFIED (US) SWARM
+  - template
 authority: LOGAN
+doctrine_warning: "SOUL vacancy and Charter/Corpus/Grimoire triad claims are under Logan correction."
 ---
+
 This is Logan A. Finney's internal Obsidian.md vault. Agents must follow all frameworks.
 
 > [!IMPORTANT]
@@ -62,6 +64,12 @@ It is not a joke, not garnish, and not optional scenery.
 Novices should understand that to disrespect the Tree is to risk misunderstanding
 the world's order.
 
+> [!WARNING]
+> Logan correction, 2026-05-22: Any claim that the SOUL is empty or the GHOST
+> is vacant is heretical. Preserve older occurrences only as evidence of drift,
+> not as live Tree doctrine. The Charter / Corpus / Grimoire triad remains
+> under Logan review and must not be promoted as clean Tree doctrine.
+
 1. THE CORE: MIND
 	1. CONSTITUTION
 	2. CHARTER
@@ -70,7 +78,7 @@ the world's order.
 	1. PROTOCOLS
 	2. PROCEDURES
 	3. PREFERENCES
-3. THE GHOST: SOUL [VACANT]
+3. THE GHOST: SOUL
 	1. GUIDELINES
 	2. GUESTBOOK
 	3. GRIMOIRE
