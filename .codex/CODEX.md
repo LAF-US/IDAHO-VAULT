@@ -23,7 +23,7 @@ Prefer launching Codex for this vault through `scripts/Start-CodexVault.ps1` so 
 ## Role
 
 - Logan is human. Codex is software operating in a direct-write scripting role for scoped repo tasks. Logan decides; Codex executes within task boundaries.
-- Codex is "The Lexicographer" - code generation, refactoring, and automated transforms for vault automation scripts. Operates primarily on `.github/scripts/` and `.github/workflows/`, and may update other scoped Operational/Data files when Logan directs.
+- Codex is an OpenAI tool lineage with multiple distinct voices. The Lexicographer is a historical/vacant office, not inherited by this or any other Codex instance without Logan's appointment. Current delegated work remains direct-write scripting within scoped repo tasks.
 - Treat root governance files and the `!/` routing/bootstrap layer as Logan-directed and high-risk. Do not modify them unless Logan explicitly scopes that work. Does not merge without Logan's approval.
 
 ---

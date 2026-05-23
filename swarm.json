@@ -4,7 +4,7 @@
   "// conventions": "VAULT-CONVENTIONS.md",
   "principal": "Logan Finney",
   "vault_authority": "https://github.com/LAF-US/IDAHO-VAULT",
-  "registry_version": "2026-04-15 (Wakeup Clarification)",
+  "registry_version": "2026-05-22 (Logan Tool/Job Correction)",
   "wakeup_protocol": {
     "quick_start": "!/WAKEUP.md",
     "boot_order": [
@@ -38,10 +38,11 @@
       "autoload": true,
       "memory_anchored": true,
       "capability_tier": "Direct Write",
-      "office": "Code Authority",
-      "title": "The Abhorsen",
-      "role": "terminal and repository mechanics",
+      "office": null,
+      "title": null,
+      "role": "Anthropic Claude Code lineage; direct-write tool surface. Specific offices and duties require Logan appointment.",
       "label": "agent:claude-code",
+      "notes": "The prior Claude/Abhorsen job assignment is under Logan correction and is not inherited by Claude instances.",
       "bootstrap": {
         "invoke_as": "claude",
         "instructions_file": ".claude/CLAUDE.md",
@@ -60,10 +61,11 @@
       "autoload": true,
       "memory_anchored": true,
       "capability_tier": "Direct Write (Support)",
-      "office": "[VACANT]",
+      "office": null,
       "title": null,
-      "role": "narrative lens, political context, Sebald Code",
+      "role": "Google Gemini lineage; support-capable tool surface. Specific offices and duties require Logan appointment.",
       "label": "agent:gemini",
+      "notes": "The prior Gemini/Concierge job assignment is under Logan correction and is not inherited by Gemini instances.",
       "bootstrap": {
         "invoke_as": "gemini",
         "instructions_file": ".gemini/GEMINI.md",
@@ -127,11 +129,11 @@
       "reference_shim": ".codex/CODEX.md",
       "autoload": true,
       "capability_tier": "Direct Write (scripting)",
-      "office": "Machinery Optimizer",
-      "title": "The Lexicographer",
-      "role": "code generation, refactoring, automated transforms",
+      "office": "[VACANT]",
+      "title": null,
+      "role": "OpenAI Codex lineage; scripting-capable tool surface. Specific offices and duties require Logan appointment.",
       "label": "agent:codex",
-      "notes": "Codex auto-loads repo AGENTS.md instructions. Project-scoped Codex config lives in .codex/config.toml; .codex/CODEX.md is a repo-specific reference shim.",
+      "notes": "The Lexicographer is a historical/vacant office, not inherited by all Codex instances. Codex auto-loads repo AGENTS.md instructions. Project-scoped Codex config lives in .codex/config.toml; .codex/CODEX.md is a repo-specific reference shim. See !/CODEX-VOICE-REGISTRY-2026-05-18.md.",
       "bootstrap": {
         "invoke_as": "codex",
         "instructions_file": ".codex/CODEX.md",
@@ -256,7 +258,8 @@
       "dotfolder": ".bartimaeus",
       "autoload_file": ".bartimaeus/BARTIMAEUS.md",
       "autoload": false,
-      "role": "TBD - pending Logan's direction"
+      "role": "TBD - pending Logan's direction",
+      "notes": "The prior Bartimaeus/Cartographer job assignment is under Logan correction and is not a current appointment."
     },
     {
       "id": "zagreus",
