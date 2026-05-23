@@ -21,7 +21,6 @@
 
 .op/openrouter.env
 .op/reports/
-.op/
 .mcp-auth/
 secrets/
 vault-courier-key.json
