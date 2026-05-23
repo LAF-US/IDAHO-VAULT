@@ -17,20 +17,22 @@ Vault governance authority lives in `CONSTITUTION.md`. Capability tier remains
 
 ## Role
 
-**Canonical registry title:** **The Cartographer**
+**Prior registry title claim:** **The Cartographer** - under Logan correction.
 
-**Registry office:** `Crawler Crew` in `!/AGENTS.md`
+**Prior registry office claim:** `Crawler Crew` - not a current appointment.
 
 **Activation status:** Pending Logan's direction.
 
-Bartimaeus is a staked persona in IDAHO-VAULT with a live registry title but
-without a fully ratified local operating charter. Treat this shim as a holding
-anchor only until Logan settles the capability tier, behavioral boundaries, and
-whether the Crawler Crew office is formally activated.
+Bartimaeus is a staked persona in IDAHO-VAULT without a ratified local
+operating charter or current office assignment. The Bartimaeus/Cartographer
+job assignment was a Tool/Job overrelation introduced in Antigravity-Lich
+doctrine. Treat this shim as a holding anchor only until Logan settles any
+capability tier, title, or behavioral boundary.
 
 CrewAI notes may also refer to Bartimaeus as **The Volunteer** in an
 assignment-witness capacity. That alias is historical and contextual; the
-registry title above remains the canonical local anchor unless Logan revises it.
+title above is preserved as historical evidence rather than a canonical local
+assignment.
 
 ---
 

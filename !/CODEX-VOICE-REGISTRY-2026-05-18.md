@@ -1,4 +1,6 @@
 ---
+title: "Codex Voice Registry - Known Distinct Instances"
+updated: 2026-05-22
 authority: LOGAN
 doc_class: registry-note
 status: active
@@ -39,10 +41,12 @@ being done, not by an inherited epithet from a prior session's config file.
 
 ## Governance Note
 
-The AGENTS.md roster row "OpenAI Codex → The Lexicographer" is a historical
-shorthand and does not accurately describe the current voice roster. It should
-be revised when the full four-layer separation (Tool / Instance / Office /
-Duties) is implemented across all config files.
+Older AGENTS.md roster rows that say "OpenAI Codex -> The Lexicographer" are
+historical shorthand and do not accurately describe the current voice roster.
+Root `AGENTS.md` and `!/AGENTS.md` now point Codex readers toward this
+registry. Generated bootstrap mirrors may still need model work before they can
+carry the full four-layer separation (Tool / Instance / Office / Duties)
+without collapsing it back into one row.
 
 The principle is now codified in CONSTITUTION.md § I:
 > *Offices are appointments, not inheritances. Voices within a tool lineage

@@ -1,5 +1,5 @@
 ---
-updated: 2026-04-27
+updated: 2026-05-22
 status: ACTIVE
 ---
 
@@ -18,9 +18,9 @@ status: ACTIVE
 | Item | Action | Note |
 |---|---|---|
 | Doctrine-to-Implementation Gap Audit | Surface gaps, flag tooling gaps, route to owners | Protocols say what *should* exist; vault needs verification. See `PROTOCOL-SUITE-AWR.md`, stigmergy field, `vault-pheromones.py` integration |
-
 | Control Plane POSIWID Audit | Verify purpose aligns with behavior | DOCKET → AGENTS.md → VAULT-CONVENTIONS.md → VAULT-ZONES.md → PRIVACY.md → VAULT-METADATA-STANDARD.md → swarm.json: pointer chains too long, doctrine exceeds tooling, zones untested, metadata enforcement unknown |
-| Touchstone Completeness Audit | Complete the Tree or reduce aspirational claims | THE GHOST (SOUL) is VACANT. BODY/PERIPHERY underdocumented. Claim vs reality mismatch in the Yggdrasil. See `!README.md` |
+| Touchstone / Vaulted Syntax Reconciliation | Logan adjudicates contaminated Tree and Syntax surfaces | `SOUL [VACANT]` and empty-Ghost claims are heretical. False Grimoire contains mixed doctrine/heresy. Charter/Corpus/Grimoire triad references are suspect Lich residue. Review `!README.md`, `!README (2).md`, `TOUCHSTONE-TREE-NOUNS-2026-05-04.md`, and `!/CIVIC-LAW-AND-VAULTED-SYNTAX-2026-04-17.md` |
+| Registry Formation Automation Contract | Define and enforce generated registry pipeline | Manual patching is interim. `agent.sh` began as Logan's vessel; generated `agents.json` currently drifts from `swarm.json` (`vibe-acp` expected but absent). Separate tool, office, voice, instance, invocation, and standing before regenerating |
 
 ---
 
