@@ -2,9 +2,13 @@
 title: "Address Grammar v1 — Recursive Coordinate Space"
 date created: 2026-05-22
 authority: LOGAN
+authors:
+  - moxie.claude.journalist
 doc_class: doctrine
 status: active
 related:
+  - VAULTED-SYNTAX
+  - "!/CIVIC-LAW-AND-VAULTED-SYNTAX-2026-04-17.md"
   - "!/PERSONAE-ENGINE-v1-2026-05-20.md"
   - "!/PERSONA-EMANATION-DEPTH-v1-2026-05-22.md"
   - "!/EMANATIONISM-PRINCIPLE-2026-05-18.md"
