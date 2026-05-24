@@ -37,9 +37,9 @@ jobs:
             [ -z "$num" ] && continue
             head=$(echo "$prs" | jq -r ".[] | select(.number==$num) | .headRefName")
             mergeable=$(echo "$prs" | jq -r ".[] | select(.number==$num) | .mergeable")
-            # Only sweep branches matching rhythm policy: pip / github-actions.
+            # Only sweep branches matching rhythm policy: pip / uv / github-actions.
             case "$head" in
-              dependabot/pip/*|dependabot/github_actions/*|dependabot/github-actions/*) ;;
+              dependabot/pip/*|dependabot/uv/*|dependabot/github_actions/*|dependabot/github-actions/*) ;;
               *) echo "skip #$num ($head) — ecosystem not in rhythm policy"; continue ;;
             esac
             # Only sweep semver-patch / semver-minor — major bumps need human review.
