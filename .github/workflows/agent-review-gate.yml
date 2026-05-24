@@ -49,6 +49,38 @@ jobs:
             --report-json pr-loop-reconcile.json \
             --report-path pr-loop-watchdog.md
 
+      - name: Sweep action_required runs
+        # IF 8 (action_required runs are a triage surface distinct from PR state)
+        # per !/ARBORSCAPE-PR-EXPANSION-2026-05-22.md. Folds findings into the
+        # existing PR Loop Watchdog report rather than creating a separate issue.
+        id: action_required
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          runs=$(gh run list \
+            --repo "$REPO" \
+            --limit 100 \
+            --json conclusion,name,headBranch,databaseId,createdAt,event)
+          ar=$(echo "$runs" | jq '[.[] | select(.conclusion=="action_required")]')
+          count=$(echo "$ar" | jq 'length')
+          if [ "$count" -eq 0 ]; then
+            echo "has_action_required=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::action_required queue is empty"
+            exit 0
+          fi
+          echo "has_action_required=true" >> "$GITHUB_OUTPUT"
+          echo "::notice::action_required queue has $count runs"
+          {
+            echo ""
+            echo "## Action Required Queue"
+            echo ""
+            echo "Workflow runs waiting on human action: **$count**"
+            echo ""
+            echo "$ar" | jq -r '.[] | "- run #\(.databaseId): `\(.name)` on `\(.headBranch)` — \(.event), \(.createdAt[0:16])"'
+          } >> pr-loop-watchdog.md
+
       - name: Publish PR loop summary
         run: cat pr-loop-watchdog.md >> "$GITHUB_STEP_SUMMARY"
 
@@ -56,9 +88,16 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          watchdog_findings="${{ steps.watchdog.outputs.has_findings }}"
+          action_required_findings="${{ steps.action_required.outputs.has_action_required }}"
+          if [ "$watchdog_findings" = "true" ] || [ "$action_required_findings" = "true" ]; then
+            combined="true"
+          else
+            combined="false"
+          fi
           python3 .github/scripts/issue_reconciler.py \
             --title "[PR Loop Watchdog] Reconciliation report" \
             --body-file pr-loop-watchdog.md \
-            --has-findings "${{ steps.watchdog.outputs.has_findings }}" \
+            --has-findings "$combined" \
             --resolved-comment "Resolved automatically: the latest PR reconciliation found no unresolved blockers."
 
