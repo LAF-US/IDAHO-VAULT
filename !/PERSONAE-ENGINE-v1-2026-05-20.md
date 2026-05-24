@@ -5,6 +5,7 @@ authority: LOGAN
 doc_class: doctrine
 status: draft
 related:
+  - VAULTED-SYNTAX
   - CONSTITUTION
   - "!/AGENTS.md"
   - "!/ADDRESS-GRAMMAR-v1-2026-05-22.md"
