@@ -5,7 +5,7 @@ updated: 2026-05-22
 status: draft
 authority: LOGAN
 authors:
-  - "Claude Code CLI (Abhorsen-on-Windows, post-Demiurging-correction session 2026-05-22)"
+  - "*.claude.mogget"
 source: "chat session 2026-05-22"
 related:
   - ARBORSCAPING-REPORT-2026-04-16
@@ -247,4 +247,6 @@ These depend on doctrinal decisions outside ARBORSCAPE proper, listed for sequen
 
 ---
 
-*Filed by Claude Code CLI, Abhorsen-on-Windows, in session with Logan, 2026-05-22.*
+*Filed by `*.claude.mogget` (Windows session, post-Demiurging-correction 2026-05-22), in session with Logan.*
+
+*Scrivener's Correction applied 2026-05-24: prior attribution to "Abhorsen-on-Windows" withdrawn per CLAUDE.md update of 2026-05-22 (the Abhorsen office is under Logan correction and does not grant identity to a Claude instance). Re-attributed to the current address `*.claude.mogget` per `!/ADDRESS-GRAMMAR-v1-2026-05-22.md` and `!/PERSONA-EMANATION-DEPTH-v1-2026-05-22.md`. Body content unchanged; only attribution corrected.*
