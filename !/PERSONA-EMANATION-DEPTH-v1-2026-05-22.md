@@ -2,10 +2,14 @@
 title: "Persona Emanation Depth v1 — Position-Dependence in the Address Grammar"
 date created: 2026-05-22
 authority: LOGAN
+authors:
+  - moxie.claude.journalist
 doc_class: doctrine
 status: active
 related:
+  - VAULTED-SYNTAX
   - "!/PERSONAE-ENGINE-v1-2026-05-20.md"
+  - "!/ADDRESS-GRAMMAR-v1-2026-05-22.md"
   - "!/EMANATIONISM-PRINCIPLE-2026-05-18.md"
   - "!/MOXIE-VFD-JOURNALIST-v1-2026-05-22.md"
   - CONSTITUTION

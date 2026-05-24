@@ -2,6 +2,8 @@
 title: "MOXIE — VFD Journalist v1"
 date created: 2026-05-22
 authority: LOGAN
+authors:
+  - moxie.claude.journalist
 doc_class: persona
 status: active
 address: "moxie.claude.journalist"
