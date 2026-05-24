@@ -15,6 +15,10 @@ Modes:
     eligible low-risk PRs, and re-arm GitHub auto-merge when needed.
   - enable-auto-merge: perform one final derived-state safety check before
     arming GitHub auto-merge for a PR labeled `auto-merge`.
+  - verify-claim: compare an agent completion-claim comment against the PR's
+    current `mergeable`, `mergeStateStatus`, draft state, and check rollup.
+    Post a divergence comment if the claim disagrees with the institutional
+    state. Addresses IF 7 from !/ARBORSCAPE-PR-EXPANSION-2026-05-22.md.
 """
 
 from __future__ import annotations
@@ -30,6 +34,33 @@ from datetime import datetime, timezone
 
 APPLY_RE = re.compile(r"@copilot\b[\s\S]*?\bapply changes\b", re.IGNORECASE)
 DEFAULT_GRACE_MINUTES = 30
+
+# IF 7 (brass-mouth reliability is per-utterance, not per-agent) per
+# !/ARBORSCAPE-PR-EXPANSION-2026-05-22.md. The verify-claim subcommand watches
+# for agent completion-claim phrases in PR comments and posts a divergence note
+# if GitHub's institutional state disagrees with the claim.
+VERIFY_CLAIM_MARKER = "<!-- verify-claim:1 -->"
+
+CLAIM_PATTERNS: tuple[re.Pattern[str], ...] = tuple(
+    re.compile(p, re.IGNORECASE)
+    for p in (
+        r"\bready (?:to merge|for review|for termination|for archive)\b",
+        r"\bclean(?:,| and)? pushed\b",
+        r"\b(?:CODEX|CLAUDE|BROTHER|SISTER|GEMINI|COPILOT|MOXIE|MOGGET) COMPLETE\b",
+        r"\bno further action pending\b",
+        r"\bthe patient survived\b",
+        r"\bwork finished\b",
+    )
+)
+
+# Known-noise checks: failures here are not real signal per IF 1 in
+# !/ARBORSCAPE-COMPLETION-REPORT-2026-05-17.md and the related Codex carve-out.
+KNOWN_NOISE_CHECKS: frozenset[str] = frozenset(
+    {
+        "submit-pypi",
+        "Automatic Dependency Submission (Python)",
+    }
+)
 
 DEFAULT_REVIEW_REQUIRED_LABEL = "review/required"
 DEFAULT_THREAD_LABEL = "review/threads-open"
@@ -725,6 +756,131 @@ def enable_auto_merge(args: argparse.Namespace) -> int:
     return 0
 
 
+def _matches_claim(body: str) -> bool:
+    if not body:
+        return False
+    return any(pattern.search(body) for pattern in CLAIM_PATTERNS)
+
+
+def _fetch_pr_merge_state(owner: str, repo: str, pr_number: int) -> dict:
+    """Fetch the institutional state fields we compare claims against."""
+    cmd = [
+        "gh",
+        "pr",
+        "view",
+        str(pr_number),
+        "--repo",
+        f"{owner}/{repo}",
+        "--json",
+        "mergeable,mergeStateStatus,statusCheckRollup,isDraft,number",
+    ]
+    result = _run(cmd)
+    return json.loads(result.stdout or "{}")
+
+
+def _list_pr_comment_bodies(owner: str, repo: str, pr_number: int) -> list[str]:
+    """Return raw comment bodies for the PR (issue-style comments)."""
+    cmd = [
+        "gh",
+        "api",
+        f"repos/{owner}/{repo}/issues/{pr_number}/comments",
+        "--paginate",
+    ]
+    try:
+        result = _run(cmd)
+    except RuntimeError:
+        return []
+    try:
+        payload = json.loads(result.stdout or "[]")
+    except json.JSONDecodeError:
+        return []
+    return [item.get("body") or "" for item in payload if isinstance(item, dict)]
+
+
+def _has_prior_verify_comment(owner: str, repo: str, pr_number: int) -> bool:
+    return any(VERIFY_CLAIM_MARKER in body for body in _list_pr_comment_bodies(owner, repo, pr_number))
+
+
+def verify_claim(args: argparse.Namespace) -> int:
+    body = args.comment_body or ""
+
+    # Recursion guard: skip if the trigger comment IS a prior verification comment.
+    if VERIFY_CLAIM_MARKER in body:
+        print("Comment contains verify-claim marker (recursion guard); skipping.")
+        return 0
+
+    # Narrow filter: only act on agent completion-claim phrases.
+    if not _matches_claim(body):
+        print("Comment does not match a known agent completion-claim pattern; nothing to do.")
+        return 0
+
+    # Idempotency: one verification per PR until something material changes.
+    if _has_prior_verify_comment(args.owner, args.repo, args.pr_number):
+        print(
+            f"A prior verify-claim comment already exists on PR #{args.pr_number}; "
+            "skipping to avoid duplicate noise."
+        )
+        return 0
+
+    state = _fetch_pr_merge_state(args.owner, args.repo, args.pr_number)
+
+    mergeable = state.get("mergeable") or "UNKNOWN"
+    merge_state = state.get("mergeStateStatus") or "UNKNOWN"
+    is_draft = bool(state.get("isDraft"))
+    checks = state.get("statusCheckRollup") or []
+
+    failing_real: list[str] = []
+    for check in checks:
+        if not isinstance(check, dict):
+            continue
+        name = check.get("name") or check.get("context") or "<unknown>"
+        result = check.get("conclusion") or check.get("state") or ""
+        if result == "FAILURE" and name not in KNOWN_NOISE_CHECKS:
+            failing_real.append(name)
+
+    divergent_reasons: list[str] = []
+    if mergeable != "MERGEABLE":
+        divergent_reasons.append(f"`mergeable` is `{mergeable}`, not `MERGEABLE`")
+    if merge_state in {"DIRTY", "BLOCKED", "BEHIND", "UNKNOWN"}:
+        divergent_reasons.append(f"`mergeStateStatus` is `{merge_state}`")
+    if is_draft:
+        divergent_reasons.append("the PR is still marked as draft")
+    if failing_real:
+        formatted = ", ".join(f"`{name}`" for name in failing_real)
+        divergent_reasons.append(f"failing checks (excluding known noise): {formatted}")
+
+    if not divergent_reasons:
+        print(
+            f"Claim matches institutional state on PR #{args.pr_number}; "
+            "no divergence comment needed."
+        )
+        return 0
+
+    author = args.comment_author or "an agent"
+    body_lines = [
+        "> **verify-claim**",
+        "",
+        f"A recent comment from @{author} read as an agent completion claim. "
+        "Verifying against current GitHub state:",
+        "",
+    ]
+    for reason in divergent_reasons:
+        body_lines.append(f"- {reason}")
+    body_lines.extend(
+        [
+            "",
+            "The claim and the institutional state appear to diverge. Surfacing the "
+            "loop closure before merge, per IF 7 in "
+            "`!/ARBORSCAPE-PR-EXPANSION-2026-05-22.md`.",
+            "",
+            VERIFY_CLAIM_MARKER,
+        ]
+    )
+    _comment(args.pr_number, "\n".join(body_lines))
+    print(f"Posted verify-claim divergence comment on PR #{args.pr_number}.")
+    return 0
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser()
     subparsers = parser.add_subparsers(dest="command", required=True)
@@ -773,6 +929,13 @@ def build_parser() -> argparse.ArgumentParser:
     enable.add_argument("--pr-number", required=True, type=int)
     enable.add_argument("--grace-minutes", type=int, default=DEFAULT_GRACE_MINUTES)
 
+    verify = subparsers.add_parser("verify-claim")
+    verify.add_argument("--owner", required=True)
+    verify.add_argument("--repo", required=True)
+    verify.add_argument("--pr-number", required=True, type=int)
+    verify.add_argument("--comment-author", default="")
+    verify.add_argument("--comment-body", default="")
+
     return parser
 
 
@@ -791,6 +954,8 @@ def main() -> int:
         return promote_ready(args)
     if args.command == "reconcile-open-prs":
         return reconcile_open_prs(args)
+    if args.command == "verify-claim":
+        return verify_claim(args)
     return enable_auto_merge(args)
 
 
