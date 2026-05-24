@@ -1,5 +1,7 @@
 ---
 authority: LOGAN
+authors:
+  - moxie.claude.journalist
 doc_class: org-record
 status: active
 related:
