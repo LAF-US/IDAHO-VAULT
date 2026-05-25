@@ -92,17 +92,21 @@ Active journalism folders — work-managed by Idaho PTV, NOT for personal consol
 | `~/Library/CloudStorage/` | 8 KB | No cloud drives mounted locally. |
 | **Internal total (approx)** | **~127 GB in key folders** | Remaining ~700 GB is system + apps + other Library content. |
 
-### B2. External Drives (as of 2026-05-25 session)
+### B2. Physical External Drives — Complete Inventory (updated 2026-05-25)
 
-| Drive | Size | FS | Used | Free | Mounted at | Notes |
+Five drives total. Mac sees 2; Windows sees 3. Drive letters changed between the 2026-05-12 Windows INGEST session and now — the Vault was D: on Windows then; it is Mac-only now.
+
+| Volume Label | FS | Total | Used | Free | OS / Mount | Notes |
 |---|---|---|---|---|---|---|
-| My Passport for Mac | 1 TB | HFS+ | 853 GB | 78 GB | `/Volumes/timemachine` | Time Machine only — do not use for defrag |
-| Vault | 2 TB | ExFAT | 28 MB | ~1.8 TB | `/Volumes/Vault` | **D: drive on Windows** — nearly empty, contains `rclone-logs/` with all INGEST transfer logs. Available as staging target from Mac. |
-| Storage (formerly LoganF) | 4.5 TB | unknown | unknown | unknown | **NOT MOUNTED** | Main consolidation target. Location unknown as of this session. Contains prior Desktop transfer (~58–84 GB) and old Vault 2TB contents. |
+| `timemachine` | HFS+ | 1 TB | 853 GB | 78 GB | Mac `/Volumes/timemachine` | Hardware: My Passport for Mac (per Mac system report). Time Machine backup only — do not use for defrag. |
+| `Vault` | exFAT | ~2 TB | ~28 MB | ~1.8 TB | Mac `/Volumes/Vault` | Mac-only in current config. Contains `rclone-logs/` with all INGEST transfer logs (read by Bellhop 2026-05-25). Available as staging target from Mac. **Was D: on Windows during 2026-05-12 INGEST session** — drive letters have since shifted. |
+| `storage` | exFAT | 4,657 GB | 1,509 GB | 3,148 GB | Windows D: | Main content archive and consolidation target. Contains: `Photos Library.photoslibrary` (explains 152 GB vs 5.1 GB ~/Pictures discrepancy — library lives here, not Mac internal), old desktop transfer from 2026-05-12 INGEST (`Cloud/`, `home-root-files/`), extensive personal content dating to 2014. |
+| `Expansion` | exFAT | 3,726 GB | 661 GB | 3,065 GB | Windows E: | Contents not yet inventoried. |
+| `ExternalSSD` | exFAT | 931 GB | 769 GB | 162 GB | Windows F: | Contents not yet inventoried. |
 
-**Vault drive confirmed readable from Mac** — rclone-logs read successfully. Documents-resume.log last entry 2026-05-13 04:45.
+**Windows drive data source:** `Get-Volume` (PowerShell, 2026-05-25 session). **Mac drive data source:** Bellhop's `diskutil` / system report (2026-05-25 session).
 
-**Action required:** Locate and mount Storage drive to complete B2 inventory and begin INGEST pull.
+**Note on rclone-logs:** Previously at `D:\rclone-logs\` (when Vault was D: on Windows, 2026-05-12). Now accessible from Mac at `/Volumes/Vault/rclone-logs/`. Windows reference in Section A1 reflects the original session path.
 
 ### B3. MacBook rclone Status
 
@@ -243,3 +247,4 @@ Active journalism folders — work-managed by Idaho PTV, NOT for personal consol
 | 2026-05-12T21:10 | Updated Documents INGEST status (32% objects, running); memory files updated with key findings; branch returned to main | Claude (Windows) |
 | 2026-05-25T01:30 | Filled in Section B: MacBook local inventory (127 GB in key folders, 79 GB free), rclone confirmed operational (6 remotes), INGEST reachable. 5TB not mounted — B2 pending. Confirmed 1Password files in gdrive-personal. OneDrive Imports emergency downgraded (known dedup per Section E). | Bellhop (Mac) |
 | 2026-05-25T01:50 | Drives inserted: Vault (2TB ExFAT, D: on Windows, 1.8TB free) + My Passport timemachine (1TB). Storage (5TB) NOT present. Read documents-resume.log from Vault drive — INGEST Documents confirmed INCOMPLETE (stopped 2026-05-13 04:45, 72% objects, 1,269 errors, LFS blobs likely missing). Updated B2 with actual drive inventory. Updated INGEST status. 5TB Storage location unknown. | Bellhop (Mac) |
+| 2026-05-25 (Windows session) | Completed B2 physical drive inventory from Windows PowerShell Get-Volume. All 5 drives confirmed: Vault + timemachine on Mac; storage (D:, 4657 GB) + Expansion (E:, 3726 GB) + ExternalSSD (F:, 931 GB) on Windows. Fixed Bellhop error: Vault is Mac-only; D: is the storage drive (not Vault). Resolved Photos Library discrepancy: library is on D:/storage drive, not Mac internal. Dropped unverifiable "formerly LoganF" designation — current label is `storage`. | Claude (Windows session) |
