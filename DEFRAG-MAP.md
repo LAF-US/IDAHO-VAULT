@@ -41,7 +41,7 @@ status: live
 
 | INGEST Folder | Objects | Size | Status |
 |---|---|---|---|
-| `Documents/` | 17,949+ | 4.759 GiB+ | **RESUMING** — restarted 2026-05-12 ~18:00. Remaining ~310 GB is `.git/lfs/objects` (321 GB LFS blob cache). Long-running. Check `D:\rclone-logs\documents-resume.log` for progress. |
+| `Documents/` | 25,500 / 35,512 (72% objects) | ~163 MiB of 405 MiB current batch (40%) | **INCOMPLETE — STOPPED** 2026-05-13 ~04:45 after 9h20m. 1,269 errors. LFS blob cache almost certainly did not complete. Log read by Bellhop 2026-05-25 from Vault drive (D: on Windows = ExFAT 2TB drive, now visible from Mac). Vault splinter folders confirmed in `gdrive-personal:INGEST/windows-2026-05-12/Documents/`. Needs re-run from Windows to finish LFS blobs. |
 | `Desktop-SCRATCH/` | 1,199 | 31.810 GiB | Complete (100%) |
 | `Videos/` | 123 | ~16.6 GiB | Complete (100%) |
 | `Creative-Cloud-Files/` | 259 | 12.309 GiB | Complete (100%) |
@@ -92,18 +92,17 @@ Active journalism folders — work-managed by Idaho PTV, NOT for personal consol
 | `~/Library/CloudStorage/` | 8 KB | No cloud drives mounted locally. |
 | **Internal total (approx)** | **~127 GB in key folders** | Remaining ~700 GB is system + apps + other Library content. |
 
-### B2. 5TB External Drive ("Storage")
+### B2. External Drives (as of 2026-05-25 session)
 
-**Status: NOT MOUNTED during this session — cannot inventory.**
+| Drive | Size | FS | Used | Free | Mounted at | Notes |
+|---|---|---|---|---|---|---|
+| My Passport for Mac | 1 TB | HFS+ | 853 GB | 78 GB | `/Volumes/timemachine` | Time Machine only — do not use for defrag |
+| Vault | 2 TB | ExFAT | 28 MB | ~1.8 TB | `/Volumes/Vault` | **D: drive on Windows** — nearly empty, contains `rclone-logs/` with all INGEST transfer logs. Available as staging target from Mac. |
+| Storage (formerly LoganF) | 4.5 TB | unknown | unknown | unknown | **NOT MOUNTED** | Main consolidation target. Location unknown as of this session. Contains prior Desktop transfer (~58–84 GB) and old Vault 2TB contents. |
 
-Known from prior sessions (2026-05-11):
-- Drive was named `LoganF`, renamed to `Storage` on 2026-05-11
-- Received Desktop transfer (~58–84 GB) from earlier defrag work
-- Contains contents of old "Vault" 2TB drive (copied ~2026-05-08; Vault reformatted after)
-- Plan was to rename to "Cold Storage" after Photos Library rsync completed
-- `My Passport for Mac` (931 GB) is Time Machine only — separate drive
+**Vault drive confirmed readable from Mac** — rclone-logs read successfully. Documents-resume.log last entry 2026-05-13 04:45.
 
-**Action required:** Mount Storage drive to complete B2 inventory before pulling from INGEST.
+**Action required:** Locate and mount Storage drive to complete B2 inventory and begin INGEST pull.
 
 ### B3. MacBook rclone Status
 
@@ -225,9 +224,9 @@ Known from prior sessions (2026-05-11):
 - [ ] Section B (MacBook local + 5TB inventory) — `git pull` IDAHO-VAULT then fill in and commit.
 
 **Resolved/In-progress:**
-- [x] ~~Documents transfer needs resumption~~ — **RUNNING** as of ~18:00. Check `D:\rclone-logs\documents-resume.log`.
-- [x] ~~What is OneDrive `Imports/` (139 GB)?~~ — Answered: direct copy of gdrive-personal from 2026-05-04.
-- [ ] How much free space on the 5TB drive? (MacBook Claude to answer in Section B)
+- [ ] **Documents transfer INCOMPLETE** — stopped 2026-05-13 04:45 after 9h20m with 1,269 errors. 72% objects / ~40% bytes transferred. LFS blob cache likely incomplete. **Needs re-run from Windows** (`rclone copy "C:\Users\loganf\Documents" "gdrive-personal:INGEST/windows-2026-05-12/Documents" --transfers 4 --log-file "D:\rclone-logs\documents-resume2.log"`). Log confirmed read from Vault drive (D:) now accessible on Mac at `/Volumes/Vault/rclone-logs/`.
+- [x] ~~What is OneDrive `Imports/` (139 GB)?~~ — Answered: direct copy of gdrive-personal from 2026-05-04. **Skip per Section E.**
+- [x] ~~How much free space on the 5TB drive?~~ — **5TB Storage drive NOT inserted in 2026-05-25 session.** Vault drive (2TB ExFAT, 1.8TB free) and My Passport timemachine (1TB) are the inserted drives. Storage drive location unknown.
 - [x] ~~Is `gdrive-personal:Photos` Google Photos backup or a separate folder?~~ — **Manual folder, personal/family media 2015–2020. NOT Google Photos.**
 - [x] ~~What's in `gdrive-personal:Takeout`?~~ — **Confirmed: Google Takeout export from 2026-05-03. Group 5 (40 zips, ~80 GB) = Google Photos library. Groups 7+9 = other services. Plus 3 journalism videos.**
 
@@ -243,3 +242,4 @@ Known from prior sessions (2026-05-11):
 | 2026-05-12T19:50 | Closed open questions: Takeout confirmed Google Photos export (2026-05-03); Photos folder is manual personal media; Camera Uploads date range 2025-09–2026-05; Archive contents identified | Claude (Windows) |
 | 2026-05-12T21:10 | Updated Documents INGEST status (32% objects, running); memory files updated with key findings; branch returned to main | Claude (Windows) |
 | 2026-05-25T01:30 | Filled in Section B: MacBook local inventory (127 GB in key folders, 79 GB free), rclone confirmed operational (6 remotes), INGEST reachable. 5TB not mounted — B2 pending. Confirmed 1Password files in gdrive-personal. OneDrive Imports emergency downgraded (known dedup per Section E). | Bellhop (Mac) |
+| 2026-05-25T01:50 | Drives inserted: Vault (2TB ExFAT, D: on Windows, 1.8TB free) + My Passport timemachine (1TB). Storage (5TB) NOT present. Read documents-resume.log from Vault drive — INGEST Documents confirmed INCOMPLETE (stopped 2026-05-13 04:45, 72% objects, 1,269 errors, LFS blobs likely missing). Updated B2 with actual drive inventory. Updated INGEST status. 5TB Storage location unknown. | Bellhop (Mac) |
