@@ -220,19 +220,26 @@ Five drives total. Mac sees 2; Windows sees 3. Drive letters are not permanent �
 ### E3. Open Questions / Blockers
 
 **Requires Logan action in browser:**
-- [ ] **GitHub LFS budget** — push blocked. Buy data pack at `github.com/settings/billing` → "Git LFS Data" ($5/mo, 50 GB). One pack should unblock `git push origin main`.
 - [ ] **Dropbox 304 GB gap** — not shared folders (API confirmed nothing). Check `dropbox.com` → left sidebar → "Paper" for doc count; Settings → Connected Devices for orphaned storage.
 - [ ] **OneDrive Personal Vault** — locked. Open `onedrive.live.com` → Personal Vault → authenticate. Likely near-empty (Imports+Pictures already = 145 GB of 145 GB quota).
+- [ ] **`2026-04-24.md` authentic record** — Orphan branch `bot/daily-rollover-2026-04-24` had an authentic rollover with FMLA paperwork + vault sync tasks. Trunk has template-unrendered version with cleared tasks. Orphan branch deleted; objects still in local reflog (blob `f3d616f35e8ae79f5be7ac61fe7351fd34b9c2fa`). Logan's call: restore authentic April 24 content, or keep trunk version?
 
-**Requires MacBook Claude:**
-- [ ] Section B (MacBook local + 5TB inventory) — `git pull` IDAHO-VAULT then fill in and commit.
+**Requires Mogget (Windows):**
+- [ ] **Documents INGEST re-run** — stopped 2026-05-13 04:45, 72% objects / ~40% bytes, 1,269 errors. LFS blob cache likely incomplete. Run: `rclone copy "C:\Users\loganf\Documents" "gdrive-personal:INGEST/windows-2026-05-12/Documents" --transfers 4 --log-file "D:\rclone-logs\documents-resume2.log"`
 
-**Resolved/In-progress:**
-- [ ] **Documents transfer INCOMPLETE** — stopped 2026-05-13 04:45 after 9h20m with 1,269 errors. 72% objects / ~40% bytes transferred. LFS blob cache likely incomplete. **Needs re-run from Windows** (`rclone copy "C:\Users\loganf\Documents" "gdrive-personal:INGEST/windows-2026-05-12/Documents" --transfers 4 --log-file "D:\rclone-logs\documents-resume2.log"`). Log confirmed read from Vault drive (D:) now accessible on Mac at `/Volumes/Vault/rclone-logs/`.
-- [x] ~~What is OneDrive `Imports/` (139 GB)?~~ — Answered: direct copy of gdrive-personal from 2026-05-04. **Skip per Section E.**
-- [x] ~~How much free space on the 5TB drive?~~ — **5TB Storage drive NOT inserted in 2026-05-25 session.** Vault drive (2TB ExFAT, 1.8TB free) and My Passport timemachine (1TB) are the inserted drives. Storage drive location unknown.
-- [x] ~~Is `gdrive-personal:Photos` Google Photos backup or a separate folder?~~ — **Manual folder, personal/family media 2015–2020. NOT Google Photos.**
-- [x] ~~What's in `gdrive-personal:Takeout`?~~ — **Confirmed: Google Takeout export from 2026-05-03. Group 5 (40 zips, ~80 GB) = Google Photos library. Groups 7+9 = other services. Plus 3 journalism videos.**
+**Requires physical drive mount:**
+- [ ] **5TB Storage drive** — not seen on Mac in this session. When mounted, pull: gdrive-personal content, Dropbox Camera Uploads, OneDrive Pictures.
+
+**Resolved:**
+- [x] ~~**GitHub LFS budget**~~ — Pushes working normally as of 2026-05-25 Mac session (5 commits pushed, including content files).
+- [x] ~~Section B (MacBook local + 5TB inventory)~~ — Complete. Filled in 2026-05-25 Mac session; drive inventory from Windows session.
+- [x] ~~What is OneDrive `Imports/` (139 GB)?~~ — Confirmed: direct copy of gdrive-personal from 2026-05-04. **Skip.**
+- [x] ~~How much free space on the 5TB drive?~~ — Storage drive not on Mac; 4657 GB total, 3148 GB free per Windows `Get-Volume`.
+- [x] ~~Is `gdrive-personal:Photos` Google Photos backup or a separate folder?~~ — Manual folder, personal/family media 2015–2020. NOT Google Photos.
+- [x] ~~What's in `gdrive-personal:Takeout`?~~ — Google Takeout export 2026-05-03. Group 5 (~80 GB) = Google Photos library. Groups 7+9 = other services + 3 journalism videos.
+- [x] **Arborscaping (Mac side)** — Complete 2026-05-25. All 7 orphan history branches deleted after cherry-picks: `2026-04-25.md`, `¿ The question is, has she been good to me.md` (VFD address node), `wayback_audit.py` CWE-20 fix, 2 ingest stubs. Local branch list: `* main` only.
+- [x] **Force-closed PRs** (#356, #355, #354, #352) — All investigated. Content in trunk: #356 swarm MVP files blob-identical ✅; #354 SESSION-2026-05-22.md identical ✅; #352 urllib3 2.7.0 in trunk ✅; #355 pywin32 marker superseded (pywin32 removed from requirements entirely) ✅. No unique content lost.
+- [x] **Open PR audit** — 4 previously-tracked PRs (#356, #355, #354, #352) were force-closed at rewrite time. New open PRs: #369 (Wayback Audit), #368 (topology census), #367–#359 (Dependabot stack). Awaiting Logan review on GitHub.
 
 ---
 
@@ -248,3 +255,4 @@ Five drives total. Mac sees 2; Windows sees 3. Drive letters are not permanent �
 | 2026-05-25T01:30 | Filled in Section B: MacBook local inventory (127 GB in key folders, 79 GB free), rclone confirmed operational (6 remotes), INGEST reachable. 5TB not mounted — B2 pending. Confirmed 1Password files in gdrive-personal. OneDrive Imports emergency downgraded (known dedup per Section E). | Bellhop (Mac) |
 | 2026-05-25T01:50 | Drives inserted: Vault (2TB ExFAT, D: on Windows, 1.8TB free) + My Passport timemachine (1TB). Storage (5TB) NOT present. Read documents-resume.log from Vault drive — INGEST Documents confirmed INCOMPLETE (stopped 2026-05-13 04:45, 72% objects, 1,269 errors, LFS blobs likely missing). Updated B2 with actual drive inventory. Updated INGEST status. 5TB Storage location unknown. | Bellhop (Mac) |
 | 2026-05-25 (Windows session) | Completed B2 physical drive inventory from Windows PowerShell Get-Volume. All 5 drives confirmed: Vault + timemachine on Mac; storage (D:, 4657 GB) + Expansion (E:, 3726 GB) + ExternalSSD (F:, 931 GB) on Windows. **Drive letters shifted between sessions** — Vault was D: on Windows during 2026-05-12 INGEST (Bellhop's snapshot was accurate); in this session D: is the storage drive because drive config changed. Added Expansion + ExternalSSD which Mac couldn't see. Resolved Photos Library discrepancy: library is on D:/storage drive, not Mac internal. Dropped unverifiable "formerly LoganF" designation — current label is `storage`. | Claude (Windows session) |
+| 2026-05-25 (Mac session — end of day) | Arborscaping complete: 7 orphan branches pruned, 4 cherry-picks pushed (including VFD address node, security fix, daily note, ingest stubs). Force-closed PR investigation complete — #356, #354, #352 content confirmed in trunk; #355 superseded. Open PR list corrected: 4 previously-tracked PRs force-closed at rewrite; new open stack: #369, #368, #367–#359. E3 updated: GitHub LFS resolved, Arborscaping/PR items closed, remaining blockers clarified. | Bellhop (Mac) |
