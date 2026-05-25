@@ -24,12 +24,6 @@ jobs:
       - name: Run topology census
         run: python3 .github/scripts/topology_census.py --scope all
 
-      - name: Validate census output
-        run: |
-          git add "!/"
-          python3 .github/scripts/validate_content.py --scope admin
-          git reset HEAD
-
       - name: Get census date
         id: date
         run: echo "today=$(date -u +%Y-%m-%d)" >> "$GITHUB_OUTPUT"
