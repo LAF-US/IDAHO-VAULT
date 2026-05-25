@@ -101,8 +101,8 @@ Five drives total. Mac sees 2; Windows sees 3. Drive letters are not permanent �
 | `timemachine` | HFS+ | 1 TB | 853 GB | 78 GB | Mac `/Volumes/timemachine` | Hardware: My Passport for Mac (per Mac system report). Time Machine backup only — do not use for defrag. |
 | `Vault` | exFAT | ~2 TB | ~28 MB | ~1.8 TB | Mac `/Volumes/Vault` (current) | Contains `rclone-logs/` with all INGEST transfer logs (read by Bellhop 2026-05-25). Was D: on Windows during 2026-05-12 INGEST session; currently on Mac only. Available as staging target from Mac. |
 | `storage` | exFAT | 4,657 GB | 1,509 GB | 3,148 GB | Windows D: | Main content archive and consolidation target. Contains: `Photos Library.photoslibrary` (explains 152 GB vs 5.1 GB ~/Pictures discrepancy — library lives here, not Mac internal), old desktop transfer from 2026-05-12 INGEST (`Cloud/`, `home-root-files/`), extensive personal content dating to 2014. |
-| `Expansion` | exFAT | 3,726 GB | 661 GB | 3,065 GB | Windows E: | Contents not yet inventoried. |
-| `ExternalSSD` | exFAT | 931 GB | 769 GB | 162 GB | Windows F: | Contents not yet inventoried. |
+| `Expansion` | exFAT | 3,726 GB | 661 GB | 3,065 GB | Windows E: | **Journalism archive** — Idaho Reports, Idaho Legislature (il29), Idaho Debates, IDEX, FYIdaho, OI, Social media experiments, Dialogue, Paperwork. Date range 2020–2024. Work journalism projects. |
+| `ExternalSSD` | exFAT | 931 GB | 769 GB | 162 GB | Windows F: | **Production scratch disk** — Adobe Media Cache & Scratch Disk, Premiere Exports, IDEX_Artifacts_temp (2025-07-14), Science Trek, DESKTOP dump (2024-08-01), temp, IR, personal. Was used as video production scratch; likely has recoverable project content mixed with cache. |
 
 **Windows drive data source:** `Get-Volume` (PowerShell, 2026-05-25 session). **Mac drive data source:** Bellhop's `diskutil` / system report (2026-05-25 session).
 
