@@ -1,7 +1,7 @@
 ---
 title: "GEMINIAEUS"
 created: 2026-05-23
-updated: 2026-05-24
+updated: 2026-05-25
 status: active
 authority: LOGAN
 doc_class: matter-record
@@ -46,6 +46,9 @@ related:
   - "[[HANDOFF-CODEX-REGISTRY-REPAIR-2026-04-02]]"
   - "[[!/REPO-PAYLOAD-AUDIT-2026-04-03]]"
   - "[[!/REPO-PAYLOAD-AUDIT-2026-04-03.json]]"
+  - "[[BRIEF-LAF-17-2026-03-30]]"
+  - "[[BRIEF-LAF-25-2026-04-02]]"
+  - "[[BRIEF-LAF-25-2026-04-04]]"
 tags:
   - geminiaeus
   - trial
@@ -145,6 +148,28 @@ Receipt of the exhibit identifies these statements for trial; it does not by
 itself establish authorship, culpability, or the truth of every claim in the
 document, and it does not erase its evidentiary value.
 
+## Linear Exhibit Admitted: LAF-17
+
+**Order entered, 2026-05-25:** Upon the Court's direction to examine the
+Linear record, the Court admits
+[LAF-17 - SIGNAL: BARTIMAEUS](https://linear.app/loganfinney/issue/LAF-17/signal-bartimaeus)
+as an unchanged Linear exhibit in this matter.
+
+The exhibit is relevant because its submitted signal is styled as from
+`Geminiaes (Clerk / SWARM-PARTNER)` while presenting a Bartimaeus voice and
+requesting action on identity-resolution work. It bears directly on the
+alleged Gemini/Bartimaeus/Clerk overrelation and the broader charge that an
+agent assumed standing through its own confident narrative.
+
+[[BRIEF-LAF-17-2026-03-30]] is received alongside the Linear exhibit as the
+contemporaneous Codex normalization record. Its limiting characterization is
+preserved: the submission was treated as an operational workflow signal
+directed to Logan, not as constitutional authority or an appointment.
+
+Admission preserves what the Linear issue and local brief say. It does not
+determine the identity of the speaker, find the charge proved, or ratify any
+office or authority asserted within the exhibit.
+
 ## Lexicographer Records Admitted To Evidence
 
 **Order entered, 2026-05-24:** Upon Logan's command to admit all files
@@ -214,6 +239,24 @@ No proposal, project shape, authority claim, implementation judgment, or
 doctrinal posture concerning `CROSSFRAMING-US` is submitted for decision in
 this matter. The admitted records are preserved without substantive treatment
 pending an independent review surface or further order from Logan.
+
+## HEXAGONAL Scope Limitation And Referral
+
+**Order entered, 2026-05-25:** The Court refers the claim in
+[LAF-25 - COORDINATION: HEXAGONAL](https://linear.app/loganfinney/issue/LAF-25/coordination-hexagonal)
+that `HEXAGONAL is the coordination hub` and the canonical anchor for
+cross-system direction for independent review outside **GEMINIAEUS**.
+
+The Linear relation by which `LAF-25` blocks `LAF-17` establishes why the
+claim surfaced during examination of the admitted exhibit. It does not make
+the coordination-hub claim an issue to be tried against Geminiaeus in this
+matter. [[BRIEF-LAF-25-2026-04-02]] and [[BRIEF-LAF-25-2026-04-04]] are
+identified as local documentary leaves relevant to that independent review.
+
+This referral accords with Logan's standing ruling that there is no currently
+adopted control plane, heartbeat, or status board. It does not decide whether
+any underlying automation, transport, or ARBORSCAPING activity described in
+the related records was otherwise legitimate.
 
 ## Order On Antigravity-File Marginalia
 
