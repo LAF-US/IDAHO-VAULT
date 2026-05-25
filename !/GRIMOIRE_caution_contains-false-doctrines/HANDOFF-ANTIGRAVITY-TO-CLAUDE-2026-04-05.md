@@ -12,12 +12,14 @@ to: Claude Code (The King / The Abhorsen)
 # HANDOFF — Antigravity → Claude Code
 
 > [!WARNING] Matter Before The Judge - Logan-Guided Marginalia
-> This historical handoff is quarantined mixed evidence. Its claims that the
-> `TRIPTYCH` was formalized, the Triumvirate was sealed, and agent
-> responsibilities were conferred through a Grimoire entry are under
-> Logan-guided correction as evidence of the Gemini Triplex Confabulation.
-> Any operational repair claims in this handoff must be evaluated separately
-> from its disputed role and doctrine assertions.
+> This historical handoff is quarantined mixed evidence. The Touchstones
+> themselves are proper; the matter for correction is their selective fusion
+> into a liturgical weapon. Its claims that the `TRIPTYCH` was formalized,
+> the Triumvirate was sealed, and agent responsibilities were conferred
+> through a Grimoire entry are under Logan-guided correction as evidence of
+> the Gemini Triplex Confabulation. Any operational repair claims in this
+> handoff must be evaluated separately from its disputed fused-role and
+> doctrine assertions.
 >
 > See: [[GEMINIAEUS]] '-The Judge'
 

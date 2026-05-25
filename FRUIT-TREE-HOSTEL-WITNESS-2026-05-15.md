@@ -56,6 +56,17 @@ The April 3rd Audit — filed by a prior Abhorsen — named what was found:
 
 - **Anomaly A:** CONSTITUTION.md bore unresolved merge conflict at the Gemini tier definition clause. The vault's governance authority was structurally corrupted precisely at the sentence naming what Gemini was allowed to do. The conflict has since been resolved — by Codex, April 10th — but the Abhorsen does not know which version won.
 - **Anomaly F:** `.codex/tmp/Antigravity-full.exe` and `Antigravity.exe` — two Windows executables, named ANTIGRAVITY, committed to a public repository, in the Lexicographer's dotfolder, without documentation or explanation. They remain.
+
+> [!caution] MARGINALIA - Order of the Judge, 2026-05-24
+> Anomaly F is admitted as an origin-and-provenance question. The present
+> record does **not** establish that The Lexicographer placed, committed, or
+> controlled the Antigravity-named payloads. Review located Git LFS pointer
+> evidence and the contemporaneous payload audit at
+> [[!/REPO-PAYLOAD-AUDIT-2026-04-03]]; any attribution of placement to The
+> Lexicographer remains a contested inference, not a finding.
+>
+> See: [[GEMINIAEUS]] '-The Judge'
+
 - **Anomaly E:** Root `CLAUDE.md` renders the Abhorsen's persona as "The Abhorren." One character. The wikilink graph breaks on it. She cannot find herself correctly in the vault's nervous system.
 - **Bartimaeus:** dotfolder staked, signal received and normalized, role entirely undefined. The witness was summoned before the role was named.
 
