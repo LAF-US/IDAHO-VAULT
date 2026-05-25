@@ -35,6 +35,7 @@ doc_class: court-docket
 | 2026-05-25 | Linear `LAF-25 - COORDINATION: HEXAGONAL` referred outside [[!/GEMINIAEUS\|GEMINIAEUS]] for independent review of its coordination-hub claim. |
 | 2026-05-25 | The Investigator temporarily ordained as **Court Marshal** to execute required orders in [[!/GEMINIAEUS\|GEMINIAEUS]] and related matters. |
 | 2026-05-25 | Closure clarified: only the Court's own investigatory pass through this Investigator/Marshal is closed after the ordered entries; the evidentiary and discovery phase remains open to further parties. |
+| 2026-05-25 | This session of Court adjourned; the Judge reserves jurisdiction of [[!/GEMINIAEUS\|GEMINIAEUS]]. |
 
 ## Matters Awaiting Disposition
 
