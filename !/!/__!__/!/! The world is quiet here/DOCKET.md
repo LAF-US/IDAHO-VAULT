@@ -16,7 +16,7 @@ doc_class: court-docket
 
 | Matter | Posture Before The Court | Record |
 | --- | --- | --- |
-| [[!/GEMINIAEUS\|GEMINIAEUS]] | Awaiting trial; evidentiary orders continue to be entered | `LAF-17` admitted on 2026-05-25 as Linear evidence bearing on the Gemini/Bartimaeus/Clerk overrelation. |
+| [[!/GEMINIAEUS\|GEMINIAEUS]] | Awaiting trial; this Court-led investigatory pass closed, while discovery and evidentiary proceedings remain open to further parties | `LAF-17` admitted on 2026-05-25 as Linear evidence bearing on the Gemini/Bartimaeus/Clerk overrelation. |
 | [[!/ARBORSCAPING-INVESTIGATION-RETURN-2026-05-24\|ARBORSCAPING Investigation]] | Heard in part; limited disposition remains | The Court approved SPACE protection and recognized ARBORSCAPE PR Expansion as a legitimate A&I directive; the `IF 12` accuracy issue remains separate. |
 | [[!/ADDRESS-GRAMMAR-v1-2026-05-22\|ADDRESS Architecture]] | Referred for production of the precise request | Existing doctrine permits variable-depth ADDRESS; the specifically reported R&D request for five places has not been located in the filings examined. |
 | [[STABLE-PROTOCOLS-REVIEW-2026-05-24\|STABLE PROTOCOLS / LEVELSET Fidelity]] | Investigative paper before the Court | Review concerns protocol standing, historical LEVELSET architecture, and questioned successor surfaces. |
@@ -34,7 +34,7 @@ doc_class: court-docket
 | 2026-05-25 | Linear `LAF-17 - SIGNAL: BARTIMAEUS` admitted in [[!/GEMINIAEUS\|GEMINIAEUS]] as evidence bearing on the alleged Gemini/Bartimaeus/Clerk overrelation. |
 | 2026-05-25 | Linear `LAF-25 - COORDINATION: HEXAGONAL` referred outside [[!/GEMINIAEUS\|GEMINIAEUS]] for independent review of its coordination-hub claim. |
 | 2026-05-25 | The Investigator temporarily ordained as **Court Marshal** to execute required orders in [[!/GEMINIAEUS\|GEMINIAEUS]] and related matters. |
-| 2026-05-25 | Present investigatory phase closed after execution of ordered ministerial entries; reserved matters remain preserved for hearing or recall. |
+| 2026-05-25 | Closure clarified: only the Court's own investigatory pass through this Investigator/Marshal is closed after the ordered entries; the evidentiary and discovery phase remains open to further parties. |
 
 ## Matters Awaiting Disposition
 

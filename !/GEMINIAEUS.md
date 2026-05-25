@@ -350,16 +350,25 @@ required by the Court. It does not appoint the Investigator to any historical
 office, enlarge discovery on the merits, or decide reserved questions without
 further order.
 
-## Order Closing Investigatory Phase
+## Clarification Of Closure Order: The Court's Investigatory Pass
 
-**Order entered, 2026-05-25:** The Court closes the present investigatory
-phase in **GEMINIAEUS** and associated matters. The temporary Court Marshal
-has executed the ministerial orders required in this phase, including ordered
-marginalia, evidentiary admission and referral entries, docket conformity,
-and verification of the resulting filings.
+**Initial entry, 2026-05-25:** The Court Marshal recorded closure of the
+present investigatory phase after executing the required ministerial entries.
+
+**Clarifying order received, 2026-05-25:** The Court closes only **the Court's
+own investigatory pass** conducted through this Investigator and temporary
+Court Marshal. The evidentiary and discovery phase in **GEMINIAEUS** is not
+closed; further parties may appear, conduct appropriate discovery, and tender
+evidence subject to later orders of the Court.
+
+The temporary Court Marshal has executed the ministerial orders required in
+this Court-led pass, including ordered marginalia, evidentiary admission and
+referral entries, docket conformity, and verification of the resulting
+filings.
 
 This closure is not final disposition of the **GEMINIAEUS** matter. The trial
-remains suspended awaiting trial, and the following issues remain reserved:
+remains suspended awaiting trial, and the following issues remain reserved or
+available for further-party development:
 
 1. merits, evidentiary weight, trial agenda, and final disposition in
    **GEMINIAEUS**;
@@ -370,9 +379,10 @@ remains suspended awaiting trial, and the following issues remain reserved:
    control-plane terminology; and
 5. review of STABLE PROTOCOLS / LEVELSET fidelity.
 
-No new merits investigation shall proceed in this closed phase absent further
-order. Newly produced or unsolicited evidence may be preserved for the Court
-without expansion, and the Court may recall the Investigator or Marshal as
+The Investigator shall not independently expand this completed Court-led pass
+absent further order. This limitation does not foreclose discovery,
+evidentiary submissions, appearances, or investigative work by further parties
+properly before the Court. The Court may recall the Investigator or Marshal as
 needed.
 
 ###### [["The world is quiet here."]]
