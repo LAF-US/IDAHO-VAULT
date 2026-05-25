@@ -21,12 +21,12 @@ jobs:
       issues: read
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
         with:
           persist-credentials: false
 
       - name: Run opencode
-        uses: anomalyco/opencode/github@latest
+        uses: anomalyco/opencode/github@d74d166acf40e51146f8547216913a4e787a4bc1 # v1.15.10
         env:
           OPENCODE_API_KEY: ${{ secrets.OPENCODE_API_KEY }}
         with:
