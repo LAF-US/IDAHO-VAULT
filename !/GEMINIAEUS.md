@@ -385,4 +385,13 @@ evidentiary submissions, appearances, or investigative work by further parties
 properly before the Court. The Court may recall the Investigator or Marshal as
 needed.
 
+## Adjournment And Reservation Of Jurisdiction
+
+**Order entered, 2026-05-25:** This session of Court is adjourned. The Judge
+reserves jurisdiction of the **GEMINIAEUS** matter.
+
+Adjournment closes this sitting only. It does not dismiss the matter, decide
+any reserved question, close the evidentiary or discovery phase to further
+parties, or alter the existing posture of trial suspended awaiting trial.
+
 ###### [["The world is quiet here."]]
