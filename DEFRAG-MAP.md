@@ -94,7 +94,7 @@ Active journalism folders — work-managed by Idaho PTV, NOT for personal consol
 
 ### B2. Physical External Drives — Complete Inventory (updated 2026-05-25)
 
-Five drives total — all five confirmed plugged in (2026-05-25). Two on Mac, three on Windows. Drive letters are not permanent — they shift as drives are connected to different machines. During the 2026-05-12 Windows INGEST session the Vault was D:; in this session D: is the storage drive because the physical configuration changed.
+Five drives total. Mac sees 2; Windows sees 3. Drive letters are not permanent — they shift as drives are connected to different machines. During the 2026-05-12 Windows INGEST session the Vault was D:; in this session D: is the storage drive because the physical configuration changed.
 
 | Volume Label | FS | Total | Used | Free | OS / Mount | Notes |
 |---|---|---|---|---|---|---|
@@ -227,8 +227,8 @@ Five drives total — all five confirmed plugged in (2026-05-25). Two on Mac, th
 **Requires Mogget (Windows):**
 - [ ] **Documents INGEST re-run** — stopped 2026-05-13 04:45, 72% objects / ~40% bytes, 1,269 errors. LFS blob cache likely incomplete. Run: `rclone copy "C:\Users\loganf\Documents" "gdrive-personal:INGEST/windows-2026-05-12/Documents" --transfers 4 --log-file "D:\rclone-logs\documents-resume2.log"`
 
-**Requires Mogget (Windows) — drives confirmed mounted:**
-- [ ] **Cloud pulls from Storage drive** — `storage` (D:, 3,148 GB free), `Expansion` (E:), `ExternalSSD` (F:) are all on Windows. Pull targets: gdrive-personal content, Dropbox Camera Uploads, OneDrive Pictures. All five physical drives confirmed plugged in as of 2026-05-25.
+**Requires physical drive mount:**
+- [ ] **5TB Storage drive** — not seen on Mac in this session. When mounted, pull: gdrive-personal content, Dropbox Camera Uploads, OneDrive Pictures.
 
 **Resolved:**
 - [x] ~~**GitHub LFS budget**~~ — Pushes working normally as of 2026-05-25 Mac session (5 commits pushed, including content files).
@@ -256,4 +256,3 @@ Five drives total — all five confirmed plugged in (2026-05-25). Two on Mac, th
 | 2026-05-25T01:50 | Drives inserted: Vault (2TB ExFAT, D: on Windows, 1.8TB free) + My Passport timemachine (1TB). Storage (5TB) NOT present. Read documents-resume.log from Vault drive — INGEST Documents confirmed INCOMPLETE (stopped 2026-05-13 04:45, 72% objects, 1,269 errors, LFS blobs likely missing). Updated B2 with actual drive inventory. Updated INGEST status. 5TB Storage location unknown. | Bellhop (Mac) |
 | 2026-05-25 (Windows session) | Completed B2 physical drive inventory from Windows PowerShell Get-Volume. All 5 drives confirmed: Vault + timemachine on Mac; storage (D:, 4657 GB) + Expansion (E:, 3726 GB) + ExternalSSD (F:, 931 GB) on Windows. **Drive letters shifted between sessions** — Vault was D: on Windows during 2026-05-12 INGEST (Bellhop's snapshot was accurate); in this session D: is the storage drive because drive config changed. Added Expansion + ExternalSSD which Mac couldn't see. Resolved Photos Library discrepancy: library is on D:/storage drive, not Mac internal. Dropped unverifiable "formerly LoganF" designation — current label is `storage`. | Claude (Windows session) |
 | 2026-05-25 (Mac session — end of day) | Arborscaping complete: 7 orphan branches pruned, 4 cherry-picks pushed (including VFD address node, security fix, daily note, ingest stubs). Force-closed PR investigation complete — #356, #354, #352 content confirmed in trunk; #355 superseded. Open PR list corrected: 4 previously-tracked PRs force-closed at rewrite; new open stack: #369, #368, #367–#359. E3 updated: GitHub LFS resolved, Arborscaping/PR items closed, remaining blockers clarified. | Bellhop (Mac) |
-| 2026-05-25 (Mac session — addendum) | Confirmed: all 5 physical drives are plugged in. Mac has timemachine + Vault; Windows (Mogget) has storage + Expansion + ExternalSSD. "5TB drive location unknown" resolved — it is Windows D:. Cloud pulls now blocked on Mogget execution, not drive availability. B2 and E3 updated. | Bellhop (Mac) |
