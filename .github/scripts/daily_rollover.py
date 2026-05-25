@@ -62,6 +62,15 @@ TASK_SLASH_RE = re.compile(r"\s*/\s*")
 TASK_AMPERSAND_RE = re.compile(r"\s*&\s*")
 TASK_SPACE_RE = re.compile(r"\s+")
 
+# Obsidian Tasks plugin annotation emoji + optional ISO date / context value.
+# Without stripping these, a checked-off task on a daily note (e.g.
+# "FMLA PAPERWORK ✅ 2026-05-20") fails dedup against the bare task on
+# TO DO LIST.md ("FMLA PAPERWORK") and resurrects on the next rollover.
+TASK_ANNOTATION_RE = re.compile(
+    r"\s*(?:✅|❌|🛫|⏳|📅|⏰|🔁|⏬|🔼|🔽|🆔|⛔|#task)"
+    r"(?:\s*\d{4}-\d{2}-\d{2}|\s*[^\s✅❌🛫⏳📅⏰🔁⏬🔼🔽🆔⛔]+)?"
+)
+
 
 # ---------------------------------------------------------------------------
 # Parsing
@@ -165,15 +174,22 @@ def _task_key(line: str) -> typing.Optional[str]:
 
 
 def _normalize_task_text(text: str) -> str:
-    """Collapse punctuation spacing drift so obvious duplicate tasks merge."""
+    """Collapse punctuation, spacing, and Obsidian-Tasks-plugin annotation drift
+    so obviously-equivalent tasks merge during dedup.
+
+    Strips trailing `\u2705 YYYY-MM-DD` and similar Obsidian Tasks annotations so a
+    daily-note check-off matches the bare task on TO DO LIST.md. Without this,
+    completed tasks resurrect on rollover.
+    """
 
     cleaned = text.strip().lower()
     cleaned = cleaned.replace("\u2010", "-").replace("\u2011", "-").replace("\u2012", "-")
     cleaned = cleaned.replace("\u2013", "-").replace("\u2014", "-").replace("\u2212", "-")
+    cleaned = TASK_ANNOTATION_RE.sub("", cleaned)
     cleaned = TASK_SLASH_RE.sub("/", cleaned)
     cleaned = TASK_AMPERSAND_RE.sub("&", cleaned)
     cleaned = TASK_SPACE_RE.sub(" ", cleaned)
-    return cleaned
+    return cleaned.strip()
 
 
 def _has_date_placeholder(line: str) -> bool:
