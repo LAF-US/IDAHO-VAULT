@@ -1,8 +1,9 @@
 ---
 title: "ARBORSCAPING Investigation Return - 2026-05-24"
 created: 2026-05-24
-updated: 2026-05-24
-status: draft
+updated: 2026-05-25
+status: filed
+court_disposition: "heard in part, 2026-05-24"
 doc_class: investigative-return
 directed_by: LOGAN
 filed_by: Codex
@@ -28,6 +29,26 @@ request for deeper `ARBORSCAP*` investigation. It records documentary findings
 and questions for review. It does not amend ARBORSCAPING doctrine, enter
 marginalia in the examined leaves, promote a draft, or establish any live
 coordination surface.
+
+## Court Disposition Received - 2026-05-24
+
+The Court has heard this return in part and entered the following disposition:
+
+1. **SPACE protection granted and entered.** Marginalia now appears in
+   [[LOCAL-ARBORSCAPE-IDAHO-VAULT-SPLINTERS-2026-05-09]], preserving its
+   dated census while preventing byte size alone from supplying a disposal
+   inference against possible ADDRESS-SPACE leaves.
+2. **PR Expansion legitimacy recognized.** The Court recognizes
+   [[!/ARBORSCAPE-PR-EXPANSION-2026-05-22]] as a legitimate A&I directive,
+   subject to that leaf's stated exclusions. The ruling does not decide the
+   separately tendered `IF 12` accuracy question.
+3. **ADDRESS expansion separately reserved.** The Court reports that R&D
+   requests expansion of ADDRESS to five places. No specific five-place
+   proposal was located in the examined leaves; the question is preserved for
+   production or further direction rather than determined by the SPACE order.
+
+The proposed dispositions below remain as the Investigator's original
+submissions where not resolved by this received order.
 
 ## Records Examined
 
@@ -177,18 +198,19 @@ doctrinal standing or appropriate preservation treatment.
 **Proposed disposition:** review artifacts by class when questions arise,
 rather than accepting or rejecting the batch from its commit title.
 
-## Matters Submitted
+## Disposition Of Matters Submitted
 
-1. Consider the proposed address-space marginalia on the May 9 local splinter
-   census.
-2. Determine whether any PR-management ramification of ARBORSCAPING has been
-   adopted, and distinguish that ruling from workflows that merely implement
-   selected operational ideas.
-3. Consider marginalia limiting the inaccurate `IF 12` workflow observation in
-   the May 22 draft.
-4. Refer control-plane terminology in [[BRIEF-LAF-25-2026-04-04]] and
+1. **Granted and entered:** address-space marginalia on the May 9 local
+   splinter census.
+2. **Resolved in part:** the PR Expansion is a legitimate A&I directive,
+   limited by its stated exclusions.
+3. **Pending:** consider marginalia limiting the inaccurate `IF 12` workflow
+   observation in the May 22 filing.
+4. **Pending:** refer control-plane terminology in [[BRIEF-LAF-25-2026-04-04]] and
    [[!/REPO-SLIMMING-PROTOCOL]] for correction outside any attempt to discard
    legitimate Arborscaping records.
+5. **Pending upon production or direction:** identify and hear the reported
+   R&D request to expand ADDRESS to five places.
 
 ## Reservation
 
