@@ -206,6 +206,33 @@ def _is_top_level_task(line: str) -> bool:
     return bool(match and len(match.group(1)) == 0)
 
 
+def _is_note_bullet(line: str) -> bool:
+    """Return True if line is a plain top-level bullet (- text) that is NOT a task or org bullet.
+
+    These are narrative/annotation lines embedded in the daily queue — e.g.
+      - ¡ [[RING]] !
+      - ¡ [>> ? <<] in [[WHO]] !
+      - the [[ROAD]] was [[LAID]]
+
+    They should never be carried forward as tasks, and they must not be
+    swallowed into an adjacent task block as child lines.
+    """
+    cleaned = _clean_line(line)
+    # Must start with "- " at column 0 (top-level only)
+    if not cleaned.startswith("- "):
+        return False
+    # Tasks have a checkbox — not a note
+    if TASK_RE.match(cleaned):
+        return False
+    # Org bullets are handled separately
+    if _is_org_bullet(cleaned):
+        return False
+    # The empty-task placeholder is not a note
+    if _is_placeholder_bullet(cleaned):
+        return False
+    return True
+
+
 def _is_org_bullet(line: str) -> bool:
     cleaned = _clean_line(line).strip()
     if not cleaned.startswith("- "):
@@ -328,6 +355,12 @@ def parse_todo_model(lines: list[str], keep_completed: bool) -> dict[str, object
             i += 1
             continue
 
+        # Plain note bullets (- text, no checkbox) are not tasks — skip them.
+        # They must also terminate any preceding task block (handled below).
+        if _is_note_bullet(line):
+            i += 1
+            continue
+
         if not _is_top_level_task(line):
             i += 1
             continue
@@ -336,7 +369,8 @@ def parse_todo_model(lines: list[str], keep_completed: bool) -> dict[str, object
         i += 1
         while i < len(lines):
             next_line = _clean_line(lines[i])
-            if _is_org_bullet(next_line) or _is_top_level_task(next_line):
+            # A new task, org bullet, or note bullet all terminate the current block.
+            if _is_org_bullet(next_line) or _is_top_level_task(next_line) or _is_note_bullet(next_line):
                 break
             block.append(next_line)
             i += 1
