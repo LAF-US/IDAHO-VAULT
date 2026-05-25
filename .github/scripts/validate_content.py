@@ -7,7 +7,7 @@ Checks staged files for signs of injection, malformed frontmatter,
 or unexpected content. Exits non-zero to halt the workflow on failure.
 
 Usage:
-  python3 validate_content.py [--scope bills|admin|all]
+  python3 validate_content.py [--scope bills|admin|generated|inbox|all]
 
 Exit codes:
   0  All checks passed
@@ -34,6 +34,9 @@ SCOPE_ALLOWED_DIRS: dict[str, list[str]] = {
     ],
     "generated": [
         "!/",
+    ],
+    "inbox": [
+        "INBOX/",
     ],
     "all": [],  # no directory restriction
 }
@@ -172,7 +175,7 @@ def validate_directory(path: Path, scope: str) -> list[str]:
     if not allowed:
         return []
     errors = []
-    path_str = str(path)
+    path_str = str(path).replace("\\", "/")
     if not any(path_str.startswith(d) for d in allowed):
         errors.append(f"{path}: File outside allowed directories for scope '{scope}': {allowed}")
     return errors
@@ -205,7 +208,7 @@ def validate_governed_metadata(path: Path, frontmatter: dict | None, scope: str)
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Validate staged content before commit")
-    parser.add_argument("--scope", choices=["bills", "admin", "generated", "all"], default="all",
+    parser.add_argument("--scope", choices=["bills", "admin", "generated", "inbox", "all"], default="all",
                         help="Which scope to validate (restricts allowed directories)")
     args = parser.parse_args()
 

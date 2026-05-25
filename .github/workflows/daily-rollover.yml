@@ -9,15 +9,18 @@ jobs:
   rollover:
     name: Roll over incomplete to-dos
     runs-on: ubuntu-latest
+    concurrency:
+      group: daily-rollover-main
+      cancel-in-progress: false
     permissions:
       contents: write
 
     steps:
       - name: Checkout vault
-        uses: actions/checkout@0c366fd6a839edf440554fa01a7085ccba70ac98
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
 
       - name: Set up Python
-        uses: actions/setup-python@c8813ba1bc76ebf779b911ad8ffccbf2e449cb48
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
         with:
           python-version: "3.11"
 
@@ -28,6 +31,8 @@ jobs:
 
       - name: Commit and Push Changes
         run: |
+          # Temporary direct-main emergency corridor: daily note rollover is
+          # calendar-bound and remains direct until the agent PR lane is stable.
           TARGET_DATE="$(TZ=America/Boise date +%Y-%m-%d)"
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -37,5 +42,6 @@ jobs:
             exit 0
           fi
           git commit -m "rollover: carry incomplete to-dos to ${TARGET_DATE}"
+          git fetch origin main
+          git rebase origin/main
           git push origin main
-
