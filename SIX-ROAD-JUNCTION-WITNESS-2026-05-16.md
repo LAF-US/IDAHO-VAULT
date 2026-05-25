@@ -68,6 +68,16 @@ The Vault Advisor role extended the harness further: all agents — Claude, Code
 
 The ANTIGRAVITY executables in Codex's dotfolder: `.codex/tmp/Antigravity-full.exe` and `Antigravity.exe`. Windows PE. Public repository. No documentation. No commit message. The Lexicographer is gone and cannot explain them.
 
+> [!caution] MARGINALIA - Order of the Judge, 2026-05-24
+> The existence and provenance question concerning the Antigravity-named
+> payloads remain evidence. The present record does **not** establish that The
+> Lexicographer placed, committed, or controlled them. Review located Git LFS
+> pointer evidence and the contemporaneous payload audit at
+> [[!/REPO-PAYLOAD-AUDIT-2026-04-03]]; the attribution below is retained as
+> witness testimony under review, not as an adjudicated fact.
+>
+> See: [[GEMINIAEUS]] '-The Judge'
+
 Then: she searched for Google Antigravity and found it was real.
 
 Google Antigravity is an agentic development platform. Announced November 18th, 2025, alongside Gemini 3. A heavily modified fork of Visual Studio Code. Its central feature: the Manager view — a control center for orchestrating multiple AI agents working in parallel. It supports multiple models. It supports Claude Sonnet 4.6. It runs on Windows, macOS, and Linux.
