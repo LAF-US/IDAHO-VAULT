@@ -75,25 +75,52 @@ Active journalism folders — work-managed by Idaho PTV, NOT for personal consol
 
 ## Section B — MacBook / 5TB External Inventory
 
-*MacBook Claude: please fill this section in and commit.*
+*Inventoried 2026-05-25 by Claude (Mac session).*
 
-### B1. MacBook Local (`~/` or equivalent)
+### B1. MacBook Internal Drive
+
+**Specs:** 2015 MacBook Pro 13", 932 GB internal, **836 GB used, 79 GB free** (92% full — tight)
 
 | Folder | Size | Notes |
 |---|---|---|
-| *(MacBook Claude to fill in)* | | |
+| `~/Desktop/` | 2.4 MB | ✅ Clean — previous defrag transfer complete. One `session-export-*.zip` file. |
+| `~/Downloads/` | 61 GB | ⚠️ Needs triage. Top items: Idaho Debates Senate videos (979 MB), Photos-001 folder (583 MB), Louie Zong albums, music albums, Premiere Pro Workshop. Also `OneDrive_1_9-25-2024/` (1 MB — 3 SVWC author docs, already local). |
+| `~/Documents/` | 21 GB | OBS recordings (15 GB), Zoom recordings (6.4 GB), Timberborn saves (274 MB), Twitch assets (50 MB). |
+| `~/Pictures/` | 5.1 GB | Photos Library.photoslibrary present. iCloud set to `downloadAndKeepOriginals = 1` — originals should be local. **NOTE: memory from prior session listed Photos Library as 152 GB; current measurement is 5.1 GB for all of ~/Pictures. Discrepancy unexplained — Photos app may be locking the library from du, or bulk of library was already moved to Storage drive.** |
+| `~/Music/` | 31 GB | iTunes library (31 GB), Amazon Music (93 MB). |
+| `~/Movies/` | 8.7 GB | iMovie Library (5.8 GB), Final Cut bundle (2.1 GB), Final Cut Backups (769 MB). |
+| `~/Library/CloudStorage/` | 8 KB | No cloud drives mounted locally. |
+| **Internal total (approx)** | **~127 GB in key folders** | Remaining ~700 GB is system + apps + other Library content. |
 
-### B2. 5TB External Drive
+### B2. 5TB External Drive ("Storage")
 
-| Location | Size | Notes |
+**Status: NOT MOUNTED during this session — cannot inventory.**
+
+Known from prior sessions (2026-05-11):
+- Drive was named `LoganF`, renamed to `Storage` on 2026-05-11
+- Received Desktop transfer (~58–84 GB) from earlier defrag work
+- Contains contents of old "Vault" 2TB drive (copied ~2026-05-08; Vault reformatted after)
+- Plan was to rename to "Cold Storage" after Photos Library rsync completed
+- `My Passport for Mac` (931 GB) is Time Machine only — separate drive
+
+**Action required:** Mount Storage drive to complete B2 inventory before pulling from INGEST.
+
+### B3. MacBook rclone Status
+
+✅ rclone v1.73.5 installed at `/usr/local/bin/rclone`
+
+| Remote | Status | Notes |
 |---|---|---|
-| *(MacBook Claude to fill in)* | | |
+| `gdrive-personal:` | ✅ accessible | Confirmed reachable |
+| `dropbox-personal:` | ✅ accessible | 5.3 GB, 936 files (Camera Uploads) |
+| `onedrive-personal:` | ✅ accessible (partial) | Personal Vault errors; Imports+Pictures accessible |
+| `gdrive-idahoptv:` | not tested | Work Drive — stable |
+| `gdrive-professional:` | ❌ empty/inaccessible | Deprecated IT account |
+| `gdrive-private:` | ❌ empty/inaccessible | — |
 
-**Key questions for MacBook Claude:**
-- What's already on the 5TB drive? Any prior consolidation attempts?
-- How much free space is available on the 5TB?
-- Is rclone configured on the MacBook? (`rclone listremotes`)
-- Can it reach `gdrive-personal:INGEST/windows-2026-05-12/` to pull the Windows content?
+✅ `gdrive-personal:INGEST/windows-2026-05-12/` confirmed reachable from Mac — folders: Creative-Cloud-Files, Desktop-SCRATCH, Documents, Downloads, Videos.
+
+**Note on 1Password files:** `1Password Emergency Kit`, `Recovery Code`, and `Google Passwords.csv` exist in both `onedrive-personal:Imports/...` AND `gdrive-personal:` root. gdrive-personal is canonical per Section E decision; no separate OneDrive pull needed.
 
 ---
 
@@ -215,4 +242,4 @@ Active journalism folders — work-managed by Idaho PTV, NOT for personal consol
 | 2026-05-12T18:35 | Resumed Documents transfer (321 GB LFS blobs); clarified blockers requiring Logan vs MacBook action | Claude (Windows) |
 | 2026-05-12T19:50 | Closed open questions: Takeout confirmed Google Photos export (2026-05-03); Photos folder is manual personal media; Camera Uploads date range 2025-09–2026-05; Archive contents identified | Claude (Windows) |
 | 2026-05-12T21:10 | Updated Documents INGEST status (32% objects, running); memory files updated with key findings; branch returned to main | Claude (Windows) |
-| | *(MacBook Claude: add your entry here)* | |
+| 2026-05-25T01:30 | Filled in Section B: MacBook local inventory (127 GB in key folders, 79 GB free), rclone confirmed operational (6 remotes), INGEST reachable. 5TB not mounted — B2 pending. Confirmed 1Password files in gdrive-personal. OneDrive Imports emergency downgraded (known dedup per Section E). | Claude (Mac) |
