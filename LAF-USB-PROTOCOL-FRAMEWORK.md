@@ -202,6 +202,46 @@ absolute paths as durable references.
 | DISABLED | Must not be invoked until reapproved                   |
 | RETIRED  | Historical only                                        |
 
+## GitHub LFS Ceiling Definitions
+
+The Carrier Lanes table references "the active LFS ceiling" for the Supported large objects lane.
+Two distinct ceilings apply — agents must know both before routing an object to Git LFS.
+
+### Ceiling 1 — Per-file hard limit (2 GiB)
+
+GitHub rejects any single LFS object larger than 2 GiB at push time. This is structural and
+never resets. The `LAF-USB-OBJECT-MANIFEST-2026-05-08.json` covers the 38 vault objects that
+exceed this limit; their `git_policy` is `external-over-lfs-limit` and they route to external
+carriers (GCS, Internet Archive, or THE-CITY 5TB drive).
+
+### Ceiling 2 — Account storage quota (10 GiB, free plan)
+
+| Meter | Free plan | Team / Enterprise | Resets? |
+|---|---|---|---|
+| LFS storage | 10 GiB total | 250 GiB total | **No** — hourly accrual, persistent |
+| LFS bandwidth (downloads) | 10 GiB / month | 250 GiB / month | **Yes** — at billing cycle (1st of month) |
+
+**$0 budget behavior:** The vault account has a $0 LFS budget (GitHub default for non-Enterprise).
+When either meter is exceeded, all LFS uploads and downloads are blocked for the remainder of the
+calendar month. The block lifts on the 1st. Storage does not reset — if storage is the trigger,
+it will be re-exceeded immediately after the reset unless objects are pruned.
+
+**Current vault posture:** LFS footprint is ~323 GB (per manifest, 2026-05-08). This is 30× the
+10 GiB free storage tier. The workaround for existing committed LFS objects is
+`GIT_LFS_SKIP_PUSH=1` (bash) — skips the LFS upload step; works only for commits that reference
+objects already on GitHub. New LFS objects (files not yet uploaded) cannot be pushed while the
+budget is exceeded; they will generate a `GH008` error.
+
+**Do not recommend purchasing a data pack** — GitHub replaced data packs with metered billing.
+The $0 budget is intentional; the correct response is to wait for the monthly reset or route
+large objects to external carriers instead of LFS.
+
+### Agent routing rule
+
+> Route to Git LFS only if the object is **below 2 GiB** AND the cumulative LFS storage footprint
+> of the commit batch stays within the account headroom. When in doubt, prefer an external carrier
+> lane (rclone → GCS/gdrive) and register a manifest entry instead.
+
 ## Open Design Questions
 
 - What is the canonical manifest filename and location?
