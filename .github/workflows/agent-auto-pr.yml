@@ -44,6 +44,13 @@ jobs:
           fetch-depth: 0
           ref: ${{ steps.gate.outputs.branch_name }}
 
+      - name: Checkout trusted automation scripts
+        if: steps.gate.outputs.skip != 'true'
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          path: trusted-main
+
       - name: Get changed files and classify
         if: steps.gate.outputs.skip != 'true'
         id: classify
@@ -71,7 +78,7 @@ jobs:
 
           echo "skip=false" >> "$GITHUB_OUTPUT"
 
-          RESULT=$(echo "$CHANGED" | python3 .github/scripts/classify_paths.py)
+          RESULT=$(echo "$CHANGED" | python3 trusted-main/.github/scripts/classify_paths.py)
           TIER=$(echo "$RESULT" | python3 -c "import sys,json; print(json.load(sys.stdin)['tier'])")
           echo "tier=$TIER" >> "$GITHUB_OUTPUT"
 
@@ -102,8 +109,8 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          python3 .github/scripts/review_feedback_loop.py ensure-labels
-          python3 .github/scripts/pr_lifecycle.py ensure-labels
+          python3 trusted-main/.github/scripts/review_feedback_loop.py ensure-labels
+          python3 trusted-main/.github/scripts/pr_lifecycle.py ensure-labels
 
       - name: Create PR
         if: steps.gate.outputs.skip != 'true' && steps.classify.outputs.skip != 'true' && steps.check-pr.outputs.pr_exists != 'true'
@@ -177,7 +184,7 @@ jobs:
             echo "No open PR found to mark lifecycle state on"
             exit 0
           fi
-          python3 .github/scripts/pr_lifecycle.py set-state --pr-number "$PR_NUM" --state staged
+          python3 trusted-main/.github/scripts/pr_lifecycle.py set-state --pr-number "$PR_NUM" --state staged
 
       - name: Log grace period start
         if: steps.gate.outputs.skip != 'true' && steps.classify.outputs.skip != 'true' && steps.check-pr.outputs.pr_exists != 'true' && steps.classify.outputs.tier == 'low'
@@ -186,4 +193,3 @@ jobs:
           echo "Lifecycle set to \`lifecycle/staged\`." >> "$GITHUB_STEP_SUMMARY"
           echo "Low-risk PR created with \`review/pending\`." >> "$GITHUB_STEP_SUMMARY"
           echo "Auto-merge is gated: the agent-review-gate workflow will promote to \`merge/auto\` after a 30-minute review grace period if no blocking feedback appears." >> "$GITHUB_STEP_SUMMARY"
-
