@@ -804,8 +804,25 @@ def ensure_daily_frontmatter(content: str, target_date: date) -> str:
 # ---------------------------------------------------------------------------
 
 def build_today_note_content(target_date: date, carried: list[str], base_content: typing.Optional[str] = None) -> str:
+    """Return the daily-note content.
+
+    Design (per e9336e00, "Body is [[TO DO LIST]] only — Logan writes his own
+    content", and VAULT-CONVENTIONS.md §"Daily Note Infrastructure"): the script
+    does NOT paste the merged TO DO LIST backlog into the daily note body. The
+    `[[TO DO LIST]]` link is the body; canonical task state lives in
+    TO DO LIST.md (which `update_todo_list_md` maintains). Pasting duplicated
+    the list and made daily-note check-offs live in a copy that never synced
+    back, which is the resurrection failure mode this fix removes.
+
+    - If the file already exists, leave Logan's body alone. Only normalize
+      frontmatter and nav links.
+    - If the file does not exist, create it with the clean template body:
+      frontmatter + `[[TO DO LIST]]` and nothing else.
+    - The `carried` argument is accepted but no longer pasted; it is kept in
+      the signature for the dry-run log path and for any future use.
+    """
+    _ = carried  # accepted for API compatibility; no longer pasted into the daily note
     today_file = VAULT_ROOT / f"{target_date}.md"
-    block = todo_block_text(carried)
 
     if base_content is not None:
         content = base_content
@@ -817,34 +834,10 @@ def build_today_note_content(target_date: date, carried: list[str], base_content
     if file_exists:
         content = ensure_daily_frontmatter(content, target_date)
         content = patch_nav_links(content, target_date)
-        lines = content.splitlines()
-        marker_index, end_index = _find_todo_section_bounds(lines)
-        if marker_index is not None and end_index is not None:
-            existing_todo_lines = lines[marker_index + 1:end_index]
-            existing_model = parse_todo_model(existing_todo_lines, keep_completed=True)
-            carried_model = parse_todo_model(carried, keep_completed=False)
-            merged = render_todo_model(merge_todo_models(existing_model, carried_model))
-            preserved_loose = _preserved_loose_todo_lines(existing_todo_lines)
-            merged_seen = {_clean_line(line) for line in merged}
-            for line in preserved_loose:
-                if line not in merged_seen:
-                    merged.append(line)
-                    merged_seen.add(line)
+        return content if content.endswith("\n") else content + "\n"
 
-            new_lines = lines[:marker_index + 1]
-            new_lines.append("")
-            new_lines.extend(merged if merged else [PLACEHOLDER_LINE])
-            if end_index < len(lines) and lines[end_index].strip():
-                new_lines.append("")
-            new_lines.extend(lines[end_index:])
-            new_content = "\n".join(new_lines).rstrip() + "\n"
-        else:
-            new_content = content.rstrip() + f"\n\n{TODO_MARKER}\n\n{block}\n"
-    else:
-        fm = build_frontmatter(target_date)
-        new_content = f"{fm}\n\n{TODO_MARKER}\n\n{block}\n"
-
-    return new_content
+    fm = build_frontmatter(target_date)
+    return f"{fm}\n\n{TODO_MARKER}\n"
 
 
 def update_today_note(
