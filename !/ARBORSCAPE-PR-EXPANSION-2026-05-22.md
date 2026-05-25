@@ -1,8 +1,9 @@
 ---
 title: "ARBORSCAPE PR-Expansion Session — 2026-05-22"
 created: 2026-05-22
-updated: 2026-05-22
-status: draft
+updated: 2026-05-25
+status: filed
+court_disposition: "recognized as legitimate A&I directive, 2026-05-24"
 authority: LOGAN
 authors:
   - "*.claude.mogget"
@@ -18,6 +19,15 @@ related:
 # ARBORSCAPE PR-Expansion Session — 2026-05-22
 
 *Filed by Claude Code CLI on Windows, in the post-Demiurging-correction phase of a long session with Logan. Session examined ARBORSCAPE protocol fitness against the day's GitHub snapshot, expanded the protocol scope to include PR management at Logan's direction, applied the expanded scope to four open PRs as test cases, surfaced six operational findings, and produced a plan toward the eventual goal of automated rhythms.*
+
+> [!important] COURT RULING - 2026-05-24
+> The Court recognizes this ARBORSCAPE PR Expansion as a legitimate A&I
+> directive. Its recorded exclusions remain part of its scope: this ruling
+> does not silently convert adjacent metadata/frontmatter, local-state, or
+> doctrinal-attribution work into ARBORSCAPE.
+>
+> The separately tendered accuracy question concerning `IF 12` is not decided
+> by this legitimacy ruling.
 
 ---
 
@@ -244,6 +254,7 @@ These depend on doctrinal decisions outside ARBORSCAPE proper, listed for sequen
 - Eventual goal (automated rhythms) recorded as named today by Logan.
 - Phased plan toward the goal drafted with explicit prerequisite decisions called out.
 - This document filed at `!/ARBORSCAPE-PR-EXPANSION-2026-05-22.md` with `status: draft`, modeled on `!/ARBORSCAPE-COMPLETION-REPORT-2026-05-17.md`. Promotion to `active` is the institutional act and is reserved to Logan.
+- **Court Disposition, 2026-05-24:** The originally draft-filed PR expansion is recognized as a legitimate A&I directive. This disposition is recorded as `filed`; it does not overwrite the historical draft posture or decide `IF 12`.
 
 ---
 

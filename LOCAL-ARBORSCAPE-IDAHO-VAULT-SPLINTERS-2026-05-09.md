@@ -382,6 +382,19 @@ Root Markdown requires filtering before salvage:
 | under 100-byte root `.md` | 20,407 |
 | at least 1,000-byte root `.md` | 85 |
 
+> [!caution] MARGINALIA - Order of the Judge, 2026-05-24
+> This census preserves a dated observation; it is not authority to discard
+> tiny or zero-byte Markdown leaves merely because of byte size.
+> [[!/!REPORT-TO-JANITOR-2026-04-09]] records the intentional, material
+> ADDRESS-SPACE stub lattice. Before any prune or salvage disposition of such
+> leaves, evaluate them as potential address-space architecture with reference
+> to [[!/ADDRESS-GRAMMAR-v1-2026-05-22]] and [[VAULTED-SYNTAX]].
+>
+> The Court has separately noted that R&D requests expansion of ADDRESS to five
+> places. That proposal is not decided by this preservation order.
+>
+> See: [[!/ARBORSCAPING-INVESTIGATION-RETURN-2026-05-24]] '-The Judge'
+
 ### Pass 5 Finding
 
 The first trunk-return pass must not bulk-copy the root Markdown corpus. Most
@@ -558,4 +571,4 @@ lint-clean.
 - **Status:** Draft
 - **Authority:** LOGAN
 - **Change Note:** Corrected this note to apply existing Arborscaping doctrine rather than inventing a new protocol.
-
+- **Court Marginalia:** SPACE protection entered 2026-05-24; byte size alone does not establish that an ADDRESS-SPACE leaf is expendable.
