@@ -58,6 +58,21 @@ class ValidateContentTest(unittest.TestCase):
         )
         self.assertEqual(errors, [])
 
+    def test_inbox_scope_accepts_inbox_markdown(self) -> None:
+        errors = validate_content.validate_directory(
+            Path("INBOX/SWARM-MVP/process-document-123-1.md"),
+            "inbox",
+        )
+        self.assertEqual(errors, [])
+
+    def test_inbox_scope_rejects_non_inbox_markdown(self) -> None:
+        target = Path("!/SWARM-MVP/process-document-123-1.md")
+        errors = validate_content.validate_directory(target, "inbox")
+        self.assertEqual(
+            errors,
+            [f"{target}: File outside allowed directories for scope 'inbox': ['INBOX/']"],
+        )
+
 
 if __name__ == "__main__":
     unittest.main()
