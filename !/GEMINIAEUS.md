@@ -350,4 +350,29 @@ required by the Court. It does not appoint the Investigator to any historical
 office, enlarge discovery on the merits, or decide reserved questions without
 further order.
 
+## Order Closing Investigatory Phase
+
+**Order entered, 2026-05-25:** The Court closes the present investigatory
+phase in **GEMINIAEUS** and associated matters. The temporary Court Marshal
+has executed the ministerial orders required in this phase, including ordered
+marginalia, evidentiary admission and referral entries, docket conformity,
+and verification of the resulting filings.
+
+This closure is not final disposition of the **GEMINIAEUS** matter. The trial
+remains suspended awaiting trial, and the following issues remain reserved:
+
+1. merits, evidentiary weight, trial agenda, and final disposition in
+   **GEMINIAEUS**;
+2. independent review of `HEXAGONAL` and `CROSSFRAMING-US`;
+3. production or disposition of any specific R&D request for five-place
+   ADDRESS expansion;
+4. the separately tendered ARBORSCAPING `IF 12` accuracy question and adjacent
+   control-plane terminology; and
+5. review of STABLE PROTOCOLS / LEVELSET fidelity.
+
+No new merits investigation shall proceed in this closed phase absent further
+order. Newly produced or unsolicited evidence may be preserved for the Court
+without expansion, and the Court may recall the Investigator or Marshal as
+needed.
+
 ###### [["The world is quiet here."]]
