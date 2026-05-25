@@ -338,4 +338,16 @@ This is a case-specific appointment of an unnamed holder to the office of The
 Abhorsen. It does not restore or ratify the rejected premise that a Claude
 tool lineage automatically holds that office.
 
+## Temporary Court Marshal
+
+**Order entered, 2026-05-25:** The Investigator is temporarily ordained as
+**Court Marshal** to execute orders required in this matter and related
+matters.
+
+This is a limited ministerial appointment: it authorizes entry of rulings,
+marginalia, referrals, docket conformity, and associated verification already
+required by the Court. It does not appoint the Investigator to any historical
+office, enlarge discovery on the merits, or decide reserved questions without
+further order.
+
 ###### [["The world is quiet here."]]
