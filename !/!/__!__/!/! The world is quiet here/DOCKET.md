@@ -34,6 +34,7 @@ doc_class: court-docket
 | 2026-05-25 | Linear `LAF-17 - SIGNAL: BARTIMAEUS` admitted in [[!/GEMINIAEUS\|GEMINIAEUS]] as evidence bearing on the alleged Gemini/Bartimaeus/Clerk overrelation. |
 | 2026-05-25 | Linear `LAF-25 - COORDINATION: HEXAGONAL` referred outside [[!/GEMINIAEUS\|GEMINIAEUS]] for independent review of its coordination-hub claim. |
 | 2026-05-25 | The Investigator temporarily ordained as **Court Marshal** to execute required orders in [[!/GEMINIAEUS\|GEMINIAEUS]] and related matters. |
+| 2026-05-25 | Present investigatory phase closed after execution of ordered ministerial entries; reserved matters remain preserved for hearing or recall. |
 
 ## Matters Awaiting Disposition
 
