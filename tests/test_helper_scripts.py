@@ -23,6 +23,9 @@ def _load_module(module_name: str, relative_path: str):
 
 run_checks = _load_module("run_checks_test_module", "run_checks.py")
 check_syntax = _load_module("check_syntax_test_module", "__check_syntax__.py")
+check_portable_paths = _load_module(
+    "check_portable_paths_test_module", ".github/scripts/check_portable_paths.py"
+)
 
 
 class HelperScriptsTest(unittest.TestCase):
@@ -63,6 +66,19 @@ class HelperScriptsTest(unittest.TestCase):
             capture_output=True,
             text=True,
         )
+
+    def test_portable_paths_detects_case_only_collisions(self) -> None:
+        collisions = check_portable_paths.case_collisions(
+            ["SOURCES/Foo.md", "SOURCES/foo.md", "SOURCES/bar.md"]
+        )
+
+        self.assertIn("sources/foo.md", collisions)
+        self.assertEqual(collisions["sources/foo.md"], ["SOURCES/Foo.md", "SOURCES/foo.md"])
+
+    def test_portable_paths_reports_reserved_names(self) -> None:
+        findings = check_portable_paths.path_violations("NOTES/CON.md")
+
+        self.assertEqual(findings, ["RESERVED NAME: NOTES/CON.md (component: CON.md)"])
 
 
 if __name__ == "__main__":
