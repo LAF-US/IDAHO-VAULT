@@ -106,18 +106,25 @@ class WorkflowSecurityInvariantsTest(unittest.TestCase):
         events = workflow.get("on", workflow.get(True))
         self.assertIn("pull_request_target", events)
         self.assertNotIn("pull_request", events)
-        self.assertEqual(workflow["permissions"], {"contents": "read"})
+        self.assertEqual(
+            workflow["permissions"], {"contents": "read", "pull-requests": "read"}
+        )
         self.assertIn("check-version-transitions", workflow["jobs"])
         steps = workflow["jobs"]["check-version-transitions"]["steps"]
         checkout = steps[0]
         self.assertIn("github.event.pull_request.base.sha", checkout["with"]["ref"])
-        fetch = steps[1]["run"]
-        self.assertIn("refs/pull/${PR_NUMBER}/head", fetch)
-        self.assertIn("git rev-parse FETCH_HEAD", fetch)
+        self.assertFalse(checkout["with"]["persist-credentials"])
+        workflow_text = (WORKFLOWS / "version-transition-policy.yml").read_text(
+            encoding="utf-8"
+        )
+        self.assertNotIn("git fetch", workflow_text)
+        self.assertNotIn("refs/pull/", workflow_text)
         run = steps[-1]["run"]
         self.assertIn("check_version_transitions.py", run)
         self.assertNotIn("trusted-main", run)
         self.assertIn("--actor", run)
+        self.assertIn("--github-repo", run)
+        self.assertIn("--pr-number", run)
 
     def test_levelset_content_cannot_trigger_external_closure_message(self) -> None:
         self.assertFalse((WORKFLOWS / "levelset-closure-notify.yml").exists())

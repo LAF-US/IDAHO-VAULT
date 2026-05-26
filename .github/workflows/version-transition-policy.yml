@@ -5,6 +5,7 @@ on:
 
 permissions:
   contents: read
+  pull-requests: read
 
 jobs:
   check-version-transitions:
@@ -14,23 +15,8 @@ jobs:
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
         with:
           ref: ${{ github.event.pull_request.base.sha }}
-          fetch-depth: 0
+          persist-credentials: false
           lfs: false
-
-      - name: Fetch proposed commit for read-only comparison
-        env:
-          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
-          PR_NUMBER: ${{ github.event.number }}
-        run: |
-          if [[ ! "$HEAD_SHA" =~ ^[0-9a-f]{40}$ ]] || [[ ! "$PR_NUMBER" =~ ^[0-9]+$ ]]; then
-            echo "Invalid pull request metadata."
-            exit 1
-          fi
-          git fetch --no-tags --depth=1 origin "refs/pull/${PR_NUMBER}/head"
-          if [[ "$(git rev-parse FETCH_HEAD)" != "$HEAD_SHA" ]]; then
-            echo "Fetched pull request head does not match the event SHA."
-            exit 1
-          fi
 
       - name: Set up Python
         uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
@@ -42,8 +28,13 @@ jobs:
           BASE_SHA: ${{ github.event.pull_request.base.sha }}
           HEAD_SHA: ${{ github.event.pull_request.head.sha }}
           PR_AUTHOR: ${{ github.event.pull_request.user.login }}
+          PR_NUMBER: ${{ github.event.number }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_TOKEN: ${{ github.token }}
         run: |
           python .github/scripts/check_version_transitions.py \
             --base "$BASE_SHA" \
             --head "$HEAD_SHA" \
-            --actor "$PR_AUTHOR"
+            --actor "$PR_AUTHOR" \
+            --github-repo "$GITHUB_REPOSITORY" \
+            --pr-number "$PR_NUMBER"

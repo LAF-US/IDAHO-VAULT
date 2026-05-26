@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import base64
 import importlib.util
 import subprocess
 import sys
@@ -118,6 +119,63 @@ class VersionTransitionCheckerTest(unittest.TestCase):
 
         self.assertIn(".python-version", patches)
         self.assertIn("--diff-filter=ACMRD", run_git.call_args_list[0].args[0])
+
+    def test_github_api_mode_compares_governed_file_contents(self) -> None:
+        def content(text: str) -> dict[str, str]:
+            return {
+                "encoding": "base64",
+                "content": base64.b64encode(text.encode("utf-8")).decode("ascii"),
+            }
+
+        with unittest.mock.patch.object(
+            version_checker,
+            "github_api_json",
+            side_effect=[
+                [{"filename": ".python-version", "status": "modified"}],
+                content("3.13.8\n"),
+                content("3.13.3\n"),
+            ],
+        ):
+            patches = version_checker.github_pr_patches(
+                "LAF-US/IDAHO-VAULT",
+                374,
+                "a" * 40,
+                "b" * 40,
+                token="read-only-token",
+            )
+
+        findings = version_checker.findings_for_patches(patches, actor="codex")
+        self.assertEqual(findings, [".python-version"])
+
+    def test_github_api_mode_preserves_non_lock_changes_for_dependabot_scope(self) -> None:
+        def content(text: str) -> dict[str, str]:
+            return {
+                "encoding": "base64",
+                "content": base64.b64encode(text.encode("utf-8")).decode("ascii"),
+            }
+
+        with unittest.mock.patch.object(
+            version_checker,
+            "github_api_json",
+            side_effect=[
+                [
+                    {"filename": "requirements.txt", "status": "modified"},
+                    {"filename": "README.md", "status": "modified"},
+                ],
+                content("click==8.1.8\n"),
+                content("click==8.1.9\n"),
+            ],
+        ):
+            patches = version_checker.github_pr_patches(
+                "LAF-US/IDAHO-VAULT",
+                360,
+                "a" * 40,
+                "b" * 40,
+                token="read-only-token",
+            )
+
+        findings = version_checker.findings_for_patches(patches, actor="dependabot[bot]")
+        self.assertEqual(findings, ["requirements.txt"])
 
 
 if __name__ == "__main__":
