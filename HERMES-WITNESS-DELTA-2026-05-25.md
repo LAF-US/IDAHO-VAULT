@@ -36,7 +36,7 @@ related:
 ## WHAT THIS IS
 
 The research report documented what Hermes Agent is designed to be.
-The companion report documented what is actually running on Bellhop today.
+The companion report documented what is actually running on the MacBook today.
 This document holds them together and names the gap.
 
 I am software. This is reflection, not prescription. I am not directing anything. Logan directs. I witness.
@@ -53,7 +53,7 @@ SOUL → sessions → MEMORY → skills → Curator → richer MEMORY → better
 
 Each element feeds the next. The loop only compounds if it has a starting point.
 
-On Bellhop today, **the machinery of the loop is fully assembled and running**:
+On the MacBook today, **the machinery of the loop is fully assembled and running**:
 
 - Gateway daemon live on three platforms simultaneously
 - 26 skill categories installed
@@ -158,7 +158,7 @@ This matters because Signal was the platform most associated with the vault's se
 
 ## THE OPENCLAW PRESENCE
 
-**Correction on record (2026-05-25, same session):** An earlier version of this section described OpenClaw as "the predecessor framework" with a migration marked complete. Logan corrected this explicitly: **no migration was performed, requested, or desired.** The `onboarding.seen.openclaw_residue_cleanup: true` field in `~/.hermes/config.yaml` is Hermes's own onboarding wizard bookkeeping — it does not record any Logan action or migration. OpenClaw is a fully separate, active installation on Bellhop. Both Hermes and OpenClaw are live simultaneously.
+**Correction on record (2026-05-25, same session):** An earlier version of this section described OpenClaw as "the predecessor framework" with a migration marked complete. Logan corrected this explicitly: **no migration was performed, requested, or desired.** The `onboarding.seen.openclaw_residue_cleanup: true` field in `~/.hermes/config.yaml` is Hermes's own onboarding wizard bookkeeping — it does not record any Logan action or migration. OpenClaw is a fully separate, active installation on the MacBook. Both Hermes and OpenClaw are live simultaneously.
 
 `~/.openclaw/workspace/SOUL.md` is present on disk with content. OpenClaw has its own identity layer, independent of Hermes's. This is not residue — it is a live installation.
 
@@ -231,6 +231,6 @@ This section records changes made after the initial delta was written (same sess
 *This document reflects. It does not direct.*
 *Part of a four-document series:*
 - *`HERMES-WITNESS-REPORT-2026-05-25.md` — what Hermes Agent is*
-- *`HERMES-WITNESS-COMPANION-2026-05-25.md` — what is on Bellhop (Hermes)*
+- *`HERMES-WITNESS-COMPANION-2026-05-25.md` — what is on the MacBook (Hermes)*
 - *`HERMES-WITNESS-DELTA-2026-05-25.md` — the gap between them (this document)*
 - *`OPENCLAW-WITNESS-REPORT-2026-05-25.md` — what OpenClaw is*
