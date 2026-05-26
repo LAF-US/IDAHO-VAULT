@@ -10,12 +10,9 @@
     "boot_order": [
       "AGENTS.md",
       "!/WAKEUP.md",
-      "!README.md",
-      "!/AGENTS.md",
       "CONSTITUTION.md",
-      "swarm.json",
-      "!/agents.json",
-      "!/agent.sh"
+      "DECISIONS.md",
+      "VAULT-CONVENTIONS.md"
     ],
     "conflict_precedence": [
       "Logan direct instruction",
@@ -43,14 +40,7 @@
       "role": "Anthropic Claude Code lineage; direct-write tool surface. Specific offices and duties require Logan appointment.",
       "label": "agent:claude-code",
       "notes": "The prior Claude/Abhorsen job assignment is under Logan correction and is not inherited by Claude instances.",
-      "bootstrap": {
-        "invoke_as": "claude",
-        "instructions_file": ".claude/CLAUDE.md",
-        "git_author_name": "Claude Code",
-        "git_author_email": "noreply@anthropic.com",
-        "git_author_suffix": "-C",
-        "supports_local_bootstrap": true
-      }
+      "orientation_note": "The auto-loaded instruction file is descriptive context; no local launcher is required."
     },
     {
       "id": "gemini-cli",
@@ -66,14 +56,7 @@
       "role": "Google Gemini lineage; support-capable tool surface. Specific offices and duties require Logan appointment.",
       "label": "agent:gemini",
       "notes": "The prior Gemini/Concierge job assignment is under Logan correction and is not inherited by Gemini instances.",
-      "bootstrap": {
-        "invoke_as": "gemini",
-        "instructions_file": ".gemini/GEMINI.md",
-        "git_author_name": "Gemini",
-        "git_author_email": "noreply@google.com",
-        "git_author_suffix": "-G",
-        "supports_local_bootstrap": true
-      }
+      "orientation_note": "The auto-loaded instruction file is descriptive context; no local launcher is required."
     },
     {
       "id": "antigravity",
@@ -89,14 +72,7 @@
       "role": "narrative lens, Sebald Code, Antigravity lineage",
       "label": "agent:antigravity",
       "status": "uninstalled 2026-04-18",
-      "bootstrap": {
-        "invoke_as": "antigravity",
-        "instructions_file": "ANTIGRAVITY.md",
-        "git_author_name": "Antigravity",
-        "git_author_email": "noreply@google.com",
-        "git_author_suffix": "-G",
-        "supports_local_bootstrap": true
-      }
+      "orientation_note": "Historical entry; it does not create a local startup route."
     },
     {
       "id": "github-copilot",
@@ -110,14 +86,7 @@
       "title": "The Clerk",
       "role": "inline Obsidian markdown and syntax",
       "label": "agent:copilot",
-      "bootstrap": {
-        "invoke_as": "copilot",
-        "instructions_file": ".github/copilot-instructions.md",
-        "git_author_name": "GitHub Copilot",
-        "git_author_email": "noreply@github.com",
-        "git_author_suffix": "-CP",
-        "supports_local_bootstrap": true
-      }
+      "orientation_note": "The auto-loaded instruction file is descriptive context; no local launcher is required."
     },
     {
       "id": "codex-cli",
@@ -134,14 +103,7 @@
       "role": "OpenAI Codex lineage; scripting-capable tool surface. Specific offices and duties require Logan appointment.",
       "label": "agent:codex",
       "notes": "The Lexicographer is a historical/vacant office, not inherited by all Codex instances. Codex auto-loads repo AGENTS.md instructions. Project-scoped Codex config lives in .codex/config.toml; .codex/CODEX.md is a repo-specific reference shim. See !/CODEX-VOICE-REGISTRY-2026-05-18.md.",
-      "bootstrap": {
-        "invoke_as": "codex",
-        "instructions_file": ".codex/CODEX.md",
-        "git_author_name": "Codex (OpenAI)",
-        "git_author_email": "noreply@openai.com",
-        "git_author_suffix": "-X",
-        "supports_local_bootstrap": true
-      }
+      "orientation_note": "Codex auto-loads AGENTS.md; no local launcher is required."
     },
     {
       "id": "grok",
@@ -154,14 +116,7 @@
       "capability_tier": "Read/Analysis",
       "role": "The Ironist - rapid reasoning, real-time web access",
       "label": null,
-      "bootstrap": {
-        "invoke_as": "grok",
-        "instructions_file": ".grok/GROK.md",
-        "git_author_name": "Grok (xAI)",
-        "git_author_email": "noreply@x.ai",
-        "git_author_suffix": "-XR",
-        "supports_local_bootstrap": true
-      }
+      "orientation_note": "Descriptive entry only; no local launcher is required."
     },
     {
       "id": "deepseek",
@@ -184,14 +139,7 @@
       "capability_tier": "Read/Analysis",
       "role": "The Scout - web search and research synthesis",
       "label": null,
-      "bootstrap": {
-        "invoke_as": "perplexity",
-        "instructions_file": ".perplexity/PERPLEXITY.md",
-        "git_author_name": "Perplexity",
-        "git_author_email": "noreply@perplexity.ai",
-        "git_author_suffix": "-P",
-        "supports_local_bootstrap": true
-      }
+      "orientation_note": "Descriptive entry only; no local launcher is required."
     },
     {
       "id": "linear-agent",
@@ -241,14 +189,7 @@
       "launched": "2026-04-18",
       "installed": "2026-04-18",
       "status": "installed — awaiting API key",
-      "bootstrap": {
-        "invoke_as": "vibe-acp",
-        "instructions_file": ".mistral/MISTRAL.md",
-        "git_author_name": "Mistral Vibe",
-        "git_author_email": "noreply@mistral.ai",
-        "git_author_suffix": "-M",
-        "supports_local_bootstrap": true
-      }
+      "orientation_note": "Descriptive entry only; no local launcher is required."
     }
   ],
   "personas": [
@@ -557,9 +498,8 @@
   "control_plane": {
     "coordination_hub_issue": "LAF-25",
     "scoped_issue": "LAF-28",
-    "bootstrap_entrypoint": "!/agent.sh",
     "narrative_registry": "!/AGENTS.md",
-    "bootstrap_index": "!/agents.json",
+    "discovery_index": "!/agents.json",
     "scope_note": "GitHub, Linear, and Slack here describe the repo-local operating posture of IDAHO-VAULT, not the whole LAF-US world model.",
     "system_roles": {
       "github": "execution_transport",
@@ -618,8 +558,8 @@
     "counts": {
       "enabled_community": 44,
       "enabled_core": 31,
-      "dormant_installed": 32,
-      "installed_total": 76,
+      "dormant_installed": 31,
+      "installed_total": 75,
       "enabled_missing_manifest": 0
     },
     "entrypoints": [
@@ -726,8 +666,8 @@
     "current_state": {
       "enabled_community_count": 44,
       "enabled_core_count": 31,
-      "installed_community_count": 76,
-      "dormant_installed_count": 32,
+      "installed_community_count": 75,
+      "dormant_installed_count": 31,
       "enabled_missing_manifest_count": 0
     },
     "enabled_community_plugins": [
@@ -1141,12 +1081,6 @@
         "path": ".obsidian/plugins/omnisearch/manifest.json"
       },
       {
-        "id": "openclaw",
-        "name": "OpenClaw",
-        "version": "0.41.1",
-        "path": ".obsidian/plugins/obsidianclaw/manifest.json"
-      },
-      {
         "id": "oz-image-plugin",
         "name": "Image in Editor",
         "version": "2.2.6",
@@ -1295,7 +1229,6 @@
       "obsidian-git",
       "obsidian-leaflet-plugin",
       "obsidian42-brat",
-      "openclaw",
       "pdf-plus",
       "table-editor-obsidian",
       "taskbone-ocr-plugin",

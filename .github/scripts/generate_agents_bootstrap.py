@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the local agent bootstrap index from swarm.json."""
+"""Generate the non-executable agent discovery index from swarm.json."""
 
 from __future__ import annotations
 
@@ -8,25 +8,15 @@ import json
 from pathlib import Path
 
 REQUIRED_CONTEXT = [
-    "!/WAKEUP.md",
-    "!README.md",
     "CONSTITUTION.md",
-    "!/AGENTS.md",
     "DECISIONS.md",
     "VAULT-CONVENTIONS.md",
 ]
 
 OPTIONAL_CONTEXT = [
+    "!/WAKEUP.md",
+    "!/AGENTS.md",
     "LEVELSET.md",
-]
-
-BOOTSTRAP_FIELDS = [
-    "invoke_as",
-    "instructions_file",
-    "git_author_name",
-    "git_author_email",
-    "git_author_suffix",
-    "supports_local_bootstrap",
 ]
 
 
@@ -34,41 +24,24 @@ def load_json(path: Path) -> dict:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
-def build_bootstrap_index(swarm: dict) -> dict:
+def build_discovery_index(swarm: dict) -> dict:
     control_plane = swarm["control_plane"]
     crews = swarm.get("crews", {})
     agents: dict[str, dict] = {}
 
     for agent in swarm.get("agents", []):
-        bootstrap = agent.get("bootstrap")
-        if not bootstrap:
+        instructions_file = agent.get("autoload_file")
+        if not instructions_file:
             continue
 
-        missing = [field for field in BOOTSTRAP_FIELDS if field not in bootstrap]
-        if missing:
-            joined = ", ".join(missing)
-            raise ValueError(f"Agent {agent['id']} missing bootstrap fields: {joined}")
-
-        if not bootstrap["supports_local_bootstrap"]:
-            continue
-
-        invoke_as = bootstrap["invoke_as"]
-        if invoke_as in agents:
-            raise ValueError(f"Duplicate invoke_as '{invoke_as}': agent {agent['id']} conflicts with existing agent {agents[invoke_as]['id']}")
-
-        agents[invoke_as] = {
+        agents[agent["id"]] = {
             "id": agent["id"],
             "name": agent["name"],
             "vendor": agent["vendor"],
             "dotfolder": agent.get("dotfolder"),
             "capability_tier": agent["capability_tier"],
-            "instructions_file": bootstrap["instructions_file"],
-            "supports_local_bootstrap": True,
-            "git_identity": {
-                "name": bootstrap["git_author_name"],
-                "email": bootstrap["git_author_email"],
-                "suffix": bootstrap["git_author_suffix"],
-            },
+            "instructions_file": instructions_file,
+            "autoload": agent.get("autoload", False),
             "context": {
                 "required": REQUIRED_CONTEXT,
                 "optional": OPTIONAL_CONTEXT,
@@ -78,14 +51,13 @@ def build_bootstrap_index(swarm: dict) -> dict:
     return {
         "source_of_truth": "swarm.json",
         "status": "generated",
-        "generated_note": "Derived bootstrap index for !/agent.sh and the root compatibility wrapper. Do not hand-edit.",
+        "purpose": "discovery_index",
+        "generated_note": "Derived orientation index for task-relevant discovery only. It is not a launcher or authority grant. Do not hand-edit.",
         "authority_chain": {
             "narrative_registry": control_plane["narrative_registry"],
             "machine_registry": "swarm.json",
-            "bootstrap_index": control_plane["bootstrap_index"],
-            "bootstrap_entrypoint": control_plane["bootstrap_entrypoint"],
+            "discovery_index": control_plane["discovery_index"],
             "compatibility_mirror": "agents.json",
-            "compatibility_wrapper": "agent.sh",
         },
         "wakeup_protocol": swarm.get("wakeup_protocol", {}),
         "control_plane": {
@@ -116,7 +88,7 @@ def main() -> int:
     parser.add_argument(
         "--output",
         default="!/agents.json",
-        help="Path to the canonical generated bootstrap index.",
+        help="Path to the canonical generated discovery index.",
     )
     parser.add_argument(
         "--compat-output",
@@ -126,12 +98,12 @@ def main() -> int:
     parser.add_argument(
         "--check",
         action="store_true",
-        help="Validate that the canonical index and compatibility mirror match the generated content.",
+        help="Validate that the canonical discovery index and compatibility mirror match generated content.",
     )
     args = parser.parse_args()
 
     source_path = Path(args.source)
-    rendered = json.dumps(build_bootstrap_index(load_json(source_path)), indent=2) + "\n"
+    rendered = json.dumps(build_discovery_index(load_json(source_path)), indent=2) + "\n"
     output_paths = [Path(args.output), Path(args.compat_output)]
     deduped_outputs: list[Path] = []
 
@@ -146,7 +118,7 @@ def main() -> int:
                 return 1
         return 0
 
-    # Keep the canonical !/ index and the legacy root mirror byte-for-byte aligned.
+    # Keep the canonical discovery index and root mirror byte-for-byte aligned.
     for output_path in deduped_outputs:
         output_path.parent.mkdir(parents=True, exist_ok=True)
         output_path.write_text(rendered, encoding="utf-8")

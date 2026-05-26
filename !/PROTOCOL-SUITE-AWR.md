@@ -2,7 +2,7 @@
 title: PROTOCOL-SUITE-AWR — AWAKEN/RISE/REPORT Lifecycle Integration
 created: 2026-04-27
 updated: 2026-04-27
-status: active
+status: quarantined
 authority: LOGAN
 authors:
   - opencode (Big Pickle)
@@ -18,6 +18,12 @@ related:
 ---
 
 # PROTOCOL-SUITE-AWR — AWAKEN/RISE/REPORT Lifecycle Integration
+
+> [!CAUTION]
+> Quarantined on 2026-05-26. This document records an experimental
+> Vault-specific SBP integration and is not executable doctrine. Its custom
+> scripts and state files were removed from live use; `SBP.md` documents the
+> upstream protocol reference.
 
 ## Overview
 

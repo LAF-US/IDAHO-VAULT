@@ -12,10 +12,13 @@ jobs:
   sync:
     runs-on: ubuntu-latest
     concurrency:
-      group: sync-dependencies-main
+      group: sync-dependencies-pr
       cancel-in-progress: false
     permissions:
       contents: write
+      pull-requests: write
+    env:
+      BRANCH_NAME: automation/sync-dependencies
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
 
@@ -23,29 +26,32 @@ jobs:
         with:
           python-version: "3.13"
 
-      - name: Install pip-tools
-        run: pip install pip-tools
+      - name: Install pinned pip-tools
+        run: python -m pip install "pip-tools==7.4.1"
 
       - name: Generate requirements.txt
         id: compile
         continue-on-error: true
         run: pip-compile pyproject.toml -o requirements.txt --upgrade
 
-      - name: Commit changes
+      - name: Publish review branch and PR
         if: steps.compile.outcome == 'success'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          # Temporary direct-main emergency corridor: retained only while the
-          # dependency lane is being repaired after PR automation softlock.
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add requirements.txt
           if git diff --cached --quiet; then
-            echo "No changes to commit"
-          else
-            git commit -m "chore: sync requirements.txt from pyproject.toml"
-            git fetch origin main
-            git rebase origin/main
-            git push origin main
+            echo "No changes to propose"
+            exit 0
+          fi
+          git switch -c "$BRANCH_NAME"
+          git commit -m "chore: sync requirements.txt from pyproject.toml"
+          git fetch origin "$BRANCH_NAME" || true
+          git push --force-with-lease origin "HEAD:$BRANCH_NAME"
+          if ! gh pr list --head "$BRANCH_NAME" --base main --state open --json number --jq 'length > 0' | grep -q '^true$'; then
+            gh pr create --base main --head "$BRANCH_NAME" --title "chore: sync requirements.txt" --body "Automated dependency lock synchronization. Review required before merge."
           fi
 
       - name: Report dependency resolver conflict
@@ -54,7 +60,7 @@ jobs:
           {
             echo "## Sync Dependencies"
             echo ""
-            echo "Dependency resolution failed; no direct-main commit was attempted."
-            echo "Treat this as Python dependency triage, not a Git push failure."
+            echo "Dependency resolution failed; no review branch was created."
+            echo "Treat this as Python dependency triage."
           } >> "$GITHUB_STEP_SUMMARY"
           exit 1

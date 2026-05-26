@@ -74,7 +74,7 @@ def _pr(
 
 
 class ReviewFeedbackLoopTest(unittest.TestCase):
-    def test_low_risk_pr_stays_pending_until_grace_elapses(self) -> None:
+    def test_low_risk_agent_pr_never_becomes_auto_merge_eligible(self) -> None:
         now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
 
         early_state = review_feedback_loop.evaluate_review_state(
@@ -94,12 +94,12 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
 
         self.assertTrue(early_state["low_risk"])
         self.assertFalse(early_state["grace_elapsed"])
-        self.assertTrue(early_state["should_have_agent_review_pending"])
+        self.assertFalse(early_state["should_have_agent_review_pending"])
         self.assertFalse(early_state["eligible_for_auto_merge"])
 
         self.assertTrue(ready_state["grace_elapsed"])
         self.assertFalse(ready_state["should_have_agent_review_pending"])
-        self.assertTrue(ready_state["eligible_for_auto_merge"])
+        self.assertFalse(ready_state["eligible_for_auto_merge"])
 
     def test_risk_label_is_canonical_over_body_marker(self) -> None:
         """Label-based risk tier wins when body marker was overwritten by an editor."""
@@ -117,7 +117,17 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
 
         self.assertTrue(state["low_risk"])
         self.assertTrue(state["grace_elapsed"])
-        self.assertTrue(state["eligible_for_auto_merge"])
+        self.assertFalse(state["eligible_for_auto_merge"])
+
+    def test_high_risk_label_wins_when_low_and_high_are_both_present(self) -> None:
+        state = review_feedback_loop.evaluate_review_state(
+            _pr(labels=("risk/low", "risk/high")),
+            now=datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc),
+        )
+
+        self.assertEqual(state["risk_tier"], "high")
+        self.assertFalse(state["low_risk"])
+        self.assertFalse(state["eligible_for_auto_merge"])
 
     def test_risk_high_label_keeps_pr_out_of_auto_merge(self) -> None:
         """risk/high label alone must classify the PR as high-risk even if body is missing/empty."""
@@ -386,7 +396,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertFalse(enabled)
         self.assertIn("not authorized to enable auto-merge", arm_error)
 
-    def test_reconcile_open_prs_repairs_drift_and_rearms_auto_merge(self) -> None:
+    def test_reconcile_open_prs_does_not_promote_agent_prs(self) -> None:
         args = SimpleNamespace(
             owner="LAF-US",
             repo="IDAHO-VAULT",
@@ -422,16 +432,11 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             result = review_feedback_loop.reconcile_open_prs(args)
 
         self.assertEqual(result, 0)
-        edit_label.assert_called_once_with(88, add=review_feedback_loop.DEFAULT_AUTO_MERGE_LABEL)
-        comment.assert_called_once()
-        arm_auto_merge.assert_called_once_with(88)
+        edit_label.assert_not_called()
+        comment.assert_not_called()
+        arm_auto_merge.assert_not_called()
 
     def test_reconcile_open_prs_reports_auth_blocked_auto_merge(self) -> None:
-        args = SimpleNamespace(
-            owner="LAF-US",
-            repo="IDAHO-VAULT",
-            grace_minutes=30,
-        )
         ready_pr = _pr(
             number=89,
             created_at=datetime(2026, 4, 16, 1, 0, tzinfo=timezone.utc),
@@ -475,11 +480,8 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             )
 
         self.assertEqual(report["rearmed_prs"], [])
-        self.assertEqual(report["auto_merge_authorization_blocked"], [89])
-        self.assertEqual(
-            report["evaluated"][0]["auto_merge_arm_error"],
-            "GitHub Actions is not authorized to enable auto-merge on the protected base branch.",
-        )
+        self.assertEqual(report["auto_merge_authorization_blocked"], [])
+        self.assertIsNone(report["evaluated"][0]["auto_merge_arm_error"])
 
 
 if __name__ == "__main__":

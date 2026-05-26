@@ -2,8 +2,8 @@
 """Close stale, conflicted bot PRs.
 
 This is intentionally conservative:
-- only bot-authored PRs are considered
-- only non-clean PRs are considered
+- only verified automation-owned branch prefixes are considered
+- only explicitly conflicted (DIRTY) PRs are considered
 - only PRs older than the configured age threshold are closed
 """
 
@@ -20,6 +20,12 @@ from pathlib import Path
 from pr_lifecycle import ensure_labels, set_state
 
 BOT_LOGINS = {"app/dependabot", "app/github-actions", "dependabot[bot]", "github-actions[bot]"}
+BOT_BRANCH_PREFIXES = {
+    "app/dependabot": ("dependabot/",),
+    "dependabot[bot]": ("dependabot/",),
+    "app/github-actions": ("automation/", "bot/"),
+    "github-actions[bot]": ("automation/", "bot/"),
+}
 STALE_LIFECYCLE_STATE = "abandoned"
 
 
@@ -60,13 +66,16 @@ def find_stale_bot_prs(
         author = (pr.get("author") or {}).get("login")
         if author not in BOT_LOGINS:
             continue
+        head = str(pr["headRefName"])
+        if not head.startswith(BOT_BRANCH_PREFIXES[author]):
+            continue
 
         updated_at = datetime.fromisoformat(str(pr["updatedAt"]).replace("Z", "+00:00"))
         pr_number = int(pr["number"])
         pr_age_days = (now - updated_at).days
         merge_state = merge_state_by_number.get(pr_number, "UNKNOWN")
 
-        if merge_state == "CLEAN" or pr_age_days < age_days:
+        if merge_state != "DIRTY" or pr_age_days < age_days:
             continue
 
         stale.append(
@@ -126,7 +135,6 @@ def main() -> int:
                     "pr",
                     "close",
                     str(pr["number"]),
-                    "--delete-branch",
                     "--comment",
                     args.comment,
                 ],

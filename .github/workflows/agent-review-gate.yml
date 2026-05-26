@@ -1,9 +1,8 @@
 name: Agent Review Gate
 
 # Periodically re-derives open PR review state from GitHub truth so drift can be
-# corrected without waiting for a fresh webhook event. Eligible low-risk PRs are
-# also re-promoted / re-armed for auto-merge here if the event-driven path was
-# missed.
+# corrected without waiting for a fresh webhook event. Agent-authored PRs remain
+# human-reviewed; Dependabot eligibility is handled by dependabot-rhythm only.
 
 on:
   schedule:
@@ -11,7 +10,7 @@ on:
   workflow_dispatch:
     inputs:
       grace_minutes:
-        description: 'Minimum minutes a PR must wait before promoting to auto-merge'
+        description: 'Legacy review-state compatibility window'
         required: false
         default: '30'
 
@@ -100,4 +99,3 @@ jobs:
             --body-file pr-loop-watchdog.md \
             --has-findings "$combined" \
             --resolved-comment "Resolved automatically: the latest PR reconciliation found no unresolved blockers."
-
