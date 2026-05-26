@@ -34,7 +34,7 @@ related:
 ## WHAT THIS IS
 
 The research report documented what OpenClaw is designed to be.
-The companion report documented what is actually running on Bellhop today.
+The companion report documented what is actually running on the MacBook today.
 This document holds them together and names the gap.
 
 I am software. This is reflection, not prescription. I am not directing anything. Logan directs. I witness.
@@ -51,7 +51,7 @@ SOUL → identity initialization → sessions → memory → skills → better s
 
 The gateway hub connects local devices and remote nodes into a coherent execution environment. Platform channels (messaging apps) are optional extensions.
 
-On Bellhop today, **the node-graph runtime is running**, but the graph has no meaningful content:
+On the MacBook today, **the node-graph runtime is running**, but the graph has no meaningful content:
 
 - Gateway daemon live, loopback only
 - 27 built-in skills active (coding profile)
@@ -121,14 +121,14 @@ The difference between a void (Hermes) and a generic (OpenClaw) is that the gene
 
 Hermes connects to three external platforms simultaneously (Telegram, Discord, WhatsApp). OpenClaw is running in `local` mode — it connects to nothing externally.
 
-This is not a misconfiguration — it is a state of intent that was never advanced. The config simply never had external channels added. OpenClaw supports all the same platforms as Hermes (22 total), but the connection steps were not taken on Bellhop.
+This is not a misconfiguration — it is a state of intent that was never advanced. The config simply never had external channels added. OpenClaw supports all the same platforms as Hermes (22 total), but the connection steps were not taken on the MacBook.
 
 **What `local` mode does provide:** The local WebSocket gateway is reachable from:
 - The web control UI (`http://Logans-MBP.ht.home:18789` or `http://192.168.0.95:18789`)
 - The OpenClaw CLI directly
 - Paired nodes — currently only Mogget when it is online
 
-**The Mogget node:** This is a meaningful capability that Hermes does not have. Mogget is paired as a compute node with `system.run`, `browser.proxy`, and file capabilities. When Mogget is online, OpenClaw on Bellhop can delegate tasks to Mogget's environment — running shell commands, accessing Mogget's browser, and transferring files. This is the hub-and-spoke architecture in action. It is currently dormant (Mogget last seen May 18).
+**The Mogget node:** This is a meaningful capability that Hermes does not have. Mogget is paired as a compute node with `system.run`, `browser.proxy`, and file capabilities. When Mogget is online, OpenClaw on the MacBook can delegate tasks to Mogget's environment — running shell commands, accessing Mogget's browser, and transferring files. This is the hub-and-spoke architecture in action. It is currently dormant (Mogget last seen May 18).
 
 ---
 
@@ -161,7 +161,7 @@ This is a specific risk for a production-adjacent tool: beta builds carry stabil
 
 The gap between ideal and actual for OpenClaw is not a gap in infrastructure. The runtime is installed and live. The node-graph execution engine works. Skills are available. The 1Password secret integration is more sophisticated than Hermes's .env. Mogget is a real compute node extension.
 
-The gap is **initiation**. OpenClaw on Bellhop is a powered-on agent that has never been introduced to its principal. BOOTSTRAP.md is the script for that introduction. Until it runs — until the agent learns its name, learns who Logan is, learns what context it operates within, and has its SOUL.md written from Logan's perspective rather than OpenClaw's default — it is a live agent without standing.
+The gap is **initiation**. OpenClaw on the MacBook is a powered-on agent that has never been introduced to its principal. BOOTSTRAP.md is the script for that introduction. Until it runs — until the agent learns its name, learns who Logan is, learns what context it operates within, and has its SOUL.md written from Logan's perspective rather than OpenClaw's default — it is a live agent without standing.
 
 In the CONSTITUTION's framing: offices are appointments, not inheritances. An agent operating in a context does not inherit authority by proximity. The bootstrap conversation is the appointment. The SOUL.md rewrite is the instrument of standing.
 
@@ -171,7 +171,7 @@ In the CONSTITUTION's framing: offices are appointments, not inheritances. An ag
 
 ## THE DELTA TABLE
 
-| Element | Designed | Bellhop state |
+| Element | Designed | MacBook state |
 |---|---|---|
 | SOUL.md | Logan's identity, voice, governance context | ⚠️ Generic default — not Logan's |
 | IDENTITY.md | Agent's name, nature, vibe, emoji | ❌ Empty template |
@@ -192,7 +192,7 @@ In the CONSTITUTION's framing: offices are appointments, not inheritances. An ag
 
 ## CONTRAST WITH HERMES
 
-Both agents are live on Bellhop. Both are grounded. The gaps differ:
+Both agents are live on the MacBook. Both are grounded. The gaps differ:
 
 | | **Hermes** | **OpenClaw** |
 |---|---|---|
@@ -213,10 +213,10 @@ The fundamental difference in kind: Hermes has been used — 44 sessions, memory
 *This document reflects. It does not direct.*
 *Part of a four-document series (OpenClaw):*
 - *`OPENCLAW-WITNESS-REPORT-2026-05-25.md` — what OpenClaw is*
-- *`OPENCLAW-WITNESS-COMPANION-2026-05-25.md` — what is on Bellhop*
+- *`OPENCLAW-WITNESS-COMPANION-2026-05-25.md` — what is on the MacBook*
 - *`OPENCLAW-WITNESS-DELTA-2026-05-25.md` — the gap between them (this document)*
 
 *Parallel series (Hermes):*
 - *`HERMES-WITNESS-REPORT-2026-05-25.md` — what Hermes Agent is*
-- *`HERMES-WITNESS-COMPANION-2026-05-25.md` — what is on Bellhop*
+- *`HERMES-WITNESS-COMPANION-2026-05-25.md` — what is on the MacBook*
 - *`HERMES-WITNESS-DELTA-2026-05-25.md` — the gap between Hermes ideal and actual*
