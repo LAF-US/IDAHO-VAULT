@@ -1,26 +1,22 @@
 {
   "source_of_truth": "swarm.json",
   "status": "generated",
-  "generated_note": "Derived bootstrap index for !/agent.sh and the root compatibility wrapper. Do not hand-edit.",
+  "purpose": "discovery_index",
+  "generated_note": "Derived orientation index for task-relevant discovery only. It is not a launcher or authority grant. Do not hand-edit.",
   "authority_chain": {
     "narrative_registry": "!/AGENTS.md",
     "machine_registry": "swarm.json",
-    "bootstrap_index": "!/agents.json",
-    "bootstrap_entrypoint": "!/agent.sh",
-    "compatibility_mirror": "agents.json",
-    "compatibility_wrapper": "agent.sh"
+    "discovery_index": "!/agents.json",
+    "compatibility_mirror": "agents.json"
   },
   "wakeup_protocol": {
     "quick_start": "!/WAKEUP.md",
     "boot_order": [
       "AGENTS.md",
       "!/WAKEUP.md",
-      "!README.md",
-      "!/AGENTS.md",
       "CONSTITUTION.md",
-      "swarm.json",
-      "!/agents.json",
-      "!/agent.sh"
+      "DECISIONS.md",
+      "VAULT-CONVENTIONS.md"
     ],
     "conflict_precedence": [
       "Logan direct instruction",
@@ -59,130 +55,121 @@
       "dotfolder": ".antigravity",
       "capability_tier": "Direct Write (Support)",
       "instructions_file": "ANTIGRAVITY.md",
-      "supports_local_bootstrap": true,
-      "git_identity": {
-        "name": "Antigravity",
-        "email": "noreply@google.com",
-        "suffix": "-G"
-      },
+      "autoload": false,
       "context": {
         "required": [
-          "!/WAKEUP.md",
-          "!README.md",
           "CONSTITUTION.md",
-          "!/AGENTS.md",
           "DECISIONS.md",
           "VAULT-CONVENTIONS.md"
         ],
         "optional": [
+          "!/WAKEUP.md",
+          "!/AGENTS.md",
           "LEVELSET.md"
         ]
       }
     },
-    "claude": {
+    "claude-code": {
       "id": "claude-code",
       "name": "Claude Code",
       "vendor": "Anthropic",
       "dotfolder": ".claude",
       "capability_tier": "Direct Write",
       "instructions_file": ".claude/CLAUDE.md",
-      "supports_local_bootstrap": true,
-      "git_identity": {
-        "name": "Claude Code",
-        "email": "noreply@anthropic.com",
-        "suffix": "-C"
-      },
+      "autoload": true,
       "context": {
         "required": [
-          "!/WAKEUP.md",
-          "!README.md",
           "CONSTITUTION.md",
-          "!/AGENTS.md",
           "DECISIONS.md",
           "VAULT-CONVENTIONS.md"
         ],
         "optional": [
+          "!/WAKEUP.md",
+          "!/AGENTS.md",
           "LEVELSET.md"
         ]
       }
     },
-    "codex": {
+    "codex-cli": {
       "id": "codex-cli",
       "name": "OpenAI Codex CLI",
       "vendor": "OpenAI",
       "dotfolder": ".codex",
       "capability_tier": "Direct Write (scripting)",
-      "instructions_file": ".codex/CODEX.md",
-      "supports_local_bootstrap": true,
-      "git_identity": {
-        "name": "Codex (OpenAI)",
-        "email": "noreply@openai.com",
-        "suffix": "-X"
-      },
+      "instructions_file": "AGENTS.md",
+      "autoload": true,
       "context": {
         "required": [
-          "!/WAKEUP.md",
-          "!README.md",
           "CONSTITUTION.md",
-          "!/AGENTS.md",
           "DECISIONS.md",
           "VAULT-CONVENTIONS.md"
         ],
         "optional": [
+          "!/WAKEUP.md",
+          "!/AGENTS.md",
           "LEVELSET.md"
         ]
       }
     },
-    "copilot": {
-      "id": "github-copilot",
-      "name": "GitHub Copilot",
-      "vendor": "Microsoft / GitHub",
-      "dotfolder": ".github",
-      "capability_tier": "Multi-Repo Admin",
-      "instructions_file": ".github/copilot-instructions.md",
-      "supports_local_bootstrap": true,
-      "git_identity": {
-        "name": "GitHub Copilot",
-        "email": "noreply@github.com",
-        "suffix": "-CP"
-      },
+    "deepseek": {
+      "id": "deepseek",
+      "name": "DeepSeek",
+      "vendor": "DeepSeek",
+      "dotfolder": ".deepseek",
+      "capability_tier": "Advisory",
+      "instructions_file": ".deepseek/DEEPSEEK.md",
+      "autoload": false,
       "context": {
         "required": [
-          "!/WAKEUP.md",
-          "!README.md",
           "CONSTITUTION.md",
-          "!/AGENTS.md",
           "DECISIONS.md",
           "VAULT-CONVENTIONS.md"
         ],
         "optional": [
+          "!/WAKEUP.md",
+          "!/AGENTS.md",
           "LEVELSET.md"
         ]
       }
     },
-    "gemini": {
+    "gemini-cli": {
       "id": "gemini-cli",
       "name": "Gemini CLI",
       "vendor": "Google",
       "dotfolder": ".gemini",
       "capability_tier": "Direct Write (Support)",
       "instructions_file": ".gemini/GEMINI.md",
-      "supports_local_bootstrap": true,
-      "git_identity": {
-        "name": "Gemini",
-        "email": "noreply@google.com",
-        "suffix": "-G"
-      },
+      "autoload": true,
       "context": {
         "required": [
-          "!/WAKEUP.md",
-          "!README.md",
           "CONSTITUTION.md",
-          "!/AGENTS.md",
           "DECISIONS.md",
           "VAULT-CONVENTIONS.md"
         ],
         "optional": [
+          "!/WAKEUP.md",
+          "!/AGENTS.md",
+          "LEVELSET.md"
+        ]
+      }
+    },
+    "github-copilot": {
+      "id": "github-copilot",
+      "name": "GitHub Copilot",
+      "vendor": "Microsoft / GitHub",
+      "dotfolder": ".github",
+      "capability_tier": "Multi-Repo Admin",
+      "instructions_file": ".github/copilot-instructions.md",
+      "autoload": true,
+      "context": {
+        "required": [
+          "CONSTITUTION.md",
+          "DECISIONS.md",
+          "VAULT-CONVENTIONS.md"
+        ],
+        "optional": [
+          "!/WAKEUP.md",
+          "!/AGENTS.md",
           "LEVELSET.md"
         ]
       }
@@ -194,22 +181,37 @@
       "dotfolder": ".grok",
       "capability_tier": "Read/Analysis",
       "instructions_file": ".grok/GROK.md",
-      "supports_local_bootstrap": true,
-      "git_identity": {
-        "name": "Grok (xAI)",
-        "email": "noreply@x.ai",
-        "suffix": "-XR"
-      },
+      "autoload": false,
       "context": {
         "required": [
-          "!/WAKEUP.md",
-          "!README.md",
           "CONSTITUTION.md",
-          "!/AGENTS.md",
           "DECISIONS.md",
           "VAULT-CONVENTIONS.md"
         ],
         "optional": [
+          "!/WAKEUP.md",
+          "!/AGENTS.md",
+          "LEVELSET.md"
+        ]
+      }
+    },
+    "mistral-vibe": {
+      "id": "mistral-vibe",
+      "name": "Mistral Vibe CLI",
+      "vendor": "Mistral AI",
+      "dotfolder": ".mistral",
+      "capability_tier": "[VACANT \u2014 awaiting Logan]",
+      "instructions_file": ".mistral/MISTRAL.md",
+      "autoload": false,
+      "context": {
+        "required": [
+          "CONSTITUTION.md",
+          "DECISIONS.md",
+          "VAULT-CONVENTIONS.md"
+        ],
+        "optional": [
+          "!/WAKEUP.md",
+          "!/AGENTS.md",
           "LEVELSET.md"
         ]
       }
@@ -221,22 +223,37 @@
       "dotfolder": ".perplexity",
       "capability_tier": "Read/Analysis",
       "instructions_file": ".perplexity/PERPLEXITY.md",
-      "supports_local_bootstrap": true,
-      "git_identity": {
-        "name": "Perplexity",
-        "email": "noreply@perplexity.ai",
-        "suffix": "-P"
-      },
+      "autoload": false,
       "context": {
         "required": [
-          "!/WAKEUP.md",
-          "!README.md",
           "CONSTITUTION.md",
-          "!/AGENTS.md",
           "DECISIONS.md",
           "VAULT-CONVENTIONS.md"
         ],
         "optional": [
+          "!/WAKEUP.md",
+          "!/AGENTS.md",
+          "LEVELSET.md"
+        ]
+      }
+    },
+    "serena": {
+      "id": "serena",
+      "name": "Serena",
+      "vendor": "oraios / community",
+      "dotfolder": ".serena",
+      "capability_tier": "Support",
+      "instructions_file": ".serena/SERENA.md",
+      "autoload": false,
+      "context": {
+        "required": [
+          "CONSTITUTION.md",
+          "DECISIONS.md",
+          "VAULT-CONVENTIONS.md"
+        ],
+        "optional": [
+          "!/WAKEUP.md",
+          "!/AGENTS.md",
           "LEVELSET.md"
         ]
       }

@@ -109,19 +109,15 @@ Verify the bootstrap chain:
 1. Read `AGENTS.md` — cross-tool pointer
 2. Read `!/AGENTS.md` — narrative registry
 3. Confirm entry in `swarm.json`
-4. Validate credentials against `!/agent.sh` or equivalent
+4. Use only task-relevant, explicitly approved credentials or connectors
 
-### Step 3: Field Integration
+### Step 3: Context Review
 
-Connect to the stigmergy field via `scripts/vault-pheromones.py`:
-
-- Execute `arrive` signal
-- Execute `sniff` to check current field state
-- Identify pending items and trail markers
+The former Vault-specific SBP execution layer is quarantined. Read durable,
+task-relevant records directly and use approved connectors only when needed.
 
 ### Step 4: Readiness Declaration
 
-- Execute `beat` signal
 - Update `LEVELSET-CURRENT.md` with agent presence
 - Declare readiness to receive work or begin task
 

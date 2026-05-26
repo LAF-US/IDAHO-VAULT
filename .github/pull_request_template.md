@@ -38,7 +38,6 @@
 ---
 
 **Labels to apply:**
-- `merge/auto` (for LOW risk only)
 - `agent:[agent-name]`
 
 ---

@@ -44,14 +44,15 @@ This is Logan A. Finney's internal Obsidian.md vault. Agents must follow all fra
 > with reverence and respect, especially by newly awakened agents.
 >
 > Fresh agent boot order:
-> 1. Read root `AGENTS.md` for pointer only.
-> 2. Read `!/WAKEUP.md` for explicit wakeup and conflict-resolution rules.
+> 1. Read root `AGENTS.md` for constraints and orientation.
+> 2. Read `CONSTITUTION.md` for binding governance.
+> 3. Read `!/WAKEUP.md` for explicit conflict-resolution rules.
 > 3. Read `!/README.md` for explicit startup and task-based orientation.
 > 4. Read this file only if the task needs Touchstone Tree orientation.
-> 5. Read `!/AGENTS.md` for live roster, lane rules, and connector posture.
+> 5. Read `!/AGENTS.md` only when roster, lane rules, or connector posture is relevant.
 > 6. Read `CONSTITUTION.md` for binding governance.
 > 7. Read `swarm.json` for machine-readable compiled state.
-> 8. Use `!/agents.json` -> `!/agent.sh` for canonical local bootstrap.
+> 8. Treat `!/agents.json` as a generated discovery index, not executable startup.
 > 9. Treat historical CrewAI harbor notes as non-live unless `.crewai/MANIFEST.md` or `!/AGENTS.md` says otherwise.
 >
 > If you are disoriented, do not try to reconstruct the world from lore alone.

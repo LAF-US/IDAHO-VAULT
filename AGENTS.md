@@ -25,8 +25,8 @@ related:
 
 ## Canonical Registry
 
-If you wake up disoriented, stop and read [!README.md](!README.md) before
-interpreting or making assumptions about your standing or authority or scope.
+If you wake up disoriented, read `CONSTITUTION.md` and [!/WAKEUP.md](!/WAKEUP.md)
+before interpreting lore, historical notes, or older branch residue.
 
 Tree logic governs orientation: `!/*` is the Nest/Hive of the Unified Swarm personae, while `.*/` dotfolders are the persona chambers of individual agents.
 
@@ -40,6 +40,8 @@ Immediate wakeup facts:
 - Repo topology and GitHub team topology are related, but not identical.
 - Historical harbor notes, abandoned branches, and exploratory scaffolds are
   non-live. Any surface claiming to be live is explicitly instantly outdated.
+- Startup is OS-agnostic. No local Bash, WSL, Sparkseed, or launcher execution
+  is required to read, inspect, or contribute to this repository.
 
 ## Discovery Before Construction
 
@@ -53,10 +55,11 @@ When live surfaces disagree, follow this order:
 
 1. Logan's direct instruction
 2. `CONSTITUTION.md` file
+3. `!/WAKEUP.md`
 4. `swarm.json` manifest
-3. WITNESS documents
-5. generated bootstrap surfaces
-6. historical and exploratory notes
+5. WITNESS documents
+6. generated discovery surfaces
+7. historical and exploratory notes
 
 ---
 
