@@ -6,6 +6,8 @@ on:
       - main
     paths:
       - pyproject.toml
+  schedule:
+    - cron: '0 12 * * 3'  # Wednesday 12:00 UTC — picks up upstream transitive updates
   workflow_dispatch:
 
 jobs:
@@ -29,10 +31,17 @@ jobs:
       - name: Install pinned pip-tools
         run: python -m pip install "pip-tools==7.4.1"
 
+      - uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
+
       - name: Generate requirements.txt
         id: compile
         continue-on-error: true
         run: pip-compile pyproject.toml -o requirements.txt --upgrade
+
+      - name: Refresh uv.lock
+        id: uvlock
+        if: steps.compile.outcome == 'success'
+        run: uv lock --upgrade
 
       - name: Publish review branch and PR
         if: steps.compile.outcome == 'success'
@@ -41,17 +50,17 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add requirements.txt
+          git add requirements.txt uv.lock
           if git diff --cached --quiet; then
             echo "No changes to propose"
             exit 0
           fi
           git switch -c "$BRANCH_NAME"
-          git commit -m "chore: sync requirements.txt from pyproject.toml"
+          git commit -m "chore: sync requirements.txt and uv.lock from pyproject.toml"
           git fetch origin "$BRANCH_NAME" || true
           git push --force-with-lease origin "HEAD:$BRANCH_NAME"
           if ! gh pr list --head "$BRANCH_NAME" --base main --state open --json number --jq 'length > 0' | grep -q '^true$'; then
-            gh pr create --base main --head "$BRANCH_NAME" --title "chore: sync requirements.txt" --body "Automated dependency lock synchronization. Review required before merge."
+            gh pr create --base main --head "$BRANCH_NAME" --title "chore: sync requirements.txt and uv.lock" --body "Automated dependency lock synchronization. Review required before merge."
           fi
 
       - name: Report dependency resolver conflict
