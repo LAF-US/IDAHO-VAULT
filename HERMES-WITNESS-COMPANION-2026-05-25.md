@@ -263,13 +263,13 @@ Total local model footprint: ~110 GB. `devstral:latest` is the designated Ollama
 
 ---
 
-## OPENCLAW RESIDUE
+## OPENCLAW ON THE MACBOOK
 
-OpenClaw was previously installed on the MacBook. Remaining presence:
+OpenClaw is a **live, separate installation** on the MacBook — not residue. Both Hermes and OpenClaw are active simultaneously. What is visible from the Hermes side:
 
-- `~/.openclaw/workspace/SOUL.md` — OpenClaw workspace with its own SOUL.md
-- Hermes ships a migration script: `optional-skills/migration/openclaw-migration/scripts/openclaw_to_hermes.py`
-- `onboarding.seen.openclaw_residue_cleanup: true` — cleanup was acknowledged in Hermes config
+- `~/.openclaw/workspace/SOUL.md` — OpenClaw's own workspace SOUL.md (has content; generic default template)
+- Hermes ships a migration script: `optional-skills/migration/openclaw-migration/scripts/openclaw_to_hermes.py` — not run; no migration was performed or requested
+- `onboarding.seen.openclaw_residue_cleanup: true` — this is Hermes's own onboarding wizard bookkeeping; it does not record any Logan action or migration
 
 ---
 
@@ -291,7 +291,7 @@ OpenClaw was previously installed on the MacBook. Remaining presence:
 5. **Two hermes binaries on PATH** from different Python environments. The stale Python 3.13 install predates the venv-based v0.14.0.
 6. **110 GB of local Ollama models** provide a substantial offline fallback.
 7. **The obsidian skill is installed** under note-taking — but ACP and note-taking toolsets are not active in the current config.
-8. **OpenClaw migration is complete** — residue acknowledged, Hermes is the active agent framework.
+8. **OpenClaw is a live, separate installation** — both Hermes and OpenClaw are active simultaneously on the MacBook. No migration was performed. The `onboarding.seen.openclaw_residue_cleanup: true` field in Hermes config is Hermes's own onboarding bookkeeping, not a Logan action.
 
 ---
 
