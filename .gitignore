@@ -79,9 +79,6 @@ Google Passwords.csv
 
 # Agent memory-provider API key configs (contain live credentials)
 honcho.json
-.honcho/
-mcp-tokens/
-.hermes/mcp-tokens/
 
 # ---------------------------------------------------------------------------
 # Python, JavaScript, and package runtime infrastructure
