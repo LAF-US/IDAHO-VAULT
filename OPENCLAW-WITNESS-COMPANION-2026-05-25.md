@@ -1,6 +1,6 @@
 ---
 title: "OPENCLAW WITNESS COMPANION — 2026-05-25"
-subtitle: "Local Machine Survey: Bellhop (MacBook) OpenClaw Presence"
+subtitle: "Local Machine Survey: Logan's MacBook — OpenClaw Presence"
 type: witness-report
 companion-to: OPENCLAW-WITNESS-REPORT-2026-05-25
 source: local-machine-survey-claude-code-session-2026-05-25
@@ -8,7 +8,7 @@ tags:
 - openclaw
 - witness
 - local-survey
-- bellhop
+- macbook
 - gateway
 created: 2026-05-25
 author: "Claude (Claude Code — session 2026-05-25, not Logan)"
@@ -23,7 +23,7 @@ related:
 
 **Author:** Claude Code (Anthropic AI agent instance — this is NOT Logan)
 **Session date:** May 25, 2026
-**Type:** Local machine witness — observed state of Bellhop (MacBook) only
+**Type:** Local machine witness — observed state of the MacBook only
 **Companion to:** `OPENCLAW-WITNESS-REPORT-2026-05-25.md` (research/theory)
 **Directed by:** Logan Alvan Finney
 
@@ -31,7 +31,7 @@ related:
 
 ## WHAT THIS IS
 
-This document records what I observed on Bellhop (Logan's MacBook) regarding OpenClaw during a survey on 2026-05-25.
+This document records what I observed on the MacBook regarding OpenClaw during a survey on 2026-05-25.
 
 The companion report (`OPENCLAW-WITNESS-REPORT-2026-05-25.md`) covers what OpenClaw *is* — research grounded in external sources. This document covers what is *here* — grounded in direct local observation.
 
@@ -96,7 +96,7 @@ The gateway is a **local hub**, not a platform gateway in the Hermes sense.
 
 | Node | Device | Role | First paired | Last connected |
 |---|---|---|---|---|
-| Bellhop CLI | macOS (darwin), operator | probe / admin | 2026-05-13 | (local) |
+| the MacBook (operator node) | macOS (darwin), operator | probe / admin | 2026-05-13 | (local) |
 | **Windows-ZBFURY** | Windows (Mogget) | node-host | 2026-05-17 | **2026-05-18 20:40** |
 
 **Windows-ZBFURY** is Mogget — Logan's Windows machine. It is a paired node with capabilities: `system`, `browser`, `file`, and commands `system.run.prepare`, `system.run`, `system.which`, `browser.proxy`. It was last connected May 18 — currently offline.
@@ -177,7 +177,7 @@ The BOOTSTRAP.md file serves as OpenClaw's onboarding script. Per OpenClaw's own
 
 > "If BOOTSTRAP.md exists, that's your birth certificate. Follow it, figure out who you are, then delete it. You won't need it again."
 
-The file exists on Bellhop. This means the agent was never guided through its identity initialization. It has no name. It has no declared nature. It does not know Logan's name, pronouns, or timezone. Every session begins as if it is meeting Logan for the first time.
+The file exists on the MacBook. This means the agent was never guided through its identity initialization. It has no name. It has no declared nature. It does not know Logan's name, pronouns, or timezone. Every session begins as if it is meeting Logan for the first time.
 
 ### Memory DB
 
@@ -290,9 +290,9 @@ This is a cached MCP bundle — the runtime has MCP capability but no servers ha
 
 ## SUMMARY OBSERVATIONS
 
-1. **OpenClaw is a live daemon on Bellhop.** Gateway has been running since 00:04 today. LaunchAgent ensures it restarts at login.
+1. **OpenClaw is a live daemon on the MacBook.** Gateway has been running since 00:04 today. LaunchAgent ensures it restarts at login.
 
-2. **Gateway is local-only.** `mode: local` means no external platform channels. OpenClaw has no Telegram, Discord, or WhatsApp connections on Bellhop. It operates as a local hub.
+2. **Gateway is local-only.** `mode: local` means no external platform channels. OpenClaw has no Telegram, Discord, or WhatsApp connections on the MacBook. It operates as a local hub.
 
 3. **One node paired: Mogget (Windows-ZBFURY).** The Windows machine is paired and configured as a compute node with system/browser/file capabilities. Currently offline (last connected May 18).
 

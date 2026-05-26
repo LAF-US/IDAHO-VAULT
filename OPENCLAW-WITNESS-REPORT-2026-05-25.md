@@ -39,7 +39,7 @@ This document records what I (Claude Code) learned about OpenClaw during a resea
 
 I am software. This is my research output. Provenance is recorded at the end.
 
-**One correction on record:** Earlier in this session I incorrectly described OpenClaw as a "predecessor framework" whose migration to Hermes was marked complete. Logan corrected this: **no migration was performed, requested, or desired.** The `onboarding.seen.openclaw_residue_cleanup: true` field visible in `~/.hermes/config.yaml` is Hermes's own onboarding wizard bookkeeping — it does not record any Logan action. OpenClaw is a fully separate, active installation on Bellhop. Both are live. Neither supersedes the other.
+**One correction on record:** Earlier in this session I incorrectly described OpenClaw as a "predecessor framework" whose migration to Hermes was marked complete. Logan corrected this: **no migration was performed, requested, or desired.** The `onboarding.seen.openclaw_residue_cleanup: true` field visible in `~/.hermes/config.yaml` is Hermes's own onboarding wizard bookkeeping — it does not record any Logan action. OpenClaw is a fully separate, active installation on the MacBook. Both are live. Neither supersedes the other.
 
 ---
 
@@ -115,7 +115,7 @@ In OpenClaw's multi-agent architecture, a **workspace** is a named agent instanc
 
 **Session-level override:** `/claw-personality` — temporary personality switch without modifying SOUL.md. Direct parallel to Hermes's `/personality` command.
 
-**On Bellhop:** `~/.openclaw/workspace/SOUL.md` is present with content. It was written at some point during prior configuration (before this session). Its contents were not read this session — no direction was given to examine it.
+**On the MacBook:** `~/.openclaw/workspace/SOUL.md` is present with content. It was written at some point during prior configuration (before this session). Its contents were not read this session — no direction was given to examine it.
 
 ---
 
@@ -172,7 +172,7 @@ openclaw mcp unset <name># remove a server definition
 
 **Security policy:** OpenClaw explicitly rejects server definitions that set interpreter-startup environment variables — `NODE_OPTIONS`, `PYTHONPATH`, `RUBYOPT` — in the server config. These are blocked as a supply-chain attack vector.
 
-**On Bellhop:** OpenClaw's MCP client registry state was not examined this session.
+**On the MacBook:** OpenClaw's MCP client registry state was not examined this session.
 
 ---
 
@@ -300,7 +300,7 @@ This means a Hermes session can send a message through an OpenClaw-managed platf
 
 ### SOUL.md — Independent Identities
 
-Both maintain independent identity layers. Having both active on Bellhop means:
+Both maintain independent identity layers. Having both active on the MacBook means:
 
 - `~/.hermes/SOUL.md` — Hermes's identity (currently empty)
 - `~/.openclaw/workspace/SOUL.md` — OpenClaw's identity (has content)
@@ -323,7 +323,7 @@ The cleaner conjunction model: assign different platforms or channels to each ag
 
 ## ON BELLHOP
 
-OpenClaw is installed and active on Bellhop (Logan's MacBook). A full local survey was conducted this session — see `OPENCLAW-WITNESS-COMPANION-2026-05-25.md` for the complete picture. Key points:
+OpenClaw is installed and active on the MacBook. A full local survey was conducted this session — see `OPENCLAW-WITNESS-COMPANION-2026-05-25.md` for the complete picture. Key points:
 
 - **Version**: v2026.5.16-beta.3 (beta — stable v2026.5.22 available)
 - **Running**: Yes — PID 868, gateway on port 18789 (loopback only, `mode: local`)
@@ -363,10 +363,10 @@ See also `OPENCLAW-WITNESS-DELTA-2026-05-25.md` for gap analysis.
 *This document does not represent Logan's views or directives. It is a research artifact.*
 *Part of a four-document series (OpenClaw):*
 - *`OPENCLAW-WITNESS-REPORT-2026-05-25.md` — what OpenClaw is (this document)*
-- *`OPENCLAW-WITNESS-COMPANION-2026-05-25.md` — what is on Bellhop*
+- *`OPENCLAW-WITNESS-COMPANION-2026-05-25.md` — what is on the MacBook*
 - *`OPENCLAW-WITNESS-DELTA-2026-05-25.md` — the gap between them*
 
 *Parallel series (Hermes):*
 - *`HERMES-WITNESS-REPORT-2026-05-25.md` — what Hermes Agent is*
-- *`HERMES-WITNESS-COMPANION-2026-05-25.md` — what is on Bellhop (Hermes)*
+- *`HERMES-WITNESS-COMPANION-2026-05-25.md` — what is on the MacBook (Hermes)*
 - *`HERMES-WITNESS-DELTA-2026-05-25.md` — the gap between Hermes ideal and actual*
