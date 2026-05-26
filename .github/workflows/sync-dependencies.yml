@@ -38,6 +38,7 @@ jobs:
       - name: Export requirements.txt from uv.lock
         id: export
         if: steps.uvlock.outcome == 'success'
+        continue-on-error: true
         run: uv export --format requirements-txt --no-hashes --output-file requirements.txt
 
       - name: Publish review branch and PR
@@ -61,12 +62,17 @@ jobs:
           fi
 
       - name: Report dependency resolver conflict
-        if: steps.uvlock.outcome != 'success'
+        if: steps.uvlock.outcome != 'success' || steps.export.outcome != 'success'
         run: |
           {
             echo "## Sync Dependencies"
             echo ""
-            echo "uv lock --upgrade failed; no review branch was created."
+            if [ "${{ steps.uvlock.outcome }}" != "success" ]; then
+              echo "\`uv lock --upgrade\` failed; no review branch was created."
+            elif [ "${{ steps.export.outcome }}" != "success" ]; then
+              echo "\`uv export\` failed after a successful lock; no review branch was created."
+            fi
+            echo ""
             echo "Treat this as Python dependency triage."
           } >> "$GITHUB_STEP_SUMMARY"
           exit 1
