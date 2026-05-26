@@ -251,8 +251,8 @@ Released May 16, 2026. 808 commits, 633 merged PRs, 1,393 files changed, 215 con
 | | **Hermes** | **OpenClaw** |
 |---|---|---|
 | Philosophy | Compounding depth | Maximum reach |
-| Platforms | 22 | 50+ |
-| Skills | 70+ built-in + self-created | 44,000+ community (ClawHub) |
+| Platforms | 22 | 22 |
+| Skills | 70+ built-in + self-created | 3,286 community (ClawHub, post-ClawHavoc) |
 | Architecture | Self-improving, SQLite FTS | WebSocket gateway |
 | License | MIT | Independent foundation (OpenAI sponsor) |
 | Daily tokens | 224B (#1) | 186B |

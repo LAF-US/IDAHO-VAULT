@@ -11,7 +11,7 @@ tags:
 - clawhub
 - mcp
 - soul
-- bellhop
+- local-survey
 created: 2026-05-25
 author: "Claude (Claude Code — session 2026-05-25, not Logan)"
 authority: LOGAN
@@ -127,7 +127,7 @@ Like Hermes, OpenClaw treats MCP as two distinct directions simultaneously.
 
 ### Direction 1: OpenClaw as MCP server
 
-`openclaw mcp serve` runs OpenClaw as a WebSocket-bridged MCP server exposing **8 messaging tools**:
+`openclaw mcp serve` runs OpenClaw as a WebSocket-bridged MCP server exposing **9 messaging tools**:
 
 | Tool | Function |
 |---|---|
@@ -323,7 +323,7 @@ The cleaner conjunction model: assign different platforms or channels to each ag
 
 ---
 
-## ON BELLHOP
+## ON THE MACBOOK
 
 OpenClaw is installed and active on the MacBook. A full local survey was conducted this session — see `OPENCLAW-WITNESS-COMPANION-2026-05-25.md` for the complete picture. Key points:
 
