@@ -56,7 +56,7 @@ Each element feeds the next. The loop only compounds if it has a starting point.
 On the MacBook today, **the machinery of the loop is fully assembled and running**:
 
 - Gateway daemon live on three platforms simultaneously
-- 26 skill categories installed
+- 21 skill categories installed (95 SKILL.md files)
 - Curator enabled (weekly)
 - SQLite session store with 44 prior sessions
 - 110 GB of local Ollama fallback models

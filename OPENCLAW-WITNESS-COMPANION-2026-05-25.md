@@ -169,7 +169,7 @@ OpenClaw's SOUL.md has content — but it is the **generic OpenClaw-shipped defa
 - Boundaries: private things stay private; ask before acting externally
 - Vibe guidance for group chats
 
-This SOUL.md was written by Nous Research / OpenClaw contributors as the starter template. It is not Logan's appointment of this agent. It is a placeholder that was never overwritten with Logan's voice.
+This SOUL.md was written by OpenClaw contributors as the starter template. It is not Logan's appointment of this agent. It is a placeholder that was never overwritten with Logan's voice.
 
 ### BOOTSTRAP.md — Still Present
 
