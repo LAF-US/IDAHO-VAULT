@@ -18,6 +18,7 @@ authority: LOGAN
 related:
   - HERMES-WITNESS-REPORT-2026-05-25
   - HERMES-WITNESS-COMPANION-2026-05-25
+  - OPENCLAW-WITNESS-REPORT-2026-05-25
   - CONSTITUTION
   - 2026-05-19_hermes-agent-introductory-note
 ---
@@ -155,11 +156,13 @@ This matters because Signal was the platform most associated with the vault's se
 
 ---
 
-## THE OPENCLAW RESIDUE
+## THE OPENCLAW PRESENCE
 
-`~/.openclaw/workspace/SOUL.md` remains on disk. OpenClaw was the predecessor framework. The migration to Hermes was completed (`onboarding.seen.openclaw_residue_cleanup: true`), but the OpenClaw workspace persists.
+**Correction on record (2026-05-25, same session):** An earlier version of this section described OpenClaw as "the predecessor framework" with a migration marked complete. Logan corrected this explicitly: **no migration was performed, requested, or desired.** The `onboarding.seen.openclaw_residue_cleanup: true` field in `~/.hermes/config.yaml` is Hermes's own onboarding wizard bookkeeping — it does not record any Logan action or migration. OpenClaw is a fully separate, active installation on Bellhop. Both Hermes and OpenClaw are live simultaneously.
 
-This is an observation, not a directive. Its presence is harmless. But it represents the prior identity experiment — whatever was written in OpenClaw's SOUL.md reflects an earlier configuration of intent that was superseded.
+`~/.openclaw/workspace/SOUL.md` is present on disk with content. OpenClaw has its own identity layer, independent of Hermes's. This is not residue — it is a live installation.
+
+This is an observation, not a directive. The conjunction question (Hermes + OpenClaw operating together) was raised this session; see `OPENCLAW-WITNESS-REPORT-2026-05-25.md` for the MCP bridging and platform coordination surfaces.
 
 ---
 
@@ -216,11 +219,18 @@ This section records changes made after the initial delta was written (same sess
 - Honcho — not configured; needs API key
 - Home Assistant — URL set; unreachable on current network (expected)
 
+**Corrections applied:**
+- OpenClaw section — rewritten; "predecessor framework / migration complete" language was wrong; Logan corrected: OpenClaw is a live, separate installation; no migration was performed or desired
+
+**Research completed (same session, after context compaction and resume):**
+- OpenClaw research to Hermes-report parity — `OPENCLAW-WITNESS-REPORT-2026-05-25.md` written to vault
+
 ---
 
 *Witnessed and recorded by Claude Code — Anthropic AI agent instance, session 2026-05-25*
 *This document reflects. It does not direct.*
-*Part of a three-document series:*
+*Part of a four-document series:*
 - *`HERMES-WITNESS-REPORT-2026-05-25.md` — what Hermes Agent is*
-- *`HERMES-WITNESS-COMPANION-2026-05-25.md` — what is on Bellhop*
+- *`HERMES-WITNESS-COMPANION-2026-05-25.md` — what is on Bellhop (Hermes)*
 - *`HERMES-WITNESS-DELTA-2026-05-25.md` — the gap between them (this document)*
+- *`OPENCLAW-WITNESS-REPORT-2026-05-25.md` — what OpenClaw is*
