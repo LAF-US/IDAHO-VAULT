@@ -104,12 +104,14 @@ Hermes's explicit philosophy is **compounding depth** — a single agent that kn
 
 OpenClaw and Hermes share the same SOUL.md concept under different paths.
 
-**OpenClaw SOUL path:**
+**OpenClaw SOUL path (design pattern):**
 ```
 ~/.openclaw/workspaces/[agent-name]/SOUL.md
 ```
 
 In OpenClaw's multi-agent architecture, a **workspace** is a named agent instance. Each workspace has its own SOUL.md — this matters because OpenClaw supports multiple co-existing named agents where Hermes runs as a single named instance.
+
+**Note on actual installation path:** The MacBook's OpenClaw installation uses `~/.openclaw/workspace/SOUL.md` (no `s` on "workspaces"; no agent-name subdirectory) — a flat layout rather than the namespaced pattern. This may reflect the single-agent default installation. The design pattern above describes the general multi-agent architecture.
 
 **Behavior:** SOUL.md is injected verbatim as the system prompt when the workspace agent starts. No wrapper language. Scanned for prompt injection before use.
 
