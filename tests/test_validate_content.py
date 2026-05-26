@@ -73,6 +73,17 @@ class ValidateContentTest(unittest.TestCase):
             [f"{target}: File outside allowed directories for scope 'inbox': ['INBOX/']"],
         )
 
+    def test_deletion_of_live_governance_requires_human_review(self) -> None:
+        target = Path("!/WAKEUP.md")
+        errors = validate_content.validate_deleted_path(target, "all")
+        self.assertEqual(
+            errors,
+            [f"{target}: Deletion of governed content requires explicit human review"],
+        )
+
+    def test_non_governed_deletion_is_not_blocked(self) -> None:
+        self.assertEqual(validate_content.validate_deleted_path(Path("draft.md"), "all"), [])
+
 
 if __name__ == "__main__":
     unittest.main()

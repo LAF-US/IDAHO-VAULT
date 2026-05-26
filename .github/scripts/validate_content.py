@@ -16,6 +16,7 @@ Exit codes:
 
 import argparse
 import re
+import subprocess
 import sys
 from pathlib import Path
 
@@ -70,15 +71,28 @@ ROOT_GOVERNED_FILES = {
     "VAULT-TEMPLATES.md",
 }
 REQUIRED_GOVERNED_FIELDS = ("title", "updated", "status", "authority")
+PROTECTED_LIVE_FILES = {
+    "AGENTS.md",
+    "CONSTITUTION.md",
+    "DECISIONS.md",
+    "VAULT-CONVENTIONS.md",
+    "!/AGENTS.md",
+    "!/WAKEUP.md",
+    "!/README.md",
+}
 
 
 # ── Helpers ──────────────────────────────────────────────────────────────────
 
-def get_staged_files() -> list[Path]:
-    """Get list of staged files from git."""
-    import subprocess
+def get_changed_files(base: str | None = None) -> list[Path]:
+    """Get changed Markdown paths, including deletions."""
+    command = ["git", "diff", "--name-only", "--diff-filter=ACMRD"]
+    if base is None:
+        command.insert(2, "--cached")
+    else:
+        command.append(f"{base}..HEAD")
     result = subprocess.run(
-        ["git", "diff", "--cached", "--name-only", "--diff-filter=ACMR"],
+        command,
         capture_output=True, text=True
     )
     return [Path(f) for f in result.stdout.strip().splitlines() if f.endswith(".md")]
@@ -204,15 +218,24 @@ def validate_governed_metadata(path: Path, frontmatter: dict | None, scope: str)
     return [f"{path}: Governed note missing required frontmatter field(s): {', '.join(missing)}"]
 
 
+def validate_deleted_path(path: Path, scope: str) -> list[str]:
+    """Reject deletion of protected live governance from an automated content lane."""
+    normalized = str(path).replace("\\", "/")
+    if normalized in PROTECTED_LIVE_FILES or is_governed_note(path, scope):
+        return [f"{path}: Deletion of governed content requires explicit human review"]
+    return []
+
+
 # ── Main ─────────────────────────────────────────────────────────────────────
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Validate staged content before commit")
     parser.add_argument("--scope", choices=["bills", "admin", "generated", "inbox", "all"], default="all",
                         help="Which scope to validate (restricts allowed directories)")
+    parser.add_argument("--base", help="Validate the committed diff from BASE through HEAD instead of staged files")
     args = parser.parse_args()
 
-    staged = get_staged_files()
+    staged = get_changed_files(args.base)
     if not staged:
         print("validate_content: No staged markdown files to check.")
         return 0
@@ -222,7 +245,9 @@ def main() -> int:
         all_errors.extend(validate_directory(path, args.scope))
         all_errors.extend(validate_file_size(path))
 
-        if path.exists():
+        if not path.exists():
+            all_errors.extend(validate_deleted_path(path, args.scope))
+        else:
             content = path.read_text(encoding="utf-8", errors="replace")
             frontmatter, frontmatter_errors = parse_frontmatter(path, content)
             all_errors.extend(frontmatter_errors)

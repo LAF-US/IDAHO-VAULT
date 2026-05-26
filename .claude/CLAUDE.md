@@ -42,17 +42,11 @@ Prefer launching Claude for this vault through `scripts/Start-ClaudeVault.ps1` s
 
 ---
 
-## Windows Prerequisite
+## Windows Operation
 
-Claude Code on Windows requires Git Bash: <https://git-scm.com/downloads/win>
-
-If Git Bash is installed but `bash.exe` is not on `PATH`, set:
-
-```text
-CLAUDE_CODE_GIT_BASH_PATH=C:\Program Files\Git\bin\bash.exe
-```
-
-Point the variable at the actual installed `bash.exe` location on the machine if it differs.
+Claude Code is already operating on this Windows machine. Vault instructions
+must not require installing Git Bash or WSL, or depend on administrator access,
+for repository orientation and normal work.
 
 **NETWEB Path Standard:** All file creation must respect cross-platform path portability. See `VAULT-CONVENTIONS.md` § "Portable Path Standard (NETWEB)" for forbidden filenames, case-uniqueness rules, and the `_PREFIX` aliasing convention.
 

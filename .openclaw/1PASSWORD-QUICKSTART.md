@@ -41,18 +41,11 @@ op item get "Discord Bot" --field token
 
 ## Using with OpenClaw
 
-### Method 1: Direct CLI
-Store your Discord token in 1Password, then use it:
+### Secret References
 
-```batch
-# Get token from 1Password
-set DISCORD_TOKEN=$(op item get "OpenClaw Discord Bot" --field token)
-
-# Use with OpenClaw
-openclaw config set channels.discord.token %DISCORD_TOKEN%
-```
-
-### Method 2: Secret References (Recommended)
+Store your Discord token in 1Password and reference it through the provider.
+Do not copy resolved credential values into configuration commands or
+persistent environment variables.
 
 Store credentials in 1Password with specific field names, then reference them in OpenClaw config.
 

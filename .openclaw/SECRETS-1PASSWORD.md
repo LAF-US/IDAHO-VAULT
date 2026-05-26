@@ -87,7 +87,7 @@ Instead of storing tokens in plaintext, use SecretRef:
 ```json
 "discord": {
   "enabled": true,
-  "token": "MTAxMjM0NTY3ODkxMC4xMjM0NTY3ODkxMC4xMjM0NTY3ODkxMA..."
+  "token": "<removed-literal-token>"
 }
 ```
 
@@ -122,13 +122,14 @@ openclaw secrets reload
 
 ---
 
-## Prerequisite Shell Setup
+## Optional Process-Scoped OpenClaw Operation
 
 > [!IMPORTANT]
 > **The `$secretRef` tags in `openclaw.json` are resolved at runtime.**
-> The shell session that invokes `openclaw` MUST have the required environment
-> variables exported BEFORE the command is run. The configuration is inert
-> until the shell is seeded.
+> OpenClaw is not project startup. The local gateway was containment-stopped
+> on May 26, 2026; do not start it again until gateway and Discord credentials
+> have been rotated and allowed Discord destinations confirmed. For an
+> approved operation, provide required variables only to that process/session.
 
 ### Required Environment Variables
 
@@ -137,42 +138,40 @@ Before any `openclaw` command executes, the current shell must define:
 | Variable | Purpose | Required For |
 |----------|---------|--------------|
 | `OP_SERVICE_ACCOUNT_TOKEN` | Authenticates the 1Password CLI provider | All `$secretRef` resolutions |
-| `DISCORD_BOT_TOKEN` | Fallback Discord credential if 1Password is unreachable | Discord channel |
+| `DISCORD_OPENCLAW_TOKEN` | Discord credential when explicitly invoking the channel | Discord channel |
 | `OPENCLAW_GATEWAY_TOKEN` | Authenticates the local gateway | Gateway startup |
 
-### Golden Path: Export → Invoke
+### Only After Rotation: Set Process Variables Then Invoke
 
-The execution sequence is explicit and non-negotiable:
+The execution sequence applies only to an intentional OpenClaw operation:
 
 **1. Export Secrets (seed the shell)**
 
 PowerShell (Windows):
 ```powershell
 $env:OP_SERVICE_ACCOUNT_TOKEN = "ops_..."
-$env:DISCORD_BOT_TOKEN        = "MTAx..."
+$env:DISCORD_OPENCLAW_TOKEN   = "MTAx..."
 $env:OPENCLAW_GATEWAY_TOKEN   = "oc_gw_..."
 ```
 
 Bash / Zsh (POSIX):
 ```bash
 export OP_SERVICE_ACCOUNT_TOKEN="ops_..."
-export DISCORD_BOT_TOKEN="MTAx..."
+export DISCORD_OPENCLAW_TOKEN="MTAx..."
 export OPENCLAW_GATEWAY_TOKEN="oc_gw_..."
 ```
 
 cmd.exe (Windows legacy):
 ```cmd
 set OP_SERVICE_ACCOUNT_TOKEN=ops_...
-set DISCORD_BOT_TOKEN=MTAx...
+set DISCORD_OPENCLAW_TOKEN=MTAx...
 set OPENCLAW_GATEWAY_TOKEN=oc_gw_...
 ```
 
 **2. Verify the Shell is Seeded**
 
 ```bash
-op whoami                         # confirms 1Password CLI is authenticated
-echo $env:DISCORD_BOT_TOKEN       # PowerShell: confirms variable is set
-echo $DISCORD_BOT_TOKEN           # Bash: confirms variable is set
+op whoami                             # confirms 1Password CLI is authenticated
 ```
 
 **3. Run OpenClaw Command**
@@ -183,47 +182,28 @@ openclaw gateway start
 openclaw run
 ```
 
-### Why This Step is Mandatory
+Clear process-scoped variables as soon as the approved operation finishes:
 
-- `openclaw.json` contains `$secretRef` tags, not literal values.
-- The 1Password provider is invoked as a subprocess (`op item get ...`) and
-  inherits the parent shell's environment.
-- If `OP_SERVICE_ACCOUNT_TOKEN` is absent, the provider fails authentication
-  and every `$secretRef` resolution returns empty.
-- If fallback variables (e.g. `DISCORD_BOT_TOKEN`) are absent, channels fail
-  to initialize and the agent reports unreachable gateways.
-
-### Automation: Seeding from a .env File
-
-For repeatable sessions, source a local `.env` (never committed):
-
-```bash
-set -a
-source .openclaw/.env.local
-set +a
-openclaw run
-```
-
-PowerShell equivalent:
 ```powershell
-Get-Content .openclaw\.env.local | ForEach-Object {
-  if ($_ -match '^\s*([^#=]+)=(.*)$') {
-    [Environment]::SetEnvironmentVariable($Matches[1].Trim(), $Matches[2].Trim(), 'Process')
-  }
-}
-openclaw run
+Remove-Item Env:OP_SERVICE_ACCOUNT_TOKEN -ErrorAction SilentlyContinue
+Remove-Item Env:DISCORD_OPENCLAW_TOKEN -ErrorAction SilentlyContinue
+Remove-Item Env:OPENCLAW_GATEWAY_TOKEN -ErrorAction SilentlyContinue
 ```
 
-### State Transition
+Do not store operational channel or gateway credentials in a shell profile,
+user-scoped environment variable, local `.env` helper, or tracked file.
 
-This step is what moves the system from **configured** to **operational**:
+### Intentional State Transition
+
+An explicit approved invocation is what moves the system from **configured**
+to **operational**:
 
 | State | Meaning |
 |-------|---------|
 | Configured | `openclaw.json` contains valid `$secretRef` tags |
-| **Operational** | Shell is seeded AND `openclaw` is invoked in that same shell |
+| **Operational** | Rotated process-scoped credentials are supplied AND `openclaw` is explicitly invoked |
 
-Skipping the export step leaves the system configured but inert.
+Without that intentional invocation the configuration remains inert.
 
 ## Security Benefits
 
