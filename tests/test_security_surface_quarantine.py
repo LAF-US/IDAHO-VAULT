@@ -37,6 +37,32 @@ class SecuritySurfaceQuarantineTest(unittest.TestCase):
         self.assertIn("AdviceNXT/sbp", reference)
         self.assertIn("quarantined", reference)
 
+    def test_unreviewed_bridge_session_and_launcher_surfaces_are_quarantined(self) -> None:
+        for relative_path in (
+            ".mcp.json",
+            ".openclaw/gateway.cmd",
+            "2026-05-13-135349-this-session-is-being-cont-abhorsen-and-judge-on-the-road.txt",
+            "gpg-agent.conf",
+            "package copy.json",
+            "package-lock copy.json",
+            "session-export-1779427275139",
+        ):
+            self.assertFalse((ROOT / relative_path).exists(), relative_path)
+        gitignore = (ROOT / ".gitignore").read_text(encoding="utf-8")
+        for ignored in (".mcp.json", "session-export-*/", "gpg-agent.conf"):
+            self.assertIn(ignored, gitignore)
+
+    def test_platform_metadata_remains_os_neutral(self) -> None:
+        metadata = (ROOT / "pyproject.toml").read_text(encoding="utf-8")
+        self.assertNotIn("HOST: macOS", metadata)
+        self.assertNotIn('requires-python = ">=3.11,<3.12"', metadata)
+
+    def test_openclaw_operation_guidance_is_containment_gated(self) -> None:
+        guidance = (ROOT / ".openclaw" / "SECRETS-1PASSWORD.md").read_text(encoding="utf-8")
+        self.assertIn("OpenClaw is not project startup", guidance)
+        self.assertNotIn("source .openclaw/.env.local", guidance)
+        self.assertNotIn("DISCORD_BOT_TOKEN", guidance)
+
 
 if __name__ == "__main__":
     unittest.main()
