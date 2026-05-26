@@ -154,6 +154,45 @@ The SOUL.md was seeded automatically at install (2026-05-05, per timestamp) but 
 
 ---
 
+## MCP & ACP STATE (amended 2026-05-25)
+
+A full MCP/ACP surface audit was conducted during this session, reading the local documentation at `~/.hermes/hermes-agent/website/docs/`.
+
+### MCP client — Hermes connecting to external servers
+
+**Status: installed, no servers configured.**
+
+- MCP Python package: installed and importable in active venv
+- `hermes mcp` CLI available: `add / remove / list / test / configure / login / serve`
+- No `mcp_servers:` entries in `~/.hermes/config.yaml`
+- Built-in `codex` preset available; `codex` CLI is at `/usr/local/bin/codex` v0.130.0
+- `opencode` CLI present at `/Users/logan/.opencode/bin/opencode` v1.14.50 — no preset, manual config needed
+- OAuth 2.1 authenticated HTTP MCP servers supported natively (`auth: oauth`)
+
+### MCP server — Hermes exposing tools to other agents
+
+**Status: available but not wired.**
+
+`hermes mcp serve` is a documented command. It runs Hermes as a stdio MCP server exposing 10 messaging tools (list/read/send/poll conversations across Telegram, Discord, WhatsApp). Gateway must be running for send operations; it is currently running.
+
+Integration with Claude Code requires a `.mcp.json` in the vault root or an `mcpServers` entry in `~/.claude/claude_desktop_config.json`. Neither exists.
+
+### ACP server — Hermes as editor agent
+
+**Status: server-side ready, no editor configured.**
+
+- `hermes-acp --check OK`
+- ACP registry manifest: `~/.hermes/hermes-agent/acp_registry/agent.json` (v0.14.0)
+- Compatible editors: VS Code (ACP Client extension), Zed (v0.221.x+ ACP Registry, requires `uv`), JetBrains
+- ACP mode uses `hermes-acp` toolset; sessions bind to editor cwd; approvals surface inline
+- No editor has been configured to connect to `hermes-acp`
+
+### .env amendment
+
+`OBSIDIAN_VAULT_PATH=/Users/logan/IDAHO-VAULT` added to `~/.hermes/.env`. The Obsidian skill was previously falling back to `~/Documents/Obsidian Vault` because this variable was unset.
+
+---
+
 ## MEMORY STATE
 
 | File | State | Notes |
@@ -171,22 +210,33 @@ Memory starts fresh as of this morning.
 
 ## SKILLS INSTALLED
 
-26 categories present in `~/.hermes/skills/`:
+21 categories present in `~/.hermes/skills/`, containing 95 SKILL.md files:
 
 | Category | Notable sub-skills |
 |---|---|
-| `autonomous-ai-agents` | hermes-agent (self-reference) |
+| `autonomous-ai-agents` | claude-code, codex, hermes-agent, kanban-codex-lane, opencode |
 | `note-taking` | **obsidian** |
-| `github` | codebase-inspection, github-auth, code-review, issues, pr-workflow, repo-management |
-| `productivity` | google-workspace, notion, linear, airtable, ocr-and-documents, powerpoint, teams-meeting-pipeline |
-| `messaging` | signal-cli (includes hermes-gateway-local-linking-flow reference) |
-| `software-development` | hermes-agent-skill-authoring, debugging-hermes-tui-commands, hermes-s6-container-supervision |
-| `mcp` | MCP server integration |
-| `devops` | — |
-| `data-science` | — |
-| `research` | — |
-| `smart-home` | — |
-| + 15 others | creative, gaming, gifs, inference-sh, media, mlops, red-teaming, social-media, yuanbao, domain, email, apple, diagramming, dogfood |
+| `github` | codebase-inspection, github-auth, github-code-review, github-issues, github-pr-workflow, github-repo-management |
+| `productivity` | google-workspace, notion, linear, airtable, ocr-and-documents, powerpoint, teams-meeting-pipeline, maps, nano-pdf |
+| `messaging` | signal-cli |
+| `software-development` | hermes-agent-skill-authoring, debugging-hermes-tui-commands, hermes-s6-container-supervision, plan, spike, subagent-driven-development, systematic-debugging, test-driven-development, writing-plans, node-inspect-debugger, python-debugpy, requesting-code-review |
+| `mcp` | native-mcp |
+| `devops` | kanban-orchestrator, kanban-worker, webhook-subscriptions |
+| `data-science` | jupyter-live-kernel |
+| `research` | arxiv, blogwatcher, llm-wiki, polymarket, research-paper-writing |
+| `smart-home` | openhue |
+| `creative` | 16 sub-skills including touchdesigner-mcp, excalidraw, manim-video, p5js, comfyui, sketch |
+| `mlops` | 13 sub-skills across evaluation, inference, training, models, research subdirectories |
+| `media` | gif-search, heartmula, songsee, spotify, youtube-content |
+| `apple` | apple-notes, apple-reminders, findmy, imessage, macos-computer-use |
+| `gaming` | minecraft-modpack-server, pokemon-player |
+| `red-teaming` | godmode |
+| `social-media` | xurl |
+| `email` | himalaya |
+| `dogfood` | dogfood |
+| `yuanbao` | yuanbao |
+
+**Amendment (same session, 2026-05-25):** Three bespoke skills wiped at Logan's direction — `logan-environment-discovery` (with 4 reference files), `terminal-output-format`, `terminal-output-formatting`. These were Logan-specific custom skills written under prior configuration assumptions. Clearing them is the correct foundation for writing fresh skills on correct foundations.
 
 Note: Skills are installed but not all toolsets are active. The `toolsets:` field in config.yaml lists only `hermes-cli`. Platform-specific toolset lists are configured separately.
 
