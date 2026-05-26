@@ -120,9 +120,11 @@ h11==0.16.0
     #   uvicorn
 hf-xet==1.5.0
     # via huggingface-hub
+honcho-ai==2.1.2
+    # via idaho-vault (pyproject.toml)
 httpcore==1.0.9
     # via httpx
-httptools==0.7.1
+httptools==0.8.0
     # via uvicorn
 httpx==0.28.1
     # via
@@ -130,6 +132,7 @@ httpx==0.28.1
     #   crewai
     #   crewai-cli
     #   crewai-core
+    #   honcho-ai
     #   huggingface-hub
     #   mcp
     #   openai
@@ -301,6 +304,7 @@ pydantic==2.11.10
     #   crewai
     #   crewai-cli
     #   crewai-core
+    #   honcho-ai
     #   idaho-vault (pyproject.toml)
     #   instructor
     #   lance-namespace-urllib3-client
