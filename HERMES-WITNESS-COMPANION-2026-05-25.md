@@ -93,7 +93,7 @@ The `ledger` channel is designated as the Discord home channel in `config.yaml`.
 | Path | Version | Python | Status |
 |---|---|---|---|
 | `~/.hermes/hermes-agent/venv/bin/hermes` | v0.14.0 | 3.11 | **Active** |
-| `~/Library/Python/3.13/bin/hermes` | v0.12.0 | 3.13 | Stale |
+| `~/Library/Python/3.13/bin/hermes` | v0.12.0 | 3.13 | Stale at survey time — updated to v0.14.0 during this session |
 | `~/.local/bin/hermes` | unknown | — | Present |
 
 Two `hermes` binaries exist on PATH from different Python environments. The active venv (3.11) runs v0.14.0. The Python 3.13 system path points to a stale v0.12.0 install.
@@ -199,8 +199,8 @@ Integration with Claude Code requires a `.mcp.json` in the vault root or an `mcp
 |---|---|---|
 | `MEMORY.md` | Empty | Wiped this morning by Logan's direction |
 | `USER.md` | Absent | Wiped this morning by Logan's direction |
-| `MEMORY.md.lock` | Present | Lock file only |
-| `USER.md.lock` | Present | Lock file only |
+| `MEMORY.md.lock` | Absent | Lock file does not exist |
+| `USER.md.lock` | Absent | Lock file does not exist |
 
 **44 sessions** exist in `~/.hermes/sessions/` predating the wipe. Most recent sessions: 2026-05-23 through 2026-05-25 (today).
 
@@ -210,7 +210,7 @@ Memory starts fresh as of this morning.
 
 ## SKILLS INSTALLED
 
-21 categories present in `~/.hermes/skills/`, containing 95 SKILL.md files:
+21 categories containing skills in `~/.hermes/skills/`, totaling 95 SKILL.md files. (Four additional empty category directories — `domain`, `inference-sh`, `diagramming`, `gifs` — contain no SKILL.md files and are excluded from the table below.)
 
 | Category | Notable sub-skills |
 |---|---|

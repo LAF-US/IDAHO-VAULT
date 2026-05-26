@@ -130,9 +130,10 @@ File: `~/.openclaw/openclaw.json` (observed 2026-05-25)
 | Gateway port | 18789 |
 | Session DM scope | `per-channel-peer` |
 
-**Secret provider chain:** OpenRouter API key is resolved via one of two methods:
+**Secret provider chain:** Three providers are configured in `openclaw.json`:
 1. **1Password CLI**: `op read op://Vault/OpenRouter API Key/credential` — requires `op` CLI authenticated
 2. **Vault script**: `/Users/logan/IDAHO-VAULT/!/resolve_openrouter_secret.py` — custom resolver
+3. **Gateway token file**: file-based provider reading from `~/.openclaw/secrets/gateway-token` (internal gateway auth token)
 
 This is more sophisticated than Hermes's `.env` file pattern. But it means the agent requires `op` or the vault script to be functional at runtime.
 
