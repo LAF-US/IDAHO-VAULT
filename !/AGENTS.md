@@ -14,16 +14,12 @@
 
 ## Authority Chain
 
----
-
-1. `start_SPARKSEED.sh` (root) -> **Foundational Bootstrapping Protocol**. This script must be the first command executed.
-2. Root `AGENTS.md` (root) -> Cross-tool pointer
-3. `!/WAKEUP.md` -> Explicit wakeup and conflict-resolution surface
-4. `!/README.md` -> Explicit startup and task-based orientation suite
-5. `CONSTITUTION.md` (root) -> Binding governance
-6. `swarm.json` (root) -> Machine-readable source of truth
-7. `!/agents.json` -> Canonical generated bootstrap index
-8. `!/agent.sh` -> Canonical local bootstrap entrypoint
+1. Logan's direct instruction -> controlling instruction for the current work
+2. `CONSTITUTION.md` (root) -> binding governance
+3. Root `AGENTS.md` and `!/WAKEUP.md` -> constraint and orientation surfaces
+4. `swarm.json` (root) -> machine-readable descriptive registry
+5. `!/agents.json` -> generated discovery index, not an executable startup route
+6. Historical and exploratory surfaces -> evidence only unless Logan reactivates them
 
 Tree logic for crew space:
 
@@ -33,15 +29,16 @@ Tree logic for crew space:
 
 ## Fresh Agent Boot Order
 
-1. Read root `AGENTS.md` as pointer only.
-2. Read `!/WAKEUP.md` before interpreting lore, branch residue, or older scaffolds.
-3. Read `!/README.md` for explicit startup and task-based routing.
-4. Read this file for the live roster, lane rules, and current connector posture.
-5. Read `CONSTITUTION.md` for binding governance.
-6. Read `swarm.json` for machine-readable compiled state.
-7. Use `!/agents.json` -> `!/agent.sh` for canonical local bootstrap.
-8. Read `!README.md` only when the task needs Touchstone Tree or narrative context.
-9. Treat historical CrewAI harbor notes as non-live unless `.crewai/MANIFEST.md` or this file says otherwise.
+1. Read root `AGENTS.md` as the cross-tool constraint surface.
+2. Read `CONSTITUTION.md` for binding governance.
+3. Read `!/WAKEUP.md` before interpreting lore, branch residue, or older scaffolds.
+4. Read this file only when roster, lane rules, or connector posture matters.
+5. Read `swarm.json` only when machine-readable registry context matters.
+6. Read `!README.md` only when the task needs Touchstone Tree or narrative context.
+
+No local launcher or shell bootstrap is part of orientation. This vault must
+remain usable through native Python, Markdown, and Jupyter workflows on each
+supported operating system.
 
 ## Disorientation Rule
 
@@ -52,9 +49,9 @@ Follow this precedence:
 
 1. Logan's direct instruction
 2. `CONSTITUTION.md`
-3. `!/WAKEUP.md` and `!/AGENTS.md`
+3. root `AGENTS.md` and `!/WAKEUP.md`
 4. `swarm.json`
-5. generated bootstrap surfaces
+5. generated discovery surfaces
 6. historical notes, abandoned branch artifacts, and exploratory files
 
 Immediate wakeup facts:

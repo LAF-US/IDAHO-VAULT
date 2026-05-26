@@ -27,13 +27,6 @@ jobs:
       - name: Install dependencies
         run: pip install pyyaml
 
-      - name: Stage changed files for validation
-        run: |
-          # validate_content.py inspects git diff --cached (staged files).
-          # Stage the files changed in this push so the validator sees them.
-          git diff --name-only HEAD^..HEAD --diff-filter=ACMR -- '*.md' \
-            | xargs -r git add --intent-to-add
-
       - name: Run content validation
         run: |
-          python3 .github/scripts/validate_content.py
+          python3 .github/scripts/validate_content.py --base HEAD^

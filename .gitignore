@@ -80,6 +80,13 @@ Google Passwords.csv
 # Agent memory-provider API key configs (contain live credentials)
 honcho.json
 
+# Local agent bridges and exported sessions are not live vault surfaces.
+.mcp.json
+session-export-*/
+gpg-agent.conf
+package copy.json
+package-lock copy.json
+
 # ---------------------------------------------------------------------------
 # Python, JavaScript, and package runtime infrastructure
 # ---------------------------------------------------------------------------

@@ -80,7 +80,7 @@ CONTEXT executes:
 |---|---|
 | `CONTEXT.md` (this file) | Protocol definition — what CONTEXT is and does |
 | `CONTEXT-v1.0-2026-04-27.md` | Full approved protocol — complete specification |
-| `scripts/vault-pheromones.py` | Stigmergy field implementation |
+| `SBP.md` | Stock SBP reference; former Vault execution layer is quarantined |
 | `CONSTITUTION.md` | Authoritative governance — defines CONTEXT in Section III |
 
 ---
@@ -93,9 +93,8 @@ CONTEXT executes:
 
 Establish connection to the stigmergy field:
 
-- Initialize `vault-pheromones.py` interface
-- Confirm field availability
-- Retrieve current field state
+- Read task-relevant durable records and approved connector state only
+- Do not reactivate the quarantined Vault-specific SBP execution layer without review
 
 ### Step 2: Context Retrieval
 
@@ -170,7 +169,7 @@ Pending:
 ## See Also
 
 - `CONTEXT-v1.0-2026-04-27.md` — complete approved protocol
-- `scripts/vault-pheromones.py` — stigmergy implementation
+- `SBP.md` — stock protocol reference; no live Vault-specific execution layer
 - `AWAKEN.md` — session activation protocol
 - `ARISE.md` — individual emergence protocol
 - `RISE.md` — completion protocol

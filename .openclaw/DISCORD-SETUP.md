@@ -1,5 +1,10 @@
 # Discord Channel Setup for OpenClaw
 
+> [!IMPORTANT]
+> Hermes and OpenClaw channel assignments must be confirmed against their live
+> runtimes before enabling or disabling either Discord channel. Do not persist
+> resolved Discord credentials in user- or machine-scoped environment variables.
+
 ## Configuration Added
 
 Discord has been added to `openclaw.json`:
@@ -29,13 +34,18 @@ Discord has been added to `openclaw.json`:
 
 ### 3. Configure OpenClaw
 
-Edit `.openclaw\openclaw.json`:
+Use a 1Password SecretRef in the local OpenClaw configuration:
 
 ```json
 "discord": {
   "enabled": true,
-  "token": "YOUR_BOT_TOKEN_HERE",
-  "applicationId": "YOUR_APPLICATION_ID_HERE"
+  "token": {
+    "$secretRef": {
+      "provider": "1password",
+      "id": "OpenClaw Discord Bot",
+      "field": "token"
+    }
+  }
 }
 ```
 
@@ -64,7 +74,12 @@ The bot will respond to DMs and mentions in servers where it's invited.
 ## Security Notes
 
 - Store your Discord token securely
-- Consider using 1Password CLI to inject the token:
-  ```bash
-  op item get "Discord Bot Token" --fields token
+- Use the SecretRef configuration above rather than placing a literal token in
+  a tracked or user-persistent configuration surface.
+- The tracked reference config currently uses an environment reference to avoid
+  changing a possibly live channel before audit. For a process-scoped session:
+  ```powershell
+  $env:DISCORD_OPENCLAW_TOKEN = op item get "Discord OpenClaw" --field credential --reveal
+  openclaw gateway
+  Remove-Item Env:DISCORD_OPENCLAW_TOKEN -ErrorAction SilentlyContinue
   ```

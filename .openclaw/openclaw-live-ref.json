@@ -33,7 +33,7 @@
   "gateway": {
     "auth": {
       "mode": "token",
-      "token": "884da6483cfc01fb5bc7ac939cbd105e73ea78ce9866949e"
+      "token": "env:OPENCLAW_GATEWAY_TOKEN"
     },
     "bind": "loopback",
     "mode": "local",
