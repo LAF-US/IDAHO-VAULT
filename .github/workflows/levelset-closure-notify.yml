@@ -3,7 +3,7 @@ name: Levelset Closure Notification
 on:
   push:
     paths:
-      - '\!/LEVELSET-*.md'
+      - '[!]/LEVELSET-*.md'
 
 jobs:
   notify:
@@ -26,9 +26,9 @@ jobs:
           before="${{ github.event.before }}"
           after="${{ github.sha }}"
           if [[ "$before" == "0000000000000000000000000000000000000000" ]]; then
-            git ls-tree -r --name-only "$after" -- '!/LEVELSET-*.md' > /tmp/changed_levelsets.txt
+            git ls-tree -r --name-only "$after" | grep '^!/LEVELSET-' > /tmp/changed_levelsets.txt || true
           else
-            git diff --name-only "$before" "$after" -- '!/LEVELSET-*.md' > /tmp/changed_levelsets.txt
+            git diff --name-only "$before" "$after" | grep '^!/LEVELSET-' > /tmp/changed_levelsets.txt || true
           fi
           echo "count=$(wc -l < /tmp/changed_levelsets.txt | tr -d ' ')" >> $GITHUB_OUTPUT
 
