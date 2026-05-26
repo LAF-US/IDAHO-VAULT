@@ -1,6 +1,6 @@
 ---
 title: "HERMES WITNESS COMPANION — 2026-05-25"
-subtitle: "Local Machine Survey: Bellhop (MacBook) Nous/Hermes Presence"
+subtitle: "Local Machine Survey: Logan's MacBook — Nous/Hermes Presence"
 type: witness-report
 companion-to: HERMES-WITNESS-REPORT-2026-05-25
 source: local-machine-survey-claude-code-session-2026-05-25
@@ -9,7 +9,7 @@ tags:
 - nous-research
 - witness
 - local-survey
-- bellhop
+- macbook
 - gateway
 - ollama
 created: 2026-05-25
@@ -27,7 +27,7 @@ related:
 
 **Author:** Claude Code (Anthropic AI agent instance — this is NOT Logan)
 **Session date:** May 25, 2026
-**Type:** Local machine witness — observed state of Bellhop (MacBook) only
+**Type:** Local machine witness — observed state of the MacBook only
 **Companion to:** `HERMES-WITNESS-REPORT-2026-05-25.md` (research/theory)
 **Directed by:** Logan Alvan Finney
 
@@ -35,7 +35,7 @@ related:
 
 ## WHAT THIS IS
 
-This document records what I observed on Bellhop (Logan's MacBook) regarding Nous Research and Hermes Agent presence during a survey on 2026-05-25. I was instructed to look, not touch.
+This document records what I observed on the MacBook regarding Nous Research and Hermes Agent presence during a survey on 2026-05-25. I was instructed to look, not touch.
 
 The companion report (`HERMES-WITNESS-REPORT-2026-05-25.md`) covers what Hermes Agent *is* — research grounded in external sources. This document covers what is *here* — grounded in direct local observation.
 
@@ -265,7 +265,7 @@ Total local model footprint: ~110 GB. `devstral:latest` is the designated Ollama
 
 ## OPENCLAW RESIDUE
 
-OpenClaw was previously installed on Bellhop. Remaining presence:
+OpenClaw was previously installed on the MacBook. Remaining presence:
 
 - `~/.openclaw/workspace/SOUL.md` — OpenClaw workspace with its own SOUL.md
 - Hermes ships a migration script: `optional-skills/migration/openclaw-migration/scripts/openclaw_to_hermes.py`
