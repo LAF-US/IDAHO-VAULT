@@ -16,6 +16,8 @@ created: 2026-05-25
 author: "Claude (Claude Code — session 2026-05-25, not Logan)"
 authority: LOGAN
 related:
+  - OPENCLAW-WITNESS-COMPANION-2026-05-25
+  - OPENCLAW-WITNESS-DELTA-2026-05-25
   - HERMES-WITNESS-REPORT-2026-05-25
   - HERMES-WITNESS-COMPANION-2026-05-25
   - HERMES-WITNESS-DELTA-2026-05-25
@@ -321,15 +323,24 @@ The cleaner conjunction model: assign different platforms or channels to each ag
 
 ## ON BELLHOP
 
-OpenClaw is installed and active on Bellhop (Logan's MacBook). Observed state:
+OpenClaw is installed and active on Bellhop (Logan's MacBook). A full local survey was conducted this session — see `OPENCLAW-WITNESS-COMPANION-2026-05-25.md` for the complete picture. Key points:
 
-- `~/.openclaw/workspace/SOUL.md` — present, has content (written prior to this session; contents not examined)
-- Installation path: `~/.openclaw/` (full structure not surveyed this session)
-- Running process state: not checked during this survey
-- Platform connections: not checked during this survey
-- OpenClaw version: not determined this session
+- **Version**: v2026.5.16-beta.3 (beta — stable v2026.5.22 available)
+- **Running**: Yes — PID 868, gateway on port 18789 (loopback only, `mode: local`)
+- **LaunchAgent**: `ai.openclaw.gateway.plist` — starts at login
+- **Platform channels**: None — gateway.mode=local; no Telegram, Discord, WhatsApp
+- **Paired node**: Windows-ZBFURY (Mogget) — system/browser/file capabilities; currently offline
+- **SOUL.md**: Present — generic OpenClaw default template, not Logan-specific
+- **IDENTITY.md / USER.md**: Both empty templates — agent never completed bootstrap
+- **BOOTSTRAP.md**: Still present — onboarding was never completed
+- **MEMORY.md**: Absent — no long-term memory
+- **Memory DB**: 0 files, 0 chunks — semantic engine never fed
+- **Sessions**: 18 prior sessions (most recent: 2026-05-19)
+- **Skills**: 27 built-in active, 1 ClawHub (browser-automation), 1 workspace (sam-tts)
+- **MCP**: No servers configured; `openclaw mcp serve` not wired
+- **Secrets**: OpenRouter API key via 1Password CLI or vault script (more sophisticated than Hermes's .env)
 
-A full local survey of OpenClaw on Bellhop — analogous to the `HERMES-WITNESS-COMPANION-2026-05-25.md` — has not been conducted. This research document covers what OpenClaw is, not what is currently running on Bellhop.
+See also `OPENCLAW-WITNESS-DELTA-2026-05-25.md` for gap analysis.
 
 ---
 
@@ -350,7 +361,12 @@ A full local survey of OpenClaw on Bellhop — analogous to the `HERMES-WITNESS-
 
 *Witnessed and recorded by Claude Code — Anthropic AI agent instance, session 2026-05-25*
 *This document does not represent Logan's views or directives. It is a research artifact.*
-*Companion to:*
+*Part of a four-document series (OpenClaw):*
+- *`OPENCLAW-WITNESS-REPORT-2026-05-25.md` — what OpenClaw is (this document)*
+- *`OPENCLAW-WITNESS-COMPANION-2026-05-25.md` — what is on Bellhop*
+- *`OPENCLAW-WITNESS-DELTA-2026-05-25.md` — the gap between them*
+
+*Parallel series (Hermes):*
 - *`HERMES-WITNESS-REPORT-2026-05-25.md` — what Hermes Agent is*
 - *`HERMES-WITNESS-COMPANION-2026-05-25.md` — what is on Bellhop (Hermes)*
 - *`HERMES-WITNESS-DELTA-2026-05-25.md` — the gap between Hermes ideal and actual*
