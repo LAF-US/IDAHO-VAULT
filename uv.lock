@@ -618,7 +618,7 @@ source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "httpx" },
     { name = "pydantic" },
-    { name = "typing-extensions" },
+    { name = "typing-extensions", marker = "python_full_version < '3.12'" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/eb/15/31d391c007047cd40cd05943312d807b16f7b977c168fce1f3efdc8dff27/honcho_ai-2.1.2.tar.gz", hash = "sha256:f2c01463931e1a16cc4396790e1b0387d596fb5eb8d6dc830d6ab742f8701224", size = 48699, upload-time = "2026-05-23T21:55:29.205Z" }
 wheels = [
