@@ -54,6 +54,11 @@ date modified: Sunday, April 26th 2026, 12:30:00 pm
 
 [[CHAINFIRE]] & [[CHAINLINK]]
 
+### Proposed 2026-05-26: Version Transition Provenance
+- **Finding**: Version edits made to satisfy immediate work have crossed compatibility boundaries without a durable transition record. Verified examples are PR #359 (partial OpenTelemetry lift), PR #363 (`click` versus CrewAI), and PR #364 (`mcp` versus CrewAI).
+- **Proposed Rule**: An agent-authored change or revert to a governed runtime, dependency source, workflow pin, or versioned registry field must add a compatibility/rationale entry to `VERSION-TRANSITIONS.md` in the same PR. An authenticated Dependabot PR changing only `requirements.txt` remains eligible only when required dependency resolution succeeds.
+- **Status**: Staged for Logan's explicit approval before promotion into binding doctrine.
+
 ### 2026-05-23: Corrections Classification Doctrine
 - **Decision**: Adopt `CORRECTIONS.md` as active Vaulted Syntax operational doctrine, distinct from any case-specific heresy review packet.
 - **Rule**: Keep three correction classifications distinct: **Typographical Errors / Typos**, **Scrivener's Corrections**, and **Codifier's Corrections**. A particular typo does not eliminate the Scrivener classification; a codifier surface does not silently create doctrine.

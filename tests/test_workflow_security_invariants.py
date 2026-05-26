@@ -63,6 +63,7 @@ class WorkflowSecurityInvariantsTest(unittest.TestCase):
             "CONSTITUTION.md",
             "DECISIONS.md",
             "VAULT-CONVENTIONS.md",
+            "VERSION-TRANSITIONS.md",
             "swarm.json",
             "!/*",
         ):
@@ -76,6 +77,7 @@ class WorkflowSecurityInvariantsTest(unittest.TestCase):
             "check-paths",
             "check-dotfolder-anchors",
             "submit-pypi",
+            "check-version-transitions",
         ):
             self.assertIn(context, gate_step["run"])
         enable_step = steps["Enable verified auto-merge"]
@@ -96,6 +98,18 @@ class WorkflowSecurityInvariantsTest(unittest.TestCase):
         self.assertIn("check-large-files", large["jobs"])
         self.assertNotIn("check", secret["jobs"])
         self.assertNotIn("check", large["jobs"])
+
+    def test_version_transition_changes_are_checked_before_merge(self) -> None:
+        workflow = yaml.safe_load(
+            (WORKFLOWS / "version-transition-policy.yml").read_text(encoding="utf-8")
+        )
+        events = workflow.get("on", workflow.get(True))
+        self.assertIn("pull_request", events)
+        self.assertEqual(workflow["permissions"], {"contents": "read"})
+        self.assertIn("check-version-transitions", workflow["jobs"])
+        run = workflow["jobs"]["check-version-transitions"]["steps"][-1]["run"]
+        self.assertIn("check_version_transitions.py", run)
+        self.assertIn("--actor", run)
 
     def test_levelset_content_cannot_trigger_external_closure_message(self) -> None:
         self.assertFalse((WORKFLOWS / "levelset-closure-notify.yml").exists())

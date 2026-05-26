@@ -69,6 +69,7 @@ ROOT_GOVERNED_FILES = {
     "VAULT-CONVENTIONS.md",
     "VAULT-METADATA-STANDARD.md",
     "VAULT-TEMPLATES.md",
+    "VERSION-TRANSITIONS.md",
 }
 REQUIRED_GOVERNED_FIELDS = ("title", "updated", "status", "authority")
 PROTECTED_LIVE_FILES = {
@@ -76,6 +77,7 @@ PROTECTED_LIVE_FILES = {
     "CONSTITUTION.md",
     "DECISIONS.md",
     "VAULT-CONVENTIONS.md",
+    "VERSION-TRANSITIONS.md",
     "!/AGENTS.md",
     "!/WAKEUP.md",
     "!/README.md",

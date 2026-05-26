@@ -1,0 +1,39 @@
+name: Version Transition Policy
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  check-version-transitions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout proposed change
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+        with:
+          fetch-depth: 0
+          lfs: false
+
+      - name: Checkout trusted validator code
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+        with:
+          ref: ${{ github.event.pull_request.base.sha }}
+          path: trusted-main
+
+      - name: Set up Python
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: "3.13"
+
+      - name: Require recorded version transitions
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+          PR_AUTHOR: ${{ github.event.pull_request.user.login }}
+        run: |
+          python trusted-main/.github/scripts/check_version_transitions.py \
+            --base "$BASE_SHA" \
+            --head "$HEAD_SHA" \
+            --actor "$PR_AUTHOR"

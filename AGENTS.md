@@ -51,6 +51,19 @@ Before proposing builds, new packages, or invention: discover and read existing 
 
 When code throws errors, the error means something needs fixed. Do not disable security checks, linters, or validators to silence errors. Fix the underlying issue that is causing the fire rather than lazily turn off the smoke detector.
 
+## Version Transitions
+
+Version changes are coupled architectural changes, not task-local repairs.
+Before changing or reverting a runtime, dependency, workflow action pin, or
+versioned registry field, read `VERSION-TRANSITIONS.md` and add a same-PR
+transition record naming the requirement, affected compatibility boundary, and
+verification result. Do not alter one member of a coupled dependency family
+merely to make the immediate task pass.
+
+The narrow exception is an authenticated Dependabot pull request changing only
+`requirements.txt`: its PR metadata and required dependency-resolution check
+provide the record, and a failed compatibility check must remain blocking.
+
 When live surfaces disagree, follow this order:
 
 1. Logan's direct instruction
