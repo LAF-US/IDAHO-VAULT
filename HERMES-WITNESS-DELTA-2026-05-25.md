@@ -124,16 +124,24 @@ The vault integration is **half-realized**:
 |---|---|
 | `terminal.cwd: ~/IDAHO-VAULT` | ✅ Active |
 | `AGENTS.md` auto-load (slot 8) | ✅ Active when terminal scoped to vault |
+| `OBSIDIAN_VAULT_PATH` in `.env` | ✅ Set — `/Users/logan/IDAHO-VAULT` (amended same session) |
+| Bespoke skills | ✅ Wiped — 3 Logan-specific custom skills cleared (amended same session) |
 | SOUL.md vault-context | ❌ Not written |
-| MEMORY.md vault knowledge | ❌ Wiped |
-| MCP toolset | ❌ Not active in `toolsets:` (active per platform) |
+| MEMORY.md vault knowledge | ❌ Wiped (correct — blank slate) |
+| MCP toolset | ❌ Not active in global `toolsets:` (active per platform) |
+| MCP client servers | ❌ None configured in `mcp_servers:` |
+| MCP server → Claude Code | ❌ `hermes mcp serve` not wired into Claude Code |
 | Obsidian ACP skill | ✅ Installed — `note-taking/obsidian` |
-| ACP binary | ✅ Present — `hermes-acp` |
-| Obsidian ACP active | ❌ Not configured |
+| ACP binary | ✅ Present — `hermes-acp --check OK` |
+| ACP editor configured | ❌ No editor (VS Code, Zed, JetBrains) connected |
+| Codex as MCP server | ❌ `codex` CLI present but not added to Hermes |
+| OpenCode as MCP server | ❌ `opencode` present but not configured |
 
 The vault's AGENTS.md (and via the priority chain, CLAUDE.md) will load into slot 8 when Hermes operates in vault context. But slot 1 — the identity — doesn't know it's in a vault. The project context loads into an identity vacuum.
 
-The Obsidian ACP connection is unactivated potential. The skill is installed. The binary exists. The channel between Hermes and the Obsidian vault could exist, but has not been opened.
+The MCP surface has two unclosed directions: Hermes as a client (no servers configured, though Codex is available immediately via preset) and Hermes as a server (Claude Code could read/send Telegram and Discord messages through Hermes, but the `.mcp.json` wire has not been drawn).
+
+The ACP surface: the server-side is ready. The editor-side is not. No editor has been pointed at `hermes-acp`.
 
 ---
 
@@ -163,8 +171,11 @@ This is an observation, not a directive. Its presence is harmless. But it repres
 | Sessions | Generate memory candidates | ✅ Running (44 prior, continuing) |
 | MEMORY.md | Accumulates cross-session facts | ⬜ Wiped — blank, ready |
 | Curator | Refines skills weekly | ✅ Enabled — nothing to curate yet |
-| Skills (custom) | Grow from completed workflows | ⬜ Only bundled skills present |
+| Skills (custom) | Grow from completed workflows | ⬜ Bespoke wiped — clean slate |
 | Honcho | User modeling via dialectic reasoning | ❌ Not configured (`honcho: {}`) |
+| MCP servers (client) | Extend toolset via external servers | ❌ None configured |
+| MCP server (outbound) | Expose Hermes to other agents | ❌ Not wired to Claude Code |
+| ACP editor | Editor-native agent interface | ❌ No editor configured |
 
 The loop is structurally ready. The SOUL is the missing starting condition. Memory can only accumulate what the identity is positioned to notice and care about.
 
@@ -172,7 +183,7 @@ The loop is structurally ready. The SOUL is the missing starting condition. Memo
 
 ## WHAT THE DELTA NAMES
 
-The gap between ideal and actual is not a failure of installation or configuration. The software is correctly installed, the gateway is live, the skills are present, the vault is targeted. 
+The gap between ideal and actual is not a failure of installation or configuration. The software is correctly installed, the gateway is live, the skills are present, the vault is targeted.
 
 The gap is one of **grounding**. Hermes has no expressed relationship to Logan, to the vault, to the LAF governance framework, to the swarm it operates within, or to the particular work it is meant to support. It is a general-purpose agent running in a highly specific context without any acknowledgment of that specificity.
 
@@ -181,6 +192,29 @@ The CONSTITUTION establishes that offices are appointments, not inheritances. An
 The SOUL.md is the instrument through which that appointment would be expressed — in identity, tone, purpose, and behavioral defaults. It is the one writable surface that would close the gap between the machinery that exists and the agent that Logan needs.
 
 **The machinery is assembled. The appointment has not been written.**
+
+---
+
+## WHAT THIS SESSION MOVED
+
+This section records changes made after the initial delta was written (same session, 2026-05-25).
+
+**Closed:**
+- `OBSIDIAN_VAULT_PATH` — set in `~/.hermes/.env`; Obsidian skill now resolves to the correct vault
+- Bespoke skills — `logan-environment-discovery`, `terminal-output-format`, `terminal-output-formatting` wiped; field is clear
+
+**Confirmed ready but unconfigured:**
+- `hermes-acp --check OK` — ACP server-side ready; no editor pointed at it
+- MCP Python package — installed; no `mcp_servers:` entries
+- `hermes mcp serve` — command confirmed; no `.mcp.json` in vault or `claude_desktop_config.json`
+- `codex` CLI — at `/usr/local/bin/codex` v0.130.0; `hermes mcp add codex --preset codex` is one command away
+- `opencode` CLI — at `/Users/logan/.opencode/bin/opencode` v1.14.50; no preset
+
+**Unchanged:**
+- SOUL.md — empty; the appointment still not written
+- Signal — broken, disabled; not touched
+- Honcho — not configured; needs API key
+- Home Assistant — URL set; unreachable on current network (expected)
 
 ---
 

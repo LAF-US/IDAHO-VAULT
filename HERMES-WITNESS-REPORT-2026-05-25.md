@@ -173,15 +173,54 @@ Hermes ships with 20+ toolset categories. Only `hermes-cli` is currently active 
 
 ---
 
+## MCP — MODEL CONTEXT PROTOCOL (TWO DIRECTIONS)
+
+MCP is not a single surface in Hermes — it operates in two distinct directions simultaneously.
+
+### Direction 1: Hermes as MCP client
+
+Hermes connects to external MCP servers and registers their tools as first-class tools available during any conversation. Configuration lives under `mcp_servers:` in `~/.hermes/config.yaml`. Transports supported: stdio (local subprocess) and HTTP (including OAuth 2.1 with PKCE via `auth: oauth`). Tools are prefixed `mcp_<server>_<tool>` and injected into all platform toolsets automatically on startup.
+
+The `hermes mcp` CLI manages this surface: `add`, `remove`, `list`, `test`, `configure`, `login`. A built-in preset exists for the Codex CLI: `hermes mcp add codex --preset codex`. OAuth-authenticated hosted MCP services (Linear, Sentry, Stripe, Atlassian, Figma, and others) work natively — tokens cache to `~/.hermes/mcp-tokens/<server>.json`.
+
+Per-server filtering is available: `tools.include` (allowlist), `tools.exclude` (blocklist), `tools.resources: false`, `tools.prompts: false`. Dynamic tool discovery is supported — servers can push `notifications/tools/list_changed` and Hermes refreshes without restart. Reload in-session with `/reload-mcp`.
+
+### Direction 2: Hermes as MCP server
+
+`hermes mcp serve` runs Hermes as a stdio MCP server that other MCP clients — Claude Code, Cursor, Codex, or any MCP host — can consume. It exposes 10 messaging tools:
+
+| Tool | Function |
+|---|---|
+| `conversations_list` | List active sessions across all platforms |
+| `conversation_get` | Get one session's metadata |
+| `messages_read` | Read recent message history |
+| `attachments_fetch` | Extract non-text attachments from a message |
+| `events_poll` | Poll for new events since cursor |
+| `events_wait` | Long-poll until next event (near-realtime) |
+| `messages_send` | Send through any connected platform |
+| `channels_list` | List all available messaging targets |
+| `permissions_list_open` | List pending approval requests |
+| `permissions_respond` | Allow or deny a pending approval |
+
+The event bridge polls the SQLite session database (~200ms intervals). Read operations work without the gateway running; `messages_send` requires active platform connections. Claude Code connects to this surface by adding a `.mcp.json` to the project root or an `mcpServers` entry in `claude_desktop_config.json`.
+
+---
+
 ## ACP — AGENT CLIENT PROTOCOL
 
-Open standard by Zed. Analogous to what LSP did for language servers — standardizes communication between code editors and AI agents over stdio/NDJSON. One ACP client can talk to any ACP-compatible agent.
+Open standard by Zed. Analogous to what LSP did for language servers — standardizes AI agent communication over stdio/JSON-RPC. Hermes runs as an ACP server; editors run as ACP clients.
 
-Hermes runs as an ACP server. Compatible clients include:
-- Zed, JetBrains, Neovim, Emacs
-- **Obsidian**
-- marimo
-- Any future ACP client
+**Compatible editors:**
+
+| Editor | Setup |
+|---|---|
+| **VS Code** | "ACP Client" extension → select Hermes Agent, or add to `acp.agents` in settings |
+| **Zed** | v0.221.x+: Agent Panel → Add Agent → ACP Registry → search "Hermes Agent" (requires `uv`) |
+| **JetBrains** | ACP-compatible plugin → point at `acp_registry/` |
+
+In ACP mode, Hermes uses the `hermes-acp` toolset: file, terminal, web, memory, todo, skills, execute_code, delegate_task, vision. Editor-scoped: session cwd binds to the editor's open workspace, not the server process cwd. Approvals surface inline in the editor as permission prompts with allow-once / allow-session / allow-always / deny options.
+
+The official ACP Registry manifest lives at `acp_registry/agent.json`. Zed launches Hermes via `uvx --from 'hermes-agent[acp]==<version>' hermes-acp`. ACP sessions persist to `~/.hermes/state.db` and appear in `session_search`.
 
 **v0.14.0 addition:** Local proxy mode — any OAuth-authed provider (Claude Pro, ChatGPT Pro, SuperGrok) becomes an OpenAI-compatible endpoint that Aider, Cline, Codex can hit without code changes.
 
@@ -223,7 +262,7 @@ OpenClaw's founder joined OpenAI in February 2026. OpenClaw is now an independen
 
 ---
 
-## VAULT INSTALLATION STATUS (as of 2026-05-25)
+## VAULT INSTALLATION STATUS (as of 2026-05-25, amended same session)
 
 This section documents the existing state — not a directive.
 
@@ -238,8 +277,15 @@ This section documents the existing state — not a directive.
 | Fallbacks | claude-sonnet-4, gpt-4o-mini, open-mistral-7b, devstral (local) |
 | `SOUL.md` | Empty |
 | Memory | Initialized, blank |
-| Active toolsets | hermes-cli only |
-| Configured gateways | Discord, WhatsApp, Signal (from `~/.hermes/` directory evidence) |
+| Active toolsets | hermes-cli only (platform toolsets full) |
+| Configured gateways | Telegram ✅, Discord ✅, WhatsApp ✅, Signal ❌ disabled |
+| `OBSIDIAN_VAULT_PATH` | Set to `/Users/logan/IDAHO-VAULT` in `~/.hermes/.env` |
+| Bespoke skills | Wiped: `logan-environment-discovery`, `terminal-output-format`, `terminal-output-formatting` |
+| MCP client servers | None configured |
+| MCP server (for Claude Code) | Not wired — no `.mcp.json` or `claude_desktop_config.json` entry |
+| ACP editor | Not configured in any editor |
+| Codex CLI | `/usr/local/bin/codex` v0.130.0 — available for `hermes mcp add codex --preset codex` |
+| OpenCode CLI | `/Users/logan/.opencode/bin/opencode` v1.14.50 — available, no preset |
 
 ---
 
@@ -255,6 +301,7 @@ This section documents the existing state — not a directive.
 - [agentskills.io](https://agentskills.io/home)
 - [Psyche Network](https://nousresearch.com/nous-psyche/)
 - [Nous Research — OAK Research deep dive](https://oakresearch.io/en/analyses/innovations/nous-research-psyche-open-source-decentralized-ai-revolution)
+- Local docs (read direct from `~/.hermes/hermes-agent/website/docs/`): `user-guide/features/mcp.md`, `user-guide/features/acp.md`, `developer-guide/acp-internals.md`, `reference/mcp-config-reference.md`, `guides/use-mcp-with-hermes.md`
 
 ---
 
