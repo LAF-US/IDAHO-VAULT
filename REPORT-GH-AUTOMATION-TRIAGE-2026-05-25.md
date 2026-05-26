@@ -42,13 +42,16 @@ The vault owns these files. Logan can edit them. They run on GitHub's servers, n
 
 **Action** — a pre-built reusable step borrowed from GitHub or the community (e.g. `actions/checkout`, `actions/setup-python`). Workflows call these internally. The vault does not write or maintain them — it pins them to specific version hashes so they cannot change unexpectedly.
 
+**Composite action** — a reusable building block written and maintained by the vault itself, living in `.github/actions/`. Composite actions are not workflows — they have no triggers and cannot run on their own. They are called by workflows as shared steps, eliminating repeated boilerplate. The vault currently has two: `setup-vault` (shared Python/git identity setup, used across scheduled workflows) and `idempotent-pr-create` (PR lookup utility, prevents duplicate PR creation on reruns).
+
 **GitHub Actions (the platform)** — the name for all of the above, running on GitHub's servers.
 
 ```
 GitHub Actions (platform)
 │
 ├── Workflows   (.github/workflows/*.yml)   ← the robots; vault-owned
-│   ├── call → Actions  (pre-built borrowed steps)
+│   ├── call → Actions  (pre-built borrowed steps, e.g. actions/checkout)
+│   ├── call → Composite actions  (.github/actions/*/)   ← shared building blocks; vault-owned
 │   └── call → Scripts  (.github/scripts/*.py/.sh)   ← the tools; vault-owned
 ```
 
@@ -287,28 +290,40 @@ These scripts are idempotent and useful but designed for local use. Wiring them 
 
 ## IX. POST-TRIAGE AUTOMATION STATE
 
-### Live Workflows (running correctly)
+### Live Workflows (pre-triage fleet, running correctly)
+
+All 28 pre-existing workflows currently in `.github/workflows/`, with verified triggers. The 4 workflows added or fixed in this session are listed separately below.
 
 | Workflow | Trigger | Purpose |
 |---|---|---|
-| `daily-rollover.yml` | Daily 4:00 AM MT | Rolls incomplete to-dos forward |
-| `idaho-leg-scraper.yml` | Daily 6:00 AM MT | Scrapes Idaho Legislature bill data |
-| `budget-tracker-csv-export.yml` | Daily 6:30 AM MT | Exports bill data to CSV |
-| `vault-ingest.yml` | Daily 12:00 UTC | Ingest pipeline (stub) |
-| `sort-audit.yml` | Monday 6:00 AM UTC | Vault structure audit |
-| `vault-propose-moves.yml` | Monday 7:00 AM UTC | Proposes file reorganization |
-| `wayback-audit.yml` | Monday 8:00 AM UTC | URL preservation audit |
-| `branch-cleanup.yml` | Monday 9:00 AM UTC + PR close | Prunes stale agent branches |
-| `auto-pr.yml` | Push to agent branches | Creates PR, classifies risk |
-| `auto-merge.yml` | PR labeled auto-merge | Enables squash auto-merge |
-| `review-response.yml` | PR review submitted | Pauses auto-merge on feedback |
-| `linear-pr-sync.yml` | PR opened/closed | Syncs PR state to Linear |
-| `wayback-preserve.yml` | Push to main touching source dirs | Submits URLs to Wayback Machine |
-| `janitor-sweep.yml` | daily-rollover fails | Posts alert to Linear + Slack |
-| `vault-content-guard.yml` | Push to main | Guards against dangerous content |
-| `check-portable-paths.yml` | Push | NETWEB path standard enforcement |
-| `pr-linear-sync.yml` | workflow_call only | Secondary Linear sync (dormant) |
-| `linear-webhook.yml` | repository_dispatch | Routes Linear webhooks (gateway not built) |
+| `1password-secret-template.yml` | workflow_dispatch | Reference template for 1Password secret injection; never auto-fires |
+| `agent-auto-pr.yml` | on: create + workflow_dispatch | Auto-creates PRs for claude/codex/gemini/copilot/perplexity/grok/serena branches |
+| `agent-review-gate.yml` | Schedule every 4h + workflow_dispatch | Reconciles open PR review state; promotes eligible low-risk PRs to merge/auto |
+| `auto-merge.yml` | pull_request_target: labeled | Enables squash auto-merge (job gates on merge/auto label) |
+| `branch-cleanup.yml` | PR closed to main + Schedule Mon 9am UTC + workflow_dispatch | Prunes stale agent branches |
+| `branch-garden-report.yml` | Schedule Mon 10am UTC + workflow_dispatch | Branch health report |
+| `check-dotfolder-anchors.yml` | Push to main + PR | Dotfolder anchor integrity check |
+| `check-portable-paths.yml` | PR + push to main (trusted-main) | NETWEB path portability enforcement |
+| `codeql.yml` | Push to main + PR + weekly schedule | CodeQL Advanced security scan |
+| `daily-rollover.yml` | Schedule 10am UTC (4am MT) daily | Rolls incomplete to-dos forward |
+| `dependabot-reaper.yml` | Schedule every 2h | Re-arms stuck low-risk Dependabot PRs (race-condition safety net) |
+| `dependabot-rhythm.yml` | pull_request_target: opened/reopened/ready | Auto-approves and merges qualifying Dependabot patch/minor PRs |
+| `janitor-sweep.yml` | workflow_run on daily-rollover failure | Posts Slack alert via webhook |
+| `laf-usb-manifest-policy.yml` | PR + push to main on manifest file paths | Validates LAF-USB object manifests |
+| `large-file-policy.yml` | PR + push to main + workflow_dispatch (trusted-main) | Per-push large file check |
+| `large-file-watchdog.yml` | Schedule Mon 11am UTC + workflow_dispatch | Weekly large file scan |
+| `metadata-survey.yml` | Schedule Mon 10am UTC + workflow_dispatch | Frontmatter health survey |
+| `opencode.yml` | issue_comment/PR review comment containing /oc | Dispatches OpenCode agent |
+| `review-feedback-loop.yml` | issue_comment, PR events | Agent claim verification, thread sweep, copilot apply |
+| `review-response.yml` | pull_request_review submitted | Pauses/resumes auto-merge on review |
+| `secret-pattern-full-scan.yml` | Schedule Mon 11:23am UTC + workflow_dispatch | Full-repo secret pattern scan |
+| `secret-pattern-policy.yml` | PR + push to main + workflow_dispatch (trusted-main) | Per-push secret pattern check |
+| `sort-audit.yml` | Schedule Mon 6am UTC + workflow_dispatch | Vault topology census (topology_census.py); creates PR |
+| `stale-bot-prs.yml` | Schedule daily 13:00 UTC + workflow_dispatch | Closes old Dependabot/bot PRs |
+| `sync-dependencies.yml` | Push to main on pyproject.toml + workflow_dispatch | Direct-main pip requirements sync (temp corridor) |
+| `validate-daily-notes.yml` | PR + push to main | Daily note placeholder check |
+| `wayback-audit.yml` | Schedule Mon 8am UTC + workflow_dispatch | URL preservation audit |
+| `wayback-preserve.yml` | Push to main touching SOURCES/GOVERNMENTS/TOPICS | Submits new URLs to Wayback Machine |
 
 ### Newly Wired (this session)
 
@@ -323,7 +338,7 @@ These scripts are idempotent and useful but designed for local use. Wiring them 
 
 | Issue | Notes |
 |---|---|
-| Node.js 20 deprecation | 27 workflows pin to Node 20-era action versions; GitHub deprecating June 2 |
+| Node.js 20 deprecation | ~30 workflows use `checkout@v4` / `setup-python@v5/v6` (Node.js 20 runtime); deprecation date not confirmed — do not act on this without verifying the GitHub announcement |
 | Secret Pattern Full Scan false positives | Fires every Monday; known noise |
 | `linear-webhook.yml` gateway | Workflow is ready; the Cloud Function relay was never built |
 | `vault-ingest.yml` is a stub | Fires daily, creates boilerplate ingest notes; not a real pipeline |
