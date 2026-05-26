@@ -77,6 +77,9 @@ Google Passwords.csv
 .ollama/id_ed25519
 .ollama/id_ed25519.pub
 
+# Agent memory-provider API key configs (contain live credentials)
+honcho.json
+
 # ---------------------------------------------------------------------------
 # Python, JavaScript, and package runtime infrastructure
 # ---------------------------------------------------------------------------
