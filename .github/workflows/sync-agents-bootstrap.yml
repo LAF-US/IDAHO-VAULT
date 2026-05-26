@@ -1,0 +1,27 @@
+name: Sync Agents Bootstrap
+
+on:
+  push:
+    paths:
+      - 'swarm.json'
+
+jobs:
+  check-bootstrap:
+    name: Verify agents bootstrap index is current
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout vault
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+
+      - name: Set up Python
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: '3.11'
+
+      - name: Check agents bootstrap is in sync
+        run: |
+          python3 .github/scripts/generate_agents_bootstrap.py --check
