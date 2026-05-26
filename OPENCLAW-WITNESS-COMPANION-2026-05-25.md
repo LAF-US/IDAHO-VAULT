@@ -97,9 +97,9 @@ The gateway is a **local hub**, not a platform gateway in the Hermes sense.
 | Node | Device | Role | First paired | Last connected |
 |---|---|---|---|---|
 | the MacBook (operator node) | macOS (darwin), operator | probe / admin | 2026-05-13 | (local) |
-| **Windows-ZBFURY** | Windows (Mogget) | node-host | 2026-05-17 | **2026-05-18 20:40** |
+| **Windows-ZBFURY** | Windows | node-host | 2026-05-17 | **2026-05-18 20:40** |
 
-**Windows-ZBFURY** is Mogget — Logan's Windows machine. It is a paired node with capabilities: `system`, `browser`, `file`, and commands `system.run.prepare`, `system.run`, `system.which`, `browser.proxy`. It was last connected May 18 — currently offline.
+**ZBFURY** is the Windows laptop. It is a paired node with capabilities: `system`, `browser`, `file`, and commands `system.run.prepare`, `system.run`, `system.which`, `browser.proxy`. It was last connected May 18 — currently offline.
 
 **No pending nodes.** `pending.json` is empty `{}`.
 
@@ -294,7 +294,7 @@ This is a cached MCP bundle — the runtime has MCP capability but no servers ha
 
 2. **Gateway is local-only.** `mode: local` means no external platform channels. OpenClaw has no Telegram, Discord, or WhatsApp connections on the MacBook. It operates as a local hub.
 
-3. **One node paired: Mogget (Windows-ZBFURY).** The Windows machine is paired and configured as a compute node with system/browser/file capabilities. Currently offline (last connected May 18).
+3. **One node paired: the Windows laptop (ZBFURY).** The Windows machine is paired and configured as a compute node with system/browser/file capabilities. Currently offline (last connected May 18).
 
 4. **Bootstrap was never completed.** BOOTSTRAP.md is still present. IDENTITY.md and USER.md are both empty templates. The agent does not know its own name or Logan's name.
 
