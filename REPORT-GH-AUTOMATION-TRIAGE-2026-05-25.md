@@ -346,6 +346,65 @@ Every script that remains either runs via a working CI trigger or is an intentio
 
 ---
 
+---
+
+## XI. GATES AND CHECKS — FINDINGS (addendum, same session)
+
+### How the vault got here
+
+Agents kept bolting workflows and required checks on without reading what already existed. The required-check queue grew contradictory. PRs couldn't pass. Nothing could merge. Logan had to disable branch protection to escape the softlock.
+
+Evidence in the codebase: `sync-dependencies.yml` contains this comment, still live:
+
+> *"Temporary direct-main emergency corridor: retained only while the dependency lane is being repaired after PR automation softlock."*
+
+The corridor was cut as an emergency exit. The exit was never closed because the root cause — agents building without reading the existing system — was never addressed at that layer. It was addressed in this session at the script layer (see Sections V–VII above). The workflow layer is next.
+
+### Confirmed state (via GraphQL)
+
+```json
+{"data":{"repository":{"branchProtectionRules":{"nodes":[]}}}}
+```
+
+Zero branch protection rules. Repository settings confirm `allow_auto_merge: true` — auto-merge is enabled, but with no required checks and no required reviews configured, auto-merge fires immediately once armed. There is nothing for it to wait for.
+
+**Consequence:** CODEOWNERS is decorative. The vault's most sensitive surfaces — `CONSTITUTION.md`, `CLAUDE.md`, `.github/workflows/`, `!/` — are listed as requiring Logan's review. GitHub will not enforce that requirement.
+
+### Full findings
+
+| Finding | Severity |
+|---|---|
+| No branch protection rules — all gates are advisory | 🔴 Critical |
+| CODEOWNERS has no enforcement power (consequence of above) | 🔴 Critical |
+| `agent/*` branches not covered by `agent-auto-pr.yml` trigger | 🟡 Gap |
+| `sync-dependencies.yml` direct-main write still in place | 🟡 Temp debt |
+| `secret-pattern-full-scan.yml` uses non-standard `actions/checkout` hash | 🟢 Inconsistency |
+| Mixed `setup-python` v5/v6 across workflows (partial Dependabot updates) | 🟢 Inconsistency |
+
+### What is working correctly
+
+- **classify_paths.py** — fail-safe default (unknown → high-risk); label taxonomy consistent
+- **Dependabot pipeline** — rhythm + reaper + `dependabot/low-risk-auto` proof label is well-designed; npm and maven correctly removed
+- **review_feedback_loop.py** — handles `@copilot apply changes`, thread sweep, agent claim verification (IF 7)
+- **KNOWN_NOISE_CHECKS** — `submit-pypi` correctly excluded from check rollup
+- **opencode.yml** — properly scoped, pinned hash, correct secret reference
+- **validate-daily-notes.yml** — complementary to validate_content.py, not redundant
+- **30-minute grace period** — time-based gate enforced by agent-review-gate.yml; works correctly as a social control even without branch protection
+
+### Remediation sequence (when ready)
+
+**Do not simply re-enable branch protection.** That is the re-softlock path. The required sequence:
+
+1. Identify which checks pass reliably on clean pushes — no flapping, no false failures
+2. Designate a minimal required set (candidate: secret-pattern-policy, large-file-policy, check-portable-paths)
+3. Re-enable protection with only those verified checks as required + 1 approving review
+4. Remove the direct-main corridor from `sync-dependencies.yml`
+5. Decide `agent/*` prefix policy — add to auto-PR pattern or document as intentionally manual
+
+This is a Logan decision, not an agent decision. No changes made in this session.
+
+---
+
 *Report filed: 2026-05-25 by Claude Code (Windows session), on Logan's direction.*
 *Branch: `agent/triage-scripts-2026-05-25` — awaiting push authorization.*
 
