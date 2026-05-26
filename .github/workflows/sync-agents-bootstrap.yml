@@ -1,4 +1,4 @@
-name: Sync Agents Bootstrap
+name: Sync Agent Discovery Index
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
 
 jobs:
   check-bootstrap:
-    name: Verify agents bootstrap index is current
+    name: Verify agent discovery index is current
     runs-on: ubuntu-latest
 
     permissions:
@@ -22,6 +22,6 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Check agents bootstrap is in sync
+      - name: Check agent discovery index is in sync
         run: |
           python3 .github/scripts/generate_agents_bootstrap.py --check

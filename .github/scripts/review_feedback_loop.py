@@ -11,10 +11,10 @@ Modes:
     and pause auto-merge only when a non-author changes-requested review creates
     a real merge block.
   - promote-ready: compatibility alias for scheduled reconciliation.
-  - reconcile-open-prs: rescan open PR truth, repair drifted labels, promote
-    eligible low-risk PRs, and re-arm GitHub auto-merge when needed.
-  - enable-auto-merge: perform one final derived-state safety check before
-    arming GitHub auto-merge for a PR labeled `auto-merge`.
+  - reconcile-open-prs: rescan open PR truth and repair drifted review labels.
+    Agent-authored PR auto-merge is retired; Dependabot has its own verified lane.
+  - enable-auto-merge: legacy compatibility path that removes stale agent
+    auto-merge state rather than arming it.
   - verify-claim: compare an agent completion-claim comment against the PR's
     current `mergeable`, `mergeStateStatus`, draft state, and check rollup.
     Post a divergence comment if the claim disagrees with the institutional
@@ -34,6 +34,7 @@ from datetime import datetime, timezone
 
 APPLY_RE = re.compile(r"@copilot\b[\s\S]*?\bapply changes\b", re.IGNORECASE)
 DEFAULT_GRACE_MINUTES = 30
+AGENT_AUTO_MERGE_ENABLED = False
 
 # IF 7 (brass-mouth reliability is per-utterance, not per-agent) per
 # !/ARBORSCAPE-PR-EXPANSION-2026-05-22.md. The verify-claim subcommand watches
@@ -78,7 +79,7 @@ AUTO_MERGE_AUTHZ_FRAGMENTS = (
 LABEL_SPECS: dict[str, tuple[str, str]] = {
     DEFAULT_AUTO_MERGE_LABEL: (
         "0E8A16",
-        "Low-risk PR is currently eligible for auto-merge.",
+        "Legacy agent auto-merge marker; removed during reconciliation.",
     ),
     DEFAULT_REVIEW_REQUIRED_LABEL: (
         "D93F0B",
@@ -94,7 +95,7 @@ LABEL_SPECS: dict[str, tuple[str, str]] = {
     ),
     DEFAULT_REVIEW_PENDING_LABEL: (
         "BFD4F2",
-        "Low-risk PR is not yet eligible for auto-merge promotion.",
+        "Low-risk PR awaits review; automatic agent merge is disabled.",
     ),
     RISK_LOW_LABEL: (
         "C2E0C6",
@@ -293,10 +294,10 @@ def _parse_body_marker_value(body: str, marker: str) -> str | None:
 
 def _risk_tier_for_pr(body: str, labels: set[str]) -> str:
     # Label is canonical: survives body rewrites by human or agent editors.
-    if RISK_LOW_LABEL in labels:
-        return "low"
     if RISK_HIGH_LABEL in labels:
         return "high"
+    if RISK_LOW_LABEL in labels:
+        return "low"
     # Fallback for older PRs or states where risk is not yet labeled.
     if DEFAULT_REVIEW_PENDING_LABEL in labels:
         return "low"
@@ -348,9 +349,12 @@ def evaluate_review_state(
     risk_tier = _risk_tier_for_pr(pr.get("body") or "", label_names)
     low_risk = risk_tier == "low"
     merge_blocked = draft or blocking_review or current_unresolved > 0
-    eligible_for_auto_merge = low_risk and grace_elapsed and not merge_blocked
+    eligible_for_auto_merge = (
+        AGENT_AUTO_MERGE_ENABLED and low_risk and grace_elapsed and not merge_blocked
+    )
     should_have_agent_review_pending = (
-        low_risk
+        AGENT_AUTO_MERGE_ENABLED
+        and low_risk
         and DEFAULT_AUTO_MERGE_LABEL not in label_names
         and not eligible_for_auto_merge
     )
@@ -507,6 +511,8 @@ def _build_reconciliation_report(
         auto_merge_enabled = bool((pr.get("autoMergeRequest") or {}).get("enabledAt"))
         arm_error = None
         if (
+            AGENT_AUTO_MERGE_ENABLED
+            and
             state["eligible_for_auto_merge"]
             and not bool(state["merge_blocked"])
             and DEFAULT_AUTO_MERGE_LABEL not in current_labels
@@ -525,6 +531,8 @@ def _build_reconciliation_report(
             auto_merge_enabled = False
 
         if (
+            AGENT_AUTO_MERGE_ENABLED
+            and
             DEFAULT_AUTO_MERGE_LABEL in current_labels
             and bool(state["eligible_for_auto_merge"])
             and not bool(state["merge_blocked"])
@@ -736,6 +744,8 @@ def enable_auto_merge(args: argparse.Namespace) -> int:
     enabled = False
     arm_error = None
     if (
+        AGENT_AUTO_MERGE_ENABLED
+        and
         DEFAULT_AUTO_MERGE_LABEL in labels
         and bool(state["eligible_for_auto_merge"])
         and not bool(state["merge_blocked"])

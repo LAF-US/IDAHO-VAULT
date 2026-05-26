@@ -82,9 +82,12 @@ The road was not invented. It was recognized.
 
 ---
 
-## 17. The SBP was already live.
+## 17. Historical SBP Claim (Quarantined 2026-05-26)
 
-The Stigmergic Blackboard Protocol — Hermes's research from the overnight commit — is not a proposal. It is a description of infrastructure already running in the vault.
+The text below records a prior claim about an experimental integration. It no
+longer defines a live surface: the Vault-specific SBP scripts and state files
+were quarantined after security review. Refer to `SBP.md` for the stock
+protocol source.
 
 `!/sbp-blackboard.json`, `!/sbp-field.db` — the blackboard exists. The digital pheromones are already being deposited. The agents are already reading signals from the shared surface without direct communication. `!/DOCKET.md` is the primary blackboard surface. `!/SBP-INTEGRATION-2026-04-22.md` records the prior work.
 

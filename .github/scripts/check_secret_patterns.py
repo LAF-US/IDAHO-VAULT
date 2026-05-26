@@ -16,8 +16,6 @@ from pathlib import Path
 
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
-MAX_TEXT_BYTES = 1024 * 1024
-
 SECRET_PATH_PATTERNS = (
     re.compile(r"(^|/)\.env(\.|$)"),
     re.compile(r"(^|/)\.envrc$"),
@@ -48,7 +46,10 @@ SECRET_CONTENT_PATTERNS = {
     "private_key_block": re.compile(r"-----BEGIN (?:RSA |OPENSSH |EC |DSA )?PRIVATE KEY-----"),
     "google_api_key": re.compile(r"\bAIza[0-9A-Za-z_-]{35}\b"),
     "generic_secret_assignment": re.compile(
-        r"(?i)\b(api[_-]?key|secret|token|password|passwd|pwd)\b\s*[:=]\s*['\"]?[A-Za-z0-9_./+=-]{24,}"
+        r"""(?ix)
+        ["']?\b(api[_-]?key|secret|token|password|passwd|pwd)\b["']?
+        \s*[:=]\s*["']?[A-Za-z0-9_./+=:-]{24,}
+        """
     ),
 }
 
@@ -62,12 +63,12 @@ class Finding:
 
 def is_allowed_content_match(rule: str, line: str) -> bool:
     """Allow narrow, explicit non-secret patterns without muting real values."""
-    if "secret-pattern: allow" in line:
-        return True
     if rule != "generic_secret_assignment":
         return False
     return bool(
         re.search(r"\bprocess\.env\.[A-Z0-9_]+\b", line)
+        or re.search(r"""(?i)["']?env:[A-Z][A-Z0-9_]*["']?""", line)
+        or re.search(r"""(?i)["']?\$secretRef(?::[A-Za-z0-9_.:/-]+)?["']?""", line)
         or re.search(r"(?i)\breplace-with-[A-Za-z0-9_-]+\b", line)
     )
 
@@ -130,11 +131,6 @@ def worktree_file_bytes(path: str) -> bytes | None:
 
 
 def content_findings(path: str, data: bytes) -> list[Finding]:
-    if len(data) > MAX_TEXT_BYTES:
-        return []
-    if b"\0" in data:
-        return []
-
     text = data.decode("utf-8", errors="replace")
     findings: list[Finding] = []
     for line_number, line in enumerate(text.splitlines(), start=1):
@@ -143,6 +139,17 @@ def content_findings(path: str, data: bytes) -> list[Finding]:
                 if is_allowed_content_match(rule, line):
                     continue
                 findings.append(Finding(path=path, line=line_number, rule=rule))
+    return findings
+
+
+def findings_for_paths(paths: list[str], *, staged: bool) -> list[Finding]:
+    findings: list[Finding] = []
+    for path in paths:
+        data = staged_file_bytes(path) if staged else worktree_file_bytes(path)
+        if data is None:
+            continue
+        findings.extend(path_findings(path))
+        findings.extend(content_findings(path, data))
     return findings
 
 
@@ -156,13 +163,7 @@ def main() -> int:
         parser.error("--staged and --paths-from-stdin are mutually exclusive")
 
     paths = stdin_paths() if args.paths_from_stdin else staged_paths()
-    findings: list[Finding] = []
-
-    for path in paths:
-        findings.extend(path_findings(path))
-        data = staged_file_bytes(path) if args.staged else worktree_file_bytes(path)
-        if data is not None:
-            findings.extend(content_findings(path, data))
+    findings = findings_for_paths(paths, staged=args.staged)
 
     if not findings:
         print("secret-pattern guard: OK")

@@ -72,6 +72,8 @@ from idaho_vault.five_wizards.lane_runner import (
     run_lane,
 )
 from idaho_vault.five_wizards.staging import (
+    ArtifactPack,
+    StagedArtifact,
     build_lane_artifact_pack,
     build_workflow_artifact_pack,
     materialize_artifact_pack,
@@ -1100,6 +1102,25 @@ class FiveWizardsTest(unittest.TestCase):
             self.assertIn('"artifact_count"', manifest_text)
         finally:
             shutil.rmtree(tempdir, ignore_errors=True)
+
+    def test_artifact_pack_rejects_traversing_run_id(self) -> None:
+        with self.assertRaises(ValueError):
+            ArtifactPack(
+                run_id="../escaped",
+                root_dir_name="../escaped",
+                artifacts=[],
+                summary="invalid",
+            )
+
+    def test_staged_artifact_rejects_traversing_relative_path(self) -> None:
+        with self.assertRaises(ValueError):
+            StagedArtifact(
+                group="meta",
+                relative_path="meta/../../escaped.md",
+                media_type="text/markdown",
+                source_type="test",
+                content="unsafe",
+            )
 
     def test_run_and_stage_service_supports_dry_run(self) -> None:
         request = FiveWizardsStageRequest(

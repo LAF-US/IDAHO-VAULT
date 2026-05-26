@@ -13,8 +13,13 @@ related:
 # SBP — Stigmergic Blackboard Protocol
 
 **Source:** [github.com/AdviceNXT/sbp](https://github.com/AdviceNXT/sbp)
-**Status:** v0.1.0-draft (Feb 2026)
+**Status:** Reference only. Vault-specific executable integration quarantined 2026-05-26.
 **License:** MIT (code), CC BY 4.0 (spec)
+
+> [!CAUTION]
+> Stock SBP is documented here from [AdviceNXT/sbp](https://github.com/AdviceNXT/sbp).
+> The former Vault-specific scripts, persistence files, capability grants, and
+> shell bridges were not stock SBP and are no longer operative surfaces.
 
 ---
 

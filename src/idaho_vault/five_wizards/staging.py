@@ -42,7 +42,8 @@ class StagedArtifact(BaseModel):
     @model_validator(mode="after")
     def validate_relative_path(self) -> "StagedArtifact":
         normalized = self.relative_path.replace("\\", "/")
-        if normalized.startswith("/") or normalized.startswith("../") or "/../" in normalized:
+        candidate = Path(normalized)
+        if candidate.is_absolute() or any(part == ".." for part in candidate.parts):
             raise ValueError("Staged artifact paths must remain relative to the pack root.")
         return self
 
@@ -61,6 +62,13 @@ class ArtifactPack(BaseModel):
     def validate_paths(self) -> "ArtifactPack":
         if self.root_dir_name != self.run_id:
             raise ValueError("Artifact pack root_dir_name must match the run id.")
+        normalized_root = self.root_dir_name.replace("\\", "/")
+        if (
+            normalized_root in {".", ".."}
+            or "/" in normalized_root
+            or Path(normalized_root).is_absolute()
+        ):
+            raise ValueError("Artifact pack run ids must be a single safe directory name.")
         relative_paths = [artifact.relative_path for artifact in self.artifacts]
         if len(relative_paths) != len(set(relative_paths)):
             raise ValueError("Artifact pack paths must be unique.")
@@ -384,12 +392,14 @@ def build_workflow_artifact_pack(workflow: FiveWizardsWorkflowArtifacts) -> Arti
 def materialize_artifact_pack(pack: ArtifactPack, root: str | Path) -> list[Path]:
     """Write an artifact pack beneath a chosen local root and return written paths."""
 
-    root_path = Path(root)
-    pack_root = root_path / pack.root_dir_name
+    root_path = Path(root).resolve()
+    pack_root = (root_path / pack.root_dir_name).resolve()
+    pack_root.relative_to(root_path)
     pack_root.mkdir(parents=True, exist_ok=True)
     written_paths: list[Path] = []
     for artifact in pack.artifacts:
-        artifact_path = pack_root / Path(artifact.relative_path)
+        artifact_path = (pack_root / Path(artifact.relative_path)).resolve()
+        artifact_path.relative_to(pack_root)
         artifact_path.parent.mkdir(parents=True, exist_ok=True)
         artifact_path.write_text(artifact.content, encoding="utf-8")
         written_paths.append(artifact_path)
