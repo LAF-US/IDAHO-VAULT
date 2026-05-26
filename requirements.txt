@@ -281,7 +281,7 @@ portalocker==2.7.0
     # via
     #   crewai
     #   crewai-core
-posthog==5.4.0
+posthog==7.15.4
     # via chromadb
 propcache==0.5.2
     # via
