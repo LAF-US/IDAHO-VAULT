@@ -196,7 +196,7 @@ markupsafe==3.0.3
     #   flask
     #   jinja2
     #   werkzeug
-mcp==1.26.0
+mcp==1.27.1
     # via crewai
 mdit-py-plugins==0.6.1
     # via textual
