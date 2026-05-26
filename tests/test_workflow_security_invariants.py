@@ -75,6 +75,7 @@ class WorkflowSecurityInvariantsTest(unittest.TestCase):
             "check-large-files",
             "check-paths",
             "check-dotfolder-anchors",
+            "submit-pypi",
         ):
             self.assertIn(context, gate_step["run"])
         enable_step = steps["Enable verified auto-merge"]
