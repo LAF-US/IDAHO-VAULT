@@ -104,11 +104,19 @@ class WorkflowSecurityInvariantsTest(unittest.TestCase):
             (WORKFLOWS / "version-transition-policy.yml").read_text(encoding="utf-8")
         )
         events = workflow.get("on", workflow.get(True))
-        self.assertIn("pull_request", events)
+        self.assertIn("pull_request_target", events)
+        self.assertNotIn("pull_request", events)
         self.assertEqual(workflow["permissions"], {"contents": "read"})
         self.assertIn("check-version-transitions", workflow["jobs"])
-        run = workflow["jobs"]["check-version-transitions"]["steps"][-1]["run"]
+        steps = workflow["jobs"]["check-version-transitions"]["steps"]
+        checkout = steps[0]
+        self.assertIn("github.event.pull_request.base.sha", checkout["with"]["ref"])
+        fetch = steps[1]["run"]
+        self.assertIn("refs/pull/${PR_NUMBER}/head", fetch)
+        self.assertIn("git rev-parse FETCH_HEAD", fetch)
+        run = steps[-1]["run"]
         self.assertIn("check_version_transitions.py", run)
+        self.assertNotIn("trusted-main", run)
         self.assertIn("--actor", run)
 
     def test_levelset_content_cannot_trigger_external_closure_message(self) -> None:
