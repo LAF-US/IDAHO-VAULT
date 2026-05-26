@@ -335,23 +335,25 @@ ORGANIZATIONS/  GOVERNMENTS/    ATTACHMENTS/
 
 ### `wayback-audit.yml` — Wayback Machine URL Audit
 **Status:** Working correctly.
-**Trigger:** Schedule Monday 08:00 UTC + `workflow_dispatch`.
-**Finding:** Weekly URL preservation audit. Advisory output only; not part of the gate or merge pipeline.
+**Trigger:** Schedule Monday 08:00 UTC + `workflow_dispatch` (with optional `limit` and `save` inputs).
+**Finding:** Runs `wayback_audit.py`; if changes are produced, commits them to a timestamped branch and creates a PR via `gh pr create`. Uses `idempotent-pr-create` to skip PR creation if one already exists for that branch. Also calls `.github/actions/setup-vault` with `pip-packages: "PyYAML>=6.0"` (no `python-version`). Not a policy gate — it does not block merges — but it is not advisory-only: it produces commits and PRs when the audit finds changes.
+**Composite actions used:** `.github/actions/setup-vault`, `.github/actions/idempotent-pr-create`
 
 ---
 
 ### `wayback-preserve.yml` — Wayback Machine URL Submission
 **Status:** Working correctly.
 **Trigger:** Push to main on `SOURCES/**`, `GOVERNMENTS/**`, `TOPICS/**`.
-**Finding:** Submits new source URLs to the Wayback Machine when source documents are added or modified. Content-surface trigger (low-risk paths). Not a gate; cannot block merges.
+**Finding:** Submits new source URLs to the Wayback Machine when source documents are added or modified. If changes are logged, commits to a timestamped branch and creates a PR via `gh pr create`; uses `idempotent-pr-create` to prevent duplicate PRs on rerun. Calls `.github/actions/setup-vault` with no inputs (git identity only; no Python setup). Content-surface trigger (low-risk paths). Not a gate; cannot block merges.
+**Composite actions used:** `.github/actions/setup-vault`, `.github/actions/idempotent-pr-create`
 
 ---
 
 ### `sort-audit.yml` — Vault Topology Census
 **Status:** Working correctly.
 **Trigger:** Schedule Monday 06:00 UTC + `workflow_dispatch`.
-**Finding:** Runs `topology_census.py --scope all` (not `sort_audit.py`, which was deleted this session as superseded). Creates a PR via `peter-evans/create-pull-request@v8`. Calls `./.github/actions/setup-vault` composite action without passing `python-version` — Python setup is correctly skipped; `topology_census.py` uses only standard library modules. Idempotency is handled by `idempotent-pr-create` composite action.
-**Composite actions used:** `.github/actions/setup-vault`, `.github/actions/idempotent-pr-create`
+**Finding:** Runs `topology_census.py --scope all` (not `sort_audit.py`, which was deleted this session as superseded). Creates a PR via `peter-evans/create-pull-request@5f6978faf089d4d20b00c7766989d076bb2fc7f1 # v8`, which handles idempotency natively (updates an existing branch PR rather than creating a duplicate — `idempotent-pr-create` is NOT used here). Calls `./.github/actions/setup-vault` with `pip-packages: "PyYAML>=6.0"` but no `python-version` — setup-python is skipped, but `pip install PyYAML` still runs against the runner's system Python. `topology_census.py` imports only stdlib so the PyYAML install is redundant but harmless.
+**Composite action used:** `.github/actions/setup-vault`
 
 ---
 
@@ -366,20 +368,20 @@ The vault owns two composite actions — vault-maintained reusable steps that li
 
 ### `setup-vault` — Shared Vault Environment Setup
 **Location:** `.github/actions/setup-vault/action.yml`
-**Called by:** `sort-audit.yml` (confirmed); likely other scheduled workflows.
+**Called by:** `sort-audit.yml`, `wayback-audit.yml`, `wayback-preserve.yml` (confirmed); likely other scheduled workflows.
 **Function:** Configures git bot identity (`github-actions[bot]`) and optionally sets up Python + pip packages.
 **Inputs:** `python-version` (optional), `pip-packages` (optional), `requirements-file` (optional).
-**Finding:** If `python-version` is not passed, the setup-python step is skipped entirely. `sort-audit.yml` calls this action without `python-version` — correct, since `topology_census.py` uses only standard library. Internally uses `setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5` when Python is requested — adds another surface to the v5/v6 inconsistency finding. Any future caller that expects v6 behavior but routes through this composite without explicit `python-version` will silently get v5.
+**Finding:** If `python-version` is not passed, the setup-python step is skipped; if `pip-packages` is non-empty, pip install still runs against the runner's system Python. Internally uses `setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5` when Python is requested — adds another surface to the v5/v6 inconsistency finding. Any future caller that expects v6 behavior but routes through this composite without explicit `python-version` will silently get v5.
 
 ---
 
 ### `idempotent-pr-create` — PR Idempotency Lookup
 **Location:** `.github/actions/idempotent-pr-create/action.yml`
-**Called by:** `sort-audit.yml` (confirmed via action call in workflow); likely `agent-auto-pr.yml` and others.
+**Called by:** `wayback-audit.yml`, `wayback-preserve.yml` (confirmed by file inspection).
 **Function:** Checks whether an open PR already exists for a given branch before creating a new one. Prevents duplicate PR creation on workflow reruns.
 **Inputs:** `branch` (required), `gh-token` (required).
 **Outputs:** `pr_exists` ('true'/'false'), `pr_number` (number or empty string).
-**Finding:** Correct idempotency primitive. Prevents the agent PR pipeline from creating stale duplicate PRs on repeated pushes. Uses `gh pr list --head "$BRANCH_NAME" --state open --json number --jq` — reads only, no write side effects.
+**Finding:** Correct idempotency primitive used by both Wayback workflows. Uses `gh pr list --head "$BRANCH_NAME" --state open --json number --jq` — reads only, no write side effects. Note: `sort-audit.yml` uses `peter-evans/create-pull-request` instead, which handles idempotency via branch reuse natively.
 
 ---
 
