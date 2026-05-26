@@ -1,0 +1,39 @@
+name: Validate Agent Content
+
+on:
+  push:
+    branches:
+      - 'agent/**'
+
+jobs:
+  validate:
+    name: Validate markdown content on agent branches
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout vault
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+        with:
+          fetch-depth: 2
+
+      - name: Set up Python
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install pyyaml
+
+      - name: Stage changed files for validation
+        run: |
+          # validate_content.py inspects git diff --cached (staged files).
+          # Stage the files changed in this push so the validator sees them.
+          git diff --name-only HEAD^..HEAD --diff-filter=ACMR -- '*.md' \
+            | xargs -r git add --intent-to-add
+
+      - name: Run content validation
+        run: |
+          python3 .github/scripts/validate_content.py
