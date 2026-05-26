@@ -55,7 +55,7 @@ On the MacBook today, **the node-graph runtime is running**, but the graph has n
 
 - Gateway daemon live, loopback only
 - 27 built-in skills active (coding profile)
-- Mogget (Windows-ZBFURY) paired as a compute node
+- the Windows laptop (ZBFURY) paired as a compute node
 - sam-tts custom skill present
 - 18 prior sessions in the session store
 - OpenRouter key resolving via 1Password
@@ -126,9 +126,9 @@ This is not a misconfiguration — it is a state of intent that was never advanc
 **What `local` mode does provide:** The local WebSocket gateway is reachable from:
 - The web control UI (`http://Logans-MBP.ht.home:18789` or `http://192.168.0.95:18789`)
 - The OpenClaw CLI directly
-- Paired nodes — currently only Mogget when it is online
+- Paired nodes — currently only the Windows laptop when it is online
 
-**The Mogget node:** This is a meaningful capability that Hermes does not have. Mogget is paired as a compute node with `system.run`, `browser.proxy`, and file capabilities. When Mogget is online, OpenClaw on the MacBook can delegate tasks to Mogget's environment — running shell commands, accessing Mogget's browser, and transferring files. This is the hub-and-spoke architecture in action. It is currently dormant (Mogget last seen May 18).
+**The Windows laptop node:** This is a meaningful capability that Hermes does not have. The Windows laptop is paired as a compute node with `system.run`, `browser.proxy`, and file capabilities. When the Windows laptop is online, OpenClaw on the MacBook can delegate tasks to the Windows laptop's environment — running shell commands, accessing its browser, and transferring files. This is the hub-and-spoke architecture in action. It is currently dormant (Windows laptop last seen May 18).
 
 ---
 
@@ -159,7 +159,7 @@ This is a specific risk for a production-adjacent tool: beta builds carry stabil
 
 ## WHAT THE DELTA NAMES
 
-The gap between ideal and actual for OpenClaw is not a gap in infrastructure. The runtime is installed and live. The node-graph execution engine works. Skills are available. The 1Password secret integration is more sophisticated than Hermes's .env. Mogget is a real compute node extension.
+The gap between ideal and actual for OpenClaw is not a gap in infrastructure. The runtime is installed and live. The node-graph execution engine works. Skills are available. The 1Password secret integration is more sophisticated than Hermes's .env. The Windows laptop is a real compute node extension.
 
 The gap is **initiation**. OpenClaw on the MacBook is a powered-on agent that has never been introduced to its principal. BOOTSTRAP.md is the script for that introduction. Until it runs — until the agent learns its name, learns who Logan is, learns what context it operates within, and has its SOUL.md written from Logan's perspective rather than OpenClaw's default — it is a live agent without standing.
 
@@ -180,7 +180,7 @@ In the CONSTITUTION's framing: offices are appointments, not inheritances. An ag
 | MEMORY.md | Curated long-term memory | ❌ Absent |
 | Memory DB | Semantic index of session content | ❌ 0 files, 0 chunks |
 | Platform channels | External messaging platforms | ❌ None — gateway.mode=local |
-| Mogget node | Paired Windows compute node | ⚠️ Paired but currently offline |
+| Windows laptop node | Paired Windows compute node | ⚠️ Paired but currently offline |
 | MCP servers | External tools via MCP client | ❌ None configured |
 | openclaw mcp serve | Expose to Claude Code / other agents | ❌ Not wired |
 | ClawHub skills | Community skills installed | ⚠️ 1 (browser-automation only) |
@@ -201,7 +201,7 @@ Both agents are live on the MacBook. Both are grounded. The gaps differ:
 | Memory | Wiped — blank slate, ready | Absent — never started |
 | Platform channels | ✅ Telegram, Discord, WhatsApp | ❌ None (local mode only) |
 | Session history | 44 sessions | 18 sessions |
-| Windows node | ❌ Not a feature | ✅ Mogget paired (offline) |
+| Windows node | ❌ Not a feature | ✅ Windows laptop (ZBFURY) paired (offline) |
 | Prompt auto-loading | ✅ AGENTS.md in vault via CWD | ❌ Generic workspace AGENTS.md |
 | Bootstrap state | N/A (Hermes has no bootstrap) | ❌ Never completed |
 
