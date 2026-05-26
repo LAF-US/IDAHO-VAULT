@@ -3,13 +3,18 @@ name = "idaho-vault"
 version = "0.1.0"
 description = "CrewAI deployment-validation shard for IDAHO-VAULT"
 authors = [{ name = "Logan Finney" }]
-requires-python = ">=3.10,<3.14"
+# HOST: macOS 12 Monterey x86_64 (Intel Mac). Dropping Intel/older macOS wheels is a
+# recurring issue. Do NOT bump Python or lift constraints below without verifying wheel
+# availability for this platform. See AGENTS.md for authority chain.
+requires-python = ">=3.11,<3.12"
 dependencies = [
     "crewai>=1.9.3",
     "flask>=3.0.0",
     "pydantic~=2.11.9",
     "huggingface-hub>=0.0",
     "requests-oauthlib>=0.0",
+    "lancedb<0.26",
+    "honcho-ai>=2.1.2",
 ]
 
 [project.scripts]
@@ -34,13 +39,16 @@ packages = ["src/idaho_vault"]
 cache-dir = ".uv-cache"
 python-downloads = "manual"
 python-preference = "system"
+constraint-dependencies = [
+    "onnxruntime<1.17",
+]
 
 [tool.crewai]
 type = "crew"
 
 [tool.ruff]
 line-length = 100
-target-version = "py310"
+target-version = "py311"
 
 [dependency-groups]
 dev = [
