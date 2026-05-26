@@ -30,10 +30,12 @@ from this record.
   environment-backed references, and Discord policy is set to `allowlist`.
 - Public git history is not rewritten by this remediation.
 
-## Required Before Merge
+## Required Before Restart Or Redeployment
 
 The local running gateway has been contained, but the former credential may
 remain valid in git history, copied state, or another installation. Revoke or
-rotate it in the authoritative runtime or secret provider before restart or
-merge, then confirm the runtime resolves the replacement reference without
-committing any secret value.
+rotate it in the authoritative runtime or secret provider before any OpenClaw
+restart or redeployment, then confirm the runtime resolves the replacement
+reference without committing any secret value. Landing this remediation
+removes the literal credential from the current repository tip and should not
+be delayed by that out-of-band rotation.

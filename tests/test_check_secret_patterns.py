@@ -3,7 +3,6 @@ from __future__ import annotations
 import importlib.util
 import sys
 import unittest
-from unittest import mock
 from pathlib import Path
 
 
@@ -51,12 +50,14 @@ class SecretCheckerTest(unittest.TestCase):
         self.assertEqual(secret_checker.content_findings("config.json", data), [])
 
     def test_allows_deletion_of_sensitive_path(self) -> None:
-        with mock.patch.object(secret_checker, "worktree_file_bytes", return_value=None):
+        with unittest.mock.patch.object(secret_checker, "worktree_file_bytes", return_value=None):
             findings = secret_checker.findings_for_paths([".op/removed-token.ps1"], staged=False)
         self.assertEqual(findings, [])
 
     def test_rejects_sensitive_path_when_file_still_exists(self) -> None:
-        with mock.patch.object(secret_checker, "worktree_file_bytes", return_value=b"reference only"):
+        with unittest.mock.patch.object(
+            secret_checker, "worktree_file_bytes", return_value=b"reference only"
+        ):
             findings = secret_checker.findings_for_paths([".op/token-helper.ps1"], staged=False)
         self.assertEqual({finding.rule for finding in findings}, {"secret_path"})
 
