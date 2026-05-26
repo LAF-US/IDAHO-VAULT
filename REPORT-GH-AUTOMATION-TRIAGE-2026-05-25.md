@@ -338,10 +338,8 @@ All 28 pre-existing workflows currently in `.github/workflows/`, with verified t
 
 | Issue | Notes |
 |---|---|
-| Node.js 20 deprecation | ~30 workflows use `checkout@v4` / `setup-python@v5/v6` (Node.js 20 runtime); deprecation date not confirmed — do not act on this without verifying the GitHub announcement |
+| Node.js 20 deprecation | Exactly 30 of 32 workflows use `checkout@v4` / `setup-python@v5/v6` (Node.js 20 runtime); deprecation date not confirmed — do not act on this without verifying the GitHub announcement |
 | Secret Pattern Full Scan false positives | Fires every Monday; known noise |
-| `linear-webhook.yml` gateway | Workflow is ready; the Cloud Function relay was never built |
-| `vault-ingest.yml` is a stub | Fires daily, creates boilerplate ingest notes; not a real pipeline |
 | Ollama key rotation | `id_ed25519` was scrubbed from git history 2026-05-25; key itself still needs rotation |
 
 ---
