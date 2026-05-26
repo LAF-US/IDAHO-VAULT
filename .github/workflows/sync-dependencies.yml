@@ -28,23 +28,20 @@ jobs:
         with:
           python-version: "3.13"
 
-      - name: Install pinned pip-tools
-        run: python -m pip install "pip-tools==7.4.1"
-
       - uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
-
-      - name: Generate requirements.txt
-        id: compile
-        continue-on-error: true
-        run: pip-compile pyproject.toml -o requirements.txt --upgrade
 
       - name: Refresh uv.lock
         id: uvlock
-        if: steps.compile.outcome == 'success'
+        continue-on-error: true
         run: uv lock --upgrade
 
+      - name: Export requirements.txt from uv.lock
+        id: export
+        if: steps.uvlock.outcome == 'success'
+        run: uv export --format requirements-txt --no-hashes --output-file requirements.txt
+
       - name: Publish review branch and PR
-        if: steps.compile.outcome == 'success'
+        if: steps.uvlock.outcome == 'success' && steps.export.outcome == 'success'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -64,12 +61,12 @@ jobs:
           fi
 
       - name: Report dependency resolver conflict
-        if: steps.compile.outcome != 'success'
+        if: steps.uvlock.outcome != 'success'
         run: |
           {
             echo "## Sync Dependencies"
             echo ""
-            echo "Dependency resolution failed; no review branch was created."
+            echo "uv lock --upgrade failed; no review branch was created."
             echo "Treat this as Python dependency triage."
           } >> "$GITHUB_STEP_SUMMARY"
           exit 1
