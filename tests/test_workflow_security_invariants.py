@@ -43,6 +43,21 @@ class WorkflowSecurityInvariantsTest(unittest.TestCase):
         self.assertIn("github.event.pull_request.user.type == 'Bot'", workflow)
         self.assertIn("!contains(github.event.pull_request.labels.*.name, 'risk/high')", workflow)
         self.assertIn("contains(github.event.pull_request.labels.*.name, 'risk/high')", workflow)
+        self.assertIn("Exclude protected live surfaces from automatic merge", workflow)
+        for protected_path in (
+            ".github/workflows/*",
+            ".github/scripts/*",
+            ".codex/*",
+            ".openclaw/*",
+            "AGENTS.md",
+            "CONSTITUTION.md",
+            "DECISIONS.md",
+            "VAULT-CONVENTIONS.md",
+            "swarm.json",
+            "!/*",
+        ):
+            self.assertIn(protected_path, workflow)
+        self.assertIn("steps.scope.outputs.eligible == 'true'", workflow)
         self.assertIn("Verify protected required checks exist", workflow)
         for context in (
             "check-secret-patterns",

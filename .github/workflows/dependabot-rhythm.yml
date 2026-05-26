@@ -33,10 +33,32 @@ jobs:
             echo "- Dependency names: \`${{ steps.metadata.outputs.dependency-names }}\`"
           } >> "$GITHUB_STEP_SUMMARY"
 
-      - name: Verify protected required checks exist
+      - name: Exclude protected live surfaces from automatic merge
+        id: scope
         if: |
           (steps.metadata.outputs.package-ecosystem == 'pip' || steps.metadata.outputs.package-ecosystem == 'uv' || steps.metadata.outputs.package-ecosystem == 'github-actions' || steps.metadata.outputs.package-ecosystem == 'github_actions') &&
           (steps.metadata.outputs.update-type == 'version-update:semver-patch' || steps.metadata.outputs.update-type == 'version-update:semver-minor')
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: |
+          eligible=true
+          while IFS= read -r path; do
+            case "$path" in
+              .github/workflows/*|.github/scripts/*|.codex/*|.openclaw/*|AGENTS.md|CONSTITUTION.md|DECISIONS.md|VAULT-CONVENTIONS.md|swarm.json|!/*)
+                echo "::notice::Manual review required for protected path '$path'."
+                eligible=false
+                ;;
+            esac
+          done < <(gh api --paginate "repos/$GH_REPO/pulls/$PR_NUMBER/files" --jq '.[].filename')
+          echo "eligible=$eligible" >> "$GITHUB_OUTPUT"
+
+      - name: Verify protected required checks exist
+        if: |
+          (steps.metadata.outputs.package-ecosystem == 'pip' || steps.metadata.outputs.package-ecosystem == 'uv' || steps.metadata.outputs.package-ecosystem == 'github-actions' || steps.metadata.outputs.package-ecosystem == 'github_actions') &&
+          (steps.metadata.outputs.update-type == 'version-update:semver-patch' || steps.metadata.outputs.update-type == 'version-update:semver-minor') &&
+          steps.scope.outputs.eligible == 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_REPO: ${{ github.repository }}
@@ -53,7 +75,8 @@ jobs:
       - name: Approve and enable auto-merge
         if: |
           (steps.metadata.outputs.package-ecosystem == 'pip' || steps.metadata.outputs.package-ecosystem == 'uv' || steps.metadata.outputs.package-ecosystem == 'github-actions' || steps.metadata.outputs.package-ecosystem == 'github_actions') &&
-          (steps.metadata.outputs.update-type == 'version-update:semver-patch' || steps.metadata.outputs.update-type == 'version-update:semver-minor')
+          (steps.metadata.outputs.update-type == 'version-update:semver-patch' || steps.metadata.outputs.update-type == 'version-update:semver-minor') &&
+          steps.scope.outputs.eligible == 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PR_URL: ${{ github.event.pull_request.html_url }}
