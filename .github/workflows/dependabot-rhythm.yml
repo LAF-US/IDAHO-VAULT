@@ -2,16 +2,19 @@ name: Dependabot Rhythm
 
 on:
   pull_request_target:
-    types: [opened, reopened, ready_for_review]
+    types: [opened, reopened, ready_for_review, synchronize, labeled, unlabeled]
 
 permissions:
   contents: write
-  issues: write
   pull-requests: write
 
 jobs:
   auto-merge-low-risk:
-    if: github.event.pull_request.user.login == 'dependabot[bot]' && github.event.pull_request.base.ref == 'main'
+    if: >
+      github.event.pull_request.user.login == 'dependabot[bot]' &&
+      github.event.pull_request.user.type == 'Bot' &&
+      github.event.pull_request.base.ref == 'main' &&
+      !contains(github.event.pull_request.labels.*.name, 'risk/high')
     runs-on: ubuntu-latest
     steps:
       - name: Fetch Dependabot metadata
@@ -30,6 +33,23 @@ jobs:
             echo "- Dependency names: \`${{ steps.metadata.outputs.dependency-names }}\`"
           } >> "$GITHUB_STEP_SUMMARY"
 
+      - name: Verify protected required checks exist
+        if: |
+          (steps.metadata.outputs.package-ecosystem == 'pip' || steps.metadata.outputs.package-ecosystem == 'uv' || steps.metadata.outputs.package-ecosystem == 'github-actions' || steps.metadata.outputs.package-ecosystem == 'github_actions') &&
+          (steps.metadata.outputs.update-type == 'version-update:semver-patch' || steps.metadata.outputs.update-type == 'version-update:semver-minor')
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          rules="$(gh api "repos/$GH_REPO/rules/branches/main")"
+          for context in check-secret-patterns check-large-files check-paths check-dotfolder-anchors; do
+            if ! printf '%s' "$rules" | jq -e --arg context "$context" \
+              'any(.[]; .type == "required_status_checks" and any(.parameters.required_status_checks[]?; .context == $context))' >/dev/null; then
+              echo "::error::Dependabot auto-merge is disabled until required check '$context' protects main."
+              exit 1
+            fi
+          done
+
       - name: Approve and enable auto-merge
         if: |
           (steps.metadata.outputs.package-ecosystem == 'pip' || steps.metadata.outputs.package-ecosystem == 'uv' || steps.metadata.outputs.package-ecosystem == 'github-actions' || steps.metadata.outputs.package-ecosystem == 'github_actions') &&
@@ -38,10 +58,20 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PR_URL: ${{ github.event.pull_request.html_url }}
         run: |
-          gh pr review --approve "$PR_URL" || true
-          gh label create "dependabot/low-risk-auto" \
-            --description "Dependabot metadata proved semver patch/minor low-risk automation eligibility" \
-            --color "0E8A16" \
-            --force
-          gh pr edit "$PR_URL" --add-label "dependabot/low-risk-auto" || true
-          gh pr merge --auto --squash --delete-branch "$PR_URL"
+          gh pr review --approve "$PR_URL"
+          gh pr merge --auto --squash "$PR_URL"
+
+  disable-high-risk-auto-merge:
+    if: >
+      github.event.pull_request.user.login == 'dependabot[bot]' &&
+      github.event.pull_request.base.ref == 'main' &&
+      contains(github.event.pull_request.labels.*.name, 'risk/high')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fail closed when high-risk labeling is present
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_URL: ${{ github.event.pull_request.html_url }}
+        run: |
+          gh pr merge --disable-auto "$PR_URL" || true
+          echo "::notice::Dependabot automatic merge is blocked because risk/high is present."

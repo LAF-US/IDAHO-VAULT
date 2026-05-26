@@ -30,6 +30,40 @@ class WorkflowSecurityInvariantsTest(unittest.TestCase):
         self.assertFalse((WORKFLOWS / "dependabot-reaper.yml").exists())
         self.assertTrue((WORKFLOWS / "dependabot-rhythm.yml").exists())
 
+    def test_dependabot_auto_merge_requires_verified_low_risk_updates_and_gates(self) -> None:
+        workflow = (WORKFLOWS / "dependabot-rhythm.yml").read_text(encoding="utf-8")
+        self.assertIn(
+            "types: [opened, reopened, ready_for_review, synchronize, labeled, unlabeled]",
+            workflow,
+        )
+        self.assertIn(
+            "dependabot/fetch-metadata@ffa630c65fa7e0ecfa0625b5ceda64399aea1b36",
+            workflow,
+        )
+        self.assertIn("github.event.pull_request.user.type == 'Bot'", workflow)
+        self.assertIn("!contains(github.event.pull_request.labels.*.name, 'risk/high')", workflow)
+        self.assertIn("contains(github.event.pull_request.labels.*.name, 'risk/high')", workflow)
+        self.assertIn("Verify protected required checks exist", workflow)
+        for context in (
+            "check-secret-patterns",
+            "check-large-files",
+            "check-paths",
+            "check-dotfolder-anchors",
+        ):
+            self.assertIn(context, workflow)
+        self.assertIn("gh pr merge --disable-auto", workflow)
+        self.assertNotIn("issues: write", workflow)
+        self.assertNotIn("gh label create", workflow)
+        self.assertNotIn("--delete-branch", workflow)
+
+    def test_security_required_check_contexts_are_distinct(self) -> None:
+        secret = (WORKFLOWS / "secret-pattern-policy.yml").read_text(encoding="utf-8")
+        large = (WORKFLOWS / "large-file-policy.yml").read_text(encoding="utf-8")
+        self.assertIn("check-secret-patterns:", secret)
+        self.assertIn("check-large-files:", large)
+        self.assertNotIn("\n  check:\n", secret)
+        self.assertNotIn("\n  check:\n", large)
+
     def test_levelset_content_cannot_trigger_external_closure_message(self) -> None:
         self.assertFalse((WORKFLOWS / "levelset-closure-notify.yml").exists())
         self.assertFalse((ROOT / ".github" / "scripts" / "post_levelset_closure.py").exists())
