@@ -329,7 +329,7 @@ OpenClaw is installed and active on the MacBook. A full local survey was conduct
 - **Running**: Yes — PID 868, gateway on port 18789 (loopback only, `mode: local`)
 - **LaunchAgent**: `ai.openclaw.gateway.plist` — starts at login
 - **Platform channels**: None — gateway.mode=local; no Telegram, Discord, WhatsApp
-- **Paired node**: Windows-ZBFURY (Mogget) — system/browser/file capabilities; currently offline
+- **Paired node**: the Windows laptop (ZBFURY) — system/browser/file capabilities; currently offline
 - **SOUL.md**: Present — generic OpenClaw default template, not Logan-specific
 - **IDENTITY.md / USER.md**: Both empty templates — agent never completed bootstrap
 - **BOOTSTRAP.md**: Still present — onboarding was never completed
