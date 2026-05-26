@@ -302,8 +302,84 @@ ORGANIZATIONS/  GOVERNMENTS/    ATTACHMENTS/
 
 ---
 
+### `1password-secret-template.yml` — 1Password Secret Injection Template
+**Status:** Working correctly; reference template only.
+**Trigger:** `workflow_dispatch` — never auto-fires.
+**Finding:** Reference template demonstrating 1Password secret injection via `1password/load-secrets-action@v4`. Not part of the active gate or review pipeline. `OP_SERVICE_ACCOUNT_TOKEN` is the only credential stored directly in GitHub Secrets; all other secrets are fetched from 1Password at runtime.
+**Script deps:** None.
+
+---
+
+### `janitor-sweep.yml` — Daily Rollover Failure Alerter
+**Status:** Working correctly.
+**Trigger:** `workflow_run` on "Daily To-Do Rollover" completion — fires only on failure.
+**Finding:** Slack alert workflow; posts to `SWARM_SLACK_WEBHOOK_URL` when `daily-rollover.yml` fails. Uses `setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6` — same v6 inconsistency noted elsewhere. Reactive monitor, not a gate.
+**Script deps:** `janitor_sweep.py`
+
+---
+
+### `laf-usb-manifest-policy.yml` — LAF-USB Object Manifest Policy
+**Status:** Working correctly; security posture note.
+**Trigger:** PR + push to main on `LAF-USB-OBJECT-MANIFEST*.json` or script/workflow changes.
+**Finding:** Validates LAF-USB object manifests using `laf_usb_manifest.py`. Uses checkout@v4 + setup-python@v5 (standard single-checkout pattern). **Does NOT use the trusted-main dual-checkout pattern** used by `secret-pattern-policy.yml`, `large-file-policy.yml`, and `check-portable-paths.yml`. For structured JSON validation this is lower risk than secret or path validation — but is an inconsistency in the policy workflow tier.
+**Script deps:** `laf_usb_manifest.py`
+
+---
+
+### `daily-rollover.yml` — Daily To-Do Rollover
+**Status:** Working correctly.
+**Trigger:** Schedule 10:00 UTC daily + `workflow_dispatch`.
+**Finding:** Rolls incomplete to-do items forward daily. Parent workflow monitored by `janitor-sweep.yml` (which fires on failure). No gate or merge-path involvement.
+
+---
+
+### `wayback-audit.yml` — Wayback Machine URL Audit
+**Status:** Working correctly.
+**Trigger:** Schedule Monday 08:00 UTC + `workflow_dispatch`.
+**Finding:** Weekly URL preservation audit. Advisory output only; not part of the gate or merge pipeline.
+
+---
+
+### `wayback-preserve.yml` — Wayback Machine URL Submission
+**Status:** Working correctly.
+**Trigger:** Push to main on `SOURCES/**`, `GOVERNMENTS/**`, `TOPICS/**`.
+**Finding:** Submits new source URLs to the Wayback Machine when source documents are added or modified. Content-surface trigger (low-risk paths). Not a gate; cannot block merges.
+
+---
+
+### `sort-audit.yml` — Vault Topology Census
+**Status:** Working correctly.
+**Trigger:** Schedule Monday 06:00 UTC + `workflow_dispatch`.
+**Finding:** Runs `topology_census.py --scope all` (not `sort_audit.py`, which was deleted this session as superseded). Creates a PR via `peter-evans/create-pull-request@v8`. Calls `./.github/actions/setup-vault` composite action without passing `python-version` — Python setup is correctly skipped; `topology_census.py` uses only standard library modules. Idempotency is handled by `idempotent-pr-create` composite action.
+**Composite actions used:** `.github/actions/setup-vault`, `.github/actions/idempotent-pr-create`
+
+---
+
 ### `branch-garden-report.yml`, `metadata-survey.yml`, `branch-cleanup.yml`, etc.
 **Status:** Working correctly. Covered in the companion triage report.
+
+---
+
+## VI-B. COMPOSITE ACTIONS (.github/actions/)
+
+The vault owns two composite actions — vault-maintained reusable steps that live in `.github/actions/`. They have no triggers and cannot run independently; they are called by workflows as shared steps. Neither was inventoried in any prior audit report.
+
+### `setup-vault` — Shared Vault Environment Setup
+**Location:** `.github/actions/setup-vault/action.yml`
+**Called by:** `sort-audit.yml` (confirmed); likely other scheduled workflows.
+**Function:** Configures git bot identity (`github-actions[bot]`) and optionally sets up Python + pip packages.
+**Inputs:** `python-version` (optional), `pip-packages` (optional), `requirements-file` (optional).
+**Finding:** If `python-version` is not passed, the setup-python step is skipped entirely. `sort-audit.yml` calls this action without `python-version` — correct, since `topology_census.py` uses only standard library. Internally uses `setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5` when Python is requested — adds another surface to the v5/v6 inconsistency finding. Any future caller that expects v6 behavior but routes through this composite without explicit `python-version` will silently get v5.
+
+---
+
+### `idempotent-pr-create` — PR Idempotency Lookup
+**Location:** `.github/actions/idempotent-pr-create/action.yml`
+**Called by:** `sort-audit.yml` (confirmed via action call in workflow); likely `agent-auto-pr.yml` and others.
+**Function:** Checks whether an open PR already exists for a given branch before creating a new one. Prevents duplicate PR creation on workflow reruns.
+**Inputs:** `branch` (required), `gh-token` (required).
+**Outputs:** `pr_exists` ('true'/'false'), `pr_number` (number or empty string).
+**Finding:** Correct idempotency primitive. Prevents the agent PR pipeline from creating stale duplicate PRs on repeated pushes. Uses `gh pr list --head "$BRANCH_NAME" --state open --json number --jq` — reads only, no write side effects.
 
 ---
 
@@ -317,6 +393,8 @@ ORGANIZATIONS/  GOVERNMENTS/    ATTACHMENTS/
 | 4 | `sync-dependencies.yml` direct-main write | 🟡 Temp debt | `sync-dependencies.yml` |
 | 5 | `secret-pattern-full-scan.yml` non-standard checkout hash | 🟢 Inconsistency | `secret-pattern-full-scan.yml` |
 | 6 | Mixed setup-python v5/v6 (partial Dependabot updates) | 🟢 Inconsistency | `large-file-watchdog.yml`, `check-dotfolder-anchors.yml`, `stale-bot-prs.yml`, `branch-garden-report.yml`, `metadata-survey.yml` |
+| 7 | Composite action layer (`.github/actions/`) not previously inventoried; `setup-vault` uses v5 internally, adding a silent surface to the v5/v6 inconsistency | 🟢 Inventory gap | `setup-vault`, `idempotent-pr-create` |
+| 8 | `laf-usb-manifest-policy.yml` does not use trusted-main dual-checkout pattern (unlike other policy workflows) | 🟢 Informational | `laf-usb-manifest-policy.yml` |
 
 ---
 
