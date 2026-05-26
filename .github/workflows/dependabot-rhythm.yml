@@ -72,7 +72,7 @@ jobs:
             fi
           done
 
-      - name: Approve and enable auto-merge
+      - name: Enable verified auto-merge
         if: |
           (steps.metadata.outputs.package-ecosystem == 'pip' || steps.metadata.outputs.package-ecosystem == 'uv' || steps.metadata.outputs.package-ecosystem == 'github-actions' || steps.metadata.outputs.package-ecosystem == 'github_actions') &&
           (steps.metadata.outputs.update-type == 'version-update:semver-patch' || steps.metadata.outputs.update-type == 'version-update:semver-minor') &&
@@ -81,7 +81,6 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PR_URL: ${{ github.event.pull_request.html_url }}
         run: |
-          gh pr review --approve "$PR_URL"
           gh pr merge --auto --squash "$PR_URL"
 
   disable-high-risk-auto-merge:
