@@ -244,24 +244,6 @@ Released May 16, 2026. 808 commits, 633 merged PRs, 1,393 files changed, 215 con
 
 ---
 
-## COMPETITIVE LANDSCAPE
-
-**Hermes vs. OpenClaw** — the market's two dominant open-source agent frameworks:
-
-| | **Hermes** | **OpenClaw** |
-|---|---|---|
-| Philosophy | Compounding depth | Maximum reach |
-| Platforms | 22 | 22 |
-| Skills | 70+ built-in + self-created | 3,286 community (ClawHub, post-ClawHavoc) |
-| Architecture | Self-improving, SQLite FTS | WebSocket gateway |
-| License | MIT | Independent foundation (OpenAI sponsor) |
-| Daily tokens | 224B (#1) | 186B |
-| Security | Rapid patch cycle | 9 CVEs March 2026, one at 9.9 CVSS |
-
-OpenClaw's founder joined OpenAI in February 2026. OpenClaw is now an independent foundation with OpenAI sponsorship — its open-source independence is contested. Hermes remains MIT, Nous Research independent.
-
----
-
 ## VAULT INSTALLATION STATUS (as of 2026-05-25, amended same session)
 
 This section documents the existing state — not a directive.
@@ -297,7 +279,6 @@ This section documents the existing state — not a directive.
 - [Honcho Memory Integration](https://hermes-agent.nousresearch.com/docs/user-guide/features/honcho)
 - [ACP Internals](https://hermes-agent.nousresearch.com/docs/developer-guide/acp-internals)
 - [v0.14.0 Release Notes](https://github.com/NousResearch/hermes-agent/releases/tag/v2026.5.16)
-- [OpenClaw vs Hermes — MarkTechPost](https://www.marktechpost.com/2026/05/10/openclaw-vs-hermes-agent-why-nous-researchs-self-moving-agent-now-leads-openrouters-global-rankings/)
 - [agentskills.io](https://agentskills.io/home)
 - [Psyche Network](https://nousresearch.com/nous-psyche/)
 - [Nous Research — OAK Research deep dive](https://oakresearch.io/en/analyses/innovations/nous-research-psyche-open-source-decentralized-ai-revolution)
