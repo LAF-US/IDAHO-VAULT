@@ -61,7 +61,7 @@ charset-normalizer==3.4.7
     #   requests
 chromadb==1.1.1
     # via crewai
-click==8.1.8
+click==8.4.1
     # via
     #   crewai
     #   crewai-cli
