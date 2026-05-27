@@ -19,12 +19,12 @@ related:
 
 ## Purpose
 
-This note turns the workshop packet into a route-and-return map.
+This note turns the workshop packet into an **EXAMPLE** route-and-return map.
 
 The vault should not be framed as one sacred questline. It should be framed as
 a hub-world of lawful districts. Each district teaches one kind of
 responsibility, yields one truthful artifact, and routes back toward a common
-adjudication point.
+adjudication point. See 'The Stanley Parable' for similar game mechanics.
 
 The player does not become legitimate by exploration alone.
 
