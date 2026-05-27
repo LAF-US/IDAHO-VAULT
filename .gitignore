@@ -402,4 +402,11 @@ rclone-cache/
 .cache_ggshield
 
 # Ignore Smart Environment folder
+<<<<<<< HEAD
 .smart-env
+=======
+.smart-env
+
+# Added by ggshield
+.cache_ggshield
+>>>>>>> dd49e33e (small edits)
