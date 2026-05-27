@@ -28,6 +28,16 @@ def branch_age_days(branch: str) -> int:
     return int((now - int(ts)) // 86400)
 
 
+def branch_has_merge_base(branch: str) -> bool:
+    try:
+        run_text(["git", "merge-base", "origin/main", f"origin/{branch}"])
+    except subprocess.CalledProcessError as exc:
+        if exc.returncode == 1:
+            return False
+        raise
+    return True
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--report-path", type=Path, required=True)
@@ -62,10 +72,21 @@ def main() -> int:
     findings: list[str] = []
     inventory: list[str] = []
     for branch in sorted(branches):
-        ahead = int(run_text(["git", "rev-list", f"origin/main..origin/{branch}", "--count"]) or "0")
-        behind = int(run_text(["git", "rev-list", f"origin/{branch}..origin/main", "--count"]) or "0")
         age_days = branch_age_days(branch)
         pr = pr_by_head.get(branch)
+        if not branch_has_merge_base(branch):
+            pr_state = f"open PR #{pr['number']}" if pr else "no PR"
+            inventory.append(
+                f"- `{branch}` - {pr_state}, no merge base with `main`, {age_days}d old"
+            )
+            findings.append(
+                f"- `{branch}` has no merge base with `main`; require SALVAGE review "
+                "before any PRUNE decision."
+            )
+            continue
+
+        ahead = int(run_text(["git", "rev-list", f"origin/main..origin/{branch}", "--count"]) or "0")
+        behind = int(run_text(["git", "rev-list", f"origin/{branch}..origin/main", "--count"]) or "0")
         if pr:
             inventory.append(
                 f"- `{branch}` — open PR #{pr['number']}, {ahead} ahead / {behind} behind, {age_days}d old"
