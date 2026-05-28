@@ -18,7 +18,7 @@ jobs:
       - name: Checkout trusted validator code
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
-          ref: ${{ github.event_name == 'pull_request' && github.event.pull_request.base.sha || github.event.repository.default_branch }}
+          ref: ${{ (github.event_name == 'pull_request' && github.event.pull_request.base.sha) || (github.event_name == 'merge_group' && github.event.merge_group.base_sha) || github.event.repository.default_branch }}
           path: trusted-main
 
       - name: Check for cross-platform path violations
@@ -35,6 +35,11 @@ jobs:
             git -c core.quotePath=false diff --name-only \
               "${{ github.event.pull_request.base.sha }}" \
               "${{ github.event.pull_request.head.sha }}" |
+              python "$VALIDATOR" --paths-from-stdin
+          elif [ "${{ github.event_name }}" = "merge_group" ]; then
+            git -c core.quotePath=false diff --name-only \
+              "${{ github.event.merge_group.base_sha }}" \
+              "${{ github.event.merge_group.head_sha }}" |
               python "$VALIDATOR" --paths-from-stdin
           else
             before="${{ github.event.before }}"
