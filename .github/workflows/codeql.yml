@@ -54,6 +54,13 @@ jobs:
           build-mode: none
         - language: python
           build-mode: none
+        - language: javascript-typescript
+          build-mode: none
+        # When a new language gets real first-party source code in this vault,
+        # add a matrix entry here AND extend paths-ignore in
+        # .github/codeql/codeql-config.yml for any vendored trees of that
+        # language. Do not add a language whose only sources are vendored or
+        # backup content — that produces orphan CodeQL analyses that block PRs.
         # CodeQL supports the following values keywords for 'language': 'actions', 'c-cpp', 'csharp', 'go', 'java-kotlin', 'javascript-typescript', 'python', 'ruby', 'rust', 'swift'
         # Use `c-cpp` to analyze code written in C, C++ or both
         # Use 'java-kotlin' to analyze code written in Java, Kotlin or both
