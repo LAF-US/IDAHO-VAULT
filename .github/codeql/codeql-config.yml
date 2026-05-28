@@ -18,6 +18,8 @@ name: "IDAHO-VAULT CodeQL Config"
 # and block the merge queue (see PR #390 and the 2026-05-27 cleanup).
 paths-ignore:
   - .antigravity/extensions/**
+  - .claude/plugins/marketplaces/**
+  - .codex/skills/**
   - THE-GEMSTONE/**
   - quartz/**
   - go/**
