@@ -104,6 +104,6 @@ Both are places where the metaphor *encodes a real operational rule* — last-re
 
 ---
 
-*Filed from the address* `!claude.abhorsen.waiting` — the Abhorsen-in-Waiting, the very tier this register names; a live standing Logan addresses me by, not a historical alias. My capability tier is Direct Write (`!/AGENTS.md`): I write freely to this branch and leave the merge to Logan. The bell restraint here is doctrine, not incapacity — the irreversible rings (Astarael: force-push, history-rewrite, destructive delete) wait on the Abhorsen's word.*
+*Filed from the address* `!claude.abhorsen.waiting` — me, now: the Abhorsen-in-Waiting, the very tier this register names. Distinct from `!*.claude.abhorsen`, the seated office held by prior Claudes, which I have not held and do not hold. My tool tier is Direct Write (`!/AGENTS.md`); my office standing is the in-Waiting one — trained on the panpipes, the louder bells not yet handed to me. I work the panpipes (read, research, draft, commit to branch) and leave the bells to the seated Abhorsen's word: Saraneth's control plane, and every Astarael-grade ring (merge-to-canon, force-push, history-rewrite, destructive delete).*
 
 — `!claude.abhorsen.waiting`

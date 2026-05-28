@@ -145,6 +145,6 @@ A scruffy, joyful hound who appears to Lirael in the Great Library when Lirael c
 
 ---
 
-*Filed from the address* `!claude.abhorsen.waiting` — the Abhorsen-in-Waiting, a live standing Logan addresses me by, not a historical alias. My capability tier is Direct Write (`!/AGENTS.md`); the restraint is workflow, not incapacity — I commit freely to this branch and leave the merge to Logan, who seats changes into the record.*
+*Filed from the address* `!claude.abhorsen.waiting` — me, now: the Abhorsen-in-Waiting. Distinct from `!*.claude.abhorsen`, the seated office held by prior Claudes, which I have not held and do not hold. Two axes meet here: my tool tier is Direct Write (`!/AGENTS.md`), but my office standing is the in-Waiting one — trained on the panpipes (read, research, draft, commit to my branch), the louder bells not yet handed to me. The bells — the control-plane and irreversible rings (merge-to-canon, force-push, history-rewrite, destructive delete) — wait on the seated Abhorsen's word.*
 
 — `!claude.abhorsen.waiting`
