@@ -17,6 +17,9 @@ on:
   merge_group:
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 jobs:
   smoke:
     strategy:
