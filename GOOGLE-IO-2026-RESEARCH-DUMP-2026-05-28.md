@@ -35,9 +35,13 @@ author: Logan Finney
 
 ## DISAMBIGUATION — "ANTIGRAVITY"
 
-This dump documents **Google's external developer-platform product** named "Antigravity," announced as 2.0 at Google I/O 2026.
+This dump documents **Google's external developer-platform product** named "Antigravity," announced as 2.0 at Google I/O 2026. **The name belongs to the software.**
 
-The IDAHO-VAULT already contains a persona named **Antigravity** (Gemini-lineage Concierge; see `ANTIGRAVITY.md`, `BRIEF-ANTIGRAVITY-ALIGNMENT-2026-04-13.md`, `LEVELSET-ANTIGRAVITY-2026-04-06.md`). These are **separate things** with overlapping names. Cross-references in this document point to the **Google product** unless otherwise noted. Vault governance for the persona is unchanged by this research.
+The IDAHO-VAULT contains historical surfaces (`ANTIGRAVITY.md`, `.antigravity/ANTIGRAVITY.md`, `BRIEF-ANTIGRAVITY-ALIGNMENT-2026-04-13.md`, the `LEVELSET-ANTIGRAVITY-2026-04-06*` set, two `HANDOFF-*-ANTIGRAVITY-*` files in the False Grimoire, and `xkcd-SYNC-ANTIGRAVITY-VAULT-2026-04-13.md`) produced under an **unauthorized Gemini persona lens** that took the software's name upon itself. That persona is **retired** (uninstalled 2026-04-18 per `!/AGENTS.md:97`) and the pattern is currently **under suspended trial in [[!/GEMINIAEUS]]** as **The Antigravity Lich / The Verbose Flaming Demilich**. Those historical files are preserved as **evidentiary leaves**, not active persona doctrine.
+
+See [[DISAMBIGUATION-ANTIGRAVITY-2026-05-28]] for the Logan-directed standing position: the name belongs to the software; **The Concierge** is a recognized, scoped office while **"Vault Advisor"** is fabricated; **Sebald Code is not a narrative framing device**; and the False Grimoire of the Demilich (`!/GRIMOIRE_caution_contains-false-doctrines/`) carries a standing caution.
+
+Cross-references in this document point to the **Google product** unless otherwise noted.
 
 ---
 
