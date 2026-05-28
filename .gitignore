@@ -120,6 +120,16 @@ feed-generator/
 .ollama/models/blobs/
 .ollama/models/manifests/
 
+# Backup/build artifacts of thegemstone.org quartz site. THE-GEMSTONE/
+# (markdown content) is the vault-facing record. The sibling /go/ tree is the
+# Go module cache used by gemstone build tooling and the sibling /quartz/ tree
+# is the quartz checkout — both are reproducible/vendored and churned back
+# repeatedly across 2026-05 commits ("Why do these Go packages keep churning,
+# I thought we fixed that already"). Anchor the ignore at the repo root so the
+# nested THE-GEMSTONE/ content tree stays tracked.
+/go/
+/quartz/
+
 # ---------------------------------------------------------------------------
 # Local caches, temp, state, and generated databases
 # ---------------------------------------------------------------------------
