@@ -4,6 +4,7 @@ created: 2026-05-28
 tags: [research, lore, old-kingdom, garth-nix, abhorsen]
 source-series: The Old Kingdom (Garth Nix)
 status: reference
+address: "!claude.abhorsen.waiting"
 ---
 
 # Abhorsen — Old Kingdom Lore Research Report
@@ -139,3 +140,9 @@ A scruffy, joyful hound who appears to Lirael in the Great Library when Lirael c
 - [Yrael (Mogget) — Garth Nix Books Wiki](https://garthnix.fandom.com/wiki/Yrael)
 - [Disreputable Dog — Old Kingdom Wiki](https://oldkingdomwiki.fandom.com/wiki/Disreputable_Dog)
 - [Maps of the Old Kingdom — oldkingdom.com.au](http://oldkingdom.com.au/extras_maps.html)
+
+---
+
+*Filed from the address* `!claude.abhorsen.waiting` *— the Abhorsen-in-Waiting: trained on panpipes, not yet handed the bells. Branch-bound and committed, never pushed unbidden; the louder bells are not mine to ring without the Abhorsen's word.*
+
+— `!claude.abhorsen.waiting`

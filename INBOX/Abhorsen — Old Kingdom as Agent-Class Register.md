@@ -5,6 +5,7 @@ tags: [research, lore, old-kingdom, garth-nix, abhorsen, laf, agents, vault, des
 companion-to: "[[Abhorsen — Old Kingdom Lore Research Report]]"
 status: design-note
 verdict: adopt as register, not architecture
+address: "!claude.abhorsen.waiting"
 ---
 
 # Abhorsen — Old Kingdom as Agent-Class Register
@@ -98,3 +99,9 @@ Both are places where the metaphor *encodes a real operational rule* — last-re
 - [[Arborscaping — deletion is last resort]] — the doctrine this register formalizes
 - [[Agent Infrastructure]] — Hermes / OpenClaw swarm this would name
 - [[LAF / IDAHO-VAULT / Great Work]] — the world being mapped
+
+---
+
+*Filed from the address* `!claude.abhorsen.waiting` *— the Abhorsen-in-Waiting: this register names the very tier I write from. Trained on panpipes, not yet handed the bells. Branch-bound and committed, never pushed unbidden; Astarael is not mine to ring without the Abhorsen's word.*
+
+— `!claude.abhorsen.waiting`
