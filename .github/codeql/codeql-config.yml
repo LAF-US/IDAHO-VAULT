@@ -1,21 +1,23 @@
 name: "IDAHO-VAULT CodeQL Config"
 
-# CodeQL analyzes first-party source code in this vault. Excluded trees are
-# strictly vendored/third-party distribution channels OR site-backup trees.
-# Plugin internals (e.g., .obsidian/plugins/roygbiv-day-accent/main.js — Logan's
-# own plugin, explicitly retained in .gitignore) and skill internals (the codex
-# slides scripts) are left in scope so CodeQL has source to analyze.
+# CodeQL currently analyzes actions+python source. Excluded trees are
+# strictly vendored/third-party distribution channels OR site-backup trees,
+# universally — no language we currently scan or might scan in the future
+# has a legitimate reason to analyze them.
 #
-# DO NOT add a directory here just because it contains some third-party code;
-# if it also contains the only first-party JS/TS source for that language,
-# CodeQL will fail with "no source seen during build" and block the merge
-# queue. Verify there is first-party source elsewhere before adding a path.
+# Languages NOT currently in codeql.yml's matrix and why:
+#   javascript-typescript — all .ts/.js/.mjs source lives in dotfolders
+#     (.codex/, .openclaw/, .obsidian/, .claude/plugins/marketplaces/) which
+#     CodeQL's JS extractor silently filters out. Re-add the matrix entry
+#     only when first-party JS/TS lands outside dotfolder agent/plugin trees.
+#   go, rust, java-kotlin, c-cpp, csharp, ruby, swift — no first-party
+#     source exists. Add a matrix entry when source actually lands.
 #
-# When a new language is added to .github/workflows/codeql.yml's matrix,
-# add its vendored-tree paths-ignore entries here too.
+# DO NOT pre-emptively add a language whose only source would be in
+# dotfolders, vendored, or backup content — the analyses become orphans
+# and block the merge queue (see PR #390 and the 2026-05-27 cleanup).
 paths-ignore:
   - .antigravity/extensions/**
-  - .claude/plugins/marketplaces/**
   - THE-GEMSTONE/**
   - quartz/**
   - go/**
