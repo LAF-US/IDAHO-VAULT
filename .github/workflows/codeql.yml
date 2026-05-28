@@ -16,6 +16,7 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
+  merge_group:
   schedule:
     - cron: '33 13 * * 6'
 
@@ -54,6 +55,22 @@ jobs:
           build-mode: none
         - language: python
           build-mode: none
+        # When a new language gets real first-party source code in this vault
+        # OUTSIDE of agent/plugin dotfolder trees, add a matrix entry here
+        # AND extend paths-ignore in .github/codeql/codeql-config.yml for any
+        # vendored trees of that language.
+        #
+        # javascript-typescript is intentionally NOT in the matrix even
+        # though 11 .ts/.js/.mjs files exist in the repo — they all live in
+        # .codex/, .openclaw/, .obsidian/, or .claude/plugins/marketplaces/,
+        # which CodeQL's JS extractor silently filters out as dotfolders.
+        # The historical /language:javascript-typescript analyses on main
+        # (last upload 2026-04-27) were a parallel coverage drift that has
+        # been cleaned up.
+        #
+        # Do not add a language whose only sources are in dotfolders, are
+        # vendored, or are backup content — that produces orphan CodeQL
+        # analyses that block the merge queue.
         # CodeQL supports the following values keywords for 'language': 'actions', 'c-cpp', 'csharp', 'go', 'java-kotlin', 'javascript-typescript', 'python', 'ruby', 'rust', 'swift'
         # Use `c-cpp` to analyze code written in C, C++ or both
         # Use 'java-kotlin' to analyze code written in Java, Kotlin or both
