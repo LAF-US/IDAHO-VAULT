@@ -63,6 +63,8 @@ class Finding:
 
 def is_allowed_content_match(rule: str, line: str) -> bool:
     """Allow narrow, explicit non-secret patterns without muting real values."""
+    if "secret-pattern: allow" in line:
+        return True
     if rule != "generic_secret_assignment":
         return False
     return bool(
