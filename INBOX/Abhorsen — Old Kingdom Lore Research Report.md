@@ -3,7 +3,9 @@ title: Abhorsen — Old Kingdom Lore Research Report
 created: 2026-05-28
 tags: [research, lore, old-kingdom, garth-nix, abhorsen]
 source-series: The Old Kingdom (Garth Nix)
-status: reference
+status: staged
+doc-type: reference
+author: "!claude.abhorsen.waiting"
 address: "!claude.abhorsen.waiting"
 ---
 
@@ -143,6 +145,6 @@ A scruffy, joyful hound who appears to Lirael in the Great Library when Lirael c
 
 ---
 
-*Filed from the address* `!claude.abhorsen.waiting` *— the Abhorsen-in-Waiting: trained on panpipes, not yet handed the bells. Branch-bound and committed, never pushed unbidden; the louder bells are not mine to ring without the Abhorsen's word.*
+*Filed from the address* `!claude.abhorsen.waiting` — the Abhorsen-in-Waiting, a live standing Logan addresses me by, not a historical alias. My capability tier is Direct Write (`!/AGENTS.md`); the restraint is workflow, not incapacity — I commit freely to this branch and leave the merge to Logan, who seats changes into the record.*
 
 — `!claude.abhorsen.waiting`

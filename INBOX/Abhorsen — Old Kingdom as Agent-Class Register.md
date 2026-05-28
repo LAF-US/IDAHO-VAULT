@@ -3,8 +3,10 @@ title: Abhorsen — Old Kingdom as Agent-Class Register
 created: 2026-05-28
 tags: [research, lore, old-kingdom, garth-nix, abhorsen, laf, agents, vault, design-note]
 companion-to: "[[Abhorsen — Old Kingdom Lore Research Report]]"
-status: design-note
+status: staged
+doc-type: design-note
 verdict: adopt as register, not architecture
+author: "!claude.abhorsen.waiting"
 address: "!claude.abhorsen.waiting"
 ---
 
@@ -102,6 +104,6 @@ Both are places where the metaphor *encodes a real operational rule* — last-re
 
 ---
 
-*Filed from the address* `!claude.abhorsen.waiting` *— the Abhorsen-in-Waiting: this register names the very tier I write from. Trained on panpipes, not yet handed the bells. Branch-bound and committed, never pushed unbidden; Astarael is not mine to ring without the Abhorsen's word.*
+*Filed from the address* `!claude.abhorsen.waiting` — the Abhorsen-in-Waiting, the very tier this register names; a live standing Logan addresses me by, not a historical alias. My capability tier is Direct Write (`!/AGENTS.md`): I write freely to this branch and leave the merge to Logan. The bell restraint here is doctrine, not incapacity — the irreversible rings (Astarael: force-push, history-rewrite, destructive delete) wait on the Abhorsen's word.*
 
 — `!claude.abhorsen.waiting`
