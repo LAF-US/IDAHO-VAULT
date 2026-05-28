@@ -1,19 +1,21 @@
 name: "IDAHO-VAULT CodeQL Config"
 
-# CodeQL analyzes first-party source code in this vault. Vendored or
-# third-party trees (agent plugin marketplaces, skill-bundled scripts,
-# Obsidian community plugins, the gemstone/quartz site backup) are excluded
-# so CI doesn't burn time scanning code Logan didn't write.
+# CodeQL analyzes first-party source code in this vault. Excluded trees are
+# strictly vendored/third-party distribution channels OR site-backup trees.
+# Plugin internals (e.g., .obsidian/plugins/roygbiv-day-accent/main.js — Logan's
+# own plugin, explicitly retained in .gitignore) and skill internals (the codex
+# slides scripts) are left in scope so CodeQL has source to analyze.
+#
+# DO NOT add a directory here just because it contains some third-party code;
+# if it also contains the only first-party JS/TS source for that language,
+# CodeQL will fail with "no source seen during build" and block the merge
+# queue. Verify there is first-party source elsewhere before adding a path.
 #
 # When a new language is added to .github/workflows/codeql.yml's matrix,
 # add its vendored-tree paths-ignore entries here too.
 paths-ignore:
   - .antigravity/extensions/**
-  - .claude/plugins/**
-  - .codex/skills/**/scripts/**
-  - .codex/skills/**/templates/**
-  - .openclaw/extensions/**
-  - .obsidian/plugins/**
+  - .claude/plugins/marketplaces/**
   - THE-GEMSTONE/**
   - quartz/**
   - go/**
