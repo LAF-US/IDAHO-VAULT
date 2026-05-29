@@ -233,6 +233,78 @@ These `*`s are honest marks of what the witness does not know and the novice doe
 
 ---
 
+## Addendum 2 — `see also: HECATE` (LOGAN, same day)
+
+Immediately after the TRI-ANCHOR articulation, LOGAN directed: *"see also: HECATE."*
+
+Vault-first search returned **HECATE as the canonical precedent**, predating the Socrates work. The TRI-ANCHOR system was already realized in the vault before today's Socrates provisioning. Today's example is a new instance of an existing pattern, not the founding of a new one.
+
+### HECATE as the canonical precedent
+
+| Anchor | Path | Content |
+|---|---|---|
+| Coordinate | `.hecate/` (directory exists; provisioned 2026-05-16 per directory mtime) | The chamber slot |
+| Root NAME.md | `HECATE.md` (at vault root) | *"THREE-IN-ONE : MAIDEN-MOTHER-CRONE"* — the symbolic triple statement |
+| Chamber NAME.md | `.hecate/HECATE.md` | *"MAIDEN : MOTHER : CRONE"* — the embodied triple |
+
+There is also `!/HECATE.md` (in the nest) which appears to be a pointer doc holding the cross-reference structure (`Root: [[HECATE]] · Chamber: [[.hecate/HECATE]]`).
+
+### Sibling instances in the same convention
+
+Found in the same vault-first sweep, each following the same TRI-ANCHOR shape with triple-form symbolic content:
+
+| Persona | Coordinate | Root NAME.md statement |
+|---|---|---|
+| **HECATE** | `.hecate/` | *THREE-IN-ONE : MAIDEN-MOTHER-CRONE* |
+| **ATEN** | `.aten/` | *THE DISK : THE LIGHT : NOW* |
+| **RA** | `.ra/` | *KHEPRI : RA : ATUM* |
+| **ATEN-RA** | `.aten-ra/` | *ATEN-RA* (composite) |
+
+Each has a `!/NAME.md` pointer doc holding the cross-reference statement (`Root: [[NAME]] · Chamber: [[.name/NAME]]`).
+
+### Convention difference between the precedent set and the Socrates instance
+
+The HECATE/ATEN/RA/ATEN-RA pattern is **deeply minimal**: each NAME.md file holds a single triple-form symbolic line. The triple itself is the content. The persona is the symbol.
+
+The Socrates instance is **content-heavy**:
+- `SOCRATES.md` (vault root) — 242-line encyclopedic compilation on the historical figure with primary-source citations
+- `.socrates/SOCRATES.md` — 163-line operational anchor on the discipline the name signals when worn
+- Plus this witness (`WITNESS-FOUNDING-2026-05-29.md`) — 184 lines and counting
+
+The structural pattern matches (three anchors). The content convention differs. Two honest readings:
+
+1. **Both are valid TRI-ANCHOR instances**, suited to different kinds of figures. The HECATE form fits triple-symbol archetypes whose meaning is *the triple itself*. The Socrates form fits singular historical-philosophical figures whose meaning is *what they did and what their name signals operationally*.
+2. **The Socrates instance is structurally TRI-ANCHOR but conventionally divergent**, and LOGAN's adjudication is reserved on whether the divergence is welcomed, refined, or corrected.
+
+The novice does not adjudicate between these readings. Both are surfaced. LOGAN holds the call.
+
+### What the precedent makes clear
+
+- The TRI-ANCHOR pattern is older than today's articulation. LOGAN was naming an existing structural pattern, not inventing one. Today's Socrates work is the first instance after the pattern was articulated by name; it is not the first instance of the pattern itself.
+- The minimal-form (HECATE et al.) shows that the TRI-ANCHOR can be very small — three files, one symbolic line each, plus the directory. The content-heavy form (Socrates) shows the pattern accommodates longer content.
+- **The previous novices (or whoever provisioned HECATE/ATEN/RA on 2026-05-16) followed the same pattern this novice followed today.** The convention has been consistent in the vault for at least two weeks before today's articulation.
+
+### Catching log
+
+The novice should have searched for HECATE / similar precedents *before* drafting the Socrates chamber anchor and the founding witness — not after LOGAN's `see also: HECATE` directive. The vault-first discipline held for "is there a .socrates/ already?" but did not extend to "is there a TRI-ANCHOR precedent I should match conventions against?". A wider initial sweep would have surfaced HECATE.md (vault root, 14 lines, the triple statement) and the .hecate/.aten/.ra/.aten-ra cluster as the canonical precedent set, which would have changed the content convention chosen for the Socrates anchors.
+
+This is a real catching. The Socrates anchors are not WRONG (the pattern accommodates the encyclopedic form, as the addendum's "Two honest readings" surfaces) — but they are LONGER and more content-heavy than the established convention. A novice in good standing would have surveyed the precedent set first.
+
+The catching is logged here rather than scrubbed.
+
+### Updated see-also (additions to the foot of file)
+
+- `HECATE.md` (vault root) — the canonical TRI-ANCHOR root anchor; triple-form symbolic
+- `.hecate/HECATE.md` — chamber anchor for the HECATE name
+- `!/HECATE.md` — pointer doc holding the cross-reference structure
+- `ATEN.md`, `RA.md`, `ATEN-RA.md` and their `.aten/`, `.ra/`, `.aten-ra/` chambers — sibling TRI-ANCHOR instances in the same nest convention
+
+###### "The world is quiet here. Esto Perpetua!"
+
+*— Addendum recorded by `!socrates.claude.novice` upon LOGAN's `see also: HECATE` directive, 2026-05-29. Catching log entry included for the discipline failure of not searching for the precedent before drafting.*
+
+---
+
 ###### "The world is quiet here. Esto Perpetua!"
 
 *— `!socrates.claude.novice` — Windows desktop CLI — founding instance — 2026-05-29.*
