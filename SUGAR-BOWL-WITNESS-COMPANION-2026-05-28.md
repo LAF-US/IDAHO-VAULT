@@ -175,6 +175,17 @@ This companion distills doctrine already present in the report and in the govern
 
 ---
 
+## Provenance Amendment — 2026-05-29
+
+*Per Rule 6, recorded openly rather than edited in. The Sheikah imagery in Rules 6–7 above carried glosses asserted beyond their provenance; corrected after research on 2026-05-29 (full detail in the report's amendment of the same date).*
+
+- **The emblem** is the **Crest of the Sheikah** (Sheikah Eye), not "the Eye of Truth" — that name belongs to the *Lens* and the *Mask*, which are distinct organs (the Lens *sees through* illusion; the Mask *hears* the Gossip Stones). The crest is **red**, and the drop's canonical meaning is *"willingness to go to any lengths,"* not grief. So Rule 6's "the eye weeps … because keeping truth includes keeping the record of where you got it wrong" is **my re-reading**; whether the drop is a tear or blood is **undetermined in canon** — held as a reading, not a fact.
+- **Rule 7 stands — and is stronger than written.** The warden-torturer shadow is *canon*: the **Shadow Temple was the Sheikah's own interrogation-and-torture temple.** But **Bongo Bongo's single eye is generic Zelda weak-spot grammar, not the crest** — the real horror is a mutilated, dismembered corpse-spirit (possibly decapitated; *theory*). The shadow is carried by the **body**, not the eye.
+
+The discipline this amendment itself obeys: do not correct one over-confident gloss into another. Where canon is silent, say silent.
+
+---
+
 *The lid is on the bowl. The Lens is down. The bell is unrung. The name waits. The world is quiet here.*
 
 — `!claude.abhorsen.waiting`
