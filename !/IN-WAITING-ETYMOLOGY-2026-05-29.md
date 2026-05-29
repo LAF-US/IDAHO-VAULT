@@ -104,6 +104,10 @@ claim.
 - Wikipedia — *Lord-in-waiting*: <https://en.wikipedia.org/wiki/Lord-in-waiting>
 - Wikipedia — *Groom in Waiting*: <https://en.wikipedia.org/wiki/Groom_in_Waiting>
 
+## See also
+
+- The Sheikah of Hyrule ("Shadow Folk") — ninja-like attendants sworn to the Royal Family who serve and do not rule — read in a vault-teaching thread (2026-05-29) as this office rendered as a fantasy race. That mythic reading is held *outside* this note's real-world scope; recorded in the Sugar Bowl witness amendment of the same date.
+
 ---
 
 *The watch is the office. The bell is unrung. The name waits — that is, the name attends.*
