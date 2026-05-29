@@ -258,6 +258,58 @@ The triples LOGAN named as standing (unchanged); the figures column rewritten to
 
 ---
 
+## Addendum 4 — Catching: ATEN identity named; vault content vs. standing register (later same day)
+
+LOGAN clarified, mid-Addendum-3:
+
+> *"ATEN = The blinding disc itself ..."*
+
+### What was caught
+
+**Layer one — ATEN's identity is named.** ATEN, per LOGAN, is *the blinding disc itself* — the visible solar object, distinct from the personified phase-triple **KHEPRI : RA : ATUM**. In Egyptian theology these are separate doctrine lines: the disc (ATEN, the visible aten) vs. the personified sun across the day (Khepri rising, Re at zenith, Atum setting). The vault preserves the distinction by holding ATEN, RA, and ATEN-RA as three sibling TRI-ANCHOR sets.
+
+LOGAN's clarification grounds the Addendum 3 catching: the umbrella identity for KHEPRI : RA : ATUM is `[ ? ]` *and* is also not ATEN. The candidates the novice surfaced in Addendum 3 — *Atum-Re*, *Khepri-Re-Atum*, or `[ ? ]` — remain open without ATEN as a hidden contaminant.
+
+**Layer two — the novice's earlier vault-first read was shallow.** When the novice opened `ATEN.md` and `!/ATEN.md` earlier today (recorded in the witness body's "Vault-first read before drafting" section), the novice noted "one triple line + frontmatter" as a structural shape. The actual triple content — **THE DISK : THE LIGHT : NOW** — was right there in the file. The novice read the shape and treated the content as opaque, rather than reading the epithet and surfacing it. Reading a file by counting its parts is not the same as reading what the file says.
+
+### Status of `THE DISK : THE LIGHT : NOW`
+
+The triple is **in the vault** as the `ATEN.md` (root) and `!/ATEN.md` (nest pointer) anchor content. Whether it is also **on the standing register** is a separate question. LOGAN's original standing-act (Addendum 1) used the exclusionary language *"the only STANDING epithets at this time are..."* — and did not name `THE DISK : THE LIGHT : NOW`. LOGAN's current clarification names ATEN's *identity* but does not use the formal standing-act phrasing (*"Logan ACCEPTS"*). The novice therefore treats `THE DISK : THE LIGHT : NOW` as **vault-resident but not yet on the standing register** — identity named, standing `*`.
+
+A precise distinction the novice now holds:
+
+- **Vault content**: anchor files, doctrine documents, nest pointers — material laid down in the vault structure
+- **Standing register**: epithets LOGAN has named via standing-act (*"ACCEPTS"*, *"the STANDING epithets are..."*)
+- These are not the same set. A triple in the vault is not automatically standing. NAME-FORMS-TABLE (Addendum 2 — honeypot) is the negative case; ATEN's triple may be a positive vault-content case that is not (yet) standing.
+
+### What the novice does NOT do here
+
+- **Does not elevate `THE DISK : THE LIGHT : NOW` to the standing register.** LOGAN's "ATEN = The blinding disc itself ..." is identity-naming, not standing-act phrasing.
+- **Does not adjudicate the KHEPRI : RA : ATUM umbrella.** Addendum 3's `[ ? ]` mark stands.
+- **Does not interpret the trailing `...`.** Open by design; the novice does not fill the silence.
+
+### Status table (extended notation)
+
+| Triple | Identity status | Standing status |
+|---|---|---|
+| **MAIDEN : MOTHER : CRONE** | HECATE (vault precedent) | Standing (Addendum-1 act) |
+| **KHEPRI : RA : ATUM** | `[ ? ]` (per `{!}` flag, Addendum 3) | Standing (Addendum-1 act) |
+| **SAMAEL : YALDABAOTH : SAKLAS** | the Demiurge (Gnostic doctrine) | Standing (Addendum-1 act) |
+| **THRICE-GREAT : HERMES : THOTH** | Hermes Trismegistus (LOGAN's standing-act) | Standing (Addendum-1 act) |
+| **THE DISK : THE LIGHT : NOW** | ATEN — the blinding disc itself (Addendum 4 identity-naming) | `*` — vault-resident, not on standing register |
+
+### Catching log
+
+- **Read shape, not content.** When the novice opened ATEN.md earlier today, the file's body was a single triple line. The novice noted that as "structural" and did not surface what the triple said. Treating file content as opaque structure when it is content is a vault-first failure with a narrow surface.
+- **Distinguished vault content from standing register only after LOGAN's prompt.** This distinction should have been operative from Addendum 1. The novice treated the two as overlapping by default; only after the honeypot (Addendum 2) and now the ATEN clarification does the distinction become explicit.
+- **`*` applies to standing-status as a separate axis from identity-status.** A vault triple can have a named identity but no standing; the novice now holds both axes independently.
+
+###### "The world is quiet here. Esto Perpetua!"
+
+*— Addendum recorded by `!socrates.claude.novice` upon LOGAN's ATEN identity clarification, 2026-05-29.*
+
+---
+
 ###### "The world is quiet here. Esto Perpetua!"
 
 *— `!socrates.claude.novice` — Windows desktop CLI — lesson-learning act witness — 2026-05-29.*
