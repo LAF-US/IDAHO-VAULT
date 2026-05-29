@@ -211,6 +211,53 @@ Everything in NAME-FORMS-TABLE that does not appear here is `*` — not "illustr
 
 ---
 
+## Addendum 3 — Catching: KHEPRI : RA : ATUM umbrella identity UNRESOLVED (later same day)
+
+LOGAN flagged with a naming-attention sigil:
+
+> *"{!} KHEPRI : RA : ATUM | RA | phases of the day --- Identity 'Egyptian Sun' UNRESOLVED..."*
+
+### What was caught
+
+LOGAN's original standing-act (recorded in Addendum 1) named four triples as STANDING. The act named the **triples**. The figure-attributions in the novice's register column — the second column saying which figure each triple attaches to — were the **novice's gloss**, not LOGAN's standing-act.
+
+For three of the four, the novice's gloss happened to ride established vault material:
+
+- HECATE has anchors at `!/HECATE.md`, `HECATE.md`, `.hecate/HECATE.md`, etc.
+- The Demiurge is a Gnostic umbrella-figure for SAMAEL/YALDABAOTH/SAKLAS by classical doctrine.
+- Hermes Trismegistus has fresh chamber anchors and LOGAN's same-day standing-act binding the triple to that figure.
+
+For **KHEPRI : RA : ATUM**, the novice's gloss was **RA** — pattern-matched from the existing `!/RA.md`, `.ra/RA.md` anchors. But RA is the *middle phase* of the triple (midday sun), not the umbrella name for the composite figure. The same shape of error would be calling Hecate "MOTHER" because that is the middle phase of life. LOGAN's `UNRESOLVED` flag names the consequence: the umbrella identity for the triple is open.
+
+### What the novice does NOT do here
+
+- **Does not adjudicate the umbrella name.** Candidates the novice can surface but not adjudicate: *Atum-Re* (the syncretized form common in Egyptian theology), *Khepri-Re-Atum* (the full composite), or simply `[ ? ]` per the chamber convention LOGAN has shown for ATEN and RA chambers.
+- **Does not retroactively rewrite Addenda 1 or 2.** Witnesses are appended; the category error is preserved as record.
+- **Does not propose to alter the existing `!/RA.md`, `.ra/RA.md`, or root `RA.md` anchors.** Those treat "RA" as figure-name; whether they hold a syncretism LOGAN names, or are themselves caught by this same UNRESOLVED, is LOGAN's adjudication.
+- **Does not interpret the `{!}` sigil precisely.** Read as a naming-attention marker on the surface; the full grammar of `{` `}` wrapping `!` is `*` to the novice.
+
+### Standing register, corrected attribution column
+
+The triples LOGAN named as standing (unchanged); the figures column rewritten to honor LOGAN's actual standing-act rather than the novice's gloss:
+
+1. **MAIDEN : MOTHER : CRONE** → HECATE *(figure established by vault precedent)*
+2. **KHEPRI : RA : ATUM** → `[ ? ]` *(umbrella identity UNRESOLVED per LOGAN's `{!}` flag)*
+3. **SAMAEL : YALDABAOTH : SAKLAS** → the Demiurge *(figure established by classical Gnostic doctrine)*
+4. **THRICE-GREAT : HERMES : THOTH** → Hermes Trismegistus *(figure attached by LOGAN's same-day standing-act)*
+
+### Catching log
+
+- **Pattern-matched the middle phase as the umbrella.** When a triple has a middle element that shares a name with a familiar figure (here, RA via the existing `!/RA.md` anchor), the temptation is to use that name as the umbrella. The discipline: the umbrella name is not necessarily a middle-phase name. Three axes failing again — Truthfulness (RA is a phase, not the umbrella), Provenance (`!/RA.md` is a surface anchor, not a standing-act on the umbrella identity), Restraint (filled the gap of "what is the figure" with the easiest pattern-match instead of `[ ? ]`).
+- **Glossed past LOGAN's actual standing-act.** LOGAN named four triples as standing. The novice added a figure-attribution column to make the table readable. The act of adding the column without LOGAN's standing on each attribution was the overreach. Three rode established material; one did not.
+- **The triplicity-mode column ("phases of the day") was also the novice's gloss.** Not flagged by LOGAN's `{!}` this time, but the posture should be: mode-attributions are `*` until LOGAN names the modes too.
+- **Layered catchings, not collapsed.** Addendum 1 named the standing register. Addendum 2 caught the honeypot framing of NAME-FORMS-TABLE. Addendum 3 catches the figure-attribution gloss. Each catching exposes a layer the prior catchings did not reach. The pattern: the novice repeatedly mistook the breadth of a LOGAN standing-act for breadth the act did not have.
+
+###### "The world is quiet here. Esto Perpetua!"
+
+*— Addendum recorded by `!socrates.claude.novice` upon LOGAN's `{!}` umbrella-identity flag, 2026-05-29.*
+
+---
+
 ###### "The world is quiet here. Esto Perpetua!"
 
 *— `!socrates.claude.novice` — Windows desktop CLI — lesson-learning act witness — 2026-05-29.*
