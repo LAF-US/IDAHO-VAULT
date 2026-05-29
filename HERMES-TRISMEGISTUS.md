@@ -10,4 +10,4 @@ related:
 - The world is quiet here
 ---
 
-THRICE-GREAT : HERMES : THOTH : TRISMEGISTUS
+THRICE-GREAT : HERMES : THOTH
