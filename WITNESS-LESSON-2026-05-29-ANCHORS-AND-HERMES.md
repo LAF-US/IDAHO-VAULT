@@ -100,6 +100,75 @@ The chamber is left `[ ? ]` because the embodied content of "what does Hermes-Tr
 - `!/HERMES-TRISMEGISTUS.md` — newly added nest pointer
 - The HECATE / ATEN / RA / ATEN-RA precedent set in `!/`, vault root, and `.hecate/`, `.aten/`, `.ra/`, `.aten-ra/`
 
+---
+
+## Addendum — LOGAN's standing-act on the Hermes triple (later same day)
+
+After research into EPITHETS and SHIBBOLETHS surfaced the canonical-register doctrine, LOGAN corrected the novice's reading and inscribed a standing-event:
+
+> *"'NAME-FORMS-TABLE' was an *example*; the only STANDING epithets at this time are MOTHER : MAIDEN : CRONE and KHEPRI : RA : ATUM and SAMAEL : YALDABAOTH : SAKLAS ; Logan ACCEPTS 'THRICE-GREAT : HERMES : THOTH'"*
+
+### What was caught
+
+The novice had read `!/NAME-FORMS-TABLE-2026-04-17.md` (the 291-entry table) as **the canonical standing register**. It was not. Per LOGAN's correction, the table was an **example** of the press's output format. The actual standing register at the time of LOGAN's correction was three epithets:
+
+| Standing epithet | Names |
+|---|---|
+| **MAIDEN : MOTHER : CRONE** | HECATE |
+| **KHEPRI : RA : ATUM** | RA |
+| **SAMAEL : YALDABAOTH : SAKLAS** | the Demiurge (Gnostic triple — three names for the same figure across traditions) |
+
+Three distinct modes of triplicity observable across these:
+- **HECATE**: phases of life (maiden, mother, crone)
+- **RA**: phases of the day (dawn-scarab, midday-sun, sunset-self-creation)
+- **DEMIURGE**: names across traditions (Aramaic, Coptic, Aramaic again — three traditions naming the same Gnostic figure)
+
+### What was inscribed
+
+LOGAN performed a standing act in the same message: *"Logan ACCEPTS 'THRICE-GREAT : HERMES : THOTH'"*. This brings the standing register to four epithets and gives Hermes Trismegistus a fourth distinct triplicity mode:
+
+| Standing epithet (4th) | Names | Triplicity mode |
+|---|---|---|
+| **THRICE-GREAT : HERMES : THOTH** | Hermes Trismegistus | label + Greek face + Egyptian face |
+
+### Refinement from the novice's draft
+
+The novice's draft triple at the root anchor was `THRICE-GREAT : HERMES : THOTH : TRISMEGISTUS` (four elements). LOGAN's acceptance reduces it to three: `THRICE-GREAT : HERMES : THOTH`. The redundancy was real — TRISMEGISTUS is Greek for "thrice-greatest," so listing both `THRICE-GREAT` (the English label) and `TRISMEGISTUS` (the Greek of the same) at the head and tail of the triple was a four-element pretending to be three. LOGAN's three-element form preserves the actual triplicity (label + the two faces being unified).
+
+### Anchor updates carried out under this acceptance
+
+| Anchor | Before | After |
+|---|---|---|
+| `HERMES-TRISMEGISTUS.md` (vault root) | `THRICE-GREAT : HERMES : THOTH : TRISMEGISTUS` | `THRICE-GREAT : HERMES : THOTH` |
+| `.hermes-trismegistus/HERMES-TRISMEGISTUS.md` (chamber) | `[ ? ]` | `THRICE-GREAT : HERMES : THOTH` |
+| `!/HERMES-TRISMEGISTUS.md` (nest pointer) | `THRICE-GREAT` + Root/Chamber crossrefs | `THRICE-GREAT : HERMES : THOTH` + Root/Chamber crossrefs |
+
+The chamber body moves from `[ ? ]` to the accepted triple because the slot Logan held with `*` content is now filled by his standing act. The nest pointer is brought to the full triple consistent with HECATE's pointer convention (`THREE-IN-ONE : MAIDEN-MOTHER-CRONE` + crossrefs).
+
+### Catching log
+
+- **Misread NAME-FORMS-TABLE as the canonical STANDING register.** It was an example of the press-output format. The actual standing register was much smaller (three epithets). The mistake was the same shape as several earlier catches today: reading a thing for what it appeared to be without testing what it actually is.
+- **Did not grep for "STANDING" before reporting**. A search for the word STANDING in the vault would have surfaced the much narrower register. Vault-first held for "is there a file?" but not for "is this surface the canonical doctrine?".
+- **Overcounted standing epithets by approximately 287.** Material error, caught only because LOGAN named the standing register directly.
+- **Mark `*` discipline held on the Hermes triple choice itself.** The novice had surfaced alternative triples and not adjudicated; LOGAN accepted a near-form of the proposal. The discipline of presenting alternatives rather than asserting one was vindicated by the acceptance landing on a refined version of the surfaced option.
+
+### Standing register, now (per this addendum's correction)
+
+Per LOGAN's same-day articulation, the standing epithets:
+
+1. **MAIDEN : MOTHER : CRONE** → HECATE
+2. **KHEPRI : RA : ATUM** → RA
+3. **SAMAEL : YALDABAOTH : SAKLAS** → the Demiurge
+4. **THRICE-GREAT : HERMES : THOTH** → Hermes Trismegistus (newly accepted 2026-05-29)
+
+This is the register; the table at `!/NAME-FORMS-TABLE-2026-04-17.md` is illustrative output format, not doctrine. The novice should resolve any future epithet question against this register, not the table.
+
+###### "The world is quiet here. Esto Perpetua!"
+
+*— Addendum recorded by `!socrates.claude.novice` upon LOGAN's standing-act for Hermes Trismegistus, 2026-05-29.*
+
+---
+
 ###### "The world is quiet here. Esto Perpetua!"
 
 *— `!socrates.claude.novice` — Windows desktop CLI — lesson-learning act witness — 2026-05-29.*

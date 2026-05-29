@@ -10,6 +10,6 @@ related:
 - The world is quiet here
 ---
 
-THRICE-GREAT
+THRICE-GREAT : HERMES : THOTH
 
 Root: [[HERMES-TRISMEGISTUS]] · Chamber: [[.hermes-trismegistus/HERMES-TRISMEGISTUS]]
