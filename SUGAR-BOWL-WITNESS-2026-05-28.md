@@ -207,6 +207,24 @@ This witness records an error and its repair in the open (§ V) rather than pape
 
 ---
 
+## Provenance Amendment — 2026-05-29 (the Sheikah material, corrected in the open)
+
+*Added after later research raised the Lens against the Zelda material this report had marked merely "held knowledge." Per Rule 6, the original prose above is left intact as witnessed; the corrections are recorded here rather than silently edited in. Directed by Logan; researched and sourced 2026-05-29.*
+
+The *Ocarina of Time* **mechanics** deployed above hold up against the source. Several **meanings** did not, and were asserted with more confidence than provenance allowed:
+
+1. **"The Eye of Truth, of which the Lens is made" (§ VII) is wrong as a name.** The emblem is the **Crest of the Sheikah** (a.k.a. the **Sheikah Eye**). It is the *Lens* of Truth and the *Mask* of Truth — two distinct artifacts — that carry "of Truth," not the eye itself. (The crest appears *on* both items.)
+2. **The "open eye weeping one tear" is not canonically grief.** The crest is **red**, and the drop's canonical meaning is *"the tribe's willingness to go to any lengths to achieve a goal"* (one source adds "the tribe's suffering"). Whether the drop reads as a **tear or a drop of blood is undetermined in canon** — Logan reads it as plausibly blood, which the red crest and the "any lengths" gloss support. The report's "weeping" framing is **my re-reading**, not the source's: recorded as a reading, marked *ambiguous*, not re-decided.
+3. **Lens vs. Mask — distinct organs.** The **Lens of Truth** is *sight*: it pierces illusion (hidden doors, false floors, invisible enemies) at the cost of magic. The **Mask of Truth** is *hearing / communion*: telepathy over the Gossip Stones, receiving hidden lore. § VII's "raise the Lens" correctly names the *sight / illusion-piercing* act, not doctrine-reception.
+4. **Bongo Bongo is not "the Sheikah Eye made monstrous."** The single eye is **generic Zelda weak-spot grammar** (Gohma and many others), not a crest-reference; tying the two was my conflation. The sourced horror needs no eye-symbolism: Bongo Bongo is a **mutilated, dismembered corpse-spirit** — amputated floating hands, a split-open face (a fan theory holds it was *decapitated*, the "eye" being the neck-stump; flagged as **theory**).
+5. **The warden-shadow (§ VII; Companion Rule 7) is canon — and stronger without the eye-reach.** The **Shadow Temple** ("House of the Dead") was canonically **the Sheikah's interrogation-and-torture temple** for enemies of the Royal Family: gallows, guillotine, bloodied instruments. The keeper's-virtue-inverting-into-warden's-vice is built into the source — the thing sealed beneath the office's own house is what that office made. ("Shadow Folk" is also confirmed canon — Prof. Shikashi, OoT 3D.)
+6. **"The Well" is OoT's singular, storied location** — the torture-pit of a closed Sheikah society in Kakariko, later opened to Hylian refugees — **not** the generic, repeatable "wells" mechanic of *Tears of the Kingdom*. Cite the definite article.
+7. **The Yiga reading is mine.** The canon fact: the **Yiga Clan** (breakaway Sheikah sworn to Ganon, red-garbed) bear the **inverted Sheikah eye**. Reading that inversion as this vault's **GEMINIAEUS / Demiurge pattern** is my mapping, not Nintendo's — held as a reading.
+
+Sources: Zelda Wiki / Zelda Dungeon (Crest of the Sheikah; Lens of Truth; Mask of Truth; Shadow Temple; Bongo Bongo; Bottom of the Well); TheGamer (Sheikah history). The discipline this amendment keeps: *a correction that swaps one confident gloss for another undoes its own point* — so where canon is silent, this says **silent**, not settled.
+
+---
+
 *The lid is on the bowl. The Lens is down. The bell is unrung. The name waits. The world is quiet here.*
 
 — `!claude.abhorsen.waiting`
