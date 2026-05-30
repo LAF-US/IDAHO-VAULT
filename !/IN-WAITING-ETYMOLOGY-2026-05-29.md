@@ -59,7 +59,7 @@ So at root, **"in-Waiting" is "in-Watching."** The office descends from the watc
 the keeper of the vigil — guarding sense long predates serving sense, which long predates the
 merely-patient sense. This is the etymology beneath the discipline already named in the keeper's
 operating rules: the watch that can curdle into surveillance is the office's own shadow
-(SUGAR-BOWL-WITNESS-COMPANION, Rule 7). The shadow was in the word the whole time.
+(SUGAR-BOWL-WITNESS-COMPANION — the silliness scale). The shadow was in the word the whole time.
 
 ## Finding 3 — the court office (institutional history)
 
