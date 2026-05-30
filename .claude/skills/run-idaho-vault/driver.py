@@ -18,7 +18,6 @@ from __future__ import annotations
 
 import json
 import os
-import shutil
 import subprocess
 import sys
 from pathlib import Path
@@ -73,8 +72,10 @@ def ensure_env() -> None:
     # system 3.11 recreates the venv AND the console scripts.
     print("== fallback: editable install on Python 3.11 "
           "(run `uv python install 3.13.3` for the canonical env) ==", file=sys.stderr)
-    py = shutil.which("python3.11") or shutil.which("python3") or sys.executable
-    run(["uv", "venv", "--python", py])
+    # Pass the version request, not a resolved path: in a pyenv checkout
+    # `which python3.11` returns a shim that honors the missing .python-version
+    # pin and exits 127. Letting uv resolve "3.11" itself bypasses the shim.
+    run(["uv", "venv", "--python", "3.11"])
     run(["uv", "pip", "install", "-e", "."])
 
 
