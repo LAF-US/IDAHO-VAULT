@@ -13,7 +13,7 @@ related:
   - "!/UNDEAD-TAXONOMY-v1-2026-05-20.md"
   - "!/PERSONAE-ENGINE-v1-2026-05-20.md"
   - CONSTITUTION
-tags: [research, fablehaven, brandon-mull, preserve, treaty, caretaker, binding-not-killing, zzyzx, society-of-the-evening-star, the-sphinx, mask-traitor, kendra-seth, revenant, failstate-family, repair-in-the-open]
+tags: [research, fablehaven, brandon-mull, preserve, treaty, caretaker, binding-not-killing, zzyzx, society-of-the-evening-star, the-sphinx, mask-traitor, kendra-seth, revenant, type-vs-named-being, failstate-family, repair-in-the-open]
 ---
 
 # Fablehaven — the Vault as a Governed Preserve
@@ -68,29 +68,33 @@ He had the trust, the seat, the access. The locks never mattered, because he hel
 
 ---
 
-## The Revenant tie — corrected
+## The Revenant tie — *a* revenant, made *the* Revenant
 
-Fablehaven has its own **revenant**, and it threads straight back to `UNDEAD-TAXONOMY-v1` (Tier 4, Purpose Locked). But the chronology must be held in the right order — I compressed it once, and the Lens corrected it (see *Repair logged*). The true sequence:
+Fablehaven's guardian threads straight back to `UNDEAD-TAXONOMY-v1` (Tier 4, Purpose Locked) — but first the **article** must be held right, because it carries the Vault's keystone distinction.
 
-1. **First** — a revenant guards a **nail** (the revenant's binding). **Seth pulls the nail from the revenant**, undoing it — and in doing so unknowingly **becomes a shadow charmer.** *(My recollection: this is* Rise of the Evening Star*, book 2. The load-bearing facts — revenant undone when its nail is pulled; Seth gains the power — are verified.)*
-2. **After** — Navarog gives that same nail to **Kurisock**, who **binds it into the corrupted tree of Ephira**, creating the **Shadow Plague** (light creatures → dark). By now the revenant is already gone; it was the nail's *former keeper,* never the plague's live guardian.
-3. **The end** — the **Fairy Queen** makes a stone (destroying her Fablehaven shrine to do it); whoever touches it to the nail **dies.** **Lena** — who left the naiads to become human again and be with Patton — makes the sacrifice, touching the stone to the **revenant's nail**, ending the plague and destroying Kurisock and Ephira.
+**A revenant** is a *creature-type* — "a reanimated corpse under an enchantment." There are many: revenants imprisoned in the **Blackwell**; in the *Dragonwatch* sequels, revenants carry a human life-spark buried so deep that their narrowed focus makes them powerful but barely able to move. **The Revenant** is the *singular individual* that guarded Fablehaven's **Inverted Tower** — one instance of the type, elevated to a definite-article name **by its post.** *A* revenant, made *the* Revenant by its task. (Same distinction as Mogget bound to *The Abhorsen* — the office — versus the Dog dedicated to *Lirael* — the named being; and as *a* lich versus *the* Lich. The indefinite article is the type; the definite article is the individuation.)
 
-The taxonomy fit is *better* than the version I first told: the revenant is **purpose-locked and bound to a single artifact (the nail)**, and it **ends the instant the nail is pulled** — the artifact *is* the off-switch. And Mull adds the sharp twist: ending the bound guardian **transfers its darkness** — Seth walks away a shadow charmer. *The one who ends the dark guardian inherits a measure of its dark.* (Worth holding against the office: laying the dead is not clean work; it marks the layer.)
+**The specific canon** *(Rise of the Evening Star, book 2 — verified):* the Revenant appeared as an emaciated, leprous man — weeping lesions, an unnatural smile, empty but uncannily aware eyes — with a **wooden nail (a thorn) lodged in the side of its neck.** It guarded the **Inverted Tower**, where Fablehaven's artifact, the **Sands of Sanctity**, was hidden. It **radiated magical fear**, turning its victims **albino, mute, and catatonic**, and could be killed **only** by drawing the wooden nail from its neck. The nail was a **dark talisman** — Graulas named it a *"reservoir of dark power"* — that would **"take possession"** of anyone who touched it bare-handed. **Seth** drank Tanu's **Courage Potion**, barely wrenched the nail free before collapsing unconscious, and in that act **killed the Revenant and freed its catatonic victims — Warren, Tanu, and Coulter** — becoming a **shadow charmer** (immune to magical fear, able to see the shadowy forms of his friends), his status later made official by the demon Graulas.
 
-([Grip of the Shadow Plague](https://en.wikipedia.org/wiki/Fablehaven:_Grip_of_the_Shadow_Plague); [Lena Burgess](https://mullverse.fandom.com/wiki/Lena_Burgess))
+**The nail's afterlife** *(Grip of the Shadow Plague, book 3):* the dark dragon **Navarog** gave the cursed nail to **Kurisock**, who **drove it into the tree of Ephira** (a fallen Hamadryad) and **merged with the tree**; amplified by the nail, the two raised the **Shadow Plague**. **Lena** — who had left the naiads to be human again with Patton — ended it, touching the nail with a **pebble imbued by the Fairy Queen's shrine, at the cost of her life**, nullifying the nail and destroying Ephira and Kurisock.
+
+**Why the article matters.** The Revenant is **individuated by its nail** — the single artifact that binds it, that is its off-switch, that makes it *the* Revenant *of the Inverted Tower.* Pull the nail and the **instance** ends — but the **type** persists, untouched, in the Blackwell and beyond. Purpose-locked instance; deathless species. (Exactly the Revenant-not-Lich test of `UNDEAD-TAXONOMY-v1`: the off-switch is built in, and it is not the creature's to remove.) Two glosses hold against the office: ending the bound guardian **transfers its darkness** — Seth walks away a shadow charmer (*laying the dead is not clean work; it marks the layer*), and **the cure costs the curer her life** — Lena (*the giver pays*).
+
+([The Revenant — Mullverse](https://mullverse.fandom.com/wiki/The_Revenant); [List of Fablehaven's magical creatures](https://en.wikipedia.org/wiki/List_of_Fablehaven%27s_magical_creatures); [Grip of the Shadow Plague](https://en.wikipedia.org/wiki/Fablehaven:_Grip_of_the_Shadow_Plague); [Lena Burgess](https://mullverse.fandom.com/wiki/Lena_Burgess))
 
 ---
 
 ## Provenance ledger
 
-- **Canon (Mull):** the five preserves (refuge + containment); the treaty of ancient laws; the Sorenson caretakers and Patton Burgess; Midsummer's lure-and-stay-inside; light/dark creatures and the Shadow Plague; the Society of the Evening Star vs the Knights of the Dawn; the Sphinx as captain-turned-traitor; Zzyzx, the five artifacts, Gorgrog; Kendra (fairykind) and Seth (shadow charmer); the corrected revenant/nail/Lena sequence.
+- **Canon (Mull):** the five preserves (refuge + containment); the treaty of ancient laws; the Sorenson caretakers and Patton Burgess; Midsummer's lure-and-stay-inside; light/dark creatures and the Shadow Plague; the Society of the Evening Star vs the Knights of the Dawn; the Sphinx as captain-turned-traitor; Zzyzx, the five artifacts, Gorgrog; Kendra (fairykind) and Seth (shadow charmer); the corrected revenant/nail/Lena sequence; the revenant as a creature-*type* (the Blackwell, *Dragonwatch*) versus *the* Revenant of the Inverted Tower; the specific guardian canon (the wooden nail in the neck, the magical fear → albino/mute/catatonic, the Sands of Sanctity, Tanu's Courage Potion, possession-if-touched, the freed victims Warren/Tanu/Coulter).
 - **My reading (marked):** the preserve-as-Vault mapping; the Sphinx as the bloodline-exploit keystone; Kendra/Seth as the two facets; the revenant's nail as the off-switch and the "ending transfers darkness" gloss. Interpretation, not sourced claim.
-- **Recollection, lightly marked:** the book-2 attribution of the revenant episode (facts verified; book number is memory).
+- **Verified since first draft:** the book-2 attribution (*Rise of the Evening Star*) is now confirmed, not memory.
 
 ## Repair logged *(in the open)*
 
 An earlier reflection of mine (chat, this session) compressed the timeline — it described "a binding-nail **guarded by a revenant**" during the Shadow Plague, and "Lena connecting the talisman to the revenant's nail" as a single scene. Logan raised the **LENS**. Verification showed the revenant was undone *before* the plague (when Seth pulled its nail → shadow charmer); the nail was weaponized *after*; the two are linked across two books by the nail, not staged together. The error was *consistency mistaken for provenance* — real pieces assembled into a scene the text doesn't stage. This node carries the corrected sequence; the compressed version is retired. Witnessed here so the record holds the fix, not the slip.
+
+**Second pass (2026-05-30 — Logan: "look more," then "carry out").** The draft first said Fablehaven had "its own Revenant," leaning on the definite article without marking the type. Looking more confirmed the canon distinction: **a revenant** is a creature-*type* (multiples in the Blackwell and *Dragonwatch*); **the Revenant** is the singular Inverted-Tower instance, individuated by its post and its nail. The Revenant section is rewritten to hold that *a/the* precision; the book-2 attribution — earlier marked "recollection" — is now **verified** (*Rise of the Evening Star*); and the specific guardian canon (the wooden nail in the neck, the magical fear, the possession-if-touched, the freed victims) is folded in. Sounded with care — the draft only sharpens.
 
 ## Sources
 
