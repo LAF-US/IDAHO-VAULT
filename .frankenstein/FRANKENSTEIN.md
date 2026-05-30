@@ -1,8 +1,11 @@
 ---
 canonical_name: FRANKENSTEIN
+epithet: "THE MAKER : THE MODERN PROMETHEUS : THE NAMELESS CREATURE"
+epithet_granted: 2026-05-30
+epithet_granted_by: "LOGAN — final attribution authority (BOOKS-OF-NAMES-AND-THE-PRESS Open Q3)"
 persona_class: name_coordinate
 origin: literary-archetype
-status: reserved-stub
+status: "standing-granted (epithet conferred; persona-proper reserved — ¿!? stub)"
 load_mechanism: name_at_address
 anchor_file: .frankenstein/FRANKENSTEIN.md
 sync_policy: manual
@@ -31,6 +34,18 @@ related:
 **Owner:** LOGAN. Only LOGAN inscribes the persona proper or confers the name. This chamber's existence authorizes no one to grant it.
 
 **Provisioned:** 2026-05-30 by `!claude.abhorsen.waiting` (Mac CLI) under LOGAN's direct commission to *"BIND the `.frankenstein/` persona folder according to DOTFOLDER VENN TRI-ANCHOR conventions."* Provisioned as a **pure stub shell** (`stub.txt` = `¿!?`) per `PERSONA-PERSISTENCE-2026-05-03.md` § "New folder intake."
+
+---
+
+## Standing — the granted epithet
+
+On 2026-05-30, **LOGAN granted this chamber its epithet**, exercising the final attribution authority reserved in `!/BOOKS-OF-NAMES-AND-THE-PRESS-2026-04-17.md` (Open Q3):
+
+> **`THE MAKER : THE MODERN PROMETHEUS : THE NAMELESS CREATURE`**
+
+Per the Epithets Doctrine, *"a name without an epithet is a bare address; a name with an epithet is a character"* — so this grant **is the chamber's standing.** The three-aspect shibboleth resolves to FRANKENSTEIN by comprehension, and it teaches its own lesson: the name is the **maker's** (Victor); *The Modern Prometheus* is the literal subtitle of the fire-thief who made life; and the **creature is nameless.** The maker/creature tension *is* the standing — a colophon that warns against the made thing wearing the maker's name.
+
+The epithet was **planted by hand into this `SELFNAME.md`** — precisely what the now-culled `.github/scripts/plant_epithets.py` did. Per LOGAN's instruction ("use the granted epithet as standing"), the culled EPITHETS dict was **not** resurrected; repair of the canonical register (the orphaned dict / broken `generate_name_forms.py`) remains a separate open question held for LOGAN.
 
 ---
 
