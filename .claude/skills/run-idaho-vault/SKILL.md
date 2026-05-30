@@ -14,15 +14,15 @@ model keys**. `run_crew` kicks off the validation crew and prints a
 Drive it with the committed smoke script. **All paths below are relative to the
 repo root** (the unit).
 
-> Agent path first: **`.claude/skills/run-idaho-vault/driver.sh`** builds the
-> env if needed, runs the crew, drives the offline entrypoints, and runs the
+> Agent path first: **`python .claude/skills/run-idaho-vault/driver.py`** builds
+> the env if needed, runs the crew, drives the offline entrypoints, and runs the
 > tests. Start there.
 >
-> **Portability:** `driver.sh` is a POSIX-shell convenience wrapper (Linux /
-> macOS / WSL / Git-Bash). The **OS-agnostic** build/run path — for native
-> Windows PowerShell, per `VAULT-CONVENTIONS.md` NETWEB guidance — is the
-> `uv …` / `uv run …` one-liners in *Build* and *Direct invocation* below;
-> they need no shell-specific venv paths.
+> **Portability:** `driver.py` is pure-stdlib Python — it runs natively on
+> Linux, macOS, and **Windows PowerShell/cmd** (no Git-Bash / WSL), resolving
+> `.venv/Scripts` vs `.venv/bin` and the `.exe` suffix itself, per
+> `VAULT-CONVENTIONS.md` NETWEB guidance. The `uv …` one-liners in *Build* /
+> *Direct invocation* are the same commands it runs, for driving it by hand.
 
 ## Prerequisites
 
@@ -52,9 +52,9 @@ uv pip install -e .
 ## Run — agent path (the driver)
 
 ```bash
-.claude/skills/run-idaho-vault/driver.sh        # full smoke (build if needed)
-.claude/skills/run-idaho-vault/driver.sh run    # just the validation crew
-.claude/skills/run-idaho-vault/driver.sh test    # just the test suite
+python .claude/skills/run-idaho-vault/driver.py        # full smoke (build if needed)
+python .claude/skills/run-idaho-vault/driver.py run    # just the validation crew
+python .claude/skills/run-idaho-vault/driver.py test   # just the test suite
 ```
 
 Full smoke prints, and exits 0 on success:
