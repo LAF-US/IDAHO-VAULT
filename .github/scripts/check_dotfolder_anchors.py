@@ -38,6 +38,7 @@ REQUIRED_ANCHORS = {
     ".slack": [".slack/SLACK.md"],
     ".dionysus": [".dionysus/ZAGREUS.md"],
     ".abhorsen": [".abhorsen/README.md"],
+    ".frankenstein": [".frankenstein/FRANKENSTEIN.md"],
 }
 
 
