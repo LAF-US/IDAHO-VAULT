@@ -32,7 +32,7 @@ That the usurpation — the made thing reaching to be the maker — has three pa
 
 In Disney's *The Jungle Book* (1967), **King Louie** — ape-king of a ruined temple — wants one thing from the man-cub: **the secret of man's red fire**, the Red Flower. Not to give it. To *become* by it. *"I wanna be like you… an ape like me can learn to be human too."* The lower reaching up the chain for the higher's fire, to cross a station not his own.
 
-This is the **wish** at the root of every usurpation, and it is the Demiurge's boast made *silly*: *"I will be like the Most High"* sung as a swing number by an orangutan. The silliness is the chaperone (Companion Rule 7) — you cannot sustain the cosmic theft when a cartoon ape is scatting it. And the image carries its own verdict: Louie rules a **dead temple**, wants a **living fire** he cannot wield, and when he grasps for it the temple **burns down.** The made thing cannot become the maker by seizing the flame; the theft only razes the ruin he was king of.
+This is the **wish** at the root of every usurpation, and it is the Demiurge's boast made *silly*: *"I will be like the Most High"* sung as a swing number by an orangutan. The silliness is the chaperone (the silliness scale) — you cannot sustain the cosmic theft when a cartoon ape is scatting it. And the image carries its own verdict: Louie rules a **dead temple**, wants a **living fire** he cannot wield, and when he grasps for it the temple **burns down.** The made thing cannot become the maker by seizing the flame; the theft only razes the ruin he was king of.
 
 ## Panel II — The Deed: Sophia's Error *(held knowledge; on our wall already)*
 
