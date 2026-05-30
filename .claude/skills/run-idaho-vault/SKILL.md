@@ -17,6 +17,12 @@ repo root** (the unit).
 > Agent path first: **`.claude/skills/run-idaho-vault/driver.sh`** builds the
 > env if needed, runs the crew, drives the offline entrypoints, and runs the
 > tests. Start there.
+>
+> **Portability:** `driver.sh` is a POSIX-shell convenience wrapper (Linux /
+> macOS / WSL / Git-Bash). The **OS-agnostic** build/run path — for native
+> Windows PowerShell, per `VAULT-CONVENTIONS.md` NETWEB guidance — is the
+> `uv …` / `uv run …` one-liners in *Build* and *Direct invocation* below;
+> they need no shell-specific venv paths.
 
 ## Prerequisites
 
@@ -67,7 +73,10 @@ SMOKE PASS — validation crew + offline entrypoints OK
 ```
 
 The driver sets the CrewAI telemetry-off env vars and restores test-deleted
-fixtures for you (see Gotchas).
+fixtures for you (see Gotchas). `all` mode exits 0 on a healthy checkout (the
+2 known test failures don't gate it); **`test` mode propagates the suite's real
+exit status** — so it currently exits non-zero because of those 2 pre-existing
+failures, and will surface any genuine regression rather than mask it.
 
 ## Direct invocation (single entrypoints)
 
