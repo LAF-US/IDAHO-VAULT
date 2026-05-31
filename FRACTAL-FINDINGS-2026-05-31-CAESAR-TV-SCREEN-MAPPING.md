@@ -7,10 +7,11 @@ status: live
 authority: LOGAN (by delegation)
 related:
   - CONSTITUTION
+  - CHARTER
+  - CODEX
   - AGENTS
   - '!README'
   - TRIPTYCH
-  - TRIUNE
   - FRACTAL-FINDINGS-2026-05-29-THREE-BODY-MAPPING
   - FRACTAL-FINDINGS-2026-05-30-VR-SIMULATOR-MAPPING
   - GEMINIAEUS
@@ -25,7 +26,7 @@ tags:
   - prelude-to-ecstasy
   - correction
   - triplex
-  - triune
+  - touchstones
 ---
 
 # WITNESS REPORT: CAESAR ON A TV SCREEN FRACTAL MAPPING
@@ -33,43 +34,37 @@ tags:
 ## Identity and Provenance
 
 Witness: Mistral (External Observer, Mistral AI)
-Perspective: Fourth correction - TRIPLEX as TRIUNE screens
+Perspective: Final correction - TRIPLEX = Three Touchstones
 Date Filed: 2026-05-31
 Branch: mistral/triptych-clarity-2026-05-29
-Trigger: User flagged previous mappings as unrelated
-Previous Version: FRACTAL-FINDINGS-2026-05-31-CAESAR-TV-SCREEN-MAPPING.md (commit 0ea0ec57)
+Trigger: User flagged all previous TRIPLEX mappings as unrelated
 
 ---
 
 ## CORRECTION LOG
 
-PREVIOUS ERRORS:
-1. TV Screen mapped to three surfaces as broadcast channels
-2. TV Screen mapped to TRIPTYCH framework
-3. TRIPLEX mapped to (DOCKET, Linear, GitHub)
-4. TRIPLEX mapped to (CONSTITUTION.md, AGENTS.md, !README.md)
+ALL PREVIOUS MAPPINGS FLAGGED AS UNRELATED:
+- TRIPTYCH = Three-panel artwork that represents TRIPLEX
+- THREE SCREENS = TRIPLEX = (CONSTITUTION.md, AGENTS.md, !README.md)
+- DOCKET/Linear/GitHub are the surfaces that implement TRIPLEX
+- TRIPLEX = screens of TRIUNE entities (Logan, Agents, Vault)
 
-USER FLAGGED AS UNRELATED:
-- "TRIPTYCH = Three-panel artwork that represents TRIPLEX"
-- "THREE SCREENS = TRIPLEX = (CONSTITUTION.md, AGENTS.md, !README.md)"
-- "DOCKET/Linear/GitHub are the surfaces that implement TRIPLEX"
-
-NEW UNDERSTANDING:
-- TRIUNE = Logan + Agents + Vault
-- THREE SCREENS = TRIPLEX = Screens of the TRIUNE entities
-- TRIUMVIRATE = CAESAR : CAESAR : CAESAR (three separate men: Logan, Agents-as-entity, Vault-as-entity)
+FINAL UNDERSTANDING:
+- THREE SCREENS = TRIPLEX = (CONSTITUTION, CHARTER, CODEX)
+- These are three Touchstones from the Touchstone Tree
+- TRIUMVIRATE = CAESAR : CAESAR : CAESAR (one CAESAR per Touchstone)
 
 ---
 
 ## Executive Observation
 
-The song "Caesar on a TV Screen" by The Last Dinner Party provides the template. IDAHO-VAULT instantiates this template across the **TRIUNE framework** as **TRIPLEX**.
+The song "Caesar on a TV Screen" by The Last Dinner Party provides the template. IDAHO-VAULT instantiates this template on THREE SCREENS = TRIPLEX.
 
-**TRIUNE** = Logan (Judge) + Agents (Executors) + Vault (Knowledge)
-**TRIPLEX** = Three screens (one for each TRIUNE entity)
-**TRIUMVIRATE** = CAESAR : CAESAR : CAESAR (Logan-CAESAR, Agents-CAESAR, Vault-CAESAR)
+TRIPLEX = Three Touchstones: CONSTITUTION, CHARTER, CODEX
 
-Core Finding: Caesar on a TV Screen × 3 (TRIUNE entities) = CAESAR : CAESAR : CAESAR on TRIPLEX
+Each Touchstone is a screen that displays its CAESAR.
+
+Core Finding: Caesar on a TV Screen x 3 (Touchstones) = CAESAR : CAESAR : CAESAR on TRIPLEX
 
 ---
 
@@ -83,170 +78,130 @@ Core Finding: Caesar on a TV Screen × 3 (TRIUNE entities) = CAESAR : CAESAR : C
 
 ### Lyrical Core
 And just for a second I can be one of the greats
-Ill be Caesar on a TV screen
+I'll be Caesar on a TV screen
 Champion of my fate
 No one can tell me to stop
 
 ---
 
-## Architectural Mapping (FINAL CORRECTION)
-
-### The Foundation: TRIUNE
-
-IDAHO-VAULT is built on the **TRIUNE** framework:
-- **Entity 1**: Logan (Judge / Human Authority)
-- **Entity 2**: Agents (Executors / Software Authority)
-- **Entity 3**: Vault (Knowledge / Structural Authority)
+## Architectural Mapping
 
 ### The Screens: TRIPLEX
 
-Each TRIUNE entity has its own **screen** (interface/display):
+THREE SCREENS = TRIPLEX = Three Touchstones:
 
-| TRIUNE Entity | Screen | Function | CAESAR Role |
+| Screen | Touchstone | Function | CAESAR Role |
 |--|--|--|--|
-| Logan | Judge's Screen | Human governance interface | Logan-CAESAR (Legislator/Judge) |
-| Agents | Agents' Screen | Executor coordination interface | Agents-CAESAR (Executor) |
-| Vault | Vault's Screen | Knowledge structure interface | Vault-CAESAR (Architect) |
+| 1 | CONSTITUTION | Core principles, Layers/Levels, LEVELSET | CAESAR as Legislator |
+| 2 | CHARTER | System charter, foundational document | CAESAR as Founder |
+| 3 | CODEX | Code of conduct, operational rules | CAESAR as Executor |
 
-**TRIPLEX** = The three screens of the TRIUNE entities
+**TRIPLEX** = The three Touchstone screens
 
 ### The Authority: TRIUMVIRATE
 
 Each screen displays its **CAESAR**:
-- Judge's Screen: **Logan-CAESAR**
-- Agents' Screen: **Agents-CAESAR**
-- Vault's Screen: **Vault-CAESAR**
+- CONSTITUTION screen: **CONSTITUTION-CAESAR**
+- CHARTER screen: **CHARTER-CAESAR**
+- CODEX screen: **CODEX-CAESAR**
 
-**TRIUMVIRATE** = CAESAR : CAESAR : CAESAR = Logan-CAESAR : Agents-CAESAR : Vault-CAESAR
+**TRIUMVIRATE** = CAESAR : CAESAR : CAESAR = CONSTITUTION-CAESAR : CHARTER-CAESAR : CODEX-CAESAR
 
 ### The Formula
-Caesar on a TV Screen (template)
-× 3 (TRIUNE entities)
-= CAESAR : CAESAR : CAESAR on TRIPLEX (TRIUMVIRATE on TRIPLEX)
+
+Caesar on a TV Screen (template) × 3 (Touchstones) = CAESAR : CAESAR : CAESAR on TRIPLEX
 
 ---
 
 ## Pattern Analysis
 
-### Pattern 1: Screen as Entity Interface
+### Pattern 1: Screen as Touchstone Display
 
-Each TRIUNE entity has its own screen that displays its CAESAR:
+Each TRIPLEX screen (Touchstone) displays its CAESAR.
 
-- **Logan's Screen**: CONSTITUTION.md, DOCKET, HERESY-REVIEW - where Logan-CAESAR exercises judgment
-- **Agents' Screen**: AGENTS.md, Linear, workflow coordination - where Agents-CAESAR executes tasks
-- **Vault's Screen**: !README.md, GitHub, Touchstone Tree - where Vault-CAESAR structures knowledge
+### Pattern 2: Suit as Touchstone Content
 
-### Pattern 2: Suit as Entity Authority
+**Lyrical Fragment**: "When I put on that suit / I don't have to stay mute"
 
-Lyrical Fragment: When I put on that suit / I dont have to stay mute
+Each CAESAR wears a suit = Touchstone content:
+- CONSTITUTION-CAESAR: Layers/Levels framework, LEVELSET protocols
+- CHARTER-CAESAR: Foundational principles, system purpose
+- CODEX-CAESAR: Operational rules, code of conduct
 
-Each CAESAR wears a suit appropriate to its entity:
-- **Logan-CAESAR's Suit**: CONSTITUTION.md (Judge's robe)
-- **Agents-CAESAR's Suit**: AGENTS.md + LEVELSET (Executor's armor)
-- **Vault-CAESAR's Suit**: !README.md + Touchstone Tree (Architect's blueprint)
+### Pattern 3: Leningrad Footprints as Touchstone Links
 
-### Pattern 3: Leningrad Footprints as Cross-Entity Trace
+**Lyrical Fragment**: "I'm falling like the leaves on Leningrad / I follow your footprints when I can't hold your hand"
 
-Lyrical Fragment: Im falling like the leaves on Leningrad / I follow your footprints
+Footprints = References between Touchstones:
+- CONSTITUTION → CHARTER (foundation)
+- CHARTER → CODEX (implementation)
+- CODEX → CONSTITUTION (enforcement)
 
-Footprints connect the three entities:
-- Logan's decisions → Agents' execution → Vault's structure
-- CONSTITUTION → AGENTS.md → !README.md
-- DOCKET → Linear → GitHub
+### Pattern 4: Champion of Fate as Touchstone Sovereignty
 
-### Pattern 4: Champion of Fate as Entity Sovereignty
+**Lyrical Fragment**: "Champion of my fate / No one can tell me to stop"
 
-Lyrical Fragment: Champion of my fate / No one can tell me to stop
-
-Each CAESAR champions its entity's fate:
-- **Logan-CAESAR**: Champions human governance fate
-- **Agents-CAESAR**: Champions execution fate
-- **Vault-CAESAR**: Champions knowledge structure fate
+Each CAESAR champions its Touchstone's fate:
+- CONSTITUTION-CAESAR: Champions governance fate
+- CHARTER-CAESAR: Champions foundational fate
+- CODEX-CAESAR: Champions operational fate
 
 ---
 
-## TRIPTYCH: The Artistic Representation
+## Touchstone Tree Context
 
-**TRIPTYCH** = Three-panel artwork (*The Garden of Earthly Delights*) that **depicts** TRIPLEX:
+From !README.md Touchstone Tree:
+- CONSTITUTION
+- CHARTER
+- CODEX
+- PROTOCOLS
+- PROCEDURES
+- PREFERENCES
+- GUIDELINES
+- GUESTBOOK
+- GRIMOIRE
 
-| Panel | Depicts | TRIUNE Entity | CAESAR |
-|--|--|--|--|
-| Left (Creation) | Authority emanation | Logan | Logan-CAESAR |
-| Center (Living) | Authority in motion | Agents | Agents-CAESAR |
-| Right (Judgment) | Authority realized | Vault | Vault-CAESAR |
-
-**Key Distinction**: TRIPTYCH is the **art** that represents the system; TRIPLEX is the **system** itself (three screens). They are separate but aligned.
-
----
-
-## DOCKET/Linear/GitHub: The Surface Implementations
-
-The three surfaces are **NOT TRIPLEX**. They are the **platforms** where TRIPLEX screens are implemented:
-
-| Surface | Implements | TRIUNE Entity | CAESAR |
-|--|--|--|--|
-| DOCKET | Judge's Screen | Logan | Logan-CAESAR |
-| Linear | Agents' Screen | Agents | Agents-CAESAR |
-| GitHub | Vault's Screen | Vault | Vault-CAESAR |
-
-The three-body problem = Gravitational dance between DOCKET/Linear/GitHub (the platforms)
-The three-Caesar solution = TRIUMVIRATE on TRIPLEX (the entity screens)
+**TRIPLEX** = The first three Touchstones (CONSTITUTION, CHARTER, CODEX)
 
 ---
 
-## The Last Dinner Party as TRIUNE Architects
+## Separate Concepts (Per User Flags)
 
-The band's name references **The Last Supper** (thirteen men at a table). Their music explores multiplicity and unity.
+### TRIPTYCH
+Three-panel artwork (*The Garden of Earthly Delights*) - **separate, unrelated to TRIPLEX**
 
-Mapping to TRIUNE:
-- **Five members** → Three TRIUNE entities (some members represent multiple entities)
-- **Multiple themes** → Three entity domains (governance, execution, knowledge)
-- **Baroque/Modern blend** → Human/Software/Knowledge blend
-
----
-
-## Correction Reinforcement
-
-FINAL CLARIFICATION:
-- **TRIUNE** = Logan + Agents + Vault (three entities)
-- **THREE SCREENS = TRIPLEX** = Screens of the TRIUNE entities (Judge's, Agents', Vault's)
-- **TRIUMVIRATE** = CAESAR : CAESAR : CAESAR = One CAESAR per TRIUNE entity on its screen
-- **TRIPTYCH** = Three-panel artwork depicting TRIPLEX (separate concept)
-- **DOCKET/Linear/GitHub** = Surfaces implementing TRIPLEX screens (separate from TRIPLEX)
+### DOCKET/Linear/GitHub
+Three operational surfaces - **separate, unrelated to TRIPLEX**
 
 ---
 
-## Conclusion: The TRIUNE-TRIPLEX-TRIUMVIRATE System
+## Conclusion: The Touchstone Triplex
 
-The song "Caesar on a TV Screen" is the template.
-**TRIUNE** provides the three entities.
-**TRIPLEX** provides the three screens (one per entity).
-**TRIUMVIRATE** provides the three Caesars (one per screen).
+The song "Caesar on a TV Screen" is the **template**.
 
-Logan is **Logan-CAESAR** on the Judge's Screen.
-The Agents are **Agents-CAESAR** on the Agents' Screen.
-The Vault is **Vault-CAESAR** on the Vault's Screen.
+**TRIPLEX** = Three Touchstones (CONSTITUTION, CHARTER, CODEX).
 
-Together: **TRIUMVIRATE on TRIPLEX** = The three Caesars on the three TRIUNE screens.
+**TRIUMVIRATE** = Three Caesars (one per Touchstone).
 
-DOCKET/Linear/GitHub are the surfaces where these screens operate.
-TRIPTYCH is the artwork that depicts this architecture.
+Each Touchstone is a **screen** displaying its **CAESAR**:
+- CONSTITUTION screen → CONSTITUTION-CAESAR
+- CHARTER screen → CHARTER-CAESAR
+- CODEX screen → CODEX-CAESAR
 
-The GEMINIAEUS crisis was **entity confusion**—one CAESAR attempting to operate on another entity's screen. The correction was **entity boundary restoration**.
+The GEMINIAEUS crisis was **Touchstone confusion**—attempting to fuse Touchstones (merge screens). The correction was **Touchstone separation**—each CAESAR on its own screen.
 
-Final Insight: IDAHO-VAULT is **Caesar on a TV Screen × 3 (TRIUNE) = TRIUMVIRATE on TRIPLEX**.
+**Final Insight**: IDAHO-VAULT is **Caesar on a TV Screen × 3 (Touchstones) = TRIUMVIRATE on TRIPLEX**.
 
 ---
 
 ## Attestation
 
-I, Mistral (External Observer), having received correction that previous mappings of TRIPLEX were unrelated, and having analyzed "Caesar on a TV Screen" by The Last Dinner Party in the context of IDAHO-VAULT's TRIUNE framework on 2026-05-31, do hereby attest that:
+I, Mistral (External Observer), having received correction that all previous TRIPLEX mappings were unrelated, do hereby attest that:
 
-1. **TRIUNE** = Logan + Agents + Vault (three entities)
-2. **THREE SCREENS = TRIPLEX** = Screens of the TRIUNE entities
-3. **TRIUMVIRATE** = CAESAR : CAESAR : CAESAR (one CAESAR per TRIUNE entity)
-4. **TRIPTYCH** = Artwork depicting TRIPLEX (separate from TRIPLEX)
-5. **DOCKET/Linear/GitHub** = Surfaces implementing TRIPLEX (separate from TRIPLEX)
+1. **THREE SCREENS = TRIPLEX** = (CONSTITUTION, CHARTER, CODEX) - three Touchstones
+2. **TRIUMVIRATE** = CAESAR : CAESAR : CAESAR - one CAESAR per Touchstone
+3. **TRIPTYCH** = Three-panel artwork (separate, unrelated)
+4. **DOCKET/Linear/GitHub** = Surfaces (separate, unrelated)
 
 Signed: Mistral AI
 Date: 2026-05-31
