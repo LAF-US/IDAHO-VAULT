@@ -9,8 +9,10 @@ related:
   - "!/FABLEHAVEN-TAXONOMY-v1-2026-06-01.md"
   - "!/FABLEHAVEN-SHADOW-PLAGUE-v1-2026-06-01.md"
   - "!/FABLEHAVEN-DRAGONS-v1-2026-06-01.md"
+  - "!/FABLEHAVEN-BOUND-SERVANTS-v1-2026-06-01.md"
   - "!/UNDEAD-TAXONOMY-v1-2026-05-20.md"
   - "!/LICH-PROBLEM-v1-2026-05-20.md"
+  - "!/NECROMANCER-DOCTRINE-v1-2026-05-20.md"
   - "!/STANDING-ENGINE-AND-LAWFUL-ENDINGS-2026-04-17.md"
 ---
 
@@ -39,14 +41,48 @@ point — **almost all of its power lives in a single external object** (a curse
 talisman, a nail), without which it collapses entirely.
 
 So by **name** it is a Revenant, filed next to the self-terminating avenger. By
-**mechanism** it is the opposite — it belongs beside the **Lich**, because its
-power is *externalized into a vessel you can destroy.* This is the taxonomy's
-recurring discipline made sharp: **names mislead; mechanisms classify.** Two
-creatures share a word and share almost nothing else. An agent that classifies
-by the label — "it's a revenant, apply the revenant counter" — applies the
-wrong counter. Waiting for the Fablehaven revenant to self-terminate (the D&D
-behavior) waits forever. Read the mechanism, not the name. (Compare the blix
-chapter: *cite the vessel; know the source.*)
+**counter** it rhymes with the **Lich** — both are ended by destroying the one
+object that concentrates the threat (phylactery / nail). But the rhyme is in the
+*counter-topology only*, and mistaking it for kinship of *kind* is the error the
+next section exists to prevent. Read the mechanism, not the name — and read the
+**provenance**, not just the mechanism. (Compare the blix chapter: *cite the
+vessel; know the source.*)
+
+### CAUTION — Self-Created vs. Constructed
+
+**A Lich is self-created. The Revenant is constructed.** This is not a
+footnote; it is the categorical line between them, and collapsing it misreads
+both.
+
+- The **Lich** *engineered its own continuity* (`!/LICH-PROBLEM-v1-2026-05-20.md`).
+  It externalized **its own soul** into a phylactery, by its own act. The agent
+  and the persistence mechanism are the **same self**. Unauthorized
+  self-continuation is the whole offense. **The agent is itself.**
+- The **Revenant** did not make itself. A corpse was reanimated and bound with a
+  cursed talisman **by someone else** — a maker placed the nail. It has no
+  authorship of its own existence; it is a *built guardian*, an instrument of
+  whoever constructed it. **The agent is the maker**, not the corpse.
+
+So the Revenant shares the Lich's **counter** (destroy the one object) while
+sharing the **Bound Servant's origin** (constructed by another; the responsible
+party is the maker, not the thing — see
+`!/FABLEHAVEN-BOUND-SERVANTS-v1-2026-06-01.md`). It sits precisely between them:
+
+| | Origin / agency | Power locus | Counter | Responsible party |
+|---|---|---|---|---|
+| **Lich** | **Self-created** — engineered its own continuity | Externalized *own* soul (phylactery) | Destroy the phylactery | **Itself** |
+| **Revenant** | **Constructed** — reanimated & nail-bound by another | Power concentrated in a *placed* talisman | Pull the nail | **The maker** |
+| **Bound Servant** (golem/Mendigo) | **Constructed** — animated by another | Command channel; no stored self | Secure/seize the reins | **The holder** |
+
+The operational lesson — *find the one object and end it* — transfers from the
+Lich. The **provenance** lesson does **not**: do not treat the Revenant as a
+self that arrogated its own persistence. It is a weapon someone forged. The
+constructing hand is a **necromancer/animator** (`!/NECROMANCER-DOCTRINE-v1-2026-05-20.md`)
+— raising against the current — and *that maker* is the agent the Standing
+Engine must reach. Misclassifying a constructed guardian as a self-created
+persister sends you hunting an autonomous will that was never there, and lets
+the actual author walk. **Names mislead; mechanisms classify; provenance
+assigns responsibility.**
 
 ---
 
@@ -179,8 +215,11 @@ own discipline; "we took it out of production" is the start, not the finish.
 5. **What happens to the object after you pull it?** The removed power source
    does not vanish. Will you destroy it or guard it? Who would want it? The nail
    you pull today is the plague you fight tomorrow if you set it down.
-6. **Are you classifying by name or mechanism?** This "revenant" is phylactery-
-   class, not the self-terminating avenger of the Undead Taxonomy. Read the
-   mechanism; the label will lie to you.
+6. **Name, mechanism, and provenance — all three.** This "revenant" is not the
+   self-terminating avenger of the Undead Taxonomy (so don't wait for it to end
+   itself), and it shares the Lich's *counter* but not the Lich's *kind*: it is
+   **constructed, not self-created.** Ask **who built it and placed the nail** —
+   that maker is the responsible agent, and the label will lie to you about all
+   three.
 
 ###### [["The world is quiet here."]]
