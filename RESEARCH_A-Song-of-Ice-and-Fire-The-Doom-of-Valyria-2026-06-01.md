@@ -53,15 +53,33 @@ The **Doom of Valyria** was the volcanic supercataclysm that destroyed the **Val
 - **Twelve years before the Doom**, **Daenys the Dreamer** (daughter of Lord **Aenar Targaryen** of Dragonstone) had a **prophetic dream** of Valyria's fiery destruction. Heeding her, Aenar **sold his Freehold holdings (~114 BC) and moved the whole family — and their five dragons, including Balerion — to Dragonstone**, the Freehold's western outpost in the narrow sea. [awoiaf: Daenys Targaryen]
 - So House Targaryen **alone of the dragonlords survived** — the hinge on which all later Westerosi history turns, and the root of the canonical theme of prophetic **"dragon dreams"** in the Targaryen line. [awoiaf: Dreams and prophecies]
 
-## What caused it? — the cause is unresolved *(in-world theories)*
+## What caused it? — the competing theories
 
-The texts present competing maesters' and septons' theories and confirm **none**. GRRM leaves it deliberately a mystery.
+**The cause is canonically unresolved, by design.** *The World of Ice & Fire* is narrated by **Maester Yandel**, who works from fragmentary sources and lists rival explanations rather than settling on one — "natural disaster, sorcerous overreach, divine vengeance, political intrigue, the calamity of dragons, or facechanging assassins, in any combination." The unreliable-narrator framing is the point: no one in-world can know. [awoiaf: Doom of Valyria]
 
-- **[theory a] Natural volcanic calamity** — the orthodox/default view: the Fourteen Flames simply erupted.
-- **[theory b] Faltering magic (the Septon Barth thread)** — a few maesters, citing fragments of **Septon Barth**, hold that Valyria used **spells to tame the Fourteen Flames** for millennia (its hunger for slaves partly to sustain them); when the magic faltered, catastrophe became inevitable.
-- **[theory c] Assassinated mages / the Faceless Men** — an extension of (b): incessant intrigue may have led to **assassination of the mages maintaining the fire-binding rituals**; a popular in-world/fan reading credits the **Faceless Men** (consistent with their death-cult creed). ⚠️ **Explicitly speculative** — not authorially confirmed. → cross-ref the religions note.
-- **[theory d] Divine punishment** — some septons hold the polytheistic Valyrians "delved too deep" and were punished (the seven hells).
-- **[theory e] The waning of magic** — the broader thematic reading tied to (b).
+**Theory A — Natural volcanic calamity** *(the "common" / orthodox view).*
+TWOIAF records that it is *commonly believed* the Doom was simple geology: the Fourteen Flames, an unstable volcanic region Valyria was built among, erupted. This is the default popular explanation — no magic required. [awoiaf: Doom of Valyria; Fourteen Flames]
+
+**Theory B — Faltering magic (the Septon Barth thread)** *(the load-bearing scholarly theory).*
+TWOIAF records, near-verbatim: *"A handful of maesters, influenced by fragments of the work of Septon Barth, hold that Valyria had used spells to tame the Fourteen Flames for thousands of years, that their ceaseless hunger for slaves and wealth was as much to sustain these spells as to expand their power, and that when at last those spells faltered, the cataclysm became inevitable."* So: sorcery held the volcanoes in check, and the slave/conquest economy existed partly to *fuel* that magic — when it failed, the Doom followed. [awoiaf: Doom of Valyria]
+- **Why this theory survives only as fragments:** Barth's *Dragons, Wyrms, and Wyverns: Their Unnatural History* was condemned by the Citadel as *"provocative but unsound,"* and **King Baelor I "the Blessed" ordered it expunged and destroyed**. (⚠️ My earlier prompt's "Baelor Breakspear" was a conflation — the book-burning is **Baelor I Targaryen**.) Barth also speculated the Valyrians *bred dragons by bloodmagic* — reinforcing the picture of Valyrian power as fundamentally sorcerous. [awoiaf: Barth; Dragons, Wyrms, and Wyverns]
+
+**Theory C — Political intrigue / assassinated fire-mages** *(in-world, recorded).*
+TWOIAF notes the great dragonlord families were in constant conflict, raising the possibility that rival houses **assassinated the sorcerers whose spells held back the Fourteen Flames** — a political route to the same magical failure as Theory B. [awoiaf: Doom of Valyria]
+
+**Theory C′ — The Faceless Men** *(⚠️ fan extrapolation, NOT a recorded scholarly position).*
+The popular fandom version pins Theory C specifically on the **Faceless Men** — slaves who originated in the Valyrian mines, taking vengeance / serving their death-god by killing the binding-mages. TWOIAF only gestures at "facechanging assassins" as *one of many possibilities* the narrator entertains; it is **semi-canon speculation at most**, never confirmed by text or author. → cross-ref the religions note's House of Black and White subsection. [ASOIAF University; awoiaf: Doom of Valyria]
+
+**Theory D — Divine punishment** *(the Faith's view).*
+TWOIAF records that *some septons, "less wise"* (the narrator's loaded gloss), hold the Valyrians were punished for worshipping "a hundred gods and more" and that "in their godlessness they delved too deep and unleashed the fires of the seven hells." This is the textual home of the **hubris / "delved too deep"** motif. [awoiaf: Doom of Valyria]
+
+**Theory E — Other recorded framings.**
+TWOIAF also lists the **curse of Garin the Great** (the Rhoynar prince whose people Valyria destroyed) and the **fire of R'hllor** (a Lord-of-Light framing). [awoiaf: Doom of Valyria]
+
+**Adjacent canon (a bridge, not a stated cause): magic wanes with dragons.**
+In *A Clash of Kings*, the pyromancer Hallyne recalls that "magic had begun to go out of the world the day the last dragon died." Fans build a "lost dragons → magic waned → spells failed → Doom" chain from this — but ⚠️ the chronology runs the *other* way (dragons survived the Doom), so applying it to the Doom is **fan extrapolation**, even though the dragons↔magic linkage itself is canon. [awoiaf: Dragon]
+
+> **Bottom line:** Theory A (natural) is the popular default; Theory B (Barth's faltering magic) is the most textually developed; C/C′/D/E are the recorded alternatives, with the Faceless Men version being fandom-favored but unconfirmed. TWOIAF deliberately refuses to adjudicate — and there is no indication GRRM intends to resolve it.
 
 ## Legacy
 
