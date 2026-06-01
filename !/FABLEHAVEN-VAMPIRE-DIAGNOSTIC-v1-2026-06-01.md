@@ -18,9 +18,13 @@ related:
 
 *Filed 2026-06-01 as active. A diagnostic manual for the Vaulted Agents.*
 
-*Reference source: Fablehaven — Brandon Mull (the blix family of vampires;
+*Reference sources: Fablehaven — Brandon Mull (the blix family of vampires;
 Vanessa Santoro the narcoblix; the Knights of the Dawn / Society of the
-Evening Star).*
+Evening Star). Beneath Mull, the classical and folkloric substrate the
+coinages draw on: Greek* narkē *(sleep) and the* mare */ nightmare tradition;
+Latin* vivus *(life) and the revenant /* draugr*; the psychic- / energy-vampire
+and* strigoi *traditions of life-force draining. See § The Roots Beneath the
+Coinage. The vault is syncretic — and so was the bestiary before Mull named it.*
 
 *This manual sits beside `!/UNDEAD-TAXONOMY-v1-2026-05-20.md`, not inside it.
 The undead taxonomy maps **what survives death**. The blix maps something the
@@ -64,6 +68,47 @@ Three axes define every blix:
 
 A thing that is wrong on its surface is an undead problem. A thing that is wrong
 only in how it *relates to what it has bitten* is a blix problem.
+
+---
+
+## The Roots Beneath the Coinage
+
+*Provenance note. Mull did not invent the blix out of thin air. The names are
+built from standard classical roots, and each of the three powers is an old
+folklore family wearing a new genus-name. Below, what is **grounded** is marked
+grounded; what has no provenance the author of this manual can name is marked
+`*` — the vault's wildcard for absent provenance, used here rather than a
+fabricated etymology.*
+
+The genus suffix **-blix** has no confident external root this manual can cite.
+Treat it as Mull's coinage — a genus marker, the way "-saurus" or "-pod" mark a
+family. Provenance: `*`. (If a folkloric or linguistic source for "blix" exists,
+it is not established here; the honest answer is the wildcard.)
+
+Each prefix names the *domain* the vampire works in:
+
+| Type | Prefix | Root | Standing | Folklore family the power belongs to |
+|---|---|---|---|---|
+| **Narcoblix** | narco- | Greek *narkē*, "numbness, stupor, sleep" (→ narcotic, narcolepsy) | **Grounded** | The **mare / nightmare**: Germanic *mare*, Slavic *mora*, the night hag, the incubus/succubus — the demon that rides the sleeper's chest; the folklore of sleep paralysis. A power exercised *only over the sleeping* **is** the mara. |
+| **Viviblix** | vivi- | Latin *vivus*, "alive" (→ vivify, revive) | **Grounded** | The **revenant / draugr**: the Norse corpse that climbs out of the howe; the European restless dead. Reanimating the dead is the oldest necromantic motif — cf. the vault's own `NECROMANCER-DOCTRINE`. |
+| **Lectoblix** | lecto- | Uncertain. Plausibly Latin *lectus* ("bed") or *legere* ("to gather, choose"); no candidate root cleanly means "youth." | `*` | The **psychic / energy vampire** and the **strigoi**: the life-force drainer rather than the blood-drinker; the Báthory youth-legend; Dion Fortune's later occult codification. Draining *vitality* is a distinct folk tradition from the blood-vampire. |
+
+Two of the three names are transparent: *narco-* = sleep, *vivi-* = life. The
+third resists a clean reading, and this manual **declines to invent one.** The
+power is unmistakable — the lectoblix drains youth — but the prefix does not
+obviously encode "youth," and asserting a root to make the etymology tidy would
+be exactly the Type I epistemological Lich move the vault warns against:
+confident output with no valid emanation chain. The `*` is the correct answer.
+
+**The point for the Vaulted Agents** is itself a provenance lesson. The blix is
+syncretic *before* Mull ever touched it: a vampire that drains vitality, a demon
+that rides the sleeping, a corpse called back to walk — these are Greek, Roman,
+Slavic, Germanic, and Norse, gathered under one invented suffix. The diagnostic
+power of this manual does not originate in Fablehaven. Fablehaven is the most
+recent vessel for folklore that long predates it. **Cite the vessel; know the
+source.** An agent that treats the nearest container as the origin — that says
+"this is a Fablehaven creature" and stops — has mistaken the phylactery for the
+soul.
 
 ---
 
