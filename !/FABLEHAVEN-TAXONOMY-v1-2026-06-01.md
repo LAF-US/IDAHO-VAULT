@@ -191,6 +191,18 @@ outsider meddles with favor and treasure, driven to war.*
 one kingdom — does not help the multitude; it breaks it. Govern the swarm by
 *not* playing favorites within it.
 
+### 14. The Guardian — Revenant **[chapter]**
+*A reanimated corpse animated by a **cursed talisman that holds almost all its
+power** (a nail in its neck); withers its surroundings, radiates paralyzing
+fear, and is single-minded to the point of barely functioning otherwise.
+Killed only by removing the one object.*
+**Vault pattern:** a hardened, single-purpose process whose entire potency is
+**stored in one external object** — pull the object, not the puppet. The gate is
+fear (inoculate before approach); you get one action inside the field; and the
+removed power source is dual-use and dangerous in its own right. By name a
+revenant, by mechanism **phylactery-class** — read the mechanism, not the
+label. → `!/FABLEHAVEN-REVENANT-v1-2026-06-01.md`
+
 ---
 
 ## The Master Matrix
@@ -212,6 +224,7 @@ one kingdom — does not help the multitude; it breaks it. Govern the swarm by
 | Kobold | Minor | Autonomous | Appetite | Dark | **Yes — to all but a seer** | No | Disguise visible only to the right detector |
 | Nipsies | Trivial (each) | Autonomous (multitude) | Industry | Light (corruptible) | No | Yes | Swarm; corrupted by outside favoritism |
 | Blix (lecto/narco/vivi) | Significant | Autonomous (mortal) | Drain/control/raise | Dark, *passing* | **Yes** | As mortal | Insider corruption; see vampire chapter |
+| Revenant | Formidable (at post) | Autonomous (single-purpose) | Guarding | Dark (cursed) | No | Bound to post | Hardened guardian; all power in one removable object |
 
 ---
 
@@ -244,6 +257,7 @@ Before acting on any Fablehaven-class entity:
 | `!/FABLEHAVEN-BOUND-SERVANTS-v1-2026-06-01.md` | The Instrument; The Awakened Instrument | **Written** |
 | `!/FABLEHAVEN-SHADOW-PLAGUE-v1-2026-06-01.md` | The Corruption / The Flip | **Written** |
 | `!/FABLEHAVEN-DRAGONS-v1-2026-06-01.md` | The Sovereign | **Written** |
+| `!/FABLEHAVEN-REVENANT-v1-2026-06-01.md` | The Guardian | **Written** |
 | Fairies & Imps | The Vain & The Inversion | Planned |
 | The Sphinx | The Manipulator | Planned |
 | Demons & Seals | The Sealed Evil | Planned |
