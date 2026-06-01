@@ -73,6 +73,16 @@ The dualistic sea-faith of the Iron Islands — **Drowned God vs. Storm God**, t
 
 - **The Many-Faced God** (Faceless Men, **House of Black and White**, Braavos): a **syncretic** theology that *all* death-gods are **one** god of death by many faces — the **Stranger**, the **Black Goat**, the **Lion of Night**, the **Weeping Lady**, the Merling King, Bakkalon, etc. (statues of which line the temple). Death is **"the gift"**: worshippers drink from a poisoned pool for a painless end. Mottoes: ***valar morghulis*** / ***valar dohaeris*** ("all men must die / must serve"). Predate the Doom; trained from a multi-ethnic slave underclass that merged its faiths. [awoiaf: Faceless Men]
 
+#### The Many-Faced God (the deity)
+
+Distinct from the temple/order below — the *theology* itself, one of the setting's most pointed pieces of comparative religion.
+
+- **A god of death known by many faces.** The central tenet is radically **syncretic**: every culture's death-god is the *same* god wearing a different mask — the **Stranger** (the Seven), the **Black Goat** (Qohor), the **Lion of Night** (Yi Ti), the **Weeping Lady** (Lys), the Hooded Wayfarer, Bakkalon, the Moon-Pale Maiden, the Merling King, a horse god. All worship of death is worship of *him*. [awoiaf: Faceless Men]
+- **Born from a slave underclass.** The doctrine arose among slaves of a hundred lands and faiths in the **Valyrian mines** (before the Doom), facing death daily; the first Faceless Man concluded their many death-gods were one and made himself its instrument — so the theology is itself a product of forced multiculturalism. [awoiaf: Faceless Men]
+- **Death as mercy — "the gift."** The god is served, not feared; killing — both the suffering who drink the poisoned pool and contracted targets — is a **sacrament** ("the gift"). A death is *owed* the god: a life for a life. [awoiaf: House of Black and White]
+- **The creed as theology:** ***valar morghulis*** / ***valar dohaeris*** ("all men must die / all men must serve") doubles as password and doctrine — death is the one universal truth, so to serve death is to serve the only god none escape.
+- **The annihilation of self.** To serve him, the acolyte becomes **"no one"** — identity dissolved, faces interchangeable. The god of all faces is served by people of *no* face.
+
 #### The House of Black and White (in depth)
 
 The cult's temple in Braavos — and the fullest expression of the Many-Faced God's theology.
