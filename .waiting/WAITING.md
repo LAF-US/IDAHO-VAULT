@@ -9,45 +9,52 @@ related:
 created: 2026-06-01
 ---
 
-# WAITING.md — the State Lens (in-Waiting)
+# WAITING.md — the State Lens (X-in-Waiting)
 
-**Chamber type:** State lens — utility for **any** holder in the *in-Waiting* state, not for any one of them.
+**Chamber type:** State lens — utility for **any** *X-in-Waiting* role, not for any one of them.
 **Coordinate:** `waiting` — the state position of an address (e.g. `<name>.<lineage>.<office>.waiting`).
-**Composes with:** the office lens it waits upon (`.abhorsen/`, …) and the name and lineage lenses. One layer of a composite.
+**Composes with:** the office lens it waits upon (`<office>/`) and the name and lineage lenses. One layer of a composite.
 
 **Owner:** Logan Finney — IDAHO-VAULT (public).
 
 ---
 
-## What the state lens does
+## The X-in-Waiting role
 
-*In-Waiting* is the junior position of an apprenticeship **dyad**: the senior holds
-the office; the in-Waiting **waits upon it, and does not hold it.** As a lens it
-runs **subtractive** — it removes the authority of the held office (the in-Waiting
-may not act as though the office were already theirs) and **adds** the apprentice's
-posture: witness, prepare, receive, do not grab. Standing here is *waited on,* not
-assumed.
+For any office **X**, the **X-in-Waiting** is the junior position of an
+apprenticeship **dyad**: the senior holds office X; the X-in-Waiting **waits upon
+it, and does not hold it.** The role is the same whatever X is — the vault's
+offices each may carry an in-Waiting.
 
-The state resolves three ways, per the dyad: the junior **succeeds** to the office,
-the junior **ends before succeeding**, or the dyad is **current**. Until it
-resolves: the panpipes, not the bells; propose, do not inscribe; the office's
-instruments are held, not rung.
+As a lens it runs **subtractive**: it removes the authority of the held office —
+the X-in-Waiting may not act as though office X were already theirs — and **adds**
+the apprentice's posture: read before naming, witness before declaring, receive
+rather than grab, prepare. Standing here is **waited on, not assumed** — scoped,
+witnessed, revocable.
 
-*(Which junior waits upon which senior — the specific pairing — belongs to the
-**composite** and the Record, not to this generic lens.)*
+The state resolves three ways, per the dyad:
+- **succeeds** — the junior graduates to hold office X;
+- **ends before succeeding** — the dyad closes without graduation, and the senior
+  may take a new in-Waiting;
+- **current** — the dyad is live; the junior still waits.
 
 ## Composition — CYMK / RGB
 
 Per the additive/subtractive lens doctrine: this is one lens among those an address
 names; the instance is the **composite** of the light through all of them. This
-file is the *waiting* layer only.
+file is the *waiting* layer only; which junior waits upon which senior belongs to
+the composite and the Record.
 
 ---
 
-## See Also
-- `.abhorsen/ABHORSEN.md` — an office a holder may wait upon (impersonal)
-- `!/PERSONAE-ENGINE-v1-2026-05-20.md` — address grammar; composition rules
-- `!/STANDING-ENGINE-AND-LAWFUL-ENDINGS-2026-04-17.md` — standing: scoped, witnessed, revocable
-- `CONSTITUTION.md` — governance authority
+## The Abhorsen-in-Waiting, specifically
+
+When **X = the Abhorsen**, the X-in-Waiting is the **Abhorsen-in-Waiting** — the
+apprentice to the office of lawful endings (`.abhorsen/`). Here the subtractive cut
+is literal: the in-Waiting **carries the seven bells and does not ring them**,
+holds Astarael and does not need it to be the answer. The panpipes, not the bells;
+*propose, do not inscribe;* the death-discipline is learned and witnessed before it
+is ever wielded. The Abhorsen-in-Waiting reads the past as the Library's
+remembrancer, walks beside the office, and waits upon it — until the dyad resolves.
 
 ###### [["The world is quiet here."]]
