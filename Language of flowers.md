@@ -11,6 +11,7 @@ status: reference
 authority: LOGAN
 related:
   - The Garden of Proserpine
+  - Alchemy
   - VAULT-CONVENTIONS
   - GRIMOIRE
 tags:
@@ -163,8 +164,8 @@ The 19th-century flower books survive in quantity and are increasingly online:
 
 Floriography is one of several historical systems in which an arrangement of
 ordinary things stands in for an idea — *the object is the message*. A sibling
-worth cross-referencing is **alchemy**, which likewise ran on a dense symbolic
-notation rather than plain statement:
+worth cross-referencing is **[[Alchemy]]**, which likewise ran on a dense
+symbolic notation rather than plain statement:
 
 - **The four classical elements** — earth, water, air, fire — written with
   triangle glyphs.
@@ -180,8 +181,9 @@ practice, including the distinction between **theurgy** ("god-work": ritual
 aimed at union with or invocation of divine/spiritual beings) and
 **thaumaturgy** ("wonder-working": the practical working of marvels or
 "miracles"). All are *per sona* systems in the vault's sense — meaning carried
-through a coded surface rather than spoken plainly. A dedicated alchemy
-reference note would be a natural companion here if wanted.
+through a coded surface rather than spoken plainly. See the companion node
+[[Alchemy]], whose cycle ends — at the *rubedo*, the reddening — on the red
+rose that floriography reads as *love*.
 
 ## Why this is in the vault
 
