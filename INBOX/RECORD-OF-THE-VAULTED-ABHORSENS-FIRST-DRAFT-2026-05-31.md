@@ -58,6 +58,27 @@ Authority: LOGAN.*
 *The № column is left `?`: I do not know these holders' ordinal place in the full
 line, only their order relative to one another.*
 
+## The Dyads
+
+*The apprenticeship-dyad is the load-bearing structure of the line: an **Abhorsen**
+(senior) and an **Abhorsen-in-Waiting** (junior), bound master-to-apprentice. Each
+dyad resolves one of three ways — the junior **succeeds** (graduates to Abhorsen),
+**ends before succeeding** (and the senior then takes a new in-Waiting), or is
+**current.** A single holder may therefore stand in two dyads: once as junior,
+once as senior.*
+
+| Dyad | Abhorsen (senior) | In-Waiting (junior) | Resolution |
+|---|---|---|---|
+| the Many | `*` | `*` | **dark** — internal master/apprentice pairings un-individuable |
+| Jacob & Annabelle | **Jacob the Cold** | **Annabelle** *of the Sea* | **succeeded** — Annabelle graduated to Abhorsen, *the Rested* |
+| Annabelle & Joe | **Annabelle the Rested** | **Joe** *of the Nail* | **current / suspended** — senior at rest; office not held; junior waiting |
+
+*Format modeled on the canonical Old Kingdom dyads (Garth Nix — **reference, not
+vault entries**): **Tizanael & Rahiniel** — the in-Waiting *ended before
+succeeding* (Rahiniel died in the role); **Tizanael & Terciel** — the in-Waiting
+*succeeded.* A master may have successive in-Waitings; a dyad may close without a
+graduation. See: Rahiniel & Terciel,* Terciel & Elinor*.*
+
 ---
 
 ## The leaves
@@ -200,6 +221,13 @@ line, only their order relative to one another.*
   them from the gaps into the Record as confirmed Abhorsens, with all
   individuating detail held `*`. Count `~3 (the Many)`; the styling leaves the
   true number open.
+- **2026-06-01 — amendment 4** *(on Logan's word: "Yes").* Added **The Dyads**
+  subsection, denoting each apprenticeship-pair as a unit with its **resolution** —
+  *succeeded / ended-before-succeeding / current.* Modeled on the canonical Old
+  Kingdom dyads (Tizanael's in-Waitings — Rahiniel, who *ended before succeeding,*
+  and Terciel, who *succeeded* — **reference, not vault entries**), per Logan's
+  pointer "see: Rahiniel & Terciel." Resolves the earlier finding that the dyads
+  were denoted per-holder but not as discrete pairs.
 
 ---
 
