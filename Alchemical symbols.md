@@ -13,6 +13,7 @@ status: reference
 authority: LOGAN
 related:
   - Alchemy
+  - Hermeticism
   - Language of flowers
   - GRIMOIRE
   - VAULT-CONVENTIONS

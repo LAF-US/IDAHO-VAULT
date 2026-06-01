@@ -13,6 +13,7 @@ status: reference
 authority: LOGAN
 related:
   - Language of flowers
+  - Hermeticism
   - Alchemical symbols
   - Jung and alchemy
   - GRIMOIRE
@@ -63,7 +64,8 @@ granted, make its operations follow logically.
    Every substance is a particular balance of the three; the Work rebalances
    them.
 4. **Correspondence — "as above, so below."** From the Hermetic *Emerald
-   Tablet* attributed to Hermes Trismegistus: the macrocosm (heavens) and the
+   Tablet* attributed to Hermes Trismegistus (see [[Hermeticism]]): the
+   macrocosm (heavens) and the
    microcosm (matter, body) mirror one another. This is why the **metals are
    bound to the planets** and why operating on a metal is also operating on a
    fate and a faculty of the self.
