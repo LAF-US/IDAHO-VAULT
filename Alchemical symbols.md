@@ -14,6 +14,7 @@ authority: LOGAN
 related:
   - Alchemy
   - Hermeticism
+  - Palmistry
   - Language of flowers
   - GRIMOIRE
   - VAULT-CONVENTIONS
