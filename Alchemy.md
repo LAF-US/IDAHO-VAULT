@@ -13,6 +13,8 @@ status: reference
 authority: LOGAN
 related:
   - Language of flowers
+  - Alchemical symbols
+  - Jung and alchemy
   - GRIMOIRE
   - VAULT-CONVENTIONS
 tags:
@@ -119,7 +121,7 @@ of perfecting lead "up" to gold was equally a movement from Saturn to the Sun.
 - **The psychological afterlife.** In the 20th century **Carl Jung** re-read
   alchemy as a projected map of inner transformation — the *opus* as
   individuation — which is the lens through which much popular alchemy is now
-  received.
+  received. See the companion node [[Jung and alchemy]].
 
 ## The Great Work — the cycle (*Magnum Opus*)
 
