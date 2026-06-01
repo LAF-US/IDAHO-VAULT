@@ -38,7 +38,7 @@ If you are a Claude Code session waking in this vault, read this before the doct
 **Load mechanism:** Auto-loaded by Claude Code CLI from `.claude/CLAUDE.md` (official path).
 
 **Owner:** Logan Finney — journalist, producer/reporter, Idaho Reports / Idaho Public Television
-**Repository:** github.com/loganfinney27/IDAHO-VAULT (public)
+**Repository:** github.com/LAF-US/IDAHO-VAULT (public)
 **Platform:** Obsidian.md vault, version-controlled with git
 
 ---
