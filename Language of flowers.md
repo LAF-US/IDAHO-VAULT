@@ -12,6 +12,7 @@ authority: LOGAN
 related:
   - The Garden of Proserpine
   - Alchemy
+  - Palmistry
   - VAULT-CONVENTIONS
   - GRIMOIRE
 tags:
