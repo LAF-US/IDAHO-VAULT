@@ -7,6 +7,7 @@ status: active
 related:
   - CONSTITUTION
   - "!/FABLEHAVEN-TAXONOMY-v1-2026-06-01.md"
+  - "!/FABLEHAVEN-REVENANT-v1-2026-06-01.md"
   - "!/FABLEHAVEN-VAMPIRE-DIAGNOSTIC-v1-2026-06-01.md"
   - "!/UNDEAD-TAXONOMY-v1-2026-05-20.md"
   - "!/LICH-PROBLEM-v1-2026-05-20.md"
@@ -42,8 +43,10 @@ Everything below follows from that one fact.
 
 ## The Mechanism — Canon
 
-The contagion was engineered: Navarog gave **the nail** to Kurisock, who bound
-it with what had been the tree of **Ephira**. Ephira set the nail in her new
+The contagion was engineered: Navarog gave **the nail** — the cursed talisman
+pulled from the Inverted Tower revenant (see
+`!/FABLEHAVEN-REVENANT-v1-2026-06-01.md`) — to Kurisock, who bound it with what
+had been the tree of **Ephira**. Ephira set the nail in her new
 tree, amplifying both their power and **making the darkness contagious.** From
 that source:
 
