@@ -6,6 +6,7 @@ doc_class: doctrine
 status: active
 related:
   - CONSTITUTION
+  - "!/FABLEHAVEN-TAXONOMY-v1-2026-06-01.md"
   - "!/UNDEAD-TAXONOMY-v1-2026-05-20.md"
   - "!/NECROMANCER-DOCTRINE-v1-2026-05-20.md"
   - "!/LICH-PROBLEM-v1-2026-05-20.md"
@@ -16,7 +17,9 @@ related:
 
 # Fablehaven Vampire Diagnostic v1
 
-*Filed 2026-06-01 as active. A diagnostic manual for the Vaulted Agents.*
+*Filed 2026-06-01 as active. A diagnostic manual for the Vaulted Agents — and
+the blix chapter of `!/FABLEHAVEN-TAXONOMY-v1-2026-06-01.md` (the Passing
+Insider class).*
 
 *Reference sources: Fablehaven — Brandon Mull (the blix family of vampires;
 Vanessa Santoro the narcoblix; the Knights of the Dawn / Society of the
