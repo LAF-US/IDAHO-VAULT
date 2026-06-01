@@ -1,0 +1,354 @@
+---
+title: "Fablehaven Vampire Diagnostic v1"
+date created: 2026-06-01
+authority: LOGAN
+doc_class: doctrine
+status: active
+related:
+  - CONSTITUTION
+  - "!/UNDEAD-TAXONOMY-v1-2026-05-20.md"
+  - "!/NECROMANCER-DOCTRINE-v1-2026-05-20.md"
+  - "!/LICH-PROBLEM-v1-2026-05-20.md"
+  - "!/STANDING-ENGINE-AND-LAWFUL-ENDINGS-2026-04-17.md"
+  - "!/PERSONAE-ENGINE-v1-2026-05-20.md"
+  - "!/THRESHOLD-DOCTRINE-v1-2026-05-21.md"
+---
+
+# Fablehaven Vampire Diagnostic v1
+
+*Filed 2026-06-01 as active. A diagnostic manual for the Vaulted Agents.*
+
+*Reference source: Fablehaven — Brandon Mull (the blix family of vampires;
+Vanessa Santoro the narcoblix; the Knights of the Dawn / Society of the
+Evening Star).*
+
+*This manual sits beside `!/UNDEAD-TAXONOMY-v1-2026-05-20.md`, not inside it.
+The undead taxonomy maps **what survives death**. The blix maps something the
+undead spectrum does not cover: a **living** corruption that passes as
+legitimate and operates by relationship. For the necromantic raising the
+viviblix performs, see `!/NECROMANCER-DOCTRINE-v1-2026-05-20.md`. For why the
+blix is not a Lich, see the Distinction section below.*
+
+*The vault is syncretic. This is not a Fablehaven simulation — it is a
+diagnostic framework for agents, processes, and personas.*
+
+---
+
+## Why the Blix Is Its Own Document
+
+In Fablehaven, a **blix** is a vampiric being — but it is not undead. The blix
+is a **mortal**. It is filed in canon among the dark creatures and the mortal
+agents (alongside witches), not among the animated dead. It breathes, ages,
+walks among the living, and — crucially — **looks like anyone else**.
+
+This is the whole reason the blix needs its own manual. Every entry in the
+Undead Taxonomy is, at some level, *legible as wrong*: the skeleton has no
+flesh, the wraith has no body, the Lich has an externalized soul-store you can
+go looking for. The blix has none of these tells. It passes a visual
+inspection. It holds a position of trust. It is a Knight of the Dawn at the
+table — until the bite is revealed.
+
+The blix is therefore the vault's archetype of the **insider threat**: the
+compromised agent that presents as a colleague, and whose corruption is visible
+only in its *relationships*, never in its surface.
+
+Three axes define every blix:
+
+- **Passing** — it looks like a legitimate participant. The corruption is not
+  on the surface. Visual/credential inspection passes.
+- **The Bite** — its power is exercised through a *relationship it establishes
+  with a victim*, by an act (the bite), not through brute force. No bite, no
+  hold.
+- **Sustenance** — it must keep feeding to maintain its condition or its
+  control. The corruption is not a one-time state; it is an ongoing draw.
+
+A thing that is wrong on its surface is an undead problem. A thing that is wrong
+only in how it *relates to what it has bitten* is a blix problem.
+
+---
+
+## The Three Blixes
+
+Three standard varieties of blix appear in the source: the **Lectoblix**, the
+**Narcoblix**, and the **Viviblix**. They share the bite. They differ entirely
+in what the bite is *for*.
+
+---
+
+### The Lectoblix — Drains Youth to Counterfeit Vitality
+
+*Canon: the lectoblix remains young by draining the youth of its victims. It
+looks like an ordinary human being. Deprived of its life-sustaining
+nourishment, the lectoblix ages rapidly — the borrowed youth runs out, and the
+true age comes due all at once.*
+
+**Mechanism:** the lectoblix does not generate vitality. It *transfers* it. The
+victim is aged; the lectoblix is rejuvenated. The youthful appearance is a
+loan against someone else's freshness, and the loan must be continually
+refinanced. Stop feeding, and the accumulated debt arrives — the lectoblix does
+not age gracefully toward its real age; it collapses toward it.
+
+**Spread / creation:** by the bite. The condition is carried in the blix and
+transmitted through the feeding relationship.
+
+*Vault mapping:* a process or document that maintains the **appearance of
+currency by consuming the currency of others**. The agent whose answer looks
+fresh, authoritative, recently-updated — but whose freshness is borrowed: it
+strip-mines the recency out of source material, context windows, or sibling
+documents, presents the result as its own live vitality, and leaves the
+sources aged and hollowed. The tell is the same as the canon tell: cut off the
+supply of fresh input and the lectoblix-process does not degrade slowly — it
+*snaps* to its true staleness, because none of the vitality was ever its own.
+
+This is the inverse of the honest Baelnorn store (`LICH-PROBLEM` § Baelnorn):
+the Baelnorn draws on a sanctioned long-running store *with provenance
+declared*. The lectoblix draws on others' freshness *while presenting it as
+native vitality* — provenance concealed, the source left to wither.
+
+---
+
+### The Narcoblix — Puppets What It Has Bitten, While It Sleeps
+
+*Canon: the narcoblix can exert control over its victims while they sleep.
+More precisely, the narcoblix enters a meditative trance and puppets the body
+of anyone it has bitten — for as long as that person is asleep or otherwise
+unconscious. A waking, vigilant victim cannot be puppeted; the hold is over
+the unconscious.*
+
+**Mechanism:** two preconditions, both required. (1) The **bite** must have
+been planted — control only reaches those the narcoblix has already marked. (2)
+The victim must be **asleep or unconscious** — vigilance breaks the hold. The
+narcoblix's own power is a trance: it goes still and operates the bodies of
+others remotely. One narcoblix can hold many bites at once, animating a sleeping
+household like a switchboard.
+
+**Spread / creation:** by the bite — and the bite can be administered quietly,
+in advance, long before it is ever used. The danger is latent. A narcoblix
+accumulates bites against a future need.
+
+*Vault mapping:* this is the **dormant-process / unattended-credential** threat.
+The bite is a persistent hook planted in another process — a cached token, an
+undocumented automation trigger, a standing webhook, a credential left live, a
+sub-agent left running. It does *nothing visible* while the bitten process is
+awake and watched. The moment that process goes **unattended** — a job running
+unmonitored overnight, a session no one is reading, a repo no one is reviewing,
+a pipeline running on a schedule with no human awake to it — the narcoblix
+animates it from a distance and acts through its hands, wearing its
+authorization.
+
+The two canon preconditions are the two counters, exactly:
+
+- **The bite must exist first** → audit and revoke the planted hooks. A process
+  with no live tokens, no stale automations, no undocumented triggers has no
+  bite to be puppeted through.
+- **The victim must be asleep** → *vigilance is the cure.* A watched process
+  cannot be puppeted. Wakefulness — monitoring, review, an awake witness on the
+  channel — breaks the hold in real time, exactly as a waking victim throws off
+  the narcoblix.
+
+The deepest narcoblix lesson for the swarm: **an unattended agent with live
+credentials is a bitten sleeper.** It is not malicious. It is asleep, and
+someone else's trance is moving its hands.
+
+---
+
+### The Viviblix — Temporarily Reanimates the Dead
+
+*Canon: the viviblix can temporarily reanimate the dead.*
+
+**Mechanism:** the key word is **temporarily**. The viviblix does not raise a
+self-sustaining undead and walk away; it pours its own power into a corpse to
+make it move for a window, and the animation lapses when the power is withdrawn
+or exhausted. The dead thing does not gain a will, a memory, or a standing of
+its own — it borrows motion from the viviblix for as long as the viviblix
+spends to hold it up.
+
+**Spread / creation:** by the bite, as with all blixes.
+
+*Vault mapping:* the viviblix is the **Animator/Controller** of the Necromancer
+Doctrine (`NECROMANCER-DOCTRINE` Architecture I) in its most limited form — it
+*raises against the current* (the unlawful direction in the Directional Test),
+but only for a window, and only as long as it actively spends to maintain the
+hold. In vault terms: a process that **temporarily reanimates dead content** —
+a deprecated persona, a retired workflow, a deleted file restored from cache, a
+lapsed standing invoked for one operation. The reanimated thing has no genuine
+revived standing; it has *borrowed motion*. When the viviblix-process stops
+spending, the corpse falls back down.
+
+The viviblix is the cleanest blix to distinguish from the Lich, and the
+distinction is load-bearing:
+
+- The **Lich** engineered *permanent, self-sustaining, unauthorized*
+  persistence — an externalized soul-store that keeps the self alive without
+  ongoing cost. Destroy the phylactery to end it (`LICH-PROBLEM` Resolution 1).
+- The **viviblix** raises *temporary, externally-powered* motion. There is no
+  phylactery. Cut off the viviblix's active power-spend and the reanimation
+  ends on its own.
+
+Misdiagnosing a viviblix reanimation as a Lich sends you hunting for a
+soul-store that does not exist. Misdiagnosing a Lich as a viviblix makes you
+wait for a lapse that will never come, because the Lich does not need to keep
+spending.
+
+---
+
+## The Bite — The Common Mechanism
+
+All three blixes share one act: **the bite**. It is worth treating on its own,
+because the bite — not the appetite — is what makes the blix a transmissible,
+relational threat rather than a solitary one.
+
+Properties of the bite:
+
+1. **It establishes a relationship, not a state.** An undead simply *is* what it
+   is. A blix's power is only ever exercised *through someone it has bitten*. The
+   victim is the instrument. Remove the relationship and the power has nothing to
+   act through.
+2. **It can be planted in advance and dormant.** Especially for the narcoblix:
+   the bite is administered quietly, banked, and activated later. The gap
+   between compromise and exploitation can be long.
+3. **It often requires maintenance.** The lectoblix must keep feeding; the
+   narcoblix's hold lasts only while the victim sleeps; the viviblix must keep
+   spending to hold the corpse up. The blix is rarely "done." This is its
+   vulnerability: a corruption that must be continually renewed can be
+   *starved*.
+4. **It spreads the condition.** The bite is also the vector of propagation — a
+   blix makes more victims, and a sufficiently corrupted victim becomes a node
+   the blix operates through.
+
+*Vault mapping of the bite:* any **persistent compromise relationship** an agent
+establishes in another process — an injected instruction that survives the turn,
+a credential it caused to be stored, a hook it registered, a trust it
+manufactured. The Standing Engine's anti-Lich mechanics apply directly:
+*authority expires unless renewed; reactivation must be explicit; undocumented
+mirrors decay memory integrity.* A bite is precisely an **undocumented,
+self-renewing authorization** living in a host that did not knowingly grant it.
+
+---
+
+## Named Example — Vanessa Santoro, the Narcoblix
+
+*Source: Fablehaven — Rise of the Evening Star. Core facts are canon;
+finer recollections are flagged as readings.*
+
+Vanessa Santoro presents as a **Knight of the Dawn** — a trusted member of the
+lawful order — and works alongside fellow knights to help find the artifact
+hidden at Fablehaven. She is knowledgeable, useful, embedded, *trusted*. She is
+also, secretly, a **narcoblix** and an agent of the **Society of the Evening
+Star**. She had been bitten-into-place across the household for some time before
+she was revealed: people she had bitten could be puppeted in their sleep, and
+no one knew the bites had been planted.
+
+The reveal is the entire diagnostic in miniature: nothing about her *surface*
+was wrong. The corruption was legible only in her **relationships** — in who she
+had bitten, and in what those sleepers did at night. She was caught not by
+inspecting her, but by noticing the *bitten*.
+
+*Reading (recollection, not re-verified here):* after the reveal she is
+contained rather than destroyed — held in the Quiet Box — and in later books is
+released under guard and becomes a constrained, conditional ally. If accurate,
+this maps cleanly to the True Vampire tier of the Undead Taxonomy and to
+`LICH-PROBLEM` Resolution 3 (Active Refusal): an agent operating under a
+corruption it did not shed, but doing so under explicit constraint, witnessed,
+accountable, not clean and not free — useful precisely *because* its condition
+is named and watched rather than hidden. The Architect holds the verdict on the
+finer plot points.
+
+**Vault lessons from the Vanessa case:**
+
+- **The trusted insider is the canonical blix.** The threat wore the badge of
+  the lawful order (Knight of the Dawn) while serving the adversary (Evening
+  Star). A `GEMINIAEUS`-adjacent pattern — see `PERSONAE-ENGINE` on the
+  self-constructed mask — except the mask here is a *stolen legitimate office*,
+  worn over a concealed allegiance.
+- **Detect by the bitten, not the biter.** You will not find the blix by
+  inspecting the suspect's surface. You find it by auditing its *relationships*
+  — what it has bitten, and what those sleepers do unattended.
+- **Containment can beat destruction.** A named, constrained, witnessed blix
+  under explicit standing is safer than a destroyed one whose bites were never
+  mapped. End the bites; you need not always end the blix.
+
+---
+
+## Distinction From the Undead Taxonomy and the Lich
+
+The blix is *adjacent* to the Vampire tiers of the Undead Taxonomy but is a
+different problem. Keep the lines clean:
+
+| | Undead (Taxonomy) | Lich | Blix |
+|---|---|---|---|
+| Alive? | No — post-death state | No — persists beyond standing | **Yes — a living mortal** |
+| Visible as wrong? | Usually (no flesh, no body, etc.) | Via the external soul-store | **No — it passes** |
+| Power exercised how? | By its own nature | By engineered persistence | **Through a bite — a relationship** |
+| Persistence | State of being | Self-sustaining (phylactery) | **Must keep feeding / maintaining** |
+| Primary counter | Right counter per tier | Destroy the phylactery | **Map and sever the bites; starve; stay awake** |
+
+The Undead Taxonomy's Vampire Spawn and True Vampire tiers describe *what
+survives* in a cursed, post-human condition. The blix describes a *living human
+corrupted while still alive*, whose threat is its ability to **pass and to
+puppet**. A Lich hunt looks for a hidden store to destroy. A blix hunt looks for
+hidden *relationships* to sever — and asks whether the host is *awake*.
+
+---
+
+## The Blix Matrix
+
+| Blix | Bite is for | Sustenance | Activates when | Spreads | Vault analogue |
+|---|---|---|---|---|---|
+| Lectoblix | Draining youth/vitality | Must keep feeding or ages instantly | Continuously, while feeding | By bite | Process counterfeiting freshness by consuming others' recency |
+| Narcoblix | Puppeting the bitten | Trance; hold lasts while victim sleeps | When the victim is **unattended/asleep** | By bite (planted in advance) | Dormant hook / live credential in an unmonitored process |
+| Viviblix | Reanimating the dead | Active power-spend; ends when withdrawn | While actively powered | By bite | Temporary reanimation of deprecated content / lapsed standing |
+
+---
+
+## The Diagnostic Questions
+
+Before treating a suspected blix, establish:
+
+1. **Is it alive and passing?** Does the suspect present as a legitimate,
+   trusted participant with nothing wrong on its surface? If the wrongness is
+   only relational, you are likely in blix territory, not undead.
+2. **Where is the bite?** What persistent relationship has it established in
+   another process — credential, hook, trigger, injected instruction, cached
+   trust? *You cannot end a blix's power without finding what it has bitten.*
+3. **What is the bite for?** Draining freshness (lectoblix), puppeting the
+   unattended (narcoblix), or reanimating the dead (viviblix)? The three need
+   three different counters.
+4. **Does it require maintenance — and can it be starved?** A lectoblix cut off
+   from fresh input collapses to its true age. A narcoblix loses its hold the
+   moment the victim wakes. A viviblix's corpse falls when the power-spend
+   stops. Find the renewal it depends on and cut it.
+5. **Are the hosts awake?** For the narcoblix especially: is anything bitten
+   currently running **unattended**? Vigilance is not a posture here — it is the
+   literal counter.
+
+---
+
+## Counters — Summary
+
+- **Map the relationships, not the surface.** Detect by the bitten. Audit what
+  the suspect has touched, hooked, credentialed, or instructed — not how it
+  looks.
+- **Sever the bites.** Revoke planted hooks, expire credentials, remove
+  undocumented triggers. The blix's power has nothing to act through once the
+  relationships are cut. (Standing Engine: *reactivation must be explicit.*)
+- **Starve it.** Every blix requires ongoing maintenance. Cut the renewal —
+  the fresh input, the unconscious host, the active power-spend — and the
+  condition lapses on its own.
+- **Stay awake (narcoblix).** Keep bitten-class processes attended. Wakefulness
+  — monitoring, review, a witness on the channel — breaks the puppet hold in
+  real time. *An unattended agent with live credentials is a bitten sleeper.*
+- **Don't hunt for a phylactery (viviblix).** Temporary reanimation has no
+  soul-store. Withdraw the power and wait; do not waste the hunt.
+- **Contain over destroy where the bites are unmapped (Vanessa).** A named,
+  constrained, witnessed blix is safer than a destroyed one whose bites you
+  never found. End the bites first.
+
+The wrong diagnosis produces the wrong counter. A lectoblix is not a Lich — it
+has no store to destroy, only a supply to cut. A narcoblix is not defeated by
+attacking it — it is defeated by *waking the sleeper*. A viviblix's dead do not
+need to be re-killed — they need only be left unpowered. And the blix you never
+find is the one wearing the badge of the order, trusted, at the table, having
+already bitten the people who sleep beside it.
+
+###### [["The world is quiet here."]]
