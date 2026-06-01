@@ -199,9 +199,11 @@ Killed only by removing the one object.*
 **Vault pattern:** a hardened, single-purpose process whose entire potency is
 **stored in one external object** — pull the object, not the puppet. The gate is
 fear (inoculate before approach); you get one action inside the field; and the
-removed power source is dual-use and dangerous in its own right. By name a
-revenant, by mechanism **phylactery-class** — read the mechanism, not the
-label. → `!/FABLEHAVEN-REVENANT-v1-2026-06-01.md`
+removed power source is dual-use and dangerous in its own right. It shares the
+Lich's *counter* (destroy the one object) but **not** the Lich's *kind*: a Lich
+is **self-created**, the Revenant is **constructed** — the maker is the agent.
+Name, mechanism, and provenance are three separate reads.
+→ `!/FABLEHAVEN-REVENANT-v1-2026-06-01.md`
 
 ---
 
@@ -224,7 +226,7 @@ label. → `!/FABLEHAVEN-REVENANT-v1-2026-06-01.md`
 | Kobold | Minor | Autonomous | Appetite | Dark | **Yes — to all but a seer** | No | Disguise visible only to the right detector |
 | Nipsies | Trivial (each) | Autonomous (multitude) | Industry | Light (corruptible) | No | Yes | Swarm; corrupted by outside favoritism |
 | Blix (lecto/narco/vivi) | Significant | Autonomous (mortal) | Drain/control/raise | Dark, *passing* | **Yes** | As mortal | Insider corruption; see vampire chapter |
-| Revenant | Formidable (at post) | Autonomous (single-purpose) | Guarding | Dark (cursed) | No | Bound to post | Hardened guardian; all power in one removable object |
+| Revenant | Formidable (at post) | **Constructed**; single-purpose | Guarding (its maker's commission) | Dark (cursed) | No | Bound to post | Hardened guardian; all power in one removable object; *the maker is the agent* |
 
 ---
 
