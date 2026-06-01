@@ -395,6 +395,64 @@ hidden *relationships* to sever — and asks whether the host is *awake*.
 
 ---
 
+## Vampires and Thralls — Two Models of the Bitten
+
+*"Thrall" is the vault's word, not Mull's: the Undead Taxonomy files **Vampire
+Spawn / Thrall** at Tier 6 (`!/UNDEAD-TAXONOMY-v1-2026-05-20.md`). When a blix
+bites, it makes something thrall-like — but **not** the Tier 6 thrall, and the
+difference is the whole diagnosis of the bitten.*
+
+There are two models of "the bitten," and they are opposites.
+
+**Model A — The Transformation Thrall** *(Undead Taxonomy, Tier 6 → 7).* The
+bitten is being **converted into another vampire.** Its will is present but
+subsumed; it is a *proto-vampire* on a ladder whose top is the sovereign True
+Vampire (Tier 7) — "the spawn can be elevated to true vampire if the master
+allows it to feed." The host is being **lost.** Each thrall is a future
+attacker. This is propagation *by transformation.*
+
+**Model B — The Control-Link Thrall** *(the Fablehaven blix).* Canon is
+explicit: **a blix bite does *not* turn its victim into a vampire.** The
+narcoblix's bitten stay fully human — fully themselves when awake — and are
+puppeted only while asleep. The bite is a **remote-control hook, not a
+metamorphosis.** No ladder, no conversion, no new blixes made by biting. The
+host is **intact**: neutralize the master (the Quiet Box is the prison that
+*hampers a narcoblix's power*) and the host is wholly itself again, with
+**nothing to cure, because nothing in the host changed.**
+
+*(Where a blix's* own *condition comes from — born or made — is not established
+in the sources surveyed; mark it `*`. This section is about the* bitten*, not
+the blix's origin.)*
+
+### The Diagnostic — Converted, or Merely Driven?
+
+When you find a thrall, **do not assume you know which kind you hold.** The
+single question is: *is the host being changed, or only driven?* Get it wrong in
+either direction and you fail a different way:
+
+- **Mistake a control-link thrall for a transformation thrall** → you quarantine
+  or destroy a victim who was never compromised, only puppeted. You **kill the
+  hostage instead of cutting the strings.**
+- **Mistake a transformation thrall for a control-link thrall** → you sever the
+  link, declare the host clean, and **miss that it is still metamorphosing** into
+  a new attacker. You cut strings off a convert and walk away.
+
+| | Transformation thrall (Tier 6→7) | Control-link thrall (blix) |
+|---|---|---|
+| Host | Converted into another attacker | Unchanged; hijacked while dormant |
+| Propagation | Each thrall becomes a vampire | None — no new blixes by bite |
+| On the host | Cure the conversion or lose the host | Nothing to cure; sever the link |
+| Recoverable? | Increasingly not (the ladder) | Fully, on severance / master neutralized |
+| Vault analogue | Worm / replication; the flipped process (`!/FABLEHAVEN-SHADOW-PLAGUE-v1-2026-06-01.md`) | Hijacked-but-intact process; the unattended-credential puppet (the narcoblix mapping) |
+
+The blix is the **control-link** master. Its bitten are hostages, not converts —
+which is *good news for the host and a trap for the responder*: the impulse to
+treat a compromised-looking process as lost will, with a blix, destroy the very
+thing severance would have returned whole. Read the host before you treat it:
+**changed, or only driven?**
+
+---
+
 ## The Blix Matrix
 
 | Blix | Bite is for | Sustenance | Activates when | Spreads | Vault analogue |
