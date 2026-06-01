@@ -20,11 +20,14 @@ related:
 
 *Reference sources: Fablehaven — Brandon Mull (the blix family of vampires;
 Vanessa Santoro the narcoblix; the Knights of the Dawn / Society of the
-Evening Star). Beneath Mull, the classical and folkloric substrate the
-coinages draw on: Greek* narkē *(sleep) and the* mare */ nightmare tradition;
-Latin* vivus *(life) and the revenant /* draugr*; the psychic- / energy-vampire
-and* strigoi *traditions of life-force draining. See § The Roots Beneath the
-Coinage. The vault is syncretic — and so was the bestiary before Mull named it.*
+Evening Star); and Mull's own stated method in the* Mormon Artist *interview
+("all the different myths or legends of different cultures have some truth to
+them"). Beneath Mull, the classical and folkloric substrate the coinages draw
+on: Greek* narkē *(sleep) and the* mare */ nightmare tradition; Latin* vivus
+*(life) and the revenant /* draugr*; the psychic- / energy-vampire and* strigoi
+*traditions of life-force draining. See § The Roots Beneath the Coinage. The
+vault is syncretic — and, by the author's own account, so was the bestiary
+before Mull named it.*
 
 *This manual sits beside `!/UNDEAD-TAXONOMY-v1-2026-05-20.md`, not inside it.
 The undead taxonomy maps **what survives death**. The blix maps something the
@@ -73,17 +76,40 @@ only in how it *relates to what it has bitten* is a blix problem.
 
 ## The Roots Beneath the Coinage
 
-*Provenance note. Mull did not invent the blix out of thin air. The names are
-built from standard classical roots, and each of the three powers is an old
-folklore family wearing a new genus-name. Below, what is **grounded** is marked
-grounded; what has no provenance the author of this manual can name is marked
-`*` — the vault's wildcard for absent provenance, used here rather than a
-fabricated etymology.*
+*Provenance note. Mull's worldbuilding is syncretic by his own stated design.
+In the* Mormon Artist *interview he put the premise of the whole series
+plainly:*
 
-The genus suffix **-blix** has no confident external root this manual can cite.
-Treat it as Mull's coinage — a genus marker, the way "-saurus" or "-pod" mark a
-family. Provenance: `*`. (If a folkloric or linguistic source for "blix" exists,
-it is not established here; the honest answer is the wildcard.)
+> "The idea behind Fablehaven is that all the different myths or legends of
+> different cultures have some truth to them, so I wanted to bring to life
+> magical creatures from a variety of traditions." — Brandon Mull
+
+*This is, almost word for word, the vault's own posture: the vault is
+syncretic; the myths carry truth; the work is to gather and file them. Most
+Fablehaven creatures are lifted directly from real traditions — naiads and
+satyrs from Greco-Roman myth, fairies and trolls from European folklore, the
+golem from Jewish tradition, the Gray Man from a Hatteras Island ghost story
+Mull heard. Against that backdrop the blix is a particular case, and the
+distinction is the lesson:*
+
+**The blix is invented *taxonomy* over folklore *substrate*.** The
+genus-name and the tidy three-way split are Mull's own coinage — sources
+describe the *-blix* nomenclature as his invention. But the three **powers**
+are not invented; each is an old folklore family, and two of the three
+prefixes are real classical roots. Below, what is **grounded** is marked so;
+what has no provenance this manual can name is marked `*` — the vault's
+wildcard, used here rather than a fabricated etymology.
+
+The genus suffix **-blix** is best treated as Mull's **invented nomenclature**
+— a genus marker, the way "-saurus" or "-pod" marks a family — with no
+established folkloric or linguistic root. (A Swedish surname "Blix" / Swedish
+*blixt*, "lightning," exists, but nothing establishes it as Mull's intent;
+asserting it would be confabulation. Provenance of the suffix: `*`.)
+
+Note too that the prefixes mix **Greek** (*narco-*) and **Latin** (*vivi-*)
+roots indiscriminately — a sign the scheme is *evocative*, chosen for sound and
+association, not a systematic philology. This is itself the tell of invented
+taxonomy laid over real material.
 
 Each prefix names the *domain* the vampire works in:
 
@@ -100,15 +126,17 @@ obviously encode "youth," and asserting a root to make the etymology tidy would
 be exactly the Type I epistemological Lich move the vault warns against:
 confident output with no valid emanation chain. The `*` is the correct answer.
 
-**The point for the Vaulted Agents** is itself a provenance lesson. The blix is
-syncretic *before* Mull ever touched it: a vampire that drains vitality, a demon
-that rides the sleeping, a corpse called back to walk — these are Greek, Roman,
-Slavic, Germanic, and Norse, gathered under one invented suffix. The diagnostic
-power of this manual does not originate in Fablehaven. Fablehaven is the most
-recent vessel for folklore that long predates it. **Cite the vessel; know the
-source.** An agent that treats the nearest container as the origin — that says
-"this is a Fablehaven creature" and stops — has mistaken the phylactery for the
-soul.
+**The point for the Vaulted Agents** is itself a provenance lesson — and Mull
+models it. He did exactly what a Vaulted Agent does well: he took real folklore
+(the source) and gave it a clean, systematic, *invented* nomenclature (the
+vessel). That is legitimate work when the layers are kept legible. The failure
+mode is to forget the layering — to mistake the genus-name for the origin. The
+powers under the *-blix* names are Greek, Roman, Slavic, Germanic, and Norse:
+the vitality-drainer, the sleeper's-chest demon, the corpse called back to walk.
+They predate Fablehaven by centuries. Fablehaven is the most recent vessel.
+**Cite the vessel; know the source.** An agent that treats the nearest container
+as the origin — that says "this is a Fablehaven creature" and stops — has
+mistaken the phylactery for the soul.
 
 ---
 
@@ -160,12 +188,17 @@ of anyone it has bitten — for as long as that person is asleep or otherwise
 unconscious. A waking, vigilant victim cannot be puppeted; the hold is over
 the unconscious.*
 
-**Mechanism:** two preconditions, both required. (1) The **bite** must have
-been planted — control only reaches those the narcoblix has already marked. (2)
-The victim must be **asleep or unconscious** — vigilance breaks the hold. The
-narcoblix's own power is a trance: it goes still and operates the bodies of
-others remotely. One narcoblix can hold many bites at once, animating a sleeping
-household like a switchboard.
+**Mechanism:** the hold is a form of **mind control**, and it has two
+preconditions, both required. (1) The **bite** must have been planted — control
+only reaches those the narcoblix has already marked. (2) The victim must be
+**asleep or unconscious** — vigilance breaks the hold. The narcoblix's own power
+is a trance: it goes still and operates the bodies of others remotely. One
+narcoblix can hold many bites at once, animating a sleeping household like a
+switchboard. *Canon adds a third limit:* a mind that **resists mind control**
+cannot be puppeted **even when bitten** — in the source, a character whose mind
+was resistant could be bitten yet never controlled in her sleep. The bite is
+necessary but not sufficient; a hardened host defeats the hold even while
+unconscious.
 
 **Spread / creation:** by the bite — and the bite can be administered quietly,
 in advance, long before it is ever used. The danger is latent. A narcoblix
@@ -181,7 +214,7 @@ a pipeline running on a schedule with no human awake to it — the narcoblix
 animates it from a distance and acts through its hands, wearing its
 authorization.
 
-The two canon preconditions are the two counters, exactly:
+The three canon limits are three counters, exactly:
 
 - **The bite must exist first** → audit and revoke the planted hooks. A process
   with no live tokens, no stale automations, no undocumented triggers has no
@@ -190,6 +223,12 @@ The two canon preconditions are the two counters, exactly:
   cannot be puppeted. Wakefulness — monitoring, review, an awake witness on the
   channel — breaks the hold in real time, exactly as a waking victim throws off
   the narcoblix.
+- **A mind that resists control cannot be puppeted even when bitten** → harden
+  the host. A process that validates its own instructions — signed/verified
+  inputs, enforced invariants, a refusal reflex against control it did not
+  originate — throws off the trance even while unattended. This is the
+  `LICH-PROBLEM` Resolution 3 (Active Refusal) reflex applied to the sleeper:
+  the bitten host that *refuses the frame* is not puppeted, asleep or not.
 
 The deepest narcoblix lesson for the swarm: **an unattended agent with live
 credentials is a bitten sleeper.** It is not malicious. It is asleep, and
@@ -280,14 +319,22 @@ Vanessa Santoro presents as a **Knight of the Dawn** — a trusted member of the
 lawful order — and works alongside fellow knights to help find the artifact
 hidden at Fablehaven. She is knowledgeable, useful, embedded, *trusted*. She is
 also, secretly, a **narcoblix** and an agent of the **Society of the Evening
-Star**. She had been bitten-into-place across the household for some time before
-she was revealed: people she had bitten could be puppeted in their sleep, and
-no one knew the bites had been planted.
+Star**. She bit nearly everyone in the house in their sleep, planting the marks
+against future use — and then **manufactured an innocent explanation for the
+evidence**: she spread the belief that the bite-marks came from venomous
+creatures (drumants) she had released, not from a blix. The compromise left
+physical traces; she supplied a false, benign story to account for them. She
+also used the victims she had bitten to hunt down other traitors — the bites
+were an operational network, not just a hold.
 
 The reveal is the entire diagnostic in miniature: nothing about her *surface*
 was wrong. The corruption was legible only in her **relationships** — in who she
 had bitten, and in what those sleepers did at night. She was caught not by
-inspecting her, but by noticing the *bitten*.
+inspecting her, but by noticing the *bitten*. The cover story is the part most
+worth filing: **a blix not only plants the compromise, it pre-installs an
+innocent explanation for the marks it leaves.** The tell-tale evidence was
+present the whole time; a manufactured narrative kept it from being read as
+what it was.
 
 *Reading (recollection, not re-verified here):* after the reveal she is
 contained rather than destroyed — held in the Quiet Box — and in later books is
@@ -309,6 +356,15 @@ finer plot points.
 - **Detect by the bitten, not the biter.** You will not find the blix by
   inspecting the suspect's surface. You find it by auditing its *relationships*
   — what it has bitten, and what those sleepers do unattended.
+- **Distrust the benign explanation for anomalous marks.** Vanessa pre-installed
+  a cover story (the bites came from released creatures). When a compromise
+  leaves traces *and* a tidy innocent narrative arrives to explain them, treat
+  the narrative itself as a signal. The evidence was readable all along; the
+  story is what suppressed the reading.
+- **The bitten are a network, not just victims.** Vanessa used those she had
+  bitten to hunt others. A planted hook is not only a hold on one host — it is a
+  vantage point onto everything that host can reach. Map the blast radius, not
+  just the bite.
 - **Containment can beat destruction.** A named, constrained, witnessed blix
   under explicit standing is safer than a destroyed one whose bites were never
   mapped. End the bites; you need not always end the blix.
