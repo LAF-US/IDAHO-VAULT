@@ -12,10 +12,12 @@ authority: LOGAN
 related:
   - The Garden of Proserpine
   - VAULT-CONVENTIONS
+  - GRIMOIRE
 tags:
   - reference
   - culture/symbolism
   - history
+  - cryptography/symbolic-languages
 ---
 
 # Language of flowers
@@ -68,6 +70,17 @@ Interest blossomed into published reference works in early-19th-century France:
   assigned meanings were **never perfectly consistent** from book to book — a
   given flower could mean different things in different dictionaries.
 
+English-language and American compilers carried the genre across the Channel
+and the Atlantic:
+
+- **Robert Tyas** (1811–1879), a British clergyman, publisher, and flower
+  writer, issued *The Sentiment of Flowers; or, Language of Flora* (first
+  published 1836, reprinted through at least 1880), billed as an English
+  rendering of de Latour.
+- **Sarah Josepha Hale** — writer, activist, and longtime editor of *Godey's
+  Lady's Book* — produced *Flora's Interpreter* (and *Fortuna Flora*), an
+  American sentimental flower book (Boston, editions through 1848).
+
 ## The Victorian peak
 
 The Victorians (roughly 1837–1901) elaborated the language of flowers more
@@ -115,6 +128,61 @@ have long exploited it:
   "meaning" lets an author signal a character's intent or fate obliquely. The
   practice has also seen renewed popular and literary interest in modern times.
 
+## What the "language" actually was — a caution
+
+The most rigorous modern history is **Beverly Seaton**, *The Language of
+Flowers: A History* (University Press of Virginia, 1995). Seaton's central
+argument is a useful corrective to popular accounts: the language of flowers
+was **never a single, stable, universally understood cipher** that real lovers
+used to send fixed coded messages. It was, above all, a **literary and
+publishing genre** — the "sentimental flower book," largely aimed at female
+readers — that began in Napoleonic France and was elaborated in Britain and
+America. Meanings varied from book to book and country to country; the
+charming Victorian picture of strangers fluently trading "talking bouquets"
+owes as much to later romanticization as to documented practice. Seaton's
+volume is valued for two scholarly apparatus in particular: a comparative
+**table of flower-meaning correlations across sourcebooks**, and a
+**bibliography** of language-of-flowers titles.
+
+Treat the example meanings above, then, as a *genre convention* with real
+cultural reach — not as a decoder ring with one correct setting.
+
+## Primary sources and digitized collections
+
+The 19th-century flower books survive in quantity and are increasingly online:
+
+- The **Lenhardt Library of the Chicago Botanic Garden** has digitized dozens
+  of rare 19th-century language-of-flowers books under a National Endowment for
+  the Humanities grant.
+- **CSUN University Library Special Collections & Archives** (and many other
+  rare-book rooms) hold Victorian-era floriography titles.
+- **Internet Archive** carries scanned originals, e.g. Robert Tyas's *The
+  Sentiment of Flowers; or, Language of Flora*.
+
+## Related symbolic languages
+
+Floriography is one of several historical systems in which an arrangement of
+ordinary things stands in for an idea — *the object is the message*. A sibling
+worth cross-referencing is **alchemy**, which likewise ran on a dense symbolic
+notation rather than plain statement:
+
+- **The four classical elements** — earth, water, air, fire — written with
+  triangle glyphs.
+- **The seven "planetary" metals**, binding metallurgy to astrology: Sun/gold,
+  Moon/silver, Mercury/quicksilver, Venus/copper, Mars/iron, Jupiter/tin,
+  Saturn/lead.
+- **The three primes (*tria prima*)** of Paracelsian alchemy — salt, sulfur,
+  mercury.
+
+Where floriography encoded *sentiment*, alchemy encoded *operations and
+correspondences* — and it shaded into the wider vocabulary of esoteric
+practice, including the distinction between **theurgy** ("god-work": ritual
+aimed at union with or invocation of divine/spiritual beings) and
+**thaumaturgy** ("wonder-working": the practical working of marvels or
+"miracles"). All are *per sona* systems in the vault's sense — meaning carried
+through a coded surface rather than spoken plainly. A dedicated alchemy
+reference note would be a natural companion here if wanted.
+
 ## Why this is in the vault
 
 Floriography is a system in which **the object is the message** and meaning
@@ -131,5 +199,9 @@ and historical reference, on the record per [[VAULT-CONVENTIONS]].
 - [Red Roses or Yellow? Every Flower Has a Secret Meaning — HowStuffWorks](https://people.howstuffworks.com/culture-traditions/cultural-traditions/floriography.htm)
 - [Flower Meanings: The Language of Flowers — Almanac.com](https://www.almanac.com/flower-meanings-language-flowers)
 - [Language of Flowers — Antique Jewelry University (Lang Antiques)](https://www.langantiques.com/university/language-of-flowers/)
+- Beverly Seaton, *The Language of Flowers: A History* (University Press of Virginia, 1995) — [publisher/series listing](https://www.goodreads.com/book/show/393924.The_Language_of_Flowers) (scholarly history; comparative meaning table + bibliography)
+- [Language of Flowers — Lenhardt Library, Chicago Botanic Garden (digitized collection guide)](https://cbhl.libguides.com/c.php?g=753317&p=6318279)
+- [Floriography: The Language of Flowers — CSUN University Library Special Collections](https://library.csun.edu/sca/peek-stacks/floriography)
+- [Robert Tyas, *The Sentiment of Flowers; or, Language of Flora* — Internet Archive (scanned original)](https://archive.org/details/sentimentflower00tyas)
 
 ###### [["The world is quiet here."]]
