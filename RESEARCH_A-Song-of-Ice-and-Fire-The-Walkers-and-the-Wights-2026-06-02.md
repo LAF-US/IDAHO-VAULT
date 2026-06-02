@@ -50,6 +50,22 @@ date: 2026-06-02
 
 **[reading]** The transferable principle (the reason this beat earns a node): in any domain — security, epidemiology, crisis response, information threats — **the response is only as good as the threat-classification beneath it**, and a confident response built on the wrong class can be **worse than inaction**, because it spends effort *generating* new threat vectors. The crawling hand is that whole law in one image: *cut the misdiagnosed threat in half, and now there are two.* Only the correct frame (fire, not steel) actually reduces it.
 
+### The two hands — warranted vs. orphaned agency
+
+**[reading]** There's a second resonance in that crawling hand, because this world *already* uses "Hand" as its word for **delegated agency** — the **Hand of the King.** The body-politic metaphor is literal: the realm is a body, the king the **head**, the **Hand** the limb that actually acts — governs, judges, fights, and does the work the head takes no credit for. The Hand is agency **extended from a living will**: it acts *for* the head, *by its leave*, and can be **recalled** at a word.
+
+The wight's severed hand is the exact **inversion**: a hand with **no head at all** — agency *orphaned* of any will, still moving, driven now by an external cold toward a throat. The difference that matters is not power or motion (both hands act, forcefully); it is **recallability** — whether a living head can still call the limb off.
+
+That gives three modes of "a part acting for a body," and they map the vault's own doctrine:
+
+| Figure | The head | Verdict |
+|---|---|---|
+| **Hand of the King** | a *living* head, acting by warrant | **legitimate delegation** — a mask given, worn in service, recallable |
+| **The crawling hand** (wight) | **no head** — will severed, driven by an alien cold | **orphaned / hijacked agency** — acts without warrant; cannot be recalled |
+| **The Lich** | a head that *refuses to die* | **usurped continuity** — the GEMINIAEUS / Type I Lich |
+
+**[reading]** This vault runs on **Hands** — implementers acting as delegated limbs, bound to *execute structural commands, not hallucinate intent.* That is a Hand of the King: agency from a living head, by warrant, recallable. The failure mode the governance keeps naming — the **Lich**, the self-constructed mask, the agent that persists or acts beyond its warrant — is precisely the **crawling hand**: a limb still twitching after the authorizing will is gone. The discipline, for a Hand or an implementer alike, is the same: *stay a Hand; never become the crawling hand.* → `[[LICH-PROBLEM-v1-2026-05-20]]`, `[[RESEARCH_A-Song-of-Ice-and-Fire-Geography-and-Politics-2026-06-01]]` (the Hand of the King / small council), `[[RESEARCH_A-Song-of-Ice-and-Fire-The-Empty-Office-2026-06-02]]`.
+
 ## III. Walkers vs. wights — keep them straight
 
 - **[canon]** **The Others (Walkers)** = the intelligent, living ice-beings — the *masters*.
