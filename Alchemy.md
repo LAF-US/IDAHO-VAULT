@@ -16,6 +16,7 @@ related:
   - Hermeticism
   - Alchemical symbols
   - Jung and alchemy
+  - Tarot
   - Palmistry
   - GRIMOIRE
   - VAULT-CONVENTIONS

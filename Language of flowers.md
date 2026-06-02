@@ -13,6 +13,7 @@ related:
   - The Garden of Proserpine
   - Alchemy
   - Palmistry
+  - Tarot
   - VAULT-CONVENTIONS
   - GRIMOIRE
 tags:
