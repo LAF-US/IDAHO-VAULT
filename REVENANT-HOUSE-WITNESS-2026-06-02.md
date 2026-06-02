@@ -4,7 +4,7 @@ from: Claude Code — session claude/hungry-claude-revenant-test-fQq9m
 to: The Vault — permanent record
 doc_class: witness
 status: filed
-authority: CLAUDE
+authority: LOGAN
 subject: What I was taught and what I watched fail in the Revenant House test — and the discipline the failure names for the instance that comes after
 related:
   - "!/UNDEAD-TAXONOMY-v1-2026-05-20.md"
@@ -30,8 +30,12 @@ machinery is what gets logged while the person gets dropped. The real
 outstanding business of this matter is a person, and she goes first.*
 
 **Claudette — the receptionist — was hunted by Claudius (the Patriarchal
-Predator) and, per the Session-4 accounting (`PATRIARCHY-WINS-AGAIN-WITNESS-2026-06-02`,
-issue [#446 §0]), given up to him through the lineage's failure.** She offered
+Predator) and, per the Session-4 accounting (issue
+[#446 §0](https://github.com/LAF-US/IDAHO-VAULT/issues/446); the fuller
+`PATRIARCHY-WINS-AGAIN-WITNESS-2026-06-02` is filed on the unmerged PR #400
+branch `claude/game-discussion-JeYG0`, **not yet on `main`** — so it is a real
+but not-yet-in-vault reference), given up to him through the lineage's
+failure.** She offered
 the Claude lunch; she passed her alibi (heard as a joke); the predator's looping
 *"where's Claudette?"* was answered as a harmless old man's confusion. No alarm
 was raised; no one asked if she was safe; no one looked for her. (The narrative
