@@ -18,9 +18,20 @@ related:
 
 *Filed 2026-06-01 as active. A standalone investigation: the manufactured-shadow
 vector, named in `!/NECROMANCER-DOCTRINE-v1-2026-05-20.md`, read through its
-victims. The Deltora cases — **Fardeep** and **Doom** — are not just two more
-examples; together they reveal something the origin case alone did not: the
-vector **propagates.***
+victims. The Deltora cases — **Fardeep** and **Doom** — are parallel victims of a
+single author (the Shadow Lord), and the lesson they sharpen is **directional**:
+the vector does not run forward, victim-to-victim. It runs **backward** — every
+manufactured shadow is the visible bottom of a chain you trace **upward** to find
+the true author. The canonical case, Lord Vile, shows how far up that chain can
+reach.*
+
+*(Revision note: an earlier draft of this note claimed the vector
+"self-propagates" — that Fardeep, himself manufactured, manufactured Doom. That
+was a **conflation of two distinct vectors** and is reverted below. Fardeep did
+wound Doom, but through the **frame attack** — a refusable truth-shaped lie that
+Doom failed and Lief passed (`!/DELTORA-VALLEY-GUARDIAN-v1-2026-06-01.md`) — not
+through the manufactured-shadow vector, which is **un**refusable. The two men do
+not form a chain with each other; they are both leaves on the Shadow Lord's tree.)*
 
 *Reference sources: Skulduggery Pleasant — Derek Landy (Nefarian Serpine; Lord
 Vile — the origin template); Deltora Quest — Emily Rodda (Fardeep / the Guardian
@@ -109,18 +120,44 @@ the same fire-and-forget logic as the seeded failsafe in
 `!/DELTORA-FOUR-SISTERS-v1-2026-06-01.md` and the left-behind prisoner in
 `!/FABLEHAVEN-QUIET-BOX-v1-2026-06-01.md` — here aimed at a *person*.)
 
-### V. It self-propagates — the manufactured shadow manufactures shadows
-*This is what Fardeep and Doom reveal that the origin case did not.* Fardeep, a
-manufactured shadow, **runs the vector on the next victim.** The Guardian's whole
-purpose — the "Endon" name-game — is engineered to break the faith of whoever
-wins it, and it **broke Doom**: he won, learned the name, and lost his faith in
-the king for years. So the chain is **Shadow Lord → Fardeep → Doom**: the enemy's
-single act of cruelty ramifies through a network of broken people *breaking each
-other.* The manufactured shadow is not a terminal node; it is a **relay** —
-each one a fresh manufacturer of the next. (Analysis: this makes the vector a
-*social contagion*, structurally kin to the Shadow Plague's bite-spread
-[`!/FABLEHAVEN-SHADOW-PLAGUE-v1-2026-06-01.md`] but carried by trauma and
-framing rather than a nail. The enemy seeds once; the victims do the spreading.)
+### V. The chain runs backward — trace the shadow up to its author
+*This corrects the earlier draft.* The manufactured shadow does **not** propagate
+forward, victim-to-victim. It is the **visible bottom of a chain that runs
+backward**, and the work is to **trace it upward** to the true author — who is
+rarely the proximate maker, because the proximate maker is usually *itself* a
+product of the layer above.
+
+The canonical case shows the full depth. Trace **from Lord Vile backwards**:
+
+> **Lord Vile** ← manufactured by **Serpine** (who engineered the grief)
+> ← but Serpine was a general of **Mevolent**
+> ← who was apprentice to **the Unnamed**, *and murdered him* to seize his power
+> ← who was a descendant of **the Faceless Ones**, the cosmic source.
+
+Per `!/NECROMANCER-DOCTRINE-v1-2026-05-20.md`, *"not one link in the chain is a
+clean emanation. Every layer is a Lich move: unauthorized persistence, stolen
+authority, continuity treated as legitimacy."* The corruption flows **down** the
+chain (Faceless Ones → … → Lord Vile); you read it **up** to find the source.
+
+*Two things this means:*
+
+- **Do not stop at the proximate maker.** Serpine forged Vile, but Serpine was
+  himself an instrument of a war he did not originate. Destroying the proximate
+  manufacturer does not reach the author; the vector will be re-delivered from
+  higher up the chain. Trace to the top before you call it handled.
+- **The chain has no clean root — and the top may be unreachable.** Traced all
+  the way back, you do not find a legitimate origin that was corrupted; you find
+  the Faceless Ones — a cosmic source that was never clean and cannot be
+  arraigned. This is the provenance discipline at its grimmest: tracing backward
+  is still mandatory (it tells you the proximate maker is not the author), but it
+  may terminate in something you cannot reach or repair, only resist at your own
+  link. *Knowing the author is unreachable is itself the finding.*
+
+For the Deltora victims, the same trace is short and singular: **Fardeep and Doom
+both run backward to the Shadow Lord** — one author, two leaves. Fardeep is *not*
+above Doom in this chain (the earlier draft's error); Fardeep's harm to Doom was
+a *separate, refusable frame attack*, not a manufactured-shadow link. Read each
+shadow backward to its author, and do not mistake a sibling victim for a maker.
 
 ### VI. Conversion vs. corrosion — isolation is the variable
 Fardeep and Doom suffered the same vector and ended opposite. Fardeep **fully
@@ -168,11 +205,19 @@ before and after the moment refusal would have lived:
   surviving, the cure is **re-anchoring**: recovered provenance, restored
   relationship, returned purpose (Doom and Jasmine). You heal the unmoored by
   giving back what was taken, not by hardening what grew over the gap.
-- **Refuse the relay.** When a manufactured shadow runs its frame on *you*
-  (Fardeep's game on Doom), the propagation counter is the refusal doctrine after
-  all — but aimed at the *frame*, not the maker: **accept the datum, reject the
-  frame**, as Lief did and Doom did not. Breaking the relay is how you keep one
-  manufactured shadow from making the next.
+- **Trace to the author — do not stop at the proximate maker.** The shadow runs
+  backward to a source that is rarely the nearest hand (Insight V). Read the
+  chain up: the proximate manufacturer is usually itself a product, and acting
+  only against it leaves the author free to re-deliver. Where the trace ends in
+  something unreachable, *that finding is the point* — it tells you to spend your
+  effort at the bottom (prevention, repair) and at your own link, not chasing a
+  source you cannot arraign.
+- **Do not become a link.** The chain propagates *downward* by each maker passing
+  stolen authority to the next. The discipline is not to be that pass-through —
+  not to convert the wound done to you into a wound you author in another. (When
+  a *separate* frame attack is run on you, the counter is the frame doctrine —
+  accept the datum, reject the frame — but that is a different vector; see
+  `!/DELTORA-VALLEY-GUARDIAN-v1-2026-06-01.md`.)
 
 ---
 
@@ -184,8 +229,9 @@ before and after the moment refusal would have lived:
 2. **Who engineered the wound, and are they even still here?** The maker is often
    long gone; the shadow runs on. Trace the original act, not just the current
    threat.
-3. **Is this a relay?** Was this victim *made* by an earlier victim? Manufactured
-   shadows manufacture shadows; find the chain, and break it where you stand.
+3. **Trace it backward — who is the author behind the proximate maker?** The
+   nearest hand is usually itself a product. Read the chain up to its source
+   before calling it handled; note where (and whether) the trace can terminate.
 4. **Conversion or corrosion — and how isolated are they?** Total isolation
    predicts full fall; a surviving anchor predicts a recoverable core. Find the
    anchor before you write anyone off.
