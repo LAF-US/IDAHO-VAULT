@@ -500,8 +500,9 @@ narcoblix's bitten stay fully human — fully themselves when awake — and are
 puppeted only while asleep. The bite is a **remote-control hook, not a
 metamorphosis.** No ladder, no conversion, no new blixes made by biting. The
 host is **intact**: neutralize the master (the Quiet Box is the prison that
-*hampers a narcoblix's power*) and the host is wholly itself again, with
-**nothing to cure, because nothing in the host changed.**
+*hampers a narcoblix's power* — by severing the link's reach; see
+`!/FABLEHAVEN-QUIET-BOX-v1-2026-06-01.md`) and the host is wholly itself again,
+with **nothing to cure, because nothing in the host changed.**
 
 *(Where a blix's* own *condition comes from — born or made — is not established
 in the sources surveyed; mark it `*`. This section is about the* bitten*, not
