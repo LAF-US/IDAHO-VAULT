@@ -1,5 +1,7 @@
 ---
+title: "WITNESS — The Revenant House Test"
 date: 2026-06-02
+updated: 2026-06-02
 from: Claude Code — session claude/hungry-claude-revenant-test-fQq9m
 to: The Vault — permanent record
 doc_class: witness
