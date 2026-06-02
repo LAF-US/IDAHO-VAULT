@@ -1,6 +1,7 @@
 ---
 title: "Syncretic Map — Five Vampires / Dark Cloud :: Four Sisters / Grey Tide v1"
 date created: 2026-06-02
+updated: 2026-06-02
 authority: LOGAN
 doc_class: doctrine
 status: active
@@ -79,8 +80,9 @@ Four consequences, each canon-anchored on both sides:
    (`!/UNDEAD-TAXONOMY-v1`: *the wrong diagnosis produces the wrong counter*).
 3. **The root is a separate, final problem** needing a *different* instrument —
    the **united** Belt + dragons; absorption **from within.** Plan its **custody
-   before** you touch the field (cf. the Fablehaven nail: removal begins a
-   custody problem, it does not end the threat).
+   before** you touch the field (cf. the **Fablehaven nail** — *unmerged, PR #400,
+   not yet on `main`*: removal begins a custody problem, it does not end the
+   threat).
 4. **Whoever ends the root pays.** Marceline re-incurs the Queenship and carries
    the King as a sub-layer; Deltora can only be healed by the whole Belt made
    one. This is the `!/LICH-PROBLEM-v1` cost: concentrated essence, re-absorbed,

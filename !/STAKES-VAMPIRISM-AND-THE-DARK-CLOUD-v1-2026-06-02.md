@@ -1,6 +1,7 @@
 ---
 title: "Stakes — Vampirism & the Dark Cloud v1"
 date created: 2026-06-02
+updated: 2026-06-02
 authority: LOGAN
 doc_class: doctrine
 status: active
@@ -69,8 +70,8 @@ straight to `!/LICH-PROBLEM-v1`:
 2. **Extraction ≠ destruction.** Pulling a concentrated capability out of its
    vessel does not annihilate it — it can become **diffuse and contagious** (the
    cloud), and it **converts en masse.** *The cure breeds the worse form.* Plan
-   custody of the by-product before you extract. (Cf. the Fablehaven nail; the
-   Vampire King page.)
+   custody of the by-product before you extract. (Cf. the **Fablehaven nail** —
+   *unmerged, PR #400, not yet on `main`* — and the Vampire King page.)
 3. **Targeted spread has a refusal point; the diffuse form does not.** For an
    individual **bite**, conversion is *chosen*, not automatic — a decision point
    that can be **refused** (cf. `!/LICH-PROBLEM-v1` Resolution 3, *Active
