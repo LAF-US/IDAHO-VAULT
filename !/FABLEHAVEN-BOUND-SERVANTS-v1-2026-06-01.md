@@ -7,6 +7,7 @@ status: active
 related:
   - CONSTITUTION
   - "!/FABLEHAVEN-TAXONOMY-v1-2026-06-01.md"
+  - "!/FABLEHAVEN-WITCH-MURIEL-v1-2026-06-01.md"
   - "!/UNDEAD-TAXONOMY-v1-2026-05-20.md"
   - "!/NECROMANCER-DOCTRINE-v1-2026-05-20.md"
   - "!/STANDING-ENGINE-AND-LAWFUL-ENDINGS-2026-04-17.md"
@@ -148,7 +149,9 @@ Both servants orbit Muriel, and she is the reason this chapter sits next to the
 Bound Mortal class in the index. Mendigo was *her* toy, enlarged to *her*
 purpose. Hugo was turned against the household by *her* power. The bound
 servant's danger is always a function of who holds the reins — and Muriel is
-the study in an adversary acquiring them.
+the study in an adversary acquiring them. For Muriel herself — the bound mortal
+who built Mendigo and whose capture left his reins seizable — see
+`!/FABLEHAVEN-WITCH-MURIEL-v1-2026-06-01.md`.
 
 The lesson compounds: an instrument is a capability waiting for a holder. Keep
 the reins in lawful hands, watch for their seizure, and never forget that the
