@@ -8,6 +8,7 @@ related:
   - CONSTITUTION
   - "!/FABLEHAVEN-TAXONOMY-v1-2026-06-01.md"
   - "!/FABLEHAVEN-BOUND-SERVANTS-v1-2026-06-01.md"
+  - "!/FABLEHAVEN-SEALED-EVIL-v1-2026-06-01.md"
   - "!/FABLEHAVEN-VAMPIRE-DIAGNOSTIC-v1-2026-06-01.md"
   - "!/LICH-PROBLEM-v1-2026-05-20.md"
   - "!/NECROMANCER-DOCTRINE-v1-2026-05-20.md"
@@ -142,7 +143,8 @@ engineering the conditions under which refusal collapses.)
 ### 5. The freed insider's first act is to widen the breach
 Loosed, Muriel did not simply leave. She spent her released power to raise an
 **army of giant imps** and to **free Bahumat**, a sealed demon far worse than
-herself. Containing her *after* that point was no longer enough — she had already
+herself (a Sealed Evil — see `!/FABLEHAVEN-SEALED-EVIL-v1-2026-06-01.md`).
+Containing her *after* that point was no longer enough — she had already
 unsealed the neighbor.
 
 *Vault pattern:* a compromised insider's opening move is escalation — disable
