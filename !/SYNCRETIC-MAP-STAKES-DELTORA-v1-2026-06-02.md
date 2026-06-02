@@ -31,7 +31,8 @@ simulation. Claims marked **[AT]** / **[DQ]** (canon, sourced) and **[mapping]**
 **Vampire King** — each a distinct predator with its own power and its own
 correct counter (see the Stakes set). When the **Vampire King's** essence is
 extracted, it does not die; it becomes the **Dark Cloud** — "pure, concentrated
-vampirocity," a tar-like monster that **converts the living en masse.**
+vampirocity," a tar-like monster that **engulfs the living en masse** (conversion
+itself shown only via a single bite).
 
 **[DQ]** Four **Sisters** — planted by the Shadow Lord in the four corners of
 Deltora (East: Dragon's Nest; North: Shadowgate; West: Isle of the Dead; South:
@@ -52,8 +53,8 @@ it.**
 | The concentrated root | **the Dark Cloud** | **the grey tide** |
 | Agents → root | the King's essence, extracted, *becomes* the Cloud | the four songs *seal* the tide; their ceasing *wakes* it |
 | The trap in the obvious counter | extracting/curing the King **breeds** the Cloud | silencing all four songs **releases** the tide |
-| Root's mode | mass-conversion (turns the living) | mass-death (kills on contact, engulfs) |
-| Who pays to end it | Marceline absorbs the Cloud → **re-Queened** + sub-layer | the land needs the **united** dragons + Belt to heal |
+| Root's mode | mass-engulfment (capture; conversion via a bite) | mass-death (kills on contact, engulfs) |
+| How the root ends | Marceline **absorbs** it → **re-Queened** + carries a sub-layer | united dragons + Belt **burn** it → **destroyed, no carrier** |
 | Maker's motive | Vampire King — eccentric, *sick of being one* | Shadow Lord — **spite**: "if I cannot have it, no one can" |
 
 *I do **not** pair the five vampires to the four Sisters one-to-one (5 ≠ 4, and
@@ -83,10 +84,15 @@ Four consequences, each canon-anchored on both sides:
    before** you touch the field (cf. the **Fablehaven nail** — *unmerged, PR #400,
    not yet on `main`*: removal begins a custody problem, it does not end the
    threat).
-4. **Whoever ends the root pays.** Marceline re-incurs the Queenship and carries
-   the King as a sub-layer; Deltora can only be healed by the whole Belt made
-   one. This is the `!/LICH-PROBLEM-v1` cost: concentrated essence, re-absorbed,
-   persists in whoever closes the loop. **No one closes it clean.**
+4. **The ending differs — and that difference is the lesson.** AT's root is
+   **absorbed**: Marceline draws the Cloud into herself, re-incurs the Queenship,
+   and carries the King as a sub-layer — the `!/LICH-PROBLEM-v1` cost, where
+   concentrated essence re-absorbed **persists in whoever closes the loop.**
+   Deltora's root is **destroyed**: Lief and the united dragons **burn the grey
+   tide until nothing remains** — no carrier, no sub-layer, no cost-in-the-closer.
+   So the closing instrument decides the aftermath: **absorption leaves a carrier;
+   coordinated destruction does not.** Do not assume every root-closure persists
+   inside the one who ends it.
 
 **Vault use:** when you find a spread of distributed problems (flaky agents,
 poison configs, blighting processes), ask *what they are sealing.* Decommission
