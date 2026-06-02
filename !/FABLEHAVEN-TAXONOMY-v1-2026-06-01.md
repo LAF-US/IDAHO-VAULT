@@ -130,7 +130,7 @@ separate from the power. Diagnose the fear as well as the capability. The
 power-stripping fortress is the sandbox that neutralizes even sovereigns.
 → `!/FABLEHAVEN-DRAGONS-v1-2026-06-01.md`
 
-### 8. The Sealed Evil — Bahumat, Graulas, the demons
+### 8. The Sealed Evil — Bahumat, Graulas, the demons **[chapter]**
 *Catastrophic capability held behind seals and bindings; the threat is
 **release**, not current activity.*
 **Vault pattern:** a quarantined dangerous capability — a disabled-but-present
@@ -138,7 +138,9 @@ exploit, a dormant privileged account, a contained model. It does nothing
 until something undoes the seal. Containment doctrine: the seal's integrity
 *is* the security. See `!/LICH-PROBLEM` (the phylactery is the inverse — an
 externalized store that must be destroyed; the seal is a boundary that must be
-preserved).
+preserved). For the demons that cannot be killed, the founding-charter seal,
+the dying-disguise con (Graulas), host-binding (Kurisock), and the master
+prison Zzyzx → `!/FABLEHAVEN-SEALED-EVIL-v1-2026-06-01.md`.
 
 ### 9. The Bound Mortal — Muriel (and the blixes/witches) **[chapter]**
 *Muriel the witch is bound by a rope of **thirteen knots**; each is undone only
@@ -242,7 +244,7 @@ control is reliably also an attack surface. These are **nodes**, not creatures.
 |---|---|---|---|
 | **The Quiet Box** | Suspended isolation; release only by swapping in a new prisoner | Blind/coupled release of an unknown or adversary-seeded occupant | **[node]** → `!/FABLEHAVEN-QUIET-BOX-v1-2026-06-01.md` |
 | **The Thirteen Knots** | A finite set of seals on a bound mortal | Authorized parties voluntarily spending knots for favors | Covered in → `!/FABLEHAVEN-WITCH-MURIEL-v1-2026-06-01.md` |
-| **The Buried Hill-Seal** | Deep joint burial under many knots (Bahumat + Muriel) | Overwhelming force; needs higher authority to set or re-set | Carried until a Sealed Evil chapter |
+| **The Buried Hill-Seal** | Deep joint burial under many knots (Bahumat + Muriel) | Overwhelming force; needs higher authority to set or re-set | Covered in → `!/FABLEHAVEN-SEALED-EVIL-v1-2026-06-01.md` |
 
 The recurring lesson of the counter-infrastructure: **a prison is only as safe
 as the record of who is in it.** An unlabeled seal is a Type I Lich in waiting
@@ -283,9 +285,9 @@ Before acting on any Fablehaven-class entity:
 | `!/FABLEHAVEN-REVENANT-v1-2026-06-01.md` | The Guardian | **Written** |
 | `!/FABLEHAVEN-WITCH-MURIEL-v1-2026-06-01.md` | The Bound Mortal | **Written** |
 | `!/FABLEHAVEN-QUIET-BOX-v1-2026-06-01.md` | Containment Node | **Written** |
+| `!/FABLEHAVEN-SEALED-EVIL-v1-2026-06-01.md` | The Sealed Evil | **Written** |
 | Fairies & Imps | The Vain & The Inversion | Planned |
 | The Sphinx | The Manipulator | Planned |
-| Demons & Seals | The Sealed Evil | Planned |
 | Nipsies | The Multitude | Planned |
 
 *The lighter classes (Naiad, Satyr, Centaur, Kobold) are carried in this index
