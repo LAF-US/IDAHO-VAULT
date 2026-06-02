@@ -17,6 +17,7 @@ related:
   - Alchemical symbols
   - Jung and alchemy
   - Tarot
+  - Rosicrucianism
   - Palmistry
   - GRIMOIRE
   - VAULT-CONVENTIONS
@@ -154,7 +155,7 @@ The cycle ends in **red** — *rubedo*, the reddening, the perfected stone — a
 red is where alchemy's symbolic language and the [[Language of flowers]] touch.
 The completed Work was repeatedly figured as a **rose** or **red flower**: the
 *Rosarium philosophorum* ("Rosary of the Philosophers") makes the rose-garden
-the emblem of the opus, and the later **Rosicrucian** current bound rose to
+the emblem of the opus, and the later **[[Rosicrucianism|Rosicrucian]]** current bound rose to
 cross. In floriography, that same bloom — the **red rose** — is the plainest
 sign in the lexicon: *love*, the union of two.
 
