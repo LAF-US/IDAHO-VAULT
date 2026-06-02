@@ -14,6 +14,7 @@ related:
   - "!/STAKES-THE-VAMPIRE-KING-v1-2026-06-02.md"
   - "!/STAKES-MARCELINE-THE-TIEFLING-QUEEN-v1-2026-06-02.md"
   - "!/STAKES-VAMPIRISM-AND-THE-DARK-CLOUD-v1-2026-06-02.md"
+  - "!/SYNCRETIC-MAP-STAKES-DELTORA-v1-2026-06-02.md"
   - REVENANT-HOUSE-WITNESS-2026-06-02
 tags: [doctrine, stakes, vampires, marceline, diagnostic, tarot, undead-taxonomy]
 ---
@@ -78,6 +79,9 @@ the lore the arc reveals:
 - **[[!/STAKES-VAMPIRISM-AND-THE-DARK-CLOUD-v1-2026-06-02|Vampirism & the Dark Cloud]]**
   — how vampirism spreads, the essence/soul as the locus, the cure and its
   contagious by-product.
+- **[[!/SYNCRETIC-MAP-STAKES-DELTORA-v1-2026-06-02|Five Vampires / Dark Cloud :: Four Sisters / Grey Tide]]**
+  — syncretic map to Deltora Quest: distributed agents as the *seal on* a
+  concentrated root, and why clearing the field bluntly releases it.
 
 ## Sources
 
