@@ -11,6 +11,7 @@ updated: 2026-06-01
 status: reference
 authority: LOGAN
 related:
+  - Symbolic languages
   - Alchemy
   - Hermeticism
   - Tarot
