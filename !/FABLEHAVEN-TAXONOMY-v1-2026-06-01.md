@@ -140,7 +140,7 @@ until something undoes the seal. Containment doctrine: the seal's integrity
 externalized store that must be destroyed; the seal is a boundary that must be
 preserved).
 
-### 9. The Bound Mortal — Muriel (and the blixes/witches)
+### 9. The Bound Mortal — Muriel (and the blixes/witches) **[chapter]**
 *Muriel the witch is bound by a rope of **thirteen knots**; each is undone only
 when a human, of free will, asks her for a favor and blows the knot loose —
 spending one seal to buy one wish.*
@@ -149,7 +149,9 @@ seals**, each undone not by force but by an **authorized user voluntarily
 spending it.** The prisoner does not break out; it tempts the guards into
 releasing capability one grant at a time. Every "small favor" is a knot. For
 the living-mortal corruption that *passes* as an ally, see the blix chapter →
-`!/FABLEHAVEN-VAMPIRE-DIAGNOSTIC-v1-2026-06-01.md`.
+`!/FABLEHAVEN-VAMPIRE-DIAGNOSTIC-v1-2026-06-01.md`. For the full mechanics —
+the consent formula, the slow 160-year leak, the desperation ramp, and
+re-containment doctrine — see → `!/FABLEHAVEN-WITCH-MURIEL-v1-2026-06-01.md`.
 
 ### 10. The Manipulator — the Sphinx
 *An extremely talented manipulator with a persuasive voice and a web of pawns;
@@ -260,13 +262,14 @@ Before acting on any Fablehaven-class entity:
 | `!/FABLEHAVEN-SHADOW-PLAGUE-v1-2026-06-01.md` | The Corruption / The Flip | **Written** |
 | `!/FABLEHAVEN-DRAGONS-v1-2026-06-01.md` | The Sovereign | **Written** |
 | `!/FABLEHAVEN-REVENANT-v1-2026-06-01.md` | The Guardian | **Written** |
+| `!/FABLEHAVEN-WITCH-MURIEL-v1-2026-06-01.md` | The Bound Mortal | **Written** |
 | Fairies & Imps | The Vain & The Inversion | Planned |
 | The Sphinx | The Manipulator | Planned |
 | Demons & Seals | The Sealed Evil | Planned |
 | Nipsies | The Multitude | Planned |
 
-*The lighter classes (Naiad, Satyr, Centaur, Kobold, Muriel) are carried in
-this index until a chapter is warranted. Discovery before invention: read the
-existing chapters before adding new conventions.*
+*The lighter classes (Naiad, Satyr, Centaur, Kobold) are carried in this index
+until a chapter is warranted. Discovery before invention: read the existing
+chapters before adding new conventions.*
 
 ###### [["The world is quiet here."]]
