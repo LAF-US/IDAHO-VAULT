@@ -1,6 +1,7 @@
 ---
 title: "Stakes — The Vampire King v1"
 date created: 2026-06-02
+updated: 2026-06-02
 authority: LOGAN
 doc_class: doctrine
 status: active
@@ -17,11 +18,18 @@ tags: [doctrine, stakes, vampire, vampire-king, sovereign, dark-cloud, diagnosti
 diagnostic framework, not a simulation. Claims marked **[canon]** /
 **[tarot]** / **[mapping]**.*
 
-## Not a Card — the Sovereign
+## The Card — X, Wheel of Fortune
 
-**[tarot/canon]** The other four are Major Arcana. The Vampire King is **not** —
-he stands outside the deck. He is the **root and sovereign** of the set: not an
-archetype within the pattern but the source the pattern serves.
+**[tarot/canon]** Unlike the other four, the Vampire King is **not named** for his
+card — but he **is** in the deck. He is the **Wheel of Fortune (X)**: the AT Wiki
+confirms his design *is* the card's **tetramorph** — the **man, lion, eagle, and
+snake** (his lion face, reptilian hands, bird-like feet, forked snake tongue),
+with a **cow/bull** as his companion (the Wheel's fourth beast).
+
+**[mapping]** Wheel of Fortune is **fate, cycles, sovereignty over the turning** —
+the card of *what rises and falls.* It fits the sovereign whose "pure vampire
+juice could alter reality" and who sits at the centre of vampirism's cycle: **not
+outside the pattern but its axle.**
 
 ## The Vampire — canon
 
@@ -63,9 +71,9 @@ each canon-grounded:
 2. **Extraction breeds a worse by-product.** Removing the essence does not
    destroy it — it produces a **diffuse, contagious residue** (the Dark Cloud)
    that **converts en masse.** A concentrated danger pulled from its vessel
-   becomes a *spreading* one. (Compare the Fablehaven nail: what you remove, you
-   must then guard or destroy — removal is the start of a custody problem, not
-   the end.)
+   becomes a *spreading* one. (Compare the **Fablehaven nail** — *filed on the
+   unmerged PR #400 set, not yet on `main`* — what you remove, you must then
+   guard or destroy: removal is the start of a custody problem, not the end.)
 3. **Ending it re-incurs the condition.** The diffuse form is only neutralized by
    a willing host **absorbing it back** — and that host **pays** by taking the
    corruption into themselves (Marceline becomes Queen again). This is the

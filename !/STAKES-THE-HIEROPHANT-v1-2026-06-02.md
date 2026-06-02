@@ -1,6 +1,7 @@
 ---
 title: "Stakes — The Hierophant v1"
 date created: 2026-06-02
+updated: 2026-06-02
 authority: LOGAN
 doc_class: doctrine
 status: active
