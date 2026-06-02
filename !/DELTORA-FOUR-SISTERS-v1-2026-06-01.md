@@ -6,6 +6,7 @@ doc_class: doctrine
 status: active
 related:
   - CONSTITUTION
+  - "!/DELTORA-BELT-SEVENFOLD-v1-2026-06-01.md"
   - "!/FABLEHAVEN-SEALED-EVIL-v1-2026-06-01.md"
   - "!/FABLEHAVEN-QUIET-BOX-v1-2026-06-01.md"
   - "!/FABLEHAVEN-SHADOW-PLAGUE-v1-2026-06-01.md"
