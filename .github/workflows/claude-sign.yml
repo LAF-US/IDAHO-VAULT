@@ -1,5 +1,28 @@
-# DRAFT — not active until LOGAN gates and the workflow is enabled in GitHub Settings.
-# Filed 2026-06-01 by !socrates.claude.novice as a proposal-marginalia draft.
+# WITHDRAWN 2026-06-01 — this draft was built on 1Password (load-secrets-action
+# + OP_SERVICE_ACCOUNT_TOKEN + op://Vault/... references). LOGAN's catch the
+# same day: 1Password is NOT a sustainable secret-source for this vault — the
+# CLI is only installed on Logan's work-computer, and the whole integration
+# chain inherits that fragility. The chamber had been told this previously
+# and did not retain it.
+#
+# Do not activate this workflow. Its secret-source assumption is wrong.
+# Plan v5 in cryptic-bouncing-cake.md has been corrected to reopen the
+# secret-source question as `*` pending LOGAN's naming of a sustainable path.
+# The companion recipe at INBOX/AGENT-SIGNING-VIA-ACTION-DRAFT-2026-06-01.md
+# carries the same WITHDRAWN header.
+#
+# The broader architecture (server-side via anthropics/claude-code-action)
+# may still hold; only the 1Password secret-source picker is wrong. A
+# replacement secret-source path (GitHub Secrets directly / GitHub
+# Environments / HashiCorp Vault / AWS Secrets Manager / self-hosted
+# runner / etc.) requires LOGAN to name what is sustainable.
+#
+# This file is preserved as historical evidence of the overreach; it is
+# NOT a proposal for activation.
+# ============================================================================
+#
+# DRAFT (now WITHDRAWN per above) — was filed 2026-06-01 by
+# !socrates.claude.novice as a proposal-marginalia draft.
 # See companion recipe: INBOX/AGENT-SIGNING-VIA-ACTION-DRAFT-2026-06-01.md
 # (the recipe is in INBOX/ awaiting LOGAN's gate; .op/ is Logan's 1Password
 #  curated space, not where the chamber files documentation)

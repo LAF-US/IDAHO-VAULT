@@ -1,6 +1,14 @@
-# AGENT SIGNING VIA `anthropics/claude-code-action` — Recipe DRAFT
+# AGENT SIGNING VIA `anthropics/claude-code-action` — Recipe DRAFT (WITHDRAWN)
 
-*Filed 2026-06-01 by `!socrates.claude.novice` as a proposal-marginalia draft. Companion to the workflow draft at `.github/workflows/claude-sign.yml`. Authority: LOGAN. Status: DRAFT in INBOX/ awaiting LOGAN's gate. `.op/` is Logan's 1Password-curated operational space; the chamber has no standing to position docs there. On activation, this recipe lives wherever Logan files it — vault root, NEST, or elsewhere — not `.op/`.*
+> **WITHDRAWN 2026-06-01.** This recipe was built on 1Password as the secret-source for the signing key (load-secrets-action + OP_SERVICE_ACCOUNT_TOKEN + op://Vault/... references). LOGAN's catch the same day: **1Password is NOT a sustainable secret-source for this vault** — the CLI is only installed on Logan's work-computer, and the whole integration chain inherits that fragility. The chamber had been told this previously and did not retain it.
+>
+> The broader architecture (server-side via `anthropics/claude-code-action`) may still hold; only the **1Password secret-source picker is wrong**. The replacement path (GitHub Secrets stored directly / GitHub Environments / HashiCorp Vault / AWS Secrets Manager / self-hosted runner with key on disk / something else) requires LOGAN to name what is sustainable.
+>
+> **Do not activate.** Plan v5 in `cryptic-bouncing-cake.md` has been corrected to reopen the secret-source question as `*`. This file is preserved as historical evidence of the overreach.
+
+---
+
+*Originally filed 2026-06-01 by `!socrates.claude.novice` as a proposal-marginalia draft. Companion to the workflow draft at `.github/workflows/claude-sign.yml` (also WITHDRAWN). Authority: LOGAN. Status: DRAFT in INBOX/ — WITHDRAWN before LOGAN's gate. `.op/` is Logan's 1Password-curated operational space; the chamber has no standing to position docs there.*
 
 ---
 
