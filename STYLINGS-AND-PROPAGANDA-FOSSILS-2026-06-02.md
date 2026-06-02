@@ -68,6 +68,22 @@ The same person wears different stylings depending on who's naming:
 - **Corporate euphemism** — "rightsizing," "let go," "headcount reduction."
 - **Orwell** named the machine: **Newspeak** and the **"unperson"** (*1984*), and the argument that vague, prefabricated language exists to make lies sound respectable (*"Politics and the English Language,"* 1946). The unperson is damnatio memoriae for the modern state.
 
+## The honest fossil — when the styling tracks the record
+
+Not every styling is a lie. Some honorifics are **earned** — they track the record rather than burying it — and telling the honest fossil from the propaganda fossil is the whole discipline (the cynic's "all titles lie" is itself a failure of reading).
+
+- **Maegor "the Cruel"** — enemy-conferred and *accurate*; the verdict matches the deeds.
+- **Albertus Magnus, "Doctor Universalis"** — **[history]** Albert the Great (c. 1200–1280), the Dominican polymath (theology, logic, botany, zoology, chemistry, astronomy), teacher of Aquinas. His stylings *Magnus* ("the Great") and *Doctor Universalis* ("the Universal Doctor") were reportedly applied **in his own lifetime** — and they *describe* an encyclopedic command rather than inflate it. Later **canonized and named a Doctor of the Church** (Pius XI, 1931) and patron saint of the natural sciences. ⚠️ Dates/titles are general knowledge — verify.
+
+### The Barth mirror
+
+**[reading]** Set Albertus beside **Septon Barth** and the node's thesis snaps into focus. Both are the *same archetype*: a scholar-cleric who pushed into natural philosophy and the "higher arts," trailing rumors of magic (Albertus drew the legend of a talking brazen head; Barth, the higher mysteries and dragon-breeding). The life is the same shape. The **styling is opposite**, and conferred by whoever held the pen:
+
+- The Church could have branded Albertus a sorcerer; instead it made him **"the Great," a saint, the Universal Doctor.**
+- The Faith of the Seven could have honored Barth as its wisest son; instead it damned him **"the Heretic"** and burned his books.
+
+Same archetype, two verdicts — proving the fossil records the **institution's choice, not the scholar's merit.** *Westeros chose to burn the witness the real world chose to canonize.* → `[[RESEARCH_A-Song-of-Ice-and-Fire-The-Doom-of-Valyria-2026-06-01]]`.
+
 ## The journalist's discipline
 
 For a working reporter this is not literary theory — it is the **daily fight in the style guide.** Every desk decision (AP Stylebook arguments over "migrant," "riot," "regime," "pro-life") is a fight over which fossil ends up in the reader's mind as neutral. The moniker in the headline **pre-loads the verdict** before the body copy can qualify it. The discipline is the same one this whole research thread keeps circling: **read past the styling to the record it's burying** — and, when you must use a styling, know whose pen minted it.
