@@ -51,10 +51,12 @@ per the wiki.)*
 
 ## Why the set is a diagnostic, not a bestiary
 
-Each vampire is a different **failure-to-end**: a distinct reason the ordinary
-counter (a stake to the heart) is the *wrong* counter, and a distinct correct
-one. That is the same spine as `!/UNDEAD-TAXONOMY-v1`: *the wrong diagnosis
-produces the wrong counter.* **[mapping]**
+Each vampire is a different lesson in **matching the counter to the kind**.
+*Four* of them are reasons the ordinary stake is the **wrong** counter; the
+**Fool is the exception** — the one case where the stake is *right*, and the
+lesson there is not to mistake its evasion for strength. That is the same spine
+as `!/UNDEAD-TAXONOMY-v1`: *the wrong diagnosis produces the wrong counter* —
+which includes knowing when the ordinary counter is the correct one. **[mapping]**
 
 - **The Fool** — ends easily; the danger is *underestimating its evasion*, not its strength.
 - **The Empress** — cannot be faced alone; the counter is *witnesses*, not force.
