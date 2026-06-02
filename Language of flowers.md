@@ -14,6 +14,7 @@ related:
   - Alchemy
   - Palmistry
   - Tarot
+  - Rosicrucianism
   - VAULT-CONVENTIONS
   - GRIMOIRE
 tags:

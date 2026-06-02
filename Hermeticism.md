@@ -18,6 +18,7 @@ related:
   - Alchemical symbols
   - Jung and alchemy
   - Tarot
+  - Rosicrucianism
   - Palmistry
   - Language of flowers
   - GRIMOIRE

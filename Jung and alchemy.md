@@ -14,6 +14,7 @@ related:
   - Alchemy
   - Hermeticism
   - Tarot
+  - Rosicrucianism
   - Alchemical symbols
   - Language of flowers
   - GRIMOIRE
