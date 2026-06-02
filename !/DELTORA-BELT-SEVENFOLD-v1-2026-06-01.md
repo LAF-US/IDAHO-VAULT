@@ -6,6 +6,7 @@ doc_class: doctrine
 status: active
 related:
   - CONSTITUTION
+  - "!/DELTORA-VALLEY-GUARDIAN-v1-2026-06-01.md"
   - "!/DELTORA-FOUR-SISTERS-v1-2026-06-01.md"
   - "!/FABLEHAVEN-SEALED-EVIL-v1-2026-06-01.md"
   - "!/STANDING-ENGINE-AND-LAWFUL-ENDINGS-2026-04-17.md"
@@ -108,7 +109,9 @@ defenses** — no universal exploit, no master key. Each node needs its own
 tailored approach. And the **last and subtlest guardian is a person, not a
 monster** (and wrapped in an identity deception — mistaken for the lost King
 Endon, he is in truth the cursed innkeeper Fardeep). The final gate is usually a
-*corrupted insider with a riddle*, not a brute with a wall.
+*corrupted insider with a riddle*, not a brute with a wall. The full close-up —
+the manufactured guardian, the mislabeled vice-beasts, the off-by-one riddle,
+and the "Endon" lie — is its own node: `!/DELTORA-VALLEY-GUARDIAN-v1-2026-06-01.md`.
 
 ### Dragons — The Living Counterpart of Each Key
 Each gem has a **dragon** that draws power from it, and the dragon's *name is the
