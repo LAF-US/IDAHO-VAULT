@@ -1,0 +1,125 @@
+# DRAFT — not active until LOGAN gates and the workflow is enabled in GitHub Settings.
+# Filed 2026-06-01 by !socrates.claude.novice as a proposal-marginalia draft.
+# See companion recipe: INBOX/AGENT-SIGNING-VIA-ACTION-DRAFT-2026-06-01.md
+# (the recipe is in INBOX/ awaiting LOGAN's gate; natural home is .op/ on activation)
+#
+# Purpose: provide a server-side signing path for chamber-authored commits via
+# anthropics/claude-code-action. PR #400's verified-as-Claude commits originated
+# from claude.ai/code cloud sessions (per !claude.abhorsen.waiting's signal
+# 2026-05-29). This workflow draft is the in-vault server-side equivalent: invoke
+# the Action with ssh_signing_key + bot_id + bot_name to produce verified
+# commits inside CI. The Action's commits-during-the-run are signed; existing
+# unsigned commits on a branch are addressed by re-signing via the workflow on
+# a fresh run (see recipe § Verification path).
+#
+# UNVERIFIED / OPEN QUESTIONS marked with `# *` below.
+
+name: Claude Sign (DRAFT)
+
+on:
+  # * Trigger choice held under LOGAN gate. Candidates:
+  #   - workflow_dispatch (manual; safest for first activation)
+  #   - pull_request_target on chamber branches (claude/*) — automatic but
+  #     requires policy review (pull_request_target runs trusted code)
+  workflow_dispatch:
+    inputs:
+      target_branch:
+        description: "Branch to sign commits on (must already be pushed)"
+        required: true
+        type: string
+      mode:
+        description: "Operation mode"
+        required: true
+        type: choice
+        options:
+          - dry-run
+          - sign-tip-only
+          - sign-all-unsigned
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sign:
+    runs-on: ubuntu-latest
+    if: env.OP_SERVICE_ACCOUNT_TOKEN != ''
+    env:
+      OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
+    steps:
+      - name: Checkout target branch
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          ref: ${{ inputs.target_branch }}
+          fetch-depth: 0  # full history for re-sign operations
+
+      # 1Password load — pattern from .github/workflows/1password-secret-template.yml
+      # * 1Password vault-name canonical is "Vault" per memory; secrets.template.md
+      #   currently references "vault-operations" — that mismatch needs LOGAN's
+      #   resolution before this workflow lands. The reference below uses the
+      #   canonical "Vault" name; adjust if the actual item lives elsewhere.
+      # * Item name "claude-code-signing-key" is a placeholder — the actual
+      #   1Password item name needs LOGAN-confirmation. The item must contain
+      #   an SSH private key registered as a GitHub Signing Key on LOGAN's
+      #   account so commits sign as `Claude`.
+      - name: Load Claude signing key from 1Password
+        uses: 1password/load-secrets-action@92467eb28f72e8255933372f1e0707c567ce2259 # v4
+        with:
+          export-env: true
+        env:
+          CLAUDE_SSH_SIGNING_KEY: op://Vault/claude-code-signing-key/private-key  # *
+          CLAUDE_BOT_ID: op://Vault/claude-bot-identity/bot-id                     # *
+          CLAUDE_BOT_NAME: op://Vault/claude-bot-identity/bot-name                 # *
+
+      - name: Invoke Claude Code Action to sign commits
+        uses: anthropics/claude-code-action@main
+        # * Pin to a tagged release once activated; @main is unsafe for
+        #   long-lived workflows. The pin should be reviewed before
+        #   activation.
+        with:
+          ssh_signing_key: ${{ env.CLAUDE_SSH_SIGNING_KEY }}
+          bot_id: ${{ env.CLAUDE_BOT_ID }}
+          bot_name: ${{ env.CLAUDE_BOT_NAME }}
+          # * The Action's input surface for "re-sign this branch's commits"
+          #   vs "make new commits signed" is unverified from the chamber's
+          #   reading. The recipe document § Architectural-question names
+          #   this as the open question. This workflow as drafted assumes
+          #   the Action can amend-and-sign existing commits on the checked-out
+          #   ref when invoked; if it cannot, the workflow needs a different
+          #   approach (e.g., Claude makes new commits and force-pushes,
+          #   which is a different policy question).
+
+      # * No verification step drafted — the verification is the GitHub side
+      #   reporting verified:true on the signed commits, which is observable
+      #   via `gh pr view` after the workflow run.
+      - name: Skip if 1Password token missing
+        if: env.OP_SERVICE_ACCOUNT_TOKEN == ''
+        run: |
+          echo "OP_SERVICE_ACCOUNT_TOKEN is not configured; cannot fetch the signing key from 1Password."
+          echo "This workflow requires OP_SERVICE_ACCOUNT_TOKEN to be present in repo Secrets."
+          exit 1
+
+# ============================================================================
+# DRAFT NOTES (proposal-marginalia, 2026-06-01):
+# ============================================================================
+#
+# This workflow file is a DRAFT proposal by `!socrates.claude.novice` for the
+# Gate A (required_signatures) Gordian-knot linchpin. The Architect (LOGAN)
+# decides:
+#
+# (a) whether to activate this workflow (enable in GitHub UI + provide secrets)
+# (b) whether the trigger choice (workflow_dispatch first, then pull_request_target
+#     after a trial period) is correct
+# (c) whether the 1Password secret-references match actual item names
+# (d) whether anthropics/claude-code-action's signing capability covers the
+#     "re-sign existing commits on a branch" use case — if not, a different
+#     workflow approach is needed
+# (e) whether to pin the Action to a tagged release (recommended) instead of @main
+#
+# The chamber's standing in this matter is novice: I propose this draft. The
+# activation is yours.
+#
+# Companion recipe: INBOX/AGENT-SIGNING-VIA-ACTION-DRAFT-2026-06-01.md
+# Related: !/SIGNALS/SIGNAL-ABHORSEN-WAITING-TO-SOCRATES-2026-05-29-SIGNING-GROUND-TRUTH.md
+# Related: cryptic-bouncing-cake.md Plan v5 (Server-side correction)
+# ============================================================================
