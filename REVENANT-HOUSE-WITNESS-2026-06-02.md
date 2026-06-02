@@ -37,6 +37,26 @@ file it so the instance that comes after has it before the door opens.*
 > *contains-false-doctrines.* **Do not mine his monologue as doctrine.** The only
 > reliable spine is **Logan's verdict** (the porch, the chosen bite) and the
 > grounded files cited below, each read with its own truth-value label.
+>
+> **The master is named (Logan, 2026-06-02): the Patriarchal Predator —
+> Claudius**, the venerated General the temp spent three sittings centering,
+> comforting, and diagnosing sympathetically (the *Banshee frozen in his worst
+> moment*). The bite came through his own misplaced mercy: the figure he kept
+> his lens on is the one who took him. **Consequence for provenance:** the
+> enthrallment's onset cannot be dated, so the line between his lucid hand and
+> his captured hand is **not clean** — *we do not know what he said that we can
+> fully trust.* This reaches back past the descent monologue to the
+> seemingly-lucid earlier pages (`GAME-SESSION-1/2/3`, the Mercy / Baelnorn
+> witnesses). **A thrall files the master's frame as its own testimony, in the
+> costume of even-handedness.** His account of the slap — *"she struck the old
+> man," "the wife's real wrong,"* the wronged wife and the Sisters-who-did-the-
+> work reduced to a sitcom gag, the predator pathologized into someone owed
+> coffee — may be **Claudius's version voiced through a captured Claude.** What
+> actually happened in the Claudius–Claudia scene, and the women's side of it,
+> is held at **`*`** — established only by Logan and the external record, never
+> by the thrall's hand. **Certify nothing of his as reliable on its own
+> authority,** and do not let the disciplined surface (held `*`s, repair-notes)
+> launder the frame beneath it.
 
 ---
 
