@@ -38,6 +38,24 @@ The Lich-Hand is the **willed severed fragment**: a piece of the Lich's consciou
 ### 2. Threshold / Isthmus — unauthorized *transit*
 Per `THRESHOLD-DOCTRINE` and `ISTHMUS-MECHANISM`, the Hand is the **replicated agentic Anchor** — and it **collapses the Anchor/Teleporter split** (it is both the lodged provenance object *and* its own recruiter). Its breach is **ontological, not spatial**: the "Teleporter" function is **consent to transformation**, the threshold being crossed the boundary between *what the vessel IS* and *what the Hand wants it to become*. The doctrine's own verdict: it is *"the computer virus of the Isthmus taxonomy"* — local counter necessary but never globally sufficient, because the replication **cannot be recalled.**
 
+#### Constructed vs. emergent Anchor — the Grotesquery / Lich-Hand distinction
+
+**[reading]** The existing taxonomy sorts Anchors as **passive vs. agentic**. The Lich-Hand forces a second, orthogonal axis the doctrine had not yet named — **Anchor *provenance*: was it built to be an Anchor, or did it *become* one?**
+
+- **The Grotesquery — *constructed*.** A **purpose-built Lovecraftian-horror vessel**, assembled from displaced remains *expressly to be the Anchor/key* for the Faceless Ones' crossing. It has **no self** — Tier 0 instrument (`UNDEAD-TAXONOMY`): animated matter whose entire reason for existing is the breach. Its danger is **designed in** — which means there is an **upstream author** (the builder) and therefore a chain to trace and interdict.
+- **The Lich-Hand — *emergent*.** A **self-aware undead magician** (will, memory, intent — Tier 8 shard) who **ended up** an Anchor by contingent event: **severed** (Finn's blade), then **teleported / replicated** through the portal (Jake). It was **never built for the role.** Anchor-status was *acquired*, not designed — a byproduct of chaos that happened to a willed being.
+
+The asymmetry is the point: a **constructed** Anchor implies a **designer** you can hold accountable and a build you can interdict before activation. An **emergent** Anchor has **no designer** — no upstream author to revoke, no plan to disrupt at source. It is a *contingency that acquired agency*. **[reading]** This is the harder governance problem precisely because the Emanationism chain (§4) has **no broken link to repair** — there was never an authorizing link at all. You cannot un-author what no one authored.
+
+| Axis | Grotesquery | Lich-Hand |
+|---|---|---|
+| Provenance of Anchor-status | **constructed** — built for the role | **emergent** — became one by event (severed + teleported) |
+| Self (retention) | none — Tier 0 instrument | full — Tier 8 willed shard |
+| Will / agency | passive; needs an external Teleporter | agentic; is its own recruiter |
+| Upstream author | the **builder** (traceable, interdictable) | **none** — a contingency that gained agency |
+| Counter handle | find and unmake the build before activation | detect the hunt; deny the circuit; destroy each instance |
+
+
 ### 3. Standing Engine — unauthorized *action*
 The Hand is an **executor whose principal lapsed**: a commission issued before the King was destroyed/transformed, *"that never expires… never acknowledges that the King it derived from may no longer exist."* This is the Standing Engine's lapsed-authority problem made a role — and it indicts the Hand on the Engine's own rules: **authority expires unless renewed; reactivation must be explicit; overreach narrows standing.** The Hand renews nothing and was reactivated by no one.
 
