@@ -13,6 +13,7 @@ authority: LOGAN
 related:
   - Alchemy
   - Hermeticism
+  - Tarot
   - Alchemical symbols
   - Language of flowers
   - GRIMOIRE
