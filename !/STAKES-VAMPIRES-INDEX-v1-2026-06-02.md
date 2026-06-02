@@ -1,6 +1,7 @@
 ---
 title: "Stakes Vampires — Diagnostic Index v1"
 date created: 2026-06-02
+updated: 2026-06-02
 authority: LOGAN
 doc_class: doctrine
 status: active
@@ -38,16 +39,17 @@ diagnostic framework for agents, processes, and personas, sitting beside
 ## The Five
 
 The five most powerful vampires Marceline staked as a girl, whose essences she
-absorbed. Four are named for **Major Arcana** tarot cards; the **Vampire King**
-is not — he is the sovereign, outside the deck. **[canon]**
+absorbed. **All five are tarot-based.** Four are *named* for **Major Arcana**
+cards; the **Vampire King** is **not named** for his, but his design *is* the
+**Wheel of Fortune (X)** — its man-lion-eagle-snake tetramorph. **[canon]**
 
 | Vampire | Arcana | Own power | Power Marceline absorbed | Weakness / how ended |
 |---|---|---|---|---|
-| **The Fool** | 0 — The Fool | dim, playful | **flight** | staked in the heart (easiest) |
+| **The Fool** | 0 — The Fool | **flight** *(trait: dim, playful)* | **flight** | staked in the heart (easiest) |
 | **The Empress** | III — The Empress | **hypnosis** (the eyes) | **invisibility** | staked with allies' help (Finn, PB) |
 | **The Hierophant** | V — The Hierophant | **shapeshifting** | shapeshifting | the **invitation rule** — dies entering uninvited |
 | **The Moon** | XVIII — The Moon | self-heal; **paralysis aura**; hides | **rapid healing** | staked from behind, then **soul drained** |
-| **The Vampire King** | — (sovereign) | telekinesis, telepathy, teleport, hydrokinesis | telekinesis *(unconfirmed)* | **science, not a stake** — essence extraction |
+| **The Vampire King** | X — Wheel of Fortune | telekinesis, telepathy, teleport, hydrokinesis | telekinesis *(unconfirmed)* | **science, not a stake** — essence extraction |
 
 *(Absorbed-power column is **[canon] for the four** tarot vampires — flight,
 invisibility, shapeshifting, healing. The **Vampire King's** entry is **not
