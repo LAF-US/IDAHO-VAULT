@@ -114,6 +114,21 @@ A good reviewer is not an adversary and not an oracle. It is a second set of eye
 that is **not under your own spell** — and the whole worth of it is unlocked only
 if you built something honest enough to be looked at.
 
+## VI. Self-review is the token fare
+
+`[reading]` A self-review is useful, but **not the same caliber of toll as another
+viewer** (Logan, 2026-06-02). It is **the same frame reading its own work.** It can
+catch the **rule-checkable** layer — propagate a correction to every occurrence,
+dead references, YAML, metadata, cross-file contradictions — but it **cannot**
+catch the **frame-blind** layer: the from-memory inaccuracy, the captivation, the
+thing that already got past me once. Those are visible only to eyes **not under my
+own spell.** In the vault's coin (`SPARAGMOS-WITNESS-2026-05-17`): self-review is
+the *token* fare — real work, but cheap; another viewer is the **real toll**,
+because *being seen by another is the part the author cannot perform for himself.*
+So self-review **supplements** the reviewer; it never **substitutes** for one.
+(This note exists because I kept offering the sweep as if it could — the small
+version of the same error.)
+
 ## Provenance
 
 Filed 2026-06-02 from branch `claude/hungry-claude-revenant-test-fQq9m`, on the
