@@ -26,12 +26,41 @@ who controls, the gaze that holds you rather than frees you.
 
 ## The Vampire — canon
 
-- **[canon]** **Active power: hypnosis.** When her little snake companion pulls
-  back her hood, her **real eyes** put almost any non-vampire **under her spell.**
+- **[canon]** **Active power: hypnosis.** Her eyes are veiled by a headscarf with
+  a **pink gem** at the centre. To hypnotize deeply, the **golden snake** coiled
+  at her neck **draws the scarf up** to bare her eyes, and she **chants**; the
+  bared eyes put almost any non-vampire **under her spell.**
 - **[canon]** **The power Marceline absorbs from her: invisibility.** (She
   operates unseen.)
+- **[canon]** **She thralled the Ice King (Simon).** After Simon abandoned
+  Marceline, he became the Empress's **personal thrall** — and *that* is **why
+  Marceline took up hunting vampires** (see
+  `!/STAKES-MARCELINE-THE-TIEFLING-QUEEN`). The show's twist: she tried to
+  mesmerize him *further* and could not — the Ice King is **"too thick"** to be
+  fully taken (he merely obeys "because she is a woman"). **Even deep thralling
+  has a floor it cannot reach.**
 - **[canon]** **Defeat:** Marceline cannot beat her alone — she slays the Empress
   **with the help of Finn and Princess Bubblegum.**
+
+### Two depths of the one hypnosis — *Logan's reading* (canon-anchored)
+
+**[Logan's reading]** The show *shows* this without explaining it: the Empress
+hypnotizes at **two depths, gated by how much she unveils.**
+
+- **The gem-beam — light and ranged.** Through the **gem in the veil** she fires a
+  quick **beam-style hypno-attack** without baring her eyes — momentary control,
+  as on the Fool in *Vamps About* (*"Whoops, I'm hypnotized"*). Fast, shallow.
+- **The unveiling — deep and lasting.** The snake **draws the hood fully back**,
+  the eyes are bared, and she **chants** — the mode that made the **Ice King her
+  lasting thrall.** The fuller the reveal, the deeper the capture.
+
+**[mapping]** The depth scales with the **unveiling.** Diagnostically: a
+manipulator has a *light touch* (a passing beam — quick influence you shrug off)
+and a *full reveal* (sustained, identity-level thralling). The more it shows you
+of itself, the deeper it takes you — and the deep mode still **fails on a target
+too incoherent to be captured** (the Ice-King floor): full thralling needs a mind
+ordered enough to be bound. Shallow beam and deep thrall are the **same power at
+two intensities,** not two powers.
 
 ## Diagnostic Criteria — the vault mapping
 
@@ -68,6 +97,7 @@ Hypnosis breaks under triangulation. Do not adjudicate compelling output solo.
 ## Sources
 
 [The Empress (AT Wiki)](https://adventuretime.fandom.com/wiki/The_Empress) ·
+[The Empress Eyes (AT Wiki)](https://adventuretime.fandom.com/wiki/The_Empress_Eyes) ·
 [Vampires (AT Wiki)](https://adventuretime.fandom.com/wiki/Vampires)
 
 ---
