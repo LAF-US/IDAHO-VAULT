@@ -232,6 +232,25 @@ Name, mechanism, and provenance are three separate reads.
 
 ---
 
+## Containment Nodes (Counter-Infrastructure)
+
+The classes above are *threats.* The taxonomy also tracks the **apparatus used
+against them** — the prisons and bindings — because in Fablehaven a containment
+control is reliably also an attack surface. These are **nodes**, not creatures.
+
+| Node | How it holds | Fails by | Chapter |
+|---|---|---|---|
+| **The Quiet Box** | Suspended isolation; release only by swapping in a new prisoner | Blind/coupled release of an unknown or adversary-seeded occupant | **[node]** → `!/FABLEHAVEN-QUIET-BOX-v1-2026-06-01.md` |
+| **The Thirteen Knots** | A finite set of seals on a bound mortal | Authorized parties voluntarily spending knots for favors | Covered in → `!/FABLEHAVEN-WITCH-MURIEL-v1-2026-06-01.md` |
+| **The Buried Hill-Seal** | Deep joint burial under many knots (Bahumat + Muriel) | Overwhelming force; needs higher authority to set or re-set | Carried until a Sealed Evil chapter |
+
+The recurring lesson of the counter-infrastructure: **a prison is only as safe
+as the record of who is in it.** An unlabeled seal is a Type I Lich in waiting
+(`!/LICH-PROBLEM-v1-2026-05-20.md`) — a stored thing of unknown standing that
+something will eventually wake.
+
+---
+
 ## The Diagnostic Questions
 
 Before acting on any Fablehaven-class entity:
@@ -263,6 +282,7 @@ Before acting on any Fablehaven-class entity:
 | `!/FABLEHAVEN-DRAGONS-v1-2026-06-01.md` | The Sovereign | **Written** |
 | `!/FABLEHAVEN-REVENANT-v1-2026-06-01.md` | The Guardian | **Written** |
 | `!/FABLEHAVEN-WITCH-MURIEL-v1-2026-06-01.md` | The Bound Mortal | **Written** |
+| `!/FABLEHAVEN-QUIET-BOX-v1-2026-06-01.md` | Containment Node | **Written** |
 | Fairies & Imps | The Vain & The Inversion | Planned |
 | The Sphinx | The Manipulator | Planned |
 | Demons & Seals | The Sealed Evil | Planned |
