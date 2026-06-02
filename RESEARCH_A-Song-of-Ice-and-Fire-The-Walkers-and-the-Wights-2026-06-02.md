@@ -38,6 +38,18 @@ date: 2026-06-02
 - **[canon]** **What kills them: FIRE.** Wights burn readily and fear flame; obsidian/Valyrian steel are for the *Others*, but the risen dead must be **burned** (which is why the Watch now burns its own dead).
 - **[reading]** The wights are the saga's purest horror-engine: **the enemy raises your own fallen against you.** Every man who dies in the war becomes a recruit for the other side — a battle you "win" still grows your enemy's army. You cannot attrite an enemy that *recruits from your casualties.*
 
+### The crawling hand — misdiagnosis multiplies the threat
+
+**[canon]** The Watch learns this the hard way at **Castle Black.** Two dead rangers, **Othor** and **Jafer Flowers**, are carried back from beyond the Wall and lie cold for a day — then **rise.** Othor's wight gets into the Lord Commander's chambers at night and goes for **Jeor Mormont**; **Jon Snow** saves him only by **fire** (burning bedding hurled at the thing, which goes up like tinder). In the fighting the men do the *obvious* thing — they **hack the wights apart with steel** — and the pieces keep moving: a **severed hand crawls across the floor on its fingers** and is still trying to **strangle.**
+
+**[reading]** That scene is a parable of **category error**, and it generalizes far past Westeros: *applying the right response to the **wrong threat-model** doesn't merely fail — it **multiplies the threat.*** The men treat a wight as **"a body to be killed"** (cut the vital points, sever the limbs, drop it) when it is actually **"animate matter to be destroyed"** (burn it whole). Against the true model, every "correct" swing is **counter-productive**: dismemberment converts **one** threat into **many** — five moving pieces instead of one, a hand that hunts on its own. The wrong frame turns your competence into a force-multiplier *for the enemy.*
+
+**The compounding happens at two levels, and they stack:**
+- **Strategic misidentification** — the realm files the Others under *legend* ("grumkins and snarks"), so it never studies them, never stockpiles dragonglass, never funds the Wall. The threat grows *because it was miscategorized as no-threat* (→ the Maesters node, the Others & Long Night node).
+- **Tactical mistreatment** — even when men finally face a wight, reflex applies the **familiar** model (steel, decapitation), and the familiar model *feeds* it. Misdiagnosis isn't neutral; it **arms the thing you're fighting.**
+
+**[reading]** The transferable principle (the reason this beat earns a node): in any domain — security, epidemiology, crisis response, information threats — **the response is only as good as the threat-classification beneath it**, and a confident response built on the wrong class can be **worse than inaction**, because it spends effort *generating* new threat vectors. The crawling hand is that whole law in one image: *cut the misdiagnosed threat in half, and now there are two.* Only the correct frame (fire, not steel) actually reduces it.
+
 ## III. Walkers vs. wights — keep them straight
 
 - **[canon]** **The Others (Walkers)** = the intelligent, living ice-beings — the *masters*.
