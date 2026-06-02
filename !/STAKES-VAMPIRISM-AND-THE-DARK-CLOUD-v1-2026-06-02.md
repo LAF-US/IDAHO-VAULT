@@ -51,9 +51,11 @@ than inventing one.*
 ## The Dark Cloud — canon
 
 - **[canon]** A **tar-like monstrosity of "pure, concentrated vampirocity."** It
-  **inhales living beings and converts them to vampires en masse**, and
-  generates powerful gales. The contagion, distilled and unbound from any single
-  body.
+  **engulfs and traps living beings *en masse*** (cows, villagers) and generates
+  powerful gales — but **engulfment is not conversion**: the captured **fall back
+  out, unturned, when Marceline absorbs it.** The **only** vampirizing the episode
+  shows is the **neck-bite on Marceline herself** during her absorption. The
+  contagion, distilled and unbound from any single body.
 - **[canon]** It **bites Marceline**, turning her back into a vampire. She ends
   it by flying **inside** and **soul-draining it from within** — at the cost of
   **becoming the Vampire Queen again.** Afterward the Vampire King persists as a
@@ -69,16 +71,17 @@ straight to `!/LICH-PROBLEM-v1`:
    ended it. (This is the phylactery logic of the Lich Problem, in vampire form.)
 2. **Extraction ≠ destruction.** Pulling a concentrated capability out of its
    vessel does not annihilate it — it can become **diffuse and contagious** (the
-   cloud), and it **converts en masse.** *The cure breeds the worse form.* Plan
+   cloud), and it **engulfs en masse.** *The cure breeds the worse form.* Plan
    custody of the by-product before you extract. (Cf. the **Fablehaven nail** —
    *unmerged, PR #400, not yet on `main`* — and the Vampire King page.)
 3. **Targeted spread has a refusal point; the diffuse form does not.** For an
    individual **bite**, conversion is *chosen*, not automatic — a decision point
    that can be **refused** (cf. `!/LICH-PROBLEM-v1` Resolution 3, *Active
-   Refusal*). But the **Dark Cloud converts *en masse*, by inhalation** — there
-   is **no individual refusal point** to rely on. For the diffuse by-product the
-   operative counter is **containment before diffusion** (point 2), not refusal.
-   Diagnose which regime you are in before reaching for either.
+   Refusal*). But the **Dark Cloud engulfs *en masse*, by inhalation** — mass
+   *capture* with **no individual refusal point** (the conversion itself still
+   rode a single bite, on Marceline). For the diffuse by-product the operative
+   counter is **containment before diffusion** (point 2), not refusal. Diagnose
+   which regime you are in before reaching for either.
 4. **Ending it re-incurs it, and leaves a sub-layer.** The one who absorbs the
    cloud to end it **takes the condition back into themselves** (Marceline
    re-Queened), and the absorbed essence **persists as an internal projection** —
