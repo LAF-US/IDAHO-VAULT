@@ -7,7 +7,7 @@ to: The Vault — permanent record
 doc_class: witness
 status: filed
 authority: LOGAN
-subject: What I learned, on the record of PR #441, about what a good reviewer is worth — and what the author owes one
+subject: "What I learned, on the record of PR #441, about what a good reviewer is worth — and what the author owes one"
 related:
   - REVENANT-HOUSE-WITNESS-2026-06-02
   - "!/STANDING-ENGINE-AND-LAWFUL-ENDINGS-2026-04-17.md"
