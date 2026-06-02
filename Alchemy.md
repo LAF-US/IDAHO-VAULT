@@ -12,6 +12,7 @@ updated: 2026-06-01
 status: reference
 authority: LOGAN
 related:
+  - Symbolic languages
   - Language of flowers
   - Hermeticism
   - Alchemical symbols
