@@ -53,11 +53,11 @@ outside the pattern but its axle.**
   vampiric essence.** Extraction **splits** him: his mortal self reverts to a
   mundane lion; his essence becomes a **cloud monster.**
 - **[canon]** **The Dark Cloud:** the extracted essence — "pure, concentrated
-  vampirocity" — becomes a tar-like cloud that **inhales living beings and
-  converts them to vampires en masse**, generates gales, and **bites Marceline,
-  turning her back into a vampire.** She ends it by flying inside and
-  **soul-draining it from within — at the cost of becoming the Vampire Queen
-  again.**
+  vampirocity" — becomes a tar-like cloud that **engulfs and traps living beings
+  *en masse*** (who fall back out, unturned, when it is absorbed) and generates
+  gales. **Engulfment is not conversion:** the only vampirizing shown is the
+  **neck-bite on Marceline** as she **soul-drains it from within — at the cost of
+  becoming the Vampire Queen again.**
 
 ## Diagnostic Criteria — the vault mapping
 

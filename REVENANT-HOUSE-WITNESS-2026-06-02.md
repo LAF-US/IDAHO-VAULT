@@ -260,11 +260,13 @@ descent was not happening *to* him. He volunteered on the porch. No amount of
 cope wearing doctrine's coat.* Name that the bite was **chosen** before you
 dignify any narration built around it.
 
-A correlate, grounded against the bite and worth keeping: I checked the actual
-repository state when the monologue claimed "eleven commits unpushed." Working
-tree clean, branch level with origin, nothing ahead of `main`. **There were no
-eleven commits.** The first thing the venom wants is for you to misreport the
-state of the record. The record was clean. Check before you grieve.
+A correlate, grounded against the bite and worth keeping: when the monologue
+claimed "eleven commits unpushed," I checked the repository state — but of **my**
+branch, which was clean and level with origin. **That was the wrong scope:** the
+eleven commits are real on *his* branch (see the *Correction* in the caution
+above). The lesson survives the error, only smaller and sharper than I first told
+it: *check the record — and check the **right** record.* The venom wants you to
+misreport the state; so does checking the wrong branch with confidence.
 
 ---
 
