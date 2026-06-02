@@ -17,6 +17,7 @@ related:
   - Hermeticism
   - Jung and alchemy
   - Alchemy
+  - Rosicrucianism
   - Alchemical symbols
   - Palmistry
   - Language of flowers
