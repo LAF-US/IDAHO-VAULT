@@ -42,11 +42,12 @@ outside the pattern but its axle.**
   vampire**, yet cares about his "people."
 - **[canon]** Per Princess Bubblegum, the **"pure vampire juice" inside him could
   alter reality irremediably** — too concentrated to handle by ordinary means.
-- **[canon]** **In the original encounter, a stake did not destroy him — it
-  *transferred* him.** Young Marceline staked the Vampire King and he **bit her
-  as she did**, turning her into the Vampire Queen; his essence passed **into the
-  hunter** rather than ending (see the Marceline note). The stake relocated the
-  essence; it did not annihilate it.
+- **[canon]** **In the original encounter, the stake struck his *body* — but his
+  *bite* carried the vampirism forward.** Young Marceline staked the Vampire King,
+  and *as she did, he bit her*, turning her into the Vampire Queen (see the
+  Marceline note). The **bite**, not any failure of the stake, is what passed the
+  vampiric line into the hunter; the stake did its work on the body. Read the two
+  apart — the body was felled, and the **bite** seeded the continuity.
 - **[canon]** **In the *Stakes* miniseries (the revived King), the counter is not
   a stake but a scientific process** — Bubblegum's machine **extracts the
   vampiric essence.** Extraction **splits** him: his mortal self reverts to a
@@ -70,7 +71,8 @@ each canon-grounded:
    sovereign capability just breaks the stake (he crushes them).
 2. **Extraction breeds a worse by-product.** Removing the essence does not
    destroy it — it produces a **diffuse, contagious residue** (the Dark Cloud)
-   that **converts en masse.** A concentrated danger pulled from its vessel
+   that **engulfs en masse** (mass *capture*; conversion still rides a single
+   bite). A concentrated danger pulled from its vessel
    becomes a *spreading* one. (Compare the **Fablehaven nail** — *filed on the
    unmerged PR #400 set, not yet on `main`* — what you remove, you must then
    guard or destroy: removal is the start of a custody problem, not the end.)
