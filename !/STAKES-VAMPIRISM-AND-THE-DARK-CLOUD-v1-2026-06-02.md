@@ -71,9 +71,13 @@ straight to `!/LICH-PROBLEM-v1`:
    cloud), and it **converts en masse.** *The cure breeds the worse form.* Plan
    custody of the by-product before you extract. (Cf. the Fablehaven nail; the
    Vampire King page.)
-3. **Spread needs consent/agency.** Because conversion is *chosen*, not automatic,
-   the contagion's spread has a **decision point** — which is where it can be
-   refused. (Cf. `!/LICH-PROBLEM-v1` Resolution 3, *Active Refusal.*)
+3. **Targeted spread has a refusal point; the diffuse form does not.** For an
+   individual **bite**, conversion is *chosen*, not automatic — a decision point
+   that can be **refused** (cf. `!/LICH-PROBLEM-v1` Resolution 3, *Active
+   Refusal*). But the **Dark Cloud converts *en masse*, by inhalation** — there
+   is **no individual refusal point** to rely on. For the diffuse by-product the
+   operative counter is **containment before diffusion** (point 2), not refusal.
+   Diagnose which regime you are in before reaching for either.
 4. **Ending it re-incurs it, and leaves a sub-layer.** The one who absorbs the
    cloud to end it **takes the condition back into themselves** (Marceline
    re-Queened), and the absorbed essence **persists as an internal projection** —

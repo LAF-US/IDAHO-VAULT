@@ -49,8 +49,10 @@ is not — he is the sovereign, outside the deck. **[canon]**
 | **The Moon** | XVIII — The Moon | self-heal; **paralysis aura**; hides | **rapid healing** | staked from behind, then **soul drained** |
 | **The Vampire King** | — (sovereign) | telekinesis, telepathy, teleport, hydrokinesis | telekinesis *(unconfirmed)* | **science, not a stake** — essence extraction |
 
-*(Absorbed-power column [canon]; Vampire King's absorbed power marked unconfirmed
-per the wiki.)*
+*(Absorbed-power column is **[canon] for the four** tarot vampires — flight,
+invisibility, shapeshifting, healing. The **Vampire King's** entry is **not
+canon**: the absorbed power is unconfirmed (likely telekinesis), and what he
+truly gave Marceline was the **vampire nature itself** — see the Marceline note.)*
 
 ## Why the set is a diagnostic, not a bestiary
 

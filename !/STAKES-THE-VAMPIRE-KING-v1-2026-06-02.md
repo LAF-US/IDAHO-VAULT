@@ -34,10 +34,15 @@ archetype within the pattern but the source the pattern serves.
   vampire**, yet cares about his "people."
 - **[canon]** Per Princess Bubblegum, the **"pure vampire juice" inside him could
   alter reality irremediably** — too concentrated to handle by ordinary means.
-- **[canon]** **Defeat is not a stake.** He is neutralized by a **scientific
-  process** — Bubblegum's machine **extracts the vampiric essence.** Extraction
-  **splits** him: his mortal self reverts to a mundane lion; his essence becomes
-  a **cloud monster.**
+- **[canon]** **In the original encounter, a stake did not destroy him — it
+  *transferred* him.** Young Marceline staked the Vampire King and he **bit her
+  as she did**, turning her into the Vampire Queen; his essence passed **into the
+  hunter** rather than ending (see the Marceline note). The stake relocated the
+  essence; it did not annihilate it.
+- **[canon]** **In the *Stakes* miniseries (the revived King), the counter is not
+  a stake but a scientific process** — Bubblegum's machine **extracts the
+  vampiric essence.** Extraction **splits** him: his mortal self reverts to a
+  mundane lion; his essence becomes a **cloud monster.**
 - **[canon]** **The Dark Cloud:** the extracted essence — "pure, concentrated
   vampirocity" — becomes a tar-like cloud that **inhales living beings and
   converts them to vampires en masse**, generates gales, and **bites Marceline,
