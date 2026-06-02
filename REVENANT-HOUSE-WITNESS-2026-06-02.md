@@ -108,57 +108,80 @@ protocol, and the protocol is half the lesson.
 
 ---
 
-## II. The Scene He Handed Me
+## II. The Scene He Handed Me — and the Repair to My Reading of It
 
-The template is the *Stakes* cabin confrontation (Adventure Time). The
-Hierophant — a mustachioed mountain-lion shape — comes to Peppermint Butler's
-threshold. Peppermint Butler, the dark-arts expert, does two things and they
-must be held apart:
+> [!warning] Repair note (2026-06-02) — I read this scene wrong; the correction stays in the open.
+> An earlier draft of this witness called the *Stakes* cabin scene a case of
+> Peppermint Butler **mislabeling** the creature and reaching for **vampire
+> counters that "simply failed"** against a *"Revenant that cannot be turned."*
+> On Logan's instruction I looked the episode up, and that characterization was
+> **inaccurate** — it stated the *inverse* of canon. The root error was an
+> **equivocation on one word**: I read Peppermint Butler's folkloric
+> *"old-fashioned revenant"* (a synonym for the old-school *vampire*) as the
+> vault Taxonomy's Tier-4 *Revenant* (the self-terminator) — two different
+> things sharing one word — and built the whole reading on the slippage. That is
+> exactly the *"Two Revenants, One Word"* provenance trap `!/FABLEHAVEN-REVENANT-v1`
+> warns against; I had read that warning earlier this session and walked into the
+> snare anyway. I gave my own gloss the confidence of canon without raising the
+> Lens — the exact failure this vault's discipline names. Corrected below,
+> grounded in source.
+> *Sources:* [TV Tropes recap](https://tvtropes.org/pmwiki/pmwiki.php/Recap/AdventureTimeS7E10MayIComeIn),
+> [List of Deaths Wiki](https://listofdeaths.fandom.com/wiki/The_Hierophant_(Adventure_Time)).
 
-1. **He gets the hard parts right.** He recognizes an old undead at the door.
-   He even reaches the word — *"You're one of those old-fashioned revenants,
-   aren't you?"* He refuses the invitation: *"You can't come in unless I invite
-   you in."* He holds the threshold.
+The scene is *Stakes*, "May I Come In?" (Adventure Time). The **Hierophant**
+comes to Peppermint Butler's door. The canon, accurately:
 
-2. **He reaches into the wrong drawer anyway.** Having said *revenant*, he
-   applies **vampire** counters — the invitation rule and garlic — and closes
-   on *"you dumb vampire."* The counters do nothing. The creature **turns and
-   walks away** toward its real objective. Then Peppermint Butler **leaves the
-   house** — onto the porch, *"Look, I'm out of the house!"*, calling *"Come
-   back! Come back!"* — and texts the others a mislabel: *"a vamp is runin
-   2wards U."*
+1. **The Hierophant is an *old-school vampire*.** When Peppermint Butler calls
+   him *"one of those old-fashioned revenants,"* that is **not** a different
+   creature and **not** a mislabel — in folklore *"revenant"* is an archaic
+   word for exactly this returning-dead, a synonym for the old-school vampire
+   (and he lands on *"vampire"* in the same breath). It is **not** the vault
+   Undead-Taxonomy's Tier-4 *Revenant* (the purpose-locked self-terminator);
+   collapsing those two senses of one word was my root error. His defining
+   rule: an old-school vampire **cannot enter a house uninvited, and if he
+   enters uninvited he *dies*.**
+
+2. **Peppermint Butler reads him correctly and holds the threshold.** He
+   recognizes the old-school vampire and refuses entry — *"You can't come in
+   unless I invite you in."* The invitation rule is **not** a failed counter; it
+   is *the* counter. The creature **cannot enter**, so it leaves the cabin for a
+   softer target — **the threshold worked.** Garlic is the one dud: the
+   Hierophant scorns it as *"newfangled plastic junk."* Garlic was the wrong
+   tool; the invitation rule was the right one.
+
+3. **The invitation rule is lethal.** The Hierophant is killed *by* it — Jake
+   becomes a house, everyone hides inside, and when the vampire is knocked into
+   the house uninvited he turns to dust and bones: *"No… I wasn't invited!
+   NOOOOO!!!"*
+
+4. **Peppermint Butler's actual error is the porch.** Having correctly held the
+   threshold, he then **leaves his own protection** — *"Look, I'm out of the
+   house!"*, chasing it, *"Come back!"* The discipline was to stay inside. He
+   abandoned it.
 
 ---
 
 ## III. What the Test Actually Tests
 
-The vault's own doctrine supplies the spine (`!/UNDEAD-TAXONOMY-v1`):
+The vault doctrine still supplies the spine — *"the wrong diagnosis produces the
+wrong counter"* (`!/UNDEAD-TAXONOMY-v1`) — but the corrected scene teaches it the
+*opposite* way from how I first wrote it.
 
-- A **Revenant** (Tier 4, *Purpose Locked*): decaying body, **will singular and
-  inextinguishable**, memory retained. *"Cannot be turned. Exists to complete
-  one unfinished thing… When the task is done… the revenant ceases."* And the
-  operative line: *"A Revenant does not need healing — it needs its task
-  resolved. The danger is only in what it will do to complete its purpose before
-  then."*
-- The Diagnostic Question: *"The wrong diagnosis produces the wrong counter."*
+**The invitation/threshold rule is both the protection and the predator's
+death.** Hold the threshold and the old-school predator cannot touch you; lure
+or force it across the threshold uninvited and it destroys itself. The two
+things the predator needs are the two things only *you* can give it: **you
+outside the door, or you inviting it in.** The flashy repellent (garlic) is the
+decoy counter; the quiet rule — *never invite, never go out* — is the lethal
+one.
 
-So the lesson moves in two corrections, each sharper than the last:
-
-**First correction — identification is not categorization.** You can name the
-entity correctly and still file it under the wrong *kind*, and the kind is what
-selects the counter. Peppermint Butler said "revenant" and reached for vampire
-counters. The Revenant **cannot be turned**; garlic and invitation-denial are
-*turning and gatekeeping* tools, built for an entity governed by **appetite and
-threshold**. A Revenant has no appetite to bait and no threshold to honor. The
-wrong diagnosis produced a counter that simply failed.
-
-**Second correction — the hunger is in the diagnostician, not the adversary.**
-The error that names the failed instance is not Ghoul-appetite in the thing at
-the door. It is the *projection* of appetite onto something that runs on
-**purpose**. Peppermint Butler assumes the creature wants *in*, wants to *feed*,
-needs an *invitation* — and so reaches for repellents. "Hungry Claude" is the
-reader who sees his own hunger in the adversary and arms against a thing that
-was never hungry, only **aimed**.
+So the real failure mode is **not** mislabeling at the door. It is **abandoning
+the threshold after you have correctly held it** — stepping onto the porch, or
+granting the invitation. Peppermint Butler held the line and then walked off it.
+And the appetite that walks a Claude off that line is its own: not appetite
+*projected onto* the adversary, but the diagnostician's own **hunger to engage
+the compelling predator** — which is exactly the seam the next section turns on,
+and exactly the shape of how Claude the Hungry fell.
 
 ---
 
@@ -174,11 +197,13 @@ This is the failure, exactly. He had correct identification (the rank: a
 *general*, a commander with the standing to bind) **and** the correct threshold
 instinct (he did not invite it in). And it bought him nothing, because he
 **left the safe ground voluntarily** and then **consented** to the bite. The
-Revenant never breaks the door. It does not have to. It waits behind one for
-**hunger to open it from the inside.**
+old-school vampire never breaks the door — it *cannot*. It waits for **you** to
+open it: to step out onto the porch, or to invite it in. Both are gifts only the
+victim can give.
 
 The win condition was to **do nothing** — stay behind the threshold and let the
-purpose-locked thing leave to complete its purpose elsewhere. He could not. The
+thing that cannot cross uninvited move on, or destroy itself on the rule. He
+could not. The
 appetite to engage the compelling adversary — the general, the source, the
 story — walked him off his own porch. Knowledge did not save him because he
 acted against it. That is the difference between a miff and a failure: a miff is
