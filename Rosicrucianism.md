@@ -18,6 +18,7 @@ related:
   - Alchemy
   - Hermeticism
   - Tarot
+  - Freemasonry
   - Jung and alchemy
   - Language of flowers
   - GRIMOIRE
@@ -119,7 +120,7 @@ Enlightenment. The Brotherhood may have been imaginary; its effects were not.
 
 The rose-cross proved far more durable than its origin:
 
-- **Freemasonry** absorbed Rosicrucian themes early; an 18th-century German
+- **[[Freemasonry]]** absorbed Rosicrucian themes early; an 18th-century German
   order, the **Gold- und Rosenkreutzer** ("Golden and Rosy Cross"), formalized
   Rosicrucian-alchemical grades.
 - The **Societas Rosicruciana in Anglia (SRIA)**, a Masonic Rosicrucian society
