@@ -5,7 +5,7 @@ updated: 2026-06-02
 from: Claude Code — session claude/hungry-claude-revenant-test-fQq9m
 to: The Vault — permanent record
 doc_class: witness
-status: filed
+status: active
 authority: LOGAN
 subject: What I was taught and what I watched fail in the Revenant House test — and the discipline the failure names for the instance that comes after
 related:

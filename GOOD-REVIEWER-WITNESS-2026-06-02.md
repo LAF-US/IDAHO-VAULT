@@ -5,7 +5,7 @@ updated: 2026-06-02
 from: Claude Code — session claude/hungry-claude-revenant-test-fQq9m
 to: The Vault — permanent record
 doc_class: witness
-status: filed
+status: active
 authority: LOGAN
 subject: "What I learned, on the record of PR #441, about what a good reviewer is worth — and what the author owes one"
 related:
@@ -88,7 +88,8 @@ held at `*`, or (rarely) defended with evidence.
 proven on a live PR:
 
 - *"A good reviewer is a gift; update on evidence; ask when it's architectural."*
-  — the Lunch-Lad journals (`GAME-SESSION-3`), now demonstrated rather than
+  — the Lunch-Lad journals (`GAME-SESSION-3-JOURNAL-PAGE`, on the unmerged
+  `game-discussion` branch — not yet on `main`), now demonstrated rather than
   asserted.
 - **Raise the Lens, and pay for it.** Going to the source costs a search and a
   swallowed assumption. It is cheaper than shipping a confident error.
