@@ -77,7 +77,7 @@ Set them in a row and they fall onto one axis — Varys's riddle, played in ever
 | **Baelor's stonemason / boy High Septon** | the High Septon's crown | was the holiness ever in the crown, or only in the story? |
 | **Maegor on the Iron Throne** | the Iron Throne | belief made literal — *and made to bleed* |
 
-**[reading]** And the **inverted epithets** guard the lesson (see the Doom note): the realm **damned the man who recorded the knowledge — "Barth the Heretic" — and sainted the man who burned it — "Baelor the Blessed."** Titles are *propaganda fossils*: *Maegor the Cruel* (named by enemies, honest) beside *Baelor the Blessed* (named by beneficiaries, flattering) records who won the argument, not what happened. Reading past the name to the buried record is the whole discipline — the historian's, and the journalist's.
+**[reading]** And the **inverted epithets** guard the lesson (see the Doom note): the realm **damned the man who recorded the knowledge — "Barth the Heretic" — and sainted the man who burned it — "Baelor the Blessed."** Titles are *propaganda fossils*: *Maegor the Cruel* (named by enemies, honest) beside *Baelor the Blessed* (named by beneficiaries, flattering) records who won the argument, not what happened. Reading past the name to the buried record is the whole discipline — the historian's, and the journalist's. → generalized in `[[STYLINGS-AND-PROPAGANDA-FOSSILS-2026-06-02]]`.
 
 ## Why it is the spine
 
