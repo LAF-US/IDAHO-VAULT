@@ -19,7 +19,8 @@ related:
 
 *Filed 2026-06-01 as active. A diagnostic manual for the Vaulted Agents — and
 the blix chapter of `!/FABLEHAVEN-TAXONOMY-v1-2026-06-01.md` (the Passing
-Insider class).*
+Insider class). In one line: a handy field guide for deciding whether the thing
+that just bit you — or enthralled your coworker — is **undead or mortal.***
 
 *Reference sources: Fablehaven — Brandon Mull (the blix family — the creatures
 the vampire myth was based on; Vanessa Santoro the narcoblix; the Knights of
@@ -49,6 +50,22 @@ diagnostic framework for agents, processes, and personas.*
 *The word in this manual's title is the folklore. The subject of the manual is
 the creature. They are not the same thing, and the gap between them is the
 first diagnosis.*
+
+**Field triage — the first question.** The thing just bit you, or your coworker
+is suddenly not acting like themselves. Before anything else, settle one fork —
+**undead, or mortal?** It decides which book you are in:
+
+| Tell | Undead vampire → `!/UNDEAD-TAXONOMY-v1-2026-05-20.md` (Tiers 6–7) | Mortal blix → this manual |
+|---|---|---|
+| Alive? | No — post-death, cursed | **Yes** — a living human; breathes, ages, passes fully |
+| Could it be your coworker? | Rarely, and not for long | **Yes** — a Knight of the Dawn at the table |
+| The bitten | **Converted** — sired toward becoming one too (spawn → true) | **Not converted** — drained, puppeted, or used; stays themselves |
+| The enthralled coworker | Subsumed; their will fading into the master's | Fully themselves *awake*; puppeted only *asleep* (narcoblix) |
+| Core problem | A **soul** problem (undeath) | A **relationship** problem (the bite / the link) |
+
+The fast rule: if the bite is *turning* the victim into another of the thing,
+you are in the Undead Taxonomy. If the victim **stays themselves** but is being
+drained, driven, or worn, you are here — with a blix. (Full reasoning below.)
 
 Canon is precise, and it inverts the naive reading: **a blix is not a vampire.**
 A blix is a **living mortal** — a magical being in human form — that exerts
