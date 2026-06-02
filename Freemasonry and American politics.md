@@ -12,6 +12,7 @@ updated: 2026-06-02
 status: reference
 authority: LOGAN
 related:
+  - Symbolic languages
   - Freemasonry
   - Mormonism
   - Collegiate Greek life
