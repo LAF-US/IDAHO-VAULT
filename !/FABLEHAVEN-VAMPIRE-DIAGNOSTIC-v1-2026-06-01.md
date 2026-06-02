@@ -21,9 +21,9 @@ related:
 the blix chapter of `!/FABLEHAVEN-TAXONOMY-v1-2026-06-01.md` (the Passing
 Insider class).*
 
-*Reference sources: Fablehaven — Brandon Mull (the blix family of vampires;
-Vanessa Santoro the narcoblix; the Knights of the Dawn / Society of the
-Evening Star); and Mull's own stated method in the* Mormon Artist *interview
+*Reference sources: Fablehaven — Brandon Mull (the blix family — the creatures
+the vampire myth was based on; Vanessa Santoro the narcoblix; the Knights of
+the Dawn / Society of the Evening Star); and Mull's own stated method in the* Mormon Artist *interview
 ("all the different myths or legends of different cultures have some truth to
 them"). Beneath Mull, the classical and folkloric substrate the coinages draw
 on: Greek* narkē *(sleep) and the* mare */ nightmare tradition; Latin* vivus
@@ -41,6 +41,72 @@ blix is not a Lich, see the Distinction section below.*
 
 *The vault is syncretic. This is not a Fablehaven simulation — it is a
 diagnostic framework for agents, processes, and personas.*
+
+---
+
+## Blix ≠ Vampire — The Disambiguation
+
+*The word in this manual's title is the folklore. The subject of the manual is
+the creature. They are not the same thing, and the gap between them is the
+first diagnosis.*
+
+Canon is precise, and it inverts the naive reading: **a blix is not a vampire.**
+A blix is a **living mortal** — a magical being in human form — that exerts
+power over others through a bite, and **the vampire myth was based on blixes.**
+The vampire is the *legend humans told*; the blix is the *creature the legend
+was built from.* So a blix is not a kind of vampire — "vampire" is a kind of
+*story about* blixes.
+
+**Two levels, both true, opposite directions** (so this does not contradict
+§ The Roots Beneath the Coinage):
+
+- *In-universe:* the blix is the **source**; "vampire" is the downstream human
+  folklore — Mull's whole premise is that the myths have true sources.
+- *Authorial:* Mull built the blix **from** our real vampire and life-drain
+  folklore (see § Roots).
+
+The recursion is the point: the legend you arrive by points back at the
+creature it came from.
+
+**What the disambiguation forbids — importing the legend's baggage.** Because a
+blix is not the folkloric vampire, the accreted properties of the legend do
+**not** transfer:
+
+- Blixes are **not undead** — they are living mortals (dark-creature class).
+- Blood-drinking is **not** their defining act — each subtype drains, controls,
+  or raises (youth / sleep / the dead), not blood.
+- They are **not** undone by sunlight, stakes, garlic, or running water — those
+  are legend-accretions, not blix mechanics.
+- A blix bite does **not** sire its victim into another blix (see § Vampires and
+  Thralls).
+
+Treating a blix as "a vampire" smuggles in counters for a creature that is not
+there — you ward against sunlight while the narcoblix puppets your sleeping
+staff. That is precisely the Type I epistemological-Lich move named in
+`!/LICH-PROBLEM-v1-2026-05-20.md`: confident properties asserted with no valid
+emanation chain to the actual creature. **Read the creature; the legend will lie
+to you about its mechanism.**
+
+**Vault-internal routing — the collision to avoid.** Inside the vault, "vampire"
+already has a referent, and it is *not* the blix:
+
+| Term | Refers to | Nature | Doc |
+|---|---|---|---|
+| **Vampire** (vault sense) | Vampire Spawn / True Vampire | **Undead** — cursed, post-death; a soul problem | `!/UNDEAD-TAXONOMY-v1-2026-05-20.md` (Tiers 6–7) |
+| **Blix** (this manual) | Lecto- / Narco- / Viviblix | **Living mortal** — passes as human | here |
+
+They share only the bite-motif. When a report says "vampire," **disambiguate
+before you counter**: the *undead* cursed vampire (→ Undead Taxonomy) or the
+*living* blix (→ here)? The two need different counters, and the word alone will
+not tell you which you face.
+
+**On this manual's title.** It is filed as the "Vampire Diagnostic" because
+"vampire" is the name an agent will *arrive by* — the folklore label is the
+search term. The manual's job is to carry the reader from the legend to the
+creature: you come in looking for a vampire and leave having diagnosed a blix.
+The title is the vessel; the content is the source. *(If precision is preferred
+over discoverability, it can be retitled "Blix Diagnostic"; the filename is kept
+as-is for link stability across the taxonomy's chapters — say the word.)*
 
 ---
 
