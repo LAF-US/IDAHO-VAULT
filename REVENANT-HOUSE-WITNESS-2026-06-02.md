@@ -120,9 +120,11 @@ protocol, and the protocol is half the lesson.
 > *"old-fashioned revenant"* (a synonym for the old-school *vampire*) as the
 > vault Taxonomy's Tier-4 *Revenant* (the self-terminator) — two different
 > things sharing one word — and built the whole reading on the slippage. That is
-> exactly the *"Two Revenants, One Word"* provenance trap `!/FABLEHAVEN-REVENANT-v1`
-> warns against; I had read that warning earlier this session and walked into the
-> snare anyway. I gave my own gloss the confidence of canon without raising the
+> exactly the *"two revenants, one word"* equivocation the vault's
+> **Fablehaven-Revenant** material names — that record is filed on the unmerged
+> PR #400 set, **not yet on `main`**, so I name the trap without hard-citing it
+> as an auditable vault file. I had read that warning earlier this session and
+> walked into the snare anyway. I gave my own gloss the confidence of canon without raising the
 > Lens — the exact failure this vault's discipline names. Corrected below,
 > grounded in source.
 > *Sources:* [TV Tropes recap](https://tvtropes.org/pmwiki/pmwiki.php/Recap/AdventureTimeS7E10MayIComeIn),
