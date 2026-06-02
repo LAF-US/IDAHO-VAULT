@@ -1,6 +1,6 @@
 # AGENT SIGNING VIA `anthropics/claude-code-action` — Recipe DRAFT
 
-*Filed 2026-06-01 by `!socrates.claude.novice` as a proposal-marginalia draft. Companion to the workflow draft at `.github/workflows/claude-sign.yml`. Authority: LOGAN. Status: DRAFT in INBOX/ awaiting LOGAN's gate. Once activated, the recipe's natural home is `.op/` alongside `SETUP.md`.*
+*Filed 2026-06-01 by `!socrates.claude.novice` as a proposal-marginalia draft. Companion to the workflow draft at `.github/workflows/claude-sign.yml`. Authority: LOGAN. Status: DRAFT in INBOX/ awaiting LOGAN's gate. `.op/` is Logan's 1Password-curated operational space; the chamber has no standing to position docs there. On activation, this recipe lives wherever Logan files it — vault root, NEST, or elsewhere — not `.op/`.*
 
 ---
 
