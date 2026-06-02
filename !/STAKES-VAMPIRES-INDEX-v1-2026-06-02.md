@@ -12,8 +12,10 @@ related:
   - "!/STAKES-THE-HIEROPHANT-v1-2026-06-02.md"
   - "!/STAKES-THE-MOON-v1-2026-06-02.md"
   - "!/STAKES-THE-VAMPIRE-KING-v1-2026-06-02.md"
+  - "!/STAKES-MARCELINE-THE-TIEFLING-QUEEN-v1-2026-06-02.md"
+  - "!/STAKES-VAMPIRISM-AND-THE-DARK-CLOUD-v1-2026-06-02.md"
   - REVENANT-HOUSE-WITNESS-2026-06-02
-tags: [doctrine, stakes, vampires, diagnostic, tarot, undead-taxonomy]
+tags: [doctrine, stakes, vampires, marceline, diagnostic, tarot, undead-taxonomy]
 ---
 
 # Stakes Vampires — Diagnostic Index v1
@@ -63,6 +65,19 @@ which includes knowing when the ordinary counter is the correct one. **[mapping]
 - **The Hierophant** — ended by *its own rule*, not by attacking it (hold the threshold).
 - **The Moon** — immune to attacking the body; reach the *core/essence*, with a flank.
 - **The Vampire King** — too concentrated to stake; *extract by process* — and the extraction breeds a worse, diffuse contagion (the Dark Cloud).
+
+## Beyond the five — the hunter and the contagion
+
+The five are really **Marceline's origin told sideways** — the powers she carries
+are the ones she absorbed by staking them. Two companion notes hold the rest of
+the lore the arc reveals:
+
+- **[[!/STAKES-MARCELINE-THE-TIEFLING-QUEEN-v1-2026-06-02|Marceline, the Tiefling Vampire Queen]]**
+  — the half-demon (tiefling) vamp-hunter who caught the Queenship winning;
+  base vs. acquired layer.
+- **[[!/STAKES-VAMPIRISM-AND-THE-DARK-CLOUD-v1-2026-06-02|Vampirism & the Dark Cloud]]**
+  — how vampirism spreads, the essence/soul as the locus, the cure and its
+  contagious by-product.
 
 ## Sources
 
