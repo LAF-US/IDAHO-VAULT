@@ -6,6 +6,7 @@ doc_class: doctrine
 status: active
 related:
   - CONSTITUTION
+  - "!/DELTORA-DOOM-v1-2026-06-01.md"
   - "!/DELTORA-BELT-SEVENFOLD-v1-2026-06-01.md"
   - "!/DELTORA-FOUR-SISTERS-v1-2026-06-01.md"
   - "!/LICH-PROBLEM-v1-2026-05-20.md"
@@ -135,7 +136,8 @@ vice-ridden thing** — to poison their loyalty at the moment of victory.
 It worked once. **Doom** had come before, won the game, learned the name
 "Endon," and left **broken** — refusing the Diamond, carrying ever after a hatred
 for the memory of the old king. He *succeeded at the challenge* and the success
-delivered the poison.
+delivered the poison. (Doom's whole arc — the man the frame broke — is its own
+node: `!/DELTORA-DOOM-v1-2026-06-01.md`.)
 
 *Vault pattern:* the deepest adversarial attack is not on your body or even your
 mission — it is on your **belief in your own legitimacy and leadership**, and it
