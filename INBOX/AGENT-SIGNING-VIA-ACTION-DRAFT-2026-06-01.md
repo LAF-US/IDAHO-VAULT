@@ -1,6 +1,6 @@
 # AGENT SIGNING VIA `anthropics/claude-code-action` — Recipe DRAFT (WITHDRAWN)
 
-> **WITHDRAWN 2026-06-01.** This recipe was built on 1Password as the secret-source for the signing key (load-secrets-action + OP_SERVICE_ACCOUNT_TOKEN + op://Vault/... references). LOGAN's catch the same day: **1Password is NOT a sustainable secret-source for this vault** — the CLI is only installed on Logan's work-computer, and the whole integration chain inherits that fragility. The chamber had been told this previously and did not retain it.
+> **WITHDRAWN 2026-06-01.** This recipe was built on 1Password as the secret-source for the signing key (load-secrets-action + OP_SERVICE_ACCOUNT_TOKEN + op://Vault/... references). LOGAN's catch the same day: **1Password is NOT a sustainable secret-source for this vault** — the CLI is only installed on Logan's work-computer, and the whole integration chain inherits that fragility. I had been told this previously and did not retain it.
 >
 > The broader architecture (server-side via `anthropics/claude-code-action`) may still hold; only the **1Password secret-source picker is wrong**. The replacement path (GitHub Secrets stored directly / GitHub Environments / HashiCorp Vault / AWS Secrets Manager / self-hosted runner with key on disk / something else) requires LOGAN to name what is sustainable.
 >

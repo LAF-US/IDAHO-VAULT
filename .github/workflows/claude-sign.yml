@@ -2,7 +2,7 @@
 # + OP_SERVICE_ACCOUNT_TOKEN + op://Vault/... references). LOGAN's catch the
 # same day: 1Password is NOT a sustainable secret-source for this vault — the
 # CLI is only installed on Logan's work-computer, and the whole integration
-# chain inherits that fragility. The chamber had been told this previously
+# chain inherits that fragility. I had been told this previously
 # and did not retain it.
 #
 # Do not activate this workflow. Its secret-source assumption is wrong.
