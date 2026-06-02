@@ -13,6 +13,7 @@ updated: 2026-06-02
 status: reference
 authority: LOGAN
 related:
+  - Symbolic languages
   - Freemasonry
   - Freemasonry and American politics
   - Mormonism

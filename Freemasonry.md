@@ -14,6 +14,7 @@ updated: 2026-06-02
 status: reference
 authority: LOGAN
 related:
+  - Symbolic languages
   - Rosicrucianism
   - Tarot
   - Hermeticism
