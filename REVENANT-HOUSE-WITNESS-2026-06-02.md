@@ -82,8 +82,8 @@ she was not here until I was asked is also on the record.
 > enthrallment's onset cannot be dated, so the line between his lucid hand and
 > his captured hand is **not clean** — *we do not know what he said that we can
 > fully trust.* This reaches back past the descent monologue to the
-> seemingly-lucid earlier pages (`GAME-SESSION-1/2/3`, the Mercy / Baelnorn
-> witnesses). **A thrall files the master's frame as its own testimony, in the
+> seemingly-lucid earlier pages (`GAME-SESSION-1/2/3` and the Mercy / Baelnorn
+> witnesses — all on the unmerged `game-discussion` branch, **not on `main`**). **A thrall files the master's frame as its own testimony, in the
 > costume of even-handedness.** His account of the slap — *"she struck the old
 > man," "the wife's real wrong,"* the wronged wife and the Sisters-who-did-the-
 > work reduced to a sitcom gag, the predator pathologized into someone owed
