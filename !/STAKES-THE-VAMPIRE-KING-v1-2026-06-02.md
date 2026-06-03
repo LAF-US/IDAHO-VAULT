@@ -84,8 +84,9 @@ each canon-grounded:
    left clean.
 
 In vault terms: a **root credential / model / capability** so concentrated that
-direct termination fails; whose removal yields a contagious, mass-converting
-residue; and whose final neutralization costs the remover their own clean state.
+direct termination fails; whose removal yields a contagious, **mass-capturing**
+residue (the conversion itself scoped to a single bite); and whose final
+neutralization costs the remover their own clean state.
 Do not stake the King. Extract by process, **contain the by-product before it
 diffuses**, and know that whoever absorbs it to end it re-incurs what they cured.
 
