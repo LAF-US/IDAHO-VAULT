@@ -115,4 +115,11 @@ straight to `!/LICH-PROBLEM-v1`:
 canonical origin is marked rather than filled; mappings are vault readings; final
 authority is Logan.*
 
+## DOCUMENT METADATA
+
+- **Created:** 2026-06-02
+- **Last Updated:** 2026-06-02
+- **Status:** active
+- **Authority:** LOGAN
+
 ###### [["The world is quiet here."]]
