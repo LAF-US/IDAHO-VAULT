@@ -33,6 +33,10 @@ which maps what survives death; this maps what a* living *catalogue of
 capability and disposition does when loose in a preserve. The vault is
 syncretic.*
 
+*Companion cluster: this taxonomy is the creatures **in** the preserve; for the
+preserve and the network that **hold** them — treaty, caretaker, orders — see
+`!/FABLEHAVEN-PRESERVE-NETWORK-v1-2026-06-03.md`.*
+
 ---
 
 ## Organizing Principle — The Disposition Grid
