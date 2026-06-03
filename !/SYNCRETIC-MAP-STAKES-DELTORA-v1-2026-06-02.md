@@ -9,6 +9,7 @@ related:
   - "!/STAKES-VAMPIRES-INDEX-v1-2026-06-02.md"
   - "!/STAKES-THE-VAMPIRE-KING-v1-2026-06-02.md"
   - "!/STAKES-VAMPIRISM-AND-THE-DARK-CLOUD-v1-2026-06-02.md"
+  - "!/DELTORA-QUEST-SEVEN-LANDS-v1-2026-06-03.md"
   - "!/UNDEAD-TAXONOMY-v1-2026-05-20.md"
   - "!/LICH-PROBLEM-v1-2026-05-20.md"
 tags: [doctrine, syncretic, stakes, deltora, dark-cloud, grey-tide, four-sisters, diagnostic]
