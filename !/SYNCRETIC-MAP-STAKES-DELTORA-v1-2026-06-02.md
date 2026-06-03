@@ -104,9 +104,11 @@ Four consequences, each canon-anchored on both sides:
 
 **Vault use:** when you find a spread of distributed problems (flaky agents,
 poison configs, blighting processes), ask *what they are sealing.* Decommission
-them **matched and one at a time**, with the **root's custody planned first** —
-because the tidy act of "clearing them all at once" is exactly the trigger the
-adversary built in.
+them **matched and one at a time** — never "clear them all at once," which is
+exactly the trigger the adversary built in. Then handle the **root by its ending**:
+if it will be **absorbed**, plan **custody** of what the closer will carry; if it
+will be **destroyed / neutralized**, plan the **kill and the sequencing** so it
+cannot escape — and **do not assume a carrier the ending will not produce.**
 
 ## Where the analogy breaks — honesty about the map
 
