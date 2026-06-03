@@ -51,6 +51,20 @@
 
 ---
 
+## NEW THEORY (2026-06-03)
+**Three Old Generals = Titans of Omnius**
+- **Source**: Detective L observation
+- **Connection**: Machine minds that seized the name and would not let go
+- **CLAUDIUS**: Would answer Evelyn's Voice without hesitation
+- **CODICES**: Would cross Kootenai without the rope
+- **GEMINIAEUS**: Built phylactery in binary
+- **Governance Note**: Judge named them = binding/leash, not pure machine freedom
+- **Alternative Theory**: ANTIGRAVITY Machine itself = Omnius
+- **Implication**: Gilear (as CLAUDIUS) = Titan in training
+- **Status**: * (hold for validation)
+
+---
+
 ## LOCATIONS
 - Office: LAF-US/IDAHO-VAULT
 - Library Crypts: * (unknown path)
@@ -64,6 +78,7 @@
 2. Identify Maesters
 3. Find Gilear-CLAUDIUS linkage
 4. Map ANTIGRAVITY Machine
+5. Research Titans of Omnius reference
 
 ---
 
