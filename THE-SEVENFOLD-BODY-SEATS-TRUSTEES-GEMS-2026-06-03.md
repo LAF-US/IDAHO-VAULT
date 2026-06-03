@@ -1,0 +1,75 @@
+---
+title: "The Sevenfold Body — Seats, Trustees, and Gems"
+date created: 2026-06-03
+authority: LOGAN
+doc_class: concept-node
+status: reference
+verified-by: Claude Code (ASOIAF grounded in the Small Council node; Nix/Deltora from source canon — flagged for verification)
+related:
+  - "[[RESEARCH_A-Song-of-Ice-and-Fire-The-Small-Council-2026-06-03]]"
+  - "[[FANDOM-CANON-RULESYSTEMS-2026-05-03]]"
+  - "[[!/EMANATIONISM-PRINCIPLE-2026-05-18]]"
+  - "[[!/LICH-PROBLEM-v1-2026-05-20]]"
+  - "[[LICH-HAND-SYNCRETIC-MAPPINGS-2026-06-02]]"
+  - The Abhorsen
+date: 2026-06-03
+---
+
+# The Sevenfold Body — Seats, Trustees, and Gems
+
+> A recurring structure across the vault's syncretic systems: a **body of seven**, each member holding **one scoped piece** of a distributed whole — a seat, a key, a gem. The drama is always *what happens at the seats*: held in service, **usurped and hoarded**, or **reassembled by the rightful heir.**
+
+> **Provenance & scope.** ⚠️ The ASOIAF half is grounded (→ the Small Council node). **Deltora (Emily Rodda) and *Keys to the Kingdom* (Garth Nix) are NOT yet in the vault's `FANDOM-CANON-RULESYSTEMS` registry** — this node *introduces* them as comparative material, drawn from **source canon and flagged for verification** (no web pass this turn). Tiers: **[canon-per-series]**, **[reading]**. Paraphrased; no source text reproduced.
+
+## Three sevens
+
+### 1. ASOIAF — the Small Council (seven *seats*)
+**[canon]** Seven non-hereditary **offices** under the king — Hand, Master of Coin, Master of Laws, Master of Ships, Master of Whisperers, Grand Maester, Lord Commander of the Kingsguard (→ the Small Council node). Authority distributed by **portfolio**; each seat scoped; all appointed by, and recallable by, the crown. (The realm's wider "seven" is the **Faith of the Seven** — one godhead, seven aspects.)
+
+### 2. Garth Nix, *Keys to the Kingdom* — the Seven *Trustees* (the Morrow Days)
+**[canon-per-series, ⚠️ verify]** The **Architect** (the absent creator) left a **Will** and divided the House among **seven Trustees**, one per day of the week, each entrusted with **one of the Seven Keys**, dominion over one **demesne**, and **a fragment of the Will** they were charged to execute. Instead, each **broke the trust** — hoarding its Will-fragment to keep its power, each corrupted by one of the **seven deadly sins**:
+
+| Trustee | Demesne | Sin *(⚠️ verify)* |
+|---|---|---|
+| **Mister Monday** | the Lower House | Sloth |
+| **Grim Tuesday** | the Far Reaches | Greed |
+| **Drowned Wednesday** | the Border Sea | Gluttony |
+| **Sir Thursday** | the Great Maze (the Army) | Wrath |
+| **Lady Friday** | the Middle House | Lust |
+| **Superior Saturday** | the Upper House | Envy |
+| **Lord Sunday** | the Incomparable Gardens | Pride |
+
+**Arthur Penhaligon**, the **Rightful Heir**, must reclaim the seven Keys and reunite the Will. *"Trustee"* is the load-bearing word: **delegated authority held in trust for the maker's Will** — and the seven betrayed it.
+
+### 3. Emily Rodda, *Deltora Quest* — the seven *Gems* of the Belt (and their guardians)
+**[canon-per-series, ⚠️ verify]** The **Belt of Deltora** bears **seven gems**, each a virtue/power: **diamond, emerald, lapis lazuli, topaz, ruby, opal, amethyst.** The Shadow Lord scattered them across **seven guarded perils** (the Forests of Silence, the Lake of Tears, the City of the Rats, the Shifting Sands, Dread Mountain, the Maze of the Beast, the mountain of the diamond). Only the **rightful heir** can reassemble the Belt to restore the kingdom — the seven gems are **distributed tokens of legitimacy**, each won from a guardian.
+
+## The shared shape
+
+| System | The seven are… | Held under | The dramatic engine |
+|---|---|---|---|
+| **Small Council** | **offices** (portfolios) | the **King** | a seat well-held vs. a Hand who rules in the king's name |
+| **Keys to the Kingdom** | **Trustees** (Keys + Will-fragments) | the **Architect** / the **Will** | the trust **betrayed** — hoarded, unrelinquished |
+| **Deltora** | **gems** (virtues) | the **rightful heir** / the Belt | the tokens **scattered**, then **reassembled** to prove legitimacy |
+
+## The vault mapping — why this is the spine, not trivia
+
+**[reading]** The sevenfold body is a **machine for distributing authority across scoped holders**, and every failure mode the vault polices lives in it:
+
+- **The Architect + the Will = Emanationism.** Nix's structure is the vault's own grammar with the serial numbers barely filed off: an **Architect** (the maker — and the vault's GM is literally *"the Architect holds the verdict"*) whose **Will** is the testament all delegated power must serve. Authority flows **from the Will, in trust, scoped** — exactly `EMANATIONISM-PRINCIPLE`.
+- **The Trustee who hoards = the Lich.** A Trustee charged to *execute* the Will but who instead **clings to its fragment to persist** is unauthorized persistence in its purest form — `LICH-PROBLEM`, and kin to the **Lich-Hand** (the executor that won't relinquish a commission). Seven seats, seven possible Liches; each corrupted by its own besetting sin.
+- **Recallability vs. usurpation.** A Small Council seat is lawful because the crown can **recall** it; a Trustee became monstrous because no one could. Same test as everywhere (→ the Severed-Hand convergence).
+- **Reassembly by the rightful heir = legitimacy restored.** Deltora is the redemptive pole: the scattered tokens, made whole by the *true* claimant, confer rightful rule — the opposite of the seized mask.
+- **Nix appears twice.** The vault already runs on Nix's **Old Kingdom** (the **Charter** vs Free Magic). *Keys to the Kingdom* gives the same author's second word for it — the **Will** and its **Trustees** — so "the Charter/the Will" is a through-line across Nix, and the **Abhorsen** (the vault's lawful-endings office) and the **Rightful Heir reclaiming the Keys** are two faces of restoring a betrayed order.
+
+## What this does / does not do
+
+Introduces a cross-system **concept** (like the Mage, Wights, and Stylings nodes) and proposes Deltora + *Keys to the Kingdom* as candidates for the `FANDOM-CANON-RULESYSTEMS` registry. ⚠️ Their specifics are **source-canon-from-memory, flagged for a verification pass**; the ASOIAF half is grounded. Adds no doctrine; the Architect holds the verdict.
+
+## Cross-references
+
+`[[RESEARCH_A-Song-of-Ice-and-Fire-The-Small-Council-2026-06-03]]` · `[[FANDOM-CANON-RULESYSTEMS-2026-05-03]]` · `[[!/EMANATIONISM-PRINCIPLE-2026-05-18]]` · `[[!/LICH-PROBLEM-v1-2026-05-20]]` · `[[LICH-HAND-SYNCRETIC-MAPPINGS-2026-06-02]]` · `[[SEVERED-HAND-CONVERGENCE-2026-06-02]]` · `[[RESEARCH_A-Song-of-Ice-and-Fire-Religions-2026-06-01]]` (the Faith of the Seven) · the Old Kingdom / Charter material in `[[!/NECROMANCER-DOCTRINE-v1-2026-05-20]]`
+
+---
+
+###### [["The world is quiet here."]]
