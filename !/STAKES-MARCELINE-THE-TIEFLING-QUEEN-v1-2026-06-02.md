@@ -25,7 +25,10 @@ Syncretic — a diagnostic framework, not a simulation. Claims marked **[canon]*
 > tiefling is the base she was **born** with. The base is what made her able to
 > take the layer. Read the two apart.
 
-## The base — the tiefling **[canon]**
+## The base — half-demon **[canon]**, framed as "tiefling" **[mapping]**
+
+*(The half-demon heritage is canon; **"tiefling"** is the vault's D&D label for it,
+not Adventure Time canon. Each claim below carries its own tag.)*
 
 - **[canon]** Marceline is **half-demon, half-human**: daughter of **Hunson
   Abadeer**, the demon lord who rules the Nightosphere, and a human woman,
