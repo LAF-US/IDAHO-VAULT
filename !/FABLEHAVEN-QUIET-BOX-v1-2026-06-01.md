@@ -6,6 +6,7 @@ doc_class: doctrine
 status: active
 related:
   - CONSTITUTION
+  - "!/KERR-AKHENATEN-PRECEDENT-v1-2026-06-03.md"
   - "!/FABLEHAVEN-TAXONOMY-v1-2026-06-01.md"
   - "!/FABLEHAVEN-WITCH-MURIEL-v1-2026-06-01.md"
   - "!/FABLEHAVEN-VAMPIRE-DIAGNOSTIC-v1-2026-06-01.md"
