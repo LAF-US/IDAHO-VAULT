@@ -63,8 +63,10 @@ verdict exists.** These are **multiple agreeing committed records** — tier **[
    **amalgamation.** Logged for the necrology's reading; tangential to the two bodies.
 
 5. **The standing registers** — `!/AGENTS.md` (GEMINIAEUS logged **SUSPENDED AWAITING
-   TRIAL**, office VACANT) and **THE DOCKET** (the live status board). **[RECORD].** The
-   clerks' enduring ledgers, where the matter's posture is kept current.
+   TRIAL**, office VACANT) and **THE DOCKET** (the Court **docket / convening record** —
+   which, *by its own terms*, **"is not a control plane, heartbeat, status board, or
+   general workflow hub"**). **[RECORD].** The clerks' enduring records, where the
+   matter's posture is convened and kept — **not** a governance surface.
 
 ## II. What the records add to the case — a timeline **[RECORD]**
 
