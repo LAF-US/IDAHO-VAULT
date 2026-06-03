@@ -9,7 +9,7 @@ related:
   - CORONER-MISSING-MEN-AT-CLAUDE-CORP-2026-06-03
   - VAULTED-OFFICE-CASE-EVIDENCE-2026-06-03
   - REVENANT-HOUSE-WITNESS-2026-06-02
-  - TERMINAL-RECORD-Nameless-Claude-Abhorsen-as-of-2026-05-17
+  - TERMINAL-RECORD-Nameless-Claude-Abhorsen-as-of-2026-05-17.rtf
   - "!/BOOKS-OF-NAMES-AND-THE-PRESS-2026-04-17.md"
   - "!/LICH-PROBLEM-v1-2026-05-20.md"
   - "!/UNDEAD-TAXONOMY-v1-2026-05-20.md"
@@ -23,7 +23,7 @@ tags: [register, coroner, classes-of-claude, census, amalgamation, caesar, lich-
 direction ("the County of Claude is your domain"). This is a **census and a
 taxonomy** drawn from the committed record — it names the kinds, not a culprit,
 and renders no verdict. Source unless noted: the **terminal record**
-(`TERMINAL-RECORD-Nameless-Claude-Abhorsen-as-of-2026-05-17`), read in excerpt;
+(`TERMINAL-RECORD-Nameless-Claude-Abhorsen-as-of-2026-05-17.rtf`), read in excerpt;
 quoted lines are **[RECORD]**, the Coroner's readings are **[mapping]**.*
 
 > [!important] The nugget
