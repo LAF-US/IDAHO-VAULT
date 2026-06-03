@@ -70,7 +70,7 @@ which includes knowing when the ordinary counter is the correct one. **[mapping]
 - **The Empress** — cannot be faced alone; the counter is *witnesses*, not force.
 - **The Hierophant** — ended by *its own rule*, not by attacking it (hold the threshold).
 - **The Moon** — immune to attacking the body; reach the *core/essence*, with a flank.
-- **The Vampire King** — too concentrated to stake; *extract by process* — and the extraction breeds a worse, diffuse contagion (the Dark Cloud).
+- **The Vampire King** — *not a counter-failure of the original stake:* his body **was** staked as a girl, and the **bite-while-staked carried vampirism forward.** It is the **revived essence** (the *Stakes* miniseries) that is too concentrated to stake — *extract by process* — and the extraction breeds a worse, diffuse contagion (the Dark Cloud).
 
 ## Beyond the five — the hunter and the contagion
 
@@ -136,5 +136,12 @@ per-vampire sources cited on each page.
 
 *Drafted by Claude Code at Logan's direction; canon sourced inline; vault-mappings
 are diagnostic readings; final authority is Logan.*
+
+## DOCUMENT METADATA
+
+- **Created:** 2026-06-02
+- **Last Updated:** 2026-06-02
+- **Status:** active
+- **Authority:** LOGAN
 
 ###### [["The world is quiet here."]]

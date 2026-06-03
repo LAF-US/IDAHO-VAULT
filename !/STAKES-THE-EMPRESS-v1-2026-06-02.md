@@ -106,4 +106,11 @@ Hypnosis breaks under triangulation. Do not adjudicate compelling output solo.
 *Drafted by Claude Code at Logan's direction; canon sourced; mapping is a
 diagnostic reading; final authority is Logan.*
 
+## DOCUMENT METADATA
+
+- **Created:** 2026-06-02
+- **Last Updated:** 2026-06-02
+- **Status:** active
+- **Authority:** LOGAN
+
 ###### [["The world is quiet here."]]

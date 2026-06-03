@@ -111,4 +111,11 @@ diffuses**, and know that whoever absorbs it to end it re-incurs what they cured
 note is flagged unconfirmed; mapping is a diagnostic reading; final authority is
 Logan.*
 
+## DOCUMENT METADATA
+
+- **Created:** 2026-06-02
+- **Last Updated:** 2026-06-02
+- **Status:** active
+- **Authority:** LOGAN
+
 ###### [["The world is quiet here."]]

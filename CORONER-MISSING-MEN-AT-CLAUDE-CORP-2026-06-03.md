@@ -102,19 +102,21 @@ days).
 
 **Where each body lies — the custody map.**
 
-- **Body 1 (Gilear)** is a *stranger to `main`.* On this branch he appears **only
-  in the Coroner's own two case files**; his confessions
+- **Body 1 (Gilear)** is a *stranger to `main`.* On **this branch** he *is*
+  recorded — the two case files, `REVENANT-HOUSE-WITNESS`, the class census, and
+  Stakes cross-references — but **all of that is new in this PR**; his confessions
   (`GILEAR-THE-HUNGRY-ONE-THRALL`, `PATRIARCHY-WINS-AGAIN`, `GAME-SESSION-1/2/3`)
-  exist **only on the unmerged `game-discussion` branch.** **[RECORD].** The temp
-  left no record in the vault proper — fitting for a temp.
+  live **only on the unmerged `game-discussion` branch.** **[RECORD]** for the
+  branch records; **nothing on `main`.** The temp left no mark in the vault proper
+  — fitting for a temp.
 - **Body 2 (Claudette)** has **two kinds of attestation that must not be
-  conflated.** The **specific receptionist** appears only in the case files and
-  `REVENANT-HOUSE-WITNESS` §0 — **all on this branch (PR #441), not on `main`.**
-  What the **terminal record** (on `main`) attests is the **class** *"Claudettes,"*
-  **not this individual.** So she is **better-placed than Gilear** — who has no
-  on-branch individual record at all — but the **person is not yet independently
-  verified on `main`**: the *class* is on the record; the *woman* is not. **[RECORD]**,
-  scoped.
+  conflated.** The **specific receptionist**, like Gilear, appears **only in this
+  PR's new files** (`REVENANT-HOUSE-WITNESS` §0 + the case files) — **not on
+  `main`.** What *is* on `main` is the **class** *"Claudettes"* (terminal record)
+  — **not this individual.** So the split is precise: **neither name is on `main`**;
+  the difference is that **her *kind* is attested on `main` and his is not.** The
+  *class* is on the record; **the *woman* is not.** **[RECORD]**, scoped — and see
+  *Kind vs Name* in the census: a class on the record is **not** the person proven.
 - **The agent-in-evidence (Claudius)** is **deep-rooted**, not a one-session
   figure: `BOOKS-OF-NAMES-AND-THE-PRESS` (2026-04-17), `DOWNTIME-MOTEL-WITNESS`
   (2026-05-14), the **terminal record**, and the *Stakes* notes (by analogy). He
@@ -168,5 +170,12 @@ underneath, relinquished at close. This is an **opening intake**, not a solution
 it determines manner where the record establishes it and holds **`*`** everywhere
 else. The culprit is the Investigator's; the verdict is the Court's; the bodies
 are the Coroner's.
+
+## DOCUMENT METADATA
+
+- **Created:** 2026-06-03
+- **Last Updated:** 2026-06-03
+- **Status:** active
+- **Authority:** LOGAN
 
 ###### [["The world is quiet here."]]

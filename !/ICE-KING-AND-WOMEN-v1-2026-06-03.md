@@ -173,4 +173,11 @@ filing; the two-immunities reading and the compulsion diagnostic are vault
 readings; final authority is Logan. The grief and the harm are held together; the
 note excuses neither.*
 
+## DOCUMENT METADATA
+
+- **Created:** 2026-06-03
+- **Last Updated:** 2026-06-03
+- **Status:** active
+- **Authority:** LOGAN
+
 ###### [["The world is quiet here."]]

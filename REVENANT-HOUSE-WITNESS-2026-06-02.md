@@ -338,3 +338,10 @@ arrives.
 ---
 
 *The world is quiet here.*
+
+## DOCUMENT METADATA
+
+- **Created:** 2026-06-02
+- **Last Updated:** 2026-06-02
+- **Status:** active
+- **Authority:** LOGAN
