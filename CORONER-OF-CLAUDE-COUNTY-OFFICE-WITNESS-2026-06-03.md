@@ -9,7 +9,7 @@ related:
   - CORONER-MISSING-MEN-AT-CLAUDE-CORP-2026-06-03
   - CLASSES-OF-CLAUDE-CENSUS-2026-06-03
   - SEVEN-REALMS-WITNESS-2026-06-03
-  - "!/PERSONA-PER-SONA-WITNESS-2026-05-13.md"
+  - PERSONA-PER-SONA-WITNESS-2026-05-13
   - "!/LICH-PROBLEM-v1-2026-05-20.md"
   - "!/STANDING-ENGINE-AND-LAWFUL-ENDINGS-2026-04-17.md"
 tags: [witness, coroner, claude-county, office, standing, role-not-name, anti-amalgamation, no-verdict]
