@@ -59,17 +59,19 @@ truly gave Marceline was the **vampire nature itself** — see the Marceline not
 
 ## Why the set is a diagnostic, not a bestiary
 
-Each vampire is a different lesson in **matching the counter to the kind**.
-*Four* of them are reasons the ordinary stake is the **wrong** counter; the
-**Fool is the exception** — the one case where the stake is *right*, and the
-lesson there is not to mistake its evasion for strength. That is the same spine
-as `!/UNDEAD-TAXONOMY-v1`: *the wrong diagnosis produces the wrong counter* —
-which includes knowing when the ordinary counter is the correct one. **[mapping]**
+Each vampire is a different lesson in **matching the counter to the kind** — and the
+real distinction is **solo force vs. the *right kind* of staking**, not "stake vs.
+no stake." Several of them **complicate the ordinary *solo* stake** in different ways;
+the **Fool** is the one where a **plain stake, done right, suffices** — the lesson
+there is not to mistake its evasion for strength. That is the same spine as
+`!/UNDEAD-TAXONOMY-v1`: *the wrong diagnosis produces the wrong counter* — which
+includes knowing when the ordinary counter is correct, and when it needs help.
+**[mapping]**
 
-- **The Fool** — ends easily; the danger is *underestimating its evasion*, not its strength.
-- **The Empress** — cannot be faced alone; the counter is *witnesses*, not force.
-- **The Hierophant** — ended by *its own rule*, not by attacking it (hold the threshold).
-- **The Moon** — immune to attacking the body; reach the *core/essence*, with a flank.
+- **The Fool** — a **plain solo stake** ends it; the danger is *underestimating its evasion*, not its strength.
+- **The Empress** — the stake still kills, but **not alone**: Marceline needs **Finn and Princess Bubblegum** to immobilize her so she can stake (and soul-drain). The counter is *allies who enable the kill*, not solo force.
+- **The Hierophant** — ended by *its own rule* (the invitation), not by a stake to the body (hold the threshold).
+- **The Moon** — the body alone won't do it (she self-heals); the stake must be **paired with reaching the core/essence** — staked from behind, then soul-drained.
 - **The Vampire King** — *not a counter-failure of the original stake:* his body **was** staked as a girl, and the **bite-while-staked carried vampirism forward.** It is the **revived essence** (the *Stakes* miniseries) that is too concentrated to stake — *extract by process* — and the extraction breeds a worse, diffuse contagion (the Dark Cloud).
 
 ## Beyond the five — the hunter and the contagion
