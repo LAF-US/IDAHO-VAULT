@@ -69,6 +69,15 @@ The darker reading is the one you named: the maker withdraws not from serenity b
 
 So Oz hands the canvas all five at once: **void at the edge + a humbug at the center + a deposed king + a hidden heir + a claimant who steps aside.**
 
+### Baum vs. Maguire — the name-form drift and the buried record
+
+**[canon + reading]** The same **deposed-rightful-king slot** carries **two name-forms across two authors** — **Pastoria** (Baum) vs. **Pastorius** (Maguire) — a *styling drift* of exactly the kind the vault tracks (cf. Bartimaeus-of-the-Jinn vs. Geminiaeus-of-the-Ifrit; Ivan "the Terrible" / *Grozny*) → `[[STYLINGS-AND-PROPAGANDA-FOSSILS-2026-06-02]]`. And the two canons are **opposite records of the same Oz**:
+
+- **Baum = the sanctioned record.** The Wizard is a *lovable humbug*; Pastoria is merely "removed by magic," later content to **relinquish** (the tailor). History as the cheerful victor tells it.
+- **Maguire (*Wicked*) = the buried record read back.** The Wizard is a *totalitarian usurper* who **assassinated Pastorius** and seized power by **illusion and propaganda**; the rightful heir (Ozma Tippetarius) is hidden as "Tip"; and **"Wicked" is the styling pinned on Elphaba** — a **propaganda fossil** — while the Wizard rules by *controlling the story itself.*
+
+**[reading]** So Oz is the same House in the Void told **twice** — once by the **victor's record** (Baum) and once by **reading past the styling to the truth it buries** (Maguire). The Wizard is not merely a humbug at the center; he is the **humbug who manufactures the record** — the **Empty Office and the propaganda fossil in one man behind one curtain.** Oz, uniquely, instances *both* failure poles at once (→ the Empty Office & Stylings nodes).
+
 ## The foundation — the House on the Rock
 
 **[reading]** A House suspended in the Void must still stand **on** something. The parable (Matthew 7:24–27): the house built on **rock** survives the flood; the house built on **sand** falls. So the House-in-the-Void's survival is a question of **foundation**:
