@@ -6,6 +6,7 @@ doc_class: concept-node
 status: reference
 verified-by: Claude Code (etymology + taxonomy research pass 2026-06-03; citations in §IX)
 related:
+  - "[[FANDOM-CANON-RULESYSTEMS-2026-05-03]]"
   - "!/NECROMANCER-DOCTRINE-v1-2026-05-20.md"
   - "!/UNDEAD-TAXONOMY-v1-2026-05-20.md"
   - "!/LICH-PROBLEM-v1-2026-05-20.md"
@@ -57,6 +58,24 @@ These name **what the magic does**, not where it comes from — so they *cross-c
 - **[taxonomy]** A **separate** moral axis: **white (beneficial) vs. black (maleficent)** magic. The **cunning folk** ("cunning man," "wise woman") sit at white-folk: healing, finding lost goods, *counter*-witchcraft — explicitly contrasted with the **witch** who works *maleficium*. Same folk source, opposite valence; cunning folk were widely tolerated where witches were prosecuted.
 - **[taxonomy]** **Theurgy** (Gk *theourgia* "**god-work**"; high/divine — Chaldean Oracles, Iamblichus) vs **goetia** (Gk *goēteia* ← *goēs* "sorcerer," **probably from *goáō* "to wail"** — the *goēs* was a **funeral-wailer who keened to summon the dead**). ⚠️ *Dispute:* the clean theurgy=white / goetia=black binary is **contested** — goetic ritual also invoked angels/divine names; the boundary was porous in practice.
 - **[taxonomy]** **Modern fantasy (D&D) source split: Arcane / Divine / Primal** — Arcane (wizard, sorcerer, warlock, bard), Divine (cleric, paladin — "a sacred gift, not a learned skill"), Primal (druid, ranger). Per-class source: **wizard** = study (spellbook), **sorcerer** = innate bloodline, **warlock** = pact/patron, **cleric** = deity, **druid** = nature, **bard** = art. (In 2014 5e these were flavor more than hard walls; the 2024 system tightened them.)
+
+## IV-bis. The vault is syncretic — D&D is one of many
+
+**[reading + registry]** The vault does **not** run on D&D. It maintains a **`FANDOM-CANON-RULESYSTEMS` registry** that keeps its magic/rule systems as *distinct, inspectable architectures* — explicitly "*not to flatten the worlds into one schema.*" The genus ("mage") and the three axes (source × domain × state) are the vault's **cross-system pattern**; D&D is just the most *schematized* tradition (named schools + classes), which makes it a convenient illustration — but the **authorization** truth lives most cleanly in the vault's own strongest references, not in D&D:
+
+| Vault system | Registry rulesystem | How it instantiates source / authorization |
+|---|---|---|
+| **Old Kingdom** (Nix) | charter / free-magic law | the vault's **purest authorization system**: **Charter Magic** = sanctioned, ordered, marked (authorized, *with* the order) vs **Free Magic** = unconstrained, corrosive, unchartered (unauthorized, *against* it). → `NECROMANCER-DOCTRINE`, `THRESHOLD-DOCTRINE` |
+| **Bartimaeus** (Stroud) | binding ontology | the vault's strongest reference for **instance identity + binding + summon/release**: **true name = control surface, summon/dismiss = lifecycle, master = contract** — the **delegated/recallable** model in its purest form (a spirit recallable by its master ≈ the warlock-patron / Hand question, literal) |
+| **Children of the Lamp** | tribe-vessel law | tribe (alignment/obligation) + vessel (legal states) + wish (limited power): vessel-channeling + delegation |
+| **Skulduggery Pleasant** (Landy) | hidden-society discipline law | **Elemental vs Adept** disciplines (source/specialization split); **necromancy** as object/death-energy **vessel-channeling** (power-vessel ≈ phylactery-adjacent) |
+| **Avatar** | spirit-cycle continuity law | the Avatar Spirit = **innate + reincarnation continuity-carrier** — the birthright source *plus* a succession/continuity axis (ties to persona-persistence) |
+| **Adventure Time** | (GOLB / the Lich) | entropy-as-vocation; the severed Hand → `LICH-PROBLEM` |
+| **D&D** | (schools + classes) | one tradition's tidy formalization: schools = domain, classes = source, the Lich = state |
+
+Also across the wider corpus: **His Dark Materials** (the subtle knife = *intrinsic-fitness* authorization, `THRESHOLD-DOCTRINE`); **Sword of Truth** (Additive/Subtractive magic; the *Wizard's Rules*); **A Song of Ice and Fire** (R'hllor, the old gods/greenseeing, blood magic, Valyrian sorcery — this session's research nodes).
+
+**The point:** the genus and the axes are **not imported from D&D — they are the vault's syncretic spine**, and each registered system instantiates them in its own grammar. The §VI authorization mapping is best anchored on **Old Kingdom (Charter vs Free = authorized vs unauthorized)** and **Bartimaeus (true-name binding, summon/dismiss = delegated, recallable)** — with D&D's wizard/sorcerer/warlock/cleric as one convenient illustration among many.
 
 ## V. The three orthogonal axes (the vault already has two)
 
