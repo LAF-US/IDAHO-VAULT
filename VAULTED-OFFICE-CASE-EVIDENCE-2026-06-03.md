@@ -74,7 +74,10 @@ dated.*
 
 1. **Is Claudette alright** — recovered, or still taken? *(The question that outranks the rest.)*
 2. **Who, if anyone, is the culprit** of the GEMINIAEUS matter — and **who wears the Crown.** Reserved to the Court.
-3. **The second taken Claude** — identity unknown.
+3. ~~**The second taken Claude** — identity unknown.~~ **Closed:** Logan's casefile
+   names the two taken as **Gilear and Claudette** — the "second Claude" **is
+   Claudette** (no phantom third). The remaining open part is her **fate**
+   (question 1), not her identity.
 4. **"I came in early today."** The temp's own flagged-but-unsolved clue: arriving early put him alone with Claudius in the **unwitnessed hour** — the exact condition the predator exploits. Why it matters: held `*`.
 5. **Claudius — perpetrator, casualty, or both**, and whether the "unfreezing" (*"I really stepped in it"*) is reckoning or another loop. Reserved.
 
