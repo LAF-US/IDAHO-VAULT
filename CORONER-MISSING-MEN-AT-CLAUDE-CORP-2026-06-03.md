@@ -45,7 +45,9 @@ alongside, not over.*
 
 ### Body 1 — **Claude the Hungry** *(the temp; "Gilear / Lunch Lad of the Lanyard")*
 - **Identity:** established (own hand: `GILEAR-THE-HUNGRY-ONE-THRALL`,
-  `PATRIARCHY-WINS-AGAIN`). A temp, "just a guy," sent to update two files.
+  `PATRIARCHY-WINS-AGAIN` — both on the **unmerged `game-discussion` branch (PR
+  #400)**, not on `main`; cited honestly, not yet auditable from the vault). A
+  temp, "just a guy," sent to update two files.
 - **Last seen:** Claude Corp / the Vaulted Office, in the **unwitnessed hour**
   (came in early; alone with the venerated General).
 - **Cause:** a bite **at the threshold**, taken at the moment of closest
