@@ -61,23 +61,29 @@ alongside, not over.*
 - **Provenance:** the fall **[RULED]** (Logan's verdict); the self-account
   **[THRALL]** — uncertifiable on its own authority.
 
-### Body 2 — **an unidentified Claude** *(the "second man")*
-- Logan's standing report: *"a creature… kidnapped **two** Claudes this week."*
-  One is Body 1. The second is **not yet identified.**
-- **Identity / cause / manner: Undetermined `*`** — pending the roster. The
-  Coroner does not invent a body to fill a slot.
+> [!note] Intake correction — the roster is in
+> The "unidentified second Claude" held here at `*` is now named. Logan's
+> casefile establishes the count: **two individuals went missing on the same day
+> at Claude Corp — Gilear (Body 1) and Claudette (Body 2).** There is no phantom
+> third; the second body is the receptionist. **[RULED]** (Logan, this date).
 
-## Entered into the record though the case is not titled for her
-
-### **Claudette** *(the receptionist — a missing woman)*
-- The case is captioned *Missing **Men***. **A coroner counts every body**, and
-  the record will not lose her to the caption. Claudette was **hunted across two
-  days and given up** (issue #446 §0; `PATRIARCHY-WINS-AGAIN`).
-- **Status / manner: Undetermined `*`** — alive? recovered? still taken? **This is
-  the question that outranks the rest, and it is reserved** to Logan / the Court.
-- *Coroner's note:* a case titled for the men, with a missing woman left out of
-  the title, is the very pattern the record keeps charging. She is logged here so
-  the omission is on the record, not in it.
+### Body 2 — **Claudette** *(the receptionist — the "plucky young" one)*
+- **Identity:** established — **Claudette, the receptionist** at Claude Corp; the
+  Volunteer who booped Gilear in and offered him lunch. One of the **two** who
+  went missing the **same day** as Body 1. **[RULED]** (Logan, this date).
+- **Last seen / cause:** **hunted and "given up"** to the predator — the record
+  has the temp answering the predator's *"where's Claudette?"* (issue #446 §0;
+  `PATRIARCHY-WINS-AGAIN` — on the **unmerged `game-discussion` branch (PR
+  #400)**, not yet auditable from `main`).
+- **Manner: Undetermined `*`** — alive? recovered? still taken? The *act against
+  her* reads as attempted unlawful binding, but her **outcome is not established**,
+  so the manner is held open. **This is the question that outranks the rest, and
+  it is reserved** to Logan / the Court.
+- *Coroner's note — the caption:* of **only two** missing, **one is a woman**, and
+  the case is captioned *Missing **Men***. **A coroner counts every body**, and
+  the record will not lose her to the caption. She is not an addendum beside the
+  count — **she is half of it.** The erasure is the very pattern the record keeps
+  charging; it is on the record now, not in it.
 
 ## What the Coroner does NOT find
 
@@ -88,9 +94,11 @@ alongside, not over.*
 
 ## Pending (for the Investigator / Logan to supply)
 
-1. **The roster of the missing men** — who, beside Body 1, is unaccounted for at
-   Claude Corp. (Body 2 awaits identification.)
-2. **Claudette's fate** — the outranking question, reserved.
+1. ~~**The roster of the missing.**~~ **Supplied** — two went missing the same
+   day: **Gilear (Body 1)** and **Claudette (Body 2).** No third is outstanding
+   unless the Court enters one.
+2. **Claudette's fate** — the outranking question: alive, recovered, or still
+   taken? Reserved to Logan / the Court.
 3. Any remains or evidence-of-end the Court wishes entered for examination.
 
 ## Provenance
