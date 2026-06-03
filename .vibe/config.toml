@@ -1,4 +1,4 @@
-active_model = "devstral-2"
+active_model = "mistral-medium-3.5"
 vim_keybindings = false
 disable_welcome_banner_animation = false
 autocopy_to_clipboard = true
@@ -58,11 +58,11 @@ region = ""
 [[models]]
 name = "mistral-vibe-cli-latest"
 provider = "mistral"
-alias = "devstral-2"
-temperature = 0.2
-input_price = 0.4
-output_price = 2.0
-thinking = "off"
+alias = "mistral-medium-3.5"
+temperature = 1.0
+input_price = 1.5
+output_price = 7.5
+thinking = "high"
 auto_compact_threshold = 200000
 
 [[models]]
@@ -132,18 +132,19 @@ sensitive_patterns = []
 permission = "ask"
 allowlist = [
     "cd",
+    "dir",
     "echo",
+    "find",
+    "findstr",
     "git diff",
     "git log",
     "git status",
-    "tree",
-    "whoami",
-    "dir",
-    "findstr",
     "more",
+    "tree",
     "type",
     "ver",
     "where",
+    "whoami",
 ]
 denylist = [
     "gdb",
