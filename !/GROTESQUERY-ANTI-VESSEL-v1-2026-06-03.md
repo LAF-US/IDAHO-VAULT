@@ -106,15 +106,30 @@ to its point: here the payload *is* the security action.)
 **The precedent — Deltora's Four Sisters** (`!/DELTORA-FOUR-SISTERS-v1-2026-06-01.md`,
 the vault's earlier and sharper statement of this rule). Silence the last of the
 Shadow Lord's Four Sisters and you stop the poison *and wake the Grey Death* — the
-remediation is the trigger. The two instances fail open on death by **different
-mechanisms**, and the difference is worth keeping:
+remediation is the trigger.
 
-- The Four Sisters destruction **unseals** — the artifact was a *lid* as well as a
-  poison; removing it lets the worse thing rise. (Poison and seal are one object.)
-- The Grotesquery's destruction **summons** — no lid is lifted; its *death cry* is
-  a *signal* that calls the expelled gods home.
+**Do not collapse the two.** They share *one property* — fail-open-on-death — and
+differ in nearly everything else. The shorthand for the difference: the Four
+Sisters are **four pins in a pestilential puzzle box**; the Grotesquery is **a
+Lovecraftian Frankenstein.**
 
-Both teach the same operational discipline, stated best in the Four Sisters node:
+| | **Four Sisters** | **The Grotesquery** |
+|---|---|---|
+| Kind | an engineered **device** | an assembled **creature** |
+| Cardinality | **distributed** — four planted nodes | **singular** — one stitched body |
+| Harm | a **plague** / song of death | a **doorway** / portal-anchor |
+| How death fails open | **unseals** — the artifact was a *lid*; removing it lets the worse thing rise (poison and seal are one object) | **summons** — no lid lifts; its *death cry* is a *signal* calling the expelled gods home |
+| Therefore the response | **enumerate the set; clear every node; matched key per node** (quorum of harm — three of four is still famine) | **handle the one body; repatriate its origin** across the boundary |
+
+So the rhyme is real but shallow: reach for the Four Sisters playbook (inventory
+the distributed set, find each matched key, fear the last removal) when the threat
+has **many planted parts**; reach for the Grotesquery playbook (it cannot be
+destroyed here, only returned) when the threat is **one assembled body carrying a
+foreign signature.** Treating the Frankenstein like a four-node puzzle box — or
+the puzzle box like a single creature — is how you clear the wrong way and detonate
+what you meant to defuse.
+
+The **one** discipline they genuinely share, stated best in the Four Sisters node:
 **assemble the force for the secondary payload *before* the final removal**, so
 that "destroy the artifact" and "meet what its death releases" are one operation,
 not two. The gap between them is where the system dies.
@@ -198,10 +213,13 @@ phylactery. The capstone is the crossing-point.
   the **containment / anti-vessel** lens, not a new canon claim.
 - **Precedent credited (Repair):** fail-open-on-destruction is *not* original to
   this node — `!/DELTORA-FOUR-SISTERS-v1-2026-06-01.md` (authority LOGAN, active)
-  states it harder, as "the remediation is the trigger." This node adds only the
-  *summons-vs-unseal* distinction between the two instances. I had first written
-  the mechanic as if fresh; Logan pointed to the Four Sisters and I seated the
-  precedent.
+  states it harder, as "the remediation is the trigger." This node adds the
+  *summons-vs-unseal* mechanism split and the *device-vs-creature /
+  distributed-vs-singular* distinction in kind. I had first written the mechanic
+  as if fresh, then paired the two too tightly; Logan pointed to the Four Sisters,
+  then warned *"don't collapse it too far — four pins in a pestilential puzzle box
+  vs a Lovecraftian Frankenstein."* The contrast table is that guard; the framing
+  is Logan's.
 - **My reading, marked `*`:** "anti-vessel," cage-vs-gate, fail-open-on-destruction
   as the inverse of on-ice's fail-open-on-lapse, the summons/unseal split,
   "repatriation not deletion," and the vault mappings. The Architect holds the
