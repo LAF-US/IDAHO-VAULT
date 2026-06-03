@@ -98,17 +98,54 @@ no line and no you. *Ungrippable is not principled.*
 ## The cure was not another princess — canon
 
 **[canon]** The loop did **not** end by feeding the displacement (more princesses
-never healed it). It ended only when the **curse was lifted and the real object
-returned**: in *"Come Along with Me,"* **Betty** harnesses **GOLB** to free Simon
-from the crown — at the cost of **merging with GOLB herself** (GOLBetty). Simon is
-restored; Betty is gone into the thing that saved him. (See `!/GOLB-WITNESS-v1`.)
+never healed it). In *"Come Along with Me,"* Simon, Betty, and Finn are
+**swallowed by GOLB** and reduced to their **essential forms** — and *that
+digestion* is what **strips the crown's hold and returns the Ice King to Simon.**
+The curse is lifted by being **unmade**, not by being satisfied.
+
+**[canon]** **Betty's sacrifice is a separate, later beat — not the cure
+mechanism.** Inside GOLB she finds the **crown has also reverted to essential
+form**, so it will grant the **truest wish of the first to wear it.** She wears
+it, fails to wish GOLB away, then wishes to **protect Simon at all costs**; her
+truest wish takes, and she **fuses with GOLB (GOLBetty)**, sacrificing herself.
+The digestion *freed* him; Betty's wish *protects* him. (See `!/GOLB-WITNESS-v1`.)
 
 **[mapping]** The diagnostic close: **you do not resolve a displaced compulsion by
-satisfying the displacement.** Give the loop another substitute and it runs
-forever. It ends only by **removing the curse** (the thing eating the mind) and
-**facing the real loss** — restoration or grief, not more of the substitute. And
-the cure here cost the beloved everything: some wounds are healed only by a price
-paid by the one who was lost.
+satisfying the displacement** — give the loop another substitute and it runs
+forever. It ends only by **removing the curse**, and note *how*: the crown was not
+bargained with or fed, it was **taken out and unmade** by a force that reduced
+everything to essence. Keep the two layers distinct — the **curse over the mind**
+(the crown) and the **wound under it** (the lost Betty) are separate reckonings;
+and here the beloved paid her own price in a **separate act of love,** not as the
+machinery of the cure.
+
+## Third angle — Prismo, and chaos as a hiding place
+
+**[canon]** A third party did to the crazybrains what the Empress could not.
+**Prismo** the wish-master, bored of granting *others'* realities and **barred by
+the cosmological rules from creating one of his own**, made the **Fionna & Cake
+universe** anyway — and **hid it inside the Ice King's empty, insane mind**
+("out of sight, out of mind," literally), beamed in while Simon was the Ice King.
+A forbidden creation, stashed in the one mind no one would audit. And it
+**leaked**: the Ice King, sensing it, unknowingly poured it into his **Fionna &
+Cake fan-fiction** — the hidden thing surfacing as a symptom.
+
+**[mapping]** This is the **inverse of the Empress**, and the sharp third lesson:
+
+- The Empress tried to **control** the crazybrains (deepen the thrall) and
+  **failed** — chaos is immune to *capture*; there is nothing coherent to bind.
+- Prismo **exploited** them and **succeeded** — chaos is **not** immune to *use.*
+  You cannot *own* a broken mind, but you can **hide things in it**, precisely
+  *because* it is broken: unsearched, deniable, "out of mind," able to hold what
+  the rules forbid.
+
+So **insanity is immune to compulsion but not to exploitation** — and the most
+dangerous exploit is not control, it is **cover.** The incoherent, unaudited
+surface is exactly where a forbidden thing gets stashed to evade oversight (cf.
+`!/LICH-PROBLEM` — the phylactery hidden where no one thinks to look). And **what
+is stashed in chaos leaks out as its symptoms:** you read the hidden cargo by the
+strange, insistent things the broken mind keeps producing. The crazybrains can't
+be *seized* — but they can be made a *vault*, and the vault talks in its sleep.
 
 ## Diagnostic Questions
 
@@ -118,6 +155,9 @@ paid by the one who was lost.
    **absence** (too broken to be gripped)? Don't credit the second as the first.
 3. What is the **curse** still eating the mind — and what is the **real object**
    the loop has displaced? The cure addresses those, not the substitutes.
+4. Can the broken mind here be **exploited** even though it can't be
+   **controlled** — used as cover, a channel, a place to hide what oversight
+   forbids? Watch what it keeps producing; the hidden cargo leaks as symptoms.
 
 ## Sources
 
