@@ -88,10 +88,14 @@ Tribe for each gem.**
 - **[canon]** Etiquette (per Doran): **bow the head, stay still, greet politely
   using the gem-name** — *"dragon of the Topaz"* — **praise the territory, and ask
   permission to leave.**
-- **[canon]** The dragons were **hunted almost to extinction** at the Shadow Lord's
-  command — only **the last of each gem-kind survived.** In Series 3, **King Lief
-  wakes the surviving dragon of each gem with the Belt**, and the **dragons +
-  the Belt** are what destroy the Four Sisters and end the grey tide.
+- **[canon]** The dragons were **hunted almost to extinction** by the Shadow Lord's
+  **Ak-Baba**. **Six** gem-kinds endured in **enchanted sleep**, and King Lief
+  **woke them with the Belt** (and Doran's soul-stone memories), calling each **by
+  name.** The **Diamond is the exception**: its adult dragon was killed, but a
+  long-dormant **egg** survived in suspended animation — **baby Forta hatched** when
+  Lief brought it near the Diamond, then was **called by name** like the rest.
+  United, the **seven dragons + the Belt** destroy the Four Sisters and burn the
+  grey tide.
 
 **The seven dragons — and the virtue each name carries [canon] / [mapping]:**
 
@@ -103,7 +107,7 @@ Tribe for each gem.**
 | **Lapis Lazuli** (good fortune) | **Fortuna** *(midnight-blue scales, silver star-markings)* | *fortuna* — fortune |
 | **Emerald** (honour) | **Honora** | *honor* — honour |
 | **Amethyst** (truth) | **Veritas** *(deep purple scales)* | *veritas* — truth |
-| **Diamond** (strength) | **Forta** | *forte* — strength |
+| **Diamond** (strength) | **Forta** *(hatched anew from the egg; named for her slain mother)* | *forte* — strength |
 
 **[mapping]** The correspondence is total: **gem, tribe, land, dragon, and virtue
 are one kind** — and the **dragon's very name is the gem's virtue.** Fidelis *is*
@@ -135,8 +139,10 @@ This is why the Journey belongs beside the county's census:
    but the kinds **pulled back apart and rightly assembled** (cf. *Kind vs Name vs
    Role*, census).
 5. **Plurality is defended by plurality (the Dragon Tribes).** The counter to each
-   region's threat is **that region's own dragon, woken** — not an imported uniform
-   force. And the cosmology is **additive, not substitutive**: Series 3 lays the
+   region's threat is **that region's own dragon — woken** (or, for the Diamond,
+   **hatched anew**) and **called by name** — not an imported uniform force. *(Even
+   the restoration honours the distinct kind: the lost dragon is not replaced by a
+   generic one but re-raised in its own line.)* And the cosmology is **additive, not substitutive**: Series 3 lays the
    dragon-fold *over* the gem-fold without flattening it — the same **additive-layer**
    grammar the vault uses for personae (lens layers that **stack**, per
    `!/PERSONAE-ENGINE`). A healthy plural order **deepens** by adding folds that keep
@@ -152,6 +158,9 @@ This is why the Journey belongs beside the county's census:
 [Fidelis](https://deltoraquest.fandom.com/wiki/Fidelis) ·
 [Joyeu](https://deltoraquest.fandom.com/wiki/Joyeu) ·
 [Honora](https://deltoraquest.fandom.com/wiki/Honora) ·
+[Diamond dragon](https://deltoraquest.fandom.com/wiki/Diamond_dragon) ·
+[Forta (child)](https://deltoraquest.fandom.com/wiki/Forta_(child)) ·
+[Forta (parent)](https://deltoraquest.fandom.com/wiki/Forta_(parent)) ·
 [Deltora Quest 1 (Wikipedia)](https://en.wikipedia.org/wiki/Deltora_Quest_1) ·
 [Deltora Quest book series (Wikipedia)](https://en.wikipedia.org/wiki/Deltora_Quest_(book_series))
 
