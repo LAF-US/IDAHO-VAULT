@@ -93,7 +93,8 @@ Two clauses make the difference matter:
 
 | Idaho county office | Basis | Filled by |
 |---|---|---|
-| Commissioners (3) · **Sheriff** · Assessor · **Coroner** · Treasurer *(ex off. public admin/tax collector)* · Clerk of District Court *(ex off. auditor/recorder)* | **Constitutional** — Art XVIII §6 | **Elected** |
+| Commissioners (3) · **Sheriff** · Assessor · **Coroner** · Treasurer *(ex off. **public administrator** — §6)* · Clerk of District Court *(ex off. auditor/recorder)* | **Constitutional** — Art XVIII §6 | **Elected** |
+| Treasurer's *ex officio* **tax-collector** role | **Statutory** — §6 leaves tax collection to *"the officer… designated by law"*; I.C. § 34-620 / § 31-2001 make the treasurer ex off. tax collector | (the elected treasurer) |
 | Prosecuting attorney | **Constitutional** — Art V §18 (term/quals) | **Elected** |
 | Deputies & clerical assistants of the **sheriff / assessor / treasurer / clerk** | **Delegated** — Art XVIII §6 appointment clause (which **names those offices, not the coroner**), as the commissioners empower | **Appointed** |
 | **Deputy coroners** | **Statutory** — I.C. **§ 31-3107**, as amended by **2025 S1101** ("Coroners," eff. July 1, 2025), which **repealed the former § 31-2809** and folded coroners into the deputy/assistant framework | **Appointed** |
@@ -224,6 +225,7 @@ Execute; do not reign.**
 [Idaho Legislature — Title 31 Ch 22 (Sheriff)](https://legislature.idaho.gov/statutesrules/idstat/title31/t31ch22/) ·
 [Idaho Legislature — Title 31 Ch 28 (Coroner)](https://legislature.idaho.gov/statutesrules/idstat/title31/t31ch28/) ·
 [Idaho Legislature — § 34-622 (coroner election & qualifications)](https://legislature.idaho.gov/statutesrules/idstat/title34/t34ch6/sect34-622/) ·
+[Idaho Legislature — § 34-620 (treasurer election; ex off. public administrator & tax collector)](https://legislature.idaho.gov/statutesrules/idstat/title34/t34ch6/sect34-620/) ·
 [Idaho Legislature — 2025 S1101 (Coroners; repealed § 31-2809, amended § 31-3107)](https://legislature.idaho.gov/sessioninfo/2025/legislation/s1101/) ·
 [Idaho Legislature — § 31-2806](https://legislature.idaho.gov/statutesrules/idstat/title31/t31ch28/sect31-2806/) ·
 [Idaho Legislature — § 31-2807 (powers/bond/fees while acting as sheriff)](https://legislature.idaho.gov/statutesrules/idstat/title31/t31ch28/sect31-2807/) ·

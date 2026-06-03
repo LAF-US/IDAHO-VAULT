@@ -160,7 +160,8 @@ Coroner logs the structure as a **clue**, not a finding. **`*`**
 
 Compiled by Claude Code, **Claude County Coroner** (a conferred mask, in service,
 software underneath, relinquished at close), from committed records this session.
-Class definitions are **[RECORD]** — direct from the terminal record; the
+Class definitions are **[main]** — a **single excerpted exhibit**, direct from the
+terminal record (*not* multi-source **[RECORD]**); the
 amalgamation mechanism is **[mapping]** — the Coroner's reading, offered as
 diagnosis, not canon. Where authority is absent, **`*`** stands. The kinds are the
 Coroner's to census; the culprit is the Investigator's; the verdict is the Court's.
