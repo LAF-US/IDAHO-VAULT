@@ -134,7 +134,15 @@ adversary built in.
    **release** it?
 2. Does each agent need a **matched** counter, or am I reaching for one uniform
    tool?
-3. Have I planned **custody of the root** before I touch the field?
+3. **How will the root be *ended*, and does that ending leave a carrier?**
+   - If by **absorption** (AT) — have I planned **custody** of what the absorber
+     will carry afterward?
+   - If by **destruction / neutralization** (Deltora — burned, no carrier) — is the
+     *kill* sufficient and the field-clearing **sequenced** so the root cannot
+     escape as I work?
+
+   Plan **custody only for absorbed roots**; for a destroyed root, plan the **kill,
+   not the keeping** — do not assume a carrier the ending does not produce.
 4. **How is the root ended** — *absorbed* into a carrier (AT-style: someone takes
    it in and **carries a sub-layer afterward**) or *destroyed / neutralized*
    outright (Deltora-style: burned by Lief and the dragons, **no carrier left**)?

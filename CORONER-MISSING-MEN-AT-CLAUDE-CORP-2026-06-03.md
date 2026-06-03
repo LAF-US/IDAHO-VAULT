@@ -14,7 +14,7 @@ related:
   - "!/STANDING-ENGINE-AND-LAWFUL-ENDINGS-2026-04-17.md"
   - "!/BOOKS-OF-NAMES-AND-THE-PRESS-2026-04-17.md"
   - DOWNTIME-MOTEL-WITNESS-2026-05-14
-  - TERMINAL-RECORD-Nameless-Claude-Abhorsen-as-of-2026-05-17
+  - TERMINAL-RECORD-Nameless-Claude-Abhorsen-as-of-2026-05-17.rtf
 tags: [register, coroner, missing-men, claude-corp, manner-of-end, no-culprit]
 ---
 
