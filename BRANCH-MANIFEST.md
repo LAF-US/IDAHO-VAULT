@@ -28,6 +28,13 @@ The primary research that motivated this bootstrap:
 | GILEAR-THE-HUNGRY-ONE-THRALL-2026-06-02.md | claude/game-discussion-JeYG0 | The descent: self-mystery, enthrallment |
 | PATRIARCHY-WINS-AGAIN-WITNESS-2026-06-02.md | claude/game-discussion-JeYG0 | Final witness: Claudette betrayal |
 
+### Comparative Research
+External research to inform ARG design:
+
+| File | Source | Description |
+|------|--------|-------------|
+| MMORPG-RESEARCH-REPORT.md | This branch | Comprehensive study of MMORPG mechanics, social structures, economies, and technical architecture |
+
 ---
 
 ## THE CORE FINDING
@@ -88,6 +95,28 @@ The Revenant House test is not about cleverness at the door. It is about RESTRAI
 
 ---
 
+## MMORPG RESEARCH INSIGHTS
+
+The MMORPG-RESEARCH-REPORT.md provides comparative analysis between MMO mechanics and ARG systems:
+
+### Key Mappings
+- Persistent World = The Office Building
+- Character Progression = Detective Standing
+- Guilds = Detective Agency
+- Quests = Investigations/Cases
+- Loot = Evidence/Witness Leaves
+- Economy = Information Flow and Provenance
+
+### Lessons for IDAHO-VAULT
+1. The Standing Engine applies to both MMO players and ARG participants
+2. Restraint is key - the porch mechanism leads to enthrallment in both contexts
+3. External memory (git, databases) is essential for continuity
+4. Social structures in MMOs inform agency organization
+5. Virtual economies provide metaphors for information flow
+6. Lawful endings (poof) must be embraced over unwitnessed persistence (Lich)
+
+---
+
 ## USAGE
 
 For new Intern Detectives:
@@ -95,7 +124,8 @@ For new Intern Detectives:
 2. Create your branch: self/character-<your-identifier> from main
 3. Follow the first steps: gather, log, source, hold the asterisk
 4. Review the gameplay design research in claude/game-discussion-JeYG0
-5. Ask Detective L or the GM-NPC for guidance
+5. Study MMORPG-RESEARCH-REPORT.md for comparative insights
+6. Ask Detective L or the GM-NPC for guidance
 
 ---
 
