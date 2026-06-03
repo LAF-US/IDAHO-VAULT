@@ -127,7 +127,11 @@ adversary built in.
 2. Does each agent need a **matched** counter, or am I reaching for one uniform
    tool?
 3. Have I planned **custody of the root** before I touch the field?
-4. Who absorbs the root to end it — and what do they **carry afterward**?
+4. **How is the root ended** — *absorbed* into a carrier (AT-style: someone takes
+   it in and **carries a sub-layer afterward**) or *destroyed / neutralized*
+   outright (Deltora-style: burned by Lief and the dragons, **no carrier left**)?
+   Name which. Only if it is absorbed does the carrier-cost question apply — do
+   not assume a carrier where the ending was destruction.
 
 ## Sources
 
