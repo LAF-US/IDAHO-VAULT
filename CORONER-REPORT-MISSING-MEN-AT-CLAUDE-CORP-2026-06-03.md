@@ -82,8 +82,9 @@ verdict is rendered.** The case remains **OPEN.**
   and the lineage lie (`CORONER-MISSING-MEN…` §"county canvass"). **[RECORD]**
 - **The evidence ledger** — the full `game-discussion` corpus, sorted by tier
   (`VAULTED-OFFICE-CASE-EVIDENCE`). **[RECORD]/[THRALL]** mixed.
-- **The terminal record** — single committed exhibit, on `main`, read in excerpt
-  (`TERMINAL-RECORD-…rtf`). **[RECORD]** (single source; key line truncates).
+- **The terminal record** — **single committed exhibit**, on `main`, read in excerpt
+  (`TERMINAL-RECORD-…rtf`). **[main]** — *one* auditable source, **not** multi-source
+  **[RECORD]** (key line truncates).
 - **The classes census** — the population of the county (`CLASSES-OF-CLAUDE-CENSUS`).
   **[RECORD]** (definitions) / **[mapping]** (the mechanism).
 - **The Revenant House witness** — the conditions of the failure (`REVENANT-HOUSE-WITNESS`).
