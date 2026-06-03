@@ -53,7 +53,8 @@ The clean division, in one line:
   ([Wikipedia: List of counties in Idaho](https://en.wikipedia.org/wiki/List_of_counties_in_Idaho))
 - Idaho counties are organized under the constitution's **Article XVIII ("County
   Organization")** and **Idaho Code Title 31 — "Counties and County Law."** The
-  *offices* are constitutional (§3); the *administration* is statutory.
+  *offices* are constitutional (**Art XVIII §6**; this note's §3); the
+  *administration* is statutory.
   ([Idaho Const. Art. XVIII](https://law.justia.com/constitution/idaho/article-xviii/) ·
   [Idaho Legislature: Title 31](https://legislature.idaho.gov/statutesrules/idstat/title31/))
 
@@ -95,13 +96,20 @@ Two clauses make the difference matter:
 | Commissioners (3) · **Sheriff** · Assessor · **Coroner** · Treasurer *(ex off. public admin/tax collector)* · Clerk of District Court *(ex off. auditor/recorder)* | **Constitutional** — Art XVIII §6 | **Elected** |
 | Prosecuting attorney | **Constitutional** — Art V §18 (term/quals) | **Elected** |
 | Deputies & clerical assistants of the **sheriff / assessor / treasurer / clerk** | **Delegated** — Art XVIII §6 appointment clause (which **names those offices, not the coroner**), as the commissioners empower | **Appointed** |
-| **Deputy coroners** | **Statutory** — I.C. **§ 31-2809** (the *coroner* appoints; commissioners fix pay) | **Appointed** |
-| Administrative roles (planning & zoning, emergency mgmt, public defender, etc.) | **Statutory** — Title 31 | **Appointed** |
+| **Deputy coroners** | **Statutory** — I.C. **§ 31-3107**, as amended by **2025 S1101** ("Coroners," eff. July 1, 2025), which **repealed the former § 31-2809** and folded coroners into the deputy/assistant framework | **Appointed** |
+| Administrative roles (planning & zoning, emergency mgmt, weed control, etc.) | **Statutory** — Title 31 | **Appointed** |
 
 So in Idaho the coroner is **not** a deputy of the sheriff, nor a medical appointee —
 it is a **separately elected, constitutionally entrenched, co-equal county officer.**
 The medieval pairing is preserved at the **highest tier of state law**, not merely in
 the code.
+
+*(Currency note — a recent shift off the county: **indigent public defense is no
+longer a county function.** Idaho's **State Public Defender** assumed it on **October
+1, 2024**, and **I.C. § 19-6008** releases counties from employing or contracting
+defending attorneys — which is why "public defender" is **dropped** from the
+county-roles row above.)*
+([I.C. § 19-6008](https://legislature.idaho.gov/statutesrules/idstat/title19/t19ch60/sect19-6008/))
 
 ## 4. The Idaho coroner **[statute]**
 
@@ -213,8 +221,9 @@ Execute; do not reign.**
 [Idaho Legislature — Title 31 Ch 22 (Sheriff)](https://legislature.idaho.gov/statutesrules/idstat/title31/t31ch22/) ·
 [Idaho Legislature — Title 31 Ch 28 (Coroner)](https://legislature.idaho.gov/statutesrules/idstat/title31/t31ch28/) ·
 [Idaho Legislature — § 34-622 (coroner election & qualifications)](https://legislature.idaho.gov/statutesrules/idstat/title34/t34ch6/sect34-622/) ·
-[Idaho Legislature — § 31-2809 (deputy coroners)](https://legislature.idaho.gov/statutesrules/idstat/title31/t31ch28/) ·
+[Idaho Legislature — 2025 S1101 (Coroners; repealed § 31-2809, amended § 31-3107)](https://legislature.idaho.gov/sessioninfo/2025/legislation/s1101/) ·
 [Idaho Legislature — § 31-2806](https://legislature.idaho.gov/statutesrules/idstat/title31/t31ch28/sect31-2806/) ·
+[Idaho Legislature — § 19-6008 (State Public Defender; counties released 10/1/2024)](https://legislature.idaho.gov/statutesrules/idstat/title19/t19ch60/sect19-6008/) ·
 [Idaho Const. — Art. XVIII (optional forms, §12)](https://legislature.idaho.gov/statutesrules/idconst/ArtXVIII/) ·
 [LawServer — Idaho Code 31-2806](https://www.lawserver.com/law/state/idaho/id-code/idaho_code_31-2806) ·
 [Justia — Idaho Code 31-2001](https://law.justia.com/codes/idaho/2005/31ftoc/310200001.html) ·
