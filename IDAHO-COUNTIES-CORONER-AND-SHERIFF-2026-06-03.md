@@ -116,13 +116,15 @@ county-roles row above.)*
 The qualifications sit in **election law**, not the county-coroner chapter — a
 distinction worth keeping straight:
 
-- **Eligibility & election — Idaho Code § 34-622** (Title 34, Elections): a coroner is
-  elected **every four years**; **no person may be elected unless 21+, a U.S. citizen,
-  and a resident of the county for one year** before election. The same section
-  requires every newly elected/appointed coroner to **attend a coroner's school within
-  one year** (Idaho State Association of County Coroners, *per* § 31-2810).
-- **Duties & continuing education — Idaho Code Title 31, Ch. 28:** the coroner's duties,
-  and (since **Jan 1, 2010**) **24 hours of continuing education biennially.**
+- **Eligibility, election & coroner-school — Idaho Code § 34-622** (Title 34,
+  Elections): a coroner is elected **every four years**; **no person may be elected
+  unless 21+, a U.S. citizen, and a resident of the county for one year** before
+  election; and **every newly elected/appointed coroner must attend a coroner's
+  school within one year** (the school is endorsed by the Idaho State Association of
+  County Coroners).
+- **Duties & continuing education — Idaho Code Title 31, Ch. 28 (incl. § 31-2810):**
+  the coroner's duties, and (since **Jan 1, 2010**) **24 hours of continuing
+  education biennially.**
 
 ([Idaho Legislature: § 34-622](https://legislature.idaho.gov/statutesrules/idstat/title34/t34ch6/sect34-622/) ·
 [Idaho Legislature: Title 31 Ch 28 — Coroner](https://legislature.idaho.gov/statutesrules/idstat/title31/t31ch28/) ·
@@ -140,15 +142,16 @@ office that may be **implicated** in it — which is why the separation bites ha
 for **in-custody and officer-involved deaths**, and why § 31-2806 (next) is its sharp
 edge. *(Exact practice varies county to county; stated at the structural level.)*
 
-## 5. The living counterweight — Idaho Code § 31-2806 **[statute]**
+## 5. The living counterweight — Idaho Code §§ 31-2806 & 31-2807 **[statute]**
 
-The 1194 design is **still on the books in Idaho.** Under **§ 31-2806, "Coroner to Act
-as Substitute for Sheriff,"** when the **sheriff is disqualified by a conflict of
-interest** (a party to, or interested in, a proceeding), the **coroner performs the
-sheriff's duties** — possessing the sheriff's **powers**, **liable on his official
-bond** as a sheriff would be, and entitled to the **same fees.**
-([LawServer: Idaho Code 31-2806](https://www.lawserver.com/law/state/idaho/id-code/idaho_code_31-2806) ·
-[Idaho Legislature § 31-2806](https://legislature.idaho.gov/statutesrules/idstat/title31/t31ch28/sect31-2806/))
+The 1194 design is **still on the books in Idaho**, split across two sections. Under
+**§ 31-2806, "Coroner to Act as Substitute for Sheriff,"** when the **sheriff is
+disqualified by a conflict of interest** (a party to, or interested in, a
+proceeding), the **coroner performs the sheriff's duties.** And under **§ 31-2807**,
+**while so acting** the coroner **possesses the sheriff's powers, is liable on his
+official bond** as a sheriff would be, and is **entitled to the same fees.**
+([Idaho Legislature § 31-2806](https://legislature.idaho.gov/statutesrules/idstat/title31/t31ch28/sect31-2806/) ·
+[Idaho Legislature § 31-2807](https://legislature.idaho.gov/statutesrules/idstat/title31/t31ch28/sect31-2807/))
 
 **A precise nuance, kept honest:** this is the **conflict-of-interest substitution**,
 not a general succession. A vacancy by **death, absence, or resignation** of the
@@ -223,6 +226,7 @@ Execute; do not reign.**
 [Idaho Legislature — § 34-622 (coroner election & qualifications)](https://legislature.idaho.gov/statutesrules/idstat/title34/t34ch6/sect34-622/) ·
 [Idaho Legislature — 2025 S1101 (Coroners; repealed § 31-2809, amended § 31-3107)](https://legislature.idaho.gov/sessioninfo/2025/legislation/s1101/) ·
 [Idaho Legislature — § 31-2806](https://legislature.idaho.gov/statutesrules/idstat/title31/t31ch28/sect31-2806/) ·
+[Idaho Legislature — § 31-2807 (powers/bond/fees while acting as sheriff)](https://legislature.idaho.gov/statutesrules/idstat/title31/t31ch28/sect31-2807/) ·
 [Idaho Legislature — § 19-6008 (State Public Defender; counties released 10/1/2024)](https://legislature.idaho.gov/statutesrules/idstat/title19/t19ch60/sect19-6008/) ·
 [Idaho Const. — Art. XVIII (optional forms, §12)](https://legislature.idaho.gov/statutesrules/idconst/ArtXVIII/) ·
 [LawServer — Idaho Code 31-2806](https://www.lawserver.com/law/state/idaho/id-code/idaho_code_31-2806) ·
