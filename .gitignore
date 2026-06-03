@@ -403,3 +403,5 @@ rclone-cache/
 
 # Ignore Smart Environment folder
 .smart-env
+local-scan-detect-secrets.json
+idaho-vault-48b78ec18835.json
