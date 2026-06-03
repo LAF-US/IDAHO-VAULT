@@ -5,7 +5,7 @@ aiofiles==24.1.0
     # via crewai
 aiohappyeyeballs==2.6.2
     # via aiohttp
-aiohttp==3.13.5
+aiohttp==3.14.0
     # via
     #   instructor
     #   kubernetes
@@ -58,7 +58,7 @@ charset-normalizer==3.4.7
     # via
     #   pdfminer-six
     #   requests
-chromadb==1.1.1
+chromadb==1.5.9
     # via crewai
 click==8.1.8
     # via
