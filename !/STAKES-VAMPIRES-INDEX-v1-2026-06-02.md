@@ -47,7 +47,7 @@ cards; the **Vampire King** is **not named** for his, but his design *is* the
 | Vampire | Arcana | Own power | Power Marceline absorbed | Weakness / how ended |
 |---|---|---|---|---|
 | **The Fool** | 0 — The Fool | **flight** *(trait: dim, playful)* | **flight** | staked in the heart (easiest) |
-| **The Empress** | III — The Empress | **hypnosis** (the eyes) | **invisibility** | staked with allies' help (Finn, PB) |
+| **The Empress** | III — The Empress | **hypnosis** (the eyes) | **invisibility** | staked with allies' help (Finn, Princess Bubblegum) |
 | **The Hierophant** | V — The Hierophant | **shapeshifting** | shapeshifting | the **invitation rule** — dies entering uninvited |
 | **The Moon** | XVIII — The Moon | self-heal; **paralysis aura**; hides | **rapid healing** | staked from behind, then **soul drained** |
 | **The Vampire King** | X — Wheel of Fortune | telekinesis, telepathy, teleport, hydrokinesis | telekinesis *(unconfirmed)* | **science, not a stake** — essence extraction |
@@ -102,15 +102,20 @@ two are confused:
 | **the Vampire Queen** | **Marceline** — the half-demon hunter who *acquired* the title (bitten as she staked the King) | Stakes / Marceline (AT) | not a separate person; she **is** Marceline |
 | **the Empress** | the hypnotist vampire (tarot III) — *not* a "Queen" | Stakes (AT) | the Vampire Queen (Marceline) |
 | **Hunson Abadeer** | demon **lord** of the Nightosphere; **Marceline's father** | Marceline (AT) | the **Vampire King** (who *turned* her — not her father) |
-| **Princess Bubblegum (PB)** | candy monarch; built the essence-extractor; Marceline's love | Stakes / Marceline (AT) | **Betty**, and the kidnapped "princesses" |
+| **Princess Bubblegum** | candy monarch; built the essence-extractor; Marceline's love | Stakes / Marceline (AT) | **Betty**, and the kidnapped "princesses" |
 | **Betty Grof** | Simon's fiancée, *"his princess,"* later **GOLBetty** — the **original** princess the Ice King displaces | Ice King (AT) | **Princess Bubblegum** (a different woman) |
-| **the Ice King's "princesses"** | generic kidnap-targets — a **displaced category**, Betty its lost source | Ice King (AT) | Betty (the source) and PB (a specific person) |
+| **the Ice King's "princesses"** | generic kidnap-targets — a **displaced category**, Betty its lost source | Ice King (AT) | Betty (the source) and Princess Bubblegum (a specific person) |
 | **Claudius / "King Claude" / the Drunken Caesar** | the venerated office General, the **Patriarchal Predator** | Revenant House witness (the **game** — *not* AT) | the **Vampire King**; he appears in AT notes only by **analogy** |
 | **the Lich** | AT's death-king / the vault's `!/LICH-PROBLEM` failstate | across the vault | any of the vampires above |
 
 **The three live collisions, fenced:** Vampire King **≠** King Claude/Claudius ·
 Betty **≠** Princess Bubblegum · Hunson (father, demon lord) **≠** the Vampire King
 (who turned her).
+
+**Abbreviation hazard — do not write "PB."** It reads as **both Princess
+Bubblegum and Peppermint Butler** — and Peppermint Butler is all over this set
+(he stakes the Moon, faces the Hierophant, and anchors `REVENANT-HOUSE-WITNESS`).
+This cluster **spells both out** and uses "PB" for neither.
 
 ## Sources
 
