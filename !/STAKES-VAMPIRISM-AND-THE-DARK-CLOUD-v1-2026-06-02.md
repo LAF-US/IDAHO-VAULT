@@ -74,14 +74,18 @@ straight to `!/LICH-PROBLEM-v1`:
    cloud), and it **engulfs en masse.** *The cure breeds the worse form.* Plan
    custody of the by-product before you extract. (Cf. the **Fablehaven nail** —
    *unmerged, PR #400, not yet on `main`* — and the Vampire King page.)
-3. **Targeted spread has a refusal point; the diffuse form does not.** For an
-   individual **bite**, conversion is *chosen*, not automatic — a decision point
-   that can be **refused** (cf. `!/LICH-PROBLEM-v1` Resolution 3, *Active
-   Refusal*). But the **Dark Cloud engulfs *en masse*, by inhalation** — mass
-   *capture* with **no individual refusal point** (the conversion itself still
-   rode a single bite, on Marceline). For the diffuse by-product the operative
-   counter is **containment before diffusion** (point 2), not refusal. Diagnose
-   which regime you are in before reaching for either.
+3. **Targeted spread has a discrete turning-choice; the diffuse form does not.**
+   For an individual **bite**, conversion is the vampire's *deliberate choice to
+   turn* — a bite alone does not convert (canon above). That makes targeted spread
+   **gated and interruptible**: the operative counter is **preventing or
+   interrupting the bite-and-turn** — and, on the maker's own side, the would-be
+   maker **declining to perpetuate** (cf. `!/LICH-PROBLEM-v1` Resolution 3, *Active
+   Refusal*) — **not** a victim-side veto you can rely on. The **Dark Cloud**, by
+   contrast, **engulfs *en masse*, by inhalation** — mass *capture* with **no
+   single turning-gate** (the only actual turning still rode one bite, on
+   Marceline). For the diffuse by-product the operative counter is **containment
+   before diffusion** (point 2). Diagnose which regime you are in before reaching
+   for either.
 4. **Ending it re-incurs it, and leaves a sub-layer.** The one who absorbs the
    cloud to end it **takes the condition back into themselves** (Marceline
    re-Queened), and the absorbed essence **persists as an internal projection** —
