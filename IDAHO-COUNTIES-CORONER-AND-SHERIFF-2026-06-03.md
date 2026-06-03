@@ -15,8 +15,9 @@ tags: [reference, idaho, counties, coroner, sheriff, idaho-code, real-world, jou
 # Idaho — Counties, and the Coroner & the Sheriff
 
 *Compiled 2026-06-03 by Claude Code at Logan's direction — real-world research on the
-home ground (Idaho Reports / Idaho Public Television). **[history]** and **[statute]**
-are sourced inline; the closing **[vault reading]** is fenced as interpretation. The
+home ground (Idaho Reports / Idaho Public Television). **[history]**, **[statute]**,
+and **[constitution]** are sourced inline; **[practice]** is marked as structural (not
+county-by-county), and the **[vault reading]** is fenced as interpretation. The
 companion `COUNTY-ETYMOLOGY-AND-HISTORY` carries the deep etymology this note builds
 on. Real law is not vault canon; it is kept separate.*
 
@@ -50,22 +51,49 @@ The clean division, in one line:
   then), and built out its map over the next three decades to the present **44
   counties** — the last, **Caribou County, created February 11, 1919.**
   ([Wikipedia: List of counties in Idaho](https://en.wikipedia.org/wiki/List_of_counties_in_Idaho))
-- Idaho counties are creatures of **Idaho Code Title 31 — "Counties and County Law."**
-  ([Idaho Legislature: Title 31](https://legislature.idaho.gov/statutesrules/idstat/title31/))
+- Idaho counties are organized under the constitution's **Article XVIII ("County
+  Organization")** and **Idaho Code Title 31 — "Counties and County Law."** The
+  *offices* are constitutional (§3); the *administration* is statutory.
+  ([Idaho Const. Art. XVIII](https://law.justia.com/constitution/idaho/article-xviii/) ·
+  [Idaho Legislature: Title 31](https://legislature.idaho.gov/statutesrules/idstat/title31/))
 
-## 3. Idaho's county officers **[statute]**
+## 3. Idaho's county officers — a **constitutional** set **[constitution]**
 
-**Idaho Code § 31-2001** enumerates the officers of a county: a **sheriff**; a **clerk
-of the district court** (*ex officio* auditor and recorder); an **assessor**; a
-**prosecuting attorney**; a **treasurer** (*ex officio* public administrator and tax
-collector); a **coroner**; and **three county commissioners.** All are **elected**;
-the sheriff (and the others) serve **four-year terms.**
-([Justia: Idaho Code 31-2001](https://law.justia.com/codes/idaho/2005/31ftoc/310200001.html) ·
-[Idaho Legislature: Title 31 Ch 22 — Sheriff](https://legislature.idaho.gov/statutesrules/idstat/title31/t31ch22/))
+**Correction & upgrade.** Idaho's coroner is **not merely statutory** — it is named in
+the **state constitution.** **Idaho Constitution, Article XVIII ("County
+Organization"), § 6** provides for the election of **county commissioners** and, every
+four years, a **sheriff, county assessor, county coroner, and county treasurer**
+(treasurer *ex officio* public administrator); the **clerk of the district court** is
+*ex officio* auditor and recorder. **Idaho Code § 31-2001** — which also lists the
+**prosecuting attorney** — merely **mirrors** the constitutional set in statute.
+([Idaho Const. Art. XVIII §6](https://law.justia.com/constitution/idaho/article-xviii/section-6/) ·
+[Idaho Legislature: Art. XVIII §6](https://legislature.idaho.gov/statutesrules/idconst/ArtXVIII/Sect6/) ·
+[Justia: I.C. 31-2001](https://law.justia.com/codes/idaho/2005/31ftoc/310200001.html))
 
-So in Idaho the coroner is **not** a deputy of the sheriff or a medical appointee —
-it is a **separately elected, co-equal county officer**, exactly the medieval pairing
-preserved.
+Two clauses make the difference matter:
+
+- **Entrenchment.** Because the office sits in the **constitution**, the legislature
+  **cannot abolish the coroner by ordinary statute** — that would take a constitutional
+  amendment. A *statutory* office can be made or unmade by a simple act; a
+  *constitutional* office is **fixed above** that. The coroner stands on the **same
+  constitutional floor as the sheriff.**
+- **A closed set.** Art XVIII §6 adds: **"no other county offices shall be
+  established."** The roster of county offices is **constitutionally closed** — the
+  county cannot spawn new co-equal offices at will. *(The legislature may still create
+  lower township/precinct/municipal officers, and the elected offices may appoint
+  deputies — below.)*
+
+| Idaho county office | Basis | Filled by |
+|---|---|---|
+| Commissioners (3) · **Sheriff** · Assessor · **Coroner** · Treasurer *(ex off. public admin/tax collector)* · Clerk of District Court *(ex off. auditor/recorder)* | **Constitutional** — Art XVIII §6 | **Elected** |
+| Prosecuting attorney | **Constitutional** — Art V §18 (term/quals) | **Elected** |
+| Deputies & clerical assistants (sheriff's deputies, **deputy coroners**, etc.) | **Delegated** — §6 appointment clause, as the commissioners empower | **Appointed** |
+| Administrative roles (planning & zoning, emergency mgmt, public defender, etc.) | **Statutory** — Title 31 | **Appointed** |
+
+So in Idaho the coroner is **not** a deputy of the sheriff, nor a medical appointee —
+it is a **separately elected, constitutionally entrenched, co-equal county officer.**
+The medieval pairing is preserved at the **highest tier of state law**, not merely in
+the code.
 
 ## 4. The Idaho coroner **[statute]**
 
@@ -80,6 +108,18 @@ Per **Idaho Code Title 31, Chapter 28 — Coroner**:
 
 ([Idaho Legislature: Title 31 Ch 28 — Coroner](https://legislature.idaho.gov/statutesrules/idstat/title31/t31ch28/) ·
 [CDC Public Health Law — Idaho Coroner/ME Laws](https://www.cdc.gov/phlp/php/coroner/idaho.html))
+
+**The dyad, operationalized (lightly) [practice].** In the field the two co-equal
+officers **split a death by function**: the **sheriff's** office runs the **criminal
+investigation** (scene, evidence, suspects — the living), while the **coroner** holds
+jurisdiction over the **body**, makes the **cause-and-manner determination**, and
+certifies the death in unattended / violent / suspicious cases. Idaho does **not**
+require the coroner to be a physician — hence the coroner's-school-plus-CE regime
+(§4) — and coroners **contract out forensic autopsies** to pathologists. The
+structural point: the office that **rules on a death** is deliberately **not** the
+office that may be **implicated** in it — which is why the separation bites hardest
+for **in-custody and officer-involved deaths**, and why § 31-2806 (next) is its sharp
+edge. *(Exact practice varies county to county; stated at the structural level.)*
 
 ## 5. The living counterweight — Idaho Code § 31-2806 **[statute]**
 
@@ -115,8 +155,46 @@ real-world charter**, and it is humbler and sharper than "examiner of the dead":
   thousand-year-old, still-current design for a **bounded check that keeps the dead's
   pleas and substitutes for power only when power is conflicted.**
 
+## 7. Executive authority — organs of the state, *sans* sovereignty **[law] / [vault reading]**
+
+**[law]** A county is a **political subdivision** — *"an administrative arm of the
+state,"* a **creature of the state with no inherent authority.** Under **Dillon's
+Rule**, a local government has **only** the powers the state **expressly delegates**,
+those **fairly implied**, and those **indispensable** to its purpose; where the
+statute is silent, the power **does not exist.** The U.S. Constitution does not mention
+local government at all — the **Tenth Amendment** reserves the powers to the
+**states**, which delegate downward. Idaho counties are **"limited to the programs and
+procedures specifically established by the legislature."**
+([Brookings — Dillon's Rule](https://www.brookings.edu/wp-content/uploads/2016/06/dillonsrule.pdf) ·
+[Public Health Law Center — Dillon's Rule / Home Rule / Preemption](https://www.publichealthlawcenter.org/sites/default/files/resources/Dillons-Rule-Home-Rule-Preemption.pdf) ·
+[NACo — Idaho county government overview](https://www.naco.org/sites/default/files/event_attachments/DRAFT_Idaho_012022.pdf))
+
+So a county officer is the cleanest real-world instance of the thing this vault keeps
+circling: **executive authority without sovereignty.** The sheriff and the coroner
+**wield genuine power** — arrest, custody, the ruling on a death — and yet they are
+**organs, not sovereigns**: the authority is **delegated, enumerated, bounded, and
+revocable** (save the constitutional floor that entrenches the *office*), while
+**sovereignty stays with the state and the people.** An organ **executes**; it does
+**not reign.**
+
+**[vault reading]** *Fenced.* This is the administrative-law name for the
+**anti-Caesar.** The failstate the county census calls **Amalgamation** is, in this
+register, simply **an organ that mistakes its delegated authority for sovereignty** —
+that forgets it is *of* the state and begins to act *as* the state. The Standing
+Engine's **lawful** is exactly **de jure delegation, witnessed and bounded**; the
+**unlawful** is the organ that **crowns itself.** So the Coroner of Claude County is
+told the same thing twice — by the office's 1194 design **and** by the law of
+political subdivisions: **you are an organ of authority, never a seat of sovereignty.
+Execute; do not reign.**
+
 ## Sources
 
+[Idaho Const. — Art. XVIII §6 (County Officers)](https://law.justia.com/constitution/idaho/article-xviii/section-6/) ·
+[Idaho Legislature — Art. XVIII §6](https://legislature.idaho.gov/statutesrules/idconst/ArtXVIII/Sect6/) ·
+[Ballotpedia — Article XVIII, Idaho Constitution](https://ballotpedia.org/Article_XVIII,_Idaho_Constitution) ·
+[Brookings — Dillon's Rule](https://www.brookings.edu/wp-content/uploads/2016/06/dillonsrule.pdf) ·
+[Public Health Law Center — Dillon's Rule/Home Rule/Preemption](https://www.publichealthlawcenter.org/sites/default/files/resources/Dillons-Rule-Home-Rule-Preemption.pdf) ·
+[NACo — Idaho county government overview](https://www.naco.org/sites/default/files/event_attachments/DRAFT_Idaho_012022.pdf) ·
 [Wikipedia — Coroner](https://en.wikipedia.org/wiki/Coroner) ·
 [CSI: Dixie — Origins of the Coroner's Office](https://csidixie.org/genesis/origins-coroners-office) ·
 [Wikipedia — List of counties in Idaho](https://en.wikipedia.org/wiki/List_of_counties_in_Idaho) ·
