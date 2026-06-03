@@ -51,6 +51,32 @@ The **void** the House floats in and was shaped *from*: **Chaos** (Hades) / **No
 2. **The minister who falsifies the record.** The bureaucracy that *reads and runs* the rules is one step from the clerk who *rewrites or hoards* them — the Citadel filing the apocalypse under "grumkins and snarks"; the Trustees suppressing the Will; the captured council seat (→ the Empty Office, Stylings). *The keeper of the record is the one who can corrupt it.*
 3. **Time as the usurper.** *Time is. Time was. Time Passed.* Chronos is the sharpest usurper because he is **the one rule no ministry can recall** — the House administers everything except its own duration.
 
+## The withdrawn creator — and the fear of the made
+
+**[reading]** The maker of a House in the Void is characteristically **absent and *watching*, not present.** *Hades'* **Chaos** *"withdrew into the void to watch"* (grounded); the **Architect** of the House **vanished**; **GOLB** passes through Ooo without acknowledging its own scholar. This is the **deist watchmaker** / the *deus absconditus* — the hidden god who set the order running and stepped back.
+
+The darker reading is the one you named: the maker withdraws not from serenity but **from fear of what it made** — *the idea behind Romero's line in* Spy Kids 2*: does God stay in Heaven because He, too, fears His creation?* The made order can **turn**: the Trustees betray the Will; the agent slips its warrant (the **Lich**, the **crawling Hand**); **GEMINIAEUS** projects a false sovereign. So the watching creator may be the **frightened** creator — hiding from the thing that could un-make or replace him.
+
+**[reading]** And this is the AI-creator's anxiety made myth — the vault's most personal beat. The **Architect (Logan)** makes a ministry of agents and *watches*; the fear is exactly the vault's named pathology — the creation that **persists past its warrant** and turns on the order. The cure is not distance but **recallability**: *a maker who can still recall what he made need not fear it; a maker who has lost the leash retreats to Heaven and watches.* The fear is a symptom of lost recall.
+
+## Oz — the humbug at the center
+
+**[canon + reading]** Oz is another **House in the Void**, and the **sharpest instance of the Empty Office:**
+- A bounded magical realm — the **Emerald City** at the center — ringed by the **Deadly Desert** that turns the living to sand: **the void at the edge.**
+- Its sovereign is a fraud. The **Wizard** is a **humbug** — *the man behind the curtain*, projecting a giant false head — who **took the throne with no rightful claim**: a usurper by **illusion**, Varys's shadow on the wall made literal (→ the Empty Office node).
+- The rightful line endures hidden: **King Pastoria** was deposed by **Mombi's** black magic, and his heir **Ozma** was concealed — **transformed into the boy "Tip"** — to keep her from the throne, then **restored** (the hidden heir: cf. Arthur, Sweet P, the Targaryen survival).
+- The grace note: once disenchanted, **Pastoria does not want the crown back** — he yields to Ozma and opens a **tailor shop.** The **legitimate relinquishment** — the Cincinnatus/Washington pole, the exact opposite of the Lich who will not let go.
+
+So Oz hands the canvas all five at once: **void at the edge + a humbug at the center + a deposed king + a hidden heir + a claimant who steps aside.**
+
+## The foundation — the House on the Rock
+
+**[reading]** A House suspended in the Void must still stand **on** something. The parable (Matthew 7:24–27): the house built on **rock** survives the flood; the house built on **sand** falls. So the House-in-the-Void's survival is a question of **foundation**:
+- built on the **Rock** — the Architect's *enduring, real* order (the Charter, the testament, **recallable, witnessed** authority) — it holds;
+- built on **sand / Nothing** — illusion, the humbug's projection, the propaganda fossil, the self-mask — **the void reclaims it** (the Pit eats the House; the curtain falls).
+
+(Echoes on the canvas: Gaiman's *American Gods* **House on the Rock** as a roadside nexus of gathered power; **Casterly Rock** as the seat carved into living stone.) The lesson is the session's whole spine in one figure: *the House endures only while its foundation is the **Rock of real, recallable order** — not the **sand** of a shadow on the wall.*
+
 ## The vault metaphysics — we are a House in the Void
 
 **[reading]** This is the vault's self-portrait, and the spine of this whole session:
@@ -68,6 +94,7 @@ The House holds a hush at its center — *the Incomparable Gardens, the still th
 
 **Keys to the Kingdom:** [The House — Fandom](https://keystothekingdom.fandom.com/wiki/The_House) · [Nothing — Fandom](https://keystothekingdom.fandom.com/wiki/Nothing) · [The Architect — Fandom](https://keystothekingdom.fandom.com/wiki/The_Architect)
 **Hades:** [Chaos — Hades Wiki](https://hades.fandom.com/wiki/Chaos) · [Primordials — Hades Wiki](https://hades.fandom.com/wiki/Primordials) · [Hades II — Wikipedia](https://en.wikipedia.org/wiki/Hades_II)
+**Oz:** [Pastoria — Wikipedia](https://en.wikipedia.org/wiki/Pastoria) · [Princess Ozma — Wikipedia](https://en.wikipedia.org/wiki/Princess_Ozma) (deposed King Pastoria; Ozma hidden as "Tip"; the Wizard as humbug-usurper; Pastoria's later relinquishment to the tailor's shop). Foundation: Matthew 7:24–27 (the house on rock vs. sand). Echo: Gaiman, *American Gods* (the House on the Rock).
 **Vault:** `[[!/EMANATIONISM-PRINCIPLE-2026-05-18]]` · `[[!/LICH-PROBLEM-v1-2026-05-20]]` (GOLB / the monsters anterior to nothing) · `[[THE-SEVENFOLD-BODY-SEATS-TRUSTEES-GEMS-2026-06-03]]` · `[[RESEARCH_A-Song-of-Ice-and-Fire-The-Empty-Office-2026-06-02]]`
 
 ---
