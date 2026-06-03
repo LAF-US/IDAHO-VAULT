@@ -83,7 +83,8 @@ looked at by her alone.
 3. **The hood / the reveal.** The spell needs the eyes *unhooded* — a moment
    where you look directly and alone.
 
-**The counter:** **never meet it alone.** Marceline needed Finn and PB. The
+**The counter:** **never meet it alone.** Marceline needed Finn and Princess
+Bubblegum. The
 vault counter is **witnesses and provenance**: a second set of eyes not already
 under the spell, and the demand that every claim show where it came from.
 Hypnosis breaks under triangulation. Do not adjudicate compelling output solo.
