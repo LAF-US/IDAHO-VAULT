@@ -1,0 +1,44 @@
+﻿C:/Users/loganf/Documents/IDAHO-VAULT/agent.sh
+C:/Users/loganf/Documents/IDAHO-VAULT/agents.json
+C:/Users/loganf/Documents/IDAHO-VAULT/AGENTS.md
+C:/Users/loganf/Documents/IDAHO-VAULT/ingest-2026-04-03T124455Z.md
+C:/Users/loganf/Documents/IDAHO-VAULT/ingest-2026-04-04T123749Z.md
+C:/Users/loganf/Documents/IDAHO-VAULT/LEVELSET-REPORT-CLAUDE-2026-04-03.md
+C:/Users/loganf/Documents/IDAHO-VAULT/LEVELSET-REPORT-GEMINI-2026-04-05.md
+C:/Users/loganf/Documents/IDAHO-VAULT/REPO-PAYLOAD-AUDIT-2026-04-03.json
+C:/Users/loganf/Documents/IDAHO-VAULT/REPO-PAYLOAD-AUDIT-2026-04-03.md
+C:/Users/loganf/Documents/IDAHO-VAULT/REPO-SLIMMING-PROTOCOL.md
+C:/Users/loganf/Documents/IDAHO-VAULT/wayback-preserve-2026-04-03.md
+C:/Users/loganf/Documents/IDAHO-VAULT/!/AUDIT-AGENTIC-VOICES-2026-04-03.md
+C:/Users/loganf/Documents/IDAHO-VAULT/CREWAI/HANDOFF-CREWAI-OPS.md
+C:/Users/loganf/Documents/IDAHO-VAULT/CREWAI/HYDRATION-LOG-v1.md
+C:/Users/loganf/Documents/IDAHO-VAULT/CREWAI/LINKER-PROPOSAL-v1.json
+C:/Users/loganf/Documents/IDAHO-VAULT/CREWAI/LINKER-SUMMARY-v1.md
+C:/Users/loganf/Documents/IDAHO-VAULT/CREWAI/README.md
+C:/Users/loganf/Documents/IDAHO-VAULT/GRIMOIRE/BARTIMAEUS-CREWAI-ALIGNMENT-BRIEF.md
+C:/Users/loganf/Documents/IDAHO-VAULT/GRIMOIRE/BRIEF-BARTIMAEUS-CREWAI-ERA.md
+C:/Users/loganf/Documents/IDAHO-VAULT/GRIMOIRE/HANDOFF-CLAUDE-TO-ANTIGRAVITY-2026-04-04.md
+C:/Users/loganf/Documents/IDAHO-VAULT/GRIMOIRE/HANDOFF-CREWAI-IGNITION-2026-04-04.md
+C:/Users/loganf/Documents/IDAHO-VAULT/GRIMOIRE/NETWEB-CREWAI-ALIGNMENT.md
+C:/Users/loganf/Documents/IDAHO-VAULT/GRIMOIRE/TRIUNE-TRIPTYCH-TRIUMVIRATE.md
+C:/Users/loganf/Documents/IDAHO-VAULT/MEDIA/Recording 20260404210505.webm
+C:/Users/loganf/Documents/IDAHO-VAULT/swarm/tools/state_manager.py
+C:/Users/loganf/Documents/IDAHO-VAULT/swarm 1/NOTE TO ADMIN.md
+C:/Users/loganf/Documents/IDAHO-VAULT/swarm 1/state/run_state.md
+C:/Users/loganf/Documents/IDAHO-VAULT/swarm 1/state/stabilization_plan.md
+C:/Users/loganf/Documents/IDAHO-VAULT/swarm 1/state/archive/run_state-20260317-101538.md
+C:/Users/loganf/Documents/IDAHO-VAULT/swarm 1/tests/__pycache__/test_app.cpython-313.pyc
+C:/Users/loganf/Documents/IDAHO-VAULT/swarm 1/tools/state_manager.py
+C:/Users/loganf/Documents/IDAHO-VAULT/swarm 1/__pycache__/app.cpython-313.pyc
+C:/Users/loganf/Documents/IDAHO-VAULT/swarm 1/__pycache__/__init__.cpython-313.pyc
+C:/Users/loganf/Documents/IDAHO-VAULT/tests/test_app.py
+C:/Users/loganf/Documents/IDAHO-VAULT/tests/__pycache__/test_app.cpython-313-pytest-9.0.2.pyc
+C:/Users/loganf/Documents/IDAHO-VAULT/tests/__pycache__/test_app.cpython-313.pyc
+C:/Users/loganf/Documents/IDAHO-VAULT/__!__/! The world is quiet here
+C:/Users/loganf/Documents/IDAHO-VAULT/__!__/!/! The world is quiet here/DENOUEMENT.txt
+C:/Users/loganf/Documents/IDAHO-VAULT/__!__/!/! The world is quiet here/DOCKET.md
+C:/Users/loganf/Documents/IDAHO-VAULT/__!__/!/! The world is quiet here/Logan.txt
+C:/Users/loganf/Documents/IDAHO-VAULT/__!__/!/! The world is quiet here/Esto Perpetua!/README.md
+C:/Users/loganf/Documents/IDAHO-VAULT/__!__/.claude-haiku-github/SESSION-LOG.md
+C:/Users/loganf/Documents/IDAHO-VAULT/__pycache__/app.cpython-313.pyc
+C:/Users/loganf/Documents/IDAHO-VAULT/__pycache__/__init__.cpython-313.pyc
