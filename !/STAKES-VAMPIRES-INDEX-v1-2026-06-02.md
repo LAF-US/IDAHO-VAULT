@@ -112,10 +112,18 @@ two are confused:
 Betty **≠** Princess Bubblegum · Hunson (father, demon lord) **≠** the Vampire King
 (who turned her).
 
-**Abbreviation hazard — do not write "PB."** It reads as **both Princess
-Bubblegum and Peppermint Butler** — and Peppermint Butler is all over this set
-(he stakes the Moon, faces the Hierophant, and anchors `REVENANT-HOUSE-WITNESS`).
-This cluster **spells both out** and uses "PB" for neither.
+**Naming convention — journalistic first vs. second reference.** Introduce each
+person by **full name on first reference**, then use one **defined, unambiguous
+second-reference** form, and keep it:
+
+- *Princess Bubblegum* → **Bubblegum** · *Peppermint Butler* → **Peppermint
+  Butler** (no short form) · *Marceline the Vampire Queen* → **Marceline** ·
+  *Simon Petrikov / the Ice King* → **Simon** (restored) or **the Ice King**
+  (cursed) · *Hunson Abadeer* → **Abadeer** · *Betty Grof* → **Betty.**
+
+The initialism **"PB" belongs to neither** Princess Bubblegum nor Peppermint
+Butler — it was never an established second-reference and it collides. The rule is
+not *never abbreviate*; it is *define a distinct second-reference and keep it.*
 
 ## Sources
 
