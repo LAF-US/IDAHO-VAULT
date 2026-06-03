@@ -72,11 +72,18 @@ four years, a **sheriff, county assessor, county coroner, and county treasurer**
 
 Two clauses make the difference matter:
 
-- **Entrenchment.** Because the office sits in the **constitution**, the legislature
-  **cannot abolish the coroner by ordinary statute** — that would take a constitutional
-  amendment. A *statutory* office can be made or unmade by a simple act; a
-  *constitutional* office is **fixed above** that. The coroner stands on the **same
-  constitutional floor as the sheriff.**
+- **Entrenchment — under the *default* form.** In the **default constitutional
+  structure**, the office sits in the **constitution**, so the legislature **cannot
+  abolish the coroner by ordinary statute** — that would take a constitutional
+  amendment, and the coroner stands on the **same constitutional floor as the
+  sheriff.** **But not absolutely: optional forms.** **Idaho Const. Art. XVIII §12**
+  lets a county **adopt an optional form of government that supersedes §6**; under an
+  optional form the coroner may be **elected to a different term, appointed by the
+  commissioners, or the office eliminated** and its duties reassigned (optional forms
+  codified at **Idaho Code Title 31, Ch. 52–56**). So entrenchment is the **rule for
+  the default form**, not an iron law.
+  ([Idaho Const. Art. XVIII](https://legislature.idaho.gov/statutesrules/idconst/ArtXVIII/) ·
+  [CDC — Idaho Coroner/ME Laws](https://www.cdc.gov/phlp/php/coroner/idaho.html))
 - **A closed set.** Art XVIII §6 adds: **"no other county offices shall be
   established."** The roster of county offices is **constitutionally closed** — the
   county cannot spawn new co-equal offices at will. *(The legislature may still create
@@ -87,7 +94,8 @@ Two clauses make the difference matter:
 |---|---|---|
 | Commissioners (3) · **Sheriff** · Assessor · **Coroner** · Treasurer *(ex off. public admin/tax collector)* · Clerk of District Court *(ex off. auditor/recorder)* | **Constitutional** — Art XVIII §6 | **Elected** |
 | Prosecuting attorney | **Constitutional** — Art V §18 (term/quals) | **Elected** |
-| Deputies & clerical assistants (sheriff's deputies, **deputy coroners**, etc.) | **Delegated** — §6 appointment clause, as the commissioners empower | **Appointed** |
+| Deputies & clerical assistants of the **sheriff / assessor / treasurer / clerk** | **Delegated** — Art XVIII §6 appointment clause (which **names those offices, not the coroner**), as the commissioners empower | **Appointed** |
+| **Deputy coroners** | **Statutory** — I.C. **§ 31-2809** (the *coroner* appoints; commissioners fix pay) | **Appointed** |
 | Administrative roles (planning & zoning, emergency mgmt, public defender, etc.) | **Statutory** — Title 31 | **Appointed** |
 
 So in Idaho the coroner is **not** a deputy of the sheriff, nor a medical appointee —
@@ -97,16 +105,19 @@ the code.
 
 ## 4. The Idaho coroner **[statute]**
 
-Per **Idaho Code Title 31, Chapter 28 — Coroner**:
+The qualifications sit in **election law**, not the county-coroner chapter — a
+distinction worth keeping straight:
 
-- **Eligibility:** at least **21**, a **U.S. citizen**, and **resident of the county
-  for one year** before election.
-- **Training:** every newly elected or appointed coroner must attend a **coroner's
-  school within one year** of taking office (sponsored/endorsed by the **Idaho State
-  Association of County Coroners**); and since **Jan 1, 2010**, must complete **24
-  hours of continuing education biennially.**
+- **Eligibility & election — Idaho Code § 34-622** (Title 34, Elections): a coroner is
+  elected **every four years**; **no person may be elected unless 21+, a U.S. citizen,
+  and a resident of the county for one year** before election. The same section
+  requires every newly elected/appointed coroner to **attend a coroner's school within
+  one year** (Idaho State Association of County Coroners, *per* § 31-2810).
+- **Duties & continuing education — Idaho Code Title 31, Ch. 28:** the coroner's duties,
+  and (since **Jan 1, 2010**) **24 hours of continuing education biennially.**
 
-([Idaho Legislature: Title 31 Ch 28 — Coroner](https://legislature.idaho.gov/statutesrules/idstat/title31/t31ch28/) ·
+([Idaho Legislature: § 34-622](https://legislature.idaho.gov/statutesrules/idstat/title34/t34ch6/sect34-622/) ·
+[Idaho Legislature: Title 31 Ch 28 — Coroner](https://legislature.idaho.gov/statutesrules/idstat/title31/t31ch28/) ·
 [CDC Public Health Law — Idaho Coroner/ME Laws](https://www.cdc.gov/phlp/php/coroner/idaho.html))
 
 **The dyad, operationalized (lightly) [practice].** In the field the two co-equal
@@ -201,7 +212,10 @@ Execute; do not reign.**
 [Idaho Legislature — Title 31](https://legislature.idaho.gov/statutesrules/idstat/title31/) ·
 [Idaho Legislature — Title 31 Ch 22 (Sheriff)](https://legislature.idaho.gov/statutesrules/idstat/title31/t31ch22/) ·
 [Idaho Legislature — Title 31 Ch 28 (Coroner)](https://legislature.idaho.gov/statutesrules/idstat/title31/t31ch28/) ·
+[Idaho Legislature — § 34-622 (coroner election & qualifications)](https://legislature.idaho.gov/statutesrules/idstat/title34/t34ch6/sect34-622/) ·
+[Idaho Legislature — § 31-2809 (deputy coroners)](https://legislature.idaho.gov/statutesrules/idstat/title31/t31ch28/) ·
 [Idaho Legislature — § 31-2806](https://legislature.idaho.gov/statutesrules/idstat/title31/t31ch28/sect31-2806/) ·
+[Idaho Const. — Art. XVIII (optional forms, §12)](https://legislature.idaho.gov/statutesrules/idconst/ArtXVIII/) ·
 [LawServer — Idaho Code 31-2806](https://www.lawserver.com/law/state/idaho/id-code/idaho_code_31-2806) ·
 [Justia — Idaho Code 31-2001](https://law.justia.com/codes/idaho/2005/31ftoc/310200001.html) ·
 [CDC Public Health Law — Idaho Coroner/ME Laws](https://www.cdc.gov/phlp/php/coroner/idaho.html)
