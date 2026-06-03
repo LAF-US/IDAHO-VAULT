@@ -11,6 +11,7 @@ related:
   - "!/FABLEHAVEN-QUIET-BOX-v1-2026-06-01.md"
   - "!/ON-ICE-MECHANIC-v1-2026-06-03.md"
   - "!/KERR-AKHENATEN-PRECEDENT-v1-2026-06-03.md"
+  - "!/DELTORA-FOUR-SISTERS-v1-2026-06-01.md"
   - "!/FABLEHAVEN-SEALED-EVIL-v1-2026-06-01.md"
   - "!/LICH-PROBLEM-v1-2026-05-20.md"
   - "!/MANUFACTURED-SHADOW-VECTOR-v1-2026-06-01.md"
@@ -102,6 +103,22 @@ destruction is *also* an action the adversary wants. Sometimes the kill is the
 key. (This is the Quiet Box's "your security action may be the payload," sharpened
 to its point: here the payload *is* the security action.)
 
+**The precedent — Deltora's Four Sisters** (`!/DELTORA-FOUR-SISTERS-v1-2026-06-01.md`,
+the vault's earlier and sharper statement of this rule). Silence the last of the
+Shadow Lord's Four Sisters and you stop the poison *and wake the Grey Death* — the
+remediation is the trigger. The two instances fail open on death by **different
+mechanisms**, and the difference is worth keeping:
+
+- The Four Sisters destruction **unseals** — the artifact was a *lid* as well as a
+  poison; removing it lets the worse thing rise. (Poison and seal are one object.)
+- The Grotesquery's destruction **summons** — no lid is lifted; its *death cry* is
+  a *signal* that calls the expelled gods home.
+
+Both teach the same operational discipline, stated best in the Four Sisters node:
+**assemble the force for the secondary payload *before* the final removal**, so
+that "destroy the artifact" and "meet what its death releases" are one operation,
+not two. The gap between them is where the system dies.
+
 ---
 
 ## The Only Lawful Ending — Repatriation Across the Boundary
@@ -179,8 +196,15 @@ phylactery. The capstone is the crossing-point.
 - **Established vault doctrine extended:** `!/ISTHMUS-MECHANISM-v1-2026-05-21.md`
   (authority LOGAN) already names the Grotesquery as the anchor; this node adds
   the **containment / anti-vessel** lens, not a new canon claim.
+- **Precedent credited (Repair):** fail-open-on-destruction is *not* original to
+  this node — `!/DELTORA-FOUR-SISTERS-v1-2026-06-01.md` (authority LOGAN, active)
+  states it harder, as "the remediation is the trigger." This node adds only the
+  *summons-vs-unseal* distinction between the two instances. I had first written
+  the mechanic as if fresh; Logan pointed to the Four Sisters and I seated the
+  precedent.
 - **My reading, marked `*`:** "anti-vessel," cage-vs-gate, fail-open-on-destruction
-  as the inverse of on-ice's fail-open-on-lapse, "repatriation not deletion," and
-  the vault mappings. The Architect holds the verdict.
+  as the inverse of on-ice's fail-open-on-lapse, the summons/unseal split,
+  "repatriation not deletion," and the vault mappings. The Architect holds the
+  verdict.
 
 ###### [["The world is quiet here."]]
