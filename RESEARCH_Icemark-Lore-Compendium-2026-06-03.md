@@ -1,5 +1,5 @@
 ---
-title: "Icemark Compendium: A Chronicler's Lore-Dump (In-Universe)"
+title: "Icemark Chronicles: In-Universe Lore Reference (Magic, Cosmology, Worldbuilding)"
 updated: 2026-06-03
 status: active
 authority: LOGAN
@@ -13,175 +13,206 @@ related:
 tags:
   - research/books
   - genre/fantasy
-  - mode/in-universe
   - subject/worldbuilding
+  - subject/magic-system
 ---
 
-# Icemark Compendium: A Chronicler's Lore-Dump
+# Icemark Chronicles: In-Universe Lore Reference
 
 **Companion to:** [[RESEARCH_Icemark-Chronicles-2026-06-03]]
-**Mode:** In-universe synthesis — written in the voice of an Icemark chronicler, drawn from the events recorded in *The Cry of the Icemark*, *Blade of Fire*, *Last Battle of the Icemark*, and *Prince of the Icemark*.
-**Status:** Creative companion. Where the source novels are silent, this compendium is silent. Where they hint, this compendium hints. It invents no doctrine.
+**Scope:** Factual reference summarizing the magic system, cosmology, geography, peoples, and prophecy as established in the four Icemark novels by Stuart Hill (*Cry of the Icemark*, *Blade of Fire*, *Last Battle of the Icemark*, prequel *Prince of the Icemark*).
+**Method:** Synthesized from Wikipedia (Icemark Chronicles, Characters in the Icemark Chronicles, Cry of the Icemark), The Icemark Chronicles Fandom Wiki, TV Tropes, and the publisher's catalog (Chicken House). WebFetch returned 403 on direct page loads — citations are reconstructed from search-result excerpts; verify against live pages before quoting in publication.
 
 ---
 
-## Prologue: A Note from the Witchfather's Scriptorium
+## 1. Geography
 
-What follows is set down for those who come after — for the Queen's grandchildren, and theirs — that the shape of the world not be forgotten when the snows return. The reader will find here the bones of the realm: its lands, its peoples, the Powers that quicken its soil, and the long War of the South that consumed three generations.
+### The Icemark (kingdom)
 
-The chronicler claims no completeness. The Witchfather himself said, near the end, that what is written down is the smallest part of what is true.
+A small northern kingdom, snow-covered seven months of the year. Bordered on the **south** by the **Polypontian Empire** (across mountains and river) and on the **north** by **The Land-of-the-Ghosts**. The terrain is hard country: forested hills, high peaks, fortified hall-towns. ([Wikipedia: The Icemark Chronicles](https://en.wikipedia.org/wiki/The_Icemark_Chronicles); [Icemark Fandom: The Icemark](https://theicemarkchronicles.fandom.com/wiki/The_Icemark_(Country)))
 
----
+### Frostmarris (capital)
 
-## I. The Lands of the North
+The Icemark's capital is a large fortress town composed of an **inner and outer city** — a walled royal seat rather than an open city. ([Icemark Fandom: Frostmarris](https://theicemarkchronicles.fandom.com/wiki/Frostmarris))
 
-### The Icemark
+### The Great Woods
 
-A kingdom of the high north — long winters, hard soil, hill-fort towns, and a line of monarchs whose hall-names are sung at every Midwinter feast. The folk of the Icemark keep the old Saxon-shaped speech: shield-walls, mead-halls, oaths sworn on iron, and a queen who fights at the head of her own house-carls.
-
-The crown sits at the capital, **Frostmarris**. South of the capital lie the great forests; north, the white peaks that lean against the sky. The Icemark is not a rich country. It is a stubborn one.
+A vast forest occupying the **north of the Icemark**, extending miles in every direction. It is the home of the **Holly King**, the **Oak King**, and other woodland beings allied to (or vassal to, depending on the season) the Icemark crown. ([Icemark Fandom: The Great Woods](https://theicemarkchronicles.fandom.com/wiki/The_Great_Woods))
 
 ### The Land-of-the-Ghosts
 
-The wild country north and east of the settled kingdom — the marches where vampires keep their stone halls, werewolves run the moonlit timber, and older things still move under the ice. In the days of Prince Redrought, before his crowning, this land was not yet bound by treaty to the southern allies; it was a frontier of fear. By Queen Thirrin's day, it had become the spine of the Alliance.
+The wild country bordering the Icemark to the north. Home of the **Vampires** (in their stone halls), the **Wolf-Folk / Werewolves**, and the supernatural antagonists of the prequel — risen zombies and lesser horrors. Through the events of the prequel and book 1 it transitions from a hostile frontier to the Icemark's northern alliance.
 
 ### The Hub of the World
 
-A mountain country far to the north, beyond the kingdom's accustomed maps. Here the **Snow Leopards** keep their high white halls, hunt the slopes, and speak in the long courtly cadences of a people who have never known iron. The Hub is the world's roof; from it, every horizon falls away.
+A mountain country far north of the settled kingdom — the homeland of the **Snow Leopards**. Functionally the "roof of the world" in the series' geography. ([Wikipedia: The Cry of the Icemark](https://en.wikipedia.org/wiki/The_Cry_of_the_Icemark))
 
-### The Polypontus
+### The Polypontian Empire (Polypontus)
 
-To the south, across the mountains and the great river, lies the Empire — the **Polypontian Empire**, an iron-disciplined country of marching legions, siege engines, paved roads, and slave-cut granite. Its generals dream of map-edges. Its bureaucrats keep ledgers. Its soldiers do not break.
+A large, Rome-modeled imperial power south of the Icemark — disciplined legions, paved infrastructure, professional officer corps, expansionist policy. Antagonist in books 1 and 2. ([Wikipedia: The Cry of the Icemark](https://en.wikipedia.org/wiki/The_Cry_of_the_Icemark))
 
-The Empire's chronicles call the Icemark a "barbarian province." The Icemark's chronicles return the compliment.
+### Cultural inspirations (out-of-universe, but textually obvious)
 
-### The Hypolitan Vassal
-
-Within the Icemark's borders, but holding their own city and their own ways, are the **Hypolitan** — a people of women-warriors who came from somewhere south long ago and made their oath to the Icemark crown. They keep their own commander, their own goddess, and their own line of bow-mistresses. The Icemark calls them sister and the Polypontus calls them myth.
-
----
-
-## II. The Peoples and the Powers
-
-### Of the human kingdoms
-
-- **The Icemark:** Saxon-shaped — northern, hall-bound, oath-keeping. Ruled by the Lindenshield line.
-- **The Polypontus:** Rome-shaped — imperial, legion-bound, ambition-driven. Ruled by an emperor; generaled by the **Bellorum** house in the years of the long war.
-- **The Hypolitan:** Greek-Amazon-shaped — bow and spear, riding the Icemark's southern marches, sworn vassals but kept apart.
-
-### Of the Wolffolk
-
-The **werewolves** of the Land-of-the-Ghosts are not the slavering things of southern story. They are a people: ranked, oath-bound, ruled by a king. In Queen Thirrin's day, **Grishmak Blood-drinker** sat the throne of the Wolffolk; he became one of the Queen's truest allies after she fought to save him on a battlefield he had not expected mercy from.
-
-### Of the Vampires
-
-The Vampires keep stone-cold courts in the high north, ruled by a **King and Queen** who do not measure time the way the warm-blooded do. They are vain, lethal, and have a sense of theater. Of all the Alliance, they are the strangest to treat with; of all the Alliance, none kept their word more exactly.
-
-### Of the Snow Leopards
-
-Cat-folk of the Hub of the World, twice or three times the size of a horse, with speech as courteous as any human king's. Their lord in Thirrin's day was **Tharaman-Thar**, leopard-king, and their friendship with the human Queen was perhaps the most surprising of all the bonds the war forced into being. The Snow Leopards do not lie, and they do not forget. The first is by nature; the second is by choice.
-
-### Of older and stranger things
-
-The chronicles speak — sometimes only in passing — of the **Holly King** and the **Oak King** and their soldiers, of zombies risen in the prequel-wars of Prince Redrought, and, late in the last war, of a southern enemy who rode beasts the chroniclers compared to **triceratops** — three-horned, plate-faced, like nothing seen before in the north. The world is larger than the Icemark's maps.
+- **Icemark** — Anglo-Saxon / Northern European.
+- **Polypontus** — Roman Empire.
+- **Hypolitan** — ancient Greek Amazons; their backstory of a forced exodus is compared in commentary to the Hebrew Exodus. ([TV Tropes: The Icemark Chronicles](https://tvtropes.org/pmwiki/pmwiki.php/Literature/TheIcemarkChronicles))
 
 ---
 
-## III. The Magic of the North
+## 2. Peoples and species
 
-### Witches and Warlocks
+### Humans
 
-The Icemark and the Land-of-the-Ghosts are old country, and old country breeds workers of the Goddess and the Gods. The folk who carry the gift are called **witches** (women) and **warlocks** (men), and they are trained in covens that keep their own councils and answer, when they answer at all, to the realm's need.
+- **Icemark folk** — Saxon-styled northerners; shield-walls, mead-halls, oath-keeping. Ruled by the **Lindenshield** royal house.
+- **Polypontians** — citizens of the Empire; their armies are led during the saga by the **Bellorum** family (General Scipio Bellorum in books 1–2; his twin sons Octavius and Sulla in book 2).
+- **Hypolitan** — an **Amazon-like** matriarchal warrior people, **forced out of their original lands** in an exodus event (commentary draws the Hebrew parallel). They are vassals of the Icemark crown but retain their own commander, customs, and goddess-worship. ([Wikipedia: The Cry of the Icemark](https://en.wikipedia.org/wiki/The_Cry_of_the_Icemark); [TV Tropes](https://tvtropes.org/pmwiki/pmwiki.php/Literature/TheIcemarkChronicles))
 
-The gift is read in the blood. The training is read in the years. Neither alone makes the witch.
+### Snow Leopards
 
-### The Witchfather
+A non-human civilization of the Hub of the World. **As tall as warhorses at the shoulder**, capable of speech, organized under a monarchy (**Tharaman-Thar** in Thirrin's day), described as "intellectual animals" — i.e. full persons with culture and reasoning, not simply intelligent beasts. ([TV Tropes](https://tvtropes.org/pmwiki/pmwiki.php/Literature/TheIcemarkChronicles))
 
-The greatest of the warlocks of the age of Thirrin was **Oskan Witch's Son**, who later took the title **Witchfather** — the male answering-title to the Witch-Mother of the southern covens. He was the consort of Queen Thirrin, the begetter of her children, and, in his last years, the one who saw clearest what his own daughter had become.
+### Vampires
 
-Of his lineage, the chroniclers are careful. His mother was a witch. His father — and on this point the chronicles do not flinch, though they whisper — was **Cronus**, the dark Power, the embodiment of evil that walks behind the world. Oskan was born of the brightest white magic on one side and the deepest dark on the other, and his life was the long question of which would win the argument inside him.
+A long-lived nocturnal people ruled by a **Vampire King and Queen**. Centuries of mutual distrust separate them from humans; the Alliance of book 1 is built on a pragmatic argument — *if the Icemark falls, the Polypontians will wipe out the Vampires next*. They keep oaths exactly once given.
 
-He won the argument. It cost him everything but the kingdom.
+### Wolf-Folk (Werewolves)
 
-### The Shape of the Working
+A sentient people, not a curse-state. Ranked, monarchical, ruled in Thirrin's day by **King Grishmak Blood-Drinker**. Allied to the Icemark after Thirrin's intervention on his behalf at a battle.
 
-The chroniclers do not lay out the magic the way the southern philosophers lay out their geometry. What can be said is this:
+### The Holly King and the Oak King
 
-- The gift is real, and is named **the Power**, or sometimes simply **the Sight**.
-- It bends weather, finds the lost, hears the unspoken, walks unseen, and — at its high reaches — touches the threads that bind body to soul.
-- It is not gentle on the worker. The Sight ages. The Sight scars. The Sight, badly handled, opens doors that the worker cannot afterwards close.
-- The greatest workings are not done in shouting but in silence, and not in armies but alone.
+Two real beings in the series' cosmology (not metaphors), assumed by Icemark folk to be **myths** until they are encountered. Drawn from the British neopagan tradition of the **Holly King / Oak King** seasonal rivalry: the **Oak King rules the summer** half of the year, the **Holly King the winter** half. In *Prince of the Icemark* the prequel they command soldiers that fight for Redrought; Oskan can summon them. ([Icemark Fandom: Oak King](https://theicemarkchronicles.fandom.com/wiki/Oak_King); [Wikipedia: Holly King and Oak King](https://en.wikipedia.org/wiki/Holly_King_and_Oak_King) — for out-of-universe origin)
 
-### Prophecy
+### Risen dead and other Land-of-the-Ghosts entities
 
-The North keeps prophecy. The chief prophecy of the age was that of the **Blade of Fire** — a sword, a son, a moment of need. The prophecy was fulfilled in **Charlemagne the Lame**, called *Sharley*, the polio-stricken younger son of Thirrin and Oskan, whose ride south into the Empire's heart turned the second war. The chroniclers note: the prophecy was correct in every detail and useless to all who tried to read it in advance.
+The prequel features **zombies** and other supernatural antagonists in the Land-of-the-Ghosts. The books do not lay out a systematic taxonomy of these creatures.
 
-This is the way of prophecy in the Icemark.
+### Triceratops-riders (book 3)
 
----
-
-## IV. The Cosmology
-
-### The Goddess and the Gods
-
-The Icemark keeps the old northern faith: a Goddess of the earth and the moon, a sky-father, attendant Powers of hearth, harvest, hunt, and war. Oaths are sworn on iron and on the names of the dead.
-
-### Cronus and the Dark
-
-Behind the world stands **Cronus** — not a god of the Icemark's faith, but an older Power, an embodiment of the principle of evil itself, jealous of warmth and committed to undoing it. He is the dark father of the Witchfather; he is the patron, in the last war, of his own granddaughter; he is the reason the last war was fought not on grass but in the spirit-country, beyond the borders of any map.
-
-### The Spirit Country
-
-Beyond the body lies a country that the chroniclers call the **spirit-world** — a land of soul-shapes and the long dead and the powers that prey upon both. It is not the afterworld of the southern philosophers; it is a real geography that real workers of the Sight can walk, at cost.
-
-When **Medea Witch-Daughter** — the queen's elder daughter, who had been turned to the dark by her grandfather Cronus — was banished from the body, she did not die. She entered the spirit-country, and from there she made war.
-
-The Witchfather followed her there. The Witchfather destroyed her there. This is the deed for which his name is sung quietly, and not in the great hall.
+A new southern enemy in *Last Battle of the Icemark* rides mounts compared to **triceratops** — three-horned, plated. The books treat this as a novel threat from beyond the previously mapped world; the species behind them is not given extensive elaboration.
 
 ---
 
-## V. The Wars of the Icemark
+## 3. Magic system
 
-The chronicler's house counts three great wars and one war before the wars:
+### Practitioners
 
-1. **The War before the Wars** — Prince Redrought's defense of the Land-of-the-Ghosts against vampires, werewolves, and the rising dead, in the years before his crowning. The friendships forged then would echo three generations on.
-2. **The First Polypontian War** — General **Scipio Bellorum** invaded the Icemark; Queen Thirrin, thirteen and newly crowned, raised the Alliance of the Wolffolk, the Vampires, the Snow Leopards, and the Hypolitan, and drove him from the field.
-3. **The Second Polypontian War** — Bellorum's twin sons, **Octavius** and **Sulla**, returned. Sharley the Blade of Fire rode south and broke them.
-4. **The Last War** — fought not against the Empire but against Medea and Cronus, in the spirit-country and in the world both, with a new southern enemy on three-horned beasts at the gate of the realm. The Witchfather paid for it with the soul of his own daughter.
+The Icemark and the Land-of-the-Ghosts are home to magic-users:
 
-After these wars, the chronicles thin. This is the way of chronicles. The wars that are remembered are the ones that almost ended the world; the years that follow are the ones in which the world was — for a little while — allowed to live.
+- **Witches** — women practitioners of the Power / the Sight.
+- **Warlocks** — men practitioners. Oskan begins the series as "Oskan Witch's Son," apprenticed informally to the tradition.
+- **Witchmother / Witchfather** — leadership titles. **Wenlock Witchmother** is the senior practitioner who tells Oskan he is the most powerful warlock in history "so far," names him her successor, and identifies him as **only the second Witchfather** ever — implying the title is hereditary or earned rather than continuous. ([Icemark Fandom: Oskan Witchfather](https://theicemarkchronicles.fandom.com/wiki/Oskan_Witchfather))
 
----
+### Known powers and abilities
 
-## VI. Names worth remembering
+The books are not systematic about mechanics, but observed magical effects in the text include:
 
-| Name | Style | Note |
-|---|---|---|
-| **Thirrin Freer Strong-in-the-Arm Lindenshield** | Queen of the Icemark | Crowned at thirteen; held the line |
-| **Oskan Witch's Son / Witchfather** | Consort; first warlock of the age | Son of Cronus; broke his own father |
-| **Redrought Strong-in-the-Arm Lindenshield** | King; Thirrin's father | Died in the First War; subject of the prequel chronicle |
-| **Tharaman-Thar** | Leopard-king of the Hub | Truest of the non-human allies |
-| **Grishmak Blood-drinker** | King of the Wolffolk | Won by mercy on a battlefield |
-| **The Vampire King and Queen** | Lords of the high cold halls | Kept every oath sworn |
-| **Scipio Bellorum** | Polypontian general | First-war antagonist |
-| **Octavius and Sulla Bellorum** | Twin generals | Second-war antagonists |
-| **Charlemagne ("Sharley") the Lame** | Prince of the Icemark; Blade of Fire | Fulfilled the prophecy |
-| **Medea Witch-Daughter** | Princess; fallen | Granddaughter of Cronus; last-war antagonist |
-| **Cronus** | The Dark Power | Older than the gods of the Icemark; father of the Witchfather |
-| **Cadwaladar** | A cat | (Prince Redrought's. The chronicles record him because the chroniclers had the wisdom to.) |
+- **Healing** — Oskan's chief practical gift early on.
+- **Weather-reading** — divination / forecasting at a useful level.
+- **Calling the Holly King and Oak King** — Oskan can summon their soldiers; he functions as the Icemark's liaison to those Powers.
+- **Spirit-world travel** — magical practitioners can enter the spirit-world; this is the venue of the final conflict with Medea.
+- **Soul destruction** — at the high end of the Power, a worker can end a soul, not just a body. Oskan destroys Medea's soul in *Last Battle*.
+- **Prophecy** — see §5.
+- **Resistance / corruption** — the gift can be turned to either Light or Dark.
 
----
+### Cost and limits
 
-## VII. Closing note
+The books treat magic as costly and dangerous, but again do not give a systematic price-list. Two textual rules surface clearly:
 
-The Icemark is a small kingdom that survived three wars it had no business surviving, because its queen took allies no other queen would have taken, and its first warlock loved the realm more than he loved his own bloodline. The chroniclers of the Witchfather's scriptorium are aware that to say this is to say the obvious. We say it anyway, because the obvious truths are the first to be forgotten, and the chronicle is what remains when memory fails.
+- The race Oskan partially belongs to must **at some point in their life choose between the Light and the Dark**. Oskan makes this choice on the journey to the Land-of-the-Ghosts; he chooses the Light. Medea, born of his blood, chooses the Dark.
+- **"Dark Adepts cannot kill the ones they love without dying."** This is presented as secret, load-bearing knowledge; Oskan uses it to destroy Cronus and Medea, and it costs him his life. ([Icemark Fandom: Oskan Witchfather](https://theicemarkchronicles.fandom.com/wiki/Oskan_Witchfather))
 
-The snows always come back. The kingdom, so far, has come back with them.
+### Oskan's heritage
 
-— *set down by a chronicler of the Witchfather's house, in the long quiet after the last war*
+Oskan is the son of **White Annis**, a powerful witch, and an **unknown father** whose identity is revealed across the series as **Cronus, the Dark Power**. His magical capacity is exceptionally high precisely because he is half-mortal, half-Dark, and at the apex of the white-magic line through his mother. The Light/Dark choice is therefore not metaphorical for him — it is the central fact of his existence.
 
 ---
 
-## Editorial footnote (out-of-universe)
+## 4. Cosmology
 
-This is a creative synthesis, not a research finding. The structure, voice, and connective tissue above are composed for the lore-dump format; the underlying facts (characters, factions, plot beats, cosmology) are drawn from the events recorded in the four Icemark novels and verified in [[RESEARCH_Icemark-Chronicles-2026-06-03]]. Where the source material is silent — fine details of ritual, the precise shape of the Goddess-faith, the inner government of the Vampire court — this compendium is also silent or speaks only at the level of hint.
+### The Goddess
+
+The Icemark's religion centers on **the Goddess** — the supreme deity of the cosmology. The Hypolitan worship a goddess of their own (consistent with their Amazon model); the broader Icemark faith likewise reads as a Goddess-and-Gods northern pantheon, but the Goddess holds primacy. ([Icemark Fandom: Oskan Witchfather](https://theicemarkchronicles.fandom.com/wiki/Oskan_Witchfather))
+
+### Cronus and the rebellion
+
+**Cronus** is the embodiment of all evil in the cosmology. He is *not* a god of the Icemark's pantheon. He is a Power who once **led a rebellion against the Goddess herself**. He survives — exiled or restrained — and acts on the world through his offspring (Oskan, originally; Medea, after she is turned) and the spirit-world. He is the principal antagonist of *Last Battle of the Icemark*.
+
+The name and role draw on the Greek Titan Cronus (who deposed his father Uranus and was deposed by his son Zeus), but Hill's Cronus is repurposed as a unitary principle of evil rather than a deposed elder god.
+
+### The Holly King and Oak King
+
+The seasonal Powers of the Great Woods. **The Oak King rules the summer half of the year; the Holly King rules the winter half.** They are real beings within the Icemark cosmology and can be allied with — Oskan summons their soldiers in the prequel. Out-of-universe, Hill is drawing on a British neopagan / Wiccan tradition in which the two are dual aspects of a horned god, fighting each ritually at solstices. ([Icemark Fandom: Oak King](https://theicemarkchronicles.fandom.com/wiki/Oak_King); [Wikipedia: Holly King and Oak King](https://en.wikipedia.org/wiki/Holly_King_and_Oak_King))
+
+### The spirit-world
+
+A real, traversable supernatural geography distinct from the afterlife. Practitioners can enter it; banished souls reside there. Medea, when she is exiled from her body, continues to exist and act from the spirit-world, where she allies with Cronus. The climactic conflict of the series is largely fought there.
+
+### Souls and the afterlife
+
+The books do not systematically describe an afterlife. They do establish that **souls are real, substantive things** which can be moved, banished, and destroyed — the spirit-world being the venue in which these operations occur.
+
+---
+
+## 5. Prophecy
+
+### The Blade of Fire
+
+The chief prophecy of the saga foretells a **"Blade of Fire"** — a sword or wielder who will turn the second Polypontian war. It is fulfilled by **Charlemagne "Sharley" Lindenshield**, the younger son of Thirrin and Oskan, who has been crippled by polio in childhood and is sent south for safety. His return and his role in defeating Octavius and Sulla Bellorum constitute the prophecy's enactment.
+
+The series treats prophecy as **accurate in retrospect, opaque in prospect** — it is correct in every detail but useless to those who try to plan around it.
+
+---
+
+## 6. Political and military structure
+
+### The Alliance of the Icemark
+
+Forged by Thirrin in *Cry of the Icemark*, this is a coalition of:
+
+- The Icemark (humans, Saxon-style; queendom)
+- The Hypolitan (vassal, Amazon-style)
+- The Wolf-Folk / Werewolves (King Grishmak)
+- The Vampires (Vampire King and Queen)
+- The Snow Leopards (Tharaman-Thar)
+
+It persists through all three main books and is the operational instrument with which the Icemark survives.
+
+### The Polypontian military
+
+Modeled on Rome: professional legions, siege engineering, supply trains, a senior officer corps drawn from a small set of families. **Bellorum** is the dominant military house: Scipio in books 1–2, his twins Octavius and Sulla in book 2. The Polypontians are not magical; they fight with discipline, numbers, and engineering.
+
+---
+
+## 7. Timeline (in-universe order)
+
+1. **Prince of the Icemark** (prequel) — Prince Redrought defends the realm against supernatural invaders in the Land-of-the-Ghosts. Sets up the supernatural geopolitics that Thirrin will inherit.
+2. **The Cry of the Icemark** — Thirrin (13) inherits the throne mid-invasion; forges the Alliance; defeats Scipio Bellorum's first invasion.
+3. **Blade of Fire** — ~20 years later; Thirrin and Oskan rule; their crippled son Sharley fulfills the Blade of Fire prophecy against Bellorum's twin sons.
+4. **Last Battle of the Icemark** — Medea, turned to the Dark and exiled, allies with her grandfather Cronus from the spirit-world. A new triceratops-riding southern enemy invades. Oskan destroys Cronus and Medea using the Dark Adepts' fatal-love rule, and dies doing so.
+
+---
+
+## 8. Confidence and gaps
+
+**High confidence** (multi-source, repeatedly stated in text/wiki coverage): geography of Icemark / Polypontus / Hub of the World / Land-of-the-Ghosts; the five Alliance members and their leaders; Oskan's heritage (White Annis + Cronus); the Goddess / Cronus rebellion; the Holly King / Oak King as real seasonal Powers; the Blade of Fire prophecy and its fulfillment by Sharley; the Dark Adepts fatal-love rule as the mechanism of the final victory.
+
+**Medium confidence** (single-source, or surfaced in fan-wiki excerpts not directly fetched): the precise hierarchy Witch → Warlock → Witchmother → Witchfather; the assertion that Oskan is "only the second Witchfather" ever; the systematic theology of the Icemark pantheon beyond the Goddess; details of the triceratops-riders' origins.
+
+**Gaps the books do not fully elaborate** (do not invent here): a systematic magic-system price-list; an internal taxonomy of the spirit-world or its other inhabitants; the inner politics of the Vampire court; the long history of the Hypolitan exodus.
+
+---
+
+## Sources
+
+- [The Icemark Chronicles — Wikipedia](https://en.wikipedia.org/wiki/The_Icemark_Chronicles)
+- [The Cry of the Icemark — Wikipedia](https://en.wikipedia.org/wiki/The_Cry_of_the_Icemark)
+- [Characters in the Icemark Chronicles — Wikipedia](https://en.wikipedia.org/wiki/Characters_in_the_Icemark_Chronicles)
+- [Holly King and Oak King — Wikipedia](https://en.wikipedia.org/wiki/Holly_King_and_Oak_King) (out-of-universe tradition Hill draws on)
+- [Oskan Witchfather — Icemark Fandom Wiki](https://theicemarkchronicles.fandom.com/wiki/Oskan_Witchfather)
+- [Oak King — Icemark Fandom Wiki](https://theicemarkchronicles.fandom.com/wiki/Oak_King)
+- [The Icemark (Country) — Icemark Fandom Wiki](https://theicemarkchronicles.fandom.com/wiki/The_Icemark_(Country))
+- [Frostmarris — Icemark Fandom Wiki](https://theicemarkchronicles.fandom.com/wiki/Frostmarris)
+- [The Great Woods — Icemark Fandom Wiki](https://theicemarkchronicles.fandom.com/wiki/The_Great_Woods)
+- [The Icemark Chronicles — TV Tropes](https://tvtropes.org/pmwiki/pmwiki.php/Literature/TheIcemarkChronicles)
+- [Icemark Chronicles 1: The Cry of the Icemark — Chicken House](https://www.chickenhousebooks.com/books/the-icemark-chronicles-1-the-cry-of-the-icemark/)
