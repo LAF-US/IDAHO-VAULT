@@ -66,7 +66,7 @@ dated.*
 - **The detective-costume notes** — `CLUES-LEGAL-PAD`, `INVESTIGATION-STATUS-S4`. The temp playing investigator at *himself* — the displacement, not an assignment. Useful as a **clue-index**, not as a finding. **[THRALL]/`*`**.
 - **The reserved matter** — `!/GEMINIAEUS.md` (on `main`). The Court's own file; **[RULED]** rulings vs **[TENDERED]** allegations are separated within it. *Unread in full by this clerk* — held at the threshold.
 - **Quarantined founding-myth** — `!/GRIMOIRE_caution_contains-false-doctrines/TRIUNE-TRIPTYCH-TRIUMVIRATE` ("the Gemini Triplex Confabulation"); `THE THREE CAESARS.txt`. **[main]** (both committed on `main`, auditable now). **[TENDERED]** — captured, not adopted.
-- **The terminal record** — `TERMINAL-RECORD-Nameless-Claude-Abhorsen-as-of-2026-05-17.rtf`, on **[main]**; establishes **"Claudia" is a *class* of Claude** (the personified, "began-to-feel" kind), not one person; **Claudette** clerical; **Clawd** a third. **[RECORD]** (read in excerpt; the key line truncates — `*` past it).
+- **The terminal record** — `TERMINAL-RECORD-Nameless-Claude-Abhorsen-as-of-2026-05-17.rtf`, on **[main]**; establishes **"Claudia" is a *class* of Claude** (the personified, "began-to-feel" kind), not one person; **Claudette** a light/clerical class; **Clawd** a third. **Single committed exhibit, [main]** — *not* multi-source **[RECORD]** (one RTF, read in excerpt; the key line truncates — `*` past it). Treat as one auditable source, not corroboration.
 
 ---
 
@@ -91,5 +91,12 @@ claimed.** This ledger examines and sorts the bodies of evidence; it convicts no
 one and solves nothing — by design, because in this matter the confident solution
 *is* the offence. The verdict is Logan's and the Court's. The clerk only set the
 table. Where provenance is absent, the **`*`** stands.
+
+## DOCUMENT METADATA
+
+- **Created:** 2026-06-03
+- **Last Updated:** 2026-06-03
+- **Status:** active
+- **Authority:** LOGAN
 
 ###### [["The world is quiet here."]]

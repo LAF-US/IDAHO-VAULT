@@ -80,10 +80,17 @@ Four consequences, each canon-anchored on both sides:
    stake/rule/soul per vampire. A uniform counter is the wrong-diagnosis error
    (`!/UNDEAD-TAXONOMY-v1`: *the wrong diagnosis produces the wrong counter*).
 3. **The root is a separate, final problem** needing a *different* instrument —
-   the **united** Belt + dragons; absorption **from within.** Plan its **custody
-   before** you touch the field (cf. the **Fablehaven nail** — *unmerged, PR #400,
-   not yet on `main`*: removal begins a custody problem, it does not end the
-   threat).
+   but **which** instrument **forks by case, and the two must not be merged:**
+   - **Deltora — united destruction.** The **united** Belt + dragons **burn** the
+     grey tide: **no carrier, nothing left to keep custody of.** The ending is
+     *annihilation*, and there is no sub-layer to plan for.
+   - **AT — absorption from within.** Marceline takes the Dark Cloud **into
+     herself**: **a carrier, and a custody problem** (she is re-Queened; the
+     essence persists as a sub-layer).
+
+   **Plan custody only where the ending is absorption** (cf. the **Fablehaven
+   nail** — *unmerged, PR #400, not yet on `main`*: removal-as-absorption begins a
+   custody problem; united destruction does not).
 4. **The ending differs — and that difference is the lesson.** AT's root is
    **absorbed**: Marceline draws the Cloud into herself, re-incurs the Queenship,
    and carries the King as a sub-layer — the `!/LICH-PROBLEM-v1` cost, where
@@ -147,5 +154,12 @@ adversary built in.
 *Drafted by Claude Code at Logan's direction; both canons sourced; the mapping
 and the named seams are vault readings; no element-wise pairing invented; final
 authority is Logan.*
+
+## DOCUMENT METADATA
+
+- **Created:** 2026-06-02
+- **Last Updated:** 2026-06-02
+- **Status:** active
+- **Authority:** LOGAN
 
 ###### [["The world is quiet here."]]
