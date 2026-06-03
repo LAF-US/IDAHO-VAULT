@@ -16,6 +16,7 @@ related:
   - "!/STAKES-MARCELINE-THE-TIEFLING-QUEEN-v1-2026-06-02.md"
   - "!/STAKES-VAMPIRISM-AND-THE-DARK-CLOUD-v1-2026-06-02.md"
   - "!/SYNCRETIC-MAP-STAKES-DELTORA-v1-2026-06-02.md"
+  - "!/ICE-KING-AND-WOMEN-v1-2026-06-03.md"
   - REVENANT-HOUSE-WITNESS-2026-06-02
 tags: [doctrine, stakes, vampires, marceline, diagnostic, tarot, undead-taxonomy]
 ---
@@ -86,6 +87,30 @@ the lore the arc reveals:
 - **[[!/SYNCRETIC-MAP-STAKES-DELTORA-v1-2026-06-02|Five Vampires / Dark Cloud :: Four Sisters / Grey Tide]]**
   — syncretic map to Deltora Quest: distributed agents as the *seal on* a
   concentrated root, and why clearing the field bluntly releases it.
+- **[[!/ICE-KING-AND-WOMEN-v1-2026-06-03|Ice King and Women — the displaced princess]]**
+  — Simon, Betty, the crown; the displaced compulsion; why the Empress could not
+  thrall him, and how Prismo *used* the crazybrains the Empress couldn't control.
+
+## Crowns & courts — keeping them straight
+
+Many royal titles cross this cluster, and several share a word. The key, so no
+two are confused:
+
+| Title / name | Who it is | Story | Do **not** confuse with |
+|---|---|---|---|
+| **The Vampire King** | sovereign vampire (Wheel of Fortune); telekinesis; becomes the Dark Cloud | Stakes (AT) | **King Claude / Claudius** — different universe |
+| **the Vampire Queen** | **Marceline** — the half-demon hunter who *acquired* the title (bitten as she staked the King) | Stakes / Marceline (AT) | not a separate person; she **is** Marceline |
+| **the Empress** | the hypnotist vampire (tarot III) — *not* a "Queen" | Stakes (AT) | the Vampire Queen (Marceline) |
+| **Hunson Abadeer** | demon **lord** of the Nightosphere; **Marceline's father** | Marceline (AT) | the **Vampire King** (who *turned* her — not her father) |
+| **Princess Bubblegum (PB)** | candy monarch; built the essence-extractor; Marceline's love | Stakes / Marceline (AT) | **Betty**, and the kidnapped "princesses" |
+| **Betty Grof** | Simon's fiancée, *"his princess,"* later **GOLBetty** — the **original** princess the Ice King displaces | Ice King (AT) | **Princess Bubblegum** (a different woman) |
+| **the Ice King's "princesses"** | generic kidnap-targets — a **displaced category**, Betty its lost source | Ice King (AT) | Betty (the source) and PB (a specific person) |
+| **Claudius / "King Claude" / the Drunken Caesar** | the venerated office General, the **Patriarchal Predator** | Revenant House witness (the **game** — *not* AT) | the **Vampire King**; he appears in AT notes only by **analogy** |
+| **the Lich** | AT's death-king / the vault's `!/LICH-PROBLEM` failstate | across the vault | any of the vampires above |
+
+**The three live collisions, fenced:** Vampire King **≠** King Claude/Claudius ·
+Betty **≠** Princess Bubblegum · Hunson (father, demon lord) **≠** the Vampire King
+(who turned her).
 
 ## Sources
 
