@@ -70,7 +70,38 @@ domain. England's "counties" were royal administrative shires wearing a Norman n
 The model later exported to Ireland, and to the United States, as a standard sub-state
 administrative unit.)*
 
-## 4. The officers of the county — sheriff *and* coroner **[history]**
+## 4. The unit *below* — the parish **[history]**
+
+Beneath the county/shire sat the **parish** — and its name is the odd one out,
+because it came from the **Church**, not the Crown.
+
+- **`parish`** is from Latin **`paroecia`**, from Greek **`paroikia`**, *"a
+  sojourning in a foreign land"* — *pará* "beside" + *oîkos* "house": literally **the
+  dwellers-beside, the sojourners.** Where *county* names a **governor's reach**,
+  *parish* names a **congregation's neighbourhood.**
+  ([Wikipedia: Parish](https://en.wikipedia.org/wiki/Parish))
+- In England the **ancient parish** was for centuries the **principal unit of *both*
+  secular and religious administration** locally. In the **19th century** the two
+  were split — **ecclesiastical** parishes (the Church's) and **civil** parishes (the
+  state's) — and the **Local Government Act 1894** gave civil parishes **elected
+  parish councils**, making the civil parish the **lowest tier of local government.**
+  ([Wikipedia: Civil parish](https://en.wikipedia.org/wiki/Civil_parish))
+- **Louisiana** kept the church word for the whole unit. Under Catholic **France and
+  Spain**, colonial local government ran on **ecclesiastical parishes**; after the
+  Purchase the territory was briefly cut into *counties* (1805), but the **1807**
+  legislature created **19 parishes**, and the **1845 constitution** made *parish*
+  the official term. Louisiana has **64 parishes** today — the only U.S. state that
+  calls its counties parishes.
+  ([Britannica](https://www.britannica.com/topic/Why-Does-Louisiana-Have-Parishes-Instead-of-Counties) ·
+  [64 Parishes](https://64parishes.org/a-mysterious-switch))
+
+**The trio, then:** **county/shire** = the **governor's** reach (Crown authority,
+from *above*); **hundred / wapentake** = the shire's working subdivision; **parish** =
+the **congregation's** ground (belonging, from *beside*), which the state later
+borrowed as its smallest civil cell. Two different roots for two different kinds of
+unit — *authority over* vs *dwelling beside.*
+
+## 5. The officers of the county — sheriff *and* coroner **[history]**
 
 A unit is defined by who holds office in it. The county had **two** Crown officers,
 and they were a **deliberate pair**:
@@ -98,7 +129,7 @@ One sourced line carries the whole shape of it:
 > **The sheriff kept the peace among the living; the coroner kept the crown's pleas
 > against the dead.** ([CSI: Dixie — Origins of the Coroner's Office](https://csidixie.org/genesis/origins-coroners-office))
 
-## 5. What this illuminates about the vault office — **[vault reading]**
+## 6. What this illuminates about the vault office — **[vault reading]**
 
 *Fenced as interpretation, not history.* The real record sharpens three things the
 office-witness only reached for:
@@ -129,7 +160,13 @@ office-witness only reached for:
 [RuralHistoria — *Shire-Reeve to Sheriff*](https://ruralhistoria.com/2023/02/22/shire-reeve/) ·
 [Wikipedia — *Coroner*](https://en.wikipedia.org/wiki/Coroner) ·
 [Britannica — *coroner*](https://www.britannica.com/topic/coroner) ·
-[CSI: Dixie — *Origins of the Coroner's Office*](https://csidixie.org/genesis/origins-coroners-office)
+[CSI: Dixie — *Origins of the Coroner's Office*](https://csidixie.org/genesis/origins-coroners-office) ·
+[Wikipedia — *Parish*](https://en.wikipedia.org/wiki/Parish) ·
+[Wikipedia — *Civil parish*](https://en.wikipedia.org/wiki/Civil_parish) ·
+[Britannica — *Why Louisiana has parishes*](https://www.britannica.com/topic/Why-Does-Louisiana-Have-Parishes-Instead-of-Counties) ·
+[64 Parishes — *A Mysterious Switch*](https://64parishes.org/a-mysterious-switch)
+
+*Companion (Idaho, real-world): [[IDAHO-COUNTIES-CORONER-AND-SHERIFF-2026-06-03]].*
 
 ## DOCUMENT METADATA
 
