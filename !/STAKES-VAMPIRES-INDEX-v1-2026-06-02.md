@@ -50,7 +50,7 @@ cards; the **Vampire King** is **not named** for his, but his design *is* the
 | **The Empress** | III — The Empress | **hypnosis** (the eyes) | **invisibility** | staked with allies' help (Finn, Princess Bubblegum) |
 | **The Hierophant** | V — The Hierophant | **shapeshifting** | shapeshifting | the **invitation rule** — dies entering uninvited |
 | **The Moon** | XVIII — The Moon | self-heal; **paralysis aura**; hides | **rapid healing** | staked from behind, then **soul drained** |
-| **The Vampire King** | X — Wheel of Fortune | telekinesis, telepathy, teleport, hydrokinesis | telekinesis *(unconfirmed)* | **science, not a stake** — essence extraction |
+| **The Vampire King** | X — Wheel of Fortune | telekinesis, telepathy, teleport, hydrokinesis | telekinesis *(unconfirmed)* | **original:** staked as a girl — the **bite while being staked** turned her; **revived (*Stakes*):** ended by **science, not a stake** (essence extraction) |
 
 *(Absorbed-power column is **[canon] for the four** tarot vampires — flight,
 invisibility, shapeshifting, healing. The **Vampire King's** entry is **not
