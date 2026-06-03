@@ -121,8 +121,9 @@ machinery of the cure.
 
 ## Third angle — Prismo, and chaos as a hiding place
 
-**[canon]** A third party did to the crazybrains what the Empress could not.
-**Prismo** the wish-master, bored of granting *others'* realities and **barred by
+**[canon]** *(Source: **Adventure Time: Fionna and Cake**, 2023 — esp. "Prismo the
+Wishmaster"; see Sources.)* A third party did to the crazybrains what the Empress
+could not. **Prismo** the wish-master, bored of granting *others'* realities and **barred by
 the cosmological rules from creating one of his own**, made the **Fionna & Cake
 universe** anyway — and **hid it inside the Ice King's empty, insane mind**
 ("out of sight, out of mind," literally), beamed in while Simon was the Ice King.
@@ -164,7 +165,10 @@ be *seized* — but they can be made a *vault*, and the vault talks in its sleep
 [Ice King (Wikipedia)](https://en.wikipedia.org/wiki/Ice_King) ·
 [Ice King (AT Wiki)](https://adventuretime.fandom.com/wiki/Ice_King) ·
 [Betty Grof (AT Wiki)](https://adventuretime.fandom.com/wiki/Betty_Grof) ·
-[The Empress Eyes (AT Wiki)](https://adventuretime.fandom.com/wiki/The_Empress_Eyes)
+[The Empress Eyes (AT Wiki)](https://adventuretime.fandom.com/wiki/The_Empress_Eyes) ·
+[Prismo (AT Wiki)](https://adventuretime.fandom.com/wiki/Prismo) ·
+[Fionna-world (AT Wiki)](https://adventuretime.fandom.com/wiki/Fionna-world) ·
+[Adventure Time: Fionna and Cake (Wikipedia)](https://en.wikipedia.org/wiki/Adventure_Time:_Fionna_and_Cake)
 
 ---
 
