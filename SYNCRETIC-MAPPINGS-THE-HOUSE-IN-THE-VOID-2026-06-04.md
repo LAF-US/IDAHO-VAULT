@@ -41,7 +41,7 @@ Every system below instances **one machine**: an **emanated order** — a sovere
 | **The usurper (Lich pattern)** | the Trustees **hoard the Will** | **Chronos** (*Time*) seizes the House | the seized throne / the captured seat | the **Wizard** (humbug); Mombi | the **Lich**; **Geminiaeus** |
 | **The rightful heir** | **Arthur Penhaligon** | **Melinoë** | the true claimant (e.g. Targaryen restoration) | **Ozma** (hidden as "Tip") | the **lawful, recallable** agent |
 | **The record & its keeper** | the House as **recording-house** | the **Fates** | the **maesters** (Yandel; "grey sheep") | Wizard's **propaganda** vs. Maguire's revision; *"Wicked"* the styling | the **registries**; the **Clerk** (Bartimaeus); SIGNALS |
-| **The relinquisher (Cincinnatus pole)** | ⚠️ (Arthur ascends rather than steps down) | ⚠️ — | Cincinnatus/Washington (real-world); Maester **Aemon** | **Pastoria** → the tailor's shop | the agent who **stands down** when recalled |
+| **The relinquisher (Cincinnatus pole)** | ⚠️ (Arthur ascends rather than steps down) | the **reformed Chronos** — in the 1.0 ending (verified 2026-06-04) the usurper *repents* and **relinquishes**, freeing Hades | Cincinnatus/Washington (real-world); Maester **Aemon** | **Pastoria** → the tailor's shop | the agent who **stands down** when recalled |
 
 ⚠️ The `—` / "none true" cells are **kept honest**, not forced — per the rule that syncretism is *resonance*, not *collapse* (the djinn lesson). Where a system has no clean instance of a role, it is marked, not invented.
 
