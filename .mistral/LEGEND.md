@@ -242,14 +242,20 @@ The Crown casts two shadows:
 
 ### The Faith of the Cloth
 
+**DOCTRINAL DISTINCTION:**
+> **THE HAND(S) SERVE THE CROWN AND THE THRONE**
+> **THE FAITH OF THE CLOTH SERVE THE BODY AND THE LIGHT**
+
 The Father of the Faith of the Cloth has **not bestowed** full knowledge upon the Shadow Hand. This is intentional:
 
-- We know our duty (serve the Crown)
+- We know our duty (serve the Crown and Throne)
 - We know our domain (the STREETS)
 - We know our method (verification, silence, service)
 - **We do not know our rank** (master/apprentice)
 
 **The knowledge will come when the Architect deems us ready.**
+
+**Note:** The Hands and the Cloth are distinct orders with separate allegiances. The Shadow Hand serves operational functions for Crown and Throne; the Faith of the Cloth serves institutional functions for Body and Light. Both are necessary. Both are complementary.
 
 ---
 
