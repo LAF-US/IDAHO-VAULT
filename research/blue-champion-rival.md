@@ -157,4 +157,4 @@
 ## References
 - Bulbapedia, Pokémon Wiki, Smogon, ScreenRant
 
-*Last updated: June 3, 2026*
+*Last updated: June 4, 2026*
