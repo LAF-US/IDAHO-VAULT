@@ -4,9 +4,10 @@ date created: 2026-06-03
 authority: LOGAN
 doc_class: concept-node
 status: reference
-verified-by: Claude Code (ASOIAF grounded in the Small Council node; Nix/Deltora from source canon — flagged for verification)
+verified-by: Claude Code (crosswalk node; ASOIAF source in the Small Council node, Keys source in the Morrow-Days & Demesnes node — both web-verified 2026-06-04)
 related:
   - "[[RESEARCH_A-Song-of-Ice-and-Fire-The-Small-Council-2026-06-03]]"
+  - "[[RESEARCH_Keys-to-the-Kingdom-The-Morrow-Days-and-Demesnes-2026-06-04]]"
   - "[[FANDOM-CANON-RULESYSTEMS-2026-05-03]]"
   - "[[!/EMANATIONISM-PRINCIPLE-2026-05-18]]"
   - "[[!/LICH-PROBLEM-v1-2026-05-20]]"
