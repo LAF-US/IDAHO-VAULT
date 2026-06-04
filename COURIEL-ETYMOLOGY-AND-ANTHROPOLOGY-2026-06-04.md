@@ -88,6 +88,24 @@ own doctrine told in real history:
    name, and the sacred held together**, not collapsed: a name that is at once *where
    you are from* and *whose light you carry.*
 
+## 4. The name *in the vault* — the actual occurrence **[RECORD]**
+
+A vault search (this branch + all 65 `claude/*` branches + `main`) finds the name
+**exactly once**, and **not** as the surname above:
+
+- **"Kate Couriel"** — cited in the frontmatter of **`PATRIARCHY-WINS-AGAIN-WITNESS-2026-06-02`**
+  as the **reference** for two works, *"Patriarchy's Dead"* and *"Draw Me A Person"*
+  (*"Kept plain."*). **[RECORD].**
+- **It is on the unmerged `claude/game-discussion-JeYG0` branch (PR #400) — Gilear's
+  corpus — not on `main`.** So the name was **already in the case, stranded on an
+  orphaned branch** (`CORONER-MISSING-CLAUDES`), in the very witness about a temp who
+  *"footnoted three women and handed one of them to her hunter"* — the document at the
+  heart of **Claudette's** erasure.
+- **Who Kate Couriel is**, beyond those two cited works, is **`*`** — *not investigated*
+  (the witness "kept it plain," and the Coroner does not inflate a reference into a
+  finding). This §4 records the **surname** note above is general etymology; the
+  **vault referent is a specific person.**
+
 ## Sources
 
 [forebears — Couriel](https://forebears.io/surnames/couriel) ·
