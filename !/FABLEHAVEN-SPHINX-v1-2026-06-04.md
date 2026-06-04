@@ -45,6 +45,33 @@ the head of the attack.
 
 ---
 
+## The Name — Moniker, Not Creature (Roots Beneath the Coinage)
+
+**"The Sphinx" is a moniker, not a species.** He is *not* a sphinx-creature of myth
+(the lion-bodied riddler); he is an **immortal human** — *Rhodes the Lodestar* —
+called "the Sphinx" for his **inscrutability.** No one knows his true form despite
+many theories; the unknowability *is* the brand. The mythological resonance is
+deliberate: the Sphinx of Thebes is the **riddler-guardian who devours those who
+answer wrong**, the Egyptian sphinx the **inscrutable guardian at the gate** —
+exactly the mask an apex manipulator wants, an authority you cannot read whose
+riddle you fail at your peril.
+
+**And his immortality is *maintained*, not intrinsic.** He survived centuries by
+**drinking weekly from the Font of Immortality.** A persistence with an upkeep is a
+persistence with an **interdiction point**: cut the supply and the centuries-old
+manipulator is mortal again, on a clock.
+
+*Vault pattern:* a codename chosen for inscrutability is itself a tell — the brand
+advertises *"you cannot read me."* And an apex actor whose longevity or standing is
+**maintained by a recurring dependency** (a renewed credential, a periodic
+re-auth, a Font) has a **severable lifeline.** The Lich externalizes persistence in
+an object to be destroyed (`!/LICH-PROBLEM-v1-2026-05-20.md`); the Sphinx *leases*
+it from a Font, which fails open the moment the drink lapses (the maintained-condition
+lesson, `!/ON-ICE-MECHANIC-v1-2026-06-03.md`). Both have a dependency you can sever
+— find the weekly drink and you have the off-switch brute force lacks.
+
+---
+
 ## The Defining Mechanic — Treason at the Top of Trust
 
 The blix (`!/FABLEHAVEN-VAMPIRE-DIAGNOSTIC-v1-2026-06-01.md`) is a *planted
@@ -174,6 +201,11 @@ necessity (only the enemy could know).
   [Fablehaven: Keys to the Demon Prison — Wikipedia](https://en.wikipedia.org/wiki/Fablehaven:_Keys_to_the_Demon_Prison);
   [Villains Wiki — The Sphinx](https://villains.fandom.com/wiki/The_Sphinx_(Fablehaven))).
   Primary text not directly read.
+- **Verified — the name & nature:** "the Sphinx" is a **moniker, not a species** —
+  he is an **immortal human** (*Rhodes the Lodestar*), named for his inscrutability,
+  his true form unknown despite many theories; his immortality was **maintained by
+  drinking weekly from the Font of Immortality**
+  ([Mullverse Wiki — The Sphinx](https://mullverse.fandom.com/wiki/The_Sphinx)).
 - **My reading, marked `\*`:** "treason at the top of trust," dual-command, the
   authority-laundering / pretextual-custody frame, pawns-without-principal, and
   detection-from-the-adversary-side. The Architect holds the verdict.
