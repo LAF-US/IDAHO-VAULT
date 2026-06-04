@@ -81,10 +81,10 @@ Two clauses make the difference matter:
   sheriff.** **But not absolutely: optional forms.** **Idaho Const. Art. XVIII §12**
   lets a county **adopt an optional form of government that supersedes §6**; under an
   optional form the coroner may be **elected to a different term, appointed by the
-  commissioners, or the office eliminated** and its duties reassigned (optional and
-  charter forms codified at **Idaho Code Title 31, Ch. 50–58** — **§ 31-5001** lists the
-  exclusive optional forms, including **office consolidation (Ch. 57)** and the
-  **charter form (Ch. 58)**). So entrenchment is the **rule for the default form**, not
+  commissioners, or the office eliminated** and its duties reassigned (**§ 31-5001**
+  lists the **exclusive optional forms — Ch. 52–57**, including **office consolidation
+  (Ch. 57)**; the **charter form** is **separate, in Ch. 58**, *not* among the §31-5001
+  list). So entrenchment is the **rule for the default form**, not
   an iron law.
   ([Idaho Const. Art. XVIII](https://legislature.idaho.gov/statutesrules/idconst/ArtXVIII/) ·
   [CDC — Idaho Coroner/ME Laws](https://www.cdc.gov/phlp/php/coroner/idaho.html))
