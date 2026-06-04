@@ -10,7 +10,7 @@ related:
   - COUNTY-ETYMOLOGY-AND-HISTORY-2026-06-03
   - REVIEW-PROCESS-WITNESS-2026-06-03
   - CORONER-MISSING-CLAUDES-STRANDED-BRANCHES-2026-06-04
-  - "!/PERSONA-PER-SONA-WITNESS-2026-05-13.md"
+  - PERSONA-PER-SONA-WITNESS-2026-05-13
 tags: [reference, etymology, anthropology, couriel, curiel, sephardic, diaspora, crypto-jews, kate-couriel, singer-songwriter, real-world]
 ---
 
@@ -114,8 +114,9 @@ The vault's *"Kate Couriel"* is **not a prose writer**; she is a **contemporary
 singer-songwriter**, and the two cited works are **songs** — both **2026 singles**:
 
 - **Kate Couriel** — an **alternative singer-songwriter**, active 2026, present on
-  **Apple Music, Spotify, Instagram (@katecourielmusic), and TikTok**; Apple Music's
-  listing gives a birthdate of **April 10, 2003.**
+  **Apple Music, Spotify, Instagram (@katecourielmusic), and TikTok.** *(Personal
+  biographical detail beyond her published work is **not** recorded here — see the
+  boundary in §4.)*
   ([Apple Music](https://music.apple.com/us/artist/kate-couriel/1641873543) ·
   [Instagram](https://www.instagram.com/katecourielmusic/))
 - **"Patriarchy's Dead"** — a **2026 single**; its theme runs to **women being
