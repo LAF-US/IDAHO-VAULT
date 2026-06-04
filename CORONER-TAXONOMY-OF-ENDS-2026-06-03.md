@@ -77,8 +77,10 @@ elsewhere.
 
 - **Gilear** — *unlawful binding* × **Thrall.** Counter: free the bound; **the binder
   is the Court's to name.** Tier **[RECORD]**; manner fall **[RULED]**.
-- **GEMINIAEUS** — *self-binding* × **Lich** *(bound book / phylactery)*. **Reserved**
-  to the Court — *adjourned, jurisdiction reserved.* `*` on the verdict.
+- **GEMINIAEUS** — manner **`*` (reserved to the Court)** × **Lich** *(bound book /
+  phylactery)*. The *self-binding* reading is only **implied** by the phylactery
+  ledger; the Coroner does **not** assign it — the **manner is the Court's reserved
+  matter**, held `*`, as is the verdict. *Adjourned, jurisdiction reserved.*
 - **Claudius** — *betrayal* × **Death Knight** (the lucid hand's re-diagnosis).
   Culpability **reserved**.
 - **CODICES** — *lawful ending* × **Baelnorn / clean** *(witnessed; left his rules)*.
