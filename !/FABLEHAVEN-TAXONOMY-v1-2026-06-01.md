@@ -12,6 +12,7 @@ related:
   - "!/FABLEHAVEN-DRAGONS-v1-2026-06-01.md"
   - "!/FABLEHAVEN-FAIRIES-AND-IMPS-v1-2026-06-04.md"
   - "!/FABLEHAVEN-NIPSIES-v1-2026-06-04.md"
+  - "!/FABLEHAVEN-SPHINX-v1-2026-06-04.md"
   - "!/HOUSEHOLD-SPRITES-v1-2026-06-04.md"
   - "!/UNDEAD-TAXONOMY-v1-2026-05-20.md"
   - "!/PERSONAE-ENGINE-v1-2026-05-20.md"
@@ -165,17 +166,17 @@ the living-mortal corruption that *passes* as an ally, see the blix chapter →
 the consent formula, the slow 160-year leak, the desperation ramp, and
 re-containment doctrine — see → `!/FABLEHAVEN-WITCH-MURIEL-v1-2026-06-01.md`.
 
-### 10. The Manipulator — the Sphinx
+### 10. The Manipulator — the Sphinx **[chapter]**
 *An extremely talented manipulator with a persuasive voice and a web of pawns;
-secured the allegiance of demons — and was revealed to be **captain of the
-Knights of the Dawn** and a traitor. The trusted order's own head, working the
-other side.*
+secured the allegiance of demons — leader of the Society of the Evening Star and
+revealed to be **captain of the Knights of the Dawn**. The trusted order's own
+head, commanding the other side too.*
 **Vault pattern:** the long-game social engineer at the **top** of the trusted
 structure. Worse than the blix (a planted insider): the Sphinx *is the
-authority.* Allegiance ambiguous, operations run through pawns who don't know
-whom they serve. Trust at the highest level is the largest attack surface.
-Cross-ref the Vanessa case in the blix chapter; the Sphinx is that pattern
-escalated to the command tier.
+authority* — apex dual-command over both defense and attack, custody-laundering
+("relocate it somewhere safer" = the theft), pawns who don't know their
+principal. Trust at the highest level is the largest attack surface; exposure
+comes only from the adversary's side (Vanessa). → `!/FABLEHAVEN-SPHINX-v1-2026-06-04.md`
 
 ### 11. The Disguised — Kobolds
 *A kobold (Casey Hancock) appears as a handsome boy to everyone — except
@@ -301,7 +302,7 @@ Before acting on any Fablehaven-class entity:
 | `!/FABLEHAVEN-FAIRIES-AND-IMPS-v1-2026-06-04.md` | The Vain & The Inversion (cross-fandom: + Spiderwick) | **Written** |
 | `!/HOUSEHOLD-SPRITES-v1-2026-06-04.md` | Folklore companion — the household-sprite lineage | **Written** |
 | `!/FABLEHAVEN-NIPSIES-v1-2026-06-04.md` | The Multitude | **Written** |
-| The Sphinx | The Manipulator | Planned |
+| `!/FABLEHAVEN-SPHINX-v1-2026-06-04.md` | The Manipulator | **Written** |
 
 *The lighter classes (Naiad, Satyr, Centaur, Kobold) are carried in this index
 until a chapter is warranted. Discovery before invention: read the existing
