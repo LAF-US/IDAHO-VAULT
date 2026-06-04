@@ -32,6 +32,20 @@ installed_agents = []
 skill_paths = []
 enabled_skills = []
 disabled_skills = []
+connectors = [
+    { name = "github_app", disabled = false },
+    { name = "linear", disabled = false },
+    { name = "notion", disabled = false },
+    { name = "slack", disabled = false },
+    { name = "gmail", disabled = true },
+    { name = "box", disabled = false },
+    { name = "atlassian", disabled = false },
+    { name = "google_calendar", disabled = true },
+    { name = "outlook", disabled = true },
+    { name = "outlook_calendar", disabled = true },
+    { name = "sharepoint_online", disabled = true },
+    { name = "stripe", disabled = true },
+]
 
 [[providers]]
 name = "mistral"
@@ -136,10 +150,24 @@ allowlist = [
     "echo",
     "find",
     "findstr",
+    "git add",
+    "git branch",
+    "git checkout",
+    "git commit",
     "git diff",
     "git log",
+    "git ls-files",
+    "git ls-remote",
+    "git ls-tree",
+    "git merge-base",
+    "git push",
+    "git rev-parse",
+    "git show",
     "git status",
+    "grep",
+    "ls",
     "more",
+    "sort",
     "tree",
     "type",
     "ver",
@@ -268,7 +296,7 @@ max_content_bytes = 120000
 user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 
 [tools.web_search]
-permission = "ask"
+permission = "always"
 allowlist = []
 denylist = []
 sensitive_patterns = []
@@ -276,7 +304,7 @@ timeout = 120
 model = "mistral-vibe-cli-with-tools"
 
 [tools.write_file]
-permission = "ask"
+permission = "always"
 allowlist = []
 denylist = []
 sensitive_patterns = [
