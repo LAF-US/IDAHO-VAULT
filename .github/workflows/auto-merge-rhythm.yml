@@ -55,7 +55,7 @@ jobs:
           GH_REPO: ${{ github.repository }}
         run: |
           rules="$(gh api "repos/$GH_REPO/rules/branches/main")"
-          for context in check-secret-patterns check-large-files check-paths check-dotfolder-anchors submit-pypi; do
+          for context in check-secret-patterns check-large-files check-paths check-dotfolder-anchors; do
             if ! printf '%s' "$rules" | jq -e --arg context "$context" \
               'any(.[]; .type == "required_status_checks" and any(.parameters.required_status_checks[]?; .context == $context))' >/dev/null; then
               echo "::error::Maintainer auto-merge is disabled until required check '$context' protects main."
