@@ -2,7 +2,7 @@
   "session_id": "b4276940-0a70-d7fd-1bb9-9b45a01c4b0d",
   "parent_session_id": "001b1e84-ca28-4b85-e95b-9b45a01c4b0d",
   "start_time": "2026-06-04T20:48:43.375374+00:00",
-  "end_time": "2026-06-04T20:53:10.472993+00:00",
+  "end_time": "2026-06-04T21:15:13.463423+00:00",
   "git_commit": "44f7705b981e418b25fdb9b1064edeefa225ae2a",
   "git_branch": "mistral/player-mistral-vibe",
   "environment": {
@@ -41,25 +41,25 @@
     }
   },
   "stats": {
-    "steps": 371,
-    "session_prompt_tokens": 39263130,
-    "session_completion_tokens": 167264,
-    "tool_calls_agreed": 343,
+    "steps": 376,
+    "session_prompt_tokens": 39578773,
+    "session_completion_tokens": 168685,
+    "tool_calls_agreed": 344,
     "tool_calls_rejected": 0,
     "tool_calls_failed": 12,
-    "tool_calls_succeeded": 331,
-    "context_tokens": 103826,
-    "last_turn_prompt_tokens": 100404,
-    "last_turn_completion_tokens": 3422,
-    "last_turn_duration": 173.0504474079935,
-    "tokens_per_second": 19.774580483644172,
+    "tool_calls_succeeded": 332,
+    "context_tokens": 106627,
+    "last_turn_prompt_tokens": 105988,
+    "last_turn_completion_tokens": 639,
+    "last_turn_duration": 41.74629059806466,
+    "tokens_per_second": 15.306749194852387,
     "input_price_per_million": 1.5,
     "output_price_per_million": 7.5,
-    "session_total_llm_tokens": 39430394,
-    "last_turn_total_tokens": 103826,
-    "session_cost": 60.149175
+    "session_total_llm_tokens": 39747458,
+    "last_turn_total_tokens": 106627,
+    "session_cost": 60.633297
   },
-  "total_messages": 53,
+  "total_messages": 59,
   "tools_available": [
     {
       "type": "function",
