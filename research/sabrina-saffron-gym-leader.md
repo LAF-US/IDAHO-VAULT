@@ -13,7 +13,7 @@
 
 ## Overview
 
-**Sabrina** (Japanese: ナツメ *Natsume*) is the **Gym Leader of Saffron City's Gym**, known officially as the **Saffron Gym**. She specializes in **Psychic-type Pokémon** and awards the **Marsh Badge** to trainers who defeat her in battle. She possesses psychic abilities and can communicate with her Pokémon telepathically.
+**Sabrina** (Japanese: サツキ *Satsuki*) is the **Gym Leader of Saffron City's Gym**, known officially as the **Saffron Gym**. She specializes in **Psychic-type Pokémon** and awards the **Marsh Badge** to trainers who defeat her in battle. She possesses psychic abilities and can communicate with her Pokémon telepathically.
 
 - **Title**: The Master of Psychic Pokémon
 - **Specialty**: Psychic-type Pokémon
