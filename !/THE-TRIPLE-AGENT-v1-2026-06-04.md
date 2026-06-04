@@ -105,6 +105,37 @@ release.
 
 ---
 
+## Two Flavors of the Third Master — the Ideologue and the Mercenary
+
+The hidden third principal is always *the self*, but the self wants different
+things, and the difference is operational. The Sphinx is the **ideologue**: his
+third master is a *vision* (a world without slaves), grand enough to rationalize
+releasing the demons. **Vanessa Santoro** — the narcoblix
+(`!/FABLEHAVEN-VAMPIRE-DIAGNOSTIC-v1-2026-06-01.md`) — is the **mercenary**: a
+Knight of the Dawn by cover, a Society agent in fact, and loyal at bottom only to
+*herself.* She proves the pattern needs no ideology — **only a self.**
+
+And Vanessa adds the mechanic the Sphinx's grandeur obscures. Caught and sealed in
+the Quiet Box, **left to rot by her own side**, she scrawled her revenge — naming
+the Sphinx as leader of the Evening Star. The apex traitor was exposed not by the
+heroes' detection but by **the agent he threw away.** Her later aid to the family
+is the same fuel re-pointed — resentment and self-interest, not conversion — and
+the Knights rightly keep her on a leash.
+
+*Vault patterns:*
+- **Name the fuel — ideologue or mercenary.** The ideologue cannot be bought and
+  will not stop short of the vision; the mercenary can be bought and cannot be
+  trusted past the next advantage. Same triple-agent structure, opposite handling.
+- **The discarded asset is your future witness.** Burn an agent — cast her out,
+  leave her sealed — and you *manufacture* the one person motivated to name you.
+  This is the human form of the fairy→imp inversion
+  (`!/FABLEHAVEN-FAIRIES-AND-IMPS-v1-2026-06-04.md`): the humiliated insider's
+  self-interest curdles to **revenge against her own principal.** An adversary's
+  internal cruelty is the defender's intelligence windfall — the traitor who
+  exposes the traitor was *made* by his own side's contempt.
+
+---
+
 ## Diagnostic Questions
 
 1. **You found two allegiances — is there a third?** Whose goal do *both* visible
@@ -131,6 +162,13 @@ release.
   and becoming an Eternal
   ([Mullverse Wiki — The Sphinx](https://mullverse.fandom.com/wiki/The_Sphinx);
   [Fablehaven: Keys to the Demon Prison — Wikipedia](https://en.wikipedia.org/wiki/Fablehaven:_Keys_to_the_Demon_Prison)).
+  Primary text not directly read.
+- **Verified — Vanessa (researched, cited):** Vanessa Santoro a former Knight of
+  the Dawn *and* former Society agent (a narcoblix infiltrator); exposed as the
+  traitor; sealed in the Quiet Box, where she scrawled her revenge naming the
+  Sphinx as leader of the Evening Star; later aiding the family while still
+  resentful at being cast out
+  ([Mullverse Wiki — Vanessa Santoro](https://mullverse.fandom.com/wiki/Vanessa_Santoro)).
   Primary text not directly read.
 - **Repair noted:** this node corrects the Sphinx chapter's "apex dual-command"
   framing — true but one layer short of the canonical triple-agency.
