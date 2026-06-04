@@ -65,15 +65,15 @@
 ## Teams and Battle Strategies
 
 ### Core Team
-| Game | Pokémon | Level | Moves |
-|------|---------|-------|-------|
-| RBY | Voltorb | 21 | Tackle, Screech, Sonic Boom |
-| RBY | Pikachu | 18 | Growl, Thunder Shock, Quick Attack, Double Team |
-| RBY | Raichu | 24 | Thunder Shock, Growl, Quick Attack, Double Team |
-| FRLG/HGSS | Voltorb | 21 | Shock Wave, Tackle, Screech, Sonic Boom |
-| FRLG/HGSS | Pikachu | 18 | Shock Wave, Thunder Wave, Quick Attack, Double Team |
-| FRLG/HGSS | Raichu | 24 | Thunderbolt, Quick Attack, Iron Tail, Thunder Wave |
-| Yellow | Raichu | 24 | Thunderbolt, Mega Kick, Quick Attack, Double Team |
+| Game | Pokémon | Level | Type | Moves |
+|------|---------|-------|------|-------|
+| RBY | Voltorb | 21 | Electric | Tackle, Screech, Sonic Boom |
+| RBY | Pikachu | 18 | Electric | Growl, Thunder Shock, Quick Attack, Double Team |
+| RBY | Raichu | 24 | Electric | Thunder Shock, Growl, Quick Attack, Double Team |
+| FRLG/HGSS | Voltorb | 21 | Electric | Shock Wave, Tackle, Screech, Sonic Boom |
+| FRLG/HGSS | Pikachu | 18 | Electric | Shock Wave, Thunder Wave, Quick Attack, Double Team |
+| FRLG/HGSS | Raichu | 24 | Electric | Thunderbolt, Quick Attack, Iron Tail, Thunder Wave |
+| Yellow | Raichu | 24 | Electric | Thunderbolt, Mega Kick, Quick Attack, Double Team |
 
 ### Strategy
 - Electric-type offense with STAB moves
@@ -145,4 +145,4 @@
 ## References
 - Bulbapedia, Pokémon Wiki, IGN, TheGamer
 
-*Last updated: June 3, 2026*
+*Last updated: June 4, 2026*
