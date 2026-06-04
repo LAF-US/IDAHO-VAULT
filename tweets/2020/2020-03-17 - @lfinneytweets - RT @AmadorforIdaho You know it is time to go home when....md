@@ -18,9 +18,14 @@ related:
   - lfinneytweets
   - idleg
   - idpol
+tags:
+  - idleg
+  - idpol
+date created: Sunday, May 17th 2026, 11:59:33 pm
+date modified: Thursday, June 4th 2026, 2:39:32 pm
 ---
 
-RT @AmadorforIdaho: You know it is time to go home when: #idleg #idpol https://t.co/NuG2fQr1lN
+RT @AmadorforIdaho: You know it is time to go home when: idleg idpol https://t.co/NuG2fQr1lN
 
 ## Media
 - ![](https://pbs.twimg.com/media/ETWGIi8U8AAXy9Z.jpg)
