@@ -38,14 +38,14 @@ Master index for Kanto's Gym Leaders, Elite Four, and Champion across all epochs
 | 8 | **Giovanni** | Viridian City | Ground | Earth Badge | Yes | Yes | Yes |
 
 ### Individual Files
-- [ ] Brock
+- [x] Brock (COMPLETED)
 - [x] Misty (COMPLETED)
-- [ ] Lt. Surge
-- [ ] Erika
+- [x] Lt. Surge (COMPLETED)
+- [x] Erika (COMPLETED)
 - [ ] Koga
 - [ ] Sabrina
 - [ ] Blaine
-- [ ] Giovanni
+- [x] Giovanni (COMPLETED)
 
 ---
 
@@ -62,8 +62,8 @@ Master index for Kanto's Gym Leaders, Elite Four, and Champion across all epochs
 In Let's Go, Elite Four is different: no Lorelei/Bruno/Agatha/Lance. Champion is **Trace** instead of Blue.
 
 ### Individual Files
-- [ ] Lorelei
-- [ ] Bruno
+- [x] Lorelei (COMPLETED)
+- [x] Bruno (COMPLETED)
 - [ ] Agatha
 - [ ] Lance
 
@@ -77,7 +77,7 @@ In Let's Go, Elite Four is different: no Lorelei/Bruno/Agatha/Lance. Champion is
 | **Trace** | Mixed | No | No | Yes |
 
 ### Individual Files
-- [ ] Blue
+- [x] Blue (COMPLETED)
 - [ ] Trace
 
 ---
@@ -86,15 +86,15 @@ In Let's Go, Elite Four is different: no Lorelei/Bruno/Agatha/Lance. Champion is
 
 | Category | Total | Completed | Remaining | % |
 |----------|-------|-----------|-----------|---|
-| Gym Leaders | 8 | 1 | 7 | 12.5% |
-| Elite Four | 4 | 0 | 4 | 0% |
-| Champion | 2 | 0 | 2 | 0% |
-| **Total** | **14** | **1** | **13** | **7.1%** |
+| Gym Leaders | 8 | 5 | 3 | 62.5% |
+| Elite Four | 4 | 2 | 2 | 50% |
+| Champion | 2 | 1 | 1 | 50% |
+| **Total** | **14** | **8** | **6** | **57.1%** |
 
 ---
 
 ## Next Steps
-1. Start with **Brock** (Pewter City Gym Leader)
-2. Use Misty template: Overview, Game Appearances by Epoch, Teams & Strategies, Anime, Personality & Design, Trivia, References
+1. Next pair: **Koga** (Fuchsia City Gym Leader) and **Agatha** (Elite Four)
+2. Use established template: Overview, Game Appearances by Epoch, Teams & Strategies, Anime, Personality & Design, Trivia, References
 
-*Last updated: June 3, 2026*
+*Last updated: June 4, 2026*
