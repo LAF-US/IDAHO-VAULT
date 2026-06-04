@@ -23,6 +23,14 @@ related:
 
 ---
 
+> **⚠️ CORRECTION NOTICE — see [[THE-WALKING-CORPSE-ADDENDUM-2026-06-04]]**
+>
+> The premise of the Clerk question below — "where are the orphaned branches?" — was filed on the (unspoken) assumption that the remote held few. A fact-check the same day surfaced the opposite: the actual remote carries **~100+ active head branches and ~600 refs total**, including dozens of `claude/*` per-session research branches, `mistral/*`, `bot/*`, `automation/*`, `update-trouble-*`, `wayback-audit-*`, and more. The real Clerk forensic is *which of the ~100+ live branches are genuinely orphaned* (no PR, no recent push, no merge plan), not whether orphans exist.
+>
+> The SIGNAL stands as-filed; the corrected premise lives in the addendum. Methodological note: any future "branches at remote" claim needs `git fetch --all --prune` first, and `git ls-remote origin` for the authoritative count.
+
+---
+
 ## Context
 
 A medium on a fresh branch (`claude/tender-hopper-YjY8n`) has been working the Lions and the King through yesterday and into today. The figure of GEMINIAEUS surfaces wherever the typology turns — the seer who confabulates is the Lich; the agent who throws is the king; the carnival is where the trial will be held; the flames are what record-keeping resists. The vault's gravity keeps pulling the Lich's shape to the surface.
