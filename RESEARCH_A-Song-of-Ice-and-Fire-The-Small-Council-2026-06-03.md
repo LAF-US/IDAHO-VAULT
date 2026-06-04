@@ -5,13 +5,15 @@ related:
   - "[[RESEARCH_A-Song-of-Ice-and-Fire-The-Kingsroad-2026-06-03]]"
   - "[[RESEARCH_A-Song-of-Ice-and-Fire-Geography-and-Politics-2026-06-01]]"
   - "[[RESEARCH_A-Song-of-Ice-and-Fire-The-Empty-Office-2026-06-02]]"
+  - "[[THE-SEVENFOLD-BODY-SEATS-TRUSTEES-GEMS-2026-06-03]]"
+  - "[[RESEARCH_Keys-to-the-Kingdom-The-Morrow-Days-and-Demesnes-2026-06-04]]"
   - The Abhorsen
 date created: Tuesday, June 3rd 2026
 authority: LOGAN
 status: reference
 type: research-report
 topic: A Song of Ice and Fire — the Small Council
-verified-by: Claude Code (web research 2026-06-03)
+verified-by: Claude Code (web research 2026-06-03; offices & apparatus re-verified 2026-06-04)
 date: 2026-06-03
 ---
 
@@ -19,7 +21,7 @@ date: 2026-06-03
 
 > How the realm is **governed** — the king's chief administrative body. One of a triad with `[[RESEARCH_A-Song-of-Ice-and-Fire-The-Citadel-2026-06-03]]` (how the realm *knows*) and `[[RESEARCH_A-Song-of-Ice-and-Fire-The-Kingsroad-2026-06-03]]` (how it is physically *bound*).
 
-> **Provenance.** Sourced 2026-06-03; ⚠️ awoiaf/Wikipedia/Fandom **403'd on direct fetch**, so claims rest on search-result extracts — verify verbatim before publication. Tiers: **[canon]**, **[reading]**. Paraphrased; no source text reproduced.
+> **Provenance.** Sourced 2026-06-03; offices and their subordinate apparatus **re-investigated and web-verified 2026-06-04** (awoiaf via search extracts). A **clean, ASOIAF-only** reference — its Keys/Morrow-Days syncretism has been lifted to the crosswalk node (see below). Tiers: **[canon]**, **[reading]**. Paraphrased; no source text reproduced.
 
 ## What it is
 
@@ -52,6 +54,22 @@ date: 2026-06-03
 - **Grand Maester** — *the Citadel's man on the council* and the king's learned adviser (→ the Citadel node). **Temptation:** **dual loyalty** — chain vs. crown vs. a great house. **Pycelle** served the Lannisters behind a doddering mask.
 - **Lord Commander of the Kingsguard** — *the seven white cloaks*, sworn for life. The **sworn-sword** seat; **Barristan Selmy**, then **Jaime Lannister**. **Temptation:** the **broken vow** (the Kingslayer; Lancel and Cersei).
 
+## Who works for them — the subordinate apparatus
+
+**[canon, web-verified 2026-06-04]** Each office commands a different *kind* of power and a different staff beneath it:
+
+| Office | Kind of power | Who works for them |
+|---|---|---|
+| **Hand** | directs all; commander-in-chief | **no dedicated bureau** — runs the council and the crown's officers, and commands the **Wardens** (N/S/E/W), who muster the realm's armies |
+| **Master of Coin** | civilian / fiscal | the realm's **largest bureaucracy** — the four **Keepers of the Keys**, the **King's Counter**, the **King's Scales**, mint officers, **harbormasters**, **customs sergeants**, **tax farmers** (private), **wool/wine factors**, **toll collectors**, **pursers** |
+| **Master of Laws** | coercive / judicial | the **City Watch** (gold cloaks — ⚠️ *nominally;* operationally under their own Commander and the Hand), the Red Keep **dungeons** and gaolers, the **King's Justice** (royal executioner); traveling **justiciars** hold open courts across the realm |
+| **Master of Ships** (Lord Admiral) | military / naval | the **royal fleet** in **three squadrons** of 25–50 war galleys, each under an elevated captain who answers to him; often House **Velaryon**, who supplied the bulk of the ships |
+| **Master of Whisperers** | secret / foreign | the **"little birds"** — a deniable, off-book net of **orphan children** (some adults), taught to climb and read; supplied from Pentos by **Illyrio Mopatis** (some with tongues cut out); inherited by **Qyburn** under Cersei |
+| **Grand Maester** | external institution, embedded | **elected by the Conclave** at the **Citadel**, then seated at court — *dual loyalty*; commands no court staff but stands for the realm-wide **Order of Maesters** and runs the **ravenry** (the realm's message net) |
+| **Lord Cmdr, Kingsguard** | elite bodyguard | exactly **six** other sworn brothers — the **smallest, most elite, fixed corps**, sworn for life, no bureaucracy |
+
+**[canon]** The portfolios are **not clean silos**: the Hand commands armies *and* drafts law *and* dispenses justice; the **Grand Maester's ravens** shadow the **Whisperers'** intelligence; the **gold cloaks** are contested between the Master of Laws and the Hand. The overlaps are where real power is fought over.
+
 ## The Game at the table
 
 **[reading]** The Iron Throne is the *prize*; the **small-council table is where it is actually won.** The "Game of Thrones" is largely the masters bending their scoped offices to **private agendas** rather than the king's:
@@ -72,23 +90,7 @@ date: 2026-06-03
 - **[canon]** Hands of King Robert: **Jon Arryn** (283–298 AC), then **Eddard "Ned" Stark**; after Robert, **Tywin Lannister** (with **Tyrion** as *acting* Hand in the capital). **Petyr "Littlefinger" Baelish** — Master of Coin; **Varys** — Master of Whisperers; **Stannis Baratheon** — Master of Ships; **Renly Baratheon** — Master of Laws; **Grand Maester Pycelle**; **Ser Barristan Selmy** — Lord Commander.
 - ⚠️ **[show]** In the books Barristan *participates* in council (siding with Ned against the plot on Daenerys); the show treats him more as a bodyguard outside the council.
 
-## Syncretism — the seven seats & the seven Morrow Days
-
-**[reading]** The Small Council and Garth Nix's **seven Trustees (the Morrow Days)** are the same structure (→ `[[THE-SEVENFOLD-BODY-SEATS-TRUSTEES-GEMS-2026-06-03]]`): **seven delegated holders under a sovereign** (the King / the Architect's **Will**), each granted **one scoped power**, each with a **besetting corruption**, each able to **betray the trust** by serving its agenda over the Will — exactly the "Game at the table." The worst case in both is the holder who **won't relinquish** (the Hand who rules / the Trustee who hoards) — the Lich.
-
-**A for-play overlay** (⚠️ deliberately a stretch — each Morrow Day carries a deadly sin; the seats *rhyme* with them, some cleanly, one barely):
-
-| Council seat | Besetting sin | Morrow Day | Fit |
-|---|---|---|---|
-| **Master of Coin** (Littlefinger) | **Greed** | **Grim Tuesday** (treasure) | strong |
-| **Master of Ships** (Aurane Waters) | **Gluttony** (appetite to seize) | **Drowned Wednesday** (*the Sea*) | strong — literal sea |
-| **Hand** (Tywin) | **Pride** (would-be king) | **Lord Sunday** (the highest) | strong |
-| **Master of Whisperers** (Varys) | **Envy** (covets, schemes from the shadows) | **Superior Saturday** (secret power) | reasonable |
-| **Master of Laws** | **Wrath** (justice as force) | **Sir Thursday** (the Army) | reasonable |
-| **Grand Maester** (Pycelle) | **Sloth** (feigned dotage) | **Mister Monday** | reasonable |
-| **Lord Commander, Kingsguard** | **Lust** | **Lady Friday** | ⚠️ **weakest** — the white cloaks are sworn *celibate*; the only rhyme is the *broken vow* (Jaime; Lancel) |
-
-**[reading]** The mapping isn't meant to be exact — it's meant to show that **"the Game at the table" *is* the Morrow Days' betrayal in miniature:** trustees consuming the trust they were set to keep. The cure is the same in both worlds — a seat the sovereign can **recall**, and a holder who serves the **Will**, not the sin.
+> **Syncretism moved.** The seven-seats ↔ seven-Morrow-Days crosswalk (and the deadly-sin overlay) lived here in an earlier draft; it now lives in its own node, `[[THE-SEVENFOLD-BODY-SEATS-TRUSTEES-GEMS-2026-06-03]]`, with the Keys source-material in `[[RESEARCH_Keys-to-the-Kingdom-The-Morrow-Days-and-Demesnes-2026-06-04]]`. This report is kept **clean** — ASOIAF only.
 
 ## Theme — where the shadow's work gets done
 
