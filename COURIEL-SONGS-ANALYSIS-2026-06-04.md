@@ -33,13 +33,12 @@ decorative love-interest) and asks if **those** figures are still men too. The p
 exposes the mechanism in the listener's own head.
 
 The thesis Logan names is the song's exact claim: **a woman is a *person*, not a
-*not-man*.** The default — *"he is the default, she is the afterthought… he's who you
-think of, she's whatever's left"* — conceives the woman only as the **negation** of the
-defaulted man: the leftover, the residue, the *not-the-one-you-pictured*. To be
-"drawn" only as *not-man* is to be defined by an absence. The closing imperative —
-*"draw me a woman… draw me a person"* — refuses that: it demands she be drawn **as a
-person in the first instance**, default-eligible, not summoned afterward to fill the
-slot the man didn't.
+*not-man*.** Its hook casts him as the **default** and her as the **afterthought** —
+*"whatever's left"* — conceiving the woman only as the **negation** of the defaulted
+man: the leftover, the residue, the *not-the-one-you-pictured*. To be "drawn" only as
+*not-man* is to be defined by an absence. The closing imperative — to **draw a woman,
+draw a person** — refuses that: it demands she be drawn **as a person in the first
+instance**, default-eligible, not summoned afterward to fill the slot the man didn't.
 
 **Technique [analysis]:**
 - **Escalating role-list + the mid-list trap** — the listener convicts *themself* by
@@ -51,18 +50,18 @@ slot the man didn't.
 
 ## 2. "Patriarchy's Dead" — *denial is the rebrand, not the death*
 
-The song runs a refrain of men's self-exculpation — *"I'm not like that"* — escalating
-from boy to man to friend to partner to president to *"the world,"* and tracks how
-**believing that denial** is the machine. Its turn: *"patriarchy faked his death,"*
-**rebranded** (as "security," as "purity"). The chorus stages a sardonic funeral — the
-thing declared dead by *"some angry fucking female"* — while the bridge lands the point:
-*"god forbid a woman is believed,"* and *"a killer who denies it is a killer all the
-same."* The closing *"you feed him to your sons"* makes it **transmission**, not an
-ending.
+The song runs a refrain of men's self-exculpation — the protest *"I'm not like that"* —
+and escalates it up the chain of male roles from boyhood to the presidency to the world
+at large, tracking how **believing that denial** is the machine. Its turn: the patriarchy
+hasn't died, it **faked its death** and **rebranded** (the lyric names the new labels —
+safety, purity). The chorus stages a sardonic funeral, the death announced derisively in
+the voice of the dismissed woman; the bridge lands the thesis — that a woman is, against
+the odds, not believed, and that a denial does not unmake the deed. The closing image of
+feeding the figure **to your sons** makes it **transmission**, not an ending.
 
-**Technique [analysis]:** first-person testimony accreting across relationships;
-*"believing's getting harder"* as the cost of repeated betrayal; the **denial-as-proof
-trap** (the more fluent *"I'm not like that,"* the less it can be tested).
+**Technique [analysis]:** first-person testimony accreting across relationships; belief
+itself eroding as the cost of repeated betrayal; the **denial-as-proof trap** (the more
+fluent the *"I'm not like that,"* the less it can ever be tested).
 
 ## 3. The pair, together — two modes of erasure **[mapping]**
 

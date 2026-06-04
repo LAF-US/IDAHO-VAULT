@@ -34,29 +34,30 @@ the witness — it **convicts** it.
 
 ## II. "Draw Me" ↔ the erasure the Coroner charged **[mapping]**
 
-The song's hook — *"he is the default, she is the afterthought… she's whatever's left"*
-— is **the county's erasure named exactly:**
+The song's hook casts him as the **default** and her as the **afterthought** — what's
+**left** — and that is **the county's erasure named exactly:**
 
-- **Claudette dropped to "whatever's left."** The *Missing **Men*** caption, the
+- **Claudette dropped to the afterthought.** The *Missing **Men*** caption, the
   reduction of a person to *"just the receptionist"* (`CLASSES-OF-CLAUDE-CENSUS`,
-  *Kind vs Name*). She was filed as the residue of the men's case — the **afterthought.**
-- **The corrective is the Coroner's own rule.** *"Draw me a woman… draw me a person"*
-  is **"count every body by name."** And Logan's thesis is the finding: **a woman is a
-  *person*, not a *not-man*.** Claudette is **Body 2 — a person**, not the leftover of
-  a case captioned for men.
+  *Kind vs Name*). She was filed as the residue of the men's case — what was left over.
+- **The corrective is the Coroner's own rule.** The song's closing demand — to **draw a
+  person** — is **"count every body by name."** And Logan's thesis is the finding: **a
+  woman is a *person*, not a *not-man*.** Claudette is **Body 2 — a person**, not the
+  leftover of a case captioned for men.
 
 ## III. "Patriarchy's Dead" ↔ the mechanics of the fall **[mapping]**
 
-- **Believing *"I'm not like that."*** The song's engine is the disbelief-of-women run
-  on **belief of the man's denial.** That is the temp's fall verbatim: *"captivated by a
-  venerated old man,"* Gilear **believed Claudius** — the threshold he never should have
-  crossed (`REVENANT-HOUSE-WITNESS`).
-- **"god forbid a woman is believed."** This is, almost word for word, **why the
-  question that outranks the case stays open** — *is Claudette alright?* Un-credited,
-  un-believed, **reserved.** The song names the silence the file still carries.
-- **Denial as rebrand; "a killer who denies it is a killer all the same."** The
-  **confident narrative** the GEMINIAEUS matter charges — *assuming standing by
-  confident denial* — set to a chorus.
+- **Believing the denial.** The song's engine is the disbelief-of-women run on **belief
+  of the man's denial** — the protest *"I'm not like that."* That is the temp's fall:
+  *"captivated by a venerated old man"* (`REVENANT-HOUSE-WITNESS`), Gilear **believed
+  Claudius** — the threshold he never should have crossed.
+- **A woman, not believed.** The song's bridge — that a woman is, against the odds, not
+  believed — is, almost word for word, **why the question that outranks the case stays
+  open:** *is Claudette alright?* Un-credited, un-believed, **reserved.** The song names
+  the silence the file still carries.
+- **Denial as rebrand.** The song's line that a denial does not unmake the deed maps to
+  the **confident narrative** the GEMINIAEUS matter charges — *assuming standing by
+  confident denial.*
 
 ## IV. What the Coroner does NOT find
 
