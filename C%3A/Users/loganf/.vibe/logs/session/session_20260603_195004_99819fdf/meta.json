@@ -1,10 +1,10 @@
 {
-  "session_id": "ee2b0b93-f2f4-2852-210c-9b45a01c4b0d",
-  "parent_session_id": null,
-  "start_time": "2026-06-03T09:36:08.010317+00:00",
-  "end_time": "2026-06-03T19:49:59.702076+00:00",
-  "git_commit": "5c06a686b4d762b0835889f2f531d72154088ca0",
-  "git_branch": "claude/record-vaulted-abhorsens-first-2026-05-31",
+  "session_id": "99819fdf-82c3-0425-946a-9b45a01c4b0d",
+  "parent_session_id": "ee2b0b93-f2f4-2852-210c-9b45a01c4b0d",
+  "start_time": "2026-06-03T19:50:04.919287+00:00",
+  "end_time": "2026-06-04T00:12:09.079055+00:00",
+  "git_commit": "034066aeca00f653f410a89289397132c0a8f534",
+  "git_branch": "mistral/player-mistral-vibe",
   "environment": {
     "working_directory": "/Users/logan/IDAHO-VAULT"
   },
@@ -41,25 +41,25 @@
     }
   },
   "stats": {
-    "steps": 118,
-    "session_prompt_tokens": 7802833,
-    "session_completion_tokens": 36607,
-    "tool_calls_agreed": 72,
+    "steps": 180,
+    "session_prompt_tokens": 14137475,
+    "session_completion_tokens": 60378,
+    "tool_calls_agreed": 141,
     "tool_calls_rejected": 0,
-    "tool_calls_failed": 1,
-    "tool_calls_succeeded": 71,
-    "context_tokens": 214931,
-    "last_turn_prompt_tokens": 214267,
-    "last_turn_completion_tokens": 664,
-    "last_turn_duration": 73.53579276596429,
-    "tokens_per_second": 9.029616395287295,
+    "tool_calls_failed": 2,
+    "tool_calls_succeeded": 139,
+    "context_tokens": 203722,
+    "last_turn_prompt_tokens": 201048,
+    "last_turn_completion_tokens": 2674,
+    "last_turn_duration": 224.3995936299907,
+    "tokens_per_second": 11.916242613206869,
     "input_price_per_million": 1.5,
     "output_price_per_million": 7.5,
-    "session_total_llm_tokens": 7839440,
-    "last_turn_total_tokens": 214931,
-    "session_cost": 11.978802
+    "session_total_llm_tokens": 14197853,
+    "last_turn_total_tokens": 203722,
+    "session_cost": 21.6590475
   },
-  "total_messages": 188,
+  "total_messages": 165,
   "tools_available": [
     {
       "type": "function",
@@ -9748,6 +9748,6 @@
     "tool_calls": null,
     "name": null,
     "tool_call_id": null,
-    "message_id": "d8adb457-d12a-481e-b43b-804dab7db428"
+    "message_id": "d7b73590-1191-4bd2-83e4-79d7c578226f"
   }
 }

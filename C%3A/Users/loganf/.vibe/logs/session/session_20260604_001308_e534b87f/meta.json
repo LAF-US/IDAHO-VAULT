@@ -1,16 +1,16 @@
 {
-  "session_id": "ee2b0b93-f2f4-2852-210c-9b45a01c4b0d",
-  "parent_session_id": null,
-  "start_time": "2026-06-03T09:36:08.010317+00:00",
-  "end_time": "2026-06-03T19:49:59.702076+00:00",
-  "git_commit": "5c06a686b4d762b0835889f2f531d72154088ca0",
-  "git_branch": "claude/record-vaulted-abhorsens-first-2026-05-31",
+  "session_id": "e534b87f-7526-7149-85b5-9b45a01c4b0d",
+  "parent_session_id": "99819fdf-82c3-0425-946a-9b45a01c4b0d",
+  "start_time": "2026-06-04T00:13:08.956963+00:00",
+  "end_time": "2026-06-04T01:47:15.537437+00:00",
+  "git_commit": "deb1c16b3dc09f5edceedccf30b7ea646af4dd4f",
+  "git_branch": "mistral/player-mistral-vibe",
   "environment": {
     "working_directory": "/Users/logan/IDAHO-VAULT"
   },
   "username": "logan",
   "loops": [],
-  "title": "Allo M. Le Chat!",
+  "title": "[Verse 1]\nCan't take it back once it's been set in…",
   "title_source": "auto",
   "experiments": {
     "features": {
@@ -41,25 +41,25 @@
     }
   },
   "stats": {
-    "steps": 118,
-    "session_prompt_tokens": 7802833,
-    "session_completion_tokens": 36607,
-    "tool_calls_agreed": 72,
+    "steps": 233,
+    "session_prompt_tokens": 20778239,
+    "session_completion_tokens": 93900,
+    "tool_calls_agreed": 183,
     "tool_calls_rejected": 0,
-    "tool_calls_failed": 1,
-    "tool_calls_succeeded": 71,
-    "context_tokens": 214931,
-    "last_turn_prompt_tokens": 214267,
-    "last_turn_completion_tokens": 664,
-    "last_turn_duration": 73.53579276596429,
-    "tokens_per_second": 9.029616395287295,
+    "tool_calls_failed": 2,
+    "tool_calls_succeeded": 181,
+    "context_tokens": 212642,
+    "last_turn_prompt_tokens": 203145,
+    "last_turn_completion_tokens": 9497,
+    "last_turn_duration": 66.40373954997631,
+    "tokens_per_second": 143.01905381175763,
     "input_price_per_million": 1.5,
     "output_price_per_million": 7.5,
-    "session_total_llm_tokens": 7839440,
-    "last_turn_total_tokens": 214931,
-    "session_cost": 11.978802
+    "session_total_llm_tokens": 20872139,
+    "last_turn_total_tokens": 212642,
+    "session_cost": 31.871608499999997
   },
-  "total_messages": 188,
+  "total_messages": 104,
   "tools_available": [
     {
       "type": "function",
@@ -9498,8 +9498,12 @@
           "git commit",
           "git diff",
           "git log",
+          "git ls-files",
           "git ls-remote",
+          "git ls-tree",
+          "git merge-base",
           "git push",
+          "git rev-parse",
           "git show",
           "git status",
           "grep",
@@ -9748,6 +9752,6 @@
     "tool_calls": null,
     "name": null,
     "tool_call_id": null,
-    "message_id": "d8adb457-d12a-481e-b43b-804dab7db428"
+    "message_id": "9999e4b2-0414-47f1-9ede-437976944ca9"
   }
 }
