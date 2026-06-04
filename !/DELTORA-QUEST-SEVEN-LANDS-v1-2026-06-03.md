@@ -93,9 +93,13 @@ Tribe for each gem.**
   **woke them with the Belt** (and Doran's soul-stone memories), calling each **by
   name.** The **Diamond is the exception**: its adult dragon was killed, but a
   long-dormant **egg** survived in suspended animation — **baby Forta hatched** when
-  Lief brought it near the Diamond, then was **called by name** like the rest.
-  United, the **seven dragons + the Belt** destroy the Four Sisters and burn the
-  grey tide.
+  Lief brought it near the Diamond, then was **called by name** like the rest. **Two
+  distinct beats, not one:** each of the **Four Sisters** is destroyed **as Lief reaches
+  its region, by that region's *own* dragon** (e.g., **Joyeu**/Ruby aids against the
+  **Sister of the East**; **Honora**/Emerald against the **Sister of the North**); and
+  only the **awakened grey tide** — released as the last Sister falls — is met by the
+  **united seven dragons + the Belt**, who burn it. The **matched regional counter** and
+  the **all-dragons instrument** are **not interchangeable.**
 
 **The seven dragons — and the virtue each name carries [canon] / [mapping]:**
 
