@@ -4,9 +4,10 @@
 1. [Overview](#overview)
 2. [Game Appearances](#game-appearances)
 3. [Teams and Battle Strategies](#teams-and-battle-strategies)
-4. [Anime Appearances](#anime-appearances)
+4. [Anime and Manga Appearances](#anime-and-manga-appearances)
 5. [Personality and Design](#personality-and-design)
 6. [Trivia](#trivia)
+7. [References](#references)
 
 ---
 
@@ -71,16 +72,16 @@
 
 ### Core Team Across Games
 
-| Game | Pokémon | Level | Moves |
-|------|---------|-------|-------|
-| RBY | Staryu | 18 | Tackle, Harden, Water Gun |
-| RBY | Starmie | 21 | Tackle, Harden, Water Gun, Bubble Beam |
-| FRLG | Staryu | 18 | Tackle, Harden, Water Gun, Recover |
-| FRLG | Starmie | 21 | Tackle, Harden, Water Gun, Bubble Beam, Recover, Swift |
-| HGSS | Staryu | 18 | Tackle, Harden, Water Gun, Recover |
-| HGSS | Starmie | 21 | Tackle, Harden, Water Gun, Bubble Beam, Recover, Swift |
-| LGPE | Psyduck | 18 | Various |
-| LGPE | Starmie | 19 | Various |
+| Game | Pokémon | Level | Type | Moves |
+|------|---------|-------|------|-------|
+| RBY | Staryu | 18 | Water | Tackle, Harden, Water Gun |
+| RBY | Starmie | 21 | Water/Psychic | Tackle, Harden, Water Gun, Bubble Beam |
+| FRLG | Staryu | 18 | Water | Tackle, Harden, Water Gun, Recover |
+| FRLG | Starmie | 21 | Water/Psychic | Tackle, Harden, Water Gun, Bubble Beam, Recover, Swift |
+| HGSS | Staryu | 18 | Water | Tackle, Harden, Water Gun, Recover |
+| HGSS | Starmie | 21 | Water/Psychic | Tackle, Harden, Water Gun, Bubble Beam, Recover, Swift |
+| LGPE | Psyduck | 18 | Water | Various |
+| LGPE | Starmie | 19 | Water/Psychic | Various |
 
 ### Battle Strategy
 Misty's battle strategy is characterized by:
@@ -97,7 +98,7 @@ Misty's battle strategy is characterized by:
 
 ---
 
-## Anime Appearances
+## Anime and Manga Appearances
 
 ### Main Series
 - **Debut**: Episode 1 - "Pokémon - I Choose You!" (bicycle stolen by Ash and Pikachu)
@@ -123,6 +124,12 @@ Misty's battle strategy is characterized by:
 - Staryu: Often first sent out
 - Togepi/Togetic: Egg from Professor Elm, imprinted on her
 - Gyarados: Initially feared, later caught and used
+
+---
+
+### Pokémon Adventures Manga
+- **Role**: Cerulean Gym Leader
+- **Notable**: Appears in Kanto arc
 
 ---
 
@@ -172,4 +179,4 @@ Misty's battle strategy is characterized by:
 - Bulbapedia: [Misty](https://bulbapedia.bulbagarden.net/wiki/Misty), [Misty (anime)](https://bulbapedia.bulbagarden.net/wiki/Misty_(anime)), [Cerulean Gym](https://bulbapedia.bulbagarden.net/wiki/Cerulean_Gym)
 - Pokémon Database, Wikipedia, Serebii.net, ScreenRant
 
-*Last updated: June 3, 2026*
+*Last updated: June 4, 2026*
