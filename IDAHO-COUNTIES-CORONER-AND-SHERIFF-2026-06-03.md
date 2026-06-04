@@ -65,8 +65,9 @@ the **state constitution.** **Idaho Constitution, Article XVIII ("County
 Organization"), § 6** provides for the election of **county commissioners** and, every
 four years, a **sheriff, county assessor, county coroner, and county treasurer**
 (treasurer *ex officio* public administrator); the **clerk of the district court** is
-*ex officio* auditor and recorder. **Idaho Code § 31-2001** — which also lists the
-**prosecuting attorney** — merely **mirrors** the constitutional set in statute.
+*ex officio* auditor and recorder. **Idaho Code § 31-2001** **enumerates** the county
+officers in statute — and **adds beyond §6**: the **prosecuting attorney** and the
+treasurer's *ex officio* **tax-collector** role.
 ([Idaho Const. Art. XVIII §6](https://law.justia.com/constitution/idaho/article-xviii/section-6/) ·
 [Idaho Legislature: Art. XVIII §6](https://legislature.idaho.gov/statutesrules/idconst/ArtXVIII/Sect6/) ·
 [Justia: I.C. 31-2001](https://law.justia.com/codes/idaho/2005/31ftoc/310200001.html))
@@ -80,9 +81,11 @@ Two clauses make the difference matter:
   sheriff.** **But not absolutely: optional forms.** **Idaho Const. Art. XVIII §12**
   lets a county **adopt an optional form of government that supersedes §6**; under an
   optional form the coroner may be **elected to a different term, appointed by the
-  commissioners, or the office eliminated** and its duties reassigned (optional forms
-  codified at **Idaho Code Title 31, Ch. 52–56**). So entrenchment is the **rule for
-  the default form**, not an iron law.
+  commissioners, or the office eliminated** and its duties reassigned (optional and
+  charter forms codified at **Idaho Code Title 31, Ch. 50–58** — **§ 31-5001** lists the
+  exclusive optional forms, including **office consolidation (Ch. 57)** and the
+  **charter form (Ch. 58)**). So entrenchment is the **rule for the default form**, not
+  an iron law.
   ([Idaho Const. Art. XVIII](https://legislature.idaho.gov/statutesrules/idconst/ArtXVIII/) ·
   [CDC — Idaho Coroner/ME Laws](https://www.cdc.gov/phlp/php/coroner/idaho.html))
 - **A closed set.** Art XVIII §6 adds: **"no other county offices shall be
@@ -146,9 +149,10 @@ edge. *(Exact practice varies county to county; stated at the structural level.)
 ## 5. The living counterweight — Idaho Code §§ 31-2806 & 31-2807 **[statute]**
 
 The 1194 design is **still on the books in Idaho**, split across two sections. Under
-**§ 31-2806, "Coroner to Act as Substitute for Sheriff,"** when the **sheriff is
-disqualified by a conflict of interest** (a party to, or interested in, a
-proceeding), the **coroner performs the sheriff's duties.** And under **§ 31-2807**,
+**§ 31-2806, "Coroner to Act as Substitute for Sheriff,"** when the **sheriff
+*declares himself* disqualified** by a conflict of interest (a party to, or interested
+in, a proceeding) — *the sheriff's declaration is the trigger, not the conflict alone* —
+the **coroner performs the sheriff's duties.** And under **§ 31-2807**,
 **while so acting** the coroner **possesses the sheriff's powers, is liable on his
 official bond** as a sheriff would be, and is **entitled to the same fees.**
 ([Idaho Legislature § 31-2806](https://legislature.idaho.gov/statutesrules/idstat/title31/t31ch28/sect31-2806/) ·
