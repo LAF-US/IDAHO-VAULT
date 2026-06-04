@@ -29,7 +29,9 @@ It reports status; it **renders no verdict** and **declares no Claude dead**, an
 - **65** `claude/*` branches exist on the remote (Claudes who went out), spanning
   **2026-05-28 → 2026-06-04.**
 - **0** are **merged** into `origin/main` by ancestry. **All 65 are unmerged.**
-- **None of their work is on `main`** — *sampled and verified* (below).
+- **None on `main` — *sampled, not all-65-proven.*** Of an **8-branch sample**, the
+  work is **not** on `main` (§II); the remaining **57 are not individually audited.**
+  Do not read this as every branch proven absent.
 
 ## II. The disambiguation — this is *not* squash-merge **[RECORD]**
 
