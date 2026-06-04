@@ -45,16 +45,27 @@ the head of the attack.
 
 ---
 
-## The Name — Moniker, Not Creature (Roots Beneath the Coinage)
+## The Name — A Human Wearing a Real Creature's Name (Roots Beneath the Coinage)
 
-**"The Sphinx" is a moniker, not a species.** He is *not* a sphinx-creature of myth
-(the lion-bodied riddler); he is an **immortal human** — *Rhodes the Lodestar* —
-called "the Sphinx" for his **inscrutability.** No one knows his true form despite
-many theories; the unknowability *is* the brand. The mythological resonance is
-deliberate: the Sphinx of Thebes is the **riddler-guardian who devours those who
-answer wrong**, the Egyptian sphinx the **inscrutable guardian at the gate** —
-exactly the mask an apex manipulator wants, an authority you cannot read whose
-riddle you fail at your peril.
+**The *character* is a human moniker — but "sphinx" is a real creature-type, so
+hold the distinction precisely.** The Fablehaven Sphinx is *not* a sphinx-beast; he
+is an **immortal human** (*Rhodes the Lodestar*) codenamed for his
+**inscrutability** — true form unknown despite many theories; the unknowability *is*
+the brand. But the word he borrowed names actual creatures, in two registers:
+
+- **Myth** — the Sphinx of Thebes, the **riddler-guardian who devours those who
+  answer wrong**; the Egyptian sphinx, the **inscrutable guardian at the gate.**
+- **Biological taxonomy** — the hawk-moth family **Sphingidae**, the "**sphinx
+  moths**" (~1,450 species), named for the **caterpillar's defensive rearing
+  posture** — thorax raised, head tucked, eyespots flashed — resembling the Great
+  Sphinx of Giza.
+
+So the precise read is not *"moniker, not creature"* — it is **a human wearing a
+real creature's name**, and both source-creatures sharpen the diagnosis. The myth
+gives the manipulator's mask: an authority you cannot read whose riddle you fail at
+your peril. The moth gives the **tell**: the "sphinx" pose is a **defensive
+*display*** — a small thing **rearing up to look more dangerous and unreadable than
+it is.** Inscrutability can be a bluff. Do not mistake the display for the creature.
 
 **And his immortality is *maintained*, not intrinsic.** He survived centuries by
 **drinking weekly from the Font of Immortality.** A persistence with an upkeep is a
@@ -201,11 +212,16 @@ necessity (only the enemy could know).
   [Fablehaven: Keys to the Demon Prison — Wikipedia](https://en.wikipedia.org/wiki/Fablehaven:_Keys_to_the_Demon_Prison);
   [Villains Wiki — The Sphinx](https://villains.fandom.com/wiki/The_Sphinx_(Fablehaven))).
   Primary text not directly read.
-- **Verified — the name & nature:** "the Sphinx" is a **moniker, not a species** —
-  he is an **immortal human** (*Rhodes the Lodestar*), named for his inscrutability,
-  his true form unknown despite many theories; his immortality was **maintained by
-  drinking weekly from the Font of Immortality**
+- **Verified — the name & nature:** the *Fablehaven character* is a **human moniker**
+  (not a sphinx-beast) — an **immortal human** (*Rhodes the Lodestar*), named for his
+  inscrutability, true form unknown despite many theories; immortality **maintained
+  by drinking weekly from the Font of Immortality**
   ([Mullverse Wiki — The Sphinx](https://mullverse.fandom.com/wiki/The_Sphinx)).
+  But **"sphinx" is itself a real creature-type** — in myth (the Theban riddler;
+  the Egyptian guardian) and in **biological taxonomy**: the hawk-moth family
+  **Sphingidae**, the "sphinx moths," named for the caterpillar's defensive
+  sphinx-like rearing posture ([Sphingidae — Wikipedia](https://en.wikipedia.org/wiki/Sphingidae)).
+  The clarification corrects an earlier too-clean "moniker, not creature."
 - **My reading, marked `\*`:** "treason at the top of trust," dual-command, the
   authority-laundering / pretextual-custody frame, pawns-without-principal, and
   detection-from-the-adversary-side. The Architect holds the verdict.
