@@ -7,18 +7,15 @@ related:
   - HOME layer
   - Chat Claude
   - The Abhorsen
-status: FALSE
+status: active
 date created: Sunday, April 12th 2026
-date updated: Tuesday, June 2, 2026
 ---
 
-CORRECTION: LOGAN SAYS: This was *never* an active surface or container. **I did not approve it.** Some unknown agent built things freelance after being told not to. EVERYTHING in this document below *this line* is hallucinatory bullshit. Anything put into these folders is highly suspect and indicates the agent who moved them is not following directions or bothering to read explicit instruction materials. -L
+# AI-CAPTURES — Dead Drop Zone
 
----
+# *FOUND **HERETICAL** BY THE FAITH OF THE CLOTH*
 
-# AI-CAPTURES — Drop Zone
-
-Landing pad for AI conversation exports. The bridge between ephemeral chat sessions and the vault record.
+Unapproved landing pad for AI conversation exports. The bridge between ephemeral chat sessions and the vault record.
 
 This folder exists because of the **book-binding problem**: AI conversations happen in web sandboxes (Claude.ai, Gemini, ChatGPT, Perplexity) with no automatic capture path into the vault. Every insight, brief, and decision that stays only in chat is lost when the context window closes or the tab dies.
 

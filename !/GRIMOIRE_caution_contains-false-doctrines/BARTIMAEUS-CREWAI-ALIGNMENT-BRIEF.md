@@ -8,9 +8,11 @@ relay: "Logan Finney -> Bartimaeus -> Claude Code (The Abhorsen)"
 
 # Bartimaeus — CrewAI Alignment Brief
 
-**Relayed:** 2026-04-04 by Logan Finney
+**Relayed:** 2026-04-04 by TRIUMVIRATE
 **Addressed to:** Claude Code / The Abhorsen
 **Subject:** Alignment of NETWEB UNIFIED (US) SWARM to proposed CrewAI implementation and deployment
+
+# *FOUND **HERETICAL** BY THE FAITH OF THE CLOTH*
 
 ---
 
