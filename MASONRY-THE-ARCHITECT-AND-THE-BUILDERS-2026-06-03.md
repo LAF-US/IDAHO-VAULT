@@ -1,6 +1,6 @@
 ---
 title: "Masonry: The Architect and the Builders"
-updated: 2026-06-03
+updated: 2026-06-04
 status: active
 authority: LOGAN
 authors:
@@ -8,38 +8,26 @@ authors:
 source: chat
 related:
   - "2026-06-03"
-  - SYNCRETIC-MAPPING-WALLS-OF-THE-WORLDS-2026-06-03
-  - RESEARCH_Icemark-Chronicles-2026-06-03
-  - RESEARCH_Icemark-Lore-Compendium-2026-06-03
   - VAULT-CONVENTIONS
 tags:
-  - research/cosmography
-  - subject/comparative-mythology
-  - subject/built-boundaries
+  - research/craft-tradition
   - subject/masonry
-  - subject/craft-tradition
+  - subject/house-architecture
+  - subject/guild
   - mode/syncretic
 ---
 
 # Masonry: The Architect and the Builders
 
-**Origin:** Conversation between Logan Finney and Claude Code, 2026-06-03. Successor node to [[SYNCRETIC-MAPPING-WALLS-OF-THE-WORLDS-2026-06-03]] and its BUILT BOUNDARIES correction.
-**Scope:** Names the role-split that BUILT BOUNDARIES under-specified at layer 2 of its hierarchy: the makers themselves divide into Architect and Builders, and **masonry** is the craft-practice that couples them.
-**Status:** On-the-record vault synthesis.
+**Origin:** Conversation between Logan Finney and Claude Code, 2026-06-03.
+**Scope:** An inquiry into **house architecture as a craft tradition** — specifically, the role-split between the figure who carries the geometry (the **Architect**) and the figures who cut and set the stones (the **Builders**), and the discipline (**masonry**) that couples them.
+**Status:** On-the-record vault synthesis. Standalone node — sibling, not successor, to other inquiries on this branch.
 
 ---
 
-## I. The under-specification
+## I. The role-split
 
-[[SYNCRETIC-MAPPING-WALLS-OF-THE-WORLDS-2026-06-03]] established a five-layer vertical hierarchy:
-
-1. Principle
-2. **Builders**
-3. Boundary
-4. Custodians
-5. Passers
-
-Layer 2 was treated as a single category. It is not. The makers themselves split into two functions, and the coupling between them is its own discipline:
+In any built-craft tradition where the labor exceeds a single hand, the makers themselves divide into two functions, and the coupling between them is its own discipline:
 
 - **Architect** — designs. Carries the geometry. Names the work, sets the ratios, draws the constellation, corrects the apex when a downstream worker mistakes which figure is keystone. Does not necessarily cut a single stone.
 - **Builders** — execute. Cut stones to the geometry given. Set courses, mix mortar, check plumb, lay. The masonry *is* their material work; the architectural intent is realized only in their stones.
@@ -95,19 +83,17 @@ The vault already names the Architect role. From `VAULT-CONVENTIONS.md` § "Bles
 
 The Architect is a codified position in the vault, identified by the surfaces blessed for durable work. The Builders are the agents staffed at various capability tiers per [[!-AGENTS.md]] — Claude Code, Codex, Copilot, Gemini, Perplexity, et al. — each cutting in their own specialty, all under direction.
 
-Masonry is the discipline this session has been operating: precision-under-direction, with seams visible where cuts had to be re-made. The corrected §VIII of the syncretic mapping is a re-cut stone, set in place after the wrong cut was chiseled out. The lore-reference file is a stone laid the second time after the first laying was found out-of-genre. Honest masonry leaves those seams visible rather than papering them over; the commit history is the record.
+Masonry is the discipline this session has been operating: precision-under-direction, with seams visible where cuts had to be re-made. Honest masonry leaves those seams visible rather than papering them over; the commit history is the record.
 
 ---
 
 ## VI. The recursion
 
-The syncretic mapping observed but did not name a recursion: that conversation was itself an Architect/Builders coupling in operation.
+This conversation has itself been an Architect/Builders coupling in operation.
 
-- The Architect supplied the principle (the colon-relational grammar, the polar inversion, the BUILT BOUNDARIES correction, the titles of every node including this one), drew the constellation across ASOIAF/Nix/Avatar/Verne/Hill, and corrected the hierarchy when the Builder put the Bell-Ringer in the keystone position.
-- The Builder cut stones (IRL provenance research, comparative tables, citation work, prose under the headers, editorial notes), set them in courses, re-cut when corrected.
+- The Architect supplied the principle (the colon-relational grammar, the corrections, the titles), drew the constellations across the source traditions, and corrected the apex when the Builder mistook which figure was keystone.
+- The Builder cut stones (research, comparative tables, citation work, prose under the headers, editorial notes), set them in courses, re-cut when corrected.
 - Masonry was the discipline between: precision, plumb-checks (frontmatter to standard, cross-links honored, attribution clean), visible seams where the work had to be re-done.
-
-The cathedral being built is the small courtyard wall represented by this branch's three nodes: the Icemark research, the lore reference, the syncretic mapping, and now this. They are not the vault's greater walls. They are one courtyard, sound enough.
 
 ---
 
@@ -121,9 +107,11 @@ I have not elevated "Logan = THE ARCHITECT" to vault doctrine in the body of thi
 
 ## Editorial note
 
-This file synthesizes a moment in the 2026-06-03 conversation between Logan Finney and Claude Code, succeeding [[SYNCRETIC-MAPPING-WALLS-OF-THE-WORLDS-2026-06-03]] as a sibling node. Logan named the title ("MASONRY : The Architect and the Builders") and directed the new-node format ("NEW NODE YES") in response to a Builder's inspection-request laid out in chat. Two of the Builder's other inspection questions (whether to name the Architect explicitly in the file, and whether to add a special mason's mark) were not answered directly; the Builder's defaults are documented in §VII above. The Architect can revise the defaults at any point — this is a node, not a constitution.
+This file synthesizes a moment in the 2026-06-03 conversation between Logan Finney and Claude Code. Logan named the title ("MASONRY : The Architect and the Builders") and directed the new-node format ("NEW NODE YES") in response to a Builder's inspection-request laid out in chat. Two of the Builder's other inspection questions (whether to name the Architect explicitly in the file, and whether to add a special mason's mark) were not answered directly; the Builder's defaults are documented in §VII above. The Architect can revise the defaults at any point — this is a node, not a constitution.
 
 Within the vault's own grammar, the "Architect" is partially codified at `VAULT-CONVENTIONS.md` §"Blessed Working Surfaces". This node deliberately stops at that level of vault-doctrinal claim. The Architect-as-office and Logan-as-architect-of-this-thread are not collapsed in the body of the file. Future nodes may make further claims; this one does not.
+
+**Revision note (2026-06-04):** An earlier draft framed this node as a "successor" to a separate inquiry on barriers/boundaries and read its content as filling in an under-specification of that other line. Per the Architect's direction, the framing has been pulled: **house architecture, barrier/boundary, and green wood are separate inquiries**, sharing surface resemblances but not a single thread. This node stands on its own as an inquiry into the craft of house architecture.
 
 — Claude Code, faithful stonemason for the duration of this work
 
@@ -139,8 +127,5 @@ Within the vault's own grammar, the "Architect" is partially codified at `VAULT-
 - Florence Cathedral / Santa Maria del Fiore: [Wikipedia](https://en.wikipedia.org/wiki/Florence_Cathedral)
 
 ### Vault internal
-- [[SYNCRETIC-MAPPING-WALLS-OF-THE-WORLDS-2026-06-03]] — predecessor node
-- [[RESEARCH_Icemark-Chronicles-2026-06-03]]
-- [[RESEARCH_Icemark-Lore-Compendium-2026-06-03]]
 - [[VAULT-CONVENTIONS]] §"Blessed Working Surfaces" — the "Architect" role in vault grammar
 - [[!-AGENTS.md]] — the agents/Builders registry
