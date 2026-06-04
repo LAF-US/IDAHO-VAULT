@@ -69,18 +69,18 @@
 ## Teams and Battle Strategies
 
 ### Core Team
-| Game | Pokémon | Level | Moves |
-|------|---------|-------|-------|
-| RBY/FRLG/HGSS | Rhyhorn | 45 | Stomp, Tail Whip, Fury Attack, Horn Drill |
-| RBY/FRLG/HGSS | Dugtrio | 42 | Sand Attack, Dig, Slash, Earthquake |
-| RBY/FRLG/HGSS | Nidoqueen | 44 | Tackle, Double Kick, Poison Sting, Bite |
-| RBY/FRLG/HGSS | Nidoking | 45 | Tackle, Double Kick, Poison Sting, Thrash |
-| RBY/FRLG/HGSS | Rhydon | 50 | Stomp, Tail Whip, Fury Attack, Earthquake |
-| LGPE | Sandshrew | 42 | Scratch, Sand Attack, Rollout, Fury Swipes |
-| LGPE | Onix | 42 | Tackle, Screech, Rock Throw, Bind |
-| LGPE | Rhyhorn | 45 | Stomp, Tail Whip, Fury Attack, Bulldoze |
-| LGPE | Dugtrio | 44 | Sand Attack, Dig, Slash, Earthquake |
-| LGPE | Rhydon | 47 | Stomp, Tail Whip, Fury Attack, Earthquake |
+| Game | Pokémon | Level | Type | Moves |
+|------|---------|-------|------|-------|
+| RBY/FRLG/HGSS | Rhyhorn | 45 | Ground/Rock | Stomp, Tail Whip, Fury Attack, Horn Drill |
+| RBY/FRLG/HGSS | Dugtrio | 42 | Ground | Sand Attack, Dig, Slash, Earthquake |
+| RBY/FRLG/HGSS | Nidoqueen | 44 | Poison/Ground | Tackle, Double Kick, Poison Sting, Bite |
+| RBY/FRLG/HGSS | Nidoking | 45 | Poison/Ground | Tackle, Double Kick, Poison Sting, Thrash |
+| RBY/FRLG/HGSS | Rhydon | 50 | Ground/Rock | Stomp, Tail Whip, Fury Attack, Earthquake |
+| LGPE | Sandshrew | 42 | Ground | Scratch, Sand Attack, Rollout, Fury Swipes |
+| LGPE | Onix | 42 | Rock/Ground | Tackle, Screech, Rock Throw, Bind |
+| LGPE | Rhyhorn | 45 | Ground/Rock | Stomp, Tail Whip, Fury Attack, Bulldoze |
+| LGPE | Dugtrio | 44 | Ground | Sand Attack, Dig, Slash, Earthquake |
+| LGPE | Rhydon | 47 | Ground/Rock | Stomp, Tail Whip, Fury Attack, Earthquake |
 
 ### Signature Pokémon
 - **Persian**: Most iconic, often seen with him
@@ -171,4 +171,4 @@
 - Bulbapedia: [Giovanni (game)](https://bulbapedia.bulbagarden.net/wiki/Giovanni), [Giovanni (anime)](https://bulbapedia.bulbagarden.net/wiki/Giovanni_(anime))
 - Pokémon Wiki, GameRant, ScreenRant
 
-*Last updated: June 3, 2026*
+*Last updated: June 4, 2026*
