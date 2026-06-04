@@ -410,3 +410,5 @@ rclone-cache/
 # Added by ggshield
 .cache_ggshield
 >>>>>>> dd49e33e (small edits)
+local-scan-detect-secrets.json
+idaho-vault-48b78ec18835.json
