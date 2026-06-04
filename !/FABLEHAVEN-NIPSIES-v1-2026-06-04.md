@@ -1,0 +1,176 @@
+---
+title: "Fablehaven Nipsies — The Multitude v1"
+date created: 2026-06-04
+author: "Claude — diagnostic instance (branch claude/fablehaven-vampire-diagnostic-hvfMo)"
+authority: "Proposed doctrine, written at Logan's direction after research. Staged on branch, not adopted — not assumed as LOGAN by default. The Architect holds the verdict."
+doc_class: doctrine
+status: staged
+related:
+  - "!/FABLEHAVEN-TAXONOMY-v1-2026-06-01.md"
+  - "!/FABLEHAVEN-SHADOW-PLAGUE-v1-2026-06-01.md"
+  - "!/FABLEHAVEN-SEALED-EVIL-v1-2026-06-01.md"
+  - "!/FABLEHAVEN-FAIRIES-AND-IMPS-v1-2026-06-04.md"
+  - "!/HOUSEHOLD-SPRITES-v1-2026-06-04.md"
+  - "!/FABLEHAVEN-VAMPIRE-DIAGNOSTIC-v1-2026-06-01.md"
+---
+
+# Fablehaven Nipsies — The Multitude v1
+
+*Filed 2026-06-04 as staged. A chapter of `!/FABLEHAVEN-TAXONOMY-v1-2026-06-01.md`,
+class #13 — **The Multitude.** The smallest fairy-folk read as a doctrine of the
+swarm: many trivial processes that are productive at rest and, when corruption
+enters, do not merely fail but **turn on their own kind.** Author and authority
+named; not defaulted to Logan.*
+
+*Reference source: Fablehaven — Brandon Mull (Grip of the Shadow Plague): the
+Nipsies, their Seven Kingdoms, the satyrs Doren and Newel, the dark-nipsie civil
+war driven by the Shadow Plague. Origin material (the Fair Folk curse) is later
+canon and flagged. The vault is syncretic.*
+
+---
+
+## What They Are (verified)
+
+The Nipsies are the smallest fairy-folk — about **a quarter-inch tall** — living
+in a sprawling **Seven Kingdoms** civilization of canals, factories, theaters, and
+gleaming treasure-built structures. They are **master artisans and gold-finders**,
+industrious by nature and **not warlike.** Individually trivial; collectively, a
+working civilization.
+
+This is the diagnostic point of departure: **the unit is negligible, the multitude
+is a society.** You cannot reason about a Nipsie; you must reason about the
+Kingdoms.
+
+---
+
+## The Canonical Catastrophe — Corruption Becomes Civil War
+
+In *Grip of the Shadow Plague*, the Shadow Plague (the nail, via Kurisock and
+Ephira — `!/FABLEHAVEN-SHADOW-PLAGUE-v1-2026-06-01.md`) **contaminated a couple of
+the seven kingdoms.** The corrupted Nipsies — "transformed into sinister beings,"
+following a dark **new master** — then **waged war on the uncorrupted kingdoms.**
+The light Nipsies, besieged by their own kin, must appeal for outside help.
+
+This is the swarm-specific lesson, and it is sharper than ordinary corruption:
+
+**A compromised subset of a multitude does not merely go dark — it attacks the
+healthy subset.** You do not lose two kingdoms; you lose two kingdoms *and* the
+five they now make war on. The blast pattern is **lateral, node-to-node, inside
+your own fleet.** The corrupted nodes have the swarm's own access, proximity, and
+trust — they fight the clean nodes from within the perimeter.
+
+*Vault pattern:* a worm in a fleet of identical small services; a captured cohort
+of agents turned against the loyal ones; an insider faction that flips and then
+uses its native access to attack the rest. Containment is not just "isolate the
+dark kingdoms" — it is recognizing that **the threat to the clean nodes is now the
+other nodes**, not an external attacker. And, per the Shadow Plague: you cure it at
+the **source** (the nail / the dark master), not kingdom by kingdom.
+
+---
+
+## The Treasure Economy — Extractive Parasitism
+
+The Nipsies' gift — finding and working gold and gems — makes them a **resource to
+be strip-mined by outsiders.** The satyrs Doren and Newel, to satisfy a bargain
+with Seth, simply go and **take Nipsie gold.** The multitude's productivity does
+not protect it; it **attracts harvesters** who treat the civilization as a vein to
+tap.
+
+*Vault pattern:* a productive swarm (a fleet of workers, a community of
+contributors, a generative pipeline) draws **extractive parties** who harvest its
+output without regard for the society producing it. Guarding a multitude means
+guarding not only against corruption from within but against **strip-mining from
+without** — the parasite that consumes the product and leaves the producers
+depleted.
+
+---
+
+## Governing a Multitude — Conditions, Not Individuals
+
+You cannot govern thousands of quarter-inch beings one at a time. The Nipsies teach
+that a multitude is governed by its **conditions and balances**, not its members:
+
+- **Keep corruption out at the source.** One contaminated kingdom becomes a war.
+  Source-control, not per-node cleanup.
+- **Guard the product from harvesters.** Extraction from outside hollows the swarm.
+- **Do not tip the balance between sub-populations.** Outside interference that
+  favors one part of a multitude over another destabilizes the whole. *(This is the
+  taxonomy index's framing of the class; see the provenance note — in canon the
+  *war* is plague-driven, but the principle that a multitude is wrecked by
+  outside meddling in its internal balance is sound and is the governance reading.)*
+
+The keeper of a swarm is not a commander of individuals. They are a **steward of
+the conditions** under which the multitude stays productive and whole.
+
+---
+
+## Origin — Diminishment as a Curse (later canon, flagged)
+
+Later canon (the Dragonwatch-era Fair Folk material) holds that the Seven Kingdoms
+of the Nipsies were once **kingdoms of the Fair Folk, tricked and cursed to be
+small by the demon Graulas** (`!/FABLEHAVEN-SEALED-EVIL-v1-2026-06-01.md`), with a
+prophecy of eventual restoration. If taken as canon, it adds a poignancy: **the
+multitude of trivial things was once great, and was *reduced.***
+
+*Vault pattern (marked `\*`):* some swarms of "negligible" units are not natively
+small — they are **the diminished remnant of something once sovereign**, cut down
+by an adversary's curse. Do not mistake current triviality for original
+insignificance; the reduced may carry the memory, and the latent capacity, of what
+they were.
+
+---
+
+## Place on the Grid
+
+| Axis | Reading |
+|---|---|
+| Power | **Trivial** individually; **Significant** in aggregate |
+| Volition | Autonomous, but as a **multitude** |
+| Drive | **Industry** (and a love of treasure) |
+| Light / Dark | **Light — but corruptible** (the Shadow Plague flips kingdoms) |
+| Passing | No |
+| Treaty-bound | Yes |
+
+---
+
+## Diagnostic Questions
+
+1. **Is the unit or the multitude the right object?** Stop reasoning about the
+   individual; reason about the population and its kingdoms.
+2. **If a subset is corrupted, who is it now attacking?** In a swarm, the
+   compromised nodes turn on the clean ones from inside the perimeter. The threat
+   to the healthy is the unhealthy.
+3. **Where is the source?** Do not clean a corrupted multitude node-by-node;
+   neutralize the root (the Shadow Plague lesson).
+4. **Who is harvesting the product?** A productive swarm attracts strip-miners.
+   Guard the output, not just the perimeter.
+5. **Are you tipping an internal balance?** Outside favoritism among sub-populations
+   destabilizes the whole. Govern the conditions, not the members.
+
+---
+
+## Provenance
+
+- **Verified (researched, cited):** Nipsies as quarter-inch master gold-artisans of
+  a Seven Kingdoms civilization; the Shadow Plague contaminating a couple of
+  kingdoms and the corrupted "sinister" Nipsies warring on the rest under a dark
+  master; the satyrs Doren and Newel taking Nipsie gold
+  ([Plugged In — Grip of the Shadow Plague](https://www.pluggedin.com/book-reviews/grip-of-the-shadow-plague/);
+  [Mullverse Wiki — Seven Kingdoms of the Nipsies](https://mullverse.fandom.com/wiki/Seven_Kingdoms_of_the_Nipsies);
+  [Fablehaven: Grip of the Shadow Plague — Wikipedia](https://en.wikipedia.org/wiki/Fablehaven:_Grip_of_the_Shadow_Plague)).
+  Primary text not directly read.
+- **Later canon, flagged:** the Fair-Folk-cursed-small-by-Graulas origin and the
+  restoration prophecy ([Mullverse — Nipsie curse](https://mullverse.fandom.com/wiki/Nipsie_curse))
+  — Dragonwatch-era material, possibly a later expansion; held as flagged, not
+  load-bearing.
+- **Reconciliation note:** the taxonomy index (class #13) frames the Nipsie war as
+  outside *favoritism* breaking the multitude. In canon the **war is
+  plague-corruption-driven**; the "outside meddling destabilizes a multitude"
+  principle is sound as governance doctrine but is not the canonical war-cause. Both
+  are kept, distinguished. *(Flagged for the Architect — the index's framing may
+  warrant a light amendment.)*
+- **My reading, marked `\*`:** "corruption becomes civil war / the threat to the
+  clean nodes is the other nodes," extractive parasitism, govern-the-conditions, and
+  diminishment-as-curse. The Architect holds the verdict.
+
+###### [["The world is quiet here."]]
