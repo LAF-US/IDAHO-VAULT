@@ -159,4 +159,4 @@
 ## References
 - Bulbapedia, Pokémon Wiki, Poké Universe, StrategyWiki
 
-*Last updated: June 3, 2026*
+*Last updated: June 4, 2026*
