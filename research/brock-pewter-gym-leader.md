@@ -64,14 +64,14 @@
 ## Teams and Battle Strategies
 
 ### Core Team
-| Game | Pokémon | Level | Moves |
-|------|---------|-------|-------|
-| RBY | Geodude | 12 | Tackle, Defense Curl |
-| RBY | Onix | 14 | Tackle, Screech, Bind |
-| FRLG/HGSS | Geodude | 12 | Tackle, Defense Curl, Rock Throw |
-| FRLG/HGSS | Onix | 14 | Tackle, Screech, Rock Throw, Bind |
-| LGPE | Geodude | 12 | Tackle, Defense Curl, Rock Throw |
-| LGPE | Onix | 14 | Tackle, Screech, Rock Throw, Bind |
+| Game | Pokémon | Level | Type | Moves |
+|------|---------|-------|------|-------|
+| RBY | Geodude | 12 | Rock/Ground | Tackle, Defense Curl |
+| RBY | Onix | 14 | Rock/Ground | Tackle, Screech, Bind |
+| FRLG/HGSS | Geodude | 12 | Rock/Ground | Tackle, Defense Curl, Rock Throw |
+| FRLG/HGSS | Onix | 14 | Rock/Ground | Tackle, Screech, Rock Throw, Bind |
+| LGPE | Geodude | 12 | Rock/Ground | Tackle, Defense Curl, Rock Throw |
+| LGPE | Onix | 14 | Rock/Ground | Tackle, Screech, Rock Throw, Bind |
 
 ### Extended Team
 - Steelix (Onix evolution in anime)
@@ -149,4 +149,4 @@
 ## References
 - Bulbapedia, Pokémon Wiki, PokéJungle, TheGamer
 
-*Last updated: June 3, 2026*
+*Last updated: June 4, 2026*
