@@ -61,6 +61,11 @@ order at once (`!/FABLEHAVEN-TWO-ORDERS-v1-2026-06-03.md`). Every defensive
 deliberation he attends is intelligence delivered to the offense; every offensive
 move is covered by his defensive authority.
 
+> **Repair / one layer deeper:** even "dual command" is incomplete. In full canon
+> the Sphinx serves *neither* order — both are covers for a **private third
+> agenda** (his own), and he is himself out-manipulated by Graulas. The complete
+> read is the **Triple Agent**: `!/THE-TRIPLE-AGENT-v1-2026-06-04.md`.
+
 *Vault pattern:* the same principal controlling red team and blue team, auditor and
 audited, the security lead who is the threat actor. Separation of duties is not a
 bureaucratic nicety here — it is the *only* control that survives a compromised
