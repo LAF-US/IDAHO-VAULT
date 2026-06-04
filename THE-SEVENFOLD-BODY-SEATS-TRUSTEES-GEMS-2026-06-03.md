@@ -44,6 +44,24 @@ date: 2026-06-03
 ### 3. Emily Rodda, *Deltora Quest* — the seven *Gems* of the Belt (and their guardians)
 **[canon-per-series, ⚠️ verify]** The **Belt of Deltora** bears **seven gems**, each a virtue/power: **diamond, emerald, lapis lazuli, topaz, ruby, opal, amethyst.** The Shadow Lord scattered them across **seven guarded perils** (the Forests of Silence, the Lake of Tears, the City of the Rats, the Shifting Sands, Dread Mountain, the Maze of the Beast, the mountain of the diamond). Only the **rightful heir** can reassemble the Belt to restore the kingdom — the seven gems are **distributed tokens of legitimacy**, each won from a guardian.
 
+## The seat ↔ demesne crosswalk — LOCKED
+
+> **The mapping.** The seven **Small Council seats** (ASOIAF) onto the seven **demesnes** of *Keys to the Kingdom* (Garth Nix), matched **by portfolio/function as the primary weight** and the Trustees' **seven deadly sins as a secondary weight**. **Adjudicated and LOCKED by the Architect (Logan), 2026-06-04.**
+>
+> **Provenance.** Small Council seats grounded in `[[RESEARCH_A-Song-of-Ice-and-Fire-The-Small-Council-2026-06-03]]`. The demesnes and the Trustees' sins **web-verified 2026-06-04** (Keys to the Kingdom Wiki / Wikipedia). The seat-sins are **[reading]** of the ASOIAF characters. The pairing itself is **[reading]**, ruled by the Architect. Paraphrased; no source text reproduced.
+
+| Council seat | Demesne | Trustee · sin | The resonance |
+|---|---|---|---|
+| **Hand of the King** | the **Upper House** | Superior Saturday · **Envy** | the powerful senior **deputy** who runs the machinery and **covets the seat above** (the oldest, most powerful Denizen, plotting her invasion of the Gardens) — the Hand who would be king |
+| **Master of Coin** | the **Far Reaches** | Grim Tuesday · **Greed** | ★ double-lock — treasure, mining, debt **+** Greed=Greed |
+| **Master of Ships** | the **Border Sea** | Drowned Wednesday · **Gluttony** | ★ double-lock — *the sea itself* **+** Gluttony=Gluttony (the leviathan that swallowed the sea) |
+| **Lord Commander, Kingsguard** | the **Incomparable Gardens** | Lord Sunday · **Pride** | the apex / the epicenter, the eldest given the **best domain**; the sworn swords nearest the sovereign, **Pride** of the white cloak |
+| **Master of Whisperers** | the **Middle House** | Lady Friday · **Lust** | the **eunuch & the empty Denizen** — both barred from a life of their own, both feeding vampirically on others' private lives (Friday drains mortals' experiences; the spider harvests the realm's secrets); the **absent ruler** in the shadows |
+| **Grand Maester** | the **Lower House** | Mister Monday · **Sloth** | the **records/archive** floor (maesters *keep* knowledge, don't conjure it) **+** Sloth=Sloth (Pycelle's feigned dotage) |
+| **Master of Laws** | the **Great Maze** | Sir Thursday · **Wrath** | **justice-as-force** — the law's coercive arm, the Army/battlefield demesne **+** Wrath=Wrath |
+
+**Closure.** A clean **7↔7 bijection**: seven seats, seven demesnes, all seven days of the week — and because each Trustee embodies one deadly sin, **all seven sins land exactly once** (Envy · Greed · Gluttony · Pride · Lust · Sloth · Wrath). The realm's *governance* (seats the king can recall) and the House's *trust* (demesnes the Architect's Will entrusts) are the **same sevenfold body** — distributed, scoped authority whose failure is always the holder who serves the sin over the sovereign.
+
 ## The shared shape
 
 | System | The seven are… | Held under | The dramatic engine |
