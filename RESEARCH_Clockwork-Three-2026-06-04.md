@@ -20,6 +20,8 @@ tags:
   - genre/historical-fantasy
   - subject/body-mind-soul
   - subject/automaton
+  - subject/guilds-and-crafts
+  - mode/syncretic
 ---
 
 # Research Brief: The Clockwork Three by Matthew J. Kirby
@@ -28,27 +30,48 @@ tags:
 **Type:** Book-research brief
 **Researcher:** Claude Code (parallel-fan-out research, follow-up web search; rate-limit fallback to direct WebSearch)
 **Date:** 2026-06-04
-**Status:** Complete — research grounding for an existing vault doctrine, not a new claim
+**Status:** Complete — research grounding for two co-equal vault analytics on the same book
 
 ---
 
-## Standing relation to existing vault doctrine
+## Two analytics on this book
 
-The vault already carries a canonical reading of this book: **[[!/WITNESS-CLOCKWORK-THREE-SYNCRETISM-2026-05-23]]** (Big Pickle, filed 2026-05-23). That Witness establishes:
+The vault is syncretic. Different analytics on the same source can both be doctrinal, on different axes. This book carries **two distinct analytics**, both legitimate, both established here, neither subordinate to the other:
 
-- The book's load-bearing structure is the **three objects that animate the automaton**: **BODY** (the Clockwork Man) + **MIND** (the Magnus Head) + **SOUL** (the Golem Clay).
+### Analytic 1 — The COMPONENTS of the clockwork man (per existing Witness)
+
+**[[!/WITNESS-CLOCKWORK-THREE-SYNCRETISM-2026-05-23]]** (Big Pickle, filed 2026-05-23) reads the **automaton's animating components** as a Body/Mind/Soul triad. This is the components-of-the-clockwork-man analytic. Established prior to this brief.
+
+- **BODY** = the Clockwork Man (gears, structure, the coal-chute chest plate)
+- **MIND** = the Magnus Head (Albertus Magnus's brazen head — interface, appearance of wisdom)
+- **SOUL** = the Golem Clay (Jewish-mystical animating principle)
 - **All three are required.** None is sufficient alone. The Magnus Head is not "just hype"; it is a necessary component.
-- **The three children are the *builders*, not the components.** Giuseppe, Frederick, and Hannah are the figures who bring the three objects together.
+- **The three children are the *builders*, not the components.** They bring the three objects together.
 - The book is the syncretic source for the vault's **Touchstone Tree** Body/Mind/Soul triad (PERIPHERY / CORE / GHOST per `!README.md`).
 - **Rondo** (Emily Rodda) is the adjacent syncretic source (`SUSPENDED-ANIMATION-WITNESS-2026-05-17.md`).
 
-This research brief grounds the Witness in research detail. It does not propose a competing reading.
+### Analytic 2 — The WORLD of the children (this brief)
+
+This brief reads the **world the children inhabit** — its institutions, its crafts, its material — as a syncretic mapping of guilds, crafts, and wondrous objects. This is the world-of-the-children analytic. Distinct from but complementary to Analytic 1.
+
+- The world contains **two craft guilds** (clockmakers' / stonemasons'), each following the medieval apprentice → journeyman → master progression. The children are attached to them at opposite ends of the ladder.
+- The world contains **three craft domains in the children's lives** — Instruments (Giuseppe's green violin), Clockwork (Frederick's apprenticeship and the Magnus head tradition), Stonework (Hannah's father's silenced trade and the hotel he built).
+- The world contains **four wondrous objects** — the three Body/Mind/Soul components of Analytic 1, *plus* the **green violin** (a fourth, parallel-but-distinct object that does not enter the automaton).
+- The climactic move is **cross-guild solidarity routed through the next generation**: Frederick (clockmakers' apprentice, rising) pays for the cure that restores Hannah's father (stonemasons' master, silenced).
+- The book is a syncretic source for reading the *world the children inhabit* — its institutions, its crafts, its labor — alongside the components-of-the-automaton triad.
+
+### Why the two analytics are different
+
+- Analytic 1 reads **a made thing** (the automaton): what are its parts, and what does each contribute?
+- Analytic 2 reads **a place** (the city the children navigate): what institutions stand here, what crafts operate, what material is at hand?
+
+A made thing has components. A place has institutions and craft contexts. The two analytics work on different surfaces of the same book and do not compete.
 
 ---
 
 ## At a glance
 
-A middle-grade historical-fantasy novel by American author **Matthew J. Kirby**, published by **Scholastic** in 2010. His **debut** — earned a **Publishers Weekly Flying Start** and recognition from the **Rebecca Caudill Young Readers' Book Award**. Set in a fictional coastal city on the U.S. eastern seaboard, late 19th century / circa 1900. Three child protagonists (Giuseppe, Hannah, Frederick) braid their separate quests into a single resolution. Per the existing Witness, the book's structural keystone is the **three objects** that animate the automaton, not the three children; the children are the builders.
+A middle-grade historical-fantasy novel by American author **Matthew J. Kirby**, published by **Scholastic** in 2010. His **debut** — earned a **Publishers Weekly Flying Start** and recognition from the **Rebecca Caudill Young Readers' Book Award**. Set in a fictional coastal city on the U.S. eastern seaboard, late 19th century / circa 1900. Three child protagonists (Giuseppe, Hannah, Frederick) braid their separate quests into a single resolution.
 
 ---
 
@@ -79,9 +102,9 @@ Tonal register: **dark for middle grade**. Real violence, real cruelty, real chi
 
 ---
 
-## III. The three objects (load-bearing structure per the Witness)
+## III. Analytic 1 — The three objects of the automaton (per the Witness)
 
-The book's structural keystone, per [[!/WITNESS-CLOCKWORK-THREE-SYNCRETISM-2026-05-23]]:
+The components of the clockwork man, per [[!/WITNESS-CLOCKWORK-THREE-SYNCRETISM-2026-05-23]]:
 
 | Component | Object | Plot Role | Source Tradition |
 |-----------|--------|-----------|------------------|
@@ -110,9 +133,9 @@ The book's lesson — preserved in the existing Witness as a correction to a pri
 
 ---
 
-## IV. The three children (the builders)
+## IV. Analytic 2 — The world of the children (this brief)
 
-The three protagonists are *the builders* — the figures who bring the three objects together. They are not themselves the structural triad (per the Witness's recorded correction). Their separate arcs braid into the convergence that produces the animated automaton and the cross-protagonist solidarity at the climax.
+The children are *the builders* — the figures who bring the three objects together (per the Witness). This section reads the **world they navigate** as its own analytic: what institutions stand there, what crafts operate, what material is at hand. Their separate arcs braid into the convergence that produces both the animated automaton (Analytic 1) and the cross-protagonist solidarity at the climax (Analytic 2's payoff).
 
 ### Giuseppe
 
@@ -126,14 +149,40 @@ A **tenement girl** who would have been at school (which she loved) had her fath
 
 A **clockmaker's apprentice**, age 13, working under **Master Branch** in pursuit of journeyman status in the clockmakers' guild. His mother left him at an orphanage when he was young; he has buried memories and nightmares. Builds the Clockwork Man in secret, scavenging parts (including a coal chute for the chest plate).
 
-### Two guilds as the children's craft contexts
+### Two guilds in the children's world
 
-The children's adult worlds are organized around two craft guilds following the medieval *apprentice → journeyman → master* progression:
+The world the children navigate is organized around **two craft guilds** following the medieval *apprentice → journeyman → master* progression. The two child-figures most directly attached to them occupy opposite ends of the ladder:
 
-- **Clockmakers' guild** — Frederick is an apprentice working toward the journeyman examination; the Clockwork Man is his examination piece. ([The Review Broads](https://thereviewbroads.com/book-reviews-giveaway-the-clockwork-three/))
-- **Stonemasons' guild** — Hannah's father is **a master stonemason**, *"a famous stonemason"* before his stroke. He **worked on Stroop's hotel**, which is how he could draw Hannah the map of where the treasure is hidden inside. ([MuggleNet review](https://blog.mugglenet.com/2013/01/book-review-the-clockwork-three-by-matthew-j-kirby/))
+- **Clockmakers' guild** — Frederick is **an apprentice** working toward the journeyman examination; the Clockwork Man is his examination piece. ([The Review Broads](https://thereviewbroads.com/book-reviews-giveaway-the-clockwork-three/)) His arc: *rising into the guild from below.*
+- **Stonemasons' guild** — Hannah's father is **a master stonemason** — *a* master, one of several in his guild, not the singular mason of the city. He was once *"a famous stonemason"*; he **worked on Stroop's hotel** and other buildings. ([MuggleNet review](https://blog.mugglenet.com/2013/01/book-review-the-clockwork-three-by-matthew-j-kirby/)) He has been struck down by **apoplexy** (period medical term for stroke), is **paralyzed from the neck down**, and lies bedridden. His arc: *fallen from the top of the guild, silenced.*
 
-The cross-guild move at the climax: **Frederick pays for the treatment that restores Hannah's father.** The rising apprentice of one guild pays the silenced master of the other guild's restoration, routed through the daughter's labor. This is a structural feature of the children-as-builders pattern; it is not a new structural keystone competing with the three-objects mapping.
+| | Clockmakers' guild | Stonemasons' guild |
+|---|---|---|
+| Figure | Frederick | Hannah's father |
+| Rank | Apprentice | Master (former) |
+| Position on ladder | Rising | Fallen |
+| Examination piece | The Clockwork Man (in progress) | (already past examination — was famous) |
+| Built work in the city | (none yet) | Stroop's hotel, among others |
+| Voice at start of book | Apprentice secrecy | Silenced by apoplexy |
+| Voice at end of book | Becomes journeyman | Restored |
+
+**Hannah carries the master mason's interior knowledge.** Hannah's father **drew her the map showing where Stroop's treasure is hidden in the hotel — because he worked on the hotel and knew its construction from the inside.** ([The Review Broads](https://thereviewbroads.com/book-reviews-giveaway-the-clockwork-three/)) Hannah is **the master mason's daughter carrying her silenced father's architectural knowledge into the building he built**. The map is a guild-knowledge transmission across one generation, against the silence.
+
+**The cross-guild move at the climax: Frederick pays for the treatment that restores Hannah's father.** ([MuggleNet review](https://blog.mugglenet.com/2013/01/book-review-the-clockwork-three-by-matthew-j-kirby/)) The rising apprentice of one guild pays the silenced master of the other guild's restoration, routed through the daughter's labor. The clockmakers' guild pays the stonemasons' restoration. The book's solidarity is *inter-guild solidarity routed through the next generation* — through the children, the two guilds find each other.
+
+### Three craft domains in the children's world (Instruments / Clockwork / Stonework)
+
+Each of the three children is attached to a different craft domain in their world:
+
+| | Instruments | Clockwork | Stonework |
+|---|---|---|---|
+| Child attached to it | Giuseppe | Frederick | Hannah |
+| Their relation | Plays the green violin (instrument inherited from harbor, maker unknown) | Apprentice building toward the journeyman examination | Daughter of *a* master stonemason whose silenced craft she covers for |
+| Historical lineage | Italian violin-making (Cremonese tradition implicit; the Stradivari-shadow) | Albertus Magnus / brazen-head / medieval automaton tradition | Medieval masons' guild; the master-mason tradition (`magister operis`); mason's-marks craft |
+| State at start of book | Inherited gift — found, charm unexplained | Mid-build, head missing | Inherited mid-construction, sealed by apoplexy |
+| State at end of book | Carries Giuseppe to the courts of Europe | Clockwork Man animated; Frederick journeyman | Father restored by Frederick's payment |
+
+This three-craft mapping of the children's world is distinct from the three-objects mapping of the automaton (Analytic 1). The Magnus Head sits inside the **Clockwork** craft-domain of the world; the Clockwork Man is the **examination piece** Frederick is producing for his guild; the Golem Clay enters from the **museum** (the city's repository of all four wondrous objects, including the Magnus Head). The green violin sits inside the **Instruments** domain and never enters the automaton — it is a fourth wondrous object running parallel to the Body/Mind/Soul triad, carried by a different child for a different release.
 
 ---
 
@@ -181,9 +230,15 @@ Apprenticed to Master Branch → building the Clockwork Man in secret → unable
 
 ## VIII. Editorial note / research caveats
 
-This brief was prepared on 2026-06-04 in a session that had not, on first reading, searched the vault for prior work on this book. The existing Witness ([[!/WITNESS-CLOCKWORK-THREE-SYNCRETISM-2026-05-23]]) was discovered late in the session and the brief was restructured to defer to it. A prior draft of this file foregrounded a "two guilds" reading as the book's structural keystone; that reading is preserved in §IV as a structural feature of the children-as-builders, but **the load-bearing reading for the vault is the three-objects Body/Mind/Soul mapping the Witness establishes**, and this brief now serves as research grounding for that mapping rather than a competing structure.
+**Two revision rounds are baked into this brief; the trace is left visible for the next stonemason.**
 
-The "discovery before invention" lesson is the operative one: search the vault first.
+This brief was prepared on 2026-06-04 in a session that had not, on first reading, searched the vault for prior work on this book. The existing Witness ([[!/WITNESS-CLOCKWORK-THREE-SYNCRETISM-2026-05-23]]) was discovered late in the session.
+
+**First revision (over-deference):** On discovering the Witness, the brief was rewritten to subordinate its own findings to the Witness's three-objects mapping — treating the world-of-the-children reading as "supporting detail" and the Witness's components-of-the-automaton reading as the singular "load-bearing reading for the vault." This was the opposite error of the original — over-correction by deference rather than over-reach by displacement.
+
+**Second revision (current state):** Per the architect's correction, **the vault is syncretic**: the components-of-the-clockwork-man and the world-of-the-children are **two different analytics** on the same book, both legitimate, neither subordinate. The brief now presents both as co-equal vault readings (Analytic 1 = the Witness's components reading; Analytic 2 = this brief's world reading). A made thing has components; a place has institutions and craft contexts; both deserve their own analyses.
+
+**The discovery-before-invention lesson stands**: search the vault first. But discovery does not entail subordination — it entails honoring what is already there *alongside* what is newly cut. The vault syncretizes; it does not subsume.
 
 WebFetch returned 403 on SuperSummary, the cleanest plot-summary source. Findings are reconstructed from search-result snippets across SuperSummary, Wikipedia, Goodreads, Kirkus, Scholastic, BookBrowse, and assorted reviews; the Scholastic discussion guide was accessible as a PDF source.
 
@@ -203,5 +258,5 @@ WebFetch returned 403 on SuperSummary, the cleanest plot-summary source. Finding
 - [Book Reviews & Giveaway — The Review Broads](https://thereviewbroads.com/book-reviews-giveaway-the-clockwork-three/)
 
 ### Vault internal
-- [[!/WITNESS-CLOCKWORK-THREE-SYNCRETISM-2026-05-23]] — **the canonical prior reading; this brief defers to it**
+- [[!/WITNESS-CLOCKWORK-THREE-SYNCRETISM-2026-05-23]] — **Analytic 1: the components-of-the-clockwork-man reading; established prior to this brief and held alongside it**
 - [[!README.md]] — the Touchstone Tree triad (BODY / MIND / SOUL)
