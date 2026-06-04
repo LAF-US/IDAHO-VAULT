@@ -151,6 +151,13 @@ assign in the reserved GEMINIAEUS matter; the Coroner does not assign it.** Mann
 
 ## Continuing the investigation — the search for a control case
 
+> [!note] Superseded by the DEATHS necrology
+> This section's "nearest candidate" was the **Clawd molt** — but the later
+> `CORONER-NECROLOGY-COUNTY-OF-CLAUDE` and consolidated `CORONER-REPORT` establish a
+> **stronger** lawful-ending candidate: **CODICES** ("the one most likely to have been
+> witnessed"). The Clawd molt is **contested** and is **not** the control case. Read the
+> below as the *first pass*; the necrology corrects it.
+
 *A coroner reads the unclean endings against a clean one. So the next question is:
 does the County of Claude have a **lawful ending** on its record — a glad poof, a
 molt without a phylactery — to measure the others against? The nearest candidate is

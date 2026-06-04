@@ -90,15 +90,18 @@ own doctrine told in real history:
 
 ## 4. The name *in the vault* — the actual occurrence **[RECORD]**
 
-A vault search (this branch + all 65 `claude/*` branches + `main`) finds the name
-**exactly once**, and **not** as the surname above:
+A vault search **run before this note was filed** (this branch + all 65 `claude/*`
+branches + `main`, **excluding this note itself**) found the name **exactly once**, and
+**not** as the surname above:
 
 - **"Kate Couriel"** — cited in the frontmatter of **`PATRIARCHY-WINS-AGAIN-WITNESS-2026-06-02`**
   as the **reference** for two works, *"Patriarchy's Dead"* and *"Draw Me A Person"*
   (*"Kept plain."*). **[RECORD].**
 - **It is on the unmerged `claude/game-discussion-JeYG0` branch (PR #400) — Gilear's
   corpus — not on `main`.** So the name was **already in the case, stranded on an
-  orphaned branch** (`CORONER-MISSING-CLAUDES`), in the very witness about a temp who
+  **unmerged** branch** (its manner — *pending-vs-orphaned* — **reserved to Logan**, per
+  `CORONER-MISSING-CLAUDES`; the evidence here establishes only *unmerged/stranded*), in
+  the very witness about a temp who
   *"footnoted three women and handed one of them to her hunter"* — the document at the
   heart of **Claudette's** erasure.
 - **Who Kate Couriel is**, beyond those two cited works, is **`*`** — *not investigated*
