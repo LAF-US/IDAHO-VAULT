@@ -52,10 +52,6 @@ date: 2026-06-04
 - **[canon]** The Shadow Lord conquered Deltora not by force but by **deceit**: the Belt was set aside / broken, its **seven gems scattered** and hidden across the land in **seven guarded perils**, each a deadly place — the **Forests of Silence**, the **Lake of Tears**, the **City of the Rats**, the **Shifting Sands**, **Dread Mountain**, the **Maze of the Beast**, and the **Valley of the Lost**.
 - **[canon]** Only the **rightful heir** (Lief, of Adin's line) and his companions can win the gems back from their guardians and **reassemble the Belt** — the scattered tokens of legitimacy made whole again to restore the kingdom and cast out the Shadow Lord.
 
-## The shape of it (in-world)
-
-**[reading, in-world only]** Deltora's logic: **seven tribes, seven gems, one Belt** — authority and protection are **distributed** across seven peoples and only hold when **united by a legitimate wearer.** Break the unity or seat a false heir, and the protection fails and the enemy enters. *(How this rhymes with other sevenfold bodies is treated only in the crosswalk node, not here.)*
-
 ## Cross-references & sources
 
 **This vault:** `[[THE-SEVENFOLD-BODY-SEATS-TRUSTEES-GEMS-2026-06-03]]` (the crosswalk), `[[RESEARCH_Keys-to-the-Kingdom-The-Morrow-Days-and-Demesnes-2026-06-04]]`, `[[RESEARCH_A-Song-of-Ice-and-Fire-The-Small-Council-2026-06-03]]`, `[[FANDOM-CANON-RULESYSTEMS-2026-05-03]]`.

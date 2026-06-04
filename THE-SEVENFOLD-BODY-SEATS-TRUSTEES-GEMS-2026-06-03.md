@@ -8,7 +8,6 @@ verified-by: Claude Code (crosswalk node; ASOIAF source in the Small Council nod
 related:
   - "[[RESEARCH_A-Song-of-Ice-and-Fire-The-Small-Council-2026-06-03]]"
   - "[[RESEARCH_Keys-to-the-Kingdom-The-Morrow-Days-and-Demesnes-2026-06-04]]"
-  - "[[RESEARCH_Deltora-The-Seven-Tribes-and-their-Lands-2026-06-04]]"
   - "[[FANDOM-CANON-RULESYSTEMS-2026-05-03]]"
   - "[[!/EMANATIONISM-PRINCIPLE-2026-05-18]]"
   - "[[!/LICH-PROBLEM-v1-2026-05-20]]"
