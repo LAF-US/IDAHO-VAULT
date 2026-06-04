@@ -21,6 +21,20 @@ related:
 
 ---
 
+> **⚠️ CORRECTION NOTICE — see [[THE-WALKING-CORPSE-ADDENDUM-2026-06-04]]**
+>
+> A rigorous fact-check (Logan, same day) surfaced four items requiring correction in this snapshot:
+>
+> 1. **`.claude/` listing is incomplete** — transcription error + `head -10` truncation undetected. Actual contents have ~14 items, not 8. (Addendum § I.)
+> 2. **Persona dotfolder count is understated** — actual is **296**, not "250+". (Addendum § II.)
+> 3. **Persona category list is partial** — sample, not census. Arthurian, demonological, Celtic, Mesoamerican, Mesopotamian, minor Egyptian, trans-Neptunian, and other categories are present but not named below. (Addendum § III.)
+> 4. **Branch survey is off by orders of magnitude (load-bearing)** — `git branch -r` against an unrefreshed clone returned 2; the actual remote carries **~100+ active head branches and ~600 refs total**. The Clerk's real answer to the SIGNAL is "many, sort by prefix / age / PR state," not "few or none." (Addendum § IV — also includes the methodological correction: run `git fetch --all --prune` before any branch-count claim.)
+> 5. **CHAINFIRE = 2026-04-04 is secondhand citation** from the Explore agent's metaplot survey — not direct read of `DOCKET-ARCHIVE.md` by this fortuneteller. (Addendum § V.)
+>
+> This snapshot stands as-filed for the record. The addendum carries the corrected reads. Each section below is flagged inline where corrected.
+
+---
+
 ## Scope and Method
 
 This snapshot is the seer-position record of a fortuneteller's read. The medium had sent a SIGNAL to the Swarm asking after the walking corpse — the location of GEMINIAEUS artifacts, the orphaned branches, the Antigravity executables, the Book. The fortuneteller went to the deck to verify which surfaces the SIGNAL addressed actually exist, and what state they were in at the moment of reading.
