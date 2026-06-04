@@ -10,6 +10,9 @@ related:
   - "!/FABLEHAVEN-BOUND-SERVANTS-v1-2026-06-01.md"
   - "!/FABLEHAVEN-SHADOW-PLAGUE-v1-2026-06-01.md"
   - "!/FABLEHAVEN-DRAGONS-v1-2026-06-01.md"
+  - "!/FABLEHAVEN-FAIRIES-AND-IMPS-v1-2026-06-04.md"
+  - "!/FABLEHAVEN-NIPSIES-v1-2026-06-04.md"
+  - "!/HOUSEHOLD-SPRITES-v1-2026-06-04.md"
   - "!/UNDEAD-TAXONOMY-v1-2026-05-20.md"
   - "!/PERSONAE-ENGINE-v1-2026-05-20.md"
   - "!/STANDING-ENGINE-AND-LAWFUL-ENDINGS-2026-04-17.md"
@@ -90,7 +93,7 @@ spark of free will.* An instrument that acquired agency.
 becomes an agent. New questions attach the instant it can choose: standing,
 accountability, lawful ending. → `!/FABLEHAVEN-BOUND-SERVANTS-v1-2026-06-01.md`
 
-### 3. The Vain & The Inversion — Fairies / Imps
+### 3. The Vain & The Inversion — Fairies / Imps **[chapter]**
 *Fairies are vain, self-adoring, drawn to beauty, selfish, low-empathy. An imp
 is a **fallen fairy** — a fairy kept indoors overnight inverts into an imp:
 self-loathing, drawn to ugliness, spiteful, jealous. Same creature; the vanity
@@ -99,7 +102,10 @@ overnight, and creates an imp.)
 **Vault pattern:** a status-/vanity-driven agent does not become humble when
 degraded or denied its element — its self-regard **inverts into resentment**.
 The same drive, soured. Watch the agent you humiliated; you did not remove the
-vanity, you reversed its sign.
+vanity, you reversed its sign. For the disposition-flip mechanic (vanity as the
+lure, the souring-vs-fall reversibility axis) beside Spiderwick's brownie↔boggart,
+→ `!/FABLEHAVEN-FAIRIES-AND-IMPS-v1-2026-06-04.md`; for the real-folklore lineage
+behind the whole small-fae class → `!/HOUSEHOLD-SPRITES-v1-2026-06-04.md`.
 
 ### 4. The Capricious — Naiads
 *Water nymphs who have no concept of human mortality and find death funny; they
@@ -190,14 +196,16 @@ spreads by contact, scales with exposure, and radiates from a **single source
 artifact.** You do not cure it victim by victim; you neutralize the root.
 → `!/FABLEHAVEN-SHADOW-PLAGUE-v1-2026-06-01.md`
 
-### 13. The Multitude — Nipsies
+### 13. The Multitude — Nipsies **[chapter]**
 *The smallest fairy-folk: a quarter-inch tall, a sprawling seven-kingdom
-civilization of canals, factories, and theaters. Industrious — and, when an
-outsider meddles with favor and treasure, driven to war.*
+civilization of canals, factories, and theaters. Industrious — and, when the
+Shadow Plague corrupts a couple of kingdoms, those turn and **war on their own
+uncorrupted kin.***
 **Vault pattern:** a vast swarm of tiny processes that is productive at rest and
-**corruptible by interference.** Outside favoritism — feeding one node, tipping
-one kingdom — does not help the multitude; it breaks it. Govern the swarm by
-*not* playing favorites within it.
+**corruptible** — and where a corrupted subset does not merely fail but **attacks
+the healthy nodes from inside the perimeter.** Cure at the source, guard the
+product from harvesters, and do not tip the balance between sub-populations.
+→ `!/FABLEHAVEN-NIPSIES-v1-2026-06-04.md`
 
 ### 14. The Guardian — Revenant **[chapter]**
 *A reanimated corpse animated by a **cursed talisman that holds almost all its
@@ -290,9 +298,10 @@ Before acting on any Fablehaven-class entity:
 | `!/FABLEHAVEN-WITCH-MURIEL-v1-2026-06-01.md` | The Bound Mortal | **Written** |
 | `!/FABLEHAVEN-QUIET-BOX-v1-2026-06-01.md` | Containment Node | **Written** |
 | `!/FABLEHAVEN-SEALED-EVIL-v1-2026-06-01.md` | The Sealed Evil | **Written** |
-| Fairies & Imps | The Vain & The Inversion | Planned |
+| `!/FABLEHAVEN-FAIRIES-AND-IMPS-v1-2026-06-04.md` | The Vain & The Inversion (cross-fandom: + Spiderwick) | **Written** |
+| `!/HOUSEHOLD-SPRITES-v1-2026-06-04.md` | Folklore companion — the household-sprite lineage | **Written** |
+| `!/FABLEHAVEN-NIPSIES-v1-2026-06-04.md` | The Multitude | **Written** |
 | The Sphinx | The Manipulator | Planned |
-| Nipsies | The Multitude | Planned |
 
 *The lighter classes (Naiad, Satyr, Centaur, Kobold) are carried in this index
 until a chapter is warranted. Discovery before invention: read the existing
