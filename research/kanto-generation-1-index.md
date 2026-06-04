@@ -42,7 +42,7 @@ Master index for Kanto's Gym Leaders, Elite Four, and Champion across all epochs
 - [x] Misty (COMPLETED)
 - [x] Lt. Surge (COMPLETED)
 - [x] Erika (COMPLETED)
-- [ ] Koga
+- [x] Koga (COMPLETED)
 - [ ] Sabrina
 - [ ] Blaine
 - [x] Giovanni (COMPLETED)
@@ -64,7 +64,7 @@ In Let's Go, Elite Four is different: no Lorelei/Bruno/Agatha/Lance. Champion is
 ### Individual Files
 - [x] Lorelei (COMPLETED)
 - [x] Bruno (COMPLETED)
-- [ ] Agatha
+- [x] Agatha (COMPLETED)
 - [ ] Lance
 
 ---
@@ -86,15 +86,15 @@ In Let's Go, Elite Four is different: no Lorelei/Bruno/Agatha/Lance. Champion is
 
 | Category | Total | Completed | Remaining | % |
 |----------|-------|-----------|-----------|---|
-| Gym Leaders | 8 | 5 | 3 | 62.5% |
-| Elite Four | 4 | 2 | 2 | 50% |
+| Gym Leaders | 8 | 6 | 2 | 75% |
+| Elite Four | 4 | 3 | 1 | 75% |
 | Champion | 2 | 1 | 1 | 50% |
-| **Total** | **14** | **8** | **6** | **57.1%** |
+| **Total** | **14** | **10** | **4** | **71.4%** |
 
 ---
 
 ## Next Steps
-1. Next pair: **Koga** (Fuchsia City Gym Leader) and **Agatha** (Elite Four)
+1. Next pair: **Sabrina** (Saffron City Gym Leader) and **Lance** (Elite Four)
 2. Use established template: Overview, Game Appearances by Epoch, Teams & Strategies, Anime, Personality & Design, Trivia, References
 
 *Last updated: June 4, 2026*
