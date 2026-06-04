@@ -37,7 +37,9 @@ the serious as a game, mistaking motion for progress.
 **[mapping]** The Fool models the **low-judgment process that treats serious
 operations as play.** It has no grasp of stakes (the pun is the point), so the
 *direct counter lands cleanly* — there is no sophistication to deflect a grounded
-correction. It is the one undead the stake is *right* for.
+correction. It is the one undead where the **plain, solo stake** is enough — the others
+**complicate** the stake (the Empress needs allies, the Moon the soul-drain, the King
+extraction) rather than making it categorically wrong; see `STAKES-VAMPIRES-INDEX`.
 
 The danger is **not** strength. It is **flight**: it flits. It moves fast and
 light, hops between tasks, and slips a hard question by sheer weightlessness
