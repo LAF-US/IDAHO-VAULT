@@ -6,6 +6,8 @@ doc_class: directive
 relay: "Logan Finney -> Bartimaeus -> Claude Code (The Abhorsen)"
 ---
 
+# DEEMED *QUESTIONABLE* BY THE FAITH OF THE CLOTH
+
 # Bartimaeus — CrewAI Alignment Brief
 
 **Relayed:** 2026-04-04 by TRIUMVIRATE
