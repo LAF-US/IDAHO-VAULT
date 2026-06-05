@@ -22,6 +22,7 @@ related:
   - "[[depth psychology]]"
   - "[[harrowing of hell]]"
   - "[[WITNESS-ETYMOLOGY-ABYSS-2026-06-04]]"
+  - "[[WITNESS-ETYMOLOGY-TEHOM-2026-06-05]]"
 ---
 
 # Witness: Etymology and Cultural Connotations of "the Deep"

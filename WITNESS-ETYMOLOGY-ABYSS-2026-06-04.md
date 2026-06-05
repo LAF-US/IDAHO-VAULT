@@ -17,6 +17,7 @@ related:
   - "[[revelation]]"
   - "[[abysm]]"
   - "[[WITNESS-ETYMOLOGY-OF-THE-DEEP-2026-06-04]]"
+  - "[[WITNESS-ETYMOLOGY-TEHOM-2026-06-05]]"
 ---
 
 # Witness: Etymology of ABYSS
