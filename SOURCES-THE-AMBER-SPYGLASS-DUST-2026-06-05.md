@@ -63,7 +63,8 @@ source trails and working observations. It is not doctrine.
    - Used for independent reference grounding: the trilogy is Pullman's
      parallel-world fantasy sequence; Dust is a mysterious particle associated
      by the Magisterium with original sin but interpreted by Lyra as love,
-     kindness, and curiosity; Will's windows let Dust flow out, forcing the
+     kindness, and curiosity; Lyra carries an alethiometer that gives truthful
+     answers to a skilled reader; Will's windows let Dust flow out, forcing the
      final choice to seal the openings.
 
 5. His Dark Materials Wiki, "Amber spyglass".
@@ -88,6 +89,13 @@ source trails and working observations. It is not doctrine.
      the one allowing ghosts to return to the universe.
 
 ## Canon Notes
+
+### The Three Devices
+
+Penguin Random House's reader's guide names the three special devices across
+the trilogy as the alethiometer, the subtle knife, and the amber spyglass. Each
+is connected with the pursuit of Dust, but each performs a different grammar:
+truth-reading, threshold-cutting, and perception.
 
 ### Dust
 
