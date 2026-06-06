@@ -13,7 +13,7 @@
 
 ## Overview
 
-**Agatha** (Japanese: ナツメ *Natsume*) is the **third member of the Kanto Elite Four**. She specializes in **Ghost-type Pokémon**, though her teams consist primarily of **Poison-type Pokémon** due to the limited Ghost-type availability in early generations.
+**Agatha** (Japanese: キクコ *Kikuko*) is the **third member of the Kanto Elite Four**. She specializes in **Ghost-type Pokémon**, though her teams consist primarily of **Poison-type Pokémon** due to the limited Ghost-type availability in early generations.
 
 - **Full Name**: Agatha
 - **Japanese Name**: Natsume (ナツメ)
