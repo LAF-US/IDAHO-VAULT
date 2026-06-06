@@ -3,7 +3,7 @@
 **AUTHOR:** Vibe (Mistral AI) - Compiled on behalf of Logan Finney
 **AUTHORITY:** LAF-US/IDAHO-VAULT
 **Date:** June 6, 2026
-**Status:** Complete - All 15 quotations verified with full source attribution
+**Status:** Complete - All 15 quotations with full source attribution
 
 ---
 
@@ -21,7 +21,7 @@ This corpus documents religious and eschatological coded language used by AI/tec
 ## Files
 
 1. **AI-RELIGIOUS-LANGUAGE-REPORT-2020-2030.md** - This index document
-2. **[AI-RELIGIOUS-LANGUAGE-EXECUTIVES.md](AI-RELIGIOUS-LANGUAGE-EXECUTIVES.md)** - 15 verified direct quotations from 6 executives with full source attribution
+2. **[AI-RELIGIOUS-LANGUAGE-EXECUTIVES.md](AI-RELIGIOUS-LANGUAGE-EXECUTIVES.md)** - 15 direct quotations from 6 executives with full source attribution
 3. **[AI-RELIGIOUS-LANGUAGE-SOURCES.md](AI-RELIGIOUS-LANGUAGE-SOURCES.md)** - Complete bibliography with full source URLs and publication dates
 
 ## Executive Summary
@@ -35,12 +35,12 @@ This corpus documents religious and eschatological coded language used by AI/tec
 - **Eric Schmidt:** 4 quotes
 - **Peter Thiel/JD Vance:** 1 quote
 
-All quotes now have verified source URLs and publication dates.
+All quotes have full source URLs and publication dates.
 
 ---
 ## Navigation
 
-- [[AI-RELIGIOUS-LANGUAGE-EXECUTIVES]] - All verified quotes with full attribution
+- [[AI-RELIGIOUS-LANGUAGE-EXECUTIVES]] - All quotations with full attribution
 - [[AI-RELIGIOUS-LANGUAGE-SOURCES]] - Complete bibliography with URLs and dates
 
 ---
