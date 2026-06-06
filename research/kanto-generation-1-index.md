@@ -59,7 +59,8 @@ Master index for Kanto's Gym Leaders, Elite Four, and Champion across all epochs
 | 4 | **Lance** | Dragon | Yes | Yes | No |
 
 ### Notes
-In Let's Go, Elite Four is different: no Lorelei/Bruno/Agatha/Lance. Champion is **Trace** instead of Blue.
+### Notes
+In Let's Go, the Elite Four remains the same (Lorelei, Bruno, Agatha, Lance). Champion is **Trace** instead of Blue.
 
 ### Individual Files
 - [x] Lorelei (COMPLETED)
