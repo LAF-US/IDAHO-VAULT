@@ -27,11 +27,12 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           COMMENT_BODY: ${{ github.event.comment.body }}
+          REPO_NAME: ${{ github.event.repository.name }}
         run: |
           python3 .github/scripts/review_feedback_loop.py \
             acknowledge-apply \
             --owner "${{ github.repository_owner }}" \
-            --repo "${{ github.event.repository.name }}" \
+            --repo "$REPO_NAME" \
             --pr-number "${{ github.event.issue.number }}" \
             --comment-author "${{ github.event.comment.user.login }}" \
             --author-association "${{ github.event.comment.author_association }}" \
@@ -49,11 +50,12 @@ jobs:
       - name: Sweep outdated advisory threads after PR updates
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO_NAME: ${{ github.event.repository.name }}
         run: |
           python3 .github/scripts/review_feedback_loop.py \
             sync-pr \
             --owner "${{ github.repository_owner }}" \
-            --repo "${{ github.event.repository.name }}" \
+            --repo "$REPO_NAME" \
             --pr-number "${{ github.event.pull_request.number }}" \
             --sync-actor "${{ github.actor }}"
 
@@ -78,11 +80,12 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           COMMENT_BODY: ${{ github.event.comment.body }}
+          REPO_NAME: ${{ github.event.repository.name }}
         run: |
           python3 .github/scripts/review_feedback_loop.py \
             verify-claim \
             --owner "${{ github.repository_owner }}" \
-            --repo "${{ github.event.repository.name }}" \
+            --repo "$REPO_NAME" \
             --pr-number "${{ github.event.issue.number }}" \
             --comment-author "${{ github.event.comment.user.login }}" \
             --comment-body "$COMMENT_BODY"
