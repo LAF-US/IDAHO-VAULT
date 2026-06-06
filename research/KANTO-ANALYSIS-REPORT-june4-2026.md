@@ -1,8 +1,8 @@
-# Kanto Pokemon League - Comprehensive Analysis Report
+# Kanto Pokémon League - Comprehensive Analysis Report
 
 **Report Date**: June 4, 2026  
 **Author**: Audit System  
-**Repository**: LAF-US/IDAHO-VAULT  
+**Repository**: loganfinney27/IDAHO-VAULT  
 **Branch**: misty-research  
 **Status**: Complete Analysis
 
