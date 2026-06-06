@@ -52,12 +52,6 @@
 - **Team**: Pidgeot (Lv. 50), Alakazam (Lv. 48), Rhydon (Lv. 50), Exeggutor (Lv. 52), Gyarados (Lv. 50), Starter (Lv. 52)
 - **Reward**: Earth Badge, TM83 (Dynamic Punch)
 
-### Generation VII (Reimagining)
-- **Games**: Let's Go, Pikachu!, Let's Go, Eevee!
-- **Role**: Rival and Champion
-- **Team**: Pidgeot (Lv. 66), Alakazam (Lv. 64), Rhydon (Lv. 66), Exeggutor (Lv. 66), Gyarados (Lv. 66), Starter (Lv. 68)
-- **Notable**: Also Battle Tree boss in Alola
-
 ### Other Appearances
 - Pokémon Stadium, Stadium 2, Black 2/White 2 (World Tournament), Masters EX
 
