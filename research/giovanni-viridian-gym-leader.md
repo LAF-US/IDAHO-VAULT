@@ -46,12 +46,6 @@
 - **Role**: Same as Generation I
 - **Team**: Same as Generation I
 
-### Generation IV (Remakes)
-- **Games**: Pokémon HeartGold, SoulSilver
-- **Role**: Same as Generation I
-- **Team**: Same as Generation I
-- **Notable**: Blue takes over as Viridian Gym Leader post-game
-
 ### Generation VII (Reimagining)
 - **Games**: Pokémon: Let's Go, Pikachu! and Let's Go, Eevee!
 - **Role**: Viridian Gym Leader
