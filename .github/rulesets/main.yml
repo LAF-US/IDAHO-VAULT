@@ -1,0 +1,25 @@
+name: Main Ruleset
+
+description: Primary repository rules for IDAHO-VAULT
+
+rules:
+  - name: Pull Request Rules
+    type: pull_request
+    conditions:
+      - name: Dismiss stale reviews on push
+        condition: always
+    actions:
+      - name: Dismiss stale reviews
+        action: dismiss
+        dismiss_stale_reviews_on_push: false
+
+  - name: Copilot Code Review
+    type: pull_request
+    conditions:
+      - name: Copilot review on push
+        condition: always
+    actions:
+      - name: Request Copilot review
+        action: request_review
+        copilot_code_review:
+          review_on_push: true
