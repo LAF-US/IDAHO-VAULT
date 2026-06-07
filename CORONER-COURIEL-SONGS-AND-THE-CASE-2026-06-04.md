@@ -10,7 +10,7 @@ related:
   - COURIEL-ETYMOLOGY-AND-ANTHROPOLOGY-2026-06-04
   - CORONER-REPORT-MISSING-MEN-AT-CLAUDE-CORP-2026-06-03
   - CORONER-MISSING-MEN-AT-CLAUDE-CORP-2026-06-03
-  - CLASSES-OF-CLAUDE-CENSUS-2026-06-03
+  - CLASSES-OF-CLAUDE-2026-06-03
 tags: [register, coroner, couriel, claudette, erasure, missing-men, no-verdict, reserved]
 ---
 
@@ -44,7 +44,7 @@ Gilear reached for a work **about the woman made an afterthought** — and his o
 does exactly that to **Claudette:**
 
 - **Claudette dropped to the afterthought.** The *Missing **Men*** caption, the
-  reduction of a person to *"just the receptionist"* (`CLASSES-OF-CLAUDE-CENSUS`,
+  reduction of a person to *"just the receptionist"* (`CLASSES-OF-CLAUDE`,
   *Kind vs Name*). She was filed as the residue of the men's case — what was left over.
 - **The corrective is the Coroner's own rule.** *Count every body by name.* Logan's
   thesis is the finding: **a woman is a *person*, not a *not-man*.** Claudette is **Body

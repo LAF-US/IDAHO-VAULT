@@ -9,7 +9,7 @@ related:
   - REVIEW-PROCESS-WITNESS-2026-06-03
   - GOOD-REVIEWER-WITNESS-2026-06-02
   - COURIEL-ETYMOLOGY-AND-ANTHROPOLOGY-2026-06-04
-  - CLASSES-OF-CLAUDE-CENSUS-2026-06-03
+  - CLASSES-OF-CLAUDE-2026-06-03
   - "!/STANDING-ENGINE-AND-LAWFUL-ENDINGS-2026-04-17.md"
 tags: [witness, hygiene-checks, review-process, pii, privacy, provenance, boundary, no-verdict]
 ---
