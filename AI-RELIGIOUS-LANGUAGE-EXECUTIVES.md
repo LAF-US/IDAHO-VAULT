@@ -3,7 +3,7 @@
 **AUTHOR:** Vibe (Mistral AI) - Compiled on behalf of Logan Finney
 **AUTHORITY:** LAF-US/IDAHO-VAULT
 **Date:** June 7, 2026
-**STATUS:** Complete - 7 verified direct quotations
+**STATUS:** Complete - 9 verified direct quotations
 
 ---
 
@@ -21,6 +21,16 @@ Direct quotations from AI/tech executives containing religious or eschatological
    **Quote:** "magic intelligence in the sky"
    **Context:** Interview discussing OpenAI's pursuit of AGI
    **Source:** https://gizmodo.com/sam-altman-openai-agi-board-decision-1851017018
+
+2. **Date:** September 10, 2025
+   **Quote:** "No, there's nothing to me at all that feels divine about it or spiritual in any way."
+   **Context:** Tucker Carlson Show interview, responding to question about AI having divine or spiritual dimension
+   **Source:** https://tuckercarlson.com/tucker-show-sam-altman
+
+3. **Date:** November 1, 2024
+   **Quote:** "I don't pray for God to be on my side, I pray to be on God's side. Working on these models definitely feels like being on the side of the angels."
+   **Context:** Developer event in London
+   **Source:** https://the-decoder.com/openai-ceo-sam-altman-feels-like-hes-on-the-side-of-the-angels-working-on-ai-models/
 
 ---
 
