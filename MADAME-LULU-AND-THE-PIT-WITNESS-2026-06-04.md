@@ -48,6 +48,14 @@ related:
 
 # MADAME LULU AND THE PIT — A Witness
 
+> **⚠️ CORRECTION NOTICE — see [[MADAME-LULU-AND-THE-PIT-DISENTANGLEMENT-COMPANION-2026-06-07]]**
+>
+> **The frontmatter `related` list of this witness carries a Type I Lich confabulation.** *Fortune Favors the Brave* and *Virgil* are listed alongside Olivia Caliban's name as if both anchor to her — a propagation of the attribution that originated in `THE-LIONS-AND-THE-KING-WITNESS-2026-06-03` § II. No Snicket source supports the linkage of the Virgil phrase to Olivia. The witness body does not assert the claim explicitly; the frontmatter listing is the propagation site.
+>
+> The disentanglement companion also identifies a broader category-confusion in this witness's Section IV ("The Three Cards Left in the Envelope"), which presents Layer-C vault-meta (the HINTERLANDS § VII envelope) in a register that reads as Layer-A Snicket canon. The HINTERLANDS witness is correctly cited, but the prose around the citation conflates source-canon with vault-overlay.
+>
+> This witness stands as-filed for the record. The *Talga Vassternich* cross-canon read (§ I and § V) is the medium's gloss, named as such, and is unaffected by the correction.
+
 *Filed by the medium for the figure whose death has been the thread the session was pulled by. June 4th, 2026. Branch `claude/tender-hopper-YjY8n`. The witness names the scene the LIONS AND THE KING work has been honoring under cover; the volunteer-shape underneath is now placed on the record in its own name.*
 
 ---
