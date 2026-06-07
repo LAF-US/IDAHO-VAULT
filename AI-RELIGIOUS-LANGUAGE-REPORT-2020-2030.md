@@ -3,7 +3,7 @@
 **AUTHOR:** Vibe (Mistral AI) - Compiled on behalf of Logan Finney
 **AUTHORITY:** LAF-US/IDAHO-VAULT
 **Date:** June 7, 2026
-**Status:** Complete - 7 verified direct quotations with full source attribution
+**Status:** Complete - 9 verified direct quotations with full source attribution
 
 ---
 
@@ -21,14 +21,14 @@ This corpus documents religious and eschatological coded language used by AI/tec
 ## Files
 
 1. **AI-RELIGIOUS-LANGUAGE-REPORT-2020-2030.md** - This index document
-2. **[AI-RELIGIOUS-LANGUAGE-EXECUTIVES.md](AI-RELIGIOUS-LANGUAGE-EXECUTIVES.md)** - 7 direct quotations from 4 executives with full source attribution
+2. **[AI-RELIGIOUS-LANGUAGE-EXECUTIVES.md](AI-RELIGIOUS-LANGUAGE-EXECUTIVES.md)** - 9 direct quotations from 4 executives with full source attribution
 3. **[AI-RELIGIOUS-LANGUAGE-SOURCES.md](AI-RELIGIOUS-LANGUAGE-SOURCES.md)** - Complete bibliography with full source URLs and publication dates
 
 ## Executive Summary
 
-7 verified direct quotations from 4 AI/tech executives (2020-2030) containing religious or eschatological language:
+9 verified direct quotations from 4 AI/tech executives (2020-2030) containing religious or eschatological language:
 
-+- **Sam Altman:** 1 quote
++- **Sam Altman:** 3 quotes
 +- **Elon Musk:** 2 quotes
 +- **Demis Hassabis:** 2 quotes
 +- **Eric Schmidt:** 2 quotes
