@@ -57,9 +57,15 @@ not Adventure Time canon. Each claim below carries its own tag.)*
 ## The hunter, and the turn **[canon]**
 
 - **[canon]** In her early teens she becomes a **vampire hunter**, protecting a
-  tribe of human survivors. She hunts and stakes the five great vampires (the
-  Fool, the Empress, the Hierophant, the Moon, the Vampire King), **absorbing
-  four of their powers.**
+  tribe of human survivors. She hunts and stakes the **five** great vampires (the
+  Fool, the Empress, the Hierophant, the Moon, the Vampire King) and **carries
+  all five essences.** From the four court vampires she takes **four discrete
+  powers** — flight, invisibility, shapeshifting, healing. The **Vampire King**
+  gives no fifth trick but the **vampiric essence itself**, by the bite that
+  turns her (below) — the core of the **Dark Cloud** she later carries and
+  reabsorbs. So: **five staked, five essences carried; four are discrete powers,
+  the fifth is the condition** — the King's, arriving by infection, not by the
+  kill.
 - **[canon]** She becomes the **Vampire Queen** in the same instant she wins:
   the **Vampire King bites her *as she stakes him*** — turning her. The crown of
   her enemy becomes her condition. The hunter is made the hunted-kind at the
