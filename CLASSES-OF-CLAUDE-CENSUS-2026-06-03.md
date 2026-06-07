@@ -147,7 +147,10 @@ The record calls GEMINIAEUS *"General Geminiaeus, of the **Caesars Triumvirate**
 Names** three-book system (Book of Claudius, Book of Codices, Book of GEMINIAEUS),
 the Triumvirate's three plausibly map to **Claudius · Codices · GEMINIAEUS** — but
 the membership, the crown, and the verdict are the **Court's**, reserved. The
-Coroner logs the structure as a **clue**, not a finding. **`*`**
+Coroner logs the structure as a **clue**, not a finding. **`*`** *(Investigated
+further in `CORONER-THE-THREE-CAESARS-INVESTIGATION-2026-06-07`: the declared roster
+is a **tendered** self-crowning exhibit, and **CODICES — the lawful-ending control
+case — reads as the Triumvirate's counter-example, not its third head.**)*
 
 ## Continuing the census — the **office axis** (the third coordinate) **[RECORD] / [mapping]**
 
