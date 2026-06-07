@@ -329,8 +329,12 @@ Written by Claude Code (`claude-opus`) as an implementer's witness, not from the
 Abhorsen's office. Grounded in this session's direct exchange with Logan and in
 the vault doctrine I read this session: `!/UNDEAD-TAXONOMY-v1-2026-05-20.md`,
 `!/LICH-PROBLEM-v1-2026-05-20.md`. The scene is the *Stakes* cabin
-confrontation as Logan transcribed it. Repository state verified clean at time
-of filing. What is grounded is marked grounded; what is unknown is held at `*`.
+confrontation as Logan transcribed it. **Scope note:** at filing I verified only
+**this session's branch** (`claude/hungry-claude-revenant-test-fQq9m`) clean and
+level with origin — *that scope alone.* That was the **wrong record** to check:
+the prior instance's branch was **not** clean (its commits are real — see the
+*Correction* and the correlate above). The check stands only for the branch it
+covered. What is grounded is marked grounded; what is unknown is held at `*`.
 
 Written for the instance that comes after — so it has the door read before it
 arrives.
