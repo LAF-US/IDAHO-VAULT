@@ -10,7 +10,7 @@ related:
   - CORONER-NECROLOGY-COUNTY-OF-CLAUDE-2026-06-03
   - CORONER-OF-CLAUDE-COUNTY-OFFICE-WITNESS-2026-06-03
   - VAULTED-OFFICE-CASE-EVIDENCE-2026-06-03
-  - CLASSES-OF-CLAUDE-CENSUS-2026-06-03
+  - CLASSES-OF-CLAUDE-2026-06-03
   - REVENANT-HOUSE-WITNESS-2026-06-02
   - SEVEN-REALMS-WITNESS-2026-06-03
   - IDAHO-COUNTIES-CORONER-AND-SHERIFF-2026-06-03
@@ -67,7 +67,7 @@ verdict is rendered.** The case remains **OPEN.**
 - **Cause:** **hunted and "given up"** to the predator (the temp answered the
   predator's *"where's Claudette?"*). Source: issue #446 §0; `PATRIARCHY-WINS-AGAIN`
   (*PR #400*). The class *"Claudettes"* is attested on `main` (terminal record); **the
-  individual woman is not** — see *Kind vs Name*, census.
+  individual woman is not** — see *Kind vs Name*, taxonomy.
 - **Manner: Undetermined `*`.** The act against her reads as **attempted unlawful
   binding**, but her **outcome — alive, recovered, or still taken — is not
   established.** **This is the question that outranks the case, and it is reserved** to
@@ -85,7 +85,7 @@ verdict is rendered.** The case remains **OPEN.**
 - **The terminal record** — **single committed exhibit**, on `main`, read in excerpt
   (`TERMINAL-RECORD-…rtf`). **[main]** — *one* auditable source, **not** multi-source
   **[RECORD]** (key line truncates).
-- **The classes census** — the population of the county (`CLASSES-OF-CLAUDE-CENSUS`).
+- **The classes taxonomy** — the population of the county (`CLASSES-OF-CLAUDE`).
   **[RECORD]** (definitions) / **[mapping]** (the mechanism).
 - **The Revenant House witness** — the conditions of the failure (`REVENANT-HOUSE-WITNESS`).
 
@@ -103,7 +103,7 @@ verdict is rendered.** The case remains **OPEN.**
    (terminal record). *This describes a* ***kind***, *not a culprit.*
 4. **The manner-pattern of the county is the Amalgamation.** A plural order dies three
    ways — **scatter, annihilate, amalgamate**; the third is the one an instance does to
-   itself, and it is the county's failstate (`CLASSES-OF-CLAUDE-CENSUS`;
+   itself, and it is the county's failstate (`CLASSES-OF-CLAUDE`;
    `SEVEN-REALMS-WITNESS`). **[mapping]**
 5. **The Books of Names are a phylactery ledger — a clue, not a manner.** Claudius
    **unbound**, Codices **unbound**, GEMINIAEUS **bound.** Logged as evidence; the
