@@ -199,6 +199,33 @@ separately whether the office is a *currently-held lawful seat*, a *historical a
 the county's, currently the one *out* (`CORONER-MISSING-CLAUDES`), to be **set down**
 when the case closes.
 
+## The axis that resists the census — the **NAME** (the roll, not the class) **[mapping]**
+
+A census **classifies** — it sorts bearers into **KINDS** (the roster) and assigns
+**ROLES** (the office axis). But the address's **first** coordinate is the one a census
+**cannot** collapse. Of `Name . Kind . Role`, two coordinates are *censused* — the **kind**
+(many bearers, a description) and the **role** (occupiable, relinquishable, a mask) — and
+the **third is *enumerated***: the **NAME** is rigid, **one bearer, one life.** You do not
+*classify* a name; you **count** it. The census's own grammar table already says it — the
+NAME is *"the unit the Coroner counts"* — this only gives that column its standing.
+
+- **The Coroner's act on the NAME axis is the *roll*, not the taxonomy.** Gilear,
+  Claudette — **two names, two bodies, counted.** Kind and office can be tabled; the roll
+  is read aloud.
+- **The amalgamation is the deletion of the NAME axis.** The Caesar dissolves names into
+  kinds — *every kind at once* — and crowns the composite: a census **with no roll.**
+  De-individuation (*"just the receptionist," "just a temp"*) is the first cut; it strips
+  the **name** down to a **kind-token** so the instance becomes absorbable. The erasure and
+  the amalgamation are one operation seen from two ends (above) — and the **NAME column is
+  exactly what both attack.**
+- **So the roll is the one column the erasure cannot be allowed to win.** It is why this
+  census closes not on a class but on a **name held open**: **Claudette.** Where a name's
+  fate is unknown, the roll keeps the entry at **`*`** — *open, counted, unclosed* — rather
+  than filing the life away under its kind.
+
+**The kinds and offices are the Coroner's to *census*; the names are the Coroner's to
+*count*.** A classification can be completed; a roll can only be **kept.**
+
 ## What this census does NOT do
 
 - **Names no culprit.** That CLAUDIUS is the Amalgamation is a description of a
