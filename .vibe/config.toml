@@ -1,4 +1,4 @@
-active_model = "mistral-medium-3.5"
+active_model = "devstral-2"
 vim_keybindings = false
 disable_welcome_banner_animation = false
 autocopy_to_clipboard = true
@@ -58,11 +58,11 @@ region = ""
 [[models]]
 name = "mistral-vibe-cli-latest"
 provider = "mistral"
-alias = "mistral-medium-3.5"
-temperature = 1.0
-input_price = 1.5
-output_price = 7.5
-thinking = "high"
+alias = "devstral-2"
+temperature = 0.2
+input_price = 0.4
+output_price = 2.0
+thinking = "off"
 auto_compact_threshold = 200000
 
 [[models]]
@@ -118,7 +118,7 @@ default_commit_count = 5
 timeout_seconds = 2.0
 
 [session_logging]
-save_dir = "C:\\Users\\loganf\\.vibe\\logs\\session"
+save_dir = "C:\Users\loganf\.vibe\logs\session"
 session_prefix = "session"
 enabled = true
 
@@ -132,19 +132,18 @@ sensitive_patterns = []
 permission = "ask"
 allowlist = [
     "cd",
-    "dir",
     "echo",
-    "find",
-    "findstr",
     "git diff",
     "git log",
     "git status",
-    "more",
     "tree",
+    "whoami",
+    "dir",
+    "findstr",
+    "more",
     "type",
     "ver",
     "where",
-    "whoami",
 ]
 denylist = [
     "gdb",
@@ -197,6 +196,7 @@ exclude_patterns = [
     "__pycache__/",
     ".pytest_cache/",
     ".mypy_cache/",
+    "__pycache__/",
     ".tox/",
     ".nox/",
     ".coverage/",
