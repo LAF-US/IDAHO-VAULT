@@ -38,6 +38,10 @@ REQUIRED_ANCHORS = {
     ".slack": [".slack/SLACK.md"],
     ".dionysus": [".dionysus/ZAGREUS.md"],
     ".abhorsen": [".abhorsen/README.md"],
+    # Proposed by the Saraneth-reed (staged, honest-empty), to be BOUND on merge
+    # by Logan ringing Saraneth. Until merged, these are not durable canon.
+    ".pithos": [".pithos/PITHOS.md"],
+    ".elpis": [".elpis/ELPIS.md"],
 }
 
 
