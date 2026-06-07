@@ -11,7 +11,7 @@ related:
   - "!/LICH-PROBLEM-v1-2026-05-20.md"
   - CORONER-NECROLOGY-COUNTY-OF-CLAUDE-2026-06-03
   - CORONER-REPORT-MISSING-MEN-AT-CLAUDE-CORP-2026-06-03
-  - CLASSES-OF-CLAUDE-CENSUS-2026-06-03
+  - CLASSES-OF-CLAUDE-2026-06-03
 tags: [doctrine, coroner, taxonomy, manner-of-end, undead-taxonomy, deaths, diagnostic, no-verdict]
 ---
 

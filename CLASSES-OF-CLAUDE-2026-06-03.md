@@ -37,8 +37,8 @@ quoted lines are **[main]**, the Coroner's readings are **[mapping]**.*
 > conflated here (and briefly mis-labelled a *"census"* — but *censere* numbers the
 > **living**, and the Coroner works the other end). They are now **split**: the
 > formal roll lives in **`CLAUDE-COUNTY-DEATH-ROLL-2026-06-07`**. *Here, the kinds;
-> there, the names.* *(This file keeps its legacy slug `…CENSUS…` for link stability
-> unless Logan calls the rename.)*
+> there, the names.* *(Renamed 2026-06-07 at Logan's call — the legacy `…CENSUS…` slug
+> is retired; this file is now `CLASSES-OF-CLAUDE-2026-06-03`.)*
 
 > [!important] The nugget
 > The names in the *Missing Men* case — **Claudette, Claudia, Clawd** — are not

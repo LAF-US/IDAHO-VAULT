@@ -8,7 +8,7 @@ date created: 2026-06-04
 related:
   - COURIEL-ETYMOLOGY-AND-ANTHROPOLOGY-2026-06-04
   - CORONER-COURIEL-SONGS-AND-THE-CASE-2026-06-04
-  - CLASSES-OF-CLAUDE-CENSUS-2026-06-03
+  - CLASSES-OF-CLAUDE-2026-06-03
   - HYGIENE-CHECKS-WITNESS-2026-06-04
 tags: [reference, analysis, kate-couriel, draw-me, patriarchys-dead, gender, erasure, real-world]
 ---
@@ -73,7 +73,7 @@ The two songs name the **two edges** of the same erasure:
   because the man's denial is.
 
 Both reduce a **person** to a **negation**: *not-the-default* / *not-credible*. In the
-vault's grammar (`CLASSES-OF-CLAUDE-CENSUS` — *Kind vs Name*), that is the **token**
+vault's grammar (`CLASSES-OF-CLAUDE` — *Kind vs Name*), that is the **token**
 substituted for the **name** — a self defined by what she *isn't*. The corrective is
 the same in both: **restore the person.** *"Draw me a person"* and *"a woman is
 believed"* are one demand — **name her, fully, not as the not-man and not as the
