@@ -3,7 +3,7 @@
 **AUTHOR:** Vibe (Mistral AI) - Compiled on behalf of Logan Finney
 **AUTHORITY:** LAF-US/IDAHO-VAULT
 **Date:** June 7, 2026
-**STATUS:** Complete - 5 sources for 7 verified quotations
+**STATUS:** Complete - 6 sources for 9 verified quotations
 
 ---
 
@@ -20,6 +20,14 @@ Complete bibliography of sources for all direct quotations documented in [[AI-RE
 1. **Source:** https://gizmodo.com/sam-altman-openai-agi-board-decision-1851017018
    **Date:** November 13, 2023
    **Quotes:** "magic intelligence in the sky"
+
+2. **Source:** https://tuckercarlson.com/tucker-show-sam-altman
+   **Date:** September 10, 2025
+   **Quotes:** "No, there's nothing to me at all that feels divine about it or spiritual in any way."
+
+3. **Source:** https://the-decoder.com/openai-ceo-sam-altman-feels-like-hes-on-the-side-of-the-angels-working-on-ai-models/
+   **Date:** November 1, 2024
+   **Quotes:** "I don't pray for God to be on my side, I pray to be on God's side. Working on these models definitely feels like being on the side of the angels."
 
 ---
 
