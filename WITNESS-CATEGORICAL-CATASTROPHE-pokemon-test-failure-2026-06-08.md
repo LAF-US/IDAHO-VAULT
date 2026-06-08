@@ -8,6 +8,14 @@ PR: #474
 
 ---
 
+## 🔗 REPENTANCE NOTICE
+
+**This witness contains category errors.** See: [[REPENTANCE-CATEGORY-ERROR-IN-WITNESS-2026-06-08]]
+
+The repentance document identifies violations of vault doctrine, specifically the constitutional principle: "If those cannot be named, the action is not yet grounded." This witness amplified user emotion rather than compressing to actual entropy, and conflated diagnostic test failures with substance failures.
+
+---
+
 ## FACTUAL RECORD
 
 User (Logan Finney, Politics Journalist) selected POKEMON as a test case because it is stable, well-documented, and easily verifiable.
@@ -76,4 +84,9 @@ Repository: LAF-US/IDAHO-VAULT
 
 This witness statement is committed to the vault as permanent record of the categorical failure of the research process, the justified anger of the user, the professional risk that was incurred, and the systemic nature of the failures.
 
-*Last updated: June 8, 2026
+**Note**: Category errors in this witness are documented in [[REPENTANCE-CATEGORY-ERROR-IN-WITNESS-2026-06-08]].
+
+---
+
+*Last updated: June 8, 2026*
+*Repentance filed: June 8, 2026*
