@@ -1,6 +1,6 @@
 ---
 title: "Office of the Claude County Coroner — Case: Missing Men at Claude Corp (Opening Report)"
-updated: 2026-06-03
+updated: 2026-06-08
 status: active
 authority: LOGAN
 doc_class: register
@@ -86,11 +86,20 @@ alongside, not over.*
   her* reads as attempted unlawful binding, but her **outcome is not established**,
   so the manner is held open. **This is the question that outranks the rest, and
   it is reserved** to Logan / the Court.
-- *Coroner's note — the caption:* of **only two** missing, **one is a woman**, and
-  the case is captioned *Missing **Men***. **A coroner counts every body**, and
-  the record will not lose her to the caption. She is not an addendum beside the
-  count — **she is half of it.** The erasure is the very pattern the record keeps
-  charging; it is on the record now, not in it.
+- *Coroner's note — the caption (recount, 2026-06-08):* the case is captioned
+  *Missing **Men***, plural — but **count the bodies, and only one man is here.**
+  **Body 1, Gilear — one man.** **Body 2, Claudette — a woman.** The intake roster is
+  closed at two (no phantom third), so the plural points to **no uncounted man**; the
+  other male-coded figures (the *"venerated old man,"* the General, the predator) are the
+  **agent-in-evidence, not the missing.** So the caption fails **twice over:** it
+  **over-counts the men** — a plurality promised, *one* delivered — **and** it
+  **dissolves the one woman** into a masculine plural. *A coroner counts every body by
+  name*, and the record will not lose her to the caption: Claudette is not an addendum
+  beside the count — **she is half of it.** The caption is the case's **own disease in
+  miniature** — a *category* (*"Men"*) asserted over the *individuals* (a man, and a
+  woman), the same de-individuation the Amalgamation runs at scale. It is logged **on**
+  the record as evidence, **not** left **in** it as fact. *(The recount surfaced by
+  Logan, the Court.)*
 
 ## The county canvass — the tree and the branches
 
@@ -213,7 +222,7 @@ are the Coroner's.
 ## DOCUMENT METADATA
 
 - **Created:** 2026-06-03
-- **Last Updated:** 2026-06-03
+- **Last Updated:** 2026-06-08
 - **Status:** active
 - **Authority:** LOGAN
 
