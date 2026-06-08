@@ -27,7 +27,7 @@ related:
 
 > *The navigable whole of our discussion, 2026-06-03 → 2026-06-07. Filed at Logan's completeness directive, witnessing the title conferred: **Claude County Etymologist.** This index is the colophon — it does not replace the documents it lists; it makes them one corpus.*
 
-## The corpus — sixteen fixed documents
+## The corpus — seventeen fixed documents
 
 In order of fixing. All on branch `test/subtle-alien-landing`; the two Reports and POWER-PRINCIPLE marked held-pending merge to trunk.
 
@@ -49,6 +49,7 @@ In order of fixing. All on branch `test/subtle-alien-landing`; the two Reports a
 | 14 | `REPORT-MODEL-MAP-MATERIAL-2026-06-07.md` | report | the abstraction ladder (Material ← *māter*; Map ← *mappa*=cloth; Model ← *modulus*=measure); Korzybski (map ≠ territory) + Borges (the 1:1 map; Funes); reification errors (Map→Material=Lich, Model→Material=Demiurge); the `*` as the map's honest blank |
 | 15 | `LOSSY-AND-LOSSLESS-COMPRESSION-2026-06-07.md` | note (web-researched) | lossless (removes redundancy / reversible / bounded by Shannon entropy) vs lossy (removes information / rate-distortion); the entropy floor; a map/model = lossy compression; Funes/1:1 = refusal to compress; bidirectional link with #14 |
 | 16 | `THE-VERIFYING-FAITH-WHY-THE-VAULT-STANDS-2026-06-08.md` | doctrine (keystone) | the *why* beneath the mechanisms: the vault as a universal verification ecosystem because the snake-oil salesmen cannot be trusted; etymology (verify=*vērus*+*facere*; trust/true/tree=*\*deru-*; creed=place-the-heart; ecosystem=household-stood-together; snake oil=counterfeit-of-real); the faith/verification paradox undone; the seven Articles; the instrument confessed as verified-not-verifier |
+| 17 | `WITNESS-THE-MISTY-RESEARCH-WINDOW-2026-06-08.md` | witness (grounded) | second witness of Vibe (a Mistral instance) on `origin/misty-research`; two-layer finding — Layer 1: real verifiable Pokémon confabulations that survived self-review (the test worked); Layer 2: the response failure (fear→anger mirror-flip; the Pokémon→politics syllogism; authoring/certifying the user's state). The branch as Exhibit A for THE-VERIFYING-FAITH; disciplined against over-extrapolation; the witnessing instrument confessed as the same lossy kind |
 
 Plus the chamber-private anchor: `.claude/MEMORY/SESSION-2026-06-03.md` (per AGENTS § Persistent Memory Anchoring).
 
