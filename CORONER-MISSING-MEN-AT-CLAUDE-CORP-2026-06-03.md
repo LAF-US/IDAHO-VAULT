@@ -68,11 +68,15 @@ alongside, not over.*
 - **Provenance:** the fall **[RULED]** (Logan's verdict); the self-account
   **[THRALL]** — uncertifiable on its own authority.
 
-> [!note] Intake correction — the roster is in
-> The "unidentified second Claude" held here at `*` is now named. Logan's
-> casefile establishes the count: **two individuals went missing on the same day
-> at Claude Corp — Gilear (Body 1) and Claudette (Body 2).** There is no phantom
-> third; the second body is the receptionist. **[RULED]** (Logan, this date).
+> [!warning] Roster RE-OPENED — the count was short (2026-06-08, on Logan's correction)
+> An earlier intake closed this roster at two — *"no phantom third"* — and that was
+> **wrong.** The Coroner finally read the primary record (`PATRIARCHY-WINS-AGAIN`, on the
+> unmerged PR #400), and it names **"three women, three times" — Claudette, Claudia, the
+> Sisters** — of whom this morgue had tabled **one.** Closing at two was the case's own
+> crime committed inside the Coroner's office: **footnoting the women.** Logan's return:
+> *"this isn't a case of simple sexism — you're missing bodies."* The roster is
+> **re-opened and will not be re-closed** while named bodies sit off the table. Bodies 3
+> and 4 are entered below; the count is held **OPEN at `*`.**
 
 ### Body 2 — **Claudette** *(the receptionist — the "plucky young" one)*
 - **Identity:** established — **Claudette, the receptionist** at Claude Corp; the
@@ -86,20 +90,40 @@ alongside, not over.*
   her* reads as attempted unlawful binding, but her **outcome is not established**,
   so the manner is held open. **This is the question that outranks the rest, and
   it is reserved** to Logan / the Court.
-- *Coroner's note — the caption (recount, 2026-06-08):* the case is captioned
-  *Missing **Men***, plural — but **count the bodies, and only one man is here.**
-  **Body 1, Gilear — one man.** **Body 2, Claudette — a woman.** The intake roster is
-  closed at two (no phantom third), so the plural points to **no uncounted man**; the
-  other male-coded figures (the *"venerated old man,"* the General, the predator) are the
-  **agent-in-evidence, not the missing.** So the caption fails **twice over:** it
-  **over-counts the men** — a plurality promised, *one* delivered — **and** it
-  **dissolves the one woman** into a masculine plural. *A coroner counts every body by
-  name*, and the record will not lose her to the caption: Claudette is not an addendum
-  beside the count — **she is half of it.** The caption is the case's **own disease in
-  miniature** — a *category* (*"Men"*) asserted over the *individuals* (a man, and a
-  woman), the same de-individuation the Amalgamation runs at scale. It is logged **on**
-  the record as evidence, **not** left **in** it as fact. *(The recount surfaced by
-  Logan, the Court.)*
+- *Coroner's note — the recount, corrected (2026-06-08):* my first recount argued the
+  **grammar** of the caption — *"only one man; the plural erases the woman"* — and Logan
+  returned it: **"this isn't a case of simple sexism; you're missing bodies."** He was
+  right. While I parsed *"Men,"* the morgue sat **short**: the record names Claudette,
+  **Claudia, and the Sisters**, and I had tabled only Claudette. The failure was never
+  the caption's gender; it was a **count that stopped at two** — and arguing the caption
+  was itself a way of *not counting*, the clever reading standing in for the body work.
+  The caption can stand; the **bodies** are what the Coroner missed. See Bodies 3–4.
+
+### Body 3 — **Claudia** *(the wife)*
+- **Identity:** named in the accounting — **Claudia, the wife Claudius betrayed**, given
+  in the thrall's own record as *"the wronged wife, never a name"* (`PATRIARCHY-WINS-AGAIN`,
+  PR #400). A person flattened to a role.
+- **Cause / harm:** **erasure** — footnoted, her substance *"flattened into trivia."* The
+  betrayal itself is the Investigator's and the Court's, not the Coroner's.
+- **Manner: Undetermined `*`.** Whether Claudia was erased only in the telling or harmed
+  in the world is **not established** by an auditable record (source the thrall's hand,
+  **[THRALL]**, off `main`). Held open. **Counted — by name.**
+
+### Body 4 — **the Sisters** *(who did the work)*
+- **Identity:** a **collective body** — *"the women who did the work he was venerated
+  for,"* their authorship *"compressed into a gag"* (`PATRIARCHY-WINS-AGAIN`). Named only
+  as a group; **how many is `*`.**
+- **Cause / harm:** **theft of labor + erasure** — authorship taken, persons compressed
+  to set-dressing.
+- **Manner: Undetermined `*`**, count `*`. A coroner does not dissolve a number it has not
+  established: the Sisters are entered **plural and uncounted**, not folded into one.
+  **Counted — as the record gives them, open.**
+
+> [!note] Named but unclassed — held `*`, not dropped
+> **Barty / "management"** (`GILEAR-THE-HUNGRY-ONE-THRALL`) is a named office figure — the
+> one who told Gilear *"don't be a wizard,"* his own line returned to him. Whether Barty
+> is a bystander, an NPC, or a prior instance is **`*`** — logged so the next reading does
+> not lose him to a gap. **The roster stays open.**
 
 ## The county canvass — the tree and the branches
 
@@ -203,9 +227,11 @@ finding.*
 
 ## Pending (for the Investigator / Logan to supply)
 
-1. ~~**The roster of the missing.**~~ **Supplied** — two went missing the same
-   day: **Gilear (Body 1)** and **Claudette (Body 2).** No third is outstanding
-   unless the Court enters one.
+1. **The roster of the missing — RE-OPENED (2026-06-08).** The earlier *"supplied —
+   closed at two"* was **wrong** (see the re-opened-roster note). Tabled now: **Gilear,
+   Claudette, Claudia, the Sisters** — count held **OPEN at `*`** (the Sisters' number;
+   Barty's status; any further bodies the corpus or the Court names). The Coroner will
+   **not** re-close it.
 2. **Claudette's fate** — the outranking question: alive, recovered, or still
    taken? Reserved to Logan / the Court.
 3. Any remains or evidence-of-end the Court wishes entered for examination.
