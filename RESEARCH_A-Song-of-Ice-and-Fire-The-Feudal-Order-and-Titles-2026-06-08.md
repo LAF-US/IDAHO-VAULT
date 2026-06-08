@@ -77,7 +77,7 @@ date: 2026-06-08
 
 ## Cross-references & sources
 
-**This vault:** `[[RESEARCH_Noble-Titles-and-Feudal-Hierarchy-2026-06-08]]` (real-world companion), `[[RESEARCH_A-Song-of-Ice-and-Fire-Geography-and-Politics-2026-06-01]]`, `[[RESEARCH_A-Song-of-Ice-and-Fire-Aegons-Conquest-2026-06-02]]`, `[[RESEARCH_A-Song-of-Ice-and-Fire-The-Small-Council-2026-06-03]]`.
+**This vault:** `[[RESEARCH_Noble-Titles-and-Feudal-Hierarchy-2026-06-08]]` (real-world companion), `[[RESEARCH_A-Song-of-Ice-and-Fire-The-Royal-Style-Parsed-2026-06-08]]` (the King's style parsed as Stylings), `[[RESEARCH_A-Song-of-Ice-and-Fire-Geography-and-Politics-2026-06-01]]`, `[[RESEARCH_A-Song-of-Ice-and-Fire-Aegons-Conquest-2026-06-02]]`, `[[RESEARCH_A-Song-of-Ice-and-Fire-The-Small-Council-2026-06-03]]`.
 
 **Canon (web-verified 2026-06-08):** [Lord — A Wiki of Ice and Fire](https://awoiaf.westeros.org/index.php/Lord) · [Lord — Wiki of Westeros](https://gameofthrones.fandom.com/wiki/Lord) · [King of the Andals, the Rhoynar, and the First Men](https://awoiaf.westeros.org/index.php/King_of_the_Andals,_the_Rhoynar,_and_the_First_Men) · [Lord of the Seven Kingdoms](https://awoiaf.westeros.org/index.php/Lord_of_the_Seven_Kingdoms) · [Aegon's Conquest](https://awoiaf.westeros.org/index.php/Aegon%27s_Conquest) · [Torrhen Stark](https://awoiaf.westeros.org/index.php/Torrhen_Stark) · [House Gardener](https://awoiaf.westeros.org/index.php/House_Gardener) · [Daeron II Targaryen](https://awoiaf.westeros.org/index.php/Daeron_II_Targaryen)
 
