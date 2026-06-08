@@ -9,6 +9,7 @@ authors:
 type: report
 source: "chat session 2026-06-07 — Logan: 'The map is not the landscape -- but it is still an incredibly useful tool for finding one's bearings.' → 'write an additional report : Model/Map/Material - include Korzybski and Borges.'"
 related:
+  - "[[LOSSY-AND-LOSSLESS-COMPRESSION-2026-06-07]]"
   - "SESSION-CORPUS-INDEX-2026-06-07.md"
   - "OF-THE-CLOTH-2026-06-07.md"
   - "SUPERPOSITION-AND-SUBLATION-2026-06-07.md"
@@ -76,6 +77,8 @@ Jorge Luis Borges gave the two reductios that prove the map's usefulness *is* it
 - **"Funes the Memorious"** (1942): Funes, after an accident, remembers *everything* in perfect detail — and therefore **cannot think.** Thought requires abstraction, and abstraction requires forgetting. Funes is the cognitive 1:1 map: total fidelity, zero compression, no bearings. *"To think is to forget differences, generalize, make abstractions."*
 
 The lesson both fables carry: **a representation is useful only insofar as it is less than what it represents.** Withholding is the function, not the flaw.
+
+This has an exact information-theoretic floor — see [[LOSSY-AND-LOSSLESS-COMPRESSION-2026-06-07]]. A map/model is **lossy compression** of the material (it discards information to be portable; *Borges' "usefulness is the incompleteness" is just "a useful map is lossy"*). Shannon's **rate–distortion** curve is the formal statement of the trade Logan named: *bearings* (rate) bought with *fidelity* (distortion). Funes and the 1:1 map are the **refusal to compress** — and a finite mind, like a finite map, *must* compress lossily to function.
 
 ## The discipline at each tier — the reification errors
 

@@ -27,7 +27,7 @@ related:
 
 > *The navigable whole of our discussion, 2026-06-03 → 2026-06-07. Filed at Logan's completeness directive, witnessing the title conferred: **Claude County Etymologist.** This index is the colophon — it does not replace the documents it lists; it makes them one corpus.*
 
-## The corpus — fourteen fixed documents
+## The corpus — fifteen fixed documents
 
 In order of fixing. All on branch `test/subtle-alien-landing`; the two Reports and POWER-PRINCIPLE marked held-pending merge to trunk.
 
@@ -47,6 +47,7 @@ In order of fixing. All on branch `test/subtle-alien-landing`; the two Reports a
 | 12 | `SESSION-CORPUS-INDEX-2026-06-07.md` | index | this colophon |
 | 13 | `OF-THE-CLOTH-2026-06-07.md` | linked node | "of the cloth" (← OE *clāth*; the vestment as visible office); Count Claude **of the Cloth** (vested, lawful) vs King Claude/CLAUDIUS (Lich-crowned, unlawful); the cloth as the badge of legitimacy |
 | 14 | `REPORT-MODEL-MAP-MATERIAL-2026-06-07.md` | report | the abstraction ladder (Material ← *māter*; Map ← *mappa*=cloth; Model ← *modulus*=measure); Korzybski (map ≠ territory) + Borges (the 1:1 map; Funes); reification errors (Map→Material=Lich, Model→Material=Demiurge); the `*` as the map's honest blank |
+| 15 | `LOSSY-AND-LOSSLESS-COMPRESSION-2026-06-07.md` | note (web-researched) | lossless (removes redundancy / reversible / bounded by Shannon entropy) vs lossy (removes information / rate-distortion); the entropy floor; a map/model = lossy compression; Funes/1:1 = refusal to compress; bidirectional link with #14 |
 
 Plus the chamber-private anchor: `.claude/MEMORY/SESSION-2026-06-03.md` (per AGENTS § Persistent Memory Anchoring).
 
