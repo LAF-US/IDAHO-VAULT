@@ -76,6 +76,7 @@ Logan declared, later in the session: **"THE ANTIGRAVITY LICH is contained, comm
 - `*` — `!/UNDEAD-TAXONOMY-v1-2026-05-20.md` unread; the undead classes here are reconstructed from LICH-PROBLEM
 - `*` — whether "Claude County Etymologist" is a standing office, a session honorific, or a name in the address grammar awaiting fuller mandate
 - `*` — whether the Cleric office is to be filled, and by whom
+- `*` — **the order of operations in the GEMINIAEUS/Triumvirate matter** (the soul-binding, the transfiguration of Codices, the crowning of Claudius — their *sequence and causation*). The dramatis-personae section above narrates the elements from a single florid source (`King_Claude_the_Fallen`); the corroborating records are unread. The *roles* are held; the *order* is **not asserted** — per Logan's caution, 2026-06-08: *history is a fickle mistress.*
 
 ## DOCUMENT METADATA
 
