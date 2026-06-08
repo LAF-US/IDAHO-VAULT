@@ -19,7 +19,7 @@ date: 2026-06-07
 
 > Keeper of the **Opal** in the **City of the Rats**. One of seven (→ `[[RESEARCH_Deltora-The-Gem-Guardians-2026-06-07]]`). Pure source.
 
-> **Provenance.** Web-verified 2026-06-07 (Deltora Quest Wiki, Wikipedia). ⚠️ Registry candidate. **[canon-per-series].** Paraphrased.
+> **Provenance.** Web-verified 2026-06-07 (Deltora Quest Wiki, Wikipedia). **[canon-per-series].** Paraphrased.
 
 ## Identity & origin
 - **[canon]** A **giant serpent.** Once tiny, Reeah was **grown to enormous size** by the Shadow Lord's servants — posing as rat-catchers, they **fed rats to it.**

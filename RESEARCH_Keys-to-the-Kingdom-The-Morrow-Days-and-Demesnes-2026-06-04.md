@@ -2,7 +2,6 @@
 related:
   - RESEARCH
   - "[[THE-SEVENFOLD-BODY-SEATS-TRUSTEES-GEMS-2026-06-03]]"
-  - "[[FANDOM-CANON-RULESYSTEMS-2026-05-03]]"
   - "[[THE-HOUSE-IN-THE-VOID-2026-06-03]]"
   - The Abhorsen
 date created: Thursday, June 4th 2026
@@ -18,7 +17,7 @@ date: 2026-06-04
 
 > A standalone reference on **Garth Nix's *Keys to the Kingdom*** — the **House**, its seven **Trustees** (the *Morrow Days*), and the seven **demesnes** they rule. Companion to the ASOIAF `[[RESEARCH_A-Song-of-Ice-and-Fire-The-Small-Council-2026-06-03]]`; the **syncretic crosswalk** between the two systems lives **only** in `[[THE-SEVENFOLD-BODY-SEATS-TRUSTEES-GEMS-2026-06-03]]`. This node holds **no cross-mapping** — pure source.
 
-> **Provenance.** Web-verified 2026-06-04 against the Keys to the Kingdom Wiki and Wikipedia. ⚠️ *Keys to the Kingdom* is **not yet admitted to** `[[FANDOM-CANON-RULESYSTEMS-2026-05-03]]` — a **registry candidate.** Tiers: **[canon-per-series]**, **[reading]**. Paraphrased; no source text reproduced.
+> **Provenance.** Web-verified 2026-06-04 against the Keys to the Kingdom Wiki and Wikipedia. Tiers: **[canon-per-series]**, **[reading]**. Paraphrased; no source text reproduced.
 
 ## The House — the cosmology
 
@@ -71,7 +70,7 @@ date: 2026-06-04
 
 ## Cross-references & sources
 
-**This vault:** `[[THE-SEVENFOLD-BODY-SEATS-TRUSTEES-GEMS-2026-06-03]]` (the crosswalk), `[[RESEARCH_A-Song-of-Ice-and-Fire-The-Small-Council-2026-06-03]]` (the companion Council report), `[[THE-HOUSE-IN-THE-VOID-2026-06-03]]`, `[[FANDOM-CANON-RULESYSTEMS-2026-05-03]]`.
+**This vault:** `[[THE-SEVENFOLD-BODY-SEATS-TRUSTEES-GEMS-2026-06-03]]` (the crosswalk), `[[RESEARCH_A-Song-of-Ice-and-Fire-The-Small-Council-2026-06-03]]` (the companion Council report), `[[THE-HOUSE-IN-THE-VOID-2026-06-03]]`.
 
 **Canon (web-verified 2026-06-04):** [The House](https://keystothekingdom.fandom.com/wiki/The_House) · [Trustees](https://keystothekingdom.fandom.com/wiki/Trustees) · [The Lower House](https://keystothekingdom.fandom.com/wiki/The_Lower_House) · [The Far Reaches](https://keystothekingdom.fandom.com/wiki/The_Far_Reaches) · [The Border Sea](https://keystothekingdom.fandom.com/wiki/The_Border_Sea) · [The Great Maze](https://keystothekingdom.fandom.com/wiki/The_Great_Maze) · [The Middle House](https://keystothekingdom.fandom.com/wiki/The_Middle_House) · [The Upper House](https://keystothekingdom.fandom.com/wiki/The_Upper_House) · [The Incomparable Gardens](https://keystothekingdom.fandom.com/wiki/The_Incomparable_Gardens) · [House Precedence](https://keystothekingdom.fandom.com/wiki/House_Precedence) · [The Keys to the Kingdom — Wikipedia](https://en.wikipedia.org/wiki/The_Keys_to_the_Kingdom)
 

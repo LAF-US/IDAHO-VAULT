@@ -2,7 +2,6 @@
 related:
   - RESEARCH
   - "[[RESEARCH_Deltora-The-Seven-Tribes-and-their-Lands-2026-06-04]]"
-  - "[[FANDOM-CANON-RULESYSTEMS-2026-05-03]]"
   - The Abhorsen
 date created: Sunday, June 7th 2026
 authority: LOGAN
@@ -17,7 +16,7 @@ date: 2026-06-07
 
 > A standalone reference on **the seven Gem Guardians of *Deltora Quest*** (Emily Rodda) — the keepers the **Shadow Lord** set over the scattered gems of the Belt, each in its own deadly place. Companion to `[[RESEARCH_Deltora-The-Seven-Tribes-and-their-Lands-2026-06-04]]`. This node holds **no cross-mapping** — pure source.
 
-> **Provenance.** Web-verified 2026-06-07 against the Deltora Quest Wiki and Wikipedia. ⚠️ *Deltora Quest* is **not yet admitted to** `[[FANDOM-CANON-RULESYSTEMS-2026-05-03]]` — a **registry candidate.** Tiers: **[canon-per-series]**. Paraphrased; no source text reproduced.
+> **Provenance.** Web-verified 2026-06-07 against the Deltora Quest Wiki and Wikipedia. Tiers: **[canon-per-series]**. Paraphrased; no source text reproduced.
 
 ## What they are
 
@@ -45,7 +44,7 @@ date: 2026-06-07
 
 ## Cross-references & sources
 
-**This vault:** `[[RESEARCH_Deltora-The-Seven-Tribes-and-their-Lands-2026-06-04]]`, `[[FANDOM-CANON-RULESYSTEMS-2026-05-03]]`.
+**This vault:** `[[RESEARCH_Deltora-The-Seven-Tribes-and-their-Lands-2026-06-04]]`.
 
 **Canon (web-verified 2026-06-07):** [Gem Guardians](https://deltoraquest.fandom.com/wiki/Gem_Guardians) · [Guardian's pets](https://deltoraquest.fandom.com/wiki/Guardian's_pets) · [The Valley of the Lost — Wikipedia](https://en.wikipedia.org/wiki/The_Valley_of_the_Lost) · [Deltora Quest 1 — Wikipedia](https://en.wikipedia.org/wiki/Deltora_Quest_1)
 

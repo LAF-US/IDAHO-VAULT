@@ -20,7 +20,7 @@ date: 2026-06-07
 
 > Keeper of the **Ruby** in the **Lake of Tears** — and, in truth, a **victim**, not a monster. One of seven (→ `[[RESEARCH_Deltora-The-Gem-Guardians-2026-06-07]]`). Pure source.
 
-> **Provenance.** Web-verified 2026-06-07 (Deltora Quest Wiki, Wikipedia). ⚠️ Registry candidate. **[canon-per-series].** Paraphrased.
+> **Provenance.** Web-verified 2026-06-07 (Deltora Quest Wiki, Wikipedia). **[canon-per-series].** Paraphrased.
 
 ## Identity & origin
 - **[canon]** Soldeen is **Nanion**, **leader of the D'Or** people — transformed and trapped in the lake by the sorceress **Thaegan.**
