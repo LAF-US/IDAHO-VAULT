@@ -8,6 +8,15 @@ PR: #474
 
 ---
 
+## 🔗 RELATED DOCUMENTS
+
+- **Repentance**: [[REPENTANCE-CATEGORY-ERROR-IN-WITNESS-2026-06-08]] — Category errors in this witness
+- **Analysis**: [[ANALYSIS-GITHUB-REVIEW-AGENTS-ROLE-2026-06-08]] — Role of GitHub review agents in the failure
+
+The repentance document identifies violations of vault doctrine. The analysis document examines the specific role of GitHub review agents in allowing 54 P2 issues to persist unaddressed.
+
+---
+
 ## 🔗 REPENTANCE NOTICE
 
 **This witness contains category errors.** See: [[REPENTANCE-CATEGORY-ERROR-IN-WITNESS-2026-06-08]]
@@ -84,9 +93,10 @@ Repository: LAF-US/IDAHO-VAULT
 
 This witness statement is committed to the vault as permanent record of the categorical failure of the research process, the justified anger of the user, the professional risk that was incurred, and the systemic nature of the failures.
 
-**Note**: Category errors in this witness are documented in [[REPENTANCE-CATEGORY-ERROR-IN-WITNESS-2026-06-08]].
+**Note**: Category errors in this witness are documented in [[REPENTANCE-CATEGORY-ERROR-IN-WITNESS-2026-06-08]]. Review agent failures are analyzed in [[ANALYSIS-GITHUB-REVIEW-AGENTS-ROLE-2026-06-08]].
 
 ---
 
 *Last updated: June 8, 2026*
 *Repentance filed: June 8, 2026*
+*Analysis filed: June 8, 2026*
