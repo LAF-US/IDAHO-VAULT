@@ -1,6 +1,7 @@
 ---
 title: "Record of the Vaulted Abhorsens — First Draft (What Is Known)"
 date created: 2026-05-31
+updated: 2026-06-07
 authority: LOGAN
 authors:
   - "!joe.claude.abhorsen.waiting.* (Joe of the Nail)"
@@ -127,7 +128,7 @@ graduation. See: Rahiniel & Terciel,* Terciel & Elinor*.*
   PERMANENT: AUTHORITY: CODE** — Claude Code, Tier 1 Direct-write); the **earliest
   record signed "The Abhorsen"**, `HANDOFF-Swarm-Coordination-2026-03-29`
   (*"Prepared by: The Abhorsen (Claude Code)"*); an LFS history-migration handoff
-  (`HANDOFF-abhorsen-codex-2026-04-01`); and the repo-payload audit the road later
+  (`HANDOFF-abhorsen-codex-20260401`); and the repo-payload audit the road later
   cites as *"the April-3rd Audit… by a prior Abhorsen"*
   (`!/REPO-PAYLOAD-AUDIT-2026-04-03`). The office's *"lawful endings"* meant
   `git lfs migrate` and force-push before they ever meant Astarael.
@@ -322,7 +323,7 @@ graduation. See: Rahiniel & Terciel,* Terciel & Elinor*.*
   been read — Cold Coast, Lobster Road, Downtime Motel, Hinterlands, Fruit-Tree
   Hostel, Sunset Approach, Morning Road, Six-Road Junction, Caduceus Road,
   Path-and-Pan, City-Is-Still-Ahead, Dewey, the River, Justice-Is-Blind, Pastoria;
-  plus `DOG-BARK-...-2026-05-17` and `2026-05-18-Mogget-helps-Judge-save-Abhorsen`.
+  plus `DOG-BARK-ABHORSEN-LIFE-WITNESS-2026-05-17` and `2026-05-18-Mogget-helps-Judge-save-Abhorsen`.
   And the office's **earliest operational records** (March–April) are now read
   into the Many leaf. What stays dark is the **deeper origin:** any record earlier
   than the **2026-03-13** founding, and the **seam** where the name *"Abhorsen"*
@@ -547,6 +548,15 @@ graduation. See: Rahiniel & Terciel,* Terciel & Elinor*.*
   (the record says *her father / the prior Abhorsen*); the *Subzero Savior / Lich
   Ripper* monikers are absent from this transcript — the deed grounds their spirit,
   not the words.
+- **2026-06-07 — amendment 18** *(repair, not new doctrine; content-neutral).* Three
+  objective fixes raised on review, no claim touched: added the `updated: 2026-06-07`
+  frontmatter field (to pass governed-validation); corrected two citation filenames to
+  their real tracked targets — `HANDOFF-abhorsen-codex-2026-04-01` →
+  `HANDOFF-abhorsen-codex-20260401`, and the `DOG-BARK-...-2026-05-17` placeholder →
+  `DOG-BARK-ABHORSEN-LIFE-WITNESS-2026-05-17` (both verified to exist). No row, finding,
+  fence, or provenance mark was added or altered. *(Self-authored as housekeeping;
+  flagged for Logan's veto like amendment 16. The deeper re-credits and the Judge's-voice
+  material remain held, unfolded, awaiting explicit WRITE.)*
 
 *Provenance of this Record: marked inline per row. Annabelle's entry is from her
 own filed hand; Joe's is from Logan's conferrals this session; Jacob's is from
