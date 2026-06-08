@@ -20,7 +20,7 @@ date: 2026-06-03
 
 > A recurring structure across the vault's syncretic systems: a **body of seven**, each member holding **one scoped piece** of a distributed whole — a seat, a key, a gem. The drama is always *what happens at the seats*: held in service, **usurped and hoarded**, or **reassembled by the rightful heir.**
 
-> **Provenance & scope.** ⚠️ The ASOIAF half is grounded (→ the Small Council node). **Deltora (Emily Rodda) and *Keys to the Kingdom* (Garth Nix) are NOT yet in the vault's `FANDOM-CANON-RULESYSTEMS` registry** — this node *introduces* them as comparative material, drawn from **source canon and flagged for verification** (no web pass this turn). Tiers: **[canon-per-series]**, **[reading]**. Paraphrased; no source text reproduced.
+> **Provenance & scope.** The ASOIAF half is grounded (→ the Small Council node); the **Deltora** and **Keys to the Kingdom** material has since been **web-verified (2026-06-04/07) in dedicated source nodes** (→ `[[RESEARCH_Keys-to-the-Kingdom-The-Morrow-Days-and-Demesnes-2026-06-04]]`, `[[RESEARCH_Deltora-The-Seven-Tribes-and-their-Lands-2026-06-04]]`). For the record, neither is **catalogued in** `FANDOM-CANON-RULESYSTEMS` (a rulesystem registry of six other canons). Tiers: **[canon-per-series]**, **[reading]**. Paraphrased; no source text reproduced.
 
 ## Three sevens
 
@@ -28,9 +28,9 @@ date: 2026-06-03
 **[canon]** Seven non-hereditary **offices** under the king — Hand, Master of Coin, Master of Laws, Master of Ships, Master of Whisperers, Grand Maester, Lord Commander of the Kingsguard (→ the Small Council node). Authority distributed by **portfolio**; each seat scoped; all appointed by, and recallable by, the crown. (The realm's wider "seven" is the **Faith of the Seven** — one godhead, seven aspects.)
 
 ### 2. Garth Nix, *Keys to the Kingdom* — the Seven *Trustees* (the Morrow Days)
-**[canon-per-series, ⚠️ verify]** The **Architect** (the absent creator) left a **Will** and divided the House among **seven Trustees**, one per day of the week, each entrusted with **one of the Seven Keys**, dominion over one **demesne**, and **a fragment of the Will** they were charged to execute. Instead, each **broke the trust** — hoarding its Will-fragment to keep its power, each corrupted by one of the **seven deadly sins**:
+**[canon-per-series, web-verified]** The **Architect** (the absent creator) left a **Will** and divided the House among **seven Trustees**, one per day of the week, each entrusted with **one of the Seven Keys**, dominion over one **demesne**, and **a fragment of the Will** they were charged to execute. Instead, each **broke the trust** — hoarding its Will-fragment to keep its power, each corrupted by one of the **seven deadly sins**:
 
-| Trustee | Demesne | Sin *(⚠️ verify)* |
+| Trustee | Demesne | Sin |
 |---|---|---|
 | **Mister Monday** | the Lower House | Sloth |
 | **Grim Tuesday** | the Far Reaches | Greed |
@@ -83,7 +83,7 @@ date: 2026-06-03
 
 ## What this does / does not do
 
-Introduces a cross-system **concept** (like the Mage, Wights, and Stylings nodes) and proposes Deltora + *Keys to the Kingdom* as candidates for the `FANDOM-CANON-RULESYSTEMS` registry. ⚠️ Their specifics are **source-canon-from-memory, flagged for a verification pass**; the ASOIAF half is grounded. Adds no doctrine; the Architect holds the verdict.
+Introduces a cross-system **concept** (like the Mage, Wights, and Stylings nodes), drawing on Deltora + *Keys to the Kingdom*. Their specifics are now **web-verified in dedicated source nodes** (no longer from memory); the ASOIAF half is grounded. Adds no doctrine; the Architect holds the verdict.
 
 ## Cross-references
 
