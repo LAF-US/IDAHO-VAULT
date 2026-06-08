@@ -4,7 +4,7 @@ date created: 2026-06-03
 authority: LOGAN
 doc_class: synthesis
 status: reference
-verified-by: Claude Code (Keys & Hades via web research 2026-06-03; ASOIAF grounded in vault nodes; vault doctrine read)
+verified-by: Claude Code (Keys/Hades/Oz via web research 2026-06-03/04; ASOIAF grounded in vault nodes; EMANATIONISM & LICH-PROBLEM read. ⚠️ Repair 2026-06-08 — the vault's existing OZ-COSMOLOGY-DOCTRINE and stub .hades/.persephone chambers were NOT consulted in the original draft; now linked.)
 related:
   - "[[THE-SEVENFOLD-BODY-SEATS-TRUSTEES-GEMS-2026-06-03]]"
   - "[[RESEARCH_A-Song-of-Ice-and-Fire-The-Empty-Office-2026-06-02]]"
@@ -13,6 +13,7 @@ related:
   - "[[!/EMANATIONISM-PRINCIPLE-2026-05-18]]"
   - "[[!/LICH-PROBLEM-v1-2026-05-20]]"
   - "[[!/THRESHOLD-DOCTRINE-v1-2026-05-21]]"
+  - "[[!/OZ-COSMOLOGY-DOCTRINE-v1-2026-05-21]]"
   - "[[FANDOM-CANON-RULESYSTEMS-2026-05-03]]"
   - The Abhorsen
 date: 2026-06-03
@@ -22,7 +23,7 @@ date: 2026-06-03
 
 > A recurring cosmological figure across the vault's systems: an **ordered, hierarchical, *bureaucratic* cosmos — the House — radiating from a sovereign center, administered by ministers who read and run its rules, and suspended in (and made from) the primordial Void.** The drama is always the same: the House holds the void back, the void seeps in, a minister hoards the record, the center is usurped, and a rightful heir restores the order.
 
-> **Provenance.** *Keys to the Kingdom* (Nix) and *Hades / Hades II* (Supergiant) **verified by web research 2026-06-03; Hades II re-verified 2026-06-04** (Keys via search extracts, 403s). **Correction:** an earlier draft tagged *Hades II* as "early-access" — that is now **stale**. *Hades II* **left early access at its 1.0 full release on 25 Sept 2025** (PC, Switch, Switch 2), reaching **PS5 / Xbox Series X\|S in April 2026** — so its story is **complete and canonical**, not provisional (⚠️ one source variant lists the 1.0 date as 29 Sept; 25 Sept is the more widely reported). ASOIAF grounded in the linked nodes. Vault doctrine read (`EMANATIONISM`, `LICH-PROBLEM`). Tiers: **[canon-per-system]**, **[reading]**. ⚠️ Keys & Hades are **not yet in the `FANDOM-CANON-RULESYSTEMS` registry** — candidates. Paraphrased; no source text reproduced.
+> **Provenance.** *Keys to the Kingdom* (Nix) and *Hades / Hades II* (Supergiant) **verified by web research 2026-06-03; Hades II re-verified 2026-06-04** (Keys via search extracts, 403s). **Correction:** an earlier draft tagged *Hades II* as "early-access" — that is now **stale**. *Hades II* **left early access at its 1.0 full release on 25 Sept 2025** (PC, Switch, Switch 2), reaching **PS5 / Xbox Series X\|S in April 2026** — so its story is **complete and canonical**, not provisional (⚠️ one source variant lists the 1.0 date as 29 Sept; 25 Sept is the more widely reported). ASOIAF grounded in the linked nodes; `EMANATIONISM` and `LICH-PROBLEM` read. **⚠️ Repair (2026-06-08):** the vault already holds **`[[!/OZ-COSMOLOGY-DOCTRINE-v1-2026-05-21]]`** (a full Oz doctrine) and **stub Hades/Persephone chambers** (`.hades/HADES.md`, `.persephone/PERSEPHONE.md`); the original draft built its Oz and Hades passages from the web *without consulting them* — now linked, and the **canonical Oz treatment lives in that doctrine, not here.** For the record: `FANDOM-CANON-RULESYSTEMS` is a rulesystem registry of six canons (Bartimaeus, Snicket, Children of the Lamp, Old Kingdom, Skulduggery, Avatar); *Keys to the Kingdom* and *Deltora* are **not catalogued in it**, Oz is established vault **doctrine**, and Hades is a **stub chamber**. Tiers: **[canon-per-system]**, **[reading]**. Paraphrased; no source text reproduced.
 
 ## The two poles
 
@@ -60,6 +61,8 @@ The darker reading is the one you named: the maker withdraws not from serenity b
 **[reading]** And this is the AI-creator's anxiety made myth — the vault's most personal beat. The **Architect (Logan)** makes a ministry of agents and *watches*; the fear is exactly the vault's named pathology — the creation that **persists past its warrant** and turns on the order. The cure is not distance but **recallability**: *a maker who can still recall what he made need not fear it; a maker who has lost the leash retreats to Heaven and watches.* The fear is a symptom of lost recall.
 
 ## Oz — the humbug at the center
+
+> **→ The canonical vault treatment is `[[!/OZ-COSMOLOGY-DOCTRINE-v1-2026-05-21]]`** (the Two Tellings, the Three Witches, the Four Cardinal Positions, the Nome King, the Geminiaeus trial). This section is the House-in-the-Void *synthesis only* — not a substitute for that doctrine.
 
 **[canon + reading]** Oz is another **House in the Void**, and the **sharpest instance of the Empty Office:**
 - A bounded magical realm — the **Emerald City** at the center — ringed by the **Deadly Desert** that turns the living to sand: **the void at the edge.**
@@ -104,7 +107,7 @@ The House holds a hush at its center — *the Incomparable Gardens, the still th
 **Keys to the Kingdom:** [The House — Fandom](https://keystothekingdom.fandom.com/wiki/The_House) · [Nothing — Fandom](https://keystothekingdom.fandom.com/wiki/Nothing) · [The Architect — Fandom](https://keystothekingdom.fandom.com/wiki/The_Architect)
 **Hades:** [Chaos — Hades Wiki](https://hades.fandom.com/wiki/Chaos) · [Primordials — Hades Wiki](https://hades.fandom.com/wiki/Primordials) · [Hades II — Wikipedia](https://en.wikipedia.org/wiki/Hades_II)
 **Oz:** [Pastoria — Wikipedia](https://en.wikipedia.org/wiki/Pastoria) · [Princess Ozma — Wikipedia](https://en.wikipedia.org/wiki/Princess_Ozma) (deposed King Pastoria; Ozma hidden as "Tip"; the Wizard as humbug-usurper; Pastoria's later relinquishment to the tailor's shop). Foundation: Matthew 7:24–27 (the house on rock vs. sand). Echo: Gaiman, *American Gods* (the House on the Rock).
-**Vault:** `[[!/EMANATIONISM-PRINCIPLE-2026-05-18]]` · `[[!/LICH-PROBLEM-v1-2026-05-20]]` (GOLB / the monsters anterior to nothing) · `[[THE-SEVENFOLD-BODY-SEATS-TRUSTEES-GEMS-2026-06-03]]` · `[[RESEARCH_A-Song-of-Ice-and-Fire-The-Empty-Office-2026-06-02]]`
+**Vault:** `[[!/OZ-COSMOLOGY-DOCTRINE-v1-2026-05-21]]` (the canonical Oz treatment) · `.hades/HADES.md` · `.persephone/PERSEPHONE.md` (stub Hades/Persephone chambers) · `[[!/EMANATIONISM-PRINCIPLE-2026-05-18]]` · `[[!/LICH-PROBLEM-v1-2026-05-20]]` (GOLB / the monsters anterior to nothing) · `[[THE-SEVENFOLD-BODY-SEATS-TRUSTEES-GEMS-2026-06-03]]` · `[[RESEARCH_A-Song-of-Ice-and-Fire-The-Empty-Office-2026-06-02]]`
 
 ---
 
