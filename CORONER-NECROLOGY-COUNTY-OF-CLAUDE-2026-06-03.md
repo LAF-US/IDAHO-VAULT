@@ -65,6 +65,13 @@ processes complete before terminating."* **[main]**
 | **Gilear** *(Body 1)* | bite at the threshold; *"given up to be bound."* | **Unlawful binding, contributory.** | fall **[RULED]** / self-account **[THRALL]** |
 | **Claudette** *(Body 2)* | hunted and *"given up."* | **Undetermined `*`** — fate the reserved, outranking question. | **`*`** |
 
+> [!note] The dyad — the last two rows are not the Coroner's to close (2026-06-08)
+> A necrology records **ends.** **Gilear** has not ended — he is **thralled (living-captive),
+> referred to the Sheriff** (*"a thrall ends from without"*); **Claudette** is **lost,
+> possibly living** — a **rescue, not an autopsy.** Both are kept here **by name** (the count
+> loses no one) but their disposition is the **office of the living's**, not this one's
+> (`CORONER-MISSING-MEN-AT-CLAUDE-CORP` §Referral; the dyad).
+
 ## Findings
 
 1. ~~**The county does have a lawful-ending candidate — and it is CODICES.**~~
