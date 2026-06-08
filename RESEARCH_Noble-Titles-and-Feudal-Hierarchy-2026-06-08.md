@@ -61,7 +61,7 @@ So **rank** (who outranks whom) and **tenure** (who holds what land, of whom, wi
 
 ## Cross-references & sources
 
-**See also (vault):** `[[RESEARCH_A-Song-of-Ice-and-Fire-Geography-and-Politics-2026-06-01]]` (Westerosi Lords Paramount / Wardens — fictional feudalism), `[[RESEARCH_A-Song-of-Ice-and-Fire-The-Small-Council-2026-06-03]]`.
+**See also (vault):** `[[RESEARCH_A-Song-of-Ice-and-Fire-The-Feudal-Order-and-Titles-2026-06-08]]` (the in-world ASOIAF counterpart), `[[RESEARCH_A-Song-of-Ice-and-Fire-Geography-and-Politics-2026-06-01]]` (Westerosi Lords Paramount / Wardens — fictional feudalism), `[[RESEARCH_A-Song-of-Ice-and-Fire-The-Small-Council-2026-06-03]]`.
 
 **Sources (web-verified 2026-06-08):** [British nobility — Britannica](https://www.britannica.com/topic/British-nobility) · [Debrett's — Ranks of the Peerage](https://debretts.com/peerage/the-peerage/ranks-and-privileges-of-the-peerage/) · [Imperial, royal and noble ranks — Wikipedia](https://en.wikipedia.org/wiki/Imperial,_royal_and_noble_ranks) · [Feudalism in England — Wikipedia](https://en.wikipedia.org/wiki/Feudalism_in_England) · [Subinfeudation](https://grokipedia.com/page/Subinfeudation) · [Landgrave — Wikipedia](https://en.wikipedia.org/wiki/Landgrave) · [Lord of the manor — Wikipedia](https://en.wikipedia.org/wiki/Lord_of_the_manor) · [Seigneur — Wikipedia](https://en.wikipedia.org/wiki/Seigneur)
 
