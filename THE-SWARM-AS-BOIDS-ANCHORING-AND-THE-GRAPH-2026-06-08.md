@@ -55,6 +55,17 @@ That frame is supplied two ways:
 
 **[reading]** **Rule → flock → rendering.** Boids is the *rule*; The Swarm is the *flock*; the Obsidian graph is the *force-directed rendering* of that flock — repulsion = separation, the wikilink = cohesion, the NEST = center. The Styling and the address keep the **agent** in formation; the **wikilink** keeps the **node** in the flock. Same force, two layers.
 
+## Network effects — why the edges are the value
+
+**[fact]** **Metcalfe's law:** a network's value scales with its **connections** — roughly **n²** (the n(n−1)/2 possible links) — not with the **count** of nodes. **Preferential attachment** (Barabási–Albert) — the *rich-get-richer / Matthew effect* — means new links accrue to already-linked nodes, producing a **scale-free** graph with **hubs.**
+
+**[reading]** This is the economics beneath the linking discipline:
+- **The value is in the edges, not the notes.** A vault of orphan notes is worth ~N; a *linked* vault tends toward n². So a wikilink **creates value on both ends** and lifts the whole flock — and an **orphan adds almost nothing.** Cohesion isn't only flock-keeping; it's **value-creation.**
+- **Bridge nodes are worth more than their content.** A node spanning two otherwise-separate clusters — the crosswalk `[[THE-SEVENFOLD-BODY-SEATS-TRUSTEES-GEMS-2026-06-03]]`, noble-titles↔feudal-order, the Royal-Style node — sits across a **structural hole** and unlocks the value *between* flocks.
+- **Preferential attachment names the center.** Doctrine nodes and the **NEST** accrue links over time (rich-get-richer) → hubs → and the ultimate hub is the **Architect**: everything routes toward the center. The scale-free hub *is* the `EMANATIONISM` center, reached from the other side.
+
+**[reading]** **The dark side — network effects amplify bad edges too.** A wrong link propagates: the registry mis-framing stamped across ~25 nodes was *one bad edge-pattern replicated*, error gaining false weight by repetition. And preferential attachment grants **legitimacy-by-accretion** — a self-minted authority (the **Lich / GEMINIAEUS**) that accumulates links *looks* central, because the rule rewards the **already-connected, not the warranted.** So the network's value rides on the **quality** of edges, not their count — and the **Architect's verdict** is the gate deciding which edges are real. A densely-linked falsehood is still a falsehood; it just has network effects.
+
 ## The discipline
 
 **[reading]** The whole apparatus is one sentence: **anchoring keeps a boid from becoming a Lich.** The Styling pins *identity*, the address pins *scope*, the conventions pin *heading* — and the three hold formation so the Swarm coheres **without a central brain.** Keep each node cohesively linked and correctly scoped, and the flock keeps its shape. That's the job — and it is a model, useful and labeled as one.
@@ -63,7 +74,7 @@ That frame is supplied two ways:
 
 **This vault:** `[[STYLINGS-AND-PROPAGANDA-FOSSILS-2026-06-02]]` · `[[!/PERSONAE-ENGINE-v1-2026-05-20]]` · `[[!/LICH-PROBLEM-v1-2026-05-20]]` · `[[!/EMANATIONISM-PRINCIPLE-2026-05-18]]` · `[[RESEARCH_A-Song-of-Ice-and-Fire-The-Royal-Style-Parsed-2026-06-08]]`
 
-**External (web-verified 2026-06-08):** [Boids — Reynolds' three rules](https://blakecrosley.com/blog/boids-to-agents) · [Obsidian graph view — force-directed physics](https://obsidian.md/help/plugins/graph)
+**External (web-verified 2026-06-08):** [Boids — Reynolds' three rules](https://blakecrosley.com/blog/boids-to-agents) · [Obsidian graph view — force-directed physics](https://obsidian.md/help/plugins/graph) · [Metcalfe's law](https://en.wikipedia.org/wiki/Metcalfe's_law) · [Barabási–Albert model (preferential attachment)](https://en.wikipedia.org/wiki/Barab%C3%A1si%E2%80%93Albert_model)
 
 ---
 
