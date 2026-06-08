@@ -47,16 +47,16 @@ date: 2026-06-03
 
 ## The seat ↔ demesne crosswalk — LOCKED
 
-> **The mapping.** The seven **Small Council seats** (ASOIAF) onto the seven **demesnes** of *Keys to the Kingdom* (Garth Nix), matched **by portfolio/function as the primary weight** and the Trustees' **seven deadly sins as a secondary weight**. **Adjudicated and LOCKED by the Architect (Logan), 2026-06-04.**
+> **The mapping.** The seven **Small Council seats** (ASOIAF) onto the seven **demesnes** of *Keys to the Kingdom* (Garth Nix), matched **by portfolio/function as the primary weight** and the Trustees' **seven deadly sins as a secondary weight**. **Adjudicated and LOCKED by the Architect (Logan), 2026-06-04; Hand ↔ Kingsguard demesnes swapped by the Architect 2026-06-08.**
 >
 > **Provenance.** Small Council seats grounded in `[[RESEARCH_A-Song-of-Ice-and-Fire-The-Small-Council-2026-06-03]]`. The demesnes and the Trustees' sins **web-verified 2026-06-04** (Keys to the Kingdom Wiki / Wikipedia). The seat-sins are **[reading]** of the ASOIAF characters. The pairing itself is **[reading]**, ruled by the Architect. Paraphrased; no source text reproduced.
 
 | Council seat | Demesne | Trustee · sin | The resonance |
 |---|---|---|---|
-| **Hand of the King** | the **Upper House** | Superior Saturday · **Envy** | the powerful senior **deputy** who runs the machinery and **covets the seat above** (the oldest, most powerful Denizen, plotting her invasion of the Gardens) — the Hand who would be king |
+| **Hand of the King** | the **Incomparable Gardens** | Lord Sunday · **Pride** | ★ double-lock — the **apex / first-created epicenter**, the central seat; the Hand alone may lawfully **sit the throne** and rules in the king's stead — **Pride**, the would-be king (Tywin) |
 | **Master of Coin** | the **Far Reaches** | Grim Tuesday · **Greed** | ★ double-lock — treasure, mining, debt **+** Greed=Greed |
 | **Master of Ships** | the **Border Sea** | Drowned Wednesday · **Gluttony** | ★ double-lock — *the sea itself* **+** Gluttony=Gluttony (the leviathan that swallowed the sea) |
-| **Lord Commander, Kingsguard** | the **Incomparable Gardens** | Lord Sunday · **Pride** | the apex / the epicenter, the eldest given the **best domain**; the sworn swords nearest the sovereign, **Pride** of the white cloak |
+| **Lord Commander, Kingsguard** | the **Upper House** | Superior Saturday · **Envy** | ⚠️ the soft pairing — the sworn-sword corps set at the sorcerers' climbing-tower; little functional tie, carried by the **sin slot** (the white cloak that covets / breaks its vow — Jaime) |
 | **Master of Whisperers** | the **Middle House** | Lady Friday · **Lust** | the **eunuch & the empty Denizen** — both barred from a life of their own, both feeding vampirically on others' private lives (Friday drains mortals' experiences; the spider harvests the realm's secrets); the **absent ruler** in the shadows |
 | **Grand Maester** | the **Lower House** | Mister Monday · **Sloth** | the **records/archive** floor (maesters *keep* knowledge, don't conjure it) **+** Sloth=Sloth (Pycelle's feigned dotage) |
 | **Master of Laws** | the **Great Maze** | Sir Thursday · **Wrath** | **justice-as-force** — the law's coercive arm, the Army/battlefield demesne **+** Wrath=Wrath |
