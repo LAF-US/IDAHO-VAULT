@@ -20,7 +20,7 @@ date: 2026-06-07
 
 > Keeper of the **Lapis Lazuli** in the **Shifting Sands** — a guardian that is not one creature but a **swarm**. One of seven (→ `[[RESEARCH_Deltora-The-Gem-Guardians-2026-06-07]]`). Pure source.
 
-> **Provenance.** Web-verified 2026-06-07 (Deltora Quest Wiki, Wikipedia). ⚠️ Registry candidate. **[canon-per-series].** Paraphrased.
+> **Provenance.** Web-verified 2026-06-07 (Deltora Quest Wiki, Wikipedia). **[canon-per-series].** Paraphrased.
 
 ## Nature & appearance
 - **[canon]** The Hive is a **collective creature** of **microscopic red beings the size of grains of sand** — so vast it is mistaken for a desert: the **Shifting Sands** themselves.

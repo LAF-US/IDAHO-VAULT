@@ -21,7 +21,7 @@ date: 2026-06-07
 
 > The **third** guarded peril — hiding place of the **Opal**, kept by **[[RESEARCH_Deltora-Reeah-2026-06-07\|Reeah]]**. One of seven (→ `[[RESEARCH_Deltora-The-Gem-Guardians-2026-06-07]]`). Pure source.
 
-> **Provenance.** Web-verified 2026-06-07 (Deltora Quest Wiki, Wikipedia). ⚠️ Registry candidate. **[canon-per-series].** Paraphrased.
+> **Provenance.** Web-verified 2026-06-07 (Deltora Quest Wiki, Wikipedia). **[canon-per-series].** Paraphrased.
 
 ## Origin & geography
 - **[canon]** Once **Hira**, capital of **Opal territory** at the centre of Deltora in **Adin's** time. The Shadow Lord drove the people out with a **plague of rats**, leaving the ruined **City of the Rats**, bounded by the **Hira plains** (north) and the **River Broad** (south); the **North Bridge** over the Broad was destroyed.

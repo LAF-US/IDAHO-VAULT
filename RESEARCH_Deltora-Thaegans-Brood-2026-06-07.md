@@ -20,7 +20,7 @@ date: 2026-06-07
 
 > The thirteen monstrous children of the sorceress **[[RESEARCH_Deltora-Thaegan-2026-06-07\|Thaegan]]** — her instruments and, after her death, her avengers. Pure source.
 
-> **Provenance.** Web-verified 2026-06-07 (Deltora Quest Wiki, Wikipedia). ⚠️ Registry candidate. **[canon-per-series].** Paraphrased.
+> **Provenance.** Web-verified 2026-06-07 (Deltora Quest Wiki, Wikipedia). **[canon-per-series].** Paraphrased.
 
 ## What they are
 - **[canon]** **Thaegan's thirteen children** — **less powerful and less clever than their mother, but just as cruel**, monstrous in form, who will hunt, kill, and eat any victim they pursue.

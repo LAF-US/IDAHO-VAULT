@@ -20,7 +20,7 @@ date: 2026-06-07
 
 > The **first** of the seven guarded perils — hiding place of the **Topaz**, kept by **[[RESEARCH_Deltora-Gorl-2026-06-07\|Gorl]]**. One of seven (→ `[[RESEARCH_Deltora-The-Gem-Guardians-2026-06-07]]`). Pure source.
 
-> **Provenance.** Web-verified 2026-06-07 (Deltora Quest Wiki, Wikipedia). ⚠️ Registry candidate. **[canon-per-series].** Paraphrased.
+> **Provenance.** Web-verified 2026-06-07 (Deltora Quest Wiki, Wikipedia). **[canon-per-series].** Paraphrased.
 
 ## Geography
 - **[canon]** Three forests spanning **Topaz** and **Ruby** territory: **First Wood** (largest, wholly in Topaz territory; home of the **Wenn** and the **Wennbar**), **Mid Wood** (second largest, on the Topaz/Ralad border — its centre holds the **Lilies of Life**, whose nectar heals), and **End Wood** (smallest, in Ruby territory, the least dangerous).

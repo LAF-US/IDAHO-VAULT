@@ -20,7 +20,7 @@ date: 2026-06-07
 
 > The **second** guarded peril — hiding place of the **Ruby**, kept by **[[RESEARCH_Deltora-Soldeen-2026-06-07\|Soldeen]]**, made by the sorceress **[[RESEARCH_Deltora-Thaegan-2026-06-07\|Thaegan]]**. One of seven (→ `[[RESEARCH_Deltora-The-Gem-Guardians-2026-06-07]]`). Pure source.
 
-> **Provenance.** Web-verified 2026-06-07 (Deltora Quest Wiki, Wikipedia). ⚠️ Registry candidate. **[canon-per-series].** Paraphrased.
+> **Provenance.** Web-verified 2026-06-07 (Deltora Quest Wiki, Wikipedia). **[canon-per-series].** Paraphrased.
 
 ## Origin & geography
 - **[canon]** A foul, dangerous lake in Deltora's **north** — but once the beautiful city of **D'Or**. About a century ago **[[RESEARCH_Deltora-Thaegan-2026-06-07\|Thaegan]]** drowned the city into the lake, transforming its people into sea-creatures and stripping the **Ralads** of their voices.

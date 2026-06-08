@@ -20,7 +20,7 @@ date: 2026-06-07
 
 > Keeper of the **Amethyst** in the **Maze of the Beast** — and one of the few guardians never truly slain. One of seven (→ `[[RESEARCH_Deltora-The-Gem-Guardians-2026-06-07]]`). Pure source.
 
-> **Provenance.** Web-verified 2026-06-07 (Deltora Quest Wiki, Wikipedia). ⚠️ Registry candidate. **[canon-per-series].** Paraphrased.
+> **Provenance.** Web-verified 2026-06-07 (Deltora Quest Wiki, Wikipedia). **[canon-per-series].** Paraphrased.
 
 ## Appearance
 - **[canon]** A giant, **slug-like monster**: bloated **blue-white body** with glowing stripes, a **blood-red mouth full of teeth**, dozens of eyes, and a stumpy, **spike-tipped tail.**
