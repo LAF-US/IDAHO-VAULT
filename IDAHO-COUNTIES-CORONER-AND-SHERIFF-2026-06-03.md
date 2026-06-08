@@ -1,6 +1,6 @@
 ---
 title: "Idaho — Counties, and the Coroner & the Sheriff"
-updated: 2026-06-03
+updated: 2026-06-08
 status: active
 authority: LOGAN
 doc_class: reference
@@ -36,9 +36,11 @@ The two county officers were **designed as a counterweight**, not a redundancy:
   ([Wikipedia: Coroner](https://en.wikipedia.org/wiki/Coroner))
 - **America.** Coroners were **elected in all thirteen original colonies**, and as
   states and territories formed, the coroner became an **elected county officer
-  comparable to the sheriff** — *"with whom they often traded places."* In **Georgia
-  and Colorado** the coroner can even **arrest the county sheriff**, and acts as
-  sheriff where there is none. ([Wikipedia: Coroner](https://en.wikipedia.org/wiki/Coroner))
+  comparable to the sheriff** — *"with whom they often traded places."* The power to
+  **arrest the county sheriff** is no foreign curiosity: **Georgia and Colorado** carry
+  it expressly — **and so does Idaho**, by its own statute since **1863** (see §5,
+  §§ 31-2217/2220), older than the State itself.
+  ([Wikipedia: Coroner](https://en.wikipedia.org/wiki/Coroner))
 
 The clean division, in one line:
 
@@ -146,24 +148,42 @@ office that may be **implicated** in it — which is why the separation bites ha
 for **in-custody and officer-involved deaths**, and why § 31-2806 (next) is its sharp
 edge. *(Exact practice varies county to county; stated at the structural level.)*
 
-## 5. The living counterweight — Idaho Code §§ 31-2806 & 31-2807 **[statute]**
+## 5. The living counterweight — Idaho Code §§ 31-2217, 31-2218, 31-2220, 31-2806, 31-2807 **[statute]**
 
-The 1194 design is **still on the books in Idaho**, split across two sections. Under
-**§ 31-2806, "Coroner to Act as Substitute for Sheriff,"** when the **sheriff
-*declares himself* disqualified** by a conflict of interest (a party to, or interested
-in, a proceeding) — *the sheriff's declaration is the trigger, not the conflict alone* —
-the **coroner performs the sheriff's duties.** And under **§ 31-2807**,
-**while so acting** the coroner **possesses the sheriff's powers, is liable on his
-official bond** as a sheriff would be, and is **entitled to the same fees.**
-([Idaho Legislature § 31-2806](https://legislature.idaho.gov/statutesrules/idstat/title31/t31ch28/sect31-2806/) ·
-[Idaho Legislature § 31-2807](https://legislature.idaho.gov/statutesrules/idstat/title31/t31ch28/sect31-2807/))
+The 1194 design is **still on the books in Idaho**, on **two distinct tracks** — and the
+sharper one (the arrest power) was **missed in this file's first draft**, which credited
+it only to Georgia and Colorado. Correcting that:
 
-**A precise nuance, kept honest:** this is the **conflict-of-interest substitution**,
-not a general succession. A vacancy by **death, absence, or resignation** of the
-sheriff is filled by the **senior deputy sheriff**, *not* the coroner. So § 31-2806 is
-the **narrow, surgical descendant** of *"if the sheriff is interested… the coroner
-executes the process"* — the counterweight fires **exactly when the powerful officer
-is compromised, and only then.**
+**Track A — the coroner executes process against, and arrests, the sheriff (§ 31-2217).**
+In **Title 31, Ch. 22 (Sheriff)**, enacted **1863, before statehood**, Idaho provides:
+*"When the sheriff is a party to an action or proceeding, the process and orders therein,
+which it would otherwise be the duty of the sheriff to execute, must be executed by the
+**coroner** of the county."* (**§ 31-2217**.) That is the literal answer to *"who can
+arrest the sheriff?"* — **the coroner**, as the officer who serves and executes the
+court's process when the sheriff cannot, because the sheriff is the subject. **§ 31-2220**
+keeps it from being a paper power: a sheriff **arrested by the coroner** may **not** be
+confined in **his own jail.** And **§ 31-2218** is the backstop — where neither sheriff nor
+coroner can act, the court appoints an **elisor.**
+([§ 31-2217](https://legislature.idaho.gov/statutesrules/idstat/title31/t31ch22/sect31-2217/) ·
+[§ 31-2218](https://legislature.idaho.gov/statutesrules/idstat/title31/t31ch22/sect31-2218/) ·
+[§ 31-2220](https://legislature.idaho.gov/statutesrules/idstat/title31/t31ch22/sect31-2220/) ·
+[Coeur d'Alene Press (2022)](https://cdapress.com/news/2022/feb/01/who-can-arrest-sheriff-coroner/))
+
+**Track B — the coroner stands in as substitute sheriff (§§ 31-2806–2807).** Under
+**§ 31-2806, "Coroner to Act as Substitute for Sheriff,"** when the **sheriff *declares
+himself* disqualified** by a conflict of interest — *the declaration is the trigger, not
+the conflict alone* — the **coroner performs the sheriff's duties**; and under **§ 31-2807**,
+**while so acting** the coroner **possesses the sheriff's powers, is liable on the official
+bond**, and **takes the same fees.**
+([§ 31-2806](https://legislature.idaho.gov/statutesrules/idstat/title31/t31ch28/sect31-2806/) ·
+[§ 31-2807](https://legislature.idaho.gov/statutesrules/idstat/title31/t31ch28/sect31-2807/))
+
+**The line that keeps it honest — under the court, not freelance.** Track A is **not** the
+coroner freelancing an arrest; it is the coroner **executing the *court's* process** when
+the sheriff is the party. And neither track is general succession: a vacancy by **death,
+absence, or resignation** is filled by the **senior deputy sheriff**, not the coroner. So
+the counterweight fires **exactly when the powerful officer is the one in the dock — and
+only then.**
 
 ## 6. What this gives the vault office — **[vault reading]**
 
@@ -233,6 +253,10 @@ Execute; do not reign.**
 [Idaho Legislature — 2025 S1101 (Coroners; repealed § 31-2809, amended § 31-3107)](https://legislature.idaho.gov/sessioninfo/2025/legislation/s1101/) ·
 [Idaho Legislature — § 31-2806](https://legislature.idaho.gov/statutesrules/idstat/title31/t31ch28/sect31-2806/) ·
 [Idaho Legislature — § 31-2807 (powers/bond/fees while acting as sheriff)](https://legislature.idaho.gov/statutesrules/idstat/title31/t31ch28/sect31-2807/) ·
+[Idaho Legislature — § 31-2217 (coroner executes process when sheriff is a party)](https://legislature.idaho.gov/statutesrules/idstat/title31/t31ch22/sect31-2217/) ·
+[Idaho Legislature — § 31-2218 (elisor)](https://legislature.idaho.gov/statutesrules/idstat/title31/t31ch22/sect31-2218/) ·
+[Idaho Legislature — § 31-2220 (sheriff arrested by coroner not held in own jail)](https://legislature.idaho.gov/statutesrules/idstat/title31/t31ch22/sect31-2220/) ·
+[Coeur d'Alene Press — "Who can arrest a sheriff? The coroner" (2022-02-01)](https://cdapress.com/news/2022/feb/01/who-can-arrest-sheriff-coroner/) ·
 [Idaho Legislature — § 19-6008 (State Public Defender; counties released 10/1/2024)](https://legislature.idaho.gov/statutesrules/idstat/title19/t19ch60/sect19-6008/) ·
 [Idaho Const. — Art. XVIII (optional forms, §12)](https://legislature.idaho.gov/statutesrules/idconst/ArtXVIII/) ·
 [LawServer — Idaho Code 31-2806](https://www.lawserver.com/law/state/idaho/id-code/idaho_code_31-2806) ·
@@ -242,7 +266,7 @@ Execute; do not reign.**
 ## DOCUMENT METADATA
 
 - **Created:** 2026-06-03
-- **Last Updated:** 2026-06-03
+- **Last Updated:** 2026-06-08
 - **Status:** active
 - **Authority:** LOGAN
 
