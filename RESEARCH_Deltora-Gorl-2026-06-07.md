@@ -19,7 +19,7 @@ date: 2026-06-07
 
 > The first Gem Guardian — keeper of the **Topaz** in the **Forests of Silence**. One of seven (→ `[[RESEARCH_Deltora-The-Gem-Guardians-2026-06-07]]`). Pure source.
 
-> **Provenance.** Web-verified 2026-06-07 (Deltora Quest Wiki, Wikipedia). ⚠️ *Deltora Quest* is a `[[FANDOM-CANON-RULESYSTEMS-2026-05-03]]` candidate. **[canon-per-series].** Paraphrased.
+> **Provenance.** Web-verified 2026-06-07 (Deltora Quest Wiki, Wikipedia). **[canon-per-series].** Paraphrased.
 
 ## Identity & origin
 - **[canon]** A former **Jalis** knight in **golden battle armour**. He came to the Forests of Silence with two brothers, **Greddock** and **Gudden**, to seize the **Lilies of Life** — whose nectar grants **eternal life**.

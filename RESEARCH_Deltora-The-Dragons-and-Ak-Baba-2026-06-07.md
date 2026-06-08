@@ -22,7 +22,7 @@ date: 2026-06-07
 
 > Deltora's natural guardians and the Shadow Lord's hunters — another sevenfold body, set against seven of his bred birds. Pure source.
 
-> **Provenance.** Web-verified 2026-06-07 (Deltora Quest Wiki, Wikipedia). ⚠️ Registry candidate. **[canon-per-series].** Paraphrased.
+> **Provenance.** Web-verified 2026-06-07 (Deltora Quest Wiki, Wikipedia). **[canon-per-series].** Paraphrased.
 
 ## The seven dragons
 - **[canon]** Deltora's seven **gem territories** each hold their own **dragon breed**, with **eyes and upper scales matching that territory's gem** (and pale undersides that shift to match the sky). They are the land's **natural guardians**, and their ranges mirror the ancient **tribal/gem boundaries** (→ `[[RESEARCH_Deltora-The-Seven-Tribes-and-their-Lands-2026-06-04]]`): Topaz, Ruby, Opal, Lapis Lazuli, Emerald, Amethyst, and Diamond dragons.

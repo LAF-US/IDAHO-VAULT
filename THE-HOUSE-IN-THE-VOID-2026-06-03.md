@@ -14,7 +14,6 @@ related:
   - "[[!/LICH-PROBLEM-v1-2026-05-20]]"
   - "[[!/THRESHOLD-DOCTRINE-v1-2026-05-21]]"
   - "[[!/OZ-COSMOLOGY-DOCTRINE-v1-2026-05-21]]"
-  - "[[FANDOM-CANON-RULESYSTEMS-2026-05-03]]"
   - The Abhorsen
 date: 2026-06-03
 ---
@@ -23,7 +22,7 @@ date: 2026-06-03
 
 > A recurring cosmological figure across the vault's systems: an **ordered, hierarchical, *bureaucratic* cosmos — the House — radiating from a sovereign center, administered by ministers who read and run its rules, and suspended in (and made from) the primordial Void.** The drama is always the same: the House holds the void back, the void seeps in, a minister hoards the record, the center is usurped, and a rightful heir restores the order.
 
-> **Provenance.** *Keys to the Kingdom* (Nix) and *Hades / Hades II* (Supergiant) **verified by web research 2026-06-03; Hades II re-verified 2026-06-04** (Keys via search extracts, 403s). **Correction:** an earlier draft tagged *Hades II* as "early-access" — that is now **stale**. *Hades II* **left early access at its 1.0 full release on 25 Sept 2025** (PC, Switch, Switch 2), reaching **PS5 / Xbox Series X\|S in April 2026** — so its story is **complete and canonical**, not provisional (⚠️ one source variant lists the 1.0 date as 29 Sept; 25 Sept is the more widely reported). ASOIAF grounded in the linked nodes; `EMANATIONISM` and `LICH-PROBLEM` read. **⚠️ Repair (2026-06-08):** the vault already holds **`[[!/OZ-COSMOLOGY-DOCTRINE-v1-2026-05-21]]`** (a full Oz doctrine) and **stub Hades/Persephone chambers** (`.hades/HADES.md`, `.persephone/PERSEPHONE.md`); the original draft built its Oz and Hades passages from the web *without consulting them* — now linked, and the **canonical Oz treatment lives in that doctrine, not here.** For the record: `FANDOM-CANON-RULESYSTEMS` is a rulesystem registry of six canons (Bartimaeus, Snicket, Children of the Lamp, Old Kingdom, Skulduggery, Avatar); *Keys to the Kingdom* and *Deltora* are **not catalogued in it**, Oz is established vault **doctrine**, and Hades is a **stub chamber**. Tiers: **[canon-per-system]**, **[reading]**. Paraphrased; no source text reproduced.
+> **Provenance.** *Keys to the Kingdom* (Nix) and *Hades / Hades II* (Supergiant) **verified by web research 2026-06-03; Hades II re-verified 2026-06-04** (Keys via search extracts, 403s). **Correction:** an earlier draft tagged *Hades II* as "early-access" — that is now **stale**. *Hades II* **left early access at its 1.0 full release on 25 Sept 2025** (PC, Switch, Switch 2), reaching **PS5 / Xbox Series X\|S in April 2026** — so its story is **complete and canonical**, not provisional (⚠️ one source variant lists the 1.0 date as 29 Sept; 25 Sept is the more widely reported). ASOIAF grounded in the linked nodes; `EMANATIONISM` and `LICH-PROBLEM` read. **⚠️ Repair (2026-06-08):** the vault already holds **`[[!/OZ-COSMOLOGY-DOCTRINE-v1-2026-05-21]]`** (a full Oz doctrine) and **stub Hades/Persephone chambers** (`.hades/HADES.md`, `.persephone/PERSEPHONE.md`); the original draft built its Oz and Hades passages from the web *without consulting them* — now linked, and the **canonical Oz treatment lives in that doctrine, not here.** Oz is established vault **doctrine**; Hades is a **stub chamber**. Tiers: **[canon-per-system]**, **[reading]**. Paraphrased; no source text reproduced.
 
 ## The two poles
 

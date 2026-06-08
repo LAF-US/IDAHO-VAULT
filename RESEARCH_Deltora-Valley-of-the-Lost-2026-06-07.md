@@ -21,7 +21,7 @@ date: 2026-06-07
 
 > The **seventh and last** guarded peril — hiding place of the **Diamond**, kept by **[[RESEARCH_Deltora-The-Guardian-Fardeep-2026-06-07\|the Guardian]]** (Fardeep). One of seven (→ `[[RESEARCH_Deltora-The-Gem-Guardians-2026-06-07]]`). Pure source.
 
-> **Provenance.** Web-verified 2026-06-07 (Deltora Quest Wiki, Wikipedia). ⚠️ Registry candidate. **[canon-per-series].** Paraphrased.
+> **Provenance.** Web-verified 2026-06-07 (Deltora Quest Wiki, Wikipedia). **[canon-per-series].** Paraphrased.
 
 ## Origin & geography
 - **[canon]** A valley in **Diamond territory**, once **Haven Vale**. The Shadow Lord's magic laid over it a **perpetual, poisonous mist** that **erodes the memory and identity** of all who enter and drove off every living animal.

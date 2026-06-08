@@ -20,7 +20,7 @@ date: 2026-06-07
 
 > One of the Shadow Lord's most powerful servants — the sorceress who drowned a city and bound the Guardian **[[RESEARCH_Deltora-Soldeen-2026-06-07\|Soldeen]]**. Mother of the **[[RESEARCH_Deltora-Thaegans-Brood-2026-06-07\|brood]]**. Pure source.
 
-> **Provenance.** Web-verified 2026-06-07 (Deltora Quest Wiki, Wikipedia). ⚠️ *Deltora Quest* is a `[[FANDOM-CANON-RULESYSTEMS-2026-05-03]]` candidate. **[canon-per-series].** Paraphrased.
+> **Provenance.** Web-verified 2026-06-07 (Deltora Quest Wiki, Wikipedia). **[canon-per-series].** Paraphrased.
 
 ## Identity & allegiance
 - **[canon]** A sorceress in the service of the **Shadow Lord**, who **increased her magical power tenfold.** Infamous above all for her **curses**, "limited only by the sorceress's imagination and cruelty."

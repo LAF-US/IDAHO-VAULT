@@ -21,7 +21,7 @@ date: 2026-06-07
 
 > A buried fable and the slow-poison engines named after it — the spine of *Dragons of Deltora*. Pure source.
 
-> **Provenance.** Web-verified 2026-06-07 (Deltora Quest Wiki, Wikipedia). ⚠️ Registry candidate. **[canon-per-series].** Paraphrased.
+> **Provenance.** Web-verified 2026-06-07 (Deltora Quest Wiki, Wikipedia). **[canon-per-series].** Paraphrased.
 
 ## The original Sisters (the fable)
 - **[canon / Architect's note]** While **sailing** in exile, **[[RESEARCH_Deltora-The-Shadow-Lord-2026-06-07\|Malverlain]]** **came upon an island** where **four sisters sang.** Their song, unknown to him, **soothed and sealed a great beast** in the land's heart. Hating the singing, he imprisoned and **killed the original Sisters** — and so **released the beast**: it rose, crushed the island's guardians, and sank the isle, forcing Malverlain to flee into the **Silver Sea.**

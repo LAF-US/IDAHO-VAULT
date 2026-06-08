@@ -20,7 +20,7 @@ date: 2026-06-07
 
 > The **fourth** guarded peril — hiding place of the **Lapis Lazuli**, kept by **[[RESEARCH_Deltora-The-Hive-2026-06-07\|the Hive]]**. One of seven (→ `[[RESEARCH_Deltora-The-Gem-Guardians-2026-06-07]]`). Pure source.
 
-> **Provenance.** Web-verified 2026-06-07 (Deltora Quest Wiki, Wikipedia). ⚠️ Registry candidate. **[canon-per-series].** Paraphrased.
+> **Provenance.** Web-verified 2026-06-07 (Deltora Quest Wiki, Wikipedia). **[canon-per-series].** Paraphrased.
 
 ## Geography
 - **[canon]** A vast, restless desert in the **upper reaches of Lapis Lazuli territory**, west of the **Rithmere Road**. The "sands" are not truly sand: the whole expanse **is** the **[[RESEARCH_Deltora-The-Hive-2026-06-07\|Hive]]**, a colony of microscopic creatures so great it reads as a desert.
