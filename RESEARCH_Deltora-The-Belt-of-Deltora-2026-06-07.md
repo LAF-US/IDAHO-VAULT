@@ -21,7 +21,7 @@ date: 2026-06-07
 
 > Deltora's great talisman — and the **conditions** under which its power actually works. Pure source.
 
-> **Provenance.** Web-verified 2026-06-07 (Deltora Quest Wiki, Wikipedia). ⚠️ Registry candidate. **[canon-per-series].** Paraphrased.
+> **Provenance.** Web-verified 2026-06-07 (Deltora Quest Wiki, Wikipedia). **[canon-per-series].** Paraphrased.
 
 ## What it is
 - **[canon]** **Seven steel medallions** joined by fine chains, each set with one of the seven tribal **gems** (→ `[[RESEARCH_Deltora-The-Seven-Tribes-and-their-Lands-2026-06-04]]`). Forged by the blacksmith **Adin**, who gathered the gems and united the tribes. With each gem added, the Belt grows **stronger**; in the right order the gems' initials spell **DELTORA** (Diamond, Emerald, Lapis Lazuli, Topaz, Opal, Ruby, Amethyst).

@@ -19,7 +19,7 @@ date: 2026-06-07
 
 > Keeper of the **Emerald** on **Dread Mountain**, tyrant of the **Dread Gnomes**. One of seven (→ `[[RESEARCH_Deltora-The-Gem-Guardians-2026-06-07]]`). Pure source.
 
-> **Provenance.** Web-verified 2026-06-07 (Deltora Quest Wiki, Wikipedia). ⚠️ Registry candidate. **[canon-per-series].** Paraphrased.
+> **Provenance.** Web-verified 2026-06-07 (Deltora Quest Wiki, Wikipedia). **[canon-per-series].** Paraphrased.
 
 ## Identity & nature
 - **[canon]** A vast **Ooze Toad** that secretes a **poisonous slime** — and is **immune to his own poison.**

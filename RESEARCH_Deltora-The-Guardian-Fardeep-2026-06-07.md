@@ -20,7 +20,7 @@ date: 2026-06-07
 
 > Keeper of the last gem, the **Diamond**, in the **Valley of the Lost** — a cursed man bound to his own vices. One of seven (→ `[[RESEARCH_Deltora-The-Gem-Guardians-2026-06-07]]`). Pure source.
 
-> **Provenance.** Web-verified 2026-06-07 (Deltora Quest Wiki, Wikipedia). ⚠️ Registry candidate. **[canon-per-series].** Paraphrased.
+> **Provenance.** Web-verified 2026-06-07 (Deltora Quest Wiki, Wikipedia). **[canon-per-series].** Paraphrased.
 
 ## Identity & origin
 - **[canon]** Once **Fardeep**, owner of the **Champion Inn at Rithmere.** The **Shadow Lord** transformed him into the **Guardian** of the Diamond and **cursed him to pose as King Endon** — so that would-be resisters who found him would believe the king had **joined the Shadow Lord** and despair.

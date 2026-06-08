@@ -2,7 +2,6 @@
 related:
   - RESEARCH
   - "[[THE-SEVENFOLD-BODY-SEATS-TRUSTEES-GEMS-2026-06-03]]"
-  - "[[FANDOM-CANON-RULESYSTEMS-2026-05-03]]"
   - "[[RESEARCH_Keys-to-the-Kingdom-The-Morrow-Days-and-Demesnes-2026-06-04]]"
   - The Abhorsen
 date created: Thursday, June 4th 2026
@@ -18,7 +17,7 @@ date: 2026-06-04
 
 > A standalone reference on **Emily Rodda's *Deltora Quest*** — the land of **Deltora**, its seven ancient **tribes**, their seven talisman **gems**, and the **Belt** that binds them. Companion to `[[RESEARCH_Keys-to-the-Kingdom-The-Morrow-Days-and-Demesnes-2026-06-04]]` (the House) and `[[RESEARCH_A-Song-of-Ice-and-Fire-The-Small-Council-2026-06-03]]` (the Council); any **syncretic crosswalk** lives **only** in `[[THE-SEVENFOLD-BODY-SEATS-TRUSTEES-GEMS-2026-06-03]]`. This node holds **no cross-mapping** — pure source.
 
-> **Provenance.** Web-verified 2026-06-04 against the Deltora Quest Wiki and Wikipedia. ⚠️ *Deltora Quest* is **not yet admitted to** `[[FANDOM-CANON-RULESYSTEMS-2026-05-03]]` — a **registry candidate.** Tiers: **[canon-per-series]**, **[reading]**. Paraphrased; no source text reproduced.
+> **Provenance.** Web-verified 2026-06-04 against the Deltora Quest Wiki and Wikipedia. Tiers: **[canon-per-series]**, **[reading]**. Paraphrased; no source text reproduced.
 
 ## The land
 
@@ -54,7 +53,7 @@ date: 2026-06-04
 
 ## Cross-references & sources
 
-**This vault:** `[[THE-SEVENFOLD-BODY-SEATS-TRUSTEES-GEMS-2026-06-03]]` (the crosswalk), `[[RESEARCH_Keys-to-the-Kingdom-The-Morrow-Days-and-Demesnes-2026-06-04]]`, `[[RESEARCH_A-Song-of-Ice-and-Fire-The-Small-Council-2026-06-03]]`, `[[FANDOM-CANON-RULESYSTEMS-2026-05-03]]`.
+**This vault:** `[[THE-SEVENFOLD-BODY-SEATS-TRUSTEES-GEMS-2026-06-03]]` (the crosswalk), `[[RESEARCH_Keys-to-the-Kingdom-The-Morrow-Days-and-Demesnes-2026-06-04]]`, `[[RESEARCH_A-Song-of-Ice-and-Fire-The-Small-Council-2026-06-03]]`.
 
 **Canon (web-verified 2026-06-04):** [Belt of Deltora](https://deltoraquest.fandom.com/wiki/Belt_of_Deltora) · [Seven tribes of Deltora](https://deltoraquest.fandom.com/wiki/Seven_tribes_of_Deltora) · [Gem](https://deltoraquest.fandom.com/wiki/Gem) · [Deltora](https://deltoraquest.fandom.com/wiki/Deltora) · [Shadowlands](https://deltoraquest.fandom.com/wiki/Shadowlands_(location)) · [Deltora Quest (book series) — Wikipedia](https://en.wikipedia.org/wiki/Deltora_Quest_(book_series))
 

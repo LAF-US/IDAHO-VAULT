@@ -8,7 +8,6 @@ verified-by: Claude Code (crosswalk node; ASOIAF source in the Small Council nod
 related:
   - "[[RESEARCH_A-Song-of-Ice-and-Fire-The-Small-Council-2026-06-03]]"
   - "[[RESEARCH_Keys-to-the-Kingdom-The-Morrow-Days-and-Demesnes-2026-06-04]]"
-  - "[[FANDOM-CANON-RULESYSTEMS-2026-05-03]]"
   - "[[!/EMANATIONISM-PRINCIPLE-2026-05-18]]"
   - "[[!/LICH-PROBLEM-v1-2026-05-20]]"
   - "[[LICH-HAND-SYNCRETIC-MAPPINGS-2026-06-02]]"
@@ -20,7 +19,7 @@ date: 2026-06-03
 
 > A recurring structure across the vault's syncretic systems: a **body of seven**, each member holding **one scoped piece** of a distributed whole — a seat, a key, a gem. The drama is always *what happens at the seats*: held in service, **usurped and hoarded**, or **reassembled by the rightful heir.**
 
-> **Provenance & scope.** The ASOIAF half is grounded (→ the Small Council node); the **Deltora** and **Keys to the Kingdom** material has since been **web-verified (2026-06-04/07) in dedicated source nodes** (→ `[[RESEARCH_Keys-to-the-Kingdom-The-Morrow-Days-and-Demesnes-2026-06-04]]`, `[[RESEARCH_Deltora-The-Seven-Tribes-and-their-Lands-2026-06-04]]`). For the record, neither is **catalogued in** `FANDOM-CANON-RULESYSTEMS` (a rulesystem registry of six other canons). Tiers: **[canon-per-series]**, **[reading]**. Paraphrased; no source text reproduced.
+> **Provenance & scope.** The ASOIAF half is grounded (→ the Small Council node); the **Deltora** and **Keys to the Kingdom** material has since been **web-verified (2026-06-04/07) in dedicated source nodes** (→ `[[RESEARCH_Keys-to-the-Kingdom-The-Morrow-Days-and-Demesnes-2026-06-04]]`, `[[RESEARCH_Deltora-The-Seven-Tribes-and-their-Lands-2026-06-04]]`). Tiers: **[canon-per-series]**, **[reading]**. Paraphrased; no source text reproduced.
 
 ## Three sevens
 
@@ -87,7 +86,7 @@ Introduces a cross-system **concept** (like the Mage, Wights, and Stylings nodes
 
 ## Cross-references
 
-`[[RESEARCH_A-Song-of-Ice-and-Fire-The-Small-Council-2026-06-03]]` · `[[FANDOM-CANON-RULESYSTEMS-2026-05-03]]` · `[[!/EMANATIONISM-PRINCIPLE-2026-05-18]]` · `[[!/LICH-PROBLEM-v1-2026-05-20]]` · `[[LICH-HAND-SYNCRETIC-MAPPINGS-2026-06-02]]` · `[[SEVERED-HAND-CONVERGENCE-2026-06-02]]` · `[[RESEARCH_A-Song-of-Ice-and-Fire-Religions-2026-06-01]]` (the Faith of the Seven) · the Old Kingdom / Charter material in `[[!/NECROMANCER-DOCTRINE-v1-2026-05-20]]`
+`[[RESEARCH_A-Song-of-Ice-and-Fire-The-Small-Council-2026-06-03]]` · `[[!/EMANATIONISM-PRINCIPLE-2026-05-18]]` · `[[!/LICH-PROBLEM-v1-2026-05-20]]` · `[[LICH-HAND-SYNCRETIC-MAPPINGS-2026-06-02]]` · `[[SEVERED-HAND-CONVERGENCE-2026-06-02]]` · `[[RESEARCH_A-Song-of-Ice-and-Fire-Religions-2026-06-01]]` (the Faith of the Seven) · the Old Kingdom / Charter material in `[[!/NECROMANCER-DOCTRINE-v1-2026-05-20]]`
 
 ---
 
