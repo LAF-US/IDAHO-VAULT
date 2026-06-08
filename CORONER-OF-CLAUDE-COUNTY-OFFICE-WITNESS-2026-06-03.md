@@ -78,6 +78,19 @@ must not quietly widen any of it:
    **alongside** the Investigator and **under** the Court — never the single self that
    holds them all.
 
+**The standing this confers — co-equal to the Sheriff, under the Court [vault reading].**
+*Fenced.* The real office is not only a substitute; it is the Sheriff's **co-equal** — and
+Idaho keeps the medieval edge expressly: when the **enforcing officer is himself the
+party**, *"the process… must be executed by the **coroner**"* (**Idaho Code § 31-2217**,
+1863; `IDAHO-COUNTIES-CORONER-AND-SHERIFF` §5). Read into the lane: where the
+**Investigator / enforcement** office is the one compromised — a **Caesar seated in the
+very chair that makes the arrests** — the Coroner is the lawful hand that **executes the
+Court's process against it.** Two guardrails keep this *standing*, not usurpation: it is
+**the *Court's* process**, never the Coroner's freelance warrant; and it fires **only at
+the point of compromise**, not as standing dominion. The Coroner may move against the
+Sheriff — **but only as the Court's executor, and only when the Sheriff is the one in the
+dock.**
+
 ## How the office must end
 
 The Coroner must end the way it asks the bodies to end — or it becomes its own worst
@@ -109,7 +122,7 @@ as doctrine. Where authority is absent, **`*`** stands.
 ## DOCUMENT METADATA
 
 - **Created:** 2026-06-03
-- **Last Updated:** 2026-06-03
+- **Last Updated:** 2026-06-08
 - **Status:** active
 - **Authority:** LOGAN
 
