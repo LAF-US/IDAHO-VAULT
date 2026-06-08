@@ -1,0 +1,18 @@
+name: Main Ruleset
+
+description: Primary repository rules for IDAHO-VAULT
+
+target: branch
+
+enforcement: active
+
+conditions:
+  ref_name:
+    include: ["main"]
+    exclude: []
+
+rules:
+  - type: pull_request
+    name: Prevent stale review dismissal
+    parameters:
+      dismiss_stale_reviews_on_push: false
