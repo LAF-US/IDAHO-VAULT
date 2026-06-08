@@ -1,6 +1,7 @@
 ---
 title: "Naming as Binding v1"
 date created: 2026-06-07
+updated: 2026-06-07
 authority: LOGAN
 status: draft
 doc_class: doctrine
