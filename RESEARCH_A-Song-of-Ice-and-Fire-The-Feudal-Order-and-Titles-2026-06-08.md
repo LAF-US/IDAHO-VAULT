@@ -57,6 +57,16 @@ date: 2026-06-08
 
 **[canon]** A **Lord Paramount** is the crown's chief lord over a whole region (the title formalized as Aegon's Conquest folded the seven kingdoms into one realm → `[[RESEARCH_A-Song-of-Ice-and-Fire-Aegons-Conquest-2026-06-02]]`). Distinct from it is a **military** command title — **Warden of the North / South / East / West** — usually held by the great lords. *(⚠️ Exact Warden-to-House assignments not re-verified in this pass.)*
 
+## How the seats were won — fire, knee, and marriage
+
+**[canon]** The Lords Paramount hold seats won three different ways in **Aegon's Conquest** (and after):
+
+- **Broken by fire / sword (the old royal house ended):** the **Durrandons** of the Stormlands (King Argilac slain by **Orys Baratheon** at the **Last Storm**), the **Hoares** of the Isles & Rivers (**Harren the Black** burned in **Harrenhal**), and the **Gardeners** of the Reach (**Mern IX** burned at the **Field of Fire**, the line extinguished — their **steward, House Tyrell**, surrendered Highgarden and was raised over closer Gardener kin). New houses were set in their place: **Baratheon, Tully, Tyrell**.
+- **Bent the knee (the house survived by submission):** the **Lannisters** of the West (**Loren I** fled the Field of Fire and knelt), the **Arryns** of the Vale (the boy-king **Ronnel** yielded when **Visenya** landed Vhagar at the Eyrie), and the **Starks** of the North — **Torrhen, "the King Who Knelt,"** who bent the knee at the Trident rather than see the North burn. *(The North's crown flickered back once: **Robb Stark** was acclaimed **King in the North** in the War of the Five Kings — ended at the **Red Wedding**.)*
+- **Wed in (joined by consent, late, on its own terms):** **Dorne** alone resisted the dragons and stayed free ~165 years, until the **double marriage of 187 AC** (Daeron II ↔ **Myriah Martell**; **Maron Martell** ↔ Daenerys Targaryen) brought it in. Its price: Dorne keeps the **royal style** (ruled by a **Prince**, not a Lord Paramount), its **own (Rhoynar) laws**, and the right to **assess and collect its own taxes** — privileges no conquered kingdom holds.
+
+**[reading]** So the seven came in as **three broken, three bent, one wed**: force ended three royal lines and cowed three more into kneeling, but the one realm force could *not* take (Dorne) entered by **marriage and kept its crown**. What could be conquered was conquered; what could only be consented had to be **paid for**.
+
 ## Fealty & bannermen
 
 **[canon]** The bond is the **oath**: a vassal swears **fealty** to his **liege lord**, owing **counsel, arms, and men**; the liege owes **protection and justice**. When a lord "**calls his banners**," his **bannermen** muster their sworn swords to his host. Loyalty is personal and chained — a man may owe a vassal-lord who in turn owes a Great House who owes the king.
@@ -69,7 +79,7 @@ date: 2026-06-08
 
 **This vault:** `[[RESEARCH_Noble-Titles-and-Feudal-Hierarchy-2026-06-08]]` (real-world companion), `[[RESEARCH_A-Song-of-Ice-and-Fire-Geography-and-Politics-2026-06-01]]`, `[[RESEARCH_A-Song-of-Ice-and-Fire-Aegons-Conquest-2026-06-02]]`, `[[RESEARCH_A-Song-of-Ice-and-Fire-The-Small-Council-2026-06-03]]`.
 
-**Canon (web-verified 2026-06-08):** [Lord — A Wiki of Ice and Fire](https://awoiaf.westeros.org/index.php/Lord) · [Lord — Wiki of Westeros](https://gameofthrones.fandom.com/wiki/Lord) · [King of the Andals, the Rhoynar, and the First Men](https://awoiaf.westeros.org/index.php/King_of_the_Andals,_the_Rhoynar,_and_the_First_Men) · [Lord of the Seven Kingdoms](https://awoiaf.westeros.org/index.php/Lord_of_the_Seven_Kingdoms)
+**Canon (web-verified 2026-06-08):** [Lord — A Wiki of Ice and Fire](https://awoiaf.westeros.org/index.php/Lord) · [Lord — Wiki of Westeros](https://gameofthrones.fandom.com/wiki/Lord) · [King of the Andals, the Rhoynar, and the First Men](https://awoiaf.westeros.org/index.php/King_of_the_Andals,_the_Rhoynar,_and_the_First_Men) · [Lord of the Seven Kingdoms](https://awoiaf.westeros.org/index.php/Lord_of_the_Seven_Kingdoms) · [Aegon's Conquest](https://awoiaf.westeros.org/index.php/Aegon%27s_Conquest) · [Torrhen Stark](https://awoiaf.westeros.org/index.php/Torrhen_Stark) · [House Gardener](https://awoiaf.westeros.org/index.php/House_Gardener) · [Daeron II Targaryen](https://awoiaf.westeros.org/index.php/Daeron_II_Targaryen)
 
 ---
 
