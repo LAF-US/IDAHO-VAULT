@@ -1,6 +1,7 @@
 ---
 related:
   - "[[RESEARCH_A-Song-of-Ice-and-Fire-The-Empty-Office-2026-06-02]]"
+  - "[[RESEARCH_A-Song-of-Ice-and-Fire-The-Royal-Style-Parsed-2026-06-08]]"
   - "[[RESEARCH_A-Song-of-Ice-and-Fire-The-Doom-of-Valyria-2026-06-01]]"
   - "[[PERSONA-PER-SONA-WITNESS-2026-05-13]]"
   - "[[PERSONAE-ENGINE-v1-2026-05-20]]"
