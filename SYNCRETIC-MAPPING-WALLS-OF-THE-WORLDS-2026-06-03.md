@@ -8,10 +8,19 @@ authors:
 source: chat
 related:
   - "2026-06-03"
+  - "2026-06-09"
   - RESEARCH_Icemark-Chronicles-2026-06-03
   - RESEARCH_Icemark-Lore-Compendium-2026-06-03
+  - TREATY-MAKING-A-READING-2026-06-08
+  - SUBLATION-A-READING-2026-06-08
+  - WITNESS-CUB-ON-THE-NORTH-2026-06-09
+  - WITNESS-CUB-ON-THE-IMPERIUM-2026-06-09
+  - ICEMARK-RACES-AND-TREATMENTS-2026-06-09
+  - HUB-OF-THE-WORLD-AND-THE-SNOW-LEOPARDS-2026-06-09
   - Stuart Hill
   - Garth Nix
+  - George R. R. Martin
+  - Frank Herbert
   - "Abhorsen"
 tags:
   - research/cosmography
@@ -226,6 +235,18 @@ Across the corpus, the structural order of priority is:
 The Abhorsen sits at layer 4 of 5, operating layer-3 artifacts (Bells, the Wall) built by a peer-bloodline (Wallmakers) at layer 2, all authorized by the Charter at layer 1. The apex is not the Bell-Ringer. The apex is the principle, expressed through the built boundary, that the custodial bloodlines all serve.
 
 This is the load-bearing correction. The cosmologies that survive their epochs are the ones that get the layering right — that name the principle, honor the builders' cost, treat the artifact as the load-bearing object, and staff the offices in service of all three.
+
+---
+
+## VIII-bis. The memorial boundary (2026-06-09 addendum)
+
+The 2026-06-09 thread on Westeros — filed as [[WITNESS-CUB-ON-THE-NORTH-2026-06-09]] — surfaced a structural feature this map under-treated in its 2026-06-03 first pass. Brandon the Builder's Wall is the *physical* built boundary, sworn to by the Night's Watch and operated as the conditional gate at Castle Black. But Westeros's North runs a *second* boundary in parallel — a **memorial** one. *"The North remembers"* is liturgical accuracy, not slogan: the Old Gods are gods of memory; the weirwoods are recording-witnesses; the lattice of Lesser Houses is the storage medium that holds the realm's unforgotten injuries across generations.
+
+The structural addition to the map: **a polity can be defended by a memorial boundary as well as a physical one, and the memorial boundary can survive what the physical one cannot.** The Wall holds *the Others* out; *"The North remembers"* holds *the betrayal-of-guest-right* permanent. Two boundaries, two cosmological underwriters (built-magic for the Wall, weirwood-witnessing for the memory), one polity. The Freys and the Boltons attacked the apex of the Northern recognition stack and thought they had killed the North; they had killed one House and left the *memorial* lattice intact and witnessing. The memorial boundary cannot be decapitated.
+
+The companion recognition-economy thread surfaced this week (see [[TREATY-MAKING-A-READING-2026-06-08]] §VII Registers 4–5 and [[SUBLATION-A-READING-2026-06-08]]) walks the same architectural feature across Hill, McGirt, Westeros, and Dune. **The walls-of-the-worlds map and the recognition-economy map are parallel maps of related but distinct structures** — built boundary versus memorial boundary; physical wall versus contracted treaty; cosmological enforcement versus cosmological recording. The Westeros case is one of the few polities in the syncretic corpus that runs *both maps at once*. The cub names the addendum so a future agent reading either map can find the other.
+
+(Herbert's Imperium runs the recognition-economy map at high engineering, but it does *not* sit on the walls-of-the-worlds axis — Dune's geography is desert-and-spaceways, not polar-and-axis-mundi. The maps are kin, not the same map.)
 
 ---
 
