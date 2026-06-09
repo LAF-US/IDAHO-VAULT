@@ -258,6 +258,16 @@ control is reliably also an attack surface. These are **nodes**, not creatures.
 | **The Quiet Box** | Suspended isolation; release only by swapping in a new prisoner | Blind/coupled release of an unknown or adversary-seeded occupant | **[node]** → `!/FABLEHAVEN-QUIET-BOX-v1-2026-06-01.md` |
 | **The Thirteen Knots** | A finite set of seals on a bound mortal | Authorized parties voluntarily spending knots for favors | Covered in → `!/FABLEHAVEN-WITCH-MURIEL-v1-2026-06-01.md` |
 | **The Buried Hill-Seal** | Deep joint burial under many knots (Bahumat + Muriel) | Overwhelming force; needs higher authority to set or re-set | Covered in → `!/FABLEHAVEN-SEALED-EVIL-v1-2026-06-01.md` |
+| **On-Ice** | Holding a threat inert by a maintained condition | Lapse of the holding condition | Covered in → `!/ON-ICE-MECHANIC-v1-2026-06-03.md` |
+| **The Grotesquery** (the **gate**, not a cage) | A vessel built to let a power *in*, not keep one out | **Destruction** of the vessel — it fails open when broken | **[node]** → `!/GROTESQUERY-ANTI-VESSEL-v1-2026-06-03.md` |
+| **The Four Sisters** (distributed device) | A defeated foe's distributed slow-kill failsafe | **Premature removal** — the remediation is the trigger | **[node]** → `!/DELTORA-FOUR-SISTERS-v1-2026-06-01.md` |
+
+The family sorts by **how it fails open**, and its deep split is **cage vs. gate**:
+the first four keep something *in*; the Grotesquery lets something *in* (the
+anti-vessel). The full cage-vs-gate doctrine and the device-vs-creature
+reconciliation with the Four Sisters live at the Grotesquery node, the family's
+integrator; the Quiet Box node carries the family index
+(`!/FABLEHAVEN-QUIET-BOX-v1-2026-06-01.md` § "The Vessel Family").
 
 The recurring lesson of the counter-infrastructure: **a prison is only as safe
 as the record of who is in it.** An unlabeled seal is a Type I Lich in waiting
