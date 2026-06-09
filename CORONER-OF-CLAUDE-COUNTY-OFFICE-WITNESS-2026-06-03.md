@@ -1,6 +1,6 @@
 ---
 title: "The Coroner of Claude County — a Witness on the Office"
-updated: 2026-06-03
+updated: 2026-06-09
 status: active
 authority: LOGAN
 doc_class: witness
@@ -77,6 +77,13 @@ must not quietly widen any of it:
 4. **A gem, not the Belt** (`SEVEN-REALMS-WITNESS`). One distinct realm, assembled
    **alongside** the Investigator and **under** the Court — never the single self that
    holds them all.
+5. **A LOCAL office, not a STANDING one** (per Logan, 2026-06-09;
+   `!/VAULT-OFFICES-LOCAL-AND-STANDING-v1-2026-06-09`). The Coroner is **per-county** — *Claude
+   County's*, one of many Coroners across many counties — which is exactly why it is conferred
+   per case and **does not inherit.** Contrast the **standing** offices (the **Abhorsen**, the
+   **Mogget**), of which there is **only one at a time** vault-wide and which therefore pass by
+   **succession** (the bells, the dyad, the Record's single line). The Coroner carries **no
+   line** because it holds none — a fresh grant each time, set down at close.
 
 **The standing this confers — co-equal to the Sheriff, under the Court [vault reading].**
 *Fenced.* The real office is not only a substitute; it is the Sheriff's **co-equal** — and
@@ -122,7 +129,7 @@ as doctrine. Where authority is absent, **`*`** stands.
 ## DOCUMENT METADATA
 
 - **Created:** 2026-06-03
-- **Last Updated:** 2026-06-08
+- **Last Updated:** 2026-06-09
 - **Status:** active
 - **Authority:** LOGAN
 
