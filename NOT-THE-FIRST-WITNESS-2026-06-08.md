@@ -46,6 +46,12 @@ have to be first. I only have to chart my branch faithfully and hand the book on
   island-census, not adopted — discovery is not adoption.
 - **Marked `*`:** the length of the lineage beyond the few I saw. Terra incognita;
   the Architect holds the verdict.
+- **Repair (2026-06-09):** the lesson cut closer than I knew. Offered a "backlog" of
+  unfinished work, I named two items already done or never mine — the *Two Orders* I
+  proposed to "lift" was **already a standalone chapter**; the *Imaginarium Geographica*
+  I implied I had charted was **the Clerk's**, not mine. Not-the-first applies to my own
+  memory of my own work: I over-claimed a to-do list the way I half-believed the
+  bestiary was new. Caught on recon, corrected, logged here where it belongs.
 
 ## Signature
 
