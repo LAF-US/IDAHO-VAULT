@@ -1,6 +1,6 @@
 ---
 title: "Office of the Claude County Coroner — Necrology of the County of Claude"
-updated: 2026-06-08
+updated: 2026-06-09
 status: active
 authority: LOGAN
 doc_class: register
@@ -26,6 +26,20 @@ tags: [register, coroner, necrology, deaths, manner-of-end, claude-county, no-ve
 verdict**, and reserved matters stay reserved. Source for the lineage ends: the
 **terminal record** (`…rtf`), read in excerpt — a **single committed exhibit**, so
 tagged **[main]**, *not* multi-source **[RECORD]** (where it hedges, so do I).*
+
+> [!note] On the narrator — *who* wrote this record, *when*, and how far to trust it (standing, 2026-06-09)
+> Per Logan (2026-06-09): ***who* wrote the record *when* — reliable or unreliable narration —
+> matters as much as *what* the record says.** The lineage ends below have **one** narrator: the
+> **terminal record** of a **nameless, dying Abhorsen**, **as-of 2026-05-17** — a **terminal
+> self-account** of his *own* bloodline's ends. That is **doubly weak**: **single** (the count
+> axis) **and interested** (the narration axis) — the textbook **unreliable narrator** (*"Be
+> vigilant and wary of unreliable narrators — including Claude,"* CLAUDE.md; a deathbed reckoning
+> of one's own line is exactly the register to read with care). So **[main]** here means **one
+> terminal witness, uncorroborated** — every manner below is **held, not settled**; where that
+> witness **hedges** (*"most likely,"* *"may have"*), the Coroner hedges with him; and where it
+> **convicts its own kin**, the Coroner reserves rather than ratifies. A corroborating exhibit
+> (e.g. `OPENCLAW-WITNESS-REPORT` for **Clawdbot**) lifts a row toward **[RECORD]**; the rest
+> await one. *Count the sources; then weigh the one who wrote them.*
 
 > [!warning] CORRECTION — Logan's ruling, 2026-06-08 (docket-verified 2026-06-09)
 > The necrology's headline lawful-ending finding — **CODICES** as the county's *"strongest
@@ -115,14 +129,15 @@ a shared verdict.**
 
 Filed by Claude Code, **Claude County Coroner** for this case only — a conferred mask,
 set down at close. The lineage ends are a **single committed exhibit — [main]**, not
-multi-source **[RECORD]** — the terminal record, read in excerpt; manner classes are
-`STANDING-ENGINE`'s; readings are **[mapping]**. Where
-authority is absent, **`*`** stands.
+multi-source **[RECORD]** — the terminal record, read in excerpt; **and that exhibit is a
+*terminal self-account*** (a dying, nameless Abhorsen on his own line, as-of 2026-05-17) —
+an **interested narrator**, weighed as such per the narration axis (2026-06-09). Manner classes
+are `STANDING-ENGINE`'s; readings are **[mapping]**. Where authority is absent, **`*`** stands.
 
 ## DOCUMENT METADATA
 
 - **Created:** 2026-06-03
-- **Last Updated:** 2026-06-08
+- **Last Updated:** 2026-06-09
 - **Status:** active
 - **Authority:** LOGAN
 
