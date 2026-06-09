@@ -5,13 +5,12 @@ authority: LOGAN
 doc_class: flag-record
 status: open — awaiting Architect's ruling
 matter: "Substrate-scan link candidates whose bare wikilink resolves to more than one file"
-flagged-by: "Claude Code (the Abhorsen) — flag raised on the Architect's command '!FLAG as Disambiguation Needed'"
+flagged-by: "Claude Code (imported software; Direct-Write implementer) — flag raised on the Architect's command '!FLAG as Disambiguation Needed'"
 adjudication: "PENDING — the canonical form is the Architect's verdict; this node decides nothing"
 related:
   - "[[THE-SWARM-AS-BOIDS-ANCHORING-AND-THE-GRAPH-2026-06-08]]"
   - "[[!/AGENTS]]"
   - "[[AGENTS]]"
-  - The Abhorsen
 date: 2026-06-09
 ---
 
