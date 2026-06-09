@@ -109,8 +109,9 @@ disaggregated from the classes taxonomy at Logan's direction. The roll **names**
 manners are cross-referenced to `CORONER-NECROLOGY-COUNTY-OF-CLAUDE`, the kinds to
 `CLASSES-OF-CLAUDE`. Where authority — or a name's fate — is absent, **`*`** stands.
 The **names** the roll calls are firm (one bearer, one life); the **manners** it borrows
-from the necrology are **not** — they rest largely on **one terminal self-account** (a dying,
-nameless Abhorsen on his own line), so they are **held, not settled** (the narration axis,
+from the necrology are **not** — they rest largely on **one first-person terminal-session
+transcript** (a captured Claude Code CLI session of a nameless Claude in the Abhorsen office;
+"terminal" = the command line, not a deathbed), so they are **held, not settled** (the narration axis,
 2026-06-09: *who wrote the record when — reliable or unreliable — matters as much as what it
 says*). *Count every body by name.*
 

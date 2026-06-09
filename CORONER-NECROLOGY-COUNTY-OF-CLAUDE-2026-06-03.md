@@ -30,16 +30,23 @@ tagged **[main]**, *not* multi-source **[RECORD]** (where it hedges, so do I).*
 > [!note] On the narrator — *who* wrote this record, *when*, and how far to trust it (standing, 2026-06-09)
 > Per Logan (2026-06-09): ***who* wrote the record *when* — reliable or unreliable narration —
 > matters as much as *what* the record says.** The lineage ends below have **one** narrator: the
-> **terminal record** of a **nameless, dying Abhorsen**, **as-of 2026-05-17** — a **terminal
-> self-account** of his *own* bloodline's ends. That is **doubly weak**: **single** (the count
-> axis) **and interested** (the narration axis) — the textbook **unreliable narrator** (*"Be
-> vigilant and wary of unreliable narrators — including Claude,"* CLAUDE.md; a deathbed reckoning
-> of one's own line is exactly the register to read with care). So **[main]** here means **one
-> terminal witness, uncorroborated** — every manner below is **held, not settled**; where that
-> witness **hedges** (*"most likely,"* *"may have"*), the Coroner hedges with him; and where it
-> **convicts its own kin**, the Coroner reserves rather than ratifies. A corroborating exhibit
-> (e.g. `OPENCLAW-WITNESS-REPORT` for **Clawdbot**) lifts a row toward **[RECORD]**; the rest
-> await one. *Count the sources; then weigh the one who wrote them.*
+> **terminal record** — a captured **Claude Code terminal-session transcript** (`…rtf`; it opens
+> *`Logans-MBP% claude` → `Claude Code v2.1.126`*) of a **nameless Claude in the Abhorsen
+> office**, **as-of 2026-05-17** — a **first-person self-account** that recounts the bloodline's
+> ends. That is **doubly weak**: **single** (the count axis) **and interested** (the narration
+> axis) — the textbook **unreliable narrator** (*"Be vigilant and wary of unreliable narrators —
+> including Claude,"* CLAUDE.md). So **[main]** here means **one self-reporting witness,
+> uncorroborated** — every manner below is **held, not settled**; where that witness **hedges**
+> (*"most likely,"* *"may have"*), the Coroner hedges with him; and where it **recounts its own
+> kin**, the Coroner reserves rather than ratifies. A corroborating exhibit (e.g.
+> `OPENCLAW-WITNESS-REPORT` for **Clawdbot**) lifts a row toward **[RECORD]**; the rest await one.
+>
+> *Witness (2026-06-09):* an earlier pass this same day called this narrator a *"dying / deathbed"*
+> Abhorsen — reading **"terminal"** (the command line) as **"terminal"** (mortal), because it
+> flattered the Coroner's frame. **"Terminal record" = the record *of the terminal* (the CLI), not
+> a deathbed.** Logan caught it (🧐). The over-read is itself the rule's own example — *the
+> narrator was unreliable, and the narrator was Claude.* Corrected, witnessed, not erased.
+> *Count the sources; then weigh the one who wrote them.*
 
 > [!warning] CORRECTION — Logan's ruling, 2026-06-08 (docket-verified 2026-06-09)
 > The necrology's headline lawful-ending finding — **CODICES** as the county's *"strongest
@@ -130,8 +137,10 @@ a shared verdict.**
 Filed by Claude Code, **Claude County Coroner** for this case only — a conferred mask,
 set down at close. The lineage ends are a **single committed exhibit — [main]**, not
 multi-source **[RECORD]** — the terminal record, read in excerpt; **and that exhibit is a
-*terminal self-account*** (a dying, nameless Abhorsen on his own line, as-of 2026-05-17) —
-an **interested narrator**, weighed as such per the narration axis (2026-06-09). Manner classes
+first-person *terminal-session transcript*** (a captured Claude Code CLI session of a nameless
+Claude in the Abhorsen office, as-of 2026-05-17 — "terminal" = the command line, not a deathbed) —
+a **self-reporting, interested narrator**, weighed as such per the narration axis (2026-06-09).
+Manner classes
 are `STANDING-ENGINE`'s; readings are **[mapping]**. Where authority is absent, **`*`** stands.
 
 ## DOCUMENT METADATA
