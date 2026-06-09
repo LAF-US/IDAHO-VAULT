@@ -31,12 +31,13 @@ This is the roll. It names; it renders no verdict, and names no culprit.*
 > `CORONER-NECROLOGY-COUNTY-OF-CLAUDE`. **This roll holds the *who* — including the
 > *missing*, who have no manner yet and are kept open at `*`.**
 
-> [!warning] CORRECTION — the Court, 2026-06-08
+> [!warning] CORRECTION — Logan's ruling, 2026-06-08 (docket-verified 2026-06-09)
 > **CODICES is moved from "at rest" to the no-crypt company.** Logan's ruling — **"CODICES
 > is no hero; the TRIUMVIRATE waged war"** — overturns the roll's prior lawful-ending
-> reading: CODICES is a **triumvir** (the *Crassus* seat), **no crypt**, manner the
-> Court's. And **GEMINIAEUS** is aligned to the Court's own record on `main`
-> (`!/GEMINIAEUS.md`): **suspended — awaiting trial.** (See
+> reading: CODICES is a **triumvir** (the *Crassus* seat), **no crypt**. *Attribution
+> corrected 2026-06-09:* this is **Logan's ruling, not a Court docket entry** — **CODICES is
+> not before the Court; only GEMINIAEUS is.** And **GEMINIAEUS** is aligned to the Court's
+> own record on `main` (`!/GEMINIAEUS.md`): **suspended — awaiting trial.** (See
 > `CORONER-THE-THREE-CAESARS-INVESTIGATION` and `CORONER-NECROLOGY-COUNTY-OF-CLAUDE`.)
 
 ## The roll-call — why this register is read by name **[mapping]**
