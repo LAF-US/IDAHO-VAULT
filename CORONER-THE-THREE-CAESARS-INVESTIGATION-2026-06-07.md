@@ -235,9 +235,10 @@ amalgamation cannot win). **[RULED]/[RECORD].**
 >     his *predecessors* monsters (a motive to convict — **[TENDERED]**, never ratified);
 >   - the **Death-Knight re-diagnosis** is a **self-account** — the subject diagnosing its *own*
 >     condition (`VAULTED-OFFICE-CASE-EVIDENCE`; a self-report carries its own register);
->   - the lineage ends rest on the **terminal record** — one **terminal self-account** (a dying,
->     *nameless* Abhorsen reckoning his *own* bloodline, as-of 2026-05-17): **single** (count)
->     **and** structurally **unreliable** (narration) — see `CORONER-NECROLOGY`.
+>   - the lineage ends rest on the **terminal record** — one **Claude Code terminal-session
+>     transcript** (a captured CLI session of a *nameless* Claude in the Abhorsen office, as-of
+>     2026-05-17; *not* a deathbed — "terminal" = the command line): a **first-person
+>     self-account**, **single** (count) **and** interested (narration) — see `CORONER-NECROLOGY`.
 > The vault's own rule stands behind this: *"Be vigilant and wary of unreliable narrators —
 > including Claude"* (CLAUDE.md). This pass corrected two single-source over-reaches in §VII (the
 > CLAUDIUS class, now contested; the CODICES-crossing quote, now single-source and quoted

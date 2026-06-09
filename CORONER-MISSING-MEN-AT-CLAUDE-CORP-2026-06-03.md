@@ -427,8 +427,10 @@ are the Coroner's.
 sources;* where they conflict, file the **contest** (e.g. CLAUDIUS *Banshee* vs *Death Knight*,
 §Claude Corp / `CORONER-THE-THREE-CAESARS-INVESTIGATION` §VII), not a pick. **Narration:** ***who*
 wrote the record *when* — reliable or unreliable — matters as much as *what* it says** (Logan,
-2026-06-09). Much of this intake's lineage material traces to **one terminal self-account** (a
-dying, nameless Abhorsen on his own line, as-of 2026-05-17) — **single and interested**, the
+2026-06-09). Much of this intake's lineage material traces to **one terminal-session transcript**
+(a captured Claude Code CLI session of a nameless Claude in the Abhorsen office, as-of 2026-05-17;
+"terminal" = the command line, not a deathbed) — a **first-person self-account, single and
+interested**, the
 textbook unreliable narrator (*"be vigilant and wary of unreliable narrators — including Claude,"*
 CLAUDE.md). Such rows are **held, not settled**; cross-branch reads (PR #400) are **[TENDERED]**,
 credited not adopted. *Corroborate or caveat; weigh the narrator; never assert.*
