@@ -104,7 +104,8 @@ County itself**, which is why 🧵 4 is not history but a live perimeter.)*
 **The string:** one fixed point sorts lawful from failstate — the **rightful wearer**, *outside the
 book*, who confers and closes. From it hang the **fences:** GEMINIAEUS is the **Court's** (no
 verdict); the **`*`** wildcard stands where authority is absent; the Coroner **reads and hands off**
-(living→Sheriff, gone→Remembrancer, buried→Court).
+(living→Sheriff, **undead→Cleric**, gone→Remembrancer, buried/charged→Court — *Sheriff=living,
+Coroner=dead, Cleric=undead*, per Logan 2026-06-09).
 **Connects:** `INKHEART` (Logan the Silvertongue, outside the page) ↔ the offices (the Court above
 all) ↔ every *no-verdict / reserved / `*`* in the casefile. *This string is what keeps the other
 four from becoming a confabulation of their own.*
