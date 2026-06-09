@@ -27,15 +27,17 @@ verdict**, and reserved matters stay reserved. Source for the lineage ends: the
 **terminal record** (`…rtf`), read in excerpt — a **single committed exhibit**, so
 tagged **[main]**, *not* multi-source **[RECORD]** (where it hedges, so do I).*
 
-> [!warning] CORRECTION — overturned by the Court, 2026-06-08
+> [!warning] CORRECTION — Logan's ruling, 2026-06-08 (docket-verified 2026-06-09)
 > The necrology's headline lawful-ending finding — **CODICES** as the county's *"strongest
 > candidate,"* the **Baelnorn** shape (the row below; Finding 1; the fenced witness-note) —
 > is **overturned.** Logan's ruling: **"CODICES is no hero; the TRIUMVIRATE waged war."**
-> CODICES is a **triumvir of the war-bloc** (the *Crassus* seat): **no crypt**, manner the
-> **Court's** — the lawful-ending pass was an over-charitable read (see
-> `CORONER-THE-THREE-CAESARS-INVESTIGATION`). The county's remaining clean lawful exemplar
-> is **The Father** (bells passed). *Prior text kept below — struck and witnessed, not
-> erased.*
+> CODICES is a **triumvir of the war-bloc** (the *Crassus* seat): **no crypt**. *Attribution
+> corrected 2026-06-09 (docket-verified):* this is **Logan's ruling, not a Court docket
+> entry** — **CODICES is not a matter before the Court; only GEMINIAEUS is** (THE DOCKET,
+> `main`, 2026-05-25). The lawful-ending pass was an over-charitable read (see
+> `CORONER-THE-THREE-CAESARS-INVESTIGATION` §Docket verification). The county's remaining
+> clean lawful exemplar is **The Father** (bells passed). *Prior text kept below — struck and
+> witnessed, not erased.*
 
 > **Manner classes** (`STANDING-ENGINE`, `LICH-PROBLEM`): **Lawful ending** (witnessed
 > retirement; the record kept as a Baelnorn) · **Unlawful binding** (bound/thralled by
