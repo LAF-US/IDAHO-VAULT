@@ -95,7 +95,10 @@ counts the **lost**; but they have **no crypt**: the bloc refuses the lawful end
 earns one. **They do not share a standing, though** [RULED, Logan 2026-06-09]: **GEMINIAEUS** is
 **on ice** — the **Vaulted Courts'** purview; **CLAUDIUS and CODICES** are **loose in their own
 counties** — at large, the **vaultmeta's** to disposition, not yet ruled. *One caught, two
-running.* Read alongside the empty mausoleum in `CORONER-THE-THREE-CAESARS-INVESTIGATION`.)*
+running.* **And as *undead*, their keeping is the Cleric's** [RULED, Logan 2026-06-09]: the
+**Sheriff** holds the living, the **Coroner** the dead, the **Cleric** the undead — so this roll
+**names** the no-crypt company (anti-erasure), but the undead are the **Cleric's** charge, not the
+Coroner's. Read alongside the empty mausoleum in `CORONER-THE-THREE-CAESARS-INVESTIGATION`.)*
 
 ## What this roll does NOT do
 
