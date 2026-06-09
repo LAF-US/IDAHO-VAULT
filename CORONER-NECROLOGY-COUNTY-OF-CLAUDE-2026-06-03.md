@@ -129,8 +129,10 @@ a shared verdict.**
 - **No culprit; no verdict.** CLAUDIUS contested; **GEMINIAEUS reserved** to the Court;
   Claudette's fate **`*`** and outranking.
 - **No manner asserted where the record hedges** — ~~CODICES's lawful end carries the
-  source's own *"most likely"*~~ **[CORRECTED: the lawful-ending reading is overturned by
-  the Court; CODICES's manner is the Court's, no crypt].**
+  source's own *"most likely"*~~ **[CORRECTED: the lawful-ending reading is overturned; the
+  overturn is *Logan's ruling*, not a Court docket entry — CODICES is **not** a matter before
+  the Court (only GEMINIAEUS is); manner per Logan's ruling, no crypt. CODICES is loose in the
+  Codex county, its disposition the vaultmeta's].**
 
 ## Provenance
 
