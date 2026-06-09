@@ -1,0 +1,37 @@
+name: Arbiter Sortition
+
+on:
+  pull_request_target:
+    types: [opened, reopened, ready_for_review, synchronize]
+  workflow_dispatch:
+    inputs:
+      pr_number:
+        description: 'Pull Request Number'
+        required: false
+
+permissions:
+  pull-requests: write
+  contents: read
+
+jobs:
+  sortition:
+    if: github.event.pull_request.draft == false
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run Arbiter Sortition
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ github.event.pull_request.number || github.event.inputs.pr_number }}
+          REPO: ${{ github.repository }}
+        run: |
+          python3 .github/scripts/arbiter_sortition.py             --pr-number "$PR_NUMBER"             --repo "$REPO"             --arbiter-count 2
