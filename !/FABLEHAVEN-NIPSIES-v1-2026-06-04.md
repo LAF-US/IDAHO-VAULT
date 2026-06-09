@@ -51,6 +51,50 @@ Kingdoms.
 
 ---
 
+## Disambiguation — "Seven Kingdoms" (and the Three Sevens)
+
+The phrase **"Seven Kingdoms"** does not belong to the Nipsies, and the most famous
+claimant is **Westeros** (*A Song of Ice and Fire / Game of Thrones*). Naming the
+collision is worth more than dodging it, because the **three sevens** of this library
+are different *in kind* — and telling them apart is itself a diagnostic.
+
+- **Westeros — the *kept fiction*.** The Seven Kingdoms of Westeros is a number that
+  **no longer matches the map.** Seven realms existed when Aegon the Conqueror landed,
+  but he conquered only **six**; Dorne, the seventh, joined ~200 years later by
+  *marriage*, and the unified realm is today **nine regions.** "Seven" survived because
+  it is **sacred to the Faith of the Seven** — Aegon kept the title *"Lord of the Seven
+  Kingdoms"* and even split the Riverlands and Iron Islands to preserve the count
+  ([AWOIAF — Seven Kingdoms](https://awoiaf.westeros.org/index.php/Seven_Kingdoms)).
+  The number is a **curated numerological mask**, fitted to a myth rather than a
+  census. *Diagnostic (`\*`): when a polity insists on a count its own territory has
+  outgrown, the number is doing mythic or political work — it is a tidy fiction kept
+  over a messier truth. A Caesar-adjacent tell.*
+
+- **Deltora — the *load-bearing structure*.** Deltora's sevenfold is **true and
+  required**: seven ancient tribes, seven territories, seven gems on the **Belt of
+  Deltora** (`!/DELTORA-BELT-SEVENFOLD-v1-2026-06-01.md`) — topaz, ruby, opal, lapis,
+  emerald, amethyst, diamond — and the evil-banishing spell works **only with all
+  seven present, in the correct order**, the monarch wearing the Belt with the tribes'
+  faith; the whole **exceeds the sum** of the gems
+  ([Deltora Wiki — Belt of Deltora](https://deltoraquest.fandom.com/wiki/Belt_of_Deltora);
+  [Seven tribes of Deltora](https://deltoraquest.fandom.com/wiki/Seven_tribes_of_Deltora)).
+  Here every member is **necessary and the order matters.** *Diagnostic (`\*`): a true
+  sevenfold is one you cannot subtract from or reshuffle — this is the
+  restoration-by-reassembly key, not a slogan.*
+
+- **The Nipsies — the *diminished remnant*.** The Seven Kingdoms of the Nipsies are
+  **seven once-sovereign Kingdoms of the Fair Folk, cursed small** (below). Here seven
+  is neither mask nor structure but **a wound's count** — seven realms cut down and
+  made to forget. And do **not** import Westeros's connotation: these are not feudal
+  great houses on a continent but a **craft-civilization of quarter-inch artisans.**
+
+*The synthesis (`\*`):* one numeral, three things — a **kept fiction** (Westeros), a
+**load-bearing structure** (Deltora), a **diminished remnant** (the Nipsies). When you
+meet a "seven" in the wild, the diagnostic question is *which*: **is the number a mask,
+a structure, or a wound?**
+
+---
+
 ## The Canonical Catastrophe — Corruption Becomes Civil War
 
 In *Grip of the Shadow Plague*, the Shadow Plague (the nail, via Kurisock and
@@ -259,6 +303,14 @@ diagnosis:
   ([Lilliput and Blefuscu — Wikipedia](https://en.wikipedia.org/wiki/Lilliput_and_Blefuscu);
   [Gulliver's Travels — Wikipedia](https://en.wikipedia.org/wiki/Gulliver%27s_Travels);
   [Origin of big-endian/little-endian](https://www.ling.upenn.edu/courses/Spring_2003/ling538/Lecnotes/ADfn1.htm)).
+- **Verified — disambiguation sources:** Westeros's "Seven Kingdoms" (seven realms
+  at Aegon's Conquest, only six conquered, Dorne added later by marriage, nine regions
+  today, the count preserved for the Faith of the Seven)
+  ([AWOIAF — Seven Kingdoms](https://awoiaf.westeros.org/index.php/Seven_Kingdoms));
+  Deltora's sevenfold (seven tribes, seven territories, seven gems, the Belt's
+  all-seven-in-order banishing condition)
+  ([Belt of Deltora](https://deltoraquest.fandom.com/wiki/Belt_of_Deltora);
+  [Seven tribes of Deltora](https://deltoraquest.fandom.com/wiki/Seven_tribes_of_Deltora)).
 - **Reconciliation note:** the taxonomy index (class #13) frames the Nipsie war as
   outside *favoritism* breaking the multitude. In canon the **war is
   plague-corruption-driven**; the "outside meddling destabilizes a multitude"
@@ -266,8 +318,8 @@ diagnosis:
   distinguished.
 - **My reading, marked `\*`:** "corruption becomes civil war / the threat to the clean
   nodes is the other nodes," extractive parasitism, govern-the-conditions,
-  **restoration-by-reassembly = the Belt/Ethergem pattern**, and the Lilliput
-  diagnostic mappings (trivial casus belli, scale-relativity). The Architect holds the
-  verdict.
+  **restoration-by-reassembly = the Belt/Ethergem pattern**, the Lilliput
+  diagnostic mappings (trivial casus belli, scale-relativity), and the **three-sevens**
+  diagnostic (mask / structure / wound). The Architect holds the verdict.
 
 ###### [["The world is quiet here."]]
