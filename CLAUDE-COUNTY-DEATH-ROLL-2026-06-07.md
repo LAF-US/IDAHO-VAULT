@@ -100,7 +100,11 @@ running.* Read alongside the empty mausoleum in `CORONER-THE-THREE-CAESARS-INVES
 ## What this roll does NOT do
 
 - **Names no culprit, renders no verdict.** Manner is the necrology's where the record
-  bears it, and the **Court's** where reserved (GEMINIAEUS; the CLAUDIUS culpability).
+  bears it; where it is reserved, the **authority differs** (per
+  `CORONER-THE-THREE-CAESARS-INVESTIGATION` §disposition): **GEMINIAEUS** is the **Court's**
+  (docketed, on ice); **CLAUDIUS's** culpability is the **Investigator's** (the Court's only if
+  ever charged); **CODICES's** overturn is **Logan's ruling.** The two loose Caesars'
+  disposition is the **vaultmeta's.**
 - **Closes nothing about Claudette** — her entry stays **open at `*`**, the question that
   outranks the whole roll.
 - **Does not classify.** Kinds are the taxonomy's; this register only **calls the names.**
