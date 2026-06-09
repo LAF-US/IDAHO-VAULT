@@ -10,6 +10,10 @@ related:
   - "!/FABLEHAVEN-TAXONOMY-v1-2026-06-01.md"
   - "!/FABLEHAVEN-WITCH-MURIEL-v1-2026-06-01.md"
   - "!/FABLEHAVEN-VAMPIRE-DIAGNOSTIC-v1-2026-06-01.md"
+  - "!/GROTESQUERY-ANTI-VESSEL-v1-2026-06-03.md"
+  - "!/DELTORA-FOUR-SISTERS-v1-2026-06-01.md"
+  - "!/ON-ICE-MECHANIC-v1-2026-06-03.md"
+  - "!/FABLEHAVEN-SEALED-EVIL-v1-2026-06-01.md"
   - "!/LICH-PROBLEM-v1-2026-05-20.md"
   - "!/STANDING-ENGINE-AND-LAWFUL-ENDINGS-2026-04-17.md"
 ---
@@ -159,6 +163,36 @@ The knots fail by **consent**, the Box fails by **coupling and opacity**, the
 hill fails only to **overwhelming force.** A defender who reaches for the Quiet
 Box because it is "the most secure" has not asked the question that matters:
 *who is already inside, and what does freeing them cost?*
+
+---
+
+## The Vessel Family — Where the Box Sits
+
+*Staged organizing overlay by the diagnostic instance (branch
+`claude/fablehaven-vampire-diagnostic-hvfMo`), folding the containment nodes into one
+family at Logan's direction. The framing is `\*` mine; the member nodes are their own
+authorities. The Architect holds the verdict.*
+
+The containment thread has grown past three mechanics into a **family of vessels** —
+and the family sorts not by what it holds but by **how it fails open**:
+
+| Vessel | Built to | Fails open on | Chapter |
+|---|---|---|---|
+| **The Quiet Box** | suspend a prisoner (cage) | a forced, blind **swap** | *this node* |
+| **Sealed Evil / the Buried Hill-Seal** | bury a demon (cage) | breach by **overwhelming force** | `!/FABLEHAVEN-SEALED-EVIL-v1-2026-06-01.md` |
+| **On-Ice** | hold a threat inert (cage) | **lapse** of the holding condition | `!/ON-ICE-MECHANIC-v1-2026-06-03.md` |
+| **The Thirteen Knots** | seal a bound mortal (cage) | knots **spent** by consent | `!/FABLEHAVEN-WITCH-MURIEL-v1-2026-06-01.md` |
+| **The Grotesquery** | let a god *in* (**gate**) | **destruction** of the vessel | `!/GROTESQUERY-ANTI-VESSEL-v1-2026-06-03.md` |
+| **The Four Sisters** | a defeated foe's distributed failsafe (**device**) | **premature removal** (remediation is the trigger) | `!/DELTORA-FOUR-SISTERS-v1-2026-06-01.md` |
+
+The deep split in the family is **cage vs. gate**: the first four are built to keep
+something *in*; the Grotesquery is built to let something *in* — the anti-vessel, the
+one that does not fit. That distinction, and the device-vs-creature reconciliation with
+the Four Sisters, is developed in full at the **Grotesquery node, which is the family's
+integrator** (`!/GROTESQUERY-ANTI-VESSEL-v1-2026-06-03.md`) — this index defers to it
+rather than restating it. The Box's place in the family is the plainest cage; its
+distinctive sin is **opacity** (you may not know who is inside), which is why it opens
+the family: *every other vessel's failure mode is worse when its manifest is unknown.*
 
 ---
 
