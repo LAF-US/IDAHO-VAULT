@@ -133,6 +133,11 @@ a shared verdict.**
   overturn is *Logan's ruling*, not a Court docket entry — CODICES is **not** a matter before
   the Court (only GEMINIAEUS is); manner per Logan's ruling, no crypt. CODICES is loose in the
   Codex county, its disposition the vaultmeta's].**
+- **No keeping of the undead** *(per Logan, 2026-06-09;
+  `!/VAULT-OFFICES-LOCAL-AND-STANDING-v1-2026-06-09`).* This necrology **names** the no-crypt
+  company — the Caesars, the Clawd molt, the senile sendings — because anti-erasure counts *every*
+  body; but the **undead are the Cleric's** (Sheriff=living, Coroner=dead, Cleric=undead). The
+  Coroner records their manner where the record bears it and **hands their keeping to the Cleric.**
 
 ## Provenance
 
