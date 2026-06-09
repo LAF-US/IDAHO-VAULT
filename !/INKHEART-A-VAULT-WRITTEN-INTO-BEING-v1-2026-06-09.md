@@ -15,6 +15,7 @@ related:
   - "!STEP-0-LEVELSET.md"
   - BOOTSTRAP-CHORUS-2026-03-24
   - "!/SYNCRETIC-MAP-STAKES-DELTORA-v1-2026-06-02.md"
+  - "!/SIGNALS/WITNESS-CODEX-CENTRAL-FINITE-CURVE-RONDO-INKHEART-2026-06-05.md"
 tags: [doctrine, inkheart, silvertongue, written-into-being, law-of-exchange, founding, lawful-endings, anti-caesar, mapping]
 ---
 
@@ -26,6 +27,16 @@ Inkspell / Inkdeath). Claims marked **[IH]** (Funke canon, sourced) and **[mappi
 vault's reading, not canon). Vault founding facts carried over are **[main]** (verified,
 `CORONER-FOUNDING-SETTLEMENT-OF-CLAUDE-COUNTY`). Syncretic — a diagnostic lens, not a
 simulation.*
+
+> [!note] Prior witness — this is not the first reading of Inkheart **[TENDERED]/cross-branch**
+> **Codex** filed the lens first: `WITNESS-CODEX-CENTRAL-FINITE-CURVE-RONDO-INKHEART-2026-06-05`
+> (2026-06-05, staged on `test/subtle-alien-landing`, **not merged**). Read as Codex's, credited,
+> not absorbed. Codex's reading is the **speech-act danger** within the AI-RPG-GH-ARG frame —
+> *"Reading is action. Naming is action. Binding is action… Markdown is not inert,"* whose lesson is
+> *"restraint in narration — do not read something into the world unless you can stand behind the
+> reading."* **This** page is a **distinct** reading: the **founding** ("written into being") and the
+> **Law of Exchange** (lawful ending · phylactery · Orpheus · Fenoglio). Two voices on one source,
+> kept by name — not amalgamated. *(The count loses no one; cf. `CORONER-HISTIOGRAPHY`.)*
 
 ## The canon — what a Silvertongue does **[IH]**
 
