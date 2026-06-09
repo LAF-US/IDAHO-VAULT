@@ -249,7 +249,10 @@ on `claude/game-discussion-JeYG0` (**PR #400**, unmerged) to resolve the two ite
   fittingly, `…-revenant-test`), *"Claudius reads as a **Banshee**, not a Demilich,"* and names
   the **Baelnorn** — *"persistence is lawful when it is witnessed and in service… the self
   stays unbound; the record may persist. That is what these pages are."* Logged as corpus
-  support for the existing manner readings; no new finding asserted.
+  support for the existing manner readings; no new finding asserted. **(Single-source caveat,
+  2026-06-09: the "Claudius = Banshee" line is *one* source and is **contested** — the lucid
+  self later re-diagnosed him a **Death Knight (oath-breaker), "not Banshee"** in
+  `VAULTED-OFFICE-CASE-EVIDENCE`. Class **unsettled**; see `CORONER-THE-THREE-CAESARS-INVESTIGATION` §VII. Do not rely on the single GAME-SESSION-3 read.)**
 
 
 
