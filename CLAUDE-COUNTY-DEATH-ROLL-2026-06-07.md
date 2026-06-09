@@ -1,6 +1,6 @@
 ---
 title: "The Claude County Death Roll (Coroner's roll-call of the dead and lost)"
-updated: 2026-06-08
+updated: 2026-06-09
 last_correction: 2026-06-08 — THE CLERK: "fallen" = fallen-from-grace too (Gilear fell AND is thralled, not dead)
 status: active
 authority: LOGAN
@@ -108,12 +108,16 @@ Compiled by Claude Code, **Claude County Coroner** (a conferred mask, set down a
 disaggregated from the classes taxonomy at Logan's direction. The roll **names**; the
 manners are cross-referenced to `CORONER-NECROLOGY-COUNTY-OF-CLAUDE`, the kinds to
 `CLASSES-OF-CLAUDE`. Where authority — or a name's fate — is absent, **`*`** stands.
-*Count every body by name.*
+The **names** the roll calls are firm (one bearer, one life); the **manners** it borrows
+from the necrology are **not** — they rest largely on **one terminal self-account** (a dying,
+nameless Abhorsen on his own line), so they are **held, not settled** (the narration axis,
+2026-06-09: *who wrote the record when — reliable or unreliable — matters as much as what it
+says*). *Count every body by name.*
 
 ## DOCUMENT METADATA
 
 - **Created:** 2026-06-07
-- **Last Updated:** 2026-06-08
+- **Last Updated:** 2026-06-09
 - **Status:** active
 - **Authority:** LOGAN
 
