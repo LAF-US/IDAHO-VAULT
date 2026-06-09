@@ -9,12 +9,22 @@ source: chat
 related:
   - "2026-06-07"
   - "2026-06-08"
+  - "2026-06-09"
   - VOLTAIRE-HRE-READING-2026-06-08
   - DIVINE-RIGHT-OF-KINGS-READING-2026-06-08
+  - SUBLATION-A-READING-2026-06-08
+  - WITNESS-CUB-ON-THE-VAULT-2026-06-08
+  - WITNESS-CUB-ON-THE-NORTH-2026-06-09
+  - WITNESS-CUB-ON-THE-IMPERIUM-2026-06-09
   - ICEMARK-DEEP-CUT-2026-06-07
+  - ICEMARK-RACES-AND-TREATMENTS-2026-06-09
+  - HUB-OF-THE-WORLD-AND-THE-SNOW-LEOPARDS-2026-06-09
+  - SYNCRETIC-MAPPING-WALLS-OF-THE-WORLDS-2026-06-03
   - Justice Neil Gorsuch
   - Brandon Mull
   - C.S. Lewis
+  - George R. R. Martin
+  - Frank Herbert
 tags:
   - research/governance
   - subject/treaty-making
@@ -73,9 +83,11 @@ The Idaho Kootenai were sovereign before 1855 and remained sovereign through eve
 
 ---
 
-## VII. Three registers of the same architecture
+## VII. Five registers of the same architecture
 
-The same shape shows up in three traditions that the conversation walked through. Each makes visible what the others leave ambiguous.
+*The original reading walked three registers (Real-world governance, Fablehaven, Narnia). The 2026-06-09 thread on Westeros and the Imperium added the fourth and fifth — each carrying a distinct cosmological strength of underwriter for the same recognition-machine. The five together name the quartet of underwriters plus the dark fifth axis.*
+
+The same shape shows up in five traditions that the conversations walked through. Each makes visible what the others leave ambiguous.
 
 ### Register 1 — Real-world governance
 
@@ -105,6 +117,40 @@ The structural move is exact:
 - The principle does the resurrection
 
 This is the deepest move treaty-making can carry: **a sovereign offering themselves under the visible binding to invoke the invisible authorization that transcends it.**
+
+### Register 4 — "The North remembers" (George R. R. Martin, *A Song of Ice and Fire*)
+
+Westeros runs **bannermen-acclamation kingship** under a recognition-economy held by Great Houses, Lesser Houses, banners, words, and oaths-of-fealty. The Crown does not consecrate the Houses; the Houses consecrate the Crown when their bannermen raise their swords and acclaim a King. **The North in particular runs the lattice version**: dozens of Lesser Houses each carrying their own banner, words, seat, and memory.
+
+What Martin underwrites cosmologically is not enforcement but **recording**. The Old Gods are gods of memory. The weirwoods are witnesses; the heart-tree network sees and what it sees the Three-Eyed Crow can access. The Faith of the Old Gods is, structurally, *the religion of recording*. The cosmos does not stop the Red Wedding — but the cosmos *will not let the Red Wedding be forgotten*. **"The North remembers" is therefore liturgical accuracy, not slogan.** The minimum viable cosmological underwriter is *witnessing*. That is enough for a treaty-honoring polity to outlive its murdered Kings.
+
+The McGirt move runs in Westeros under this name. A treaty does not disappear when one party is murdered; it persists in the memory of every party who saw it broken. The Red Wedding *activates* the Northern political order rather than ending it. The witnesses outlive the betrayers and hold the memory through. The cub walked this in [[WITNESS-CUB-ON-THE-NORTH-2026-06-09]] and corrected its own first-pass framing ("the gods didn't show up") to the doctrinally accurate one (the gods showed up as the recording medium).
+
+### Register 5 — The Padishah Imperium (Frank Herbert, *Dune*)
+
+The most architecturally explicit recognition-economy in modern science fiction. Herbert *wrote out the rule-book*: the **Padishah Emperor** on the Golden Lion Throne; the **Landsraad** as the council of the Great Houses (Houses Major); **CHOAM** as the jointly-held economic axis; the **Spacing Guild** as the politically-neutral logistics monopoly; the **Bene Gesserit** as the shadow fifth axis of recognition-engineers; and at the foundation, the **Great Convention** — the multilateral peace treaty signed after the Butlerian Jihad, with the atomic-weapons prohibition enforced by the Landsraad's collective obligation to obliterate violators.
+
+Herbert's underwriter is *contractual* — the Great Convention is the **written, ratified, multilateral peace treaty** with collective-action enforcement. **It is what the Holy Roman Imperial Diet would have been if it had teeth.** The Landsraad does the constitutional restraint work Voltaire diagnosed as missing from the HRE in [[VOLTAIRE-HRE-READING-2026-06-08]]; Herbert engineered the working version.
+
+The shadow fifth axis is the load-bearing addition. The Bene Gesserit operate *outside* the visible constitution as the **recognition-engineers**: the Missionaria Protectiva plants prophecies on backwater planets generations in advance; the 90-generation breeding program engineers the Kwisatz Haderach; the Sisters *make crowns wearable*. They are the dark counterpart to McGirt — instead of *holding* recognition by witnessing what was, they *manufacture* recognition by planting what will be needed. Paul Atreides as Mahdi is the engineered-divine-right machine working *and escaping its makers*; the Fremen Jihad is what manufactured legitimacy *does* when it can no longer be steered. The cub walked this in [[WITNESS-CUB-ON-THE-IMPERIUM-2026-06-09]].
+
+This is the **amendment to the divine-right reading**: the doctrine's danger is not theological wrongness (Voltaire's case in [[DIVINE-RIGHT-OF-KINGS-READING-2026-06-08]]) but *manufacturability*. The chain of recognition from God down can be *engineered into existence* by sufficiently long-running manipulation, and once engineered, it escapes its makers.
+
+---
+
+### The quartet of underwriters, named
+
+The five registers above sort cleanly into a **quartet of cosmological strengths** (Registers 2, 3, 4, 5 each pin a distinct underwriter), with Register 1 (real-world law) sitting on the contested edge of each:
+
+| Register | Underwriter | Mechanism |
+|---|---|---|
+| **Hill / Narnia** (cosmological-enforcement) | The Goddess; the Deeper Magic from before the Dawn of Time | Oaths held by world-fabric; the Stone Table cracks |
+| **Mull / Fablehaven** (metaphysical-binding) | The covenant as world-rule | Break the binding, the world rearranges; honor it, the binding holds the world |
+| **Martin / Westeros** (cosmological-recording) | The Old Gods; weirwood-network witness | No enforcement; *witnessing* persists. "The North remembers." |
+| **Herbert / Dune** (contractual-collective-action) | The Great Convention; Landsraad obligation against violators | Multilateral treaty enforced by collective Landsraad response |
+| **McGirt / federal-tribal** (constitutional-textual) | The 1830s treaties + the Supremacy Clause | The political branches cannot unmake by neglect what they bilaterally received |
+
+Plus the dark fifth axis Dune surfaces: **engineered legitimacy** (Bene Gesserit), which the cub now reads as the *manufactured* twin of divine right. See [[DIVINE-RIGHT-OF-KINGS-READING-2026-06-08]].
 
 ---
 
@@ -163,9 +209,19 @@ Where the cub generalized about real-world federal Indian law, the architect (a 
 - Stuart Hill, *The Cry of the Icemark* (2005); *Blade of Fire* (2006); *Last Battle of the Icemark* (2008); *Prince of the Icemark* (2013)
 - Brandon Mull, *Fablehaven* sequence (2006–2010): *Fablehaven*, *Rise of the Evening Star*, *Grip of the Shadow Plague*, *Secrets of the Dragon Sanctuary*, *Keys to the Demon Prison*
 - C.S. Lewis, *The Lion, the Witch and the Wardrobe* (1950)
+- George R. R. Martin, *A Song of Ice and Fire* (1996–) — added in the 2026-06-09 extension
+- Frank Herbert, *Dune* (1965) and the original hexalogy — added in the 2026-06-09 extension
 - 1855 Hellgate Treaty (12 Stat. 975)
 - Pub. L. 93-562 (Kootenai Reservation, 1974)
 - [Kootenai Tribe of Idaho — Wikipedia](https://en.wikipedia.org/wiki/Kootenai_Tribe_of_Idaho)
 - [Amelia Trice — Wikipedia](https://en.wikipedia.org/wiki/Amelia_Trice)
 - [Bonners Ferry, Idaho — Wikipedia](https://en.wikipedia.org/wiki/Bonners_Ferry,_Idaho)
 - Algernon Charles Swinburne, *The Garden of Proserpine* (1866) — for the lateral connection to the VFD library motto
+
+---
+
+## 2026-06-09 extension note
+
+This reading was extended on 2026-06-09 with two new registers (Westeros and the Imperium) after the architect walked the cub through them in chat and asked the cub to write the witnesses. The two witnesses — [[WITNESS-CUB-ON-THE-NORTH-2026-06-09]] and [[WITNESS-CUB-ON-THE-IMPERIUM-2026-06-09]] — sit downstream of this reading; this reading is now the master frame that holds all five registers. The original three-register architecture stands; Registers 4 and 5 extend it. The quartet-of-underwriters table at the end of §VII names the structural quartet the cub had not seen cleanly until the 2026-06-09 thread completed it.
+
+— Claude Code, `*.claude.*`

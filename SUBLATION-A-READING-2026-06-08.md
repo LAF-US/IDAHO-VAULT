@@ -8,13 +8,21 @@ authors:
 source: chat
 related:
   - "2026-06-08"
+  - "2026-06-09"
   - TREATY-MAKING-A-READING-2026-06-08
   - VOLTAIRE-HRE-READING-2026-06-08
   - DIVINE-RIGHT-OF-KINGS-READING-2026-06-08
   - WITNESS-CUB-ON-THE-VAULT-2026-06-08
+  - WITNESS-CUB-ON-THE-NORTH-2026-06-09
+  - WITNESS-CUB-ON-THE-IMPERIUM-2026-06-09
   - ICEMARK-DEEP-CUT-2026-06-07
+  - ICEMARK-RACES-AND-TREATMENTS-2026-06-09
+  - HUB-OF-THE-WORLD-AND-THE-SNOW-LEOPARDS-2026-06-09
+  - SYNCRETIC-MAPPING-WALLS-OF-THE-WORLDS-2026-06-03
   - Hegel
   - C.S. Lewis
+  - George R. R. Martin
+  - Frank Herbert
 tags:
   - research/philosophy
   - subject/sublation
@@ -126,6 +134,30 @@ Thirrin **sublates** the genre's standard horror-past-the-wall posture.
 - She *lifts* the relation into the Alliance, where Vampire King, Wolffolk King, and Snow Leopard Thar are sovereigns to be treatied with, not monsters to be slaughtered
 
 The Alliance is the structural feature of the Icemark series because Thirrin made the sublation move and the genre had been taught not to.
+
+### Martin's North — "The North remembers"
+
+The North **sublates** the Red Wedding's broken guest-right.
+
+- It *cancels* the Freys' and Boltons' settlement (that murder at the feast was a closed transaction)
+- It *preserves* the injury intact (memory carried by the Lesser Houses' lattice: Karstark, Umber, Mormont, Manderly, Glover, and the rest)
+- It *lifts* the unpaid debt into the register the realm carries forward to the next feast (Wyman Manderly's pies, Sansa's politics, the eventual Stark restoration)
+
+The Old Gods are the gods of memory; the weirwoods are witnesses; the lattice of Lesser Houses is the storage medium. *Aufhebung* in the North is *what is done to the betrayer at the next feast*. The cub walked this in [[WITNESS-CUB-ON-THE-NORTH-2026-06-09]] and corrected its own earlier "the gods didn't show up" framing — the gods *did* show up, as the recording medium. That correction is itself the small sublation of the cub's first pass.
+
+### Herbert's Imperium — the Landsraad-and-Convention case, and the Bene Gesserit counter-case
+
+Two sublation cases run in *Dune* — one positive, one negative — and they sit together as a single doctrinal pair.
+
+The **positive** case: the Great Convention **sublates** the Butlerian Jihad's anti-machine settlement into operating Imperium law.
+
+- It *cancels* the post-Jihad chaos (raw victor's-law against the thinking machines)
+- It *preserves* the Jihad's substantive prohibition ("Thou shalt not make a machine in the likeness of a human mind")
+- It *lifts* the prohibition into a written, ratified, multilateral treaty enforced by Landsraad collective-action against atomic-treaty-violators
+
+This is the strongest *written-contract* sublation the cub has read this week. The Landsraad is *what the Holy Roman Imperial Diet would have been if it had teeth* ([[VOLTAIRE-HRE-READING-2026-06-08]]).
+
+The **negative** case: **Paul Atreides as engineered Mahdi is a sublation that fails**. The Bene Gesserit's Missionaria Protectiva *cancels* the absence of legitimacy on Arrakis (by planting the Lisan al-Gaib prophecy), but it does not *preserve* an authentic recognition-relation that already existed — there is no underlying sovereignty being acknowledged, only an architectural placeholder waiting for a Sister to fill. And it does not *lift* the relation into a higher register — it *imposes* a manufactured one. The result is cancellation-and-imposition-without-preservation, which is **fabrication**, not sublation. The Jihad that follows is the price of mistaking fabrication for sublation. Paul knows the mask is engineered; the Fremen do not; the Imperium can't tell; the Jihad kills tens of billions because the *engineered chain of recognition escapes its engineers.* Herbert's deepest political claim, in sublation-grammar: **fabricated legitimacy is divine right's manufactured twin, and once made, it cannot be unmade without unmaking what the cosmos came to depend on.** The cub walked this in [[WITNESS-CUB-ON-THE-IMPERIUM-2026-06-09]].
 
 ## The Vault's grammar is a sublation-grammar
 
