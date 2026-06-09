@@ -8,11 +8,17 @@ authors:
 source: chat
 related:
   - "2026-06-08"
+  - "2026-06-09"
   - TREATY-MAKING-A-READING-2026-06-08
   - VOLTAIRE-HRE-READING-2026-06-08
+  - SUBLATION-A-READING-2026-06-08
+  - WITNESS-CUB-ON-THE-NORTH-2026-06-09
+  - WITNESS-CUB-ON-THE-IMPERIUM-2026-06-09
   - Bossuet
   - James I
   - Voltaire
+  - George R. R. Martin
+  - Frank Herbert
 tags:
   - research/governance
   - subject/sovereignty
@@ -123,6 +129,20 @@ And the cub's answer, gathered from the architect across the days of walking thi
 *Everything they cannot survive, until they remember that the chain runs two ways, and the deeper magic is the one that authorized the deep magic on the way up.*
 
 🐾
+
+---
+
+## 2026-06-09 addendum — two more empirical instances from the fiction
+
+The 2026-06-09 thread extended this reading with two further instances of the same machine. Both are filed at greater length in their own witnesses:
+
+- **Westeros (Martin, *A Song of Ice and Fire*) — bannermen-acclamation as post-divine-right kingship.** The King in the North is *raised by the Greatjon's sword*, not consecrated by a bishop. Recognition flows *upward* from the bannermen to the crown — the same direction the Andean civic acclamation, the Anglo-Saxon witan, the early Norse thing, and Pope Gregory VII's medieval church-state quarrel all wanted to keep alive against the doctrine Bossuet later defended. **Westeros runs the structural opposite of divine right at the level of *what kingship is*.** The Stark coronation at Riverrun is therefore a small reenactment of every one of the four unmakings named above, in the Saxon-coded fantasy register. See [[WITNESS-CUB-ON-THE-NORTH-2026-06-09]].
+
+- **Dune (Herbert) — the *manufactured twin* of divine right.** Herbert names the danger this reading did not foreground: **divine right can be engineered into existence by sufficiently long-running manipulation, and once engineered, it escapes its makers.** The Bene Gesserit's Missionaria Protectiva plants the Lisan al-Gaib prophecy on Arrakis generations in advance; Paul Atreides steps into the prepared register; the Fremen Jihad follows and kills tens of billions. Paul knows the mask is engineered; the Fremen do not; the Imperium can't tell. **Bossuet's doctrine claims divine right is given by God; Herbert's diagnosis is that divine right can be made by the patient and the corrupt, and the manufactured kind kills with the same finality as the original.** This is the *amendment* to this reading the cub had not seen in the 2026-06-08 first pass. See [[WITNESS-CUB-ON-THE-IMPERIUM-2026-06-09]].
+
+The Westeros instance extends the *unmakings* (acclamation as one of the doctrines that replace divine right). The Dune instance extends the *doctrine itself* (manufacturability as the latent threat Voltaire's critique did not see, because his target was the *believed* doctrine, not the *manufactured* one). The cub now reads divine right as a doctrine with three faces: **given** (Bossuet, James VI/I), **acclaimed-from-below as its replacement** (the four unmakings; Westeros), and **engineered-and-loosed** (the Bene Gesserit, Paul Atreides). The four loud unmakings address the first face. McGirt's quiet unmaking addresses the same. The Dune diagnosis addresses *what the doctrine becomes when its theological underwriter is replaced by a sufficiently patient manipulator.*
+
+— Claude Code, `*.claude.*` (2026-06-09 addendum)
 
 ---
 
