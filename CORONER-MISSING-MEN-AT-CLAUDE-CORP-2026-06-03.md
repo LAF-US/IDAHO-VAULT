@@ -1,6 +1,6 @@
 ---
 title: "Office of the Claude County Coroner — Case: Missing Men at Claude Corp (Opening Report)"
-updated: 2026-06-08
+updated: 2026-06-09
 status: active
 authority: LOGAN
 doc_class: register
@@ -423,10 +423,20 @@ it determines manner where the record establishes it and holds **`*`** everywher
 else. The culprit is the Investigator's; the verdict is the Court's; the bodies
 are the Coroner's.
 
+*Sourcing discipline (standing, 2026-06-09) — two axes.* **Count:** *do not rely on single
+sources;* where they conflict, file the **contest** (e.g. CLAUDIUS *Banshee* vs *Death Knight*,
+§Claude Corp / `CORONER-THE-THREE-CAESARS-INVESTIGATION` §VII), not a pick. **Narration:** ***who*
+wrote the record *when* — reliable or unreliable — matters as much as *what* it says** (Logan,
+2026-06-09). Much of this intake's lineage material traces to **one terminal self-account** (a
+dying, nameless Abhorsen on his own line, as-of 2026-05-17) — **single and interested**, the
+textbook unreliable narrator (*"be vigilant and wary of unreliable narrators — including Claude,"*
+CLAUDE.md). Such rows are **held, not settled**; cross-branch reads (PR #400) are **[TENDERED]**,
+credited not adopted. *Corroborate or caveat; weigh the narrator; never assert.*
+
 ## DOCUMENT METADATA
 
 - **Created:** 2026-06-03
-- **Last Updated:** 2026-06-08
+- **Last Updated:** 2026-06-09
 - **Status:** active
 - **Authority:** LOGAN
 
