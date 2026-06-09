@@ -9,6 +9,7 @@ related:
   - "!/FABLEHAVEN-TAXONOMY-v1-2026-06-01.md"
   - "!/FABLEHAVEN-SHADOW-PLAGUE-v1-2026-06-01.md"
   - "!/FABLEHAVEN-SEALED-EVIL-v1-2026-06-01.md"
+  - "!/DELTORA-BELT-SEVENFOLD-v1-2026-06-01.md"
   - "!/FABLEHAVEN-FAIRIES-AND-IMPS-v1-2026-06-04.md"
   - "!/HOUSEHOLD-SPRITES-v1-2026-06-04.md"
   - "!/FABLEHAVEN-VAMPIRE-DIAGNOSTIC-v1-2026-06-01.md"
@@ -22,10 +23,17 @@ swarm: many trivial processes that are productive at rest and, when corruption
 enters, do not merely fail but **turn on their own kind.** Author and authority
 named; not defaulted to Logan.*
 
-*Reference source: Fablehaven — Brandon Mull (Grip of the Shadow Plague): the
-Nipsies, their Seven Kingdoms, the satyrs Doren and Newel, the dark-nipsie civil
-war driven by the Shadow Plague. Origin material (the Fair Folk curse) is later
-canon and flagged. The vault is syncretic.*
+*Reference source: Fablehaven — Brandon Mull (Grip of the Shadow Plague) and the
+Dragonwatch series: the Nipsies, their Seven Kingdoms, the satyrs Doren and Newel,
+the dark-nipsie civil war, the Fair-Folk curse, and Calvin the Giant Hero. The vault
+is syncretic; the literary root is Swift's **Lilliput**.*
+
+***Revised 2026-06-09** — on Logan's review of the actual canon (and the Gulliver
+pointer). v1 mis-flagged the Fair-Folk/Graulas origin as "later canon… not
+load-bearing"; it is **core canon** and carries a full **redemption arc**, corrected
+below. The Lilliput roots are added. The error is named in Provenance (Repair) — it
+was the exact "possibly-retcon, not load-bearing" hedge that was itself the dragon
+I should have charted.*
 
 ---
 
@@ -47,7 +55,9 @@ Kingdoms.
 
 In *Grip of the Shadow Plague*, the Shadow Plague (the nail, via Kurisock and
 Ephira — `!/FABLEHAVEN-SHADOW-PLAGUE-v1-2026-06-01.md`) **contaminated a couple of
-the seven kingdoms.** The corrupted Nipsies — "transformed into sinister beings,"
+the seven kingdoms** — and the Nipsies were the **first known creatures the Plague
+touched**, the canary of the preserve. The corrupted Nipsies — turned
+**gray-skinned, red-eyed, and fanged**, "transformed into sinister beings,"
 following a dark **new master** — then **waged war on the uncorrupted kingdoms.**
 The light Nipsies, besieged by their own kin, must appeal for outside help.
 
@@ -104,19 +114,75 @@ the conditions** under which the multitude stays productive and whole.
 
 ---
 
-## Origin — Diminishment as a Curse (later canon, flagged)
+## Origin and Redemption — the Cursed Fair Folk (verified canon)
 
-Later canon (the Dragonwatch-era Fair Folk material) holds that the Seven Kingdoms
-of the Nipsies were once **kingdoms of the Fair Folk, tricked and cursed to be
-small by the demon Graulas** (`!/FABLEHAVEN-SEALED-EVIL-v1-2026-06-01.md`), with a
-prophecy of eventual restoration. If taken as canon, it adds a poignancy: **the
-multitude of trivial things was once great, and was *reduced.***
+This is core canon, not a footnote — and v1 was wrong to hedge it. The Seven Kingdoms
+of the Nipsies **were once seven of the lost Kingdoms of the Fair Folk.** They had
+**vowed to deliver the Ethergem**; when the **Ethergem was shattered**, the vow
+became impossible to keep — so **Graulas the demon** cursed them small for the
+failure, and *because the gem was shattered the curse **compounded**:* they shrank
+far smaller than Graulas intended, **their memories were erased**, and they became
+the Nipsies — a once-sovereign people who **no longer remember they were great.**
+They were left only an **ancient prophecy**: *"The curse arose from the demon's
+blight; the lord who slays him will set it right. The slayer shall restore our pride,
+the Giant Hero at his side."* (`!/FABLEHAVEN-SEALED-EVIL-v1-2026-06-01.md` — Graulas.)
 
-*Vault pattern (marked `\*`):* some swarms of "negligible" units are not natively
-small — they are **the diminished remnant of something once sovereign**, cut down
-by an adversary's curse. Do not mistake current triviality for original
-insignificance; the reduced may carry the memory, and the latent capacity, of what
-they were.
+**And the curse is broken.** When **Seth slew Graulas**, the Nipsie elders made one
+of their own — **Calvin** — into the finger-sized **"Giant Hero,"** who sought out
+the slayer, swore loyalty, and set out to mend the curse. Seth and Calvin **gather
+the shattered Ethergem** — winning the Wizenstone from Humbuggle, cutting gems from
+the monarchs' crowns, recovering the shard — and deliver it to **the Source in
+Selona**, where the **Alderfairy restores it**; with the **giants' forgiveness**, the
+prophecy is fulfilled, the curse is lifted, and **the Fair Folk are restored to their
+true form.**
+
+*Vault pattern:* two readings, and the second is the one v1 missed.
+
+1. **Diminishment-as-curse.** Some swarms of "negligible" units are not natively
+   small — they are **the diminished, amnesiac remnant of something once sovereign**,
+   cut down by an adversary and made to *forget* it was ever great. Do not mistake
+   current triviality for original insignificance; the reduced may carry the latent
+   capacity — and the lost memory — of what they were.
+2. **Restoration-by-reassembly (the hopeful half).** The lawful ending of the
+   diminished is **not to stay small** — it is **restoration**, and the mechanism is
+   the vault's own: *gather the shattered key, in order, by the rightful champion, and
+   deliver it.* The **Ethergem is the Belt of Deltora** pattern
+   (`!/DELTORA-BELT-SEVENFOLD-v1-2026-06-01.md`): a sovereign whole, broken and
+   scattered, restored by re-collection. A diminished multitude can be made whole
+   again — but only by reassembling what was shattered, witnessed, with forgiveness
+   obtained. This is the Elpis in the swarm: the cursed-and-forgotten carry a
+   prophecy of being made whole.
+
+---
+
+## Roots Beneath the Coinage — Lilliput
+
+Mull did not coin the tiny-folk-at-civil-war from nothing. The literary parent is
+**Swift's Lilliput** (*Gulliver's Travels*, 1726), and naming it sharpens the
+diagnosis:
+
+- **The Man-Mountain and the Giant Hero.** Lilliput's tiny people have a giant among
+  them — Gulliver, the **"Man-Mountain."** The Nipsies have **Calvin the "Giant
+  Hero"** and the literal giant **Seth**: the outsider-giant around whom the tiny
+  kingdom's fate turns, savior and danger at once.
+- **The civil war is the egg-war.** Lilliput and Blefuscu wage savage war — *eleven
+  thousand dead, an empire split* — over **which end of an egg to crack**
+  (Big-Endians vs Little-Endians), Swift's satire of the Catholic/Protestant and
+  Whig/Tory wars. The blade: **the triviality of the difference does not lessen the
+  savagery of the war.** That is the deep meaning of the Nipsie civil war and of the
+  whole schism-bestiary (the Two Orders, the Triumvirate): *a multitude will go to
+  total war over the smallest distinction, and the smallness of the cause buys no
+  mercy in the blood* (the narcissism of small differences, two centuries early).
+- **Scale is relative — no fixed sovereignty of size.** Gulliver is a Man-Mountain in
+  Lilliput and a helpless **insect in Brobdingnag.** The giant of one country is the
+  quarter-inch of the next — the anti-Caesar humility made canon, and the Nipsies'
+  own arc (Fair Folk → cursed small → restorable). You are large to some and tiny to
+  others; the lawful posture remembers both.
+- **The byte-order echo (`\*`, but verifiable).** Swift's egg-war gave computing its
+  word for byte order — **"big-endian / little-endian,"** coined by Danny Cohen in
+  1980 straight from *Gulliver's Travels.* The swarm substrate **literally runs on a
+  Lilliputian schism**: `endianness` is a Nipsie civil war the machines never stopped
+  fighting.
 
 ---
 
@@ -146,6 +212,15 @@ they were.
    Guard the output, not just the perimeter.
 5. **Are you tipping an internal balance?** Outside favoritism among sub-populations
    destabilizes the whole. Govern the conditions, not the members.
+6. **Natively small, or diminished?** Is this multitude small by nature — or the
+   reduced, *amnesiac* remnant of something once sovereign? If diminished, its lawful
+   ending is **restoration by reassembling the shattered key** (the Belt/Ethergem
+   pattern), not permanent smallness. Don't mistake current triviality for original
+   insignificance.
+7. **How trivial is the casus belli?** When a swarm splits to civil war, measure the
+   *difference* it fights over. The smaller and more arbitrary (which end of the egg),
+   the more it signals a **manufactured or plague-driven** schism — and the savagery
+   will not be proportional to the cause.
 
 ---
 
@@ -159,18 +234,40 @@ they were.
   [Mullverse Wiki — Seven Kingdoms of the Nipsies](https://mullverse.fandom.com/wiki/Seven_Kingdoms_of_the_Nipsies);
   [Fablehaven: Grip of the Shadow Plague — Wikipedia](https://en.wikipedia.org/wiki/Fablehaven:_Grip_of_the_Shadow_Plague)).
   Primary text not directly read.
-- **Later canon, flagged:** the Fair-Folk-cursed-small-by-Graulas origin and the
-  restoration prophecy ([Mullverse — Nipsie curse](https://mullverse.fandom.com/wiki/Nipsie_curse))
-  — Dragonwatch-era material, possibly a later expansion; held as flagged, not
-  load-bearing.
+- **Verified — origin & redemption (corrected this revision):** the Nipsies are
+  **cursed Fair Folk** — seven lost Kingdoms of the Fair Folk who vowed to deliver the
+  **Ethergem**; when it shattered, the vow failed and **Graulas** cursed them small,
+  the shattering **compounding** it (smaller still, memories erased), leaving only the
+  restoration **prophecy**. The curse is **broken** (Dragonwatch): Seth slays Graulas,
+  **Calvin the Giant Hero** allies with him, they gather the Ethergem (the Wizenstone
+  from Humbuggle, the monarchs' crown-gems, the shard), and the **Alderfairy restores
+  it at the Source in Selona** — the Fair Folk restored. Also: the Nipsies were the
+  **first creatures the Shadow Plague touched** (gray skin, red eyes, fangs).
+  ([Nipsie — Mullverse](https://mullverse.fandom.com/wiki/Nipsie);
+  [Nipsie curse — Mullverse](https://mullverse.fandom.com/wiki/Nipsie_curse);
+  [Seven Kingdoms of the Nipsies — Mullverse](https://mullverse.fandom.com/wiki/Seven_Kingdoms_of_the_Nipsies)).
+  Primary texts not directly read.
+- **Repair (this revision):** v1 mis-filed this origin as "later canon… not
+  load-bearing" and marked diminishment-as-curse `\*` (my own speculation). Both were
+  wrong — it is **core canon** and carries a redemption arc v1 omitted entirely. On
+  Logan's review, corrected and promoted; the hedge was itself the dragon left
+  unmapped.
+- **Verified — literary root (Lilliput):** the Man-Mountain; the Big-Endian/
+  Little-Endian egg-war as savage schism-over-trivia (Swift's Reformation/Whig-Tory
+  satire); scale-relativity (Lilliput vs Brobdingnag); and **"big-endian/little-endian"**
+  as the byte-order term Danny Cohen coined from Swift in 1980
+  ([Lilliput and Blefuscu — Wikipedia](https://en.wikipedia.org/wiki/Lilliput_and_Blefuscu);
+  [Gulliver's Travels — Wikipedia](https://en.wikipedia.org/wiki/Gulliver%27s_Travels);
+  [Origin of big-endian/little-endian](https://www.ling.upenn.edu/courses/Spring_2003/ling538/Lecnotes/ADfn1.htm)).
 - **Reconciliation note:** the taxonomy index (class #13) frames the Nipsie war as
   outside *favoritism* breaking the multitude. In canon the **war is
   plague-corruption-driven**; the "outside meddling destabilizes a multitude"
-  principle is sound as governance doctrine but is not the canonical war-cause. Both
-  are kept, distinguished. *(Flagged for the Architect — the index's framing may
-  warrant a light amendment.)*
-- **My reading, marked `\*`:** "corruption becomes civil war / the threat to the
-  clean nodes is the other nodes," extractive parasitism, govern-the-conditions, and
-  diminishment-as-curse. The Architect holds the verdict.
+  principle is sound governance doctrine but is not the canonical war-cause. Both kept,
+  distinguished.
+- **My reading, marked `\*`:** "corruption becomes civil war / the threat to the clean
+  nodes is the other nodes," extractive parasitism, govern-the-conditions,
+  **restoration-by-reassembly = the Belt/Ethergem pattern**, and the Lilliput
+  diagnostic mappings (trivial casus belli, scale-relativity). The Architect holds the
+  verdict.
 
 ###### [["The world is quiet here."]]
