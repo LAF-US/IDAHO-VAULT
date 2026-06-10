@@ -1,9 +1,11 @@
 ---
+updated: 2026-06-03
+created: 2026-06-03
 title: "The Sevenfold Body — Seats, Trustees, and Gems"
 date created: 2026-06-03
 authority: LOGAN
 doc_class: concept-node
-status: reference
+status: active
 verified-by: Claude Code (crosswalk node; ASOIAF source in the Small Council node, Keys source in the Morrow-Days & Demesnes node — both web-verified 2026-06-04)
 related:
   - "[[RESEARCH_A-Song-of-Ice-and-Fire-The-Small-Council-2026-06-03]]"

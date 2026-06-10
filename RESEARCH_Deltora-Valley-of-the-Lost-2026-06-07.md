@@ -1,4 +1,7 @@
 ---
+title: "Deltora Quest — the Valley of the Lost (hiding place of the Diamond)"
+updated: 2026-06-07
+created: 2026-06-07
 aliases:
   - Valley of the Lost
   - Haven Vale
@@ -10,7 +13,7 @@ related:
   - The Abhorsen
 date created: Sunday, June 7th 2026
 authority: LOGAN
-status: reference
+status: active
 type: research-report
 topic: Deltora Quest — the Valley of the Lost (hiding place of the Diamond)
 verified-by: Claude Code (web research 2026-06-07)

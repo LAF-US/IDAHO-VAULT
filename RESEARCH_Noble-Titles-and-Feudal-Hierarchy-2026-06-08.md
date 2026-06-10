@@ -1,4 +1,7 @@
 ---
+title: "Noble titles, lordships, vassalage, and the feudal hierarchy"
+updated: 2026-06-08
+created: 2026-06-08
 related:
   - RESEARCH
   - "[[RESEARCH_A-Song-of-Ice-and-Fire-Geography-and-Politics-2026-06-01]]"
@@ -6,7 +9,7 @@ related:
   - The Abhorsen
 date created: Monday, June 8th 2026
 authority: LOGAN
-status: reference
+status: active
 type: research-report
 topic: Noble titles, lordships, vassalage, and the feudal hierarchy
 verified-by: Claude Code (web research 2026-06-08)

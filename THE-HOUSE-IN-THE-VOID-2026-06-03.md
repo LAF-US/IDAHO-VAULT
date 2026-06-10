@@ -1,9 +1,11 @@
 ---
+updated: 2026-06-03
+created: 2026-06-03
 title: "The House in the Void"
 date created: 2026-06-03
 authority: LOGAN
 doc_class: synthesis
-status: reference
+status: active
 verified-by: Claude Code (Keys/Hades/Oz via web research 2026-06-03/04; ASOIAF grounded in vault nodes; EMANATIONISM & LICH-PROBLEM read. ⚠️ Repair 2026-06-08 — the vault's existing OZ-COSMOLOGY-DOCTRINE and stub .hades/.persephone chambers were NOT consulted in the original draft; now linked.)
 related:
   - "[[THE-SEVENFOLD-BODY-SEATS-TRUSTEES-GEMS-2026-06-03]]"

@@ -1,4 +1,7 @@
 ---
+title: "A Song of Ice and Fire — the Maesters and the Citadel"
+updated: 2026-06-02
+created: 2026-06-02
 related:
   - RESEARCH
   - "[[RESEARCH_A-Song-of-Ice-and-Fire-Geography-and-Politics-2026-06-01]]"
@@ -7,7 +10,7 @@ related:
   - The Abhorsen
 date created: Tuesday, June 2nd 2026
 authority: LOGAN
-status: reference
+status: active
 type: research-report
 topic: A Song of Ice and Fire — the Maesters and the Citadel
 verified-by: Claude Code (web research + synthesis)

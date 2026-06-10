@@ -1,4 +1,6 @@
 ---
+updated: 2026-06-10
+created: 2026-06-10
 title: "'Lich' Is a Charge, Not a Metaphor — a Diagnosis Applied to an Agent"
 date created: 2026-06-10
 authority: LOGAN

@@ -1,11 +1,14 @@
 ---
+title: "A Song of Ice and Fire — current-state survey"
+updated: 2026-06-01
+created: 2026-06-01
 related:
   - RESEARCH
   - The Abhorsen
   - AI-CAPTURES
 date created: Monday, June 1st 2026
 authority: LOGAN
-status: reference
+status: active
 type: research-report
 topic: A Song of Ice and Fire — current-state survey
 verified-by: Claude Code (web research)
