@@ -23,7 +23,7 @@ date: 2026-06-07
 # The Belt of Deltora — Power & Legitimacy
 
 > Deltora's great talisman — and the **conditions** under which its power actually works. Pure source.
-
+>
 > **Provenance.** Web-verified 2026-06-07 (Deltora Quest Wiki, Wikipedia). **[canon-per-series].** Paraphrased.
 
 ## What it is

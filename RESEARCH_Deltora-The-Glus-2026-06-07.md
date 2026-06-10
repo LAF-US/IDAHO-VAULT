@@ -22,7 +22,7 @@ date: 2026-06-07
 # The Glus — Guardian of the Amethyst
 
 > Keeper of the **Amethyst** in the **Maze of the Beast** — and one of the few guardians never truly slain. One of seven (→ `[[RESEARCH_Deltora-The-Gem-Guardians-2026-06-07]]`). Pure source.
-
+>
 > **Provenance.** Web-verified 2026-06-07 (Deltora Quest Wiki, Wikipedia). **[canon-per-series].** Paraphrased.
 
 ## Appearance

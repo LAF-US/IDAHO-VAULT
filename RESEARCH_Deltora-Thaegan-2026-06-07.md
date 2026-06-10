@@ -22,7 +22,7 @@ date: 2026-06-07
 # Thaegan — Sorceress of the Lake of Tears
 
 > One of the Shadow Lord's most powerful servants — the sorceress who drowned a city and bound the Guardian **[[RESEARCH_Deltora-Soldeen-2026-06-07\|Soldeen]]**. Mother of the **[[RESEARCH_Deltora-Thaegans-Brood-2026-06-07\|brood]]**. Pure source.
-
+>
 > **Provenance.** Web-verified 2026-06-07 (Deltora Quest Wiki, Wikipedia). **[canon-per-series].** Paraphrased.
 
 ## Identity & allegiance

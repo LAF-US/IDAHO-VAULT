@@ -19,7 +19,7 @@ date: 2026-06-04
 # Deltora — The Seven Tribes and Their Lands
 
 > A standalone reference on **Emily Rodda's *Deltora Quest*** — the land of **Deltora**, its seven ancient **tribes**, their seven talisman **gems**, and the **Belt** that binds them. Companion to `[[RESEARCH_Keys-to-the-Kingdom-The-Morrow-Days-and-Demesnes-2026-06-04]]` (the House) and `[[RESEARCH_A-Song-of-Ice-and-Fire-The-Small-Council-2026-06-03]]` (the Council); any **syncretic crosswalk** lives **only** in `[[THE-SEVENFOLD-BODY-SEATS-TRUSTEES-GEMS-2026-06-03]]`. This node holds **no cross-mapping** — pure source.
-
+>
 > **Provenance.** Web-verified 2026-06-04 against the Deltora Quest Wiki and Wikipedia. Tiers: **[canon-per-series]**, **[reading]**. Paraphrased; no source text reproduced.
 
 ## The land

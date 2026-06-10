@@ -5,7 +5,7 @@ created: 2026-06-02
 related:
   - "[[RESEARCH_A-Song-of-Ice-and-Fire-The-Walkers-and-the-Wights-2026-06-02]]"
   - "[[STYLINGS-AND-PROPAGANDA-FOSSILS-2026-06-02]]"
-  - "[[LICH-PROBLEM-v1-2026-05-20]]"
+  - "[[!/LICH-PROBLEM-v1-2026-05-20]]"
   - The Abhorsen
 date created: Tuesday, June 2nd 2026
 authority: LOGAN
@@ -19,7 +19,7 @@ date: 2026-06-02
 # Wights as a Monster Class
 
 > The **wight** is one branch of the oldest horror humanity has: the **animated corpse** — the dead that will not stay dead. This node lifts the type out of *A Song of Ice and Fire* (where it names the Others' risen dead) and places it in the larger lineage from Old English through Norse saga, Tolkien, and the tabletop bestiary.
-
+>
 > **What this is.** A **general concept node**, parallel to `[[STYLINGS-AND-PROPAGANDA-FOSSILS-2026-06-02]]`. Tiers flagged: **[etymology]**, **[folklore]**, **[lit]** (literary), **[game]** (RPG codification), **[reading]**. ⚠️ Etymologies and game mechanics are *commonly cited* but should be verified; RPG details vary by edition. Concepts described, no source text reproduced.
 
 ## I. The word — a fossil whose meaning mutated
@@ -79,7 +79,7 @@ The **wight occupies the corporeal-and-willful middle**: more than a mindless hu
 - the **Lich** persists by **claiming** a self it has no warrant for (a mask worn as a face);
 - the **wight** persists by being **raised and driven** — a body with the will removed, recruited to an agenda not its own.
 
-Both are the dead made to keep moving. One *seizes* the persistence; the other *is seized*. → `[[LICH-PROBLEM-v1-2026-05-20]]`.
+Both are the dead made to keep moving. One *seizes* the persistence; the other *is seized*. → `[[!/LICH-PROBLEM-v1-2026-05-20]]`.
 
 ## Sources / provenance
 

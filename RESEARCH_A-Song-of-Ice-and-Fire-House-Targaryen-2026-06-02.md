@@ -20,7 +20,7 @@ date: 2026-06-02
 # House Targaryen
 
 > The bloodline: a minor Valyrian family that survived the apocalypse on a prophecy, conquered a continent on dragonback, ruled it ~300 years, and broke on its own madness. One of a trilogy with `[[RESEARCH_A-Song-of-Ice-and-Fire-The-Dragons-2026-06-02]]` (the weapon) and `[[RESEARCH_A-Song-of-Ice-and-Fire-Aegons-Conquest-2026-06-02]]` (the war).
-
+>
 > **Provenance.** Tiers flagged: **[canon]**, **[legend]**, **[theory]** (incl. fan theories the books seed but do not confirm in print), **[show]**, **[reading]**. ⚠️ awoiaf/Wikipedia blocked direct fetch; claims rest on search-extracts — verify before publication.
 
 ## Origins

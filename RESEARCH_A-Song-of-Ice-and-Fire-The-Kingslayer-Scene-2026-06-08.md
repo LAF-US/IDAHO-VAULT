@@ -23,7 +23,7 @@ date: 2026-06-08
 # The Kingslayer Scene — Jaime, Aerys, and the Iron Throne
 
 > Ned Stark's defining memory of the end of **Robert's Rebellion**: a sworn knight of the **Kingsguard** found seated upon the **Iron Throne**, the king he was sworn to protect dead at its foot. Pure ASOIAF source.
-
+>
 > **Provenance.** Web-verified 2026-06-08 (A Wiki of Ice and Fire, Wikipedia, Fandom). Tiers: **[canon]**, ⚠️ **[show]** where noted. Paraphrased; no source text reproduced.
 
 ## The setting

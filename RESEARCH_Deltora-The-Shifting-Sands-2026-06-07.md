@@ -22,7 +22,7 @@ date: 2026-06-07
 # The Shifting Sands — Hiding Place of the Lapis Lazuli
 
 > The **fourth** guarded peril — hiding place of the **Lapis Lazuli**, kept by **[[RESEARCH_Deltora-The-Hive-2026-06-07\|the Hive]]**. One of seven (→ `[[RESEARCH_Deltora-The-Gem-Guardians-2026-06-07]]`). Pure source.
-
+>
 > **Provenance.** Web-verified 2026-06-07 (Deltora Quest Wiki, Wikipedia). **[canon-per-series].** Paraphrased.
 
 ## Geography

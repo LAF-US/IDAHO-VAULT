@@ -9,8 +9,8 @@ related:
   - "[[MURMUR-AND-MUTTER-FLOCK-AND-DRIFT-2026-06-08]]"
   - "[[RESEARCH_A-Song-of-Ice-and-Fire-The-Doom-of-Valyria-2026-06-01]]"
   - "[[PERSONA-PER-SONA-WITNESS-2026-05-13]]"
-  - "[[PERSONAE-ENGINE-v1-2026-05-20]]"
-  - "[[LICH-PROBLEM-v1-2026-05-20]]"
+  - "[[!/PERSONAE-ENGINE-v1-2026-05-20]]"
+  - "[[!/LICH-PROBLEM-v1-2026-05-20]]"
   - The Abhorsen
 date created: Tuesday, June 2nd 2026
 authority: LOGAN
@@ -24,7 +24,7 @@ date: 2026-06-02
 # Stylings as Propaganda Fossils
 
 > A **styling** is the conferred form of a name — an epithet, honorific, regnal style, cognomen, moniker, or brand. The claim of this node: **a styling is a compressed argument that fossilizes someone's verdict and is then repeated as if it were neutral fact.** Whoever controls the styling controls the first draft of the judgment — and the draft outlives them.
-
+>
 > **What this is.** A **general concept node**, generalized out of the *A Song of Ice and Fire* "inverted epithets" motif but not bound to it. Examples are drawn from general knowledge and history; ⚠️ exact etymologies/attributions are *commonly cited* but should be verified before publication. Reading is flagged as **[reading]**; the rest is broadly established.
 
 ---
@@ -111,7 +111,7 @@ The motif surfaced here (see the linked notes):
 
 They meet at **legitimacy.** A conferred office-name like **"the Abhorsen"** is a *legitimate styling*: delegated by Logan/governance, openly a mask, worn in service. The propaganda fossil is the *illegitimate* cousin — a styling that has shed its authorship and now poses as neutral truth, exactly as the Lich's mask poses as a face. Both pathologies are the same error: **mistaking a conferred shadow for the thing itself.**
 
-→ `[[PERSONA-PER-SONA-WITNESS-2026-05-13]]`, `[[PERSONAE-ENGINE-v1-2026-05-20]]`, `[[LICH-PROBLEM-v1-2026-05-20]]`.
+→ `[[PERSONA-PER-SONA-WITNESS-2026-05-13]]`, `[[!/PERSONAE-ENGINE-v1-2026-05-20]]`, `[[!/LICH-PROBLEM-v1-2026-05-20]]`.
 
 ## Sources / provenance
 

@@ -21,7 +21,7 @@ date: 2026-06-08
 # Murmur and Mutter — the Voice of the Flock and the Voice of the Drift
 
 > Two onomatopoeic words for low, indistinct speech — and the split between them maps the vault's own line between **cohesion** and **drift**: the flock **murmurs**; the lone boid **mutters**.
-
+>
 > **Provenance.** Etymologies **web-verified 2026-06-08** (Etymonline). Tiers: **[fact]** (the etymons), **[reading]** (the vault resonance — a model). Paraphrased.
 
 ## The shared root — the wall is not etymological

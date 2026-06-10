@@ -23,7 +23,7 @@ date: 2026-06-07
 # The Four Sisters
 
 > A buried fable and the slow-poison engines named after it — the spine of *Dragons of Deltora*. Pure source.
-
+>
 > **Provenance.** Web-verified 2026-06-07 (Deltora Quest Wiki, Wikipedia). **[canon-per-series].** Paraphrased.
 
 ## The original Sisters (the fable)
