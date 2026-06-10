@@ -37,7 +37,7 @@ Read across, each row is the full provenance of one unit of the kingdom's
 distributed defense.
 
 The gems are set in the Belt in the order that spells the kingdom's name —
-**D-E-L-T-O-R-A**: Diamond, Emerald, Lapis-lazuli, Topaz, Opal, Ruby, Amethyst.
+**D-E-L-T-O-R-A**: Diamond, Emerald, Lapis Lazuli, Topaz, Opal, Ruby, Amethyst.
 That ordering is itself doctrine (see below). The matrix is given in belt order:
 
 | Gem | Virtue / what it senses | Tribe (owner) | Dragon (its virtue, alive) | Guardian (Quest 1) | Land of exile |
@@ -79,11 +79,15 @@ Seven tribes (Jalis, Dread Gnome, Mere, Del, Plains, Ralad, Tora), each holding
 **one** gem as its talisman and treasure. No tribe holds the whole. The Belt
 exists *because* Adin united seven holders who each kept one share.
 
-*Vault pattern:* a **secret-sharing / M-of-N** architecture. The kingdom's
-root-of-trust is deliberately **split across seven independent custodians** so
-that no single party can wield it alone — or lose it alone. Federation as
-resilience: distribution is the security. (And the cost: the whole only
-functions when the holders cooperate and the shares are reunited.)
+*Vault pattern:* a **secret-sharing / M-of-N** architecture *while the shares are
+held apart* — the kingdom's root-of-trust is deliberately **split across seven
+independent custodians** so that no single party can wield it alone, or lose it
+alone. Federation as resilience: distribution is the security. (And the cost: the
+whole only functions when the holders cooperate and the shares are reunited.) But
+note the inversion once assembled: the reunited Belt is **worn by a single
+custodian — the heir** — so the operating form is single-custodian, and the
+single-custodian failure mode (palace custody, royal isolation, then scattering)
+is exactly what took the whole protection offline.
 
 ### Lands — Geography as Attack Surface
 Two geographies, and the gap between them is the conquest. The gems began in the
@@ -123,10 +127,14 @@ the last of each in **enchanted sleep**, to be **awakened by the Belt.**
 *Vault pattern:* the gem is the **static anchor**; the dragon is the **live
 agent** that the anchor empowers — token and service, key and running process.
 The adversary attacked **both prongs**: scatter the gems *and* hunt the dragons
-asleep. The two halves are coupled — **reassembling the keys (the Belt) wakes
-the services (the dragons).** Restore the root-of-trust and the live agents come
-back online; and the live agent always embodies the credential's *purpose*, not
-just its power.
+asleep. The two halves are coupled — the true Belt is what **wakes
+the services (the dragons)** — but the waking is **per-territory work**, not
+automatic on reassembly: the heir must carry the Belt into each dragon's land and
+awaken it one by one (Fidelis stays asleep until the wearer enters Topaz
+territory), honoring the territorial promise that determines which dragon can
+respond where. Restore the root-of-trust and the live agents can come back online,
+service by service; and the live agent always embodies the credential's *purpose*,
+not just its power.
 
 ---
 
@@ -139,9 +147,11 @@ Adin.** Six gems, or seven in the wrong order, or the right Belt on the wrong
 wielder — **inert.**
 
 *Vault pattern:* a capability that is real only when **complete, correctly
-configured, and bound to a legitimate identity.** Possession is not power;
-partial assembly is not partial power but *no* power; and the same artifact in
-an unauthorized wielder does nothing. This is the Standing Engine made literal
+configured, and bound to a legitimate identity.** Possession is not the *sovereign*
+power; for the final, kingdom-level function partial assembly is not partial power
+but *no* power (individual gems still carry usable powers during the quest — the
+incomplete Belt is insufficient for the banishing, not inert for every purpose);
+and the same artifact in an unauthorized wielder does nothing for that final act. This is the Standing Engine made literal
 (`!/STANDING-ENGINE-AND-LAWFUL-ENDINGS-2026-04-17.md`): the wielder's earned,
 verified standing is **part of the mechanism**, not a check bolted on beside it.
 
