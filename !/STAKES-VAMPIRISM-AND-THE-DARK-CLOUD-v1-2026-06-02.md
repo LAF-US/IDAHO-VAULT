@@ -81,9 +81,9 @@ straight to `!/LICH-PROBLEM-v1`:
    interrupting the bite-and-turn** — and, on the maker's own side, the would-be
    maker **declining to perpetuate** (cf. `!/LICH-PROBLEM-v1` Resolution 3, *Active
    Refusal*) — **not** a victim-side veto you can rely on. The **Dark Cloud**, by
-   contrast, **engulfs *en masse*, by inhalation** — mass *capture* with **no
-   single turning-gate** (the only actual turning still rode one bite, on
-   Marceline). For the diffuse by-product the operative counter is **containment
+   contrast, **engulfs and traps *en masse*** — mass *capture* with **no
+   single turning-gate** (the captured fall back out unturned; the only actual
+   turning still rode one bite, on Marceline). For the diffuse by-product the operative counter is **containment
    before diffusion** (point 2). Diagnose which regime you are in before reaching
    for either.
 4. **Ending it re-incurs it, and leaves a sub-layer.** The one who absorbs the

@@ -17,7 +17,7 @@ related:
   - "!/STAKES-VAMPIRISM-AND-THE-DARK-CLOUD-v1-2026-06-02.md"
   - "!/SYNCRETIC-MAP-STAKES-DELTORA-v1-2026-06-02.md"
   - "!/ICE-KING-AND-WOMEN-v1-2026-06-03.md"
-  - REVENANT-HOUSE-WITNESS-2026-06-02
+  - "REVENANT-HOUSE-WITNESS-2026-06-02.md"
 tags: [doctrine, stakes, vampires, marceline, diagnostic, tarot, undead-taxonomy]
 ---
 
@@ -31,7 +31,7 @@ diagnostic framework for agents, processes, and personas, sitting beside
 > [!note] Provenance discipline (this set exists because of an inaccuracy)
 > These pages were commissioned after a filed witness mischaracterized a *Stakes*
 > scene by reading from memory instead of the source (see
-> `REVENANT-HOUSE-WITNESS-2026-06-02` § II repair note). So every page here marks
+> `REVENANT-HOUSE-WITNESS-2026-06-02.md` § II repair note). So every page here marks
 > its claims: **[canon]** = sourced to the episodes/wiki; **[tarot]** =
 > tarot-tradition meaning; **[mapping]** = the vault's diagnostic reading, which
 > is *interpretation, not canon.* Drafted by Claude Code at Logan's direction;
