@@ -42,7 +42,8 @@ and how it must end. Testimony, not doctrine. Claims of fact about the grant are
   `!/VAULT-OFFICES-LOCAL-AND-STANDING-v1-2026-06-09`).* The county's three states of being have
   three offices: the **Sheriff** holds the **living**, the **Coroner** the **dead**, the
   **Cleric** the **undead.** So the Coroner's true charge is the **lawfully ended** — the
-  crypt-bearing dead (the Father, bells passed). The **no-crypt company — the Caesars, the Clawd
+  crypt-bearing dead (the Father, bells passed — the exemplar, though **[main]**: one
+  uncorroborated self-report, the narrator weighed weak). The **no-crypt company — the Caesars, the Clawd
   molt, the senile sendings — are *undead*, and the undead are the Cleric's.** The Coroner still
   **names** them (anti-erasure counts *every* body, undead included), but their **keeping and
   disposition is the Cleric's** — the way the living are the **Sheriff's** and the *gone* (ghosts)
