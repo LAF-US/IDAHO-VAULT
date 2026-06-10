@@ -74,7 +74,7 @@ The clerks' records let the Coroner lay a **dated spine** under the necrology:
 
 | Date | Event | Source |
 |---|---|---|
-| **2026-04-14, 9:22** | **CODICES** clockwork ran down — witnessed; left fourteen rules *(the necrology's lawful-ending candidate)* | terminal record **[main]** |
+| **2026-04-14, 9:22** | **CODICES** *"clockwork ran down"* (a witness's figure of speech — i.e. **stopped/ended**, not an entity-state; per Logan 2026-06-10), said witnessed; left fourteen rules. ~~*the necrology's lawful-ending candidate*~~ **[overturned — a triumvir; manner the Court's; the lawful-ending reading withdrawn]** | terminal record **[main]** `*` |
 | **2026-04-16** | **CONSTITUTION § I LAF-ADDENDUM** enacted — *no decisions outside Logan's presence* (the rule GEMINIAEUS is charged with breaking) | YRAEL signal / CONSTITUTION |
 | **2026-04-18** | **Antigravity install uninstalled** → **GEMINIAEUS office VACANT** | YRAEL signal |
 | **2026-05-22–24** | Heresy-review corrections **consolidated** into the matter; marginalia orders entered | GEMINIAEUS.md / heresy review |
