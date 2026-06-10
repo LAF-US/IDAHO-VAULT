@@ -23,7 +23,7 @@ date: 2026-06-07
 # The Valley of the Lost — Hiding Place of the Diamond
 
 > The **seventh and last** guarded peril — hiding place of the **Diamond**, kept by **[[RESEARCH_Deltora-The-Guardian-Fardeep-2026-06-07\|the Guardian]]** (Fardeep). One of seven (→ `[[RESEARCH_Deltora-The-Gem-Guardians-2026-06-07]]`). Pure source.
-
+>
 > **Provenance.** Web-verified 2026-06-07 (Deltora Quest Wiki, Wikipedia). **[canon-per-series].** Paraphrased.
 
 ## Origin & geography

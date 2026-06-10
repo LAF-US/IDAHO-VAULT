@@ -22,7 +22,7 @@ date: 2026-06-07
 # The Forests of Silence — Hiding Place of the Topaz
 
 > The **first** of the seven guarded perils — hiding place of the **Topaz**, kept by **[[RESEARCH_Deltora-Gorl-2026-06-07\|Gorl]]**. One of seven (→ `[[RESEARCH_Deltora-The-Gem-Guardians-2026-06-07]]`). Pure source.
-
+>
 > **Provenance.** Web-verified 2026-06-07 (Deltora Quest Wiki, Wikipedia). **[canon-per-series].** Paraphrased.
 
 ## Geography

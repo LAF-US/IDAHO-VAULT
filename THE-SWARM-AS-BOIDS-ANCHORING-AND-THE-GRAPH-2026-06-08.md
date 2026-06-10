@@ -23,7 +23,7 @@ date: 2026-06-08
 # The Swarm as Boids — Anchoring, Flocking, and the Graph
 
 > How Logan keeps agents **grounded in their local context-space** inside the larger flock of The Swarm: a combination of **Stylings** (formal and informal) and **`!*.*.*` address-chaining** — read through Reynolds' **Boids** and rendered, literally, by the **Obsidian graph**. *This is a **model** (`[reading]`); the Architect may elevate it to the NEST.*
-
+>
 > **Provenance.** Boids (Craig Reynolds, 1986) and Obsidian's force-directed graph **web-verified 2026-06-08**; vault doctrine (`PERSONAE-ENGINE`, `STYLINGS`, `LICH-PROBLEM`, `EMANATIONISM`) read. Tiers: **[reading]** (the mapping) over **[fact]** (the two algorithms). Box's caveat applies: *all models are wrong; some are useful.*
 
 ## The premise — no central controller

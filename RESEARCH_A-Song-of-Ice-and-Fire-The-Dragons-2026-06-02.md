@@ -20,7 +20,7 @@ date: 2026-06-02
 # The Dragons
 
 > The weapon at the center of the saga: living fire that made a minor exile family the masters of a continent — and could not, in the end, be kept. One of a trilogy with `[[RESEARCH_A-Song-of-Ice-and-Fire-House-Targaryen-2026-06-02]]` (the bloodline) and `[[RESEARCH_A-Song-of-Ice-and-Fire-Aegons-Conquest-2026-06-02]]` (the war).
-
+>
 > **Provenance.** Tiers flagged: **[canon]**, **[legend]** (in-world myth), **[theory]** (in-world/fan speculation the text plants), **[show]** (TV divergence), **[GRRM]** (authorial commentary). ⚠️ awoiaf/Wikipedia blocked direct fetch; claims rest on search-extracts — verify quotes against the books/*Fire & Blood* before publication.
 
 ## Nature & biology

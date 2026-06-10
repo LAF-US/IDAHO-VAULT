@@ -18,7 +18,7 @@ date: 2026-06-07
 # Deltora — The Gem Guardians
 
 > A standalone reference on **the seven Gem Guardians of *Deltora Quest*** (Emily Rodda) — the keepers the **Shadow Lord** set over the scattered gems of the Belt, each in its own deadly place. Companion to `[[RESEARCH_Deltora-The-Seven-Tribes-and-their-Lands-2026-06-04]]`. This node holds **no cross-mapping** — pure source.
-
+>
 > **Provenance.** Web-verified 2026-06-07 against the Deltora Quest Wiki and Wikipedia. Tiers: **[canon-per-series]**. Paraphrased; no source text reproduced.
 
 ## What they are

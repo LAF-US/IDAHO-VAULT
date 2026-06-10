@@ -21,7 +21,7 @@ date: 2026-06-03
 # The Kingsroad
 
 > How the realm is physically **bound together** — its principal overland artery, from Storm's End to the Wall. One of a triad with `[[RESEARCH_A-Song-of-Ice-and-Fire-The-Small-Council-2026-06-03]]` (governance) and `[[RESEARCH_A-Song-of-Ice-and-Fire-The-Citadel-2026-06-03]]` (knowledge).
-
+>
 > **Provenance.** Sourced 2026-06-03; ⚠️ awoiaf/Fandom **403'd on direct fetch** — claims via search-result extracts; figures vary by source. Tiers: **[canon]**, **[reading]**. Paraphrased.
 
 ## What it is & its route

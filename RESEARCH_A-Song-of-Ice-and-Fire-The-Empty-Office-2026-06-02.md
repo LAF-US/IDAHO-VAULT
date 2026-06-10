@@ -20,7 +20,7 @@ date: 2026-06-02
 # The Empty Office — Power as Shared Fiction
 
 > *"Gaius Caesar means to seat a racehorse where Cincinnatus sat."*
-
+>
 > **What this is.** An **interpretive synthesis**, not a fact-catalogue — the thematic spine that surfaced across the *A Song of Ice and Fire* research thread. It braids in-world canon, real-world history, and a reading. Three tiers are flagged: **[canon]** (ASOIAF text / *TWOIAF* / *Fire & Blood*), **[history]** (real-world), and **[reading]** (interpretation — mine, not authorial). ⚠️ ASOIAF quotes rest on memory + search-extracted awoiaf (wikis blocked direct fetch); verify verbatim against the books before publication.
 
 ---

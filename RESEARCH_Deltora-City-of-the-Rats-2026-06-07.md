@@ -23,7 +23,7 @@ date: 2026-06-07
 # The City of the Rats — Hiding Place of the Opal
 
 > The **third** guarded peril — hiding place of the **Opal**, kept by **[[RESEARCH_Deltora-Reeah-2026-06-07\|Reeah]]**. One of seven (→ `[[RESEARCH_Deltora-The-Gem-Guardians-2026-06-07]]`). Pure source.
-
+>
 > **Provenance.** Web-verified 2026-06-07 (Deltora Quest Wiki, Wikipedia). **[canon-per-series].** Paraphrased.
 
 ## Origin & geography

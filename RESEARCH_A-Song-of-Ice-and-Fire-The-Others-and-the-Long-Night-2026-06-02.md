@@ -21,7 +21,7 @@ date: 2026-06-02
 # The Others and the Long Night
 
 > The threat the saga is half-named for. While the realm fights over a chair, an ancient enemy of ice gathers in the far north — and the histories have filed the last apocalypse under legend. One of a trilogy with `[[RESEARCH_A-Song-of-Ice-and-Fire-The-Wall-and-the-Watch-2026-06-02]]` and `[[RESEARCH_A-Song-of-Ice-and-Fire-Beyond-the-Wall-2026-06-02]]`.
-
+>
 > **Provenance.** Tiers: **[canon]**, **[legend]** (in-world myth, esp. the deep past), **[theory]**, **[show]**, **[reading]**. ⚠️ The Others are **deliberately mysterious in the books**, and this is the topic with the **largest book-vs-show divergence** — flagged heavily. Verify before publication.
 
 ## The Others

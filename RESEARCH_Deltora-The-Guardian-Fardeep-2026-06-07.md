@@ -22,7 +22,7 @@ date: 2026-06-07
 # The Guardian (Fardeep) — Keeper of the Diamond
 
 > Keeper of the last gem, the **Diamond**, in the **Valley of the Lost** — a cursed man bound to his own vices. One of seven (→ `[[RESEARCH_Deltora-The-Gem-Guardians-2026-06-07]]`). Pure source.
-
+>
 > **Provenance.** Web-verified 2026-06-07 (Deltora Quest Wiki, Wikipedia). **[canon-per-series].** Paraphrased.
 
 ## Identity & origin

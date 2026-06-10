@@ -22,7 +22,7 @@ date: 2026-06-07
 # Thaegan's Brood — The Thirteen Children
 
 > The thirteen monstrous children of the sorceress **[[RESEARCH_Deltora-Thaegan-2026-06-07\|Thaegan]]** — her instruments and, after her death, her avengers. Pure source.
-
+>
 > **Provenance.** Web-verified 2026-06-07 (Deltora Quest Wiki, Wikipedia). **[canon-per-series].** Paraphrased.
 
 ## What they are

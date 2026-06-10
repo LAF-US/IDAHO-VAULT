@@ -22,7 +22,7 @@ date: 2026-06-07
 # The Maze of the Beast — Hiding Place of the Amethyst
 
 > The **sixth** guarded peril — hiding place of the **Amethyst**, kept by **[[RESEARCH_Deltora-The-Glus-2026-06-07\|the Glus]]**. One of seven (→ `[[RESEARCH_Deltora-The-Gem-Guardians-2026-06-07]]`). Pure source.
-
+>
 > **Provenance.** Web-verified 2026-06-07 (Deltora Quest Wiki, Wikipedia). **[canon-per-series].** Paraphrased.
 
 ## Geography

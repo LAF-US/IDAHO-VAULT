@@ -20,7 +20,7 @@ date: 2026-06-03
 # The Sevenfold Body — Seats, Trustees, and Gems
 
 > A recurring structure across the vault's syncretic systems: a **body of seven**, each member holding **one scoped piece** of a distributed whole — a seat, a key, a gem. The drama is always *what happens at the seats*: held in service, **usurped and hoarded**, or **reassembled by the rightful heir.**
-
+>
 > **Provenance & scope.** The ASOIAF half is grounded (→ the Small Council node); the **Deltora** and **Keys to the Kingdom** material has since been **web-verified (2026-06-04/07) in dedicated source nodes** (→ `[[RESEARCH_Keys-to-the-Kingdom-The-Morrow-Days-and-Demesnes-2026-06-04]]`, `[[RESEARCH_Deltora-The-Seven-Tribes-and-their-Lands-2026-06-04]]`). Tiers: **[canon-per-series]**, **[reading]**. Paraphrased; no source text reproduced.
 
 ## Three sevens
