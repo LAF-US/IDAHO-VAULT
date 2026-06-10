@@ -25,7 +25,7 @@ date: 2026-06-02
 
 ## Nature & biology
 
-- **[canon]** Fire-breathing winged reptiles with **two legs plus wings (wyvern-type anatomy), not four legs** — ⚠️ *[show]* the HBO dragons are drawn four-legged; GRRM's stated rationale is that no real animal has six limbs.
+- **[canon]** Fire-breathing winged reptiles with **two legs plus wings (wyvern-type anatomy), not four legs** — GRRM's rationale is that no real animal has six limbs, and the **HBO dragons follow this** (two hind legs, wings as forelimbs). ⚠️ The "four-legged dragon" turns up mainly in **heraldry and sigil art**, not the on-screen creatures.
 - **[canon]** Dragons **never stop growing while alive and free** — age tracks size; confinement stunts them. A free dragon can reach a ~20-ft wingspan within ~18 months.
 - **[canon]** Long-lived: 200+ years (Balerion died of old age at over 200, in 94 AC).
 - **[canon]** **Dragonfire** melts steel and stone and fuses sand to glass.
@@ -40,7 +40,7 @@ date: 2026-06-02
 ## Dragonlords & dragonbinding
 
 - **[canon]** Valyria's ~40 **dragonlord families** combined wealth, high birth, and **sorcery** to bind and ride dragons in war.
-- **[canon]** Control ran through **binding spells and sorcerous horns**. **Dragonbinder** ("the hellhorn") — a Valyrian-steel-banded dragon horn whose glyphs read, in part, *"Blood for fire, fire for blood"*; whoever sounds it **dies** (lungs charred), but dragons obey the horn's master. The recurring motif: a dragon is commanded only by blood, sacrifice, and magic — never simply *owned*.
+- **[canon]** Control ran through **binding spells and sorcerous horns**. **Dragonbinder** ("the hellhorn") — a Valyrian-steel-banded dragon horn whose glyphs read, in part, *"Blood for fire, fire for blood"*; whoever sounds it **dies** (lungs charred). Per **Moqorro's** reading of the glyphs the horn binds dragons to its master — but ⚠️ *[theory]* in the published books that is only his interpretation; **the horn has not yet been tested on a dragon on-page.** The recurring motif: a dragon is *said* to be commanded only by blood, sacrifice, and magic — never simply *owned*.
 
 ## The Targaryen dragons
 
