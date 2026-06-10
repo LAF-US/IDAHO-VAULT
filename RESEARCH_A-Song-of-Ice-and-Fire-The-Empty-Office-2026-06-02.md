@@ -29,11 +29,11 @@ date: 2026-06-02
 
 George R.R. Martin wrote the whole argument into a riddle. In *A Clash of Kings*, **Varys** poses it to Tyrion: **[canon]**
 
-> In a room sit three great men — a **king**, a **priest**, and a **rich man**. Between them stands a **sellsword**, common-born, no great wit. Each great man commands him to kill the other two: *obey, for I am your lawful king / I command it in the name of the gods / do it and all this gold is yours.* **Who lives, who dies?**
+> Three powerful men — a **king**, a **priest**, and a **rich man** — each order a common **sellsword** to kill the other two, invoking in turn lawful royal authority, the gods, and gold. **Who lives, who dies?** *(paraphrased)*
 
 The sword is in the sellsword's hand — yet the outcome turns entirely on which story he *believes*. Varys's gloss is the manifesto:
 
-> *"Power resides where men believe it resides. … a shadow on the wall, yet shadows can kill. And ofttimes a very small man can cast a very large shadow."*
+> Varys's answer — *"power resides where men believe it resides"* — with his gloss that power is only a shadow on the wall, yet a shadow that can kill, and that a very small man can cast a very large one. *(short excerpt; remainder paraphrased)*
 
 That is the key to every throne, crown, and high office in the series. **An office holds no power of its own.** Its power is a *shared fiction* — the collective agreement to act as if the chair commands. Pull the belief and the shadow shrinks, no matter how small the man casting it.
 
