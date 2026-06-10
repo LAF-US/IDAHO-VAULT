@@ -1,11 +1,14 @@
 ---
+title: "Deltora Quest — the seven Gem Guardians"
+updated: 2026-06-07
+created: 2026-06-07
 related:
   - RESEARCH
   - "[[RESEARCH_Deltora-The-Seven-Tribes-and-their-Lands-2026-06-04]]"
   - The Abhorsen
 date created: Sunday, June 7th 2026
 authority: LOGAN
-status: reference
+status: active
 type: research-report
 topic: Deltora Quest — the seven Gem Guardians
 verified-by: Claude Code (web research 2026-06-07)

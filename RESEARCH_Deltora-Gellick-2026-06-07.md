@@ -1,4 +1,7 @@
 ---
+title: "Deltora Quest — Gellick, Guardian of the Emerald"
+updated: 2026-06-07
+created: 2026-06-07
 aliases:
   - Gellick
 related:
@@ -8,7 +11,7 @@ related:
   - The Abhorsen
 date created: Sunday, June 7th 2026
 authority: LOGAN
-status: reference
+status: active
 type: research-report
 topic: Deltora Quest — Gellick, Guardian of the Emerald
 verified-by: Claude Code (web research 2026-06-07)

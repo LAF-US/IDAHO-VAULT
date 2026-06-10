@@ -1,4 +1,7 @@
 ---
+title: "The wight as a monster class — folklore, literature, and games"
+updated: 2026-06-02
+created: 2026-06-02
 related:
   - "[[RESEARCH_A-Song-of-Ice-and-Fire-The-Walkers-and-the-Wights-2026-06-02]]"
   - "[[STYLINGS-AND-PROPAGANDA-FOSSILS-2026-06-02]]"
@@ -6,7 +9,7 @@ related:
   - The Abhorsen
 date created: Tuesday, June 2nd 2026
 authority: LOGAN
-status: reference
+status: active
 type: concept-node
 topic: The wight as a monster class — folklore, literature, and games
 verified-by: Claude Code (synthesis; general knowledge)

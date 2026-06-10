@@ -1,4 +1,7 @@
 ---
+title: "A Song of Ice and Fire — the Others (Walkers) and the wights"
+updated: 2026-06-02
+created: 2026-06-02
 related:
   - RESEARCH
   - "[[RESEARCH_A-Song-of-Ice-and-Fire-The-Others-and-the-Long-Night-2026-06-02]]"
@@ -8,7 +11,7 @@ related:
   - The Abhorsen
 date created: Tuesday, June 2nd 2026
 authority: LOGAN
-status: reference
+status: active
 type: research-report
 topic: A Song of Ice and Fire — the Others (Walkers) and the wights
 verified-by: Claude Code (synthesis; canon from prior research passes + general knowledge)

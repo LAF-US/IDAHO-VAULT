@@ -1,4 +1,7 @@
 ---
+title: "A Song of Ice and Fire — the Small Council"
+updated: 2026-06-03
+created: 2026-06-03
 related:
   - RESEARCH
   - "[[RESEARCH_A-Song-of-Ice-and-Fire-The-Citadel-2026-06-03]]"
@@ -10,7 +13,7 @@ related:
   - The Abhorsen
 date created: Tuesday, June 3rd 2026
 authority: LOGAN
-status: reference
+status: active
 type: research-report
 topic: A Song of Ice and Fire — the Small Council
 verified-by: Claude Code (web research 2026-06-03; offices & apparatus re-verified 2026-06-04)

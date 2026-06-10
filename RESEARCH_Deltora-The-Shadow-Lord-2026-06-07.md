@@ -1,4 +1,7 @@
 ---
+title: "Deltora Quest — the Shadow Lord (Malverlain), the Enemy"
+updated: 2026-06-07
+created: 2026-06-07
 aliases:
   - The Shadow Lord
   - Shadow Lord
@@ -13,7 +16,7 @@ related:
   - The Abhorsen
 date created: Sunday, June 7th 2026
 authority: LOGAN
-status: reference
+status: active
 type: research-report
 topic: Deltora Quest — the Shadow Lord (Malverlain), the Enemy
 verified-by: Claude Code (web research 2026-06-07)

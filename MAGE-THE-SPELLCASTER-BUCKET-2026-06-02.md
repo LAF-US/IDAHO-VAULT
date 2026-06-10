@@ -1,9 +1,11 @@
 ---
+updated: 2026-06-02
+created: 2026-06-02
 title: "Mage — The Spellcaster Bucket"
 date created: 2026-06-02
 authority: LOGAN
 doc_class: concept-node
-status: reference
+status: active
 verified-by: Claude Code (etymology + taxonomy research pass 2026-06-03; citations in §IX)
 related:
   - "[[FANDOM-CANON-RULESYSTEMS-2026-05-03]]"

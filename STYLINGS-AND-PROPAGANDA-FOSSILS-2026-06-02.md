@@ -1,4 +1,7 @@
 ---
+title: "Stylings as propaganda fossils — names/titles/monikers as compressed verdicts"
+updated: 2026-06-02
+created: 2026-06-02
 related:
   - "[[RESEARCH_A-Song-of-Ice-and-Fire-The-Empty-Office-2026-06-02]]"
   - "[[RESEARCH_A-Song-of-Ice-and-Fire-The-Royal-Style-Parsed-2026-06-08]]"
@@ -11,7 +14,7 @@ related:
   - The Abhorsen
 date created: Tuesday, June 2nd 2026
 authority: LOGAN
-status: reference
+status: active
 type: concept-node
 topic: Stylings as propaganda fossils — names/titles/monikers as compressed verdicts
 verified-by: Claude Code (synthesis; examples from general knowledge)
