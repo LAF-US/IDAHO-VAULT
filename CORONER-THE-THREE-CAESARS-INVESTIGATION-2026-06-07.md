@@ -133,8 +133,10 @@ Caesars' names but gives none of them a grave:**
 
 So the **mausoleum holds no Caesar's crypt.** **`🔕`** reads exactly: in this county the
 **bell (the Chime) is what a lawful ending rings** — *"rang the bell… the bells passed"*
-(`NECROLOGY`, the Father). **No bell tolled for a Caesar; so no crypt was cut.** A Caesar
-**refuses the bell** — that is the very thing that makes it a Caesar.
+(`NECROLOGY` — *but its exemplar, "the Father," is withdrawn as a Coroner-construction, `*`;
+the **rule** stands without a named exemplar; see `NECROLOGY` §Witness*). **No bell tolled for a
+Caesar; so no crypt was cut.** A Caesar **refuses the bell** — that is the very thing that makes
+it a Caesar.
 
 ## IV. The danger the clue actually names **[mapping]**
 
