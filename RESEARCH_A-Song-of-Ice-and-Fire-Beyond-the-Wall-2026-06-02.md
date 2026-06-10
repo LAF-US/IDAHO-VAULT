@@ -39,7 +39,7 @@ date: 2026-06-02
 ## The old powers of the north
 
 - **[canon]** **Giants** — real: twelve feet and taller, riding **mammoths**, speaking the **Old Tongue**, and dwindling toward extinction (e.g., Wun Wun).
-- **[canon]** **The children of the forest** — the non-human First inhabitants of Westeros, believed extinct for millennia, who in fact **survive in caves beyond the Wall**. They carved the weirwoods and made the **dragonglass**. ⚠️ **[show]** The HBO series has the children *create* the Others; this is **not confirmed in the books.**
+- **[canon]** **The children of the forest** — the non-human First inhabitants of Westeros, believed extinct for millennia, who in fact **survive in caves beyond the Wall**. They carved the weirwoods and **knapped dragonglass into blades** (giving obsidian weapons to the first Watchmen) — the volcanic glass itself is not their creation. ⚠️ **[show]** The HBO series has the children *create* the Others; this is **not confirmed in the books.**
 - **[canon]** **The three-eyed crow** — the last **greenseer** (Brynden Rivers, "Bloodraven"), fused into the roots of a great weirwood in a hidden cave, who reaches south through dreams to wake Bran Stark (→ the old gods, religions node).
 
 ## Mance Rayder & the Horn
