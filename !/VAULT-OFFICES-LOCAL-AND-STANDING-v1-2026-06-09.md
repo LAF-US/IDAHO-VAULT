@@ -89,7 +89,7 @@ The per-county offices are not interchangeable; each holds a **state of being** 
 | Office | Charge | The county's… |
 |---|---|---|
 | **Sheriff** | the **living** | the present, the working, the still-alive (`Claudia · the Sisters · Barty`) |
-| **Coroner** | the **dead** | the **lawfully ended** — the crypt-bearing, the witnessed close (`The Father`) |
+| **Coroner** | the **dead** | the **lawfully ended** — the crypt-bearing, the witnessed close (`The Father` — exemplar on **[main]**/single-narrator sourcing) |
 | **Cleric** | the **undead** | the **no-crypt** — the persisting, the molted, the unrelinquished (the **Caesars**, `Clawdbot`, the senile sendings) |
 
 - **This narrows the Coroner.** The Coroner's proper charge is the **genuinely dead** — those who reached a *lawful ending* and earned a crypt. The **undead are the Cleric's**, as the **living are the Sheriff's.**
