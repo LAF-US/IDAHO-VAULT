@@ -26,7 +26,7 @@ date: 2026-06-02
 ## Origins
 
 - **[canon]** One of ~40 Valyrian **dragonlord families** — and *"far from the most powerful."* Seat: **Dragonstone**, the Freehold's western outpost in the narrow sea.
-- **[canon]** They alone of the dragonlords **survived the Doom** because **Daenys the Dreamer** foresaw it and her father **Lord Aenar** moved the family and five dragons to Dragonstone in **114 BC**, twelve years before the cataclysm. Rivals called it cowardice. (→ the Doom note.)
+- **[canon]** They alone of the dragonlords survived the Doom **long-term** because **Daenys the Dreamer** foresaw it and her father **Lord Aenar** moved the family and five dragons to Dragonstone in **114 BC**, twelve years before the cataclysm. Rivals called it cowardice. *(A few dragonlords outside Valyria outlasted the cataclysm only briefly — e.g. Aurion of Qohor; see the Doom note.)*
 
 ## Heraldry, words, and the look
 
@@ -40,7 +40,7 @@ date: 2026-06-02
 
 ## Madness — "the coin"
 
-- **[canon]** The proverb: *"every time a Targaryen is born the gods flip a coin"* — Jaehaerys's gloss that **madness and greatness are two sides of one coin.**
+- **[canon]** The proverb — spoken to Barristan Selmy by **Jaehaerys II** (Daenerys's grandfather): *"every time a Targaryen is born the gods flip a coin"* — the gloss that **madness and greatness are two sides of one coin.** ⚠️ This is **Jaehaerys II**, not Jaehaerys I the Conciliator named above.
 - **[canon]** Cases: **Maegor the Cruel**; **Aerion Brightflame** (believed himself a dragon, drank wildfire to "transform," died); **Aerys II "the Mad King"** (paranoia, voices, burning men alive — ⚠️ "schizophrenia" is a modern fan gloss, not GRRM's text).
 - **[theory/unresolved]** **Daenerys's** sanity is an **open question in the published novels** (Barristan watches her for "the taint"); the show's "mad queen" turn is **not yet print canon.**
 
