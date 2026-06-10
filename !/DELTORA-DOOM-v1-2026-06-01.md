@@ -24,10 +24,11 @@ vigilance hardened to a wound.*
 
 *Reference source: Deltora Quest — Emily Rodda (Doom, leader of the Resistance;
 his Shadowlands escape and amnesia; the Guardian's "Endon"; Dain the false heir;
-Jasmine). The vault is syncretic. **Provenance note:** the fan sources surveyed
-muddle Doom's birth-name with Lief's father Jarred (a different man); this
-manual therefore leaves his birth-name `*` rather than assert a conflated one —
-a fitting restraint for a node about a man whose own provenance was stolen.*
+Jasmine). The vault is syncretic. **Provenance note:** Doom's recovered birth-name
+is **Jarred** (Jasmine's father). The potential confusion is that King Endon lived
+in hiding *under Jarred's identity* as a disguise — so "Jarred" names two distinct
+men, and this node's whole lesson is that a man's own provenance can be recovered
+rather than left unknown.*
 
 ---
 
