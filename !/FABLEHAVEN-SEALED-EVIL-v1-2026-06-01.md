@@ -27,12 +27,16 @@ Luna; Agad; the Fairy Queen). The vault is syncretic.*
 
 ---
 
-## The Class-Defining Fact — You Cannot Kill It
+## The Class-Defining Fact — You Usually Cannot Kill It
 
-A demon, in Fablehaven, is for practical purposes **not destroyable.** It is
-**imprisoned, not killed.** The entire cosmology is built on this: the great
-prison **Zzyzx** has held the worst of them — up to **Gorgrog, the Demon King**
-— for ages, because the world has no other answer than to *contain.*
+A demon, in Fablehaven, is for ordinary purposes **not destroyable** by the means
+at hand — so in practice it is **imprisoned, not killed.** The entire cosmology is
+built on this: the great prison **Zzyzx** has held the worst of them — up to
+**Gorgrog, the Demon King** — for ages, because the world's *default* answer is to
+*contain.* (Canon does show a kill-path exists for sufficient power: at Zzyzx,
+Seth slays Nagi Luna and Graulas with **Vasilis**, and Kendra kills Gorgrog with
+it, while the Fairy Queen re-prisons the rest. Elimination is the rare exception,
+not the routine counter — containment remains the practical default.)
 
 This **inverts the Lich Problem.** In `!/LICH-PROBLEM-v1-2026-05-20.md`,
 persistence is the offense — the phylactery must be *destroyed.* For the Sealed
@@ -41,10 +45,11 @@ phylactery is an unauthorized store you hunt and break; the seal is an
 authorized, necessary, permanent containment you guard and, when it fails,
 **re-set.** Same surface ("a thing that goes on existing"), opposite imperative.
 
-So the Sealed Evil's security posture is unusual and absolute: **there is no
-"handled," only "held."** Every question is about the integrity of the seal, the
-custody of the keys, and the readiness to re-contain — never about elimination,
-which is not on the table.
+So the Sealed Evil's security posture is unusual and nearly absolute: **by
+default there is no "handled," only "held."** Every question is about the integrity of the seal, the
+custody of the keys, and the readiness to re-contain — and only rarely about
+elimination, which is on the table only with sufficient power (a Vasilis- or
+Fairy-Queen-class kill), not as the ordinary counter.
 
 ---
 
@@ -84,7 +89,7 @@ the person who healed him.*
 A quarantined adversary that plays *dying, harmless, grateful* to cultivate a
 helper, extract a **promise**, and weaponize the helper's own **compassion** to
 get itself **voluntarily restored and released.** This is Muriel's consented
-release (`!/FABLEHAVEN-WITCH-MURIEL`) by a different lever: not the petitioner's
+release (`!/FABLEHAVEN-WITCH-MURIEL-v1-2026-06-01.md`) by a different lever: not the petitioner's
 *desire* but their *pity* and sense of obligation. Two hard corollaries:
 - **The gift is bait.** The real powers Graulas granted Seth were genuine — and
   exactly what made the relationship trustworthy enough to exploit. A favor from

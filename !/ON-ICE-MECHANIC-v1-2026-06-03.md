@@ -95,13 +95,15 @@ dangerous capability inert by *condition*, not by removal.
 
 | Type | Holds by | Upkeep | Failure mode |
 |---|---|---|---|
-| **Sealed Evil** (founding seal) | a permanent binding | none, once set | fails *closed* — heavy to breach |
+| **Sealed Evil** (founding seal) | a permanent binding | seal integrity / readiness to re-contain | **release on breach** — heavy to breach, but the threat is freed if the binding is undone (Bahumat/Muriel) |
 | **The Knots** (Muriel) | a finite set of seals | none | spent open, one favor at a time |
 | **The Quiet Box** | suspended isolation | none | blind release on swap |
 | **On-Ice** | a **sustained condition** | **continuous** | **fails open on lapse** |
 
-On-ice is the cheapest to reach for and the only one that **fails toward
-release** — which is exactly when you must remember it is a pause, not a prison.
+On-ice is the cheapest to reach for and the one that fails toward release **on
+its own, from mere lapse of upkeep** — where the Sealed Evil releases only when
+its binding is actively breached. Either way the danger is the same: remember it
+is a pause, not a prison.
 
 ---
 

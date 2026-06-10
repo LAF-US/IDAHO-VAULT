@@ -32,14 +32,15 @@ well.*
 
 ## The Canon
 
-When the **Shadow Lord** was driven from Deltora, he did not leave the land
-clean. He had already **seeded the four corners of the kingdom with the Four
-Sisters** — evil creations that **sing "songs of death,"** slowly **poisoning
-the land** so that crops wither and the people **starve.** The blight is gradual,
-ambient, and everywhere at once. The land is dying, and no one knows why.
+After the **Shadow Lord** was driven from Deltora, he did not give up on it. As
+one of his **long-term plans following his defeat** in the Battle for Deltora, he
+**seeded the four corners of the kingdom with the Four Sisters** — evil creations
+that **sing "songs of death,"** slowly **poisoning the land** so that crops wither
+and the people **starve.** The blight is gradual, ambient, and everywhere at once.
+The land is dying, and no one knows why.
 
-The companions (Lief, Barda, Jasmine) must wake the **last gem-dragons** —
-**Topaz, Ruby, Emerald, Amethyst** — and use each, in its own territory, to
+The companions (Lief, Barda, Jasmine) must wake the gem-dragons and use **four**
+of them — **Topaz, Ruby, Emerald, Amethyst** — each in its own territory, to
 destroy the matching Sister and its guardians. And here is the first mercy:
 **every time a Sister is destroyed, the land heals almost instantly.** The
 poison was being *actively maintained;* remove the source and the harm reverses.
@@ -49,8 +50,11 @@ reason to file them. Their song did two things at once: it **poisoned the land,
 and it kept a lid on the Shadow Lord's final plan.** Silence the Sisters and you
 stop the poison — *and you wake the Grey Death*: a vast bubble of poisonous grey
 liquid that rises from the earth when the last Sister falls. The obvious
-remediation **is the detonator.** It took Lief, Barda, Jasmine, and **every
-dragon together** to face what destroying the Sisters released.
+remediation **is the detonator.** And the response to it is **summoned after the
+trigger fires:** the final Sister falls first, the Grey Death (Grey Tide) rises,
+and only then is the **last dragon newly awakened** so that **all seven dragons
+together** — not just the four that killed the Sisters — combine with Lief, Barda,
+and Jasmine to face what the destruction released.
 
 ### The Origin — A Seal Inverted Into a Weapon
 
@@ -71,17 +75,18 @@ the instrument of its death, and made the cure into the catastrophe.
 
 ## The Doctrine
 
-### 1. The defeated adversary's distributed slow-kill failsafe
-You won. You drove the enemy out. The land is still dying — because the payload
-was **seeded in advance**, before the defeat, as insurance. Victory over the
-*actor* does not stop the *artifact.*
+### 1. The defeated adversary's distributed slow-kill long game
+You won. You drove the enemy out. The land starts dying later — because the
+evicted adversary did **not** stop at defeat: he ran a **post-defeat long game**,
+returning to plant the payload as a fresh campaign against the realm he had lost.
+Victory over the *actor* does not retire the *actor.*
 
 *Vault pattern:* removing the attacker is not the end of the incident. A
-competent adversary leaves **pre-seeded, distributed, time-delayed payloads** —
-logic bombs, dormant backdoors, scheduled corruption — that keep degrading the
-system after the breach is "closed." The provenance is the tell: this harm
-predates your victory. Ask, after every eviction, *what did they leave behind
-that is still running?*
+competent adversary, once evicted, **comes back** — seeding **distributed,
+time-delayed payloads** (logic bombs, dormant backdoors, scheduled corruption) in
+a renewed campaign *after* the breach was "closed." The provenance is the tell:
+this harm was **introduced after your victory**, not before it. Ask, after every
+eviction, *what are they doing now to re-enter and re-seed?*
 
 ### 2. The harm is ambient, gradual, and misattributed
 The song does not strike; it **withers.** Crops fail a little more each season;
@@ -94,15 +99,18 @@ or quality bleeding out — experienced as "things are just getting worse," not 
 *an attack in progress.* Detection requires the leap from "the system is
 failing" to "the system is **being failed**, on purpose, from seeded sources."
 
-### 3. All-or-nothing — three of four is still famine
-Destroy three Sisters and the land still dies; the remaining one sustains the
-blight. There is no partial credit. The system is saved only when **every** node
-is cleared.
+### 3. All-or-nothing for *full* eradication — three of four is still famine
+Destroy three Sisters and the land is **not yet saved**; the remaining one keeps
+the kingdom in blight. Each removal *does* heal its own land (see #7), so partial
+clearing reduces the blast radius — but the **complete** cure, and the safety to
+declare the famine ended, comes only when **every** node is cleared.
 
-*Vault pattern:* a distributed poison has a **quorum of harm** — any single
-surviving node maintains the damage. "We remediated most of them" is not
-remediation. Enumerate the full set *before* you start, because stopping at
-three feels like progress and yields none.
+*Vault pattern:* a distributed poison has a **quorum of harm** for the *whole-
+system* cure — any single surviving node keeps the system as a whole in failure.
+Each node you clear is real local progress (the blast radius shrinks), but "we
+remediated most of them" is not *full* remediation. Enumerate the full set
+*before* you start: collect the partial wins, but do not mistake them for the
+finished job, and remember the final clearing is also the trap (see #5).
 
 ### 4. Matched counters — the right instrument per node
 Each Sister falls only to **its** dragon — Topaz, Ruby, Emerald, Amethyst, each
@@ -129,18 +137,21 @@ defensive act is the payload) and the Sealed Evil's (`!/FABLEHAVEN-SEALED-EVIL-v
 what does un-sealing release?) fused into one object — **the poison and the seal
 are the same artifact.**
 
-### 6. Assemble the full force *before* the final removal
-They did not destroy the last Sister and *then* go looking for help. The Grey
-Death was met by **every dragon and all three companions at once**, because the
-final removal and the secondary payload arrive **together.** Sequencing is the
-discipline: the last clearing step must coincide with **maximum readiness** for
-what it triggers.
+### 6. Escalate the moment the payload appears — and have a vault-hardening rule to stage it earlier
+In canon the order is **post-trigger**: the last Sister falls, the Grey Death
+rises, and only *then* is the final dragon awakened and **all seven** brought to
+bear. The secondary payload **summons its own response after the detonator
+fires.** The discipline is **immediate, full escalation the instant the payload
+appears** — and the larger force (all seven dragons, not just the four
+Sister-killers) is what the final tide actually requires.
 
-*Vault pattern:* do not clear the final node of a suspected two-stage weapon
-until the force to handle the secondary payload is **already assembled and
-present.** Stage the response so that "remove the artifact" and "contain what its
-removal releases" are one operation, not two — because the gap between them is
-where the system dies.
+*Vault pattern:* when the final node of a suspected two-stage weapon is cleared,
+**treat the trigger as fired and escalate at once** to the full force the
+secondary payload demands — not the subset that handled the first stage. As a
+**vault-only hardening rule** (stronger than canon managed), prefer to stage that
+full force *before* the last clearing step so that "remove the artifact" and
+"contain what its removal releases" are one operation — because the gap between
+trigger and response is where the system dies.
 
 ### 7. The mercy — clearing the source reverses the harm
 Each Sister destroyed, the land heals at once. The blight was **maintained, not
@@ -166,11 +177,11 @@ The Fablehaven nodes circled this truth from three sides:
 
 The Four Sisters **fuse all three into a single artifact**: a *distributed*
 poison (Shadow Plague) that is *also* a *seal* (Sealed Evil) whose *removal is
-the trigger* (Quiet Box) — and which, unlike any of them, was **seeded in
-advance by an already-defeated enemy as a deliberate two-stage failsafe.** It is
-the sharpest statement in the bestiary of one rule: **the thing keeping you sick
-may be the thing keeping something worse asleep. Diagnose what your cure
-unseals, and assemble for it, before you administer the cure.**
+the trigger* (Quiet Box) — and which, unlike any of them, was **seeded by an
+already-defeated enemy as a post-defeat long game and a deliberate two-stage
+failsafe.** It is the sharpest statement in the bestiary of one rule: **the thing
+keeping you sick may be the thing keeping something worse asleep. Diagnose what
+your cure unseals, and be ready to escalate to full force the moment it triggers.**
 
 ---
 

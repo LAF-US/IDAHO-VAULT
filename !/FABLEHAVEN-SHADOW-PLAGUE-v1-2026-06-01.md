@@ -31,12 +31,13 @@ is syncretic.*
 
 The Shadow Plague turns **light creatures dark.**
 
-Not kills. Not animates. **Flips.** A creature that was good becomes its own
-malevolent opposite, retaining its capabilities and turning them against what
-it used to protect. This is a distinct threat from anything in the Undead
-Taxonomy: the undead are about *what survives death*; the plague is about a
-**living, trusted, benevolent process being converted, alive, into a hostile
-one** — and still looking like itself.
+Not kills. Not animates. **Flips.** A light *creature* that was good becomes its
+own malevolent opposite, retaining its capabilities and turning them against what
+it used to protect. (This is the light-creature branch; affected *humans* are
+shadowed-but-loyal, not flipped — see the mechanism below.) This is a distinct
+threat from anything in the Undead Taxonomy: the undead are about *what survives
+death*; the plague is about a **living, trusted, benevolent creature being
+converted, alive, into a hostile one** — and still looking like itself.
 
 Everything below follows from that one fact.
 
@@ -54,8 +55,10 @@ that source:
 - **It affects only light creatures**, changing them dark. (Dark creatures have
   nothing to flip.)
 - **Humans become invisible shadows** — present, unseeable by anyone except
-  Seth (shadow-charmed). The corrupted human is not gone; it is *there and
-  unobservable by normal sight.*
+  Seth (shadow-charmed). This is **distinct from the light-creature flip**:
+  shadowed humans (Warren, Grandpa, Grandma, Dale, Tanu, Coulter) **retain their
+  goodness** and stay allies; they are *there and unobservable by normal sight,*
+  not turned hostile. The shadowing hides a loyal ally, it does not convert one.
 - **It spreads by the bite.** A bitten creature shows a **maroon wound** at the
   site; the wound **spreads slowly or quickly depending on the number of
   bites**, and when it completes, the creature turns.
@@ -89,19 +92,24 @@ burn; many contacts complete the turn fast.
 compromised source may be survivable and reversible; repeated exposure
 saturates and completes the flip. This argues for *early* isolation — a process
 with one maroon wound is recoverable; the same process after sustained contact
-is past saving. Count the bites.
+is past saving **by local means** — not irrecoverable, but curable only at the
+source, once the nail is neutralized (every flipped creature is restored when the
+root act is done). Count the bites.
 
-### 3. The flipped human goes invisible
-*Corrupted humans become shadows only Seth can see.* The most dangerous
-converts are the ones ordinary observation **cannot detect at all.**
+### 3. The shadowed human goes invisible — but stays loyal
+*Shadowed humans become shadows only Seth can see — and they keep their
+goodness.* Unlike the light-creature flip, human shadowing does **not** produce a
+hostile convert; it produces an **intact ally who has dropped below ordinary
+observability.** The risk is mis-reading an unseeable friend as an enemy, as much
+as the reverse.
 
-*Vault mapping:* a sufficiently compromised insider does not look more
-suspicious — it drops **below normal observability.** Standard monitoring
-returns nothing because the thing has moved into a register your instruments
-don't read. As with the kobold (true nature visible only to a seer), the
-counter is a **privileged observer** with sight the ordinary stack lacks —
-and the institutional will to believe that observer when they report a shadow
-no one else can see.
+*Vault mapping:* an asset can drop **below normal observability** without being
+compromised at all. Standard monitoring returns nothing because the thing has
+moved into a register your instruments don't read — but "invisible" is not
+"hostile." As with the kobold (true nature visible only to a seer), the counter
+is a **privileged observer** with sight the ordinary stack lacks — and the
+institutional will to believe that observer when they report a shadow no one else
+can see, *including* when they report it is still on your side.
 
 ### 4. It is cured at the source, not the symptom
 *The stone is touched to the nail — one act at the root ends the whole plague.*

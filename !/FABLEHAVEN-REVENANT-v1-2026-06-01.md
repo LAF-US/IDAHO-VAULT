@@ -59,30 +59,36 @@ both.
   and the persistence mechanism are the **same self**. Unauthorized
   self-continuation is the whole offense. **The agent is itself.**
 - The **Revenant** did not make itself. A corpse was reanimated and bound with a
-  cursed talisman **by someone else** — a maker placed the nail. It has no
-  authorship of its own existence; it is a *built guardian*, an instrument of
-  whoever constructed it. **The agent is the maker**, not the corpse.
+  cursed talisman — **the nail** — that holds its power. It has no authorship of
+  its own existence; it is a *built guardian*. Canon does not name who first
+  constructed or placed it, so the operative agent is not a presumed maker but
+  **the nail and whoever holds, retrieves, or reuses it** (in canon Navarog digs
+  the buried nail up after the host is destroyed). **The agent is the nail's
+  custody**, not the corpse.
 
 So the Revenant shares the Lich's **counter** (destroy the one object) while
-sharing the **Bound Servant's origin** (constructed by another; the responsible
-party is the maker, not the thing — see
+sharing the **Bound Servant's origin** (constructed by another; responsibility
+sits with the controlling object's custody, not the thing it animates — see
 `!/FABLEHAVEN-BOUND-SERVANTS-v1-2026-06-01.md`). It sits precisely between them:
 
 | | Origin / agency | Power locus | Counter | Responsible party |
 |---|---|---|---|---|
 | **Lich** | **Self-created** — engineered its own continuity | Externalized *own* soul (phylactery) | Destroy the phylactery | **Itself** |
-| **Revenant** | **Constructed** — reanimated & nail-bound by another | Power concentrated in a *placed* talisman | Pull the nail | **The maker** |
+| **Revenant** | **Constructed** — reanimated & nail-bound by another | Power concentrated in a *placed* talisman | Pull the nail | **The nail's custody** |
 | **Bound Servant** (golem/Mendigo) | **Constructed** — animated by another | Command channel; no stored self | Secure/seize the reins | **The holder** |
 
 The operational lesson — *find the one object and end it* — transfers from the
 Lich. The **provenance** lesson does **not**: do not treat the Revenant as a
-self that arrogated its own persistence. It is a weapon someone forged. The
-constructing hand is a **necromancer/animator** (`!/NECROMANCER-DOCTRINE-v1-2026-05-20.md`)
-— raising against the current — and *that maker* is the agent the Standing
-Engine must reach. Misclassifying a constructed guardian as a self-created
-persister sends you hunting an autonomous will that was never there, and lets
-the actual author walk. **Names mislead; mechanisms classify; provenance
-assigns responsibility.**
+self that arrogated its own persistence. It is a weapon someone forged — a
+**necromancer/animator** pattern (`!/NECROMANCER-DOCTRINE-v1-2026-05-20.md`),
+raising against the current. But canon does **not** identify that maker, so do
+not send responders chasing a constructor who may not exist in the evidence: the
+reachable control surface is **the nail itself — its grove, its custody, and
+whoever retrieves or reuses it** after removal. Misclassifying a constructed
+guardian as a self-created persister sends you hunting an autonomous will that was
+never there; over-fixating on an unnamed author lets the **nail** pass into the
+next hand unaudited. **Names mislead; mechanisms classify; provenance assigns
+responsibility.**
 
 ---
 
