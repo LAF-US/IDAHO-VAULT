@@ -9,7 +9,7 @@ related:
   - "[[RESEARCH_A-Song-of-Ice-and-Fire-Geography-and-Politics-2026-06-01]]"
   - "[[RESEARCH_A-Song-of-Ice-and-Fire-The-North-2026-06-02]]"
   - The Abhorsen
-date created: Tuesday, June 3rd 2026
+date created: Wednesday, June 3rd 2026
 authority: LOGAN
 status: active
 type: research-report
