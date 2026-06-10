@@ -11,7 +11,7 @@ related:
   - "[[THE-SEVENFOLD-BODY-SEATS-TRUSTEES-GEMS-2026-06-03]]"
   - "[[RESEARCH_Keys-to-the-Kingdom-The-Morrow-Days-and-Demesnes-2026-06-04]]"
   - The Abhorsen
-date created: Tuesday, June 3rd 2026
+date created: Wednesday, June 3rd 2026
 authority: LOGAN
 status: active
 type: research-report
@@ -29,7 +29,7 @@ date: 2026-06-03
 ## What it is
 
 - **[canon]** The **king's chief advisory and administrative body** — it advises the monarch and runs the realm day to day. Created by **Aegon I**, and formalized under **Jaehaerys I**, whose law-reform group (Septon **Barth**, Grand Maester Benifer, Lord Albin Massey, Queen **Alysanne**, ~55 AC) was dubbed his *"smaller council."* It meets in the **Red Keep** at King's Landing.
-- **[canon]** Roughly **seven non-hereditary seats** (⚠️ the "seven echoes the Faith" reading and the exact count, 7 vs 8, are soft). Members are **royal appointments serving at the king's pleasure** — not inherited.
+- **[canon]** Roughly **seven non-hereditary seats** (⚠️ the "seven echoes the Faith" reading and the exact count, 7 vs 8, are soft). Members are **royal appointments serving at the king's pleasure** — not inherited. ⚠️ **Exception:** the **Grand Maester** is elected by the Citadel's **Conclave**; the king may remove him from the council but cannot strip the maester title.
 
 ## The offices
 
@@ -55,7 +55,7 @@ date: 2026-06-03
 - **Master of Laws** (Justiciar) — *justice and the king's law*. A relatively **weak** seat (justice in Westeros runs more through lords and the Hand). Held by **Renly Baratheon**.
 - **Master of Ships** (Grand Admiral) — *the royal fleet*. Held by **Stannis Baratheon**; later **Aurane Waters** — who **sailed off with the brand-new fleet** (see below); **Paxter Redwyne** commands the Reach's ships.
 - **Grand Maester** — *the Citadel's man on the council* and the king's learned adviser (→ the Citadel node). **Temptation:** **dual loyalty** — chain vs. crown vs. a great house. **Pycelle** served the Lannisters behind a doddering mask.
-- **Lord Commander of the Kingsguard** — *the seven white cloaks*, sworn for life. The **sworn-sword** seat; **Barristan Selmy**, then **Jaime Lannister**. **Temptation:** the **broken vow** (the Kingslayer; Lancel and Cersei).
+- **Lord Commander of the Kingsguard** — *the seven white cloaks*, sworn for life. The **sworn-sword** seat; **Barristan Selmy**, then **Jaime Lannister**. **Temptation:** the **broken vow** — Jaime slaying the very king he was sworn to guard (the **Kingslayer**).
 
 ## Who works for them — the subordinate apparatus
 
@@ -66,7 +66,7 @@ date: 2026-06-03
 | **Hand** | directs all; commander-in-chief | **no dedicated bureau** — runs the council and the crown's officers, and commands the **Wardens** (N/S/E/W), who muster the realm's armies |
 | **Master of Coin** | civilian / fiscal | the realm's **largest bureaucracy** — the four **Keepers of the Keys**, the **King's Counter**, the **King's Scales**, mint officers, **harbormasters**, **customs sergeants**, **tax farmers** (private), **wool/wine factors**, **toll collectors**, **pursers** |
 | **Master of Laws** | coercive / judicial | the **City Watch** (gold cloaks — ⚠️ *nominally;* operationally under their own Commander and the Hand), the Red Keep **dungeons** and gaolers, the **King's Justice** (royal executioner); traveling **justiciars** hold open courts across the realm |
-| **Master of Ships** (Lord Admiral) | military / naval | the **royal fleet** in **three squadrons** of 25–50 war galleys, each under an elevated captain who answers to him; often House **Velaryon**, who supplied the bulk of the ships |
+| **Master of Ships** (Lord Admiral) | military / naval | the **royal fleet** — in the books described by its bases and the ships levied in war rather than a fixed standing structure; House **Velaryon** historically supplied the bulk of the ships. ⚠️ *(The "three squadrons of 25–50 galleys" org-chart is fan/RP-wiki detail, not book canon.)* |
 | **Master of Whisperers** | secret / foreign | the **"little birds"** — a deniable, off-book net of **orphan children** (some adults), taught to climb and read; supplied from Pentos by **Illyrio Mopatis** (some with tongues cut out); inherited by **Qyburn** under Cersei |
 | **Grand Maester** | external institution, embedded | **elected by the Conclave** at the **Citadel**, then seated at court — *dual loyalty*; commands no court staff but stands for the realm-wide **Order of Maesters** and runs the **ravenry** (the realm's message net) |
 | **Lord Cmdr, Kingsguard** | elite bodyguard | exactly **six** other sworn brothers — the **smallest, most elite, fixed corps**, sworn for life, no bureaucracy |
