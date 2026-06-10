@@ -23,7 +23,7 @@ date: 2026-06-02
 # Mage — The Spellcaster Bucket
 
 > **"Mage" is the genus** — the chosen umbrella term for any worker of magic (Logan's preference, 2026‑06‑02), and the choice is **independently confirmed**: Wikipedia treats *mage / magician / magic-user* as umbrella terms, and D&D deliberately coined the generic "**magic-user**" (later "**mage**" in AD&D 2e) precisely to avoid the connotations of *wizard/warlock*. Unlike **"magician,"** which the modern ear half-hears as *stage illusionist*, "mage" stays in the practitioner register. The named types (wizard, sorcerer, warlock, witch, cleric, necromancer…) are **species** sorting on **two orthogonal axes: SOURCE of power × DOMAIN of effect.** This node fixes the source/class genus the vault lacked (it already has the *domain* axis — `NECROMANCER-DOCTRINE` — and the *state* axis — `UNDEAD-TAXONOMY`), and shows that **the names themselves encode a theory of authority** — the vault's own question.
-
+>
 > **Provenance.** Etymologies + taxonomy **sourced in a research pass on 2026‑06‑03** (citations, §IX). ⚠️ **Etymonline, Wiktionary, Wikipedia, and Britannica returned HTTP 403 to direct fetch**, so those claims rest on **search-result extracts** of the pages — spot-check verbatim wording before publication. Disputed roots/readings flagged inline. Tiers: **[etymology]**, **[taxonomy]**, **[reading]**.
 
 ## I. The genus — "mage" (and why not "magician")

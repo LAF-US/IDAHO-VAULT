@@ -22,7 +22,7 @@ date: 2026-06-07
 # The Lake of Tears — Hiding Place of the Ruby
 
 > The **second** guarded peril — hiding place of the **Ruby**, kept by **[[RESEARCH_Deltora-Soldeen-2026-06-07\|Soldeen]]**, made by the sorceress **[[RESEARCH_Deltora-Thaegan-2026-06-07\|Thaegan]]**. One of seven (→ `[[RESEARCH_Deltora-The-Gem-Guardians-2026-06-07]]`). Pure source.
-
+>
 > **Provenance.** Web-verified 2026-06-07 (Deltora Quest Wiki, Wikipedia). **[canon-per-series].** Paraphrased.
 
 ## Origin & geography

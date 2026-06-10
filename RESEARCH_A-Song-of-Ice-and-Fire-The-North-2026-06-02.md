@@ -22,7 +22,7 @@ date: 2026-06-02
 # The North — *"The North Remembers"*
 
 > The largest, harshest, and oldest of the Seven Kingdoms — a memory-culture of First Men who bend to survive but do not break, do not convert, and do not forget. The counterweight to every curated throne in the saga: power forgets the kneelers; **the North remembers everything.**
-
+>
 > **Provenance.** Drawn from this session's Conquest/geography/religion research (search-extracted A Wiki of Ice and Fire) plus established canon. Tiers flagged: **[canon]**, **[reading]** (interpretation), **[show]**. ⚠️ Verify specifics/quotes against the books before publication; short mottos quoted with attribution only.
 
 ## The land made the people

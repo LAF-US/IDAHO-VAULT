@@ -21,7 +21,7 @@ date: 2026-06-02
 # Aegon's Conquest
 
 > The war that fused weapon and bloodline into a throne: three dragonriders, fewer than 1,600 men, and two years that ended seven kingdoms and started a calendar. One of a trilogy with `[[RESEARCH_A-Song-of-Ice-and-Fire-The-Dragons-2026-06-02]]` (the weapon) and `[[RESEARCH_A-Song-of-Ice-and-Fire-House-Targaryen-2026-06-02]]` (the bloodline).
-
+>
 > **Provenance.** Tiers flagged: **[canon]**, **[reading]**, **[unverified]**. ⚠️ Source is in-world *history* (*TWOIAF* / *Fire & Blood*), narrated by maesters who hedge and contradict (the unreliable-narrator design) — so even "canon" here is the realm's recorded account. awoiaf blocked direct fetch; claims via search-extracts — verify before publication.
 
 ## The conquerors

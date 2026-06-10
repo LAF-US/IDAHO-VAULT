@@ -21,7 +21,7 @@ date: 2026-06-02
 # Beyond the Wall
 
 > The unmapped country north of the Wall, where the map becomes rumor: a free, lordless people; giants and the children of the forest; and refugees fleeing south from something worse. One of a trilogy with `[[RESEARCH_A-Song-of-Ice-and-Fire-The-Wall-and-the-Watch-2026-06-02]]` and `[[RESEARCH_A-Song-of-Ice-and-Fire-The-Others-and-the-Long-Night-2026-06-02]]`.
-
+>
 > **Provenance.** Canon from this session's geography research + established lore. Tiers: **[canon]**, **[legend]**, **[theory]**, **[show]**, **[reading]**. ⚠️ Verify before publication.
 
 ## The land

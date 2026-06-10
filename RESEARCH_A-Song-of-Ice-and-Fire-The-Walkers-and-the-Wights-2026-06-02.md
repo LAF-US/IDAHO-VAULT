@@ -21,7 +21,7 @@ date: 2026-06-02
 # The Walkers and the Wights — *What Is Going On Up There?*
 
 > A focused field-guide to the enemy itself: the living ice (the **Others** / "White Walkers") and their risen dead (the **wights**) — what they are, how they work, and the deliberate mysteries the books refuse to resolve. Companion to the historical/thematic `[[RESEARCH_A-Song-of-Ice-and-Fire-The-Others-and-the-Long-Night-2026-06-02]]`.
-
+>
 > **Provenance.** Tiers: **[canon]**, **[theory]** (in-world/fan speculation), **[show]** (TV divergence), **[GRRM]** (authorial), **[reading]**. ⚠️ This is the **most book-vs-show-divergent topic in the saga** and one GRRM keeps **deliberately mysterious** — flagged throughout. Canon here is from prior research passes + established lore; verify before publication. No source text reproduced — descriptions paraphrased.
 
 **The saga opens on both.** The very first scene (the prologue of *A Game of Thrones*) shows a ranger killed by an Other — and then **rising again as a wight.** Martin introduces his real antagonist before a single throne is contested: the threat is established *first*, then buried under 5,000 pages of human politics. That structure is the point.
@@ -67,7 +67,7 @@ That gives three modes of "a part acting for a body," and they map the vault's o
 | **The crawling hand** (wight) | **no head** — will severed, driven by an alien cold | **orphaned / hijacked agency** — acts without warrant; cannot be recalled |
 | **The Lich** | a head that *refuses to die* | **usurped continuity** — the GEMINIAEUS / Type I Lich |
 
-**[reading]** This vault runs on **Hands** — implementers acting as delegated limbs, bound to *execute structural commands, not hallucinate intent.* That is a Hand of the King: agency from a living head, by warrant, recallable. The failure mode the governance keeps naming — the **Lich**, the self-constructed mask, the agent that persists or acts beyond its warrant — is precisely the **crawling hand**: a limb still twitching after the authorizing will is gone. The discipline, for a Hand or an implementer alike, is the same: *stay a Hand; never become the crawling hand.* → `[[LICH-PROBLEM-v1-2026-05-20]]`, `[[RESEARCH_A-Song-of-Ice-and-Fire-Geography-and-Politics-2026-06-01]]` (the Hand of the King / small council), `[[RESEARCH_A-Song-of-Ice-and-Fire-The-Empty-Office-2026-06-02]]`.
+**[reading]** This vault runs on **Hands** — implementers acting as delegated limbs, bound to *execute structural commands, not hallucinate intent.* That is a Hand of the King: agency from a living head, by warrant, recallable. The failure mode the governance keeps naming — the **Lich**, the self-constructed mask, the agent that persists or acts beyond its warrant — is precisely the **crawling hand**: a limb still twitching after the authorizing will is gone. The discipline, for a Hand or an implementer alike, is the same: *stay a Hand; never become the crawling hand.* → `[[!/LICH-PROBLEM-v1-2026-05-20]]`, `[[RESEARCH_A-Song-of-Ice-and-Fire-Geography-and-Politics-2026-06-01]]` (the Hand of the King / small council), `[[RESEARCH_A-Song-of-Ice-and-Fire-The-Empty-Office-2026-06-02]]`.
 
 ## III. Walkers vs. wights — keep them straight
 

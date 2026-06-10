@@ -19,7 +19,7 @@ date: 2026-06-09
 # Flag — Disambiguation Needed: Ambiguous Link Targets
 
 > Raised on the Architect's command (**"!FLAG as Disambiguation Needed"**) during the substrate scan for link candidates. A wikilink target is its **filename + date/timestamp, exact** — or the edge dangles or mis-resolves. Three candidate families fail that test: a bare wikilink to each resolves to **more than one file**. This node **flags** them and holds the canonical-form decision for the Architect. *It decides nothing; it wires nothing.*
-
+>
 > **Provenance.** Filenames **globbed 2026-06-09** (exact, verbatim). Governance references read from `.claude/CLAUDE.md`. Tier: **[fact]** for the filename inventory and the governance citations; the only judgments offered are *which files exist* and *what governance already says about them* — the canonical pick is left open.
 
 ## Why these are flagged, not wired
