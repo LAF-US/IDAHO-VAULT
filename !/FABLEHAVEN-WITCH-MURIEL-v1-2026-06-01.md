@@ -30,9 +30,10 @@ The vault is syncretic.*
 
 Fablehaven's witches are **mortals**, not undead — humans who took up dark magic
 (filed with the blixes among the dark-aligned mortals, not the animated dead).
-The Bound Mortal is the witch *after capture*: a dangerous practitioner who could
-not be destroyed, only **contained** — and whose containment is the whole
-diagnosis.
+The Bound Mortal is the witch *after capture*: a dangerous practitioner who was
+not destroyed but **contained** — imprisonment was the lawful, chosen path (a
+mortal *can* be ended; ordinary caretakers could not lawfully kill her under the
+preserve's protections) — and whose containment is the whole diagnosis.
 
 Keep three mortal threats distinct; they are different postures of danger:
 

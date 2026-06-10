@@ -31,9 +31,11 @@ A dragon is something you mostly *survive* and occasionally *negotiate with.*
 Dragons in Fablehaven are immense, ancient, sovereign. They can wear a **human
 avatar**, they command **multiple breath weapons** (Celebrant, the Dragon King,
 has five), and — the property that defines the class — they **emit magical
-fear.** They sit, by and large, **above the treaty:** the preserve's charter
-governs the creatures within it, but a dragon is a power that the governance
-must *treat with*, not simply rule.
+fear.** They are not simply ruled like lesser creatures — governance must
+*treat with* them — but they are **still bound by specific sanctuary treaties**
+(the Wyrmroost bindings, caretaker authority, dragon-slayer constraints) **unless
+those bindings have been broken.** Check the treaty/caretaker/slayer bindings
+first; a dragon sits above the ordinary charter, not above its own treaty.
 
 The Sovereign class is therefore not "a bigger threat." It is a threat whose
 diagnosis is dominated by **your own response to it** as much as by its
@@ -126,19 +128,23 @@ scale. Build the fortress before you invite the dragon.
 
 ---
 
-## The Co-Caretaker Resolution — Sovereigns Are Treated With, Not Beaten
+## The Co-Caretaker Arrangement — An Attempted Governance That Failed
 
-The dragon material does not end in slaughter. It ends in **shared governance**:
-Celebrant and the human protagonists become **co-caretakers of Wyrmroost.** The
-sovereign is neither destroyed nor obeyed; a structured, mutually-bound
-arrangement is reached.
+One attempted answer to the sovereign is **shared governance**: Celebrant and the
+human protagonists are made **co-caretakers of Wyrmroost.** But this is **not the
+mature resolution** — it is a provisional, unstable appointment that Celebrant
+**exploits** while maneuvering to take over; he continues the war, is later
+**stripped of his caretaker title and powers**, and his arc resolves by
+defeat, not by a lasting treaty. The co-caretaker posture is the *setup he abuses*,
+not the recommended end-state.
 
-*Vault mapping:* the lawful long-run relationship with a power you cannot rule
-is **negotiated co-governance under explicit terms**, not domination (you
-cannot) and not submission (the deference-paralysis failure). You treat with
-the sovereign from prepared ground, with witnessed terms, each party bound. The
-Sovereign class is the one place in the taxonomy where the mature outcome is a
-*treaty*, not a counter.
+*Vault mapping:* negotiated co-governance with a power you cannot rule is a real
+option — but treat it as a **provisional arrangement to be monitored, not a
+settled outcome.** A sovereign that has agreed to shared terms may be using the
+posture to position for a takeover; the terms hold only while its standing and
+intent are verified, and a sovereign that repudiates them returns you to the
+adversarial/slayer track. Do not keep negotiating after the counterpart has
+already broken the deal.
 
 ---
 

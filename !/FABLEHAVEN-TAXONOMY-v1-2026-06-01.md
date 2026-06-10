@@ -149,7 +149,9 @@ exploit, a dormant privileged account, a contained model. It does nothing
 until something undoes the seal. Containment doctrine: the seal's integrity
 *is* the security. See `!/LICH-PROBLEM-v1-2026-05-20.md` (the phylactery is the inverse — an
 externalized store that must be destroyed; the seal is a boundary that must be
-preserved). For the demons that cannot be killed, the founding-charter seal,
+preserved). For the demons — killable only by sufficient power (a Vasilis- or
+Fairy-Queen-class kill) so that ordinary containment is the default, not their
+sole counter — the founding-charter seal,
 the dying-disguise con (Graulas), host-binding (Kurisock), and the master
 prison Zzyzx → `!/FABLEHAVEN-SEALED-EVIL-v1-2026-06-01.md`.
 
@@ -241,9 +243,9 @@ Name, mechanism, and provenance are three separate reads.
 | Muriel (witch) | Significant | Autonomous (bound) | Power | Dark | Passes as harmless | Bound by 13 knots | Contained insider; finite spendable seals |
 | The Sphinx | Formidable | Autonomous | Manipulation | Ambiguous | **Passes as the order's head** | Above it | Long-game manipulator at the top of trust |
 | Kobold | Minor | Autonomous | Appetite | Dark | **Yes — to all but a seer** | No | Disguise visible only to the right detector |
-| Nipsies | Trivial (each) | Autonomous (multitude) | Industry | Light (corruptible) | No | Yes | Swarm; corrupted by outside favoritism |
+| Nipsies | Trivial (each) | Autonomous (multitude) | Industry | Light (corruptible) | No | Yes | Swarm; corrupted by the Shadow Plague at its source (cured at the artifact, not by balancing favoritism) |
 | Blix (lecto/narco/vivi) | Significant | Autonomous (mortal) | Drain/control/raise | Dark, *passing* | **Yes** | As mortal | Insider corruption; see vampire chapter |
-| Revenant | Formidable (at post) | **Constructed**; single-purpose | Guarding (its maker's commission) | Dark (cursed) | No | Bound to post | Hardened guardian; all power in one removable object; *the maker is the agent* |
+| Revenant | Formidable (at post) | **Constructed**; single-purpose | Guarding (nail-bound) | Dark (cursed) | No | Bound to post | Hardened guardian; all power in one removable object (the nail); *audit the nail's custody/retrieval — canon names no maker* |
 
 ---
 

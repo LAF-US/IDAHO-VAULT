@@ -40,10 +40,13 @@ fence.
 ## The Lapse — Festival Nights
 
 The treaty's restraints are not constant. On certain **festival nights**
-(Midsummer Eve the most dangerous), the ordinary covenants **lift**, and the
-creatures may roam and act as they will. On those nights the only safety is
-**protected ground** — inside the house, behind the wards. Step off it at the
-wrong hour and the treaty no longer shields you.
+(Midsummer Eve the most dangerous), the **boundary and domain limits lapse** —
+creatures may roam outside their normal areas and act more freely. But the treaty
+itself does not go down: **residual covenants still hold** — protected thresholds
+remain, and creatures still **cannot enter the house unless invited.** On those
+nights the only safety is **protected ground** — inside the house, behind the
+wards. Step off it at the wrong hour and the relaxed boundary no longer keeps the
+creatures away from you, though the inner thresholds still stand.
 
 ## Vault Mappings
 
