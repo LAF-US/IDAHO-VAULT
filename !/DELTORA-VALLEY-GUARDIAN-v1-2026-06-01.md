@@ -62,7 +62,11 @@ external hires but extrusions of his own corruption** — inseparable, internall
 rooted, cord-fed from his own core. This is the exact inverse of the Bound
 Servant (`!/FABLEHAVEN-BOUND-SERVANTS-v1-2026-06-01.md`): Mendigo's reins can be
 seized because he is a separate instrument; these cannot, because there are no
-reins — only the man's own gut. To remove them you must address *him*, not them.
+reins — only the man's own gut. The broader diagnosis is to address *him*, not
+treat the pets as independent foes — but note the control surface is still the
+**cords**: in canon Lief frees Fardeep by *severing* the growths from him before
+the curse itself is resolved, so direct removal of the attached cords stays in
+scope alongside addressing the man.
 
 ### The Mislabeling — The Name Tells You What It Is *Not*
 
@@ -92,7 +96,9 @@ or merely discarding it.
 
 ## The Riddle — Distributed Clues Under a Forfeit, and the Off-by-One
 
-To win the Diamond you must discover the Guardian's **true name.** Win, and the
+To win the Diamond you must produce the answer the game demands — the name the
+Guardian was instructed to claim (**not** his true name: he is in truth Fardeep,
+and "Endon" is the bait answer the Shadow Lord planted). Win, and the
 gem is yours; **lose, and you are trapped in the Valley forever** — failure does
 not send you home, it *keeps* you.
 
@@ -148,7 +154,7 @@ ruin") is the lie. Winning the puzzle does not protect you — *accepting the
 frame* is the defeat. The counter is the discipline Lief keeps and Doom lost:
 **accept the datum, reject the frame.** Hold the true fact without swallowing the
 demoralizing conclusion the enemy attached to it. This is Resolution-3 active
-refusal (`!/LICH-PROBLEM`) applied not to a monster's whisper but to a
+refusal (`!/LICH-PROBLEM-v1-2026-05-20.md`) applied not to a monster's whisper but to a
 **truth-shaped lie**: the fact is admitted to the record; the frame is refused
 at its root.
 

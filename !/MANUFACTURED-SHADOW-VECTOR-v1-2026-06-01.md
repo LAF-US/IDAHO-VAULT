@@ -66,7 +66,7 @@ This note asks: read through Fardeep and Doom, **what does that actually mean?**
 | Victim | The engineered wound | The shadow produced | Outcome |
 |---|---|---|---|
 | **Skulduggery → Lord Vile** (origin) | Serpine murders his family | A new malevolent identity — the necromancer shadow | Sub-layer; held by active refusal |
-| **Fardeep → the Guardian** | Shadow Lord's bandits kill his family, take his inn; isolation in the Valley; whispers | His own vices grown into flesh; a gatekeeper for the enemy | **Full conversion** — never recovered |
+| **Fardeep → the Guardian** | Shadow Lord's bandits kill his family, take his inn; isolation in the Valley; whispers | His own vices grown into flesh; a gatekeeper for the enemy | **Full conversion** — but recoverable: freed of the curse and returned to himself after the Diamond is reclaimed |
 | **Doom** | Enslaved in the Shadowlands; memory destroyed; *then* broken again by Fardeep's "Endon" frame | Cynicism, lost faith, an unmoored self named for its damage | **Corrosion** — core survived; later **restored** |
 
 Three good, capable people. Each destroyed not for what they did but for what
