@@ -57,7 +57,7 @@ date: 2026-06-04
 
 **The Upper House — Saturday · Envy.** A single **tower of ~2,000 floors** built of rearranging "**Office Cubes**" — offices that physically **move up or down as workers are promoted or demoted.** Perpetually raining *(the rain is the Sixth Part of the Will).* Where the House's **Sorcerers are trained**; Saturday, "**Superior Sorcerer of the House**," the **oldest Denizen and most powerful sorcerer**, has spent **~10,000 years building her tower ever-higher** to reach and usurp the Gardens. Her **Envy** points straight up.
 
-**The Incomparable Gardens — Sunday · Pride.** Canon twist: **not part of the House at all.** It is the **epicentre of the universe** and the **very first thing the Architect created from Nothing** — before the Secondary Realms, before the other demesnes. The highest, oldest, **best domain**, given to **Sunday** (the Architect's eldest son). His **Pride**; the **source of Saturday's envy.**
+**The Incomparable Gardens — Sunday · Pride.** Canon twist: **not merely another ordinary demesne** — the Gardens are the **true epicentre** of the House/universe and the **very first thing the Architect created from Nothing** — before the Secondary Realms, before the other demesnes. The highest, oldest, **best domain**, given to **Sunday** (the Architect's eldest son). His **Pride**; the **source of Saturday's envy.**
 
 ## The sub-structure — Dawn, Noon, Dusk
 

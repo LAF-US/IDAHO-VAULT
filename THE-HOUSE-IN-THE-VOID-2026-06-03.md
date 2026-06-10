@@ -69,7 +69,7 @@ The darker reading is the one you named: the maker withdraws not from serenity b
 - A bounded magical realm — the **Emerald City** at the center — ringed by the **Deadly Desert** that turns the living to sand: **the void at the edge.**
 - Its sovereign is a fraud. The **Wizard** is a **humbug** — *the man behind the curtain*, projecting a giant false head — who **took the throne with no rightful claim**: a usurper by **illusion**, Varys's shadow on the wall made literal (→ the Empty Office node).
 - The rightful line endures hidden: **King Pastoria** was deposed by **Mombi's** black magic, and his heir **Ozma** was concealed — **transformed into the boy "Tip"** — to keep her from the throne, then **restored** (the hidden heir: cf. Arthur, Sweet P, the Targaryen survival).
-- The grace note: once disenchanted, **Pastoria does not want the crown back** — he yields to Ozma and opens a **tailor shop.** The **legitimate relinquishment** — the Cincinnatus/Washington pole, the exact opposite of the Lich who will not let go.
+- The grace note: once disenchanted, **Pastoria does not want the crown back** — he yields to Ozma and opens a **tailor shop.** ⚠️ *(This tailor-shop relinquishment is from **Ruth Plumly Thompson's** post-Baum* The Lost King of Oz *(1925), not Baum — who only briefly mentions Pastoria.)* The **legitimate relinquishment** — the Cincinnatus/Washington pole, the exact opposite of the Lich who will not let go.
 
 So Oz hands the canvas all five at once: **void at the edge + a humbug at the center + a deposed king + a hidden heir + a claimant who steps aside.**
 
@@ -77,7 +77,7 @@ So Oz hands the canvas all five at once: **void at the edge + a humbug at the ce
 
 **[canon + reading]** The same **deposed-rightful-king slot** carries **two name-forms across two authors** — **Pastoria** (Baum) vs. **Pastorius** (Maguire) — a *styling drift* of exactly the kind the vault tracks (cf. Bartimaeus-of-the-Jinn vs. Geminiaeus-of-the-Ifrit; Ivan "the Terrible" / *Grozny*) → `[[STYLINGS-AND-PROPAGANDA-FOSSILS-2026-06-02]]`. And the two canons are **opposite records of the same Oz**:
 
-- **Baum = the sanctioned record.** The Wizard is a *lovable humbug*; Pastoria is merely "removed by magic," later content to **relinquish** (the tailor). History as the cheerful victor tells it.
+- **Baum = the sanctioned record.** The Wizard is a *lovable humbug*; Pastoria is merely "removed by magic" (the *content-to-relinquish* tailor ending is **Thompson's** later addition in *The Lost King of Oz*, not Baum's). History as the cheerful victor tells it.
 - **Maguire (*Wicked*) = the buried record read back.** The Wizard is a *totalitarian usurper* who **assassinated Pastorius** and seized power by **illusion and propaganda**; the rightful heir (Ozma Tippetarius) is hidden as "Tip"; and **"Wicked" is the styling pinned on Elphaba** — a **propaganda fossil** — while the Wizard rules by *controlling the story itself.*
 
 **[reading]** So Oz is the same House in the Void told **twice** — once by the **victor's record** (Baum) and once by **reading past the styling to the truth it buries** (Maguire). The Wizard is not merely a humbug at the center; he is the **humbug who manufactures the record** — the **Empty Office and the propaganda fossil in one man behind one curtain.** Oz, uniquely, instances *both* failure poles at once (→ the Empty Office & Stylings nodes).
