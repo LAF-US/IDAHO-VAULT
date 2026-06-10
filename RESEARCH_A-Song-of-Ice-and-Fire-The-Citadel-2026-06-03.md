@@ -9,7 +9,7 @@ related:
   - "[[RESEARCH_A-Song-of-Ice-and-Fire-The-Kingsroad-2026-06-03]]"
   - "[[RESEARCH_A-Song-of-Ice-and-Fire-The-Others-and-the-Long-Night-2026-06-02]]"
   - The Abhorsen
-date created: Tuesday, June 3rd 2026
+date created: Wednesday, June 3rd 2026
 authority: LOGAN
 status: active
 type: research-report
@@ -44,7 +44,7 @@ date: 2026-06-03
 
 ## The glass candles & the higher mysteries
 
-- **[canon/legend]** **Glass candles** of **obsidian** are kept at the Citadel — four survive (one green, three black). Per **Marwyn**, Valyrian sorcerers used them to see across great distances and send visions. ⚠️ *Their re-lighting is a magic-return motif:* a novice reports the green candle in Marwyn's study **burning** again.
+- **[canon/legend]** **Glass candles** of **obsidian** are kept at the Citadel — four survive (one green, three black). Per **Marwyn**, Valyrian sorcerers used them to see across great distances and send visions. ⚠️ *Their re-lighting is a magic-return motif:* a glass candle is reported **burning** again, and Sam sees a **black** glass candle alight in Marwyn's chambers — the confirmed burning one is black, not the lone green candle.
 - **[canon]** The **"higher mysteries"** (magic) earn a rare **Valyrian-steel** link (~1 in 100 maesters); the field is treated as mostly theoretical — its working purpose, the texts hint, is to argue magic is **extinct**. **Marwyn "the Mage"** dissents, deriding the others as the **"grey sheep."** (→ the Maesters node; the Others & Long Night node.)
 
 ## House Hightower
