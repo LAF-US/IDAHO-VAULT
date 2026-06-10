@@ -106,19 +106,21 @@ Lich in waiting** (`!/LICH-PROBLEM-v1-2026-05-20.md`): a stored thing of unknown
 standing that will be reactivated by someone who does not know what they are
 waking. **Label your prisons.** A seal with no manifest is a future incident.
 
-### 2. The adversary seeds the prison, obscures the record, and triggers the swap
-The Sphinx did not break Navarog out. He **put Navarog in** (concealing the
-identity), then let the system's own logic do the rest: a day would come when the
-caretakers needed the Box badly enough to pay its price, and the swap would
-release his asset for him. The manipulator's masterstroke is patience —
-**plant the asset in the prison, corrupt the record, wait for a legitimate
-crisis to force the swap.**
+### 2. The adversary obscures the record and lets the swap do the work
+The Sphinx did not break Navarog out. Navarog was **already inside** — how he was
+first captured and by whom, canon does not say — and the Sphinx, present at the
+sealing, **kept the occupant's identity secret**, then let the system's own logic
+do the rest: a day would come when the caretakers needed the Box badly enough to
+pay its price, and the swap would release that occupant for him. The
+manipulator's masterstroke is patience — **obscure the record of a contained
+asset, wait for a legitimate crisis to force the swap.**
 
-*Vault pattern:* an adversary who seeds a quarantine with its own asset under a
-false label, then waits for *you* to trigger the release through a defensible
-security action. The act that looks like a win (we contained the spy!) is the
-attack's payload (we freed the dragon). **When a containment action also forces
-a release, audit the release as hard as you celebrate the capture.**
+*Vault pattern:* an adversary who corrupts the *record* of a quarantine's
+contents — leaving the occupant unknown and unverified — then waits for *you* to
+trigger the release through a defensible security action. The act that looks like
+a win (we contained the spy!) is the attack's payload (we freed the dragon).
+**When a containment action also forces a release, audit the release as hard as
+you celebrate the capture.**
 
 ### 3. Suspension is not resolution
 Navarog sat for years; Vanessa faced the prospect of centuries. The Box paused
@@ -136,15 +138,18 @@ Box is a *deferral*, and every deferral names a date you do not control.
 
 The Box works on Vanessa where other prisons fail because the narcoblix's power
 is a **relationship** — she puppets sleepers she has *bitten*, at a distance. The
-Quiet Box's total, suspended isolation **severs the link's reach.** Inside, she
-cannot reach anyone; the bite is intact but it connects to nothing.
+Quiet Box's suspended isolation **severs the narcoblix's specific reach** — her
+sleep-puppetry power. Inside, she cannot puppet anyone; the bite is intact but it
+connects to nothing. (It is not a total air-gap: canon shows Nagi Luna still
+*communicated* with the Sphinx from a Quiet Box, so the Box stops the targeted
+power while residual channels can survive — audit for them.)
 
 *Vault pattern:* against a **link-based** threat (the blix class), true isolation
 — the air-gap, the severed channel — is the decisive counter, even when you
 cannot cure the entity itself. You do not have to remove the bite; you have to
 put the biter where the bite cannot reach. The Quiet Box is the maximal form of
-the blix chapter's two counters ("sever the bites; stay awake"): it severs *all*
-reach at once.
+the blix chapter's two counters ("sever the bites; stay awake"): it severs the
+puppetry reach — but do not assume it severs *every* channel at once.
 
 ---
 

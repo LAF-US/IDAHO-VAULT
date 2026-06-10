@@ -51,7 +51,7 @@ To read any one of them, read the office first. They are all the same job.
 | **Hobgoblin** (Puck, Robin Goodfellow) | England | *hob* + *goblin*; once helpful, **reframed mischievous** by Christianity |
 | **Boggart** | England | the **soured** hobgoblin — "teased or misused, hobgoblins become boggarts" |
 | **Lob / lubber fiend**, **pixie/pixy** | England / Devon-Cornwall | same niche, regional names |
-| **Redcap / powrie** | Anglo-Scottish Border | the **murderous floor** — soaks his cap in victims' blood |
+| **Redcap / powrie** | Anglo-Scottish Border | **NOT a household helper** — a separate, baseline-predatory class: a murderous castle/ruin goblin who kills travelers and soaks his cap in their blood; listed here only for contrast |
 | **Kobold** | Germany | *kob/kof* "house" + *walt* "power"; household **and** mine spirit |
 | **Nisse / Tomte** | Scandinavia | red-capped, short-tempered, fiercely protective |
 | **Domovoi** | Slavic lands | helps or harms strictly by treatment |
@@ -92,10 +92,11 @@ Strip the names and the **same compact** appears everywhere:
    variously offended ("a shirt of sackcloth, when he was used to linen"), made
    "too grand for work," or freed from a servitude-curse. **Over-reward breaks the
    bond as surely as abuse does.**
-3. **Disposition is set by treatment, not by kind.** The *same being* slides along a
-   scale: **helpful → mischievous → malicious → murderous.** Keep faith and the
-   house prospers; break it and the milk sours, the harvest fails, the household's
-   luck leaves.
+3. **Disposition is set by treatment, not by kind** — *within the helper family.*
+   The *same being* slides along a scale: **helpful → mischievous → malicious.**
+   Keep faith and the house prospers; break it and the milk sours, the harvest
+   fails, the household's luck leaves. (This compact does **not** reach the
+   redcap/powrie, which is murderous by nature, not a soured helper — see below.)
 4. **Reframing can darken the whole class.** With Christianity, the helpful
    house-gods were recast as imps and demons — not changed in nature, **changed in
    the telling.**
@@ -109,10 +110,12 @@ Strip the names and the **same compact** appears everywhere:
 | **Helpful** | brownie, tomte, domovoi (kept well) | secret labor, protection, luck |
 | **Mischievous** | hobgoblin, Puck, pixie | pranks, misplacing things, harmless trouble |
 | **Malicious** | boggart, soured kobold | spoiled food, broken tools, active sabotage |
-| **Murderous** | redcap | lethal; the floor of the scale |
+| **Murderous** | (redcap — *separate predatory class*, not a soured helper) | lethal; baseline-hostile, included only as the contrast floor |
 
-The spectrum is the whole point: these are not four species but **one creature at
-four settings**, and the setting is chosen by the keeper's conduct.
+The spectrum is the whole point: the helper tiers are not three species but **one
+creature at three settings**, and the setting is chosen by the keeper's conduct.
+The redcap is **not** one of those settings — it is a different, baseline-murderous
+fae that no courtesy compact will repair.
 
 ---
 
