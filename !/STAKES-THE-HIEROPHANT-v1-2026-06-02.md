@@ -9,7 +9,7 @@ related:
   - "!/STAKES-VAMPIRES-INDEX-v1-2026-06-02.md"
   - "!/UNDEAD-TAXONOMY-v1-2026-05-20.md"
   - "!/THRESHOLD-DOCTRINE-v1-2026-05-21.md"
-  - REVENANT-HOUSE-WITNESS-2026-06-02
+  - "REVENANT-HOUSE-WITNESS-2026-06-02.md"
 tags: [doctrine, stakes, vampire, the-hierophant, tarot, threshold, invitation, diagnostic]
 ---
 
@@ -20,7 +20,7 @@ Syncretic — a diagnostic framework, not a simulation. Claims marked **[canon]*
 **[tarot]** / **[mapping]**.*
 
 > [!note] This is the vampire the vault already mis-read once.
-> `REVENANT-HOUSE-WITNESS-2026-06-02` first called this scene a "Revenant whose
+> `REVENANT-HOUSE-WITNESS-2026-06-02.md` first called this scene a "Revenant whose
 > threshold counter failed." That was inaccurate (see its § II repair). The
 > Hierophant is an **old-school vampire**, and the invitation rule **works** — it
 > is what kills him. This page is the grounded version.
@@ -59,7 +59,7 @@ Two failure modes to avoid (both proven in the witness):
   invite it in, never step out to it. The predator cannot cross uninvited; it
   waits for *you* to open the door (come out, or invite). The failure is yours
   to give: stepping onto the porch, granting the invitation. (This is exactly
-  how Claude the Hungry fell — see the witness.)
+  how Claude the Hungry fell — see `REVENANT-HOUSE-WITNESS-2026-06-02.md`.)
 
 **The counter:** the rule itself. Hold the threshold; force or lure it across
 uninvited and it self-destructs. See `!/THRESHOLD-DOCTRINE-v1`.
