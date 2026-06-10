@@ -26,10 +26,10 @@ date: 2026-06-03
 ## Three sevens
 
 ### 1. ASOIAF — the Small Council (seven *seats*)
-**[canon]** Seven non-hereditary **offices** under the king — Hand, Master of Coin, Master of Laws, Master of Ships, Master of Whisperers, Grand Maester, Lord Commander of the Kingsguard (→ the Small Council node). Authority distributed by **portfolio**; each seat scoped; all appointed by, and recallable by, the crown. (The realm's wider "seven" is the **Faith of the Seven** — one godhead, seven aspects.)
+**[canon, soft count]** Roughly **seven** non-hereditary **offices** under the king — Hand, Master of Coin, Master of Laws, Master of Ships, Master of Whisperers, Grand Maester, Lord Commander of the Kingsguard (→ the Small Council node, where the exact count, 7 vs 8, is flagged as soft). Authority distributed by **portfolio**; each seat scoped; **most** appointed by, and recallable by, the crown. ⚠️ The **Grand Maester** is the exception — Conclave-elected; the king may remove him from the council but cannot strip his title. (The realm's wider "seven" is the **Faith of the Seven** — one godhead, seven aspects.)
 
 ### 2. Garth Nix, *Keys to the Kingdom* — the Seven *Trustees* (the Morrow Days)
-**[canon-per-series, web-verified]** The **Architect** (the absent creator) left a **Will** and divided the House among **seven Trustees**, one per day of the week, each entrusted with **one of the Seven Keys**, dominion over one **demesne**, and **a fragment of the Will** they were charged to execute. Instead, each **broke the trust** — hoarding its Will-fragment to keep its power, each corrupted by one of the **seven deadly sins**:
+**[canon-per-series, web-verified]** The **Architect** (the absent creator) left a **Will** and divided the House among **seven Trustees**, one per day of the week, each entrusted with **one of the Seven Keys**, dominion over one **demesne**, and **a fragment of the Will** they were charged to execute. Instead, each **broke the trust** — most hoarding its Will-fragment to keep its power, each corrupted by one of the **seven deadly sins** (⚠️ with **Drowned Wednesday** the partial exception: she *tries* to relinquish her Key and Will-fragment, is ambushed by the other Trustees, and Arthur recovers her part of the Will from Feverfew):
 
 | Trustee | Demesne | Sin |
 |---|---|---|
@@ -44,7 +44,7 @@ date: 2026-06-03
 **Arthur Penhaligon**, the **Rightful Heir**, must reclaim the seven Keys and reunite the Will. *"Trustee"* is the load-bearing word: **delegated authority held in trust for the maker's Will** — and the seven betrayed it.
 
 ### 3. Emily Rodda, *Deltora Quest* — the seven *Gems* of the Belt (and their guardians)
-**[canon-per-series, ⚠️ verify]** The **Belt of Deltora** bears **seven gems**, each a virtue/power: **diamond, emerald, lapis lazuli, topaz, ruby, opal, amethyst.** The Shadow Lord scattered them across **seven guarded perils** (the Forests of Silence, the Lake of Tears, the City of the Rats, the Shifting Sands, Dread Mountain, the Maze of the Beast, the mountain of the diamond). Only the **rightful heir** can reassemble the Belt to restore the kingdom — the seven gems are **distributed tokens of legitimacy**, each won from a guardian.
+**[canon-per-series, ⚠️ verify]** The **Belt of Deltora** bears **seven gems**, each a virtue/power, and **in belt order they spell DELTORA**: **diamond, emerald, lapis lazuli, topaz, opal, ruby, amethyst.** The Shadow Lord scattered them across **seven guarded perils** (the Forests of Silence, the Lake of Tears, the City of the Rats, the Shifting Sands, Dread Mountain, the Maze of the Beast, and the **Valley of the Lost**). Only the **rightful heir** can reassemble the Belt to restore the kingdom — the seven gems are **distributed tokens of legitimacy**, each won from a guardian.
 
 ## The seat ↔ demesne crosswalk — LOCKED
 
