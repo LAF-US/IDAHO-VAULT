@@ -4,10 +4,10 @@ updated: 2026-06-10
 created: 2026-06-10
 authority: LOGAN
 doc_class: flag-record
-status: active
-matter: "Two CI checks on PR #428 fail on GitHub-API authentication, independent of PR content"
+status: archived
+matter: "Two CI checks on PR #428 failed on GitHub-API authentication, independent of PR content — RESOLVED by a base-branch update"
 flagged-by: "Claude Code (imported software; Direct-Write implementer) — flag raised at the Architect's command to flag broken checks in a commit"
-adjudication: "PENDING — the CI token/permissions fix is the Architect's / maintainer's call; this node decides nothing and changes no workflow"
+adjudication: "RESOLVED 2026-06-10 — both checks passed after the base update (head 1413f97); no workflow was edited. Retained for the record."
 related:
   - "[[DISAMBIGUATION-NEEDED-LINK-TARGETS-2026-06-09]]"
   - "[[!/AGENTS]]"
@@ -19,7 +19,11 @@ related:
 >
 > **Provenance.** Conclusions read **verbatim from the failing job logs** on head `bff5439`, pulled 2026-06-10. Tier: **[fact]** for the log excerpts and the pass/fail inventory; **[reading]** for the "not content-related" attribution (grounded in: the branch diff is 100% Markdown, and a parallel CodeQL job on the same languages passed).
 
-## The two failing checks
+## Update — 2026-06-10: resolved by a base-branch update
+
+Both checks now **pass.** After the Architect updated the base branch (`main` merged into the PR branch; head advanced from `bff5439` → `1413f97`), CI re-ran clean: **`auto-merge-maintainer` → success** and **both `Analyze (python)` (CodeQL) → success**, alongside every other gate. The earlier `401` / `Requires authentication` failures were transient environment/token conditions, not branch content — confirmed, since nothing in the branch's `.py` or workflow surface changed between `bff5439` and `1413f97` except the base merge. **This session edited no workflow.** The flag is **closed and retained for the record**; the original (failing) findings are preserved below as the historical entry.
+
+## The two failing checks (historical — as of `bff5439`)
 
 | Check | Conclusion | Root cause (from logs) |
 |---|---|---|
@@ -38,7 +42,7 @@ The fix lives in `.github/workflows/*` (CI token scopes / permissions) — a **p
 
 ## Disposition
 
-**Status: OPEN — flagged for the Architect / maintainer.** Action needed is a credentials/permissions fix on the two workflows (or acceptance that both are non-blocking, since the required gates are green). This flag promotes nothing and changes no automation; it is the record that the breakage is environmental and pre-dates this branch's content.
+**Status: RESOLVED (2026-06-10).** Both checks passed on the base-updated head `1413f97` (see the Update section above) — confirming the breakage was environmental, not branch content. Originally flagged OPEN for the Architect / maintainer while both checks were failing on `bff5439`. This flag promoted nothing and changed no automation; it stands as the record that the failures were transient and pre-dated this branch's content.
 
 ---
 
@@ -46,7 +50,7 @@ The fix lives in `.github/workflows/*` (CI token scopes / permissions) — a **p
 
 - **Created:** 2026-06-10
 - **Last Updated:** 2026-06-10
-- **Status:** Active
+- **Status:** Archived (resolved)
 - **Authority:** LOGAN
 - **Authors:** Claude Code (imported software; Direct-Write implementer)
-- **Change Note:** Flagged the two auth-failing CI checks (CodeQL `Analyze (python)`, `auto-merge-maintainer`) on PR #428 head `bff5439`; evidence from job logs; no workflow edited.
+- **Change Note:** Flagged the two auth-failing CI checks (CodeQL `Analyze (python)`, `auto-merge-maintainer`) on PR #428 head `bff5439`; evidence from job logs; no workflow edited. Updated 2026-06-10: both checks passed after a base-branch update (head `1413f97`); flag closed and retained.
