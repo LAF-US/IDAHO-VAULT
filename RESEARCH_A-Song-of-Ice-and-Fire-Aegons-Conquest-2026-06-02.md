@@ -20,7 +20,7 @@ date: 2026-06-02
 
 # Aegon's Conquest
 
-> The war that fused weapon and bloodline into a throne: three dragonriders, fewer than 1,600 men, and two years that ended seven kingdoms and started a calendar. One of a trilogy with `[[RESEARCH_A-Song-of-Ice-and-Fire-The-Dragons-2026-06-02]]` (the weapon) and `[[RESEARCH_A-Song-of-Ice-and-Fire-House-Targaryen-2026-06-02]]` (the bloodline).
+> The war that fused weapon and bloodline into a throne: three dragonriders, fewer than 1,600 men, and two years that broke six of the seven kingdoms (Dorne held out) and started a calendar. One of a trilogy with `[[RESEARCH_A-Song-of-Ice-and-Fire-The-Dragons-2026-06-02]]` (the weapon) and `[[RESEARCH_A-Song-of-Ice-and-Fire-House-Targaryen-2026-06-02]]` (the bloodline).
 >
 > **Provenance.** Tiers flagged: **[canon]**, **[reading]**, **[unverified]**. ⚠️ Source is in-world *history* (*TWOIAF* / *Fire & Blood*), narrated by maesters who hedge and contradict (the unreliable-narrator design) — so even "canon" here is the realm's recorded account. awoiaf blocked direct fetch; claims via search-extracts — verify before publication.
 
@@ -74,8 +74,8 @@ date: 2026-06-02
 
 - **[canon]** **Coronation at Oldtown:** the **High Septon anointed Aegon with the seven oils** in the Starry Sept — fusing the new crown to the Faith (a marriage that would later sour into the Faith Militant uprising).
 - **[canon]** **The Iron Throne** was forged from the surrendered/defeated swords, melted by Balerion's fire, as a standing reminder of submission. ⚠️ **[unverified]** the famous line *"a king should never sit easy"* could not be sourced verbatim this pass — the *sentiment* (a deliberately uncomfortable, blade-jagged throne) is canon; the wording is unconfirmed.
-- **[canon]** **The calendar resets:** the war's completion anchors **1 AC** ("After the Conquest"), the epoch maesters reckon from.
-- **[canon]** Aegon **kept the defeated kings as his Lords Paramount / Wardens** (Stark, Lannister, Tully elevated over the Riverlands, Baratheon, and — after the Gardeners' extinction — **Tyrell** at Highgarden), and is credited with founding the **small council** and the office of the **Hand of the King.**
+- **[canon]** **The calendar resets:** Aegon's **coronation and anointing at Oldtown** anchors **1 AC** ("After the Conquest"), the epoch maesters reckon from — not the war's end, since the First Dornish War dragged on to ~13 AC.
+- **[canon]** Aegon's settlement mixed **retained royal houses** with **newly elevated ones**. He confirmed the houses that bent the knee as Lords Paramount / Wardens — **Stark** (North), **Lannister** (West), **Arryn** (Vale) — while **raising new paramounts** where kings had fallen: **House Tully** elevated over the Riverlands for turning on Harren Hoare, **Orys Baratheon** founding a new line on the slain Durrandons' seat, and the **Tyrells** (Highgarden's stewards) raised after House Gardener was extinguished at the Field of Fire. He is also credited with founding the **small council** and the office of the **Hand of the King.**
 
 ## Theme — conquest, and what it can't do
 
