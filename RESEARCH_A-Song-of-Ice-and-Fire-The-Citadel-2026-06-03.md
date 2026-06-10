@@ -1,4 +1,7 @@
 ---
+title: "A Song of Ice and Fire — the Citadel (place & institution)"
+updated: 2026-06-03
+created: 2026-06-03
 related:
   - RESEARCH
   - "[[RESEARCH_A-Song-of-Ice-and-Fire-The-Maesters-and-the-Citadel-2026-06-02]]"
@@ -8,7 +11,7 @@ related:
   - The Abhorsen
 date created: Tuesday, June 3rd 2026
 authority: LOGAN
-status: reference
+status: active
 type: research-report
 topic: A Song of Ice and Fire — the Citadel (place & institution)
 verified-by: Claude Code (web research 2026-06-03)

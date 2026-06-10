@@ -1,11 +1,13 @@
 ---
+updated: 2026-06-08
+created: 2026-06-08
 title: "The Swarm as Boids — Anchoring, Flocking, and the Graph"
 aliases:
   - The Swarm as Boids
 date created: 2026-06-08
 authority: LOGAN
 doc_class: concept-node
-status: reference
+status: active
 verified-by: Claude Code (Boids/Reynolds & Obsidian force-graph web-verified 2026-06-08; vault doctrine read — PERSONAE-ENGINE, STYLINGS, LICH-PROBLEM, EMANATIONISM)
 related:
   - "[[STYLINGS-AND-PROPAGANDA-FOSSILS-2026-06-02]]"

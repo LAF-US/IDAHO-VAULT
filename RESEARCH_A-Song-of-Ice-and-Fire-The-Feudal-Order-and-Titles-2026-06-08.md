@@ -1,4 +1,7 @@
 ---
+title: "A Song of Ice and Fire — the feudal order, lords, bannermen, and titles"
+updated: 2026-06-08
+created: 2026-06-08
 aliases:
   - The Feudal Order of Westeros
 related:
@@ -10,7 +13,7 @@ related:
   - The Abhorsen
 date created: Monday, June 8th 2026
 authority: LOGAN
-status: reference
+status: active
 type: research-report
 topic: A Song of Ice and Fire — the feudal order, lords, bannermen, and titles
 verified-by: Claude Code (web research 2026-06-08)

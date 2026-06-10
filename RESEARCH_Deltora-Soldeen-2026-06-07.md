@@ -1,4 +1,7 @@
 ---
+title: "Deltora Quest — Soldeen, Guardian of the Ruby"
+updated: 2026-06-07
+created: 2026-06-07
 aliases:
   - Soldeen
   - Nanion
@@ -9,7 +12,7 @@ related:
   - The Abhorsen
 date created: Sunday, June 7th 2026
 authority: LOGAN
-status: reference
+status: active
 type: research-report
 topic: Deltora Quest — Soldeen, Guardian of the Ruby
 verified-by: Claude Code (web research 2026-06-07)

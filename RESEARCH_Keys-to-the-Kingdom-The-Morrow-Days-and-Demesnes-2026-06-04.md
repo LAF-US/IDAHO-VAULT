@@ -1,4 +1,7 @@
 ---
+title: "Keys to the Kingdom — the House, the Morrow Days, and their demesnes"
+updated: 2026-06-04
+created: 2026-06-04
 related:
   - RESEARCH
   - "[[THE-SEVENFOLD-BODY-SEATS-TRUSTEES-GEMS-2026-06-03]]"
@@ -6,7 +9,7 @@ related:
   - The Abhorsen
 date created: Thursday, June 4th 2026
 authority: LOGAN
-status: reference
+status: active
 type: research-report
 topic: Keys to the Kingdom — the House, the Morrow Days, and their demesnes
 verified-by: Claude Code (web research 2026-06-04)

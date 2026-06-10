@@ -1,4 +1,7 @@
 ---
+title: "A Song of Ice and Fire — the royal style parsed as Stylings"
+updated: 2026-06-08
+created: 2026-06-08
 aliases:
   - The Royal Style Parsed
 related:
@@ -9,7 +12,7 @@ related:
   - The Abhorsen
 date created: Monday, June 8th 2026
 authority: LOGAN
-status: reference
+status: active
 type: research-report
 topic: A Song of Ice and Fire — the royal style parsed as Stylings
 verified-by: Claude Code (web research 2026-06-08)

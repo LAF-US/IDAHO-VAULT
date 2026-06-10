@@ -1,4 +1,7 @@
 ---
+title: "Deltora Quest — Thaegan, the sorceress of the Lake of Tears"
+updated: 2026-06-07
+created: 2026-06-07
 aliases:
   - Thaegan
 related:
@@ -9,7 +12,7 @@ related:
   - The Abhorsen
 date created: Sunday, June 7th 2026
 authority: LOGAN
-status: reference
+status: active
 type: research-report
 topic: Deltora Quest — Thaegan, the sorceress of the Lake of Tears
 verified-by: Claude Code (web research 2026-06-07)

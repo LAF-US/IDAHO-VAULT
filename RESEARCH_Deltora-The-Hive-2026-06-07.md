@@ -1,4 +1,7 @@
 ---
+title: "Deltora Quest — the Hive, Guardian of the Lapis Lazuli"
+updated: 2026-06-07
+created: 2026-06-07
 aliases:
   - The Hive
   - Hive Queen
@@ -9,7 +12,7 @@ related:
   - The Abhorsen
 date created: Sunday, June 7th 2026
 authority: LOGAN
-status: reference
+status: active
 type: research-report
 topic: Deltora Quest — the Hive, Guardian of the Lapis Lazuli
 verified-by: Claude Code (web research 2026-06-07)
