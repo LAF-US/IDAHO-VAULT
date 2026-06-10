@@ -89,17 +89,22 @@ container — a tenant you must save sharing a process/credential/store with an
 intruder you must not free — **you cannot "just open it."** Wholesale restore
 frees the intruder; wholesale destroy kills the tenant. You need a third move.
 
-### The slow-field: pause everything to separate good from bad
-The third move is to **slow the whole system indiscriminately** and extract the
-ally inside the window before the slowed adversary can act. You accept degrading
-your *own* side's speed because the slowing is uniform and you only need a
-*relative* edge.
+### The slow-field: chill the contents, act from a warm position
+The third move is to **slow the dangerous contents** and extract the ally before
+the slowed adversary can act — while keeping an **out-of-band actor outside the
+freeze.** In canon the children use the North-Pole cold to slow Nimrod and
+Akhenaten, then enter the lamp **from a warm position**, so the rescue runs
+*faster* than the threat. The edge is not a uniform slowdown; it is asymmetry —
+the threat is chilled, the rescuer is not.
 
-*Pattern:* freeze the whole environment — maintenance mode, read-only, rate-limit
-to near-zero, air-gap, "go to the North Pole" — not to contain permanently but to
-**buy a controlled window in which a precise extraction outpaces a neutralized
-threat.** The pause is blunt; the extraction is surgical; the blunt pause is what
-makes the surgery possible.
+*Pattern:* freeze the dangerous **contents** of the environment — maintenance
+mode, read-only, rate-limit to near-zero, air-gap, "go to the North Pole" — not
+to contain permanently but to **buy a controlled window in which a precise
+extraction outpaces a neutralized threat.** Crucially, **keep the rescue
+path/actor out of the slow-field** (acting "from the warm side"); do not
+rate-limit your own responders along with the adversary, or you lose the window.
+The pause is blunt; the extraction is surgical; the un-slowed actor is what makes
+the surgery possible.
 
 ### The condition is the lever, not the wall
 No wall held Akhenaten back at the Pole — the *temperature* did. Containment by

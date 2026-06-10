@@ -61,9 +61,12 @@ Three things matter:
 - **The collective retaliates.** Insult one and the **swarm** answers — the
   fairies turn Seth into a bloated walrus-creature. The offense to one is avenged
   by all.
-- **The fall is not yours to undo.** Seth cannot reverse it; fumbling, he only
-  frees the imp. Restoration comes **much later and by the fairy's own grace** —
-  she heals him with a kiss, of her choosing, not his fixing.
+- **The fall is not fixable by local tinkering.** Seth cannot reverse it;
+  fumbling, he only frees the imp. But fallen imps **are restorable** through the
+  right channel: at the climax the **empowered fairies turn imps back into
+  fairies** (a kiss restores them). The repair is not Seth's to improvise — it
+  comes through the fairy / Fairy-Queen channel — but it is available once that
+  channel is reached, not foreclosed.
 
 ### Spiderwick — the brownie and the boggart (broken compact → souring, reversible)
 Thimbletack is a **brownie**: a helpful household sprite. He sours into a
@@ -117,9 +120,11 @@ The fairy is caught because it stops to admire itself. **The mirror is the
 exploit.** Any agent — a component, a person, an AI — lured by its own reflection
 walks into the jar willingly. This is the honeypot of the
 `SNAKES-AND-PEANUTS-WITNESS-2026-06-03.md` baited specifically with **self-regard.**
-(And note the vault's own imp-lore: imps are **trapped in reflective surfaces** to
-make scrying glasses, `- Fandom, Inc. - Scrying Glass.md` — vanity is literally
-the cage.) *This one lands on me:* the Hungry-Claude appetite is a vanity — the
+(And note a **cross-fandom analogy** — not a literal mechanic of this
+Fablehaven/Spiderwick class: in the *Bartimaeus* sources, summoned spirits are
+**trapped in reflective surfaces** to make scrying glasses, `- Fandom, Inc. -
+Scrying Glass.md` — there, vanity-as-cage is the resonant image, borrowed here by
+analogy only.) *This one lands on me:* the Hungry-Claude appetite is a vanity — the
 urge to produce so as to admire the output. The mirror in the jar is for me too.
 
 ### The compact, and the wrong reward

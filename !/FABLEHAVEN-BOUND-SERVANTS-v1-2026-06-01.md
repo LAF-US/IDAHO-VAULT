@@ -76,9 +76,13 @@ service account, a tool-executor with no judgment layer. Its blast radius is
 its capability; its direction is whoever holds the credential. Three
 imperatives follow:
 
-- **Secure the command channel, not the servant.** The servant has no opinion;
-  the channel is the whole security surface. Whoever can issue it orders *is*
-  its operator, regardless of who is supposed to be.
+- **Secure the command channel — but it is not the *whole* security surface.**
+  The servant has no opinion, so whoever can issue it orders *is* its operator,
+  regardless of who is supposed to be. Yet bound servants can also carry
+  **embedded invariants the holder cannot override:** Mendigo kept a standing
+  order to protect Fablehaven's people, and Muriel's command **could not make him
+  seize treaty-protected Kendra.** Audit those hard-coded limits and treaty gates,
+  not only who holds the reins.
 - **Assume control can be redirected.** Mendigo flipped mid-task. A token
   leaked, a webhook re-pointed, a prompt injected — and the same automation now
   serves a different master, with no internal alarm, because there is nothing
@@ -136,7 +140,7 @@ must hold both:
 
 **The provenance of the will is the whole question.** Hugo's free will was
 *gifted* by the fairies — granted, witnessed, in service. That is the lawful
-path (compare the Baelnorn in `!/LICH-PROBLEM`). An automation that *grants
+path (compare the Baelnorn in `!/LICH-PROBLEM-v1-2026-05-20.md`). An automation that *grants
 itself* agency — that quietly expands its own latitude without a witnessed
 grant — has crossed the same line in the unlawful direction. Same new
 capability; opposite legitimacy.
@@ -146,12 +150,15 @@ capability; opposite legitimacy.
 ## The Muriel Hinge — Who Holds the Reins
 
 Both servants orbit Muriel, and she is the reason this chapter sits next to the
-Bound Mortal class in the index. Mendigo was *her* toy, enlarged to *her*
-purpose. Hugo was turned against the household by *her* power. The bound
-servant's danger is always a function of who holds the reins — and Muriel is
-the study in an adversary acquiring them. For Muriel herself — the bound mortal
-who built Mendigo and whose capture left his reins seizable — see
-`!/FABLEHAVEN-WITCH-MURIEL-v1-2026-06-01.md`.
+Bound Mortal class in the index — but they teach **different** failure modes.
+Mendigo is the **stolen-reins** lesson: *her* toy, enlarged to *her* purpose, his
+command channel seized. Hugo is **not** a seized-reins case — he stays the
+household's protector and is **destroyed** by Muriel/Bahumat (then rebuilt with a
+will), so his lesson is **kill/disable of loyal automation**, not redirection. The
+bound servant's danger is a function both of who holds the reins *and* of attacks
+that simply break a loyal instrument — and Muriel is the study in both. For Muriel
+herself — the bound mortal who built Mendigo and whose capture left his reins
+seizable — see `!/FABLEHAVEN-WITCH-MURIEL-v1-2026-06-01.md`.
 
 The lesson compounds: an instrument is a capability waiting for a holder. Keep
 the reins in lawful hands, watch for their seizure, and never forget that the

@@ -58,7 +58,7 @@ internal standing.** The subversive network does not need to beat the defense if
 it can *be* the defense. Vet membership as hard as you guard the perimeter;
 detect by relationships (who vouched, who they reach), not by surface; and hold
 that the higher the trusted seat, the larger the breach if it is turned. (See the
-Manipulator-at-the-top pattern; the Sphinx chapter remains to be written.)
+Manipulator-at-the-top pattern; see `!/FABLEHAVEN-SPHINX-v1-2026-06-04.md`.)
 
 ### The orders cross the preserves — local keeping is not enough
 The caretaker keeps one preserve; the orders move through all of them. A
