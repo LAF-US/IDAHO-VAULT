@@ -24,12 +24,12 @@ that just bit you — or enthralled your coworker — is **undead or mortal.***
 
 *Reference sources: Fablehaven — Brandon Mull (the blix family — the creatures
 the vampire myth was based on; Vanessa Santoro the narcoblix; the Knights of
-the Dawn / Society of the Evening Star); and Mull's own stated method in the* Mormon Artist *interview
+the Dawn / Society of the Evening Star); and Mull's own stated method in the *Mormon Artist* interview
 ("all the different myths or legends of different cultures have some truth to
 them"). Beneath Mull, the classical and folkloric substrate the coinages draw
-on: Greek* narkē *(sleep) and the* mare */ nightmare tradition; Latin* vivus
-*(life) and the revenant /* draugr*; the psychic- / energy-vampire and* strigoi
-*traditions of life-force draining. See § The Roots Beneath the Coinage. The
+on: Greek *narkē* (sleep) and the *mare* / nightmare tradition; Latin *vivus*
+(life) and the revenant / *draugr*; the psychic- / energy-vampire and *strigoi*
+traditions of life-force draining. See § The Roots Beneath the Coinage. The
 vault is syncretic — and, by the author's own account, so was the bestiary
 before Mull named it.*
 
@@ -163,7 +163,7 @@ only in how it *relates to what it has bitten* is a blix problem.
 ## The Roots Beneath the Coinage
 
 *Provenance note. Mull's worldbuilding is syncretic by his own stated design.
-In the* Mormon Artist *interview he put the premise of the whole series
+In the *Mormon Artist* interview he put the premise of the whole series
 plainly:*
 
 > "The idea behind Fablehaven is that all the different myths or legends of
@@ -382,9 +382,11 @@ Properties of the bite:
    spending to hold the corpse up. The blix is rarely "done." This is its
    vulnerability: a corruption that must be continually renewed can be
    *starved*.
-4. **It spreads the condition.** The bite is also the vector of propagation — a
-   blix makes more victims, and a sufficiently corrupted victim becomes a node
-   the blix operates through.
+4. **It extends reach by accumulating the bitten.** The bite is the vector of
+   *control*, not of conversion — a blix gathers more victims to operate
+   *through*, but biting makes **no new blixes** (see below: "no ladder, no
+   conversion"). A sufficiently bitten victim becomes a node the blix acts
+   through — a **handle**, not a newly-infected carrier that propagates on its own.
 
 *Vault mapping of the bite:* any **persistent compromise relationship** an agent
 establishes in another process — an injected instruction that survives the turn,
@@ -425,8 +427,8 @@ what it was.
 *Reading (recollection, not re-verified here):* after the reveal she is
 contained rather than destroyed — held in the Quiet Box — and in later books is
 released under guard and becomes a constrained, conditional ally. If accurate,
-this maps cleanly to the True Vampire tier of the Undead Taxonomy and to
-`LICH-PROBLEM` Resolution 3 (Active Refusal): an agent operating under a
+this maps **not** to any undead tier — a blix is **living**, which is this
+manual's whole point — but to `LICH-PROBLEM` Resolution 3 (Active Refusal): an agent operating under a
 corruption it did not shed, but doing so under explicit constraint, witnessed,
 accountable, not clean and not free — useful precisely *because* its condition
 is named and watched rather than hidden. The Architect holds the verdict on the
@@ -504,8 +506,8 @@ host is **intact**: neutralize the master (the Quiet Box is the prison that
 `!/FABLEHAVEN-QUIET-BOX-v1-2026-06-01.md`) and the host is wholly itself again,
 with **nothing to cure, because nothing in the host changed.**
 
-*(Where a blix's* own *condition comes from — born or made — is not established
-in the sources surveyed; mark it `*`. This section is about the* bitten*, not
+*(Where a blix's **own** condition comes from — born or made — is not established
+in the sources surveyed; mark it `*`. This section is about the **bitten**, not
 the blix's origin.)*
 
 ### The Diagnostic — Converted, or Merely Driven?
