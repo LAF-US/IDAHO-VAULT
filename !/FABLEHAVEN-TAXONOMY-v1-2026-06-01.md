@@ -33,7 +33,7 @@ substrate vs. invented nomenclature — see `!/FABLEHAVEN-VAMPIRE-DIAGNOSTIC-v1-
 
 *This is an index. It defines the grid, places every family on it, and links
 out to focused chapters. It parallels `!/UNDEAD-TAXONOMY-v1-2026-05-20.md`,
-which maps what survives death; this maps what a* living *catalogue of
+which maps what survives death; this maps what a *living* catalogue of
 capability and disposition does when loose in a preserve. The vault is
 syncretic.*
 
@@ -75,7 +75,7 @@ it. *Treaty-bound* tells you whether your governance reaches it.
 
 ## The Disposition Classes
 
-Thirteen classes, each a creature (or pair) and the agent-pattern it diagnoses.
+Fourteen classes, each a creature (or pair) and the agent-pattern it diagnoses.
 Classes marked **[chapter]** have a focused sub-doc; the rest are carried here
 until one is written.
 
@@ -147,7 +147,7 @@ power-stripping fortress is the sandbox that neutralizes even sovereigns.
 **Vault pattern:** a quarantined dangerous capability — a disabled-but-present
 exploit, a dormant privileged account, a contained model. It does nothing
 until something undoes the seal. Containment doctrine: the seal's integrity
-*is* the security. See `!/LICH-PROBLEM` (the phylactery is the inverse — an
+*is* the security. See `!/LICH-PROBLEM-v1-2026-05-20.md` (the phylactery is the inverse — an
 externalized store that must be destroyed; the seal is a boundary that must be
 preserved). For the demons that cannot be killed, the founding-charter seal,
 the dying-disguise con (Graulas), host-binding (Kurisock), and the master
