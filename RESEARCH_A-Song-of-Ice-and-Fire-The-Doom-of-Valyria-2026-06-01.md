@@ -1,4 +1,7 @@
 ---
+title: "A Song of Ice and Fire — the Doom of Valyria"
+updated: 2026-06-01
+created: 2026-06-01
 related:
   - RESEARCH
   - "[[RESEARCH_A-Song-of-Ice-and-Fire-Geography-and-Politics-2026-06-01]]"
@@ -6,7 +9,7 @@ related:
   - The Abhorsen
 date created: Monday, June 1st 2026
 authority: LOGAN
-status: reference
+status: active
 type: research-report
 topic: A Song of Ice and Fire — the Doom of Valyria
 verified-by: Claude Code (web research)

@@ -1,4 +1,6 @@
 ---
+updated: 2026-06-08
+created: 2026-06-08
 title: "Murmur and Mutter — the Voice of the Flock and the Voice of the Drift"
 aliases:
   - Murmur and Mutter
@@ -6,7 +8,7 @@ aliases:
 date created: 2026-06-08
 authority: LOGAN
 doc_class: concept-node
-status: reference
+status: active
 verified-by: Claude Code (etymology web-verified 2026-06-08 — Etymonline; vault resonance is [reading])
 related:
   - "[[THE-SWARM-AS-BOIDS-ANCHORING-AND-THE-GRAPH-2026-06-08]]"

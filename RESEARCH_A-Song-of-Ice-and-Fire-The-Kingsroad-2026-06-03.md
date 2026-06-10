@@ -1,4 +1,7 @@
 ---
+title: "A Song of Ice and Fire — the Kingsroad"
+updated: 2026-06-03
+created: 2026-06-03
 related:
   - RESEARCH
   - "[[RESEARCH_A-Song-of-Ice-and-Fire-The-Small-Council-2026-06-03]]"
@@ -8,7 +11,7 @@ related:
   - The Abhorsen
 date created: Tuesday, June 3rd 2026
 authority: LOGAN
-status: reference
+status: active
 type: research-report
 topic: A Song of Ice and Fire — the Kingsroad
 verified-by: Claude Code (web research 2026-06-03)

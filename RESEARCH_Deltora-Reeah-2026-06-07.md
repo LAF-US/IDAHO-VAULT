@@ -1,4 +1,7 @@
 ---
+title: "Deltora Quest — Reeah, Guardian of the Opal"
+updated: 2026-06-07
+created: 2026-06-07
 aliases:
   - Reeah
 related:
@@ -8,7 +11,7 @@ related:
   - The Abhorsen
 date created: Sunday, June 7th 2026
 authority: LOGAN
-status: reference
+status: active
 type: research-report
 topic: Deltora Quest — Reeah, Guardian of the Opal
 verified-by: Claude Code (web research 2026-06-07)

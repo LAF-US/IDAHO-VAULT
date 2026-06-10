@@ -1,9 +1,11 @@
 ---
+updated: 2026-06-09
+created: 2026-06-09
 title: "Flag — Disambiguation Needed: Ambiguous Link Targets"
 date created: 2026-06-09
 authority: LOGAN
 doc_class: flag-record
-status: open — awaiting Architect's ruling
+status: active
 matter: "Substrate-scan link candidates whose bare wikilink resolves to more than one file"
 flagged-by: "Claude Code (imported software; Direct-Write implementer) — flag raised on the Architect's command '!FLAG as Disambiguation Needed'"
 adjudication: "PENDING — the canonical form is the Architect's verdict; this node decides nothing"

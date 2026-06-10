@@ -1,4 +1,7 @@
 ---
+title: "A Song of Ice and Fire — the North"
+updated: 2026-06-02
+created: 2026-06-02
 related:
   - RESEARCH
   - "[[RESEARCH_A-Song-of-Ice-and-Fire-Aegons-Conquest-2026-06-02]]"
@@ -9,7 +12,7 @@ related:
   - The Abhorsen
 date created: Tuesday, June 2nd 2026
 authority: LOGAN
-status: reference
+status: active
 type: research-report
 topic: A Song of Ice and Fire — the North
 verified-by: Claude Code (synthesis; canon from prior research passes + general knowledge)

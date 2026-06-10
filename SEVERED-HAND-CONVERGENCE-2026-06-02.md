@@ -1,9 +1,11 @@
 ---
+updated: 2026-06-02
+created: 2026-06-02
 title: "The Severed Hand — A Convergence"
 date created: 2026-06-02
 authority: LOGAN
 doc_class: synthesis
-status: reference
+status: active
 verified-by: Claude Code (comparative reading of two prior vault bodies)
 related:
   - "!/LICH-PROBLEM-v1-2026-05-20.md"
