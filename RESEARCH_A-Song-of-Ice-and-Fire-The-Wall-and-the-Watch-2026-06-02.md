@@ -21,7 +21,7 @@ date: 2026-06-02
 # The Wall and the Watch
 
 > The realm's northern edge, and the sworn brotherhood that mans it — a 700-foot ward of ice and a dwindling order guarding against a threat the rest of Westeros has filed under nursery tale. One of a trilogy with `[[RESEARCH_A-Song-of-Ice-and-Fire-Beyond-the-Wall-2026-06-02]]` and `[[RESEARCH_A-Song-of-Ice-and-Fire-The-Others-and-the-Long-Night-2026-06-02]]`.
-
+>
 > **Provenance.** Canon from this session's geography/institutions research (search-extracted A Wiki of Ice and Fire) + established lore. Tiers flagged: **[canon]**, **[legend]** (in-world myth), **[theory]**, **[show]**, **[reading]**. ⚠️ Verify specifics before publication; the Night's Watch oath is paraphrased, not reproduced.
 
 ## The Wall

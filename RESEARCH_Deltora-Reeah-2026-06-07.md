@@ -21,7 +21,7 @@ date: 2026-06-07
 # Reeah — Guardian of the Opal
 
 > Keeper of the **Opal** in the **City of the Rats**. One of seven (→ `[[RESEARCH_Deltora-The-Gem-Guardians-2026-06-07]]`). Pure source.
-
+>
 > **Provenance.** Web-verified 2026-06-07 (Deltora Quest Wiki, Wikipedia). **[canon-per-series].** Paraphrased.
 
 ## Identity & origin

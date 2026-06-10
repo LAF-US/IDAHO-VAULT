@@ -22,7 +22,7 @@ date: 2026-06-07
 # Dread Mountain — Hiding Place of the Emerald
 
 > The **fifth** guarded peril — hiding place of the **Emerald**, kept by **[[RESEARCH_Deltora-Gellick-2026-06-07\|Gellick]]**. One of seven (→ `[[RESEARCH_Deltora-The-Gem-Guardians-2026-06-07]]`). Pure source.
-
+>
 > **Provenance.** Web-verified 2026-06-07 (Deltora Quest Wiki, Wikipedia). **[canon-per-series].** Paraphrased.
 
 ## Geography

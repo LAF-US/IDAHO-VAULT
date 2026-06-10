@@ -22,7 +22,7 @@ date: 2026-06-08
 # The Royal Style, Parsed — the King's Title as Stylings
 
 > A worked example sitting between two nodes: the **Stylings** doctrine (`[[STYLINGS-AND-PROPAGANDA-FOSSILS-2026-06-02]]`) applied to the Westerosi crown's full style from the **Feudal Order** (`[[RESEARCH_A-Song-of-Ice-and-Fire-The-Feudal-Order-and-Titles-2026-06-08]]`). The title is read as a **propaganda fossil** — each clause sutures a conquered or joined people into one crown and preserves, in fixed order, the history of the realm's assembly.
-
+>
 > **Provenance.** Web-verified 2026-06-08 (A Wiki of Ice and Fire). Tiers: **[canon]** for the title and its facts; **[reading]** for the Stylings analysis. ⚠️ **[show]** where book and screen differ. Paraphrased; no source text reproduced.
 
 ## The full style

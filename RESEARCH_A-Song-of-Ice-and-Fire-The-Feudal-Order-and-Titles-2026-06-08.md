@@ -23,7 +23,7 @@ date: 2026-06-08
 # The Feudal Order of Westeros — Lords, Bannermen, and Titles
 
 > The in-world counterpart to the real-world `[[RESEARCH_Noble-Titles-and-Feudal-Hierarchy-2026-06-08]]`: how the Seven Kingdoms are held — King → Lords Paramount → bannermen → landed knights → smallfolk — and the deliberately **flat** Westerosi set of noble titles. ASOIAF-canon research.
-
+>
 > **Provenance.** Web-verified 2026-06-08 (A Wiki of Ice and Fire, Wiki of Westeros). Tiers: **[canon]**, ⚠️ **[show]** where book and screen differ. Paraphrased; no source text reproduced.
 
 ## The pyramid

@@ -21,9 +21,9 @@ date: 2026-06-03
 # The Citadel
 
 > How the realm **knows** — the seat of the maesters at Oldtown, the realm's center of learning and its communications hub. One of a triad with `[[RESEARCH_A-Song-of-Ice-and-Fire-The-Small-Council-2026-06-03]]` (governance) and `[[RESEARCH_A-Song-of-Ice-and-Fire-The-Kingsroad-2026-06-03]]` (connectivity).
-
+>
 > **Scope:** this node covers the **place and institution**. The **order of maesters** (the chain, the vows, the "grey sheep" disposition, the gallery) is treated in `[[RESEARCH_A-Song-of-Ice-and-Fire-The-Maesters-and-the-Citadel-2026-06-02]]` — cross-linked, not duplicated.
-
+>
 > **Provenance.** Sourced 2026-06-03; ⚠️ awoiaf/Fandom **403'd on direct fetch** — claims via search-result extracts; verify before publication. Tiers: **[canon]**, **[legend]**, **[reading]**. Paraphrased.
 
 ## Place

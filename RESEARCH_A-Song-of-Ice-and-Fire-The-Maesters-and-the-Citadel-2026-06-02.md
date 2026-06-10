@@ -20,7 +20,7 @@ date: 2026-06-02
 # The Maesters and the Citadel
 
 > The order of scholars, healers, and counsellors who serve the lords of the Seven Kingdoms — "the **knights of the mind**." The benign face of knowledge in Westeros, and (the books quietly insist) an interested party in what knowledge is allowed to exist.
-
+>
 > **Provenance.** Three tiers flagged: **[canon]** (ASOIAF / *TWOIAF* / *Fire & Blood*), **[theory]** (in-world/fan speculation the text plants but does not confirm), **[reading]** (interpretation). ⚠️ Claims rest on memory + search-extracted A Wiki of Ice and Fire (wikis blocked direct fetch this session); verify quotes/specifics against the books before publication. Short phrases are quoted with attribution; no extended excerpts.
 
 ---

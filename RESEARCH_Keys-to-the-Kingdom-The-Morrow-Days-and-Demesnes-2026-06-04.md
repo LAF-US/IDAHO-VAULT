@@ -19,7 +19,7 @@ date: 2026-06-04
 # The House — The Morrow Days and Their Demesnes
 
 > A standalone reference on **Garth Nix's *Keys to the Kingdom*** — the **House**, its seven **Trustees** (the *Morrow Days*), and the seven **demesnes** they rule. Companion to the ASOIAF `[[RESEARCH_A-Song-of-Ice-and-Fire-The-Small-Council-2026-06-03]]`; the **syncretic crosswalk** between the two systems lives **only** in `[[THE-SEVENFOLD-BODY-SEATS-TRUSTEES-GEMS-2026-06-03]]`. This node holds **no cross-mapping** — pure source.
-
+>
 > **Provenance.** Web-verified 2026-06-04 against the Keys to the Kingdom Wiki and Wikipedia. Tiers: **[canon-per-series]**, **[reading]**. Paraphrased; no source text reproduced.
 
 ## The House — the cosmology

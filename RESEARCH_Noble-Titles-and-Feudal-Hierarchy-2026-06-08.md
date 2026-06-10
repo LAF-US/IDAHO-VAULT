@@ -19,7 +19,7 @@ date: 2026-06-08
 # Noble Titles, Lordships, and the Feudal Hierarchy
 
 > A companion to the **Counties & Counts** research — the medieval/early-modern European hierarchy of **noble titles** (duke → baron), the **feudal tenure** system of lords and vassals, and the load-bearing distinction between a **rank** (peerage) and a **lordship** (land-with-jurisdiction). Historical reference.
-
+>
 > **Provenance.** Web-verified 2026-06-08 (Britannica, Wikipedia, Debrett's, Heraldica). Tiers: **[history]**. ⚠️ British-peerage-centric, with Continental equivalents noted; usage varied by realm and century. Paraphrased; no source text reproduced.
 
 ## The ranks of nobility (the peerage)

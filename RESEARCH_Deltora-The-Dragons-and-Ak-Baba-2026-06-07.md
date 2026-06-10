@@ -24,7 +24,7 @@ date: 2026-06-07
 # The Dragons of Deltora — the Seven Dragons, the Ak-Baba, and Doran
 
 > Deltora's natural guardians and the Shadow Lord's hunters — another sevenfold body, set against seven of his bred birds. Pure source.
-
+>
 > **Provenance.** Web-verified 2026-06-07 (Deltora Quest Wiki, Wikipedia). **[canon-per-series].** Paraphrased.
 
 ## The seven dragons

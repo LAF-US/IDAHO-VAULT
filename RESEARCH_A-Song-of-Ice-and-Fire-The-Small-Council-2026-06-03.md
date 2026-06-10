@@ -23,7 +23,7 @@ date: 2026-06-03
 # The Small Council
 
 > How the realm is **governed** — the king's chief administrative body. One of a triad with `[[RESEARCH_A-Song-of-Ice-and-Fire-The-Citadel-2026-06-03]]` (how the realm *knows*) and `[[RESEARCH_A-Song-of-Ice-and-Fire-The-Kingsroad-2026-06-03]]` (how it is physically *bound*).
-
+>
 > **Provenance.** Sourced 2026-06-03; offices and their subordinate apparatus **re-investigated and web-verified 2026-06-04** (awoiaf via search extracts). A **clean, ASOIAF-only** reference — its Keys/Morrow-Days syncretism has been lifted to the crosswalk node (see below). Tiers: **[canon]**, **[reading]**. Paraphrased; no source text reproduced.
 
 ## What it is

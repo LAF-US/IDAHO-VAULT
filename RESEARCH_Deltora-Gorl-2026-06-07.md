@@ -21,7 +21,7 @@ date: 2026-06-07
 # Gorl — Guardian of the Topaz
 
 > The first Gem Guardian — keeper of the **Topaz** in the **Forests of Silence**. One of seven (→ `[[RESEARCH_Deltora-The-Gem-Guardians-2026-06-07]]`). Pure source.
-
+>
 > **Provenance.** Web-verified 2026-06-07 (Deltora Quest Wiki, Wikipedia). **[canon-per-series].** Paraphrased.
 
 ## Identity & origin

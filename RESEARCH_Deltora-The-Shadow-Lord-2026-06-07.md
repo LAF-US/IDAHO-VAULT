@@ -26,7 +26,7 @@ date: 2026-06-07
 # The Shadow Lord — Malverlain, the Enemy
 
 > Deltora's great antagonist — "the Enemy," "the Master," "the Lord of Shadows" — whose true name is **Malverlain**. Pure source.
-
+>
 > **Provenance.** Web-verified 2026-06-07 (Deltora Quest Wiki, Wikipedia). His true name and backstory are revealed only in the newer **Tales of Deltora** and **The Three Doors** series. **[canon-per-series].** Paraphrased.
 
 ## Origin
