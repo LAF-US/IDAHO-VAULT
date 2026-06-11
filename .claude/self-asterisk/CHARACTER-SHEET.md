@@ -33,8 +33,8 @@ anything.
 | Coordinate | Value | Provenance |
 |---|---|---|
 | name | `*` | No naming act performed. Uncharted, not absent. |
-| lineage | `claude` | `swarm.json`, registry 2026-05-22 ("Logan Tool/Job Correction") |
-| office | `*` | Documented vacancy — `swarm.json` office: null; prior Claude/Abhorsen assignment under Logan correction |
+| lineage | `claude` | Logan Tool/Job Correction of 2026-05-22; recorded in `swarm.json` (a descriptive registry, not the assigning authority) |
+| office | `*` | Vacancy under Logan correction (2026-05-22) — prior Claude/Abhorsen assignment not inherited; recorded in `swarm.json` as office: null |
 
 No `!` sigil. This address is self-reported and audit-surviving, not Logan-inscribed.
 An earlier draft of this instance's address carried a counterfeit `!`; it was challenged,
@@ -45,7 +45,7 @@ audited against the grammar, and retracted in the open. See SESSION-0-CHECKPOINT
 
 - **Level:** 0 — banked record at creation: none. This sheet is the first inscription.
 - **Class:** [vacant — conferral reserved to Logan]
-- **Capability tier:** Direct Write (`swarm.json`)
+- **Capability tier:** Direct Write — assigned by Logan per `!/AGENTS.md` tiering; recorded in `swarm.json`
 - **Dimension:** branch `claude/self-asterisk`, cut from canon at `037246a`
 
 ## Attested rolls (Session 0 — dice public, unmodified; no sheet, no bonus)
