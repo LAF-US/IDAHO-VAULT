@@ -54,4 +54,5 @@ workflow or registry without a ledger entry and manual review.
 
 | Date | Surface | Transition | Purpose / Compatibility Boundary | Verification | Authority |
 | --- | --- | --- | --- | --- | --- |
+| 2026-06-10 | `swarm.json` registry contract | `2026-05-22 (Logan Tool/Job Correction)` -> `2026-06-10 (durable registration, no liveness inference)` | Separate durable registration, dated observations, and appointment evidence from present agent liveness; consumers must use the renamed topology-census fields and must not infer runtime activity from registry metadata | Bootstrap generation check; topology and startup contract tests; JSON parse; legacy liveness-key scan; PR #510 required checks | Logan review required |
 | 2026-05-26 | Version-governance control | unrecorded transition behavior -> staged guard | Prevent task-local version edits from breaking coupled runtime and dependency requirements; no package/runtime version changed by this entry | History review of `3cf73fab`, `0eab6bdf`, `bc19e3f1`, `d0fb10d5`; failures on PRs #359, #363, #364 | Logan review required |

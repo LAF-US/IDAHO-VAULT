@@ -90,6 +90,7 @@ No universal occupancy ledger is created.
 | `!/CODEX-VOICE-REGISTRY-2026-05-18.md` | Manual status table marked tunnel workers active and the Janitor historical | Converted to dated identity and provenance records with no population claim |
 | `!/VAULT-OFFICES-LOCAL-AND-STANDING-v1-2026-06-09.md` | Active doctrine repeated a present Mogget holder claim | Converted to a dated appointment event sourced to commit history |
 | `swarm.json` agent records | Tool-lineage rows carried office, title, active status, launch, installation, and readiness claims | Removed occupancy/liveness fields and retained traceable facts as dated observations |
+| `VERSION-TRANSITIONS.md` | The governed `swarm.json` registry contract changed | Recorded the compatibility boundary and required Logan review |
 | `.github/scripts/topology_census.py` | Generated `live_roster`, `explicit_live_authority`, and room-liveness classifications | Refactored to registered surfaces, doctrine references, recovery evidence, and room classification |
 | `!/agents.json` and root `agents.json` | Generated discovery mirrors | Regenerated from the corrected machine registry |
 | `VAULT-CONVENTIONS.md` | Described the DOCKET and shared governance as live | Reworded as canonical governance and durable filed evidence |
@@ -136,6 +137,8 @@ durable records.
 ## Validation Record
 
 - `python .github/scripts/generate_agents_bootstrap.py --check`: passed.
+- `python .github/scripts/check_version_transitions.py` against `origin/main`:
+  passed.
 - `uv run pytest -q tests/test_topology_census.py tests/test_live_startup_contract.py`:
   10 passed.
 - `uv run ruff check` and `uv run ruff format --check` for the touched Python
