@@ -141,6 +141,7 @@ class TopologyCensusTest(unittest.TestCase):
         self._write("!/swarm 1/tools/state_manager.py", "print('state manager')\n")
         self._write(".codex/CODEX.md", "# CODEX\n")
         self._write(".codex/MEMORY/anchor.md", "# memory\n")
+        self._write(".code/CODE.md", "# CODE\n")
         self._write(".bartimaeus/README.md", "# Bartimaeus\n")
         self._write(".shade/archive.md", "# shade archive\n")
         self._write("2026/04/2026-04-17.md", "# daily note\n")
@@ -175,8 +176,10 @@ class TopologyCensusTest(unittest.TestCase):
         entries = {entry["path"]: entry for entry in report["entries"]}
 
         self.assertIn(".codex", entries)
+        self.assertIn(".code", entries)
         self.assertIn(".shade", entries)
         self.assertTrue(entries[".codex"]["registered_surface"])
+        self.assertFalse(entries[".code"]["registered_surface"])
         self.assertTrue(entries[".codex"]["memory_state"]["memory_dir_tracked"])
         self.assertFalse(entries[".shade"]["registered_surface"])
         self.assertTrue(entries[".shade"]["historical_recovery"])
