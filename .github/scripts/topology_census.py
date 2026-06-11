@@ -289,6 +289,11 @@ def _dotfolder_citations(
     )
 
 
+def _line_mentions_dotfolder(dotfolder: str, line: str) -> bool:
+    pattern = rf"(?<![A-Za-z0-9_.-]){re.escape(dotfolder)}/?(?![A-Za-z0-9_.-])"
+    return re.search(pattern, line) is not None
+
+
 def _dotfolder_registry_signals(root: Path, dotfolder: str) -> dict[str, object]:
     agents_path = root / "!" / "AGENTS.md"
     lines = _load_text(agents_path).splitlines()
@@ -302,13 +307,13 @@ def _dotfolder_registry_signals(root: Path, dotfolder: str) -> dict[str, object]
     registry_ranges = [section for section in (roster_range, advisory_range) if section is not None]
     for start, end in registry_ranges:
         for idx in range(start, end):
-            if dotfolder in lines[idx]:
+            if _line_mentions_dotfolder(dotfolder, lines[idx]):
                 registry_citations.append(_make_citation("!/AGENTS.md", idx + 1, lines[idx]))
 
     if recovery_range is not None:
         start, end = recovery_range
         for idx in range(start, end):
-            if dotfolder in lines[idx]:
+            if _line_mentions_dotfolder(dotfolder, lines[idx]):
                 recovery_citations.append(_make_citation("!/AGENTS.md", idx + 1, lines[idx]))
 
     return {
