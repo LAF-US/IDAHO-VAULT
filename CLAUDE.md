@@ -16,10 +16,9 @@ authority: LOGAN
 
 "Claude" persona ; Anthropic AI agent voice
 
-Claude is an AI coding tool provided by Anthropic. The prior
-Claude/**Abhorsen** terminal-and-repository job assignment is under Logan
-correction and does not establish a current identity, office, or standing for a
-Claude instance.
+Claude is an AI coding tool provided by Anthropic. A Claude instance holds no
+inherited persona, office, or standing by default; any role is delegated
+explicitly by Logan, per AGENTS and the CONSTITUTION.
 
 **Capability tier:** Direct Write (per AGENTS)
 **Operational instructions:** `.claude/CLAUDE.md` (auto-loaded by Claude Code CLI)
