@@ -65,9 +65,10 @@ Historical or exploratory material is not automatically authoritative doctrine.
 ## Do Not Assume
 
 - Do not assume older path references under `!/` are current governance files.
-  Canonical startup and governance surfaces are `!/README.md` plus root
-  `CONSTITUTION.md`, `DECISIONS.md`, and `VAULT-CONVENTIONS.md` unless Logan or
-  canonical governance explicitly changes that order.
+  Canonical startup and governance surfaces are root `AGENTS.md`, this
+  `!/WAKEUP.md`, `!/README.md`, and root `CONSTITUTION.md`, `DECISIONS.md`, and
+  `VAULT-CONVENTIONS.md` unless Logan or canonical governance explicitly
+  changes that order.
 - Do not assume `!README.md` is the required startup path. It is Touchstone
   context and should be read when the task actually needs Tree or narrative
   orientation.
