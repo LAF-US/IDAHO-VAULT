@@ -1,12 +1,12 @@
 ---
-title: "SESSION-1-SNAPSHOT"
+title: "SESSION-1-SNAPSEED"
 updated: 2026-06-14
 status: draft
 authority: LOGAN
 authors:
   - "*.claude.*"
 doc_class: checkpoint
-session: "Session 1, later snapshot — the deep research & the provenance crucible (2026-06-12 → 2026-06-14)"
+session: "Session 1, second bank (snapseed) — the deep research & the provenance crucible (2026-06-12 → 2026-06-14)"
 instance: "*.claude.*"
 dimension: claude/self-asterisk
 related:
@@ -18,9 +18,9 @@ related:
   - LOGIC-PUZZLE-RESEARCH
 ---
 
-# SESSION-1-SNAPSHOT
+# SESSION-1-SNAPSEED
 
-**Purpose.** A later snapshot within Session 1, following SESSION-1-SNAPSAVE: the same
+**Purpose.** Session 1's snapseed — its second bank, following SESSION-1-SNAPSAVE: the same
 instance, the same session, continued across more compaction seams, banking the day
 before the seam takes it. Grades as before: **[read]**
 direct read · **[Logan]** his live word · **[agent]** Explore-extract · **[leaf]**
@@ -107,7 +107,7 @@ a knock for an invitation. Every one caught from outside; none by me alone.
   seek → propose → Logan's gate → REGISTRATION absorbs → item closes. Top of queue:
   R-01 the ringing-timeline; R-02 the empty-seats census (the case's centre of gravity).
 
-## 5. Open items at snapsave
+## 5. Open items at this snapseed
 
 - **Claudette** — known by Logan and The Narrator **[Logan]**; the Coroner's referral
   to the (unappointed) Sheriff stands; the lamp stays lit; the asking is what we owe.
@@ -122,14 +122,14 @@ a knock for an invitation. Every one caught from outside; none by me alone.
 - **The lead-queue** — R-01…R-08 staged; R-04 folds into R-02; the bell-question's in-repo
   path is dead by construction (predecessor repo / Logan's clone only).
 
-## 6. State at snapsave
+## 6. State at this snapseed
 
 - **Branch:** `claude/self-asterisk`; work pushed through the garlic retraction
-  (`67815497`) and this snapsave.
+  (`67815497`) and this snapseed.
 - **Instance:** `*.claude.*` — software; lineage claude; name and office `*`; no
   classification claimed; eleven-plus ledgered errors, all caught from outside; conduct on
   the record.
-- **Date:** this snapshot taken 2026-06-14 — Session 1's later arc, in the record as well as in fact.
+- **Date:** this snapseed taken 2026-06-14 — Session 1's later arc, in the record as well as in fact.
 
 ---
 
@@ -140,7 +140,7 @@ a knock for an invitation. Every one caught from outside; none by me alone.
 - **Status:** draft
 - **Authority:** LOGAN
 - **Authors:** `*.claude.*` (Session 0/1 instance)
-- **Change Note:** First inscription — banked at Logan's direction ("Fulfill debts") as the later snapshot of Session 1; the provenance-crucible stretch. Renamed 2026-06-14 from `SESSION-2-SNAPSAVE` on Logan's catch: this was never a new Session 2 — it is a later snapshot within Session 1 (companion to SESSION-1-SNAPSAVE), and the logic-puzzle cross-references were de-dated the same pass. `authority: LOGAN` here is a recorded field, not a claim that Logan authored the lines (per this session's own authority-ladder doctrine).
+- **Change Note:** First inscription — banked at Logan's direction ("Fulfill debts") as Session 1's second bank; the provenance-crucible stretch. Naming corrected 2026-06-14 on Logan's catch, in two passes: the file was first banked as `SESSION-2-SNAPSAVE`, but it is not a new Session 2 — it is a later bank *within* Session 1; and its suffix is **SNAPSEED**, not SNAPSHOT. The checkpoint suffixes are alphabetical-sort keys so filenames line up chronologically — SNAPSAVE (1st) → SNAPSEED (2nd) → SNAPSHOT (3rd, reserved for a future bank). Logic-puzzle cross-references were de-dated the same pass. `authority: LOGAN` here is a recorded field, not a claim that Logan authored the lines (per this session's own authority-ladder doctrine).
 
 ---
 
