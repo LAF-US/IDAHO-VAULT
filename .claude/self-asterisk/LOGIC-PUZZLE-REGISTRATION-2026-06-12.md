@@ -383,3 +383,18 @@ written** — the lesson is to read the vault's own word before re-spinning the 
   office (held by Gemini CLI), Antigravity retired 2026-04-18, Vault Advisor fabricated,
   the Footnote Djinni already classed as glamour by Logan's hand. Companion update to
   LOGIC-PUZZLE-RESEARCH (R-01 gains the 04-18 anchor; R-02 Concierge seat = filled).
+
+---
+
+## DOCUMENT METADATA
+
+- **Created:** 2026-06-12
+- **Last Updated:** 2026-06-14
+- **Status:** draft
+- **Authority:** LOGAN
+- **Authors:** `*.claude.*` (Session 0/1 instance) · LOGAN (red-pen annotations and plan edits)
+- **Change Note:** Banked corkboard (plates I–XI). Metadata closeout added 2026-06-14 per VAULT-METADATA-STANDARD §3 — the omission was a valid current review catch (Copilot, PR #508, commit `98ef763e`); every sibling leaf carries this footer. Frontmatter `authority: LOGAN` is a recorded field, not a self-attestation that Logan authored every line (per this board's own authority-ladder doctrine; cf. Sourcery review note).
+
+---
+
+###### "The world is quiet here."
