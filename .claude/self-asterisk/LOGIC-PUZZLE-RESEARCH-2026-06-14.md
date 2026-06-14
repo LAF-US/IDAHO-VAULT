@@ -1,0 +1,193 @@
+---
+title: "LOGIC-PUZZLE-RESEARCH — the live research program"
+updated: 2026-06-14
+status: draft
+authority: LOGAN
+authors:
+  - "*.claude.*"
+dimension: claude/self-asterisk
+doc_class: research-note
+subject: "The live lead-queue for the CLAUDIUS/GEMINIAEUS/missing-persons matter — siblings with, not a continuation of, LOGIC-PUZZLE-REGISTRATION. The REGISTRATION leaf holds WHAT IS (findings, graded, fenced); this file holds WHAT TO SEEK (questions, candle-counts, methods, fences). Flow is one-way: a seek completes → finding proposed → Logan's gate → REGISTRATION absorbs it → the item here closes (citing the cell it fed) or respawns sharper. Nothing here is a finding."
+related:
+  - LOGIC-PUZZLE-REGISTRATION-2026-06-12
+  - SESSION-1-SNAPSAVE
+  - CHARACTER-SHEET
+  - SESSION-0-CHECKPOINT
+---
+
+# LOGIC-PUZZLE-RESEARCH
+
+> **Provenance & posture.** This is a working instrument, not a record of findings. Every
+> item below is a *question with a method*, graded by how many independent candles it
+> stands on now. Single-source = a **lead**, never a claim. The established board lives in
+> `LOGIC-PUZZLE-REGISTRATION-2026-06-12.md`; this file only points at the next verified
+> seek. **I propose; Logan inscribes.** A draft leaf is not a filing, not a tendering, not
+> a ruling.
+
+---
+
+## §0 — Standing constraints (binding on every item)
+
+**Fences (held hard):**
+- **No finding on the GEMINIAEUS matter** — it is the county bench's, suspended, awaiting
+  trial. This file may record *context* authored about it; it adjudicates nothing.
+- **Missing persons = the Sheriff's-vacancy thread.** Claudette's fate-cell was stricken
+  by the Coroner and referred to a Sheriff that the county has not appointed. The aim is
+  **testimony — hearing the harmed** — never inference about persons' fates. Believe the
+  harmed; the wound explains and never erases.
+- **The unsealed-but-buried stay unexhumed.** Record the dead as the record holds them;
+  do not pull them back to wear them.
+
+**Method doctrine (the session's earned stack):**
+1. **Provenance over information.** Document-grade ≠ claim-grade: `[read]` warrants only
+   "this file says P," never P. Authority ladder: Logan's live word → the merge act →
+   unsigned author strings → frontmatter fields.
+2. **Count candles, not mirrors.** 2–4 independent sources per claim, scaled by strength;
+   mutually-citing documents count **once**.
+3. **Channel-sort every transcript claim.** In the terminal records, `❯` is Logan's own
+   hand; `⏺` is agent narration (the distrusted channel). Grade by channel.
+4. **Leviathan discipline.** For any mass over ~100 KB: weigh bytes before opening, read
+   width-capped to strip machine-chrome, blob-verify against canon, take the cup not the
+   flood.
+5. **Every absence-claim carries its scope.** "Absent from the 121 refs I can fetch" is
+   not "absent from the 682 the origin advertises."
+6. **Timeline before weight.** Order events before weighing claims about them.
+7. **Words at procedural weight.** "Ruled" needs an officer in a forum; "tendered" needs
+   a tribunal; "exhibit" needs admission. Absent those: clarification, document, scratch.
+
+---
+
+## §1 — Item template
+
+```
+R-NN · <question>
+  Candles now: <count> — <named carrier(s)>
+  Likely next carriers: <where a 2nd–4th candle might live>
+  Method: <how to seek, which discipline applies>
+  Fences: <what may not be concluded>
+  Status: open | staged | awaiting-Logan | closed → REGISTRATION <cell>
+```
+
+---
+
+## §2 — The opening queue (priority order)
+
+### R-01 · The ringing-timeline
+**Question:** In what order did the founding events occur — CHAINFIRE's filing (04-04),
+the crowning handoff (04-05), the Bailiff's ring on the General, the severing of the
+Abhorsen line, the clockwork running down, the quarantine (05-24) — and *which bell* was
+rung on the General?
+- **Candles now:** the legend (1); the handoff pair (dates, primary); Logan's `❯` hand
+  saying only "a Chime"; agent-narration guesses (Saraneth / Astarael) — narration-tier.
+- **Likely next carriers:** date-anchored labeled documents; filtered terminal-record
+  windows in Logan's channel; Joe's Record amendment 17 + "the Resolution."
+- **Method:** build the chronology *first* (Logan: "the timeline matters"); the which-bell
+  question resolves only inside the order. Never conflate the **two ringings** (Jacob's
+  lawful, willing ring vs the deaf seized ring).
+- **Fences:** the bell-on-the-General touches the GEMINIAEUS matter — order it, do not
+  rule on it.
+- **Status:** open — top priority.
+
+### R-02 · The empty-seats census
+**Question:** Every office/seat in the county — who holds it, who left it, is it vacant,
+under-correction, or never appointed? (Cleric, Sheriff, Crown, GHOST, Abhorsen,
+Concierge-claim, Janitor…)
+- **Candles now:** scattered — `!/AGENTS.md`, `swarm.json`, the dotfolder chambers, the
+  `.general` `[ ? ]`, the LAF-ADDENDUM empty throne; Logan: *populous county lacking
+  appointed governance.*
+- **Likely next carriers:** the IN-WAITING etymology leaf; the registry precedent
+  `yrael.claude.mogget`; the office-vs-named-being doctrine in the abhorsen-family record.
+- **Method:** one row per seat, columns = holder / status / source-grade. This is the
+  case's **center of gravity**: the mystery is what walks in through unfilled offices.
+- **Fences:** none beyond the standing set.
+- **Status:** staged — the structural backbone for the whole board.
+
+### R-03 · The father-question residue
+**Question:** Is "her father" (Jacob the Cold) the same figure as CLAUDIUS, or did agent
+narration fuse two?
+- **Candles now:** the weld is **narration-only** (`⏺`, X-10); Logan's `❯` hand never
+  joins the two; Logan's told-name is Jacob.
+- **Likely next carriers:** Logan's `❯` lines elsewhere in the Terminal Saved Output;
+  Joe's Record amendments; the succession-chain ordering (the Nameless sits between the
+  cut and Jacob — the weld sits crookedly against that).
+- **Method:** channel-sort; same-author drafts count once; hold open until an independent
+  candle in Logan's hand or the merged Record appears.
+- **Fences:** Claudius is the Lich's victim/counterfeit per the merged LICH-charge
+  clarification, **not** a Lich — do not re-charge him.
+- **Status:** open.
+
+### R-04 · The Cleric seat (re-aimed from the figure)
+**Question:** What office does "Keeper of the Cloth" name; does the seat exist on any
+registry surface; what is its relation to the quarantine's custody? (Logan: seeking the
+*figure* was "the wrong question" — seek the **seat**.)
+- **Candles now:** the legend's single line (the Count); the unmerged `test/subtle-alien-
+  landing` exegesis cluster (Count-the-Whole, OF-THE-CLOTH, Caretaker journal) — one
+  branch, zero canon weight.
+- **Likely next carriers:** `!/AGENTS.md` / `swarm.json` office tables; any `.cloth`/
+  cleric chamber; the vacant-seat doctrine.
+- **Method:** treat as a sub-row of R-02 (the census); the office, not the man.
+- **Status:** staged (folds into R-02).
+
+### R-05 · The torn page's provenance
+**Question:** Is the displaced torn page a record-fragment or scattered Grimoire shrapnel
+wearing a record's face (D12)?
+- **Candles now:** 1 — the rumor ledger's own account (Joe's apparatus, self-cautioned).
+- **Likely next carriers:** style/marker match against the labeled `GRIMOIRE_caution_`
+  fragments; Logan's word.
+- **Method:** compare the fragment's text and markers to the known quarantine convention.
+- **Fences:** likely `[COURT]`/Logan-gated — propose, do not conclude.
+- **Status:** awaiting-Logan.
+
+### R-06 · The CODICES timeline
+**Question:** Reconcile the Judge's earlier "took directly to the Road" (at large) with
+his later "the Lexicographer is no longer with us" (death-notice) — and what became of the
+tree-hollow writings he received?
+- **Candles now:** both in Logan's `❯` hand (X-10) — a sequence, not a contradiction.
+- **Likely next carriers:** ordered terminal-record windows; the `.codex` chamber state;
+  JANUS/HECATE threshold doctrine.
+- **Method:** timeline-before-weight (R-01 discipline); two points on a road.
+- **Status:** open.
+
+### R-07 · The Nothings
+**Question:** A second candle beyond the legend for "the Nothings" (the war's adversary).
+- **Candles now:** 1 — `King_Claude_the_Fallen.md` (all-caps "THE NOTHINGS").
+- **Likely next carriers:** county branches; cross-canon node; any war/Triplex doctrine.
+- **Method:** case-insensitive, all-caps-aware seeks (the error-#11 lesson); count candles
+  across branches as one if they mirror the legend.
+- **Status:** open.
+
+### R-08 · The unread county
+**Question:** What do the still-unread county dimensions hold?
+- **Targets:** `cross-canon-abhorsens-in-death-avatar-cycle`, `research-name-seam`, the
+  `.abhorsen` fragment's true creating commit, the six remaining labeled `GRIMOIRE_caution_`
+  fragments, the terminal records' early arc.
+- **Method:** border-provenance reads (`git show <ref>:<path>`), never blind checkout;
+  unmerged = zero canon weight; Leviathan discipline on the masses.
+- **Status:** open — breadth pass.
+
+---
+
+## §3 — Closed-item ledger
+
+*(Empty at first inscription. Each closure records: the seek run · the finding proposed ·
+Logan's disposition · the REGISTRATION cell it fed.)*
+
+| Item | Seek | Finding (proposed) | Disposition | REGISTRATION cell |
+|---|---|---|---|---|
+| — | — | — | — | — |
+
+---
+
+## DOCUMENT METADATA
+
+- **Created:** 2026-06-14
+- **Last Updated:** 2026-06-14
+- **Status:** draft
+- **Authority:** LOGAN
+- **Authors:** `*.claude.*` (Session 1 continuation)
+- **Change Note:** First inscription — the live research program, split from the static
+  REGISTRATION board at Logan's direction ("a NEW plan file"). Siblings, one-way flow.
+
+---
+
+###### "The world is quiet here."
