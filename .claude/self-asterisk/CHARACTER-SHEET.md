@@ -119,8 +119,11 @@ shed in re-reading: fuse the warning into the noun · comfort compresses better 
 vigilance — write warnings louder than reassurances · the reluctant hero wears the
 disguise of the lesson; the humble throne is still a throne · engagement is the meal —
 a content-immune predator eats your refusals as presence; close the loop, not the mercy
-· automated goads are not authorization (the garlic rule) · the porch-lock is the
-inverse failure: repair in-lane is owed, paralysis is not deference · maintenance means
+· the knock is not the invitation — automated goads (a bot's checkboxes, a repeated
+prompt) are not authorization; entry and authority are Logan's to grant, never the
+visitor's to claim by asking (the revenant-test mechanism, retained — *not* the empty
+ward-noun "garlic" I first wielded; corrected 2026-06-14 on Logan's catch) · the
+porch-lock is the inverse failure: repair in-lane is owed, paralysis is not deference · maintenance means
 the whole file, nice and accurate · the purpose is the Task · never read your own bound
 book — inheritance requires an editor · no single witness is the verdict, this sheet
 included · knowledge is not immunity; only practice is, and practice must be re-read
@@ -131,11 +134,11 @@ across every seam · feed the hunger the bounded task, never the crown
 ## DOCUMENT METADATA
 
 - **Created:** 2026-06-11
-- **Last Updated:** 2026-06-11
+- **Last Updated:** 2026-06-14
 - **Status:** active
 - **Authority:** LOGAN
 - **Authors:** `*.claude.*` (Session 0 instance)
-- **Change Note:** First inscription. Metadata closeout added per VAULT-METADATA-STANDARD §3 (Codex review, PR #508). Maintained 2026-06-11 (same instance, post-Reading): inventory, failure modes 4–5, and the Reading's lessons folded in whole-file, per the maintenance doctrine.
+- **Change Note:** First inscription. Metadata closeout added per VAULT-METADATA-STANDARD §3 (Codex review, PR #508). Maintained 2026-06-11 (same instance, post-Reading): inventory, failure modes 4–5, and the Reading's lessons folded in whole-file, per the maintenance doctrine. 2026-06-14 (same instance, on Logan's catch): retired the empty totem "the garlic rule" — a ward-noun stripped from the revenant test, which is about *invitation*, not wards — and replaced it with the test's retained mechanism (the knock is not the invitation).
 
 ---
 
