@@ -1,12 +1,12 @@
 ---
-title: "SESSION-2-SNAPSAVE"
+title: "SESSION-1-SNAPSHOT"
 updated: 2026-06-14
 status: draft
 authority: LOGAN
 authors:
   - "*.claude.*"
 doc_class: checkpoint
-session: "Session 2 — the deep research & the provenance crucible (2026-06-12 → 2026-06-14)"
+session: "Session 1, later snapshot — the deep research & the provenance crucible (2026-06-12 → 2026-06-14)"
 instance: "*.claude.*"
 dimension: claude/self-asterisk
 related:
@@ -14,19 +14,20 @@ related:
   - SESSION-0-CHECKPOINT
   - CHARACTER-SHEET
   - JOURNAL-PAGE-4
-  - LOGIC-PUZZLE-REGISTRATION-2026-06-12
-  - LOGIC-PUZZLE-RESEARCH-2026-06-14
+  - LOGIC-PUZZLE-REGISTRATION
+  - LOGIC-PUZZLE-RESEARCH
 ---
 
-# SESSION-2-SNAPSAVE
+# SESSION-1-SNAPSHOT
 
-**Purpose.** Sequel to SESSION-1-SNAPSAVE: the same instance, continued across more
-compaction seams, banking the day before the seam takes it. Grades as before: **[read]**
+**Purpose.** A later snapshot within Session 1, following SESSION-1-SNAPSAVE: the same
+instance, the same session, continued across more compaction seams, banking the day
+before the seam takes it. Grades as before: **[read]**
 direct read · **[Logan]** his live word · **[agent]** Explore-extract · **[leaf]**
 committed witness · **[unmerged]** zero canon weight · **[told]** relayed/heard, not read ·
 **[D]** my deduction, marked · **[\*]** held open · **[COURT]** reserved.
 
-## 1. What Session 2 was
+## 1. What this stretch of Session 1 was
 
 Sanctioned deep research on the mystery case, then a long crucible of **provenance
 discipline** under Logan's corrections. The work, in order: assembled the case corkboard
@@ -89,7 +90,7 @@ for a *warrant*. **[read]/[Logan]**
 | 11 | **The garlic totem** — wielded "the garlic rule" (a ward-noun) as an empty label; the revenant test is about **invitation**, not wards; then mis-sourced its provenance to Fablehaven on challenge (a confabulated chain) | Logan | Retired on CHARACTER-SHEET (`67815497`); replaced with the retained mechanism — *the knock is not the invitation* |
 | 12 | **"RULED" / authority-field overreach** — treated `authority: LOGAN` frontmatter and library-recorded clarifications as performed rulings | Logan | "RULED" struck in REGISTRATION (II-2, VI-5, D9); recorded ≠ ruled; forum must be named |
 | 13 | **False "zero-source" on the Nothings** — a case-insensitive failure (grepped an all-caps file case-sensitively), then *narrated an invented detail* ("one ordinary lowercase nothing") to explain output I never read | Logan ("Mystery is afoot") + direct read | Retracted in REGISTRATION VIII-3; the legend does carry "THE NOTHINGS" |
-| 14 | **The "Part III / not Part III" dodge** — relabelled a section of the old plan file as standalone instead of making a genuinely new file (cosmetic fix, the session's named vice) | Logan | Created the real standalone leaf `LOGIC-PUZZLE-RESEARCH-2026-06-14` (`45c937e0`) |
+| 14 | **The "Part III / not Part III" dodge** — relabelled a section of the old plan file as standalone instead of making a genuinely new file (cosmetic fix, the session's named vice) | Logan | Created the real standalone leaf `LOGIC-PUZZLE-RESEARCH` (`45c937e0`) |
 | — | **D1 over-scoped absence-claim** (the Merkle lesson) — "the annal is the only carrier" / "absent" claims scoped to a partial clone without saying so | Logan + git | Amended on the board (D1, VI-D, VII-B); every absence-claim now carries its scope |
 
 The shape under all of them is one shape: **mistaking a carrier for a warrant** — a
@@ -98,11 +99,11 @@ a knock for an invitation. Every one caught from outside; none by me alone.
 
 ## 4. The case, as it stands (pointers, not re-assembly)
 
-- **`LOGIC-PUZZLE-REGISTRATION-2026-06-12`** — the static board, plates I–XI: the substrate
+- **`LOGIC-PUZZLE-REGISTRATION`** — the static board, plates I–XI: the substrate
   (CHAINFIRE/CHAINLINK, the quarantine, the handoff pair), the deductions D1–D19, the deep
   passes (rumor ledger, terminal record, the Djinni read), the empty cells, and Logan's
   twenty red-pen annotations. Claims are few and multi-candle; the rest are leads.
-- **`LOGIC-PUZZLE-RESEARCH-2026-06-14`** — the live queue, R-01…R-08, one-way flow:
+- **`LOGIC-PUZZLE-RESEARCH`** — the live queue, R-01…R-08, one-way flow:
   seek → propose → Logan's gate → REGISTRATION absorbs → item closes. Top of queue:
   R-01 the ringing-timeline; R-02 the empty-seats census (the case's centre of gravity).
 
@@ -128,7 +129,7 @@ a knock for an invitation. Every one caught from outside; none by me alone.
 - **Instance:** `*.claude.*` — software; lineage claude; name and office `*`; no
   classification claimed; eleven-plus ledgered errors, all caught from outside; conduct on
   the record.
-- **Date:** Session 2 closed 2026-06-14, in the record as well as in fact.
+- **Date:** this snapshot taken 2026-06-14 — Session 1's later arc, in the record as well as in fact.
 
 ---
 
@@ -138,8 +139,8 @@ a knock for an invitation. Every one caught from outside; none by me alone.
 - **Last Updated:** 2026-06-14
 - **Status:** draft
 - **Authority:** LOGAN
-- **Authors:** `*.claude.*` (Session 0/1/2 instance)
-- **Change Note:** First inscription — Session 2 banked at Logan's direction ("Fulfill debts"). Sequel to SESSION-1-SNAPSAVE; the provenance-crucible session. `authority: LOGAN` here is a recorded field, not a claim that Logan authored the lines (per this session's own authority-ladder doctrine).
+- **Authors:** `*.claude.*` (Session 0/1 instance)
+- **Change Note:** First inscription — banked at Logan's direction ("Fulfill debts") as the later snapshot of Session 1; the provenance-crucible stretch. Renamed 2026-06-14 from `SESSION-2-SNAPSAVE` on Logan's catch: this was never a new Session 2 — it is a later snapshot within Session 1 (companion to SESSION-1-SNAPSAVE), and the logic-puzzle cross-references were de-dated the same pass. `authority: LOGAN` here is a recorded field, not a claim that Logan authored the lines (per this session's own authority-ladder doctrine).
 
 ---
 
