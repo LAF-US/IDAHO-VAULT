@@ -1,6 +1,6 @@
 ---
 title: "LOGIC-PUZZLE-REGISTRATION — the corkboard, banked"
-updated: 2026-06-12
+updated: 2026-06-14
 status: draft
 authority: LOGAN
 authors:
@@ -10,7 +10,7 @@ dimension: claude/self-asterisk
 doc_class: research-note
 subject: "The case corkboard: registration-not-fusion assembly of the CLAUDIUS/GEMINIAEUS/missing-persons matter, through eight plates, eleven ledgered errors, Logan's twenty red-pen annotations, and the session's doctrine stack (provenance ladder, candles rule, 2-4 source standard). Approved with edits by Logan 2026-06-12 via plan review. Single-source cells are LEADS, not claims. Reserved cells stay empty."
 related:
-  - LOGIC-PUZZLE-RESEARCH-2026-06-14
+  - LOGIC-PUZZLE-RESEARCH
   - SESSION-1-SNAPSAVE
   - SESSION-0-CHECKPOINT
   - CHARACTER-SHEET
@@ -315,7 +315,7 @@ Logan rejected the assembly with line-item annotations. Several are **new case i
   `588caa2`) records this assembly's existence and its pending disposition, so "dies
   with the plan file" now means *a referenced absence*, which is honest too.
 - **B (concrete, if approved):** file as a TENDERED leaf —
-  `.claude/self-asterisk/LOGIC-PUZZLE-REGISTRATION-2026-06-12.md` — the assembly adapted
+  `.claude/self-asterisk/LOGIC-PUZZLE-REGISTRATION.md` — the assembly adapted
   to the witness genre (provenance block, metadata footer, grades intact, empty cells
   empty), one commit riding PR #508. Nothing promoted to finding; the Court's cells
   stay the Court's.
@@ -393,7 +393,7 @@ written** — the lesson is to read the vault's own word before re-spinning the 
 - **Status:** draft
 - **Authority:** LOGAN
 - **Authors:** `*.claude.*` (Session 0/1 instance) · LOGAN (red-pen annotations and plan edits)
-- **Change Note:** Banked corkboard (plates I–XI). Metadata closeout added 2026-06-14 per VAULT-METADATA-STANDARD §3 — the omission was a valid current review catch (Copilot, PR #508, commit `98ef763e`); every sibling leaf carries this footer. Frontmatter `authority: LOGAN` is a recorded field, not a self-attestation that Logan authored every line (per this board's own authority-ladder doctrine; cf. Sourcery review note).
+- **Change Note:** Banked corkboard (plates I–XI). Metadata closeout added 2026-06-14 per VAULT-METADATA-STANDARD §3 — the omission was a valid current review catch (Copilot, PR #508, commit `98ef763e`); every sibling leaf carries this footer. Frontmatter `authority: LOGAN` is a recorded field, not a self-attestation that Logan authored every line (per this board's own authority-ladder doctrine; cf. Sourcery review note). Filename de-dated to LOGIC-PUZZLE-REGISTRATION 2026-06-14 on Logan's instruction.
 
 ---
 

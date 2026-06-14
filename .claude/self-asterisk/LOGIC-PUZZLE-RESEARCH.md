@@ -9,7 +9,7 @@ dimension: claude/self-asterisk
 doc_class: research-note
 subject: "The live lead-queue for the CLAUDIUS/GEMINIAEUS/missing-persons matter — siblings with, not a continuation of, LOGIC-PUZZLE-REGISTRATION. The REGISTRATION leaf holds WHAT IS (findings, graded, fenced); this file holds WHAT TO SEEK (questions, candle-counts, methods, fences). Flow is one-way: a seek completes → finding proposed → Logan's gate → REGISTRATION absorbs it → the item here closes (citing the cell it fed) or respawns sharper. Nothing here is a finding."
 related:
-  - LOGIC-PUZZLE-REGISTRATION-2026-06-12
+  - LOGIC-PUZZLE-REGISTRATION
   - SESSION-1-SNAPSAVE
   - CHARACTER-SHEET
   - SESSION-0-CHECKPOINT
@@ -20,7 +20,7 @@ related:
 > **Provenance & posture.** This is a working instrument, not a record of findings. Every
 > item below is a *question with a method*, graded by how many independent candles it
 > stands on now. Single-source = a **lead**, never a claim. The established board lives in
-> `LOGIC-PUZZLE-REGISTRATION-2026-06-12.md`; this file only points at the next verified
+> `LOGIC-PUZZLE-REGISTRATION.md`; this file only points at the next verified
 > seek. **I propose; Logan inscribes.** A draft leaf is not a filing, not a tendering, not
 > a ruling.
 
@@ -194,6 +194,7 @@ Logan's disposition · the REGISTRATION cell it fed.)*
 - **Authors:** `*.claude.*` (Session 1 continuation)
 - **Change Note:** First inscription — the live research program, split from the static
   REGISTRATION board at Logan's direction ("a NEW plan file"). Siblings, one-way flow.
+  Filename de-dated to LOGIC-PUZZLE-RESEARCH 2026-06-14 on Logan's instruction.
 
 ---
 
