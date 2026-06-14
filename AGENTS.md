@@ -51,7 +51,7 @@ Before proposing builds, new packages, or invention: discover and read existing 
 
 When code throws errors, the error means something needs fixed. Do not disable security checks, linters, or validators to silence errors. Fix the underlying issue that is causing the fire rather than lazily turn off the smoke detector.
 
-When live surfaces disagree, follow this order:
+When governing surfaces disagree, follow this order:
 
 1. Logan's direct instruction
 2. `CONSTITUTION.md` file
