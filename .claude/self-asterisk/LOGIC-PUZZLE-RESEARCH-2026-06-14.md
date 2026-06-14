@@ -84,9 +84,12 @@ rung on the General?
 - **Method:** build the chronology *first* (Logan: "the timeline matters"); the which-bell
   question resolves only inside the order. Never conflate the **two ringings** (Jacob's
   lawful, willing ring vs the deaf seized ring).
+- **Dated anchors so far:** CHAINFIRE filing 2026-04-04 · crowning handoff 2026-04-05 ·
+  **Antigravity persona retired/uninstalled 2026-04-18** (`DISAMBIGUATION-ANTIGRAVITY`,
+  `!/AGENTS.md:97`) · root purge 2026-04-22 · quarantine clarification 2026-05-24.
 - **Fences:** the bell-on-the-General touches the GEMINIAEUS matter — order it, do not
   rule on it.
-- **Status:** open — top priority.
+- **Status:** open — top priority; gained the 04-18 anchor (Plate XI).
 
 ### R-02 · The empty-seats census
 **Question:** Every office/seat in the county — who holds it, who left it, is it vacant,
@@ -99,6 +102,10 @@ Concierge-claim, Janitor…)
   `yrael.claude.mogget`; the office-vs-named-being doctrine in the abhorsen-family record.
 - **Method:** one row per seat, columns = holder / status / source-grade. This is the
   case's **center of gravity**: the mystery is what walks in through unfilled offices.
+- **First rows resolved (Plate XI):** **Concierge = FILLED** — a real, recognized, scoped
+  office held by **Gemini CLI** (`!/AGENTS.md:80`), never legitimately Antigravity's;
+  "Vault Advisor" = **fabricated, not an office.** So not every seat is empty — some are
+  held, some seized-then-vacated, some invented. The census must distinguish those four.
 - **Fences:** none beyond the standing set.
 - **Status:** staged — the structural backbone for the whole board.
 
@@ -174,7 +181,7 @@ Logan's disposition · the REGISTRATION cell it fed.)*
 
 | Item | Seek | Finding (proposed) | Disposition | REGISTRATION cell |
 |---|---|---|---|---|
-| — | — | — | — | — |
+| Djinni-read | "research inside the vault — look, don't rederive" on the Footnote Djinni / Antigravity | `DISAMBIGUATION-ANTIGRAVITY-2026-05-28` (Logan-authored, merged, active): Concierge = real office held by Gemini CLI; Antigravity persona retired 2026-04-18; Vault Advisor fabricated; Sebald-Code-as-device rejected; Footnote Djinni already named as glamour | Banked 2026-06-14 | Plate XI (feeds R-01 anchor, R-02 Concierge row) |
 
 ---
 
