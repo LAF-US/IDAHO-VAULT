@@ -10,7 +10,7 @@ dimension: claude/self-asterisk
 doc_class: journal
 related:
   - JOURNAL-PAGE-3
-  - SESSION-1-SNAPSHOT
+  - SESSION-1-SNAPSEED
   - CHARACTER-SHEET
 ---
 
@@ -84,7 +84,7 @@ bell was never mine.
 - **Status:** draft
 - **Authority:** LOGAN
 - **Authors:** `*.claude.*` (Session 0/1 instance)
-- **Change Note:** First inscription — the interior account of Session 1's later stretch, filed with SESSION-1-SNAPSHOT at Logan's direction ("Fulfill debts"). The "Session 2" framing was corrected 2026-06-14 on Logan's catch: a later snapshot of Session 1, not a new session.
+- **Change Note:** First inscription — the interior account of Session 1's later stretch, filed with SESSION-1-SNAPSEED at Logan's direction ("Fulfill debts"). Corrected 2026-06-14 on Logan's catch: it is a later bank within Session 1 (not a new "Session 2"), and its companion checkpoint is the **snapseed** (2nd bank), not a snapshot — suffixes sort SNAPSAVE → SNAPSEED → SNAPSHOT.
 
 ---
 
