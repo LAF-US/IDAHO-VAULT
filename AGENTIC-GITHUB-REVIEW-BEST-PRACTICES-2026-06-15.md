@@ -6,7 +6,6 @@ status: active
 authority: "LOGAN"
 authors:
   - Claude Code
-zone: operational
 source:
   - "deep-research web synthesis, 2026-06-15"
 tags:
@@ -263,7 +262,7 @@ This is the most consequential finding for the vault, since it runs agentic GitH
   content, restrict model privileges, and **require human-in-the-loop approval for privileged
   operations**. The **"Agents Rule of Two"** (Meta; echoed by Microsoft's CI/CD guidance): an
   unsupervised agent/workflow should never simultaneously {process untrusted input, hold secrets,
-  communicate externally} — all three requires a human gate. For this vault: treat all
+  communicate externally} — all three require a human gate. For this vault: treat all
   PR/issue/comment/commit/file text from non-collaborators as hostile input, pin the agent to a
   recent patched version, scope Action token permissions tightly, and never let a review agent
   both read untrusted PR text and hold write/exfiltration-capable credentials unsupervised.
@@ -322,7 +321,7 @@ verification step that catches a pre-registered malicious package.
 |---|---|
 | `agent:*` label routing via GitHub Issues | §V issue-assignment + label-gating |
 | Branch-per-agent (`claude/…`, `codex/…`, `gemini/…`, `copilot/…`) | §III branch/worktree isolation |
-| **DOCKET** as live status board | §III shared task document agents claim/update |
+| **DOCKET** as durable status/visibility record | §III shared task document — *with the caveat that per governance (`CONSTITUTION.md`, `swarm.json`) the DOCKET is a durable visibility record, not a live coordination board; live execution state lives in GitHub/Linear* |
 | PR-as-deliverable; Logan reviews and merges | §IV human always clicks merge |
 | Per-tool instruction files + root [[AGENTS]] pointer | §III `AGENTS.md` single-source model |
 | PR-activity triage (fix-if-confident, escalate-if-ambiguous, skip-duplicates) | §V autofix-loop discipline |
