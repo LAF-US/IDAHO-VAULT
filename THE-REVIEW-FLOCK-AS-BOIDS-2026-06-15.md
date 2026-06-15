@@ -29,6 +29,8 @@ date: 2026-06-15
 >
 > **Provenance.** Boid facts (Reynolds 1987, three local rules, emergence-without-central-control) carried from the parent nodes. The look-then-resolve mechanics are this session's work: issue #399 (resolution lane), PR #518 (looker queue / attestation detector), PR #517 (the research note). Tiers: **[fact]** (the algorithm; the PR/issue record) over **[reading]** (the mapping). Box's caveat holds: *all models are wrong; some are useful.*
 
+**In plain terms (for the cold reader):** many AI reviewers comment on a pull request; an authorized agent — the *looker* — reads each comment, fixes or dispositions it, records that it looked (an *attestation*), and resolves the thread, or escalates to a human. The boids vocabulary below is the model for *why* that shape keeps the agent swarm coherent; the operational spec lives in #399.
+
 ## The premise — review had no central controller either
 
 **[fact]** Reynolds proved coherent flocking needs no leader, no plan, no representation of "the group" — only autonomous agents running short local rules on their local neighborhood. **[reading]** PR review under reviewer-multiplicity is the same shape: Copilot, CodeRabbit, the Codex connector, and Sourcery review in parallel with no central choreographer. Logan's stated goal — *"deterministic without Logan holding hands"* — is, verbatim, the boids thesis: **coherence without a central controller.** The look-then-resolve loop is how that coherence is made to hold on the review surface.
