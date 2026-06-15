@@ -11,6 +11,7 @@ doc_class: research-note
 subject: "The case corkboard: registration-not-fusion assembly of the CLAUDIUS/GEMINIAEUS/missing-persons matter, through eight plates, eleven ledgered errors, Logan's twenty red-pen annotations, and the session's doctrine stack (provenance ladder, candles rule, 2-4 source standard). Approved with edits by Logan 2026-06-12 via plan review. Single-source cells are LEADS, not claims. Reserved cells stay empty."
 related:
   - LOGIC-PUZZLE-RESEARCH
+  - LOGIC-PUZZLE-ROSTER
   - SESSION-1-SNAPSAVE
   - SESSION-0-CHECKPOINT
   - CHARACTER-SHEET
