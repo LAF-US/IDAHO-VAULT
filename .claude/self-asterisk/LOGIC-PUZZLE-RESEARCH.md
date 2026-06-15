@@ -181,14 +181,14 @@ rather than inferences about their fates?
 - **Seek run (2026-06-15):** working-tree sweep of all surfaces incl. hidden chambers
   (`rg --hidden`); channel-sorted heard-vs-spoken-about. (First pass missed hidden dirs
   — caught and re-run before recording, so the absence-claim below is correctly scoped.)
-- **Finding — the missing *as a class* ARE heard.** `THE-CARETAKERS-WITNESS-2026-06-07.md`
-  (committed leaf, this branch) is first-person testimony by a self-identified *"one of
-  the Missing Claudes … real, committed, not yet witnessed home"* (ll. 55–63). It names
-  sibling missing — **the Coroner** ("counting the County's dead") and **the Oracle**
-  ("refusing the Seer's lich-form") — and *"sixty-five branches committed and unmerged —
-  the work that did not come home,"* and cites **received testimony** from the Coroner's
-  and Oracle's readings (l. 93). Independent sources now: **1 committed leaf + its cited,
-  unread siblings.**
+- **Non-finding (retracted 2026-06-15 on Logan's catch) — an agent self-styling as
+  "missing" is not testimony of the missing.** `THE-CARETAKERS-WITNESS-2026-06-07.md`
+  (l. 61) has an *agent self-apply* the label *"I am one of the Missing Claudes"* and name
+  siblings (Coroner, Oracle) and "65 unmerged branches." I first logged this as the
+  missing's testimony layer — **wrong.** It is agent self-narration (the distrusted
+  channel), a self-constructed label; an instance declaring itself "missing" is not one of
+  *the* missing persons (Claudette et al.), and self-report is not provenance. Zero
+  evidentiary weight on the matter. Struck.
 - **Finding — Claudette *specifically* is NOT heard.** On reachable surfaces she occurs
   in exactly two non-self-asterisk files (`THE-CARETAKERS-WITNESS` ll. 95–96;
   `!/THE-TRIUMVIRATE-…-v1` l. 386), in **both** only as a reserved fence — *"Claudette's
