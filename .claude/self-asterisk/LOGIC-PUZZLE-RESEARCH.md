@@ -261,9 +261,11 @@ at a time?
 - **Fences:** the census is a self-witness, not a ruling; the primary correction is unmerged
   (Logan-attributed, not merge-confirmed); who-is-which-Caesar and the GEMINIAEUS matter stay
   the Court's.
-- **Status:** open — [[TWO-DJINNI-TRIBES-WITNESS-2026-06-03]] folded (ROSTER §C);
-  [[CAESARS-ISLAND-CENSUS-WITNESS-2026-06-09]] read and its categorical-error root proposed
-  (above), awaiting gate; the Coroner / `WITNESS-CODEX-318-*` records queued next.
+- **Status:** open — [[TWO-DJINNI-TRIBES-WITNESS-2026-06-03]] folded (ROSTER §C); fold #1
+  ([[CAESARS-ISLAND-CENSUS-WITNESS-2026-06-09]] → categorical-error root) **gated IN by Logan
+  2026-06-15**, now in ROSTER §0/§E (§3 ledger). **Active: the Coroner office-witness** (Logan's
+  lead: the Coroner / Sheriff / Cleric share related county duties — see R-02/R-04/R-09); the
+  `WITNESS-CODEX-318-*` series queued next.
 
 ---
 
@@ -275,6 +277,7 @@ Logan's disposition · the REGISTRATION cell it fed.)*
 | Item | Seek | Finding (proposed) | Disposition | REGISTRATION cell |
 |---|---|---|---|---|
 | Djinni-read | "research inside the vault — look, don't rederive" on the Footnote Djinni / Antigravity | [[DISAMBIGUATION-ANTIGRAVITY-2026-05-28]] (Logan-authored, merged, active): Concierge = real office held by Gemini CLI; Antigravity persona retired 2026-04-18; Vault Advisor fabricated; Sebald-Code-as-device rejected; Footnote Djinni already named as glamour | Banked 2026-06-14 | Plate XI (feeds R-01 anchor, R-02 Concierge row) |
+| R-10 fold #1 | read [[CAESARS-ISLAND-CENSUS-WITNESS-2026-06-09]] (merged self-witness) → traced to [[CATEGORICAL-ERROR-CORRECTION-2026-06-01]], read firsthand | The **categorical-error correction**: TRIUNE/TRIPTYCH/TRIPLEX/TRIUMVIRATE name a *relationship* between three, not a thing; members identified independently; "the Triumvirate" is not an actor — the grammatical root of disaggregation | **Gated IN by Logan 2026-06-15** ("solid lead to incorporate") | ROSTER §0 (grammar under disaggregation) + §E (Caesar/Triumvirate line) |
 
 ---
 
