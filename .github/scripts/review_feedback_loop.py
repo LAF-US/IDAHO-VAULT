@@ -6,7 +6,8 @@ Modes:
   - acknowledge-apply: observe a trusted `@copilot apply changes` request and
     mark the PR as waiting on follow-up commits.
   - sync-pr: recompute review-derived state after PR updates land, auto-resolve
-    outdated advisory bot threads, and synchronize projection labels.
+    advisory bot threads (by author type, current or outdated; signal bots and
+    human threads excluded), and synchronize projection labels.
   - review-submitted: recompute review-derived state after a submitted review
     and pause auto-merge only when a non-author changes-requested review creates
     a real merge block.
@@ -35,6 +36,13 @@ from datetime import datetime, timezone
 APPLY_RE = re.compile(r"@copilot\b[\s\S]*?\bapply changes\b", re.IGNORECASE)
 DEFAULT_GRACE_MINUTES = 30
 AGENT_AUTO_MERGE_ENABLED = False
+
+# Advisory review bots (CodeRabbit, Copilot, the Codex connector, Sourcery, …)
+# are auto-resolved by GitHub actor type rather than a hardcoded login allowlist,
+# so a newly added review bot is covered without code changes. The only
+# maintained list is the inverse: signal bots whose findings must still gate a
+# merge (e.g. security scanners), which are never auto-resolved.
+DEFAULT_SIGNAL_BOT_DENYLIST = "aikido-autofix"
 
 # IF 7 (brass-mouth reliability is per-utterance, not per-agent) per
 # !/ARBORSCAPE-PR-EXPANSION-2026-05-22.md. The verify-claim subcommand watches
@@ -181,7 +189,7 @@ def _fetch_pr(owner: str, name: str, number: int) -> dict:
               isOutdated
               comments(first: 20) {
                 nodes {
-                  author { login }
+                  author { login __typename }
                   body
                   url
                 }
@@ -269,13 +277,34 @@ def _parse_iso_datetime(raw: str | None) -> datetime | None:
     return parsed
 
 
-def _thread_authors(thread: dict) -> set[str]:
-    authors: set[str] = set()
-    for comment in (thread.get("comments") or {}).get("nodes") or []:
-        author = (comment.get("author") or {}).get("login")
-        if author:
-            authors.add(author)
-    return authors
+def _author_is_bot(author: dict) -> bool:
+    """True when a comment author is a GitHub App / bot actor, not a human."""
+    if (author.get("__typename") or "") == "Bot":
+        return True
+    return (author.get("login") or "").endswith("[bot]")
+
+
+def _thread_is_bot_resolvable(thread: dict, signal_bot_denylist: set[str]) -> bool:
+    """True when every author of the thread is an advisory bot safe to auto-resolve.
+
+    Eligibility is decided by actor type, not a login allowlist, so every
+    advisory reviewer is covered without maintenance. A single human
+    participant, no participants at all, or any author on the signal-bot
+    denylist (e.g. a security scanner) makes the thread sticky.
+    """
+    deny = {entry.lower() for entry in signal_bot_denylist}
+    comments = (thread.get("comments") or {}).get("nodes") or []
+    authors = [(comment.get("author") or {}) for comment in comments]
+    if not authors:
+        return False
+    for author in authors:
+        login = (author.get("login") or "").lower()
+        bare = login[: -len("[bot]")] if login.endswith("[bot]") else login
+        if login in deny or bare in deny:
+            return False
+        if not _author_is_bot(author):
+            return False
+    return True
 
 
 def _parse_body_marker_value(body: str, marker: str) -> str | None:
@@ -309,7 +338,6 @@ def evaluate_review_state(
     *,
     now: datetime | None = None,
     grace_minutes: int = DEFAULT_GRACE_MINUTES,
-    auto_resolve_reviewers: set[str] | None = None,
 ) -> dict[str, object]:
     """Return one machine-readable view of the PR's current review state."""
 
@@ -318,21 +346,16 @@ def evaluate_review_state(
         for node in (pr.get("labels") or {}).get("nodes") or []
         if node.get("name")
     }
-    auto_resolve_reviewers = auto_resolve_reviewers or set()
 
     current_unresolved = 0
     outdated_unresolved = 0
-    auto_resolvable_outdated = 0
 
     for thread in (pr.get("reviewThreads") or {}).get("nodes") or []:
         if thread.get("isResolved"):
             continue
 
-        authors = _thread_authors(thread)
         if thread.get("isOutdated"):
             outdated_unresolved += 1
-            if authors and authors.issubset(auto_resolve_reviewers):
-                auto_resolvable_outdated += 1
             continue
 
         current_unresolved += 1
@@ -378,7 +401,6 @@ def evaluate_review_state(
         "blocking_review": blocking_review,
         "current_unresolved_threads": current_unresolved,
         "outdated_unresolved_threads": outdated_unresolved,
-        "auto_resolvable_outdated_threads": auto_resolvable_outdated,
         "merge_blocked": merge_blocked,
         "blocking_reasons": blocking_reasons,
         "grace_elapsed": grace_elapsed,
@@ -436,25 +458,35 @@ def apply_review_state_projection(
     return actions
 
 
-def _resolve_outdated_advisory_threads(pr: dict, auto_resolve_reviewers: set[str]) -> int:
+def _resolve_advisory_bot_threads(pr: dict, signal_bot_denylist: set[str]) -> int:
+    """Auto-resolve unresolved review threads authored solely by advisory bots.
+
+    Threads are resolved whether current or outdated — the dominant backlog is
+    current bot nits, so the prior `isOutdated`-only gate left them stranded.
+    Human threads, mixed human/bot threads, signal-bot threads, and any PR with
+    a CHANGES_REQUESTED decision are never auto-resolved. This keeps the human
+    review gate intact while clearing advisory bot chatter (per #217: ordinary
+    reviewer comments are advisory, not merge authority).
+    """
+    if pr.get("reviewDecision") == "CHANGES_REQUESTED":
+        return 0
     resolved_count = 0
     for thread in (pr.get("reviewThreads") or {}).get("nodes") or []:
-        if thread.get("isResolved") or not thread.get("isOutdated"):
+        if thread.get("isResolved"):
             continue
-
-        authors = _thread_authors(thread)
-        if authors and authors.issubset(auto_resolve_reviewers):
-            try:
-                _resolve_thread(thread["id"])
-                resolved_count += 1
-            except RuntimeError as exc:
-                if _is_forbidden_integration_error(exc):
-                    print(
-                        f"Skipping auto-resolve for thread {thread['id']}: token lacks permission.",
-                        file=sys.stderr,
-                    )
-                else:
-                    raise
+        if not _thread_is_bot_resolvable(thread, signal_bot_denylist):
+            continue
+        try:
+            _resolve_thread(thread["id"])
+            resolved_count += 1
+        except RuntimeError as exc:
+            if _is_forbidden_integration_error(exc):
+                print(
+                    f"Skipping auto-resolve for thread {thread['id']}: token lacks permission.",
+                    file=sys.stderr,
+                )
+            else:
+                raise
     return resolved_count
 
 
@@ -484,7 +516,7 @@ def _build_reconciliation_report(
     *,
     now: datetime | None = None,
     grace_minutes: int = DEFAULT_GRACE_MINUTES,
-    auto_resolve_reviewers: set[str] | None = None,
+    signal_bot_denylist: set[str] | None = None,
 ) -> dict[str, object]:
     evaluated: list[dict[str, object]] = []
     promoted: list[int] = []
@@ -494,7 +526,7 @@ def _build_reconciliation_report(
 
     for pr_number in _list_open_pr_numbers(owner, repo):
         pr = _fetch_pr(owner, repo, pr_number)
-        resolved_count = _resolve_outdated_advisory_threads(pr, auto_resolve_reviewers or set())
+        resolved_count = _resolve_advisory_bot_threads(pr, signal_bot_denylist or set())
         total_resolved_outdated_threads += resolved_count
         if resolved_count:
             pr = _fetch_pr(owner, repo, pr_number)
@@ -503,7 +535,6 @@ def _build_reconciliation_report(
             pr,
             now=now,
             grace_minutes=grace_minutes,
-            auto_resolve_reviewers=auto_resolve_reviewers,
         )
 
         actions = apply_review_state_projection(pr_number, state)
@@ -605,9 +636,9 @@ def acknowledge_apply(args: argparse.Namespace) -> int:
 def sync_pr(args: argparse.Namespace) -> int:
     ensure_labels()
 
-    auto_resolve_reviewers = _csv_env(
-        "AUTO_RESOLVE_REVIEWERS",
-        "copilot-pull-request-reviewer",
+    signal_bot_denylist = _csv_env(
+        "SIGNAL_BOT_DENYLIST",
+        DEFAULT_SIGNAL_BOT_DENYLIST,
     )
     completion_actors = _csv_env(
         "APPLY_COMPLETION_ACTORS",
@@ -615,14 +646,13 @@ def sync_pr(args: argparse.Namespace) -> int:
     )
 
     pr = _fetch_pr(args.owner, args.repo, args.pr_number)
-    resolved_count = _resolve_outdated_advisory_threads(pr, auto_resolve_reviewers)
+    resolved_count = _resolve_advisory_bot_threads(pr, signal_bot_denylist)
     if resolved_count:
         pr = _fetch_pr(args.owner, args.repo, args.pr_number)
 
     state = evaluate_review_state(
         pr,
         grace_minutes=args.grace_minutes,
-        auto_resolve_reviewers=auto_resolve_reviewers,
     )
     clear_pending = (
         args.sync_actor in completion_actors and bool(state["has_copilot_apply_pending"])
@@ -652,15 +682,10 @@ def sync_pr(args: argparse.Namespace) -> int:
 def review_submitted(args: argparse.Namespace) -> int:
     ensure_labels()
 
-    auto_resolve_reviewers = _csv_env(
-        "AUTO_RESOLVE_REVIEWERS",
-        "copilot-pull-request-reviewer",
-    )
     pr = _fetch_pr(args.owner, args.repo, args.pr_number)
     state = evaluate_review_state(
         pr,
         grace_minutes=args.grace_minutes,
-        auto_resolve_reviewers=auto_resolve_reviewers,
     )
 
     blocking_event = (
@@ -696,15 +721,15 @@ def review_submitted(args: argparse.Namespace) -> int:
 
 def promote_ready(args: argparse.Namespace) -> int:
     ensure_labels()
-    auto_resolve_reviewers = _csv_env(
-        "AUTO_RESOLVE_REVIEWERS",
-        "copilot-pull-request-reviewer",
+    signal_bot_denylist = _csv_env(
+        "SIGNAL_BOT_DENYLIST",
+        DEFAULT_SIGNAL_BOT_DENYLIST,
     )
     report = _build_reconciliation_report(
         args.owner,
         args.repo,
         grace_minutes=args.grace_minutes,
-        auto_resolve_reviewers=auto_resolve_reviewers,
+        signal_bot_denylist=signal_bot_denylist,
     )
     print(json.dumps(report))
     return 0
@@ -712,15 +737,15 @@ def promote_ready(args: argparse.Namespace) -> int:
 
 def reconcile_open_prs(args: argparse.Namespace) -> int:
     ensure_labels()
-    auto_resolve_reviewers = _csv_env(
-        "AUTO_RESOLVE_REVIEWERS",
-        "copilot-pull-request-reviewer",
+    signal_bot_denylist = _csv_env(
+        "SIGNAL_BOT_DENYLIST",
+        DEFAULT_SIGNAL_BOT_DENYLIST,
     )
     report = _build_reconciliation_report(
         args.owner,
         args.repo,
         grace_minutes=args.grace_minutes,
-        auto_resolve_reviewers=auto_resolve_reviewers,
+        signal_bot_denylist=signal_bot_denylist,
     )
     print(json.dumps(report))
     return 0
@@ -728,15 +753,10 @@ def reconcile_open_prs(args: argparse.Namespace) -> int:
 
 def enable_auto_merge(args: argparse.Namespace) -> int:
     ensure_labels()
-    auto_resolve_reviewers = _csv_env(
-        "AUTO_RESOLVE_REVIEWERS",
-        "copilot-pull-request-reviewer",
-    )
     pr = _fetch_pr(args.owner, args.repo, args.pr_number)
     state = evaluate_review_state(
         pr,
         grace_minutes=args.grace_minutes,
-        auto_resolve_reviewers=auto_resolve_reviewers,
     )
     label_actions = apply_review_state_projection(args.pr_number, state)
     labels = set(state["labels"])

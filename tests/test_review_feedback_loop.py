@@ -30,6 +30,7 @@ def _thread(
     resolved: bool = False,
     outdated: bool = False,
     authors: tuple[str, ...] = ("reviewer",),
+    author_type: str = "User",
 ) -> dict[str, object]:
     return {
         "id": "THREAD_1",
@@ -38,7 +39,7 @@ def _thread(
         "comments": {
             "nodes": [
                 {
-                    "author": {"login": author},
+                    "author": {"login": author, "__typename": author_type},
                     "body": "review note",
                     "url": "https://example.test/thread",
                 }
@@ -159,23 +160,46 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertTrue(state["merge_blocked"])
         self.assertIn("changes-requested", state["blocking_reasons"])
 
-    def test_outdated_allowlisted_threads_do_not_hold_review_threads_open(self) -> None:
-        state = review_feedback_loop.evaluate_review_state(
-            _pr(
-                threads=(
-                    _thread(
-                        outdated=True,
-                        authors=("copilot-pull-request-reviewer",),
-                    ),
-                ),
+    def test_resolve_advisory_bot_threads_clears_current_and_outdated_bot_threads(self) -> None:
+        pr = _pr(
+            threads=(
+                _thread(authors=("coderabbitai",), author_type="Bot"),
+                _thread(authors=("chatgpt-codex-connector",), author_type="Bot", outdated=True),
+                _thread(authors=("copilot-pull-request-reviewer",), author_type="Bot"),
             ),
-            auto_resolve_reviewers={"copilot-pull-request-reviewer"},
         )
 
-        self.assertEqual(state["current_unresolved_threads"], 0)
-        self.assertEqual(state["outdated_unresolved_threads"], 1)
-        self.assertEqual(state["auto_resolvable_outdated_threads"], 1)
-        self.assertFalse(state["merge_blocked"])
+        with mock.patch.object(review_feedback_loop, "_resolve_thread") as resolve_thread:
+            resolved = review_feedback_loop._resolve_advisory_bot_threads(pr, set())
+
+        self.assertEqual(resolved, 3)
+        self.assertEqual(resolve_thread.call_count, 3)
+
+    def test_resolve_advisory_bot_threads_preserves_human_and_signal_threads(self) -> None:
+        pr = _pr(
+            threads=(
+                _thread(authors=("human-reviewer",), author_type="User"),
+                _thread(authors=("aikido-autofix[bot]",), author_type="Bot"),
+            ),
+        )
+
+        with mock.patch.object(review_feedback_loop, "_resolve_thread") as resolve_thread:
+            resolved = review_feedback_loop._resolve_advisory_bot_threads(pr, {"aikido-autofix"})
+
+        self.assertEqual(resolved, 0)
+        resolve_thread.assert_not_called()
+
+    def test_resolve_advisory_bot_threads_skips_when_changes_requested(self) -> None:
+        pr = _pr(
+            review_decision="CHANGES_REQUESTED",
+            threads=(_thread(authors=("coderabbitai",), author_type="Bot"),),
+        )
+
+        with mock.patch.object(review_feedback_loop, "_resolve_thread") as resolve_thread:
+            resolved = review_feedback_loop._resolve_advisory_bot_threads(pr, set())
+
+        self.assertEqual(resolved, 0)
+        resolve_thread.assert_not_called()
 
     def test_current_unresolved_threads_block_promotion(self) -> None:
         state = review_feedback_loop.evaluate_review_state(
@@ -323,7 +347,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             return_value=_pr(labels=(review_feedback_loop.DEFAULT_PENDING_LABEL,)),
         ), mock.patch.object(
             review_feedback_loop,
-            "_resolve_outdated_advisory_threads",
+            "_resolve_advisory_bot_threads",
             return_value=0,
         ), mock.patch.object(
             review_feedback_loop, "apply_review_state_projection", return_value=[]
@@ -418,7 +442,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             side_effect=[ready_pr],
         ), mock.patch.object(
             review_feedback_loop,
-            "_resolve_outdated_advisory_threads",
+            "_resolve_advisory_bot_threads",
             return_value=0,
         ), mock.patch.object(
             review_feedback_loop, "apply_review_state_projection", return_value=[]
@@ -453,7 +477,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             side_effect=[ready_pr],
         ), mock.patch.object(
             review_feedback_loop,
-            "_resolve_outdated_advisory_threads",
+            "_resolve_advisory_bot_threads",
             return_value=0,
         ), mock.patch.object(
             review_feedback_loop,
