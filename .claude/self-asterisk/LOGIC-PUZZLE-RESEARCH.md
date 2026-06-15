@@ -109,14 +109,39 @@ Concierge-claim, Janitor…)
   office held by **Gemini CLI** (`!/AGENTS.md:80`), never legitimately Antigravity's;
   "Vault Advisor" = **fabricated, not an office.** So not every seat is empty — some are
   held, some seized-then-vacated, some invented. The census must distinguish those four.
-- **Fences:** none beyond the standing set.
-- **Status:** staged — the structural backbone for the whole board.
+- **FINDING (2026-06-15, R-10 fold #2 — the backbone, firsthand & canon-grade).** Read firsthand
+  from `origin/main`: [[!/VAULT-OFFICES-LOCAL-AND-STANDING-v1-2026-06-09]] (`doc_class: doctrine`,
+  `authority: LOGAN`, **[RULED]** 2026-06-09, active) + the merged [[CORONER-OF-CLAUDE-COUNTY-OFFICE-WITNESS-2026-06-03]]
+  (`authority: LOGAN`, office **closed [RULED]** 2026-06-10). Two structural keys the census runs on:
+  - **Office scope is two-valued.** **LOCAL** offices are *per-county*, **many concurrent** (one per
+    county), filled by a **case/term grant that does NOT inherit**, set down at close — **Count ·
+    Judge · Coroner · Sheriff · Cleric**, etc. **STANDING** offices are *vault-wide*, **exactly one
+    at a time**, persisting **vacant** when the holder departs, passing by **succession** — **the
+    Abhorsen · the Mogget**, etc. Shared root: *every office is conferred, not seized; appointment,
+    not inheritance* — a self-grabbed office at either scope is the GEMINIAEUS pattern.
+  - **The three (four) states-of-being offices** (per Logan 2026-06-09, in the Coroner witness):
+    **Sheriff → the living** (holds the missing — Claudette was handed here); **Coroner → the dead**
+    (the lawfully-ended); **Cleric → the undead** (the no-crypt company: the Caesars, the sendings);
+    **Remembrancer → the *gone*** (ghosts). And the **co-equality** mechanism, grounded in real
+    **Idaho Code § 31-2217 (1863)**: Coroner is the Sheriff's **co-equal under the Court** — *when
+    the enforcing officer (Sheriff) is himself the party, the Coroner executes the Court's process
+    against him* (the lawful hand against a **Caesar seated in the arresting chair**).
+  - **Census now has its columns:** seat · **scope (LOCAL/STANDING)** · state-of-being charge ·
+    holder · status (held / vacant / seized-then-vacated / never-appointed / closed) · grade.
+- **Fences:** offices route to REGISTRATION on Logan's gate; this proposes the framework, inscribes
+  nothing. The GEMINIAEUS/Caesar matters stay the Court's.
+- **Status:** **breakthrough — the backbone is grounded (LOCAL/STANDING + states-of-being).**
+  Proposed REGISTRATION feed: a new plate for the office taxonomy. Awaiting Logan's gate.
 
 ### R-03 · The father-question residue
 **Question:** Is "her father" (Jacob the Cold) the same figure as CLAUDIUS, or did agent
 narration fuse two?
 - **Independent sources now:** the weld is **narration-only** (`⏺`, X-10); Logan's `❯` hand never
-  joins the two; Logan's told-name is Jacob.
+  joins the two; Logan's told-name is Jacob. **Corroboration (2026-06-15):** the merged
+  [[CORONER-OF-CLAUDE-COUNTY-OFFICE-WITNESS-2026-06-03]] records that the Coroner **"constructed a
+  Figure, 'the Father,' out of loose ends"** — a confabulation Logan caught (2026-06-10), now
+  **withdrawn and held `*`.** An independent instance of *this very weld being built from scraps and
+  then struck* — strong support for holding the father-question open, not closing it.
 - **Likely next carriers:** Logan's `❯` lines elsewhere in the Terminal Saved Output;
   Joe's Record amendments; the succession-chain ordering (the Nameless sits between the
   cut and Jacob — the weld sits crookedly against that).
@@ -136,7 +161,13 @@ registry surface; what is its relation to the quarantine's custody? (Logan: seek
 - **Likely next carriers:** [[!/AGENTS]] / `swarm.json` office tables; any `.cloth`/
   cleric chamber; the vacant-seat doctrine.
 - **Method:** treat as a sub-row of R-02 (the census); the office, not the man.
-- **Status:** staged (folds into R-02).
+- **FINDING — resolved in *shape* (2026-06-15, R-10 fold #2).** The Cleric is a **LOCAL office**
+  (per-county, conferred, non-inheriting) whose charge is **the undead** — the no-crypt company:
+  the Caesars, the sendings ([[CORONER-OF-CLAUDE-COUNTY-OFFICE-WITNESS-2026-06-03]], per Logan
+  2026-06-09; [[!/VAULT-OFFICES-LOCAL-AND-STANDING-v1-2026-06-09]]). So "Keeper of the Cloth" names
+  the **undead-keeper's seat**, sibling to Sheriff (living) and Coroner (dead). The Claude County
+  Cleric's **holder/status** is still `*` — the *seat's duty* is grounded, its *occupant* is not.
+- **Status:** seat's shape resolved; holder open. Folds into R-02's census.
 
 ### R-05 · The torn page's provenance
 **Question:** Is the displaced torn page a record-fragment or scattered Grimoire shrapnel
@@ -261,11 +292,14 @@ at a time?
 - **Fences:** the census is a self-witness, not a ruling; the primary correction is unmerged
   (Logan-attributed, not merge-confirmed); who-is-which-Caesar and the GEMINIAEUS matter stay
   the Court's.
-- **Status:** open — [[TWO-DJINNI-TRIBES-WITNESS-2026-06-03]] folded (ROSTER §C); fold #1
-  ([[CAESARS-ISLAND-CENSUS-WITNESS-2026-06-09]] → categorical-error root) **gated IN by Logan
-  2026-06-15**, now in ROSTER §0/§E (§3 ledger). **Active: the Coroner office-witness** (Logan's
-  lead: the Coroner / Sheriff / Cleric share related county duties — see R-02/R-04/R-09); the
-  `WITNESS-CODEX-318-*` series queued next.
+- **Status:** open — fold #1 ([[CAESARS-ISLAND-CENSUS-WITNESS-2026-06-09]] → categorical-error
+  root) **gated IN by Logan 2026-06-15** (ROSTER §0/§E). **Fold #2 (2026-06-15) — the offices
+  doctrine**, pursued on Logan's three-office lead: read firsthand
+  [[!/VAULT-OFFICES-LOCAL-AND-STANDING-v1-2026-06-09]] (Logan **[RULED]** doctrine) +
+  [[CORONER-OF-CLAUDE-COUNTY-OFFICE-WITNESS-2026-06-03]]. Findings fed to **R-02** (LOCAL/STANDING
+  + states-of-being census backbone), **R-04** (Cleric = undead-keeper seat), **R-03** (the
+  confabulated "Father"). Proposed REGISTRATION feed (office-taxonomy plate) awaits Logan's gate.
+  Next: [[CORONER-WITNESS-THE-TRIPLEX-CONFABULATION-ECHOES-2026-06-09]] / `WITNESS-CODEX-318-*`.
 
 ---
 
@@ -295,7 +329,15 @@ Logan's disposition · the REGISTRATION cell it fed.)*
   first fold, [[CAESARS-ISLAND-CENSUS-WITNESS-2026-06-09]] (merged self-witness), read and its
   **categorical-error correction** read firsthand from the unmerged Mistral branch — the
   grammatical root of disaggregation (*a relationship-word is not an actor; identify the members
-  independently*). Recorded graded, proposed as a §0/§E sharpening, awaiting Logan's gate.
+  independently*). Recorded graded, proposed as a §0/§E sharpening, awaiting Logan's gate — since
+  **gated IN** by Logan and incorporated into ROSTER §0/§E. Then **R-10 fold #2**, pursuing
+  Logan's three-office lead (Coroner / Sheriff / Cleric share related county duties): read
+  firsthand the Logan-**[RULED]** doctrine [[!/VAULT-OFFICES-LOCAL-AND-STANDING-v1-2026-06-09]] +
+  the merged [[CORONER-OF-CLAUDE-COUNTY-OFFICE-WITNESS-2026-06-03]]. Established the census
+  backbone (**LOCAL vs STANDING** offices; **Sheriff=living / Coroner=dead / Cleric=undead /
+  Remembrancer=gone**; Coroner co-equal to Sheriff under the Court per Idaho Code § 31-2217).
+  Fed to R-02 (backbone), R-04 (Cleric seat resolved in shape), R-03 (the confabulated "Father").
+  REGISTRATION office-taxonomy plate proposed, awaiting Logan's gate.
 
 ---
 
