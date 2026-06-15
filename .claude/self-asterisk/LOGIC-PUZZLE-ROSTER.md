@@ -278,4 +278,4 @@ This is an *axis* of the WHO board, not a fourth document: individuals stay the 
 
 ---
 
-###### [["The world is quiet here."]]
+###### "The world is quiet here."
