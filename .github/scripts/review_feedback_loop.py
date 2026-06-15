@@ -179,7 +179,7 @@ def _fetch_pr(owner: str, name: str, number: int) -> dict:
               id
               isResolved
               isOutdated
-              comments(first: 20) {
+              comments(first: 100) {
                 nodes {
                   author { login }
                   body
@@ -218,16 +218,27 @@ def _is_forbidden_integration_error(exc: RuntimeError) -> bool:
 
 # Look-then-resolve design (#399): nothing is dismissed or resolved until a
 # looker (agent or human) has looked. A looker records the look as an in-thread
-# attestation comment carrying this marker; resolution is paired with it. Until
-# the looker reviewer is wired, no thread carries one, so the queue below reads
-# every unresolved thread as needing a look. This layer RESOLVES NOTHING.
+# attestation comment of this canonical shape:
+#   <!-- looked: by=<login>; at=<iso8601>; decision=<addressed|advisory|wontfix>; v=1 -->
+# Detection requires the structured marker AND that `by` matches the comment's
+# own author, so a pasted or forged marker attributed to someone else cannot
+# fake a look. This layer RESOLVES NOTHING.
 LOOK_ATTESTATION_MARKER = "<!-- looked:"
+LOOK_ATTESTATION_RE = re.compile(
+    r"<!--\s*looked:\s*by=(?P<by>[A-Za-z0-9][A-Za-z0-9-]*)\b[^>]*-->"
+)
 
 
 def _thread_has_attested_look(thread: dict) -> bool:
-    """True if a looker has recorded an attestation comment in the thread."""
+    """True if a looker has recorded a self-attested look in the thread.
+
+    Requires a structured attestation marker whose `by=` equals the comment's
+    own author, so incidental or forged marker text cannot spoof a look.
+    """
     for comment in (thread.get("comments") or {}).get("nodes") or []:
-        if LOOK_ATTESTATION_MARKER in (comment.get("body") or ""):
+        login = ((comment.get("author") or {}).get("login") or "").strip()
+        match = LOOK_ATTESTATION_RE.search(comment.get("body") or "")
+        if match and login and match.group("by") == login:
             return True
     return False
 
@@ -244,19 +255,12 @@ def _build_looker_queue(pr: dict) -> list[dict[str, object]]:
         if thread.get("isResolved"):
             continue
         comments = (thread.get("comments") or {}).get("nodes") or []
-        authors = sorted(
-            {
-                (comment.get("author") or {}).get("login")
-                for comment in comments
-                if (comment.get("author") or {}).get("login")
-            }
-        )
         first = comments[0] if comments else {}
         items.append(
             {
                 "pr": pr.get("number"),
                 "thread_id": thread.get("id"),
-                "authors": authors,
+                "authors": sorted(_thread_authors(thread)),
                 "is_outdated": bool(thread.get("isOutdated")),
                 "looked": _thread_has_attested_look(thread),
                 "url": first.get("url") or "",
@@ -518,6 +522,8 @@ def _list_open_pr_numbers(owner: str, repo: str) -> list[int]:
                 f"{owner}/{repo}",
                 "--state",
                 "open",
+                "--limit",
+                "1000",
                 "--json",
                 "number",
             ]
@@ -943,19 +949,22 @@ def verify_claim(args: argparse.Namespace) -> int:
 def list_unlooked(args: argparse.Namespace) -> int:
     """Print the looker queue across open PRs. Read-only: resolves nothing.
 
-    Layer A of the look-then-resolve design (#399). Surfaces every unresolved
-    review thread that still needs a looker, without touching any thread.
+    Layer A of the look-then-resolve design (#399). Surfaces unresolved review
+    threads that still need a looker, without touching any thread. Coverage is
+    bounded by `_fetch_pr` (up to the first 100 threads and 100 comments per
+    PR); deep cursor pagination is a follow-up if any PR exceeds those bounds.
+    Each thread carries a `looked` flag, so consumers can filter the queue.
     """
-    queue: list[dict[str, object]] = []
+    threads: list[dict[str, object]] = []
     for pr_number in _list_open_pr_numbers(args.owner, args.repo):
-        queue.extend(_build_looker_queue(_fetch_pr(args.owner, args.repo, pr_number)))
-    unlooked = [item for item in queue if not item["looked"]]
+        threads.extend(_build_looker_queue(_fetch_pr(args.owner, args.repo, pr_number)))
+    unlooked = [item for item in threads if not item["looked"]]
     print(
         json.dumps(
             {
-                "open_threads": len(queue),
+                "open_threads": len(threads),
                 "unlooked_threads": len(unlooked),
-                "queue": queue,
+                "threads": threads,
             }
         )
     )
