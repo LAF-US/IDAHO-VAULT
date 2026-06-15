@@ -20,6 +20,13 @@ related:
 > approval (his edits included). Scratch genre elevated to draft leaf only by that
 > approval; nothing herein is a finding unless its own grade says so. The Court's
 > cells remain the Court's; the Sheriff's, the Sheriff's.
+>
+> **Terminology note (2026-06-15, correction #10):** "candle(s)" appears throughout
+> this banked board as an inflated unit. Read every "candle" as **"independent
+> source,"** and never as a positive standing-term — the "one candle in five mirrors"
+> figure was Joe's rumor-ledger illustration of *weak, repeated* sources, not a unit
+> of verification. The banked plate text is annotated here, not rewritten; the live
+> instrument (`LOGIC-PUZZLE-RESEARCH`) carries the de-jargoned wording.
 
 # IDAHO-VAULT — Session Plan File
 
