@@ -9,7 +9,7 @@ date created: 2026-06-15
 authority: "Proposed bridge node, written at Logan's direction connecting the boids concept-nodes to the look-then-resolve reviewer work (#399). Staged on branch, not adopted — not assumed as LOGAN by default. The Architect holds the verdict."
 doc_class: concept-node
 status: staged
-verified-by: Claude Code (boids facts per Reynolds 1987 as cited in the parent nodes; the look-then-resolve mechanics are this session's PRs #518/#517 and issue #399)
+verified-by: "Claude Code (boids facts per Reynolds 1987 as cited in the parent nodes; the look-then-resolve mechanics are this session's PRs #518/#517 and issue #399)"
 related:
   - "[[THE-SWARM-AS-BOIDS-ANCHORING-AND-THE-GRAPH-2026-06-08]]"
   - "[[MURMUR-AND-MUTTER-FLOCK-AND-DRIFT-2026-06-08]]"
