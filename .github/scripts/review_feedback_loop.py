@@ -216,6 +216,55 @@ def _is_forbidden_integration_error(exc: RuntimeError) -> bool:
     return "FORBIDDEN" in text or "Resource not accessible by integration" in text
 
 
+# Look-then-resolve design (#399): nothing is dismissed or resolved until a
+# looker (agent or human) has looked. A looker records the look as an in-thread
+# attestation comment carrying this marker; resolution is paired with it. Until
+# the looker reviewer is wired, no thread carries one, so the queue below reads
+# every unresolved thread as needing a look. This layer RESOLVES NOTHING.
+LOOK_ATTESTATION_MARKER = "<!-- looked:"
+
+
+def _thread_has_attested_look(thread: dict) -> bool:
+    """True if a looker has recorded an attestation comment in the thread."""
+    for comment in (thread.get("comments") or {}).get("nodes") or []:
+        if LOOK_ATTESTATION_MARKER in (comment.get("body") or ""):
+            return True
+    return False
+
+
+def _build_looker_queue(pr: dict) -> list[dict[str, object]]:
+    """Read-only worklist of unresolved threads on one PR for a looker.
+
+    Resolves nothing. Each entry carries what a looker needs to look: the
+    thread id, its comment authors, whether the anchor is outdated, whether a
+    look has already been attested, and a link.
+    """
+    items: list[dict[str, object]] = []
+    for thread in (pr.get("reviewThreads") or {}).get("nodes") or []:
+        if thread.get("isResolved"):
+            continue
+        comments = (thread.get("comments") or {}).get("nodes") or []
+        authors = sorted(
+            {
+                (comment.get("author") or {}).get("login")
+                for comment in comments
+                if (comment.get("author") or {}).get("login")
+            }
+        )
+        first = comments[0] if comments else {}
+        items.append(
+            {
+                "pr": pr.get("number"),
+                "thread_id": thread.get("id"),
+                "authors": authors,
+                "is_outdated": bool(thread.get("isOutdated")),
+                "looked": _thread_has_attested_look(thread),
+                "url": first.get("url") or "",
+            }
+        )
+    return items
+
+
 def _ensure_label(name: str, color: str, description: str) -> None:
     _run(
         [
@@ -891,6 +940,28 @@ def verify_claim(args: argparse.Namespace) -> int:
     return 0
 
 
+def list_unlooked(args: argparse.Namespace) -> int:
+    """Print the looker queue across open PRs. Read-only: resolves nothing.
+
+    Layer A of the look-then-resolve design (#399). Surfaces every unresolved
+    review thread that still needs a looker, without touching any thread.
+    """
+    queue: list[dict[str, object]] = []
+    for pr_number in _list_open_pr_numbers(args.owner, args.repo):
+        queue.extend(_build_looker_queue(_fetch_pr(args.owner, args.repo, pr_number)))
+    unlooked = [item for item in queue if not item["looked"]]
+    print(
+        json.dumps(
+            {
+                "open_threads": len(queue),
+                "unlooked_threads": len(unlooked),
+                "queue": queue,
+            }
+        )
+    )
+    return 0
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser()
     subparsers = parser.add_subparsers(dest="command", required=True)
@@ -946,6 +1017,10 @@ def build_parser() -> argparse.ArgumentParser:
     verify.add_argument("--comment-author", default="")
     verify.add_argument("--comment-body", default="")
 
+    unlooked = subparsers.add_parser("list-unlooked")
+    unlooked.add_argument("--owner", required=True)
+    unlooked.add_argument("--repo", required=True)
+
     return parser
 
 
@@ -966,6 +1041,8 @@ def main() -> int:
         return reconcile_open_prs(args)
     if args.command == "verify-claim":
         return verify_claim(args)
+    if args.command == "list-unlooked":
+        return list_unlooked(args)
     return enable_auto_merge(args)
 
 
