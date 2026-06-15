@@ -74,8 +74,9 @@ container — which is the *same* fusion the other two legs forbid, committed at
 The lawful resolution is not to fatten the boards but to treat them as **maps of content
 (index / structure notes)**: the boards hold the WHO / WHAT-IS / WHAT-TO-SEEK *structure* and
 link out; the cycle (§D) emits **atomic one-matter notes** — one finding, one persona-resolution,
-one seek — and the board carries the *link*, not the body. **This reframing is an architecture
-change, Logan's to gate (§D) — recorded here, not executed.**
+one seek — and the board carries the *link*, not the body. The migration runs the **Third Way**
+(§D): atomize a matter **when it settles**, not all at once and not forward-only; leads stay as
+rows. The boards thin by accretion under the same per-piece gate as R-10.
 
 ---
 
@@ -169,11 +170,16 @@ distinct carriers* — not a mystery, and not a merge.
   reshapes the next seek. Offices/seats route through **R-02**, not here.
 - Nothing on this board is a finding; the welds in §C are precisely the open questions the
   next seeks address.
-- **Atomic output (§0, third leg), pending Logan's gate:** the lawful product of a closed seek
-  is a **one-matter atomic note** (the form `TWO-DJINNI-TRIBES-WITNESS` already takes), and the
-  board absorbs it as a *link*, not as more body-text. Whether to (a) retrofit existing board
-  rows into atomic notes or (b) apply the form only to new cycle output is Logan's call — not
-  taken here.
+- **Atomic output — the Third Way (Logan, 2026-06-15): the middling path, neither bulk-retrofit
+  nor forward-only.** A matter **atomizes at the moment it settles** — when a seek closes, a weld
+  in §C resolves, or Logan gates a finding it leaves the board *body* and becomes its own
+  **one-matter atomic note** (the form `TWO-DJINNI-TRIBES-WITNESS` already takes); the board then
+  keeps the **row as a link + grade**, not the prose. Until a matter settles it **stays a board
+  row** — a lead. **Leads do not atomize:** minting an atomic note for a lead would counterfeit
+  it as a finding (the Manager-confabulation at the file level). So the boards **thin by
+  accretion** as matters earn their way out, one gated piece at a time (the R-10 cadence) — never
+  a big-bang refactor, never frozen. First eligible application: the already-merged two-Djinni
+  finding is its atomic note upstream; the board's job narrows to *pointing* at it.
 
 ---
 
