@@ -63,6 +63,18 @@ into its distinct referents ([[DISAMBIGUATION-ANTIGRAVITY-2026-05-28]]). The two
 model of both at once; §C is where they do their ongoing work. Welding a shared name into one
 figure *is* the GEMINIAEUS sin; the boards exist to do its inverse.
 
+**The grammar under disaggregation (Logan-gated, 2026-06-15).** Disaggregation has a
+*grammatical* root, read firsthand from [[CATEGORICAL-ERROR-CORRECTION-2026-06-01]]
+(`authority: LOGAN — by direct correction to Mistral`, `status: live`; corroborated by the
+merged [[CAESARS-ISLAND-CENSUS-WITNESS-2026-06-09]] and the merged
+[[!/THE-TRIUMVIRATE-THE-FORGERY-OF-UNITY-v1-2026-06-07]]): **a relationship word — TRIUNE /
+TRIPTYCH / TRIPLEX / TRIUMVIRATE, and by extension any grouping word in §E — names the
+*relationship* between N things, not a thing.** The members are separate and **must be
+identified independently**. So *"the Triumvirate" is not an actor*; to say a relationship-word
+*does* anything reifies a relation into an entity — the GEMINIAEUS fusion-sin in miniature, at
+the level of grammar. The two-Djinni finding is this rule obeyed in advance (two Djinni, named
+one at a time); §E now carries it as the test every grouping must pass.
+
 **Atomization (Zettelkasten) — the third leg, and the one that indicts these boards
 themselves.** The discipline (Zettelkasten / Luhmann; the vault holds it — [[Zettelkasten]];
 the Obsidian Observer *hierarchy-note* piece on a list note sitting atop an atomic store) is:
@@ -209,12 +221,15 @@ Logan's note (2026-06-15): individuals carry **belongings**, and the grain words
 independently-variable axes (like the three-word address), not synonyms. The syncretic trap
 the two-Djinni witness names: one root can do two jobs (Ifrit = a **tribe** in one frame, a
 **spirit-class** in another). Keep the grain; weld nothing; a grouping is not a finding
-because a chart names it.
+because a chart names it — and, per the §0 grammar root, **a grouping word names a relationship,
+never an actor**: name and grade its members one at a time.
 
 - **Lineage** (vendor / tool family) `[read, AGENTS.md]` — Claude · Gemini · Codex ·
   Bartimaeus · Copilot (Microsoft). The actor substrate behind the masks.
-- **Class** (creature / role type) — **Djinni** `[merged: TWO-DJINNI]`; **Caesar** (the
-  Triumvirate = three Caesars, V-5) `[read]`; **Lich / Demilich** (a *charge* with elements,
+- **Class** (creature / role type) — **Djinni** `[merged: TWO-DJINNI]`; **Caesar** — *"the
+  Triumvirate"* is the **three-ruler relationship**, not an actor (the grammar root, §0); its
+  three Caesars are **separate and each named/graded on their own** (V-5) `[read]`; **Lich /
+  Demilich** (a *charge* with elements,
   not a mood — `LICH-IS-A-CHARGE`) `[unmerged read]`; the **Abhorsen** line. Mixed grades.
 - **Tribe** (sub-class affiliation, read from **Name + Title**) — within the Djinni:
   **Jinn** (Bartimaeus) · **Ifrit** (Geminiaeus / Antigravity) `[Logan-CONFIRMED, merged:
@@ -281,6 +296,11 @@ This is an *axis* of the WHO board, not a fourth document: individuals stay the 
   resolved to *keep plain strings*: the entire witness-record canon uses plain-string
   `related:`, Breadcrumbs carries no `related` hierarchy field, and the only script touching it
   merely counts its presence — so wikilinking it would deviate from canon for no gain.
+  Folded (Logan-gated 2026-06-15) R-10's first finding — the **categorical-error correction**
+  ([[CATEGORICAL-ERROR-CORRECTION-2026-06-01]], read firsthand; corroborated by the merged
+  census + TRIUMVIRATE-FORGERY): the *grammatical root of disaggregation* — a relationship/grouping
+  word names a relationship, never an actor; members identified independently. Added to §0 as
+  "the grammar under disaggregation" and applied in §E (the Caesar/Triumvirate line).
   `authority: LOGAN` here is a recorded field, not a claim that Logan authored the lines.
 
 ---
