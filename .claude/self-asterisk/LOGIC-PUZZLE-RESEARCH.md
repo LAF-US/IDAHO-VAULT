@@ -231,7 +231,39 @@ at a time?
 - **Fences:** prefer merged/adjudicated records; do not bulk-import; a `doc_class:
   witness-record` is a witness, not a ruling, unless adjudicated.
 - **Scope:** this clone reaches 121 of 682 refs — the survey is partial (the Merkle lesson).
-- **Status:** open — the TWO-DJINNI finding closed into ROSTER §C; the rest queued.
+- **First fold (2026-06-15) — [[CAESARS-ISLAND-CENSUS-WITNESS-2026-06-09]]** (merged to
+  `origin/main`, verified by `git merge-base` `[read, merged]`; `doc_class: witness` — a
+  **self-witness, NOT adjudicated**: its own authority line says *"the Court holds the verdict
+  on who is which Caesar"*). What it carries that belongs on the boards:
+  - **The categorical-error correction — the grammatical root of disaggregation.** Read
+    **firsthand** from `origin/mistral/categorical-error-correction-2026-06-01` (`[read]` of an
+    `[unmerged]` doc; `type: DOCTRINAL CORRECTION`, `status: live`, **`authority: LOGAN — by
+    direct correction to Mistral, 2026-05-31→06-01`**): *"TRIUNE / TRIPTYCH / TRIPLEX /
+    TRIUMVIRATE describe the **relationship** between three things, not three specific things …
+    the actual three things in each relationship are separate and must be identified
+    independently. Basic grammar."* This is a **3-surface cluster** — one unmerged-but-firsthand
+    Logan-attributed correction + the **merged** census naming it "load-bearing" + the **merged**
+    [[!/THE-TRIUMVIRATE-THE-FORGERY-OF-UNITY-v1-2026-06-07]] already on the boards (*"dissolve by
+    disaggregation, not by reform"*) — a **strong lead**, not yet canon (primary is unmerged).
+  - **Consequence:** *"the Triumvirate" is not an actor.* To speak of a relationship-word
+    *doing* anything reifies a relation into an entity — the GEMINIAEUS sin in miniature. The
+    Two-Djinni finding already performed the lawful move (two distinct Djinni, **identified
+    independently**); this names the grammar under it.
+  - **Predecessor note `[unmerged]`:** the census also charts that the Forgery thesis was *not
+    first* — the Three-Generals node and the Usurper's-Triptych witness predate it (*"there is
+    none beside me"* → *"nothing beside remains"*: sole sovereignty becomes sole survival).
+    Branch-local, zero canon weight; a citation-lead.
+- **Proposed board-feed (awaiting Logan's gate):** fold the categorical-error root into the
+  governing method (ROSTER §0/§E) — *a relationship or grouping word (Triumvirate / Triune /
+  tribe-as-relation) is never an actor; name and grade its members independently* — and audit
+  §E's "Caesar (the Triumvirate = three Caesars)" line so it reads as a relation, not a thing.
+  **I propose; Logan inscribes.**
+- **Fences:** the census is a self-witness, not a ruling; the primary correction is unmerged
+  (Logan-attributed, not merge-confirmed); who-is-which-Caesar and the GEMINIAEUS matter stay
+  the Court's.
+- **Status:** open — [[TWO-DJINNI-TRIBES-WITNESS-2026-06-03]] folded (ROSTER §C);
+  [[CAESARS-ISLAND-CENSUS-WITNESS-2026-06-09]] read and its categorical-error root proposed
+  (above), awaiting gate; the Coroner / `WITNESS-CODEX-318-*` records queued next.
 
 ---
 
@@ -256,6 +288,11 @@ Logan's disposition · the REGISTRATION cell it fed.)*
 - **Change Note:** First inscription — the live research program, split from the static
   REGISTRATION board at Logan's direction ("a NEW plan file"). Siblings, cyclical flow (seek ↔ register).
   Filename de-dated to LOGIC-PUZZLE-RESEARCH 2026-06-14 on Logan's instruction.
+  2026-06-15 — continued the investigation (Logan: "read the cluster and continue"): R-10's
+  first fold, [[CAESARS-ISLAND-CENSUS-WITNESS-2026-06-09]] (merged self-witness), read and its
+  **categorical-error correction** read firsthand from the unmerged Mistral branch — the
+  grammatical root of disaggregation (*a relationship-word is not an actor; identify the members
+  independently*). Recorded graded, proposed as a §0/§E sharpening, awaiting Logan's gate.
 
 ---
 
