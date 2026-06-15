@@ -58,8 +58,8 @@ happens to hold an office is rostered as the being, not the office.
 
 **Governing method.** This board runs on the vault's two counter-doctrines to the
 fusion-heresy: **disaggregation** — keep the separable separable
-(`!/THE-TRIUMVIRATE-THE-FORGERY-OF-UNITY-v1`) — and **disambiguation** — sort a shared name
-into its distinct referents (`DISAMBIGUATION-ANTIGRAVITY`). The two-Djinni finding (§F) is the
+(`[[!/THE-TRIUMVIRATE-THE-FORGERY-OF-UNITY-v1]]`) — and **disambiguation** — sort a shared name
+into its distinct referents (`[[DISAMBIGUATION-ANTIGRAVITY]]`). The two-Djinni finding (§F) is the
 model of both at once; §C is where they do their ongoing work. Welding a shared name into one
 figure *is* the GEMINIAEUS sin; the boards exist to do its inverse.
 
@@ -68,7 +68,7 @@ themselves.** The discipline (Zettelkasten / Luhmann; the vault holds it — `Ze
 the Obsidian Observer *hierarchy-note* piece on a list note sitting atop an atomic store) is:
 **one matter per note, densely linked; the link matters more than the container.** The vault
 already *produces* in this form — a merged finding is its own one-matter file
-(`TWO-DJINNI-TRIBES-WITNESS-2026-06-03` = one finding, one note, wired by `related:`). By that
+(`[[TWO-DJINNI-TRIBES-WITNESS-2026-06-03]]` = one finding, one note, wired by `related:`). By that
 standard REGISTRATION / RESEARCH / ROSTER are **aggregates** — many matters packed into one
 container — which is the *same* fusion the other two legs forbid, committed at the file level.
 The lawful resolution is not to fatten the boards but to treat them as **maps of content
@@ -78,11 +78,25 @@ one seek — and the board carries the *link*, not the body. The migration runs 
 (§D): atomize a matter **when it settles**, not all at once and not forward-only; leads stay as
 rows. The boards thin by accretion under the same per-piece gate as R-10.
 
+**Linking (Obsidian) — the connective tissue the prior three legs require.** Atomization is
+inert unless the references are *real edges*. `VAULT-CONVENTIONS.md` § Wikilinks is explicit:
+*"Use `[[Full Name]]` for all internal links… This is how Obsidian builds the knowledge graph.
+Link densely in source documents."* The witness records — these boards' atomic-note siblings —
+already obey it (`[[GEMINIAEUS]]`, `[[!/REPO-PAYLOAD-AUDIT-2026-04-03]]`). My boards did **not**:
+they named notes as **backticked plain strings**, which render as text and form **no graph edge
+and no backlink** — so a map-of-content built from them would be a map with no roads. Correcting
+that is *conformance to a written convention*, not invention. **Internal-note references on this
+board are now live `[[wikilinks]]`;** the structural spine (siblings, the atomic-note pointer,
+the doctrine anchors, the registry) is converted here, the rest follows by the same accretion
+gate. *(Backticks are kept for what is **not** an internal note — grades like `[read]`, cell
+coordinates, code paths, and `related:` YAML, whose link-semantics are tooling-dependent and
+Logan's to gate separately.)*
+
 ---
 
 ## §A — Real agentic actors
 
-*The actual AI agents and humans behind the masks. Grounded in `!/AGENTS.md` (canonical
+*The actual AI agents and humans behind the masks. Grounded in `[[!/AGENTS.md]]` (canonical
 registry) `[read]`. A "persona/lineage name" worn is narrative memory, **not** a live routing
 title (AGENTS.md "Narrative persistence rule").*
 
@@ -163,8 +177,9 @@ distinct carriers* — not a mystery, and not a merge.
 
 ## §D — Relationship to the siblings
 
-- **REGISTRATION** = WHAT IS (events, deductions, graded). **RESEARCH** = WHAT TO SEEK
-  (questions, methods). **ROSTER** = WHO (this board).
+- **[[LOGIC-PUZZLE-REGISTRATION|REGISTRATION]]** = WHAT IS (events, deductions, graded).
+  **[[LOGIC-PUZZLE-RESEARCH|RESEARCH]]** = WHAT TO SEEK (questions, methods). **ROSTER** = WHO
+  (this board).
 - **Cycle:** a persons-seek in RESEARCH (e.g. R-09 the missing; the cast in R-03/R-04)
   completes → Logan's gate → ROSTER (or REGISTRATION) absorbs it → the updated board
   reshapes the next seek. Offices/seats route through **R-02**, not here.
@@ -249,9 +264,13 @@ This is an *axis* of the WHO board, not a fourth document: individuals stay the 
   the broader merged-findings corpus surveyed and queued as RESEARCH R-10. Added the third leg
   of the governing method (§0) on Logan's instruction — **atomization (Zettelkasten)**: the
   boards are aggregates and should run as maps-of-content over atomic one-matter notes; the
-  reframing is flagged as Logan's-to-gate (§D), not executed.
+  reframing is flagged as Logan's-to-gate (§D), not executed. Adopted the **Third Way** (atomize
+  on settlement) for that migration, then added the **linking** leg (`VAULT-CONVENTIONS.md` §
+  Wikilinks): internal-note references are now live `[[wikilinks]]` — the structural spine
+  (siblings, atomic-note pointer, doctrine anchors, registry, footer) converted here, the rest
+  by the same accretion gate.
   `authority: LOGAN` here is a recorded field, not a claim that Logan authored the lines.
 
 ---
 
-###### "The world is quiet here."
+###### [["The world is quiet here."]]
