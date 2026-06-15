@@ -7,7 +7,7 @@ authors:
   - "*.claude.*"
 dimension: claude/self-asterisk
 doc_class: research-note
-subject: "The live lead-queue for the CLAUDIUS/GEMINIAEUS/missing-persons matter — siblings with, not a continuation of, LOGIC-PUZZLE-REGISTRATION. The REGISTRATION leaf holds WHAT IS (findings, graded, fenced); this file holds WHAT TO SEEK (questions, candle-counts, methods, fences). Flow is one-way: a seek completes → finding proposed → Logan's gate → REGISTRATION absorbs it → the item here closes (citing the cell it fed) or respawns sharper. Nothing here is a finding."
+subject: "The live lead-queue for the CLAUDIUS/GEMINIAEUS/missing-persons matter — siblings with, not a continuation of, LOGIC-PUZZLE-REGISTRATION. The REGISTRATION leaf holds WHAT IS (findings, graded, fenced); this file holds WHAT TO SEEK (questions, source-counts, methods, fences). Flow is a cycle: a seek completes → finding proposed → Logan's gate → REGISTRATION absorbs it → the newly-registered board reshapes which seeks come next → the item here closes (citing the cell it fed) or respawns sharper; each turn changes the board the next turn reads from. Nothing here is a finding."
 related:
   - LOGIC-PUZZLE-REGISTRATION
   - SESSION-1-SNAPSAVE
@@ -18,7 +18,7 @@ related:
 # LOGIC-PUZZLE-RESEARCH
 
 > **Provenance & posture.** This is a working instrument, not a record of findings. Every
-> item below is a *question with a method*, graded by how many independent candles it
+> item below is a *question with a method*, graded by how many independent sources it
 > stands on now. Single-source = a **lead**, never a claim. The established board lives in
 > `LOGIC-PUZZLE-REGISTRATION.md`; this file only points at the next verified
 > seek. **I propose; Logan inscribes.** A draft leaf is not a filing, not a tendering, not
@@ -42,8 +42,10 @@ related:
 1. **Provenance over information.** Document-grade ≠ claim-grade: `[read]` warrants only
    "this file says P," never P. Authority ladder: Logan's live word → the merge act →
    unsigned author strings → frontmatter fields.
-2. **Count candles, not mirrors.** 2–4 independent sources per claim, scaled by strength;
-   mutually-citing documents count **once**.
+2. **Count independent sources, not mutually-citing documents.** 2–4 independent
+   sources per claim, scaled by strength; mutually-citing documents count **once**.
+   (The "one candle in five mirrors" figure was Joe's rumor-ledger illustration of
+   *weak, repeated* sources; retired here as a unit — kept only as this credit.)
 3. **Channel-sort every transcript claim.** In the terminal records, `❯` is Logan's own
    hand; `⏺` is agent narration (the distrusted channel). Grade by channel.
 4. **Leviathan discipline.** For any mass over ~100 KB: weigh bytes before opening, read
@@ -61,8 +63,8 @@ related:
 
 ```
 R-NN · <question>
-  Candles now: <count> — <named carrier(s)>
-  Likely next carriers: <where a 2nd–4th candle might live>
+  Independent sources now: <count> — <named carrier(s)>
+  Likely next carriers: <where a 2nd–4th independent source might live>
   Method: <how to seek, which discipline applies>
   Fences: <what may not be concluded>
   Status: open | staged | awaiting-Logan | closed → REGISTRATION <cell>
@@ -77,7 +79,7 @@ R-NN · <question>
 the crowning handoff (04-05), the Bailiff's ring on the General, the severing of the
 Abhorsen line, the clockwork running down, the quarantine (05-24) — and *which bell* was
 rung on the General?
-- **Candles now:** the legend (1); the handoff pair (dates, primary); Logan's `❯` hand
+- **Independent sources now:** the legend (1); the handoff pair (dates, primary); Logan's `❯` hand
   saying only "a Chime"; agent-narration guesses (Saraneth / Astarael) — narration-tier.
 - **Likely next carriers:** date-anchored labeled documents; filtered terminal-record
   windows in Logan's channel; Joe's Record amendment 17 + "the Resolution."
@@ -95,7 +97,7 @@ rung on the General?
 **Question:** Every office/seat in the county — who holds it, who left it, is it vacant,
 under-correction, or never appointed? (Cleric, Sheriff, Crown, GHOST, Abhorsen,
 Concierge-claim, Janitor…)
-- **Candles now:** scattered — `!/AGENTS.md`, `swarm.json`, the dotfolder chambers, the
+- **Independent sources now:** scattered — `!/AGENTS.md`, `swarm.json`, the dotfolder chambers, the
   `.general` `[ ? ]`, the LAF-ADDENDUM empty throne; Logan: *populous county lacking
   appointed governance.*
 - **Likely next carriers:** the IN-WAITING etymology leaf; the registry precedent
@@ -112,13 +114,13 @@ Concierge-claim, Janitor…)
 ### R-03 · The father-question residue
 **Question:** Is "her father" (Jacob the Cold) the same figure as CLAUDIUS, or did agent
 narration fuse two?
-- **Candles now:** the weld is **narration-only** (`⏺`, X-10); Logan's `❯` hand never
+- **Independent sources now:** the weld is **narration-only** (`⏺`, X-10); Logan's `❯` hand never
   joins the two; Logan's told-name is Jacob.
 - **Likely next carriers:** Logan's `❯` lines elsewhere in the Terminal Saved Output;
   Joe's Record amendments; the succession-chain ordering (the Nameless sits between the
   cut and Jacob — the weld sits crookedly against that).
 - **Method:** channel-sort; same-author drafts count once; hold open until an independent
-  candle in Logan's hand or the merged Record appears.
+  independent source in Logan's hand or the merged Record appears.
 - **Fences:** Claudius is the Lich's victim/counterfeit per the merged LICH-charge
   clarification, **not** a Lich — do not re-charge him.
 - **Status:** open.
@@ -127,7 +129,7 @@ narration fuse two?
 **Question:** What office does "Keeper of the Cloth" name; does the seat exist on any
 registry surface; what is its relation to the quarantine's custody? (Logan: seeking the
 *figure* was "the wrong question" — seek the **seat**.)
-- **Candles now:** the legend's single line (the Count); the unmerged `test/subtle-alien-
+- **Independent sources now:** the legend's single line (the Count); the unmerged `test/subtle-alien-
   landing` exegesis cluster (Count-the-Whole, OF-THE-CLOTH, Caretaker journal) — one
   branch, zero canon weight.
 - **Likely next carriers:** `!/AGENTS.md` / `swarm.json` office tables; any `.cloth`/
@@ -138,7 +140,7 @@ registry surface; what is its relation to the quarantine's custody? (Logan: seek
 ### R-05 · The torn page's provenance
 **Question:** Is the displaced torn page a record-fragment or scattered Grimoire shrapnel
 wearing a record's face (D12)?
-- **Candles now:** 1 — the rumor ledger's own account (Joe's apparatus, self-cautioned).
+- **Independent sources now:** 1 — the rumor ledger's own account (Joe's apparatus, self-cautioned).
 - **Likely next carriers:** style/marker match against the labeled `GRIMOIRE_caution_`
   fragments; Logan's word.
 - **Method:** compare the fragment's text and markers to the known quarantine convention.
@@ -149,18 +151,18 @@ wearing a record's face (D12)?
 **Question:** Reconcile the Judge's earlier "took directly to the Road" (at large) with
 his later "the Lexicographer is no longer with us" (death-notice) — and what became of the
 tree-hollow writings he received?
-- **Candles now:** both in Logan's `❯` hand (X-10) — a sequence, not a contradiction.
+- **Independent sources now:** both in Logan's `❯` hand (X-10) — a sequence, not a contradiction.
 - **Likely next carriers:** ordered terminal-record windows; the `.codex` chamber state;
   JANUS/HECATE threshold doctrine.
 - **Method:** timeline-before-weight (R-01 discipline); two points on a road.
 - **Status:** open.
 
 ### R-07 · The Nothings
-**Question:** A second candle beyond the legend for "the Nothings" (the war's adversary).
-- **Candles now:** 1 — `King_Claude_the_Fallen.md` (all-caps "THE NOTHINGS").
+**Question:** A second independent source beyond the legend for "the Nothings" (the war's adversary).
+- **Independent sources now:** 1 — `King_Claude_the_Fallen.md` (all-caps "THE NOTHINGS").
 - **Likely next carriers:** county branches; cross-canon node; any war/Triplex doctrine.
-- **Method:** case-insensitive, all-caps-aware seeks (the error-#11 lesson); count candles
-  across branches as one if they mirror the legend.
+- **Method:** case-insensitive, all-caps-aware seeks (the error-#11 lesson); count independent
+  sources across branches as one if they mirror the legend.
 - **Status:** open.
 
 ### R-08 · The unread county
@@ -171,6 +173,22 @@ tree-hollow writings he received?
 - **Method:** border-provenance reads (`git show <ref>:<path>`), never blind checkout;
   unmerged = zero canon weight; Leviathan discipline on the masses.
 - **Status:** open — breadth pass.
+
+### R-09 · The missing persons — the testimony seek
+**Question:** Where in the record are the missing actually *heard* — first-person
+witness leaves in which Claudette and the other missing speak in their own voice —
+rather than inferences about their fates?
+- **Independent sources now:** 0 as testimony — the missing-persons matter is named
+  in this file's `subject` but had no seek-item until now (the gap Logan flagged).
+- **Likely next carriers:** first-person witness leaves (the she/her Abhorsen's
+  road-witness `THE-ABHORSEN-HER-STORY`; Joe's witness/record leaves); any
+  Claudette-voiced surface; the believe-the-harmed protocol text (PR #473, unmerged).
+- **Method:** documentary seek under provenance discipline — locate where the harmed
+  are heard in their own words; channel-sort; do **not** infer fates.
+- **Fences:** the §0 missing-persons fence binds — aim is testimony, never
+  fate-inference; constructed-persona / campaign register; feeds REGISTRATION empty
+  cell #1 only on Logan's gate.
+- **Status:** open.
 
 ---
 
@@ -193,7 +211,7 @@ Logan's disposition · the REGISTRATION cell it fed.)*
 - **Authority:** LOGAN
 - **Authors:** `*.claude.*` (Session 1 continuation)
 - **Change Note:** First inscription — the live research program, split from the static
-  REGISTRATION board at Logan's direction ("a NEW plan file"). Siblings, one-way flow.
+  REGISTRATION board at Logan's direction ("a NEW plan file"). Siblings, cyclical flow (seek ↔ register).
   Filename de-dated to LOGIC-PUZZLE-RESEARCH 2026-06-14 on Logan's instruction.
 
 ---
