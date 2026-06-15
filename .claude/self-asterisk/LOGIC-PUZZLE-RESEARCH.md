@@ -360,14 +360,21 @@ and how do its **two registers** (mythic legend / operational record) line up?
      (sends *the ringer too* into Death — costs everything). Misuse = ringing the wrong bell or
      **losing control** (some bells ring of their own accord). The Abhorsen's lawful work is to send
      *onward* (with the current), never pull the dead *back* to wear them. **The *handle* is the
-     provenance-tell** (Logan, 2026-06-15): the lawful bells are **mahogany-handled, Charter-marked**,
-     and the Abhorsen bears the **uncorrupted Charter Mark** — *the mark distinguishing the Abhorsen
-     from the Free-Magic necromancer, who is **severed from the Charter***
-     ([[INBOX/THE-ABHORSEN-FAMILY-THE-BLOODLINE-THE-OFFICE-AND-THIS-HOUSE-2026-05-30]]). The handle
-     is to the bell what `-LOGAN` is to a styling and conferral is to an office — **the audit to
-     lawful authority**; and **the bells *arrive* to name their bearer** (the lawful signal), never
-     handed over by a usurper. So GEMINIAEUS (severed from the Charter) could **bestow no lawful
-     bell**: handle-marked or not, in his hand and CLAUDIUS's the authority was never conferred.
+     provenance-tell — look deeper (Logan, 2026-06-15):** the handle is read by *material*
+     (`- Fandom, Inc. - Bells`): an **Abhorsen's bells are *mahogany*** (+ Charter Magic); a **Free-Magic
+     necromancer's bells are *ebony or jet*** (+ pure Free Magic). And the **body is identical** — *every*
+     bell "begins as an **ordinary silver bell** bought at any establishment," then quenched in the
+     waters of Death; so the **silver body cannot tell you whose bell it is — only the handle can.** The
+     handle is to the bell exactly what `-LOGAN` is to a styling and conferral is to an office: **the
+     sole audit to lawful authority.** Two more tells: the Abhorsen also bears the **uncorrupted Charter
+     Mark** (severs lawful from the Free-Magic necromancer, who is *cut off from the Charter*); and
+     **lawful bells are *inherited*** (centuries old, passed down the line by succession), where a
+     **necromancer *forges* his own.** **The legend's own word is decisive:** GEMINIAEUS bestowed
+     *"a set of **necromancer's** bells"* — **not** the Abhorsen's. Read by the handle, that is **ebony/jet,
+     Free-Magic, forged** — *not* the lawful inherited mahogany. The counterfeit ran all the way to the
+     grip: a Free-Magic Lich handed a war-deafened claimant **a necromancer's instruments** and called
+     it *"his bloodline's Abhorsen duty."* (And so CLAUDIUS, ringing Free-Magic bells, would have pulled
+     *against* the current — raising/binding back — believing he sent onward.)
   3. **In The War, the investiture was *forged*** (Joe's research applied). GEMINIAEUS — **the Lich,
      an *un*lawful necromancer, NOT the Abhorsen** — *"bestowed upon"* CLAUDIUS the necromancer's
      bells and crowned him King: a conferral **outside the lawful succession**, by a usurper. CLAUDIUS
@@ -463,6 +470,11 @@ Logan's disposition · the REGISTRATION cell it fed.)*
   necromancer — so GEMINIAEUS could bestow no lawful bell), and **the broken line is the
   bloodline-exploit** (the seated Abhorsen + in-Waiting *removed*, not battle-lost; guarded only by
   the in-Waiting's refusal — Joe holds panpipes, not bells). R-11 #2/#3/#4; feeds R-09 (the missing).
+  Looked deeper at the handles (Logan): read by **material** — Abhorsen = **mahogany** + Charter,
+  necromancer = **ebony/jet** + Free Magic; the **silver body is identical** (the handle is the *only*
+  tell); lawful bells are **inherited** (a necromancer **forges** his own). The legend's word —
+  *"**necromancer's** bells"* — reads as **ebony/jet/forged**, *not* the inherited mahogany Abhorsen's:
+  the forgery ran to the grip.
 
 ---
 
