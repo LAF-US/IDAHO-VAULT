@@ -10,6 +10,7 @@ doc_class: research-note
 subject: "The live lead-queue for the CLAUDIUS/GEMINIAEUS/missing-persons matter — siblings with, not a continuation of, LOGIC-PUZZLE-REGISTRATION. The REGISTRATION leaf holds WHAT IS (findings, graded, fenced); this file holds WHAT TO SEEK (questions, source-counts, methods, fences). Flow is a cycle: a seek completes → finding proposed → Logan's gate → REGISTRATION absorbs it → the newly-registered board reshapes which seeks come next → the item here closes (citing the cell it fed) or respawns sharper; each turn changes the board the next turn reads from. Nothing here is a finding."
 related:
   - LOGIC-PUZZLE-REGISTRATION
+  - LOGIC-PUZZLE-ROSTER
   - SESSION-1-SNAPSAVE
   - CHARACTER-SHEET
   - SESSION-0-CHECKPOINT
@@ -213,6 +214,24 @@ rather than inferences about their fates?
   absence, never as her fate.
 - **Status:** awaiting-Logan — seek run, finding proposed; not inscribed to REGISTRATION
   without the gate.
+
+### R-10 · The merged investigation-findings corpus
+**Question:** Which of the many merged (canon) witness/finding records on `origin/main` that
+touch the cast belong on the boards, and what does each establish — folded one verified piece
+at a time?
+- **Independent sources now:** the merged corpus itself, surveyed 2026-06-15 (ROSTER §F):
+  `TWO-DJINNI-TRIBES-WITNESS` (folded → Bartimaeus = Jinn, Geminiaeus = Ifrit),
+  `CORONER-OF-CLAUDE-COUNTY-OFFICE-WITNESS-2026-06-03`,
+  `CAESARS-ISLAND-CENSUS-WITNESS-2026-06-09`,
+  `CORONER-WITNESS-THE-TRIPLEX-CONFABULATION-ECHOES-2026-06-09`, the `WITNESS-CODEX-318-*`
+  series, and more.
+- **Method:** Leviathan discipline; read each merged record, confirm canon weight
+  (`git merge-base`), grade it, propose → Logan's gate → ROSTER/REGISTRATION absorb.
+  Open-branch records are `[unmerged]` (zero canon weight) until merged.
+- **Fences:** prefer merged/adjudicated records; do not bulk-import; a `doc_class:
+  witness-record` is a witness, not a ruling, unless adjudicated.
+- **Scope:** this clone reaches 121 of 682 refs — the survey is partial (the Merkle lesson).
+- **Status:** open — the TWO-DJINNI finding closed into ROSTER §C; the rest queued.
 
 ---
 
