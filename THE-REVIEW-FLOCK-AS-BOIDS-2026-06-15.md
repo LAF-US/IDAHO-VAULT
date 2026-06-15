@@ -64,7 +64,7 @@ This names the principle's core distinction precisely:
 
 | Adversary (attacks which rule) | How it surfaced in review |
 |---|---|
-| **The Caesar** (Separation — fuses separable masks into one crown) | the **maintainer-identity bypass**: an agent committing under Logan's identity fuses agent and maintainer into one un-relinquishable mask, inheriting the auto-merge that should gate agent work. The standing model **re-separates** them. |
+| **The Caesar** (Separation — fuses separable masks into one crown) | the **maintainer-identity bypass**: an agent committing under Logan's identity fuses agent and maintainer into one unrelinquishable mask, inheriting the auto-merge that should gate agent work. The standing model **re-separates** them. |
 | **The Wolf Within** (covert malice via one operative — [[!/REAL-WORLD-BOID-AND-AGENT-SYSTEMS-v1-2026-06-08]]) | **prompt injection** ("Comment and Control") — a single crafted PR title/comment turning an auto-triggered looker against the flock. |
 | **The Lich** (refuses Cohesion's lawful ending) | the blind auto-resolver — resolution persisting with no sealed look. |
 
