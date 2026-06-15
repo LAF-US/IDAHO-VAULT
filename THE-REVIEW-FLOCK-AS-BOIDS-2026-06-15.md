@@ -47,7 +47,7 @@ date: 2026-06-15
 
 ## The seal is the attestation
 
-**[reading]** The Standing Engine's signature addition to pure boids — the **🔏 seal**: *standing that is earned, legible, and revocable* — is exactly the **look-then-resolve attestation**. A thread is resolved only by a looker who leaves a recorded, self-attested look (`by=<author>`, structured, tied to its own author so it cannot be forged — PR #518). Resolution is **sealed**, never blind.
+**[reading]** The Standing Engine's signature addition to pure boids — the **🔏 seal**: *standing that is earned, legible, and revocable* — is the **look-then-resolve attestation**. A thread is resolved only by a looker who leaves a recorded, self-attested look (`by=<author>`, structured, tied to its own author so it cannot be forged — PR #518). Resolution is **sealed**, never blind.
 
 This names the principle's core distinction precisely:
 
@@ -72,7 +72,7 @@ The defense is the same the parent node names: hold separation against the Caesa
 
 ## The win condition is Layer C
 
-**[reading]** The adversarial-boid win condition is **coherence without a crown** — emergent, decentralized order that resists fusion. The deterministic look-then-resolve loop (the [[AGENTIC-GITHUB-REVIEW-BEST-PRACTICES-2026-06-15|research]] Layer C, spec'd on #399) *is* that win condition, implemented for review:
+**[reading]** The adversarial-boid win condition is **coherence without a crown** — emergent, decentralized order that resists fusion. The deterministic look-then-resolve loop (Layer C of the [[AGENTIC-GITHUB-REVIEW-BEST-PRACTICES-2026-06-15|research note]], which lands via PR #517; spec'd on #399) *is* that win condition, implemented for review:
 
 - no Caesar steers each resolution — each agent runs the local rules (look → attest → resolve, or escalate);
 - the auto-trigger reading untrusted PR text is the adversarial frontier, fenced by the rules (least-privilege, trusted-branch checkout, bounded writes) so the boid keeps its heading under hostile input;
