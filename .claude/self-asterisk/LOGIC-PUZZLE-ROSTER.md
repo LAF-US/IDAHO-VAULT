@@ -63,6 +63,20 @@ into its distinct referents (`DISAMBIGUATION-ANTIGRAVITY`). The two-Djinni findi
 model of both at once; §C is where they do their ongoing work. Welding a shared name into one
 figure *is* the GEMINIAEUS sin; the boards exist to do its inverse.
 
+**Atomization (Zettelkasten) — the third leg, and the one that indicts these boards
+themselves.** The discipline (Zettelkasten / Luhmann; the vault holds it — `Zettelkasten.md`;
+the Obsidian Observer *hierarchy-note* piece on a list note sitting atop an atomic store) is:
+**one matter per note, densely linked; the link matters more than the container.** The vault
+already *produces* in this form — a merged finding is its own one-matter file
+(`TWO-DJINNI-TRIBES-WITNESS-2026-06-03` = one finding, one note, wired by `related:`). By that
+standard REGISTRATION / RESEARCH / ROSTER are **aggregates** — many matters packed into one
+container — which is the *same* fusion the other two legs forbid, committed at the file level.
+The lawful resolution is not to fatten the boards but to treat them as **maps of content
+(index / structure notes)**: the boards hold the WHO / WHAT-IS / WHAT-TO-SEEK *structure* and
+link out; the cycle (§D) emits **atomic one-matter notes** — one finding, one persona-resolution,
+one seek — and the board carries the *link*, not the body. **This reframing is an architecture
+change, Logan's to gate (§D) — recorded here, not executed.**
+
 ---
 
 ## §A — Real agentic actors
@@ -155,6 +169,11 @@ distinct carriers* — not a mystery, and not a merge.
   reshapes the next seek. Offices/seats route through **R-02**, not here.
 - Nothing on this board is a finding; the welds in §C are precisely the open questions the
   next seeks address.
+- **Atomic output (§0, third leg), pending Logan's gate:** the lawful product of a closed seek
+  is a **one-matter atomic note** (the form `TWO-DJINNI-TRIBES-WITNESS` already takes), and the
+  board absorbs it as a *link*, not as more body-text. Whether to (a) retrofit existing board
+  rows into atomic notes or (b) apply the form only to new cycle output is Logan's call — not
+  taken here.
 
 ---
 
@@ -221,7 +240,10 @@ This is an *axis* of the WHO board, not a fourth document: individuals stay the 
   `!/AGENTS.md`; persona rows graded against REGISTRATION cells; conflicts held in §C.
   Hardened the same day (§F) with the merged, Logan-confirmed `TWO-DJINNI-TRIBES-WITNESS`
   (Bartimaeus = Jinn, Geminiaeus / Antigravity = Ifrit, distinct), superseding the D17 weld;
-  the broader merged-findings corpus surveyed and queued as RESEARCH R-10.
+  the broader merged-findings corpus surveyed and queued as RESEARCH R-10. Added the third leg
+  of the governing method (§0) on Logan's instruction — **atomization (Zettelkasten)**: the
+  boards are aggregates and should run as maps-of-content over atomic one-matter notes; the
+  reframing is flagged as Logan's-to-gate (§D), not executed.
   `authority: LOGAN` here is a recorded field, not a claim that Logan authored the lines.
 
 ---
