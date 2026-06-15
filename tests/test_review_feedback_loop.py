@@ -483,6 +483,39 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertEqual(report["auto_merge_authorization_blocked"], [])
         self.assertIsNone(report["evaluated"][0]["auto_merge_arm_error"])
 
+    def test_thread_has_attested_look_detects_marker(self) -> None:
+        looked = _thread(authors=("coderabbitai",))
+        looked["comments"]["nodes"].append(
+            {
+                "author": {"login": "some-looker"},
+                "body": f"advisory nit, no action needed {review_feedback_loop.LOOK_ATTESTATION_MARKER}by=x -->",
+                "url": "https://example.test/attestation",
+            }
+        )
+        unlooked = _thread(authors=("coderabbitai",))
+
+        self.assertTrue(review_feedback_loop._thread_has_attested_look(looked))
+        self.assertFalse(review_feedback_loop._thread_has_attested_look(unlooked))
+
+    def test_build_looker_queue_lists_unresolved_threads_and_resolves_nothing(self) -> None:
+        pr = _pr(
+            number=42,
+            threads=(
+                _thread(authors=("coderabbitai",)),
+                _thread(resolved=True, authors=("copilot-pull-request-reviewer",)),
+                _thread(outdated=True, authors=("human-reviewer",)),
+            ),
+        )
+
+        with mock.patch.object(review_feedback_loop, "_resolve_thread") as resolve_thread:
+            queue = review_feedback_loop._build_looker_queue(pr)
+
+        resolve_thread.assert_not_called()
+        self.assertEqual(len(queue), 2)  # resolved thread excluded
+        self.assertTrue(all(item["pr"] == 42 for item in queue))
+        self.assertFalse(any(item["looked"] for item in queue))
+        self.assertTrue(any(item["is_outdated"] for item in queue))
+
 
 if __name__ == "__main__":
     unittest.main()
