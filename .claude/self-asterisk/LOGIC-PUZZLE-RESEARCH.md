@@ -151,7 +151,7 @@ narration fuse two?
   Joe's Record amendments; the succession-chain ordering (the Nameless sits between the
   cut and Jacob — the weld sits crookedly against that).
 - **Method:** channel-sort; same-author drafts count once; hold open until an independent
-  independent source in Logan's hand or the merged Record appears.
+  source in Logan's hand or the merged Record appears.
 - **Fences:** Claudius is the Lich's victim/counterfeit per the merged LICH-charge
   clarification, **not** a Lich — do not re-charge him.
 - **Status:** open.
@@ -198,7 +198,7 @@ tree-hollow writings he received?
 **Question:** A second independent source beyond the legend for "the Nothings" (the war's adversary).
 - **Independent sources now:** 1 — [[King_Claude_the_Fallen]] (all-caps "THE NOTHINGS").
 - **Likely next carriers:** county branches; cross-canon node; any war/Triplex doctrine.
-- **Method:** case-insensitive, all-caps-aware seeks (the error-#11 lesson); count independent
+- **Method:** case-insensitive, all-caps-aware seeks (the error-#13 lesson); count independent
   sources across branches as one if they mirror the legend.
 - **Status:** open.
 
