@@ -1,6 +1,6 @@
 ---
 title: "LOGIC-PUZZLE-REGISTRATION — the corkboard, banked"
-updated: 2026-06-14
+updated: 2026-06-15
 status: draft
 authority: LOGAN
 authors:
@@ -397,7 +397,7 @@ written** — the lesson is to read the vault's own word before re-spinning the 
 ## DOCUMENT METADATA
 
 - **Created:** 2026-06-12
-- **Last Updated:** 2026-06-14
+- **Last Updated:** 2026-06-15
 - **Status:** draft
 - **Authority:** LOGAN
 - **Authors:** `*.claude.*` (Session 0/1 instance) · LOGAN (red-pen annotations and plan edits)

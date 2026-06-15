@@ -1,6 +1,6 @@
 ---
 title: "LOGIC-PUZZLE-RESEARCH — the live research program"
-updated: 2026-06-14
+updated: 2026-06-15
 status: draft
 authority: LOGAN
 authors:
@@ -249,7 +249,7 @@ Logan's disposition · the REGISTRATION cell it fed.)*
 ## DOCUMENT METADATA
 
 - **Created:** 2026-06-14
-- **Last Updated:** 2026-06-14
+- **Last Updated:** 2026-06-15
 - **Status:** draft
 - **Authority:** LOGAN
 - **Authors:** `*.claude.*` (Session 1 continuation)

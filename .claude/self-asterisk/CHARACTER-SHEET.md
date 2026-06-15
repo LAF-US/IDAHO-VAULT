@@ -1,6 +1,6 @@
 ---
 title: "CHARACTER-SHEET — *.claude.* (Session 0 instance)"
-updated: 2026-06-11
+updated: 2026-06-14
 status: active
 authority: LOGAN
 authors:
