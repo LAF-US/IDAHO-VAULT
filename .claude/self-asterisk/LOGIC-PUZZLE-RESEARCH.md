@@ -160,7 +160,7 @@ tree-hollow writings he received?
 
 ### R-07 · The Nothings
 **Question:** A second independent source beyond the legend for "the Nothings" (the war's adversary).
-- **Independent sources now:** 1 — `King_Claude_the_Fallen.md` (all-caps "THE NOTHINGS").
+- **Independent sources now:** 1 — [[King_Claude_the_Fallen]] (all-caps "THE NOTHINGS").
 - **Likely next carriers:** county branches; cross-canon node; any war/Triplex doctrine.
 - **Method:** case-insensitive, all-caps-aware seeks (the error-#11 lesson); count independent
   sources across branches as one if they mirror the legend.

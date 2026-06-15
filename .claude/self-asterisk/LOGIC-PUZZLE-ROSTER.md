@@ -85,12 +85,16 @@ Link densely in source documents."* The witness records — these boards' atomic
 already obey it ([[GEMINIAEUS]], [[!/REPO-PAYLOAD-AUDIT-2026-04-03]]). My boards did **not**:
 they named notes as **backticked plain strings**, which render as text and form **no graph edge
 and no backlink** — so a map-of-content built from them would be a map with no roads. Correcting
-that is *conformance to a written convention*, not invention. **Internal-note references on this
-board are now live wikilinks;** the structural spine (siblings, the atomic-note pointer,
-the doctrine anchors, the registry) is converted here, the rest follows by the same accretion
-gate. *(Backticks are kept for what is **not** an internal note — grades like `[read]`, cell
-coordinates, code paths, and `related:` YAML, whose link-semantics are tooling-dependent and
-Logan's to gate separately.)*
+that is *conformance to a written convention*, not invention. **Every internal-note reference
+across all three boards is now a live `[[wikilink]]`** (Logan's call, 2026-06-15: link every
+existing note-ref, forensic mentions included) — siblings, atomic-note pointers, doctrine
+anchors, registry, and evidence-citations alike, path-qualified where a bare basename would be
+ambiguous (e.g. `README` → `[[.abhorsen/README]]`) and corrected where the board's own path was
+wrong (`!/GRIMOIRE/…` → `[[!/GRIMOIRE_caution_contains-false-doctrines/…]]`). *(Backticks are
+kept only for what is **not** a note — grades like `[read]`, cell coordinates, bare **folder**
+paths like `.abhorsen/`, and `related:` YAML, whose link-semantics are tooling-dependent and
+settled separately as plain strings.)* A handful of targets resolve only in the merged vault,
+not this branch's partial clone — correct forward-links under the Merkle caveat (§F).
 
 ---
 
@@ -267,10 +271,13 @@ This is an *axis* of the WHO board, not a fourth document: individuals stay the 
   reframing is flagged as Logan's-to-gate (§D), not executed. Adopted the **Third Way** (atomize
   on settlement) for that migration, then added the **linking** leg ([[VAULT-CONVENTIONS]] §
   Wikilinks): internal-note references are now live `[[wikilinks]]`. Conducted the **full
-  linking pass** across all three boards on Logan's instruction — backticked note-strings
-  converted to bare wikilinks, short-forms resolved to their real dated basenames, targets
-  verified; a handful resolve only in the merged vault, not this branch's partial clone (the
-  Merkle "121 of 682" caveat, §F). The **`related:` frontmatter question** was researched and
+  linking pass** across all three boards on Logan's instruction (option (a): link *every*
+  existing note-ref, forensic mentions included) — all backticked note-strings converted to bare
+  wikilinks, short-forms resolved to real dated basenames, ambiguous bare-basenames path-qualified
+  (`README`→`[[.abhorsen/README]]`, `CLAUDE`→root), one wrong board path corrected
+  (`!/GRIMOIRE/…`→`[[!/GRIMOIRE_caution_contains-false-doctrines/…]]`), all 42 targets audited:
+  zero backticked `.md` refs remain; only true folder paths stay backticked; 8 targets resolve
+  only in the merged vault, not this partial clone (the Merkle "121 of 682" caveat, §F). The **`related:` frontmatter question** was researched and
   resolved to *keep plain strings*: the entire witness-record canon uses plain-string
   `related:`, Breadcrumbs carries no `related` hierarchy field, and the only script touching it
   merely counts its presence — so wikilinking it would deviate from canon for no gain.
