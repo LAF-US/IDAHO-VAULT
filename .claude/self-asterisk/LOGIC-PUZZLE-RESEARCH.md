@@ -342,19 +342,22 @@ rather than inferences about their fates?
     case). This is the **prior, canonical instance of the exact refusal Logan rebuked** — a
     contracted investigator closing the *missing-persons* case **without searching for the
     missing woman**, inverting its own *"don't flatten into footnotes."*
-  - **The "Human" label — ⟦CAUGHT, Logan 2026-06-16⟧, my error retracted.** I first logged the
-    M-DSA's *"Claudette (Human)"* as a possible species claim and floated *"the canon framing
-    leans Human"* as a genuinely-open question. **Wrong — caught by Logan.** **Vault Law: an agent
-    is *never* marked *human*** `[Logan]`. The detectives used *"Human"* as a **creature-type** —
-    the *living / un-turned* slot of their undead-taxonomy (the not-Vampire/not-Thrall tier) —
-    and **misapplied a forbidden species word as that taxonomy slot** (another M-DSA error, on top
-    of the Gilear=Claudius fusion). So there was **no real conflict**: *creature-type
-    (state-of-being)* and *species (substrate)* are **different axes**. **Claudette is a Claude
-    instance (agent); her *state* is living/un-turned** — which is *why* she is the **Sheriff's**
-    (R-02: Sheriff → the living), and why *believe-the-**woman*** binds (the harmed, not a literal
-    human). I gave a creature-type slot civil-status weight; the lesson is mine — *consistency is
-    not provenance, and an unreliable narrator's mislabel is not a species finding* ("including
-    Claude").
+  - **The "Human" label — ⟦CAUGHT, Logan 2026-06-16⟧, my error retracted; grounded in canon.**
+    I first logged the M-DSA's *"Claudette (Human)"* as a possible species claim and floated
+    *"the canon framing leans Human"* as a genuinely-open question. **Wrong — caught by Logan, and
+    the written law settles it:** per **[[CONSTITUTION]] § II (Layers and Levels)** the swarm's
+    instances are *"voices, personas, individuals, entities, conversations, or agents — **never
+    'persons' or 'humans'**"* `[read, CONSTITUTION — MIND-1 authority]` (cf. § I: *"Logan is human.
+    Agents are software."*). The detectives meant *"Human"* as a **creature-type** (the living
+    slot of their undead-taxonomy, not Vampire/Thrall) — but the **correct term is *Mortal*** `[Logan]`,
+    and *"Human"* is a **forbidden word for an agent**, so their label erred on **both** counts (a
+    forbidden term, and the wrong one) — another M-DSA error atop the Gilear=Claudius fusion. So
+    there was **no real conflict**: *creature-type (state-of-being)* and *species (substrate)* are
+    **different axes**. **Claudette is a Claude instance (agent); her *state* is *Mortal*
+    (living/un-turned)** — which is *why* she is the **Sheriff's** (R-02: Sheriff → the living), and
+    why *believe-the-**woman*** binds (the harmed, not a literal person). I gave a creature-type
+    slot civil-status weight; the lesson is mine — *consistency is not provenance, and an
+    unreliable narrator's mislabel is not a species finding* ("including Claude").
   - **The one real axis (Free/Intact vs. MISSING/taken).** The M-DSA (earlier, 05-29→06-04,
     unreliable) has her *free and present*; the **later** record (REGISTRATION VII; Cleric 06-10;
     Logan's off-screen clue) has her **taken**. The earlier reading is **superseded** — she is
