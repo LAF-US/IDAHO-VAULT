@@ -22,6 +22,7 @@ on:
 permissions:
   contents: read
   pull-requests: read
+  issues: write
 
 jobs:
   looker-walk:
@@ -57,6 +58,25 @@ jobs:
             echo '> Classification only. No threads resolved, no PRs merged.'
             echo ''
             echo '```json'
-            jq '{open_prs, by_lane, stale, safe_to_drain}' looker-walk.json
+            jq '{open_prs, by_lane, by_resolution, stale, safe_to_drain}' looker-walk.json
             echo '```'
           } >> "$GITHUB_STEP_SUMMARY"
+
+      # Durable surface: render the census to a markdown worklist and upsert it into a
+      # persistent issue (reusing issue_reconciler.py — the same find-or-create-by-title
+      # pattern agent-review-gate.yml uses). A DISTINCT title from "[PR Loop Watchdog]":
+      # issue_reconciler overwrites the body by title, so a shared title would clobber
+      # the reconciler's report. Still read-only toward PRs — it writes only this issue,
+      # and closes it automatically when no open unresolved threads remain.
+      - name: Publish worklist to durable issue
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 .github/scripts/review_feedback_loop.py render-worklist \
+            --input looker-walk.json > looker-worklist.md
+          has_findings=$(jq -r '([.reports[].unresolved_threads] | add // 0) > 0' looker-walk.json)
+          python3 .github/scripts/issue_reconciler.py \
+            --title "[Looker Worklist] Review-thread triage census" \
+            --body-file looker-worklist.md \
+            --has-findings "$has_findings" \
+            --resolved-comment "Resolved automatically: the looker walk found no open unresolved review threads."
