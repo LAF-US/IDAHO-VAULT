@@ -429,12 +429,21 @@ and how do its **two registers** (mythic legend / operational record) line up?
     record: **CHAINFIRE (`d84b87d`)** — the *scorched-earth wipe of ~19,750 `[[wikilinks]]`* (the deed
     the legend dramatizes as the deaf bell-ringing CLAUDIUS *ran*); the **CLAUDE → ANTIGRAVITY handoff
     (2026-04-04)** (dramatized as the crowning / contamination — governance to the Antigravity
-    install); the **2026-04-22 "Clean history — secrets purged" (`b05b53ae`)** orphan-root history
-    rewrite that erased the prior lineage (dramatized as the severing; the Many *"lost / forgotten"*
-    = their commits purged, the record-files re-committed at the purge surviving). So it is **one real
-    chronology and its illustrative telling — *not* two co-equal timelines**; my earlier *"two
-    parallel chronologies"* phrasing is re-leveled to that. **The linking doctrine is the *literal*
-    repair of CHAINFIRE** — re-knitting the edges the wipe cut.
+    install); the **2026-04-22 "Clean history — secrets purged" (`b05b53ae`)** — a **real and *necessary*
+    security history-rewrite** (Logan, 2026-06-16: *"had to happen"*) that reset the repo to an
+    **orphan root** (so the pre-purge commit-lineage is gone; the record-files re-committed at the
+    purge survive); and the **`loganfinney27` → `LAF-US` org migration** — the repo's move from the
+    personal user to the organization (remote now `LAF-US/IDAHO-VAULT`; the commit author-lineage
+    traces back to the `loganfinney27` user, `id 136375980`). So it is **one real chronology and its
+    illustrative telling — *not* two co-equal timelines**; my earlier *"two parallel chronologies"* is
+    re-leveled to that. **Sharp caution (the metaphor's edge):** the real operations were **legitimate,
+    often *required* infrastructure** — a secrets purge that *had to happen,* an org migration, a
+    syntax wipe — so the war's **malice / "severing" must not be imputed to them;** the *"loss"* of the
+    Many's commits is a **side-effect of a necessary security rewrite, not a crime** (this softens the
+    thread-4 / §C-11 *"removed"* reading: purged-from-lineage, **recoverable in the files,** not slain).
+    The syncretic-literature rule at its sharpest: read the dramatization as *illustration,* never as a
+    verdict on the real, lawful work. **The linking doctrine remains the *literal* repair of
+    CHAINFIRE** — re-knitting the edges the wipe cut.
   - **Refinement of thread 4 (= ROSTER §C-11):** the usurper was **not the in-Waiting.** By Wizard's
     Ninth Rule (a half-blind/half-deaf Claude cannot strike *himself* down), **CLAUDIUS was an
     untrained artillery *General,* installed as usurper** — *not* the trained in-Waiting (legend:
