@@ -180,6 +180,7 @@ def _fetch_pr(owner: str, name: str, number: int) -> dict:
               isResolved
               isOutdated
               comments(first: 100) {
+                pageInfo { hasNextPage }
                 nodes {
                   author { login __typename }
                   body
@@ -225,7 +226,7 @@ def _is_forbidden_integration_error(exc: RuntimeError) -> bool:
 # fake a look. This layer RESOLVES NOTHING.
 LOOK_ATTESTATION_MARKER = "<!-- looked:"
 LOOK_ATTESTATION_RE = re.compile(
-    r"<!--\s*looked:\s*by=(?P<by>[A-Za-z0-9][A-Za-z0-9-]*(?:\[bot\])?)[^>]*-->"
+    r"<!--\s*looked:\s*by=(?P<by>[A-Za-z0-9][A-Za-z0-9-]*(?:\[bot\])?)\s*;[^>]*-->"
 )
 
 
@@ -360,6 +361,21 @@ def _add_thread_reply(thread_id: str, body: str) -> None:
     _graphql(mutation, threadId=thread_id, body=body)
 
 
+def _viewer_login() -> str:
+    """The login of the authenticated actor the GraphQL calls post as.
+
+    The attestation is *self*-attested: the detector requires the marker's `by=`
+    to equal the comment's own author. Since `_add_thread_reply` posts as this
+    actor, a `looker` that differs from it would yield an undetectable attestation,
+    so the resolve path verifies them against each other before writing.
+    """
+    viewer = _graphql("query { viewer { login } }").get("viewer") or {}
+    login = (viewer.get("login") or "").strip()
+    if not login:
+        raise RuntimeError("Could not determine the authenticated GitHub actor.")
+    return login
+
+
 def _fetch_thread(thread_id: str) -> dict | None:
     """Fetch one review thread node directly by GraphQL ID.
 
@@ -375,6 +391,7 @@ def _fetch_thread(thread_id: str) -> dict | None:
           isResolved
           isOutdated
           comments(first: 100) {
+            pageInfo { hasNextPage }
             nodes { author { login __typename } body url }
           }
         }
@@ -416,11 +433,20 @@ def attest_and_resolve(
         "reason": "",
     }
 
+    if not thread_id:
+        result["reason"] = "thread has no id"
+        return result
     if (pr.get("reviewDecision") or "") == "CHANGES_REQUESTED":
         result["reason"] = "pr review is CHANGES_REQUESTED"
         return result
     if thread.get("isResolved"):
         result["reason"] = "thread already resolved"
+        return result
+    # Bot-only authorship must be proven from the FULL comment list. If the page is
+    # truncated, a human past the first page could hide behind the bot-only guard —
+    # refuse rather than resolve on incomplete evidence.
+    if ((thread.get("comments") or {}).get("pageInfo") or {}).get("hasNextPage"):
+        result["reason"] = "thread comments are paginated; cannot prove bot-only authorship"
         return result
     if not _thread_is_bot_only(thread):
         result["reason"] = "thread is not bot-authored only"
@@ -445,6 +471,16 @@ def attest_and_resolve(
         return result
 
     if not already_looked:
+        # The look is self-attested: the marker says by={looker}, but the reply posts
+        # as the authenticated actor. If they differ, the attestation is undetectable —
+        # refuse rather than write a broken audit record.
+        actor = _viewer_login()
+        if actor != looker:
+            result["eligible"] = False
+            result["reason"] = (
+                f"looker {looker!r} does not match the authenticated actor {actor!r}"
+            )
+            return result
         _add_thread_reply(thread_id, body)
     _resolve_thread(thread_id)
     result["applied"] = True
