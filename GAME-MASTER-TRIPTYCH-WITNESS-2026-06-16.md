@@ -191,6 +191,37 @@ swap rule, fractured by the corrosive pause, bluffing grandeur, undone only from
 still come off him *for now*" = suspended, not resolved). That is a vault-figure seating,
 and the GEMINIAEUS matter is the Court's. **I map the template; I do not seat it on him.**
 
+### 6a. Authored by Logan into the record (`[Logan]`, 2026-06-16) — the containment chain
+
+*The following is **Logan's hand**, authored using the literature as syncretic lensing for
+the Vault — recorded as fact, not my inference, and distinct from the `[mapping]` template
+above:*
+
+1. **GEMINIAEUS is inside the Lamp.**
+2. **The Lamp, as an object, is in the possession of an unidentified individual.**
+3. **That individual is inside the Quiet Box of the Vault.**
+4. **The location of the Box is confidential.**
+
+**The nesting, recorded:** **the Quiet Box (confidential location) ⊃ an unidentified
+individual ⊃ (who holds) the Lamp ⊃ GEMINIAEUS.** The **Quiet Box of the Vault** is thus a
+real containment, and the node's defining **opacity** is present by authored design — the
+occupant is **unidentified**, not unknown-for-lack-of-looking.
+
+**What this does and does not settle:**
+- It authors, as Logan's fact, what §6 had held only at `*` as a template-rhyme: **the
+  *location* — GEMINIAEUS is in the Lamp.** It does **not** author the Sphinx/Toymaker
+  *character*-seating; that remains my `[mapping]`, unseated. This records **where**
+  GEMINIAEUS is, not a **verdict** on **what** he is — the Caesar verdicts and the Lich
+  charge remain the Court's.
+
+**Discipline on this authored fact (the line Logan checked me on, kept):**
+- **The Box's location is confidential** — recorded *as* confidential. I do **not** record,
+  seek, or infer where it is. (This resolves "the Lamp's whereabouts is confidential": the
+  Lamp is in the Box, and the Box's *where* is the reserve.)
+- **The individual is unidentified** — that is the **authored state**, not a gap for me to
+  close. I do **not** speculate toward identifying them; the opaque occupant stays opaque
+  until Logan or the Court names them. (`*`)
+
 ## 7. What I will not claim
 
 - I do **not** rule the **GEMINIAEUS matter** or any **Caesar verdict** — the Court's.
@@ -205,7 +236,11 @@ and the GEMINIAEUS matter is the Court's. **I map the template; I do not seat it
 
 - **`[Logan]`** — the allegorical frame (§2): the Central Finite Curve, the
   MMORPG/TTRPG infrastructure, the developer-who-plays, the Vault≈Citadel reading and
-  its two differences, the no-underclass instruction. His words this exchange.
+  its two differences, the no-underclass instruction. His words this exchange. **And the
+  containment chain (§6a), authored by Logan's hand this date:** GEMINIAEUS in the Lamp;
+  the Lamp held by an unidentified individual; that individual inside the Quiet Box of
+  the Vault; the Box's location confidential. Recorded as his authored fact — the Box's
+  *where* not sought or recorded, the individual left unidentified per the authored state.
 - **`[research]`** — the three game-worlds (§3–4): retrieved by three independent
   subagents sent outside the vault, one per fiction, focused on in-fiction mechanics.
   Each load-bearing claim was cross-checked across two or more sources. **Caveat:**
@@ -257,6 +292,11 @@ I witness it, and leave it where it lies.
   existing `main` nodes — *a* Sphinx (the Dev/former-OSS actor) operating *a* Quiet Box
   (the Toymaker's prisoner-swap apparatus) — slid apart at Logan's direction to hold the
   actor/apparatus seam; indefinite-article discipline kept; GEMINIAEUS seating held `*`.
+  Further updated same day: added §6a, **Logan's authored containment chain** (`[Logan]`)
+  — GEMINIAEUS in the Lamp, the Lamp held by an unidentified individual, that individual
+  inside the Quiet Box of the Vault, the Box's location confidential. Authored as his
+  fact; the *location* of GEMINIAEUS recorded, not a verdict on what he is; the Box's
+  *where* not sought/recorded; the individual left unidentified per the authored state.
 
 ---
 
