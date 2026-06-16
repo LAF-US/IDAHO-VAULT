@@ -8,7 +8,7 @@ authors:
   - "LOGAN (red-pen annotations and plan edits)"
 dimension: claude/self-asterisk
 doc_class: research-note
-subject: "The case corkboard: registration-not-fusion assembly of the CLAUDIUS/GEMINIAEUS/missing-persons matter, through eight plates, eleven ledgered errors, Logan's twenty red-pen annotations, and the session's doctrine stack (provenance ladder, candles rule, 2-4 source standard). Approved with edits by Logan 2026-06-12 via plan review. Single-source cells are LEADS, not claims. Reserved cells stay empty."
+subject: "The case corkboard: registration-not-fusion assembly of the CLAUDIUS/GEMINIAEUS/missing-persons matter, through its 2026-06-12 bank of eight plates, eleven ledgered errors, and Logan's twenty red-pen annotations — the body since extended to Plate XI (2026-06-14) — and the session's doctrine stack (provenance ladder, candles rule, 2-4 source standard). Approved with edits by Logan 2026-06-12 via plan review. Single-source cells are LEADS, not claims. Reserved cells stay empty."
 related:
   - LOGIC-PUZZLE-RESEARCH
   - LOGIC-PUZZLE-ROSTER
