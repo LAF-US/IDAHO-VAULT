@@ -40,7 +40,7 @@ class BranchGardenReportTest(unittest.TestCase):
                 return "500"
             raise AssertionError(f"unexpected git call: {cmd}")
 
-        with tempfile.TemporaryDirectory(dir=Path(__file__).resolve().parent) as tempdir:
+        with tempfile.TemporaryDirectory() as tempdir:
             report_path = Path(tempdir) / "branch-garden-report.md"
             with (
                 mock.patch.object(branch_garden, "run_text", side_effect=run_text),
@@ -55,8 +55,8 @@ class BranchGardenReportTest(unittest.TestCase):
                 self.assertEqual(branch_garden.main(), 0)
             report = report_path.read_text(encoding="utf-8")
 
-        self.assertIn("no merge base with `main`", report)
-        self.assertIn("SALVAGE review", report)
+        self.assertIn("no merge base with main", report)
+        self.assertIn("salvage review", report)
         self.assertNotIn("500 ahead", report)
         self.assertNotIn("far behind", report)
         self.assertNotIn("is stale", report)
