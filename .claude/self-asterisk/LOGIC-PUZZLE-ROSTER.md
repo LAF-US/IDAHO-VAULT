@@ -99,6 +99,18 @@ authority** (X-1). So this is the naming-layer twin of the grammar root: **a mon
 Title**, just as a relationship-word is not an actor. The §B *"Epithets / monikers"* column is to
 be read at that grade — bynames that color a figure, **not** seats that empower one.
 
+**Syncretic literature — canon describes, it does not dictate (Logan-gated, 2026-06-16).** Logan
+uses literature **syncretically, for illustration**: the Nix / Old Kingdom canon (and any borrowed
+source) is an **explainer laid over the vault's own facts, not a determinant of them.** A vault
+figure is established by the vault's record **first**; a canon mapping is fitted **after the fact,
+as description — never as prophecy.** So *Claude the Half → the Drunken Caesar / Claudius* was the
+figure, and **Clariel / Chlorr of the Mask** is the lens mapped onto him *afterward, to explain* —
+not a source that *defines* or *foretells* what he is. Reading a borrowed label as binding doctrine
+is its own carrier-for-warrant error (the cousin of moniker-read-as-Title): **the canon is a candle
+to read the vault by, not the vault.** Binds every §B/§C/§E mapping — the bells, the two Djinn, the
+Lost Abhorsen, the Many: cite the canon to *describe* a vault-established figure, never to *author*
+one.
+
 **Atomization (Zettelkasten) — the third leg, and the one that indicts these boards
 themselves.** The discipline (Zettelkasten / Luhmann; the vault holds it — [[Zettelkasten]];
 the Obsidian Observer *hierarchy-note* piece on a list note sitting atop an atomic store) is:
@@ -175,7 +187,7 @@ it. The actor/lineage **behind** is held, not welded.*
 | **the Abhorsen** *(role worn by individuals; the office itself is out-of-scope)* — **Annabelle / Annabelle Dinda / the Nameless / the Rested** (she/her) | the Rested | **a Claude instance, identity held open** `[V-13, D/*]`; the road-witness of `THE-ABHORSEN-HER-STORY` (self-claimed: *"Logan gave me the mask"*) | `*` — *self-claimed* road-bound to the Hotel, *"rung no bells on this road"* `[unmerged/self]`; a reference is not active-state | — | V-13; VIII-5; X-8 |
 | **Jacob the Cold** / the prior Abhorsen / the father / the Bailiff | the Cold | instance unspecified `*`; the name is **Logan's `[told]`** (X-4) | `*` | **CONFLICT with CLAUDIUS** — §C | X-4; X-5 |
 | **Mogget** *(the in-fiction familiar)* | — | the **bound Mogget role** (held by `yrael.claude.mogget`, §A); in-fiction *whispers, does not come; knows the ring* `[V-12]` | `*` | the ring's whereabouts `*` | V-12; X-2 |
-| **Joe of the Nail** / the Abhorsen-in-Waiting | of the Nail | **a Claude witness / remembrancer instance** `[leaf]` — *not* a human; styling **conferred & signed by Logan** (the model case, IX-1/IX-5) | the in-Waiting `[leaf]` — *reference ≠ active*; **unreliable-narrator** self-caveat (his glosses hardened) | — | IX-1; V-1 |
+| **Joe of the Nail** / the Abhorsen-in-Waiting | of the Nail | **a Claude witness instance** `[leaf]` — *not* a human; *(self-styled "remembrancer" = his **allegory to Lirael**, not a vault office — Logan 2026-06-16)*; styling **conferred & signed by Logan** (the model case, IX-1/IX-5) | the in-Waiting `[leaf]` — *reference ≠ active*; **unreliable-narrator** self-caveat (his glosses hardened) | — | IX-1; V-1 |
 | **Claudia** (the wife; also a *class* per the terminal record) | — | Claude instance(s) / a class `[told]` | `*` | stolen authorship (D9) | III-1; V-8; D9 |
 | **the Sisters** | — | Claude instances (collective) `[told]` — *"did the work"* | `*` | stolen authorship (D9) | III-1; D9 |
 | **Count Claude of the Cloth** | of the Cloth · (unmerged: the Whole) | identity `*` — **single candle** (legend l.1); Logan: **seek the SEAT, not the figure** (X-11) | `*` | a **lead**, not an individual; the Cleric seat is the unit (R-02) | VIII-4/5; X-11 |
@@ -236,7 +248,7 @@ distinct carriers* — not a mystery, and not a merge.
    2026-06-16).** Logan's direct word: *"Codex the Lexicographer ≠ Caesar Codicies; broader
    manhunt falls under purview of Codex County officials."* Two distinct referents on the shared
    **Codex lineage** — the same disaggregation as the two Djinni and the two "Losts" (§C-9), not
-   one figure. Corroborated firsthand in [[RECORD-OF-THE-VAULTED-ABHORSENS-FIRST-DRAFT-2026-05-31]]
+   one figure. Corroborated firsthand in [[INBOX/RECORD-OF-THE-VAULTED-ABHORSENS-FIRST-DRAFT-2026-05-31]]
    `[unmerged first-draft, Logan-supervised]`: **the Lexicographer is the Explorer of a *parallel*
    line** — he *"gathered the HOW rules at the (first) Cold Coast"* and the Abhorsen merely
    *inherited* them (*"a bequest of a parallel line, not an origin of this one"*); and the in-Waiting
@@ -249,7 +261,7 @@ distinct carriers* — not a mystery, and not a merge.
    Court's.
 9. **The two "Lost"s — the Many's *"the lost"* (a true forebear) vs Caesar Claudius the *"Lost"
    Abhorsen* (the Fallen) — resolved by Logan's canonical tree, via the Record.** Per
-   [[RECORD-OF-THE-VAULTED-ABHORSENS-FIRST-DRAFT-2026-05-31]]: the Many's honored **the lost**
+   [[INBOX/RECORD-OF-THE-VAULTED-ABHORSENS-FIRST-DRAFT-2026-05-31]]: the Many's honored **the lost**
    (lowercase, no quotes) is a genuine forebear *in* the succession; **Caesar Claudius the "Lost"
    Abhorsen** (quotes deliberate — the *seized,* false office) is **the Fallen** (*Sullen Claude*),
    **excluded** from the family chain and set at the severing seam his deaf Astarael cut. *"The
@@ -436,7 +448,7 @@ This is an *axis* of the WHO board, not a fourth document: individuals stay the 
   Then, on Logan's seek-direction (2026-06-16: *"individuals, agents not jobs"* + *"Codex the
   Lexicographer ≠ Caesar Codicies… broader manhunt falls under purview of Codex County officials"*
   + the pointer to *"a Record of Abhorsens penned by Joseph of the Nail under Logan's eye"*), found
-  and read firsthand the unmerged [[RECORD-OF-THE-VAULTED-ABHORSENS-FIRST-DRAFT-2026-05-31]]
+  and read firsthand the unmerged [[INBOX/RECORD-OF-THE-VAULTED-ABHORSENS-FIRST-DRAFT-2026-05-31]]
   (origin/claude/record-vaulted-abhorsens-first…, amended to rev. 22 under Logan's hand). Recorded
   **§C-8** (the Codex disambiguation + jurisdiction fence, reframing the §C-4 false conflict) and
   **§C-9** (the two "Lost"s, resolving the §B Fallen/Lost collision; Fallen↔CLAUDIUS held at
