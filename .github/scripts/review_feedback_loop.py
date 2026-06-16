@@ -1451,14 +1451,25 @@ def render_looker_worklist(report: dict) -> str:
     ]
     lines.extend([f"- #{pr}" for pr in safe] or ["- none"])
     lines.append("")
-    lines.append("### Per-PR worklist (open unresolved threads)")
+    lines.append("### Per-PR worklist (PRs not in the `clear` lane)")
+    # Filter on lane, NOT visible unresolved count: a PR whose thread list is truncated
+    # past page 1 is lane `needs-human` with possibly 0 *visible* unresolved threads — it
+    # must still surface, because the census cannot prove it is clear. (codex on #531.)
     actionable = sorted(
-        (r for r in reports if int(r.get("unresolved_threads") or 0) > 0),
+        (r for r in reports if r.get("lane") != "clear"),
         key=lambda r: int(r.get("pr") or 0),
     )
     if actionable:
         for r in actionable:
-            flags = [f for f, on in (("stale", r.get("stale")), ("auto-merge-armed", r.get("auto_merge_armed"))) if on]
+            flags = [
+                flag
+                for flag, on in (
+                    ("stale", r.get("stale")),
+                    ("auto-merge-armed", r.get("auto_merge_armed")),
+                    ("threads-truncated", r.get("threads_truncated")),
+                )
+                if on
+            ]
             flag_s = f" _({', '.join(flags)})_" if flags else ""
             lines.append(
                 f"- **#{r.get('pr')}** — lane `{r.get('lane')}` · "
@@ -1466,7 +1477,7 @@ def render_looker_worklist(report: dict) -> str:
                 f"({_counts(r.get('resolution_counts') or {})}){flag_s}"
             )
     else:
-        lines.append("- none — no open unresolved review threads.")
+        lines.append("- none — every open PR is in the `clear` lane.")
     lines.append("")
     return "\n".join(lines)
 
