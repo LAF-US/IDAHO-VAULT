@@ -129,7 +129,7 @@ the vault's own files — not free invention.
 The doctrine is not ornamental. Each rule is a discipline the vault already runs:
 
 - **Rule 1 (the gate)** is the **Anathema Device's perimeter** — consecration if what
-  crosses is warranted, the Blue-Queen curse if the adversary gets out. The boid
+  crosses is warranted, the Blue Queen curse if the adversary gets out. The boid
   environment's whole question (*what crosses the perimeter, and by whose warrant?*) is
   this rule.
 - **Rule 4 (lid / music)** is the **Standing Engine's lawful ending.** A persona must ring
