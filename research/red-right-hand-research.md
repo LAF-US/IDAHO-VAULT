@@ -158,6 +158,7 @@ Milton's phrase fuses biblical motifs: right hand = authority/justice; red = blo
 ### 6. Symbolism and Themes
 
 #### Core Meanings
+
 | Symbol | Meaning | Examples |
 |------------|-------------|--------------|
 | Right Hand | Divine power, authority, salvation | Job 40:14, Exodus 15:6 |
