@@ -483,6 +483,77 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertEqual(report["auto_merge_authorization_blocked"], [])
         self.assertIsNone(report["evaluated"][0]["auto_merge_arm_error"])
 
+    def test_thread_has_attested_look_requires_self_attested_marker(self) -> None:
+        # Valid: structured marker whose by= matches the comment's own author.
+        looked = _thread(authors=("coderabbitai",))
+        looked["comments"]["nodes"].append(
+            {
+                "author": {"login": "claude-code-bot"},
+                "body": "advisory, no action <!-- looked: by=claude-code-bot; decision=advisory; v=1 -->",
+                "url": "https://example.test/attestation",
+            }
+        )
+        self.assertTrue(review_feedback_loop._thread_has_attested_look(looked))
+
+        # No marker at all.
+        self.assertFalse(
+            review_feedback_loop._thread_has_attested_look(_thread(authors=("coderabbitai",)))
+        )
+
+        # Forged: marker present but by= does not match the author -> not a look.
+        forged = _thread(authors=("coderabbitai",))
+        forged["comments"]["nodes"].append(
+            {
+                "author": {"login": "random-user"},
+                "body": "<!-- looked: by=someone-else; decision=advisory; v=1 -->",
+                "url": "https://example.test/forged",
+            }
+        )
+        self.assertFalse(review_feedback_loop._thread_has_attested_look(forged))
+
+        # Nil-safe shapes: comments None, nodes None, comment missing body.
+        nil_comments = _thread(authors=("coderabbitai",))
+        nil_comments["comments"] = None
+        nil_nodes = _thread(authors=("coderabbitai",))
+        nil_nodes["comments"] = {"nodes": None}
+        missing_body = _thread(authors=("coderabbitai",))
+        missing_body["comments"]["nodes"].append({"author": {"login": "x"}, "url": "u"})
+        self.assertFalse(review_feedback_loop._thread_has_attested_look(nil_comments))
+        self.assertFalse(review_feedback_loop._thread_has_attested_look(nil_nodes))
+        self.assertFalse(review_feedback_loop._thread_has_attested_look(missing_body))
+
+    def test_build_looker_queue_unresolved_only_with_authors_and_looked_flag(self) -> None:
+        looked_thread = _thread(authors=("coderabbitai",))
+        looked_thread["comments"]["nodes"].append(
+            {
+                "author": {"login": "claude-code-bot"},
+                "body": "<!-- looked: by=claude-code-bot; decision=advisory; v=1 -->",
+                "url": "https://example.test/attestation",
+            }
+        )
+        pr = _pr(
+            number=42,
+            threads=(
+                _thread(authors=("coderabbitai", "human-reviewer", "coderabbitai")),
+                looked_thread,
+                _thread(resolved=True, authors=("copilot-pull-request-reviewer",)),
+                _thread(outdated=True, authors=("human-reviewer",)),
+            ),
+        )
+
+        with mock.patch.object(review_feedback_loop, "_resolve_thread") as resolve_thread:
+            items = review_feedback_loop._build_looker_queue(pr)
+
+        resolve_thread.assert_not_called()
+        self.assertEqual(len(items), 3)  # resolved thread excluded
+        self.assertTrue(all(item["pr"] == 42 for item in items))
+        # authors sorted + deduplicated; url from the first comment
+        self.assertEqual(items[0]["authors"], ["coderabbitai", "human-reviewer"])
+        self.assertEqual(items[0]["url"], "https://example.test/thread")
+        self.assertFalse(items[0]["looked"])
+        self.assertTrue(items[1]["looked"])
+        self.assertTrue(any(item["is_outdated"] for item in items))
+
 
 if __name__ == "__main__":
     unittest.main()
