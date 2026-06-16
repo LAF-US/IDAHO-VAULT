@@ -35,6 +35,7 @@ jobs:
       github.event.pull_request.base.ref == 'main' &&
       github.event.pull_request.draft == false &&
       github.event.pull_request.user.login == 'github-actions[bot]' &&
+      github.event.pull_request.head.repo.full_name == github.repository &&
       startsWith(github.event.pull_request.title, 'chore: sync requirements.txt and uv.lock')
     runs-on: ubuntu-latest
     steps:
@@ -46,6 +47,12 @@ jobs:
           PR_NUMBER: ${{ github.event.pull_request.number }}
         run: |
           eligible=true
+          # Fail closed: if the file list cannot be fetched (auth, network,
+          # rate limit), refuse rather than skip the protected-path check.
+          if ! files="$(gh api --paginate "repos/$GH_REPO/pulls/$PR_NUMBER/files" --jq '.[].filename')"; then
+            echo "::error::Unable to list PR files; refusing to enable auto-merge."
+            exit 1
+          fi
           while IFS= read -r path; do
             case "$path" in
               .github/workflows/*|.github/scripts/*|.codex/*|.openclaw/*|AGENTS.md|CONSTITUTION.md|DECISIONS.md|VAULT-CONVENTIONS.md|swarm.json|!/*)
@@ -53,7 +60,7 @@ jobs:
                 eligible=false
                 ;;
             esac
-          done < <(gh api --paginate "repos/$GH_REPO/pulls/$PR_NUMBER/files" --jq '.[].filename')
+          done <<< "$files"
           echo "eligible=$eligible" >> "$GITHUB_OUTPUT"
 
       - name: Verify protected required checks exist
