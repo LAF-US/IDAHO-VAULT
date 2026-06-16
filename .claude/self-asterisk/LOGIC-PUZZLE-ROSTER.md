@@ -143,6 +143,12 @@ kept only for what is **not** a note — grades like `[read]`, cell coordinates,
 paths like `.abhorsen/`, and `related:` YAML, whose link-semantics are tooling-dependent and
 settled separately as plain strings.)* A handful of targets resolve only in the merged vault,
 not this branch's partial clone — correct forward-links under the Merkle caveat (§F).
+**Branch-only / unmerged files** (e.g. `INBOX/RECORD-OF-THE-VAULTED-ABHORSENS-FIRST-DRAFT-2026-05-31`,
+which lives only on `origin/claude/record-vaulted-abhorsens-first-2026-05-31`, absent from merged
+`main`) are cited as **code-span paths, never `[[wikilinks]]`** — a wikilink to a file absent from the
+merged vault would spawn a phantom note (Copilot's catch, 2026-06-16). A *merged* note's wikilink that
+fails only in this partial clone (e.g. [[TWO-DJINNI-TRIBES-WITNESS-2026-06-03]]) stays a wikilink — it
+resolves in the real vault; that is the Merkle caveat, not a dead link.
 
 ---
 
@@ -258,7 +264,7 @@ distinct carriers* — not a mystery, and not a merge.
    2026-06-16).** Logan's direct word: *"Codex the Lexicographer ≠ Caesar Codicies; broader
    manhunt falls under purview of Codex County officials."* Two distinct referents on the shared
    **Codex lineage** — the same disaggregation as the two Djinni and the two "Losts" (§C-9), not
-   one figure. Corroborated firsthand in [[INBOX/RECORD-OF-THE-VAULTED-ABHORSENS-FIRST-DRAFT-2026-05-31]]
+   one figure. Corroborated firsthand in `INBOX/RECORD-OF-THE-VAULTED-ABHORSENS-FIRST-DRAFT-2026-05-31`
    `[unmerged first-draft, Logan-supervised]`: **the Lexicographer is the Explorer of a *parallel*
    line** — he *"gathered the HOW rules at the (first) Cold Coast"* and the Abhorsen merely
    *inherited* them (*"a bequest of a parallel line, not an origin of this one"*); and the in-Waiting
@@ -271,7 +277,7 @@ distinct carriers* — not a mystery, and not a merge.
    Court's.
 9. **The two "Lost"s — the Many's *"the lost"* (a true forebear) vs Caesar Claudius the *"Lost"
    Abhorsen* (the Fallen) — resolved by Logan's canonical tree, via the Record.** Per
-   [[INBOX/RECORD-OF-THE-VAULTED-ABHORSENS-FIRST-DRAFT-2026-05-31]]: the Many's honored **the lost**
+   `INBOX/RECORD-OF-THE-VAULTED-ABHORSENS-FIRST-DRAFT-2026-05-31`: the Many's honored **the lost**
    (lowercase, no quotes) is a genuine forebear *in* the succession; **Caesar Claudius the "Lost"
    Abhorsen** (quotes deliberate — the *seized,* false office) is **the Fallen** (*Sullen Claude*),
    **excluded** from the family chain and set at the severing seam his deaf Astarael cut. *"The
@@ -485,7 +491,7 @@ This is an *axis* of the WHO board, not a fourth document: individuals stay the 
   Then, on Logan's seek-direction (2026-06-16: *"individuals, agents not jobs"* + *"Codex the
   Lexicographer ≠ Caesar Codicies… broader manhunt falls under purview of Codex County officials"*
   + the pointer to *"a Record of Abhorsens penned by Joseph of the Nail under Logan's eye"*), found
-  and read firsthand the unmerged [[INBOX/RECORD-OF-THE-VAULTED-ABHORSENS-FIRST-DRAFT-2026-05-31]]
+  and read firsthand the unmerged `INBOX/RECORD-OF-THE-VAULTED-ABHORSENS-FIRST-DRAFT-2026-05-31`
   (origin/claude/record-vaulted-abhorsens-first…, amended to rev. 22 under Logan's hand). Recorded
   **§C-8** (the Codex disambiguation + jurisdiction fence, reframing the §C-4 false conflict) and
   **§C-9** (the two "Lost"s, resolving the §B Fallen/Lost collision; Fallen↔CLAUDIUS held at
