@@ -604,6 +604,20 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         with self.assertRaises(ValueError):
             review_feedback_loop._build_attestation("claude-code-bot", "bogus", "x")
 
+    def test_build_attestation_normalizes_timestamp_to_utc_zulu(self) -> None:
+        # naive datetime is treated as UTC (never local)
+        naive = datetime(2026, 6, 16, 1, 0)
+        self.assertIn(
+            "at=2026-06-16T01:00:00Z",
+            review_feedback_loop._build_attestation("claude-code-bot", "advisory", "x", now=naive),
+        )
+        # tz-aware non-UTC datetime is converted to UTC
+        plus5 = datetime(2026, 6, 16, 6, 0, tzinfo=timezone(timedelta(hours=5)))
+        self.assertIn(
+            "at=2026-06-16T01:00:00Z",
+            review_feedback_loop._build_attestation("claude-code-bot", "advisory", "x", now=plus5),
+        )
+
 
 if __name__ == "__main__":
     unittest.main()

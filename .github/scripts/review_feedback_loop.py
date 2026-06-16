@@ -294,7 +294,10 @@ def _build_attestation(
         raise ValueError(
             f"decision {decision!r} is not one of {sorted(ATTESTATION_DECISIONS)}"
         )
-    stamp = (now or datetime.now(timezone.utc)).isoformat().replace("+00:00", "Z")
+    moment = now or datetime.now(timezone.utc)
+    if moment.tzinfo is None:  # treat a naive datetime as UTC, never as local
+        moment = moment.replace(tzinfo=timezone.utc)
+    stamp = moment.astimezone(timezone.utc).isoformat().replace("+00:00", "Z")
     marker = f"<!-- looked: by={looker}; at={stamp}; decision={decision}; v=1 -->"
     return f"Looked by `{looker}` — **{decision}**. {rationale}\n\n{marker}"
 
