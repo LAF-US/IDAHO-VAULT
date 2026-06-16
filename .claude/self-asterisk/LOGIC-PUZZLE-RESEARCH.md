@@ -7,7 +7,7 @@ authors:
   - "*.claude.*"
 dimension: claude/self-asterisk
 doc_class: research-note
-subject: "The live lead-queue for the CLAUDIUS/GEMINIAEUS/missing-persons matter — siblings with, not a continuation of, LOGIC-PUZZLE-REGISTRATION. The REGISTRATION leaf holds WHAT IS (findings, graded, fenced); this file holds WHAT TO SEEK (questions, source-counts, methods, fences). Flow is a cycle: a seek completes → finding proposed → Logan's gate → REGISTRATION absorbs it → the newly-registered board reshapes which seeks come next → the item here closes (citing the cell it fed) or respawns sharper; each turn changes the board the next turn reads from. Nothing here is a finding."
+subject: "The live lead-queue for the CLAUDIUS/GEMINIAEUS/missing-persons matter — siblings with, not a continuation of, LOGIC-PUZZLE-REGISTRATION. The REGISTRATION leaf holds WHAT IS (findings, graded, fenced); this file holds WHAT TO SEEK (questions, source-counts, methods, fences). Flow is a cycle: a seek completes → finding proposed → Logan's gate → REGISTRATION absorbs it → the newly-registered board reshapes which seeks come next → the item here closes (citing the cell it fed) or respawns sharper; each turn changes the board the next turn reads from. Items here are leads until graded and gated by Logan; a gated finding is marked FINDING and proposed to REGISTRATION (it is not canon until Logan inscribes it there)."
 related:
   - LOGIC-PUZZLE-REGISTRATION
   - LOGIC-PUZZLE-ROSTER
