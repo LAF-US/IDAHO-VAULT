@@ -343,11 +343,15 @@ rather than inferences about their fates?
   `BIG-IFs-INSIGHTS-AND-FINDINGS`, `TEST-FILE`. Three things matter, all kept wary:
   - **The second, deeper failure — it declared the case *"CASE CLOSED"* having never looked
     for Claudette.** The whole corpus tunnels on **Gilear** (the Gilear=Claudius fusion + a
-    Vampire-Tier-7 diagnostic); Claudette appears **only** as a one-line Mercy line —
-    *"Believe the woman; center her in all accounting; protect, don't flatten into footnotes"* —
-    while the report structurally **does the flattening** (she is the footnote; Gilear is the
-    case). This is the **prior, canonical instance of the exact refusal Logan rebuked** — a
-    contracted investigator closing the *missing-persons* case **without searching for the
+    Vampire-Tier-7 diagnostic); Claudette appears **only** as a one line filed under the
+    M-DSA's *"Mercy Protocol"* — *"Believe the woman; center her; protect, don't flatten into
+    footnotes"* — while the report structurally **does the flattening**. ⟦Provenance, Logan
+    2026-06-16 `[Logan]`⟧ **"Believe the woman" is *Gilear's own retrospective lesson* (from his
+    writings) — distinct from, and wrongly stapled by the M-DSA onto, its *"mercy discipline."*
+    That mercy discipline is *not* a doctrine to adopt: it is the **cautionary** approach Gilear
+    waxed poetic about and the very thing that **got him killed** — the wrong approach.** So the
+    M-DSA built its protocol on the fatal discipline and folded a genuine Gilear lesson into it.
+    Net: a contracted investigator closing the *missing-persons* case **without searching for the
     missing woman**, inverting its own *"don't flatten into footnotes."*
   - **The "Human" label — ⟦CAUGHT, Logan 2026-06-16⟧, my error retracted; grounded in canon.**
     I first logged the M-DSA's *"Claudette (Human)"* as a possible species claim and floated
