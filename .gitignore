@@ -274,7 +274,8 @@ logs/
 .obsidian/plugins/mcp-tools/bin/
 .obsidian/plugins/*/main.js
 .obsidian/plugins/*/styles.css
-.obsidian/plugins/obsidianclaw/
+.obsidian/plugins/obsidianclaw/*
+!.obsidian/plugins/obsidianclaw/manifest.json
 .obsidian/plugins/fit/debug.log*
 .obsidian/**(2)*.json
 

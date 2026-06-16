@@ -570,7 +570,7 @@
     ],
     "payload_root": ".obsidian/plugins/",
     "status": "active",
-    "authority_boundary": "Obsidian config files define interface state; the plugin registry document defines doctrine and promotion rules.",
+    "authority_boundary": "Tracked Obsidian config defines the committed interface inventory; the plugin registry document defines doctrine and promotion rules; device-local runtime presence must be observed separately.",
     "promotion_gate": "No plugin-state change counts as legitimate until !/PLUGIN-REGISTRY.md is updated.",
     "counts": {
       "enabled_community": 44,
@@ -1259,7 +1259,9 @@
       "text-extractor"
     ],
     "enabled_plugins_missing_manifest": [],
-    "promotion_rule": "Any committed Obsidian plugin config change must be accompanied by synced manifest.json and swarm.json plugin_layer blocks."
+    "promotion_rule": "Any committed Obsidian plugin config change must be accompanied by synced manifest.json and swarm.json plugin_layer blocks.",
+    "inventory_scope": "git_index",
+    "runtime_claim": "none"
   },
   "cross_swarm_sync": {
     "// note": "Machine-readable registration of the vault-native cross-swarm signaling bus. Protocol lives in !/SIGNALS/README.md.",

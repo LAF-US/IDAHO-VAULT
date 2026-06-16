@@ -18,6 +18,7 @@ from __future__ import annotations
 import argparse
 import copy
 import json
+import subprocess
 import sys
 from pathlib import Path
 from typing import Any
@@ -67,12 +68,39 @@ def read_enabled(path: Path) -> list[str]:
     raise ValueError(f"{repo_rel(path)} must contain a JSON array or object")
 
 
-def read_plugin_manifests() -> dict[str, dict[str, Any]]:
-    installed: dict[str, dict[str, Any]] = {}
-    if not PLUGIN_DIR.exists():
-        return installed
+def tracked_plugin_manifest_paths() -> list[Path]:
+    result = subprocess.run(
+        ["git", "ls-files", "-z", "--cached", "--", ".obsidian/plugins"],
+        cwd=REPO_ROOT,
+        text=True,
+        encoding="utf-8",
+        errors="replace",
+        capture_output=True,
+        check=False,
+        timeout=30,
+    )
+    if result.returncode != 0:
+        raise RuntimeError(result.stderr.strip() or "git ls-files failed")
 
-    for manifest_path in sorted(PLUGIN_DIR.glob("*/manifest.json")):
+    paths = []
+    for relative_path in result.stdout.split("\0"):
+        normalized = relative_path.replace("\\", "/")
+        if not normalized.endswith("/manifest.json"):
+            continue
+        manifest_path = REPO_ROOT / relative_path
+        if not manifest_path.is_file():
+            raise RuntimeError(f"Tracked plugin manifest is missing: {normalized}")
+        paths.append(manifest_path)
+    return sorted(paths)
+
+
+def read_plugin_manifests(
+    manifest_paths: list[Path] | None = None,
+) -> dict[str, dict[str, Any]]:
+    installed: dict[str, dict[str, Any]] = {}
+
+    paths = tracked_plugin_manifest_paths() if manifest_paths is None else manifest_paths
+    for manifest_path in paths:
         data = load_json(manifest_path, {})
         plugin_id = str(data.get("id") or manifest_path.parent.name)
         installed[plugin_id] = {
@@ -97,10 +125,13 @@ def build_state() -> dict[str, Any]:
         "manifest_doc": plugin_registry_path(),
         "status": "active",
         "source_of_truth": "tracked_obsidian_config",
+        "inventory_scope": "git_index",
+        "runtime_claim": "none",
         "generated_by": ".github/scripts/sync_obsidian_plugin_registry.py",
         "authority_boundary": (
-            "Obsidian config files define interface state; the plugin registry "
-            "document defines doctrine and promotion rules."
+            "Tracked Obsidian config defines the committed interface inventory; "
+            "the plugin registry document defines doctrine and promotion rules; "
+            "device-local runtime presence must be observed separately."
         ),
         "current_state": {
             "enabled_community_count": len(enabled_community),
