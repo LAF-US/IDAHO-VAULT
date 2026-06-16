@@ -30,6 +30,7 @@ def _thread(
     resolved: bool = False,
     outdated: bool = False,
     authors: tuple[str, ...] = ("reviewer",),
+    author_type: str = "User",
 ) -> dict[str, object]:
     return {
         "id": "THREAD_1",
@@ -38,7 +39,7 @@ def _thread(
         "comments": {
             "nodes": [
                 {
-                    "author": {"login": author},
+                    "author": {"login": author, "__typename": author_type},
                     "body": "review note",
                     "url": "https://example.test/thread",
                 }
@@ -553,6 +554,75 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertFalse(items[0]["looked"])
         self.assertTrue(items[1]["looked"])
         self.assertTrue(any(item["is_outdated"] for item in items))
+
+    # ----- Layer B1: pure core of attest_and_resolve -----
+
+    def test_author_is_bot(self) -> None:
+        self.assertTrue(
+            review_feedback_loop._author_is_bot({"login": "coderabbitai", "__typename": "Bot"})
+        )
+        self.assertTrue(review_feedback_loop._author_is_bot({"login": "dependabot[bot]"}))
+        self.assertFalse(
+            review_feedback_loop._author_is_bot({"login": "loganfinney27", "__typename": "User"})
+        )
+        self.assertFalse(review_feedback_loop._author_is_bot({}))
+
+    def test_thread_is_bot_only(self) -> None:
+        bot_only = _thread(authors=("coderabbitai", "chatgpt-codex-connector"), author_type="Bot")
+        self.assertTrue(review_feedback_loop._thread_is_bot_only(bot_only))
+
+        human_only = _thread(authors=("human-reviewer",), author_type="User")
+        self.assertFalse(review_feedback_loop._thread_is_bot_only(human_only))
+
+        mixed = _thread(authors=("coderabbitai",), author_type="Bot")
+        mixed["comments"]["nodes"].append(
+            {"author": {"login": "human-reviewer", "__typename": "User"}, "body": "x", "url": "u"}
+        )
+        self.assertFalse(review_feedback_loop._thread_is_bot_only(mixed))
+
+        empty = _thread(authors=(), author_type="Bot")
+        self.assertFalse(review_feedback_loop._thread_is_bot_only(empty))
+
+    def test_build_attestation_roundtrips_through_detector(self) -> None:
+        body = review_feedback_loop._build_attestation(
+            "claude-code-bot",
+            "advisory",
+            "advisory nit, no code change needed",
+            now=datetime(2026, 6, 16, 1, 0, tzinfo=timezone.utc),
+        )
+        self.assertIn(review_feedback_loop.LOOK_ATTESTATION_MARKER, body)
+        self.assertIn("by=claude-code-bot", body)
+        self.assertIn("decision=advisory", body)
+
+        thread = _thread(authors=("coderabbitai",), author_type="Bot")
+        thread["comments"]["nodes"].append(
+            {"author": {"login": "claude-code-bot", "__typename": "Bot"}, "body": body, "url": "u"}
+        )
+        self.assertTrue(review_feedback_loop._thread_has_attested_look(thread))
+
+    def test_build_attestation_rejects_unknown_decision(self) -> None:
+        with self.assertRaises(ValueError):
+            review_feedback_loop._build_attestation("claude-code-bot", "bogus", "x")
+
+    def test_build_attestation_rejects_bracketed_looker(self) -> None:
+        # a [bot]-suffixed login would produce an attestation the detector can
+        # never match (its by= grammar excludes brackets) — fail fast, not silently.
+        with self.assertRaises(ValueError):
+            review_feedback_loop._build_attestation("github-actions[bot]", "advisory", "x")
+
+    def test_build_attestation_normalizes_timestamp_to_utc_zulu(self) -> None:
+        # naive datetime is treated as UTC (never local)
+        naive = datetime(2026, 6, 16, 1, 0)
+        self.assertIn(
+            "at=2026-06-16T01:00:00Z",
+            review_feedback_loop._build_attestation("claude-code-bot", "advisory", "x", now=naive),
+        )
+        # tz-aware non-UTC datetime is converted to UTC
+        plus5 = datetime(2026, 6, 16, 6, 0, tzinfo=timezone(timedelta(hours=5)))
+        self.assertIn(
+            "at=2026-06-16T01:00:00Z",
+            review_feedback_loop._build_attestation("claude-code-bot", "advisory", "x", now=plus5),
+        )
 
 
 if __name__ == "__main__":
