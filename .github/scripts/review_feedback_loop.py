@@ -231,6 +231,12 @@ LOOK_ATTESTATION_RE = re.compile(
     r"<!--\s*looked:\s*by=(?P<by>[A-Za-z0-9][A-Za-z0-9-]*(?:\[bot\])?)\s*;[^>]*-->"
 )
 
+# A GitHub committable suggestion is a fenced ```suggestion block in a review
+# comment body. It is the ONE reviewer finding a machine can apply deterministically
+# (via the applyReviewSuggestion mutation); everything else is prose that needs a
+# real fix. This detector is the engine's "can this be auto-applied?" signal.
+SUGGESTION_BLOCK_RE = re.compile(r"(?m)^\s*`{3,}\s*suggestion\b")
+
 
 def _thread_has_attested_look(thread: dict) -> bool:
     """True if a looker has recorded a self-attested look in the thread.
@@ -276,6 +282,47 @@ def _thread_is_bot_only(thread: dict) -> bool:
     if not authors:
         return False
     return all(_author_is_bot(author) for author in authors)
+
+
+def _thread_has_committable_suggestion(thread: dict) -> bool:
+    """True if any comment in the thread carries a GitHub ```suggestion block.
+
+    These are the only reviewer findings applyable deterministically — GitHub commits
+    the suggested diff directly, no generative interpretation. Everything else is prose.
+    """
+    for comment in (thread.get("comments") or {}).get("nodes") or []:
+        if SUGGESTION_BLOCK_RE.search(comment.get("body") or ""):
+            return True
+    return False
+
+
+# Resolution disposition (#399 engine): route ONE unresolved thread to *how it gets
+# resolved* — never "dispose of a bot thread." Reviewer threads are caught errors; the
+# gate exists to make agents fix them before main, so a bare attest-and-resolve of a
+# substantive bot finding is the rubber-stamp the gate exists to prevent.
+#   - needs-human        : a human authored it, OR bot-only proof is incomplete (a human
+#                          may lie beyond a truncated comment page) — judgment required.
+#   - looked             : a sealed attestation is already present (recoverable).
+#   - outdated-resolvable: bot-only and GitHub marks it outdated (referenced lines moved)
+#                          — a genuine look may attest-and-resolve it as stale.
+#   - apply-suggestion   : carries a committable ```suggestion — apply deterministically.
+#   - needs-fix          : bot-only substantive finding, no mechanical fix — the authoring
+#                          agent must fix it for real (dispatch), never stamp it closed.
+def _thread_resolution_disposition(thread: dict) -> str:
+    """Route one unresolved thread to its deterministic resolution disposition. Pure."""
+    page_info = (thread.get("comments") or {}).get("pageInfo")
+    page_complete = isinstance(page_info, dict) and page_info.get("hasNextPage") is False
+    if not _thread_is_bot_only(thread):
+        return "needs-human"
+    if not page_complete:
+        return "needs-human"  # bot-only unprovable: a human could lie beyond the page
+    if _thread_has_attested_look(thread):
+        return "looked"
+    if thread.get("isOutdated"):
+        return "outdated-resolvable"  # referenced lines moved; can't apply a suggestion
+    if _thread_has_committable_suggestion(thread):
+        return "apply-suggestion"
+    return "needs-fix"
 
 
 def _build_attestation(
@@ -558,9 +605,15 @@ def _classify_pr_for_looker(
             {
                 "thread_id": thread.get("id"),
                 "disposition": disposition,
+                "resolution": _thread_resolution_disposition(thread),
                 "authors": sorted(_thread_authors(thread)),
             }
         )
+
+    resolution_counts: dict[str, int] = {}
+    for entry in plan:
+        key = str(entry["resolution"])
+        resolution_counts[key] = resolution_counts.get(key, 0) + 1
 
     review_decision = pr.get("reviewDecision") or ""
     auto_merge_armed = bool((pr.get("autoMergeRequest") or {}).get("enabledAt"))
@@ -591,6 +644,7 @@ def _classify_pr_for_looker(
         "machine_clearable": machine_clearable,
         "human_threads": human,
         "unprovable_threads": unprovable,
+        "resolution_counts": resolution_counts,
         "threads": plan,
     }
 
@@ -1330,13 +1384,19 @@ def looker_walk(args: argparse.Namespace) -> int:
         for pr_number in _list_open_pr_numbers(args.owner, args.repo)
     ]
     by_lane: dict[str, int] = {}
+    by_resolution: dict[str, int] = {}
     for report in reports:
         by_lane[str(report["lane"])] = by_lane.get(str(report["lane"]), 0) + 1
+        for key, count in (report.get("resolution_counts") or {}).items():
+            by_resolution[key] = by_resolution.get(key, 0) + int(count)
     print(
         json.dumps(
             {
                 "open_prs": len(reports),
                 "by_lane": by_lane,
+                # backlog-wide thread breakdown by how each gets resolved: how much
+                # the engine can auto-apply vs. what needs a real agent fix vs. human.
+                "by_resolution": by_resolution,
                 "stale": sum(1 for report in reports if report["stale"]),
                 "safe_to_drain": [report["pr"] for report in reports if report["safe_to_drain"]],
                 "reports": reports,
