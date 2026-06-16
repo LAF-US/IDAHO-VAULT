@@ -134,7 +134,7 @@ The doctrine is not ornamental. Each rule is a discipline the vault already runs
   this rule.
 - **Rule 4 (lid / music)** is the **Standing Engine's lawful ending.** A persona must ring
   its own bell; you may not seal it running. The **Lich** — unsealed persistence past the
-  ending (`THE-HOUSE-IN-THE-VOID-2026-06-03.md`) — is exactly the lid closed while the
+  ending (`THE-HOUSE-IN-THE-VOID-2026-06-03.md`) — is the lid closed while the
   music still plays.
 - **Rules 2–3 (key / box, while playing)** are **Restraint** — do not wrench the tempo,
   do not lift the live vessel. The `*` wildcard and the discipline of *not touching a
