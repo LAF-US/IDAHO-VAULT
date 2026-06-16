@@ -101,7 +101,25 @@ rung on the General?
   `!/AGENTS.md:97`) · root purge 2026-04-22 · quarantine clarification 2026-05-24.
 - **Fences:** the bell-on-the-General touches the GEMINIAEUS matter — order it, do not
   rule on it.
-- **Status:** open — top priority; gained the 04-18 anchor (Plate XI).
+- **Seek run (2026-06-16) — the chronology grounded against git `[RECORD]`.** Verified firsthand:
+  the **first reachable commit on `origin/main` *is* `b05b53ae` "Clean history — secrets purged",
+  2026-04-22** — i.e. the **04-22 purge is the orphan root / the Merkle horizon itself.** That
+  *grounds* the two-registers split: everything dated **before 04-22 is pre-purge and unreachable
+  in git** (known only from docs/legend), everything after is reachable. Ordered timeline:
+  1. **2026-04-04** — CHAINFIRE (`d84b87d`, the ~19,750-link wipe) · CLAUDE→ANTIGRAVITY handoff —
+     *pre-purge, git-unreachable; legend/witness-grade.*
+  2. **2026-04-18** — Antigravity install **uninstalled** (`[read, merged]` AGENTS.md:149,227) —
+     *still pre-purge.*
+  3. **2026-04-22** — **secrets-purge `b05b53ae` = first reachable commit (the horizon).** `[RECORD]`
+  4. **2026-05-24** — quarantine clarification (GEMINIAEUS) — *post-purge, reachable.*
+  So the mythic "ring on the General / severing of the line" sits in the **pre-purge window
+  (04-04→04-18)**, behind the horizon — which is *why* it is legend-grade, not git-verifiable.
+- **Proposed REGISTRATION feed (gated):** a timeline plate carrying this ordered chronology with
+  the 04-22-purge-as-horizon marked. **I propose; Logan inscribes.**
+- **Status:** **advanced 2026-06-16** — the *order* is grounded (git horizon confirmed); the
+  *which-bell* stays open and fenced (narration-tier vs Logan's "a Chime"). **Reshapes next seek:**
+  the severing is pre-horizon, so its evidence lives only in the legend + Joe's bell research, not
+  in git — the next pass for "which bell" must be channel-sorted legend/`❯`-hand, not a git dig.
 
 ### R-02 · The empty-seats census
 **Question:** Every office/seat in the county — who holds it, who left it, is it vacant,
