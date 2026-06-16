@@ -138,7 +138,11 @@ jobs:
             exit 1
           fi
           {
-            echo "token=$token"
+            echo "APP_TOKEN=$token"
+            echo "APP_SLUG=$slug"
+            echo "INSTALLATION_ID=$installation"
+          } >> "$GITHUB_ENV"
+          {
             echo "slug=$slug"
             echo "installation=$installation"
           } >> "$GITHUB_OUTPUT"
@@ -146,22 +150,23 @@ jobs:
       - name: Create proof commit through selected App
         id: proof
         env:
-          GH_TOKEN: ${{ steps.app.outputs.token }}
           REPO: ${{ github.repository }}
           AGENT: ${{ github.event.inputs.agent }}
-          APP_SLUG: ${{ steps.app.outputs.slug }}
-          INSTALLATION_ID: ${{ steps.app.outputs.installation }}
         run: |
           set -euo pipefail
-          stamp="$(date -u +%Y%m%d%H%M%S)"
-          day="$(date -u +%Y-%m-%d)"
-          branch="agent/signing-proof-${AGENT}-${stamp}"
-          proof_path="!/SIGNING-GATE-PROOF-${AGENT^^}-${day}.md"
+          export GH_TOKEN="$APP_TOKEN"
+          branch="agent/signing-proof-${AGENT}"
+          proof_path="!/SIGNING-GATE-PROOF-${AGENT^^}.md"
           main_sha="$(gh api "repos/$REPO/git/ref/heads/main" --jq '.object.sha')"
-          gh api "repos/$REPO/git/refs" \
-            --method POST \
-            -f ref="refs/heads/$branch" \
-            -f sha="$main_sha" >/dev/null
+          if gh api "repos/$REPO/git/ref/heads/$branch" >/dev/null 2>&1; then
+            branch_action="reused"
+          else
+            gh api "repos/$REPO/git/refs" \
+              --method POST \
+              -f ref="refs/heads/$branch" \
+              -f sha="$main_sha" >/dev/null
+            branch_action="created"
+          fi
           cat > proof.md <<EOF
           # Signing Gate Proof - ${AGENT}
 
@@ -178,30 +183,51 @@ jobs:
           This PR is a signing-gate test vehicle, not a merge objective for unrelated payload.
           EOF
           encoded_content="$(base64 -w 0 proof.md)"
-          response="$(gh api "repos/$REPO/contents/$proof_path" \
+          existing_json="$(gh api "repos/$REPO/contents/$proof_path?ref=$branch" 2>/dev/null || true)"
+          existing_sha=""
+          if [ -n "$existing_json" ]; then
+            existing_sha="$(jq -r '.sha' <<< "$existing_json")"
+          fi
+          put_args=(
+            "repos/$REPO/contents/$proof_path"
             --method PUT \
             -f message="proof(signing): ${AGENT} App landing verification" \
             -f content="$encoded_content" \
-            -f branch="$branch")"
-          commit_sha="$(echo "$response" | jq -r '.commit.sha')"
+            -f branch="$branch"
+          )
+          if [ -n "$existing_json" ] &&
+             jq -r '.content' <<< "$existing_json" | base64 -d | cmp -s - proof.md; then
+            file_action="noop"
+            commit_sha="$(gh api "repos/$REPO/git/ref/heads/$branch" --jq '.object.sha')"
+          else
+            if [ -n "$existing_sha" ]; then
+              put_args+=(-f sha="$existing_sha")
+              file_action="updated"
+            else
+              file_action="created"
+            fi
+            response="$(gh api "${put_args[@]}")"
+            commit_sha="$(echo "$response" | jq -r '.commit.sha')"
+          fi
           {
             echo "branch=$branch"
             echo "proof_path=$proof_path"
             echo "commit_sha=$commit_sha"
+            echo "branch_action=$branch_action"
+            echo "file_action=$file_action"
           } >> "$GITHUB_OUTPUT"
 
       - name: Open proof PR
         id: pr
         env:
-          GH_TOKEN: ${{ steps.app.outputs.token }}
           REPO: ${{ github.repository }}
           AGENT: ${{ github.event.inputs.agent }}
           BRANCH: ${{ steps.proof.outputs.branch }}
           PROOF_PATH: ${{ steps.proof.outputs.proof_path }}
           COMMIT_SHA: ${{ steps.proof.outputs.commit_sha }}
-          APP_SLUG: ${{ steps.app.outputs.slug }}
         run: |
           set -euo pipefail
+          export GH_TOKEN="$APP_TOKEN"
           cat > pr-body.md <<EOF
           ## Agent Swarm Signing Proof
 
@@ -216,31 +242,64 @@ jobs:
 
           This is not an attempt to merge unrelated payload. It exists to prove whether an App-authenticated API landing commit is GitHub-verified and acceptable to the required-signatures gate.
           EOF
-          url="$(gh pr create \
+          existing_pr="$(gh pr list \
             --repo "$REPO" \
-            --draft \
-            --base main \
             --head "$BRANCH" \
-            --title "proof(signing): ${AGENT} App landing verification" \
-            --body-file pr-body.md)"
-          number="${url##*/}"
+            --base main \
+            --state open \
+            --limit 1 \
+            --json number,url \
+            --jq '.[0] // empty')"
+          if [ -n "$existing_pr" ]; then
+            number="$(jq -r '.number' <<< "$existing_pr")"
+            url="$(jq -r '.url' <<< "$existing_pr")"
+            gh pr edit "$number" \
+              --repo "$REPO" \
+              --title "proof(signing): ${AGENT} App landing verification" \
+              --body-file pr-body.md
+            pr_action="updated"
+          else
+            url="$(gh pr create \
+              --repo "$REPO" \
+              --draft \
+              --base main \
+              --head "$BRANCH" \
+              --title "proof(signing): ${AGENT} App landing verification" \
+              --body-file pr-body.md)"
+            number="${url##*/}"
+            pr_action="created"
+          fi
           {
             echo "url=$url"
             echo "number=$number"
+            echo "action=$pr_action"
           } >> "$GITHUB_OUTPUT"
 
       - name: Verify proof commit
         id: verify
         env:
-          GH_TOKEN: ${{ steps.app.outputs.token }}
           REPO: ${{ github.repository }}
           COMMIT_SHA: ${{ steps.proof.outputs.commit_sha }}
           PR_NUMBER: ${{ steps.pr.outputs.number }}
         run: |
           set -euo pipefail
-          gh api "repos/$REPO/commits/$COMMIT_SHA" --jq '.commit.verification' > verification.json
+          export GH_TOKEN="$APP_TOKEN"
+          expected_bot="${APP_SLUG}[bot]"
+          gh api "repos/$REPO/commits/$COMMIT_SHA" > commit.json
+          jq '.commit.verification' commit.json > verification.json
           verified="$(jq -r '.verified' verification.json)"
           reason="$(jq -r '.reason' verification.json)"
+          author_login="$(jq -r '.author.login // ""' commit.json)"
+          committer_login="$(jq -r '.committer.login // ""' commit.json)"
+          author_email="$(jq -r '.commit.author.email // ""' commit.json)"
+          committer_email="$(jq -r '.commit.committer.email // ""' commit.json)"
+          identity_ok="false"
+          if [ "$verified" = "true" ] &&
+             [ "$reason" = "valid" ] &&
+             [ "$author_login" = "$expected_bot" ] &&
+             [ "$committer_login" = "$expected_bot" ]; then
+            identity_ok="true"
+          fi
           if ! gh pr checks "$PR_NUMBER" --repo "$REPO" --json name,state,conclusion,detailsUrl > checks.json; then
             rm -f checks.json
           elif [ ! -s checks.json ]; then
@@ -249,25 +308,40 @@ jobs:
           {
             echo "verified=$verified"
             echo "reason=$reason"
+            echo "expected_bot=$expected_bot"
+            echo "author_login=$author_login"
+            echo "committer_login=$committer_login"
+            echo "author_email=$author_email"
+            echo "committer_email=$committer_email"
+            echo "identity_ok=$identity_ok"
           } >> "$GITHUB_OUTPUT"
 
       - name: Record result on signing issue
         if: always()
         env:
-          GH_TOKEN: ${{ steps.app.outputs.token || secrets.GITHUB_TOKEN }}
+          FALLBACK_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           REPO: ${{ github.repository }}
           AGENT: ${{ github.event.inputs.agent }}
-          APP_SLUG: ${{ steps.app.outputs.slug }}
-          INSTALLATION_ID: ${{ steps.app.outputs.installation }}
           BRANCH: ${{ steps.proof.outputs.branch }}
           PROOF_PATH: ${{ steps.proof.outputs.proof_path }}
           COMMIT_SHA: ${{ steps.proof.outputs.commit_sha }}
           PR_URL: ${{ steps.pr.outputs.url }}
+          PR_ACTION: ${{ steps.pr.outputs.action }}
           VERIFIED: ${{ steps.verify.outputs.verified }}
           REASON: ${{ steps.verify.outputs.reason }}
+          EXPECTED_BOT: ${{ steps.verify.outputs.expected_bot }}
+          AUTHOR_LOGIN: ${{ steps.verify.outputs.author_login }}
+          COMMITTER_LOGIN: ${{ steps.verify.outputs.committer_login }}
+          AUTHOR_EMAIL: ${{ steps.verify.outputs.author_email }}
+          COMMITTER_EMAIL: ${{ steps.verify.outputs.committer_email }}
+          IDENTITY_OK: ${{ steps.verify.outputs.identity_ok }}
         run: |
           set -euo pipefail
+          export GH_TOKEN="${APP_TOKEN:-$FALLBACK_GITHUB_TOKEN}"
+          marker="<!-- agent-swarm-signing-proof:${AGENT} -->"
           {
+            echo "$marker"
+            echo ""
             echo "## Agentic Swarm Signing Proof Result"
             echo ""
             echo "- Agent lane: \`${AGENT}\`"
@@ -275,10 +349,17 @@ jobs:
             echo "- App installation id: \`${INSTALLATION_ID:-unknown}\`"
             echo "- Proof branch: \`${BRANCH:-not-created}\`"
             echo "- Proof PR: ${PR_URL:-not-created}"
+            echo "- Proof PR action: \`${PR_ACTION:-not-created}\`"
             echo "- Proof file: \`${PROOF_PATH:-not-created}\`"
             echo "- Proof commit: \`${COMMIT_SHA:-not-created}\`"
             echo "- GitHub verification: \`${VERIFIED:-not-queried}\`"
             echo "- Verification reason: \`${REASON:-not-queried}\`"
+            echo "- Expected bot: \`${EXPECTED_BOT:-not-queried}\`"
+            echo "- Author login: \`${AUTHOR_LOGIN:-not-queried}\`"
+            echo "- Committer login: \`${COMMITTER_LOGIN:-not-queried}\`"
+            echo "- Author email: \`${AUTHOR_EMAIL:-not-queried}\`"
+            echo "- Committer email: \`${COMMITTER_EMAIL:-not-queried}\`"
+            echo "- Identity alignment: \`${IDENTITY_OK:-not-queried}\`"
             echo ""
             if [ -f verification.json ]; then
               echo "Verification JSON summary:"
@@ -301,26 +382,39 @@ jobs:
             fi
             echo ""
             if [ "${VERIFIED:-}" = "true" ]; then
-              echo "Signing gate signal: proof commit is GitHub-verified; remaining blockers, if any, are outside commit signature verification."
+              if [ "${IDENTITY_OK:-}" = "true" ]; then
+                echo "Signing gate signal: proof commit is GitHub-verified and identity-aligned."
+              else
+                echo "Signing gate signal: proof commit is GitHub-verified, but actor/author/committer identity alignment failed."
+              fi
             elif [ -z "${COMMIT_SHA:-}" ]; then
               echo "Signing gate signal: no proof commit was created. The selected App credential is missing, invalid, or did not mint a usable installation token."
             else
               echo "Signing gate signal: proof commit did not verify, or verification could not be queried."
             fi
           } > issue-comment.md
-          gh issue comment 398 --repo "$REPO" --body-file issue-comment.md
+          existing_comment_id="$(gh api --paginate "repos/$REPO/issues/398/comments" \
+            --jq ".[] | select(.body | contains(\"$marker\")) | .id" | tail -n 1)"
+          if [ -n "$existing_comment_id" ]; then
+            body="$(cat issue-comment.md)"
+            gh api "repos/$REPO/issues/comments/$existing_comment_id" \
+              --method PATCH \
+              -f body="$body" >/dev/null
+          else
+            gh issue comment 398 --repo "$REPO" --body-file issue-comment.md
+          fi
 
       - name: Close failed proof PR
-        if: ${{ steps.verify.outputs.verified != 'true' && steps.pr.outputs.number != '' }}
+        if: ${{ steps.verify.outputs.identity_ok != 'true' && steps.pr.outputs.number != '' }}
         env:
-          GH_TOKEN: ${{ steps.app.outputs.token }}
           REPO: ${{ github.repository }}
           PR_NUMBER: ${{ steps.pr.outputs.number }}
         run: |
-          gh pr close "$PR_NUMBER" --repo "$REPO" --comment "Closing failed signing proof: commit verification did not return verified: true."
+          export GH_TOKEN="$APP_TOKEN"
+          gh pr close "$PR_NUMBER" --repo "$REPO" --comment "Closing failed signing proof: commit verification or identity alignment did not pass."
 
-      - name: Fail if proof commit is not verified
-        if: ${{ steps.verify.outputs.verified != 'true' }}
+      - name: Fail if proof commit is not verified and identity-aligned
+        if: ${{ steps.verify.outputs.identity_ok != 'true' }}
         run: |
-          echo "Proof commit was not GitHub-verified." >&2
+          echo "Proof commit was not GitHub-verified with valid identity alignment." >&2
           exit 1
