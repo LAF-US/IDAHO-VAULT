@@ -24,6 +24,10 @@ related:
 > [[LOGIC-PUZZLE-REGISTRATION]]; this file only points at the next verified
 > seek. **I propose; Logan inscribes.** A draft leaf is not a filing, not a tendering, not
 > a ruling.
+>
+> **Notation:** `[RULED]` marks a **vault doctrine adjudicated by Logan in-repo** (a Logan-authored
+> doctrine merged to `origin/main`) — *not* a Court ruling on the GEMINIAEUS matter (that stays the
+> county bench's). Grades as in §0.
 
 ---
 
