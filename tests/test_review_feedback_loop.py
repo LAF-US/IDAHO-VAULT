@@ -821,5 +821,88 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         resolve.assert_not_called()
 
 
+    # ----- Layer C: looker-walk classification (read-only) -----
+
+    def _bot_thread(self) -> dict[str, object]:
+        return _thread(authors=("coderabbitai",), author_type="Bot")
+
+    def test_classify_machine_disposable(self) -> None:
+        now = datetime(2026, 6, 16, tzinfo=timezone.utc)
+        pr = _pr(number=1, created_at=now - timedelta(days=1), threads=(self._bot_thread(),))
+        report = review_feedback_loop._classify_pr_for_looker(pr, now=now)
+        self.assertEqual(report["lane"], "machine-disposable")
+        self.assertTrue(report["safe_to_drain"])
+        self.assertFalse(report["stale"])
+
+    def test_classify_would_cascade_when_auto_merge_armed(self) -> None:
+        now = datetime(2026, 6, 16, tzinfo=timezone.utc)
+        pr = _pr(
+            number=2, created_at=now - timedelta(days=1),
+            auto_merge_enabled=True, threads=(self._bot_thread(),),
+        )
+        report = review_feedback_loop._classify_pr_for_looker(pr, now=now)
+        self.assertEqual(report["lane"], "would-cascade")
+        self.assertFalse(report["safe_to_drain"])
+
+    def test_classify_needs_human_on_human_thread(self) -> None:
+        now = datetime(2026, 6, 16, tzinfo=timezone.utc)
+        pr = _pr(
+            number=3, created_at=now - timedelta(days=1),
+            threads=(_thread(authors=("loganfinney27",), author_type="User"),),
+        )
+        report = review_feedback_loop._classify_pr_for_looker(pr, now=now)
+        self.assertEqual(report["lane"], "needs-human")
+        self.assertFalse(report["safe_to_drain"])
+
+    def test_classify_needs_human_on_changes_requested(self) -> None:
+        now = datetime(2026, 6, 16, tzinfo=timezone.utc)
+        pr = _pr(
+            number=4, created_at=now - timedelta(days=1),
+            review_decision="CHANGES_REQUESTED", threads=(self._bot_thread(),),
+        )
+        report = review_feedback_loop._classify_pr_for_looker(pr, now=now)
+        self.assertEqual(report["lane"], "needs-human")
+
+    def test_classify_needs_human_on_truncated_comments(self) -> None:
+        now = datetime(2026, 6, 16, tzinfo=timezone.utc)
+        thread = self._bot_thread()
+        thread["comments"]["pageInfo"] = {"hasNextPage": True}
+        pr = _pr(number=5, created_at=now - timedelta(days=1), threads=(thread,))
+        report = review_feedback_loop._classify_pr_for_looker(pr, now=now)
+        self.assertEqual(report["lane"], "needs-human")
+        self.assertEqual(report["unprovable_threads"], 1)
+
+    def test_classify_clear_when_no_unresolved(self) -> None:
+        now = datetime(2026, 6, 16, tzinfo=timezone.utc)
+        pr = _pr(
+            number=6, created_at=now - timedelta(days=1),
+            threads=(_thread(resolved=True, authors=("coderabbitai",), author_type="Bot"),),
+        )
+        report = review_feedback_loop._classify_pr_for_looker(pr, now=now)
+        self.assertEqual(report["lane"], "clear")
+
+    def test_classify_stale_is_never_safe_to_drain(self) -> None:
+        now = datetime(2026, 6, 16, tzinfo=timezone.utc)
+        pr = _pr(number=7, created_at=now - timedelta(days=30), threads=(self._bot_thread(),))
+        report = review_feedback_loop._classify_pr_for_looker(pr, now=now, stale_days=14)
+        self.assertEqual(report["lane"], "machine-disposable")  # threads are clearable...
+        self.assertTrue(report["stale"])  # ...but it's abandoned
+        self.assertFalse(report["safe_to_drain"])  # so never auto-drained
+
+    def test_looker_walk_is_read_only(self) -> None:
+        pr = _pr(number=8, threads=(self._bot_thread(),))
+        args = review_feedback_loop.build_parser().parse_args(
+            ["looker-walk", "--owner", "o", "--repo", "r"]
+        )
+        with mock.patch.object(review_feedback_loop, "_list_open_pr_numbers", return_value=[8]), \
+             mock.patch.object(review_feedback_loop, "_fetch_pr", return_value=pr), \
+             mock.patch.object(review_feedback_loop, "_resolve_thread") as resolve, \
+             mock.patch.object(review_feedback_loop, "_add_thread_reply") as reply:
+            rc = review_feedback_loop.looker_walk(args)
+        self.assertEqual(rc, 0)
+        resolve.assert_not_called()
+        reply.assert_not_called()
+
+
 if __name__ == "__main__":
     unittest.main()
