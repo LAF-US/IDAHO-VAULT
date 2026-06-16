@@ -29,7 +29,7 @@ import os
 import re
 import subprocess
 import sys
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 
 
 APPLY_RE = re.compile(r"@copilot\b[\s\S]*?\bapply changes\b", re.IGNORECASE)
@@ -176,6 +176,7 @@ def _fetch_pr(owner: str, name: str, number: int) -> dict:
             nodes { name }
           }
           reviewThreads(first: 100) {
+            pageInfo { hasNextPage }
             nodes {
               id
               isResolved
@@ -524,21 +525,29 @@ def _classify_pr_for_looker(
 ) -> dict:
     """Sort one PR into a looker lane. Pure and read-only — resolves nothing."""
     now = now or datetime.now(timezone.utc)
-    threads = (pr.get("reviewThreads") or {}).get("nodes") or []
+    review_threads = pr.get("reviewThreads") or {}
+    threads = review_threads.get("nodes") or []
+    # The thread list itself is fetched first: 100. If it is truncated, a blocking
+    # human/unprovable thread may lie beyond the page — the PR is never safe to drain.
+    threads_truncated = bool((review_threads.get("pageInfo") or {}).get("hasNextPage"))
     unresolved = [t for t in threads if not t.get("isResolved")]
 
     plan: list[dict[str, object]] = []
     disposable = looked_open = human = unprovable = 0
     for thread in unresolved:
-        truncated = bool(
-            ((thread.get("comments") or {}).get("pageInfo") or {}).get("hasNextPage")
-        )
-        if truncated:
-            disposition = "unprovable"  # cannot prove bot-only from a partial page
-            unprovable += 1
-        elif not _thread_is_bot_only(thread):
+        page_info = (thread.get("comments") or {}).get("pageInfo")
+        # An explicit "complete" page is hasNextPage is False; anything else (truncated
+        # OR unknown/missing) is conservatively incomplete.
+        page_complete = isinstance(page_info, dict) and page_info.get("hasNextPage") is False
+        if not _thread_is_bot_only(thread):
+            # A human on the page we DO have is definitive — truncated or not.
             disposition = "human"
             human += 1
+        elif not page_complete:
+            # Bot-only on the visible page, but a human could lie beyond an incomplete
+            # one; bot-only must be proven from the full author list, so: unprovable.
+            disposition = "unprovable"
+            unprovable += 1
         elif _thread_has_attested_look(thread):
             disposition = "looked-open"  # attested but unresolved (recoverable)
             looked_open += 1
@@ -556,10 +565,10 @@ def _classify_pr_for_looker(
     review_decision = pr.get("reviewDecision") or ""
     auto_merge_armed = bool((pr.get("autoMergeRequest") or {}).get("enabledAt"))
     last_activity = _parse_iso_datetime(pr.get("updatedAt") or pr.get("createdAt"))
-    stale = bool(last_activity and (now - last_activity).days >= stale_days)
+    stale = bool(last_activity and (now - last_activity) >= timedelta(days=stale_days))
     machine_clearable = disposable + looked_open
 
-    if review_decision == "CHANGES_REQUESTED" or human or unprovable:
+    if threads_truncated or review_decision == "CHANGES_REQUESTED" or human or unprovable:
         lane = "needs-human"
     elif not unresolved:
         lane = "clear"
@@ -577,6 +586,7 @@ def _classify_pr_for_looker(
         "auto_merge_armed": auto_merge_armed,
         "review_decision": review_decision or None,
         "is_draft": bool(pr.get("isDraft")),
+        "threads_truncated": threads_truncated,
         "unresolved_threads": len(unresolved),
         "machine_clearable": machine_clearable,
         "human_threads": human,
@@ -1377,6 +1387,21 @@ def attest_resolve(args: argparse.Namespace) -> int:
     return 0
 
 
+def _positive_int(value: str) -> int:
+    """argparse type: a strictly positive integer (e.g. --stale-days).
+
+    A non-positive staleness window misclassifies every PR (<=0 marks all stale,
+    making nothing safe to drain), so it is rejected at parse time.
+    """
+    try:
+        parsed = int(value)
+    except (TypeError, ValueError):
+        raise argparse.ArgumentTypeError(f"invalid int value: {value!r}")
+    if parsed <= 0:
+        raise argparse.ArgumentTypeError("must be a positive integer")
+    return parsed
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser()
     subparsers = parser.add_subparsers(dest="command", required=True)
@@ -1439,7 +1464,12 @@ def build_parser() -> argparse.ArgumentParser:
     walk = subparsers.add_parser("looker-walk")
     walk.add_argument("--owner", required=True)
     walk.add_argument("--repo", required=True)
-    walk.add_argument("--stale-days", type=int, default=LOOKER_STALE_DAYS)
+    walk.add_argument(
+        "--stale-days",
+        type=_positive_int,
+        default=LOOKER_STALE_DAYS,
+        help="days of inactivity before a PR is flagged stale (positive int)",
+    )
 
     attest = subparsers.add_parser("attest-resolve")
     attest.add_argument("--owner", required=True)

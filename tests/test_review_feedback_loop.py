@@ -1,6 +1,9 @@
 from __future__ import annotations
 
+import contextlib
 import importlib.util
+import io
+import json
 import unittest
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -37,6 +40,7 @@ def _thread(
         "isResolved": resolved,
         "isOutdated": outdated,
         "comments": {
+            "pageInfo": {"hasNextPage": False},
             "nodes": [
                 {
                     "author": {"login": author, "__typename": author_type},
@@ -44,7 +48,7 @@ def _thread(
                     "url": "https://example.test/thread",
                 }
                 for author in authors
-            ]
+            ],
         },
     }
 
@@ -53,24 +57,28 @@ def _pr(
     *,
     number: int = 17,
     created_at: datetime | None = None,
+    updated_at: datetime | None = None,
     labels: tuple[str, ...] = (),
     review_decision: str | None = None,
     draft: bool = False,
     threads: tuple[dict[str, object], ...] = (),
+    threads_truncated: bool = False,
     body: str = "## Auto-generated PR\n\n**Risk tier:**\n`low`\n",
     auto_merge_enabled: bool = False,
 ) -> dict[str, object]:
     created_at = created_at or datetime(2026, 4, 16, 2, 0, tzinfo=timezone.utc)
+    updated_at = updated_at or created_at
     return {
         "number": number,
         "url": f"https://example.test/pr/{number}",
         "body": body,
         "createdAt": created_at.isoformat().replace("+00:00", "Z"),
+        "updatedAt": updated_at.isoformat().replace("+00:00", "Z"),
         "isDraft": draft,
         "reviewDecision": review_decision,
         "autoMergeRequest": {"enabledAt": created_at.isoformat().replace("+00:00", "Z")} if auto_merge_enabled else None,
         "labels": _labels(*labels),
-        "reviewThreads": {"nodes": list(threads)},
+        "reviewThreads": {"pageInfo": {"hasNextPage": threads_truncated}, "nodes": list(threads)},
     }
 
 
@@ -889,19 +897,97 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertTrue(report["stale"])  # ...but it's abandoned
         self.assertFalse(report["safe_to_drain"])  # so never auto-drained
 
-    def test_looker_walk_is_read_only(self) -> None:
-        pr = _pr(number=8, threads=(self._bot_thread(),))
+    def _looked_open_thread(self) -> dict[str, object]:
+        thread = self._bot_thread()
+        body = review_feedback_loop._build_attestation("claude-code-bot", "advisory", "ok")
+        thread["comments"]["nodes"].append(
+            {"author": {"login": "claude-code-bot", "__typename": "Bot"}, "body": body, "url": "u"}
+        )
+        return thread
+
+    def test_classify_looked_open_is_machine_clearable(self) -> None:
+        now = datetime(2026, 6, 16, tzinfo=timezone.utc)
+        pr = _pr(number=9, created_at=now - timedelta(days=1), threads=(self._looked_open_thread(),))
+        report = review_feedback_loop._classify_pr_for_looker(pr, now=now)
+        self.assertEqual(report["threads"][0]["disposition"], "looked-open")
+        self.assertEqual(report["machine_clearable"], 1)
+        self.assertEqual(report["lane"], "machine-disposable")  # recoverable, clearable
+
+    def test_classify_human_on_truncated_page_is_human_not_unprovable(self) -> None:
+        # A human on the page we DO have is definitive — truncation must not mask it.
+        now = datetime(2026, 6, 16, tzinfo=timezone.utc)
+        thread = _thread(authors=("loganfinney27",), author_type="User")
+        thread["comments"]["pageInfo"] = {"hasNextPage": True}
+        pr = _pr(number=10, created_at=now - timedelta(days=1), threads=(thread,))
+        report = review_feedback_loop._classify_pr_for_looker(pr, now=now)
+        self.assertEqual(report["threads"][0]["disposition"], "human")
+        self.assertEqual(report["human_threads"], 1)
+        self.assertEqual(report["unprovable_threads"], 0)
+        self.assertEqual(report["lane"], "needs-human")
+
+    def test_classify_needs_human_on_mixed_human_and_bot(self) -> None:
+        now = datetime(2026, 6, 16, tzinfo=timezone.utc)
+        human = _thread(authors=("loganfinney27",), author_type="User")
+        pr = _pr(
+            number=11, created_at=now - timedelta(days=1),
+            threads=(human, self._bot_thread()),
+        )
+        report = review_feedback_loop._classify_pr_for_looker(pr, now=now)
+        self.assertEqual(report["lane"], "needs-human")  # any human forces it
+        self.assertEqual(report["machine_clearable"], 1)  # the bot thread, still counted
+        self.assertEqual(report["human_threads"], 1)
+
+    def test_classify_needs_human_on_truncated_thread_list(self) -> None:
+        # reviewThreads itself is paginated: a blocking thread may lie beyond page 1.
+        now = datetime(2026, 6, 16, tzinfo=timezone.utc)
+        pr = _pr(
+            number=12, created_at=now - timedelta(days=1),
+            threads=(self._bot_thread(),), threads_truncated=True,
+        )
+        report = review_feedback_loop._classify_pr_for_looker(pr, now=now)
+        self.assertTrue(report["threads_truncated"])
+        self.assertEqual(report["lane"], "needs-human")
+        self.assertFalse(report["safe_to_drain"])
+
+    def test_classify_stale_uses_updated_at_over_created_at(self) -> None:
+        now = datetime(2026, 6, 16, tzinfo=timezone.utc)
+        pr = _pr(
+            number=13, created_at=now - timedelta(days=30),
+            updated_at=now - timedelta(days=1), threads=(self._bot_thread(),),
+        )
+        report = review_feedback_loop._classify_pr_for_looker(pr, now=now, stale_days=14)
+        self.assertFalse(report["stale"])  # recent activity wins over old creation
+        self.assertTrue(report["safe_to_drain"])
+
+    def test_stale_days_rejects_non_positive(self) -> None:
+        for bad in ("0", "-1"):
+            with self.assertRaises(SystemExit):
+                review_feedback_loop.build_parser().parse_args(
+                    ["looker-walk", "--owner", "o", "--repo", "r", "--stale-days", bad]
+                )
+
+    def test_looker_walk_is_read_only_and_emits_json(self) -> None:
+        pr = _pr(number=8, created_at=datetime(2026, 6, 15, tzinfo=timezone.utc),
+                 threads=(self._bot_thread(),))
         args = review_feedback_loop.build_parser().parse_args(
             ["looker-walk", "--owner", "o", "--repo", "r"]
         )
+        buf = io.StringIO()
         with mock.patch.object(review_feedback_loop, "_list_open_pr_numbers", return_value=[8]), \
              mock.patch.object(review_feedback_loop, "_fetch_pr", return_value=pr), \
              mock.patch.object(review_feedback_loop, "_resolve_thread") as resolve, \
-             mock.patch.object(review_feedback_loop, "_add_thread_reply") as reply:
+             mock.patch.object(review_feedback_loop, "_add_thread_reply") as reply, \
+             contextlib.redirect_stdout(buf):
             rc = review_feedback_loop.looker_walk(args)
         self.assertEqual(rc, 0)
         resolve.assert_not_called()
         reply.assert_not_called()
+        data = json.loads(buf.getvalue())
+        self.assertEqual(data["open_prs"], 1)
+        self.assertEqual(data["by_lane"], {"machine-disposable": 1})
+        self.assertIsInstance(data["safe_to_drain"], list)
+        self.assertEqual(data["reports"][0]["pr"], 8)
+        self.assertEqual(data["reports"][0]["lane"], "machine-disposable")
 
 
 if __name__ == "__main__":
