@@ -1,8 +1,19 @@
-name: Auto-merge Rhythm — Maintainer & Sync Bot
+name: Auto-merge Rhythm — Sync Bot
 
-# Companion to dependabot-rhythm.yml. Enables auto-merge on PRs from
-# trusted authors (Logan + the sync-dependencies bot) so routine,
-# scope-clean PRs flow through the merge queue without manual clicks.
+# Companion to dependabot-rhythm.yml. Enables auto-merge only on the
+# repo's own dependency-sync PRs so that routine, scope-clean updates
+# flow through the merge queue without manual clicks.
+#
+# FAIL-CLOSED (2026-06-16, #521): the former `user.login == 'loganfinney27'`
+# arm was removed. Author login is a counterfeit-identity gate — agents
+# author PRs *as* loganfinney27 through a shared token, so arming on the
+# login armed agent work as if the keyed human had acted (the merge-side
+# twin of a blind auto-resolve). The correct replacement is to arm only on
+# a GitHub-VERIFIED signature that resolves to a distinct maintainer
+# identity — which is blocked on the signing-chain decision in #398
+# (human-signing chain still breaks; per-agent App signing not yet
+# provisioned). Until #398 lands an identity-distinct verified signer, no
+# login-based maintainer auto-arm exists; Logan merges his own PRs by hand.
 #
 # Same protected-path guard and required-checks verification as the
 # Dependabot job. PRs that touch governance, workflows, or agent
@@ -17,17 +28,14 @@ permissions:
   pull-requests: write
 
 jobs:
+  # Job id retained as `auto-merge-maintainer` to avoid breaking any
+  # branch-protection / check references; its scope is now sync-bot only.
   auto-merge-maintainer:
     if: >
       github.event.pull_request.base.ref == 'main' &&
       github.event.pull_request.draft == false &&
-      (
-        github.event.pull_request.user.login == 'loganfinney27' ||
-        (
-          github.event.pull_request.user.login == 'github-actions[bot]' &&
-          startsWith(github.event.pull_request.title, 'chore: sync requirements.txt and uv.lock')
-        )
-      )
+      github.event.pull_request.user.login == 'github-actions[bot]' &&
+      startsWith(github.event.pull_request.title, 'chore: sync requirements.txt and uv.lock')
     runs-on: ubuntu-latest
     steps:
       - name: Exclude protected live surfaces from automatic merge
