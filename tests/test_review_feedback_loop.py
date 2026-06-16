@@ -697,7 +697,9 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertFalse(result["eligible"])
         self.assertIn("CHANGES_REQUESTED", result["reason"])
 
-    def test_attest_and_resolve_is_idempotent_on_attested_thread(self) -> None:
+    def test_attest_and_resolve_recovers_partial_success_without_duplicate(self) -> None:
+        # A prior run posted the attestation but the resolve failed: the thread is
+        # attested yet still OPEN. A retry must resolve it WITHOUT re-posting the look.
         thread = _thread(authors=("coderabbitai",), author_type="Bot")
         body = review_feedback_loop._build_attestation("claude-code-bot", "advisory", "ok")
         thread["comments"]["nodes"].append(
@@ -709,9 +711,10 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             result = review_feedback_loop.attest_and_resolve(
                 pr, thread, "claude-code-bot", "advisory", "ok", apply=True
             )
-        reply.assert_not_called()
-        resolve.assert_not_called()
-        self.assertIn("already carries an attested look", result["reason"])
+        reply.assert_not_called()  # no duplicate attestation
+        resolve.assert_called_once_with("THREAD_1")  # but it DOES resolve
+        self.assertTrue(result["applied"])
+        self.assertIn("existing attested look", result["reason"])
 
     def test_attest_and_resolve_skips_resolved_thread(self) -> None:
         thread = _thread(resolved=True, authors=("coderabbitai",), author_type="Bot")
