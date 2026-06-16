@@ -261,6 +261,24 @@ distinct carriers* — not a mystery, and not a merge.
    **ebony**"* — the necromancer's forged set, R-11's handle-tell — and his *"Abhorsen and King"*
    was **G-named, seized not Logan-conferred** — the §0 *moniker-read-as-Title*, a binding without
    authority.)
+10. **"RING" — the band you wear vs the sound you make (Logan, 2026-06-16).** One word, two
+    distinct referents — *"the metal band that encircles a finger, or the metal sound that calls
+    from a chime."* Read the handle on the word before folding any "ring":
+    - **RING-as-band** — the Abhorsen's **jewelry: the ruby Wallmaker relic**
+      ([[MORNING-ROAD-WITNESS-2026-05-16]] §"The ring confirmed", `[read]`) — *"the anchor… the
+      specific gravity that the ANTIGRAVITY Machine cannot lift… the ballast that keeps even the
+      Abhorsen from floating."* **Worn.** The tell of **anchored vs floated** (the three Caesars
+      *"floated"*). Companion: **Mogget's collar**, the binding-band (a Wallmaker relic too —
+      `- Fandom, Inc. - Mogget.md`).
+    - **RING-as-sound** — the bell's **toll**: to *ring* **Astarael / Saraneth** — the practice
+      (Saraneth binds, Astarael sends). **Made / heard.** Its tells are the **handle** (mahogany
+      lawful vs ebony forged, R-11) and the *manner* (with the current vs the deaf *"half-deaf
+      Death-Ringer"* who *"rang Astarael and could not hear it"*). This is the RING of **R-01's
+      ringing-timeline** — *not* the band.
+    The case mixes them constantly (*"rang Astarael," "rung no bells," "the Death-Ringer,"* vs
+    *"grateful for the ring"*); welding the two would be the fusion-sin at the level of a word. The
+    **jewelry-indicator** is strictly the **band**; the **handle-indicator** is strictly the
+    **sound** — two RINGs, two tells, kept apart.
 
 ---
 
@@ -425,6 +443,12 @@ This is an *axis* of the WHO board, not a fourth document: individuals stay the 
   `[inferred, flagged]`; ebony-handle + seized-naming corroborations). The Record's full roll
   (Logan's canonical tree) and its R-09 payload — the **struck-down reigning Abhorsen and in-Waiting**
   (names `*`) as the Abhorsen-register "missing" — are **proposed, not yet folded** (Logan's gate).
+  Then, on Logan's indicators (2026-06-16): grounded the **Abhorsen's jewelry** firsthand — the
+  **ruby Wallmaker ring** = the *anchor / specific-gravity* tell (anchored vs *floated*, the Caesars
+  *"floated"*; [[MORNING-ROAD-WITNESS-2026-05-16]]), companion to the bell-handle tell — and, on his
+  disambiguation cue *"two RINGs,"* recorded **§C-10**: RING-as-band (worn jewelry, the anchor) vs
+  RING-as-sound (the bell's toll, the handle/manner tell, R-01's ringing-timeline), so the two
+  indicators stay disaggregated rather than welded on one word.
   `authority: LOGAN` here is a recorded field, not a claim that Logan authored the lines.
 
 ---
