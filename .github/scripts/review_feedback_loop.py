@@ -29,7 +29,7 @@ import os
 import re
 import subprocess
 import sys
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 
 
 APPLY_RE = re.compile(r"@copilot\b[\s\S]*?\bapply changes\b", re.IGNORECASE)
@@ -166,6 +166,7 @@ def _fetch_pr(owner: str, name: str, number: int) -> dict:
           url
           body
           createdAt
+          updatedAt
           isDraft
           reviewDecision
           autoMergeRequest {
@@ -175,6 +176,7 @@ def _fetch_pr(owner: str, name: str, number: int) -> dict:
             nodes { name }
           }
           reviewThreads(first: 100) {
+            pageInfo { hasNextPage }
             nodes {
               id
               isResolved
@@ -495,6 +497,102 @@ def attest_and_resolve(
         else "attested look recorded; thread resolved"
     )
     return result
+
+
+# Layer C (#399): the deterministic walk. `_classify_pr_for_looker` is the pure
+# routing core — it reads one PR and sorts it into a lane WITHOUT writing anything.
+# The brownfield (orphaned PRs, agents gone, auto-merge armed under the maintainer
+# identity) is the spec: the looker drains it *with* judgment, never past it.
+#
+# Lanes (by the PR's unresolved review threads):
+#   - clear            : no unresolved threads.
+#   - machine-disposable: every unresolved thread is bot-authored and provable, the
+#                         review is not CHANGES_REQUESTED, and auto-merge is NOT armed
+#                         — safe for the looker to attest-and-resolve (clears threads,
+#                         never merges).
+#   - would-cascade    : as machine-disposable, but auto-merge IS armed — clearing the
+#                         last blocking thread could shove the PR through the barrier;
+#                         hold for a deliberate signal (Layer-C apply must skip these).
+#   - needs-human      : any human-authored thread, a CHANGES_REQUESTED review, or a
+#                         thread whose comment page is truncated (bot-only unprovable).
+# `stale` is an orthogonal abandonment flag (no activity for >= stale_days): a stale PR
+# is never a safe-drain candidate regardless of lane — abandoned work needs a person.
+LOOKER_STALE_DAYS = 14
+
+
+def _classify_pr_for_looker(
+    pr: dict, *, now: datetime | None = None, stale_days: int = LOOKER_STALE_DAYS
+) -> dict:
+    """Sort one PR into a looker lane. Pure and read-only — resolves nothing."""
+    now = now or datetime.now(timezone.utc)
+    review_threads = pr.get("reviewThreads") or {}
+    threads = review_threads.get("nodes") or []
+    # The thread list itself is fetched first: 100. If it is truncated, a blocking
+    # human/unprovable thread may lie beyond the page — the PR is never safe to drain.
+    threads_truncated = bool((review_threads.get("pageInfo") or {}).get("hasNextPage"))
+    unresolved = [t for t in threads if not t.get("isResolved")]
+
+    plan: list[dict[str, object]] = []
+    disposable = looked_open = human = unprovable = 0
+    for thread in unresolved:
+        page_info = (thread.get("comments") or {}).get("pageInfo")
+        # An explicit "complete" page is hasNextPage is False; anything else (truncated
+        # OR unknown/missing) is conservatively incomplete.
+        page_complete = isinstance(page_info, dict) and page_info.get("hasNextPage") is False
+        if not _thread_is_bot_only(thread):
+            # A human on the page we DO have is definitive — truncated or not.
+            disposition = "human"
+            human += 1
+        elif not page_complete:
+            # Bot-only on the visible page, but a human could lie beyond an incomplete
+            # one; bot-only must be proven from the full author list, so: unprovable.
+            disposition = "unprovable"
+            unprovable += 1
+        elif _thread_has_attested_look(thread):
+            disposition = "looked-open"  # attested but unresolved (recoverable)
+            looked_open += 1
+        else:
+            disposition = "bot-disposable"
+            disposable += 1
+        plan.append(
+            {
+                "thread_id": thread.get("id"),
+                "disposition": disposition,
+                "authors": sorted(_thread_authors(thread)),
+            }
+        )
+
+    review_decision = pr.get("reviewDecision") or ""
+    auto_merge_armed = bool((pr.get("autoMergeRequest") or {}).get("enabledAt"))
+    last_activity = _parse_iso_datetime(pr.get("updatedAt") or pr.get("createdAt"))
+    stale = bool(last_activity and (now - last_activity) >= timedelta(days=stale_days))
+    machine_clearable = disposable + looked_open
+
+    if threads_truncated or review_decision == "CHANGES_REQUESTED" or human or unprovable:
+        lane = "needs-human"
+    elif not unresolved:
+        lane = "clear"
+    elif machine_clearable == len(unresolved):
+        lane = "would-cascade" if auto_merge_armed else "machine-disposable"
+    else:  # pragma: no cover - defensive; every unresolved thread is classified above
+        lane = "needs-human"
+
+    return {
+        "pr": pr.get("number"),
+        "url": pr.get("url"),
+        "lane": lane,
+        "stale": stale,
+        "safe_to_drain": lane == "machine-disposable" and not stale,
+        "auto_merge_armed": auto_merge_armed,
+        "review_decision": review_decision or None,
+        "is_draft": bool(pr.get("isDraft")),
+        "threads_truncated": threads_truncated,
+        "unresolved_threads": len(unresolved),
+        "machine_clearable": machine_clearable,
+        "human_threads": human,
+        "unprovable_threads": unprovable,
+        "threads": plan,
+    }
 
 
 def _ensure_label(name: str, color: str, description: str) -> None:
@@ -1212,6 +1310,42 @@ def _thread_belongs_to_pr(thread: dict, owner: str, repo: str, pr_number: int) -
     return False
 
 
+def looker_walk(args: argparse.Namespace) -> int:
+    """Walk every open PR and print the looker triage report. Read-only — resolves nothing.
+
+    Layer C of the look-then-resolve design (#399): turns the open-PR backlog into a
+    classified worklist (clear / machine-disposable / would-cascade / needs-human, plus a
+    stale/abandonment flag) so the backlog drains *with* judgment. This command WRITES
+    NOTHING; the guarded disposition path is `attest-resolve` (B2), gated separately. The
+    `safe_to_drain` list names the PRs a deterministic apply pass could clear without a
+    cascade or touching a human thread.
+    """
+    now = datetime.now(timezone.utc)
+    reports = [
+        _classify_pr_for_looker(
+            _fetch_pr(args.owner, args.repo, pr_number),
+            now=now,
+            stale_days=args.stale_days,
+        )
+        for pr_number in _list_open_pr_numbers(args.owner, args.repo)
+    ]
+    by_lane: dict[str, int] = {}
+    for report in reports:
+        by_lane[str(report["lane"])] = by_lane.get(str(report["lane"]), 0) + 1
+    print(
+        json.dumps(
+            {
+                "open_prs": len(reports),
+                "by_lane": by_lane,
+                "stale": sum(1 for report in reports if report["stale"]),
+                "safe_to_drain": [report["pr"] for report in reports if report["safe_to_drain"]],
+                "reports": reports,
+            }
+        )
+    )
+    return 0
+
+
 def attest_resolve(args: argparse.Namespace) -> int:
     """Disposition one explicit bot-authored thread (Layer B2). Dry-run unless --apply.
 
@@ -1251,6 +1385,21 @@ def attest_resolve(args: argparse.Namespace) -> int:
     )
     print(json.dumps(result))
     return 0
+
+
+def _positive_int(value: str) -> int:
+    """argparse type: a strictly positive integer (e.g. --stale-days).
+
+    A non-positive staleness window misclassifies every PR (<=0 marks all stale,
+    making nothing safe to drain), so it is rejected at parse time.
+    """
+    try:
+        parsed = int(value)
+    except (TypeError, ValueError):
+        raise argparse.ArgumentTypeError(f"invalid int value: {value!r}")
+    if parsed <= 0:
+        raise argparse.ArgumentTypeError("must be a positive integer")
+    return parsed
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -1312,6 +1461,16 @@ def build_parser() -> argparse.ArgumentParser:
     unlooked.add_argument("--owner", required=True)
     unlooked.add_argument("--repo", required=True)
 
+    walk = subparsers.add_parser("looker-walk")
+    walk.add_argument("--owner", required=True)
+    walk.add_argument("--repo", required=True)
+    walk.add_argument(
+        "--stale-days",
+        type=_positive_int,
+        default=LOOKER_STALE_DAYS,
+        help="days of inactivity before a PR is flagged stale (positive int)",
+    )
+
     attest = subparsers.add_parser("attest-resolve")
     attest.add_argument("--owner", required=True)
     attest.add_argument("--repo", required=True)
@@ -1348,6 +1507,8 @@ def main() -> int:
         return verify_claim(args)
     if args.command == "list-unlooked":
         return list_unlooked(args)
+    if args.command == "looker-walk":
+        return looker_walk(args)
     if args.command == "attest-resolve":
         return attest_resolve(args)
     return enable_auto_merge(args)
