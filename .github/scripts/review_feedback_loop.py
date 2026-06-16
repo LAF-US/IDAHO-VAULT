@@ -325,6 +325,12 @@ def _thread_resolution_disposition(thread: dict) -> str:
     return "needs-fix"
 
 
+# Dispositions a bare attest-and-resolve apply pass may clear WITHOUT a fix:
+# genuinely stale (outdated) or already-attested. needs-fix and apply-suggestion are
+# NOT here — they require a real fix / an applied suggestion, not a bare resolve.
+BARE_RESOLVABLE_DISPOSITIONS: frozenset[str] = frozenset({"outdated-resolvable", "looked"})
+
+
 def _build_attestation(
     looker: str,
     decision: str,
@@ -635,7 +641,16 @@ def _classify_pr_for_looker(
         "url": pr.get("url"),
         "lane": lane,
         "stale": stale,
-        "safe_to_drain": lane == "machine-disposable" and not stale,
+        # safe_to_drain is the APPLY-PASS candidate signal: a bare attest-and-resolve
+        # could clear every thread WITHOUT a fix. It requires more than the coarse
+        # machine-disposable lane — every thread must be bare-resolvable (outdated/looked).
+        # A needs-fix or apply-suggestion thread is NOT bare-drainable (needs a real fix /
+        # applied suggestion), so it must not be advertised as drainable. (codex on #529.)
+        "safe_to_drain": (
+            lane == "machine-disposable"
+            and not stale
+            and all(entry["resolution"] in BARE_RESOLVABLE_DISPOSITIONS for entry in plan)
+        ),
         "auto_merge_armed": auto_merge_armed,
         "review_decision": review_decision or None,
         "is_draft": bool(pr.get("isDraft")),
