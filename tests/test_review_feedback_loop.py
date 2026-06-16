@@ -835,13 +835,28 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
     def _bot_thread(self) -> dict[str, object]:
         return _thread(authors=("coderabbitai",), author_type="Bot")
 
-    def test_classify_machine_disposable(self) -> None:
+    def test_classify_needs_fix_is_machine_lane_but_not_drainable(self) -> None:
+        # A plain bot prose finding is the coarse machine-disposable LANE, but it is a
+        # needs-fix (substantive) thread — NOT safe_to_drain. A bare attest-resolve would
+        # rubber-stamp a caught error. (codex review on #529.)
         now = datetime(2026, 6, 16, tzinfo=timezone.utc)
         pr = _pr(number=1, created_at=now - timedelta(days=1), threads=(self._bot_thread(),))
         report = review_feedback_loop._classify_pr_for_looker(pr, now=now)
         self.assertEqual(report["lane"], "machine-disposable")
-        self.assertTrue(report["safe_to_drain"])
+        self.assertEqual(report["threads"][0]["resolution"], "needs-fix")
+        self.assertFalse(report["safe_to_drain"])
         self.assertFalse(report["stale"])
+
+    def test_classify_outdated_bot_thread_is_safe_to_drain(self) -> None:
+        # Bare-resolvable: an outdated bot-only thread (referenced lines moved) is the one
+        # non-stale case a bare attest-resolve may clear without a fix.
+        now = datetime(2026, 6, 16, tzinfo=timezone.utc)
+        thread = _thread(authors=("coderabbitai",), author_type="Bot", outdated=True)
+        pr = _pr(number=14, created_at=now - timedelta(days=1), threads=(thread,))
+        report = review_feedback_loop._classify_pr_for_looker(pr, now=now)
+        self.assertEqual(report["threads"][0]["resolution"], "outdated-resolvable")
+        self.assertEqual(report["lane"], "machine-disposable")
+        self.assertTrue(report["safe_to_drain"])
 
     def test_classify_would_cascade_when_auto_merge_armed(self) -> None:
         now = datetime(2026, 6, 16, tzinfo=timezone.utc)
@@ -954,11 +969,12 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         now = datetime(2026, 6, 16, tzinfo=timezone.utc)
         pr = _pr(
             number=13, created_at=now - timedelta(days=30),
-            updated_at=now - timedelta(days=1), threads=(self._bot_thread(),),
+            updated_at=now - timedelta(days=1),
+            threads=(_thread(authors=("coderabbitai",), author_type="Bot", outdated=True),),
         )
         report = review_feedback_loop._classify_pr_for_looker(pr, now=now, stale_days=14)
         self.assertFalse(report["stale"])  # recent activity wins over old creation
-        self.assertTrue(report["safe_to_drain"])
+        self.assertTrue(report["safe_to_drain"])  # bare-resolvable (outdated) + not stale
 
     def test_stale_days_rejects_non_positive(self) -> None:
         for bad in ("0", "-1"):
