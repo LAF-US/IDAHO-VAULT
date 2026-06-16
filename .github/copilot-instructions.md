@@ -41,7 +41,7 @@ Before proposing new conventions, structures, templates, or workflows, READ the 
 
 When reviewing pull requests, avoid these known false positives:
 
-- **Markdown tables.** This vault's GitHub-flavored Markdown tables use a **single** leading `|` per row and render correctly. Do **not** report that rows "start with `||`" or "introduce an empty first column" unless the diff *literally* contains a `||` token (verify by searching the changed lines for `||` before flagging). This has been a repeated false alarm on correctly-formed tables (e.g. PRs #517, #519, #522) and should not recur.
+- **Markdown tables.** This vault's GitHub-flavored Markdown tables use a **single** leading `|` per row and render correctly. Do **not** report that a table row "starts with `||`" or "introduces an empty first column" unless that row literally begins with two pipes. This specific table claim has recurred as a false alarm across several prior PRs and should not recur. The exception is narrow: it applies only to the empty-first-column table claim, not to genuine `||` occurrences elsewhere (e.g. a logical-OR in code), which should still be reviewed normally.
 
 Otherwise review normally: surface real correctness, rendering, security, and convention issues, and prefer specific, verifiable findings over stylistic speculation.
 
