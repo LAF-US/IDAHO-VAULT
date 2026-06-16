@@ -604,11 +604,27 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         with self.assertRaises(ValueError):
             review_feedback_loop._build_attestation("claude-code-bot", "bogus", "x")
 
-    def test_build_attestation_rejects_bracketed_looker(self) -> None:
-        # a [bot]-suffixed login would produce an attestation the detector can
-        # never match (its by= grammar excludes brackets) — fail fast, not silently.
-        with self.assertRaises(ValueError):
-            review_feedback_loop._build_attestation("github-actions[bot]", "advisory", "x")
+    def test_build_attestation_accepts_bot_identity_looker(self) -> None:
+        # B2 decision: a looker may sign under its native App/CI identity, e.g.
+        # github-actions[bot]. The attestation still round-trips through the detector.
+        body = review_feedback_loop._build_attestation(
+            "github-actions[bot]", "advisory", "advisory; no change needed"
+        )
+        self.assertIn("by=github-actions[bot]", body)
+        thread = _thread(authors=("coderabbitai",), author_type="Bot")
+        thread["comments"]["nodes"].append(
+            {
+                "author": {"login": "github-actions[bot]", "__typename": "Bot"},
+                "body": body,
+                "url": "u",
+            }
+        )
+        self.assertTrue(review_feedback_loop._thread_has_attested_look(thread))
+
+    def test_build_attestation_rejects_malformed_looker(self) -> None:
+        for bad in ("has space", "a/b", "[bot]", "", "-leading"):
+            with self.assertRaises(ValueError):
+                review_feedback_loop._build_attestation(bad, "advisory", "x")
 
     def test_build_attestation_normalizes_timestamp_to_utc_zulu(self) -> None:
         # naive datetime is treated as UTC (never local)
@@ -623,6 +639,186 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             "at=2026-06-16T01:00:00Z",
             review_feedback_loop._build_attestation("claude-code-bot", "advisory", "x", now=plus5),
         )
+
+
+    # ----- Layer B2: attest_and_resolve (the guarded disposition core) -----
+
+    def test_attest_and_resolve_dry_run_writes_nothing(self) -> None:
+        thread = _thread(authors=("coderabbitai",), author_type="Bot")
+        pr = _pr(threads=(thread,))
+        with mock.patch.object(review_feedback_loop, "_add_thread_reply") as reply, \
+             mock.patch.object(review_feedback_loop, "_resolve_thread") as resolve:
+            result = review_feedback_loop.attest_and_resolve(
+                pr, thread, "claude-code-bot", "advisory", "ok"
+            )
+        reply.assert_not_called()
+        resolve.assert_not_called()
+        self.assertTrue(result["eligible"])
+        self.assertFalse(result["applied"])
+        self.assertIn(review_feedback_loop.LOOK_ATTESTATION_MARKER, result["attestation"])
+
+    def test_attest_and_resolve_apply_attests_then_resolves(self) -> None:
+        thread = _thread(authors=("coderabbitai",), author_type="Bot")
+        pr = _pr(threads=(thread,))
+        manager = mock.Mock()
+        with mock.patch.object(review_feedback_loop, "_viewer_login", return_value="claude-code-bot"), \
+             mock.patch.object(review_feedback_loop, "_add_thread_reply") as reply, \
+             mock.patch.object(review_feedback_loop, "_resolve_thread") as resolve:
+            manager.attach_mock(reply, "reply")
+            manager.attach_mock(resolve, "resolve")
+            result = review_feedback_loop.attest_and_resolve(
+                pr, thread, "claude-code-bot", "advisory", "ok", apply=True
+            )
+        # look, THEN resolve — the attestation reply strictly precedes the resolve
+        manager.assert_has_calls(
+            [mock.call.reply("THREAD_1", mock.ANY), mock.call.resolve("THREAD_1")]
+        )
+        self.assertTrue(result["applied"])
+
+    def test_attest_and_resolve_skips_human_thread(self) -> None:
+        thread = _thread(authors=("coderabbitai",), author_type="Bot")
+        thread["comments"]["nodes"].append(
+            {"author": {"login": "loganfinney27", "__typename": "User"}, "body": "x", "url": "u"}
+        )
+        pr = _pr(threads=(thread,))
+        with mock.patch.object(review_feedback_loop, "_add_thread_reply") as reply, \
+             mock.patch.object(review_feedback_loop, "_resolve_thread") as resolve:
+            result = review_feedback_loop.attest_and_resolve(
+                pr, thread, "claude-code-bot", "advisory", "ok", apply=True
+            )
+        reply.assert_not_called()
+        resolve.assert_not_called()
+        self.assertFalse(result["eligible"])
+        self.assertIn("not bot-authored", result["reason"])
+
+    def test_attest_and_resolve_skips_changes_requested(self) -> None:
+        thread = _thread(authors=("coderabbitai",), author_type="Bot")
+        pr = _pr(review_decision="CHANGES_REQUESTED", threads=(thread,))
+        with mock.patch.object(review_feedback_loop, "_add_thread_reply") as reply, \
+             mock.patch.object(review_feedback_loop, "_resolve_thread") as resolve:
+            result = review_feedback_loop.attest_and_resolve(
+                pr, thread, "claude-code-bot", "advisory", "ok", apply=True
+            )
+        reply.assert_not_called()
+        resolve.assert_not_called()
+        self.assertFalse(result["eligible"])
+        self.assertIn("CHANGES_REQUESTED", result["reason"])
+
+    def test_attest_and_resolve_recovers_partial_success_without_duplicate(self) -> None:
+        # A prior run posted the attestation but the resolve failed: the thread is
+        # attested yet still OPEN. A retry must resolve it WITHOUT re-posting the look.
+        thread = _thread(authors=("coderabbitai",), author_type="Bot")
+        body = review_feedback_loop._build_attestation("claude-code-bot", "advisory", "ok")
+        thread["comments"]["nodes"].append(
+            {"author": {"login": "claude-code-bot", "__typename": "Bot"}, "body": body, "url": "u"}
+        )
+        pr = _pr(threads=(thread,))
+        with mock.patch.object(review_feedback_loop, "_add_thread_reply") as reply, \
+             mock.patch.object(review_feedback_loop, "_resolve_thread") as resolve:
+            result = review_feedback_loop.attest_and_resolve(
+                pr, thread, "claude-code-bot", "advisory", "ok", apply=True
+            )
+        reply.assert_not_called()  # no duplicate attestation
+        resolve.assert_called_once_with("THREAD_1")  # but it DOES resolve
+        self.assertTrue(result["applied"])
+        self.assertIn("existing attested look", result["reason"])
+
+    def test_attest_and_resolve_skips_resolved_thread(self) -> None:
+        thread = _thread(resolved=True, authors=("coderabbitai",), author_type="Bot")
+        pr = _pr(threads=(thread,))
+        with mock.patch.object(review_feedback_loop, "_add_thread_reply") as reply, \
+             mock.patch.object(review_feedback_loop, "_resolve_thread") as resolve:
+            result = review_feedback_loop.attest_and_resolve(
+                pr, thread, "claude-code-bot", "advisory", "ok", apply=True
+            )
+        reply.assert_not_called()
+        resolve.assert_not_called()
+        self.assertIn("already resolved", result["reason"])
+
+    def test_attest_and_resolve_refuses_paginated_comments(self) -> None:
+        # Bot-only cannot be proven from a truncated comment page — refuse.
+        thread = _thread(authors=("coderabbitai",), author_type="Bot")
+        thread["comments"]["pageInfo"] = {"hasNextPage": True}
+        pr = _pr(threads=(thread,))
+        with mock.patch.object(review_feedback_loop, "_add_thread_reply") as reply, \
+             mock.patch.object(review_feedback_loop, "_resolve_thread") as resolve:
+            result = review_feedback_loop.attest_and_resolve(
+                pr, thread, "claude-code-bot", "advisory", "ok", apply=True
+            )
+        reply.assert_not_called()
+        resolve.assert_not_called()
+        self.assertFalse(result["eligible"])
+        self.assertIn("paginated", result["reason"])
+
+    def test_attest_and_resolve_refuses_actor_mismatch(self) -> None:
+        # Self-attested: a looker that differs from the authenticated actor would post
+        # an undetectable attestation — refuse before any write.
+        thread = _thread(authors=("coderabbitai",), author_type="Bot")
+        pr = _pr(threads=(thread,))
+        with mock.patch.object(review_feedback_loop, "_viewer_login", return_value="github-actions[bot]"), \
+             mock.patch.object(review_feedback_loop, "_add_thread_reply") as reply, \
+             mock.patch.object(review_feedback_loop, "_resolve_thread") as resolve:
+            result = review_feedback_loop.attest_and_resolve(
+                pr, thread, "claude-code-bot", "advisory", "ok", apply=True
+            )
+        reply.assert_not_called()
+        resolve.assert_not_called()
+        self.assertFalse(result["eligible"])
+        self.assertIn("does not match", result["reason"])
+
+    def test_attest_and_resolve_reports_missing_thread_id(self) -> None:
+        thread = _thread(authors=("coderabbitai",), author_type="Bot")
+        thread["id"] = None
+        pr = _pr(threads=(thread,))
+        result = review_feedback_loop.attest_and_resolve(
+            pr, thread, "claude-code-bot", "advisory", "ok", apply=True
+        )
+        self.assertFalse(result["eligible"])
+        self.assertIn("no id", result["reason"])
+
+    def test_attest_resolve_cli_dispatches_dry_run(self) -> None:
+        # parser + handler wiring smoke test (dry-run; no writes)
+        args = review_feedback_loop.build_parser().parse_args(
+            [
+                "attest-resolve", "--owner", "o", "--repo", "r", "--pr-number", "7",
+                "--thread-id", "THREAD_1", "--looker", "claude-code-bot",
+                "--decision", "advisory", "--rationale", "ok",
+            ]
+        )
+        self.assertEqual(args.command, "attest-resolve")
+        self.assertFalse(args.apply)
+        pr = _pr(number=7, threads=(_thread(authors=("coderabbitai",), author_type="Bot"),))
+        with mock.patch.object(review_feedback_loop, "_fetch_pr", return_value=pr), \
+             mock.patch.object(review_feedback_loop, "_add_thread_reply") as reply, \
+             mock.patch.object(review_feedback_loop, "_resolve_thread") as resolve:
+            rc = review_feedback_loop.attest_resolve(args)
+        self.assertEqual(rc, 0)
+        reply.assert_not_called()
+        resolve.assert_not_called()
+
+    def test_attest_resolve_cli_rejects_cross_pr_thread(self) -> None:
+        # The target thread isn't in the PR's first-100 window; the global node fetch
+        # returns one whose links point at a DIFFERENT PR — reject, never act on it.
+        args = review_feedback_loop.build_parser().parse_args(
+            [
+                "attest-resolve", "--owner", "laf-us", "--repo", "idaho-vault",
+                "--pr-number", "7", "--thread-id", "GLOBAL_ID", "--looker",
+                "claude-code-bot", "--decision", "advisory", "--apply",
+            ]
+        )
+        pr = _pr(number=7, threads=())  # target thread not in the window
+        foreign = _thread(authors=("coderabbitai",), author_type="Bot")
+        foreign["comments"]["nodes"][0]["url"] = (
+            "https://github.com/laf-us/idaho-vault/pull/999#discussion_r1"
+        )
+        with mock.patch.object(review_feedback_loop, "_fetch_pr", return_value=pr), \
+             mock.patch.object(review_feedback_loop, "_fetch_thread", return_value=foreign), \
+             mock.patch.object(review_feedback_loop, "_add_thread_reply") as reply, \
+             mock.patch.object(review_feedback_loop, "_resolve_thread") as resolve:
+            rc = review_feedback_loop.attest_resolve(args)
+        self.assertEqual(rc, 1)
+        reply.assert_not_called()
+        resolve.assert_not_called()
 
 
 if __name__ == "__main__":
