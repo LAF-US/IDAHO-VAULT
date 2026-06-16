@@ -1094,6 +1094,20 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertIn("**Open PRs:** 0", md)
         self.assertIn("none", md)
 
+    def test_render_looker_worklist_surfaces_truncated_needs_human(self) -> None:
+        # Truncated past page 1: lane needs-human, 0 VISIBLE unresolved. Must still surface
+        # (the census can't prove it clear) and be flagged truncated. (codex review on #531.)
+        report = {
+            "open_prs": 1, "by_lane": {"needs-human": 1}, "by_resolution": {},
+            "stale": 0, "safe_to_drain": [],
+            "reports": [{"pr": 88, "lane": "needs-human", "stale": False,
+                         "auto_merge_armed": False, "threads_truncated": True,
+                         "unresolved_threads": 0, "resolution_counts": {}}],
+        }
+        md = review_feedback_loop.render_looker_worklist(report)
+        self.assertIn("**#88**", md)  # surfaced despite 0 visible unresolved
+        self.assertIn("threads-truncated", md)
+
 
 if __name__ == "__main__":
     unittest.main()
