@@ -360,6 +360,31 @@ def _add_thread_reply(thread_id: str, body: str) -> None:
     _graphql(mutation, threadId=thread_id, body=body)
 
 
+def _fetch_thread(thread_id: str) -> dict | None:
+    """Fetch one review thread node directly by GraphQL ID.
+
+    A fallback for when an explicit target thread sits beyond `_fetch_pr`'s
+    `reviewThreads(first: 100)` window (a PR with >100 threads), so a valid id is
+    not falsely reported missing. Returns the same node shape as the PR query.
+    """
+    query = """
+    query($id: ID!) {
+      node(id: $id) {
+        ... on PullRequestReviewThread {
+          id
+          isResolved
+          isOutdated
+          comments(first: 100) {
+            nodes { author { login __typename } body url }
+          }
+        }
+      }
+    }
+    """
+    data = _graphql(query, id=thread_id)
+    return data.get("node")
+
+
 def attest_and_resolve(
     pr: dict,
     thread: dict,
@@ -400,22 +425,34 @@ def attest_and_resolve(
     if not _thread_is_bot_only(thread):
         result["reason"] = "thread is not bot-authored only"
         return result
-    if _thread_has_attested_look(thread):
-        result["reason"] = "thread already carries an attested look"
-        return result
+    # "Look, then resolve" is two separate mutations. An already-attested but still
+    # OPEN thread is a partial success (the reply landed, the resolve did not) — recover
+    # by resolving without posting a duplicate attestation, rather than no-op'ing and
+    # leaving the thread blocking forever. The fully-done case (attested AND resolved)
+    # is already short-circuited by the isResolved guard above.
+    already_looked = _thread_has_attested_look(thread)
 
     # Build (and thereby validate looker/decision) before any write.
     body = _build_attestation(looker, decision, rationale, now=now)
     result["eligible"] = True
     result["attestation"] = body
     if not apply:
-        result["reason"] = "dry-run: would record attested look and resolve"
+        result["reason"] = (
+            "dry-run: attested look already present, would resolve"
+            if already_looked
+            else "dry-run: would record attested look and resolve"
+        )
         return result
 
-    _add_thread_reply(thread_id, body)
+    if not already_looked:
+        _add_thread_reply(thread_id, body)
     _resolve_thread(thread_id)
     result["applied"] = True
-    result["reason"] = "attested look recorded; thread resolved"
+    result["reason"] = (
+        "existing attested look; thread resolved"
+        if already_looked
+        else "attested look recorded; thread resolved"
+    )
     return result
 
 
@@ -1130,6 +1167,8 @@ def attest_resolve(args: argparse.Namespace) -> int:
     pr = _fetch_pr(args.owner, args.repo, args.pr_number)
     threads = (pr.get("reviewThreads") or {}).get("nodes") or []
     thread = next((t for t in threads if t.get("id") == args.thread_id), None)
+    if thread is None:
+        thread = _fetch_thread(args.thread_id)  # beyond _fetch_pr's first-100 window
     if thread is None:
         print(
             json.dumps(
