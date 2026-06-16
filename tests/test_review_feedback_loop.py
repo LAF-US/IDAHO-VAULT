@@ -796,6 +796,30 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         reply.assert_not_called()
         resolve.assert_not_called()
 
+    def test_attest_resolve_cli_rejects_cross_pr_thread(self) -> None:
+        # The target thread isn't in the PR's first-100 window; the global node fetch
+        # returns one whose links point at a DIFFERENT PR — reject, never act on it.
+        args = review_feedback_loop.build_parser().parse_args(
+            [
+                "attest-resolve", "--owner", "laf-us", "--repo", "idaho-vault",
+                "--pr-number", "7", "--thread-id", "GLOBAL_ID", "--looker",
+                "claude-code-bot", "--decision", "advisory", "--apply",
+            ]
+        )
+        pr = _pr(number=7, threads=())  # target thread not in the window
+        foreign = _thread(authors=("coderabbitai",), author_type="Bot")
+        foreign["comments"]["nodes"][0]["url"] = (
+            "https://github.com/laf-us/idaho-vault/pull/999#discussion_r1"
+        )
+        with mock.patch.object(review_feedback_loop, "_fetch_pr", return_value=pr), \
+             mock.patch.object(review_feedback_loop, "_fetch_thread", return_value=foreign), \
+             mock.patch.object(review_feedback_loop, "_add_thread_reply") as reply, \
+             mock.patch.object(review_feedback_loop, "_resolve_thread") as resolve:
+            rc = review_feedback_loop.attest_resolve(args)
+        self.assertEqual(rc, 1)
+        reply.assert_not_called()
+        resolve.assert_not_called()
+
 
 if __name__ == "__main__":
     unittest.main()

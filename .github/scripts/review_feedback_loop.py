@@ -399,7 +399,10 @@ def _fetch_thread(thread_id: str) -> dict | None:
     }
     """
     data = _graphql(query, id=thread_id)
-    return data.get("node")
+    node = data.get("node") or {}
+    # A node id that exists but is not a review thread yields {} (the inline fragment
+    # doesn't apply) — treat that as missing, not as a thread with no id.
+    return node if node.get("id") else None
 
 
 def attest_and_resolve(
@@ -418,10 +421,12 @@ def attest_and_resolve(
     posts the looker's attestation as a thread reply and resolves that single thread,
     nothing else (the cascade-safety contract above).
 
-    Eligibility is reported, never raised. A thread is eligible only when: the PR's
-    review is not CHANGES_REQUESTED; every author of the thread is a bot
-    (`_thread_is_bot_only` — never a human thread); the thread is not already resolved;
-    and it does not already carry an attested look (idempotent — a re-run is a no-op).
+    Eligibility is reported, never raised. A thread is eligible when the PR's review is
+    not CHANGES_REQUESTED, every author is a bot (`_thread_is_bot_only` — never a human
+    thread, and only when the comment page is complete enough to prove it), and the
+    thread is not already resolved. An eligible thread that already carries an attested
+    look but is still open is resolved WITHOUT re-posting (partial-success recovery); a
+    fully resolved thread is a no-op.
 
     Returns a result dict: {thread_id, eligible, applied, reason, attestation?}.
     """
@@ -1194,6 +1199,19 @@ def list_unlooked(args: argparse.Namespace) -> int:
     return 0
 
 
+def _thread_belongs_to_pr(thread: dict, owner: str, repo: str, pr_number: int) -> bool:
+    """True if a thread's comment links place it on owner/repo PR #pr_number.
+
+    `_fetch_thread` resolves a *global* node id, so a stray or hostile id could point at
+    a thread on a different PR/repo; membership is verified before acting on it.
+    """
+    expected = f"/{owner}/{repo}/pull/{pr_number}".lower()
+    for comment in (thread.get("comments") or {}).get("nodes") or []:
+        if expected in (comment.get("url") or "").lower():
+            return True
+    return False
+
+
 def attest_resolve(args: argparse.Namespace) -> int:
     """Disposition one explicit bot-authored thread (Layer B2). Dry-run unless --apply.
 
@@ -1204,7 +1222,13 @@ def attest_resolve(args: argparse.Namespace) -> int:
     threads = (pr.get("reviewThreads") or {}).get("nodes") or []
     thread = next((t for t in threads if t.get("id") == args.thread_id), None)
     if thread is None:
-        thread = _fetch_thread(args.thread_id)  # beyond _fetch_pr's first-100 window
+        # Beyond _fetch_pr's first-100 window. node(id:) is global, so confirm the
+        # fetched thread is actually on THIS PR before touching it.
+        fetched = _fetch_thread(args.thread_id)
+        if fetched is not None and _thread_belongs_to_pr(
+            fetched, args.owner, args.repo, args.pr_number
+        ):
+            thread = fetched
     if thread is None:
         print(
             json.dumps(
