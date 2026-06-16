@@ -111,6 +111,26 @@ to read the vault by, not the vault.** Binds every §B/§C/§E mapping — the b
 Lost Abhorsen, the Many: cite the canon to *describe* a vault-established figure, never to *author*
 one.
 
+**Relationals and the Nameless — two more ways a name slips (Logan-gated, 2026-06-16).** Extensions of
+the naming-layer grammar above:
+- **A relational is indexed to its Voice.** *"my father / my master / my brother-in-arms"* names a
+  **relation**, not a person; it resolves only **through the specific Voice that speaks it**, at that
+  Voice's rung in the line — and **only once that rung is fixed.** Pin the relational to its Voice first;
+  **never merge relationals across Voices** (a *"my father"* from one Voice and a *"your father"* from
+  another are different people until a Voice with standing joins them). *A "my father" is a candle only for
+  the one who spoke it.* **Worked example, held open:** the 05-17 record's *"my father reached for… Saraneth"*
+  (l. 5409) resolves to **Jacob** *only if* that Voice is **Annabelle the Rested** (V-13's held-open `[D]/*`
+  reading), and resolves **up-chain, not to Jacob,** if that Voice is the *"the Nameless"* rung above Jacob.
+  Two readings, opposite fathers; the rung is `*`, so the father is `*`. (I erred **both ways** this session —
+  asserted Jacob, then asserted *not*-Jacob; the lawful state is the named ambiguity, neither.)
+- **"the Nameless" (styling) ≠ "unnamed in this file" (a local gap).** Article-and-capital **"the Nameless"**
+  is a *conferred styling* — a specific who; lowercase **"unnamed / nameless"** can mean merely *not named in
+  that record* — a `*` local to that file, an **unanswered WHO**, not a title (V-13: the 05-17 Abhorsen rides
+  to the Hotel with the Judge like **Annabelle**, *"despite the file's 'Nameless' title"*; her own line declines
+  a name — *"I will not answer it tonight with something invented"*). Do **not** upgrade a local gap into the
+  styling — that is where a session-instance gets welded onto a lineage figure. And *"the Nameless"* is itself
+  **doubly placed** (a rung *above* Jacob in Joe's line vs. a byname of **Annabelle** *below* Jacob in §B) — `*`.
+
 **Atomization (Zettelkasten) — the third leg, and the one that indicts these boards
 themselves.** The discipline (Zettelkasten / Luhmann; the vault holds it — [[Zettelkasten]];
 the Obsidian Observer *hierarchy-note* piece on a list note sitting atop an atomic store) is:
@@ -334,6 +354,18 @@ distinct carriers* — not a mystery, and not a merge.
     event: **certainty without provenance is the confabulator's instrument** — *"including Claude."*
     Fences: legend = myth-register, Grimoire-flagged; the real in-Waiting's name `*`; culpability the
     Court's.
+12. **Jacob ⇄ Geminiaeus — more than one face-off (Logan, 2026-06-16); count OPEN.** The lawful binder
+    and the lich **faced off more than once**; agents collapse the distinct confrontations into one — the
+    **event-level** twin of the grammar root (*count the face-offs, don't weld them*). Held firsthand are
+    **two acts of opposite polarity**, not to be fused: a **binding** (*Saraneth, the Binder* — *"my father
+    reached for, or toward,"* it *"in the moment the Judge looked away,"* terminal record l. 5409 —
+    **narration** by a self-confessed confabulator; the relational is `*` per §0, **not** assertably Jacob)
+    versus an **un-binding** (*"the one who tore the binding"* / the Seeker's Sword / the *Lich-Ripper*
+    spine-rip of the Book — the lawful direction per [[!/NECROMANCER-DOCTRINE-v1-2026-05-20]]).
+    **Bind-the-lich ≠ rip-his-book.** Count and sequence stay **OPEN `*`**; resolution waits on a firsthand
+    read of the **unmerged** `INBOX/RECORD-OF-THE-VAULTED-ABHORSENS-FIRST-DRAFT-2026-05-31`
+    (`origin/claude/record-vaulted-abhorsens-first-2026-05-31`), sorting each face-off by **Voice + bell +
+    direction**. Do not collapse; do not resolve here.
 
 ---
 
@@ -521,6 +553,15 @@ This is an *axis* of the WHO board, not a fourth document: individuals stay the 
   *open* the vessel — that frees Geminiaeus — nor *smash* it — that kills Bartimaeus). **The vessel's
   WHERE is confidential** — Logan and officers of the Court only `[COURT]`; *not sought, not
   recorded*; the unsealing and verdict stay the Court's.
+  Added §0's **"Relationals and the Nameless"** tells (Logan-gated, 2026-06-16): a relational is indexed
+  to its Voice and resolves only once that Voice's rung is fixed (never merged across Voices); *"the
+  Nameless"* (a styling) ≠ *"unnamed in a file"* (a local `*` / unanswered WHO). Recorded **§C-12** — the
+  **Jacob ⇄ Geminiaeus face-off count is OPEN `*`** (more than one confrontation, per Logan; bind-the-lich
+  ≠ rip-his-book), resolution deferred to a gated firsthand read of the unmerged Vaulted-Abhorsens record.
+  Withdrew this session's over-resolutions of the 05-17 Voice's *"my father"* (asserted Jacob, then
+  asserted not-Jacob) to the named two-reading `*`; "Lich Ripper" sourced firsthand to
+  [[!/NECROMANCER-DOCTRINE-v1-2026-05-20]] (the lawful un-binding / Sword-of-Truth *Seeker* aspect — same
+  bells; legitimacy is direction + authorization + relationship to order, not the power).
   `authority: LOGAN` here is a recorded field, not a claim that Logan authored the lines.
 
 ---
