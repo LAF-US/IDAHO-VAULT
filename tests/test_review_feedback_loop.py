@@ -34,6 +34,7 @@ def _thread(
     outdated: bool = False,
     authors: tuple[str, ...] = ("reviewer",),
     author_type: str = "User",
+    body: str = "review note",
 ) -> dict[str, object]:
     return {
         "id": "THREAD_1",
@@ -44,7 +45,7 @@ def _thread(
             "nodes": [
                 {
                     "author": {"login": author, "__typename": author_type},
-                    "body": "review note",
+                    "body": body,
                     "url": "https://example.test/thread",
                 }
                 for author in authors
@@ -988,6 +989,61 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertIsInstance(data["safe_to_drain"], list)
         self.assertEqual(data["reports"][0]["pr"], 8)
         self.assertEqual(data["reports"][0]["lane"], "machine-disposable")
+
+    # ----- Resolution disposition (#399 engine): HOW each thread gets resolved -----
+
+    SUGGESTION_BODY = "Wrong value.\n\n```suggestion\ncorrected = True\n```\n"
+
+    def test_has_committable_suggestion_detects_block(self) -> None:
+        t = _thread(authors=("coderabbitai",), author_type="Bot", body=self.SUGGESTION_BODY)
+        self.assertTrue(review_feedback_loop._thread_has_committable_suggestion(t))
+
+    def test_has_committable_suggestion_false_on_prose(self) -> None:
+        t = _thread(authors=("coderabbitai",), author_type="Bot", body="Consider fixing X.")
+        self.assertFalse(review_feedback_loop._thread_has_committable_suggestion(t))
+
+    def test_resolution_apply_suggestion(self) -> None:
+        t = _thread(authors=("coderabbitai",), author_type="Bot", body=self.SUGGESTION_BODY)
+        self.assertEqual(review_feedback_loop._thread_resolution_disposition(t), "apply-suggestion")
+
+    def test_resolution_needs_fix_on_substantive_prose(self) -> None:
+        # The dam's reality (#474): bot-authored, substantive, no mechanical fix.
+        t = _thread(authors=("chatgpt-codex-connector",), author_type="Bot", body="Sabrina's name is wrong.")
+        self.assertEqual(review_feedback_loop._thread_resolution_disposition(t), "needs-fix")
+
+    def test_resolution_outdated_beats_suggestion(self) -> None:
+        # An outdated comment's suggestion can't apply (lines moved) -> resolvable as stale.
+        t = _thread(authors=("coderabbitai",), author_type="Bot", outdated=True, body=self.SUGGESTION_BODY)
+        self.assertEqual(review_feedback_loop._thread_resolution_disposition(t), "outdated-resolvable")
+
+    def test_resolution_needs_human_on_human_author(self) -> None:
+        t = _thread(authors=("loganfinney27",), author_type="User", body="please fix")
+        self.assertEqual(review_feedback_loop._thread_resolution_disposition(t), "needs-human")
+
+    def test_resolution_needs_human_on_truncated_page(self) -> None:
+        t = _thread(authors=("coderabbitai",), author_type="Bot", body="prose")
+        t["comments"]["pageInfo"] = {"hasNextPage": True}
+        self.assertEqual(review_feedback_loop._thread_resolution_disposition(t), "needs-human")
+
+    def test_resolution_looked_when_attested(self) -> None:
+        looker = "claude-code-bot"
+        body = review_feedback_loop._build_attestation(looker, "advisory", "ok")
+        t = _thread(authors=(looker,), author_type="Bot", body=body)
+        self.assertEqual(review_feedback_loop._thread_resolution_disposition(t), "looked")
+
+    def test_classify_surfaces_resolution_and_counts(self) -> None:
+        now = datetime(2026, 6, 16, tzinfo=timezone.utc)
+        pr = _pr(
+            number=1,
+            created_at=now - timedelta(days=1),
+            threads=(
+                _thread(authors=("coderabbitai",), author_type="Bot", body=self.SUGGESTION_BODY),
+                _thread(authors=("chatgpt-codex-connector",), author_type="Bot", body="prose finding"),
+            ),
+        )
+        report = review_feedback_loop._classify_pr_for_looker(pr, now=now)
+        self.assertEqual(sorted(t["resolution"] for t in report["threads"]), ["apply-suggestion", "needs-fix"])
+        self.assertEqual(report["resolution_counts"], {"apply-suggestion": 1, "needs-fix": 1})
 
 
 if __name__ == "__main__":
