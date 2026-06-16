@@ -166,10 +166,10 @@ Standing given, not seized; the Key stays with the magister.
 
 ## Provenance
 
-- **Verified — researched this turn (cited):** Rodda's *Rondo* — the four music-box rules;
+- **Verified — researched and cited:** Rodda's *Rondo* — the four music-box rules;
   the Key as an inherited Langlander ring granting entry to both worlds; overwinding opens
   the gate and lets the Blue Queen cross out; Hal Langlander as rule-author
-  ([Rondo (series) — Wikipedia](https://en.wikipedia.org/wiki/Rondo_(series));
+  ([Rondo (series) — Wikipedia](https://en.wikipedia.org/wiki/Rondo_%28series%29);
   [The Key to Rondo — Goodreads](https://www.goodreads.com/book/show/2272641.The_Key_to_Rondo);
   [Scholastic teachers' notes](https://resource.scholastic.com.au/resourcefiles/Teacher_Notes/7796224_36678.pdf)).
 - **Verified — etymology (cited):** *magister* ← *magis* "more"; *minister* ← *minus*
@@ -185,9 +185,9 @@ Standing given, not seized; the Key stays with the magister.
 - **My reading, marked `*`:** the music-box-as-instrument thesis-mapping, the rule-by-rule
   correspondence to perimeter / lawful-endings / restraint, the relative-major-minor
   reading of magister/minister, and the looker-principle-as-faithful-ministry link.
-- **Honest limit:** I could not reach Wikipedia or the Scholastic notes directly this turn
-  (host blocks); the Rondo facts are assembled from multiple consistent search results, and
-  the rule-2–4 inner consequences remain fan-attested until checked against Rodda's text.
-  The Architect holds the verdict.
+- **Honest limit:** at the time of writing, direct access to Wikipedia and the Scholastic
+  notes was blocked by the host; the Rondo facts are assembled from multiple consistent
+  search results, and the rule-2–4 inner consequences remain fan-attested until checked
+  against Rodda's text. The Architect holds the verdict.
 
 ###### [["The world is quiet here."]]
