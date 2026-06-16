@@ -16,9 +16,11 @@ What are the literary origins of the phrase "red right hand," and what are its m
 
 4. **Modern Continuation**: **MEEK's 2026 song "Brixton"** continues the cultural legacy, featuring the line *"Smoking cigars with a bong in my red right hand"*—transforming the phrase into a symbol of **defiant self-possession and hedonism**.
 
-5. **Core Symbolism**: The phrase symbolizes **divine vengeance, retributive justice, overwhelming power, and the terror of divine wrath**, with "red" connoting blood, violence, and the staining of justice with force.
+5. **Literal Adaptation**: **Nefarian Serpine** (2007) from Derek Landy's *Skulduggery Pleasant* series features the **Red Right Hand as an actual magical ability**—a skinless hand that kills through necromantic power.
 
-6. **Cultural Legacy**: Milton's coinage has influenced literature, music, and media across four centuries, evolving from divine vengeance to ambiguous moral authority to contemporary self-expression.
+6. **Core Symbolism**: The phrase symbolizes **divine vengeance, retributive justice, overwhelming power, and the terror of divine wrath**, with "red" connoting blood, violence, and the staining of justice with force.
+
+7. **Cultural Legacy**: Milton's coinage has influenced literature, music, and media across four centuries, evolving from divine vengeance to ambiguous moral authority to contemporary self-expression to literal magical power.
 
 
 ## Methodology
@@ -34,17 +36,18 @@ What are the literary origins of the phrase "red right hand," and what are its m
 3. **Literary History**: Investigated pre-Milton uses of the phrase (none found; Milton appears to be the originator).
 4. **Modern Adaptation**: Analyzed Nick Cave's song lyrics, liner notes, and interviews for interpretive context.
 5. **Contemporary Usage**: Identified MEEK's 2026 song "Brixton" as a modern pop culture reference.
-6. **Symbolism Analysis**: Synthesized scholarly interpretations of color symbolism (red), divine attributes (right hand), and theological themes (vengeance, justice).
+6. **Literary Character**: Discovered Nefarian Serpine from *Skulduggery Pleasant* series (2007) with literal Red Right Hand ability.
+7. **Symbolism Analysis**: Synthesized scholarly interpretations of color symbolism (red), divine attributes (right hand), and theological themes (vengeance, justice).
 
 ### Source Types
 - **Primary**: Milton's *Paradise Lost* (1667), King James Bible (1611)
 - **Secondary**: Wikipedia entries, literary criticism, music journalism (Far Out Magazine, Genius Lyrics)
-- **Tertiary**: Biblical commentaries, theological analyses
+- **Tertiary**: Biblical commentaries, theological analyses, fan wikis
 
 ### Limitations
 - No pre-1667 literary instances of "red right hand" were found, suggesting Milton's coinage.
 - Biblical references to "right hand" lack the "red" modifier, indicating Milton's poetic innovation.
-- Nick Cave's and MEEK's personal interpretations are subjective; direct statements from artists are limited.
+- Nick Cave's, MEEK's, and Derek Landy's interpretations are subjective and reflect their individual artistic visions.
 
 
 ## Findings
@@ -145,6 +148,59 @@ I'm the man, I'm the man, I'm the man
 - Shows how literary references can be **reclaimed and repurposed** by contemporary artists, particularly in queer contexts.
 
 
+#### 3.3 Nefarian Serpine: Skulduggery Pleasant Series (2007)
+
+**Character**: Nefarian Serpine  
+**Series**: *Skulduggery Pleasant* by Derek Landy  
+**First Appearance**: *Skulduggery Pleasant* (Book 1, also titled *Sceptre of the Ancients*), published April 2, 2007  
+**Role**: Major antagonist, main villain of the first book, one of Mevolent's Three Generals  
+
+##### The Red Right Hand as a Magical Ability
+
+Nefarian Serpine possesses a **literal, named magical ability** called the **Red Right Hand**:
+
+- **Description**: A **skinless (flayed) red right hand** that uses a necromantic technique
+- **Power**: Can kill **any living or undead creature** through agonizing pain, simply by pointing
+- **Visual Effect**: Red vapour emanates from the hand
+- **Only Known Survivor**: Skulduggery Pleasant (due to Auron Tenebrae's magical intervention)
+
+##### Character Background
+
+- **Alignment**: Sadistic sorcerer, devout follower of the **Faceless Ones** (dark godlike entities)
+- **Personality**: Cultured, sophisticated, dry/cynical sense of humor, highly intelligent, cunning, fanatical terrorist with a religious agenda
+- **Belief**: Views all human life except his own as insignificant; seeks to destroy humanity in the name of his gods
+
+##### Notable Actions
+
+- **Killed Skulduggery's wife and child** in front of him, triggering Skulduggery's rage
+- **Tortured Skulduggery for days** before executing him with his red right hand (October 23rd)
+- **Killed Larrikin** (Skulduggery's friend) when he intervened to save Dexter Vex
+- **Sought the Sceptre of the Ancients** to assassinate the Elder Council and use the Book of Names to summon the Faceless Ones
+
+##### Alternate Reality: Leibniz Universe
+
+In an alternate dimension where Mevolent won the war:
+- Serpine **betrayed Mevolent** but still worships the Faceless Ones
+- Attempted to join China Sorrows' Resistance
+- **China Sorrows does not trust him** and forces him to wear a **metal glove** that suppresses his magical abilities (including the Red Right Hand)
+
+##### Cultural Significance
+
+Nefarian Serpine's **Red Right Hand** represents the **first instance** where the phrase becomes an **actual named magical ability** in popular fiction. This bridges the literary/cultural references with a concrete, in-universe power, demonstrating how the phrase has evolved from:
+
+1. **Divine symbol** (Milton, 1667) →
+2. **Metaphorical figure** (Nick Cave, 1994) →
+3. **Cultural reference** (MEEK, 2026) →
+4. **Literal magical ability** (Derek Landy, 2007)
+
+This evolution shows the phrase's **growing cultural penetration** and its ability to be adapted across different media and contexts.
+
+##### Source
+- **Skulduggery Pleasant Wiki**: [Nefarian Serpine](https://skulduggery.fandom.com/wiki/Nefarian_Serpine)
+- **Villains Wiki**: [Nefarian Serpine](https://villains.fandom.com/wiki/Nefarian_Serpine)
+- **VS Battles Wiki**: [Nefarian Serpine](https://vsbattles.fandom.com/wiki/Nefarian_Serpine)
+
+
 ### 4. Symbolism and Themes
 
 #### Core Meanings
@@ -154,6 +210,7 @@ I'm the man, I'm the man, I'm the man
 | **Red** | Blood, wrath, violence, sacrifice | Isaiah 1:18, Revelation 6:4 |
 | **Red Right Hand** | Divine vengeance, retributive justice, overwhelming power | Milton's *Paradise Lost*, Nick Cave's song |
 | **Red Right Hand (Modern)** | Power, control, personal agency, defiance | MEEK's "Brixton" |
+| **Red Right Hand (Literal)** | Necromantic killing power | Nefarian Serpine's ability |
 
 #### Theological Themes
 1. **Divine Justice vs. Mercy**: The "red right hand" embodies the **harsh, punitive side of divine power**, contrasting with mercy and grace.
@@ -165,6 +222,7 @@ I'm the man, I'm the man, I'm the man
 2. **Violence and Consequences**: The "red" implies **bloodshed and suffering** as the cost of justice or power.
 3. **Supernatural Menace**: In modern usage, the phrase is associated with **threats, manipulation, and hidden forces**.
 4. **Self-Possession**: In MEEK's usage, the phrase represents **individual agency, defiance, and self-expression**.
+5. **Literal Power**: In Nefarian Serpine's case, it represents **actual magical ability and necromantic power**.
 
 
 ## Source Notes
@@ -206,10 +264,25 @@ I'm the man, I'm the man, I'm the man
    - **Reliability**: Medium (LGBTQ+ news outlet)
    - **Key Claims**: EP release details, themes of queer resilience and self-affirmation
 
+6. **Skulduggery Pleasant Wiki: Nefarian Serpine**
+   - **URL**: [Skulduggery Pleasant Wiki](https://skulduggery.fandom.com/wiki/Nefarian_Serpine)
+   - **Reliability**: Medium (fan-maintained wiki)
+   - **Key Evidence**: Details on Red Right Hand ability, character background
+
+7. **Villains Wiki: Nefarian Serpine**
+   - **URL**: [Villains Wiki](https://villains.fandom.com/wiki/Nefarian_Serpine)
+   - **Reliability**: Medium (fan-maintained wiki)
+   - **Key Evidence**: Character description, notable actions
+
+8. **VS Battles Wiki: Nefarian Serpine**
+   - **URL**: [VS Battles Wiki](https://vsbattles.fandom.com/wiki/Nefarian_Serpine)
+   - **Reliability**: Medium (fan-maintained wiki)
+   - **Key Evidence**: Powers and abilities, including Red Right Hand
+
 ### Source Conflicts and Caveats
 - **No Pre-Milton Instances**: Extensive searches revealed **no literary uses of "red right hand" before Milton's *Paradise Lost***. The phrase appears to be his invention.
 - **Biblical vs. Miltonian**: The Bible uses "right hand" but **never "red right hand"**. Milton's addition of "red" is a poetic innovation.
-- **Artistic Interpretations**: While Cave and MEEK acknowledge Milton's influence, their **personal interpretations** of the phrase's meaning in their songs are subjective and reflect their individual artistic visions.
+- **Artistic Interpretations**: While Cave, MEEK, and Derek Landy acknowledge or use the phrase, their **personal interpretations** are subjective and reflect their individual artistic visions.
 
 
 ## Open Questions
@@ -222,7 +295,9 @@ I'm the man, I'm the man, I'm the man
 
 4. **MEEK's Inspiration**: What specifically inspired MEEK to reference "red right hand" in "Brixton"? Was it a direct nod to Milton, Cave, or both?
 
-5. **Cultural Diffusion**: How has the phrase been **adapted in other media** (e.g., literature, film, television) beyond these musical examples?
+5. **Derek Landy's Inspiration**: Did Derek Landy intentionally reference Milton's phrase when creating Nefarian Serpine's ability, or was it an independent invention?
+
+6. **Cultural Diffusion**: How has the phrase been **adapted in other media** (e.g., literature, film, television) beyond these examples?
 
 
 ## Recommendations / Next Steps
@@ -233,11 +308,12 @@ I'm the man, I'm the man, I'm the man
 3. **Analyze Nick Cave's Oeuvre**: Examine **other Cave songs** that reference Milton or divine themes (e.g., "Song of Joy" from *Murder Ballads*).
 4. **Trace Cultural Adaptations**: Compile a **comprehensive list** of works (songs, films, books) that reference "red right hand."
 5. **Study Queer Reinterpretations**: Explore how **LGBTQ+ artists** have reclaimed and repurposed literary and religious symbols in contemporary music.
+6. **Interview Derek Landy**: Contact the author to ask about the **origins of Nefarian Serpine's Red Right Hand ability** and whether Milton's phrase was an influence.
 
 ### For Creative Use
 1. **Literary Analysis**: Use the phrase as a **lens to explore themes of justice, power, and morality** in *Paradise Lost* or modern works.
-2. **Comparative Study**: Contrast **Milton's divine vengeance** with **Nick Cave's ambiguous figure** and **MEEK's self-possession** in a cultural studies framework.
-3. **Symbolic Interpretation**: Apply the phrase's symbolism to **contemporary discussions of power, punishment, moral ambiguity, and personal empowerment**.
+2. **Comparative Study**: Contrast **Milton's divine vengeance** with **Nick Cave's ambiguous figure**, **MEEK's self-possession**, and **Nefarian Serpine's literal power** in a cultural studies framework.
+3. **Symbolic Interpretation**: Apply the phrase's symbolism to **contemporary discussions of power, punishment, moral ambiguity, personal empowerment, and magical ability**.
 
 
 ## Appendix: Key Passages
@@ -270,3 +346,6 @@ I'm the man, I'm the man, I'm the man
 > *But you can't stop this girl chugging all six cans*  
 > *Find me upstairs on the rooftop*  
 > *Smoking cigars with a bong in my red right hand*
+
+### Derek Landy, *Skulduggery Pleasant* (2007)
+> *Serpine is best known for his skinless red right hand, which uses a Necromantic technique to kill any living or undead creature through agonising pain, simply by pointing at them.*
