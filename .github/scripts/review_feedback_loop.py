@@ -243,6 +243,74 @@ def _thread_has_attested_look(thread: dict) -> bool:
     return False
 
 
+# Layer B (#399): an agent's resolution is legitimate only if it carries a
+# recorded attestation. These are the pure building blocks of that act — the
+# bot-only eligibility predicate and the attestation-body builder. They WRITE
+# NOTHING and are not invoked anywhere; the resolve-capable wiring lands later.
+#
+# Standing model: any direct-write agent may attest-and-resolve a thread whose
+# every author is a bot (advisory OR signal — no denylist), never a human-authored
+# thread, and never on a CHANGES_REQUESTED review. The PR-level CHANGES_REQUESTED
+# guard belongs with the future resolve path; bot-only eligibility lives here.
+ATTESTATION_DECISIONS: frozenset[str] = frozenset({"addressed", "advisory", "wontfix"})
+
+
+def _author_is_bot(author: dict) -> bool:
+    """True when a review-comment author is a GitHub App / bot actor, not a human."""
+    if (author.get("__typename") or "") == "Bot":
+        return True
+    return (author.get("login") or "").endswith("[bot]")
+
+
+def _thread_is_bot_only(thread: dict) -> bool:
+    """True when every author of the thread is a bot (>=1 author, no human).
+
+    Eligibility for agent attest-and-resolve under the standing model: bot-authored
+    threads only. A single human participant — or no participants — is ineligible.
+    """
+    comments = (thread.get("comments") or {}).get("nodes") or []
+    authors = [(comment.get("author") or {}) for comment in comments]
+    if not authors:
+        return False
+    return all(_author_is_bot(author) for author in authors)
+
+
+def _build_attestation(
+    looker: str,
+    decision: str,
+    rationale: str,
+    *,
+    now: datetime | None = None,
+) -> str:
+    """Build the canonical in-thread attestation body a looker leaves on resolve.
+
+    Round-trips through `_thread_has_attested_look`: detected only when posted as a
+    comment whose author login equals `looker`, and `looker` must match the
+    detector's `by=` grammar ([A-Za-z0-9][A-Za-z0-9-]*) — a plain login, no `[bot]`
+    brackets. This builder **enforces** that (and the decision taxonomy): a
+    `[bot]`-suffixed login would yield an attestation the detector can never match,
+    silently leaving the thread "unlooked", so it is rejected here rather than
+    failing quietly downstream. (Whether the grammar should be widened to accept a
+    real `[bot]`/App identity is a B2 standing/identity decision, not B1.)
+    """
+    if decision not in ATTESTATION_DECISIONS:
+        raise ValueError(
+            f"decision {decision!r} is not one of {sorted(ATTESTATION_DECISIONS)}"
+        )
+    if not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9-]*", looker):
+        raise ValueError(
+            f"looker {looker!r} must be a bracket-free login matching the "
+            "attestation grammar [A-Za-z0-9][A-Za-z0-9-]*; a '[bot]'-suffixed "
+            "identity posts an attestation the detector can never match"
+        )
+    moment = now or datetime.now(timezone.utc)
+    if moment.tzinfo is None:  # treat a naive datetime as UTC, never as local
+        moment = moment.replace(tzinfo=timezone.utc)
+    stamp = moment.astimezone(timezone.utc).isoformat().replace("+00:00", "Z")
+    marker = f"<!-- looked: by={looker}; at={stamp}; decision={decision}; v=1 -->"
+    return f"Looked by `{looker}` — **{decision}**. {rationale}\n\n{marker}"
+
+
 def _build_looker_queue(pr: dict) -> list[dict[str, object]]:
     """Read-only worklist of unresolved threads on one PR for a looker.
 
