@@ -31,15 +31,22 @@ jobs:
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
           ref: ${{ github.event.repository.default_branch }}
+          persist-credentials: false
 
       - name: Run read-only triage census
+        # Pass all ${{ }} values through env, never interpolated into the run
+        # script — stale_days is a user-controllable dispatch input, so direct
+        # expansion would be a template-injection vector (zizmor template-injection).
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          OWNER: ${{ github.repository_owner }}
+          REPO: ${{ github.event.repository.name }}
+          STALE_DAYS: ${{ github.event.inputs.stale_days || '14' }}
         run: |
           python3 .github/scripts/review_feedback_loop.py looker-walk \
-            --owner "${{ github.repository_owner }}" \
-            --repo "${{ github.event.repository.name }}" \
-            --stale-days "${{ github.event.inputs.stale_days || '14' }}" \
+            --owner "$OWNER" \
+            --repo "$REPO" \
+            --stale-days "$STALE_DAYS" \
             | tee looker-walk.json
 
       - name: Publish triage census to run summary
