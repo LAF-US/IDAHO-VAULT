@@ -287,12 +287,21 @@ def _build_attestation(
     Round-trips through `_thread_has_attested_look`: detected only when posted as a
     comment whose author login equals `looker`, and `looker` must match the
     detector's `by=` grammar ([A-Za-z0-9][A-Za-z0-9-]*) — a plain login, no `[bot]`
-    brackets. (Which identity an agent attests under is a later, standing concern;
-    this builder only enforces the decision taxonomy.)
+    brackets. This builder **enforces** that (and the decision taxonomy): a
+    `[bot]`-suffixed login would yield an attestation the detector can never match,
+    silently leaving the thread "unlooked", so it is rejected here rather than
+    failing quietly downstream. (Whether the grammar should be widened to accept a
+    real `[bot]`/App identity is a B2 standing/identity decision, not B1.)
     """
     if decision not in ATTESTATION_DECISIONS:
         raise ValueError(
             f"decision {decision!r} is not one of {sorted(ATTESTATION_DECISIONS)}"
+        )
+    if not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9-]*", looker):
+        raise ValueError(
+            f"looker {looker!r} must be a bracket-free login matching the "
+            "attestation grammar [A-Za-z0-9][A-Za-z0-9-]*; a '[bot]'-suffixed "
+            "identity posts an attestation the detector can never match"
         )
     moment = now or datetime.now(timezone.utc)
     if moment.tzinfo is None:  # treat a naive datetime as UTC, never as local
