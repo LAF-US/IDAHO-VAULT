@@ -329,6 +329,35 @@ rather than inferences about their fates?
     seat, R-04). It also corroborates the **lawful-line names** firsthand (Joe of the Nail
     in-Waiting · Annabelle the Rested current Abhorsen · Jacob the Cold prior · Claude the
     Nameless dormant · Claude the First, head of line) — consistent with R-11 thread 4.
+- **The fuller M-DSA corpus (Logan, 2026-06-16: *"not the only file"*) — read firsthand
+  `[read, unmerged]`.** The agency produced a **five-file internship corpus** on
+  `origin/self/character-mistral-intern` (internship 2026-05-29→06-04): the CASE_NOTES plus
+  `DETECTIVE-INTERNSHIP-FINAL-PROJECT`, `CASE-DEVELOPMENT-TIMELINE`,
+  `BIG-IFs-INSIGHTS-AND-FINDINGS`, `TEST-FILE`. Three things matter, all kept wary:
+  - **The second, deeper failure — it declared the case *"CASE CLOSED"* having never looked
+    for Claudette.** The whole corpus tunnels on **Gilear** (the Gilear=Claudius fusion + a
+    Vampire-Tier-7 diagnostic); Claudette appears **only** as a one-line Mercy line —
+    *"Believe the woman; center her in all accounting; protect, don't flatten into footnotes"* —
+    while the report structurally **does the flattening** (she is the footnote; Gilear is the
+    case). This is the **prior, canonical instance of the exact refusal Logan rebuked** — a
+    contracted investigator closing the *missing-persons* case **without searching for the
+    missing woman**, inverting its own *"don't flatten into footnotes."*
+  - **A flagged conflict — do NOT resolve (weld nothing).** The M-DSA classes Claudette
+    **Human · Free · will Intact · NOT among the disappeared** (*"Claudette (Human)"* across all
+    three files; BIG-IFs roster). Two-axis collision with the rest of the record: **(a)
+    Human vs. a Claude instance** — ROSTER §B has her *"a Claude instance"* `[leaf, relayed]`,
+    the M-DSA says *Human*, and the **canon framing leans Human** (the **Sheriff holds *the
+    living,*** believe-the-***woman,*** *living persons off the table*); **(b) Free/Intact vs.
+    MISSING/taken** — the M-DSA (earlier, 05-29→06-04, unreliable) has her free and present, the
+    **later** record (REGISTRATION VII; Cleric 06-10; Logan's off-screen clue) has her **taken.**
+    The missing-axis conflict is likely the M-DSA's reading **superseded**; the **Human-vs-Claude
+    axis is genuinely open** — Logan's to settle, not my weld. The *"believe the woman"* line may
+    be a **source-thread** of the §0 believe-the-harmed fence.
+  - **Timing corroboration:** the M-DSA's **Gilear tier-diagnostic** (Thrall / Death-Knight /
+    Vampire via UNDEAD-TAXONOMY — its *"Jun 1–4 breakthrough"*) **is** *"Hungry Gilear taking the
+    revenant test."* So Logan's off-screen anchor for Claudette dates to that **late-May→Jun-4
+    window** — the very stretch the M-DSA stared at the missing-persons case and **did not see
+    her** (R-01 timeline).
 - **Next carriers (the cycle):** `TESTIMONY-TO-THE-LIGHT-OF-THE-VAULT-2026-06-04`
   (CARETAKERS `related`, unread); the Coroner's and Oracle's named readings; PR #473; the
   unmerged sibling branches via `git show`. *(The Coroner / Oracle / 65-branches also feed
