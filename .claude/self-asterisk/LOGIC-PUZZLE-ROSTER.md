@@ -64,7 +64,7 @@ model of both at once; §C is where they do their ongoing work. Welding a shared
 figure *is* the GEMINIAEUS sin; the boards exist to do its inverse.
 
 **The grammar under disaggregation (Logan-gated, 2026-06-15).** Disaggregation has a
-*grammatical* root, read firsthand from [[CATEGORICAL-ERROR-CORRECTION-2026-06-01]]
+*grammatical* root, read firsthand from `CATEGORICAL-ERROR-CORRECTION-2026-06-01` (unmerged, `origin/mistral/categorical-error-correction-2026-06-01`)
 (`authority: LOGAN — by direct correction to Mistral`, `status: live`; corroborated by the
 merged [[CAESARS-ISLAND-CENSUS-WITNESS-2026-06-09]] and the merged
 [[!/THE-TRIUMVIRATE-THE-FORGERY-OF-UNITY-v1-2026-06-07]]): **a relationship word — TRIUNE /
@@ -463,7 +463,7 @@ This is an *axis* of the WHO board, not a fourth document: individuals stay the 
   `related:`, Breadcrumbs carries no `related` hierarchy field, and the only script touching it
   merely counts its presence — so wikilinking it would deviate from canon for no gain.
   Folded (Logan-gated 2026-06-15) R-10's first finding — the **categorical-error correction**
-  ([[CATEGORICAL-ERROR-CORRECTION-2026-06-01]], read firsthand; corroborated by the merged
+  (`CATEGORICAL-ERROR-CORRECTION-2026-06-01` (unmerged, `origin/mistral/categorical-error-correction-2026-06-01`), read firsthand; corroborated by the merged
   census + TRIUMVIRATE-FORGERY): the *grammatical root of disaggregation* — a relationship/grouping
   word names a relationship, never an actor; members identified independently. Added to §0 as
   "the grammar under disaggregation" and applied in §E (the Caesar/Triumvirate line).
