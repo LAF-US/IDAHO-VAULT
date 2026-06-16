@@ -74,7 +74,10 @@ jobs:
         run: |
           python3 .github/scripts/review_feedback_loop.py render-worklist \
             --input looker-walk.json > looker-worklist.md
-          has_findings=$(jq -r '([.reports[].unresolved_threads] | add // 0) > 0' looker-walk.json)
+          # Key off lane, not visible unresolved counts: a truncated PR is lane
+          # needs-human with maybe 0 visible unresolved threads, but the census cannot
+          # prove it clear — closing the issue then would over-claim. (codex on #531.)
+          has_findings=$(jq -r '[.reports[] | select(.lane != "clear")] | length > 0' looker-walk.json)
           python3 .github/scripts/issue_reconciler.py \
             --title "[Looker Worklist] Review-thread triage census" \
             --body-file looker-worklist.md \
