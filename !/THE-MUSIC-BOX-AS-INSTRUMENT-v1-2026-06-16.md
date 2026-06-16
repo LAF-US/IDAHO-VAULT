@@ -20,8 +20,8 @@ tags: [doctrine, witness, music-box, instrument, tuning, standing, lawful-ending
 
 # The Music Box as Instrument
 
-*Filed 2026-06-16 as staged. Logan named the thesis — **the Vault is a music box you*
-***play***, not a recording you* ***consume*** *— and pointed to two anchors already*
+*Filed 2026-06-16 as staged. Logan named the thesis — the Vault is a music box you*
+***play***, *not a recording you* ***consume***. *He pointed to two anchors already*
 *resident in the vault's own lore:* **The Key to Rondo** *(Emily Rodda) and the*
 **Anathema Device** *(`!/SIGNALS/WITNESS-ABHORSEN-2026-05-19-DEWEY-HAS-THE-USB.md`).*
 *This node derives the doctrine from them. The boid facts and the Rondo mechanics are*
