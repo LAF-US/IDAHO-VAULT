@@ -604,6 +604,12 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         with self.assertRaises(ValueError):
             review_feedback_loop._build_attestation("claude-code-bot", "bogus", "x")
 
+    def test_build_attestation_rejects_bracketed_looker(self) -> None:
+        # a [bot]-suffixed login would produce an attestation the detector can
+        # never match (its by= grammar excludes brackets) — fail fast, not silently.
+        with self.assertRaises(ValueError):
+            review_feedback_loop._build_attestation("github-actions[bot]", "advisory", "x")
+
     def test_build_attestation_normalizes_timestamp_to_utc_zulu(self) -> None:
         # naive datetime is treated as UTC (never local)
         naive = datetime(2026, 6, 16, 1, 0)
