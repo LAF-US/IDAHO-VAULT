@@ -1421,6 +1421,63 @@ def looker_walk(args: argparse.Namespace) -> int:
     return 0
 
 
+def render_looker_worklist(report: dict) -> str:
+    """Render a looker-walk report (the `looker_walk` JSON) as a markdown worklist. Pure.
+
+    A read-only triage surface for a durable issue: the open-PR backlog grouped by lane
+    and by resolution disposition, so a looker can drain it with judgment. Resolves
+    nothing and decides nothing — it only makes the deterministic census legible.
+    """
+
+    def _counts(mapping: dict) -> str:
+        return " · ".join(f"{key}: {value}" for key, value in sorted(mapping.items())) or "none"
+
+    open_prs = int(report.get("open_prs") or 0)
+    stale = int(report.get("stale") or 0)
+    safe = report.get("safe_to_drain") or []
+    reports = report.get("reports") or []
+
+    lines = [
+        "## Looker Worklist — review-thread triage (read-only)",
+        "",
+        "> Deterministic census of open PRs. **No threads resolved, no PRs merged.**",
+        "> The gated apply pass (`attest-resolve --apply`) is a separate decision.",
+        "",
+        f"- **Open PRs:** {open_prs} · **stale:** {stale}",
+        f"- **By lane:** {_counts(report.get('by_lane') or {})}",
+        f"- **By resolution:** {_counts(report.get('by_resolution') or {})}",
+        "",
+        "### `safe_to_drain` — bare-resolvable, non-stale (a gated apply pass could clear)",
+    ]
+    lines.extend([f"- #{pr}" for pr in safe] or ["- none"])
+    lines.append("")
+    lines.append("### Per-PR worklist (open unresolved threads)")
+    actionable = sorted(
+        (r for r in reports if int(r.get("unresolved_threads") or 0) > 0),
+        key=lambda r: int(r.get("pr") or 0),
+    )
+    if actionable:
+        for r in actionable:
+            flags = [f for f, on in (("stale", r.get("stale")), ("auto-merge-armed", r.get("auto_merge_armed"))) if on]
+            flag_s = f" _({', '.join(flags)})_" if flags else ""
+            lines.append(
+                f"- **#{r.get('pr')}** — lane `{r.get('lane')}` · "
+                f"{int(r.get('unresolved_threads') or 0)} unresolved "
+                f"({_counts(r.get('resolution_counts') or {})}){flag_s}"
+            )
+    else:
+        lines.append("- none — no open unresolved review threads.")
+    lines.append("")
+    return "\n".join(lines)
+
+
+def render_worklist(args: argparse.Namespace) -> int:
+    """Read a looker-walk JSON report (file or stdin) and print the markdown worklist."""
+    raw = args.input.read() if args.input else sys.stdin.read()
+    print(render_looker_worklist(json.loads(raw or "{}")))
+    return 0
+
+
 def attest_resolve(args: argparse.Namespace) -> int:
     """Disposition one explicit bot-authored thread (Layer B2). Dry-run unless --apply.
 
@@ -1546,6 +1603,14 @@ def build_parser() -> argparse.ArgumentParser:
         help="days of inactivity before a PR is flagged stale (positive int)",
     )
 
+    worklist = subparsers.add_parser("render-worklist")
+    worklist.add_argument(
+        "--input",
+        type=argparse.FileType("r"),
+        default=None,
+        help="looker-walk JSON file to render (default: stdin)",
+    )
+
     attest = subparsers.add_parser("attest-resolve")
     attest.add_argument("--owner", required=True)
     attest.add_argument("--repo", required=True)
@@ -1584,6 +1649,8 @@ def main() -> int:
         return list_unlooked(args)
     if args.command == "looker-walk":
         return looker_walk(args)
+    if args.command == "render-worklist":
+        return render_worklist(args)
     if args.command == "attest-resolve":
         return attest_resolve(args)
     return enable_auto_merge(args)
