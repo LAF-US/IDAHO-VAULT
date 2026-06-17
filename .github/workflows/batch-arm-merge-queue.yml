@@ -26,7 +26,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           label: ${{ inputs.label }}
         run: |
-          PRS=$(gh pr list --repo "$GITHUB_REPOSITORY" --state open --json number,draft,labels --limit 100 | jq -r '.[] | select(.draft == false) | select((env.label == "" or (.labels[]?.name | ascii_downcase) == (env.label | ascii_downcase))) | .number')
+          PRS=$(gh pr list --repo "$GITHUB_REPOSITORY" --state open --json number,isDraft,labels --limit 100 | jq -r '.[] | select(.isDraft == false) | select((env.label == "" or (.labels[]?.name | ascii_downcase) == (env.label | ascii_downcase))) | .number')
           COUNT=$(echo "$PRS" | grep -c .)
           if [ -z "$COUNT" ]; then COUNT=0; fi
           {
