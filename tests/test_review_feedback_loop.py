@@ -444,12 +444,16 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             review_feedback_loop, "_pr_touches_protected_path", return_value=False
         ), mock.patch.object(
             review_feedback_loop, "_arm_auto_merge", return_value=(True, None)
-        ) as arm:
+        ) as arm, mock.patch.object(
+            review_feedback_loop, "_edit_label"
+        ) as edit_label:
             result = review_feedback_loop._maybe_arm_auto_merge(
                 "o", "r", 5, {"eligible_for_auto_merge": True}
             )
         self.assertTrue(result["armed"])
         arm.assert_called_once_with(5)
+        # The arm tags merge/auto so the disable path can later un-arm if it becomes blocked.
+        edit_label.assert_called_once_with(5, add=review_feedback_loop.DEFAULT_AUTO_MERGE_LABEL)
 
     def test_maybe_arm_refuses_protected_path(self) -> None:
         with mock.patch.object(
@@ -500,6 +504,8 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             review_feedback_loop, "apply_review_state_projection", return_value=[]
         ), mock.patch.object(
             review_feedback_loop, "_pr_touches_protected_path", return_value=False
+        ), mock.patch.object(
+            review_feedback_loop, "_edit_label"
         ), mock.patch.object(
             review_feedback_loop, "_arm_auto_merge", return_value=(True, None)
         ) as arm, contextlib.redirect_stdout(io.StringIO()):
