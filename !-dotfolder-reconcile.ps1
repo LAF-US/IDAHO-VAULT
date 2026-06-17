@@ -127,12 +127,15 @@ function Save-HashCache {
 $secretPatterns = @(
     'id_\w+$',
     'id_\w+\.\w+$',
+    'id_ed25519$',
+    'id_ed25519\.pub$',
+    'allowed_signers$',
+    'known_hosts$',
     '_signing',
-    'known_hosts',
     'authorized_keys',
-    'allowed_signers',
-    '\dPassword/config',
+    '1Password/config',
     'auth\.json',
+    'accounts\.json',
     'signal-cli/data/',
     '_cacache/',
     '\.pem$',
@@ -312,6 +315,9 @@ function Invoke-ReconcileDotDir {
         $inVault = $vaultFiles.ContainsKey($rel)
 
         if (Test-SecretPath $rel) {
+            if ($Force) {
+                Write-Host "  [DENIED] Secrets path '$rel' refused even with -Force"
+            }
             $secrets += $rel
             continue
         }
@@ -534,8 +540,8 @@ if ($All) {
     # These were populated during the initial snapshot and are already gitignored.
     # Pass -Force to process them anyway.
     $skipDirs = @(
-        '.cache', '.npm-cache', '.pip-cache', '.uv-cache',
-        '.pycache', '.pytest_cache', '.ruff_cache', '.venv',
+        '.ssh', '.npm-cache', '.cache', '.ollama', '.local/share/signal-cli', '.local/share/opencode', '.config/1Password',
+        '.pip-cache', '.uv-cache', '.pycache', '.pytest_cache', '.ruff_cache', '.venv',
         '.vscode', '.codex', '.ipynb_checkpoints', '.jupyter'
     )
     $homeDirs = Get-ChildItem -LiteralPath $HOME -Directory -Force | Where-Object { $_.Name -match '^\.' } | Sort-Object Name
