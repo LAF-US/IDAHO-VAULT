@@ -121,6 +121,70 @@ Parent: session task #28. Three sub-strands (all verified from the #399 body / P
 
 ---
 
+## Run record — 2026-06-17: the boundary located (grounded)
+
+The look-then-resolve engine ran live for the first time with `apply=true` against the
+whole open backlog (`engage-outdated.yml`, run `27662203952`, conclusion **success**).
+The run's own JSON output (read directly from the job log — grounded, not inferred):
+
+> `{"apply": true, "outdated_threads": 34, "resolved": 0}`
+
+All 34 outdated threads across 5 PRs (#481, #474, #453, #424, #400) failed at the
+**resolve** step with the identical error:
+
+> `resolveReviewThread → FORBIDDEN: "Resource not accessible by integration"`
+
+**The boundary, located precisely:** `github-actions[bot]` (the `GITHUB_TOKEN` integration
+identity) **can post an attestation comment but is FORBIDDEN from `resolveReviewThread`**,
+even with `pull-requests: write`. This is the #398 pole (commit/actor identity
+trust) reappearing at the merge-gate pole's resolve verb — the seam where both trusts must
+hold at once. The user-token identity (`loganfinney27`) *can* resolve (proven on #536), but
+that is the identity we decline to forge.
+
+### Fix A — proposed in PR #540 (open, not yet on `main`): resolve-first, no false witness
+Because the engine posted the attestation *before* attempting the resolve, the failed run
+left 34 threads carrying a `github-actions[bot]` comment claiming the thread was "cleared"
+when it was not — a false witness. PR #540 reorders `attest_and_resolve` to **resolve
+first, attest only on success**, so a "cleared" attestation can never appear on a thread
+that was not cleared. **Caveat (per Codex on #540):** #540 is still open — `main` retains
+the old attest-then-resolve order, so any `apply=true` rerun *before* #540 merges can still
+mint a false "cleared" attestation. (Cleanup of the 34 already-posted false attestations is
+a separate follow-up.)
+
+### Fix B — DECIDED by Logan 2026-06-17: a GitHub App resolve identity (#398 option E)
+The resolve identity will be a **dedicated GitHub App** — **"IDAHO-VAULT Review Resolver"** —
+named for the GitHub object+verb it acts on: it resolves PR **review threads** (the GitHub UI
+calls the same object a *conversation*; the API mutation is `resolveReviewThread`). A distinct,
+witnessed bot that is neither `loganfinney27` nor the generic integration token, and whose
+installation access token *can* `resolveReviewThread`. This is the #398 "App signer" option E,
+now also serving #399's resolve verb. (Name chosen by Logan, grounded in GitHub terminology —
+not "Looker," which overloaded the engine's internal `looker` role and collided with Google
+Looker.) **Authority: Logan direct instruction (2026-06-17).**
+
+**Admin-gated (Logan's hand — genuinely human work, by design):**
+1. Register a GitHub App under the LAF-US org: "IDAHO-VAULT Review Resolver"; permission
+   **Pull requests: Read & Write** (covers review-thread resolve + reply); no webhook needed.
+2. Install it on `LAF-US/IDAHO-VAULT`.
+3. Generate the App's **private key (PEM)** (GitHub App auth uses a private key, not an API
+   key); store **App ID** as 1Password `review-resolver-app-id` and the **private key** as
+   1Password `review-resolver-app-private-key`, fetched at runtime via
+   `OP_SERVICE_ACCOUNT_TOKEN` (the vault's 1Password doctrine). *(The `.op/secrets.template.md`
+   inventory could not be updated in this PR — it's blocked by the current secret-pattern guard
+   configuration, whose `secret_path` rule matches any `.op/` path — so these credential names
+   are recorded here instead; updating that inventory, or the guard's allowlist, is a separate
+   `.op/`-scoped follow-up.)*
+
+**Code-side (Claude, once the App exists + its bot login is known):**
+4. `engage-outdated.yml` mints a short-lived installation access token (pinned
+   `actions/create-github-app-token`) from the App ID + key, and runs the resolve under it.
+5. Pass the App's bot login (`idaho-vault-review-resolver[bot]`) as the engine's
+   `--looker` value (the `--looker` flag stays — it names the engine's internal *role*, the
+   attesting identity — only its value changes from `github-actions[bot]` to the App login) so
+   the self-attestation actor-match check passes. Re-run `apply=true`; #481 then flows as the
+   guinea pig.
+
+---
+
 ## What this node does NOT do
 
 It assigns no malignancy diagnostics. Earlier this session I called #527's arm and the
