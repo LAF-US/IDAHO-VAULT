@@ -1850,16 +1850,16 @@ def build_parser() -> argparse.ArgumentParser:
         help="actually post attestations and resolve outdated threads (default: dry-run)",
     )
 
-    reconcile = subparsers.add_parser("reconcile-witness")
-    reconcile.add_argument("--owner", required=True)
-    reconcile.add_argument("--repo", required=True)
-    reconcile.add_argument(
+    witness = subparsers.add_parser("reconcile-witness")
+    witness.add_argument("--owner", required=True)
+    witness.add_argument("--repo", required=True)
+    witness.add_argument(
         "--looker",
         default=None,
         help="identity whose resolved-but-unwitnessed threads to backfill; default: the "
         "authenticated actor (_viewer_login). Only threads this identity resolved are touched.",
     )
-    reconcile.add_argument(
+    witness.add_argument(
         "--pr",
         type=_positive_int,
         default=None,
@@ -1867,8 +1867,8 @@ def build_parser() -> argparse.ArgumentParser:
         "record repair — it only posts the missing attestation, never resolves or merges — "
         "so it is safe on any PR; the default whole-backlog walk covers open PRs only.",
     )
-    reconcile.add_argument("--rationale", default="")
-    reconcile.add_argument(
+    witness.add_argument("--rationale", default="")
+    witness.add_argument(
         "--apply",
         action="store_true",
         help="actually backfill the missing attestations (default: dry-run)",
