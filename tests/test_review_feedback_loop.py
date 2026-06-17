@@ -825,6 +825,32 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         reply.assert_not_called()
         resolve.assert_not_called()
 
+    def test_attest_resolve_looker_defaults_to_authenticated_actor(self) -> None:
+        # Parity with engage_outdated: when --looker is omitted (None), attest_resolve
+        # defaults the witness to the authenticated actor (_viewer_login) and forwards it.
+        args = review_feedback_loop.build_parser().parse_args(
+            [
+                "attest-resolve", "--owner", "o", "--repo", "r", "--pr-number", "7",
+                "--thread-id", "THREAD_1", "--decision", "advisory", "--rationale", "ok",
+            ]
+        )
+        self.assertIsNone(args.looker)  # --looker omitted
+        pr = _pr(number=7, threads=(_thread(authors=("coderabbitai",), author_type="Bot"),))
+        seen_looker = []
+
+        def fake_attest(pr_arg, thread_arg, looker, *a, **k):
+            seen_looker.append(looker)
+            return {"thread_id": thread_arg.get("id"), "eligible": True, "applied": False, "reason": ""}
+
+        with mock.patch.object(review_feedback_loop, "_viewer_login", return_value="loganfinney27") as viewer, \
+             mock.patch.object(review_feedback_loop, "_fetch_pr", return_value=pr), \
+             mock.patch.object(review_feedback_loop, "attest_and_resolve", side_effect=fake_attest), \
+             contextlib.redirect_stdout(io.StringIO()):
+            rc = review_feedback_loop.attest_resolve(args)
+        self.assertEqual(rc, 0)
+        viewer.assert_called_once()
+        self.assertEqual(seen_looker, ["loganfinney27"])
+
     def test_attest_resolve_cli_rejects_cross_pr_thread(self) -> None:
         # The target thread isn't in the PR's first-100 window; the global node fetch
         # returns one whose links point at a DIFFERENT PR — reject, never act on it.
@@ -1259,6 +1285,28 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         report = json.loads(out.getvalue())
         self.assertEqual(report["looker"], "loganfinney27")
         self.assertEqual(report["backfilled"], 1)
+
+    def test_engage_outdated_looker_defaults_to_authenticated_actor(self) -> None:
+        # Agent-driven operation: when --looker is not given (args.looker is None), the
+        # witness defaults to the authenticated actor (_viewer_login), so the attestation
+        # truthfully names whoever actually ran the resolve — not a hardcoded bot.
+        pr = _pr(number=7, threads=(_thread(authors=("coderabbitai",), author_type="Bot", outdated=True),))
+        seen_looker = []
+
+        def fake_attest(pr_arg, thread_arg, looker, *a, **k):
+            seen_looker.append(looker)
+            return {"thread_id": thread_arg.get("id"), "eligible": True, "applied": False, "reason": ""}
+
+        args = SimpleNamespace(owner="o", repo="r", looker=None, apply=False)
+        with mock.patch.object(review_feedback_loop, "_viewer_login", return_value="loganfinney27") as viewer, \
+                mock.patch.object(review_feedback_loop, "_list_open_pr_numbers", return_value=[7]), \
+                mock.patch.object(review_feedback_loop, "_fetch_pr", return_value=pr), \
+                mock.patch.object(review_feedback_loop, "attest_and_resolve", side_effect=fake_attest), \
+                contextlib.redirect_stdout(io.StringIO()):
+            rc = review_feedback_loop.engage_outdated(args)
+        self.assertEqual(rc, 0)
+        viewer.assert_called_once()             # resolved the actor once for the run
+        self.assertEqual(seen_looker, ["loganfinney27"])  # witness names the real actor
 
 
 if __name__ == "__main__":
