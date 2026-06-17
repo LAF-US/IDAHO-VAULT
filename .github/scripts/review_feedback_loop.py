@@ -1629,10 +1629,14 @@ def attest_resolve(args: argparse.Namespace) -> int:
             )
         )
         return 1
+    # Default the looker to the authenticated actor, so the recorded witness always names
+    # whoever actually ran the resolve (agent-driven or CI-bot), and the self-attestation
+    # actor-match check in attest_and_resolve is satisfied by construction.
+    looker = args.looker or _viewer_login()
     result = attest_and_resolve(
         pr,
         thread,
-        args.looker,
+        looker,
         args.decision,
         args.rationale,
         apply=args.apply,
@@ -1664,13 +1668,17 @@ def engage_outdated(args: argparse.Namespace) -> int:
     keep a PR hanging). Scope is deliberately the narrowest safe slice — ONLY threads whose
     resolution disposition is `outdated-resolvable` (bot-only, GitHub-outdated: the
     commented lines no longer exist in the diff). Each is cleared via `attest_and_resolve`
-    with a recorded `github-actions[bot]` attestation, so it is a *witnessed* resolution,
+    with a recorded attestation by the looker — the `--looker` value, defaulting to the
+    authenticated actor (`_viewer_login()`) — so it is a *witnessed* resolution,
     not the blind reconciler. needs-fix / apply-suggestion / looked / human threads are
     never touched — needs-fix is the reviewer gate that keeps a PR hanging. This NEVER
     merges; if clearing the last thread lets an armed PR flow, that is GitHub's auto-merge,
     by design (the engaged queue).
     """
     considered: list[dict[str, object]] = []
+    # Resolve the looker once: default to the authenticated actor so the witness names
+    # whoever actually ran the engine (agent token or CI bot), truthfully.
+    looker = args.looker or _viewer_login()
     for pr_number in _list_open_pr_numbers(args.owner, args.repo):
         pr = _fetch_pr(args.owner, args.repo, pr_number)
         for thread in (pr.get("reviewThreads") or {}).get("nodes") or []:
@@ -1682,7 +1690,7 @@ def engage_outdated(args: argparse.Namespace) -> int:
                 result = attest_and_resolve(
                     pr,
                     thread,
-                    args.looker,
+                    looker,
                     "advisory",
                     "Outdated: the commented lines no longer exist in the current diff; "
                     "bot-only thread cleared under the outdated-only engaged policy.",
@@ -1848,7 +1856,12 @@ def build_parser() -> argparse.ArgumentParser:
     attest.add_argument("--repo", required=True)
     attest.add_argument("--pr-number", required=True, type=int)
     attest.add_argument("--thread-id", required=True)
-    attest.add_argument("--looker", required=True)
+    attest.add_argument(
+        "--looker",
+        default=None,
+        help="attesting identity recorded in the look marker; default: the authenticated "
+        "actor (whoever the token posts as), so the witness always names who actually ran it",
+    )
     attest.add_argument("--decision", required=True, choices=sorted(ATTESTATION_DECISIONS))
     attest.add_argument("--rationale", default="")
     attest.add_argument(
@@ -1860,7 +1873,12 @@ def build_parser() -> argparse.ArgumentParser:
     engage = subparsers.add_parser("engage-outdated")
     engage.add_argument("--owner", required=True)
     engage.add_argument("--repo", required=True)
-    engage.add_argument("--looker", default="github-actions[bot]")
+    engage.add_argument(
+        "--looker",
+        default=None,
+        help="attesting identity recorded in the look marker; default: the authenticated "
+        "actor (whoever the token posts as), so the witness always names who actually ran it",
+    )
     engage.add_argument(
         "--apply",
         action="store_true",
