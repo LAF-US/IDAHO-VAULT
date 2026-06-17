@@ -4,7 +4,8 @@
 A notebook is "paired" iff it declares ``metadata.jupytext.formats`` (the explicit, per-notebook
 opt-in this repo requires — see ``NOTEBOOKS.md``). Only those are synced here. Notebooks that are
 unpaired, or whose JSON cannot even be parsed (a corrupt stray), are skipped entirely: they are
-never synced (the footgun guard against a stale twin overwriting code) and never fail the run.
+never synced (the footgun guard against a stale twin overwriting code) and never fail the run
+(unparseable strays are listed on stderr for observability).
 
 This replaces the earlier ``jupytext --sync "$nb" || true`` one-liners in the CI check and the
 pre-commit hook, which swallowed *every* failure — including a paired notebook that genuinely
@@ -34,15 +35,19 @@ def tracked_notebooks() -> list[str]:
     return [line for line in out.stdout.splitlines() if line]
 
 
-def paired_formats(path: str) -> str | None:
-    """Return the declared jupytext formats string, or None if unpaired/unparseable."""
+def read_notebook(path: str):
+    """Parse a notebook's JSON. Returns ``(data, error)``; ``error`` is non-None iff the file
+    could not be parsed (a corrupt stray)."""
     try:
         with open(path, encoding="utf-8") as handle:
-            notebook = json.load(handle)
-    except (OSError, ValueError):
-        return None
-    formats = notebook.get("metadata", {}).get("jupytext", {}).get("formats")
-    return formats or None
+            return json.load(handle), None
+    except (OSError, ValueError) as exc:
+        return None, exc
+
+
+def declared_formats(notebook: dict) -> str | None:
+    """The declared jupytext formats string, or None if the notebook is unpaired."""
+    return notebook.get("metadata", {}).get("jupytext", {}).get("formats") or None
 
 
 def twin_paths(notebook: str, formats: str) -> list[str]:
@@ -60,16 +65,26 @@ def main(argv: list[str]) -> int:
     notebooks = argv[1:] or tracked_notebooks()
     failed: list[str] = []
     touched: list[str] = []
+    unparseable: list[str] = []
     for notebook in notebooks:
-        formats = paired_formats(notebook)
+        data, error = read_notebook(notebook)
+        if error is not None:
+            unparseable.append(notebook)
+            continue  # corrupt stray: never sync, never fail — but surfaced on stderr below
+        formats = declared_formats(data)
         if not formats:
-            continue  # unpaired or unparseable: never sync, never fail the run
+            continue  # genuinely unpaired: a no-op
         if subprocess.run(["jupytext", "--sync", notebook]).returncode != 0:
             failed.append(notebook)
             continue
         touched.extend(twin for twin in twin_paths(notebook, formats) if os.path.exists(twin))
     for twin in touched:
         print(twin)
+    if unparseable:
+        sys.stderr.write(
+            "note: skipped unparseable notebook(s) — not synced (observability, not a failure): "
+            + ", ".join(unparseable) + "\n"
+        )
     if failed:
         sys.stderr.write(
             "jupytext --sync failed for paired notebook(s): " + ", ".join(failed) + "\n"
