@@ -1863,7 +1863,9 @@ def build_parser() -> argparse.ArgumentParser:
         "--pr",
         type=_positive_int,
         default=None,
-        help="scope the pass to a single open PR number (default: every open PR)",
+        help="scope the pass to a single PR number (default: every open PR). Backfill is a "
+        "record repair — it only posts the missing attestation, never resolves or merges — "
+        "so it is safe on any PR; the default whole-backlog walk covers open PRs only.",
     )
     reconcile.add_argument("--rationale", default="")
     reconcile.add_argument(
