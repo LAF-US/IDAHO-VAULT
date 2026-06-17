@@ -35,11 +35,13 @@ def _thread(
     authors: tuple[str, ...] = ("reviewer",),
     author_type: str = "User",
     body: str = "review note",
+    resolved_by: str | None = None,
 ) -> dict[str, object]:
     return {
         "id": "THREAD_1",
         "isResolved": resolved,
         "isOutdated": outdated,
+        "resolvedBy": {"login": resolved_by} if resolved_by else None,
         "comments": {
             "pageInfo": {"hasNextPage": False},
             "nodes": [
@@ -66,6 +68,7 @@ def _pr(
     threads_truncated: bool = False,
     body: str = "## Auto-generated PR\n\n**Risk tier:**\n`low`\n",
     auto_merge_enabled: bool = False,
+    state: str = "OPEN",
 ) -> dict[str, object]:
     created_at = created_at or datetime(2026, 4, 16, 2, 0, tzinfo=timezone.utc)
     updated_at = updated_at or created_at
@@ -73,6 +76,7 @@ def _pr(
         "number": number,
         "url": f"https://example.test/pr/{number}",
         "body": body,
+        "state": state,
         "createdAt": created_at.isoformat().replace("+00:00", "Z"),
         "updatedAt": updated_at.isoformat().replace("+00:00", "Z"),
         "isDraft": draft,
@@ -666,7 +670,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertFalse(result["applied"])
         self.assertIn(review_feedback_loop.LOOK_ATTESTATION_MARKER, result["attestation"])
 
-    def test_attest_and_resolve_apply_attests_then_resolves(self) -> None:
+    def test_attest_and_resolve_apply_resolves_then_attests(self) -> None:
         thread = _thread(authors=("coderabbitai",), author_type="Bot")
         pr = _pr(threads=(thread,))
         manager = mock.Mock()
@@ -678,11 +682,29 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             result = review_feedback_loop.attest_and_resolve(
                 pr, thread, "claude-code-bot", "advisory", "ok", apply=True
             )
-        # look, THEN resolve — the attestation reply strictly precedes the resolve
+        # resolve, THEN attest — the "cleared" attestation is posted only after the
+        # resolve succeeds, so it can never claim a clearing that did not happen.
         manager.assert_has_calls(
-            [mock.call.reply("THREAD_1", mock.ANY), mock.call.resolve("THREAD_1")]
+            [mock.call.resolve("THREAD_1"), mock.call.reply("THREAD_1", mock.ANY)]
         )
         self.assertTrue(result["applied"])
+
+    def test_attest_and_resolve_no_false_witness_when_resolve_forbidden(self) -> None:
+        # The live #398 boundary: resolveReviewThread is FORBIDDEN for the integration
+        # token. The resolve must run FIRST and raise BEFORE any attestation is posted —
+        # so a thread that could not be cleared never gains a "thread cleared" comment.
+        thread = _thread(authors=("coderabbitai",), author_type="Bot")
+        pr = _pr(threads=(thread,))
+        with mock.patch.object(review_feedback_loop, "_viewer_login", return_value="github-actions[bot]"), \
+             mock.patch.object(review_feedback_loop, "_add_thread_reply") as reply, \
+             mock.patch.object(review_feedback_loop, "_resolve_thread",
+                               side_effect=RuntimeError("FORBIDDEN: Resource not accessible by integration")) as resolve:
+            with self.assertRaises(RuntimeError):
+                review_feedback_loop.attest_and_resolve(
+                    pr, thread, "github-actions[bot]", "advisory", "ok", apply=True
+                )
+        resolve.assert_called_once_with("THREAD_1")
+        reply.assert_not_called()  # NO false "cleared" attestation left behind
 
     def test_attest_and_resolve_skips_human_thread(self) -> None:
         thread = _thread(authors=("coderabbitai",), author_type="Bot")
@@ -804,6 +826,32 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertEqual(rc, 0)
         reply.assert_not_called()
         resolve.assert_not_called()
+
+    def test_attest_resolve_looker_defaults_to_authenticated_actor(self) -> None:
+        # Parity with engage_outdated: when --looker is omitted (None), attest_resolve
+        # defaults the witness to the authenticated actor (_viewer_login) and forwards it.
+        args = review_feedback_loop.build_parser().parse_args(
+            [
+                "attest-resolve", "--owner", "o", "--repo", "r", "--pr-number", "7",
+                "--thread-id", "THREAD_1", "--decision", "advisory", "--rationale", "ok",
+            ]
+        )
+        self.assertIsNone(args.looker)  # --looker omitted
+        pr = _pr(number=7, threads=(_thread(authors=("coderabbitai",), author_type="Bot"),))
+        seen_looker = []
+
+        def fake_attest(pr_arg, thread_arg, looker, *a, **k):
+            seen_looker.append(looker)
+            return {"thread_id": thread_arg.get("id"), "eligible": True, "applied": False, "reason": ""}
+
+        with mock.patch.object(review_feedback_loop, "_viewer_login", return_value="loganfinney27") as viewer, \
+             mock.patch.object(review_feedback_loop, "_fetch_pr", return_value=pr), \
+             mock.patch.object(review_feedback_loop, "attest_and_resolve", side_effect=fake_attest), \
+             contextlib.redirect_stdout(io.StringIO()):
+            rc = review_feedback_loop.attest_resolve(args)
+        self.assertEqual(rc, 0)
+        viewer.assert_called_once()
+        self.assertEqual(seen_looker, ["loganfinney27"])
 
     def test_attest_resolve_cli_rejects_cross_pr_thread(self) -> None:
         # The target thread isn't in the PR's first-100 window; the global node fetch
@@ -1160,6 +1208,154 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             rc = review_feedback_loop.engage_outdated(args)
         self.assertEqual(rc, 0)
         self.assertEqual(seen, [1, 2])  # did NOT abort after PR #1 raised
+
+    # ----- reconcile-witness: backfill the unwitnessed ending (#399) -----
+
+    def test_backfill_witness_posts_missing_attestation_for_our_resolve(self) -> None:
+        # Resolved + bot-only + unattested + resolvedBy == looker → backfill the look.
+        # It posts the attestation and NEVER resolves/unresolves (already resolved).
+        thread = _thread(resolved=True, authors=("coderabbitai",), author_type="Bot",
+                         resolved_by="loganfinney27")
+        pr = _pr(threads=(thread,))
+        with mock.patch.object(review_feedback_loop, "_viewer_login", return_value="loganfinney27"), \
+             mock.patch.object(review_feedback_loop, "_add_thread_reply") as reply, \
+             mock.patch.object(review_feedback_loop, "_resolve_thread") as resolve:
+            result = review_feedback_loop.backfill_witness(
+                pr, thread, "loganfinney27", "ok", apply=True
+            )
+        reply.assert_called_once()      # the missing witness is posted
+        resolve.assert_not_called()     # never resolves/unresolves
+        self.assertTrue(result["applied"])
+        self.assertIn(review_feedback_loop.LOOK_ATTESTATION_MARKER, result["attestation"])
+
+    def test_backfill_witness_refuses_when_resolved_by_another_identity(self) -> None:
+        # The truthfulness line: a thread a HUMAN (or any non-looker) resolved must NOT
+        # gain a witness from us — we never forge a look for someone else's resolve.
+        thread = _thread(resolved=True, authors=("coderabbitai",), author_type="Bot",
+                         resolved_by="some-human")
+        pr = _pr(threads=(thread,))
+        with mock.patch.object(review_feedback_loop, "_add_thread_reply") as reply:
+            result = review_feedback_loop.backfill_witness(
+                pr, thread, "loganfinney27", "ok", apply=True
+            )
+        reply.assert_not_called()
+        self.assertFalse(result["eligible"])
+        self.assertIn("refusing to witness", result["reason"])
+
+    def test_backfill_witness_skips_already_attested_and_unresolved(self) -> None:
+        looker = "loganfinney27"
+        # Already-attested resolved thread → no-op.
+        body = review_feedback_loop._build_attestation(looker, "advisory", "ok")
+        attested = _thread(resolved=True, authors=("coderabbitai",), author_type="Bot",
+                           resolved_by=looker)
+        attested["comments"]["nodes"].append(
+            {"author": {"login": looker, "__typename": "User"}, "body": body, "url": "u"}
+        )
+        # Unresolved thread → not a backfill target.
+        unresolved = _thread(resolved=False, authors=("coderabbitai",), author_type="Bot",
+                             resolved_by=None)
+        pr = _pr()
+        with mock.patch.object(review_feedback_loop, "_add_thread_reply") as reply:
+            r1 = review_feedback_loop.backfill_witness(pr, attested, looker, "ok", apply=True)
+            r2 = review_feedback_loop.backfill_witness(pr, unresolved, looker, "ok", apply=True)
+        reply.assert_not_called()
+        self.assertIn("already carries an attested look", r1["reason"])
+        self.assertIn("not resolved", r2["reason"])
+
+    def test_reconcile_witness_defaults_looker_and_backfills(self) -> None:
+        # The walker: --looker omitted → defaults to the authenticated actor; backfills
+        # only the resolved-bot-only-unattested thread we resolved.
+        ours = _thread(resolved=True, authors=("coderabbitai",), author_type="Bot",
+                       resolved_by="loganfinney27")
+        ours["id"] = "OURS"
+        theirs = _thread(resolved=True, authors=("coderabbitai",), author_type="Bot",
+                         resolved_by="some-human")
+        theirs["id"] = "THEIRS"
+        pr = _pr(number=7, threads=(ours, theirs))
+        posted = []
+        args = SimpleNamespace(owner="o", repo="r", looker=None, pr=None, rationale="", apply=True)
+        with mock.patch.object(review_feedback_loop, "_viewer_login", return_value="loganfinney27") as viewer, \
+             mock.patch.object(review_feedback_loop, "_list_open_pr_numbers", return_value=[7]), \
+             mock.patch.object(review_feedback_loop, "_fetch_pr", return_value=pr), \
+             mock.patch.object(review_feedback_loop, "_add_thread_reply",
+                               side_effect=lambda tid, body: posted.append(tid)), \
+             contextlib.redirect_stdout(io.StringIO()) as out:
+            rc = review_feedback_loop.reconcile_witness(args)
+        self.assertEqual(rc, 0)
+        viewer.assert_called()                  # looker defaulted to the actor
+        self.assertEqual(posted, ["OURS"])      # only the thread WE resolved got the witness
+        report = json.loads(out.getvalue())
+        self.assertEqual(report["looker"], "loganfinney27")
+        self.assertEqual(report["backfilled"], 1)
+
+    def test_engage_outdated_looker_defaults_to_authenticated_actor(self) -> None:
+        # Agent-driven operation: when --looker is not given (args.looker is None), the
+        # witness defaults to the authenticated actor (_viewer_login), so the attestation
+        # truthfully names whoever actually ran the resolve — not a hardcoded bot.
+        pr = _pr(number=7, threads=(_thread(authors=("coderabbitai",), author_type="Bot", outdated=True),))
+        seen_looker = []
+
+        def fake_attest(pr_arg, thread_arg, looker, *a, **k):
+            seen_looker.append(looker)
+            return {"thread_id": thread_arg.get("id"), "eligible": True, "applied": False, "reason": ""}
+
+        args = SimpleNamespace(owner="o", repo="r", looker=None, apply=False)
+        with mock.patch.object(review_feedback_loop, "_viewer_login", return_value="loganfinney27") as viewer, \
+                mock.patch.object(review_feedback_loop, "_list_open_pr_numbers", return_value=[7]), \
+                mock.patch.object(review_feedback_loop, "_fetch_pr", return_value=pr), \
+                mock.patch.object(review_feedback_loop, "attest_and_resolve", side_effect=fake_attest), \
+                contextlib.redirect_stdout(io.StringIO()):
+            rc = review_feedback_loop.engage_outdated(args)
+        self.assertEqual(rc, 0)
+        viewer.assert_called_once()             # resolved the actor once for the run
+        self.assertEqual(seen_looker, ["loganfinney27"])  # witness names the real actor
+
+    def test_engage_outdated_pr_scope_targets_one_pr(self) -> None:
+        # --pr scopes the pass to a single PR (the guinea-pig case): the backlog walk is
+        # bypassed entirely and only the named PR is fetched/processed. (Logan: #481 is the
+        # ideal guinea pig for this step.)
+        pr = _pr(number=481, threads=(_thread(authors=("coderabbitai",), author_type="Bot", outdated=True),))
+        fetched = []
+
+        def fake_fetch(owner, repo, number):
+            fetched.append(number)
+            return pr
+
+        args = SimpleNamespace(owner="o", repo="r", looker="github-actions[bot]", apply=False, pr=481)
+        with mock.patch.object(review_feedback_loop, "_list_open_pr_numbers") as list_all, \
+                mock.patch.object(review_feedback_loop, "_fetch_pr", side_effect=fake_fetch), \
+                mock.patch.object(review_feedback_loop, "attest_and_resolve",
+                                  side_effect=lambda p, t, *a, **k: {"thread_id": t.get("id"), "eligible": True, "applied": False, "reason": ""}), \
+                contextlib.redirect_stdout(io.StringIO()) as out:
+            rc = review_feedback_loop.engage_outdated(args)
+        self.assertEqual(rc, 0)
+        list_all.assert_not_called()      # the backlog walk is bypassed under --pr
+        self.assertEqual(fetched, [481])  # only the named PR is fetched
+        self.assertEqual(json.loads(out.getvalue())["scope_pr"], 481)
+
+    def test_engage_outdated_pr_scope_refuses_non_open_pr(self) -> None:
+        # engage-outdated acts only on the open queue. The backlog walk only yields open
+        # PRs; a --pr scope must hold the same invariant — a closed/merged PR is refused,
+        # not engaged. (Sourcery review on #536.)
+        closed = _pr(number=481, state="CLOSED",
+                     threads=(_thread(authors=("coderabbitai",), author_type="Bot", outdated=True),))
+        attested = []
+        args = SimpleNamespace(owner="o", repo="r", looker="github-actions[bot]", apply=True, pr=481)
+        with mock.patch.object(review_feedback_loop, "_fetch_pr", return_value=closed), \
+                mock.patch.object(review_feedback_loop, "attest_and_resolve",
+                                  side_effect=lambda *a, **k: attested.append(1)):
+            with self.assertRaises(SystemExit):
+                review_feedback_loop.engage_outdated(args)
+        self.assertEqual(attested, [])  # refused before touching any thread
+
+    def test_engage_outdated_pr_arg_rejects_non_positive(self) -> None:
+        # --pr is parsed by _positive_int: 0/negative are rejected at parse time, so a
+        # falsy int can never silently fall back to the full backlog walk. (Copilot +
+        # Codex P1 on #536.)
+        parser = review_feedback_loop.build_parser()
+        for bad in ("0", "-5"):
+            with self.assertRaises(SystemExit):
+                parser.parse_args(["engage-outdated", "--owner", "o", "--repo", "r", "--pr", bad])
 
 
 if __name__ == "__main__":

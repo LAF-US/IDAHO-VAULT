@@ -121,6 +121,74 @@ Parent: session task #28. Three sub-strands (all verified from the #399 body / P
 
 ---
 
+## Run record — 2026-06-17: the boundary located (grounded)
+
+The look-then-resolve engine ran live for the first time with `apply=true` against the
+whole open backlog (`engage-outdated.yml`, run `27662203952`, conclusion **success**).
+The run's own JSON output (read directly from the job log — grounded, not inferred):
+
+> `{"apply": true, "outdated_threads": 34, "resolved": 0}`
+
+All 34 outdated threads across 5 PRs (#481, #474, #453, #424, #400) failed at the
+**resolve** step with the identical error:
+
+> `resolveReviewThread → FORBIDDEN: "Resource not accessible by integration"`
+
+**The boundary, located precisely:** `github-actions[bot]` (the `GITHUB_TOKEN` integration
+identity) **can post an attestation comment but is FORBIDDEN from `resolveReviewThread`**,
+even with `pull-requests: write`. This is the #398 pole (commit/actor identity
+trust) reappearing at the merge-gate pole's resolve verb — the seam where both trusts must
+hold at once. The user-token identity (`loganfinney27`) *can* resolve (proven on #536), but
+that is the identity we decline to forge.
+
+### Fix A — proposed in PR #540 (open, not yet on `main`): resolve-first, no false witness
+Because the engine posted the attestation *before* attempting the resolve, the failed run
+left 34 threads carrying a `github-actions[bot]` comment claiming the thread was "cleared"
+when it was not — a false witness. PR #540 reorders `attest_and_resolve` to **resolve
+first, attest only on success**, so a "cleared" attestation can never appear on a thread
+that was not cleared. **Caveat (per Codex on #540):** #540 is still open — `main` retains
+the old attest-then-resolve order, so any `apply=true` rerun *before* #540 merges can still
+mint a false "cleared" attestation. (Cleanup of the 34 already-posted false attestations is
+a separate follow-up.)
+
+### Fix B — REVISED 2026-06-17: agent-driven resolve works; the App is SHELVED
+**Empirical correction (tested, grounded):** both `resolveReviewThread` *and*
+`unresolveReviewThread` **succeed under the agent/user token** (`loganfinney27`) — verified by
+a net-zero `unresolve → re-resolve` round-trip on a #540 thread, plus the thread resolutions
+performed across #536/#540/#541 this session. So the FORBIDDEN recorded above was **not** a
+property of the mutation or of a missing permission scope — it was *solely* the
+`github-actions[bot]` **integration** token calling `resolveReviewThread` from inside Actions
+(the classic "Resource not accessible by integration" restriction), independent of
+`pull-requests: write`. The engine's resolve step is not broken; it only fails in the CI-bot
+execution context.
+
+Therefore the look-then-resolve engine can run **agent-driven**: an agent invokes the resolve
+logic with the token and it works — exactly how these PR threads have been resolved all
+session, transparently and with attribution. That transparent, attributed, Logan-directed
+resolution is *delegated action*, not the counterfeit/unattended "witnessed look minted as
+Logan" that the #398 concern guards against — the line we don't cross is unattended forging,
+not an agent openly clearing already-addressed bot threads under direction.
+
+**Decision (Logan, 2026-06-17): the GitHub App is SHELVED — a mountain for a molehill.**
+A dedicated App ("IDAHO-VAULT Review Resolver") was scoped as the distinct permitted resolve
+identity, but thread resolution is *already live* via the agent token. The App's only
+remaining purpose would be **fully-unattended, scheduled CI resolution under a distinct
+non-Logan identity** — revisit only if/when zero-human-or-agent-in-the-loop cron is actually
+wanted. It is not a blocker and is not being built now. (The earlier admin checklist, App
+permissions, and `review-resolver-app-*` credential names are retired with this decision.)
+
+**Path forward (agent-driven, no App) — queue-script work in `review_feedback_loop.py`:**
+- Run the engine's resolve/disposition logic as the directed agent (token), with transparent
+  attestation — not via the `github-actions[bot]` workflow.
+- Default the attestation `looker` to the authenticated actor (`_viewer_login()`), so the
+  witness always truthfully names whoever actually ran the resolve.
+- Add the resolved-but-unwitnessed **reconciliation**, now grounded in
+  `PullRequestReviewThread.resolvedBy` (GitHub exposes who resolved a thread, so recovery can
+  post the missing witness only when *our* identity resolved it, and leave human-resolved
+  threads untouched).
+
+---
+
 ## What this node does NOT do
 
 It assigns no malignancy diagnostics. Earlier this session I called #527's arm and the
