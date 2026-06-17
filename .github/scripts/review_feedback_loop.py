@@ -1545,6 +1545,61 @@ def _positive_int(value: str) -> int:
     return parsed
 
 
+def engage_outdated(args: argparse.Namespace) -> int:
+    """Engage the queue on the OUTDATED subset: attest-resolve every outdated-resolvable
+    thread across open PRs. Dry-run unless --apply.
+
+    The first 'engage' step (Logan: the queue runs by default; reviewer comments are what
+    keep a PR hanging). Scope is deliberately the narrowest safe slice — ONLY threads whose
+    resolution disposition is `outdated-resolvable` (bot-only, GitHub-outdated: the
+    commented lines no longer exist in the diff). Each is cleared via `attest_and_resolve`
+    with a recorded `github-actions[bot]` attestation, so it is a *witnessed* resolution,
+    not the blind reconciler. needs-fix / apply-suggestion / looked / human threads are
+    never touched — needs-fix is the reviewer gate that keeps a PR hanging. This NEVER
+    merges; if clearing the last thread lets an armed PR flow, that is GitHub's auto-merge,
+    by design (the engaged queue).
+    """
+    considered: list[dict[str, object]] = []
+    for pr_number in _list_open_pr_numbers(args.owner, args.repo):
+        pr = _fetch_pr(args.owner, args.repo, pr_number)
+        for thread in (pr.get("reviewThreads") or {}).get("nodes") or []:
+            if thread.get("isResolved"):
+                continue
+            if _thread_resolution_disposition(thread) != "outdated-resolvable":
+                continue
+            try:
+                result = attest_and_resolve(
+                    pr,
+                    thread,
+                    args.looker,
+                    "advisory",
+                    "Outdated: the commented lines no longer exist in the current diff; "
+                    "bot-only thread cleared under the outdated-only engaged policy.",
+                    apply=args.apply,
+                )
+            except RuntimeError as exc:
+                # One thread's transient gh/GraphQL failure must not abort the whole
+                # backlog pass — record it and keep going so the report stays complete.
+                result = {
+                    "thread_id": thread.get("id"),
+                    "eligible": False,
+                    "applied": False,
+                    "reason": f"failed to process thread: {exc}",
+                }
+            considered.append({"pr": pr_number, **result})
+    print(
+        json.dumps(
+            {
+                "apply": args.apply,
+                "outdated_threads": len(considered),
+                "resolved": sum(1 for r in considered if r.get("applied")),
+                "results": considered,
+            }
+        )
+    )
+    return 0
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser()
     subparsers = parser.add_subparsers(dest="command", required=True)
@@ -1636,6 +1691,16 @@ def build_parser() -> argparse.ArgumentParser:
         help="actually post the attestation and resolve (default: dry-run)",
     )
 
+    engage = subparsers.add_parser("engage-outdated")
+    engage.add_argument("--owner", required=True)
+    engage.add_argument("--repo", required=True)
+    engage.add_argument("--looker", default="github-actions[bot]")
+    engage.add_argument(
+        "--apply",
+        action="store_true",
+        help="actually post attestations and resolve outdated threads (default: dry-run)",
+    )
+
     return parser
 
 
@@ -1664,6 +1729,8 @@ def main() -> int:
         return render_worklist(args)
     if args.command == "attest-resolve":
         return attest_resolve(args)
+    if args.command == "engage-outdated":
+        return engage_outdated(args)
     return enable_auto_merge(args)
 
 
