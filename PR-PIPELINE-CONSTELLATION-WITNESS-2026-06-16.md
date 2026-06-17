@@ -151,29 +151,35 @@ the old attest-then-resolve order, so any `apply=true` rerun *before* #540 merge
 mint a false "cleared" attestation. (Cleanup of the 34 already-posted false attestations is
 a separate follow-up.)
 
-### Fix B — DECIDED by Logan 2026-06-17: a GitHub App signing/resolve identity (#398 option E)
-The resolve identity will be a **dedicated GitHub App** ("IDAHO-VAULT Looker") — a distinct,
-named, witnessed bot that is neither `loganfinney27` nor the generic integration token, and
-whose installation token *can* `resolveReviewThread`. This is the #398 "App signer" option E,
-now also serving #399's resolve verb. **Authority: Logan direct instruction (2026-06-17).**
+### Fix B — DECIDED by Logan 2026-06-17: a GitHub App resolve identity (#398 option E)
+The resolve identity will be a **dedicated GitHub App** named in GitHub's own terms for the
+action — **"IDAHO-VAULT Conversation Resolver"** (the UI verb+noun "Resolve conversation";
+the API calls the same object a *review thread*). A distinct, witnessed bot that is neither
+`loganfinney27` nor the generic integration token, and whose installation access token *can*
+`resolveReviewThread`. This is the #398 "App signer" option E, now also serving #399's resolve
+verb. (Name grounded in GitHub terminology at Logan's instruction — not "Looker," which
+overloaded the engine's internal `looker` role and collided with Google Looker.)
+**Authority: Logan direct instruction (2026-06-17).**
 
 **Admin-gated (Logan's hand — genuinely human work, by design):**
-1. Register a GitHub App under the LAF-US org: "IDAHO-VAULT Looker"; permission **Pull
-   requests: Read & Write** (covers thread resolve + reply); no webhook needed.
+1. Register a GitHub App under the LAF-US org: "IDAHO-VAULT Conversation Resolver"; permission
+   **Pull requests: Read & Write** (covers conversation resolve + reply); no webhook needed.
 2. Install it on `LAF-US/IDAHO-VAULT`.
-3. Generate the App credential key; store **App ID** as 1Password `looker-app-id` and the
-   **App key** as 1Password `looker-app-private-key`, fetched at runtime via
+3. Generate the App credential key; store **App ID** as 1Password `conversation-resolver-app-id`
+   and the **App key** as 1Password `conversation-resolver-app-key`, fetched at runtime via
    `OP_SERVICE_ACCOUNT_TOKEN` (the vault's 1Password doctrine). *(The `.op/secrets.template.md`
    inventory cannot be edited via PR — the `secret_path` guard fails on any `.op/` change —
    so these credential names are recorded here instead; updating that inventory, or the
    guard's allowlist, is a separate `.op/`-scoped follow-up.)*
 
 **Code-side (Claude, once the App exists + its bot login is known):**
-4. `engage-outdated.yml` mints a short-lived installation token (pinned
+4. `engage-outdated.yml` mints a short-lived installation access token (pinned
    `actions/create-github-app-token`) from the App ID + key, and runs the resolve under it.
-5. Change the engine's `--looker` default from `github-actions[bot]` to the App's bot login
-   (e.g. `idaho-vault-looker[bot]`) so the self-attestation actor-match check passes under
-   the new identity. Re-run `apply=true`; #481 should then flow as the guinea pig.
+5. Pass the App's bot login (`idaho-vault-conversation-resolver[bot]`) as the engine's
+   `--looker` value (the `--looker` flag stays — it names the engine's internal *role*, the
+   attesting identity — only its value changes from `github-actions[bot]` to the App login) so
+   the self-attestation actor-match check passes. Re-run `apply=true`; #481 then flows as the
+   guinea pig.
 
 ---
 
