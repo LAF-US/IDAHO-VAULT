@@ -88,7 +88,10 @@ def _pr(
 
 
 class ReviewFeedbackLoopTest(unittest.TestCase):
-    def test_low_risk_agent_pr_never_becomes_auto_merge_eligible(self) -> None:
+    def test_low_risk_agent_pr_becomes_auto_merge_eligible_after_grace(self) -> None:
+        # Reversal of the #521/#527 fail-close (2026-06-17): a low-risk PR with no blocking
+        # feedback is auto-merge-eligible once the grace window elapses. Within grace it is
+        # not yet eligible but should carry the review/pending label.
         now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
 
         early_state = review_feedback_loop.evaluate_review_state(
@@ -108,12 +111,12 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
 
         self.assertTrue(early_state["low_risk"])
         self.assertFalse(early_state["grace_elapsed"])
-        self.assertFalse(early_state["should_have_agent_review_pending"])
+        self.assertTrue(early_state["should_have_agent_review_pending"])
         self.assertFalse(early_state["eligible_for_auto_merge"])
 
         self.assertTrue(ready_state["grace_elapsed"])
+        self.assertTrue(ready_state["eligible_for_auto_merge"])
         self.assertFalse(ready_state["should_have_agent_review_pending"])
-        self.assertFalse(ready_state["eligible_for_auto_merge"])
 
     def test_risk_label_is_canonical_over_body_marker(self) -> None:
         """Label-based risk tier wins when body marker was overwritten by an editor."""
@@ -131,7 +134,8 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
 
         self.assertTrue(state["low_risk"])
         self.assertTrue(state["grace_elapsed"])
-        self.assertFalse(state["eligible_for_auto_merge"])
+        # Reversal (2026-06-17): low-risk + grace + unblocked is now eligible.
+        self.assertTrue(state["eligible_for_auto_merge"])
 
     def test_high_risk_label_wins_when_low_and_high_are_both_present(self) -> None:
         state = review_feedback_loop.evaluate_review_state(
@@ -410,7 +414,102 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertFalse(enabled)
         self.assertIn("not authorized to enable auto-merge", arm_error)
 
-    def test_reconcile_open_prs_does_not_promote_agent_prs(self) -> None:
+    # ----- protected-path guard + guarded arm (#521/#527 reversal, 2026-06-17) -----
+
+    def test_pr_touches_protected_path_matches_governance_and_ci(self) -> None:
+        # A changed file under a protected glob → True; an ordinary doc-only PR → False.
+        protected = mock.Mock(stdout="docs/notes.md\n.github/workflows/ci.yml\nREADME.md\n")
+        plain = mock.Mock(stdout="docs/notes.md\nREADME.md\n")
+        with mock.patch.object(review_feedback_loop, "_run", return_value=protected):
+            self.assertTrue(
+                review_feedback_loop._pr_touches_protected_path("o", "r", 1)
+            )
+        with mock.patch.object(review_feedback_loop, "_run", return_value=plain):
+            self.assertFalse(
+                review_feedback_loop._pr_touches_protected_path("o", "r", 2)
+            )
+
+    def test_pr_touches_protected_path_fails_closed_on_fetch_error(self) -> None:
+        # If the changed-file list can't be fetched, treat the PR as protected (never widen
+        # what gets armed on a transient API failure).
+        with mock.patch.object(
+            review_feedback_loop, "_run", side_effect=RuntimeError("api down")
+        ):
+            self.assertTrue(
+                review_feedback_loop._pr_touches_protected_path("o", "r", 3)
+            )
+
+    def test_maybe_arm_arms_eligible_non_protected_pr(self) -> None:
+        with mock.patch.object(
+            review_feedback_loop, "_pr_touches_protected_path", return_value=False
+        ), mock.patch.object(
+            review_feedback_loop, "_arm_auto_merge", return_value=(True, None)
+        ) as arm:
+            result = review_feedback_loop._maybe_arm_auto_merge(
+                "o", "r", 5, {"eligible_for_auto_merge": True}
+            )
+        self.assertTrue(result["armed"])
+        arm.assert_called_once_with(5)
+
+    def test_maybe_arm_refuses_protected_path(self) -> None:
+        with mock.patch.object(
+            review_feedback_loop, "_pr_touches_protected_path", return_value=True
+        ), mock.patch.object(review_feedback_loop, "_arm_auto_merge") as arm:
+            result = review_feedback_loop._maybe_arm_auto_merge(
+                "o", "r", 6, {"eligible_for_auto_merge": True}
+            )
+        self.assertFalse(result["armed"])
+        self.assertIn("protected", result["reason"])
+        arm.assert_not_called()
+
+    def test_maybe_arm_noops_when_not_eligible_without_touching_api(self) -> None:
+        # Not eligible → never even fetches the file list (no gh call) and never arms.
+        with mock.patch.object(
+            review_feedback_loop, "_pr_touches_protected_path"
+        ) as protected, mock.patch.object(
+            review_feedback_loop, "_arm_auto_merge"
+        ) as arm:
+            result = review_feedback_loop._maybe_arm_auto_merge(
+                "o", "r", 7, {"eligible_for_auto_merge": False}
+            )
+        self.assertFalse(result["armed"])
+        protected.assert_not_called()
+        arm.assert_not_called()
+
+    def test_sync_pr_arms_eligible_low_risk_pr_when_threads_clear(self) -> None:
+        # End-to-end through sync_pr: a low-risk, grace-elapsed PR with no current threads
+        # is armed (guarded). Mirrors "arm when the last blocking thread clears".
+        now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
+        args = SimpleNamespace(
+            owner="LAF-US",
+            repo="IDAHO-VAULT",
+            pr_number=200,
+            sync_actor="someone",
+            grace_minutes=30,
+        )
+        ready = _pr(
+            number=200,
+            created_at=now - timedelta(minutes=45),
+            labels=(review_feedback_loop.RISK_LOW_LABEL,),
+        )
+        with mock.patch.object(review_feedback_loop, "ensure_labels"), mock.patch.object(
+            review_feedback_loop, "_fetch_pr", return_value=ready
+        ), mock.patch.object(
+            review_feedback_loop, "_resolve_outdated_advisory_threads", return_value=0
+        ), mock.patch.object(
+            review_feedback_loop, "apply_review_state_projection", return_value=[]
+        ), mock.patch.object(
+            review_feedback_loop, "_pr_touches_protected_path", return_value=False
+        ), mock.patch.object(
+            review_feedback_loop, "_arm_auto_merge", return_value=(True, None)
+        ) as arm, contextlib.redirect_stdout(io.StringIO()):
+            result = review_feedback_loop.sync_pr(args)
+        self.assertEqual(result, 0)
+        arm.assert_called_once_with(200)
+
+    def test_reconcile_open_prs_promotes_and_arms_eligible_low_risk_pr(self) -> None:
+        # Reversal (2026-06-17): a low-risk, grace-elapsed, unblocked, non-protected-path PR
+        # is now promoted to merge/auto and armed for the merge queue.
         args = SimpleNamespace(
             owner="LAF-US",
             repo="IDAHO-VAULT",
@@ -437,6 +536,8 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         ), mock.patch.object(
             review_feedback_loop, "apply_review_state_projection", return_value=[]
         ), mock.patch.object(
+            review_feedback_loop, "_pr_touches_protected_path", return_value=False
+        ), mock.patch.object(
             review_feedback_loop, "_edit_label"
         ) as edit_label, mock.patch.object(
             review_feedback_loop, "_comment"
@@ -446,8 +547,41 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             result = review_feedback_loop.reconcile_open_prs(args)
 
         self.assertEqual(result, 0)
-        edit_label.assert_not_called()
-        comment.assert_not_called()
+        edit_label.assert_any_call(88, add=review_feedback_loop.DEFAULT_AUTO_MERGE_LABEL)
+        comment.assert_called_once()
+        arm_auto_merge.assert_called_once_with(88)
+
+    def test_reconcile_open_prs_refuses_to_arm_protected_path_pr(self) -> None:
+        # The protected-path guard: even an eligible PR that touches governance/CI surfaces
+        # is NOT armed — it waits for a human.
+        args = SimpleNamespace(owner="LAF-US", repo="IDAHO-VAULT", grace_minutes=30)
+        # Eligible (risk/low + grace + merge/auto label, unblocked) — so the ONLY thing
+        # stopping the arm is the protected-path guard.
+        ready_pr = _pr(
+            number=91,
+            created_at=datetime(2026, 4, 16, 1, 0, tzinfo=timezone.utc),
+            labels=(
+                review_feedback_loop.RISK_LOW_LABEL,
+                review_feedback_loop.DEFAULT_AUTO_MERGE_LABEL,
+            ),
+        )
+
+        with mock.patch.object(review_feedback_loop, "ensure_labels"), mock.patch.object(
+            review_feedback_loop, "_list_open_pr_numbers", return_value=[91]
+        ), mock.patch.object(
+            review_feedback_loop, "_fetch_pr", side_effect=[ready_pr]
+        ), mock.patch.object(
+            review_feedback_loop, "_resolve_outdated_advisory_threads", return_value=0
+        ), mock.patch.object(
+            review_feedback_loop, "apply_review_state_projection", return_value=[]
+        ), mock.patch.object(
+            review_feedback_loop, "_pr_touches_protected_path", return_value=True
+        ), mock.patch.object(
+            review_feedback_loop, "_arm_auto_merge"
+        ) as arm_auto_merge:
+            result = review_feedback_loop.reconcile_open_prs(args)
+
+        self.assertEqual(result, 0)
         arm_auto_merge.assert_not_called()
 
     def test_reconcile_open_prs_reports_auth_blocked_auto_merge(self) -> None:
@@ -482,6 +616,8 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         ), mock.patch.object(
             review_feedback_loop, "apply_review_state_projection", return_value=[]
         ), mock.patch.object(
+            review_feedback_loop, "_pr_touches_protected_path", return_value=False
+        ), mock.patch.object(
             review_feedback_loop, "_arm_auto_merge", return_value=(
                 False,
                 "GitHub Actions is not authorized to enable auto-merge on the protected base branch.",
@@ -493,9 +629,14 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
                 grace_minutes=30,
             )
 
+        # Reversal (2026-06-17): the PR is eligible and armed; the arm is rejected by the
+        # protected base branch, so it is reported as authorization-blocked (not silently green).
         self.assertEqual(report["rearmed_prs"], [])
-        self.assertEqual(report["auto_merge_authorization_blocked"], [])
-        self.assertIsNone(report["evaluated"][0]["auto_merge_arm_error"])
+        self.assertEqual(report["auto_merge_authorization_blocked"], [89])
+        self.assertEqual(
+            report["evaluated"][0]["auto_merge_arm_error"],
+            "GitHub Actions is not authorized to enable auto-merge on the protected base branch.",
+        )
 
     def test_thread_has_attested_look_requires_self_attested_marker(self) -> None:
         # Valid: structured marker whose by= matches the comment's own author.

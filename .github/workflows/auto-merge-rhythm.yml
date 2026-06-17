@@ -15,6 +15,15 @@ name: Auto-merge Rhythm — Sync Bot
 # provisioned). Until #398 lands an identity-distinct verified signer, no
 # login-based maintainer auto-arm exists; Logan merges his own PRs by hand.
 #
+# UPDATE (2026-06-17): the broader fail-close was reversed for the ENGINE arming
+# lane (review_feedback_loop.py: AGENT_AUTO_MERGE_ENABLED=True). What changed is the
+# gate, not the identity: `main` now lands through the GitHub merge queue, which
+# provides the distinct trust gate #521 lacked (ARBORSCAPE IF 12) — a PR merges only
+# once its required checks/reviews/thread-resolution pass, whoever armed it. The engine
+# now arms eligible (risk/low + grace + thread-clear), non-protected-path PRs. See
+# AGENT-AUTOMERGE-REENABLED-2026-06-17.md. THIS sync-bot lane is unchanged — it never
+# keyed on author login and its narrow dependency-sync scope is still correct.
+#
 # Same protected-path guard and required-checks verification as the
 # Dependabot job. PRs that touch governance, workflows, or agent
 # scaffolding still fail eligibility and wait for human review.
