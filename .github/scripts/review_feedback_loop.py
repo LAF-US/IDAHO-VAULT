@@ -213,6 +213,12 @@ def _maybe_arm_auto_merge(
     if _pr_touches_protected_path(owner, repo, pr_number):
         return {"armed": False, "reason": "protected/governance path — awaits human review"}
     armed, arm_error = _arm_auto_merge(pr_number)
+    if armed:
+        # Tag the PR `merge/auto` so the disable path (apply_review_state_projection,
+        # which keys disablement on this label) can later un-arm it if a new thread or a
+        # CHANGES_REQUESTED review makes it merge_blocked. Without the label an
+        # event-armed PR could stay armed while the engine's own state said "blocked."
+        _edit_label(pr_number, add=DEFAULT_AUTO_MERGE_LABEL)
     return {"armed": armed, "reason": None if armed else arm_error}
 
 
