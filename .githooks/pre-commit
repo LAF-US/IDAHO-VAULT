@@ -12,15 +12,29 @@ python .github/scripts/check_large_files.py --staged
 # marriage). Only notebooks that DECLARE a pairing are synced; a sync failure on a paired
 # notebook aborts the commit (no silent '|| true' that would let drift slip in). Unpaired or
 # corrupt notebooks are left untouched (the footgun guard). Renames are included (ACMR) so a
-# renamed notebook's twin is re-synced here, not left to drift until CI catches it. NETWEB forbids
-# spaces/newlines in tracked filenames, so word-splitting the staged list is safe here.
+# renamed notebook's twin is re-synced here, not left to drift until CI catches it.
+#
+# Path handling: NETWEB enforces no trailing space and no <>:"|?* in tracked names, but it does
+# NOT forbid *internal* spaces -- so split the staged list on newline only (IFS) and carry it in
+# positional params, keeping space-bearing paths intact without bashisms (stays POSIX sh; no
+# arrays / no `read -d`). A literal newline inside a filename would still break this, but git's
+# plain --name-only output cannot represent one unquoted, and such a name is itself a portability
+# violation. `-- '*.ipynb'` is git's own pathspec (matches at any depth), replacing the old grep.
 if command -v jupytext >/dev/null 2>&1; then
-  nbs=$(git diff --cached --name-only --diff-filter=ACMR | grep -E '\.ipynb$' || true)
+  nbs=$(git diff --cached --name-only --diff-filter=ACMR -- '*.ipynb')
   if [ -n "$nbs" ]; then
-    # sync_paired prints the twin paths it touched; abort the commit if a paired notebook fails.
-    # shellcheck disable=SC2086
-    twins=$(python .github/scripts/jupytext_sync_paired.py $nbs) || exit 1
-    # shellcheck disable=SC2086
-    git add -- $nbs $twins
+    oldifs=$IFS; IFS='
+'
+    # shellcheck disable=SC2086  # intentional split on newline (IFS), not on whitespace
+    set -- $nbs
+    IFS=$oldifs
+    # sync_paired prints the existing implied twin paths; abort the commit if a paired nb fails.
+    twins=$(python .github/scripts/jupytext_sync_paired.py "$@") || exit 1
+    IFS='
+'
+    # shellcheck disable=SC2086  # intentional split on newline (IFS), not on whitespace
+    set -- "$@" $twins
+    IFS=$oldifs
+    git add -- "$@"
   fi
 fi
