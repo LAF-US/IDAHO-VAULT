@@ -99,6 +99,11 @@ uses case-folding character classes — `*.[Mm][Oo][Vv]` — that match all case
 permutations. When adding a new binary type, follow the same form rather than a
 bare lowercase glob.
 
+One deliberate exception: `.mts` is shared between AVCHD camera video (binary)
+and TypeScript module source (text). Its LFS rule is scoped to **uppercase
+`.MTS`** only, and lowercase `.mts`/`.cts` are normalized as text — so not every
+`.mts` variant is LFS-tracked.
+
 This is belt-and-suspenders: `check_large_files.py` is the case-agnostic
 backstop that still blocks any >100 MB file lacking LFS attributes (and any
 file over the 2 GB ceiling) regardless of extension casing. The

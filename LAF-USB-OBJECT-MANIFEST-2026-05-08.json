@@ -3,7 +3,7 @@
   "updated": "2026-05-17",
   "authority": "LOGAN",
   "status": "staged",
-  "purpose": "Complete registry of 38 files that exceed GitHub's 2 GB Git LFS per-file limit. All objects confirmed present locally in .git/lfs/objects/ (323 GB total). Routing classifications are provisional â€” Logan must approve before any carrier transfer executes.",
+  "purpose": "Complete registry of 40 files that exceed GitHub's 2 GB Git LFS per-file limit (originally 38 at the 2026-05-08 block; grew to 40 as ghost OIDs were retired and entries added). All objects confirmed present locally in .git/lfs/objects/ (323 GB total). Routing classifications are provisional â€” Logan must approve before any carrier transfer executes.",
   "routing_notes": {
     "public-record": "Legislature chamber sessions, committee hearings, press conferences, public rallies. Routed to Internet Archive as the immutable/public ledger lane. Logan must confirm each item before upload.",
     "production-private": "Idaho Reports / IPTV production originals, raw camera footage (MXF/MOV), internal production files. Routed to GCS the-ledger-bucket (cold) pending Logan decision between GCS and THE-CITY 5TB drive.",
