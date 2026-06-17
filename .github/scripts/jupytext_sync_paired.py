@@ -74,7 +74,17 @@ def main(argv: list[str]) -> int:
         formats = declared_formats(data)
         if not formats:
             continue  # genuinely unpaired: a no-op
-        if subprocess.run(["jupytext", "--sync", notebook]).returncode != 0:
+        # Capture jupytext's own output: it must NOT reach this script's stdout, which is a
+        # strict one-twin-path-per-line contract the pre-commit hook word-splits into `git add`.
+        # jupytext chatter on our stdout would be handed to `git add` as bogus paths.
+        proc = subprocess.run(
+            ["jupytext", "--sync", notebook], capture_output=True, text=True
+        )
+        if proc.stderr:
+            sys.stderr.write(proc.stderr)
+        if proc.returncode != 0:
+            if proc.stdout:  # only on failure, and only to stderr — never our stdout
+                sys.stderr.write(proc.stdout)
             failed.append(notebook)
             continue
         touched.extend(twin for twin in twin_paths(notebook, formats) if os.path.exists(twin))
