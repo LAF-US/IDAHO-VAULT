@@ -666,7 +666,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertFalse(result["applied"])
         self.assertIn(review_feedback_loop.LOOK_ATTESTATION_MARKER, result["attestation"])
 
-    def test_attest_and_resolve_apply_attests_then_resolves(self) -> None:
+    def test_attest_and_resolve_apply_resolves_then_attests(self) -> None:
         thread = _thread(authors=("coderabbitai",), author_type="Bot")
         pr = _pr(threads=(thread,))
         manager = mock.Mock()
@@ -678,11 +678,29 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             result = review_feedback_loop.attest_and_resolve(
                 pr, thread, "claude-code-bot", "advisory", "ok", apply=True
             )
-        # look, THEN resolve — the attestation reply strictly precedes the resolve
+        # resolve, THEN attest — the "cleared" attestation is posted only after the
+        # resolve succeeds, so it can never claim a clearing that did not happen.
         manager.assert_has_calls(
-            [mock.call.reply("THREAD_1", mock.ANY), mock.call.resolve("THREAD_1")]
+            [mock.call.resolve("THREAD_1"), mock.call.reply("THREAD_1", mock.ANY)]
         )
         self.assertTrue(result["applied"])
+
+    def test_attest_and_resolve_no_false_witness_when_resolve_forbidden(self) -> None:
+        # The live #398 boundary: resolveReviewThread is FORBIDDEN for the integration
+        # token. The resolve must run FIRST and raise BEFORE any attestation is posted —
+        # so a thread that could not be cleared never gains a "thread cleared" comment.
+        thread = _thread(authors=("coderabbitai",), author_type="Bot")
+        pr = _pr(threads=(thread,))
+        with mock.patch.object(review_feedback_loop, "_viewer_login", return_value="github-actions[bot]"), \
+             mock.patch.object(review_feedback_loop, "_add_thread_reply") as reply, \
+             mock.patch.object(review_feedback_loop, "_resolve_thread",
+                               side_effect=RuntimeError("FORBIDDEN: Resource not accessible by integration")) as resolve:
+            with self.assertRaises(RuntimeError):
+                review_feedback_loop.attest_and_resolve(
+                    pr, thread, "github-actions[bot]", "advisory", "ok", apply=True
+                )
+        resolve.assert_called_once_with("THREAD_1")
+        reply.assert_not_called()  # NO false "cleared" attestation left behind
 
     def test_attest_and_resolve_skips_human_thread(self) -> None:
         thread = _thread(authors=("coderabbitai",), author_type="Bot")
