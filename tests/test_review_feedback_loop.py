@@ -35,11 +35,13 @@ def _thread(
     authors: tuple[str, ...] = ("reviewer",),
     author_type: str = "User",
     body: str = "review note",
+    resolved_by: str | None = None,
 ) -> dict[str, object]:
     return {
         "id": "THREAD_1",
         "isResolved": resolved,
         "isOutdated": outdated,
+        "resolvedBy": {"login": resolved_by} if resolved_by else None,
         "comments": {
             "pageInfo": {"hasNextPage": False},
             "nodes": [
@@ -1160,6 +1162,85 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             rc = review_feedback_loop.engage_outdated(args)
         self.assertEqual(rc, 0)
         self.assertEqual(seen, [1, 2])  # did NOT abort after PR #1 raised
+
+    # ----- reconcile-witness: backfill the unwitnessed ending (#399) -----
+
+    def test_backfill_witness_posts_missing_attestation_for_our_resolve(self) -> None:
+        # Resolved + bot-only + unattested + resolvedBy == looker → backfill the look.
+        # It posts the attestation and NEVER resolves/unresolves (already resolved).
+        thread = _thread(resolved=True, authors=("coderabbitai",), author_type="Bot",
+                         resolved_by="loganfinney27")
+        pr = _pr(threads=(thread,))
+        with mock.patch.object(review_feedback_loop, "_viewer_login", return_value="loganfinney27"), \
+             mock.patch.object(review_feedback_loop, "_add_thread_reply") as reply, \
+             mock.patch.object(review_feedback_loop, "_resolve_thread") as resolve:
+            result = review_feedback_loop.backfill_witness(
+                pr, thread, "loganfinney27", "ok", apply=True
+            )
+        reply.assert_called_once()      # the missing witness is posted
+        resolve.assert_not_called()     # never resolves/unresolves
+        self.assertTrue(result["applied"])
+        self.assertIn(review_feedback_loop.LOOK_ATTESTATION_MARKER, result["attestation"])
+
+    def test_backfill_witness_refuses_when_resolved_by_another_identity(self) -> None:
+        # The truthfulness line: a thread a HUMAN (or any non-looker) resolved must NOT
+        # gain a witness from us — we never forge a look for someone else's resolve.
+        thread = _thread(resolved=True, authors=("coderabbitai",), author_type="Bot",
+                         resolved_by="some-human")
+        pr = _pr(threads=(thread,))
+        with mock.patch.object(review_feedback_loop, "_add_thread_reply") as reply:
+            result = review_feedback_loop.backfill_witness(
+                pr, thread, "loganfinney27", "ok", apply=True
+            )
+        reply.assert_not_called()
+        self.assertFalse(result["eligible"])
+        self.assertIn("refusing to witness", result["reason"])
+
+    def test_backfill_witness_skips_already_attested_and_unresolved(self) -> None:
+        looker = "loganfinney27"
+        # Already-attested resolved thread → no-op.
+        body = review_feedback_loop._build_attestation(looker, "advisory", "ok")
+        attested = _thread(resolved=True, authors=("coderabbitai",), author_type="Bot",
+                           resolved_by=looker)
+        attested["comments"]["nodes"].append(
+            {"author": {"login": looker, "__typename": "User"}, "body": body, "url": "u"}
+        )
+        # Unresolved thread → not a backfill target.
+        unresolved = _thread(resolved=False, authors=("coderabbitai",), author_type="Bot",
+                             resolved_by=None)
+        pr = _pr()
+        with mock.patch.object(review_feedback_loop, "_add_thread_reply") as reply:
+            r1 = review_feedback_loop.backfill_witness(pr, attested, looker, "ok", apply=True)
+            r2 = review_feedback_loop.backfill_witness(pr, unresolved, looker, "ok", apply=True)
+        reply.assert_not_called()
+        self.assertIn("already carries an attested look", r1["reason"])
+        self.assertIn("not resolved", r2["reason"])
+
+    def test_reconcile_witness_defaults_looker_and_backfills(self) -> None:
+        # The walker: --looker omitted → defaults to the authenticated actor; backfills
+        # only the resolved-bot-only-unattested thread we resolved.
+        ours = _thread(resolved=True, authors=("coderabbitai",), author_type="Bot",
+                       resolved_by="loganfinney27")
+        ours["id"] = "OURS"
+        theirs = _thread(resolved=True, authors=("coderabbitai",), author_type="Bot",
+                         resolved_by="some-human")
+        theirs["id"] = "THEIRS"
+        pr = _pr(number=7, threads=(ours, theirs))
+        posted = []
+        args = SimpleNamespace(owner="o", repo="r", looker=None, pr=None, rationale="", apply=True)
+        with mock.patch.object(review_feedback_loop, "_viewer_login", return_value="loganfinney27") as viewer, \
+             mock.patch.object(review_feedback_loop, "_list_open_pr_numbers", return_value=[7]), \
+             mock.patch.object(review_feedback_loop, "_fetch_pr", return_value=pr), \
+             mock.patch.object(review_feedback_loop, "_add_thread_reply",
+                               side_effect=lambda tid, body: posted.append(tid)), \
+             contextlib.redirect_stdout(io.StringIO()) as out:
+            rc = review_feedback_loop.reconcile_witness(args)
+        self.assertEqual(rc, 0)
+        viewer.assert_called()                  # looker defaulted to the actor
+        self.assertEqual(posted, ["OURS"])      # only the thread WE resolved got the witness
+        report = json.loads(out.getvalue())
+        self.assertEqual(report["looker"], "loganfinney27")
+        self.assertEqual(report["backfilled"], 1)
 
 
 if __name__ == "__main__":
