@@ -37,8 +37,9 @@ ALLOW_PATH_PATTERNS = (
     re.compile(r"(^|/)\.env\.(example|template)$"),
     re.compile(r"\.env\.(example|template)$"),
     # .op/ in this vault is a governance/documentation chamber, not a live
-    # 1Password CLI config dir. Allow committed doc files (.md, .txt, .json)
-    # while still flagging extensionless credential files like .op/config.
+    # 1Password CLI config dir. Allow top-level .op/ doc files (.md, .txt,
+    # .json) — [^/]+ intentionally excludes subdirectories — while still
+    # flagging extensionless credential files like .op/config.
     re.compile(r"(^|/)\.op/[^/]+\.(md|txt|json)$"),
 )
 
