@@ -19,11 +19,13 @@
 *.[Aa][Vv][Ii] filter=lfs diff=lfs merge=lfs -text
 *.[Mm][Kk][Vv] filter=lfs diff=lfs merge=lfs -text
 *.[Mm][Xx][Ff] filter=lfs diff=lfs merge=lfs -text
-# AVCHD camera containers (.MTS / .M2TS) are binary -> LFS, case-folded for full
-# coverage (matches .MTS / .mts / .Mts). The .mts extension is shared with
-# TypeScript module *source*, so lowercase `.mts` is overridden back to text in
-# the normalization section below — that override must come after this rule.
-*.[Mm][Tt][Ss] filter=lfs diff=lfs merge=lfs -text
+# AVCHD camera containers are written UPPERCASE (.MTS / .M2TS). `.mts`
+# (lowercase) is the TypeScript module-source extension, so the .MTS LFS rule is
+# intentionally UPPERCASE-ONLY — lowercase `.mts`/`.cts` are normalized as text
+# in the normalization section below, and no filter override is needed. A stray
+# lowercase camera `.mts` is still caught by check_large_files.py. .M2TS has no
+# source-format collision, so it stays case-folded.
+*.MTS filter=lfs diff=lfs merge=lfs -text
 *.[Mm]2[Tt][Ss] filter=lfs diff=lfs merge=lfs -text
 *.[Ww][Aa][Vv] filter=lfs diff=lfs merge=lfs -text
 *.[Aa][Aa][Cc] filter=lfs diff=lfs merge=lfs -text
@@ -91,10 +93,9 @@
 *.css text eol=lf
 *.js text eol=lf
 *.ts text eol=lf
-# TypeScript .mts/.cts module sources share the .mts extension with AVCHD video.
-# Force them back to text so they are never stored as LFS — `!filter !diff
-# !merge` unspecifies the LFS attributes set by the media rule above.
-*.mts !filter !diff !merge text eol=lf
+# TypeScript .mts/.cts module sources (lowercase). The .MTS media rule above is
+# uppercase-only, so these are plain text and never LFS — no filter override needed.
+*.mts text eol=lf
 *.cts text eol=lf
 *.ps1 text eol=lf
 *.psm1 text eol=lf
