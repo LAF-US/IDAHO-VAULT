@@ -5,6 +5,7 @@
     [switch]$Apply,
     [switch]$Snapshot,
     [switch]$Prune,
+    [switch]$Stub,
     [switch]$Quiet
 )
 
@@ -20,7 +21,54 @@ $vaultDir = Join-Path $vaultRoot ".$dot"
 
 $unexpectedAtRoot = @()
 
-$mode = if ($Snapshot) { "SNAPSHOT (copy, keep home live)" } else { "RETIRE (move, empty home)" }
+function Write-StubFiles {
+    param([string]$Dot, [string]$VaultDir, [switch]$Quiet)
+    $created = @()
+
+    if (-not (Test-Path $VaultDir)) {
+        New-Item -ItemType Directory -Path $VaultDir -Force | Out-Null
+        $created += "directory .$Dot"
+    }
+
+    $stubPath = Join-Path $VaultDir "stub.txt"
+    if (-not (Test-Path $stubPath)) {
+        Set-Content -Path $stubPath -NoNewline -Value "¿!?"
+        if (-not $Quiet) { Write-Output "  [NEW] .\$Dot\stub.txt" }
+        $created += "stub.txt"
+    }
+
+    $nameFile = "$($Dot.ToUpper()).md"
+    $namePath = Join-Path $VaultDir $nameFile
+    if (-not (Test-Path $namePath)) {
+        $content = @"
+---
+authority: LOGAN
+related:
+  - $($Dot.ToUpper())
+  - imported_software
+  - runtime
+---
+
+**.$Dot** — Imported software runtime persona.
+
+$Dot runtime and configuration.
+"@
+        Set-Content -Path $namePath -Value $content
+        if (-not $Quiet) { Write-Output "  [NEW] .\$Dot\$nameFile" }
+        $created += $nameFile
+    }
+
+    return $created
+}
+
+$mode = if ($Stub -and -not $Apply -and -not $Snapshot) {
+    "STUB (create vault anchor only)"
+} elseif ($Snapshot) {
+    "SNAPSHOT (copy, keep home live)"
+} else {
+    "RETIRE (move, empty home)"
+}
+if ($Stub -and $mode -notmatch "^STUB ") { $mode += " + STUB" }
 if (-not $Snapshot -and $Prune) { $mode += " + PRUNE (delete empty ~/.foo)" }
 if ($Snapshot -and $Prune) { Write-Output "[WARN] -Prune ignored in snapshot mode (home stays live)" }
 
@@ -32,13 +80,21 @@ Write-Output "  VAULT: $vaultDir"
 Write-Output ("-" * 60)
 
 # Check vault dir exists
-if (-not (Test-Path $vaultDir)) {
-    Write-Output "[NEW] VAULT/.$dot does not exist yet -- will be created on apply."
+$vaultExists = Test-Path $vaultDir
+if (-not $vaultExists) {
+    Write-Output "[NEW] VAULT/.$dot does not exist yet."
+}
+
+# Handle -Stub: create vault anchor stubs regardless of HOME
+if ($Stub) {
+    $stubResult = Write-StubFiles -Dot $dot -VaultDir $vaultDir -Quiet:$Quiet
+    $vaultExists = $true
 }
 
 # Check home dir exists
 if (-not (Test-Path $homeDir)) {
     Write-Output "[SKIP] HOME/.$dot does not exist -- nothing to reconcile."
+    if ($Stub) { Write-Output "  Stub files created in vault; no home to sync." }
     return
 }
 
@@ -120,6 +176,8 @@ foreach ($rel in $allRel) {
         $uniqueToHome += $rel
     } elseif (-not $inHome -and $inVault) {
         $uniqueToVault += $rel
+    } elseif ($homeFiles[$rel].Length -ne $vaultFiles[$rel].Length) {
+        $conflict += $rel
     } else {
         $hHash = Get-FileHashCached $homeFiles[$rel].FullName
         $vHash = Get-FileHashCached $vaultFiles[$rel].FullName
@@ -200,7 +258,9 @@ Write-Output "--- APPLYING ---"
 
 # 1. Ingest unique-to-home files into vault
 if ($hasMoves) {
-    if (-not (Test-Path $vaultDir)) { New-Item -ItemType Directory -Path $vaultDir -Force | Out-Null }
+    if (-not (Test-Path $vaultDir)) {
+        Write-StubFiles -Dot $dot -VaultDir $vaultDir -Quiet:$Quiet | Out-Null
+    }
     $verb = if ($Snapshot) { "COPY" } else { "MOVE" }
     foreach ($rel in $uniqueToHome) {
         $src = $homeFiles[$rel].FullName
