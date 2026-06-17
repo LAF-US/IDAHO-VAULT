@@ -23,6 +23,11 @@ on:
         options:
           - 'false'
           - 'true'
+      pr:
+        description: 'Optional single PR number to scope the pass to (blank = every open PR)'
+        required: false
+        default: ''
+        type: string
 
 permissions:
   # contents: write (not read) is required for resolveReviewThread — GitHub's
@@ -45,32 +50,35 @@ jobs:
 
       - name: Engage outdated-only resolution
         # All ${{ }} values pass through env, never interpolated into the run script
-        # (apply is a user-controllable dispatch input — direct expansion would be a
+        # (apply and pr are user-controllable dispatch inputs — direct expansion would be a
         # template-injection vector). github-actions[bot] is the looker identity.
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           OWNER: ${{ github.repository_owner }}
           REPO: ${{ github.event.repository.name }}
           APPLY: ${{ github.event.inputs.apply }}
+          PR: ${{ github.event.inputs.pr }}
         run: |
-          if [ "$APPLY" = "true" ]; then
-            python3 .github/scripts/review_feedback_loop.py engage-outdated \
-              --owner "$OWNER" --repo "$REPO" --apply | tee engage-outdated.json
-          else
-            python3 .github/scripts/review_feedback_loop.py engage-outdated \
-              --owner "$OWNER" --repo "$REPO" | tee engage-outdated.json
+          args=(engage-outdated --owner "$OWNER" --repo "$REPO")
+          if [ -n "$PR" ]; then
+            args+=(--pr "$PR")
           fi
+          if [ "$APPLY" = "true" ]; then
+            args+=(--apply)
+          fi
+          python3 .github/scripts/review_feedback_loop.py "${args[@]}" | tee engage-outdated.json
 
       - name: Publish summary
         env:
           APPLY: ${{ github.event.inputs.apply }}
+          PR: ${{ github.event.inputs.pr }}
         run: |
           {
             echo '## Engage Outdated — outdated-only resolution'
             echo ''
-            echo "> apply = ${APPLY}  ·  witnessed (github-actions[bot] attestation); never merges"
+            echo "> apply = ${APPLY}  ·  scope = ${PR:-all open PRs}  ·  witnessed (github-actions[bot] attestation); never merges"
             echo ''
             echo '```json'
-            jq '{apply, outdated_threads, resolved}' engage-outdated.json
+            jq '{apply, scope_pr, outdated_threads, resolved}' engage-outdated.json
             echo '```'
           } >> "$GITHUB_STEP_SUMMARY"

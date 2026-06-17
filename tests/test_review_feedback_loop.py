@@ -1308,6 +1308,29 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         viewer.assert_called_once()             # resolved the actor once for the run
         self.assertEqual(seen_looker, ["loganfinney27"])  # witness names the real actor
 
+    def test_engage_outdated_pr_scope_targets_one_pr(self) -> None:
+        # --pr scopes the pass to a single PR (the guinea-pig case): the backlog walk is
+        # bypassed entirely and only the named PR is fetched/processed. (Logan: #481 is the
+        # ideal guinea pig for this step.)
+        pr = _pr(number=481, threads=(_thread(authors=("coderabbitai",), author_type="Bot", outdated=True),))
+        fetched = []
+
+        def fake_fetch(owner, repo, number):
+            fetched.append(number)
+            return pr
+
+        args = SimpleNamespace(owner="o", repo="r", looker="github-actions[bot]", apply=False, pr=481)
+        with mock.patch.object(review_feedback_loop, "_list_open_pr_numbers") as list_all, \
+                mock.patch.object(review_feedback_loop, "_fetch_pr", side_effect=fake_fetch), \
+                mock.patch.object(review_feedback_loop, "attest_and_resolve",
+                                  side_effect=lambda p, t, *a, **k: {"thread_id": t.get("id"), "eligible": True, "applied": False, "reason": ""}), \
+                contextlib.redirect_stdout(io.StringIO()) as out:
+            rc = review_feedback_loop.engage_outdated(args)
+        self.assertEqual(rc, 0)
+        list_all.assert_not_called()      # the backlog walk is bypassed under --pr
+        self.assertEqual(fetched, [481])  # only the named PR is fetched
+        self.assertEqual(json.loads(out.getvalue())["scope_pr"], 481)
+
 
 if __name__ == "__main__":
     unittest.main()
