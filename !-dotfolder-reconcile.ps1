@@ -243,16 +243,17 @@ function Invoke-ReconcileDotDir {
         [string]$VaultDir
     )
 
-    $mode = if ($Stub -and -not $Apply -and -not $Snapshot) {
-        "STUB (create vault anchor only)"
-    } elseif ($Snapshot) {
-        "SNAPSHOT (copy, keep home live)"
-    } else {
-        "RETIRE (move, empty home)"
-    }
-    if ($Stub -and $mode -notmatch "^STUB ") { $mode += " + STUB" }
-    if (-not $Snapshot -and $Prune -and -not $Stub) { $mode += " + PRUNE" }
-    if ($Snapshot -and $Prune) { Write-Host "[WARN] -Prune ignored in snapshot mode (home stays live)" }
+    try {
+        $mode = if ($Stub -and -not $Apply -and -not $Snapshot) {
+            "STUB (create vault anchor only)"
+        } elseif ($Snapshot) {
+            "SNAPSHOT (copy, keep home live)"
+        } else {
+            "RETIRE (move, empty home)"
+        }
+        if ($Stub -and $mode -notmatch "^STUB ") { $mode += " + STUB" }
+        if (-not $Snapshot -and $Prune -and -not $Stub) { $mode += " + PRUNE" }
+        if ($Snapshot -and $Prune) { Write-Host "[WARN] -Prune ignored in snapshot mode (home stays live)" }
 
     if (-not $Quiet) {
         Write-Host ("-" * 60)
@@ -530,15 +531,24 @@ function Invoke-ReconcileDotDir {
         Secrets      = $secrets.Count
         ScanSeconds  = $scanTime.TotalSeconds
     }
+    } finally {
+        # Ensure file handles are released
+        $homeFiles = $null
+        $vaultFiles = $null
+        $initialHomeFiles = $null
+        $initialVaultFiles = $null
+        
+        # Explicit garbage collection
+        [System.GC]::Collect()
+        [System.GC]::WaitForPendingFinalizers()
+    }
 }
 
 # -- Main entry point --
 Read-HashCache
 
+# Process dotfolders sequentially with progress feedback and error handling
 if ($All) {
-    # Known cache/runtime dirs skipped in -All mode to avoid multi-minute scans.
-    # These were populated during the initial snapshot and are already gitignored.
-    # Pass -Force to process them anyway.
     $skipDirs = @(
         '.ssh', '.npm-cache', '.cache', '.ollama', '.local/share/signal-cli', '.local/share/opencode', '.config/1Password',
         '.pip-cache', '.uv-cache', '.pycache', '.pytest_cache', '.ruff_cache', '.venv',
@@ -548,16 +558,39 @@ if ($All) {
     $total = $homeDirs.Count
     $results = @()
     $idx = 0
+    
     foreach ($d in $homeDirs) {
         $idx++
         $dot = $d.Name -replace '^\.', ''
         $dirName = ".$dot"
+        
         if (-not $Force -and $dirName -in $skipDirs) {
             if (-not $Quiet) { Write-Host "[SKIP] $dirName (cache/runtime, use -Force to override)" }
             continue
         }
-        $result = Invoke-ReconcileDotDir -Dot $dot -HomeDir $d.FullName -VaultDir (Join-Path $vaultRoot $dirName)
-        if ($result) { $results += $result }
+        
+        try {
+            Write-Host "[$idx/$total] Processing .$dot..."
+            $result = Invoke-ReconcileDotDir -Dot $dot -HomeDir $d.FullName -VaultDir (Join-Path $vaultRoot $dirName)
+            if ($result) { $results += $result }
+            
+            # Explicit cleanup after each dotfolder
+            [System.GC]::Collect()
+            [System.GC]::WaitForPendingFinalizers()
+        } catch {
+            Write-Host ("[ERROR] Failed to process ." + $dot + ": " + $_.ToString()) -ForegroundColor Red
+            $results += @{
+                Dot = $dot
+                FilesHome = 0
+                FilesVault = 0
+                UniqueToHome = 0
+                Identical = 0
+                Conflict = 0
+                Secrets = 0
+                ScanSeconds = 0
+                Error = $_.Exception.Message
+            }
+        }
     }
     Write-Host ("=" * 60)
     Write-Host "ALL RESULTS ($total dot-dirs)"
