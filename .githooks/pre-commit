@@ -8,14 +8,18 @@ python .github/scripts/laf_usb_manifest.py LAF-USB-OBJECT-MANIFEST*.json
 python .github/scripts/check_secret_patterns.py --staged
 python .github/scripts/check_large_files.py --staged
 
-# Jupytext: keep staged notebooks in sync with their Markdown twins (the machine<->plaintext marriage)
+# Jupytext: keep staged *paired* notebooks in sync with their twins (the machine<->plaintext
+# marriage). Only notebooks that DECLARE a pairing are synced; a sync failure on a paired
+# notebook aborts the commit (no silent '|| true' that would let drift slip in). Unpaired or
+# corrupt notebooks are left untouched (the footgun guard). NETWEB forbids spaces/newlines in
+# tracked filenames, so word-splitting the staged list is safe here.
 if command -v jupytext >/dev/null 2>&1; then
   nbs=$(git diff --cached --name-only --diff-filter=ACM | grep -E '\.ipynb$' || true)
   if [ -n "$nbs" ]; then
+    # sync_paired prints the twin paths it touched; abort the commit if a paired notebook fails.
     # shellcheck disable=SC2086
-    jupytext --sync $nbs >/dev/null 2>&1 || true
-    twins=$(printf '%s\n' $nbs | sed 's/\.ipynb$/.md/')
+    twins=$(python .github/scripts/jupytext_sync_paired.py $nbs) || exit 1
     # shellcheck disable=SC2086
-    git add $nbs $twins >/dev/null 2>&1 || true
+    git add $nbs $twins
   fi
 fi
