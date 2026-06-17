@@ -73,3 +73,26 @@ therefore **left unpaired** on purpose.
 `jupytext` is declared in `pyproject.toml` `[dependency-groups] dev`. The uv-generated
 `requirements.txt` should be refreshed with `uv lock && uv export ...` by a maintainer with the
 full toolchain; CI installs `jupytext` directly, so the check does not depend on that refresh.
+
+## Future bearing — the curated mirror layer graduates into the NEST
+
+*(direction set by Logan, 2026-06-17; **undecided and unscoped** — a bearing, not a commitment)*
+
+- `src/` stays the **accumulation cache** for generic/rough Python (a mix of live, tests, proofs,
+  and concepts; the old crewai crawler was removed; the engines / `five_wizards/` are still rough
+  frameworks). It is **not paired** — you do not doc-wrap moving targets.
+- When a module **stabilizes and is worth documenting**, it graduates into a **curated directory
+  wired to auto-produce Jupytext mirrors** — the live-vs-rough triage made *structural* (a
+  directory boundary, not a per-file judgment an agent has to make each time).
+- That curated dir **eventually becomes a layer inside the NEST (`!/`)** — the collective,
+  cross-cutting infrastructure layer of the Touchstone Tree (MIND / BODY / SOUL / **NEST**), which
+  is where a machine↔plaintext mirror belongs (shared infrastructure, not a leaf record).
+- **Direction choice, to settle when scoped:** a *code* dir (`.py` canonical → `.md` the
+  auto-generated agent-read mirror) **vs** a *notebook* dir (`.md` canonical → `.ipynb` the
+  run-surface). For importable package code, `.py` must stay canonical.
+- **"Automatic" is honest-automatic:** a *directory-scoped* `jupytext.toml` (safe here precisely
+  because a curated clean room has no stray same-named `.md` to collide with — the footgun that
+  destroyed `Untitled`'s code under a *global* default) **plus** the existing `.githooks/pre-commit`
+  and `check-notebooks-paired` CI extended to sync that subtree. The Move-1 machinery is the seed.
+- **Status:** bearing only — not built, not scoped. A future session scopes it into the nest when
+  the modules and the need have settled.
