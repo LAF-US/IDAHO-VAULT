@@ -1,0 +1,11 @@
+# Jupytext configuration — the "middle" that marries machine (Python) and plaintext (Markdown).
+#
+# Every notebook is paired to a Markdown twin. The Markdown twin is the git-diffable,
+# agent-readable SOURCE OF TRUTH (code wrapped in its own documentation); the .ipynb is a
+# regenerable run-surface that holds outputs. After editing either side, run:
+#
+#     jupytext --sync <notebook>
+#
+# to bring the pair back into agreement. See NOTEBOOKS.md for the full convention.
+
+default_jupytext_formats = "ipynb,md"
