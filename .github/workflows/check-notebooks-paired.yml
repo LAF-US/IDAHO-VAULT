@@ -1,8 +1,9 @@
 name: check-notebooks-paired
 
-# The "middle" guardrail: every Jupyter notebook must stay in sync with its Markdown twin.
-# Mirrors the repo's other check-* workflows. Installs jupytext directly (so it does not
-# depend on requirements.txt carrying the dev tool).
+# The "middle" guardrail: every explicitly-paired Jupyter notebook must stay in sync with its
+# Markdown twin. Mirrors the repo's other check-* workflows. Installs jupytext directly (so it
+# does not depend on requirements.txt carrying the dev tool). Actions are pinned to full SHAs
+# per repo policy.
 
 on:
   pull_request:
@@ -12,20 +13,26 @@ on:
       - "jupytext.toml"
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 jobs:
   paired:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+      - uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6
         with:
           python-version: "3.11"
       - name: Install jupytext
         run: pip install --quiet "jupytext>=1.16"
       - name: Sync every paired notebook and fail on drift
         run: |
-          # jupytext --sync only touches notebooks that declare a pairing; others are skipped.
-          # A corrupt/unpaired notebook is tolerated here (|| true) — drift is the only failure.
+          # jupytext --sync only touches notebooks that DECLARE a pairing (explicit opt-in);
+          # unpaired notebooks are a no-op and a corrupt/unparseable one is tolerated (|| true).
+          # Drift between a notebook and its committed twin is the only failure.
           git ls-files '*.ipynb' | while read -r nb; do jupytext --sync "$nb" || true; done
           if ! git diff --quiet; then
             echo "::error::A notebook twin is out of sync. Run 'jupytext --sync <notebook>' and commit the twin."
