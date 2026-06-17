@@ -27,12 +27,17 @@ jobs:
           label: ${{ inputs.label }}
         run: |
           PRS=$(gh pr list --repo "$GITHUB_REPOSITORY" --state open --json number,draft,labels --limit 100 | jq -r '.[] | select(.draft == false) | select((env.label == "" or (.labels[]?.name | ascii_downcase) == (env.label | ascii_downcase))) | .number')
-          COUNT=$(echo "$PRS" | grep -c . || echo 0)
-          echo "prs=$PRS" >> $GITHUB_OUTPUT
+          COUNT=$(echo "$PRS" | grep -c .)
+          if [ -z "$COUNT" ]; then COUNT=0; fi
+          {
+            echo "prs<<EOF"
+            echo "$PRS"
+            echo "EOF"
+          } >> $GITHUB_OUTPUT
           echo "count=$COUNT" >> $GITHUB_OUTPUT
 
       - name: Arm PRs
-        if: inputs.dry_run == 'false'
+        if: inputs.dry_run == false
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -43,5 +48,5 @@ jobs:
           echo "Done!"
 
       - name: Dry run
-        if: inputs.dry_run == 'true'
-        run: echo "DRY RUN: Would arm ${{ steps.list-prs.outputs.count }} PRs"
+        if: inputs.dry_run == true
+        run: 'echo "DRY RUN: Would arm ${{ steps.list-prs.outputs.count }} PRs"'
