@@ -165,6 +165,7 @@ def _fetch_pr(owner: str, name: str, number: int) -> dict:
           number
           url
           body
+          state
           createdAt
           updatedAt
           isDraft
@@ -1674,13 +1675,29 @@ def engage_outdated(args: argparse.Namespace) -> int:
     never touched — needs-fix is the reviewer gate that keeps a PR hanging. This NEVER
     merges; if clearing the last thread lets an armed PR flow, that is GitHub's auto-merge,
     by design (the engaged queue).
+
+    --pr scopes the pass to a single PR number (the guinea-pig case: prove one PR clean
+    before widening to the whole backlog); default is every open PR.
     """
     considered: list[dict[str, object]] = []
     # Resolve the looker once: default to the authenticated actor so the witness names
     # whoever actually ran the engine (agent token or CI bot), truthfully.
     looker = args.looker or _viewer_login()
-    for pr_number in _list_open_pr_numbers(args.owner, args.repo):
+    only_pr = getattr(args, "pr", None)
+    # `is not None`, not truthiness: --pr is parsed by _positive_int (0/negative
+    # rejected at parse time), so any value that reaches here is a real PR number
+    # and must scope the pass — never silently fall back to the full backlog walk.
+    pr_numbers = [only_pr] if only_pr is not None else _list_open_pr_numbers(args.owner, args.repo)
+    for pr_number in pr_numbers:
         pr = _fetch_pr(args.owner, args.repo, pr_number)
+        # The backlog walk only ever yields OPEN PRs (_list_open_pr_numbers). A --pr
+        # scope can name any existing PR, so hold the same invariant: engage-outdated
+        # acts only on the open queue — a closed/merged PR is refused, not engaged.
+        if only_pr is not None and (pr.get("state") or "").upper() != "OPEN":
+            raise SystemExit(
+                f"--pr {only_pr} is {pr.get('state')!r}, not OPEN; engage-outdated "
+                "acts only on the open queue."
+            )
         for thread in (pr.get("reviewThreads") or {}).get("nodes") or []:
             if thread.get("isResolved"):
                 continue
@@ -1710,6 +1727,7 @@ def engage_outdated(args: argparse.Namespace) -> int:
         json.dumps(
             {
                 "apply": args.apply,
+                "scope_pr": only_pr,
                 "outdated_threads": len(considered),
                 "resolved": sum(1 for r in considered if r.get("applied")),
                 "results": considered,
@@ -1878,6 +1896,12 @@ def build_parser() -> argparse.ArgumentParser:
         default=None,
         help="attesting identity recorded in the look marker; default: the authenticated "
         "actor (whoever the token posts as), so the witness always names who actually ran it",
+    )
+    engage.add_argument(
+        "--pr",
+        type=_positive_int,
+        default=None,
+        help="scope the pass to a single open PR number (default: every open PR)",
     )
     engage.add_argument(
         "--apply",
