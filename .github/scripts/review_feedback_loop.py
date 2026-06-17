@@ -165,6 +165,7 @@ def _fetch_pr(owner: str, name: str, number: int) -> dict:
           number
           url
           body
+          state
           createdAt
           updatedAt
           isDraft
@@ -1683,9 +1684,20 @@ def engage_outdated(args: argparse.Namespace) -> int:
     # whoever actually ran the engine (agent token or CI bot), truthfully.
     looker = args.looker or _viewer_login()
     only_pr = getattr(args, "pr", None)
-    pr_numbers = [only_pr] if only_pr else _list_open_pr_numbers(args.owner, args.repo)
+    # `is not None`, not truthiness: --pr is parsed by _positive_int (0/negative
+    # rejected at parse time), so any value that reaches here is a real PR number
+    # and must scope the pass — never silently fall back to the full backlog walk.
+    pr_numbers = [only_pr] if only_pr is not None else _list_open_pr_numbers(args.owner, args.repo)
     for pr_number in pr_numbers:
         pr = _fetch_pr(args.owner, args.repo, pr_number)
+        # The backlog walk only ever yields OPEN PRs (_list_open_pr_numbers). A --pr
+        # scope can name any existing PR, so hold the same invariant: engage-outdated
+        # acts only on the open queue — a closed/merged PR is refused, not engaged.
+        if only_pr is not None and (pr.get("state") or "").upper() != "OPEN":
+            raise SystemExit(
+                f"--pr {only_pr} is {pr.get('state')!r}, not OPEN; engage-outdated "
+                "acts only on the open queue."
+            )
         for thread in (pr.get("reviewThreads") or {}).get("nodes") or []:
             if thread.get("isResolved"):
                 continue
@@ -1887,9 +1899,9 @@ def build_parser() -> argparse.ArgumentParser:
     )
     engage.add_argument(
         "--pr",
-        type=int,
+        type=_positive_int,
         default=None,
-        help="scope the pass to a single PR number (default: every open PR)",
+        help="scope the pass to a single open PR number (default: every open PR)",
     )
     engage.add_argument(
         "--apply",
