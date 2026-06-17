@@ -100,7 +100,7 @@ git config --global gpg.format ssh
 git config --global user.signingkey "ssh-ed25519 XXXXXXX..." # fingerprint from Step 4
 git config --global commit.gpgsign true
 git config --global tag.gpgsign true
-git config --global gpg.ssh.program "ssh-keyscan"  # or custom wrapper below
+git config --global gpg.ssh.program "ssh-keygen"  # or custom wrapper below
 ```
 
 **Optional: Create SSH wrapper for signing** (if needed)
@@ -132,22 +132,20 @@ git log --show-signature  # Verify signature
 
 ### Step 1: Create Service Account in 1Password
 
-In 1Password vault, create a new "Password" item:
-- **Name:** `GitHub Actions Service Account`
-- **Username:** (optional)
-- **Password:** Generate a strong token or use existing `OP_SERVICE_ACCOUNT_TOKEN`
+A service account token is NOT a regular vault item — it is created in the 1Password web console and stored separately from vault items.
 
-**Retrieve token:**
-```bash
-op item get "GitHub Actions Service Account" --fields password
-```
+1. Go to `1password.com` → **Developer Tools** → **Service Accounts**
+2. Click **New Service Account**, give it a name (e.g., `idaho-vault-github-actions`)
+3. Grant it **Read** access to the relevant vault(s)
+4. Click **Save in 1Password** — this stores the token in your vault automatically
+5. The token is shown once; the "Save in 1Password" button is the correct capture path
 
 ### Step 2: Add Secret to GitHub
 
 In GitHub repo settings (`github.com/loganfinney27/IDAHO-VAULT/settings/secrets/actions`):
 
 **New secret:** `OP_SERVICE_ACCOUNT_TOKEN`  
-**Value:** (paste token from Step 1)
+**Value:** (paste token from Step 1 — or retrieve from 1Password if saved there)
 
 ### Step 3: Update Workflow to Fetch Secrets
 
@@ -164,10 +162,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       
-      # Authenticate 1Password
+      # Authenticate 1Password (CLI v2: set env var, no explicit signin needed)
       - name: Authenticate 1Password
-        run: |
-          echo "${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}" | op signin --raw
+        env:
+          OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
       
       # Fetch secret from 1Password vault
       - name: Fetch GitHub Token from 1Password
