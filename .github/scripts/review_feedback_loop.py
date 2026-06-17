@@ -481,11 +481,18 @@ def attest_and_resolve(
     apply: bool = False,
     now: datetime | None = None,
 ) -> dict:
-    """Disposition ONE bot-authored review thread: record an attested look, then resolve.
+    """Disposition ONE bot-authored review thread: resolve it, then record the attested look.
 
     Writes nothing unless `apply=True`. NEVER merges and NEVER enables auto-merge — it
-    posts the looker's attestation as a thread reply and resolves that single thread,
+    resolves that single thread and posts the looker's attestation as a thread reply,
     nothing else (the cascade-safety contract above).
+
+    Order matters: the resolve runs FIRST, and the "thread cleared" attestation is posted
+    only after it succeeds. The attestation asserts a clearing; if the resolve fails
+    (e.g. `resolveReviewThread` is FORBIDDEN for the integration token — the live #398
+    boundary), a comment claiming the thread was cleared would be a FALSE witness. A true
+    witness that is sometimes absent beats a witness that is sometimes a lie, so we never
+    attest a clearing we did not actually perform.
 
     Eligibility is reported, never raised. A thread is eligible when the PR's review is
     not CHANGES_REQUESTED, every author is a bot (`_thread_is_bot_only` — never a human
@@ -522,11 +529,11 @@ def attest_and_resolve(
     if not _thread_is_bot_only(thread):
         result["reason"] = "thread is not bot-authored only"
         return result
-    # "Look, then resolve" is two separate mutations. An already-attested but still
-    # OPEN thread is a partial success (the reply landed, the resolve did not) — recover
-    # by resolving without posting a duplicate attestation, rather than no-op'ing and
-    # leaving the thread blocking forever. The fully-done case (attested AND resolved)
-    # is already short-circuited by the isResolved guard above.
+    # "Resolve, then look" is two separate mutations. An already-attested but still
+    # OPEN thread is a partial success from a PRIOR ordering (the reply landed, the
+    # resolve did not) — recover by resolving without posting a duplicate attestation,
+    # rather than no-op'ing and leaving the thread blocking forever. The fully-done case
+    # (attested AND resolved) is already short-circuited by the isResolved guard above.
     already_looked = _thread_has_attested_look(thread)
 
     # Build (and thereby validate looker/decision) before any write.
@@ -537,14 +544,17 @@ def attest_and_resolve(
         result["reason"] = (
             "dry-run: attested look already present, would resolve"
             if already_looked
-            else "dry-run: would record attested look and resolve"
+            else "dry-run: would resolve and record attested look"
         )
         return result
 
+    # Validate the looker/actor match BEFORE touching the thread: the look is
+    # self-attested (the marker says by={looker}, but the reply posts as the
+    # authenticated actor). If they differ we cannot write a truthful witness, so we
+    # must not resolve either — clearing a thread we cannot witness is the unwitnessed
+    # ending we are built to avoid. Skip the check when no new attestation will be
+    # posted (already_looked recovery path).
     if not already_looked:
-        # The look is self-attested: the marker says by={looker}, but the reply posts
-        # as the authenticated actor. If they differ, the attestation is undetectable —
-        # refuse rather than write a broken audit record.
         actor = _viewer_login()
         if actor != looker:
             result["eligible"] = False
@@ -552,13 +562,20 @@ def attest_and_resolve(
                 f"looker {looker!r} does not match the authenticated actor {actor!r}"
             )
             return result
-        _add_thread_reply(thread_id, body)
+
+    # Resolve FIRST. If this raises (e.g. FORBIDDEN for the integration token), it
+    # propagates to the caller and NO attestation is posted — the thread keeps its
+    # honest unresolved state instead of gaining a false "cleared" claim.
     _resolve_thread(thread_id)
+    # The clearing succeeded; now the "thread cleared" attestation is true. Skip the
+    # post on the recovery path (the attestation is already present from a prior run).
+    if not already_looked:
+        _add_thread_reply(thread_id, body)
     result["applied"] = True
     result["reason"] = (
         "existing attested look; thread resolved"
         if already_looked
-        else "attested look recorded; thread resolved"
+        else "thread resolved; attested look recorded"
     )
     return result
 
