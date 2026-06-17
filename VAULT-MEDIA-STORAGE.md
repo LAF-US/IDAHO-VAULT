@@ -102,5 +102,5 @@ bare lowercase glob.
 This is belt-and-suspenders: `check_large_files.py` is the case-agnostic
 backstop that still blocks any >100 MB file lacking LFS attributes (and any
 file over the 2 GB ceiling) regardless of extension casing. The
-`.gitattributes` form keeps the happy path working so correctly-cased media is
-tracked automatically instead of tripping the guard.
+`.gitattributes` form keeps the happy path working so that correctly cased
+media is tracked automatically instead of tripping the guard.
