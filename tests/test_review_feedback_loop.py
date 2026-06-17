@@ -1139,6 +1139,28 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertEqual(calls[0]["looker"], "github-actions[bot]")
         self.assertTrue(calls[0]["apply"])
 
+    def test_engage_outdated_continues_past_a_thread_failure(self) -> None:
+        # One thread's transient gh/GraphQL failure must not abort the backlog pass —
+        # the rest are still processed and the run completes. (CodeRabbit review on #534.)
+        pr1 = _pr(number=1, threads=(_thread(authors=("coderabbitai",), author_type="Bot", outdated=True),))
+        pr2 = _pr(number=2, threads=(_thread(authors=("coderabbitai",), author_type="Bot", outdated=True),))
+        seen = []
+
+        def flaky(pr_arg, thread_arg, *a, **k):
+            seen.append(pr_arg.get("number"))
+            if pr_arg.get("number") == 1:
+                raise RuntimeError("transient gh failure")
+            return {"thread_id": thread_arg.get("id"), "eligible": True, "applied": True, "reason": ""}
+
+        args = SimpleNamespace(owner="o", repo="r", looker="github-actions[bot]", apply=True)
+        with mock.patch.object(review_feedback_loop, "_list_open_pr_numbers", return_value=[1, 2]), \
+                mock.patch.object(review_feedback_loop, "_fetch_pr", side_effect=lambda o, r, n: {1: pr1, 2: pr2}[n]), \
+                mock.patch.object(review_feedback_loop, "attest_and_resolve", side_effect=flaky), \
+                contextlib.redirect_stdout(io.StringIO()):
+            rc = review_feedback_loop.engage_outdated(args)
+        self.assertEqual(rc, 0)
+        self.assertEqual(seen, [1, 2])  # did NOT abort after PR #1 raised
+
 
 if __name__ == "__main__":
     unittest.main()

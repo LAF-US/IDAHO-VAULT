@@ -1567,15 +1567,25 @@ def engage_outdated(args: argparse.Namespace) -> int:
                 continue
             if _thread_resolution_disposition(thread) != "outdated-resolvable":
                 continue
-            result = attest_and_resolve(
-                pr,
-                thread,
-                args.looker,
-                "advisory",
-                "Outdated: the commented lines no longer exist in the current diff; "
-                "bot-only thread cleared under the outdated-only engaged policy.",
-                apply=args.apply,
-            )
+            try:
+                result = attest_and_resolve(
+                    pr,
+                    thread,
+                    args.looker,
+                    "advisory",
+                    "Outdated: the commented lines no longer exist in the current diff; "
+                    "bot-only thread cleared under the outdated-only engaged policy.",
+                    apply=args.apply,
+                )
+            except RuntimeError as exc:
+                # One thread's transient gh/GraphQL failure must not abort the whole
+                # backlog pass — record it and keep going so the report stays complete.
+                result = {
+                    "thread_id": thread.get("id"),
+                    "eligible": False,
+                    "applied": False,
+                    "reason": f"failed to process thread: {exc}",
+                }
             considered.append({"pr": pr_number, **result})
     print(
         json.dumps(
