@@ -11,10 +11,11 @@ python .github/scripts/check_large_files.py --staged
 # Jupytext: keep staged *paired* notebooks in sync with their twins (the machine<->plaintext
 # marriage). Only notebooks that DECLARE a pairing are synced; a sync failure on a paired
 # notebook aborts the commit (no silent '|| true' that would let drift slip in). Unpaired or
-# corrupt notebooks are left untouched (the footgun guard). NETWEB forbids spaces/newlines in
-# tracked filenames, so word-splitting the staged list is safe here.
+# corrupt notebooks are left untouched (the footgun guard). Renames are included (ACMR) so a
+# renamed notebook's twin is re-synced here, not left to drift until CI catches it. NETWEB forbids
+# spaces/newlines in tracked filenames, so word-splitting the staged list is safe here.
 if command -v jupytext >/dev/null 2>&1; then
-  nbs=$(git diff --cached --name-only --diff-filter=ACM | grep -E '\.ipynb$' || true)
+  nbs=$(git diff --cached --name-only --diff-filter=ACMR | grep -E '\.ipynb$' || true)
   if [ -n "$nbs" ]; then
     # sync_paired prints the twin paths it touched; abort the commit if a paired notebook fails.
     # shellcheck disable=SC2086
