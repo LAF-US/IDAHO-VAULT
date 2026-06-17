@@ -25,7 +25,12 @@ on:
           - 'true'
 
 permissions:
-  contents: read
+  # contents: write (not read) is required for resolveReviewThread — GitHub's
+  # GraphQL review-thread resolve/unresolve mutations are gated on Contents:
+  # Read & Write, NOT pull-requests scope (community discussion #44650). The
+  # first live run (27662203952) had contents: read and every resolve returned
+  # FORBIDDEN "Resource not accessible by integration"; this lifts that gate.
+  contents: write
   pull-requests: write
 
 jobs:
