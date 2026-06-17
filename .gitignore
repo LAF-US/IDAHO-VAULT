@@ -136,6 +136,7 @@ feed-generator/
 .cache/
 .tmp/
 .state/
+!-dotfolder-hashcache.json
 .pycache/
 .smart-env/
 .makemd/
