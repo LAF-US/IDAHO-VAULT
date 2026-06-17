@@ -1108,6 +1108,37 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertIn("**#88**", md)  # surfaced despite 0 visible unresolved
         self.assertIn("threads-truncated", md)
 
+    # ----- engage-outdated: the first 'engage' step (outdated-only) -----
+
+    def test_engage_outdated_acts_only_on_outdated_resolvable(self) -> None:
+        # Touches ONLY outdated-resolvable threads — never needs-fix or apply-suggestion —
+        # with decision 'advisory', honoring --apply. (Logan: outdated-only to start.)
+        pr = _pr(
+            number=7,
+            threads=(
+                _thread(authors=("coderabbitai",), author_type="Bot", outdated=True),            # outdated-resolvable
+                _thread(authors=("coderabbitai",), author_type="Bot", body="prose finding"),     # needs-fix
+                _thread(authors=("coderabbitai",), author_type="Bot", body=self.SUGGESTION_BODY), # apply-suggestion
+            ),
+        )
+        calls = []
+
+        def fake_attest(pr_arg, thread_arg, looker, decision, rationale, *, apply, now=None):
+            calls.append({"decision": decision, "looker": looker, "apply": apply})
+            return {"thread_id": thread_arg.get("id"), "eligible": True, "applied": apply, "reason": ""}
+
+        args = SimpleNamespace(owner="o", repo="r", looker="github-actions[bot]", apply=True)
+        with mock.patch.object(review_feedback_loop, "_list_open_pr_numbers", return_value=[7]), \
+                mock.patch.object(review_feedback_loop, "_fetch_pr", return_value=pr), \
+                mock.patch.object(review_feedback_loop, "attest_and_resolve", side_effect=fake_attest), \
+                contextlib.redirect_stdout(io.StringIO()):
+            rc = review_feedback_loop.engage_outdated(args)
+        self.assertEqual(rc, 0)
+        self.assertEqual(len(calls), 1)  # only the outdated-resolvable thread
+        self.assertEqual(calls[0]["decision"], "advisory")
+        self.assertEqual(calls[0]["looker"], "github-actions[bot]")
+        self.assertTrue(calls[0]["apply"])
+
 
 if __name__ == "__main__":
     unittest.main()
