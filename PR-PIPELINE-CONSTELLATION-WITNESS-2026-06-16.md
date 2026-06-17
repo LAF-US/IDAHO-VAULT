@@ -129,25 +129,27 @@ The run's own JSON output (read directly from the job log — grounded, not infe
 
 > `{"apply": true, "outdated_threads": 34, "resolved": 0}`
 
-All 34 outdated threads across 6 PRs (#481, #474, #453, #424, #400) failed at the
+All 34 outdated threads across 5 PRs (#481, #474, #453, #424, #400) failed at the
 **resolve** step with the identical error:
 
 > `resolveReviewThread → FORBIDDEN: "Resource not accessible by integration"`
 
 **The boundary, located precisely:** `github-actions[bot]` (the `GITHUB_TOKEN` integration
 identity) **can post an attestation comment but is FORBIDDEN from `resolveReviewThread`**,
-even with `pull-requests: write`. This is exactly the #398 pole (commit/actor identity
+even with `pull-requests: write`. This is the #398 pole (commit/actor identity
 trust) reappearing at the merge-gate pole's resolve verb — the seam where both trusts must
 hold at once. The user-token identity (`loganfinney27`) *can* resolve (proven on #536), but
 that is the identity we decline to forge.
 
-### Fix A — landed as PR #540 (resolve-first, no false witness)
+### Fix A — proposed in PR #540 (open, not yet on `main`): resolve-first, no false witness
 Because the engine posted the attestation *before* attempting the resolve, the failed run
 left 34 threads carrying a `github-actions[bot]` comment claiming the thread was "cleared"
 when it was not — a false witness. PR #540 reorders `attest_and_resolve` to **resolve
 first, attest only on success**, so a "cleared" attestation can never appear on a thread
-that was not cleared. (Cleanup of the 34 already-posted false attestations is a separate
-follow-up.)
+that was not cleared. **Caveat (per Codex on #540):** #540 is still open — `main` retains
+the old attest-then-resolve order, so any `apply=true` rerun *before* #540 merges can still
+mint a false "cleared" attestation. (Cleanup of the 34 already-posted false attestations is
+a separate follow-up.)
 
 ### Fix B — DECIDED by Logan 2026-06-17: a GitHub App signing/resolve identity (#398 option E)
 The resolve identity will be a **dedicated GitHub App** ("IDAHO-VAULT Looker") — a distinct,
@@ -159,8 +161,12 @@ now also serving #399's resolve verb. **Authority: Logan direct instruction (202
 1. Register a GitHub App under the LAF-US org: "IDAHO-VAULT Looker"; permission **Pull
    requests: Read & Write** (covers thread resolve + reply); no webhook needed.
 2. Install it on `LAF-US/IDAHO-VAULT`.
-3. Generate the App private key (`.pem`); store **App ID** → 1Password `looker-app-id` and
-   **private key** → 1Password `looker-app-private-key` (recorded in `.op/secrets.template.md`).
+3. Generate the App credential key; store **App ID** as 1Password `looker-app-id` and the
+   **App key** as 1Password `looker-app-private-key`, fetched at runtime via
+   `OP_SERVICE_ACCOUNT_TOKEN` (the vault's 1Password doctrine). *(The `.op/secrets.template.md`
+   inventory cannot be edited via PR — the `secret_path` guard fails on any `.op/` change —
+   so these credential names are recorded here instead; updating that inventory, or the
+   guard's allowlist, is a separate `.op/`-scoped follow-up.)*
 
 **Code-side (Claude, once the App exists + its bot login is known):**
 4. `engage-outdated.yml` mints a short-lived installation token (pinned
