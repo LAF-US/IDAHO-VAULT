@@ -165,12 +165,14 @@ Looker.) **Authority: Logan direct instruction (2026-06-17).**
 1. Register a GitHub App under the LAF-US org: "IDAHO-VAULT Review Resolver"; permission
    **Pull requests: Read & Write** (covers review-thread resolve + reply); no webhook needed.
 2. Install it on `LAF-US/IDAHO-VAULT`.
-3. Generate the App credential key; store **App ID** as 1Password `review-resolver-app-id`
-   and the **App key** as 1Password `review-resolver-app-key`, fetched at runtime via
+3. Generate the App's **private key (PEM)** (GitHub App auth uses a private key, not an API
+   key); store **App ID** as 1Password `review-resolver-app-id` and the **private key** as
+   1Password `review-resolver-app-private-key`, fetched at runtime via
    `OP_SERVICE_ACCOUNT_TOKEN` (the vault's 1Password doctrine). *(The `.op/secrets.template.md`
-   inventory cannot be edited via PR — the `secret_path` guard fails on any `.op/` change —
-   so these credential names are recorded here instead; updating that inventory, or the
-   guard's allowlist, is a separate `.op/`-scoped follow-up.)*
+   inventory could not be updated in this PR — it's blocked by the current secret-pattern guard
+   configuration, whose `secret_path` rule matches any `.op/` path — so these credential names
+   are recorded here instead; updating that inventory, or the guard's allowlist, is a separate
+   `.op/`-scoped follow-up.)*
 
 **Code-side (Claude, once the App exists + its bot login is known):**
 4. `engage-outdated.yml` mints a short-lived installation access token (pinned
