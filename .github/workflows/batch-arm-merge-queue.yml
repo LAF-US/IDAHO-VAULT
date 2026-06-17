@@ -40,12 +40,25 @@ jobs:
         if: inputs.dry_run == false
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Pass the PR list through env, never interpolated into the script body.
+          # The list is newline-separated; expanding it inline as `for pr in ${{ ... }}`
+          # injects raw newlines and crashes bash ("syntax error near unexpected token").
+          PRS: ${{ steps.list-prs.outputs.prs }}
         run: |
-          for pr in ${{ steps.list-prs.outputs.prs }}; do
+          armed=0; skipped=0
+          while IFS= read -r pr; do
+            [ -z "$pr" ] && continue
             echo "Arming PR #$pr..."
-            gh pr merge --auto --merge "https://github.com/$GITHUB_REPOSITORY/pull/$pr" --repo "$GITHUB_REPOSITORY"
-          done
-          echo "Done!"
+            # Tolerate per-PR failures: a PR that can't be armed (gated path awaiting
+            # review, conflicting, already queued, etc.) must not abort the whole batch.
+            if gh pr merge --auto --merge "https://github.com/$GITHUB_REPOSITORY/pull/$pr" --repo "$GITHUB_REPOSITORY"; then
+              armed=$((armed + 1))
+            else
+              echo "  skipped #$pr (could not arm — likely gated/awaiting review, conflicting, or already queued)"
+              skipped=$((skipped + 1))
+            fi
+          done <<< "$PRS"
+          echo "Done! armed=$armed skipped=$skipped"
 
       - name: Dry run
         if: inputs.dry_run == true
