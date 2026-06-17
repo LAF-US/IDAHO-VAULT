@@ -1,7 +1,7 @@
 ---
 title: "!REPORT-VISIONCLAW-RESEARCH-2026-06-17"
 updated: 2026-06-17
-status: filed
+status: active
 authority: LOGAN
 related:
   - VISION
@@ -106,7 +106,7 @@ The system introduces a **new interaction paradigm** characterized by:
 - Findings: Faster task completion, reduced interaction overhead
 
 **Longitudinal Deployment Study:**
-- Participants: N=5 (paper authors)
+- Participants: N=4 (paper authors)
 - Duration: Extended period with 55 active participant days
 - Total interactions: 555 voice-initiated interactions
 - Total usage time: 25.8 hours
@@ -134,13 +134,14 @@ The system introduces a **new interaction paradigm** characterized by:
 **Organization:** Intent-Lab  
 **Repository:** https://github.com/Intent-Lab/VisionClaw  
 **Status:** Active development  
-**License:** Open source
+**License:** Meta Wearables Developer Terms (refer to repository LICENSE file)
 
 ### 4.2 Community Contributions
 
-**Notable Forks:**
-- bhartiyashesh/VisionClaw: Enhanced OpenClaw integration for remote operation
-- sseanliu/VisionClaw: Original creator's repository
+**Verified Related Repositories:**
+- Intent-Lab/VisionClaw: Primary repository
+- hrithwikbharadwaj/vision_claw_android: Android implementation
+- Miles0sage/visionclaw: Custom hardware firmware
 - Multiple community implementations and extensions
 
 **Integration Patterns:**
