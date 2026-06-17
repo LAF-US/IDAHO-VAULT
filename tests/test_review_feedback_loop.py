@@ -68,6 +68,7 @@ def _pr(
     threads_truncated: bool = False,
     body: str = "## Auto-generated PR\n\n**Risk tier:**\n`low`\n",
     auto_merge_enabled: bool = False,
+    state: str = "OPEN",
 ) -> dict[str, object]:
     created_at = created_at or datetime(2026, 4, 16, 2, 0, tzinfo=timezone.utc)
     updated_at = updated_at or created_at
@@ -75,6 +76,7 @@ def _pr(
         "number": number,
         "url": f"https://example.test/pr/{number}",
         "body": body,
+        "state": state,
         "createdAt": created_at.isoformat().replace("+00:00", "Z"),
         "updatedAt": updated_at.isoformat().replace("+00:00", "Z"),
         "isDraft": draft,
@@ -1330,6 +1332,30 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         list_all.assert_not_called()      # the backlog walk is bypassed under --pr
         self.assertEqual(fetched, [481])  # only the named PR is fetched
         self.assertEqual(json.loads(out.getvalue())["scope_pr"], 481)
+
+    def test_engage_outdated_pr_scope_refuses_non_open_pr(self) -> None:
+        # engage-outdated acts only on the open queue. The backlog walk only yields open
+        # PRs; a --pr scope must hold the same invariant — a closed/merged PR is refused,
+        # not engaged. (Sourcery review on #536.)
+        closed = _pr(number=481, state="CLOSED",
+                     threads=(_thread(authors=("coderabbitai",), author_type="Bot", outdated=True),))
+        attested = []
+        args = SimpleNamespace(owner="o", repo="r", looker="github-actions[bot]", apply=True, pr=481)
+        with mock.patch.object(review_feedback_loop, "_fetch_pr", return_value=closed), \
+                mock.patch.object(review_feedback_loop, "attest_and_resolve",
+                                  side_effect=lambda *a, **k: attested.append(1)):
+            with self.assertRaises(SystemExit):
+                review_feedback_loop.engage_outdated(args)
+        self.assertEqual(attested, [])  # refused before touching any thread
+
+    def test_engage_outdated_pr_arg_rejects_non_positive(self) -> None:
+        # --pr is parsed by _positive_int: 0/negative are rejected at parse time, so a
+        # falsy int can never silently fall back to the full backlog walk. (Copilot +
+        # Codex P1 on #536.)
+        parser = review_feedback_loop.build_parser()
+        for bad in ("0", "-5"):
+            with self.assertRaises(SystemExit):
+                parser.parse_args(["engage-outdated", "--owner", "o", "--repo", "r", "--pr", bad])
 
 
 if __name__ == "__main__":
