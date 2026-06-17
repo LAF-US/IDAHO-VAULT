@@ -87,3 +87,20 @@ external_objects:
 The local pre-commit hook runs `.github/scripts/check_large_files.py --staged`.
 GitHub Actions runs the same policy against changed files. These checks are
 guards, not substitutes for editorial judgment.
+
+### `.gitattributes` is case-sensitive
+
+Git matches `.gitattributes` patterns case-sensitively, so a bare `*.mov`
+pattern does **not** match `CLIP.MOV`. Cameras, decks, and phones routinely
+write UPPERCASE extensions (`XD4_6602.MXF`, `MVI_1487.MOV`), so a lowercase-only
+list would silently fail to LFS-track exactly the broadcast media this vault
+holds the most of. To close that gap, every binary pattern in `.gitattributes`
+uses case-folding character classes — `*.[Mm][Oo][Vv]` — that match all case
+permutations. When adding a new binary type, follow the same form rather than a
+bare lowercase glob.
+
+This is belt-and-suspenders: `check_large_files.py` is the case-agnostic
+backstop that still blocks any >100 MB file lacking LFS attributes (and any
+file over the 2 GB ceiling) regardless of extension casing. The
+`.gitattributes` form keeps the happy path working so correctly-cased media is
+tracked automatically instead of tripping the guard.
