@@ -1,0 +1,34 @@
+name: check-notebooks-paired
+
+# The "middle" guardrail: every Jupyter notebook must stay in sync with its Markdown twin.
+# Mirrors the repo's other check-* workflows. Installs jupytext directly (so it does not
+# depend on requirements.txt carrying the dev tool).
+
+on:
+  pull_request:
+    paths:
+      - "**/*.ipynb"
+      - "**/*.md"
+      - "jupytext.toml"
+  workflow_dispatch:
+
+jobs:
+  paired:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install jupytext
+        run: pip install --quiet "jupytext>=1.16"
+      - name: Sync every paired notebook and fail on drift
+        run: |
+          # jupytext --sync only touches notebooks that declare a pairing; others are skipped.
+          # A corrupt/unpaired notebook is tolerated here (|| true) — drift is the only failure.
+          git ls-files '*.ipynb' | while read -r nb; do jupytext --sync "$nb" || true; done
+          if ! git diff --quiet; then
+            echo "::error::A notebook twin is out of sync. Run 'jupytext --sync <notebook>' and commit the twin."
+            git --no-pager diff --stat
+            exit 1
+          fi

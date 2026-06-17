@@ -7,3 +7,15 @@ python .github/scripts/sync_obsidian_plugin_registry.py --check
 python .github/scripts/laf_usb_manifest.py LAF-USB-OBJECT-MANIFEST*.json
 python .github/scripts/check_secret_patterns.py --staged
 python .github/scripts/check_large_files.py --staged
+
+# Jupytext: keep staged notebooks in sync with their Markdown twins (the machine<->plaintext marriage)
+if command -v jupytext >/dev/null 2>&1; then
+  nbs=$(git diff --cached --name-only --diff-filter=ACM | grep -E '\.ipynb$' || true)
+  if [ -n "$nbs" ]; then
+    # shellcheck disable=SC2086
+    jupytext --sync $nbs >/dev/null 2>&1 || true
+    twins=$(printf '%s\n' $nbs | sed 's/\.ipynb$/.md/')
+    # shellcheck disable=SC2086
+    git add $nbs $twins >/dev/null 2>&1 || true
+  fi
+fi
