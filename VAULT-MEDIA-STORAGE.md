@@ -1,6 +1,7 @@
 ---
 authority: LOGAN
 related:
+  - STORAGE-LFS-USB-CONSTELLATION-INDEX-2026-06-17
   - Git
   - GitHub
   - Git LFS
