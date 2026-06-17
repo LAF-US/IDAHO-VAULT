@@ -91,8 +91,10 @@ guards, not substitutes for editorial judgment.
 
 ### `.gitattributes` is case-sensitive
 
-Git matches `.gitattributes` patterns case-sensitively, so a bare `*.mov`
-pattern does **not** match `CLIP.MOV`. Cameras, decks, and phones routinely
+Git matches `.gitattributes` patterns case-sensitively by default, and
+case-folding can't be relied on across platforms and configs (e.g.
+`core.ignorecase` on case-insensitive filesystems), so a bare `*.mov` pattern is
+not guaranteed to match `CLIP.MOV`. Cameras, decks, and phones routinely
 write UPPERCASE extensions (`XD4_6602.MXF`, `MVI_1487.MOV`), so a lowercase-only
 list would silently fail to LFS-track exactly the broadcast media this vault
 holds the most of. To close that gap, every binary pattern in `.gitattributes`
