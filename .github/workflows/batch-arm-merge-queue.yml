@@ -1,0 +1,65 @@
+name: Batch Arm Merge Queue
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: Test without making changes
+        required: false
+        default: false
+        type: boolean
+      label:
+        description: Only arm PRs with this label (leave empty for all non-draft PRs)
+        required: false
+        default: ''
+
+jobs:
+  arm-merge-queue:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+      contents: write
+    steps:
+      - name: Get PRs
+        id: list-prs
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          label: ${{ inputs.label }}
+        run: |
+          PRS=$(gh pr list --repo "$GITHUB_REPOSITORY" --state open --json number,isDraft,labels --limit 100 | jq -r '.[] | select(.isDraft == false) | select((env.label == "" or (.labels[]?.name | ascii_downcase) == (env.label | ascii_downcase))) | .number')
+          COUNT=$(echo "$PRS" | grep -c .)
+          if [ -z "$COUNT" ]; then COUNT=0; fi
+          {
+            echo "prs<<EOF"
+            echo "$PRS"
+            echo "EOF"
+          } >> $GITHUB_OUTPUT
+          echo "count=$COUNT" >> $GITHUB_OUTPUT
+
+      - name: Arm PRs
+        if: inputs.dry_run == false
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Pass the PR list through env, never interpolated into the script body.
+          # The list is newline-separated; expanding it inline as `for pr in ${{ ... }}`
+          # injects raw newlines and crashes bash ("syntax error near unexpected token").
+          PRS: ${{ steps.list-prs.outputs.prs }}
+        run: |
+          armed=0; skipped=0
+          while IFS= read -r pr; do
+            [ -z "$pr" ] && continue
+            echo "Arming PR #$pr..."
+            # Tolerate per-PR failures: a PR that can't be armed (gated path awaiting
+            # review, conflicting, already queued, etc.) must not abort the whole batch.
+            if gh pr merge --auto --merge "https://github.com/$GITHUB_REPOSITORY/pull/$pr" --repo "$GITHUB_REPOSITORY"; then
+              armed=$((armed + 1))
+            else
+              echo "  skipped #$pr (could not arm — likely gated/awaiting review, conflicting, or already queued)"
+              skipped=$((skipped + 1))
+            fi
+          done <<< "$PRS"
+          echo "Done! armed=$armed skipped=$skipped"
+
+      - name: Dry run
+        if: inputs.dry_run == true
+        run: 'echo "DRY RUN: Would arm ${{ steps.list-prs.outputs.count }} PRs"'
