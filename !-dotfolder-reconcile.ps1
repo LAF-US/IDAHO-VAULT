@@ -287,6 +287,12 @@ function Invoke-ReconcileDotDir {
 
     $allRel = @($homeFiles.Keys + $vaultFiles.Keys) | Sort-Object -Unique
     $total = @($allRel).Count
+    
+    # In apply mode, use the initial scan results for all operations (no re-scan)
+    if ($Apply) {
+        $initialHomeFiles = $homeFiles
+        $initialVaultFiles = $vaultFiles
+    }
 
     $uniqueToHome = @()
     $uniqueToVault = @()
@@ -405,6 +411,7 @@ function Invoke-ReconcileDotDir {
     }
 
     # -- APPLY --
+    $handledConflicts = @{}
     Write-Host "--- APPLYING ---"
 
     # -- Handle conflicts first: preserve both versions in vault --
@@ -416,25 +423,33 @@ function Invoke-ReconcileDotDir {
             Write-Host "  [DEBUG] Conflict $ci of $ct - $rel"
             Write-Progress -Activity "Applying .$Dot" -Status "Preserving conflict $ci of $ct" -CurrentOperation $rel -PercentComplete ([int](($ci / $ct) * 100))
             
-            # Rename vault file to preserve it
-            $vaultSrc = $vaultFiles[$rel].FullName
+            # Use initial scan results in apply mode, current otherwise
+            $vaultSrc = if ($Apply) { $initialVaultFiles[$rel].FullName } else { $vaultFiles[$rel].FullName }
             $vaultDst = Join-Path $VaultDir "$rel.vault"
             $vaultDstParent = Split-Path -Parent $vaultDst
             if (-not (Test-Path $vaultDstParent)) { New-Item -ItemType Directory -Path $vaultDstParent -Force | Out-Null }
             Write-Host "  PRESERVE vault version: $rel.vault"
-            Move-Item -LiteralPath $vaultSrc -Destination $vaultDst -Force
+            if (Test-Path $vaultSrc) {
+                Move-Item -LiteralPath $vaultSrc -Destination $vaultDst -Force
+            } else {
+                Write-Host "    [WARN] Vault source not found: $vaultSrc"
+            }
             
             # Move home file to vault with .home suffix
-            $homeSrc = $homeFiles[$rel].FullName
+            $homeSrc = if ($Apply) { $initialHomeFiles[$rel].FullName } else { $homeFiles[$rel].FullName }
             $homeDst = Join-Path $VaultDir "$rel.home"
             $homeDstParent = Split-Path -Parent $homeDst
             if (-not (Test-Path $homeDstParent)) { New-Item -ItemType Directory -Path $homeDstParent -Force | Out-Null }
             $verb = if ($Snapshot) { "COPY" } else { "MOVE" }
             Write-Host "  $verb home version: $rel.home"
-            if ($Snapshot) {
-                Copy-Item -LiteralPath $homeSrc -Destination $homeDst -Force
+            if (Test-Path $homeSrc) {
+                if ($Snapshot) {
+                    Copy-Item -LiteralPath $homeSrc -Destination $homeDst -Force
+                } else {
+                    Move-Item -LiteralPath $homeSrc -Destination $homeDst -Force
+                }
             } else {
-                Move-Item -LiteralPath $homeSrc -Destination $homeDst -Force
+                Write-Host "    [WARN] Home source not found: $homeSrc"
             }
         }
         Write-Progress -Activity "Applying .$Dot" -Completed
@@ -447,9 +462,12 @@ function Invoke-ReconcileDotDir {
         $verb = if ($Snapshot) { "COPY" } else { "MOVE" }
         $ai = 0; $at = $uniqueToHome.Count
         foreach ($rel in $uniqueToHome) {
+            # Skip files already handled as conflicts
+            if ($handledConflicts.ContainsKey($rel)) { continue }
+            
             $ai++
             Write-Progress -Activity "Applying .$Dot" -Status "$verb $ai of $at" -CurrentOperation $rel -PercentComplete ([int](($ai / $at) * 100))
-            $src = $homeFiles[$rel].FullName
+            $src = if ($Apply) { $initialHomeFiles[$rel].FullName } else { $homeFiles[$rel].FullName }
             $dst = Join-Path $VaultDir $rel
             $dstParent = Split-Path -Parent $dst
             if (-not (Test-Path $dstParent)) { New-Item -ItemType Directory -Path $dstParent -Force | Out-Null }
@@ -464,32 +482,17 @@ function Invoke-ReconcileDotDir {
     }
 
     if ($hasDeletes) {
-        $ci = 0; $ct = $conflict.Count
-        foreach ($rel in $conflict) {
-            $ci++
-            Write-Progress -Activity "Applying .$Dot" -Status "Preserving conflict $ci of $ct" -CurrentOperation $rel -PercentComplete ([int](($ci / $ct) * 100))
-            
-            # Rename vault file to preserve it
-            $vaultSrc = $vaultFiles[$rel].FullName
-            $vaultDst = Join-Path $VaultDir "$rel.vault"
-            $vaultDstParent = Split-Path -Parent $vaultDst
-            if (-not (Test-Path $vaultDstParent)) { New-Item -ItemType Directory -Path $vaultDstParent -Force | Out-Null }
-            Write-Host "  PRESERVE vault version: $rel.vault"
-            Move-Item -LiteralPath $vaultSrc -Destination $vaultDst -Force
-            
-            # Move home file to vault with .home suffix
-            $homeSrc = $homeFiles[$rel].FullName
-            $homeDst = Join-Path $VaultDir "$rel.home"
-            $homeDstParent = Split-Path -Parent $homeDst
-            if (-not (Test-Path $homeDstParent)) { New-Item -ItemType Directory -Path $homeDstParent -Force | Out-Null }
-            $verb = if ($Snapshot) { "COPY" } else { "MOVE" }
-            Write-Host "  $verb home version: $rel.home"
-            if ($Snapshot) {
-                Copy-Item -LiteralPath $homeSrc -Destination $homeDst -Force
-            } else {
-                Move-Item -LiteralPath $homeSrc -Destination $homeDst -Force
-            }
+        $di = 0; $dt = $identical.Count
+        foreach ($rel in $identical) {
+            $di++
+            Write-Progress -Activity "Applying .$Dot" -Status "Deleting identical $di of $dt" -CurrentOperation $rel -PercentComplete ([int](($di / $dt) * 100))
+            $path = if ($Apply) { $initialHomeFiles[$rel].FullName } else { $homeFiles[$rel].FullName }
+            Write-Host "  DELETE $rel"
+            Remove-Item -LiteralPath $path -Force
         }
+        Get-ChildItem -LiteralPath $HomeDir -Recurse -Directory -Force | Where-Object {
+            @(Get-ChildItem -LiteralPath $_.FullName -Force).Count -eq 0
+        } | Remove-Item -Force -ErrorAction SilentlyContinue
         Write-Progress -Activity "Applying .$Dot" -Completed
     }
 
