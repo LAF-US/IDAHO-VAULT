@@ -100,21 +100,7 @@ git config --global gpg.format ssh
 git config --global user.signingkey "ssh-ed25519 XXXXXXX..." # fingerprint from Step 4
 git config --global commit.gpgsign true
 git config --global tag.gpgsign true
-git config --global gpg.ssh.program "ssh-keygen"  # or custom wrapper below
-```
-
-**Optional: Create SSH wrapper for signing** (if needed)
-
-Create `~/.ssh/sign-wrapper.sh`:
-```bash
-#!/bin/bash
-# Wrapper for git to sign via 1Password SSH key
-ssh-keyscan "$@"
-```
-
-Make executable:
-```bash
-chmod +x ~/.ssh/sign-wrapper.sh
+git config --global gpg.ssh.program "ssh-keygen"
 ```
 
 ### Step 6: Test Git Signing
@@ -132,13 +118,13 @@ git log --show-signature  # Verify signature
 
 ### Step 1: Create Service Account in 1Password
 
-A service account token is NOT a regular vault item — it is created in the 1Password web console and stored separately from vault items.
+A service account token is a distinct credential type — created in the 1Password web console under **Developer Tools**, not as a regular vault item. During creation, 1Password shows the token once and offers a **Save in 1Password** button that saves a copy of the token value into a vault item for later retrieval. This is a convenience backup, not the authoritative storage location; the service account itself lives in Developer Tools.
 
 1. Go to `1password.com` → **Developer Tools** → **Service Accounts**
 2. Click **New Service Account**, give it a name (e.g., `idaho-vault-github-actions`)
 3. Grant it **Read** access to the relevant vault(s)
-4. Click **Save in 1Password** — this stores the token in your vault automatically
-5. The token is shown once; the "Save in 1Password" button is the correct capture path
+4. Click **Save in 1Password** — saves a copy of the token into your vault so you can retrieve it later
+5. Copy the token value and add it to GitHub Secrets (Step 2 below)
 
 ### Step 2: Add Secret to GitHub
 
@@ -159,13 +145,12 @@ on: [push]
 jobs:
   use-secrets:
     runs-on: ubuntu-latest
+    # 1Password CLI v2 reads OP_SERVICE_ACCOUNT_TOKEN from the environment;
+    # no explicit signin step needed.
+    env:
+      OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
     steps:
       - uses: actions/checkout@v4
-      
-      # Authenticate 1Password (CLI v2: set env var, no explicit signin needed)
-      - name: Authenticate 1Password
-        env:
-          OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
       
       # Fetch secret from 1Password vault
       - name: Fetch GitHub Token from 1Password
