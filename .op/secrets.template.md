@@ -23,8 +23,6 @@ type: reference
 | `Email SMTP Credentials` | Username + Password | Budget tracker email delivery | ❌ Not created | Create if using SMTP service |
 | `Todoist API Token` | API Token | Todoist probe + future bridge (`.github/workflows/todoist-probe.yml`) | ❌ Not created | Create in 1Password as `todoist-api-token`, field `credential` |
 | `OP_SERVICE_ACCOUNT_TOKEN` | Service Token | GitHub Actions → 1Password auth | ⚠️ In GitHub Secrets | Sync from 1Password via manual provisioning |
-| `Looker App ID` | GitHub App ID (numeric) | `engage-outdated.yml` resolve identity (#398/#399 Fix B) | ❌ Not created | Register the "IDAHO-VAULT Looker" GitHub App; store its App ID in 1Password as `looker-app-id`, field `credential` |
-| `Looker App Private Key` | GitHub App private key (PEM) | `engage-outdated.yml` resolve identity (#398/#399 Fix B) | ❌ Not created | Store the App's generated `.pem` in 1Password as `looker-app-private-key`, field `credential`; workflow mints a short-lived installation token from it |
 
 ---
 
