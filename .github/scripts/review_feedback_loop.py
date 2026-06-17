@@ -231,6 +231,12 @@ LOOK_ATTESTATION_RE = re.compile(
     r"<!--\s*looked:\s*by=(?P<by>[A-Za-z0-9][A-Za-z0-9-]*(?:\[bot\])?)\s*;[^>]*-->"
 )
 
+# A GitHub committable suggestion is a fenced ```suggestion block in a review
+# comment body. It is the ONE reviewer finding a machine can apply deterministically
+# (via the applyReviewSuggestion mutation); everything else is prose that needs a
+# real fix. This detector is the engine's "can this be auto-applied?" signal.
+SUGGESTION_BLOCK_RE = re.compile(r"(?m)^\s*`{3,}\s*suggestion\b")
+
 
 def _thread_has_attested_look(thread: dict) -> bool:
     """True if a looker has recorded a self-attested look in the thread.
@@ -276,6 +282,53 @@ def _thread_is_bot_only(thread: dict) -> bool:
     if not authors:
         return False
     return all(_author_is_bot(author) for author in authors)
+
+
+def _thread_has_committable_suggestion(thread: dict) -> bool:
+    """True if any comment in the thread carries a GitHub ```suggestion block.
+
+    These are the only reviewer findings applyable deterministically — GitHub commits
+    the suggested diff directly, no generative interpretation. Everything else is prose.
+    """
+    for comment in (thread.get("comments") or {}).get("nodes") or []:
+        if SUGGESTION_BLOCK_RE.search(comment.get("body") or ""):
+            return True
+    return False
+
+
+# Resolution disposition (#399 engine): route ONE unresolved thread to *how it gets
+# resolved* — never "dispose of a bot thread." Reviewer threads are caught errors; the
+# gate exists to make agents fix them before main, so a bare attest-and-resolve of a
+# substantive bot finding is the rubber-stamp the gate exists to prevent.
+#   - needs-human        : a human authored it, OR bot-only proof is incomplete (a human
+#                          may lie beyond a truncated comment page) — judgment required.
+#   - looked             : a sealed attestation is already present (recoverable).
+#   - outdated-resolvable: bot-only and GitHub marks it outdated (referenced lines moved)
+#                          — a genuine look may attest-and-resolve it as stale.
+#   - apply-suggestion   : carries a committable ```suggestion — apply deterministically.
+#   - needs-fix          : bot-only substantive finding, no mechanical fix — the authoring
+#                          agent must fix it for real (dispatch), never stamp it closed.
+def _thread_resolution_disposition(thread: dict) -> str:
+    """Route one unresolved thread to its deterministic resolution disposition. Pure."""
+    page_info = (thread.get("comments") or {}).get("pageInfo")
+    page_complete = isinstance(page_info, dict) and page_info.get("hasNextPage") is False
+    if not _thread_is_bot_only(thread):
+        return "needs-human"
+    if not page_complete:
+        return "needs-human"  # bot-only unprovable: a human could lie beyond the page
+    if _thread_has_attested_look(thread):
+        return "looked"
+    if thread.get("isOutdated"):
+        return "outdated-resolvable"  # referenced lines moved; can't apply a suggestion
+    if _thread_has_committable_suggestion(thread):
+        return "apply-suggestion"
+    return "needs-fix"
+
+
+# Dispositions a bare attest-and-resolve apply pass may clear WITHOUT a fix:
+# genuinely stale (outdated) or already-attested. needs-fix and apply-suggestion are
+# NOT here — they require a real fix / an applied suggestion, not a bare resolve.
+BARE_RESOLVABLE_DISPOSITIONS: frozenset[str] = frozenset({"outdated-resolvable", "looked"})
 
 
 def _build_attestation(
@@ -558,9 +611,15 @@ def _classify_pr_for_looker(
             {
                 "thread_id": thread.get("id"),
                 "disposition": disposition,
+                "resolution": _thread_resolution_disposition(thread),
                 "authors": sorted(_thread_authors(thread)),
             }
         )
+
+    resolution_counts: dict[str, int] = {}
+    for entry in plan:
+        key = str(entry["resolution"])
+        resolution_counts[key] = resolution_counts.get(key, 0) + 1
 
     review_decision = pr.get("reviewDecision") or ""
     auto_merge_armed = bool((pr.get("autoMergeRequest") or {}).get("enabledAt"))
@@ -582,7 +641,16 @@ def _classify_pr_for_looker(
         "url": pr.get("url"),
         "lane": lane,
         "stale": stale,
-        "safe_to_drain": lane == "machine-disposable" and not stale,
+        # safe_to_drain is the APPLY-PASS candidate signal: a bare attest-and-resolve
+        # could clear every thread WITHOUT a fix. It requires more than the coarse
+        # machine-disposable lane — every thread must be bare-resolvable (outdated/looked).
+        # A needs-fix or apply-suggestion thread is NOT bare-drainable (needs a real fix /
+        # applied suggestion), so it must not be advertised as drainable. (codex on #529.)
+        "safe_to_drain": (
+            lane == "machine-disposable"
+            and not stale
+            and all(entry["resolution"] in BARE_RESOLVABLE_DISPOSITIONS for entry in plan)
+        ),
         "auto_merge_armed": auto_merge_armed,
         "review_decision": review_decision or None,
         "is_draft": bool(pr.get("isDraft")),
@@ -591,6 +659,7 @@ def _classify_pr_for_looker(
         "machine_clearable": machine_clearable,
         "human_threads": human,
         "unprovable_threads": unprovable,
+        "resolution_counts": resolution_counts,
         "threads": plan,
     }
 
@@ -1330,19 +1399,93 @@ def looker_walk(args: argparse.Namespace) -> int:
         for pr_number in _list_open_pr_numbers(args.owner, args.repo)
     ]
     by_lane: dict[str, int] = {}
+    by_resolution: dict[str, int] = {}
     for report in reports:
         by_lane[str(report["lane"])] = by_lane.get(str(report["lane"]), 0) + 1
+        for key, count in (report.get("resolution_counts") or {}).items():
+            by_resolution[key] = by_resolution.get(key, 0) + int(count)
     print(
         json.dumps(
             {
                 "open_prs": len(reports),
                 "by_lane": by_lane,
+                # backlog-wide thread breakdown by how each gets resolved: how much
+                # the engine can auto-apply vs. what needs a real agent fix vs. human.
+                "by_resolution": by_resolution,
                 "stale": sum(1 for report in reports if report["stale"]),
                 "safe_to_drain": [report["pr"] for report in reports if report["safe_to_drain"]],
                 "reports": reports,
             }
         )
     )
+    return 0
+
+
+def render_looker_worklist(report: dict) -> str:
+    """Render a looker-walk report (the `looker_walk` JSON) as a markdown worklist. Pure.
+
+    A read-only triage surface for a durable issue: the open-PR backlog grouped by lane
+    and by resolution disposition, so a looker can drain it with judgment. Resolves
+    nothing and decides nothing — it only makes the deterministic census legible.
+    """
+
+    def _counts(mapping: dict) -> str:
+        return " · ".join(f"{key}: {value}" for key, value in sorted(mapping.items())) or "none"
+
+    open_prs = int(report.get("open_prs") or 0)
+    stale = int(report.get("stale") or 0)
+    safe = report.get("safe_to_drain") or []
+    reports = report.get("reports") or []
+
+    lines = [
+        "## Looker Worklist — review-thread triage (read-only)",
+        "",
+        "> Deterministic census of open PRs. **No threads resolved, no PRs merged.**",
+        "> The gated apply pass (`attest-resolve --apply`) is a separate decision.",
+        "",
+        f"- **Open PRs:** {open_prs} · **stale:** {stale}",
+        f"- **By lane:** {_counts(report.get('by_lane') or {})}",
+        f"- **By resolution:** {_counts(report.get('by_resolution') or {})}",
+        "",
+        "### `safe_to_drain` — bare-resolvable, non-stale (a gated apply pass could clear)",
+    ]
+    lines.extend([f"- #{pr}" for pr in safe] or ["- none"])
+    lines.append("")
+    lines.append("### Per-PR worklist (PRs not in the `clear` lane)")
+    # Filter on lane, NOT visible unresolved count: a PR whose thread list is truncated
+    # past page 1 is lane `needs-human` with possibly 0 *visible* unresolved threads — it
+    # must still surface, because the census cannot prove it is clear. (codex on #531.)
+    actionable = sorted(
+        (r for r in reports if r.get("lane") != "clear"),
+        key=lambda r: int(r.get("pr") or 0),
+    )
+    if actionable:
+        for r in actionable:
+            flags = [
+                flag
+                for flag, on in (
+                    ("stale", r.get("stale")),
+                    ("auto-merge-armed", r.get("auto_merge_armed")),
+                    ("threads-truncated", r.get("threads_truncated")),
+                )
+                if on
+            ]
+            flag_s = f" _({', '.join(flags)})_" if flags else ""
+            lines.append(
+                f"- **#{r.get('pr')}** — lane `{r.get('lane')}` · "
+                f"{int(r.get('unresolved_threads') or 0)} unresolved "
+                f"({_counts(r.get('resolution_counts') or {})}){flag_s}"
+            )
+    else:
+        lines.append("- none — every open PR is in the `clear` lane.")
+    lines.append("")
+    return "\n".join(lines)
+
+
+def render_worklist(args: argparse.Namespace) -> int:
+    """Read a looker-walk JSON report (file or stdin) and print the markdown worklist."""
+    raw = args.input.read() if args.input else sys.stdin.read()
+    print(render_looker_worklist(json.loads(raw or "{}")))
     return 0
 
 
@@ -1400,6 +1543,61 @@ def _positive_int(value: str) -> int:
     if parsed <= 0:
         raise argparse.ArgumentTypeError("must be a positive integer")
     return parsed
+
+
+def engage_outdated(args: argparse.Namespace) -> int:
+    """Engage the queue on the OUTDATED subset: attest-resolve every outdated-resolvable
+    thread across open PRs. Dry-run unless --apply.
+
+    The first 'engage' step (Logan: the queue runs by default; reviewer comments are what
+    keep a PR hanging). Scope is deliberately the narrowest safe slice — ONLY threads whose
+    resolution disposition is `outdated-resolvable` (bot-only, GitHub-outdated: the
+    commented lines no longer exist in the diff). Each is cleared via `attest_and_resolve`
+    with a recorded `github-actions[bot]` attestation, so it is a *witnessed* resolution,
+    not the blind reconciler. needs-fix / apply-suggestion / looked / human threads are
+    never touched — needs-fix is the reviewer gate that keeps a PR hanging. This NEVER
+    merges; if clearing the last thread lets an armed PR flow, that is GitHub's auto-merge,
+    by design (the engaged queue).
+    """
+    considered: list[dict[str, object]] = []
+    for pr_number in _list_open_pr_numbers(args.owner, args.repo):
+        pr = _fetch_pr(args.owner, args.repo, pr_number)
+        for thread in (pr.get("reviewThreads") or {}).get("nodes") or []:
+            if thread.get("isResolved"):
+                continue
+            if _thread_resolution_disposition(thread) != "outdated-resolvable":
+                continue
+            try:
+                result = attest_and_resolve(
+                    pr,
+                    thread,
+                    args.looker,
+                    "advisory",
+                    "Outdated: the commented lines no longer exist in the current diff; "
+                    "bot-only thread cleared under the outdated-only engaged policy.",
+                    apply=args.apply,
+                )
+            except RuntimeError as exc:
+                # One thread's transient gh/GraphQL failure must not abort the whole
+                # backlog pass — record it and keep going so the report stays complete.
+                result = {
+                    "thread_id": thread.get("id"),
+                    "eligible": False,
+                    "applied": False,
+                    "reason": f"failed to process thread: {exc}",
+                }
+            considered.append({"pr": pr_number, **result})
+    print(
+        json.dumps(
+            {
+                "apply": args.apply,
+                "outdated_threads": len(considered),
+                "resolved": sum(1 for r in considered if r.get("applied")),
+                "results": considered,
+            }
+        )
+    )
+    return 0
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -1471,6 +1669,14 @@ def build_parser() -> argparse.ArgumentParser:
         help="days of inactivity before a PR is flagged stale (positive int)",
     )
 
+    worklist = subparsers.add_parser("render-worklist")
+    worklist.add_argument(
+        "--input",
+        type=argparse.FileType("r"),
+        default=None,
+        help="looker-walk JSON file to render (default: stdin)",
+    )
+
     attest = subparsers.add_parser("attest-resolve")
     attest.add_argument("--owner", required=True)
     attest.add_argument("--repo", required=True)
@@ -1483,6 +1689,16 @@ def build_parser() -> argparse.ArgumentParser:
         "--apply",
         action="store_true",
         help="actually post the attestation and resolve (default: dry-run)",
+    )
+
+    engage = subparsers.add_parser("engage-outdated")
+    engage.add_argument("--owner", required=True)
+    engage.add_argument("--repo", required=True)
+    engage.add_argument("--looker", default="github-actions[bot]")
+    engage.add_argument(
+        "--apply",
+        action="store_true",
+        help="actually post attestations and resolve outdated threads (default: dry-run)",
     )
 
     return parser
@@ -1509,8 +1725,12 @@ def main() -> int:
         return list_unlooked(args)
     if args.command == "looker-walk":
         return looker_walk(args)
+    if args.command == "render-worklist":
+        return render_worklist(args)
     if args.command == "attest-resolve":
         return attest_resolve(args)
+    if args.command == "engage-outdated":
+        return engage_outdated(args)
     return enable_auto_merge(args)
 
 

@@ -34,6 +34,7 @@ def _thread(
     outdated: bool = False,
     authors: tuple[str, ...] = ("reviewer",),
     author_type: str = "User",
+    body: str = "review note",
 ) -> dict[str, object]:
     return {
         "id": "THREAD_1",
@@ -44,7 +45,7 @@ def _thread(
             "nodes": [
                 {
                     "author": {"login": author, "__typename": author_type},
-                    "body": "review note",
+                    "body": body,
                     "url": "https://example.test/thread",
                 }
                 for author in authors
@@ -834,13 +835,28 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
     def _bot_thread(self) -> dict[str, object]:
         return _thread(authors=("coderabbitai",), author_type="Bot")
 
-    def test_classify_machine_disposable(self) -> None:
+    def test_classify_needs_fix_is_machine_lane_but_not_drainable(self) -> None:
+        # A plain bot prose finding is the coarse machine-disposable LANE, but it is a
+        # needs-fix (substantive) thread — NOT safe_to_drain. A bare attest-resolve would
+        # rubber-stamp a caught error. (codex review on #529.)
         now = datetime(2026, 6, 16, tzinfo=timezone.utc)
         pr = _pr(number=1, created_at=now - timedelta(days=1), threads=(self._bot_thread(),))
         report = review_feedback_loop._classify_pr_for_looker(pr, now=now)
         self.assertEqual(report["lane"], "machine-disposable")
-        self.assertTrue(report["safe_to_drain"])
+        self.assertEqual(report["threads"][0]["resolution"], "needs-fix")
+        self.assertFalse(report["safe_to_drain"])
         self.assertFalse(report["stale"])
+
+    def test_classify_outdated_bot_thread_is_safe_to_drain(self) -> None:
+        # Bare-resolvable: an outdated bot-only thread (referenced lines moved) is the one
+        # non-stale case a bare attest-resolve may clear without a fix.
+        now = datetime(2026, 6, 16, tzinfo=timezone.utc)
+        thread = _thread(authors=("coderabbitai",), author_type="Bot", outdated=True)
+        pr = _pr(number=14, created_at=now - timedelta(days=1), threads=(thread,))
+        report = review_feedback_loop._classify_pr_for_looker(pr, now=now)
+        self.assertEqual(report["threads"][0]["resolution"], "outdated-resolvable")
+        self.assertEqual(report["lane"], "machine-disposable")
+        self.assertTrue(report["safe_to_drain"])
 
     def test_classify_would_cascade_when_auto_merge_armed(self) -> None:
         now = datetime(2026, 6, 16, tzinfo=timezone.utc)
@@ -953,11 +969,12 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         now = datetime(2026, 6, 16, tzinfo=timezone.utc)
         pr = _pr(
             number=13, created_at=now - timedelta(days=30),
-            updated_at=now - timedelta(days=1), threads=(self._bot_thread(),),
+            updated_at=now - timedelta(days=1),
+            threads=(_thread(authors=("coderabbitai",), author_type="Bot", outdated=True),),
         )
         report = review_feedback_loop._classify_pr_for_looker(pr, now=now, stale_days=14)
         self.assertFalse(report["stale"])  # recent activity wins over old creation
-        self.assertTrue(report["safe_to_drain"])
+        self.assertTrue(report["safe_to_drain"])  # bare-resolvable (outdated) + not stale
 
     def test_stale_days_rejects_non_positive(self) -> None:
         for bad in ("0", "-1"):
@@ -988,6 +1005,161 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertIsInstance(data["safe_to_drain"], list)
         self.assertEqual(data["reports"][0]["pr"], 8)
         self.assertEqual(data["reports"][0]["lane"], "machine-disposable")
+
+    # ----- Resolution disposition (#399 engine): HOW each thread gets resolved -----
+
+    SUGGESTION_BODY = "Wrong value.\n\n```suggestion\ncorrected = True\n```\n"
+
+    def test_has_committable_suggestion_detects_block(self) -> None:
+        t = _thread(authors=("coderabbitai",), author_type="Bot", body=self.SUGGESTION_BODY)
+        self.assertTrue(review_feedback_loop._thread_has_committable_suggestion(t))
+
+    def test_has_committable_suggestion_false_on_prose(self) -> None:
+        t = _thread(authors=("coderabbitai",), author_type="Bot", body="Consider fixing X.")
+        self.assertFalse(review_feedback_loop._thread_has_committable_suggestion(t))
+
+    def test_resolution_apply_suggestion(self) -> None:
+        t = _thread(authors=("coderabbitai",), author_type="Bot", body=self.SUGGESTION_BODY)
+        self.assertEqual(review_feedback_loop._thread_resolution_disposition(t), "apply-suggestion")
+
+    def test_resolution_needs_fix_on_substantive_prose(self) -> None:
+        # The dam's reality (#474): bot-authored, substantive, no mechanical fix.
+        t = _thread(authors=("chatgpt-codex-connector",), author_type="Bot", body="Sabrina's name is wrong.")
+        self.assertEqual(review_feedback_loop._thread_resolution_disposition(t), "needs-fix")
+
+    def test_resolution_outdated_beats_suggestion(self) -> None:
+        # An outdated comment's suggestion can't apply (lines moved) -> resolvable as stale.
+        t = _thread(authors=("coderabbitai",), author_type="Bot", outdated=True, body=self.SUGGESTION_BODY)
+        self.assertEqual(review_feedback_loop._thread_resolution_disposition(t), "outdated-resolvable")
+
+    def test_resolution_needs_human_on_human_author(self) -> None:
+        t = _thread(authors=("loganfinney27",), author_type="User", body="please fix")
+        self.assertEqual(review_feedback_loop._thread_resolution_disposition(t), "needs-human")
+
+    def test_resolution_needs_human_on_truncated_page(self) -> None:
+        t = _thread(authors=("coderabbitai",), author_type="Bot", body="prose")
+        t["comments"]["pageInfo"] = {"hasNextPage": True}
+        self.assertEqual(review_feedback_loop._thread_resolution_disposition(t), "needs-human")
+
+    def test_resolution_looked_when_attested(self) -> None:
+        looker = "claude-code-bot"
+        body = review_feedback_loop._build_attestation(looker, "advisory", "ok")
+        t = _thread(authors=(looker,), author_type="Bot", body=body)
+        self.assertEqual(review_feedback_loop._thread_resolution_disposition(t), "looked")
+
+    def test_classify_surfaces_resolution_and_counts(self) -> None:
+        now = datetime(2026, 6, 16, tzinfo=timezone.utc)
+        pr = _pr(
+            number=1,
+            created_at=now - timedelta(days=1),
+            threads=(
+                _thread(authors=("coderabbitai",), author_type="Bot", body=self.SUGGESTION_BODY),
+                _thread(authors=("chatgpt-codex-connector",), author_type="Bot", body="prose finding"),
+            ),
+        )
+        report = review_feedback_loop._classify_pr_for_looker(pr, now=now)
+        self.assertEqual(sorted(t["resolution"] for t in report["threads"]), ["apply-suggestion", "needs-fix"])
+        self.assertEqual(report["resolution_counts"], {"apply-suggestion": 1, "needs-fix": 1})
+
+    # ----- render_looker_worklist: read-only durable-issue triage surface -----
+
+    def test_render_looker_worklist_is_read_only_triage_markdown(self) -> None:
+        report = {
+            "open_prs": 3,
+            "by_lane": {"machine-disposable": 1, "needs-human": 1, "clear": 1},
+            "by_resolution": {"needs-fix": 2, "outdated-resolvable": 1},
+            "stale": 1,
+            "safe_to_drain": [42],
+            "reports": [
+                {"pr": 42, "lane": "machine-disposable", "stale": False, "auto_merge_armed": False,
+                 "unresolved_threads": 1, "resolution_counts": {"outdated-resolvable": 1}},
+                {"pr": 7, "lane": "needs-human", "stale": True, "auto_merge_armed": True,
+                 "unresolved_threads": 2, "resolution_counts": {"needs-fix": 2}},
+                {"pr": 9, "lane": "clear", "stale": False, "auto_merge_armed": False,
+                 "unresolved_threads": 0, "resolution_counts": {}},
+            ],
+        }
+        md = review_feedback_loop.render_looker_worklist(report)
+        self.assertIn("No threads resolved, no PRs merged", md)  # read-only framing
+        self.assertIn("**Open PRs:** 3", md)
+        self.assertIn("machine-disposable: 1", md)
+        self.assertIn("needs-fix: 2", md)
+        self.assertIn("- #42", md)  # safe_to_drain
+        self.assertIn("**#7**", md)  # actionable PR surfaced
+        self.assertIn("auto-merge-armed", md)  # flagged
+        self.assertNotIn("**#9**", md)  # clear PR (0 unresolved) omitted from worklist
+
+    def test_render_looker_worklist_handles_empty_report(self) -> None:
+        md = review_feedback_loop.render_looker_worklist({})
+        self.assertIn("**Open PRs:** 0", md)
+        self.assertIn("none", md)
+
+    def test_render_looker_worklist_surfaces_truncated_needs_human(self) -> None:
+        # Truncated past page 1: lane needs-human, 0 VISIBLE unresolved. Must still surface
+        # (the census can't prove it clear) and be flagged truncated. (codex review on #531.)
+        report = {
+            "open_prs": 1, "by_lane": {"needs-human": 1}, "by_resolution": {},
+            "stale": 0, "safe_to_drain": [],
+            "reports": [{"pr": 88, "lane": "needs-human", "stale": False,
+                         "auto_merge_armed": False, "threads_truncated": True,
+                         "unresolved_threads": 0, "resolution_counts": {}}],
+        }
+        md = review_feedback_loop.render_looker_worklist(report)
+        self.assertIn("**#88**", md)  # surfaced despite 0 visible unresolved
+        self.assertIn("threads-truncated", md)
+
+    # ----- engage-outdated: the first 'engage' step (outdated-only) -----
+
+    def test_engage_outdated_acts_only_on_outdated_resolvable(self) -> None:
+        # Touches ONLY outdated-resolvable threads — never needs-fix or apply-suggestion —
+        # with decision 'advisory', honoring --apply. (Logan: outdated-only to start.)
+        pr = _pr(
+            number=7,
+            threads=(
+                _thread(authors=("coderabbitai",), author_type="Bot", outdated=True),            # outdated-resolvable
+                _thread(authors=("coderabbitai",), author_type="Bot", body="prose finding"),     # needs-fix
+                _thread(authors=("coderabbitai",), author_type="Bot", body=self.SUGGESTION_BODY), # apply-suggestion
+            ),
+        )
+        calls = []
+
+        def fake_attest(pr_arg, thread_arg, looker, decision, rationale, *, apply, now=None):
+            calls.append({"decision": decision, "looker": looker, "apply": apply})
+            return {"thread_id": thread_arg.get("id"), "eligible": True, "applied": apply, "reason": ""}
+
+        args = SimpleNamespace(owner="o", repo="r", looker="github-actions[bot]", apply=True)
+        with mock.patch.object(review_feedback_loop, "_list_open_pr_numbers", return_value=[7]), \
+                mock.patch.object(review_feedback_loop, "_fetch_pr", return_value=pr), \
+                mock.patch.object(review_feedback_loop, "attest_and_resolve", side_effect=fake_attest), \
+                contextlib.redirect_stdout(io.StringIO()):
+            rc = review_feedback_loop.engage_outdated(args)
+        self.assertEqual(rc, 0)
+        self.assertEqual(len(calls), 1)  # only the outdated-resolvable thread
+        self.assertEqual(calls[0]["decision"], "advisory")
+        self.assertEqual(calls[0]["looker"], "github-actions[bot]")
+        self.assertTrue(calls[0]["apply"])
+
+    def test_engage_outdated_continues_past_a_thread_failure(self) -> None:
+        # One thread's transient gh/GraphQL failure must not abort the backlog pass —
+        # the rest are still processed and the run completes. (CodeRabbit review on #534.)
+        pr1 = _pr(number=1, threads=(_thread(authors=("coderabbitai",), author_type="Bot", outdated=True),))
+        pr2 = _pr(number=2, threads=(_thread(authors=("coderabbitai",), author_type="Bot", outdated=True),))
+        seen = []
+
+        def flaky(pr_arg, thread_arg, *a, **k):
+            seen.append(pr_arg.get("number"))
+            if pr_arg.get("number") == 1:
+                raise RuntimeError("transient gh failure")
+            return {"thread_id": thread_arg.get("id"), "eligible": True, "applied": True, "reason": ""}
+
+        args = SimpleNamespace(owner="o", repo="r", looker="github-actions[bot]", apply=True)
+        with mock.patch.object(review_feedback_loop, "_list_open_pr_numbers", return_value=[1, 2]), \
+                mock.patch.object(review_feedback_loop, "_fetch_pr", side_effect=lambda o, r, n: {1: pr1, 2: pr2}[n]), \
+                mock.patch.object(review_feedback_loop, "attest_and_resolve", side_effect=flaky), \
+                contextlib.redirect_stdout(io.StringIO()):
+            rc = review_feedback_loop.engage_outdated(args)
+        self.assertEqual(rc, 0)
+        self.assertEqual(seen, [1, 2])  # did NOT abort after PR #1 raised
 
 
 if __name__ == "__main__":
