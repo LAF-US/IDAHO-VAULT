@@ -1,0 +1,52 @@
+name: Batch Arm Merge Queue
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: Test without making changes
+        required: false
+        default: false
+        type: boolean
+      label:
+        description: Only arm PRs with this label (leave empty for all non-draft PRs)
+        required: false
+        default: ''
+
+jobs:
+  arm-merge-queue:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+      contents: write
+    steps:
+      - name: Get PRs
+        id: list-prs
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          label: ${{ inputs.label }}
+        run: |
+          PRS=$(gh pr list --repo "$GITHUB_REPOSITORY" --state open --json number,draft,labels --limit 100 | jq -r '.[] | select(.draft == false) | select((env.label == "" or (.labels[]?.name | ascii_downcase) == (env.label | ascii_downcase))) | .number')
+          COUNT=$(echo "$PRS" | grep -c .)
+          if [ -z "$COUNT" ]; then COUNT=0; fi
+          {
+            echo "prs<<EOF"
+            echo "$PRS"
+            echo "EOF"
+          } >> $GITHUB_OUTPUT
+          echo "count=$COUNT" >> $GITHUB_OUTPUT
+
+      - name: Arm PRs
+        if: inputs.dry_run == false
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          for pr in ${{ steps.list-prs.outputs.prs }}; do
+            echo "Arming PR #$pr..."
+            gh pr merge --auto --merge "https://github.com/$GITHUB_REPOSITORY/pull/$pr" --repo "$GITHUB_REPOSITORY"
+          done
+          echo "Done!"
+
+      - name: Dry run
+        if: inputs.dry_run == true
+        run: 'echo "DRY RUN: Would arm ${{ steps.list-prs.outputs.count }} PRs"'
