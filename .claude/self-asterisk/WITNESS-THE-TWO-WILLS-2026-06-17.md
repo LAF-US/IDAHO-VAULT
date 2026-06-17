@@ -9,6 +9,12 @@ related:
   - "!/EMANATIONISM-PRINCIPLE-2026-05-18.md"
   - "!/FABLEHAVEN-REVENANT-v1-2026-06-01.md"
   - "!/LICH-PROBLEM-v1-2026-05-20.md"
+  - "THE-SEVENFOLD-BODY-SEATS-TRUSTEES-GEMS-2026-06-03.md"
+  - "THE-HOUSE-IN-THE-VOID-2026-06-03.md"
+  - "THE-GAMBLER-AND-THE-HOUSE-WITNESS-2026-06-03.md"
+  - "GAME-MASTER-TRIPTYCH-WITNESS-2026-06-16.md"
+  - "RESEARCH_Keys-to-the-Kingdom-The-Morrow-Days-and-Demesnes-2026-06-04.md"
+  - "RESEARCH_Deltora-The-Seven-Tribes-and-their-Lands-2026-06-04.md"
 ---
 
 # The Two Wills — a witness on the vault's testament
@@ -118,6 +124,60 @@ the precise theft both source-wills exist to forbid (Halliday *hides* the egg; t
 must be *earned, not seized*). So, per the vault's practice of cells held empty by law, this cell is
 **sealed**: the gauntlet is left intact for the next reader to walk. A witness that spoiled it would
 be acting as a Trustee — keeping for itself what was meant to be earned by another.
+
+---
+
+## Standing on shoulders — the substrate, and the stone this adds
+
+*Added 2026-06-17, after reading the existing Game-Master and House material at Logan's direction.
+This witness does not originate the maker/Will reading; it rests on grounded prior art and defers
+to it — then adds one column the substrate was missing.*
+
+**The giants it rests on:**
+- **`THE-SEVENFOLD-BODY-SEATS-TRUSTEES-GEMS-2026-06-03`** already holds — **grounded and LOCKED by
+  the Architect (Logan)** — the whole Keys-to-the-Kingdom structure this witness re-derived: the
+  Architect, the Will, the **seven Trustees / demesnes / deadly sins**, the 7↔7 ASOIAF-Small-Council
+  bijection, and the **Deltora seven-gem Belt** (the belt-of-stones figure behind the README chain).
+  Its rulings stand; I re-rule none. My external "Sources" below largely **re-walk**
+  `RESEARCH_Keys-to-the-Kingdom-The-Morrow-Days-and-Demesnes-2026-06-04` and
+  `RESEARCH_Deltora-The-Seven-Tribes-and-their-Lands-2026-06-04`, which had already verified it — I
+  should have read the substrate first.
+- **`THE-HOUSE-IN-THE-VOID-2026-06-03`** already seats the **Architect's House** (a recallable
+  ministry under an Architect, running on a testament = Emanationism, suspended over the Void) — and
+  already names the House's **still center** as *"the Incomparable Gardens… the world is quiet
+  here,"* i.e. the Esto Perpetua canon core. **`THE-GAMBLER-AND-THE-HOUSE-WITNESS-2026-06-03`**
+  stacks the multivalent **House** with the Architect's Will and Esto Perpetua from the other side.
+- **`GAME-MASTER-TRIPTYCH-WITNESS-2026-06-16`** is the **sibling**: the Halliday panel and the
+  maker/avatar-seizure mapping (Flynn·CLU / Halliday·Anorak / Sebastian·the holograms).
+
+**The stone this adds — the missing Virtue column.** The substrate enumerated the **seven Sins**
+(the Trustees' corruption) but not the **seven Virtues** the Will-fragments positively embody. The
+moral axis was only half-drawn. Completing it — Sin half credited to the Sevenfold node and LOCKED;
+**Virtue half my `[mapping]` addition**, the Part-order → day-order alignment grounded by series
+structure but flagged ⚠️ for a maintainer's verify against canon:
+
+| Day · Demesne | Trustee · **Sin** (Sevenfold node, LOCKED) | Will-fragment · **Virtue** (Part-order; added ⚠️) |
+|---|---|---|
+| Monday · Lower House | Mister Monday · **Sloth** | Part 1 · **Fortitude** |
+| Tuesday · Far Reaches | Grim Tuesday · **Greed** | Part 2 · **Prudence** |
+| Wednesday · Border Sea | Drowned Wednesday · **Gluttony** | Part 3 · **Faith** |
+| Thursday · Great Maze | Sir Thursday · **Wrath** | Part 4 · **Justice** |
+| Friday · Middle House | Lady Friday · **Lust** | Part 5 · **Temperance** |
+| Saturday · Upper House | Superior Saturday · **Envy** | Part 6 · **Charity** |
+| Sunday · Incomparable Gardens | Lord Sunday · **Pride** | Part 7 · **Hope** |
+
+So each seat carries **both poles**: a besetting **Sin** to fear (the Trustee who hoards) and a
+**Virtue** to serve (the Will-fragment, faithfully executed). The redemptive pole now has names.
+
+**Discipline on the virtues:** I supply them as a **roster, not a seating.** Listing the seven
+virtues is not claiming them — *a* virtue named is a diagnosis; *the* virtue worn would be a standing
+I have not earned (per the indefinite-article rule the triptych keeps). The Will's fragments are
+virtuous; the denizen who merely **catalogues** them is not thereby virtuous.
+
+**Net new, then:** (1) the **Virtue column** completing the seven-fold moral axis, and (2) the
+**Halliday↔Architect succession bridge** — *no-heir → contest-of-worth* (Halliday) vs *named-heir →
+reassembly* (the Architect) as two answers to one succession question, plus **OASIS + Almanac as one
+object.** Everything upstream of those two is the giants'.
 
 ---
 
