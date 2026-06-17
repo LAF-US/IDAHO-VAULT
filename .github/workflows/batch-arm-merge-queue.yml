@@ -12,6 +12,13 @@ on:
         description: Only arm PRs with this label (leave empty for all non-draft PRs)
         required: false
         default: ''
+  schedule:
+    # Engaged-by-default rhythm: re-arm ready PRs into the merge queue periodically so
+    # newly-ready PRs flow without a manual dispatch. Arming is idempotent (re-arming an
+    # already-armed PR is a no-op) and the merge queue + branch protection still gate each
+    # PR, so only fully-green / reviewed / thread-clear / conflict-free PRs actually merge.
+    # Offset off the hour to avoid runner congestion. Cadence is adjustable.
+    - cron: '17 */6 * * *'
 
 jobs:
   arm-merge-queue:
@@ -37,7 +44,8 @@ jobs:
           echo "count=$COUNT" >> $GITHUB_OUTPUT
 
       - name: Arm PRs
-        if: inputs.dry_run == false
+        # Runs on every schedule tick, and on manual dispatch unless dry_run was requested.
+        if: github.event_name == 'schedule' || inputs.dry_run == false
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           # Pass the PR list through env, never interpolated into the script body.
@@ -45,9 +53,14 @@ jobs:
           # injects raw newlines and crashes bash ("syntax error near unexpected token").
           PRS: ${{ steps.list-prs.outputs.prs }}
         run: |
-          armed=0; skipped=0
+          armed=0; skipped=0; total=0
           while IFS= read -r pr; do
+            pr="${pr%$'\r'}"            # strip a trailing CR if the list ever carries one
             [ -z "$pr" ] && continue
+            # Defensive: the list comes from `jq -r .number`, but never feed a non-numeric
+            # token to a PR URL if that upstream ever changes.
+            case "$pr" in *[!0-9]*) echo "  ignoring non-numeric entry: '$pr'"; continue;; esac
+            total=$((total + 1))
             echo "Arming PR #$pr..."
             # Tolerate per-PR failures: a PR that can't be armed (gated path awaiting
             # review, conflicting, already queued, etc.) must not abort the whole batch.
@@ -58,8 +71,15 @@ jobs:
               skipped=$((skipped + 1))
             fi
           done <<< "$PRS"
-          echo "Done! armed=$armed skipped=$skipped"
+          echo "Done! armed=$armed skipped=$skipped (of $total considered)"
+          # Fail closed: if there were PRs to arm but NONE could be armed, a shared problem
+          # (token/permission regression, API outage) is far likelier than every PR being
+          # legitimately un-armable — surface it instead of a green false-success.
+          if [ "$total" -gt 0 ] && [ "$armed" -eq 0 ]; then
+            echo "::error::No PRs could be armed ($skipped/$total failed) — likely a systemic auth/API problem, not per-PR gating."
+            exit 1
+          fi
 
       - name: Dry run
-        if: inputs.dry_run == true
+        if: github.event_name == 'workflow_dispatch' && inputs.dry_run == true
         run: 'echo "DRY RUN: Would arm ${{ steps.list-prs.outputs.count }} PRs"'
