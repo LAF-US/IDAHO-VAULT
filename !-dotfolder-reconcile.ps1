@@ -359,8 +359,11 @@ function Invoke-ReconcileDotDir {
 
     if ($conflict.Count -gt 0) {
         Write-Host "-- CONFLICT ($($conflict.Count)) --"
-        if ($Quiet) { Write-Host "  ($($conflict.Count) files)" }
-        else { foreach ($f in $conflict) { Write-Host "  ! $f" } }
+        if ($Quiet) {
+            Write-Host "  ($($conflict.Count) files: both versions will be preserved in vault)"
+        } else {
+            foreach ($f in $conflict) { Write-Host "  ! $f (both versions will be preserved)" }
+        }
         Write-Host ""
     }
 
@@ -404,6 +407,39 @@ function Invoke-ReconcileDotDir {
     # -- APPLY --
     Write-Host "--- APPLYING ---"
 
+    # -- Handle conflicts first: preserve both versions in vault --
+    if ($conflict.Count -gt 0) {
+        Write-Host "  [DEBUG] Handling $($conflict.Count) conflicts"
+        $ci = 0; $ct = $conflict.Count
+        foreach ($rel in $conflict) {
+            $ci++
+            Write-Host "  [DEBUG] Conflict $ci of $ct - $rel"
+            Write-Progress -Activity "Applying .$Dot" -Status "Preserving conflict $ci of $ct" -CurrentOperation $rel -PercentComplete ([int](($ci / $ct) * 100))
+            
+            # Rename vault file to preserve it
+            $vaultSrc = $vaultFiles[$rel].FullName
+            $vaultDst = Join-Path $VaultDir "$rel.vault"
+            $vaultDstParent = Split-Path -Parent $vaultDst
+            if (-not (Test-Path $vaultDstParent)) { New-Item -ItemType Directory -Path $vaultDstParent -Force | Out-Null }
+            Write-Host "  PRESERVE vault version: $rel.vault"
+            Move-Item -LiteralPath $vaultSrc -Destination $vaultDst -Force
+            
+            # Move home file to vault with .home suffix
+            $homeSrc = $homeFiles[$rel].FullName
+            $homeDst = Join-Path $VaultDir "$rel.home"
+            $homeDstParent = Split-Path -Parent $homeDst
+            if (-not (Test-Path $homeDstParent)) { New-Item -ItemType Directory -Path $homeDstParent -Force | Out-Null }
+            $verb = if ($Snapshot) { "COPY" } else { "MOVE" }
+            Write-Host "  $verb home version: $rel.home"
+            if ($Snapshot) {
+                Copy-Item -LiteralPath $homeSrc -Destination $homeDst -Force
+            } else {
+                Move-Item -LiteralPath $homeSrc -Destination $homeDst -Force
+            }
+        }
+        Write-Progress -Activity "Applying .$Dot" -Completed
+    }
+
     if ($hasMoves) {
         if (-not (Test-Path $VaultDir)) {
             Write-StubFiles -Dot $Dot -VaultDir $VaultDir -Quiet:$Quiet | Out-Null
@@ -428,17 +464,32 @@ function Invoke-ReconcileDotDir {
     }
 
     if ($hasDeletes) {
-        $di = 0; $dt = $identical.Count
-        foreach ($rel in $identical) {
-            $di++
-            Write-Progress -Activity "Applying .$Dot" -Status "Deleting identical $di of $dt" -CurrentOperation $rel -PercentComplete ([int](($di / $dt) * 100))
-            $path = $homeFiles[$rel].FullName
-            Write-Host "  DELETE $rel"
-            Remove-Item -LiteralPath $path -Force
+        $ci = 0; $ct = $conflict.Count
+        foreach ($rel in $conflict) {
+            $ci++
+            Write-Progress -Activity "Applying .$Dot" -Status "Preserving conflict $ci of $ct" -CurrentOperation $rel -PercentComplete ([int](($ci / $ct) * 100))
+            
+            # Rename vault file to preserve it
+            $vaultSrc = $vaultFiles[$rel].FullName
+            $vaultDst = Join-Path $VaultDir "$rel.vault"
+            $vaultDstParent = Split-Path -Parent $vaultDst
+            if (-not (Test-Path $vaultDstParent)) { New-Item -ItemType Directory -Path $vaultDstParent -Force | Out-Null }
+            Write-Host "  PRESERVE vault version: $rel.vault"
+            Move-Item -LiteralPath $vaultSrc -Destination $vaultDst -Force
+            
+            # Move home file to vault with .home suffix
+            $homeSrc = $homeFiles[$rel].FullName
+            $homeDst = Join-Path $VaultDir "$rel.home"
+            $homeDstParent = Split-Path -Parent $homeDst
+            if (-not (Test-Path $homeDstParent)) { New-Item -ItemType Directory -Path $homeDstParent -Force | Out-Null }
+            $verb = if ($Snapshot) { "COPY" } else { "MOVE" }
+            Write-Host "  $verb home version: $rel.home"
+            if ($Snapshot) {
+                Copy-Item -LiteralPath $homeSrc -Destination $homeDst -Force
+            } else {
+                Move-Item -LiteralPath $homeSrc -Destination $homeDst -Force
+            }
         }
-        Get-ChildItem -LiteralPath $HomeDir -Recurse -Directory -Force | Where-Object {
-            @(Get-ChildItem -LiteralPath $_.FullName -Force).Count -eq 0
-        } | Remove-Item -Force -ErrorAction SilentlyContinue
         Write-Progress -Activity "Applying .$Dot" -Completed
     }
 
