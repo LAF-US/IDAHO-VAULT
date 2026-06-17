@@ -1108,6 +1108,59 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertIn("**#88**", md)  # surfaced despite 0 visible unresolved
         self.assertIn("threads-truncated", md)
 
+    # ----- engage-outdated: the first 'engage' step (outdated-only) -----
+
+    def test_engage_outdated_acts_only_on_outdated_resolvable(self) -> None:
+        # Touches ONLY outdated-resolvable threads — never needs-fix or apply-suggestion —
+        # with decision 'advisory', honoring --apply. (Logan: outdated-only to start.)
+        pr = _pr(
+            number=7,
+            threads=(
+                _thread(authors=("coderabbitai",), author_type="Bot", outdated=True),            # outdated-resolvable
+                _thread(authors=("coderabbitai",), author_type="Bot", body="prose finding"),     # needs-fix
+                _thread(authors=("coderabbitai",), author_type="Bot", body=self.SUGGESTION_BODY), # apply-suggestion
+            ),
+        )
+        calls = []
+
+        def fake_attest(pr_arg, thread_arg, looker, decision, rationale, *, apply, now=None):
+            calls.append({"decision": decision, "looker": looker, "apply": apply})
+            return {"thread_id": thread_arg.get("id"), "eligible": True, "applied": apply, "reason": ""}
+
+        args = SimpleNamespace(owner="o", repo="r", looker="github-actions[bot]", apply=True)
+        with mock.patch.object(review_feedback_loop, "_list_open_pr_numbers", return_value=[7]), \
+                mock.patch.object(review_feedback_loop, "_fetch_pr", return_value=pr), \
+                mock.patch.object(review_feedback_loop, "attest_and_resolve", side_effect=fake_attest), \
+                contextlib.redirect_stdout(io.StringIO()):
+            rc = review_feedback_loop.engage_outdated(args)
+        self.assertEqual(rc, 0)
+        self.assertEqual(len(calls), 1)  # only the outdated-resolvable thread
+        self.assertEqual(calls[0]["decision"], "advisory")
+        self.assertEqual(calls[0]["looker"], "github-actions[bot]")
+        self.assertTrue(calls[0]["apply"])
+
+    def test_engage_outdated_continues_past_a_thread_failure(self) -> None:
+        # One thread's transient gh/GraphQL failure must not abort the backlog pass —
+        # the rest are still processed and the run completes. (CodeRabbit review on #534.)
+        pr1 = _pr(number=1, threads=(_thread(authors=("coderabbitai",), author_type="Bot", outdated=True),))
+        pr2 = _pr(number=2, threads=(_thread(authors=("coderabbitai",), author_type="Bot", outdated=True),))
+        seen = []
+
+        def flaky(pr_arg, thread_arg, *a, **k):
+            seen.append(pr_arg.get("number"))
+            if pr_arg.get("number") == 1:
+                raise RuntimeError("transient gh failure")
+            return {"thread_id": thread_arg.get("id"), "eligible": True, "applied": True, "reason": ""}
+
+        args = SimpleNamespace(owner="o", repo="r", looker="github-actions[bot]", apply=True)
+        with mock.patch.object(review_feedback_loop, "_list_open_pr_numbers", return_value=[1, 2]), \
+                mock.patch.object(review_feedback_loop, "_fetch_pr", side_effect=lambda o, r, n: {1: pr1, 2: pr2}[n]), \
+                mock.patch.object(review_feedback_loop, "attest_and_resolve", side_effect=flaky), \
+                contextlib.redirect_stdout(io.StringIO()):
+            rc = review_feedback_loop.engage_outdated(args)
+        self.assertEqual(rc, 0)
+        self.assertEqual(seen, [1, 2])  # did NOT abort after PR #1 raised
+
 
 if __name__ == "__main__":
     unittest.main()
