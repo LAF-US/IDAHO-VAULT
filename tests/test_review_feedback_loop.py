@@ -1260,6 +1260,28 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertEqual(report["looker"], "loganfinney27")
         self.assertEqual(report["backfilled"], 1)
 
+    def test_engage_outdated_looker_defaults_to_authenticated_actor(self) -> None:
+        # Agent-driven operation: when --looker is not given (args.looker is None), the
+        # witness defaults to the authenticated actor (_viewer_login), so the attestation
+        # truthfully names whoever actually ran the resolve — not a hardcoded bot.
+        pr = _pr(number=7, threads=(_thread(authors=("coderabbitai",), author_type="Bot", outdated=True),))
+        seen_looker = []
+
+        def fake_attest(pr_arg, thread_arg, looker, *a, **k):
+            seen_looker.append(looker)
+            return {"thread_id": thread_arg.get("id"), "eligible": True, "applied": False, "reason": ""}
+
+        args = SimpleNamespace(owner="o", repo="r", looker=None, apply=False)
+        with mock.patch.object(review_feedback_loop, "_viewer_login", return_value="loganfinney27") as viewer, \
+                mock.patch.object(review_feedback_loop, "_list_open_pr_numbers", return_value=[7]), \
+                mock.patch.object(review_feedback_loop, "_fetch_pr", return_value=pr), \
+                mock.patch.object(review_feedback_loop, "attest_and_resolve", side_effect=fake_attest), \
+                contextlib.redirect_stdout(io.StringIO()):
+            rc = review_feedback_loop.engage_outdated(args)
+        self.assertEqual(rc, 0)
+        viewer.assert_called_once()             # resolved the actor once for the run
+        self.assertEqual(seen_looker, ["loganfinney27"])  # witness names the real actor
+
 
 if __name__ == "__main__":
     unittest.main()
