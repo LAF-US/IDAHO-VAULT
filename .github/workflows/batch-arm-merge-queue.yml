@@ -1,9 +1,34 @@
 name: Batch Arm Merge Queue
+
 on:
   workflow_dispatch:
+    inputs:
+      dry_run:
+        description: Test without making changes
+        required: false
+        default: false
+        type: boolean
 
 jobs:
-  test:
+  arm-merge-queue:
     runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
     steps:
-      - run: echo test
+      - name: Install gh CLI
+        run: sudo apt-get update && sudo apt-get install -y gh
+
+      - name: Authenticate
+        run: echo "${{ secrets.GITHUB_TOKEN }}" | gh auth login --with-token
+
+      - name: Get PRs
+        id: list-prs
+        run: PRS=$(gh pr list --repo "$GITHUB_REPOSITORY" --state open --json number,draft --limit 100 | jq -r '.[] | select(.draft == false) | .number'); echo "prs=$PRS" >> $GITHUB_OUTPUT
+
+      - name: Arm PRs
+        if: inputs.dry_run == false
+        run: for pr in ${{ steps.list-prs.outputs.prs }}; do gh pr merge --auto --merge "https://github.com/$GITHUB_REPOSITORY/pull/$pr" --repo "$GITHUB_REPOSITORY" || true; done; echo "Done!"
+
+      - name: Dry run
+        if: inputs.dry_run == true
+        run: echo "DRY RUN: Would arm ${{ steps.list-prs.outputs.count }} PRs"
