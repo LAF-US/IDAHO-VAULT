@@ -181,6 +181,7 @@ def _fetch_pr(owner: str, name: str, number: int) -> dict:
               id
               isResolved
               isOutdated
+              resolvedBy { login }
               comments(first: 100) {
                 pageInfo { hasNextPage }
                 nodes {
@@ -282,6 +283,16 @@ def _thread_is_bot_only(thread: dict) -> bool:
     if not authors:
         return False
     return all(_author_is_bot(author) for author in authors)
+
+
+def _thread_resolved_by(thread: dict) -> str:
+    """Login of the actor who resolved the thread, or '' if unresolved/unknown.
+
+    GitHub exposes `PullRequestReviewThread.resolvedBy`, so a backfill can tell whether
+    *this engine's identity* resolved a thread — and never witness another actor's resolve.
+    """
+    actor = thread.get("resolvedBy") or {}
+    return (actor.get("login") or "").strip()
 
 
 def _thread_has_committable_suggestion(thread: dict) -> bool:
@@ -549,6 +560,89 @@ def attest_and_resolve(
         if already_looked
         else "attested look recorded; thread resolved"
     )
+    return result
+
+
+def backfill_witness(
+    pr: dict,
+    thread: dict,
+    looker: str,
+    rationale: str,
+    *,
+    apply: bool = False,
+    now: datetime | None = None,
+) -> dict:
+    """Backfill a missing attestation on a thread WE resolved but never witnessed.
+
+    The unwitnessed-ending repair. A resolve that succeeds while its attestation post
+    does not (the resolve-first ordering's partial failure, or any interrupted run)
+    leaves a thread *resolved with no recorded look* — exactly the blind resolution the
+    engine exists to prevent. This repairs that ONE case and only that case:
+
+      - the thread is already resolved (otherwise use `attest-resolve`/`engage-outdated`);
+      - it carries NO attestation yet (nothing to repair otherwise);
+      - every author is a bot, proven from a complete comment page;
+      - and `resolvedBy` is the looker itself — *we* resolved it.
+
+    It posts the missing attestation and does NOTHING else: it never resolves (already
+    resolved) and never unresolves. The `resolvedBy == looker` gate is the truthfulness
+    line — we never mint a witness for a resolve performed by a human or another actor.
+
+    Writes nothing unless `apply=True`. Returns {thread_id, eligible, applied, reason,
+    attestation?}.
+    """
+    thread_id = thread.get("id")
+    result: dict[str, object] = {
+        "thread_id": thread_id,
+        "eligible": False,
+        "applied": False,
+        "reason": "",
+    }
+    if not thread_id:
+        result["reason"] = "thread has no id"
+        return result
+    if not thread.get("isResolved"):
+        result["reason"] = "thread is not resolved (nothing to backfill; use attest-resolve)"
+        return result
+    if _thread_has_attested_look(thread):
+        result["reason"] = "thread already carries an attested look"
+        return result
+    if ((thread.get("comments") or {}).get("pageInfo") or {}).get("hasNextPage"):
+        result["reason"] = "thread comments are paginated; cannot prove bot-only authorship"
+        return result
+    if not _thread_is_bot_only(thread):
+        result["reason"] = "thread is not bot-authored only"
+        return result
+    resolver = _thread_resolved_by(thread)
+    if resolver != looker:
+        # The truthfulness line: only backfill a witness for OUR OWN resolve.
+        result["reason"] = (
+            f"thread resolved by {resolver!r}, not the looker {looker!r} — "
+            "refusing to witness another identity's resolve"
+        )
+        return result
+
+    # Build (and thereby validate looker) before any write. The decision is `advisory`:
+    # the look records that the resolution stands, not that a fix was applied.
+    body = _build_attestation(looker, "advisory", rationale, now=now)
+    result["eligible"] = True
+    result["attestation"] = body
+    if not apply:
+        result["reason"] = "dry-run: would backfill the missing attestation"
+        return result
+
+    # Self-attestation guard: the marker says by={looker}; it must equal the actor that
+    # actually posts, or the attestation is undetectable.
+    actor = _viewer_login()
+    if actor != looker:
+        result["eligible"] = False
+        result["reason"] = (
+            f"looker {looker!r} does not match the authenticated actor {actor!r}"
+        )
+        return result
+    _add_thread_reply(thread_id, body)
+    result["applied"] = True
+    result["reason"] = "missing attestation backfilled (thread already resolved)"
     return result
 
 
@@ -1600,6 +1694,61 @@ def engage_outdated(args: argparse.Namespace) -> int:
     return 0
 
 
+def reconcile_witness(args: argparse.Namespace) -> int:
+    """Backfill missing attestations on resolved-but-unwitnessed threads WE resolved.
+
+    The repair pass for the unwitnessed ending (#399): a resolve can land while its
+    attestation does not, leaving a thread resolved with no recorded look. This walks
+    resolved, bot-only threads that carry no attestation and whose `resolvedBy` is the
+    looker, and posts the look that is owed — via `backfill_witness`, which NEVER resolves
+    or unresolves and refuses any thread a different identity resolved. Dry-run unless
+    --apply. The looker defaults to the authenticated actor, so the backfilled witness
+    truthfully names who actually resolved it. `--pr` scopes to one PR.
+    """
+    looker = args.looker or _viewer_login()
+    rationale = args.rationale or (
+        "Witness backfilled: this thread was resolved under the engaged policy but the "
+        "attestation had not landed; recording the look now."
+    )
+    considered: list[dict[str, object]] = []
+    only_pr = getattr(args, "pr", None)
+    pr_numbers = [only_pr] if only_pr else _list_open_pr_numbers(args.owner, args.repo)
+    for pr_number in pr_numbers:
+        pr = _fetch_pr(args.owner, args.repo, pr_number)
+        for thread in (pr.get("reviewThreads") or {}).get("nodes") or []:
+            # Pre-filter to the realistic candidate set: resolved, not yet witnessed,
+            # bot-only. backfill_witness then applies the resolvedBy == looker gate.
+            if not thread.get("isResolved"):
+                continue
+            if _thread_has_attested_look(thread):
+                continue
+            if not _thread_is_bot_only(thread):
+                continue
+            try:
+                result = backfill_witness(pr, thread, looker, rationale, apply=args.apply)
+            except RuntimeError as exc:
+                result = {
+                    "thread_id": thread.get("id"),
+                    "eligible": False,
+                    "applied": False,
+                    "reason": f"failed to process thread: {exc}",
+                }
+            considered.append({"pr": pr_number, **result})
+    print(
+        json.dumps(
+            {
+                "looker": looker,
+                "apply": args.apply,
+                "scope_pr": only_pr,
+                "candidates": len(considered),
+                "backfilled": sum(1 for r in considered if r.get("applied")),
+                "results": considered,
+            }
+        )
+    )
+    return 0
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser()
     subparsers = parser.add_subparsers(dest="command", required=True)
@@ -1701,6 +1850,28 @@ def build_parser() -> argparse.ArgumentParser:
         help="actually post attestations and resolve outdated threads (default: dry-run)",
     )
 
+    reconcile = subparsers.add_parser("reconcile-witness")
+    reconcile.add_argument("--owner", required=True)
+    reconcile.add_argument("--repo", required=True)
+    reconcile.add_argument(
+        "--looker",
+        default=None,
+        help="identity whose resolved-but-unwitnessed threads to backfill; default: the "
+        "authenticated actor (_viewer_login). Only threads this identity resolved are touched.",
+    )
+    reconcile.add_argument(
+        "--pr",
+        type=_positive_int,
+        default=None,
+        help="scope the pass to a single open PR number (default: every open PR)",
+    )
+    reconcile.add_argument("--rationale", default="")
+    reconcile.add_argument(
+        "--apply",
+        action="store_true",
+        help="actually backfill the missing attestations (default: dry-run)",
+    )
+
     return parser
 
 
@@ -1731,6 +1902,8 @@ def main() -> int:
         return attest_resolve(args)
     if args.command == "engage-outdated":
         return engage_outdated(args)
+    if args.command == "reconcile-witness":
+        return reconcile_witness(args)
     return enable_auto_merge(args)
 
 
