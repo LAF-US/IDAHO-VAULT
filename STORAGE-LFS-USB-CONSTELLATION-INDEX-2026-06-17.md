@@ -75,7 +75,7 @@ run.
 ### ④ Doctrine — the durable rules that outlived the phase ✅ live
 - [[VAULT-MEDIA-STORAGE]] — storage lanes: ≤100 MB direct / >100 MB LFS / >2 GB external. *(in force; extended via PR #535)*
 - [[LAF-USB-PROTOCOL-FRAMEWORK]] — staged carrier/sync framework for external objects.
-- [[LAF-USB-OBJECT-MANIFEST-2026-05-08.json]] — registry of the 38 files >2 GB. **verification_state: 40/40 `pending`.**
+- [[LAF-USB-OBJECT-MANIFEST-2026-05-08.json]] — registry of the oversized files >2 GB: **40 entries, 40/40 `pending`** (grew from the original 38 at the 2026-05-08 block as ghost OIDs were retired and entries added).
 - [[Universal Sync Bus]] — transport-bus doctrine (alias "USB"). *(staged)*
 - [[DISTRIBUTED-HASH-LEDGER]] — multi-provider verification model.
 - [[BACKUP-INFRASTRUCTURE-OPERATION-SYNTHESIS]] — rclone + 7 remotes + `op` stand-up (2026-04-23).
@@ -109,7 +109,7 @@ run.
 | Drive inventory + roles + overlaps | ✅ **mapped** | ①②③ artifacts committed. `[EVIDENCE]` |
 | Bulk transfer launched (322 GiB → gdrive) | ◐ **ran, outcome unverified** | [[ARBORSCAPE-COMPLETION-REPORT-2026-05-17]] logs start; outcome "unknown". `[CLAIM]` |
 | Documents INGEST (321 GB LFS blobs) | ◐ **partial** | [[DEFRAG-MAP]]: stopped 2026-05-13 ~04:45, ~72% objects / ~40% bytes, 1,269 errors. `[EVIDENCE]` |
-| 38 originals on external durable storage | ☐ **unverified** | [[LAF-USB-OBJECT-MANIFEST-2026-05-08.json]] still 40/40 `pending`. `[RECORD]` |
+| Oversized originals on external durable storage | ☐ **unverified** | [[LAF-USB-OBJECT-MANIFEST-2026-05-08.json]] still 40/40 `pending`. `[RECORD]` |
 | Cloud INGEST → 5 TB physical drive | ☐ **not confirmed** | DEFRAG §E pull stack; 5 TB not mounted in last session. `[RECORD]` |
 | Phase closeout document | ☐ **this node** | — |
 
@@ -145,7 +145,7 @@ Agents who worked the phase (records exist and are traceable):
 - [ ] **Resume Documents INGEST if incomplete** —
       `rclone copy "<Documents>" "gdrive-personal:INGEST/windows-2026-05-12/Documents" --transfers 4 --log-file "<rclone-logs>/documents-resume2.log"`
 - [ ] **Verify the transfer** — `rclone check "<local>" "gdrive-personal:INGEST/windows-2026-05-12/Documents"` → confirm **Differences: 0**.
-- [ ] **The 38 oversized objects** — confirm each is on external durable storage (Work Desk/Expansion originals and/or `gcs:the-ledger-bucket`), then update [[LAF-USB-OBJECT-MANIFEST-2026-05-08.json]] `verification_state` `pending → verified` with real `storage_key` + `sha256`. Validate with `.github/scripts/laf_usb_manifest.py`.
+- [ ] **The 40 oversized objects** — confirm each is on external durable storage (Work Desk/Expansion originals and/or `gcs:the-ledger-bucket`), then update [[LAF-USB-OBJECT-MANIFEST-2026-05-08.json]] `verification_state` `pending → verified` with real `storage_key` + `sha256`. Validate with `.github/scripts/laf_usb_manifest.py`.
 - [ ] **Cloud → physical hop** — pull `gdrive-personal:INGEST/...` down onto the 5 TB `storage` drive (DEFRAG §E pull stack), then confirm the consolidated set is present.
 - [ ] **Dedup the one proven duplicate** — `Social media experiments` (174/174 match across Work Desk + Travel Bag): checksum-confirm, then retire one copy only on Logan's approval.
 - [ ] **Close the loop** — write a dated completion note (e.g. `STORAGE-MIGRATION-COMPLETE-<date>.md`), link it here, and flip this node's checklist + the manifest to `verified`.
