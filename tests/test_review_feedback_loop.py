@@ -1061,6 +1061,53 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertEqual(sorted(t["resolution"] for t in report["threads"]), ["apply-suggestion", "needs-fix"])
         self.assertEqual(report["resolution_counts"], {"apply-suggestion": 1, "needs-fix": 1})
 
+    # ----- render_looker_worklist: read-only durable-issue triage surface -----
+
+    def test_render_looker_worklist_is_read_only_triage_markdown(self) -> None:
+        report = {
+            "open_prs": 3,
+            "by_lane": {"machine-disposable": 1, "needs-human": 1, "clear": 1},
+            "by_resolution": {"needs-fix": 2, "outdated-resolvable": 1},
+            "stale": 1,
+            "safe_to_drain": [42],
+            "reports": [
+                {"pr": 42, "lane": "machine-disposable", "stale": False, "auto_merge_armed": False,
+                 "unresolved_threads": 1, "resolution_counts": {"outdated-resolvable": 1}},
+                {"pr": 7, "lane": "needs-human", "stale": True, "auto_merge_armed": True,
+                 "unresolved_threads": 2, "resolution_counts": {"needs-fix": 2}},
+                {"pr": 9, "lane": "clear", "stale": False, "auto_merge_armed": False,
+                 "unresolved_threads": 0, "resolution_counts": {}},
+            ],
+        }
+        md = review_feedback_loop.render_looker_worklist(report)
+        self.assertIn("No threads resolved, no PRs merged", md)  # read-only framing
+        self.assertIn("**Open PRs:** 3", md)
+        self.assertIn("machine-disposable: 1", md)
+        self.assertIn("needs-fix: 2", md)
+        self.assertIn("- #42", md)  # safe_to_drain
+        self.assertIn("**#7**", md)  # actionable PR surfaced
+        self.assertIn("auto-merge-armed", md)  # flagged
+        self.assertNotIn("**#9**", md)  # clear PR (0 unresolved) omitted from worklist
+
+    def test_render_looker_worklist_handles_empty_report(self) -> None:
+        md = review_feedback_loop.render_looker_worklist({})
+        self.assertIn("**Open PRs:** 0", md)
+        self.assertIn("none", md)
+
+    def test_render_looker_worklist_surfaces_truncated_needs_human(self) -> None:
+        # Truncated past page 1: lane needs-human, 0 VISIBLE unresolved. Must still surface
+        # (the census can't prove it clear) and be flagged truncated. (codex review on #531.)
+        report = {
+            "open_prs": 1, "by_lane": {"needs-human": 1}, "by_resolution": {},
+            "stale": 0, "safe_to_drain": [],
+            "reports": [{"pr": 88, "lane": "needs-human", "stale": False,
+                         "auto_merge_armed": False, "threads_truncated": True,
+                         "unresolved_threads": 0, "resolution_counts": {}}],
+        }
+        md = review_feedback_loop.render_looker_worklist(report)
+        self.assertIn("**#88**", md)  # surfaced despite 0 visible unresolved
+        self.assertIn("threads-truncated", md)
+
 
 if __name__ == "__main__":
     unittest.main()
