@@ -16,8 +16,9 @@ Usage::
     jupytext_sync_paired.py [notebook.ipynb ...]
 
 With no arguments it operates on every tracked ``*.ipynb``. For each paired notebook it runs
-``jupytext --sync`` and, on success, prints the twin path(s) it touched (one per line) so a git
-hook can re-stage them. Exit status is non-zero iff a *paired* notebook failed to sync.
+``jupytext --sync`` and, on success, prints the existing twin path(s) the notebook's declared
+formats imply (one per line, whether or not this run actually modified them) so a git hook can
+re-stage them. Exit status is non-zero iff a *paired* notebook failed to sync.
 """
 
 from __future__ import annotations
@@ -64,7 +65,7 @@ def twin_paths(notebook: str, formats: str) -> list[str]:
 def main(argv: list[str]) -> int:
     notebooks = argv[1:] or tracked_notebooks()
     failed: list[str] = []
-    touched: list[str] = []
+    implied_twins: list[str] = []
     unparseable: list[str] = []
     for notebook in notebooks:
         data, error = read_notebook(notebook)
@@ -87,8 +88,8 @@ def main(argv: list[str]) -> int:
                 sys.stderr.write(proc.stdout)
             failed.append(notebook)
             continue
-        touched.extend(twin for twin in twin_paths(notebook, formats) if os.path.exists(twin))
-    for twin in touched:
+        implied_twins.extend(twin for twin in twin_paths(notebook, formats) if os.path.exists(twin))
+    for twin in implied_twins:
         print(twin)
     if unparseable:
         sys.stderr.write(
