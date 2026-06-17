@@ -1668,7 +1668,8 @@ def engage_outdated(args: argparse.Namespace) -> int:
     keep a PR hanging). Scope is deliberately the narrowest safe slice — ONLY threads whose
     resolution disposition is `outdated-resolvable` (bot-only, GitHub-outdated: the
     commented lines no longer exist in the diff). Each is cleared via `attest_and_resolve`
-    with a recorded `github-actions[bot]` attestation, so it is a *witnessed* resolution,
+    with a recorded attestation by the looker — the `--looker` value, defaulting to the
+    authenticated actor (`_viewer_login()`) — so it is a *witnessed* resolution,
     not the blind reconciler. needs-fix / apply-suggestion / looked / human threads are
     never touched — needs-fix is the reviewer gate that keeps a PR hanging. This NEVER
     merges; if clearing the last thread lets an armed PR flow, that is GitHub's auto-merge,
