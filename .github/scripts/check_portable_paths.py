@@ -11,7 +11,6 @@ import argparse
 import subprocess
 import sys
 from collections import defaultdict
-from pathlib import Path
 
 
 RESERVED_NAMES = {"AUX", "CON", "NUL", "PRN"}
@@ -27,6 +26,7 @@ def git_tracked_files() -> list[str]:
         check=True,
         capture_output=True,
         text=True,
+        timeout=30,
     )
     return [line for line in result.stdout.splitlines() if line]
 
