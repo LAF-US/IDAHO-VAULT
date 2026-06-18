@@ -5,7 +5,6 @@ This script validates Python syntax by reading files and attempting to compile t
 """
 
 import os
-import sys
 
 # List of files to check
 files_to_check = [

@@ -6,8 +6,7 @@ Generates a comprehensive report without relying on subprocess.
 
 import sys
 import os
-import traceback
-from pathlib import Path
+import subprocess
 
 # Change to repo directory
 os.chdir(r"C:\Users\loganf\Documents\IDAHO-VAULT")
@@ -69,7 +68,7 @@ for filepath in COMPILE_FILES:
     try:
         if not os.path.exists(abs_path):
             print(f"✗ FAIL: {filepath}")
-            print(f"  Error: File not found")
+            print("  Error: File not found")
             compile_results.append((filepath, "FAIL", "File not found"))
         else:
             with open(abs_path, 'r', encoding='utf-8', errors='replace') as f:
@@ -99,9 +98,6 @@ print("PART 2: PYTEST EXECUTION")
 print("=" * 80)
 print()
 
-# Import subprocess for pytest
-import subprocess
-
 TEST_FILES = [
     "tests\\test_topology_census.py",
     "tests\\test_stale_bot_prs.py",
@@ -126,10 +122,10 @@ for test_file in TEST_FILES:
         )
         
         if result.returncode == 0:
-            print(f"✓ PASS")
+            print("✓ PASS")
             test_results.append((test_file, "PASS", None))
         else:
-            print(f"✗ FAIL")
+            print("✗ FAIL")
             output = result.stdout
             if result.stderr:
                 output = result.stderr + "\n" + output
@@ -138,17 +134,17 @@ for test_file in TEST_FILES:
             test_results.append((test_file, "FAIL", output))
             
     except subprocess.TimeoutExpired:
-        print(f"✗ FAIL")
+        print("✗ FAIL")
         print("Error: Timeout (>60s)")
         test_results.append((test_file, "FAIL", "Timeout (>60s)"))
         
     except FileNotFoundError:
-        print(f"✗ FAIL")
+        print("✗ FAIL")
         print("Error: pytest not found or test file not found")
         test_results.append((test_file, "FAIL", "pytest not found"))
         
     except Exception as e:
-        print(f"✗ FAIL")
+        print("✗ FAIL")
         print(f"Error: {type(e).__name__}: {str(e)}")
         test_results.append((test_file, "FAIL", str(e)))
 

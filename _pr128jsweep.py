@@ -30,7 +30,8 @@ class FailedRunEvent:
 
 
 class Reporter(Protocol):
-    def send(self, event: FailedRunEvent, body: str) -> tuple[bool, str]: ...
+    def send(self, event: FailedRunEvent, body: str) -> tuple[bool, str]:
+        pass
 
 
 class LinearReporter:
