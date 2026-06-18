@@ -60,6 +60,7 @@ class SecretCheckerTest(unittest.TestCase):
             secret_checker, "worktree_file_bytes", return_value=b"reference only"
         ):
             findings = secret_checker.findings_for_paths([".op/token-helper.ps1"], staged=False)
+        self.assertEqual({finding.rule for finding in findings}, {"secret_path"})
 
     def test_allows_op_documentation_files(self) -> None:
         """Test that .op/ documentation files are allowed by secret pattern checker."""
@@ -86,7 +87,6 @@ class SecretCheckerTest(unittest.TestCase):
             secret_checker, "worktree_file_bytes", return_value=b"# Documentation"
         ):
             findings = secret_checker.findings_for_paths([".op/docs/guide.md"], staged=False)
-        self.assertEqual({finding.rule for finding in findings}, {"secret_path"})
         self.assertEqual({finding.rule for finding in findings}, {"secret_path"})
 
 
