@@ -117,6 +117,12 @@ The developer build can be installed on a physical Android phone through Android
 Studio or ADB. The Android instructions again require the Meta AI companion app,
 Developer Mode, registration callbacks, and Bluetooth/camera permissions.
 
+Android Studio is primarily the build, install, configuration, and debugging
+tool for this non-Play-Store developer app. The expected customization is in
+VisionClaw or the local Android project: local secrets, model endpoints, Meta
+DAT app/developer settings, frame cadence, and optional tool backend URLs. Do
+not fork or edit Meta's DAT SDK unless a specific upstream SDK bug is confirmed.
+
 Android is the closest thing to a familiar "sideload" path because a debug APK
 can be installed locally, but it still runs on the phone and connects to the
 glasses through Meta's companion-app and DAT permission model.

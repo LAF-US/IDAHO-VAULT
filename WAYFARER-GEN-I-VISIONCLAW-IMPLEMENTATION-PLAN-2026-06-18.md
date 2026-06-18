@@ -98,6 +98,11 @@ Build target:
 - DAT camera/photo capability only
 - no display module assumptions
 
+For Android, Android Studio is used to build/install/debug the phone app and
+wire local secrets or endpoint settings. It is not expected to be an SDK-editing
+surface; Meta's DAT SDK should remain an upstream dependency unless there is a
+confirmed SDK defect.
+
 Checklist:
 
 1. Add the platform DAT SDK through Swift Package Manager or Android GitHub
