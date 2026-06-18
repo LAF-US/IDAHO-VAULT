@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Reconcile dotfolders between the user home directory and this vault.
 
-The script is dry-run by default. Use ``--apply`` to write changes.
+The script is dry-run by default. Use ``--snapshot --apply`` to copy home dotfolders into the vault, or ``--retire --apply`` to move/clean home dotfolders after they have been preserved.
 """
 
 from __future__ import annotations
@@ -232,9 +232,11 @@ def files_match(left: Path, right: Path) -> bool:
 def copy_or_move(src: Path, dst: Path, *, snapshot: bool) -> None:
     dst.parent.mkdir(parents=True, exist_ok=True)
     if dst.exists():
-        if files_match(src, dst):
-            return
-        raise FileExistsError(f"Refusing to overwrite existing destination: {dst}")
+        if not files_match(src, dst):
+            raise FileExistsError(f"Refusing to overwrite existing destination: {dst}")
+        if not snapshot:
+            src.unlink()
+        return
     if snapshot:
         shutil.copy2(src, dst)
     else:
@@ -334,26 +336,13 @@ def reconcile_dot(
         write_stub_files(dot, vault_dir, quiet=quiet)
 
     for rel in conflicts:
-        vault_src = vault_files[rel].path
         home_src = home_files[rel].path
         home_dst = vault_dir / f"{rel}.home"
-        if snapshot:
-            if not quiet:
-                print(f"  PRESERVE vault version in place: {rel}")
-                print(f"  COPY home version: {rel}.home")
-            copy_or_move(home_src, home_dst, snapshot=True)
-        else:
-            vault_dst = vault_dir / f"{rel}.vault"
-            if not quiet:
-                print(f"  PRESERVE vault version: {rel}.vault")
-                print(f"  MOVE home version: {rel}.home")
-            vault_dst.parent.mkdir(parents=True, exist_ok=True)
-            if vault_dst.exists():
-                if not files_match(vault_src, vault_dst):
-                    raise FileExistsError(f"Refusing to overwrite existing preserved file: {vault_dst}")
-            else:
-                shutil.move(str(vault_src), str(vault_dst))
-            copy_or_move(home_src, home_dst, snapshot=False)
+        if not quiet:
+            action = "COPY" if snapshot else "MOVE"
+            print(f"  PRESERVE vault version in place: {rel}")
+            print(f"  {action} home version: {rel}.home")
+        copy_or_move(home_src, home_dst, snapshot=snapshot)
 
     for rel in unique_home:
         if not quiet:
@@ -435,8 +424,9 @@ def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("dot_name", nargs="?", help="Dotfolder name, with or without leading dot.")
     parser.add_argument("--apply", action="store_true", help="Execute changes. Default is dry-run.")
-    parser.add_argument("--snapshot", action="store_true", help="Copy home files into vault.")
-    parser.add_argument("--prune", action="store_true", help="Remove empty home dotfolder after retire.")
+    parser.add_argument("--snapshot", action="store_true", help="Copy home files into vault while leaving home files in place.")
+    parser.add_argument("--retire", action="store_true", help="Move/clean home files after preserving them in the vault.")
+    parser.add_argument("--prune", action="store_true", help="Remove empty home dotfolder after --retire.")
     parser.add_argument("--stub", action="store_true", help="Create vault anchor stub files.")
     parser.add_argument("--all", action="store_true", help="Process all home dotfolders.")
     parser.add_argument("--no-cache", action="store_true", help="Skip persistent hash cache.")
@@ -450,8 +440,12 @@ def build_parser() -> argparse.ArgumentParser:
 
 def main(argv: list[str] | None = None) -> int:
     args = build_parser().parse_args(argv)
-    if args.snapshot and args.prune:
-        print("[WARN] --prune ignored with --snapshot")
+    if args.snapshot and args.retire:
+        raise SystemExit("--snapshot and --retire cannot be combined")
+    if args.apply and not (args.snapshot or args.retire):
+        raise SystemExit("--apply requires an explicit mode: --snapshot or --retire")
+    if args.prune and not args.retire:
+        print("[WARN] --prune ignored unless --retire is set")
 
     cache = HashCache(args.cache_path, disabled=args.no_cache, read_only=not args.apply)
     cache.load()
@@ -474,7 +468,7 @@ def main(argv: list[str] | None = None) -> int:
                         vault_root=args.vault_root,
                         cache=cache,
                         apply=args.apply,
-                        snapshot=args.snapshot,
+                        snapshot=not args.retire,
                         prune=args.prune,
                         stub=args.stub,
                         force=args.force,

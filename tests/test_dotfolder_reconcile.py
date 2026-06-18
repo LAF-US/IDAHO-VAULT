@@ -4,6 +4,8 @@ import importlib.util
 import sys
 from pathlib import Path
 
+import pytest
+
 
 def load_reconciler():
     module_path = Path(__file__).resolve().parents[1] / "dotfolder_reconcile.py"
@@ -18,6 +20,28 @@ def load_reconciler():
 reconciler = load_reconciler()
 
 
+def test_plain_apply_requires_explicit_mode(tmp_path: Path) -> None:
+    home_root = tmp_path / "home"
+    vault_root = tmp_path / "vault"
+    home_root.mkdir()
+    vault_root.mkdir()
+
+    with pytest.raises(SystemExit, match="--snapshot or --retire"):
+        reconciler.main(
+            [
+                "demo",
+                "--home-root",
+                str(home_root),
+                "--vault-root",
+                str(vault_root),
+                "--cache-path",
+                str(tmp_path / "cache.json"),
+                "--apply",
+                "--quiet",
+            ]
+        )
+
+
 def test_stub_dry_run_does_not_write_vault_files(tmp_path: Path) -> None:
     home_root = tmp_path / "home"
     vault_root = tmp_path / "vault"
@@ -30,7 +54,7 @@ def test_stub_dry_run_does_not_write_vault_files(tmp_path: Path) -> None:
         vault_root=vault_root,
         cache=reconciler.HashCache(tmp_path / "cache.json", disabled=True),
         apply=False,
-        snapshot=False,
+        snapshot=True,
         prune=False,
         stub=True,
         force=False,
@@ -55,6 +79,7 @@ def test_dry_run_does_not_write_hash_cache(tmp_path: Path) -> None:
     assert reconciler.main(
         [
             "demo",
+            "--snapshot",
             "--home-root",
             str(home_root),
             "--vault-root",
@@ -68,33 +93,34 @@ def test_dry_run_does_not_write_hash_cache(tmp_path: Path) -> None:
     assert not cache_path.exists()
 
 
-def test_apply_stub_is_idempotent(tmp_path: Path) -> None:
+def test_snapshot_apply_copies_unique_home_files_without_removing_home(tmp_path: Path) -> None:
     home_root = tmp_path / "home"
     vault_root = tmp_path / "vault"
-    home_root.mkdir()
+    home_dir = home_root / ".demo"
+    home_dir.mkdir(parents=True)
     vault_root.mkdir()
+    (home_dir / "config.txt").write_text("home", encoding="utf-8")
 
-    args = [
-        "demo",
-        "--home-root",
-        str(home_root),
-        "--vault-root",
-        str(vault_root),
-        "--cache-path",
-        str(tmp_path / "cache.json"),
-        "--stub",
-        "--apply",
-        "--quiet",
-    ]
+    assert reconciler.main(
+        [
+            "demo",
+            "--snapshot",
+            "--apply",
+            "--home-root",
+            str(home_root),
+            "--vault-root",
+            str(vault_root),
+            "--cache-path",
+            str(tmp_path / "cache.json"),
+            "--quiet",
+        ]
+    ) == 0
 
-    assert reconciler.main(args) == 0
-    first_stub = (vault_root / ".demo" / "stub.txt").read_text(encoding="utf-8")
-    assert reconciler.main(args) == 0
-
-    assert (vault_root / ".demo" / "stub.txt").read_text(encoding="utf-8") == first_stub
+    assert (vault_root / ".demo" / "config.txt").read_text(encoding="utf-8") == "home"
+    assert (home_dir / "config.txt").read_text(encoding="utf-8") == "home"
 
 
-def test_snapshot_conflict_keeps_vault_file_in_place(tmp_path: Path) -> None:
+def test_snapshot_apply_preserves_conflicts_without_overwriting(tmp_path: Path) -> None:
     home_root = tmp_path / "home"
     vault_root = tmp_path / "vault"
     home_dir = home_root / ".demo"
@@ -104,20 +130,165 @@ def test_snapshot_conflict_keeps_vault_file_in_place(tmp_path: Path) -> None:
     (home_dir / "config.txt").write_text("home", encoding="utf-8")
     (vault_dir / "config.txt").write_text("vault", encoding="utf-8")
 
-    result = reconciler.reconcile_dot(
-        "demo",
-        home_root=home_root,
-        vault_root=vault_root,
-        cache=reconciler.HashCache(tmp_path / "cache.json", disabled=True),
-        apply=True,
-        snapshot=True,
-        prune=False,
-        stub=False,
-        force=False,
-        quiet=True,
-    )
+    assert reconciler.main(
+        [
+            "demo",
+            "--snapshot",
+            "--apply",
+            "--home-root",
+            str(home_root),
+            "--vault-root",
+            str(vault_root),
+            "--cache-path",
+            str(tmp_path / "cache.json"),
+            "--quiet",
+        ]
+    ) == 0
 
-    assert result.conflicts == 1
     assert (vault_dir / "config.txt").read_text(encoding="utf-8") == "vault"
     assert (vault_dir / "config.txt.home").read_text(encoding="utf-8") == "home"
+    assert (home_dir / "config.txt").read_text(encoding="utf-8") == "home"
+
+
+def test_retire_apply_moves_unique_home_files_into_vault(tmp_path: Path) -> None:
+    home_root = tmp_path / "home"
+    vault_root = tmp_path / "vault"
+    home_dir = home_root / ".demo"
+    home_dir.mkdir(parents=True)
+    vault_root.mkdir()
+    (home_dir / "config.txt").write_text("home", encoding="utf-8")
+
+    assert reconciler.main(
+        [
+            "demo",
+            "--retire",
+            "--apply",
+            "--home-root",
+            str(home_root),
+            "--vault-root",
+            str(vault_root),
+            "--cache-path",
+            str(tmp_path / "cache.json"),
+            "--quiet",
+        ]
+    ) == 0
+
+    assert (vault_root / ".demo" / "config.txt").read_text(encoding="utf-8") == "home"
+    assert not (home_dir / "config.txt").exists()
+
+
+def test_retire_apply_deletes_identical_home_files(tmp_path: Path) -> None:
+    home_root = tmp_path / "home"
+    vault_root = tmp_path / "vault"
+    home_dir = home_root / ".demo"
+    vault_dir = vault_root / ".demo"
+    home_dir.mkdir(parents=True)
+    vault_dir.mkdir(parents=True)
+    (home_dir / "config.txt").write_text("same", encoding="utf-8")
+    (vault_dir / "config.txt").write_text("same", encoding="utf-8")
+
+    assert reconciler.main(
+        [
+            "demo",
+            "--retire",
+            "--apply",
+            "--home-root",
+            str(home_root),
+            "--vault-root",
+            str(vault_root),
+            "--cache-path",
+            str(tmp_path / "cache.json"),
+            "--quiet",
+        ]
+    ) == 0
+
+    assert (vault_dir / "config.txt").read_text(encoding="utf-8") == "same"
+    assert not (home_dir / "config.txt").exists()
+
+
+def test_snapshot_apply_is_idempotent(tmp_path: Path) -> None:
+    home_root = tmp_path / "home"
+    vault_root = tmp_path / "vault"
+    home_dir = home_root / ".demo"
+    home_dir.mkdir(parents=True)
+    vault_root.mkdir()
+    (home_dir / "config.txt").write_text("home", encoding="utf-8")
+    args = [
+        "demo",
+        "--snapshot",
+        "--apply",
+        "--home-root",
+        str(home_root),
+        "--vault-root",
+        str(vault_root),
+        "--cache-path",
+        str(tmp_path / "cache.json"),
+        "--quiet",
+    ]
+
+    assert reconciler.main(args) == 0
+    assert reconciler.main(args) == 0
+
+    assert (vault_root / ".demo" / "config.txt").read_text(encoding="utf-8") == "home"
+    assert (home_dir / "config.txt").read_text(encoding="utf-8") == "home"
+
+
+def test_retire_conflict_is_idempotent(tmp_path: Path) -> None:
+    home_root = tmp_path / "home"
+    vault_root = tmp_path / "vault"
+    home_dir = home_root / ".demo"
+    vault_dir = vault_root / ".demo"
+    home_dir.mkdir(parents=True)
+    vault_dir.mkdir(parents=True)
+    (home_dir / "config.txt").write_text("home", encoding="utf-8")
+    (vault_dir / "config.txt").write_text("vault", encoding="utf-8")
+    args = [
+        "demo",
+        "--retire",
+        "--apply",
+        "--home-root",
+        str(home_root),
+        "--vault-root",
+        str(vault_root),
+        "--cache-path",
+        str(tmp_path / "cache.json"),
+        "--quiet",
+    ]
+
+    assert reconciler.main(args) == 0
+    assert reconciler.main(args) == 0
+
+    assert (vault_dir / "config.txt").read_text(encoding="utf-8") == "vault"
+    assert (vault_dir / "config.txt.home").read_text(encoding="utf-8") == "home"
+    assert not (home_dir / "config.txt").exists()
+
+
+def test_non_identical_existing_preservation_target_is_refused(tmp_path: Path) -> None:
+    home_root = tmp_path / "home"
+    vault_root = tmp_path / "vault"
+    home_dir = home_root / ".demo"
+    vault_dir = vault_root / ".demo"
+    home_dir.mkdir(parents=True)
+    vault_dir.mkdir(parents=True)
+    (home_dir / "config.txt").write_text("home", encoding="utf-8")
+    (vault_dir / "config.txt").write_text("vault", encoding="utf-8")
+    (vault_dir / "config.txt.home").write_text("different", encoding="utf-8")
+
+    assert reconciler.main(
+        [
+            "demo",
+            "--snapshot",
+            "--apply",
+            "--home-root",
+            str(home_root),
+            "--vault-root",
+            str(vault_root),
+            "--cache-path",
+            str(tmp_path / "cache.json"),
+            "--quiet",
+        ]
+    ) == 1
+
+    assert (vault_dir / "config.txt").read_text(encoding="utf-8") == "vault"
+    assert (vault_dir / "config.txt.home").read_text(encoding="utf-8") == "different"
     assert (home_dir / "config.txt").read_text(encoding="utf-8") == "home"
