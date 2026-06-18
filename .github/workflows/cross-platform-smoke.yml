@@ -50,6 +50,9 @@ jobs:
       - name: MESHNETWEB portability check (report)
         run: python .github/scripts/meshnetweb_portability_check.py
 
+      - name: Codex work surface guard
+        run: python .github/scripts/codex_work_guard.py
+
       - name: MESHNETWEB portability check (strict on PR)
         if: github.event_name == 'pull_request' || github.event_name == 'merge_group'
         run: python .github/scripts/meshnetweb_portability_check.py --strict
