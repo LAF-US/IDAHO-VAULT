@@ -202,10 +202,11 @@ def is_secret_path(rel_path: str) -> bool:
 
 
 def is_allowed_content_match(rule: str, line: str) -> bool:
-    if "secret-pattern: allow" in line:
-        return True
+    """Allow narrow generic placeholders without muting dedicated token rules."""
     if rule != "generic_secret_assignment":
         return False
+    if "secret-pattern: allow" in line:
+        return True
     return bool(
         re.search(r"\bprocess\.env\.[A-Z0-9_]+\b", line)
         or re.search(r"""(?i)["']?env:[A-Z][A-Z0-9_]*["']?""", line)
