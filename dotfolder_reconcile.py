@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Reconcile dotfolders between the user home directory and this vault.
 
-The script is dry-run by default. Use ``--snapshot --apply`` to copy home dotfolders into the vault, or ``--retire --apply`` to move/clean home dotfolders after they have been preserved.
+The script is dry-run by default. Use ``--snapshot --apply`` to copy home dotfolders into the vault. Use ``--retire --apply`` to move/clean home dotfolders after they have been preserved.
 """
 
 from __future__ import annotations
@@ -45,10 +45,12 @@ SECRET_PATTERNS = tuple(
         r"oauth.*\.json",
         r"client_secret.*\.json",
         r"vault-courier-key\.json",
+        r"page_id_routing_test\.ts$",
     )
 )
 SKIP_DOTDIRS = {
     ".ssh",
+    ".npm",
     ".npm-cache",
     ".cache",
     ".ollama",
@@ -327,7 +329,7 @@ def reconcile_dot(
     print_summary(result, unique_home, unique_vault, identical, conflicts, refused_paths, quiet=quiet)
     if not apply:
         if unique_home or (identical and not snapshot) or conflicts:
-            hint = "--snapshot --apply" if snapshot else "--apply"
+            hint = "--snapshot --apply" if snapshot else "--retire --apply"
             print(f"--- DRY RUN -- pass {hint} to execute ---")
         return result
 
