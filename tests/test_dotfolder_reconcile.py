@@ -320,4 +320,3 @@ def test_retire_dry_run_prints_explicit_retire_hint(tmp_path: Path, capsys: pyte
 
 def test_reference_denied_page_id_routing_test_path() -> None:
     assert reconciler.is_secret_path("src/page_id_routing_test.ts")
-
