@@ -90,10 +90,6 @@ class SecretCheckerTest(unittest.TestCase):
         self.assertEqual({finding.rule for finding in findings}, {"secret_path"})
 
 
-if __name__ == "__main__":
-    unittest.main()
-
-
     def test_rejects_op_json_files(self) -> None:
         """Test that .op/ .json files are still flagged as secret paths."""
         with unittest.mock.patch.object(
@@ -101,3 +97,6 @@ if __name__ == "__main__":
         ):
             findings = secret_checker.findings_for_paths([".op/credentials.json"], staged=False)
         self.assertEqual({finding.rule for finding in findings}, {"secret_path"})
+if __name__ == "__main__":
+    unittest.main()
+
