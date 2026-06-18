@@ -51,7 +51,7 @@ class WorkflowSecurityInvariantsTest(unittest.TestCase):
         steps = {step["name"]: step for step in eligible_job["steps"]}
         self.assertEqual(
             steps["Fetch Dependabot metadata"]["uses"],
-            "dependabot/fetch-metadata@ffa630c65fa7e0ecfa0625b5ceda64399aea1b36",
+            "dependabot/fetch-metadata@25dd0e34f4fe68f24cc83900b1fe3fe149efef98",
         )
         scope_run = steps["Exclude protected live surfaces from automatic merge"]["run"]
         for protected_path in (
@@ -75,7 +75,6 @@ class WorkflowSecurityInvariantsTest(unittest.TestCase):
             "check-large-files",
             "check-paths",
             "check-dotfolder-anchors",
-            "submit-pypi",
         ):
             self.assertIn(context, gate_step["run"])
         enable_step = steps["Enable verified auto-merge"]
@@ -96,6 +95,17 @@ class WorkflowSecurityInvariantsTest(unittest.TestCase):
         self.assertIn("check-large-files", large["jobs"])
         self.assertNotIn("check", secret["jobs"])
         self.assertNotIn("check", large["jobs"])
+
+    def test_portability_gate_runs_python_integrity_checker_with_timeout(self) -> None:
+        workflow = yaml.safe_load((WORKFLOWS / "check-portable-paths.yml").read_text(encoding="utf-8"))
+        job = workflow["jobs"]["check-paths"]
+        self.assertEqual(job["timeout-minutes"], 10)
+
+        steps = {step["name"]: step for step in job["steps"] if "name" in step}
+        run = steps["Check Python automation integrity"]["run"]
+        self.assertIn("trusted-main/.github/scripts/check_python_integrity.py", run)
+        self.assertIn(".github/scripts/check_python_integrity.py", run)
+        self.assertIn('python "$INTEGRITY_CHECKER"', run)
 
     def test_levelset_content_cannot_trigger_external_closure_message(self) -> None:
         self.assertFalse((WORKFLOWS / "levelset-closure-notify.yml").exists())

@@ -2,7 +2,7 @@
 authority: LOGAN-REVIEW-REQUIRED
 status: staged
 title: Version Transitions
-updated: 2026-05-26
+updated: 2026-06-17
 ---
 
 # Version Transitions
@@ -54,4 +54,5 @@ workflow or registry without a ledger entry and manual review.
 
 | Date | Surface | Transition | Purpose / Compatibility Boundary | Verification | Authority |
 | --- | --- | --- | --- | --- | --- |
+| 2026-06-17 | Python runtime | `3.13.3` -> `3.13.13` | Replace the Windows `tempfile` implementation that can retry permission failures up to `2,147,483,647` times; retain pytest cache checks and fail fast when cache storage is unavailable | Python 3.13.13 reports `TMP_MAX=20`; an unwritable-directory probe returns `PermissionError` in under 0.01 seconds; pytest cache-provider regression tests; cross-platform smoke remains on supported `3.10` and `3.13` lanes | Logan review required |
 | 2026-05-26 | Version-governance control | unrecorded transition behavior -> staged guard | Prevent task-local version edits from breaking coupled runtime and dependency requirements; no package/runtime version changed by this entry | History review of `3cf73fab`, `0eab6bdf`, `bc19e3f1`, `d0fb10d5`; failures on PRs #359, #363, #364 | Logan review required |

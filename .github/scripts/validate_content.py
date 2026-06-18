@@ -93,8 +93,12 @@ def get_changed_files(base: str | None = None) -> list[Path]:
         command.append(f"{base}..HEAD")
     result = subprocess.run(
         command,
-        capture_output=True, text=True
+        capture_output=True,
+        text=True,
+        timeout=30,
     )
+    if result.returncode != 0:
+        raise RuntimeError(result.stderr.strip() or "git diff failed")
     return [Path(f) for f in result.stdout.strip().splitlines() if f.endswith(".md")]
 
 

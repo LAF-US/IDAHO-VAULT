@@ -21,7 +21,6 @@ import argparse
 import hashlib
 import shutil
 import subprocess
-import sys
 from datetime import datetime
 from pathlib import Path
 
@@ -130,6 +129,7 @@ def main(argv: list[str] | None = None) -> int:
             cwd=str(vault_root),
             capture_output=True,
             text=True,
+            timeout=30,
         )
         if result.returncode == 0:
             print(f"Staged {len(moved_paths)} ingested file(s) for commit")

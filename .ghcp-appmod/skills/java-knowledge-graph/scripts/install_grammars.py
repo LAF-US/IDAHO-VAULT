@@ -32,7 +32,7 @@ def setup_grammars():
         if not lang_dir.exists():
             print(f"\n📥 Cloning {lang} grammar...")
             subprocess.run(['git', 'clone', '--depth', '1', repo_url, str(lang_dir)], 
-                          check=True)
+                          check=True, timeout=300)
         else:
             print(f"\n✓ {lang} grammar already exists")
     

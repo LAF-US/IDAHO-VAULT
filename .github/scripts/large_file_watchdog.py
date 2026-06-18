@@ -28,7 +28,7 @@ def main() -> int:
     args = parser.parse_args()
 
     result = subprocess.run(
-        ["git", "ls-files", "-z"], check=True, capture_output=True
+        ["git", "ls-files", "-z"], check=True, capture_output=True, timeout=30
     )
     tracked = [Path(p.decode("utf-8")) for p in result.stdout.split(b"\0") if p]
 

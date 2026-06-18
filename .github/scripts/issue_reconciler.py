@@ -20,6 +20,7 @@ def gh(*args: str, check: bool = True) -> subprocess.CompletedProcess[str]:
         ["gh", *args],
         capture_output=True,
         text=True,
+        timeout=60,
     )
     if check and result.returncode != 0:
         raise RuntimeError(
@@ -31,14 +32,11 @@ def gh(*args: str, check: bool = True) -> subprocess.CompletedProcess[str]:
 
 
 def gh_json(*args: str) -> list[dict] | dict | None:
-    try:
-        result = gh(*args)
-    except RuntimeError:
-        return None
+    result = gh(*args)
     try:
         return json.loads(result.stdout)
-    except json.JSONDecodeError:
-        return None
+    except json.JSONDecodeError as exc:
+        raise RuntimeError(f"gh {' '.join(args)} returned invalid JSON") from exc
 
 
 def _repo() -> str:

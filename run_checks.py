@@ -37,6 +37,7 @@ def run_syntax_checks(python_executable: str = sys.executable) -> int:
             cwd=REPO_ROOT,
             capture_output=True,
             text=True,
+            timeout=30,
         )
         if result.returncode != 0:
             print(f"ERROR in {file_path}:")
@@ -53,6 +54,7 @@ def run_pytest(python_executable: str = sys.executable) -> int:
         cwd=REPO_ROOT,
         capture_output=True,
         text=True,
+        timeout=300,
     )
     print(result.stdout)
     if result.stderr:

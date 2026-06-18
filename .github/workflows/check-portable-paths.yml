@@ -9,6 +9,7 @@ on:
 jobs:
   check-paths:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     permissions:
       contents: read
     steps:
@@ -52,3 +53,14 @@ jobs:
                 python "$VALIDATOR" --paths-from-stdin
             fi
           fi
+
+      - name: Check Python automation integrity
+        shell: bash
+        run: |
+          INTEGRITY_CHECKER="trusted-main/.github/scripts/check_python_integrity.py"
+          if [ ! -f "$INTEGRITY_CHECKER" ]; then
+            echo "::notice::Trusted Python integrity helper not present on base yet; using candidate helper for bootstrap."
+            INTEGRITY_CHECKER=".github/scripts/check_python_integrity.py"
+          fi
+
+          python "$INTEGRITY_CHECKER"

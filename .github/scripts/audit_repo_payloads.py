@@ -159,6 +159,7 @@ def run_git(*args: str) -> str:
         encoding="utf-8",
         errors="replace",
         check=True,
+        timeout=30,
     )
     return result.stdout
 
