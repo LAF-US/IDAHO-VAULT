@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """Quick syntax verification by direct import."""
 
-import sys
 import traceback
 
 # Files to check

@@ -29,7 +29,8 @@ class FailedRunEvent:
 
 
 class Reporter(Protocol):
-    def send(self, event: FailedRunEvent, body: str) -> tuple[bool, str]: ...
+    def send(self, event: FailedRunEvent, body: str) -> tuple[bool, str]:
+        pass
 
 
 class SlackReporter:
@@ -93,8 +94,6 @@ def main() -> int:
         return 0
 
     message = build_message(event)
-    alias = os.environ.get("JANITOR_ALIAS", "janitor-bot")
-
     reporters: list[Reporter] = []
     slack_webhook = os.environ.get("JANITOR_SLACK_WEBHOOK_URL", "").strip()
     if slack_webhook:
