@@ -1,12 +1,15 @@
 #!/usr/bin/env python3
 """Reconcile dotfolders between the user home directory and this vault.
 
-The script is dry-run by default. Use ``--apply`` to write changes.
+The script is dry-run by default. Use ``--snapshot --apply`` to copy home
+dotfolders into the vault. Use ``--retire --apply`` to move/clean home
+dotfolders after they have been preserved.
 """
 
 from __future__ import annotations
 
 import argparse
+import filecmp
 import hashlib
 import json
 import re
@@ -44,10 +47,12 @@ SECRET_PATTERNS = tuple(
         r"oauth.*\.json",
         r"client_secret.*\.json",
         r"vault-courier-key\.json",
+        r"page_id_routing_test\.ts$",
     )
 )
 SKIP_DOTDIRS = {
     ".ssh",
+    ".npm",
     ".npm-cache",
     ".cache",
     ".ollama",
@@ -89,9 +94,10 @@ class ReconcileResult:
 
 
 class HashCache:
-    def __init__(self, path: Path, *, disabled: bool) -> None:
+    def __init__(self, path: Path, *, disabled: bool, read_only: bool = False) -> None:
         self.path = path
         self.disabled = disabled
+        self.read_only = read_only
         self.dirty = False
         self.data: dict[str, dict[str, Any]] = {}
 
@@ -110,7 +116,7 @@ class HashCache:
             }
 
     def save(self) -> None:
-        if self.disabled or not self.dirty:
+        if self.disabled or self.read_only or not self.dirty:
             return
         self.path.write_text(
             json.dumps(self.data, sort_keys=True, separators=(",", ":")),
@@ -214,12 +220,29 @@ def remove_empty_dirs(root: Path) -> None:
         try:
             path.rmdir()
         except OSError:
-            # Best-effort cleanup: non-empty directories, races, and permissions are all safe to ignore here.
+            # Non-empty directories, races, and permissions are safe to ignore here.
             pass
+
+
+def files_match(left: Path, right: Path) -> bool:
+    if not right.exists() or not right.is_file():
+        return False
+    try:
+        return left.stat().st_size == right.stat().st_size and filecmp.cmp(
+            left, right, shallow=False
+        )
+    except OSError:
+        return False
 
 
 def copy_or_move(src: Path, dst: Path, *, snapshot: bool) -> None:
     dst.parent.mkdir(parents=True, exist_ok=True)
+    if dst.exists():
+        if not files_match(src, dst):
+            raise FileExistsError(f"Refusing to overwrite existing destination: {dst}")
+        if not snapshot:
+            src.unlink()
+        return
     if snapshot:
         shutil.copy2(src, dst)
     else:
@@ -255,7 +278,7 @@ def reconcile_dot(
         print(f"  HOME:   {home_dir}")
         print(f"  VAULT:  {vault_dir}")
 
-    if stub:
+    if stub and apply:
         write_stub_files(dot, vault_dir, quiet=quiet)
 
     if not home_dir.exists():
@@ -310,7 +333,7 @@ def reconcile_dot(
     print_summary(result, unique_home, unique_vault, identical, conflicts, refused_paths, quiet=quiet)
     if not apply:
         if unique_home or (identical and not snapshot) or conflicts:
-            hint = "--snapshot --apply" if snapshot else "--apply"
+            hint = "--snapshot --apply" if snapshot else "--retire --apply"
             print(f"--- DRY RUN -- pass {hint} to execute ---")
         return result
 
@@ -319,15 +342,12 @@ def reconcile_dot(
         write_stub_files(dot, vault_dir, quiet=quiet)
 
     for rel in conflicts:
-        vault_src = vault_files[rel].path
         home_src = home_files[rel].path
-        vault_dst = vault_dir / f"{rel}.vault"
         home_dst = vault_dir / f"{rel}.home"
         if not quiet:
-            print(f"  PRESERVE vault version: {rel}.vault")
-            print(f"  {'COPY' if snapshot else 'MOVE'} home version: {rel}.home")
-        vault_dst.parent.mkdir(parents=True, exist_ok=True)
-        shutil.move(str(vault_src), str(vault_dst))
+            action = "COPY" if snapshot else "MOVE"
+            print(f"  PRESERVE vault version in place: {rel}")
+            print(f"  {action} home version: {rel}.home")
         copy_or_move(home_src, home_dst, snapshot=snapshot)
 
     for rel in unique_home:
@@ -410,8 +430,17 @@ def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("dot_name", nargs="?", help="Dotfolder name, with or without leading dot.")
     parser.add_argument("--apply", action="store_true", help="Execute changes. Default is dry-run.")
-    parser.add_argument("--snapshot", action="store_true", help="Copy home files into vault.")
-    parser.add_argument("--prune", action="store_true", help="Remove empty home dotfolder after retire.")
+    parser.add_argument(
+        "--snapshot",
+        action="store_true",
+        help="Copy home files into vault while leaving home files in place.",
+    )
+    parser.add_argument(
+        "--retire",
+        action="store_true",
+        help="Move/clean home files after preserving them in the vault.",
+    )
+    parser.add_argument("--prune", action="store_true", help="Remove empty home dotfolder after --retire.")
     parser.add_argument("--stub", action="store_true", help="Create vault anchor stub files.")
     parser.add_argument("--all", action="store_true", help="Process all home dotfolders.")
     parser.add_argument("--no-cache", action="store_true", help="Skip persistent hash cache.")
@@ -425,10 +454,14 @@ def build_parser() -> argparse.ArgumentParser:
 
 def main(argv: list[str] | None = None) -> int:
     args = build_parser().parse_args(argv)
-    if args.snapshot and args.prune:
-        print("[WARN] --prune ignored with --snapshot")
+    if args.snapshot and args.retire:
+        raise SystemExit("--snapshot and --retire cannot be combined")
+    if args.apply and not (args.snapshot or args.retire):
+        raise SystemExit("--apply requires an explicit mode: --snapshot or --retire")
+    if args.prune and not args.retire:
+        print("[WARN] --prune ignored unless --retire is set")
 
-    cache = HashCache(args.cache_path, disabled=args.no_cache)
+    cache = HashCache(args.cache_path, disabled=args.no_cache, read_only=not args.apply)
     cache.load()
     results: list[ReconcileResult] = []
     try:
@@ -449,7 +482,7 @@ def main(argv: list[str] | None = None) -> int:
                         vault_root=args.vault_root,
                         cache=cache,
                         apply=args.apply,
-                        snapshot=args.snapshot,
+                        snapshot=not args.retire,
                         prune=args.prune,
                         stub=args.stub,
                         force=args.force,
