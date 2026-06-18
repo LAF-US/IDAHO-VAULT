@@ -249,17 +249,22 @@ def is_publishable_path(dotfolder: str, rel_path: str) -> bool:
     return False
 
 
-def git_check_ignored(vault_root: Path, rel_path: str) -> bool:
-    if not (vault_root / ".git").exists():
-        return False
+def git_ignored_paths(vault_root: Path, rel_paths: list[str]) -> set[str]:
+    if not rel_paths or not (vault_root / ".git").exists():
+        return set()
     result = subprocess.run(
-        ["git", "check-ignore", "--quiet", "--", rel_path],
+        ["git", "check-ignore", "--stdin"],
         cwd=vault_root,
+        input="\n".join(rel_paths),
+        text=True,
+        encoding="utf-8",
+        errors="replace",
         check=False,
-        stdout=subprocess.DEVNULL,
-        stderr=subprocess.DEVNULL,
+        capture_output=True,
     )
-    return result.returncode == 0
+    if result.returncode not in {0, 1}:
+        return set()
+    return set(result.stdout.splitlines())
 
 
 def iter_dotfolder_files(vault_root: Path, *, include_ignored: bool) -> list[tuple[str, Path]]:
@@ -275,10 +280,11 @@ def iter_dotfolder_files(vault_root: Path, *, include_ignored: bool) -> list[tup
             if not path.is_file():
                 continue
             rel = path.relative_to(vault_root).as_posix()
-            if not include_ignored and git_check_ignored(vault_root, rel):
-                continue
             files.append((rel, path))
-    return files
+    if include_ignored:
+        return files
+    ignored = git_ignored_paths(vault_root, [rel for rel, _path in files])
+    return [(rel, path) for rel, path in files if rel not in ignored]
 
 
 def classify_containment_file(vault_root: Path, rel_path: str, path: Path) -> ContainmentEntry:
