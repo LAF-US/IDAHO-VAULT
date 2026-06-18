@@ -107,7 +107,7 @@ jobs:
             --image=${{ steps.image.outputs.ref }} \
             --region=${{ env.REGION }} \
             --platform=managed \
-            --service-account=${{ vars.GCP_SERVICE_ACCOUNT }} \
+            --service-account=${{ vars.CLOUD_RUN_RUNTIME_SERVICE_ACCOUNT }} \
             --project=${{ env.PROJECT_ID }}
 
       - name: Output service URL
