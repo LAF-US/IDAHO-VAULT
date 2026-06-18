@@ -11,9 +11,11 @@ from __future__ import annotations
 import argparse
 import filecmp
 import hashlib
+import datetime as dt
 import json
 import re
 import shutil
+import subprocess
 import time
 from dataclasses import dataclass
 from pathlib import Path
@@ -48,6 +50,29 @@ SECRET_PATTERNS = tuple(
         r"client_secret.*\.json",
         r"vault-courier-key\.json",
         r"page_id_routing_test\.ts$",
+    )
+)
+CONTENT_SECRET_PATTERNS = {
+    "github_token": re.compile(r"\b(?:ghp|gho|ghu|ghs|ghr)_[A-Za-z0-9_]{30,}\b"),
+    "openai_key": re.compile(r"\bsk-(?:proj-)?[A-Za-z0-9_-]{32,}\b"),
+    "anthropic_key": re.compile(r"\bsk-ant-[A-Za-z0-9_-]{32,}\b"),
+    "slack_token": re.compile(r"\bxox(?:b|p|o|a|r|s)-[A-Za-z0-9-]{20,}\b"),
+    "private_key_block": re.compile(r"-----BEGIN (?:RSA |OPENSSH |EC |DSA )?PRIVATE KEY-----"),
+    "google_api_key": re.compile(r"\bAIza[0-9A-Za-z_-]{35}\b"),
+    "generic_secret_assignment": re.compile(
+        r"""(?ix)
+        ["']?\b(api[_-]?key|secret|token|password|passwd|pwd)\b["']?
+        \s*[:=]\s*["']?[A-Za-z0-9_./+=:-]{24,}
+        """
+    ),
+}
+RUNTIME_PATH_PATTERNS = tuple(
+    re.compile(pattern, re.IGNORECASE)
+    for pattern in (
+        r"(^|/)(cache|\.cache|tmp|\.tmp|log|logs|__pycache__)(/|$)",
+        r"(^|/)(sessions|archived_sessions|usage-data|computer-use|computer-use-turn-ended)(/|$)",
+        r"(^|/)(plugins|shell-snapshots|worktrees|\.remote-plugin-install-staging)(/|$)",
+        r"\.(sqlite|sqlite-shm|sqlite-wal|log|tmp)$",
     )
 )
 SKIP_DOTDIRS = {
@@ -91,6 +116,22 @@ class ReconcileResult:
     refused_paths: int = 0
     scan_seconds: float = 0.0
     error: str | None = None
+
+
+@dataclass(frozen=True)
+class ContainmentEntry:
+    path: str
+    dotfolder: str
+    classification: str
+    rules: tuple[str, ...]
+    size: int
+
+
+@dataclass(frozen=True)
+class ContainmentReport:
+    vault_root: Path
+    include_ignored: bool
+    entries: tuple[ContainmentEntry, ...]
 
 
 class HashCache:
@@ -159,6 +200,174 @@ def is_secret_path(rel_path: str) -> bool:
     normalized = rel_path.replace("\\", "/")
     return any(pattern.search(normalized) for pattern in SECRET_PATTERNS)
 
+
+def is_allowed_content_match(rule: str, line: str) -> bool:
+    if "secret-pattern: allow" in line:
+        return True
+    if rule != "generic_secret_assignment":
+        return False
+    return bool(
+        re.search(r"\bprocess\.env\.[A-Z0-9_]+\b", line)
+        or re.search(r"""(?i)["']?env:[A-Z][A-Z0-9_]*["']?""", line)
+        or re.search(r"""(?i)["']?\$secretRef(?::[A-Za-z0-9_.:/-]+)?["']?""", line)
+        or re.search(r"(?i)\breplace-with-[A-Za-z0-9_-]+\b", line)
+    )
+
+
+def content_secret_rules(path: Path) -> tuple[str, ...]:
+    try:
+        text = path.read_bytes().decode("utf-8", errors="replace")
+    except OSError:
+        return ("unreadable",)
+
+    rules: set[str] = set()
+    for line in text.splitlines():
+        for rule, pattern in CONTENT_SECRET_PATTERNS.items():
+            if pattern.search(line) and not is_allowed_content_match(rule, line):
+                rules.add(rule)
+    return tuple(sorted(rules))
+
+
+def is_runtime_path(rel_path: str) -> bool:
+    normalized = rel_path.replace("\\", "/")
+    return any(pattern.search(normalized) for pattern in RUNTIME_PATH_PATTERNS)
+
+
+def is_publishable_path(dotfolder: str, rel_path: str) -> bool:
+    parts = rel_path.replace("\\", "/").split("/")
+    name = parts[-1]
+    if len(parts) > 1:
+        return False
+    if name == "stub.txt":
+        return True
+    expected_anchor = f"{dotfolder.lstrip('.').upper()}.md"
+    if name == expected_anchor:
+        return True
+    if name.endswith((".md", ".txt")) and "secret" not in name.lower():
+        return True
+    return False
+
+
+def git_check_ignored(vault_root: Path, rel_path: str) -> bool:
+    if not (vault_root / ".git").exists():
+        return False
+    result = subprocess.run(
+        ["git", "check-ignore", "--quiet", "--", rel_path],
+        cwd=vault_root,
+        check=False,
+        stdout=subprocess.DEVNULL,
+        stderr=subprocess.DEVNULL,
+    )
+    return result.returncode == 0
+
+
+def iter_dotfolder_files(vault_root: Path, *, include_ignored: bool) -> list[tuple[str, Path]]:
+    files: list[tuple[str, Path]] = []
+    if not vault_root.exists():
+        return files
+    for dotfolder in sorted(vault_root.iterdir(), key=lambda item: item.name.lower()):
+        if not dotfolder.is_dir() or not dotfolder.name.startswith("."):
+            continue
+        if dotfolder.name in {".git", ".pytest_cache"}:
+            continue
+        for path in dotfolder.rglob("*"):
+            if not path.is_file():
+                continue
+            rel = path.relative_to(vault_root).as_posix()
+            if not include_ignored and git_check_ignored(vault_root, rel):
+                continue
+            files.append((rel, path))
+    return files
+
+
+def classify_containment_file(vault_root: Path, rel_path: str, path: Path) -> ContainmentEntry:
+    normalized = rel_path.replace("\\", "/")
+    dotfolder = normalized.split("/", 1)[0]
+    inner = normalized.split("/", 1)[1] if "/" in normalized else ""
+    path_rules = ("secret_path",) if is_secret_path(normalized) or is_secret_path(inner) else ()
+    content_rules = content_secret_rules(path)
+    rules = tuple(sorted(set(path_rules + content_rules)))
+    try:
+        size = path.stat().st_size
+    except OSError:
+        size = 0
+
+    if rules:
+        classification = "secret"
+    elif is_runtime_path(normalized):
+        classification = "runtime/cache"
+    elif is_publishable_path(dotfolder, inner):
+        classification = "publishable"
+    else:
+        classification = "private-preserve"
+
+    return ContainmentEntry(
+        path=normalized,
+        dotfolder=dotfolder,
+        classification=classification,
+        rules=rules,
+        size=size,
+    )
+
+
+def build_containment_report(vault_root: Path, *, include_ignored: bool) -> ContainmentReport:
+    entries = tuple(
+        classify_containment_file(vault_root, rel, path)
+        for rel, path in iter_dotfolder_files(vault_root, include_ignored=include_ignored)
+    )
+    return ContainmentReport(vault_root=vault_root, include_ignored=include_ignored, entries=entries)
+
+
+def containment_summary(report: ContainmentReport) -> dict[str, Any]:
+    by_class: dict[str, int] = {}
+    by_dotfolder: dict[str, dict[str, int]] = {}
+    for entry in report.entries:
+        by_class[entry.classification] = by_class.get(entry.classification, 0) + 1
+        dot_counts = by_dotfolder.setdefault(entry.dotfolder, {})
+        dot_counts[entry.classification] = dot_counts.get(entry.classification, 0) + 1
+    return {"total": len(report.entries), "by_class": by_class, "by_dotfolder": by_dotfolder}
+
+
+def containment_manifest(report: ContainmentReport) -> dict[str, Any]:
+    return {
+        "version": 1,
+        "generated_at": dt.datetime.now(dt.timezone.utc).isoformat().replace("+00:00", "Z"),
+        "vault_root": str(report.vault_root),
+        "include_ignored": report.include_ignored,
+        "summary": containment_summary(report),
+        "entries": [
+            {
+                "path": entry.path,
+                "dotfolder": entry.dotfolder,
+                "classification": entry.classification,
+                "rules": list(entry.rules),
+                "size": entry.size,
+            }
+            for entry in report.entries
+        ],
+    }
+
+
+def print_containment_report(report: ContainmentReport, *, quiet: bool) -> None:
+    summary = containment_summary(report)
+    print("DOTFOLDER CONTAINMENT REPORT")
+    print(f"  VAULT:           {report.vault_root}")
+    print(f"  INCLUDE IGNORED: {str(report.include_ignored).lower()}")
+    print(f"  FILES:           {summary['total']}")
+    print("-- BY CLASS --")
+    for classification, count in sorted(summary["by_class"].items()):
+        print(f"  {classification}: {count}")
+    print("-- BY DOTFOLDER --")
+    for dotfolder, counts in sorted(summary["by_dotfolder"].items()):
+        rendered = ", ".join(f"{key}={value}" for key, value in sorted(counts.items()))
+        print(f"  {dotfolder}: {rendered}")
+    secrets = [entry for entry in report.entries if entry.classification == "secret"]
+    if secrets:
+        print(f"-- SECRET FINDINGS ({len(secrets)}) --")
+        for entry in secrets:
+            print(f"  {entry.path} [{', '.join(entry.rules)}]")
+    elif not quiet:
+        print("-- SECRET FINDINGS (0) --")
 
 def relative_file_map(root: Path) -> dict[str, FileEntry]:
     if not root.exists():
@@ -449,6 +658,9 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--home-root", type=Path, default=Path.home(), help="Home root to scan.")
     parser.add_argument("--vault-root", type=Path, default=REPO_ROOT, help="Vault root to write.")
     parser.add_argument("--cache-path", type=Path, default=CACHE_PATH, help="Hash cache path.")
+    parser.add_argument("--containment-report", action="store_true", help="Classify hydrated vault dotfolder cargo without mutating files.")
+    parser.add_argument("--include-ignored", action="store_true", help="Include Git-ignored files in --containment-report.")
+    parser.add_argument("--manifest", type=Path, help="Optional JSON manifest path for --containment-report.")
     return parser
 
 
@@ -460,6 +672,20 @@ def main(argv: list[str] | None = None) -> int:
         raise SystemExit("--apply requires an explicit mode: --snapshot or --retire")
     if args.prune and not args.retire:
         print("[WARN] --prune ignored unless --retire is set")
+    if args.manifest and not args.containment_report:
+        raise SystemExit("--manifest requires --containment-report")
+    if args.containment_report:
+        if args.apply:
+            raise SystemExit("--containment-report is non-mutating and cannot be combined with --apply")
+        report = build_containment_report(args.vault_root, include_ignored=args.include_ignored)
+        print_containment_report(report, quiet=args.quiet)
+        if args.manifest:
+            args.manifest.parent.mkdir(parents=True, exist_ok=True)
+            args.manifest.write_text(
+                json.dumps(containment_manifest(report), indent=2, sort_keys=True),
+                encoding="utf-8",
+            )
+        return 1 if any(entry.classification == "secret" for entry in report.entries) else 0
 
     cache = HashCache(args.cache_path, disabled=args.no_cache, read_only=not args.apply)
     cache.load()
