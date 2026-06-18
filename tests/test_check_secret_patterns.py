@@ -60,6 +60,30 @@ class SecretCheckerTest(unittest.TestCase):
             secret_checker, "worktree_file_bytes", return_value=b"reference only"
         ):
             findings = secret_checker.findings_for_paths([".op/token-helper.ps1"], staged=False)
+
+    def test_allows_op_documentation_files(self) -> None:
+        with unittest.mock.patch.object(
+            secret_checker, "worktree_file_bytes", return_value=b"# Documentation"
+        ):
+            findings = secret_checker.findings_for_paths(
+                [".op/SETUP.md", ".op/OP.md", ".op/1password-hygiene-policy.json", ".op/notes.txt"],
+                staged=False,
+            )
+        self.assertEqual(findings, [])
+
+    def test_rejects_op_extensionless_credential_files(self) -> None:
+        with unittest.mock.patch.object(
+            secret_checker, "worktree_file_bytes", return_value=b"config data"
+        ):
+            findings = secret_checker.findings_for_paths([".op/config"], staged=False)
+        self.assertEqual({finding.rule for finding in findings}, {"secret_path"})
+
+    def test_rejects_op_subdirectory_files(self) -> None:
+        with unittest.mock.patch.object(
+            secret_checker, "worktree_file_bytes", return_value=b"# Documentation"
+        ):
+            findings = secret_checker.findings_for_paths([".op/docs/guide.md"], staged=False)
+        self.assertEqual({finding.rule for finding in findings}, {"secret_path"})
         self.assertEqual({finding.rule for finding in findings}, {"secret_path"})
 
 
