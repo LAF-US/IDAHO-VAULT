@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import subprocess
 import importlib.util
 import sys
 from pathlib import Path
@@ -339,6 +340,28 @@ def test_containment_classifies_secret_path(tmp_path: Path) -> None:
     assert "secret_path" in report.entries[0].rules
 
 
+def test_containment_include_ignored_scans_gitignored_auth_json(tmp_path: Path) -> None:
+    vault_root = tmp_path / "vault"
+    vault_root.mkdir()
+    (vault_root / ".gitignore").write_text(".codex/\n", encoding="utf-8")
+    subprocess.run(
+        ["git", "-c", "init.defaultBranch=main", "init", "--quiet"],
+        cwd=vault_root,
+        check=True,
+        stdout=subprocess.DEVNULL,
+        stderr=subprocess.DEVNULL,
+    )
+    secret_path = vault_root / ".codex" / "auth.json"
+    secret_path.parent.mkdir(parents=True)
+    secret_path.write_text('{"token":"redacted"}', encoding="utf-8")
+
+    excluded_report = reconciler.build_containment_report(vault_root, include_ignored=False)
+    included_report = reconciler.build_containment_report(vault_root, include_ignored=True)
+
+    assert excluded_report.entries == ()
+    assert len(included_report.entries) == 1
+    assert included_report.entries[0].classification == "secret"
+
 def test_containment_classifies_runtime_cache(tmp_path: Path) -> None:
     vault_root = tmp_path / "vault"
     runtime_path = vault_root / ".codex" / "sessions" / "session.jsonl"
@@ -415,7 +438,7 @@ def test_containment_manifest_is_sanitized(tmp_path: Path) -> None:
     assert secret_value not in manifest_text
     manifest = json.loads(manifest_text)
     assert manifest["summary"]["by_class"]["secret"] == 1
-    assert manifest["entries"][0]["rules"] == ["github_token"]
+    assert set(manifest["entries"][0]["rules"]) == {"generic_secret_assignment", "github_token"}
 
 
 def test_containment_report_exits_nonzero_when_secret_present(tmp_path: Path) -> None:
