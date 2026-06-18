@@ -83,7 +83,7 @@ class ReconcileResult:
     unique_to_vault: int = 0
     identical: int = 0
     conflicts: int = 0
-    secrets: int = 0
+    refused_paths: int = 0
     scan_seconds: float = 0.0
     error: str | None = None
 
@@ -214,6 +214,7 @@ def remove_empty_dirs(root: Path) -> None:
         try:
             path.rmdir()
         except OSError:
+            # Best-effort cleanup: non-empty directories, races, and permissions are all safe to ignore here.
             pass
 
 
@@ -269,13 +270,13 @@ def reconcile_dot(
     unique_vault: list[str] = []
     identical: list[str] = []
     conflicts: list[str] = []
-    secrets: list[str] = []
+    refused_paths: list[str] = []
 
     for rel in rel_paths:
         if is_secret_path(rel):
-            secrets.append(rel)
+            refused_paths.append(rel)
             if force and not quiet:
-                print(f"  [DENIED] secret-like path refused even with --force: {rel}")
+                print("  [DENIED] credential-like path refused; details suppressed")
             continue
 
         in_home = rel in home_files
@@ -302,11 +303,11 @@ def reconcile_dot(
         unique_to_vault=len(unique_vault),
         identical=len(identical),
         conflicts=len(conflicts),
-        secrets=len(secrets),
+        refused_paths=len(refused_paths),
         scan_seconds=time.monotonic() - start,
     )
 
-    print_summary(result, unique_home, unique_vault, identical, conflicts, secrets, quiet=quiet)
+    print_summary(result, unique_home, unique_vault, identical, conflicts, refused_paths, quiet=quiet)
     if not apply:
         if unique_home or (identical and not snapshot) or conflicts:
             hint = "--snapshot --apply" if snapshot else "--apply"
@@ -372,7 +373,7 @@ def print_summary(
     unique_vault: list[str],
     identical: list[str],
     conflicts: list[str],
-    secrets: list[str],
+    refused_paths: list[str],
     *,
     quiet: bool,
 ) -> None:
@@ -386,8 +387,11 @@ def print_summary(
     print_group("IDENTICAL", identical, "=", quiet=quiet)
     print_group("CONFLICT", conflicts, "!", quiet=quiet)
     print_group("UNIQUE TO VAULT", unique_vault, "-", quiet=quiet)
-    print_group("SECRETS REFUSED", secrets, "!", quiet=False)
-    if not (unique_home or identical or conflicts or secrets):
+    if refused_paths:
+        print(f"-- REFUSED PATHS ({len(refused_paths)}) --")
+        print("  Details suppressed because the filenames match credential-like patterns.")
+        print()
+    if not (unique_home or identical or conflicts or refused_paths):
         print(f"  Nothing to reconcile for .{result.dot}.")
 
 
@@ -467,7 +471,7 @@ def main(argv: list[str] | None = None) -> int:
             print(
                 f"  .{result.dot}: {result.files_home} home, {result.files_vault} vault, "
                 f"{result.unique_to_home} to-sync, {result.conflicts} conflicts, "
-                f"{result.secrets} secrets, {result.scan_seconds:.1f}s{suffix}"
+                f"{result.refused_paths} refused, {result.scan_seconds:.1f}s{suffix}"
             )
     return 1 if any(result.error for result in results) else 0
 
