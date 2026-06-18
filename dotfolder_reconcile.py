@@ -7,6 +7,7 @@ The script is dry-run by default. Use ``--apply`` to write changes.
 from __future__ import annotations
 
 import argparse
+import filecmp
 import hashlib
 import json
 import re
@@ -89,9 +90,10 @@ class ReconcileResult:
 
 
 class HashCache:
-    def __init__(self, path: Path, *, disabled: bool) -> None:
+    def __init__(self, path: Path, *, disabled: bool, read_only: bool = False) -> None:
         self.path = path
         self.disabled = disabled
+        self.read_only = read_only
         self.dirty = False
         self.data: dict[str, dict[str, Any]] = {}
 
@@ -110,7 +112,7 @@ class HashCache:
             }
 
     def save(self) -> None:
-        if self.disabled or not self.dirty:
+        if self.disabled or self.read_only or not self.dirty:
             return
         self.path.write_text(
             json.dumps(self.data, sort_keys=True, separators=(",", ":")),
@@ -218,8 +220,21 @@ def remove_empty_dirs(root: Path) -> None:
             pass
 
 
+def files_match(left: Path, right: Path) -> bool:
+    if not right.exists() or not right.is_file():
+        return False
+    try:
+        return left.stat().st_size == right.stat().st_size and filecmp.cmp(left, right, shallow=False)
+    except OSError:
+        return False
+
+
 def copy_or_move(src: Path, dst: Path, *, snapshot: bool) -> None:
     dst.parent.mkdir(parents=True, exist_ok=True)
+    if dst.exists():
+        if files_match(src, dst):
+            return
+        raise FileExistsError(f"Refusing to overwrite existing destination: {dst}")
     if snapshot:
         shutil.copy2(src, dst)
     else:
@@ -255,7 +270,7 @@ def reconcile_dot(
         print(f"  HOME:   {home_dir}")
         print(f"  VAULT:  {vault_dir}")
 
-    if stub:
+    if stub and apply:
         write_stub_files(dot, vault_dir, quiet=quiet)
 
     if not home_dir.exists():
@@ -321,14 +336,24 @@ def reconcile_dot(
     for rel in conflicts:
         vault_src = vault_files[rel].path
         home_src = home_files[rel].path
-        vault_dst = vault_dir / f"{rel}.vault"
         home_dst = vault_dir / f"{rel}.home"
-        if not quiet:
-            print(f"  PRESERVE vault version: {rel}.vault")
-            print(f"  {'COPY' if snapshot else 'MOVE'} home version: {rel}.home")
-        vault_dst.parent.mkdir(parents=True, exist_ok=True)
-        shutil.move(str(vault_src), str(vault_dst))
-        copy_or_move(home_src, home_dst, snapshot=snapshot)
+        if snapshot:
+            if not quiet:
+                print(f"  PRESERVE vault version in place: {rel}")
+                print(f"  COPY home version: {rel}.home")
+            copy_or_move(home_src, home_dst, snapshot=True)
+        else:
+            vault_dst = vault_dir / f"{rel}.vault"
+            if not quiet:
+                print(f"  PRESERVE vault version: {rel}.vault")
+                print(f"  MOVE home version: {rel}.home")
+            vault_dst.parent.mkdir(parents=True, exist_ok=True)
+            if vault_dst.exists():
+                if not files_match(vault_src, vault_dst):
+                    raise FileExistsError(f"Refusing to overwrite existing preserved file: {vault_dst}")
+            else:
+                shutil.move(str(vault_src), str(vault_dst))
+            copy_or_move(home_src, home_dst, snapshot=False)
 
     for rel in unique_home:
         if not quiet:
@@ -428,7 +453,7 @@ def main(argv: list[str] | None = None) -> int:
     if args.snapshot and args.prune:
         print("[WARN] --prune ignored with --snapshot")
 
-    cache = HashCache(args.cache_path, disabled=args.no_cache)
+    cache = HashCache(args.cache_path, disabled=args.no_cache, read_only=not args.apply)
     cache.load()
     results: list[ReconcileResult] = []
     try:
