@@ -38,6 +38,7 @@ def run_unittests(python_executable: str = sys.executable) -> int:
         cwd=REPO_ROOT,
         capture_output=True,
         text=True,
+        timeout=300,
     )
     print(result.stdout)
     if result.stderr:

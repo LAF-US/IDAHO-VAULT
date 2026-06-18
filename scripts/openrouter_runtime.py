@@ -58,6 +58,7 @@ def ensure_op_signed_in() -> None:
         stdout=subprocess.DEVNULL,
         stderr=subprocess.DEVNULL,
         check=False,
+        timeout=15,
     )
     if result.returncode != 0:
         raise SystemExit(
@@ -77,7 +78,7 @@ def ensure_env_file(agent: str) -> Path:
         needs_refresh = any(f"{key}=" not in content for key in required_keys)
 
     if needs_refresh:
-        subprocess.run([sys.executable, str(RESOLVER)], check=True)
+        subprocess.run([sys.executable, str(RESOLVER)], check=True, timeout=60)
 
     return ENV_FILE
 
@@ -88,6 +89,7 @@ def exec_agent(agent: str, cli_name: str, args: list[str]) -> int:
     if resolved_cli is None:
         raise SystemExit(f"Could not find '{cli_name}' on PATH.")
 
+    # timeout: interactive
     result = subprocess.run([resolved_cli, *args], env=env, check=False)
     return result.returncode
 
@@ -119,6 +121,7 @@ def launch_agent(agent: str, cli_name: str, args: list[str]) -> int:
         cli_name,
         *args,
     ]
+    # timeout: interactive
     result = subprocess.run(command, check=False)
     return result.returncode
 

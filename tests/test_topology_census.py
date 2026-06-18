@@ -2,9 +2,8 @@ from __future__ import annotations
 
 import importlib.util
 import json
-import shutil
 import subprocess
-import sys
+import tempfile
 import unittest
 from pathlib import Path
 from unittest.mock import patch
@@ -25,29 +24,29 @@ topology_census = _load_topology_census_module()
 
 class TopologyCensusTest(unittest.TestCase):
     def setUp(self) -> None:
-        project_root = Path(__file__).resolve().parents[1]
-        self.tempdir = project_root / "tests" / "_tmp_topology_census_case"
-        shutil.rmtree(self.tempdir, ignore_errors=True)
-        self.root = self.tempdir / "vault"
+        self.tempdir = tempfile.TemporaryDirectory()
+        self.root = Path(self.tempdir.name) / "vault"
         self.root.mkdir(parents=True, exist_ok=True)
         self.output_dir = self.root / "!"
-        subprocess.run(["git", "init"], cwd=self.root, check=True, capture_output=True)
+        subprocess.run(["git", "init"], cwd=self.root, check=True, capture_output=True, timeout=10)
         subprocess.run(
             ["git", "config", "user.email", "test@example.com"],
             cwd=self.root,
             check=True,
             capture_output=True,
+            timeout=10,
         )
         subprocess.run(
             ["git", "config", "user.name", "Topology Census Test"],
             cwd=self.root,
             check=True,
             capture_output=True,
+            timeout=10,
         )
         self._write_fixture()
 
     def tearDown(self) -> None:
-        shutil.rmtree(self.tempdir, ignore_errors=True)
+        self.tempdir.cleanup()
 
     def _write(self, relpath: str, content: str) -> None:
         path = self.root / Path(relpath)
@@ -143,9 +142,15 @@ class TopologyCensusTest(unittest.TestCase):
         self._write("INBOX/PHONE-LINK/phone.txt", "hello\n")
         self._write("_private/notes.md", "# private\n")
         self._write("@/tweets/thread.md", "# tweet\n")
-        subprocess.run(["git", "add", "."], cwd=self.root, check=True, capture_output=True)
+        subprocess.run(["git", "add", "."], cwd=self.root, check=True, capture_output=True, timeout=10)
         # Keep ignored creatures local-only.
-        subprocess.run(["git", "reset", "--", "_private", "@"], cwd=self.root, check=True, capture_output=True)
+        subprocess.run(
+            ["git", "reset", "--", "_private", "@"],
+            cwd=self.root,
+            check=True,
+            capture_output=True,
+            timeout=10,
+        )
 
     def test_root_scope_counts_ignored_and_tracked_folders_without_move_commands(self) -> None:
         report = topology_census.build_scope_report(self.root, "root")

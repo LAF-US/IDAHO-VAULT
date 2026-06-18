@@ -106,6 +106,7 @@ class PhoneLinkIntakeTest(unittest.TestCase):
                 cwd=str(vault_root),
                 capture_output=True,
                 text=True,
+                timeout=30,
             )
 
 

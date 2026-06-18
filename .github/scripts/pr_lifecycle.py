@@ -30,7 +30,7 @@ LIFECYCLE_DOCUMENTED: set[str] = {
 
 
 def _run(cmd: list[str], check: bool = True) -> subprocess.CompletedProcess[str]:
-    result = subprocess.run(cmd, capture_output=True, text=True)
+    result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
     if check and result.returncode != 0:
         raise RuntimeError(
             f"Command failed ({result.returncode}): {' '.join(cmd)}\n"
@@ -73,7 +73,6 @@ def set_state(pr_number: int, state: str) -> None:
                 "--remove-label",
                 f"lifecycle/{known_state}",
             ],
-            check=False,
         )
 
     _run(
@@ -85,7 +84,6 @@ def set_state(pr_number: int, state: str) -> None:
             "--add-label",
             f"lifecycle/{state}",
         ],
-        check=False,
     )
 
 

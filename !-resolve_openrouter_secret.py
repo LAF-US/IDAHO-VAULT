@@ -22,6 +22,7 @@ def ensure_op_signed_in() -> None:
         stdout=subprocess.DEVNULL,
         stderr=subprocess.DEVNULL,
         check=False,
+        timeout=15,
     )
     if result.returncode != 0:
         raise SystemExit(
@@ -37,6 +38,7 @@ def can_read_secret(secret_ref: str) -> bool:
         stdout=subprocess.DEVNULL,
         stderr=subprocess.DEVNULL,
         check=False,
+        timeout=15,
     )
     return result.returncode == 0
 

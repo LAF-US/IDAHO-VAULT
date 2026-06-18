@@ -43,6 +43,7 @@ class HelperScriptsTest(unittest.TestCase):
             cwd=run_checks.REPO_ROOT,
             capture_output=True,
             text=True,
+            timeout=30,
         )
 
     def test_check_syntax_compiles_from_repo_root_and_runs_tests_there(self) -> None:
@@ -65,6 +66,7 @@ class HelperScriptsTest(unittest.TestCase):
             cwd=check_syntax.REPO_ROOT,
             capture_output=True,
             text=True,
+            timeout=300,
         )
 
     def test_portable_paths_detects_case_only_collisions(self) -> None:

@@ -71,6 +71,7 @@ def _run_git(root: Path, *args: str) -> str:
         encoding="utf-8",
         errors="replace",
         check=True,
+        timeout=30,
     )
     return result.stdout
 
@@ -98,6 +99,7 @@ def _git_path_is_ignored(root: Path, relpath: str) -> bool:
         text=True,
         encoding="utf-8",
         errors="replace",
+        timeout=30,
     )
     return result.returncode == 0
 
@@ -111,6 +113,7 @@ def _git_status_lines(root: Path, relpath: str) -> list[str]:
         text=True,
         encoding="utf-8",
         errors="replace",
+        timeout=30,
     )
     return [line.rstrip() for line in result.stdout.splitlines() if line.strip()]
 

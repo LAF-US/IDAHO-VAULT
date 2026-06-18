@@ -39,12 +39,16 @@ class BranchState:
 
 
 def run_text(cmd: list[str]) -> str:
-    result = subprocess.run(cmd, check=True, capture_output=True, text=True)
+    result = subprocess.run(
+        cmd, check=True, capture_output=True, text=True, timeout=60
+    )
     return result.stdout.strip()
 
 
 def run_json(cmd: list[str]) -> object:
-    result = subprocess.run(cmd, check=True, capture_output=True, text=True)
+    result = subprocess.run(
+        cmd, check=True, capture_output=True, text=True, timeout=60
+    )
     return json.loads(result.stdout)
 
 
@@ -70,6 +74,7 @@ def living_worktree_branches() -> set[str]:
         check=False,
         capture_output=True,
         text=True,
+        timeout=30,
     )
     if result.returncode != 0:
         return set()
@@ -115,7 +120,7 @@ def classify_branch(
         return BranchState(
             branch=branch,
             classification="FOREIGN_HISTORY",
-            recommendation="Quarantine for salvage review; do not decide by ahead/behind counts.",
+            recommendation="Quarantine for SALVAGE review; do not decide by ahead/behind counts.",
             age_days=age_days,
             pr_number=int(pr["number"]) if pr else None,
             pr_url=pr.get("url") if pr else None,
@@ -186,7 +191,7 @@ def classify_branch(
 def state_line(state: BranchState) -> str:
     pr_state = f"open PR #{state.pr_number}" if state.pr_number else "no PR"
     if not state.has_merge_base:
-        distance = "no merge base with main"
+        distance = "no merge base with `main`"
     else:
         distance = f"{state.ahead} ahead / {state.behind} behind"
     return (
@@ -198,7 +203,7 @@ def state_line(state: BranchState) -> str:
 def finding_line(state: BranchState, stale_days: int) -> str | None:
     if state.classification == "FOREIGN_HISTORY":
         return (
-            f"- `{state.branch}` is FOREIGN_HISTORY: require salvage review "
+            f"- `{state.branch}` is FOREIGN_HISTORY: require SALVAGE review "
             "before any prune decision."
         )
     if state.classification == "IDENTICAL":
