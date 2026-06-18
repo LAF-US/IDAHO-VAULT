@@ -67,10 +67,22 @@ class SecretCheckerTest(unittest.TestCase):
             secret_checker, "worktree_file_bytes", return_value=b"# Documentation"
         ):
             findings = secret_checker.findings_for_paths(
-                [".op/SETUP.md", ".op/OP.md", ".op/1password-hygiene-policy.json", ".op/notes.txt"],
+                [
+                    ".op/SETUP.md",
+                    ".op/OP.md",
+                    ".op/1password-hygiene-policy.json",
+                    ".op/notes.txt",
+                ],
                 staged=False,
             )
         self.assertEqual(findings, [])
+
+    def test_rejects_op_json_files(self) -> None:
+        with unittest.mock.patch.object(
+            secret_checker, "worktree_file_bytes", return_value=b"policy data"
+        ):
+            findings = secret_checker.findings_for_paths([".op/credentials.json"], staged=False)
+        self.assertEqual({finding.rule for finding in findings}, {"secret_path"})
 
     def test_rejects_op_extensionless_credential_files(self) -> None:
         with unittest.mock.patch.object(
