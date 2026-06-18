@@ -6,7 +6,6 @@ Comprehensive test runner for compilation checks and pytest execution.
 import subprocess
 import sys
 import os
-from pathlib import Path
 
 # Change to repo directory
 os.chdir(r"C:\Users\loganf\Documents\IDAHO-VAULT")
@@ -94,7 +93,7 @@ def run_compilation_checks():
                 results.append((filepath, "FAIL", error_msg.strip()))
         except subprocess.TimeoutExpired:
             print(f"✗ FAIL: {filepath}")
-            print(f"  Error: Timeout (>10s)")
+            print("  Error: Timeout (>10s)")
             results.append((filepath, "FAIL", "Timeout (>10s)"))
         except Exception as e:
             print(f"✗ FAIL: {filepath}")
@@ -125,22 +124,22 @@ def run_pytest_tests():
             )
             
             if result.returncode == 0:
-                print(f"✓ PASS")
+                print("✓ PASS")
                 results.append((test_file, "PASS", None))
             else:
                 output = result.stdout
                 if result.stderr:
                     output = output + "\n" + result.stderr
-                print(f"✗ FAIL")
+                print("✗ FAIL")
                 print("Output:")
                 print(output)
                 results.append((test_file, "FAIL", output))
         except subprocess.TimeoutExpired:
-            print(f"✗ FAIL")
-            print(f"  Error: Timeout (>60s)")
+            print("✗ FAIL")
+            print("  Error: Timeout (>60s)")
             results.append((test_file, "FAIL", "Timeout (>60s)"))
         except Exception as e:
-            print(f"✗ FAIL")
+            print("✗ FAIL")
             print(f"  Error: {str(e)}")
             results.append((test_file, "FAIL", str(e)))
     
