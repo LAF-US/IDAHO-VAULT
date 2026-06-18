@@ -40,7 +40,7 @@ ALLOW_PATH_PATTERNS = (
     # 1Password CLI config dir. Allow top-level .op/ doc files (.md, .txt,
     # .json) — [^/]+ intentionally excludes subdirectories — while still
     # flagging extensionless credential files like .op/config.
-    re.compile(r"(^|/)\.op/[^/]+\.(md|txt|json)$"),
+    re.compile(r"^\.op/[^/]+\.(md|txt|json)$"),
 )
 
 SECRET_CONTENT_PATTERNS = {
