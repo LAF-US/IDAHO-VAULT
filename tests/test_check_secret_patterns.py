@@ -62,6 +62,7 @@ class SecretCheckerTest(unittest.TestCase):
             findings = secret_checker.findings_for_paths([".op/token-helper.ps1"], staged=False)
 
     def test_allows_op_documentation_files(self) -> None:
+        """Test that .op/ documentation files are allowed by secret pattern checker."""
         with unittest.mock.patch.object(
             secret_checker, "worktree_file_bytes", return_value=b"# Documentation"
         ):
@@ -72,6 +73,7 @@ class SecretCheckerTest(unittest.TestCase):
         self.assertEqual(findings, [])
 
     def test_rejects_op_extensionless_credential_files(self) -> None:
+        """Test that extensionless .op/ files are still flagged as secret paths."""
         with unittest.mock.patch.object(
             secret_checker, "worktree_file_bytes", return_value=b"config data"
         ):
@@ -79,6 +81,7 @@ class SecretCheckerTest(unittest.TestCase):
         self.assertEqual({finding.rule for finding in findings}, {"secret_path"})
 
     def test_rejects_op_subdirectory_files(self) -> None:
+        """Test that .op/ subdirectory files are still flagged as secret paths."""
         with unittest.mock.patch.object(
             secret_checker, "worktree_file_bytes", return_value=b"# Documentation"
         ):
