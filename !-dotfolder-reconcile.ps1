@@ -554,7 +554,11 @@ if ($All) {
         '.pip-cache', '.uv-cache', '.pycache', '.pytest_cache', '.ruff_cache', '.venv',
         '.vscode', '.codex', '.ipynb_checkpoints', '.jupyter'
     )
-    $homeDirs = Get-ChildItem -LiteralPath $HOME -Directory -Force | Where-Object { $_.Name -match '^\.' } | Sort-Object Name
+    
+    # Scan ONLY ~ for dotfolders (no subdirectories)
+    $homeDirs = Get-ChildItem -LiteralPath $HOME -Directory -Force | 
+                Where-Object { $_.Name -match '^\.' -and $_.Name -notmatch '^\.\.+' } | 
+                Sort-Object Name
     $total = $homeDirs.Count
     $results = @()
     $idx = 0
