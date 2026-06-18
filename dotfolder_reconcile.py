@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """Reconcile dotfolders between the user home directory and this vault.
 
-The script is dry-run by default. Use ``--snapshot --apply`` to copy home dotfolders into the vault. Use ``--retire --apply`` to move/clean home dotfolders after they have been preserved.
+The script is dry-run by default. Use ``--snapshot --apply`` to copy home
+dotfolders into the vault. Use ``--retire --apply`` to move/clean home
+dotfolders after they have been preserved.
 """
 
 from __future__ import annotations
@@ -218,7 +220,7 @@ def remove_empty_dirs(root: Path) -> None:
         try:
             path.rmdir()
         except OSError:
-            # Best-effort cleanup: non-empty directories, races, and permissions are all safe to ignore here.
+            # Non-empty directories, races, and permissions are safe to ignore here.
             pass
 
 
@@ -226,7 +228,9 @@ def files_match(left: Path, right: Path) -> bool:
     if not right.exists() or not right.is_file():
         return False
     try:
-        return left.stat().st_size == right.stat().st_size and filecmp.cmp(left, right, shallow=False)
+        return left.stat().st_size == right.stat().st_size and filecmp.cmp(
+            left, right, shallow=False
+        )
     except OSError:
         return False
 
@@ -426,8 +430,16 @@ def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("dot_name", nargs="?", help="Dotfolder name, with or without leading dot.")
     parser.add_argument("--apply", action="store_true", help="Execute changes. Default is dry-run.")
-    parser.add_argument("--snapshot", action="store_true", help="Copy home files into vault while leaving home files in place.")
-    parser.add_argument("--retire", action="store_true", help="Move/clean home files after preserving them in the vault.")
+    parser.add_argument(
+        "--snapshot",
+        action="store_true",
+        help="Copy home files into vault while leaving home files in place.",
+    )
+    parser.add_argument(
+        "--retire",
+        action="store_true",
+        help="Move/clean home files after preserving them in the vault.",
+    )
     parser.add_argument("--prune", action="store_true", help="Remove empty home dotfolder after --retire.")
     parser.add_argument("--stub", action="store_true", help="Create vault anchor stub files.")
     parser.add_argument("--all", action="store_true", help="Process all home dotfolders.")

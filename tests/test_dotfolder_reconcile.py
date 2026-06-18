@@ -293,7 +293,10 @@ def test_non_identical_existing_preservation_target_is_refused(tmp_path: Path) -
     assert (vault_dir / "config.txt.home").read_text(encoding="utf-8") == "different"
     assert (home_dir / "config.txt").read_text(encoding="utf-8") == "home"
 
-def test_retire_dry_run_prints_explicit_retire_hint(tmp_path: Path, capsys: pytest.CaptureFixture[str]) -> None:
+
+def test_retire_dry_run_prints_explicit_retire_hint(
+    tmp_path: Path, capsys: pytest.CaptureFixture[str]
+) -> None:
     home_root = tmp_path / "home"
     vault_root = tmp_path / "vault"
     home_dir = home_root / ".demo"
