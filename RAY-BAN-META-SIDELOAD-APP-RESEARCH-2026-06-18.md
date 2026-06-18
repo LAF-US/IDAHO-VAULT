@@ -203,7 +203,7 @@ For a VisionClaw-style local experiment on Logan's Wayfarer Gen I pair:
 ## Open Questions
 
 - Whether the goal is a VisionClaw build, a simpler DAT camera-streaming proof,
-  or a Display-app prototype.
+  or a custom DAT camera-streaming proof.
 - Whether the app needs production release-channel distribution or only local
   developer-device testing.
 - Whether the OpenClaw gateway should be reachable only on trusted Wi-Fi or
