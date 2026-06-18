@@ -91,7 +91,7 @@ class SecretCheckerTest(unittest.TestCase):
 
 
     def test_rejects_op_json_files(self) -> None:
-        """Test that .op/ .json files are still flagged as secret paths."""
+        """Test that .op/ JSON files are still flagged as secret paths."""
         with unittest.mock.patch.object(
             secret_checker, "worktree_file_bytes", return_value=b"policy data"
         ):
