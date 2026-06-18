@@ -292,3 +292,32 @@ def test_non_identical_existing_preservation_target_is_refused(tmp_path: Path) -
     assert (vault_dir / "config.txt").read_text(encoding="utf-8") == "vault"
     assert (vault_dir / "config.txt.home").read_text(encoding="utf-8") == "different"
     assert (home_dir / "config.txt").read_text(encoding="utf-8") == "home"
+
+def test_retire_dry_run_prints_explicit_retire_hint(tmp_path: Path, capsys: pytest.CaptureFixture[str]) -> None:
+    home_root = tmp_path / "home"
+    vault_root = tmp_path / "vault"
+    home_dir = home_root / ".demo"
+    home_dir.mkdir(parents=True)
+    vault_root.mkdir()
+    (home_dir / "config.txt").write_text("home", encoding="utf-8")
+
+    assert reconciler.main(
+        [
+            "demo",
+            "--retire",
+            "--home-root",
+            str(home_root),
+            "--vault-root",
+            str(vault_root),
+            "--cache-path",
+            str(tmp_path / "cache.json"),
+            "--quiet",
+        ]
+    ) == 0
+
+    assert "--retire --apply" in capsys.readouterr().out
+
+
+def test_reference_denied_page_id_routing_test_path() -> None:
+    assert reconciler.is_secret_path("src/page_id_routing_test.ts")
+
