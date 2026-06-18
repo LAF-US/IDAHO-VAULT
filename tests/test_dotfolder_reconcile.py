@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import json
 import importlib.util
 import sys
 from pathlib import Path
@@ -323,3 +324,104 @@ def test_retire_dry_run_prints_explicit_retire_hint(
 
 def test_reference_denied_page_id_routing_test_path() -> None:
     assert reconciler.is_secret_path("src/page_id_routing_test.ts")
+
+
+def test_containment_classifies_secret_path(tmp_path: Path) -> None:
+    vault_root = tmp_path / "vault"
+    secret_path = vault_root / ".codex" / "auth.json"
+    secret_path.parent.mkdir(parents=True)
+    secret_path.write_text('{"token":"redacted"}', encoding="utf-8")
+
+    report = reconciler.build_containment_report(vault_root, include_ignored=True)
+
+    assert len(report.entries) == 1
+    assert report.entries[0].classification == "secret"
+    assert "secret_path" in report.entries[0].rules
+
+
+def test_containment_classifies_runtime_cache(tmp_path: Path) -> None:
+    vault_root = tmp_path / "vault"
+    runtime_path = vault_root / ".codex" / "sessions" / "session.jsonl"
+    runtime_path.parent.mkdir(parents=True)
+    runtime_path.write_text("ordinary session text", encoding="utf-8")
+
+    report = reconciler.build_containment_report(vault_root, include_ignored=True)
+
+    assert report.entries[0].classification == "runtime/cache"
+
+
+def test_containment_classifies_publishable_anchor(tmp_path: Path) -> None:
+    vault_root = tmp_path / "vault"
+    anchor_path = vault_root / ".codex" / "CODEX.md"
+    anchor_path.parent.mkdir(parents=True)
+    anchor_path.write_text("# Codex\n", encoding="utf-8")
+
+    report = reconciler.build_containment_report(vault_root, include_ignored=True)
+
+    assert report.entries[0].classification == "publishable"
+
+
+def test_containment_classifies_private_preserve(tmp_path: Path) -> None:
+    vault_root = tmp_path / "vault"
+    private_path = vault_root / ".codex" / "config.toml"
+    private_path.parent.mkdir(parents=True)
+    private_path.write_text("model = 'example'\n", encoding="utf-8")
+
+    report = reconciler.build_containment_report(vault_root, include_ignored=True)
+
+    assert report.entries[0].classification == "private-preserve"
+
+
+def test_containment_report_writes_nothing_without_manifest(
+    tmp_path: Path, capsys: pytest.CaptureFixture[str]
+) -> None:
+    vault_root = tmp_path / "vault"
+    anchor_path = vault_root / ".codex" / "CODEX.md"
+    anchor_path.parent.mkdir(parents=True)
+    anchor_path.write_text("# Codex\n", encoding="utf-8")
+
+    before = sorted(path.relative_to(vault_root).as_posix() for path in vault_root.rglob("*"))
+
+    assert reconciler.main(["--containment-report", "--vault-root", str(vault_root)]) == 0
+
+    after = sorted(path.relative_to(vault_root).as_posix() for path in vault_root.rglob("*"))
+    assert before == after
+    assert "DOTFOLDER CONTAINMENT REPORT" in capsys.readouterr().out
+
+
+def test_containment_manifest_is_sanitized(tmp_path: Path) -> None:
+    vault_root = tmp_path / "vault"
+    secret_value = "ghp_" + "a" * 36
+    secret_path = vault_root / ".codex" / "history.jsonl"
+    manifest_path = tmp_path / "manifest.json"
+    secret_path.parent.mkdir(parents=True)
+    secret_path.write_text(f"token={secret_value}\n", encoding="utf-8")
+
+    assert (
+        reconciler.main(
+            [
+                "--containment-report",
+                "--include-ignored",
+                "--vault-root",
+                str(vault_root),
+                "--manifest",
+                str(manifest_path),
+            ]
+        )
+        == 1
+    )
+
+    manifest_text = manifest_path.read_text(encoding="utf-8")
+    assert secret_value not in manifest_text
+    manifest = json.loads(manifest_text)
+    assert manifest["summary"]["by_class"]["secret"] == 1
+    assert manifest["entries"][0]["rules"] == ["github_token"]
+
+
+def test_containment_report_exits_nonzero_when_secret_present(tmp_path: Path) -> None:
+    vault_root = tmp_path / "vault"
+    key_path = vault_root / ".claude" / "id_ed25519"
+    key_path.parent.mkdir(parents=True)
+    key_path.write_text("not a real key", encoding="utf-8")
+
+    assert reconciler.main(["--containment-report", "--vault-root", str(vault_root)]) == 1
