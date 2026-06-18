@@ -7,6 +7,8 @@ WORKDIR $APP_HOME
 
 # Install dependencies.
 COPY requirements.txt .
+COPY pyproject.toml .
+COPY src ./src
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the application code.
