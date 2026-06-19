@@ -438,18 +438,42 @@ def print_containment_report(
     elif not quiet and show_secret_findings:
         print("-- SECRET FINDINGS (0) --")
 
-def relative_file_map(root: Path) -> dict[str, FileEntry]:
+def note_unavailable_path(root: Path, path: Path, unavailable: list[str] | None) -> None:
+    if unavailable is None:
+        return
+    try:
+        rel = path.relative_to(root).as_posix()
+    except ValueError:
+        rel = path.as_posix()
+    unavailable.append(rel or ".")
+
+
+def relative_file_map(root: Path, unavailable: list[str] | None = None) -> dict[str, FileEntry]:
     if not root.exists():
         return {}
     files: dict[str, FileEntry] = {}
-    for path in root.rglob("*"):
-        if not path.is_file():
+    pending = [root]
+    while pending:
+        current = pending.pop()
+        try:
+            children = sorted(current.iterdir(), key=lambda item: item.name.lower())
+        except OSError:
+            note_unavailable_path(root, current, unavailable)
             continue
-        stat = path.stat()
-        rel = path.relative_to(root).as_posix()
-        files[rel] = FileEntry(path=path, size=stat.st_size, mtime_ns=stat.st_mtime_ns)
+        for path in children:
+            try:
+                if path.is_dir():
+                    pending.append(path)
+                    continue
+                if not path.is_file():
+                    continue
+                stat = path.stat()
+            except OSError:
+                note_unavailable_path(root, path, unavailable)
+                continue
+            rel = path.relative_to(root).as_posix()
+            files[rel] = FileEntry(path=path, size=stat.st_size, mtime_ns=stat.st_mtime_ns)
     return files
-
 
 def write_stub_files(dot: str, vault_dir: Path, *, quiet: bool) -> list[str]:
     created: list[str] = []
@@ -577,16 +601,15 @@ def reconcile_dot(
             print(f"[SKIP] {home_dir} does not exist.")
         return ReconcileResult(dot=dot, scan_seconds=time.monotonic() - start)
 
-    home_files = relative_file_map(home_dir)
-    vault_files = relative_file_map(vault_dir)
+    unavailable_paths: list[str] = []
+    home_files = relative_file_map(home_dir, unavailable=unavailable_paths)
+    vault_files = relative_file_map(vault_dir, unavailable=unavailable_paths)
     rel_paths = sorted(set(home_files) | set(vault_files))
     unique_home: list[str] = []
     unique_vault: list[str] = []
     identical: list[str] = []
     conflicts: list[str] = []
     sensitive_paths: list[str] = []
-    unavailable_paths: list[str] = []
-
     for rel in rel_paths:
         if is_secret_path(rel):
             sensitive_paths.append(rel)
@@ -664,9 +687,13 @@ def reconcile_dot(
         for rel in identical:
             if not quiet:
                 print(f"  DELETE identical home file {rel}")
-            home_files[rel].path.unlink()
+            try:
+                home_files[rel].path.unlink()
+            except OSError:
+                unavailable_paths.append(rel)
+                if not quiet:
+                    print(f"  [SKIP] unavailable identical home file: {rel}")
         remove_empty_dirs(home_dir)
-
     if prune and not snapshot and home_dir.exists():
         try:
             home_dir.rmdir()
