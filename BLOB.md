@@ -1,7 +1,1 @@
----
-authority: LOGAN
-related:
-- node
----
-
-undefined or fuzzy [ ! ] node needs defined
+[[B]][[L]][[O]][[B]]
