@@ -64,7 +64,31 @@ class UvDependencySubmissionTest(unittest.TestCase):
         ):
             match = [v for k, v in self.resolved.items() if k.startswith(purl)]
             self.assertTrue(match, f"missing direct dependency {purl}")
-            self.assertEqual(match[0]["relationship"], "direct")
+            # Every locked version of a declared dep must be direct, not just the first.
+            self.assertTrue(
+                all(v["relationship"] == "direct" for v in match),
+                f"non-direct entry found for {purl}",
+            )
+
+    def test_scope_is_runtime_reachability_based(self) -> None:
+        # Scope is derived from runtime reachability, not direct-name membership.
+        # Dev tools AND their exclusive transitives are development-scoped...
+        for name in ("pytest", "ruff", "iniconfig", "pluggy"):
+            match = [v for k, v in self.resolved.items() if k.startswith(f"pkg:pypi/{name}@")]
+            self.assertTrue(match, f"missing {name}")
+            self.assertTrue(
+                all(v["scope"] == "development" for v in match),
+                f"{name} should be development-scoped: {match}",
+            )
+        # ...while transitives reachable from runtime roots stay runtime-scoped,
+        # including ones shared with dev tools (e.g. packaging via both).
+        for name in ("flask", "crewai", "packaging", "click"):
+            match = [v for k, v in self.resolved.items() if k.startswith(f"pkg:pypi/{name}@")]
+            self.assertTrue(match, f"missing {name}")
+            self.assertTrue(
+                all(v["scope"] == "runtime" for v in match),
+                f"{name} should be runtime-scoped: {match}",
+            )
 
     def test_multi_version_packages_are_both_kept(self) -> None:
         # uv's universal lock pins numpy and onnxruntime at two versions each

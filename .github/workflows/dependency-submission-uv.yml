@@ -26,6 +26,7 @@ on:
     branches: [main]
     paths:
       - '**/uv.lock'
+      - '**/pyproject.toml'
   workflow_dispatch:
 
 permissions: {}
