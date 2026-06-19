@@ -465,6 +465,42 @@ def test_containment_large_private_file_is_not_content_scanned(tmp_path: Path) -
     assert report.entries[0].classification == "private-preserve"
     assert report.entries[0].rules == ()
 
+def test_manifest_requires_containment_report(tmp_path: Path) -> None:
+    vault_root = tmp_path / "vault"
+    vault_root.mkdir()
+
+    with pytest.raises(SystemExit) as excinfo:
+        reconciler.main(
+            [
+                "--manifest",
+                str(vault_root / "dotfolder-manifest.json"),
+                "--vault-root",
+                str(vault_root),
+            ]
+        )
+
+    assert excinfo.value.code == "--manifest requires --containment-report"
+
+
+def test_containment_report_cannot_be_combined_with_apply(tmp_path: Path) -> None:
+    vault_root = tmp_path / "vault"
+    vault_root.mkdir()
+
+    with pytest.raises(SystemExit) as excinfo:
+        reconciler.main(
+            [
+                "--containment-report",
+                "--apply",
+                "--vault-root",
+                str(vault_root),
+            ]
+        )
+
+    assert (
+        excinfo.value.code
+        == "--containment-report is non-mutating and cannot be combined with --apply"
+    )
+
 def test_containment_report_writes_nothing_without_manifest(
     tmp_path: Path, capsys: pytest.CaptureFixture[str]
 ) -> None:
