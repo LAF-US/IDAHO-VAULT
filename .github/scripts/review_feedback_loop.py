@@ -82,6 +82,7 @@ DEFAULT_THREAD_LABEL = "review/threads-open"
 DEFAULT_PENDING_LABEL = "merge/copilot-apply-pending"
 DEFAULT_REVIEW_PENDING_LABEL = "review/pending"
 DEFAULT_AUTO_MERGE_LABEL = "merge/auto"
+DEFAULT_SUGGESTIONS_LABEL = "review/suggestions-ready"
 RISK_LOW_LABEL = "risk/low"
 RISK_HIGH_LABEL = "risk/high"
 AUTO_MERGE_AUTHZ_FRAGMENTS = (
@@ -129,6 +130,10 @@ LABEL_SPECS: dict[str, tuple[str, str]] = {
     DEFAULT_REVIEW_PENDING_LABEL: (
         "BFD4F2",
         "Low-risk PR awaits review; automatic agent merge is disabled.",
+    ),
+    DEFAULT_SUGGESTIONS_LABEL: (
+        "1D76DB",
+        "Has bot review threads with committable ```suggestion blocks ready to apply.",
     ),
     RISK_LOW_LABEL: (
         "C2E0C6",
@@ -430,6 +435,26 @@ def _thread_resolution_disposition(thread: dict) -> str:
 # genuinely stale (outdated) or already-attested. needs-fix and apply-suggestion are
 # NOT here — they require a real fix / an applied suggestion, not a bare resolve.
 BARE_RESOLVABLE_DISPOSITIONS: frozenset[str] = frozenset({"outdated-resolvable", "looked"})
+
+
+def _count_committable_suggestion_threads(pr: dict) -> int:
+    """Number of unresolved threads on `pr` whose disposition is `apply-suggestion` —
+    bot-only, page-complete, current (not outdated), carrying a committable ```suggestion.
+
+    This is the PROPOSE-ONLY signal (Logan's #3 decision, 2026-06-19): the engine surfaces
+    these — GitHub has no public apply-suggestion API, so committing the diff would mean the
+    engine rewriting files on a contributor branch, which we deliberately do NOT do here.
+    It only flags that ready-to-apply suggestions exist; a human or the authoring agent
+    applies them (one-click "Commit suggestion" in the UI), then the witnessed resolve
+    clears the thread on the next event. Surfacing is safe on every path (no write), so it
+    is NOT protected-path-gated."""
+    count = 0
+    for thread in (pr.get("reviewThreads") or {}).get("nodes") or []:
+        if thread.get("isResolved"):
+            continue
+        if _thread_resolution_disposition(thread) == "apply-suggestion":
+            count += 1
+    return count
 
 
 def _build_attestation(
@@ -1028,6 +1053,7 @@ def evaluate_review_state(
         "current_unresolved_threads": current_unresolved,
         "outdated_unresolved_threads": outdated_unresolved,
         "auto_resolvable_outdated_threads": auto_resolvable_outdated,
+        "committable_suggestion_threads": _count_committable_suggestion_threads(pr),
         "merge_blocked": merge_blocked,
         "blocking_reasons": blocking_reasons,
         "grace_elapsed": grace_elapsed,
@@ -1052,6 +1078,9 @@ def apply_review_state_projection(
         DEFAULT_REVIEW_REQUIRED_LABEL: bool(state["blocking_review"]),
         DEFAULT_THREAD_LABEL: int(state["current_unresolved_threads"]) > 0,
         DEFAULT_REVIEW_PENDING_LABEL: bool(state["should_have_agent_review_pending"]),
+        # Propose-only (#3): flag PRs that have committable suggestions ready to apply.
+        # Add/remove is idempotent, so no comment spam; the signal mirrors to Linear.
+        DEFAULT_SUGGESTIONS_LABEL: int(state.get("committable_suggestion_threads") or 0) > 0,
     }
 
     for label, wanted in desired_labels.items():
