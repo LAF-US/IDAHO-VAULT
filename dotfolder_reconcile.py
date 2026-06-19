@@ -25,6 +25,7 @@ from typing import Any
 REPO_ROOT = Path(__file__).resolve().parent
 CACHE_PATH = REPO_ROOT / "!-dotfolder-hashcache.json"
 STUB_TEXT = "¿!?"
+MAX_CONTENT_SCAN_BYTES = 1024 * 1024
 SECRET_PATTERNS = tuple(
     re.compile(pattern)
     for pattern in (
@@ -66,13 +67,26 @@ CONTENT_SECRET_PATTERNS = {
         """
     ),
 }
+RUNTIME_DOTFOLDERS = {
+    ".cache",
+    ".ipynb_checkpoints",
+    ".ollama",
+    ".pycache",
+    ".pytest_cache",
+    ".ruff_cache",
+    ".uv-cache",
+    ".venv",
+    ".vscode",
+}
 RUNTIME_PATH_PATTERNS = tuple(
     re.compile(pattern, re.IGNORECASE)
     for pattern in (
         r"(^|/)(cache|\.cache|tmp|\.tmp|log|logs|__pycache__)(/|$)",
+        r"(^|/)(multi|node_modules|opencode)(/|$)",
+        r"(^|/)(models/blobs|extensions|site-packages)(/|$)",
         r"(^|/)(sessions|archived_sessions|usage-data|computer-use|computer-use-turn-ended)(/|$)",
         r"(^|/)(plugins|shell-snapshots|worktrees|\.remote-plugin-install-staging)(/|$)",
-        r"\.(sqlite|sqlite-shm|sqlite-wal|log|tmp)$",
+        r"\.(sqlite|sqlite-shm|sqlite-wal|log|tmp|zip|exe|dll|pyd|bin)$",
     )
 )
 SKIP_DOTDIRS = {
@@ -217,9 +231,14 @@ def is_allowed_content_match(rule: str, line: str) -> bool:
 
 def content_secret_rules(path: Path) -> tuple[str, ...]:
     try:
-        text = path.read_bytes().decode("utf-8", errors="replace")
+        if path.stat().st_size > MAX_CONTENT_SCAN_BYTES:
+            return ()
+        data = path.read_bytes()
     except OSError:
         return ("unreadable",)
+    if b"\x00" in data:
+        return ()
+    text = data.decode("utf-8", errors="replace")
 
     rules: set[str] = set()
     for line in text.splitlines():
@@ -231,10 +250,15 @@ def content_secret_rules(path: Path) -> tuple[str, ...]:
 
 def is_runtime_path(rel_path: str) -> bool:
     normalized = rel_path.replace("\\", "/")
-    return any(pattern.search(normalized) for pattern in RUNTIME_PATH_PATTERNS)
+    dotfolder = normalized.split("/", 1)[0]
+    return dotfolder in RUNTIME_DOTFOLDERS or any(
+        pattern.search(normalized) for pattern in RUNTIME_PATH_PATTERNS
+    )
 
 
-def is_publishable_path(dotfolder: str, rel_path: str) -> bool:
+def is_publishable_path(dotfolder: str, rel_path: str, *, size: int) -> bool:
+    if size > MAX_CONTENT_SCAN_BYTES:
+        return False
     parts = rel_path.replace("\\", "/").split("/")
     name = parts[-1]
     if len(parts) > 1:
@@ -267,6 +291,24 @@ def git_ignored_paths(vault_root: Path, rel_paths: list[str]) -> set[str]:
     return set(result.stdout.splitlines())
 
 
+def iter_containment_tree(vault_root: Path, root: Path) -> list[tuple[str, Path]]:
+    entries: list[tuple[str, Path]] = []
+    try:
+        children = sorted(root.iterdir(), key=lambda item: item.name.lower())
+    except OSError:
+        return entries
+    for child in children:
+        rel = child.relative_to(vault_root).as_posix()
+        if child.is_dir():
+            if is_runtime_path(rel):
+                entries.append((rel, child))
+            else:
+                entries.extend(iter_containment_tree(vault_root, child))
+        elif child.is_file():
+            entries.append((rel, child))
+    return entries
+
+
 def iter_dotfolder_files(vault_root: Path, *, include_ignored: bool) -> list[tuple[str, Path]]:
     files: list[tuple[str, Path]] = []
     if not vault_root.exists():
@@ -276,11 +318,10 @@ def iter_dotfolder_files(vault_root: Path, *, include_ignored: bool) -> list[tup
             continue
         if dotfolder.name in {".git", ".pytest_cache"}:
             continue
-        for path in dotfolder.rglob("*"):
-            if not path.is_file():
-                continue
-            rel = path.relative_to(vault_root).as_posix()
-            files.append((rel, path))
+        if dotfolder.name in RUNTIME_DOTFOLDERS:
+            files.append((dotfolder.name, dotfolder))
+            continue
+        files.extend(iter_containment_tree(vault_root, dotfolder))
     if include_ignored:
         return files
     ignored = git_ignored_paths(vault_root, [rel for rel, _path in files])
@@ -292,21 +333,26 @@ def classify_containment_file(vault_root: Path, rel_path: str, path: Path) -> Co
     dotfolder = normalized.split("/", 1)[0]
     inner = normalized.split("/", 1)[1] if "/" in normalized else ""
     path_rules = ("secret_path",) if is_secret_path(normalized) or is_secret_path(inner) else ()
-    content_rules = content_secret_rules(path)
-    rules = tuple(sorted(set(path_rules + content_rules)))
     try:
         size = path.stat().st_size
     except OSError:
         size = 0
 
-    if rules:
+    if path_rules:
         classification = "secret"
+        rules = path_rules
     elif is_runtime_path(normalized):
         classification = "runtime/cache"
-    elif is_publishable_path(dotfolder, inner):
-        classification = "publishable"
+        rules = ()
     else:
-        classification = "private-preserve"
+        content_rules = content_secret_rules(path)
+        rules = tuple(sorted(set(content_rules)))
+        if rules:
+            classification = "secret"
+        elif is_publishable_path(dotfolder, inner, size=size):
+            classification = "publishable"
+        else:
+            classification = "private-preserve"
 
     return ContainmentEntry(
         path=normalized,
@@ -360,7 +406,7 @@ def print_containment_report(report: ContainmentReport, *, quiet: bool) -> None:
     print("DOTFOLDER CONTAINMENT REPORT")
     print(f"  VAULT:           {report.vault_root}")
     print(f"  INCLUDE IGNORED: {str(report.include_ignored).lower()}")
-    print(f"  FILES:           {summary['total']}")
+    print(f"  ENTRIES:         {summary['total']}")
     print("-- BY CLASS --")
     for classification, count in sorted(summary["by_class"].items()):
         print(f"  {classification}: {count}")
