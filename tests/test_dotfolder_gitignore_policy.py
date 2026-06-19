@@ -23,9 +23,11 @@ def test_salvaged_secret_and_runtime_variants_are_ignored() -> None:
     paths = [
         ".claude/.credentials (2).json",
         ".claude/settings.local (2).json",
+        ".claude/settings.local (12).json",
         ".claude/settings (3).json",
         ".claude/history.jsonl.home",
         ".codex/history.jsonl.home",
+        ".codex/history (12).jsonl",
         ".codex/auth.json.home.abcdef123456",
         ".codex/config.toml.home.c9ed9573416d",
         ".codex/.app-server-state-reconciled-v1",
@@ -36,6 +38,7 @@ def test_salvaged_secret_and_runtime_variants_are_ignored() -> None:
         ".config/scoop/config (2).json",
         ".ollama/id_ed25519 (2)",
         ".sbx-denybin/scp (2).cmd",
+        ".sbx-denybin/scp (12).cmd",
         ".ssh/1Password/config",
         ".ssh/allowed_signers (2)",
         ".ssh/claude_code_signing (2)",
@@ -43,7 +46,8 @@ def test_salvaged_secret_and_runtime_variants_are_ignored() -> None:
         ".local/state/tool/state.db",
     ]
 
-    assert all(is_ignored(path) for path in paths)
+    not_ignored = [path for path in paths if not is_ignored(path)]
+    assert not not_ignored, f"Expected ignored, but visible: {not_ignored}"
 
 
 def test_publishable_anchor_names_remain_visible() -> None:
@@ -53,4 +57,5 @@ def test_publishable_anchor_names_remain_visible() -> None:
         ".config/CONFIG.md",
     ]
 
-    assert not any(is_ignored(path) for path in paths)
+    ignored = [path for path in paths if is_ignored(path)]
+    assert not ignored, f"Expected visible anchors, but ignored: {ignored}"
