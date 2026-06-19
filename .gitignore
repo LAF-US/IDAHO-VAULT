@@ -194,19 +194,19 @@ logs/
 # them explicitly.
 .claude/*.home*
 .claude/**/*.home*
-.claude/* ([0-9])*
-.claude/**/* ([0-9])*
+.claude/* ([0-9]*)*
+.claude/**/* ([0-9]*)*
 .codex/*.home*
 .codex/**/*.home*
-.codex/* ([0-9])*
-.codex/**/* ([0-9])*
+.codex/* ([0-9]*)*
+.codex/**/* ([0-9]*)*
 .codex/*.bak-*
 .codex/**/*.bak-*
 .codex/.app-server-state*
 .codex/sqlite/
 .config/scoop/config*.json*
 .ollama/id_ed25519*
-.sbx-denybin/* ([0-9])*
+.sbx-denybin/* ([0-9]*)*
 
 
 # SSH identity material — keys, known hosts, signing config, auth state.
