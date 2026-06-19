@@ -126,7 +126,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         state = review_feedback_loop.evaluate_review_state(
             _pr(
                 created_at=now - timedelta(minutes=45),
-                labels=("risk/low", "agent-review-pending"),
+                labels=("risk/low", review_feedback_loop.DEFAULT_REVIEW_PENDING_LABEL),
                 body="## Real description\n\nSummary of changes.",
             ),
             now=now,
@@ -440,20 +440,43 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             )
 
     def test_maybe_arm_arms_eligible_non_protected_pr(self) -> None:
+        # On a successful arm, the merge/auto label is applied via a CHECKED gh call so the
+        # write can fail-close (see test below). Mock _run for that label edit.
         with mock.patch.object(
             review_feedback_loop, "_pr_touches_protected_path", return_value=False
         ), mock.patch.object(
             review_feedback_loop, "_arm_auto_merge", return_value=(True, None)
         ) as arm, mock.patch.object(
-            review_feedback_loop, "_edit_label"
-        ) as edit_label:
+            review_feedback_loop, "_run"
+        ) as run:
             result = review_feedback_loop._maybe_arm_auto_merge(
                 "o", "r", 5, {"eligible_for_auto_merge": True}
             )
         self.assertTrue(result["armed"])
         arm.assert_called_once_with(5)
         # The arm tags merge/auto so the disable path can later un-arm if it becomes blocked.
-        edit_label.assert_called_once_with(5, add=review_feedback_loop.DEFAULT_AUTO_MERGE_LABEL)
+        run.assert_called_once_with(
+            ["gh", "pr", "edit", "5", "--add-label", review_feedback_loop.DEFAULT_AUTO_MERGE_LABEL]
+        )
+
+    def test_maybe_arm_fails_closed_when_label_write_fails(self) -> None:
+        # If arming succeeds but the merge/auto label write fails, disable the auto-merge we
+        # just enabled and report failure — never leave an armed PR the disable path can't track.
+        with mock.patch.object(
+            review_feedback_loop, "_pr_touches_protected_path", return_value=False
+        ), mock.patch.object(
+            review_feedback_loop, "_arm_auto_merge", return_value=(True, None)
+        ), mock.patch.object(
+            review_feedback_loop, "_run", side_effect=RuntimeError("label write failed")
+        ), mock.patch.object(
+            review_feedback_loop, "_disable_auto_merge"
+        ) as disable:
+            result = review_feedback_loop._maybe_arm_auto_merge(
+                "o", "r", 6, {"eligible_for_auto_merge": True}
+            )
+        self.assertFalse(result["armed"])
+        self.assertIn("label write failed", result["reason"])
+        disable.assert_called_once_with(6)
 
     def test_maybe_arm_refuses_protected_path(self) -> None:
         with mock.patch.object(
@@ -505,7 +528,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         ), mock.patch.object(
             review_feedback_loop, "_pr_touches_protected_path", return_value=False
         ), mock.patch.object(
-            review_feedback_loop, "_edit_label"
+            review_feedback_loop, "_run"
         ), mock.patch.object(
             review_feedback_loop, "_arm_auto_merge", return_value=(True, None)
         ) as arm, contextlib.redirect_stdout(io.StringIO()):
