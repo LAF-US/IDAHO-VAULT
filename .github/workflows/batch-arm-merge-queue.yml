@@ -62,7 +62,7 @@ jobs:
           label: ${{ inputs.label }}
         run: |
           PRS=$(gh pr list --repo "$GITHUB_REPOSITORY" --state open \
-            --json number,isDraft,labels --limit 100 \
+            --json number,isDraft,labels --limit 1000 \
             | jq -r '.[] | select(.isDraft == false) | select((env.label == "" or (.labels[]?.name | ascii_downcase) == (env.label | ascii_downcase))) | .number')
           {
             echo "prs<<EOF"
@@ -89,7 +89,7 @@ jobs:
           # workflow PR that arms fine is never mis-bucketed.
           is_wf_perm_failure() {
             local err_file="$1" pr_num="$2"
-            grep -qiE 'workflow.*permission' "$err_file" && return 0
+            grep -qiE 'workflow.*(permission|scope)' "$err_file" && return 0
             gh pr view "$pr_num" --repo "$repo" --json files \
               -q '.files[].path' 2>/dev/null | grep -q '^\.github/workflows/' && return 0
             return 1
