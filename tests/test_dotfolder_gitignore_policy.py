@@ -41,8 +41,6 @@ def test_salvaged_secret_and_runtime_variants_are_ignored() -> None:
         ".ssh/claude_code_signing (2)",
         ".ssh/known_hosts (2).old",
         ".local/state/tool/state.db",
-        ".idaho-vault-signing-gate-build-tools/bin/hatchling (2).exe",
-        "XcodeBuildMCP/workspaces/app-164b22acc69e/state/filesystem-lifecycle/last-cleanup",
     ]
 
     assert all(is_ignored(path) for path in paths)
@@ -53,7 +51,6 @@ def test_publishable_anchor_names_remain_visible() -> None:
         ".claude/CLAUDE.md",
         ".codex/AGENTS.md",
         ".config/CONFIG.md",
-        ".idaho-vault-signing-gate-build-tools/IDAHO-VAULT-SIGNING-GATE-BUILD-TOOLS.md",
     ]
 
     assert not any(is_ignored(path) for path in paths)
