@@ -643,6 +643,85 @@ def test_unreadable_file_is_reported_without_aborting_dotfolder(tmp_path: Path) 
     assert result.unavailable_paths == 1
     assert result.conflicts == 0
 
+
+def test_scanner_unavailable_file_does_not_abort_dotfolder(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    home_root = tmp_path / "home"
+    vault_root = tmp_path / "vault"
+    home_dir = home_root / ".demo"
+    home_dir.mkdir(parents=True)
+    vault_root.mkdir()
+    (home_dir / "available.txt").write_text("home", encoding="utf-8")
+    locked_path = home_dir / "locked.db"
+    locked_path.write_text("locked", encoding="utf-8")
+    original_is_file = Path.is_file
+
+    def flaky_is_file(path: Path) -> bool:
+        if path == locked_path:
+            raise PermissionError("locked")
+        return original_is_file(path)
+
+    monkeypatch.setattr(Path, "is_file", flaky_is_file)
+
+    result = reconciler.reconcile_dot(
+        "demo",
+        home_root=home_root,
+        vault_root=vault_root,
+        cache=reconciler.HashCache(tmp_path / "cache.json", disabled=True),
+        apply=False,
+        snapshot=True,
+        prune=False,
+        stub=False,
+        force=True,
+        quiet=True,
+    )
+
+    assert result.error is None
+    assert result.files_home == 1
+    assert result.unique_to_home == 1
+    assert result.unavailable_paths == 1
+
+
+def test_retire_delete_unavailable_identical_file_does_not_abort(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    home_root = tmp_path / "home"
+    vault_root = tmp_path / "vault"
+    home_dir = home_root / ".demo"
+    vault_dir = vault_root / ".demo"
+    home_dir.mkdir(parents=True)
+    vault_dir.mkdir(parents=True)
+    home_file = home_dir / "config.txt"
+    home_file.write_text("same", encoding="utf-8")
+    (vault_dir / "config.txt").write_text("same", encoding="utf-8")
+    original_unlink = Path.unlink
+
+    def flaky_unlink(path: Path, *args: object, **kwargs: object) -> None:
+        if path == home_file:
+            raise PermissionError("locked")
+        original_unlink(path, *args, **kwargs)
+
+    monkeypatch.setattr(Path, "unlink", flaky_unlink)
+
+    result = reconciler.reconcile_dot(
+        "demo",
+        home_root=home_root,
+        vault_root=vault_root,
+        cache=reconciler.HashCache(tmp_path / "cache.json", disabled=True),
+        apply=True,
+        snapshot=False,
+        prune=False,
+        stub=False,
+        force=True,
+        quiet=True,
+    )
+
+    assert result.error is None
+    assert result.identical == 1
+    assert result.unavailable_paths == 1
+    assert home_file.exists()
+
 def test_retire_dry_run_prints_explicit_retire_hint(
     tmp_path: Path, capsys: pytest.CaptureFixture[str]
 ) -> None:
