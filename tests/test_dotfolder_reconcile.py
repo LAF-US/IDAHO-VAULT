@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import hashlib
 import json
 import subprocess
 import importlib.util
@@ -208,6 +209,118 @@ def test_retire_apply_deletes_identical_home_files(tmp_path: Path) -> None:
     assert not (home_dir / "config.txt").exists()
 
 
+def test_snapshot_apply_copies_sensitive_unique_home_file(tmp_path: Path) -> None:
+    home_root = tmp_path / "home"
+    vault_root = tmp_path / "vault"
+    home_dir = home_root / ".demo"
+    home_dir.mkdir(parents=True)
+    vault_root.mkdir()
+    (home_dir / "auth.json").write_text('{"token":"home"}', encoding="utf-8")
+
+    assert reconciler.main(
+        [
+            "demo",
+            "--snapshot",
+            "--apply",
+            "--home-root",
+            str(home_root),
+            "--vault-root",
+            str(vault_root),
+            "--cache-path",
+            str(tmp_path / "cache.json"),
+            "--quiet",
+        ]
+    ) == 0
+
+    assert (vault_root / ".demo" / "auth.json").read_text(encoding="utf-8") == '{"token":"home"}'
+    assert (home_dir / "auth.json").exists()
+
+
+def test_snapshot_apply_preserves_sensitive_conflict_as_home_copy(tmp_path: Path) -> None:
+    home_root = tmp_path / "home"
+    vault_root = tmp_path / "vault"
+    home_dir = home_root / ".demo"
+    vault_dir = vault_root / ".demo"
+    home_dir.mkdir(parents=True)
+    vault_dir.mkdir(parents=True)
+    (home_dir / "auth.json").write_text("home", encoding="utf-8")
+    (vault_dir / "auth.json").write_text("vault", encoding="utf-8")
+
+    assert reconciler.main(
+        [
+            "demo",
+            "--snapshot",
+            "--apply",
+            "--home-root",
+            str(home_root),
+            "--vault-root",
+            str(vault_root),
+            "--cache-path",
+            str(tmp_path / "cache.json"),
+            "--quiet",
+        ]
+    ) == 0
+
+    assert (vault_dir / "auth.json").read_text(encoding="utf-8") == "vault"
+    assert (vault_dir / "auth.json.home").read_text(encoding="utf-8") == "home"
+    assert (home_dir / "auth.json").exists()
+
+
+def test_retire_apply_moves_sensitive_unique_home_file_into_vault(tmp_path: Path) -> None:
+    home_root = tmp_path / "home"
+    vault_root = tmp_path / "vault"
+    home_dir = home_root / ".demo"
+    home_dir.mkdir(parents=True)
+    vault_root.mkdir()
+    (home_dir / "auth.json").write_text("home", encoding="utf-8")
+
+    assert reconciler.main(
+        [
+            "demo",
+            "--retire",
+            "--apply",
+            "--home-root",
+            str(home_root),
+            "--vault-root",
+            str(vault_root),
+            "--cache-path",
+            str(tmp_path / "cache.json"),
+            "--quiet",
+        ]
+    ) == 0
+
+    assert (vault_root / ".demo" / "auth.json").read_text(encoding="utf-8") == "home"
+    assert not (home_dir / "auth.json").exists()
+
+
+def test_retire_apply_deletes_identical_sensitive_home_file(tmp_path: Path) -> None:
+    home_root = tmp_path / "home"
+    vault_root = tmp_path / "vault"
+    home_dir = home_root / ".demo"
+    vault_dir = vault_root / ".demo"
+    home_dir.mkdir(parents=True)
+    vault_dir.mkdir(parents=True)
+    (home_dir / "auth.json").write_text("same", encoding="utf-8")
+    (vault_dir / "auth.json").write_text("same", encoding="utf-8")
+
+    assert reconciler.main(
+        [
+            "demo",
+            "--retire",
+            "--apply",
+            "--home-root",
+            str(home_root),
+            "--vault-root",
+            str(vault_root),
+            "--cache-path",
+            str(tmp_path / "cache.json"),
+            "--quiet",
+        ]
+    ) == 0
+
+    assert (vault_dir / "auth.json").read_text(encoding="utf-8") == "same"
+    assert not (home_dir / "auth.json").exists()
+
 def test_snapshot_apply_is_idempotent(tmp_path: Path) -> None:
     home_root = tmp_path / "home"
     vault_root = tmp_path / "vault"
@@ -265,16 +378,47 @@ def test_retire_conflict_is_idempotent(tmp_path: Path) -> None:
     assert not (home_dir / "config.txt").exists()
 
 
-def test_non_identical_existing_preservation_target_is_refused(tmp_path: Path) -> None:
+
+def test_dry_run_snapshot_runs_containment_without_writing_manifest_or_cache(
+    tmp_path: Path, capsys: pytest.CaptureFixture[str]
+) -> None:
     home_root = tmp_path / "home"
     vault_root = tmp_path / "vault"
     home_dir = home_root / ".demo"
     vault_dir = vault_root / ".demo"
     home_dir.mkdir(parents=True)
     vault_dir.mkdir(parents=True)
+    (home_dir / "config.txt").write_text("same", encoding="utf-8")
+    (vault_dir / "config.txt").write_text("same", encoding="utf-8")
+    cache_path = tmp_path / "cache.json"
+    manifest_path = reconciler.default_containment_manifest_path(vault_root)
+
+    assert reconciler.main(
+        [
+            "demo",
+            "--snapshot",
+            "--home-root",
+            str(home_root),
+            "--vault-root",
+            str(vault_root),
+            "--cache-path",
+            str(cache_path),
+            "--quiet",
+        ]
+    ) == 0
+
+    assert "DOTFOLDER CONTAINMENT REPORT" in capsys.readouterr().out
+    assert not cache_path.exists()
+    assert not manifest_path.exists()
+
+
+def test_snapshot_apply_writes_default_containment_manifest(tmp_path: Path) -> None:
+    home_root = tmp_path / "home"
+    vault_root = tmp_path / "vault"
+    home_dir = home_root / ".demo"
+    home_dir.mkdir(parents=True)
+    vault_root.mkdir()
     (home_dir / "config.txt").write_text("home", encoding="utf-8")
-    (vault_dir / "config.txt").write_text("vault", encoding="utf-8")
-    (vault_dir / "config.txt.home").write_text("different", encoding="utf-8")
 
     assert reconciler.main(
         [
@@ -289,12 +433,294 @@ def test_non_identical_existing_preservation_target_is_refused(tmp_path: Path) -
             str(tmp_path / "cache.json"),
             "--quiet",
         ]
-    ) == 1
+    ) == 0
+
+    manifest_path = reconciler.default_containment_manifest_path(vault_root)
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    assert "generated_at" not in manifest
+    paths = {entry["path"] for entry in manifest["entries"]}
+    assert ".demo/config.txt" in paths
+    assert ".tmp" not in paths
+    config_entry = next(entry for entry in manifest["entries"] if entry["path"] == ".demo/config.txt")
+    assert config_entry == {
+        "path": ".demo/config.txt",
+        "dotfolder": ".demo",
+        "classification": "publishable",
+        "rules": [],
+        "size": 4,
+    }
+
+
+def test_snapshot_apply_containment_manifest_is_idempotent(tmp_path: Path) -> None:
+    home_root = tmp_path / "home"
+    vault_root = tmp_path / "vault"
+    home_dir = home_root / ".demo"
+    home_dir.mkdir(parents=True)
+    vault_root.mkdir()
+    (home_dir / "config.txt").write_text("home", encoding="utf-8")
+    args = [
+        "demo",
+        "--snapshot",
+        "--apply",
+        "--home-root",
+        str(home_root),
+        "--vault-root",
+        str(vault_root),
+        "--cache-path",
+        str(tmp_path / "cache.json"),
+        "--quiet",
+    ]
+
+    assert reconciler.main(args) == 0
+    manifest_path = reconciler.default_containment_manifest_path(vault_root)
+    first_manifest = manifest_path.read_text(encoding="utf-8")
+    assert reconciler.main(args) == 0
+
+    assert manifest_path.read_text(encoding="utf-8") == first_manifest
+
+
+def test_retire_apply_writes_default_containment_manifest_after_cleanup(tmp_path: Path) -> None:
+    home_root = tmp_path / "home"
+    vault_root = tmp_path / "vault"
+    home_dir = home_root / ".demo"
+    home_dir.mkdir(parents=True)
+    vault_root.mkdir()
+    (home_dir / "config.txt").write_text("home", encoding="utf-8")
+
+    assert reconciler.main(
+        [
+            "demo",
+            "--retire",
+            "--apply",
+            "--home-root",
+            str(home_root),
+            "--vault-root",
+            str(vault_root),
+            "--cache-path",
+            str(tmp_path / "cache.json"),
+            "--quiet",
+        ]
+    ) == 0
+
+    manifest = json.loads(
+        reconciler.default_containment_manifest_path(vault_root).read_text(encoding="utf-8")
+    )
+    assert ".demo/config.txt" in {entry["path"] for entry in manifest["entries"]}
+    assert not (home_dir / "config.txt").exists()
+
+
+def test_no_containment_suppresses_automatic_report_and_manifest(
+    tmp_path: Path, capsys: pytest.CaptureFixture[str]
+) -> None:
+    home_root = tmp_path / "home"
+    vault_root = tmp_path / "vault"
+    home_dir = home_root / ".demo"
+    home_dir.mkdir(parents=True)
+    vault_root.mkdir()
+    (home_dir / "config.txt").write_text("home", encoding="utf-8")
+
+    assert reconciler.main(
+        [
+            "demo",
+            "--snapshot",
+            "--apply",
+            "--no-containment",
+            "--home-root",
+            str(home_root),
+            "--vault-root",
+            str(vault_root),
+            "--cache-path",
+            str(tmp_path / "cache.json"),
+            "--quiet",
+        ]
+    ) == 0
+
+    assert "DOTFOLDER CONTAINMENT REPORT" not in capsys.readouterr().out
+    assert not reconciler.default_containment_manifest_path(vault_root).exists()
+
+
+def test_snapshot_apply_salvages_secret_and_reports_without_failing(
+    tmp_path: Path, capsys: pytest.CaptureFixture[str]
+) -> None:
+    home_root = tmp_path / "home"
+    vault_root = tmp_path / "vault"
+    home_dir = home_root / ".demo"
+    home_dir.mkdir(parents=True)
+    vault_root.mkdir()
+    secret_value = "ghp_" + "a" * 36
+    (home_dir / "auth.json").write_text(f"token={secret_value}\n", encoding="utf-8")
+
+    assert reconciler.main(
+        [
+            "demo",
+            "--snapshot",
+            "--apply",
+            "--home-root",
+            str(home_root),
+            "--vault-root",
+            str(vault_root),
+            "--cache-path",
+            str(tmp_path / "cache.json"),
+            "--quiet",
+        ]
+    ) == 0
+
+    assert (vault_root / ".demo" / "auth.json").exists()
+    assert "[WARN] containment found 1 secret-classified file(s)" in capsys.readouterr().out
+    manifest_text = reconciler.default_containment_manifest_path(vault_root).read_text(
+        encoding="utf-8"
+    )
+    assert secret_value not in manifest_text
+    manifest = json.loads(manifest_text)
+    assert "generated_at" not in manifest
+    assert manifest["summary"]["by_class"]["secret"] == 1
+    assert ".demo/auth.json" in {entry["path"] for entry in manifest["entries"]}
+
+def test_non_identical_existing_preservation_target_gets_hash_suffix(tmp_path: Path) -> None:
+    home_root = tmp_path / "home"
+    vault_root = tmp_path / "vault"
+    home_dir = home_root / ".demo"
+    vault_dir = vault_root / ".demo"
+    home_dir.mkdir(parents=True)
+    vault_dir.mkdir(parents=True)
+    (home_dir / "config.txt").write_text("home", encoding="utf-8")
+    (vault_dir / "config.txt").write_text("vault", encoding="utf-8")
+    (vault_dir / "config.txt.home").write_text("different", encoding="utf-8")
+    suffix = hashlib.sha256(b"home").hexdigest()[:12]
+
+    args = [
+        "demo",
+        "--snapshot",
+        "--apply",
+        "--home-root",
+        str(home_root),
+        "--vault-root",
+        str(vault_root),
+        "--cache-path",
+        str(tmp_path / "cache.json"),
+        "--quiet",
+    ]
+
+    assert reconciler.main(args) == 0
+    assert reconciler.main(args) == 0
 
     assert (vault_dir / "config.txt").read_text(encoding="utf-8") == "vault"
     assert (vault_dir / "config.txt.home").read_text(encoding="utf-8") == "different"
+    assert (vault_dir / f"config.txt.home.{suffix}").read_text(encoding="utf-8") == "home"
     assert (home_dir / "config.txt").read_text(encoding="utf-8") == "home"
 
+
+def test_unreadable_file_is_reported_without_aborting_dotfolder(tmp_path: Path) -> None:
+    home_root = tmp_path / "home"
+    vault_root = tmp_path / "vault"
+    home_dir = home_root / ".demo"
+    vault_dir = vault_root / ".demo"
+    home_dir.mkdir(parents=True)
+    vault_dir.mkdir(parents=True)
+    (home_dir / "lock").write_text("aaaa", encoding="utf-8")
+    (vault_dir / "lock").write_text("bbbb", encoding="utf-8")
+
+    class UnreadableCache(reconciler.HashCache):
+        def sha256(self, path: Path, key: str) -> str:
+            if key == "home/demo/lock":
+                raise PermissionError("locked")
+            return super().sha256(path, key)
+
+    result = reconciler.reconcile_dot(
+        "demo",
+        home_root=home_root,
+        vault_root=vault_root,
+        cache=UnreadableCache(tmp_path / "cache.json", disabled=True),
+        apply=False,
+        snapshot=True,
+        prune=False,
+        stub=False,
+        force=True,
+        quiet=True,
+    )
+
+    assert result.error is None
+    assert result.unavailable_paths == 1
+    assert result.conflicts == 0
+
+
+def test_scanner_unavailable_file_does_not_abort_dotfolder(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    home_root = tmp_path / "home"
+    vault_root = tmp_path / "vault"
+    home_dir = home_root / ".demo"
+    home_dir.mkdir(parents=True)
+    vault_root.mkdir()
+    (home_dir / "available.txt").write_text("home", encoding="utf-8")
+    locked_path = home_dir / "locked.db"
+    locked_path.write_text("locked", encoding="utf-8")
+    original_is_file = Path.is_file
+
+    def flaky_is_file(path: Path) -> bool:
+        if path == locked_path:
+            raise PermissionError("locked")
+        return original_is_file(path)
+
+    monkeypatch.setattr(Path, "is_file", flaky_is_file)
+
+    result = reconciler.reconcile_dot(
+        "demo",
+        home_root=home_root,
+        vault_root=vault_root,
+        cache=reconciler.HashCache(tmp_path / "cache.json", disabled=True),
+        apply=False,
+        snapshot=True,
+        prune=False,
+        stub=False,
+        force=True,
+        quiet=True,
+    )
+
+    assert result.error is None
+    assert result.files_home == 1
+    assert result.unique_to_home == 1
+    assert result.unavailable_paths == 1
+
+
+def test_retire_delete_unavailable_identical_file_does_not_abort(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    home_root = tmp_path / "home"
+    vault_root = tmp_path / "vault"
+    home_dir = home_root / ".demo"
+    vault_dir = vault_root / ".demo"
+    home_dir.mkdir(parents=True)
+    vault_dir.mkdir(parents=True)
+    home_file = home_dir / "config.txt"
+    home_file.write_text("same", encoding="utf-8")
+    (vault_dir / "config.txt").write_text("same", encoding="utf-8")
+    original_unlink = Path.unlink
+
+    def flaky_unlink(path: Path, *args: object, **kwargs: object) -> None:
+        if path == home_file:
+            raise PermissionError("locked")
+        original_unlink(path, *args, **kwargs)
+
+    monkeypatch.setattr(Path, "unlink", flaky_unlink)
+
+    result = reconciler.reconcile_dot(
+        "demo",
+        home_root=home_root,
+        vault_root=vault_root,
+        cache=reconciler.HashCache(tmp_path / "cache.json", disabled=True),
+        apply=True,
+        snapshot=False,
+        prune=False,
+        stub=False,
+        force=True,
+        quiet=True,
+    )
+
+    assert result.error is None
+    assert result.identical == 1
+    assert result.unavailable_paths == 1
+    assert home_file.exists()
 
 def test_retire_dry_run_prints_explicit_retire_hint(
     tmp_path: Path, capsys: pytest.CaptureFixture[str]
@@ -543,6 +969,7 @@ def test_containment_manifest_is_sanitized(tmp_path: Path) -> None:
     manifest_text = manifest_path.read_text(encoding="utf-8")
     assert secret_value not in manifest_text
     manifest = json.loads(manifest_text)
+    assert "generated_at" not in manifest
     assert manifest["summary"]["by_class"]["secret"] == 1
     assert set(manifest["entries"][0]["rules"]) == {"generic_secret_assignment", "github_token"}
 
