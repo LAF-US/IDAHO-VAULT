@@ -52,13 +52,14 @@ def normalize(name: str) -> str:
 def _declared_names(pyproject: dict, table: str) -> set[str]:
     """Normalized leading names from a PEP 621 requirement list.
 
-    `table` is 'project.dependencies' or a 'dependency-groups' group. Version
-    specifiers, extras, and markers are stripped — only the distribution name
-    is kept.
+    `table` is the literal string ``"project.dependencies"`` (PEP 621 runtime
+    deps) or the name of a group under ``[dependency-groups]`` (e.g. ``"dev"``).
+    Version specifiers, extras, and markers are stripped — only the distribution
+    name is kept.
     """
     if table == "project.dependencies":
         specs = pyproject.get("project", {}).get("dependencies", [])
-    else:  # dependency-groups.<name>
+    else:  # a [dependency-groups] group name, e.g. "dev"
         specs = pyproject.get("dependency-groups", {}).get(table, [])
     names: set[str] = set()
     for spec in specs:
@@ -90,7 +91,7 @@ def build_snapshot(
 
     lock_version = lock.get("version")
     if lock_version != 1:
-        raise SystemExit(
+        raise ValueError(
             f"Unsupported uv.lock format version {lock_version!r} (expected 1). "
             "Update this script after reviewing the new schema."
         )
@@ -186,9 +187,13 @@ def main() -> int:
             file=sys.stderr,
         )
         return 1
-    snapshot = build_snapshot(
-        "uv.lock", "pyproject.toml", repo=repo, sha=sha, ref=ref, run_id=run_id
-    )
+    try:
+        snapshot = build_snapshot(
+            "uv.lock", "pyproject.toml", repo=repo, sha=sha, ref=ref, run_id=run_id
+        )
+    except (ValueError, OSError, tomllib.TOMLDecodeError) as exc:
+        print(f"::error::{exc}", file=sys.stderr)
+        return 1
     json.dump(snapshot, sys.stdout, indent=2)
     sys.stdout.write("\n")
     return 0
