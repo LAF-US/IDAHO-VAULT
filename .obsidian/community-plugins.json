@@ -42,5 +42,7 @@
   "quickadd",
   "obsidian-tidy-footnotes",
   "time-ruler",
-  "translate"
+  "translate",
+  "backlink-cache",
+  "orbit-graph-view"
 ]

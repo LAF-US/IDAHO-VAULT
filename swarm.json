@@ -556,10 +556,10 @@
     "authority_boundary": "Obsidian config files define interface state; the plugin registry document defines doctrine and promotion rules.",
     "promotion_gate": "No plugin-state change counts as legitimate until !/PLUGIN-REGISTRY.md is updated.",
     "counts": {
-      "enabled_community": 44,
+      "enabled_community": 46,
       "enabled_core": 31,
-      "dormant_installed": 32,
-      "installed_total": 76,
+      "dormant_installed": 35,
+      "installed_total": 81,
       "enabled_missing_manifest": 0
     },
     "entrypoints": [
@@ -664,10 +664,10 @@
     "source_of_truth": "tracked_obsidian_config",
     "generated_by": ".github/scripts/sync_obsidian_plugin_registry.py",
     "current_state": {
-      "enabled_community_count": 44,
+      "enabled_community_count": 46,
       "enabled_core_count": 31,
-      "installed_community_count": 76,
-      "dormant_installed_count": 32,
+      "installed_community_count": 81,
+      "dormant_installed_count": 35,
       "enabled_missing_manifest_count": 0
     },
     "enabled_community_plugins": [
@@ -714,7 +714,9 @@
       "quickadd",
       "obsidian-tidy-footnotes",
       "time-ruler",
-      "translate"
+      "translate",
+      "backlink-cache",
+      "orbit-graph-view"
     ],
     "enabled_core_plugins": [
       "file-explorer",
@@ -761,6 +763,24 @@
         "name": "AI for Templater",
         "version": "1.0.20",
         "path": ".obsidian/plugins/ai-templater/manifest.json"
+      },
+      {
+        "id": "at-people",
+        "name": "At People",
+        "version": "1.6.0",
+        "path": ".obsidian/plugins/at-people/manifest.json"
+      },
+      {
+        "id": "auto-keyword-linker",
+        "name": "Auto Keyword Linker",
+        "version": "3.3.0",
+        "path": ".obsidian/plugins/auto-keyword-linker/manifest.json"
+      },
+      {
+        "id": "backlink-cache",
+        "name": "Backlink Cache",
+        "version": "2.12.7",
+        "path": ".obsidian/plugins/backlink-cache/manifest.json"
       },
       {
         "id": "beautiful-contact-cards",
@@ -1087,6 +1107,12 @@
         "path": ".obsidian/plugins/obsidianclaw/manifest.json"
       },
       {
+        "id": "orbit-graph-view",
+        "name": "Orbit",
+        "version": "1.0.1",
+        "path": ".obsidian/plugins/orbit-graph-view/manifest.json"
+      },
+      {
         "id": "oz-image-plugin",
         "name": "Image in Editor",
         "version": "2.2.6",
@@ -1121,6 +1147,12 @@
         "name": "Recent Files",
         "version": "1.7.6",
         "path": ".obsidian/plugins/recent-files-obsidian/manifest.json"
+      },
+      {
+        "id": "review-obsidian",
+        "name": "Review",
+        "version": "1.6.6",
+        "path": ".obsidian/plugins/review-obsidian/manifest.json"
       },
       {
         "id": "roygbiv-day-accent",
@@ -1210,6 +1242,8 @@
     "dormant_installed_plugins": [
       "ai-image-analyzer",
       "ai-templater",
+      "at-people",
+      "auto-keyword-linker",
       "beautiful-contact-cards",
       "bmo-chatbot",
       "calendarium",
@@ -1237,6 +1271,7 @@
       "obsidian42-brat",
       "openclaw",
       "pdf-plus",
+      "review-obsidian",
       "table-editor-obsidian",
       "taskbone-ocr-plugin",
       "text-extractor"
