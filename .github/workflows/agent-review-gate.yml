@@ -22,6 +22,17 @@ permissions:
 jobs:
   gate:
     runs-on: ubuntu-latest
+    permissions:
+      # contents: write is required because reconcile-open-prs now resolves outdated bot
+      # threads through the WITNESSED helper (attest_and_resolve), and resolveReviewThread
+      # is gated on Contents: Read & Write (same family as #546). The prior legacy resolver
+      # also called resolveReviewThread, but under contents:read it silently FORBIDDEN-
+      # skipped, so reconcile never actually resolved; the witness path posts an attestation
+      # reply *then* resolves, so without write it would re-post the attestation every run.
+      # Job-level block replaces the workflow floor, so all scopes the job uses are listed.
+      contents: write
+      pull-requests: write
+      issues: write
     steps:
       - name: Checkout trusted workflow surfaces
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
