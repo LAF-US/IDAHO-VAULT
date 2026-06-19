@@ -335,21 +335,40 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             grace_minutes=30,
         )
 
+        # The helper returns a mix of applied/not-applied results so we can assert sync_pr
+        # counts only the applied ones (resolved_count) — and, because that count is > 0,
+        # re-fetches the PR to recompute state against the now-cleared threads.
+        outdated_results = [
+            {"thread_id": "A", "eligible": True, "applied": True, "reason": ""},
+            {"thread_id": "B", "eligible": False, "applied": False, "reason": "blocked"},
+            {"thread_id": "C", "eligible": True, "applied": True, "reason": ""},
+        ]
+
         with mock.patch.object(review_feedback_loop, "ensure_labels"), mock.patch.object(
             review_feedback_loop,
             "_fetch_pr",
             return_value=_pr(labels=(review_feedback_loop.DEFAULT_PENDING_LABEL,)),
+        ) as fetch_pr, mock.patch.object(
+            review_feedback_loop, "_viewer_login", return_value="github-actions[bot]"
         ), mock.patch.object(
             review_feedback_loop,
-            "_resolve_outdated_advisory_threads",
-            return_value=0,
-        ), mock.patch.object(
+            "_resolve_outdated_resolvable_threads",
+            return_value=outdated_results,
+        ) as resolve_outdated, mock.patch.object(
             review_feedback_loop, "apply_review_state_projection", return_value=[]
         ) as projection:
             result = review_feedback_loop.sync_pr(args)
 
         self.assertEqual(result, 0)
         self.assertTrue(projection.call_args.kwargs["clear_apply_pending"])
+        # Applies on the event path; the looker is left None so the helper resolves it
+        # lazily (only if there's a stale thread) — no eager _viewer_login() round-trip.
+        resolve_outdated.assert_called_once()
+        self.assertIsNone(resolve_outdated.call_args.args[1])
+        self.assertEqual(resolve_outdated.call_args.kwargs["apply"], True)
+        # Two of three results applied -> resolved_count == 2 (> 0) -> PR re-fetched once
+        # more (initial fetch + the post-resolve re-fetch).
+        self.assertEqual(fetch_pr.call_count, 2)
 
     def test_enable_auto_merge_refuses_to_arm_when_derived_state_is_blocking(self) -> None:
         args = SimpleNamespace(
@@ -522,7 +541,9 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         with mock.patch.object(review_feedback_loop, "ensure_labels"), mock.patch.object(
             review_feedback_loop, "_fetch_pr", return_value=ready
         ), mock.patch.object(
-            review_feedback_loop, "_resolve_outdated_advisory_threads", return_value=0
+            review_feedback_loop, "_viewer_login", return_value="github-actions[bot]"
+        ), mock.patch.object(
+            review_feedback_loop, "_resolve_outdated_resolvable_threads", return_value=[]
         ), mock.patch.object(
             review_feedback_loop, "apply_review_state_projection", return_value=[]
         ), mock.patch.object(
@@ -535,6 +556,77 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             result = review_feedback_loop.sync_pr(args)
         self.assertEqual(result, 0)
         arm.assert_called_once_with(200)
+
+    def test_resolve_outdated_resolvable_attests_only_outdated_bot_threads(self) -> None:
+        # The event-driven outdated-resolve: attest-resolves the OUTDATED bot thread and
+        # leaves the current (substantive needs-fix) one alone — a caught error to fix,
+        # not to dispose of.
+        outdated = _thread(authors=("coderabbitai",), author_type="Bot", outdated=True)
+        outdated["id"] = "OUT"
+        current = _thread(authors=("chatgpt-codex-connector",), author_type="Bot", outdated=False)
+        current["id"] = "CUR"
+        pr = _pr(threads=(outdated, current))
+        seen: list[str] = []
+
+        def fake_attest(pr_arg, thread_arg, looker, *a, **k):
+            seen.append(thread_arg["id"])
+            return {"thread_id": thread_arg["id"], "eligible": True, "applied": True, "reason": ""}
+
+        with mock.patch.object(review_feedback_loop, "attest_and_resolve", side_effect=fake_attest):
+            results = review_feedback_loop._resolve_outdated_resolvable_threads(
+                pr, "github-actions[bot]", apply=True
+            )
+        self.assertEqual(seen, ["OUT"])  # only the outdated bot thread is touched
+        self.assertEqual(sum(1 for r in results if r["applied"]), 1)
+
+    def test_resolve_outdated_resolvable_records_failure_when_attest_raises(self) -> None:
+        # A transient gh/GraphQL failure on one thread must not abort the pass: the thread
+        # gets a non-applied result whose reason carries the error, so the JSON report (and
+        # the stderr log) stay diagnosable.
+        outdated = _thread(authors=("coderabbitai",), author_type="Bot", outdated=True)
+        outdated["id"] = "OUT"
+        pr = _pr(threads=(outdated,))
+
+        with mock.patch.object(
+            review_feedback_loop,
+            "attest_and_resolve",
+            side_effect=RuntimeError("boom: attest failed"),
+        ), contextlib.redirect_stderr(io.StringIO()):
+            results = review_feedback_loop._resolve_outdated_resolvable_threads(
+                pr, "github-actions[bot]", apply=True
+            )
+
+        self.assertEqual(len(results), 1)
+        result = results[0]
+        self.assertEqual(result["thread_id"], "OUT")
+        self.assertFalse(result["eligible"])
+        self.assertFalse(result["applied"])
+        self.assertIn("boom: attest failed", result["reason"])
+
+    def test_resolve_outdated_resolvable_resolves_looker_lazily(self) -> None:
+        # When looker is omitted, _viewer_login() is paid for ONLY if there's a stale
+        # thread to clear — a push with nothing outdated costs no extra round-trip.
+        current = _thread(authors=("coderabbitai",), author_type="Bot", outdated=False)
+        pr_no_work = _pr(threads=(current,))
+        with mock.patch.object(
+            review_feedback_loop, "_viewer_login", return_value="github-actions[bot]"
+        ) as viewer_login, mock.patch.object(
+            review_feedback_loop, "attest_and_resolve"
+        ):
+            review_feedback_loop._resolve_outdated_resolvable_threads(pr_no_work)
+        viewer_login.assert_not_called()
+
+        outdated = _thread(authors=("coderabbitai",), author_type="Bot", outdated=True)
+        pr_with_work = _pr(threads=(outdated,))
+        with mock.patch.object(
+            review_feedback_loop, "_viewer_login", return_value="github-actions[bot]"
+        ) as viewer_login, mock.patch.object(
+            review_feedback_loop, "attest_and_resolve"
+        ) as attest:
+            review_feedback_loop._resolve_outdated_resolvable_threads(pr_with_work)
+        viewer_login.assert_called_once()
+        # The lazily-resolved actor is the witness passed to attest_and_resolve.
+        self.assertEqual(attest.call_args.args[2], "github-actions[bot]")
 
     def test_reconcile_open_prs_promotes_and_arms_eligible_low_risk_pr(self) -> None:
         # Reversal (2026-06-17): a low-risk, grace-elapsed, unblocked, non-protected-path PR
@@ -559,9 +651,11 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             "_fetch_pr",
             side_effect=[ready_pr],
         ), mock.patch.object(
+            review_feedback_loop, "_viewer_login", return_value="github-actions[bot]"
+        ), mock.patch.object(
             review_feedback_loop,
-            "_resolve_outdated_advisory_threads",
-            return_value=0,
+            "_resolve_outdated_resolvable_threads",
+            return_value=[],
         ), mock.patch.object(
             review_feedback_loop, "apply_review_state_projection", return_value=[]
         ), mock.patch.object(
@@ -600,7 +694,9 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         ), mock.patch.object(
             review_feedback_loop, "_fetch_pr", side_effect=[ready_pr]
         ), mock.patch.object(
-            review_feedback_loop, "_resolve_outdated_advisory_threads", return_value=0
+            review_feedback_loop, "_viewer_login", return_value="github-actions[bot]"
+        ), mock.patch.object(
+            review_feedback_loop, "_resolve_outdated_resolvable_threads", return_value=[]
         ), mock.patch.object(
             review_feedback_loop, "apply_review_state_projection", return_value=[]
         ), mock.patch.object(
@@ -629,9 +725,11 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             "_fetch_pr",
             side_effect=[ready_pr],
         ), mock.patch.object(
+            review_feedback_loop, "_viewer_login", return_value="github-actions[bot]"
+        ), mock.patch.object(
             review_feedback_loop,
-            "_resolve_outdated_advisory_threads",
-            return_value=0,
+            "_resolve_outdated_resolvable_threads",
+            return_value=[],
         ), mock.patch.object(
             review_feedback_loop,
             "evaluate_review_state",
@@ -666,6 +764,43 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             report["evaluated"][0]["auto_merge_arm_error"],
             "GitHub Actions is not authorized to enable auto-merge on the protected base branch.",
         )
+
+    def test_reconcile_resolves_outdated_via_witnessed_helper(self) -> None:
+        # The scheduled reconcile lane no longer resolves blindly: it routes through the
+        # WITNESSED, disposition-driven helper (the same one the event path uses), passing
+        # the looker it resolved once for the batch, and counts only the applied results
+        # into resolved_outdated_threads.
+        pr88 = _pr(number=88, created_at=datetime(2026, 4, 16, 1, 0, tzinfo=timezone.utc))
+        outdated_results = [
+            {"thread_id": "A", "eligible": True, "applied": True, "reason": ""},
+            {"thread_id": "B", "eligible": False, "applied": False, "reason": "blocked"},
+        ]
+
+        with mock.patch.object(review_feedback_loop, "ensure_labels"), mock.patch.object(
+            review_feedback_loop, "_list_open_pr_numbers", return_value=[88]
+        ), mock.patch.object(
+            review_feedback_loop, "_fetch_pr", return_value=pr88
+        ), mock.patch.object(
+            review_feedback_loop, "_viewer_login", return_value="github-actions[bot]"
+        ), mock.patch.object(
+            review_feedback_loop,
+            "_resolve_outdated_resolvable_threads",
+            return_value=outdated_results,
+        ) as resolve_outdated, mock.patch.object(
+            review_feedback_loop, "apply_review_state_projection", return_value=[]
+        ), mock.patch.object(
+            review_feedback_loop, "_pr_touches_protected_path", return_value=False
+        ):
+            report = review_feedback_loop._build_reconciliation_report(
+                "LAF-US", "IDAHO-VAULT", grace_minutes=30
+            )
+
+        # Witnessed by the actor resolved once for the batch walk, applying.
+        resolve_outdated.assert_called_once()
+        self.assertEqual(resolve_outdated.call_args.args[1], "github-actions[bot]")
+        self.assertEqual(resolve_outdated.call_args.kwargs["apply"], True)
+        # Only the one applied result is counted (not the blocked one).
+        self.assertEqual(report["resolved_outdated_threads"], 1)
 
     def test_thread_has_attested_look_requires_self_attested_marker(self) -> None:
         # Valid: structured marker whose by= matches the comment's own author.
@@ -1278,6 +1413,58 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         report = review_feedback_loop._classify_pr_for_looker(pr, now=now)
         self.assertEqual(sorted(t["resolution"] for t in report["threads"]), ["apply-suggestion", "needs-fix"])
         self.assertEqual(report["resolution_counts"], {"apply-suggestion": 1, "needs-fix": 1})
+
+    # ----- Propose-only surfacing of committable suggestions (#3, 2026-06-19) -----
+
+    def test_committable_suggestion_count_counts_only_ready_apply_suggestion_threads(self) -> None:
+        # One ready suggestion (counted), one resolved suggestion (skipped), one prose
+        # needs-fix (not a suggestion), one outdated suggestion (outdated-resolvable, not
+        # apply-suggestion). Only the first counts.
+        pr = _pr(
+            threads=(
+                _thread(authors=("coderabbitai",), author_type="Bot", body=self.SUGGESTION_BODY),
+                _thread(
+                    authors=("coderabbitai",), author_type="Bot",
+                    body=self.SUGGESTION_BODY, resolved=True,
+                ),
+                _thread(authors=("chatgpt-codex-connector",), author_type="Bot", body="prose"),
+                _thread(
+                    authors=("coderabbitai",), author_type="Bot",
+                    outdated=True, body=self.SUGGESTION_BODY,
+                ),
+            )
+        )
+        self.assertEqual(review_feedback_loop._count_committable_suggestion_threads(pr), 1)
+
+    def test_state_surfaces_committable_suggestion_count(self) -> None:
+        state = review_feedback_loop.evaluate_review_state(
+            _pr(threads=(_thread(authors=("coderabbitai",), author_type="Bot", body=self.SUGGESTION_BODY),))
+        )
+        self.assertEqual(state["committable_suggestion_threads"], 1)
+
+    def test_projection_adds_suggestions_ready_label_when_present(self) -> None:
+        # Propose-only: a PR with a committable suggestion is flagged review/suggestions-ready
+        # (the engine surfaces it; it does NOT commit the diff).
+        state = review_feedback_loop.evaluate_review_state(
+            _pr(threads=(_thread(authors=("coderabbitai",), author_type="Bot", body=self.SUGGESTION_BODY),))
+        )
+        with mock.patch.object(review_feedback_loop, "_edit_label") as edit_label, \
+                mock.patch.object(review_feedback_loop, "_disable_auto_merge"):
+            actions = review_feedback_loop.apply_review_state_projection(17, state)
+        self.assertIn(f"add:{review_feedback_loop.DEFAULT_SUGGESTIONS_LABEL}", actions)
+        edit_label.assert_any_call(17, add=review_feedback_loop.DEFAULT_SUGGESTIONS_LABEL)
+
+    def test_projection_removes_suggestions_ready_label_when_absent(self) -> None:
+        # The label clears (idempotently) once no committable suggestions remain — e.g.
+        # after they were applied and the threads resolved.
+        state = review_feedback_loop.evaluate_review_state(
+            _pr(labels=(review_feedback_loop.DEFAULT_SUGGESTIONS_LABEL,))
+        )
+        with mock.patch.object(review_feedback_loop, "_edit_label") as edit_label, \
+                mock.patch.object(review_feedback_loop, "_disable_auto_merge"):
+            actions = review_feedback_loop.apply_review_state_projection(17, state)
+        self.assertIn(f"remove:{review_feedback_loop.DEFAULT_SUGGESTIONS_LABEL}", actions)
+        edit_label.assert_any_call(17, remove=review_feedback_loop.DEFAULT_SUGGESTIONS_LABEL)
 
     # ----- render_looker_worklist: read-only durable-issue triage surface -----
 
