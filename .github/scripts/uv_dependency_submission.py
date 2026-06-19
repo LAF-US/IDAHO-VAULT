@@ -1,0 +1,172 @@
+#!/usr/bin/env python3
+"""Build a GitHub Dependency-Submission snapshot from uv.lock.
+
+WHY THIS EXISTS
+---------------
+This project is resolved by **uv**, which writes a *universal* lock (`uv.lock`,
+exported to `requirements.txt`) carrying Python-version-forked pins — the same
+package can appear at two versions, e.g. `numpy==2.2.6 ; python<3.11` AND
+`numpy==2.4.6 ; python>=3.11` (same for `onnxruntime`, `sympy`, …).
+
+GitHub's built-in **Automatic Dependency Submission (Python)** re-resolves the
+project from scratch with its `component-detection` engine (pip's resolver
+underneath). That resolver cannot represent uv's forked universal pins, so it
+dies with `pip ... DistributionNotFound: ResolutionImpossible` on every run —
+the constantly-red `submit-pypi` / "Automatic Dependency Submission (Python)"
+check. (Parked in review_feedback_loop.KNOWN_NOISE_CHECKS.)
+
+This script reads the already-resolved `uv.lock` and emits a snapshot for
+GitHub's Dependency Submission API directly — no re-resolution, so it succeeds.
+The companion workflow (`.github/workflows/dependency-submission-uv.yml`)
+submits the JSON via `gh api`. Replace the built-in feature by setting
+Settings -> Code security -> "Automatic dependency submission" to **Disabled**.
+
+DESIGN
+------
+- stdlib only (`tomllib` needs Python >= 3.11; the workflow pins setup-python 3.12).
+- `build_snapshot(...)` is pure and offline (no network), so it is unit-tested
+  against the real lockfile in tests/test_uv_dependency_submission.py.
+- The `resolved` map is keyed by **purl** (`pkg:pypi/<name>@<version>`), NOT by
+  name, so packages locked at multiple versions (numpy, onnxruntime) are both
+  kept rather than colliding.
+"""
+
+from __future__ import annotations
+
+import json
+import os
+import re
+import sys
+import tomllib
+from datetime import datetime, timezone
+
+# Local-project source markers in uv.lock — these are the repo itself, not a
+# PyPI distribution, and must not be submitted as dependencies.
+_LOCAL_SOURCE_KEYS = ("editable", "virtual", "directory")
+
+_NAME_TOKEN = re.compile(r"[A-Za-z0-9][A-Za-z0-9._-]*")
+_PEP503 = re.compile(r"[-_.]+")
+
+
+def normalize(name: str) -> str:
+    """PEP 503 normalization: lowercase, runs of -_. collapse to a single -."""
+    return _PEP503.sub("-", name).lower()
+
+
+def _declared_names(pyproject: dict, table: str) -> set[str]:
+    """Normalized leading names from a PEP 621 requirement list.
+
+    `table` is 'project.dependencies' or a 'dependency-groups' group. Version
+    specifiers, extras, and markers are stripped — only the distribution name
+    is kept.
+    """
+    if table == "project.dependencies":
+        specs = pyproject.get("project", {}).get("dependencies", [])
+    else:  # dependency-groups.<name>
+        specs = pyproject.get("dependency-groups", {}).get(table, [])
+    names: set[str] = set()
+    for spec in specs:
+        if not isinstance(spec, str):
+            continue  # skip {include-group = ...} and other non-string entries
+        m = _NAME_TOKEN.match(spec.strip())
+        if m:
+            names.add(normalize(m.group(0)))
+    return names
+
+
+def build_snapshot(
+    lock_path: str,
+    pyproject_path: str,
+    *,
+    repo: str,
+    sha: str,
+    ref: str,
+    run_id: str,
+    scanned: str | None = None,
+) -> dict:
+    """Parse uv.lock + pyproject.toml into a GitHub dependency snapshot dict.
+
+    Pure and offline — no network, no env reads. Submission is the workflow's
+    job (`gh api .../dependency-graph/snapshots`).
+    """
+    with open(lock_path, "rb") as fh:
+        lock = tomllib.load(fh)
+
+    lock_version = lock.get("version")
+    if lock_version != 1:
+        raise SystemExit(
+            f"Unsupported uv.lock format version {lock_version!r} (expected 1). "
+            "Update this script after reviewing the new schema."
+        )
+
+    with open(pyproject_path, "rb") as fh:
+        pyproject = tomllib.load(fh)
+
+    direct = _declared_names(pyproject, "project.dependencies")
+    dev = _declared_names(pyproject, "dev")
+
+    resolved: dict[str, dict] = {}
+    for pkg in lock.get("package", []):
+        source = pkg.get("source", {})
+        if any(key in source for key in _LOCAL_SOURCE_KEYS):
+            continue  # the repo itself, not a dependency
+        name = pkg.get("name")
+        version = pkg.get("version")
+        if not name or not version:
+            continue  # non-versioned (git/url/local) source — skip, can't purl it
+        norm = normalize(name)
+        purl = f"pkg:pypi/{norm}@{version}"
+        if norm in direct:
+            relationship = "direct"
+        else:
+            relationship = "indirect"
+        scope = "development" if (norm in dev and norm not in direct) else "runtime"
+        # Keyed by purl so multi-version packages (numpy, onnxruntime) coexist.
+        resolved[purl] = {
+            "package_url": purl,
+            "relationship": relationship,
+            "scope": scope,
+        }
+
+    return {
+        "version": 0,
+        "job": {"id": str(run_id), "correlator": "dependency-submission-uv"},
+        "sha": sha,
+        "ref": ref,
+        "detector": {
+            "name": "idaho-vault-uv-dependency-submission",
+            "version": "1.0.0",
+            "url": f"https://github.com/{repo}",
+        },
+        "scanned": scanned or datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "manifests": {
+            "uv.lock": {
+                "name": "uv.lock",
+                "file": {"source_location": lock_path},
+                "resolved": resolved,
+            }
+        },
+    }
+
+
+def main() -> int:
+    repo = os.environ.get("GITHUB_REPOSITORY", "")
+    sha = os.environ.get("GITHUB_SHA", "")
+    ref = os.environ.get("GITHUB_REF", "")
+    run_id = os.environ.get("GITHUB_RUN_ID", "0")
+    if not (repo and sha and ref):
+        print(
+            "::error::GITHUB_REPOSITORY, GITHUB_SHA and GITHUB_REF must be set.",
+            file=sys.stderr,
+        )
+        return 1
+    snapshot = build_snapshot(
+        "uv.lock", "pyproject.toml", repo=repo, sha=sha, ref=ref, run_id=run_id
+    )
+    json.dump(snapshot, sys.stdout, indent=2)
+    sys.stdout.write("\n")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
