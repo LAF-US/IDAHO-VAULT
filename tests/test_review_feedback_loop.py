@@ -651,9 +651,11 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             "_fetch_pr",
             side_effect=[ready_pr],
         ), mock.patch.object(
+            review_feedback_loop, "_viewer_login", return_value="github-actions[bot]"
+        ), mock.patch.object(
             review_feedback_loop,
-            "_resolve_outdated_advisory_threads",
-            return_value=0,
+            "_resolve_outdated_resolvable_threads",
+            return_value=[],
         ), mock.patch.object(
             review_feedback_loop, "apply_review_state_projection", return_value=[]
         ), mock.patch.object(
@@ -692,7 +694,9 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         ), mock.patch.object(
             review_feedback_loop, "_fetch_pr", side_effect=[ready_pr]
         ), mock.patch.object(
-            review_feedback_loop, "_resolve_outdated_advisory_threads", return_value=0
+            review_feedback_loop, "_viewer_login", return_value="github-actions[bot]"
+        ), mock.patch.object(
+            review_feedback_loop, "_resolve_outdated_resolvable_threads", return_value=[]
         ), mock.patch.object(
             review_feedback_loop, "apply_review_state_projection", return_value=[]
         ), mock.patch.object(
@@ -721,9 +725,11 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             "_fetch_pr",
             side_effect=[ready_pr],
         ), mock.patch.object(
+            review_feedback_loop, "_viewer_login", return_value="github-actions[bot]"
+        ), mock.patch.object(
             review_feedback_loop,
-            "_resolve_outdated_advisory_threads",
-            return_value=0,
+            "_resolve_outdated_resolvable_threads",
+            return_value=[],
         ), mock.patch.object(
             review_feedback_loop,
             "evaluate_review_state",
@@ -758,6 +764,43 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             report["evaluated"][0]["auto_merge_arm_error"],
             "GitHub Actions is not authorized to enable auto-merge on the protected base branch.",
         )
+
+    def test_reconcile_resolves_outdated_via_witnessed_helper(self) -> None:
+        # The scheduled reconcile lane no longer resolves blindly: it routes through the
+        # WITNESSED, disposition-driven helper (the same one the event path uses), passing
+        # the looker it resolved once for the batch, and counts only the applied results
+        # into resolved_outdated_threads.
+        pr88 = _pr(number=88, created_at=datetime(2026, 4, 16, 1, 0, tzinfo=timezone.utc))
+        outdated_results = [
+            {"thread_id": "A", "eligible": True, "applied": True, "reason": ""},
+            {"thread_id": "B", "eligible": False, "applied": False, "reason": "blocked"},
+        ]
+
+        with mock.patch.object(review_feedback_loop, "ensure_labels"), mock.patch.object(
+            review_feedback_loop, "_list_open_pr_numbers", return_value=[88]
+        ), mock.patch.object(
+            review_feedback_loop, "_fetch_pr", return_value=pr88
+        ), mock.patch.object(
+            review_feedback_loop, "_viewer_login", return_value="github-actions[bot]"
+        ), mock.patch.object(
+            review_feedback_loop,
+            "_resolve_outdated_resolvable_threads",
+            return_value=outdated_results,
+        ) as resolve_outdated, mock.patch.object(
+            review_feedback_loop, "apply_review_state_projection", return_value=[]
+        ), mock.patch.object(
+            review_feedback_loop, "_pr_touches_protected_path", return_value=False
+        ):
+            report = review_feedback_loop._build_reconciliation_report(
+                "LAF-US", "IDAHO-VAULT", grace_minutes=30
+            )
+
+        # Witnessed by the actor resolved once for the batch walk, applying.
+        resolve_outdated.assert_called_once()
+        self.assertEqual(resolve_outdated.call_args.args[1], "github-actions[bot]")
+        self.assertEqual(resolve_outdated.call_args.kwargs["apply"], True)
+        # Only the one applied result is counted (not the blocked one).
+        self.assertEqual(report["resolved_outdated_threads"], 1)
 
     def test_thread_has_attested_look_requires_self_attested_marker(self) -> None:
         # Valid: structured marker whose by= matches the comment's own author.
