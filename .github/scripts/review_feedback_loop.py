@@ -310,11 +310,6 @@ def _resolve_thread(thread_id: str) -> None:
     _graphql(mutation, threadId=thread_id)
 
 
-def _is_forbidden_integration_error(exc: RuntimeError) -> bool:
-    text = str(exc)
-    return "FORBIDDEN" in text or "Resource not accessible by integration" in text
-
-
 # Look-then-resolve design (#399): nothing is dismissed or resolved until a
 # looker (agent or human) has looked. A looker records the look as an in-thread
 # attestation comment of this canonical shape:
@@ -1090,36 +1085,6 @@ def apply_review_state_projection(
     return actions
 
 
-def _resolve_outdated_advisory_threads(pr: dict, auto_resolve_reviewers: set[str]) -> int:
-    """LEGACY allowlist resolver: resolves outdated threads from `auto_resolve_reviewers`
-    only, WITHOUT a witnessed attestation. Superseded on the event path (`sync-pr`) and the
-    backlog walk (`engage-outdated`) by `_resolve_outdated_resolvable_threads`, which is
-    disposition-driven (any bot reviewer) and WITNESSED (attest_and_resolve), per #399.
-    Still wired into `_build_reconciliation_report` (the scheduled reconcile lane) only;
-    unifying that path onto the witnessed helper is a tracked follow-up. Do not add new
-    callers — use `_resolve_outdated_resolvable_threads` instead.
-    """
-    resolved_count = 0
-    for thread in (pr.get("reviewThreads") or {}).get("nodes") or []:
-        if thread.get("isResolved") or not thread.get("isOutdated"):
-            continue
-
-        authors = _thread_authors(thread)
-        if authors and authors.issubset(auto_resolve_reviewers):
-            try:
-                _resolve_thread(thread["id"])
-                resolved_count += 1
-            except RuntimeError as exc:
-                if _is_forbidden_integration_error(exc):
-                    print(
-                        f"Skipping auto-resolve for thread {thread['id']}: token lacks permission.",
-                        file=sys.stderr,
-                    )
-                else:
-                    raise
-    return resolved_count
-
-
 def _resolve_outdated_resolvable_threads(
     pr: dict, looker: str | None = None, *, apply: bool = True
 ) -> list[dict[str, object]]:
@@ -1218,10 +1183,16 @@ def _build_reconciliation_report(
     rearmed: list[int] = []
     auto_merge_authorization_blocked: list[int] = []
     total_resolved_outdated_threads = 0
+    # Resolve the looker once for the whole batch walk (the engage-outdated pattern): the
+    # witness names whoever actually ran the scheduled reconcile — the authenticated actor.
+    # This is the same WITNESSED, disposition-driven resolver the event path uses, so the
+    # reconcile lane is no longer the one place that resolved threads blindly (#399).
+    looker = _viewer_login()
 
     for pr_number in _list_open_pr_numbers(owner, repo):
         pr = _fetch_pr(owner, repo, pr_number)
-        resolved_count = _resolve_outdated_advisory_threads(pr, auto_resolve_reviewers or set())
+        outdated_results = _resolve_outdated_resolvable_threads(pr, looker, apply=True)
+        resolved_count = sum(1 for r in outdated_results if r.get("applied"))
         total_resolved_outdated_threads += resolved_count
         if resolved_count:
             pr = _fetch_pr(owner, repo, pr_number)
