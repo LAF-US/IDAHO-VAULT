@@ -1436,6 +1436,17 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         )
         self.assertEqual(review_feedback_loop._count_committable_suggestion_threads(pr), 1)
 
+    def test_committable_suggestion_count_zero_on_missing_or_empty_threads(self) -> None:
+        # Lock in the zero-case: no threads, a PR object with no reviewThreads key at all,
+        # and an explicit empty nodes list all return 0 without raising (defensive against
+        # partial PR objects / schema drift).
+        self.assertEqual(review_feedback_loop._count_committable_suggestion_threads(_pr(threads=())), 0)
+        self.assertEqual(review_feedback_loop._count_committable_suggestion_threads({}), 0)
+        self.assertEqual(
+            review_feedback_loop._count_committable_suggestion_threads({"reviewThreads": {"nodes": []}}),
+            0,
+        )
+
     def test_state_surfaces_committable_suggestion_count(self) -> None:
         state = review_feedback_loop.evaluate_review_state(
             _pr(threads=(_thread(authors=("coderabbitai",), author_type="Bot", body=self.SUGGESTION_BODY),))
