@@ -373,6 +373,64 @@ def test_containment_classifies_runtime_cache(tmp_path: Path) -> None:
     assert report.entries[0].classification == "runtime/cache"
 
 
+def test_containment_runtime_dotfolder_root_is_summarized(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    vault_root = tmp_path / "vault"
+    runtime_path = vault_root / ".vscode" / "extensions" / "plugin" / "state.txt"
+    runtime_path.parent.mkdir(parents=True)
+    runtime_path.write_text("token = ghp_" + ("a" * 36), encoding="utf-8")
+
+    def fail_content_scan(path: Path) -> tuple[str, ...]:
+        raise AssertionError(f"runtime root should not be content-scanned: {path}")
+
+    monkeypatch.setattr(reconciler, "content_secret_rules", fail_content_scan)
+
+    report = reconciler.build_containment_report(vault_root, include_ignored=True)
+
+    assert len(report.entries) == 1
+    assert report.entries[0].path == ".vscode"
+    assert report.entries[0].classification == "runtime/cache"
+
+def test_containment_runtime_subtree_is_summarized(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    vault_root = tmp_path / "vault"
+    runtime_path = vault_root / ".codex" / "plugins" / "plugin" / "state.txt"
+    runtime_path.parent.mkdir(parents=True)
+    runtime_path.write_text("token = ghp_" + ("a" * 36), encoding="utf-8")
+
+    def fail_content_scan(path: Path) -> tuple[str, ...]:
+        raise AssertionError(f"runtime subtree should not be content-scanned: {path}")
+
+    monkeypatch.setattr(reconciler, "content_secret_rules", fail_content_scan)
+
+    report = reconciler.build_containment_report(vault_root, include_ignored=True)
+
+    assert len(report.entries) == 1
+    assert report.entries[0].path == ".codex/plugins"
+    assert report.entries[0].classification == "runtime/cache"
+
+
+def test_containment_runtime_root_skips_content_scan(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    vault_root = tmp_path / "vault"
+    runtime_path = vault_root / ".ollama" / "models" / "blobs" / "sha256-deadbeef"
+    runtime_path.parent.mkdir(parents=True)
+    runtime_path.write_bytes(b"token = ghp_" + (b"a" * 36))
+
+    def fail_content_scan(path: Path) -> tuple[str, ...]:
+        raise AssertionError(f"runtime path should not be content-scanned: {path}")
+
+    monkeypatch.setattr(reconciler, "content_secret_rules", fail_content_scan)
+
+    report = reconciler.build_containment_report(vault_root, include_ignored=True)
+
+    assert len(report.entries) == 1
+    assert report.entries[0].classification == "runtime/cache"
+    assert report.entries[0].rules == ()
+
 def test_containment_classifies_publishable_anchor(tmp_path: Path) -> None:
     vault_root = tmp_path / "vault"
     anchor_path = vault_root / ".codex" / "CODEX.md"
@@ -394,6 +452,18 @@ def test_containment_classifies_private_preserve(tmp_path: Path) -> None:
 
     assert report.entries[0].classification == "private-preserve"
 
+
+def test_containment_large_private_file_is_not_content_scanned(tmp_path: Path) -> None:
+    vault_root = tmp_path / "vault"
+    large_path = vault_root / ".config" / "large-state.txt"
+    large_path.parent.mkdir(parents=True)
+    large_path.write_bytes(b"x" * (reconciler.MAX_CONTENT_SCAN_BYTES + 1))
+
+    report = reconciler.build_containment_report(vault_root, include_ignored=True)
+
+    assert len(report.entries) == 1
+    assert report.entries[0].classification == "private-preserve"
+    assert report.entries[0].rules == ()
 
 def test_containment_report_writes_nothing_without_manifest(
     tmp_path: Path, capsys: pytest.CaptureFixture[str]
