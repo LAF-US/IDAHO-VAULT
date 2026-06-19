@@ -26,14 +26,8 @@ def insert_links(content: str, links: str) -> str:
     if frontmatter_match:
         end = frontmatter_match.end()
         after_fm = content[end:]
-        return content[:end] + '
-
-' + links + '
-
-' + after_fm.lstrip()
-    return links + '
-
-' + content
+        return content[:end] + '\n\n' + links + '\n\n' + after_fm.lstrip()
+    return links + '\n\n' + content
 
 
 def process_file(path: Path) -> bool:
@@ -60,5 +54,4 @@ def process_file(path: Path) -> bool:
 
 if __name__ == '__main__':
     processed = sum(1 for f in Path('.').rglob('*.md') if process_file(f))
-    print(f'
-Done. Updated: {processed} files')
+    print(f'\nDone. Updated: {processed} files')
