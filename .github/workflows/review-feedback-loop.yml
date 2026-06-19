@@ -44,7 +44,8 @@ jobs:
       # contents: write is required to enable merge-queue auto-merge
       # (enablePullRequestAutoMerge is gated like resolveReviewThread, #546). sync-pr
       # arms eligible, non-protected-path PRs (#521/#527 reversal, 2026-06-17). Scoped
-      # to this job only; the other jobs keep the workflow's read-only default.
+      # scoped to this job only; outside this job, `contents` stays read-only at the
+      # workflow level (the other jobs do not get write access).
       contents: write
       pull-requests: write
     steps:
