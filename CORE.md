@@ -19,3 +19,6 @@ Tree noun anchor for the Touchstone Tree.
 
 In `!README.md`, CORE names the MIND branch containing CONSTITUTION, CHARTER,
 and CORPUS.
+
+
+[[C]][[O]][[R]][[E]]
