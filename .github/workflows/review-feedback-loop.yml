@@ -40,6 +40,14 @@ jobs:
   sweep-review-threads:
     if: github.event_name == 'pull_request_target'
     runs-on: ubuntu-latest
+    permissions:
+      # contents: write is required to enable merge-queue auto-merge
+      # (enablePullRequestAutoMerge is gated like resolveReviewThread, #546). sync-pr
+      # arms eligible, non-protected-path PRs (#521/#527 reversal, 2026-06-17). Scoped
+      # scoped to this job only; outside this job, `contents` stays read-only at the
+      # workflow level (the other jobs do not get write access).
+      contents: write
+      pull-requests: write
     steps:
       - name: Checkout trusted workflow surfaces
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
