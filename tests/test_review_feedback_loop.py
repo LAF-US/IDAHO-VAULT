@@ -1414,6 +1414,58 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertEqual(sorted(t["resolution"] for t in report["threads"]), ["apply-suggestion", "needs-fix"])
         self.assertEqual(report["resolution_counts"], {"apply-suggestion": 1, "needs-fix": 1})
 
+    # ----- Propose-only surfacing of committable suggestions (#3, 2026-06-19) -----
+
+    def test_committable_suggestion_count_counts_only_ready_apply_suggestion_threads(self) -> None:
+        # One ready suggestion (counted), one resolved suggestion (skipped), one prose
+        # needs-fix (not a suggestion), one outdated suggestion (outdated-resolvable, not
+        # apply-suggestion). Only the first counts.
+        pr = _pr(
+            threads=(
+                _thread(authors=("coderabbitai",), author_type="Bot", body=self.SUGGESTION_BODY),
+                _thread(
+                    authors=("coderabbitai",), author_type="Bot",
+                    body=self.SUGGESTION_BODY, resolved=True,
+                ),
+                _thread(authors=("chatgpt-codex-connector",), author_type="Bot", body="prose"),
+                _thread(
+                    authors=("coderabbitai",), author_type="Bot",
+                    outdated=True, body=self.SUGGESTION_BODY,
+                ),
+            )
+        )
+        self.assertEqual(review_feedback_loop._count_committable_suggestion_threads(pr), 1)
+
+    def test_state_surfaces_committable_suggestion_count(self) -> None:
+        state = review_feedback_loop.evaluate_review_state(
+            _pr(threads=(_thread(authors=("coderabbitai",), author_type="Bot", body=self.SUGGESTION_BODY),))
+        )
+        self.assertEqual(state["committable_suggestion_threads"], 1)
+
+    def test_projection_adds_suggestions_ready_label_when_present(self) -> None:
+        # Propose-only: a PR with a committable suggestion is flagged review/suggestions-ready
+        # (the engine surfaces it; it does NOT commit the diff).
+        state = review_feedback_loop.evaluate_review_state(
+            _pr(threads=(_thread(authors=("coderabbitai",), author_type="Bot", body=self.SUGGESTION_BODY),))
+        )
+        with mock.patch.object(review_feedback_loop, "_edit_label") as edit_label, \
+                mock.patch.object(review_feedback_loop, "_disable_auto_merge"):
+            actions = review_feedback_loop.apply_review_state_projection(17, state)
+        self.assertIn(f"add:{review_feedback_loop.DEFAULT_SUGGESTIONS_LABEL}", actions)
+        edit_label.assert_any_call(17, add=review_feedback_loop.DEFAULT_SUGGESTIONS_LABEL)
+
+    def test_projection_removes_suggestions_ready_label_when_absent(self) -> None:
+        # The label clears (idempotently) once no committable suggestions remain — e.g.
+        # after they were applied and the threads resolved.
+        state = review_feedback_loop.evaluate_review_state(
+            _pr(labels=(review_feedback_loop.DEFAULT_SUGGESTIONS_LABEL,))
+        )
+        with mock.patch.object(review_feedback_loop, "_edit_label") as edit_label, \
+                mock.patch.object(review_feedback_loop, "_disable_auto_merge"):
+            actions = review_feedback_loop.apply_review_state_projection(17, state)
+        self.assertIn(f"remove:{review_feedback_loop.DEFAULT_SUGGESTIONS_LABEL}", actions)
+        edit_label.assert_any_call(17, remove=review_feedback_loop.DEFAULT_SUGGESTIONS_LABEL)
+
     # ----- render_looker_worklist: read-only durable-issue triage surface -----
 
     def test_render_looker_worklist_is_read_only_triage_markdown(self) -> None:
