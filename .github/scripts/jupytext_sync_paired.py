@@ -89,8 +89,14 @@ def main(argv: list[str]) -> int:
             failed.append(notebook)
             continue
         implied_twins.extend(twin for twin in twin_paths(notebook, formats) if os.path.exists(twin))
+    # Emit each twin once, in first-seen order. The pre-commit hook word-splits this stdout into
+    # `git add`, so a duplicate (e.g. a notebook declaring the same non-ipynb format twice) would
+    # only pad the argument list; dedupe keeps the one-path-per-line contract deterministic.
+    seen: set[str] = set()
     for twin in implied_twins:
-        print(twin)
+        if twin not in seen:
+            seen.add(twin)
+            print(twin)
     if unparseable:
         sys.stderr.write(
             "note: skipped unparseable notebook(s) — not synced (observability, not a failure): "
