@@ -340,9 +340,11 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             "_fetch_pr",
             return_value=_pr(labels=(review_feedback_loop.DEFAULT_PENDING_LABEL,)),
         ), mock.patch.object(
+            review_feedback_loop, "_viewer_login", return_value="github-actions[bot]"
+        ), mock.patch.object(
             review_feedback_loop,
-            "_resolve_outdated_advisory_threads",
-            return_value=0,
+            "_resolve_outdated_resolvable_threads",
+            return_value=[],
         ), mock.patch.object(
             review_feedback_loop, "apply_review_state_projection", return_value=[]
         ) as projection:
@@ -522,7 +524,9 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         with mock.patch.object(review_feedback_loop, "ensure_labels"), mock.patch.object(
             review_feedback_loop, "_fetch_pr", return_value=ready
         ), mock.patch.object(
-            review_feedback_loop, "_resolve_outdated_advisory_threads", return_value=0
+            review_feedback_loop, "_viewer_login", return_value="github-actions[bot]"
+        ), mock.patch.object(
+            review_feedback_loop, "_resolve_outdated_resolvable_threads", return_value=[]
         ), mock.patch.object(
             review_feedback_loop, "apply_review_state_projection", return_value=[]
         ), mock.patch.object(
@@ -535,6 +539,28 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             result = review_feedback_loop.sync_pr(args)
         self.assertEqual(result, 0)
         arm.assert_called_once_with(200)
+
+    def test_resolve_outdated_resolvable_attests_only_outdated_bot_threads(self) -> None:
+        # The event-driven outdated-resolve: attest-resolves the OUTDATED bot thread and
+        # leaves the current (substantive needs-fix) one alone — a caught error to fix,
+        # not to dispose of.
+        outdated = _thread(authors=("coderabbitai",), author_type="Bot", outdated=True)
+        outdated["id"] = "OUT"
+        current = _thread(authors=("chatgpt-codex-connector",), author_type="Bot", outdated=False)
+        current["id"] = "CUR"
+        pr = _pr(threads=(outdated, current))
+        seen: list[str] = []
+
+        def fake_attest(pr_arg, thread_arg, looker, *a, **k):
+            seen.append(thread_arg["id"])
+            return {"thread_id": thread_arg["id"], "eligible": True, "applied": True, "reason": ""}
+
+        with mock.patch.object(review_feedback_loop, "attest_and_resolve", side_effect=fake_attest):
+            results = review_feedback_loop._resolve_outdated_resolvable_threads(
+                pr, "github-actions[bot]", apply=True
+            )
+        self.assertEqual(seen, ["OUT"])  # only the outdated bot thread is touched
+        self.assertEqual(sum(1 for r in results if r["applied"]), 1)
 
     def test_reconcile_open_prs_promotes_and_arms_eligible_low_risk_pr(self) -> None:
         # Reversal (2026-06-17): a low-risk, grace-elapsed, unblocked, non-protected-path PR
