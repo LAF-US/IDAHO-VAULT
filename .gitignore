@@ -208,10 +208,6 @@ logs/
 .ollama/id_ed25519*
 .sbx-denybin/* ([0-9])*
 
-# Local build-tool/runtime cargo from machine evacuation; Markdown anchors stay visible.
-.idaho-vault-signing-gate-build-tools/*
-!.idaho-vault-signing-gate-build-tools/*.md
-XcodeBuildMCP/workspaces/*/state/
 
 # SSH identity material — keys, known hosts, signing config, auth state.
 .ssh/auth.json
