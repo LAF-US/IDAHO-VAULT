@@ -44,6 +44,13 @@ jobs:
           PR_NUMBER: ${{ github.event.pull_request.number }}
         run: |
           eligible=true
+          # Fail closed: if the file list cannot be fetched (auth, network,
+          # rate limit), refuse rather than skip the protected-path check.
+          # Matches the maintainer lane in auto-merge-rhythm.yml.
+          if ! files="$(gh api --paginate "repos/$GH_REPO/pulls/$PR_NUMBER/files" --jq '.[].filename')"; then
+            echo "::error::Unable to list PR files; refusing to enable auto-merge."
+            exit 1
+          fi
           while IFS= read -r path; do
             case "$path" in
               .github/workflows/*|.github/scripts/*|.codex/*|.openclaw/*|AGENTS.md|CONSTITUTION.md|DECISIONS.md|VAULT-CONVENTIONS.md|swarm.json|!/*)
@@ -51,7 +58,7 @@ jobs:
                 eligible=false
                 ;;
             esac
-          done < <(gh api --paginate "repos/$GH_REPO/pulls/$PR_NUMBER/files" --jq '.[].filename')
+          done <<< "$files"
           echo "eligible=$eligible" >> "$GITHUB_OUTPUT"
 
       - name: Verify protected required checks exist
