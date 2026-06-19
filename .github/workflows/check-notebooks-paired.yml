@@ -11,6 +11,10 @@ on:
       - "**/*.ipynb"
       - "**/*.md"
       - "jupytext.toml"
+      # Re-validate the guardrail when the guardrail itself changes, so edits to the
+      # enforcement script or this workflow can't land without running the check they implement.
+      - ".github/scripts/jupytext_sync_paired.py"
+      - ".github/workflows/check-notebooks-paired.yml"
   workflow_dispatch:
 
 permissions:
