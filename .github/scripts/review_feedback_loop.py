@@ -92,12 +92,12 @@ AUTO_MERGE_AUTHZ_FRAGMENTS = (
 
 # Paths that must NOT be auto-armed: governance, agent scaffolding, and the CI
 # surfaces that gate everything else. A PR touching any of these waits for human
-# review (mirrors the guard in .github/workflows/auto-merge-rhythm.yml). fnmatch
-# globs: "*" matches within a path segment AND across "/", which is what we want
-# here (e.g. ".github/workflows/*" covers nested files).
+# review. Broader than auto-merge-rhythm.yml's sync-bot list on purpose — the
+# whole of `.github/` is CODE-AUTHORITY-reviewed, so the entire automation surface
+# is protected, not just workflows/scripts. fnmatch globs: "*" matches within a
+# path segment AND across "/", so ".github/*" covers nested files.
 PROTECTED_PATH_PATTERNS: tuple[str, ...] = (
-    ".github/workflows/*",
-    ".github/scripts/*",
+    ".github/*",
     ".codex/*",
     ".openclaw/*",
     "AGENTS.md",
@@ -105,6 +105,7 @@ PROTECTED_PATH_PATTERNS: tuple[str, ...] = (
     "DECISIONS.md",
     "VAULT-CONVENTIONS.md",
     "swarm.json",
+    "SPEC-CONNECTOR-HUB-2026-04-09.md",
     "!/*",
 )
 
@@ -218,7 +219,20 @@ def _maybe_arm_auto_merge(
         # which keys disablement on this label) can later un-arm it if a new thread or a
         # CHANGES_REQUESTED review makes it merge_blocked. Without the label an
         # event-armed PR could stay armed while the engine's own state said "blocked."
-        _edit_label(pr_number, add=DEFAULT_AUTO_MERGE_LABEL)
+        # Fail closed: if the label write fails, the disable path could never un-arm it,
+        # so disable the auto-merge we just enabled and report failure rather than leave
+        # an un-trackable armed PR.
+        try:
+            _run(["gh", "pr", "edit", str(pr_number), "--add-label", DEFAULT_AUTO_MERGE_LABEL])
+        except RuntimeError as exc:
+            _disable_auto_merge(pr_number)
+            return {
+                "armed": False,
+                "reason": (
+                    f"auto-merge armed but `{DEFAULT_AUTO_MERGE_LABEL}` label write failed; "
+                    f"disabled auto-merge to avoid an un-trackable armed PR: {exc}"
+                ),
+            }
     return {"armed": armed, "reason": None if armed else arm_error}
 
 
@@ -1152,12 +1166,26 @@ def _build_reconciliation_report(
         current_labels = set(state["labels"])
         auto_merge_enabled = bool((pr.get("autoMergeRequest") or {}).get("enabledAt"))
         arm_error = None
+        # Evaluate the protected-path guard ONCE, before promotion: a governance/CI/
+        # scaffolding PR must not even be labelled `merge/auto` or get a "promoting"
+        # comment — it waits for a human. (Only worth the API call when otherwise armable.)
+        touches_protected_path = False
+        if (
+            AGENT_AUTO_MERGE_ENABLED
+            and state["eligible_for_auto_merge"]
+            and not bool(state["merge_blocked"])
+        ):
+            touches_protected_path = _pr_touches_protected_path(owner, repo, pr_number)
+            if touches_protected_path:
+                arm_error = "protected/governance path — awaits human review"
+
         if (
             AGENT_AUTO_MERGE_ENABLED
             and
             state["eligible_for_auto_merge"]
             and not bool(state["merge_blocked"])
             and DEFAULT_AUTO_MERGE_LABEL not in current_labels
+            and not touches_protected_path
         ):
             if DEFAULT_REVIEW_PENDING_LABEL in current_labels:
                 current_labels.discard(DEFAULT_REVIEW_PENDING_LABEL)
@@ -1179,16 +1207,13 @@ def _build_reconciliation_report(
             and bool(state["eligible_for_auto_merge"])
             and not bool(state["merge_blocked"])
             and not auto_merge_enabled
+            and not touches_protected_path
         ):
-            if _pr_touches_protected_path(owner, repo, pr_number):
-                # Governance/CI/scaffolding PR: never auto-arm; it waits for a human.
-                arm_error = "protected/governance path — awaits human review"
+            auto_merge_enabled, arm_error = _arm_auto_merge(pr_number)
+            if auto_merge_enabled:
+                rearmed.append(pr_number)
             else:
-                auto_merge_enabled, arm_error = _arm_auto_merge(pr_number)
-                if auto_merge_enabled:
-                    rearmed.append(pr_number)
-                else:
-                    auto_merge_authorization_blocked.append(pr_number)
+                auto_merge_authorization_blocked.append(pr_number)
 
         evaluated.append(
             {
