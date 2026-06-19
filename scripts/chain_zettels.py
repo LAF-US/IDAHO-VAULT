@@ -20,9 +20,7 @@ def has_links(content: str, links: str) -> bool:
 
 
 def insert_links(content: str, links: str) -> str:
-    frontmatter_match = re.search(r'^---
-.*?
----', content, re.DOTALL)
+    frontmatter_match = re.search(r'^---\n.*?\n---', content, re.DOTALL)
     if frontmatter_match:
         end = frontmatter_match.end()
         after_fm = content[end:]
