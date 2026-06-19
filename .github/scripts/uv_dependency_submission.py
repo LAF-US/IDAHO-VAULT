@@ -40,10 +40,6 @@ import sys
 import tomllib
 from datetime import datetime, timezone
 
-# Local-project source markers in uv.lock — these are the repo itself, not a
-# PyPI distribution, and must not be submitted as dependencies.
-_LOCAL_SOURCE_KEYS = ("editable", "virtual", "directory")
-
 _NAME_TOKEN = re.compile(r"[A-Za-z0-9][A-Za-z0-9._-]*")
 _PEP503 = re.compile(r"[-_.]+")
 
@@ -103,24 +99,49 @@ def build_snapshot(
         pyproject = tomllib.load(fh)
 
     direct = _declared_names(pyproject, "project.dependencies")
-    dev = _declared_names(pyproject, "dev")
+    packages = lock.get("package", [])
+
+    # Scope by reachability, not by direct-name membership: a package is
+    # `development` only if it is NOT reachable from any runtime root. Runtime
+    # roots are the project's declared `[project.dependencies]`; we BFS over each
+    # locked package's `dependencies` edges. Anything not runtime-reachable is
+    # reachable only through dev roots (pytest/ruff *and* their exclusive
+    # transitives like iniconfig/pluggy), so it is dev-scoped.
+    edges: dict[str, set[str]] = {}
+    for pkg in packages:
+        pname = pkg.get("name")
+        if not pname:
+            continue
+        edges.setdefault(normalize(pname), set()).update(
+            normalize(dep["name"])
+            for dep in pkg.get("dependencies", [])
+            if isinstance(dep, dict) and dep.get("name")
+        )
+    runtime_reachable: set[str] = set()
+    stack = list(direct)
+    while stack:
+        node = stack.pop()
+        if node in runtime_reachable:
+            continue
+        runtime_reachable.add(node)
+        stack.extend(edges.get(node, ()))
 
     resolved: dict[str, dict] = {}
-    for pkg in lock.get("package", []):
+    for pkg in packages:
         source = pkg.get("source", {})
-        if any(key in source for key in _LOCAL_SOURCE_KEYS):
-            continue  # the repo itself, not a dependency
+        # Only registry-backed packages map to a pkg:pypi purl. This also
+        # excludes the editable local project and any git/url/path sources,
+        # which must not be mislabeled as PyPI distributions.
+        if "registry" not in source:
+            continue
         name = pkg.get("name")
         version = pkg.get("version")
         if not name or not version:
-            continue  # non-versioned (git/url/local) source — skip, can't purl it
+            continue
         norm = normalize(name)
         purl = f"pkg:pypi/{norm}@{version}"
-        if norm in direct:
-            relationship = "direct"
-        else:
-            relationship = "indirect"
-        scope = "development" if (norm in dev and norm not in direct) else "runtime"
+        relationship = "direct" if norm in direct else "indirect"
+        scope = "runtime" if norm in runtime_reachable else "development"
         # Keyed by purl so multi-version packages (numpy, onnxruntime) coexist.
         resolved[purl] = {
             "package_url": purl,
@@ -150,6 +171,11 @@ def build_snapshot(
 
 
 def main() -> int:
+    """Read GitHub Actions env vars, build the snapshot, and write it to stdout.
+
+    The workflow submits the emitted JSON via `gh api`; keeping submission out of
+    this script is what lets `build_snapshot()` stay pure and offline-testable.
+    """
     repo = os.environ.get("GITHUB_REPOSITORY", "")
     sha = os.environ.get("GITHUB_SHA", "")
     ref = os.environ.get("GITHUB_REF", "")
