@@ -721,15 +721,15 @@ def main(argv: list[str] | None = None) -> int:
     args = build_parser().parse_args(argv)
     if args.snapshot and args.retire:
         raise SystemExit("--snapshot and --retire cannot be combined")
+    if args.manifest and not args.containment_report:
+        raise SystemExit("--manifest requires --containment-report")
+    if args.containment_report and args.apply:
+        raise SystemExit("--containment-report is non-mutating and cannot be combined with --apply")
     if args.apply and not (args.snapshot or args.retire):
         raise SystemExit("--apply requires an explicit mode: --snapshot or --retire")
     if args.prune and not args.retire:
         print("[WARN] --prune ignored unless --retire is set")
-    if args.manifest and not args.containment_report:
-        raise SystemExit("--manifest requires --containment-report")
     if args.containment_report:
-        if args.apply:
-            raise SystemExit("--containment-report is non-mutating and cannot be combined with --apply")
         report = build_containment_report(args.vault_root, include_ignored=args.include_ignored)
         print_containment_report(report, quiet=args.quiet)
         if args.manifest:
