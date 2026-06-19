@@ -473,3 +473,6 @@ idaho-vault-48b78ec18835.json
 local-scan-detect-secrets.json
 local-scan-detect-secrets.json
 idaho-vault-48b78ec18835.json
+
+# Jupyter checkpoint autosaves (regenerable; never the source of truth)
+.ipynb_checkpoints/
