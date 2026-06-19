@@ -24,3 +24,6 @@ explicitly by Logan, per AGENTS and the CONSTITUTION.
 **Operational instructions:** `.claude/CLAUDE.md` (auto-loaded by Claude Code CLI)
 
 See also: AGENTS, CONSTITUTION, Gemini, Perplexity, Grok
+
+
+[[C]][[L]][[A]][[U]][[D]][[E]]
