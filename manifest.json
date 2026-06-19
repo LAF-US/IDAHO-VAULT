@@ -61,10 +61,10 @@
     "status": "active",
     "authority_boundary": "Obsidian config files define interface state; the plugin registry document defines doctrine and promotion rules.",
     "current_state": {
-      "enabled_community_count": 44,
+      "enabled_community_count": 43,
       "enabled_core_count": 31,
       "installed_community_count": 76,
-      "dormant_installed_count": 32,
+      "dormant_installed_count": 33,
       "enabled_missing_manifest_count": 0
     },
     "entrypoints": [
@@ -114,7 +114,6 @@
       "obsidian-day-planner",
       "dataview",
       "obsidian-tasks-plugin",
-      "calendar",
       "obsidian-folder-index",
       "obsidian-icon-folder",
       "oz-image-plugin",
@@ -819,6 +818,7 @@
       "ai-templater",
       "beautiful-contact-cards",
       "bmo-chatbot",
+      "calendar",
       "calendarium",
       "cmdr",
       "dataview-autocompletion",
