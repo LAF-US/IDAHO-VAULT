@@ -80,13 +80,33 @@ jobs:
           HEAD_SHA: ${{ github.event.pull_request.head.sha }}
         run: |
           # The four policy checks must have PASSED on this PR (existence + success) — decoupled
-          # from whether they're required-for-merge in the ruleset (a check passing protects main;
-          # its required-for-merge status is a separate concern).
-          runs="$(gh api --paginate "repos/$GH_REPO/commits/$HEAD_SHA/check-runs" --jq '.check_runs[] | "\(.name)\t\(.conclusion)"')"
-          for context in check-secret-patterns check-large-files check-paths check-dotfolder-anchors; do
-            concl="$(printf '%s\n' "$runs" | awk -F'\t' -v c="$context" '$1==c{print $2; exit}')"
+          # from whether they're required-for-merge in the ruleset. This step runs early (on
+          # pull_request_target) and there is no check-completion re-trigger, so POLL until each
+          # check-run is completed (they run on every pull_request and finish fast), then require
+          # success. A check that's pending/absent is waited on, not failed-closed; only a real
+          # non-success or the timeout blocks arming.
+          contexts="check-secret-patterns check-large-files check-paths check-dotfolder-anchors"
+          deadline=$(( $(date +%s) + 900 ))   # 15-minute budget
+          while :; do
+            runs="$(gh api --paginate "repos/$GH_REPO/commits/$HEAD_SHA/check-runs" --jq '.check_runs[] | "\(.name)\t\(.status)\t\(.conclusion)"')"
+            pending=""
+            for c in $contexts; do
+              line="$(printf '%s\n' "$runs" | awk -F'\t' -v c="$c" '$1==c{print; exit}')"
+              st="$(printf '%s' "$line" | cut -f2)"
+              { [ -z "$line" ] || [ "$st" != "completed" ]; } && pending="$pending $c"
+            done
+            [ -z "$pending" ] && break
+            if [ "$(date +%s)" -ge "$deadline" ]; then
+              echo "::error::Maintainer auto-merge gate: policy checks did not complete in time:$pending"
+              exit 1
+            fi
+            echo "Waiting for policy checks to complete:$pending"
+            sleep 20
+          done
+          for c in $contexts; do
+            concl="$(printf '%s\n' "$runs" | awk -F'\t' -v c="$c" '$1==c{print $3; exit}')"
             if [ "$concl" != "success" ]; then
-              echo "::error::Maintainer auto-merge is disabled until '$context' passes on this PR (got: ${concl:-missing})."
+              echo "::error::Maintainer auto-merge is disabled until '$c' passes on this PR (got: ${concl:-missing})."
               exit 1
             fi
           done
