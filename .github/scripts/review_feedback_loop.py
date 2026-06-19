@@ -1091,6 +1091,14 @@ def apply_review_state_projection(
 
 
 def _resolve_outdated_advisory_threads(pr: dict, auto_resolve_reviewers: set[str]) -> int:
+    """LEGACY allowlist resolver: resolves outdated threads from `auto_resolve_reviewers`
+    only, WITHOUT a witnessed attestation. Superseded on the event path (`sync-pr`) and the
+    backlog walk (`engage-outdated`) by `_resolve_outdated_resolvable_threads`, which is
+    disposition-driven (any bot reviewer) and WITNESSED (attest_and_resolve), per #399.
+    Still wired into `_build_reconciliation_report` (the scheduled reconcile lane) only;
+    unifying that path onto the witnessed helper is a tracked follow-up. Do not add new
+    callers — use `_resolve_outdated_resolvable_threads` instead.
+    """
     resolved_count = 0
     for thread in (pr.get("reviewThreads") or {}).get("nodes") or []:
         if thread.get("isResolved") or not thread.get("isOutdated"):
@@ -1110,6 +1118,69 @@ def _resolve_outdated_advisory_threads(pr: dict, auto_resolve_reviewers: set[str
                 else:
                     raise
     return resolved_count
+
+
+def _resolve_outdated_resolvable_threads(
+    pr: dict, looker: str | None = None, *, apply: bool = True
+) -> list[dict[str, object]]:
+    """Attest-resolve every OUTDATED-RESOLVABLE thread on `pr` — bot-only and
+    GitHub-outdated (the commented lines no longer exist in the diff) — witnessed by
+    `looker` via `attest_and_resolve`. This is the same narrowest-safe slice the
+    engage-outdated backlog walk uses, factored so the on-push `sync-pr` event can clear
+    stale bot threads AS THEY GO OUTDATED — not only on a manual engage-outdated dispatch.
+
+    `looker` is who the resolution is witnessed as. Pass it when the caller already knows
+    the actor (engage-outdated resolves it once for the whole backlog walk). When omitted
+    (the sync-pr event path), it is resolved LAZILY via `_viewer_login()` only if an
+    outdated-resolvable thread is actually found — so a push with no stale threads (the
+    common case) costs no extra GraphQL round-trip.
+
+    Disposition-driven (`_thread_resolution_disposition`), so it covers any bot reviewer
+    (CodeRabbit/Codex/Copilot), unlike the legacy allowlist resolver. needs-fix /
+    apply-suggestion / needs-human / looked threads are never touched — a substantive
+    finding is a caught error to fix, not to dispose of. Never merges. Returns one result
+    dict per considered thread."""
+    results: list[dict[str, object]] = []
+    for thread in (pr.get("reviewThreads") or {}).get("nodes") or []:
+        if thread.get("isResolved"):
+            continue
+        if _thread_resolution_disposition(thread) != "outdated-resolvable":
+            continue
+        # Defensive belt-and-suspenders: the `outdated-resolvable` disposition already
+        # requires GitHub-outdated, but re-assert it here so the implementation can never
+        # drift from the docstring's contract (only GitHub-outdated threads are touched)
+        # if `_thread_resolution_disposition` ever regresses.
+        if not thread.get("isOutdated"):
+            continue
+        # Lazy witness resolution: only pay for _viewer_login() once we have real work.
+        if looker is None:
+            looker = _viewer_login()
+        try:
+            result = attest_and_resolve(
+                pr,
+                thread,
+                looker,
+                "advisory",
+                "Outdated: the commented lines no longer exist in the current diff; "
+                "bot-only thread cleared under the outdated-only engaged policy.",
+                apply=apply,
+            )
+        except RuntimeError as exc:
+            # One thread's transient gh/GraphQL failure must not abort the pass. Surface
+            # it on stderr too (not only in the returned dict) so sync-driven failures are
+            # observable in workflow logs, not just to the JSON report consumer.
+            print(
+                f"Failed to attest-resolve outdated thread {thread.get('id')}: {exc}",
+                file=sys.stderr,
+            )
+            result = {
+                "thread_id": thread.get("id"),
+                "eligible": False,
+                "applied": False,
+                "reason": f"failed to process thread: {exc}",
+            }
+        results.append(result)
+    return results
 
 
 def _list_open_pr_numbers(owner: str, repo: str) -> list[int]:
@@ -1286,7 +1357,15 @@ def sync_pr(args: argparse.Namespace) -> int:
     )
 
     pr = _fetch_pr(args.owner, args.repo, args.pr_number)
-    resolved_count = _resolve_outdated_advisory_threads(pr, auto_resolve_reviewers)
+    # Event-driven outdated-resolve: clear bot-only, GitHub-outdated threads as they go
+    # stale on this push — witnessed by the authenticated actor (the same narrowest-safe
+    # slice as engage-outdated, now firing on the event instead of only manual dispatch).
+    # The looker is resolved lazily inside the helper (only if there's a stale thread to
+    # clear), so a push with nothing to resolve costs no extra _viewer_login() round-trip.
+    outdated_results = _resolve_outdated_resolvable_threads(
+        pr, getattr(args, "looker", None), apply=True
+    )
+    resolved_count = sum(1 for r in outdated_results if r.get("applied"))
     if resolved_count:
         pr = _fetch_pr(args.owner, args.repo, args.pr_number)
 
@@ -1825,30 +1904,9 @@ def engage_outdated(args: argparse.Namespace) -> int:
                 f"--pr {only_pr} is {pr.get('state')!r}, not OPEN; engage-outdated "
                 "acts only on the open queue."
             )
-        for thread in (pr.get("reviewThreads") or {}).get("nodes") or []:
-            if thread.get("isResolved"):
-                continue
-            if _thread_resolution_disposition(thread) != "outdated-resolvable":
-                continue
-            try:
-                result = attest_and_resolve(
-                    pr,
-                    thread,
-                    looker,
-                    "advisory",
-                    "Outdated: the commented lines no longer exist in the current diff; "
-                    "bot-only thread cleared under the outdated-only engaged policy.",
-                    apply=args.apply,
-                )
-            except RuntimeError as exc:
-                # One thread's transient gh/GraphQL failure must not abort the whole
-                # backlog pass — record it and keep going so the report stays complete.
-                result = {
-                    "thread_id": thread.get("id"),
-                    "eligible": False,
-                    "applied": False,
-                    "reason": f"failed to process thread: {exc}",
-                }
+        # Same narrowest-safe slice as the on-push sync path (shared helper): attest-resolve
+        # every outdated-resolvable thread, witnessed by the looker.
+        for result in _resolve_outdated_resolvable_threads(pr, looker, apply=args.apply):
             considered.append({"pr": pr_number, **result})
     print(
         json.dumps(
