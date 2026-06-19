@@ -36,7 +36,7 @@ def tracked_notebooks() -> list[str]:
     return [line for line in out.stdout.splitlines() if line]
 
 
-def read_notebook(path: str):
+def read_notebook(path: str) -> tuple[dict | None, Exception | None]:
     """Parse a notebook's JSON. Returns ``(data, error)``; ``error`` is non-None iff the file
     could not be parsed (a corrupt stray)."""
     try:
@@ -79,7 +79,7 @@ def main(argv: list[str]) -> int:
         # strict one-twin-path-per-line contract the pre-commit hook word-splits into `git add`.
         # jupytext chatter on our stdout would be handed to `git add` as bogus paths.
         proc = subprocess.run(
-            ["jupytext", "--sync", notebook], capture_output=True, text=True
+            ["jupytext", "--sync", "--", notebook], capture_output=True, text=True
         )
         if proc.stderr:
             sys.stderr.write(proc.stderr)
