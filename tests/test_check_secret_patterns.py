@@ -98,8 +98,6 @@ class SecretCheckerTest(unittest.TestCase):
             findings = secret_checker.findings_for_paths([".op/docs/guide.md"], staged=False)
         self.assertEqual({finding.rule for finding in findings}, {"secret_path"})
 
-
-
     def test_rejects_preserved_and_windows_copy_secret_path_variants(self) -> None:
         with unittest.mock.patch.object(
             secret_checker, "worktree_file_bytes", return_value=b"reference only"
