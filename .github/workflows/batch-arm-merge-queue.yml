@@ -21,11 +21,14 @@ name: Batch Arm Merge Queue
 #   - not yet ready: best-effort `--auto` arm. (It still needs a toggle-while-
 #     ready to actually enqueue; a later run of this workflow does that once the
 #     PR is CLEAN.)
-#   - enable refused with the workflows-permission error: bucketed on its own. A
-#     PR that touches `.github/workflows/**` cannot be armed by the Actions
-#     GITHUB_TOKEN — it lacks `workflows` scope (the #484/#485 hard-fail, a
-#     permission problem, not a flake). Supply a workflows-scoped PAT as the
-#     MERGE_QUEUE_TOKEN secret to arm those, or merge them by hand.
+#   - arm/enqueue refused with the workflows-permission error: bucketed on its
+#     own. Enabling auto-merge while a workflow-touching PR is still blocked can
+#     succeed (that is how auto-merge-engage arms them on open), but the Actions
+#     GITHUB_TOKEN lacks `workflows` scope, so the enqueue/merge of a READY
+#     workflow-touching PR is refused (the #484/#485 hard-fail — a permission
+#     problem, not a flake). Detected from the actual failure (error text OR the
+#     PR's changed files), never pre-judged. Supply a workflows-scoped PAT as the
+#     MERGE_QUEUE_TOKEN secret to land those, or merge them by hand.
 #
 # Counts reflect what actually happened (enqueued / armed-pending / needs-
 # workflows-token / failed) — a no-op is never miscounted as success.
@@ -78,6 +81,20 @@ jobs:
         run: |
           enqueued=0; armed_pending=0; needs_wf_token=0; failed=0; total=0
           repo="$GITHUB_REPOSITORY"
+
+          # An arm/enqueue failure is the workflows-permission case when gh says so
+          # (text match, tolerant of upstream wording) OR the PR changes
+          # .github/workflows/** (the Actions GITHUB_TOKEN can't land those — it
+          # lacks `workflows` scope). Evaluated ONLY on an actual failure, so a
+          # workflow PR that arms fine is never mis-bucketed.
+          is_wf_perm_failure() {
+            local err_file="$1" pr_num="$2"
+            grep -qiE 'workflow.*permission' "$err_file" && return 0
+            gh pr view "$pr_num" --repo "$repo" --json files \
+              -q '.files[].path' 2>/dev/null | grep -q '^\.github/workflows/' && return 0
+            return 1
+          }
+
           while IFS= read -r pr; do
             [ -z "$pr" ] && continue
             total=$((total + 1))
@@ -85,52 +102,65 @@ jobs:
             # mergeStateStatus == CLEAN is the "ready to merge/queue" signal.
             state=$(gh pr view "$pr" --repo "$repo" --json mergeStateStatus \
               -q '.mergeStateStatus' 2>/dev/null || echo UNKNOWN)
+
+            # A failed `gh pr view` (UNKNOWN) is an operational error, not a
+            # "pending" PR — surface it instead of silently arming.
+            if [ "$state" = "UNKNOWN" ]; then
+              echo "PR #$pr — ERROR: could not read mergeStateStatus (gh pr view failed); skipping"
+              failed=$((failed + 1)); continue
+            fi
             echo "PR #$pr — mergeStateStatus=$state"
 
+            err=$(mktemp)
             if [ "$state" = "CLEAN" ]; then
               if [ "$DRY_RUN" = "true" ]; then
                 echo "  DRY RUN: would enqueue (disable->enable toggle) #$pr"
-                enqueued=$((enqueued + 1)); continue
+                enqueued=$((enqueued + 1)); rm -f "$err"; continue
               fi
               # Ready: force the ready-transition with a FRESH disable -> enable
               # toggle. A plain re-enable on an already-armed PR is an idempotent
-              # no-op that does NOT enqueue.
-              gh pr merge "$url" --repo "$repo" --disable-auto >/dev/null 2>&1 || true
-              if gh pr merge "$url" --repo "$repo" --auto --merge 2>/tmp/arm_err; then
+              # no-op that does NOT enqueue. The disable is best-effort — it errors
+              # benignly when auto-merge was not enabled — but is logged if it
+              # fails, so a permission/config problem stays visible.
+              if ! gh pr merge "$url" --repo "$repo" --disable-auto >"$err" 2>&1; then
+                echo "  note: disable-auto non-fatal for #$pr ($(tr '\n' ' ' <"$err"))"
+              fi
+              if gh pr merge "$url" --repo "$repo" --auto --merge 2>"$err"; then
                 echo "  enqueued #$pr (toggled while ready)"
                 enqueued=$((enqueued + 1))
-              elif grep -qi "workflows permission" /tmp/arm_err; then
+              elif is_wf_perm_failure "$err" "$pr"; then
                 echo "  needs workflows-scoped token #$pr (touches .github/workflows/**)"
                 needs_wf_token=$((needs_wf_token + 1))
               else
-                echo "  FAILED to enqueue #$pr: $(cat /tmp/arm_err)"
+                echo "  FAILED to enqueue #$pr: $(tr '\n' ' ' <"$err")"
                 failed=$((failed + 1))
               fi
             else
               if [ "$DRY_RUN" = "true" ]; then
                 echo "  DRY RUN: would arm --auto #$pr (not yet ready: $state)"
-                armed_pending=$((armed_pending + 1)); continue
+                armed_pending=$((armed_pending + 1)); rm -f "$err"; continue
               fi
-              # Not yet ready: best-effort arm so it is queued by a later
-              # toggle-while-ready pass.
-              if gh pr merge "$url" --repo "$repo" --auto --merge 2>/tmp/arm_err; then
+              # Not yet ready: best-effort arm so a later toggle-while-ready pass
+              # enqueues it once it is CLEAN.
+              if gh pr merge "$url" --repo "$repo" --auto --merge 2>"$err"; then
                 echo "  armed (pending readiness) #$pr"
                 armed_pending=$((armed_pending + 1))
-              elif grep -qi "workflows permission" /tmp/arm_err; then
+              elif is_wf_perm_failure "$err" "$pr"; then
                 echo "  needs workflows-scoped token #$pr (touches .github/workflows/**)"
                 needs_wf_token=$((needs_wf_token + 1))
               else
-                echo "  skipped #$pr: $(cat /tmp/arm_err)"
+                echo "  FAILED to arm #$pr: $(tr '\n' ' ' <"$err")"
                 failed=$((failed + 1))
               fi
             fi
+            rm -f "$err"
           done <<< "$PRS"
 
           {
             echo "## Batch Arm Merge Queue"
             echo ""
             [ "$DRY_RUN" = "true" ] && echo "> **DRY RUN** — no changes made." && echo ""
-            echo "- candidates (open, non-draft): $total"
+            echo "- candidates processed (open, non-draft, label-filtered if a label was given): $total"
             echo "- **enqueued (ready, toggled): $enqueued**"
             echo "- armed, pending readiness: $armed_pending"
             echo "- needs workflows-scoped token (touches .github/workflows/**): $needs_wf_token"
