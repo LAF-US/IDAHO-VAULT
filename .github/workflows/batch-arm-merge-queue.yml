@@ -26,9 +26,11 @@ name: Batch Arm Merge Queue
 #     succeed (that is how auto-merge-engage arms them on open), but the Actions
 #     GITHUB_TOKEN lacks `workflows` scope, so the enqueue/merge of a READY
 #     workflow-touching PR is refused (the #484/#485 hard-fail — a permission
-#     problem, not a flake). Detected from the actual failure (error text OR the
-#     PR's changed files), never pre-judged. Supply a workflows-scoped PAT as the
-#     MERGE_QUEUE_TOKEN secret to land those, or merge them by hand.
+#     problem, not a flake). Detected from the failure signature — a workflows-
+#     permission error, or a generic permission denial on a workflow-touching PR
+#     — so a conflict or failing check is never mis-bucketed. Supply a
+#     workflows-scoped PAT as the MERGE_QUEUE_TOKEN secret to land those, or
+#     merge them by hand.
 #
 # Counts reflect what actually happened (enqueued / armed-pending / needs-
 # workflows-token / failed) — a no-op is never miscounted as success.
@@ -89,9 +91,17 @@ jobs:
           # workflow PR that arms fine is never mis-bucketed.
           is_wf_perm_failure() {
             local err_file="$1" pr_num="$2"
-            grep -qiE 'workflow.*(permission|scope)' "$err_file" && return 0
-            gh pr view "$pr_num" --repo "$repo" --json files \
-              -q '.files[].path' 2>/dev/null | grep -q '^\.github/workflows/' && return 0
+            # Specific workflows-permission signature in the error text.
+            grep -qiE 'workflow.*(permission|scope)|without .*workflows' "$err_file" && return 0
+            # Otherwise only a GENERIC permission denial (wording varies:
+            # "Resource not accessible by integration", 403, forbidden) counts,
+            # AND only when the PR actually changes .github/workflows/** — so a
+            # conflict / failing-check / already-queued failure on a workflow PR
+            # is reported as a real failure, never mis-bucketed as needs-token.
+            if grep -qiE 'permission|forbidden|not accessible|\b403\b' "$err_file"; then
+              gh pr view "$pr_num" --repo "$repo" --json files \
+                -q '.files[].path' 2>/dev/null | grep -q '^\.github/workflows/' && return 0
+            fi
             return 1
           }
 
@@ -99,16 +109,17 @@ jobs:
             [ -z "$pr" ] && continue
             total=$((total + 1))
             url="https://github.com/$repo/pull/$pr"
-            # mergeStateStatus == CLEAN is the "ready to merge/queue" signal.
-            state=$(gh pr view "$pr" --repo "$repo" --json mergeStateStatus \
-              -q '.mergeStateStatus' 2>/dev/null || echo UNKNOWN)
-
-            # A failed `gh pr view` (UNKNOWN) is an operational error, not a
-            # "pending" PR — surface it instead of silently arming.
-            if [ "$state" = "UNKNOWN" ]; then
-              echo "PR #$pr — ERROR: could not read mergeStateStatus (gh pr view failed); skipping"
+            # Distinguish a FAILED `gh pr view` (operational error) from a real
+            # mergeStateStatus value: UNKNOWN is itself a legitimate enum value
+            # (mergeability not yet computed) and must not be conflated with a
+            # command failure. Detect failure by exit status, not a sentinel.
+            if ! state=$(gh pr view "$pr" --repo "$repo" --json mergeStateStatus \
+              -q '.mergeStateStatus' 2>/dev/null); then
+              echo "PR #$pr — ERROR: gh pr view failed (could not read mergeStateStatus); skipping"
               failed=$((failed + 1)); continue
             fi
+            # CLEAN is the "ready to merge/queue" signal; everything else
+            # (BLOCKED, BEHIND, UNKNOWN, ...) takes the best-effort arm path.
             echo "PR #$pr — mergeStateStatus=$state"
 
             err=$(mktemp)
