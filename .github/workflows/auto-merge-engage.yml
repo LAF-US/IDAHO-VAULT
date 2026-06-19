@@ -6,9 +6,14 @@ name: Auto-merge on PR events
 # the merge queue on its own. No manual dispatch.
 #
 # Two deliberate properties, learned the hard way:
-#   - Triggered ONLY by native GitHub PR events (pull_request_target / pull_request_review).
-#     It is never downstream of another workflow, so it cannot be silently broken by a
-#     disabled upstream (the failure mode that shelved the old reconcile chain).
+#   - Triggered ONLY by pull_request_target (which runs the workflow from the trusted
+#     base/default branch with repo secrets). It is never downstream of another workflow,
+#     so it cannot be silently broken by a disabled upstream (the failure mode that shelved
+#     the old reconcile chain). It deliberately does NOT use pull_request_review: that event
+#     does not share pull_request_target's base-branch code-provenance guarantee, and pairing
+#     it with write permissions is the footgun Copilot flagged on #582. The review-clears-a-
+#     block case is covered anyway — auto-merge, once enabled here on open/sync, persists and
+#     fires when the review lands, with no workflow re-run needed.
 #   - It does NOT use the retired risk-tier eligibility gate. It just resolves + arms;
 #     branch protection is the ONLY thing that decides what actually merges. Substantive
 #     (needs-fix / current) threads are never touched, so nothing is rubber-stamped — those
@@ -20,8 +25,6 @@ name: Auto-merge on PR events
 on:
   pull_request_target:
     types: [opened, reopened, ready_for_review, synchronize]
-  pull_request_review:
-    types: [submitted, dismissed]
 
 permissions:
   # contents: write  — resolveReviewThread + enablePullRequestAutoMerge (the #546 gate family).
