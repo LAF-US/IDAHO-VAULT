@@ -1,12 +1,16 @@
 name: Agent Review Gate
 
-# Periodically re-derives open PR review state from GitHub truth so drift can be
-# corrected without waiting for a fresh webhook event. Agent-authored PRs remain
-# human-reviewed; Dependabot eligibility is handled by dependabot-rhythm only.
+# Re-derives the open-PR review-state backlog from GitHub truth so drift is
+# corrected event-driven. Wired to push-on-main (not a cron): a merge is the moment
+# the backlog can shift — the queue advances, conflicts surface, another PR becomes
+# armable — so reconciling right after each merge catches drift at its source. Per-PR
+# drift is already handled by sync-pr / review-submitted; this is the backlog sweep.
+# (The vault is event/job/workflow-focused: no timed jobs absent a master schedule.)
+# Agent-authored PRs remain human-reviewed; Dependabot eligibility is dependabot-rhythm.
 
 on:
-  schedule:
-    - cron: '0 */4 * * *'
+  push:
+    branches: [main]
   workflow_dispatch:
     inputs:
       grace_minutes:
@@ -22,6 +26,17 @@ permissions:
 jobs:
   gate:
     runs-on: ubuntu-latest
+    permissions:
+      # contents: write is required because reconcile-open-prs now resolves outdated bot
+      # threads through the WITNESSED helper (attest_and_resolve), and resolveReviewThread
+      # is gated on Contents: Read & Write (same family as #546). The prior legacy resolver
+      # also called resolveReviewThread, but under contents:read it silently FORBIDDEN-
+      # skipped, so reconcile never actually resolved; the witness path posts an attestation
+      # reply *then* resolves, so without write it would re-post the attestation every run.
+      # Job-level block replaces the workflow floor, so all scopes the job uses are listed.
+      contents: write
+      pull-requests: write
+      issues: write
     steps:
       - name: Checkout trusted workflow surfaces
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
