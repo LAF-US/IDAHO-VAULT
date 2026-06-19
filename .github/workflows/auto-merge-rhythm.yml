@@ -88,7 +88,12 @@ jobs:
           contexts="check-secret-patterns check-large-files check-paths check-dotfolder-anchors"
           deadline=$(( $(date +%s) + 900 ))   # 15-minute budget
           while :; do
-            runs="$(gh api --paginate "repos/$GH_REPO/commits/$HEAD_SHA/check-runs" --jq '.check_runs[] | "\(.name)\t\(.status)\t\(.conclusion)"')"
+            # Fail closed on a real API error rather than letting an empty result
+            # masquerade as "still pending" and surface a misleading timeout.
+            if ! runs="$(gh api --paginate "repos/$GH_REPO/commits/$HEAD_SHA/check-runs" --jq '.check_runs[] | "\(.name)\t\(.status)\t\(.conclusion)"')"; then
+              echo "::error::Unable to fetch check-runs for $HEAD_SHA (auth/rate-limit/network); refusing to enable auto-merge."
+              exit 1
+            fi
             pending=""
             for c in $contexts; do
               line="$(printf '%s\n' "$runs" | awk -F'\t' -v c="$c" '$1==c{print; exit}')"
