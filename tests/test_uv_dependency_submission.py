@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import importlib.util
 import re
+import tempfile
 import unittest
 from pathlib import Path
 
@@ -10,7 +11,8 @@ SCRIPT = ROOT / ".github" / "scripts" / "uv_dependency_submission.py"
 
 # Load the script as a module (it lives under .github/scripts, not on sys.path).
 _spec = importlib.util.spec_from_file_location("uv_dependency_submission", SCRIPT)
-assert _spec and _spec.loader
+if _spec is None or _spec.loader is None:
+    raise RuntimeError(f"could not create an import spec/loader for {SCRIPT}")
 uds = importlib.util.module_from_spec(_spec)
 _spec.loader.exec_module(uds)
 
@@ -30,6 +32,22 @@ class UvDependencySubmissionTest(unittest.TestCase):
             scanned="2026-06-19T00:00:00Z",
         )
         cls.resolved = cls.snapshot["manifests"]["uv.lock"]["resolved"]
+
+    def test_unsupported_lock_version_raises_valueerror(self) -> None:
+        # build_snapshot is a reusable, pure function: it raises a normal
+        # exception (not SystemExit) so callers can handle the error path.
+        with tempfile.TemporaryDirectory() as tmp:
+            lock = Path(tmp) / "uv.lock"
+            lock.write_text('version = 2\n', encoding="utf-8")
+            with self.assertRaises(ValueError):
+                uds.build_snapshot(
+                    str(lock),
+                    str(ROOT / "pyproject.toml"),
+                    repo="LAF-US/IDAHO-VAULT",
+                    sha="0" * 40,
+                    ref="refs/heads/main",
+                    run_id="123",
+                )
 
     def test_snapshot_envelope(self) -> None:
         s = self.snapshot
