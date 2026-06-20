@@ -112,7 +112,7 @@ This file is the shared delegation layer for day-to-day vault behavior. When rul
 2. `VAULT-CONVENTIONS.md` for shared routing and write conventions
 3. `VAULT-METADATA-STANDARD.md` for governed-note metadata and lifecycle rules
 4. `VAULT-TEMPLATES.md` for class, filename, and template expectations
-5. Live implementation wiring in `.obsidian/`, `.github/`, and `manifest.json` only insofar as it conforms to the documents above
+5. Implementation wiring in `.obsidian/`, `.github/`, and `manifest.json` only insofar as it conforms to the documents above
 
 `!/VAULT-CONVENTIONS.md` is a routing shim for bootstrap stability.
 `VAULT-METADATA-STANDARD.md` outranks template guidance whenever metadata fields or lifecycle semantics overlap.
@@ -134,7 +134,7 @@ repo root. Do not assume that a root-heavy layout means the vault is
 
 "unorganized," and do not use older taxonomy examples as permission to
 
-restructure the current vault.
+restructure the canonical vault.
 
 
 
@@ -177,7 +177,7 @@ restructure the current vault.
 
 - Historical references to older folder trees are descriptive context, not
 
-  standing authorization to reorganize the live vault.
+  standing authorization to reorganize the canonical vault.
 
 ### Dotfolder Boundary Contract
 
@@ -187,10 +187,10 @@ surface types:
 - `OWNER`: owner-writable by default. Other agents may inspect for orientation
   but must not rewrite without Logan's direction or an explicit shared contract.
 - `SHARED`: explicitly named shim or protocol surfaces that other agents may
-  write only when the local shim or live governance says they are shared.
+  write only when the local shim or canonical governance says they are shared.
 - `ARCHIVE`: preserved memory, residue, or historical continuity surfaces.
-  Read-only by default unless Logan or a live surface explicitly reactivates
-  them.
+  Read-only by default unless Logan or canonical governance explicitly
+  reactivates them.
 
 A dotfolder may contain all three surface types, but they are not
 interchangeable. Do not treat persona body, shared shim, and archive as the
@@ -934,8 +934,9 @@ All agents are to REPORT to the COURTROOM and AWAIT THE JUDGE's BELL for the fou
 
 
 
-That file is the live convening board. Read it to orient. Update it for
-arrival, live motion, open signals, and immediate blockers.
+That file is a durable convening record. Read it for filed coordination
+evidence. Record motions, open signals, and blockers there without treating
+their survival as proof of present activity.
 
 It is not the full project tracker, not the durable backlog, not the archive,
 and not the final record of policy. Detailed execution state belongs in Linear
