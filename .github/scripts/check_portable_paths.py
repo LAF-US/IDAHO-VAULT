@@ -22,6 +22,7 @@ MAX_PORTABLE_PATH = 218
 
 
 def git_tracked_files() -> list[str]:
+    """Return every path tracked at HEAD, with non-ASCII names left unquoted."""
     result = subprocess.run(
         ["git", "-c", "core.quotePath=false", "ls-tree", "-r", "HEAD", "--name-only"],
         check=True,
@@ -32,10 +33,12 @@ def git_tracked_files() -> list[str]:
 
 
 def normalize(path: str) -> str:
+    """Fold a path to its case-insensitive, separator-agnostic comparison key."""
     return path.replace("\\", "/").casefold()
 
 
 def case_collisions(paths: list[str]) -> dict[str, list[str]]:
+    """Group paths that differ only by case (a hazard on case-insensitive filesystems)."""
     grouped: dict[str, list[str]] = defaultdict(list)
     for path in paths:
         grouped[normalize(path)].append(path)
@@ -47,6 +50,7 @@ def case_collisions(paths: list[str]) -> dict[str, list[str]]:
 
 
 def path_violations(path: str) -> list[str]:
+    """Return cross-platform portability problems for a single path (empty if clean)."""
     findings: list[str] = []
     # A literal backslash in a tracked path is itself the hazard: on Windows git
     # treats it as a separator, so a name like `C:\Users\...` becomes an absolute
@@ -70,6 +74,7 @@ def path_violations(path: str) -> list[str]:
 
 
 def main() -> int:
+    """Check changed paths and sweep the whole tree; return 1 on any violation."""
     parser = argparse.ArgumentParser()
     parser.add_argument("--paths-from-stdin", action="store_true")
     args = parser.parse_args()
