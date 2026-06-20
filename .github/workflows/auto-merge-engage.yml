@@ -1,0 +1,84 @@
+name: Auto-merge on PR events
+
+# THE wired, event-driven loop: on a PR event, (1) resolve the resolvable (outdated,
+# bot-only) conversations — witnessed — and (2) click auto-merge. A PR that then satisfies
+# branch protection (conversations resolved, required reviews, required checks) drops into
+# the merge queue on its own. No manual dispatch.
+#
+# Two deliberate properties, learned the hard way:
+#   - Triggered ONLY by pull_request_target (which runs the workflow from the trusted
+#     base/default branch with repo secrets). It is never downstream of another workflow,
+#     so it cannot be silently broken by a disabled upstream (the failure mode that shelved
+#     the old reconcile chain). It deliberately does NOT use pull_request_review: that event
+#     does not share pull_request_target's base-branch code-provenance guarantee, and pairing
+#     it with write permissions is the footgun Copilot flagged on #582. The review-clears-a-
+#     block case is covered anyway — auto-merge, once enabled here on open/sync, persists and
+#     fires when the review lands, with no workflow re-run needed.
+#   - It does NOT use the retired risk-tier eligibility gate. It just resolves + arms;
+#     branch protection is the ONLY thing that decides what actually merges. Substantive
+#     (needs-fix / current) threads are never touched, so nothing is rubber-stamped — those
+#     PRs simply stay blocked on their unresolved conversations until really fixed.
+#
+# Security: pull_request_target runs with repo secrets, so it checks out the trusted
+# default branch and never executes PR-authored code; it acts on the PR purely via the API.
+
+on:
+  pull_request_target:
+    types: [opened, reopened, ready_for_review, synchronize]
+
+permissions:
+  # contents: write  — resolveReviewThread + enablePullRequestAutoMerge (the #546 gate family).
+  # pull-requests: write — the witnessed attestation reply, and enabling auto-merge.
+  contents: write
+  pull-requests: write
+
+concurrency:
+  # One pass per PR; a newer event supersedes an in-flight one.
+  group: auto-merge-engage-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  engage:
+    # Drafts are never armed; everything else is attempted and branch protection gates it.
+    if: github.event.pull_request.draft == false
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout trusted workflow surfaces
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
+        with:
+          python-version: '3.11'
+
+      - name: Resolve outdated bot conversations (witnessed)
+        # Same proven path as the engage-outdated workflow, scoped to this one PR. Only
+        # outdated, bot-only threads are attest-resolved; needs-fix is left untouched.
+        # Exits 0 even if some threads fail (per-thread errors are recorded, not raised),
+        # so this step stays low-noise.
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          OWNER: ${{ github.repository_owner }}
+          REPO: ${{ github.event.repository.name }}
+          PR: ${{ github.event.pull_request.number }}
+        run: |
+          python3 .github/scripts/review_feedback_loop.py \
+            engage-outdated --owner "$OWNER" --repo "$REPO" --pr "$PR" --apply
+
+      - name: Click auto-merge (the merge queue is the gate)
+        # Same invocation proven to arm PRs in batch-arm-merge-queue. Tolerate failure:
+        # a PR that can't be armed (already queued, conflicting, or gated awaiting review)
+        # must not fail the run — branch protection decides what actually merges.
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+          PR: ${{ github.event.pull_request.number }}
+        run: |
+          if gh pr merge "$PR" --auto --merge --repo "$REPO"; then
+            echo "auto-merge enabled for #$PR"
+          else
+            echo "auto-merge not enabled for #$PR (likely awaiting review, conflicting, or already queued)"
+          fi
