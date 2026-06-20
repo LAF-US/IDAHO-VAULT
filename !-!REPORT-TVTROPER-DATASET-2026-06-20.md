@@ -8,6 +8,7 @@ tags:
   - ai/datasets
   - source/huggingface
   - provenance/scrape
+  - licensing/creative-commons
 related:
   - VAULT-CONVENTIONS
   - CLAUDE
@@ -111,32 +112,71 @@ Unrelated but easily confused (different authors, different intent):
 
 ## IV. Provenance & Licensing — Why a Journalist Should Be Careful
 
-This is the part that matters for the vault, not the row counts.
+This is the part that matters for the vault, not the row counts. The grey here
+is not one ambiguity but a stack of them, and they compound.
 
-1. **The dataset is a third-party scrape.** The text originates with
-   `tvtropes.org` contributors, not with the uploader. The Hub repo declares
-   `apache-2.0`, but that license tag describes what the *uploader* asserts over
-   the *packaging*; it does not, by itself, re-license the underlying TVTropes
-   content. TVTropes publishes user-contributed wiki text under its own site
-   terms / content license, which is **not** Apache-2.0.\* Anyone reusing this
-   data for redistribution or model training inherits an unresolved licensing
-   question between "what the Hub tag says" and "what TVTropes actually
-   permits." **Verify TVTropes' current content license before relying on the
-   `apache-2.0` tag.**\*
+### IV.1 The core mismatch
 
-2. **It includes garbage by design.** Because 404 pages are scraped as content,
-   any downstream use must filter error pages or it will train on / cite
-   boilerplate error text.
+The Hub repo declares **`apache-2.0`** — a permissive license that allows
+commercial use and relicensing. But the underlying TVTropes content is
+**CC BY-NC-SA**: the site used CC BY-SA before July 2012, then switched to
+**CC BY-NC-SA (NonCommercial–ShareAlike)** in July 2012 (verified via
+Wikipedia's "TV Tropes" entry and contemporaneous reporting; see References).
 
-3. **It is a frozen 2023 snapshot** (the `-2025` repo is the newer crawl). Do
-   not treat it as a current reflection of TVTropes.
+Foundational rule: **you cannot grant rights you do not hold.** An uploader
+applying `apache-2.0` to a scrape does not re-license the source text — the tag
+only describes what the *uploader* claims over their *packaging*. The source
+content's license travels with the words. So the Apache tag is, at best,
+describing the wrong layer.
 
-4. **No row-level integrity guarantees.** The card itself says content "may
-   contain errors." This is a raw crawl, not a curated corpus.
+### IV.2 The three CC terms it collides with
 
-\* Items marked are flagged for verification; they are reasoning about how Hub
-license tags relate to scraped source content, not confirmed legal facts about
-TVTropes' present terms.
+CC BY-NC-SA imposes three obligations, and the dataset arguably breaks all
+three:
+
+- **NC (NonCommercial)** — The dataset is explicitly tagged for
+  `text-generation` / `text-classification` training. Training a *commercial*
+  model on it uses NonCommercial-licensed content commercially. Sharpest
+  practical risk.
+- **SA (ShareAlike)** — Derivatives must carry the same/compatible license.
+  Apache-2.0 is **not** compatible with CC BY-NC-SA, so relabeling the corpus
+  `apache-2.0` is itself a ShareAlike violation, independent of downstream use.
+- **BY (Attribution)** — Requires crediting contributors. A bulk dump with a
+  two-field schema (URL + raw content) carries no per-contributor attribution.
+
+### IV.3 The deeper grey: the source license is itself contested
+
+The 2012 relicensing was reportedly done **without the consent of many editors**
+who had contributed under the older CC BY-SA terms, and the edit page carried no
+licensing notice — so it is unclear whether TVTropes even held the right to
+relicense a large portion of its *own* pre-2012 content to NC-SA. Provenance is
+therefore broken at **two** levels: scraper → `apache-2.0` is almost certainly
+wrong, and TVTropes → `CC BY-NC-SA` is itself disputed for older content. You
+cannot cleanly answer "what license governs row N?"
+
+### IV.4 Two layers that are not copyright at all
+
+- **Terms-of-service / scraping.** Bulk scraping can breach a site's ToS
+  regardless of the content license — a separate contract question from
+  copyright.\*
+- **The unsettled "is training fair use?" question.** Whether training a model
+  on copyrighted text is infringement or fair use is actively litigated
+  (2023–2026) and unresolved, so the NC restriction's *enforceability against
+  model training specifically* is an open legal question, not a settled "no."\*
+
+### IV.5 Data-quality caveats (not licensing, but bundled)
+
+- **It includes garbage by design.** Because 404 pages are scraped as content,
+  any downstream use must filter error pages or it will train on / cite
+  boilerplate error text.
+- **It is a frozen 2023 snapshot** (the `-2025` repo is the newer crawl). Do not
+  treat it as a current reflection of TVTropes.
+- **No row-level integrity guarantees.** The card itself says content "may
+  contain errors." This is a raw crawl, not a curated corpus.
+
+\* Items marked are genuinely open questions (ToS/contract exposure; whether
+training on copyrighted text is fair use). They are flagged rather than resolved
+— this note reasons about license *layers*, it does not render a legal opinion.
 
 ---
 
@@ -164,8 +204,10 @@ ambiguity above. If a future task needs TVTropes data, prefer the newer
   2026-06-20 — source of the metadata table in §I and the live-viewer failure
   in §II.
 - Web search (2026-06-20) — source of the card's summary text (page count,
-  intended use, two-field schema, 404-page behavior, ~20 GB JSONL) and the
-  existence of the sibling `-Cleaned` and `-2025` repos.
+  intended use, two-field schema, 404-page behavior, ~20 GB JSONL), the
+  existence of the sibling `-Cleaned` and `-2025` repos, and the TVTropes
+  content-license history in §IV (CC BY-SA → CC BY-NC-SA, July 2012; contested
+  relicensing).
 - Direct `WebFetch` of the dataset/README URLs returned **HTTP 403**, so card
   text is sourced via the MCP overview and search rather than a raw fetch.
 
@@ -180,6 +222,13 @@ ambiguity above. If a future task needs TVTropes data, prefer the newer
 3. KaraKaraWitch. (2025). *TvTroper-2025* [Dataset]. Hugging Face.
    https://huggingface.co/datasets/KaraKaraWitch/TvTroper-2025
 4. TVTropes. *tvtropes.org* — source wiki for the scraped content.
+5. Wikipedia. *TV Tropes* — license history (CC BY-SA → CC BY-NC-SA, July 2012)
+   and relicensing controversy. https://en.wikipedia.org/wiki/TV_Tropes
+6. SoylentNews. (2014). *TV Tropes Relicensed its Content — Without Permit.*
+   https://soylentnews.org/article.pl?sid=14/05/15/1938243
+7. Creative Commons. *Attribution-NonCommercial-ShareAlike 4.0 International
+   (CC BY-NC-SA) — Legal Code.*
+   https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.en
 
 ---
 
