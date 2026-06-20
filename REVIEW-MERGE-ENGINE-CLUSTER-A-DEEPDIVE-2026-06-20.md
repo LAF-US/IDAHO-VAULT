@@ -90,7 +90,8 @@ trust gate. But the only workflow that reaches the engine's arming path
 (`reconcile-open-prs`) is **`agent-review-gate`, which is explicitly disabled** — its own
 header states it "runs the engine's retired risk-tier schema and does not work against the
 current repo," and it is `workflow_dispatch`-only. No Cluster A workflow invokes
-`enable-auto-merge` directly.
+`enable-auto-merge` directly. (Scope caveat — see the Correction below: only *that gate's*
+risk-based arming eligibility is retired; risk-tier *labeling* is still live.)
 
 So **live arming happens entirely *outside* the engine** — in `auto-merge-rhythm.yml`
 (inline `gh pr merge --auto` on every `pull_request_target`) and `dependabot-rhythm.yml`.
@@ -117,6 +118,36 @@ nothing"; the guarded disposition path is `attest-resolve`. It rides inside
 `review_feedback_loop.py` only because both it and concern B need the same GitHub-thread
 plumbing (`_fetch_pr`, thread walking). *(inference: the coupling is plumbing-sharing, not
 domain overlap.)*
+
+---
+
+## 3·Correction (2026-06-20, witnessed) — the risk-tier schema is NOT retired
+
+Logan caught that #597 (this PR) was auto-labeled `risk/high`, which contradicts the
+unqualified "retired risk-tier schema" phrasing carried into F1 above. That phrasing was a
+direct quote of `agent-review-gate.yml`'s header, but presenting it without scope was
+imprecise. The accurate picture, re-read from `main`:
+
+- **Producer — LIVE.** `agent-auto-pr.yml`'s `classify` step pipes changed paths to
+  `classify_paths.py`, which stamps `risk/<tier>` on **every** agent PR at creation
+  (`agent-auto-pr.yml` L175). `classify_paths.py` is fail-safe: "Unknown paths default to
+  high-risk" (L7, L67) — so #597's two **new root-level `.md` files** match no known low-risk
+  pattern and rate `high`. That is why a docs-only PR is `risk/high`.
+- **Consumer — LIVE.** `dependabot-rhythm.yml` reads `risk/high` as a hard auto-merge block
+  (L17, L90, L99). The engine's `_risk_tier_for_pr` (L295) also reads the label as canonical.
+- **Consumer — DISABLED.** The `agent-review-gate` reconcile/arming gate is the *only* thing
+  the "retired risk-tier schema" header actually describes — its risk-based **arming
+  eligibility**, not risk labeling as a whole.
+- **Live non-Dependabot arming — ignores risk.** `auto-merge-rhythm.yml` contains **no**
+  `risk` reference at all.
+
+**Net (and this sharpens F1):** risk-tier labeling is a live producer with exactly one live
+consumer (the Dependabot lane) and one dormant consumer (the disabled gate); the live
+general arming path doesn't read it. So `risk/high` on a normal agent PR like #597 is
+computed and stamped, but its only *teeth* are in the Dependabot lane — elsewhere it is a
+human-facing signal whose automated consumer is dormant. The redesign in §5 should decide
+whether `review-state` becomes the single live consumer of the risk tier, or whether risk
+labeling is retired in fact rather than only at the dead gate.
 
 ---
 
