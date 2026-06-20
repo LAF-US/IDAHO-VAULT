@@ -180,7 +180,10 @@ def _auto_merge_state(owner: str, repo: str, pr_number: int) -> tuple[bool, bool
             name=repo,
             number=pr_number,
         )
-    except RuntimeError:
+    except (RuntimeError, ValueError):
+        # RuntimeError: gh/_graphql failure or GraphQL errors.
+        # ValueError: a malformed JSON payload (json.JSONDecodeError subclasses it).
+        # Both fail open so the arming path keeps its pre-guard behavior.
         return (False, False)
     pull = (data.get("repository") or {}).get("pullRequest") or {}
     enabled = bool((pull.get("autoMergeRequest") or {}).get("enabledAt"))
