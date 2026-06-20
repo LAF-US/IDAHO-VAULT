@@ -38,7 +38,9 @@ related:
 
 Every claim is sourced to a file/line read from `main` on 2026-06-20: the engine
 `.github/scripts/review_feedback_loop.py` (2,221 lines) and the 9 Cluster A workflows in
-`.github/workflows/`. Where a statement is inference rather than a direct read, it is
+`.github/workflows/` (6 engine-callers + 3 inline-`gh`; the §2 wiring table additionally lists
+`agent-auto-pr` — a Cluster-B bridge that calls `ensure-labels` — for 10 rows total). Where a
+statement is inference rather than a direct read, it is
 marked *(inference)*. No runtime logs were consulted — this is a static read of the wiring,
 not an observation of live executions.
 
@@ -46,7 +48,7 @@ not an observation of live executions.
 
 ## 1. The engine is four tools sharing one 2,221-line file
 
-`review_feedback_loop.py` exposes **16 subcommands** (`build_parser`, L2042–2181; dispatch
+`review_feedback_loop.py` exposes **14 subcommands** (`build_parser`, L2042–2181; dispatch
 in `main`, L2184–2213) that fall into four distinct concerns:
 
 | Concern | Subcommands | What it does |
@@ -54,7 +56,7 @@ in `main`, L2184–2213) that fall into four distinct concerns:
 | **A · Label substrate** | `ensure-labels` | Idempotently create the lifecycle labels (`LABEL_SPECS`, L113). Every other command calls it first. |
 | **B · Review-state projection** | `sync-pr`, `review-submitted`, `acknowledge-apply`, `promote-ready`, `reconcile-open-prs`, `enable-auto-merge` | Translate GitHub review/check/thread truth → projection labels + the auto-merge pause/arm decision. |
 | **C · Claim verification** | `verify-claim` | "Brass-mouth" check (IF 7, L53–57): compare an agent's *"work finished / ready to merge"* comment (`CLAIM_PATTERNS`, L59) against GitHub's real `mergeable`/checks; post a divergence note on disagreement. |
-| **D · Looker thread-attestation** | `list-unlooked`, `looker-walk`, `render-worklist`, `attest-resolve`, `engage-outdated`, `reconcile-witness` | The witness subsystem: classify open PRs, then attest-and-resolve *outdated bot-only* review threads with a recorded looker identity. **6 of 16 subcommands — the largest concern.** |
+| **D · Looker thread-attestation** | `list-unlooked`, `looker-walk`, `render-worklist`, `attest-resolve`, `engage-outdated`, `reconcile-witness` | The witness subsystem: classify open PRs, then attest-and-resolve *outdated bot-only* review threads with a recorded looker identity. **6 of 14 subcommands — the largest concern.** |
 
 ---
 

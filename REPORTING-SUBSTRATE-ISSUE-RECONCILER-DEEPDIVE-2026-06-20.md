@@ -122,7 +122,7 @@ The reconciler is a **clean shared sink**; the variation lives upstream. Two cal
 (`agent-review-gate`, `looker-walk`) are **bridges** — they generate content via
 `review_feedback_loop.py` and persist via `issue_reconciler.py`, so they straddle both engines.
 Three (`branch-garden`, `large-file`, `metadata`) are **standalone surveys**. The
-`has_findings` semantics differ per caller (Q2 table): `metadata-survey` hardcodes `true` (its issue
+`has_findings` semantics differ per caller (the §2 callers table): `metadata-survey` hardcodes `true` (its issue
 is a permanent visibility surface for #252 and **never closes**, L42–45); `looker-walk` derives it
 from a jq lane filter; the others trust their generator's output. No title collisions —
 `looker-walk.yml`'s own comment (L66–69) explains it deliberately chose a title distinct from
