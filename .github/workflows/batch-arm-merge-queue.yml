@@ -105,21 +105,41 @@ jobs:
             return 1
           }
 
+          # mergeStateStatus is computed lazily: the first read of a "cold" PR
+          # returns UNKNOWN and only *triggers* the computation, so a genuinely
+          # ready PR looks not-ready on a cold sweep (verified 2026-06-20 — a cold
+          # pass saw UNKNOWN for ~all PRs; the same PRs resolved to real states
+          # seconds later). Re-poll a bounded number of times so a freshly-ready
+          # PR is seen as CLEAN and actually enqueued. Returns non-zero ONLY on a
+          # real `gh pr view` failure — UNKNOWN is a value, never a command error.
+          MERGE_STATE_RETRIES=3
+          MERGE_STATE_DELAY=2
+          read_merge_state() {
+            local pr_num="$1" st="" i=1
+            while [ "$i" -le "$MERGE_STATE_RETRIES" ]; do
+              st=$(gh pr view "$pr_num" --repo "$repo" --json mergeStateStatus \
+                -q '.mergeStateStatus' 2>/dev/null) || return 1
+              [ "$st" != "UNKNOWN" ] && { printf '%s' "$st"; return 0; }
+              [ "$i" -lt "$MERGE_STATE_RETRIES" ] && sleep "$MERGE_STATE_DELAY"
+              i=$((i + 1))
+            done
+            printf '%s' "$st"   # still UNKNOWN after retries — treated as not-ready
+            return 0
+          }
+
           while IFS= read -r pr; do
             [ -z "$pr" ] && continue
             total=$((total + 1))
             url="https://github.com/$repo/pull/$pr"
-            # Distinguish a FAILED `gh pr view` (operational error) from a real
-            # mergeStateStatus value: UNKNOWN is itself a legitimate enum value
-            # (mergeability not yet computed) and must not be conflated with a
-            # command failure. Detect failure by exit status, not a sentinel.
-            if ! state=$(gh pr view "$pr" --repo "$repo" --json mergeStateStatus \
-              -q '.mergeStateStatus' 2>/dev/null); then
+            # Read mergeability, retrying past the lazy-computation UNKNOWN (see
+            # read_merge_state). A real `gh pr view` failure — not a value — is the
+            # only non-zero return, so surface it and skip.
+            if ! state=$(read_merge_state "$pr"); then
               echo "PR #$pr — ERROR: gh pr view failed (could not read mergeStateStatus); skipping"
               failed=$((failed + 1)); continue
             fi
             # CLEAN is the "ready to merge/queue" signal; everything else
-            # (BLOCKED, BEHIND, UNKNOWN, ...) takes the best-effort arm path.
+            # (BLOCKED, BEHIND, UNKNOWN-after-retries, ...) takes the arm path.
             echo "PR #$pr — mergeStateStatus=$state"
 
             err=$(mktemp)
