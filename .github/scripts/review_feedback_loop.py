@@ -157,7 +157,65 @@ def _run(cmd: list[str], check: bool = True) -> subprocess.CompletedProcess[str]
     return result
 
 
-def _arm_auto_merge(pr_number: int) -> tuple[bool, str | None]:
+def _auto_merge_state(owner: str, repo: str, pr_number: int) -> tuple[bool, bool]:
+    """Return ``(auto_merge_enabled, in_merge_queue)`` for the PR.
+
+    Fail-open to ``(False, False)``: if the state can't be read, the caller
+    behaves exactly as it did before this guard existed (a plain ``--auto``
+    enable) — never worse than the old code, and a transient read error never
+    evicts a queued PR."""
+    try:
+        data = _graphql(
+            """
+            query($owner:String!, $name:String!, $number:Int!) {
+              repository(owner: $owner, name: $name) {
+                pullRequest(number: $number) {
+                  autoMergeRequest { enabledAt }
+                  mergeQueueEntry { id }
+                }
+              }
+            }
+            """,
+            owner=owner,
+            name=repo,
+            number=pr_number,
+        )
+    except (RuntimeError, ValueError):
+        # RuntimeError: gh/_graphql failure or GraphQL errors.
+        # ValueError: a malformed JSON payload (json.JSONDecodeError subclasses it).
+        # Both fail open so the arming path keeps its pre-guard behavior.
+        return (False, False)
+    pull = (data.get("repository") or {}).get("pullRequest") or {}
+    enabled = bool((pull.get("autoMergeRequest") or {}).get("enabledAt"))
+    queued = bool((pull.get("mergeQueueEntry") or {}).get("id"))
+    return (enabled, queued)
+
+
+def _arm_auto_merge(owner: str, repo: str, pr_number: int) -> tuple[bool, str | None]:
+    """Enable merge-queue auto-merge for the PR and ensure it actually enqueues.
+
+    Returns ``(armed, error)``. ``armed`` is True when auto-merge is on and, for a
+    ready PR, the enqueue transition has been (re-)fired."""
+    # On a merge-queue repo, `gh pr merge --auto` only calls
+    # enablePullRequestAutoMerge. Re-enabling it on a PR that ALREADY has
+    # auto-merge is an idempotent no-op ("! The merge strategy for main is set by
+    # the merge queue", exit 0) that never re-fires the ready-transition which
+    # actually enqueues the PR — so a PR armed while it was blocked never enters
+    # the queue when it later goes green (verified on #508). If auto-merge is on
+    # but the PR is NOT yet queued, toggle off->on to re-fire the transition. If
+    # it is already queued, leave it alone — disabling would evict it and restart
+    # its queue run.
+    enabled, queued = _auto_merge_state(owner, repo, pr_number)
+    if enabled and queued:
+        return True, None
+    if enabled and not queued:
+        # Checked here: if the disable leg fails the PR stays armed and the
+        # `--auto` below is the idempotent no-op again — report the failure
+        # rather than falsely claim a successful re-arm.
+        try:
+            _disable_auto_merge(pr_number, check=True)
+        except RuntimeError as exc:
+            return False, f"failed to disable existing auto-merge before re-arming: {exc}"
     try:
         _run(
             [
@@ -218,7 +276,7 @@ def _maybe_arm_auto_merge(
         return {"armed": False, "reason": "not eligible for auto-merge"}
     if _pr_touches_protected_path(owner, repo, pr_number):
         return {"armed": False, "reason": "protected/governance path — awaits human review"}
-    armed, arm_error = _arm_auto_merge(pr_number)
+    armed, arm_error = _arm_auto_merge(owner, repo, pr_number)
     if armed:
         # Tag the PR `merge/auto` so the disable path (apply_review_state_projection,
         # which keys disablement on this label) can later un-arm it if a new thread or a
@@ -918,8 +976,8 @@ def _edit_label(pr_number: int, *, add: str | None = None, remove: str | None = 
         _run(["gh", "pr", "edit", str(pr_number), "--remove-label", remove], check=False)
 
 
-def _disable_auto_merge(pr_number: int) -> None:
-    _run(["gh", "pr", "merge", str(pr_number), "--disable-auto"], check=False)
+def _disable_auto_merge(pr_number: int, *, check: bool = False) -> None:
+    _run(["gh", "pr", "merge", str(pr_number), "--disable-auto"], check=check)
 
 
 def _comment(pr_number: int, body: str) -> None:
@@ -1277,10 +1335,12 @@ def _build_reconciliation_report(
             DEFAULT_AUTO_MERGE_LABEL in current_labels
             and bool(state["eligible_for_auto_merge"])
             and not bool(state["merge_blocked"])
-            and not auto_merge_enabled
             and not touches_protected_path
         ):
-            auto_merge_enabled, arm_error = _arm_auto_merge(pr_number)
+            # No `and not auto_merge_enabled` guard: an already-armed PR may be
+            # armed-but-not-queued (the stuck case), and _arm_auto_merge is
+            # state-aware — it no-ops a queued PR and toggles a stuck one.
+            auto_merge_enabled, arm_error = _arm_auto_merge(owner, repo, pr_number)
             if auto_merge_enabled:
                 rearmed.append(pr_number)
             else:
@@ -1518,7 +1578,7 @@ def enable_auto_merge(args: argparse.Namespace) -> int:
         if _pr_touches_protected_path(args.owner, args.repo, args.pr_number):
             arm_error = "protected/governance path — awaits human review"
         else:
-            enabled, arm_error = _arm_auto_merge(args.pr_number)
+            enabled, arm_error = _arm_auto_merge(args.owner, args.repo, args.pr_number)
 
     print(
         json.dumps(
