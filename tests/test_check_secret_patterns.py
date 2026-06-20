@@ -98,6 +98,29 @@ class SecretCheckerTest(unittest.TestCase):
             findings = secret_checker.findings_for_paths([".op/docs/guide.md"], staged=False)
         self.assertEqual({finding.rule for finding in findings}, {"secret_path"})
 
+    def test_rejects_preserved_and_windows_copy_secret_path_variants(self) -> None:
+        with unittest.mock.patch.object(
+            secret_checker, "worktree_file_bytes", return_value=b"reference only"
+        ):
+            findings = secret_checker.findings_for_paths(
+                [
+                    ".claude/.credentials (2).json",
+                    ".codex/auth.json.home",
+                    ".codex/auth.json.home.abcdef123456",
+                    ".ssh/claude_code_signing (2)",
+                    ".ssh/allowed_signers (2)",
+                    ".ollama/id_ed25519 (2)",
+                ],
+                staged=False,
+            )
+        self.assertEqual(len(findings), 6)
+        self.assertEqual({finding.rule for finding in findings}, {"secret_path"})
+
+    def test_normalized_path_variants_strip_salvage_suffixes(self) -> None:
+        variants = secret_checker.normalized_path_variants(
+            ".codex/auth (2).json.home.abcdef123456"
+        )
+        self.assertIn(".codex/auth.json", variants)
 
 if __name__ == "__main__":
     unittest.main()
