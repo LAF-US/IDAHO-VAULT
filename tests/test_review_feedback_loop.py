@@ -460,7 +460,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 11)
         self.assertTrue(enabled)
         self.assertIsNone(arm_error)
-        disable.assert_called_once_with(11)
+        disable.assert_called_once_with(11, check=True)
         run.assert_called_once_with(
             ["gh", "pr", "merge", "11", "--squash", "--delete-branch", "--auto"]
         )
@@ -477,6 +477,19 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertTrue(enabled)
         self.assertIsNone(arm_error)
         disable.assert_not_called()
+        run.assert_not_called()
+
+    def test_arm_auto_merge_reports_failure_when_disable_leg_fails(self) -> None:
+        # Armed-but-not-queued, but the disable leg of the toggle fails: do NOT
+        # run the (now no-op) --auto and falsely claim success — surface the error.
+        with mock.patch.object(
+            review_feedback_loop, "_auto_merge_state", return_value=(True, False)
+        ), mock.patch.object(
+            review_feedback_loop, "_disable_auto_merge", side_effect=RuntimeError("nope")
+        ), mock.patch.object(review_feedback_loop, "_run") as run:
+            enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 13)
+        self.assertFalse(enabled)
+        self.assertIn("failed to disable", arm_error)
         run.assert_not_called()
 
     # ----- protected-path guard + guarded arm (#521/#527 reversal, 2026-06-17) -----
