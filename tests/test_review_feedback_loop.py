@@ -428,10 +428,69 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         )
 
         with mock.patch.object(review_feedback_loop, "_run", side_effect=error):
-            enabled, arm_error = review_feedback_loop._arm_auto_merge(289)
+            enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 289)
 
         self.assertFalse(enabled)
         self.assertIn("not authorized to enable auto-merge", arm_error)
+
+    def test_arm_auto_merge_plain_enable_when_off(self) -> None:
+        # Auto-merge not yet enabled → a single fresh `--auto`, no disable toggle.
+        with mock.patch.object(
+            review_feedback_loop, "_auto_merge_state", return_value=(False, False)
+        ), mock.patch.object(
+            review_feedback_loop, "_disable_auto_merge"
+        ) as disable, mock.patch.object(review_feedback_loop, "_run") as run:
+            enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 10)
+        self.assertTrue(enabled)
+        self.assertIsNone(arm_error)
+        disable.assert_not_called()
+        run.assert_called_once_with(
+            ["gh", "pr", "merge", "10", "--squash", "--delete-branch", "--auto"]
+        )
+
+    def test_arm_auto_merge_toggles_when_armed_but_not_queued(self) -> None:
+        # The #508 case: auto-merge enabled but never enqueued. A plain `--auto`
+        # would be an idempotent no-op, so disable->re-enable to re-fire the
+        # ready-transition that puts the PR in the queue.
+        with mock.patch.object(
+            review_feedback_loop, "_auto_merge_state", return_value=(True, False)
+        ), mock.patch.object(
+            review_feedback_loop, "_disable_auto_merge"
+        ) as disable, mock.patch.object(review_feedback_loop, "_run") as run:
+            enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 11)
+        self.assertTrue(enabled)
+        self.assertIsNone(arm_error)
+        disable.assert_called_once_with(11, check=True)
+        run.assert_called_once_with(
+            ["gh", "pr", "merge", "11", "--squash", "--delete-branch", "--auto"]
+        )
+
+    def test_arm_auto_merge_leaves_queued_pr_untouched(self) -> None:
+        # Already in the merge queue → do nothing; disabling would evict it and
+        # restart its queue run.
+        with mock.patch.object(
+            review_feedback_loop, "_auto_merge_state", return_value=(True, True)
+        ), mock.patch.object(
+            review_feedback_loop, "_disable_auto_merge"
+        ) as disable, mock.patch.object(review_feedback_loop, "_run") as run:
+            enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 12)
+        self.assertTrue(enabled)
+        self.assertIsNone(arm_error)
+        disable.assert_not_called()
+        run.assert_not_called()
+
+    def test_arm_auto_merge_reports_failure_when_disable_leg_fails(self) -> None:
+        # Armed-but-not-queued, but the disable leg of the toggle fails: do NOT
+        # run the (now no-op) --auto and falsely claim success — surface the error.
+        with mock.patch.object(
+            review_feedback_loop, "_auto_merge_state", return_value=(True, False)
+        ), mock.patch.object(
+            review_feedback_loop, "_disable_auto_merge", side_effect=RuntimeError("nope")
+        ), mock.patch.object(review_feedback_loop, "_run") as run:
+            enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 13)
+        self.assertFalse(enabled)
+        self.assertIn("failed to disable", arm_error)
+        run.assert_not_called()
 
     # ----- protected-path guard + guarded arm (#521/#527 reversal, 2026-06-17) -----
 
@@ -472,7 +531,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
                 "o", "r", 5, {"eligible_for_auto_merge": True}
             )
         self.assertTrue(result["armed"])
-        arm.assert_called_once_with(5)
+        arm.assert_called_once_with("o", "r", 5)
         # The arm tags merge/auto so the disable path can later un-arm if it becomes blocked.
         run.assert_called_once_with(
             ["gh", "pr", "edit", "5", "--add-label", review_feedback_loop.DEFAULT_AUTO_MERGE_LABEL]
@@ -555,7 +614,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         ) as arm, contextlib.redirect_stdout(io.StringIO()):
             result = review_feedback_loop.sync_pr(args)
         self.assertEqual(result, 0)
-        arm.assert_called_once_with(200)
+        arm.assert_called_once_with("LAF-US", "IDAHO-VAULT", 200)
 
     def test_resolve_outdated_resolvable_attests_only_outdated_bot_threads(self) -> None:
         # The event-driven outdated-resolve: attest-resolves the OUTDATED bot thread and
@@ -672,7 +731,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertEqual(result, 0)
         edit_label.assert_any_call(88, add=review_feedback_loop.DEFAULT_AUTO_MERGE_LABEL)
         comment.assert_called_once()
-        arm_auto_merge.assert_called_once_with(88)
+        arm_auto_merge.assert_called_once_with("LAF-US", "IDAHO-VAULT", 88)
 
     def test_reconcile_open_prs_refuses_to_arm_protected_path_pr(self) -> None:
         # The protected-path guard: even an eligible PR that touches governance/CI surfaces
