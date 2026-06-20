@@ -88,7 +88,10 @@ def _pr(
 
 
 class ReviewFeedbackLoopTest(unittest.TestCase):
-    def test_low_risk_agent_pr_never_becomes_auto_merge_eligible(self) -> None:
+    def test_low_risk_agent_pr_becomes_auto_merge_eligible_after_grace(self) -> None:
+        # Reversal of the #521/#527 fail-close (2026-06-17): a low-risk PR with no blocking
+        # feedback is auto-merge-eligible once the grace window elapses. Within grace it is
+        # not yet eligible but should carry the review/pending label.
         now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
 
         early_state = review_feedback_loop.evaluate_review_state(
@@ -108,12 +111,12 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
 
         self.assertTrue(early_state["low_risk"])
         self.assertFalse(early_state["grace_elapsed"])
-        self.assertFalse(early_state["should_have_agent_review_pending"])
+        self.assertTrue(early_state["should_have_agent_review_pending"])
         self.assertFalse(early_state["eligible_for_auto_merge"])
 
         self.assertTrue(ready_state["grace_elapsed"])
+        self.assertTrue(ready_state["eligible_for_auto_merge"])
         self.assertFalse(ready_state["should_have_agent_review_pending"])
-        self.assertFalse(ready_state["eligible_for_auto_merge"])
 
     def test_risk_label_is_canonical_over_body_marker(self) -> None:
         """Label-based risk tier wins when body marker was overwritten by an editor."""
@@ -123,7 +126,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         state = review_feedback_loop.evaluate_review_state(
             _pr(
                 created_at=now - timedelta(minutes=45),
-                labels=("risk/low", "agent-review-pending"),
+                labels=("risk/low", review_feedback_loop.DEFAULT_REVIEW_PENDING_LABEL),
                 body="## Real description\n\nSummary of changes.",
             ),
             now=now,
@@ -131,7 +134,8 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
 
         self.assertTrue(state["low_risk"])
         self.assertTrue(state["grace_elapsed"])
-        self.assertFalse(state["eligible_for_auto_merge"])
+        # Reversal (2026-06-17): low-risk + grace + unblocked is now eligible.
+        self.assertTrue(state["eligible_for_auto_merge"])
 
     def test_high_risk_label_wins_when_low_and_high_are_both_present(self) -> None:
         state = review_feedback_loop.evaluate_review_state(
@@ -331,21 +335,40 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             grace_minutes=30,
         )
 
+        # The helper returns a mix of applied/not-applied results so we can assert sync_pr
+        # counts only the applied ones (resolved_count) — and, because that count is > 0,
+        # re-fetches the PR to recompute state against the now-cleared threads.
+        outdated_results = [
+            {"thread_id": "A", "eligible": True, "applied": True, "reason": ""},
+            {"thread_id": "B", "eligible": False, "applied": False, "reason": "blocked"},
+            {"thread_id": "C", "eligible": True, "applied": True, "reason": ""},
+        ]
+
         with mock.patch.object(review_feedback_loop, "ensure_labels"), mock.patch.object(
             review_feedback_loop,
             "_fetch_pr",
             return_value=_pr(labels=(review_feedback_loop.DEFAULT_PENDING_LABEL,)),
+        ) as fetch_pr, mock.patch.object(
+            review_feedback_loop, "_viewer_login", return_value="github-actions[bot]"
         ), mock.patch.object(
             review_feedback_loop,
-            "_resolve_outdated_advisory_threads",
-            return_value=0,
-        ), mock.patch.object(
+            "_resolve_outdated_resolvable_threads",
+            return_value=outdated_results,
+        ) as resolve_outdated, mock.patch.object(
             review_feedback_loop, "apply_review_state_projection", return_value=[]
         ) as projection:
             result = review_feedback_loop.sync_pr(args)
 
         self.assertEqual(result, 0)
         self.assertTrue(projection.call_args.kwargs["clear_apply_pending"])
+        # Applies on the event path; the looker is left None so the helper resolves it
+        # lazily (only if there's a stale thread) — no eager _viewer_login() round-trip.
+        resolve_outdated.assert_called_once()
+        self.assertIsNone(resolve_outdated.call_args.args[1])
+        self.assertEqual(resolve_outdated.call_args.kwargs["apply"], True)
+        # Two of three results applied -> resolved_count == 2 (> 0) -> PR re-fetched once
+        # more (initial fetch + the post-resolve re-fetch).
+        self.assertEqual(fetch_pr.call_count, 2)
 
     def test_enable_auto_merge_refuses_to_arm_when_derived_state_is_blocking(self) -> None:
         args = SimpleNamespace(
@@ -405,12 +428,268 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         )
 
         with mock.patch.object(review_feedback_loop, "_run", side_effect=error):
-            enabled, arm_error = review_feedback_loop._arm_auto_merge(289)
+            enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 289)
 
         self.assertFalse(enabled)
         self.assertIn("not authorized to enable auto-merge", arm_error)
 
-    def test_reconcile_open_prs_does_not_promote_agent_prs(self) -> None:
+    def test_arm_auto_merge_plain_enable_when_off(self) -> None:
+        # Auto-merge not yet enabled → a single fresh `--auto`, no disable toggle.
+        with mock.patch.object(
+            review_feedback_loop, "_auto_merge_state", return_value=(False, False)
+        ), mock.patch.object(
+            review_feedback_loop, "_disable_auto_merge"
+        ) as disable, mock.patch.object(review_feedback_loop, "_run") as run:
+            enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 10)
+        self.assertTrue(enabled)
+        self.assertIsNone(arm_error)
+        disable.assert_not_called()
+        run.assert_called_once_with(
+            ["gh", "pr", "merge", "10", "--squash", "--delete-branch", "--auto"]
+        )
+
+    def test_arm_auto_merge_toggles_when_armed_but_not_queued(self) -> None:
+        # The #508 case: auto-merge enabled but never enqueued. A plain `--auto`
+        # would be an idempotent no-op, so disable->re-enable to re-fire the
+        # ready-transition that puts the PR in the queue.
+        with mock.patch.object(
+            review_feedback_loop, "_auto_merge_state", return_value=(True, False)
+        ), mock.patch.object(
+            review_feedback_loop, "_disable_auto_merge"
+        ) as disable, mock.patch.object(review_feedback_loop, "_run") as run:
+            enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 11)
+        self.assertTrue(enabled)
+        self.assertIsNone(arm_error)
+        disable.assert_called_once_with(11, check=True)
+        run.assert_called_once_with(
+            ["gh", "pr", "merge", "11", "--squash", "--delete-branch", "--auto"]
+        )
+
+    def test_arm_auto_merge_leaves_queued_pr_untouched(self) -> None:
+        # Already in the merge queue → do nothing; disabling would evict it and
+        # restart its queue run.
+        with mock.patch.object(
+            review_feedback_loop, "_auto_merge_state", return_value=(True, True)
+        ), mock.patch.object(
+            review_feedback_loop, "_disable_auto_merge"
+        ) as disable, mock.patch.object(review_feedback_loop, "_run") as run:
+            enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 12)
+        self.assertTrue(enabled)
+        self.assertIsNone(arm_error)
+        disable.assert_not_called()
+        run.assert_not_called()
+
+    def test_arm_auto_merge_reports_failure_when_disable_leg_fails(self) -> None:
+        # Armed-but-not-queued, but the disable leg of the toggle fails: do NOT
+        # run the (now no-op) --auto and falsely claim success — surface the error.
+        with mock.patch.object(
+            review_feedback_loop, "_auto_merge_state", return_value=(True, False)
+        ), mock.patch.object(
+            review_feedback_loop, "_disable_auto_merge", side_effect=RuntimeError("nope")
+        ), mock.patch.object(review_feedback_loop, "_run") as run:
+            enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 13)
+        self.assertFalse(enabled)
+        self.assertIn("failed to disable", arm_error)
+        run.assert_not_called()
+
+    # ----- protected-path guard + guarded arm (#521/#527 reversal, 2026-06-17) -----
+
+    def test_pr_touches_protected_path_matches_governance_and_ci(self) -> None:
+        # A changed file under a protected glob → True; an ordinary doc-only PR → False.
+        protected = mock.Mock(stdout="docs/notes.md\n.github/workflows/ci.yml\nREADME.md\n")
+        plain = mock.Mock(stdout="docs/notes.md\nREADME.md\n")
+        with mock.patch.object(review_feedback_loop, "_run", return_value=protected):
+            self.assertTrue(
+                review_feedback_loop._pr_touches_protected_path("o", "r", 1)
+            )
+        with mock.patch.object(review_feedback_loop, "_run", return_value=plain):
+            self.assertFalse(
+                review_feedback_loop._pr_touches_protected_path("o", "r", 2)
+            )
+
+    def test_pr_touches_protected_path_fails_closed_on_fetch_error(self) -> None:
+        # If the changed-file list can't be fetched, treat the PR as protected (never widen
+        # what gets armed on a transient API failure).
+        with mock.patch.object(
+            review_feedback_loop, "_run", side_effect=RuntimeError("api down")
+        ):
+            self.assertTrue(
+                review_feedback_loop._pr_touches_protected_path("o", "r", 3)
+            )
+
+    def test_maybe_arm_arms_eligible_non_protected_pr(self) -> None:
+        # On a successful arm, the merge/auto label is applied via a CHECKED gh call so the
+        # write can fail-close (see test below). Mock _run for that label edit.
+        with mock.patch.object(
+            review_feedback_loop, "_pr_touches_protected_path", return_value=False
+        ), mock.patch.object(
+            review_feedback_loop, "_arm_auto_merge", return_value=(True, None)
+        ) as arm, mock.patch.object(
+            review_feedback_loop, "_run"
+        ) as run:
+            result = review_feedback_loop._maybe_arm_auto_merge(
+                "o", "r", 5, {"eligible_for_auto_merge": True}
+            )
+        self.assertTrue(result["armed"])
+        arm.assert_called_once_with("o", "r", 5)
+        # The arm tags merge/auto so the disable path can later un-arm if it becomes blocked.
+        run.assert_called_once_with(
+            ["gh", "pr", "edit", "5", "--add-label", review_feedback_loop.DEFAULT_AUTO_MERGE_LABEL]
+        )
+
+    def test_maybe_arm_fails_closed_when_label_write_fails(self) -> None:
+        # If arming succeeds but the merge/auto label write fails, disable the auto-merge we
+        # just enabled and report failure — never leave an armed PR the disable path can't track.
+        with mock.patch.object(
+            review_feedback_loop, "_pr_touches_protected_path", return_value=False
+        ), mock.patch.object(
+            review_feedback_loop, "_arm_auto_merge", return_value=(True, None)
+        ), mock.patch.object(
+            review_feedback_loop, "_run", side_effect=RuntimeError("label write failed")
+        ), mock.patch.object(
+            review_feedback_loop, "_disable_auto_merge"
+        ) as disable:
+            result = review_feedback_loop._maybe_arm_auto_merge(
+                "o", "r", 6, {"eligible_for_auto_merge": True}
+            )
+        self.assertFalse(result["armed"])
+        self.assertIn("label write failed", result["reason"])
+        disable.assert_called_once_with(6)
+
+    def test_maybe_arm_refuses_protected_path(self) -> None:
+        with mock.patch.object(
+            review_feedback_loop, "_pr_touches_protected_path", return_value=True
+        ), mock.patch.object(review_feedback_loop, "_arm_auto_merge") as arm:
+            result = review_feedback_loop._maybe_arm_auto_merge(
+                "o", "r", 6, {"eligible_for_auto_merge": True}
+            )
+        self.assertFalse(result["armed"])
+        self.assertIn("protected", result["reason"])
+        arm.assert_not_called()
+
+    def test_maybe_arm_noops_when_not_eligible_without_touching_api(self) -> None:
+        # Not eligible → never even fetches the file list (no gh call) and never arms.
+        with mock.patch.object(
+            review_feedback_loop, "_pr_touches_protected_path"
+        ) as protected, mock.patch.object(
+            review_feedback_loop, "_arm_auto_merge"
+        ) as arm:
+            result = review_feedback_loop._maybe_arm_auto_merge(
+                "o", "r", 7, {"eligible_for_auto_merge": False}
+            )
+        self.assertFalse(result["armed"])
+        protected.assert_not_called()
+        arm.assert_not_called()
+
+    def test_sync_pr_arms_eligible_low_risk_pr_when_threads_clear(self) -> None:
+        # End-to-end through sync_pr: a low-risk, grace-elapsed PR with no current threads
+        # is armed (guarded). Mirrors "arm when the last blocking thread clears".
+        now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
+        args = SimpleNamespace(
+            owner="LAF-US",
+            repo="IDAHO-VAULT",
+            pr_number=200,
+            sync_actor="someone",
+            grace_minutes=30,
+        )
+        ready = _pr(
+            number=200,
+            created_at=now - timedelta(minutes=45),
+            labels=(review_feedback_loop.RISK_LOW_LABEL,),
+        )
+        with mock.patch.object(review_feedback_loop, "ensure_labels"), mock.patch.object(
+            review_feedback_loop, "_fetch_pr", return_value=ready
+        ), mock.patch.object(
+            review_feedback_loop, "_viewer_login", return_value="github-actions[bot]"
+        ), mock.patch.object(
+            review_feedback_loop, "_resolve_outdated_resolvable_threads", return_value=[]
+        ), mock.patch.object(
+            review_feedback_loop, "apply_review_state_projection", return_value=[]
+        ), mock.patch.object(
+            review_feedback_loop, "_pr_touches_protected_path", return_value=False
+        ), mock.patch.object(
+            review_feedback_loop, "_run"
+        ), mock.patch.object(
+            review_feedback_loop, "_arm_auto_merge", return_value=(True, None)
+        ) as arm, contextlib.redirect_stdout(io.StringIO()):
+            result = review_feedback_loop.sync_pr(args)
+        self.assertEqual(result, 0)
+        arm.assert_called_once_with("LAF-US", "IDAHO-VAULT", 200)
+
+    def test_resolve_outdated_resolvable_attests_only_outdated_bot_threads(self) -> None:
+        # The event-driven outdated-resolve: attest-resolves the OUTDATED bot thread and
+        # leaves the current (substantive needs-fix) one alone — a caught error to fix,
+        # not to dispose of.
+        outdated = _thread(authors=("coderabbitai",), author_type="Bot", outdated=True)
+        outdated["id"] = "OUT"
+        current = _thread(authors=("chatgpt-codex-connector",), author_type="Bot", outdated=False)
+        current["id"] = "CUR"
+        pr = _pr(threads=(outdated, current))
+        seen: list[str] = []
+
+        def fake_attest(pr_arg, thread_arg, looker, *a, **k):
+            seen.append(thread_arg["id"])
+            return {"thread_id": thread_arg["id"], "eligible": True, "applied": True, "reason": ""}
+
+        with mock.patch.object(review_feedback_loop, "attest_and_resolve", side_effect=fake_attest):
+            results = review_feedback_loop._resolve_outdated_resolvable_threads(
+                pr, "github-actions[bot]", apply=True
+            )
+        self.assertEqual(seen, ["OUT"])  # only the outdated bot thread is touched
+        self.assertEqual(sum(1 for r in results if r["applied"]), 1)
+
+    def test_resolve_outdated_resolvable_records_failure_when_attest_raises(self) -> None:
+        # A transient gh/GraphQL failure on one thread must not abort the pass: the thread
+        # gets a non-applied result whose reason carries the error, so the JSON report (and
+        # the stderr log) stay diagnosable.
+        outdated = _thread(authors=("coderabbitai",), author_type="Bot", outdated=True)
+        outdated["id"] = "OUT"
+        pr = _pr(threads=(outdated,))
+
+        with mock.patch.object(
+            review_feedback_loop,
+            "attest_and_resolve",
+            side_effect=RuntimeError("boom: attest failed"),
+        ), contextlib.redirect_stderr(io.StringIO()):
+            results = review_feedback_loop._resolve_outdated_resolvable_threads(
+                pr, "github-actions[bot]", apply=True
+            )
+
+        self.assertEqual(len(results), 1)
+        result = results[0]
+        self.assertEqual(result["thread_id"], "OUT")
+        self.assertFalse(result["eligible"])
+        self.assertFalse(result["applied"])
+        self.assertIn("boom: attest failed", result["reason"])
+
+    def test_resolve_outdated_resolvable_resolves_looker_lazily(self) -> None:
+        # When looker is omitted, _viewer_login() is paid for ONLY if there's a stale
+        # thread to clear — a push with nothing outdated costs no extra round-trip.
+        current = _thread(authors=("coderabbitai",), author_type="Bot", outdated=False)
+        pr_no_work = _pr(threads=(current,))
+        with mock.patch.object(
+            review_feedback_loop, "_viewer_login", return_value="github-actions[bot]"
+        ) as viewer_login, mock.patch.object(
+            review_feedback_loop, "attest_and_resolve"
+        ):
+            review_feedback_loop._resolve_outdated_resolvable_threads(pr_no_work)
+        viewer_login.assert_not_called()
+
+        outdated = _thread(authors=("coderabbitai",), author_type="Bot", outdated=True)
+        pr_with_work = _pr(threads=(outdated,))
+        with mock.patch.object(
+            review_feedback_loop, "_viewer_login", return_value="github-actions[bot]"
+        ) as viewer_login, mock.patch.object(
+            review_feedback_loop, "attest_and_resolve"
+        ) as attest:
+            review_feedback_loop._resolve_outdated_resolvable_threads(pr_with_work)
+        viewer_login.assert_called_once()
+        # The lazily-resolved actor is the witness passed to attest_and_resolve.
+        self.assertEqual(attest.call_args.args[2], "github-actions[bot]")
+
+    def test_reconcile_open_prs_promotes_and_arms_eligible_low_risk_pr(self) -> None:
+        # Reversal (2026-06-17): a low-risk, grace-elapsed, unblocked, non-protected-path PR
+        # is now promoted to merge/auto and armed for the merge queue.
         args = SimpleNamespace(
             owner="LAF-US",
             repo="IDAHO-VAULT",
@@ -431,11 +710,15 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             "_fetch_pr",
             side_effect=[ready_pr],
         ), mock.patch.object(
+            review_feedback_loop, "_viewer_login", return_value="github-actions[bot]"
+        ), mock.patch.object(
             review_feedback_loop,
-            "_resolve_outdated_advisory_threads",
-            return_value=0,
+            "_resolve_outdated_resolvable_threads",
+            return_value=[],
         ), mock.patch.object(
             review_feedback_loop, "apply_review_state_projection", return_value=[]
+        ), mock.patch.object(
+            review_feedback_loop, "_pr_touches_protected_path", return_value=False
         ), mock.patch.object(
             review_feedback_loop, "_edit_label"
         ) as edit_label, mock.patch.object(
@@ -446,8 +729,43 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             result = review_feedback_loop.reconcile_open_prs(args)
 
         self.assertEqual(result, 0)
-        edit_label.assert_not_called()
-        comment.assert_not_called()
+        edit_label.assert_any_call(88, add=review_feedback_loop.DEFAULT_AUTO_MERGE_LABEL)
+        comment.assert_called_once()
+        arm_auto_merge.assert_called_once_with("LAF-US", "IDAHO-VAULT", 88)
+
+    def test_reconcile_open_prs_refuses_to_arm_protected_path_pr(self) -> None:
+        # The protected-path guard: even an eligible PR that touches governance/CI surfaces
+        # is NOT armed — it waits for a human.
+        args = SimpleNamespace(owner="LAF-US", repo="IDAHO-VAULT", grace_minutes=30)
+        # Eligible (risk/low + grace + merge/auto label, unblocked) — so the ONLY thing
+        # stopping the arm is the protected-path guard.
+        ready_pr = _pr(
+            number=91,
+            created_at=datetime(2026, 4, 16, 1, 0, tzinfo=timezone.utc),
+            labels=(
+                review_feedback_loop.RISK_LOW_LABEL,
+                review_feedback_loop.DEFAULT_AUTO_MERGE_LABEL,
+            ),
+        )
+
+        with mock.patch.object(review_feedback_loop, "ensure_labels"), mock.patch.object(
+            review_feedback_loop, "_list_open_pr_numbers", return_value=[91]
+        ), mock.patch.object(
+            review_feedback_loop, "_fetch_pr", side_effect=[ready_pr]
+        ), mock.patch.object(
+            review_feedback_loop, "_viewer_login", return_value="github-actions[bot]"
+        ), mock.patch.object(
+            review_feedback_loop, "_resolve_outdated_resolvable_threads", return_value=[]
+        ), mock.patch.object(
+            review_feedback_loop, "apply_review_state_projection", return_value=[]
+        ), mock.patch.object(
+            review_feedback_loop, "_pr_touches_protected_path", return_value=True
+        ), mock.patch.object(
+            review_feedback_loop, "_arm_auto_merge"
+        ) as arm_auto_merge:
+            result = review_feedback_loop.reconcile_open_prs(args)
+
+        self.assertEqual(result, 0)
         arm_auto_merge.assert_not_called()
 
     def test_reconcile_open_prs_reports_auth_blocked_auto_merge(self) -> None:
@@ -466,9 +784,11 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             "_fetch_pr",
             side_effect=[ready_pr],
         ), mock.patch.object(
+            review_feedback_loop, "_viewer_login", return_value="github-actions[bot]"
+        ), mock.patch.object(
             review_feedback_loop,
-            "_resolve_outdated_advisory_threads",
-            return_value=0,
+            "_resolve_outdated_resolvable_threads",
+            return_value=[],
         ), mock.patch.object(
             review_feedback_loop,
             "evaluate_review_state",
@@ -482,6 +802,8 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         ), mock.patch.object(
             review_feedback_loop, "apply_review_state_projection", return_value=[]
         ), mock.patch.object(
+            review_feedback_loop, "_pr_touches_protected_path", return_value=False
+        ), mock.patch.object(
             review_feedback_loop, "_arm_auto_merge", return_value=(
                 False,
                 "GitHub Actions is not authorized to enable auto-merge on the protected base branch.",
@@ -493,9 +815,51 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
                 grace_minutes=30,
             )
 
+        # Reversal (2026-06-17): the PR is eligible and armed; the arm is rejected by the
+        # protected base branch, so it is reported as authorization-blocked (not silently green).
         self.assertEqual(report["rearmed_prs"], [])
-        self.assertEqual(report["auto_merge_authorization_blocked"], [])
-        self.assertIsNone(report["evaluated"][0]["auto_merge_arm_error"])
+        self.assertEqual(report["auto_merge_authorization_blocked"], [89])
+        self.assertEqual(
+            report["evaluated"][0]["auto_merge_arm_error"],
+            "GitHub Actions is not authorized to enable auto-merge on the protected base branch.",
+        )
+
+    def test_reconcile_resolves_outdated_via_witnessed_helper(self) -> None:
+        # The scheduled reconcile lane no longer resolves blindly: it routes through the
+        # WITNESSED, disposition-driven helper (the same one the event path uses), passing
+        # the looker it resolved once for the batch, and counts only the applied results
+        # into resolved_outdated_threads.
+        pr88 = _pr(number=88, created_at=datetime(2026, 4, 16, 1, 0, tzinfo=timezone.utc))
+        outdated_results = [
+            {"thread_id": "A", "eligible": True, "applied": True, "reason": ""},
+            {"thread_id": "B", "eligible": False, "applied": False, "reason": "blocked"},
+        ]
+
+        with mock.patch.object(review_feedback_loop, "ensure_labels"), mock.patch.object(
+            review_feedback_loop, "_list_open_pr_numbers", return_value=[88]
+        ), mock.patch.object(
+            review_feedback_loop, "_fetch_pr", return_value=pr88
+        ), mock.patch.object(
+            review_feedback_loop, "_viewer_login", return_value="github-actions[bot]"
+        ), mock.patch.object(
+            review_feedback_loop,
+            "_resolve_outdated_resolvable_threads",
+            return_value=outdated_results,
+        ) as resolve_outdated, mock.patch.object(
+            review_feedback_loop, "apply_review_state_projection", return_value=[]
+        ), mock.patch.object(
+            review_feedback_loop, "_pr_touches_protected_path", return_value=False
+        ):
+            report = review_feedback_loop._build_reconciliation_report(
+                "LAF-US", "IDAHO-VAULT", grace_minutes=30
+            )
+
+        # Witnessed by the actor resolved once for the batch walk, applying.
+        resolve_outdated.assert_called_once()
+        self.assertEqual(resolve_outdated.call_args.args[1], "github-actions[bot]")
+        self.assertEqual(resolve_outdated.call_args.kwargs["apply"], True)
+        # Only the one applied result is counted (not the blocked one).
+        self.assertEqual(report["resolved_outdated_threads"], 1)
 
     def test_thread_has_attested_look_requires_self_attested_marker(self) -> None:
         # Valid: structured marker whose by= matches the comment's own author.
@@ -1108,6 +1472,58 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         report = review_feedback_loop._classify_pr_for_looker(pr, now=now)
         self.assertEqual(sorted(t["resolution"] for t in report["threads"]), ["apply-suggestion", "needs-fix"])
         self.assertEqual(report["resolution_counts"], {"apply-suggestion": 1, "needs-fix": 1})
+
+    # ----- Propose-only surfacing of committable suggestions (#3, 2026-06-19) -----
+
+    def test_committable_suggestion_count_counts_only_ready_apply_suggestion_threads(self) -> None:
+        # One ready suggestion (counted), one resolved suggestion (skipped), one prose
+        # needs-fix (not a suggestion), one outdated suggestion (outdated-resolvable, not
+        # apply-suggestion). Only the first counts.
+        pr = _pr(
+            threads=(
+                _thread(authors=("coderabbitai",), author_type="Bot", body=self.SUGGESTION_BODY),
+                _thread(
+                    authors=("coderabbitai",), author_type="Bot",
+                    body=self.SUGGESTION_BODY, resolved=True,
+                ),
+                _thread(authors=("chatgpt-codex-connector",), author_type="Bot", body="prose"),
+                _thread(
+                    authors=("coderabbitai",), author_type="Bot",
+                    outdated=True, body=self.SUGGESTION_BODY,
+                ),
+            )
+        )
+        self.assertEqual(review_feedback_loop._count_committable_suggestion_threads(pr), 1)
+
+    def test_state_surfaces_committable_suggestion_count(self) -> None:
+        state = review_feedback_loop.evaluate_review_state(
+            _pr(threads=(_thread(authors=("coderabbitai",), author_type="Bot", body=self.SUGGESTION_BODY),))
+        )
+        self.assertEqual(state["committable_suggestion_threads"], 1)
+
+    def test_projection_adds_suggestions_ready_label_when_present(self) -> None:
+        # Propose-only: a PR with a committable suggestion is flagged review/suggestions-ready
+        # (the engine surfaces it; it does NOT commit the diff).
+        state = review_feedback_loop.evaluate_review_state(
+            _pr(threads=(_thread(authors=("coderabbitai",), author_type="Bot", body=self.SUGGESTION_BODY),))
+        )
+        with mock.patch.object(review_feedback_loop, "_edit_label") as edit_label, \
+                mock.patch.object(review_feedback_loop, "_disable_auto_merge"):
+            actions = review_feedback_loop.apply_review_state_projection(17, state)
+        self.assertIn(f"add:{review_feedback_loop.DEFAULT_SUGGESTIONS_LABEL}", actions)
+        edit_label.assert_any_call(17, add=review_feedback_loop.DEFAULT_SUGGESTIONS_LABEL)
+
+    def test_projection_removes_suggestions_ready_label_when_absent(self) -> None:
+        # The label clears (idempotently) once no committable suggestions remain — e.g.
+        # after they were applied and the threads resolved.
+        state = review_feedback_loop.evaluate_review_state(
+            _pr(labels=(review_feedback_loop.DEFAULT_SUGGESTIONS_LABEL,))
+        )
+        with mock.patch.object(review_feedback_loop, "_edit_label") as edit_label, \
+                mock.patch.object(review_feedback_loop, "_disable_auto_merge"):
+            actions = review_feedback_loop.apply_review_state_projection(17, state)
+        self.assertIn(f"remove:{review_feedback_loop.DEFAULT_SUGGESTIONS_LABEL}", actions)
+        edit_label.assert_any_call(17, remove=review_feedback_loop.DEFAULT_SUGGESTIONS_LABEL)
 
     # ----- render_looker_worklist: read-only durable-issue triage surface -----
 
