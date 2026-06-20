@@ -222,6 +222,7 @@ ambiguity above. If a future task needs TVTropes data, prefer the newer
 3. KaraKaraWitch. (2025). *TvTroper-2025* [Dataset]. Hugging Face.
    https://huggingface.co/datasets/KaraKaraWitch/TvTroper-2025
 4. TVTropes. *tvtropes.org* — source wiki for the scraped content.
+   https://tvtropes.org/
 5. Wikipedia. *TV Tropes* — license history (CC BY-SA → CC BY-NC-SA, July 2012)
    and relicensing controversy. https://en.wikipedia.org/wiki/TV_Tropes
 6. SoylentNews. (2014). *TV Tropes Relicensed its Content — Without Permit.*
