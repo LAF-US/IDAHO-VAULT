@@ -80,6 +80,11 @@ jobs:
           # The list is newline-separated; expanding it inline as `for pr in ${{ ... }}`
           # injects raw newlines and crashes bash ("syntax error near unexpected token").
           PRS: ${{ steps.list-prs.outputs.prs }}
+          # Optional repo/org variables for tuning the merge-state retry. Mapped
+          # in explicitly because vars.* are NOT auto-injected into the shell;
+          # each is empty when unset, so the `${VAR:-N}` defaults below apply.
+          MERGE_STATE_RETRIES: ${{ vars.MERGE_STATE_RETRIES }}
+          MERGE_STATE_DELAY: ${{ vars.MERGE_STATE_DELAY }}
         run: |
           enqueued=0; armed_pending=0; needs_wf_token=0; failed=0; total=0
           repo="$GITHUB_REPOSITORY"
@@ -112,7 +117,9 @@ jobs:
           # seconds later). Re-poll a bounded number of times so a freshly-ready
           # PR is seen as CLEAN and actually enqueued. Returns non-zero ONLY on a
           # real `gh pr view` failure — UNKNOWN is a value, never a command error.
-          # Overridable without editing the workflow (set as env/repo vars to tune).
+          # Tunable without editing the workflow: set repo/org variables
+          # MERGE_STATE_RETRIES / MERGE_STATE_DELAY (mapped into env: above), or
+          # any inherited env var of the same name; unset/empty falls to defaults.
           MERGE_STATE_RETRIES="${MERGE_STATE_RETRIES:-3}"
           MERGE_STATE_DELAY="${MERGE_STATE_DELAY:-2}"
           # Reads the outer job's `repo` (same pattern as is_wf_perm_failure above).
