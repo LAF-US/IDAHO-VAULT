@@ -3,22 +3,6 @@ name: Review Feedback Loop
 on:
   issue_comment:
     types: [created]
-  # Thread resolution is itself an unblock signal. The recompute/arm step below
-  # (sync-pr) gates merge on thread state, but nothing re-ran it when the LAST
-  # thread was resolved out-of-band — a human UI resolve, the engage-outdated
-  # witness, or a Copilot follow-up. So a PR could sit `blocked` with a stale
-  # review/threads-open label until an unrelated push/reopen happened to nudge
-  # it. Wiring pull_request_review_thread closes that gap: resolving the last
-  # thread recomputes state and arms an eligible PR immediately.
-  #
-  # Safe the same way review-response.yml (pull_request_review) already is: this
-  # event runs the workflow from the trusted DEFAULT branch and the job checks
-  # out the default branch, so no untrusted PR-head code executes. Arming is not
-  # merging — branch protection still gates the actual merge. Recursion is
-  # bounded: when sync-pr resolves an outdated thread it uses GITHUB_TOKEN, and
-  # GitHub does not spawn new workflow runs from GITHUB_TOKEN-driven events.
-  pull_request_review_thread:
-    types: [resolved, unresolved]
   pull_request_target:
     types: [opened, reopened, ready_for_review, synchronize]
 
@@ -54,9 +38,7 @@ jobs:
             --comment-body "$COMMENT_BODY"
 
   sweep-review-threads:
-    if: >
-      github.event_name == 'pull_request_target' ||
-      github.event_name == 'pull_request_review_thread'
+    if: github.event_name == 'pull_request_target'
     runs-on: ubuntu-latest
     permissions:
       # contents: write is required to enable merge-queue auto-merge
