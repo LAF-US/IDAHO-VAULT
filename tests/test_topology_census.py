@@ -4,7 +4,6 @@ import importlib.util
 import json
 import shutil
 import subprocess
-import sys
 import unittest
 from pathlib import Path
 from unittest.mock import patch
@@ -89,7 +88,7 @@ class TopologyCensusTest(unittest.TestCase):
                     "# Nest README",
                     "",
                     "Read `INBOX/README.md` and `!/INBOX/README.md` for intake work.",
-                    "Read `!/AGENTS.md` for the live roster.",
+                    "Read `!/AGENTS.md` for registered discovery surfaces.",
                     "",
                 ]
             ),
@@ -100,13 +99,13 @@ class TopologyCensusTest(unittest.TestCase):
                 [
                     "# Agents",
                     "",
-                    "## Direct-Write Agents (Autoloaded)",
+                    "## Registered Direct-Write Surfaces (Autoloaded)",
                     "",
                     "| Agent | Persona | Vendor | Tier | Dotfolder | Git Suffix |",
                     "| --- | --- | --- | --- | --- | --- |",
                     "| OpenAI Codex | **The Lexicographer** | OpenAI | Scripting | .codex/ | -X |",
                     "",
-                    "## Advisory & Specialized Agents",
+                    "## Registered Advisory and Specialized Surfaces",
                     "",
                     "| Agent | Persona | Vendor | Role | Dotfolder |",
                     "| --- | --- | --- | --- | --- |",
@@ -132,10 +131,17 @@ class TopologyCensusTest(unittest.TestCase):
             "# !/CREWAI\n\nThis directory is the live staging surface. It also preserves historical harbor records.\n",
         )
         self._write("!/swarm/README.md", "# !/swarm\n\nActive state room.\n")
-        self._write("!/swarm 1/state/stabilization_plan.md", "# swarm 1\n\n- swarm/state/run_state.md\n")
+        self._write(
+            "!/status-only/README.md",
+            "---\nstatus: active\n---\n\n# Status Only\n",
+        )
+        self._write(
+            "!/swarm 1/state/stabilization_plan.md", "# swarm 1\n\n- swarm/state/run_state.md\n"
+        )
         self._write("!/swarm 1/tools/state_manager.py", "print('state manager')\n")
         self._write(".codex/CODEX.md", "# CODEX\n")
         self._write(".codex/MEMORY/anchor.md", "# memory\n")
+        self._write(".code/CODE.md", "# CODE\n")
         self._write(".bartimaeus/README.md", "# Bartimaeus\n")
         self._write(".shade/archive.md", "# shade archive\n")
         self._write("2026/04/2026-04-17.md", "# daily note\n")
@@ -145,7 +151,9 @@ class TopologyCensusTest(unittest.TestCase):
         self._write("@/tweets/thread.md", "# tweet\n")
         subprocess.run(["git", "add", "."], cwd=self.root, check=True, capture_output=True)
         # Keep ignored creatures local-only.
-        subprocess.run(["git", "reset", "--", "_private", "@"], cwd=self.root, check=True, capture_output=True)
+        subprocess.run(
+            ["git", "reset", "--", "_private", "@"], cwd=self.root, check=True, capture_output=True
+        )
 
     def test_root_scope_counts_ignored_and_tracked_folders_without_move_commands(self) -> None:
         report = topology_census.build_scope_report(self.root, "root")
@@ -154,8 +162,8 @@ class TopologyCensusTest(unittest.TestCase):
         self.assertIn("INBOX", entries)
         self.assertIn("_private", entries)
         self.assertIn("@", entries)
-        self.assertTrue(entries["INBOX"]["appears_in_live_doctrine"])
-        self.assertEqual(entries["INBOX"]["authority_state"], "explicit_live_authority")
+        self.assertTrue(entries["INBOX"]["appears_in_doctrine"])
+        self.assertEqual(entries["INBOX"]["authority_state"], "explicit_doctrine_reference")
         self.assertTrue(entries["_private"]["git_state"]["ignored"])
         self.assertEqual(entries["_private"]["obvious_authority"], "ignore rules only")
 
@@ -163,26 +171,35 @@ class TopologyCensusTest(unittest.TestCase):
         self.assertNotIn("git mv", rendered)
         self.assertNotIn("move_to_", rendered)
 
-    def test_dotfolder_scope_reports_roster_recovery_and_memory(self) -> None:
+    def test_dotfolder_scope_reports_registration_recovery_and_memory(self) -> None:
         report = topology_census.build_scope_report(self.root, "dotfolders")
         entries = {entry["path"]: entry for entry in report["entries"]}
 
         self.assertIn(".codex", entries)
+        self.assertIn(".code", entries)
         self.assertIn(".shade", entries)
-        self.assertTrue(entries[".codex"]["live_roster"])
+        self.assertTrue(entries[".codex"]["registered_surface"])
+        self.assertFalse(entries[".code"]["registered_surface"])
         self.assertTrue(entries[".codex"]["memory_state"]["memory_dir_tracked"])
-        self.assertFalse(entries[".shade"]["live_roster"])
+        self.assertFalse(entries[".shade"]["registered_surface"])
         self.assertTrue(entries[".shade"]["historical_recovery"])
+
+        serialized = json.dumps(report)
+        rendered = topology_census.render_scope_markdown(report)
+        self.assertNotIn("live_roster", serialized)
+        self.assertNotIn("Live roster", rendered)
 
     def test_nest_scope_recurses_and_surfaces_duplicate_internal_systems(self) -> None:
         report = topology_census.build_scope_report(self.root, "nest")
         entries = {entry["path"]: entry for entry in report["entries"]}
 
         self.assertIn("!/INBOX", entries)
+        self.assertIn("!/status-only", entries)
         self.assertIn("!/swarm", entries)
         self.assertIn("!/swarm 1", entries)
-        self.assertEqual(entries["!/swarm"]["room_status"], "ambiguous")
-        self.assertEqual(entries["!/swarm 1"]["room_status"], "ambiguous")
+        self.assertEqual(entries["!/status-only"]["room_classification"], "ambiguous")
+        self.assertEqual(entries["!/swarm"]["room_classification"], "ambiguous")
+        self.assertEqual(entries["!/swarm 1"]["room_classification"], "ambiguous")
         self.assertIn("!/swarm 1", entries["!/swarm"]["duplicate_conflicts"])
         self.assertEqual(
             entries["!/INBOX"]["local_governing_surface"]["path"],

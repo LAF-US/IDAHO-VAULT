@@ -49,9 +49,10 @@ class WorkflowSecurityInvariantsTest(unittest.TestCase):
         self.assertIn("github.event.pull_request.user.type == 'Bot'", eligibility)
         self.assertIn("!contains(github.event.pull_request.labels.*.name, 'risk/high')", eligibility)
         steps = {step["name"]: step for step in eligible_job["steps"]}
+        # Pinned SHA tracks the merged Dependabot bump #361 (fetch-metadata 3.0.0 → 3.1.0).
         self.assertEqual(
             steps["Fetch Dependabot metadata"]["uses"],
-            "dependabot/fetch-metadata@ffa630c65fa7e0ecfa0625b5ceda64399aea1b36",
+            "dependabot/fetch-metadata@25dd0e34f4fe68f24cc83900b1fe3fe149efef98",
         )
         scope_run = steps["Exclude protected live surfaces from automatic merge"]["run"]
         for protected_path in (
@@ -70,14 +71,21 @@ class WorkflowSecurityInvariantsTest(unittest.TestCase):
 
         gate_step = steps["Verify protected required checks exist"]
         self.assertIn("steps.scope.outputs.eligible == 'true'", gate_step["if"])
+        # The gate requires the four policy checks that actually run on every PR
+        # to have a `success` conclusion on the PR head. `submit-pypi` is NOT
+        # gated here: it has no producing workflow in this repo (it lives only in
+        # review_feedback_loop.KNOWN_NOISE_CHECKS as a check to ignore), so polling
+        # for its success would fail-closed as "missing" and permanently disable
+        # auto-merge. De-requiring it is the whole point of the ruleset change in
+        # this PR; the gate is decoupled from required-for-merge to pass-on-PR.
         for context in (
             "check-secret-patterns",
             "check-large-files",
             "check-paths",
             "check-dotfolder-anchors",
-            "submit-pypi",
         ):
             self.assertIn(context, gate_step["run"])
+        self.assertNotIn("submit-pypi", gate_step["run"])
         enable_step = steps["Enable verified auto-merge"]
         self.assertIn("steps.scope.outputs.eligible == 'true'", enable_step["if"])
         self.assertIn("gh pr merge --auto --squash", enable_step["run"])
