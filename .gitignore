@@ -498,10 +498,3 @@ idaho-vault-48b78ec18835.json
 
 # Jupyter checkpoint autosaves (regenerable; never the source of truth)
 .ipynb_checkpoints/
-
-# Local AI runtime session logs (machine-specific; regenerable; not the record).
-# These were committed by accident with Windows-absolute paths
-# (C:\Users\...\.vibe\logs\session\...), whose backslashes made them illegal on
-# Windows and broke `git checkout` on every Windows CI runner. Keep them out.
-.vibe/logs/session/
-**/.vibe/logs/session/
