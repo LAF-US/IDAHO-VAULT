@@ -36,6 +36,11 @@ SECRET_PATH_PATTERNS = (
 ALLOW_PATH_PATTERNS = (
     re.compile(r"(^|/)\.env\.(example|template)$"),
     re.compile(r"\.env\.(example|template)$"),
+    # .op/ in this vault is a governance/documentation chamber, not a live
+    # 1Password CLI config dir. Allow top-level .op/ doc files (.md, .txt)
+    # — [^/]+ intentionally excludes subdirectories — while still
+    # flagging extensionless credential files like .op/config.
+    re.compile(r"^\.op/(1password-hygiene-policy\.json|[^/]+\.(md|txt))$"),
 )
 
 SECRET_CONTENT_PATTERNS = {
@@ -62,11 +67,11 @@ class Finding:
 
 
 def is_allowed_content_match(rule: str, line: str) -> bool:
-    """Allow narrow, explicit non-secret patterns without muting real values."""
-    if "secret-pattern: allow" in line:
-        return True
+    """Allow narrow generic placeholders without muting dedicated token rules."""
     if rule != "generic_secret_assignment":
         return False
+    if "secret-pattern: allow" in line:
+        return True
     return bool(
         re.search(r"\bprocess\.env\.[A-Z0-9_]+\b", line)
         or re.search(r"""(?i)["']?env:[A-Z][A-Z0-9_]*["']?""", line)
