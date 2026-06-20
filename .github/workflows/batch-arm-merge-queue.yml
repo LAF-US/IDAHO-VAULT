@@ -117,15 +117,23 @@ jobs:
           MERGE_STATE_DELAY="${MERGE_STATE_DELAY:-2}"
           # Reads the outer job's `repo` (same pattern as is_wf_perm_failure above).
           read_merge_state() {
-            local pr_num="$1" st="" i=1
+            local pr_num="$1" st="" i=1 err
+            err=$(mktemp)
             while [ "$i" -le "$MERGE_STATE_RETRIES" ]; do
-              st=$(gh pr view "$pr_num" --repo "$repo" --json mergeStateStatus \
-                -q '.mergeStateStatus' 2>/dev/null) || return 1
-              [ "$st" != "UNKNOWN" ] && { printf '%s' "$st"; return 0; }
+              # Capture stderr so a real gh failure (auth / rate-limit / API) is
+              # surfaced in the job log instead of being swallowed behind the
+              # generic skip message the caller prints.
+              if ! st=$(gh pr view "$pr_num" --repo "$repo" --json mergeStateStatus \
+                -q '.mergeStateStatus' 2>"$err"); then
+                echo "  gh pr view failed for #$pr_num: $(tr '\n' ' ' <"$err")" >&2
+                rm -f "$err"; return 1
+              fi
+              [ "$st" != "UNKNOWN" ] && { printf '%s' "$st"; rm -f "$err"; return 0; }
               [ "$i" -lt "$MERGE_STATE_RETRIES" ] && sleep "$MERGE_STATE_DELAY"
               i=$((i + 1))
             done
             printf '%s' "$st"   # still UNKNOWN after retries — treated as not-ready
+            rm -f "$err"
             return 0
           }
 
