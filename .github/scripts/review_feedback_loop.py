@@ -189,6 +189,10 @@ def _auto_merge_state(owner: str, repo: str, pr_number: int) -> tuple[bool, bool
 
 
 def _arm_auto_merge(owner: str, repo: str, pr_number: int) -> tuple[bool, str | None]:
+    """Enable merge-queue auto-merge for the PR and ensure it actually enqueues.
+
+    Returns ``(armed, error)``. ``armed`` is True when auto-merge is on and, for a
+    ready PR, the enqueue transition has been (re-)fired."""
     # On a merge-queue repo, `gh pr merge --auto` only calls
     # enablePullRequestAutoMerge. Re-enabling it on a PR that ALREADY has
     # auto-merge is an idempotent no-op ("! The merge strategy for main is set by
@@ -202,7 +206,13 @@ def _arm_auto_merge(owner: str, repo: str, pr_number: int) -> tuple[bool, str | 
     if enabled and queued:
         return True, None
     if enabled and not queued:
-        _disable_auto_merge(pr_number)
+        # Checked here: if the disable leg fails the PR stays armed and the
+        # `--auto` below is the idempotent no-op again — report the failure
+        # rather than falsely claim a successful re-arm.
+        try:
+            _disable_auto_merge(pr_number, check=True)
+        except RuntimeError as exc:
+            return False, f"failed to disable existing auto-merge before re-arming: {exc}"
     try:
         _run(
             [
@@ -963,8 +973,8 @@ def _edit_label(pr_number: int, *, add: str | None = None, remove: str | None = 
         _run(["gh", "pr", "edit", str(pr_number), "--remove-label", remove], check=False)
 
 
-def _disable_auto_merge(pr_number: int) -> None:
-    _run(["gh", "pr", "merge", str(pr_number), "--disable-auto"], check=False)
+def _disable_auto_merge(pr_number: int, *, check: bool = False) -> None:
+    _run(["gh", "pr", "merge", str(pr_number), "--disable-auto"], check=check)
 
 
 def _comment(pr_number: int, body: str) -> None:
@@ -1322,9 +1332,11 @@ def _build_reconciliation_report(
             DEFAULT_AUTO_MERGE_LABEL in current_labels
             and bool(state["eligible_for_auto_merge"])
             and not bool(state["merge_blocked"])
-            and not auto_merge_enabled
             and not touches_protected_path
         ):
+            # No `and not auto_merge_enabled` guard: an already-armed PR may be
+            # armed-but-not-queued (the stuck case), and _arm_auto_merge is
+            # state-aware — it no-ops a queued PR and toggles a stuck one.
             auto_merge_enabled, arm_error = _arm_auto_merge(owner, repo, pr_number)
             if auto_merge_enabled:
                 rearmed.append(pr_number)
