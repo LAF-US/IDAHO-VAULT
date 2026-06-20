@@ -4,12 +4,13 @@ status: active
 authority: LOGAN
 date: 2026-05-06
 related:
-- Git LFS
-- GitHub
-- GitHub Desktop
-- LAF-USB
-- VAULT-MEDIA-STORAGE
-- shutdown
+  - STORAGE-LFS-USB-CONSTELLATION-INDEX-2026-06-17
+  - Git LFS
+  - GitHub
+  - GitHub Desktop
+  - LAF-USB
+  - VAULT-MEDIA-STORAGE
+  - shutdown
 ---
 
 # LEVELSET - LFS Shutdown Handoff
