@@ -74,7 +74,7 @@ def path_violations(path: str) -> list[str]:
 
 
 def main() -> int:
-    """Check changed paths and sweep the whole tree; return 1 on any violation."""
+    """Gate changed paths (fail) and report pre-existing tree violations (warn)."""
     parser = argparse.ArgumentParser()
     parser.add_argument("--paths-from-stdin", action="store_true")
     args = parser.parse_args()
@@ -84,6 +84,9 @@ def main() -> int:
     collisions = case_collisions(tracked)
     collision_members = {member for members in collisions.values() for member in members}
 
+    # Changed-files pass: these are the only findings that FAIL the gate. A PR is
+    # responsible for what it introduces, so a new portability-hostile path here
+    # is a hard error.
     findings: list[str] = []
     for path in changed:
         findings.extend(path_violations(path))
@@ -91,24 +94,36 @@ def main() -> int:
             peers = ", ".join(collisions[normalize(path)])
             findings.append(f"CASE COLLISION: {path} (conflicts with: {peers})")
 
-    # Whole-tree sweep. The changed-files pass only sees a PR's diff, so a
-    # portability-hostile path that lands on main (e.g. via a direct push, or a
-    # PR that skipped this gate) stays invisible forever while silently breaking
-    # Windows checkout on every later PR. Sweeping the full tracked tree closes
-    # that gap; the dedupe keeps a changed offender from being reported twice.
+    # Whole-tree sweep: REPORT-ONLY. The changed-files pass only sees a PR's diff,
+    # so a portability-hostile path already on main stays invisible while it can
+    # silently break Windows checkout. Surfacing it here makes the debt visible —
+    # but pre-existing offenders are not this PR's fault, so they only warn; they
+    # must not fail unrelated PRs. Removing a tracked illegal path is a destructive
+    # Git-control-surface change and is governed by GIT-CONTROL-SURFACES-2026-05-17
+    # ("remove files from history [only] with Logan's explicit instruction").
     changed_set = set(changed)
+    tree_warnings: list[str] = []
     for path in tracked:
         if path in changed_set:
             continue
-        findings.extend(path_violations(path))
+        tree_warnings.extend(path_violations(path))
+
+    if tree_warnings:
+        print(
+            f"NETWEB (report-only): {len(tree_warnings)} pre-existing tracked-path "
+            "violation(s) — not failing this PR; disposition is Logan's call:",
+            file=sys.stderr,
+        )
+        for warning in tree_warnings:
+            print(f"  [warn] {warning}", file=sys.stderr)
 
     if findings:
-        print("NETWEB: Cross-platform path violations detected", file=sys.stderr)
+        print("NETWEB: Cross-platform path violations detected in changed paths", file=sys.stderr)
         for finding in findings:
             print(f"  {finding}", file=sys.stderr)
         return 1
 
-    print("All paths are cross-platform portable.")
+    print("All changed paths are cross-platform portable.")
     return 0
 
 
