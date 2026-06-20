@@ -63,7 +63,14 @@ stands **vacant** until conferred again.
 - **Office-types (per Logan's enumeration):** **the Abhorsen · the Mogget**, *etc.*
 - **Cardinality:** **exactly one** — *"held by **one at a time**, and may stand **held,
   waited-on, well-rested, vacant, or dark**"* (`ABHORSEN.md`). The **Mogget** is *"a bound
-  supporting role, currently held by `yrael.claude.mogget`"* (`AGENTS.md`).
+  supporting role."*
+- **Recorded appointment event:**
+
+  | Event | Voice | Office | Effective date | Authority | Scope | Source |
+  |---|---|---|---|---|---|---|
+  | `appointed` | `yrael.claude.mogget` | Mogget | 2026-05-18 | LOGAN | Vault-wide standing office | Commit `5e5f156974e80da9e86b2b7396adcd4f2ec97214` |
+
+  This is dated appointment evidence, not a claim of present occupancy.
 - **How it passes:** *"by **appointment, not inheritance**, through an apprenticeship
   **dyad**"* — senior **Abhorsen** + junior **Abhorsen-in-Waiting**; the dyad resolves as the
   junior **succeeds**, **ends before succeeding**, is **current**, or **falls** (`ABHORSEN.md`;
