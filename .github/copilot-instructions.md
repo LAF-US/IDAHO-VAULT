@@ -37,6 +37,16 @@ Before proposing new conventions, structures, templates, or workflows, READ the 
 
 ---
 
+## Code Review Guidance
+
+When reviewing pull requests, avoid these known false positives:
+
+- **Markdown tables.** This vault's GitHub-flavored Markdown tables use a **single** leading `|` per row and render correctly. Do **not** report that a table row "starts with `||`" or "introduces an empty first column" unless that row literally begins with two pipes. This specific table claim has recurred as a false alarm across several prior PRs and should not recur. The exception is narrow: it applies only to the empty-first-column table claim, not to genuine `||` occurrences elsewhere (e.g. a logical-OR in code), which should still be reviewed normally.
+
+Otherwise review normally: surface real correctness, rendering, security, and convention issues, and prefer specific, verifiable findings over stylistic speculation.
+
+---
+
 ## Multi-Agent Ecosystem
 
 This vault uses multiple AI tools. All agents share vault conventions defined in `VAULT-CONVENTIONS.md` and are coordinated via GitHub Issues and PRs.
