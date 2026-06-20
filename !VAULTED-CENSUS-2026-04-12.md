@@ -1,7 +1,7 @@
 ---
 title: "Vaulted Census 2026-04-12"
-updated: 2026-05-22
-status: active
+updated: 2026-06-10
+status: archived
 authority: "Logan Finney"
 related:
   - AGENTS
@@ -41,6 +41,12 @@ date created: Sunday, April 12th 2026, 9:01:48 pm
 > Game Engine witnesses: `!/PERSONAE-ENGINE-v1-2026-05-20.md`,
 > `!/STANDING-ENGINE-AND-LAWFUL-ENDINGS-2026-04-17.md`, and
 > `!/HUB-WORLD-ROUTE-MAP-2026-04-17.md`.
+
+> [!CAUTION]
+> **Historical present tense.** The body below preserves the census's 2026-04-12
+> language, including claims about "live," "active," "presently," and office
+> occupancy. Those are dated observations and interpretations, not present
+> liveness or appointment facts.
 
 This census undertook an enumeration of the named entities and recorded jobs
 present in the vault at its counting moment.
