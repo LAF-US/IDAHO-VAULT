@@ -48,6 +48,11 @@ def case_collisions(paths: list[str]) -> dict[str, list[str]]:
 
 def path_violations(path: str) -> list[str]:
     findings: list[str] = []
+    # A literal backslash in a tracked path is itself the hazard: on Windows git
+    # treats it as a separator, so a name like `C:\Users\...` becomes an absolute
+    # path and `git checkout` aborts ("invalid path"). Flag it before normalizing.
+    if "\\" in path:
+        findings.append(f"BACKSLASH IN PATH: {path} (illegal on Windows; breaks checkout)")
     parts = path.replace("\\", "/").split("/")
     for part in parts:
         if not part:
@@ -80,6 +85,17 @@ def main() -> int:
         if path in collision_members:
             peers = ", ".join(collisions[normalize(path)])
             findings.append(f"CASE COLLISION: {path} (conflicts with: {peers})")
+
+    # Whole-tree sweep. The changed-files pass only sees a PR's diff, so a
+    # portability-hostile path that lands on main (e.g. via a direct push, or a
+    # PR that skipped this gate) stays invisible forever while silently breaking
+    # Windows checkout on every later PR. Sweeping the full tracked tree closes
+    # that gap; the dedupe keeps a changed offender from being reported twice.
+    changed_set = set(changed)
+    for path in tracked:
+        if path in changed_set:
+            continue
+        findings.extend(path_violations(path))
 
     if findings:
         print("NETWEB: Cross-platform path violations detected", file=sys.stderr)
