@@ -5,10 +5,7 @@ author:
 published:
 created: 2026-06-14
 description:
-date created: Sunday, June 14th 2026, 12:47:49 pm
-date modified: Monday, June 15th 2026, 7:48:13 am
 ---
-
 In one of the side plots to *The Lord of the Rings*, two of the Hobbits attempt to rouse Treebeard—a wise but ponderous sentient tree—to defend his forest from an army that is cutting it down. The problem is that Treebeard operates at a very different speed than the Hobbits. It takes him a full day simply to say hello to another tree, so getting him and his peers to act fast enough is nearly impossible.
 
 The intersection of AI and our political institutions feels a bit like the Hobbits and Treebeard. AI is advancing at a lightning pace—in only four years, AI models have gone from barely being able to write a coherent line of code to writing [most of the code at major AI companies](https://www.anthropic.com/institute/recursive-self-improvement). Similar gains have been made in biology, physics, math, finance, law, translation, and many other fields. [AI’s scaling laws](https://arxiv.org/abs/2001.08361), which predict an exponential increase in general cognitive capabilities with increasing computing power, now have over a decade of empirical evidence behind them. If these scaling laws continue for only a year or two longer, we are likely to get what I’ve called *Powerful AI,* or “ [a country of geniuses in a datacenter](https://darioamodei.com/essay/machines-of-loving-grace) ”.

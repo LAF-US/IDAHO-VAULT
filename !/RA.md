@@ -10,6 +10,6 @@ related:
 - The world is quiet here
 ---
 
-KHEPRI : RA : ATUM
+KHEPRI : [ ? ] : ATUM
 
 Root: [[RA]] · Chamber: [[.ra/RA]]

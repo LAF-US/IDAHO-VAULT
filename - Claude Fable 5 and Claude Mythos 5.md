@@ -5,10 +5,7 @@ author:
 published:
 created: 2026-06-14
 description: "Today we’re launching Claude Fable 5: a Mythos-class model that we’ve made safe for general use."
-date created: Sunday, June 14th 2026, 12:46:58 pm
-date modified: Sunday, June 14th 2026, 12:47:25 pm
 ---
-
 - We are suspending access to Claude Fable 5 and Claude Mythos 5. We apologize for this disruption to our customers and are working to restore access as soon as possible.
 	[
 	Read more

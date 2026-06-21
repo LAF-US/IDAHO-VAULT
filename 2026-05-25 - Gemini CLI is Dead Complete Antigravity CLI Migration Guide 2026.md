@@ -6,12 +6,7 @@ author:
 published: 2026-05-25
 created: 2026-06-06
 description: "Gemini CLI shuts down June 18, 2026. Learn how to completely uninstall Gemini CLI and install the new Antigravity CLI (agy) — step-by-step guide covering macOS, Linux, and Windows, plus async agents, MCP, and migration checklist."
-tags:
-  - 1
-date created: Saturday, June 6th 2026, 3:45:21 pm
-date modified: Saturday, June 6th 2026, 3:45:45 pm
 ---
-
 On May 19, 2026, Google dropped a bombshell at Google I/O: **Gemini CLI — the open-source terminal agent with 100,000+ GitHub stars and 6,000 merged pull requests — is being shut down for individual users on June 18, 2026.** Its replacement is **Antigravity CLI**, invoked with a single command: `agy`. This guide walks you through everything you need — from completely removing Gemini CLI to installing, authenticating, and getting productive with Antigravity CLI on any platform.
 
 ## 1 Why Is Gemini CLI Being Discontinued? — Background & Timeline
@@ -193,7 +188,7 @@ Shares the same agent harness as Antigravity 2.0. Any harness update benefits CL
 
 #### SSH-Aware Auth
 
-Detects remote SSH sessions and provides a URL to open in your local browser. Solves the 1 complaint about Gemini CLI's OAuth flow.
+Detects remote SSH sessions and provides a URL to open in your local browser. Solves the #1 complaint about Gemini CLI's OAuth flow.
 
 🧩
 
@@ -317,7 +312,7 @@ agy auth login
 agy auth status
 ```
 
-On local machines, the browser opens automatically. On SSH remote servers, Antigravity CLI detects the SSH environment and prints an auth URL — you open it in your local browser and the token flows back. This was the 1 pain point with Gemini CLI, and it's been solved cleanly.
+On local machines, the browser opens automatically. On SSH remote servers, Antigravity CLI detects the SSH environment and prints an auth URL — you open it in your local browser and the token flows back. This was the #1 pain point with Gemini CLI, and it's been solved cleanly.
 
 #### Optional: Import Editor Settings
 
@@ -623,7 +618,7 @@ Developer sentiment since the Google I/O announcement has been genuinely mixed �
 | Criterion | Rating | Notes |
 | --- | --- | --- |
 | Installation ease | ⭐⭐⭐⭐⭐ | curl one-liner, no runtime dependency |
-| SSH auth | ⭐⭐⭐⭐⭐ | Solved Gemini CLI's 1 pain point |
+| SSH auth | ⭐⭐⭐⭐⭐ | Solved Gemini CLI's #1 pain point |
 | Execution speed | ⭐⭐⭐⭐⭐ | Go binary noticeably faster than Node.js |
 | Async multi-agents | ⭐⭐⭐⭐⭐ | Transformative improvement over Gemini CLI |
 | Feature parity | ⭐⭐⭐⭐ | Some extensions not yet ported |
