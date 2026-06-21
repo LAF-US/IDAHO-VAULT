@@ -77,16 +77,25 @@ custody/backup posture. For *what is on each drive*, follow the pointer to the
 | **Travel Bag** | Samsung Portable SSD T5 | `ExternalSSD` | 931 GB | SSD / USB `*` | exFAT | `*` |
 | **Staging** | `*` (model not recorded) | `Vault` | ~2 TB | `*` | exFAT | `*` |
 | **Backup (Mac)** | WD My Passport for Mac | `timemachine` | 1 TB | HDD / USB `*` | HFS+ | `*` |
-| **one of 5 · TBD** | LaCie Rugged (orange bumper) | `*` | `*` | SSD or HDD `*` | `*` | `*` |
 
-> [!important] The LaCie Rugged is one of the five — not a sixth drive
-> Logan attests **five drives total** (2026-06-21), so the orange LaCie Rugged is **one of
-> the five**, not a new device. It matches **no catalogued drive by recorded model** in
-> [[DEFRAG-MAP]] §B2 / [[LOCAL-STORAGE-INVENTORY-2026-05-08]], so its identity is still TBD.
-> **Leading hypothesis:** it is the **`Vault`** drive — the only catalogued drive whose
-> device model was never recorded (`*`), making it the sole slot an unidentified LaCie can
-> occupy without contradiction. This is a hypothesis, not a confirmed merge; the LaCie row
-> below collapses into one catalogued row once verified at the machine.
+The five rows above are the **five drives Logan attests** (2026-06-21). The orange LaCie
+Rugged is deliberately **not** a sixth row — it is the still-unmapped *identity* of one of
+these five, tracked in the candidate block just below so this table stays at the asserted
+cardinality of five.
+
+### Unresolved identity candidate — the orange LaCie Rugged
+
+| Observed | Volume label | Capacity | Media / interface | Filesystem | Serial / UUID |
+| --- | --- | --- | --- | --- | --- |
+| LaCie Rugged (orange bumper), activity LED lit | `*` | `*` | SSD or HDD `*` | `*` | `*` |
+
+> [!important] One of the five, not a sixth drive
+> The orange LaCie matches **no catalogued drive by recorded model** in [[DEFRAG-MAP]] §B2 /
+> [[LOCAL-STORAGE-INVENTORY-2026-05-08]], so its identity is still TBD. **Leading hypothesis:**
+> it is the **`Vault`** drive — the only catalogued drive whose device model was never recorded
+> (`*`), the sole slot an unidentified LaCie can occupy without contradiction. This is a
+> hypothesis, not a confirmed merge: on verification this candidate **merges into** the matching
+> Table A row — no new row is added, the fleet stays five.
 
 ---
 
@@ -99,7 +108,9 @@ custody/backup posture. For *what is on each drive*, follow the pointer to the
 | **Travel Bag** | `*` (portable) | `*` | **Not the only copy of anything** (doctrine, [[TRAVEL-BAG-MANIFEST-2026-05-08]]) | `*` | [[DEFRAG-MAP]] §B2 `ExternalSSD`: Adobe cache, exports, scratch | 2026-05-25 (Win `Get-Volume`) |
 | **Staging** | `*` (Mac-side last seen) | `*` | `*` — scratch/staging; holds `rclone-logs/` | `*` | [[DEFRAG-MAP]] §B2 `Vault`: transfer logs, mostly empty | 2026-05-25 (Mac) |
 | **Backup (Mac)** | `*` (with MacBook) | `*` | Time Machine **backup** of MacBook only — not for archive | `*` | Time Machine sparsebundle | 2026-05-25 (Mac) |
-| **one of 5 · TBD** | MacBook desk (photo) | `*` | `*` — **unknown; could be a sole copy** | `*` | `*` | 2026-06-21 (photo only, not mounted) |
+
+(The LaCie Rugged's management fields are deferred to whichever Table A row it resolves into —
+see the unresolved-identity candidate above — so this overlay also stays at five.)
 
 ---
 
@@ -132,7 +143,7 @@ photo — identity stays `*`):
 
 The fleet's problem is mixed-duty drives. Each drive gets one canonical role, and the
 role sets the rule. Roles below are the ones already named in the (draft) manifests,
-plus the two unroled drives:
+plus the two drives without an assigned role:
 
 | Role | Doctrine source | Rule |
 | --- | --- | --- |
@@ -182,4 +193,4 @@ into the vault follow [[VAULT-MEDIA-STORAGE]] (≤100 MB direct / ≤2 GB LFS / 
 - **Status:** Draft
 - **Authority:** LOGAN
 - **Authors:** Claude Code CLI
-- **Change Note:** First device-plane drive register. Grounded identity from active storage inventories; all physical-evidence fields marked `*` (authored from `cloud`, no drive mounted). Flagged the orange LaCie Rugged as an unlogged device witnessed in the 2026-06-21 photo. Added role taxonomy, 3-2-1 sole-copy overlay, and a local-machine verification checklist. Added the caveat that NET/WEB/MESH standard definitions are not hard-locked by Logan. Recorded Logan's firsthand attestation of five drives total (2026-06-21) and reconciled the LaCie Rugged from a presumed sixth device to one of the five (identity TBD; `Vault` the leading hypothesis). Added a photographed-stack observation (five physical units by form factor, top→bottom) and flagged the one-desktop-box-vs-two-catalogued tension.
+- **Change Note:** First device-plane drive register. Grounded identity from active storage inventories; all physical-evidence fields marked `*` (authored from `cloud`, no drive mounted). Flagged the orange LaCie Rugged as an unlogged device witnessed in the 2026-06-21 photo. Added role taxonomy, 3-2-1 sole-copy overlay, and a local-machine verification checklist. Added the caveat that NET/WEB/MESH standard definitions are not hard-locked by Logan. Recorded Logan's firsthand attestation of five drives total (2026-06-21) and reconciled the LaCie Rugged from a presumed sixth device to one of the five (identity TBD; `Vault` the leading hypothesis). Added a photographed-stack observation (five physical units by form factor, top→bottom) and flagged the one-desktop-box-vs-two-catalogued tension. Per Copilot review: kept Table A/B at the asserted cardinality of five by moving the LaCie into a separate unresolved-identity candidate block, and replaced the ambiguous word "unroled".
