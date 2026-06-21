@@ -29,7 +29,7 @@ still empty. This note names the gap so "pending" is not mistaken for "done."
 
 > Surfaced 2026-06-21 during a storage/LFS review. It corrects a looser phrasing
 > ("moved to external storage") with the precise status: the move is planned and
-> awaiting execution/verification, not complete.
+> awaiting execution/verification — incomplete.
 
 ---
 
