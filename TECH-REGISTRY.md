@@ -1,5 +1,6 @@
 ---
 title: "TECH-REGISTRY — Hardware & Device Index"
+created: 2026-06-21
 updated: 2026-06-21
 status: draft
 doc_class: registry-note
