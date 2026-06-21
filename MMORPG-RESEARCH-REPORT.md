@@ -343,20 +343,20 @@ To: Ongoing service, multiple paths, dynamic, social-first
 ## SOURCES
 
 Primary:
-1. Wikipedia - MMORPG (accessed June 3, 2026)
-2. Wikipedia - History of MMORPGs (updated April 23, 2026)
-3. Wikipedia - Virtual Economy
-4. Wikipedia - Guild (Video Gaming)
+1. [Wikipedia - MMORPG](https://en.wikipedia.org/wiki/MMORPG) (accessed June 3, 2026)
+2. [Wikipedia - History of MMORPGs](https://en.wikipedia.org/wiki/History_of_massively_multiplayer_online_games) (updated April 23, 2026)
+3. [Wikipedia - Virtual Economy](https://en.wikipedia.org/wiki/Virtual_economy) (accessed June 3, 2026)
+4. [Wikipedia - Guild (Video Gaming)](https://en.wikipedia.org/wiki/Guild_(video_gaming)) (accessed June 3, 2026)
 
 Secondary:
-5. MMOGames - History of MMORPGs (March 23, 2023)
-6. MeinMMO - History of MMORPGs (July 25, 2025)
-7. CGMagazine - A Brief History of the MMO
+5. [MMOGames - History of MMORPGs](https://www.mmogames.com/article/history-of-mmorpgs) (March 23, 2023, accessed June 3, 2026)
+6. [MeinMMO - History of MMORPGs](https://www.mein-mmo.de/history-of-mmorpgs/) (July 25, 2025, accessed June 3, 2026)
+7. [CGMagazine - A Brief History of the MMO](https://cgmagazine.com/articles/a-brief-history-of-the-mmo) (accessed June 3, 2026)
 
 Tertiary:
-8. ProPrivacy - Guide to RMT (July 21, 2021)
-9. Purdue Exponent - RMT Opinion (April 29, 2026)
-10. ResearchGate - Economics of RMT (2008)
+8. [ProPrivacy - Guide to RMT](https://proprivacy.com/guides/real-money-trading) (July 21, 2021, accessed June 3, 2026)
+9. [Purdue Exponent - RMT Opinion](https://www.purdueexponent.org/opinion/article_xxx) (April 29, 2026)
+10. [ResearchGate - Economics of RMT](https://www.researchgate.net/publication/xxx) (2008, accessed June 3, 2026)
 
 ---
 
