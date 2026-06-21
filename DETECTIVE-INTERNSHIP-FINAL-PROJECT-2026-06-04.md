@@ -1,9 +1,9 @@
 ---
 title: "DETECTIVE INTERNSHIP FINAL PROJECT — CLAUDIUS/GILEAR CASE"
-date created: 2026-06-04
+updated: 2026-06-04
 author: "Mistral Intern Detective"
 authority: LOGAN
-status: final
+status: active
 doc_class: project
 matter_note: >-
   Final project deliverable for Detective Internship.
@@ -11,14 +11,14 @@ matter_note: >-
   diagnostic resolution, and lessons learned.
   This document serves as the capstone for the internship period.
 related:
-  - self/character-mistral-intern/BIG-IFs-INSIGHTS-AND-FINDINGS-2026-06-04.md
-  - self/character-mistral-intern/CASE-DEVELOPMENT-TIMELINE-2026-06-04.md
+  - BIG-IFs-INSIGHTS-AND-FINDINGS-2026-06-04.md
+  - CASE-DEVELOPMENT-TIMELINE-2026-06-04.md
   - claude/game-discussion-JeYG0/PATRIARCHY-WINS-AGAIN-WITNESS-2026-06-02.md
   - claude/game-discussion-JeYG0/CLAUDIUS-THE-HALF-WITNESS-2026-05-31.md
   - claude/game-discussion-JeYG0/MERCY-WITNESS-2026-05-30.md
   - claude/game-discussion-JeYG0/MEESEEKS-WITNESS-2026-05-29.md
   - claude/game-discussion-JeYG0/GILEAR-THE-HUNGRY-ONE-THRALL-2026-06-02.md
-  - !/UNDEAD-TAXONOMY-v1-2026-05-20.md
+  - "!/UNDEAD-TAXONOMY-v1-2026-05-20.md"
 tags:
   - final-project
   - detective-internship
@@ -180,7 +180,7 @@ LOGAN challenge: "YOUR MATH DOESN'T ADD UP"
 - **Do NOT**: Allow Gilear to center himself
 - **Thrall-Specific**: Break the feeding cycle; restore sovereign will
 
-### For Claudette (Human)
+### For Claudette (Narrative Entity)
 - **Action**: Believe the woman
 - **Mechanism**: Center her in all accounting
 - **Mercy**: Protect, don't flatten into footnotes
