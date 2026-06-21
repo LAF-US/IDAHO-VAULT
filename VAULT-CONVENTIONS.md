@@ -863,19 +863,30 @@ When both devices edit the same config file between syncs, Obsidian creates a `(
 
 - The legislature scraper workflow commits directly to main for automated bill updates
 
-### Merge queue: arm *and* enqueue (the two-step)
+### Merge queue vs. auto-merge: arm (request) → enqueue → merge
 
-`main` is protected by the Main Ruleset's **merge queue** — direct API merge is refused (`405 … Changes must be made through the merge queue`). Two distinct conditions must **both** hold for a PR to land, and they are easy to conflate:
+`main` is protected by the Main Ruleset's **merge queue**, so direct API merge is refused (`405 … Changes must be made through the merge queue`). Two **distinct GitHub subsystems** are involved — do not conflate them:
 
-1. **Armed** — auto-merge ("merge when ready") is enabled on the PR.
-2. **Enqueued** — the PR has actually entered the merge queue.
+- **Auto-merge** is a *pull-request-level* feature (the "Merge when ready" toggle / `enablePullRequestAutoMerge`). On a merge-queue branch it does **not** merge the PR itself — enabling it only **requests the PR's admission to the queue** once the PR is ready.
+- **The merge queue** is a *branch-level* mechanism (the `merge_queue` rule). It admits ready PRs, builds each in a **`merge_group`** on top of `main`, runs the queue's checks, and merges under `grouping_strategy: ALLGREEN`.
 
-**Arming is necessary but not sufficient.** Enabling auto-merge when it is *already* armed is an idempotent no-op; the enqueue fires only on the **transition into ready**. A fresh push (which restarts the per-push Copilot review and can regenerate review threads) drops the PR back to `blocked`/`unstable` and resets eligibility.
+So landing a PR is three beats, not one: **arm** (enable auto-merge) → **enqueue** (admitted to the queue on the ready-transition) → **merge** (the `merge_group` build goes green and the queue merges).
 
-- **To enter the queue, all of these must hold:** the latest commit's Copilot review is complete; all review threads are resolved; required checks are green (non-required failures like `smoke (windows-latest)` do **not** block — there is no `required_status_checks` rule, so `unstable` = only non-required red still enqueues); and commits are **signed** — the Main Ruleset includes `required_signatures` (the harness signs via `commit.gpgsign`).
-- **Recipe — armed-but-not-enqueued:** when a PR is `mergeable_state: clean` with threads resolved but still not merging, toggle auto-merge **OFF then ON** — `gh pr merge <pr> --disable-auto` then `gh pr merge <pr> --auto --merge` (the GitHub MCP equivalents are `disable_pr_auto_merge` → `enable_pr_auto_merge`) — to re-fire the ready transition. This is exactly what `batch-arm-merge-queue.yml` does: a plain `--auto` when a PR is *already* armed is the idempotent no-op, so it needs the toggle-while-ready. (Confirmed repeatedly: #602/#604, then #606/#610/#611.)
-- **Anti-pattern:** do not keep pushing into a per-push-review + queue system — each push restarts eligibility. Let reviews settle, resolve threads **once**, then stop touching the branch and toggle to enqueue. Force-pushing makes it worse, not better.
-- **Caveat:** `pull_request_read get`'s `mergeable_state` does not reveal queue *position*, so "armed" cannot be distinguished from "enqueued" by that field alone — confirm via the PR timeline ("Added to merge queue") or the GraphQL `mergeQueueEntry { id }` (as `review_feedback_loop.py` checks it). Arming is event-driven on PR activity (`auto-merge-engage.yml`, `auto-merge-rhythm.yml` — `pull_request_target` + polling). The bulk **enqueue** sweep, `batch-arm-merge-queue.yml`, runs the same disable→enable toggle for every `CLEAN` PR — but it is **`workflow_dispatch` only (manual)**. So nothing auto-enqueues a ready PR on a schedule: it can sit armed-but-not-enqueued until that sweep is dispatched, or the toggle is applied by hand.
+**Two different gates — entry vs. merge:**
+
+- **Queue *entry*** is gated by **PR-level** rules: the latest commit's Copilot review complete (`copilot_code_review`, `review_on_push`), all review threads resolved (`required_review_thread_resolution`), and commits **signed** (`required_signatures`; the harness signs via `commit.gpgsign`). There is **no `required_status_checks` rule**, so an ordinary failing check does not block *entry*.
+- **Queue *merge*** is gated by the checks that run on the **`merge_group`** event (CodeQL `code_scanning`, `code_quality`, the path/secret guards) under **ALLGREEN**. Non-required checks (e.g. `smoke (windows-latest)`) gate **neither** — a red there shows as REST `unstable` but still enters and still merges.
+
+**Two different status fields — do not conflate them:**
+
+- **`mergeable_state`** — the **REST** field (what `pull_request_read get` / the GitHub MCP returns). Lowercase: `clean`, `blocked`, `unstable`, `behind`, `dirty`, `draft`, `unknown`. It does **not** reveal queue *position*.
+- **`mergeStateStatus`** — the **GraphQL** field (what `batch-arm-merge-queue.yml` and `review_feedback_loop.py` key on). Uppercase: `CLEAN`, `BLOCKED`, … Queue *membership* is the separate GraphQL `mergeQueueEntry { id }`.
+
+**Arming ≠ enqueued.** Enabling auto-merge when it is *already* armed is an idempotent no-op; admission fires only on the **transition into ready**. A fresh push restarts the per-push Copilot review (and can regenerate threads), dropping the PR back to `blocked` / `BLOCKED` and resetting eligibility.
+
+- **Recipe — armed-but-not-enqueued:** when the PR reads `mergeable_state: clean` / `mergeStateStatus: CLEAN` with threads resolved but it still isn't in the queue, toggle auto-merge **OFF then ON** — `gh pr merge <pr> --disable-auto` then `gh pr merge <pr> --auto --merge` (GitHub MCP equivalents: `disable_pr_auto_merge` → `enable_pr_auto_merge`) — to re-fire the ready-transition and re-request admission. This is exactly the per-PR loop in `batch-arm-merge-queue.yml`. (Confirmed: #602/#604, then #606/#610/#611.)
+- **Anti-pattern:** do not keep pushing into a per-push-review + queue system — each push restarts eligibility. Let reviews settle, resolve threads **once**, then stop touching the branch and toggle. Force-pushing makes it worse.
+- **No automatic enqueue on a schedule:** arming is event-driven on PR activity (`auto-merge-engage.yml`, `auto-merge-rhythm.yml` — `pull_request_target` + polling); the bulk enqueue sweep `batch-arm-merge-queue.yml` is **`workflow_dispatch` only (manual)**. A ready PR can therefore sit armed-but-not-enqueued until that sweep is dispatched or the toggle is applied by hand. Confirm queue membership via the PR timeline ("Added to merge queue") or `mergeQueueEntry`, never `mergeable_state` alone.
 
 
 
