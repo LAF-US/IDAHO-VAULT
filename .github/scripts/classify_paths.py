@@ -41,14 +41,11 @@ result lives in the new `tier4` field — unused until the consumer-wiring incre
 * DEPTH THRESHOLD: where `high` becomes `nope`. Default: only the canon core /
   still-point (Esto Perpetua!, Level 7 — "do not move, do not expire") is `nope`;
   all other Nest depth is `high`.
-* PROTECTED-SURFACE PIN: `.github/**` and named governance files are NOT in the `!` Nest,
+* PROTECTED-SURFACE PIN: `.github/**`, named governance files, and persona/config
+  dotfolders (`.claude/`, `.gemini/`, `.codex/`, `.op/`, etc.) are NOT in the `!` Nest,
   so the pure model would tag them low/med — a DOWNGRADE of today's automation/governance
   protection. Pending Logan's decision to move that gate onto CODEOWNERS (a separate
   Key/Lever), they are kept pinned `high` here, so this change introduces no regression.
-* DOTDIR PLACEMENT (interpretive — flagged for Logan): persona dotfolders `.{name}/`
-  outside the pin classify by filetype -> low/med. This follows the later filetype/depth
-  framing and supersedes the earlier "dotdir layer = high" (never re-affirmed after the
-  correction). Confirm or correct.
 
 --- SUBTIERS: TBD — NOT YET IMPLEMENTED (next version) ---
 Logan outlined that each tier ALSO has subtiers: filetype subtiers = the three blessed
@@ -87,6 +84,10 @@ PROTECTED_EXACT = {
 # Probe/example sandboxes under the protected dirs stay low (explicit carve-out).
 PROBE_PREFIXES = (".github/workflows/probe-", ".github/workflows/example-",
                   ".github/scripts/probe-", ".github/scripts/example-")
+
+# Detects any top-level dotfolder: .claude/, .gemini/, .codex/, .op/, etc.
+# Persona/config surfaces are pinned high regardless of filetype (VAULT-CONVENTIONS § Protected).
+_TOP_DOTFOLDER_RE = re.compile(r"^\.[a-zA-Z]")
 
 
 def in_nest(path: str) -> bool:
@@ -128,6 +129,10 @@ def classify_file(path: str) -> tuple:
     if path in PROTECTED_EXACT or path.startswith(PROTECTED_PREFIXES):
         # No off-Nest 'high' exists in the pure model; pin via the depth axis to avoid
         # a protection downgrade. TUNABLE: delegate this gate to CODEOWNERS instead.
+        return (None, "high")
+    # Persona/config dotfolders (.claude/, .gemini/, .codex/, .op/, etc.) are pinned high.
+    # Editing agent config surfaces must not be auto-labeled risk/low.
+    if "/" in path and _TOP_DOTFOLDER_RE.match(path):
         return (None, "high")
     return (filetype_flag(path), None)
 
