@@ -5,7 +5,7 @@ updated: 2026-06-21
 authority: LOGAN
 doc_class: concept-node
 status: active
-verified-by: "Claude Code — duties web-verified 2026-06-21 (Wikipedia + Keys to the Kingdom Fandom); decoupled per Logan's correction: Trustees<->Sins, demesnes<->duties"
+verified-by: "Claude Code — duties, physical structure & Nix's authorial framing web-verified 2026-06-21 (Wikipedia, Keys to the Kingdom Fandom, Garth Nix interviews); decoupled per Logan's correction: Trustees<->Sins, demesnes<->duties"
 related:
   - "[[THE-SEVENFOLD-BODY-SEATS-TRUSTEES-GEMS-2026-06-03]]"
   - "[[RESEARCH_Keys-to-the-Kingdom-The-Morrow-Days-and-Demesnes-2026-06-04]]"
@@ -47,10 +47,49 @@ but the **first-created epicentre and sovereign seat** — which is why it maps 
 seizure of the Key for itself instead of executing the Will — the Lich / stolen-mask failure named
 in [[!/LICH-PROBLEM-v1-2026-05-20]]. The realm and its duty stay legitimate even when its holder falls.
 
+## The physical structure — a vertical tier, not a row
+
+The demesnes are **stacked vertically**, not laid end to end — the *names* carry the architecture.
+The House is the **centre of the universe**, floating in **Nothing** (the void), which gnaws at it
+and ultimately unmakes it once the Will is whole. (Influences Nix names: Philip José Farmer's
+*World of Tiers* — nested, stacked worlds — and Zelazny's *Amber*.)
+
+```
+▲  Incomparable Gardens   — HIGHEST point; floats ABOVE the Upper House; first-created,
+                            the epicentre and sovereign seat (the Seventh Key overrides all)
+   Upper House             — directly beneath the Gardens (sorcery)
+   Middle House            — below the Upper
+   Lower House             — the foundational house
+   … Far Reaches · Border Sea · Great Maze …   — the lower / canonically-disputed tier
+▼  Nothing / the void      — surrounds the House (the depths / Coal cellar abut it);
+                            the Border Sea opens out to the Secondary Realms (the rest of creation)
+```
+
+**Firm:** the three Houses ascend Lower → Middle → Upper, the Incomparable Gardens atop the Upper
+House. **Uncertain (canon leaves it open):** the exact placement of Far Reaches, Border Sea, and
+Great Maze — two readings exist; one clue is Sir Thursday's study elevator, which runs **up to the
+Middle House and down to the Lower House**, implying the **Great Maze sits between** them.
+
+## The House's nature (Nix's own framing)
+
+Per Nix himself, the House is a **celestial bureaucracy the Architect built to RECORD everything
+that happens in the rest of the universe (the Secondary Realms).** Record-keeping is the House's
+whole reason for being — which is why **three of the seven demesnes are Records houses** (Lower /
+Middle / Upper); the others (manufacture, the border-sea, the army, sorcery, the garden) serve that
+archive. The register is a *surreal, labyrinthine bureaucracy* (Nix cites Dickens and Gilliam's
+*Brazil*), themed on **power and responsibility** — Trustees entrusted with duties who instead
+**seized their Keys**.
+
+It is **sevenfold all the way down**: seven books · days · Keys · demesnes · **Sins** (the Trustees'
+corruption) · **Virtues** (the seven Will-fragments — the rightful counter-set to the sins). The
+legitimate axis is the **duty / virtue** (the charge discharged); the **Sin** is its betrayal.
+
 ## Provenance
-Duties and the Incomparable-Gardens-as-epicentre web-verified 2026-06-21 — paraphrased, no source
-text reproduced; tier **[canon-per-series / reading]**, matching SEVENFOLD-BODY:
+Web-verified 2026-06-21 — paraphrased, no source text reproduced; tier **[canon-per-series /
+reading]**, matching SEVENFOLD-BODY. Covers the duties, the Incomparable-Gardens-as-epicentre, the
+vertical structure, and Nix's own framing (the record-keeping bureaucracy; *World of Tiers* influence):
 - The Keys to the Kingdom — Wikipedia
-- The House · The Border Sea · The Incomparable Gardens · Lord Sunday · The Upper House (Keys to the Kingdom Fandom)
+- The House · The Border Sea · The Incomparable Gardens · Lord Sunday · The Upper House · The Compleat Atlas of the House (Keys to the Kingdom Fandom)
+- Garth Nix — FAQs & interviews (Reactor/Tor, Harvard Crimson, Lightspeed): the bureaucracy framing & named influences
 
 ###### [["The world is quiet here."]]
