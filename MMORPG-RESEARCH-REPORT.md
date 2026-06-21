@@ -54,7 +54,7 @@ MMORPGs (Massively Multiplayer Online Role-Playing Games) represent a $5-8B annu
 ### Origins: The Pre-Internet Era (1960s-1980s)
 The foundations of MMORPGs were laid in academic and institutional settings.
 
-- 1960s: MUD1 (first text-based multiplayer RPG at Essex University)
+- Late 1970s: MUD1 (first text-based multiplayer RPG at Essex University)
 - 1974: Maze War (first graphical 3D multiplayer on ARPANET at NASA Ames)
 - 1974: Spasim (32-player space battle game)
 - 1985: Island of Kesmai (first commercial MUD)
