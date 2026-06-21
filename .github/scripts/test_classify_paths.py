@@ -48,6 +48,13 @@ class ClassifyFileTest(unittest.TestCase):
             (None, "nope"),
         )
 
+    def test_still_point_substring_outside_nest_is_not_nope(self):
+        # Copilot #2: a maze note merely *named* with the text must NOT be nope.
+        self.assertEqual(cp.classify_file("My Esto Perpetua! manifesto.md"), ("low", None))
+        self.assertFalse(cp.is_still_point("notes/Esto Perpetua! draft.md"))
+        # A Nest file that is not the still-point segment stays high, not nope.
+        self.assertEqual(cp.classify_file("!/ARBORSCAPING-REPORT-2026-04-16.md"), (None, "high"))
+
     def test_protected_surfaces_pinned_high(self):
         self.assertEqual(cp.classify_file(".github/workflows/auto-merge-rhythm.yml"), (None, "high"))
         self.assertEqual(cp.classify_file(".github/scripts/classify_paths.py"), (None, "high"))
@@ -80,6 +87,7 @@ class ChangesetTest(unittest.TestCase):
         self.assertEqual(r["tier"], "low")
         self.assertEqual(r["filetype"], "low")
         self.assertIsNone(r["depth"])
+        self.assertIsNone(r["subtier"])  # subtiers TBD — next version
 
     def test_mixed_pr_carries_both_flags(self):
         r = self._run(["note.md", "scripts/x.py", "!/DOCKET.md"])
