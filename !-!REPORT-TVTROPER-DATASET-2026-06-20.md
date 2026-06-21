@@ -200,9 +200,9 @@ ambiguity above. If a future task needs TVTropes data, prefer the newer
 ## VI. How These Facts Were Gathered (provenance)
 
 - Hugging Face Hub metadata via the Hugging Face MCP (`hub_repo_details`,
-  `overview` + `dataset_structure`), authenticated as `loganfinney27`,
-  2026-06-20 — source of the metadata table in §I and the live-viewer failure
-  in §II.
+  `overview` + `dataset_structure`), retrieved 2026-06-20 over the vault owner's
+  authenticated Hugging Face session — source of the metadata table in §I and
+  the live-viewer failure in §II.
 - Web search (2026-06-20) — source of the card's summary text (page count,
   intended use, two-field schema, 404-page behavior, ~20 GB JSONL), the
   existence of the sibling `-Cleaned` and `-2025` repos, and the TVTropes
@@ -225,7 +225,7 @@ ambiguity above. If a future task needs TVTropes data, prefer the newer
    https://tvtropes.org/
 5. Wikipedia. *TV Tropes* — license history (CC BY-SA → CC BY-NC-SA, July 2012)
    and relicensing controversy. https://en.wikipedia.org/wiki/TV_Tropes
-6. SoylentNews. (2014). *TV Tropes Relicensed its Content — Without Permit.*
+6. SoylentNews. (2014, May 15). *TV Tropes Relicensed its Content - Without Permit.*
    https://soylentnews.org/article.pl?sid=14/05/15/1938243
 7. Creative Commons. *Attribution-NonCommercial-ShareAlike 4.0 International
    (CC BY-NC-SA) — Legal Code.*
