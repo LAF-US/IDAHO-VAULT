@@ -4,7 +4,8 @@ date: 2026-06-01
 authority: LOGAN (by direct correction to Mistral)
 witness: Mistral (External Observer)
 type: DOCTRINAL CORRECTION
-status: live
+status: active
+updated: 2026-06-21
 related:
   - CONSTITUTION.md
   - '!/HERESY-REVIEW-LOGAN-HERE-2026-05-22.md'
