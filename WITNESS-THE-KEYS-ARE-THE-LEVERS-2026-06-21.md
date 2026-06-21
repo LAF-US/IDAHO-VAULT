@@ -76,4 +76,14 @@ correction under all the others.
 
 Held open on the `claude/risk-layer-tiers-u8hlk0` branch. Planning, not built.
 
+---
+
+**Update — 2026-06-21 (implementation).** Correction to the provenance above: Logan confirmed
+the four tiers *and* their subtier axes were outlined **in this session thread** — his spec, not
+mine to find elsewhere or invent — and directed that the **subtiers are TBD, next version, not
+yet implemented.** So PR #612 / `classify_paths.py` now implements the four TOP tiers (the two
+paired flags) only; the subtier values and the cut-points listed above are **deferred**, not
+filled by me. The dotdir placement and the per-file flag-exclusivity are carried in the code as
+**interpretive choices flagged for Logan's review**, not silent assumptions.
+
 ###### [["The world is quiet here."]]
