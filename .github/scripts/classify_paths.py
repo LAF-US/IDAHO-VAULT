@@ -19,11 +19,16 @@ Per Logan's correction: "low/med apply to filetypes; high/nope apply to depth."
 So a maze file is tagged by filetype only; a Nest file is tagged by depth only —
 depth supersedes filetype inside the labyrinth.
 
-JSON output (backward-compatible: keeps `tier` + `*_risk_files` for agent-auto-pr):
+JSON output — this EXTENDS the old binary `tier`, it does not preserve it. The `tier`
+and `*_risk_files` keys agent-auto-pr already reads are kept, but `tier` is now 4-valued
+(low|med|high|nope) — an intentional CONTRACT EXTENSION, not a binary. New `risk/med` /
+`risk/nope` labels are unread until the consumer-wiring increment; the only live
+string-consumer matches `risk/high` (the Dependabot lane), unaffected.
   {
     "tier": "low"|"med"|"high"|"nope",   # derived single label: nope>high>med>low
     "filetype": "low"|"med"|None,        # riskiest filetype among maze files touched
     "depth": "high"|"nope"|None,         # deepest Nest reach among files touched
+    "subtier": None,                     # TBD — next version (see "SUBTIERS" below)
     "by_file": [{"path","filetype","depth"}...],
     "high_risk_files": [...], "low_risk_files": [...]   # legacy aggregate buckets
   }
@@ -35,15 +40,26 @@ JSON output (backward-compatible: keeps `tier` + `*_risk_files` for agent-auto-p
 * DEPTH THRESHOLD: where `high` becomes `nope`. Default: only the canon core /
   still-point (Esto Perpetua!, Level 7 — "do not move, do not expire") is `nope`;
   all other Nest depth is `high`.
-* PROTECTED-SURFACE PIN: `.github/**`, named governance files, and persona dotfolders
-  are NOT in the `!` Nest, so the pure model would tag them low/med — a DOWNGRADE of
-  today's automation/governance protection. Pending Logan's decision to move that
-  protection onto CODEOWNERS (a separate Key/Lever), they are kept pinned `high` here
-  so this change introduces no safety regression.
+* PROTECTED-SURFACE PIN: `.github/**` and named governance files are NOT in the `!` Nest,
+  so the pure model would tag them low/med — a DOWNGRADE of today's automation/governance
+  protection. Pending Logan's decision to move that gate onto CODEOWNERS (a separate
+  Key/Lever), they are kept pinned `high` here, so this change introduces no regression.
+* DOTDIR PLACEMENT (interpretive — flagged for Logan): persona dotfolders `.{name}/`
+  outside the pin classify by filetype -> low/med. This follows the later filetype/depth
+  framing and supersedes the earlier "dotdir layer = high" (never re-affirmed after the
+  correction). Confirm or correct.
+
+--- SUBTIERS: TBD — NOT YET IMPLEMENTED (next version) ---
+Logan outlined that each tier ALSO has subtiers: filetype subtiers = the three blessed
+circles {Natural Language, Computer Code, Machine Documentation} + the "missing middle"
+(Jupyter); depth subtiers = the seven Levels / Demesnes (bangdepth). Their exact values and
+cut-points are "unique unspecified" and deferred (per Logan, 2026-06-21). This module emits
+only the four TOP tiers and a `"subtier": None` placeholder; the cuts above are provisional.
 """
 
 import json
 import posixpath
+import re
 import sys
 
 # --- The Architect's three blessed language circles (VAULT-CONVENTIONS § File Types) ---
@@ -80,8 +96,12 @@ def in_nest(path: str) -> bool:
 
 def is_still_point(path: str) -> bool:
     """The canon core / Level 7 — the inmost still point, `Esto Perpetua!`
-    ('do not move, do not expire'), nested or in a flattened alias."""
-    return "Esto Perpetua!" in path
+    ('do not move, do not expire'). Structural: `Esto Perpetua!` must appear as a path
+    SEGMENT *inside the Nest* — nested `.../Esto Perpetua!/...` or the flattened `!`-alias
+    form (NETWEB: '-' aliases '/') — not a bare substring, so a maze note merely *named*
+    with the text is never `nope`. Within the Nest the segment match errs toward `nope`
+    (over-protect) — the safe direction for the canon core."""
+    return in_nest(path) and "Esto Perpetua!" in re.split(r"[-/]", path)
 
 
 def filetype_flag(path: str) -> str:
@@ -96,11 +116,11 @@ def filetype_flag(path: str) -> str:
 
 def classify_file(path: str) -> tuple:
     """Return (filetype_flag, depth_flag) for one path — exactly one axis is active.
-    Maze files carry a filetype flag; Nest files carry a depth flag (depth supersedes)."""
-    if is_still_point(path):
-        return (None, "nope")
+    Maze files carry a filetype flag; Nest files carry a depth flag (depth supersedes).
+    (That a Nest file carries *only* a depth flag is an interpretation of "either version of
+    both or neither" at PR granularity — flagged for Logan; see the module docstring.)"""
     if in_nest(path):
-        return (None, "high")
+        return (None, "nope" if is_still_point(path) else "high")
     # Maze. Probe sandboxes stay low; protected surfaces are pinned high (safety override).
     if path.startswith(PROBE_PREFIXES):
         return ("low", None)
@@ -145,6 +165,7 @@ def main():
         "tier": tier,
         "filetype": filetype,
         "depth": depth,
+        "subtier": None,  # TBD — next version (filetype circles / depth Levels); not implemented
         "by_file": by_file,
         "high_risk_files": high_risk,
         "low_risk_files": low_risk,
