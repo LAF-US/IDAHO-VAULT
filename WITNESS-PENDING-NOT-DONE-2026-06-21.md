@@ -4,7 +4,7 @@ created: 2026-06-21
 updated: 2026-06-21
 status: draft
 authority: LOGAN
-doc_class: misc_reference
+doc_class: witness
 authors:
   - Claude Code CLI
 related:
