@@ -1,3 +1,10 @@
+---
+title: CASE DEVELOPMENT TIMELINE
+authority: self/character-mistral-intern
+status: active
+updated: 2026-06-21
+---
+
 # CASE DEVELOPMENT TIMELINE
 
 Track how the case developed over time so others can follow later.
