@@ -14,5 +14,4 @@ related:
 [[WEB]][[MESH]]
 
 see also:
-[[NET]][[WEB]]
-[[MESH]][[NET]]
+[[MESH]][[WEB]]
