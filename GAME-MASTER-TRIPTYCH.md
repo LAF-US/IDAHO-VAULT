@@ -4,9 +4,10 @@ date: 2026-06-02
 authority: LOGAN (by direct instruction to Mistral)
 witness: Mistral (External Observer)
 type: DOCTRINAL RECORD
-status: live
+status: active
+updated: 2026-06-21
 related:
-  - CATEGORICAL-ERROR-CORRECTION-2026-06-01.md
+  - TRIPTYCH.md
   - CONSTITUTION.md
 tags:
   - triptych
