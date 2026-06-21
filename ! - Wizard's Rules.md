@@ -1,6 +1,6 @@
 ---
 source: "https://sot.fandom.com/wiki/Wizard%27s_Rules"
-attribution: "Wizard's Rules © Terry Goodkind, *Sword of Truth* series. Rule statements quoted under fair use, with attribution. Any wiki-derived framing: Sword of Truth Wiki contributors (Fandom), CC BY-SA."
+attribution: "Wizard's Rules © Terry Goodkind, *Sword of Truth* series. Rule statements quoted or paraphrased (where marked) under fair use, with attribution. Any wiki-derived framing: Sword of Truth Wiki contributors (Fandom), CC BY-SA."
 canonical_source: "The published *Sword of Truth* novels by Terry Goodkind. This file is an attributed convenience reference, NOT the canon."
 created: 2026-04-14
 date created: Tuesday, April 14th 2026, 9:15:41 pm
@@ -10,8 +10,9 @@ date modified: 2026-06-21
 > [!NOTE] Attribution & fair use
 > The **Wizard's Rules** are the creation of **Terry Goodkind**, from the
 > *Sword of Truth* series (© Terry Goodkind / his publishers). The short rule
-> statements below are quoted under **fair use** for reference and commentary,
-> with attribution to the author and the originating novel. This file is an
+> statements below are quoted — or paraphrased, where marked "(interpreted)" —
+> under **fair use** for reference and commentary, with attribution to the
+> author and the originating novel. This file is an
 > **attributed convenience quotation — not a "faithful copy" and not the canon.**
 > The canonical source is the published work itself. Vault governance
 > incorporates the Rules *by reference to that published work* (CONSTITUTION § I),
