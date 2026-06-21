@@ -73,6 +73,16 @@ needed now"). Stubs above are a map of intent, not a backlog commitment.
 | [[LOCAL-STORAGE-INVENTORY-2026-05-08]] | active | Identity-by-label-not-letter doctrine. |
 | [[CONSTITUTION]] § VII | live | Lifecycle vocabulary; only Logan promotes `draft` → standing. |
 
+> [!caution] The NET/WEB/MESH standards are NOT hard-locked
+> As of 2026-06-21, **Logan has not hard-locked the definition of any of the six**
+> NET/WEB/MESH portability standards — [[NETWEB]], [[WEBNET]], [[MESHWEB]], [[WEBMESH]],
+> [[MESHNET]], [[NETMESH]]. The bindings above (NETWEB ≈ filesystem-path portability,
+> MESHWEB ≈ runtime portability, MESHNET ≈ sync-topology portability) are **current
+> observed readings from the present files, not ratified canon.** A file's `status: active`
+> or its CI enforcement reflects that file's own lifecycle — not a locked *definition* of
+> the standard. Treat every NET/WEB/MESH binding in this register as provisional and
+> subject to change until Logan fixes it.
+
 > [!warning] Authored from `cloud` — DISCOVER phase only
 > Per [[MESHWEB]], a `cloud` agent cannot read device serials, SMART health, encryption
 > state, or live disk contents. Fields requiring physical evidence carry the `*` wildcard
@@ -98,4 +108,4 @@ per [[CONSTITUTION]] § VII.
 - **Status:** Draft
 - **Authority:** LOGAN
 - **Authors:** Claude Code CLI
-- **Change Note:** Established the parent hardware/device register and its subcomponent map; bound it to live storage, metadata, and runtime-portability doctrine; built [[DRIVE-REGISTRY]] as the first child. Device plane kept distinct from the existing data-plane storage constellation.
+- **Change Note:** Established the parent hardware/device register and its subcomponent map; bound it to live storage, metadata, and runtime-portability doctrine; built [[DRIVE-REGISTRY]] as the first child. Device plane kept distinct from the existing data-plane storage constellation. Added the caveat that the NET/WEB/MESH standard definitions are NOT Logan-hard-locked — bindings here are provisional observed readings, not canon.
