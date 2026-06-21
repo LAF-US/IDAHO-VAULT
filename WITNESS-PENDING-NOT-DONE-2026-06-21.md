@@ -1,5 +1,6 @@
 ---
 title: "Witness — Pending ≠ Done: the referenced-but-unverified durable-copy gap"
+created: 2026-06-21
 updated: 2026-06-21
 status: draft
 authority: LOGAN
