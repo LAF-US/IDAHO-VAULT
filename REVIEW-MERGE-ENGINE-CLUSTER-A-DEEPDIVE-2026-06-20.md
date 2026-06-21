@@ -123,7 +123,7 @@ domain overlap.)*
 
 ---
 
-## 3·Correction (2026-06-20, witnessed) — the risk-tier schema is NOT retired
+## 3.1 · Correction (2026-06-20, witnessed) — the risk-tier schema is NOT retired
 
 Logan caught that #597 (this PR) was auto-labeled `risk/high`, which contradicts the
 unqualified "retired risk-tier schema" phrasing carried into F1 above. That phrasing was a
