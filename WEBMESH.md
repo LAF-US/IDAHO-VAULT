@@ -1,8 +1,14 @@
 ---
+title: "WEBMESH"
+created: 2026-04-19
+updated: 2026-06-21
+status: draft
+authority: LOGAN
 related:
+  - MESHWEB
+  - VAULT-CONVENTIONS
   - NETWEB
-date created: Sunday, April 19th 2026, 9:32:26 pm
-date modified: Sunday, April 19th 2026, 9:34:00 pm
+  - MESHNET
 ---
 
 [[WEB]][[MESH]]
