@@ -62,6 +62,15 @@ class ClassifyFileTest(unittest.TestCase):
         self.assertEqual(cp.classify_file("CONSTITUTION.md"), (None, "high"))
         self.assertEqual(cp.classify_file("AGENTS.md"), (None, "high"))
 
+    def test_dotfolder_surfaces_pinned_high(self):
+        # Persona/config dotfolders must be pinned high regardless of filetype.
+        # Editing .claude/ or .gemini/ is not a low-risk change.
+        self.assertEqual(cp.classify_file(".claude/CLAUDE.md"), (None, "high"))
+        self.assertEqual(cp.classify_file(".gemini/GEMINI.md"), (None, "high"))
+        self.assertEqual(cp.classify_file(".codex/CODEX.md"), (None, "high"))
+        self.assertEqual(cp.classify_file(".op/secrets.template.md"), (None, "high"))
+        self.assertEqual(cp.classify_file(".perplexity/PERPLEXITY.md"), (None, "high"))
+
     def test_probe_carveout_low(self):
         self.assertEqual(cp.classify_file(".github/workflows/probe-smoke.yml"), ("low", None))
 
