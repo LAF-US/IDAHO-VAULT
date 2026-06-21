@@ -870,7 +870,14 @@ When both devices edit the same config file between syncs, Obsidian creates a `(
 - **Auto-merge** is a *pull-request-level* feature (the "Merge when ready" toggle / `enablePullRequestAutoMerge`). On a merge-queue branch it does **not** merge the PR itself — enabling it only **requests the PR's admission to the queue** once the PR is ready.
 - **The merge queue** is a *branch-level* mechanism (the `merge_queue` rule). It admits ready PRs, builds each in a **`merge_group`** on top of `main`, runs the queue's checks, and merges under `grouping_strategy: ALLGREEN`.
 
-So landing a PR is three beats, not one: **arm** (enable auto-merge) → **enqueue** (admitted to the queue on the ready-transition) → **merge** (the `merge_group` build goes green and the queue merges).
+Landing a PR is a **sequence of triggers that must trip in order — and arming is only the first, and it happens automatically.** `auto-merge-engage.yml` enables "merge when ready" on PR *open*, so a PR is **armed the moment it exists**; an agent never needs to arm one, and **being armed does not mean it will merge.** The ordered triggers:
+
+1. **Arm** — automatic on open (`auto-merge-engage.yml`). Free. ⚠️ **This is where agents wrongly believe their duty ends.** It does not.
+2. **Satisfy entry gates** — latest commit's Copilot review complete, all review threads resolved, commits signed (see below).
+3. **Enqueue** — the trigger agents miss: admission fires only on the *transition into ready*, and a PR armed while still blocked does **not** auto-enqueue when it later goes green; the transition must be **re-fired** (the toggle recipe below).
+4. **Merge** — the `merge_group` build goes green under ALLGREEN and the queue merges.
+
+**You are responsible until the PR is MERGED, not until it is armed.** Arming is automatic and free; the work — and the duty — is steps 2–4.
 
 **Two different gates — entry vs. merge:**
 
