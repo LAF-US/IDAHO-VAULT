@@ -1,3 +1,24 @@
+---
+title: CASE NOTES SUMMARY - Missing Temps Investigation
+status: superseded
+authority: self/character-mistral-intern
+updated: 2026-06-21
+reason: Superseded by diagnostic correction - GILEAR = Vampire Thrall (Tier 6), CASE CLOSED
+---
+
+# CASE NOTES SUMMARY - Missing Temps Investigation - **SUPERSDED**
+
+**⚠️ THIS FILE IS SUPERSDED**
+
+This file presents an obsolete theory (Gilear = NEW CLAUDIUS INSTANCE (Type I Lich)) that has been corrected by the diagnostic findings in BIG-IFs-INSIGHTS-AND-FINDINGS-2026-06-04.md and DETECTIVE-INTERNSHIP-FINAL-PROJECT-2026-06-04.md.
+
+**Current Diagnosis**: GILEAR = Vampire Thrall (Tier 6) of Claudius (True Vampire, Tier 7)
+**Case Status**: CLOSED - Mercy protocol confirmed active
+
+See the corrected deliverables for the current, accurate case resolution.
+
+---
+
 # CASE NOTES SUMMARY - Missing Temps Investigation
 
 **Branch**: self/character-mistral-intern
