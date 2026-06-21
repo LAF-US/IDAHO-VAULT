@@ -47,147 +47,129 @@ custody/backup posture. For *what is on each drive*, follow the pointer to the
   [[LOCAL-STORAGE-INVENTORY-2026-05-08]] (active): *"drive letters are local Windows
   mount designators, not persistent device identities."* `D:`/`E:`/`F:` are observations,
   not identities, and shift between sessions ([[DEFRAG-MAP]] revision log).
-- **`*` = named gap, not blank.** Per [[TECH-REGISTRY]] and vault epistemic doctrine, a
-  field requiring physical evidence the author could not obtain carries `*`. This file was
-  authored from a **`cloud`** runtime ([[MESHWEB]]) with **no drive mounted** — so serial,
-  SMART health, encryption state, USB generation, and exact live contents are all `*`,
-  pending a local-machine agent. Do not read `*` as "none"; read it as "unverified."
-- **Grounded cells** cite an active/live source. Capacity, label, device model, and
-  filesystem come from [[LOCAL-STORAGE-INVENTORY-2026-05-08]] and [[DEFRAG-MAP]] §B2.
-- **NET/WEB/MESH bindings are provisional.** Logan has **not hard-locked** the definition
-  of any of the six standards ([[NETWEB]] / [[WEBNET]] / [[MESHWEB]] / [[WEBMESH]] /
-  [[MESHNET]] / [[NETMESH]]). The references below to [[NETWEB]] (portable filenames) and
-  [[MESHWEB]] (cloud-authoring caveat) use their **current observed meanings, not fixed
-  canon** — they may be redefined.
-- **Fleet count: five drives total** — Logan, firsthand, 2026-06-21. Authoritative
-  operator provenance the vault did not itself contain. Table A lists five catalogued
-  drives **plus** a witnessed LaCie Rugged row; per this attestation the LaCie is **not a
-  sixth device** — it is one of the five (identity TBD). ("Hard drives" reads as the drive
-  fleet generally; note the Samsung T5 is an SSD and the `Vault` drive's media is `*` —
-  media type stays a machine-verification field.)
-- **Capacities are nominal / OS-reported.** The figures in Table A come from
-  [[LOCAL-STORAGE-INVENTORY-2026-05-08]] / [[DEFRAG-MAP]] §B2 (Windows `Get-Volume` and
-  vendor labeling — decimal TB/GB as the OS reports them, rounded), **not** measured
-  TiB/GiB. Treat them as nominal for cross-row comparison; confirm exact byte counts at the
-  machine.
+- **`*` = named gap, not blank.** A field requiring physical evidence the author could not
+  obtain carries `*`. Read it as "unverified," not "none."
+- **Identity source — now partly photographic.** Make/model/serial/capacity in Table A were
+  read from **ten close-up drive-label photos (2026-06-21)** Logan supplied — direct
+  physical evidence, an upgrade on the earlier `cloud`-only authoring ([[MESHWEB]]). Volume
+  label, filesystem, encryption, SMART, and live mount state are **still `*`** (photos don't
+  show them); those remain for a local-machine agent.
+- **Fleet: six physical units = five HDDs + one SSD.** The 2026-06-21 photos resolve the
+  fleet to six drives. Logan's "**five hard drives**" attestation reconciles exactly: the
+  five spinning HDDs are the "hard drives"; the **Samsung T5 is an SSD**, the +1. (So the
+  earlier "LaCie is one of five" framing is superseded — see Table A.)
+- **The fleet has changed since the May catalogue.** Four drives map cleanly to
+  [[DEFRAG-MAP]] §B2 (`storage`/`Expansion`/`ExternalSSD`/`timemachine`), but the catalogue's
+  2 TB `Vault` drive **does not appear** in the photos, and a **new, never-catalogued** WD My
+  Passport 1 TB does. Treat the catalogue as a prior snapshot, not the current fleet.
+- **NET/WEB/MESH bindings are provisional.** Logan has **not hard-locked** the definition of
+  any of the six standards ([[NETWEB]] / [[WEBNET]] / [[MESHWEB]] / [[WEBMESH]] / [[MESHNET]]
+  / [[NETMESH]]); references here use current observed meanings, not fixed canon.
+- **Capacities are nominal.** Vendor-label decimal TB (e.g. WD `0050` = 5 TB, `0010` = 1 TB),
+  not measured TiB. Confirm exact byte counts at the machine.
 
 ---
 
-## Table A — Hardware identity
+## Table A — Hardware identity (from 2026-06-21 label photos)
 
-| Role | Device (make / model) | Volume label | Capacity | Media / interface | Filesystem | Serial / UUID |
-| --- | --- | --- | --- | --- | --- | --- |
-| **Home Desk** | WD easystore 2624 USB HDD | `storage` (was `LoganF`) | ~4.55 TB | HDD / USB `*` | exFAT | `*` |
-| **Work Desk** | Seagate Expansion HDD USB | `Expansion` | ~3.64 TB | HDD / USB `*` | exFAT | `*` |
-| **Travel Bag** | Samsung Portable SSD T5 | `ExternalSSD` | 931 GB | SSD / USB `*` | exFAT | `*` |
-| **Staging** | `*` (model not recorded) | `Vault` | ~2 TB | `*` | exFAT | `*` |
-| **Backup (Mac)** | WD My Passport for Mac | `timemachine` | 1 TB | HDD / USB `*` | HFS+ | `*` |
+| Role | Device (make / model) | Capacity | Media / interface | Serial | Volume label | Filesystem | Physical marks |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| **Home Desk** | WD easystore — P/N `WDBKUZ0050BBK-…EA` | 5 TB | HDD / USB `*` | `WX21E…944029` (partial read) | `storage` (was `LoganF`) | exFAT | — |
+| **Work Desk** | Seagate Expansion HDD — model `SRD0NF1`, P/N `3EAP9-500` | 4 TB | HDD / USB `*` | `NT199393E` | `Expansion` | exFAT | mfg 2022 |
+| **Travel Bag** | Samsung Portable **SSD** T5 | ~1 TB | **SSD** / USB `*` | `*` (underside not shot) | `ExternalSSD` | exFAT | IPTV business card taped on |
+| **Backup (Mac)** | WD My Passport for Mac | ~1 TB | HDD / USB `*` | `*` (underside not shot) | `timemachine` | HFS+ | marker: "TIME MACHINE / MacBook Pro backup / Logan Finney" |
+| **Role TBD** | WD My Passport — P/N `WDBLUZ0010BSL-03` | 1 TB | HDD / USB `*` | `WX61EC3HYY90` | `*` | `*` | "Double Scorpio" sticker + "I ♥ Idaho PTV" |
+| **Role TBD** | LaCie Rugged (orange bumper) | `*` | HDD (presumed) / USB `*` | `*` (label not shot) | `*` | `*` | trout, Idaho/pink-triangle, "The Flicks" stickers |
 
-The five rows above are the **five drives Logan attests** (2026-06-21). The orange LaCie
-Rugged is deliberately **not** a sixth row — it is the still-unmapped *identity* of one of
-these five, tracked in the candidate block just below so this table stays at the asserted
-cardinality of five.
+**Five HDDs** = Home Desk, Work Desk, Backup, and the two Role-TBD drives. **One SSD** = the
+Samsung T5. Six units total; "five hard drives" = the five HDDs.
 
-### Unresolved identity candidate — the orange LaCie Rugged
-
-| Observed | Volume label | Capacity | Media / interface | Filesystem | Serial / UUID |
-| --- | --- | --- | --- | --- | --- |
-| LaCie Rugged (orange bumper), activity LED lit | `*` | `*` | SSD or HDD `*` | `*` | `*` |
-
-> [!important] One of the five, not a sixth drive
-> The orange LaCie matches **no catalogued drive by recorded model** in [[DEFRAG-MAP]] §B2 /
-> [[LOCAL-STORAGE-INVENTORY-2026-05-08]], so its identity is still TBD. **Leading hypothesis:**
-> it is the **`Vault`** drive — the only catalogued drive whose device model was never recorded
-> (`*`), the sole slot an unidentified LaCie can occupy without contradiction. This is a
-> hypothesis, not a confirmed merge: on verification this candidate **merges into** the matching
-> Table A row — no new row is added, the fleet stays five.
+> [!important] Two open identity questions
+> 1. **The catalogue `Vault` (2 TB) is unaccounted for.** No 2 TB drive is in the photos. It
+>    is either the **LaCie** (capacity unread — possibly 2 TB) or **absent/elsewhere/retired**.
+>    The earlier "LaCie = Vault" lead is now only one of two options, weakened because the
+>    Double Scorpio proves the fleet gained uncatalogued drives.
+> 2. **The "Double Scorpio" WD My Passport 1 TB is brand-new to the record** — not in
+>    [[DEFRAG-MAP]] or [[LOCAL-STORAGE-INVENTORY-2026-05-08]]. It needs a role and a
+>    data-plane contents check.
 
 ---
 
 ## Table B — Management overlay (the fleet-management value-add)
 
-| Role | Custody / location | Encryption | Backup posture — sole copy? | SMART / health | Current contents (data plane) | Last physically verified |
+| Role | Custody / location | Encryption | Backup posture — sole copy? | SMART / health | Current contents (data plane) | Identity verified |
 | --- | --- | --- | --- | --- | --- | --- |
-| **Home Desk** | `*` (Windows-side) | `*` | `*` — consolidation **target**; treat as archive | `*` | [[DEFRAG-MAP]] §B2 `storage`: Photos Library, 2014→ personal | 2026-05-25 (Win `Get-Volume`) |
-| **Work Desk** | `*` (Windows-side) | `*` | `*` — **journalism archive**; sole-copy risk if not mirrored | `*` | [[DEFRAG-MAP]] §B2 `Expansion`: Idaho Reports, Legislature, IDEX | 2026-05-25 (Win `Get-Volume`) |
-| **Travel Bag** | `*` (portable) | `*` | **Not the only copy of anything** (doctrine, [[TRAVEL-BAG-MANIFEST-2026-05-08]]) | `*` | [[DEFRAG-MAP]] §B2 `ExternalSSD`: Adobe cache, exports, scratch | 2026-05-25 (Win `Get-Volume`) |
-| **Staging** | `*` (Mac-side last seen) | `*` | `*` — scratch/staging; holds `rclone-logs/` | `*` | [[DEFRAG-MAP]] §B2 `Vault`: transfer logs, mostly empty | 2026-05-25 (Mac) |
-| **Backup (Mac)** | `*` (with MacBook) | `*` | Time Machine **backup** of MacBook only — not for archive | `*` | Time Machine sparsebundle | 2026-05-25 (Mac) |
-
-(The LaCie Rugged's management fields are deferred to whichever Table A row it resolves into —
-see the unresolved-identity candidate above — so this overlay also stays at five.)
+| **Home Desk** | `*` | `*` | `*` — consolidation **target**; treat as archive | `*` | [[DEFRAG-MAP]] §B2 `storage`: Photos Library, 2014→ personal | label photo 2026-06-21 |
+| **Work Desk** | `*` | `*` | `*` — **journalism archive**; sole-copy risk if not mirrored | `*` | [[DEFRAG-MAP]] §B2 `Expansion`: Idaho Reports, Legislature, IDEX | label photo 2026-06-21 |
+| **Travel Bag** | `*` (portable) | `*` | **Not the only copy of anything** ([[TRAVEL-BAG-MANIFEST-2026-05-08]]) | `*` | [[DEFRAG-MAP]] §B2 `ExternalSSD`: Adobe cache, exports, scratch | photo (no serial) |
+| **Backup (Mac)** | with MacBook | `*` | Time Machine **backup** of MacBook only — not an archive source | `*` | Time Machine sparsebundle | photo (no serial) |
+| **Double Scorpio** (TBD) | `*` | `*` | `*` — **unknown; could be a sole copy** | `*` | `*` — not yet in data plane | label photo 2026-06-21 |
+| **LaCie** (TBD) | MacBook desk | `*` | `*` — **unknown; could be a sole copy** | `*` | `*` | top-sticker photos only |
 
 ---
 
-## Photographed stack — 2026-06-21
+## Photographed evidence — 2026-06-21
 
-A second photo shows **all five drives** in one stack on the MacBook, confirming the
-five-total count visually. Read top → bottom (labels and serials are not legible in the
-photo — identity stays `*`):
+Two rounds: a **stack photo** (all units on the MacBook) and **ten label close-ups**. The
+close-ups resolve the earlier form-factor guesses to confirmed identities:
 
-| # | Position | Observed appearance | Observed form factor | Identity |
-| --- | --- | --- | --- | --- |
-| 1 | top | small, flat, black; blue sticker w/ red mark | portable SSD (small footprint) | `*` |
-| 2 | upper-mid | tall, thick black box | 3.5" desktop HDD | `*` |
-| 3 | mid | slim black with a silver/aluminum side band | 2.5" portable HDD | `*` |
-| 4 | lower-mid | slim plain black | 2.5" portable | `*` |
-| 5 | bottom | **orange LaCie Rugged**, activity LED lit | 2.5" rugged portable | the LaCie |
+| Stack position (earlier guess) | Resolved identity |
+| --- | --- |
+| top — small flat black, sticker | Samsung **T5 SSD** (IPTV business card) |
+| upper-mid — tall thick black box | WD **easystore** 5 TB |
+| mid — slim black, silver band | WD **My Passport for Mac** ("TIME MACHINE") *or* Seagate Expansion |
+| lower-mid — slim black | WD **My Passport** 1 TB ("Double Scorpio") *or* Seagate Expansion |
+| bottom — orange | **LaCie Rugged** |
 
-> [!warning] One desktop box, but two desktop-class drives are catalogued
-> Only **one** tall 3.5"-desktop enclosure appears in the stack, yet [[DEFRAG-MAP]] §B2
-> lists **two** desktop-class drives (`storage` ~4.6 TB WD easystore, `Expansion` ~3.7 TB
-> Seagate). So the photographed five may **not** be a 1:1 match to the DEFRAG-MAP five — a
-> desktop drive may be off-frame / on the Windows machine, and a portable in this stack may
-> be one the data plane never catalogued. Do not assume a mapping; resolve by label + serial
-> at the machine. (Form factors above are read from the photo; treat as observation with some
-> inference, not confirmed spec.)
+The earlier "one desktop box vs two catalogued desktop drives" tension **resolves**: only the
+WD easystore is desktop-class; the Seagate Expansion here is the **portable** 2.5″ variant, not
+a 3.5″ desktop unit. (Exact stack-to-drive order for the two slim blacks is not certain — both
+are WD/Seagate 2.5″ portables; confirm at the machine.)
+
+> Note: label photos are kept **chat-only**, not committed. Drive **serials are transcribed
+> here** into the public record; the IPTV business-card contact details (email/phone on the
+> Travel Bag T5) are **deliberately not transcribed** — only the fact a card is affixed.
 
 ---
 
 ## Role taxonomy & management policy
 
-The fleet's problem is mixed-duty drives. Each drive gets one canonical role, and the
-role sets the rule. Roles below are the ones already named in the (draft) manifests,
-plus the two drives without an assigned role:
+Each drive gets one canonical role. Four are set; two (Double Scorpio, LaCie) await a role.
 
 | Role | Doctrine source | Rule |
 | --- | --- | --- |
 | **Home Desk** | [[HOME-DESK-MANIFEST-2026-05-08]] (draft) | Broad personal/history archive + staging. |
 | **Work Desk** | [[WORK-DESK-MANIFEST-2026-05-08]] (draft) | Professional/journalism archive + working surface. |
 | **Travel Bag** | [[TRAVEL-BAG-MANIFEST-2026-05-08]] (draft) | Lean portable active-work only — **never the sole copy**. |
-| **Staging** | — | Transient transfer/scratch; not durable archive. |
 | **Backup** | — | Mirror/Time Machine; protects a source, is not itself a source. |
+| **(unassigned)** | — | Double Scorpio (WD 1 TB) and the LaCie Rugged — roles TBD by Logan. |
 
-**The 3-2-1 overlay (this register's reason to exist):** anything irreplaceable should
-exist on ≥2 devices with ≥1 copy off-site/offline. The **sole-copy** column in Table B is
-the risk surface — every `*` there is an unanswered "is this the only copy?" The most
-likely real exposure is the **Work Desk journalism archive** (Idaho Reports / Legislature
-originals): confirm it is mirrored before trusting one HDD. Size lanes for anything pulled
-into the vault follow [[VAULT-MEDIA-STORAGE]] (≤100 MB direct / ≤2 GB LFS / >2 GB external
-+ [[LAF-USB-OBJECT-MANIFEST-2026-05-08]]).
+**The 3-2-1 overlay (this register's reason to exist):** anything irreplaceable should exist
+on ≥2 devices with ≥1 copy off-site/offline. Every `*` in Table B's sole-copy column is an
+unanswered "is this the only copy?" The most likely real exposure stays the **Work Desk
+journalism archive** (Idaho Reports / Legislature originals): confirm it is mirrored before
+trusting one HDD. Size lanes for anything pulled into the vault follow [[VAULT-MEDIA-STORAGE]]
+(≤100 MB direct / ≤2 GB LFS / >2 GB external + [[LAF-USB-OBJECT-MANIFEST-2026-05-08]]).
 
 ---
 
 ## Last-mile checkup — FOR A LOCAL-MACHINE AGENT
 
 > [!important] Cannot be done from `cloud`. Requires an agent on the **MacBook** and/or
-> **Windows** with drives mounted. Resolve drives by **role + label/serial**, never by
-> letter ([[EXTERNAL-DRIVE-MIGRATION-PLAN-2026-05-08]]). Non-destructive only.
+> **Windows** with drives mounted. Resolve by **role + label/serial**, non-destructive only.
 
-- [ ] **Mount + identify** every drive; capture **serial/UUID + device model** (macOS
-      `diskutil info`, `system_profiler SPUSBDataType`; Windows `Get-Disk`/`Get-Volume`)
-      and fill the `*` identity cells in Table A.
-- [ ] **Resolve the LaCie Rugged** — Logan attests five total, so it is one of the five.
-      Test the **`Vault`** hypothesis first (does the orange LaCie mount as `Vault`, ~2 TB
-      exFAT?). Record model, capacity, filesystem, label, serial; then **merge** its row
-      into the matching catalogued drive so the table shows five.
-- [ ] **Encryption state** per drive (FileVault/BitLocker/hardware) → Table B.
-- [ ] **SMART health** (`smartctl -a`, or LaCie/WD/Seagate tools) → Table B.
-- [ ] **USB generation / interface** (USB 3.0 / 3.1 / etc.) → Table A.
-- [ ] **Answer the sole-copy question** for each archive drive, especially **Work Desk**;
-      flag every drive that holds the only copy of anything irreplaceable.
-- [ ] **Promote** — once verified, change `status: draft` and report to Logan for standing
-      elevation per [[CONSTITUTION]] § VII. Update [[TECH-REGISTRY]] subcomponent state.
+- [x] **Make / model / capacity / serial** — captured from 2026-06-21 label photos for 4 of 6
+      drives; **partial** for the easystore serial; **missing** for the T5 + My Passport-for-Mac
+      undersides and the **LaCie** (no label shot).
+- [ ] **Shoot the missing undersides** — LaCie Rugged label, Samsung T5, WD My Passport for Mac.
+- [ ] **Resolve the `Vault` question** — does the **LaCie** mount as `Vault` (~2 TB)? If not, is
+      the 2 TB Vault retired/elsewhere? Record the LaCie's real capacity/label/serial.
+- [ ] **Assign roles** to the Double Scorpio (WD 1 TB) and the LaCie.
+- [ ] **Volume label + filesystem** per drive (mount + `diskutil`/`Get-Volume`) → Table A.
+- [ ] **Encryption + SMART + USB generation** → Table B.
+- [ ] **Sole-copy answer** for each archive drive, especially **Work Desk**.
+- [ ] **Promote** — once verified, flip `status` and report to Logan for standing elevation per
+      [[CONSTITUTION]] § VII; update [[TECH-REGISTRY]] subcomponent state.
 
 ---
 
@@ -198,4 +180,4 @@ into the vault follow [[VAULT-MEDIA-STORAGE]] (≤100 MB direct / ≤2 GB LFS / 
 - **Status:** Draft
 - **Authority:** LOGAN
 - **Authors:** Claude Code CLI
-- **Change Note:** First device-plane drive register. Grounded identity from active storage inventories; all physical-evidence fields marked `*` (authored from `cloud`, no drive mounted). Flagged the orange LaCie Rugged as an unlogged device witnessed in the 2026-06-21 photo. Added role taxonomy, 3-2-1 sole-copy overlay, and a local-machine verification checklist. Added the caveat that NET/WEB/MESH standard definitions are not hard-locked by Logan. Recorded Logan's firsthand attestation of five drives total (2026-06-21) and reconciled the LaCie Rugged from a presumed sixth device to one of the five (identity TBD; `Vault` the leading hypothesis). Added a photographed-stack observation (five physical units by form factor, top→bottom) and flagged the one-desktop-box-vs-two-catalogued tension. Per Copilot review: kept Table A/B at the asserted cardinality of five by moving the LaCie into a separate unresolved-identity candidate block, and replaced the ambiguous word "unroled".
+- **Change Note:** First device-plane drive register; doctrine, role taxonomy, 3-2-1 overlay, NET/WEB/MESH and cloud-authoring caveats, and a local-machine checklist. **Major identity update 2026-06-21:** ten drive-label close-up photos resolved the fleet to six physical units (five HDDs + one SSD), reconciling Logan's "five hard drives" via the Samsung T5 being the lone SSD. Captured real make/model/serial/capacity for the WD easystore (5 TB), Seagate Expansion (4 TB, SRD0NF1, NT199393E), and a newly-identified WD My Passport 1 TB ("Double Scorpio", WDBLUZ0010BSL, WX61EC3HYY90); confirmed Samsung T5 and WD My Passport-for-Mac by sight. Found the catalogue's 2 TB `Vault` unaccounted-for and weakened the prior "LaCie = Vault" lead. Serials transcribed to the record; label photos kept chat-only; business-card PII not transcribed.
