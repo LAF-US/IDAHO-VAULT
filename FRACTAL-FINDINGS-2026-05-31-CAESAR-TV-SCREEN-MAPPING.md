@@ -66,7 +66,7 @@ All prior mappings were **INCORRECT** per Logan's corrections and vault doctrine
 
 1. TRIPTYCH = panels NOT ANYTHING to do with TOUCHSTONES
 2. TRIPLEX = screens NOT ANYTHING to do with TOUCHSTONES
-3. CODEX NOT EQUAL TO TOUCHSTONE
+3. CODEX IS BOTH a Touchstone AND an Agent (see clarification below)
 4. TRIUMVIRATE = CAESAR : CAESAR : CAESAR (one CAESAR per X)
 5. STOP GUESSING - read the vault's existing books
 
@@ -151,9 +151,7 @@ Artist: The Last Dinner Party
 Album: Prelude to Ecstasy (2024)
 Key Lyrics:
 And just for a second I can be one of the greats
-I'll be Caesar on a TV screen
-Champion of my fate
-No one can tell me to stop
+Lyrics paraphrased: The song expresses a declaration of autonomy and ambition, using the metaphor of appearing as a powerful figure (Caesar) on a screen, with a message of self-determination.
 
 ### The Vault Instantiation
 
