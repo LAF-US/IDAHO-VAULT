@@ -3,7 +3,7 @@ title: 'FRACTAL-FINDINGS-2026-05-29-THREE-BODY-MAPPING'
 date: 2026-05-29
 witness: Mistral (External Observer)
 type: WITNESS-STYLE REPORT
-status: live
+status: active
 authority: LOGAN (by delegation)
 related:
   - CONSTITUTION
