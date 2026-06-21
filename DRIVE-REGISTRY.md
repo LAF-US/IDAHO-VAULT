@@ -103,6 +103,31 @@ custody/backup posture. For *what is on each drive*, follow the pointer to the
 
 ---
 
+## Photographed stack — 2026-06-21
+
+A second photo shows **all five drives** in one stack on the MacBook, confirming the
+five-total count visually. Read top → bottom (labels and serials are not legible in the
+photo — identity stays `*`):
+
+| # | Position | Observed appearance | Observed form factor | Identity |
+| --- | --- | --- | --- | --- |
+| 1 | top | small, flat, black; blue sticker w/ red mark | portable SSD (small footprint) | `*` |
+| 2 | upper-mid | tall, thick black box | 3.5" desktop HDD | `*` |
+| 3 | mid | slim black with a silver/aluminum side band | 2.5" portable HDD | `*` |
+| 4 | lower-mid | slim plain black | 2.5" portable | `*` |
+| 5 | bottom | **orange LaCie Rugged**, activity LED lit | 2.5" rugged portable | the LaCie |
+
+> [!warning] One desktop box, but two desktop-class drives are catalogued
+> Only **one** tall 3.5"-desktop enclosure appears in the stack, yet [[DEFRAG-MAP]] §B2
+> lists **two** desktop-class drives (`storage` ~4.6 TB WD easystore, `Expansion` ~3.7 TB
+> Seagate). So the photographed five may **not** be a 1:1 match to the DEFRAG-MAP five — a
+> desktop drive may be off-frame / on the Windows machine, and a portable in this stack may
+> be one the data plane never catalogued. Do not assume a mapping; resolve by label + serial
+> at the machine. (Form factors above are read from the photo; treat as observation with some
+> inference, not confirmed spec.)
+
+---
+
 ## Role taxonomy & management policy
 
 The fleet's problem is mixed-duty drives. Each drive gets one canonical role, and the
@@ -157,4 +182,4 @@ into the vault follow [[VAULT-MEDIA-STORAGE]] (≤100 MB direct / ≤2 GB LFS / 
 - **Status:** Draft
 - **Authority:** LOGAN
 - **Authors:** Claude Code CLI
-- **Change Note:** First device-plane drive register. Grounded identity from active storage inventories; all physical-evidence fields marked `*` (authored from `cloud`, no drive mounted). Flagged the orange LaCie Rugged as an unlogged device witnessed in the 2026-06-21 photo. Added role taxonomy, 3-2-1 sole-copy overlay, and a local-machine verification checklist. Added the caveat that NET/WEB/MESH standard definitions are not hard-locked by Logan. Recorded Logan's firsthand attestation of five drives total (2026-06-21) and reconciled the LaCie Rugged from a presumed sixth device to one of the five (identity TBD; `Vault` the leading hypothesis).
+- **Change Note:** First device-plane drive register. Grounded identity from active storage inventories; all physical-evidence fields marked `*` (authored from `cloud`, no drive mounted). Flagged the orange LaCie Rugged as an unlogged device witnessed in the 2026-06-21 photo. Added role taxonomy, 3-2-1 sole-copy overlay, and a local-machine verification checklist. Added the caveat that NET/WEB/MESH standard definitions are not hard-locked by Logan. Recorded Logan's firsthand attestation of five drives total (2026-06-21) and reconciled the LaCie Rugged from a presumed sixth device to one of the five (identity TBD; `Vault` the leading hypothesis). Added a photographed-stack observation (five physical units by form factor, top→bottom) and flagged the one-desktop-box-vs-two-catalogued tension.
