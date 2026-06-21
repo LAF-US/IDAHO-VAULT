@@ -6,6 +6,7 @@ import sys
 import unittest
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 import classify_paths as cp
 
 SCRIPT = Path(__file__).with_name("classify_paths.py")
@@ -85,6 +86,7 @@ class ChangesetTest(unittest.TestCase):
         r = self._run(["REVIEW-MERGE-ENGINE-CLUSTER-A-DEEPDIVE-2026-06-20.md",
                        "LOOKER-LANE-CLASSIFIER-BEHAVIORAL-MAP-2026-06-21.md"])
         self.assertEqual(r["tier"], "low")
+        self.assertEqual(r["tier4"], "low")
         self.assertEqual(r["filetype"], "low")
         self.assertIsNone(r["depth"])
         self.assertIsNone(r["subtier"])  # subtiers TBD — next version
@@ -94,10 +96,12 @@ class ChangesetTest(unittest.TestCase):
         self.assertEqual(r["filetype"], "med")   # the .py
         self.assertEqual(r["depth"], "high")     # the Nest file
         self.assertEqual(r["tier"], "high")
+        self.assertEqual(r["tier4"], "high")
 
     def test_still_point_pr_is_nope(self):
         r = self._run(["!/!/__!__/!/! The world is quiet here/Esto Perpetua!/x.md"])
-        self.assertEqual(r["tier"], "nope")
+        self.assertEqual(r["tier4"], "nope")   # four-valued
+        self.assertEqual(r["tier"], "high")    # binary legacy label
 
     def test_empty_is_low(self):
         r = self._run([])

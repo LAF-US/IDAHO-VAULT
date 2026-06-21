@@ -19,13 +19,14 @@ Per Logan's correction: "low/med apply to filetypes; high/nope apply to depth."
 So a maze file is tagged by filetype only; a Nest file is tagged by depth only —
 depth supersedes filetype inside the labyrinth.
 
-JSON output — this EXTENDS the old binary `tier`, it does not preserve it. The `tier`
-and `*_risk_files` keys agent-auto-pr already reads are kept, but `tier` is now 4-valued
-(low|med|high|nope) — an intentional CONTRACT EXTENSION, not a binary. New `risk/med` /
-`risk/nope` labels are unread until the consumer-wiring increment; the only live
-string-consumer matches `risk/high` (the Dependabot lane), unaffected.
+JSON output — `tier` stays BINARY (low|high) to preserve the existing `risk/<tier>` label
+contract: `agent-auto-pr.yml` stamps `--label risk/$tier` and `ensure-labels` only creates
+`risk/low`/`risk/high`, so emitting `med`/`nope` here would break PR creation. The four-valued
+result lives in the new `tier4` field — unused until the consumer-wiring increment registers
+`risk/med`/`risk/nope` and teaches the rhythms to read them.
   {
-    "tier": "low"|"med"|"high"|"nope",   # derived single label: nope>high>med>low
+    "tier": "low"|"high",                # BINARY legacy label (risk/<tier>); low else high
+    "tier4": "low"|"med"|"high"|"nope",  # the four-valued result (nope>high>med>low)
     "filetype": "low"|"med"|None,        # riskiest filetype among maze files touched
     "depth": "high"|"nope"|None,         # deepest Nest reach among files touched
     "subtier": None,                     # TBD — next version (see "SUBTIERS" below)
@@ -77,7 +78,7 @@ _MED_TYPES = COMPUTER_CODE                                  # executes -> med
 # unrecognized extension -> med (conservative within the maze axis)
 
 # --- Protected-surface pin (safety override; TUNABLE -> delegate to CODEOWNERS) ---
-PROTECTED_PREFIXES = (".github/workflows/", ".github/scripts/")
+PROTECTED_PREFIXES = (".github/",)  # the whole GitHub control plane (probe carve-out below)
 PROTECTED_EXACT = {
     "AGENTS.md", "CLAUDE.md", "CONSTITUTION.md", "DECISIONS.md", "LEVELSET.md",
     "VAULT-CONVENTIONS.md", "VAULT-TEMPLATES.md", "swarm.json", ".gitignore",
@@ -155,14 +156,16 @@ def main():
 
     filetype = max((b["filetype"] for b in by_file), key=lambda x: _FT_ORD[x], default=None)
     depth = max((b["depth"] for b in by_file), key=lambda x: _DP_ORD[x], default=None)
-    tier = combine(filetype, depth)
+    tier4 = combine(filetype, depth)            # four-valued: low|med|high|nope
+    tier = "low" if tier4 == "low" else "high"  # binary, legacy risk/<tier> label compat
 
     # Legacy aggregate buckets (high_risk = anything above low).
     high_risk = [b["path"] for b in by_file if combine(b["filetype"], b["depth"]) != "low"]
     low_risk = [b["path"] for b in by_file if combine(b["filetype"], b["depth"]) == "low"]
 
     print(json.dumps({
-        "tier": tier,
+        "tier": tier,        # binary low|high — keeps risk/<tier> label creation working
+        "tier4": tier4,      # four-valued low|med|high|nope (for the consumer-wiring increment)
         "filetype": filetype,
         "depth": depth,
         "subtier": None,  # TBD — next version (filetype circles / depth Levels); not implemented
