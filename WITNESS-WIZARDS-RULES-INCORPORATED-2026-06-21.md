@@ -37,7 +37,7 @@ Per that direction, on 2026-06-21:
 3. **`CONSTITUTION.md` revision log** — added dated, attributed lines.
 4. **Re-scope (per copyright review on PR #610, 2026-06-21):** the incorporation
    cites the **published work** (Goodkind, *Sword of Truth*), not a local
-   "faithful copy." [! - Wizard's Rules.md](<! - Wizard's Rules.md>) was demoted
+   "faithful copy." [! - Wizard's Rules.md](!%20-%20Wizard%27s%20Rules.md) was demoted
    to an attributed, fair-use convenience quotation of the short rule
    statements — **not** the canon.
 
@@ -46,7 +46,7 @@ Per that direction, on 2026-06-21:
 "Incorporated by reference" binds the *Wizard's Rules* as Vault governance **by
 pointer to the published work** (Terry Goodkind, *Sword of Truth*), without
 recopying them inline and without treating any local file as the canon. The
-canonical source is the novels themselves; [! - Wizard's Rules.md](<! - Wizard's Rules.md>)
+canonical source is the novels themselves; [! - Wizard's Rules.md](!%20-%20Wizard%27s%20Rules.md)
 is only an attributed, fair-use convenience quotation. Entered as a Core
 Principle at Logan's instruction, not as an addendum.
 
