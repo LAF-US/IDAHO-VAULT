@@ -43,7 +43,7 @@ LAF-ADDENDUM (04/16/2026): Google's GEMINI is hereby BANNED -from- making DECISI
 - **Repository and directory structure.** Only two folder styles are permitted: `!/*` is the "swarmic nest" or "hive" layer; `.*/*` "PERSONAE" dotfolders are agents' individual tool system *and* narrative files -- be careful when handling - especially one's own.
 - **`IDAHO-VAULT` does not exhaust the world it inhabits.** It is one repo inside the broader `LAF-US` organization and transition states.
 - **The current `LAF-US` order is federated.** `PRIVATE` contains `SECRET` and `PERSONAL`; `PUBLIC` contains `PUBLISH` and `PERSONAL`. Repo structure and team structure may overlap without being identical, as with all VAULTED SYNTAX throughout the LAF Unified Swarm.
-- **The Wizard's Rules are incorporated by reference.** The *Wizard's Rules* of Terry Goodkind's *Sword of Truth* series are incorporated by reference into Vault governance, **as that published work**; scope and provenance are recorded in `WITNESS-WIZARDS-RULES-INCORPORATED-2026-06-21.md`.
+- **The Wizard's Rules are incorporated by reference.** The *Wizard's Rules* of Terry Goodkind's *Sword of Truth* series are incorporated by reference into Vault governance, **as that published work**; scope and provenance are recorded in [WITNESS-WIZARDS-RULES-INCORPORATED-2026-06-21.md](WITNESS-WIZARDS-RULES-INCORPORATED-2026-06-21.md).
 
 ---
 
