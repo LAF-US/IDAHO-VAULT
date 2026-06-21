@@ -239,13 +239,17 @@ namespace-excluded URLs would.\*
 ### VII.2 This hardens the ToS/contract layer (§IV.4)
 
 Because acquisition required crawling **against the operator's express no-dump
-position**, the Terms-of-Service / contract exposure flagged in §IV.4 is
-**concrete, not hypothetical** — and independent of the copyright question.
-TVTropes `robots.txt` could not be retrieved this session (the site returned
-**HTTP 403** to the fetcher — the same block the dataset README gives, itself
-evidence of an anti-bot posture), so its verbatim crawl directives remain
-unconfirmed.\* (`robots.txt` governs *access*, not *usage*, and is not itself a
-contract; the ToS is the contract layer.)
+position**, the exposure flagged in §IV.4 is **concrete, not hypothetical** — and
+independent of the copyright question. Three distinct layers:
+
+- **ToS — the contract layer.** Bulk crawling against the site's stated terms is a
+  contract question, separate from copyright; this is where the no-dump stance
+  bites.
+- **`robots.txt` — the access-control layer.** It governs *access*, not *usage*,
+  and is not itself a contract — a breach is evidence, not a tort on its own.
+- **Observed behavior.** TVTropes returned **HTTP 403** to this session's fetcher
+  for both `robots.txt` and the dataset README — an active anti-bot posture — so
+  the verbatim crawl directives remain unconfirmed.\*
 
 ### VII.3 The closest "structured" access is itself a scrape
 
@@ -263,9 +267,18 @@ A web-search summary referenced an *"unofficial `api.tvtropes.org`"* and an
 no-dump stance** and could not be confirmed against primary sources — recorded
 here as **unverified**, not asserted.\*
 
-\* Method (crawl), `robots.txt` contents, DBTropes' current status, and the
-rumored API/mirror are flagged rather than resolved — grounded where stated,
-marked where not.
+**The `*` flags in §VII mark three different kinds of uncertainty** — do not read
+them as one:
+
+- **[inference]** — reasoned from grounded evidence, not stated by the source:
+  that acquisition was an HTML *crawl* (VII.1 — from no-API + 404-as-content).
+- **[unfetched]** — a primary text that exists but could not be retrieved this
+  session: `robots.txt`'s verbatim rules (VII.2 — HTTP 403).
+- **[unverified]** — an external claim not corroborated against a primary source:
+  the rumored `api.tvtropes.org` / SQLite mirror (VII.4), and DBTropes' *current*
+  status (VII.3).
+
+Grounded where stated; flagged — by kind — where not.
 
 ---
 
