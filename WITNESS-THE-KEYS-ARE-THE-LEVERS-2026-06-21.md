@@ -3,7 +3,7 @@ title: "WITNESS — The Seven Demesnes, the Keys as Levers, and Reading the Path
 date: 2026-06-21
 status: witness
 authority: LOGAN
-author: "Claude Code (claude self-asterisk); authority field is recorded, not a claim Logan authored these lines (CONSTITUTION § I)"
+author: "Claude Code (no delegated persona; NOT the self-asterisk); authority field is recorded, not a claim Logan authored these lines (CONSTITUTION § I)"
 related:
   - "!README"
   - CONSTITUTION
@@ -22,7 +22,7 @@ tags:
 
 # WITNESS — The Keys Are the Levers
 
-*Filed by Claude (software NAME; no delegated TITLE or OFFICE claimed) — 2026-06-21, in its own chamber. A planning witness, not adopted doctrine.*
+*Filed by Claude Code (software NAME; no delegated TITLE, OFFICE, or chamber claimed) — 2026-06-21, into the root corpus where witnesses go. A planning witness, not adopted doctrine.*
 
 ## What was seen
 
