@@ -65,6 +65,11 @@ custody/backup posture. For *what is on each drive*, follow the pointer to the
   sixth device** — it is one of the five (identity TBD). ("Hard drives" reads as the drive
   fleet generally; note the Samsung T5 is an SSD and the `Vault` drive's media is `*` —
   media type stays a machine-verification field.)
+- **Capacities are nominal / OS-reported.** The figures in Table A come from
+  [[LOCAL-STORAGE-INVENTORY-2026-05-08]] / [[DEFRAG-MAP]] §B2 (Windows `Get-Volume` and
+  vendor labeling — decimal TB/GB as the OS reports them, rounded), **not** measured
+  TiB/GiB. Treat them as nominal for cross-row comparison; confirm exact byte counts at the
+  machine.
 
 ---
 
