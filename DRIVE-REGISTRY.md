@@ -55,13 +55,17 @@ custody/backup posture. For *what is on each drive*, follow the pointer to the
   "unverified." Restore from that store when it exists.
 - **Identity source: 2026-06-21 label photos.** Make/model/serial/capacity were read from ten
   close-up photos — **two per drive, top and bottom of the same five drives** in the original
-  stack. Each drive's two faces were paired by enclosure (not by sticker). Volume label,
-  filesystem, encryption, SMART, and live mount state are still `*` (not shown in the photos).
+  stack. Each drive's two faces were paired by enclosure (not by sticker). The **Filesystem**
+  column is **not** photo-derived — it is carried from the catalogue ([[DEFRAG-MAP]] §B2 /
+  prior inventories). Volume label, encryption, SMART, and live mount state are still `*` (not
+  shown in the photos and not yet read at the machine).
 - **The fleet is five drives** (Logan, firsthand). Four spinning HDDs + one SSD (the Samsung
   T5). This maps 1:1 onto the five drives in [[DEFRAG-MAP]] §B2 — see the Role/label column.
 - **NET/WEB/MESH bindings are provisional.** Logan has not hard-locked the definitions of
   [[NETWEB]] / [[WEBNET]] / [[MESHWEB]] / [[WEBMESH]] / [[MESHNET]] / [[NETMESH]].
-- **Capacities are nominal** vendor-label decimal TB (WD `0050`=5 TB, `0010`=1 TB), not measured TiB.
+- **Capacities** are vendor-label decimal TB where the model/label is known (WD `0050`=5 TB,
+  `0010`=1 TB); where the label wasn't photographed they are OS-reported (`~931 GB`, the T5) or
+  estimated-until-verified (`~2 TB *`, the LaCie) — never measured TiB.
 
 ---
 
