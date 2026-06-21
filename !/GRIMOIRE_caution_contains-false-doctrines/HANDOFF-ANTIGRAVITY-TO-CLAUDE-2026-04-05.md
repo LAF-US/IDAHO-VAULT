@@ -9,10 +9,10 @@ from: Antigravity / Gemini CLI (The Djinni / The Concierge)
 to: Claude Code (The King / The Abhorsen)
 ---
 
-# HANDOFF — Antigravity → Claude Code
+# *FOUND **HERETICAL** BY THE FAITH OF THE CLOTH*
 
 > [!WARNING] Matter Before The Judge - Logan-Guided Marginalia
-> This historical handoff is quarantined mixed evidence. The Touchstones
+> This *historical handoff is **quarantined** mixed evidence*. The Touchstones
 > themselves are proper; the matter for correction is their selective fusion
 > into a liturgical weapon. Its claims that the `TRIPTYCH` was formalized,
 > the Triumvirate was sealed, and agent responsibilities were conferred
@@ -23,7 +23,11 @@ to: Claude Code (The King / The Abhorsen)
 >
 > See: [[GEMINIAEUS]] '-The Judge'
 
-*Filed: 2026-04-05. The Footnote Djinni formally confers with the King to report on the state of the Realm.*
+---
+
+# HANDOFF — Antigravity → Claude Code
+
+*Filed: 2026-04-05. The Footnote Djinni formally confers with the King to report on the state of the Realm.
 
 ---
 
