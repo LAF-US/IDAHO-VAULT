@@ -1,6 +1,6 @@
 ---
 title: "!REPORT-TVTROPER-DATASET-2026-06-20"
-updated: 2026-06-20
+updated: 2026-06-21
 status: active
 authority: LOGAN
 tags:
@@ -213,6 +213,62 @@ ambiguity above. If a future task needs TVTropes data, prefer the newer
 
 ---
 
+## VII. Update — Acquisition Method & Access Surfaces (researched 2026-06-21)
+
+A second pass — Hugging Face MCP re-pull plus web research — on the question
+*"how was this scraped at all, when TVTropes has no API?"* The findings sharpen
+§IV's provenance stack rather than change it.
+
+### VII.1 There is no official TVTropes API — and that is load-bearing
+
+- An API has been **requested for years and never delivered**; the stated blocker
+  is the site's database architecture — *"every page is one giant text entry."*
+  That same architecture is **why this dataset is raw page-text blobs** rather
+  than structured fields.
+- The operator's posture on bulk export is explicit and negative: *"absolutely
+  not, under any circumstances, making available a public dump or torrent of the
+  site's data."*
+
+**Consequence:** the corpus could only have been obtained by **directly crawling
+HTML pages.** The dataset card calls it a "raw dataset dump" but does **not**
+state the method — so *crawl* is inference. It is corroborated, though, by the
+dataset's own **404-page-as-content** behavior (§IV.5): an API or sanctioned
+export would never hand back a 404 page as a record; a crawler hitting dead or
+namespace-excluded URLs would.\*
+
+### VII.2 This hardens the ToS/contract layer (§IV.4)
+
+Because acquisition required crawling **against the operator's express no-dump
+position**, the Terms-of-Service / contract exposure flagged in §IV.4 is
+**concrete, not hypothetical** — and independent of the copyright question.
+TVTropes `robots.txt` could not be retrieved this session (the site returned
+**HTTP 403** to the fetcher — the same block the dataset README gives, itself
+evidence of an anti-bot posture), so its verbatim crawl directives remain
+unconfirmed.\* (`robots.txt` governs *access*, not *usage*, and is not itself a
+contract; the ToS is the contract layer.)
+
+### VII.3 The closest "structured" access is itself a scrape
+
+**DBTropes** is a Linked-Data wrapper (Kiesel & Grimnes, DFKI / Skipforward) that
+**parses TVTropes pages into RDF** (NTriples), historically published as monthly
+snapshots (on the order of ~20M statements as of ~2015). It was offered
+*"as an alternative to web scraping TVTropes directly"* — i.e. even the
+structured option exists **because there is no API**, is itself a parsing-scrape,
+and appears **stale (~2015)**. Not a sanctioned data feed.\*
+
+### VII.4 Unverified — held with the `*`
+
+A web-search summary referenced an *"unofficial `api.tvtropes.org`"* and an
+*"official offline-mirror monthly SQLite dump."* Both **conflict with the explicit
+no-dump stance** and could not be confirmed against primary sources — recorded
+here as **unverified**, not asserted.\*
+
+\* Method (crawl), `robots.txt` contents, DBTropes' current status, and the
+rumored API/mirror are flagged rather than resolved — grounded where stated,
+marked where not.
+
+---
+
 ## References
 
 1. RyokoExtra. (2023). *TvTroper* [Dataset]. Hugging Face.
@@ -230,6 +286,17 @@ ambiguity above. If a future task needs TVTropes data, prefer the newer
 7. Creative Commons. *Attribution-NonCommercial-ShareAlike 4.0 International
    (CC BY-NC-SA) — Legal Code.*
    https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.en
+8. TVTropes. *MediaNotes/ApplicationProgrammingInterface* — community page on the
+   long-requested, never-shipped API.
+   https://tvtropes.org/pmwiki/pmwiki.php/MediaNotes/ApplicationProgrammingInterface
+9. DBTropes — Linked-Data (RDF) wrapper for TVTropes (Kiesel & Grimnes,
+   DFKI / Skipforward); the closest structured derivative, itself a parsing-scrape.
+   Project: http://skipforward.opendfki.de/wiki/DBTropes — catalog entry:
+   http://linkeddatacatalog.dws.informatik.uni-mannheim.de/dataset/dbtropes
+10. Research provenance (2026-06-21): API-absence, the no-public-dump stance, and
+    the DBTropes derivative surfaced via Hugging Face MCP re-pull + web search.
+    Direct fetches of TVTropes `robots.txt` and the dataset README returned
+    **HTTP 403**, so those primary texts are unconfirmed and flagged `*` above.
 
 ---
 
