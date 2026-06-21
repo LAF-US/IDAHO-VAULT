@@ -771,7 +771,10 @@ When uncertain about sourcing category, **ask Logan**.
 ### Secrets and PII
 
 - **Secrets are mechanically gated** — both pre-commit (`.githooks/pre-commit`) and as a blocking CI check (`secret-pattern-policy.yml` on `pull_request` / push / `merge_group`; `secret-pattern-full-scan.yml` sweeps the whole tree), via `.github/scripts/check_secret_patterns.py`. It flags secret **file paths** (`.env`, `*.pem`/`*.key`, `*-key.json`, credentials/tokens, ssh keys, `.npmrc`/`.netrc`, …) and secret **content** (GitHub/OpenAI/Anthropic/Slack/Google tokens, `-----BEGIN … PRIVATE KEY-----`, generic `api_key|secret|token|password = …`), without printing the matched value. Never commit credentials — use 1Password (see § *Secret Management via 1Password*).
-- **PII is a judgment call, and the standard is documented:** [[HYGIENE-CHECKS-WITNESS-2026-06-04]] — *"a living person is not a body on the table."* Do not collect personal data on a real person beyond what the task needs; do not let a *cited* person become a *dossier*; when in doubt collect **less** and default to `*`. There is **no** mechanical PII scanner (secrets ≠ PII); the check that holds this boundary sits **outside the stater** — the reviewer and the `*` discipline.
+- **PII is a judgment call, and the standard is documented** in [[HYGIENE-CHECKS-WITNESS-2026-06-04]] — *"a living person is not a body on the table."*
+  - Collect no more personal data on a real person than the task needs; never let a *cited* person become a *dossier*.
+  - When in doubt, collect **less**, and default to `*`.
+  - There is **no** mechanical PII scanner (secrets ≠ PII). The boundary is held **outside the author who states it** — by the reviewer and the `*` discipline, not by the writer's own good intentions.
 - **Load-bearing provenance is kept deliberately.** Host-identifying strings that are themselves *evidence* (e.g. the Windows-path-on-macOS anomaly preserved in `.mistral/BOUND-BOOK-*/`) are retained on the record **by judgment, not oversight** — a decision under the on-the-record doctrine, not a PII leak.
 
 
