@@ -51,10 +51,10 @@ hardware note and says to "use explicit prose unless a dedicated hardware note e
 | Subcomponent | Scope | State | Note |
 | --- | --- | --- | --- |
 | [[DRIVE-REGISTRY]] | External & internal storage drives as physical devices | **drafted** | The first and only built child; see for the live drive table and last-mile verification checklist. |
-| `COMPUTE-REGISTRY` | Computers & phones (2015 MacBook Pro, Windows `ZBFURY`, Pixel) | *planned stub* | Evidence already in vault: [[DEFRAG-MAP]] §B1, [[research/2026-06-17-macbook-pro-12-1-early-2015]], `!-MAC-HARDWARE-SOFTWARE-CHECK-2026-05-14`. Not yet built. |
-| `PERIPHERAL-REGISTRY` | Hubs, docks, cables, card readers | *planned stub* | The powered-USB-hub gap for a portable-drive fleet lives here. Not yet built. |
-| `NETWORK-REGISTRY` | Router, NAS-if-it-ever-exists, local network | *planned stub* | Not yet built. |
-| `SOFTWARE-ACCOUNTS-REGISTRY` | Licenses, cloud storage accounts, key software | *planned stub* | Overlaps [[PLUGIN-REGISTRY]] (Obsidian) and the `.op` credential layer; scope TBD. Not yet built. |
+| [[COMPUTE-REGISTRY]] | Computers & phones (2015 MacBook Pro, Windows `ZBFURY`, Pixel) | *planned stub* | Evidence already in vault: [[DEFRAG-MAP]] §B1, [[research/2026-06-17-macbook-pro-12-1-early-2015]], `!-MAC-HARDWARE-SOFTWARE-CHECK-2026-05-14`. Not yet built. |
+| [[PERIPHERAL-REGISTRY]] | Hubs, docks, cables, card readers | *planned stub* | The powered-USB-hub gap for a portable-drive fleet lives here. Not yet built. |
+| [[NETWORK-REGISTRY]] | Router, NAS-if-it-ever-exists, local network | *planned stub* | Not yet built. |
+| [[SOFTWARE-ACCOUNTS-REGISTRY]] | Licenses, cloud storage accounts, key software | *planned stub* | Overlaps [[PLUGIN-REGISTRY]] (Obsidian) and the `.op` credential layer; scope TBD. Not yet built. |
 
 **Build rule:** subcomponents are built when there is a real need and real evidence,
 not speculatively (per [[VAULT-CONVENTIONS]] § Guiding Principles — "only build what's
