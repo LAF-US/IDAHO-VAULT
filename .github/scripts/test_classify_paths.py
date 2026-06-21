@@ -100,6 +100,16 @@ class ChangesetTest(unittest.TestCase):
         self.assertIsNone(r["depth"])
         self.assertIsNone(r["subtier"])  # subtiers TBD — next version
 
+    def test_code_only_pr_is_med_collapses_to_high(self):
+        # Code files outside the Nest -> tier4=med, but binary tier collapses to high
+        # (tier = "low" only when tier4 == "low"; everything above low is "high").
+        r = self._run(["scripts/helper.py", "tools/run.sh"])
+        self.assertEqual(r["tier4"], "med")
+        self.assertEqual(r["tier"], "high")  # binary collapse: med -> high
+        self.assertEqual(r["filetype"], "med")
+        self.assertIsNone(r["depth"])
+        self.assertIsNone(r["subtier"])
+
     def test_mixed_pr_carries_both_flags(self):
         r = self._run(["note.md", "scripts/x.py", "!/DOCKET.md"])
         self.assertEqual(r["filetype"], "med")   # the .py
