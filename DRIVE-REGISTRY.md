@@ -54,6 +54,11 @@ custody/backup posture. For *what is on each drive*, follow the pointer to the
   pending a local-machine agent. Do not read `*` as "none"; read it as "unverified."
 - **Grounded cells** cite an active/live source. Capacity, label, device model, and
   filesystem come from [[LOCAL-STORAGE-INVENTORY-2026-05-08]] and [[DEFRAG-MAP]] §B2.
+- **NET/WEB/MESH bindings are provisional.** Logan has **not hard-locked** the definition
+  of any of the six standards ([[NETWEB]] / [[WEBNET]] / [[MESHWEB]] / [[WEBMESH]] /
+  [[MESHNET]] / [[NETMESH]]). The references below to [[NETWEB]] (portable filenames) and
+  [[MESHWEB]] (cloud-authoring caveat) use their **current observed meanings, not fixed
+  canon** — they may be redefined.
 
 ---
 
@@ -141,4 +146,4 @@ into the vault follow [[VAULT-MEDIA-STORAGE]] (≤100 MB direct / ≤2 GB LFS / 
 - **Status:** Draft
 - **Authority:** LOGAN
 - **Authors:** Claude Code CLI
-- **Change Note:** First device-plane drive register. Grounded identity from active storage inventories; all physical-evidence fields marked `*` (authored from `cloud`, no drive mounted). Flagged the orange LaCie Rugged as an unlogged device witnessed in the 2026-06-21 photo. Added role taxonomy, 3-2-1 sole-copy overlay, and a local-machine verification checklist.
+- **Change Note:** First device-plane drive register. Grounded identity from active storage inventories; all physical-evidence fields marked `*` (authored from `cloud`, no drive mounted). Flagged the orange LaCie Rugged as an unlogged device witnessed in the 2026-06-21 photo. Added role taxonomy, 3-2-1 sole-copy overlay, and a local-machine verification checklist. Added the caveat that NET/WEB/MESH standard definitions are not hard-locked by Logan.
