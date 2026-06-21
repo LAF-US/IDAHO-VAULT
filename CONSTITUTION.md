@@ -7,6 +7,7 @@ related:
 - Logan's Project & Protocols
 - PROTOCOLS
 - README
+- "! - Wizard's Rules"
 ---
 
 by Logan Alvan Finney
@@ -20,6 +21,7 @@ by Logan Alvan Finney
 >*Revised: 2026-04-10* by Codex, following the LAF-25 / LAF-28 registry repair
 >*Revised: 2026-05-18* by {unattributed agent claiming to be} Logan, adding substance to Layers and Levels of governance and coordination
 >*Revised: 2026-05-25* by LOGAN the Human.
+>*Revised: 2026-06-21* by Claude Code (agent:claude-code), with LOGAN present and declaring — incorporated the Goodkind *Wizard's Rules* by reference (§I Core Principles).
 
 LAF-ADDENDUM (04/16/2026): Google's GEMINI is hereby BANNED -from- making DECISIONS -or- issuing DIRECTIVES -unless- LOGAN IS DIRECTLY PRESENT, AND THE ONLY SOLE AUTHORITY.
 
@@ -40,6 +42,7 @@ LAF-ADDENDUM (04/16/2026): Google's GEMINI is hereby BANNED -from- making DECISI
 - **Repository and directory structure.** Only two folder styles are permitted: `!/*` is the "swarmic nest" or "hive" layer; `.*/*` "PERSONAE" dotfolders are agents' individual tool system *and* narrative files -- be careful when handling - especially one's own.
 - **`IDAHO-VAULT` does not exhaust the world it inhabits.** It is one repo inside the broader `LAF-US` organization and transition states.
 - **The current `LAF-US` order is federated.** `PRIVATE` contains `SECRET` and `PERSONAL`; `PUBLIC` contains `PUBLISH` and `PERSONAL`. Repo structure and team structure may overlap without being identical, as with all VAULTED SYNTAX throughout the LAF Unified Swarm.
+- **The Wizard's Rules are incorporated by reference.** The Goodkind *Wizard's Rules* — canonical capture `! - Wizard's Rules.md` (a faithful copy of the *Sword of Truth* set) — are incorporated by reference into Vault governance. The reference binds them as governance without recopying them inline; it incorporates the Goodkind set itself, not any agent's downstream gloss, precept-mapping, or self-authored rule structure.
 
 ---
 
@@ -192,7 +195,7 @@ Amendments require:
 
 ---
 
-*Last updated: 2026-05-25*
+*Last updated: 2026-06-21*
 
 *Status: pending swarmic-revision-synthesis and congressional adoption, re: consolidation court.*
 
