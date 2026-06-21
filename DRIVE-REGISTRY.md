@@ -112,6 +112,9 @@ bottom of each of the five). The pairing that resolves the ten to five:
 > into the public record; the IPTV business-card contact details on the T5 are **not**
 > transcribed — only the fact a card is affixed.
 
+*Sticker note: the `timemachine` drive's **"Double Scorpio"** sticker is the owner's chart —
+Scorpio Moon + Scorpio Rising (see [[Logan Finney]]).*
+
 ---
 
 ## Role taxonomy & management policy
