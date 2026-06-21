@@ -863,6 +863,20 @@ When both devices edit the same config file between syncs, Obsidian creates a `(
 
 - The legislature scraper workflow commits directly to main for automated bill updates
 
+### Merge queue: arm *and* enqueue (the two-step)
+
+`main` is protected by the Main Ruleset's **merge queue** — direct API merge is refused (`405 … Changes must be made through the merge queue`). Two distinct conditions must **both** hold for a PR to land, and they are easy to conflate:
+
+1. **Armed** — auto-merge ("merge when ready") is enabled on the PR.
+2. **Enqueued** — the PR has actually entered the merge queue.
+
+**Arming is necessary but not sufficient.** Enabling auto-merge when it is *already* armed is an idempotent no-op; the enqueue fires only on the **transition into ready**. A fresh push (which restarts the per-push Copilot review and can regenerate review threads) drops the PR back to `blocked`/`unstable` and resets eligibility.
+
+- **To enter the queue, all of these must hold:** the latest commit's Copilot review is complete; all review threads are resolved; required checks are green (non-required failures like `smoke (windows-latest)` do **not** block — there is no `required_status_checks` rule, so `unstable` = only non-required red still enqueues); signatures only if `required_signatures` is active.
+- **Recipe — armed-but-not-enqueued:** when a PR is `mergeable_state: clean` with threads resolved but still not merging, toggle auto-merge **OFF then ON** (`disable_pr_auto_merge` → `enable_pr_auto_merge`) to re-fire the ready transition. (Confirmed repeatedly: #602/#604, then #606/#610/#611.)
+- **Anti-pattern:** do not keep pushing into a per-push-review + queue system — each push restarts eligibility. Let reviews settle, resolve threads **once**, then stop touching the branch and toggle to enqueue. Force-pushing makes it worse, not better.
+- **Caveat:** `pull_request_read get`'s `mergeable_state` does not reveal queue *position*, so "armed" cannot be distinguished from "enqueued" by that field alone — confirm via the merge-queue webhook / PR timeline. The arming/advancing workflows (`auto-merge-engage.yml`, `auto-merge-rhythm.yml`, `batch-arm-merge-queue.yml`) also act on a rhythm, so entry may not be instantaneous even when eligible.
+
 
 
 ---
