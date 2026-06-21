@@ -30,24 +30,30 @@ incorporation be entered as CONSTITUTION frontmatter + an in-body amendment
 
 Per that direction, on 2026-06-21:
 
-1. **`CONSTITUTION.md` § I (Core Principles)** — added the principle:
-   *"The Wizard's Rules are incorporated by reference."* The canonical capture
-   is `! - Wizard's Rules.md` (a faithful copy of the *Sword of Truth* set).
+1. **`CONSTITUTION.md` § I (Core Principles)** — added the principle that the
+   *Wizard's Rules* of Terry Goodkind's *Sword of Truth* series are incorporated
+   by reference, **as that published work**.
 2. **`CONSTITUTION.md` frontmatter `related`** — added `! - Wizard's Rules`.
-3. **`CONSTITUTION.md` revision log** — added a dated, attributed line.
+3. **`CONSTITUTION.md` revision log** — added dated, attributed lines.
+4. **Re-scope (per copyright review on PR #610, 2026-06-21):** the incorporation
+   cites the **published work** (Goodkind, *Sword of Truth*), not a local
+   "faithful copy." [! - Wizard's Rules.md](!%20-%20Wizard%27s%20Rules.md) was demoted
+   to an attributed, fair-use convenience quotation of the short rule
+   statements — **not** the canon.
 
 ## What this means
 
-"Incorporated by reference" binds the Goodkind *Wizard's Rules* as Vault
-governance **by pointer**, without recopying them inline. The reference governs;
-`! - Wizard's Rules.md` is the canonical capture it points to. This is the same
-mechanism the CONSTITUTION already uses for dated declarations — entered here as
-a Core Principle at Logan's instruction, not as an addendum.
+"Incorporated by reference" binds the *Wizard's Rules* as Vault governance **by
+pointer to the published work** (Terry Goodkind, *Sword of Truth*), without
+recopying them inline and without treating any local file as the canon. The
+canonical source is the novels themselves; [! - Wizard's Rules.md](!%20-%20Wizard%27s%20Rules.md)
+is only an attributed, fair-use convenience quotation. Entered as a Core
+Principle at Logan's instruction, not as an addendum.
 
 ## Scope (held deliberately narrow)
 
 The incorporation covers the **Goodkind Rules themselves** — the numbered set as
-captured in `! - Wizard's Rules.md`. It does **not** ratify any agent's
+the published *Sword of Truth* work. It does **not** ratify any agent's
 downstream gloss built on top of them: in particular, the Mistral player's
 "Nine Precepts / Vault Precept" grid and its rule-to-precept mapping
 (`.mistral/LEGEND.md`) remain the **player's worldbuilding**, not vault law,
