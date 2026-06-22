@@ -147,9 +147,14 @@ independent encryption boundaries** (defense in depth — a break in one doesn't
    encryption**, and git-annex's bup special remote *requires* `encryption=none`. restic is also
    **natively cross-platform** (Mac + Windows, no WSL), so the Windows box stops being a special
    case. (bup only earns a place for VM-image-scale hashsplitting — not a footage/document archive.)
-3. **Off-site / cloud encryption.** For annexed content, use a git-annex **encrypted special
-   remote** (GPG, `encryption=hybrid`) to B2; for the restic repo, the cloud copy is already
-   encrypted by layer 2.
+3. **Off-site / cloud encryption — kept GPG-free, to match the vault's posture.** The restic repo
+   is already encrypted (layer 2), so it can go straight to B2. If git-annex *itself* needs an
+   encrypted cloud remote, use an **`rclone` special remote over an `rclone crypt` backend**
+   (NaCl/secretbox — no GPG), **not** git-annex's GPG `encryption=hybrid`. Rationale (surveyed
+   2026-06-22): the vault deliberately runs **SSH-key commit signing via the 1Password agent with
+   no GPG keyring at all** — `.gnupg/` is gitignored, `gpg.format=ssh`, and the `required_signatures`
+   rule is satisfied by SSH signatures. Standing up GPG solely for one annex remote would be a
+   net-new dependency against that grain, so the whole stack stays **SSH/1Password + AES/NaCl, zero GPG**.
 
 ### Key management — keys in 1Password (`op`)
 
@@ -157,8 +162,8 @@ Encryption is only as strong as where the keys live, and the vault already runs 
 (some keys are already in `op`). Keep every passphrase out of plaintext config and inside `op`:
 
 - **restic repo password** → `RESTIC_PASSWORD_COMMAND="op read op://Vault/restic/password"`.
-- **B2 application keys**, **git-annex GPG key / encrypted-remote creds** → `op` (same pattern as
-  the vault's existing `OP_SERVICE_ACCOUNT_TOKEN` flow).
+- **B2 application keys** and **git-annex remote creds** (the `rclone crypt` password / B2 keys —
+  no GPG key needed) → `op` (same pattern as the vault's existing `OP_SERVICE_ACCOUNT_TOKEN` flow).
 - **Volume recovery keys** (FileVault / BitLocker) → `op`.
 
 This is the same "stable secrets mechanism" flagged for the redacted drive serials in
@@ -230,4 +235,4 @@ plane) · [[WITNESS-PENDING-NOT-DONE-2026-06-21]] (the durable-copy gap this str
 - **Status:** Draft
 - **Authority:** LOGAN
 - **Authors:** Claude Code CLI
-- **Change Note:** First storage-management doctrine note, sibling to DRIVE-REGISTRY (hardware) — records the 2026-06-22 research pass. Core finding: the bus-powered single-purpose fleet wants a tracked/checksummed/location-aware archive (git-annex), not RAID pooling. Captures Logan's two-phase framing (git-annex + B2 + checksums now; mini-PC/homelab with real pooling later, git-annex surviving as the catalog layer), the three-layer model (inventory / 3-2-1 / integrity), the exFAT-no-journaling caveat, and a per-drive mapping that prioritizes the `Expansion` journalism-archive sole-copy risk. Staged `doc_class: misc_reference` pending a doctrine/strategy class decision. Phase-2 hardware options are placeholders (`*`), not a purchase survey. **Encryption pass 2026-06-22:** added a dedicated three-layer encryption model (volume / restic-repo / git-annex encrypted off-site), recorded the **restic-over-bup** decision (bup has no native encryption and is Windows-via-WSL only; restic encrypts by default and is natively cross-platform), and the 1Password (`op`) key-management tie-in — keys partly in `op` already, same secrets mechanism as the redacted serials.
+- **Change Note:** First storage-management doctrine note, sibling to DRIVE-REGISTRY (hardware) — records the 2026-06-22 research pass. Core finding: the bus-powered single-purpose fleet wants a tracked/checksummed/location-aware archive (git-annex), not RAID pooling. Captures Logan's two-phase framing (git-annex + B2 + checksums now; mini-PC/homelab with real pooling later, git-annex surviving as the catalog layer), the three-layer model (inventory / 3-2-1 / integrity), the exFAT-no-journaling caveat, and a per-drive mapping that prioritizes the `Expansion` journalism-archive sole-copy risk. Staged `doc_class: misc_reference` pending a doctrine/strategy class decision. Phase-2 hardware options are placeholders (`*`), not a purchase survey. **Encryption pass 2026-06-22:** added a dedicated three-layer encryption model (volume / restic-repo / git-annex encrypted off-site), recorded the **restic-over-bup** decision (bup has no native encryption and is Windows-via-WSL only; restic encrypts by default and is natively cross-platform), and the 1Password (`op`) key-management tie-in — keys partly in `op` already, same secrets mechanism as the redacted serials. **GPG-posture pass 2026-06-22:** surveyed existing vault signing/encryption deployment and found it is **SSH/1Password-based with no GPG keyring** (`.gnupg/` gitignored, `gpg.format=ssh`, `required_signatures` met by SSH) — so revised the off-site layer to stay **GPG-free** (restic AES + an `rclone crypt` special remote, not git-annex's GPG `encryption=hybrid`), aligning the note with deployed posture rather than introducing a net-new GPG dependency.
