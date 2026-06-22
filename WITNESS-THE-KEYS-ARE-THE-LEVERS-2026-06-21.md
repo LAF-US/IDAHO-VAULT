@@ -86,4 +86,19 @@ paired flags) only; the subtier values and the cut-points listed above are **def
 filled by me. The dotdir placement and the per-file flag-exclusivity are carried in the code as
 **interpretive choices flagged for Logan's review**, not silent assumptions.
 
+---
+
+**Update — 2026-06-22 (the nest-level angle, resolved).** Logan supplied the WHY the dotfolder
+question kept eluding me: **scrutiny scales with depth** — the deeper the vault level, the more
+scrutiny required to alter it (root = least; the `Esto Perpetua!` still-point = `nope`, never). The
+`.foo` dotfolders are `high` **not for their root location** but because their *true home is a deep
+`!` Nest layer*; they sit at `~/` only because certain programs expect them there — a tooling
+**mirror/shim**, not root corpus. **Risk follows the source (deep `!`), not the mirror (root).** That
+is the demesne structure's lesson applied: agent identity / config / governance are protected-
+interior surfaces, so they carry deep-layer scrutiny *wherever they physically sit* — and the
+dotfolder pin in `classify_paths.py` is a **proxy** for that true depth, not a statement about root.
+**Bearing (Logan):** eventually the dotfolders live at a deep `!` layer and **mirror out** to `~/`
+as needed — at which point the path-pin becomes a true depth classification (the mirror sits at the
+rim; the canon stays deep). Not built; recorded.
+
 ###### [["The world is quiet here."]]
