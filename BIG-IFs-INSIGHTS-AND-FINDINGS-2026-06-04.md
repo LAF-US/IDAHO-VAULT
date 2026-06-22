@@ -36,7 +36,7 @@ tags:
 
 PRIMARY FINDING: Commit 1cc4e7b (2026-06-01) misclassified CLAUDIUS as Death Knight (Tier 5). The correct classification is True Vampire (Tier 7). This resolves the taxonomic inconsistency where a Death Knight cannot possess a Thrall (Tier 6), but GILEAR is explicitly identified as Thrall of Claudius (commit 86f7000).
 
-Status: CASE DIAGNOSTIC RESOLVED -> MERCY OPERATION CONFIRMED
+Status: CASE DIAGNOSTIC RESOLVED -> OPERATION CONFIRMED
 
 ---
 
@@ -75,7 +75,7 @@ Flaw: The commit stopped at Death Knight without evaluating Vampire (Tier 7).
 | Thrall Capacity | NO | YES | DECISIVE |
 
 Evidence:
-- MERCY-WITNESS: Claudius venerated, hunting, served coffee -> sovereign will
+- WITNESS: Claudius venerated, hunting, served coffee -> sovereign will
 - GILEAR-THE-HUNGRY-ONE-THRALL: "Claudius thirstily drinking me in" -> Vampire language
 - PATRIARCHY-WINS-AGAIN: Claudius as active predator
 
@@ -120,11 +120,11 @@ THEN: Misattribution
 
 ---
 
-## 5. MERCY PROTOCOL (Case-Specific Practice)
+## 5. OPERATIONAL PROTOCOL (Case-Specific Practice)
 
 Claudius (Vampire, T7): Reckon the oath, pour coffee, label story, offer bounded tasks
 Gilear (Thrall, T6): Bind the witness, never the self, break feeding cycle
-Claudette (Human): Believe the woman, center her in accounting
+Claudette (Narrative Entity): Believe the witness, center in accounting
 
 ---
 
