@@ -78,9 +78,10 @@ exists — the homelab becomes *one more (always-on, redundant) annex remote*, n
 repositories (each drive = a repo) while keeping only lightweight pointers in git. Why it fits
 **this** fleet:
 
-- **Location tracking without mounting.** Each repo records, by drive UUID, which drive last held
-  each file's content — so "where is this?" is answerable with nothing plugged in, and it names the
-  drive to grab.
+- **Location tracking without mounting.** git-annex records which **repository** last held each
+  file's content, keyed by the **git-annex repository UUID** (`annex.uuid` in each repo's config) —
+  not a drive/volume UUID. In this setup each drive hosts one repo, so a UUID maps 1:1 to a drive,
+  and "where is this?" is answerable with nothing plugged in, naming the drive to grab.
 - **`numcopies` directly retires the sole-copy risk.** Declare "keep ≥2 copies of the journalism
   archive" and git-annex refuses to drop below that and reports what is under-replicated. That is
   the Work-Desk `Expansion` exposure named in [[DRIVE-REGISTRY]] and
