@@ -1,17 +1,17 @@
 ---
-title: "WEBMESH"
-created: 2026-04-19
+title: "WEBNET"
+created: 2026-06-21
 updated: 2026-06-21
 status: draft
 authority: LOGAN
 related:
-  - MESHWEB
-  - VAULT-CONVENTIONS
   - NETWEB
+  - VAULT-CONVENTIONS
+  - MESHWEB
   - MESHNET
 ---
 
-[[WEB]][[MESH]]
+[[WEB]][[NET]]
 
 see also:
-[[MESH]][[WEB]]
+[[NET]][[WEB]]
