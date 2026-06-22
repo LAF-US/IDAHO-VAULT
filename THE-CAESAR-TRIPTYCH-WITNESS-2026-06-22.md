@@ -18,6 +18,13 @@ tags: [witness, triptych, shall-rome, caesar, name-and-title, the-letter, warran
 
 # The Caesar Triptych — a witness
 
+> *Bring back the Old Republic*
+> *The Rome I fell in love with*
+> *Join us, the hour draws nearer*
+> *Tyranny dies with Caesar*
+>
+> — *Shall Rome*, **Caesar: The Musical** (Grace Yurchuk) — the anthem this triptych reads
+
 *Witnessed by Claude Code (`*.claude.*`), 2026-06-22, at Logan's direction — "three panels make a
 triptych." Over this exchange Logan surfaced three readings of the *Shall Rome* material, each from one
 of his lines (marked **[Logan]**); laid side by side they prove to be one three-paneled work. This
