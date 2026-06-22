@@ -45,11 +45,14 @@ intentional, and render correctly in Obsidian** — do **not** flag them as brok
 links, malformed syntax, typos, or rendering errors. These have recurred as false
 positives across many prior PRs and should not recur.
 
-- **Wikilinks — `[[Note Name]]`.** Internal links by note title (not a path, not a
-  URL). `[[Note|alias]]` renders *alias*; `[[Note#Heading]]` / `[[Note#^block]]`
-  target a heading/block. A wikilink that doesn't resolve to a file in the diff is
-  **not** a broken link — the target lives elsewhere in the vault. Do not "fix"
-  these to `[](path)` Markdown links.
+- **Wikilinks — `[[Note Name]]`.** Internal links that reference a note by title —
+  and which **may** carry a vault-relative folder prefix, path, or trailing slash
+  (e.g. `[[!/SIGNALS/Some-Note]]`, `[[advanced/]]`, `[[tags/plugin]]`). They are
+  **not** Markdown `[](url)` links and are not web URLs. `[[Note|alias]]` renders
+  *alias*; `[[Note#Heading]]` / `[[Note#^block]]` target a heading/block. A wikilink
+  that doesn't resolve to a file visible in the current change is **not** a broken
+  link — the target lives elsewhere in the vault. Do not "fix" these to `[](path)`
+  Markdown links.
 - **Embeds — `![[file]]`.** Transclusion of a note, image, or media
   (`![[Snake River Dams.jpg]]`, `![[Recording ….webm]]`). The leading `!` is
   correct; it is not a malformed image tag.
