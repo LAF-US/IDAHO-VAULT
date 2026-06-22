@@ -210,6 +210,63 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertIn("current-review-threads", state["blocking_reasons"])
         self.assertFalse(state["eligible_for_auto_merge"])
 
+    def test_risk_tier_for_pr_four_valued_precedence(self) -> None:
+        # The four-valued reader mirrors classify_paths' combine(): nope > high > med > low.
+        # The riskiest label present governs, regardless of what else is also stamped.
+        fn = review_feedback_loop._risk_tier_for_pr
+        L = review_feedback_loop
+        self.assertEqual(fn("", {L.RISK_NOPE_LABEL}), "nope")
+        self.assertEqual(fn("", {L.RISK_HIGH_LABEL}), "high")
+        self.assertEqual(fn("", {L.RISK_MED_LABEL}), "med")
+        self.assertEqual(fn("", {L.RISK_LOW_LABEL}), "low")
+        # Precedence when several are present at once.
+        self.assertEqual(fn("", {L.RISK_NOPE_LABEL, L.RISK_HIGH_LABEL, L.RISK_LOW_LABEL}), "nope")
+        self.assertEqual(fn("", {L.RISK_HIGH_LABEL, L.RISK_MED_LABEL, L.RISK_LOW_LABEL}), "high")
+        self.assertEqual(fn("", {L.RISK_MED_LABEL, L.RISK_LOW_LABEL}), "med")
+        # review/pending with no risk label falls back to low; nothing at all is unknown.
+        self.assertEqual(fn("", {L.DEFAULT_REVIEW_PENDING_LABEL}), "low")
+        self.assertEqual(fn("", set()), "unknown")
+
+    def test_med_risk_pr_is_not_auto_merge_eligible(self) -> None:
+        # Code/executable maze filetypes -> risk/med. med does NOT flow to auto-merge
+        # (only low does); it is hand-merged, like high. Conservative policy unchanged.
+        now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
+        state = review_feedback_loop.evaluate_review_state(
+            _pr(created_at=now - timedelta(minutes=45), labels=("risk/med",), body=""),
+            now=now,
+        )
+        self.assertEqual(state["risk_tier"], "med")
+        self.assertFalse(state["low_risk"])
+        self.assertFalse(state["risk_nope"])
+        self.assertTrue(state["grace_elapsed"])
+        self.assertFalse(state["eligible_for_auto_merge"])
+        self.assertFalse(state["should_have_agent_review_pending"])
+
+    def test_nope_risk_pr_is_pinned_and_never_eligible(self) -> None:
+        # The canon-core still-point (Esto Perpetua!): never auto-merges, ever. The
+        # explicit risk_nope guard surfaces in the state and blocking_reasons.
+        now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
+        state = review_feedback_loop.evaluate_review_state(
+            _pr(created_at=now - timedelta(minutes=45), labels=("risk/nope",), body=""),
+            now=now,
+        )
+        self.assertEqual(state["risk_tier"], "nope")
+        self.assertTrue(state["risk_nope"])
+        self.assertFalse(state["low_risk"])
+        self.assertFalse(state["eligible_for_auto_merge"])
+        self.assertIn("still-point-nope", state["blocking_reasons"])
+
+    def test_new_risk_labels_are_registered_in_label_specs(self) -> None:
+        # ensure-labels iterates LABEL_SPECS; risk/med and risk/nope must be present
+        # so the producer can stamp them without `gh pr create` failing.
+        specs = review_feedback_loop.LABEL_SPECS
+        self.assertIn(review_feedback_loop.RISK_MED_LABEL, specs)
+        self.assertIn(review_feedback_loop.RISK_NOPE_LABEL, specs)
+        for label in (review_feedback_loop.RISK_MED_LABEL, review_feedback_loop.RISK_NOPE_LABEL):
+            color, description = specs[label]
+            self.assertRegex(color, r"^[0-9A-Fa-f]{6}$")
+            self.assertTrue(description)
+
     def test_apply_review_state_projection_clears_stale_labels(self) -> None:
         state = {
             "labels": [
