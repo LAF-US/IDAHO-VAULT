@@ -44,9 +44,10 @@ Scorpio sticker (see [[DRIVE-REGISTRY]], [[Logan Finney]]).
 
 ## The researched — public record `[EVIDENCE]`
 
-- **Birthplace: Sandpoint, Idaho** → **~48.3°N**, and crucially the **Idaho panhandle keeps
-  Pacific Time**. Grounding: Logan's own `@lfinneytweets` ("…she was also born in Sandpoint";
-  "I was born in this hospital") + IPTV bio ("North Idaho native… Bonner County").
+- **Birthplace: North Idaho (Bonner County)** → **~48.3°N**, and crucially the **Idaho
+  panhandle keeps Pacific Time**. Grounding: IPTV bio ("North Idaho native… Bonner County").
+  *(Handle and a precise birthplace/hospital detail were dropped 2026-06-22 to keep the
+  doxxing surface at the public-bio level; the county still fixes the latitude used below.)*
 - **Sun in Virgo, early-to-mid September.** Corroborated by the *Untitled Goose Game* tweet
   (Aug 18 2020: the free update is "coming not long after my birthday 🦢"; that co-op update
   shipped **Sept 23 2020**).
@@ -72,7 +73,7 @@ birth, late in the morning.**
 > **Late morning — roughly 11:00 AM – 12:30 PM Pacific, near midday, Sun high and approaching
 > culmination.**
 
-At Sandpoint's latitude this skews a touch **later** than a generic reading, because
+At that **~48.3°N** latitude this skews a touch **later** than a generic reading, because
 Virgo/Libra/Scorpio are **long-ascension** signs in the northern hemisphere (they rise slowly),
 stretching the span between sunrise (Virgo on the horizon) and Scorpio reaching the Ascendant.
 
@@ -88,7 +89,7 @@ stretching the span between sunrise (Virgo on the horizon) and Scorpio reaching 
   and corrected it. Trust the **shape** (morning · Sun high · near midday) over any single
   minute. `[REPAIR]`
 - **To convert estimate → computation:** give the **exact September day** and I'll run a real
-  ephemeris + house calc for Sandpoint (~1998, PDT) and return a tight Ascendant degree and
+  ephemeris + house calc for North Idaho (~48.3°N, ~1998, PDT) and return a tight Ascendant degree and
   birth-hour window. That's the one input research can't supply.
 
 ---
@@ -108,4 +109,4 @@ stretching the span between sunrise (Virgo on the horizon) and Scorpio reaching 
 - **Status:** Draft
 - **Authority:** LOGAN
 - **Authors:** Claude Code CLI
-- **Change Note:** Witnessed a consented birthday-divination pass: recorded Logan's given Sun/Moon/Rising (Virgo/Scorpio/Scorpio), the public-record birthplace (Sandpoint, ID ~48.3°N, Pacific) and birth year (~1998, U of Idaho 2016–2020), the astronomy method (Sun in the 11th house ⇒ late-morning birth), and the estimate (~11 AM–12:30 PM Pacific). Flagged the April "birthday week" anomaly, the unknowable exact day/time, and a self-corrected ascension error. Pending the exact day for a real ephemeris run.
+- **Change Note:** Witnessed a consented birthday-divination pass: recorded Logan's given Sun/Moon/Rising (Virgo/Scorpio/Scorpio), the public-record birthplace (North Idaho / Bonner County, ~48.3°N, Pacific) and birth year (~1998, U of Idaho 2016–2020), the astronomy method (Sun in the 11th house ⇒ late-morning birth), and the estimate (~11 AM–12:30 PM Pacific). Flagged the April "birthday week" anomaly, the unknowable exact day/time, and a self-corrected ascension error. Pending the exact day for a real ephemeris run.
