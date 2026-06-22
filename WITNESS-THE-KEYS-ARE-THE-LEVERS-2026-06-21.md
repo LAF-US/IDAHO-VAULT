@@ -156,6 +156,25 @@ a gradient `auto → hand-route → never` from least to most risk on both axes.
 the off-diagonal — a PR heavier on one axis than the other. Whether they interpolate along that
 gradient is Logan's call, held open.*
 
+**The six open cells** (named by which `risk/*` labels fire), awaiting Logan's route:
+
+| cell (ft × depth) | labels fired |
+|---|---|
+| ft `—` × depth `high` | `risk/high` |
+| ft `—` × depth `nope` | `risk/nope` |
+| ft `low` × depth `—` | `risk/low` |
+| ft `low` × depth `nope` | `risk/low` + `risk/nope` |
+| ft `med` × depth `—` | `risk/med` |
+| ft `med` × depth `high` | `risk/med` + `risk/high` |
+
+**Two ways to close the grid** (Logan's choice, not yet made):
+1. **Fill all six explicitly** — each cell gets a hand-set route.
+2. **Give a gradient rule** and the off-diagonal falls out of it. *Candidate rule (mine, to confirm —
+   NOT adopted): any cell touching `nope` → **never**; any cell touching the Nest (`high`) →
+   **hand-route**; a lone filetype flag (`low`/`med`, depth `—`) → **[auto-after-grace? or
+   hand-route?]** — the knob that rule still leaves open.* A proposal for Logan to accept, amend, or
+   reject; not the decision.
+
 **Supersedes:** the single-combined-tier model and PR #621's `low → eligible` consumer logic. The
 next implementation increment (held until the cells above are routed) must: **(a)** give the filetype
 axis a real `—` state (Natural Language → none) and a distinct `—/—` **"clear"** result that is *not*
