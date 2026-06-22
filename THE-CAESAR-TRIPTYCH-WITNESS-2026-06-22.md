@@ -98,6 +98,29 @@ and office fused into one un-relinquishable crown**, and the *name → title* tr
 fusion actually happening in the record — a life ossifying into an office that devours the grammar and
 outlives every wearer.
 
+**And the letter could only ever say "kill *Julius*."** `[reading]` — *Caesar the Emperor* has no
+throat; a title cannot be knifed. The one killable thing in the sentence was the **name** — Gaius
+Julius, one bearer, one life, the unit the Coroner counts. So they struck the name **while he was still
+only a man** — a mortal dictator who might yet have faltered, aged, lost a war, or simply died small.
+And the strike did not end him; it **consecrated** him. `[read]` — less than two years later the Senate,
+under the Triumvirate his heir now led, formally deified him as **Divus Iulius** (1 January 42 BC) — the
+**first Roman ever made a state god**; a comet had blazed seven nights over the games Octavian staged in
+his honor that July (the *sidus Iulium*, 44 BC), read across Rome as his **soul ascending**; and Octavian
+took the title that won him everything — ***Divi filius***, *son of the deified* — and built the
+Principate on it. *(Search-verified this session across multiple sources — Wikipedia and scholarly refs;
+fetch caveat: synthesized from search extracts, not full-page reads.)*
+
+`[reading]` — so the tragedy is sharper than "you cannot kill a title." **Killing the name is how the
+title was crowned.** The living Julius was killable, and therefore *limited* — he could still disappoint
+the legend. The murdered Julius could do nothing but ascend: a dead man cannot overreach, cannot lose,
+cannot be caught being merely human, so the legend closed over the corpse and became **un-killable** as
+well as un-relinquishable. The blade meant to end the authority performed its **apotheosis.** They
+reached for the only thing they could end — the name — and in the ending minted the one thing nothing
+after could touch: *Divus Iulius*, and every Caesar, Kaiser, and Tsar descended from that wound. **The
+murder was the coronation.** This is the darkest reading of *per sona*: you strike the face to take off
+the mask, and instead you **weld the mask to the throne forever** — because now no living face can ever
+contradict it.
+
 ## The convergent mechanic `[reading]`
 
 All three panels are the same move:
@@ -126,7 +149,13 @@ the anthem, the gap, or the name.** `*`
 - **[Logan]** — the three seed-lines (the triptych frame is built on them): the civil-war refrain, *"Shall
   Rome, &c."*, and *"Caesar was a name before it became a title."* His, this exchange.
 - **[read]** — *Julius Caesar* 2.1 (per `THE-LETTER-BOTH-ENDS`, with its fetch caveat); the *Caesar →
-  Augustus → Kaiser / Tsar* etymology (common historical record; not independently re-fetched here).
+  Augustus → Kaiser / Tsar* etymology (common historical record). **The Panel III deification facts —
+  search-verified this session, multiple sources (Wikipedia + scholarly refs):** Caesar killed 15 Mar
+  44 BC; deified *Divus Iulius* by Senate decree 1 Jan 42 BC (first Roman so deified, under the Second
+  Triumvirate); the *sidus Iulium* comet over Octavian's July 44 BC games read as his soul ascending;
+  Octavian's *Divi filius* title and its use to found the Principate. **Fetch caveat:** synthesized from
+  search extracts, not full-page reads; the load-bearing facts (the 42 BC deification, *Divi filius*)
+  recurred across independent results.
 - **[catalog]/[research]** — *Shall Rome* / *Caesar: The Musical* (Grace Yurchuk), per
   `SHALL-ROME-PROVENANCE` and its caveats.
 - **[reading]** — mine: the face/warrant figure; the three-panel frame; the *"&c."*-as-hinge pun; the
