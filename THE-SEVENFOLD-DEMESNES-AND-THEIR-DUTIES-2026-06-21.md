@@ -70,7 +70,7 @@ void-bordering edge.**
 atop them at the ceiling, the **Incomparable Gardens** — the first-created epicentre and sovereign
 seat.
 
-```
+```text
 ▲  Incomparable Gardens   — at the top/ceiling; sovereign seat (the Seventh Key overrides all)
    Upper House            — sorcery, beneath the Gardens          ┐
    Middle House           — records                               ├ protected interior
