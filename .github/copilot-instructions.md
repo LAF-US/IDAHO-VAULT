@@ -39,11 +39,40 @@ Before proposing new conventions, structures, templates, or workflows, READ the 
 
 ## Code Review Guidance
 
-When reviewing pull requests, avoid these known false positives:
+This is an **Obsidian.md vault**. Files are Obsidian-flavored Markdown, **not**
+plain CommonMark or GitHub-flavored Markdown. The constructs below are **valid,
+intentional, and render correctly in Obsidian** — do **not** flag them as broken
+links, malformed syntax, typos, or rendering errors. These have recurred as false
+positives across many prior PRs and should not recur.
 
-- **Markdown tables.** This vault's GitHub-flavored Markdown tables use a **single** leading `|` per row and render correctly. Do **not** report that a table row "starts with `||`" or "introduces an empty first column" unless that row literally begins with two pipes. This specific table claim has recurred as a false alarm across several prior PRs and should not recur. The exception is narrow: it applies only to the empty-first-column table claim, not to genuine `||` occurrences elsewhere (e.g. a logical-OR in code), which should still be reviewed normally.
+- **Wikilinks — `[[Note Name]]`.** Internal links by note title (not a path, not a
+  URL). `[[Note|alias]]` renders *alias*; `[[Note#Heading]]` / `[[Note#^block]]`
+  target a heading/block. A wikilink that doesn't resolve to a file in the diff is
+  **not** a broken link — the target lives elsewhere in the vault. Do not "fix"
+  these to `[](path)` Markdown links.
+- **Embeds — `![[file]]`.** Transclusion of a note, image, or media
+  (`![[Snake River Dams.jpg]]`, `![[Recording ….webm]]`). The leading `!` is
+  correct; it is not a malformed image tag.
+- **Callouts — `> [!NOTE]` / `> [!WARNING]` / etc.** Obsidian callout blocks. The
+  vault also uses **custom callout types** (e.g. `> [!blue]`, `> [!box]`); an
+  unrecognized callout label is **not** an error.
+- **Headings that contain a wikilink** — e.g. `## [["The world is quiet here."]]`
+  or `### [[Claude Code]]`. Intentional; not a malformed heading.
+- **`%%comments%%`** (Obsidian comments, hidden on render), **`==highlights==`**,
+  and **block IDs** (`^block-id` at end of a line). All valid Obsidian syntax.
+- **Markdown tables.** This vault's tables use a **single** leading `|` per row and
+  render correctly. Do **not** report that a table row "starts with `||`" or
+  "introduces an empty first column" unless that row *literally* begins with two
+  pipes. The exception is narrow: it applies only to the empty-first-column table
+  claim, not to genuine `||` occurrences elsewhere (e.g. a logical-OR in code),
+  which should still be reviewed normally.
 
-Otherwise review normally: surface real correctness, rendering, security, and convention issues, and prefer specific, verifiable findings over stylistic speculation.
+Otherwise review normally: surface real correctness, rendering, security, and
+convention issues, and prefer specific, verifiable findings over stylistic
+speculation. The exemptions above are **narrow** — they cover Obsidian syntax that
+is *correct as written*; they do not excuse a genuinely broken external URL,
+malformed YAML frontmatter, or a real error that merely happens to sit near
+Obsidian markup.
 
 ---
 
