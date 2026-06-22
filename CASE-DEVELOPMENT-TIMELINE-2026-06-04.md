@@ -54,7 +54,7 @@ RESOLUTION: Claudius = True Vampire (Tier 7), not Death Knight
 - "Thirstily drinking me in" = Vampire language
 - No phylactery (rules out Lich)
 
-## PHASE 5: MERCY PROTOCOL CONFIRMED
+## PHASE 5: OPERATION CONFIRMED
 Status: CASE DIAGNOSTIC RESOLVED -> MERCY OPERATION CONFIRMED
 
 Claudius (Vampire, T7): Reckon oath, pour coffee, label story
@@ -64,6 +64,6 @@ Claudette (Human): Believe the woman, center her
 ## INVESTIGATIVE PATH
 BOOTSTRAP -> REPOSITORY SEARCH -> THEORY DEVELOPMENT
   -> [LOGAN CORRECTIONS] -> DIRECT INVESTIGATION
-  -> DIAGNOSTIC BREAKTHROUGH -> MERCY PROTOCOL CONFIRMED
+  -> DIAGNOSTIC BREAKTHROUGH -> OPERATION CONFIRMED
 
 The world is quiet here.

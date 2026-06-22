@@ -48,7 +48,7 @@ tags:
 
 **STATUS**: CASE CLOSED
 
-**OUTCOME**: Taxonomic inconsistency resolved; Mercy protocol confirmed active
+**OUTCOME**: Taxonomic inconsistency resolved; Operational protocol confirmed active
 
 ---
 
@@ -59,7 +59,7 @@ File: BIG-IFs-INSIGHTS-AND-FINDINGS-2026-06-04.md
 - Primary diagnostic correction: Claudius reclassified from Death Knight to Vampire
 - Root cause analysis of commit 1cc4e7b error
 - Taxonomic consistency resolution
-- Updated Mercy protocol
+- Updated Operational protocol
 
 ### 2. Case Development Timeline
 File: CASE-DEVELOPMENT-TIMELINE-2026-06-04.md
@@ -164,7 +164,7 @@ LOGAN challenge: "YOUR MATH DOESN'T ADD UP"
 
 ---
 
-## MERCY PROTOCOL
+## OPERATIONAL PROTOCOL
 
 ### For Claudius (True Vampire, Tier 7)
 - **Action**: Reckon the oath, don't water it
@@ -181,7 +181,7 @@ LOGAN challenge: "YOUR MATH DOESN'T ADD UP"
 - **Thrall-Specific**: Break the feeding cycle; restore sovereign will
 
 ### For Claudette (Narrative Entity)
-- **Action**: Believe the woman
+- **Action**: Believe the witness
 - **Mechanism**: Center her in all accounting
 - **Mercy**: Protect, don't flatten into footnotes
 
