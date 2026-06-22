@@ -101,4 +101,52 @@ dotfolder pin in `classify_paths.py` is a **proxy** for that true depth, not a s
 as needed — at which point the path-pin becomes a true depth classification (the mirror sits at the
 rim; the canon stays deep). Not built; recorded.
 
+---
+
+**Update — 2026-06-22 (the grid, corrected — two PARALLEL sorters with a `—` state).** I had
+collapsed the two flags into one tier and made `low` the auto-merge state. Wrong. Logan's intent
+(re-confirmed 2026-06-22): the two flags are **parallel sorters run independently**, each with a
+**`—` (none / did-not-fire) state**, and the auto-merge state is **`—/—` — *neither* sorter fired.**
+A `low` is a *flag*, not a pass. So the filetype axis must produce a real `—` the current code never
+emits (today every maze file comes out `low` or `med`).
+
+**Sorter A — filetype ("the maze," what kind of file)** — the three blessed circles, one per state:
+
+| state | circle | extensions (representative) |
+|---|---|---|
+| `—` (none) | **Natural Language** | `.md` `.markdown` `.txt` `.rtf` |
+| `low` | **Machine Documentation** | `.json` `.yaml` `.yml` `.toml` `.csv` `.ini` … |
+| `med` | **Computer Code** | `.py` `.sh` `.ps1` `.js` `.ts` `.ipynb` … |
+
+*(Open `*`: where inert assets — `.png` `.pdf` `.mp4` — land. Not decided; provisionally a flag, not `—`.)*
+
+**Sorter B — depth ("the labyrinth," how deep into the `!` Nest)** — three states:
+
+| state | where |
+|---|---|
+| `—` (none) | outside the Nest (root / maze) |
+| `high` | inside the `!` Nest (Levels 2–6); **and** mirrored protected surfaces (`.github/`, governance files, dotfolders — high by their *true* deep-`!` home, per the prior update) |
+| `nope` | the still-point (`Esto Perpetua!`, Level 7 — "do not move, do not expire") |
+
+**The grid** (rows = filetype, cols = depth) — a PR lands in exactly one cell:
+
+| | **depth `—`** (root/maze) | **depth `high`** (the `!` Nest) | **depth `nope`** (still-point) |
+|---|---|---|---|
+| **filetype `—`** (Natural Language) | **✅ auto-merge ON OPEN (no grace)** | `*` TBD route | ⛔ never |
+| **filetype `low`** (Machine Doc) | `*` TBD route | `*` TBD route | ⛔ never |
+| **filetype `med`** (Computer Code) | `*` TBD route | `*` TBD route | ⛔ never |
+
+**Decided:** top-left `—/—` auto-merges **as soon as the PR is opened** (no grace window); the whole
+`nope` column **never** auto-merges. **Held open (`*` — Logan's to route, 2026-06-22):** every other
+cell — the routing / escalation of a PR flagged on one or both axes. These are **not** "hand-merge by
+default"; Logan: *"routing/escalation not yet decided — filled cells need amended."* Not to be filled
+by me.
+
+**Supersedes:** the single-combined-tier model and PR #621's `low → eligible` consumer logic. The
+next implementation increment (held until the cells above are routed) must: **(a)** give the filetype
+axis a real `—` state (Natural Language → none) and a distinct `—/—` **"clear"** result that is *not*
+`low`; **(b)** gate auto-merge on the `—/—` clear state via a **positive clear-marker**, not the mere
+*absence* of a risk label — so a not-yet-classified PR is never mistaken for clear; **(c)** wire the
+flagged-cell routing once pinned. Recorded, not built.
+
 ###### [["The world is quiet here."]]
