@@ -48,12 +48,18 @@ Graded by source strength:
     `spotify:track:55RChJIHT7r3K7ZBlPvvqf`
   - The same EP cover art is shared by sibling tracks **"Caesar Speaks"** (Samantha Pauly, Grace Yurchuk,
     Savy Jackson, Cara Rose DiPietro, Abigail Lehrer) and **"So Political"** (Sherz Aletaha, Samantha Pollino).
-  - **Correction (2026-06-22 — `[Logan]` + catalog):** **"Caesar's Too Ambitious — Demo Cut from *Caesar The
-    Musical*"** (Grace Yurchuk solo; standalone single `spotify:album:5Pit6shbb3pREcOHoTH9zM`) has its **own,
-    different cover art** and is **not** an EP track. Per Logan, Yurchuk released it earlier as a **demo and has
-    said it will not make the show.** An earlier pass of this file wrongly bundled it among the EP's "sibling
-    tracks (shared cover art)" — it shares **neither the release nor the show.** The cover-art tell was right
-    there in the `[catalog]` data and I read past it: a **cut demo mistaken for part of the work.**
+  - **Correction (2026-06-22).** **"Caesar's Too Ambitious — Demo Cut from *Caesar The Musical*"** (Grace Yurchuk
+    solo; standalone single `spotify:album:5Pit6shbb3pREcOHoTH9zM`) has its **own, different cover art** and is
+    **not** an EP track. An earlier pass of this file wrongly bundled it among the EP's "sibling tracks (shared
+    cover art)"; the cover-art tell was in the `[catalog]` data and I read past it. Graded precisely:
+    - **`[catalog]`-attested:** a **standalone single**, released **~2025** (pre-EP; Apple Music / Spotify),
+      **not on** the six-track EP. These justify pulling it from the EP-sibling list.
+    - **`[Logan]`, uncorroborated:** that **Yurchuk said it will not make the show.** Searched 2026-06-22 for an
+      attesting source (her TikTok `@itsthegraceplace`, the YouTube / Apple / Spotify pages, interviews) and
+      **found none** — fetches 403'd; snippets are silent on show-status. Two adjacency traps declined: *"Demo
+      Cut"* most plausibly means a **demo take**, not a **removed** song; and **not-on-the-EP ≠ not-in-the-show**
+      (the EP is a six-track sample). So *cut-from-the-show* rests on **Logan's memory alone** — held there, not
+      promoted.
 - **`[research]` — search-synthesized (Playbill / BroadwayWorld snippets; direct page fetch returned 403, so these
   details are from search excerpts, not pages I read end-to-end):**
   - **Book, music, and lyrics by Grace Yurchuk**, who also performs on the recording.
@@ -105,9 +111,10 @@ so this rests on search-result excerpts, not full-page reads. Unverified points 
   *Julius Caesar***, **still being written**; the six-track 2026 Studio Cast EP is a curated taste of selected
   numbers. Yurchuk has said the material **"will change a LOT"** — so the lyrics, including the *Shall Rome*
   exhibit in the witness, are **snapshots of a moving text**, not fixed canon.
-- **Songs get cut — a live example.** Outside the EP, Yurchuk has released standalone demos; at least one —
-  *"Caesar's Too Ambitious"* — she has said **will not make the show** (`[Logan]`; see the correction under "The
-  finding"). Concrete proof of the flux: even a released, titled number can fall outside the final show.
+- **The work is in flux — standalone demos exist outside the EP.** Yurchuk has released at least one standalone
+  demo single — *"Caesar's Too Ambitious"* (~2025, pre-EP) — that is **not on the EP** (`[catalog]`). Whether it is
+  **cut from the show** is **`[Logan]`'s recollection, uncorroborated** (no attesting source found — see the
+  correction under "The finding"); the released-but-separate single nonetheless shows material moving around the EP.
 - **The EP was crowdfunded (Kickstarter)** — a grassroots leap from social-media drafts to a professional studio
   cast (funding goal/amount `*`, not verified). Team: produced by **Robbie Rozelle**, orchestrations by **Alex
   Arlotta**, music director **Yasuhiko Fukuoka**.
@@ -147,8 +154,10 @@ of the raw witness. And it sharpens the witness's own caution one turn: the text
 - Amazon — *Caesar: The Musical (2026 Studio Cast EP)*, Grace Yurchuk:
   https://www.amazon.com/Caesar-Musical-2026-Studio-Cast/dp/B0H1SFG1LN
 - Spotify — *Caesar: The Musical* (EP), Grace Yurchuk: https://open.spotify.com/album/3LGYdH5aIFGHTZWMIcRyvb
-- Spotify — *Caesar's Too Ambitious (Demo Cut)* (standalone single, **not on the EP / cut from the show**), Grace
-  Yurchuk: https://open.spotify.com/album/5Pit6shbb3pREcOHoTH9zM
+- Spotify — *Caesar's Too Ambitious (Demo Cut)* (standalone single, **not on the EP**), Grace Yurchuk:
+  https://open.spotify.com/album/5Pit6shbb3pREcOHoTH9zM
+- Apple Music — *Caesar's Too Ambitious (Demo Cut from Caesar the Musical)* (standalone single, ~2025):
+  https://music.apple.com/ca/song/caesars-too-ambitious-demo-cut-from-caesar-the-musical/1797404527
 - The Sondheim Hub — "A Conversation with Grace Yurchuk":
   https://www.thesondheimhub.com/p/a-conversation-with-grace-yurchuk
 - Kickstarter — "Caesar: The Musical EP by Grace Yurchuk":
@@ -163,6 +172,6 @@ of the raw witness. And it sharpens the witness's own caution one turn: the text
 - **Authority:** LOGAN (recorded; authored by `*.claude.*`, not Logan's voice)
 - **Author:** `*.claude.*` (Claude Code, branch `claude/shall-rome-lyrics-ok9049`)
 - **Scope:** external provenance for the song "Shall Rome," found after the witness was filed and kept separate from it
-- **Change Note:** 2026-06-22 — added *"The work and its author"* (`[research]`, fetch caveat): the EP is a crowdfunded *sample* of an in-progress all-women *Caesar: The Musical* by Grace Yurchuk; the lyrics are snapshots of a still-being-written show. Witness untouched. Same day — **corrected** the *"Caesar's Too Ambitious"* entry: it is a standalone earlier **demo** (its own cover art) that Yurchuk has said **will not make the show**, not an EP/sibling track; the over-credit in the merged `THE-LETTER-BOTH-ENDS-WITNESS` is flagged here, witness not edited.
+- **Change Note:** 2026-06-22 — added *"The work and its author"* (`[research]`, fetch caveat): the EP is a crowdfunded *sample* of an in-progress all-women *Caesar: The Musical* by Grace Yurchuk; the lyrics are snapshots of a still-being-written show. Witness untouched. Same day — **corrected** the *"Caesar's Too Ambitious"* entry: it is a standalone earlier **demo** (its own cover art) that Yurchuk has said **will not make the show**, not an EP/sibling track; the over-credit in the merged `THE-LETTER-BOTH-ENDS-WITNESS` is flagged here, witness not edited. Same day — searched for external provenance that Yurchuk said it "won't make the show": **none found**; that status stays `[Logan]` (memory), while the standalone / pre-EP / not-on-EP facts are `[catalog]`-attested.
 
 ###### [["The world is quiet here."]]
