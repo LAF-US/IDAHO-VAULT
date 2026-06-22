@@ -4,10 +4,6 @@ on:
   pull_request_target:
     types: [opened, reopened, ready_for_review, synchronize, labeled, unlabeled]
 
-permissions:
-  contents: write
-  pull-requests: write
-
 jobs:
   auto-merge-low-risk:
     if: >
@@ -16,6 +12,9 @@ jobs:
       github.event.pull_request.base.ref == 'main' &&
       !contains(github.event.pull_request.labels.*.name, 'risk/high')
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
     steps:
       - name: Fetch Dependabot metadata
         id: metadata
@@ -89,6 +88,9 @@ jobs:
       github.event.pull_request.base.ref == 'main' &&
       contains(github.event.pull_request.labels.*.name, 'risk/high')
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
     steps:
       - name: Fail closed when high-risk labeling is present
         env:
