@@ -1,6 +1,6 @@
 ---
 title: "!REPORT-TVTROPER-DATASET-2026-06-20"
-updated: 2026-06-20
+updated: 2026-06-22
 status: active
 authority: LOGAN
 tags:
@@ -213,6 +213,89 @@ ambiguity above. If a future task needs TVTropes data, prefer the newer
 
 ---
 
+## VII. Update — Acquisition Method & Access Surfaces (researched 2026-06-21)
+
+A second pass — Hugging Face MCP re-pull plus web research — on the question
+*"how was this scraped at all, when TVTropes has no API?"* The findings sharpen
+§IV's provenance stack rather than change it.
+
+### VII.1 There is no official TVTropes API — and that is load-bearing
+
+- An API has been **requested for years and never delivered**; the stated blocker
+  is the site's database architecture — *"every page is one giant text entry."*
+  That same architecture is **why this dataset is raw page-text blobs** rather
+  than structured fields.
+- The operator's posture on bulk export is explicit and negative: *"absolutely
+  not, under any circumstances, making available a public dump or torrent of the
+  site's data."*
+
+**Consequence:** the corpus could only have been obtained by **directly crawling
+HTML pages.** The dataset card calls it a "raw dataset dump" but does **not**
+state the method — so *crawl* is inference. It is corroborated, though, by the
+dataset's own **404-page-as-content** behavior (§IV.5): an API or sanctioned
+export would never hand back a 404 page as a record; a crawler hitting dead or
+namespace-excluded URLs would.\*
+
+### VII.2 This hardens the ToS/contract layer (§IV.4)
+
+Because acquisition required crawling **against the operator's express no-dump
+position**, the exposure flagged in §IV.4 is **concrete, not hypothetical** — and
+independent of the copyright question. Three distinct layers:
+
+- **ToS — the contract layer.** Bulk crawling against the site's stated terms is a
+  contract question, separate from copyright; this is where the no-dump stance
+  bites.
+- **`robots.txt` — the access-control layer.** It governs *access*, not *usage*,
+  and is not itself a contract — a breach is evidence, not a tort on its own.
+- **Observed behavior.** TVTropes returned **HTTP 403** to this session's direct
+  fetcher for `robots.txt` — an active anti-bot posture — so the verbatim crawl
+  directives remain unconfirmed.\* (The **Hugging Face** dataset README likewise
+  403'd a raw HTTP fetch; that is *Hugging Face's* anti-bot layer, a different
+  host — its card content was reachable only via the Hugging Face MCP, not a raw
+  pull.)
+
+### VII.3 The closest "structured" access is itself a scrape
+
+**DBTropes** is a Linked-Data wrapper (Kiesel & Grimnes, DFKI) that **parses
+TVTropes pages into RDF / NTriples** — linking works (films, books, items) to the
+tropes they feature — built on the **Skipforward / Skipinions** ontology and
+published as monthly NTriples snapshots. It was offered *"as an alternative to web
+scraping TVTropes directly"* — i.e. even the structured option exists **because
+there is no API**, and is itself a parsing-scrape. Its last timestamped snapshot
+is **2015-04-30** (≈20,000,000 RDF statements; ≈58,000 items; ≈27,000 feature
+types; ≈3,550,000 feature instances) — so it is **stale by roughly a decade**, not
+a live feed.
+
+Notably, DBTropes **passes TVTropes' own per-page license through** to its
+triples: the ontology declares *"Triples with the same subject are subject to the
+designated license,"* using a CC license that permits derived works. That is a
+sharp contrast with this dataset's blanket **`apache-2.0`** relabel of CC-licensed
+source text (§IV.2) — the structured derivative preserved the source license; the
+HTML scrape overwrote it.
+
+### VII.4 Unverified — held with the `*`
+
+A web-search summary referenced an *"unofficial `api.tvtropes.org`"* and an
+*"official offline-mirror monthly SQLite dump."* Both **conflict with the explicit
+no-dump stance** and could not be confirmed against primary sources — recorded
+here as **unverified**, not asserted.\*
+
+**The `*` flags in §VII mark three different kinds of uncertainty** — do not read
+them as one:
+
+- **[inference]** — reasoned from grounded evidence, not stated by the source:
+  that acquisition was an HTML *crawl* (VII.1 — from no-API + 404-as-content).
+- **[unfetched]** — a primary text that exists but could not be retrieved this
+  session: `robots.txt`'s verbatim rules (VII.2 — HTTP 403).
+- **[unverified]** — an external claim not corroborated against a primary source:
+  the rumored `api.tvtropes.org` / SQLite mirror (VII.4). *(DBTropes' figures and
+  2015-04-30 last snapshot in VII.3 are now grounded in the project's published
+  stats, so they no longer carry this flag.)*
+
+Grounded where stated; flagged — by kind — where not.
+
+---
+
 ## References
 
 1. RyokoExtra. (2023). *TvTroper* [Dataset]. Hugging Face.
@@ -230,6 +313,23 @@ ambiguity above. If a future task needs TVTropes data, prefer the newer
 7. Creative Commons. *Attribution-NonCommercial-ShareAlike 4.0 International
    (CC BY-NC-SA) — Legal Code.*
    https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.en
+8. TVTropes. *MediaNotes/ApplicationProgrammingInterface* — community page on the
+   long-requested, never-shipped API.
+   https://tvtropes.org/pmwiki/pmwiki.php/MediaNotes/ApplicationProgrammingInterface
+9. DBTropes — Linked-Data (RDF/NTriples) wrapper for TVTropes (Kiesel & Grimnes,
+   DFKI), built on the Skipforward/Skipinions ontology; the closest structured
+   derivative, itself a parsing-scrape. Last timestamped snapshot 2015-04-30
+   (≈20M statements, ≈58k items, ≈27k feature types, ≈3.55M feature instances);
+   passes the source's per-page CC license through to its triples.
+   Project: http://skipforward.opendfki.de/wiki/DBTropes — catalog entry:
+   http://linkeddatacatalog.dws.informatik.uni-mannheim.de/dataset/dbtropes
+10. Research provenance (2026-06-21): API-absence, the no-public-dump stance, and
+    the DBTropes derivative surfaced via Hugging Face MCP re-pull + web search.
+    A direct fetch of TVTropes `robots.txt` returned **HTTP 403** (TVTropes'
+    anti-bot), so those crawl directives are unconfirmed and flagged `*` above; a
+    raw fetch of the **Hugging Face** dataset README likewise returned **HTTP 403**
+    (Hugging Face's anti-bot, a different host), so the card was read via the
+    Hugging Face MCP rather than a raw pull.
 
 ---
 
