@@ -88,12 +88,17 @@ jobs:
           echo "skip=false" >> "$GITHUB_OUTPUT"
 
           RESULT=$(echo "$CHANGED" | python3 trusted-main/.github/scripts/classify_paths.py)
+          # tier: binary (low|high) legacy gate; tier4: four-valued (low|med|high|nope)
+          # precise label. ensure-labels (below) registers risk/med & risk/nope before
+          # PR creation, so stamping the four-valued label no longer breaks `gh pr create`.
           TIER=$(echo "$RESULT" | python3 -c "import sys,json; print(json.load(sys.stdin)['tier'])")
+          TIER4=$(echo "$RESULT" | python3 -c "import sys,json; print(json.load(sys.stdin)['tier4'])")
           echo "tier=$TIER" >> "$GITHUB_OUTPUT"
+          echo "tier4=$TIER4" >> "$GITHUB_OUTPUT"
 
           echo "### Changed files" >> "$GITHUB_STEP_SUMMARY"
           echo "$CHANGED" >> "$GITHUB_STEP_SUMMARY"
-          echo "### Risk tier: $TIER" >> "$GITHUB_STEP_SUMMARY"
+          echo "### Risk tier: $TIER4 (binary gate: $TIER)" >> "$GITHUB_STEP_SUMMARY"
 
       - name: Check for existing PR
         if: steps.gate.outputs.skip != 'true' && steps.classify.outputs.skip != 'true'
@@ -125,7 +130,7 @@ jobs:
         if: steps.gate.outputs.skip != 'true' && steps.classify.outputs.skip != 'true' && steps.check-pr.outputs.pr_exists != 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          RISK_TIER: ${{ steps.classify.outputs.tier }}
+          RISK_TIER: ${{ steps.classify.outputs.tier4 }}
           BRANCH_NAME: ${{ steps.gate.outputs.branch_name }}
         shell: bash
         run: |
