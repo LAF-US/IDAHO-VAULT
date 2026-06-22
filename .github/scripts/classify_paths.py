@@ -41,11 +41,14 @@ result lives in the new `tier4` field — unused until the consumer-wiring incre
 * DEPTH THRESHOLD: where `high` becomes `nope`. Default: only the canon core /
   still-point (Esto Perpetua!, Level 7 — "do not move, do not expire") is `nope`;
   all other Nest depth is `high`.
-* PROTECTED-SURFACE PIN: `.github/**`, named governance files, and persona/config
-  dotfolders (`.claude/`, `.gemini/`, `.codex/`, `.op/`, etc.) are NOT in the `!` Nest,
-  so the pure model would tag them low/med — a DOWNGRADE of today's automation/governance
-  protection. Pending Logan's decision to move that gate onto CODEOWNERS (a separate
-  Key/Lever), they are kept pinned `high` here, so this change introduces no regression.
+* DOTFOLDER / PROTECTED PIN — the nest-level angle (Logan, 2026-06-22): scrutiny scales with
+  DEPTH (the deeper the level, the more scrutiny to alter; `nope` at the still-point). Persona/
+  config dotfolders (`.claude/`, `.gemini/`, `.codex/`, `.op/`, ...), `.github/**`, and named root
+  governance files are pinned `high` because their TRUE home is a deep `!` Nest layer — they sit at
+  `~/` only because certain programs expect them there (a tooling MIRROR/shim), not because they are
+  root corpus. Risk follows the source (deep `!`), not the mirror (root); this path-pin is a PROXY
+  for that true depth. FUTURE: dotfolders live at a deep `!` layer and mirror out to `~/` as needed,
+  at which point the pin becomes a true depth classification. (CODEOWNERS is a separate, complementary Key.)
 
 --- SUBTIERS: TBD — NOT YET IMPLEMENTED (next version) ---
 Logan outlined that each tier ALSO has subtiers: filetype subtiers = the three blessed
@@ -86,7 +89,7 @@ PROBE_PREFIXES = (".github/workflows/probe-", ".github/workflows/example-",
                   ".github/scripts/probe-", ".github/scripts/example-")
 
 # Detects any top-level dotfolder: .claude/, .gemini/, .codex/, .op/, etc.
-# Persona/config surfaces are pinned high regardless of filetype (VAULT-CONVENTIONS § Protected).
+# Pinned high: true home is a deep ! Nest layer, mirrored to ~/ for tooling (Logan, 2026-06-22).
 _TOP_DOTFOLDER_RE = re.compile(r"^\.[a-zA-Z]")
 
 
