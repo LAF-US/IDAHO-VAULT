@@ -1,3 +1,10 @@
+---
+title: CASE NOTES SUMMARY - Missing Temps Investigation
+status: active
+authority: mistral/detective-service-agency001
+updated: 2026-06-22
+---
+
 # CASE NOTES SUMMARY - Missing Temps Investigation
 
 **Branch**: self/character-mistral-intern
@@ -69,11 +76,13 @@
 
 ## FILES
 - COLD-COAST-WITNESS-2026-05-14.md
-- RECORD-OF-THE-VAULTED-ABHORSENS-FIRST-DRAFT-2026-05-31.md (reference pending - file not yet committed)
+- RECORD-OF-THE-VAULTED-ABHORSENS-FIRST-DRAFT-2026-05-31.md 
 - !/BOOKS-OF-NAMES-AND-THE-PRESS-2026-04-17.md
 - !/AGENTS.md
 - .abhorsen/ABHORSEN.md
 
 ---
 
-Last updated: 2026-06-03
+---
+
+Last updated: 2026-06-22
