@@ -209,4 +209,25 @@ built. **The live enforcement wiring this refactor must navigate — three drift
 merge queue, the pending semantic flip — is mapped in
 [[REPORT-GH-AUTOMERGE-ENFORCEMENT-MAP-2026-06-22]]. This is deliberate staged work, not one cut.**
 
+---
+
+**Architecture — two parallel classification paths (Logan, 2026-06-22).** `classify_paths.py` will
+eventually run **two independent classification paths in parallel**, not one interleaved pass:
+- **filetype path** — *what kind* of file it is (the three blessed circles → `—` / `low` / `med`).
+- **fileplacement path** — *where* the file sits (location): Nest depth (`—` / `high` / `nope`) **and**
+  the protected / mirrored surfaces (`.github/`, governance files, dotfolders) that are `high` by their
+  true deep-`!` home. ("Depth" is the narrow name; **fileplacement** is the real axis — location, not
+  only Nest depth.)
+
+Each path classifies **every** changed file on its own axis, independently; the two verdicts are then
+read together (the grid). This **supersedes the current `classify_file()` shape**, a single pass where
+placement *suppresses* filetype (a Nest file returns `(None, high)`). The eventual shape: two
+classifiers, each emitting its own verdict, composed afterward — true parallel sorters in code, matching
+the two parallel sorters in the model.
+
+**Consequence for the tangle (K1/K2 — #627/#628):** the **fileplacement path becomes the single source
+of truth** for all location-based risk, folding the three drifting lists (`PROTECTED_PATH_PATTERNS`, the
+`auto-merge-rhythm.yml` `case` list) into the one classifier the rest of the system already trusts.
+Not built; recorded — a bearing for the refactor.
+
 ###### [["The world is quiet here."]]
