@@ -128,19 +128,33 @@ emits (today every maze file comes out `low` or `med`).
 | `high` | inside the `!` Nest (Levels 2–6); **and** mirrored protected surfaces (`.github/`, governance files, dotfolders — high by their *true* deep-`!` home, per the prior update) |
 | `nope` | the still-point (`Esto Perpetua!`, Level 7 — "do not move, do not expire") |
 
-**The grid** (rows = filetype, cols = depth) — a PR lands in exactly one cell:
+**The grid** — each cell is the pair of `risk/*` labels that fire. A `—` on an axis = no label there;
+**`—/—` = no risk labels at all** (the auto-merge state):
 
-| | **depth `—`** (root/maze) | **depth `high`** (the `!` Nest) | **depth `nope`** (still-point) |
+| labels fired | **depth `—`** | **depth `high`** (`risk/high`) | **depth `nope`** (`risk/nope`) |
 |---|---|---|---|
-| **filetype `—`** (Natural Language) | **✅ auto-merge ON OPEN (no grace)** | `*` TBD route | ⛔ never |
-| **filetype `low`** (Machine Doc) | `*` TBD route | `*` TBD route | ⛔ never |
-| **filetype `med`** (Computer Code) | `*` TBD route | `*` TBD route | ⛔ never |
+| **ft `—`** | `—/—` (none) | `risk/high` | `risk/nope` |
+| **ft `low`** (`risk/low`) | `risk/low` | `risk/low` + `risk/high` | `risk/low` + `risk/nope` |
+| **ft `med`** (`risk/med`) | `risk/med` | `risk/med` + `risk/high` | `risk/med` + `risk/nope` |
 
-**Decided:** top-left `—/—` auto-merges **as soon as the PR is opened** (no grace window); the whole
-`nope` column **never** auto-merges. **Held open (`*` — Logan's to route, 2026-06-22):** every other
-cell — the routing / escalation of a PR flagged on one or both axes. These are **not** "hand-merge by
-default"; Logan: *"routing/escalation not yet decided — filled cells need amended."* Not to be filled
-by me.
+**Routing** (Logan, 2026-06-22 — three anchors pinned; the rest open):
+
+| route | **depth `—`** | **depth `high`** | **depth `nope`** |
+|---|---|---|---|
+| **ft `—`** | ✅ **auto on open** (no grace) | `*` route? | `*` route? |
+| **ft `low`** | `*` route? | **hand-route** | `*` route? |
+| **ft `med`** | `*` route? | `*` route? | ⛔ **never** |
+
+**Pinned:** `—/—` → auto-merge on open; `low/high` → **hand-route** (a human decides the routing);
+`med/nope` → **never**. **Correction to my prior claim:** the `nope` column is **not** uniformly
+"never" — only `med/nope` is; `—/nope` and `low/nope` are still open. Likewise the `high` column is
+not uniformly anything. **Open (`*` — six off-diagonal cells, Logan's to route):** not "hand-merge by
+default," not to be filled by me.
+
+*Observation (mine, to confirm — not Logan's word): the three pinned cells are the **main diagonal**,
+a gradient `auto → hand-route → never` from least to most risk on both axes. The six open cells are
+the off-diagonal — a PR heavier on one axis than the other. Whether they interpolate along that
+gradient is Logan's call, held open.*
 
 **Supersedes:** the single-combined-tier model and PR #621's `low → eligible` consumer logic. The
 next implementation increment (held until the cells above are routed) must: **(a)** give the filetype
