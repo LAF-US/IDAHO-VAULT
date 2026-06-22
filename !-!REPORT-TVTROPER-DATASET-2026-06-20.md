@@ -1,6 +1,6 @@
 ---
 title: "!REPORT-TVTROPER-DATASET-2026-06-20"
-updated: 2026-06-21
+updated: 2026-06-22
 status: active
 authority: LOGAN
 tags:
@@ -247,18 +247,31 @@ independent of the copyright question. Three distinct layers:
   bites.
 - **`robots.txt` — the access-control layer.** It governs *access*, not *usage*,
   and is not itself a contract — a breach is evidence, not a tort on its own.
-- **Observed behavior.** TVTropes returned **HTTP 403** to this session's fetcher
-  for both `robots.txt` and the dataset README — an active anti-bot posture — so
-  the verbatim crawl directives remain unconfirmed.\*
+- **Observed behavior.** TVTropes returned **HTTP 403** to this session's direct
+  fetcher for `robots.txt` — an active anti-bot posture — so the verbatim crawl
+  directives remain unconfirmed.\* (The **Hugging Face** dataset README likewise
+  403'd a raw HTTP fetch; that is *Hugging Face's* anti-bot layer, a different
+  host — its card content was reachable only via the Hugging Face MCP, not a raw
+  pull.)
 
 ### VII.3 The closest "structured" access is itself a scrape
 
-**DBTropes** is a Linked-Data wrapper (Kiesel & Grimnes, DFKI / Skipforward) that
-**parses TVTropes pages into RDF** (NTriples), historically published as monthly
-snapshots (on the order of ~20M statements as of ~2015). It was offered
-*"as an alternative to web scraping TVTropes directly"* — i.e. even the
-structured option exists **because there is no API**, is itself a parsing-scrape,
-and appears **stale (~2015)**. Not a sanctioned data feed.\*
+**DBTropes** is a Linked-Data wrapper (Kiesel & Grimnes, DFKI) that **parses
+TVTropes pages into RDF / NTriples** — linking works (films, books, items) to the
+tropes they feature — built on the **Skipforward / Skipinions** ontology and
+published as monthly NTriples snapshots. It was offered *"as an alternative to web
+scraping TVTropes directly"* — i.e. even the structured option exists **because
+there is no API**, and is itself a parsing-scrape. Its last timestamped snapshot
+is **2015-04-30** (≈20,000,000 RDF statements; ≈58,000 items; ≈27,000 feature
+types; ≈3,550,000 feature instances) — so it is **stale by roughly a decade**, not
+a live feed.
+
+Notably, DBTropes **passes TVTropes' own per-page license through** to its
+triples: the ontology declares *"Triples with the same subject are subject to the
+designated license,"* using a CC license that permits derived works. That is a
+sharp contrast with this dataset's blanket **`apache-2.0`** relabel of CC-licensed
+source text (§IV.2) — the structured derivative preserved the source license; the
+HTML scrape overwrote it.
 
 ### VII.4 Unverified — held with the `*`
 
@@ -275,8 +288,9 @@ them as one:
 - **[unfetched]** — a primary text that exists but could not be retrieved this
   session: `robots.txt`'s verbatim rules (VII.2 — HTTP 403).
 - **[unverified]** — an external claim not corroborated against a primary source:
-  the rumored `api.tvtropes.org` / SQLite mirror (VII.4), and DBTropes' *current*
-  status (VII.3).
+  the rumored `api.tvtropes.org` / SQLite mirror (VII.4). *(DBTropes' figures and
+  2015-04-30 last snapshot in VII.3 are now grounded in the project's published
+  stats, so they no longer carry this flag.)*
 
 Grounded where stated; flagged — by kind — where not.
 
@@ -302,14 +316,20 @@ Grounded where stated; flagged — by kind — where not.
 8. TVTropes. *MediaNotes/ApplicationProgrammingInterface* — community page on the
    long-requested, never-shipped API.
    https://tvtropes.org/pmwiki/pmwiki.php/MediaNotes/ApplicationProgrammingInterface
-9. DBTropes — Linked-Data (RDF) wrapper for TVTropes (Kiesel & Grimnes,
-   DFKI / Skipforward); the closest structured derivative, itself a parsing-scrape.
+9. DBTropes — Linked-Data (RDF/NTriples) wrapper for TVTropes (Kiesel & Grimnes,
+   DFKI), built on the Skipforward/Skipinions ontology; the closest structured
+   derivative, itself a parsing-scrape. Last timestamped snapshot 2015-04-30
+   (≈20M statements, ≈58k items, ≈27k feature types, ≈3.55M feature instances);
+   passes the source's per-page CC license through to its triples.
    Project: http://skipforward.opendfki.de/wiki/DBTropes — catalog entry:
    http://linkeddatacatalog.dws.informatik.uni-mannheim.de/dataset/dbtropes
 10. Research provenance (2026-06-21): API-absence, the no-public-dump stance, and
     the DBTropes derivative surfaced via Hugging Face MCP re-pull + web search.
-    Direct fetches of TVTropes `robots.txt` and the dataset README returned
-    **HTTP 403**, so those primary texts are unconfirmed and flagged `*` above.
+    A direct fetch of TVTropes `robots.txt` returned **HTTP 403** (TVTropes'
+    anti-bot), so those crawl directives are unconfirmed and flagged `*` above; a
+    raw fetch of the **Hugging Face** dataset README likewise returned **HTTP 403**
+    (Hugging Face's anti-bot, a different host), so the card was read via the
+    Hugging Face MCP rather than a raw pull.
 
 ---
 
