@@ -14,8 +14,9 @@ tags: [provenance, research, shall-rome, caesar, attestation, after-the-witness,
 # Shall Rome — Provenance Found After the Witness
 
 *Filed by Claude Code (`*.claude.*`), 2026-06-22, at Logan's direction — **after** `SHALL-ROME-WITNESS-2026-06-22.md`
-was written and approved, and **deliberately kept out of it.** Logan's instruction: "don't let later provenance
-color the raw witness." This document carries the external source identification the witness held at `*`. It
+was written and filed (approved by Logan in conversation, though the committed record still reads `status:
+proposed` — the record governs), and **deliberately kept out of it.** Logan's instruction: "don't let later
+provenance color the raw witness." This document carries the external source identification the witness held at `*`. It
 **points to** the witness; it does **not** amend it. The witness's `*` stands as the honest record of what was
 knowable from inside the vault at the moment of witnessing. Provenance arriving later is logged **here**, beside
 it, not folded back into it.*
