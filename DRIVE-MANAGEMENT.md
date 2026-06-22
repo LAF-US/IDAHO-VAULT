@@ -99,8 +99,10 @@ they must be paired with Layers 2–3 below.
 ### Layer 2 — Redundancy / 3-2-1: Backblaze **B2 + restic** (not Personal Backup)
 
 - Use **Backblaze B2 + [restic](https://www.backblaze.com/docs/cloud-storage-integrate-restic-with-backblaze-b2)**
-  (content-addressed, deduplicated, incremental, Object-Lock / ransomware-resistant) for the cold
-  archive. This is the same B2 pattern already in the vault's storage manifests.
+  (content-addressed, deduplicated, incremental, encrypted) for the cold archive — and enable
+  **Object Lock** on the B2 bucket for ransomware resistance (Object Lock is a B2 bucket-immutability
+  feature you configure via the S3-compatible API, **not** something restic provides). This is the
+  same B2 pattern already in the vault's storage manifests.
 - **Avoid Backblaze *Personal Backup* for archive drives:** by **default** it treats an external
   drive detached >30 days as deleted and purges the cloud copy — fatal for drives you shelve.
   (Extended Version History lengthens retention, but the periodic-reattach expectation remains;
@@ -185,7 +187,7 @@ This is the same "stable secrets mechanism" flagged for the redacted drive seria
 | **`Expansion`** 4 TB · journalism archive | **Priority.** Into git-annex `numcopies ≥ 2` + B2/restic. This is the sole-copy exposure. |
 | **`storage`** 5 TB · consolidation target | Primary annex repo and/or local 2nd copy of `Expansion`. |
 | **`ExternalSSD`** (Samsung T5) · active scratch | Leave exFAT; the "never the only copy" rule already holds. |
-| **`timemachine`** 1 TB · Mac backup | Leave as Time Machine / HFS+; do not repurpose. |
+| **`timemachine`** 1 TB · Mac backup | Leave as Time Machine (HFS+ or APFS, per macOS version); do not repurpose. |
 | **`Vault`** (LaCie Rugged) · staging/transfer | exFAT fine; transient only. |
 
 ---
