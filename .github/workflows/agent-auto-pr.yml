@@ -186,7 +186,12 @@ jobs:
           # benign no-op, not a failure. Swallow only that specific outcome;
           # every other error still fails the step.
           if ! out=$(gh pr create "${CREATE_ARGS[@]}" 2>&1); then
-            if printf '%s' "$out" | grep -qi 'already exists'; then
+            # Match the specific gh duplicate-PR message
+            # ("a pull request for branch \"X\" into branch \"main\" already
+            # exists: …"), requiring BOTH phrases so an unrelated failure that
+            # merely contains "already exists" is never mistaken for the no-op.
+            if printf '%s' "$out" | grep -qiF 'a pull request for branch' \
+               && printf '%s' "$out" | grep -qiF 'already exists'; then
               echo "A PR for '$BRANCH_NAME' already exists — nothing to create (raced with manual/MCP PR creation). Treating as success."
               printf '%s\n' "$out"
               exit 0
