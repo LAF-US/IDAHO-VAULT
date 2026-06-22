@@ -79,12 +79,48 @@ replace him, with Caesar and Brutus given no voice. The companion track on the s
 this (it stood on the lyric alone); the catalog merely happens to echo it. Logged as a grace note, not as support
 the reading needed.
 
+## The work and its author — the EP is a sample `[research]`
+
+*Added 2026-06-22, at Logan's direction ("research the show and Yurchuk — it's just a sample of her passion
+project"). Everything in this section is **`[research]`** — search-synthesized across several independent outlets
+(Playbill, BroadwayWorld, The Sondheim Hub, the creator's own TikTok and Kickstarter listings), with a **fetch
+caveat**: the primary pages (Kickstarter, Sondheim Hub, Playbill, BroadwayWorld) returned HTTP 403 this session,
+so this rests on search-result excerpts, not full-page reads. Unverified points are held `*`, not filled.*
+
+- **Grace Yurchuk is the sole author** — book, music, and lyrics — and performs on the EP. Stated
+  influences/comparisons: Taylor Swift, Jonathan Larson, Lin-Manuel Miranda, Sondheim.
+- **It began as a public, in-progress passion project.** She has been writing the show **"from [her] bedroom and
+  sharing drafts as [she] goes"** on TikTok (**@itsthegraceplace**, ~112K followers, "caesar musical girl"); early
+  draft songs **went viral — millions of views** — and that audience is what carried a bedroom project to a studio
+  recording. (Her own hashtags suggest an NYU/NYC connection — held `*`, not confirmed.)
+- **The EP is a *sample*, not the show.** *Caesar: The Musical* is a **new all-women adaptation of Shakespeare's
+  *Julius Caesar***, **still being written**; the six-track 2026 Studio Cast EP is a curated taste of selected
+  numbers. Yurchuk has said the material **"will change a LOT"** — so the lyrics, including the *Shall Rome*
+  exhibit in the witness, are **snapshots of a moving text**, not fixed canon.
+- **The EP was crowdfunded (Kickstarter)** — a grassroots leap from social-media drafts to a professional studio
+  cast (funding goal/amount `*`, not verified). Team: produced by **Robbie Rozelle**, orchestrations by **Alex
+  Arlotta**, music director **Yasuhiko Fukuoka**.
+- **Mission, in her framing:** connect digital audiences to live theatre, and expand opportunities for women —
+  *"ambitious, complex roles for women."* An all-women *Julius Caesar* written by a young woman making those roles
+  is itself a quiet answer to the show's own question — *who gets to hold the name, the office, the stage.*
+- **No full staged production or reading** is established by the sources searched — consistent with "in
+  development." Held `*`, asserted neither way.
+
+**Why this belongs here, not in the witness:** it is more later-found provenance — the kind Logan's rule keeps out
+of the raw witness. And it sharpens the witness's own caution one turn: the text it read is not only
+*later-attributed* but **still being written**, so every reading in this cluster is of a **draft, snapshot-dated**
+— the strongest possible reason to hold the lyrics as exhibit, never as settled canon.
+
 ## Standing of this attestation
 
 - **`[catalog]`** — title, performers, sibling tracks, and the "from *Caesar The Musical*" demo-cut label:
   authoritative, Spotify queried directly.
 - **`[research]`** — creator (Grace Yurchuk), release date/label, full cast, viral origin: search-synthesized from
   Playbill / BroadwayWorld excerpts; **fetch caveat** — the article pages returned 403 and were not read in full.
+- **`[research]` — the work and its author (2026-06-22 update):** Yurchuk as sole book/music/lyrics author and
+  performer; the bedroom-drafts → viral → crowdfunded-EP arc; the EP as a *sample* of an in-progress all-women
+  show; the production team (Rozelle / Arlotta / Fukuoka). Search-synthesized, **fetch caveat** (primary pages
+  403'd). Held `*`: the Kickstarter amount, any full-production status, Yurchuk's precise bio.
 - **Does not amend** `SHALL-ROME-WITNESS-2026-06-22.md`. That witness's `*` and its reading stand as filed. This
   file is downstream of it and links to it; the witness does not link back, by design.
 - **Reserved (`*`)** — anything beyond the above (lyricist's intent, the show's politics, staging history) is not
@@ -99,6 +135,12 @@ the reading needed.
   https://www.broadwayworld.com/article/Samantha-Pauly-Savy-Jackson-and-More-to-be-Featured-on-CAESAR-THE-MUSICAL-Studio-Cast-EP-20260519
 - Amazon — *Caesar: The Musical (2026 Studio Cast EP)*, Grace Yurchuk:
   https://www.amazon.com/Caesar-Musical-2026-Studio-Cast/dp/B0H1SFG1LN
+- Spotify — *Caesar: The Musical* (EP), Grace Yurchuk: https://open.spotify.com/album/3LGYdH5aIFGHTZWMIcRyvb
+- The Sondheim Hub — "A Conversation with Grace Yurchuk":
+  https://www.thesondheimhub.com/p/a-conversation-with-grace-yurchuk
+- Kickstarter — "Caesar: The Musical EP by Grace Yurchuk":
+  https://www.kickstarter.com/projects/graceyurchuk/caesar-the-musical-ep/creator
+- TikTok — Grace Yurchuk (@itsthegraceplace): https://www.tiktok.com/@itsthegraceplace
 
 ## Document Metadata
 
@@ -108,5 +150,6 @@ the reading needed.
 - **Authority:** LOGAN (recorded; authored by `*.claude.*`, not Logan's voice)
 - **Author:** `*.claude.*` (Claude Code, branch `claude/shall-rome-lyrics-ok9049`)
 - **Scope:** external provenance for the song "Shall Rome," found after the witness was filed and kept separate from it
+- **Change Note:** 2026-06-22 — added *"The work and its author"* (`[research]`, fetch caveat): the EP is a crowdfunded *sample* of an in-progress all-women *Caesar: The Musical* by Grace Yurchuk; the lyrics are snapshots of a still-being-written show. Witness untouched.
 
 ###### [["The world is quiet here."]]
