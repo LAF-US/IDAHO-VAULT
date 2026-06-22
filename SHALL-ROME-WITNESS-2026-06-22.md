@@ -226,5 +226,3 @@ Lay the song over what the vault already knows, and three seams open.
 - **Scope:** root general witness — the conspirators' aria; restoration-rhetoric as the usurper's warrant; authenticate by warrant and steering, never by the anthem
 
 ###### [["The world is quiet here."]]
-</content>
-</invoke>
