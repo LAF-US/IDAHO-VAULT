@@ -151,6 +151,21 @@ emits (today every maze file comes out `low` or `med`).
 not uniformly anything. **Open (`*` — six off-diagonal cells, Logan's to route):** not "hand-merge by
 default," not to be filled by me.
 
+**What the flags ARE (Logan, 2026-06-22 — the framing that governs the cells above).** The risk flags
+are **routing signals, not a permanent scarlet letter.** A flag says *where and how a PR is routed for
+review and revision* — it does not condemn the PR. A flagged PR enters the review/revision lane its
+cell names, and **once that lane is satisfied (revised, threads resolved, approved), the PR flows.**
+The flag is **transient routing state — consumed as the PR moves through its lane — not a standing
+merge-bar.** So the routing words name *lanes, not verdicts*:
+- `auto on open` = no review lane needed — it flows immediately.
+- `hand-route` = routed into human review; **flows once that review clears.**
+- `never` = never the *automatic* lane — the still-point always asks for the sovereign's own hand;
+  that is a routing of *authority*, not a brand on the PR.
+
+Consequence for the build: the label state-machine (K6, #632) must let a flag **clear / transition as
+review completes** — a PR is never permanently marked. The clear-marker (K4, #630) is the *entry* to
+the auto lane; the risk flags are the *entries* to the review lanes; both are mutable as the PR moves.
+
 *Observation (mine, to confirm — not Logan's word): the three pinned cells are the **main diagonal**,
 a gradient `auto → hand-route → never` from least to most risk on both axes. The six open cells are
 the off-diagonal — a PR heavier on one axis than the other. Whether they interpolate along that
