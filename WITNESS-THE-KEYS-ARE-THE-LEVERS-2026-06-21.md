@@ -171,7 +171,7 @@ a gradient `auto → hand-route → never` from least to most risk on both axes.
 the off-diagonal — a PR heavier on one axis than the other. Whether they interpolate along that
 gradient is Logan's call, held open.*
 
-**The six open cells** (named by which `risk/*` labels fire), awaiting Logan's route:
+**The six open cells** (named by which `risk/*` labels fire):
 
 | cell (ft × depth) | labels fired |
 |---|---|
@@ -182,21 +182,31 @@ gradient is Logan's call, held open.*
 | ft `med` × depth `—` | `risk/med` |
 | ft `med` × depth `high` | `risk/med` + `risk/high` |
 
-**Two ways to close the grid** (Logan's choice, not yet made):
-1. **Fill all six explicitly** — each cell gets a hand-set route.
-2. **Give a gradient rule** and the off-diagonal falls out of it. *Candidate rule (mine, to confirm —
-   NOT adopted): any cell touching `nope` → **never**; any cell touching the Nest (`high`) →
-   **hand-route**; a lone filetype flag (`low`/`med`, depth `—`) → **[auto-after-grace? or
-   hand-route?]** — the knob that rule still leaves open.* A proposal for Logan to accept, amend, or
-   reject; not the decision.
+**The grid is a MODEL of the system, not the system (Logan, 2026-06-22).** We **cannot** fill these
+cells in isolation — a cell's route is *read off* how the system works, not hand-assigned ahead of it.
+The mechanism is upstream; the grid is its projection. So the open work is **not** "pick six routes" —
+it is **determining how the system works**, after which the cells (and any gradient over them) simply
+follow. Determining the system means answering, at minimum:
+- **What review/revision lanes exist**, and what each lane *does* (auto-flow · human review · the
+  sovereign's hand · …).
+- **How a PR is routed into a lane** (the flags→lane mapping — which *is* this grid, derived).
+- **How a flag clears / transitions** as review completes, and how a PR moves between lanes after
+  revision (re-classify on push? downgrade?) — the routing-signal-not-scarlet-letter lifecycle (K6).
+- **Who/what performs each lane's review** (humans · agents · CODEOWNERS · the looker/attestation path).
+- **The merge mechanism per lane** (arm the queue · hand-merge · never-auto) and one strategy (K5).
+- **The single source of truth for risk** (K1/K2) and the **clear-marker** entry to the auto lane (K4).
+
+*(Earlier framing — "fill all six" vs "a gradient rule" — was backwards: both presuppose the lanes
+already exist. They don't yet. Superseded by the line above.)*
 
 **Supersedes:** the single-combined-tier model and PR #621's `low → eligible` consumer logic. The
-next implementation increment (held until the cells above are routed) must: **(a)** give the filetype
-axis a real `—` state (Natural Language → none) and a distinct `—/—` **"clear"** result that is *not*
-`low`; **(b)** gate auto-merge on the `—/—` clear state via a **positive clear-marker**, not the mere
-*absence* of a risk label — so a not-yet-classified PR is never mistaken for clear; **(c)** wire the
-flagged-cell routing once pinned. Recorded, not built. **The live enforcement wiring this refactor
-must navigate — three drifting risk filters, the merge queue, the pending semantic flip — is mapped
-in [[REPORT-GH-AUTOMERGE-ENFORCEMENT-MAP-2026-06-22]]. This is deliberate staged work, not one cut.**
+next implementation increment (held until **the system mechanism above is determined**, from which the
+cells follow) must: **(a)** give the filetype axis a real `—` state (Natural Language → none) and a
+distinct `—/—` **"clear"** result that is *not* `low`; **(b)** gate auto-merge on the `—/—` clear state
+via a **positive clear-marker**, not the mere *absence* of a risk label — so a not-yet-classified PR is
+never mistaken for clear; **(c)** wire the flagged-cell routing once the lanes exist. Recorded, not
+built. **The live enforcement wiring this refactor must navigate — three drifting risk filters, the
+merge queue, the pending semantic flip — is mapped in
+[[REPORT-GH-AUTOMERGE-ENFORCEMENT-MAP-2026-06-22]]. This is deliberate staged work, not one cut.**
 
 ###### [["The world is quiet here."]]
