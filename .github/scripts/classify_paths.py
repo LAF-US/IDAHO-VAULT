@@ -70,6 +70,28 @@ import posixpath
 import re
 import sys
 
+# ═════════════════════════════════════════════════════════════════════════════
+# CONFIG — the tunable knobs. Tuning risk behavior should mean editing THIS block,
+# never the logic below. In particular:
+#   • To RE-TIER a filetype: MOVE its extension between the FILETYPE_* sets.
+#       (e.g. make inert assets `—` instead of `low`: move INERT_ASSET from
+#        FILETYPE_LOW into FILETYPE_NONE — one line, nothing else changes.)
+#   • To PROTECT a new surface: add it to PROTECTED_EXACT / PROTECTED_PREFIXES.
+#   • To REORDER risk tiers: edit TIER_PRECEDENCE — it is the single ordering the
+#     aggregation and combine() both read.
+# ═════════════════════════════════════════════════════════════════════════════
+
+# Tier names, riskiest -> safest. The ONE ordering: both combine() and the per-axis
+# aggregation read this, so there is no second place to keep in sync.
+TIER_PRECEDENCE = ("nope", "high", "med", "low", "clear")
+CLEAR_TIER = "clear"                    # the `—/—` cell — no flag on either axis
+SAFE_TIERS = ("clear", "low")           # fold to binary `low`; everything riskier -> binary `high`
+
+# Nest / still-point markers (NETWEB: '-' aliases '/' in flattened root filenames).
+NEST_PREFIX = "!"
+STILL_POINT_SEGMENT = "Esto Perpetua!"
+_PATH_SEGMENT_RE = r"[-/]"
+
 # --- The Architect's three blessed language circles (VAULT-CONVENTIONS § File Types) ---
 NATURAL_LANGUAGE = {".md", ".markdown", ".txt", ".rtf"}          # Logan's prose surface
 MACHINE_DOC = {".json", ".yaml", ".yml", ".toml", ".csv",        # declarative: describes
@@ -79,17 +101,16 @@ COMPUTER_CODE = {".py", ".sh", ".bash", ".ps1", ".bat", ".cmd",  # imperative: e
 INERT_ASSET = {".pdf", ".png", ".jpg", ".jpeg", ".gif", ".svg",  # binary/asset content
                ".webp", ".ico", ".mp3", ".mp4", ".ics", ".mtl", ".obj"}
 
-# TUNABLE filetype cut across the circles. The blueprint (WITNESS-THE-KEYS-ARE-THE-LEVERS,
-# 2026-06-22) gives the filetype axis a real `—` (None) state — one blessed circle per state:
-#   Natural Language       -> `—` (None: prose carries NO flag)   <- THIS STEP pulls NL out of `low`
-#   Machine Documentation  -> low   (declarative; + inert assets, provisionally — see witness `*`)
-#   Computer Code          -> med   (executes)
-# unrecognized extension   -> med   (conservative within the maze axis)
-_NONE_TYPES = NATURAL_LANGUAGE                 # prose -> `—` (no filetype flag); the `—/—` clear cell
-_LOW_TYPES = MACHINE_DOC | INERT_ASSET         # declarative / inert -> low
-_MED_TYPES = COMPUTER_CODE                     # executes -> med
+# Filetype -> flag. THE knob: which extensions carry which filetype flag (blueprint,
+# 2026-06-22 — one blessed circle per state). Built from the circles above for readability;
+# these three sets are the operative config — move an extension between them to re-tier it.
+FILETYPE_NONE = NATURAL_LANGUAGE               # `—` : prose carries NO flag (the `—/—` clear cell)
+FILETYPE_LOW = MACHINE_DOC | INERT_ASSET       # declarative / inert -> low
+FILETYPE_MED = COMPUTER_CODE                   # executes -> med
+FILETYPE_UNKNOWN_DEFAULT = "med"               # unrecognized extension -> conservative
 
-# --- Protected-surface pin (safety override; TUNABLE -> delegate to CODEOWNERS) ---
+# Placement pins (the fileplacement axis; eventually the K1/K2 single source of truth).
+# Add a surface here to protect it.
 PROTECTED_PREFIXES = (".github/",)  # the whole GitHub control plane (probe carve-out below)
 PROTECTED_EXACT = {
     "AGENTS.md", "CLAUDE.md", "CONSTITUTION.md", "DECISIONS.md", "LEVELSET.md",
@@ -102,13 +123,13 @@ PROBE_PREFIXES = (".github/workflows/probe-", ".github/workflows/example-",
 
 # Detects any top-level dotfolder: .claude/, .gemini/, .codex/, .op/, etc.
 # Pinned high: true home is a deep ! Nest layer, mirrored to ~/ for tooling (Logan, 2026-06-22).
-_TOP_DOTFOLDER_RE = re.compile(r"^\.[a-zA-Z]")
+TOP_DOTFOLDER_RE = re.compile(r"^\.[a-zA-Z]")
 
 
 def in_nest(path: str) -> bool:
     """A path is in the `!` Swarmic Nest — nested `!/...` or a flattened `!`-prefixed
     root alias (NETWEB: '-' aliases '/'). VAULT-CONVENTIONS § Root Folder Semantics."""
-    return path.startswith("!")
+    return path.startswith(NEST_PREFIX)
 
 
 def is_still_point(path: str) -> bool:
@@ -118,7 +139,7 @@ def is_still_point(path: str) -> bool:
     form (NETWEB: '-' aliases '/') — not a bare substring, so a maze note merely *named*
     with the text is never `nope`. Within the Nest the segment match errs toward `nope`
     (over-protect) — the safe direction for the canon core."""
-    return in_nest(path) and "Esto Perpetua!" in re.split(r"[-/]", path)
+    return in_nest(path) and STILL_POINT_SEGMENT in re.split(_PATH_SEGMENT_RE, path)
 
 
 def filetype_flag(path: str) -> str | None:
@@ -127,13 +148,13 @@ def filetype_flag(path: str) -> str | None:
     prose-only maze PR lands in the `—/—` clear cell. Machine Documentation / inert
     assets -> low; Computer Code -> med; unrecognized -> med (conservative)."""
     ext = posixpath.splitext(path)[1].lower()
-    if ext in _MED_TYPES:
+    if ext in FILETYPE_MED:
         return "med"
-    if ext in _LOW_TYPES:
+    if ext in FILETYPE_LOW:
         return "low"
-    if ext in _NONE_TYPES:
+    if ext in FILETYPE_NONE:
         return None  # Natural Language -> the `—` state (no flag)
-    return "med"  # unrecognized type: conservative (TUNABLE)
+    return FILETYPE_UNKNOWN_DEFAULT  # unrecognized type: conservative (TUNABLE)
 
 
 def classify_file(path: str) -> tuple:
@@ -153,30 +174,26 @@ def classify_file(path: str) -> tuple:
         return (None, "high")
     # Persona/config dotfolders (.claude/, .gemini/, .codex/, .op/, etc.) are pinned high.
     # Editing agent config surfaces must not be auto-labeled risk/low.
-    if "/" in path and _TOP_DOTFOLDER_RE.match(path):
+    if "/" in path and TOP_DOTFOLDER_RE.match(path):
         return (None, "high")
     return (filetype_flag(path), None)
 
 
-_FT_ORD = {None: 0, "low": 1, "med": 2}
-_DP_ORD = {None: 0, "high": 1, "nope": 2}
+def riskiest(*flags) -> str | None:
+    """The riskiest non-None flag among `flags`, ranked by TIER_PRECEDENCE; None if all
+    absent. The single ordering primitive — used both to aggregate an axis across files
+    and to combine the two axes — so there is no second copy of the tier order to drift."""
+    present = [f for f in flags if f is not None]
+    return min(present, key=TIER_PRECEDENCE.index) if present else None
 
 
 def combine(filetype, depth) -> str:
-    """Collapse the (filetype, depth) pair to one descriptor: nope > high > med > low > clear.
-    `clear` is the `—/—` state — NO flag on either axis (a prose-only maze file) — kept
-    DISTINCT from `low` so a later auto-merge gate can key on it (blueprint: `—/—` auto-merges
-    on open; `low` is a flag that holds). For the binary legacy `tier`, `clear` folds back into
-    `low` (see main) so this distinction changes no current label behavior."""
-    if depth == "nope":
-        return "nope"
-    if depth == "high":
-        return "high"
-    if filetype == "med":
-        return "med"
-    if filetype == "low":
-        return "low"
-    return "clear"  # —/— : neither sorter fired
+    """Collapse the (filetype, depth) pair to one tier by TIER_PRECEDENCE (riskiest wins):
+    nope > high > med > low. `clear` is the `—/—` state — NO flag on either axis (a prose-only
+    maze file) — kept DISTINCT from `low` so a later auto-merge gate can key on it (blueprint:
+    `—/—` auto-merges on open; `low` is a flag that holds). For the binary legacy `tier`,
+    `clear` folds back into `low` (see main), so this distinction changes no current behavior."""
+    return riskiest(filetype, depth) or CLEAR_TIER
 
 
 def main():
@@ -186,19 +203,19 @@ def main():
         ft, dp = classify_file(p)
         by_file.append({"path": p, "filetype": ft, "depth": dp})
 
-    filetype = max((b["filetype"] for b in by_file), key=lambda x: _FT_ORD[x], default=None)
-    depth = max((b["depth"] for b in by_file), key=lambda x: _DP_ORD[x], default=None)
+    # Aggregate each axis to its riskiest reach across the changeset (same ordering primitive).
+    filetype = riskiest(*(b["filetype"] for b in by_file))
+    depth = riskiest(*(b["depth"] for b in by_file))
     tier4 = combine(filetype, depth)            # nope|high|med|low|clear
     # Binary legacy contract (risk/<tier>): the SAFE states (clear + low) -> low; everything
     # above -> high. `clear` folds into `low` here, so pulling Natural Language out to the `—`
     # state makes NO change to the binary label the live producer/consumer use today — the new
     # `—/—` distinction rides only in tier4/filetype, for the consumer-wiring step to come.
-    _SAFE = ("clear", "low")
-    tier = "low" if tier4 in _SAFE else "high"
+    tier = "low" if tier4 in SAFE_TIERS else "high"
 
     # Legacy aggregate buckets (high_risk = anything above the safe states).
-    high_risk = [b["path"] for b in by_file if combine(b["filetype"], b["depth"]) not in _SAFE]
-    low_risk = [b["path"] for b in by_file if combine(b["filetype"], b["depth"]) in _SAFE]
+    high_risk = [b["path"] for b in by_file if combine(b["filetype"], b["depth"]) not in SAFE_TIERS]
+    low_risk = [b["path"] for b in by_file if combine(b["filetype"], b["depth"]) in SAFE_TIERS]
 
     print(json.dumps({
         "tier": tier,        # binary low|high — keeps risk/<tier> label creation working
