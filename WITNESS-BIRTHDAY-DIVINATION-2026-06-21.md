@@ -44,15 +44,17 @@ Scorpio sticker (see [[DRIVE-REGISTRY]], [[Logan Finney]]).
 
 ## The researched — public record `[EVIDENCE]`
 
-- **Birthplace: North Idaho (Bonner County)** → **~48.3°N**, and crucially the **Idaho
-  panhandle keeps Pacific Time**. Grounding: IPTV bio ("North Idaho native… Bonner County").
-  *(Handle and a precise birthplace/hospital detail were dropped 2026-06-22 to keep the
-  doxxing surface at the public-bio level; the county still fixes the latitude used below.)*
+- **Birthplace: North Idaho panhandle** — crucially the panhandle **keeps Pacific Time** and
+  sits at a **high northern latitude** (the load-bearing fact for the estimate below). Grounding:
+  IPTV bio ("North Idaho native"). *(Handle, precise birthplace/hospital, and the exact
+  county/latitude were dropped 2026-06-22 to keep the committed record at public-bio
+  granularity; precise coordinates are an input supplied at ephemeris run time, not committed here.)*
 - **Sun in Virgo, early-to-mid September.** Corroborated by the *Untitled Goose Game* tweet
   (Aug 18 2020: the free update is "coming not long after my birthday 🦢"; that co-op update
   shipped **Sept 23 2020**).
-- **Birth year ~1998.** From **U of Idaho B.S., Broadcast & Digital Media Journalism,
-  2016–2020** — a September-born fall-2016 freshman turning 18 at term's start.
+- **Born late 1990s.** From **U of Idaho B.S., Broadcast & Digital Media Journalism,
+  2016–2020** — a September-born fall-2016 freshman turning 18 around term's start. (Exact year
+  withheld from the committed record; supplied at ephemeris run time.)
 - **Anomaly, not hidden:** a 2021-04-23 tweet, "Worst birthday week ever," reads *Taurus*, not
   Virgo. Held as **not Logan's own birthday** (or sarcasm) — flagged, not reconciled. `[CONFLICT]`
 
@@ -73,7 +75,7 @@ birth, late in the morning.**
 > **Late morning — roughly 11:00 AM – 12:30 PM Pacific, near midday, Sun high and approaching
 > culmination.**
 
-At that **~48.3°N** latitude this skews a touch **later** than a generic reading, because
+At the panhandle's **high northern latitude** this skews a touch **later** than a generic reading, because
 Virgo/Libra/Scorpio are **long-ascension** signs in the northern hemisphere (they rise slowly),
 stretching the span between sunrise (Virgo on the horizon) and Scorpio reaching the Ascendant.
 
@@ -88,9 +90,10 @@ stretching the span between sunrise (Virgo on the horizon) and Scorpio reaching 
 - **Self-witnessed error:** mid-reasoning I flipped the long-/short-ascension direction once
   and corrected it. Trust the **shape** (morning · Sun high · near midday) over any single
   minute. `[REPAIR]`
-- **To convert estimate → computation:** give the **exact September day** and I'll run a real
-  ephemeris + house calc for North Idaho (~48.3°N, ~1998, PDT) and return a tight Ascendant degree and
-  birth-hour window. That's the one input research can't supply.
+- **To convert estimate → computation:** give the **exact September day** (plus the precise
+  birthplace coordinates and birth year, kept out of this committed record) and I'll run a real
+  ephemeris + house calc and return a tight Ascendant degree and birth-hour window. Those are
+  inputs research shouldn't pin down in public.
 
 ---
 
@@ -105,8 +108,8 @@ stretching the span between sunrise (Virgo on the horizon) and Scorpio reaching 
 ## DOCUMENT METADATA
 
 - **Created:** 2026-06-21
-- **Last Updated:** 2026-06-21
+- **Last Updated:** 2026-06-22
 - **Status:** Draft
 - **Authority:** LOGAN
 - **Authors:** Claude Code CLI
-- **Change Note:** Witnessed a consented birthday-divination pass: recorded Logan's given Sun/Moon/Rising (Virgo/Scorpio/Scorpio), the public-record birthplace (North Idaho / Bonner County, ~48.3°N, Pacific) and birth year (~1998, U of Idaho 2016–2020), the astronomy method (Sun in the 11th house ⇒ late-morning birth), and the estimate (~11 AM–12:30 PM Pacific). Flagged the April "birthday week" anomaly, the unknowable exact day/time, and a self-corrected ascension error. Pending the exact day for a real ephemeris run.
+- **Change Note:** Witnessed a consented birthday-divination pass: recorded Logan's given Sun/Moon/Rising (Virgo/Scorpio/Scorpio), the public-bio birthplace (North Idaho panhandle, Pacific, high northern latitude), the astronomy method (Sun in the 11th house ⇒ late-morning birth), and the estimate (~11 AM–12:30 PM Pacific). Flagged the April "birthday week" anomaly, the unknowable exact day/time, and a self-corrected ascension error. **PII pass 2026-06-22 (Copilot #609):** coarsened committed birthplace to public-bio granularity and withheld exact county/latitude/birth year — those are inputs supplied at ephemeris run time, not committed facts. Pending the exact day for a real ephemeris run.
