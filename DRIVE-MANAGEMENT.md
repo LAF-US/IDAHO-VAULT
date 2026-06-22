@@ -157,11 +157,12 @@ independent encryption boundaries** (defense in depth — a break in one doesn't
    git-annex's GPG `encryption=hybrid`. Rationale (surveyed 2026-06-22): the vault's **current**
    signing implementation is **SSH-format** commit signing (`gpg.format=ssh`) — one method among
    several, not a settled silver bullet (the `allowed_signers` verification step is a known rough
-   edge) — with **no GPG keyring stood up yet** (`.gnupg/` gitignored). `required_signatures` **is**
-   active in the Main Ruleset, but it's satisfied by the merge-queue's GitHub-signed merge commit, so
-   unsigned feature-branch commits still land — authors aren't forced to sign their own commits yet,
-   and a stable cross-platform author-signing solution is roadmap (**#398**; reviewer flow is **#399**).
-   So the signing method is still in flux and isn't a constraint on this storage work either way. That's a stage, **not a deliberate GPG-free design** — GPG isn't excluded, just not
+   edge) — with **no GPG keyring stood up yet** (`.gnupg/` gitignored). Commit signing is **not
+   required** on `main` at this time (the branch-protection rule is not enabled; the
+   `required_signatures` entry in the committed `main_ruleset.json` is a snapshot/roadmap artifact,
+   **not** live enforcement — Logan, 2026-06-22). A stable cross-platform author-signing solution
+   is on the roadmap (**#398**; reviewer flow **#399**). So signing is still in flux and isn't a
+   constraint on this storage work either way. That's a stage, **not a deliberate GPG-free design** — GPG isn't excluded, just not
    deployed — so at this stage it's simpler not to introduce GPG for a single annex remote.
    **If/when GPG gets stood up vault-wide** (e.g. for broader at-rest encryption or PGP-based
    workflows), git-annex's `encryption=hybrid` becomes a natural option to revisit.
