@@ -130,6 +130,40 @@ for transfer/scratch; risky as the *system of record* for irreplaceable footage.
 
 ---
 
+## Encryption (high priority — some keys already in 1Password)
+
+Encryption is a top priority, so it gets its own layer model rather than a footnote. Use **three
+independent encryption boundaries** (defense in depth — a break in one doesn't expose the data):
+
+1. **Volume encryption — the foundation, do this first.** Every drive gets full-volume
+   encryption: **FileVault / APFS-encrypted** on the Mac, **BitLocker or VeraCrypt** on the
+   Windows-side drives. This protects *everything* at rest — annex working files, the backup repo,
+   scratch — against a lost or seized disk, independent of any tool above it.
+2. **Backup-repo encryption.** **restic encrypts by default** (AES-256 + authenticated), gated by
+   a repo password — so the backup is safe even on an untrusted target (a cloud bucket, a drive
+   that walks). This is **why the history layer is restic, not bup:** bup has **no native
+   encryption**, and git-annex's bup special remote *requires* `encryption=none`. restic is also
+   **natively cross-platform** (Mac + Windows, no WSL), so the Windows box stops being a special
+   case. (bup only earns a place for VM-image-scale hashsplitting — not a footage/document archive.)
+3. **Off-site / cloud encryption.** For annexed content, use a git-annex **encrypted special
+   remote** (GPG, `encryption=hybrid`) to B2; for the restic repo, the cloud copy is already
+   encrypted by layer 2.
+
+### Key management — keys in 1Password (`op`)
+
+Encryption is only as strong as where the keys live, and the vault already runs **1Password**
+(some keys are already in `op`). Keep every passphrase out of plaintext config and inside `op`:
+
+- **restic repo password** → `RESTIC_PASSWORD_COMMAND="op read op://Vault/restic/password"`.
+- **B2 application keys**, **git-annex GPG key / encrypted-remote creds** → `op` (same pattern as
+  the vault's existing `OP_SERVICE_ACCOUNT_TOKEN` flow).
+- **Volume recovery keys** (FileVault / BitLocker) → `op`.
+
+This is the same "stable secrets mechanism" flagged for the redacted drive serials in
+[[DRIVE-REGISTRY]] (`⟨redacted⟩`) — one secrets store, fetched at runtime, nothing in cleartext.
+
+---
+
 ## Mapped to the five drives
 
 | Drive (role) | Recommendation |
@@ -163,8 +197,12 @@ one more always-on, redundant annex remote; **B2 stays the off-site leg.**
 
 - [ ] **Adopt git-annex** for the fleet (decision), or fall back to NeoFinder/catcli + manual
       Layers 2–3 if the CLI curve is unwanted.
-- [ ] **Stand up B2 + restic** for the cold archive (retire any reliance on Personal Backup for
-      shelved drives).
+- [ ] **Stand up restic → B2** for the encrypted versioned history (the chosen history layer over
+      bup; retire any reliance on Personal Backup for shelved drives).
+- [ ] **Encrypt every drive volume** (FileVault / BitLocker / VeraCrypt) — the foundation layer,
+      do this before trusting any drive with source-sensitive material.
+- [ ] **Put backup/remote keys in 1Password** (some already in `op`): restic password, B2 app
+      keys, git-annex GPG/remote creds, FileVault/BitLocker recovery keys.
 - [ ] **Resolve the `Expansion` sole-copy risk first** — mirror to `storage` and/or B2 before
       anything else.
 - [ ] **Reclassify this note** — staged `doc_class: misc_reference` per VAULT-TEMPLATES §147 (no
@@ -190,4 +228,4 @@ plane) · [[WITNESS-PENDING-NOT-DONE-2026-06-21]] (the durable-copy gap this str
 - **Status:** Draft
 - **Authority:** LOGAN
 - **Authors:** Claude Code CLI
-- **Change Note:** First storage-management doctrine note, sibling to DRIVE-REGISTRY (hardware) — records the 2026-06-22 research pass. Core finding: the bus-powered single-purpose fleet wants a tracked/checksummed/location-aware archive (git-annex), not RAID pooling. Captures Logan's two-phase framing (git-annex + B2 + checksums now; mini-PC/homelab with real pooling later, git-annex surviving as the catalog layer), the three-layer model (inventory / 3-2-1 / integrity), the exFAT-no-journaling caveat, and a per-drive mapping that prioritizes the `Expansion` journalism-archive sole-copy risk. Staged `doc_class: misc_reference` pending a doctrine/strategy class decision. Phase-2 hardware options are placeholders (`*`), not a purchase survey.
+- **Change Note:** First storage-management doctrine note, sibling to DRIVE-REGISTRY (hardware) — records the 2026-06-22 research pass. Core finding: the bus-powered single-purpose fleet wants a tracked/checksummed/location-aware archive (git-annex), not RAID pooling. Captures Logan's two-phase framing (git-annex + B2 + checksums now; mini-PC/homelab with real pooling later, git-annex surviving as the catalog layer), the three-layer model (inventory / 3-2-1 / integrity), the exFAT-no-journaling caveat, and a per-drive mapping that prioritizes the `Expansion` journalism-archive sole-copy risk. Staged `doc_class: misc_reference` pending a doctrine/strategy class decision. Phase-2 hardware options are placeholders (`*`), not a purchase survey. **Encryption pass 2026-06-22:** added a dedicated three-layer encryption model (volume / restic-repo / git-annex encrypted off-site), recorded the **restic-over-bup** decision (bup has no native encryption and is Windows-via-WSL only; restic encrypts by default and is natively cross-platform), and the 1Password (`op`) key-management tie-in — keys partly in `op` already, same secrets mechanism as the redacted serials.
