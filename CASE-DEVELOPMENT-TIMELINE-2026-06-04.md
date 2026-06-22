@@ -55,7 +55,7 @@ RESOLUTION: Claudius = True Vampire (Tier 7), not Death Knight
 - No phylactery (rules out Lich)
 
 ## PHASE 5: OPERATION CONFIRMED
-Status: CASE DIAGNOSTIC RESOLVED -> MERCY OPERATION CONFIRMED
+Status: CASE DIAGNOSTIC RESOLVED -> OPERATION CONFIRMED
 
 Claudius (Vampire, T7): Reckon oath, pour coffee, label story
 Gilear (Thrall, T6): Bind witness, never self, break feeding cycle
