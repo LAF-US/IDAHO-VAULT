@@ -180,6 +180,8 @@ next implementation increment (held until the cells above are routed) must: **(a
 axis a real `—` state (Natural Language → none) and a distinct `—/—` **"clear"** result that is *not*
 `low`; **(b)** gate auto-merge on the `—/—` clear state via a **positive clear-marker**, not the mere
 *absence* of a risk label — so a not-yet-classified PR is never mistaken for clear; **(c)** wire the
-flagged-cell routing once pinned. Recorded, not built.
+flagged-cell routing once pinned. Recorded, not built. **The live enforcement wiring this refactor
+must navigate — three drifting risk filters, the merge queue, the pending semantic flip — is mapped
+in [[REPORT-GH-AUTOMERGE-ENFORCEMENT-MAP-2026-06-22]]. This is deliberate staged work, not one cut.**
 
 ###### [["The world is quiet here."]]
