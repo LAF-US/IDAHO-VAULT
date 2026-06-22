@@ -101,9 +101,10 @@ they must be paired with Layers 2–3 below.
 - Use **Backblaze B2 + [restic](https://www.backblaze.com/docs/cloud-storage-integrate-restic-with-backblaze-b2)**
   (content-addressed, deduplicated, incremental, Object-Lock / ransomware-resistant) for the cold
   archive. This is the same B2 pattern already in the vault's storage manifests.
-- **Avoid Backblaze *Personal Backup* for archive drives:** it treats an external drive detached
-  >30 days as deleted and purges the cloud copy — fatal for drives you shelve
-  ([Backblaze docs](https://help.backblaze.com/hc/en-us/articles/217664898)).
+- **Avoid Backblaze *Personal Backup* for archive drives:** by **default** it treats an external
+  drive detached >30 days as deleted and purges the cloud copy — fatal for drives you shelve.
+  (Extended Version History lengthens retention, but the periodic-reattach expectation remains;
+  **B2 avoids the re-attach requirement entirely**.) ([Backblaze docs](https://help.backblaze.com/hc/en-us/articles/217664898)).
 - **Local second copy:** the Work-Desk journalism archive (`Expansion`) should live on a second
   device — the 5 TB `storage` is the natural target — before it is trusted to one HDD.
 
@@ -126,7 +127,8 @@ for transfer/scratch; risky as the *system of record* for irreplaceable footage.
 - Keep exFAT only on the cross-platform **transfer** drives (`ExternalSSD`, `Vault`).
 - For the **journalism archive**, either move to a journaled native FS (APFS if Mac-primary, NTFS
   if Windows-primary) **or** consciously accept exFAT + checksums + B2 as the mitigation.
-- `timemachine` is already HFS+ — leave it.
+- **`timemachine`** — don't repurpose or reformat the Time Machine volume; let Time Machine own
+  it (its on-disk format, HFS+ or APFS, follows the macOS version).
 
 ---
 
