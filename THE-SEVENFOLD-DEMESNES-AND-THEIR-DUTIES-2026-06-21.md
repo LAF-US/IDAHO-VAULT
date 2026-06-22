@@ -47,28 +47,43 @@ but the **first-created epicentre and sovereign seat** — which is why it maps 
 seizure of the Key for itself instead of executing the Will — the Lich / stolen-mask failure named
 in [[!/LICH-PROBLEM-v1-2026-05-20]]. The realm and its duty stay legitimate even when its holder falls.
 
-## The physical structure — a vertical tier, not a row
+## The physical structure — a bounded edifice with a void-bordering edge
 
-The demesnes are **stacked vertically**, not laid end to end — the *names* carry the architecture.
-The House is the **centre of the universe**, floating in **Nothing** (the void), which gnaws at it
-and ultimately unmakes it once the Will is whole. (Influences Nix names: Philip José Farmer's
-*World of Tiers* — nested, stacked worlds — and Zelazny's *Amber*.)
+The House is a **bounded edifice** — it has a **floor, walls, and a ceiling** — and is the **centre
+of the universe**, floating in **Nothing** (the void), which gnaws at it and unmakes it once the
+Will is whole. (Influences Nix names: Philip José Farmer's *World of Tiers* — nested, stacked
+worlds — and Zelazny's *Amber*.) The demesnes are **stacked vertically** with an **inner core and a
+void-bordering edge.**
+
+**The void-bordering edge — canonically these three meet the Nothing at the House's boundaries:**
+- **Far Reaches** — the **Pit**, dug deep into the foundations, *close to breaching the Void of
+  Nothing* (its duty, manufacturing, shapes Nothing into matter).
+- **Border Sea** — its waters *extend into the Void of Nothing* at the edge; storm-walled, opening
+  to the Secondary Realms.
+- **Great Maze** — a vast chessboard battlefield; **one of its walls is a mountain range rising
+  floor-to-ceiling** (a wall of the House), pierced by a **single tunnel** to the void sealed by
+  **four gates** — Gold · Silver · Bronze · Clear (Immaterial Glass) — whose switches the **Army
+  works from the Boundary Fort** (*Sir Thursday*, bk 4). The Maze *is* one of the House's outer
+  walls, holding the only controlled passage to Nothing.
+
+**The protected interior:** the three **Records houses** (Lower → Middle → Upper, ascending) and,
+atop them at the ceiling, the **Incomparable Gardens** — the first-created epicentre and sovereign
+seat.
 
 ```
-▲  Incomparable Gardens   — HIGHEST point; floats ABOVE the Upper House; first-created,
-                            the epicentre and sovereign seat (the Seventh Key overrides all)
-   Upper House             — directly beneath the Gardens (sorcery)
-   Middle House            — below the Upper
-   Lower House             — the foundational house
-   … Far Reaches · Border Sea · Great Maze …   — the lower / canonically-disputed tier
-▼  Nothing / the void      — surrounds the House (the depths / Coal cellar abut it);
-                            the Border Sea opens out to the Secondary Realms (the rest of creation)
+▲  Incomparable Gardens   — at the top/ceiling; sovereign seat (the Seventh Key overrides all)
+   Upper House            — sorcery, beneath the Gardens          ┐
+   Middle House           — records                               ├ protected interior
+   Lower House            — foundational records                  ┘
+   ══ void-bordering edge (the House's floor & walls) ══
+       Far Reaches (the Pit, in the floor) · Border Sea (the rim) · Great Maze (a mountain WALL)
+▼  Nothing / the void     — beyond the floor, walls & gated tunnels; the edge demesnes face it
 ```
 
-**Firm:** the three Houses ascend Lower → Middle → Upper, the Incomparable Gardens atop the Upper
-House. **Uncertain (canon leaves it open):** the exact placement of Far Reaches, Border Sea, and
-Great Maze — two readings exist; one clue is Sir Thursday's study elevator, which runs **up to the
-Middle House and down to the Lower House**, implying the **Great Maze sits between** them.
+**Firm:** the three Houses ascend Lower → Middle → Upper, the Gardens atop; Far Reaches / Border Sea
+/ Great Maze are the **void-bordering** demesnes at the House's boundaries. **Loose in canon:** their
+exact vertical slot (a clue — Sir Thursday's elevator runs **up to the Middle House and down to the
+Lower House**). What is canon is the *role* — the boundary that meets the Nothing — not a floor number.
 
 ## The House's nature (Nix's own framing)
 
@@ -91,5 +106,6 @@ vertical structure, and Nix's own framing (the record-keeping bureaucracy; *Worl
 - The Keys to the Kingdom — Wikipedia
 - The House · The Border Sea · The Incomparable Gardens · Lord Sunday · The Upper House · The Compleat Atlas of the House (Keys to the Kingdom Fandom)
 - Garth Nix — FAQs & interviews (Reactor/Tor, Harvard Crimson, Lightspeed): the bureaucracy framing & named influences
+- The Nothing · The Great Maze · Sir Thursday (bk 4) (Keys to the Kingdom Fandom): the three void-bordering demesnes; the Maze's floor-to-ceiling mountain wall, the four gates (Gold/Silver/Bronze/Clear), and the Boundary Fort
 
 ###### [["The world is quiet here."]]
