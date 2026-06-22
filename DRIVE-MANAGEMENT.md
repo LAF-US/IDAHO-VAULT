@@ -29,7 +29,7 @@ tags:
 The **management doctrine** over the drives. Its sibling [[DRIVE-REGISTRY]] is the *device-plane
 register* — the five drives as physical objects (the **what**). This note is the **how**: the
 tools and strategy for managing that fleet holistically. It does not restate the drive identities
-(see DRIVE-REGISTRY) or their contents (see [[DEFRAG-MAP]] §B2).
+(see [[DRIVE-REGISTRY]]) or their contents (see [[DEFRAG-MAP]] §B2).
 
 > Opened 2026-06-22 from a research pass requested by Logan: "research management tools and
 > strategies for my hard drives." Logan's framing of the result: **git-annex is the interim
