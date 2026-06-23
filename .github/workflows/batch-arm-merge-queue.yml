@@ -169,9 +169,15 @@ jobs:
               # still lands on a later sweep.
               gh pr merge "$url" --repo "$repo" --auto --merge >/dev/null 2>&1 || true
               node_id=$(gh pr view "$pr" --repo "$repo" --json id -q .id 2>/dev/null || true)
-              entry=$(gh api graphql \
-                -f query='mutation($pr:ID!){enqueuePullRequest(input:{pullRequestId:$pr}){mergeQueueEntry{id}}}' \
-                -f pr="$node_id" --jq '.data.enqueuePullRequest.mergeQueueEntry.id' 2>"$err" || true)
+              # Only call the mutation when we actually have a node id — an empty id would
+              # just make a guaranteed-failing GraphQL request whose error we'd then ignore.
+              # A blank node_id (the gh pr view failed) falls through to the FAILED bucket.
+              entry=""
+              if [ -n "$node_id" ]; then
+                entry=$(gh api graphql \
+                  -f query='mutation($pr:ID!){enqueuePullRequest(input:{pullRequestId:$pr}){mergeQueueEntry{id}}}' \
+                  -f pr="$node_id" --jq '.data.enqueuePullRequest.mergeQueueEntry.id' 2>"$err" || true)
+              fi
               if [ -n "$node_id" ] && [ -n "$entry" ] && [ "$entry" != "null" ]; then
                 echo "  enqueued #$pr (merge-queue entry $entry)"
                 enqueued=$((enqueued + 1))
