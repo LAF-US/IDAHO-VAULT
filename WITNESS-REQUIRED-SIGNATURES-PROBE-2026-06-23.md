@@ -40,7 +40,9 @@ way.
 
 - This note is committed **unsigned on purpose** (`--no-gpg-sign`) to replicate the normal
   agent state, not a signed special case.
-- The PR opens as a **draft** so auto-merge cannot fire under the rule's *off* state.
+- The PR opens as a **draft** so it cannot enter auto-merge or the merge queue *regardless of
+  rule state* — only once it is explicitly marked ready does the `required_signatures` state
+  become the operative gate.
 - Logan flips `required_signatures` **on** (live), then the PR is marked ready and run through
   the queue.
 
@@ -54,6 +56,14 @@ way.
 
 Either outcome is a real live-config datapoint, not a snapshot inference. After the read, the
 rule is flipped back off and this branch is kept (if merged) or discarded (if blocked).
+
+### Rollback (abort path)
+
+If the probe **stalls, is abandoned, or fails for any reason**, flip `required_signatures` back
+**off immediately** — before retrying or discarding the branch. The live ruleset carries no
+bypass (`bypass_actors: []`, `current_user_can_bypass: never`), so a rule left on can silently
+block **unrelated** merges across the whole repo until it is reverted. Reverting the rule is the
+only abort switch; nothing else overrides it.
 
 ---
 
