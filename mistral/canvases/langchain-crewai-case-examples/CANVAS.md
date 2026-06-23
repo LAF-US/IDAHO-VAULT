@@ -4,7 +4,7 @@ title: "LangChain & CrewAI Cross-Deployment Case Examples 2026"
 type: "text/markdown"
 updated: 2026-06-23
 status: active
-authority: research
+authority: LOGAN
 ---
 
 # LangChain & CrewAI Cross-Deployment Case Examples 2026
@@ -155,3 +155,14 @@ LangGraph manages the graph, CrewAI manages agent collaboration within nodes.
 3. Inductivee - Multi-Agent Orchestration Enterprise Guide (2026)
 4. NxCode - CrewAI vs LangChain 2026 Comparison (March 2026)
 5. Manjit Guha - Enterprise Integration Patterns (2026)
+
+
+---
+
+## DOCUMENT METADATA
+
+| Field | Value |
+|-------|-------|
+| Updated | 2026-06-23 |
+| Status | active |
+| Authority | LOGAN |
