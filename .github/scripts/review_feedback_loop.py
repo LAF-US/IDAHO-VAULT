@@ -191,51 +191,83 @@ def _auto_merge_state(owner: str, repo: str, pr_number: int) -> tuple[bool, bool
     return (enabled, queued)
 
 
-def _arm_auto_merge(owner: str, repo: str, pr_number: int) -> tuple[bool, str | None]:
-    """Enable merge-queue auto-merge for the PR and ensure it actually enqueues.
-
-    Returns ``(armed, error)``. ``armed`` is True when auto-merge is on and, for a
-    ready PR, the enqueue transition has been (re-)fired."""
-    # On a merge-queue repo, `gh pr merge --auto` only calls
-    # enablePullRequestAutoMerge. Re-enabling it on a PR that ALREADY has
-    # auto-merge is an idempotent no-op ("! The merge strategy for main is set by
-    # the merge queue", exit 0) that never re-fires the ready-transition which
-    # actually enqueues the PR — so a PR armed while it was blocked never enters
-    # the queue when it later goes green (verified on #508). If auto-merge is on
-    # but the PR is NOT yet queued, toggle off->on to re-fire the transition. If
-    # it is already queued, leave it alone — disabling would evict it and restart
-    # its queue run.
-    enabled, queued = _auto_merge_state(owner, repo, pr_number)
-    if enabled and queued:
-        return True, None
-    if enabled and not queued:
-        # Checked here: if the disable leg fails the PR stays armed and the
-        # `--auto` below is the idempotent no-op again — report the failure
-        # rather than falsely claim a successful re-arm.
-        try:
-            _disable_auto_merge(pr_number, check=True)
-        except RuntimeError as exc:
-            return False, f"failed to disable existing auto-merge before re-arming: {exc}"
+def _pr_node_id(owner: str, repo: str, pr_number: int) -> str | None:
+    """The PR's GraphQL node id (required by enqueuePullRequest). None if it can't be read
+    (fail-open: the caller then skips the explicit enqueue and relies on armed auto-merge)."""
     try:
-        _run(
-            [
-                "gh",
-                "pr",
-                "merge",
-                str(pr_number),
-                "--squash",
-                "--delete-branch",
-                "--auto",
-            ]
+        data = _graphql(
+            """
+            query($owner:String!, $name:String!, $number:Int!) {
+              repository(owner: $owner, name: $name) {
+                pullRequest(number: $number) { id }
+              }
+            }
+            """,
+            owner=owner,
+            name=repo,
+            number=pr_number,
         )
-    except RuntimeError as exc:
-        if not any(fragment in str(exc) for fragment in AUTO_MERGE_AUTHZ_FRAGMENTS):
-            raise
-        return (
-            False,
-            "GitHub Actions is not authorized to enable auto-merge on the protected base branch.",
+    except (RuntimeError, ValueError):
+        return None
+    return ((data.get("repository") or {}).get("pullRequest") or {}).get("id")
+
+
+def _enqueue_pr(node_id: str) -> tuple[bool, str | None]:
+    """Add the PR to the merge queue via the ``enqueuePullRequest`` mutation — the action that
+    actually puts a PR in the queue, DISTINCT from ``enablePullRequestAutoMerge`` ("merge when
+    ready"). Returns ``(enqueued, error)``.
+
+    Best-effort by design: a PR that is not yet queue-ready (required checks still running, not
+    mergeable, or the base branch has no merge queue) cannot be enqueued now — GitHub rejects it
+    — and the armed auto-merge enqueues it when it goes green. So a not-ready outcome is non-fatal
+    and returned as ``(False, reason)``, never raised."""
+    try:
+        data = _graphql(
+            "mutation($pr:ID!){ enqueuePullRequest(input:{pullRequestId:$pr})"
+            " { mergeQueueEntry { id } } }",
+            pr=node_id,
         )
-    return True, None
+    except (RuntimeError, ValueError) as exc:
+        return (False, str(exc))
+    entry = (((data.get("enqueuePullRequest") or {}).get("mergeQueueEntry")) or {}).get("id")
+    if entry:
+        return (True, None)
+    return (False, "PR not queue-ready yet; armed auto-merge will enqueue it when green")
+
+
+def _arm_auto_merge(owner: str, repo: str, pr_number: int) -> tuple[bool, str | None]:
+    """Arm auto-merge for the PR AND add it to the merge queue — two DISTINCT GitHub actions:
+
+      1. **enablePullRequestAutoMerge** (`gh pr merge --auto`) — records "merge when ready."
+         On a merge-queue repo this ALONE does not put the PR in the queue.
+      2. **enqueuePullRequest** (GraphQL) — the action that actually adds the PR to the merge
+         queue. This is the half that was missing: arming-only left a ready PR sitting
+         un-queued (the #508 symptom) because nothing ever called enqueue.
+
+    Returns ``(armed, error)``. ``armed`` is True once auto-merge is on (the floor). The enqueue
+    is best-effort: a not-yet-ready PR can't be enqueued, and the armed auto-merge enqueues it
+    when it goes green — so a not-ready enqueue result is NOT treated as a failure."""
+    enabled, queued = _auto_merge_state(owner, repo, pr_number)
+    if queued:
+        # Already in the queue — re-enqueuing would be a no-op (or an unwanted jump); leave it.
+        return (True, None)
+    if not enabled:
+        try:
+            _run(
+                ["gh", "pr", "merge", str(pr_number), "--squash", "--delete-branch", "--auto"]
+            )
+        except RuntimeError as exc:
+            if not any(fragment in str(exc) for fragment in AUTO_MERGE_AUTHZ_FRAGMENTS):
+                raise
+            return (
+                False,
+                "GitHub Actions is not authorized to enable auto-merge on the protected base branch.",
+            )
+    # Arming is only half the job — explicitly add it to the merge queue now.
+    node_id = _pr_node_id(owner, repo, pr_number)
+    if node_id:
+        _enqueue_pr(node_id)  # best-effort; a not-ready PR is enqueued later by armed auto-merge
+    return (True, None)
 
 
 def _pr_touches_protected_path(owner: str, repo: str, pr_number: int) -> bool:
