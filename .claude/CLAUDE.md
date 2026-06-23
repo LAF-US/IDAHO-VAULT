@@ -120,7 +120,7 @@ See `VAULT-CONVENTIONS.md` for vault structure, naming, frontmatter, sourcing pr
 
 Read THE DOCKET to orient: `!/!/__!__/!/! The world is quiet here/DOCKET.md`
 
-That file is the live status board. Update it when you start or finish work. Task assignment flows through GitHub Issues (`agent:*` labels). Linear mirrors from GitHub. Slack carries breadcrumbs. The vault is the record.
+That file is the Court's register of matters, orders, and referrals. Per its own posture note it is **not** a control plane, heartbeat, status board, or workflow hub — read it to see what is before the Court, but do **not** treat it as a surface you update on starting or finishing work. Task assignment flows through GitHub Issues (`agent:*` labels). Linear mirrors from GitHub. Slack carries breadcrumbs. The vault is the record.
 
 ---
 

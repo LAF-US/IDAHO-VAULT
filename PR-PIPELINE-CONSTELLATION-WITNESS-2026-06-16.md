@@ -151,37 +151,41 @@ the old attest-then-resolve order, so any `apply=true` rerun *before* #540 merge
 mint a false "cleared" attestation. (Cleanup of the 34 already-posted false attestations is
 a separate follow-up.)
 
-### Fix B — DECIDED by Logan 2026-06-17: a GitHub App resolve identity (#398 option E)
-The resolve identity will be a **dedicated GitHub App** — **"IDAHO-VAULT Review Resolver"** —
-named for the GitHub object+verb it acts on: it resolves PR **review threads** (the GitHub UI
-calls the same object a *conversation*; the API mutation is `resolveReviewThread`). A distinct,
-witnessed bot that is neither `loganfinney27` nor the generic integration token, and whose
-installation access token *can* `resolveReviewThread`. This is the #398 "App signer" option E,
-now also serving #399's resolve verb. (Name chosen by Logan, grounded in GitHub terminology —
-not "Looker," which overloaded the engine's internal `looker` role and collided with Google
-Looker.) **Authority: Logan direct instruction (2026-06-17).**
+### Fix B — REVISED 2026-06-17: agent-driven resolve works; the App is SHELVED
+**Empirical correction (tested, grounded):** both `resolveReviewThread` *and*
+`unresolveReviewThread` **succeed under the agent/user token** (`loganfinney27`) — verified by
+a net-zero `unresolve → re-resolve` round-trip on a #540 thread, plus the thread resolutions
+performed across #536/#540/#541 this session. So the FORBIDDEN recorded above was **not** a
+property of the mutation or of a missing permission scope — it was *solely* the
+`github-actions[bot]` **integration** token calling `resolveReviewThread` from inside Actions
+(the classic "Resource not accessible by integration" restriction), independent of
+`pull-requests: write`. The engine's resolve step is not broken; it only fails in the CI-bot
+execution context.
 
-**Admin-gated (Logan's hand — genuinely human work, by design):**
-1. Register a GitHub App under the LAF-US org: "IDAHO-VAULT Review Resolver"; permission
-   **Pull requests: Read & Write** (covers review-thread resolve + reply); no webhook needed.
-2. Install it on `LAF-US/IDAHO-VAULT`.
-3. Generate the App's **private key (PEM)** (GitHub App auth uses a private key, not an API
-   key); store **App ID** as 1Password `review-resolver-app-id` and the **private key** as
-   1Password `review-resolver-app-private-key`, fetched at runtime via
-   `OP_SERVICE_ACCOUNT_TOKEN` (the vault's 1Password doctrine). *(The `.op/secrets.template.md`
-   inventory could not be updated in this PR — it's blocked by the current secret-pattern guard
-   configuration, whose `secret_path` rule matches any `.op/` path — so these credential names
-   are recorded here instead; updating that inventory, or the guard's allowlist, is a separate
-   `.op/`-scoped follow-up.)*
+Therefore the look-then-resolve engine can run **agent-driven**: an agent invokes the resolve
+logic with the token and it works — exactly how these PR threads have been resolved all
+session, transparently and with attribution. That transparent, attributed, Logan-directed
+resolution is *delegated action*, not the counterfeit/unattended "witnessed look minted as
+Logan" that the #398 concern guards against — the line we don't cross is unattended forging,
+not an agent openly clearing already-addressed bot threads under direction.
 
-**Code-side (Claude, once the App exists + its bot login is known):**
-4. `engage-outdated.yml` mints a short-lived installation access token (pinned
-   `actions/create-github-app-token`) from the App ID + key, and runs the resolve under it.
-5. Pass the App's bot login (`idaho-vault-review-resolver[bot]`) as the engine's
-   `--looker` value (the `--looker` flag stays — it names the engine's internal *role*, the
-   attesting identity — only its value changes from `github-actions[bot]` to the App login) so
-   the self-attestation actor-match check passes. Re-run `apply=true`; #481 then flows as the
-   guinea pig.
+**Decision (Logan, 2026-06-17): the GitHub App is SHELVED — a mountain for a molehill.**
+A dedicated App ("IDAHO-VAULT Review Resolver") was scoped as the distinct permitted resolve
+identity, but thread resolution is *already live* via the agent token. The App's only
+remaining purpose would be **fully-unattended, scheduled CI resolution under a distinct
+non-Logan identity** — revisit only if/when zero-human-or-agent-in-the-loop cron is actually
+wanted. It is not a blocker and is not being built now. (The earlier admin checklist, App
+permissions, and `review-resolver-app-*` credential names are retired with this decision.)
+
+**Path forward (agent-driven, no App) — queue-script work in `review_feedback_loop.py`:**
+- Run the engine's resolve/disposition logic as the directed agent (token), with transparent
+  attestation — not via the `github-actions[bot]` workflow.
+- Default the attestation `looker` to the authenticated actor (`_viewer_login()`), so the
+  witness always truthfully names whoever actually ran the resolve.
+- Add the resolved-but-unwitnessed **reconciliation**, now grounded in
+  `PullRequestReviewThread.resolvedBy` (GitHub exposes who resolved a thread, so recovery can
+  post the missing witness only when *our* identity resolved it, and leave human-resolved
+  threads untouched).
 
 ---
 
