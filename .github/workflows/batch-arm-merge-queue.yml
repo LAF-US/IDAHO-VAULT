@@ -15,7 +15,9 @@ name: Batch Arm Merge Queue
 # So, per PR:
 #   - ready (mergeStateStatus == CLEAN): arm auto-merge as a backstop, then call
 #     the enqueuePullRequest mutation to ADD it to the merge queue now. Counted as
-#     enqueued only when the mutation returns a merge-queue entry id.
+#     enqueued only when the mutation returns a merge-queue entry id. A PR that is
+#     ALREADY in the queue (mergeQueueEntry present) is skipped, not re-enqueued —
+#     a redundant mutation GitHub may reject would otherwise be mis-counted as failed.
 #   - not yet ready: best-effort `--auto` arm so it merges once it goes green; a
 #     later sweep enqueues it via the mutation once it is CLEAN.
 #   - arm/enqueue refused with the workflows-permission error: bucketed on its
@@ -83,7 +85,7 @@ jobs:
           MERGE_STATE_RETRIES: ${{ vars.MERGE_STATE_RETRIES }}
           MERGE_STATE_DELAY: ${{ vars.MERGE_STATE_DELAY }}
         run: |
-          enqueued=0; armed_pending=0; needs_wf_token=0; failed=0; total=0
+          enqueued=0; already_queued=0; armed_pending=0; needs_wf_token=0; failed=0; total=0
           repo="$GITHUB_REPOSITORY"
 
           # An arm/enqueue failure is the workflows-permission case when gh says so
@@ -168,10 +170,24 @@ jobs:
               # in the queue. Arm first as a backstop so a transiently-rejected enqueue
               # still lands on a later sweep.
               gh pr merge "$url" --repo "$repo" --auto --merge >/dev/null 2>&1 || true
-              node_id=$(gh pr view "$pr" --repo "$repo" --json id -q .id 2>/dev/null || true)
+              # Fetch the node id AND any existing merge-queue entry in one query so an
+              # ALREADY-queued PR is skipped instead of re-enqueued. enqueuePullRequest on a
+              # queued PR is a redundant mutation GitHub may reject — which would otherwise be
+              # mis-counted as FAILED on every re-sweep (the Python path short-circuits the
+              # same way). owner/name are split from "owner/repo" for the typed GraphQL args.
+              owner="${repo%%/*}"; name="${repo#*/}"
+              pr_info=$(gh api graphql \
+                -f query='query($owner:String!,$name:String!,$number:Int!){repository(owner:$owner,name:$name){pullRequest(number:$number){id mergeQueueEntry{id}}}}' \
+                -f owner="$owner" -f name="$name" -F number="$pr" 2>"$err" || true)
+              node_id=$(printf '%s' "$pr_info" | jq -r '.data.repository.pullRequest.id // empty')
+              queued_entry=$(printf '%s' "$pr_info" | jq -r '.data.repository.pullRequest.mergeQueueEntry.id // empty')
+              if [ -n "$queued_entry" ]; then
+                echo "  already queued #$pr (merge-queue entry $queued_entry) — skipping enqueue"
+                already_queued=$((already_queued + 1)); rm -f "$err"; continue
+              fi
               # Only call the mutation when we actually have a node id — an empty id would
               # just make a guaranteed-failing GraphQL request whose error we'd then ignore.
-              # A blank node_id (the gh pr view failed) falls through to the FAILED bucket.
+              # A blank node_id (the id query failed) falls through to the FAILED bucket.
               entry=""
               if [ -n "$node_id" ]; then
                 entry=$(gh api graphql \
@@ -215,9 +231,10 @@ jobs:
             [ "$DRY_RUN" = "true" ] && echo "> **DRY RUN** — no changes made." && echo ""
             echo "- candidates processed (open, non-draft, label-filtered if a label was given): $total"
             echo "- **enqueued (ready, via enqueuePullRequest): $enqueued**"
+            echo "- already queued (skipped — no-op this run): $already_queued"
             echo "- armed, pending readiness: $armed_pending"
             echo "- needs workflows-scoped token (touches .github/workflows/**): $needs_wf_token"
             echo "- failed: $failed"
           } >> "$GITHUB_STEP_SUMMARY"
 
-          echo "Done: enqueued=$enqueued armed_pending=$armed_pending needs_wf_token=$needs_wf_token failed=$failed (of $total)"
+          echo "Done: enqueued=$enqueued already_queued=$already_queued armed_pending=$armed_pending needs_wf_token=$needs_wf_token failed=$failed (of $total)"
