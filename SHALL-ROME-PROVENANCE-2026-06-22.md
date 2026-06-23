@@ -117,7 +117,9 @@ so this rests on search-result excerpts, not full-page reads. Unverified points 
 - **The EP is a *sample*, not the show.** *Caesar: The Musical* is a **new all-women adaptation of Shakespeare's
   *Julius Caesar***, **still being written**; the six-track 2026 Studio Cast EP is a curated taste of selected
   numbers. Yurchuk has said the material **"will change a LOT"** — so the lyrics, including the *Shall Rome*
-  exhibit in the witness, are **snapshots of a moving text**, not fixed canon.
+  exhibit in the witness, are **snapshots of a moving text**, not fixed canon. Per Logan (2026-06-23): she is
+  writing the show **in quasi-public**, and the released 6-track EP is **heavily implied to be a slice, not the
+  entire run of show.**
 - **The work is in flux — songs get cut, by the author's own account.** Yurchuk released the standalone single
   *"Caesar's Too Ambitious"* (~2025, pre-EP) and states in her own Instagram caption that it is a **"CUT SONG"**
   that **"won't be in the EP (or the show)"** (`[attested]`, 2026-06-23 — see "The finding"). Concrete, sourced
