@@ -84,9 +84,7 @@ DEFAULT_REVIEW_PENDING_LABEL = "review/pending"
 DEFAULT_AUTO_MERGE_LABEL = "merge/auto"
 DEFAULT_SUGGESTIONS_LABEL = "review/suggestions-ready"
 RISK_LOW_LABEL = "risk/low"
-RISK_MED_LABEL = "risk/med"
 RISK_HIGH_LABEL = "risk/high"
-RISK_NOPE_LABEL = "risk/nope"
 AUTO_MERGE_AUTHZ_FRAGMENTS = (
     "Pull request User is not authorized for this protected branch "
     "(enablePullRequestAutoMerge)",
@@ -139,19 +137,11 @@ LABEL_SPECS: dict[str, tuple[str, str]] = {
     ),
     RISK_LOW_LABEL: (
         "C2E0C6",
-        "Risk tier: low (filetype 'maze' — only low-risk corpus filetypes changed).",
-    ),
-    RISK_MED_LABEL: (
-        "FEF2C0",
-        "Risk tier: med (filetype 'maze' — code/executable filetypes changed).",
+        "Risk tier: low (only low-risk paths changed).",
     ),
     RISK_HIGH_LABEL: (
         "E99695",
-        "Risk tier: high (depth 'labyrinth' — the ! Nest, or a pinned dotfolder/governance surface).",
-    ),
-    RISK_NOPE_LABEL: (
-        "B60205",
-        "Risk tier: nope (the canon-core still-point; never auto-merges, ever).",
+        "Risk tier: high (at least one high-risk path changed).",
     ),
 }
 
@@ -1036,15 +1026,8 @@ def _parse_body_marker_value(body: str, marker: str) -> str | None:
 
 def _risk_tier_for_pr(body: str, labels: set[str]) -> str:
     # Label is canonical: survives body rewrites by human or agent editors.
-    # Four-valued precedence (nope > high > med > low), matching classify_paths'
-    # combine(): the riskiest label present governs. Only `low` ever flows to
-    # auto-merge; med/high are hand-merged; nope (the still-point) never merges.
-    if RISK_NOPE_LABEL in labels:
-        return "nope"
     if RISK_HIGH_LABEL in labels:
         return "high"
-    if RISK_MED_LABEL in labels:
-        return "med"
     if RISK_LOW_LABEL in labels:
         return "low"
     # Fallback for older PRs or states where risk is not yet labeled.
@@ -1097,16 +1080,9 @@ def evaluate_review_state(
     blocking_review = review_decision == "CHANGES_REQUESTED"
     risk_tier = _risk_tier_for_pr(pr.get("body") or "", label_names)
     low_risk = risk_tier == "low"
-    # The still-point (Esto Perpetua!): never auto-merges, ever. Carried as an
-    # explicit guard (defense-in-depth) even though `low_risk` already excludes it.
-    risk_nope = risk_tier == "nope"
     merge_blocked = draft or blocking_review or current_unresolved > 0
     eligible_for_auto_merge = (
-        AGENT_AUTO_MERGE_ENABLED
-        and low_risk
-        and not risk_nope
-        and grace_elapsed
-        and not merge_blocked
+        AGENT_AUTO_MERGE_ENABLED and low_risk and grace_elapsed and not merge_blocked
     )
     should_have_agent_review_pending = (
         AGENT_AUTO_MERGE_ENABLED
@@ -1122,8 +1098,6 @@ def evaluate_review_state(
         blocking_reasons.append("changes-requested")
     if current_unresolved > 0:
         blocking_reasons.append("current-review-threads")
-    if risk_nope:
-        blocking_reasons.append("still-point-nope")
 
     return {
         "number": pr.get("number"),
@@ -1131,7 +1105,6 @@ def evaluate_review_state(
         "labels": sorted(label_names),
         "risk_tier": risk_tier,
         "low_risk": low_risk,
-        "risk_nope": risk_nope,
         "draft": draft,
         "review_decision": review_decision,
         "blocking_review": blocking_review,
