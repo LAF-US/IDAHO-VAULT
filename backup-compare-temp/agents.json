@@ -1,0 +1,181 @@
+{
+  "source_of_truth": "swarm.json",
+  "status": "generated",
+  "generated_note": "Derived bootstrap index for !/agent.sh and the root compatibility wrapper. Do not hand-edit.",
+  "authority_chain": {
+    "narrative_registry": "!/AGENTS.md",
+    "machine_registry": "swarm.json",
+    "bootstrap_index": "!/agents.json",
+    "bootstrap_entrypoint": "!/agent.sh",
+    "compatibility_mirror": "agents.json",
+    "compatibility_wrapper": "agent.sh"
+  },
+  "control_plane": {
+    "coordination_hub_issue": "LAF-25",
+    "scoped_issue": "LAF-28",
+    "system_roles": {
+      "github": "execution_transport",
+      "linear": "active_coordination",
+      "slack": "breadcrumb_only",
+      "hugging_face": "research_sidecar_read_only"
+    }
+  },
+  "agents": {
+    "claude": {
+      "id": "claude-code",
+      "name": "Claude Code",
+      "vendor": "Anthropic",
+      "dotfolder": ".claude",
+      "capability_tier": "Direct Write",
+      "instructions_file": ".claude/CLAUDE.md",
+      "supports_local_bootstrap": true,
+      "git_identity": {
+        "name": "Claude Code (The Abhorsen)",
+        "email": "noreply@anthropic.com",
+        "suffix": "-C"
+      },
+      "context": {
+        "required": [
+          "!/README.md",
+          "!/CONSTITUTION.md",
+          "!/AGENTS.md",
+          "!/DECISIONS.md",
+          "!/VAULT-CONVENTIONS.md"
+        ],
+        "optional": [
+          "!/LEVELSET.md"
+        ]
+      }
+    },
+    "codex": {
+      "id": "codex-cli",
+      "name": "OpenAI Codex CLI",
+      "vendor": "OpenAI",
+      "dotfolder": ".codex",
+      "capability_tier": "Direct Write (scripting)",
+      "instructions_file": ".codex/CODEX.md",
+      "supports_local_bootstrap": true,
+      "git_identity": {
+        "name": "Codex (OpenAI)",
+        "email": "noreply@openai.com",
+        "suffix": "-X"
+      },
+      "context": {
+        "required": [
+          "!/README.md",
+          "!/CONSTITUTION.md",
+          "!/AGENTS.md",
+          "!/DECISIONS.md",
+          "!/VAULT-CONVENTIONS.md"
+        ],
+        "optional": [
+          "!/LEVELSET.md"
+        ]
+      }
+    },
+    "copilot": {
+      "id": "github-copilot",
+      "name": "GitHub Copilot",
+      "vendor": "Microsoft / GitHub",
+      "dotfolder": ".github",
+      "capability_tier": "Multi-Repo Admin",
+      "instructions_file": ".github/copilot-instructions.md",
+      "supports_local_bootstrap": true,
+      "git_identity": {
+        "name": "GitHub Copilot",
+        "email": "noreply@github.com",
+        "suffix": "-CP"
+      },
+      "context": {
+        "required": [
+          "!/README.md",
+          "!/CONSTITUTION.md",
+          "!/AGENTS.md",
+          "!/DECISIONS.md",
+          "!/VAULT-CONVENTIONS.md"
+        ],
+        "optional": [
+          "!/LEVELSET.md"
+        ]
+      }
+    },
+    "gemini": {
+      "id": "gemini-cli",
+      "name": "Gemini CLI",
+      "vendor": "Google",
+      "dotfolder": ".gemini",
+      "capability_tier": "Direct Write (Support)",
+      "instructions_file": ".gemini/GEMINI.md",
+      "supports_local_bootstrap": true,
+      "git_identity": {
+        "name": "Gemini (The Vault Advisor)",
+        "email": "noreply@google.com",
+        "suffix": "-G"
+      },
+      "context": {
+        "required": [
+          "!/README.md",
+          "!/CONSTITUTION.md",
+          "!/AGENTS.md",
+          "!/DECISIONS.md",
+          "!/VAULT-CONVENTIONS.md"
+        ],
+        "optional": [
+          "!/LEVELSET.md"
+        ]
+      }
+    },
+    "grok": {
+      "id": "grok",
+      "name": "Grok",
+      "vendor": "xAI",
+      "dotfolder": ".grok",
+      "capability_tier": "Read/Analysis",
+      "instructions_file": ".grok/GROK.md",
+      "supports_local_bootstrap": true,
+      "git_identity": {
+        "name": "Grok (xAI)",
+        "email": "noreply@x.ai",
+        "suffix": "-XR"
+      },
+      "context": {
+        "required": [
+          "!/README.md",
+          "!/CONSTITUTION.md",
+          "!/AGENTS.md",
+          "!/DECISIONS.md",
+          "!/VAULT-CONVENTIONS.md"
+        ],
+        "optional": [
+          "!/LEVELSET.md"
+        ]
+      }
+    },
+    "perplexity": {
+      "id": "perplexity",
+      "name": "Perplexity",
+      "vendor": "Perplexity AI",
+      "dotfolder": ".perplexity",
+      "capability_tier": "Read/Analysis",
+      "instructions_file": ".perplexity/PERPLEXITY.md",
+      "supports_local_bootstrap": true,
+      "git_identity": {
+        "name": "Perplexity",
+        "email": "noreply@perplexity.ai",
+        "suffix": "-P"
+      },
+      "context": {
+        "required": [
+          "!/README.md",
+          "!/CONSTITUTION.md",
+          "!/AGENTS.md",
+          "!/DECISIONS.md",
+          "!/VAULT-CONVENTIONS.md"
+        ],
+        "optional": [
+          "!/LEVELSET.md"
+        ]
+      }
+    }
+  }
+}
