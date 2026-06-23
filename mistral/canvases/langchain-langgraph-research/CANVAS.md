@@ -2,6 +2,9 @@
 name: "langchain-langgraph-research"
 title: "LangChain & LangGraph Research Report 2026"
 type: "text/markdown"
+updated: 2026-06-23
+status: active
+authority: research
 ---
 
 # LangChain & LangGraph: Comprehensive Research Report 2026
@@ -102,7 +105,7 @@ result = chain.invoke({"topic": "programming"})
 
 **LangSmith**: Framework-agnostic observability platform for tracing, debugging, and evaluating agents
 
-**Deep Agents**: Batteries-included agent with automatic context compression, virtual filesystem, and subagent-spawning
+**Deep Agents**: Batteries-included agents with automatic context compression, virtual filesystem, and subagent-spawning
 
 #### 1.4 Adoption & Metrics (2026)
 
@@ -378,7 +381,7 @@ Based on AIMultiple 2026 benchmark:
 #### 6.1 LangChain Ecosystem
 
 - **LangSmith**: Observability platform (tracing, debugging, evaluation)
-- **Deep Agents**: Batteries-included agent with advanced features
+- **Deep Agents**: Batteries-included agents with advanced features
 - **LangServe**: Deploy LangChain apps as REST APIs
 - **LangChain Templates**: Pre-built reference architectures
 
@@ -561,4 +564,4 @@ Phase 3: Production (Ongoing)
 
 ---
 
-*Report compiled by Vibe on June 22, 2026. For updates, check the official documentation links above.*
+*Report compiled by Vibe on June 22-23, 2026. For updates, check the official documentation links above.*
