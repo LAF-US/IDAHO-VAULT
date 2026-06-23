@@ -179,8 +179,13 @@ jobs:
               pr_info=$(gh api graphql \
                 -f query='query($owner:String!,$name:String!,$number:Int!){repository(owner:$owner,name:$name){pullRequest(number:$number){id mergeQueueEntry{id}}}}' \
                 -f owner="$owner" -f name="$name" -F number="$pr" 2>"$err" || true)
-              node_id=$(printf '%s' "$pr_info" | jq -r '.data.repository.pullRequest.id // empty')
-              queued_entry=$(printf '%s' "$pr_info" | jq -r '.data.repository.pullRequest.mergeQueueEntry.id // empty')
+              # Guard the jq parses with `|| true`: Actions' default bash runs with `-eo
+              # pipefail`, so an unguarded `var=$(… | jq …)` would ABORT the whole step (no
+              # `failed` increment, no summary) if pr_info is non-JSON — e.g. a 5xx HTML body
+              # or proxy error landed on stdout. On a parse failure node_id stays empty and the
+              # PR falls into the FAILED bucket as intended. jq stderr is appended to $err.
+              node_id=$(printf '%s' "$pr_info" | jq -r '.data.repository.pullRequest.id // empty' 2>>"$err" || true)
+              queued_entry=$(printf '%s' "$pr_info" | jq -r '.data.repository.pullRequest.mergeQueueEntry.id // empty' 2>>"$err" || true)
               if [ -n "$queued_entry" ]; then
                 echo "  already queued #$pr (merge-queue entry $queued_entry) — skipping enqueue"
                 already_queued=$((already_queued + 1)); rm -f "$err"; continue
