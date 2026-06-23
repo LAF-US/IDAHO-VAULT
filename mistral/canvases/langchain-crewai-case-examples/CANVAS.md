@@ -2,6 +2,9 @@
 name: "langchain-crewai-case-examples"
 title: "LangChain & CrewAI Cross-Deployment Case Examples 2026"
 type: "text/markdown"
+updated: 2026-06-23
+status: active
+authority: research
 ---
 
 # LangChain & CrewAI Cross-Deployment Case Examples 2026
