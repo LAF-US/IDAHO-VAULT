@@ -57,13 +57,25 @@ way.
 Either outcome is a real live-config datapoint, not a snapshot inference. After the read, the
 rule is flipped back off and this branch is kept (if merged) or discarded (if blocked).
 
+### The rule being toggled
+
+The target is the repository ruleset **"Main Ruleset"** (id `16864823`), the `required_signatures`
+rule — GitHub → repo **Settings → Rules → Rulesets**, or the `rulesets/16864823` API endpoint.
+Per the **2026-05-27 snapshot** (`main_ruleset.json`) that ruleset carried **no bypass**
+(`bypass_actors: []`, `current_user_can_bypass: never`). That is a *snapshot* value, not an
+observed-live one — **confirm the live bypass settings in the UI/API before enabling**, because a
+no-bypass rule left on silently blocks **unrelated** merges across the repo until it is reverted.
+
 ### Rollback (abort path)
 
 If the probe **stalls, is abandoned, or fails for any reason**, flip `required_signatures` back
-**off immediately** — before retrying or discarding the branch. The live ruleset carries no
-bypass (`bypass_actors: []`, `current_user_can_bypass: never`), so a rule left on can silently
-block **unrelated** merges across the whole repo until it is reverted. Reverting the rule is the
-only abort switch; nothing else overrides it.
+**off immediately** — before retrying or discarding the branch. Reverting the rule is the only
+abort switch; nothing else overrides it. Then verify the revert actually took, live:
+
+- [ ] `required_signatures` removed/disabled on **"Main Ruleset"** via the live UI/API (not read
+      back from the committed snapshot).
+- [ ] a normal **unsigned** agent PR can merge again — the gate is genuinely gone, not just
+      edited in a file.
 
 ---
 
