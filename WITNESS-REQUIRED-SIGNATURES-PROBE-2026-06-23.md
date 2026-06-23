@@ -32,7 +32,10 @@ snapshot or from commit history without a live flip:
 > reject the unsigned author history?**
 
 Every historical agent commit on `main` is `%G? = N` (unsigned); the merge-queue merge commits
-are GitHub-signed (`E` — present, unverifiable locally for want of an `allowedSignersFile`).
+are GitHub-signed (`E` — *present but unverifiable in this clone*, which has no
+`gpg.ssh.allowedSignersFile` set, the Git config key SSH signature verification requires). These
+readings come from `git log --first-parent origin/main --format='%h %G? %an | %s'`; without that
+config key, verification of an otherwise-valid signature errors to `E` rather than `G`.
 That ambiguity is unresolvable by reading alone, because the merge queue signs the tip either
 way.
 
@@ -65,6 +68,12 @@ Per the **2026-05-27 snapshot** (`main_ruleset.json`) that ruleset carried **no 
 (`bypass_actors: []`, `current_user_can_bypass: never`). That is a *snapshot* value, not an
 observed-live one — **confirm the live bypass settings in the UI/API before enabling**, because a
 no-bypass rule left on silently blocks **unrelated** merges across the repo until it is reverted.
+
+**Precondition — a guaranteed way back in.** Do not enable a no-bypass signing rule without first
+confirming a recovery path that survives the rule freezing *every* merge: an admin/owner who can
+disable the rule directly in **Settings → Rules** (ruleset edits are not themselves gated by the
+merge rules they configure), and — at Logan's governance discretion — optionally a pre-configured
+bypass actor. The point of the probe is not to test whether the repo can be locked with no key.
 
 ### Rollback (abort path)
 
