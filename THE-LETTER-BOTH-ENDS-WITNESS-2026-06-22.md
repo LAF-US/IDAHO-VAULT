@@ -68,7 +68,10 @@ Shakespeare left to inference is staged: the flattery shaped for Brutus (*"in yo
 the self-interest under the civic hymn (*"As long as he lives, I'll never be free"*). The "&c." that
 Brutus silently pieced out, the faction here **sings out loud** — we watch them decide what blank to
 leave, and how to make it irresistible to fill. (The companion track is literally titled *"Caesar's Too
-Ambitious"* — the charge, printed as the authors' own.)
+Ambitious"* — the charge, printed as the authors' own.) **[Corrected 2026-06-23, at Logan's direction — the preceding parenthetical is superseded:** that track,
+*"Caesar's Too Ambitious,"* is a **cut song — not in the EP or the show** (Yurchuk's own caption; see
+`SHALL-ROME-PROVENANCE`), and is written from **Caesar's** perspective, not the conspirators' "charge." It is
+**not** part of the work. Original line kept, not erased.**]**
 
 ## The two ends together `[reading]`
 
@@ -125,10 +128,11 @@ into finishing it.* `*`
 ## Document Metadata
 
 - **Created:** 2026-06-22
-- **Last Updated:** 2026-06-22
+- **Last Updated:** 2026-06-23
 - **Status:** proposed (companion panel to the Shall Rome witness; awaiting Logan's gate)
 - **Authority:** LOGAN (recorded; authored by `*.claude.*`, not Logan's voice)
 - **Author:** `*.claude.*` (Claude Code, branch `claude/shall-rome-lyrics-ok9049`)
+- **Change Note:** 2026-06-23 (Logan's direction) — corrected the *Caesar's Too Ambitious* parenthetical in "The writing end": that track is a **cut song** (not in the EP or show; Yurchuk's own caption, see `SHALL-ROME-PROVENANCE`), written from Caesar's perspective, not the conspirators' "charge." Original kept and superseded by a dated inline note; the reading otherwise stands as filed. Held without over-reading, per Logan.
 - **Scope:** the planted letter shown from both ends — Brutus reading (Shakespeare) and the faction writing (Yurchuk); the "&c." as the gap that is the instrument
 
 ###### [["The world is quiet here."]]
