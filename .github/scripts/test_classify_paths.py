@@ -79,6 +79,17 @@ class ClassifyFileTest(unittest.TestCase):
         self.assertEqual(cp.classify_file(".github/workflows/probe-smoke.yml"), ("low", None))
 
 
+class RiskiestTest(unittest.TestCase):
+    def test_riskiest_picks_by_precedence(self):
+        # The single ordering primitive: riskiest (earliest in TIER_PRECEDENCE) wins;
+        # None flags are ignored; all-None -> None (the —/— clear case).
+        self.assertEqual(cp.riskiest("low", "med"), "med")
+        self.assertEqual(cp.riskiest(None, "high"), "high")
+        self.assertEqual(cp.riskiest("low", None), "low")
+        self.assertEqual(cp.riskiest("med", "nope"), "nope")
+        self.assertIsNone(cp.riskiest(None, None))
+
+
 class CombineTest(unittest.TestCase):
     def test_ordering_nope_high_med_low_clear(self):
         self.assertEqual(cp.combine("low", "nope"), "nope")

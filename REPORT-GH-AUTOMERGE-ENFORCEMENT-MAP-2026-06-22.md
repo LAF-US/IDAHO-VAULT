@@ -1,6 +1,7 @@
 ---
 title: "Auto-merge Enforcement Map — the live wiring and its tangle"
 date: 2026-06-22
+updated: 2026-06-22
 authority: LOGAN
 author: "Claude Code (software NAME; no delegated office) — enforcement map traced from the live .github/ surfaces 2026-06-22; authority field is recorded, not a claim Logan authored these lines (CONSTITUTION § I)"
 doc_class: report
@@ -83,7 +84,7 @@ by **three separate mechanisms that must agree but can drift**, and the real mer
 > and can drift independently.
 
 > **K2 — the classifier already knows what the path lists re-check.** `classify_paths` pins
-> `.github/`, governance files, and dotfolders to **`depth=high`** — the *same* surfaces lists (b)/(c)
+> `.github/`, governance files, and dotfolders to **`depth=high`** — the *same* surfaces that lists (b)/(c)
 > protect. The consumer **ignores** that and re-vetoes by glob. The depth axis *should* be the single
 > source of truth; today it is shadowed by two hand-maintained lists.
 
