@@ -93,6 +93,10 @@ import sys
 TIER_PRECEDENCE = ("nope", "high", "med", "low", "clear")
 CLEAR_TIER = "clear"                    # the `—/—` cell — no flag on either axis
 SAFE_TIERS = ("clear", "low")           # fold to binary `low`; everything riskier -> binary `high`
+# Enforce the single source at import (fail loud, not silent drift): SAFE_TIERS and
+# CLEAR_TIER must be members of the one ordering, so adding/reordering tiers can't desync them.
+assert CLEAR_TIER in TIER_PRECEDENCE, "CLEAR_TIER must be in TIER_PRECEDENCE"
+assert set(SAFE_TIERS) <= set(TIER_PRECEDENCE), "SAFE_TIERS must be a subset of TIER_PRECEDENCE"
 
 # Nest / still-point markers (NETWEB: '-' aliases '/' in flattened root filenames).
 NEST_PREFIX = "!"
