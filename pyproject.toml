@@ -45,7 +45,7 @@ target-version = "py310"
 
 [dependency-groups]
 dev = [
-    "pytest>=9.0.3",
-    "ruff>=0.15.12",
+    "pytest>=9.0.3,<10",
+    "ruff>=0.15.12,<1",
     "jupytext>=1.16,<2",
 ]
