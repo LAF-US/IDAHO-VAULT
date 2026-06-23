@@ -36,7 +36,7 @@ contract: `agent-auto-pr.yml` stamps `--label risk/$tier` and `ensure-labels` on
 result lives in the `tier4` field. NOTE (this step): `clear` collapses to binary `low`, so
 introducing the `—` state changes NO binary-label behavior the live producer/consumer use
 today — the new `—/—` distinction rides only in `tier4`/`filetype` for the consumer-wiring
-step to come (see WITNESS-THE-KEYS-ARE-THE-LEVERS-2026-06-22 and #626).
+step to come (see WITNESS-THE-KEYS-ARE-THE-LEVERS-2026-06-21.md and #626).
   {
     "tier": "low"|"high",                         # BINARY legacy label (risk/<tier>); clear+low -> low
     "tier4": "clear"|"low"|"med"|"high"|"nope",   # the result (nope>high>med>low>clear)
