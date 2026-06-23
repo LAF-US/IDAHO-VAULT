@@ -1,9 +1,11 @@
 """Classify changed file paths into the two-paired-flag risk scheme.
 
-NEXT AGENT / ORIENTATION: read `RISK-LAYER-HANDOFF-2026-06-23.md` (repo root) FIRST — it
-states what is decided, what is HELD for Logan, and the traps. In short for this file: the
-binary `tier` (low|high) is the ONLY field any live consumer reads (`agent-auto-pr.yml`);
-`tier4`/`filetype`/the `clear` value are intentionally inert until the consumer rework (#626).
+NEXT AGENT — the one fact that prevents breakage: the binary `tier` (low|high) is the ONLY
+field any live consumer reads (`agent-auto-pr.yml` reads `['tier']`). `tier4`, `filetype`, and
+the `clear` value are intentionally inert — nothing reads them yet. Do NOT wire a `tier4`
+consumer that hardcodes `{low,med,high,nope}`; it will choke on `clear`. The two-sorter MODEL is
+settled; the routing MECHANISM (lanes, flag lifecycle, grid-cell routes) is HELD for Logan — see
+issue #626 + `WITNESS-THE-KEYS-ARE-THE-LEVERS-2026-06-21.md`. The grid is a model, not code.
 
 Conceptualized in the planning session of 2026-06-21 and witnessed in
 `WITNESS-THE-KEYS-ARE-THE-LEVERS-2026-06-21.md`; this is its first implementation,
