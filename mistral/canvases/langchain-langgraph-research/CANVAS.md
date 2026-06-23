@@ -4,7 +4,7 @@ title: "LangChain & LangGraph Research Report 2026"
 type: "text/markdown"
 updated: 2026-06-23
 status: active
-authority: research
+authority: LOGAN
 ---
 
 # LangChain & LangGraph: Comprehensive Research Report 2026
@@ -565,3 +565,14 @@ Phase 3: Production (Ongoing)
 ---
 
 *Report compiled by Vibe on June 22-23, 2026. For updates, check the official documentation links above.*
+
+
+---
+
+## DOCUMENT METADATA
+
+| Field | Value |
+|-------|-------|
+| Updated | 2026-06-23 |
+| Status | active |
+| Authority | LOGAN |
