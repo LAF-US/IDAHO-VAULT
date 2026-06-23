@@ -1,5 +1,10 @@
 """Classify changed file paths into the two-paired-flag risk scheme.
 
+NEXT AGENT / ORIENTATION: read `RISK-LAYER-HANDOFF-2026-06-23.md` (repo root) FIRST — it
+states what is decided, what is HELD for Logan, and the traps. In short for this file: the
+binary `tier` (low|high) is the ONLY field any live consumer reads (`agent-auto-pr.yml`);
+`tier4`/`filetype`/the `clear` value are intentionally inert until the consumer rework (#626).
+
 Conceptualized in the planning session of 2026-06-21 and witnessed in
 `WITNESS-THE-KEYS-ARE-THE-LEVERS-2026-06-21.md`; this is its first implementation,
 replacing the prior binary (high|low, fail-safe-to-high) classifier.
