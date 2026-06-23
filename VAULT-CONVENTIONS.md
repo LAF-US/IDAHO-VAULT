@@ -768,6 +768,15 @@ mcp_action_log:
 
 When uncertain about sourcing category, **ask Logan**.
 
+### Secrets and PII
+
+- **Secrets are mechanically gated** — both pre-commit (`.githooks/pre-commit`) and as a blocking CI check (`secret-pattern-policy.yml` on `pull_request`, push to `main`, and `merge_group`; plus `secret-pattern-full-scan.yml`, which sweeps all *tracked* files via `git ls-files` on a weekly schedule / manual dispatch), via `.github/scripts/check_secret_patterns.py`. It flags secret **file paths** (`.env`, `*.pem`/`*.key`, `*-key.json`, credentials/tokens, ssh keys, `.npmrc`/`.netrc`, …) and secret **content** (GitHub/OpenAI/Anthropic/Slack/Google tokens, `-----BEGIN … PRIVATE KEY-----`, generic `api_key|secret|token|password = …`), without printing the matched value. Never commit credentials — use 1Password (see § *Secret Management via 1Password*).
+- **PII is a judgment call, and the standard is documented** in [[HYGIENE-CHECKS-WITNESS-2026-06-04]] — *"a living person is not a body on the table."*
+  - Collect no more personal data on a real person than the task needs; never let a *cited* person become a *dossier*.
+  - When in doubt, collect **less**, and default to `*`.
+  - There is **no** mechanical PII scanner (secrets ≠ PII). The boundary is held **outside the author who states it** — by the reviewer and the `*` discipline, not by the writer's own good intentions.
+- **Load-bearing provenance is kept deliberately.** Host-identifying strings that are themselves *evidence* (e.g. the Windows-path-on-macOS anomaly preserved in `.mistral/BOUND-BOOK-*/`) are retained on the record **by judgment, not oversight** — a decision under the on-the-record doctrine, not a PII leak.
+
 
 
 ---
@@ -862,6 +871,38 @@ When both devices edit the same config file between syncs, Obsidian creates a `(
 - Check in before anything irreversible
 
 - The legislature scraper workflow commits directly to main for automated bill updates
+
+### Merge queue vs. auto-merge: arm (request) → enqueue → merge
+
+`main` is protected by the Main Ruleset's **merge queue**, so direct API merge is refused (`405 … Changes must be made through the merge queue`). Two **distinct GitHub subsystems** are involved — do not conflate them:
+
+- **Auto-merge** is a *pull-request-level* feature (the "Merge when ready" toggle / `enablePullRequestAutoMerge`). On a merge-queue branch it does **not** merge the PR itself — enabling it only **requests the PR's admission to the queue** once the PR is ready.
+- **The merge queue** is a *branch-level* mechanism (the `merge_queue` rule). It admits ready PRs, builds each in a **`merge_group`** on top of `main`, runs the queue's checks, and merges under `grouping_strategy: ALLGREEN`.
+
+Landing a PR is a **sequence of triggers that must trip in order — and arming is only the first, and it happens automatically.** `auto-merge-engage.yml` enables "merge when ready" on PR *open*, so a PR is **armed the moment it exists**; an agent never needs to arm one, and **being armed does not mean it will merge.** The ordered triggers:
+
+1. **Arm** — automatic on open (`auto-merge-engage.yml`). Free. ⚠️ **This is where agents wrongly believe their duty ends.** It does not.
+2. **Satisfy entry gates** — latest commit's Copilot review complete, all review threads resolved, commits signed (see below).
+3. **Enqueue** — the trigger agents miss: admission fires only on the *transition into ready*, and a PR armed while still blocked does **not** auto-enqueue when it later goes green; the transition must be **re-fired** (the toggle recipe below).
+4. **Merge** — the `merge_group` build goes green under ALLGREEN and the queue merges.
+
+**You are responsible until the PR is MERGED, not until it is armed.** Arming is automatic and free; the work — and the duty — is steps 2–4.
+
+**Two different gates — entry vs. merge:**
+
+- **Queue *entry*** is gated by **PR-level** rules: the latest commit's Copilot review complete (`copilot_code_review`, `review_on_push`), all review threads resolved (`required_review_thread_resolution`), and commits **signed** (`required_signatures`; the harness signs via `commit.gpgsign`). There is **no `required_status_checks` rule**, so an ordinary failing check does not block *entry*.
+- **Queue *merge*** is gated by the checks that run on the **`merge_group`** event (CodeQL `code_scanning`, `code_quality`, the path/secret guards) under **ALLGREEN**. Non-required checks (e.g. `smoke (windows-latest)`) gate **neither** — a red there shows as REST `unstable` but still enters and still merges.
+
+**Two different status fields — do not conflate them:**
+
+- **`mergeable_state`** — the **REST** field (what `pull_request_read get` / the GitHub MCP returns). Lowercase: `clean`, `blocked`, `unstable`, `behind`, `dirty`, `draft`, `unknown`. It does **not** reveal queue *position*.
+- **`mergeStateStatus`** — the **GraphQL** field (what `batch-arm-merge-queue.yml` and `review_feedback_loop.py` key on). Uppercase: `CLEAN`, `BLOCKED`, … Queue *membership* is the separate GraphQL `mergeQueueEntry { id }`.
+
+**Arming ≠ enqueued.** Enabling auto-merge when it is *already* armed is an idempotent no-op; admission fires only on the **transition into ready**. A fresh push restarts the per-push Copilot review (and can regenerate threads), dropping the PR back to `blocked` / `BLOCKED` and resetting eligibility.
+
+- **Recipe — armed-but-not-enqueued:** when the PR reads `mergeable_state: clean` / `mergeStateStatus: CLEAN` with threads resolved but it still isn't in the queue, toggle auto-merge **OFF then ON** — `gh pr merge <pr> --disable-auto` then `gh pr merge <pr> --auto --merge` (GitHub MCP equivalents: `disable_pr_auto_merge` → `enable_pr_auto_merge`) — to re-fire the ready-transition and re-request admission. This is exactly the per-PR loop in `batch-arm-merge-queue.yml`. (Confirmed: #602/#604, then #606/#610/#611.)
+- **Anti-pattern:** do not keep pushing into a per-push-review + queue system — each push restarts eligibility. Let reviews settle, resolve threads **once**, then stop touching the branch and toggle. Force-pushing makes it worse.
+- **No automatic enqueue on a schedule:** arming is event-driven on PR activity (`auto-merge-engage.yml`, `auto-merge-rhythm.yml` — `pull_request_target` + polling); the bulk enqueue sweep `batch-arm-merge-queue.yml` is **`workflow_dispatch` only (manual)**. A ready PR can therefore sit armed-but-not-enqueued until that sweep is dispatched or the toggle is applied by hand. Confirm queue membership via the PR timeline ("Added to merge queue") or `mergeQueueEntry`, never `mergeable_state` alone.
 
 
 
