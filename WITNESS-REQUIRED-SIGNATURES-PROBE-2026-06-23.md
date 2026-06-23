@@ -88,6 +88,35 @@ abort switch; nothing else overrides it. Then verify the revert actually took, l
 
 ---
 
+## Result — observed 2026-06-23
+
+Run on unsigned head `f26bbea7` (`%G? = N`), with all 26 status checks green, all review threads
+resolved, and the PR ready (not draft). A clean A/B on the single variable:
+
+| `required_signatures` (live) | `mergeable_state` |
+| --- | --- |
+| **on** | **`blocked`** |
+| **off** | **`clean`** |
+
+Nothing else changed between the two reads — same commit, same green checks, same resolved
+threads — so the rule is the **sole** blocker, confirmed by the toggle itself (not only by
+elimination).
+
+**Verdict: the merge queue's GitHub-signed tip does *not* rescue an unsigned-author PR.**
+`required_signatures` gates the PR out of mergeability while its feature commits are unsigned; it
+never reaches the point where the `MERGE`-method queue would mint a signed merge commit. The
+"merge-signature satisfies it passively" hypothesis is **falsified**.
+
+**Implication:** signed-`main` is **incompatible with the current unsigned-author agent
+workflow**. Enabling `required_signatures` org-wide would freeze every agent PR until author
+signing (the **#398 / #399** cluster) lands — the rule and that roadmap are **not** decoupled;
+author signing is a **prerequisite**, not optional.
+
+Rule reverted to **off** after the read (Logan, 2026-06-23). The branch is **kept** — this note
+is the record.
+
+---
+
 ## DOCUMENT METADATA
 
 - **Created:** 2026-06-23
@@ -100,4 +129,9 @@ abort switch; nothing else overrides it. Then verify the revert actually took, l
   draft so the merge cannot fire under the rule-off state. Records the open question (does the
   merge queue's GitHub merge-signature satisfy `required_signatures` while feature commits stay
   unsigned?) and the pass/block reading. Companion to the live-vs-snapshot finding that
-  `main_ruleset.json` is a 2026-05-27 export, not live enforcement.
+  `main_ruleset.json` is a 2026-05-27 export, not live enforcement. **Result recorded
+  2026-06-23:** with the rule live-**on**, the unsigned PR (`f26bbea7`) was `blocked`; with it
+  **off**, `clean` — a clean A/B isolating `required_signatures` as the sole blocker. Verdict:
+  the merge-queue's GitHub-signed tip does **not** rescue an unsigned-author PR, so signed-`main`
+  is incompatible with the unsigned-author agent workflow until author signing (#398 / #399)
+  lands. Rule reverted off; this note merged as the record.
