@@ -433,64 +433,85 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertFalse(enabled)
         self.assertIn("not authorized to enable auto-merge", arm_error)
 
-    def test_arm_auto_merge_plain_enable_when_off(self) -> None:
-        # Auto-merge not yet enabled → a single fresh `--auto`, no disable toggle.
+    def test_arm_auto_merge_plain_enable_then_enqueue_when_off(self) -> None:
+        # Auto-merge off → enable (`--auto`) AND THEN add it to the merge queue (enqueue).
+        # Both halves: arming alone never queued it (the bug); enqueue is the missing half.
         with mock.patch.object(
             review_feedback_loop, "_auto_merge_state", return_value=(False, False)
         ), mock.patch.object(
-            review_feedback_loop, "_disable_auto_merge"
-        ) as disable, mock.patch.object(review_feedback_loop, "_run") as run:
+            review_feedback_loop, "_pr_node_id", return_value="PR_node1"
+        ), mock.patch.object(
+            review_feedback_loop, "_enqueue_pr", return_value=(True, None)
+        ) as enqueue, mock.patch.object(review_feedback_loop, "_run") as run:
             enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 10)
         self.assertTrue(enabled)
         self.assertIsNone(arm_error)
-        disable.assert_not_called()
         run.assert_called_once_with(
             ["gh", "pr", "merge", "10", "--squash", "--delete-branch", "--auto"]
         )
+        enqueue.assert_called_once_with("PR_node1")
 
-    def test_arm_auto_merge_toggles_when_armed_but_not_queued(self) -> None:
-        # The #508 case: auto-merge enabled but never enqueued. A plain `--auto`
-        # would be an idempotent no-op, so disable->re-enable to re-fire the
-        # ready-transition that puts the PR in the queue.
+    def test_arm_auto_merge_enqueues_when_armed_but_not_queued(self) -> None:
+        # The #508 case: auto-merge already on but the PR was never put in the queue.
+        # Re-arming is an idempotent no-op — the actual fix is to call enqueue, not re-toggle.
         with mock.patch.object(
             review_feedback_loop, "_auto_merge_state", return_value=(True, False)
         ), mock.patch.object(
-            review_feedback_loop, "_disable_auto_merge"
-        ) as disable, mock.patch.object(review_feedback_loop, "_run") as run:
+            review_feedback_loop, "_pr_node_id", return_value="PR_node2"
+        ), mock.patch.object(
+            review_feedback_loop, "_enqueue_pr", return_value=(True, None)
+        ) as enqueue, mock.patch.object(review_feedback_loop, "_run") as run:
             enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 11)
         self.assertTrue(enabled)
         self.assertIsNone(arm_error)
-        disable.assert_called_once_with(11, check=True)
-        run.assert_called_once_with(
-            ["gh", "pr", "merge", "11", "--squash", "--delete-branch", "--auto"]
-        )
+        run.assert_not_called()  # already armed — no redundant enable
+        enqueue.assert_called_once_with("PR_node2")
 
     def test_arm_auto_merge_leaves_queued_pr_untouched(self) -> None:
-        # Already in the merge queue → do nothing; disabling would evict it and
-        # restart its queue run.
+        # Already in the merge queue → do nothing; re-enqueuing/re-arming would disturb it.
         with mock.patch.object(
             review_feedback_loop, "_auto_merge_state", return_value=(True, True)
         ), mock.patch.object(
-            review_feedback_loop, "_disable_auto_merge"
-        ) as disable, mock.patch.object(review_feedback_loop, "_run") as run:
+            review_feedback_loop, "_enqueue_pr"
+        ) as enqueue, mock.patch.object(review_feedback_loop, "_run") as run:
             enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 12)
         self.assertTrue(enabled)
         self.assertIsNone(arm_error)
-        disable.assert_not_called()
         run.assert_not_called()
+        enqueue.assert_not_called()
 
-    def test_arm_auto_merge_reports_failure_when_disable_leg_fails(self) -> None:
-        # Armed-but-not-queued, but the disable leg of the toggle fails: do NOT
-        # run the (now no-op) --auto and falsely claim success — surface the error.
+    def test_arm_auto_merge_enqueue_not_ready_is_non_fatal(self) -> None:
+        # Enqueue is best-effort: a not-yet-ready PR can't be queued now, but it stays armed
+        # (auto-merge enqueues it when green), so this is success — armed True, no error.
         with mock.patch.object(
-            review_feedback_loop, "_auto_merge_state", return_value=(True, False)
+            review_feedback_loop, "_auto_merge_state", return_value=(False, False)
         ), mock.patch.object(
-            review_feedback_loop, "_disable_auto_merge", side_effect=RuntimeError("nope")
-        ), mock.patch.object(review_feedback_loop, "_run") as run:
+            review_feedback_loop, "_pr_node_id", return_value="PR_node3"
+        ), mock.patch.object(
+            review_feedback_loop, "_enqueue_pr", return_value=(False, "PR not queue-ready yet")
+        ), mock.patch.object(review_feedback_loop, "_run"):
             enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 13)
-        self.assertFalse(enabled)
-        self.assertIn("failed to disable", arm_error)
-        run.assert_not_called()
+        self.assertTrue(enabled)
+        self.assertIsNone(arm_error)
+
+    def test_enqueue_pr_returns_entry_or_not_ready(self) -> None:
+        # The enqueue primitive: a returned mergeQueueEntry id == enqueued; absence == not-ready.
+        with mock.patch.object(
+            review_feedback_loop,
+            "_graphql",
+            return_value={"enqueuePullRequest": {"mergeQueueEntry": {"id": "MQE_1"}}},
+        ):
+            ok, err = review_feedback_loop._enqueue_pr("PR_node")
+        self.assertTrue(ok)
+        self.assertIsNone(err)
+        with mock.patch.object(
+            review_feedback_loop,
+            "_graphql",
+            return_value={"enqueuePullRequest": {"mergeQueueEntry": None}},
+        ):
+            ok, err = review_feedback_loop._enqueue_pr("PR_node")
+        self.assertFalse(ok)
+        self.assertIsNotNone(err)
 
     # ----- protected-path guard + guarded arm (#521/#527 reversal, 2026-06-17) -----
 
