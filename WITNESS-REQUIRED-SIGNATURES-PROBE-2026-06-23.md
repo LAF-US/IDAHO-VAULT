@@ -107,10 +107,13 @@ elimination).
 never reaches the point where the `MERGE`-method queue would mint a signed merge commit. The
 "merge-signature satisfies it passively" hypothesis is **falsified**.
 
-**Implication:** signed-`main` is **incompatible with the current unsigned-author agent
-workflow**. Enabling `required_signatures` org-wide would freeze every agent PR until author
-signing (the **#398 / #399** cluster) lands — the rule and that roadmap are **not** decoupled;
-author signing is a **prerequisite**, not optional.
+**Implication (this repository).** Signed-`main` is **incompatible with the current
+unsigned-author agent workflow** *here*. Enabling `required_signatures` on **this repo** would
+block every unsigned agent PR until author signing (the **#398 / #399** cluster) lands — the rule
+and that roadmap are **not** decoupled; author signing is a **prerequisite**, not optional.
+**Scope caveat:** this is a single-repository result. Other LAF-US repos may carry different
+rulesets, branch protections, and workflows, and would each need their own check before this
+conclusion is generalized.
 
 Rule reverted to **off** after the read (Logan, 2026-06-23). The branch is **kept** — this note
 is the record.
