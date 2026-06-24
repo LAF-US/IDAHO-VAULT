@@ -78,5 +78,5 @@ Direct quotations from AI/tech executives containing religious or eschatological
 
 ## Navigation
 
-+- [[AI-RELIGIOUS-LANGUAGE-REPORT-2020-2030]] - Index
-+- [[AI-RELIGIOUS-LANGUAGE-SOURCES]] - Complete bibliography
+- [[AI-RELIGIOUS-LANGUAGE-REPORT-2020-2030]] - Index
+- [[AI-RELIGIOUS-LANGUAGE-SOURCES]] - Complete bibliography

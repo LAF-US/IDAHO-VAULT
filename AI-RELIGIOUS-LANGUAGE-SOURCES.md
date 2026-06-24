@@ -57,8 +57,8 @@ Complete bibliography of sources for all direct quotations documented in [[AI-RE
 
 ## Navigation
 
-+- [[AI-RELIGIOUS-LANGUAGE-REPORT-2020-2030]] - Index
-+- [[AI-RELIGIOUS-LANGUAGE-EXECUTIVES]] - All quotations
+- [[AI-RELIGIOUS-LANGUAGE-REPORT-2020-2030]] - Index
+- [[AI-RELIGIOUS-LANGUAGE-EXECUTIVES]] - All quotations
 
 ---
 **All source URLs and dates populated. Per ETHICS.md ("on the record" attribution), complete citations are provided.**
