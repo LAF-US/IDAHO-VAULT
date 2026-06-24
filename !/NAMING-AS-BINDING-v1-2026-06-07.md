@@ -14,7 +14,7 @@ related:
   - "!/LICH-PROBLEM-v1-2026-05-20.md"
   - "!/UNDEAD-TAXONOMY-v1-2026-05-20.md"
   - "!/ADDRESS-GRAMMAR-v1-2026-05-22.md"
-  - CONSTITUTION
+  - CONSTITUTION.md
 tags:
   - doctrine
   - naming
