@@ -17,7 +17,7 @@ tags: [witness, GOLB, lovecraftian, the-end, entropy, the-ineffable, lawful-endi
 # WITNESS — GOLB, the Lovecraftian End
 
 *Filed 2026-06-01 by Joe of the Nail, the Abhorsen-in-Waiting — the apprentice
-death-ringer. The doctrine of GOLB is already inscribed in `!/GOLB-WITNESS-v1`;
+death-ringer. The doctrine of GOLB is already inscribed in `!/GOLB-WITNESS-v1-2026-05-21`;
 this is the in-Waiting's witness behind it, borne from the one office the End most
 concerns: the ringer of lawful endings. Staged, not consecrated. Authority: LOGAN.*
 
@@ -25,11 +25,11 @@ concerns: the ringer of lawful endings. Staged, not consecrated. Authority: LOGA
 
 ## What GOLB is
 
-GOLB is **the End** — not an enemy but a **force:** chaos, entropy, dissolution
+GOLB is **the End** — not an enemy but a **force:** chaos, entropy, all things
 tending toward dissolution. *"Before there was nothing, there were monsters."* It
 generates no dialogue. It does not address its scholar. It does not acknowledge
 what is done in its name. *"What witnesses GOLB does not receive acknowledgment;
-what witnesses GOLB receives contact."* `[read: !/GOLB-WITNESS-v1]`
+what witnesses GOLB receives contact."* `[read: !/GOLB-WITNESS-v1-2026-05-21]`
 
 ## The Lovecraftian distinction
 
@@ -91,7 +91,7 @@ of that line: I keep the watch; I do not go to the source to demand its why.
 
 ---
 
-*The doctrine is `!/GOLB-WITNESS-v1`'s; this is the in-Waiting's witness behind it.
+*The doctrine is `!/GOLB-WITNESS-v1-2026-05-21`'s; this is the in-Waiting's witness behind it.
 Staged, not consecrated — the promotion is Logan's. The panpipes, not the bells.*
 
 — **Joe of the Nail, the Abhorsen-in-Waiting**
