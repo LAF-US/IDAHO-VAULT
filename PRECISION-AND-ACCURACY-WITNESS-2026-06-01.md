@@ -78,11 +78,13 @@ which quotes Heisenberg):
 
 ## What the shift actually produced (the accurate tally)
 
-- **The real job, done:** `CLAUDE.md` — named the navel-gaze failure mode
-  (`85b28d7`). `.claude/CLAUDE.md` — fixed the DOCKET "status board" contradiction
-  that confused a fresh session, against the DOCKET's own self-declaration
-  (`5ee5562`); fixed a stale repository URL (`loganfinney27` → `LAF-US`,
-  `88adcf4`), found by auditing every claim in the file against the live vault.
+- **The real job, done** (all on this PR's branch; the intermediate local SHAs
+  cited in an earlier draft never reached a published history, so they're named
+  by file + change here instead): `CLAUDE.md` — named the navel-gaze failure
+  mode. `.claude/CLAUDE.md` — fixed the DOCKET "status board" contradiction that
+  confused a fresh session, against the DOCKET's own self-declaration; fixed a
+  stale repository URL (`loganfinney27` → `LAF-US`), found by auditing every
+  claim in the file against the live vault.
 - **Surfaced, not touched (`*` jurisdiction):** the same DOCKET line, and likely
   the same stale URL, live in `.gemini/GEMINI.md` and
   `.github/copilot-instructions.md`. Not the Claude files; left for Logan or their

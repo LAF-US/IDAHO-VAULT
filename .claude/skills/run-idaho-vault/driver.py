@@ -12,7 +12,9 @@ natively wherever Python does — Linux, macOS, and **Windows PowerShell/cmd**
 
 Exit: `all` -> 0 when the crew reports PASS and the offline entrypoints run
 (the suite's 2 known pre-existing failures do NOT fail `all`). `run`/`test`
-propagate their real status, so a broken checkout is never masked.
+propagate their real status, so a broken checkout is never masked. Environment
+setup (`ensure_env`) fails fast and loudly if `uv` errors, so a missing package
+never surfaces later as a cryptic "console script not found".
 """
 from __future__ import annotations
 
@@ -36,9 +38,16 @@ def repo_root() -> Path:
         return Path(out.stdout.strip())
     except Exception:
         d = Path.cwd()
-        while not (d / ".git").exists() and d != d.parent:
+        while d != d.parent:
+            if (d / ".git").exists():
+                return d
             d = d.parent
-        return d
+        # No .git anywhere above cwd: refuse rather than silently treating the
+        # filesystem root as the repo (which would run uv / create .venv / run
+        # `git checkout` in the wrong place).
+        sys.exit("error: driver.py must run inside a git checkout of the "
+                 "idaho-vault repo — no .git found above the working directory "
+                 "and `git rev-parse` failed.")
 
 
 ROOT = repo_root()
@@ -60,23 +69,45 @@ def run(cmd, **kw):
     return subprocess.run([str(c) for c in cmd], cwd=ROOT, env=ENV, **kw)
 
 
+def _uv(cmd, check: bool = True, extra_env: dict | None = None) -> int:
+    """Run a uv setup command, surface its output, and fail fast on error."""
+    env = {**ENV, **extra_env} if extra_env else ENV
+    p = subprocess.run([str(c) for c in cmd], cwd=ROOT, env=env,
+                       capture_output=True, text=True)
+    sys.stderr.write(p.stdout)
+    sys.stderr.write(p.stderr)
+    if check and p.returncode != 0:
+        sys.exit(f"error: `{' '.join(str(c) for c in cmd)}` failed "
+                 f"(rc={p.returncode}); see output above.")
+    return p.returncode
+
+
 def ensure_env() -> None:
     """Ready only if the package's console scripts are actually installed."""
     if script("run_crew").exists():
         return
     print("== uv sync (canonical, pinned interpreter from uv.lock) ==", file=sys.stderr)
-    run(["uv", "sync"])
+    _uv(["uv", "sync"], check=False)
     if script("run_crew").exists():
         return
     # uv sync was a no-op or 3.13.3 isn't installed; a clean editable install on
-    # system 3.11 recreates the venv AND the console scripts.
+    # Python 3.11 recreates the venv AND the console scripts.
     print("== fallback: editable install on Python 3.11 "
           "(run `uv python install 3.13.3` for the canonical env) ==", file=sys.stderr)
-    # Pass the version request, not a resolved path: in a pyenv checkout
-    # `which python3.11` returns a shim that honors the missing .python-version
-    # pin and exits 127. Letting uv resolve "3.11" itself bypasses the shim.
-    run(["uv", "venv", "--python", "3.11"])
-    run(["uv", "pip", "install", "-e", "."])
+    # Install a uv-managed CPython 3.11 and create the venv from it with
+    # UV_PYTHON_PREFERENCE=only-managed. In a pyenv checkout a bare `--python
+    # 3.11` can resolve to a pyenv *shim* that honors a missing .python-version
+    # pin and fails before the venv is created; a uv-managed interpreter
+    # sidesteps pyenv entirely.
+    _uv(["uv", "python", "install", "3.11"], check=False)
+    _uv(["uv", "venv", "--python", "3.11"],
+        extra_env={"UV_PYTHON_PREFERENCE": "only-managed"})
+    _uv(["uv", "pip", "install", "-e", "."])
+    if not script("run_crew").exists():
+        sys.exit("error: setup ran but the `run_crew` console script is still "
+                 "missing — the package did not install. Check the uv output "
+                 "above (is `uv` installed, and a Python 3.11+ interpreter "
+                 "available?).")
 
 
 def run_crew() -> int:
@@ -101,10 +132,15 @@ def drive_entrypoints() -> int:
     # Use civic_scaffold, NOT metadata_survey — the metadata_survey
     # console-script is broken on this checkout (see SKILL.md Gotchas).
     p = run([script("civic_scaffold"), "--format", "json"], capture_output=True, text=True)
+    # A non-zero exit must fail even if partial JSON reached stdout — otherwise a
+    # failed CLI that still prints a fragment reads as a false positive.
+    if p.returncode != 0:
+        print(f"  -> civic_scaffold exited non-zero (rc={p.returncode})")
+        return 1
     try:
         json.loads(p.stdout)
     except Exception:
-        print(f"  -> civic_scaffold did not emit valid JSON (rc={p.returncode})")
+        print("  -> civic_scaffold did not emit valid JSON")
         return 1
     print("  -> valid JSON")
     return 0
@@ -112,13 +148,21 @@ def drive_entrypoints() -> int:
 
 def run_tests() -> int:
     print("== test suite (unittest discovery) ==")
+    fixture = "tests/_tmp_topology_census_case/"
+    # The suite deletes tracked fixtures under `fixture`. Auto-restore them after
+    # the run — but ONLY if the developer had no pre-existing uncommitted edits
+    # there, so the cleanup never clobbers unrelated work.
+    pre = run(["git", "status", "--porcelain", "--", fixture],
+              capture_output=True, text=True)
+    fixture_was_clean = (pre.returncode == 0 and not pre.stdout.strip())
     p = run([vpy(), "-m", "unittest", "discover", "-s", "tests", "-p", "test_*.py"],
             capture_output=True, text=True)
     print("\n".join((p.stdout + p.stderr).splitlines()[-4:]))
-    # The suite deletes tracked fixtures under tests/_tmp_topology_census_case/;
-    # restore them but preserve the suite's real exit status.
-    run(["git", "checkout", "--", "tests/_tmp_topology_census_case/"],
-        capture_output=True)
+    if fixture_was_clean:
+        run(["git", "checkout", "--", fixture], capture_output=True)
+    else:
+        print(f"  -> note: skipped fixture auto-restore ({fixture} had "
+              "uncommitted changes before the run; left as-is).", file=sys.stderr)
     return p.returncode
 
 
