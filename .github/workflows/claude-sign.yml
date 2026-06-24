@@ -1,0 +1,135 @@
+# DRAFT — server-side commit signing for chamber-authored commits via
+# anthropics/claude-code-action, with the SSH signing key fetched from 1Password
+# at CI time. Filed 2026-06-01 by !socrates.claude.novice; reworked 2026-06-24.
+#
+# CORRECTION (2026-06-24): an earlier header WITHDREW this draft on the premise
+# that "1Password is NOT a sustainable secret-source for this vault." That premise
+# is FALSE and is retracted. 1Password IS the vault's credential backbone:
+#   - CLAUDE.md § 1Password Integration makes it the centralized secret store and
+#     the configured git-signing SSH agent;
+#   - OP_SERVICE_ACCOUNT_TOKEN is provisioned in repo Secrets (.op/secrets.template.md,
+#     2026-06-17) and is the one secret GitHub Actions holds — everything else is
+#     fetched at runtime via op / load-secrets-action;
+#   - Logan signs commits daily with the 1Password SSH agent.
+# The load-secrets-action pattern below mirrors the WORKING
+# .github/workflows/1password-secret-template.yml. So the secret-SOURCE is settled
+# (1Password); this draft is LIVE, not "overreach."
+#
+# STILL OPEN — held under LOGAN's gate (each marked `# *` inline), NOT yet decided:
+#   (a) activation (enable in repo Settings → Actions). The job no-ops without
+#       OP_SERVICE_ACCOUNT_TOKEN, so merging the file alone changes nothing.
+#   (b) trigger model — workflow_dispatch (drafted) vs pull_request_target.
+#   (c) the canonical 1Password vault + the item holding Claude's signing key.
+#   (d) whether anthropics/claude-code-action can re-sign EXISTING commits on a
+#       branch (rescue case) or only sign NEW commits it makes (see recipe § A/B).
+#   (e) pin claude-code-action to a tagged release instead of @main.
+#
+# Purpose: PR #400's verified-as-Claude commits came from claude.ai/code cloud
+# sessions (signal 2026-05-29). This is the in-vault server-side equivalent —
+# invoke the Action with ssh_signing_key + bot_id + bot_name to produce verified
+# commits inside CI. Companion recipe: INBOX/AGENT-SIGNING-VIA-ACTION-DRAFT-2026-06-01.md
+# Related: !/SIGNALS/SIGNAL-ABHORSEN-WAITING-TO-SOCRATES-2026-05-29-SIGNING-GROUND-TRUTH.md
+
+name: Claude Sign (DRAFT)
+
+on:
+  # * Trigger choice held under LOGAN gate. Candidates:
+  #   - workflow_dispatch (manual; safest for first activation)
+  #   - pull_request_target on chamber branches (claude/*) — automatic but
+  #     requires policy review (pull_request_target runs trusted code)
+  workflow_dispatch:
+    inputs:
+      target_branch:
+        description: "Branch to sign commits on (must already be pushed)"
+        required: true
+        type: string
+      mode:
+        description: "Operation mode"
+        required: true
+        type: choice
+        options:
+          - dry-run
+          - sign-tip-only
+          - sign-all-unsigned
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sign:
+    runs-on: ubuntu-latest
+    if: env.OP_SERVICE_ACCOUNT_TOKEN != ''
+    env:
+      OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
+    steps:
+      - name: Checkout target branch
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          ref: ${{ inputs.target_branch }}
+          fetch-depth: 0  # full history for re-sign operations
+
+      # 1Password load — same pattern as .github/workflows/1password-secret-template.yml.
+      # * Vault + item for the Claude signing key are LOGAN's to name. Verified
+      #   2026-06-24: the WORKING 1password-secret-template.yml references
+      #   `op://vault-operations/...`; .op/secrets.template.md documents vault
+      #   "IDAHO-VAULT" with an SSH item "GitHub SSH Key". The `op://Vault/...`
+      #   placeholders below match neither — replace with the canonical vault and
+      #   the item holding an SSH key registered as a GitHub *Signing* Key (Claude's
+      #   own item, or the existing "GitHub SSH Key").
+      - name: Load Claude signing key from 1Password
+        uses: 1password/load-secrets-action@92467eb28f72e8255933372f1e0707c567ce2259 # v4
+        with:
+          export-env: true
+        env:
+          CLAUDE_SSH_SIGNING_KEY: op://Vault/claude-code-signing-key/private-key  # *
+          CLAUDE_BOT_ID: op://Vault/claude-bot-identity/bot-id                     # *
+          CLAUDE_BOT_NAME: op://Vault/claude-bot-identity/bot-name                 # *
+
+      - name: Invoke Claude Code Action to sign commits
+        uses: anthropics/claude-code-action@main
+        # * Pin to a tagged release once activated; @main is unsafe for
+        #   long-lived workflows. The pin should be reviewed before
+        #   activation.
+        with:
+          ssh_signing_key: ${{ env.CLAUDE_SSH_SIGNING_KEY }}
+          bot_id: ${{ env.CLAUDE_BOT_ID }}
+          bot_name: ${{ env.CLAUDE_BOT_NAME }}
+          # * The Action's input surface for "re-sign this branch's commits"
+          #   vs "make new commits signed" is unverified from the chamber's
+          #   reading. The recipe document § Architectural-question names
+          #   this as the open question. This workflow as drafted assumes
+          #   the Action can amend-and-sign existing commits on the checked-out
+          #   ref when invoked; if it cannot, the workflow needs a different
+          #   approach (e.g., Claude makes new commits and force-pushes,
+          #   which is a different policy question).
+
+      # * No verification step drafted — the verification is the GitHub side
+      #   reporting verified:true on the signed commits, which is observable
+      #   via `gh pr view` after the workflow run.
+      - name: Skip if 1Password token missing
+        if: env.OP_SERVICE_ACCOUNT_TOKEN == ''
+        run: |
+          echo "OP_SERVICE_ACCOUNT_TOKEN is not configured; cannot fetch the signing key from 1Password."
+          echo "This workflow requires OP_SERVICE_ACCOUNT_TOKEN to be present in repo Secrets."
+          exit 1
+
+# ============================================================================
+# DRAFT NOTES (proposal-marginalia, 2026-06-01; reworked 2026-06-24):
+# ============================================================================
+#
+# This workflow file is a DRAFT proposal for the Gate A (required_signatures)
+# linchpin. The Architect (LOGAN) decides:
+#
+# (a) whether to activate this workflow (enable in GitHub UI + provide secrets)
+# (b) whether the trigger choice (workflow_dispatch first, then pull_request_target
+#     after a trial period) is correct
+# (c) the canonical 1Password vault + signing-key item (see the verified note above)
+# (d) whether anthropics/claude-code-action's signing capability covers the
+#     "re-sign existing commits on a branch" use case — if not, a different
+#     workflow approach is needed
+# (e) whether to pin the Action to a tagged release (recommended) instead of @main
+#
+# Companion recipe: INBOX/AGENT-SIGNING-VIA-ACTION-DRAFT-2026-06-01.md
+# Related: !/SIGNALS/SIGNAL-ABHORSEN-WAITING-TO-SOCRATES-2026-05-29-SIGNING-GROUND-TRUTH.md
+# ============================================================================
