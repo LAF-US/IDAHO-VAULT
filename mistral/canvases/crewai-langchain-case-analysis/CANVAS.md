@@ -1,3 +1,12 @@
+---
+name: "crewai-langchain-case-analysis"
+title: "LangChain & CrewAI Cross-Deployment Case Analysis for IDAHO-VAULT"
+type: "text/markdown"
+updated: 2026-06-23
+status: active
+authority: LOGAN
+---
+
 # LangChain & CrewAI Cross-Deployment Case Analysis for IDAHO-VAULT
 
 *Research conducted: June 22, 2026*
@@ -8,7 +17,7 @@
 
 **Key Finding**: Most production systems **combine** LangChain/LangGraph and CrewAI rather than choosing one. The frameworks are complementary: CrewAI excels at role-based agent orchestration, while LangChain/LangGraph provides tool integration, RAG pipelines, and fine-grained state control.
 
-**For IDAHO-VAULT**: Your existing CrewAI bootstrap crew (`crew.py`) and custom five_wizards framework should integrate with LangChain/LangGraph for tooling, RAG, and complex state management—not replace each other.
+**For IDAHO-VAULT**: Your existing CrewAI bootstrap crew (`src/idaho_vault/crew.py`) and custom `src/idaho_vault/five_wizards/` framework should integrate with LangChain/LangGraph for tooling, RAG, and complex state management—not replace each other.
 
 ---
 
@@ -199,7 +208,7 @@ who_task = Task(
 ### Pattern 2: LangGraph Threshold Workflow
 **Applies to**: five_wizards threshold runner
 
-**Current State**: Custom threshold_runner.py
+**Current State**: `src/idaho_vault/five_wizards/`src/idaho_vault/five_wizards/threshold_runner.py`.py`
 **Proposed**: LangGraph StateGraph with CrewAI nodes
 
 **Example**: Threshold as LangGraph Workflow
@@ -275,7 +284,7 @@ client.log_run(result)  # Or use LangChain callback handler
 |-----------|---------|-------------|-----------|
 | **crew.py** | CrewAI | CrewAI + LangSmith | Add observability |
 | **five_wizards lanes** | Custom Python | CrewAI Agents | Role-based orchestration |
-| **threshold_runner** | Custom Python | LangGraph | Explicit state control |
+| **`src/idaho_vault/five_wizards/threshold_runner.py`** | Custom Python | LangGraph | Explicit state control |
 | **Tool layer** | Custom | LangChain Tools | Reuse across frameworks |
 | **RAG/Retrieval** | None | LangChain | Mature ecosystem |
 | **Persistence** | None | LangGraph Checkpointers | Durable execution |
@@ -364,10 +373,21 @@ class AdjudicateClaimTool(BaseTool):
 
 1. **Phase 1 (Week 1)**: Standardize tool layer on LangChain interface
 2. **Phase 2 (Week 2)**: Convert five_wizards lanes to CrewAI Agents
-3. **Phase 3 (Week 3)**: Migrate threshold_runner to LangGraph
+3. **Phase 3 (Week 3)**: Migrate `src/idaho_vault/five_wizards/threshold_runner.py` to LangGraph
 4. **Phase 4 (Week 4)**: Integrate LangSmith observability
 5. **Phase 5 (Ongoing)**: Monitor and optimize
 
 **Estimated Effort**: 3-4 weeks for full migration
 **Risk**: Low (frameworks are designed to interoperate)
 **ROI**: Significant improvement in maintainability, observability, and production readiness
+
+
+---
+
+## DOCUMENT METADATA
+
+| Field | Value |
+|-------|-------|
+| Updated | 2026-06-23 |
+| Status | active |
+| Authority | LOGAN |
