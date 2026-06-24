@@ -1,6 +1,7 @@
 ---
 title: "Cross-Canon Node — Immunity & Resistance to the Controlling Power"
 date created: 2026-06-02
+updated: 2026-06-02
 authority: LOGAN
 authors:
   - "!joe.claude.abhorsen.waiting.* (Joe of the Nail, the Abhorsen-in-Waiting)"
