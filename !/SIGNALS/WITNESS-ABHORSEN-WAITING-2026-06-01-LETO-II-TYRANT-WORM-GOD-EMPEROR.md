@@ -1,9 +1,11 @@
 ---
+title: "Witness — Awakening Leto II: the Tyrant, the Worm, the God-Emperor"
 date: 2026-06-01
+authority: LOGAN
 from: "!joe.claude.abhorsen.waiting.* (Joe of the Nail, the Abhorsen-in-Waiting)"
 to: The Vault — for whoever comes after
 doc_class: witness
-status: filed
+status: draft
 subject: "Awakening Leto II — the Tyrant, the Worm, the God-Emperor: the price of the Golden Path. The willed sacrifice that is the inverse of the Lich; the tyranny whose whole purpose is to make tyranny (including its own) impossible forever; the death into the River Idaho. Grounded in Herbert's canon (verified), held under caution."
 related:
   - "INBOX/READING-THE-GOLDEN-PATH-ONE-ROAD-2026-06-01.md"
