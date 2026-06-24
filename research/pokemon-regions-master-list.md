@@ -109,4 +109,4 @@ This list provides the foundation for systematic research. For each region, the 
 3. **Champion** (1 per region)
 4. **Other notable trainers** (Rival, Professor, etc.)
 
-*Last updated: June 3, 2026*
+*Last updated: June 4, 2026*

@@ -29,26 +29,26 @@
 ### Generation I (Red, Blue, Green, Yellow)
 - **Location**: Indigo Plateau (Chamber 4)
 - **Team**: 
-  - Gyarados (Lv. 56) - Bite, Dragon Rage, Twister, Hyper Beam
-  - Dragonair (Lv. 54) - Safeguard, Outrage, Dragon Rage, Hyper Beam
-  - Dragonair (Lv. 54) - Safeguard, Outrage, Thunder Wave, Hyper Beam
-  - Aerodactyl (Lv. 58) - Wing Attack, Ancient Power, Scary Face, Hyper Beam
-  - Dragonite (Lv. 60) - Safeguard, Outrage, Wing Attack, Hyper Beam
+  - Gyarados (Lv. 58) - Hydro Pump, Dragon Rage, Leer, Hyper Beam
+  - Dragonair (Lv. 56) - Agility, Slam, Hyper Beam, Thunder Wave
+  - Dragonair (Lv. 56) - Agility, Slam, Hyper Beam, Ice Beam
+  - Aerodactyl (Lv. 60) - Wing Attack, Supersonic, Bite, Hyper Beam
+  - Dragonite (Lv. 62) - Blizzard, Hyper Beam, Wing Attack, Agility
 - **Reward**: None (Elite Four battle)
-- **Notable**: Final Elite Four member before facing Blue
+- **Notable**: Final Elite Four member before facing Blue. Movesets restricted to Generation I-legal moves (no Safeguard/Outrage/Twister/Ancient Power)
 
 ### Generation II (Gold, Silver, Crystal)
 - **Location**: Indigo Plateau (as Champion)
 - **Role**: Pokémon Champion
 - **Team**: 
-  - Dragonite (Lv. 46) - Wrap, Leer, Thunder Wave, Agility
-  - Gyarados (Lv. 46) - Bite, Dragon Rage, Thunderbolt, Ice Beam
-  - Dragonair (Lv. 44) - Wrap, Leer, Thunder Wave, Agility
-  - Dragonair (Lv. 44) - Wrap, Leer, Thunder Wave, Agility
-  - Aerodactyl (Lv. 48) - Bite, Supersonic, Wing Attack, Hyper Beam
-  - Charizard (Lv. 50) - Flamethrower, Wing Attack, Slash, Fire Spin
+  - Gyarados (Lv. 44) - Twister, Hydro Pump, Rain Dance, Hyper Beam
+  - Dragonite (Lv. 47) - Thunder, Blizzard, Fire Blast, Hyper Beam
+  - Dragonite (Lv. 47) - Thunder, Blizzard, Fire Blast, Hyper Beam
+  - Charizard (Lv. 46) - Flamethrower, Wing Attack, Slash, Fire Spin
+  - Aerodactyl (Lv. 46) - Rock Slide, Wing Attack, Supersonic, Hyper Beam
+  - Dragonite (Lv. 50) - Outrage, Hyper Beam, Thunder, Blizzard
 - **Reward**: Championship title
-- **Notable**: Serves as Champion instead of Elite Four
+- **Notable**: Serves as Champion instead of Elite Four. His GSC Champion team uses three Dragonite (no Dragonair)
 
 ### Generation III (FireRed, LeafGreen)
 - **Location**: Indigo Plateau (Chamber 4)
@@ -89,17 +89,17 @@
 
 | Game | Pokémon | Level | Type | Moves |
 |------|---------|-------|------|-------|
-| RBY | Gyarados | 56 | Water/Flying | Bite, Dragon Rage, Twister, Hyper Beam |
-| RBY | Dragonair | 54 | Dragon | Safeguard, Outrage, Dragon Rage, Hyper Beam |
-| RBY | Dragonair | 54 | Dragon | Safeguard, Outrage, Thunder Wave, Hyper Beam |
-| RBY | Aerodactyl | 58 | Rock/Flying | Wing Attack, Ancient Power, Scary Face, Hyper Beam |
-| RBY | Dragonite | 60 | Dragon/Flying | Safeguard, Outrage, Wing Attack, Hyper Beam |
-| GSC | Dragonite | 46 | Dragon/Flying | Wrap, Leer, Thunder Wave, Agility |
-| GSC | Gyarados | 46 | Water/Flying | Bite, Dragon Rage, Thunderbolt, Ice Beam |
-| GSC | Dragonair | 44 | Dragon | Wrap, Leer, Thunder Wave, Agility |
-| GSC | Dragonair | 44 | Dragon | Wrap, Leer, Thunder Wave, Agility |
-| GSC | Aerodactyl | 48 | Rock/Flying | Bite, Supersonic, Wing Attack, Hyper Beam |
-| GSC | Charizard | 50 | Fire/Flying | Flamethrower, Wing Attack, Slash, Fire Spin |
+| RBY | Gyarados | 58 | Water/Flying | Hydro Pump, Dragon Rage, Leer, Hyper Beam |
+| RBY | Dragonair | 56 | Dragon | Agility, Slam, Hyper Beam, Thunder Wave |
+| RBY | Dragonair | 56 | Dragon | Agility, Slam, Hyper Beam, Ice Beam |
+| RBY | Aerodactyl | 60 | Rock/Flying | Wing Attack, Supersonic, Bite, Hyper Beam |
+| RBY | Dragonite | 62 | Dragon/Flying | Blizzard, Hyper Beam, Wing Attack, Agility |
+| GSC | Gyarados | 44 | Water/Flying | Twister, Hydro Pump, Rain Dance, Hyper Beam |
+| GSC | Dragonite | 47 | Dragon/Flying | Thunder, Blizzard, Fire Blast, Hyper Beam |
+| GSC | Dragonite | 47 | Dragon/Flying | Thunder, Blizzard, Fire Blast, Hyper Beam |
+| GSC | Charizard | 46 | Fire/Flying | Flamethrower, Wing Attack, Slash, Fire Spin |
+| GSC | Aerodactyl | 46 | Rock/Flying | Rock Slide, Wing Attack, Supersonic, Hyper Beam |
+| GSC | Dragonite | 50 | Dragon/Flying | Outrage, Hyper Beam, Thunder, Blizzard |
 | FRLG | Same as RBY | - | - | - |
 | LGPE | Dragonite | 58 | Dragon/Flying | Wrap, Leer, Thunder Wave, Agility |
 | LGPE | Gyarados | 56 | Water/Flying | Bite, Dragon Rage, Twister, Hyper Beam |

@@ -40,13 +40,13 @@
 ### Generation II (Gold, Silver, Crystal)
 - **Location**: Indigo Plateau (Chamber 3)
 - **Team**: 
-  - Onix (Lv. 48) - Dig, Screech, Rock Throw, Bind
-  - Hitmonlee (Lv. 49) - Rolling Kick, Mega Kick, Meditate, Jump Kick
-  - Hitmonchan (Lv. 49) - Comet Punch, Agility, Fire Punch, Ice Punch
-  - Onix (Lv. 50) - Dig, Screech, Rock Throw, Bind
-  - Machamp (Lv. 52) - Leer, Focus Energy, Seismic Toss, Submission
+  - Hitmontop (Lv. 42) - Rolling Kick, Counter, Pursuit, Quick Attack
+  - Hitmonlee (Lv. 42) - Double Kick, Swift, Mega Kick, Hi Jump Kick
+  - Hitmonchan (Lv. 42) - Mach Punch, Thunder Punch, Ice Punch, Fire Punch
+  - Onix (Lv. 43) - Bind, Rock Slide, Earthquake, Sandstorm
+  - Machamp (Lv. 46) - Rock Slide, Vital Throw, Foresight, Fissure
 - **Reward**: None
-- **Notable**: Moved to third position in Johto Elite Four order
+- **Notable**: Johto Elite Four team adds the Generation II Hitmontop (single Onix, not two) and battles at lower levels before Machamp
 
 ### Generation III (FireRed, LeafGreen)
 - **Location**: Indigo Plateau (Chamber 2)
@@ -88,11 +88,11 @@
 | RBY | Hitmonlee | 53 | Fighting | Rolling Kick, Mega Kick, Meditate, Jump Kick |
 | RBY | Onix | 54 | Rock/Ground | Dig, Screech, Rock Throw, Bind |
 | RBY | Machamp | 56 | Fighting | Leer, Focus Energy, Seismic Toss, Submission |
-| GSC | Onix | 48 | Rock/Ground | Dig, Screech, Rock Throw, Bind |
-| GSC | Hitmonlee | 49 | Fighting | Rolling Kick, Mega Kick, Meditate, Jump Kick |
-| GSC | Hitmonchan | 49 | Fighting | Comet Punch, Agility, Fire Punch, Ice Punch |
-| GSC | Onix | 50 | Rock/Ground | Dig, Screech, Rock Throw, Bind |
-| GSC | Machamp | 52 | Fighting | Leer, Focus Energy, Seismic Toss, Submission |
+| GSC | Hitmontop | 42 | Fighting | Rolling Kick, Counter, Pursuit, Quick Attack |
+| GSC | Hitmonlee | 42 | Fighting | Double Kick, Swift, Mega Kick, Hi Jump Kick |
+| GSC | Hitmonchan | 42 | Fighting | Mach Punch, Thunder Punch, Ice Punch, Fire Punch |
+| GSC | Onix | 43 | Rock/Ground | Bind, Rock Slide, Earthquake, Sandstorm |
+| GSC | Machamp | 46 | Fighting | Rock Slide, Vital Throw, Foresight, Fissure |
 | FRLG | Onix | 51 | Rock/Ground | Earthquake, Rock Tomb, Iron Tail, Roar |
 | FRLG | Hitmonchan | 53 | Fighting | Sky Uppercut, Mach Punch, Rock Tomb, Counter |
 | FRLG | Hitmonlee | 53 | Fighting | Mega Kick, Foresight, Brick Break, Facade |
