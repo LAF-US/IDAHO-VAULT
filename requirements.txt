@@ -58,7 +58,7 @@ charset-normalizer==3.4.7
     # via
     #   pdfminer-six
     #   requests
-chromadb==1.1.1
+chromadb==1.5.9
     # via crewai
 click==8.4.1
     # via
