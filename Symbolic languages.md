@@ -5,7 +5,7 @@ aliases:
   - Encoding meaning
   - The object is the message
 updated: 2026-06-02
-status: index
+status: active
 authority: LOGAN
 related:
   - Language of flowers

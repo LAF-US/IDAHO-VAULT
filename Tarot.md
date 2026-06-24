@@ -102,8 +102,9 @@ Tarot's history is the cluster's clearest case of an ordinary object being
   divine secrets. This was **invented history** — but it stuck.
 - **Etteilla and Lévi.** **Jean-Baptiste Alliette ("Etteilla")** published the
   first practical guide to cartomancy. The French occultist **Éliphas Lévi**
-  (mid-19th c.) bound tarot to the **Hebrew alphabet and the Kabbalah**, and the
-  terms **"Major" and "Minor Arcana"** entered use.
+  (mid-19th c.) bound tarot to the **Hebrew alphabet and the Kabbalah**. The
+  terms **"Major" and "Minor Arcana"** came slightly later, with **Jean-Baptiste
+  Pitois ("Paul Christian")**, not with Etteilla or Lévi.
 - **The Golden Dawn (1888– ).** The London **Hermetic Order of the Golden Dawn**
   produced the full correspondence system — each card tied to a Hebrew letter, a
   path on the Tree of Life, and an astrological assignment — fusing tarot to

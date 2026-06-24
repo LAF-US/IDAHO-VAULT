@@ -64,8 +64,9 @@ Written as triangles, distinguished by direction and a crossing bar:
 | Air | 🜁 | upward triangle + bar |
 | Earth | 🜃 | downward triangle + bar |
 
-The up/down direction tracks "ascending" (hot) versus "descending" (cold), and
-the bar marks the wet pair against the dry.
+The up/down direction tracks "ascending" (Fire, Air) versus "descending"
+(Water, Earth); the bar distinguishes the second element of each pair — Air from
+Fire, Earth from Water — rather than marking wet against dry.
 
 ### The three primes (*tria prima*)
 
