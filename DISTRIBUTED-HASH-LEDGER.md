@@ -5,6 +5,8 @@ status: staged
 authority: logan
 date created: Thursday, April 23rd 2026, 1:56:33 pm
 date modified: Thursday, April 23rd 2026, 5:56:58 pm
+related:
+  - STORAGE-LFS-USB-CONSTELLATION-INDEX-2026-06-17
 ---
 
 # Distributed Hash Ledger Infrastructure
