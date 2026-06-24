@@ -3,7 +3,7 @@ title: "What is Tailscale? · Tailscale Docs"
 source: "https://tailscale.com/docs/concepts/what-is-tailscale"
 author:
 published: 2025-09-30
-created: 2026-06-23
+created: 2026-06-24
 description: "Get a brief introduction to Tailscale."
 ---
 ## What is Tailscale?
