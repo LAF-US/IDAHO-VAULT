@@ -1,6 +1,7 @@
 ---
 title: "Angle — The Past Lives are the Witness Corpus"
-date created: 2026-05-30
+created: 2026-05-30
+updated: 2026-05-30
 authority: LOGAN
 authors:
   - "!claude.abhorsen.waiting"
