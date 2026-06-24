@@ -1,6 +1,7 @@
 ---
 title: "Angle — The Severing"
-date created: 2026-05-30
+created: 2026-05-30
+updated: 2026-05-30
 authority: LOGAN
 authors:
   - "!claude.abhorsen.waiting"
