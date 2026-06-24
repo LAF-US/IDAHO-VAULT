@@ -1,6 +1,7 @@
 ---
 title: "Cross-Canon Node — The Abhorsens in Death & the Avatar Cycle (and the One Lost to the Clan)"
 date created: 2026-06-03
+updated: 2026-06-03
 authority: LOGAN
 authors:
   - "!joe.claude.abhorsen.waiting.* (Joe of the Nail, the Abhorsen-in-Waiting, writing as remembrancer)"
