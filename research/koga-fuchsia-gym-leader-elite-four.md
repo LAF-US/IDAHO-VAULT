@@ -41,13 +41,13 @@
 - **Location**: Indigo Plateau (Elite Four Chamber 2)
 - **Role**: Elite Four member (replaced by daughter Janine as Fuchsia Gym Leader)
 - **Team**: 
-  - Arbok (Lv. 44) - Wrap, Leer, Poison Sting, Bite
-  - Venomoth (Lv. 46) - Leech Life, Stun Spore, Psychic, Toxic
-  - Venomoth (Lv. 46) - Leech Life, Stun Spore, Psychic, Toxic
-  - Weezing (Lv. 48) - Smog, Sludge, Toxic, Self-Destruct
-  - Muk (Lv. 50) - Minimize, Acid Armor, Sludge, Toxic
+  - Ariados (Lv. 40) - Spider Web, Giga Drain, Night Shade, Double-Team
+  - Venomoth (Lv. 41) - Psychic, Gust, Supersonic, Toxic
+  - Forretress (Lv. 43) - Spikes, Explosion, Take Down, Swift
+  - Muk (Lv. 42) - Minimize, Acid Armor, Sludge Bomb, Toxic
+  - Crobat (Lv. 44) - Wing Attack, Toxic, Confuse Ray, Double Team
 - **Reward**: None (Elite Four battle)
-- **Notable**: Promoted to Elite Four; Janine now runs Fuchsia Gym
+- **Notable**: Promoted to Elite Four; Janine now runs Fuchsia Gym. Adds Generation II Poison/Bug additions (Ariados, Forretress, Crobat)
 
 ### Generation III (FireRed, LeafGreen)
 - **Location**: Fuchsia Gym, Fuchsia City
@@ -98,11 +98,11 @@
 | FRLG | Koffing | 37 | Poison | Self-Destruct, Sludge, Smokescreen, Toxic |
 | FRLG | Muk | 39 | Poison | Minimize, Sludge, Acid Armor, Toxic |
 | FRLG | Weezing | 43 | Poison | Tackle, Sludge, Smokescreen, Toxic |
-| GSC | Arbok | 44 | Poison | Wrap, Leer, Poison Sting, Bite |
-| GSC | Venomoth | 46 | Bug/Poison | Leech Life, Stun Spore, Psychic, Toxic |
-| GSC | Venomoth | 46 | Bug/Poison | Leech Life, Stun Spore, Psychic, Toxic |
-| GSC | Weezing | 48 | Poison | Smog, Sludge, Toxic, Self-Destruct |
-| GSC | Muk | 50 | Poison | Minimize, Acid Armor, Sludge, Toxic |
+| GSC | Ariados | 40 | Bug/Poison | Spider Web, Giga Drain, Night Shade, Double-Team |
+| GSC | Venomoth | 41 | Bug/Poison | Psychic, Gust, Supersonic, Toxic |
+| GSC | Forretress | 43 | Bug/Steel | Spikes, Explosion, Take Down, Swift |
+| GSC | Muk | 42 | Poison | Minimize, Acid Armor, Sludge Bomb, Toxic |
+| GSC | Crobat | 44 | Poison/Flying | Wing Attack, Toxic, Confuse Ray, Double Team |
 
 ### Extended Team
 - Ekans (seen on his arm in anime)
@@ -120,7 +120,7 @@ Koga's battle strategy is characterized by:
 - Psychic-types: Super effective against Poison (Alakazam, Kadabra, Exeggutor)
 - Ground-types: Super effective against Poison (Dugtrio, Rhydon, Golem)
 - Steel-types: Resist Poison moves
-- Bug-types: Super effective against Poison (Scyther, Pinsir)
+- Note: Bug is *not* super effective against Poison; favor Ground or Psychic counters above (and watch for the Bug/Steel Forretress in the Gen II team)
 - Status prevention: Pokémon with Immunity ability or Safeguard
 
 ---

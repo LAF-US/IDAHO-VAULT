@@ -35,10 +35,14 @@
 - **Notable**: Gym requires Cut to navigate; all trainers are female
 
 ### Generation II (Gold, Silver, Crystal)
-- **Location**: Celadon Gym
-- **Team**: Same as Generation I
+- **Location**: Celadon Gym (Kanto postgame)
+- **Team**: 
+  - Jumpluff (Lv. 42) - Mega Drain, Stun Spore, Sleep Powder, Leech Seed
+  - Bellossom (Lv. 46) - Petal Dance, Giga Drain, Sweet Scent, Solar Beam
+  - Tangela (Lv. 44) - Giga Drain, Stun Spore, Bind, Mega Drain
+  - Victreebel (Lv. 46) - Razor Leaf, Acid, Sleep Powder, Giga Drain
 - **Reward**: Rainbow Badge, TM19 (Giga Drain)
-- **Notable**: Can be challenged in any order after obtaining 8 badges
+- **Notable**: Kanto postgame team with Generation II additions (Jumpluff, Bellossom), not her Gen I Victreebel/Tangela/Vileplume lineup. Can be challenged after obtaining 8 Johto badges
 
 ### Generation III (FireRed, LeafGreen)
 - **Location**: Celadon Gym
@@ -84,6 +88,10 @@
 | FRLG/HGSS | Victreebel | 29 | Grass/Poison | Stun Spore, Acid, Poison Powder, Giga Drain |
 | FRLG/HGSS | Tangela | 24 | Grass | Poison Powder, Constrict, Ingrain, Giga Drain |
 | FRLG/HGSS | Vileplume | 29 | Grass/Poison | Sleep Powder, Acid, Stun Spore, Giga Drain |
+| GSC | Jumpluff | 42 | Grass/Flying | Mega Drain, Stun Spore, Sleep Powder, Leech Seed |
+| GSC | Bellossom | 46 | Grass | Petal Dance, Giga Drain, Sweet Scent, Solar Beam |
+| GSC | Tangela | 44 | Grass | Giga Drain, Stun Spore, Bind, Mega Drain |
+| GSC | Victreebel | 46 | Grass/Poison | Razor Leaf, Acid, Sleep Powder, Giga Drain |
 | LGPE | Vileplume | 30 | Grass/Poison | Various |
 | LGPE | Florgess | 30 | Grass | Various |
 | LGPE | Bellossom | 30 | Grass | Various |

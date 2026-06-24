@@ -53,13 +53,13 @@ Open-world design; Gyms can be challenged in any order.
 | # | Member | Type | E1 |
 |---|--------|------|----|
 | 1 | **Rika** | Ground | Yes |
-| 2 | **Poplar** | Steel | Yes |
-| 3 | **Larry** | Normal | Yes (also Gym Leader) |
+| 2 | **Poppy** | Steel | Yes |
+| 3 | **Larry** | Flying | Yes (also Gym Leader, where his specialty is Normal) |
 | 4 | **Hassel** | Dragon | Yes |
 
 ### Individual Files
 - [ ] Rika
-- [ ] Poplar
+- [ ] Poppy
 - [ ] Larry
 - [ ] Hassel
 
@@ -91,4 +91,4 @@ Open-world design; Gyms can be challenged in any order.
 1. Start with **Katy** (Cortondo Gym Leader)
 2. Use Misty template
 
-*Last updated: June 3, 2026*
+*Last updated: June 4, 2026*

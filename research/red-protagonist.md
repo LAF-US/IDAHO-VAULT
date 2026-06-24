@@ -44,10 +44,15 @@
 - **Starting Pokémon**: Bulbasaur, Charmander, or Squirtle
 
 ### Generation IV (NPC)
-- **Games**: Pokémon HeartGold, SoulSilver, Black 2, White 2
-- **Location**: Mt. Silver (HGSS), World Tournament (B2W2)
+- **Games**: Pokémon HeartGold, SoulSilver
+- **Location**: Mt. Silver (HGSS)
 - **Team**: Pikachu (Lv. 88), Charizard (Lv. 84), Venusaur (Lv. 84), Blastoise (Lv. 84), Espeon (Lv. 82), Lapras (Lv. 82)
 - **Reward**: Legend Ribbon (HGSS)
+
+### Generation V (NPC)
+- **Games**: Pokémon Black 2, White 2
+- **Location**: Pokémon World Tournament (B2W2)
+- **Role**: Optional opponent in the World Tournament Champions/Kanto Leaders tournaments
 
 ### Generation VII (NPC)
 - **Games**: Pokémon Sun, Moon, Ultra Sun, Ultra Moon, Let's Go, Pikachu!, Let's Go, Eevee!
@@ -115,7 +120,7 @@
 
 ### Design
 - Red cap and jacket (Gen I)
-- Yellow crop top, blue shorts, red sneakers (FRLG)
+- Red and white cap, red short-sleeved jacket over a black/white shirt, blue jeans, red/white sneakers (FRLG)
 - 3D model (LGPE)
 
 ### Name Origin
@@ -147,4 +152,4 @@
 - Bulbapedia: [Red (game)](https://bulbapedia.bulbagarden.net/wiki/Red_(game))
 - Pokémon Database, CBR, TheGamer, ScreenRant
 
-*Last updated: June 3, 2026*
+*Last updated: June 4, 2026*

@@ -39,9 +39,12 @@
 
 ### Generation II (Gold, Silver, Crystal)
 - **Location**: Seafoam Islands (Gym relocated after Cinnabar Island volcano eruption)
-- **Team**: Same as Generation I
-- **Reward**: Volcano Badge, TM50 (Overheat)
-- **Notable**: Cinnabar Island destroyed by volcanic eruption; Gym moved to Seafoam Islands
+- **Team**: 
+  - Magcargo (Lv. 45) - Flamethrower, Rock Throw, Harden, Curse
+  - Magmar (Lv. 45) - Flamethrower, Fire Punch, Confuse Ray, Smokescreen
+  - Rapidash (Lv. 50) - Fire Blast, Fury Attack, Quick Attack, Agility
+- **Reward**: Volcano Badge, TM38 (Fire Blast)
+- **Notable**: Cinnabar Island destroyed by volcanic eruption; Gym moved to Seafoam Islands. Fields a new Kanto postgame team (with Gen II additions Magcargo/Magmar), not his Gen I lineup. TM50 Overheat did not exist in Generation II
 
 ### Generation III (FireRed, LeafGreen)
 - **Location**: Cinnabar Gym, Cinnabar Island
@@ -91,6 +94,9 @@
 | FRLG | Ponyta | 40 | Fire | Stomp, Bounce, Fire Spin, Fire Blast |
 | FRLG | Rapidash | 42 | Fire | Stomp, Bounce, Fire Spin, Fire Blast |
 | FRLG | Arcanine | 47 | Fire | Bite, Roar, Take Down, Fire Blast |
+| GSC | Magcargo | 45 | Fire/Rock | Flamethrower, Rock Throw, Harden, Curse |
+| GSC | Magmar | 45 | Fire | Flamethrower, Fire Punch, Confuse Ray, Smokescreen |
+| GSC | Rapidash | 50 | Fire | Fire Blast, Fury Attack, Quick Attack, Agility |
 | HGSS | Same as FRLG | - | - | - |
 | LGPE | Growlithe | 42 | Fire | Various |
 | LGPE | Ponyta | 40 | Fire | Various |

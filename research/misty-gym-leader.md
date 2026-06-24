@@ -41,8 +41,8 @@
 ### Generation III (FireRed, LeafGreen)
 - **Location**: Cerulean Gym
 - **Team**: 
-  - Staryu (Lv. 18) - Tackle, Harden, Water Gun, Recover
-  - Starmie (Lv. 21) - Tackle, Harden, Water Gun, Bubble Beam, Recover, Swift
+  - Staryu (Lv. 18) - Swift, Water Pulse, Harden, Recover
+  - Starmie (Lv. 21) - Swift, Water Pulse, BubbleBeam, Recover
 - **Reward**: Cascade Badge, TM03 (Water Pulse)
 - **Notable**: Starmie now knows Recover, making battles more challenging.
 
@@ -77,9 +77,11 @@
 | RBY | Staryu | 18 | Water | Tackle, Harden, Water Gun |
 | RBY | Starmie | 21 | Water/Psychic | Tackle, Harden, Water Gun, Bubble Beam |
 | FRLG | Staryu | 18 | Water | Tackle, Harden, Water Gun, Recover |
-| FRLG | Starmie | 21 | Water/Psychic | Tackle, Harden, Water Gun, Bubble Beam, Recover, Swift |
-| HGSS | Staryu | 18 | Water | Tackle, Harden, Water Gun, Recover |
-| HGSS | Starmie | 21 | Water/Psychic | Tackle, Harden, Water Gun, Bubble Beam, Recover, Swift |
+| FRLG | Starmie | 21 | Water/Psychic | Swift, Water Pulse, BubbleBeam, Recover (notable moves, not one set) |
+| HGSS | Golduck | 42 | Water | Surf, Disable, Psychic, Amnesia |
+| HGSS | Quagsire | 42 | Water/Ground | Surf, Earthquake, Amnesia, Rain Dance |
+| HGSS | Lapras | 44 | Water/Ice | Surf, Ice Beam, Body Slam, Rain Dance |
+| HGSS | Starmie | 47 | Water/Psychic | Surf, Ice Beam, Confusion, Recover |
 | LGPE | Psyduck | 18 | Water | Various |
 | LGPE | Starmie | 19 | Water/Psychic | Various |
 
@@ -94,7 +96,7 @@ Misty's battle strategy is characterized by:
 - Grass-types: Super effective against Water (Oddish, Gloom, Bellsprout, Weepinbell)
 - Electric-types: Super effective against Water (Pikachu)
 - Status moves: Powder moves like Stun Spore, Sleep Powder, or Poison Powder
-- Psychic-types: Effective against Starmie's Psychic typing
+- Ghost/Dark-types: Super effective against Starmie's Psychic typing (Ghost- and Dark-type moves exploit Psychic); Bug-type moves also hit Psychic super-effectively
 
 ---
 
