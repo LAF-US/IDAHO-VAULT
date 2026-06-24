@@ -144,7 +144,12 @@ jobs:
           }
 
           while IFS= read -r pr; do
+            pr="${pr%$'\r'}"            # strip a trailing CR if the list ever carries one
             [ -z "$pr" ] && continue
+            # Defensive: ids come from `jq -r .number`, but never feed a non-numeric token to a
+            # PR URL or the typed GraphQL `number` arg if that upstream ever changes (salvaged
+            # from #549). A bad id would otherwise 404 and be mis-counted as a real failure.
+            case "$pr" in *[!0-9]*) echo "PR entry ignored — non-numeric id: '$pr'"; continue;; esac
             total=$((total + 1))
             url="https://github.com/$repo/pull/$pr"
             # Read mergeability, retrying past the lazy-computation UNKNOWN (see
@@ -248,3 +253,13 @@ jobs:
           } >> "$GITHUB_STEP_SUMMARY"
 
           echo "Done: enqueued=$enqueued already_queued=$already_queued armed_pending=$armed_pending needs_wf_token=$needs_wf_token failed=$failed (of $total)"
+
+          # Fail closed (salvaged from #549): if every considered PR landed in the FAILED bucket,
+          # a shared problem (token/permission regression, API outage) is far likelier than every
+          # PR being legitimately un-processable — surface it instead of a green false-success.
+          # needs_wf_token is an EXPECTED per-PR limitation (workflow-touching PR + no PAT), so it
+          # is NOT a failure; the guard only trips when failed == total.
+          if [ "$total" -gt 0 ] && [ "$failed" -eq "$total" ]; then
+            echo "::error::All $total considered PRs failed to enqueue/arm — likely a systemic auth/API problem, not per-PR gating."
+            exit 1
+          fi
