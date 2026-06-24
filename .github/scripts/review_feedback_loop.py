@@ -12,9 +12,15 @@ Modes:
     a real merge block.
   - promote-ready: compatibility alias for scheduled reconciliation.
   - reconcile-open-prs: rescan open PR truth and repair drifted review labels.
-    Agent-authored PR auto-merge is retired; Dependabot has its own verified lane.
-  - enable-auto-merge: legacy compatibility path that removes stale agent
-    auto-merge state rather than arming it.
+    Agent-PR auto-merge arming is RE-ENABLED (2026-06-17, reversing the #521/#527
+    fail-close) now that `main` lands through the GitHub merge queue — the queue +
+    branch protection are the trust gate that arming waited on (ARBORSCAPE IF 12),
+    so arming a low-risk, thread-clear PR means only "merge once the required
+    checks/reviews/threads pass," not "a human approved." Arming is gated by the
+    conservative eligibility (risk/low + grace + no blocking threads) AND a
+    protected-path guard; Dependabot keeps its own verified lane.
+  - enable-auto-merge: arms an eligible, non-protected-path PR for the merge queue.
+    See AGENT-AUTOMERGE-REENABLED-2026-06-17.md for the recorded reversal.
   - verify-claim: compare an agent completion-claim comment against the PR's
     current `mergeable`, `mergeStateStatus`, draft state, and check rollup.
     Post a divergence comment if the claim disagrees with the institutional
@@ -24,6 +30,7 @@ Modes:
 from __future__ import annotations
 
 import argparse
+import fnmatch
 import json
 import os
 import re
@@ -34,7 +41,14 @@ from datetime import datetime, timedelta, timezone
 
 APPLY_RE = re.compile(r"@copilot\b[\s\S]*?\bapply changes\b", re.IGNORECASE)
 DEFAULT_GRACE_MINUTES = 30
-AGENT_AUTO_MERGE_ENABLED = False
+# Re-enabled 2026-06-17 (reverses the #521/#527 fail-close). The retirement waited on
+# a trust gate distinct from author-login (#398 signing identity); the GitHub merge
+# queue now IS that gate — a PR only merges once its required checks, reviews, and
+# thread-resolution pass, regardless of who armed it (ARBORSCAPE IF 12 satisfied).
+# Arming stays conservative: eligibility below requires risk/low + grace + no blocking
+# threads, and callers additionally refuse to arm protected/governance paths. This flag
+# is the kill-switch — set False to fail-close arming again.
+AGENT_AUTO_MERGE_ENABLED = True
 
 # IF 7 (brass-mouth reliability is per-utterance, not per-agent) per
 # !/ARBORSCAPE-PR-EXPANSION-2026-05-22.md. The verify-claim subcommand watches
@@ -68,12 +82,32 @@ DEFAULT_THREAD_LABEL = "review/threads-open"
 DEFAULT_PENDING_LABEL = "merge/copilot-apply-pending"
 DEFAULT_REVIEW_PENDING_LABEL = "review/pending"
 DEFAULT_AUTO_MERGE_LABEL = "merge/auto"
+DEFAULT_SUGGESTIONS_LABEL = "review/suggestions-ready"
 RISK_LOW_LABEL = "risk/low"
 RISK_HIGH_LABEL = "risk/high"
 AUTO_MERGE_AUTHZ_FRAGMENTS = (
     "Pull request User is not authorized for this protected branch "
     "(enablePullRequestAutoMerge)",
     "Resource not accessible by integration (enablePullRequestAutoMerge)",
+)
+
+# Paths that must NOT be auto-armed: governance, agent scaffolding, and the CI
+# surfaces that gate everything else. A PR touching any of these waits for human
+# review. Broader than auto-merge-rhythm.yml's sync-bot list on purpose — the
+# whole of `.github/` is CODE-AUTHORITY-reviewed, so the entire automation surface
+# is protected, not just workflows/scripts. fnmatch globs: "*" matches within a
+# path segment AND across "/", so ".github/*" covers nested files.
+PROTECTED_PATH_PATTERNS: tuple[str, ...] = (
+    ".github/*",
+    ".codex/*",
+    ".openclaw/*",
+    "AGENTS.md",
+    "CONSTITUTION.md",
+    "DECISIONS.md",
+    "VAULT-CONVENTIONS.md",
+    "swarm.json",
+    "SPEC-CONNECTOR-HUB-2026-04-09.md",
+    "!/*",
 )
 
 LABEL_SPECS: dict[str, tuple[str, str]] = {
@@ -97,6 +131,10 @@ LABEL_SPECS: dict[str, tuple[str, str]] = {
         "BFD4F2",
         "Low-risk PR awaits review; automatic agent merge is disabled.",
     ),
+    DEFAULT_SUGGESTIONS_LABEL: (
+        "1D76DB",
+        "Has bot review threads with committable ```suggestion blocks ready to apply.",
+    ),
     RISK_LOW_LABEL: (
         "C2E0C6",
         "Risk tier: low (only low-risk paths changed).",
@@ -119,27 +157,194 @@ def _run(cmd: list[str], check: bool = True) -> subprocess.CompletedProcess[str]
     return result
 
 
-def _arm_auto_merge(pr_number: int) -> tuple[bool, str | None]:
+def _auto_merge_state(owner: str, repo: str, pr_number: int) -> tuple[bool, bool]:
+    """Return ``(auto_merge_enabled, in_merge_queue)`` for the PR.
+
+    Fail-open to ``(False, False)``: if the state can't be read, the caller
+    behaves exactly as it did before this guard existed (a plain ``--auto``
+    enable) — never worse than the old code, and a transient read error never
+    evicts a queued PR."""
     try:
-        _run(
+        data = _graphql(
+            """
+            query($owner:String!, $name:String!, $number:Int!) {
+              repository(owner: $owner, name: $name) {
+                pullRequest(number: $number) {
+                  autoMergeRequest { enabledAt }
+                  mergeQueueEntry { id }
+                }
+              }
+            }
+            """,
+            owner=owner,
+            name=repo,
+            number=pr_number,
+        )
+    except (RuntimeError, ValueError):
+        # RuntimeError: gh/_graphql failure or GraphQL errors.
+        # ValueError: a malformed JSON payload (json.JSONDecodeError subclasses it).
+        # Both fail open so the arming path keeps its pre-guard behavior.
+        return (False, False)
+    pull = (data.get("repository") or {}).get("pullRequest") or {}
+    enabled = bool((pull.get("autoMergeRequest") or {}).get("enabledAt"))
+    queued = bool((pull.get("mergeQueueEntry") or {}).get("id"))
+    return (enabled, queued)
+
+
+def _pr_node_id(owner: str, repo: str, pr_number: int) -> str | None:
+    """The PR's GraphQL node id (required by enqueuePullRequest). None if it can't be read
+    (fail-open: the caller then skips the explicit enqueue and relies on armed auto-merge)."""
+    try:
+        data = _graphql(
+            """
+            query($owner:String!, $name:String!, $number:Int!) {
+              repository(owner: $owner, name: $name) {
+                pullRequest(number: $number) { id }
+              }
+            }
+            """,
+            owner=owner,
+            name=repo,
+            number=pr_number,
+        )
+    except (RuntimeError, ValueError):
+        return None
+    return ((data.get("repository") or {}).get("pullRequest") or {}).get("id")
+
+
+def _enqueue_pr(node_id: str) -> tuple[bool, str | None]:
+    """Add the PR to the merge queue via the ``enqueuePullRequest`` mutation — the action that
+    actually puts a PR in the queue, DISTINCT from ``enablePullRequestAutoMerge`` ("merge when
+    ready"). Best-effort: never raises.
+
+    Returns a tri-state ``(enqueued, error)`` so the caller can tell a benign delay from a real
+    failure:
+
+      * ``(True, None)``  — enqueued (a merge-queue entry id came back).
+      * ``(False, None)`` — benign: the PR is not yet queue-ready (required checks still running,
+        not mergeable, or the base branch has no merge queue). GitHub returns no entry; the armed
+        auto-merge enqueues it when it goes green. NOT an error.
+      * ``(False, str)``  — a real failure (auth/permission/API error from the mutation), worth
+        surfacing because an armed PR that silently never enqueues is exactly the bug this fixes."""
+    try:
+        data = _graphql(
+            "mutation($pr:ID!){ enqueuePullRequest(input:{pullRequestId:$pr})"
+            " { mergeQueueEntry { id } } }",
+            pr=node_id,
+        )
+    except (RuntimeError, ValueError) as exc:
+        return (False, str(exc))
+    entry = (((data.get("enqueuePullRequest") or {}).get("mergeQueueEntry")) or {}).get("id")
+    if entry:
+        return (True, None)
+    return (False, None)  # not queue-ready yet — benign; armed auto-merge enqueues it when green
+
+
+def _arm_auto_merge(owner: str, repo: str, pr_number: int) -> tuple[bool, str | None]:
+    """Arm auto-merge for the PR AND add it to the merge queue — two DISTINCT GitHub actions:
+
+      1. **enablePullRequestAutoMerge** (`gh pr merge --auto`) — records "merge when ready."
+         On a merge-queue repo this ALONE does not put the PR in the queue.
+      2. **enqueuePullRequest** (GraphQL) — the action that actually adds the PR to the merge
+         queue. This is the half that was missing: arming-only left a ready PR sitting
+         un-queued (the #508 symptom) because nothing ever called enqueue.
+
+    Returns ``(armed, error)``. ``armed`` is True once auto-merge is on (the floor). The enqueue
+    is best-effort: a not-yet-ready PR can't be enqueued, and the armed auto-merge enqueues it
+    when it goes green — so a not-ready enqueue result is NOT treated as a failure. A *real*
+    enqueue failure (auth/API), however, IS surfaced as the error while still reporting armed=True,
+    so "armed but never queued" is no longer silent (callers already log this error)."""
+    enabled, queued = _auto_merge_state(owner, repo, pr_number)
+    if queued:
+        # Already in the queue — re-enqueuing would be a no-op (or an unwanted jump); leave it.
+        return (True, None)
+    if not enabled:
+        try:
+            _run(
+                ["gh", "pr", "merge", str(pr_number), "--squash", "--delete-branch", "--auto"]
+            )
+        except RuntimeError as exc:
+            if not any(fragment in str(exc) for fragment in AUTO_MERGE_AUTHZ_FRAGMENTS):
+                raise
+            return (
+                False,
+                "GitHub Actions is not authorized to enable auto-merge on the protected base branch.",
+            )
+    # Arming is only half the job — explicitly add it to the merge queue now.
+    node_id = _pr_node_id(owner, repo, pr_number)
+    if node_id:
+        enqueued, enqueue_error = _enqueue_pr(node_id)
+        if not enqueued and enqueue_error:
+            # Armed, but the explicit enqueue hit a REAL error (auth/API) — distinct from the
+            # benign "not queue-ready yet" case (which returns no error and is left for the
+            # armed auto-merge to enqueue when green). Surface it so the "armed but never
+            # queued" failure this PR fixes can't recur silently. Still armed=True.
+            return (True, f"auto-merge armed, but enqueue was rejected: {enqueue_error}")
+    # node_id None (fail-open) or benign not-ready: armed; auto-merge enqueues it when green.
+    return (True, None)
+
+
+def _pr_touches_protected_path(owner: str, repo: str, pr_number: int) -> bool:
+    """True if the PR changes any protected/governance/CI path (so it must NOT be
+    auto-armed). Fail-closed: if the changed-file list can't be fetched, treat the PR
+    as protected so a transient API failure never widens what gets armed."""
+    try:
+        result = _run(
             [
                 "gh",
-                "pr",
-                "merge",
-                str(pr_number),
-                "--squash",
-                "--delete-branch",
-                "--auto",
+                "api",
+                "--paginate",
+                f"repos/{owner}/{repo}/pulls/{pr_number}/files",
+                "--jq",
+                ".[].filename",
             ]
         )
-    except RuntimeError as exc:
-        if not any(fragment in str(exc) for fragment in AUTO_MERGE_AUTHZ_FRAGMENTS):
-            raise
-        return (
-            False,
-            "GitHub Actions is not authorized to enable auto-merge on the protected base branch.",
-        )
-    return True, None
+    except RuntimeError:
+        return True
+    for path in result.stdout.splitlines():
+        path = path.strip()
+        if not path:
+            continue
+        if any(fnmatch.fnmatch(path, pattern) for pattern in PROTECTED_PATH_PATTERNS):
+            return True
+    return False
+
+
+def _maybe_arm_auto_merge(
+    owner: str, repo: str, pr_number: int, state: dict[str, object]
+) -> dict[str, object]:
+    """Guarded arm: enable merge-queue auto-merge for a PR ONLY when it is eligible
+    (risk/low + grace + no blocking threads, per evaluate_review_state) AND touches no
+    protected path. Returns a small report; never raises for the ordinary not-eligible,
+    protected-path, or not-authorized cases. The merge queue + branch protection remain
+    the actual merge gate — this only presses the button."""
+    if not bool(state.get("eligible_for_auto_merge")):
+        return {"armed": False, "reason": "not eligible for auto-merge"}
+    if _pr_touches_protected_path(owner, repo, pr_number):
+        return {"armed": False, "reason": "protected/governance path — awaits human review"}
+    armed, arm_error = _arm_auto_merge(owner, repo, pr_number)
+    if armed:
+        # Tag the PR `merge/auto` so the disable path (apply_review_state_projection,
+        # which keys disablement on this label) can later un-arm it if a new thread or a
+        # CHANGES_REQUESTED review makes it merge_blocked. Without the label an
+        # event-armed PR could stay armed while the engine's own state said "blocked."
+        # Fail closed: if the label write fails, the disable path could never un-arm it,
+        # so disable the auto-merge we just enabled and report failure rather than leave
+        # an un-trackable armed PR.
+        try:
+            _run(["gh", "pr", "edit", str(pr_number), "--add-label", DEFAULT_AUTO_MERGE_LABEL])
+        except RuntimeError as exc:
+            _disable_auto_merge(pr_number)
+            return {
+                "armed": False,
+                "reason": (
+                    f"auto-merge armed but `{DEFAULT_AUTO_MERGE_LABEL}` label write failed; "
+                    f"disabled auto-merge to avoid an un-trackable armed PR: {exc}"
+                ),
+            }
+    # Pass arm_error through even when armed: a clean arm reports None, but an armed PR whose
+    # explicit enqueue was rejected carries that note so "armed but never queued" isn't silent.
+    return {"armed": armed, "reason": arm_error}
 
 
 def _graphql(query: str, **variables: object) -> dict:
@@ -165,6 +370,7 @@ def _fetch_pr(owner: str, name: str, number: int) -> dict:
           number
           url
           body
+          state
           createdAt
           updatedAt
           isDraft
@@ -213,11 +419,6 @@ def _resolve_thread(thread_id: str) -> None:
     }
     """
     _graphql(mutation, threadId=thread_id)
-
-
-def _is_forbidden_integration_error(exc: RuntimeError) -> bool:
-    text = str(exc)
-    return "FORBIDDEN" in text or "Resource not accessible by integration" in text
 
 
 # Look-then-resolve design (#399): nothing is dismissed or resolved until a
@@ -340,6 +541,26 @@ def _thread_resolution_disposition(thread: dict) -> str:
 # genuinely stale (outdated) or already-attested. needs-fix and apply-suggestion are
 # NOT here — they require a real fix / an applied suggestion, not a bare resolve.
 BARE_RESOLVABLE_DISPOSITIONS: frozenset[str] = frozenset({"outdated-resolvable", "looked"})
+
+
+def _count_committable_suggestion_threads(pr: dict) -> int:
+    """Number of unresolved threads on `pr` whose disposition is `apply-suggestion` —
+    bot-only, page-complete, current (not outdated), carrying a committable ```suggestion.
+
+    This is the PROPOSE-ONLY signal (Logan's #3 decision, 2026-06-19): the engine surfaces
+    these — GitHub has no public apply-suggestion API, so committing the diff would mean the
+    engine rewriting files on a contributor branch, which we deliberately do NOT do here.
+    It only flags that ready-to-apply suggestions exist; a human or the authoring agent
+    applies them (one-click "Commit suggestion" in the UI), then the witnessed resolve
+    clears the thread on the next event. Surfacing is safe on every path (no write), so it
+    is NOT protected-path-gated."""
+    count = 0
+    for thread in (pr.get("reviewThreads") or {}).get("nodes") or []:
+        if thread.get("isResolved"):
+            continue
+        if _thread_resolution_disposition(thread) == "apply-suggestion":
+            count += 1
+    return count
 
 
 def _build_attestation(
@@ -481,11 +702,18 @@ def attest_and_resolve(
     apply: bool = False,
     now: datetime | None = None,
 ) -> dict:
-    """Disposition ONE bot-authored review thread: record an attested look, then resolve.
+    """Disposition ONE bot-authored review thread: resolve it, then record the attested look.
 
     Writes nothing unless `apply=True`. NEVER merges and NEVER enables auto-merge — it
-    posts the looker's attestation as a thread reply and resolves that single thread,
+    resolves that single thread and posts the looker's attestation as a thread reply,
     nothing else (the cascade-safety contract above).
+
+    Order matters: the resolve runs FIRST, and the "thread cleared" attestation is posted
+    only after it succeeds. The attestation asserts a clearing; if the resolve fails
+    (e.g. `resolveReviewThread` is FORBIDDEN for the integration token — the live #398
+    boundary), a comment claiming the thread was cleared would be a FALSE witness. A true
+    witness that is sometimes absent beats a witness that is sometimes a lie, so we never
+    attest a clearing we did not actually perform.
 
     Eligibility is reported, never raised. A thread is eligible when the PR's review is
     not CHANGES_REQUESTED, every author is a bot (`_thread_is_bot_only` — never a human
@@ -522,11 +750,11 @@ def attest_and_resolve(
     if not _thread_is_bot_only(thread):
         result["reason"] = "thread is not bot-authored only"
         return result
-    # "Look, then resolve" is two separate mutations. An already-attested but still
-    # OPEN thread is a partial success (the reply landed, the resolve did not) — recover
-    # by resolving without posting a duplicate attestation, rather than no-op'ing and
-    # leaving the thread blocking forever. The fully-done case (attested AND resolved)
-    # is already short-circuited by the isResolved guard above.
+    # "Resolve, then look" is two separate mutations. An already-attested but still
+    # OPEN thread is a partial success from a PRIOR ordering (the reply landed, the
+    # resolve did not) — recover by resolving without posting a duplicate attestation,
+    # rather than no-op'ing and leaving the thread blocking forever. The fully-done case
+    # (attested AND resolved) is already short-circuited by the isResolved guard above.
     already_looked = _thread_has_attested_look(thread)
 
     # Build (and thereby validate looker/decision) before any write.
@@ -537,14 +765,17 @@ def attest_and_resolve(
         result["reason"] = (
             "dry-run: attested look already present, would resolve"
             if already_looked
-            else "dry-run: would record attested look and resolve"
+            else "dry-run: would resolve and record attested look"
         )
         return result
 
+    # Validate the looker/actor match BEFORE touching the thread: the look is
+    # self-attested (the marker says by={looker}, but the reply posts as the
+    # authenticated actor). If they differ we cannot write a truthful witness, so we
+    # must not resolve either — clearing a thread we cannot witness is the unwitnessed
+    # ending we are built to avoid. Skip the check when no new attestation will be
+    # posted (already_looked recovery path).
     if not already_looked:
-        # The look is self-attested: the marker says by={looker}, but the reply posts
-        # as the authenticated actor. If they differ, the attestation is undetectable —
-        # refuse rather than write a broken audit record.
         actor = _viewer_login()
         if actor != looker:
             result["eligible"] = False
@@ -552,13 +783,20 @@ def attest_and_resolve(
                 f"looker {looker!r} does not match the authenticated actor {actor!r}"
             )
             return result
-        _add_thread_reply(thread_id, body)
+
+    # Resolve FIRST. If this raises (e.g. FORBIDDEN for the integration token), it
+    # propagates to the caller and NO attestation is posted — the thread keeps its
+    # honest unresolved state instead of gaining a false "cleared" claim.
     _resolve_thread(thread_id)
+    # The clearing succeeded; now the "thread cleared" attestation is true. Skip the
+    # post on the recovery path (the attestation is already present from a prior run).
+    if not already_looked:
+        _add_thread_reply(thread_id, body)
     result["applied"] = True
     result["reason"] = (
         "existing attested look; thread resolved"
         if already_looked
-        else "attested look recorded; thread resolved"
+        else "thread resolved; attested look recorded"
     )
     return result
 
@@ -786,8 +1024,8 @@ def _edit_label(pr_number: int, *, add: str | None = None, remove: str | None = 
         _run(["gh", "pr", "edit", str(pr_number), "--remove-label", remove], check=False)
 
 
-def _disable_auto_merge(pr_number: int) -> None:
-    _run(["gh", "pr", "merge", str(pr_number), "--disable-auto"], check=False)
+def _disable_auto_merge(pr_number: int, *, check: bool = False) -> None:
+    _run(["gh", "pr", "merge", str(pr_number), "--disable-auto"], check=check)
 
 
 def _comment(pr_number: int, body: str) -> None:
@@ -921,6 +1159,7 @@ def evaluate_review_state(
         "current_unresolved_threads": current_unresolved,
         "outdated_unresolved_threads": outdated_unresolved,
         "auto_resolvable_outdated_threads": auto_resolvable_outdated,
+        "committable_suggestion_threads": _count_committable_suggestion_threads(pr),
         "merge_blocked": merge_blocked,
         "blocking_reasons": blocking_reasons,
         "grace_elapsed": grace_elapsed,
@@ -945,6 +1184,9 @@ def apply_review_state_projection(
         DEFAULT_REVIEW_REQUIRED_LABEL: bool(state["blocking_review"]),
         DEFAULT_THREAD_LABEL: int(state["current_unresolved_threads"]) > 0,
         DEFAULT_REVIEW_PENDING_LABEL: bool(state["should_have_agent_review_pending"]),
+        # Propose-only (#3): flag PRs that have committable suggestions ready to apply.
+        # Add/remove is idempotent, so no comment spam; the signal mirrors to Linear.
+        DEFAULT_SUGGESTIONS_LABEL: int(state.get("committable_suggestion_threads") or 0) > 0,
     }
 
     for label, wanted in desired_labels.items():
@@ -978,26 +1220,67 @@ def apply_review_state_projection(
     return actions
 
 
-def _resolve_outdated_advisory_threads(pr: dict, auto_resolve_reviewers: set[str]) -> int:
-    resolved_count = 0
-    for thread in (pr.get("reviewThreads") or {}).get("nodes") or []:
-        if thread.get("isResolved") or not thread.get("isOutdated"):
-            continue
+def _resolve_outdated_resolvable_threads(
+    pr: dict, looker: str | None = None, *, apply: bool = True
+) -> list[dict[str, object]]:
+    """Attest-resolve every OUTDATED-RESOLVABLE thread on `pr` — bot-only and
+    GitHub-outdated (the commented lines no longer exist in the diff) — witnessed by
+    `looker` via `attest_and_resolve`. This is the same narrowest-safe slice the
+    engage-outdated backlog walk uses, factored so the on-push `sync-pr` event can clear
+    stale bot threads AS THEY GO OUTDATED — not only on a manual engage-outdated dispatch.
 
-        authors = _thread_authors(thread)
-        if authors and authors.issubset(auto_resolve_reviewers):
-            try:
-                _resolve_thread(thread["id"])
-                resolved_count += 1
-            except RuntimeError as exc:
-                if _is_forbidden_integration_error(exc):
-                    print(
-                        f"Skipping auto-resolve for thread {thread['id']}: token lacks permission.",
-                        file=sys.stderr,
-                    )
-                else:
-                    raise
-    return resolved_count
+    `looker` is who the resolution is witnessed as. Pass it when the caller already knows
+    the actor (engage-outdated resolves it once for the whole backlog walk). When omitted
+    (the sync-pr event path), it is resolved LAZILY via `_viewer_login()` only if an
+    outdated-resolvable thread is actually found — so a push with no stale threads (the
+    common case) costs no extra GraphQL round-trip.
+
+    Disposition-driven (`_thread_resolution_disposition`), so it covers any bot reviewer
+    (CodeRabbit/Codex/Copilot), unlike the legacy allowlist resolver. needs-fix /
+    apply-suggestion / needs-human / looked threads are never touched — a substantive
+    finding is a caught error to fix, not to dispose of. Never merges. Returns one result
+    dict per considered thread."""
+    results: list[dict[str, object]] = []
+    for thread in (pr.get("reviewThreads") or {}).get("nodes") or []:
+        if thread.get("isResolved"):
+            continue
+        if _thread_resolution_disposition(thread) != "outdated-resolvable":
+            continue
+        # Defensive belt-and-suspenders: the `outdated-resolvable` disposition already
+        # requires GitHub-outdated, but re-assert it here so the implementation can never
+        # drift from the docstring's contract (only GitHub-outdated threads are touched)
+        # if `_thread_resolution_disposition` ever regresses.
+        if not thread.get("isOutdated"):
+            continue
+        # Lazy witness resolution: only pay for _viewer_login() once we have real work.
+        if looker is None:
+            looker = _viewer_login()
+        try:
+            result = attest_and_resolve(
+                pr,
+                thread,
+                looker,
+                "advisory",
+                "Outdated: the commented lines no longer exist in the current diff; "
+                "bot-only thread cleared under the outdated-only engaged policy.",
+                apply=apply,
+            )
+        except RuntimeError as exc:
+            # One thread's transient gh/GraphQL failure must not abort the pass. Surface
+            # it on stderr too (not only in the returned dict) so sync-driven failures are
+            # observable in workflow logs, not just to the JSON report consumer.
+            print(
+                f"Failed to attest-resolve outdated thread {thread.get('id')}: {exc}",
+                file=sys.stderr,
+            )
+            result = {
+                "thread_id": thread.get("id"),
+                "eligible": False,
+                "applied": False,
+                "reason": f"failed to process thread: {exc}",
+            }
+        results.append(result)
+    return results
 
 
 def _list_open_pr_numbers(owner: str, repo: str) -> list[int]:
@@ -1035,10 +1318,16 @@ def _build_reconciliation_report(
     rearmed: list[int] = []
     auto_merge_authorization_blocked: list[int] = []
     total_resolved_outdated_threads = 0
+    # Resolve the looker once for the whole batch walk (the engage-outdated pattern): the
+    # witness names whoever actually ran the scheduled reconcile — the authenticated actor.
+    # This is the same WITNESSED, disposition-driven resolver the event path uses, so the
+    # reconcile lane is no longer the one place that resolved threads blindly (#399).
+    looker = _viewer_login()
 
     for pr_number in _list_open_pr_numbers(owner, repo):
         pr = _fetch_pr(owner, repo, pr_number)
-        resolved_count = _resolve_outdated_advisory_threads(pr, auto_resolve_reviewers or set())
+        outdated_results = _resolve_outdated_resolvable_threads(pr, looker, apply=True)
+        resolved_count = sum(1 for r in outdated_results if r.get("applied"))
         total_resolved_outdated_threads += resolved_count
         if resolved_count:
             pr = _fetch_pr(owner, repo, pr_number)
@@ -1054,12 +1343,26 @@ def _build_reconciliation_report(
         current_labels = set(state["labels"])
         auto_merge_enabled = bool((pr.get("autoMergeRequest") or {}).get("enabledAt"))
         arm_error = None
+        # Evaluate the protected-path guard ONCE, before promotion: a governance/CI/
+        # scaffolding PR must not even be labelled `merge/auto` or get a "promoting"
+        # comment — it waits for a human. (Only worth the API call when otherwise armable.)
+        touches_protected_path = False
+        if (
+            AGENT_AUTO_MERGE_ENABLED
+            and state["eligible_for_auto_merge"]
+            and not bool(state["merge_blocked"])
+        ):
+            touches_protected_path = _pr_touches_protected_path(owner, repo, pr_number)
+            if touches_protected_path:
+                arm_error = "protected/governance path — awaits human review"
+
         if (
             AGENT_AUTO_MERGE_ENABLED
             and
             state["eligible_for_auto_merge"]
             and not bool(state["merge_blocked"])
             and DEFAULT_AUTO_MERGE_LABEL not in current_labels
+            and not touches_protected_path
         ):
             if DEFAULT_REVIEW_PENDING_LABEL in current_labels:
                 current_labels.discard(DEFAULT_REVIEW_PENDING_LABEL)
@@ -1080,9 +1383,12 @@ def _build_reconciliation_report(
             DEFAULT_AUTO_MERGE_LABEL in current_labels
             and bool(state["eligible_for_auto_merge"])
             and not bool(state["merge_blocked"])
-            and not auto_merge_enabled
+            and not touches_protected_path
         ):
-            auto_merge_enabled, arm_error = _arm_auto_merge(pr_number)
+            # No `and not auto_merge_enabled` guard: an already-armed PR may be
+            # armed-but-not-queued (the stuck case), and _arm_auto_merge is
+            # state-aware — it no-ops a queued PR and toggles a stuck one.
+            auto_merge_enabled, arm_error = _arm_auto_merge(owner, repo, pr_number)
             if auto_merge_enabled:
                 rearmed.append(pr_number)
             else:
@@ -1159,7 +1465,15 @@ def sync_pr(args: argparse.Namespace) -> int:
     )
 
     pr = _fetch_pr(args.owner, args.repo, args.pr_number)
-    resolved_count = _resolve_outdated_advisory_threads(pr, auto_resolve_reviewers)
+    # Event-driven outdated-resolve: clear bot-only, GitHub-outdated threads as they go
+    # stale on this push — witnessed by the authenticated actor (the same narrowest-safe
+    # slice as engage-outdated, now firing on the event instead of only manual dispatch).
+    # The looker is resolved lazily inside the helper (only if there's a stale thread to
+    # clear), so a push with nothing to resolve costs no extra _viewer_login() round-trip.
+    outdated_results = _resolve_outdated_resolvable_threads(
+        pr, getattr(args, "looker", None), apply=True
+    )
+    resolved_count = sum(1 for r in outdated_results if r.get("applied"))
     if resolved_count:
         pr = _fetch_pr(args.owner, args.repo, args.pr_number)
 
@@ -1177,6 +1491,11 @@ def sync_pr(args: argparse.Namespace) -> int:
         clear_apply_pending=clear_pending,
     )
 
+    # Engine/label-driven arming: if this update cleared the last blocking thread on a
+    # low-risk PR, arm it for the merge queue (guarded against protected paths). The
+    # queue + branch protection remain the actual merge gate.
+    arm_result = _maybe_arm_auto_merge(args.owner, args.repo, args.pr_number, state)
+
     print(
         json.dumps(
             {
@@ -1185,6 +1504,8 @@ def sync_pr(args: argparse.Namespace) -> int:
                 "outdated_unresolved_threads": state["outdated_unresolved_threads"],
                 "blocking_review": state["blocking_review"],
                 "eligible_for_auto_merge": state["eligible_for_auto_merge"],
+                "auto_merge_armed": arm_result["armed"],
+                "auto_merge_arm_reason": arm_result["reason"],
                 "label_actions": label_actions,
                 "cleared_copilot_apply_pending": clear_pending,
             }
@@ -1225,12 +1546,20 @@ def review_submitted(args: argparse.Namespace) -> int:
         )
 
     label_actions = apply_review_state_projection(args.pr_number, state)
+
+    # If the submitted review left the PR eligible (e.g. it cleared the last block on a
+    # low-risk PR), arm it for the merge queue (guarded against protected paths). A
+    # blocking review makes the PR ineligible, so this self-no-ops in that case.
+    arm_result = _maybe_arm_auto_merge(args.owner, args.repo, args.pr_number, state)
+
     print(
         json.dumps(
             {
                 "blocking_event": blocking_event,
                 "blocking_review": state["blocking_review"],
                 "current_unresolved_threads": state["current_unresolved_threads"],
+                "auto_merge_armed": arm_result["armed"],
+                "auto_merge_arm_reason": arm_result["reason"],
                 "label_actions": label_actions,
             }
         )
@@ -1294,7 +1623,10 @@ def enable_auto_merge(args: argparse.Namespace) -> int:
         and bool(state["eligible_for_auto_merge"])
         and not bool(state["merge_blocked"])
     ):
-        enabled, arm_error = _arm_auto_merge(args.pr_number)
+        if _pr_touches_protected_path(args.owner, args.repo, args.pr_number):
+            arm_error = "protected/governance path — awaits human review"
+        else:
+            enabled, arm_error = _arm_auto_merge(args.owner, args.repo, args.pr_number)
 
     print(
         json.dumps(
@@ -1612,10 +1944,14 @@ def attest_resolve(args: argparse.Namespace) -> int:
             )
         )
         return 1
+    # Default the looker to the authenticated actor, so the recorded witness always names
+    # whoever actually ran the resolve (agent-driven or CI-bot), and the self-attestation
+    # actor-match check in attest_and_resolve is satisfied by construction.
+    looker = args.looker or _viewer_login()
     result = attest_and_resolve(
         pr,
         thread,
-        args.looker,
+        looker,
         args.decision,
         args.rationale,
         apply=args.apply,
@@ -1647,44 +1983,44 @@ def engage_outdated(args: argparse.Namespace) -> int:
     keep a PR hanging). Scope is deliberately the narrowest safe slice — ONLY threads whose
     resolution disposition is `outdated-resolvable` (bot-only, GitHub-outdated: the
     commented lines no longer exist in the diff). Each is cleared via `attest_and_resolve`
-    with a recorded `github-actions[bot]` attestation, so it is a *witnessed* resolution,
+    with a recorded attestation by the looker — the `--looker` value, defaulting to the
+    authenticated actor (`_viewer_login()`) — so it is a *witnessed* resolution,
     not the blind reconciler. needs-fix / apply-suggestion / looked / human threads are
     never touched — needs-fix is the reviewer gate that keeps a PR hanging. This NEVER
     merges; if clearing the last thread lets an armed PR flow, that is GitHub's auto-merge,
     by design (the engaged queue).
+
+    --pr scopes the pass to a single PR number (the guinea-pig case: prove one PR clean
+    before widening to the whole backlog); default is every open PR.
     """
     considered: list[dict[str, object]] = []
-    for pr_number in _list_open_pr_numbers(args.owner, args.repo):
+    # Resolve the looker once: default to the authenticated actor so the witness names
+    # whoever actually ran the engine (agent token or CI bot), truthfully.
+    looker = args.looker or _viewer_login()
+    only_pr = getattr(args, "pr", None)
+    # `is not None`, not truthiness: --pr is parsed by _positive_int (0/negative
+    # rejected at parse time), so any value that reaches here is a real PR number
+    # and must scope the pass — never silently fall back to the full backlog walk.
+    pr_numbers = [only_pr] if only_pr is not None else _list_open_pr_numbers(args.owner, args.repo)
+    for pr_number in pr_numbers:
         pr = _fetch_pr(args.owner, args.repo, pr_number)
-        for thread in (pr.get("reviewThreads") or {}).get("nodes") or []:
-            if thread.get("isResolved"):
-                continue
-            if _thread_resolution_disposition(thread) != "outdated-resolvable":
-                continue
-            try:
-                result = attest_and_resolve(
-                    pr,
-                    thread,
-                    args.looker,
-                    "advisory",
-                    "Outdated: the commented lines no longer exist in the current diff; "
-                    "bot-only thread cleared under the outdated-only engaged policy.",
-                    apply=args.apply,
-                )
-            except RuntimeError as exc:
-                # One thread's transient gh/GraphQL failure must not abort the whole
-                # backlog pass — record it and keep going so the report stays complete.
-                result = {
-                    "thread_id": thread.get("id"),
-                    "eligible": False,
-                    "applied": False,
-                    "reason": f"failed to process thread: {exc}",
-                }
+        # The backlog walk only ever yields OPEN PRs (_list_open_pr_numbers). A --pr
+        # scope can name any existing PR, so hold the same invariant: engage-outdated
+        # acts only on the open queue — a closed/merged PR is refused, not engaged.
+        if only_pr is not None and (pr.get("state") or "").upper() != "OPEN":
+            raise SystemExit(
+                f"--pr {only_pr} is {pr.get('state')!r}, not OPEN; engage-outdated "
+                "acts only on the open queue."
+            )
+        # Same narrowest-safe slice as the on-push sync path (shared helper): attest-resolve
+        # every outdated-resolvable thread, witnessed by the looker.
+        for result in _resolve_outdated_resolvable_threads(pr, looker, apply=args.apply):
             considered.append({"pr": pr_number, **result})
     print(
         json.dumps(
             {
                 "apply": args.apply,
+                "scope_pr": only_pr,
                 "outdated_threads": len(considered),
                 "resolved": sum(1 for r in considered if r.get("applied")),
                 "results": considered,
@@ -1831,7 +2167,12 @@ def build_parser() -> argparse.ArgumentParser:
     attest.add_argument("--repo", required=True)
     attest.add_argument("--pr-number", required=True, type=int)
     attest.add_argument("--thread-id", required=True)
-    attest.add_argument("--looker", required=True)
+    attest.add_argument(
+        "--looker",
+        default=None,
+        help="attesting identity recorded in the look marker; default: the authenticated "
+        "actor (whoever the token posts as), so the witness always names who actually ran it",
+    )
     attest.add_argument("--decision", required=True, choices=sorted(ATTESTATION_DECISIONS))
     attest.add_argument("--rationale", default="")
     attest.add_argument(
@@ -1843,7 +2184,18 @@ def build_parser() -> argparse.ArgumentParser:
     engage = subparsers.add_parser("engage-outdated")
     engage.add_argument("--owner", required=True)
     engage.add_argument("--repo", required=True)
-    engage.add_argument("--looker", default="github-actions[bot]")
+    engage.add_argument(
+        "--looker",
+        default=None,
+        help="attesting identity recorded in the look marker; default: the authenticated "
+        "actor (whoever the token posts as), so the witness always names who actually ran it",
+    )
+    engage.add_argument(
+        "--pr",
+        type=_positive_int,
+        default=None,
+        help="scope the pass to a single open PR number (default: every open PR)",
+    )
     engage.add_argument(
         "--apply",
         action="store_true",
