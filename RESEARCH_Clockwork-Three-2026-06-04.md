@@ -8,7 +8,7 @@ authors:
 source: chat
 related:
   - "2026-06-04"
-  - "!/WITNESS-CLOCKWORK-THREE-SYNCRETISM-2026-05-23"
+  - "!/WITNESS-CLOCKWORK-THREE-SYNCRETISM-2026-05-23.md"
   - Matthew J Kirby
   - Scholastic
   - Brazen Head
@@ -40,7 +40,7 @@ The vault is syncretic. Different analytics on the same source can both be doctr
 
 ### Analytic 1 — The COMPONENTS of the clockwork man (per existing Witness)
 
-**[[!/WITNESS-CLOCKWORK-THREE-SYNCRETISM-2026-05-23]]** (Big Pickle, filed 2026-05-23) reads the **automaton's animating components** as a Body/Mind/Soul triad. This is the components-of-the-clockwork-man analytic. Established prior to this brief.
+**[[!/WITNESS-CLOCKWORK-THREE-SYNCRETISM-2026-05-23.md]]** (Big Pickle, filed 2026-05-23) reads the **automaton's animating components** as a Body/Mind/Soul triad. This is the components-of-the-clockwork-man analytic. Established prior to this brief.
 
 - **BODY** = the Clockwork Man (gears, structure, the coal-chute chest plate)
 - **MIND** = the Magnus Head (Albertus Magnus's brazen head — interface, appearance of wisdom)
@@ -104,7 +104,7 @@ Tonal register: **dark for middle grade**. Real violence, real cruelty, real chi
 
 ## III. Analytic 1 — The three objects of the automaton (per the Witness)
 
-The components of the clockwork man, per [[!/WITNESS-CLOCKWORK-THREE-SYNCRETISM-2026-05-23]]:
+The components of the clockwork man, per [[!/WITNESS-CLOCKWORK-THREE-SYNCRETISM-2026-05-23.md]]:
 
 | Component | Object | Plot Role | Source Tradition |
 |-----------|--------|-----------|------------------|
@@ -121,7 +121,7 @@ The components of the clockwork man, per [[!/WITNESS-CLOCKWORK-THREE-SYNCRETISM-
 5. Hannah inserts the golem clay into the machine.
 6. **The automaton comes to life** — bolts up, runs out the door, demonstrates intelligence the Witness describes as such *"that would leave any of today's robotics in the dust."*
 7. The automaton has a **sense of justice**, problem-solving ability, can learn new languages.
-8. The automaton later **rescues Giuseppe** from his padrone Stefano.
+8. The automaton later **rescues Giuseppe** from his padrone Stephano.
 
 ### Kirby's invention on the Magnus Head (worth noting)
 
@@ -139,7 +139,7 @@ The children are *the builders* — the figures who bring the three objects toge
 
 ### Giuseppe
 
-An **orphaned Italian street musician** (busker), trafficked to the United States by his uncle and sold to a cruel master named **Stefano** under the **padrone system**. He plays a battered fiddle in the streets, then — after pulling a **mysterious green violin** from the harbor — earns enough to dream of a boat ticket back to Italy. *"The varnished wood rippled deeper than green, like river water."* The green violin is a fourth wondrous object in the book, parallel to but distinct from the three Body/Mind/Soul components.
+An **orphaned Italian street musician** (busker), trafficked to the United States by his uncle and sold to a cruel master named **Stephano** under the **padrone system**. He plays a battered fiddle in the streets, then — after pulling a **mysterious green violin** from the harbor — earns enough to dream of a boat ticket back to Italy. *"The varnished wood rippled deeper than green, like river water."* The green violin is a fourth wondrous object in the book, parallel to but distinct from the three Body/Mind/Soul components.
 
 ### Hannah
 
@@ -190,13 +190,13 @@ This three-craft mapping of the children's world is distinct from the three-obje
 
 | Character | Role |
 |---|---|
-| **Stefano** | Giuseppe's *padrone*; cruel; primary antagonist of the Giuseppe strand |
+| **Stephano** | Giuseppe's *padrone*; cruel; primary antagonist of the Giuseppe strand |
 | **Master Branch** | Frederick's clockmaker master; rescued him from the orphanage |
 | **Mister Twine** | Owner of the Gilbert Hotel; ally to Hannah |
 | **Miss Wool** | Hannah's hotel supervisor; harsh |
 | **Mister Stroop** | Recently-deceased hotel guest whose "treasure" drives Hannah's plot |
 | **Madame Constance Bernadette Pomeroy** | Wealthy spiritualist / medium; resident of the Gilbert Hotel's top floor; takes Hannah as assistant; co-prime mover of the convergence |
-| **Yakov** | Former Russian soldier in Madame Pomeroy's employ; gifted with precognitive dreams and visions; Pomeroy refers to him as "her golem"; shoots Stefano at the climax |
+| **Yakov** | Former Russian soldier in Madame Pomeroy's employ; gifted with precognitive dreams and visions; Pomeroy refers to him as "her golem"; shoots Stephano at the climax |
 | **Hannah's father** | A master stonemason, struck down by apoplexy, source of the hotel map |
 
 ---
@@ -205,7 +205,7 @@ This three-craft mapping of the children's world is distinct from the three-obje
 
 ### Giuseppe's strand
 
-Trafficked from Italy → enslaved to Stefano → finds the green violin in the harbor → hides earnings toward passage home → meets Hannah in the park while she searches for Stroop's treasure → meets Frederick → at the climax, a new law strips padrones of legal control over their buskers; Stefano comes to kill Giuseppe; **Yakov shoots Stefano**, saving him. After the climax, **Madame Pomeroy invites Giuseppe to travel and play the green violin for the courts of Europe**.
+Trafficked from Italy → enslaved to Stephano → finds the green violin in the harbor → hides earnings toward passage home → meets Hannah in the park while she searches for Stroop's treasure → meets Frederick → at the climax, a new law strips padrones of legal control over their buskers; Stephano comes to kill Giuseppe; **Yakov shoots Stephano**, saving him. After the climax, **Madame Pomeroy invites Giuseppe to travel and play the green violin for the courts of Europe**.
 
 ### Hannah's strand
 
@@ -232,7 +232,7 @@ Apprenticed to Master Branch → building the Clockwork Man in secret → unable
 
 **Two revision rounds are baked into this brief; the trace is left visible for the next stonemason.**
 
-This brief was prepared on 2026-06-04 in a session that had not, on first reading, searched the vault for prior work on this book. The existing Witness ([[!/WITNESS-CLOCKWORK-THREE-SYNCRETISM-2026-05-23]]) was discovered late in the session.
+This brief was prepared on 2026-06-04 in a session that had not, on first reading, searched the vault for prior work on this book. The existing Witness ([[!/WITNESS-CLOCKWORK-THREE-SYNCRETISM-2026-05-23.md]]) was discovered late in the session.
 
 **First revision (over-deference):** On discovering the Witness, the brief was rewritten to subordinate its own findings to the Witness's three-objects mapping — treating the world-of-the-children reading as "supporting detail" and the Witness's components-of-the-automaton reading as the singular "load-bearing reading for the vault." This was the opposite error of the original — over-correction by deference rather than over-reach by displacement.
 
@@ -258,5 +258,5 @@ WebFetch returned 403 on SuperSummary, the cleanest plot-summary source. Finding
 - [Book Reviews & Giveaway — The Review Broads](https://thereviewbroads.com/book-reviews-giveaway-the-clockwork-three/)
 
 ### Vault internal
-- [[!/WITNESS-CLOCKWORK-THREE-SYNCRETISM-2026-05-23]] — **Analytic 1: the components-of-the-clockwork-man reading; established prior to this brief and held alongside it**
+- [[!/WITNESS-CLOCKWORK-THREE-SYNCRETISM-2026-05-23.md]] — **Analytic 1: the components-of-the-clockwork-man reading; established prior to this brief and held alongside it**
 - [[!README.md]] — the Touchstone Tree triad (BODY / MIND / SOUL)

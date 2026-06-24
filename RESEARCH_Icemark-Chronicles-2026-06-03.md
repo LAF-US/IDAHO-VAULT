@@ -52,7 +52,7 @@ tags:
 
 | # | Title | Pub. (UK) | Notes |
 |---|---|---|---|
-| 1 | ***The Cry of the Icemark*** | 2005 | Debut; Chicken House (UK), Scholastic (US 2006) |
+| 1 | ***The Cry of the Icemark*** | 2005 | Debut; Chicken House (UK), Scholastic (US 2005; later US formats 2006) |
 | 2 | ***Blade of Fire*** | Sep 2006 | US edition Feb 2007 |
 | 3 | ***Last Battle of the Icemark*** | 2008 | US hardcover 15 Apr 2009 |
 | – | ***Prince of the Icemark*** (prequel) | 6 Jun 2013 | Set ~20 years before book 1; ~250 pp |
@@ -71,7 +71,7 @@ The series has been translated into roughly **15 languages**. No spin-offs, nove
 - **The Icemark**: a northern kingdom whose culture is broadly **Saxon-inspired**. ([Icemark Fandom](https://theicemarkchronicles.fandom.com/wiki/The_Cry_Of_The_Icemark), [TVTropes](https://tvtropes.org/pmwiki/pmwiki.php/Literature/TheIcemarkChronicles))
 - The antagonist **Polypontian Empire** is **Rome-inspired** — a disciplined imperial military power.
 - The vassal **Hypolitan** echo ancient Greek **Amazons**.
-- Non-human allies live around "**the Hub of the World**" — including talking **Snow Leopards**, **werewolves**, and **vampires**. ([Wikipedia: The Cry of the Icemark](https://en.wikipedia.org/wiki/The_Cry_of_the_Icemark))
+- Non-human allies include the talking **Snow Leopards** of "**the Hub of the World**" (whom Thirrin travels there to enlist) and, among the later reinforcements from the **Land-of-the-Ghosts**, **werewolves** and **vampires**. ([Wikipedia: The Cry of the Icemark](https://en.wikipedia.org/wiki/The_Cry_of_the_Icemark))
 - Hill's classics/ancient-history training shows in the world's structural debts; reviewers and Hill himself name **Tolkien, C.S. Lewis, H. Rider Haggard, and Margaret Abbey** as influences. ([Encyclopedia.com](https://www.encyclopedia.com/children/scholarly-magazines/hill-stuart-1958))
 
 ---
@@ -124,14 +124,14 @@ Sources: [Wikipedia: The Cry of the Icemark](https://en.wikipedia.org/wiki/The_C
 
 - **February 2005**: **Fox 2000 Pictures** optioned film rights, with **Courtney Pledger** and **Sarah Radclyffe** (Jigsaw Films, London) attached to produce. ([Variety, Feb 2005](https://variety.com/2005/film/features/fox-2000-hot-for-icemark-1117918596/))
 - **Michael Hirst** (*The Tudors*, *Vikings*) was reportedly attached as screenwriter. ([Hollywood Spy, 2009](https://hollywood-spy.blogspot.com/2009/07/cry-of-icemark-on-film.html)) — confidence: medium, single secondary source.
-- **Status as of 2026**: never produced. Fox 2000 was shut down by Disney in 2020, effectively ending the project's home studio. No subsequent option, reboot, or TV deal has been publicly announced. ([MovieWeb](https://movieweb.com/fox-2000-options-the-cry-of-the-icemark/))
+- **Status as of 2026**: never produced. Fox 2000 was wound down by Disney — its final release came in May 2021 — effectively ending the project's home studio. No subsequent option, reboot, or TV deal has been publicly announced. ([MovieWeb](https://movieweb.com/fox-2000-options-the-cry-of-the-icemark/))
 
 ---
 
 ## Current status
 
 - No new Icemark titles since *Prince of the Icemark* (2013). The series appears complete.
-- The books remain in print via Chicken House in the UK; covers have been reissued. ([Chicken House author page](https://www.chickenhousebooks.com/authors/stuart-hill/))
+- The books remain available via Chicken House in the UK (ebook, with selected print editions reissued). ([Chicken House author page](https://www.chickenhousebooks.com/authors/stuart-hill/))
 - Hill remains listed with **Authors Aloud UK** as a school-visit speaker, indicating he is still publicly active. ([Authors Aloud UK](https://authorsalouduk.co.uk/speaker/stuart-hill/))
 
 ---
