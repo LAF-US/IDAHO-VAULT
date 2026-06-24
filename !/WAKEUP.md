@@ -51,13 +51,13 @@ Use this precedence order:
 5. generated discovery surfaces
 6. historical notes, branch artifacts, handoff drafts, and exploratory docs
 
-Historical or exploratory material is not automatically live doctrine.
+Historical or exploratory material is not automatically authoritative doctrine.
 
-## Current Orientation
+## Repository Orientation
 
 - The repository is `github.com/LAF-US/IDAHO-VAULT`.
 - The broader `LAF-US` model includes both a repo layer and a team layer.
-- The Five Cores doctrine and current migration note live in
+- The Five Cores doctrine and dated migration record are documented in
   `!/LAF-USB-FIVE-CORES-MIGRATION-2026-04-15.md`.
 - The narrow connector posture in this repo is local to `IDAHO-VAULT`; it does
   not define the whole `LAF-US` world.
@@ -65,15 +65,16 @@ Historical or exploratory material is not automatically live doctrine.
 ## Do Not Assume
 
 - Do not assume older path references under `!/` are current governance files.
-  Current live startup and governance surfaces are `!/README.md` plus root
-  `CONSTITUTION.md`, `DECISIONS.md`, and `VAULT-CONVENTIONS.md` unless a live
-  surface says otherwise.
+  Canonical startup and governance surfaces are root `AGENTS.md`, this
+  `!/WAKEUP.md`, `!/README.md`, and root `CONSTITUTION.md`, `DECISIONS.md`, and
+  `VAULT-CONVENTIONS.md` unless Logan or canonical governance explicitly
+  changes that order.
 - Do not assume `!README.md` is the required startup path. It is Touchstone
   context and should be read when the task actually needs Tree or narrative
   orientation.
-- Do not assume historical CrewAI harbor notes are live. Treat them as
-  historical unless `.crewai/MANIFEST.md` or `!/AGENTS.md` explicitly says they
-  are current.
+- Do not assume historical CrewAI harbor notes are authoritative. Treat them as
+  historical unless Logan or canonical governance explicitly reclassifies
+  them.
 - Do not assume generated discovery files are handwritten truth. `!/agents.json`
   is generated from `swarm.json` for reference only and is not executable startup.
 - Do not assume connector language by itself explains the org. GitHub, Linear,
@@ -83,14 +84,14 @@ Historical or exploratory material is not automatically live doctrine.
 ## When Work Resolves
 
 - Do not confuse survival with legitimacy. A branch that still exists is not
-  automatically `live`.
+  automatically authoritative or operative.
 - Treat branches as temporary by default.
 - Resolve work explicitly as `merged`, `superseded`, `archived`, `abandoned`,
   `dormant`, or `reactivated`.
-- Return to the active live surface, usually `main`, unless Logan has named a
-  different standing branch.
+- Return to `main` after explicit promotion unless Logan has named a different
+  standing branch.
 - Treat historical personae, recovered chambers, and older lore as archived by
-  default unless a live surface explicitly reactivates them.
+  default unless Logan or canonical governance explicitly reactivates them.
 - If promotion, burial, or reactivation affects canon, Logan decides which
   ending applies.
 
@@ -100,3 +101,10 @@ If you are still confused after reading the orientation documents, stop, state t
 conflict explicitly, and ask Logan rather than silently choosing a stale model.
 
 The point of this file is not poetry. It is to prevent false certainty.
+
+## Runtime Evidence Rule
+
+No durable roster, registry, census, branch, status field, or surviving file
+proves that an agent instance is running now. Present activity may be established
+only from the current thread, direct runtime evidence, or Logan's statement.
+Those observations do not become continuing liveness claims when written down.
