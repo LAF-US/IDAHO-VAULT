@@ -53,14 +53,15 @@ Master index for Kanto's Gym Leaders, Elite Four, and Champion across all epochs
 
 | # | Member | Type | E1 | E2 | E3 |
 |---|--------|------|----|----|----|
-| 1 | **Lorelei** | Water/Ice | Yes | Yes | No |
-| 2 | **Bruno** | Fighting | Yes | Yes | No |
-| 3 | **Agatha** | Ghost/Poison | Yes | Yes | No |
-| 4 | **Lance** | Dragon | Yes | Yes | No |
+| 1 | **Lorelei** | Water/Ice | Yes | No | Yes |
+| 2 | **Bruno** | Fighting | Yes | Yes | Yes |
+| 3 | **Agatha** | Ghost/Poison | Yes | No | Yes |
+| 4 | **Lance** | Dragon | Yes | Champion | Yes |
 
 ### Notes
-### Notes
-In Let's Go, the Elite Four remains the same (Lorelei, Bruno, Agatha, Lance). Champion is **Trace** instead of Blue.
+- **E1** = Generation I (RBY/FRLG). **E2** = Generation II (GSC). **E3** = Generation VII (Let's Go).
+- In **Generation II**, the Indigo Plateau Elite Four is Will, Koga, Bruno, and Karen — so Lorelei and Agatha are **absent** (No) in E2, and Lance serves as **Champion** rather than an Elite Four member. Only Bruno carries over as an Elite Four member.
+- In **Let's Go (E3)**, the Elite Four remains Lorelei, Bruno, Agatha, and Lance (all present). Only the Champion changes — **Trace** instead of Blue. This matches `KANTO-ANALYSIS-REPORT-june4-2026.md`.
 
 ### Individual Files
 - [x] Lorelei (COMPLETED)

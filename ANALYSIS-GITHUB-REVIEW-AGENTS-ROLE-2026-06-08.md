@@ -72,7 +72,7 @@ Review agents:
 
 4. **Feedback Loop Broken**: Review agents provided comments but did not enforce verification gates
 
-5. **No Cross-File Consistency Checks**: Agents did not validate data consistency across the 30 files in PR #474 (20 Kanto files, 12 non-Kanto files)
+5. **No Cross-File Consistency Checks**: Agents did not validate data consistency across the 32 files in PR #474 (20 Kanto files, 12 non-Kanto files)
 
 ### Contributing Factors from Vault Governance
 
@@ -128,7 +128,7 @@ The review agents were **supposed to be the verification pipeline** that caught 
 ## VI. CORRECTIVE ACTIONS FOR REVIEW AGENTS
 
 ### Immediate (PR #474)
-1. **Re-open all 54 P2 review threads** as merge-blocking
+1. **Mark all 54 open P2 review threads** as merge-blocking and assign owners
 2. **Require canonical source verification** for each claimed Pokémon fact
 3. **Do not allow merge** until all factual errors are resolved
 4. **Document verification sources** in each review comment

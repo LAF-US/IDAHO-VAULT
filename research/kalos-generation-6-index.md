@@ -50,13 +50,13 @@ Master index for Kalos's Gym Leaders, Elite Four, and Champion.
 | # | Member | Type | E1 |
 |---|--------|------|----|
 | 1 | **Malva** | Fire | Yes |
-| 2 | **Siegfried** | Steel | Yes |
+| 2 | **Siebold** | Water | Yes |
 | 3 | **Wikstrom** | Steel | Yes |
 | 4 | **Drasna** | Dragon | Yes |
 
 ### Individual Files
 - [ ] Malva
-- [ ] Siegfried
+- [ ] Siebold
 - [ ] Wikstrom
 - [ ] Drasna
 
@@ -88,4 +88,4 @@ Master index for Kalos's Gym Leaders, Elite Four, and Champion.
 1. Start with **Viola** (Santalune City Gym Leader)
 2. Use Misty template
 
-*Last updated: June 3, 2026*
+*Last updated: June 4, 2026*

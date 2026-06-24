@@ -10,9 +10,9 @@
 
 ## Structure
 
-Master index for Alola's Island Kahunas, Elite Four, and Champion.
+Master index for Alola's Island Kahunas, Trial Captains, Elite Four, and Champion.
 
-**Note**: Alola does NOT have traditional Gym Leaders. Instead, it features Island Trials and Island Kahunas.
+**Note**: Alola does NOT have traditional Gym Leaders. Instead, it features Island Trials run by **Trial Captains**, with each island's challenge culminating in a Grand Trial against that island's **Island Kahuna**.
 
 ### Epochs
 
@@ -23,51 +23,71 @@ Master index for Alola's Island Kahunas, Elite Four, and Champion.
 
 ---
 
-## Island Kahunas (8)
+## Island Kahunas (4)
 
 | # | Kahuna | Island | Type | Z-Crystal | E1 | E2 |
 |---|--------|--------|------|-----------|----|----|
 | 1 | **Hala** | Melemele Island | Fighting | Fightinium Z | Yes | Yes |
-| 2 | **Lana** | Akala Island | Water | Waterium Z | Yes | Yes |
-| 3 | **Kiawe** | Akala Island | Fire | Firium Z | Yes | Yes |
-| 4 | **Mallow** | Akala Island | Grass | Grassium Z | Yes | Yes |
-| 5 | **Sophocles** | Ula'ula Island | Electric | Electrium Z | Yes | Yes |
-| 6 | **Acerola** | Ula'ula Island | Ghost | Ghostium Z | Yes | Yes |
-| 7 | **Nanu** | Poni Island | Ice | Icium Z | Yes | Yes |
-| 8 | **Hapu** | Poni Island | Ground | Groundium Z | Yes | Yes |
+| 2 | **Olivia** | Akala Island | Rock | Rockium Z | Yes | Yes |
+| 3 | **Nanu** | Ula'ula Island | Dark | Darkinium Z | Yes | Yes |
+| 4 | **Hapu** | Poni Island | Ground | Groundium Z | Yes | Yes |
 
 ### Notes
-- Melemele Island: 1 Kahuna (Hala)
-- Akala Island: 3 Kahunas (Lana, Kiawe, Mallow)
-- Ula'ula Island: 2 Kahunas (Sophocles, Acerola)
-- Poni Island: 2 Kahunas (Nanu, Hapu)
+- Each of Alola's four islands has exactly one Island Kahuna: Hala (Melemele), Olivia (Akala), Nanu (Ula'ula), Hapu (Poni).
+- Nanu specializes in **Dark** types on **Ula'ula** Island (not Ice/Poni).
 
 ### Individual Files
 - [ ] Hala
-- [ ] Lana
-- [ ] Kiawe
-- [ ] Mallow
-- [ ] Sophocles
-- [ ] Acerola
+- [ ] Olivia
 - [ ] Nanu
 - [ ] Hapu
 
 ---
 
+## Trial Captains (7)
+
+These characters run Island Trials; they are **not** Island Kahunas.
+
+| Captain | Island | Type |
+|---------|--------|------|
+| **Ilima** | Melemele | Normal |
+| **Lana** | Akala | Water |
+| **Kiawe** | Akala | Fire |
+| **Mallow** | Akala | Grass |
+| **Sophocles** | Ula'ula | Electric |
+| **Acerola** | Ula'ula | Ghost |
+| **Mina** | Poni | Fairy |
+
+### Individual Files
+- [ ] Ilima
+- [ ] Lana
+- [ ] Kiawe
+- [ ] Mallow
+- [ ] Sophocles
+- [ ] Acerola
+- [ ] Mina
+
+---
+
 ## Elite Four (4)
 
-| # | Member | Type | E1 | E2 |
-|---|--------|------|----|----|
-| 1 | **Hala** | Fighting | Yes | Yes |
-| 2 | **Lana** | Water | Yes | Yes |
-| 3 | **Kiawe** | Fire | Yes | Yes |
-| 4 | **Acerola** | Ghost | Yes | Yes |
+| # | Member | Type | E1 (SM) | E2 (USUM) |
+|---|--------|------|---------|-----------|
+| 1 | **Hala** (SM) / **Molayne** (USUM) | Fighting (Hala) / Steel (Molayne) | Yes (Hala) | Yes (Molayne) |
+| 2 | **Olivia** | Rock | Yes | Yes |
+| 3 | **Acerola** | Ghost | Yes | Yes |
+| 4 | **Kahili** | Flying | Yes | Yes |
+
+### Notes
+- Sun/Moon Elite Four: Hala, Olivia, Acerola, Kahili.
+- Ultra Sun/Ultra Moon: Molayne (Steel) replaces Hala; Olivia, Acerola, and Kahili remain.
 
 ### Individual Files
 - [ ] Hala
-- [ ] Lana
-- [ ] Kiawe
+- [ ] Molayne
+- [ ] Olivia
 - [ ] Acerola
+- [ ] Kahili
 
 ---
 
@@ -90,10 +110,11 @@ Master index for Alola's Island Kahunas, Elite Four, and Champion.
 
 | Category | Total | Completed | Remaining | % |
 |----------|-------|-----------|-----------|---|
-| Island Kahunas | 8 | 0 | 8 | 0% |
-| Elite Four | 4 | 0 | 4 | 0% |
+| Island Kahunas | 4 | 0 | 4 | 0% |
+| Trial Captains | 7 | 0 | 7 | 0% |
+| Elite Four | 5 | 0 | 5 | 0% |
 | Champion | 1 | 0 | 1 | 0% |
-| **Total** | **13** | **0** | **13** | **0%** |
+| **Total** | **17** | **0** | **17** | **0%** |
 
 ---
 
@@ -101,4 +122,4 @@ Master index for Alola's Island Kahunas, Elite Four, and Champion.
 1. Start with **Hala** (Melemele Island Kahuna)
 2. Use adapted template for Island Kahunas
 
-*Last updated: June 3, 2026*
+*Last updated: June 4, 2026*

@@ -37,9 +37,9 @@
 ### Generation II (Gym Leader)
 - **Games**: Gold, Silver, Crystal
 - **Location**: Viridian Gym (replaces Giovanni)
-- **Team**: Pidgeot (Lv. 45), Alakazam (Lv. 43), Rhydon (Lv. 45), Exeggutor (Lv. 47), Gyarados (Lv. 45), Starter (Lv. 47)
+- **Team**: Pidgeot (Lv. 56), Alakazam (Lv. 54), Rhydon (Lv. 56), Gyarados (Lv. 58), Arcanine (Lv. 58), Exeggutor (Lv. 58)
 - **Reward**: Earth Badge, TM01 (Dynamic Punch)
-- **Notable**: Strongest Gym Leader in Kanto
+- **Notable**: Strongest Gym Leader in Kanto. As Viridian Gym Leader he uses a fixed high-level roster including Arcanine — not a low-level, starter-based Champion-style team
 
 ### Generation III (Remakes)
 - **Games**: FireRed, LeafGreen
@@ -59,13 +59,24 @@
 
 ## Teams and Battle Strategies
 
+### Core Team Across Games
+
+| Pokémon | Type | Role / Notes |
+|---------|------|--------------|
+| Pidgeot | Normal/Flying | Always present; lead Flying sweeper |
+| Alakazam | Psychic | Powerful special Psychic attacker |
+| Rhydon | Ground/Rock | Physical wall and attacker |
+| Exeggutor | Grass/Psychic | Bulky Grass/Psychic coverage |
+| Gyarados | Water/Flying | Water/Flying offense |
+| Starter | Fire / Grass / Water | Branching: Charizard (Fire/Flying) / Venusaur (Grass/Poison) / Blastoise (Water) — Champion battles only; replaced by Arcanine (Fire) in his Gen II+ Viridian Gym team |
+
 ### Signature Pokémon
 - Pidgeot (always present)
 - Alakazam (powerful Psychic)
 - Rhydon (powerful Ground)
 - Exeggutor (Grass/Psychic)
 - Gyarados (Water/Flying)
-- Starter (Charizard/Venusaur/Blastoise)
+- Starter (Charizard/Venusaur/Blastoise) — Champion battles; Arcanine in the Gen II+ Viridian Gym
 
 ### Strategy
 - Type advantage starter choice

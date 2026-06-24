@@ -36,10 +36,14 @@
 - **Notable**: Gym features teleportation puzzles; all trainers use Psychic-types
 
 ### Generation II (Gold, Silver, Crystal)
-- **Location**: Saffron Gym
-- **Team**: Same as Generation I
-- **Reward**: Marsh Badge, TM04 (Calm Mind)
-- **Notable**: Can be challenged in any order after obtaining 8 badges
+- **Location**: Saffron Gym (Kanto postgame)
+- **Team**: 
+  - Espeon (Lv. 46) - Confusion, Quick Attack, Swift, Psybeam
+  - Slowbro (Lv. 46) - Psychic, Disable, Surf, Amnesia
+  - Mr. Mime (Lv. 46) - Psychic, Barrier, Light Screen, Reflect
+  - Alakazam (Lv. 48) - Psychic, Future Sight, Recover, Reflect
+- **Reward**: Marsh Badge, TM29 (Psychic)
+- **Notable**: Kanto postgame team with the Generation II addition Espeon, not her Gen I lineup. Calm Mind / TM04 did not exist in Generation II
 
 ### Generation III (FireRed, LeafGreen)
 - **Location**: Saffron Gym
@@ -82,12 +86,16 @@
 |------|---------|-------|------|-------|
 | RBY | Kadabra | 38 | Psychic | Disable, Psybeam, Recover, Psychic |
 | RBY | Venomoth | 37 | Bug/Poison | Poison Powder, Leech Life, Stun Spore, Psybeam |
-| RBY | Mr. Mime | 38 | Psychic/Fairy | Confusion, Barrier, Light Screen, Double Slap |
+| RBY | Mr. Mime | 38 | Psychic | Confusion, Barrier, Light Screen, Double Slap |
 | RBY | Alakazam | 43 | Psychic | Psybeam, Recover, Psywave, Reflect |
 | FRLG | Kadabra | 38 | Psychic | Psybeam, Reflect, Future Sight, Calm Mind |
-| FRLG | Mr. Mime | 37 | Psychic/Fairy | Barrier, Psybeam, Baton Pass, Calm Mind |
+| FRLG | Mr. Mime | 37 | Psychic | Barrier, Psybeam, Baton Pass, Calm Mind |
 | FRLG | Venomoth | 38 | Bug/Poison | Psybeam, Gust, Leech Life, Supersonic |
 | FRLG | Alakazam | 43 | Psychic | Psychic, Recover, Future Sight, Calm Mind |
+| GSC | Espeon | 46 | Psychic | Confusion, Quick Attack, Swift, Psybeam |
+| GSC | Slowbro | 46 | Water/Psychic | Psychic, Disable, Surf, Amnesia |
+| GSC | Mr. Mime | 46 | Psychic | Psychic, Barrier, Light Screen, Reflect |
+| GSC | Alakazam | 48 | Psychic | Psychic, Future Sight, Recover, Reflect |
 | HGSS | Same as FRLG | - | - | - |
 | LGPE | Abra | 38 | Psychic | Various |
 | LGPE | Kadabra | 38 | Psychic | Various |

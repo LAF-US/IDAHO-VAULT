@@ -29,16 +29,15 @@
 ### Generation VII (Let's Go, Pikachu! and Eevee!)
 - **Location**: Indigo Plateau (as Champion)
 - **Role**: Pokémon Champion
-- **Team**: 
-  - Rhydon (Lv. 50) - Ground/Rock
-  - Tauros (Lv. 66) - Normal
-  - Gyarados (Lv. 66) - Water/Flying
-  - Aerodactyl (Lv. 66) - Rock/Flying
-  - Alakazam (Lv. 66) - Psychic
-  - Exeggutor (Lv. 66) - Grass/Psychic
-  - Charizard (Lv. 68) - Fire/Flying
+- **Team** (six Pokémon): 
+  - Pidgeot (Lv. 63) - Normal/Flying
+  - Alakazam (Lv. 63) - Psychic
+  - Exeggutor (Lv. 63) - Grass/Psychic
+  - Gyarados (Lv. 63) - Water/Flying
+  - Arcanine (Lv. 63) - Fire
+  - Charizard (Lv. 66) - Fire/Flying (starter; mirrors the player's partner choice)
 - **Reward**: Championship title
-- **Notable**: Can be rematched at Pokémon League to reclaim title
+- **Notable**: Like Blue, Trace fields a standard six-Pokémon Champion party. Can be rematched at the Pokémon League to reclaim the title
 
 ### Other Appearances
 - None (exclusive to Let's Go games)
@@ -51,29 +50,26 @@
 
 | Pokémon | Level | Type | Notes |
 |---------|-------|------|-------|
-| Rhydon | 50 | Ground/Rock | First Pokémon sent out |
-| Tauros | 66 | Normal | High Attack, physical sweeper |
-| Gyarados | 66 | Water/Flying | Intimidate ability, mixed coverage |
-| Aerodactyl | 66 | Rock/Flying | Fast, high Attack |
-| Alakazam | 66 | Psychic | Special attacker, high Speed |
-| Exeggutor | 66 | Grass/Psychic | Bulky, Sleep Powder user |
-| Charizard | 68 | Fire/Flying | Highest level, lead Pokémon in some battles |
+| Pidgeot | 63 | Normal/Flying | Lead Flying-type |
+| Alakazam | 63 | Psychic | Special attacker, high Speed |
+| Exeggutor | 63 | Grass/Psychic | Bulky, Sleep Powder user |
+| Gyarados | 63 | Water/Flying | Intimidate ability, mixed coverage |
+| Arcanine | 63 | Fire | Physical Fire attacker |
+| Charizard | 66 | Fire/Flying | Starter; mirrors the player's partner choice |
 
 ### Battle Strategy
 Trace's battle strategy is characterized by:
-1. Type diversity across team (7 different types)
+1. Type diversity across a standard six-Pokémon team
 2. Mixed physical and special attackers
 3. High-level Pokémon (Lv. 66-68)
 4. Coverage of multiple types
 5. Status moves (Intimidate from Gyarados)
 
 ### Recommended Counters
-- Ice-types: Super effective against Charizard, Aerodactyl, Gyarados
-- Water-types: Super effective against Charizard, Rhydon
-- Electric-types: Super effective against Gyarados
-- Fighting-types: Super effective against Tauros, Rhydon
-- Dark-types: Super effective against Alakazam
-- Bug-types: Super effective against Exeggutor
+- Ice-types: Super effective against Charizard, Pidgeot, Gyarados
+- Water/Rock-types: Super effective against Charizard and Arcanine
+- Electric-types: Super effective against Gyarados and Pidgeot
+- Dark/Bug-types: Super effective against Alakazam and Exeggutor
 - Steel-types: Resist multiple types on his team
 
 ---

@@ -21,7 +21,9 @@ This report documents the implementation of fixes identified in **AUDIT-FINDINGS
 
 ---
 
-## ✅ IMPLEMENTATION COMPLETED
+## ✅ COMPLETED SO FAR
+
+> Note: This section lists only the work already finished. Remaining fixes are tracked as Pending in the Implementation Plan and Progress Tracker below; the overall status is **Implementation In Progress**.
 
 ### 1. Audit Findings Report Created
 - **File**: `research/AUDIT-FINDINGS-kanto-june4-2026.md`
@@ -50,10 +52,10 @@ This report documents the implementation of fixes identified in **AUDIT-FINDINGS
 - **Impact**: Matches all other Kanto files
 - **Status**: ⏳ Pending
 
-#### Fix 3: Sabrina Japanese Name
-- **File**: `research/sabrina-saffron-gym-leader.md`
-- **Change**: Update Japanese name from `ナツメ *Natsume*` to `サツキ *Satsuki*`
-- **Reason**: Currently conflicts with Agatha's Japanese name (both are ナツメ)
+#### Fix 3: Japanese Name Conflict (Sabrina vs Agatha)
+- **Files**: `research/sabrina-saffron-gym-leader.md`, `research/agatha-elite-four.md`
+- **Change**: Keep Sabrina = `ナツメ *Natsume*` (correct); correct Agatha to `キクコ *Kikuko*` (her canonical Japanese name)
+- **Reason**: Both profiles previously listed ナツメ (Natsume); Agatha's name was wrong. Each profile's Overview and Name-Origin sections must match.
 - **Status**: ⏳ Pending
 
 ---
@@ -144,11 +146,11 @@ This report documents the implementation of fixes identified in **AUDIT-FINDINGS
 
 | Fix # | Description | Files Affected | Status | Notes |
 |-------|-------------|----------------|--------|-------|
-| 1 | Misty TOC - Add References | 1 | ⏳ | Critical |
+| 1 | Misty TOC - Add References | 1 | ✅ | Critical |
 | 2 | Misty section header | 1 | ⏳ | Critical |
-| 3 | Sabrina Japanese name | 1 | ⏳ | Critical |
+| 3 | Japanese names (Agatha → キクコ Kikuko) | 2 | ⏳ | Critical |
 | 4 | Add Type column to tables | 5 | ⏳ | Moderate |
-| 5 | Update dates to June 4 | 6 | ⏳ | Moderate |
+| 5 | Update dates to June 4 | 6 | ✅ | Moderate |
 | 6 | Standardize Generation labels | 14 | ⏳ | Moderate |
 | 7 | Standardize References | 14 | ⏳ | Moderate |
 | 8 | Add Manga to Misty | 1 | ⏳ | Minor |
@@ -195,10 +197,11 @@ This report documents the implementation of fixes identified in **AUDIT-FINDINGS
 # Change: June 3, 2026 -> June 4, 2026
 ```
 
-#### Sabrina File (research/sabrina-saffron-gym-leader.md):
+#### Japanese Name Files:
 ```bash
-# Update Japanese name (line ~7)
-# Change: Japanese: ナツメ *Natsume* -> Japanese: サツキ *Satsuki*
+# Sabrina (research/sabrina-saffron-gym-leader.md): keep Japanese: ナツメ *Natsume* (correct)
+# Agatha (research/agatha-elite-four.md): correct Japanese name to キクコ *Kikuko*
+# Ensure Overview and Name Origin sections match within each file
 ```
 
 #### Team Table Fixes (5 files):
@@ -216,7 +219,7 @@ For each file's Core Team table:
 #### Date Updates (6 files):
 ```bash
 # Change last line from:
-*Last updated: June 3, 2026*
+*Last updated: June 4, 2026*
 # To:
 *Last updated: June 4, 2026*
 ```
@@ -229,7 +232,7 @@ Before considering implementation complete, verify:
 
 - [ ] All 14 files have consistent TOC with 7 sections
 - [ ] All files use "Anime and Manga Appearances" section header
-- [ ] Sabrina's Japanese name is unique (サツキ *Satsuki*)
+- [ ] Japanese names are correct and distinct (Sabrina = ナツメ Natsume, Agatha = キクコ Kikuko)
 - [ ] All team tables include Type column
 - [ ] All files have updated date: June 4, 2026
 - [ ] All Generation labels use consistent format

@@ -89,4 +89,4 @@ Master index for Sinnoh's Gym Leaders, Elite Four, and Champion.
 1. Start with **Roark** (Oreburgh City Gym Leader)
 2. Use Misty template
 
-*Last updated: June 3, 2026*
+*Last updated: June 4, 2026*

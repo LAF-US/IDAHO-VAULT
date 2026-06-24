@@ -90,4 +90,4 @@ Master index for Johto's Gym Leaders, Elite Four, and Champion across all epochs
 1. Start with **Falkner** (Violet City Gym Leader)
 2. Use Misty template
 
-*Last updated: June 3, 2026*
+*Last updated: June 4, 2026*

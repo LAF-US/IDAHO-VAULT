@@ -36,9 +36,9 @@
 
 ### Generation II
 - **Games**: Gold, Silver, Crystal
-- **Location**: Pewter Gym
-- **Team**: Geodude (Lv. 12), Onix (Lv. 14)
-- **Notable**: Can be challenged in any order (except Viridian)
+- **Location**: Pewter Gym (Kanto postgame)
+- **Team**: Graveler (Lv. 41), Graveler (Lv. 41), Rhyhorn (Lv. 41), Omastar (Lv. 42), Kabutops (Lv. 42), Onix (Lv. 44)
+- **Notable**: As a Kanto postgame Gym Leader, Brock fields a higher-level six-Pokémon Rock team, not his Gen I Pewter opener. Can be challenged in any order (except Viridian)
 
 ### Generation III (Remakes)
 - **Games**: FireRed, LeafGreen
