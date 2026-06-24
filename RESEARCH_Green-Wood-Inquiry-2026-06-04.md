@@ -72,7 +72,7 @@ This is an **a fortiori** argument — from the greater case to the lesser. The 
 
 The "green" here is **moral aliveness, the state of being still in God's life**. The "dry" is the state of having been cut off from that life — wood that no longer participates in the sap, no longer rises, no longer leafs out. ([Luke 23:31 commentaries — Bible Hub](https://biblehub.com/commentaries/luke/23-31.htm))
 
-A scriptural binary: green = participating; dry = condemned. Hill's Christ-as-green-tree is the founding theological deployment of the binary in the Western tradition.
+A scriptural binary: green = participating; dry = condemned. The Christ-as-green-tree reading is the founding theological deployment of the binary in the Western tradition.
 
 ---
 
@@ -90,7 +90,7 @@ The wood Stradivari used is **slow-grown, cold-locked, dense-and-light** — nei
 
 ## VI. Strand E — Emerald lumber (Snicket / VFD canon)
 
-In **Lemony Snicket's *A Series of Unfortunate Events*** (2003 onward, with surrounding paratexts including *The Beatrice Letters*, *The Incomplete History of Secret Organizations*, and the prequel series *All the Wrong Questions*), green wood appears under the in-canon term **"emerald lumber."**
+In **Lemony Snicket's *A Series of Unfortunate Events*** (1999 onward (*The Bad Beginning*; series 1999–2006), with surrounding paratexts including *The Beatrice Letters*, *The Incomplete History of Secret Organizations*, and the prequel series *All the Wrong Questions*), green wood appears under the in-canon term **"emerald lumber."**
 
 Per the in-universe document *The History of Lucky Smells Lumbermill*, **the mill in Paltryville supplied the special "emerald lumber" used to build the Baudelaire, Snicket, and Quagmire mansions** — the three founding volunteer families' homes — and also the **Hotel Denouement** (the great VFD safehouse-and-library) and the **Opportune Odors Horseradish Factory**. ([Lucky Smells Lumbermill — Lemony Snicket Wiki](https://snicket.fandom.com/wiki/Lucky_Smells_Lumbermill); [The History of Lucky Smells Lumbermill — Lemony Snicket Wiki](https://snicket.fandom.com/wiki/The_History_of_Lucky_Smells_Lumbermill))
 
