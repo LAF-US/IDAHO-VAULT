@@ -1,6 +1,16 @@
+---
+title: "Python for AI/ML: The Dominant Language of 2026"
+date: 2026-06-05
+author: "Mistral (AI agent)"
+authority: LOGAN
+status: draft
+---
+
 # Python for AI/ML: The Dominant Language of 2026
 
 *Report Date: June 5, 2026*
+
+*Author: Mistral (AI agent) · Authority: LOGAN*
 
 ---
 
@@ -9,9 +19,9 @@
 **Python is the overwhelming language of choice for AI and machine learning in 2026**, powering approximately 95% of multi-agent coordination frameworks and the vast majority of AI research and production systems.
 
 ### Key Statistics
-- **6 out of 7** major AI agent frameworks use Python as their primary language
-- **370K+ GitHub stars** for OpenClaw (fastest-growing AI agent project)
-- **135K+ GitHub stars** for Hermes Agent (fastest-growing in 2026)
+- **6 out of 7** major AI agent frameworks use Python as their primary language (the remaining one, OpenClaw, is a Node/TypeScript project)
+- **370K+ GitHub stars** for OpenClaw (fastest-growing AI agent project — note: TypeScript/Node, not Python)
+- **135K+ GitHub stars** for Hermes Agent (fastest-growing Python framework in 2026)
 - **51K+ GitHub stars** for CrewAI (business automation leader)
 - **Enterprise adoption**: LangGraph and Microsoft Agent Framework are enterprise-certified
 
@@ -24,7 +34,7 @@ Python hosts the most mature ecosystem for AI/ML development:
 
 - **Deep Learning Frameworks**: PyTorch, TensorFlow, JAX
 - **LLM Libraries**: Transformers (Hugging Face), Sentence Transformers
-- **Agent Frameworks**: OpenClaw, Hermes, CrewAI, LangGraph, AutoGen
+- **Agent Frameworks**: Hermes, CrewAI, LangGraph, AutoGen (OpenClaw is a TypeScript/Node framework, often paired with Python agents)
 - **Data Processing**: Pandas, NumPy, SciPy, Dask
 - **API Clients**: OpenAI, Anthropic, Google, Mistral SDKs
 - **Async Operations**: asyncio, aiohttp for concurrent agent execution
@@ -62,7 +72,7 @@ Python enables seamless transition from research to production:
 
 | Framework | Primary Language | Secondary Language | GitHub Stars | Status |
 |-----------|------------------|-------------------|--------------|--------|
-| OpenClaw | Python | - | 370,000+ | Active |
+| OpenClaw | TypeScript/Node | Python (integrations) | 370,000+ | Active |
 | Hermes Agent | Python | - | 135,000+ | Active |
 | Hyperagents (Meta) | Python | - | N/A | Research |
 | CrewAI | Python | - | 51,000+ | Active |
@@ -70,14 +80,15 @@ Python enables seamless transition from research to production:
 | AutoGen | Python | - | N/A | Maintenance Mode |
 | Microsoft Agent Framework | Python | .NET | N/A | Active |
 
-**Result: 100% of frameworks support Python, 85.7% are Python-only**
+**Result: 6 of 7 frameworks (85.7%) use Python as their primary language; OpenClaw is primarily TypeScript/Node**
 
-### Language Distribution Analysis
-- **Python**: 6 frameworks (85.7%)
-- **Python + JavaScript**: 1 framework (LangGraph, 14.3%)
-- **Python + .NET**: 1 framework (Microsoft Agent Framework, 14.3%)
+### Language Distribution Analysis (n = 7)
+- **Python-primary**: 6 frameworks (85.7%) — Hermes, Hyperagents, CrewAI, LangGraph, AutoGen, Microsoft Agent Framework
+- **TypeScript/Node-primary**: 1 framework (OpenClaw, 14.3%)
+- **Python-only (no secondary language)**: 4 frameworks (57.1%) — Hermes, Hyperagents, CrewAI, AutoGen
+- **Python + another language**: LangGraph (Python + JavaScript) and Microsoft Agent Framework (Python + .NET)
 
-*Note: Microsoft Agent Framework is counted in both categories as it supports both Python and .NET*
+*Note: OpenClaw is a TypeScript/Node codebase (package.json, pnpm-lock.yaml, tsconfig, openclaw.mjs); it commonly integrates with Python agents but is not itself a Python framework.*
 
 ---
 
@@ -123,7 +134,7 @@ result = crew.kickoff()
 ```python
 # Example: Concurrent agent execution
 import asyncio
-from openclaw import Agent
+from my_agent_framework import Agent  # e.g. a Python agent library
 
 async def run_agents():
     agent1 = Agent(config={'model': 'gpt-4'})
@@ -150,14 +161,18 @@ asyncio.run(run_agents())
 - **Python 2.7**: Fully deprecated (EOL: January 1, 2020)
 
 ### Version Requirements by Framework
+
+*Python-based frameworks (OpenClaw is excluded — it is a TypeScript/Node project and does not declare a Python minimum):*
+
 | Framework | Minimum Python | Recommended Python |
 |-----------|----------------|-------------------|
-| OpenClaw | 3.10 | 3.11+ |
 | Hermes Agent | 3.11 | 3.11+ |
-| CrewAI | 3.8 | 3.10+ |
-| LangGraph | 3.9 | 3.11+ |
-| AutoGen | 3.8 | 3.10+ |
-| Microsoft Agent Framework | 3.9 | 3.11+ |
+| CrewAI | 3.10 | 3.10+ |
+| LangGraph | 3.10 | 3.11+ |
+| AutoGen | 3.10 | 3.10+ |
+| Microsoft Agent Framework | 3.10 | 3.11+ |
+
+*Note: CrewAI, LangGraph, AutoGen, and the Microsoft Agent Framework all declare `requires-python = ">=3.10"` in their packaging metadata.*
 
 ---
 
@@ -168,7 +183,7 @@ asyncio.run(run_agents())
 - **Cons**: 
   - Smaller AI/ML ecosystem
   - Limited deep learning framework support
-  - Fewer agent frameworks (only LangGraph supports JS)
+  - Fewer agent frameworks (e.g. OpenClaw is TypeScript/Node-native and LangGraph offers a JS port, but most are Python-first)
   - Less academic adoption
 
 ### Why Not Java?
@@ -375,11 +390,11 @@ Pythons dominance in AI and machine learning is **unmatched in 2026**. With its 
 While alternatives like JavaScript (for full-stack), .NET (for enterprise Windows), and specialized languages (for performance) have their niches, **Pythons combination of readability, flexibility, and ecosystem depth** makes it the clear winner for AI development.
 
 ### Key Takeaways
-1. **Python powers 6-7 of the 7 major AI agent frameworks**
+1. **Python is the primary language of 6 of the 7 major AI agent frameworks** (the exception, OpenClaw, is TypeScript/Node)
 2. **The ecosystem is unmatched**: PyTorch, TensorFlow, Hugging Face, LangChain, etc.
 3. **Community support is extensive**: Largest AI/ML developer community
 4. **Production ready**: Enterprise-grade frameworks (LangGraph, MS Agent Framework)
-5. **Continuing growth**: New frameworks (OpenClaw, Hermes) choosing Python
+5. **Continuing growth**: New Python frameworks (e.g. Hermes) gaining traction, while TypeScript/Node tools like OpenClaw frequently integrate with Python agents
 
 ---
 
