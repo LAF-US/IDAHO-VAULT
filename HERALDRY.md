@@ -66,11 +66,11 @@ Heraldry serves as the visual equivalent of a pedigree or genealogy:
 
 Marks to distinguish sons in order of birth:
 1. Label (first son) - horizontal bar with pendants
-2. Fleur-de-lis (second son)
-3. Crescent (third son)
-4. Mullet (fourth son) - star
+2. Crescent (second son)
+3. Mullet (third son) - star
+4. Martlet (fourth son) - footless bird
 5. Annulet (fifth son) - ring
-6. Fleur-de-lis reversed (sixth son)
+6. Fleur-de-lis (sixth son)
 7. Rose (seventh son)
 8. Cross moline (eighth son)
 9. Double quatrefoil (ninth son)
@@ -111,12 +111,12 @@ Heraldry occupies the descriptive + human quadrant, making it:
 ## Notable Examples
 
 ### Royal Heraldry
-- Royal Coat of Arms of the United Kingdom: Lion, unicorn, fleur-de-lis, harp
+- Royal Coat of Arms of the United Kingdom: English lions, Scottish lion rampant, Irish harp, with lion and unicorn supporters (the fleurs-de-lis of the old French claim were dropped in 1801)
 - Coat of Arms of Spain: Quartered with castles and lions
 - Imperial Coat of Arms of Russia: Double-headed eagle
 
 ### Family Heraldry
-- House of Habsburg: Black eagle on gold
+- House of Habsburg: the Austrian "bindenschild" (red-white-red fess); the black eagle on gold was the imperial arms of office, not the family device
 - House of Plantagenet: Three lions passant guardant
 - House of Tudor: Rose (combining red rose of Lancaster and white rose of York)
 
