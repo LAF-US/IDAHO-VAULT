@@ -131,7 +131,7 @@ Thirrin **sublates** the genre's standard horror-past-the-wall posture.
 
 - She *cancels* the cleanse-and-defeat posture her predecessors would have taken
 - She *preserves* the wall (the Icemark stays the Icemark; the Polypontus stays the threat)
-- She *lifts* the relation into the Alliance, where Vampire King, Wolffolk King, and Snow Leopard Thar are sovereigns to be treatied with, not monsters to be slaughtered
+- She *lifts* the relation into the Alliance, where Vampire King, Wolffolk King, and Snow Leopard Thar are sovereigns to be treated with, not monsters to be slaughtered
 
 The Alliance is the structural feature of the Icemark series because Thirrin made the sublation move and the genre had been taught not to.
 

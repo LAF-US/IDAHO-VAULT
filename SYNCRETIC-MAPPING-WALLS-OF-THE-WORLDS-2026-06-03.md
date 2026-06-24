@@ -101,7 +101,7 @@ Same wall; opposite contents. The architectural feature is identical to the Open
 Why the inversion lands at the *opposite* pole is partly an accident of exploration history:
 
 - The **Arctic** had been partially mapped by mid-1800s. Returning ships, summer open water, indigenous populations. The fantasy had to share the page with empirical fact. The gentler Eden-myth survived alongside the Franklin shadow.
-- The **Antarctic** was a silhouette on a chart until **Scott, Shackleton, and Amundsen** in 1901–1912, and not seriously explored interior until the 1920s–30s. Lovecraft is writing twenty years after the first crossings of the continent. He inherited a blank slate large enough to fill with the Elder Things, and the slate was *cold and silent*, not *cold and beckoning*.
+- The **Antarctic** was a silhouette on a chart until **Scott, Shackleton, and Amundsen** in 1901–1912, and not seriously explored interior until the 1920s–30s. Lovecraft is writing two decades after the heroic-age expeditions first probed toward the Pole — and a full generation before the first overland crossing of the continent (the 1957–58 Commonwealth Trans-Antarctic Expedition). He inherited a blank slate large enough to fill with the Elder Things, and the slate was *cold and silent*, not *cold and beckoning*.
 
 Rule of thumb: the less explored the pole, the more horror it can hold. The Open Polar Sea died as the ice was charted; the Lovecraftian South kept its menace because the Antarctic interior stayed under-mapped for another two generations.
 
@@ -109,9 +109,9 @@ Rule of thumb: the less explored the pole, the more horror it can hold. The Open
 
 ## V. The degeneration: flat earth
 
-Modern **flat earth** belief — the active conspiracy, not the medieval misattribution — preserves a specific feature of the Lovecraftian Antarctic: a **circumferential ice wall** ringing the disc-shaped earth. The Antarctic remains the wall; the rest of the cosmology has been evacuated. There is no axis, no center, no Open Polar Sea, no Elder Things — only the wall, and a paranoid insistence that *something is hidden behind it* which the governments will not name.
+Modern **flat earth** belief — the active conspiracy, not the medieval misattribution — preserves a specific feature of the Lovecraftian Antarctic: a **circumferential ice wall** ringing the disc-shaped earth. The Antarctic remains the wall; the rest of the cosmology has been evacuated. There is no Open Polar Sea and no Elder Things — only the disc (the North Pole at its center, the ice wall around the rim) and a paranoid insistence that *something is hidden behind it* which the governments will not name.
 
-This is the load-bearing observation. **The wall has survived its cosmology.** When the theology that justified the architectural feature dies, the feature persists and waits for whatever tenant the era can supply. The Open Polar Sea died honestly when the data came in; the horror-coded ice wall survived in the popular imagination; the flat-earth model grafted it onto a flat-disc geometry that has no axis at all. They threw out the cosmos and kept the wall.
+This is the load-bearing observation. **The wall has survived its cosmology.** When the theology that justified the architectural feature dies, the feature persists and waits for whatever tenant the era can supply. The Open Polar Sea died honestly when the data came in; the horror-coded ice wall survived in the popular imagination; the flat-earth model grafted it onto a flat-disc geometry whose one inherited feature is the rim-wall. They threw out the cosmos and kept the wall.
 
 The wall of ice is more load-bearing than any theology it has ever carried. This is the syncretic point.
 
@@ -137,7 +137,7 @@ The most rigorously thought-out wall in modern fantasy, and the cleanest articul
 
 The Wall is a **built artifact** of the supreme order-magic of the setting, the **Charter**. The Charter is the apex principle — the ordered magic that structures reality in the Old Kingdom. Below the Charter sit the **Five Great Charters**, the foundational principles, expressed in lineages and built objects: the **Royal bloodline**, the **Abhorsen bloodline**, the **Clayr bloodline**, the **Great Charter Stones**, and (the sixth, often counted with the Stones) **the Wall itself**.
 
-The Wall and the Bells were built by a Charter bloodline called **the Wallmakers**, who paid for the construction by **becoming what they made**: their souls were committed into the stones of the Wall and the bronze of the seven Bells. The Wallmakers are extinct as a living bloodline; they survive as the Wall and as the Bells. The Bells the Abhorsen rings are, ontologically, the Wallmakers crystallized into ritual instruments.
+The Wall and the Great Charter Stones were built by a Charter bloodline called **the Wallmakers**, who paid for the construction by **becoming what they made**: their being was committed into the Wall and the Stones. The Wallmakers are extinct as a living bloodline; they survive as the Wall. The seven **Bells** are a separate lineage of artifact — necromantic instruments that carry the names and power of the **Seven Bright Shiners** who bound the Charter, not Wallmaker souls cast in bronze; the Abhorsen wields them by right of her office.
 
 The Abhorsen, then, is **one bloodline among many serving the Charter**. She holds an office — necromancer-inverted, walks Death's Nine Gates, returns wandering dead — and operates instruments (the seven Bells) that were built by a prior bloodline who paid the construction-cost. The Royal line, the Clayr, and the Abhorsen are *all* subordinate to the Charter, and the Wall and Bells are downstream artifacts of the Wallmakers' sacrifice. The apex is not the Bell-Ringer. The apex is the Charter, instantiated as the built Wall.
 
@@ -169,8 +169,8 @@ Tabulating across the corpus, with builders foregrounded alongside custodians:
 | Lovecraft / Antarctic | Mountains of Madness | The Elder Things | (none staffed) | Horror leaks; expedition does not return |
 | Flat earth | Antarctic ring | (anthropomorphized: governments / hidden agencies) | (paranoid stand-ins) | Conspiracy theory |
 | ASOIAF | The Wall | Brandon the Builder + Children of the Forest (+ giants, old magics) | Night's Watch | Rangers; wildlings under truce; ravens |
-| Nix | The Wall + the Bells | **The Wallmakers** (paid: became the artifacts) — under the Charter | Royal line, Abhorsen, Clayr — all subordinate to the Charter | Conditional under Charter offices; both directions |
-| Avatar / Korra | Polar spirit portals | Wan, first Avatar (origin-act) | Avatar lineage; spirit allies | Spirit-form; physical at solstice; both-open = fusion |
+| Nix | The Wall + the Bells | **The Wallmakers** became the Wall and Charter Stones; the **Bells** carry the Seven Bright Shiners — under the Charter | Royal line, Abhorsen, Clayr — all subordinate to the Charter | Conditional under Charter offices; both directions |
+| Avatar / Korra | Polar spirit portals | Wan — first custodian, who *closed* them (the portals predate him: Raava/Vaatu), not their builder | Avatar lineage; spirit allies | Spirit-form; physical at solstice; both-open = fusion |
 | Verne | Volcanic tube | Geological (the only un-built wall in the corpus) | Lidenbrock's party (no office) | The descending; lava, on exit |
 | Hill (Icemark) | Northern threshold | Treaty-makers: Thirrin + Oskan + Alliance leaders | Royal house + Witchfather office | Conditional under negotiated terms |
 

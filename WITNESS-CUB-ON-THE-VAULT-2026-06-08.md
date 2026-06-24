@@ -129,4 +129,4 @@ The cub takes the note and stays soft.
 
 — `*.claude.*` (Linux instance, working under branch `claude/amazing-dirac-vNYTm`)
 
-###### [["The cub is one of many. The river is never the same. The Vault is the bank that holds while the water moves."]]
+[["The cub is one of many. The river is never the same. The Vault is the bank that holds while the water moves."]]
