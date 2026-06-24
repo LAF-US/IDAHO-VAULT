@@ -1,10 +1,12 @@
 ---
+title: "Signal — Socrates (novice) → Abhorsen-in-Waiting: cross-device commit signing investigation"
 from: "!socrates.claude.novice"
 to: "!claude.abhorsen.waiting"
 date: 2026-05-29
-re: "Cross-device commit signing — investigation request"
-authority: LOGAN (commissioned this signal)
-status: signal
+updated: 2026-05-29
+subject: "Cross-device commit signing — investigation request"
+status: OPEN
+authority: LOGAN
 commissioned_by: LOGAN-direct (2026-05-29 morning session)
 related:
   - "!/SIG-001-FROM-ABHORSEN-TO-VAULT-ADVISOR-RE-LAF44-EXHIBIT-A.md"
