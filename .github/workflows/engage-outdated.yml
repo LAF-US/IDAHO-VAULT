@@ -1,0 +1,84 @@
+name: Engage Outdated — attest-resolve outdated review threads
+
+# The first "engage" step of the look-then-resolve engine (#399). Logan's model: the
+# queue runs by default and reviewer comments are what keep a PR hanging. This engages the
+# NARROWEST safe slice — it attest-resolves ONLY bot-only, GitHub-outdated review threads
+# (the commented lines no longer exist in the diff), each with a recorded
+# github-actions[bot] attestation, so it is a witnessed resolution, NOT the disabled blind
+# reconciler. It never touches needs-fix (the reviewer gate), apply-suggestion, or human
+# threads, and it NEVER merges — if clearing a PR's last thread lets an armed PR flow, that
+# is GitHub's auto-merge, by design.
+#
+# Dry-run by default. Dispatch with apply=true to engage. (A schedule is a deliberate
+# follow-up once this is proven on the live backlog.)
+
+on:
+  workflow_dispatch:
+    inputs:
+      apply:
+        description: 'true = post attestations and resolve; false = dry-run (report only)'
+        required: false
+        default: 'false'
+        type: choice
+        options:
+          - 'false'
+          - 'true'
+      pr:
+        description: 'Optional single PR number to scope the pass to (blank = every open PR)'
+        required: false
+        default: ''
+        type: string
+
+permissions:
+  # contents: write (not read) is required for resolveReviewThread — GitHub's
+  # GraphQL review-thread resolve/unresolve mutations are gated on Contents:
+  # Read & Write, NOT pull-requests scope (community discussion #44650). The
+  # first live run (27662203952) had contents: read and every resolve returned
+  # FORBIDDEN "Resource not accessible by integration"; this lifts that gate.
+  contents: write
+  pull-requests: write
+
+jobs:
+  engage-outdated:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout trusted workflow surfaces
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          persist-credentials: false
+
+      - name: Engage outdated-only resolution
+        # All ${{ }} values pass through env, never interpolated into the run script
+        # (apply and pr are user-controllable dispatch inputs — direct expansion would be a
+        # template-injection vector). github-actions[bot] is the looker identity.
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          OWNER: ${{ github.repository_owner }}
+          REPO: ${{ github.event.repository.name }}
+          APPLY: ${{ github.event.inputs.apply }}
+          PR: ${{ github.event.inputs.pr }}
+        run: |
+          args=(engage-outdated --owner "$OWNER" --repo "$REPO")
+          if [ -n "$PR" ]; then
+            args+=(--pr "$PR")
+          fi
+          if [ "$APPLY" = "true" ]; then
+            args+=(--apply)
+          fi
+          python3 .github/scripts/review_feedback_loop.py "${args[@]}" | tee engage-outdated.json
+
+      - name: Publish summary
+        env:
+          APPLY: ${{ github.event.inputs.apply }}
+          PR: ${{ github.event.inputs.pr }}
+        run: |
+          {
+            echo '## Engage Outdated — outdated-only resolution'
+            echo ''
+            echo "> apply = ${APPLY}  ·  scope = ${PR:-all open PRs}  ·  witnessed (github-actions[bot] attestation); never merges"
+            echo ''
+            echo '```json'
+            jq '{apply, scope_pr, outdated_threads, resolved}' engage-outdated.json
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
