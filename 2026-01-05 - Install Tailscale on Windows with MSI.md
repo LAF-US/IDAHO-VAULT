@@ -5,7 +5,10 @@ author:
 published: 2026-01-05
 created: 2026-06-23
 description: "Install the Tailscale client on Windows with MSI."
+date created: Tuesday, June 23rd 2026, 9:54:26 pm
+date modified: Tuesday, June 23rd 2026, 10:59:02 pm
 ---
+
 The current version of the Tailscale client available for [download](https://tailscale.com/download/windows) requires Windows 10 or later or Windows Server 2016 or later.
 
 This topic shows how to install Tailscale with the Windows Installer (MSI) package. If you want to use the Tailscale `.exe` installer, refer to [Install Tailscale on Windows](https://tailscale.com/docs/install/windows).
