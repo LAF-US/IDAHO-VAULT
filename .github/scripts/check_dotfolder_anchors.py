@@ -29,6 +29,7 @@ REQUIRED_ANCHORS = {
     ".perplexity": [".perplexity/PERPLEXITY.md"],
     ".serena": [".serena/SERENA.md"],
     ".antigravity": [".antigravity/ANTIGRAVITY.md"],
+    ".pullman": [".pullman/PULLMAN.md"],
     ".bartimaeus": [".bartimaeus/BARTIMAEUS.md"],
     ".zagreus": [".zagreus/ZAGREUS.md"],
     ".persephone": [".persephone/PERSEPHONE.md"],
