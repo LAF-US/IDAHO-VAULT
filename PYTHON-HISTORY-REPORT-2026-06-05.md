@@ -66,13 +66,14 @@ Version 0.9.0 was chosen because Guido felt it wasn't quite ready for 1.0.
 
 ## Chapter 2: Python 1.x Era (1991-2000)
 
-### 1991: Python 1.0
-- Added functional programming tools: lambda, map, filter, reduce
+### 1991-1993: The Python 0.9.x Era
+The early 0.9.x releases (beginning with 0.9.0 in February 1991) added the features that defined early Python:
+- Functional programming tools: lambda, map, filter, reduce
 - Better error handling
-- More complete standard library
+- A growing standard library
 
-### 1994: Python 1.0 Official Release
-Stable enough for production use.
+### January 1994: Python 1.0 Official Release
+Python 1.0 was released in January 1994 — the first version considered stable enough for production use.
 
 ### 1995: Python 1.2
 - Keyword arguments: func(name="value")
@@ -109,12 +110,13 @@ Founded to own Python's intellectual property, manage development, and promote P
 
 ### 2003: Python 2.3
 - Generators: yield keyword
-- Decimal module
-- Set type: set(), frozenset()
+- `sets` module (the `Set` and `ImmutableSet` classes)
 - bool type: True and False as keywords
 
 ### 2004: Python 2.4
 - Decorators: @decorator syntax (PEP 318)
+- Built-in `set()` and `frozenset()` types
+- `decimal` module
 - Generator expressions: (x*2 for x in range(10))
 - Subprocess module
 - functools module
@@ -154,7 +156,7 @@ Founded to own Python's intellectual property, manage development, and promote P
 - Bytes type: Separate bytes type for binary data
 - Print as a function: print() instead of print statement
 - Integer division: / returns float, // returns int
-- All values are iterators
+- Several built-ins return iterators/views instead of lists: `range()`, `map()`, `filter()`, `zip()`, and dict `.keys()`, `.values()`, `.items()`
 - Function annotations: Type hints (PEP 3107)
 - Extended iterable unpacking
 - Dictionary views
@@ -200,6 +202,8 @@ Slow and painful transition:
 | 3.10 | Oct 2021 | Structural pattern matching, union types |
 | 3.11 | Oct 2022 | Performance improvements, exception groups |
 | 3.12 | Oct 2023 | Type parameter syntax, f-string improvements |
+| 3.13 | Oct 2024 | New REPL, improved errors, experimental free-threaded (no-GIL) build |
+| 3.14 | 2025 | Deferred annotations (PEP 649), t-strings (PEP 750), multiple subinterpreters |
 
 ---
 
@@ -268,12 +272,12 @@ On July 12, 2018, Guido announced he was stepping down as BDFL.
 ### The Steering Council Era (2018-Present)
 Python is now governed by a 5-member Steering Council, elected by the Python core development team.
 
-**Current Council Members (2026)**:
-- Barry Warsaw
-- Brett Cannon
-- Carol Willing
-- Thomas Wouters
+**Current Council Members (2026, per PEP 8107)**:
 - Pablo Galindo Salgado
+- Savannah Ostrowski
+- Barry Warsaw
+- Donghee Na
+- Thomas Wouters
 
 ### The Python Software Foundation (PSF)
 **Founded**: 2001
@@ -311,7 +315,7 @@ Python is now governed by a 5-member Steering Council, elected by the Python cor
 | 1991 | Exception handling | - | Core language |
 | 1991 | Functions, classes | - | OOP |
 | 1994 | Keyword arguments | - | Flexible calls |
-| 1999 | List comprehensions | - | Functional |
+| 2000 | List comprehensions (Python 2.0) | PEP 202 | Functional |
 | 2001 | Unified types/classes | PEP 253 | Modern OOP |
 | 2002 | Generators | PEP 255 | Lazy evaluation |
 | 2004 | Decorators | PEP 318 | Metaprogramming |
@@ -349,7 +353,7 @@ From a few modules in 1991 to 200+ modules in 2026.
 
 **Workarounds**: Multiprocessing, asyncio, C extensions, alternative interpreters.
 
-**Future**: PEP 703 (2023) proposes making the GIL optional.
+**Future**: PEP 703 (accepted October 24, 2023) makes the GIL optional; CPython 3.13 shipped an experimental free-threaded build.
 
 ---
 
@@ -381,20 +385,20 @@ One of the most welcoming and diverse programming language communities.
 ## Chapter 10: Python's Future (2026 and Beyond)
 
 ### Current State (2026)
-- Version: Python 3.12 (released October 2023)
-- Next version: Python 3.13 (expected October 2024)
-- Adoption: Python 3.11+ most widely used
+- Current version: Python 3.14, with 3.14.4 released April 7, 2026
+- Python 3.13.0 reached stable release on October 7, 2024
+- Adoption: Python 3.12+ widely used in production
 - Ecosystem: 400,000+ packages on PyPI
 
-### Upcoming Features
-**Python 3.13 (2024)**: Faster startup, better error messages, type system improvements, pattern matching enhancements.
+### Recent and Upcoming Features
+**Python 3.13 (October 2024)**: Faster startup, an improved interactive interpreter (REPL), better error messages, and an experimental free-threaded (no-GIL) build.
 
-**Python 3.14 (2025)**: JIT compilation, improved concurrency, memory optimizations, AI-native features.
+**Python 3.14 (2025)**: Deferred evaluation of annotations (PEP 649), template string literals / t-strings (PEP 750), and support for multiple independent subinterpreters in the standard library.
 
 ### Long-Term Roadmap
-- **PEP 703**: Making the GIL optional
-- **PEP 744**: Future of Python's type system
-- **AI and ML Integration**: Built-in tensor support, GPU acceleration, automatic differentiation
+- **PEP 703**: Making the GIL optional (accepted; an experimental free-threaded build shipped in CPython 3.13)
+- **PEP 744**: JIT Compilation (informational PEP describing CPython's experimental just-in-time compiler)
+- **Free-threading and JIT maturation**: ongoing work to move the no-GIL build and the JIT from experimental to supported
 
 ### The Python Philosophy in 2026
 Python's core philosophy remains unchanged:
@@ -431,8 +435,9 @@ Python's core philosophy remains unchanged:
 2021  │ Python 3.10 released (pattern matching)
 2022  │ Python 3.11 released (performance)
 2023  │ Python 3.12 released (type improvements)
-2024  │ Python 3.13 expected (JIT compilation)
-2026  │ AI/ML dominance, 400K+ PyPI packages
+2024  │ Python 3.13.0 released October 7 (experimental free-threaded build, new REPL)
+2025  │ Python 3.14 released (deferred annotations, t-strings, multiple subinterpreters)
+2026  │ Python 3.14.4 released April 7; AI/ML dominance, 400K+ PyPI packages
 ```
 
 ---
@@ -449,14 +454,14 @@ Python's core philosophy remains unchanged:
 | 343 | with Statement | 2005 | Accepted |
 | 484 | Type Hints | 2014 | Accepted |
 | 498 | f-strings | 2015 | Accepted |
-| 517 | Formal Grammar | 2018 | Accepted |
+| 517 | A build-system independent format for source trees | 2018 | Accepted |
 | 557 | Data Classes | 2017 | Accepted |
 | 572 | Walrus Operator | 2018 | Accepted |
 | 634 | Pattern Matching | 2020 | Accepted |
 | 635 | Pattern Matching Motivation | 2020 | Accepted |
 | 636 | Pattern Matching Tutorial | 2020 | Accepted |
 | 695 | Type Parameter Syntax | 2022 | Accepted |
-| 703 | Optional GIL | 2023 | Draft |
+| 703 | Making the Global Interpreter Lock Optional in CPython | 2023 | Accepted |
 
 ---
 
