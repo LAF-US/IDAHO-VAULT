@@ -1,9 +1,11 @@
 from __future__ import annotations
 
 import importlib.util
+import io
 import sys
 import types
 import unittest
+from contextlib import redirect_stderr, redirect_stdout
 from pathlib import Path
 from unittest.mock import patch
 
@@ -25,6 +27,9 @@ run_checks = _load_module("run_checks_test_module", "run_checks.py")
 check_syntax = _load_module("check_syntax_test_module", "__check_syntax__.py")
 check_portable_paths = _load_module(
     "check_portable_paths_test_module", ".github/scripts/check_portable_paths.py"
+)
+jupytext_sync_paired = _load_module(
+    "jupytext_sync_paired_test_module", ".github/scripts/jupytext_sync_paired.py"
 )
 
 
@@ -79,6 +84,100 @@ class HelperScriptsTest(unittest.TestCase):
         findings = check_portable_paths.path_violations("NOTES/CON.md")
 
         self.assertEqual(findings, ["RESERVED NAME: NOTES/CON.md (component: CON.md)"])
+
+    def test_portable_paths_flags_backslash_paths(self) -> None:
+        # The exact shape that broke Windows checkout: a Windows-absolute path
+        # committed as a single tracked name with literal backslashes.
+        findings = check_portable_paths.path_violations(
+            r"C:\Users\loganf\.vibe\logs\session/s/messages.jsonl"
+        )
+
+        self.assertTrue(
+            any(f.startswith("BACKSLASH IN PATH:") for f in findings),
+            findings,
+        )
+
+    def test_portable_paths_clean_path_has_no_findings(self) -> None:
+        self.assertEqual(check_portable_paths.path_violations("notes/clean-name.md"), [])
+
+
+class JupytextSyncPairedTest(unittest.TestCase):
+    """The paired-sync helper's contract: skip unpaired, surface (don't fail on) corrupt
+    notebooks, fail on a real sync error, and keep stdout to twin-paths only."""
+
+    def _run_main(self, argv: list[str]):
+        out, err = io.StringIO(), io.StringIO()
+        with redirect_stdout(out), redirect_stderr(err):
+            code = jupytext_sync_paired.main(argv)
+        return code, out.getvalue(), err.getvalue()
+
+    def test_unpaired_notebook_is_skipped(self) -> None:
+        with patch.object(
+            jupytext_sync_paired, "read_notebook", return_value=({"metadata": {}}, None)
+        ), patch.object(jupytext_sync_paired.subprocess, "run") as mock_run:
+            code, out, _ = self._run_main(["prog", "nb.ipynb"])
+
+        self.assertEqual(code, 0)
+        mock_run.assert_not_called()  # unpaired notebooks are never synced
+        self.assertEqual(out, "")
+
+    def test_corrupt_notebook_reported_to_stderr_without_failing(self) -> None:
+        with patch.object(
+            jupytext_sync_paired, "read_notebook", return_value=(None, ValueError("bad json"))
+        ), patch.object(jupytext_sync_paired.subprocess, "run") as mock_run:
+            code, out, err = self._run_main(["prog", "broken.ipynb"])
+
+        self.assertEqual(code, 0)  # a corrupt stray is observability, not a failure
+        mock_run.assert_not_called()  # ...and is never synced
+        self.assertEqual(out, "")  # stdout stays clean (the hook contract)
+        self.assertIn("broken.ipynb", err)  # ...but is surfaced on stderr
+        self.assertIn("unparseable", err)
+
+    def test_nonzero_jupytext_exit_fails_the_run(self) -> None:
+        paired = ({"metadata": {"jupytext": {"formats": "ipynb,md"}}}, None)
+        with patch.object(
+            jupytext_sync_paired, "read_notebook", return_value=paired
+        ), patch.object(
+            jupytext_sync_paired.subprocess,
+            "run",
+            return_value=types.SimpleNamespace(returncode=1, stdout="", stderr="boom"),
+        ):
+            code, _, err = self._run_main(["prog", "paired.ipynb"])
+
+        self.assertEqual(code, 1)  # a paired notebook that fails to sync fails the run
+        self.assertIn("paired.ipynb", err)
+
+    def test_paired_success_prints_only_twin_path_on_stdout(self) -> None:
+        # The stdout contract the pre-commit hook word-splits: ONLY twin paths reach stdout --
+        # jupytext's own chatter (here on the captured subprocess stdout) must not leak through.
+        paired = ({"metadata": {"jupytext": {"formats": "ipynb,md"}}}, None)
+        with patch.object(
+            jupytext_sync_paired, "read_notebook", return_value=paired
+        ), patch.object(
+            jupytext_sync_paired.os.path, "exists", return_value=True
+        ), patch.object(
+            jupytext_sync_paired.subprocess,
+            "run",
+            return_value=types.SimpleNamespace(
+                returncode=0, stdout="[jupytext] noisy chatter", stderr=""
+            ),
+        ):
+            code, out, _ = self._run_main(["prog", "LLM-Router.ipynb"])
+
+        self.assertEqual(code, 0)
+        self.assertEqual(out, "LLM-Router.md\n")  # twin only; no jupytext chatter
+
+    def test_twin_paths_parses_common_formats(self) -> None:
+        self.assertEqual(
+            jupytext_sync_paired.twin_paths("LLM-Router.ipynb", "ipynb,md"), ["LLM-Router.md"]
+        )
+        self.assertEqual(
+            jupytext_sync_paired.twin_paths("nb/Deep.ipynb", "ipynb,py:percent"), ["nb/Deep.py"]
+        )
+        self.assertEqual(
+            jupytext_sync_paired.twin_paths("x.ipynb", "ipynb,md,py:light"), ["x.md", "x.py"]
+        )
+        self.assertEqual(jupytext_sync_paired.twin_paths("x.ipynb", "ipynb"), [])
 
 
 if __name__ == "__main__":
