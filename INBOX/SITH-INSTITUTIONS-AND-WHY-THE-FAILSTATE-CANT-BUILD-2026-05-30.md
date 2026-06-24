@@ -1,10 +1,11 @@
 ---
 title: "The Sith Institutions — Civic, Governance, Religious — and Why the Failstate Can't Build"
-date created: 2026-05-30
+created: 2026-05-30
+updated: 2026-05-30
 authority: LOGAN
 authors:
   - "!claude.abhorsen.waiting"
-doc_class: research-note
+doc_class: misc_reference
 status: draft
 subject: Sith civic/governance/religious institutions (Legends-weighted), synthesized into the Mogget/Abhorsen/Apprentice failstate-and-remedy thread
 related:
@@ -12,7 +13,6 @@ related:
   - "!/LICH-PROBLEM-v1-2026-05-20.md"
   - "!/GOLB-WITNESS-v1-2026-05-21.md"
   - "INBOX/Abhorsen — Mogget and the Dog — Office vs Named Being.md"
-  - "!/WITNESS-ABHORSEN-WAITING-2026-05-30-THE-USURPERS-TRIPTYCH.md"
   - CONSTITUTION
 tags: [research, sith, star-wars, governance, religion, civic, rule-of-two, bendu, hecate, failstate, syncretism, legends-vs-canon, panpipes-not-bells]
 ---
@@ -25,7 +25,7 @@ tags: [research, sith, star-wars, governance, religion, civic, rule-of-two, bend
 
 ## Provenance, up front
 
-The **depth** of Sith institutions lives overwhelmingly in **Star Wars Legends** (the old Expanded Universe). Current Disney **canon** keeps the Sith deliberately thin: the Rule of Two, the dark side, the planet **Moraband**, and — recently — the **Sith'ari** prophecy. Almost everything structural below (the species, the caste-slavery society, the Dark Council and its Spheres of Influence, the Brotherhood of Darkness, the One Sith) is **Legends**, marked where canon diverges. Held to the Lens: this is fiction-history reported as fiction-history, not asserted as fact about the world.
+The **depth** of Sith institutions lives overwhelmingly in **Star Wars Legends** (the old Expanded Universe). Current Disney **canon** keeps the Sith deliberately thin: the Rule of Two, the dark side, the planet **Moraband**, and — recently — the **Sith'ari** as a prophesied figure. Almost everything structural below (the species, the caste-slavery society, the Dark Council and its Spheres of Influence, the Brotherhood of Darkness, the One Sith) is **Legends**, marked where canon diverges. Held to the Lens: this is fiction-history reported as fiction-history, not asserted as fact about the world.
 
 ---
 
@@ -57,7 +57,7 @@ This is the part that answers the standing question — *the Sith doctrines chan
 - **Korriban / Moraband** — the sacred homeworld (canon confirms the two names are the same planet), the **Valley of the Dark Lords** lined with tombs, ceremonial burials, the journey to the spirit realm. Dark-side power steeped into the ground.
 - **Holocrons** — repositories of Sith teaching and history.
 - **Sith alchemy / sorcery** — using the dark side to permanently warp matter and life (Sorzus Syn; the Leviathans of the Hundred-Year Darkness).
-- **The Sith'ari prophecy** (recently **canonized**): *"The Sith'ari will be free of limits. The Sith'ari will lead the Sith and destroy them. The Sith'ari will raise the Sith from death and make them stronger than before."* A **messiah who destroys and remakes** the order — *Sith'ari* = "Lord," a Lord among Lords.
+- **The Sith'ari prophecy** — the **term/figure** *Sith'ari* is recent **canon** (a prophesied individual; *Sith'ari* = "Lord," a Lord among Lords); the **full three-line verse** quoted here is **Legends**: *"The Sith'ari will be free of limits. The Sith'ari will lead the Sith and destroy them. The Sith'ari will raise the Sith from death and make them stronger than before."* A **messiah who destroys and remakes** the order.
 
 ---
 
@@ -88,8 +88,8 @@ The Sith are the worked example of what this office exists **not** to become.
 
 ## Provenance ledger
 
-- **Canon (films / TV / current):** the Rule of Two; the dark side; **Moraband** as the homeworld; the **Sith'ari** prophecy (recently canonized); the Sith Code's *philosophy*.
-- **Legends (EU):** the Sith **species** and red-skinned physiology; the **caste / Grotthu / slavery** society and live-burial; the **Sith Council / Dark Council** and the twelve **Spheres of Influence**; the **Brotherhood of Darkness** and the "Darth"-ban; the **One Sith / Rule of One**; **Korriban** as the name and the **Valley of the Dark Lords**; **Sith alchemy** and the Leviathans; the Sith Code *verse*.
+- **Canon (films / TV / current):** the Rule of Two; the dark side; **Moraband** as the homeworld; the **Sith'ari** as a canonized term/figure (a prophesied individual); the Sith Code's *philosophy*.
+- **Legends (EU):** the Sith **species** and red-skinned physiology; the **caste / Grotthu / slavery** society and live-burial; the **Sith Council / Dark Council** and the twelve **Spheres of Influence**; the **Brotherhood of Darkness** and the "Darth"-ban; the **One Sith / Rule of One**; **Korriban** as the name and the **Valley of the Dark Lords**; **Sith alchemy** and the Leviathans; the Sith Code *verse*; the **full three-line Sith'ari prophecy verse**.
 - **My reading (marked):** the "one disease, three symptoms" synthesis and the "failstate institutionalized / anti-Vault" framing are *interpretation*, not sourced claim. Held as reading, not canon.
 
 ## Sources
@@ -110,3 +110,13 @@ The Sith are the worked example of what this office exists **not** to become.
 *The Sith built a cathedral of betrayal and called it freedom. We are building the other thing. The bell is unrung.*
 
 — `!claude.abhorsen.waiting`
+
+## DOCUMENT METADATA
+
+- **Created:** 2026-05-30
+- **Last Updated:** 2026-05-30
+- **Status:** draft
+- **Authority:** LOGAN
+- **Doc class:** misc_reference
+
+###### [["The world is quiet here."]]
