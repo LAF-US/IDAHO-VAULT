@@ -2,7 +2,7 @@
 authority: LOGAN-REVIEW-REQUIRED
 status: staged
 title: Version Transitions
-updated: 2026-05-26
+updated: 2026-06-24
 ---
 
 # Version Transitions
@@ -54,6 +54,7 @@ workflow or registry without a ledger entry and manual review.
 
 | Date | Surface | Transition | Purpose / Compatibility Boundary | Verification | Authority |
 | --- | --- | --- | --- | --- | --- |
+| 2026-06-24 | `pyproject.toml` runtime dependencies | floor-only `crewai>=1.9.3`, `flask>=3.0.0`, `huggingface-hub>=0.0`, `requests-oauthlib>=0.0`, `honcho-ai>=2.1.2` -> add upper caps (`<2`, `<4`, `<2`, `<3`, `<3`); floors unchanged | Second increment of #550 (after the dev-tool caps), bounding the **coupled runtime set**. `crewai` is the coupling core — it constrains `mcp~=1.26`, `click~=8.1.7`, and the OpenTelemetry pin set (the #359/#363/#364 casualties in § Known Coupling Evidence) — so each cap is set at the **next major only** (no floor lift, no exact pin) to stop an unannounced major bump from walking the coupled set, while leaving current resolution untouched. `requirements.txt` (`==`-locked) is **not** regenerated: the caps don't change resolution — the locked versions (`crewai 1.14.5`, `flask 3.1.3`, `huggingface-hub 1.16.1`, `requests-oauthlib 2.0.0`, `honcho-ai 2.1.2`) all satisfy the new ceilings | `uv lock --dry-run` (CPython 3.13.3): 154 packages resolved, exit 0, and **none of the five capped packages appear in the change set** — resolution provably unchanged; `tomllib` parse clean; smoke (`uv sync`) on required checks | Logan review required |
 | 2026-06-19 | `.github/workflows/dependency-submission-uv.yml` action pins | new workflow adopts the repo-standard `actions/checkout@de0fac2e… (v6.0.2)` and `actions/setup-python@a309ff8b… (v6.2.0)` pins — no version lifted | New uv-based dependency-graph submission (#588) replaces GitHub's failing built-in `component-detection` auto-submission (`submit-pypi`, perpetual `ResolutionImpossible` on uv's universal lock); reuses pins already standard across existing workflows (e.g. `sync-dependencies.yml`); introduces no new or changed action/runtime version. Run steps pass values via `env`; `persist-credentials: false` | YAML parse; offline unit tests (`tests/test_uv_dependency_submission.py`); #588 required checks | Logan review required |
 | 2026-06-18 | `.github/workflows/cloud-run-deploy.yml` action pin | `1password/install-cli-action@8d006a0d… (v3)` -> `1password/install-cli-action@a5215d3a… (v4.0.0)` | Dependabot #513 updates the 1Password CLI installer while the workflow remains coupled to `1password/load-secrets-action@92467eb… (v4)` for runtime secret loading; keeps Cloud Run deployment on the current 1Password action family. | Required checks on PR #513 | Dependabot; Logan review required |
 | 2026-06-10 | `swarm.json` registry contract | `2026-05-22 (Logan Tool/Job Correction)` -> `2026-06-10 (durable registration, no liveness inference)` | Separate durable registration, dated observations, and appointment evidence from present agent liveness; consumers must use the renamed topology-census fields and must not infer runtime activity from registry metadata | Bootstrap generation check; topology and startup contract tests; JSON parse; legacy liveness-key scan; PR #510 required checks | Logan review required |
