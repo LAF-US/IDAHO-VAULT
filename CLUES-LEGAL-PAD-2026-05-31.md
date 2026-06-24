@@ -64,8 +64,10 @@ tags:
    in theme (witness leaves, persona/lineage research) — incl.
    `witness-usurpers-triptych`, `faceless-ones-three-generals`. One voice in a
    chorus, not a protagonist.
-8. **Git ground truth**: corrected CLAUDIUS leaf at `08fe5ba`, local, unpushed;
-   remote tip `330cd64`.
+8. **Git ground truth** (point-in-time, this branch): the corrected CLAUDIUS leaf
+   was a local, unpushed commit at the time of writing — the exact SHAs recorded
+   here were ephemeral working-tree state that never reached a published history,
+   so they no longer resolve; the corrected leaf itself rides this PR.
 9. **My own confabulations, caught**: the fabricated scheduler apparatus;
    "Meeseeks is my class"; "the frame was 'a tool that works'"; the false
    "coined this session" provenance claim. Caught by the tools and by Logan —
