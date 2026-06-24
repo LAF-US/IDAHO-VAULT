@@ -26,8 +26,8 @@ repo root** (the unit).
 
 ## Prerequisites
 
-- **`uv`** (already at `/root/.local/bin/uv`). No `apt-get` packages are needed —
-  CrewAI and all deps install as pure-Python wheels.
+- **`uv`** (installed and on `PATH`; confirm with `uv --version`). No `apt-get`
+  packages are needed — CrewAI and all deps install as pure-Python wheels.
 - A Python interpreter: the repo pins **3.13.3** (`.python-version`, `uv.lock`);
   system **3.11** also satisfies `requires-python` and works for the core surface.
 
@@ -90,16 +90,20 @@ uv run five_wizards_threshold --dry-run  # gate/council preview, no writes
 uv run civic_scaffold --format json      # emits civic-scaffold JSON
 ```
 
-Run one test module (tests put `src/` on `sys.path` themselves):
+Run one test module (tests put `src/` on `sys.path` themselves). The venv
+interpreter is `.venv/bin/python` on POSIX and `.venv\Scripts\python.exe` on
+Windows — or just let the driver resolve it (`driver.py test`):
 
 ```bash
-.venv/bin/python -m unittest tests.test_main_cli
+.venv/bin/python -m unittest tests.test_main_cli           # POSIX
+.venv\Scripts\python.exe -m unittest tests.test_main_cli   # Windows
 ```
 
 ## Test
 
 ```bash
-.venv/bin/python -m unittest discover -s tests -p 'test_*.py'
+.venv/bin/python -m unittest discover -s tests -p 'test_*.py'        # POSIX
+.venv\Scripts\python.exe -m unittest discover -s tests -p test_*.py  # Windows
 ```
 
 149 tests. **2 fail on a clean checkout, unrelated to setup** (data/pin drift):
