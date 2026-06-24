@@ -208,7 +208,7 @@ who_task = Task(
 ### Pattern 2: LangGraph Threshold Workflow
 **Applies to**: five_wizards threshold runner
 
-**Current State**: `src/idaho_vault/five_wizards/`src/idaho_vault/five_wizards/threshold_runner.py`.py`
+**Current State**: `src/idaho_vault/five_wizards/threshold_runner.py`
 **Proposed**: LangGraph StateGraph with CrewAI nodes
 
 **Example**: Threshold as LangGraph Workflow
@@ -282,7 +282,7 @@ client.log_run(result)  # Or use LangChain callback handler
 
 | Component | Current | Recommended | Rationale |
 |-----------|---------|-------------|-----------|
-| **crew.py** | CrewAI | CrewAI + LangSmith | Add observability |
+| **`src/idaho_vault/crew.py`** | CrewAI | CrewAI + LangSmith | Add observability |
 | **five_wizards lanes** | Custom Python | CrewAI Agents | Role-based orchestration |
 | **`src/idaho_vault/five_wizards/threshold_runner.py`** | Custom Python | LangGraph | Explicit state control |
 | **Tool layer** | Custom | LangChain Tools | Reuse across frameworks |
