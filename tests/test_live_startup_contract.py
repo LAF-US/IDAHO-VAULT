@@ -39,6 +39,23 @@ class LiveStartupContractTest(unittest.TestCase):
         self.assertNotIn("bootstrap_entrypoint", serialized)
         self.assertNotIn("agent.sh", serialized)
 
+    def test_agent_registry_contains_no_present_liveness_or_occupancy_fields(self) -> None:
+        payload = json.loads((ROOT / "swarm.json").read_text(encoding="utf-8"))
+        prohibited = {"office", "title", "status", "launched", "installed"}
+
+        for agent in payload["agents"]:
+            self.assertFalse(prohibited.intersection(agent), agent["id"])
+            for observation in agent.get("observations", []):
+                self.assertIn("kind", observation)
+                self.assertIn("date", observation)
+                self.assertIn("source_commit", observation)
+
+    def test_codex_voice_registry_disclaims_present_population(self) -> None:
+        text = (ROOT / "!" / "CODEX-VOICE-REGISTRY-2026-05-18.md").read_text(encoding="utf-8")
+        self.assertIn("not a population register", text)
+        self.assertNotIn("| Status |", text)
+        self.assertNotIn("| Active |", text)
+
 
 if __name__ == "__main__":
     unittest.main()
