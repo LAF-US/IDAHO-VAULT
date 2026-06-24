@@ -54,6 +54,17 @@ date modified: Sunday, April 26th 2026, 12:30:00 pm
 
 [[CHAINFIRE]] & [[CHAINLINK]]
 
+### 2026-06-16: CODEOWNERS gate — re-examined & ratified
+- **Decision**: Adopt the reviewed `.github/CODEOWNERS` gated set deliberately. The gate had *accreted* without a recorded decision; this entry gives it warrant.
+- **Provenance gap closed**: CODEOWNERS was created in a single `github-actions[bot]` commit (`424b619`, 2026-05-25) bundled into a ~38k-file flatten whose message was a "Hermes machine-survey witness" — never recorded in this ledger or independently ratified. With branch protection now live on `main` (verified `protected: true`), the gate is enforced, so it has been re-examined and recorded.
+- **Ruled changes (Logan, each ruled individually)**:
+  - Reviewer configs (`.coderabbit.yaml`, `.pr_agent.toml`) — left **ungated**.
+  - `.op/` credential/secrets plumbing — **gated** (`/.op/`).
+  - `.github/` — added **executable gaps only** (`/.github/actions/`, `/.github/proposed-moves.sh`, `/.github/dependabot.yml`); not gated wholesale.
+  - Bare `CLAUDE.md` + `AGENTS.md` — **ungated** (root pointers now ungated; the dotfolder auto-loaded files `/.claude/CLAUDE.md`, `/.codex/CODEX.md`, `/.gemini/GEMINI.md` remain gated). Logan affirmed leaving root `AGENTS.md` (a cross-tool auto-loaded pointer with no backup rule) ungated.
+- **Follow-up**: verify in GitHub's CODEOWNERS UI that `/!/` and `/.op/` actually resolve to @loganfinney27 — the `!`/glob behavior cannot be tested locally; the canon's gate must not be assumed.
+- **Authority**: Logan direct instruction (per-change rulings, 2026-06-16).
+
 ### 2026-05-23: Corrections Classification Doctrine
 - **Decision**: Adopt `CORRECTIONS.md` as active Vaulted Syntax operational doctrine, distinct from any case-specific heresy review packet.
 - **Rule**: Keep three correction classifications distinct: **Typographical Errors / Typos**, **Scrivener's Corrections**, and **Codifier's Corrections**. A particular typo does not eliminate the Scrivener classification; a codifier surface does not silently create doctrine.
