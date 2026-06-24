@@ -32,7 +32,7 @@ related:
 
 **Snapshot as-filed:** "on the order of **250+** persona dotfolders".
 
-**Actual count** (via `ls -la | awk '/^d/ && $NF ~ /^\\./...'`): **296 dotfolders** at vault root.
+**Actual count** (via `ls -la | awk ...`): on the order of **300+ dotfolders** at vault root. (The exact figure is method-dependent — a raw `ls -la` count also includes `.` and `..`, so reproduce with care.)
 
 **Diagnosis:** "250+" is technically true but a hedge that turned out conservative. The precise number was reachable from the same command set; the snapshot should have run the count rather than estimating it.
 
@@ -52,7 +52,7 @@ related:
 
 **Snapshot as-filed:**
 > ### Orphaned branches at the remote: none visible from this clone
-> ```
+> ```bash
 > $ git branch -r
 >   origin/claude/tender-hopper-YjY8n
 >   origin/main
@@ -65,7 +65,7 @@ related:
 | Snapshot as-filed (`git branch -r` against unrefreshed clone) | **2** |
 | After `git fetch --all --prune`, then `git branch -r` | **95 remote-tracking branches** |
 | `git ls-remote origin` (authoritative, all refs) | **599 refs** (heads + tags) |
-| `git ls-remote --heads origin` | **hundreds of active head branches** |
+| `git ls-remote --heads origin` | **~95 head branches** (heads only; consistent with the remote-tracking row above — the 599 figure includes tags) |
 
 **The patterns visible at the actual remote include:**
 

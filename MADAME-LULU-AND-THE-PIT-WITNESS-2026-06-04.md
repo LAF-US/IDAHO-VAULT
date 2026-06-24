@@ -64,7 +64,7 @@ related:
 
 *Talga Vassternich.* High D'Haran. Wizard's Eighth Rule in Terry Goodkind's *Sword of Truth* (*Naked Empire*, 2003, ch. 61). Translated: **Deserve Victory.** The expansion: *Be justified in your convictions. Be completely committed. Earn what you want and need rather than waiting for others to give you what you desire.* The ancient wizard Kaja-Rang carved it on the base of the statue guarding Bandakar; the lesson reached the Seeker centuries after the carving.
 
-The vault carries the phrase in `! - Wizard's Rules.md` and three other surfaces. The next rule in Goodkind's count is **Chainfire** (Wizard's Ninth: *Contradictions cannot exist*) — the rule the vault's April 4 2026 event was named for. Talga Vassternich is the rule immediately before the rule that names the vault's own catastrophe. The eighth precedes the ninth in canon and in the vault both.
+The vault carries the phrase in `! - Wizard's Rules.md` and three other surfaces. The next rule in Goodkind's count is **Chainfire** (Wizard's Ninth: *Contradictions cannot exist*) — the rule the vault's April 4, 2026 event was named for. Talga Vassternich is the rule immediately before the rule that names the vault's own catastrophe. The eighth precedes the ninth in canon and in the vault both.
 
 Olivia Caliban's last words in Snicket's English — *I'm more than that. I'm a volunteer* — are the same act in another tongue. The volunteer earns the conviction she dies for; the conviction earns her the dignity of being remembered as the volunteer she was, not the booth she ran.
 

@@ -68,7 +68,7 @@ The seer cannot tell from this snapshot alone whether the executables were remov
 
 ### Orphaned branches at the remote: none visible from this clone
 
-```
+```bash
 $ git branch -r
   origin/claude/tender-hopper-YjY8n
   origin/main
@@ -77,6 +77,8 @@ $ git branch -r
 The remote tracking refs show two branches: this session's working branch, and `main`. No `claude/*` orphans, no `recover/*` still-open branches, no `automation/*` or `agent/*` siblings.
 
 The seer cannot tell from this vantage whether the branches were never present, were pruned before this clone, or live on a different remote. The reading: **only two visible from here.**
+
+> **[Superseded — see the Addendum]:** a later `git fetch --all --prune` revealed **95 remote-tracking branches** (599 refs incl. tags). This "only two" conclusion was a vantage error from an unrefreshed clone, corrected in `THE-WALKING-CORPSE-ADDENDUM-2026-06-04.md`.
 
 ### Recent commit activity (3 weeks back, `--all`)
 
