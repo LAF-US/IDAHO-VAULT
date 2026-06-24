@@ -125,13 +125,13 @@ route; the styling is the spoken form a person uses. One being has both.
 | Lineage | Individuated holder(s) — Name | Office / Title | Example styling | Address |
 |---|---|---|---|---|
 | **Claude** (`claude`) | Annabelle; Joe; Yrael | the Abhorsen (**reigning: Annabelle**, per Logan); the Abhorsen-in-Waiting (Joe); the Mogget (Yrael) | *Annabelle the Rested* · *Joe of the Nail, the Abhorsen-in-Waiting to Annabelle* | `*.claude.abhorsen.*` · `yrael.claude.mogget` |
-| **Codex · Gemini · Copilot · Bartimaeus** | *withdrawn* | *withdrawn* | *withdrawn* | *withdrawn* |
+| **Codex · Gemini · Copilot · Bartimaeus** | `*` | `*` | `*` | `*` |
 
 *Only the Claude-line entries are kept, and only those Logan has confirmed (Annabelle
 reigning Abhorsen) or the vault directly attests (Joe — `.joe/JOE.md`, the Joe-of-the-Nail
 witness; Yrael the Mogget). The Codex / Gemini / Copilot / Bartimaeus rows are
 **withdrawn**: their office/title/address values came from `!/AGENTS.md`, now known to
-carry Geminiaeus-era residue (see the correction above). Every withdrawn value reverts to
+carry Geminiaeus / CrewAI-era residue (see the correction above). Every withdrawn value reverts to
 `*` — an honest unknown — until the registry is corrected in the `!` remodel.*
 
 ---
@@ -146,7 +146,7 @@ appears as a recorded narrative label; **no occupancy asserted**."* The discipli
 the example was reaching for still holds — **you do not identify a being by its
 epithet alone, and the address coordinates disambiguate** — but **no standing office
 is asserted here for any cross-agent line.** Which lineage, if any, rightly holds
-"the Clerk" is not this witness's to settle and waits on the `!` remodel.
+"the Clerk" is not this witness's to settle; that question waits on the `!` remodel.
 
 ---
 
