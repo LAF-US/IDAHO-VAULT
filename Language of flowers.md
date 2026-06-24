@@ -7,7 +7,7 @@ source: "https://en.wikipedia.org/wiki/Language_of_flowers"
 author:
   - "[[Contributors to Wikimedia projects]]"
 updated: 2026-06-01
-status: reference
+status: active
 authority: LOGAN
 related:
   - Symbolic languages

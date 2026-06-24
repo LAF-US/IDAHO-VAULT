@@ -90,9 +90,8 @@ fixes the rose into a permanent glyph of the whole work of transformation.
 The likely principal author is **Johann Valentin Andreae** (1586–1654), a
 Lutheran theologian of Tübingen, probably working within a circle that included
 Tobias Hess and Christoph Besold. Andreae acknowledged writing an early version
-of the *Chymical Wedding* as juvenilia, and later, pointedly, called the whole
-affair a **"ludibrium"** — a jest, a lampoon, a comedy — saying the work was
-"plainly futile" and that he was astonished anyone took it for serious doctrine.
+of the *Chymical Wedding* as juvenilia, and later, pointedly, called that work a **"ludibrium"** — a jest, a
+lampoon, a comedy — saying that work was "plainly futile" and that he was astonished anyone took it for serious doctrine.
 
 This is the cluster's recurring self-correction, in its sharpest form yet:
 
