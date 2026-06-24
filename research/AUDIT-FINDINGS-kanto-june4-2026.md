@@ -6,7 +6,7 @@
 **Overall Quality**: High, with minor inconsistencies requiring attention  
 **Critical Issues**: 3  
 **Moderate Issues**: 12  
-**Minor Issues**: 28  
+**Minor Issues**: 27  
 **Recommendation**: Address structural and naming inconsistencies before proceeding to Johto
 
 ---
@@ -24,6 +24,14 @@ File misty-gym-leader.md is missing References in TOC (only lists 6 sections). A
 File misty-gym-leader.md uses Anime Appearances while all other files use Anime and Manga Appearances.
 
 **Impact**: Inconsistent section headers break uniformity.
+
+### 3. Factually Incorrect Japanese Names
+
+Sabrina and Agatha were both listed with the Japanese name ナツメ (Natsume), which is factually incorrect. The canonical Japanese names are: Sabrina = ナツメ (Natsume), Agatha = キクコ (Kikuko).
+
+**Impact**: A wrong canon fact published in two character profiles; profiles must be internally consistent (Overview and Name-Origin sections must match).
+
+**Resolution**: Keep ナツメ (Natsume) for Sabrina; correct Agatha to キクコ (Kikuko).
 
 ---
 
@@ -43,10 +51,9 @@ Misty, Brock, Blue, Giovanni, Lt. Surge, Lorelei: June 3, 2026. Others: June 4, 
 
 ## MINOR ISSUES
 
-### 5. Japanese Name Formatting
+### 5. Overview / References Formatting
 
-Sabrina and Agatha both have Japanese name ナツメ Natsume. This is factually incorrect.
-**Resolution needed**: Use サツキ Satsuki for Sabrina.
+Minor formatting inconsistencies remain in Overview section structure and References formatting across several files (tracked as Priority 3). The Japanese-name defect previously listed here has been reclassified as Critical Finding #3 because it is a factual error.
 
 ---
 
@@ -78,7 +85,7 @@ Sabrina and Agatha both have Japanese name ナツメ Natsume. This is factually 
 ### Priority 1 - Critical Fixes
 1. Fix Mistys TOC - Add References to Table of Contents
 2. Fix Mistys Anime section header - Change to Anime and Manga Appearances
-3. Fix Sabrinas Japanese name - Change to サツキ Satsuki
+3. Fix Japanese names - keep Sabrina = ナツメ Natsume; correct Agatha to キクコ Kikuko
 
 ### Priority 2 - Moderate Fixes
 4. Add Type column to all team tables

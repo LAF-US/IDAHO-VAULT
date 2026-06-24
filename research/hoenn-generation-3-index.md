@@ -33,13 +33,13 @@ Master index for Hoenn's Gym Leaders, Elite Four, and Champion across all epochs
 | 5 | **Norman** | Petalburg City | Normal | Balance Badge | Yes | Yes |
 | 6 | **Winona** | Fortree City | Flying | Feather Badge | Yes | Yes |
 | 7 | **Tate & Liza** | Mossdeep City | Psychic | Mind Badge | Yes | Yes |
-| 8 | **Juan** | Sootopolis City | Water | Rain Badge | Emerald Only | Yes |
+| 8 | **Juan** | Sootopolis City | Water | Rain Badge | Emerald Only | No |
 | 8 | **Wallace** | Sootopolis City | Water | Rain Badge | Ruby/Sapphire | Yes |
 
 ### Notes
 - Ruby/Sapphire: 8th Gym Leader is Wallace
 - Emerald: 8th Gym Leader is Juan, Wallace is Champion
-- Omega Ruby/Alpha Sapphire: Both Juan and Wallace appear
+- Omega Ruby/Alpha Sapphire: 8th Gym Leader is **Wallace** (Steven is the Champion). Juan is Emerald-only and does **not** provide the ORAS Rain Badge battle.
 
 ### Individual Files
 - [ ] Roxanne
@@ -54,7 +54,7 @@ Master index for Hoenn's Gym Leaders, Elite Four, and Champion across all epochs
 
 ---
 
-## Elite Four (5)
+## Elite Four (4)
 
 | # | Member | Type | E1 | E2 |
 |---|--------|------|----|----|
@@ -62,14 +62,15 @@ Master index for Hoenn's Gym Leaders, Elite Four, and Champion across all epochs
 | 2 | **Phoebe** | Ghost | Yes | Yes |
 | 3 | **Glacia** | Ice | Yes | Yes |
 | 4 | **Drake** | Dragon | Yes | Yes |
-| 5 | **Steven** | Steel | Emerald Only | Yes |
+
+### Notes
+- Steven is **not** an Elite Four member. He is the Champion in Ruby/Sapphire and Omega Ruby/Alpha Sapphire, and a postgame superboss in Emerald.
 
 ### Individual Files
 - [ ] Sidney
 - [ ] Phoebe
 - [ ] Glacia
 - [ ] Drake
-- [ ] Steven
 
 ---
 
@@ -77,8 +78,12 @@ Master index for Hoenn's Gym Leaders, Elite Four, and Champion across all epochs
 
 | Champion | Type | E1 | E2 |
 |----------|------|----|----|
-| **Steven** | Steel | Ruby/Sapphire | No |
-| **Wallace** | Water | Emerald | Yes |
+| **Steven** | Steel | Ruby/Sapphire | Yes |
+| **Wallace** | Water | Emerald | No |
+
+### Notes
+- **Steven** is the Champion in Ruby/Sapphire **and** in Omega Ruby/Alpha Sapphire (E2).
+- **Wallace** is the Champion only in Emerald; he is **not** the ORAS Champion.
 
 ### Individual Files
 - [ ] Steven
@@ -91,9 +96,9 @@ Master index for Hoenn's Gym Leaders, Elite Four, and Champion across all epochs
 | Category | Total | Completed | Remaining | % |
 |----------|-------|-----------|-----------|---|
 | Gym Leaders | 9 | 0 | 9 | 0% |
-| Elite Four | 5 | 0 | 5 | 0% |
+| Elite Four | 4 | 0 | 4 | 0% |
 | Champion | 2 | 0 | 2 | 0% |
-| **Total** | **16** | **0** | **16** | **0%** |
+| **Total** | **15** | **0** | **15** | **0%** |
 
 ---
 
@@ -101,4 +106,4 @@ Master index for Hoenn's Gym Leaders, Elite Four, and Champion across all epochs
 1. Start with **Roxanne** (Rustboro City Gym Leader)
 2. Use Misty template
 
-*Last updated: June 3, 2026*
+*Last updated: June 4, 2026*

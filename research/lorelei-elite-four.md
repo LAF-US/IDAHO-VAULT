@@ -35,9 +35,7 @@
 
 ### Generation II
 - **Games**: Gold, Silver, Crystal
-- **Location**: Indigo Plateau
-- **Team**: Same as Gen I
-- **Notable**: Replaced by Will in later gens
+- **Status**: Absent. Lorelei does **not** appear in the Generation II Elite Four. The Indigo Plateau lineup in Gold/Silver/Crystal is Will, Koga, Bruno, and Karen; Will (Psychic-type specialist) takes the first Elite Four position Lorelei held in Generation I. There is no Generation II Lorelei battle.
 
 ### Generation III (Remakes)
 - **Games**: FireRed, LeafGreen

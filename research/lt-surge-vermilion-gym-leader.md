@@ -36,10 +36,10 @@
 
 ### Generation II
 - **Games**: Gold, Silver, Crystal
-- **Location**: Vermilion Gym
-- **Team**: Same as Gen I
+- **Location**: Vermilion Gym (Kanto postgame)
+- **Team**: Raichu (Lv. 44), Electrode (Lv. 40), Electrode (Lv. 40), Magneton (Lv. 40), Electabuzz (Lv. 46)
 - **Reward**: Thunder Badge
-- **Notable**: No TM given
+- **Notable**: Kanto postgame team built around Raichu, Electrode, Magneton, and Electabuzz — not his Gen I Voltorb/Pikachu/Raichu lineup. No TM given
 
 ### Generation III (Remakes)
 - **Games**: FireRed, LeafGreen
@@ -74,6 +74,11 @@
 | FRLG/HGSS | Pikachu | 18 | Electric | Shock Wave, Thunder Wave, Quick Attack, Double Team |
 | FRLG/HGSS | Raichu | 24 | Electric | Thunderbolt, Quick Attack, Iron Tail, Thunder Wave |
 | Yellow | Raichu | 24 | Electric | Thunderbolt, Mega Kick, Quick Attack, Double Team |
+| GSC | Raichu | 44 | Electric | Thunderbolt, Quick Attack, Mud-Slap, Thunder Wave |
+| GSC | Electrode | 40 | Electric | Rollout, Screech, Swift, Light Screen |
+| GSC | Electrode | 40 | Electric | Rollout, Screech, Swift, Light Screen |
+| GSC | Magneton | 40 | Electric/Steel | Thunderbolt, Swift, Supersonic, Thunder Wave |
+| GSC | Electabuzz | 46 | Electric | Thunderbolt, Ice Punch, Cross Chop, Quick Attack |
 
 ### Strategy
 - Electric-type offense with STAB moves

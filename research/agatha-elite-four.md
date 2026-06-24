@@ -16,7 +16,7 @@
 **Agatha** (Japanese: キクコ *Kikuko*) is the **third member of the Kanto Elite Four**. She specializes in **Ghost-type Pokémon**, though her teams consist primarily of **Poison-type Pokémon** due to the limited Ghost-type availability in early generations.
 
 - **Full Name**: Agatha
-- **Japanese Name**: Natsume (ナツメ)
+- **Japanese Name**: Kikuko (キクコ)
 - **Role**: Elite Four (third member in Kanto)
 - **Specialty**: Ghost-type Pokémon (with Poison-type focus)
 - **First Appearance**: Pokémon Red and Blue (Generation I)
@@ -38,10 +38,7 @@
 - **Notable**: Uses standard Trainer battle theme
 
 ### Generation II (Gold, Silver, Crystal)
-- **Location**: Indigo Plateau (Chamber 3)
-- **Team**: Same as Generation I
-- **Reward**: None
-- **Notable**: Position remains third in Elite Four order
+- **Status**: Absent. Agatha does **not** appear in the Generation II Elite Four. The Indigo Plateau Elite Four in Gold/Silver/Crystal is Will, Koga, Bruno, and Karen — Karen (Dark-type specialist) occupies the lineup in this era. There is no Generation II Agatha battle.
 
 ### Generation III (FireRed, LeafGreen)
 - **Location**: Indigo Plateau (Chamber 3)
@@ -185,7 +182,7 @@ Agatha's battle strategy is characterized by:
 
 ### Name Origin
 - **English**: Agatha - from Greek "agathos" (ἀγαθός) meaning "good" or "kind"
-- **Japanese**: ナツメ (Natsume) - from "natsume" (棗), a type of Japanese date palm, or possibly "natsu" (夏, summer) + "me" (目, eye)
+- **Japanese**: キクコ (Kikuko) - a feminine given name written with characters such as 菊 (kiku, "chrysanthemum"), fitting an elderly, refined Ghost-type specialist
 - Contrasts with her manipulative personality
 
 ### Signature Quote

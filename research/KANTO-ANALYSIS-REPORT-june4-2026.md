@@ -303,4 +303,4 @@ The Kanto Pokemon League established the foundation for all subsequent Pokemon r
 
 *Report generated: June 4, 2026*  
 *Status: Complete Analysis*  
-*Source: LAF-US/IDAHO-VAULT research files*
+*Source: loganfinney27/IDAHO-VAULT research files*
