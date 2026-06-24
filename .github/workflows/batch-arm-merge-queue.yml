@@ -13,7 +13,7 @@ name: Batch Arm Merge Queue
 # GraphQL mutation. See the field note on PR #588.
 #
 # So, per PR:
-#   - ready (mergeStateStatus == CLEAN): arm auto-merge as a backstop, then call
+#   - ready (mergeStateStatus == CLEAN or UNSTABLE): arm auto-merge as a backstop, then call
 #     the enqueuePullRequest mutation to ADD it to the merge queue now. Counted as
 #     enqueued only when the mutation returns a merge-queue entry id. A PR that is
 #     ALREADY in the queue (mergeQueueEntry present) is skipped, not re-enqueued —
@@ -154,12 +154,17 @@ jobs:
               echo "PR #$pr — ERROR: gh pr view failed (could not read mergeStateStatus); skipping"
               failed=$((failed + 1)); continue
             fi
-            # CLEAN is the "ready to merge/queue" signal; everything else
-            # (BLOCKED, BEHIND, UNKNOWN-after-retries, ...) takes the arm path.
+            # CLEAN or UNSTABLE is the "ready to enqueue" signal: both mean the PR
+            # satisfies branch protection (a *required* failure would read BLOCKED, not
+            # UNSTABLE). UNSTABLE just has a NON-required check red (e.g. an advisory
+            # reviewer) — the merge queue still accepts it and re-runs the required set.
+            # Everything else (BLOCKED, BEHIND, DIRTY, UNKNOWN-after-retries, ...) takes
+            # the arm path. If GitHub does reject an UNSTABLE enqueue, the mutation returns
+            # no entry and it falls through to the FAILED bucket — never a silent success.
             echo "PR #$pr — mergeStateStatus=$state"
 
             err=$(mktemp)
-            if [ "$state" = "CLEAN" ]; then
+            if [ "$state" = "CLEAN" ] || [ "$state" = "UNSTABLE" ]; then
               if [ "$DRY_RUN" = "true" ]; then
                 echo "  DRY RUN: would enqueue (enqueuePullRequest) #$pr"
                 enqueued=$((enqueued + 1)); rm -f "$err"; continue
