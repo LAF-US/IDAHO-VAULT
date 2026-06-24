@@ -1037,7 +1037,7 @@
       {
         "id": "obsidian-git",
         "name": "Git",
-        "version": "2.38.3",
+        "version": "2.38.5",
         "path": ".obsidian/plugins/obsidian-git/manifest.json"
       },
       {
