@@ -35,7 +35,7 @@ A sequence of rulers from the same family:
 - Habsburgs (13th-20th century, Europe)
 - Tudors (15th-17th century, England)
 - Romanovs (17th-20th century, Russia)
-- Hanoverians (18th century-present, UK)
+- Hanoverians (1714-1901, UK; succeeded by Saxe-Coburg and Gotha, renamed Windsor in 1917)
 
 ---
 
@@ -54,7 +54,7 @@ Royal marriages throughout history functioned as strategic breeding programs:
 
 Famous examples of royal inbreeding:
 - Habsburg Jaw: Mandibular prognathism from cousin marriages
-- Hemophilia: Royal disease passed through Queen Victoria's descendants
+- Hemophilia (a distinct mechanism, not inbreeding): an X-linked mutation arising in Queen Victoria and carried to her descendants by ordinary hereditary transmission
 - Mental Health: Various monarchs exhibited traits linked to inbreeding depression
 - Fertility Issues: Many royal lines ended due to inability to produce heirs
 
@@ -98,7 +98,7 @@ Key distinction from eugenics:
 - United Kingdom: House of Windsor
 - Japan: Imperial House of Japan
 - Scandinavia: Various royal houses
-- Middle East: Saudi royal family, UAE ruling families
+- (Distinct category) Middle East: Saudi Arabia is an absolute monarchy and the UAE a federation of hereditary emirates - modern monarchies, but not constitutional monarchies in the sense above
 
 ---
 
