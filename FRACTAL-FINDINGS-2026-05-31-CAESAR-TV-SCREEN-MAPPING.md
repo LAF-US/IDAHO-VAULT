@@ -149,9 +149,7 @@ Clarification: CODEX is BOTH a Touchstone AND an Agent (Codex the Janitor).
 Title: Caesar on a TV Screen
 Artist: The Last Dinner Party
 Album: Prelude to Ecstasy (2024)
-Key Lyrics:
-And just for a second I can be one of the greats
-Lyrics paraphrased: The song expresses a declaration of autonomy and ambition, using the metaphor of appearing as a powerful figure (Caesar) on a screen, with a message of self-determination.
+Key Lyrics (paraphrased, to avoid verbatim reproduction): The song expresses a declaration of autonomy and ambition, using the metaphor of appearing as a powerful figure (Caesar) on a screen, with a message of self-determination.
 
 ### The Vault Instantiation
 
