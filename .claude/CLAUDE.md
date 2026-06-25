@@ -131,8 +131,8 @@ This is not decoration. It is the **provenance anchor** that makes agent
 code-blame possible and forecloses the exact failure it exists to catch:
 inventing an imaginary "previous Claude" to credit or blame for work no grounded
 record supports. A session id resolves to one real run; "some earlier Claude did
-it" is confabulation — the GEMINIAEUS / invented-certainty pattern the Provenance
-axis forbids. Use the session id **more**, not less.
+it" is confabulation — confident output with no valid emanation chain, the
+failure the Provenance axis forbids. Use the session id **more**, not less.
 
 **Rules:**
 
