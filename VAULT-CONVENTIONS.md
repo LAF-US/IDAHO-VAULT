@@ -866,6 +866,33 @@ When both devices edit the same config file between syncs, Obsidian creates a `(
   - A long-lived branch requires a named purpose, a steward, and a review
     cadence. "Still exists" is not legitimacy.
 
+- Branch & PR scope — one matter per branch:
+
+  - A branch addresses **one matter**: a single coherent change that is
+    independently reviewable and independently mergeable (one fix, one feature,
+    one doctrine node or tightly-coupled cluster). The `description` in the
+    branch name names that matter.
+
+  - The test, not a dogma: keep work on one branch only while it is the *same*
+    matter. A genuinely single, unfolding matter may stay on one branch; the
+    error is letting *multiple* matters accrete. The moment the work forks into
+    separable deliverables, split it into separate branches/PRs.
+
+  - Combine only changes that must land together (atomic — they break if
+    separated). Split across different concerns, risk tiers, or `CODEOWNERS`
+    boundaries.
+
+  - Branch from `main` (a stable base), never from an in-progress branch —
+    branching off work-in-progress increases conflict-resolution cost.
+
+  - Separation is lane ownership (the boid rule, applied): do not edit another
+    agent's in-flight branch; avoid shared hotspot files (`swarm.json`,
+    registries, governance roots) in parallel.
+
+  - Keep PRs small and scoped — small reviewable PRs review faster and merge
+    more often; reviewer engagement is the strongest predictor of a merge.
+    (Promoted from `AGENTIC-GITHUB-REVIEW-BEST-PRACTICES-2026-06-15` §V.)
+
 - Commit messages: Clear, descriptive, explain the "why"
 
 - Never force-push without explicit permission
