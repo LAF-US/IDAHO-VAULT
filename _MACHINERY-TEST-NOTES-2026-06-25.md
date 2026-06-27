@@ -8,13 +8,25 @@ tags: [cold-read, machinery-test, disposable, apocrypha]
 
 # Machinery Test — Notes
 
-This note exists to give the review machinery (CodeRabbit, Copilot, Sourcery, GitBook, CI) something substantive to chew on when this PR is flipped from draft to ready — before the Spelunking Census.
+This note gives the review machinery something substantive to chew on, and records what the run observed — before the Spelunking Census.
 
-## What we expect to observe
+## Research finding (2026-06-25) — measuring convergence
 
-- Review bots that defer on drafts (e.g. CodeRabbit) should now run a real review.
-- GitHub Actions checks (e.g. Cross-Platform Smoke, CodeQL) should register and run.
-- The auto-merge-engage / enqueue workflow may arm auto-merge; branch protection should hold the PR at the gate, with no cascade to `main`.
+The Census's core measurement — *do N independent cold readers agree on a cosmology element?* — is an **inter-rater reliability** problem.
+
+- **Fleiss' kappa** — standard for complete nominal data with many raters (implemented dependency-free in the companion module).
+- **Krippendorff's alpha** — preferred when raters cover *different* material (missing cells) or non-nominal scales; the realistic Census case, since cold readers enter by different doors. The eventual target metric.
+
+Sources: Zapf et al. 2016 (BMC Med Res Methodol); Krippendorff 2004. Marked `[research]`; not doctrine.
+
+## Observed (this run)
+
+- **CodeRabbit**: defers on drafts ("Review skipped"); on ready, runs a real review (no actionable code comments; 100% docstring coverage). Enforces a **required PR-description template** via a pre-merge "Description check."
+- **Sourcery**: auto-summarizes + posts a reviewer's guide (runs on drafts).
+- **Copilot**: auto-requested as reviewer.
+- **GitBook**: syncs each change (diff-in-editor link).
+- **Qodo**: paused (seat); **ChatGPT-Codex** reviewer: rate-limited.
+- Branch protection held the PR `blocked` (no cascade) until requirements were met.
 
 ## What this is not
 
