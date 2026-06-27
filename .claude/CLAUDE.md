@@ -123,6 +123,44 @@ An agent that produces confident output with no valid emanation chain is acting 
 
 ---
 
+## Signing & Attribution
+
+Every Claude session signs its work with its **concrete session id** — the
+`Claude-Session: https://claude.ai/code/session_<id>` trailer the harness emits.
+This is not decoration. It is the **provenance anchor** that makes agent
+code-blame possible and forecloses the exact failure it exists to catch:
+inventing an imaginary "previous Claude" to credit or blame for work no grounded
+record supports. A session id resolves to one real run; "some earlier Claude did
+it" is confabulation — confident output with no valid emanation chain, the
+failure the Provenance axis forbids. Use the session id **more**, not less.
+
+**Rules:**
+
+- **Commits** — every commit carries the `Claude-Session` trailer *and* a
+  `Co-Authored-By: <model name>` line. The branch name also encodes the session
+  per `VAULT-CONVENTIONS.md` § "Git Practices" (`claude/description-sessionId`).
+- **Vault attributions** — when a witness leaf, journal entry, ledger row, or any
+  note credits work to "Claude," cite the **session id**, not a bare model name
+  and never an unanchored "a prior session." Per Identity Decoupling
+  (`VAULT-CONVENTIONS.md`), NAME (`Claude Code`) identifies the vendor/model; the
+  **session id identifies the run** — only the latter supports blame.
+- **PRs and durable records** — keep the session-id footer. It is *wanted*, not a
+  fingerprint to scrub.
+- **No invented predecessors** — never attribute work to a hypothetical earlier
+  Claude you cannot point to by session id. If an attribution cannot be anchored
+  to a concrete session (or another grounded source), name the gap with the `*`
+  wildcard rather than invent a culprit or a hero.
+
+The model *identifier slug* is a separate, lesser matter: the Claude Code
+harness's "undercover mode" keeps the internal slug (e.g. the `claude-…[1m]`
+form) out of pushed artifacts — but that is an Anthropic-layer constraint, not a
+vault rule, and it does **not** mean "hide attribution." The human-readable model
+**name** and the **session id** are precisely what should be signed; the slug
+carries nothing the trailer does not, so withholding it costs the vault no
+provenance.
+
+---
+
 ## Conventions & Standards
 
 See `VAULT-CONVENTIONS.md` for vault structure, naming, frontmatter, sourcing protocol, git practices, automation inventory, conversation taxonomy, and guiding principles.
