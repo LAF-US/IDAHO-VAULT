@@ -82,7 +82,7 @@ def fleiss_kappa(table: Sequence[Sequence[int]]) -> float:
 # --- set agreement: Jaccard and MASI (Passonneau 2006) ---------------------
 
 def jaccard(a: set, b: set) -> float:
-    """|A ∩ B| / |A ∪ B| (intersection over union). Two empty sets count as identical (1.0)."""
+    """len(A & B) / len(A | B) (intersection over union). Two empty sets count as identical (1.0)."""
     if not a and not b:
         return 1.0
     return len(a & b) / len(a | b)
