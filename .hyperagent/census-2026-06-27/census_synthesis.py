@@ -2,7 +2,7 @@
 """Spelunking Census — grounded synthesis from RECOVERED cosmonaut reports.
 
 Source of truth: the 13 lore cosmonauts' final reports, recovered from subagent
-transcripts on disk (census_recovered/*.md) after context compaction. Every
+transcripts on disk (census-2026-06-27/lore/D*.md) after context compaction. Every
 number printed below is computed from entity/heading/coverage data hand-coded
 from those reports; the S0 entity-resolution merges are logged inline so each
 alias decision is auditable. No value here is narrated from memory.
@@ -129,7 +129,7 @@ masi_to_centroid = [cm.masi_distance(reader_sets[c], centroid) for c in range(N)
 # ============================== ALIGNMENT ==================================
 alpha_align = cm.krippendorff_alpha(A, distance=cm.nominal_distance)
 verb_tally = {v: VERBS.count(v) for v in sorted(set(VERBS), key=lambda x:-VERBS.count(x))}
-govern_n = sum(1 for v in VERBS if v in GOVERN_FAMILY)
+gover_n = sum(1 for v in VERBS if v in GOVERN_FAMILY)
 record_n = sum(1 for v in VERBS if v in RECORD_FAMILY)
 
 # ====================== SEPARATION (coverage-conditioned) ==================
@@ -179,7 +179,7 @@ print(f"  mean reader MASI distance to centroid = {statistics.mean(masi_to_centr
 
 print("\n--- S2 ALIGNMENT : telos heading ---")
 print(f"  verb tally: {verb_tally}")
-print(f"  GOVERN-family {govern_n}/13   RECORD-family {record_n}/13   beneficiary=Logan 13/13")
+print(f"  GOVERN-family {gover_n}/13   RECORD-family {record_n}/13   beneficiary=Logan 13/13")
 for fn in facet_names:
     print(f"    facet {len(FACETS[fn]):2d}/13  {fn}")
 print(f"  Alignment alpha (4-facet x 13)     = {alpha_align:+.3f}  (few units; read as descriptive)")
@@ -203,7 +203,7 @@ for g in grid:
 out={"alpha_cohesion_full":alpha_full,"alpha_cohesion_full_CI":ci_full,
      "alpha_cohesion_core":alpha_core,"alpha_cohesion_core_CI":ci_core,
      "alpha_alignment":alpha_align,"verb_tally":verb_tally,
-     "govern_n":govern_n,"record_n":record_n,
+     "govern_n":gover_n,"record_n":record_n,
      "convergence":{nm:len(s) for nm,s in NODES.items()},
      "centroid":sorted(centroid),"mean_masi_to_centroid":statistics.mean(masi_to_centroid),
      "mean_coverage_jaccard":mean_jac,"mean_entity_separation":mean_ent,
