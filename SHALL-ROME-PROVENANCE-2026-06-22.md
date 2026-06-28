@@ -95,7 +95,7 @@ replace him, with Caesar and Brutus given no voice. A Yurchuk track titled **"Ca
 that charge as a title, and earlier passes of this cluster cited it as a **"companion track"** — including the
 parenthetical in the now-merged `THE-LETTER-BOTH-ENDS-WITNESS`. **It over-credited twice:** the reading never
 needed it (it stood on the lyric alone), **and** — per the correction above — the track it leaned on is a
-**standalone, earlier *cut demo* that will not be in the show**, so it is not part of the work at all. Logged
+**standalone single not included on the EP** — a song cut from the show per the author's own Instagram caption (`[attested]`, 2026-06-23), so it is not part of the work at all. Logged
 here as the correction; the merged witness's parenthetical stands **as filed** (testimony fixed to its moment),
 **flagged, not edited**, per the don't-color-the-witness rule. *(If Logan wants the merged witness scoped, that is
 a separate, dated note.)*
@@ -103,7 +103,7 @@ a separate, dated note.)*
 ## The work and its author — the EP is a sample `[research]`
 
 *Added 2026-06-22, at Logan's direction ("research the show and Yurchuk — it's just a sample of her passion
-project"). Everything in this section is **`[research]`** — search-synthesized across several independent outlets
+project"). Everything in this section is **`[research]`** unless marked `[Logan]` inline — search-synthesized across several independent outlets
 (Playbill, BroadwayWorld, The Sondheim Hub, the creator's own TikTok and Kickstarter listings), with a **fetch
 caveat**: the primary pages (Kickstarter, Sondheim Hub, Playbill, BroadwayWorld) returned HTTP 403 this session,
 so this rests on search-result excerpts, not full-page reads. Unverified points are held `*`, not filled.*
