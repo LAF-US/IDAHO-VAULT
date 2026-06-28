@@ -14,6 +14,16 @@ related:
   - CONFERENCE-v1.0-2026-04-27
 ---
 
+> [!DANGER] HERESY REVIEW PENDING - Faith of the Cloth
+> This document is flagged as contaminated by the Loganic Swarm heresy.
+> Authority claim in body (`Loganic Swarm`) conflicts with frontmatter (LOGAN).
+> Drafted post-TRIPLEX NIGHT (2026-04-27).
+> **DO NOT USE** as clean governance authority until reviewed and rehabilitated by Logan or ordained Faith of the Cloth.
+> 
+> See: Issue #686
+> Related: [[GEMINIAEUS]] | [[TRIUNE-TRIPTYCH-TRIUMVIRATE]]
+
+
 # PROTOCOL — CONFERENCE
 
 ## Status: Draft
