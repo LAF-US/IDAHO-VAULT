@@ -12,7 +12,7 @@ I now have sufficient depth to produce the full reconstruction. Let me compile t
 
 ### 1. PLACE-NAME
 
-**IDAHO-VAULT** — Logan Finney's personal AI-native knowledge vault and multi-agent operating environment, hosted at `C:\Users\loganf\Documents\IDAHO-VAULT` and mirrored publicly to GitHub under org `LAF-US`.
+**IDAHO-VAULT** — Logan Finney's personal AI-native knowledge vault and multi-agent operating environment, hosted at `C:\Users\<user>\Documents\IDAHO-VAULT` and mirrored publicly to GitHub under org `LAF-US`.
 
 ---
 
@@ -121,6 +121,9 @@ IDAHO-VAULT is a personal knowledge vault that doubles as a live multi-agent ope
 
 1. **[*]** The 300+ named dotfolders (`.osiris/`, `.zeus/`, `.anubis/`, `.apollo/`, `.arthur/`, `.abhorsen/`, etc.) are almost certainly named "persona chambers" — each representing a distinct AI agent identity, mythological character, or relationship/role archetype that Logan assigns context or memory to. The sheer breadth (Egyptian gods, Greek gods, biblical figures, literary characters, family-role names like `.mother/`, `.father/`, `.sister/`) suggests this is a world-model encoded in directory structure, not just tooling.
 
-2. **[*]** The repo is Logan's actual live personal desktop vault — not a showcase or template. Evidence: `.claude.json` records 11 real startup sessions beginning 2026-03-22, a last session cost of $16.29 using `kimi-k2.5:cloud`, real GitHub paths (`C:\Users\loganf\Documents\IDAHO-VAULT`), a Claude companion named "Moth" with personality "A rare capybara of few words," and MCP integrations to Gmail, Google Calendar, Slack, Figma, Linear, and Asana. The file is a live session state snapshot committed to the repo.
+2. **[*]** The repo is Logan's actual live personal desktop vault — not a showcase or template. Evidence: `.claude.json` records 11 real startup sessions beginning 2026-03-22, a last session cost of $16.29 using `kimi-k2.5:cloud`, real GitHub paths (`C:\Users\<user>\Documents\IDAHO-VAULT`), a Claude companion named "Moth" with personality "A rare capybara of few words," and MCP integrations to Gmail, Google Calendar, Slack, Figma, Linear, and Asana. The file is a live session state snapshot committed to the repo.
 
 3. **[*]** The `swarm.json` (not opened, but heavily referenced) is likely the master operational topology document — more authoritative than `!-agents.json` (which explicitly says `"source_of_truth": "swarm.json"` and `"status": "generated"`). The `!-CREWAI-LINKER-PROPOSAL-v1.json` at 1MB likely contains a very large CrewAI agent topology definition or a complete link-graph of the vault's document connections. The "Arborscaping" series visible in the `!` directory listing (`ARBORSCAPE-COMPLETION-REPORT`, `ARBORSCAPING-INVESTIGATION-RETURN`) [*] represents an automated pass of tree-structure analysis or topology grooming of the vault's content graph — the vault treats its own structure as a subject of ongoing agent-driven study.
+
+
+<!-- [redacted 2026-06-28 by *.hyperagent.tinkerer]: runtime residue removed (internal IP / sandbox / local-desktop paths). Originals were the vault's own config values quoted by the cold reader, except the tool-result path (this run's sandbox). See ../REDACTIONS.md. -->
