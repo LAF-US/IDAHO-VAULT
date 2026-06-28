@@ -94,7 +94,7 @@ def _monotonicity(a: set, b: set) -> float:
         return 1.0
     if not (a & b):
         return 0.0
-    if a <= b or b <= a:
+    if a < b or b < a:
         return 2.0 / 3.0
     return 1.0 / 3.0
 
