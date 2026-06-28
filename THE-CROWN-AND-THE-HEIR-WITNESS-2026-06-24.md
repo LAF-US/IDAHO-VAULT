@@ -46,7 +46,7 @@ and an apprentice"* — **one to embody the power, one to crave it** `[verified]
 **murder**: the apprentice exists to *replace the master by killing him.* The crown is never laid down;
 it is **taken.** This is the dyad as a failstate — the heir is a usurper-in-waiting, and the master clings
 until the knife. (The vault already holds why this cannot build: `SITH-INSTITUTIONS-AND-WHY-THE-FAILSTATE-CANT-BUILD`
-— a institution founded on replacement-by-murder consumes itself.) It is the Caesar-failstate's
+— an institution founded on replacement-by-murder consumes itself.) It is the Caesar-failstate's
 succession plan: *the crown that refuses the bell breeds the heir that must seize it.*
 
 **The Roman register — the dynastic crown.** Rome's empire was founded on a Rule of Two: **Julius** the
