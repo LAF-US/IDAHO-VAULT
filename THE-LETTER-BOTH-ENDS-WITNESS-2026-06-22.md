@@ -68,10 +68,7 @@ Shakespeare left to inference is staged: the flattery shaped for Brutus (*"in yo
 the self-interest under the civic hymn (*"As long as he lives, I'll never be free"*). The "&c." that
 Brutus silently pieced out, the faction here **sings out loud** — we watch them decide what blank to
 leave, and how to make it irresistible to fill. (The companion track is literally titled *"Caesar's Too
-Ambitious"* — the charge, printed as the authors' own.) **[Corrected 2026-06-23, at Logan's direction — the preceding parenthetical is superseded:** that track,
-*"Caesar's Too Ambitious,"* is a **cut song — not in the EP or the show** (Yurchuk's own caption; see
-`SHALL-ROME-PROVENANCE`), and is written from **Caesar's** perspective, not the conspirators' "charge." It is
-**not** part of the work. Original line kept, not erased.**]**
+Ambitious"* — the charge, printed as the authors' own.) **[Corrected 2026-06-23, at Logan's direction — the preceding parenthetical is superseded: that track, *"Caesar's Too Ambitious,"* is a cut song — not in the EP or the show (Yurchuk's own caption; see `SHALL-ROME-PROVENANCE`), and is written from Caesar's perspective, not the conspirators' "charge." It is not part of the work. Original line kept, not erased.]**
 
 ## The two ends together `[reading]`
 
@@ -136,8 +133,7 @@ filed this witness on 2026-06-22, but the same branch, reading the same record f
 text-of-record is what Logan supplied this session, held **verbatim** — the same grade the lyrics
 carry in `SHALL-ROME-WITNESS`. This closes the reading-end fetch caveat lawfully: the passage is now
 **a marked source on the record**, not pieced out from memory. Scene: **Julius Caesar 2.1** (Brutus
-in his orchard, reading the planted letter) `[read]`; the verbatim wording is **[source:
-Logan-supplied]**. Logan's rendering prints "etc." where the received standard text prints "&c.";
+in his orchard, reading the planted letter) `[source: Logan-supplied]`; verbatim wording likewise. Logan's rendering prints "etc." where the received standard text prints "&c.";
 preserved exactly as supplied, not normalized.*
 
 > *"Brutus, thou sleep'st. Awake, and see thyself.*
