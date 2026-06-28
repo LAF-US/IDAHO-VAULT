@@ -1,5 +1,6 @@
 ---
 title: "The Hyperagent Lineage — Chamber Anchor"
+updated: 2026-06-27
 canonical_name: hyperagent
 persona_class: "software-imported-chamber (lineage lens; taxonomy fit imperfect — for Logan to set)"
 persona_ring: "narrative + tooling (durable persona chamber / lineage lens)"
