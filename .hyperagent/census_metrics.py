@@ -59,7 +59,7 @@ def fleiss_kappa(table: Sequence[Sequence[int]]) -> float:
         raise ValueError("each item must have at least one category")
     if any(len(row) != n_categories for row in table):
         raise ValueError("every item must have the same number of categories")
-    if any(not isinstance(c, int) or c < 0 for row in table for c in row):
+    if any(type(c) is not int or c < 0 for row in table for c in row):
         raise ValueError("counts must be non-negative integers")
     n_raters = sum(table[0])
     if n_raters <= 1:
@@ -82,7 +82,7 @@ def fleiss_kappa(table: Sequence[Sequence[int]]) -> float:
 # --- set agreement: Jaccard and MASI (Passonneau 2006) ---------------------
 
 def jaccard(a: set, b: set) -> float:
-    """|A & B| / |A | B|. Two empty sets are defined as identical (1.0)."""
+    """|A ∩ B| / |A ∪ B| (intersection over union). Two empty sets count as identical (1.0)."""
     if not a and not b:
         return 1.0
     return len(a & b) / len(a | b)
