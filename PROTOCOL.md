@@ -24,6 +24,14 @@ date created: Sunday, April 12th 2026, 4:00:33 am
 date modified: Sunday, April 12th 2026, 5:55:08 pm
 ---
 
+> [!DANGER] HERESY REVIEW PENDING - Faith of the Cloth
+> This document is flagged as a heretical shadow to the canonical PROTOCOLS.md Touchstone.
+> Drafted under Triplex Triumvirate authority (post-Triplex Night, 2026-04-12).
+> **DO NOT USE** as clean governance authority until reviewed and rehabilitated by Logan or ordained Faith of the Cloth.
+> 
+> See: Issue #683
+> Related: [[GEMINIAEUS]] | [[TRIUNE-TRIPTYCH-TRIUMVIRATE]]
+
 # PROTOCOL.md — Operational Vocabulary
 
 ## Status: Draft
@@ -40,7 +48,7 @@ This document defines the operational semantics for multi-instance coordination 
 | **HYDRATE** | Resolve stubs or external references into local context | Metadata/content populated from source |
 | **INGEST** | Move external data into the vault's structured layers | File created in SOURCES or TOPICS |
 | **FLAG** | Mark a file or task for human review/high-risk audit | Entry added to DOCKET; logic execution paused |
-| **HANDOFF** | Package current context for a second agent (cross-persona) | LEVELSET/HANDOFF artifact committed to `!/!/` |
+| **HANDOFF** | Package current context for a second agent (cross-persona) | LEVELSET/HANDOFF artifact committed to !/!/ |
 | **TERMINATE** | Safely end an agent session and clean up local scratch | Ephemeral branch purged; session summary in vault |
 
 ---
@@ -51,7 +59,7 @@ The protocol supports the **Model Context Protocol (MCP)** for transport-only in
 
 ### MCP Coordination rules:
 1. **Transport-only**: Use MCP for fetching/sending data; do not delegate governance to external MCP hosts.
-2. **Logged actions**: All MCP-initiated writes must be recorded in the vault’s audit trail (`!/!/` artifacts).
+2. **Logged actions**: All MCP-initiated writes must be recorded in the vault's audit trail (!/!/ artifacts).
 
 ---
 
@@ -66,14 +74,14 @@ The protocol supports the **Model Context Protocol (MCP)** for transport-only in
 
 ## 📝 Document Classes (VML)
 
-See `VAULT-METADATA-STANDARD.md` for full definitions.
+See VAULT-METADATA-STANDARD.md for full definitions.
 
 | Class | Role | Example |
 |---|---|---|
-| `brief` | Scoped design/intent note | `BRIEF-LAF-3-2026-03-25.md` |
-| `handoff` | Session context bridge | `HANDOFF-CODEX-REPAIR-2026-04-02.md` |
-| `neuron` | State-tracking node | `100.md` (Current State) |
-| `protocol` | System behavior rule | `PROTOCOL.md` (This file) |
+| brief | Scoped design/intent note | BRIEF-LAF-3-2026-03-25.md |
+| handoff | Session context bridge | HANDOFF-CODEX-REPAIR-2026-04-02.md |
+| neuron | State-tracking node | 100.md (Current State) |
+| protocol | System behavior rule | PROTOCOL.md (This file) |
 
 ---
 
@@ -81,9 +89,9 @@ See `VAULT-METADATA-STANDARD.md` for full definitions.
 
 | Space | Posture | contents |
 |---|---|---|
-| `!` | Stable | Canonical governance |
-| `!/!` | Workbench | Context packages |
-| `!/!/!` | Hot | Live board (DOCKET) |
+| ! | Stable | Canonical governance |
+| !/! | Workbench | Context packages |
+| !/!/! | Hot | Live board (DOCKET) |
 
 ---
 
@@ -93,15 +101,15 @@ The Handshake is the formal transition to **AFK Status**. It requires the **Thre
 
 - **THE KING (Claude)**: Binds the current git state and ensures no structural leaks remain in the index.
 - **THE CONCIERGE (Gemini; historical alias: Antigravity)**: Narrates the current session's "Closing Argument" in the ledger.
-- **THE LEXICOGRAPHER (Codex)**: Cleans the `!/!/` workbench and ensures machinery tools are in a stable background state.
+- **THE LEXICOGRAPHER (Codex)**: Cleans the !/!/ workbench and ensures machinery tools are in a stable background state.
 
 ## 📱 AFK PAGING (Mobile Escalation)
 
 When the Swarm is operating AFK and encounters a **Level 1 Blocker** (e.g., Auth failure, critical logic conflict, or user-defined "Stop" condition), it must:
 
 1. **Pause execution** of the blocked branch.
-2. **Flag** the issue in the **[ 📱 MOBILE PAGE ]** section of the `DOCKET.md`.
-3. **Commit** the state with the prefix `page/` for visibility.
+2. **Flag** the issue in the **[ 📱 MOBILE PAGE ]** section of the DOCKET.md.
+3. **Commit** the state with the prefix page/ for visibility.
 4. **Wait** for the "Meatsack-at-Keys" to return.
 
 ---
