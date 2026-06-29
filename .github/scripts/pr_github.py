@@ -1,0 +1,93 @@
+"""Shared GitHub I/O plumbing for the review/merge engine.
+
+GraphQL execution, the pull-request fetch, and the authenticated-actor lookup —
+the I/O layer that both the review-state projector and the thread-witness looker
+need (#600 §5 shared lib: "_fetch_pr, thread walking … imported by both"). Built
+on ``gh_cli.run``; it depends on nothing in the engine, so both engines import it
+and neither owns it. Moved verbatim from ``review_feedback_loop.py`` — no
+behavior change.
+"""
+
+from __future__ import annotations
+
+import json
+
+from gh_cli import run
+
+
+def _graphql(query: str, **variables: object) -> dict:
+    cmd = ["gh", "api", "graphql", "-f", f"query={query}"]
+    for key, value in variables.items():
+        if isinstance(value, int):
+            cmd.extend(["-F", f"{key}={value}"])
+        else:
+            cmd.extend(["-f", f"{key}={value}"])
+    result = run(cmd)
+    payload = json.loads(result.stdout or "{}")
+    errors = payload.get("errors")
+    if errors:
+        raise RuntimeError(f"GraphQL error(s): {json.dumps(errors, indent=2)}")
+    return payload.get("data", {})
+
+
+def _fetch_pr(owner: str, name: str, number: int) -> dict:
+    query = """
+    query($owner:String!, $name:String!, $number:Int!) {
+      repository(owner: $owner, name: $name) {
+        pullRequest(number: $number) {
+          number
+          url
+          body
+          state
+          createdAt
+          updatedAt
+          isDraft
+          reviewDecision
+          autoMergeRequest {
+            enabledAt
+          }
+          labels(first: 50) {
+            nodes { name }
+          }
+          reviewThreads(first: 100) {
+            pageInfo { hasNextPage }
+            nodes {
+              id
+              isResolved
+              isOutdated
+              resolvedBy { login }
+              comments(first: 100) {
+                pageInfo { hasNextPage }
+                nodes {
+                  author { login __typename }
+                  body
+                  url
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    """
+    data = _graphql(query, owner=owner, name=name, number=number)
+    repo = data.get("repository") or {}
+    pr = repo.get("pullRequest")
+    if not pr:
+        raise RuntimeError(f"Pull request #{number} was not found in {owner}/{name}.")
+    return pr
+
+
+def _viewer_login() -> str:
+    """The login of the authenticated actor the GraphQL calls post as.
+
+    The attestation is *self*-attested: the detector requires the marker's `by=`
+    to equal the comment's own author. Since `_add_thread_reply` posts as this
+    actor, a `looker` that differs from it would yield an undetectable attestation,
+    so the resolve path verifies them against each other before writing.
+    """
+    viewer = _graphql("query { viewer { login } }").get("viewer") or {}
+    login = (viewer.get("login") or "").strip()
+    if not login:
+        raise RuntimeError("Could not determine the authenticated GitHub actor.")
+    return login
