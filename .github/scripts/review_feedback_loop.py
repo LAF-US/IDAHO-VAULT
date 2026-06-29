@@ -53,6 +53,7 @@ from pr_threads import (  # shared thread-analysis vocabulary (#600 §5)
 # to what it uses. Their unit tests reference them from pr_threads directly.
 
 from gh_cli import run as _run
+from pr_github import _fetch_pr, _graphql, _viewer_login
 
 
 APPLY_RE = re.compile(r"@copilot\b[\s\S]*?\bapply changes\b", re.IGNORECASE)
@@ -352,69 +353,6 @@ def _maybe_arm_auto_merge(
     return {"armed": armed, "reason": arm_error}
 
 
-def _graphql(query: str, **variables: object) -> dict:
-    cmd = ["gh", "api", "graphql", "-f", f"query={query}"]
-    for key, value in variables.items():
-        if isinstance(value, int):
-            cmd.extend(["-F", f"{key}={value}"])
-        else:
-            cmd.extend(["-f", f"{key}={value}"])
-    result = _run(cmd)
-    payload = json.loads(result.stdout or "{}")
-    errors = payload.get("errors")
-    if errors:
-        raise RuntimeError(f"GraphQL error(s): {json.dumps(errors, indent=2)}")
-    return payload.get("data", {})
-
-
-def _fetch_pr(owner: str, name: str, number: int) -> dict:
-    query = """
-    query($owner:String!, $name:String!, $number:Int!) {
-      repository(owner: $owner, name: $name) {
-        pullRequest(number: $number) {
-          number
-          url
-          body
-          state
-          createdAt
-          updatedAt
-          isDraft
-          reviewDecision
-          autoMergeRequest {
-            enabledAt
-          }
-          labels(first: 50) {
-            nodes { name }
-          }
-          reviewThreads(first: 100) {
-            pageInfo { hasNextPage }
-            nodes {
-              id
-              isResolved
-              isOutdated
-              resolvedBy { login }
-              comments(first: 100) {
-                pageInfo { hasNextPage }
-                nodes {
-                  author { login __typename }
-                  body
-                  url
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-    """
-    data = _graphql(query, owner=owner, name=name, number=number)
-    repo = data.get("repository") or {}
-    pr = repo.get("pullRequest")
-    if not pr:
-        raise RuntimeError(f"Pull request #{number} was not found in {owner}/{name}.")
-    return pr
-
-
 def _resolve_thread(thread_id: str) -> None:
     mutation = """
     mutation($threadId: ID!) {
@@ -519,21 +457,6 @@ def _add_thread_reply(thread_id: str, body: str) -> None:
     }
     """
     _graphql(mutation, threadId=thread_id, body=body)
-
-
-def _viewer_login() -> str:
-    """The login of the authenticated actor the GraphQL calls post as.
-
-    The attestation is *self*-attested: the detector requires the marker's `by=`
-    to equal the comment's own author. Since `_add_thread_reply` posts as this
-    actor, a `looker` that differs from it would yield an undetectable attestation,
-    so the resolve path verifies them against each other before writing.
-    """
-    viewer = _graphql("query { viewer { login } }").get("viewer") or {}
-    login = (viewer.get("login") or "").strip()
-    if not login:
-        raise RuntimeError("Could not determine the authenticated GitHub actor.")
-    return login
 
 
 def _fetch_thread(thread_id: str) -> dict | None:
