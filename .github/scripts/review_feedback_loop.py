@@ -48,14 +48,10 @@ from pr_threads import (  # shared thread-analysis vocabulary (#600 §5)
     _thread_resolved_by,
 )
 
-# Re-exported onto the engine's surface for callers/tests; the engine's own
-# control flow reaches these only transitively (via disposition), not directly.
-# Assigned from the module (not `import … as …`) so linters register a concrete
-# use rather than flagging a re-export as an unused import.
-import pr_threads
-
-_author_is_bot = pr_threads._author_is_bot
-_thread_has_committable_suggestion = pr_threads._thread_has_committable_suggestion
+# Note: `_author_is_bot` and `_thread_has_committable_suggestion` also live in
+# pr_threads but are NOT imported here — the engine reaches them only transitively
+# (through `_thread_resolution_disposition`), so the engine's surface stays honest
+# to what it uses. Their unit tests reference them from pr_threads directly.
 
 
 APPLY_RE = re.compile(r"@copilot\b[\s\S]*?\bapply changes\b", re.IGNORECASE)
