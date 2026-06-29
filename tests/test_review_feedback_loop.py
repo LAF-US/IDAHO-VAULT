@@ -601,37 +601,15 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         ):
             self.assertIsNone(review_feedback_loop._pr_node_id("o", "r", 9))
 
-    # ----- protected-path guard + guarded arm (#521/#527 reversal, 2026-06-17) -----
+    # ----- guarded arm (#521/#527 reversal, 2026-06-17). The protected-path veto was
+    # retired 2026-06-29 (K1/#627, K2/#628): the CODEOWNERS hard gate
+    # (require_code_owner_review) now enforces "this path needs a human", so the engine no
+    # longer vetoes protected paths — these tests assert the un-vetoed arm path. -----
 
-    def test_pr_touches_protected_path_matches_governance_and_ci(self) -> None:
-        # A changed file under a protected glob → True; an ordinary doc-only PR → False.
-        protected = mock.Mock(stdout="docs/notes.md\n.github/workflows/ci.yml\nREADME.md\n")
-        plain = mock.Mock(stdout="docs/notes.md\nREADME.md\n")
-        with mock.patch.object(review_feedback_loop, "_run", return_value=protected):
-            self.assertTrue(
-                review_feedback_loop._pr_touches_protected_path("o", "r", 1)
-            )
-        with mock.patch.object(review_feedback_loop, "_run", return_value=plain):
-            self.assertFalse(
-                review_feedback_loop._pr_touches_protected_path("o", "r", 2)
-            )
-
-    def test_pr_touches_protected_path_fails_closed_on_fetch_error(self) -> None:
-        # If the changed-file list can't be fetched, treat the PR as protected (never widen
-        # what gets armed on a transient API failure).
-        with mock.patch.object(
-            review_feedback_loop, "_run", side_effect=RuntimeError("api down")
-        ):
-            self.assertTrue(
-                review_feedback_loop._pr_touches_protected_path("o", "r", 3)
-            )
-
-    def test_maybe_arm_arms_eligible_non_protected_pr(self) -> None:
+    def test_maybe_arm_arms_eligible_pr(self) -> None:
         # On a successful arm, the merge/auto label is applied via a CHECKED gh call so the
         # write can fail-close (see test below). Mock _run for that label edit.
         with mock.patch.object(
-            review_feedback_loop, "_pr_touches_protected_path", return_value=False
-        ), mock.patch.object(
             review_feedback_loop, "_arm_auto_merge", return_value=(True, None)
         ) as arm, mock.patch.object(
             review_feedback_loop, "_run"
@@ -650,8 +628,6 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         # If arming succeeds but the merge/auto label write fails, disable the auto-merge we
         # just enabled and report failure — never leave an armed PR the disable path can't track.
         with mock.patch.object(
-            review_feedback_loop, "_pr_touches_protected_path", return_value=False
-        ), mock.patch.object(
             review_feedback_loop, "_arm_auto_merge", return_value=(True, None)
         ), mock.patch.object(
             review_feedback_loop, "_run", side_effect=RuntimeError("label write failed")
@@ -665,29 +641,15 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertIn("label write failed", result["reason"])
         disable.assert_called_once_with(6)
 
-    def test_maybe_arm_refuses_protected_path(self) -> None:
+    def test_maybe_arm_noops_when_not_eligible(self) -> None:
+        # Not eligible → never arms.
         with mock.patch.object(
-            review_feedback_loop, "_pr_touches_protected_path", return_value=True
-        ), mock.patch.object(review_feedback_loop, "_arm_auto_merge") as arm:
-            result = review_feedback_loop._maybe_arm_auto_merge(
-                "o", "r", 6, {"eligible_for_auto_merge": True}
-            )
-        self.assertFalse(result["armed"])
-        self.assertIn("protected", result["reason"])
-        arm.assert_not_called()
-
-    def test_maybe_arm_noops_when_not_eligible_without_touching_api(self) -> None:
-        # Not eligible → never even fetches the file list (no gh call) and never arms.
-        with mock.patch.object(
-            review_feedback_loop, "_pr_touches_protected_path"
-        ) as protected, mock.patch.object(
             review_feedback_loop, "_arm_auto_merge"
         ) as arm:
             result = review_feedback_loop._maybe_arm_auto_merge(
                 "o", "r", 7, {"eligible_for_auto_merge": False}
             )
         self.assertFalse(result["armed"])
-        protected.assert_not_called()
         arm.assert_not_called()
 
     def test_sync_pr_arms_eligible_low_risk_pr_when_threads_clear(self) -> None:
@@ -714,8 +676,6 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             review_feedback_loop, "_resolve_outdated_resolvable_threads", return_value=[]
         ), mock.patch.object(
             review_feedback_loop, "apply_review_state_projection", return_value=[]
-        ), mock.patch.object(
-            review_feedback_loop, "_pr_touches_protected_path", return_value=False
         ), mock.patch.object(
             review_feedback_loop, "_run"
         ), mock.patch.object(
@@ -827,8 +787,6 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         ), mock.patch.object(
             review_feedback_loop, "apply_review_state_projection", return_value=[]
         ), mock.patch.object(
-            review_feedback_loop, "_pr_touches_protected_path", return_value=False
-        ), mock.patch.object(
             review_feedback_loop, "_edit_label"
         ) as edit_label, mock.patch.object(
             review_feedback_loop, "_comment"
@@ -841,41 +799,6 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         edit_label.assert_any_call(88, add=review_feedback_loop.DEFAULT_AUTO_MERGE_LABEL)
         comment.assert_called_once()
         arm_auto_merge.assert_called_once_with("LAF-US", "IDAHO-VAULT", 88)
-
-    def test_reconcile_open_prs_refuses_to_arm_protected_path_pr(self) -> None:
-        # The protected-path guard: even an eligible PR that touches governance/CI surfaces
-        # is NOT armed — it waits for a human.
-        args = SimpleNamespace(owner="LAF-US", repo="IDAHO-VAULT", grace_minutes=30)
-        # Eligible (risk/low + grace + merge/auto label, unblocked) — so the ONLY thing
-        # stopping the arm is the protected-path guard.
-        ready_pr = _pr(
-            number=91,
-            created_at=datetime(2026, 4, 16, 1, 0, tzinfo=timezone.utc),
-            labels=(
-                review_feedback_loop.RISK_LOW_LABEL,
-                review_feedback_loop.DEFAULT_AUTO_MERGE_LABEL,
-            ),
-        )
-
-        with mock.patch.object(review_feedback_loop, "ensure_labels"), mock.patch.object(
-            review_feedback_loop, "_list_open_pr_numbers", return_value=[91]
-        ), mock.patch.object(
-            review_feedback_loop, "_fetch_pr", side_effect=[ready_pr]
-        ), mock.patch.object(
-            review_feedback_loop, "_viewer_login", return_value="github-actions[bot]"
-        ), mock.patch.object(
-            review_feedback_loop, "_resolve_outdated_resolvable_threads", return_value=[]
-        ), mock.patch.object(
-            review_feedback_loop, "apply_review_state_projection", return_value=[]
-        ), mock.patch.object(
-            review_feedback_loop, "_pr_touches_protected_path", return_value=True
-        ), mock.patch.object(
-            review_feedback_loop, "_arm_auto_merge"
-        ) as arm_auto_merge:
-            result = review_feedback_loop.reconcile_open_prs(args)
-
-        self.assertEqual(result, 0)
-        arm_auto_merge.assert_not_called()
 
     def test_reconcile_open_prs_reports_auth_blocked_auto_merge(self) -> None:
         ready_pr = _pr(
@@ -910,8 +833,6 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             },
         ), mock.patch.object(
             review_feedback_loop, "apply_review_state_projection", return_value=[]
-        ), mock.patch.object(
-            review_feedback_loop, "_pr_touches_protected_path", return_value=False
         ), mock.patch.object(
             review_feedback_loop, "_arm_auto_merge", return_value=(
                 False,
@@ -956,8 +877,6 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             return_value=outdated_results,
         ) as resolve_outdated, mock.patch.object(
             review_feedback_loop, "apply_review_state_projection", return_value=[]
-        ), mock.patch.object(
-            review_feedback_loop, "_pr_touches_protected_path", return_value=False
         ):
             report = review_feedback_loop._build_reconciliation_report(
                 "LAF-US", "IDAHO-VAULT", grace_minutes=30
