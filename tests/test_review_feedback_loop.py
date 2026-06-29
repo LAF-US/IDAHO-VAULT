@@ -427,7 +427,9 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             "(enablePullRequestAutoMerge)\n"
         )
 
-        with mock.patch.object(review_feedback_loop, "_run", side_effect=error):
+        with mock.patch.object(
+            review_feedback_loop, "_auto_merge_state", return_value=(False, False)
+        ), mock.patch.object(review_feedback_loop, "_run", side_effect=error):
             enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 289)
 
         self.assertFalse(enabled)
