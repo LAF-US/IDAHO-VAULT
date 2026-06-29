@@ -15,16 +15,21 @@ from unittest import mock
 def _load_review_feedback_loop_module():
     project_root = Path(__file__).resolve().parents[1]
     scripts_dir = project_root / ".github" / "scripts"
-    # The engine now imports its shared thread-analysis lib (pr_threads) as a
-    # sibling module; loading it by file path needs the scripts dir importable.
-    # Production runs the script directly, which already has this on sys.path[0].
-    if str(scripts_dir) not in sys.path:
-        sys.path.insert(0, str(scripts_dir))
     script_path = scripts_dir / "review_feedback_loop.py"
     spec = importlib.util.spec_from_file_location("review_feedback_loop_test_module", script_path)
     module = importlib.util.module_from_spec(spec)
     assert spec.loader is not None
-    spec.loader.exec_module(module)
+    # The engine imports its shared thread-analysis lib (pr_threads) as a sibling
+    # module; loading it by file path needs the scripts dir importable. Scope the
+    # mutation to the exec so the test run's global sys.path isn't left altered —
+    # the import is bound during exec, and pr_threads stays cached in sys.modules.
+    # (Production runs the script directly, which already has this on sys.path[0].)
+    original_sys_path = list(sys.path)
+    sys.path.insert(0, str(scripts_dir))
+    try:
+        spec.loader.exec_module(module)
+    finally:
+        sys.path[:] = original_sys_path
     return module
 
 
