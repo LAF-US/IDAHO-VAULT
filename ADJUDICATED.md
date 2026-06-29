@@ -45,7 +45,10 @@ This file contains the historical ledger of completed tasks, relocated from the 
 
 ### From Original "RECENTLY COMPLETED" 
 
-*(Merged-PR roster trimmed 2026-06-29 — those rows duplicated what the PRs/commits already record in git & GitHub. Substantive non-PR work kept.)*
+> [!note] Merged-PR roster trimmed (2026-06-29)
+> The "PR NN — merged/incorporated" rows were dropped: they duplicated what the PRs and commits
+> already record in git & GitHub. All substantive **non-PR** work (operational milestones, LAF
+> tasks, resolved blockers) is kept below.
 
 | Task | Completed | Notes |
 | --- | --- | --- |
