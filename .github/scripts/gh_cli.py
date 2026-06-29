@@ -17,7 +17,11 @@ def run(cmd: list[str], check: bool = True) -> subprocess.CompletedProcess[str]:
     """Run ``cmd``, capturing stdout/stderr as text. On a non-zero exit (when
     ``check`` is True), raise ``RuntimeError`` carrying the command and both
     streams so the failure is never silent."""
-    result = subprocess.run(cmd, capture_output=True, text=True)
+    # `cmd` is argv-list form with shell=False — each element is passed as a literal
+    # argument, so there is no shell to inject into. The audit rule fires on any
+    # non-literal argv; vetted safe for this wrapper (callers build cmd[0] from a
+    # fixed program name, never user text). See PR #691.
+    result = subprocess.run(cmd, capture_output=True, text=True)  # nosemgrep
     if check and result.returncode != 0:
         raise RuntimeError(
             f"Command failed ({result.returncode}): {' '.join(cmd)}\n"
