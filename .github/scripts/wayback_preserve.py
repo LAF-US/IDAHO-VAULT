@@ -63,17 +63,23 @@ def preserve(urls: list[tuple[Path, str]]) -> list[tuple[str, str | None, bool]]
 
 
 def write_log(results: list[tuple[str, str | None, bool]], date_str: str) -> Path:
-    """Write the preservation log under ``!/`` (the workflow commits it on diff)."""
+    """Append the run's results to the day's preservation log under ``!/`` (the
+    workflow commits it on diff). The filename is date-only, so a second push on
+    the same UTC day must *extend* the existing table rather than overwrite it —
+    otherwise the earlier run's preservation record is lost from the tree."""
     ADMIN_DIR.mkdir(exist_ok=True)
     log_path = ADMIN_DIR / f"wayback-preserve-{date_str}.md"
-    lines = [
-        f"# Wayback Preservation Log — {date_str}",
-        "",
-        "URLs submitted to Save Page Now on push to main.",
-        "",
-        "| URL | Archived | Status |",
-        "|---|---|---|",
-    ]
+    if log_path.exists():
+        lines = log_path.read_text(encoding="utf-8").splitlines()
+    else:
+        lines = [
+            f"# Wayback Preservation Log — {date_str}",
+            "",
+            "URLs submitted to Save Page Now on push to main.",
+            "",
+            "| URL | Archived | Status |",
+            "|---|---|---|",
+        ]
     for url, archived, ok in results:
         status = "✅" if ok else "❌"
         arc = f"[snapshot]({archived})" if archived else "failed"
