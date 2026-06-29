@@ -1,91 +1,119 @@
 #!/usr/bin/env python3
 """
-Chain Zettel notes together by adding component links.
+chain_zettels.py — nondestructively add a decomposed-spelling wikilink chain as
+the FIRST LINE AFTER FRONTMATTER of every address-space coordinate note.
 
-For any file matching /^[A-Za-z0-9]+\.md$/ with length >= 2,
-adds wikilinks to each character: ABC.md -> [[A]][[B]][[C]]
+Spec (Logan): for each coordinate file (stem = pure [A-Za-z0-9], length >= 2),
+insert the per-character chain  ABC -> [[A]][[B]][[C]]  as the first body line,
+*regardless of whether the file is empty or already has content*. Nondestructive
+means: insert one line in the right place; never delete or replace existing
+content or frontmatter.
 
-Usage: python chain_zettels.py
+Safety / correctness:
+  - Pure insertion. Existing frontmatter and body are preserved byte-for-byte;
+    the chain is placed immediately after the closing frontmatter fence (or at
+    the top if there is no frontmatter).
+  - Idempotent. If the file already contains its chain, it is left unchanged.
+  - Root-only by default (the address grid lives at the vault root); does NOT
+    recurse into subdirectories. (#572's rglob walk was over-broad.)
+  - Dry-run by default. Writes nothing until --apply. --samples shows real
+    before/after previews so the insertion can be inspected before any write.
 """
+from __future__ import annotations
 
+import argparse
 import os
 import re
-from pathlib import Path
+import sys
 
-# Pattern: files with only letters/numbers, .md extension, length >= 2
-FILE_PATTERN = re.compile(r'^[A-Za-z0-9]+\.md$')
+STEM_RE = re.compile(r"^[A-Za-z0-9]+$")
 
-def get_component_links(filename):
-    """Generate component wikilinks for a filename."""
-    base = filename.replace('.md', '')
-    if len(base) < 2:
+
+def chain_for(stem: str) -> str:
+    return "".join(f"[[{ch}]]" for ch in stem)
+
+
+def split_frontmatter(content: str):
+    """Return (prefix, body) where prefix is the frontmatter block including its
+    closing fence and trailing newline; or (None, content) if no frontmatter."""
+    if content.startswith("---\n") or content.startswith("---\r\n"):
+        lines = content.splitlines(keepends=True)
+        for i in range(1, len(lines)):
+            if lines[i].rstrip("\r\n") == "---":
+                return "".join(lines[: i + 1]), "".join(lines[i + 1:])
+    return None, content
+
+
+def transform(content: str, links: str):
+    """Return new content with the chain inserted, or None if no change needed."""
+    if links in content:                       # idempotent: already chained
         return None
-    return ''.join(f'[[{c}]]' for c in base)
+    prefix, body = split_frontmatter(content)
+    if prefix is not None:
+        if not prefix.endswith("\n"):
+            prefix += "\n"
+        return prefix + links + ("\n\n" + body if body.strip() else "\n")
+    return links + ("\n\n" + content if content.strip() else "\n")
 
-def has_frontmatter(content):
-    """Check if content has Obsidian frontmatter."""
-    return content.startswith('---') and '---' in content[3:]
 
-def add_links_to_content(content, links):
-    """Add component links to content, preserving existing content."""
-    if not links:
-        return content
-    
-    if links in content:
-        return content  # Already has links
-    
-    if has_frontmatter(content):
-        # Find end of frontmatter (second ---)
-        first_dash = content.find('---')
-        second_dash = content.find('---', first_dash + 3)
-        if first_dash >= 0 and second_dash >= 0:
-            end = second_dash + 3
-            return content[:end] + '
+def coordinate_files(root: str):
+    for entry in os.scandir(root):
+        if entry.is_file() and entry.name.endswith(".md"):
+            stem = entry.name[:-3]
+            if STEM_RE.match(stem) and len(stem) >= 2:
+                yield entry.name, stem
 
-' + links + ('
 
-' + content[end:] if content[end:] else '')
-    
-    # Add at beginning
-    return links + ('
+def main(argv=None) -> int:
+    ap = argparse.ArgumentParser(
+        description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("--root", default=".")
+    ap.add_argument("--apply", action="store_true",
+                    help="actually write (default: dry-run, writes nothing)")
+    ap.add_argument("--samples", type=int, default=3,
+                    help="before/after previews to print (default 3)")
+    args = ap.parse_args(argv)
 
-' + content if content else '')
+    to_change, already, previews = [], 0, []
+    for name, stem in sorted(coordinate_files(args.root)):
+        path = os.path.join(args.root, name)
+        try:
+            with open(path, "r", encoding="utf-8") as fh:
+                content = fh.read()
+        except (OSError, UnicodeDecodeError):
+            continue
+        new = transform(content, chain_for(stem))
+        if new is None:
+            already += 1
+            continue
+        to_change.append((name, new))
+        if len(previews) < args.samples:
+            previews.append((name, content, new))
 
-def process_file(filepath):
-    """Process a single markdown file."""
-    with open(filepath, 'r', encoding='utf-8') as f:
-        content = f.read()
-    
-    filename = filepath.name
-    links = get_component_links(filename)
-    
-    if not links:
-        return False  # Skip single-character files
-    
-    new_content = add_links_to_content(content, links)
-    
-    if new_content != content:
-        with open(filepath, 'w', encoding='utf-8') as f:
-            f.write(new_content)
-        return True
-    
-    return False
+    mode = "APPLY" if args.apply else "DRY-RUN"
+    print(f"[{mode}] root={os.path.abspath(args.root)}")
+    print(f"  coordinate files needing the chain : {len(to_change)}")
+    print(f"  already chained (skipped, idempotent): {already}")
+    for name, before, after in previews:
+        print(f"\n  --- {name} (BEFORE, first 5 lines) ---")
+        for ln in before.splitlines()[:5] or ["(empty)"]:
+            print(f"    | {ln}")
+        print(f"  --- {name} (AFTER, first 5 lines) ---")
+        for ln in after.splitlines()[:5]:
+            print(f"    | {ln}")
 
-def main():
-    """Process all matching markdown files in current directory and subdirectories."""
-    repo_root = Path('.')
-    processed = 0
-    skipped = 0
-    
-    for md_file in repo_root.rglob('*.md'):
-        if FILE_PATTERN.match(md_file.name):
-            if process_file(md_file):
-                processed += 1
-                print(f'Updated: {md_file}')
-            else:
-                skipped += 1
-    
-    print(f'\nDone. Processed: {processed}, Skipped: {skipped}')
+    if not args.apply:
+        print("\n  (dry-run: no files written. Re-run with --apply to write.)")
+        return 0
 
-if __name__ == '__main__':
-    main()
+    written = 0
+    for name, new in to_change:
+        with open(os.path.join(args.root, name), "w", encoding="utf-8") as fh:
+            fh.write(new)
+        written += 1
+    print(f"\n  WROTE {written} file(s).")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
