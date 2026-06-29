@@ -13,6 +13,14 @@ from __future__ import annotations
 import subprocess
 
 
+def _as_text(stream: object) -> str:
+    """Coerce a captured stream to text. ``TimeoutExpired`` may hand back bytes
+    even under ``text=True``, so decode those; ``None`` becomes ``""``."""
+    if isinstance(stream, bytes):
+        return stream.decode(errors="replace")
+    return stream or ""
+
+
 def run(
     cmd: list[str], check: bool = True, timeout: float | None = 300
 ) -> subprocess.CompletedProcess[str]:
@@ -30,8 +38,12 @@ def run(
             cmd, capture_output=True, text=True, timeout=timeout
         )
     except subprocess.TimeoutExpired as exc:
+        # exc carries whatever the child wrote before the deadline; surface it so a
+        # stalled call still leaves its partial logs (mirrors the non-zero-exit branch).
         raise RuntimeError(
-            f"Command timed out after {timeout}s: {' '.join(cmd)}"
+            f"Command timed out after {timeout}s: {' '.join(cmd)}\n"
+            f"stdout:\n{_as_text(exc.stdout)}\n"
+            f"stderr:\n{_as_text(exc.stderr)}"
         ) from exc
     if check and result.returncode != 0:
         raise RuntimeError(
