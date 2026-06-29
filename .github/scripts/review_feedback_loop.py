@@ -34,9 +34,10 @@ import fnmatch
 import json
 import os
 import re
-import subprocess
 import sys
 from datetime import datetime, timedelta, timezone
+
+from gh_cli import run as _run
 
 
 APPLY_RE = re.compile(r"@copilot\b[\s\S]*?\bapply changes\b", re.IGNORECASE)
@@ -144,17 +145,6 @@ LABEL_SPECS: dict[str, tuple[str, str]] = {
         "Risk tier: high (at least one high-risk path changed).",
     ),
 }
-
-
-def _run(cmd: list[str], check: bool = True) -> subprocess.CompletedProcess[str]:
-    result = subprocess.run(cmd, capture_output=True, text=True)
-    if check and result.returncode != 0:
-        raise RuntimeError(
-            f"Command failed ({result.returncode}): {' '.join(cmd)}\n"
-            f"stdout:\n{result.stdout}\n"
-            f"stderr:\n{result.stderr}"
-        )
-    return result
 
 
 def _auto_merge_state(owner: str, repo: str, pr_number: int) -> tuple[bool, bool]:
