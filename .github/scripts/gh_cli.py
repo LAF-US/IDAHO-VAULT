@@ -13,6 +13,14 @@ from __future__ import annotations
 import subprocess
 
 
+def _as_text(value: bytes | str | None) -> str:
+    """Normalize TimeoutExpired stream to str. Under text=True the main result
+    streams are str, but TimeoutExpired.stdout/.stderr come back as bytes."""
+    if isinstance(value, bytes):
+        return value.decode("utf-8", errors="replace")
+    return value or ""
+
+
 def run(
     cmd: list[str], check: bool = True, timeout: float | None = 300
 ) -> subprocess.CompletedProcess[str]:
@@ -31,7 +39,9 @@ def run(
         )
     except subprocess.TimeoutExpired as exc:
         raise RuntimeError(
-            f"Command timed out after {timeout}s: {' '.join(cmd)}"
+            f"Command timed out after {timeout}s: {' '.join(cmd)}\n"
+            f"stdout:\n{_as_text(exc.stdout)}\n"
+            f"stderr:\n{_as_text(exc.stderr)}"
         ) from exc
     if check and result.returncode != 0:
         raise RuntimeError(
