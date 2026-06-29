@@ -907,6 +907,12 @@ When both devices edit the same config file between syncs, Obsidian creates a `(
 
 - Commit messages: Clear, descriptive, explain the "why"
 
+- Commit signing & session attribution: every agent commit carries a
+  `Co-Authored-By: <model name>` line **and** a `Claude-Session:
+  https://claude.ai/code/session_<id>` trailer — the concrete run, and the
+  code-blame anchor. Attribute work to the **session id**, never to an unanchored
+  "a previous Claude." See `.claude/CLAUDE.md` § "Signing & Attribution."
+
 - Never force-push without explicit permission
 
 - Check in before anything irreversible
