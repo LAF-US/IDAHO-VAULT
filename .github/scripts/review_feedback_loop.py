@@ -17,9 +17,10 @@ Modes:
     branch protection are the trust gate that arming waited on (ARBORSCAPE IF 12),
     so arming a low-risk, thread-clear PR means only "merge once the required
     checks/reviews/threads pass," not "a human approved." Arming is gated by the
-    conservative eligibility (risk/low + grace + no blocking threads) AND a
-    protected-path guard; Dependabot keeps its own verified lane.
-  - enable-auto-merge: arms an eligible, non-protected-path PR for the merge queue.
+    conservative eligibility (risk/low + grace + no blocking threads). Protected paths
+    are no longer vetoed here — the CODEOWNERS hard gate enforces that. Dependabot keeps
+    its own verified lane.
+  - enable-auto-merge: arms an eligible PR for the merge queue.
     See AGENT-AUTOMERGE-REENABLED-2026-06-17.md for the recorded reversal.
   - verify-claim: compare an agent completion-claim comment against the PR's
     current `mergeable`, `mergeStateStatus`, draft state, and check rollup.
@@ -30,7 +31,6 @@ Modes:
 from __future__ import annotations
 
 import argparse
-import fnmatch
 import json
 import os
 import re
@@ -46,7 +46,8 @@ DEFAULT_GRACE_MINUTES = 30
 # queue now IS that gate — a PR only merges once its required checks, reviews, and
 # thread-resolution pass, regardless of who armed it (ARBORSCAPE IF 12 satisfied).
 # Arming stays conservative: eligibility below requires risk/low + grace + no blocking
-# threads, and callers additionally refuse to arm protected/governance paths. This flag
+# threads. Protected-path gating moved to the CODEOWNERS hard gate (a merge can't land on
+# an owned path without owner review), so the engine no longer vetoes it. This flag
 # is the kill-switch — set False to fail-close arming again.
 AGENT_AUTO_MERGE_ENABLED = True
 
@@ -91,24 +92,13 @@ AUTO_MERGE_AUTHZ_FRAGMENTS = (
     "Resource not accessible by integration (enablePullRequestAutoMerge)",
 )
 
-# Paths that must NOT be auto-armed: governance, agent scaffolding, and the CI
-# surfaces that gate everything else. A PR touching any of these waits for human
-# review. Broader than auto-merge-rhythm.yml's sync-bot list on purpose — the
-# whole of `.github/` is CODE-AUTHORITY-reviewed, so the entire automation surface
-# is protected, not just workflows/scripts. fnmatch globs: "*" matches within a
-# path segment AND across "/", so ".github/*" covers nested files.
-PROTECTED_PATH_PATTERNS: tuple[str, ...] = (
-    ".github/*",
-    ".codex/*",
-    ".openclaw/*",
-    "AGENTS.md",
-    "CONSTITUTION.md",
-    "DECISIONS.md",
-    "VAULT-CONVENTIONS.md",
-    "swarm.json",
-    "SPEC-CONNECTOR-HUB-2026-04-09.md",
-    "!/*",
-)
+# Protected-path gating is no longer done here. A hand-maintained glob list was one of
+# three drifting, fail-open re-implementations of "these paths need a human" (K1/#627,
+# K2/#628). The single source of that truth is now CODEOWNERS, enforced as a HARD GATE by
+# the branch ruleset (`require_code_owner_review: true`, set by Logan): GitHub blocks the
+# merge of any owned-path PR until the owner reviews — un-bypassable, regardless of whether
+# this engine armed it. So the engine no longer second-guesses protection; arming a
+# protected PR is harmless because the gate, not a soft list, decides what actually merges.
 
 LABEL_SPECS: dict[str, tuple[str, str]] = {
     DEFAULT_AUTO_MERGE_LABEL: (
@@ -284,44 +274,17 @@ def _arm_auto_merge(owner: str, repo: str, pr_number: int) -> tuple[bool, str | 
     return (True, None)
 
 
-def _pr_touches_protected_path(owner: str, repo: str, pr_number: int) -> bool:
-    """True if the PR changes any protected/governance/CI path (so it must NOT be
-    auto-armed). Fail-closed: if the changed-file list can't be fetched, treat the PR
-    as protected so a transient API failure never widens what gets armed."""
-    try:
-        result = _run(
-            [
-                "gh",
-                "api",
-                "--paginate",
-                f"repos/{owner}/{repo}/pulls/{pr_number}/files",
-                "--jq",
-                ".[].filename",
-            ]
-        )
-    except RuntimeError:
-        return True
-    for path in result.stdout.splitlines():
-        path = path.strip()
-        if not path:
-            continue
-        if any(fnmatch.fnmatch(path, pattern) for pattern in PROTECTED_PATH_PATTERNS):
-            return True
-    return False
-
-
 def _maybe_arm_auto_merge(
     owner: str, repo: str, pr_number: int, state: dict[str, object]
 ) -> dict[str, object]:
     """Guarded arm: enable merge-queue auto-merge for a PR ONLY when it is eligible
-    (risk/low + grace + no blocking threads, per evaluate_review_state) AND touches no
-    protected path. Returns a small report; never raises for the ordinary not-eligible,
-    protected-path, or not-authorized cases. The merge queue + branch protection remain
-    the actual merge gate — this only presses the button."""
+    (risk/low + grace + no blocking threads, per evaluate_review_state). Returns a small
+    report; never raises for the ordinary not-eligible or not-authorized cases. Protected
+    paths are NOT vetoed here — the CODEOWNERS hard gate (require_code_owner_review) blocks
+    their merge regardless of arming; the merge queue + branch protection are the actual
+    merge gate, and this only presses the button."""
     if not bool(state.get("eligible_for_auto_merge")):
         return {"armed": False, "reason": "not eligible for auto-merge"}
-    if _pr_touches_protected_path(owner, repo, pr_number):
-        return {"armed": False, "reason": "protected/governance path — awaits human review"}
     armed, arm_error = _arm_auto_merge(owner, repo, pr_number)
     if armed:
         # Tag the PR `merge/auto` so the disable path (apply_review_state_projection,
@@ -1343,26 +1306,15 @@ def _build_reconciliation_report(
         current_labels = set(state["labels"])
         auto_merge_enabled = bool((pr.get("autoMergeRequest") or {}).get("enabledAt"))
         arm_error = None
-        # Evaluate the protected-path guard ONCE, before promotion: a governance/CI/
-        # scaffolding PR must not even be labelled `merge/auto` or get a "promoting"
-        # comment — it waits for a human. (Only worth the API call when otherwise armable.)
-        touches_protected_path = False
-        if (
-            AGENT_AUTO_MERGE_ENABLED
-            and state["eligible_for_auto_merge"]
-            and not bool(state["merge_blocked"])
-        ):
-            touches_protected_path = _pr_touches_protected_path(owner, repo, pr_number)
-            if touches_protected_path:
-                arm_error = "protected/governance path — awaits human review"
-
+        # Protected paths are not vetoed here anymore — the CODEOWNERS hard gate blocks
+        # their merge regardless of label/arm (K1/#627, K2/#628 retired in favor of the
+        # single, enforced source). Promotion keys only on eligibility + no merge block.
         if (
             AGENT_AUTO_MERGE_ENABLED
             and
             state["eligible_for_auto_merge"]
             and not bool(state["merge_blocked"])
             and DEFAULT_AUTO_MERGE_LABEL not in current_labels
-            and not touches_protected_path
         ):
             if DEFAULT_REVIEW_PENDING_LABEL in current_labels:
                 current_labels.discard(DEFAULT_REVIEW_PENDING_LABEL)
@@ -1383,7 +1335,6 @@ def _build_reconciliation_report(
             DEFAULT_AUTO_MERGE_LABEL in current_labels
             and bool(state["eligible_for_auto_merge"])
             and not bool(state["merge_blocked"])
-            and not touches_protected_path
         ):
             # No `and not auto_merge_enabled` guard: an already-armed PR may be
             # armed-but-not-queued (the stuck case), and _arm_auto_merge is
@@ -1623,10 +1574,7 @@ def enable_auto_merge(args: argparse.Namespace) -> int:
         and bool(state["eligible_for_auto_merge"])
         and not bool(state["merge_blocked"])
     ):
-        if _pr_touches_protected_path(args.owner, args.repo, args.pr_number):
-            arm_error = "protected/governance path — awaits human review"
-        else:
-            enabled, arm_error = _arm_auto_merge(args.owner, args.repo, args.pr_number)
+        enabled, arm_error = _arm_auto_merge(args.owner, args.repo, args.pr_number)
 
     print(
         json.dumps(
