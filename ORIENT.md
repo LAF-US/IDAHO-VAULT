@@ -29,6 +29,7 @@ related:
 
 ## Status: Draft
 ## Version: 0.1
+## Authority: Loganic Swarm
 
 ---
 
