@@ -13,15 +13,26 @@ from __future__ import annotations
 import subprocess
 
 
-def run(cmd: list[str], check: bool = True) -> subprocess.CompletedProcess[str]:
+def run(
+    cmd: list[str], check: bool = True, timeout: float | None = 300
+) -> subprocess.CompletedProcess[str]:
     """Run ``cmd``, capturing stdout/stderr as text. On a non-zero exit (when
     ``check`` is True), raise ``RuntimeError`` carrying the command and both
-    streams so the failure is never silent."""
+    streams so the failure is never silent. ``timeout`` (seconds; ~5 min default)
+    guards against a stalled call hanging the workflow indefinitely — a timeout
+    raises the same ``RuntimeError`` surface."""
     # `cmd` is argv-list form with shell=False — each element is passed as a literal
     # argument, so there is no shell to inject into. The audit rule fires on any
     # non-literal argv; vetted safe for this wrapper (callers build cmd[0] from a
     # fixed program name, never user text). See PR #691.
-    result = subprocess.run(cmd, capture_output=True, text=True)  # nosemgrep
+    try:
+        result = subprocess.run(  # nosemgrep
+            cmd, capture_output=True, text=True, timeout=timeout
+        )
+    except subprocess.TimeoutExpired as exc:
+        raise RuntimeError(
+            f"Command timed out after {timeout}s: {' '.join(cmd)}"
+        ) from exc
     if check and result.returncode != 0:
         raise RuntimeError(
             f"Command failed ({result.returncode}): {' '.join(cmd)}\n"
