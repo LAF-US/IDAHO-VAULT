@@ -34,6 +34,10 @@ def _load_review_feedback_loop_module():
 
 
 review_feedback_loop = _load_review_feedback_loop_module()
+# The shared thread-analysis vocabulary now lives in pr_threads (#600 §5). The
+# engine's load above imported it, so it's cached in sys.modules; predicates the
+# engine no longer re-exports (e.g. _author_is_bot) are tested against it directly.
+pr_threads = sys.modules["pr_threads"]
 
 
 def _labels(*names: str) -> dict[str, list[dict[str, str]]]:
@@ -1039,13 +1043,13 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
 
     def test_author_is_bot(self) -> None:
         self.assertTrue(
-            review_feedback_loop._author_is_bot({"login": "coderabbitai", "__typename": "Bot"})
+            pr_threads._author_is_bot({"login": "coderabbitai", "__typename": "Bot"})
         )
-        self.assertTrue(review_feedback_loop._author_is_bot({"login": "dependabot[bot]"}))
+        self.assertTrue(pr_threads._author_is_bot({"login": "dependabot[bot]"}))
         self.assertFalse(
-            review_feedback_loop._author_is_bot({"login": "loganfinney27", "__typename": "User"})
+            pr_threads._author_is_bot({"login": "loganfinney27", "__typename": "User"})
         )
-        self.assertFalse(review_feedback_loop._author_is_bot({}))
+        self.assertFalse(pr_threads._author_is_bot({}))
 
     def test_thread_is_bot_only(self) -> None:
         bot_only = _thread(authors=("coderabbitai", "chatgpt-codex-connector"), author_type="Bot")
@@ -1527,11 +1531,11 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
 
     def test_has_committable_suggestion_detects_block(self) -> None:
         t = _thread(authors=("coderabbitai",), author_type="Bot", body=self.SUGGESTION_BODY)
-        self.assertTrue(review_feedback_loop._thread_has_committable_suggestion(t))
+        self.assertTrue(pr_threads._thread_has_committable_suggestion(t))
 
     def test_has_committable_suggestion_false_on_prose(self) -> None:
         t = _thread(authors=("coderabbitai",), author_type="Bot", body="Consider fixing X.")
-        self.assertFalse(review_feedback_loop._thread_has_committable_suggestion(t))
+        self.assertFalse(pr_threads._thread_has_committable_suggestion(t))
 
     def test_resolution_apply_suggestion(self) -> None:
         t = _thread(authors=("coderabbitai",), author_type="Bot", body=self.SUGGESTION_BODY)
