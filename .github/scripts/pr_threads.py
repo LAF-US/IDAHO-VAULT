@@ -154,6 +154,7 @@ def _count_committable_suggestion_threads(pr: dict) -> int:
 
 
 def _thread_authors(thread: dict) -> set[str]:
+    """Set of distinct comment-author logins on a thread (empty if none)."""
     authors: set[str] = set()
     for comment in (thread.get("comments") or {}).get("nodes") or []:
         author = (comment.get("author") or {}).get("login")
