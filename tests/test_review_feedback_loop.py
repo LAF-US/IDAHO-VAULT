@@ -4,6 +4,7 @@ import contextlib
 import importlib.util
 import io
 import json
+import sys
 import unittest
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -13,7 +14,13 @@ from unittest import mock
 
 def _load_review_feedback_loop_module():
     project_root = Path(__file__).resolve().parents[1]
-    script_path = project_root / ".github" / "scripts" / "review_feedback_loop.py"
+    scripts_dir = project_root / ".github" / "scripts"
+    # The engine now imports its shared thread-analysis lib (pr_threads) as a
+    # sibling module; loading it by file path needs the scripts dir importable.
+    # Production runs the script directly, which already has this on sys.path[0].
+    if str(scripts_dir) not in sys.path:
+        sys.path.insert(0, str(scripts_dir))
+    script_path = scripts_dir / "review_feedback_loop.py"
     spec = importlib.util.spec_from_file_location("review_feedback_loop_test_module", script_path)
     module = importlib.util.module_from_spec(spec)
     assert spec.loader is not None
