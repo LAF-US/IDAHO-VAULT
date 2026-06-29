@@ -1,8 +1,27 @@
-# THE DOCKET ARCHIVE
+---
+title: "ADJUDICATED — settled decisions, resolved work, entered orders (consolidated)"
+date created: 2026-06-29
+authority: LOGAN
+doc_class: adjudicated-record
+status: active
+---
+
+# ADJUDICATED
+
+> [!note] What this is — and is not
+> A **dated, backward-facing record** of matters already settled: decisions ruled, work resolved,
+> orders entered. It makes **no liveness claim** — a record, not a heartbeat (CONSTITUTION: *"there
+> is no 'live' coordination surface; anything with 'live' or 'current' written in it is instantaneously
+> out of date"*). **Consolidated 2026-06-29** from three drifted surfaces — `DOCKET-ARCHIVE.md`
+> (moved here), the legacy backward-log of `DECISIONS.md`, and the entered rulings of `DOCKET.md` —
+> so the settled past lives in one place and those surfaces can return to their forward purposes.
+> **Unfiltered first pass**: cleaning (merged-PR-roster trim, inbound-link repair) follows separately.
+
+---
+
+## Resolved Work — relocated from `DOCKET-ARCHIVE.md`
 
 This file contains the historical ledger of completed tasks, relocated from the active coordination board to preserve clarity in THE COURTROOM.
-
-## RESOLVED WORK
 
 ### Core Vault Stabilization & Swarm Setup
 | Task | Completed | Notes |
@@ -67,3 +86,63 @@ This file contains the historical ledger of completed tasks, relocated from the 
 | **PR 96 conflict resolution** | **Resolved** by Unified `linear-pr-sync.yml` workflow. Collision risk cleared; ready for Logan review/merge. |
 | Gemini capability tier | **Resolved 2026-03-28:** Tier 1 (Support) defined in `!/AGENTS.md` - Direct Write, Operational zone only, Linear SWARM issues/comments. |
 | Vault-embedded MCP architecture | **Resolved 2026-03-24:** Terminated discussion and adopted Vault-native governance. |
+
+---
+
+## Adjudicated Decisions — relocated from legacy `DECISIONS.md`
+
+[[CHAINFIRE]] & [[CHAINLINK]]
+
+### 2026-06-16: CODEOWNERS gate — re-examined & ratified
+- **Decision**: Adopt the reviewed `.github/CODEOWNERS` gated set deliberately. The gate had *accreted* without a recorded decision; this entry gives it warrant.
+- **Provenance gap closed**: CODEOWNERS was created in a single `github-actions[bot]` commit (`424b619`, 2026-05-25) bundled into a ~38k-file flatten whose message was a "Hermes machine-survey witness" — never recorded in this ledger or independently ratified. With branch protection now live on `main` (verified `protected: true`), the gate is enforced, so it has been re-examined and recorded.
+- **Ruled changes (Logan, each ruled individually)**:
+  - Reviewer configs (`.coderabbit.yaml`, `.pr_agent.toml`) — left **ungated**.
+  - `.op/` credential/secrets plumbing — **gated** (`/.op/`).
+  - `.github/` — added **executable gaps only** (`/.github/actions/`, `/.github/proposed-moves.sh`, `/.github/dependabot.yml`); not gated wholesale.
+  - Bare `CLAUDE.md` + `AGENTS.md` — **ungated** (root pointers now ungated; the dotfolder auto-loaded files `/.claude/CLAUDE.md`, `/.codex/CODEX.md`, `/.gemini/GEMINI.md` remain gated). Logan affirmed leaving root `AGENTS.md` (a cross-tool auto-loaded pointer with no backup rule) ungated.
+- **Follow-up**: verify in GitHub's CODEOWNERS UI that `/!/` and `/.op/` actually resolve to @loganfinney27 — the `!`/glob behavior cannot be tested locally; the canon's gate must not be assumed.
+- **Authority**: Logan direct instruction (per-change rulings, 2026-06-16).
+
+### 2026-05-23: Corrections Classification Doctrine
+- **Decision**: Adopt `CORRECTIONS.md` as active Vaulted Syntax operational doctrine, distinct from any case-specific heresy review packet.
+- **Rule**: Keep three correction classifications distinct: **Typographical Errors / Typos**, **Scrivener's Corrections**, and **Codifier's Corrections**. A particular typo does not eliminate the Scrivener classification; a codifier surface does not silently create doctrine.
+- **Application**: `!/HERESY-REVIEW-LOGAN-HERE-2026-05-22.md` remains a proposed-corrections review surface applying this doctrine, not the doctrine's canonical home.
+- **Authority**: Logan direct instruction.
+
+### 2026-05-18: Emanationism Principle
+- **Decision**: Record the Emanationism Principle as active doctrine-adjacent guidance in `!/EMANATIONISM-PRINCIPLE-2026-05-18.md`.
+- **Rule**: Authority originates with Logan and must degrade into scoped, auditable, reversible capability as it passes through doctrine, registries, protocols, transports, agents, tool calls, and artifacts.
+- **Authority**: Logan direct instruction.
+
+### 2026-04-26: TODO Merge Logic Fix
+- **Issue**: Qodo-flagged bug in `daily_rollover.py` causing duplicate task accumulation.
+- **Fix**: Updated `merge_todo_models` to dedupe and exclude completed tasks.
+- **Files**: `.github/scripts/daily_rollover.py`, `REPORT-TODO-MERGE-FIX.md`.
+- **Authority**: Agent (per `CONSTITUTION.md` Section V: agentic guardrails).
+
+### 2026-04-26: Two-Way Daily Note Sync Fix
+- **Issue**: Tasks not synced between daily notes and `TO DO LIST.md`.
+- **Fix**: Extended `daily_rollover.py` for two-way sync.
+- **Files**: `.github/scripts/daily_rollover.py`, `REPORT-TODO-SYNC-FIX.md`.
+- **Authority**: Agent (per `CONSTITUTION.md` Section V).
+
+---
+
+## Entered Orders & Rulings — relocated from `DOCKET.md` (2026-05-23 → 2026-05-25)
+
+| Date | Order Or Ruling |
+| --- | --- |
+| 2026-05-23 | Selective marginalia approved in the [[!/GEMINIAEUS\|GEMINIAEUS]] matter with the ordered Judge addendum. |
+| 2026-05-24 | The Touchstones are proper; the challenged act is selective triad-fusion into a liturgical weapon. |
+| 2026-05-24 | Antigravity-file marginalia ordered; `CROSSFRAMING-US` referred for independent review. |
+| 2026-05-24 | SPACE protection approved; ARBORSCAPE PR Expansion recognized as legitimate A&I directive. |
+| 2026-05-25 | Linear `LAF-17 - SIGNAL: BARTIMAEUS` admitted in [[!/GEMINIAEUS\|GEMINIAEUS]] as evidence bearing on the alleged Gemini/Bartimaeus/Clerk overrelation. |
+| 2026-05-25 | Linear `LAF-25 - COORDINATION: HEXAGONAL` referred outside [[!/GEMINIAEUS\|GEMINIAEUS]] for independent review of its coordination-hub claim. |
+| 2026-05-25 | The Investigator temporarily ordained as **Court Marshal** to execute required orders in [[!/GEMINIAEUS\|GEMINIAEUS]] and related matters. |
+| 2026-05-25 | Closure clarified: only the Court's own investigatory pass through this Investigator/Marshal is closed after the ordered entries; the evidentiary and discovery phase remains open to further parties. |
+| 2026-05-25 | This session of Court adjourned; the Judge reserves jurisdiction of [[!/GEMINIAEUS\|GEMINIAEUS]]. |
+
+---
+
+###### "The world is quiet here."
