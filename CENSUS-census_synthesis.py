@@ -99,12 +99,13 @@ alpha_core = cm.krippendorff_alpha(R_core, distance=cm.nominal_distance)
 
 # bootstrap CI for full alpha by resampling UNITS (nodes) with replacement
 def boot_alpha(mat, ncols, B=3000):
-    vals=[]
+    vals=[]; skipped=0
     for _ in range(B):
         cols=[random.randrange(ncols) for _ in range(ncols)]
         sub=[[row[j] for j in cols] for row in mat]
         try: vals.append(cm.krippendorff_alpha(sub, distance=cm.nominal_distance))
-        except Exception: pass
+        except ValueError: skipped+=1  # degenerate resample (all-same or empty)
+    if not vals: raise RuntimeError(f"boot_alpha: all {B} bootstrap samples failed")
     vals.sort()
     lo=vals[int(0.025*len(vals))]; hi=vals[int(0.975*len(vals))]
     return lo, hi
@@ -138,7 +139,7 @@ def pearson(x,y):
     mx,my=statistics.mean(x),statistics.mean(y)
     num=sum((a-mx)*(b-my) for a,b in zip(x,y))
     dx=(sum((a-mx)**2 for a in x))**.5; dy=(sum((b-my)**2 for b in y))**.5
-    return num/(dx*dy) if dx and dy else float("nan")
+    return num/(dx*dy) if dx and dy else None
 r_cov_ent = pearson(jac, ent)
 
 # ============================== THE GRID ===================================
@@ -180,7 +181,7 @@ print(f"  Alignment alpha (4-facet x 13)     = {alpha_align:+.3f}  (few units; r
 print("\n--- S3 SEPARATION (coverage-conditioned) ---")
 print(f"  mean pairwise coverage Jaccard       = {mean_jac:.3f}")
 print(f"  mean pairwise entity MASI separation = {mean_ent:.3f}")
-print(f"  Pearson r(coverage overlap, entity sep) = {r_cov_ent:+.3f}")
+print(f"  Pearson r(coverage overlap, entity sep) = {f'{r_cov_ent:+.3f}' if r_cov_ent is not None else 'n/a'}")
 print("  shared hubs opened by >=10/13 readers:",
       sorted([t for t in set().union(*COV.values())
               if sum(t in COV[c] for c in range(N))>=10],
@@ -201,5 +202,5 @@ out={"alpha_cohesion_full":alpha_full,"alpha_cohesion_full_CI":ci_full,
      "mean_coverage_jaccard":mean_jac,"mean_entity_separation":mean_ent,
      "r_coverage_vs_separation":r_cov_ent,"grid":grid}
 with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "census_synthesis_result.json"),"w") as f:
-    json.dump(out,f,indent=2)
+    json.dump(out,f,indent=2,allow_nan=False)
 print("\n[written] census_synthesis_result.json")
