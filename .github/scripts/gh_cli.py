@@ -13,12 +13,12 @@ from __future__ import annotations
 import subprocess
 
 
-def _as_text(stream: object) -> str:
-    """Coerce a captured stream to text. ``TimeoutExpired`` may hand back bytes
-    even under ``text=True``, so decode those; ``None`` becomes ``""``."""
-    if isinstance(stream, bytes):
-        return stream.decode(errors="replace")
-    return stream or ""
+def _as_text(value: bytes | str | None) -> str:
+    """Normalize TimeoutExpired stream to str. Under text=True the main result
+    streams are str, but TimeoutExpired.stdout/.stderr come back as bytes."""
+    if isinstance(value, bytes):
+        return value.decode("utf-8", errors="replace")
+    return value or ""
 
 
 def run(
@@ -38,8 +38,6 @@ def run(
             cmd, capture_output=True, text=True, timeout=timeout
         )
     except subprocess.TimeoutExpired as exc:
-        # exc carries whatever the child wrote before the deadline; surface it so a
-        # stalled call still leaves its partial logs (mirrors the non-zero-exit branch).
         raise RuntimeError(
             f"Command timed out after {timeout}s: {' '.join(cmd)}\n"
             f"stdout:\n{_as_text(exc.stdout)}\n"
