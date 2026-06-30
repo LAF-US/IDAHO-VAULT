@@ -3,12 +3,12 @@ title: "DOCKET posture — canonical snippet (transcluded)"
 authority: LOGAN
 doc_class: doctrine-snippet
 created: 2026-06-30
-note: "Single source of truth for the DOCKET coordination posture. Transcluded via `![[DOCKET-POSTURE]]` into the agent loaders (.claude/CLAUDE.md, .gemini/GEMINI.md, .github/copilot-instructions.md) and linked from others (.slack/SLACK.md). Edit HERE — every embed updates at once. Do NOT re-inline copies into the loaders; that reintroduces the very drift this note exists to prevent (see PR #708 / the live-status-board de-drift)."
+note: "Canonical single source for the DOCKET coordination posture. Transclude it via `![[DOCKET-POSTURE]]` wherever the posture is stated; edit HERE and every embed updates at once. Do not re-inline copies — that reintroduces drift."
 related:
-  - "!/!/__!__/!/! The world is quiet here/DOCKET.md"
-  - CONSTITUTION
-  - CLAUDE
-  - GEMINI
+  - "[[DOCKET]]"
+  - "[[CONSTITUTION]]"
+  - "[[CLAUDE]]"
+  - "[[GEMINI]]"
 ---
 
 Read THE DOCKET to orient: `!/!/__!__/!/! The world is quiet here/DOCKET.md`
