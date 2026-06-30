@@ -171,15 +171,7 @@ See `VAULT-CONVENTIONS.md` for vault structure, naming, frontmatter, sourcing pr
 
 ## Swarm Coordination
 
-Read THE DOCKET to orient: `!/!/__!__/!/! The world is quiet here/DOCKET.md`
-
-That file is the **Court's register of matters, orders, and referrals** — it
-self-declares it is *not* a control plane, heartbeat, status board, or general
-workflow hub, and Logan has adopted no such surface. So **do not** write routine
-work notes into it; only Court matters belong there. Record your own work where
-work is recorded: the **vault and git** (commits, PRs, witness/journal leaves).
-Task assignment flows through GitHub Issues (`agent:*` labels). Linear mirrors
-from GitHub. Slack carries breadcrumbs. The vault is the record.
+![[DOCKET-POSTURE]]
 
 ---
 

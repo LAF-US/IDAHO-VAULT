@@ -55,9 +55,7 @@ If Logan has not pasted relevant vault excerpts into this session, do not invent
 
 ## Swarm Coordination
 
-Read THE DOCKET to orient: `!/!/__!__/!/! The world is quiet here/DOCKET.md`
-
-That file is the Court's register of matters, orders, and referrals — it self-declares it is *not* a control plane, heartbeat, status board, or general workflow hub, and Logan has adopted no such surface (`CONSTITUTION.md`; the DOCKET's own posture note). So do **not** write routine work notes into it. Record your work where work is recorded — the vault and git (commits, PRs). Task assignment flows through GitHub Issues (`agent:*` labels). Linear mirrors from GitHub. Slack carries breadcrumbs. The vault is the record.
+![[DOCKET-POSTURE]]
 
 **Conventions:**
 - 'LAF-*' is the convention for development ticketing modifier tags (e.g., LAF-7, LAF-44).
