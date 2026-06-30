@@ -36,4 +36,4 @@ See `VAULT-CONVENTIONS.md` — specifically the Vault ↔ Linear Operating Model
 - `CONSTITUTION.md` — Canonical vault governance authority
 - `VAULT-CONVENTIONS.md` — Shared vault conventions for all agents
 - `!/AGENTS.md` — Full agent registry, capability tiers, and boundary rules
-- `!/__!__/!/! The world is quiet here/DOCKET.md` — Live swarm status board
+- `!/!/__!__/!/! The world is quiet here/DOCKET.md` — the Court's register of matters (**not** a live swarm status board; see its posture note)
