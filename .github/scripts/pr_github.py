@@ -16,6 +16,11 @@ from gh_cli import run
 
 
 def _graphql(query: str, **variables: object) -> dict:
+    """Execute a GraphQL query via ``gh api graphql`` and return the ``data`` payload.
+
+    Integer variables are passed with ``-F`` (typed); all others with ``-f`` (string).
+    Raises ``RuntimeError`` if the response carries GraphQL ``errors``.
+    """
     cmd = ["gh", "api", "graphql", "-f", f"query={query}"]
     for key, value in variables.items():
         if isinstance(value, int):
@@ -50,6 +55,11 @@ def _graphql(query: str, **variables: object) -> dict:
 
 
 def _fetch_pr(owner: str, name: str, number: int) -> dict:
+    """Fetch a pull request's review state from the GitHub GraphQL API.
+
+    Returns the ``pullRequest`` node including labels, review threads, and
+    auto-merge status. Raises ``RuntimeError`` if the PR is not found.
+    """
     query = """
     query($owner:String!, $name:String!, $number:Int!) {
       repository(owner: $owner, name: $name) {
