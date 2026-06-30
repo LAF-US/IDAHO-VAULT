@@ -1,3 +1,5 @@
+"""Tests for review_feedback_loop.py — loaded dynamically via importlib."""
+
 from __future__ import annotations
 
 import contextlib
