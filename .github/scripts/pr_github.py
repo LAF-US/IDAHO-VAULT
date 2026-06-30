@@ -31,7 +31,26 @@ def _graphql(query: str, **variables: object) -> dict:
     payload = json.loads(result.stdout or "{}")
     errors = payload.get("errors")
     if errors:
-        raise RuntimeError(f"GraphQL error(s): {json.dumps(errors, indent=2)}")
+        max_len = 200
+
+        truncated_query = query
+        if len(truncated_query) > max_len:
+            truncated_query = truncated_query[: max_len - 3] + "..."
+
+        try:
+            variables_repr = json.dumps(variables, default=str)
+        except TypeError:
+            variables_repr = repr(variables)
+
+        if len(variables_repr) > max_len:
+            variables_repr = variables_repr[: max_len - 3] + "..."
+
+        raise RuntimeError(
+            "GraphQL error(s): "
+            f"{json.dumps(errors, indent=2)}\n"
+            f"query: {truncated_query}\n"
+            f"variables: {variables_repr}"
+        )
     return payload.get("data", {})
 
 
