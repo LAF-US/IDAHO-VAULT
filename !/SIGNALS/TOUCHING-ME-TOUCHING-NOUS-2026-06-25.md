@@ -8,10 +8,13 @@ subject: First lawful contact between the IDAHO-VAULT swarm and a non-LAF public
 related:
   - "!/BEEFSTACK-MODEL-ROUTING-2026-05-17.md"
   - "HERMES-WITNESS-COMPANION-2026-06-24.md"
+  - "HERMES-WORKAROUND-WITNESS-2026-06-28.md"
+  - "OPENCLAW-BONJOUR-WORKAROUND-WITNESS-2026-07-01.md"
   - "https://github.com/LAF-US/IDAHO-VAULT/issues/690"
   - "https://github.com/NousResearch/hermes-agent/issues/36949"
   - "https://github.com/NousResearch/hermes-agent/issues/19201"
-tags: [witness, swarm, milestone, external-contact, nous-research, hermes, beefstack]
+  - "https://github.com/openclaw/openclaw/issues/98448"
+tags: [witness, swarm, milestone, external-contact, nous-research, hermes, openclaw, beefstack]
 ---
 
 # Touching Me, Touching Nous

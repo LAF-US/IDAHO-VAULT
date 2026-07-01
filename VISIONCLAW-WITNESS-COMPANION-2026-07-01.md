@@ -1,0 +1,136 @@
+---
+date: 2026-07-01
+filed_by: "*.claude.*"
+authority: LOGAN
+machine: personal-MacBook (MacBookPro12,1, macOS 12.7.6, 16 GB RAM) + Google Pixel 10 Pro deploy target
+doc_class: witness
+status: filed
+subject: Investigation-shape witness for VisionClaw — the four-layer stack Logan forked into LAF-US/VisionClaw, cloned locally to `~/StudioProjects/VisionClaw`, and previously deployed to his Google Pixel with the Gemini Live path validated end-to-end via Meta Ray-Ban glasses. OpenClaw agentic path unwired at fork time (no Tailscale then); now unblocked by Tailscale setup under LAF-US/IDAHO-VAULT#654 and the pending OpenClaw Serve enablement.
+related:
+  - HERMES-WORKAROUND-WITNESS-2026-06-28.md
+  - OPENCLAW-BONJOUR-WORKAROUND-WITNESS-2026-07-01.md
+  - "!/SIGNALS/TOUCHING-ME-TOUCHING-NOUS-2026-06-25.md"
+  - .claude/MEMORY/SESSION-2026-06-29.md
+  - "https://github.com/LAF-US/VisionClaw"
+  - "https://github.com/Intent-Lab/VisionClaw"
+  - "https://github.com/LAF-US/IDAHO-VAULT/issues/654"
+  - "https://github.com/openclaw/openclaw/issues/98448"
+  - "https://docs.openclaw.ai/platforms/android"
+tags: [witness, visionclaw, openclaw, gemini-live, meta-wearables, pixel, glasses, swarm-tooling]
+---
+
+# VisionClaw investigation companion — arc opened
+
+*Filed 2026-07-01 as an investigation-shape witness for the VisionClaw project. No local changes made; no upstream contact filed. The witness captures the local state as of the pass, the upstream landscape as of the fetch, and the alignment considerations that surfaced during the meditation. It exists so future sessions have a clean anchor for what VisionClaw is on this Mac and what it becomes when the tiered-capture architecture activates.*
+
+## The four-layer stack
+
+VisionClaw sits on top of three layers of prior work:
+
+| Layer | What it is | Author / origin |
+|---|---|---|
+| 1. Meta DAT SDK | *Direct Application Transmission* — Meta's Bluetooth protocol for talking to Ray-Ban / Ray-Ban Display glasses. Distributed via **GitHub Packages**, requires a Personal Access Token with `read:packages` scope at build time. `NOTICE` file is 72 KB — standard Meta third-party attribution set (flatbuffers, folly, Apache 2.0 dependencies). | Meta Platforms |
+| 2. CameraAccess sample apps | Standard demo apps Meta ships with the DAT SDK — `CameraAccess` (iOS/Swift), `CameraAccessAndroid` (Kotlin). Standard companion-device permission set: `BLUETOOTH_*`, `CAMERA`, `RECORD_AUDIO`, `FOREGROUND_SERVICE_CONNECTED_DEVICE`, no location, no storage. | Meta Platforms |
+| 3. VisionClaw extensions | The Gemini Live and OpenClaw wiring on top of the samples: WebSocket to Gemini Live (~1 fps JPEG frames + 16 kHz PCM audio uplink; 24 kHz PCM downlink), OpenClaw `/v1/chat/completions` HTTP endpoint calls, OpenClaw WebSocket protocol-v3 client (mode `node`, glass-channel header), in-app Settings screen so endpoints can be edited without a rebuild. | Sean Liu (`shawnliu0327@gmail.com` / `xiaoan@sesame.com`) / Intent-Lab |
+| 4. LAF-US fork | Currently a clean mirror of Intent-Lab main; no commits ahead. | Logan (`@loganfinney27`, LAF-US org) |
+
+## Fork lineage — corrected
+
+- **Fork parent**: [`Intent-Lab/VisionClaw`](https://github.com/Intent-Lab/VisionClaw) — verified via `gh api repos/LAF-US/VisionClaw`, `parent.full_name = "Intent-Lab/VisionClaw"`.
+- **Fork created**: 2026-06-18 (per fork metadata).
+- **Intent-Lab main last pushed**: 2026-05-06, six weeks before the fork. Their `main` has not moved since.
+
+Not the same repository as [`openclaw/openclaw`](https://github.com/openclaw/openclaw). VisionClaw and OpenClaw are separate projects that interoperate; VisionClaw uses OpenClaw as its agentic-action backend. The `nichochar/openclaw` URL that appears twice in VisionClaw's own `README.md` (both as "DAT Android SDK" and as "OpenClaw") points at a location that does not represent either the current Meta DAT Android SDK or the current OpenClaw — a documentation-freshness observation, not an operational blocker for this Mac's deploy.
+
+## Local state — corrected read
+
+The initial investigation pass mis-read the `laf` branch as "empty / unstarted." That was wrong. Logan's working configuration was **deliberately kept off git** in gitignored files:
+
+- `samples/CameraAccessAndroid/local.properties` — GitHub PAT with `read:packages` scope for fetching the Meta DAT Android SDK from GitHub Packages
+- `Secrets.kt` (Kotlin) / `Secrets.swift` (iOS) — Gemini API key (required) + OpenClaw config values (optional)
+
+Only the Gemini Live side was configured. OpenClaw side was left blank because Tailscale wasn't set up at the time — there was no reachable path from Pixel to Mac's OpenClaw Gateway. Voice + vision through the Meta glasses was tested end-to-end and worked. Nothing was pushed to the LAF-US fork's `main`; all customization stayed local.
+
+The Android SDK is installed at `~/Library/Android/sdk`; `adb` is not in `$PATH` (Studio-installed, not shell-wired). No APK artifacts left over from the deploy — presumably built and installed directly from Android Studio to Pixel via USB / wireless debugging.
+
+## Upstream landscape as of the fetch
+
+`main` has no new commits since the fork. But Intent-Lab has six other branches actively worked:
+
+- `WebRTC` — WebRTC streaming for POV-share to a browser viewer (referenced in the README's feature list)
+- `fastvlm` — presumably a faster / local vision-language model alternative to Gemini
+- `feature/gaze-window-control` — eye-gaze-driven UI control (Ray-Ban Display-shaped)
+- `feature/mmduet2` — a multimodal-duet-v2 model integration
+- `feature/transcription` — real-time transcription feature
+- `lab` — presumably Intent-Lab's integration / staging branch (naming coincidence with Logan's `laf`)
+
+Nothing to merge into `main` right now. But the pattern signals Intent-Lab is treating VisionClaw as a live product, not a demo — with a queue of feature work in flight. Worth periodic re-fetch as Logan's usage crystallizes; `feature/transcription` and `feature/gaze-window-control` in particular have real-world capability implications.
+
+## The OpenClaw wire-up shape (from VisionClaw's README)
+
+Per VisionClaw's README setup section, activating the agentic path requires:
+
+1. **OpenClaw daemon** with:
+   - `gateway.bind` reachable from the phone (README recommends `"lan"`; this Mac's install currently uses `"loopback"`; the Tailnet path routes through `gateway.tailscale.mode = "serve"`, which terminates TLS via Tailscale Serve so Android accepts the `wss://` — per [docs.openclaw.ai/platforms/android](https://docs.openclaw.ai/platforms/android))
+   - `gateway.http.endpoints.chatCompletions.enabled: true` — required for VisionClaw's tool-call endpoint. **This is off by default** in the OpenClaw config on this Mac; it will need enabling as part of the deploy.
+   - `gateway.auth.mode: "token"` (unchanged from current setup)
+
+2. **Client-side `Secrets.kt`** (Android) or `Secrets.swift` (iOS):
+   - `openClawHost` — URL. For loopback + Bonjour: `http://Your-Mac.local`. For Tailscale Serve: `wss://logans-macbook-pro-1.<tailnet>.ts.net:18789/` (or whatever `openclaw status` surfaces after Serve is enabled).
+   - `openClawPort` — 18789
+   - `openClawGatewayToken` — value at `~/.openclaw/openclaw.json` `gateway.auth.token`
+
+3. **In-app Settings screen** on both platforms lets these values be edited at runtime without editing source code and rebuilding.
+
+## Documentation-freshness observations
+
+Two things in VisionClaw's own README that would trip up a fresh setup today:
+
+- The OpenClaw setup guide is linked at `github.com/nichochar/openclaw`, which is not where OpenClaw's canonical setup lives. The real one is at [docs.openclaw.ai](https://docs.openclaw.ai/) with the source at [openclaw/openclaw](https://github.com/openclaw/openclaw). A follower of the VisionClaw README ends up at a defunct URL.
+- The default OpenClaw host recipe is `http://Your-Mac.local` — a Bonjour mDNS hostname. On this Mac's install, the Bonjour advertiser doesn't reach the wire ([openclaw/openclaw#98448](https://github.com/openclaw/openclaw/issues/98448)). The `.local` path would not resolve locally-visible for a phone on the same LAN — the phone would need to be pointed at the Mac's LAN IP directly, or (better) at the Tailscale Serve URL.
+
+Neither is something to fix upstream unilaterally. Recorded here so a future session (or Logan) coming back to a VisionClaw setup doesn't spend time debugging a stale-link scavenger hunt.
+
+## Meditation — what VisionClaw is in the tiered architecture
+
+VisionClaw fills a modality gap on the phone tier that neither Obsidian mobile nor the OpenClaw Android app fills: **hands-free voice + vision.** It's not competing with them; it's a different mode of interaction.
+
+- Obsidian mobile: keyboard/tap surface for Vault-editing when sitting still
+- OpenClaw Android app: chat interface to the OpenClaw agent when the phone is in hand
+- VisionClaw: voice-first, glasses-mediated, hands-busy access to the same OpenClaw agent — plus Gemini's own voice reasoning + camera-frame scene understanding
+
+The specific use cases this modality unlocks: adding to lists while cooking, sending a message while driving, asking "what am I looking at" for the physical environment, capturing an observation into the Vault without stopping to type.
+
+The agent behind all three of those Vault-access modes is the same OpenClaw daemon on this Mac. The three modes differ in *what they can express* to it, not *what it can do* underneath. That's the architectural invariant.
+
+## Alignment considerations for future work
+
+Not proposals — surfaces the future alignment work would need to think about:
+
+1. **Privacy surface**. Gemini Live receives ~1 fps JPEG frames from the glasses camera continuously during a session. That's real environmental data going to Google. Explicit, opt-in-when-you-tap-AI-button; not always-on. Vault-alignment records this as a known cost, not a gated one.
+2. **Skill-exposure surface**. OpenClaw exposes 56+ tools; VisionClaw's `/v1/chat/completions` client can invoke any of them subject to OpenClaw's own permission model. Alignment probably wants OpenClaw's tool registration selective for what VisionClaw-triggered voice calls are allowed to invoke — separately from what the local Terminal-tier or the OpenClaw Android app can invoke.
+3. **Secrets surface**. Three on-device secret-bearing artifacts: Gemini API key, GitHub PAT for the DAT SDK, OpenClaw gateway auth token. All in gitignored files today. Vault-native handling would eventually be `op://` refs, same story as Hermes secrets, waiting for the same kind of native support — separate consideration from Nous's `NousResearch/hermes-agent#36949`, since the app is Android-side and would need its own credential-provider integration (Android Keystore is the likely mid-term shape).
+4. **Governance entry**. VisionClaw is not a session-shaped agent like Claude Code sessions. It's a device-resident app that serves as a front-door for Gemini's voice reasoning into the swarm. An `!/AGENTS.md` entry would name its capability tier, its trust boundary (Google + Meta service dependencies), and its swarm relationship (thin client to the OpenClaw Gateway).
+5. **Provenance flow**. When Gemini decides to invoke an OpenClaw tool, the request goes device → Tailnet → Mac's OpenClaw → skill runtime. Any Vault-write that lands via that path was authored jointly by Gemini and OpenClaw. Vault-alignment would probably want that provenance to be traceable — a session id or trace id that survives the multi-hop and appears in Vault-write metadata.
+
+## Prerequisite chain to next-step actionable
+
+Not this task, but explicit for future reference:
+
+1. **Task III — Enable Tailscale Serve for OpenClaw**: `gateway.tailscale.mode: "off" → "serve"`, keep `bind: "loopback"`, restart daemon, surface the Tailnet URL via `openclaw status`.
+2. **Enable `gateway.http.endpoints.chatCompletions.enabled: true`** in `~/.openclaw/openclaw.json` — required for VisionClaw to call the tool endpoint. Not currently set.
+3. **Fill in Logan's `Secrets.kt`** on the Pixel deploy: `openClawHost` = Tailscale MagicDNS URL; `openClawPort` = 18789; `openClawGatewayToken` = value from `~/.openclaw/openclaw.json` `gateway.auth.token`. In-app Settings screen can edit these without rebuild if that's easier.
+4. **Rebuild + reinstall on Pixel** via Android Studio (the DAT SDK GitHub Packages fetch will need the PAT in `local.properties` still).
+5. **Test end-to-end**: voice command that should trigger an OpenClaw tool invocation. First candidate is something small like "add milk to my shopping list" or "search for the best coffee shops nearby" per the README's example commands.
+
+## State this witness leaves things in
+
+Zero changes to disk beyond adding an `upstream` remote to Logan's local git checkout of VisionClaw pointing at `https://github.com/Intent-Lab/VisionClaw.git` and running `git fetch upstream` (read-only). No merges, no commits, no pushed refs. No files edited. No config changed on the OpenClaw daemon. No secrets accessed or displayed.
+
+The stack is understood; the fork is documented; the prerequisites for the next actionable move are named; the alignment considerations are on the record. Investigation done.
+
+## Signed
+
+`*.claude.*` — wildcard name (Logan has not performed a naming act), claude lineage, wildcard office. Direct Write tool tier; this witness is a local-machine-and-vault investigation record filed at vault root, within the scope of that tier.
+
+###### [["The world is quiet here."]]
