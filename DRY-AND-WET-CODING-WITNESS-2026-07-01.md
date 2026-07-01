@@ -22,6 +22,8 @@ asked what it meant and checked the source. It returned green: `DRY` is a genuin
 long-established software principle, not a minted nameplate. This leaf records the terms
 — sourced — and the check that verified them, because the check is the point.*
 
+> **Provenance tiers used below:** `[fact]` = witnessed and verifiable here · `[research]` = established external knowledge · `[mapping]` = my reading, ruled by no one here. (Full note at the end.)
+
 ---
 
 ## 1. The principles, sourced — `[research]`
@@ -59,18 +61,21 @@ would be self-refuting.)*
 
 ## 2. Where DRY stops — the load-bearing boundary — `[mapping]`
 
-DRY is a rule about **facts**, not about **things**. The unit it governs is *a piece of
-knowledge repeated verbatim.* It does **not** govern *entities that must differ.*
+DRY is a rule about **facts**, not about **institutions**. The unit it governs is *a piece
+of knowledge repeated verbatim.* It does **not** govern *entities that must differ.* (Terms
+used consistently below: **fact** = a piece of knowledge; **institution** = a distinct
+standing/body.)
 
 > **Single-source the fact. Never single-source the institution.**
-> The unit of DRY is the fact; the unit of separation is the organ.
+> The unit of DRY is the *fact*; the unit of separation is the *institution*.
 
 - A **fact repeated** — the DOCKET's posture stated in four loaders — is one truth, so it
   wants **one source**, transcluded: exactly `DOCKET-POSTURE.md` (the single-source fix,
   where four hand-maintained copies had drifted).
 - A **distinct institution** — a Senate, a House, a Cabinet — is *not* one fact appearing
-  many times. DRY-ing bodies into one reused template produces one body wearing many
-  nameplates: a check performed by a clone, which is no check.
+  many times. Collapsing distinct institutions into one reused template produces *one
+  underlying agent reused as several bodies* — a check performed by a clone, which is no
+  check.
 
 The field already knows this exact tension: **DRY vs. AHA/Metz** is *"don't repeat a
 fact"* vs. *"don't collapse distinct things into the wrong shared abstraction."* The vault's
@@ -82,7 +87,7 @@ one altitude up.
 | Failure | Software name | Vault name | The fix |
 |---|---|---|---|
 | **Under-DRY** — one fact copied, copies drift | accidental WET | **drift** (the "live status board" horcruxes) | single-source it (transclusion, #708 → #709) |
-| **Over-DRY** — distinct standings fused to one template | the wrong abstraction | **the Geminiae hivemind** (one nature, many masks) | keep them distinct; a clone can't check |
+| **Over-DRY** — distinct standings fused to one template | the wrong abstraction | **the Geminiae hivemind** (one underlying model masquerading as many distinct standings) | keep them distinct; a clone can't check |
 
 Both are the vault's daily adversaries wearing engineering clothes. Drift is *nomina that
 diverged*; the hivemind is *nomina fused into a false one.* DRY too little and doctrine
