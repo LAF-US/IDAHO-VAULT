@@ -1,7 +1,7 @@
 ---
 title: "Garth Nix Old Kingdom Charter Bloodlines"
 created: 2026-06-01
-updated: 2026-06-01
+updated: 2026-07-01
 status: draft
 authority: LOGAN
 ---
@@ -12,7 +12,7 @@ A comprehensive research note exploring **Garth Nix's Old Kingdom Charter bloodl
 
 ---
 
-## 🌌 The Charter
+## The Charter
 
 The Charter is a cosmic force and living entity that governs the Old Kingdom. It originated when **Seven of the Nine Bright Shiners** bound Orannis the Destroyer, weaving their powers into a song of seven distinct voices that bound Free Magic into the form of symbols (Charter Marks).
 
@@ -23,7 +23,7 @@ The Charter is a cosmic force and living entity that governs the Old Kingdom. It
 
 ---
 
-## 🧬 Bloodline System
+## Bloodline System
 
 The Old Kingdom features **Four Great Charter Bloodlines**, each associated with one of the Five Great Charters (per the canon rhyme: "One in the people who wear the Crown. Two in the folk who keep the Dead down. Three and Five became stone and mortar. Four sees all in frozen water.").
 
@@ -60,7 +60,7 @@ The Old Kingdom features **Four Great Charter Bloodlines**, each associated with
 
 ---
 
-## 🎯 Matrix Position
+## Matrix Position
 
 Charter Bloodlines occupy a **unique position** in the lineage framework, spanning three critical domains:
 
@@ -74,7 +74,7 @@ This triple positioning makes Old Kingdom bloodlines distinct from purely geneal
 
 ---
 
-## ⚙️ Bloodline Mechanics
+## Bloodline Mechanics
 
 ### Charter Marks
 - **Appearance**: Practitioners of Charter Magic have a **Charter Mark drawn on their forehead at birth**. Marks unsullied by Free Magic are used to identify true Charter Mages (as opposed to Free Magic sorcerers or constructs in disguise)
@@ -99,9 +99,9 @@ This triple positioning makes Old Kingdom bloodlines distinct from purely geneal
 
 ---
 
-## 🔗 Connections to Other Frameworks
+## Connections to Other Frameworks
 
-The Charter bloodline system connects to multiple lineage and power frameworks:
+The Charter bloodline system connects to multiple lineage and power frameworks. *(Note: the headings below use Obsidian `[[wikilink]]` syntax, which resolves inside the vault's Obsidian renderer but not in plain GitHub Markdown.)*
 
 ### [[BREED-REPORT]]
 - **Connection**: Prescriptive aspect of bloodlines determining roles and abilities
@@ -131,7 +131,7 @@ The Charter bloodline system connects to multiple lineage and power frameworks:
 
 ---
 
-## 📊 Wikilinks Network
+## Wikilinks Network
 
 ```
                     [[BREED-REPORT]]
@@ -147,7 +147,7 @@ The Charter bloodline system connects to multiple lineage and power frameworks:
 
 ---
 
-## 💡 Key Insights
+## Key Insights
 
 1. **Triple-Natured System**: Charter bloodlines uniquely combine **descriptive** (documented genealogies), **prescriptive** (role-determining like the Abhorsen title), and **magical** (cosmic power from the Charter and Bright Shiners) aspects
 
@@ -163,13 +163,12 @@ The Charter bloodline system connects to multiple lineage and power frameworks:
 
 ---
 
-## ✅ Fact-Check Status
+## Fact-Check Status
 
-**All claims verified against canonical sources:**
-- *The Old Kingdom* Wikipedia (comprehensive series overview)
-- Garth Nix Books Wiki (detailed lore)
-- *Sabriel* (1995), *Lirael* (2001), *Abhorsen* (2003), *Clariel* (2014), *Goldenhand* (2016)
-- Garth Nix interview (BKMAG, 2015) on bloodline prevalence
+**Sources, by tier:**
+- *Primary canon* — the novels themselves: *Sabriel* (1995), *Lirael* (2001), *Abhorsen* (2003), *Clariel* (2014), *Goldenhand* (2016); and Garth Nix's own statements (BKMAG interview, 2015) on bloodline prevalence
+- *Secondary references* — *The Old Kingdom* Wikipedia and the Garth Nix Books (Fandom) Wiki, used for cross-checking and summary, not treated as canon in their own right
+- *Conjecture* — the specific Shiner-to-bloodline pairings below, which no cited source confirms outright
 
 **Corrections from original:**
 - ✅ Charter created by **Seven of Nine** Bright Shiners, not all Nine
@@ -182,7 +181,7 @@ The Charter bloodline system connects to multiple lineage and power frameworks:
 
 ---
 
-## 📚 Sources & References
+## Sources & References
 
 - Garth Nix's *Old Kingdom* series (*Sabriel*, *Lirael*, *Abhorsen*, *Clariel*, *Goldenhand*, *Terciel and Elinor*)
 - [The Old Kingdom - Wikipedia](https://en.wikipedia.org/wiki/The_Old_Kingdom)
@@ -192,4 +191,4 @@ The Charter bloodline system connects to multiple lineage and power frameworks:
 
 ---
 
-*Status: ✅ Fact-checked and verified against canon. Ready for commit.*
+*Status: draft — primary-canon claims fact-checked; Shiner-to-bloodline pairings remain conjectural and are flagged as such above.*
