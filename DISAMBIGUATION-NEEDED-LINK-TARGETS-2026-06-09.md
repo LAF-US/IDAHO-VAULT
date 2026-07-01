@@ -54,6 +54,9 @@ A bare `[[AGENTS]]` is ambiguous across **six** on-disk files:
 
 **Observed (not decided):** governance fixes the **live** DOCKET as #1. #3 is its portable-path mirror; #2/#4 are archives. A bare `[[DOCKET]]` does not distinguish live from archive from mirror. **Architect's call:** confirm #1 as the canonical link target and the status (mirror? superseded?) of the flattened/archive copies.
 
+> [!check] Resolved 2026-06-29 (consolidation, PR #694)
+> #2 `DOCKET-ARCHIVE.md` and #4 its flat-alias were **consolidated into root `ADJUDICATED.md`** and removed. #3 the `DOCKET.md` flat-alias — a stale *illegal-docket* holdover from the Caesar Geminiaeus era — was **drained into `ADJUDICATED.md` § "The Old Illegal Docket — fossil (Caesar Geminiaeus era)" and cleared**. Only **#1 (the live `DOCKET.md`)** remains, so a bare `[[DOCKET]]` is now unambiguous. Historical mentions of the removed copies in dated snapshots/witnesses are **left as-witnessed** (rewriting them would falsify those records).
+
 ## 3. `TOPOLOGY-CENSUS` — seven files, one timestamp
 
 All share the census stamp **`20260525T095704Z`** (a UTC **timestamp**, not a bare date):
