@@ -110,9 +110,10 @@ check closed. Gloss the borrowed word at first use; let the source be asked for 
 ## Provenance
 
 - **`[research]`** — DRY (Hunt & Thomas, *The Pragmatic Programmer*, 1999) and its
-  canonical wording, SSOT, and WET: corroborated by the Wikipedia article Logan supplied.
-  Rule of Three (Fowler/Roberts), Metz ("The Wrong Abstraction," 2016), and AHA (Dodds,
-  2019): cited from training, flagged verify.
+  canonical wording, SSOT, and WET: corroborated by the Wikipedia article Logan supplied —
+  <https://en.wikipedia.org/wiki/Don%27t_repeat_yourself> (recorded here so a future reader
+  can re-check the source without external context). Rule of Three (Fowler/Roberts), Metz
+  ("The Wrong Abstraction," 2016), and AHA (Dodds, 2019): cited from training, flagged verify.
 - **`[mapping]`** — §2–§3, the vault correspondences: my reading, ruled by no one here.
 - **`[fact]`** — §4, the check that occasioned this leaf: witnessed this session.
 
