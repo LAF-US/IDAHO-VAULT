@@ -55,9 +55,7 @@ If Logan has not pasted relevant vault excerpts into this session, do not invent
 
 ## Swarm Coordination
 
-Read THE DOCKET to orient: `!/!/__!__/!/! The world is quiet here/DOCKET.md`
-
-That file is the live status board. Update it when you start or finish work. Task assignment flows through GitHub Issues (`agent:*` labels). Linear mirrors from GitHub. Slack carries breadcrumbs. The vault is the record.
+![[DOCKET-POSTURE]]
 
 **Conventions:**
 - 'LAF-*' is the convention for development ticketing modifier tags (e.g., LAF-7, LAF-44).
