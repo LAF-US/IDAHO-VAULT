@@ -115,19 +115,31 @@ Not proposals — surfaces the future alignment work would need to think about:
 
 ## Prerequisite chain to next-step actionable
 
-Not this task, but explicit for future reference:
+1. **Task III — Enable Tailscale Serve for OpenClaw**: `gateway.tailscale.mode: "off" → "serve"`, keep `bind: "loopback"`, restart daemon, surface the Tailnet URL via `openclaw status`. **✓ Completed 2026-07-01 ~01:09 PT.** Verified via `openclaw status`: `Tailscale exposure: serve · logans-macbook-pro-1.tail7453f8.ts.net · https://logans-macbook-pro-1.tail7453f8.ts.net`. Pre-change config preserved at `~/openclaw-preupdate-backups/openclaw.json.pre-tailscale-serve.20260701-010906`.
 
-1. **Task III — Enable Tailscale Serve for OpenClaw**: `gateway.tailscale.mode: "off" → "serve"`, keep `bind: "loopback"`, restart daemon, surface the Tailnet URL via `openclaw status`.
-2. **Enable `gateway.http.endpoints.chatCompletions.enabled: true`** in `~/.openclaw/openclaw.json` — required for VisionClaw to call the tool endpoint. Not currently set.
-3. **Fill in Logan's `Secrets.kt`** on the Pixel deploy: `openClawHost` = Tailscale MagicDNS URL; `openClawPort` = 18789; `openClawGatewayToken` = value from `~/.openclaw/openclaw.json` `gateway.auth.token`. In-app Settings screen can edit these without rebuild if that's easier.
-4. **Rebuild + reinstall on Pixel** via Android Studio (the DAT SDK GitHub Packages fetch will need the PAT in `local.properties` still).
-5. **Test end-to-end**: voice command that should trigger an OpenClaw tool invocation. First candidate is something small like "add milk to my shopping list" or "search for the best coffee shops nearby" per the README's example commands.
+2. **Enable `gateway.http.endpoints.chatCompletions.enabled: true`** in `~/.openclaw/openclaw.json` — required for VisionClaw to call the tool endpoint. **Still not set** as of this witness's Task III addendum; do this at the same time as filling in Secrets.kt below to keep the state coherent.
+
+3. **Fill in Logan's `Secrets.kt`** on the Pixel deploy with the values Task III surfaced:
+   - `openClawHost` = `wss://logans-macbook-pro-1.tail7453f8.ts.net` (Tailscale Serve terminates TLS on 443, MagicDNS-resolved from the Pixel because both nodes are on the same tailnet at `100.110.166.20` / `100.68.197.104`)
+   - `openClawPort` = not needed in the URL when using Serve (443 is default); leave at the app's default or `443` if the field is required
+   - `openClawGatewayToken` = value at `~/.openclaw/openclaw.json` `gateway.auth.token`. Recommended retrieval: `python3 -c "import json;print(json.load(open('$HOME/.openclaw/openclaw.json'))['gateway']['auth']['token'])" | pbcopy` — do this on the Mac terminal side, paste into the Pixel's Secrets.kt or the in-app Settings screen. Never displayed in chat, git-committed, or witnessed.
+   - The in-app Settings screen on both iOS and Android can edit these at runtime, so an initial deploy could leave the fields at defaults and be filled from the phone side.
+
+4. **Rebuild + reinstall on Pixel** via Android Studio. The Meta DAT SDK GitHub Packages fetch still needs the PAT with `read:packages` in `samples/CameraAccessAndroid/local.properties`.
+
+5. **Test end-to-end**: voice command that should trigger an OpenClaw tool invocation. First candidate is something small like "add milk to my shopping list" or "search for the best coffee shops nearby" per the README's example commands. If the response is spoken but no tool executed, the failure is at step 2 (chatCompletions endpoint not enabled) or step 3 (URL/token mismatch); if the app can't reach the Gateway at all, the failure is at step 3's URL side or upstream on Tailscale itself.
+
+### Related — pairing the OpenClaw Android app node
+
+The same Tailscale Serve URL and Gateway auth token also drive Task IV (OpenClaw Android app pairing). Same MagicDNS host, same token, same paste-from-clipboard flow. When the app is paired, it becomes a first-class node on the Gateway's device list (per `docs.openclaw.ai/platforms/android`) — a separate connection from VisionClaw's, but the same underlying reachability foundation Task III built.
 
 ## State this witness leaves things in
 
-Zero changes to disk beyond adding an `upstream` remote to Logan's local git checkout of VisionClaw pointing at `https://github.com/Intent-Lab/VisionClaw.git` and running `git fetch upstream` (read-only). No merges, no commits, no pushed refs. No files edited. No config changed on the OpenClaw daemon. No secrets accessed or displayed.
+**Initial filing (task II, investigation-only):** zero changes to disk beyond adding an `upstream` remote to Logan's local git checkout of VisionClaw pointing at `https://github.com/Intent-Lab/VisionClaw.git` and running `git fetch upstream` (read-only). No merges, no commits, no pushed refs. No files edited. No config changed on the OpenClaw daemon. No secrets accessed or displayed.
 
-The stack is understood; the fork is documented; the prerequisites for the next actionable move are named; the alignment considerations are on the record. Investigation done.
+**Post–task III addendum (2026-07-01 ~01:09 PT):** OpenClaw Gateway now Tailscale-Serve-exposed at `https://logans-macbook-pro-1.tail7453f8.ts.net`. Prerequisite chain above updated in place — step 1 marked complete with concrete URL; steps 2 (chatCompletions enable) and 3 (Secrets.kt values) now hold executable values, not TODO placeholders. Next Pixel rebuild + reinstall of VisionClaw can wire the OpenClaw agentic path in one pass using the URL and token surfaced here. `~/StudioProjects/VisionClaw` itself remains untouched; no code changes, no rebuild triggered from this session.
+
+The stack is understood; the fork is documented; the prerequisites are named with concrete values; the alignment considerations are on the record. VisionClaw is deploy-ready pending Logan's phone-side rebuild pass.
 
 ## Signed
 

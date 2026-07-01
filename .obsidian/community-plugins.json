@@ -24,12 +24,10 @@
   "map-of-content",
   "obsidian-footnotes",
   "metadata-menu",
-  "notebook-navigator",
   "quickadd",
   "obsidian-tidy-footnotes",
   "backlink-cache",
   "orbit-graph-view",
   "tipa-support",
-  "fit",
-  "obsidian-git"
+  "fit"
 ]
