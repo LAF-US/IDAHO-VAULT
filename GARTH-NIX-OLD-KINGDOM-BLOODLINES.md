@@ -19,7 +19,7 @@ The Charter is a cosmic force and living entity that governs the Old Kingdom. It
 - **Nature**: The Charter is both a source of magic and a sentient force that maintains the balance between Life and Death. It is described as an "endless flow" of symbols describing the cosmos
 - **Composition**: Created by **Seven of the Nine Bright Shiners** (Ranna, Mosrael, Kibeth, Dyrim, Belgaer, Saraneth, and Astarael); **Yrael** (Mogget) and **Orannis** stood apart from the Charter. Of these, **Five** (Ranna, Mosrael, Dyrim, Belgaer, and Saraneth) gave their full being to the Charter, investing themselves entirely within bloodlines and artifacts. **Kibeth** (Walker/Dog) and **Astarael** (Weeper/Sorrowful) retained consciousness as separate entities
 - **Function**: Provides the framework for Charter Magic in the Old Kingdom. The Charter touches everyone in the Old Kingdom but is usually only felt by Charter Mages
-- **Canon Source**: *The Old Kingdom* Wikipedia, Garth Nix Books Wiki
+- **Sources**: *The Old Kingdom* Wikipedia, Garth Nix Books Wiki (secondary references)
 
 ---
 
@@ -33,7 +33,7 @@ The Old Kingdom features **Four Great Charter Bloodlines**, each associated with
 - **Notable Members**: The Abhorsen (title), Terciel, Sabriel, Lirael, Sameth
 - **Inheritance**: Not always direct; the next Abhorsen could be a niece, cousin, or sibling rather than the current Abhorsen's child. Requires proper training and passing of the Abhorsen's tools (bells, sword)
 - **Great Charter**: **Saraneth** (the Binder) invested into the Abhorsen bloodline
-- **Canon Source**: *The Old Kingdom* Wikipedia, *Abhorsen* (2003)
+- **Sources**: *Abhorsen* (2003, primary canon); *The Old Kingdom* Wikipedia (secondary reference)
 
 ### Clayr Line
 - **Role**: Seers and librarians who preserve knowledge and See the future
@@ -41,7 +41,7 @@ The Old Kingdom features **Four Great Charter Bloodlines**, each associated with
 - **Notable Members**: The Clayr collective, Sanar, Ryelle, Lirael (half-Clayr by birth)
 - **Inheritance**: Nearly all Clayr are female. The Sight typically manifests around age 12, but can appear as late as 16. Later awakening correlates with more powerful Sight. **Mosrael** (the Waker) invested into the Clayr bloodline
 - **Physical Traits**: Nut-brown skin, pale blond hair, eyes of blue or green
-- **Canon Source**: *The Old Kingdom* Wikipedia, *Lirael* (2001)
+- **Sources**: *Lirael* (2001, primary canon); *The Old Kingdom* Wikipedia (secondary reference)
 
 ### Wallmakers Line
 - **Role**: Creators and maintainers of the Wall that separates the Old Kingdom from Ancelstierre
@@ -49,14 +49,14 @@ The Old Kingdom features **Four Great Charter Bloodlines**, each associated with
 - **Notable Members**: The original Wallmakers (now transformed into the Wall). Prince Sameth identified as successor to the Wallmakers in *Abhorsen*
 - **Inheritance**: The bloodline effectively ended as a human lineage when its members became the Wall and Great Charter Stones
 - **Great Charter**: **Ranna** (the Sleeper) and **Belgaer** (the Thinker) bound into the Wall, Great Charter Stones, and Wallmakers
-- **Canon Source**: *The Old Kingdom* Wikipedia, *Abhorsen* (2003)
+- **Sources**: *Abhorsen* (2003, primary canon); *The Old Kingdom* Wikipedia (secondary reference)
 
 ### Royal Line
 - **Role**: Rulers of the Old Kingdom
 - **Key Ability**: Enhanced Charter Magic abilities, leadership
 - **Notable Members**: King Touchstone (Royal bloodline), Prince Sameth (heir; also Wallmaker successor). Sabriel is Abhorsen-blood and queen *by marriage* — consort, not Royal bloodline
 - **Inheritance**: Traditional monarchical succession. **Dyrim** (the Speaker) invested into the Royal bloodline
-- **Canon Source**: *The Old Kingdom* Wikipedia, *Sabriel* (1995)
+- **Sources**: *Sabriel* (1995, primary canon); *The Old Kingdom* Wikipedia (secondary reference)
 
 ---
 
@@ -66,7 +66,7 @@ Charter Bloodlines occupy a **unique position** in the lineage framework, spanni
 
 | Domain | Description | Bloodline Manifestation |
 |--------|-------------|------------------------|
-| **Descriptive** | Bloodlines are documented and discovered like pedigree/genealogy | Charter marks are baptismal marks given to most Old Kingdom folk — Charter affiliation, not proof of a Great-Charter bloodline |
+| **Descriptive** | Bloodlines are documented and discovered like pedigree/genealogy | Charter marks are baptismal marks given to most Old Kingdom folk at birth — they signal Charter affiliation, not proof of a Great-Charter bloodline |
 | **Prescriptive** | Bloodlines determine roles and abilities like royalty/breeding programs | Bloodline dictates magical capabilities and societal roles |
 | **Magical** | Bloodlines channel cosmic power | Direct connection to the Charter as a living entity |
 
@@ -77,17 +77,17 @@ This triple positioning makes Old Kingdom bloodlines distinct from purely geneal
 ## Bloodline Mechanics
 
 ### Charter Marks
-- **Appearance**: Practitioners of Charter Magic have a **Charter Mark drawn on their forehead at birth**. Marks unsullied by Free Magic are used to identify true Charter Mages (as opposed to Free Magic sorcerers or constructs in disguise)
+- **Appearance**: Most Old Kingdom folk receive a **Charter Mark drawn on their forehead at birth** as a baptismal/protective mark, not a sign of Great-Charter bloodline. Whether a given mark stays unsullied by Free Magic is what distinguishes genuine Charter-affiliated people from Free Magic sorcerers or constructs in disguise — the mark alone doesn't make someone a practicing Charter Mage
 - **Function**: Indicate connection to the Charter and ability to perform Charter Magic. Marks can be corrupted by Free Magic (e.g., Clariel corrupts her Charter Mark in *Clariel*)
 - **Variation**: The mark is a visible symbol on the forehead, serving as magical identification
 - **Significance**: A clear, unsullied mark validates a Charter Mage's status
-- **Canon Source**: *The Old Kingdom* Wikipedia
+- **Sources**: *The Old Kingdom* Wikipedia (secondary reference)
 
 ### Inheritance Patterns
 - **Non-Direct Inheritance**: Bloodline abilities don't always pass directly parent-to-child. The next Abhorsen could be a niece, cousin, or sibling
 - **Mixed Bloodlines**: Individuals can inherit from multiple bloodlines. **Lirael** is half-Clayr (mother) and Abhorsen's daughter (Terciel). **Sameth** is son of Abhorsen (Sabriel) and King (Touchstone), identified as Wallmaker successor
 - **Prevalence**: Garth Nix stated bloodlines are "much more prevalent" than appears; many carry potential but without Charter marks and training, they don't manifest abilities
-- **Canon Source**: Garth Nix interview (BKMAG, 2015), *The Old Kingdom* Wikipedia
+- **Sources**: Garth Nix interview (BKMAG, 2015, primary/author statement); *The Old Kingdom* Wikipedia (secondary reference)
 
 ### Bloodline Strength Factors
 1. **Purity of Line**: Directness of descent from Great Charter founders
@@ -95,7 +95,7 @@ This triple positioning makes Old Kingdom bloodlines distinct from purely geneal
 3. **Charter Connection**: Individual's personal relationship with the Charter affects power
 4. **Tools**: Possession and mastery of bloodline-specific tools (necromantic bells, sword, etc.) amplify abilities
 5. **Work Ethic**: As Nix stated, "Just having the [Great Charter] bloodline doesn't mean anything if you don't do the work"
-- **Canon Source**: Garth Nix interview (BKMAG, 2015)
+- **Sources**: Garth Nix interview (BKMAG, 2015, primary/author statement)
 
 ---
 
@@ -126,7 +126,7 @@ The Charter bloodline system connects to multiple lineage and power frameworks. 
 ### [[TROUBLE-BUBBLE]]
 - **Connection**: The **Disreputable Dog is Kibeth**, one of the **Nine Bright Shiners** (specifically, the Walker). Kibeth retained consciousness and appears as a dog
 - **Parallel**: Mr. Trouble-Bubble Curtis Gonzalez-Finney the Doodle represents a similar concept of immense power in an unexpected, unassuming form
-- **Canon Source**: *The Old Kingdom* Wikipedia: "the Disreputable Dog (a self-identified remnant of the spirit 'Kibeth')"
+- **Sources**: *The Old Kingdom* Wikipedia (secondary reference): "the Disreputable Dog (a self-identified remnant of the spirit 'Kibeth')"
 - **Fun Note**: Both subvert expectations of what a powerful cosmic being "should" look like
 
 ---
