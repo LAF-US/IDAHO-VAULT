@@ -60,7 +60,7 @@ Config: `token: env:DISCORD_OPENCLAW_TOKEN` (resolved by SPARKSEED)
 
 | Item | 1Password | Field | Status |
 |------|-----------|-------|--------|
-| Signal | ✅ Created | number: +1-208-627-9028 | ⏳ Needs CLI token |
+| Signal | ✅ Created | number: +1-XXX-XXX-XXXX | ⏳ Needs CLI token |
 
 ### 5. SPARKSEED Bootstrap Fix
 
