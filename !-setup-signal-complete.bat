@@ -3,11 +3,11 @@ setlocal enabledelayedexpansion
 
 echo ============================================
 echo Signal-CLI Setup for OpenClaw
-echo Phone: +12086279028
+echo Phone: +1XXXXXXXXXX
 echo ============================================
 echo.
 
-set SIGNAL_NUMBER=+12086279028
+set SIGNAL_NUMBER=+1XXXXXXXXXX
 
 REM Step 1: Check Java
 echo [Step 1/6] Checking Java installation...
