@@ -69,6 +69,10 @@ the self-interest under the civic hymn (*"As long as he lives, I'll never be fre
 Brutus silently pieced out, the faction here **sings out loud** — we watch them decide what blank to
 leave, and how to make it irresistible to fill. (The companion track is literally titled *"Caesar's Too
 Ambitious"* — the charge, printed as the authors' own.)
+**[Corrected 2026-06-23, at Logan's direction — the preceding parenthetical is superseded: that
+track, *"Caesar's Too Ambitious,"* is a cut song — not in the EP or the show (Yurchuk's own
+caption; see `SHALL-ROME-PROVENANCE`), and is written from Caesar's perspective, not the
+conspirators' "charge." It is not part of the work. Original line kept, not erased.]**
 
 ## The two ends together `[reading]`
 
@@ -114,7 +118,10 @@ into finishing it.* `*`
   king."* (*Julius Caesar* 2.1), confirmed verbatim against search-quoted Folger / MIT text. **Fetch
   caveat:** primary pages returned 403; the two lines are confirmed, the surrounding scene and the
   *"Shall Rome, &c. / Speak, strike, redress!"* letter-text are the received standard text, and
-  Cassius's *"several hands"* device (1.2) is **paraphrased, not quoted.**
+  Cassius's *"several hands"* device (1.2) is **paraphrased, not quoted.** *(2026-06-24: the
+  full orchard passage is now seated below as an **Exhibit**, **[source: Logan-supplied]** — the
+  letter-text this caveat flagged as merely "the received standard text" is now on the record
+  verbatim.)*
 - **[catalog] / [research] — Yurchuk:** *Shall Rome*, from *Caesar: The Musical* (Grace Yurchuk), per
   `SHALL-ROME-PROVENANCE-2026-06-22` and its caveats. Lyrics per the exhibit in `SHALL-ROME-WITNESS`.
 - **[reading] — mine:** the reverse-shot framing; the "&c." as aperture/instrument; the two-ends table;
@@ -122,13 +129,46 @@ into finishing it.* `*`
 - **Does not amend** the witness, provenance, or discipline files; it links to them. **Reserved (`*`):**
   the CAESAR verdicts, and any reading of a live vault matter, stay the Court's / Logan's.
 
+## Exhibit — the primary passage `[source: Logan-supplied]`
+
+*Recorded 2026-06-24 at Logan's direction ("record the primary passage then read on") by a later
+winding on this branch (`*.claude.*`, `claude/shall-rome-lyrics-ok9049`) — not the instance that
+filed this witness on 2026-06-22, but the same branch, reading the same record forward. The
+text-of-record is what Logan supplied this session, held **verbatim** — the same grade the lyrics
+carry in `SHALL-ROME-WITNESS`. This closes the reading-end fetch caveat lawfully: the passage is now
+**a marked source on the record**, not pieced out from memory. Scene: **Julius Caesar 2.1** (Brutus
+in his orchard, reading the planted letter) `[source: Logan-supplied]`; verbatim wording likewise. Logan's rendering prints "etc." where the received standard text prints "&c.";
+preserved exactly as supplied, not normalized.*
+
+> *"Brutus, thou sleep'st. Awake, and see thyself.*
+> *Shall Rome, etc. Speak, strike, redress!"*
+> *"Brutus, thou sleep'st. Awake."*
+> *Such instigations have been often dropped*
+> *Where I have took them up.*
+> *—"Shall Rome, etc." Thus must I piece it out:*
+> *"Shall Rome stand under one man's awe?" What, Rome?*
+> *My ancestors did from the streets of Rome*
+> *The Tarquin drive when he was called a king.*
+> *—"Speak, strike, redress!" Am I entreated*
+> *To speak and strike? O Rome, I make thee promise,*
+> *If the redress will follow, thou receivest*
+> *Thy full petition at the hand of Brutus!*
+
+*What the full passage adds beyond the two pillar lines read above: the **frame** (the wake-call,
+doubled — *"Awake… Awake"*) and the **seal** (the self-bound oath — *"O Rome, I make thee promise…
+at the hand of Brutus"*). The mechanism the witness named — piece-it-out + bloodline — sits between
+them. The extended reading is held in conversation, offered for inscription, not folded into the
+body above without Logan's gate.*
+
 ## Document Metadata
 
 - **Created:** 2026-06-22
-- **Last Updated:** 2026-06-22
+- **Last Updated:** 2026-06-24
 - **Status:** proposed (companion panel to the Shall Rome witness; awaiting Logan's gate)
 - **Authority:** LOGAN (recorded; authored by `*.claude.*`, not Logan's voice)
 - **Author:** `*.claude.*` (Claude Code, branch `claude/shall-rome-lyrics-ok9049`)
+- **Change Note:** 2026-06-24 (Logan's direction, *"record the primary passage then read on"*) — seated the full **Julius Caesar 2.1** orchard passage as an **Exhibit**, `[source: Logan-supplied]`, verbatim; updated the reading-end fetch caveat to point to it. Recorded by a later winding on this branch (not the 2026-06-22 filer); body reading unchanged, only the primary text added below it.
+- **Change Note:** 2026-06-23 (Logan's direction) — corrected the *Caesar's Too Ambitious* parenthetical in "The writing end": that track is a **cut song** (not in the EP or show; Yurchuk's own caption, see `SHALL-ROME-PROVENANCE`), written from Caesar's perspective, not the conspirators' "charge." Original kept and superseded by a dated inline note; the reading otherwise stands as filed. Held without over-reading, per Logan.
 - **Scope:** the planted letter shown from both ends — Brutus reading (Shakespeare) and the faction writing (Yurchuk); the "&c." as the gap that is the instrument
 
 ###### [["The world is quiet here."]]

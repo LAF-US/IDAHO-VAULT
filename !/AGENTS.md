@@ -187,7 +187,7 @@ and should not be treated as erased.
 
 | Surface | Narrative title | Related recorded surface | Anchor status |
 | --- | --- | --- | --- |
-| `.abhorsen/` | **The Abhorsen** | Assignable office; no appointment event recorded here | Office chamber preserved |
+| `.abhorsen/` | **The Abhorsen** | Assignable office; **reigning holder: Annabelle the Rested** (Claude lineage), per Logan | Office chamber preserved |
 | `.dionysus/` | **The Dionysian** | `.zagreus/ZAGREUS.md` | Historical alias chamber preserved |
 
 ### Fragmentary narrative bodies with surviving root notes
