@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import importlib.util
+
 import unittest
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -15,6 +16,7 @@ def _load_review_feedback_loop_module():
     module = importlib.util.module_from_spec(spec)
     assert spec.loader is not None
     spec.loader.exec_module(module)
+
     return module
 
 
@@ -44,6 +46,7 @@ def _thread(
                 }
                 for author in authors
             ]
+
         },
     }
 
@@ -60,21 +63,25 @@ def _pr(
     auto_merge_enabled: bool = False,
 ) -> dict[str, object]:
     created_at = created_at or datetime(2026, 4, 16, 2, 0, tzinfo=timezone.utc)
+
     return {
         "number": number,
         "url": f"https://example.test/pr/{number}",
         "body": body,
         "createdAt": created_at.isoformat().replace("+00:00", "Z"),
+
         "isDraft": draft,
         "reviewDecision": review_decision,
         "autoMergeRequest": {"enabledAt": created_at.isoformat().replace("+00:00", "Z")} if auto_merge_enabled else None,
         "labels": _labels(*labels),
         "reviewThreads": {"nodes": list(threads)},
+
     }
 
 
 class ReviewFeedbackLoopTest(unittest.TestCase):
     def test_low_risk_agent_pr_never_becomes_auto_merge_eligible(self) -> None:
+
         now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
 
         early_state = review_feedback_loop.evaluate_review_state(
@@ -101,6 +108,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertFalse(ready_state["should_have_agent_review_pending"])
         self.assertFalse(ready_state["eligible_for_auto_merge"])
 
+
     def test_risk_label_is_canonical_over_body_marker(self) -> None:
         """Label-based risk tier wins when body marker was overwritten by an editor."""
         now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
@@ -110,6 +118,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             _pr(
                 created_at=now - timedelta(minutes=45),
                 labels=("risk/low", "agent-review-pending"),
+
                 body="## Real description\n\nSummary of changes.",
             ),
             now=now,
@@ -118,6 +127,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertTrue(state["low_risk"])
         self.assertTrue(state["grace_elapsed"])
         self.assertFalse(state["eligible_for_auto_merge"])
+
 
     def test_high_risk_label_wins_when_low_and_high_are_both_present(self) -> None:
         state = review_feedback_loop.evaluate_review_state(
@@ -326,6 +336,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             "_resolve_outdated_advisory_threads",
             return_value=0,
         ), mock.patch.object(
+
             review_feedback_loop, "apply_review_state_projection", return_value=[]
         ) as projection:
             result = review_feedback_loop.sync_pr(args)
@@ -393,10 +404,12 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         with mock.patch.object(review_feedback_loop, "_run", side_effect=error):
             enabled, arm_error = review_feedback_loop._arm_auto_merge(289)
 
+
         self.assertFalse(enabled)
         self.assertIn("not authorized to enable auto-merge", arm_error)
 
     def test_reconcile_open_prs_does_not_promote_agent_prs(self) -> None:
+
         args = SimpleNamespace(
             owner="LAF-US",
             repo="IDAHO-VAULT",
@@ -420,6 +433,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             review_feedback_loop,
             "_resolve_outdated_advisory_threads",
             return_value=0,
+
         ), mock.patch.object(
             review_feedback_loop, "apply_review_state_projection", return_value=[]
         ), mock.patch.object(
@@ -435,6 +449,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         edit_label.assert_not_called()
         comment.assert_not_called()
         arm_auto_merge.assert_not_called()
+
 
     def test_reconcile_open_prs_reports_auth_blocked_auto_merge(self) -> None:
         ready_pr = _pr(
@@ -455,6 +470,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             review_feedback_loop,
             "_resolve_outdated_advisory_threads",
             return_value=0,
+
         ), mock.patch.object(
             review_feedback_loop,
             "evaluate_review_state",
@@ -482,6 +498,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertEqual(report["rearmed_prs"], [])
         self.assertEqual(report["auto_merge_authorization_blocked"], [])
         self.assertIsNone(report["evaluated"][0]["auto_merge_arm_error"])
+
 
 
 if __name__ == "__main__":

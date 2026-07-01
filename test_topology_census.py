@@ -5,6 +5,7 @@ import json
 import shutil
 import subprocess
 import sys
+
 import unittest
 from pathlib import Path
 from unittest.mock import patch
@@ -90,6 +91,7 @@ class TopologyCensusTest(unittest.TestCase):
                     "",
                     "Read `INBOX/README.md` and `!/INBOX/README.md` for intake work.",
                     "Read `!/AGENTS.md` for the live roster.",
+
                     "",
                 ]
             ),
@@ -101,12 +103,14 @@ class TopologyCensusTest(unittest.TestCase):
                     "# Agents",
                     "",
                     "## Direct-Write Agents (Autoloaded)",
+
                     "",
                     "| Agent | Persona | Vendor | Tier | Dotfolder | Git Suffix |",
                     "| --- | --- | --- | --- | --- | --- |",
                     "| OpenAI Codex | **The Lexicographer** | OpenAI | Scripting | .codex/ | -X |",
                     "",
                     "## Advisory & Specialized Agents",
+
                     "",
                     "| Agent | Persona | Vendor | Role | Dotfolder |",
                     "| --- | --- | --- | --- | --- |",
@@ -136,6 +140,7 @@ class TopologyCensusTest(unittest.TestCase):
         self._write("!/swarm 1/tools/state_manager.py", "print('state manager')\n")
         self._write(".codex/CODEX.md", "# CODEX\n")
         self._write(".codex/MEMORY/anchor.md", "# memory\n")
+
         self._write(".bartimaeus/README.md", "# Bartimaeus\n")
         self._write(".shade/archive.md", "# shade archive\n")
         self._write("2026/04/2026-04-17.md", "# daily note\n")
@@ -147,6 +152,7 @@ class TopologyCensusTest(unittest.TestCase):
         # Keep ignored creatures local-only.
         subprocess.run(["git", "reset", "--", "_private", "@"], cwd=self.root, check=True, capture_output=True)
 
+
     def test_root_scope_counts_ignored_and_tracked_folders_without_move_commands(self) -> None:
         report = topology_census.build_scope_report(self.root, "root")
         entries = {entry["path"]: entry for entry in report["entries"]}
@@ -156,6 +162,7 @@ class TopologyCensusTest(unittest.TestCase):
         self.assertIn("@", entries)
         self.assertTrue(entries["INBOX"]["appears_in_live_doctrine"])
         self.assertEqual(entries["INBOX"]["authority_state"], "explicit_live_authority")
+
         self.assertTrue(entries["_private"]["git_state"]["ignored"])
         self.assertEqual(entries["_private"]["obvious_authority"], "ignore rules only")
 
@@ -164,6 +171,7 @@ class TopologyCensusTest(unittest.TestCase):
         self.assertNotIn("move_to_", rendered)
 
     def test_dotfolder_scope_reports_roster_recovery_and_memory(self) -> None:
+
         report = topology_census.build_scope_report(self.root, "dotfolders")
         entries = {entry["path"]: entry for entry in report["entries"]}
 
@@ -174,6 +182,7 @@ class TopologyCensusTest(unittest.TestCase):
         self.assertFalse(entries[".shade"]["live_roster"])
         self.assertTrue(entries[".shade"]["historical_recovery"])
 
+
     def test_nest_scope_recurses_and_surfaces_duplicate_internal_systems(self) -> None:
         report = topology_census.build_scope_report(self.root, "nest")
         entries = {entry["path"]: entry for entry in report["entries"]}
@@ -183,6 +192,7 @@ class TopologyCensusTest(unittest.TestCase):
         self.assertIn("!/swarm 1", entries)
         self.assertEqual(entries["!/swarm"]["room_status"], "ambiguous")
         self.assertEqual(entries["!/swarm 1"]["room_status"], "ambiguous")
+
         self.assertIn("!/swarm 1", entries["!/swarm"]["duplicate_conflicts"])
         self.assertEqual(
             entries["!/INBOX"]["local_governing_surface"]["path"],
