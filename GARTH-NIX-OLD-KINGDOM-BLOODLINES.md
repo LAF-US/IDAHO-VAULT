@@ -133,7 +133,7 @@ The Charter bloodline system connects to multiple lineage and power frameworks. 
 
 ## Wikilinks Network
 
-```
+```text
                     [[BREED-REPORT]]
                            ↓
     [[ROYALTY]] ←→ [[BENE-GESSERIT]]
