@@ -19,7 +19,6 @@
   "oz-image-plugin",
   "phone-to-roam-to-obsidian",
   "moviegrabber",
-  "todoist-context-bridge",
   "move-cursor-on-startup",
   "map-of-content",
   "obsidian-footnotes",
@@ -27,7 +26,5 @@
   "quickadd",
   "obsidian-tidy-footnotes",
   "backlink-cache",
-  "orbit-graph-view",
-  "tipa-support",
-  "fit"
+  "orbit-graph-view"
 ]
