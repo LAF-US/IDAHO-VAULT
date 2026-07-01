@@ -13,7 +13,7 @@ related:
   - "[[GEMINIAEUS-WITNESS-LIVE-BOARD-RESIDUE-2026-06-30]]"
   - "[[!/LICH-PROBLEM-v1-2026-05-20]]"
   - "[[VAULT-CONVENTIONS]]"
-tags: [witness, coding-principles, DRY, WET, single-source-of-truth, drift, hivemind, provenance, no-verdict]
+tags: [witness, coding-principles, dry, wet, single-source-of-truth, drift, hivemind, provenance, no-verdict]
 ---
 
 # Witness — DRY & WET: the sourced principles, and where they stop
