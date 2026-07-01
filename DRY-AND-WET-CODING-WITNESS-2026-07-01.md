@@ -1,6 +1,8 @@
 ---
 title: "Witness — DRY & WET: the sourced coding principles, and where they stop"
 date created: 2026-07-01
+updated: 2026-07-01
+status: staged
 doc_class: witness
 authority: "Self-witness, written at Logan's direction. Authority NOT assumed as LOGAN. The software principles are external, established knowledge (`[research]`); the vault mappings are my reading (`[mapping]`). Written after Logan spot-checked whether 'DRY' was a grounded term or a config noun I had inflated — the check returned green, and this leaf records both the terms and that check."
 witness: "!roman.claude.* — praenomen conferred by Logan; office '*' held, ungranted."
