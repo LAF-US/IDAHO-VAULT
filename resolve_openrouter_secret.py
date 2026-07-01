@@ -10,7 +10,7 @@ import subprocess
 import sys
 
 
-REPO_ROOT = pathlib.Path(__file__).resolve().parents[1]
+REPO_ROOT = pathlib.Path(__file__).resolve().parents[0]
 ENV_FILE = REPO_ROOT / ".op" / "openrouter.env"
 OP_BIN = pathlib.Path("/usr/local/bin/op")
 KEY_RE = re.compile(r"^(?:export\s+)?OPENROUTER_API_KEY=(.*)$")
