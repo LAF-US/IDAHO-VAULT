@@ -52,6 +52,7 @@ class WorkflowSecurityInvariantsTest(unittest.TestCase):
         self.assertEqual(
             steps["Fetch Dependabot metadata"]["uses"],
             "dependabot/fetch-metadata@ffa630c65fa7e0ecfa0625b5ceda64399aea1b36",
+
         )
         scope_run = steps["Exclude protected live surfaces from automatic merge"]["run"]
         for protected_path in (
@@ -78,6 +79,7 @@ class WorkflowSecurityInvariantsTest(unittest.TestCase):
             "submit-pypi",
         ):
             self.assertIn(context, gate_step["run"])
+
         enable_step = steps["Enable verified auto-merge"]
         self.assertIn("steps.scope.outputs.eligible == 'true'", enable_step["if"])
         self.assertIn("gh pr merge --auto --squash", enable_step["run"])
