@@ -34,8 +34,11 @@ To avoid loading failures (and remove the notification), modify your shell scrip
 
 A common approach is to wrap such logic in a conditional block that checks for the IDE's environment variable:
 
-```php
-if [ -z "$INTELLIJ_ENVIRONMENT_READER" ]; then...fi
+```bash
+if [ -z "$INTELLIJ_ENVIRONMENT_READER" ]; then
+  # Launched by the IDE’s environment reader — skip interactive shell setup.
+  return
+fi
 ```
 
 This ensures the script behaves correctly when run by the IDE’s background shell, while continuing to work normally in the terminal.
