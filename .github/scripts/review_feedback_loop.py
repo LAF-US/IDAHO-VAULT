@@ -17,9 +17,10 @@ Modes:
     branch protection are the trust gate that arming waited on (ARBORSCAPE IF 12),
     so arming a low-risk, thread-clear PR means only "merge once the required
     checks/reviews/threads pass," not "a human approved." Arming is gated by the
-    conservative eligibility (risk/low + grace + no blocking threads) AND a
-    protected-path guard; Dependabot keeps its own verified lane.
-  - enable-auto-merge: arms an eligible, non-protected-path PR for the merge queue.
+    conservative eligibility (risk/low + grace + no blocking threads). Protected paths
+    are no longer vetoed here — the CODEOWNERS hard gate enforces that. Dependabot keeps
+    its own verified lane.
+  - enable-auto-merge: arms an eligible PR for the merge queue.
     See AGENT-AUTOMERGE-REENABLED-2026-06-17.md for the recorded reversal.
   - verify-claim: compare an agent completion-claim comment against the PR's
     current `mergeable`, `mergeStateStatus`, draft state, and check rollup.
@@ -30,13 +31,29 @@ Modes:
 from __future__ import annotations
 
 import argparse
-import fnmatch
 import json
 import os
 import re
-import subprocess
 import sys
 from datetime import datetime, timedelta, timezone
+from pr_threads import (  # shared thread-analysis vocabulary (#600 §5)
+    ATTESTATION_DECISIONS,
+    BARE_RESOLVABLE_DISPOSITIONS,
+    _count_committable_suggestion_threads,
+    _thread_authors,
+    _thread_has_attested_look,
+    _thread_is_bot_only,
+    _thread_resolution_disposition,
+    _thread_resolved_by,
+)
+
+# Note: `_author_is_bot` and `_thread_has_committable_suggestion` also live in
+# pr_threads but are NOT imported here — the engine reaches them only transitively
+# (through `_thread_resolution_disposition`), so the engine's surface stays honest
+# to what it uses. Their unit tests reference them from pr_threads directly.
+
+from gh_cli import run as _run
+from pr_github import _fetch_pr, _graphql, _viewer_login
 
 
 APPLY_RE = re.compile(r"@copilot\b[\s\S]*?\bapply changes\b", re.IGNORECASE)
@@ -46,7 +63,8 @@ DEFAULT_GRACE_MINUTES = 30
 # queue now IS that gate — a PR only merges once its required checks, reviews, and
 # thread-resolution pass, regardless of who armed it (ARBORSCAPE IF 12 satisfied).
 # Arming stays conservative: eligibility below requires risk/low + grace + no blocking
-# threads, and callers additionally refuse to arm protected/governance paths. This flag
+# threads. Protected-path gating moved to the CODEOWNERS hard gate (a merge can't land on
+# an owned path without owner review), so the engine no longer vetoes it. This flag
 # is the kill-switch — set False to fail-close arming again.
 AGENT_AUTO_MERGE_ENABLED = True
 
@@ -91,24 +109,13 @@ AUTO_MERGE_AUTHZ_FRAGMENTS = (
     "Resource not accessible by integration (enablePullRequestAutoMerge)",
 )
 
-# Paths that must NOT be auto-armed: governance, agent scaffolding, and the CI
-# surfaces that gate everything else. A PR touching any of these waits for human
-# review. Broader than auto-merge-rhythm.yml's sync-bot list on purpose — the
-# whole of `.github/` is CODE-AUTHORITY-reviewed, so the entire automation surface
-# is protected, not just workflows/scripts. fnmatch globs: "*" matches within a
-# path segment AND across "/", so ".github/*" covers nested files.
-PROTECTED_PATH_PATTERNS: tuple[str, ...] = (
-    ".github/*",
-    ".codex/*",
-    ".openclaw/*",
-    "AGENTS.md",
-    "CONSTITUTION.md",
-    "DECISIONS.md",
-    "VAULT-CONVENTIONS.md",
-    "swarm.json",
-    "SPEC-CONNECTOR-HUB-2026-04-09.md",
-    "!/*",
-)
+# Protected-path gating is no longer done here. A hand-maintained glob list was one of
+# three drifting, fail-open re-implementations of "these paths need a human" (K1/#627,
+# K2/#628). The single source of that truth is now CODEOWNERS, enforced as a HARD GATE by
+# the branch ruleset (`require_code_owner_review: true`, set by Logan): GitHub blocks the
+# merge of any owned-path PR until the owner reviews — un-bypassable, regardless of whether
+# this engine armed it. So the engine no longer second-guesses protection; arming a
+# protected PR is harmless because the gate, not a soft list, decides what actually merges.
 
 LABEL_SPECS: dict[str, tuple[str, str]] = {
     DEFAULT_AUTO_MERGE_LABEL: (
@@ -146,17 +153,6 @@ LABEL_SPECS: dict[str, tuple[str, str]] = {
 }
 
 
-def _run(cmd: list[str], check: bool = True) -> subprocess.CompletedProcess[str]:
-    result = subprocess.run(cmd, capture_output=True, text=True)
-    if check and result.returncode != 0:
-        raise RuntimeError(
-            f"Command failed ({result.returncode}): {' '.join(cmd)}\n"
-            f"stdout:\n{result.stdout}\n"
-            f"stderr:\n{result.stderr}"
-        )
-    return result
-
-
 def _auto_merge_state(owner: str, repo: str, pr_number: int) -> tuple[bool, bool]:
     """Return ``(auto_merge_enabled, in_merge_queue)`` for the PR.
 
@@ -191,91 +187,110 @@ def _auto_merge_state(owner: str, repo: str, pr_number: int) -> tuple[bool, bool
     return (enabled, queued)
 
 
+def _pr_node_id(owner: str, repo: str, pr_number: int) -> str | None:
+    """The PR's GraphQL node id (required by enqueuePullRequest). None if it can't be read
+    (fail-open: the caller then skips the explicit enqueue and relies on armed auto-merge)."""
+    try:
+        data = _graphql(
+            """
+            query($owner:String!, $name:String!, $number:Int!) {
+              repository(owner: $owner, name: $name) {
+                pullRequest(number: $number) { id }
+              }
+            }
+            """,
+            owner=owner,
+            name=repo,
+            number=pr_number,
+        )
+    except (RuntimeError, ValueError):
+        return None
+    return ((data.get("repository") or {}).get("pullRequest") or {}).get("id")
+
+
+def _enqueue_pr(node_id: str) -> tuple[bool, str | None]:
+    """Add the PR to the merge queue via the ``enqueuePullRequest`` mutation — the action that
+    actually puts a PR in the queue, DISTINCT from ``enablePullRequestAutoMerge`` ("merge when
+    ready"). Best-effort: never raises.
+
+    Returns a tri-state ``(enqueued, error)`` so the caller can tell a benign delay from a real
+    failure:
+
+      * ``(True, None)``  — enqueued (a merge-queue entry id came back).
+      * ``(False, None)`` — benign: the PR is not yet queue-ready (required checks still running,
+        not mergeable, or the base branch has no merge queue). GitHub returns no entry; the armed
+        auto-merge enqueues it when it goes green. NOT an error.
+      * ``(False, str)``  — a real failure (auth/permission/API error from the mutation), worth
+        surfacing because an armed PR that silently never enqueues is exactly the bug this fixes."""
+    try:
+        data = _graphql(
+            "mutation($pr:ID!){ enqueuePullRequest(input:{pullRequestId:$pr})"
+            " { mergeQueueEntry { id } } }",
+            pr=node_id,
+        )
+    except (RuntimeError, ValueError) as exc:
+        return (False, str(exc))
+    entry = (((data.get("enqueuePullRequest") or {}).get("mergeQueueEntry")) or {}).get("id")
+    if entry:
+        return (True, None)
+    return (False, None)  # not queue-ready yet — benign; armed auto-merge enqueues it when green
+
+
 def _arm_auto_merge(owner: str, repo: str, pr_number: int) -> tuple[bool, str | None]:
-    """Enable merge-queue auto-merge for the PR and ensure it actually enqueues.
+    """Arm auto-merge for the PR AND add it to the merge queue — two DISTINCT GitHub actions:
 
-    Returns ``(armed, error)``. ``armed`` is True when auto-merge is on and, for a
-    ready PR, the enqueue transition has been (re-)fired."""
-    # On a merge-queue repo, `gh pr merge --auto` only calls
-    # enablePullRequestAutoMerge. Re-enabling it on a PR that ALREADY has
-    # auto-merge is an idempotent no-op ("! The merge strategy for main is set by
-    # the merge queue", exit 0) that never re-fires the ready-transition which
-    # actually enqueues the PR — so a PR armed while it was blocked never enters
-    # the queue when it later goes green (verified on #508). If auto-merge is on
-    # but the PR is NOT yet queued, toggle off->on to re-fire the transition. If
-    # it is already queued, leave it alone — disabling would evict it and restart
-    # its queue run.
+      1. **enablePullRequestAutoMerge** (`gh pr merge --auto`) — records "merge when ready."
+         On a merge-queue repo this ALONE does not put the PR in the queue.
+      2. **enqueuePullRequest** (GraphQL) — the action that actually adds the PR to the merge
+         queue. This is the half that was missing: arming-only left a ready PR sitting
+         un-queued (the #508 symptom) because nothing ever called enqueue.
+
+    Returns ``(armed, error)``. ``armed`` is True once auto-merge is on (the floor). The enqueue
+    is best-effort: a not-yet-ready PR can't be enqueued, and the armed auto-merge enqueues it
+    when it goes green — so a not-ready enqueue result is NOT treated as a failure. A *real*
+    enqueue failure (auth/API), however, IS surfaced as the error while still reporting armed=True,
+    so "armed but never queued" is no longer silent (callers already log this error)."""
     enabled, queued = _auto_merge_state(owner, repo, pr_number)
-    if enabled and queued:
-        return True, None
-    if enabled and not queued:
-        # Checked here: if the disable leg fails the PR stays armed and the
-        # `--auto` below is the idempotent no-op again — report the failure
-        # rather than falsely claim a successful re-arm.
+    if queued:
+        # Already in the queue — re-enqueuing would be a no-op (or an unwanted jump); leave it.
+        return (True, None)
+    if not enabled:
         try:
-            _disable_auto_merge(pr_number, check=True)
+            _run(
+                ["gh", "pr", "merge", str(pr_number), "--squash", "--delete-branch", "--auto"]
+            )
         except RuntimeError as exc:
-            return False, f"failed to disable existing auto-merge before re-arming: {exc}"
-    try:
-        _run(
-            [
-                "gh",
-                "pr",
-                "merge",
-                str(pr_number),
-                "--squash",
-                "--delete-branch",
-                "--auto",
-            ]
-        )
-    except RuntimeError as exc:
-        if not any(fragment in str(exc) for fragment in AUTO_MERGE_AUTHZ_FRAGMENTS):
-            raise
-        return (
-            False,
-            "GitHub Actions is not authorized to enable auto-merge on the protected base branch.",
-        )
-    return True, None
-
-
-def _pr_touches_protected_path(owner: str, repo: str, pr_number: int) -> bool:
-    """True if the PR changes any protected/governance/CI path (so it must NOT be
-    auto-armed). Fail-closed: if the changed-file list can't be fetched, treat the PR
-    as protected so a transient API failure never widens what gets armed."""
-    try:
-        result = _run(
-            [
-                "gh",
-                "api",
-                "--paginate",
-                f"repos/{owner}/{repo}/pulls/{pr_number}/files",
-                "--jq",
-                ".[].filename",
-            ]
-        )
-    except RuntimeError:
-        return True
-    for path in result.stdout.splitlines():
-        path = path.strip()
-        if not path:
-            continue
-        if any(fnmatch.fnmatch(path, pattern) for pattern in PROTECTED_PATH_PATTERNS):
-            return True
-    return False
+            if not any(fragment in str(exc) for fragment in AUTO_MERGE_AUTHZ_FRAGMENTS):
+                raise
+            return (
+                False,
+                "GitHub Actions is not authorized to enable auto-merge on the protected base branch.",
+            )
+    # Arming is only half the job — explicitly add it to the merge queue now.
+    node_id = _pr_node_id(owner, repo, pr_number)
+    if node_id:
+        enqueued, enqueue_error = _enqueue_pr(node_id)
+        if not enqueued and enqueue_error:
+            # Armed, but the explicit enqueue hit a REAL error (auth/API) — distinct from the
+            # benign "not queue-ready yet" case (which returns no error and is left for the
+            # armed auto-merge to enqueue when green). Surface it so the "armed but never
+            # queued" failure this PR fixes can't recur silently. Still armed=True.
+            return (True, f"auto-merge armed, but enqueue was rejected: {enqueue_error}")
+    # node_id None (fail-open) or benign not-ready: armed; auto-merge enqueues it when green.
+    return (True, None)
 
 
 def _maybe_arm_auto_merge(
     owner: str, repo: str, pr_number: int, state: dict[str, object]
 ) -> dict[str, object]:
     """Guarded arm: enable merge-queue auto-merge for a PR ONLY when it is eligible
-    (risk/low + grace + no blocking threads, per evaluate_review_state) AND touches no
-    protected path. Returns a small report; never raises for the ordinary not-eligible,
-    protected-path, or not-authorized cases. The merge queue + branch protection remain
-    the actual merge gate — this only presses the button."""
+    (risk/low + grace + no blocking threads, per evaluate_review_state). Returns a small
+    report; never raises for the ordinary not-eligible or not-authorized cases. Protected
+    paths are NOT vetoed here — the CODEOWNERS hard gate (require_code_owner_review) blocks
+    their merge regardless of arming; the merge queue + branch protection are the actual
+    merge gate, and this only presses the button."""
     if not bool(state.get("eligible_for_auto_merge")):
         return {"armed": False, "reason": "not eligible for auto-merge"}
-    if _pr_touches_protected_path(owner, repo, pr_number):
-        return {"armed": False, "reason": "protected/governance path — awaits human review"}
     armed, arm_error = _arm_auto_merge(owner, repo, pr_number)
     if armed:
         # Tag the PR `merge/auto` so the disable path (apply_review_state_projection,
@@ -296,70 +311,9 @@ def _maybe_arm_auto_merge(
                     f"disabled auto-merge to avoid an un-trackable armed PR: {exc}"
                 ),
             }
-    return {"armed": armed, "reason": None if armed else arm_error}
-
-
-def _graphql(query: str, **variables: object) -> dict:
-    cmd = ["gh", "api", "graphql", "-f", f"query={query}"]
-    for key, value in variables.items():
-        if isinstance(value, int):
-            cmd.extend(["-F", f"{key}={value}"])
-        else:
-            cmd.extend(["-f", f"{key}={value}"])
-    result = _run(cmd)
-    payload = json.loads(result.stdout or "{}")
-    errors = payload.get("errors")
-    if errors:
-        raise RuntimeError(f"GraphQL error(s): {json.dumps(errors, indent=2)}")
-    return payload.get("data", {})
-
-
-def _fetch_pr(owner: str, name: str, number: int) -> dict:
-    query = """
-    query($owner:String!, $name:String!, $number:Int!) {
-      repository(owner: $owner, name: $name) {
-        pullRequest(number: $number) {
-          number
-          url
-          body
-          state
-          createdAt
-          updatedAt
-          isDraft
-          reviewDecision
-          autoMergeRequest {
-            enabledAt
-          }
-          labels(first: 50) {
-            nodes { name }
-          }
-          reviewThreads(first: 100) {
-            pageInfo { hasNextPage }
-            nodes {
-              id
-              isResolved
-              isOutdated
-              resolvedBy { login }
-              comments(first: 100) {
-                pageInfo { hasNextPage }
-                nodes {
-                  author { login __typename }
-                  body
-                  url
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-    """
-    data = _graphql(query, owner=owner, name=name, number=number)
-    repo = data.get("repository") or {}
-    pr = repo.get("pullRequest")
-    if not pr:
-        raise RuntimeError(f"Pull request #{number} was not found in {owner}/{name}.")
-    return pr
+    # Pass arm_error through even when armed: a clean arm reports None, but an armed PR whose
+    # explicit enqueue was rejected carries that note so "armed but never queued" isn't silent.
+    return {"armed": armed, "reason": arm_error}
 
 
 def _resolve_thread(thread_id: str) -> None:
@@ -381,138 +335,6 @@ def _resolve_thread(thread_id: str) -> None:
 # own author, so a pasted or forged marker attributed to someone else cannot
 # fake a look. This layer RESOLVES NOTHING.
 LOOK_ATTESTATION_MARKER = "<!-- looked:"
-LOOK_ATTESTATION_RE = re.compile(
-    r"<!--\s*looked:\s*by=(?P<by>[A-Za-z0-9][A-Za-z0-9-]*(?:\[bot\])?)\s*;[^>]*-->"
-)
-
-# A GitHub committable suggestion is a fenced ```suggestion block in a review
-# comment body. It is the ONE reviewer finding a machine can apply deterministically
-# (via the applyReviewSuggestion mutation); everything else is prose that needs a
-# real fix. This detector is the engine's "can this be auto-applied?" signal.
-SUGGESTION_BLOCK_RE = re.compile(r"(?m)^\s*`{3,}\s*suggestion\b")
-
-
-def _thread_has_attested_look(thread: dict) -> bool:
-    """True if a looker has recorded a self-attested look in the thread.
-
-    Requires a structured attestation marker whose `by=` equals the comment's
-    own author, so incidental or forged marker text cannot spoof a look.
-    """
-    for comment in (thread.get("comments") or {}).get("nodes") or []:
-        login = ((comment.get("author") or {}).get("login") or "").strip()
-        match = LOOK_ATTESTATION_RE.search(comment.get("body") or "")
-        if match and login and match.group("by") == login:
-            return True
-    return False
-
-
-# Layer B (#399): an agent's resolution is legitimate only if it carries a
-# recorded attestation. These are the pure building blocks of that act — the
-# bot-only eligibility predicate and the attestation-body builder. They WRITE
-# NOTHING and are not invoked anywhere; the resolve-capable wiring lands later.
-#
-# Standing model: any direct-write agent may attest-and-resolve a thread whose
-# every author is a bot (advisory OR signal — no denylist), never a human-authored
-# thread, and never on a CHANGES_REQUESTED review. The PR-level CHANGES_REQUESTED
-# guard belongs with the future resolve path; bot-only eligibility lives here.
-ATTESTATION_DECISIONS: frozenset[str] = frozenset({"addressed", "advisory", "wontfix"})
-
-
-def _author_is_bot(author: dict) -> bool:
-    """True when a review-comment author is a GitHub App / bot actor, not a human."""
-    if (author.get("__typename") or "") == "Bot":
-        return True
-    return (author.get("login") or "").endswith("[bot]")
-
-
-def _thread_is_bot_only(thread: dict) -> bool:
-    """True when every author of the thread is a bot (>=1 author, no human).
-
-    Eligibility for agent attest-and-resolve under the standing model: bot-authored
-    threads only. A single human participant — or no participants — is ineligible.
-    """
-    comments = (thread.get("comments") or {}).get("nodes") or []
-    authors = [(comment.get("author") or {}) for comment in comments]
-    if not authors:
-        return False
-    return all(_author_is_bot(author) for author in authors)
-
-
-def _thread_resolved_by(thread: dict) -> str:
-    """Login of the actor who resolved the thread, or '' if unresolved/unknown.
-
-    GitHub exposes `PullRequestReviewThread.resolvedBy`, so a backfill can tell whether
-    *this engine's identity* resolved a thread — and never witness another actor's resolve.
-    """
-    actor = thread.get("resolvedBy") or {}
-    return (actor.get("login") or "").strip()
-
-
-def _thread_has_committable_suggestion(thread: dict) -> bool:
-    """True if any comment in the thread carries a GitHub ```suggestion block.
-
-    These are the only reviewer findings applyable deterministically — GitHub commits
-    the suggested diff directly, no generative interpretation. Everything else is prose.
-    """
-    for comment in (thread.get("comments") or {}).get("nodes") or []:
-        if SUGGESTION_BLOCK_RE.search(comment.get("body") or ""):
-            return True
-    return False
-
-
-# Resolution disposition (#399 engine): route ONE unresolved thread to *how it gets
-# resolved* — never "dispose of a bot thread." Reviewer threads are caught errors; the
-# gate exists to make agents fix them before main, so a bare attest-and-resolve of a
-# substantive bot finding is the rubber-stamp the gate exists to prevent.
-#   - needs-human        : a human authored it, OR bot-only proof is incomplete (a human
-#                          may lie beyond a truncated comment page) — judgment required.
-#   - looked             : a sealed attestation is already present (recoverable).
-#   - outdated-resolvable: bot-only and GitHub marks it outdated (referenced lines moved)
-#                          — a genuine look may attest-and-resolve it as stale.
-#   - apply-suggestion   : carries a committable ```suggestion — apply deterministically.
-#   - needs-fix          : bot-only substantive finding, no mechanical fix — the authoring
-#                          agent must fix it for real (dispatch), never stamp it closed.
-def _thread_resolution_disposition(thread: dict) -> str:
-    """Route one unresolved thread to its deterministic resolution disposition. Pure."""
-    page_info = (thread.get("comments") or {}).get("pageInfo")
-    page_complete = isinstance(page_info, dict) and page_info.get("hasNextPage") is False
-    if not _thread_is_bot_only(thread):
-        return "needs-human"
-    if not page_complete:
-        return "needs-human"  # bot-only unprovable: a human could lie beyond the page
-    if _thread_has_attested_look(thread):
-        return "looked"
-    if thread.get("isOutdated"):
-        return "outdated-resolvable"  # referenced lines moved; can't apply a suggestion
-    if _thread_has_committable_suggestion(thread):
-        return "apply-suggestion"
-    return "needs-fix"
-
-
-# Dispositions a bare attest-and-resolve apply pass may clear WITHOUT a fix:
-# genuinely stale (outdated) or already-attested. needs-fix and apply-suggestion are
-# NOT here — they require a real fix / an applied suggestion, not a bare resolve.
-BARE_RESOLVABLE_DISPOSITIONS: frozenset[str] = frozenset({"outdated-resolvable", "looked"})
-
-
-def _count_committable_suggestion_threads(pr: dict) -> int:
-    """Number of unresolved threads on `pr` whose disposition is `apply-suggestion` —
-    bot-only, page-complete, current (not outdated), carrying a committable ```suggestion.
-
-    This is the PROPOSE-ONLY signal (Logan's #3 decision, 2026-06-19): the engine surfaces
-    these — GitHub has no public apply-suggestion API, so committing the diff would mean the
-    engine rewriting files on a contributor branch, which we deliberately do NOT do here.
-    It only flags that ready-to-apply suggestions exist; a human or the authoring agent
-    applies them (one-click "Commit suggestion" in the UI), then the witnessed resolve
-    clears the thread on the next event. Surfacing is safe on every path (no write), so it
-    is NOT protected-path-gated."""
-    count = 0
-    for thread in (pr.get("reviewThreads") or {}).get("nodes") or []:
-        if thread.get("isResolved"):
-            continue
-        if _thread_resolution_disposition(thread) == "apply-suggestion":
-            count += 1
-    return count
 
 
 def _build_attestation(
@@ -598,21 +420,6 @@ def _add_thread_reply(thread_id: str, body: str) -> None:
     }
     """
     _graphql(mutation, threadId=thread_id, body=body)
-
-
-def _viewer_login() -> str:
-    """The login of the authenticated actor the GraphQL calls post as.
-
-    The attestation is *self*-attested: the detector requires the marker's `by=`
-    to equal the comment's own author. Since `_add_thread_reply` posts as this
-    actor, a `looker` that differs from it would yield an undetectable attestation,
-    so the resolve path verifies them against each other before writing.
-    """
-    viewer = _graphql("query { viewer { login } }").get("viewer") or {}
-    login = (viewer.get("login") or "").strip()
-    if not login:
-        raise RuntimeError("Could not determine the authenticated GitHub actor.")
-    return login
 
 
 def _fetch_thread(thread_id: str) -> dict | None:
@@ -1001,13 +808,6 @@ def _parse_iso_datetime(raw: str | None) -> datetime | None:
     return parsed
 
 
-def _thread_authors(thread: dict) -> set[str]:
-    authors: set[str] = set()
-    for comment in (thread.get("comments") or {}).get("nodes") or []:
-        author = (comment.get("author") or {}).get("login")
-        if author:
-            authors.add(author)
-    return authors
 
 
 def _parse_body_marker_value(body: str, marker: str) -> str | None:
@@ -1295,26 +1095,15 @@ def _build_reconciliation_report(
         current_labels = set(state["labels"])
         auto_merge_enabled = bool((pr.get("autoMergeRequest") or {}).get("enabledAt"))
         arm_error = None
-        # Evaluate the protected-path guard ONCE, before promotion: a governance/CI/
-        # scaffolding PR must not even be labelled `merge/auto` or get a "promoting"
-        # comment — it waits for a human. (Only worth the API call when otherwise armable.)
-        touches_protected_path = False
-        if (
-            AGENT_AUTO_MERGE_ENABLED
-            and state["eligible_for_auto_merge"]
-            and not bool(state["merge_blocked"])
-        ):
-            touches_protected_path = _pr_touches_protected_path(owner, repo, pr_number)
-            if touches_protected_path:
-                arm_error = "protected/governance path — awaits human review"
-
+        # Protected paths are not vetoed here anymore — the CODEOWNERS hard gate blocks
+        # their merge regardless of label/arm (K1/#627, K2/#628 retired in favor of the
+        # single, enforced source). Promotion keys only on eligibility + no merge block.
         if (
             AGENT_AUTO_MERGE_ENABLED
             and
             state["eligible_for_auto_merge"]
             and not bool(state["merge_blocked"])
             and DEFAULT_AUTO_MERGE_LABEL not in current_labels
-            and not touches_protected_path
         ):
             if DEFAULT_REVIEW_PENDING_LABEL in current_labels:
                 current_labels.discard(DEFAULT_REVIEW_PENDING_LABEL)
@@ -1335,7 +1124,6 @@ def _build_reconciliation_report(
             DEFAULT_AUTO_MERGE_LABEL in current_labels
             and bool(state["eligible_for_auto_merge"])
             and not bool(state["merge_blocked"])
-            and not touches_protected_path
         ):
             # No `and not auto_merge_enabled` guard: an already-armed PR may be
             # armed-but-not-queued (the stuck case), and _arm_auto_merge is
@@ -1575,10 +1363,7 @@ def enable_auto_merge(args: argparse.Namespace) -> int:
         and bool(state["eligible_for_auto_merge"])
         and not bool(state["merge_blocked"])
     ):
-        if _pr_touches_protected_path(args.owner, args.repo, args.pr_number):
-            arm_error = "protected/governance path — awaits human review"
-        else:
-            enabled, arm_error = _arm_auto_merge(args.owner, args.repo, args.pr_number)
+        enabled, arm_error = _arm_auto_merge(args.owner, args.repo, args.pr_number)
 
     print(
         json.dumps(
