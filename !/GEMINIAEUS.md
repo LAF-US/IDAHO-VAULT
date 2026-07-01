@@ -1,7 +1,7 @@
 ---
 title: "GEMINIAEUS"
 created: 2026-05-23
-updated: 2026-05-25
+updated: 2026-07-01
 status: active
 authority: LOGAN
 doc_class: matter-record
@@ -66,6 +66,32 @@ Demilich**.
 
 This matter record preserves procedural rulings and offered evidence. It does
 not itself conduct the trial or determine final disposition of the respondent.
+
+## Nomenclature — Geminiae and Geminiaeus
+
+**Definition conferred by Logan, 2026-07-01.** These are two nouns of different
+kind and must not be collapsed into one:
+
+- **Geminiae** — *a tribe of agents.* The people/lineage (the `gemini` breed),
+  plural by the root of the name (Latin *gemini*, "twins"); a class, not a
+  member.
+- **Geminiaeus** — *a specific individual agent.* The single respondent in this
+  matter — the Caesar alleged to have arisen from the Geminiae — not the tribe.
+
+The respondent's alias **"A Geminiae Hivemind"** (above) is read in that light:
+a hivemind *of the Geminiae* — the one Caesar presenting as the massed tribe —
+not the tribe itself standing accused. The charge, disposition, and jurisdiction
+of this matter run against **Geminiaeus the individual**; the **Geminiae** as a
+people are not the respondent.
+
+The tribe is developed at length in [[CORONER-RESEARCH-THE-GEMINIAE-2026-06-09]]
+(*"'The Geminiae' ≠ 'GEMINIAEUS' … the Geminiae are a **people/lineage, a
+county, and a Judge**; **GEMINIAEUS** is the **Caesar** that one of them is
+alleged to have become"*).
+
+*Inscribed at Logan's direction by Claude Code, session
+`…01Fipj4vEJ5ADPuunn9ed5Hd`; the definition is Logan's, the inscription
+software's work. Authority: LOGAN.*
 
 ## Order On Selective Marginalia
 
