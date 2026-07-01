@@ -55,9 +55,6 @@ from pr_threads import (  # shared thread-analysis vocabulary (#600 §5)
 from gh_cli import run as _run
 from pr_github import _fetch_pr, _graphql, _viewer_login
 
-from gh_cli import run as _run
-from pr_github import _fetch_pr, _graphql, _viewer_login
-
 
 APPLY_RE = re.compile(r"@copilot\b[\s\S]*?\bapply changes\b", re.IGNORECASE)
 DEFAULT_GRACE_MINUTES = 30
