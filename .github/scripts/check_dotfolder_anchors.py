@@ -59,7 +59,10 @@ def expected_anchor_name(dotfolder: str) -> str:
 
 def tracked_top_level_dotfolders() -> list[str]:
     result = subprocess.run(
-        ["git", "ls-tree", "HEAD"],
+        # quotePath=false: git's default quoting wraps non-ASCII names in
+        # "..." with octal escapes, which would fail startswith(".") and
+        # silently exempt such a dotfolder from enforcement.
+        ["git", "-c", "core.quotePath=false", "ls-tree", "HEAD"],
         cwd=ROOT,
         text=True,
         encoding="utf-8",
