@@ -55,18 +55,23 @@ jobs:
           build-mode: none
         - language: python
           build-mode: none
+        - language: javascript-typescript
+          build-mode: none
         # When a new language gets real first-party source code in this vault
         # OUTSIDE of agent/plugin dotfolder trees, add a matrix entry here
         # AND extend paths-ignore in .github/codeql/codeql-config.yml for any
         # vendored trees of that language.
         #
-        # javascript-typescript is intentionally NOT in the matrix even
-        # though 11 .ts/.js/.mjs files exist in the repo — they all live in
-        # .codex/, .openclaw/, .obsidian/, or .claude/plugins/marketplaces/,
-        # which CodeQL's JS extractor silently filters out as dotfolders.
-        # The historical /language:javascript-typescript analyses on main
-        # (last upload 2026-04-27) were a parallel coverage drift that has
-        # been cleaned up.
+        # javascript-typescript is in the matrix because the live Main
+        # Ruleset requires an "Analyze (javascript-typescript)" status check
+        # and the merge queue only runs THIS workflow on merge_group refs —
+        # GitHub's default-setup scan does not run there, so without this
+        # entry every queue attempt starves and dequeues with CI_TIMEOUT
+        # (the same orphan-analysis wedge as PR #390). The root stubs
+        # !.js / !.ts (added 2026-06-19) exist precisely so the JS extractor
+        # sees real non-dotfolder source instead of erroring with "no source
+        # code seen during build"; all other .ts/.js/.mjs files live in
+        # dotfolder trees the extractor filters out.
         #
         # Do not add a language whose only sources are in dotfolders, are
         # vendored, or are backup content — that produces orphan CodeQL
@@ -81,7 +86,7 @@ jobs:
         # your codebase is analyzed, see https://docs.github.com/en/code-security/code-scanning/creating-an-advanced-setup-for-code-scanning/codeql-code-scanning-for-compiled-languages
     steps:
     - name: Checkout repository
-      uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+      uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
 
     # Add any setup steps before running the `github/codeql-action/init` action.
     # This includes steps like installing compilers or runtimes (`actions/setup-node`
@@ -91,7 +96,7 @@ jobs:
 
     # Initializes the CodeQL tools for scanning.
     - name: Initialize CodeQL
-      uses: github/codeql-action/init@7211b7c8077ea37d8641b6271f6a365a22a5fbfa # v4
+      uses: github/codeql-action/init@8aad20d150bbac5944a9f9d289da16a4b0d87c1e # v4
       with:
         languages: ${{ matrix.language }}
         build-mode: ${{ matrix.build-mode }}
@@ -121,7 +126,7 @@ jobs:
         exit 1
 
     - name: Perform CodeQL Analysis
-      uses: github/codeql-action/analyze@7211b7c8077ea37d8641b6271f6a365a22a5fbfa # v4
+      uses: github/codeql-action/analyze@8aad20d150bbac5944a9f9d289da16a4b0d87c1e # v4
       with:
         category: "/language:${{matrix.language}}"
 
