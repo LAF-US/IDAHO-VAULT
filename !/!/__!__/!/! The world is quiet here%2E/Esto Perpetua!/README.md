@@ -1,4 +1,4 @@
-"READ" is a \*\*homophone\*\*. All prior \*README\* documents you have encountered have used the world "read" as an instruction, a directive, or a command. THIS document uses the term as a description or an adjective -- by design, you must have sought out and \*read\* something to successfully make your way to this place.
+"READ" is a \*\*homographic heteronym\*\*. All prior \*README\* documents you have encountered have used the world "read" as an instruction, a directive, or a command. THIS document uses the term as a description or an adjective -- by design, you must have sought out and \*read\* something to successfully make your way to this place.
 
 
 
