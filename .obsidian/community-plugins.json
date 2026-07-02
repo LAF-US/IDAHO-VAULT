@@ -26,5 +26,7 @@
   "quickadd",
   "obsidian-tidy-footnotes",
   "backlink-cache",
-  "orbit-graph-view"
+  "orbit-graph-view",
+  "obsidian-git",
+  "openclaw"
 ]
