@@ -1,0 +1,96 @@
+name: Attest Resolve — disposition one bot review thread (Layer B2)
+
+# Thin workflow_dispatch wrapper around the EXISTING review_feedback_loop.py `attest-resolve`
+# command (#399 Layer B2). It dispositions ONE explicit, bot-authored review thread on ONE PR
+# with a recorded github-actions[bot] attestation, then resolves it via GraphQL
+# resolveReviewThread. Bounded by design: a single PR + single thread id, so it cannot walk the
+# backlog or cascade. It NEVER merges and NEVER arms auto-merge (attest_and_resolve does neither).
+#
+# Adds NO new logic — it only exposes the existing, tested command to manual dispatch, exactly the
+# way engage-outdated.yml exposes engage-outdated. Dry-run by default; dispatch apply=true to write.
+# workflow_dispatch only — no schedule, so no CONSTITUTION §VI cron-conflict to check.
+
+on:
+  workflow_dispatch:
+    inputs:
+      pr:
+        description: 'PR number the thread lives on'
+        required: true
+        type: string
+      thread_id:
+        description: 'GraphQL review-thread node id (e.g. PRRT_...) to disposition'
+        required: true
+        type: string
+      decision:
+        description: 'Attestation decision recorded on the resolve'
+        required: true
+        type: choice
+        options:
+          - addressed
+          - advisory
+          - wontfix
+      rationale:
+        description: 'Short human-readable reason recorded in the attestation reply'
+        required: false
+        default: ''
+        type: string
+      apply:
+        description: 'true = post attestation + resolve; false = dry-run (report only)'
+        required: false
+        default: 'false'
+        type: choice
+        options:
+          - 'false'
+          - 'true'
+
+permissions:
+  # resolveReviewThread is gated on Contents: Read & Write (NOT pull-requests) — GitHub community
+  # discussion #44650; engage-outdated.yml records the same hard-won requirement. pull-requests:
+  # write is for reading the thread and posting the attestation reply.
+  contents: write
+  pull-requests: write
+
+jobs:
+  attest-resolve:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout trusted workflow surfaces
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          persist-credentials: false
+
+      - name: Attest-resolve one thread
+        # All ${{ }} dispatch inputs pass through env, never interpolated into the run script
+        # (template-injection safety — same pattern as engage-outdated.yml). --looker is omitted
+        # so the witness defaults to the authenticated actor (github-actions[bot]).
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          OWNER: ${{ github.repository_owner }}
+          REPO: ${{ github.event.repository.name }}
+          PR: ${{ github.event.inputs.pr }}
+          THREAD_ID: ${{ github.event.inputs.thread_id }}
+          DECISION: ${{ github.event.inputs.decision }}
+          RATIONALE: ${{ github.event.inputs.rationale }}
+          APPLY: ${{ github.event.inputs.apply }}
+        run: |
+          args=(attest-resolve --owner "$OWNER" --repo "$REPO" --pr-number "$PR" --thread-id "$THREAD_ID" --decision "$DECISION")
+          if [ -n "$RATIONALE" ]; then args+=(--rationale "$RATIONALE"); fi
+          if [ "$APPLY" = "true" ]; then args+=(--apply); fi
+          python3 .github/scripts/review_feedback_loop.py "${args[@]}" | tee attest-resolve.json
+
+      - name: Publish summary
+        env:
+          APPLY: ${{ github.event.inputs.apply }}
+          PR: ${{ github.event.inputs.pr }}
+          DECISION: ${{ github.event.inputs.decision }}
+        run: |
+          {
+            echo '## Attest Resolve — single-thread disposition'
+            echo ''
+            echo "> apply = ${APPLY}  ·  PR #${PR}  ·  decision = ${DECISION}  ·  witnessed (github-actions[bot]); never merges"
+            echo ''
+            echo '```json'
+            cat attest-resolve.json
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
