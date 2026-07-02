@@ -173,7 +173,8 @@ scattered ones"); token cost and coordination overhead scale with count.
 feature branches into staging first, run tests, resolve conflicts, then promote the clean result
 to `main` ("evidence-based merges").
 
-**`AGENTS.md` is the emerging cross-tool single source of truth.** Originated by OpenAI, now under
+**`AGENTS.md` is an emerging cross-tool coordination surface** — a shared instruction pointer, not
+doctrine in itself; the vault remains the authoritative memory surface. Originated by OpenAI, now under
 the Linux Foundation's Agentic AI Foundation; read natively by Codex, Copilot, Cursor, Windsurf,
 Amp, Devin, Gemini CLI, and others (60k+ projects). Keep it focused — "if your config file is over
 500 lines, most of it is being ignored; a focused 50-line file outperforms a sprawling 1,000-line
