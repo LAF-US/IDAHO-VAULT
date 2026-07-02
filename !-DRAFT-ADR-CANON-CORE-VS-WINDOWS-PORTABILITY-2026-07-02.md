@@ -1,9 +1,10 @@
 ---
-title: "DRAFT ADR - Canon Core vs NETWEB Portability (The Trailing Period)"
+title: "ADR - Canon Core vs NETWEB Portability (The Trailing Period)"
 date created: 2026-07-02
-authority: developer-agent (Hyperagent, Claude Opus 4.8); account of record loganfinney27
+date adjudicated: 2026-07-02
+authority: developer-agent (Hyperagent, Claude Opus 4.8); account of record loganfinney27; adjudication and inscription by LOGAN
 doc_class: proposal
-status: draft
+status: adjudicated (Option C — inscribed by Logan 2026-07-02)
 related:
   - "VAULT-CONVENTIONS.md"
   - "CONSTITUTION.md"
@@ -18,9 +19,9 @@ related:
   - "PR #563"
 ---
 
-# DRAFT ADR - Canon Core vs NETWEB Portability (The Trailing Period)
+# ADR - Canon Core vs NETWEB Portability (The Trailing Period)
 
-*Filed 2026-07-02 for Logan's review. Draft only. Not live doctrine. I propose; Logan inscribes.*
+*Filed 2026-07-02 for Logan's review; adjudicated by Logan the same day. I proposed; Logan inscribed.*
 
 > "The world is quiet here. But inside the machine, the first thunder rolls."
 > — NETWEB-CrewAI Alignment Protocol, 2026-04-04
@@ -40,6 +41,33 @@ vault's engine room is a Windows desktop). This ADR lays out what the vault alre
 says, what #563 verifiably does, the blast radius, and five options with trade-offs.
 It decides nothing: the conflict is between two Logan-authored laws, and only Logan
 adjudicates.
+
+## Adjudication (2026-07-02)
+
+**Logan chose Option C and performed the inscription himself** on `logan/obsidian` —
+the decision and the hand are both his. Verified against head `a30c58b6`:
+
+- The golden-path directory is re-inscribed with a trailing **U+FF0E FULLWIDTH FULL
+  STOP**: `!/!/__!__/!/! The world is quiet here．` — and the inner extensionless
+  sentence-file `Esto Perpetua!/! The world is quiet here．` carries it likewise. The
+  ASCII-period form is absent.
+- **The hybrid:** the canonical README's GOLDEN PATH line and Sierpiński diagram now use
+  `．`, matching the on-disk path codepoint-for-codepoint (so path references and links
+  resolve) — while the *prose motto* keeps its true ASCII period. The sentence stays a
+  sentence in text; only the path wears the Windows-legal look-alike.
+- **Verified consequences:** `check_portable_paths.py` over the full #563 diff (8,929
+  changed paths, `747bc74a..a30c58b6`) exits 0 — **no carve-out required**; NETWEB is
+  satisfied rather than excepted. The path is Windows-legal: the engine room can pull,
+  and the cross-platform-smoke `windows-latest` leg can check out. No sparse rule, no
+  mirror, no `protectNTFS` relaxation.
+- **Residual cautions** (from the companion survey, now live): path references to the
+  canon must copy the U+FF0E form exactly — an ASCII-period reference will not resolve;
+  and tools that use U+FF0E as their own escape character (rclone's Windows encoding)
+  have documented round-trip edge cases (rclone #7456, #7760).
+- The `DOCKET.md` / `DENOUEMENT.txt` / `Logan.txt` intent-check flagged below remains
+  open; it is independent of the punctuation decision.
+
+Options A, B, D, and E below stand as the record of the deliberation.
 
 ## What the Vault Already Says
 
@@ -153,7 +181,7 @@ mirroring has precedent in spirit.)
   failure — Windows still cannot materialize the dotted original, so A's sparse
   exclusion is required *anyway*, making B strictly additive complexity.
 
-### C — Homoglyph terminator (one portable path, altered codepoint)
+### C — Homoglyph terminator (one portable path, altered codepoint) — **CHOSEN**
 Replace the trailing `U+002E` with a Windows-legal look-alike: `U+2024` ONE DOT
 LEADER `․` or `U+FF0E` FULLWIDTH FULL STOP `．`. Reads as the completed sentence;
 materializes everywhere; single path.
@@ -197,10 +225,10 @@ Under A–D, `check-paths` needs a narrow exemption for the golden-path prefix i
 a governance edit around the canon, Logan's explicit call. Under E it is unnecessary.
 In every case it fixes only the gate, never the materialization.
 
-## Recommendation (non-binding)
+## Recommendation (non-binding — superseded by the Adjudication above)
 
-This is an adjudication between two of Logan's own laws; the recommendation is
-scaffolding, not a verdict.
+This was an adjudication between two of Logan's own laws; the recommendation below was
+scaffolding, not a verdict, and is preserved as written before the decision.
 
 - If the canon's meaning **requires the true period in the path**: **A + the
   carve-out** compromises the bytes least. The engine room losing local sight of the
@@ -215,8 +243,9 @@ scaffolding, not a verdict.
 
 ## Status
 
-**DRAFT — awaiting Logan's adjudication.** Nothing merged; no canon path, guard, or
-workflow touched. This note lives on the agent's proposal branch. On approval it
-would be inscribed at `!-ADR-CANON-CORE-VS-WINDOWS-PORTABILITY-2026-07-02.md` (or a
-name of Logan's choosing), and the chosen option pursued as separate, reviewable
-work.
+**ADJUDICATED — Option C, chosen and inscribed by Logan, 2026-07-02.** The inscription
+lives on `logan/obsidian` (head `a30c58b6` at verification) and reaches `main` when
+PR #563 merges. This note lives on the agent's proposal branch
+(`agent/adr-canon-core-portability`); its filename retains the `!-DRAFT-` prefix
+pending Logan's word on renaming it to `!-ADR-CANON-CORE-VS-WINDOWS-PORTABILITY-2026-07-02.md`
+at inscription into `main`. No guard carve-out was needed; no workflow was touched.
