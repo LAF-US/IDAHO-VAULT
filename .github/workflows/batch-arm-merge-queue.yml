@@ -18,8 +18,12 @@ name: Batch Arm Merge Queue
 #     enqueued only when the mutation returns a merge-queue entry id. A PR that is
 #     ALREADY in the queue (mergeQueueEntry present) is skipped, not re-enqueued —
 #     a redundant mutation GitHub may reject would otherwise be mis-counted as failed.
-#   - not yet ready: best-effort `--auto` arm so it merges once it goes green; a
-#     later sweep enqueues it via the mutation once it is CLEAN.
+#   - BEHIND (head out of date with base): the branch-update arm — merge base in
+#     (the automated form of the "Update branch" button) so the PR can recompute to
+#     CLEAN and a later pass enqueues it. Arm as a backstop too. DIRTY (a real merge
+#     conflict) is a different state, never reaches this arm, and is left for a human.
+#   - not yet ready (BLOCKED / UNKNOWN-after-retries / …): best-effort `--auto` arm so
+#     it merges once it goes green; a later sweep enqueues it via the mutation once CLEAN.
 #   - arm/enqueue refused with the workflows-permission error: bucketed on its
 #     own. Enabling auto-merge while a workflow-touching PR is still blocked can
 #     succeed (that is how auto-merge-engage arms them on open), but the Actions
@@ -85,7 +89,7 @@ jobs:
           MERGE_STATE_RETRIES: ${{ vars.MERGE_STATE_RETRIES }}
           MERGE_STATE_DELAY: ${{ vars.MERGE_STATE_DELAY }}
         run: |
-          enqueued=0; already_queued=0; armed_pending=0; needs_wf_token=0; failed=0; total=0
+          enqueued=0; already_queued=0; armed_pending=0; updated_behind=0; needs_wf_token=0; failed=0; total=0
           repo="$GITHUB_REPOSITORY"
 
           # An arm/enqueue failure is the workflows-permission case when gh says so
@@ -144,7 +148,12 @@ jobs:
           }
 
           while IFS= read -r pr; do
+            pr="${pr%$'\r'}"            # strip a trailing CR if the list ever carries one
             [ -z "$pr" ] && continue
+            # Defensive: ids come from `jq -r .number`, but never feed a non-numeric token to a
+            # PR URL or the typed GraphQL `number` arg if that upstream ever changes (salvaged
+            # from #549). A bad id would otherwise 404 and be mis-counted as a real failure.
+            case "$pr" in *[!0-9]*) echo "PR entry ignored — non-numeric id: '$pr'"; continue;; esac
             total=$((total + 1))
             url="https://github.com/$repo/pull/$pr"
             # Read mergeability, retrying past the lazy-computation UNKNOWN (see
@@ -214,13 +223,41 @@ jobs:
                 echo "  FAILED to enqueue #$pr: $(tr '\n' ' ' <"$err")"
                 failed=$((failed + 1))
               fi
+            elif [ "$state" = "BEHIND" ]; then
+              # The branch-update arm: BEHIND means the head is out of date with base
+              # (the #663 case that had to be cleared by hand with the "Update branch"
+              # button). Merge base in so the PR can recompute toward CLEAN; a later sweep
+              # or enqueue-on-checks then enqueues it. DIRTY (a real conflict) is its own
+              # state and never reaches here, so update-branch is only attempted when it
+              # can actually succeed.
+              if [ "$DRY_RUN" = "true" ]; then
+                echo "  DRY RUN: would update branch (BEHIND) #$pr"
+                updated_behind=$((updated_behind + 1)); rm -f "$err"; continue
+              fi
+              # PUT .../update-branch is the API behind the "Update branch" button. It
+              # creates a merge commit on the PR head (→ CI re-runs) and returns 202. A
+              # workflow-touching PR can still need the workflows-scoped PAT to push that
+              # commit, so the same is_wf_perm_failure bucketing applies.
+              if gh api --method PUT "repos/$repo/pulls/$pr/update-branch" >/dev/null 2>"$err"; then
+                echo "  updated branch (was BEHIND) #$pr — CI re-runs; a later pass enqueues it"
+                updated_behind=$((updated_behind + 1))
+                # Arm as a backstop so auto-merge is set once it goes CLEAN (enqueue-on-checks
+                # only recovers armed PRs). Idempotent if engage already armed it.
+                gh pr merge "$url" --repo "$repo" --auto --merge >/dev/null 2>&1 || true
+              elif is_wf_perm_failure "$err" "$pr"; then
+                echo "  needs workflows-scoped token #$pr (touches .github/workflows/**)"
+                needs_wf_token=$((needs_wf_token + 1))
+              else
+                echo "  FAILED to update branch #$pr: $(tr '\n' ' ' <"$err")"
+                failed=$((failed + 1))
+              fi
             else
               if [ "$DRY_RUN" = "true" ]; then
                 echo "  DRY RUN: would arm --auto #$pr (not yet ready: $state)"
                 armed_pending=$((armed_pending + 1)); rm -f "$err"; continue
               fi
-              # Not yet ready: best-effort arm so a later sweep enqueues it via
-              # the enqueuePullRequest mutation once it is CLEAN.
+              # Not yet ready (BLOCKED / UNKNOWN-after-retries / …): best-effort arm so a
+              # later sweep enqueues it via the enqueuePullRequest mutation once it is CLEAN.
               if gh pr merge "$url" --repo "$repo" --auto --merge 2>"$err"; then
                 echo "  armed (pending readiness) #$pr"
                 armed_pending=$((armed_pending + 1))
@@ -243,8 +280,19 @@ jobs:
             echo "- **enqueued (ready, via enqueuePullRequest): $enqueued**"
             echo "- already queued (skipped — no-op this run): $already_queued"
             echo "- armed, pending readiness: $armed_pending"
+            echo "- updated branch (was BEHIND): $updated_behind"
             echo "- needs workflows-scoped token (touches .github/workflows/**): $needs_wf_token"
             echo "- failed: $failed"
           } >> "$GITHUB_STEP_SUMMARY"
 
-          echo "Done: enqueued=$enqueued already_queued=$already_queued armed_pending=$armed_pending needs_wf_token=$needs_wf_token failed=$failed (of $total)"
+          echo "Done: enqueued=$enqueued already_queued=$already_queued armed_pending=$armed_pending updated_behind=$updated_behind needs_wf_token=$needs_wf_token failed=$failed (of $total)"
+
+          # Fail closed (salvaged from #549): if every considered PR landed in the FAILED bucket,
+          # a shared problem (token/permission regression, API outage) is far likelier than every
+          # PR being legitimately un-processable — surface it instead of a green false-success.
+          # needs_wf_token is an EXPECTED per-PR limitation (workflow-touching PR + no PAT), so it
+          # is NOT a failure; the guard only trips when failed == total.
+          if [ "$total" -gt 0 ] && [ "$failed" -eq "$total" ]; then
+            echo "::error::All $total considered PRs failed to enqueue/arm — likely a systemic auth/API problem, not per-PR gating."
+            exit 1
+          fi
