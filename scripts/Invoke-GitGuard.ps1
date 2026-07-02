@@ -41,11 +41,13 @@ function global:git {
                 # wrapper) - an unreachable host can still hang indefinitely,
                 # so launch fetch as a real child process and kill it if it
                 # outlives the timeout.
+                # Use the single-string Arguments property, not ArgumentList
+                # (a Collection<string> added in .NET Core 2.1+) - Windows
+                # PowerShell 5.1 runs on the older .NET Framework, which
+                # doesn't have ArgumentList and would throw here.
                 $psi = New-Object System.Diagnostics.ProcessStartInfo
                 $psi.FileName = $realGit
-                $psi.ArgumentList.Add("fetch")
-                $psi.ArgumentList.Add("origin")
-                $psi.ArgumentList.Add("--quiet")
+                $psi.Arguments = "fetch origin --quiet"
                 $psi.EnvironmentVariables["GIT_TERMINAL_PROMPT"] = "0"
                 $psi.UseShellExecute = $false
                 $psi.RedirectStandardOutput = $true
