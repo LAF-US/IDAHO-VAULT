@@ -24,13 +24,16 @@ def _repo_root() -> Path:
     # checkout — otherwise newly added files are silently skipped and grown
     # files are measured at their base size. Local (pre-commit) runs have no
     # GITHUB_WORKSPACE and fall back to the script's own repository.
-    workspace = os.environ.get("GITHUB_WORKSPACE")
-    if workspace:
-        root = Path(workspace).resolve()
-        if not root.is_dir():
+    # Trust GITHUB_WORKSPACE only under a real Actions run (GITHUB_ACTIONS is
+    # set by the runner): a stale GITHUB_WORKSPACE in a developer shell could
+    # point at some other real directory, silently scanning the wrong tree.
+    if os.environ.get("GITHUB_ACTIONS") == "true":
+        workspace = os.environ.get("GITHUB_WORKSPACE", "")
+        root = Path(workspace).resolve() if workspace else None
+        if root is None or not root.is_dir():
             # Fail closed: a bogus workspace would make every scanned path
             # resolve nonexistent and be silently skipped — a false pass.
-            raise SystemExit(f"GITHUB_WORKSPACE is not a directory: {workspace}")
+            raise SystemExit(f"GITHUB_WORKSPACE is not a directory: {workspace!r}")
         return root
     return Path(__file__).resolve().parents[2]
 
