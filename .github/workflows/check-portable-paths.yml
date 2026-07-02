@@ -24,6 +24,7 @@ jobs:
       - name: Check for cross-platform path violations
         shell: bash
         run: |
+          set -eo pipefail  # a failed git diff must fail the step, not feed the checker empty stdin
           set +H  # Disable bash history expansion (paths contain !)
           VALIDATOR="trusted-main/.github/scripts/check_portable_paths.py"
           if [ ! -f "$VALIDATOR" ]; then
