@@ -1,0 +1,1 @@
+probe B: non-workflows path under .github
