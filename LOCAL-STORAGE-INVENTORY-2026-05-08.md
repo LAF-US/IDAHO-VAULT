@@ -3,6 +3,8 @@ title: "Local Storage Inventory"
 updated: 2026-05-08
 status: active
 authority: "LOGAN"
+related:
+  - STORAGE-LFS-USB-CONSTELLATION-INDEX-2026-06-17
 ---
 
 # Local Storage Inventory - 2026-05-08

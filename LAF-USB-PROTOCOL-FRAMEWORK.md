@@ -5,6 +5,7 @@ type: framework
 authority: LOGAN
 date: 2026-05-06
 related:
+  - STORAGE-LFS-USB-CONSTELLATION-INDEX-2026-06-17
   - LAF-USB
   - Universal Sync Bus
   - LAF-USB-FIVE-CORES-MIGRATION

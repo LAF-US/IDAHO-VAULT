@@ -3,6 +3,8 @@ title: Backup Infrastructure — Operation Synthesis
 updated: 2026-04-23
 status: staged
 authority: logan
+related:
+  - STORAGE-LFS-USB-CONSTELLATION-INDEX-2026-06-17
 ---
 
 # Backup Infrastructure — Operation Synthesis

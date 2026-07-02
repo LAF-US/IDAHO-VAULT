@@ -22,7 +22,7 @@ type: reference
 | `Idaho Legislature API Key` | API Key | Scraper authentication | ❌ Not created | Create if legislator.idaho.gov requires auth |
 | `Email SMTP Credentials` | Username + Password | Budget tracker email delivery | ❌ Not created | Create if using SMTP service |
 | `Todoist API Token` | API Token | Todoist probe + future bridge (`.github/workflows/todoist-probe.yml`) | ❌ Not created | Create in 1Password as `todoist-api-token`, field `credential` |
-| `OP_SERVICE_ACCOUNT_TOKEN` | Service Token | GitHub Actions → 1Password auth | ⚠️ In GitHub Secrets | Sync from 1Password via manual provisioning |
+| `OP_SERVICE_ACCOUNT_TOKEN` | Service Token | GitHub Actions → 1Password auth | ✅ Provisioned (2026-06-17) | Created via 1Password web portal → Developer Tools → Service Accounts; saved to 1Password vault + added to GitHub Secrets |
 
 ---
 

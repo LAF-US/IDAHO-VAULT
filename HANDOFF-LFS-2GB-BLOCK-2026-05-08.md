@@ -147,3 +147,7 @@ f3af3d85 document universal sync bus framework
 | `LEVELSET-LFS-SHUTDOWN-2026-05-06.md` | May 6 interrupted push record |
 | `.gitattributes` | LFS tracking patterns (55+ file types) |
 | `AGENTS.md` | Agent governance, boot order, boundary rules |
+
+---
+
+*Indexed in [[STORAGE-LFS-USB-CONSTELLATION-INDEX-2026-06-17]].*

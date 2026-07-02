@@ -6,6 +6,7 @@ authority: "LOGAN"
 aliases:
   - USB (Universal Sync Bus)
 related:
+  - STORAGE-LFS-USB-CONSTELLATION-INDEX-2026-06-17
   - USB
   - LAF-USB
   - LAF-USB-PROTOCOL-FRAMEWORK

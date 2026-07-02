@@ -8,6 +8,8 @@ tags:
   - consolidation
 doc_class: misc_reference
 status: live
+related:
+  - STORAGE-LFS-USB-CONSTELLATION-INDEX-2026-06-17
 ---
 
 # DEFRAG-MAP — Digital Life Inventory

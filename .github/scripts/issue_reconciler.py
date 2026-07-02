@@ -11,23 +11,15 @@ import subprocess
 import sys
 from pathlib import Path
 
+from gh_cli import run
+
 FINGERPRINT_PREFIX = "<!-- issue-reconciler-fingerprint:"
 FINGERPRINT_SUFFIX = " -->"
 
 
 def gh(*args: str, check: bool = True) -> subprocess.CompletedProcess[str]:
-    result = subprocess.run(
-        ["gh", *args],
-        capture_output=True,
-        text=True,
-    )
-    if check and result.returncode != 0:
-        raise RuntimeError(
-            f"gh {' '.join(args)} failed ({result.returncode})\n"
-            f"stdout:\n{result.stdout}\n"
-            f"stderr:\n{result.stderr}"
-        )
-    return result
+    """Run a ``gh`` subcommand via the shared run-capture-raise primitive."""
+    return run(["gh", *args], check=check)
 
 
 def gh_json(*args: str) -> list[dict] | dict | None:
