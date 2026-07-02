@@ -16,7 +16,29 @@ from dataclasses import dataclass
 from pathlib import Path
 
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
+def _repo_root() -> Path:
+    # In CI this script executes from the trusted base-branch checkout
+    # (trusted-main/), while the changed-file list is computed against the
+    # primary workspace (PR head / merge-group tree). Sizes and .gitattributes
+    # LFS filters must be read from that workspace, not from the script's own
+    # checkout — otherwise newly added files are silently skipped and grown
+    # files are measured at their base size. Local (pre-commit) runs have no
+    # GITHUB_WORKSPACE and fall back to the script's own repository.
+    # Trust GITHUB_WORKSPACE only under a real Actions run (GITHUB_ACTIONS is
+    # set by the runner): a stale GITHUB_WORKSPACE in a developer shell could
+    # point at some other real directory, silently scanning the wrong tree.
+    if os.environ.get("GITHUB_ACTIONS") == "true":
+        workspace = os.environ.get("GITHUB_WORKSPACE", "")
+        root = Path(workspace).resolve() if workspace else None
+        if root is None or not root.is_dir():
+            # Fail closed: a bogus workspace would make every scanned path
+            # resolve nonexistent and be silently skipped — a false pass.
+            raise SystemExit(f"GITHUB_WORKSPACE is not a directory: {workspace!r}")
+        return root
+    return Path(__file__).resolve().parents[2]
+
+
+REPO_ROOT = _repo_root()
 MB = 1024 * 1024
 GB = 1024 * MB
 
