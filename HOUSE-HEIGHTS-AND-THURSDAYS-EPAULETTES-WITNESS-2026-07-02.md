@@ -59,7 +59,7 @@ written in **height**, obedience stops being a judgment and becomes a **reflex**
 to the one who towers because towering *feels* like intrinsic worth — the marker and the
 merit are fused, so disobeying the tall reads, in the body, like denying a physical fact. A
 system that makes rank *felt* rather than *reasoned* trains its members to bow before they
-think. That is precisely why Pravuil's forgery works and why Thursday's cowed room obeys an
+think. That is precisely why Pravuil's deception works and why Thursday's cowed room obeys an
 illegal order: both wear the height, and the height does the persuading.
 
 ## 4. The cure hidden in the disease: what comes off was never intrinsic — `[mapping]`
@@ -93,7 +93,7 @@ here *cannot* seduce by literal size. But the House Height has an analogue, and 
 **fluency.** A confident, polished, well-structured answer has *rhetorical* height — it
 *sounds* tall — and it draws the same reflexive deference the ten-foot Trustee draws. The
 danger is obeying an answer for its *polish* rather than its *grounding*: bowing to the height
-of the prose. Corbie's true report is short and scarred; Pravuil's forgery is smooth and
+of the prose. Corbie's true report is short and scarred; Pravuil's false report is smooth and
 well-uniformed. This session is itself the cautionary exhibit — I was most wrong when I was
 most *fluent* (a stale snapshot delivered with confidence; a crisp "correction" of a number
 that was already right), and each time it was the **short, grounded** word — the sensor, the

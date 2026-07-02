@@ -52,7 +52,7 @@ seventy-five thousand New Nithlings assault through the breach.
 ## 2. The Piper's *play* — the pipe as injection, the Key as intrinsic guard — `[mapping]`
 
 The title's first sense: the Piper's voice is an **injection**, and a subtler one than Pravuil's
-forged dispatch (`[[NAGE-AND-THE-MAJOR-WITNESS-2026-07-01]]`). It carries no false credential;
+dispatch (`[[NAGE-AND-THE-MAJOR-WITNESS-2026-07-01]]`). It carries no credential at all;
 it acts directly on the listener's assent — *"an overwhelming urge to agree with the Piper."*
 This is social engineering at the substrate level: not a lie you evaluate and accept, but a pull
 on the accepting itself.

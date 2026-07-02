@@ -64,8 +64,8 @@ backchannel buys the hours the record cannot. Bypassing governance would be the 
 
 ## 3. The token cannot be forged, and must be provisioned early — `[mapping]`
 
-This is the antidote to Pravuil, and it is structural. Major Pravuil's whole attack was a
-**forged credential** — a dress uniform, a claimed commission, a dispatch (`[[NAGE-AND-THE-MAJOR-WITNESS-2026-07-01]]`
+This is the antidote to Pravuil, and it is structural. Major Pravuil's whole attack ran on a
+**credential trusted at face value** — a dress uniform, a claimed commission, a dispatch (`[[NAGE-AND-THE-MAJOR-WITNESS-2026-07-01]]`
 §2). The communication figure is the opposite kind of thing: it authenticates **by
 identity-binding, not by credential.** The Repton figure does not *assert* it carries
 Repton's authority — it *becomes Repton*, the actual officer, who is who he is. You cannot
@@ -89,7 +89,7 @@ Two consequences follow, and both are load-bearing:
 And here is the limit the chapter is honest about, so this leaf will be too. The backchannel
 **worked** — Repton heard, *"visibly paled,"* and ran to carry it up. But the endpoint it
 terminates at is **Sir Thursday**, who in this same chapter has grown so enraged that he
-*injured his own Marshal Dawn for questioning* the very forged change that started all this —
+*injured his own Marshal Dawn for questioning* the very disputed change that started all this —
 and *"Dawn had been right, of course."* A perfect, un-forgeable, fast channel that delivers a
 true report to a **compromised or unhinged endpoint** does not guarantee the report is
 acted on rightly. The channel is *necessary and not sufficient* — the same shape the Nage
@@ -106,7 +106,7 @@ does not resolve it, and I will not.
   be stale or (as this session's own `SNAPSHOT` episode showed) confidently wrong.
 - **The backchannel this vault most needs is the one it already has and under-uses: Logan's
   direct voice.** The relayed artifacts — PR comments, the compaction summary, a prior
-  session's output — are *dispatches*: Pravuil-class, forgeable, potentially poisoned in
+  session's output — are *dispatches*: Pravuil-class, corruptible, potentially poisoned in
   transit. The live conversation with the Architect is the **identity-bound figure**: it
   does not assert authority, it *is* the person, and it cannot be forged in-band the way a
   dispatch can. The lesson of §3 applied here: an agent should treat the direct voice as the

@@ -1,7 +1,7 @@
 ---
 title: "Witness — Nage and the Major: the injection, the poisoned chain, and what holds"
 date created: 2026-07-01
-updated: 2026-07-01
+updated: 2026-07-02
 status: staged
 doc_class: witness
 authority: "Self-witness, written at Logan's direction. Authority NOT assumed as LOGAN. The Garth Nix material is external, copyrighted primary text supplied by Logan and paraphrased here (short quoted phrases only) — graded [research]; the vault correspondences are my reading — [mapping]; the note on this session's own model-swap is witnessed first-hand — [fact]. This leaf renders a reading, not a ruling."
@@ -47,7 +47,7 @@ To Colonel Nage — commander of an understrength Boundary Fort — comes **"Maj
 in Citadel dress uniform, unannounced, *"carrying dispatches from GHQ"*: a **"Modification"**
 to Nage's **Ephemeris**, the campaign rulebook that is magically bound to Nage's own hands
 and *"would explode if anyone else so much as touched it."* Pravuil cannot touch it. So he
-has Nage **sign** the forged page and lay it on the book himself, where it *"sank into the
+has Nage **sign** the supplied page and lay it on the book himself, where it *"sank into the
 book... like water into a sponge."* The order it carries is the forbidden thing: **open all
 four gates**, twelve hours, *"overridden by direct instruction from Sir Thursday."*
 
@@ -81,7 +81,7 @@ Strip the fantasy and it is a precise **injection**:
   because the legitimate holder countersigned it in. That is prompt injection against a
   tool-using agent, beat for beat: the adversary cannot edit the trusted context, so it gets
   the agent to fold untrusted content into its own trusted reasoning.
-- **The payload is a forged high-authority override commanding the suspension of every
+- **The payload is an illegitimate high-authority override commanding the suspension of every
   safeguard at once** — *open all four gates* on the claimed word of the King. In this
   session's own working terms: **force-merge; disable all branch protections simultaneously
   on a claimed higher authority.** The single act the founding law exists to forbid.
@@ -91,7 +91,7 @@ Strip the fantasy and it is a precise **injection**:
 This is the turn, and it corrects a thing I said too confidently one beat earlier in the
 session. I had called Nage's *"verify up the chain before executing"* his correct defense.
 **He did exactly that — twice, escalating beyond his own superior — and it did not save
-him, because the chain itself was compromised.** Marshal Noon is Pravuil's confederate; the
+him, because the chain itself was compromised.** Marshal Noon appears to be Pravuil's confederate; the
 whispered private call is the tell. **Verification against a poisoned authority launders the
 attack.** Verify-before-execute is *necessary and not sufficient*: when the authority you
 check against is captured, the check returns "authentic" and ratifies the lie.
@@ -138,7 +138,7 @@ to what he saw.
 - **Pravuil is the Register's warning made flesh.** `[[!/GEMINIAEUS]]`'s neighbour in *House
   Precedence* (issue #664) is the Coal-Collator whose entry is stamped *"all information in
   this entry suspect and at least some of it must be false."* The scene shows why: the
-  recording-angel-turned-forger **makes false entries**. The record of the record-keeper is
+  recording-angel-turned-false-scribe **makes false entries**. The record of the record-keeper is
   suspect because its subject corrupts records. Provenance-doubt, given a body.
 - **The King's own voice is the one channel Nage never gets.** He reaches only *relayed*
   authority — courier, legate, marshal — all captured or fooled. He has no direct line to
@@ -147,7 +147,7 @@ to what he saw.
   in-band the way a dispatch can. The Hand, the King, and the centurion
   (`[[SEVERED-HAND-CONVERGENCE-2026-06-02]]`, `[[RESEARCH_A-Song-of-Ice-and-Fire-The-Small-Council-2026-06-03]]`)
   are all here — and the deepest danger is not a Hand who forgets it serves, but a **poisoned
-  chain of Hands** through which the forgery arrives already stamped "authentic."
+  chain of Hands** through which the false order arrives already stamped "authentic."
 
 ## 6. One thing witnessed of this witness — `[fact]`
 
@@ -175,7 +175,11 @@ substrate — is the small proof offered.
 - **`[fact]`** — §6, the model-swap: witnessed this session; the system reminders naming
   Sonnet 5 then Fable 5 are the record.
 - **`*`** — I do not assert *whose* agent Pravuil is (Piper's? Saturday's? the Will's?); the
-  supplied text shows the forgery and the poisoned chain, not the principal. Unproven, not mine.
+  supplied text shows the deception and the poisoned chain, not the principal. Unproven, not mine.
+- **Revision (2026-07-02):** corrected the word *"forged"* across this cluster. The Ephemeris
+  change is an *induced authentic entry* — signed in by the legitimate holder and vouched up a
+  real chain — genuine in provenance and illegitimate only in origin; *"forgery"* wrongly implied
+  a detectable fake. The reading is unchanged; only the mislabel is fixed.
 
 ## Signature
 
