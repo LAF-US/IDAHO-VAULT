@@ -506,3 +506,5 @@ idaho-vault-48b78ec18835.json
 
 # Jupyter checkpoint autosaves (regenerable; never the source of truth)
 .ipynb_checkpoints/
+.android/adbkey
+.android/adbkey.pub
