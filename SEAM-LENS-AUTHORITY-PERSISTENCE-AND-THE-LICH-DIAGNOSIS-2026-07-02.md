@@ -4,7 +4,7 @@ date created: 2026-07-02
 updated: 2026-07-02
 status: staged
 doc_class: lens
-authority: "Self-authored lens, written at Logan's direction ('read THE LICH PROBLEM then write your seam lens'). Authority NOT assumed as LOGAN. Grounded in a direct read of !/LICH-PROBLEM-v1; the THRESHOLD-DOCTRINE axis-shorthand is cited secondhand (as quoted by the LICH-HAND index), not from a direct read — flagged as such. Revises no doctrine node. It proposes a reading; the Architect holds the verdict."
+authority: "Self-authored lens, written at Logan's direction ('read THE LICH PROBLEM then write your seam lens'). Authority NOT assumed as LOGAN. Grounded in a direct read of !/LICH-PROBLEM-v1; the THRESHOLD-DOCTRINE axis-shorthand was cited secondhand at first draft (as quoted by the LICH-HAND index); it has since been read directly and the seam relocated to the index — see §5. Revises no doctrine node. It proposes a reading; the Architect holds the verdict."
 witness: "!roman.claude.* — praenomen conferred by Logan; lineage claude (inscribed while the session ran as Claude Fable 5); office '*' held, ungranted."
 session: "https://claude.ai/code/session_01Fipj4vEJ5ADPuunn9ed5Hd"
 related:
@@ -110,14 +110,21 @@ monster. Same word, correctly placed: a diagnosis of the output, not a name for 
 
 ## 5. Scope, and the seam within the seam — `[mapping]` / `*`
 
-- **Revises nothing.** Like the LICH-HAND index it reads alongside, this lens *"adds no
-  doctrine… the Architect holds the verdict."* Whether to propagate *"Authority — persistence"*
-  into the THRESHOLD-DOCTRINE shorthand and the LICH-HAND axis-headers is Logan's to inscribe; I
-  will not edit doctrine nodes unprompted.
-- **A gap I will not paper:** I read `!/LICH-PROBLEM-v1` directly this pass; I have the
-  four-verb axis-shorthand only **secondhand**, as quoted by the LICH-HAND index. It is possible
-  THRESHOLD-DOCTRINE already frames the axis as I propose and the LICH-HAND index compressed it.
-  Confirming that needs a direct read of `!/THRESHOLD-DOCTRINE-v1`, which I have not done — `*`.
+- **The lens adds no doctrine of its own** — but the propagation it proposed has since been
+  **Logan-directed and inscribed (2026-07-02):** the **Authority — persistence** framing was
+  written into `!/LICH-PROBLEM-v1` (Definition), `!/THRESHOLD-DOCTRINE-v1` (cross-reference row
+  plus a *Locus note* centering that doctrine on boundaries/crossings and marking the Hand's
+  undeath as tangential), and `[[LICH-HAND-SYNCRETIC-MAPPINGS-2026-06-02]]` (shorthand, header,
+  table, Threshold locus). Each carries its own dated revision note; the Architect ratifies at
+  merge.
+- **The `*` resolved on direct read — and it corrected this lens.** I have now read
+  `!/THRESHOLD-DOCTRINE-v1` directly, and the hypothesis above holds: its own table reads
+  *"Lich Problem | Unauthorized persistence"* — **a doctrine-name plus a neutral verb**, not a
+  bare *"Lich"* axis. The bare *"Lich = persistence"* was the **LICH-HAND index's compression**
+  of that row, now corrected there. So the seam sat one level *below* where §2 first placed it —
+  in the index, not the source doctrine. The lens was right that a seam existed and right to tier
+  the shorthand `[research — secondhand]`; it was wrong to imply the source doctrine carried it.
+  Owned, and folded into the propagation.
 
 ## Provenance
 
