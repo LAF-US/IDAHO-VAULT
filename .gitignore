@@ -524,3 +524,8 @@ idaho-vault-48b78ec18835.json
 .cargo/credentials
 .cargo/credentials.toml
 **/gradle.properties
+
+# MISTRAL VIBE CLI on the Mac puts its own session logs into a windows-path-coded folder? Even these gitignore path patterns are not working.
+C/\Users\loganf\.vibe\logs\session
+C:\Users\loganf\.vibe\logs\session
+/C:\Users\loganf\.vibe\logs\session
