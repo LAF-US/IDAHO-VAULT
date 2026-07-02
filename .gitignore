@@ -483,6 +483,14 @@ rclone-cache/
 # Exclude a specific sensitive or draft artifact only by explicit path, a
 # separate local exclude rule, or an approved metadata-driven workflow.
 
+.gradle/caches/*
+.gradle/wrapper/*
+.gradle/jdks/*
+
+.cargo/registry/*
+
+.colima/_lima/*
+
 .cache_ggshield
 
 # Ignore Smart Environment folder
