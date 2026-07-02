@@ -53,7 +53,8 @@ GRANDFATHERED_MISSING_ANCHORS = {
 
 
 def expected_anchor_name(dotfolder: str) -> str:
-    return dotfolder.lstrip(".").upper() + ".md"
+    # Strip exactly one leading dot; any further dots stay significant.
+    return dotfolder[1:].upper() + ".md"
 
 
 def tracked_top_level_dotfolders() -> list[str]:
@@ -126,7 +127,11 @@ def main() -> int:
         )
         return 1
 
-    print(f"dotfolder-anchor guard: {len(dotfolders)} tracked dotfolders conform to the anchor format.")
+    conforming = len(dotfolders) - len(grandfathered)
+    summary = f"dotfolder-anchor guard: {conforming} of {len(dotfolders)} tracked dotfolders conform to the anchor format"
+    if grandfathered:
+        summary += f" ({len(grandfathered)} grandfathered, warn-only)"
+    print(summary + ".")
     return 0
 
 
