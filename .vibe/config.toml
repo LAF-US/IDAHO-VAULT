@@ -46,6 +46,9 @@ connectors = [
     { name = "sharepoint_online", disabled = true },
     { name = "stripe", disabled = true },
 ]
+applied_migrations = [
+    "bash_read_only_defaults_v1",
+]
 
 [[providers]]
 name = "mistral"
@@ -78,6 +81,7 @@ input_price = 1.5
 output_price = 7.5
 thinking = "high"
 auto_compact_threshold = 200000
+supports_images = true
 
 [[models]]
 name = "devstral-small-latest"
@@ -145,11 +149,22 @@ sensitive_patterns = []
 [tools.bash]
 permission = "ask"
 allowlist = [
+    "basename",
+    "cat",
     "cd",
+    "comm",
+    "cut",
+    "date",
+    "diff",
     "dir",
+    "dirname",
+    "du",
     "echo",
+    "file",
     "find",
     "findstr",
+    "fmt",
+    "fold",
     "git add",
     "git branch",
     "git checkout",
@@ -165,13 +180,34 @@ allowlist = [
     "git show",
     "git status",
     "grep",
+    "head",
+    "join",
+    "less",
     "ls",
+    "md5sum",
     "more",
+    "nl",
+    "od",
+    "paste",
+    "pwd",
+    "readlink",
+    "sha1sum",
+    "sha256sum",
+    "shasum",
     "sort",
+    "stat",
+    "sum",
+    "tac",
+    "tail",
+    "tr",
     "tree",
     "type",
+    "uname",
+    "uniq",
     "ver",
+    "wc",
     "where",
+    "which",
     "whoami",
 ]
 denylist = [
@@ -242,28 +278,6 @@ exclude_patterns = [
 ]
 codeignore_file = ".vibeignore"
 
-[tools.read_file]
-permission = "always"
-allowlist = []
-denylist = []
-sensitive_patterns = [
-    "**/.env",
-    "**/.env.*",
-]
-max_read_bytes = 64000
-
-[tools.search_replace]
-permission = "ask"
-allowlist = []
-denylist = []
-sensitive_patterns = [
-    "**/.env",
-    "**/.env.*",
-]
-max_content_size = 100000
-create_backup = false
-fuzzy_threshold = 0.9
-
 [tools.skill]
 permission = "ask"
 allowlist = []
@@ -313,3 +327,23 @@ sensitive_patterns = [
 ]
 max_write_bytes = 64000
 create_parent_dirs = true
+
+[tools.read]
+permission = "always"
+allowlist = []
+denylist = []
+sensitive_patterns = [
+    "**/.env",
+    "**/.env.*",
+]
+max_read_bytes = 64000
+
+[tools.edit]
+permission = "ask"
+allowlist = []
+denylist = []
+sensitive_patterns = [
+    "**/.env",
+    "**/.env.*",
+]
+fuzzy_threshold = 0.9
