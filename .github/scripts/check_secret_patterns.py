@@ -8,6 +8,9 @@ file path, line number, and rule name. It never prints matched secret text.
 from __future__ import annotations
 
 import argparse
+import base64
+import math
+import os
 import re
 import subprocess
 import sys
@@ -37,6 +40,18 @@ SECRET_PATH_PATTERNS = (
     re.compile(r"(^|/)(known_hosts|allowed_signers)(\.|$)", re.IGNORECASE),
     re.compile(r"(^|/).*_signing(?:\.|$)", re.IGNORECASE),
     re.compile(r"(^|/)(\.npmrc|\.pypirc|\.netrc|rclone\.conf)$"),
+    # Filenames that are ALWAYS credential material — a thin BELT behind the
+    # content detectors (content_secret_findings), which are the real,
+    # path-independent guard. Deliberately NOT whole dotfolders or ambiguous
+    # config (`.dropbox/`, `.docker/config.json`, `.colima/ssh_config`): a secret
+    # guard flags secret MATERIAL, not folder names — flagging a chamber by path
+    # is theatre that both false-positives on non-secret persona-chamber content
+    # and misses a secret the moment it is renamed. Added 2026-07-02.
+    re.compile(r"(^|/)adbkey(\.pub)?$"),                        # Android debug key
+    re.compile(r"(^|/)hostkeys$", re.IGNORECASE),              # Dropbox/app host key material
+    re.compile(r"(^|/)\.subversion/auth(/|$)", re.IGNORECASE),  # SVN cached credentials
+    re.compile(r"(^|/)\.cargo/credentials(\.toml)?$", re.IGNORECASE),  # crates.io token
+    re.compile(r"(^|/)gradle\.properties$", re.IGNORECASE),    # commonly holds signing keys/tokens
 )
 
 ALLOW_PATH_PATTERNS = (
@@ -54,7 +69,10 @@ SECRET_CONTENT_PATTERNS = {
     "openai_key": re.compile(r"\bsk-(?:proj-)?[A-Za-z0-9_-]{32,}\b"),
     "anthropic_key": re.compile(r"\bsk-ant-[A-Za-z0-9_-]{32,}\b"),
     "slack_token": re.compile(r"\bxox(?:b|p|o|a|r|s)-[A-Za-z0-9-]{20,}\b"),
-    "private_key_block": re.compile(r"-----BEGIN (?:RSA |OPENSSH |EC |DSA )?PRIVATE KEY-----"),
+    # Broadened 2026-07-02: the old alternation missed ENCRYPTED / PGP / SSH2 /
+    # PuTTY variants and the "PRIVATE KEY BLOCK" (PGP) suffix — a PEM block in
+    # closed_prs.json/unmerged_prs.json returned OK under the narrow form.
+    "private_key_block": re.compile(r"-----BEGIN (?:[A-Z0-9]+ )*PRIVATE KEY(?: BLOCK)?-----"),
     "google_api_key": re.compile(r"\bAIza[0-9A-Za-z_-]{35}\b"),
     "generic_secret_assignment": re.compile(
         r"""(?ix)
@@ -70,6 +88,101 @@ class Finding:
     path: str
     line: int | None
     rule: str
+
+
+# ── Content detection (path-independent) ──────────────────────────────────────
+# A secret guard must detect secret MATERIAL, not folder names. Path rules above
+# are a belt; these are the guard. They fire on the bytes regardless of filename,
+# so renaming hostkeys->data.bin or dropping a key in an unlisted dir cannot
+# evade them. Added 2026-07-02 after a path-only pass let an unarmored ADB key,
+# Dropbox host keys, and Docker auth through.
+
+# ASN.1/DER object-identifier bytes that appear inside a DER-encoded private key
+# whether or not the file carries "-----BEGIN ... KEY-----" PEM armor. ADB's
+# adbkey is base64(DER) with no armor, so header regexes never saw it.
+_DER_KEY_MARKERS = (
+    bytes.fromhex("2a864886f70d010101"),  # rsaEncryption (PKCS#1 / PKCS#8 RSA)
+    bytes.fromhex("2a8648ce3d0201"),      # ecPublicKey (EC private keys)
+    bytes.fromhex("2b6570"),              # Ed25519
+    bytes.fromhex("2b6571"),              # Ed448
+)
+_BASE64_RUN_RE = re.compile(rb"[A-Za-z0-9+/]{100,}={0,2}")
+_DOCKER_AUTH_RE = re.compile(rb'"auth"\s*:\s*"([A-Za-z0-9+/]{8,}={0,2})"')
+_SAFE_BINARY_MAGIC = (
+    b"\x89PNG", b"\xff\xd8\xff", b"GIF8", b"%PDF", b"\x1f\x8b",
+    b"PK\x03\x04", b"SQLite format 3\x00", b"\x00asm", b"ID3", b"OggS",
+)
+# Text formats are scanned for embedded secrets by the content rules above; the
+# raw-binary-blob heuristic must skip them, or unicode/base64-heavy notes trip it
+# (measured: 12 .md + 27 .json false-positives). This is defense-in-depth, not
+# exclusion — a key pasted into a .md is still caught by the key/token detectors.
+_TEXT_EXTENSIONS = frozenset(
+    ".md .markdown .txt .json .jsonl .yaml .yml .toml .xml .html .htm .csv .tsv"
+    " .js .mjs .ts .py .sh .rb .go .rs .java .kt .c .h .cpp .css .svg .rtf .tex"
+    " .ipynb .log .cfg .ini .conf .properties .gitignore".split()
+)
+
+
+def _shannon_entropy(data: bytes) -> float:
+    if not data:
+        return 0.0
+    counts = [0] * 256
+    for byte in data:
+        counts[byte] += 1
+    total = len(data)
+    return -sum((c / total) * math.log2(c / total) for c in counts if c)
+
+
+def _looks_binary(data: bytes) -> bool:
+    if b"\x00" in data:
+        return True
+    printable = sum(1 for b in data if 9 <= b <= 13 or 32 <= b <= 126)
+    return bool(data) and printable / len(data) < 0.85
+
+
+def content_secret_findings(path: str, data: bytes) -> list[Finding]:
+    """Detect secret material by content — filename-independent."""
+    findings: list[Finding] = []
+
+    # 1. DER private key (armored OR unarmored base64) — decode long base64 runs
+    #    and look for private-key OIDs in the DER.
+    for match in _BASE64_RUN_RE.finditer(data):
+        try:
+            decoded = base64.b64decode(match.group(0), validate=True)
+        except Exception:
+            continue
+        # PKCS#8 / EC / Ed carry a key OID; PKCS#1 RSAPrivateKey (what `adbkey`
+        # and `openssl genrsa` emit, unarmored) has none, so match its DER prefix:
+        # SEQUENCE(30 82 ..) INTEGER version 0 (02 01 00) INTEGER modulus (02 82 ..).
+        is_pkcs1 = decoded[:4].startswith(b"\x30\x82") and decoded[4:9] == b"\x02\x01\x00\x02\x82"
+        if decoded[:1] == b"\x30" and (is_pkcs1 or any(mk in decoded for mk in _DER_KEY_MARKERS)):
+            findings.append(Finding(path=path, line=None, rule="der_private_key"))
+            break
+
+    # 2. Docker/containers-style base64 auth blob decoding to "user:secret".
+    for match in _DOCKER_AUTH_RE.finditer(data):
+        try:
+            if b":" in base64.b64decode(match.group(1), validate=True):
+                findings.append(Finding(path=path, line=None, rule="base64_auth_blob"))
+                break
+        except Exception:
+            continue
+
+    # 3. Small high-entropy RAW binary blob (host keys, raw key material). Can't
+    #    be told from any small binary by content alone, so scope tightly: skip
+    #    text extensions (scanned above) and known media magic; require true
+    #    binary (NUL byte present).
+    ext = os.path.splitext(path)[1].lower()
+    if (
+        ext not in _TEXT_EXTENSIONS
+        and 16 <= len(data) <= 4096
+        and b"\x00" in data
+        and not any(data.startswith(magic) for magic in _SAFE_BINARY_MAGIC)
+        and _shannon_entropy(data) >= 4.3
+    ):
+        findings.append(Finding(path=path, line=None, rule="high_entropy_binary"))
+
+    return findings
 
 
 def is_allowed_content_match(rule: str, line: str) -> bool:
@@ -183,11 +296,16 @@ def content_findings(path: str, data: bytes) -> list[Finding]:
 def findings_for_paths(paths: list[str], *, staged: bool) -> list[Finding]:
     findings: list[Finding] = []
     for path in paths:
+        # Path-based detection must NOT depend on reading the file: a secret is
+        # named by its path regardless of whether the bytes are present or
+        # decodable (binary key blobs, or a path removed from the worktree but
+        # still in the commit). Only content scanning needs the data.
+        findings.extend(path_findings(path))
         data = staged_file_bytes(path) if staged else worktree_file_bytes(path)
         if data is None:
             continue
-        findings.extend(path_findings(path))
         findings.extend(content_findings(path, data))
+        findings.extend(content_secret_findings(path, data))
     return findings
 
 

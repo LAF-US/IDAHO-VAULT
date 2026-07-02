@@ -508,3 +508,19 @@ idaho-vault-48b78ec18835.json
 .ipynb_checkpoints/
 .android/adbkey
 .android/adbkey.pub
+
+# ── Credential filenames (2026-07-02 leak remediation) ──
+# Prevention belt for filenames that are ALWAYS credential material. This is
+# tracking POLICY (legitimately path-based); the real secret GUARD is the
+# content scanner (.github/scripts/check_secret_patterns.py), which catches key
+# material by content regardless of path. Whole persona chambers (.dropbox/,
+# .docker/, .colima/, .subversion/) are NOT ignored here — whether that account
+# /client state belongs in a PUBLIC vault is a persona-chamber Intake + privacy
+# decision for Logan (see SECRET-LEAK-INCIDENT-2026-07-02.md), not a secret call.
+**/adbkey
+**/adbkey.pub
+**/hostkeys
+.subversion/auth/
+.cargo/credentials
+.cargo/credentials.toml
+**/gradle.properties
