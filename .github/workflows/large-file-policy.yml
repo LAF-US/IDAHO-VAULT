@@ -26,6 +26,7 @@ jobs:
       - name: Check changed files
         shell: bash
         run: |
+          set -eo pipefail  # a failed git diff must fail the step, not feed the checker empty stdin
           if [[ "${{ github.event_name }}" == "pull_request" ]]; then
             git diff --name-only -z --diff-filter=ACMR \
               "${{ github.event.pull_request.base.sha }}" \
