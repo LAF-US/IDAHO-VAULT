@@ -39,18 +39,38 @@ fi
 # Detect the repo by worktree folder name, not by grepping .git/config for
 # the repo name - that string lives only in the remote URL, so it vanishes
 # from .git/config the moment `git remote remove origin` runs, which is
-# exactly when the guard needs to fire.
+# exactly when the guard needs to fire. Compare case-insensitively (matches
+# Invoke-GitGuard.ps1's -ieq) so a differently-cased checkout still matches.
 toplevel=$("$real_git" rev-parse --show-toplevel 2>/dev/null)
 if [ -n "$toplevel" ]; then
-  case "$(basename "$toplevel")" in
-    "$REPO_NAME"|"$(printf '%s' "$REPO_NAME" | tr '[:upper:]' '[:lower:]')")
-      if ! "$real_git" remote 2>/dev/null | grep -qx origin; then
-        "$real_git" remote add origin "$REPO_URL" 2>/dev/null
-        "$real_git" fetch origin 2>/dev/null
-        "$real_git" branch --set-upstream-to=origin/main main 2>/dev/null
+  leaf_lower=$(basename "$toplevel" | tr '[:upper:]' '[:lower:]')
+  repo_lower=$(printf '%s' "$REPO_NAME" | tr '[:upper:]' '[:lower:]')
+  if [ "$leaf_lower" = "$repo_lower" ]; then
+    if ! "$real_git" remote 2>/dev/null | grep -qx origin; then
+      "$real_git" remote add origin "$REPO_URL" 2>/dev/null
+      # Fail fast instead of hanging a plain `git status`: skip credential
+      # prompts, and enforce a hard wall-clock timeout around fetch. Verified
+      # that http.lowSpeedLimit/lowSpeedTime alone do NOT bound the initial
+      # connect phase - an unreachable host can still hang indefinitely, so
+      # this backgrounds the fetch and kills it after GIT_GUARD_FETCH_TIMEOUT
+      # seconds. Not using GNU `timeout`/`gtimeout` since it isn't guaranteed
+      # present (notably on stock macOS).
+      GIT_GUARD_FETCH_TIMEOUT=${GIT_GUARD_FETCH_TIMEOUT:-10}
+      GIT_TERMINAL_PROMPT=0 "$real_git" fetch origin --quiet 2>/dev/null &
+      fetch_pid=$!
+      waited=0
+      while [ "$waited" -lt "$GIT_GUARD_FETCH_TIMEOUT" ]; do
+        kill -0 "$fetch_pid" 2>/dev/null || break
+        sleep 1
+        waited=$((waited + 1))
+      done
+      if kill -0 "$fetch_pid" 2>/dev/null; then
+        kill "$fetch_pid" 2>/dev/null
       fi
-      ;;
-  esac
+      wait "$fetch_pid" 2>/dev/null
+      "$real_git" branch --set-upstream-to=origin/main main 2>/dev/null
+    fi
+  fi
 fi
 
 exec "$real_git" "$@"
