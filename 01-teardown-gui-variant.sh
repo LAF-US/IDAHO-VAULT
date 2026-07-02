@@ -27,4 +27,4 @@ rm -f /usr/local/bin/tailscale
 echo ""
 echo "DONE. Next: 1) Reboot.  2) During reboot: admin console -> Machines ->"
 echo "delete logans-macbook-pro AND logans-macbook-pro-1.  3) After login,"
-echo "run: sh ~/IDAHO-VAULT/scripts/tailscale-switch/02-install-oss-daemon.sh"
+echo "run: sh ~/IDAHO-VAULT/02-install-oss-daemon.sh"
