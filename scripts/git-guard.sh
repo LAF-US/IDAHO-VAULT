@@ -5,12 +5,18 @@
 # Install as ~/bin/git (not ~/bin/git-guard) with ~/bin ahead of the real
 # git's directory in PATH, so plain `git ...` calls actually go through this
 # wrapper instead of resolving straight to the system git.
+#
+# GIT_GUARD_MARKER=idaho-vault-git-guard-v1
 
 REPO_NAME="IDAHO-VAULT"
 REPO_URL="https://github.com/LAF-US/IDAHO-VAULT.git"
 
-self_path=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)/$(basename -- "$0")
-
+# Identify "self" (this wrapper, or any other copy of it) by content, not by
+# $0. Argv[0] reflects whatever the calling shell chose to pass, which is not
+# guaranteed to be an absolute, dereferenced path across every shell - so
+# comparing paths can under- or over-match. Grepping each PATH candidate for
+# this script's own marker line is shell-agnostic and unambiguous: the real
+# git binary will never contain it.
 real_git=""
 old_ifs=$IFS
 IFS=:
@@ -18,7 +24,8 @@ for dir in $PATH; do
   [ -n "$dir" ] || continue
   candidate="$dir/git"
   [ -x "$candidate" ] || continue
-  [ "$candidate" = "$self_path" ] && continue
+  [ -f "$candidate" ] || continue
+  grep -qa "GIT_GUARD_MARKER=idaho-vault-git-guard-v1" "$candidate" 2>/dev/null && continue
   real_git=$candidate
   break
 done

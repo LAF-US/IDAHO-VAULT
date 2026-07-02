@@ -1,11 +1,11 @@
 ---
-title: "Agent Git Guardrails - Issue & Solutions"
+title: "Agent Git Guardrails - Issues & Solutions"
 updated: 2026-07-02
 status: active
 authority: "LOGAN"
 ---
 
-# Agent Git Guardrails - Issue & Solutions
+# Agent Git Guardrails - Issues & Solutions
 
 ## Problem Statement
 
