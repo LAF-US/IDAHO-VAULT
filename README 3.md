@@ -28,11 +28,11 @@ local clients their socket back (CLI without env overrides, and the
 1. **FileVault on** — System Preferences → Security & Privacy → FileVault →
    Turn On. Local recovery key → 1Password. No waiting needed afterward.
    (Never via agent shell — the recovery key must not enter a transcript.)
-2. **Teardown** — `sudo sh ~/IDAHO-VAULT/scripts/tailscale-switch/01-teardown-gui-variant.sh`
+2. **Teardown** — `sudo sh ~/IDAHO-VAULT/01-teardown-gui-variant.sh`
 3. **Reboot.** While rebooting, in https://login.tailscale.com/admin/machines
    delete BOTH stale machines: `logans-macbook-pro` AND `logans-macbook-pro-1`
    (frees the bare name for the fresh registration).
-4. **Install** — `sh ~/IDAHO-VAULT/scripts/tailscale-switch/02-install-oss-daemon.sh`
+4. **Install** — `sh ~/IDAHO-VAULT/02-install-oss-daemon.sh`
    (~5–10 min go build; `tailscale up` prints the login URL — one browser auth,
    the last identity churn).
 5. **Ping Claude** for the verification pass (below).
