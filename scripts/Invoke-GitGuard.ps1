@@ -1,14 +1,15 @@
 # Invoke-GitGuard.ps1
 # Defines a `git` PowerShell function that auto-reconnects the IDAHO-VAULT
-# origin remote before delegating to the real git.exe. See
+# origin remote before delegating to the real git executable. See
 # !-AGENT-GIT-GUARDRAILS.md for install instructions.
 #
 # Dot-source this from your PowerShell profile ($PROFILE):
 #   . "<repo root>\scripts\Invoke-GitGuard.ps1"
 #
-# A PowerShell function named `git` shadows git.exe automatically for
-# interactive/session use - no PATH reordering, admin rights, or Git Bash/WSL
-# required, matching this vault's Windows-first operating constraints.
+# A PowerShell function named `git` shadows the git application automatically
+# for interactive/session use - no PATH reordering, admin rights, or Git
+# Bash/WSL required, matching this vault's Windows-first operating
+# constraints.
 
 function global:git {
     $repoName = "IDAHO-VAULT"
@@ -18,7 +19,7 @@ function global:git {
         Select-Object -First 1 -ExpandProperty Source)
 
     if (-not $realGit) {
-        Write-Error "git-guard: could not find a real git.exe on PATH"
+        Write-Error "git-guard: could not find a real git executable on PATH"
         return
     }
 
