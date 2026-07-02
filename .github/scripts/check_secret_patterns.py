@@ -26,7 +26,12 @@ def _repo_root() -> Path:
     # GITHUB_WORKSPACE and fall back to the script's own repository.
     workspace = os.environ.get("GITHUB_WORKSPACE")
     if workspace:
-        return Path(workspace).resolve()
+        root = Path(workspace).resolve()
+        if not root.is_dir():
+            # Fail closed: a bogus workspace would make every scanned path
+            # resolve nonexistent and be silently skipped — a false pass.
+            raise SystemExit(f"GITHUB_WORKSPACE is not a directory: {workspace}")
+        return root
     return Path(__file__).resolve().parents[2]
 
 
