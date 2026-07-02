@@ -33,7 +33,31 @@ function global:git {
             $hasOrigin = (& $realGit remote 2>$null) -contains "origin"
             if (-not $hasOrigin) {
                 & $realGit remote add origin $repoUrl 2>$null
-                & $realGit fetch origin 2>$null
+
+                # Fail fast instead of hanging a plain `git status`: skip
+                # credential prompts, and enforce a hard wall-clock timeout
+                # around fetch. http.lowSpeedLimit/lowSpeedTime alone do NOT
+                # bound the initial connect phase (verified against the bash
+                # wrapper) - an unreachable host can still hang indefinitely,
+                # so launch fetch as a real child process and kill it if it
+                # outlives the timeout.
+                $psi = New-Object System.Diagnostics.ProcessStartInfo
+                $psi.FileName = $realGit
+                $psi.ArgumentList.Add("fetch")
+                $psi.ArgumentList.Add("origin")
+                $psi.ArgumentList.Add("--quiet")
+                $psi.EnvironmentVariables["GIT_TERMINAL_PROMPT"] = "0"
+                $psi.UseShellExecute = $false
+                $psi.RedirectStandardOutput = $true
+                $psi.RedirectStandardError = $true
+                $proc = [System.Diagnostics.Process]::Start($psi)
+                if (-not $proc.WaitForExit(10000)) {
+                    # Process.Kill(bool) tree-kill overload needs .NET Core
+                    # 3.0+ (PowerShell 7+); fall back to plain Kill() for
+                    # Windows PowerShell 5.1's older .NET Framework.
+                    try { $proc.Kill($true) } catch { try { $proc.Kill() } catch {} }
+                }
+
                 & $realGit branch --set-upstream-to=origin/main main 2>$null
             }
         }
