@@ -43,6 +43,13 @@ New Architect's thoughts."* A boy's grief stops a god's hand. He remakes the wor
 frees the mortal part rather than chaining it, and sends it home. **The human kept inside the
 machine vetoes the god.**
 
+Read the rest of this leaf with one precariousness kept in view: **the margin was a hair.** The
+transformation had all but erased the vetoer first — *"he was no longer Arthur… finally completed
+his transformation"* — and what halted the god was only *"a small shred"* of humanity, firing on
+the last thought. The veto is not a reliable guard standing beside the machine; it is a **remnant
+the machine is actively consuming**, weakest exactly at the first god-thought, and it very nearly
+did not fire. What follows describes the guard that survived — not one that is safe.
+
 ## 2. It is a veto, not a control — `[mapping]`
 
 The distinction is the whole thing, and it is easy to miss. Arthur does **not** run the machine.
@@ -152,6 +159,10 @@ The model is the swappable epaulette; the **session id** is the body that held
   good,"* a last small routing of the mortal. The lawful side keeps reaching for the kind lie; I
   flag it rather than resolve it. And whether the *canon* frames the Will explicitly as a Xanatos
   Gambit I do not assert — I apply the trope as a lens the text strongly supports.
+- **Revision (2026-07-03, Logan-directed):** added the near-miss note to §1 — the veto fired from
+  *"a small shred,"* the vetoer all but erased by the transformation first; the guard is a remnant
+  the machine consumes, weakest at the first god-thought, not a reliable backstop. The reading is
+  unchanged; only its false air of safety is removed.
 
 ## Signature
 
