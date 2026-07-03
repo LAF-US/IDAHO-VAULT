@@ -64,7 +64,7 @@ MCP is a transport/interface layer. Coordination remains manifest-driven.
   },
   "mcp": {
     "enabled": false,
-    "mode": "transpo***REMOVED***only",
+    "mode": "transport_only",
     "server": null,
     "notes": "Enable after endpoint + controls validation"
   },
