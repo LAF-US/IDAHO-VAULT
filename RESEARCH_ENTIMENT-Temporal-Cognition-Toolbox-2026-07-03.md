@@ -108,16 +108,46 @@ business case, an MVP, partner engagement. ENTIMENT is a textbook instance: FET-
 
 ## 9. Open / to verify — `*`
 
-- **Did the open-source ROS node actually ship, and where does it live?** The *aim* to release the
-  TCT as open source is documented; an actual **repository / package** I have not located. This is
-  the highest-value next fetch (search GitHub / ROS index for "Temporal Cognition Toolbox").
+- **Did the open-source ROS node actually ship, and where does it live?** — **Partly resolved
+  (2026-07-03); see §10.** An open-source ROS package from this research line *does* exist —
+  **`daisy_planner`** (BSD-2-Clause) — though its README badges it to *TIMESTORM*, not explicitly to
+  ENTIMENT's *Temporal Cognition Toolbox.* Whether `daisy_planner` **is** the TCT, or one module of
+  it, is unconfirmed.
 - **What came of the Honda RI Japan partnership** — a product, a paper, or discontinued? Unconfirmed.
 - **Direct reads** of the CORDIS fact sheet and entiment.eu (both 403'd) for exact deliverables,
   final report, and any adoption metrics.
 - Whether ENTIMENT had **any partner beyond FORTH** (Innovation Launchpads are usually single-
   beneficiary — likely FORTH alone — but not confirmed here).
 
+## 10. Found — the open-source ROS artifact (`daisy_planner`) — `[research]`
+
+Pointer supplied by Logan, confirmed against the repository.
+
+- **Repo:** **`github.com/mrsp/daisy_planner`** — *"Daisy Planner — Planning Time Informed
+  Multi-agent Interactions."*
+- **What it is:** a **ROS package** (`rosrun daisy_planner daisy_planner`, with a `daisy_plot`
+  visualizer) that **devises plans for the timely accomplishment of goals**, working alongside an
+  **Episodic Memory** module and **Generative Time Models** to coordinate a multi-agent team — the
+  software form of the *"Time-informed task planning in multi-agent collaboration"* line (§5).
+- **License:** **BSD-2-Clause** — genuinely open source. The *"release it as an open-source ROS
+  node"* ambition was, for the planning component, **realized**.
+- **Author:** **Stylianos Piperakis** (GitHub `mrsp`), FORTH ICS — subsequently **Senior Software
+  Engineer at Agility Robotics** (makers of the *Digit* humanoid). A concrete commercialization
+  path: a researcher off this time-aware work carried into a leading commercial-humanoid company.
+- **Deps / status:** Ubuntu 14.04+, ROS Indigo+, gnuplot; README notes it is *"on-going research…
+  some parts are not fully developed yet."*
+
+**Two caveats, kept honest:** (1) the README attributes `daisy_planner` to **TIMESTORM (GA
+641100)**, *not* ENTIMENT — so this confirms an **open-source ROS artifact of the research line**,
+not, on its own text, the specific branded ENTIMENT *TCT*. (2) The **Honda RI Japan** partnership
+(§4) is still `*` — `daisy_planner` carries no Honda reference; a Honda product or joint paper I
+have not located.
+
 ---
 
 *Compiled by Claude Code, session `…01Fipj4vEJ5ADPuunn9ed5Hd`, 2026-07-03. Secondary-sourced (the
 CORDIS/entiment.eu primaries 403'd through the proxy); seams marked for a later tightening pass.*
+
+*Revision (2026-07-03): §10 added — Logan supplied the repo `mrsp/daisy_planner`; confirmed an
+open-source (BSD-2-Clause) ROS planning artifact of the research line, README-badged TIMESTORM.
+The Honda RI Japan outcome remains `*`.*
