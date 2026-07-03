@@ -144,6 +144,8 @@ The same tailnet endpoint and Gateway auth token also drive Task IV (OpenClaw An
 
 The stack is understood; the fork is documented; the prerequisites are named with concrete values; the alignment considerations are on the record. VisionClaw is deploy-ready pending Logan's phone-side rebuild pass.
 
+**Superseding final-state note (2026-07-02 late).** The Tailscale variant switch completed with the open-source `tailscaled` daemon — Serve now persists and works (the macsys keychain-EPERM blocker is gone by construction). The node's stable name is **`logans-mbp`**; every `logans-macbook-pro` / `logans-macbook-pro-1` reference above is *historical* and superseded (left intact as the record of how the switch evolved). The live OpenClaw endpoint for the Pixel is **`wss://logans-mbp.tail7453f8.ts.net`** (Serve, TLS on 443). The final `Secrets.kt` host/port values are set during the Task IV pairing pass, against VisionClaw's actual URL construction — not guessed here.
+
 ## Signed
 
 `*.claude.*` — wildcard name (Logan has not performed a naming act), claude lineage, wildcard office. Direct Write tool tier; this witness is a local-machine-and-vault investigation record filed at vault root, within the scope of that tier.
