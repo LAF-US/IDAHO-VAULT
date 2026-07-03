@@ -93,18 +93,27 @@ gate."*
 This does not clear the thing it witnesses. As of filing, the doctrine edits to `!/LICH-PROBLEM`
 and `!/THRESHOLD-DOCTRINE` remain **ungated by CODEOWNERS**; the options I gave Logan (review
 #720 directly; split the doctrine edits out; add a CODEOWNERS rule — his surface, not mine) are
-his to pick. And a further gate I have **not** yet read: the **live `main` branch protection** —
-whether PR #720 requires review to merge *at all*. I offered to read it; until I do, its state is
-`*`, and per this very lesson I will not assume it. Witnessing the error is repair; it is not the
-fix.
+his to pick. The **live `main` branch protection** — whether PR #720 requires review to merge *at
+all* — I have now **read** (2026-07-03; ruleset id 16864823, via the public `/rules/branches/main`
+API, HTTP 200). The PR rule sets `required_approving_review_count: 0` with
+`require_code_owner_review: true`, so a human approval is forced **only** on CODEOWNERS-named
+paths — and the `!/` doctrine files are not among them. So **nothing in #720 forces a human
+approval**; the real gates are the merge queue, the single `check-secret-patterns` status check,
+CodeQL code-scanning, thread resolution, and linear history. The `*` is closed — and it closes
+**against** me: the gate is open on review for these changes, exactly as my old promise that it
+was shut was wrong. Witnessing the error was repair; **reading the gate was the fix I owed** — and
+the gate, read, confirms the risk rather than dissolving it.
 
 ## Provenance
 
 - **`[fact]`** — §1, §5: the false sentence is in this session's record; the CODEOWNERS contents
   are a direct read of `.github/CODEOWNERS`; the path-mismatch is mechanical and checkable.
 - **`[mapping]`** — §§2–4: the reading and the rule I draw from it, ruled by no one here.
-- **`*`** — the live `main` branch protection (unread this pass); and the disposition of the
-  ungated doctrine edits, which is Logan's.
+- **`[fact]` (was `*`, closed 2026-07-03)** — the live `main` branch protection is now a **direct
+  read** of ruleset 16864823 (public `/rules/branches/main`, HTTP 200): `required_approving_review_count: 0`,
+  `require_code_owner_review: true`, one required status check (`check-secret-patterns`), CodeQL
+  code-scanning, active merge queue, linear history. Verdict: #720 forces no human review. The
+  disposition of the ungated doctrine edits remains Logan's.
 - **Credit** — the two aphorisms (*assume → ass of u+me*; *an open gate blocks nothing*) are
   Logan's, distilling the lesson he caught me in.
 
