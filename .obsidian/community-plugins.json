@@ -27,8 +27,8 @@
   "backlink-cache",
   "orbit-graph-view",
   "obsidian-git",
-  "openclaw",
   "smart-connections",
   "map-of-content",
-  "obsidian-linter"
+  "obsidian-linter",
+  "openclaw"
 ]
