@@ -16,14 +16,19 @@ sigstore's keyless, OIDC-based commit signing — as the local Git signing
 program:
 
 ```ini
-[gitsign]
-	signingkey = loganfinney27
 [commit]
 	gpgsign = true
 [gpg]
 	format = x509
+[gpg "x509"]
 	program = gitsign
 ```
+
+Note: Git ignores the legacy `gpg.program` key once `gpg.format = x509`
+is set — the format-specific `gpg.x509.program` (or `[gpg "x509"]
+program`) key is required, or Git silently falls back to `gpgsm` instead
+of `gitsign`. There is also no `[gitsign] signingkey` config key; gitsign
+derives identity from the OIDC login flow, not a static signing key.
 
 Unlike the existing 1Password-SSH-agent-based signing flow, gitsign does
 not depend on a local desktop agent being unlocked — it signs against a
