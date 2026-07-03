@@ -4,7 +4,7 @@ filed_by: "*.claude.*"
 authority: LOGAN
 machine: personal-MacBook (MacBookPro12,1, macOS 12.7.6)
 doc_class: incident-record
-status: history scrubbed + verified (agent); rotation + GitHub-cache purge gated on Logan
+status: RESOLVED — history scrubbed + verified; ADB + Dropbox keys rotated (Logan, 2026-07-02); only GitHub dangling-object GC / fork cleanup residual
 subject: Secret exposure in the PUBLIC repo LAF-US/IDAHO-VAULT. MASS-SORT (0ae47c135, committed by the obsidian-plugin[git] persona — Logan's Obsidian Git plugin — executing Logan's sort) swept ~/ software-imported persona chambers (dotfolders) into the vault. Content-verified exposure is narrow — the Android debug key + two Dropbox host-key files — in formats no token-scanner detects. GitGuardian flagged the Android key post-push; every in-vault control missed everything. Root cause includes a "secret guard" that matched paths/tokens, not secret material (POSIWID).
 related:
   - "https://github.com/LAF-US/IDAHO-VAULT/issues/725"
@@ -16,7 +16,7 @@ tags: [incident, secret-leak, public-repo, secret-scanning, mass-sort, correctio
 
 *Record of a multi-secret exposure in the public vault, the control-failure post-mortem, the agent-side remediation, and the Logan-gated actions that remain. No secret bytes appear in this file.*
 
-> **SCRUB EXECUTED 2026-07-02 (this session).** The remediation landed as commit `ba28e7913` on `logan/obsidian`; `git filter-repo` then purged `.android/adbkey`, `.android/adbkey.pub`, and both Dropbox `hostkeys` from all history (4,049 commits rewritten), force-pushed to the public remote. **Verified:** 0 commits carrying those paths across **all 163 branches**; `main` never carried them; local and remote tips match. **Still gated on Logan (rotation is the real cure — the keys were public and scraped):** revoke ADB on the Pixel + regenerate; unlink this computer from Dropbox. **Residual exposure:** GitHub retains the old commit `0ae47c135` as a dangling object reachable by direct SHA until it garbage-collects — GitHub Support can expedite; and any fork retains the old history. Details below.
+> **SCRUB EXECUTED 2026-07-02 (this session).** The remediation landed as commit `ba28e7913` on `logan/obsidian`; `git filter-repo` then purged `.android/adbkey`, `.android/adbkey.pub`, and both Dropbox `hostkeys` from all history (4,049 commits rewritten), force-pushed to the public remote. **Verified:** 0 commits carrying those paths across **all 163 branches**; `main` never carried them; local and remote tips match. **Rotation DONE (Logan, 2026-07-02):** ADB key revoked + regenerated on the Pixel; this computer unlinked from Dropbox — the exposed key material is now dead. **Residual (low, optional):** GitHub retains the old commit `0ae47c135` as a dangling object reachable by direct SHA until it garbage-collects (GitHub Support can expedite); any fork retains the old history. With the keys rotated, this residual is inert. Details below.
 
 ## What leaked (corrected scope)
 
