@@ -1,15 +1,19 @@
 ---
 date created: Monday, April 27th 2026, 10:44:38 pm
-date modified: Monday, June 15th 2026, 10:37:18 am
+date modified: Thursday, July 2nd 2026, 8:23:48 pm
+title: TO DO LIST
+aliases:
+  - TO DO LIST
+linter-yaml-title-alias: TO DO LIST
 ---
 
-## Active
+# TO DO LIST
 
+[[TO DO LIST]]
+
+- HOME
+- [ ] YNAB SET UP
+- WORK
+- [ ]  RETURN PAPERS
 - VAULT
-- [ ] FIX DAILY NOTE SYNCING / CARRYFORWARD
-	- [ ] Tasks completed on a DAY were not checked off here.
-	- [ ] Tasks left unfinished on a DAY were not added to here.
-	- [ ] Tasks completed on a daily note should be reflected here intentionally.
-	- [ ] Tasks left unfinished on a daily note should be carried forward intentionally.
-- PERSONAL
-- [ ] BANKING AND YNAB
+- [ ] ONE DAY AT A TIME
