@@ -57,6 +57,10 @@ summaries I could reach enumerate only the **five organizations** above in total
 partner is unnamed** in what was retrieved (the consortium roster page 403'd). Not invented here —
 flagged for the follow-up pass.
 
+**Lead researcher (added on the follow-up pass):** the core robotic time-perception output is
+authored by **Dr. Michail Maniadakis** (FORTH), with Trahanias as senior author. The first draft
+of this node named the *institution* but not the *person* producing most of the papers. See §5.
+
 ## 3. Significance — `[research — secondary]`
 
 Per the EU write-ups, TIMESTORM took time perception in AI *"from an immature, poorly defined
@@ -78,8 +82,46 @@ subject into a promising new research strand,"* contributing on two fronts at on
 - **Tamim Asfour** (KIT) — known for the **ARMAR** humanoid robots.
 - **Hedderik van Rijn** (Groningen) — cognitive modelling / temporal cognition.
 - **Panos Trahanias** (FORTH) — computer vision and robotics; project coordinator.
+- **Michail Maniadakis** (FORTH) — lead author on the project's robotic time-perception papers;
+  originator (with Trahanias) of the **Generative Time Model** line of work. The workhorse of the
+  actual output.
 
-## 5. Sources — `[research — secondary]`
+## 5. Published research — `[research — secondary]`
+
+Found on the follow-up pass. **Every primary PDF/journal page 403'd through the proxy**, so this is
+the **bibliographic record and abstract-level concepts, not full-text reads.** Lead author
+**M. Maniadakis** with **P. Trahanias** (FORTH); **S. Droit-Volet** (Bourgogne) on the psychology
+side.
+
+**Computational / robotics:**
+- *Time Perception: An Indispensable Trait of Robotic Cognition* — **ICRA 2014** (the manifesto).
+- *Integrated Intrinsic and Dedicated Representations of Time: A Computational Study Involving Robotic Agents* — **Timing & Time Perception 3(3–4), 2015**.
+- *When and How Long: A Unified Approach for Time Perception* — **Frontiers in Psychology 7, 2016**.
+- *Time-Informed, Adaptive Multi-Robot Synchronization* — **SAB 2016 (From Animals to Animats 14), Springer**.
+- *Time-Informed Task Planning in Multi-Agent Collaboration* — **Cognitive Systems Research, 2017**.
+- *Episodic Memory Formulation and Its Application in Long-Term HRI* (Sigalas, Maniadakis, Trahanias) — **IEEE RO-MAN 2017**.
+- *Time-Aware Multi-Agent Symbiosis* — **Frontiers in Robotics and AI, 2020** (later capstone synthesis).
+
+**Psychology of time (Droit-Volet et al.):**
+- *Emotionally Modulated Time Perception for Prioritized Robot Assistance* (Droit-Volet, Monceau, Berthon, Trahanias, Maniadakis) — **HRI '17**.
+- *Passage of Time Judgements… Not Related to Duration Judgements Except for Long Durations* — **Acta Psychologica 173, 2017**.
+
+**The signature technical idea — Generative Time Models (GTMs):** models that **predict the
+duration of an unfolding activity through real-time estimation of the temporal quantities that
+characterize it**, paired with an **intrinsic-vs-dedicated** distinction (two ways a cognitive
+system can represent time, integrated in the 2015 paper). The applied arc: *perceive
+elapsed/remaining time → plan and synchronize tasks across agents (turn-taking, action-sync) →
+prioritize assistance by emotionally-modulated urgency → remember it episodically over the long
+term.* Framing thesis: *the inability of robots to perceive the flow of time hinders their
+integration into a world where nearly all human activity is time-dependent.*
+
+**Publication sources:** [timestorm.eu — Publications](http://timestorm.eu/repository/publications/) ·
+[Maniadakis homepage (FORTH)](http://users.ics.forth.gr/~mmaniada/index.htm) ·
+[ICRA14 PDF](http://users.ics.forth.gr/~mmaniada/papers/ICRA14.pdf) ·
+[Springer — Multi-robot Synchronization](https://link.springer.com/chapter/10.1007/978-3-319-43488-9_21) ·
+[Frontiers — Time-Aware Multi-Agent Symbiosis (2020)](https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2020.503452/full).
+
+## 6. Sources — `[research — secondary]`
 
 - timestorm.eu — Consortium: <http://timestorm.eu/sample-page/> *(403 this pass)*
 - EU "Shaping Europe's digital future" — *TIMESTORM: How to make robots time-aware*:
@@ -92,14 +134,19 @@ subject into a promising new research strand,"* contributing on two fronts at on
 - arXiv 2007.11845 — *Time Perception: A Review on Psychological, Computational and Robotic Models*:
   <https://arxiv.org/pdf/2007.11845>
 
-## 6. Open / to verify — `*`
+## 7. Open / to verify — `*`
 
 - The **unnamed sixth partner** (coordinator + 5 others; only 5 orgs retrieved).
-- Direct reads of the primary pages (all 403'd) to confirm dates, budget, and the full roster.
-- The consortium's **actual published research** — papers, deliverables, robot demonstrations —
-  **pending the follow-up pass** (timestorm.eu/repository/publications, plus Scholar/arXiv).
+- Direct reads of the primary pages (all 403'd this session) to confirm dates, budget, full roster.
+- **Full-text reads** of the §5 publications — the follow-up pass found the *bibliographic record*,
+  but every PDF/journal page 403'd through the proxy, so the GTM equations, methods, and results
+  are **named but not read.**
 
 ---
 
 *Compiled by Claude Code, session `…01Fipj4vEJ5ADPuunn9ed5Hd`, 2026-07-03. Secondary-sourced; the
 seams are marked so a later pass can tighten them.*
+
+*Revision (2026-07-03): follow-up pass added §5 (published research) and Dr. Michail Maniadakis as
+lead author; the primary full-texts still 403'd, so §5 remains bibliographic-level
+`[research — secondary]`.*
