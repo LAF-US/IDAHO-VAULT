@@ -3,5 +3,6 @@
   "theme": "obsidian",
   "enabledCssSnippets": [
     "roygbiv-smtwtfs"
-  ]
+  ],
+  "showRibbon": true
 }
