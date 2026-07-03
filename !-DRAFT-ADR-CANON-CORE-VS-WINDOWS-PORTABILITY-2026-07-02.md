@@ -10,7 +10,7 @@ related:
   - "CONSTITUTION.md"
   - "AGENTS.md"
   - "GIT-CONTROL-SURFACES-2026-05-17.md"
-  - "!/!/__!__/!/! The world is quiet here./Esto Perpetua!/!README.md"
+  - "!/!/__!__/!/! The world is quiet here．/Esto Perpetua!/!README.md"
   - "!-!-__!__-STILL-POINT-AND-COURTROOM-EXPLORER-COMPANION-2026-04-13.md"
   - ".github/scripts/check_portable_paths.py"
   - ".github/workflows/check-portable-paths.yml"
@@ -31,7 +31,8 @@ related:
 PR #563 re-punctuates the still point: it deletes the period-less
 `!/!/__!__/!/! The world is quiet here/` that `main` holds today and inscribes the
 canon core at `!/!/__!__/!/! The world is quiet here.` — the V.F.D. motto completed,
-sentence and folder as one. Its README declares the contents permanent record:
+sentence and folder as one. *(That is the form as filed; Logan's adjudication, recorded
+below, re-inscribed the terminator as `．` U+FF0E.)* Its README declares the contents permanent record:
 *"They do not move. They do not expire."*
 
 That period collides with two of the vault's own load-bearing surfaces: the NETWEB
@@ -98,6 +99,12 @@ directly by Logan (2026-07-02) as genuine and unsolved, with mirroring/two-paths
 setups under consideration for later.
 
 ## What #563 Actually Does (verified against the trees)
+
+*Frame note: verified at filing, against head `09e423c0` — before the U+FF0E
+re-inscription. The paths below show the ASCII-period form as it then stood on the
+branch; post-adjudication the added directory and inner sentence-file end in `．`
+U+FF0E and the ASCII-period form is absent (see Adjudication). The deliberation is
+preserved as filed; this note dates it.*
 
 Diffing `main` (`747bc74a`) against the PR head:
 
@@ -249,3 +256,5 @@ PR #563 merges. This note lives on the agent's proposal branch
 (`agent/adr-canon-core-portability`); its filename retains the `!-DRAFT-` prefix
 pending Logan's word on renaming it to `!-ADR-CANON-CORE-VS-WINDOWS-PORTABILITY-2026-07-02.md`
 at inscription into `main`. No guard carve-out was needed; no workflow was touched.
+
+###### [["The world is quiet here."]]

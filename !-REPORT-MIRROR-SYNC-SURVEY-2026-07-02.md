@@ -7,7 +7,7 @@ status: draft
 related:
   - "!-DRAFT-ADR-CANON-CORE-VS-WINDOWS-PORTABILITY-2026-07-02.md"
   - "VAULT-CONVENTIONS.md"
-  - "!/!/__!__/!/! The world is quiet here./Esto Perpetua!/!README.md"
+  - "!/!/__!__/!/! The world is quiet here．/Esto Perpetua!/!README.md"
   - ".github/scripts/check_portable_paths.py"
 ---
 
@@ -91,3 +91,5 @@ ever rescues it. The extensionless *file* `Esto Perpetua!/! The world is quiet h
 - Obsidian forum: staff statements (2023, 2025, 2026), obsidian-help #1001, vault-names bug
 - cygwin.com/cygwin-ug-net/using-specialnames.html; cygwin ML (Vinschen, 2008–2010)
 - microsoft/WSL #2689 (incl. ntfs-3g `windows_names` manpage excerpt)
+
+###### [["The world is quiet here."]]

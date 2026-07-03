@@ -182,4 +182,4 @@ alongside the session's other artifacts on `agent/adr-canon-core-portability`, o
 research notes live when he classifies them). Reserved matters untouched. I propose; Logan
 inscribes.
 
-###### "The world is quiet here."
+###### [["The world is quiet here."]]
