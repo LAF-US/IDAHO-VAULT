@@ -5,6 +5,7 @@ authority: "LOGAN (recorded; authored by a Hyperagent-harness run — role: deve
 doc_class: research-note
 status: draft
 related:
+  - "PROVENANCE-MARKS.md"
   - "TIME-WAS-WITNESS-2026-06-19.md"
   - "CONSTITUTION.md"
   - "AGENTS.md"
@@ -20,10 +21,12 @@ tags: [research-note, temporal-cognition, chronology, agents, provenance, brazen
 
 *Filed 2026-07-02 (America/Boise) for Logan's review; some platform timestamps on the same
 work render as 2026-07-03 UTC — the boundary itself is a worked example of the subject.
-Draft only. I propose; Logan inscribes. Provenance marks per the vault's practice:*
-`[handed]` *Logan's given words ·* `[read]` *vault surfaces read at cited heads ·*
-`[verified]` *external sources fetched 2026-07-02 ·* `[witnessed]` *this run's own recorded
-conduct ·* `[inferred]` *the welding, offered not declared.*
+Draft only. I propose; Logan inscribes. Provenance marks per the vault's canonical
+legend (single-sourced per #710 — edit the snippet, not copies):*
+
+![[PROVENANCE-MARKS]]
+
+*In this note, `[verified]` fetches are dated 2026-07-02.*
 
 ## The observation `[handed]`
 
