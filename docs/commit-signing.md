@@ -38,15 +38,17 @@ signing" failure mode named in #398.
 
 ## Setup
 
-1. Install gitsign (requires Go):
+1. Install gitsign — three options:
 
-   ```bash
-   go install github.com/sigstore/gitsign@latest
-   ```
-
-   Or via a package manager where available (e.g. `brew install sigstore/tap/gitsign`
-   on macOS). There is no Windows-native installer at time of writing --
-   Windows users need a Go toolchain or WSL.
+   - **Go**: `go install github.com/sigstore/gitsign@latest`
+   - **Homebrew** (macOS/Linux): `brew install sigstore/tap/gitsign`
+   - **Prebuilt binary** (Windows/Linux/macOS/FreeBSD, amd64/arm64):
+     download from the [gitsign releases page](https://github.com/sigstore/gitsign/releases)
+     and put it on `PATH`. gitsign's release build does target Windows
+     (`.goreleaser.yaml`: `linux`, `darwin`, `freebsd`, `windows`) even
+     though the project's own quick-install docs only call out Homebrew/Go
+     — a Go toolchain or WSL is not required on Windows, just for the Go
+     install path specifically.
 
 2. Confirm `gitsign` is on `PATH`:
 
@@ -59,6 +61,19 @@ signing" failure mode named in #398.
    triggers an OIDC login flow in your browser (GitHub identity by
    default); subsequent commits reuse the short-lived certificate until
    it expires.
+
+## CI / headless signing
+
+The interactive browser login flow in step 3 only applies to local,
+human-driven commits. For CI or other headless environments (e.g. a
+GitHub Actions job making a commit), gitsign needs an OIDC token source
+instead of a browser popup — typically `permissions: id-token: write` on
+the calling workflow job, so gitsign can obtain a Sigstore-recognized
+OIDC token from GitHub Actions' own identity provider without any
+interactive step. Without that permission, signing will fail in CI with
+no browser to fall back on. This repo's own CI-signing wiring (if/when
+built) is out of scope for this PR — see the "Open questions" section
+below.
 
 ## Verifying a signed commit
 
