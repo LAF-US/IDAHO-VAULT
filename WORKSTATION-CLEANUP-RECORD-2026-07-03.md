@@ -13,7 +13,8 @@ tags:
   - codex
 date: 2026-07-03
 recorded: 2026-07-03 04:21:40 MDT
-status: quarantine-ready-for-disposal
+disposed: 2026-07-03 04:26:03 MDT
+status: quarantine-disposed
 ---
 
 # Workstation Cleanup Record 2026-07-03
@@ -86,12 +87,22 @@ Manifest files present:
 /Users/logan/.local/state/startup-cleanup/2026-07-03-spotify-update/MANIFEST.md
 ```
 
+## Disposal
+
+At 2026-07-03 04:26:03 MDT, Logan approved permanent quarantine disposal. Codex removed the contents of `/Users/logan/.local/state/startup-cleanup`.
+
+Verification:
+
+- `/Users/logan/.local/state/startup-cleanup` remained present as an empty directory.
+- `du -sh /Users/logan/.local/state/startup-cleanup` reported `0B`.
+- Root-owned quarantine remnants required an administrator-authenticated removal.
+- A follow-up residue sweep produced only known false-positive Apple/iWork substring matches.
+
 ## Remaining Work
 
-Two main work items remain after this record:
+One main work item remains after this record:
 
-1. Permanently remove the quarantine contents after Logan approves disposal.
-2. Address the Adobe cluster separately.
+1. Address the Adobe cluster separately.
 
 Adobe remains intentionally unresolved because it is larger and riskier than the low-hanging cleanup batch. Known Adobe issues include broken Creative Cloud launch agents, Acrobat / Reader overlap, and large Adobe support folders.
 
@@ -99,4 +110,4 @@ Adobe remains intentionally unresolved because it is larger and riskier than the
 
 - Time Machine had completed and the backup drive had been disconnected before this record was written.
 - No Time Machine backup bundle was modified during Epson residue cleanup.
-- This note was written before permanent quarantine deletion, so it is a pre-disposal accounting record.
+- This note began as a pre-disposal accounting record and was updated after quarantine disposal completed.
