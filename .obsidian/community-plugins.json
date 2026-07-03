@@ -20,7 +20,6 @@
   "phone-to-roam-to-obsidian",
   "moviegrabber",
   "move-cursor-on-startup",
-  "map-of-content",
   "obsidian-footnotes",
   "metadata-menu",
   "quickadd",
@@ -29,5 +28,6 @@
   "orbit-graph-view",
   "obsidian-git",
   "openclaw",
-  "smart-connections"
+  "smart-connections",
+  "map-of-content"
 ]
