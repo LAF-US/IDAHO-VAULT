@@ -63,8 +63,12 @@ jobs:
         # outdated, bot-only threads are attest-resolved; needs-fix is left untouched.
         # Exits 0 even if some threads fail (per-thread errors are recorded, not raised),
         # so this step stays low-noise.
+        # resolveReviewThread has a documented history of being FORBIDDEN for the
+        # integration token (the #398 boundary, noted in review_feedback_loop.py's own
+        # docstring) — prefer the user-scoped MERGE_QUEUE_TOKEN, same as this job's
+        # arm/enqueue steps, so the resolve isn't silently skipped under GITHUB_TOKEN.
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.MERGE_QUEUE_TOKEN || secrets.GITHUB_TOKEN }}
           OWNER: ${{ github.repository_owner }}
           REPO: ${{ github.event.repository.name }}
           PR: ${{ github.event.pull_request.number }}
