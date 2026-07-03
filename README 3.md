@@ -23,24 +23,40 @@ local clients their socket back (CLI without env overrides, and the
 - FileVault is OFF (verified) — step 1 is the belt for the whole disk's
   credential surface, not just Tailscale.
 
-## The six touchpoints (Logan)
+## Install method — Homebrew, not a script (revised 2026-07-02)
 
-1. **FileVault on** — System Preferences → Security & Privacy → FileVault →
-   Turn On. Local recovery key → 1Password. No waiting needed afterward.
-   (Never via agent shell — the recovery key must not enter a transcript.)
-2. **Teardown** — `sudo sh ~/IDAHO-VAULT/01-teardown-gui-variant.sh`
-3. **Reboot.** While rebooting, in https://login.tailscale.com/admin/machines
-   delete BOTH stale machines: `logans-macbook-pro` AND `logans-macbook-pro-1`
-   (frees the bare name for the fresh registration).
-4. **Install** — `sh ~/IDAHO-VAULT/02-install-oss-daemon.sh`
-   (~5–10 min go build; `tailscale up` prints the login URL — one browser auth,
-   the last identity churn).
+The earlier `02-install-oss-daemon.sh` (raw `go install …@latest`, run as root)
+was deleted after Logan rightly challenged running an unpinned from-source
+script with sudo. Replaced with Homebrew: **pinned 1.98.8, publicly-reviewed
+[formula](https://github.com/Homebrew/homebrew-core/blob/HEAD/Formula/t/tailscale.rb),
+each command transparent.** (No prebuilt bottle for macOS 12, so it still
+compiles from source — inherent to the OSS daemon here — but at a pinned,
+checksum-verified version, not "whatever's newest".)
+
+## Touchpoints (Logan)
+
+1. **FileVault on** — ✓ DONE 2026-07-02.
+2. **Teardown** — ✓ DONE (App Store app removed; macsys extension uninstalled on
+   reboot; clean slate verified).
+3. **Reboot** — ✓ DONE. *(Still open: delete BOTH stale machines
+   `logans-macbook-pro` + `logans-macbook-pro-1` at
+   https://login.tailscale.com/admin/machines before `tailscale up` registers,
+   so the fresh node reclaims the bare name.)*
+4. **Install (current step)** — Homebrew hit a pre-existing `/usr/local`
+   permission leftover from the old App Store install; the transparent fix +
+   install, each command explainable:
+   ```
+   sudo chown -R $(whoami) /usr/local/share/man/man8  # old install left this root-owned; brew needs it
+   sudo rm /usr/local/bin/tailscale                   # dead wrapper → deleted App Store app
+   brew install tailscale                             # no sudo; pinned 1.98.8
+   sudo brew services start tailscale                 # start tailscaled as a system daemon
+   sudo tailscale up                                  # register — prints the browser auth URL
+   ```
 5. **Ping Claude** for the verification pass (below).
 6. **Task IV** — pair the Pixel against the finally-stable identity.
 
-Expected mid-process: the OpenClaw gateway crash-loops between steps 2 and 5
-(it currently binds the tailnet interface, which won't exist until `up`).
-Self-heals at step 5.
+OpenClaw is already flipped to `bind: loopback`, so it is NOT crash-looping
+during the install window (survived the reboot clean on loopback).
 
 ## Step 5 — agent verification pass (Claude)
 
@@ -61,10 +77,10 @@ Self-heals at step 5.
 
 ## Rollback
 
-`sudo tailscaled uninstall-system-daemon`, reinstall the Standalone .pkg
-(still in ~/Downloads), reboot. OpenClaw config backups in
+`sudo brew services stop tailscale && brew uninstall tailscale`, then reinstall
+a Standalone/App Store variant if needed, reboot. OpenClaw config backups in
 `~/openclaw-preupdate-backups/` (`pre-tailnet-bind`, `pre-tailscale-serve`,
-`pre-resolver-repoint`, plists).
+`pre-resolver-repoint`, `pre-reboot-loopback`, plists).
 
 ## Related staging
 
