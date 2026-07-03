@@ -76,8 +76,11 @@ jobs:
         # Same invocation proven to arm PRs in batch-arm-merge-queue. Tolerate failure:
         # a PR that can't be armed (already queued, conflicting, or gated awaiting review)
         # must not fail the run — branch protection decides what actually merges.
+        # The arm actor becomes the future enqueue actor, and GITHUB_TOKEN-actored
+        # events never dispatch workflow runs (GitHub anti-recursion) — prefer the
+        # user-scoped MERGE_QUEUE_TOKEN so armed PRs enqueue with a dispatching actor.
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.MERGE_QUEUE_TOKEN || secrets.GITHUB_TOKEN }}
           REPO: ${{ github.repository }}
           PR: ${{ github.event.pull_request.number }}
         run: |
