@@ -1,6 +1,12 @@
 ---
 date created: Tuesday, April 14th 2026, 8:38:57 pm
-date modified: Tuesday, April 14th 2026, 8:41:04 pm
+date modified: Thursday, July 2nd 2026, 10:39:37 pm
+title: WHERE
+aliases:
+  - WHERE
+linter-yaml-title-alias: WHERE
 ---
 
-[[A|a]] [[cobblestone]] [[ROAD|road]] [[stretches]] [[under]] [[YOUR|your]] [[FEET|feet]].
+# WHERE
+
+[[A|a]] [[cobblestone]] [[ROAD|road]] [[stretches]] [[under]] [[YOUR|your]] [[FEET|feet]]…
