@@ -150,3 +150,6 @@ seams are marked so a later pass can tighten them.*
 *Revision (2026-07-03): follow-up pass added §5 (published research) and Dr. Michail Maniadakis as
 lead author; the primary full-texts still 403'd, so §5 remains bibliographic-level
 `[research — secondary]`.*
+
+*Successor project (added 2026-07-03): the commercialization follow-on **ENTIMENT** (GA 754423) is
+documented in `[[RESEARCH_ENTIMENT-Temporal-Cognition-Toolbox-2026-07-03]]`.*
