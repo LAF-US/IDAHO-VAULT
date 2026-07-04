@@ -46,7 +46,7 @@ class VersionTransitionCheckerTest(unittest.TestCase):
 
     def test_versioned_registry_field_requires_transition_record(self) -> None:
         findings = version_checker.findings_for_patches(
-            {'swarm.json': '@@\n-  "registry_version": "a",\n+  "registry_version": "b",\n'},
+            {'swarm.json': '@@\n-    "version": "1.2.0",\n+    "version": "1.3.0",\n'},
             actor="codex",
         )
         self.assertEqual(findings, ["swarm.json"])

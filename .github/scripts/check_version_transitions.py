@@ -35,7 +35,7 @@ PYPROJECT_PATTERN = re.compile(
     ^\s*"[^"]*(?:==|~=|>=|<=|!=|>|<)[^"]*"\s*,?\s*$
     """
 )
-JSON_VERSION_PATTERN = re.compile(r'"(?:version|registry_version|crewai_version)"\s*:')
+JSON_VERSION_PATTERN = re.compile(r'"version"\s*:')
 AUTOMATION_VERSION_PATTERN = re.compile(
     r"""(?ix)
     \buses:\s*[^\s]+@

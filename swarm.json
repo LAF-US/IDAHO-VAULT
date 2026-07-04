@@ -4,7 +4,6 @@
   "// conventions": "VAULT-CONVENTIONS.md",
   "principal": "Logan Finney",
   "vault_authority": "https://github.com/LAF-US/IDAHO-VAULT",
-  "registry_version": "2026-06-10 (durable registration, no liveness inference)",
   "wakeup_protocol": {
     "quick_start": "!/WAKEUP.md",
     "boot_order": [
@@ -1320,7 +1319,6 @@
     "// note": "CrewAI is a registered layer under re-foundation. swarm.json registers the layer but does not carry CrewAI crew, task, or runner topology.",
     "manifest": ".crewai/manifest.json",
     "manifest_doc": ".crewai/MANIFEST.md",
-    "crewai_version": "1.14.1",
     "status": "refoundation",
     "output_dir": "!/CREWAI/",
     "runtime_class": "vault-contained local runtime slice",
