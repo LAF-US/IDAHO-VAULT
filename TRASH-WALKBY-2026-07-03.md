@@ -13,6 +13,19 @@ No Trash contents were moved, restored, opened, or deleted during this pass. Sen
 - Top-level directories: 671
 - Top-level files: 6,540
 
+## Mounted Drive Context
+
+Mounted volumes observed after the first walkby:
+
+- Internal APFS Data volume: about 768Gi used, 144Gi available.
+- `/Volumes/timemachine`: external 1TB Journaled HFS+ Time Machine destination, about 943GB used and 56.7GB free. Time Machine reported `Running = 0`.
+- `/Volumes/Vault`: external 2TB exFAT volume, about 361.9GB used and 1.6TB free. Mounted writable with no ownership semantics.
+- Local Time Machine snapshots existed through `com.apple.TimeMachine.2026-07-03-210454.local`.
+
+`tmutil latestbackup` returned an XPC connection error during the check, so the latest external backup path was not confirmed by that command. The mounted Time Machine destination and local snapshot list were confirmed separately.
+
+The `Vault` external has ample space but was slow to enumerate at the root, so it should be treated as an archive drive rather than casual scratch space. The Time Machine disk is nearly full and should not be used as a staging destination.
+
 ## Largest Buckets
 
 - `Traffyk Jam`: 39G
@@ -79,6 +92,28 @@ The top-level app/installer/archive bucket totals about 18G. Largest entries inc
 
 These are mechanically more plausible disposal candidates than the media/project material, but still should be reviewed as a batch before deletion.
 
+Installed-app comparison:
+
+- Installed copies currently exist for `Gemini 2.app`, `GitHub Desktop.app`, and `Steam.app`.
+- Installed active tools exist for `Claude.app`, `Codex.app`, `Obsidian.app`, `Android Studio.app`, and `zoom.us.app`; matching DMGs/installers in Trash look like installers, not the live apps.
+- `Tailscale.app` and Tailscale installer packages are in Trash, but Tailscale work was active in a parallel agent thread, so leave these out of any first disposal batch.
+
+Plausible software-only first batch, pending explicit approval:
+
+- Old conferencing and sync tools already in Trash: `Cisco Webex Meetings.app`, `Webex (1).pkg`, `Webex (2).pkg`, `GoToMeeting.app`, `Backup and Sync.app`, `MusicManager.app`, `MusicManager.prefPane`.
+- Old app installers/downloads: `Obsidian 1.6.5.dmg`, `Obsidian 1.6.5 (1).dmg`, `Git 2.23.0 for Mavericks.dmg`, `Node v20.15.0.pkg`, `node-v24.15.0.pkg`, `MacPorts-2.12.5-12-Monterey.pkg`, `Dropbox Installer.dmg`, `DropboxInstaller.dmg`.
+- Duplicate/current-tool installers, likely re-downloadable: `Codex.dmg`, `Codex (1).dmg`, `Claude.dmg`, `GitHub-Copilot-darwin-x64.dmg`.
+- Old app bundles where a current or alternative install exists or the app was already discarded: `GitHub Desktop.app`, `GitHub Copilot.app`, `Gemini 2.app`, `Steam.app`, `Steam 1.03.35 AM.app`, `Steam 7.12.16 PM.app`.
+
+Hold out of first batch:
+
+- `Tailscale.app`, `Tailscale-latest-macos.pkg`, `Tailscale-1.98.5-macos.pkg`: parallel Tailscale work in progress.
+- `EOSWebcamUtility-MAC1.0.pkg`: camera/OBS stack relevance.
+- `obs-streamelements-setup.pkg`: OBS/streaming stack relevance.
+- Microsoft Office app bundles: large and probably old, but keep as a distinct human decision because the total is about 9.4G.
+- `android-studio-quail1-patch2-mac.dmg`: Android Studio is installed; likely disposable, but large enough to ask explicitly.
+- Archive-like ZIPs with personal/project names: `FINNEY.zip`, `ReclaimID-BorahPark-photos.zip`, `Mockups-round-2.zip`, `7_23_press_conference_audio.zip`.
+
 ## Adobe In Trash
 
 The existing `.Trash/Adobe` folder is about 11G and appears dominated by Premiere Pro state/cache:
@@ -106,4 +141,3 @@ Do not add these to Trash until the Trash strategy is chosen.
 - Plausible first disposal batch after review: old app bundles, installers, duplicate DMGs, old conferencing/software packages already in Trash.
 - Plausible special handling: password/credential/token-named files, especially the two `Passwords*.csv` files.
 - Plausible separate Adobe decision: `.Trash/Adobe` Premiere cache/state, distinct from Acrobat/Reader.
-
