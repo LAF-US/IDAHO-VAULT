@@ -109,6 +109,37 @@ Human archive material:
 
 - Large media/project folders such as `Traffyk Jam`, `IDLEG 2021`, `Sand Dunes`, `SWEET LAND`, `Borah polls Nov 2020`, `FREELANCE`, and Final Cut bundles should be reviewed as archive/retention material rather than treated as software cleanup.
 
+## Review Quarantine Executed
+
+After review, candidate material was moved out of Trash into:
+
+`/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine`
+
+This was a quarantine/rescue move, not deletion and not a live restore. Nothing was imported into the live Vault. Future Vault import should only happen after hygiene and secret review.
+
+Local receipt:
+
+`/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/MANIFEST.md`
+
+Moved categories:
+
+- `media-project-review`: large media/project folders and Final Cut bundles.
+- `loose-media-review`: loose top-level media files.
+- `vault-repo-projects`: repo/vault-like folders including `IDAHO-VAULT`, `THE-GEMSTONE`, `PRIVATE`, `FREELANCE`, `.git`, and `.obsidian`.
+- `loose-docs-data-assets-review`: loose top-level document, data, image, and design assets.
+- `vault-markdown-fragments-review`: all remaining loose top-level Markdown fragments.
+- `sensitive-personal`: password/credential/tax/resume/personal-profile named files.
+- `vault-governance-fragments`: agent, Vault governance, mesh, OpenRouter, and OpenClaw fragments.
+
+Result:
+
+- Review quarantine total: about 139G.
+- Trash total after rescue pass: about 40G.
+- Remaining top-level loose `.md` files in Trash: 0.
+- Remaining top-level loose media files in Trash matching swept extensions: 0.
+- Remaining top-level loose document/data/image/design files matching swept extensions: 0.
+- Previously prepared software-disposal candidate batch remained intact in Trash.
+
 ## Software-Like Trash
 
 The top-level app/installer/archive bucket totals about 18G. Largest entries include:
