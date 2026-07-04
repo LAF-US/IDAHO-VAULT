@@ -403,7 +403,7 @@ While alternatives like JavaScript (for full-stack), .NET (for enterprise Window
 
 - GitHub repositories for each framework named in the Framework Adoption table above — source for primary/secondary language, GitHub star counts, and status; consult each repository directly (About panel, language breakdown, and Insights tab) for current figures
 - Each framework's own `pyproject.toml` / packaging metadata — source for the `requires-python` minimums cited in the Version Requirements table
-- [Python Packaging Index (PyPI)](https://pypi.org/) — package download and adoption statistics
+- [Python Package Index (PyPI)](https://pypi.org/) — package download and adoption statistics
 - [Python Software Foundation](https://www.python.org/psf-landing/) — language stewardship and governance documentation
 - [Stack Overflow Developer Survey](https://survey.stackoverflow.co/) — language and framework usage data
 
