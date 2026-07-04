@@ -14,7 +14,8 @@ tags:
 date: 2026-07-03
 recorded: 2026-07-03 04:21:40 MDT
 disposed: 2026-07-03 04:26:03 MDT
-status: quarantine-disposed
+maxon_cleanup: 2026-07-03 21:03:29 MDT
+status: active-cleanup-continued
 ---
 
 # Workstation Cleanup Record 2026-07-03
@@ -111,3 +112,39 @@ Adobe remains intentionally unresolved because it is larger and riskier than the
 - Time Machine had completed and the backup drive had been disconnected before this record was written.
 - No Time Machine backup bundle was modified during Epson residue cleanup.
 - This note began as a pre-disposal accounting record and was updated after quarantine disposal completed.
+
+## Maxon Cinema 4D Cleanup Update
+
+At 2026-07-03 21:03:29 MDT, Codex quarantined old Maxon Cinema 4D app-folder installs discovered through Launchpad cleanup:
+
+```text
+/Users/logan/.local/state/startup-cleanup/2026-07-03-maxon-cinema4d-quarantine
+```
+
+Moved:
+
+- `/Applications/Maxon Cinema 4D R21`
+- `/Applications/Maxon Cinema 4D R22`
+
+Approximate quarantine size:
+
+```text
+1.5G
+```
+
+Launchpad rows removed:
+
+- `Cineware`
+- `Cinema 4D`
+- `Cinema 4D Lite`
+- `Cinema 4D Team Render Client`
+- `Cinema 4D Team Render Server`
+- `Commandline`
+- `c4dpy`
+
+Post-check:
+
+- No Maxon/Cinema 4D Launchpad rows remained.
+- No Maxon/Cinema 4D paths remained under `/Applications` or `/Applications/Utilities`.
+- No Maxon/Cinema 4D launch agents, package receipts, running processes, or obvious Library support folders were found before quarantine.
+- Dock was restarted so Launchpad would refresh.
