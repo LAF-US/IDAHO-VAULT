@@ -1,11 +1,19 @@
 ---
-title: "Tailscaled on macOS"
+title: "- Tailscaled on macOS"
 source: "https://github.com/tailscale/tailscale/wiki/Tailscaled-on-macOS"
 author:
 published:
 created: 2026-07-03
 description: "The easiest, most secure way to use WireGuard and 2FA. - Tailscaled on macOS · tailscale/tailscale Wiki"
+aliases:
+  - "- Tailscaled on macOS"
+linter-yaml-title-alias: "- Tailscaled on macOS"
+date created: Friday, July 3rd 2026, 2:58:41 am
+date modified: Friday, July 3rd 2026, 7:58:18 pm
 ---
+
+# - Tailscaled on macOS
+
 There are [multiple ways to use Tailscale on macOS](https://tailscale.com/kb/1065/macos-variants/). The recommended way is to always install the **Standalone variant**, available for [download](https://tailscale.com/download/) from the Tailscale website.
 
 This page is about how to use the open source, non-GUI `tailscaled` and `tailscale` binaries. This is only recommended for advanced users.

@@ -1,11 +1,19 @@
 ---
-title: "Audacity ® | Download for macOS"
+title: "- Audacity ® _ Download for macOS"
 source: "https://www.audacityteam.org/download/mac/"
 author:
 published:
 created: 2026-07-03
 description: "Download Audacity for macOS and OS X"
+aliases:
+  - "- Audacity ® _ Download for macOS"
+linter-yaml-title-alias: "- Audacity ® _ Download for macOS"
+date created: Friday, July 3rd 2026, 3:40:05 am
+date modified: Friday, July 3rd 2026, 7:59:23 pm
 ---
+
+# - Audacity ® \_ Download for macOS
+
 ## Download for macOS
 
 Current version 3.7.8

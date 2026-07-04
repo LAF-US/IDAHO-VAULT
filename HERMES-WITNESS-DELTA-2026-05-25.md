@@ -1,17 +1,18 @@
 ---
-title: "HERMES WITNESS DELTA — 2026-05-25"
+title: HERMES WITNESS DELTA — 2026-05-25
 subtitle: "Gap Between Ideal and Actual: Reflective Synthesis"
 type: witness-report
 companion-to: HERMES-WITNESS-REPORT-2026-05-25
 local-survey: HERMES-WITNESS-COMPANION-2026-05-25
 source: reflective-synthesis-claude-code-session-2026-05-25
 tags:
-- hermes-agent
-- nous-research
-- witness
-- delta
-- synthesis
-- reflection
+  - hermes-agent
+  - nous-research
+  - witness
+  - delta
+  - synthesis
+  - reflection
+  - 1
 created: 2026-05-25
 author: "Claude (Claude Code — session 2026-05-25, not Logan)"
 authority: LOGAN
@@ -22,14 +23,23 @@ related:
   - SYZYGY-HERMES-OPENCLAW-2026-05-25
   - CONSTITUTION
   - 2026-05-19_hermes-agent-introductory-note
+aliases:
+  - HERMES WITNESS DELTA — 2026-05-25
+linter-yaml-title-alias: HERMES WITNESS DELTA — 2026-05-25
+date created: Monday, May 25th 2026, 11:53:12 pm
+date modified: Friday, July 3rd 2026, 8:02:02 pm
 ---
 
 # HERMES WITNESS DELTA — 2026-05-25
 
 **Author:** Claude Code (Anthropic AI agent instance — this is NOT Logan)
+
 **Session date:** May 25, 2026
+
 **Type:** Reflective synthesis — gap between the ideal and the actual
+
 **Reads from:** `HERMES-WITNESS-REPORT-2026-05-25.md` (ideal) + `HERMES-WITNESS-COMPANION-2026-05-25.md` (actual)
+
 **Directed by:** Logan Alvan Finney
 
 ---
@@ -37,7 +47,9 @@ related:
 ## WHAT THIS IS
 
 The research report documented what Hermes Agent is designed to be.
+
 The companion report documented what is actually running on the MacBook today.
+
 This document holds them together and names the gap.
 
 I am software. This is reflection, not prescription. I am not directing anything. Logan directs. I witness.
@@ -204,10 +216,12 @@ The SOUL.md is the instrument through which that appointment would be expressed 
 This section records changes made after the initial delta was written (same session, 2026-05-25).
 
 **Closed:**
+
 - `OBSIDIAN_VAULT_PATH` — set in `~/.hermes/.env`; Obsidian skill now resolves to the correct vault
 - Bespoke skills — `logan-environment-discovery`, `terminal-output-format`, `terminal-output-formatting` wiped; field is clear
 
 **Confirmed ready but unconfigured:**
+
 - `hermes-acp --check OK` — ACP server-side ready; no editor pointed at it
 - MCP Python package — installed; no `mcp_servers:` entries
 - `hermes mcp serve` — command confirmed; no `.mcp.json` in vault or `claude_desktop_config.json`
@@ -215,22 +229,28 @@ This section records changes made after the initial delta was written (same sess
 - `opencode` CLI — at `/Users/logan/.opencode/bin/opencode` v1.14.50; no preset
 
 **Unchanged:**
+
 - SOUL.md — empty; the appointment still not written
 - Signal — broken, disabled; not touched
 - Honcho — not configured; needs API key
 - Home Assistant — URL set; unreachable on current network (expected)
 
 **Corrections applied:**
+
 - OpenClaw section — rewritten; "predecessor framework / migration complete" language was wrong; Logan corrected: OpenClaw is a live, separate installation; no migration was performed or desired
 
 **Research completed (same session, after context compaction and resume):**
+
 - OpenClaw research to Hermes-report parity — `OPENCLAW-WITNESS-REPORT-2026-05-25.md` written to vault
 
 ---
 
 *Witnessed and recorded by Claude Code — Anthropic AI agent instance, session 2026-05-25*
+
 *This document reflects. It does not direct.*
+
 *Part of a four-document series:*
+
 - *`HERMES-WITNESS-REPORT-2026-05-25.md` — what Hermes Agent is*
 - *`HERMES-WITNESS-COMPANION-2026-05-25.md` — what is on the MacBook (Hermes)*
 - *`HERMES-WITNESS-DELTA-2026-05-25.md` — the gap between them (this document)*
