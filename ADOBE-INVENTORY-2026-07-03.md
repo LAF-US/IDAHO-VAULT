@@ -14,7 +14,8 @@ date: 2026-07-03
 recorded: 2026-07-03 08:59:38 MDT
 service_cleanup: 2026-07-03 19:37:16 MDT
 cache_cleanup: 2026-07-03 19:39:41 MDT
-status: service-layer-and-cache-quarantined
+launchpad_cleanup: 2026-07-03 20:05:33 MDT
+status: service-cache-and-launchpad-quarantined
 ---
 
 # Adobe Inventory 2026-07-03
@@ -31,6 +32,7 @@ Decision boundary from Logan: keep Adobe Acrobat for PDF edge cases where Previe
 - Post-quarantine live Adobe process state was down to Acrobat `AdobeResourceSynchronizer`.
 - A 27 GB user-level Adobe cache/state pass was quarantined after the service cleanup.
 - Remaining large Adobe user support is mostly `Creative Cloud Libraries`, left for human review.
+- Launchpad was cleaned so only Acrobat-family Adobe icons remain.
 - Separate from application support, Creative Cloud Files folders contain about 27.7 GB of user/content data and should be reviewed as documents, not blindly treated as app residue.
 - Trash contains additional Adobe material, including an 11 GB `~/.Trash/Adobe` folder.
 
@@ -354,3 +356,34 @@ Post-check:
 - Remaining bulk is `/Users/logan/Library/Application Support/Adobe/Creative Cloud Libraries` at about `17G`.
 - Live Adobe process state remained Acrobat-only.
 - Live Adobe launch roster remained Acrobat helper/update only.
+
+## Launchpad Cleanup Update
+
+At 2026-07-03 20:05:33 MDT, Codex removed stale non-Acrobat Adobe rows from the Launchpad database after backing it up to:
+
+```text
+/Users/logan/.local/state/startup-cleanup/2026-07-03-adobe-launchpad-cleanup/Launchpad-DB-Backup/db.before-adobe-launchpad-cleanup
+```
+
+Removed Launchpad icons:
+
+- `AAM Registration Notifier`
+- `AASIapp`
+- `AdobeGCClient`
+- `AdobeIPCBroker`
+- `Core Sync`
+- `Setup`
+- `Uninstall Product`
+- `adobe_licutil`
+- `AdobeCleanUpUtility`
+
+Preserved Launchpad icons:
+
+- `Adobe Acrobat`
+- `Acrobat Distiller`
+- `Adobe Acrobat Reader`
+
+Post-check:
+
+- Launchpad DB showed only the three Acrobat-family Adobe rows.
+- Dock was restarted so Launchpad would refresh.
