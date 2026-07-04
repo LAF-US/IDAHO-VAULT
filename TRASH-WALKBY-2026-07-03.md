@@ -105,6 +105,8 @@ Plausible software-only first batch, pending explicit approval:
 - Duplicate/current-tool installers, likely re-downloadable: `Codex.dmg`, `Codex (1).dmg`, `Claude.dmg`, `GitHub-Copilot-darwin-x64.dmg`.
 - Old app bundles where a current or alternative install exists or the app was already discarded: `GitHub Desktop.app`, `GitHub Copilot.app`, `Gemini 2.app`, `Steam.app`, `Steam 1.03.35 AM.app`, `Steam 7.12.16 PM.app`.
 
+Exact manifest prepared at `/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-software-disposal-candidates/MANIFEST.md`. The candidate batch totals about 3.2G and has not been deleted.
+
 Hold out of first batch:
 
 - `Tailscale.app`, `Tailscale-latest-macos.pkg`, `Tailscale-1.98.5-macos.pkg`: parallel Tailscale work in progress.
