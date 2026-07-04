@@ -7,6 +7,9 @@ authority: LOGAN
 related:
   - GARTH-NIX-OLD-KINGDOM-BLOODLINES
   - GARTH-NIX-SUPERIOR-SATURDAY-TOWER
+  - RESEARCH_Keys-to-the-Kingdom-The-Morrow-Days-and-Demesnes-2026-06-04
+  - THE-SEVENFOLD-BODY-SEATS-TRUSTEES-GEMS-2026-06-03
+  - THE-SEVENFOLD-DEMESNES-AND-THEIR-DUTIES-2026-06-21
 ---
 
 # Garth Nix *Sir Thursday* — Chain of Command
@@ -19,9 +22,9 @@ Sibling notes: [[GARTH-NIX-OLD-KINGDOM-BLOODLINES]], [[GARTH-NIX-SUPERIOR-SATURD
 
 ## The Setting
 
-The scene is supplied without a chapter/book label; the identification below (*Sir Thursday*, Keys to the Kingdom #4) is drawn from model memory of the series' character and institution names — **not confirmed by Logan this session** — see Fact-Check Status.
+The scene is supplied without a chapter/book label; the identification below (*Sir Thursday*, Keys to the Kingdom #4) was initially drawn from model memory of the series' character and institution names, and is now corroborated by three independent, previously web-verified vault-canon documents (`RESEARCH_Keys-to-the-Kingdom-The-Morrow-Days-and-Demesnes-2026-06-04.md`, `THE-SEVENFOLD-BODY-SEATS-TRUSTEES-GEMS-2026-06-03.md`, `THE-SEVENFOLD-DEMESNES-AND-THEIR-DUTIES-2026-06-21.md`) — see Fact-Check Status for what is and isn't covered by that corroboration.
 
-- **Colonel Nage** — commands the **Boundary Fort**, an understrength garrison (one Legion cohort, one troop of Borderers) controlling four gates on the edge of the **Great Maze**
+- **Colonel Nage** — commands the **Boundary Fort**, an understrength garrison (one Legion cohort, one troop of Borderers) controlling the four gates — Gold, Silver, Bronze, and Clear (Immaterial Glass) — that seal the single tunnel through the mountain-range wall of the **Great Maze**
 - **The Ephemeris** — each officer's book of standing orders. A change arrives on paper, is laid on the book, and is absorbed into it — "sank into the book, disappearing through the binding like water into a sponge" — after which the book's own text is what changed, not a separable instruction anyone can re-derive or challenge later
 - **Major Pravuil** — a courier from **GHQ** at the Citadel, in a dress uniform copied wholesale from nineteenth-century Earth, carrying a "probably... ensorcelled" swagger-stick. Delivers a modification: all four gates open for twelve hours, overriding standing orders, "to really test the lads"
 - **The anomaly** — Corbie's scouting report: an organized, disciplined force of at least 200,000 Nithlings massed in the transient region, behavior the entire institution's doctrine says is impossible ("the Nithlings are incapable of organization... that is how it has always been and always will be")
@@ -44,6 +47,9 @@ Nage does the right procedural thing — twice — and it does not save him. The
 
 ### Compliance plus local defense are not contradictory
 Nage's last act in the excerpt is neither obedience nor mutiny: he follows the literal order (he does not countermand the open-gates instruction) and, in the same breath, exercises every bit of judgment that is actually his to exercise — garrison preparations Sir Thursday's dispatch never mentioned and never forbade.
+
+### The order is Wrath wearing the shape of a test
+The vault's own crosswalk names Sir Thursday's seat "Master of Laws" — justice-as-force, the law's coercive arm — and his corrupting sin as Wrath (`THE-SEVENFOLD-BODY-SEATS-TRUSTEES-GEMS-2026-06-03.md`). "To really test the lads" is that sin in miniature: an army commander spending an understrength garrison's margin of safety to prove a point to himself, dressed as routine readiness doctrine. The order costs Nage nothing to obey and everything to be wrong about — which is exactly the asymmetry Wrath produces when it sits at the top of a chain of command instead of the bottom.
 
 ---
 
@@ -77,18 +83,21 @@ Nage's last act in the excerpt is neither obedience nor mutiny: he follows the l
 
 **Sources, by tier:**
 - *Primary canon* — the supplied excerpt (two messages, 2026-07-04): all quoted phrases and plot facts above (the Ephemeris mechanism, Pravuil's dispatch, the Nithling host's size, Lepter's and Noon's confirmations, Nage's closing orders) are from that text
-- *Series/book identification* — that this is *Sir Thursday* (Keys to the Kingdom #4, 2006) is model-memory identification from character and institution names (Nage, Pravuil, Ephemeris, Great Maze, Glorious Army of the Architect), **not confirmed by Logan this session**; treat the title/book-number attribution as unverified until checked against the source
+- *Series/book identification* — that this is *Sir Thursday* (Keys to the Kingdom #4, 2006) was initially model-memory identification, **not confirmed by Logan this session** at time of writing. It is now corroborated by three independent, previously web-verified vault-canon documents already on record before this note existed: `RESEARCH_Keys-to-the-Kingdom-The-Morrow-Days-and-Demesnes-2026-06-04.md` (Sir Thursday, Fourth Key, the Great Maze, Wrath, "Glorious Army of the Architect," the Boundary Fort's fixed strongpoints), `THE-SEVENFOLD-BODY-SEATS-TRUSTEES-GEMS-2026-06-03.md` (the "Master of Laws"/justice-as-force crosswalk), and `THE-SEVENFOLD-DEMESNES-AND-THEIR-DUTIES-2026-06-21.md` (the Great Maze's mountain-wall tunnel and its four named gates — Gold, Silver, Bronze, Clear/Immaterial Glass — worked from the Boundary Fort, citing "Sir Thursday, bk 4" by name). The **institutional facts** (Boundary Fort, Great Maze, the four gates, Glorious Army of the Architect, book #4) are corroborated by this independent prior sourcing. The **scene's specific content** — Nage, Pravuil, Lepter, Noon, the Ephemeris mechanism, the 200,000-strong Nithling host — is not described in any of those three catalogue documents and remains sourced only to the excerpt Logan supplied in-session
 - *Witness interpretation* — the PR #721 / batch-arm-merge-queue parallels, warranted by Logan naming "CHAIN OF COMMAND witness," anchored to this session's own record (PR #721, PR #748, workflow run `28716224975` on `batch-arm-merge-queue.yml`, session `session_01SfreowpdMionR3SiGEjRBw`); explicitly not canon and not attributed to Garth Nix
 
 ---
 
 ## Sources & References
 
-- Garth Nix, *Sir Thursday* (Keys to the Kingdom #4, 2006) — untitled early chapter, supplied in-session; book identification unverified this session
+- Garth Nix, *Sir Thursday* (Keys to the Kingdom #4, 2006) — untitled early chapter, supplied in-session; scene content unverified beyond the supplied text, book/institution identification corroborated by the three vault-canon documents below
+- `RESEARCH_Keys-to-the-Kingdom-The-Morrow-Days-and-Demesnes-2026-06-04.md` — vault research note, web-verified 2026-06-04; confirms Sir Thursday, Fourth Key, Great Maze, Wrath, Glorious Army of the Architect, Boundary Fort strongpoints
+- `THE-SEVENFOLD-BODY-SEATS-TRUSTEES-GEMS-2026-06-03.md` — vault crosswalk note; confirms Sir Thursday's "Master of Laws"/justice-as-force seat
+- `THE-SEVENFOLD-DEMESNES-AND-THEIR-DUTIES-2026-06-21.md` — vault research note; confirms the Great Maze's mountain-wall tunnel and its four named gates (Gold, Silver, Bronze, Clear/Immaterial Glass), worked from the Boundary Fort, sourced to "Sir Thursday, bk 4"
 - LAF-US/IDAHO-VAULT PR #721 (`fix(vault): resolve TAROT.md/Tarot.md case collision` — taken over, merged into main, enqueued)
 - LAF-US/IDAHO-VAULT PR #748 (`MERGE_QUEUE_TOKEN extension; version-drift backstops...` — armed, pending readiness)
 - LAF-US/IDAHO-VAULT `.github/workflows/batch-arm-merge-queue.yml` run `28716224975` (2026-07-04, unscoped dispatch: enqueued=1, updated_behind=1, armed_pending=30, failed=1, of 33 open PRs)
 
 ---
 
-*Status: draft — excerpt-anchored claims are primary-sourced; the book/series identification is flagged for verification; witness section is interpretation under Logan's explicit warrant.*
+*Status: draft — excerpt-anchored scene claims are primary-sourced; the book/institution identification is corroborated by prior web-verified vault-canon documents; witness section is interpretation under Logan's explicit warrant.*
