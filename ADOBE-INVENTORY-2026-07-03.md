@@ -12,21 +12,22 @@ tags:
   - codex
 date: 2026-07-03
 recorded: 2026-07-03 08:59:38 MDT
-status: inventory-only
+service_cleanup: 2026-07-03 19:37:16 MDT
+status: service-layer-quarantined
 ---
 
 # Adobe Inventory 2026-07-03
 
-Inventory-only record of the Adobe presence on Logan's Mac after the low-hanging workstation cleanup. No Adobe files were removed or disabled during this inventory.
+Inventory record of the Adobe presence on Logan's Mac after the low-hanging workstation cleanup. It began as inventory-only and was later updated after a non-Acrobat Adobe service-layer quarantine.
 
 Decision boundary from Logan: keep Adobe Acrobat for PDF edge cases where Preview may not be enough.
 
 ## Executive Shape
 
 - Acrobat is current/present and should be preserved unless Logan later changes the decision.
-- Creative Cloud desktop itself appears partially removed/broken: launch agents point to missing Creative Cloud and CCXProcess executables.
-- Adobe Genuine Service is still actively running.
-- Adobe Finder sync/context-menu extensions are still running.
+- Creative Cloud desktop itself appeared partially removed/broken: launch agents pointed to missing Creative Cloud and CCXProcess executables.
+- Adobe Genuine Service and Creative Cloud/Finder extension service pieces were quarantined after the initial inventory.
+- Post-quarantine live Adobe process state was down to Acrobat `AdobeResourceSynchronizer`.
 - The largest reclaimable disk mass is not Acrobat: user Adobe support contains 43 GB, mostly Premiere/Creative Cloud media/library payloads.
 - Separate from application support, Creative Cloud Files folders contain about 27.7 GB of user/content data and should be reviewed as documents, not blindly treated as app residue.
 - Trash contains additional Adobe material, including an 11 GB `~/.Trash/Adobe` folder.
@@ -253,3 +254,57 @@ Conservative next pass, keeping Acrobat:
 - Is Acrobat Pro actually licensed/usable on this personal machine, or is Reader sufficient for the "keep Adobe for edge-case PDFs" requirement?
 - Are the `Creative Cloud Files` folders still needed as archives of IdahoPTV/work assets?
 - Should Adobe Genuine Service remain if Acrobat stays, or should Acrobat be tested after quarantining that service layer?
+
+## Service-Layer Cleanup Update
+
+At 2026-07-03 19:37:16 MDT, Codex quarantined the non-Acrobat Adobe service layer to:
+
+```text
+/Users/logan/.local/state/startup-cleanup/2026-07-03-adobe-service-quarantine
+```
+
+Size after quarantine:
+
+```text
+1.4G  /Users/logan/.local/state/startup-cleanup/2026-07-03-adobe-service-quarantine
+```
+
+Quarantined:
+
+- Broken Creative Cloud launch agents:
+  - `/Library/LaunchAgents/com.adobe.AdobeCreativeCloud.plist`
+  - `/Library/LaunchAgents/com.adobe.ccxprocess.plist`
+- Adobe Genuine / GC service layer:
+  - `/Library/LaunchAgents/com.adobe.GC.Invoker-1.0.plist`
+  - `/Library/LaunchDaemons/com.adobe.agsservice.plist`
+  - `/Library/Application Support/Adobe/AdobeGCClient`
+  - `/Applications/Utilities/Adobe Genuine Service`
+- Creative Cloud installer/sync/service layer:
+  - `/Library/LaunchDaemons/com.adobe.acc.installer.v2.plist`
+  - `/Library/PrivilegedHelperTools/com.adobe.acc.installer.v2`
+  - `/Applications/Utilities/Adobe Application Manager`
+  - `/Applications/Utilities/Adobe Sync`
+  - `/Library/Application Support/Adobe/Adobe OS Extension`
+  - `/Library/Application Support/Adobe/Adobe Desktop Common`
+  - `/Library/Application Support/Adobe/Creative Cloud Libraries`
+  - `/Users/logan/Library/LaunchAgents/com.adobe.AAM.Updater-1.0.plist`
+  - `/Users/logan/Library/LaunchAgents/com.adobe.GC.Invoker-1.0.plist`
+
+Preserved:
+
+- Acrobat DC, Acrobat Distiller, and Acrobat Reader app bundles.
+- Acrobat ARMDC launch agents/daemons and privileged helper tools.
+- User-level Adobe media/cache payloads under `/Users/logan/Library/Application Support/Adobe`.
+- Creative Cloud Files folders.
+
+Post-check:
+
+- Live Adobe launch roster only showed Acrobat helper/update launch items.
+- Live Adobe process list only showed Acrobat `AdobeResourceSynchronizer`.
+- Acrobat DC and Reader still reported version `26.001.21563`.
+- `/Library/Application Support/Adobe` dropped to about 2.3G.
+- `/Users/logan/Library/Application Support/Adobe` remained about 43G because the large user cache/data payload was not moved.
+
+Not moved:
+
+- `/Applications/Adobe Lightroom Classic`, an empty 0B folder, remains. An admin prompt to move it was cancelled because it was nonessential and the main service quarantine was already complete.
