@@ -86,7 +86,7 @@ This triple positioning makes Old Kingdom bloodlines distinct from purely geneal
 ### Inheritance Patterns
 - **Non-Direct Inheritance**: Bloodline abilities don't always pass directly parent-to-child. The next Abhorsen could be a niece, cousin, or sibling
 - **Mixed Bloodlines**: Individuals can inherit from multiple bloodlines. **Lirael** is half-Clayr (mother) and Abhorsen's daughter (Terciel). **Sameth** is son of Abhorsen (Sabriel) and King (Touchstone), identified as Wallmaker successor
-- **Prevalence**: Garth Nix stated bloodlines are "much more prevalent" than appears; many carry potential but without Charter marks and training, they don't manifest abilities
+- **Prevalence**: Garth Nix stated bloodlines are "much more prevalent" than appears; many carry latent potential that goes unrealized without training and effort — a Charter Mark alone (near-universal in the Old Kingdom, see above) is not what activates bloodline ability
 - **Sources**: Garth Nix interview (BKMAG, 2015, primary/author statement); *The Old Kingdom* Wikipedia (secondary reference)
 
 ### Bloodline Strength Factors
@@ -159,7 +159,7 @@ The Charter bloodline system connects to multiple lineage and power frameworks. 
 
 5. **Subversive Elements**: The system includes playful subversions like **Kibeth** (a Bright Shiner) appearing as the **Disreputable Dog**, challenging expectations of cosmic power
 
-6. **Bloodline Prevalence**: Despite appearing exclusive, Nix confirms bloodlines are "much more prevalent"—many carry potential but lack Charter Marks or training to manifest abilities
+6. **Bloodline Prevalence**: Despite appearing exclusive, Nix confirms bloodlines are "much more prevalent"—many carry latent potential that stays dormant without training and effort, not for lack of a Charter Mark (nearly everyone has one)
 
 ---
 
@@ -178,6 +178,7 @@ The Charter bloodline system connects to multiple lineage and power frameworks. 
 - ✅ Abhorsen inheritance can be **non-direct** (niece, cousin, sibling)
 - ✅ Wallmaker bloodline **became the Wall and Great Charter Stones**
 - ✅ Disreputable Dog **canonically identified as Kibeth** (Walker)
+- ✅ The Prevalence bullet's cause was corrected: unrealized bloodline potential is attributed to **lack of training/effort**, not lack of a Charter Mark — the Charter Marks section already establishes marks as near-universal, so "without Charter marks" as a cause was internally inconsistent (flagged by Copilot review on #444, 2026-07-01; original phrasing kept the mark-possession framing by mistake during editing and went unfixed in that PR)
 
 ---
 
