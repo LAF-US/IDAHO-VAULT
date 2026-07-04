@@ -118,10 +118,17 @@ Diffing `main` (`747bc74a`) against the PR head:
 So the period does not exist on `main` today; it **arrives with #563**. `main` is
 currently Windows-checkoutable; the merge is the moment that changes.
 
-**Flag for Logan (intent check):** the courtroom voices — `DOCKET.md`,
-`DENOUEMENT.txt`, `Logan.txt` — are deleted in the migration and do **not** reappear
-under the new path. If that is deliberate retirement (the courtroom empties as the
-core stills), no action; if accidental, they should be carried across before merge.
+**Corrected 2026-07-03 (was a false flag):** this ADR previously claimed the courtroom
+voices — `DOCKET.md`, `DENOUEMENT.txt`, `Logan.txt` — were *deleted* in the migration.
+**Wrong: they were moved, not deleted** (Logan's correction; verified `R100` — byte-
+identical — via unscoped rename detection). All three relocated to the **repo root**,
+where both lineages landed (clean names plus `* copy.*` twins from
+`backup-compare-temp`), and a new `DOCKET-ARCHIVE.md` splits resolved work out of the
+live register. The still point keeps only permanent record; the Court's live register
+moves to where work happens. The original error came from a directory-scoped diff,
+which shows a move as a bare `D` when the `A` lands outside the pathspec. Remaining
+item only: `DOCKET-POSTURE.md`'s pointer (on `main`) still names the old in-Nest path
+and should point at root `DOCKET.md` once #563 merges.
 
 ## The Windows Constraint (why this is not a style nit)
 
