@@ -46,8 +46,11 @@ jobs:
 
       - name: Reconcile open PR review state
         id: reconcile
+        # The arm actor becomes the future enqueue actor, and GITHUB_TOKEN-actored
+        # events never dispatch workflow runs (GitHub anti-recursion) — prefer the
+        # user-scoped MERGE_QUEUE_TOKEN so armed PRs enqueue with a dispatching actor.
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.MERGE_QUEUE_TOKEN || secrets.GITHUB_TOKEN }}
           GRACE_MINUTES: ${{ github.event.inputs.grace_minutes || '30' }}
         run: |
           python3 .github/scripts/review_feedback_loop.py \
