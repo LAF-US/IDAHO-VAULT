@@ -1,11 +1,19 @@
 ---
-title: "Install Tailscale · Tailscale Docs"
+title: 2025-12-19 - Install Tailscale · Tailscale Docs copy
 source: "https://tailscale.com/docs/install"
 author:
 published: 2025-12-19
 created: 2026-07-01
 description: "Install and uninstall the Tailscale client."
+aliases:
+  - 2025-12-19 - Install Tailscale · Tailscale Docs copy
+linter-yaml-title-alias: 2025-12-19 - Install Tailscale · Tailscale Docs copy
+date created: Thursday, July 2nd 2026, 12:26:55 am
+date modified: Friday, July 3rd 2026, 8:00:32 pm
 ---
+
+# 2025-12-19 - Install Tailscale · Tailscale Docs copy
+
 ## Install Tailscale
 
 [Download Tailscale](https://tailscale.com/download)
