@@ -12,7 +12,6 @@
   "templater-obsidian",
   "obsidian42-strange-new-worlds",
   "obsidian-day-planner",
-  "dataview",
   "obsidian-tasks-plugin",
   "calendar",
   "obsidian-folder-index",
@@ -30,5 +29,11 @@
   "smart-connections",
   "map-of-content",
   "obsidian-linter",
-  "openclaw"
+  "openclaw",
+  "dataview",
+  "todoist-context-bridge",
+  "obsidian-advanced-uri",
+  "obsidian-full-calendar",
+  "time-ruler",
+  "smart-connections-visualizer"
 ]
