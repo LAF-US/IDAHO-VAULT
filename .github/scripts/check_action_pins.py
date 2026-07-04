@@ -33,7 +33,11 @@ def _repo_root() -> Path:
 
 REPO_ROOT = _repo_root()
 WORKFLOW_GLOBS = (".github/workflows/*.yml", ".github/workflows/*.yaml")
-ACTION_GLOBS = (".github/actions/*/*.yml", ".github/actions/*/*.yaml")
+# GitHub's composite-action convention: exactly action.yml or action.yaml at
+# the action's root (never a different filename), matched explicitly rather
+# than "any *.yml" to avoid both false coverage of unrelated files and any
+# ambiguity about whether the standard filenames are actually scanned.
+ACTION_GLOBS = (".github/actions/*/action.yml", ".github/actions/*/action.yaml")
 
 USES_PATTERN = re.compile(r"^\s*(?:-\s*)?uses:\s*(\S+)\s*(?:#.*)?$")
 FULL_SHA_PATTERN = re.compile(r"^[0-9a-f]{40}$")
