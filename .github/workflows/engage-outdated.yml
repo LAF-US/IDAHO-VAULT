@@ -2,8 +2,9 @@ name: Engage Outdated — attest-resolve outdated review threads
 
 # The first "engage" step of the look-then-resolve engine (#399). Logan's model: the
 # queue runs by default and reviewer comments are what keep a PR hanging. This engages the
-# NARROWEST safe slice — it attest-resolves ONLY bot-only, GitHub-outdated review threads
-# (the commented lines no longer exist in the diff), each with a recorded attestation
+# NARROWEST safe slice — it attest-resolves ONLY bot-only review threads GitHub itself has
+# flagged outdated (the lines a comment was anchored to have since changed or been removed
+# from the diff), each with a recorded attestation
 # (the looker defaults to whoever GH_TOKEN authenticates as — github-actions[bot] on the
 # GITHUB_TOKEN fallback, or the MERGE_QUEUE_TOKEN account when present — so the witness
 # always names the actor that actually ran it), so it is a witnessed resolution, NOT the
