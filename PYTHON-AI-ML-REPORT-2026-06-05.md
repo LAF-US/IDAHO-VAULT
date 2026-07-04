@@ -16,7 +16,7 @@ status: draft
 
 ## Executive Summary
 
-**Python is the overwhelming language of choice for AI and machine learning in 2026**, powering approximately 95% of multi-agent coordination frameworks and the vast majority of AI research and production systems.
+**Python is the overwhelming language of choice for AI and machine learning in 2026**, powering approximately 86% of major multi-agent frameworks in this survey (6 of 7), and the vast majority of AI research and production systems.
 
 ### Key Statistics
 - **6 out of 7** major AI agent frameworks use Python as their primary language (the remaining one, OpenClaw, is a Node/TypeScript project)
@@ -213,6 +213,7 @@ asyncio.run(run_agents())
 ## Python Package Management for AI/ML
 
 ### pip vs. conda
+
 | Feature | pip | conda |
 |---------|-----|-------|
 | Package Types | Python only | Any (Python, C, R, etc.) |
@@ -300,7 +301,7 @@ class Agent:
 - **PyCharm**: Professional Python IDE
 - **Jupyter Notebook**: Interactive development
 - **JupyterLab**: Next-generation notebook environment
-- **Colab**: Googles hosted notebooks
+- **Colab**: Google's hosted notebooks
 
 ### Debugging and Profiling
 - **pdb**: Python debugger
@@ -385,9 +386,9 @@ class Agent:
 
 ## Conclusion
 
-Pythons dominance in AI and machine learning is **unmatched in 2026**. With its mature ecosystem, extensive library support, active community, and seamless research-to-production pipeline, Python remains the **language of choice** for approximately 95% of AI agent frameworks and the vast majority of AI/ML projects.
+Python's dominance in AI and machine learning is **unmatched in 2026**. With its mature ecosystem, extensive library support, active community, and seamless research-to-production pipeline, Python remains the **language of choice** for approximately 86% of surveyed major AI agent frameworks (6 of 7) and the vast majority of AI/ML projects.
 
-While alternatives like JavaScript (for full-stack), .NET (for enterprise Windows), and specialized languages (for performance) have their niches, **Pythons combination of readability, flexibility, and ecosystem depth** makes it the clear winner for AI development.
+While alternatives like JavaScript (for full-stack), .NET (for enterprise Windows), and specialized languages (for performance) have their niches, **Python's combination of readability, flexibility, and ecosystem depth** makes it the clear winner for AI development.
 
 ### Key Takeaways
 1. **Python is the primary language of 6 of the 7 major AI agent frameworks** (the exception, OpenClaw, is TypeScript/Node)
@@ -400,11 +401,13 @@ While alternatives like JavaScript (for full-stack), .NET (for enterprise Window
 
 ## References
 
-- GitHub repositories for all mentioned frameworks
-- Python Software Foundation documentation
-- PyPI (Python Package Index) statistics
-- Stack Overflow Developer Survey 2026
-- AI framework documentation and release notes
+- GitHub repositories for each framework named in the Framework Adoption table above — source for primary/secondary language, GitHub star counts, and status; consult each repository directly (About panel, language breakdown, and Insights tab) for current figures
+- Each framework's own `pyproject.toml` / packaging metadata — source for the `requires-python` minimums cited in the Version Requirements table
+- [Python Packaging Index (PyPI)](https://pypi.org/) — package download and adoption statistics
+- [Python Software Foundation](https://www.python.org/psf-landing/) — language stewardship and governance documentation
+- [Stack Overflow Developer Survey](https://survey.stackoverflow.co/) — language and framework usage data
+
+*Note: star counts and adoption figures above are point-in-time snapshots as of the report date (June 5, 2026); this report does not carry per-claim source links, so treat specific numbers as approximate and verify against the linked repositories/surveys before citing them elsewhere.*
 
 ---
 
