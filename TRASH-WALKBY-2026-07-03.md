@@ -75,6 +75,40 @@ Notable top-level items:
 
 Additional hits inside trashed vault snapshots included 1Password/security reference notes and zero-byte `passwords.md` files. The CSVs deserve a special secure-disposal or secure-restore decision before any broad Trash empty.
 
+## Retrieval Candidates
+
+These are not recommended for blind restore into their original locations. They are recommended for review, secure handling, or archive before any broad Trash empty.
+
+Highest priority:
+
+- `Passwords.csv` and `Passwords 9.54.43 PM.csv`: contents were not opened. They should either be moved to a secure review location or securely disposed by explicit decision.
+- Top-level credential/token/security-named files such as `credentials.md`, `iamcredentials.md`, `auth_tokens.md`, `tokens.md`, `secrets`, `secretsmanager.md`, and `secretmanager.md`: most are tiny, but names alone make them unsuitable for bulk emptying.
+
+Repo/project material:
+
+- `.Trash/THE-GEMSTONE`: active `/Users/logan/THE-GEMSTONE` was missing. The trashed checkout had dirty/deleted state, including many deleted `content/` files and modified `.obsidian/workspace.json`.
+- `.Trash/THE-GEMSTONE 14-20-14-364`: active `/Users/logan/THE-GEMSTONE` was missing. This checkout had many untracked docs and content folders.
+- `.Trash/.git`: standalone Git directory identified as `loganfinney27/THE-GEMSTONE.git`, branch `main`.
+- `.Trash/.obsidian`: standalone Obsidian config.
+- `.Trash/PRIVATE`: clean checkout of `https://github.com/LAF-US/PRIVATE.git` on `main`, only `.DS_Store` untracked. Active `/Users/logan/PRIVATE` was missing.
+- `.Trash/FREELANCE`: active `/Users/logan/FREELANCE` was missing; contents include photo/job material.
+- `.Trash/IDAHO-VAULT`: older `LAF-US/IDAHO-VAULT` checkout on `main`, current with `origin/main`, with untracked `go/` and `google-cloud-sdk/`. Active `/Users/logan/IDAHO-VAULT` exists and is the current working vault, so this is a review/archive candidate rather than a simple restore.
+- `.Trash/IDAHO-VAULT 1.29.37 AM`: smaller vault snapshot with Obsidian config, metadata, budget/data exports, and research notes.
+
+Vault governance notes:
+
+- Top-level trashed `AGENTS.md`, `CODEX.md`, `CLAUDE.md`, `GEMINI.md`, `VAULT-CONVENTIONS.md`, `CONSTITUTION.md`, and `MESHWEB.md` exist and differ by hash from the live `/Users/logan/IDAHO-VAULT` copies.
+- `OPENCLAW-LOCAL-MESH-SETUP.md` matched the live copy by hash.
+
+Personal/sensitive documents:
+
+- `PRIVATE`: 1.3G Git checkout as noted above.
+- `taxes`, `2020_TaxReturn*.pdf`, resume files, and repeated `Logan Finney _ LinkedIn*.pdf` exports: not necessarily restore candidates, but should not be bulk emptied without a privacy/retention decision.
+
+Human archive material:
+
+- Large media/project folders such as `Traffyk Jam`, `IDLEG 2021`, `Sand Dunes`, `SWEET LAND`, `Borah polls Nov 2020`, `FREELANCE`, and Final Cut bundles should be reviewed as archive/retention material rather than treated as software cleanup.
+
 ## Software-Like Trash
 
 The top-level app/installer/archive bucket totals about 18G. Largest entries include:
