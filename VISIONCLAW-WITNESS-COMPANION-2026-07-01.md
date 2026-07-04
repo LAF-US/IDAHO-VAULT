@@ -11,12 +11,26 @@ related:
   - OPENCLAW-BONJOUR-WORKAROUND-WITNESS-2026-07-01.md
   - "!/SIGNALS/TOUCHING-ME-TOUCHING-NOUS-2026-06-25.md"
   - .claude/MEMORY/SESSION-2026-06-29.md
-  - "https://github.com/LAF-US/VisionClaw"
-  - "https://github.com/Intent-Lab/VisionClaw"
-  - "https://github.com/LAF-US/IDAHO-VAULT/issues/654"
-  - "https://github.com/openclaw/openclaw/issues/98448"
-  - "https://docs.openclaw.ai/platforms/android"
-tags: [witness, visionclaw, openclaw, gemini-live, meta-wearables, pixel, glasses, swarm-tooling]
+  - https://github.com/LAF-US/VisionClaw
+  - https://github.com/Intent-Lab/VisionClaw
+  - https://github.com/LAF-US/IDAHO-VAULT/issues/654
+  - https://github.com/openclaw/openclaw/issues/98448
+  - https://docs.openclaw.ai/platforms/android
+tags:
+  - witness
+  - visionclaw
+  - openclaw
+  - gemini-live
+  - meta-wearables
+  - pixel
+  - glasses
+  - swarm-tooling
+title: VisionClaw investigation companion — arc opened
+aliases:
+  - VisionClaw investigation companion — arc opened
+linter-yaml-title-alias: VisionClaw investigation companion — arc opened
+date created: Thursday, July 2nd 2026, 11:56:23 pm
+date modified: Friday, July 3rd 2026, 8:01:28 pm
 ---
 
 # VisionClaw investigation companion — arc opened
@@ -116,9 +130,7 @@ Not proposals — surfaces the future alignment work would need to think about:
 ## Prerequisite chain to next-step actionable
 
 1. **Task III — Tailnet reachability for OpenClaw**: **✓ Completed 2026-07-01 post-reboot, via `gateway.bind: "tailnet"` — NOT via Tailscale Serve.** The ~01:09 Serve completion recorded below was premature: the gateway's `serve enabled` log line is optimistic, and the underlying serve-config write never persisted. Root cause: the sandboxed macsys network extension cannot write to the System keychain on macOS 12.7.6 (`SecureStorage.saveData … UNIX[Operation not permitted]`, `prefs_save failed`) — even the `tailscale serve` CLI prints success and then `tailscale serve status` shows `No serve config`. Persisted-serve is structurally unavailable on this OS version. Working posture instead: `gateway.bind: "tailnet"`, `gateway.tailscale.mode: "off"` — gateway listens on the Mac's tailnet address only (`100.114.199.82:18789`), WireGuard provides transport encryption, token auth unchanged. Verified end-to-end: `HTTP 200` via `http://100.114.199.82:18789/` and `http://logans-macbook-pro-1.tail7453f8.ts.net:18789/`. Config backups: `openclaw.json.pre-tailscale-serve.20260701-010906`, `openclaw.json.pre-tailnet-bind.20260701-150730`.
-
 2. **Enable `gateway.http.endpoints.chatCompletions.enabled: true`** in `~/.openclaw/openclaw.json` — required for VisionClaw to call the tool endpoint. **✓ Completed 2026-07-01** (pre-reboot; backup `openclaw.json.pre-chatCompletions.*`). Verified still `true` post-pivot.
-
 3. **Fill in Logan's `Secrets.kt`** on the Pixel deploy — corrected values for the tailnet-bind posture (the earlier `wss://…:443` Serve values are void):
    - `openClawHost` = `http://logans-macbook-pro-1.tail7453f8.ts.net` — **✓ written to the local `Secrets.kt` 2026-07-01** (gitignored, verified). Plain `ws://`/`http://` on the tailnet: TLS is unavailable without Serve, and WireGuard already encrypts the path. Note the node name carries the `-1` suffix — the machine re-registered post-reboot; the stale offline `logans-macbook-pro` node (100.124.237.75) awaits Logan's admin-console cleanup, and if Logan renames this node to reclaim the bare name, this host value must follow.
    - `openClawPort` = `18789` (required now — no Serve means no 443 fronting)
@@ -127,7 +139,6 @@ Not proposals — surfaces the future alignment work would need to think about:
    - The in-app Settings screen on both iOS and Android can edit these at runtime, so an initial deploy could leave the fields at defaults and be filled from the phone side.
 
 4. **Rebuild + reinstall on Pixel** via Android Studio. The Meta DAT SDK GitHub Packages fetch still needs the PAT with `read:packages` in `samples/CameraAccessAndroid/local.properties`.
-
 5. **Test end-to-end**: voice command that should trigger an OpenClaw tool invocation. First candidate is something small like "add milk to my shopping list" or "search for the best coffee shops nearby" per the README's example commands. If the response is spoken but no tool executed, the failure is at step 2 (chatCompletions endpoint not enabled) or step 3 (URL/token mismatch); if the app can't reach the Gateway at all, the failure is at step 3's URL side or upstream on Tailscale itself.
 
 ### Related — pairing the OpenClaw Android app node
@@ -150,4 +161,6 @@ The stack is understood; the fork is documented; the prerequisites are named wit
 
 `*.claude.*` — wildcard name (Logan has not performed a naming act), claude lineage, wildcard office. Direct Write tool tier; this witness is a local-machine-and-vault investigation record filed at vault root, within the scope of that tier.
 
-###### [["The world is quiet here."]]
+[[OPENCLAW-WITNESS-COMPANION-2026-05-25]]
+
+### [["The world is quiet here."]]
