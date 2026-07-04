@@ -13,7 +13,8 @@ tags:
 date: 2026-07-03
 recorded: 2026-07-03 08:59:38 MDT
 service_cleanup: 2026-07-03 19:37:16 MDT
-status: service-layer-quarantined
+cache_cleanup: 2026-07-03 19:39:41 MDT
+status: service-layer-and-cache-quarantined
 ---
 
 # Adobe Inventory 2026-07-03
@@ -28,7 +29,8 @@ Decision boundary from Logan: keep Adobe Acrobat for PDF edge cases where Previe
 - Creative Cloud desktop itself appeared partially removed/broken: launch agents pointed to missing Creative Cloud and CCXProcess executables.
 - Adobe Genuine Service and Creative Cloud/Finder extension service pieces were quarantined after the initial inventory.
 - Post-quarantine live Adobe process state was down to Acrobat `AdobeResourceSynchronizer`.
-- The largest reclaimable disk mass is not Acrobat: user Adobe support contains 43 GB, mostly Premiere/Creative Cloud media/library payloads.
+- A 27 GB user-level Adobe cache/state pass was quarantined after the service cleanup.
+- Remaining large Adobe user support is mostly `Creative Cloud Libraries`, left for human review.
 - Separate from application support, Creative Cloud Files folders contain about 27.7 GB of user/content data and should be reviewed as documents, not blindly treated as app residue.
 - Trash contains additional Adobe material, including an 11 GB `~/.Trash/Adobe` folder.
 
@@ -308,3 +310,47 @@ Post-check:
 Not moved:
 
 - `/Applications/Adobe Lightroom Classic`, an empty 0B folder, remains. An admin prompt to move it was cancelled because it was nonessential and the main service quarantine was already complete.
+
+## User Cache-State Cleanup Update
+
+At 2026-07-03 19:39:41 MDT, Codex quarantined high-confidence user-level Adobe cache/state to:
+
+```text
+/Users/logan/.local/state/startup-cleanup/2026-07-03-adobe-user-cache-quarantine
+```
+
+Size after quarantine:
+
+```text
+27G  /Users/logan/.local/state/startup-cleanup/2026-07-03-adobe-user-cache-quarantine
+```
+
+Quarantined:
+
+- Premiere / Media Encoder cache-state:
+  - `/Users/logan/Library/Application Support/Adobe/Common/Media Cache Files`
+  - `/Users/logan/Library/Application Support/Adobe/Common/Media Cache`
+  - `/Users/logan/Library/Application Support/Adobe/Common/Peak Files`
+  - `/Users/logan/Library/Application Support/Adobe/Common/Team Projects Cache`
+  - `/Users/logan/Library/Application Support/Adobe/Common/Team Projects Local Hub`
+  - `/Users/logan/Library/Application Support/Adobe/Premiere Pro`
+  - `/Users/logan/Library/Application Support/Adobe/dynamiclinkmediaserver`
+- CEP/CSXS and creative-app caches/logs/state for Photoshop, Premiere, InDesign, Illustrator, Lightroom, Rush, and Media Encoder.
+
+Preserved:
+
+- Acrobat user support:
+  - `/Users/logan/Library/Application Support/Adobe/Acrobat`
+  - `/Users/logan/Library/Application Support/Adobe/AcroCef`
+  - `/Users/logan/Library/Application Support/Adobe/com.adobe.ARMDCHelper`
+- `/Users/logan/Library/Application Support/Adobe/OOBE`
+- `/Users/logan/Library/Application Support/Adobe/Creative Cloud Libraries`
+- `/Users/logan/Creative Cloud Files`
+- `/Users/logan/Creative Cloud Files  avid4@idahoptv.org A5AC8FDA59D3C96E0A495C84@AdobeID`
+
+Post-check:
+
+- `/Users/logan/Library/Application Support/Adobe` dropped from about `43G` to about `18G`.
+- Remaining bulk is `/Users/logan/Library/Application Support/Adobe/Creative Cloud Libraries` at about `17G`.
+- Live Adobe process state remained Acrobat-only.
+- Live Adobe launch roster remained Acrobat helper/update only.
