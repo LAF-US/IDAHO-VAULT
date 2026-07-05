@@ -9,7 +9,7 @@ subject: Local `discovery.mdns.mode = "off"` config applied to `~/.openclaw/open
 related:
   - HERMES-WORKAROUND-WITNESS-2026-06-28.md
   - "!/SIGNALS/TOUCHING-ME-TOUCHING-NOUS-2026-06-25.md"
-  - .claude/MEMORY/SESSION-2026-06-29.md
+  - .claude/MEMORY/CLAUDE-SESSION-2026-06-29.md
   - "https://github.com/openclaw/openclaw/issues/98448"
   - "https://docs.openclaw.ai/gateway/bonjour"
 tags: [witness, openclaw, workaround, bonjour, upstream-contact, swarm-external-reach]
@@ -97,7 +97,7 @@ In all three paths, the config-side workaround is safe to keep in place. There i
 ## Cross-reference
 
 - The upgrade from 2026.6.8 → 2026.6.11 was safe on this Mac. Not the same version-family as openclaw/openclaw#85027 (2026.5.6 → 2026.5.19 upgrade that bricked a different user's LaunchAgent) — but that report remains a warning for any future major-version bumps: back up `~/.openclaw/` before running `openclaw update` on any macOS Gateway install.
-- OpenClaw's gateway posture on this Mac at filing time: `bind=loopback`, `tailscale.mode=off`, `mode=local`. *(Updated 2026-07-01 post-reboot: posture is now `bind=tailnet`, `tailscale.mode=off` — Tailscale Serve cannot persist its config on macOS 12.7.6 (System-keychain write EPERM from the sandboxed network extension), so Tailnet exposure runs as a direct tailnet-interface bind instead. See `.claude/MEMORY/SESSION-2026-06-29.md` for the pivot record. The bonjour workaround is unaffected either way.)*
+- OpenClaw's gateway posture on this Mac at filing time: `bind=loopback`, `tailscale.mode=off`, `mode=local`. *(Updated 2026-07-01 post-reboot: posture is now `bind=tailnet`, `tailscale.mode=off` — Tailscale Serve cannot persist its config on macOS 12.7.6 (System-keychain write EPERM from the sandboxed network extension), so Tailnet exposure runs as a direct tailnet-interface bind instead. See `.claude/MEMORY/CLAUDE-SESSION-2026-06-29.md` for the pivot record. The bonjour workaround is unaffected either way.)*
 
 ## Signed
 

@@ -119,4 +119,4 @@ a Standalone/App Store variant if needed, reboot. OpenClaw config backups in
   optimism). Filing gated on Logan, per-draft.
 - Vault records: `OPENCLAW-BONJOUR-WORKAROUND-WITNESS-2026-07-01.md`,
   `VISIONCLAW-WITNESS-COMPANION-2026-07-01.md`,
-  `.claude/MEMORY/SESSION-2026-06-29.md`.
+  `.claude/MEMORY/CLAUDE-SESSION-2026-06-29.md`.

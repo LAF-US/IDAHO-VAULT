@@ -9,7 +9,7 @@ subject: Structural containment around secret-bearing files — "don't promise t
 related:
   - HAT-ON-A-HAT-WITNESS-2026-06-30.md
   - HERMES-WORKAROUND-WITNESS-2026-06-28.md
-  - .claude/MEMORY/SESSION-2026-06-29.md
+  - .claude/MEMORY/CLAUDE-SESSION-2026-06-29.md
 tags: [witness, anti-pattern, secret-hygiene, structural-containment, doctrine]
 ---
 
@@ -113,7 +113,7 @@ Both steps were the same root failure: **trusting filters to catch what I didn't
 
 This sits in the same shape as the [[smoke-detector-rule]] (`AGENTS.md:52`): both call out *patching the alarm instead of removing the cause*. The Smoke Detector Rule applies to error signals — don't silence the alarm; fix the fire. The Diaper Rule applies to secret hygiene — don't filter the leak; close the path the leak comes through. Both are structural-over-promise rules. Both name the same architectural error: defending the broken approach instead of replacing it.
 
-Companion to [[HAT-ON-A-HAT-WITNESS-2026-06-30]] (workarounds accreting defensive scaffolding) and supports the existing salvaged rule "Secret hygiene — no derived fingerprint in user-facing output" in [[SESSION-2026-06-29]]. The Operational Rule is the *what*; this witness is the *how-to-actually-enforce-it-mechanically*.
+Companion to [[HAT-ON-A-HAT-WITNESS-2026-06-30]] (workarounds accreting defensive scaffolding) and supports the existing salvaged rule "Secret hygiene — no derived fingerprint in user-facing output" in [[CLAUDE-SESSION-2026-06-29]]. The Operational Rule is the *what*; this witness is the *how-to-actually-enforce-it-mechanically*.
 
 ## Signed
 

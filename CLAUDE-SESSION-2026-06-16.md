@@ -10,14 +10,14 @@ related:
   - "!/STANDING-ENGINE-AND-LAWFUL-ENDINGS-2026-04-17.md"
   - CONSTITUTION
   - VAULT-CONVENTIONS
-  - ".claude/MEMORY/SESSION-2026-05-22.md"
+  - ".claude/MEMORY/CLAUDE-SESSION-2026-05-22.md"
 ---
 
 # Session Anchor — 2026-06-16
 
 *Promoting an ephemeral chat session to the vault before compaction erases it
 (`CONSTITUTION.md`: "Chat is ephemeral. Vault is the record."). The prior anchor
-`SESSION-2026-05-22.md` recorded the same class of failure; this is its sequel.
+`CLAUDE-SESSION-2026-05-22.md` recorded the same class of failure; this is its sequel.
 Logan, this session: "If you didn't write it down I can't help you."*
 
 ## The Task

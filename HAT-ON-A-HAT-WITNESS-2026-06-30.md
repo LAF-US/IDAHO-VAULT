@@ -9,7 +9,7 @@ subject: Hat-on-a-hat scaffolding — when defensive layers stack around a worka
 related:
   - HERMES-WITNESS-COMPANION-2026-06-24.md
   - HERMES-WORKAROUND-WITNESS-2026-06-28.md
-  - .claude/MEMORY/SESSION-2026-06-29.md
+  - .claude/MEMORY/CLAUDE-SESSION-2026-06-29.md
   - "!/SIGNALS/TOUCHING-ME-TOUCHING-NOUS-2026-06-25.md"
   - "https://github.com/NousResearch/hermes-agent/issues/19201"
   - "https://github.com/NousResearch/hermes-agent/pull/18734"
