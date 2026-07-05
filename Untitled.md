@@ -1,11 +1,15 @@
 ---
-date created: Saturday, March 28th 2026, 5:25:53 pm
-date modified: Saturday, March 28th 2026, 5:27:44 pm
+date created: Monday, March 30th 2026, 2:04:16 pm
+date modified: Monday, March 30th 2026, 2:04:22 pm
 related:
-- '2026-03-28'
-- Notebook LM
+  - 2026-03-28
+  - Notebook LM
 authority: LOGAN
+tags: MOCs
 ---
 Notebook LM 2026-03-28
 
 ---
+
+```folder-index-content
+```
