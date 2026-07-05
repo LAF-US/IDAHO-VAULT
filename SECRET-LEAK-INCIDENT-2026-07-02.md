@@ -8,7 +8,7 @@ status: RESOLVED — history scrubbed + verified; ADB + Dropbox keys rotated (Lo
 subject: Secret exposure in the PUBLIC repo LAF-US/IDAHO-VAULT. MASS-SORT (0ae47c135, committed by the obsidian-plugin[git] persona — Logan's Obsidian Git plugin — executing Logan's sort) swept ~/ software-imported persona chambers (dotfolders) into the vault. Content-verified exposure is narrow — the Android debug key + two Dropbox host-key files — in formats no token-scanner detects. GitGuardian flagged the Android key post-push; every in-vault control missed everything. Root cause includes a "secret guard" that matched paths/tokens, not secret material (POSIWID).
 related:
   - "https://github.com/LAF-US/IDAHO-VAULT/issues/725"
-  - .claude/MEMORY/SESSION-2026-06-29.md
+  - .claude/MEMORY/CLAUDE-SESSION-2026-06-29.md
 tags: [incident, secret-leak, public-repo, secret-scanning, mass-sort, corrections]
 ---
 

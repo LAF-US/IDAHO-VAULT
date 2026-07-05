@@ -35,7 +35,7 @@ On 2026-05-26 a batch of automation was suspended, and on 2026-06-16 the auto-me
   (automated `--auto` requires branch protection on `main`, which was then absent).
 
 Those records — the `auto-merge-rhythm.yml` header, `PR-PIPELINE-CONSTELLATION-WITNESS-2026-06-16`,
-`.claude/MEMORY/SESSION-2026-06-16`, `SECURITY-CREDENTIAL-CONTAINMENT-2026-05-26` — are left as
+`.claude/MEMORY/CLAUDE-SESSION-2026-06-16`, `SECURITY-CREDENTIAL-CONTAINMENT-2026-05-26` — are left as
 the truthful account of what was decided then.
 
 ## What changed (2026-06-17)

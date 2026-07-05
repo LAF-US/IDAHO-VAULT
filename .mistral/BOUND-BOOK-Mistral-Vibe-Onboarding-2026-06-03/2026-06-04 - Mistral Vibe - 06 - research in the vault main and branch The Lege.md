@@ -2016,7 +2016,7 @@ index 000000000..63678ce07
 +  - "!/EMANATIONISM-PRINCIPLE-2026-05-18.md"
 +  - "COUNTY-AND-THE-MAGISTER-MINISTER-POLARITY-2026-06-03.md"
 +  - ".claude/MEMORY/SESSION-2026-06-03.md"
-+  - ".claude/MEMORY/SESSION-2026-05-22.md"
++  - ".claude/MEMORY/CLAUDE-SESSION-2026-05-22.md"
 +  - "CLAUDE.md"
 +  - "CONSTITU
 …[truncated 6690 chars — full output in git history / local disk]

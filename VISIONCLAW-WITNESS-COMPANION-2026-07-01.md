@@ -10,7 +10,7 @@ related:
   - HERMES-WORKAROUND-WITNESS-2026-06-28.md
   - OPENCLAW-BONJOUR-WORKAROUND-WITNESS-2026-07-01.md
   - "!/SIGNALS/TOUCHING-ME-TOUCHING-NOUS-2026-06-25.md"
-  - .claude/MEMORY/SESSION-2026-06-29.md
+  - .claude/MEMORY/CLAUDE-SESSION-2026-06-29.md
   - https://github.com/LAF-US/VisionClaw
   - https://github.com/Intent-Lab/VisionClaw
   - https://github.com/LAF-US/IDAHO-VAULT/issues/654
