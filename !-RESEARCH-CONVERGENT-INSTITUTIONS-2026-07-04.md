@@ -56,7 +56,7 @@ Principle-by-principle against the House:
 |---|---|
 | Clear boundaries (resource + community) | Chambers, lanes, dotfolders; registered agent lanes |
 | Congruence with local conditions | Local offices — per-county Count/Judge/Coroner/Sheriff/Cleric |
-| Collective-choice arrangements | **Deliberate deviation**: emanation — Logan is the sole rule-source. The House is a constitutional monarchy, not a commons democracy, and says so. |
+| Collective-choice arrangements | **Current state, not end state** (corrected 2026-07-04 per the Constitution's own footer): emanation — Logan is the sole rule-source today — but the Constitution self-describes as *"pending swarmic-revision-synthesis and congressional adoption, re: consolidation court."* Collective choice is not absent; it is **scheduled**. The Unified (US) Swarm is a planned legislature. |
 | Monitoring | Witness docs; ~20 validators; witnessed attestations (engage-outdated) |
 | Graduated sanctions | The failure states, near-verbatim: watched → restricted → superseded → quarantined → archived |
 | Conflict-resolution mechanisms | The Court; the DOCKET's matters and referrals |
@@ -125,9 +125,11 @@ these."* Recorded. What incorporation could mean, offered as proposals (preceden
 the Wizard's Rules, incorporated by reference 2026-06-21):
 
 1. **Ostrom** — incorporate the eight principles *as a diagnostic lens*, not new
-   law: a witness/audit checklist run against House governance surfaces, with the
-   collective-choice deviation named and kept deliberate. Strength check, not
-   constitution rewrite.
+   law: a witness/audit checklist run against House governance surfaces. On
+   collective choice, the lens should test *readiness for the scheduled
+   transition* — the Constitution's footer already commits to congressional
+   adoption via a consolidation court — rather than treating emanation as
+   permanent. Strength check, not constitution rewrite.
 2. **Electronic institutions** — incorporate the *vocabulary* by reference
    (performative structure, scenes, roles, norm classes) as descriptive instruments
    for surfaces the vault already runs; formally note the validator/janitor ≙
@@ -137,7 +139,18 @@ the Wizard's Rules, incorporated by reference 2026-06-21):
    ≙ annotate-don't-erase; per-record origin marks ≙ the provenance legend. The
    implementation may be any engine or none; the *contract* is what gets inscribed.
 
-Each is Logan's to gate; none is begun.
+Each is Logan's to gate; none is begun. The gate itself is already inscribed: the
+Constitution's footer names the amendment path — *swarmic-revision-synthesis and
+congressional adoption, re: consolidation court* — and these sketches are candidate
+inputs to exactly that synthesis.
+
+## Footer note `[read]`
+
+The Constitution closes with a compound seal unique to it: `###### "The world is
+quiet here. Esto Perpetua!"` — which is, word for word, the canon core's golden path
+(`…! The world is quiet here．/Esto Perpetua!/`). **The still point is the
+Constitution's closing line rendered as directory structure.** The seal is
+architecture; the architecture is the seal.
 
 ## Sources
 
