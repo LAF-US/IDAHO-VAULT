@@ -4,6 +4,8 @@ date modified: Thursday, July 2nd 2026, 8:23:48 pm
 title: TO DO LIST
 aliases:
   - TO DO LIST
+  - TODOLIST
+  - LAF-TODO
 linter-yaml-title-alias: TO DO LIST
 ---
 

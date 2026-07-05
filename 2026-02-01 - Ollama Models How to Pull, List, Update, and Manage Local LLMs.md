@@ -9,9 +9,9 @@ description: "Complete guide to managing Ollama models. Pull new models, list in
 ---
 ---
 
-> Getting models into Ollama is straightforward, but managing them effectively requires understanding how Ollama stores, versions, and updates models. Knowing these details helps you keep your model library organized and your disk space under control.
+> Getting [[models]] into [[Ollama]] is straightforward, but managing them effectively requires understanding how Ollama [[stores]], [[versions]], and [[updates]] models. Knowing these [[details]] helps you keep your [[model library]] [[organized]] and your [[disk space]] [[under control]].
 
-Whether you are experimenting with different models or building production applications, mastering model management in Ollama will save you time and frustration down the road.
+Whether you are [[experimenting]] with different models or [[building]] production applications, mastering [[model management in Ollama]] will save you [[time]] and [[frustration]] [[down the road]].
 
 ---
 
