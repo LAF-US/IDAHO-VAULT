@@ -103,6 +103,11 @@ DEFAULT_AUTO_MERGE_LABEL = "merge/auto"
 DEFAULT_SUGGESTIONS_LABEL = "review/suggestions-ready"
 RISK_LOW_LABEL = "risk/low"
 RISK_HIGH_LABEL = "risk/high"
+# K4/#630: the positive `—/—` clear-cell marker. Stamped ONLY when classify scored a PR
+# clear (no sorter fired). Per Logan's invariant it is MUTUALLY EXCLUSIVE with every
+# risk/* flag — a PR carries `risk/—` XOR a flag, never both.
+RISK_CLEAR_LABEL = "risk/—"
+RISK_FLAG_LABELS = frozenset({RISK_LOW_LABEL, RISK_HIGH_LABEL})
 AUTO_MERGE_AUTHZ_FRAGMENTS = (
     "Pull request User is not authorized for this protected branch "
     "(enablePullRequestAutoMerge)",
@@ -149,6 +154,10 @@ LABEL_SPECS: dict[str, tuple[str, str]] = {
     RISK_HIGH_LABEL: (
         "E99695",
         "Risk tier: high (at least one high-risk path changed).",
+    ),
+    RISK_CLEAR_LABEL: (
+        "0E8A16",
+        "Clear cell (—/—): no sorter fired; auto-merge on open. Mutually exclusive with risk/*.",
     ),
 }
 
@@ -826,14 +835,36 @@ def _parse_body_marker_value(body: str, marker: str) -> str | None:
 
 def _risk_tier_for_pr(body: str, labels: set[str]) -> str:
     # Label is canonical: survives body rewrites by human or agent editors.
+    #
+    # A risk/* flag ALWAYS wins over the clear marker. Per the K4/#630 invariant the
+    # two are mutually exclusive — `risk/—` XOR a flag — so if a flag is somehow present
+    # alongside risk/—, a sorter DID fire and the PR is not clear. Resolving flag-first
+    # fails safe (hold, never auto-merge); the loud-failing exclusion check lives in
+    # `_assert_risk_marker_exclusive` and the tests.
     if RISK_HIGH_LABEL in labels:
         return "high"
     if RISK_LOW_LABEL in labels:
         return "low"
-    # Fallback for older PRs or states where risk is not yet labeled.
-    if DEFAULT_REVIEW_PENDING_LABEL in labels:
-        return "low"
+    # Positive clear marker (—/— cell): the ONLY state that arms auto-merge (K3/#629).
+    # Absence of this marker is NOT classified-clear — an unmarked PR HOLDS (K4/#630).
+    if RISK_CLEAR_LABEL in labels:
+        return "clear"
     return "unknown"
+
+
+def _assert_risk_marker_exclusive(labels: set[str]) -> None:
+    """Fail loud on the one state the K4 invariant forbids: `risk/—` alongside a flag.
+
+    The clear marker means "no sorter fired"; a risk/* flag means one did. Both at once
+    is a producer/backfill bug, not a routing decision — raise so it can never silently
+    auto-merge a PR that a sorter actually flagged."""
+    if RISK_CLEAR_LABEL in labels and (labels & RISK_FLAG_LABELS):
+        collision = sorted(labels & (RISK_FLAG_LABELS | {RISK_CLEAR_LABEL}))
+        raise ValueError(
+            f"risk-marker invariant violated: {RISK_CLEAR_LABEL} is mutually exclusive "
+            f"with risk/* flags, but this PR carries {collision}. A clear PR carries "
+            f"{RISK_CLEAR_LABEL} XOR a flag, never both."
+        )
 
 
 def evaluate_review_state(
@@ -878,11 +909,15 @@ def evaluate_review_state(
     review_decision = pr.get("reviewDecision")
     draft = bool(pr.get("isDraft"))
     blocking_review = review_decision == "CHANGES_REQUESTED"
+    _assert_risk_marker_exclusive(label_names)
     risk_tier = _risk_tier_for_pr(pr.get("body") or "", label_names)
+    is_clear = risk_tier == "clear"
     low_risk = risk_tier == "low"
     merge_blocked = draft or blocking_review or current_unresolved > 0
+    # K3/#629: arm on the positive `—/—` clear marker, NOT on risk==low. low/high/nope and
+    # any unmarked PR HOLD — only a PR classify actually scored clear auto-merges on open.
     eligible_for_auto_merge = (
-        AGENT_AUTO_MERGE_ENABLED and low_risk and grace_elapsed and not merge_blocked
+        AGENT_AUTO_MERGE_ENABLED and is_clear and grace_elapsed and not merge_blocked
     )
     should_have_agent_review_pending = (
         AGENT_AUTO_MERGE_ENABLED
@@ -905,6 +940,7 @@ def evaluate_review_state(
         "labels": sorted(label_names),
         "risk_tier": risk_tier,
         "low_risk": low_risk,
+        "is_clear": is_clear,
         "draft": draft,
         "review_decision": review_decision,
         "blocking_review": blocking_review,
@@ -1069,6 +1105,7 @@ def _build_reconciliation_report(
     promoted: list[int] = []
     rearmed: list[int] = []
     auto_merge_authorization_blocked: list[int] = []
+    invariant_violations: list[dict[str, object]] = []
     total_resolved_outdated_threads = 0
     # Resolve the looker once for the whole batch walk (the engage-outdated pattern): the
     # witness names whoever actually ran the scheduled reconcile — the authenticated actor.
@@ -1084,12 +1121,21 @@ def _build_reconciliation_report(
         if resolved_count:
             pr = _fetch_pr(owner, repo, pr_number)
 
-        state = evaluate_review_state(
-            pr,
-            now=now,
-            grace_minutes=grace_minutes,
-            auto_resolve_reviewers=auto_resolve_reviewers,
-        )
+        try:
+            state = evaluate_review_state(
+                pr,
+                now=now,
+                grace_minutes=grace_minutes,
+                auto_resolve_reviewers=auto_resolve_reviewers,
+            )
+        except ValueError as exc:
+            # The K4 mutual-exclusion invariant (risk/— XOR a flag) tripped on THIS PR. Fail
+            # loud — record it and surface a non-zero exit — but do NOT abort the sweep: one
+            # mis-labeled PR must not starve every other open PR of reconciliation.
+            print(f"::error title=risk-marker invariant::PR #{pr_number}: {exc}", file=sys.stderr)
+            invariant_violations.append({"number": pr_number, "error": str(exc)})
+            evaluated.append({"number": pr_number, "invariant_violation": str(exc)})
+            continue
 
         actions = apply_review_state_projection(pr_number, state)
         current_labels = set(state["labels"])
@@ -1153,6 +1199,7 @@ def _build_reconciliation_report(
         "promoted_prs": promoted,
         "rearmed_prs": rearmed,
         "auto_merge_authorization_blocked": auto_merge_authorization_blocked,
+        "invariant_violations": invariant_violations,
         "resolved_outdated_threads": total_resolved_outdated_threads,
         "evaluated": evaluated,
     }
@@ -1320,7 +1367,8 @@ def promote_ready(args: argparse.Namespace) -> int:
         auto_resolve_reviewers=auto_resolve_reviewers,
     )
     print(json.dumps(report))
-    return 0
+    # Fail loud on any risk-marker invariant violation (see reconcile_open_prs).
+    return 1 if report.get("invariant_violations") else 0
 
 
 def reconcile_open_prs(args: argparse.Namespace) -> int:
@@ -1336,7 +1384,9 @@ def reconcile_open_prs(args: argparse.Namespace) -> int:
         auto_resolve_reviewers=auto_resolve_reviewers,
     )
     print(json.dumps(report))
-    return 0
+    # Fail loud: any risk-marker invariant violation turns the reconcile run red so a
+    # mis-labeled PR can't rot unnoticed. The sweep still processed every other PR above.
+    return 1 if report.get("invariant_violations") else 0
 
 
 def enable_auto_merge(args: argparse.Namespace) -> int:
