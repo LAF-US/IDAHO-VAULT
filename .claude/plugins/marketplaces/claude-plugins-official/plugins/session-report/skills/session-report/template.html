@@ -420,18 +420,18 @@
       const lanes = [];
       for (const s of d.sessions) {
         let placed = false;
-        for (const L of lanes) if (L[L.length-1].end_min <= s.sta***REMOVED***min) { L.push(s); placed=true; break; }
+        for (const L of lanes) if (L[L.length-1].end_min <= s.start_min) { L.push(s); placed=true; break; }
         if (!placed) lanes.push([s]);
       }
       let h = '';
       for (let t=0;t<=24;t+=6) h += `<div class="gantt-rule" style="left:${100*t/24}%"></div>`;
       h += lanes.map(L=>`<div class="lane">${L.map(s=>{
         const end = Math.min(s.end_min, DAY);
-        const w = Math.max(0.15, 100*(end-s.sta***REMOVED***min)/DAY);
+        const w = Math.max(0.15, 100*(end-s.start_min)/DAY);
         const tip = `folder: ${short(s.project)}\n`+
-          `${hhmm(s.sta***REMOVED***min)}–${hhmm(s.end_min)} · ${fmt(s.tokens)} tokens\n`+
+          `${hhmm(s.start_min)}–${hhmm(s.end_min)} · ${fmt(s.tokens)} tokens\n`+
           `session ${s.id}`;
-        return `<span class="seg" style="left:${100*s.sta***REMOVED***min/DAY}%;width:${w}%;`+
+        return `<span class="seg" style="left:${100*s.start_min/DAY}%;width:${w}%;`+
           `background:${colorOf(s.project)}" title="${esc(tip)}"></span>`;
       }).join('')}</div>`).join('');
       $('gantt').innerHTML = h || '<div class="callout">no sessions</div>';

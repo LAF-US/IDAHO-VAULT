@@ -58,7 +58,7 @@ def run_loop(
     holdout: float,
     model: str,
     verbose: bool,
-    live_repo***REMOVED***path: Path | None = None,
+    live_report_path: Path | None = None,
     log_dir: Path | None = None,
 ) -> dict:
     """Run the eval + improvement loop."""
@@ -140,7 +140,7 @@ def run_loop(
         })
 
         # Write live report if path provided
-        if live_repo***REMOVED***path:
+        if live_report_path:
             partial_output = {
                 "original_description": original_description,
                 "best_description": current_description,
@@ -151,7 +151,7 @@ def run_loop(
                 "test_size": len(test_set),
                 "history": history,
             }
-            live_repo***REMOVED***path.write_text(generate_html(partial_output, auto_refresh=True, skill_name=name))
+            live_report_path.write_text(generate_html(partial_output, auto_refresh=True, skill_name=name))
 
         if verbose:
             def print_eval_stats(label, results, elapsed):
@@ -275,14 +275,14 @@ def main():
     if args.report != "none":
         if args.report == "auto":
             timestamp = time.strftime("%Y%m%d_%H%M%S")
-            live_repo***REMOVED***path = Path(tempfile.gettempdir()) / f"skill_description_repo***REMOVED***{skill_path.name}_{timestamp}.html"
+            live_report_path = Path(tempfile.gettempdir()) / f"skill_description_report_{skill_path.name}_{timestamp}.html"
         else:
-            live_repo***REMOVED***path = Path(args.report)
+            live_report_path = Path(args.report)
         # Open the report immediately so the user can watch
-        live_repo***REMOVED***path.write_text("<html><body><h1>Starting optimization loop...</h1><meta http-equiv='refresh' content='5'></body></html>")
-        webbrowser.open(str(live_repo***REMOVED***path))
+        live_report_path.write_text("<html><body><h1>Starting optimization loop...</h1><meta http-equiv='refresh' content='5'></body></html>")
+        webbrowser.open(str(live_report_path))
     else:
-        live_repo***REMOVED***path = None
+        live_report_path = None
 
     # Determine output directory (create before run_loop so logs can be written)
     if args.results_dir:
@@ -306,7 +306,7 @@ def main():
         holdout=args.holdout,
         model=args.model,
         verbose=args.verbose,
-        live_repo***REMOVED***path=live_repo***REMOVED***path,
+        live_report_path=live_report_path,
         log_dir=log_dir,
     )
 
@@ -317,11 +317,11 @@ def main():
         (results_dir / "results.json").write_text(json_output)
 
     # Write final HTML report (without auto-refresh)
-    if live_repo***REMOVED***path:
-        live_repo***REMOVED***path.write_text(generate_html(output, auto_refresh=False, skill_name=name))
-        print(f"\nReport: {live_repo***REMOVED***path}", file=sys.stderr)
+    if live_report_path:
+        live_report_path.write_text(generate_html(output, auto_refresh=False, skill_name=name))
+        print(f"\nReport: {live_report_path}", file=sys.stderr)
 
-    if results_dir and live_repo***REMOVED***path:
+    if results_dir and live_report_path:
         (results_dir / "report.html").write_text(generate_html(output, auto_refresh=False, skill_name=name))
 
     if results_dir:

@@ -184,7 +184,7 @@ fi
 echo "▶️  Running hook (timeout: ${TIMEOUT}s)..."
 echo ""
 
-sta***REMOVED***time=$(date +%s)
+start_time=$(date +%s)
 
 set +e
 output=$(timeout "$TIMEOUT" bash -c "cat '$TEST_INPUT' | $HOOK_SCRIPT" 2>&1)
@@ -192,7 +192,7 @@ exit_code=$?
 set -e
 
 end_time=$(date +%s)
-duration=$((end_time - sta***REMOVED***time))
+duration=$((end_time - start_time))
 
 # Analyze results
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"

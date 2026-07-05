@@ -110,7 +110,7 @@ async (args, extra) => {
 ```python
 async def long_task(ctx: Context) -> str:
     for i in range(100):
-        await ctx.repo***REMOVED***progress(progress=i, total=100, message=f"Step {i}")
+        await ctx.report_progress(progress=i, total=100, message=f"Step {i}")
         await do_step(i)
     return "Done"
 ```

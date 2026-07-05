@@ -91,14 +91,14 @@ def run_single_query(
         )
 
         triggered = False
-        sta***REMOVED***time = time.time()
+        start_time = time.time()
         buffer = ""
         # Track state for stream event detection
         pending_tool_name = None
         accumulated_json = ""
 
         try:
-            while time.time() - sta***REMOVED***time < timeout:
+            while time.time() - start_time < timeout:
                 if process.poll() is not None:
                     remaining = process.stdout.read()
                     if remaining:

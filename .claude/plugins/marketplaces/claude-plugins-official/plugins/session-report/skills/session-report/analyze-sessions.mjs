@@ -700,7 +700,7 @@ function buildByDay() {
       id,
       project: s.project,
       tokens: s.tokens,
-      sta***REMOVED***min: Math.max(0, Math.round((s.firstTs - base) / 60000)),
+      start_min: Math.max(0, Math.round((s.firstTs - base) / 60000)),
       end_min: Math.max(1, Math.round((s.lastTs - base) / 60000)),
     })
   }
@@ -708,13 +708,13 @@ function buildByDay() {
     // peak concurrency via 10-min buckets, capped at 24h for display
     const b = new Array(144).fill(0)
     for (const s of d.sessions) {
-      const lo = Math.min(143, Math.floor(s.sta***REMOVED***min / 10))
+      const lo = Math.min(143, Math.floor(s.start_min / 10))
       const hi = Math.min(144, Math.ceil(Math.min(s.end_min, 1440) / 10))
       for (let i = lo; i < hi; i++) b[i]++
     }
     d.peak = Math.max(0, ...b)
     d.peak_at_min = d.peak > 0 ? b.indexOf(d.peak) * 10 : 0
-    d.sessions.sort((a, b) => a.sta***REMOVED***min - b.sta***REMOVED***min)
+    d.sessions.sort((a, b) => a.start_min - b.start_min)
   }
   return [...days.values()].sort((a, b) => a.date.localeCompare(b.date))
 }
