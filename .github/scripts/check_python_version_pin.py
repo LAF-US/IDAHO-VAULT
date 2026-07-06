@@ -40,6 +40,12 @@ def _repo_root() -> Path:
         root = Path(_validated_workspace(workspace)).resolve() if workspace else None
         if root is None or not root.is_dir():
             raise SystemExit(f"GITHUB_WORKSPACE is not a directory: {workspace!r}")
+        if not (root / "AGENTS.md").is_file() or not (root / ".git").exists():
+            # A workspace that resolves to a real, existing directory but
+            # isn't actually this repo checkout is a distinct failure mode
+            # from "not a directory" — e.g. a misconfigured working-directory
+            # override pointing the scan at the wrong tree entirely.
+            raise SystemExit(f"GITHUB_WORKSPACE does not look like the IDAHO-VAULT repo root: {root}")
         return root
     return Path(__file__).resolve().parents[2]
 
