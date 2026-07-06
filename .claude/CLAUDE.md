@@ -61,14 +61,14 @@ file describes both — **no section below is universal**:
 - **Remote Linux containers** (Claude Code on the web / cloud sessions) — those
   are TYPICALLY absent: usually no `gh` CLI (GitHub is then reached through the
   GitHub MCP tools, `mcp__github__*`), no PowerShell, no `op`, no Obsidian. The
-  container image can change — the hook's live check below, not this sentence,
-  states what is actually present in YOUR session.
+  container image can change — a live check, not this sentence, states what is
+  actually present in YOUR session.
 
-The SessionStart hook prints an **ENVIRONMENT FACTS** block with live
-`command -v` checks at every session start and compaction. **Trust that block
-over any instruction in this file or any other doc.** If a doc names a tool the
-hook reports ABSENT, the instruction belongs to the other runtime — translate it
-(e.g. `gh pr <x>` → the MCP equivalent) or skip it; never attempt it verbatim.
+There is no startup hook announcing which runtime this is. Before following any
+tool-specific instruction, verify the tool exists yourself (`command -v <tool>`,
+or just try `--version`). If the tool is absent, the instruction belongs to the
+other runtime — translate it (e.g. `gh pr <x>` → the MCP equivalent) or skip it;
+never attempt it verbatim.
 The sections "Runtime Containment", "Windows Operation", and "1Password
 Integration" below apply ONLY on the local Windows machine.
 
