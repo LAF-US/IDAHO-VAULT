@@ -215,7 +215,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
         for flag in (review_feedback_loop.RISK_LOW_LABEL, review_feedback_loop.RISK_HIGH_LABEL):
             with self.subTest(flag=flag):
-                with self.assertRaises(ValueError):
+                with self.assertRaises(review_feedback_loop.RiskMarkerInvariantError):
                     review_feedback_loop.evaluate_review_state(
                         _pr(
                             created_at=now - timedelta(minutes=45),
@@ -860,6 +860,21 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         edit_label.assert_any_call(88, add=review_feedback_loop.DEFAULT_AUTO_MERGE_LABEL)
         comment.assert_called_once()
         arm_auto_merge.assert_called_once_with("LAF-US", "IDAHO-VAULT", 88)
+
+    def test_promote_ready_fails_loud_on_invariant_violation(self) -> None:
+        # K4/#630: promote_ready shares reconcile's exit-code contract — non-zero when the
+        # invariant tripped (CI red), zero otherwise. `promote_ready` reads the report via
+        # dict.get, so the stub returns a dict (not a namespace).
+        args = SimpleNamespace(owner="LAF-US", repo="IDAHO-VAULT", grace_minutes=30)
+
+        with mock.patch.object(review_feedback_loop, "ensure_labels"), mock.patch.object(
+            review_feedback_loop, "_build_reconciliation_report"
+        ) as build_report, contextlib.redirect_stdout(io.StringIO()):
+            build_report.return_value = {"invariant_violations": [{"number": 90, "error": "x"}]}
+            self.assertEqual(review_feedback_loop.promote_ready(args), 1)
+
+            build_report.return_value = {"invariant_violations": []}
+            self.assertEqual(review_feedback_loop.promote_ready(args), 0)
 
     def test_reconcile_fails_loud_on_invariant_but_still_sweeps_rest(self) -> None:
         # K4/#630 fail-loud, right blast radius: a PR carrying risk/— alongside a flag trips

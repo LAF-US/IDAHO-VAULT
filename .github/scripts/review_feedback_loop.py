@@ -852,6 +852,14 @@ def _risk_tier_for_pr(body: str, labels: set[str]) -> str:
     return "unknown"
 
 
+class RiskMarkerInvariantError(ValueError):
+    """The K4 risk-marker invariant was violated: `risk/—` alongside a risk/* flag.
+
+    A dedicated type (not a bare ValueError) so callers can catch EXACTLY this breach
+    and never mistake an unrelated ValueError from the evaluate path for an invariant
+    violation. Subclasses ValueError so existing broad handlers still degrade safely."""
+
+
 def _assert_risk_marker_exclusive(labels: set[str]) -> None:
     """Fail loud on the one state the K4 invariant forbids: `risk/—` alongside a flag.
 
@@ -860,7 +868,7 @@ def _assert_risk_marker_exclusive(labels: set[str]) -> None:
     auto-merge a PR that a sorter actually flagged."""
     if RISK_CLEAR_LABEL in labels and (labels & RISK_FLAG_LABELS):
         collision = sorted(labels & (RISK_FLAG_LABELS | {RISK_CLEAR_LABEL}))
-        raise ValueError(
+        raise RiskMarkerInvariantError(
             f"risk-marker invariant violated: {RISK_CLEAR_LABEL} is mutually exclusive "
             f"with risk/* flags, but this PR carries {collision}. A clear PR carries "
             f"{RISK_CLEAR_LABEL} XOR a flag, never both."
@@ -1128,10 +1136,11 @@ def _build_reconciliation_report(
                 grace_minutes=grace_minutes,
                 auto_resolve_reviewers=auto_resolve_reviewers,
             )
-        except ValueError as exc:
+        except RiskMarkerInvariantError as exc:
             # The K4 mutual-exclusion invariant (risk/— XOR a flag) tripped on THIS PR. Fail
             # loud — record it and surface a non-zero exit — but do NOT abort the sweep: one
-            # mis-labeled PR must not starve every other open PR of reconciliation.
+            # mis-labeled PR must not starve every other open PR of reconciliation. Scoped to
+            # the dedicated type so an unrelated ValueError still fails the run normally.
             print(f"::error title=risk-marker invariant::PR #{pr_number}: {exc}", file=sys.stderr)
             invariant_violations.append({"number": pr_number, "error": str(exc)})
             evaluated.append({"number": pr_number, "invariant_violation": str(exc)})
