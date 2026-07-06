@@ -245,6 +245,33 @@ def run_loop(
     }
 
 
+def resolve_report_path(report_arg: str, skill_name: str) -> Path | None:
+    """Resolve --report into a concrete path, confined to cwd or the system temp dir.
+
+    The tool only ever intends to write the live report to the system temp
+    directory ("auto") or a location the operator names next to their own
+    working tree -- confining the resolved path to one of those two roots
+    keeps a mistyped or attacker-influenced --report value from being used to
+    overwrite an arbitrary file elsewhere on disk.
+    """
+    if report_arg == "none":
+        return None
+
+    if report_arg == "auto":
+        timestamp = time.strftime("%Y%m%d_%H%M%S")
+        candidate = Path(tempfile.gettempdir()) / f"skill_description_report_{skill_name}_{timestamp}.html"
+    else:
+        candidate = Path(report_arg)
+
+    resolved = candidate.resolve()
+    allowed_roots = (Path.cwd().resolve(), Path(tempfile.gettempdir()).resolve())
+    if not any(resolved == root or resolved.is_relative_to(root) for root in allowed_roots):
+        raise SystemExit(
+            f"--report must resolve within the current directory or the system temp directory; got {resolved}"
+        )
+    return resolved
+
+
 def main():
     parser = argparse.ArgumentParser(description="Run eval + improve loop")
     parser.add_argument("--eval-set", required=True, help="Path to eval set JSON file")
@@ -272,17 +299,11 @@ def main():
     name, _, _ = parse_skill_md(skill_path)
 
     # Set up live report path
-    if args.report != "none":
-        if args.report == "auto":
-            timestamp = time.strftime("%Y%m%d_%H%M%S")
-            live_report_path = Path(tempfile.gettempdir()) / f"skill_description_report_{skill_path.name}_{timestamp}.html"
-        else:
-            live_report_path = Path(args.report)
+    live_report_path = resolve_report_path(args.report, skill_path.name)
+    if live_report_path:
         # Open the report immediately so the user can watch
         live_report_path.write_text("<html><body><h1>Starting optimization loop...</h1><meta http-equiv='refresh' content='5'></body></html>")
         webbrowser.open(str(live_report_path))
-    else:
-        live_report_path = None
 
     # Determine output directory (create before run_loop so logs can be written)
     if args.results_dir:
