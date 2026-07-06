@@ -14,6 +14,20 @@ import re
 import sys
 from pathlib import Path
 
+# Runner-controlled, not attacker-controlled (GITHUB_WORKSPACE is set by the
+# Actions runner itself) — but validated by shape anyway: an absolute POSIX
+# path in a plain charset, with no ".." traversal segment, before it's ever
+# turned into a Path. This is a strict allowlist guard on the raw string,
+# not a check on values derived from it, so it doesn't multiply into new
+# sinks the way validating the resolved Path object would.
+_WORKSPACE_SHAPE = re.compile(r"^/[\w.-]+(?:/[\w.-]+)*$")
+
+
+def _validated_workspace(workspace: str) -> str:
+    if not _WORKSPACE_SHAPE.fullmatch(workspace) or "/../" in f"/{workspace}/":
+        raise SystemExit(f"GITHUB_WORKSPACE has an unexpected shape: {workspace!r}")
+    return workspace
+
 
 def _repo_root() -> Path:
     # In CI this script executes from the trusted base-branch checkout
@@ -23,7 +37,7 @@ def _repo_root() -> Path:
     # invisible to this check.
     if os.environ.get("GITHUB_ACTIONS") == "true":
         workspace = os.environ.get("GITHUB_WORKSPACE", "")
-        root = Path(workspace).resolve() if workspace else None
+        root = Path(_validated_workspace(workspace)).resolve() if workspace else None
         if root is None or not root.is_dir():
             raise SystemExit(f"GITHUB_WORKSPACE is not a directory: {workspace!r}")
         return root
