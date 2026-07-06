@@ -5,8 +5,11 @@ import argparse
 import hashlib
 import json
 import random
+import re
 import subprocess
 import sys
+
+REPO_PATTERN = re.compile(r"^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$")
 
 # Known reviewers that can potentially approve
 POTENTIAL_ARBITERS = {
@@ -151,10 +154,9 @@ def main():
     if args.pr_number <= 0:
         parser.error(f"--pr-number must be a positive integer, got: {args.pr_number}")
 
-    parts = args.repo.split("/")
-    if len(parts) != 2 or not all(parts):
+    if not REPO_PATTERN.fullmatch(args.repo):
         parser.error(f"--repo must be in 'owner/repo' format, got: {args.repo}")
-    owner, repo_name = parts
+    owner, repo_name = args.repo.split("/")
     print(f"Running arbiter sortition for {owner}/{repo_name} PR #{args.pr_number}")
     
     active_reviewers = _get_active_reviewers(owner, repo_name, args.pr_number)
