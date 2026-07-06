@@ -106,8 +106,8 @@ def _pr(
 
 
 class ReviewFeedbackLoopTest(unittest.TestCase):
-    def test_clear_cell_pr_becomes_auto_merge_eligible_after_grace(self) -> None:
-        # K3/#629: the `—/—` clear cell — and ONLY it — arms auto-merge. A PR that classify
+    def test_clear_pair_pr_becomes_auto_merge_eligible_after_grace(self) -> None:
+        # K3/#629: the `—/—` pair — and ONLY it — arms auto-merge. A PR that classify
         # scored clear (risk/—) with no blocking feedback is eligible once the grace window
         # elapses; within grace it is not yet eligible.
         now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
@@ -173,7 +173,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertTrue(state["low_risk"])
         self.assertTrue(state["grace_elapsed"])
         # K3/#629: risk/low HOLDS — the label is canonical for the tier, but low is not the
-        # clear cell, so it never arms.
+        # clear pair, so it never arms.
         self.assertFalse(state["eligible_for_auto_merge"])
 
     def test_high_risk_label_wins_when_low_and_high_are_both_present(self) -> None:
@@ -714,7 +714,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         arm.assert_not_called()
 
     def test_sync_pr_arms_eligible_clear_pr_when_threads_clear(self) -> None:
-        # End-to-end through sync_pr: a clear-cell (risk/—), grace-elapsed PR with no current
+        # End-to-end through sync_pr: a clear-pair (risk/—), grace-elapsed PR with no current
         # threads is armed (guarded). Mirrors "arm when the last blocking thread clears".
         now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
         args = SimpleNamespace(
@@ -817,8 +817,8 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         # The lazily-resolved actor is the witness passed to attest_and_resolve.
         self.assertEqual(attest.call_args.args[2], "github-actions[bot]")
 
-    def test_reconcile_open_prs_promotes_and_arms_eligible_clear_pr(self) -> None:
-        # K3/#629: a clear-cell (risk/—), grace-elapsed, unblocked PR is promoted to
+    def test_reconcile_open_prs_promotes_and_arms_eligible_clear_pair_pr(self) -> None:
+        # K3/#629: a clear-pair (risk/—), grace-elapsed, unblocked PR is promoted to
         # merge/auto and armed for the merge queue. (A risk/low PR would HOLD instead.)
         args = SimpleNamespace(
             owner="LAF-US",

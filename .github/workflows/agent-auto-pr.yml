@@ -89,8 +89,9 @@ jobs:
 
           RESULT=$(echo "$CHANGED" | python3 trusted-main/.github/scripts/classify_paths.py)
           TIER=$(echo "$RESULT" | python3 -c "import sys,json; print(json.load(sys.stdin)['tier'])")
-          # tier4 is the 4-state cell (clear|low|med|high). The binary `tier` collapses the
-          # `—/—` clear cell down to `low`, so the clear cell is only visible on tier4 — the
+          # tier4 is the 4-state verdict (clear|low|med|high) off the 3x3 matrix of label
+          # pairs. The binary `tier` collapses the `—/—` pair down to `low`, so it is only
+          # visible on tier4 — the
           # producer needs it to stamp the positive `risk/—` marker (K3/#629, K4/#630).
           TIER4=$(echo "$RESULT" | python3 -c "import sys,json; print(json.load(sys.stdin)['tier4'])")
           echo "tier=$TIER" >> "$GITHUB_OUTPUT"
@@ -98,7 +99,7 @@ jobs:
 
           echo "### Changed files" >> "$GITHUB_STEP_SUMMARY"
           echo "$CHANGED" >> "$GITHUB_STEP_SUMMARY"
-          echo "### Risk tier: $TIER (cell: $TIER4)" >> "$GITHUB_STEP_SUMMARY"
+          echo "### Risk tier: $TIER (tier4: $TIER4)" >> "$GITHUB_STEP_SUMMARY"
 
       - name: Check for existing PR
         if: steps.gate.outputs.skip != 'true' && steps.classify.outputs.skip != 'true'
@@ -148,11 +149,11 @@ jobs:
           AGENT=$(echo "$BRANCH_NAME" | sed 's|/.*||')
           DIFFSTAT=$(git diff --stat origin/main...HEAD)
 
-          # Risk label: the `—/—` clear cell gets the POSITIVE `risk/—` marker (K3/#629,
+          # Risk label: the `—/—` pair gets the POSITIVE `risk/—` marker (K3/#629,
           # K4/#630) — the only state that arms auto-merge on open, mutually exclusive with
           # every risk/* flag, and carrying NO review/pending (a clear PR is not held for
-          # review). Every other cell keeps the binary risk/{low,high} flag; low still carries
-          # review/pending so the machine-doc cell is held for a human.
+          # review). Every other pair keeps the binary risk/{low,high} flag; low still carries
+          # review/pending so a machine-doc (low/—) changeset is held for a human.
           if [ "$RISK_TIER4" = "clear" ]; then
             RISK_LABEL="risk/—"
             LABEL=""
@@ -234,8 +235,8 @@ jobs:
           python3 trusted-main/.github/scripts/pr_lifecycle.py set-state --pr-number "$PR_NUM" --state staged
 
       - name: Log grace period start
-        # Only the true machine-doc low cell (tier4 == 'low') carries review/pending. The
-        # binary tier collapses the clear cell to 'low' too, so gate on tier4 to avoid
+        # Only a true machine-doc low verdict (tier4 == 'low') carries review/pending. The
+        # binary tier collapses the clear pair to 'low' too, so gate on tier4 to avoid
         # claiming review/pending on a clear PR that was actually stamped `risk/—`.
         if: steps.gate.outputs.skip != 'true' && steps.classify.outputs.skip != 'true' && steps.check-pr.outputs.pr_exists != 'true' && steps.classify.outputs.tier4 == 'low'
         shell: bash
@@ -244,10 +245,10 @@ jobs:
           echo "Low-risk PR created with \`review/pending\`." >> "$GITHUB_STEP_SUMMARY"
           echo "Agent-authored PRs remain reviewable and require an explicit merge decision." >> "$GITHUB_STEP_SUMMARY"
 
-      - name: Log clear-cell auto-merge
-        # The —/— clear cell is armed for auto-merge on open (K3/#629, K4/#630).
+      - name: Log clear-pair auto-merge
+        # The —/— pair is armed for auto-merge on open (K3/#629, K4/#630).
         if: steps.gate.outputs.skip != 'true' && steps.classify.outputs.skip != 'true' && steps.check-pr.outputs.pr_exists != 'true' && steps.classify.outputs.tier4 == 'clear'
         shell: bash
         run: |
           echo "Lifecycle set to \`lifecycle/staged\`." >> "$GITHUB_STEP_SUMMARY"
-          echo "Clear cell (\`—/—\`): stamped \`risk/—\` and armed for auto-merge on open." >> "$GITHUB_STEP_SUMMARY"
+          echo "Clear pair (\`—/—\`): stamped \`risk/—\` and armed for auto-merge on open." >> "$GITHUB_STEP_SUMMARY"

@@ -103,8 +103,8 @@ DEFAULT_AUTO_MERGE_LABEL = "merge/auto"
 DEFAULT_SUGGESTIONS_LABEL = "review/suggestions-ready"
 RISK_LOW_LABEL = "risk/low"
 RISK_HIGH_LABEL = "risk/high"
-# K4/#630: the positive `—/—` clear-cell marker. Stamped ONLY when classify scored a PR
-# clear (no sorter fired). Per Logan's invariant it is MUTUALLY EXCLUSIVE with every
+# K4/#630: the positive `—/—` marker — the label pair where NEITHER analysis fired.
+# Stamped ONLY when classify scored a PR clear. Per Logan's invariant it is MUTUALLY EXCLUSIVE with every
 # risk/* flag — a PR carries `risk/—` XOR a flag, never both.
 RISK_CLEAR_LABEL = "risk/—"
 RISK_FLAG_LABELS = frozenset({RISK_LOW_LABEL, RISK_HIGH_LABEL})
@@ -157,7 +157,7 @@ LABEL_SPECS: dict[str, tuple[str, str]] = {
     ),
     RISK_CLEAR_LABEL: (
         "0E8A16",
-        "Clear cell (—/—): no sorter fired; auto-merge on open. Mutually exclusive with risk/*.",
+        "The —/— label pair: neither analysis fired; auto-merge on open. Mutually exclusive with risk/*.",
     ),
 }
 
@@ -845,7 +845,7 @@ def _risk_tier_for_pr(body: str, labels: set[str]) -> str:
         return "high"
     if RISK_LOW_LABEL in labels:
         return "low"
-    # Positive clear marker (—/— cell): the ONLY state that arms auto-merge (K3/#629).
+    # Positive clear marker (the —/— label pair): the ONLY state that arms auto-merge (K3/#629).
     # Absence of this marker is NOT classified-clear — an unmarked PR HOLDS (K4/#630).
     if RISK_CLEAR_LABEL in labels:
         return "clear"
