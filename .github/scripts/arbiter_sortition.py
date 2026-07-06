@@ -12,17 +12,20 @@ from gh_cli import run as _run
 
 REPO_PATTERN = re.compile(r"^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$")
 
-# Known reviewers that can potentially approve
-POTENTIAL_ARBITERS = {
+# Every reviewer identity eligible to be selected as an arbiter -- bots that
+# can potentially approve, plus the human reviewer. This is a single literal
+# set (not a union computed from smaller sets) so every comparison against it
+# is a literal constant-comparison, not a value derived at runtime.
+ALL_REVIEWERS = {
+    # bots
     "sourcery-ai[bot]",
     "chatgpt-codex-connector[bot]",
     "copilot-pull-request-reviewer[bot]",
     "coderabbitai[bot]",
     "qodo-ai[bot]",
+    # humans
+    "loganfinney27",
 }
-
-HUMAN_REVIEWERS = {"loganfinney27"}
-ALL_REVIEWERS = POTENTIAL_ARBITERS | HUMAN_REVIEWERS
 ARBITER_LABEL_PREFIX = "arbiter/"
 
 
