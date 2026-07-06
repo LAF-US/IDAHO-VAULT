@@ -265,8 +265,12 @@ def _arm_auto_merge(owner: str, repo: str, pr_number: int) -> tuple[bool, str | 
         return (True, None)
     if not enabled:
         try:
+            # K5/#631 (norm set 2026-07-06): the merge QUEUE's configured method is the
+            # single merge-method norm. gh syntax requires a method flag, but on a
+            # merge-queue repo the queue overrides it — `--merge` is the one canonical,
+            # inert spelling everywhere (test_workflow_security_invariants enforces it).
             _run(
-                ["gh", "pr", "merge", str(pr_number), "--squash", "--delete-branch", "--auto"]
+                ["gh", "pr", "merge", str(pr_number), "--merge", "--delete-branch", "--auto"]
             )
         except RuntimeError as exc:
             if not any(fragment in str(exc) for fragment in AUTO_MERGE_AUTHZ_FRAGMENTS):
