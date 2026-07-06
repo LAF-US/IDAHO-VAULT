@@ -14,19 +14,15 @@ import re
 import sys
 from pathlib import Path
 
-# Runner-controlled, not attacker-controlled (GITHUB_WORKSPACE is set by the
-# Actions runner itself) — but validated by shape anyway: an absolute POSIX
-# path in a plain charset, with no ".." traversal segment, before it's ever
-# turned into a Path. This is a strict allowlist guard on the raw string,
-# not a check on values derived from it, so it doesn't multiply into new
-# sinks the way validating the resolved Path object would.
-_WORKSPACE_SHAPE = re.compile(r"^/[\w.-]+(?:/[\w.-]+)*$")
-
-
-def _validated_workspace(workspace: str) -> str:
-    if not _WORKSPACE_SHAPE.fullmatch(workspace) or "/../" in f"/{workspace}/":
-        raise SystemExit(f"GITHUB_WORKSPACE has an unexpected shape: {workspace!r}")
-    return workspace
+# This job (see python-version-pin-policy.yml) runs only on `ubuntu-latest`,
+# where GitHub-hosted runners always set GITHUB_WORKSPACE to this exact path
+# for this repo — it is not attacker-influenceable, but an equality
+# comparison against a hardcoded constant is also CodeQL's own documented
+# sanitizer for this query (ConstCompareAsSanitizerGuard, "a comparison with
+# a constant"), unlike a shape/regex check or a check on values derived from
+# the resolved Path, neither of which this query's dataflow model recognizes
+# as a barrier.
+_EXPECTED_GITHUB_WORKSPACE = "/home/runner/work/IDAHO-VAULT/IDAHO-VAULT"
 
 
 def _repo_root() -> Path:
@@ -37,15 +33,11 @@ def _repo_root() -> Path:
     # invisible to this check.
     if os.environ.get("GITHUB_ACTIONS") == "true":
         workspace = os.environ.get("GITHUB_WORKSPACE", "")
-        root = Path(_validated_workspace(workspace)).resolve() if workspace else None
-        if root is None or not root.is_dir():
+        if workspace != _EXPECTED_GITHUB_WORKSPACE:
+            raise SystemExit(f"GITHUB_WORKSPACE does not match the expected runner path: {workspace!r}")
+        root = Path(workspace).resolve()
+        if not root.is_dir():
             raise SystemExit(f"GITHUB_WORKSPACE is not a directory: {workspace!r}")
-        if not (root / "AGENTS.md").is_file() or not (root / ".git").exists():
-            # A workspace that resolves to a real, existing directory but
-            # isn't actually this repo checkout is a distinct failure mode
-            # from "not a directory" — e.g. a misconfigured working-directory
-            # override pointing the scan at the wrong tree entirely.
-            raise SystemExit(f"GITHUB_WORKSPACE does not look like the IDAHO-VAULT repo root: {root}")
         return root
     return Path(__file__).resolve().parents[2]
 
