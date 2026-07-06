@@ -91,15 +91,19 @@ jobs:
           TIER=$(echo "$RESULT" | python3 -c "import sys,json; print(json.load(sys.stdin)['tier'])")
           # tier4 is the 4-state verdict (clear|low|med|high) off the 3x3 matrix of label
           # pairs. The binary `tier` collapses the `—/—` pair down to `low`, so it is only
-          # visible on tier4 — the
-          # producer needs it to stamp the positive `risk/—` marker (K3/#629, K4/#630).
+          # visible on tier4 — the producer needs it for the legacy sparse marker.
           TIER4=$(echo "$RESULT" | python3 -c "import sys,json; print(json.load(sys.stdin)['tier4'])")
+          # K6/#632: the two independent analyses — the lane IS this label pair.
+          FILETYPE=$(echo "$RESULT" | python3 -c "import sys,json; print(json.load(sys.stdin)['filetype'] or '—')")
+          DEPTH=$(echo "$RESULT" | python3 -c "import sys,json; print(json.load(sys.stdin)['depth'] or '—')")
           echo "tier=$TIER" >> "$GITHUB_OUTPUT"
           echo "tier4=$TIER4" >> "$GITHUB_OUTPUT"
+          echo "filetype=$FILETYPE" >> "$GITHUB_OUTPUT"
+          echo "depth=$DEPTH" >> "$GITHUB_OUTPUT"
 
           echo "### Changed files" >> "$GITHUB_STEP_SUMMARY"
           echo "$CHANGED" >> "$GITHUB_STEP_SUMMARY"
-          echo "### Risk tier: $TIER (tier4: $TIER4)" >> "$GITHUB_STEP_SUMMARY"
+          echo "### Lane: {filetype:risk/$FILETYPE & depth:risk/$DEPTH} (tier: $TIER, tier4: $TIER4)" >> "$GITHUB_STEP_SUMMARY"
 
       - name: Check for existing PR
         if: steps.gate.outputs.skip != 'true' && steps.classify.outputs.skip != 'true'
@@ -133,6 +137,8 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           RISK_TIER: ${{ steps.classify.outputs.tier }}
           RISK_TIER4: ${{ steps.classify.outputs.tier4 }}
+          RISK_FILETYPE: ${{ steps.classify.outputs.filetype }}
+          RISK_DEPTH: ${{ steps.classify.outputs.depth }}
           BRANCH_NAME: ${{ steps.gate.outputs.branch_name }}
         shell: bash
         run: |
@@ -149,21 +155,28 @@ jobs:
           AGENT=$(echo "$BRANCH_NAME" | sed 's|/.*||')
           DIFFSTAT=$(git diff --stat origin/main...HEAD)
 
-          # Risk label: the `—/—` pair gets the POSITIVE `risk/—` marker (K3/#629,
-          # K4/#630) — the only state that arms auto-merge on open, mutually exclusive with
-          # every risk/* flag, and carrying NO review/pending (a clear PR is not held for
-          # review). Every other pair keeps the binary risk/{low,high} flag; low still carries
-          # review/pending so a machine-doc (low/—) changeset is held for a human.
+          # K6/#632: stamp the LANE — the pair of axis labels, one per independent
+          # analysis. The `—/—` pair arms on open (K3/#629); a fired flag routes the PR
+          # into its review lane and is consumed when that review completes. The legacy
+          # sparse marker (risk/— | risk/low | risk/high) is kept in sync during the
+          # transition (dependabot-rhythm keys on risk/high); the pair takes precedence.
+          PAIR_FT_LABEL="filetype:risk/$RISK_FILETYPE"
+          PAIR_DP_LABEL="depth:risk/$RISK_DEPTH"
           if [ "$RISK_TIER4" = "clear" ]; then
             RISK_LABEL="risk/—"
             LABEL=""
             LABEL_MARKER="risk/—"
-          elif [ "$RISK_TIER" = "low" ]; then
-            RISK_LABEL="risk/$RISK_TIER"
+          elif [ "$RISK_TIER4" = "low" ]; then
+            RISK_LABEL="risk/low"
             LABEL="review/pending"
             LABEL_MARKER="$LABEL"
+          elif [ "$RISK_TIER4" = "med" ]; then
+            # med: the pair itself holds the lane; no legacy flag exists for med.
+            RISK_LABEL=""
+            LABEL=""
+            LABEL_MARKER="none"
           else
-            RISK_LABEL="risk/$RISK_TIER"
+            RISK_LABEL="risk/high"
             LABEL=""
             LABEL_MARKER="none"
           fi
@@ -190,8 +203,12 @@ jobs:
             --body "$BODY"
             --base main
             --head "$BRANCH_NAME"
-            --label "$RISK_LABEL"
+            --label "$PAIR_FT_LABEL"
+            --label "$PAIR_DP_LABEL"
           )
+          if [ -n "$RISK_LABEL" ]; then
+            CREATE_ARGS+=(--label "$RISK_LABEL")
+          fi
           if [ -n "$LABEL" ]; then
             CREATE_ARGS+=(--label "$LABEL")
           fi
