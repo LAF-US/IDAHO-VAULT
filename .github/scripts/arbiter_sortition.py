@@ -117,14 +117,14 @@ def _remove_old_arbiter_labels(pr_number, current_arbiters):
                 arbiter_name = label[len(ARBITER_LABEL_PREFIX):]
                 if arbiter_name not in current_arbiters:
                     _run(["gh", "pr", "edit", str(pr_number), "--remove-label", label], check=False)
-    except (json.JSONDecodeError, KeyError):
-        pass
+    except (json.JSONDecodeError, KeyError) as exc:
+        print(f"Warning: could not parse current labels for PR #{pr_number}: {exc}", file=sys.stderr)
 
 
 def _post_arbiter_comment(pr_number, arbiters):
     if not arbiters:
         return
-    arbiter_list = "\n- ".join(f"@{arbiter}" for arbiter in arbiters)
+    arbiter_list = "\n".join(f"- @{arbiter}" for arbiter in arbiters)
     comment_body = f"""## Arbiter Sortition
 
 **Multiplicity of Reviewers**: All reviewers can continue to comment and provide feedback.
@@ -147,8 +147,11 @@ def main():
     parser.add_argument("--repo", type=str, required=True, help="Repository in owner/repo format")
     parser.add_argument("--arbiter-count", type=int, default=2, help="Number of arbiters to select")
     args = parser.parse_args()
-    
-    owner, repo_name = args.repo.split("/")
+
+    parts = args.repo.split("/")
+    if len(parts) != 2 or not all(parts):
+        parser.error(f"--repo must be in 'owner/repo' format, got: {args.repo}")
+    owner, repo_name = parts
     print(f"Running arbiter sortition for {owner}/{repo_name} PR #{args.pr_number}")
     
     active_reviewers = _get_active_reviewers(owner, repo_name, args.pr_number)

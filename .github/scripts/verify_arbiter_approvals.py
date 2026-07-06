@@ -72,13 +72,24 @@ def _get_arbiter_labels(pr_number):
 
 def _get_approved_arbiters(owner, repo, pr_number, arbiters):
     reviews = _get_pr_reviews(owner, repo, pr_number)
-    approved_arbiters = set()
+
+    # Only the arbiter's most recent review counts -- an earlier APPROVED
+    # must not survive a later CHANGES_REQUESTED/DISMISSED from the same author.
+    latest_review_by_author = {}
     for review in reviews:
-        state = review.get("state")
         author = (review.get("author") or {}).get("login")
-        if state == "APPROVED" and author and author in arbiters:
-            approved_arbiters.add(author)
-    return approved_arbiters
+        if not author or author not in arbiters:
+            continue
+        submitted_at = review.get("submittedAt", "")
+        existing = latest_review_by_author.get(author)
+        if existing is None or submitted_at >= existing.get("submittedAt", ""):
+            latest_review_by_author[author] = review
+
+    return {
+        author
+        for author, review in latest_review_by_author.items()
+        if review.get("state") == "APPROVED"
+    }
 
 
 def _check_requires_approval(owner, repo, pr_number):
@@ -98,8 +109,11 @@ def main():
     parser.add_argument("--repo", type=str, required=True, help="Repository in owner/repo format")
     parser.add_argument("--required-count", type=int, default=1, help="Required number of arbiter approvals")
     args = parser.parse_args()
-    
-    owner, repo_name = args.repo.split("/")
+
+    parts = args.repo.split("/")
+    if len(parts) != 2 or not all(parts):
+        parser.error(f"--repo must be in 'owner/repo' format, got: {args.repo}")
+    owner, repo_name = parts
     print(f"Verifying arbiter approvals for {owner}/{repo_name} PR #{args.pr_number}")
     
     requires_approval = _check_requires_approval(owner, repo_name, args.pr_number)
