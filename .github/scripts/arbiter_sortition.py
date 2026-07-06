@@ -6,8 +6,9 @@ import hashlib
 import json
 import random
 import re
-import subprocess
 import sys
+
+from gh_cli import run as _run
 
 REPO_PATTERN = re.compile(r"^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$")
 
@@ -23,13 +24,6 @@ POTENTIAL_ARBITERS = {
 HUMAN_REVIEWERS = {"loganfinney27"}
 ALL_REVIEWERS = POTENTIAL_ARBITERS | HUMAN_REVIEWERS
 ARBITER_LABEL_PREFIX = "arbiter/"
-
-
-def _run(cmd, check=True):
-    result = subprocess.run(cmd, capture_output=True, text=True)  # lgtm[py/command-line-injection] - cmd is always a fixed-shape list (never shell=True); pr-number is a validated positive int and label/arbiter values are drawn from ALL_REVIEWERS, a hardcoded set
-    if check and result.returncode != 0:
-        raise RuntimeError(f"Command failed ({result.returncode}): {' '.join(cmd)}\nstdout:\n{result.stdout}\nstderr:\n{result.stderr}")
-    return result
 
 
 def _graphql(query, **variables):
