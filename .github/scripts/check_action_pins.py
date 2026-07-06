@@ -16,29 +16,20 @@ import re
 import sys
 from pathlib import Path
 
-# This job (see action-pin-policy.yml) runs only on `ubuntu-latest`, where
-# GitHub-hosted runners always set GITHUB_WORKSPACE to this exact path for
-# this repo — it is not attacker-influenceable, but an equality comparison
-# against a hardcoded constant is also CodeQL's own documented sanitizer for
-# this query (ConstCompareAsSanitizerGuard, "a comparison with a constant"),
-# unlike a shape/regex check or a check on values derived from the resolved
-# Path, neither of which this query's dataflow model recognizes as a barrier.
-_EXPECTED_GITHUB_WORKSPACE = "/home/runner/work/IDAHO-VAULT/IDAHO-VAULT"
-
 
 def _repo_root() -> Path:
     # In CI this script executes from the trusted base-branch checkout
-    # (trusted-main/), while the workflows under test are the PR head's.
-    # Scan GITHUB_WORKSPACE (the primary checkout) instead of the script's
-    # own tree, or a newly-added unpinned workflow would be invisible.
+    # (trusted-main/), while the content under test is the PRIMARY checkout —
+    # which is exactly the run step's working directory: every policy workflow
+    # invokes this script with cwd at the primary checkout and never sets a
+    # working-directory override. Using the process cwd keeps the
+    # trusted-validator split (trusted code, PR-head content) without deriving
+    # any filesystem path from environment data — there is no tainted-path
+    # flow left for a scanner to model, and no hard-coded runner path to break
+    # on self-hosted runners or a repo rename. Local (pre-commit) runs fall
+    # back to the script's own repository.
     if os.environ.get("GITHUB_ACTIONS") == "true":
-        workspace = os.environ.get("GITHUB_WORKSPACE", "")
-        if workspace != _EXPECTED_GITHUB_WORKSPACE:
-            raise SystemExit(f"GITHUB_WORKSPACE does not match the expected runner path: {workspace!r}")
-        root = Path(workspace).resolve()
-        if not root.is_dir():
-            raise SystemExit(f"GITHUB_WORKSPACE is not a directory: {workspace!r}")
-        return root
+        return Path.cwd()
     return Path(__file__).resolve().parents[2]
 
 
