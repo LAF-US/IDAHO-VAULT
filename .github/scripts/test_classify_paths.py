@@ -78,6 +78,42 @@ class ClassifyFileTest(unittest.TestCase):
     def test_probe_carveout_low(self):
         self.assertEqual(cp.classify_file(".github/workflows/probe-smoke.yml"), ("low", None))
 
+    def test_retired_rhythm_glob_surfaces_all_pinned_high(self):
+        # K1/K2 (#627/#628) equivalence guard: auto-merge-rhythm.yml retired its hand-
+        # maintained protected-path glob and now defers to this classifier's `tier`. Every
+        # surface that glob protected MUST still score high here, or the collapse would open
+        # auto-merge on a formerly-protected path. One representative per retired glob entry;
+        # this fails loud if the single source ever stops covering one of them.
+        retired_glob_representatives = [
+            ".github/workflows/deploy.yml",   # .github/workflows/*
+            ".github/scripts/tool.py",        # .github/scripts/*
+            ".codex/CODEX.md",                # .codex/*
+            ".openclaw/config.yml",           # .openclaw/*
+            "AGENTS.md",                      # AGENTS.md
+            "CONSTITUTION.md",                # CONSTITUTION.md
+            "DECISIONS.md",                   # DECISIONS.md
+            "VAULT-CONVENTIONS.md",           # VAULT-CONVENTIONS.md
+            "swarm.json",                     # swarm.json
+            "!/anything.md",                  # !/*
+        ]
+        # The workflow keys on the placement axis firing at all (depth in {high, nope}) —
+        # NOT tier — so a med-filetype maze file (uv.lock) stays eligible. Assert the exact
+        # predicate the workflow reads.
+        for path in retired_glob_representatives:
+            with self.subTest(path=path):
+                _filetype, depth = cp.classify_file(path)
+                self.assertIn(depth, ("high", "nope"),
+                              f"{path} must stay a protected placement (depth high/nope)")
+
+    def test_dep_sync_lockfiles_stay_eligible_placement_clear(self):
+        # Guard the K1/K2 collapse against the fail-open twin: the sync-bot's own dependency
+        # files must NOT read as a protected placement, or the rhythm bot would never arm its
+        # own PRs. uv.lock is filetype=med (unknown .lock), but placement is clear (depth None).
+        for path in ("requirements.txt", "uv.lock"):
+            with self.subTest(path=path):
+                _filetype, depth = cp.classify_file(path)
+                self.assertIsNone(depth, f"{path} must have no placement flag (stays eligible)")
+
 
 class RiskiestTest(unittest.TestCase):
     def test_riskiest_picks_by_precedence(self):
