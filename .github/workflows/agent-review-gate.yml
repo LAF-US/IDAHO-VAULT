@@ -1,24 +1,26 @@
 name: Agent Review Gate
 
-# Reconcile/backlog sweep (reconcile-open-prs) — RE-ARMED on a clock (2026-07-06).
-# The prior hold ("stays a manual tool until the gate is rebuilt on the current
-# PR-readiness schema") was satisfied by the #626 knot landings: K3/#629 + K4/#630
-# (#764: positive risk/— arm, mutual-exclusion invariants) and K6/#632 (#771: the nine
-# pair-lanes, restamp-on-sync, clear-on-completion). This sweep is now the K6 BACKFILL's
-# execution surface: each run re-mirrors every open PR's risk labels from the one
-# classifier (migrating legacy/unmarked in-flight PRs to the pair grammar), clears
-# completed lanes, and arms clear pairs — the vault is a brownfield dogfood factory, and
-# without a clock this line never runs. The rebuilt engine fails SAFE on classification
-# errors (labels untouched, nothing arms) and exits non-zero ONLY on a true risk-marker
-# invariant violation (loud by design, without starving other PRs — K4).
+# Reconcile/backlog sweep (reconcile-open-prs) — ENGINE REBUILT, CLOCK RESERVED.
 #
-# History: 4h cron (disabled_manually 2026-05-26 — the RETIRED engine was failing/noisy);
-# #578 wrongly re-pointed it at push-on-main; reverted to dispatch-only pending the
-# rebuild; rebuild landed 2026-07-06, cron restored at a modest 6h cadence.
+# What it does per run: restamps every open PR's risk labels from the classifier
+# (the K6 backfill — legacy/unmarked PRs migrate to the pair grammar), clears
+# completed lanes, arms clear pairs. Fails SAFE on classification errors (labels
+# untouched, nothing arms); exits non-zero ONLY on a true risk-marker invariant
+# violation (K4's loud path, without starving other PRs).
+#
+# Trigger is workflow_dispatch ONLY — deliberately. The prior hold ("manual tool
+# until the gate is rebuilt on the current PR-readiness schema") was satisfied by
+# the 2026-07-06 knot landings (#764 K3/K4, #771 K6), so DISPATCH now works and
+# is safe. But the CADENCE is a chron_clock decision reserved to Logan: the
+# vault's established clock is once-daily/weekly ticks (see the TIME audit on PR
+# #775), and no repeating-interval cron joins it without Logan setting that norm.
+# When the chron_clock is established, add the schedule trigger here.
+#
+# History: 4h cron (disabled_manually 2026-05-26 — the RETIRED engine was
+# failing/noisy); #578 wrongly re-pointed it at push-on-main; reverted to
+# dispatch-only pending the rebuild; rebuild landed 2026-07-06.
 
 on:
-  schedule:
-    - cron: '17 */6 * * *'  # every 6h, offset to avoid top-of-hour runner contention
   workflow_dispatch:
     inputs:
       grace_minutes:
@@ -60,9 +62,13 @@ jobs:
           GH_TOKEN: ${{ secrets.MERGE_QUEUE_TOKEN || secrets.GITHUB_TOKEN }}
           GRACE_MINUTES: ${{ github.event.inputs.grace_minutes || '30' }}
         run: |
-          # Repo name derived from GITHUB_REPOSITORY, not the event payload — the
-          # schedule event's payload is minimal and must not be relied on for it.
-          REPO_NAME="${GITHUB_REPOSITORY#*/}"
+          # Repo name derived from GITHUB_REPOSITORY, not the event payload (event
+          # payloads vary by trigger). Guard the owner/name shape before use.
+          case "$GITHUB_REPOSITORY" in
+            */*/*|"") echo "::error::unexpected GITHUB_REPOSITORY: '$GITHUB_REPOSITORY'"; exit 1 ;;
+            */*) REPO_NAME="${GITHUB_REPOSITORY#*/}" ;;
+            *) echo "::error::unexpected GITHUB_REPOSITORY: '$GITHUB_REPOSITORY'"; exit 1 ;;
+          esac
           python3 .github/scripts/review_feedback_loop.py \
             reconcile-open-prs \
             --owner "${{ github.repository_owner }}" \
