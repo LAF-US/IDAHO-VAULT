@@ -32,7 +32,7 @@ from typing import Dict, List, Optional
 with open('swarm.json', 'r') as f:
     swarm = json.load(f)
 
-print(f"Swarm registry version: {swarm.get('registry_version', 'unknown')}")
+print(f"Vault authority: {swarm.get('vault_authority', 'unknown')}")
 print(f"Agents: {[a['id'] for a in swarm.get('agents', [])]}")
 ```
 
