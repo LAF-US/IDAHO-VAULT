@@ -23,7 +23,7 @@ ARBITER_LABEL_PREFIX = "arbiter/"
 
 
 def _run(cmd, check=True):
-    result = subprocess.run(cmd, capture_output=True, text=True)
+    result = subprocess.run(cmd, capture_output=True, text=True)  # lgtm[py/command-line-injection] - cmd is always a fixed-shape list (never shell=True); pr-number is a validated positive int and label/arbiter values are drawn from ALL_REVIEWERS, a hardcoded set
     if check and result.returncode != 0:
         raise RuntimeError(f"Command failed ({result.returncode}): {' '.join(cmd)}\nstdout:\n{result.stdout}\nstderr:\n{result.stderr}")
     return result
@@ -147,6 +147,9 @@ def main():
     parser.add_argument("--repo", type=str, required=True, help="Repository in owner/repo format")
     parser.add_argument("--arbiter-count", type=int, default=2, help="Number of arbiters to select")
     args = parser.parse_args()
+
+    if args.pr_number <= 0:
+        parser.error(f"--pr-number must be a positive integer, got: {args.pr_number}")
 
     parts = args.repo.split("/")
     if len(parts) != 2 or not all(parts):
