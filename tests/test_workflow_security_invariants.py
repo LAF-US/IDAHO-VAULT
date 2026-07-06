@@ -32,6 +32,26 @@ class WorkflowSecurityInvariantsTest(unittest.TestCase):
         self.assertFalse((WORKFLOWS / "dependabot-reaper.yml").exists())
         self.assertTrue((WORKFLOWS / "dependabot-rhythm.yml").exists())
 
+
+    def test_merge_method_is_the_queues_alone(self) -> None:
+        # K5/#631 (norm set by Logan, 2026-07-06): the merge QUEUE's configured method is
+        # the single merge-method norm. gh syntax forces a method flag on every
+        # `gh pr merge`, but on a merge-queue repo the queue overrides it — so the one
+        # canonical, inert spelling is `--merge`. This goes red the moment any workflow
+        # or script grows its own divergent method opinion (--squash/--rebase), which is
+        # exactly the two-prescriptions-no-norm drift K5 names.
+        scripts = ROOT / ".github" / "scripts"
+        offenders: list[str] = []
+        for path in sorted(list(WORKFLOWS.glob("*.yml")) + list(scripts.glob("*.py"))):
+            for lineno, line in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
+                if "pr" in line and "merge" in line and ("--squash" in line or "--rebase" in line):
+                    offenders.append(f"{path.name}:{lineno}: {line.strip()}")
+        self.assertEqual(
+            offenders, [],
+            "divergent merge-method opinion(s) found — the queue's configured method is "
+            "the norm; use the canonical inert `--merge` flag:\n" + "\n".join(offenders),
+        )
+
     def test_dependabot_auto_merge_requires_verified_low_risk_updates_and_gates(self) -> None:
         workflow = yaml.safe_load(
             (WORKFLOWS / "dependabot-rhythm.yml").read_text(encoding="utf-8")
@@ -88,7 +108,7 @@ class WorkflowSecurityInvariantsTest(unittest.TestCase):
         self.assertNotIn("submit-pypi", gate_step["run"])
         enable_step = steps["Enable verified auto-merge"]
         self.assertIn("steps.scope.outputs.eligible == 'true'", enable_step["if"])
-        self.assertIn("gh pr merge --auto --squash", enable_step["run"])
+        self.assertIn("gh pr merge --auto --merge", enable_step["run"])
         self.assertNotIn("gh pr review --approve", enable_step["run"])
         self.assertNotIn("gh label create", enable_step["run"])
         self.assertNotIn("--delete-branch", enable_step["run"])
