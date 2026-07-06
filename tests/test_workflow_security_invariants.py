@@ -90,10 +90,15 @@ class WorkflowSecurityInvariantsTest(unittest.TestCase):
             events["pull_request_target"]["types"],
             ["opened", "reopened", "ready_for_review", "synchronize", "labeled", "unlabeled"],
         )
-        self.assertEqual(workflow["permissions"], {"contents": "write", "pull-requests": "write"})
+        # Least privilege: the workflow-level default is read-only; only the jobs
+        # that actually merge/disable-merge escalate to write, at the job level.
+        self.assertEqual(workflow["permissions"], {"contents": "read", "pull-requests": "read"})
 
         jobs = workflow["jobs"]
         eligible_job = jobs["auto-merge-low-risk"]
+        self.assertEqual(
+            eligible_job["permissions"], {"contents": "write", "pull-requests": "write"}
+        )
         eligibility = eligible_job["if"]
         self.assertIn("github.event.pull_request.user.type == 'Bot'", eligibility)
         self.assertIn("!contains(github.event.pull_request.labels.*.name, 'risk/high')", eligibility)
@@ -143,6 +148,9 @@ class WorkflowSecurityInvariantsTest(unittest.TestCase):
         self.assertNotIn("--delete-branch", enable_step["run"])
 
         high_risk_job = jobs["disable-high-risk-auto-merge"]
+        self.assertEqual(
+            high_risk_job["permissions"], {"contents": "write", "pull-requests": "write"}
+        )
         self.assertIn("contains(github.event.pull_request.labels.*.name, 'risk/high')", high_risk_job["if"])
         self.assertIn("gh pr merge --disable-auto", high_risk_job["steps"][0]["run"])
 

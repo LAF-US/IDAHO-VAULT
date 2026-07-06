@@ -16,9 +16,12 @@ name: Enqueue on checks complete
 #   - A check_suite.completed trigger would re-fire on THIS workflow's OWN GitHub Actions
 #     check suite completing — a recursion hazard. workflow_run targets NAMED OTHER workflows
 #     (never this one), so it provably cannot self-trigger.
-#   - The two listed are the slow, late-finishing CI workflows (the smoke matrix and CodeQL);
-#     whichever lands last is the "checks settled" signal. The fast vault-gate checks finish
-#     well before them, so by the time these complete the PR's real mergeStateStatus is known.
+#   - "Cross-Platform Smoke" is the slow, late-finishing CI workflow whose completion is the
+#     "checks settled" signal. The fast vault-gate checks finish well before it, so by the time
+#     it completes the PR's real mergeStateStatus is known. (This list previously also named
+#     "CodeQL Advanced"; that workflow was deleted in #726 in favor of GitHub's default-setup
+#     CodeQL scanning, which isn't a workflow in this repo and so can't be targeted by
+#     workflow_run — the reference was dead from #726 onward and is removed here, not replaced.)
 #   - auto-merge-engage.yml's pull_request_target trigger is deliberately left UNTOUCHED: it
 #     owns the open/sync moment (resolve outdated bot threads + arm + first enqueue attempt).
 #     This workflow owns the checks-complete moment. The two compose; neither is downstream of
@@ -40,7 +43,7 @@ name: Enqueue on checks complete
 
 on:
   workflow_run:
-    workflows: ["Cross-Platform Smoke", "CodeQL Advanced"]
+    workflows: ["Cross-Platform Smoke"]
     types: [completed]
 
 permissions:
@@ -50,7 +53,7 @@ permissions:
   pull-requests: write
 
 concurrency:
-  # Collapse the two CI workflows finishing near-together on one commit into a single pass.
+  # Collapse multiple runs of the same commit's checks-complete signal into a single pass.
   group: enqueue-on-checks-${{ github.event.workflow_run.head_sha }}
   cancel-in-progress: false
 
