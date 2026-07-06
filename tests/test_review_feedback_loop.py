@@ -106,35 +106,54 @@ def _pr(
 
 
 class ReviewFeedbackLoopTest(unittest.TestCase):
-    def test_low_risk_agent_pr_becomes_auto_merge_eligible_after_grace(self) -> None:
-        # Reversal of the #521/#527 fail-close (2026-06-17): a low-risk PR with no blocking
-        # feedback is auto-merge-eligible once the grace window elapses. Within grace it is
-        # not yet eligible but should carry the review/pending label.
+    def test_clear_pair_pr_becomes_auto_merge_eligible_after_grace(self) -> None:
+        # K3/#629: the `—/—` pair — and ONLY it — arms auto-merge. A PR that classify
+        # scored clear (risk/—) with no blocking feedback is eligible once the grace window
+        # elapses; within grace it is not yet eligible.
         now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
 
         early_state = review_feedback_loop.evaluate_review_state(
             _pr(
                 created_at=now - timedelta(minutes=10),
-                labels=(review_feedback_loop.DEFAULT_REVIEW_PENDING_LABEL,),
+                labels=(review_feedback_loop.RISK_CLEAR_LABEL,),
             ),
             now=now,
         )
         ready_state = review_feedback_loop.evaluate_review_state(
             _pr(
                 created_at=now - timedelta(minutes=45),
-                labels=(review_feedback_loop.DEFAULT_REVIEW_PENDING_LABEL,),
+                labels=(review_feedback_loop.RISK_CLEAR_LABEL,),
             ),
             now=now,
         )
 
-        self.assertTrue(early_state["low_risk"])
+        self.assertTrue(early_state["is_clear"])
         self.assertFalse(early_state["grace_elapsed"])
-        self.assertTrue(early_state["should_have_agent_review_pending"])
         self.assertFalse(early_state["eligible_for_auto_merge"])
 
+        self.assertTrue(ready_state["is_clear"])
         self.assertTrue(ready_state["grace_elapsed"])
         self.assertTrue(ready_state["eligible_for_auto_merge"])
-        self.assertFalse(ready_state["should_have_agent_review_pending"])
+
+    def test_low_risk_pr_holds_and_never_auto_merges(self) -> None:
+        # K3/#629 norm flip: risk/low is a sorter that FIRED (machine-doc paths) — it HOLDS
+        # for review, it does not arm. Only the positive clear marker auto-merges. A low-risk
+        # PR past grace with no blocking feedback stays ineligible and carries review/pending.
+        now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
+
+        state = review_feedback_loop.evaluate_review_state(
+            _pr(
+                created_at=now - timedelta(minutes=45),
+                labels=(review_feedback_loop.RISK_LOW_LABEL,),
+            ),
+            now=now,
+        )
+
+        self.assertTrue(state["low_risk"])
+        self.assertFalse(state["is_clear"])
+        self.assertTrue(state["grace_elapsed"])
+        self.assertFalse(state["eligible_for_auto_merge"])
+        self.assertTrue(state["should_have_agent_review_pending"])
 
     def test_risk_label_is_canonical_over_body_marker(self) -> None:
         """Label-based risk tier wins when body marker was overwritten by an editor."""
@@ -150,10 +169,12 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             now=now,
         )
 
+        self.assertEqual(state["risk_tier"], "low")
         self.assertTrue(state["low_risk"])
         self.assertTrue(state["grace_elapsed"])
-        # Reversal (2026-06-17): low-risk + grace + unblocked is now eligible.
-        self.assertTrue(state["eligible_for_auto_merge"])
+        # K3/#629: risk/low HOLDS — the label is canonical for the tier, but low is not the
+        # clear pair, so it never arms.
+        self.assertFalse(state["eligible_for_auto_merge"])
 
     def test_high_risk_label_wins_when_low_and_high_are_both_present(self) -> None:
         state = review_feedback_loop.evaluate_review_state(
@@ -164,6 +185,44 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertEqual(state["risk_tier"], "high")
         self.assertFalse(state["low_risk"])
         self.assertFalse(state["eligible_for_auto_merge"])
+
+    def test_clear_marker_classifies_as_clear(self) -> None:
+        # K4/#630: the positive `risk/—` marker is its own tier ("clear"), distinct from low.
+        self.assertEqual(
+            review_feedback_loop._risk_tier_for_pr("", {review_feedback_loop.RISK_CLEAR_LABEL}),
+            "clear",
+        )
+
+    def test_unmarked_pr_holds_and_is_not_clear(self) -> None:
+        # K4/#630 core: absence of a marker is NOT classified-clear. An unmarked PR resolves
+        # to "unknown" and never arms — only the positive risk/— marker does.
+        now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
+        state = review_feedback_loop.evaluate_review_state(
+            _pr(created_at=now - timedelta(minutes=45), labels=(), body="## No marker\n"),
+            now=now,
+        )
+
+        self.assertEqual(state["risk_tier"], "unknown")
+        self.assertFalse(state["is_clear"])
+        self.assertFalse(state["low_risk"])
+        self.assertTrue(state["grace_elapsed"])
+        self.assertFalse(state["eligible_for_auto_merge"])
+
+    def test_clear_marker_is_mutually_exclusive_with_flags(self) -> None:
+        # K4/#630 invariant: risk/— XOR a flag, never both. A PR carrying the clear marker
+        # alongside any risk/* flag is a producer/backfill bug — fail LOUD, never silently
+        # auto-merge a PR a sorter actually flagged.
+        now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
+        for flag in (review_feedback_loop.RISK_LOW_LABEL, review_feedback_loop.RISK_HIGH_LABEL):
+            with self.subTest(flag=flag):
+                with self.assertRaises(review_feedback_loop.RiskMarkerInvariantError):
+                    review_feedback_loop.evaluate_review_state(
+                        _pr(
+                            created_at=now - timedelta(minutes=45),
+                            labels=(review_feedback_loop.RISK_CLEAR_LABEL, flag),
+                        ),
+                        now=now,
+                    )
 
     def test_risk_high_label_keeps_pr_out_of_auto_merge(self) -> None:
         """risk/high label alone must classify the PR as high-risk even if body is missing/empty."""
@@ -654,9 +713,9 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertFalse(result["armed"])
         arm.assert_not_called()
 
-    def test_sync_pr_arms_eligible_low_risk_pr_when_threads_clear(self) -> None:
-        # End-to-end through sync_pr: a low-risk, grace-elapsed PR with no current threads
-        # is armed (guarded). Mirrors "arm when the last blocking thread clears".
+    def test_sync_pr_arms_eligible_clear_pr_when_threads_clear(self) -> None:
+        # End-to-end through sync_pr: a clear-pair (risk/—), grace-elapsed PR with no current
+        # threads is armed (guarded). Mirrors "arm when the last blocking thread clears".
         now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
         args = SimpleNamespace(
             owner="LAF-US",
@@ -668,7 +727,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         ready = _pr(
             number=200,
             created_at=now - timedelta(minutes=45),
-            labels=(review_feedback_loop.RISK_LOW_LABEL,),
+            labels=(review_feedback_loop.RISK_CLEAR_LABEL,),
         )
         with mock.patch.object(review_feedback_loop, "ensure_labels"), mock.patch.object(
             review_feedback_loop, "_fetch_pr", return_value=ready
@@ -758,9 +817,9 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         # The lazily-resolved actor is the witness passed to attest_and_resolve.
         self.assertEqual(attest.call_args.args[2], "github-actions[bot]")
 
-    def test_reconcile_open_prs_promotes_and_arms_eligible_low_risk_pr(self) -> None:
-        # Reversal (2026-06-17): a low-risk, grace-elapsed, unblocked, non-protected-path PR
-        # is now promoted to merge/auto and armed for the merge queue.
+    def test_reconcile_open_prs_promotes_and_arms_eligible_clear_pair_pr(self) -> None:
+        # K3/#629: a clear-pair (risk/—), grace-elapsed, unblocked PR is promoted to
+        # merge/auto and armed for the merge queue. (A risk/low PR would HOLD instead.)
         args = SimpleNamespace(
             owner="LAF-US",
             repo="IDAHO-VAULT",
@@ -769,7 +828,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         ready_pr = _pr(
             number=88,
             created_at=datetime(2026, 4, 16, 1, 0, tzinfo=timezone.utc),
-            labels=(review_feedback_loop.DEFAULT_REVIEW_PENDING_LABEL,),
+            labels=(review_feedback_loop.RISK_CLEAR_LABEL,),
         )
 
         with mock.patch.object(review_feedback_loop, "ensure_labels"), mock.patch.object(
@@ -801,6 +860,63 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         edit_label.assert_any_call(88, add=review_feedback_loop.DEFAULT_AUTO_MERGE_LABEL)
         comment.assert_called_once()
         arm_auto_merge.assert_called_once_with("LAF-US", "IDAHO-VAULT", 88)
+
+    def test_promote_ready_fails_loud_on_invariant_violation(self) -> None:
+        # K4/#630: promote_ready shares reconcile's exit-code contract — non-zero when the
+        # invariant tripped (CI red), zero otherwise. `promote_ready` reads the report via
+        # dict.get, so the stub returns a dict (not a namespace).
+        args = SimpleNamespace(owner="LAF-US", repo="IDAHO-VAULT", grace_minutes=30)
+
+        with mock.patch.object(review_feedback_loop, "ensure_labels"), mock.patch.object(
+            review_feedback_loop, "_build_reconciliation_report"
+        ) as build_report, contextlib.redirect_stdout(io.StringIO()):
+            build_report.return_value = {"invariant_violations": [{"number": 90, "error": "x"}]}
+            self.assertEqual(review_feedback_loop.promote_ready(args), 1)
+
+            build_report.return_value = {"invariant_violations": []}
+            self.assertEqual(review_feedback_loop.promote_ready(args), 0)
+
+    def test_reconcile_fails_loud_on_invariant_but_still_sweeps_rest(self) -> None:
+        # K4/#630 fail-loud, right blast radius: a PR carrying risk/— alongside a flag trips
+        # the invariant. The sweep records it, exits non-zero (CI red), yet still processes
+        # every OTHER open PR — one mis-labeled PR must not starve the rest.
+        args = SimpleNamespace(owner="LAF-US", repo="IDAHO-VAULT", grace_minutes=30)
+        bad_pr = _pr(
+            number=90,
+            created_at=datetime(2026, 4, 16, 1, 0, tzinfo=timezone.utc),
+            labels=(review_feedback_loop.RISK_CLEAR_LABEL, review_feedback_loop.RISK_LOW_LABEL),
+        )
+        good_pr = _pr(
+            number=91,
+            created_at=datetime(2026, 4, 16, 1, 0, tzinfo=timezone.utc),
+            labels=(review_feedback_loop.RISK_CLEAR_LABEL,),
+        )
+
+        out = io.StringIO()
+        with mock.patch.object(review_feedback_loop, "ensure_labels"), mock.patch.object(
+            review_feedback_loop, "_list_open_pr_numbers", return_value=[90, 91]
+        ), mock.patch.object(
+            review_feedback_loop, "_fetch_pr", side_effect=[bad_pr, good_pr]
+        ), mock.patch.object(
+            review_feedback_loop, "_viewer_login", return_value="github-actions[bot]"
+        ), mock.patch.object(
+            review_feedback_loop, "_resolve_outdated_resolvable_threads", return_value=[]
+        ), mock.patch.object(
+            review_feedback_loop, "apply_review_state_projection", return_value=[]
+        ), mock.patch.object(
+            review_feedback_loop, "_edit_label"
+        ), mock.patch.object(
+            review_feedback_loop, "_comment"
+        ), mock.patch.object(
+            review_feedback_loop, "_arm_auto_merge", return_value=(True, None)
+        ) as arm_auto_merge, contextlib.redirect_stdout(out), contextlib.redirect_stderr(io.StringIO()):
+            result = review_feedback_loop.reconcile_open_prs(args)
+
+        self.assertEqual(result, 1)  # fail loud → non-zero exit
+        report = json.loads(out.getvalue())
+        self.assertEqual([v["number"] for v in report["invariant_violations"]], [90])
+        # The good PR was still armed — the sweep did not abort on the bad one.
+        arm_auto_merge.assert_called_once_with("LAF-US", "IDAHO-VAULT", 91)
 
     def test_reconcile_open_prs_reports_auth_blocked_auto_merge(self) -> None:
         ready_pr = _pr(
