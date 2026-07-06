@@ -160,10 +160,10 @@ def main():
     args = parser.parse_args()
 
     if args.pr_number <= 0:
-        parser.error(f"--pr-number must be a positive integer, got: {args.pr_number}")
+        sys.exit(f"--pr-number must be a positive integer, got: {args.pr_number}")
 
     if not REPO_PATTERN.fullmatch(args.repo):
-        parser.error(f"--repo must be in 'owner/repo' format, got: {args.repo}")
+        sys.exit(f"--repo must be in 'owner/repo' format, got: {args.repo}")
     owner, repo_name = args.repo.split("/")
     print(f"Running arbiter sortition for {owner}/{repo_name} PR #{args.pr_number}")
     
