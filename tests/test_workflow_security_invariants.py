@@ -33,6 +33,35 @@ class WorkflowSecurityInvariantsTest(unittest.TestCase):
         self.assertTrue((WORKFLOWS / "dependabot-rhythm.yml").exists())
 
 
+
+    def test_no_schedule_triggers_until_the_chron_clock_is_established(self) -> None:
+        # Logan's standing order (restated 2026-07-06): NO cron jobs until the chron_clock
+        # is established. The rule is the EMPTY SET — no allowlist to maintain, no
+        # grandfathered exceptions: any `schedule:` trigger in any workflow turns this red.
+        # Every periodic surface runs by workflow_dispatch until Logan establishes the
+        # chron_clock; when he does, its ruling REPLACES this test wholesale (it is the
+        # prescription of the interim norm, not of the eventual clock).
+        offenders: list[str] = []
+        for path in sorted(WORKFLOWS.glob("*.yml")):
+            workflow = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+            events = workflow.get("on", workflow.get(True)) or {}
+            # Normalize every `on:` shape GitHub accepts — mapping, list, bare string —
+            # so no shorthand slips the guard. (A bare `schedule` can't actually FIRE
+            # without a cron mapping, but the guard is airtight, not merely practical.)
+            if isinstance(events, dict):
+                names = set(events)
+            elif isinstance(events, list):
+                names = set(events)
+            else:
+                names = {events}
+            if "schedule" in names:
+                offenders.append(path.name)
+        self.assertEqual(
+            offenders, [],
+            "schedule trigger(s) found, but the chron_clock is not established "
+            "(Logan's standing order — no cron jobs): " + ", ".join(offenders),
+        )
+
     def test_merge_method_is_the_queues_alone(self) -> None:
         # K5/#631 (norm set by Logan, 2026-07-06): the merge QUEUE's configured method is
         # the single merge-method norm. gh syntax forces a method flag on every

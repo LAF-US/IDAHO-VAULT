@@ -7,8 +7,6 @@ name: Metadata Survey
 # a recurring issue via issue_reconciler.py, matching the branch-garden-report pattern.
 
 on:
-  schedule:
-    - cron: '0 10 * * 1'   # Mon 10:00 UTC, matching Branch Garden cadence
   workflow_dispatch:
 
 permissions:
