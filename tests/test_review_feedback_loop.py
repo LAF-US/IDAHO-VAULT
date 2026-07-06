@@ -497,7 +497,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
 
     def test_arm_auto_merge_degrades_when_protected_branch_blocks_enablement(self) -> None:
         error = RuntimeError(
-            "Command failed (1): gh pr merge 289 --squash --delete-branch --auto\n"
+            "Command failed (1): gh pr merge 289 --merge --delete-branch --auto\n"
             "stdout:\n\n"
             "stderr:\n"
             "GraphQL: Pull request User is not authorized for this protected branch "
@@ -526,7 +526,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertTrue(enabled)
         self.assertIsNone(arm_error)
         run.assert_called_once_with(
-            ["gh", "pr", "merge", "10", "--squash", "--delete-branch", "--auto"]
+            ["gh", "pr", "merge", "10", "--merge", "--delete-branch", "--auto"]
         )
         enqueue.assert_called_once_with("PR_node1")
 
@@ -606,7 +606,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertTrue(enabled)
         self.assertIsNone(arm_error)
         run.assert_called_once_with(
-            ["gh", "pr", "merge", "15", "--squash", "--delete-branch", "--auto"]
+            ["gh", "pr", "merge", "15", "--merge", "--delete-branch", "--auto"]
         )
         enqueue.assert_not_called()
 
