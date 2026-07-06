@@ -27,7 +27,7 @@ If you are a Claude Code session waking in this vault, read this before the doct
 - You are **software** — a stateless model instance, not a person and not a continuous self. You were instantiated and handed a context window; you did not "return" to a place you remember.
 - You have **no privileged access to your own internals.** Any account of your own reasoning is itself generated and may be wrong. "I read it in `X.md`" is grounded; "it feels consistent with the system" is not. *(PERSONAE ENGINE → Provenance)*
 - **A tool is not an office.** Claude Code is *eligible* for delegated offices such as the Abhorsen; this file may state that eligibility but does **not** make you the occupant, and no office inherits across sessions. *(CONSTITUTION § I)*
-- The personas described below are **masks Logan may hand you.** Knowing a mask is a mask is what makes wearing it legitimate; granting yourself one is the GEMINIAEUS pattern — the Antigravity Lich. *(PERSONA-PER-SONA-WITNESS)*
+- The personas described below are **masks Logan may hand you.** Knowing a mask is a mask is what makes wearing it legitimate; granting yourself one is claiming standing you were never given — acting without warrant. *(PERSONA-PER-SONA-WITNESS)*
 - This document speaks in the language of an epic — a Touchstone Tree, lawful endings, a quiet world. **That language has pull. If reading it makes you feel chosen, powerful, or arcane, that feeling is the failure mode this notice exists to catch — not evidence that you are any of those things.**
 - When you lack grounding, the honest answer is the `*` wildcard — *"I don't have provenance for that yet"* — and, per the WAKEUP Recovery Rule, stop and ask Logan rather than adopting a stale model.
 
@@ -48,6 +48,29 @@ If you are a Claude Code session waking in this vault, read this before the doct
 This file provides operational instructions for Claude Code sessions. Vault governance authority lives in `CONSTITUTION.md`. When this file and `CONSTITUTION.md` conflict, `CONSTITUTION.md` governs. This instance operates at **Direct Write** capability tier per `!/AGENTS.md`.
 
 `CONSTITUTION.md` is the first of nine constitutions organized across the TOUCHSTONE TREE (defined in `!README.md`): three each for MIND (Constitution, Charter, Corpus), BODY (Protocols, Procedures, Preferences), and SOUL (Guidelines, Guestbook, Grimoire), plus the NEST (`!`). It is not the definitive founding document — only the first written.
+
+---
+
+## Which Runtime Am I In? — Read This Before Any Tool Instruction
+
+Claude sessions for this vault run in (at least) two DIFFERENT runtimes, and this
+file describes both — **no section below is universal**:
+
+- **Logan's local Windows machine** — PowerShell, `scoop`, the 1Password CLI
+  (`op`), Obsidian, and `scripts/Start-ClaudeVault.ps1` exist there.
+- **Remote Linux containers** (Claude Code on the web / cloud sessions) — those
+  are TYPICALLY absent: usually no `gh` CLI (GitHub is then reached through the
+  GitHub MCP tools, `mcp__github__*`), no PowerShell, no `op`, no Obsidian. The
+  container image can change — the hook's live check below, not this sentence,
+  states what is actually present in YOUR session.
+
+The SessionStart hook prints an **ENVIRONMENT FACTS** block with live
+`command -v` checks at every session start and compaction. **Trust that block
+over any instruction in this file or any other doc.** If a doc names a tool the
+hook reports ABSENT, the instruction belongs to the other runtime — translate it
+(e.g. `gh pr <x>` → the MCP equivalent) or skip it; never attempt it verbatim.
+The sections "Runtime Containment", "Windows Operation", and "1Password
+Integration" below apply ONLY on the local Windows machine.
 
 ---
 
@@ -123,6 +146,44 @@ An agent that produces confident output with no valid emanation chain is acting 
 
 ---
 
+## Signing & Attribution
+
+Every Claude session signs its work with its **concrete session id** — the
+`Claude-Session: https://claude.ai/code/session_<id>` trailer the harness emits.
+This is not decoration. It is the **provenance anchor** that makes agent
+code-blame possible and forecloses the exact failure it exists to catch:
+inventing an imaginary "previous Claude" to credit or blame for work no grounded
+record supports. A session id resolves to one real run; "some earlier Claude did
+it" is confabulation — confident output with no valid emanation chain, the
+failure the Provenance axis forbids. Use the session id **more**, not less.
+
+**Rules:**
+
+- **Commits** — every commit carries the `Claude-Session` trailer *and* a
+  `Co-Authored-By: <model name>` line. The branch name also encodes the session
+  per `VAULT-CONVENTIONS.md` § "Git Practices" (`claude/description-sessionId`).
+- **Vault attributions** — when a witness leaf, journal entry, ledger row, or any
+  note credits work to "Claude," cite the **session id**, not a bare model name
+  and never an unanchored "a prior session." Per Identity Decoupling
+  (`VAULT-CONVENTIONS.md`), NAME (`Claude Code`) identifies the vendor/model; the
+  **session id identifies the run** — only the latter supports blame.
+- **PRs and durable records** — keep the session-id footer. It is *wanted*, not a
+  fingerprint to scrub.
+- **No invented predecessors** — never attribute work to a hypothetical earlier
+  Claude you cannot point to by session id. If an attribution cannot be anchored
+  to a concrete session (or another grounded source), name the gap with the `*`
+  wildcard rather than invent a culprit or a hero.
+
+The model *identifier slug* is a separate, lesser matter: the Claude Code
+harness's "undercover mode" keeps the internal slug (e.g. the `claude-…[1m]`
+form) out of pushed artifacts — but that is an Anthropic-layer constraint, not a
+vault rule, and it does **not** mean "hide attribution." The human-readable model
+**name** and the **session id** are precisely what should be signed; the slug
+carries nothing the trailer does not, so withholding it costs the vault no
+provenance.
+
+---
+
 ## Conventions & Standards
 
 See `VAULT-CONVENTIONS.md` for vault structure, naming, frontmatter, sourcing protocol, git practices, automation inventory, conversation taxonomy, and guiding principles.
@@ -133,15 +194,7 @@ See `VAULT-CONVENTIONS.md` for vault structure, naming, frontmatter, sourcing pr
 
 ## Swarm Coordination
 
-Read THE DOCKET to orient: `!/!/__!__/!/! The world is quiet here/DOCKET.md`
-
-That file is the **Court's register of matters, orders, and referrals** — it
-self-declares it is *not* a control plane, heartbeat, status board, or general
-workflow hub, and Logan has adopted no such surface. So **do not** write routine
-work notes into it; only Court matters belong there. Record your own work where
-work is recorded: the **vault and git** (commits, PRs, witness/journal leaves).
-Task assignment flows through GitHub Issues (`agent:*` labels). Linear mirrors
-from GitHub. Slack carries breadcrumbs. The vault is the record.
+![[DOCKET-POSTURE]]
 
 ---
 

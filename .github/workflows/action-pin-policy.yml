@@ -1,0 +1,36 @@
+name: Action Pin Policy
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  merge_group:
+  workflow_dispatch:
+
+jobs:
+  check-action-pins:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+      - name: Checkout trusted validator code
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        with:
+          ref: ${{ (github.event_name == 'pull_request' && github.event.pull_request.base.sha) || (github.event_name == 'merge_group' && github.event.merge_group.base_sha) || github.event.repository.default_branch }}
+          path: trusted-main
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6.3.0
+        with:
+          python-version: "3.13"
+      - name: "Check every workflow/action uses: a full commit SHA"
+        run: |
+          if [ -f trusted-main/.github/scripts/check_action_pins.py ]; then
+            python trusted-main/.github/scripts/check_action_pins.py
+          else
+            # Bootstrap-only fallback: the checker doesn't exist on the base ref
+            # yet (this is the PR introducing it). Every run after this one
+            # merges uses the trusted-main copy above, same as every other
+            # policy check in this repo.
+            echo "::warning::check_action_pins.py absent from base ref; using this PR's own copy (bootstrap only)"
+            python .github/scripts/check_action_pins.py
+          fi

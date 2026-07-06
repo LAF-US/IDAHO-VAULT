@@ -45,6 +45,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_REPO: ${{ github.repository }}
           PR_NUMBER: ${{ github.event.pull_request.number }}
+          ECOSYSTEM: ${{ steps.metadata.outputs.package-ecosystem }}
         run: |
           eligible=true
           # Fail closed: if the file list cannot be fetched (auth, network,
@@ -54,9 +55,27 @@ jobs:
             echo "::error::Unable to list PR files; refusing to enable auto-merge."
             exit 1
           fi
+          # A Dependabot `github-actions` PR bumps only a `uses:` pin, and those
+          # pins live in `.github/workflows/*` -- so for THAT ecosystem, touching a
+          # workflow file is inherent to the update, not a protected content change.
+          # It stays gated by the ecosystem + patch/minor filter (this step's `if`),
+          # the absence of `risk/high`, and the four required policy checks verified
+          # in the next step. Any OTHER ecosystem editing a workflow is anomalous and
+          # remains protected. (Governed-surface note: action pins are governed by
+          # VERSION-TRANSITIONS.md -- see this PR's body for the Automated Lock
+          # Exception this relies on.)
           while IFS= read -r path; do
             case "$path" in
-              .github/workflows/*|.github/scripts/*|.codex/*|.openclaw/*|AGENTS.md|CONSTITUTION.md|DECISIONS.md|VAULT-CONVENTIONS.md|swarm.json|!/*)
+              .github/workflows/*)
+                case "$ECOSYSTEM" in
+                  github-actions|github_actions) : ;;
+                  *)
+                    echo "::notice::Manual review required for protected path '$path'."
+                    eligible=false
+                    ;;
+                esac
+                ;;
+              .github/scripts/*|.codex/*|.openclaw/*|AGENTS.md|CONSTITUTION.md|DECISIONS.md|VAULT-CONVENTIONS.md|swarm.json|!/*)
                 echo "::notice::Manual review required for protected path '$path'."
                 eligible=false
                 ;;
@@ -116,11 +135,16 @@ jobs:
           (steps.metadata.outputs.package-ecosystem == 'pip' || steps.metadata.outputs.package-ecosystem == 'uv' || steps.metadata.outputs.package-ecosystem == 'github-actions' || steps.metadata.outputs.package-ecosystem == 'github_actions') &&
           (steps.metadata.outputs.update-type == 'version-update:semver-patch' || steps.metadata.outputs.update-type == 'version-update:semver-minor') &&
           steps.scope.outputs.eligible == 'true'
+        # The arm actor becomes the future enqueue actor, and GITHUB_TOKEN-actored
+        # events never dispatch workflow runs (GitHub anti-recursion) — prefer the
+        # user-scoped MERGE_QUEUE_TOKEN so armed PRs enqueue with a dispatching actor.
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.MERGE_QUEUE_TOKEN || secrets.GITHUB_TOKEN }}
           PR_URL: ${{ github.event.pull_request.html_url }}
         run: |
-          gh pr merge --auto --squash "$PR_URL"
+          # K5/#631: the merge queue's configured method is the norm; the flag below is
+          # gh-required syntax the queue overrides. `--merge` is the canonical spelling.
+          gh pr merge --auto --merge "$PR_URL"
 
   disable-high-risk-auto-merge:
     permissions:
