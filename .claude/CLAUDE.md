@@ -58,9 +58,11 @@ file describes both — **no section below is universal**:
 
 - **Logan's local Windows machine** — PowerShell, `scoop`, the 1Password CLI
   (`op`), Obsidian, and `scripts/Start-ClaudeVault.ps1` exist there.
-- **Remote Linux containers** (Claude Code on the web / cloud sessions) — none of
-  those exist. There is **no `gh` CLI** (GitHub is reached ONLY through the
-  GitHub MCP tools, `mcp__github__*`), no PowerShell, no `op`, no Obsidian.
+- **Remote Linux containers** (Claude Code on the web / cloud sessions) — those
+  are TYPICALLY absent: usually no `gh` CLI (GitHub is then reached through the
+  GitHub MCP tools, `mcp__github__*`), no PowerShell, no `op`, no Obsidian. The
+  container image can change — the hook's live check below, not this sentence,
+  states what is actually present in YOUR session.
 
 The SessionStart hook prints an **ENVIRONMENT FACTS** block with live
 `command -v` checks at every session start and compaction. **Trust that block
