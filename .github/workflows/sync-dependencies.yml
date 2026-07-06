@@ -6,8 +6,6 @@ on:
       - main
     paths:
       - pyproject.toml
-  schedule:
-    - cron: '0 12 * * 3'  # Wednesday 12:00 UTC — picks up upstream transitive updates
   workflow_dispatch:
 
 jobs:
