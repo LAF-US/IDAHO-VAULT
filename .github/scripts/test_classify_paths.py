@@ -80,10 +80,13 @@ class ClassifyFileTest(unittest.TestCase):
 
     def test_retired_rhythm_glob_surfaces_all_pinned_high(self):
         # K1/K2 (#627/#628) equivalence guard: auto-merge-rhythm.yml retired its hand-
-        # maintained protected-path glob and now defers to this classifier's `tier`. Every
-        # surface that glob protected MUST still score high here, or the collapse would open
-        # auto-merge on a formerly-protected path. One representative per retired glob entry;
-        # this fails loud if the single source ever stops covering one of them.
+        # maintained protected-path glob and now defers to this classifier's placement axis
+        # (`depth`), NOT `tier` — `tier` folds in filetype, so a med maze file like uv.lock
+        # reads tier=high but depth=None and must stay eligible; keying on tier would
+        # reintroduce the fail-closed-on-lockfiles bug. Every surface that glob protected MUST
+        # still score a protected placement here, or the collapse would open auto-merge on a
+        # formerly-protected path. One representative per retired glob entry; this fails loud
+        # if the single source ever stops covering one of them.
         retired_glob_representatives = [
             ".github/workflows/deploy.yml",   # .github/workflows/*
             ".github/scripts/tool.py",        # .github/scripts/*
