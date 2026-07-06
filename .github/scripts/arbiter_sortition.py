@@ -84,7 +84,11 @@ def _deterministic_shuffle(items, seed):
 
 
 def _select_arbiters(active_reviewers, pr_number, count):
-    eligible_reviewers = [r for r in active_reviewers if r in ALL_REVIEWERS]
+    # Iterate the hardcoded allow-list and test membership in the external
+    # `active_reviewers` data, rather than the other way around -- every
+    # returned name is always a literal member of ALL_REVIEWERS, never a
+    # value read out of the external collection.
+    eligible_reviewers = [r for r in ALL_REVIEWERS if r in active_reviewers]
     if not eligible_reviewers:
         eligible_reviewers = list(ALL_REVIEWERS)
     seed = f"pr-{pr_number}-sortition"
