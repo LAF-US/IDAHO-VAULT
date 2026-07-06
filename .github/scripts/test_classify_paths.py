@@ -35,11 +35,12 @@ class ClassifyFileTest(unittest.TestCase):
         self.assertEqual(cp.classify_file("mystery.q3z"), ("med", None))
 
     def test_nest_is_depth_high(self):
-        # Inside the ! Nest -> depth high, NO filetype flag (depth supersedes).
+        # Inside the ! Nest -> placement high. The filetype axis scores INDEPENDENTLY
+        # (two parallel analyses, Logan 2026-07-06): prose stays `—`, code carries med.
         self.assertEqual(cp.classify_file("!/AGENTS.md"), (None, "high"))
         self.assertEqual(cp.classify_file("! README.md"), (None, "high"))
         self.assertEqual(cp.classify_file("!-!-__!__-reflection_essay.md"), (None, "high"))
-        self.assertEqual(cp.classify_file("!/swarm/tools/state_manager.py"), (None, "high"))
+        self.assertEqual(cp.classify_file("!/swarm/tools/state_manager.py"), ("med", "high"))
 
     def test_still_point_is_nope(self):
         self.assertEqual(
@@ -61,8 +62,9 @@ class ClassifyFileTest(unittest.TestCase):
         self.assertEqual(cp.classify_file("!/ARBORSCAPING-REPORT-2026-04-16.md"), (None, "high"))
 
     def test_protected_surfaces_pinned_high(self):
-        self.assertEqual(cp.classify_file(".github/workflows/auto-merge-rhythm.yml"), (None, "high"))
-        self.assertEqual(cp.classify_file(".github/scripts/classify_paths.py"), (None, "high"))
+        # Placement pins high; the filetype axis still speaks for itself (yml=low, py=med).
+        self.assertEqual(cp.classify_file(".github/workflows/auto-merge-rhythm.yml"), ("low", "high"))
+        self.assertEqual(cp.classify_file(".github/scripts/classify_paths.py"), ("med", "high"))
         self.assertEqual(cp.classify_file("CONSTITUTION.md"), (None, "high"))
         self.assertEqual(cp.classify_file("AGENTS.md"), (None, "high"))
 
@@ -76,7 +78,23 @@ class ClassifyFileTest(unittest.TestCase):
         self.assertEqual(cp.classify_file(".perplexity/PERPLEXITY.md"), (None, "high"))
 
     def test_probe_carveout_low(self):
+        # Probe sandboxes are a PLACEMENT carve-out (not a protected pin); the filetype
+        # axis scores honestly: a probe .yml is machine-doc low, a probe .py is code med
+        # (the old single pass hard-coded probe files to low — med is the fail-safe fix).
         self.assertEqual(cp.classify_file(".github/workflows/probe-smoke.yml"), ("low", None))
+        self.assertEqual(cp.classify_file(".github/scripts/probe-runner.py"), ("med", None))
+
+    def test_two_axes_are_independent(self):
+        # The architecture bearing (#626, 2026-06-22; Logan 2026-07-06): filetype and
+        # placement are two parallel analyses, each scoring EVERY file — placement never
+        # suppresses filetype. The four corners of the composition:
+        self.assertEqual(cp.classify_file("essay.md"), (None, None))                  # —/—
+        self.assertEqual(cp.classify_file("tools/run.sh"), ("med", None))             # med/—
+        self.assertEqual(cp.classify_file("!/essay.md"), (None, "high"))              # —/high
+        self.assertEqual(cp.classify_file("!/swarm/run.sh"), ("med", "high"))         # med/high
+        # And placement outranks filetype in the combined verdict, so tier4 is unchanged
+        # by the split (a Nest .py was high before and is high now).
+        self.assertEqual(cp.combine("med", "high"), "high")
 
     def test_retired_rhythm_glob_surfaces_all_pinned_high(self):
         # K1/K2 (#627/#628) equivalence guard: auto-merge-rhythm.yml retired its hand-
