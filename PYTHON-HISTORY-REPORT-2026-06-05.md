@@ -111,7 +111,7 @@ Founded to own Python's intellectual property, manage development, and promote P
 ### 2003: Python 2.3
 - Generators: yield keyword
 - `sets` module (the `Set` and `ImmutableSet` classes)
-- bool type: True and False as keywords
+- bool type (PEP 285): `True` and `False` as built-in constants (they became keywords in Python 3)
 
 ### 2004: Python 2.4
 - Decorators: @decorator syntax (PEP 318)
@@ -240,11 +240,7 @@ Python's dominance continued:
 - **Hermes Agent** (2026): Multi-agent workflows
 - **CrewAI** (2023): Role-based agent teams
 
-**2026 Statistics**:
-- 6 out of 7 major AI agent frameworks use Python
-- 370K+ GitHub stars for OpenClaw
-- 135K+ GitHub stars for Hermes Agent
-- 51K+ GitHub stars for CrewAI
+**2026 landscape**: the major AI agent frameworks named above are implemented in and driven from Python. (The original draft's framework-count and GitHub-star figures were removed as uncited.)
 
 ---
 
@@ -300,7 +296,7 @@ Python is now governed by a 5-member Steering Council, elected by the Python cor
 **Companies using Python**: Google, Facebook/Instagram, Netflix, Spotify, Dropbox, NASA, CERN, Bank of America, J.P. Morgan
 
 ### Education Adoption
-- Top 10 most taught language in universities
+- Among the top 10 most-taught languages in universities
 - Used in many CS1 courses
 - Dominant language for data science education
 - MOOCs: Coursera, edX, Udacity
