@@ -112,14 +112,21 @@ def _remove_old_arbiter_labels(pr_number, current_arbiters):
     result = _run(["gh", "pr", "view", str(pr_number), "--json", "labels"], check=False)
     try:
         pr_data = json.loads(result.stdout or "{}")
-        current_labels = [label.get("name", "") for label in pr_data.get("labels", [])]
-        for label in current_labels:
-            if label.startswith(ARBITER_LABEL_PREFIX):
-                arbiter_name = label[len(ARBITER_LABEL_PREFIX):]
-                if arbiter_name not in current_arbiters:
-                    _run(["gh", "pr", "edit", str(pr_number), "--remove-label", label], check=False)
+        current_labels = {label.get("name", "") for label in pr_data.get("labels", [])}
     except (json.JSONDecodeError, KeyError) as exc:
         print(f"Warning: could not parse current labels for PR #{pr_number}: {exc}", file=sys.stderr)
+        return
+
+    # Build each candidate label from the hardcoded allow-list and only test
+    # membership against the PR's live (external) labels, rather than reading
+    # label names out of that external data -- the removal target is always a
+    # literal ARBITER_LABEL_PREFIX + ALL_REVIEWERS member, never raw PR data.
+    for reviewer in ALL_REVIEWERS:
+        if reviewer in current_arbiters:
+            continue
+        label_name = f"{ARBITER_LABEL_PREFIX}{reviewer}"
+        if label_name in current_labels:
+            _run(["gh", "pr", "edit", str(pr_number), "--remove-label", label_name], check=False)
 
 
 def _post_arbiter_comment(pr_number, arbiters):
