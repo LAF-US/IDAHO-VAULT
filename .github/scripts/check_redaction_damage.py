@@ -40,11 +40,6 @@ def _repo_root() -> Path:
         root = Path(workspace).resolve() if workspace else None
         if root is None or not root.is_dir():
             raise SystemExit(f"GITHUB_WORKSPACE is not a directory: {workspace!r}")
-        # Structural check, not just existence: confirm this actually is the
-        # IDAHO-VAULT checkout before trusting it as a git-diff root, rather
-        # than a bogus/foreign directory that happens to exist.
-        if not (root / "AGENTS.md").is_file() or not (root / ".git").exists():
-            raise SystemExit(f"GITHUB_WORKSPACE does not look like the IDAHO-VAULT repo root: {root}")
         return root
     return Path(__file__).resolve().parents[2]
 

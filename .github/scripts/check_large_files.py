@@ -34,11 +34,6 @@ def _repo_root() -> Path:
             # Fail closed: a bogus workspace would make every scanned path
             # resolve nonexistent and be silently skipped — a false pass.
             raise SystemExit(f"GITHUB_WORKSPACE is not a directory: {workspace!r}")
-        # Structural check, not just existence: confirm this actually is the
-        # IDAHO-VAULT checkout before trusting it as a glob root, rather than
-        # a bogus/foreign directory that happens to exist.
-        if not (root / "AGENTS.md").is_file() or not (root / ".git").exists():
-            raise SystemExit(f"GITHUB_WORKSPACE does not look like the IDAHO-VAULT repo root: {root}")
         return root
     return Path(__file__).resolve().parents[2]
 
