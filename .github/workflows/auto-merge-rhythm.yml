@@ -48,6 +48,14 @@ jobs:
       startsWith(github.event.pull_request.title, 'chore: sync requirements.txt and uv.lock')
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout trusted classifier
+        # pull_request_target runs from the trusted base; check out the default branch
+        # (never PR-authored code) so classify_paths.py is the vault's own, not the PR's.
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          persist-credentials: false
+
       - name: Exclude protected live surfaces from automatic merge
         id: scope
         env:
@@ -55,6 +63,7 @@ jobs:
           GH_REPO: ${{ github.repository }}
           PR_NUMBER: ${{ github.event.pull_request.number }}
         run: |
+          set -euo pipefail
           eligible=true
           # Fail closed: if the file list cannot be fetched (auth, network,
           # rate limit), refuse rather than skip the protected-path check.
@@ -62,14 +71,29 @@ jobs:
             echo "::error::Unable to list PR files; refusing to enable auto-merge."
             exit 1
           fi
-          while IFS= read -r path; do
-            case "$path" in
-              .github/workflows/*|.github/scripts/*|.codex/*|.openclaw/*|AGENTS.md|CONSTITUTION.md|DECISIONS.md|VAULT-CONVENTIONS.md|swarm.json|!/*)
-                echo "::notice::Manual review required for protected path '$path'."
-                eligible=false
-                ;;
-            esac
-          done <<< "$files"
+
+          # K1/K2 (#627/#628): defer to the classifier's FILEPLACEMENT verdict — the SINGLE
+          # source of protected-surface truth — instead of a hand-maintained glob that drifts.
+          # classify_paths.py already pins .github/, governance files, dotfolders, and the Nest
+          # to the placement axis; reading it here retires the duplicate glob, so adding a
+          # protected surface in the classifier protects this lane for free. The script is
+          # stdlib-only, so the runner's python3 needs no setup-python step.
+          #
+          # Key on `depth` (placement axis), NOT `tier`: `tier` folds in the filetype axis, so a
+          # med-filetype file (e.g. `uv.lock`, an unknown `.lock` extension -> conservative med)
+          # would read tier=high and wrongly block the sync-bot's OWN dependency PRs. The retired
+          # glob was placement-only; `depth in {high,nope}` is its exact equivalent (a med maze
+          # file has depth=None and stays eligible). Fail CLOSED if the classifier errors or
+          # emits output we cannot parse — never silently treat a failure as eligible.
+          if ! depth="$(printf '%s\n' "$files" | python3 .github/scripts/classify_paths.py \
+                | python3 -c 'import sys, json; print(json.load(sys.stdin)["depth"] or "")')"; then
+            echo "::error::Classifier failed or emitted unparseable output; refusing to enable auto-merge."
+            exit 1
+          fi
+          if [ "$depth" = "high" ] || [ "$depth" = "nope" ]; then
+            echo "::notice::Manual review required — classifier scored a protected placement ('$depth') surface."
+            eligible=false
+          fi
           echo "eligible=$eligible" >> "$GITHUB_OUTPUT"
 
       - name: Verify protected required checks exist
@@ -77,20 +101,52 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_REPO: ${{ github.repository }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
         run: |
-          rules="$(gh api "repos/$GH_REPO/rules/branches/main")"
-          for context in check-secret-patterns check-large-files check-paths check-dotfolder-anchors; do
-            if ! printf '%s' "$rules" | jq -e --arg context "$context" \
-              'any(.[]; .type == "required_status_checks" and any(.parameters.required_status_checks[]?; .context == $context))' >/dev/null; then
-              echo "::error::Maintainer auto-merge is disabled until required check '$context' protects main."
+          # The four policy checks must have PASSED on this PR (existence + success) — decoupled
+          # from whether they're required-for-merge in the ruleset. This step runs early (on
+          # pull_request_target) and there is no check-completion re-trigger, so POLL until each
+          # check-run is completed (they run on every pull_request and finish fast), then require
+          # success. A check that's pending/absent is waited on, not failed-closed; only a real
+          # non-success or the timeout blocks arming.
+          contexts="check-secret-patterns check-large-files check-paths check-dotfolder-anchors"
+          deadline=$(( $(date +%s) + 900 ))   # 15-minute budget
+          while :; do
+            # Fail closed on a real API error rather than letting an empty result
+            # masquerade as "still pending" and surface a misleading timeout.
+            if ! runs="$(gh api --paginate "repos/$GH_REPO/commits/$HEAD_SHA/check-runs" --jq '.check_runs[] | "\(.name)\t\(.status)\t\(.conclusion)"')"; then
+              echo "::error::Unable to fetch check-runs for $HEAD_SHA (auth/rate-limit/network); refusing to enable auto-merge."
+              exit 1
+            fi
+            pending=""
+            for c in $contexts; do
+              line="$(printf '%s\n' "$runs" | awk -F'\t' -v c="$c" '$1==c{print; exit}')"
+              st="$(printf '%s' "$line" | cut -f2)"
+              { [ -z "$line" ] || [ "$st" != "completed" ]; } && pending="$pending $c"
+            done
+            [ -z "$pending" ] && break
+            if [ "$(date +%s)" -ge "$deadline" ]; then
+              echo "::error::Maintainer auto-merge gate: policy checks did not complete in time:$pending"
+              exit 1
+            fi
+            echo "Waiting for policy checks to complete:$pending"
+            sleep 20
+          done
+          for c in $contexts; do
+            concl="$(printf '%s\n' "$runs" | awk -F'\t' -v c="$c" '$1==c{print $3; exit}')"
+            if [ "$concl" != "success" ]; then
+              echo "::error::Maintainer auto-merge is disabled until '$c' passes on this PR (got: ${concl:-missing})."
               exit 1
             fi
           done
 
       - name: Enable verified auto-merge
         if: steps.scope.outputs.eligible == 'true'
+        # The arm actor becomes the future enqueue actor, and GITHUB_TOKEN-actored
+        # events never dispatch workflow runs (GitHub anti-recursion) — prefer the
+        # user-scoped MERGE_QUEUE_TOKEN so armed PRs enqueue with a dispatching actor.
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.MERGE_QUEUE_TOKEN || secrets.GITHUB_TOKEN }}
           PR_URL: ${{ github.event.pull_request.html_url }}
         run: |
           gh pr merge --auto --merge "$PR_URL"

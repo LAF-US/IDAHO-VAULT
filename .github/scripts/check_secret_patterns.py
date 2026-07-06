@@ -8,6 +8,7 @@ file path, line number, and rule name. It never prints matched secret text.
 from __future__ import annotations
 
 import argparse
+import os
 import re
 import subprocess
 import sys
@@ -15,7 +16,31 @@ from dataclasses import dataclass
 from pathlib import Path
 
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
+def _repo_root() -> Path:
+    # In CI this script executes from the trusted base-branch checkout
+    # (trusted-main/), while the changed-file list is computed against the
+    # primary workspace (PR head / merge-group tree). File bytes must be read
+    # from that workspace, not from the script's own checkout — otherwise
+    # newly added files are silently skipped and modified files are scanned
+    # at their base contents. Local (pre-commit) runs have no
+    # GITHUB_WORKSPACE and fall back to the script's own repository.
+    # Trust GITHUB_WORKSPACE only under a real Actions run (GITHUB_ACTIONS is
+    # set by the runner): a stale GITHUB_WORKSPACE in a developer shell could
+    # point at some other real directory, silently scanning the wrong tree.
+    if os.environ.get("GITHUB_ACTIONS") == "true":
+        workspace = os.environ.get("GITHUB_WORKSPACE", "")
+        root = Path(workspace).resolve() if workspace else None
+        if root is None or not root.is_dir():
+            # Fail closed: a bogus workspace would make every scanned path
+            # resolve nonexistent and be silently skipped — a false pass.
+            raise SystemExit(f"GITHUB_WORKSPACE is not a directory: {workspace!r}")
+        return root
+    return Path(__file__).resolve().parents[2]
+
+
+REPO_ROOT = _repo_root()
+WINDOWS_COPY_SUFFIX_RE = re.compile(r" \(\d+\)(?=$|\.)")
+PRESERVED_COPY_SUFFIX_RE = re.compile(r"\.(?:home|vault)(?:\.[0-9a-f]{12})?$", re.IGNORECASE)
 SECRET_PATH_PATTERNS = (
     re.compile(r"(^|/)\.env(\.|$)"),
     re.compile(r"(^|/)\.envrc$"),
@@ -23,6 +48,7 @@ SECRET_PATH_PATTERNS = (
     re.compile(r"(^|/)secrets?(/|$)", re.IGNORECASE),
     re.compile(r"(^|/)\.mcp-auth(/|$)"),
     re.compile(r"(^|/)(credentials?|tokens?|client_secret|oauth).*\.json$", re.IGNORECASE),
+    re.compile(r"(^|/)\.credentials.*\.json$", re.IGNORECASE),
     re.compile(r"(^|/).*-key\.json$", re.IGNORECASE),
     re.compile(r"(^|/).*service-account\.json$", re.IGNORECASE),
     re.compile(r"(^|/)Google Passwords.*\.csv$", re.IGNORECASE),
@@ -30,6 +56,9 @@ SECRET_PATH_PATTERNS = (
     re.compile(r"(^|/).*recovery[-_]codes.*", re.IGNORECASE),
     re.compile(r"\.(pem|p12|pfx|key)$", re.IGNORECASE),
     re.compile(r"(^|/)(id_rsa|id_ed25519)(\.|$)"),
+    re.compile(r"(^|/)(auth|accounts)\.json$", re.IGNORECASE),
+    re.compile(r"(^|/)(known_hosts|allowed_signers)(\.|$)", re.IGNORECASE),
+    re.compile(r"(^|/).*_signing(?:\.|$)", re.IGNORECASE),
     re.compile(r"(^|/)(\.npmrc|\.pypirc|\.netrc|rclone\.conf)$"),
 )
 
@@ -107,16 +136,41 @@ def stdin_paths() -> list[str]:
     ]
 
 
-def path_findings(path: str) -> list[Finding]:
+def normalized_path_variants(path: str) -> set[str]:
     normalized = path.replace("\\", "/")
-    if any(pattern.search(normalized) for pattern in ALLOW_PATH_PATTERNS):
-        return []
-    return [
-        Finding(path=path, line=None, rule="secret_path")
-        for pattern in SECRET_PATH_PATTERNS
-        if pattern.search(normalized)
-    ][:1]
+    variants = {normalized}
 
+    windows_copy = "/".join(
+        WINDOWS_COPY_SUFFIX_RE.sub("", segment) for segment in normalized.split("/")
+    )
+    variants.add(windows_copy)
+
+    for candidate in tuple(variants):
+        stripped = candidate
+        while True:
+            next_value = PRESERVED_COPY_SUFFIX_RE.sub("", stripped)
+            if next_value == stripped:
+                break
+            stripped = next_value
+            variants.add(stripped)
+    return variants
+
+
+def path_findings(path: str) -> list[Finding]:
+    variants = normalized_path_variants(path)
+    if any(
+        pattern.search(candidate)
+        for candidate in variants
+        for pattern in ALLOW_PATH_PATTERNS
+    ):
+        return []
+    if any(
+        pattern.search(candidate)
+        for candidate in variants
+        for pattern in SECRET_PATH_PATTERNS
+    ):
+        return [Finding(path=path, line=None, rule="secret_path")]
+    return []
 
 def staged_file_bytes(path: str) -> bytes | None:
     result = subprocess.run(
