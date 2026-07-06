@@ -45,7 +45,16 @@ class WorkflowSecurityInvariantsTest(unittest.TestCase):
         for path in sorted(WORKFLOWS.glob("*.yml")):
             workflow = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
             events = workflow.get("on", workflow.get(True)) or {}
-            if isinstance(events, dict) and "schedule" in events:
+            # Normalize every `on:` shape GitHub accepts — mapping, list, bare string —
+            # so no shorthand slips the guard. (A bare `schedule` can't actually FIRE
+            # without a cron mapping, but the guard is airtight, not merely practical.)
+            if isinstance(events, dict):
+                names = set(events)
+            elif isinstance(events, list):
+                names = set(events)
+            else:
+                names = {events}
+            if "schedule" in names:
                 offenders.append(path.name)
         self.assertEqual(
             offenders, [],
