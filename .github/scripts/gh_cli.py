@@ -12,6 +12,8 @@ from __future__ import annotations
 
 import subprocess
 
+_ALLOWED_EXECUTABLES: set[str] = {"gh"}
+
 
 def _as_text(value: bytes | str | None) -> str:
     """Normalize TimeoutExpired stream to str. Under text=True the main result
@@ -19,6 +21,29 @@ def _as_text(value: bytes | str | None) -> str:
     if isinstance(value, bytes):
         return value.decode("utf-8", errors="replace")
     return value or ""
+
+
+def _validate_cmd(cmd: list[str]) -> None:
+    """Validate an argv-list command immediately before execution.
+
+    Deliberately does NOT reject newlines/CRs in argv elements: `--body`,
+    `--description`, and similar flag values legitimately carry multi-line
+    markdown (PR comments, arbiter sortition posts, etc.), and a newline
+    inside one argv element is inert here anyway -- `subprocess.run` is
+    always called with `shell=False`, so there is no shell to reinterpret
+    it. NUL is rejected because it truncates C strings at the exec layer
+    (CPython already raises ValueError on embedded NULs; this just gives an
+    earlier, clearer message from the same guard as the rest of this check).
+    """
+    if not cmd:
+        raise ValueError("Command must not be empty")
+    if cmd[0] not in _ALLOWED_EXECUTABLES:
+        raise ValueError(f"Executable not allowed: {cmd[0]}")
+    for part in cmd:
+        if not isinstance(part, str):
+            raise ValueError("All command arguments must be strings")
+        if "\x00" in part:
+            raise ValueError("Command arguments must not contain NUL bytes")
 
 
 def run(
@@ -30,9 +55,12 @@ def run(
     guards against a stalled call hanging the workflow indefinitely — a timeout
     raises the same ``RuntimeError`` surface."""
     # `cmd` is argv-list form with shell=False — each element is passed as a literal
-    # argument, so there is no shell to inject into. The audit rule fires on any
-    # non-literal argv; vetted safe for this wrapper (callers build cmd[0] from a
-    # fixed program name, never user text). See PR #691.
+    # argument, so there is no shell to inject into. Validated immediately below
+    # regardless, so every caller's sink has an explicit barrier at this one
+    # point rather than relying on each caller's own upstream validation. See
+    # PR #691 (why the audit rule fires on any non-literal argv) and #786
+    # (this validation shape, via Copilot Autofix on alert #43).
+    _validate_cmd(cmd)
     try:
         result = subprocess.run(  # nosemgrep
             cmd, capture_output=True, text=True, timeout=timeout
