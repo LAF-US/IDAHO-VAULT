@@ -73,16 +73,30 @@ surface, not its boundary):
   surfaces beyond binary formats?
 - **N2 — Chamber sovereignty vs. conformity.** Most current offenders are
   `.*/` dotfolder chambers — personal agent surfaces under CONSTITUTION § I
-  handle-with-care. Does the encoding norm override chamber sovereignty
-  (bytes are infrastructure, not voice), or do chambers get consent/exemption
-  handling in the sweep?
+  handle-with-care. Candidate postures, one to be chosen: **(a) override** —
+  bytes are infrastructure, not voice; encoding conformity applies everywhere
+  and chamber *content* is never altered, only its byte representation;
+  **(b) consent** — chambers are swept only after a per-chamber notice window
+  (a flag file or issue mention) passes without objection; **(c) exempt** —
+  chambers are excluded from the sweep and only warned on, accepting that
+  strict readers will keep crashing on them.
 - **N3 — Codepoint policy.** Are homoglyphs categorically nonconforming in
   prose? Are typographic characters (em-dash, curly quotes) welcome as
   *UTF-8 codepoints* — the vault's own style is em-dash-heavy — with only
-  their *mis-encodings* swept?
+  their *mis-encodings* swept? Sub-question: do **verbatim exhibits** (quoted
+  lyrics, witnessed external text) get normalized or preserved byte-exact?
+  Precedent cuts both ways — #638 normalized Cyrillic homoglyphs *inside* a
+  lyric exhibit deliberately; a fidelity-first reading would have kept them
+  and flagged instead.
 - **N4 — Mojibake repair authority.** Layer-1 re-encoding is provably
   reversible; layer-2 mojibake repair is interpretive. Per-file human review,
-  or a well-tested heuristic pass with the diff as the record?
+  or a well-tested heuristic pass with the diff as the record? Candidate
+  limits if heuristics are allowed: in-scope only the closed families of
+  known double-decode artifacts (UTF-8 read as cp1252/latin-1 and re-saved —
+  the `â€"`/`Ã©` class), applied only where the repaired text round-trips
+  back to the observed bytes; everything else — ambiguous sequences,
+  exhibits, anything that fails the round-trip proof — flagged for human
+  eyes, never auto-repaired.
 - **N5 — Portability.** The apparatus is written repo-agnostic (a checker and
   a sweeper any LAF-US repo can adopt), with `IDAHO-VAULT` merely its first
   deployment — confirm or narrow.
@@ -92,6 +106,14 @@ surface, not its boundary):
 - A **conformity checker** in the established trusted-validator pattern: red
   on any tracked text file violating the declared norm — encoding first,
   codepoint rules per N3. Runs per-PR so new drift dies at the door.
+  **Text/binary discrimination is part of the checker's contract, not left
+  to chance:** a file is treated as text only if it passes all three gates —
+  (1) not marked binary by `.gitattributes`, (2) extension on the declared
+  text list (the NETWEB doc pattern: an explicit list, no heuristic
+  grandfathering), (3) no NUL byte in the first 8 KiB. Files failing the
+  gates are skipped as binary; files that are *ambiguous* (text-listed
+  extension but NUL bytes, or vice versa) are flagged for a human — the
+  checker never silently guesses.
 - A **sweeper** for the existing debt: layer 1 mechanically (decode →
   re-encode, reversibility verified byte-for-byte), layers 2–3 per N4/N3,
   all on dedicated branches with reviewable diffs.
