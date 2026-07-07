@@ -573,10 +573,10 @@
     "authority_boundary": "Obsidian config files define interface state; the plugin registry document defines doctrine and promotion rules.",
     "promotion_gate": "No plugin-state change counts as legitimate until !/PLUGIN-REGISTRY.md is updated.",
     "counts": {
-      "enabled_community": 40,
+      "enabled_community": 34,
       "enabled_core": 31,
-      "dormant_installed": 41,
-      "installed_total": 81,
+      "dormant_installed": 44,
+      "installed_total": 78,
       "enabled_missing_manifest": 0
     },
     "entrypoints": [
@@ -681,10 +681,10 @@
     "source_of_truth": "tracked_obsidian_config",
     "generated_by": ".github/scripts/sync_obsidian_plugin_registry.py",
     "current_state": {
-      "enabled_community_count": 40,
+      "enabled_community_count": 34,
       "enabled_core_count": 31,
-      "installed_community_count": 81,
-      "dormant_installed_count": 41,
+      "installed_community_count": 78,
+      "dormant_installed_count": 44,
       "enabled_missing_manifest_count": 0
     },
     "enabled_community_plugins": [
@@ -696,38 +696,32 @@
       "nldates-obsidian",
       "obsidian-local-rest-api",
       "mcp-tools",
-      "home-tab",
-      "smart-connections",
-      "smart-connections-visualizer",
       "breadcrumbs",
       "templater-obsidian",
-      "handwritten-notes",
       "obsidian42-strange-new-worlds",
       "obsidian-day-planner",
-      "dataview",
       "obsidian-tasks-plugin",
       "calendar",
       "obsidian-folder-index",
-      "obsidian-icon-folder",
       "oz-image-plugin",
-      "tipa-support",
       "phone-to-roam-to-obsidian",
-      "nostr-writer",
       "moviegrabber",
-      "todoist-context-bridge",
       "move-cursor-on-startup",
-      "map-of-content",
       "obsidian-footnotes",
-      "habit-calendar",
-      "heatmap-calendar",
       "metadata-menu",
-      "notebook-navigator",
       "quickadd",
       "obsidian-tidy-footnotes",
-      "time-ruler",
-      "translate",
-      "backlink-cache",
-      "orbit-graph-view"
+      "orbit-graph-view",
+      "obsidian-git",
+      "smart-connections",
+      "map-of-content",
+      "obsidian-linter",
+      "openclaw",
+      "dataview",
+      "todoist-context-bridge",
+      "obsidian-advanced-uri",
+      "obsidian-full-calendar",
+      "time-ruler"
     ],
     "enabled_core_plugins": [
       "file-explorer",
@@ -774,12 +768,6 @@
         "name": "AI for Templater",
         "version": "1.0.20",
         "path": ".obsidian/plugins/ai-templater/manifest.json"
-      },
-      {
-        "id": "at-people",
-        "name": "At People",
-        "version": "1.6.0",
-        "path": ".obsidian/plugins/at-people/manifest.json"
       },
       {
         "id": "auto-keyword-linker",
@@ -872,12 +860,6 @@
         "path": ".obsidian/plugins/editing-toolbar/manifest.json"
       },
       {
-        "id": "fit",
-        "name": "Fit",
-        "version": "1.4.0",
-        "path": ".obsidian/plugins/fit/manifest.json"
-      },
-      {
         "id": "habit-calendar",
         "name": "Habit Calendar",
         "version": "1.2.0",
@@ -894,12 +876,6 @@
         "name": "Heatmap Calendar",
         "version": "0.7.1",
         "path": ".obsidian/plugins/heatmap-calendar/manifest.json"
-      },
-      {
-        "id": "home-tab",
-        "name": "Home tab",
-        "version": "1.2.2",
-        "path": ".obsidian/plugins/home-tab/manifest.json"
       },
       {
         "id": "keep-the-rhythm",
@@ -1010,6 +986,12 @@
         "path": ".obsidian/plugins/obsidian-admonition/manifest.json"
       },
       {
+        "id": "obsidian-advanced-uri",
+        "name": "Advanced URI",
+        "version": "1.46.1",
+        "path": ".obsidian/plugins/obsidian-advanced-uri/manifest.json"
+      },
+      {
         "id": "obsidian-day-planner",
         "name": "Day Planner",
         "version": "0.28.0",
@@ -1046,6 +1028,12 @@
         "path": ".obsidian/plugins/obsidian-footnotes/manifest.json"
       },
       {
+        "id": "obsidian-full-calendar",
+        "name": "Full Calendar",
+        "version": "0.10.7",
+        "path": ".obsidian/plugins/obsidian-full-calendar/manifest.json"
+      },
+      {
         "id": "obsidian-git",
         "name": "Git",
         "version": "2.38.5",
@@ -1062,6 +1050,12 @@
         "name": "Icon Shortcodes",
         "version": "0.9.7",
         "path": ".obsidian/plugins/obsidian-icon-shortcodes/manifest.json"
+      },
+      {
+        "id": "obsidian-kanban",
+        "name": "Kanban",
+        "version": "2.0.51",
+        "path": ".obsidian/plugins/obsidian-kanban/manifest.json"
       },
       {
         "id": "obsidian-leaflet-plugin",
@@ -1114,8 +1108,8 @@
       {
         "id": "openclaw",
         "name": "OpenClaw",
-        "version": "0.41.1",
-        "path": ".obsidian/plugins/obsidianclaw/manifest.json"
+        "version": "0.41.11",
+        "path": ".obsidian/plugins/openclaw/manifest.json"
       },
       {
         "id": "orbit-graph-view",
@@ -1160,12 +1154,6 @@
         "path": ".obsidian/plugins/recent-files-obsidian/manifest.json"
       },
       {
-        "id": "review-obsidian",
-        "name": "Review",
-        "version": "1.6.6",
-        "path": ".obsidian/plugins/review-obsidian/manifest.json"
-      },
-      {
         "id": "roygbiv-day-accent",
         "name": "ROYGBIV Day Accent",
         "version": "1.0.0",
@@ -1184,12 +1172,6 @@
         "path": ".obsidian/plugins/smart-connections/manifest.json"
       },
       {
-        "id": "smart-connections-visualizer",
-        "name": "Smart Connections Visualizer",
-        "version": "1.0.27",
-        "path": ".obsidian/plugins/smart-connections-visualizer/manifest.json"
-      },
-      {
         "id": "table-editor-obsidian",
         "name": "Advanced Tables",
         "version": "0.22.1",
@@ -1200,12 +1182,6 @@
         "name": "Tag Wrangler",
         "version": "0.6.4",
         "path": ".obsidian/plugins/tag-wrangler/manifest.json"
-      },
-      {
-        "id": "taskbone-ocr-plugin",
-        "name": "Taskbone",
-        "version": "2.3.2",
-        "path": ".obsidian/plugins/taskbone-ocr-plugin/manifest.json"
       },
       {
         "id": "templater-obsidian",
@@ -1253,8 +1229,8 @@
     "dormant_installed_plugins": [
       "ai-image-analyzer",
       "ai-templater",
-      "at-people",
       "auto-keyword-linker",
+      "backlink-cache",
       "beautiful-contact-cards",
       "bmo-chatbot",
       "calendarium",
@@ -1265,7 +1241,9 @@
       "days-since",
       "desk",
       "editing-toolbar",
-      "fit",
+      "habit-calendar",
+      "handwritten-notes",
+      "heatmap-calendar",
       "keep-the-rhythm",
       "large-language-models",
       "letterboxd-rss-sync",
@@ -1274,23 +1252,24 @@
       "make-md",
       "msg-handler",
       "nexus-ai-chat-importer",
+      "nostr-writer",
+      "notebook-navigator",
       "obsidian-5e-statblocks",
       "obsidian-admonition",
       "obsidian-dice-roller",
       "obsidian-extract-pdf-highlights",
       "obsidian-file-cooker",
-      "obsidian-git",
+      "obsidian-icon-folder",
       "obsidian-icon-shortcodes",
+      "obsidian-kanban",
       "obsidian-leaflet-plugin",
-      "obsidian-linter",
       "obsidian42-brat",
-      "openclaw",
       "pdf-plus",
-      "review-obsidian",
       "settings-search",
       "table-editor-obsidian",
-      "taskbone-ocr-plugin",
       "text-extractor",
+      "tipa-support",
+      "translate",
       "wikipedia-search"
     ],
     "enabled_plugins_missing_manifest": [],
