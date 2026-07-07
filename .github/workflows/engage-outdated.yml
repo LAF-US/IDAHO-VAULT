@@ -19,17 +19,17 @@ on:
   workflow_dispatch:
     inputs:
       apply:
-        description: 'true = post attestations and resolve; false = dry-run (report only)'
+        description: "true = post attestations and resolve; false = dry-run (report only)"
         required: false
-        default: 'false'
+        default: "false"
         type: choice
         options:
-          - 'false'
-          - 'true'
+          - "false"
+          - "true"
       pr:
-        description: 'Optional single PR number to scope the pass to (blank = every open PR)'
+        description: "Optional single PR number to scope the pass to (blank = every open PR)"
         required: false
-        default: ''
+        default: ""
         type: string
 
 permissions:

@@ -27,13 +27,13 @@ on:
   push:
     branches: [main]
     paths:
-      - 'Dockerfile'
-      - '.github/workflows/cloud-run-deploy.yml'
+      - "Dockerfile"
+      - ".github/workflows/cloud-run-deploy.yml"
   workflow_dispatch:
 
 permissions:
   contents: read
-  id-token: write      # Required for OIDC token generation
+  id-token: write # Required for OIDC token generation
 
 env:
   REGION: us-central1

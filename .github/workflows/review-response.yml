@@ -46,4 +46,3 @@ jobs:
             --review-author "$REVIEW_AUTHOR" \
             --review-id "$REVIEW_ID" \
             --review-state "$REVIEW_STATE"
-

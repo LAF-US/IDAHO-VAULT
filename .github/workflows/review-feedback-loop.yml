@@ -100,4 +100,3 @@ jobs:
             --pr-number "${{ github.event.issue.number }}" \
             --comment-author "${{ github.event.comment.user.login }}" \
             --comment-body "$COMMENT_BODY"
-

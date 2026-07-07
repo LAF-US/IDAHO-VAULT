@@ -24,9 +24,9 @@ on:
   workflow_dispatch:
     inputs:
       grace_minutes:
-        description: 'Legacy review-state compatibility window'
+        description: "Legacy review-state compatibility window"
         required: false
-        default: '30'
+        default: "30"
 
 permissions:
   pull-requests: write
