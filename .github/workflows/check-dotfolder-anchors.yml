@@ -22,4 +22,3 @@ jobs:
 
       - name: Validate durable dotfolder anchors
         run: python .github/scripts/check_dotfolder_anchors.py
-

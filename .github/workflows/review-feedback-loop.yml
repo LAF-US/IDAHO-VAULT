@@ -48,6 +48,7 @@ jobs:
       # scoped to this job only; outside this job, `contents` stays read-only at the
       # workflow level (the other jobs do not get write access).
       contents: write
+      issues: write
       pull-requests: write
     steps:
       - name: Checkout trusted workflow surfaces
@@ -100,4 +101,3 @@ jobs:
             --pr-number "${{ github.event.issue.number }}" \
             --comment-author "${{ github.event.comment.user.login }}" \
             --comment-body "$COMMENT_BODY"
-

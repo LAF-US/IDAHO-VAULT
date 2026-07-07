@@ -320,9 +320,11 @@ def _arm_auto_merge(owner: str, repo: str, pr_number: int) -> tuple[bool, str | 
             # single merge-method norm. gh syntax requires a method flag, but on a
             # merge-queue repo the queue overrides it — `--merge` is the one canonical,
             # inert spelling everywhere (test_workflow_security_invariants enforces it).
-            _run(
-                ["gh", "pr", "merge", str(pr_number), "--merge", "--delete-branch", "--auto"]
-            )
+            # NO --delete-branch: gh rejects it outright on merge-queue repos
+            # ("Cannot use `-d` or `--delete-branch` when merge queue enabled"),
+            # which crashed every arm attempt. Head-branch cleanup belongs to the
+            # repo's delete-on-merge behavior / branch-cleanup workflow, not here.
+            _run(["gh", "pr", "merge", str(pr_number), "--merge", "--auto"])
         except RuntimeError as exc:
             if not any(fragment in str(exc) for fragment in AUTO_MERGE_AUTHZ_FRAGMENTS):
                 raise

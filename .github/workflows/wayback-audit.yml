@@ -4,11 +4,11 @@ on:
   workflow_dispatch:
     inputs:
       limit:
-        description: 'Limit to N URLs (0 = all, use small number for testing)'
+        description: "Limit to N URLs (0 = all, use small number for testing)"
         required: false
-        default: '0'
+        default: "0"
       save:
-        description: 'Submit dead URLs to Save Page Now'
+        description: "Submit dead URLs to Save Page Now"
         type: boolean
         required: false
         default: false
@@ -31,7 +31,7 @@ jobs:
 
       - name: Run Wayback audit
         env:
-          SAVE:  ${{ github.event.inputs.save  || 'false' }}
+          SAVE: ${{ github.event.inputs.save  || 'false' }}
           LIMIT: ${{ github.event.inputs.limit || '0' }}
         run: |
           ARGS=()
@@ -72,4 +72,3 @@ jobs:
           BRANCH_NAME: ${{ steps.commit_push.outputs.branch_name }}
         run: |
           gh pr create --title "Automated Wayback Audit Report" --body "Automated PR from wayback-audit workflow." --base main --head "$BRANCH_NAME"
-
