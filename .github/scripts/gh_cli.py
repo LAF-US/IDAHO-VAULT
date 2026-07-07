@@ -24,16 +24,19 @@ def _as_text(value: bytes | str | None) -> str:
 
 
 def _validate_cmd(cmd: list[str]) -> None:
-    """Validate an argv-list command immediately before execution.
+    """Validate argv-list commands before execution.
 
     Deliberately does NOT reject newlines/CRs in argv elements: `--body`,
     `--description`, and similar flag values legitimately carry multi-line
-    markdown (PR comments, arbiter sortition posts, etc.), and a newline
-    inside one argv element is inert here anyway -- `subprocess.run` is
-    always called with `shell=False`, so there is no shell to reinterpret
-    it. NUL is rejected because it truncates C strings at the exec layer
-    (CPython already raises ValueError on embedded NULs; this just gives an
-    earlier, clearer message from the same guard as the rest of this check).
+    markdown (PR comments, attestations, sortition posts -- this exact
+    check broke `review_feedback_loop.py`'s sync-pr/reconcile the moment it
+    landed, since every attestation/lifecycle comment is multi-line). A
+    newline inside one argv element is inert here regardless:
+    `subprocess.run` is always called with `shell=False`, so there is no
+    shell to reinterpret it. NUL is still rejected -- it truncates C
+    strings at the exec layer (CPython already raises ValueError on
+    embedded NULs; this just gives an earlier, clearer message from the
+    same guard as the rest of this check).
     """
     if not cmd:
         raise ValueError("Command must not be empty")
@@ -55,11 +58,8 @@ def run(
     guards against a stalled call hanging the workflow indefinitely — a timeout
     raises the same ``RuntimeError`` surface."""
     # `cmd` is argv-list form with shell=False — each element is passed as a literal
-    # argument, so there is no shell to inject into. Validated immediately below
-    # regardless, so every caller's sink has an explicit barrier at this one
-    # point rather than relying on each caller's own upstream validation. See
-    # PR #691 (why the audit rule fires on any non-literal argv) and #786
-    # (this validation shape, via Copilot Autofix on alert #43).
+    # argument, so there is no shell to inject into. Validate executable + args to
+    # prevent uncontrolled command construction across callers.
     _validate_cmd(cmd)
     try:
         result = subprocess.run(  # nosemgrep

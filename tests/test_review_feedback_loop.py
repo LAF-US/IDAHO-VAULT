@@ -186,6 +186,147 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertFalse(state["low_risk"])
         self.assertFalse(state["eligible_for_auto_merge"])
 
+    def test_pair_lane_parses_both_axes(self) -> None:
+        # K6/#632: the lane IS the label pair — one label per independent analysis.
+        rfl = review_feedback_loop
+        ft, dp, marked = rfl._risk_pair_for_pr({"filetype:risk/—", "depth:risk/—"})
+        self.assertEqual((ft, dp, marked), (None, None, True))
+        ft, dp, marked = rfl._risk_pair_for_pr({"filetype:risk/med", "depth:risk/high"})
+        self.assertEqual((ft, dp, marked), ("med", "high", True))
+        ft, dp, marked = rfl._risk_pair_for_pr({"filetype:risk/low", "depth:risk/nope"})
+        self.assertEqual((ft, dp, marked), ("low", "nope", True))
+        # One axis unmarked (and no legacy fallback) -> NOT fully marked: the PR holds.
+        ft, dp, marked = rfl._risk_pair_for_pr({"filetype:risk/med"})
+        self.assertFalse(marked)
+
+    def test_pair_axis_exclusion_fails_loud(self) -> None:
+        # K6 per-axis mutual exclusion: an axis carries exactly ONE label — its `—` XOR
+        # its fired flag. Two labels on one axis is a producer/restamp bug: raise.
+        rfl = review_feedback_loop
+        for labels in (
+            {"filetype:risk/—", "filetype:risk/med", "depth:risk/—"},
+            {"filetype:risk/low", "filetype:risk/med"},
+            {"depth:risk/high", "depth:risk/nope", "filetype:risk/—"},
+        ):
+            with self.subTest(labels=labels):
+                with self.assertRaises(rfl.RiskMarkerInvariantError):
+                    rfl._risk_pair_for_pr(labels)
+
+    def test_pair_clear_arms_and_pair_flag_holds(self) -> None:
+        # The {—,—} pair arms after grace; a fired lane holds until its review completes.
+        now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
+        clear_state = review_feedback_loop.evaluate_review_state(
+            _pr(created_at=now - timedelta(minutes=45),
+                labels=("filetype:risk/—", "depth:risk/—")),
+            now=now,
+        )
+        self.assertTrue(clear_state["is_clear"])
+        self.assertTrue(clear_state["eligible_for_auto_merge"])
+
+        held_state = review_feedback_loop.evaluate_review_state(
+            _pr(created_at=now - timedelta(minutes=45),
+                labels=("filetype:risk/med", "depth:risk/—")),
+            now=now,
+        )
+        self.assertEqual(held_state["risk_tier"], "med")
+        self.assertFalse(held_state["eligible_for_auto_merge"])
+
+    def test_lane_completion_clears_flag_and_flows(self) -> None:
+        # K6 "Restamp + clear": an approving review with no current threads completes the
+        # lane — the PR becomes eligible, and the projection consumes the fired flag
+        # (restamps the axis to its `—`).
+        now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
+        state = review_feedback_loop.evaluate_review_state(
+            _pr(created_at=now - timedelta(minutes=45),
+                labels=("filetype:risk/med", "depth:risk/—"),
+                review_decision="APPROVED"),
+            now=now,
+        )
+        self.assertTrue(state["lane_complete"])
+        self.assertTrue(state["flag_clearable"])
+        self.assertTrue(state["eligible_for_auto_merge"])
+
+        with mock.patch.object(review_feedback_loop, "_edit_label") as edit_label, \
+             mock.patch.object(review_feedback_loop, "_disable_auto_merge"):
+            actions = review_feedback_loop.apply_review_state_projection(17, state)
+        self.assertIn("add:filetype:risk/—", actions)
+        self.assertIn("remove:filetype:risk/med", actions)
+        edit_label.assert_any_call(17, add="filetype:risk/—")
+
+    def test_nope_lane_never_auto_clears_even_approved(self) -> None:
+        # The still point asks for the sovereign's own hand: depth:risk/nope is never
+        # consumed by review completion and never arms.
+        now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
+        state = review_feedback_loop.evaluate_review_state(
+            _pr(created_at=now - timedelta(minutes=45),
+                labels=("filetype:risk/—", "depth:risk/nope"),
+                review_decision="APPROVED"),
+            now=now,
+        )
+        self.assertEqual(state["risk_tier"], "nope")
+        self.assertTrue(state["lane_complete"])
+        self.assertFalse(state["flag_clearable"])
+        self.assertFalse(state["eligible_for_auto_merge"])
+        with mock.patch.object(review_feedback_loop, "_edit_label") as edit_label, \
+             mock.patch.object(review_feedback_loop, "_disable_auto_merge"):
+            actions = review_feedback_loop.apply_review_state_projection(18, state)
+        self.assertNotIn("remove:depth:risk/nope", actions)
+
+    def test_restamp_mirrors_classifier_and_syncs_legacy(self) -> None:
+        # K6 restamp: labels mirror the verdict — pair stamped, stale pair labels and
+        # contradicted legacy sparse labels retired, legacy mirror kept in sync.
+        with mock.patch.object(review_feedback_loop, "_edit_label"):
+            labels = {"filetype:risk/med", "depth:risk/—", "risk/low", "review/pending"}
+            actions = review_feedback_loop.restamp_risk_pair(21, labels, None, None)
+        self.assertIn("add:filetype:risk/—", actions)
+        self.assertIn("remove:filetype:risk/med", actions)
+        self.assertIn("add:risk/—", actions)
+        self.assertIn("remove:risk/low", actions)
+        self.assertIn("review/pending", labels)  # non-risk labels untouched
+        self.assertEqual(
+            labels & {"filetype:risk/—", "depth:risk/—", "risk/—"},
+            {"filetype:risk/—", "depth:risk/—", "risk/—"},
+        )
+
+        with mock.patch.object(review_feedback_loop, "_edit_label"):
+            labels = {"risk/—"}
+            actions = review_feedback_loop.restamp_risk_pair(22, labels, "low", "high")
+        self.assertIn("add:filetype:risk/low", actions)
+        self.assertIn("add:depth:risk/high", actions)
+        self.assertIn("add:risk/high", actions)
+        self.assertIn("remove:risk/—", actions)
+
+    def test_sync_pr_restamps_unmarked_pr_from_classifier(self) -> None:
+        # K6 backfill-by-automation: an unmarked in-flight PR gets its pair stamped from
+        # the classifier on the next sync — no hand-sweep.
+        now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
+        args = SimpleNamespace(
+            owner="LAF-US", repo="IDAHO-VAULT", pr_number=300,
+            sync_actor="someone", grace_minutes=30,
+        )
+        unmarked = _pr(number=300, created_at=now - timedelta(minutes=45), labels=())
+        with mock.patch.object(review_feedback_loop, "ensure_labels"), mock.patch.object(
+            review_feedback_loop, "_fetch_pr", return_value=unmarked
+        ), mock.patch.object(
+            review_feedback_loop, "_viewer_login", return_value="github-actions[bot]"
+        ), mock.patch.object(
+            review_feedback_loop, "_resolve_outdated_resolvable_threads", return_value=[]
+        ), mock.patch.object(
+            review_feedback_loop, "_classify_pr_pair", return_value=(None, None)
+        ), mock.patch.object(
+            review_feedback_loop, "_edit_label"
+        ), mock.patch.object(
+            review_feedback_loop, "_disable_auto_merge"
+        ), mock.patch.object(
+            review_feedback_loop, "_run"
+        ), mock.patch.object(
+            review_feedback_loop, "_arm_auto_merge", return_value=(True, None)
+        ) as arm, contextlib.redirect_stdout(io.StringIO()):
+            result = review_feedback_loop.sync_pr(args)
+        self.assertEqual(result, 0)
+        # Restamped to the {—,—} pair -> clear lane -> armed on this same pass.
+        arm.assert_called_once_with("LAF-US", "IDAHO-VAULT", 300)
+
     def test_clear_marker_classifies_as_clear(self) -> None:
         # K4/#630: the positive `risk/—` marker is its own tier ("clear"), distinct from low.
         self.assertEqual(
@@ -497,7 +638,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
 
     def test_arm_auto_merge_degrades_when_protected_branch_blocks_enablement(self) -> None:
         error = RuntimeError(
-            "Command failed (1): gh pr merge 289 --squash --delete-branch --auto\n"
+            "Command failed (1): gh pr merge 289 --merge --delete-branch --auto\n"
             "stdout:\n\n"
             "stderr:\n"
             "GraphQL: Pull request User is not authorized for this protected branch "
@@ -526,7 +667,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertTrue(enabled)
         self.assertIsNone(arm_error)
         run.assert_called_once_with(
-            ["gh", "pr", "merge", "10", "--squash", "--delete-branch", "--auto"]
+            ["gh", "pr", "merge", "10", "--merge", "--delete-branch", "--auto"]
         )
         enqueue.assert_called_once_with("PR_node1")
 
@@ -606,7 +747,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertTrue(enabled)
         self.assertIsNone(arm_error)
         run.assert_called_once_with(
-            ["gh", "pr", "merge", "15", "--squash", "--delete-branch", "--auto"]
+            ["gh", "pr", "merge", "15", "--merge", "--delete-branch", "--auto"]
         )
         enqueue.assert_not_called()
 
