@@ -61,10 +61,10 @@
     "status": "active",
     "authority_boundary": "Obsidian config files define interface state; the plugin registry document defines doctrine and promotion rules.",
     "current_state": {
-      "enabled_community_count": 28,
+      "enabled_community_count": 27,
       "enabled_core_count": 31,
       "installed_community_count": 78,
-      "dormant_installed_count": 50,
+      "dormant_installed_count": 51,
       "enabled_missing_manifest_count": 0
     },
     "entrypoints": [
@@ -100,7 +100,6 @@
       "obsidian-local-rest-api",
       "mcp-tools",
       "letterboxd-rss-sync",
-      "smart-connections",
       "breadcrumbs",
       "templater-obsidian",
       "wikipedia-search",
@@ -855,6 +854,7 @@
       "oz-image-plugin",
       "pdf-plus",
       "recent-files-obsidian",
+      "smart-connections",
       "table-editor-obsidian",
       "text-extractor",
       "time-ruler",
