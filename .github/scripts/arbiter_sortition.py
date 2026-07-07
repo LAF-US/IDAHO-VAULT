@@ -5,12 +5,18 @@ import argparse
 import hashlib
 import json
 import random
-import re
 import sys
 
 from gh_cli import run as _run
 
-REPO_PATTERN = re.compile(r"^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$")
+# This script is scoped to a single, fixed repository -- it is not a general
+# library, and ALL_REVIEWERS below is already a hardcoded roster specific to
+# this repo. --repo is compared against this literal constant (rather than
+# validated with a regex) so `owner`/`repo_name` are always derived from the
+# literal, never from the CLI argument itself: CodeQL's command-line-injection
+# sanitizer only recognizes comparisons against a literal constant, and a
+# regex `.fullmatch()` does not register as one.
+_KNOWN_REPO = "LAF-US/IDAHO-VAULT"
 
 # Every reviewer identity eligible to be selected as an arbiter -- bots that
 # can potentially approve, plus the human reviewer. This is a single literal
@@ -162,9 +168,9 @@ def main():
     if args.pr_number <= 0:
         sys.exit(f"--pr-number must be a positive integer, got: {args.pr_number}")
 
-    if not REPO_PATTERN.fullmatch(args.repo):
-        sys.exit(f"--repo must be in 'owner/repo' format, got: {args.repo}")
-    owner, repo_name = args.repo.split("/")
+    if args.repo != _KNOWN_REPO:
+        sys.exit(f"--repo must be {_KNOWN_REPO!r} (arbiter sortition is scoped to this repository), got: {args.repo!r}")
+    owner, repo_name = _KNOWN_REPO.split("/")
     print(f"Running arbiter sortition for {owner}/{repo_name} PR #{args.pr_number}")
     
     active_reviewers = _get_active_reviewers(owner, repo_name, args.pr_number)
