@@ -156,7 +156,7 @@ Founded to own Python's intellectual property, manage development, and promote P
 - Bytes type: Separate bytes type for binary data
 - Print as a function: print() instead of print statement
 - Integer division: / returns float, // returns int
-- Several built-ins return iterators/views instead of lists: `range()`, `map()`, `filter()`, `zip()`, and dict `.keys()`, `.values()`, `.items()`
+- Several built-ins return lazy sequence or iterator-style objects instead of lists: `range()` returns a sequence, `map()`, `filter()`, and `zip()` return iterators, and dict `.keys()`, `.values()`, `.items()` return view objects
 - Function annotations: Type hints (PEP 3107)
 - Extended iterable unpacking
 - Dictionary views
@@ -285,12 +285,14 @@ Python is now governed by a 5-member Steering Council, elected by the Python cor
 ## Chapter 7: Python's Global Impact
 
 ### Adoption Statistics (2026)
-| Metric | Value | Source |
-|--------|-------|--------|
-| TIOBE Index Rank | #1 | TIOBE |
-| PYPL Index Rank | #1 | PYPL |
-| Stack Overflow Survey | Most Wanted (6th year) | Stack Overflow |
-| GitHub Octoverse | #2 (by repositories) | GitHub |
+**Snapshot as of compilation (June 5, 2026)** — anchored to the latest editions actually published by that date:
+
+| Metric | Value | Source edition |
+|--------|-------|----------------|
+| TIOBE Index Rank | #1 | TIOBE (May 2026 — the June edition post-dates this report) |
+| PYPL Index Rank | #1 | PYPL (June 1, 2026) |
+
+*(The original draft also carried Stack Overflow Survey and GitHub Octoverse rows presented as 2026 results; neither 2026 edition existed at compilation — the SO 2026 survey opened June 23 and Octoverse 2026 remains unpublished — so those rows were removed rather than re-dated. The last published editions of both were 2025.)*
 
 ### Industry Adoption
 **Companies using Python**: Google, Facebook/Instagram, Netflix, Spotify, Dropbox, NASA, CERN, Bank of America, J.P. Morgan
