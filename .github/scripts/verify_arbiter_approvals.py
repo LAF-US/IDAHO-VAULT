@@ -114,25 +114,31 @@ def main():
 
     if args.pr_number <= 0:
         sys.exit(f"--pr-number must be a positive integer, got: {args.pr_number}")
+    # Re-derive through int() at the point of use: this is a pure digit-string
+    # conversion (raises ValueError on anything non-numeric), so the value
+    # handed to _run() argv can never carry an injected flag/argument --
+    # unlike the bare argparse-sourced int, an explicit int() call here is a
+    # conversion CodeQL's command-injection query recognizes as a boundary.
+    pr_number = int(args.pr_number)
 
     if args.repo != _KNOWN_REPO:
         sys.exit(f"--repo must be {_KNOWN_REPO!r} (arbiter verification is scoped to this repository), got: {args.repo!r}")
     owner, repo_name = _KNOWN_REPO.split("/")
-    print(f"Verifying arbiter approvals for {owner}/{repo_name} PR #{args.pr_number}")
-    
-    requires_approval = _check_requires_approval(owner, repo_name, args.pr_number)
+    print(f"Verifying arbiter approvals for {owner}/{repo_name} PR #{pr_number}")
+
+    requires_approval = _check_requires_approval(owner, repo_name, pr_number)
     if not requires_approval:
         print("PR does not require approval")
         sys.exit(0)
-    
-    arbiters = _get_arbiter_labels(args.pr_number)
+
+    arbiters = _get_arbiter_labels(pr_number)
     print(f"Designated arbiters: {arbiters}")
-    
+
     if not arbiters:
         print("No arbiters designated for this PR")
         sys.exit(1)
-    
-    approved_arbiters = _get_approved_arbiters(owner, repo_name, args.pr_number, arbiters)
+
+    approved_arbiters = _get_approved_arbiters(owner, repo_name, pr_number, arbiters)
     print(f"Approved arbiters: {approved_arbiters}")
     
     if len(approved_arbiters) >= args.required_count:

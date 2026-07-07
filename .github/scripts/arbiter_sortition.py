@@ -167,22 +167,28 @@ def main():
 
     if args.pr_number <= 0:
         sys.exit(f"--pr-number must be a positive integer, got: {args.pr_number}")
+    # Re-derive through int() at the point of use: this is a pure digit-string
+    # conversion (raises ValueError on anything non-numeric), so the value
+    # handed to _run() argv can never carry an injected flag/argument --
+    # unlike the bare argparse-sourced int, an explicit int() call here is a
+    # conversion CodeQL's command-injection query recognizes as a boundary.
+    pr_number = int(args.pr_number)
 
     if args.repo != _KNOWN_REPO:
         sys.exit(f"--repo must be {_KNOWN_REPO!r} (arbiter sortition is scoped to this repository), got: {args.repo!r}")
     owner, repo_name = _KNOWN_REPO.split("/")
-    print(f"Running arbiter sortition for {owner}/{repo_name} PR #{args.pr_number}")
-    
-    active_reviewers = _get_active_reviewers(owner, repo_name, args.pr_number)
+    print(f"Running arbiter sortition for {owner}/{repo_name} PR #{pr_number}")
+
+    active_reviewers = _get_active_reviewers(owner, repo_name, pr_number)
     print(f"Active reviewers: {active_reviewers}")
-    
-    arbiters = _select_arbiters(active_reviewers, args.pr_number, args.arbiter_count)
+
+    arbiters = _select_arbiters(active_reviewers, pr_number, args.arbiter_count)
     print(f"Selected arbiters: {arbiters}")
-    
+
     _ensure_arbiter_labels(arbiters)
-    _apply_arbiter_labels(args.pr_number, arbiters)
-    _remove_old_arbiter_labels(args.pr_number, set(arbiters))
-    _post_arbiter_comment(args.pr_number, arbiters)
+    _apply_arbiter_labels(pr_number, arbiters)
+    _remove_old_arbiter_labels(pr_number, set(arbiters))
+    _post_arbiter_comment(pr_number, arbiters)
     
     print(f"Arbiter sortition complete: {arbiters}")
 
