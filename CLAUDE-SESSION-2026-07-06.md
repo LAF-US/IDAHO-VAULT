@@ -3,7 +3,7 @@ date: 2026-07-06
 branch: logan/obsidian
 authority: LOGAN
 filed_by: "*.claude.*"
-status: checkpoint
+status: suspended
 related:
   - ABCD-METHOD.md
   - CLAUDE-SESSION-2026-07-03.md
@@ -102,6 +102,29 @@ Per the Repair axis — witness the error plainly, do not paper over it.
 **Errors owned this stretch (for repair):** read "update document project status" as a vault-document hunt when it meant the harness task list I myself had named (Logan's correction was blunt and earned); reported `apiKey: ""` from my own truncated masked print — the raw read shows a nonempty plaintext key (truncation artifact, corrected; the plaintext itself is #19's debt); first proposed "top up" — the outsider answer the wide read retired.
 
 **Residue:** test session `agent:main:checkpoint-proof-20260706` (one inert row; no CLI delete exists and hand-editing sessions.json stays off-limits — Logan's UI can clear it). Vault artifacts awaiting Logan's commit flow: `.gitignore` (M), `resolve_mistral_secret.py` (new), this anchor. Tasks: #21 · #25 closed; #24 (obsidian CLI skill) · #26 (conflict markers in `OPENROUTER-2026-04-28.md`) opened. Secrets-reloader flapping from the morning: load-transient, quiet since restart.
+
+---
+
+## Suspension — filed in the small hours of 2026-07-07 (~00:55 MDT)
+
+*Logan's word: "Let's get it wrapped up and suspended at the current state." Filed in the SUSPENDED-ANIMATION register (per [[SUSPENDED-ANIMATION-WITNESS-2026-05-17]]): the clock is stopped mid-motion, every room's resume point marked. Status flipped `checkpoint → suspended`.*
+
+**What is lit (verified live at suspension):**
+- **Both daemons up and answering.** Hermes: `HERMES_RESPONDS_OK` + Discord connected. OpenClaw: Obsidian-plugin message → reply in 3s (00:34).
+- **The Direct-Mistral escape bucket FIRED in production** — the 00:34 reply came through `provider=mistral → api.mistral.ai → 200/1580ms`. The rung is no longer merely armed; it has carried a real message. 6-rung chain live; `main` unpinned (haiku `modelOverride` cleared by Logan via Obsidian `/model`).
+- **MCPs wired both directions:** Hermes ⇄ 29 tools from 2 servers (obsidian-vault 20 + openclaw 9); OpenClaw ⇄ obsidian (18 tools, probed).
+- **`gateway.trustedProxies: ["127.0.0.1","::1"]` applied + verified** — proxy-demotion warns gone, no handshake timeouts since. With this, **all three 07-03 frozen resume-points are closed** (routing conflict confirmed cleared by live test; `session.reset` at default; trustedProxies applied). Backup: `openclaw.json.bak.pretrustedproxies.20260707-003552`.
+- **The `.op/*.env` gitignore belt held under live fire:** the vault's auto-backup sweeper (commit `8230f39a1`, 23:21:49) committed the resolver script + `.gitignore` to the public repo minutes after creation — and `mistral.env` stayed out (verified 0 matches). Same mechanism as the April ADB leak; this time it was wearing the belt.
+
+**Frozen mid-motion (the thaw map):**
+1. **Task #27 — Android Node app chat files-but-doesn't-dispatch.** Fully characterized; leading theory **version skew** (app tracks the daily 2026.7.1-beta/main line; gateway is 2026.6.11 stable, Jun 30). Thaw options A (update app, resend — cheapest), B (gateway → 2026.7.1-beta.2; **re-run `~/.openclaw/patch-obsidian-origin.sh` after any update**), C (novel upstream filing, needs app version, gated on Logan). Full detail on the task.
+2. **07-03 caveat verify, nominally open:** one Obsidian send *after* the 00:36 trustedProxies restart (the 00:34 proof predates it by two minutes; connection re-established cleanly, risk minimal).
+3. **Stack unchanged:** #17 VisionClaw/Pixel pairing · #19 SecretRef migration (the mistral SecretRef is its first down-payment) · #20 Obsidian substrate · #22 BEEFSTACK (#690, now with two live repros) · #23 backlog · #24 obsidian CLI skill · #26 conflict-marker chore.
+
+**Standing state to preserve:**
+- OpenRouter shared pool at ~**$0.10** — every `openrouter/*` paid rung is on fumes; the chain's direct-Mistral rung is the working floor. Top-up remains Logan's optional lever; free rungs are mostly 404-blocked by the account's **deliberate** data-policy guardrails — do not loosen them to "fix" routing.
+- Residue, harmless: test session `agent:main:checkpoint-proof-20260706` (one row; Logan's UI can delete); orphaned raw user turns from the dead app sends sit in both transcripts (the 00:34 run already read past them without incident).
+- The authoritative gateway log is `~/Library/Logs/openclaw/gateway.log` (the service's own sink); `/tmp/openclaw/openclaw-<local-date>.log` is CLI/child noise — a session-earned lesson worth keeping.
 
 ---
 
