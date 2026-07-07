@@ -33,4 +33,3 @@ jobs:
             exit 0
           fi
           python .github/scripts/laf_usb_manifest.py "${manifests[@]}"
-
