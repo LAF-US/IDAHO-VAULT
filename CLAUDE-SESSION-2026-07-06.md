@@ -5,6 +5,7 @@ authority: LOGAN
 filed_by: "*.claude.*"
 status: checkpoint
 related:
+  - ABCD-METHOD.md
   - CLAUDE-SESSION-2026-07-03.md
   - CLAUDE-SESSION-2026-06-29.md
   - SUSPENDED-ANIMATION-OPENCLAW-STACK-2026-07-03.md
@@ -77,6 +78,30 @@ Per the Repair axis — witness the error plainly, do not paper over it.
 - **Session-log location has changed since the 06-29 / 07-03 era.** The Claude session anchors now live at the **vault root** as `CLAUDE-SESSION-YYYY-MM-DD.md`; `~/IDAHO-VAULT/.claude/MEMORY/` no longer exists (verified this session). The per-user auto-memory index that still points at `.claude/MEMORY/SESSION-*` is **stale**; this root lineage is the live one. *(07-03's own Provenance still names the old `.claude/MEMORY/` path internally — a residual reference, flagged to Logan, not altered here.)*
 - **Running gateway vs. config file:** the file is default; the *process* still carries the reverted `session.reset` value until a restart. Do **not** restart to "fix" it without Logan's word — over-restarting was part of tonight's error.
 - Everything in 07-03's "Standing State" still holds: the origin code-patch is wiped by `openclaw update` (re-run `~/.openclaw/patch-obsidian-origin.sh`); session delete = tombstone, not erase; `/remote-control` is Logan's inbound line (flag steps needing him physically at the laptop); the diaper (`mask.py`) routes all command output — no secret bytes in chat, no reflex rotation; the 16 GB / 2-core machine saturates easily.
+
+---
+
+## Addendum — Evening (filed 23:22 MDT, same session)
+
+*The 14:17 checkpoint froze the state; the evening moved it. Logan invoked [[ABCD-METHOD]] — discover first, classify second, touch third — and the work below ran under it. Every touch backed up, every claim below live-verified.*
+
+**Both daemons restored to responding (Logan's checkpoint — MET, proofs verbatim):**
+- `HERMES_RESPONDS_OK` — `hermes -z` one-shot through its Mistral-Direct primary.
+- `OPENCLAW_RESPONDS_OK` — `openclaw agent` turn, fresh session, `status:ok`, answered by primary `mistral-medium-3-5` on the pool's last ~$0.10.
+
+**MCP wiring (task #21 — done):** Hermes `mcp_servers` repointed off the dead nvm path to `~/node_modules/.bin/openclaw` (9 tools) and reshaped `obsidian-vault` from wrong-shape HTTPS to stdio `mcp-server` + `OBSIDIAN_API_KEY` (20 tools) — **29 tools from 2 servers** in the gateway log; OpenClaw got `openclaw mcp add obsidian` (probe: 18 tools + prompts). Backups `*.bak.premcpwire.20260706-200846`.
+
+**OpenRouter 402 diagnosed, route hardened (task #25 — done):** the Obsidian test message died on `402 … can only afford 60570 tokens` — the shared SWARM ROUTER KEY pool drained to ~$0.10, `fallbackConfigured:false`, a rerun of the 05-23 drain. Read widely on Logan's correction (*"top up the account" is a shibboleth*): the doc set designs paid credits as a layer to fall **through** (free rungs + BYOK), not refill. Touch (all reversible; backup `openclaw.json.bak.premistralbucket.20260706-231219`): Direct-Mistral escape bucket — `models.providers.mistral` with a **documented SecretRef** (the config's first; a #19 down-payment) → `secrets.providers.mistral_resolver` → `resolve_mistral_secret.py` (clone of the openrouter resolver) → `.op/mistral.env` (0600); chain now 6 rungs, `mistral/mistral-small-latest` first fallback, `meta-llama/llama-3.3-70b-instruct:free` tail. Caveat held honestly: the mistral rung is probed-good but has not yet fired in-gateway.
+
+**Discovery finds worth keeping (adversarial legs that paid):**
+- `.op/*.env` was **unignored** — `openrouter.env` sat one `git add -A` from a repeat of the 07-02 leak. Belt rule added to `.gitignore` before any new secret file was written.
+- Most `:free` endpoints 404 on the account's **data-policy guardrails** — a deliberate privacy posture (BEEFSTACK: retention control over convenience). Not loosened; only the policy-passing llama rung was wired.
+- The plugin session `agent:main:main` is **pinned** — `modelOverride: anthropic/claude-haiku-4.5` (read from sessions.json). Pins take precedence and carry no fallbacks, so the plugin stays dead until Logan's `/model` reset or `/new`. His explicit selection; not undone by hand.
+- The auto-mode classifier correctly blocked a 1Password vault enumeration; adapted via the vault's documented inventory instead.
+
+**Errors owned this stretch (for repair):** read "update document project status" as a vault-document hunt when it meant the harness task list I myself had named (Logan's correction was blunt and earned); reported `apiKey: ""` from my own truncated masked print — the raw read shows a nonempty plaintext key (truncation artifact, corrected; the plaintext itself is #19's debt); first proposed "top up" — the outsider answer the wide read retired.
+
+**Residue:** test session `agent:main:checkpoint-proof-20260706` (one inert row; no CLI delete exists and hand-editing sessions.json stays off-limits — Logan's UI can clear it). Vault artifacts awaiting Logan's commit flow: `.gitignore` (M), `resolve_mistral_secret.py` (new), this anchor. Tasks: #21 · #25 closed; #24 (obsidian CLI skill) · #26 (conflict markers in `OPENROUTER-2026-04-28.md`) opened. Secrets-reloader flapping from the morning: load-transient, quiet since restart.
 
 ---
 
