@@ -49,7 +49,7 @@ on:
       label:
         description: Only act on PRs with this label (empty = all non-draft PRs)
         required: false
-        default: ''
+        default: ""
 
 jobs:
   arm-merge-queue:
