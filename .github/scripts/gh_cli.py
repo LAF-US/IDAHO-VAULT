@@ -12,6 +12,7 @@ from __future__ import annotations
 
 import subprocess
 
+
 _ALLOWED_EXECUTABLES: set[str] = {"gh"}
 
 
