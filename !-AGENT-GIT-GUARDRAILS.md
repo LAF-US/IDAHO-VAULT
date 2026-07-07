@@ -1,4 +1,4 @@
-# Agent Git Guardrails - Issue & Solutions
+# Agent Git Guardrails - Issues & Solutions
 
 ## Problem Statement
 
@@ -6,7 +6,7 @@ Agents (Vibe CLI, Claude, and others) repeatedly run destructive git commands th
 
 ### Root Cause
 
-Agents misanalyze git history, conclude files need to be "scrubbed" from history, then run history-rewriting commands (git filter-branch, git filter-repo). These rewrite commit SHAs and break remote tracking. The agents analysis is often wrong - false positives on file existence in history.
+Agents misanalyze git history, conclude files need to be "scrubbed" from history, then run history-rewriting commands (git filter-branch, git filter-repo). These rewrite commit SHAs and break remote tracking. The agents' analysis is often wrong - false positives on file existence in history.
 
 ## Proposed Solutions
 
@@ -20,12 +20,12 @@ git remote add origin https://github.com/LAF-US/IDAHO-VAULT.git 2>/dev/null; git
 
 ### Solution 2: Automatic Guardrail Wrapper
 
-Create ~/bin/git-guard:
+Create ~/bin/git (the wrapper must be named `git`, not `git-guard` — PATH lookup resolves whatever command name was typed, so a differently-named script never intercepts plain `git ...` invocations no matter where it sits on PATH):
 
 ```bash
 #!/bin/sh
 REPO_URL="https://github.com/LAF-US/IDAHO-VAULT.git"
-if [ -d .git ] && grep -q "IDAHO-VAULT" .git/config 2>/dev/null; then
+if [ -d .git ] && [ "$(basename "$(git rev-parse --show-toplevel 2>/dev/null)")" = "IDAHO-VAULT" ]; then
   if ! git remote | grep -q origin; then
     git remote add origin "$REPO_URL"
     git fetch origin 2>/dev/null
@@ -36,6 +36,8 @@ exec /usr/bin/git "$@"
 ```
 
 Prepend to PATH: export PATH="$HOME/bin:$PATH"
+
+Note: the repo-detection condition can't grep `.git/config` for the remote URL — `git remote remove origin` deletes that config section, so the guard would read "not this repo" precisely when the remote needs restoring. Matching on the toplevel working-tree directory name instead survives the remote being removed.
 
 ## Why Not Block Commands?
 
