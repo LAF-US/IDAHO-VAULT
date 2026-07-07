@@ -89,11 +89,21 @@ jobs:
 
           RESULT=$(echo "$CHANGED" | python3 trusted-main/.github/scripts/classify_paths.py)
           TIER=$(echo "$RESULT" | python3 -c "import sys,json; print(json.load(sys.stdin)['tier'])")
+          # tier4 is the 4-state verdict (clear|low|med|high) off the 3x3 matrix of label
+          # pairs. The binary `tier` collapses the `—/—` pair down to `low`, so it is only
+          # visible on tier4 — the producer needs it for the legacy sparse marker.
+          TIER4=$(echo "$RESULT" | python3 -c "import sys,json; print(json.load(sys.stdin)['tier4'])")
+          # K6/#632: the two independent analyses — the lane IS this label pair.
+          FILETYPE=$(echo "$RESULT" | python3 -c "import sys,json; print(json.load(sys.stdin)['filetype'] or '—')")
+          DEPTH=$(echo "$RESULT" | python3 -c "import sys,json; print(json.load(sys.stdin)['depth'] or '—')")
           echo "tier=$TIER" >> "$GITHUB_OUTPUT"
+          echo "tier4=$TIER4" >> "$GITHUB_OUTPUT"
+          echo "filetype=$FILETYPE" >> "$GITHUB_OUTPUT"
+          echo "depth=$DEPTH" >> "$GITHUB_OUTPUT"
 
           echo "### Changed files" >> "$GITHUB_STEP_SUMMARY"
           echo "$CHANGED" >> "$GITHUB_STEP_SUMMARY"
-          echo "### Risk tier: $TIER" >> "$GITHUB_STEP_SUMMARY"
+          echo "### Lane: {filetype:risk/$FILETYPE & depth:risk/$DEPTH} (tier: $TIER, tier4: $TIER4)" >> "$GITHUB_STEP_SUMMARY"
 
       - name: Check for existing PR
         if: steps.gate.outputs.skip != 'true' && steps.classify.outputs.skip != 'true'
@@ -126,6 +136,9 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           RISK_TIER: ${{ steps.classify.outputs.tier }}
+          RISK_TIER4: ${{ steps.classify.outputs.tier4 }}
+          RISK_FILETYPE: ${{ steps.classify.outputs.filetype }}
+          RISK_DEPTH: ${{ steps.classify.outputs.depth }}
           BRANCH_NAME: ${{ steps.gate.outputs.branch_name }}
         shell: bash
         run: |
@@ -142,10 +155,28 @@ jobs:
           AGENT=$(echo "$BRANCH_NAME" | sed 's|/.*||')
           DIFFSTAT=$(git diff --stat origin/main...HEAD)
 
-          if [ "$RISK_TIER" = "low" ]; then
+          # K6/#632: stamp the LANE — the pair of axis labels, one per independent
+          # analysis. The `—/—` pair arms on open (K3/#629); a fired flag routes the PR
+          # into its review lane and is consumed when that review completes. The legacy
+          # sparse marker (risk/— | risk/low | risk/high) is kept in sync during the
+          # transition (dependabot-rhythm keys on risk/high); the pair takes precedence.
+          PAIR_FT_LABEL="filetype:risk/$RISK_FILETYPE"
+          PAIR_DP_LABEL="depth:risk/$RISK_DEPTH"
+          if [ "$RISK_TIER4" = "clear" ]; then
+            RISK_LABEL="risk/—"
+            LABEL=""
+            LABEL_MARKER="risk/—"
+          elif [ "$RISK_TIER4" = "low" ]; then
+            RISK_LABEL="risk/low"
             LABEL="review/pending"
             LABEL_MARKER="$LABEL"
+          elif [ "$RISK_TIER4" = "med" ]; then
+            # med: the pair itself holds the lane; no legacy flag exists for med.
+            RISK_LABEL=""
+            LABEL=""
+            LABEL_MARKER="none"
           else
+            RISK_LABEL="risk/high"
             LABEL=""
             LABEL_MARKER="none"
           fi
@@ -172,8 +203,12 @@ jobs:
             --body "$BODY"
             --base main
             --head "$BRANCH_NAME"
-            --label "risk/$RISK_TIER"
+            --label "$PAIR_FT_LABEL"
+            --label "$PAIR_DP_LABEL"
           )
+          if [ -n "$RISK_LABEL" ]; then
+            CREATE_ARGS+=(--label "$RISK_LABEL")
+          fi
           if [ -n "$LABEL" ]; then
             CREATE_ARGS+=(--label "$LABEL")
           fi
@@ -217,9 +252,20 @@ jobs:
           python3 trusted-main/.github/scripts/pr_lifecycle.py set-state --pr-number "$PR_NUM" --state staged
 
       - name: Log grace period start
-        if: steps.gate.outputs.skip != 'true' && steps.classify.outputs.skip != 'true' && steps.check-pr.outputs.pr_exists != 'true' && steps.classify.outputs.tier == 'low'
+        # Only a true machine-doc low verdict (tier4 == 'low') carries review/pending. The
+        # binary tier collapses the clear pair to 'low' too, so gate on tier4 to avoid
+        # claiming review/pending on a clear PR that was actually stamped `risk/—`.
+        if: steps.gate.outputs.skip != 'true' && steps.classify.outputs.skip != 'true' && steps.check-pr.outputs.pr_exists != 'true' && steps.classify.outputs.tier4 == 'low'
         shell: bash
         run: |
           echo "Lifecycle set to \`lifecycle/staged\`." >> "$GITHUB_STEP_SUMMARY"
           echo "Low-risk PR created with \`review/pending\`." >> "$GITHUB_STEP_SUMMARY"
           echo "Agent-authored PRs remain reviewable and require an explicit merge decision." >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Log clear-pair auto-merge
+        # The —/— pair is armed for auto-merge on open (K3/#629, K4/#630).
+        if: steps.gate.outputs.skip != 'true' && steps.classify.outputs.skip != 'true' && steps.check-pr.outputs.pr_exists != 'true' && steps.classify.outputs.tier4 == 'clear'
+        shell: bash
+        run: |
+          echo "Lifecycle set to \`lifecycle/staged\`." >> "$GITHUB_STEP_SUMMARY"
+          echo "Clear pair (\`—/—\`): stamped \`risk/—\` and armed for auto-merge on open." >> "$GITHUB_STEP_SUMMARY"

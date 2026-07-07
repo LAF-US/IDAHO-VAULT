@@ -103,6 +103,37 @@ DEFAULT_AUTO_MERGE_LABEL = "merge/auto"
 DEFAULT_SUGGESTIONS_LABEL = "review/suggestions-ready"
 RISK_LOW_LABEL = "risk/low"
 RISK_HIGH_LABEL = "risk/high"
+# K4/#630: the positive `—/—` marker — the label pair where NEITHER analysis fired.
+# Stamped ONLY when classify scored a PR clear. Per Logan's invariant it is MUTUALLY EXCLUSIVE with every
+# risk/* flag — a PR carries `risk/—` XOR a flag, never both.
+RISK_CLEAR_LABEL = "risk/—"
+RISK_FLAG_LABELS = frozenset({RISK_LOW_LABEL, RISK_HIGH_LABEL})
+
+# K6/#632 (norm set by Logan, 2026-07-06): the lanes ARE the nine label pairs. Every PR
+# carries exactly TWO axis labels — one per independent analysis — and the pair is the
+# lane (the 3x3 matrix of label pairs):
+#   filetype axis: filetype:risk/— | filetype:risk/low | filetype:risk/med
+#   depth axis:    depth:risk/—    | depth:risk/high   | depth:risk/nope
+# Flags are TRANSIENT ROUTING STATE, never a verdict: the classifier restamps the pair on
+# synchronize (labels mirror the current diff), and when the lane's review completes the
+# engine clears the fired flag (restamps that axis to its `—`) and the PR flows.
+# depth:risk/nope is never auto-cleared — the still point asks for the sovereign's own hand.
+# The sparse single labels above (risk/low, risk/high, risk/—) are the LEGACY vocabulary,
+# still recognized as a fallback and still stamped during the transition (dependabot-rhythm
+# keys on risk/high); the pair takes precedence when present.
+FILETYPE_AXIS_PREFIX = "filetype:risk/"
+DEPTH_AXIS_PREFIX = "depth:risk/"
+AXIS_DASH = "—"
+FILETYPE_PAIR_LABELS = {
+    None: FILETYPE_AXIS_PREFIX + AXIS_DASH,
+    "low": FILETYPE_AXIS_PREFIX + "low",
+    "med": FILETYPE_AXIS_PREFIX + "med",
+}
+DEPTH_PAIR_LABELS = {
+    None: DEPTH_AXIS_PREFIX + AXIS_DASH,
+    "high": DEPTH_AXIS_PREFIX + "high",
+    "nope": DEPTH_AXIS_PREFIX + "nope",
+}
 AUTO_MERGE_AUTHZ_FRAGMENTS = (
     "Pull request User is not authorized for this protected branch "
     "(enablePullRequestAutoMerge)",
@@ -149,6 +180,35 @@ LABEL_SPECS: dict[str, tuple[str, str]] = {
     RISK_HIGH_LABEL: (
         "E99695",
         "Risk tier: high (at least one high-risk path changed).",
+    ),
+    RISK_CLEAR_LABEL: (
+        "0E8A16",
+        "The —/— label pair: neither analysis fired; auto-merge on open. Mutually exclusive with risk/*.",
+    ),
+    # K6 pair vocabulary — one label per axis, the pair is the lane.
+    FILETYPE_PAIR_LABELS[None]: (
+        "0E8A16",
+        "Filetype analysis: — (prose/NL; no flag fired on this axis).",
+    ),
+    FILETYPE_PAIR_LABELS["low"]: (
+        "C2E0C6",
+        "Filetype analysis: low (machine documentation / inert assets).",
+    ),
+    FILETYPE_PAIR_LABELS["med"]: (
+        "F9D0C4",
+        "Filetype analysis: med (computer code — executes).",
+    ),
+    DEPTH_PAIR_LABELS[None]: (
+        "0E8A16",
+        "Placement analysis: — (outside the Nest, off every protected surface).",
+    ),
+    DEPTH_PAIR_LABELS["high"]: (
+        "E99695",
+        "Placement analysis: high (Nest depth or protected surface).",
+    ),
+    DEPTH_PAIR_LABELS["nope"]: (
+        "B60205",
+        "Placement analysis: nope (the still point — the sovereign's own hand, never auto).",
     ),
 }
 
@@ -256,9 +316,15 @@ def _arm_auto_merge(owner: str, repo: str, pr_number: int) -> tuple[bool, str | 
         return (True, None)
     if not enabled:
         try:
-            _run(
-                ["gh", "pr", "merge", str(pr_number), "--squash", "--delete-branch", "--auto"]
-            )
+            # K5/#631 (norm set 2026-07-06): the merge QUEUE's configured method is the
+            # single merge-method norm. gh syntax requires a method flag, but on a
+            # merge-queue repo the queue overrides it — `--merge` is the one canonical,
+            # inert spelling everywhere (test_workflow_security_invariants enforces it).
+            # NO --delete-branch: gh rejects it outright on merge-queue repos
+            # ("Cannot use `-d` or `--delete-branch` when merge queue enabled"),
+            # which crashed every arm attempt. Head-branch cleanup belongs to the
+            # repo's delete-on-merge behavior / branch-cleanup workflow, not here.
+            _run(["gh", "pr", "merge", str(pr_number), "--merge", "--auto"])
         except RuntimeError as exc:
             if not any(fragment in str(exc) for fragment in AUTO_MERGE_AUTHZ_FRAGMENTS):
                 raise
@@ -826,14 +892,172 @@ def _parse_body_marker_value(body: str, marker: str) -> str | None:
 
 def _risk_tier_for_pr(body: str, labels: set[str]) -> str:
     # Label is canonical: survives body rewrites by human or agent editors.
+    #
+    # A risk/* flag ALWAYS wins over the clear marker. Per the K4/#630 invariant the
+    # two are mutually exclusive — `risk/—` XOR a flag — so if a flag is somehow present
+    # alongside risk/—, a sorter DID fire and the PR is not clear. Resolving flag-first
+    # fails safe (hold, never auto-merge); the loud-failing exclusion check lives in
+    # `_assert_risk_marker_exclusive` and the tests.
     if RISK_HIGH_LABEL in labels:
         return "high"
     if RISK_LOW_LABEL in labels:
         return "low"
-    # Fallback for older PRs or states where risk is not yet labeled.
-    if DEFAULT_REVIEW_PENDING_LABEL in labels:
-        return "low"
+    # Positive clear marker (the —/— label pair): the ONLY state that arms auto-merge (K3/#629).
+    # Absence of this marker is NOT classified-clear — an unmarked PR HOLDS (K4/#630).
+    if RISK_CLEAR_LABEL in labels:
+        return "clear"
     return "unknown"
+
+
+class RiskMarkerInvariantError(ValueError):
+    """The K4 risk-marker invariant was violated: `risk/—` alongside a risk/* flag.
+
+    A dedicated type (not a bare ValueError) so callers can catch EXACTLY this breach
+    and never mistake an unrelated ValueError from the evaluate path for an invariant
+    violation. Subclasses ValueError so existing broad handlers still degrade safely."""
+
+
+def _assert_risk_marker_exclusive(labels: set[str]) -> None:
+    """Fail loud on the one state the K4 invariant forbids: `risk/—` alongside a flag.
+
+    The clear marker means "no sorter fired"; a risk/* flag means one did. Both at once
+    is a producer/backfill bug, not a routing decision — raise so it can never silently
+    auto-merge a PR that a sorter actually flagged."""
+    if RISK_CLEAR_LABEL in labels and (labels & RISK_FLAG_LABELS):
+        collision = sorted(labels & (RISK_FLAG_LABELS | {RISK_CLEAR_LABEL}))
+        raise RiskMarkerInvariantError(
+            f"risk-marker invariant violated: {RISK_CLEAR_LABEL} is mutually exclusive "
+            f"with risk/* flags, but this PR carries {collision}. A clear PR carries "
+            f"{RISK_CLEAR_LABEL} XOR a flag, never both."
+        )
+
+
+def _axis_flag(labels: set[str], prefix: str, axis_name: str) -> tuple[bool, str | None]:
+    """Parse ONE axis's label off the K6 pair vocabulary.
+
+    Returns ``(marked, flag)``: ``marked`` is True iff the axis carries a pair label at
+    all; ``flag`` is None for the axis's `—` or the fired value. More than one label on
+    a single axis is the per-axis mutual-exclusion breach — fail loud, never route."""
+    values = sorted({label[len(prefix):] for label in labels if label.startswith(prefix)})
+    if len(values) > 1:
+        raise RiskMarkerInvariantError(
+            f"risk-pair invariant violated: the {axis_name} axis carries "
+            f"{[prefix + v for v in values]}. Each axis carries exactly ONE label — "
+            f"its `{AXIS_DASH}` XOR its fired flag, never both."
+        )
+    if not values:
+        return (False, None)
+    value = values[0]
+    return (True, None if value == AXIS_DASH else value)
+
+
+def _risk_pair_for_pr(labels: set[str]) -> tuple[str | None, str | None, bool]:
+    """(filetype_flag, depth_flag, fully_marked) — the K6 lane, read off the label pair.
+
+    Falls back per-axis to the legacy sparse vocabulary (risk/low, risk/high, risk/—)
+    during the transition. ``fully_marked=False`` means at least one axis carries no
+    information — and an unmarked axis is NOT classified-clear (K4): the PR holds."""
+    ft_marked, ft = _axis_flag(labels, FILETYPE_AXIS_PREFIX, "filetype")
+    dp_marked, dp = _axis_flag(labels, DEPTH_AXIS_PREFIX, "depth")
+    # Legacy fallback: each sparse label was a COMPLETE single-label verdict, so any one
+    # of them marks BOTH axes (risk/low meant "filetype low, placement clear"; risk/high
+    # meant "placement risk"; risk/— meant both analyses clear). The restamp corrects the
+    # pair from the classifier on the next pass either way.
+    if not (ft_marked and dp_marked):
+        if RISK_HIGH_LABEL in labels:
+            if not dp_marked:
+                dp = "high"
+            ft_marked = dp_marked = True
+        elif RISK_LOW_LABEL in labels:
+            if not ft_marked:
+                ft = "low"
+            ft_marked = dp_marked = True
+        elif RISK_CLEAR_LABEL in labels:
+            # The K4 sparse clear marker asserts BOTH analyses scored clear.
+            ft_marked = dp_marked = True
+    return (ft, dp, ft_marked and dp_marked)
+
+
+def _tier_from_pair(filetype_flag: str | None, depth_flag: str | None, marked: bool) -> str:
+    """Collapse a lane pair to the single-tier vocabulary (nope>high>med>low>clear);
+    an incompletely marked PR is `unknown` and HOLDS."""
+    if not marked:
+        return "unknown"
+    if depth_flag == "nope":
+        return "nope"
+    if depth_flag == "high":
+        return "high"
+    if filetype_flag == "med":
+        return "med"
+    if filetype_flag == "low":
+        return "low"
+    return "clear"
+
+
+def _classify_pr_pair(owner: str, repo: str, pr_number: int) -> tuple[str | None, str | None]:
+    """Run the two parallel analyses (classify_paths) over the PR's changed files.
+
+    The classifier is the SINGLE source of both axes (K1/K2); this is the engine-side
+    bridge that lets the restamp mirror the current diff on synchronize. Raises on any
+    API/import failure — callers fail SAFE by keeping the existing labels (a PR is never
+    armed off a failed classification; an unmarked PR holds)."""
+    import classify_paths  # sibling module; scripts dir is on sys.path in script + test runs
+
+    result = _run(
+        [
+            "gh", "api", "--paginate",
+            f"repos/{owner}/{repo}/pulls/{pr_number}/files",
+            "--jq", ".[].filename",
+        ]
+    )
+    paths = [line.strip() for line in result.stdout.splitlines() if line.strip()]
+    filetype = None
+    depth = None
+    for path in paths:
+        ft, dp = classify_paths.classify_file(path)
+        filetype = classify_paths.riskiest(filetype, ft)
+        depth = classify_paths.riskiest(depth, dp)
+    return (filetype, depth)
+
+
+def restamp_risk_pair(
+    pr_number: int,
+    labels: set[str],
+    filetype_flag: str | None,
+    depth_flag: str | None,
+) -> list[str]:
+    """Make the PR's risk labels mirror the classifier's verdict — the K6 'restamp'.
+
+    Stamps the axis pair AND keeps the legacy sparse vocabulary in sync during the
+    transition (dependabot-rhythm still keys on risk/high; the K4 global exclusion —
+    risk/— XOR flags — holds by construction because the derived tier is single-valued).
+    Mutates ``labels`` in place and returns the actions taken."""
+    actions: list[str] = []
+    tier = _tier_from_pair(filetype_flag, depth_flag, True)
+    desired = {FILETYPE_PAIR_LABELS[filetype_flag], DEPTH_PAIR_LABELS[depth_flag]}
+    if tier == "clear":
+        desired.add(RISK_CLEAR_LABEL)
+    elif tier == "low":
+        desired.add(RISK_LOW_LABEL)
+    elif tier in ("high", "nope"):
+        desired.add(RISK_HIGH_LABEL)
+    # tier == "med": no legacy flag — binary-legacy high meant placement risk; the med
+    # lane holds via the pair itself during the transition.
+    managed = (
+        set(FILETYPE_PAIR_LABELS.values())
+        | set(DEPTH_PAIR_LABELS.values())
+        | RISK_FLAG_LABELS
+        | {RISK_CLEAR_LABEL}
+    )
+    for label in sorted(desired - labels):
+        _edit_label(pr_number, add=label)
+        labels.add(label)
+        actions.append(f"add:{label}")
+    for label in sorted((labels & managed) - desired):
+        _edit_label(pr_number, remove=label)
+        labels.discard(label)
+        actions.append(f"remove:{label}")
+    return actions
 
 
 def evaluate_review_state(
@@ -878,11 +1102,34 @@ def evaluate_review_state(
     review_decision = pr.get("reviewDecision")
     draft = bool(pr.get("isDraft"))
     blocking_review = review_decision == "CHANGES_REQUESTED"
-    risk_tier = _risk_tier_for_pr(pr.get("body") or "", label_names)
+    _assert_risk_marker_exclusive(label_names)
+    # K6/#632: the lane is the label PAIR (filetype axis x depth axis), with per-axis
+    # legacy fallback during the transition. The derived single tier keeps the old
+    # vocabulary alive for reports/consumers.
+    filetype_flag, depth_flag, pair_marked = _risk_pair_for_pr(label_names)
+    risk_tier = _tier_from_pair(filetype_flag, depth_flag, pair_marked)
+    is_clear = risk_tier == "clear"
     low_risk = risk_tier == "low"
     merge_blocked = draft or blocking_review or current_unresolved > 0
+    # K6 lane completion — flags are transient routing state, consumed as the PR clears
+    # its lane: an approving review with no current threads completes the lane, the
+    # engine clears the fired flag (projection restamps that axis to `—`), and the PR
+    # flows. depth:nope is NEVER auto-cleared — the still point is the sovereign's hand.
+    lane_complete = (
+        review_decision == "APPROVED" and current_unresolved == 0 and not draft
+    )
+    flag_clearable = (
+        pair_marked
+        and depth_flag != "nope"
+        and (filetype_flag is not None or depth_flag is not None)
+    )
+    # K3/#629 + K6: the `—/—` pair arms on open; a flagged lane arms once its review
+    # completes (the flag is consumed). nope and any unmarked PR HOLD, always.
     eligible_for_auto_merge = (
-        AGENT_AUTO_MERGE_ENABLED and low_risk and grace_elapsed and not merge_blocked
+        AGENT_AUTO_MERGE_ENABLED
+        and grace_elapsed
+        and not merge_blocked
+        and (is_clear or (lane_complete and flag_clearable))
     )
     should_have_agent_review_pending = (
         AGENT_AUTO_MERGE_ENABLED
@@ -905,6 +1152,11 @@ def evaluate_review_state(
         "labels": sorted(label_names),
         "risk_tier": risk_tier,
         "low_risk": low_risk,
+        "is_clear": is_clear,
+        "pair": {"filetype": filetype_flag, "depth": depth_flag},
+        "pair_marked": pair_marked,
+        "lane_complete": lane_complete,
+        "flag_clearable": flag_clearable,
         "draft": draft,
         "review_decision": review_decision,
         "blocking_review": blocking_review,
@@ -956,6 +1208,15 @@ def apply_review_state_projection(
         _edit_label(pr_number, remove=DEFAULT_PENDING_LABEL)
         actions.append(f"remove:{DEFAULT_PENDING_LABEL}")
         current_labels.discard(DEFAULT_PENDING_LABEL)
+
+    # K6 clear-on-completion: the lane's review completed, so the fired flag is CONSUMED —
+    # restamp each fired axis to its `—` and retire contradicted legacy sparse flags. The
+    # next synchronize (new code) restamps from the classifier and re-enters the lane;
+    # with no new code the cleared pair arms and the PR flows. nope is never touched.
+    if bool(state.get("lane_complete")) and bool(state.get("flag_clearable")):
+        actions.extend(
+            restamp_risk_pair(pr_number, current_labels, None, None)
+        )
 
     if (
         DEFAULT_AUTO_MERGE_LABEL in current_labels
@@ -1069,6 +1330,7 @@ def _build_reconciliation_report(
     promoted: list[int] = []
     rearmed: list[int] = []
     auto_merge_authorization_blocked: list[int] = []
+    invariant_violations: list[dict[str, object]] = []
     total_resolved_outdated_threads = 0
     # Resolve the looker once for the whole batch walk (the engage-outdated pattern): the
     # witness names whoever actually ran the scheduled reconcile — the authenticated actor.
@@ -1084,14 +1346,54 @@ def _build_reconciliation_report(
         if resolved_count:
             pr = _fetch_pr(owner, repo, pr_number)
 
-        state = evaluate_review_state(
-            pr,
-            now=now,
-            grace_minutes=grace_minutes,
-            auto_resolve_reviewers=auto_resolve_reviewers,
-        )
+        try:
+            state = evaluate_review_state(
+                pr,
+                now=now,
+                grace_minutes=grace_minutes,
+                auto_resolve_reviewers=auto_resolve_reviewers,
+            )
+            # K6 restamp (#632) — this sweep IS the backfill automation: every open PR's
+            # risk labels are re-mirrored from the one classifier (pair + legacy kept in
+            # sync), so unmarked/stale-labeled in-flight PRs migrate without a hand-sweep.
+            # Skipped when the lane already completed (its flag was consumed). Fails SAFE
+            # per PR: a classification error leaves that PR's labels untouched.
+            restamp_actions: list[str] = []
+            if not state.get("lane_complete"):
+                try:
+                    ft_flag, dp_flag = _classify_pr_pair(owner, repo, pr_number)
+                except Exception as exc:  # noqa: BLE001 — "do not restamp", never abort
+                    print(
+                        f"::warning::K6 restamp skipped for #{pr_number}: {exc}",
+                        file=sys.stderr,
+                    )
+                else:
+                    label_set = {
+                        node["name"]
+                        for node in (pr.get("labels") or {}).get("nodes") or []
+                        if node.get("name")
+                    }
+                    restamp_actions = restamp_risk_pair(pr_number, label_set, ft_flag, dp_flag)
+                    if restamp_actions:
+                        pr["labels"] = {"nodes": [{"name": name} for name in sorted(label_set)]}
+                        state = evaluate_review_state(
+                            pr,
+                            now=now,
+                            grace_minutes=grace_minutes,
+                            auto_resolve_reviewers=auto_resolve_reviewers,
+                        )
+        except RiskMarkerInvariantError as exc:
+            # The K4/K6 mutual-exclusion invariant tripped on THIS PR. Fail loud — record
+            # it and surface a non-zero exit — but do NOT abort the sweep: one mis-labeled
+            # PR must not starve every other open PR of reconciliation. Scoped to the
+            # dedicated type so an unrelated ValueError still fails the run normally.
+            print(f"::error title=risk-marker invariant::PR #{pr_number}: {exc}", file=sys.stderr)
+            invariant_violations.append({"number": pr_number, "error": str(exc)})
+            evaluated.append({"number": pr_number, "invariant_violation": str(exc)})
+            continue
 
         actions = apply_review_state_projection(pr_number, state)
+        actions.extend(restamp_actions)
         current_labels = set(state["labels"])
         auto_merge_enabled = bool((pr.get("autoMergeRequest") or {}).get("enabledAt"))
         arm_error = None
@@ -1153,6 +1455,7 @@ def _build_reconciliation_report(
         "promoted_prs": promoted,
         "rearmed_prs": rearmed,
         "auto_merge_authorization_blocked": auto_merge_authorization_blocked,
+        "invariant_violations": invariant_violations,
         "resolved_outdated_threads": total_resolved_outdated_threads,
         "evaluated": evaluated,
     }
@@ -1222,6 +1525,36 @@ def sync_pr(args: argparse.Namespace) -> int:
         grace_minutes=args.grace_minutes,
         auto_resolve_reviewers=auto_resolve_reviewers,
     )
+
+    # K6 restamp-on-sync (#632): risk labels mirror the CURRENT diff, from the one
+    # classifier — unless the lane already completed (its flag was consumed; only new
+    # code re-enters the lane). Fails SAFE: a classification error leaves labels
+    # untouched (an unmarked PR holds; nothing arms off a failed classification).
+    restamp_actions: list[str] = []
+    if not state.get("lane_complete"):
+        try:
+            ft_flag, dp_flag = _classify_pr_pair(args.owner, args.repo, args.pr_number)
+        except Exception as exc:  # noqa: BLE001 — any failure means "do not restamp"
+            print(
+                f"::warning::K6 restamp skipped for #{args.pr_number} "
+                f"(classification failed; labels left as-is): {exc}",
+                file=sys.stderr,
+            )
+        else:
+            label_set = {
+                node["name"]
+                for node in (pr.get("labels") or {}).get("nodes") or []
+                if node.get("name")
+            }
+            restamp_actions = restamp_risk_pair(args.pr_number, label_set, ft_flag, dp_flag)
+            if restamp_actions:
+                pr["labels"] = {"nodes": [{"name": name} for name in sorted(label_set)]}
+                state = evaluate_review_state(
+                    pr,
+                    grace_minutes=args.grace_minutes,
+                    auto_resolve_reviewers=auto_resolve_reviewers,
+                )
+
     clear_pending = (
         args.sync_actor in completion_actors and bool(state["has_copilot_apply_pending"])
     )
@@ -1247,6 +1580,7 @@ def sync_pr(args: argparse.Namespace) -> int:
                 "auto_merge_armed": arm_result["armed"],
                 "auto_merge_arm_reason": arm_result["reason"],
                 "label_actions": label_actions,
+                "restamp_actions": restamp_actions,
                 "cleared_copilot_apply_pending": clear_pending,
             }
         )
@@ -1320,7 +1654,8 @@ def promote_ready(args: argparse.Namespace) -> int:
         auto_resolve_reviewers=auto_resolve_reviewers,
     )
     print(json.dumps(report))
-    return 0
+    # Fail loud on any risk-marker invariant violation (see reconcile_open_prs).
+    return 1 if report.get("invariant_violations") else 0
 
 
 def reconcile_open_prs(args: argparse.Namespace) -> int:
@@ -1336,7 +1671,9 @@ def reconcile_open_prs(args: argparse.Namespace) -> int:
         auto_resolve_reviewers=auto_resolve_reviewers,
     )
     print(json.dumps(report))
-    return 0
+    # Fail loud: any risk-marker invariant violation turns the reconcile run red so a
+    # mis-labeled PR can't rot unnoticed. The sweep still processed every other PR above.
+    return 1 if report.get("invariant_violations") else 0
 
 
 def enable_auto_merge(args: argparse.Namespace) -> int:
