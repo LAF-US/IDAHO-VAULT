@@ -529,3 +529,5 @@ idaho-vault-48b78ec18835.json
 C/\Users\loganf\.vibe\logs\session
 C:\Users\loganf\.vibe\logs\session
 /C:\Users\loganf\.vibe\logs\session
+# credential belt: .op runtime env files never commit (templates unaffected)
+.op/*.env
