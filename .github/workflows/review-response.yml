@@ -6,6 +6,7 @@ on:
 
 permissions:
   pull-requests: write
+  issues: write
   # contents: write is required to enable merge-queue auto-merge
   # (enablePullRequestAutoMerge is gated like resolveReviewThread, #546). The
   # review-submitted path arms eligible, non-protected-path PRs when a review clears
