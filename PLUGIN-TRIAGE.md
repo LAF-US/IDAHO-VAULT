@@ -175,7 +175,7 @@ This document consolidates all agented plugin documentation, surfaces the discre
 
 | **Question** | Which frontmatter fields should the Breadcrumbs plugin traverse for navigation? |
 
-| **Options** | A: `related:` only · B: `related:` + `tags:` · C: `related:` + `parent:` · D: All three · E: Logan specifies |
+| **Options** | A: `related:` only ┬╖ B: `related:` + `tags:` ┬╖ C: `related:` + `parent:` ┬╖ D: All three ┬╖ E: Logan specifies |
 
 | **Note** | The zettelkasten address space (19,533 stubs) is built on `related:` links. `parent:` exists in many stubs. Breadcrumbs is the keystone for navigating the graph. |
 
@@ -245,29 +245,29 @@ START
 
        ├─ Count confirmed + JSON provided
 
-       SON provided    │ └─ Claude commits authoritative community-plugins.json
+       │    └─ Claude commits authoritative community-plugins.json
 
-       plugins.json         │ └─ LEVELSET-CURRENT updated → Checkpoint 2
+       │         └─ LEVELSET-CURRENT updated → Checkpoint 2
 
-       ckpoint 2 └─ Count uncertain
+       └─ Count uncertain
 
-            uncertain └─ STOP — Logan reopens Obsidian, checks Settings, returns
+            └─ STOP — Logan reopens Obsidian, checks Settings, returns
 
 
 
   Checkpoint 2 (this session): Breadcrumbs field config
 
-       ld config ├─ Logan answers → Claude commits breadcrumbs/data.json
+       ├─ Logan answers → Claude commits breadcrumbs/data.json
 
-       data.json └─ Logan defers → note deferred; proceed to Checkpoint 3
+       └─ Logan defers → note deferred; proceed to Checkpoint 3
 
 
 
   Checkpoint 3 (can defer): Dormant plugin cleanup
 
-       n cleanup ├─ Yes → Claude executes bulk remove (separate commit)
+       ├─ Yes → Claude executes bulk remove (separate commit)
 
-       e commit) └─ No → note deferred; proceed to Checkpoint 4
+       └─ No → note deferred; proceed to Checkpoint 4
 
 
 
@@ -275,7 +275,7 @@ START
 
        ├─ Logan provides keep list → Claude removes rest (separate commit)
 
-       e commit) └─ Defer → note deferred
+       └─ Defer → note deferred
 
 
 
