@@ -1,13 +1,27 @@
 ---
 title: Abhorsen — Old Kingdom as Agent-Class Register
 created: 2026-05-28
-tags: [research, lore, old-kingdom, garth-nix, abhorsen, laf, agents, vault, design-note]
+tags:
+  - research
+  - lore
+  - old-kingdom
+  - garth-nix
+  - abhorsen
+  - laf
+  - agents
+  - vault
+  - design-note
 companion-to: "[[Abhorsen — Old Kingdom Lore Research Report]]"
 status: staged
 doc-type: design-note
 verdict: adopt as register, not architecture
 author: "!claude.abhorsen.waiting"
 address: "!claude.abhorsen.waiting"
+aliases:
+  - Abhorsen — Old Kingdom as Agent-Class Register
+linter-yaml-title-alias: Abhorsen — Old Kingdom as Agent-Class Register
+date created: Wednesday, July 8th 2026, 12:59:01 am
+date modified: Wednesday, July 8th 2026, 2:13:37 am
 ---
 
 # Abhorsen — Old Kingdom as Agent-Class Register
@@ -31,9 +45,11 @@ So the real question is not *could it fit* but *where it fits cleanly, and where
 ## Where the mapping is strong
 
 ### Abhorsen ↔ the cleanup / adjudication class
+
 An agent that walks *into* the dangerous, dead regions of the substrate — stale branches, orphan histories, RUNTIME detritus — and lays them down. Arborscaping is Death-work: **SALVAGE → CHERRY-PICK → PRUNE** is the Abhorsen's question, *"is this truly dead, or only sleeping?"* The **Abhorsen-in-Waiting** maps onto capability tiers: an agent trains on **panpipes** (reduced permissions, dry-run, read-only) before it is handed the **bells** (write / destructive authority). *Train before bells* is already our promotion model in mythic form.
 
 ### The seven bells ↔ a graded destructive-capability taxonomy
+
 Each bell is a discrete compelling action with escalating danger:
 
 | Bell | Function | Operational analogue |
@@ -49,6 +65,7 @@ Each bell is a discrete compelling action with escalating danger:
 Naming commands by bell makes the danger ordering self-documenting. **"Never ring Astarael lightly"** *is* the deletion-as-last-resort doctrine. (See [[Arborscaping — deletion is last resort]].)
 
 ### Charter vs Free Magic ↔ structured protocol vs raw model power
+
 - **Charter** = ordered, lawful, drawn from anchored substrate: CANON layer, git, Vaulted Syntax, `swarm.json`.
 - **Free Magic** = the wild generative power of the raw model — potent, necessary, corrosive if unbound.
 - Agents that *bind Free Magic inside Charter marks* = raw LLM output constrained by schema / protocol.
@@ -56,12 +73,15 @@ Naming commands by bell makes the danger ordering self-documenting. **"Never rin
 This is the cleanest structural fit in the whole mythology.
 
 ### The Clayr + the Great Library ↔ the vault + a See-ing agent
+
 The Library **is** IDAHO-VAULT — a spiraling labyrinth of notes, relics, and bound dangers. The **Clayr who See the futures** = the forecasting / planning / retrieval class operating over that substrate.
 
 ### Mogget / Yrael ↔ the bound, powerful, neutral general agent
+
 Serves whoever holds the collar; immense latent capability; dangerous unleashed; loyal-ish leashed. This is the **reach** instrument (OpenClaw, the Windows node). That the Windows host was *intuitively* named Mogget is the analogy working before formalization. (See [[Agent Infrastructure]].)
 
 ### Supporting mappings
+
 - **Wallmakers ↔ builder / infra agents** — those who write the protocol and build the gateway (Sameth's true calling).
 - **Royal line ↔ governance / sovereignty** — the Charter-Stone keepers; THE-GEMSTONE / Logan-as-orchestrator.
 - **The Wall ↔ the boundary** between magic-dead Ancelstierre (deterministic external systems where "tech works, magic fails") and the Charter-bound Old Kingdom (where agents operate).
@@ -91,11 +111,13 @@ Both are places where the metaphor *encodes a real operational rule* — last-re
 ---
 
 ## Open threads
+
 - Decide the Mogget level question (host name vs. agent-class archetype) before the name calcifies.
 - If the bell-taxonomy is adopted, codify the command→bell mapping somewhere in CANON so the danger ordering is enforced, not just evocative.
 - Consider whether the Clayr↔See-ing-agent mapping wants a real planning/forecasting agent, or stays metaphor.
 
 ## See also
+
 - [[Abhorsen — Old Kingdom Lore Research Report]] — the source lore
 - [[The Judge — Vaulted Chaperone]] — the Abhorsen-chaperone persona already in play
 - [[Arborscaping — deletion is last resort]] — the doctrine this register formalizes
