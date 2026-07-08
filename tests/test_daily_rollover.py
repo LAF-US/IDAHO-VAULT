@@ -204,6 +204,84 @@ class DailyRolloverTest(unittest.TestCase):
         finally:
             shutil.rmtree(vault_root, ignore_errors=True)
 
+    def test_meaningful_yesterday_content_is_carried_not_skeleton_stamped(self) -> None:
+        """K7 (#714) done-when #1: red if the rollover stamps a skeleton when
+        yesterday held real incomplete work.
+
+        Yesterday's note carries a novel unfinished task that exists nowhere in
+        the master list, plus a completed task. The carry norm's uncontroversial
+        half (the script's own title: "carry incomplete to-dos") requires the
+        unfinished task to reach BOTH today's note and the master list, and the
+        completed task to not resurrect as unchecked. Checkoff-propagation
+        semantics beyond this are the reserved norm (issue #714) and are
+        deliberately not asserted here."""
+        project_root = Path(__file__).resolve().parents[1]
+        vault_root = project_root / "tests" / "_tmp_daily_rollover_carry_case"
+        shutil.rmtree(vault_root, ignore_errors=True)
+        vault_root.mkdir(parents=True, exist_ok=True)
+        try:
+            yesterday_file = vault_root / "2026-07-05.md"
+            todo_file = vault_root / "TO DO LIST.md"
+
+            yesterday_file.write_text(
+                textwrap.dedent(
+                    """\
+                    ---
+                    title: 2026-07-05
+                    yesterday: 2026-07-04
+                    tomorrow: 2026-07-06
+                    ---
+
+                    [[TO DO LIST]]
+
+                    - VAULT
+                    - [ ] CALL THE PLUMBER RE KITCHEN SINK
+                    - [x] RENEW LIBRARY BOOKS
+                    """
+                ),
+                encoding="utf-8",
+            )
+            todo_file.write_text(
+                textwrap.dedent(
+                    """\
+                    ---
+                    title: TO DO LIST
+                    ---
+
+                    ## Active
+
+                    - PERSONAL
+                    - [ ] BANKING AND YNAB
+                    """
+                ),
+                encoding="utf-8",
+            )
+
+            with mock.patch.object(daily_rollover, "VAULT_ROOT", vault_root), mock.patch.object(
+                daily_rollover, "TODO_LIST_FILE", todo_file
+            ), mock.patch.object(
+                sys,
+                "argv",
+                ["daily_rollover.py", "--date", "2026-07-06"],
+            ):
+                daily_rollover.main()
+
+            today_text = (vault_root / "2026-07-06.md").read_text(encoding="utf-8")
+            todo_text = todo_file.read_text(encoding="utf-8")
+
+            # The unfinished task must be carried into today's note, unchecked.
+            self.assertIn("- [ ] CALL THE PLUMBER RE KITCHEN SINK", today_text)
+            # ...and added to the master list ("Tasks left unfinished on a DAY
+            # were not added to here" — the meta-task's own complaint).
+            self.assertIn("CALL THE PLUMBER RE KITCHEN SINK", todo_text)
+            # The completed task must not resurrect as unchecked anywhere.
+            self.assertNotIn("- [ ] RENEW LIBRARY BOOKS", today_text)
+            self.assertNotIn("- [ ] RENEW LIBRARY BOOKS", todo_text)
+            # And the output must not be the no-carry skeleton.
+            self.assertNotIn("*(no incomplete items carried forward)*", today_text)
+        finally:
+            shutil.rmtree(vault_root, ignore_errors=True)
+
     def test_main_rewrites_today_and_active_backlog_without_duplicate_sections(self) -> None:
         project_root = Path(__file__).resolve().parents[1]
         vault_root = project_root / "tests" / "_tmp_daily_rollover_case"
