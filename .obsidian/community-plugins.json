@@ -29,7 +29,6 @@
   "obsidian-advanced-uri",
   "obsidian-full-calendar",
   "dataview-autocompletion",
-  "remotely-save",
   "dataview-serializer",
   "days-since",
   "obsidian-file-cooker",
@@ -42,5 +41,13 @@
   "vault-inspector",
   "smart-context",
   "smart-lookup",
-  "smart-templates"
+  "smart-templates",
+  "beautiful-contact-cards",
+  "backlink-cache",
+  "markdown-attributes",
+  "obsidian-leaflet-plugin",
+  "calendarium",
+  "obsidian-dice-roller",
+  "initiative-tracker",
+  "obsidian-5e-statblocks"
 ]
