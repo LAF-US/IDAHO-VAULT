@@ -205,6 +205,21 @@ class HomoglyphRepairTest(unittest.TestCase):
         self.assertEqual(repairs, [])
         self.assertEqual(len(flags), 1)
 
+    def test_correction_table_guard_pattern(self) -> None:
+        # A dictionary row mapping a look-alike misspelling to its correction
+        # must keep its key: the guard pattern in run_homoglyph_sweep matches
+        # `| observed | repaired |` rows. Verified here at the pattern level.
+        import re as _re
+        specimen = "\u0441ontain"  # Cyrillic es + Latin tail, built from escape
+        line = f"| {specimen} | contain |"
+        self.assertTrue(
+            _re.search(r"\|\s*" + _re.escape(specimen) + r"\s*\|\s*contain\s*\|", line)
+        )
+        prose = f"we {specimen} multitudes"
+        self.assertFalse(
+            _re.search(r"\|\s*" + _re.escape(specimen) + r"\s*\|\s*contain\s*\|", prose)
+        )
+
     def test_repaired_word_is_single_script(self) -> None:
         repairs, _ = checker.find_homoglyph_repairs("t\u0435st \u0441\u0430se")
         self.assertTrue(repairs)

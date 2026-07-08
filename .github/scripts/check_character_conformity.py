@@ -457,9 +457,24 @@ def run_homoglyph_sweep(write: bool) -> int:
         except UnicodeDecodeError:
             continue
         repairs, flags = find_homoglyph_repairs(text)
+        # Table-cell guard (structural, not a file list): a mixed-script word
+        # that is the ENTIRE content of a table cell is data in key position
+        # (e.g. a correction dictionary mapping look-alike misspellings to
+        # fixes; the look-alike IS the payload and "repairing" it destroys
+        # the entry). Whole-cell occupants flag; words inside prose repair.
+        kept_repairs = []
+        for off, observed, fixed in repairs:
+            line_start = text.rfind("\n", 0, off) + 1
+            line_end = text.find("\n", off)
+            line = text[line_start:line_end if line_end != -1 else len(text)]
+            if re.search(r"\|\s*" + re.escape(observed) + r"\s*\|", line):
+                flags.append((off, observed))
+            else:
+                kept_repairs.append((off, observed, fixed))
+        repairs = kept_repairs
         for off, word in flags:
             flagged += 1
-            print(f"  [FLAG] {path}@{off}: {word!r} mixed-script but undecidable; needs human eyes", file=sys.stderr)
+            print(f"  [FLAG] {path}@{off}: {word!r} mixed-script; correction-table key or undecidable; needs human eyes", file=sys.stderr)
         if not repairs:
             continue
         repaired_files += 1
