@@ -13,7 +13,9 @@ related:
 
 *A general program, portable to any LAF-US surface. This document proposes the
 program's shape; the norm decisions inside it are reserved to Logan. Tracking
-issue: #794.*
+issue: #794. On 2026-07-08 Logan ruled N2, N3, and N4 via the Claude Code
+ask-user tool (answers quoted verbatim below); N5 was settled by his framing
+directive at the program's creation; N1 remains open (`*`) — see its entry.*
 
 ---
 
@@ -67,39 +69,47 @@ surface, not its boundary):
    smart-quote or dash variants where the norm says otherwise. Pure policy
    territory: what the norm permits decides what the sweep flags.
 
-## The Norm — Decision Points Reserved to Logan
+## The Norm — Rulings and Open Points
 
-- **N1 — Declared encoding.** UTF-8 without BOM everywhere? Any exempt
-  surfaces beyond binary formats?
-- **N2 — Chamber sovereignty vs. conformity.** Most current offenders are
-  `.*/` dotfolder chambers — personal agent surfaces under CONSTITUTION § I
-  handle-with-care. Candidate postures, one to be chosen: **(a) override** —
-  bytes are infrastructure, not voice; encoding conformity applies everywhere
-  and chamber *content* is never altered, only its byte representation;
-  **(b) consent** — chambers are swept only after a per-chamber notice window
-  (a flag file or issue mention) passes without objection; **(c) exempt** —
-  chambers are excluded from the sweep and only warned on, accepting that
-  strict readers will keep crashing on them.
-- **N3 — Codepoint policy.** Are homoglyphs categorically nonconforming in
-  prose? Are typographic characters (em-dash, curly quotes) welcome as
-  *UTF-8 codepoints* — the vault's own style is em-dash-heavy — with only
-  their *mis-encodings* swept? Sub-question: do **verbatim exhibits** (quoted
-  lyrics, witnessed external text) get normalized or preserved byte-exact?
-  Precedent cuts both ways — #638 normalized Cyrillic homoglyphs *inside* a
-  lyric exhibit deliberately; a fidelity-first reading would have kept them
-  and flagged instead.
-- **N4 — Mojibake repair authority.** Layer-1 re-encoding is provably
-  reversible; layer-2 mojibake repair is interpretive. Per-file human review,
-  or a well-tested heuristic pass with the diff as the record? Candidate
-  limits if heuristics are allowed: in-scope only the closed families of
+Rulings N2–N4 were given by Logan on 2026-07-08 through the Claude Code
+ask-user tool in the live session (`session_01Fipj4vEJ5ADPuunn9ed5Hd`);
+each answer is quoted verbatim. N5 was settled earlier by his framing
+directive. N1 is **open**.
+
+- **N1 — Declared encoding. OPEN (`*`).** The question — UTF-8 without BOM
+  everywhere? any exempt surfaces beyond binary formats? — was asked twice
+  through the ask-user tool on 2026-07-08. Both recorded responses consisted
+  of a single FULLWIDTH FULL STOP character (U+FF0E): first `(．)`, then
+  `．`. That matches none of the offered options and is not interpretable as
+  a ruling, so per the Restraint axis it is recorded here as a gap, not
+  guessed at. The layer-1 sweep and the checker's encoding gate wait on N1.
+- **N2 — Chamber sovereignty vs. conformity. RULED: override.** Logan's
+  answer: **"Override (Recommended)"** — of the candidate postures
+  (override / consent / exempt), the override posture governs: bytes are
+  infrastructure, not voice; encoding conformity applies everywhere,
+  including `.*/` dotfolder chambers, and chamber *content* is never
+  altered — only its byte representation.
+- **N3 — Codepoint policy (exhibits sub-question). RULED: normalize
+  exhibits too.** Logan's answer: **"Normalize exhibits too"** — the #638
+  precedent (Cyrillic homoglyphs normalized *inside* a lyric exhibit)
+  generalizes: verbatim exhibits are normalized like any other prose, not
+  preserved byte-exact. The remaining N3 body (whether homoglyphs are
+  categorically nonconforming; whether typographic characters are welcome
+  as UTF-8 codepoints with only their mis-encodings swept) follows the
+  direction this ruling sets but has not been separately enumerated.
+- **N4 — Mojibake repair authority. RULED: bounded heuristics.** Logan's
+  answer: **"Bounded heuristics (Recommended)"** — heuristic repair is
+  allowed within the stated limits: in-scope only the closed families of
   known double-decode artifacts (UTF-8 read as cp1252/latin-1 and re-saved —
   the `â€"`/`Ã©` class), applied only where the repaired text round-trips
   back to the observed bytes; everything else — ambiguous sequences,
-  exhibits, anything that fails the round-trip proof — flagged for human
-  eyes, never auto-repaired.
-- **N5 — Portability.** The apparatus is written repo-agnostic (a checker and
-  a sweeper any LAF-US repo can adopt), with `IDAHO-VAULT` merely its first
-  deployment — confirm or narrow.
+  anything that fails the round-trip proof — flagged for human eyes, never
+  auto-repaired.
+- **N5 — Portability. SETTLED by directive.** Logan's directive at the
+  program's creation (2026-07-07): the program is *"general, not specific
+  to this repo."* The apparatus is written repo-agnostic (a checker and a
+  sweeper any LAF-US repo can adopt), with `IDAHO-VAULT` merely its first
+  deployment.
 
 ## Prescription and Enforcement (falls out of the answers)
 
