@@ -1,16 +1,17 @@
 #!/usr/bin/env python3
 """
-Phone Link Intake — moves files from the Phone Link download folder
+Phone Link Intake - moves files from the Phone Link download folder
 directly into the vault root.
 
 Usage:
     python .github/scripts/phone_link_intake.py [OPTIONS]
 
 Options:
-    --source PATH     Override the Phone Link folder path
-    --dry-run         Show what would happen without moving files
-    --copy            Copy instead of move (preserve originals)
-    --git-add         Stage ingested files with git add
+    --source PATH      Override the Phone Link folder path
+    --vault-root PATH  Override the destination vault root
+    --dry-run          Show what would happen without moving files
+    --copy             Copy instead of move (preserve originals)
+    --git-add          Stage ingested files with git add
 
 Designed for local use on Logan's Windows laptop.
 """
@@ -19,9 +20,9 @@ from __future__ import annotations
 
 import argparse
 import hashlib
+import os
 import shutil
 import subprocess
-import sys
 from datetime import datetime
 from pathlib import Path
 
@@ -29,8 +30,15 @@ from pathlib import Path
 DEFAULT_SOURCE = Path(r"C:\Users\loganf\Downloads\Phone Link")
 
 
-def get_vault_root() -> Path:
-    """Find the vault root by walking up from this script's location."""
+def get_vault_root(explicit_root: Path | None = None) -> Path:
+    """Resolve the vault root from explicit config, env var, then script location."""
+    if explicit_root is not None:
+        return explicit_root.resolve()
+
+    env_root = os.environ.get("IDAHO_VAULT_ROOT")
+    if env_root:
+        return Path(env_root).resolve()
+
     script_dir = Path(__file__).resolve().parent
     vault_root = script_dir.parent.parent
     if not (vault_root / ".git").exists():
@@ -68,6 +76,7 @@ def resolve_destination(filepath: Path, vault_root: Path) -> tuple[Path | None, 
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description="Phone Link -> Vault intake")
     parser.add_argument("--source", type=Path, default=DEFAULT_SOURCE, help="Phone Link folder path")
+    parser.add_argument("--vault-root", type=Path, help="Destination vault root")
     parser.add_argument("--dry-run", action="store_true", help="Preview without moving files")
     parser.add_argument("--copy", action="store_true", help="Copy instead of move")
     parser.add_argument("--git-add", action="store_true", help="Stage ingested files with git add")
@@ -83,7 +92,7 @@ def main(argv: list[str] | None = None) -> int:
         print(f"Source is not a directory: {source}")
         return 1
 
-    vault_root = get_vault_root()
+    vault_root = get_vault_root(args.vault_root)
     files = sorted(f for f in source.iterdir() if f.is_file())
 
     if not files:
