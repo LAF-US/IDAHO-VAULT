@@ -50,6 +50,8 @@ def _strip_fingerprint(body: str) -> str:
 
 
 def ensure_body_fingerprint(body_file: Path) -> str:
+    if ".." in str(body_file):
+        raise Exception("Invalid file path")
     body = body_file.read_text(encoding="utf-8")
     canonical_body = _strip_fingerprint(body)
     digest = hashlib.sha256(canonical_body.encode("utf-8")).hexdigest()
