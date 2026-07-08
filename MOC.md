@@ -2,13 +2,6 @@
 tags:
   - MOCs
 date created: Sunday, May 17th 2026, 11:25:03 pm
-date modified: Tuesday, July 7th 2026, 8:44:11 pm
-title: MOC
-aliases:
-  - MOC
-linter-yaml-title-alias: MOC
+date modified: Wednesday, June 17th 2026, 1:30:22 pm
 ---
-
-# MOC
-
 [[map of content]]

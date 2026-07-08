@@ -61,10 +61,10 @@
     "status": "active",
     "authority_boundary": "Obsidian config files define interface state; the plugin registry document defines doctrine and promotion rules.",
     "current_state": {
-      "enabled_community_count": 58,
+      "enabled_community_count": 53,
       "enabled_core_count": 31,
-      "installed_community_count": 71,
-      "dormant_installed_count": 13,
+      "installed_community_count": 72,
+      "dormant_installed_count": 19,
       "enabled_missing_manifest_count": 0
     },
     "entrypoints": [
@@ -112,19 +112,15 @@
       "tipa-support",
       "obsidian-leaflet-plugin",
       "initiative-tracker",
-      "obsidian-5e-statblocks",
       "obsidian-footnotes",
       "markdown-attributes",
       "metadata-menu",
       "vault-inspector",
       "text-extractor",
-      "homepage",
       "letterboxd-rss-sync",
       "export-graph-view",
       "obsidian-mind-map",
-      "heatmap-calendar",
       "smart-templates",
-      "smart-context",
       "smart-connections",
       "obsidian-advanced-uri",
       "ai-image-analyzer",
@@ -134,7 +130,6 @@
       "smart-lookup",
       "nexus-ai-chat-importer",
       "beautiful-contact-cards",
-      "calendarium",
       "dataview-serializer",
       "breadcrumbs",
       "calendar",
@@ -606,6 +601,12 @@
         "path": ".obsidian/plugins/obsidian-footnotes/manifest.json"
       },
       {
+        "id": "obsidian-full-calendar",
+        "name": "Full Calendar",
+        "version": "0.10.7",
+        "path": ".obsidian/plugins/obsidian-full-calendar/manifest.json"
+      },
+      {
         "id": "obsidian-git",
         "name": "Git",
         "version": "2.38.5",
@@ -799,17 +800,23 @@
       }
     ],
     "dormant_installed_plugins": [
+      "calendarium",
       "cmdr",
       "dataview-properties",
       "desk",
       "editing-toolbar",
       "handwritten-notes",
+      "heatmap-calendar",
+      "homepage",
       "loom",
       "make-md",
       "msg-handler",
+      "obsidian-5e-statblocks",
       "obsidian-dice-roller",
+      "obsidian-full-calendar",
       "obsidian-kanban",
       "obsidian42-brat",
+      "smart-context",
       "table-editor-obsidian",
       "translate"
     ],
