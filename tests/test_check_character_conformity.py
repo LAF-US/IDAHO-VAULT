@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import importlib.util
 import sys
+import tempfile
 import unittest
 from pathlib import Path
 
@@ -47,6 +48,29 @@ class GateClassificationTest(unittest.TestCase):
 
     def test_declared_text_without_nul_is_text(self) -> None:
         self.assertEqual(checker.classify(TEXT, "plain — prose".encode("utf-8")), "text")
+
+
+class PathContainmentTest(unittest.TestCase):
+    def test_repo_relative_path_is_allowed(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp).resolve()
+            (root / "note.md").write_bytes(b"x")
+            self.assertEqual(checker.contained_path(root, "note.md"), root / "note.md")
+
+    def test_traversal_and_absolute_paths_are_refused(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp).resolve()
+            self.assertIsNone(checker.contained_path(root, "../outside.md"))
+            self.assertIsNone(checker.contained_path(root, "/etc/hostname"))
+            self.assertIsNone(checker.contained_path(root, "a/../../outside.md"))
+
+    def test_symlink_escaping_root_is_refused(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp, tempfile.TemporaryDirectory() as other:
+            root = Path(tmp).resolve()
+            outside = Path(other).resolve() / "target.md"
+            outside.write_bytes(b"x")
+            (root / "link.md").symlink_to(outside)
+            self.assertIsNone(checker.contained_path(root, "link.md"))
 
 
 class EncodingFindingsTest(unittest.TestCase):

@@ -61,6 +61,30 @@ class Finding:
         return f"{label}: {self.path} ({self.detail})"
 
 
+def repo_root() -> Path:
+    result = subprocess.run(
+        ["git", "rev-parse", "--show-toplevel"],
+        check=True,
+        capture_output=True,
+        text=True,
+    )
+    return Path(result.stdout.strip()).resolve()
+
+
+def contained_path(root: Path, path: str) -> Path | None:
+    """Resolve a candidate path and require it to live inside the repo root.
+
+    Paths arrive on stdin (CI feeds `git diff --name-only`, which is always
+    repo-relative), but the containment check is enforced here rather than
+    assumed: anything resolving outside the root — traversal, absolute paths,
+    symlinks pointing out — is refused, never read or written.
+    """
+    candidate = (root / path).resolve()
+    if candidate == root or not candidate.is_relative_to(root):
+        return None
+    return candidate
+
+
 def git_tracked_files() -> list[str]:
     result = subprocess.run(
         ["git", "-c", "core.quotePath=false", "ls-tree", "-r", "HEAD", "--name-only"],
@@ -137,13 +161,19 @@ def encoding_findings(path: str, data: bytes) -> list[Finding]:
         ]
 
 
-def scan(paths: list[str], attrs: dict[str, dict[str, str]]) -> tuple[list[Finding], int]:
+def scan(
+    paths: list[str], attrs: dict[str, dict[str, str]], root: Path
+) -> tuple[list[Finding], int]:
     """Check paths; returns (findings, undeclared_count). Missing files skip."""
     findings: list[Finding] = []
     undeclared = 0
     for path in paths:
+        target = contained_path(root, path)
+        if target is None:
+            print(f"  [refused] path escapes repository root, not read: {path}", file=sys.stderr)
+            continue
         try:
-            data = Path(path).read_bytes()
+            data = target.read_bytes()
         except (FileNotFoundError, IsADirectoryError, PermissionError):
             continue
         kind = classify(attrs.get(path, {}), data)
@@ -219,12 +249,17 @@ def sweep_file(path: str, data: bytes) -> tuple[SweepResult, bytes | None]:
 
 
 def run_sweep(write: bool) -> int:
+    root = repo_root()
     tracked = git_tracked_files()
     attrs = git_text_attrs(tracked)
     repaired = refused = 0
     for path in tracked:
+        target = contained_path(root, path)
+        if target is None:
+            print(f"  [refused] path escapes repository root, not touched: {path}", file=sys.stderr)
+            continue
         try:
-            data = Path(path).read_bytes()
+            data = target.read_bytes()
         except (FileNotFoundError, IsADirectoryError, PermissionError):
             continue
         if classify(attrs.get(path, {}), data) != "text":
@@ -235,7 +270,7 @@ def run_sweep(write: bool) -> int:
         if result.action == "reencoded":
             repaired += 1
             if write and new is not None:
-                Path(path).write_bytes(new)
+                target.write_bytes(new)
             print(f"  [{'wrote' if write else 'would write'}] {path}: {result.detail}")
         else:
             refused += 1
@@ -259,9 +294,10 @@ def main() -> int:
     tracked = git_tracked_files()
     attrs = git_text_attrs(sorted(set(tracked) | set(changed)))
 
+    root = repo_root()
     changed_set = set(changed)
-    findings, _ = scan(changed, attrs)
-    tree_findings, undeclared = scan([p for p in tracked if p not in changed_set], attrs)
+    findings, _ = scan(changed, attrs, root)
+    tree_findings, undeclared = scan([p for p in tracked if p not in changed_set], attrs, root)
 
     # Whole-tree pass is REPORT-ONLY: pre-existing offenders are visible debt,
     # not this PR's fault. No grandfathering list — the debt prints every run.
