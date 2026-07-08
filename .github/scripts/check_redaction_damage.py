@@ -18,6 +18,15 @@ cannot retroactively fail on the ~237 pre-existing occurrences tracked in
 issue #739 -- it exists solely to catch a NEW occurrence of the same failure
 mode landing in a future change (e.g. running the same broken redaction tool
 again, or copy-pasting already-corrupted text forward).
+
+Carried vs. new (Logan's 2026-07-08 ruling on PR #803: the fragments are the
+"known rt_ garble (tracked)"): a mechanical rewrite of a line -- e.g. the
+NORMALIZATION encoding sweep re-encoding other bytes on it -- re-presents the
+file's own pre-existing damage to the diff as an added line. That is carried
+damage, not new damage: when the identical damage fragment (with its ASCII
+context) already exists in the BASE version of the SAME file, the match is
+suppressed. Damage appearing in a file whose base lacks that fragment --
+including propagation from one file to another -- still fails.
 """
 
 from __future__ import annotations
@@ -114,12 +123,46 @@ def added_lines_by_file_at(
     return by_file
 
 
-def findings_for_added_lines(by_file: dict[str, list[tuple[int, str]]]) -> list[Finding]:
+def _ascii_context(text: str, start: int, end: int, radius: int = 30) -> str:
+    """Extend a match to the surrounding printable-ASCII run (bounded).
+
+    The damage marker and its glued fragments are pure ASCII, so this context
+    reads identically out of the base file even when the base bytes are in a
+    legacy encoding elsewhere on the line (read with errors="replace").
+    """
+    lo = start
+    while lo > 0 and start - lo < radius and 0x20 <= ord(text[lo - 1]) <= 0x7E:
+        lo -= 1
+    hi = end
+    while hi < len(text) and hi - end < radius and 0x20 <= ord(text[hi]) <= 0x7E:
+        hi += 1
+    return text[lo:hi]
+
+
+def findings_for_added_lines(
+    by_file: dict[str, list[tuple[int, str]]],
+    base_loader=None,
+) -> list[Finding]:
+    """Flag damage on added lines; suppress fragments carried from the same file.
+
+    base_loader(path) -> str | None returns the base-version content of the
+    file (None if it has no base version). Without a loader, every match
+    flags -- the pre-refinement behavior.
+    """
     findings: list[Finding] = []
+    base_cache: dict[str, str | None] = {}
     for path, lines in by_file.items():
         for line_number, text in lines:
-            if DAMAGE_PATTERN.search(text):
+            for match in DAMAGE_PATTERN.finditer(text):
+                if base_loader is not None:
+                    if path not in base_cache:
+                        base_cache[path] = base_loader(path)
+                    base_text = base_cache[path]
+                    context = _ascii_context(text, match.start(), match.end())
+                    if base_text is not None and context in base_text:
+                        continue  # carried from this file's own base: tracked debt, not new damage
                 findings.append(Finding(path=path, line=line_number, snippet=text.strip()[:120]))
+                break  # one finding per line is enough
     return findings
 
 
@@ -129,8 +172,12 @@ def main() -> int:
     parser.add_argument("--head", required=True, help="head commit/ref of the diff")
     args = parser.parse_args()
 
+    def base_loader(path: str) -> str | None:
+        result = run_git(REPO_ROOT, ["show", f"{args.base}:{path}"])
+        return result.stdout if result.returncode == 0 else None
+
     by_file = added_lines_by_file_at(REPO_ROOT, args.base, args.head)
-    findings = findings_for_added_lines(by_file)
+    findings = findings_for_added_lines(by_file, base_loader)
 
     if not findings:
         print("redaction-damage guard: OK")
