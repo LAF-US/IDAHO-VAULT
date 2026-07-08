@@ -15,9 +15,9 @@ on:
   workflow_dispatch:
     inputs:
       stale_days:
-        description: 'Days of inactivity before a PR is flagged stale'
+        description: "Days of inactivity before a PR is flagged stale"
         required: false
-        default: '14'
+        default: "14"
 
 permissions:
   contents: read
