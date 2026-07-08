@@ -20,17 +20,26 @@ LEGACY_VAULT_ROOT = Path(r"C:\Users\loganf\Documents\IDAHO-VAULT")
 LOCK_PATH = Path(tempfile.gettempdir()) / "idaho-vault-phone-link-sweep.lock"
 
 
+def require_existing_dir(path: Path, label: str) -> Path:
+    resolved = path.resolve()
+    if not resolved.exists():
+        raise RuntimeError(f"{label} does not exist: {resolved}")
+    if not resolved.is_dir():
+        raise RuntimeError(f"{label} is not a directory: {resolved}")
+    return resolved
+
+
 def resolve_vault_root(explicit_root: Path | None = None) -> tuple[Path, str]:
     """Resolve the destination root from explicit config, env var, then legacy fallback."""
     if explicit_root is not None:
-        return explicit_root.resolve(), "argument"
+        return require_existing_dir(explicit_root, "Vault root"), "argument"
 
     env_root = os.environ.get("IDAHO_VAULT_ROOT")
     if env_root:
-        return Path(env_root).resolve(), "IDAHO_VAULT_ROOT"
+        return require_existing_dir(Path(env_root), "IDAHO_VAULT_ROOT"), "IDAHO_VAULT_ROOT"
 
     if LEGACY_VAULT_ROOT.exists():
-        return LEGACY_VAULT_ROOT, "legacy fallback"
+        return require_existing_dir(LEGACY_VAULT_ROOT, "Legacy vault root"), "legacy fallback"
 
     raise RuntimeError("No vault root configured. Pass --vault-root or set IDAHO_VAULT_ROOT.")
 
@@ -140,9 +149,6 @@ def single_instance(lock_path: Path = LOCK_PATH) -> Iterator[bool]:
 
 
 def sweep_once(source_dir: Path, target_dir: Path, log_path: Path) -> int:
-    source_dir.mkdir(parents=True, exist_ok=True)
-    target_dir.mkdir(parents=True, exist_ok=True)
-
     moved = 0
     for path in sorted(source_dir.iterdir()):
         if move_one(path, target_dir, log_path):
@@ -165,6 +171,9 @@ def main(argv: list[str] | None = None) -> int:
     args = parser.parse_args(argv)
 
     target_dir, root_source = resolve_vault_root(args.vault_root)
+    if args.source == DEFAULT_SOURCE:
+        args.source.mkdir(parents=True, exist_ok=True)
+    source_dir = require_existing_dir(args.source, "Phone Link source")
     log_path = target_dir / "!" / "INBOX" / "_phone-link-watcher.log"
 
     with single_instance() as acquired:
@@ -173,13 +182,13 @@ def main(argv: list[str] | None = None) -> int:
 
         write_log(
             log_path,
-            f"Watcher active. Source='{args.source}' Target='{target_dir}' VaultRootSource='{root_source}'",
+            f"Watcher active. Source='{source_dir}' Target='{target_dir}' VaultRootSource='{root_source}'",
         )
         if args.once:
-            sweep_once(args.source, target_dir, log_path)
+            sweep_once(source_dir, target_dir, log_path)
             return 0
 
-        watch(args.source, target_dir, log_path, args.poll_seconds)
+        watch(source_dir, target_dir, log_path, args.poll_seconds)
         return 0
 
 
