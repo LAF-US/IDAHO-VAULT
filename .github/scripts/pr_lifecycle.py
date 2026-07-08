@@ -47,6 +47,8 @@ def ensure_labels() -> None:
 
 
 def set_state(pr_number: int, state: str) -> None:
+    if pr_number <= 0:
+        raise ValueError(f"Invalid PR number: {pr_number}")
     if state not in LIFECYCLE_LABELS:
         raise ValueError(f"Unknown lifecycle state: {state}")
 

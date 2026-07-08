@@ -353,7 +353,8 @@ def parse_ivy_xml(ivy_path: Path) -> List[Dependency]:
     """Parse Ivy ivy.xml (inline XML parsing)"""
     try:
         import xml.etree.ElementTree as ET
-        tree = ET.parse(ivy_path)
+        import defusedxml.ElementTree as DefusedET
+        tree = DefusedET.parse(ivy_path)
         root = tree.getroot()
         
         dependencies = []
