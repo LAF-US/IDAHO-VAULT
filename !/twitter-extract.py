@@ -61,7 +61,11 @@ def extract_metadata_from_zip(zip_path: Path, temp_dir: Path):
             if member.endswith(('tweets.js', 'account.js')):
                 # Archive structure is usually data/tweets.js
                 filename = Path(member).name
-                with z.open(member) as source, open(temp_dir / filename, "wb") as target:
+                base_real = os.path.realpath(temp_dir)
+                target_real = os.path.realpath(temp_dir / filename)
+                if os.path.commonpath([base_real, target_real]) != base_real:
+                    raise Exception("Invalid file path")
+                with z.open(member) as source, open(target_real, "wb") as target:
                     shutil.copyfileobj(source, target)
 
 
