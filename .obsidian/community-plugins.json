@@ -39,5 +39,8 @@
   "dataview",
   "wikipedia-search",
   "tipa-support",
-  "vault-inspector"
+  "vault-inspector",
+  "smart-context",
+  "smart-lookup",
+  "smart-templates"
 ]
