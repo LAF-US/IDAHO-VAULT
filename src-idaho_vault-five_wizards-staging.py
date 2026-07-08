@@ -389,8 +389,13 @@ def materialize_artifact_pack(pack: ArtifactPack, root: str | Path) -> list[Path
     pack_root.mkdir(parents=True, exist_ok=True)
     written_paths: list[Path] = []
     for artifact in pack.artifacts:
-        artifact_path = pack_root / Path(artifact.relative_path)
-        artifact_path.parent.mkdir(parents=True, exist_ok=True)
-        artifact_path.write_text(artifact.content, encoding="utf-8")
-        written_paths.append(artifact_path)
+        base_dir = pack_root.resolve()
+        joined = (pack_root / artifact.relative_path).resolve()
+        try:
+            joined.relative_to(base_dir)
+        except ValueError:
+            raise Exception("Invalid file path")
+        joined.parent.mkdir(parents=True, exist_ok=True)
+        joined.write_text(artifact.content, encoding="utf-8")
+        written_paths.append(joined)
     return written_paths
