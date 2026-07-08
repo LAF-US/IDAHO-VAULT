@@ -290,14 +290,18 @@ def main() -> int:
     if args.sweep:
         return run_sweep(write=args.write)
 
-    changed = [line for line in sys.stdin.read().splitlines() if line] if args.paths_from_stdin else []
+    requested = set(sys.stdin.read().splitlines()) - {""} if args.paths_from_stdin else set()
     tracked = git_tracked_files()
-    attrs = git_text_attrs(sorted(set(tracked) | set(changed)))
+    # Taint boundary: stdin names only SELECT from git's tracked list — the
+    # path strings that reach the filesystem are git's own output, never
+    # stdin's. A fabricated or untracked stdin path selects nothing (deleted
+    # files are already excluded upstream by --diff-filter=ACMRT).
+    changed = [p for p in tracked if p in requested]
+    attrs = git_text_attrs(tracked)
 
     root = repo_root()
-    changed_set = set(changed)
     findings, _ = scan(changed, attrs, root)
-    tree_findings, undeclared = scan([p for p in tracked if p not in changed_set], attrs, root)
+    tree_findings, undeclared = scan([p for p in tracked if p not in requested], attrs, root)
 
     # Whole-tree pass is REPORT-ONLY: pre-existing offenders are visible debt,
     # not this PR's fault. No grandfathering list — the debt prints every run.
