@@ -85,8 +85,15 @@ def write_markdown(path: Path, manifest_name: str, csv_name: str, entries: list[
             f"{bucket.get('skipped_machine_state', 0)} |"
         )
 
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    base_dir = Path(".").resolve()
+    resolved_path = path.resolve()
+    try:
+        resolved_path.relative_to(base_dir)
+    except ValueError:
+        raise Exception("Invalid file path")
+    
+    resolved_path.parent.mkdir(parents=True, exist_ok=True)
+    resolved_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
 def main() -> int:
