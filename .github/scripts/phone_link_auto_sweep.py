@@ -134,6 +134,7 @@ def single_instance(lock_path: Path = LOCK_PATH) -> Iterator[bool]:
                 handle.seek(0)
                 msvcrt.locking(handle.fileno(), msvcrt.LK_UNLCK, 1)
             except OSError:
+                # Cleanup best effort: do not mask the primary sweep outcome.
                 pass
         handle.close()
 
