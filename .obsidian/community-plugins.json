@@ -1,7 +1,6 @@
 [
   "roygbiv-day-accent",
   "periodic-notes",
-  "recent-files-obsidian",
   "omnisearch",
   "tag-wrangler",
   "nldates-obsidian",
@@ -33,12 +32,13 @@
   "time-ruler",
   "dataview-autocompletion",
   "remotely-save",
-  "obsidian-admonition",
   "dataview-serializer",
   "days-since",
   "obsidian-file-cooker",
   "obsidian-icon-shortcodes",
   "links",
   "settings-search",
-  "dataview"
+  "dataview",
+  "wikipedia-search",
+  "tipa-support"
 ]
