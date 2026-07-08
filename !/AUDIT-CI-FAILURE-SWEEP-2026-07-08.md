@@ -47,7 +47,15 @@ Exception in thread "main" java.nio.charset.MalformedInputException: Input lengt
 
 One sub-tool's intermediate results file contains a non-UTF-8 byte sequence; the Sarif formatter's line reader chokes on it. (Separately, `pmd`/`pmd-legacy` log "No rules found" but that's non-fatal — the encoding crash is what kills the job.) Representative run: id 28926865837 (2026-07-08T07:55:30Z, `main`, push).
 
-**Suggested next step:** Escalate/investigate — this needs someone who can run the Codacy CLI locally against the repo to find which tool's output has the bad byte, or try pinning `codacy-analysis-cli-action` to a different release than the current `d840f886c4bd4edc059706d09c6a1586111c540b`. Not a same-session fix: no `CODACY_PROJECT_TOKEN`-equivalent local repro available in this environment.
+**Update (same day, on PR #821):** actually fixed, in three steps, not just diagnosed:
+
+1. Ran a full-repo blob scan (`git cat-file --batch` over all 38,458 tracked blobs) to find every non-UTF-8 tracked file rather than guess — 21 total (photos/scans, a Publisher draft, an `.rtfd`, a database/pickle file, a WhatsApp `.crypt14` backup, several cp1252 `minidata*.csv` exports). Excluded them in `.codacy.yml`.
+2. That alone didn't fully land — Codacy's exclude-path glob dialect turned out to require a bare `*.ext` pattern in addition to `**/*.ext` for root-level files (10 of the 21 live at repo root); added both forms.
+3. A *second*, independent bug then surfaced in the same formatter (`IndexOutOfBoundsException` at `Sarif.generatePrimaryLocationHash`, unrelated to encoding): the pinned action commit (`d840f886`, tagged `1.1.0`) resolves to `codacy-analysis-cli` **4.0.0**, whose hash function only guards the lower bound on a tool-reported line number (`fileContents(Math.max(0, issue.location.line - 1))`) — any issue reporting a line past the file's actual length crashes the job. Confirmed via the CLI's own source at each version; the fix (`fileContents.applyOrElse(...)`) landed by CLI ~7.x. Re-pinned to `v4.0.2` (`f38648320929161d81646834fbee4d75f6502aea`) — the oldest tagged action release with the fix, chosen over newer tags (v4.4.0+) because those reference an unpinned `actions/setup-go@v3` internally, which this repo's action-pin policy rejects outright regardless of runtime conditionals.
+
+Both SARIF crashes are now gone (confirmed: no `Exception in thread` anywhere in the v4.0.2 run's log). What's left is a **third, unrelated blocker**: `CODACY_PROJECT_TOKEN` — never listed in `.op/secrets.template.md`'s secrets inventory, so it was likely never actually provisioned — causing `Could not get remote project configuration: No credentials found.` once the analysis gets far enough to need it. Every prior run's SARIF crash was masking this.
+
+**Suggested next step:** needs Logan — either provision a real `CODACY_PROJECT_TOKEN` (1Password + repo secret, same pattern as `OP_SERVICE_ACCOUNT_TOKEN`), or decide whether to keep the Codacy workflow at all given it's likely never had working credentials. Not fixable from a code change; no access to repo secrets or the Codacy dashboard from this session.
 
 ### 2. Sync Plugin Registry — 9 failures in-window, chronic since ≥2026-07-03
 
