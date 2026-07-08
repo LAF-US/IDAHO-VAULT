@@ -7,8 +7,11 @@ status: active
 related:
   - CLAUDE-SESSION-2026-07-06.md
   - ABCD-METHOD.md
+  - WITNESS-ORPHAN-ROOTS-BROWNFIELD-DOGFOOD-2026-07-08.md
+  - WITNESS-THE-KEYS-ARE-THE-LEVERS-2026-06-21.md
   - "https://github.com/LAF-US/IDAHO-VAULT/issues/690"
   - "https://github.com/LAF-US/IDAHO-VAULT/issues/792"
+  - "https://github.com/LAF-US/IDAHO-VAULT/issues/401"
 ---
 
 # Session Anchor — 2026-07-07
