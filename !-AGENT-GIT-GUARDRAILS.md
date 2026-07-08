@@ -1,3 +1,10 @@
+---
+title: "Agent Git Guardrails - Issues & Solutions"
+updated: 2026-07-02
+status: active
+authority: "LOGAN"
+---
+
 # Agent Git Guardrails - Issues & Solutions
 
 ## Problem Statement
@@ -20,24 +27,40 @@ git remote add origin https://github.com/LAF-US/IDAHO-VAULT.git 2>/dev/null; git
 
 ### Solution 2: Automatic Guardrail Wrapper
 
-Create ~/bin/git (the wrapper must be named `git`, not `git-guard` — PATH lookup resolves whatever command name was typed, so a differently-named script never intercepts plain `git ...` invocations no matter where it sits on PATH):
+Two installable wrappers live in `scripts/`, one per platform. Both detect the
+repo by its worktree folder name (`IDAHO-VAULT`), not by grepping the origin
+remote's URL out of `.git/config` - that string is exactly what disappears
+the moment `git remote remove origin` runs, which is the case the guard
+exists to catch.
+
+**macOS / Linux** - `scripts/git-guard.sh`
+
+Install it as `~/bin/git` (the file must be named `git`, not `git-guard` -
+naming it anything else means plain `git ...` calls never reach the wrapper):
 
 ```bash
-#!/bin/sh
-REPO_URL="https://github.com/LAF-US/IDAHO-VAULT.git"
-if [ -d .git ] && [ "$(basename "$(git rev-parse --show-toplevel 2>/dev/null)")" = "IDAHO-VAULT" ]; then
-  if ! git remote | grep -q origin; then
-    git remote add origin "$REPO_URL"
-    git fetch origin 2>/dev/null
-    git branch --set-upstream-to=origin/main main 2>/dev/null
-  fi
-fi
-exec /usr/bin/git "$@"
+mkdir -p ~/bin
+cp scripts/git-guard.sh ~/bin/git
+chmod +x ~/bin/git
 ```
 
-Prepend to PATH: export PATH="$HOME/bin:$PATH"
+Then make sure `~/bin` comes *before* the real git's directory on `PATH`:
 
-Note: the repo-detection condition can't grep `.git/config` for the remote URL — `git remote remove origin` deletes that config section, so the guard would read "not this repo" precisely when the remote needs restoring. Matching on the toplevel working-tree directory name instead survives the remote being removed.
+```bash
+export PATH="$HOME/bin:$PATH"
+```
+
+**Windows (PowerShell)** - `scripts/Invoke-GitGuard.ps1`
+
+Dot-source it from your PowerShell profile so it loads in every session:
+
+```powershell
+. "<repo root>\scripts\Invoke-GitGuard.ps1"
+```
+
+This defines a `git` function that PowerShell resolves before `git.exe`, so
+no PATH reordering, admin rights, or Git Bash/WSL install is required -
+matching this vault's Windows-first operating constraints.
 
 ## Why Not Block Commands?
 
@@ -46,11 +69,12 @@ User explicitly rejected blocking solutions. The problem is agent behavior, not 
 ## Implementation
 
 - Immediate: Use Solution 1
-- Long-term: Implement Solution 2
-- Repo Machinery: This doc + optional wrapper script
+- Long-term: Install Solution 2 (`scripts/git-guard.sh` or `scripts/Invoke-GitGuard.ps1`)
+- Repo Machinery: This doc + the two wrapper scripts
 
 ## Verification
 
-1. Run git remote remove origin (simulate breakage)
-2. Run any git command with wrapper installed
-3. Verify automatic reconnection
+1. Install the wrapper for your platform (see Solution 2)
+2. Run `git remote remove origin` (simulate breakage)
+3. Run any git command, e.g. `git status`
+4. Verify origin was automatically reconnected: `git remote -v`
