@@ -4,8 +4,8 @@ import importlib.util
 import os
 import tempfile
 import unittest
+import unittest.mock
 from pathlib import Path
-from unittest import mock
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
@@ -28,7 +28,7 @@ class PhoneLinkContractTest(unittest.TestCase):
         )
 
         explicit_root = PROJECT_ROOT / "explicit-vault-root"
-        with mock.patch.dict(os.environ, {"IDAHO_VAULT_ROOT": r"C:\ignored"}, clear=False):
+        with unittest.mock.patch.dict(os.environ, {"IDAHO_VAULT_ROOT": r"C:\ignored"}, clear=False):
             root, source = module.resolve_vault_root(explicit_root)
 
         self.assertEqual(root, explicit_root.resolve())
@@ -41,7 +41,7 @@ class PhoneLinkContractTest(unittest.TestCase):
         )
 
         env_root = PROJECT_ROOT / "env-vault-root"
-        with mock.patch.dict(os.environ, {"IDAHO_VAULT_ROOT": str(env_root)}, clear=False):
+        with unittest.mock.patch.dict(os.environ, {"IDAHO_VAULT_ROOT": str(env_root)}, clear=False):
             root, source = module.resolve_vault_root()
 
         self.assertEqual(root, env_root.resolve())
@@ -72,7 +72,7 @@ class PhoneLinkContractTest(unittest.TestCase):
         )
 
         explicit_root = PROJECT_ROOT / "explicit-vault-root"
-        with mock.patch.dict(os.environ, {"IDAHO_VAULT_ROOT": r"C:\ignored"}, clear=False):
+        with unittest.mock.patch.dict(os.environ, {"IDAHO_VAULT_ROOT": r"C:\ignored"}, clear=False):
             self.assertEqual(module.get_vault_root(explicit_root), explicit_root.resolve())
 
     def test_python_intake_uses_env_vault_root_when_no_argument_is_supplied(self) -> None:
@@ -82,7 +82,7 @@ class PhoneLinkContractTest(unittest.TestCase):
         )
 
         env_root = PROJECT_ROOT / "env-vault-root"
-        with mock.patch.dict(os.environ, {"IDAHO_VAULT_ROOT": str(env_root)}, clear=False):
+        with unittest.mock.patch.dict(os.environ, {"IDAHO_VAULT_ROOT": str(env_root)}, clear=False):
             self.assertEqual(module.get_vault_root(), env_root.resolve())
 
     def test_python_watcher_moves_file_once_into_vault_root(self) -> None:
