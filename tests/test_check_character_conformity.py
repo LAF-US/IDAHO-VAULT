@@ -140,6 +140,17 @@ class MojibakeRepairTest(unittest.TestCase):
         self.assertEqual(fixed, text)
         self.assertEqual(count, 0)
 
+    def test_multi_generation_garble_is_fully_flattened(self) -> None:
+        # Garbled twice (the Wikipedia Mojibake article's own demonstration:
+        # £ -> its cp1252 image -> that image's image). One run must repair
+        # all the way down, not leave a layer. Note not every character CAN
+        # double-garble — an em-dash's second generation needs byte 9D,
+        # undefined in cp1252 — which is why the fixture uses £ and é.
+        twice = _garble(_garble("£ and é"))
+        fixed, count = checker.apply_mojibake_repairs(twice)
+        self.assertEqual(fixed, "£ and é")
+        self.assertGreater(count, 0)
+
     def test_repair_is_idempotent(self) -> None:
         once, _ = checker.apply_mojibake_repairs(f"a {_garble('—')} b {_garble('é')} c")
         twice, count = checker.apply_mojibake_repairs(once)

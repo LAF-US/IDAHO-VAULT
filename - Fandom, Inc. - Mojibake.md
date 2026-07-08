@@ -47,7 +47,7 @@ Fran軋is=Français
 
 ### English
 
-Mojibake in [English](https://worldlanguages.fandom.com/wiki/English_language "English language") texts usually occurs with punctuation, such as em dashes (—), en dashes (–), and curly quotes (“, ”), but rarely in character texts, due to the fact that most encodings agree with ASCII on encoding the English alphabet. For example, the pound sign " £ " will appear as "£" if it was encoded by the sender as UTF-8 but interpreted by the recipient as CP1252 or ISO 8859-1. If this was repeated on each item, this can lead to "Â£", "Ã‚Â£", etc.
+Mojibake in [English](https://worldlanguages.fandom.com/wiki/English_language "English language") texts usually occurs with punctuation, such as em dashes (—), en dashes (–), and curly quotes (“, ”), but rarely in character texts, due to the fact that most encodings agree with ASCII on encoding the English alphabet. For example, the pound sign " £ " will appear as "£" if it was encoded by the sender as UTF-8 but interpreted by the recipient as CP1252 or ISO 8859-1. If this was repeated on each item, this can lead to "£", "£", etc.
 
 ### Japanese
 

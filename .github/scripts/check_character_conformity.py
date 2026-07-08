@@ -255,8 +255,7 @@ def find_mojibake_repairs(text: str) -> list[tuple[int, int, str, str]]:
     return repairs
 
 
-def apply_mojibake_repairs(text: str) -> tuple[str, int]:
-    """Apply all provable repairs once (no recursive passes). Returns (text, count)."""
+def _apply_one_pass(text: str) -> tuple[str, int]:
     repairs = find_mojibake_repairs(text)
     if not repairs:
         return text, 0
@@ -268,6 +267,28 @@ def apply_mojibake_repairs(text: str) -> tuple[str, int]:
         cursor = end
     out.append(text[cursor:])
     return "".join(out), len(repairs)
+
+
+# Generation bound for repeated garbling. Each pass strictly shrinks the text
+# (every repair maps >=2 chars to fewer), so termination is guaranteed anyway;
+# the bound only caps pathological synthetic input.
+MAX_GARBLE_GENERATIONS = 10
+
+
+def apply_mojibake_repairs(text: str) -> tuple[str, int]:
+    """Apply provable repairs to a fixed point. Returns (text, total_spans).
+
+    Multi-generation garble (text garbled, then the garbled text garbled
+    again) peels one generation per pass; the tool is not finished until no
+    provable artifact remains, so it repeats until stable.
+    """
+    total = 0
+    for _ in range(MAX_GARBLE_GENERATIONS):
+        text, count = _apply_one_pass(text)
+        if count == 0:
+            break
+        total += count
+    return text, total
 
 
 def run_mojibake_sweep(write: bool) -> int:
