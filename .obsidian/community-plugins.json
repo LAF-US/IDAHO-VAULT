@@ -56,5 +56,6 @@
   "nostr-writer",
   "links",
   "dataview",
-  "obsidian-file-cooker"
+  "obsidian-file-cooker",
+  "obsidian-importer"
 ]
