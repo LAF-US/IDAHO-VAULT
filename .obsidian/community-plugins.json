@@ -48,5 +48,7 @@
   "smart-context",
   "tag-wrangler",
   "quickadd",
-  "vault-inspector"
+  "vault-inspector",
+  "text-extractor",
+  "ai-image-analyzer"
 ]
