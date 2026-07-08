@@ -107,6 +107,24 @@ class RedactionDamageCheckerTest(unittest.TestCase):
         )
         self.assertEqual(len(findings), 1)
 
+    def test_two_markers_on_one_line_produce_one_finding(self) -> None:
+        # Same per-line semantics as the pre-refinement guard (which searched
+        # once per line): the line is flagged, exactly one Finding results.
+        damaged = f"sta{MARKER}time and sta{MARKER}again"
+        findings = checker.findings_for_added_lines(
+            {"f.py": [(1, damaged)]}, lambda path: "clean base\n"
+        )
+        self.assertEqual(len(findings), 1)
+
+    def test_carried_first_match_does_not_mask_new_second_match(self) -> None:
+        # First fragment is carried from base, second is new: the line flags.
+        carried = f"sta{MARKER}mcp_server"
+        line = f"{carried} plus sta{MARKER}fresh"
+        findings = checker.findings_for_added_lines(
+            {"log.txt": [(1, line)]}, lambda path: carried + "\n"
+        )
+        self.assertEqual(len(findings), 1)
+
     def test_no_base_loader_keeps_strict_behavior(self) -> None:
         damaged = f"sta{MARKER}time"
         findings = checker.findings_for_added_lines({"f.py": [(1, damaged)]})
