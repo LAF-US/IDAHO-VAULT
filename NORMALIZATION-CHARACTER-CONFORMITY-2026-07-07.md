@@ -14,8 +14,9 @@ related:
 *A general program, portable to any LAF-US surface. This document proposes the
 program's shape; the norm decisions inside it are reserved to Logan. Tracking
 issue: #794. On 2026-07-08 Logan ruled N2, N3, and N4 via the Claude Code
-ask-user tool (answers quoted verbatim below); N5 was settled by his framing
-directive at the program's creation; N1 remains open (`*`) — see its entry.*
+ask-user tool and N1 in chat (answers quoted verbatim below); N5 was settled
+by his framing directive at the program's creation. All five norms are now
+ruled or settled.*
 
 ---
 
@@ -72,17 +73,21 @@ surface, not its boundary):
 ## The Norm — Rulings and Open Points
 
 Rulings N2–N4 were given by Logan on 2026-07-08 through the Claude Code
-ask-user tool in the live session (`session_01Fipj4vEJ5ADPuunn9ed5Hd`);
-each answer is quoted verbatim. N5 was settled earlier by his framing
-directive. N1 is **open**.
+ask-user tool in the live session (`session_01Fipj4vEJ5ADPuunn9ed5Hd`), and
+N1 in chat the same day; each answer is quoted verbatim. N5 was settled
+earlier by his framing directive.
 
-- **N1 — Declared encoding. OPEN (`*`).** The question — UTF-8 without BOM
-  everywhere? any exempt surfaces beyond binary formats? — was asked twice
-  through the ask-user tool on 2026-07-08. Both recorded responses consisted
-  of a single FULLWIDTH FULL STOP character (U+FF0E): first `(．)`, then
-  `．`. That matches none of the offered options and is not interpretable as
-  a ruling, so per the Restraint axis it is recorded here as a gap, not
-  guessed at. The layer-1 sweep and the checker's encoding gate wait on N1.
+- **N1 — Declared encoding. RULED: BOM-aware UTF-8.** Logan's answer,
+  given in chat on 2026-07-08: **"BOM-aware UTF-8"**. Operational reading
+  (implementation's, marked as such): the declared encoding is UTF-8; a
+  single leading byte-order mark is recognized as a BOM — not content, not
+  an offense — and the apparatus never *adds* one; any byte sequence not
+  decodable as UTF-8 is nonconforming. *Record of the road here: the two
+  earlier ask-tool responses each consisted of a single FULLWIDTH FULL STOP
+  (U+FF0E) — first `(．)`, then `．` — held as uninterpretable rather than
+  guessed at, until Logan reproduced the same character deliberately in
+  chat (a live layer-3 specimen: valid UTF-8, homoglyph of the period,
+  invisible to any encoding gate) and then ruled N1 in words.*
 - **N2 — Chamber sovereignty vs. conformity. RULED: override.** Logan's
   answer: **"Override (Recommended)"** — of the candidate postures
   (override / consent / exempt), the override posture governs: bytes are
