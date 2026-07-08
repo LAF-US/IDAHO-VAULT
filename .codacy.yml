@@ -4,3 +4,26 @@ exclude_paths:
   - 'backup-diff.log'
   - 'git-history-summary.txt'
   - 'local-secret-scan-approved.txt'
+  # Non-UTF-8 binary/scratch files. codacy-analysis-cli-action's SARIF
+  # formatter reads a matched issue's source file as UTF-8 text to compute
+  # a location hash (Sarif.scala, generatePrimaryLocationHash); a non-UTF-8
+  # byte in that read throws (MalformedInputException / IndexOutOfBounds
+  # variants seen in CI), crashing the whole job. These are the non-UTF-8
+  # tracked files found by a full-repo blob scan on 2026-07-08 — none are
+  # source content a linter should be scoring.
+  - '**/*.dng'
+  - '**/*.dotx'
+  - '**/*.pub'
+  - '**/*.rtf'
+  - '**/*.rtfd/**'
+  - '**/*.mdb'
+  - '**/*.pkl'
+  - '**/*.crypt14'
+  - '**/*.webm'
+  - 'minidata*.csv'
+  - 'SCRATCH.prin'
+  - '='
+  - 'QDrive IDEX Series Templates.download'
+  - 'io5ujgpo.a4y'
+  - 'wrvjr3p2.ky4'
+  - 'xmlh0dpb.gri'
