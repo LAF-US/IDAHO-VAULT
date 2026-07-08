@@ -17,10 +17,8 @@
   "obsidian-linter",
   "openclaw",
   "todoist-context-bridge",
-  "obsidian-file-cooker",
   "obsidian-icon-shortcodes",
   "settings-search",
-  "dataview",
   "tipa-support",
   "obsidian-leaflet-plugin",
   "initiative-tracker",
@@ -56,5 +54,7 @@
   "obsidian-outliner",
   "periodic-notes",
   "nostr-writer",
-  "links"
+  "links",
+  "dataview",
+  "obsidian-file-cooker"
 ]
