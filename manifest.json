@@ -61,9 +61,9 @@
     "status": "active",
     "authority_boundary": "Obsidian config files define interface state; the plugin registry document defines doctrine and promotion rules.",
     "current_state": {
-      "enabled_community_count": 59,
+      "enabled_community_count": 58,
       "enabled_core_count": 31,
-      "installed_community_count": 72,
+      "installed_community_count": 71,
       "dormant_installed_count": 13,
       "enabled_missing_manifest_count": 0
     },
@@ -99,7 +99,6 @@
       "obsidian42-strange-new-worlds",
       "obsidian-tasks-plugin",
       "obsidian-folder-index",
-      "oz-image-plugin",
       "phone-to-roam-to-obsidian",
       "moviegrabber",
       "move-cursor-on-startup",
@@ -609,7 +608,7 @@
       {
         "id": "obsidian-git",
         "name": "Git",
-        "version": "2.38.6",
+        "version": "2.38.5",
         "path": ".obsidian/plugins/obsidian-git/manifest.json"
       },
       {
@@ -695,12 +694,6 @@
         "name": "OpenClaw",
         "version": "0.41.11",
         "path": ".obsidian/plugins/openclaw/manifest.json"
-      },
-      {
-        "id": "oz-image-plugin",
-        "name": "Image in Editor",
-        "version": "2.2.6",
-        "path": ".obsidian/plugins/oz-image-plugin/manifest.json"
       },
       {
         "id": "periodic-notes",
