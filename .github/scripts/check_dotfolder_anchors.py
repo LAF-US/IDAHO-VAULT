@@ -30,26 +30,15 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 
-# Pre-existing nonconforming dotfolders, inventoried 2026-07-02. These WARN
-# rather than fail so the format rule can land without blocking main; each
-# should gain its <NAME>.md anchor (per the stub standard's required minimum)
-# and then be removed from this set. Do not add new entries — a new dotfolder
-# must ship its anchor in the same PR.
-GRANDFATHERED_MISSING_ANCHORS = {
-    ".blue",
-    ".copilot",
-    ".gitbook",
-    ".gordian",
-    ".gordon",
-    ".green",
-    ".indigo",
-    ".openclaw",
-    ".orange",
-    ".red",
-    ".violet",
-    ".vscode",
-    ".yellow",
-}
+# Pre-existing nonconforming dotfolders, inventoried 2026-07-02, all healed
+# 2026-07-04 (.blue, .copilot, .gitbook, .gordian, .gordon, .green, .indigo,
+# .openclaw, .orange, .red, .violet, .vscode, .yellow each gained their
+# <NAME>.md anchor). Kept as an empty set rather than deleted so the
+# grandfathering machinery below stays in place, even though it is
+# currently inactive with nothing left to warn about: do not add new
+# entries — a new dotfolder must ship its anchor in the same PR that
+# introduces it.
+GRANDFATHERED_MISSING_ANCHORS: set[str] = set()
 
 
 def expected_anchor_name(dotfolder: str) -> str:
