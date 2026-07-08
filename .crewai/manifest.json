@@ -2,7 +2,6 @@
   "// note": "Machine-readable registry for the CrewAI layer in IDAHO-VAULT.",
   "// status": "CrewAI is active as a re-foundation with a live bootstrap-validation shard. Internal topology and doctrine live in .crewai/MANIFEST.md.",
   "version": "0.3.0",
-  "crewai_version": "1.14.1",
   "vault": "github.com/LAF-US/IDAHO-VAULT",
   "status": "refoundation",
   "manifest_path": ".crewai/MANIFEST.md",

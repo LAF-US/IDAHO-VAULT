@@ -22,3 +22,7 @@ rules:
     parameters:
       dismiss_stale_reviews_on_push: false
       automatic_copilot_code_review_enabled: true
+      require_code_owner_review: false
+      require_last_push_approval: false
+      required_approving_review_count: 0
+      required_review_thread_resolution: false
