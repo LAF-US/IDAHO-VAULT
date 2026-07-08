@@ -109,7 +109,7 @@ provide feedback as needed.
 
 
 You have hereby read the 'Serena Instructions Manual' and do not need to read it again.
-INFO  2026-04-06 18:30:20,046 [MainThread] serena.cli:sta***REMOVED***mcp_server:322 - Starting MCP server …
+INFO  2026-04-06 18:30:20,046 [MainThread] serena.cli:sta***REMOVED***mcp_server:322 - Starting MCP server â€¦
 INFO  2026-04-06 18:30:20,136 [MainThread] serena.mcp:_set_mcp_tools:261 - Starting MCP server with 28 tools: ['read_file', 'create_text_file', 'list_dir', 'find_file', 'replace_content', 'search_for_pattern', 'get_symbols_overview', 'find_symbol', 'find_referencing_symbols', 'replace_symbol_body', 'inse***REMOVED***after_symbol', 'inse***REMOVED***before_symbol', 'rename_symbol', 'safe_delete_symbol', 'write_memory', 'read_memory', 'list_memories', 'delete_memory', 'rename_memory', 'edit_memory', 'execute_shell_command', 'activate_project', 'switch_modes', 'get_current_config', 'check_onboarding_performed', 'onboarding', 'prepare_for_new_conversation', 'initial_instructions']
 INFO  2026-04-06 18:30:20,136 [MainThread] serena.mcp:server_lifespan:343 - MCP server lifetime setup complete
 INFO  2026-04-06 18:30:20,140 [MainThread] serena.mcp:server_lifespan:347 - MCP server shutting down

@@ -6,6 +6,6 @@ related:
   - runtime
 ---
 
-**.opengraph** — Imported software runtime persona.
+**.opengraph** â€” Imported software runtime persona.
 
 opengraph runtime and configuration.
