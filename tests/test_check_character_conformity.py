@@ -140,6 +140,17 @@ class MojibakeRepairTest(unittest.TestCase):
         self.assertEqual(fixed, text)
         self.assertEqual(count, 0)
 
+    def test_multi_generation_garble_is_fully_flattened(self) -> None:
+        # Garbled twice (the Wikipedia Mojibake article's own demonstration:
+        # £ -> its cp1252 image -> that image's image). One run must repair
+        # all the way down, not leave a layer. Note not every character CAN
+        # double-garble — an em-dash's second generation needs byte 9D,
+        # undefined in cp1252 — which is why the fixture uses £ and é.
+        twice = _garble(_garble("£ and é"))
+        fixed, count = checker.apply_mojibake_repairs(twice)
+        self.assertEqual(fixed, "£ and é")
+        self.assertGreater(count, 0)
+
     def test_repair_is_idempotent(self) -> None:
         once, _ = checker.apply_mojibake_repairs(f"a {_garble('—')} b {_garble('é')} c")
         twice, count = checker.apply_mojibake_repairs(once)
@@ -153,6 +164,53 @@ class MojibakeRepairTest(unittest.TestCase):
         text = f"mix {_garble('“quoted')} and {_garble('…')} ends {_garble('naïve')}"
         for _s, _e, observed, repaired in checker.find_mojibake_repairs(text):
             self.assertEqual(repaired.encode("utf-8").decode("cp1252"), observed)
+
+
+class HomoglyphRepairTest(unittest.TestCase):
+    # Mixed-script specimens are built from escapes, never written literally:
+    # a literal specimen in this file would be "repaired" by the very sweep
+    # under test (it was, once) — the same self-reference rule as the program
+    # document's byte-named examples.
+
+    def test_cyrillic_e_inside_latin_word_is_repaired(self) -> None:
+        # The #638 case: Cyrillic е (U+0435) posing as Latin e in a Latin word.
+        specimen = "pr\u0435ss"
+        repairs, flags = checker.find_homoglyph_repairs(f"the {specimen} release")
+        self.assertEqual([(r[1], r[2]) for r in repairs], [(specimen, "press")])
+        self.assertEqual(flags, [])
+
+    def test_genuine_russian_text_is_untouched(self) -> None:
+        # The vault is not English-only: single-script foreign words are
+        # never candidates, whole sentences included.
+        repairs, flags = checker.find_homoglyph_repairs("привет мир, это тест")
+        self.assertEqual(repairs, [])
+        self.assertEqual(flags, [])
+
+    def test_latin_letter_inside_cyrillic_word_is_repaired_symmetrically(self) -> None:
+        # Latin 'e' (U+0065) hiding inside an otherwise-Cyrillic word:
+        # normalized toward Cyrillic, not toward Latin.
+        specimen = "прив\u0065т"
+        repairs, _flags = checker.find_homoglyph_repairs(f"он сказал {specimen} всем")
+        self.assertEqual([(r[1], r[2]) for r in repairs], [(specimen, "привет")])
+
+    def test_greek_prose_is_untouched(self) -> None:
+        repairs, flags = checker.find_homoglyph_repairs("και το όνομα αυτής")
+        self.assertEqual(repairs, [])
+        self.assertEqual(flags, [])
+
+    def test_mixed_but_unmappable_word_is_flagged_not_guessed(self) -> None:
+        # Cyrillic ж (U+0436) has no Latin look-alike: a mixed-script word
+        # that cannot be normalized to one script is flagged for human eyes.
+        repairs, flags = checker.find_homoglyph_repairs("word\u0436")
+        self.assertEqual(repairs, [])
+        self.assertEqual(len(flags), 1)
+
+    def test_repaired_word_is_single_script(self) -> None:
+        repairs, _ = checker.find_homoglyph_repairs("t\u0435st \u0441\u0430se")
+        self.assertTrue(repairs)
+        for _off, _obs, fixed in repairs:
+            scripts = {checker._script(c) for c in fixed}
+            self.assertEqual(len(scripts), 1)
 
 
 class SweepTest(unittest.TestCase):

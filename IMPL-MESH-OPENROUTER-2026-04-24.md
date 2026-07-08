@@ -159,14 +159,14 @@ All channels enabled in OpenClaw config but require tokens:
 ## Architecture Summary
 
 ```
-                    ┌─────────────────────────────────────┐
+                    ┌────────────────────────────────────Ŀ
                     │         OpenRouter.ai                 │
                     │    openrouter.ai/api/v1 = unified    │
                     │       (cloud model routing)         │
                     └─────────────────────────────────────┘
                        ▲     ▲     ▲     ▲     ▲
                        │     │     │     │     │
-              ┌────────┴┐ ┌───┴──┐ ┌────┴──┐ ┌───┴──┐ ┌────┴───┐
+              ┌────────┴┐ ┌───┴─Ŀ ┌────┴─Ŀ ┌───┴─Ŀ ┌────┴──Ŀ
               │ Ollama  │ │Cursor│ │OpenClaw│ │Claude│ │ Codex  │
               │(local) │ │(UI)  │ │(models)│ │(env) │ │ (env)  │
               └─────────┘ └──────┘ └───────┘ └──────┘ └────────┘
