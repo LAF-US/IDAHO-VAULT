@@ -30,14 +30,23 @@ from pathlib import Path
 DEFAULT_SOURCE = Path(r"C:\Users\loganf\Downloads\Phone Link")
 
 
+def require_existing_dir(path: Path, label: str) -> Path:
+    resolved = path.resolve()
+    if not resolved.exists():
+        raise RuntimeError(f"{label} does not exist: {resolved}")
+    if not resolved.is_dir():
+        raise RuntimeError(f"{label} is not a directory: {resolved}")
+    return resolved
+
+
 def get_vault_root(explicit_root: Path | None = None) -> Path:
     """Resolve the vault root from explicit config, env var, then script location."""
     if explicit_root is not None:
-        return explicit_root.resolve()
+        return require_existing_dir(explicit_root, "Vault root")
 
     env_root = os.environ.get("IDAHO_VAULT_ROOT")
     if env_root:
-        return Path(env_root).resolve()
+        return require_existing_dir(Path(env_root), "IDAHO_VAULT_ROOT")
 
     script_dir = Path(__file__).resolve().parent
     vault_root = script_dir.parent.parent
