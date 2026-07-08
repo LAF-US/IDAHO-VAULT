@@ -222,10 +222,10 @@ def find_mojibake_repairs(text: str) -> list[tuple[int, int, str, str]]:
     """
     repairs: list[tuple[int, int, str, str]] = []
     i = 0
-    while True:
+    while i < len(text):
         match = _MOJIBAKE_LEAD.search(text, i)
         if not match:
-            return repairs
+            break
         start = match.start()
         # Extend greedily while the cp1252 image remains a prefix of valid UTF-8.
         end = start
