@@ -147,6 +147,11 @@ Mobile push notifications require Claude Code v2.1.110 or later.
 
 To set up mobile push notifications:
 
+1. Install the Claude app on your phone. If you're already in a Claude Code session, run `/mobile` for a QR code that links straight to the download for your platform.
+2. Sign in with the same account and organization you use for Claude Code in the terminal — a different account means push tokens won't match and notifications won't arrive.
+3. Accept the OS notification-permission prompt.
+4. In the terminal, run `/config` and enable **Push when Claude decides** (proactive notifications), **Push when actions required** (permission prompts and questions), or both.
+
 If notifications don’t arrive:
 
 - If `/config` shows **No mobile registered**, open the Claude app on your phone so it can refresh its push token. The warning clears the next time Remote Control connects.
