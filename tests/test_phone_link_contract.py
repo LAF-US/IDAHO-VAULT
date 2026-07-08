@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import importlib.util
 import os
+import tempfile
 import unittest
 from pathlib import Path
 from unittest import mock
@@ -83,6 +84,76 @@ class PhoneLinkContractTest(unittest.TestCase):
         env_root = PROJECT_ROOT / "env-vault-root"
         with mock.patch.dict(os.environ, {"IDAHO_VAULT_ROOT": str(env_root)}, clear=False):
             self.assertEqual(module.get_vault_root(), env_root.resolve())
+
+    def test_python_watcher_moves_file_once_into_vault_root(self) -> None:
+        module = _load_module(
+            "phone_link_auto_sweep_behavior_test_module",
+            ".github/scripts/phone_link_auto_sweep.py",
+        )
+
+        with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as workspace:
+            root = Path(workspace)
+            source = root / "source"
+            vault = root / "vault"
+            log = vault / "!" / "INBOX" / "_phone-link-watcher.log"
+            source.mkdir()
+            incoming = source / "sample.txt"
+            incoming.write_text("phone link sample", encoding="utf-8")
+
+            moved = module.sweep_once(source, vault, log)
+
+            self.assertEqual(moved, 1)
+            self.assertFalse(incoming.exists())
+            self.assertEqual((vault / "sample.txt").read_text(encoding="utf-8"), "phone link sample")
+            self.assertIn("MOVED (direct): sample.txt", log.read_text(encoding="utf-8"))
+
+    def test_python_watcher_skips_identical_duplicate_without_deleting_source(self) -> None:
+        module = _load_module(
+            "phone_link_auto_sweep_duplicate_test_module",
+            ".github/scripts/phone_link_auto_sweep.py",
+        )
+
+        with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as workspace:
+            root = Path(workspace)
+            source = root / "source"
+            vault = root / "vault"
+            log = vault / "!" / "INBOX" / "_phone-link-watcher.log"
+            source.mkdir()
+            vault.mkdir()
+            (source / "sample.txt").write_text("same", encoding="utf-8")
+            (vault / "sample.txt").write_text("same", encoding="utf-8")
+
+            moved = module.sweep_once(source, vault, log)
+
+            self.assertEqual(moved, 0)
+            self.assertTrue((source / "sample.txt").exists())
+            self.assertEqual((vault / "sample.txt").read_text(encoding="utf-8"), "same")
+            self.assertIn("SKIP (duplicate): sample.txt", log.read_text(encoding="utf-8"))
+
+    def test_python_watcher_suffixes_name_collision(self) -> None:
+        module = _load_module(
+            "phone_link_auto_sweep_collision_test_module",
+            ".github/scripts/phone_link_auto_sweep.py",
+        )
+
+        with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as workspace:
+            root = Path(workspace)
+            source = root / "source"
+            vault = root / "vault"
+            log = vault / "!" / "INBOX" / "_phone-link-watcher.log"
+            source.mkdir()
+            vault.mkdir()
+            (source / "sample.txt").write_text("incoming", encoding="utf-8")
+            (vault / "sample.txt").write_text("existing", encoding="utf-8")
+
+            moved = module.sweep_once(source, vault, log)
+
+            self.assertEqual(moved, 1)
+            self.assertEqual((vault / "sample.txt").read_text(encoding="utf-8"), "existing")
+            collisions = sorted(vault.glob("sample-*.txt"))
+            self.assertEqual(len(collisions), 1)
+            self.assertEqual(collisions[0].read_text(encoding="utf-8"), "incoming")
+            self.assertIn("MOVED (collision): sample.txt", log.read_text(encoding="utf-8"))
 
 
 if __name__ == "__main__":
