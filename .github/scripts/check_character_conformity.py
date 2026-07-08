@@ -200,39 +200,47 @@ def scan(
 # only where it round-trips: repaired.encode("utf-8").decode(charset) must
 # reproduce the observed text exactly. Anything else is flagged, never touched.
 
-# Characters whose cp1252 encoding is a UTF-8 lead byte (C2-F4).
-_MOJIBAKE_LEAD = re.compile(
-    "[" + "".join(re.escape(bytes([b]).decode("cp1252")) for b in range(0xC2, 0xF5) if b not in (0x81, 0x8D, 0x8F, 0x90, 0x9D)) + "]"
-)
+# The closed garble families: charsets a UTF-8 byte stream has historically
+# been misread through in this vault. cp1252/latin-1 (Windows text tools) and
+# cp437/cp850 (DOS/PowerShell console) — each with its own artifact alphabet.
+MOJIBAKE_FAMILIES = ("cp1252", "latin-1", "cp437", "cp850")
 
 
-def _cp1252_bytes(segment: str) -> bytes | None:
+def _family_lead_re(codec: str) -> re.Pattern[str]:
+    chars = []
+    for b in range(0xC2, 0xF5):
+        try:
+            chars.append(re.escape(bytes([b]).decode(codec)))
+        except UnicodeDecodeError:
+            continue
+    return re.compile("[" + "".join(chars) + "]")
+
+
+_FAMILY_LEADS = {codec: _family_lead_re(codec) for codec in MOJIBAKE_FAMILIES}
+
+
+def _family_bytes(segment: str, codec: str) -> bytes | None:
     try:
-        return segment.encode("cp1252")
+        return segment.encode(codec)
     except UnicodeEncodeError:
         return None
 
 
-def find_mojibake_repairs(text: str) -> list[tuple[int, int, str, str]]:
-    """Return provable double-decode repairs as (start, end, observed, repaired).
-
-    A span qualifies only if its cp1252 re-encoding is a valid UTF-8 multibyte
-    sequence run AND the repair survives the round-trip proof. Overlaps are
-    impossible: spans are maximal and consumed left to right.
-    """
+def _find_family_repairs(text: str, codec: str) -> list[tuple[int, int, str, str]]:
+    """Provable double-decode repairs for one garble family."""
     repairs: list[tuple[int, int, str, str]] = []
+    lead = _FAMILY_LEADS[codec]
     i = 0
     while i < len(text):
-        match = _MOJIBAKE_LEAD.search(text, i)
+        match = lead.search(text, i)
         if not match:
             break
         start = match.start()
-        # Extend greedily while the cp1252 image remains a prefix of valid UTF-8.
         end = start
         best: tuple[int, str] | None = None
         while end < len(text) and end - start < 64:
             end += 1
-            raw = _cp1252_bytes(text[start:end])
+            raw = _family_bytes(text[start:end], codec)
             if raw is None:
                 break
             try:
@@ -241,7 +249,7 @@ def find_mojibake_repairs(text: str) -> list[tuple[int, int, str, str]]:
                 if err.reason == "unexpected end of data":
                     continue  # need more characters
                 break
-            if UTF8_MULTIBYTE.fullmatch(raw) or UTF8_MULTIBYTE.search(raw):
+            if UTF8_MULTIBYTE.search(raw):
                 best = (end, candidate)
         if best is None:
             i = match.start() + 1
@@ -249,14 +257,35 @@ def find_mojibake_repairs(text: str) -> list[tuple[int, int, str, str]]:
         end, repaired = best
         observed = text[start:end]
         # Round-trip proof: the repair, re-garbled the same way, is the observation.
-        if repaired.encode("utf-8").decode("cp1252", errors="strict") == observed:
+        if repaired.encode("utf-8").decode(codec, errors="strict") == observed:
             repairs.append((start, end, observed, repaired))
         i = end
     return repairs
 
 
-def apply_mojibake_repairs(text: str) -> tuple[str, int]:
-    """Apply all provable repairs once (no recursive passes). Returns (text, count)."""
+def find_mojibake_repairs(text: str) -> list[tuple[int, int, str, str]]:
+    """Return provable double-decode repairs as (start, end, observed, repaired).
+
+    Families are tried in the precedence the adopted program document sets:
+    cp1252/latin-1 are the *ruled* family ("UTF-8 read as cp1252/latin-1 and
+    re-saved"); the DOS console pages are the secondary family and may only
+    claim spans the ruled family cannot explain at all. Within that order, a
+    lower-precedence claim overlapping an accepted higher-precedence span is
+    discarded — precedence is textual (the ruling), not statistical guessing.
+    """
+    chosen: list[tuple[int, int, str, str]] = []
+    claimed: list[tuple[int, int]] = []
+    for codec in MOJIBAKE_FAMILIES:  # tuple order IS the precedence order
+        for s, e, obs, rep in _find_family_repairs(text, codec):
+            if any(s < ce and cs < e for cs, ce in claimed):
+                continue  # territory already explained by a higher family
+            chosen.append((s, e, obs, rep))
+            claimed.append((s, e))
+    chosen.sort()
+    return chosen
+
+
+def _apply_one_pass(text: str) -> tuple[str, int]:
     repairs = find_mojibake_repairs(text)
     if not repairs:
         return text, 0
@@ -268,6 +297,37 @@ def apply_mojibake_repairs(text: str) -> tuple[str, int]:
         cursor = end
     out.append(text[cursor:])
     return "".join(out), len(repairs)
+
+
+# Generation bound for repeated garbling. Each pass strictly shrinks the text
+# (every repair maps >=2 chars to fewer), so termination is guaranteed anyway;
+# the bound only caps pathological synthetic input.
+MAX_GARBLE_GENERATIONS = 10
+
+
+def apply_mojibake_repairs(text: str) -> tuple[str, int]:
+    """Apply provable repairs to a fixed point. Returns (text, total_spans).
+
+    Multi-generation garble (text garbled, then the garbled text garbled
+    again) peels one generation per pass; the tool is not finished until no
+    provable artifact remains, so it repeats until stable.
+    """
+    total = 0
+    count = 0
+    for _ in range(MAX_GARBLE_GENERATIONS):
+        text, count = _apply_one_pass(text)
+        if count == 0:
+            break
+        total += count
+    else:
+        if count:
+            # Never silent: the bound should be unreachable on real data.
+            print(
+                f"NORMALIZATION (warning): generation bound {MAX_GARBLE_GENERATIONS} "
+                "exhausted with repairs still being found; input needs human eyes",
+                file=sys.stderr,
+            )
+    return text, total
 
 
 def run_mojibake_sweep(write: bool) -> int:
@@ -301,6 +361,119 @@ def run_mojibake_sweep(write: bool) -> int:
         print(f"  [{'wrote' if write else 'would write'}] {path}: {count} double-decode span(s) repaired")
     mode = "applied" if write else "dry-run (pass --write to apply)"
     print(f"Mojibake sweep {mode}: {total} span(s) across {repaired_files} file(s), every repair round-trip-proven.")
+    return 0
+
+
+# --- layer 3: homoglyphs (adjudicated in the #638 review) ---------------------
+#
+# The rule as adjudicated: a look-alike letter from one script hiding INSIDE a
+# word of another script is disorder and is normalized to the surrounding
+# script. The vault is not English-only, so the rule is symmetric and touches
+# nothing else: a genuinely Cyrillic (Greek, Japanese, ...) word never mixes
+# scripts and is never touched; a word that is ENTIRELY confusable (its script
+# undecidable) is flagged for human eyes, never guessed.
+
+# Identical-glyph pairs, Cyrillic->Latin and Greek->Latin (lower/upper).
+_CONFUSABLE_TO_LATIN = {
+    # Cyrillic lowercase / uppercase
+    "а": "a", "е": "e", "о": "o", "р": "p", "с": "c", "у": "y", "х": "x",
+    "і": "i", "ѕ": "s", "ј": "j", "ԁ": "d", "ɡ": "g",
+    "А": "A", "В": "B", "Е": "E", "З": "3", "К": "K", "М": "M", "Н": "H",
+    "О": "O", "Р": "P", "С": "C", "Т": "T", "Х": "X", "Ѕ": "S", "І": "I", "Ј": "J",
+    # Greek
+    "ο": "o", "ν": "v", "Α": "A", "Β": "B", "Ε": "E", "Ζ": "Z", "Η": "H",
+    "Ι": "I", "Κ": "K", "Μ": "M", "Ν": "N", "Ο": "O", "Ρ": "P", "Τ": "T",
+    "Υ": "Y", "Χ": "X",
+}
+_CONFUSABLE_FROM_LATIN = {v: k for k, v in _CONFUSABLE_TO_LATIN.items() if v.isalpha()}
+
+_WORD_RE = re.compile(r"[^\W\d_]+", re.UNICODE)
+
+
+def _script(ch: str) -> str:
+    cp = ord(ch)
+    if cp < 0x250:
+        return "latin"
+    if 0x370 <= cp <= 0x3FF:
+        return "greek"
+    if 0x400 <= cp <= 0x4FF:
+        return "cyrillic"
+    return "other"
+
+
+def find_homoglyph_repairs(text: str) -> tuple[list[tuple[int, str, str]], list[tuple[int, str]]]:
+    """Return (repairs, flags) for mixed-script words.
+
+    repairs: (offset, observed_word, repaired_word) where a minority of
+    confusable letters is normalized to the word's dominant script.
+    flags: (offset, word) where every letter is confusable — script
+    undecidable, so it is reported, never repaired.
+    """
+    repairs: list[tuple[int, str, str]] = []
+    flags: list[tuple[int, str]] = []
+    for match in _WORD_RE.finditer(text):
+        word = match.group()
+        scripts = {_script(c) for c in word}
+        if len(scripts) < 2 or "other" in scripts:
+            continue  # single-script or beyond our table: never touched
+        latinish = sum(1 for c in word if _script(c) == "latin")
+        foreign = len(word) - latinish
+        if latinish and foreign and all(
+            (c in _CONFUSABLE_TO_LATIN) if _script(c) != "latin" else (c in _CONFUSABLE_FROM_LATIN)
+            for c in word
+        ) and (latinish == foreign):
+            flags.append((match.start(), word))  # perfectly balanced + all-confusable: undecidable
+            continue
+        if latinish >= foreign:
+            fixed = "".join(_CONFUSABLE_TO_LATIN.get(c, c) if _script(c) != "latin" else c for c in word)
+        else:
+            fixed = "".join(_CONFUSABLE_FROM_LATIN.get(c, c) if _script(c) == "latin" else c for c in word)
+        if fixed != word and len({_script(c) for c in fixed}) == 1:
+            repairs.append((match.start(), word, fixed))
+        elif fixed != word:
+            flags.append((match.start(), word))  # normalization did not yield one script: human eyes
+        else:
+            flags.append((match.start(), word))  # mixed but not confusable-mappable: human eyes
+    return repairs, flags
+
+
+def run_homoglyph_sweep(write: bool) -> int:
+    root = repo_root()
+    tracked = git_tracked_files()
+    attrs = git_text_attrs(tracked)
+    repaired_files = total = flagged = 0
+    for path in tracked:
+        target = contained_path(root, path)
+        if target is None:
+            continue
+        try:
+            data = target.read_bytes()
+        except (FileNotFoundError, IsADirectoryError, PermissionError):
+            continue
+        if classify(attrs.get(path, {}), data) != "text":
+            continue
+        try:
+            text = (data[len(UTF8_BOM):] if data.startswith(UTF8_BOM) else data).decode("utf-8")
+        except UnicodeDecodeError:
+            continue
+        repairs, flags = find_homoglyph_repairs(text)
+        for off, word in flags:
+            flagged += 1
+            print(f"  [FLAG] {path}@{off}: {word!r} mixed-script but undecidable; needs human eyes", file=sys.stderr)
+        if not repairs:
+            continue
+        repaired_files += 1
+        total += len(repairs)
+        if write:
+            out = text
+            for off, observed, fixed in sorted(repairs, reverse=True):
+                out = out[:off] + fixed + out[off + len(observed):]
+            prefix = UTF8_BOM if data.startswith(UTF8_BOM) else b""
+            target.write_bytes(prefix + out.encode("utf-8"))
+        for _off, observed, fixed in repairs:
+            print(f"  [{'wrote' if write else 'would write'}] {path}: {observed!r} -> {fixed!r}")
+    mode = "applied" if write else "dry-run (pass --write to apply)"
+    print(f"Homoglyph sweep {mode}: {total} word(s) across {repaired_files} file(s); {flagged} flagged for human eyes.")
     return 0
 
 
@@ -398,6 +571,7 @@ def main() -> int:
     parser.add_argument("--paths-from-stdin", action="store_true")
     parser.add_argument("--sweep", action="store_true", help="layer-1 sweeper over the tracked tree")
     parser.add_argument("--sweep-mojibake", action="store_true", help="layer-2 sweeper (double-decode artifacts, N4 bounds)")
+    parser.add_argument("--sweep-homoglyphs", action="store_true", help="layer-3 sweeper (mixed-script look-alikes, #638 rule)")
     parser.add_argument("--write", action="store_true", help="apply sweep repairs (default: dry-run)")
     args = parser.parse_args()
 
@@ -405,6 +579,8 @@ def main() -> int:
         return run_sweep(write=args.write)
     if args.sweep_mojibake:
         return run_mojibake_sweep(write=args.write)
+    if args.sweep_homoglyphs:
+        return run_homoglyph_sweep(write=args.write)
 
     requested = set(sys.stdin.read().splitlines()) - {""} if args.paths_from_stdin else set()
     tracked = git_tracked_files()
