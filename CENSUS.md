@@ -3,7 +3,7 @@ title: CENSUS — Enumeration Doctrine of the Unified Swarm
 date created: Wednesday, June 3rd 2026, 2:07:38 pm
 authority: LOGAN
 doc_class: doctrine
-status: seed
+status: draft
 related:
   - CHARTER
   - CONSTITUTION
@@ -50,15 +50,19 @@ Those are [[CROSSFRAMING]] operations.
 |---|---|
 | Nest (`!/`) | Collective routing surfaces, DOCKET entries, bootstrap files |
 | Persona chambers (`.*/`) | Dotfolders with tri-anchor presence |
-| Root | Note corpus at repo root |
+| Root | Top-level root folders (per `topology_census.py`'s `root.iterdir()` scan) |
 | Git refs | Named branches, PR refs, orphan lineages (see [[ARCHIPELAGO]]) |
 
 ### The Tri-Anchor Status Matrix
 
 Each persona chamber is assessed for three anchors per [[PERSONAE ENGINE]]:
 
-1. **ENTITY-RUNTIME** — `stub.txt` with `¿!?` encoding
-2. **SELF-IDENTITY** — `NAME.md` with `[ ? ]` pattern
+1. **ENTITY-RUNTIME** — actual runtime/config payload, present only for
+   software-imported chambers (per [[STUB-PERSONAFOLDERS-2026-05-03]]); a pure
+   stub vessel carries no runtime and is marked instead by its `stub.txt`
+   vacancy sentinel (`¿!?`)
+2. **SELF-IDENTITY** — the chamber's canonical `<NAME>.md` anchor
+   (`.<name>/<NAME>.md`, e.g. `.claude/CLAUDE.md`) with `[ ? ]` pattern
 3. **ADDRESS** — inscribed only by Logan
 
 A census row records: present / absent / malformed for each anchor. It does
