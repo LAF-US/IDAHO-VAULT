@@ -4,7 +4,7 @@ source: "https://www.idahoednews.org/school-funding/state-gop-platform-would-eli
 author:
   - "[[Sean Dolan]]"
 published: 2026-06-24
-created: 2026-07-08
+created: 2026-07-07
 description: "Scott Herndon says property taxes means no one can ever truly own their home."
 ---
 If the Idaho Legislature follows Scott Herndon’s plan for eliminating property taxes, public schools would miss out on over $400 million.
