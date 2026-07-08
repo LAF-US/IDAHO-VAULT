@@ -44,11 +44,17 @@
   "markdown-attributes",
   "links",
   "metadata-menu",
-  "obsidian-tidy-footnotes",
   "smart-context",
   "tag-wrangler",
   "quickadd",
   "vault-inspector",
   "text-extractor",
-  "ai-image-analyzer"
+  "ai-image-analyzer",
+  "homepage",
+  "obsidian-tidy-footnotes",
+  "obsidian-outliner",
+  "letterboxd-rss-sync",
+  "export-graph-view",
+  "obsidian-mind-map",
+  "heatmap-calendar"
 ]
