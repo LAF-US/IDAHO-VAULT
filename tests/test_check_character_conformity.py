@@ -105,6 +105,56 @@ class EncodingFindingsTest(unittest.TestCase):
         self.assertIn("bf", findings[0].detail)
 
 
+def _garble(text: str) -> str:
+    """Produce the double-decode artifact of text (UTF-8 bytes read as cp1252)."""
+    return text.encode("utf-8").decode("cp1252")
+
+
+class MojibakeRepairTest(unittest.TestCase):
+    def test_em_dash_artifact_is_repaired(self) -> None:
+        fixed, count = checker.apply_mojibake_repairs(f"before {_garble('—')} after")
+        self.assertEqual(fixed, "before — after")
+        self.assertEqual(count, 1)
+
+    def test_e_acute_artifact_is_repaired(self) -> None:
+        fixed, count = checker.apply_mojibake_repairs(f"caf{_garble('é')} bar")
+        self.assertEqual(fixed, "café bar")
+        self.assertEqual(count, 1)
+
+    def test_nbsp_artifact_is_repaired(self) -> None:
+        fixed, count = checker.apply_mojibake_repairs(f"x{_garble(' ')}y")
+        self.assertEqual(fixed, "x y")
+        self.assertEqual(count, 1)
+
+    def test_legitimate_accented_text_is_untouched(self) -> None:
+        text = "café — déjà vu, naïve ¿verdad?"
+        fixed, count = checker.apply_mojibake_repairs(text)
+        self.assertEqual(fixed, text)
+        self.assertEqual(count, 0)
+
+    def test_partial_image_is_not_repaired(self) -> None:
+        # 'â€"' with a plain ASCII quote is NOT a decodable byte image
+        # (E2 80 22 is invalid UTF-8) — must be left alone, never guessed.
+        text = 'broken â€" thing'
+        fixed, count = checker.apply_mojibake_repairs(text)
+        self.assertEqual(fixed, text)
+        self.assertEqual(count, 0)
+
+    def test_repair_is_idempotent(self) -> None:
+        once, _ = checker.apply_mojibake_repairs(f"a {_garble('—')} b {_garble('é')} c")
+        twice, count = checker.apply_mojibake_repairs(once)
+        self.assertEqual(twice, once)
+        self.assertEqual(count, 0)
+
+    def test_every_repair_satisfies_roundtrip_proof(self) -> None:
+        # Note: only artifacts that can exist are testable — e.g. '”' (U+201D,
+        # UTF-8 ...9D) can never double-decode via cp1252 because byte 9D is
+        # undefined there; a cp1252 writer would have crashed, not garbled.
+        text = f"mix {_garble('“quoted')} and {_garble('…')} ends {_garble('naïve')}"
+        for _s, _e, observed, repaired in checker.find_mojibake_repairs(text):
+            self.assertEqual(repaired.encode("utf-8").decode("cp1252"), observed)
+
+
 class SweepTest(unittest.TestCase):
     def test_pure_cp1252_file_is_reencoded_with_roundtrip_proof(self) -> None:
         original = b"dash \x97 ellipsis \x85 quote \x92"

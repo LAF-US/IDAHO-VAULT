@@ -61,10 +61,13 @@ surface, not its boundary):
    repair is decode-with-correct-charset → re-encode, byte-reversible and
    verifiable.
 2. **Mojibake** — text already garbled by a past wrong decode being written
-   back (`â€"` where `—` was meant; `Ã©` for `é`). Survives as *valid* UTF-8,
-   so encoding checks alone never catch it; requires pattern sweeping
-   (ftfy-class heuristics) with human-reviewable diffs, because repairs are
-   interpretive.
+   back: an em-dash `—` whose UTF-8 bytes `E2 80 94` were once re-read as
+   cp1252 becomes a three-character artifact; `é`'s bytes `C3 A9` likewise
+   become a two-character one. (Specimens are named by their bytes here
+   deliberately, so this document never carries live artifacts that a
+   layer-2 sweep would "repair" out of its own definitions.) Survives as
+   *valid* UTF-8, so encoding checks alone never catch it; requires pattern
+   sweeping with human-reviewable diffs, because repairs are interpretive.
 3. **Homoglyph / codepoint nonconformity** — valid UTF-8, wrong characters:
    Cyrillic `е` in Latin text, non-breaking spaces posing as spaces,
    smart-quote or dash variants where the norm says otherwise. Pure policy
@@ -106,10 +109,10 @@ earlier by his framing directive.
   answer: **"Bounded heuristics (Recommended)"** — heuristic repair is
   allowed within the stated limits: in-scope only the closed families of
   known double-decode artifacts (UTF-8 read as cp1252/latin-1 and re-saved —
-  the `â€"`/`Ã©` class), applied only where the repaired text round-trips
-  back to the observed bytes; everything else — ambiguous sequences,
-  anything that fails the round-trip proof — flagged for human eyes, never
-  auto-repaired.
+  the `C3 A9`-for-`é` class), applied only where the repaired text
+  round-trips back to the observed bytes; everything else — ambiguous
+  sequences, anything that fails the round-trip proof — flagged for human
+  eyes, never auto-repaired.
 - **N5 — Portability. SETTLED by directive.** Logan's directive at the
   program's creation (2026-07-07): the program is *"general, not specific
   to this repo."* The apparatus is written repo-agnostic (a checker and a

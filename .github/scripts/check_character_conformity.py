@@ -191,6 +191,119 @@ def scan(
     return findings, undeclared
 
 
+# --- layer 2: mojibake (double-decode artifacts) -----------------------------
+#
+# N4 ruling (Logan, 2026-07-08): bounded heuristics. In scope ONLY the closed
+# family of double-decode artifacts — UTF-8 bytes once read as cp1252/latin-1
+# and written back, leaving sequences like the cp1252 renderings of an
+# em-dash's or e-acute's UTF-8 bytes as *valid UTF-8 text*. A repair is applied
+# only where it round-trips: repaired.encode("utf-8").decode(charset) must
+# reproduce the observed text exactly. Anything else is flagged, never touched.
+
+# Characters whose cp1252 encoding is a UTF-8 lead byte (C2-F4).
+_MOJIBAKE_LEAD = re.compile(
+    "[" + "".join(re.escape(bytes([b]).decode("cp1252")) for b in range(0xC2, 0xF5) if b not in (0x81, 0x8D, 0x8F, 0x90, 0x9D)) + "]"
+)
+
+
+def _cp1252_bytes(segment: str) -> bytes | None:
+    try:
+        return segment.encode("cp1252")
+    except UnicodeEncodeError:
+        return None
+
+
+def find_mojibake_repairs(text: str) -> list[tuple[int, int, str, str]]:
+    """Return provable double-decode repairs as (start, end, observed, repaired).
+
+    A span qualifies only if its cp1252 re-encoding is a valid UTF-8 multibyte
+    sequence run AND the repair survives the round-trip proof. Overlaps are
+    impossible: spans are maximal and consumed left to right.
+    """
+    repairs: list[tuple[int, int, str, str]] = []
+    i = 0
+    while True:
+        match = _MOJIBAKE_LEAD.search(text, i)
+        if not match:
+            return repairs
+        start = match.start()
+        # Extend greedily while the cp1252 image remains a prefix of valid UTF-8.
+        end = start
+        best: tuple[int, str] | None = None
+        while end < len(text) and end - start < 64:
+            end += 1
+            raw = _cp1252_bytes(text[start:end])
+            if raw is None:
+                break
+            try:
+                candidate = raw.decode("utf-8")
+            except UnicodeDecodeError as err:
+                if err.reason == "unexpected end of data":
+                    continue  # need more characters
+                break
+            if UTF8_MULTIBYTE.fullmatch(raw) or UTF8_MULTIBYTE.search(raw):
+                best = (end, candidate)
+        if best is None:
+            i = match.start() + 1
+            continue
+        end, repaired = best
+        observed = text[start:end]
+        # Round-trip proof: the repair, re-garbled the same way, is the observation.
+        if repaired.encode("utf-8").decode("cp1252", errors="strict") == observed:
+            repairs.append((start, end, observed, repaired))
+        i = end
+    return repairs
+
+
+def apply_mojibake_repairs(text: str) -> tuple[str, int]:
+    """Apply all provable repairs once (no recursive passes). Returns (text, count)."""
+    repairs = find_mojibake_repairs(text)
+    if not repairs:
+        return text, 0
+    out: list[str] = []
+    cursor = 0
+    for start, end, _observed, repaired in repairs:
+        out.append(text[cursor:start])
+        out.append(repaired)
+        cursor = end
+    out.append(text[cursor:])
+    return "".join(out), len(repairs)
+
+
+def run_mojibake_sweep(write: bool) -> int:
+    root = repo_root()
+    tracked = git_tracked_files()
+    attrs = git_text_attrs(tracked)
+    repaired_files = 0
+    total = 0
+    for path in tracked:
+        target = contained_path(root, path)
+        if target is None:
+            continue
+        try:
+            data = target.read_bytes()
+        except (FileNotFoundError, IsADirectoryError, PermissionError):
+            continue
+        if classify(attrs.get(path, {}), data) != "text":
+            continue
+        try:
+            text = (data[len(UTF8_BOM):] if data.startswith(UTF8_BOM) else data).decode("utf-8")
+        except UnicodeDecodeError:
+            continue  # layer-1 territory; the encoding sweep owns it
+        fixed, count = apply_mojibake_repairs(text)
+        if count == 0:
+            continue
+        repaired_files += 1
+        total += count
+        if write:
+            prefix = UTF8_BOM if data.startswith(UTF8_BOM) else b""
+            target.write_bytes(prefix + fixed.encode("utf-8"))
+        print(f"  [{'wrote' if write else 'would write'}] {path}: {count} double-decode span(s) repaired")
+    mode = "applied" if write else "dry-run (pass --write to apply)"
+    print(f"Mojibake sweep {mode}: {total} span(s) across {repaired_files} file(s), every repair round-trip-proven.")
+    return 0
+
+
 # --- sweeper (layer 1 only) -------------------------------------------------
 
 @dataclass
@@ -284,11 +397,14 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--paths-from-stdin", action="store_true")
     parser.add_argument("--sweep", action="store_true", help="layer-1 sweeper over the tracked tree")
+    parser.add_argument("--sweep-mojibake", action="store_true", help="layer-2 sweeper (double-decode artifacts, N4 bounds)")
     parser.add_argument("--write", action="store_true", help="apply sweep repairs (default: dry-run)")
     args = parser.parse_args()
 
     if args.sweep:
         return run_sweep(write=args.write)
+    if args.sweep_mojibake:
+        return run_mojibake_sweep(write=args.write)
 
     requested = set(sys.stdin.read().splitlines()) - {""} if args.paths_from_stdin else set()
     tracked = git_tracked_files()
