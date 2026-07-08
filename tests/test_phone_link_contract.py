@@ -28,6 +28,7 @@ class PhoneLinkContractTest(unittest.TestCase):
         )
 
         explicit_root = PROJECT_ROOT / "explicit-vault-root"
+        explicit_root.mkdir(exist_ok=True)
         with unittest.mock.patch.dict(os.environ, {"IDAHO_VAULT_ROOT": r"C:\ignored"}, clear=False):
             root, source = module.resolve_vault_root(explicit_root)
 
@@ -41,11 +42,25 @@ class PhoneLinkContractTest(unittest.TestCase):
         )
 
         env_root = PROJECT_ROOT / "env-vault-root"
+        env_root.mkdir(exist_ok=True)
         with unittest.mock.patch.dict(os.environ, {"IDAHO_VAULT_ROOT": str(env_root)}, clear=False):
             root, source = module.resolve_vault_root()
 
         self.assertEqual(root, env_root.resolve())
         self.assertEqual(source, "IDAHO_VAULT_ROOT")
+
+    def test_python_watcher_rejects_missing_configured_vault_root(self) -> None:
+        module = _load_module(
+            "phone_link_auto_sweep_missing_root_test_module",
+            ".github/scripts/phone_link_auto_sweep.py",
+        )
+
+        missing_root = PROJECT_ROOT / "missing-vault-root"
+        if missing_root.exists():
+            self.fail(f"Test setup expected missing path: {missing_root}")
+
+        with self.assertRaisesRegex(RuntimeError, "Vault root does not exist"):
+            module.resolve_vault_root(missing_root)
 
     def test_launcher_uses_python_not_powershell(self) -> None:
         launcher = (PROJECT_ROOT / "START-PHONE-LINK-SWEEP.cmd").read_text(encoding="utf-8")
@@ -72,6 +87,7 @@ class PhoneLinkContractTest(unittest.TestCase):
         )
 
         explicit_root = PROJECT_ROOT / "explicit-vault-root"
+        explicit_root.mkdir(exist_ok=True)
         with unittest.mock.patch.dict(os.environ, {"IDAHO_VAULT_ROOT": r"C:\ignored"}, clear=False):
             self.assertEqual(module.get_vault_root(explicit_root), explicit_root.resolve())
 
@@ -82,8 +98,22 @@ class PhoneLinkContractTest(unittest.TestCase):
         )
 
         env_root = PROJECT_ROOT / "env-vault-root"
+        env_root.mkdir(exist_ok=True)
         with unittest.mock.patch.dict(os.environ, {"IDAHO_VAULT_ROOT": str(env_root)}, clear=False):
             self.assertEqual(module.get_vault_root(), env_root.resolve())
+
+    def test_python_intake_rejects_missing_configured_vault_root(self) -> None:
+        module = _load_module(
+            "phone_link_intake_missing_root_test_module",
+            ".github/scripts/phone_link_intake.py",
+        )
+
+        missing_root = PROJECT_ROOT / "missing-intake-vault-root"
+        if missing_root.exists():
+            self.fail(f"Test setup expected missing path: {missing_root}")
+
+        with self.assertRaisesRegex(RuntimeError, "Vault root does not exist"):
+            module.get_vault_root(missing_root)
 
     def test_python_watcher_moves_file_once_into_vault_root(self) -> None:
         module = _load_module(
