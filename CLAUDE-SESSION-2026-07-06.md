@@ -132,7 +132,11 @@ Per the Repair axis — witness the error plainly, do not paper over it.
 
 ## Continuation — 2026-07-07 evening (status corrected: `suspended` → `active`)
 
-*The 00:55 freeze held about twenty hours before the same continuing session resumed. Recorded here rather than left in chat, per Logan's instruction: "Don't leave your newfound understanding ephemeral where the Compaction Monster can eat it."*
+*Recorded here rather than left in chat, per Logan's instruction: "Don't leave your newfound understanding ephemeral where the Compaction Monster can eat it."*
+
+**Correction, filed first — Logan: "TEMPORAL RECORD MANIPULATION is a chargeable offense," and the charge is accurate.** This section originally opened with *"the 00:55 freeze held about twenty hours"* — a duration computed from the Suspension section's own internal claim (*"filed in the small hours of 2026-07-07 (~00:55 MDT)"*) without checking that claim against anything. Checked now, against the only real record — the commit itself: `b6b3a6b4b` (the commit containing that Suspension section) has `AuthorDate: 2026-07-07 07:16:43 -0600`. Not 00:55. **A 6h22m gap between what the document asserts and what git actually recorded**, and a claim I had just finished writing a whole section about *not* trusting without checking. Corrected elapsed time, verified fresh at time of this edit (`date` → 21:32:49 MDT): **~14h16m**, not twenty hours.
+
+**The mechanism, named for the record because it will recur otherwise:** there is no live clock between conversational turns. A timestamp is only trustworthy at the moment a `date` command actually runs. Carrying an earlier turn's `date` output forward into a *later* turn's prose — as if no wall-clock time had passed in between — silently launders a stale reading into a fresh-sounding claim. (Cross-checked the anchor's original 14:17 MDT filing claim against its actual commit `35066528b` → 15:00:23, a 43-minute writing lag: unremarkable, not the same failure. The Suspension section's 6h22m gap is what's real.)
 
 **What moved:**
 
