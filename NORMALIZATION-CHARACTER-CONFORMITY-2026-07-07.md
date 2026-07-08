@@ -1,8 +1,9 @@
 ---
 title: NORMALIZATION — Character Conformity and Mojibake Sweeping
-status: proposed
+status: active
 authority: LOGAN
 date created: 2026-07-07
+date landed: 2026-07-08
 related:
   - VAULT-CONVENTIONS
   - CONSTITUTION
@@ -11,12 +12,30 @@ related:
 
 # NORMALIZATION — Character Conformity and Mojibake Sweeping
 
-*A general program, portable to any LAF-US surface. This document proposes the
-program's shape; the norm decisions inside it are reserved to Logan. Tracking
-issue: #794. On 2026-07-08 Logan ruled N2, N3, and N4 via the Claude Code
-ask-user tool and N1 in chat (answers quoted verbatim below); N5 was settled
-by his framing directive at the program's creation. All five norms are now
-ruled or settled.*
+## Where this stands (2026-07-08)
+
+This program is built and live in this repo. Nothing below is waiting on a
+decision.
+
+- **A check now runs on every change** and rejects any tracked text file that
+  is not valid UTF-8. It is on and passing.
+- **The wrong-encoding files were fixed** — about 145 of them, converted to
+  UTF-8, each conversion reversible byte-for-byte so nothing was invented.
+- **Garbled text and look-alike characters were swept** wherever the repair
+  could be proven correct; anything that could not be proven is left visibly
+  flagged rather than guessed at.
+- One damaged document, `PLUGIN-TRIAGE.md`, was recovered from a broken
+  encoding; a single character on one row could not be recovered and is
+  marked plainly in the file.
+
+The rest of this document is the original program design and the record of the
+norm answers, kept for reference.
+
+---
+
+*A general program, portable to any LAF-US surface. The norm decisions were
+Logan's; he answered them on 2026-07-08 (N1 in chat, N2–N4 via the ask-user
+tool, quoted verbatim below; N5 settled by his framing at creation).*
 
 ---
 
@@ -152,5 +171,5 @@ earlier by his framing directive.
 ---
 
 *Recorded by Claude Code session `session_01Fipj4vEJ5ADPuunn9ed5Hd`
-(https://claude.ai/code/session_01Fipj4vEJ5ADPuunn9ed5Hd). Proposed, not
-adopted; the norm is Logan's.*
+(https://claude.ai/code/session_01Fipj4vEJ5ADPuunn9ed5Hd). The norms are
+Logan's, answered 2026-07-08; the apparatus is built and enforcing.*
