@@ -1,10 +1,10 @@
 ---
 title: "Idaho PACs spent more than $4.2M on primary election races  • Idaho Capital Sun"
-source: "https://idahocapitalsun.com/2026/06/23/idaho-pacs-spent-more-than-4-2m-on-primary-races/?utm_source=newsletters.idahocapitalsun.com&utm_medium=newsletter&utm_campaign=idaho-pacs-spent-more-than-4m-on-primary-new-leader-heads-idaho-services-for-deaf-and-blind-northwest-may-be-in-for-strong-el-nino&_bhlid=074da1f41fec0373f4cdc59801a3d94fe7853c8c"
+source: "https://idahocapitalsun.com/2026/06/23/idaho-pacs-spent-more-than-4-2m-on-primary-races/?utm_source=newsletters.idahocapitalsun.com&utm_medium=newsletter&utm_campaign=act-would-fund-national-park-maintenance-council-urges-rural-health-priorities-kempthorne-to-be-honored-at-dedication&_bhlid=5b6d599f808f267c85c6da2d9aeca1ae375140a8"
 author:
   - "[[Laura Guido]]"
 published: 2026-06-23
-created: 2026-07-08
+created: 2026-07-07
 description: "Idaho political action committees, or PACs, spent more than $4.2 million to support or oppose candidates for May primary races this year."
 ---
 ## Idaho PACs spent more than $4.2M on primary election races
