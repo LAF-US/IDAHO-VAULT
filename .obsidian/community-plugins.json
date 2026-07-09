@@ -56,5 +56,8 @@
   "heatmap-calendar",
   "vault-inspector",
   "smart-context",
-  "smart-connections"
+  "smart-connections",
+  "homepage",
+  "smart-templates",
+  "smart-lookup"
 ]
