@@ -1,0 +1,11 @@
+{
+  "id": "20",
+  "subject": "[L2→L3] Heal Obsidian substrate (Templater #714, sync conflicts)",
+  "description": "Prereq for a stable Obsidian layer + tiered capture. Templater folder_templates empty-entry misfire leaking raw <%* %> in root-created daily notes (K7 / LAF-US/IDAHO-VAULT#714). Sync producing conflict files at vault root (blocks tiered phone/laptop/homelab loadout). CHAINFIRE backlink damage noted, back-burner per Logan.",
+  "activeForm": "Healing Obsidian substrate",
+  "status": "pending",
+  "blocks": [
+    "21"
+  ],
+  "blockedBy": []
+}
