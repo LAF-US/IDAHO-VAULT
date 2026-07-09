@@ -1,0 +1,11 @@
+{
+  "id": "22",
+  "subject": "[L4] BEEFSTACK capability router — gated on Hermes + Logan design (#690)",
+  "description": "BEEFSTACK capability router (Capability Analyzer → Tier → Provider → Locality → Cost → Hygiene → Endpoint). Gated on Logan's open design decisions at #690 (implementation surface, retry budget, cost meaning, capability-signal source, T1 tie-break). Two live repros now on record to feed the design: (1) 07-03 Ollama cold-load timeout poisoning agent:main:main; (2) 07-06 OpenRouter account-level 402 with no cross-bucket fallback (task #25 is the stopgap). Hermes' flat fallback_providers list is the down payment, not the ideal — per Logan 07-06.",
+  "activeForm": "Building BEEFSTACK router",
+  "status": "pending",
+  "blocks": [],
+  "blockedBy": [
+    "21"
+  ]
+}
