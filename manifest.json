@@ -61,10 +61,10 @@
     "status": "active",
     "authority_boundary": "Obsidian config files define interface state; the plugin registry document defines doctrine and promotion rules.",
     "current_state": {
-      "enabled_community_count": 53,
+      "enabled_community_count": 56,
       "enabled_core_count": 31,
       "installed_community_count": 73,
-      "dormant_installed_count": 20,
+      "dormant_installed_count": 17,
       "enabled_missing_manifest_count": 0
     },
     "entrypoints": [
@@ -142,7 +142,10 @@
       "links",
       "dataview",
       "obsidian-file-cooker",
-      "obsidian-importer"
+      "obsidian-importer",
+      "obsidian-full-calendar",
+      "ai-templater",
+      "translate"
     ],
     "enabled_core_plugins": [
       "file-explorer",
@@ -806,7 +809,6 @@
       }
     ],
     "dormant_installed_plugins": [
-      "ai-templater",
       "calendarium",
       "cmdr",
       "dataview-properties",
@@ -820,12 +822,10 @@
       "msg-handler",
       "obsidian-5e-statblocks",
       "obsidian-dice-roller",
-      "obsidian-full-calendar",
       "obsidian-kanban",
       "obsidian42-brat",
       "smart-context",
-      "table-editor-obsidian",
-      "translate"
+      "table-editor-obsidian"
     ],
     "enabled_plugins_missing_manifest": []
   },
