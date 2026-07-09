@@ -13,7 +13,6 @@ from datetime import datetime
 from pathlib import Path
 
 
-DEFAULT_SOURCE = Path.home() / "Downloads" / "Mobile Devices"
 DEFAULT_SOURCES = (
     Path.home() / "Downloads" / "Mobile Devices",
     Path.home() / "Downloads" / "Phone Link",
@@ -131,14 +130,17 @@ def sweep_once(source_dir: Path, vault_root: Path, log_path: Path, settle_second
             write_log(log_path, f"SKIP (not ready): {path.name}")
             continue
 
-        destination, disposition = resolve_destination(path, vault_root)
-        if destination is None:
-            write_log(log_path, f"SKIP (duplicate): {path.name}")
-            continue
+        try:
+            destination, disposition = resolve_destination(path, vault_root)
+            if destination is None:
+                write_log(log_path, f"SKIP (duplicate): {path.name}")
+                continue
 
-        shutil.move(str(path), str(destination))
-        moved += 1
-        write_log(log_path, f"MOVED ({disposition}): {path.name} -> {destination.name}")
+            shutil.move(str(path), str(destination))
+            moved += 1
+            write_log(log_path, f"MOVED ({disposition}): {path.name} -> {destination.name}")
+        except OSError as exc:
+            write_log(log_path, f"ERROR: {path.name}: {exc}")
     return moved
 
 
