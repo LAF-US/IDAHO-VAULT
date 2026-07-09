@@ -1,0 +1,11 @@
+{
+  "id": "27",
+  "subject": "[L2·now] Android app chat spawns no run — tracked at LAF-US/IDAHO-VAULT#792",
+  "description": "SUSPENDED 2026-07-07 ~00:55 MDT with full characterization + research. SYMPTOM: app chat-tab sends file into session transcripts (webchat-labeled, session retitled \"Pixel 10 Pro\") but spawn no agent run — no reply. Reproduced on queue-mode, live-node, and post-trustedProxies trusted fresh connections; same-session contrast: Obsidian send 00:34 → run+reply in 3s (via the new Direct-Mistral rung), phone send 00:41 → raw append. Sender-identity-keyed. Logan attests phone chat worked ~07-03 when the gateway first stabilized. RESEARCH (07-07): the Android app lives in-tree (openclaw/openclaw) and iterates DAILY — mobile-chat substrate (resume cursors #100197, offline session cache #100194, streaming replay #100196) all landed 07-05/06; 3 android PRs merged 07-07 incl. reconnect fix #101519. Installed gateway 2026.6.11 (Jun 30) is latest STABLE; the app tracks 2026.7.1-beta (Jul 2/5) + main. LEADING THEORY: version skew — app updated in the 07-03→07-06 gap, its new offline-cache send shape files-without-dispatch on the older stable gateway. No matching upstream issue found (report would be novel). THAW OPTIONS: (A) check/update app on phone (cheapest, today's builds carry reconnect fixes) → resend; (B) gateway → 2026.7.1-beta.2 to match app era — CAUTION: openclaw update wipes the Obsidian origin patch → re-run ~/.openclaw/patch-obsidian-origin.sh immediately after (config survives); (C) file upstream with repro + both versions (needs app version from phone; external contact gated on Logan). Working-send log signature: [tool-policy] + [model-fetch] within seconds; inbound send methods NOT logged at INFO.",
+  "status": "pending",
+  "blocks": [],
+  "blockedBy": [],
+  "metadata": {
+    "github_issue": "https://github.com/LAF-US/IDAHO-VAULT/issues/792"
+  }
+}
