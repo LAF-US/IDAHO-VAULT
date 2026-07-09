@@ -573,9 +573,9 @@
     "authority_boundary": "Obsidian config files define interface state; the plugin registry document defines doctrine and promotion rules.",
     "promotion_gate": "No plugin-state change counts as legitimate until !/PLUGIN-REGISTRY.md is updated.",
     "counts": {
-      "enabled_community": 53,
+      "enabled_community": 56,
       "enabled_core": 31,
-      "dormant_installed": 20,
+      "dormant_installed": 17,
       "installed_total": 73,
       "enabled_missing_manifest": 0
     },
@@ -681,10 +681,10 @@
     "source_of_truth": "tracked_obsidian_config",
     "generated_by": ".github/scripts/sync_obsidian_plugin_registry.py",
     "current_state": {
-      "enabled_community_count": 53,
+      "enabled_community_count": 56,
       "enabled_core_count": 31,
       "installed_community_count": 73,
-      "dormant_installed_count": 20,
+      "dormant_installed_count": 17,
       "enabled_missing_manifest_count": 0
     },
     "enabled_community_plugins": [
@@ -740,7 +740,10 @@
       "links",
       "dataview",
       "obsidian-file-cooker",
-      "obsidian-importer"
+      "obsidian-importer",
+      "obsidian-full-calendar",
+      "ai-templater",
+      "translate"
     ],
     "enabled_core_plugins": [
       "file-explorer",
@@ -1216,7 +1219,6 @@
       }
     ],
     "dormant_installed_plugins": [
-      "ai-templater",
       "calendarium",
       "cmdr",
       "dataview-properties",
@@ -1230,12 +1232,10 @@
       "msg-handler",
       "obsidian-5e-statblocks",
       "obsidian-dice-roller",
-      "obsidian-full-calendar",
       "obsidian-kanban",
       "obsidian42-brat",
       "smart-context",
-      "table-editor-obsidian",
-      "translate"
+      "table-editor-obsidian"
     ],
     "enabled_plugins_missing_manifest": [],
     "promotion_rule": "Any committed Obsidian plugin config change must be accompanied by synced manifest.json and swarm.json plugin_layer blocks."
