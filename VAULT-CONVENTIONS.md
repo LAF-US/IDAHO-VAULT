@@ -966,6 +966,35 @@ Emojis are **first-class vault syntax** as of 2026-04-02 (Logan, superseding pri
 - Emojis may appear in note titles, frontmatter, body text, DOCKET entries, and commit messages
 - Use semantically — emojis carry meaning and should reinforce, not decorate
 
+### Text encoding and character conformity
+
+The declared encoding for every tracked text file is **UTF-8, BOM-aware**: a
+file must be valid UTF-8; a single leading byte-order mark is tolerated but
+never added; anything not decodable as UTF-8 is nonconforming. This is the
+content-byte sibling of NETWEB (below) — NETWEB governs characters in *paths*,
+this governs bytes in *file contents*.
+
+- **Encoding conformity is infrastructure, not voice.** It applies everywhere,
+  including `.*/` dotfolder chambers; only a file's byte representation is
+  corrected, never its content.
+- **Typographic characters are welcome as UTF-8 codepoints** — the vault's
+  style is em-dash- and curly-quote-heavy; only their *mis-encodings* are swept.
+- **Homoglyphs are nonconforming in prose** — a look-alike letter from one
+  script sitting inside a word of another (a Cyrillic `е` in Latin text) is
+  normalized to the surrounding script; genuinely single-script text in any
+  language is never touched. Verbatim exhibits are normalized too (the #638
+  precedent).
+- **Mojibake** (valid UTF-8 but garbled, `Ã©` where `é` was meant) is repaired
+  only within closed, round-trip-proven double-decode families; anything that
+  cannot be proven is flagged for a human, never guessed.
+- The standard is portable to any LAF-US surface; IDAHO-VAULT is its first
+  deployment.
+
+Enforced per-PR by `.github/scripts/check_character_conformity.py` (the
+encoding gate is live; mojibake and homoglyph sweeps run on demand with
+reviewable diffs). Program record: `NORMALIZATION-CHARACTER-CONFORMITY-2026-07-07.md`.
+Norm ruled by Logan 2026-07-08.
+
 ---
 ## Guiding Principles
 
