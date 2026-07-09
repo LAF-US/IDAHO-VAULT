@@ -573,11 +573,11 @@
     "authority_boundary": "Obsidian config files define interface state; the plugin registry document defines doctrine and promotion rules.",
     "promotion_gate": "No plugin-state change counts as legitimate until !/PLUGIN-REGISTRY.md is updated.",
     "counts": {
-      "enabled_community": 56,
+      "enabled_community": 66,
       "enabled_core": 31,
-      "dormant_installed": 17,
+      "dormant_installed": 8,
       "installed_total": 73,
-      "enabled_missing_manifest": 0
+      "enabled_missing_manifest": 1
     },
     "entrypoints": [
       {
@@ -681,11 +681,11 @@
     "source_of_truth": "tracked_obsidian_config",
     "generated_by": ".github/scripts/sync_obsidian_plugin_registry.py",
     "current_state": {
-      "enabled_community_count": 56,
+      "enabled_community_count": 66,
       "enabled_core_count": 31,
       "installed_community_count": 73,
-      "dormant_installed_count": 17,
-      "enabled_missing_manifest_count": 0
+      "dormant_installed_count": 8,
+      "enabled_missing_manifest_count": 1
     },
     "enabled_community_plugins": [
       "roygbiv-day-accent",
@@ -697,6 +697,7 @@
       "obsidian42-strange-new-worlds",
       "obsidian-tasks-plugin",
       "obsidian-folder-index",
+      "oz-image-plugin",
       "phone-to-roam-to-obsidian",
       "moviegrabber",
       "move-cursor-on-startup",
@@ -710,15 +711,19 @@
       "tipa-support",
       "obsidian-leaflet-plugin",
       "initiative-tracker",
+      "obsidian-5e-statblocks",
       "obsidian-footnotes",
       "markdown-attributes",
       "metadata-menu",
       "vault-inspector",
       "text-extractor",
+      "homepage",
       "letterboxd-rss-sync",
       "export-graph-view",
       "obsidian-mind-map",
+      "heatmap-calendar",
       "smart-templates",
+      "smart-context",
       "smart-connections",
       "obsidian-advanced-uri",
       "ai-image-analyzer",
@@ -726,8 +731,8 @@
       "obsidian-tidy-footnotes",
       "tag-wrangler",
       "smart-lookup",
-      "nexus-ai-chat-importer",
       "beautiful-contact-cards",
+      "calendarium",
       "dataview-serializer",
       "breadcrumbs",
       "calendar",
@@ -743,7 +748,12 @@
       "obsidian-importer",
       "obsidian-full-calendar",
       "ai-templater",
-      "translate"
+      "translate",
+      "obsidian-kanban",
+      "obsidian-dice-roller",
+      "handwritten-notes",
+      "dataview-properties",
+      "desk"
     ],
     "enabled_core_plugins": [
       "file-explorer",
@@ -864,12 +874,6 @@
         "path": ".obsidian/plugins/desk/manifest.json"
       },
       {
-        "id": "editing-toolbar",
-        "name": "Editing Toolbar",
-        "version": "4.0.9",
-        "path": ".obsidian/plugins/editing-toolbar/manifest.json"
-      },
-      {
         "id": "export-graph-view",
         "name": "Export Graph View",
         "version": "1.2.2",
@@ -920,7 +924,7 @@
       {
         "id": "make-md",
         "name": "make.md",
-        "version": "1.3.4",
+        "version": "1.3.5",
         "path": ".obsidian/plugins/make-md/manifest.json"
       },
       {
@@ -988,6 +992,12 @@
         "name": "Fantasy Statblocks",
         "version": "4.10.3",
         "path": ".obsidian/plugins/obsidian-5e-statblocks/manifest.json"
+      },
+      {
+        "id": "obsidian-advanced-slides",
+        "name": "Advanced Slides",
+        "version": "1.20.0",
+        "path": ".obsidian/plugins/obsidian-advanced-slides/manifest.json"
       },
       {
         "id": "obsidian-advanced-uri",
@@ -1219,25 +1229,18 @@
       }
     ],
     "dormant_installed_plugins": [
-      "calendarium",
       "cmdr",
-      "dataview-properties",
-      "desk",
-      "editing-toolbar",
-      "handwritten-notes",
-      "heatmap-calendar",
-      "homepage",
       "loom",
       "make-md",
       "msg-handler",
-      "obsidian-5e-statblocks",
-      "obsidian-dice-roller",
-      "obsidian-kanban",
+      "nexus-ai-chat-importer",
+      "obsidian-advanced-slides",
       "obsidian42-brat",
-      "smart-context",
       "table-editor-obsidian"
     ],
-    "enabled_plugins_missing_manifest": [],
+    "enabled_plugins_missing_manifest": [
+      "oz-image-plugin"
+    ],
     "promotion_rule": "Any committed Obsidian plugin config change must be accompanied by synced manifest.json and swarm.json plugin_layer blocks."
   },
   "cross_swarm_sync": {

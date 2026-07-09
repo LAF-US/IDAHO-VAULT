@@ -96,7 +96,7 @@ He's excessive, yet unimpressive
 
 He'll go on forever unless...
 
-**What do you suggest?** Uh, assassination?
+*What do you suggest?* Uh, assassination?
 
   
 
