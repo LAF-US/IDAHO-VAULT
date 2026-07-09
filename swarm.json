@@ -573,10 +573,10 @@
     "authority_boundary": "Obsidian config files define interface state; the plugin registry document defines doctrine and promotion rules.",
     "promotion_gate": "No plugin-state change counts as legitimate until !/PLUGIN-REGISTRY.md is updated.",
     "counts": {
-      "enabled_community": 66,
+      "enabled_community": 65,
       "enabled_core": 31,
-      "dormant_installed": 8,
-      "installed_total": 73,
+      "dormant_installed": 6,
+      "installed_total": 70,
       "enabled_missing_manifest": 1
     },
     "entrypoints": [
@@ -681,10 +681,10 @@
     "source_of_truth": "tracked_obsidian_config",
     "generated_by": ".github/scripts/sync_obsidian_plugin_registry.py",
     "current_state": {
-      "enabled_community_count": 66,
+      "enabled_community_count": 65,
       "enabled_core_count": 31,
-      "installed_community_count": 73,
-      "dormant_installed_count": 8,
+      "installed_community_count": 70,
+      "dormant_installed_count": 6,
       "enabled_missing_manifest_count": 1
     },
     "enabled_community_plugins": [
@@ -735,7 +735,6 @@
       "calendarium",
       "dataview-serializer",
       "breadcrumbs",
-      "calendar",
       "dataview-autocompletion",
       "days-since",
       "wikipedia-search",
@@ -916,12 +915,6 @@
         "path": ".obsidian/plugins/links/manifest.json"
       },
       {
-        "id": "loom",
-        "name": "Loom",
-        "version": "1.22.6",
-        "path": ".obsidian/plugins/loom/manifest.json"
-      },
-      {
         "id": "make-md",
         "name": "make.md",
         "version": "1.3.5",
@@ -962,18 +955,6 @@
         "name": "Moviegrabber",
         "version": "1.1.23",
         "path": ".obsidian/plugins/moviegrabber/manifest.json"
-      },
-      {
-        "id": "msg-handler",
-        "name": "MSG Handler",
-        "version": "0.0.6",
-        "path": ".obsidian/plugins/msg-handler/manifest.json"
-      },
-      {
-        "id": "nexus-ai-chat-importer",
-        "name": "Nexus AI Chat Importer",
-        "version": "1.6.8",
-        "path": ".obsidian/plugins/nexus-ai-chat-importer/manifest.json"
       },
       {
         "id": "nldates-obsidian",
@@ -1229,11 +1210,9 @@
       }
     ],
     "dormant_installed_plugins": [
+      "calendar",
       "cmdr",
-      "loom",
       "make-md",
-      "msg-handler",
-      "nexus-ai-chat-importer",
       "obsidian-advanced-slides",
       "obsidian42-brat",
       "table-editor-obsidian"
