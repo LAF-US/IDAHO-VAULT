@@ -1,8 +1,6 @@
 name: Daily To-Do Rollover
 
 on:
-  schedule:
-    - cron: "0 10 * * *" # 4 AM MT
   workflow_dispatch:
 
 jobs:

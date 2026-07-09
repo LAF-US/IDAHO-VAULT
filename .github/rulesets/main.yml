@@ -1,0 +1,28 @@
+# NOTE: This file is a reference / config-as-code snapshot of the intended
+# GitHub repository ruleset. No workflow in this repo currently applies it to
+# the live GitHub Ruleset API (grep of .github/workflows and .github/scripts
+# turns up no `ruleset` sync step) — until such a sync step exists, an admin
+# must also apply matching settings via GitHub → Settings → Rules → Rulesets
+# for this to take effect. See PR #482 and issue #399.
+
+name: Main Ruleset
+target: branch
+enforcement: active
+
+description: Primary repository rules for IDAHO-VAULT
+
+conditions:
+  ref_name:
+    include:
+      - refs/heads/main
+    exclude: []
+
+rules:
+  - type: pull_request
+    parameters:
+      dismiss_stale_reviews_on_push: false
+      automatic_copilot_code_review_enabled: true
+      require_code_owner_review: false
+      require_last_push_approval: false
+      required_approving_review_count: 0
+      required_review_thread_resolution: false
