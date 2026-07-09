@@ -42,7 +42,6 @@
   "obsidian-tidy-footnotes",
   "tag-wrangler",
   "smart-lookup",
-  "nexus-ai-chat-importer",
   "beautiful-contact-cards",
   "calendarium",
   "dataview-serializer",
@@ -62,5 +61,6 @@
   "ai-templater",
   "translate",
   "obsidian-kanban",
-  "obsidian-dice-roller"
+  "obsidian-dice-roller",
+  "handwritten-notes"
 ]
