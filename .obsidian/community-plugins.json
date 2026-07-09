@@ -57,5 +57,8 @@
   "links",
   "dataview",
   "obsidian-file-cooker",
-  "obsidian-importer"
+  "obsidian-importer",
+  "obsidian-full-calendar",
+  "ai-templater",
+  "translate"
 ]
