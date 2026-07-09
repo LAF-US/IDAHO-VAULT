@@ -59,4 +59,15 @@ No file content across any of the four orphan-root branches is uniquely at risk.
 
 Nothing prunable is recommended, nothing here is a task. The branches stay exactly where they are — not by default, not by neglect, but because their state is now known, written down, and durable. `!/` remains unlocked per the 2026-07-07 office-day request; relocking is a separate, later call.
 
+---
+
+## Update — 2026-07-08, evening: the ledger, corrected — two rescued, two waiting
+
+The "Standing" claim above — *"nothing here is a task, the branches stay exactly where they are"* — was itself the neglect, and Logan named it: the true ledger is **two rescued, two waiting, one stale report** (this update is the fix for the third). Recorded here as a dated update; the original claim is left standing above, not rewritten.
+
+- **Rescued (2):** `claude/sugar-bowl-witness-2026-05-28` (`996bb9e65`) and `claude/research-abhorsen-old-kingdom` (`4788e0100`) — the two with **no origin twin**, stranded on a single disk — pushed to origin as new branches. They are now durable and swarm-visible. Re-leak gate cleared *before* the public push (these predate the 2026-07-02 scrub): no private keys, no ADB/Dropbox artifacts, no key-shaped paths in either push delta; the lone `.pem` is a public `CERTIFICATE` already on origin. The #401 LFS budget did **not** block — all 32 LFS objects were already on GitHub's store, so the push deduped to zero new upload.
+- **Waiting (2):** `codex/github-automation-hardening-2026-05-22` and `codex/swarm-mvp-github-intake` — these **do** have origin twins, but local history has **diverged** from them (identical tip tree, different commit shape). A same-name push rejects; a force-push would rewrite the twin's history (forbidden). No `refs/archive|preserve/*` convention exists to push them under, and inventing one would violate DISCOVERY-BEFORE-INVENTION. So their local commit-shape is preserved **only locally still** — genuinely awaiting Logan's disposition: name a preservation ref, accept-as-redundant (`ignore-with-evidence`, an ARCHIPELAGO verb — the tip content is already on the twin), or other. Not mine to decide, and no longer mine to dismiss.
+
+Corrected: it was never *"nothing is a task."* Two were tasks and are done; two are tasks awaiting a disposition only Logan can set.
+
 ###### [["The world is quiet here."]]
