@@ -12,9 +12,9 @@ date modified: Wednesday, June 3rd 2026, 2:28:19 pm
 
 **Tired of generic AI code suggestions?** With just a few Markdown files, you can teach GitHub Copilot to follow your team’s coding standards, architectural preferences, and even automate repetitive tasks. In this guide, you’ll learn how to transform Copilot into a truly personalized coding partner — right inside VS Code.
 
-### Global Project-Level Instructions
+## Global Project-Level Instructions
 
-\`.copilot-instructions.md\` - This Markdown file lives inside the.github/ folder of your repository and defines general guidelines Copilot should follow across the entire project. Global instructions ensure every developer and every Copilot suggestion follows your team’s standards, no matter the file or task.
+\`copilot-instructions.md\` - This Markdown file lives inside the \`.github/\` folder of your repository and defines general guidelines Copilot should follow across the entire project. Global instructions ensure every developer and every Copilot suggestion follows your team’s standards, no matter the file or task.
 
 **Key Features:**
 
@@ -104,11 +104,11 @@ To enable Copilot customization in Visual Studio Code, you need to ensure the fo
 
 2\. Search for “Copilot” and ensure the following settings are enabled:
 
-![](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*L0Vv0AxeagWmZ7iqtWJZNQ.png)
+![VS Code Copilot settings panel showing the instructions options enabled](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*L0Vv0AxeagWmZ7iqtWJZNQ.png)
 
 VS Code Copilot settings: Enable these options for instructions
 
-![](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*ETIoGGeLrWsL9NHpb88nMA.png)
+![VS Code Copilot settings panel showing the prompts options enabled](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*ETIoGGeLrWsL9NHpb88nMA.png)
 
 VS Code Copilot settings: Enable these options for prompts
 

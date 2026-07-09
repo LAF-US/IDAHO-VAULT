@@ -26,4 +26,4 @@ Copilot can even share screenshots of what it has done in its pull request:
 
 Copilot coding agent is available to all paid Copilot users. If you have Copilot Business or Copilot Enterprise, an administrator will need to [enable access](https://docs.github.com/en/enterprise-cloud@latest/copilot/how-tos/agents/copilot-coding-agent/enabling-copilot-coding-agent).
 
-To find out more about Copilot coding agent and learn best practices, head to [our documentation](https://gh.io/copilot-coding-agent-docs).[Back to top](#start-of-content)
+To find out more about Copilot coding agent and learn best practices, head to [our documentation](https://gh.io/copilot-coding-agent-docs).
