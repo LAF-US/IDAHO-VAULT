@@ -133,7 +133,8 @@ def sweep_once(source_dir: Path, vault_root: Path, log_path: Path, settle_second
         try:
             destination, disposition = resolve_destination(path, vault_root)
             if destination is None:
-                write_log(log_path, f"SKIP (duplicate): {path.name}")
+                path.unlink()
+                write_log(log_path, f"DROPPED (duplicate already in vault): {path.name}")
                 continue
 
             shutil.move(str(path), str(destination))
@@ -228,6 +229,8 @@ def watch_windows(source_dirs: list[Path], vault_root: Path, log_path: Path, set
                 )
                 if not ok:
                     raise ctypes.WinError(ctypes.get_last_error())
+                sweep_sources(source_dirs, vault_root, log_path, settle_seconds)
+                time.sleep(max(settle_seconds, 0.5))
                 sweep_sources(source_dirs, vault_root, log_path, settle_seconds)
         finally:
             close_handle(handle)
