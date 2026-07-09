@@ -14,7 +14,7 @@ date modified: Wednesday, June 3rd 2026, 2:28:19 pm
 
 ## Global Project-Level Instructions
 
-\`.copilot-instructions.md\` - This Markdown file lives inside the.github/ folder of your repository and defines general guidelines Copilot should follow across the entire project. Global instructions ensure every developer and every Copilot suggestion follows your team’s standards, no matter the file or task.
+\`copilot-instructions.md\` - This Markdown file lives inside the \`.github/\` folder of your repository and defines general guidelines Copilot should follow across the entire project. Global instructions ensure every developer and every Copilot suggestion follows your team’s standards, no matter the file or task.
 
 **Key Features:**
 
