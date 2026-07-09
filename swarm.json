@@ -575,8 +575,8 @@
     "counts": {
       "enabled_community": 53,
       "enabled_core": 31,
-      "dormant_installed": 19,
-      "installed_total": 72,
+      "dormant_installed": 20,
+      "installed_total": 73,
       "enabled_missing_manifest": 0
     },
     "entrypoints": [
@@ -683,8 +683,8 @@
     "current_state": {
       "enabled_community_count": 53,
       "enabled_core_count": 31,
-      "installed_community_count": 72,
-      "dormant_installed_count": 19,
+      "installed_community_count": 73,
+      "dormant_installed_count": 20,
       "enabled_missing_manifest_count": 0
     },
     "enabled_community_plugins": [
@@ -781,6 +781,12 @@
         "name": "AI image analyzer",
         "version": "1.2.2",
         "path": ".obsidian/plugins/ai-image-analyzer/manifest.json"
+      },
+      {
+        "id": "ai-templater",
+        "name": "AI for Templater",
+        "version": "1.0.20",
+        "path": ".obsidian/plugins/ai-templater/manifest.json"
       },
       {
         "id": "backlink-cache",
@@ -1210,6 +1216,7 @@
       }
     ],
     "dormant_installed_plugins": [
+      "ai-templater",
       "calendarium",
       "cmdr",
       "dataview-properties",
