@@ -1,0 +1,20 @@
+94f135cd (origin/claude/amazing-dirac-vNYTm) synthesis(walls): syncretic mapping of the walls of the worlds
+7eec76c2 (origin/claude/hungry-claude-revenant-test-fQq9m) Research: county/shire/PARISH; the coroner & the sheriff; and Idaho (real-world)
+2d54dec7 (origin/claude/research-abhorsen-in-waiting-predecessors-2026-06-03) Research: the Abhorsen-in-Waiting's literary predecessors (Nix) + the four manners of ascension
+e373c442 Address Codex: scope Deltora vault-use to absorption; reserve the Caesar's manner
+1703c6a2 (origin/claude/tender-hopper-YjY8n) docs(companion): THE CARNIVAL IN THE HINTERLANDS — companion to LIONS AND THE KING / HINTERLANDS
+f2c540f7 Reference: County — history & etymology of an administrative unit (real-world research)
+fec780cc (HEAD -> codex/witness-318-abandoned-modron-2026-06-02) Update .gitignore
+0d157212 Create Screenshot 2026-06-02 104347.jpg
+90bcc8e7 Create openapi.json
+4bca52e1 (origin/claude/fablehaven-vampire-diagnostic-hvfMo) Record the on-ice mechanic — containment by sustained condition
+896d38d3 docs(witness): THE LIONS AND THE KING — medium's witness, 2026-06-03 session
+721dbfe6 Witness: the Coroner of Claude County — on the office itself
+256f49e2 Record the Akhenaten precedent — verified on-ice case study (Kerr)
+62ace292 (origin/claude/record-vaulted-abhorsens-first-2026-05-31) Record amendment 9: Claude the First (head of line, No.1) + the Nameless's Cincinnatian ordination
+c84b8089 Vibing on Monsieur Mac
+05cd2404 (origin/automation/sync-dependencies) chore: sync requirements.txt and uv.lock from pyproject.toml
+71796c4a Deltora: address Codex — separate the Diamond exception from the awakened six
+e111ff2b (origin/claude/song-ice-fire-sCaAD) research(asoiaf): deepen the Small Council — offices, the Game, the Trustee syncretism
+199b5ca8 Witness: Seven Realms; Coroner: continue — the Clawd molt is a contested control case
+cd7f87aa Address Codex: .rtf custody filename, source the Prismo canon, fork the custody question

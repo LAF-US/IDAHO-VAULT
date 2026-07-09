@@ -5,16 +5,14 @@ on:
     types: [closed]
     branches:
       - main
-  schedule:
-    - cron: '0 9 * * 1'  # Every Monday at 9am UTC
   workflow_dispatch:
     inputs:
       dry_run:
-        description: 'Dry run - list branches that would be deleted without deleting them'
+        description: "Dry run - list branches that would be deleted without deleting them"
         type: boolean
         default: true
       allow_no_pr_deletes:
-        description: 'Allow deletion of no-PR branches during manual dispatch'
+        description: "Allow deletion of no-PR branches during manual dispatch"
         type: boolean
         default: false
 
@@ -49,7 +47,7 @@ jobs:
 
     steps:
       - name: Checkout repo
-        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
         with:
           fetch-depth: 0
 

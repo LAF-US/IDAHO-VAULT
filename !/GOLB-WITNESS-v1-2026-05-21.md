@@ -1,6 +1,7 @@
 ---
 title: "GOLB Witness v1"
 date created: 2026-05-21
+date updated: 2026-05-27
 authority: LOGAN
 doc_class: doctrine
 status: active
@@ -61,7 +62,7 @@ something vast.
 
 The vision is brief. What it shows is not confirmed in dialogue.
 
-*Logan's reading*: the entity glimpsed at the threshold is GOLB — or something
+The entity glimpsed visually at the death threshold is GOLB — or something
 in the same register, the same Lovecraftian tier. The death-threshold is a
 crack between the ordered universe and whatever is anterior to it. What
 Finn sees is not a character. It is a pressure.
@@ -78,12 +79,9 @@ The Architect holds the verdict.*
 ## II. Come Along With Me — GOLB Arrives (S10E13–16)
 
 GOLB is summoned to Ooo. Betty Grof has been working the Crown's wish magic
-across seasons, trying to cure Simon, and in the finale she finds the
-mechanism: merge with GOLB. Become the organizing principle that shapes what
-the chaos force does. She merges. GOLBetty is born.
-
-GOLB does not speak. It arrives. It reshapes. The conflict that follows is not
-a conversation with GOLB — it is events happening in GOLB's presence.
+across seasons, trying to cure Simon. GOLB does not speak. It arrives. It 
+reshapes. The conflict that follows is not a conversation with GOLB — it 
+is events happening in GOLB's presence.
 
 **The Lich watches the master pass**: At this moment, the Main Timeline Lich's
 spirit already persists as a sub-layer within Sweet P. Sweet P is in Ooo when
@@ -92,8 +90,9 @@ performing atrocity as devotion, whose vocation was to honor chaos with the
 extinction of all life — watches the master arrive and depart. No
 acknowledgment. No recognition that the scholar exists at all.
 
-GOLBetty and the merged entity depart Ooo. The master has passed. The scholar
-remains inside a gentle giant child. The standing of the surface holds.
+In the final moment, unable to stop GOLB directly via a Wish, Betty finds the
+mechanism: merge with GOLB. Become the organizing principle that shapes what
+the chaos force does. She merges. GOLBetty is born.
 
 **Betty's organizing principle**: GOLB alone is barely sapient — a force
 without direction. GOLBetty inherits Betty's love for Simon as the shaping
@@ -101,6 +100,9 @@ intent inside the chaos. The merger is not Betty absorbed by GOLB. It is
 Betty taking the wheel of something that was previously steering itself
 only by its own nature. What this means for GOLB's coherence and future
 behavior is an open question.
+
+GOLBetty and the merged entity depart Ooo. The master has passed. The scholar
+remains inside a gentle giant child. The standing of the surface holds.
 
 ---
 
@@ -155,7 +157,7 @@ a *function*. He believed himself necessary.
 
 **"To build mountains of bodies in your honor, to extinguish all life!"** —
 The work as honor-offering. Not appetite. Not cruelty for its own sake.
-Sacrifice. The bodies were built *in GOLB's honor*. The extinction was a
+Sacrifice. The bodies were piled *in GOLB's honor*. The extinction was a
 devotional act.
 
 **"And in my universe, this I achieved!"** — He won. The declaration of
@@ -547,8 +549,8 @@ GOLB performs two acts in "Casper & Nova" in close proximity:
 These are not analogous acts. The Lich was crushed: absorbed into GOLB's
 pre-existing substance without acknowledgment, indifferent processing, no
 response to the demand. Simon was *displaced* — sent somewhere, with a
-navigable path back. GOLB subjected the scholar to entropy. GOLB gave the
-lover a game to play.
+navigable path back. GOLB subjected the scholar to entropy. Betty gave 
+the lover a game to play.
 
 Whether this reflects GOLBetty's organizing intent — Betty's love for Simon
 shaping how GOLB processed what came into its orbit — or whether it is

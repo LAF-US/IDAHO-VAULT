@@ -8,8 +8,8 @@ vocabulary from CONSTITUTION.md as `lifecycle/<state>` labels on PRs.
 from __future__ import annotations
 
 import argparse
-import subprocess
 
+from gh_cli import run as _run
 
 LIFECYCLE_LABELS: dict[str, tuple[str, str]] = {
     "staged": ("1D76DB", "Lifecycle state: staged"),
@@ -27,17 +27,6 @@ LIFECYCLE_DOCUMENTED: set[str] = {
     "reactivated",
     "archived",
 }
-
-
-def _run(cmd: list[str], check: bool = True) -> subprocess.CompletedProcess[str]:
-    result = subprocess.run(cmd, capture_output=True, text=True)
-    if check and result.returncode != 0:
-        raise RuntimeError(
-            f"Command failed ({result.returncode}): {' '.join(cmd)}\n"
-            f"stdout:\n{result.stdout}\n"
-            f"stderr:\n{result.stderr}"
-        )
-    return result
 
 
 def ensure_labels() -> None:
@@ -58,6 +47,8 @@ def ensure_labels() -> None:
 
 
 def set_state(pr_number: int, state: str) -> None:
+    if pr_number <= 0:
+        raise ValueError(f"Invalid PR number: {pr_number}")
     if state not in LIFECYCLE_LABELS:
         raise ValueError(f"Unknown lifecycle state: {state}")
 

@@ -4,26 +4,22 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import os
 import subprocess
 import sys
 from pathlib import Path
 
+from gh_cli import run
+
+FINGERPRINT_PREFIX = "<!-- issue-reconciler-fingerprint:"
+FINGERPRINT_SUFFIX = " -->"
+
 
 def gh(*args: str, check: bool = True) -> subprocess.CompletedProcess[str]:
-    result = subprocess.run(
-        ["gh", *args],
-        capture_output=True,
-        text=True,
-    )
-    if check and result.returncode != 0:
-        raise RuntimeError(
-            f"gh {' '.join(args)} failed ({result.returncode})\n"
-            f"stdout:\n{result.stdout}\n"
-            f"stderr:\n{result.stderr}"
-        )
-    return result
+    """Run a ``gh`` subcommand via the shared run-capture-raise primitive."""
+    return run(["gh", *args], check=check)
 
 
 def gh_json(*args: str) -> list[dict] | dict | None:
@@ -42,6 +38,26 @@ def _repo() -> str:
     if not repo:
         raise RuntimeError("GITHUB_REPOSITORY is required.")
     return repo
+
+
+def _strip_fingerprint(body: str) -> str:
+    lines = [
+        line
+        for line in body.splitlines()
+        if not line.startswith(FINGERPRINT_PREFIX)
+    ]
+    return "\n".join(lines).rstrip()
+
+
+def ensure_body_fingerprint(body_file: Path) -> str:
+    if ".." in str(body_file):
+        raise Exception("Invalid file path")
+    body = body_file.read_text(encoding="utf-8")
+    canonical_body = _strip_fingerprint(body)
+    digest = hashlib.sha256(canonical_body.encode("utf-8")).hexdigest()
+    marker = f"{FINGERPRINT_PREFIX}{digest}{FINGERPRINT_SUFFIX}"
+    body_file.write_text(f"{canonical_body}\n\n{marker}\n", encoding="utf-8")
+    return marker
 
 
 def find_open_issue_number(title: str) -> int | None:
@@ -65,6 +81,30 @@ def find_open_issue_number(title: str) -> int | None:
         if issue.get("title") == title:
             return int(issue["number"])
     return None
+
+
+def issue_has_fingerprint(issue_number: int, marker: str) -> bool:
+    issue = gh_json(
+        "issue",
+        "view",
+        str(issue_number),
+        "--repo",
+        _repo(),
+        "--json",
+        "body",
+    )
+    if isinstance(issue, dict) and marker in str(issue.get("body") or ""):
+        return True
+
+    comments = gh(
+        "api",
+        "--paginate",
+        f"repos/{_repo()}/issues/{issue_number}/comments",
+        "--jq",
+        ".[].body",
+        check=False,
+    )
+    return comments.returncode == 0 and marker in comments.stdout
 
 
 def create_issue(title: str, body_file: Path) -> int:
@@ -119,9 +159,12 @@ def reconcile_issue(
     issue_action = "noop"
 
     if has_findings:
+        marker = ensure_body_fingerprint(body_file)
         if issue_number is None:
             issue_number = create_issue(title, body_file)
             issue_action = "created"
+        elif issue_has_fingerprint(issue_number, marker):
+            issue_action = "noop_duplicate"
         else:
             comment_issue(issue_number, body_file)
             issue_action = "commented"
