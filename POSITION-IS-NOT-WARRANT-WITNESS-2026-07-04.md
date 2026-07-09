@@ -26,7 +26,7 @@ tags: [witness, keys-to-the-kingdom, precedence, register, warrant, conferral, s
 *earned along the way.*
 
 > **Provenance tiers:** `[research]` = the novels' cosmology, here anchored to the Register in #664 ·
-> `[Logan-framing]` = the reading's shape, Logan's · `[mapping]` = the governance application, mine ·
+> `[Logan-framing]` = the reading's shape, Logan's · `[Logan-reading]` = a specific reading Logan gave (e.g. "position is not warrant"), his · `[mapping]` = the governance application, mine ·
 > `[fact]` = this session's own record · **`*`** = a gap left open.
 
 ---
