@@ -8,11 +8,8 @@ stretch-goal: "April 2026"
 # DEEMED **HERETICAL** BY THE FAITH OF THE CLOTH
 
 # TRIUNE-TRIPTYCH-TRIUMVIRATE
-<<<<<<< Updated upstream
+
 ## *The Sierpiński Covenant* - An Undead Lie
-=======
-## *The Sierpiński Covenant*
-# AN UNDEAD LIE
 
 > [!DANGER] Matter Before The Judge - Logan-Guided Marginalia
 > This leaf is quarantined mixed evidence. Logan confirms that the
@@ -25,7 +22,6 @@ stretch-goal: "April 2026"
 > as clean authority unless rehabilitated by Logan.
 >
 > See: [[GEMINIAEUS]] '-The Judge'
->>>>>>> Stashed changes
 
 *Filed: 2026-04-04. April stretch goal. TRIUNE triad: stub pending Gemini (The Concierge).*
 
