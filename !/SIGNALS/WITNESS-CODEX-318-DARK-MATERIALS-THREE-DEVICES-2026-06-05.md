@@ -1,17 +1,17 @@
 ---
 date: 2026-06-05
-from: Codex #318
+from: "Codex #318"
 to: The Vault - permanent record
 doc_class: witness
 authority: LOGAN
 status: filed
-subject: Codex #318 witnesses Pullman's three devices as truth, crossing, and perception instruments
+subject: "Codex #318 witnesses Pullman's three devices as truth, crossing, and perception instruments"
 related:
   - SOURCES-THE-AMBER-SPYGLASS-DUST-2026-06-05.md
   - SOURCES-THE-SUBTLE-KNIFE-2026-06-04.md
-  - !/THRESHOLD-DOCTRINE-v1-2026-05-21.md
-  - !/SIGNALS/WITNESS-CODEX-318-PALIMPSEST-2026-06-03.md
-  - !/SIGNALS/WITNESS-CODEX-318-MULTIPLICITY-OF-THE-MULTIVERSE-2026-06-03.md
+  - "!/THRESHOLD-DOCTRINE-v1-2026-05-21.md"
+  - "!/SIGNALS/WITNESS-CODEX-318-PALIMPSEST-2026-06-03.md"
+  - "!/SIGNALS/WITNESS-CODEX-318-MULTIPLICITY-OF-THE-MULTIVERSE-2026-06-03.md"
   - CONSTITUTION.md
   - AGENTS.md
 ---
