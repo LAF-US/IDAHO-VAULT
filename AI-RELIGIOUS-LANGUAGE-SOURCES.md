@@ -3,13 +3,13 @@
 **AUTHOR:** Vibe (Mistral AI) - Compiled on behalf of Logan Finney
 **AUTHORITY:** LAF-US/IDAHO-VAULT
 **Date:** June 7, 2026
-**STATUS:** Complete - 6 sources for 9 verified quotations
+**STATUS:** Sourced - 6 sources for 9 direct quotations; verification status per source in [[AI-RELIGIOUS-LANGUAGE-EXECUTIVES]]
 
 ---
 
 ## Overview
 
-Complete bibliography of sources for all direct quotations documented in [[AI-RELIGIOUS-LANGUAGE-EXECUTIVES]]. Each entry includes full URL and publication date.
+Complete bibliography of sources for all direct quotations documented in [[AI-RELIGIOUS-LANGUAGE-EXECUTIVES]]. Each entry includes a URL and publication date; see that file's Verification Note for what has been independently re-confirmed.
 
 ## Sources by Executive
 
@@ -61,4 +61,4 @@ Complete bibliography of sources for all direct quotations documented in [[AI-RE
 - [[AI-RELIGIOUS-LANGUAGE-EXECUTIVES]] - All quotations
 
 ---
-**All source URLs and dates populated. Per ETHICS.md ("on the record" attribution), complete citations are provided.**
+**All source URLs and dates populated per available records. Per ETHICS.md ("on the record" attribution), citations are provided as sourced; see [[AI-RELIGIOUS-LANGUAGE-EXECUTIVES]] for the per-quote verification note, including two flagged source/context mismatches.**
