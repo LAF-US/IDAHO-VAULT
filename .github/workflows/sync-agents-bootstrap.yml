@@ -13,7 +13,7 @@ jobs:
   # of just reporting the drift every push.
   check-bootstrap:
     name: Verify agent discovery index is current
-    if: github.ref_name != 'logan/obsidian'
+    if: github.ref != 'refs/heads/logan/obsidian'
     runs-on: ubuntu-latest
 
     permissions:
@@ -34,7 +34,7 @@ jobs:
 
   self-heal-bootstrap:
     name: Auto-fix agent discovery index drift on logan/obsidian
-    if: github.ref_name == 'logan/obsidian'
+    if: github.ref == 'refs/heads/logan/obsidian'
     runs-on: ubuntu-latest
     concurrency:
       group: sync-agents-bootstrap-logan-obsidian

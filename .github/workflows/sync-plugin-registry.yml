@@ -17,7 +17,7 @@ jobs:
   # there instead of just reporting the drift every push.
   check-plugin-registry:
     name: Verify plugin registry blocks are current
-    if: github.ref_name != 'logan/obsidian'
+    if: github.ref != 'refs/heads/logan/obsidian'
     runs-on: ubuntu-latest
 
     permissions:
@@ -38,7 +38,7 @@ jobs:
 
   self-heal-plugin-registry:
     name: Auto-fix plugin registry drift on logan/obsidian
-    if: github.ref_name == 'logan/obsidian'
+    if: github.ref == 'refs/heads/logan/obsidian'
     runs-on: ubuntu-latest
     concurrency:
       group: sync-plugin-registry-logan-obsidian
