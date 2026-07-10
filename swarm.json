@@ -4,7 +4,6 @@
   "// conventions": "VAULT-CONVENTIONS.md",
   "principal": "Logan Finney",
   "vault_authority": "https://github.com/LAF-US/IDAHO-VAULT",
-  "registry_version": "2026-06-10 (durable registration, no liveness inference)",
   "wakeup_protocol": {
     "quick_start": "!/WAKEUP.md",
     "boot_order": [
@@ -575,8 +574,8 @@
     "counts": {
       "enabled_community": 44,
       "enabled_core": 31,
-      "dormant_installed": 32,
-      "installed_total": 76,
+      "dormant_installed": 31,
+      "installed_total": 75,
       "enabled_missing_manifest": 0
     },
     "entrypoints": [
@@ -683,8 +682,8 @@
     "current_state": {
       "enabled_community_count": 44,
       "enabled_core_count": 31,
-      "installed_community_count": 76,
-      "dormant_installed_count": 32,
+      "installed_community_count": 75,
+      "dormant_installed_count": 31,
       "enabled_missing_manifest_count": 0
     },
     "enabled_community_plugins": [
@@ -1098,12 +1097,6 @@
         "path": ".obsidian/plugins/omnisearch/manifest.json"
       },
       {
-        "id": "openclaw",
-        "name": "OpenClaw",
-        "version": "0.41.1",
-        "path": ".obsidian/plugins/obsidianclaw/manifest.json"
-      },
-      {
         "id": "oz-image-plugin",
         "name": "Image in Editor",
         "version": "2.2.6",
@@ -1252,7 +1245,6 @@
       "obsidian-git",
       "obsidian-leaflet-plugin",
       "obsidian42-brat",
-      "openclaw",
       "pdf-plus",
       "table-editor-obsidian",
       "taskbone-ocr-plugin",
@@ -1320,7 +1312,6 @@
     "// note": "CrewAI is a registered layer under re-foundation. swarm.json registers the layer but does not carry CrewAI crew, task, or runner topology.",
     "manifest": ".crewai/manifest.json",
     "manifest_doc": ".crewai/MANIFEST.md",
-    "crewai_version": "1.14.1",
     "status": "refoundation",
     "output_dir": "!/CREWAI/",
     "runtime_class": "vault-contained local runtime slice",

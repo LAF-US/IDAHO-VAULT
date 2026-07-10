@@ -832,7 +832,7 @@
       "verification_state": "pending",
       "sensitivity": "unknown",
       "routing_class": "staging-pending",
-      "notes": "Medicaid panel recording. Could be public legislative hearing (â†’ Internet Archive) or private production panel (â†’ GCS). Logan must confirm.",
+      "notes": "Medicaid panel recording. Could be public legislative hearing (→ Internet Archive) or private production panel (→ GCS). Logan must confirm.",
       "related": [
         "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
       ],

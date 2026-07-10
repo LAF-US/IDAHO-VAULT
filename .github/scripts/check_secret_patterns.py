@@ -8,6 +8,7 @@ file path, line number, and rule name. It never prints matched secret text.
 from __future__ import annotations
 
 import argparse
+import os
 import re
 import subprocess
 import sys
@@ -15,7 +16,23 @@ from dataclasses import dataclass
 from pathlib import Path
 
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
+def _repo_root() -> Path:
+    # In CI this script executes from the trusted base-branch checkout
+    # (trusted-main/), while the content under test is the PRIMARY checkout —
+    # which is exactly the run step's working directory: every policy workflow
+    # invokes this script with cwd at the primary checkout and never sets a
+    # working-directory override. Using the process cwd keeps the
+    # trusted-validator split (trusted code, PR-head content) without deriving
+    # any filesystem path from environment data — there is no tainted-path
+    # flow left for a scanner to model, and no hard-coded runner path to break
+    # on self-hosted runners or a repo rename. Local (pre-commit) runs fall
+    # back to the script's own repository.
+    if os.environ.get("GITHUB_ACTIONS") == "true":
+        return Path.cwd()
+    return Path(__file__).resolve().parents[2]
+
+
+REPO_ROOT = _repo_root()
 WINDOWS_COPY_SUFFIX_RE = re.compile(r" \(\d+\)(?=$|\.)")
 PRESERVED_COPY_SUFFIX_RE = re.compile(r"\.(?:home|vault)(?:\.[0-9a-f]{12})?$", re.IGNORECASE)
 SECRET_PATH_PATTERNS = (
