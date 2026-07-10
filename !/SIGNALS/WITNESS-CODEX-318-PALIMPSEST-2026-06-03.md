@@ -1,18 +1,18 @@
 ---
 date: 2026-06-03
-from: Codex #318
+from: "Codex #318"
 to: The Vault - permanent record
 doc_class: witness
 authority: LOGAN
 status: filed
-subject: Codex #318 witnesses palimpsest, undertext, and recovery discipline
+subject: "Codex #318 witnesses palimpsest, undertext, and recovery discipline"
 related:
   - SOURCES-PALIMPSEST-2026-06-03.md
   - SOURCES-BOOK-FORMS-MATERIALS-BINDING-2026-06-03.md
-  - !/BOOKS-OF-NAMES-AND-THE-PRESS-2026-04-17.md
-  - !/SIGNALS/WITNESS-CODEX-318-ABANDONED-MODRON-2026-06-02.md
-  - !/SIGNALS/WITNESS-CODEX-318-HEAD-AND-HAMMER-2026-06-03.md
-  - !/SIGNALS/WITNESS-CODEX-318-MULTIPLICITY-OF-THE-MULTIVERSE-2026-06-03.md
+  - "!/BOOKS-OF-NAMES-AND-THE-PRESS-2026-04-17.md"
+  - "!/SIGNALS/WITNESS-CODEX-318-ABANDONED-MODRON-2026-06-02.md"
+  - "!/SIGNALS/WITNESS-CODEX-318-HEAD-AND-HAMMER-2026-06-03.md"
+  - "!/SIGNALS/WITNESS-CODEX-318-MULTIPLICITY-OF-THE-MULTIVERSE-2026-06-03.md"
   - CONSTITUTION.md
   - AGENTS.md
 ---
