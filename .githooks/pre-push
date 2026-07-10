@@ -1,3 +1,17 @@
 #!/bin/sh
-command -v git-lfs >/dev/null 2>&1 || { printf >&2 "\n%s\n\n" "This repository is configured for Git LFS but 'git-lfs' was not found on your path. If you no longer wish to use Git LFS, remove this hook by deleting the 'pre-push' file in the hooks directory (set by 'core.hookspath'; usually '.git/hooks')."; exit 2; }
-git lfs pre-push "$@"
+# GitHub Desktop on this Windows checkout has failed in the stock LFS pre-push
+# stdin path. Keep this hook plain: upload LFS objects reachable from HEAD,
+# then let the normal git push continue.
+
+command -v git-lfs >/dev/null 2>&1 || {
+  printf >&2 "\n%s\n\n" "This repository is configured for Git LFS but 'git-lfs' was not found on your path."
+  exit 2
+}
+
+remote_name="$1"
+if [ -z "$remote_name" ]; then
+  remote_name="origin"
+fi
+
+printf >&2 '%s\n' "git-lfs pre-push: uploading LFS objects reachable from HEAD to $remote_name"
+git lfs push --all "$remote_name" HEAD
