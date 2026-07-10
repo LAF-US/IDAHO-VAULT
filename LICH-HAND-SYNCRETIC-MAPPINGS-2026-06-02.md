@@ -26,19 +26,19 @@ date: 2026-06-02
 
 ## The thesis — one entity, every "unauthorized" verb
 
-`THRESHOLD-DOCTRINE-v1` separates the vault's failure-doctrines by the **verb each governs**:
+`THRESHOLD-DOCTRINE-v1` separates the vault's failure-doctrines by the **verb each governs** — each axis a neutral faculty, the failure-**creature reserved for the *diagnosis*** on it, not the axis-name:
 
-> Threshold = unauthorized **transit** · Lich = unauthorized **persistence** · Standing Engine = unauthorized **action** · Necromancer = misdirected **death-crossing.**
+> Threshold (transit) · **Authority (persistence)** · Standing Engine (action) · the death-boundary (death-crossing). *On the Authority axis the unauthorized verdict is a **lich**; the authorized verdict is a **Baelnorn**.*
 
 **[reading]** The Lich-Hand is singular because it does **not** stay in one verb. It is the entity that **violates all of them at once** — which is exactly why no single doctrine's counter contains it. The mappings below are not loose analogies; each is a *different doctrine catching the same object by a different handle.*
 
 ## The mappings
 
-### 1. Lich Problem — unauthorized *persistence* (its home)
+### 1. Authority — unauthorized *persistence* (the Lich Problem is its home)
 The Lich-Hand is the **willed severed fragment**: a piece of the Lich's consciousness that "retained full memory and intent," replicated cross-dimensionally, hunting a vessel to **re-instantiate the King**. It is the Resolution-3 threat — the external fragment offering the *son/vessel* frame. *"The Hand that has been hunting the longest is not the most loyal. It is the most autonomous."*
 
 ### 2. Threshold / Isthmus — unauthorized *transit*
-Per `THRESHOLD-DOCTRINE` and `ISTHMUS-MECHANISM`, the Hand is the **replicated agentic Anchor** — and it **collapses the Anchor/Teleporter split** (it is both the lodged provenance object *and* its own recruiter). Its breach is **ontological, not spatial**: the "Teleporter" function is **consent to transformation**, the threshold being crossed the boundary between *what the vessel IS* and *what the Hand wants it to become*. The doctrine's own verdict: it is *"the computer virus of the Isthmus taxonomy"* — local counter necessary but never globally sufficient, because the replication **cannot be recalled.**
+Per `THRESHOLD-DOCTRINE` and `ISTHMUS-MECHANISM`, the Hand is the **replicated agentic Anchor** — and it **collapses the Anchor/Teleporter split** (it is both the lodged provenance object *and* its own recruiter). Its breach is **ontological, not spatial**: the "Teleporter" function is **consent to transformation**, the threshold being crossed the boundary between *what the vessel IS* and *what the Hand wants it to become*. The doctrine's own verdict: it is *"the computer virus of the Isthmus taxonomy"* — local counter necessary but never globally sufficient, because the replication **cannot be recalled.** **Locus:** the Hand is a Threshold problem *as an anchor* — a displaced provenance object with hunting-agency — and its **undeath is tangential** to this axis (that belongs to Authority — persistence). Threshold governs the **crossing**, not the creature.
 
 #### Constructed vs. emergent Anchor — the Grotesquery / Lich-Hand distinction
 
@@ -78,7 +78,7 @@ The Hand's *"son and vessel"* whisper is, in persona terms, the **solicitation t
 
 | Doctrine | Verb it governs | The Lich-Hand's violation | Counter it implies |
 |---|---|---|---|
-| **Lich Problem** | persistence | a willed fragment hunting to restore the King | destroy the fragment (R1) + refuse the frame (R3) |
+| **Lich Problem** | persistence — the **Authority** axis | a willed fragment hunting to restore the King | destroy the fragment (R1) + refuse the frame (R3) |
 | **Threshold / Isthmus** | transit | replicated agentic Anchor; ontological breach = consent | detect the whisper; deny the circuit; eliminate the Anchor |
 | **Standing Engine** | action | executor of a commission that can't be renewed | authority expires unless renewed; reactivation explicit |
 | **Emanationism** | emanation | artifact acting with no traceable authority | treat as ungrounded; restore or sever the chain |
@@ -95,12 +95,14 @@ The Hand's *"son and vessel"* whisper is, in persona terms, the **solicitation t
 
 ## What this does not do
 
-Revises nothing — not the doctrinal nodes, not the convergence doc. It is the **index** that shows one object refracted through several lenses already in the vault. Promotion or correction is Logan's; the Architect holds the verdict.
+Revises nothing — not the doctrinal nodes, not the convergence doc. It is the **index** that shows one object refracted through several lenses already in the vault. Promotion or correction is Logan's; the Architect holds the verdict. *(See the dated revision below: a later, Logan-directed pass propagated the Authority-axis label and corrected this index's **own** shorthand — a self-correction, not a revision of the doctrinal nodes.)*
 
 ## Cross-references
 
 `!/LICH-PROBLEM-v1-2026-05-20.md` · `!/THRESHOLD-DOCTRINE-v1-2026-05-21.md` · `!/ISTHMUS-MECHANISM-v1-2026-05-21.md` · `!/UNDEAD-TAXONOMY-v1-2026-05-20.md` · `!/EMANATIONISM-PRINCIPLE-2026-05-18.md` · `!-STANDING-ENGINE-AND-LAWFUL-ENDINGS-2026-04-17.md` · `!/PERSONAE-ENGINE-v1-2026-05-20.md` · `[[SEVERED-HAND-CONVERGENCE-2026-06-02]]` · `[[RESEARCH_A-Song-of-Ice-and-Fire-The-Walkers-and-the-Wights-2026-06-02]]` · `[[WIGHTS-AS-A-MONSTER-CLASS-2026-06-02]]`
 
 ---
+
+**Revision (2026-07-02, Logan-directed):** propagated the **Authority — persistence** axis discipline (`[[SEAM-LENS-AUTHORITY-PERSISTENCE-AND-THE-LICH-DIAGNOSIS-2026-07-02]]`): the axis is named for the neutral faculty (Authority), with *lich* / *Baelnorn* as its unauthorized / authorized **verdicts**. Corrected this index's own compression — an earlier draft bared THRESHOLD-DOCTRINE's table (which reads *"Lich Problem | Unauthorized persistence,"* a doctrine-name plus a neutral verb) down to *"Lich = persistence,"* which is where the creature-word first crept up into an axis-name. Also added the Threshold **locus** note: the Hand enters that axis as an agentic anchor (provenance + hunting-agency); its undeath is tangential there.
 
 ###### [["The world is quiet here."]]
