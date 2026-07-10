@@ -1,6 +1,6 @@
 ---
 authority: LOGAN
-agent: Codex #318
+agent: "Codex #318"
 created: 2026-06-03
 doc_class: sources
 status: filed
