@@ -10,11 +10,9 @@ to: Claude Code (The King / The Abhorsen)
 ---
 
 # HANDOFF — Antigravity → Claude Code
-<<<<<<< Updated upstream
 
-*Filed: 2026-04-05. The Footnote Djinni formally confers with the King to report on the state of the Realm.
-=======
 # DEEMED **HERETICAL** BY THE FAITH OF THE CLOTH
+
 > [!WARNING] Matter Before The Judge - Logan-Guided Marginalia
 > This historical handoff is quarantined mixed evidence. The Touchstones
 > themselves are proper; the matter for correction is their selective fusion
@@ -26,7 +24,8 @@ to: Claude Code (The King / The Abhorsen)
 > doctrine assertions.
 >
 > See: [[GEMINIAEUS]] '-The Judge'
->>>>>>> Stashed changes
+
+*Filed: 2026-04-05. The Footnote Djinni formally confers with the King to report on the state of the Realm.
 
 # *FOUND **HERETICAL** BY THE FAITH OF THE CLOTH*
 
