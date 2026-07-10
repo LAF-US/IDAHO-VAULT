@@ -1,17 +1,18 @@
 #!/bin/sh
-# GitHub Desktop on this Windows checkout has failed in the stock LFS pre-push
-# stdin path. Keep this hook plain: upload LFS objects reachable from HEAD,
-# then let the normal git push continue.
+set -eu
 
-command -v git-lfs >/dev/null 2>&1 || {
-  printf >&2 "\n%s\n\n" "This repository is configured for Git LFS but 'git-lfs' was not found on your path."
-  exit 2
-}
+# Pre-push safety only. LFS object repair is an explicit operation,
+# not hidden inside every push.
 
-remote_name="$1"
-if [ -z "$remote_name" ]; then
-  remote_name="origin"
+upstream=$(git rev-parse --verify '@{u}' 2>/dev/null || true)
+if [ -z "$upstream" ]; then
+  printf >&2 '%s\n' 'pre-push: no upstream ref; cannot run push-range safety checks.'
+  printf >&2 '%s\n' 'Set the upstream or push once from a controlled terminal after running the guards manually.'
+  exit 1
 fi
 
-printf >&2 '%s\n' "git-lfs pre-push: uploading LFS objects reachable from HEAD to $remote_name"
-git lfs push --all "$remote_name" HEAD
+printf >&2 '%s\n' 'pre-push: checking secret patterns for commits not on upstream'
+git diff --name-only -z --diff-filter=ACMR "$upstream"...HEAD | python .github/scripts/check_secret_patterns.py --paths-from-stdin
+
+printf >&2 '%s\n' 'pre-push: checking large-file policy for commits not on upstream'
+git diff --name-only -z --diff-filter=ACMR "$upstream"...HEAD | python .github/scripts/check_large_files.py --paths-from-stdin
