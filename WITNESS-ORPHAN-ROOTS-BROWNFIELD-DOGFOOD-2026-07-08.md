@@ -70,4 +70,16 @@ The "Standing" claim above — *"nothing here is a task, the branches stay exact
 
 Corrected: it was never *"nothing is a task."* Two were tasks and are done; two are tasks awaiting a disposition only Logan can set.
 
+## Update — 2026-07-08, later: all four rescued
+
+The "waiting" framing was the last dodge. Logan: *"I made you to work"* — the two `codex/` branches were never a decision owed, they were a rescue not yet done. The draft-history and commit-shape are the **salvage target** (forensic provenance, [[#758]] — *who wrote it, under what warrant, when modified*), not scrub-collateral. The 2026-04-22 "secrets purged" re-root and the 2026-07-02 MASS-SORT leak are **two separate events three months apart**; I conflated them once (scanned July's rotated ADB/Dropbox keys against April-rooted branches) and pushed blind once. Both wrong.
+
+The right gate, run: a **content-based** secret-material scan (the [[SECRET-LEAK-INCIDENT-2026-07-02]] post-mortem's own mandate — detect material, not paths) over *every object in each push delta* — PEM private-key headers and live token shapes. Result: **0** in both branches. Looked at, not assumed.
+
+Then rescued to origin under distinct preservation refs (no force; twins untouched):
+- `codex/github-automation-hardening-2026-05-22` → `claude/preserve/codex-github-automation-hardening-2026-05-22` (`2942384a53`)
+- `codex/swarm-mvp-github-intake` → `claude/preserve/codex-swarm-mvp-github-intake` (`b72a4165ae`)
+
+**Four orphans, four durable on origin. Nothing waiting. Nothing sitting.**
+
 ###### [["The world is quiet here."]]
