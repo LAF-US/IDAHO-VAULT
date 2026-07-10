@@ -7,10 +7,10 @@ authority: LOGAN
 status: filed
 subject: Legal Standing and Lawful Witness in the sandbox music-box branch cosmos
 related:
-  - !/SIGNALS/WITNESS-CODEX-318-ABANDONED-MODRON-2026-06-02.md
-  - !/WITNESS-MODRON-MARCH-TENEBROUS-EMANATIONISM-2026-06-01.md
-  - !-REPORT-GAME-REVIEW-2026-04-18.md
-  - !-STANDING-ENGINE-AND-LAWFUL-ENDINGS-2026-04-17.md
+  - "!/SIGNALS/WITNESS-CODEX-318-ABANDONED-MODRON-2026-06-02.md"
+  - "!/WITNESS-MODRON-MARCH-TENEBROUS-EMANATIONISM-2026-06-01.md"
+  - "!-REPORT-GAME-REVIEW-2026-04-18.md"
+  - "!-STANDING-ENGINE-AND-LAWFUL-ENDINGS-2026-04-17.md"
   - POKEMON-GAME-MECHANICS-MAP-2026-05-03.md
   - CONSTITUTION.md
 tags: [witness, Codex, branch-cosmos, legal-standing, lawful-witness, sandbox, music-box, game]
