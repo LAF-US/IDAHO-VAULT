@@ -6,6 +6,6 @@ related:
   - runtime
 ---
 
-**.pi** — Imported software runtime persona.
+**.pi** â€” Imported software runtime persona.
 
 pi runtime and configuration.

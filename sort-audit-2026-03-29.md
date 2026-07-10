@@ -1627,9 +1627,9 @@ related:
 - Idaho Chooses Life
 - Idaho City
 - Idaho Code
-- Idaho Code ┬º74-202
-- Idaho Code ┬º74-207
-- Idaho Code ┬º74-208
+- Idaho Code §74-202
+- Idaho Code §74-207
+- Idaho Code §74-208
 - Idaho College of Osteopathic Medicine
 - Idaho Commission for Redistricting
 - Idaho Conservation League
@@ -5081,9 +5081,9 @@ _Generated 2026-03-29 00:14 UTC by GitHub Actions — v2_
 | `Idaho Capitol.md` | `(root)` | `X LABELER` | loose file in vault root |
 | `Idaho Chooses Life.md` | `(root)` | `X LABELER` | loose file in vault root |
 | `Idaho City.md` | `(root)` | `X LABELER` | loose file in vault root |
-| `Idaho Code ┬º74-202.md` | `(root)` | `X LABELER` | loose file in vault root |
-| `Idaho Code ┬º74-207.md` | `(root)` | `X LABELER` | loose file in vault root |
-| `Idaho Code ┬º74-208.md` | `(root)` | `X LABELER` | loose file in vault root |
+| `Idaho Code §74-202.md` | `(root)` | `X LABELER` | loose file in vault root |
+| `Idaho Code §74-207.md` | `(root)` | `X LABELER` | loose file in vault root |
+| `Idaho Code §74-208.md` | `(root)` | `X LABELER` | loose file in vault root |
 | `Idaho Code.md` | `(root)` | `X LABELER` | loose file in vault root |
 | `Idaho College of Osteopathic Medicine.md` | `(root)` | `X LABELER` | loose file in vault root |
 | `Idaho Commission for Redistricting.md` | `(root)` | `X LABELER` | loose file in vault root |
