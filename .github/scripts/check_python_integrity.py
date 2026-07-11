@@ -111,9 +111,10 @@ def flattened_duplicate_findings(root: Path, files: list[Path]) -> list[tuple[Pa
     return findings
 
 
-def collect_findings(root: Path) -> list[tuple[Path, str]]:
+def collect_findings(root: Path, files: list[Path] | None = None) -> list[tuple[Path, str]]:
     """Return ``(path, message)`` findings for every tracked Python file."""
-    files = tracked_python_files(root)
+    if files is None:
+        files = tracked_python_files(root)
     findings: list[tuple[Path, str]] = []
     for path in files:
         findings.extend((path, message) for message in python_file_findings(path))
@@ -141,7 +142,7 @@ def main(argv: list[str] | None = None) -> int:
     )
 
     all_files = tracked_python_files(root)
-    findings = collect_findings(root)
+    findings = collect_findings(root, all_files)
 
     def is_changed(path: Path) -> bool:
         if changed is None:
