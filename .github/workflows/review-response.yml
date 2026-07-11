@@ -6,29 +6,44 @@ on:
 
 permissions:
   pull-requests: write
-  contents: read
+  issues: write
+  # contents: write is required to enable merge-queue auto-merge
+  # (enablePullRequestAutoMerge is gated like resolveReviewThread, #546). The
+  # review-submitted path arms eligible, non-protected-path PRs when a review clears
+  # the last block (#521/#527 reversal, 2026-06-17).
+  contents: write
 
 jobs:
   sync-review-state:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout trusted workflow surfaces
-        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
         with:
           ref: ${{ github.event.repository.default_branch }}
 
       - name: Recompute derived review state
+        # The arm actor becomes the future enqueue actor, and GITHUB_TOKEN-actored
+        # events never dispatch workflow runs (GitHub anti-recursion) — prefer the
+        # user-scoped MERGE_QUEUE_TOKEN so armed PRs enqueue with a dispatching actor.
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.MERGE_QUEUE_TOKEN || secrets.GITHUB_TOKEN }}
+          OWNER: ${{ github.repository_owner }}
+          REPO: ${{ github.event.repository.name }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          PR_AUTHOR: ${{ github.event.pull_request.user.login }}
+          PR_URL: ${{ github.event.pull_request.html_url }}
+          REVIEW_AUTHOR: ${{ github.event.review.user.login }}
+          REVIEW_ID: ${{ github.event.review.id }}
+          REVIEW_STATE: ${{ github.event.review.state }}
         run: |
           python3 .github/scripts/review_feedback_loop.py \
             review-submitted \
-            --owner "${{ github.repository_owner }}" \
-            --repo "${{ github.event.repository.name }}" \
-            --pr-number "${{ github.event.pull_request.number }}" \
-            --pr-author "${{ github.event.pull_request.user.login }}" \
-            --pr-url "${{ github.event.pull_request.html_url }}" \
-            --review-author "${{ github.event.review.user.login }}" \
-            --review-id "${{ github.event.review.id }}" \
-            --review-state "${{ github.event.review.state }}"
-
+            --owner "$OWNER" \
+            --repo "$REPO" \
+            --pr-number "$PR_NUMBER" \
+            --pr-author "$PR_AUTHOR" \
+            --pr-url "$PR_URL" \
+            --review-author "$REVIEW_AUTHOR" \
+            --review-id "$REVIEW_ID" \
+            --review-state "$REVIEW_STATE"

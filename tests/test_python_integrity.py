@@ -1,6 +1,8 @@
 from __future__ import annotations
 
 import importlib.util
+import io
+import subprocess
 import sys
 from pathlib import Path
 
@@ -67,4 +69,42 @@ def test_obvious_flattened_duplicate_is_reported(tmp_path: Path) -> None:
 
     findings = checker.flattened_duplicate_findings(tmp_path, [canonical, flattened])
 
-    assert any("byte-identical flattened duplicate" in finding for finding in findings)
+    assert any(
+        path == flattened and "byte-identical flattened duplicate" in message
+        for path, message in findings
+    )
+
+
+def _init_git_repo_with_violation(root: Path) -> None:
+    subprocess.run(["git", "init"], cwd=root, check=True, capture_output=True, timeout=10)
+    subprocess.run(
+        ["git", "config", "user.email", "test@example.com"],
+        cwd=root,
+        check=True,
+        capture_output=True,
+        timeout=10,
+    )
+    subprocess.run(
+        ["git", "config", "user.name", "Integrity Test"],
+        cwd=root,
+        check=True,
+        capture_output=True,
+        timeout=10,
+    )
+    (root / "clean.py").write_text("import subprocess\nsubprocess.run(['x'], timeout=5)\n", encoding="utf-8")
+    (root / "violator.py").write_text("import subprocess\nsubprocess.run(['x'])\n", encoding="utf-8")
+    subprocess.run(["git", "add", "."], cwd=root, check=True, capture_output=True, timeout=10)
+
+
+def test_paths_from_stdin_gates_only_changed_files(tmp_path: Path, monkeypatch) -> None:
+    """A pre-existing violation outside the changed set must warn, not fail —
+    the whole-repo scan this guards against would block every future PR."""
+    _init_git_repo_with_violation(tmp_path)
+
+    monkeypatch.setattr(sys, "stdin", io.StringIO("clean.py\n"))
+    exit_code = checker.main(["--root", str(tmp_path), "--paths-from-stdin"])
+    assert exit_code == 0
+
+    monkeypatch.setattr(sys, "stdin", io.StringIO("violator.py\n"))
+    exit_code = checker.main(["--root", str(tmp_path), "--paths-from-stdin"])
+    assert exit_code == 1
