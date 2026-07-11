@@ -2,8 +2,8 @@ from __future__ import annotations
 
 import importlib.util
 import unittest
+import unittest.mock
 from pathlib import Path
-from unittest import mock
 
 import pytest
 
@@ -42,14 +42,14 @@ class PytestCollectionGuardTest(unittest.TestCase):
 
     def test_fails_fast_when_cache_parent_is_not_writable(self) -> None:
         conftest = load_root_conftest()
-        pluginmanager = mock.Mock()
+        pluginmanager = unittest.mock.Mock()
         pluginmanager.hasplugin.return_value = True
-        config = mock.Mock()
+        config = unittest.mock.Mock()
         config.rootpath = ROOT
         config.getini.return_value = ".pytest_cache"
         config.pluginmanager = pluginmanager
 
-        with mock.patch.object(
+        with unittest.mock.patch.object(
             conftest.Path,
             "mkdir",
             side_effect=PermissionError("read-only test workspace"),
@@ -65,16 +65,16 @@ class PytestCollectionGuardTest(unittest.TestCase):
 
     def test_keeps_cache_plugin_when_cache_parent_is_writable(self) -> None:
         conftest = load_root_conftest()
-        pluginmanager = mock.Mock()
+        pluginmanager = unittest.mock.Mock()
         pluginmanager.hasplugin.return_value = True
-        config = mock.Mock()
+        config = unittest.mock.Mock()
         config.rootpath = ROOT
         config.getini.return_value = ".pytest_cache"
         config.pluginmanager = pluginmanager
 
         with (
-            mock.patch.object(conftest.Path, "mkdir") as mkdir,
-            mock.patch.object(conftest.Path, "rmdir") as rmdir,
+            unittest.mock.patch.object(conftest.Path, "mkdir") as mkdir,
+            unittest.mock.patch.object(conftest.Path, "rmdir") as rmdir,
         ):
             conftest.pytest_configure(config)
 
@@ -84,12 +84,12 @@ class PytestCollectionGuardTest(unittest.TestCase):
 
     def test_skips_cache_probe_when_operator_disables_cache_plugin(self) -> None:
         conftest = load_root_conftest()
-        pluginmanager = mock.Mock()
+        pluginmanager = unittest.mock.Mock()
         pluginmanager.hasplugin.return_value = False
-        config = mock.Mock()
+        config = unittest.mock.Mock()
         config.pluginmanager = pluginmanager
 
-        with mock.patch.object(conftest.Path, "mkdir") as mkdir:
+        with unittest.mock.patch.object(conftest.Path, "mkdir") as mkdir:
             conftest.pytest_configure(config)
 
         mkdir.assert_not_called()
