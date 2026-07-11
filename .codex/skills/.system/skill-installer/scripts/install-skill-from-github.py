@@ -156,6 +156,10 @@ def _validate_skill_name(name: str) -> None:
 
 
 def _git_sparse_checkout(repo_url: str, ref: str, paths: list[str], dest_dir: str) -> str:
+    # Re-validate immediately before use, not just in main(): this is the
+    # function that actually builds the git command line, so it must not
+    # depend on every caller having validated first.
+    _validate_ref(ref)
     repo_dir = os.path.join(dest_dir, "repo")
     clone_cmd = [
         "git",
@@ -207,10 +211,15 @@ def _copy_skill(src: str, dest_dir: str) -> None:
 
 
 def _build_repo_url(owner: str, repo: str) -> str:
+    # Re-validate immediately before use: owner/repo become part of the
+    # positional URL git receives, so this function must not depend on
+    # every caller having validated first.
+    _validate_owner_repo(owner, repo)
     return f"https://github.com/{owner}/{repo}.git"
 
 
 def _build_repo_ssh(owner: str, repo: str) -> str:
+    _validate_owner_repo(owner, repo)
     return f"git@github.com:{owner}/{repo}.git"
 
 
