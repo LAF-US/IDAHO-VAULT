@@ -130,6 +130,20 @@ def _validate_ref(ref: str) -> None:
         raise InstallError(f"Invalid ref: {ref!r}")
 
 
+# Allowlist for the owner/repo path segments that become part of the
+# `git clone`/SSH repo URL. Same argument-injection shape as REF_PATTERN: a
+# leading '-' could turn `owner` or `repo` into a git option instead of part
+# of a positional URL (e.g. an owner of "--upload-pack=<cmd>" makes git run
+# an arbitrary program during clone) — anchored so that can never match.
+OWNER_REPO_PATTERN = re.compile(r"[A-Za-z0-9][A-Za-z0-9._-]*")
+
+
+def _validate_owner_repo(owner: str, repo: str) -> None:
+    for label, value in (("owner", owner), ("repo", repo)):
+        if not value or not OWNER_REPO_PATTERN.fullmatch(value) or ".." in value:
+            raise InstallError(f"Invalid {label}: {value!r}")
+
+
 def _validate_skill_name(name: str) -> None:
     altsep = os.path.altsep
     if not name or os.path.sep in name or (altsep and altsep in name):
@@ -285,6 +299,7 @@ def main(argv: list[str]) -> int:
         source = _resolve_source(args)
         source.ref = source.ref or args.ref
         _validate_ref(source.ref)
+        _validate_owner_repo(source.owner, source.repo)
         if not source.paths:
             raise InstallError("No skill paths provided.")
         for path in source.paths:
