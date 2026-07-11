@@ -6,6 +6,6 @@ related:
   - runtime
 ---
 
-**.opencode** — Imported software runtime persona.
+**.opencode** â€” Imported software runtime persona.
 
 opencode runtime and configuration.

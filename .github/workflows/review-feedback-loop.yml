@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout trusted workflow surfaces
-        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
         with:
           ref: ${{ github.event.repository.default_branch }}
 
@@ -27,11 +27,12 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           COMMENT_BODY: ${{ github.event.comment.body }}
+          REPO_NAME: ${{ github.event.repository.name }}
         run: |
           python3 .github/scripts/review_feedback_loop.py \
             acknowledge-apply \
             --owner "${{ github.repository_owner }}" \
-            --repo "${{ github.event.repository.name }}" \
+            --repo "$REPO_NAME" \
             --pr-number "${{ github.event.issue.number }}" \
             --comment-author "${{ github.event.comment.user.login }}" \
             --author-association "${{ github.event.comment.author_association }}" \
@@ -40,20 +41,33 @@ jobs:
   sweep-review-threads:
     if: github.event_name == 'pull_request_target'
     runs-on: ubuntu-latest
+    permissions:
+      # contents: write is required to enable merge-queue auto-merge
+      # (enablePullRequestAutoMerge is gated like resolveReviewThread, #546). sync-pr
+      # arms eligible, non-protected-path PRs (#521/#527 reversal, 2026-06-17). Scoped
+      # scoped to this job only; outside this job, `contents` stays read-only at the
+      # workflow level (the other jobs do not get write access).
+      contents: write
+      issues: write
+      pull-requests: write
     steps:
       - name: Checkout trusted workflow surfaces
-        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
         with:
           ref: ${{ github.event.repository.default_branch }}
 
       - name: Sweep outdated advisory threads after PR updates
+        # The arm actor becomes the future enqueue actor, and GITHUB_TOKEN-actored
+        # events never dispatch workflow runs (GitHub anti-recursion) — prefer the
+        # user-scoped MERGE_QUEUE_TOKEN so armed PRs enqueue with a dispatching actor.
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.MERGE_QUEUE_TOKEN || secrets.GITHUB_TOKEN }}
+          REPO_NAME: ${{ github.event.repository.name }}
         run: |
           python3 .github/scripts/review_feedback_loop.py \
             sync-pr \
             --owner "${{ github.repository_owner }}" \
-            --repo "${{ github.event.repository.name }}" \
+            --repo "$REPO_NAME" \
             --pr-number "${{ github.event.pull_request.number }}" \
             --sync-actor "${{ github.actor }}"
 
@@ -70,7 +84,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout trusted workflow surfaces
-        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
         with:
           ref: ${{ github.event.repository.default_branch }}
 
@@ -78,12 +92,12 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           COMMENT_BODY: ${{ github.event.comment.body }}
+          REPO_NAME: ${{ github.event.repository.name }}
         run: |
           python3 .github/scripts/review_feedback_loop.py \
             verify-claim \
             --owner "${{ github.repository_owner }}" \
-            --repo "${{ github.event.repository.name }}" \
+            --repo "$REPO_NAME" \
             --pr-number "${{ github.event.issue.number }}" \
             --comment-author "${{ github.event.comment.user.login }}" \
             --comment-body "$COMMENT_BODY"
-

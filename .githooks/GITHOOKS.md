@@ -6,6 +6,6 @@ related:
   - runtime
 ---
 
-**.githooks** — Imported software runtime persona.
+**.githooks** â€” Imported software runtime persona.
 
 githooks runtime and configuration.
