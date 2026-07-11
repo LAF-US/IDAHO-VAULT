@@ -108,9 +108,10 @@ _DER_KEY_MARKERS = (
 )
 _BASE64_RUN_RE = re.compile(rb"[A-Za-z0-9+/]{100,}={0,2}")
 _DOCKER_AUTH_RE = re.compile(rb'"auth"\s*:\s*"([A-Za-z0-9+/]{8,}={0,2})"')
-_SAFE_BINARY_MAGIC = (
+KNOWN_NON_SECRET_FILE_SIGNATURES = (
     b"\x89PNG", b"\xff\xd8\xff", b"GIF8", b"%PDF", b"\x1f\x8b",
     b"PK\x03\x04", b"SQLite format 3\x00", b"\x00asm", b"ID3", b"OggS",
+    b"wOFF", b"wOF2",
 )
 # Text formats are scanned for embedded secrets by the content rules above; the
 # raw-binary-blob heuristic must skip them, or unicode/base64-heavy notes trip it
@@ -170,14 +171,14 @@ def content_secret_findings(path: str, data: bytes) -> list[Finding]:
 
     # 3. Small high-entropy RAW binary blob (host keys, raw key material). Can't
     #    be told from any small binary by content alone, so scope tightly: skip
-    #    text extensions (scanned above) and known media magic; require true
+    #    text extensions (scanned above) and known file signatures; require true
     #    binary (NUL byte present).
     ext = os.path.splitext(path)[1].lower()
     if (
         ext not in _TEXT_EXTENSIONS
         and 16 <= len(data) <= 4096
         and b"\x00" in data
-        and not any(data.startswith(magic) for magic in _SAFE_BINARY_MAGIC)
+        and not any(data.startswith(signature) for signature in KNOWN_NON_SECRET_FILE_SIGNATURES)
         and _shannon_entropy(data) >= 4.3
     ):
         findings.append(Finding(path=path, line=None, rule="high_entropy_binary"))

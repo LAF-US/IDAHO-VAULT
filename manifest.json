@@ -61,11 +61,11 @@
     "status": "active",
     "authority_boundary": "Obsidian config files define interface state; the plugin registry document defines doctrine and promotion rules.",
     "current_state": {
-      "enabled_community_count": 56,
+      "enabled_community_count": 58,
       "enabled_core_count": 31,
-      "installed_community_count": 73,
-      "dormant_installed_count": 17,
-      "enabled_missing_manifest_count": 0
+      "installed_community_count": 68,
+      "dormant_installed_count": 11,
+      "enabled_missing_manifest_count": 1
     },
     "entrypoints": [
       {
@@ -99,6 +99,7 @@
       "obsidian42-strange-new-worlds",
       "obsidian-tasks-plugin",
       "obsidian-folder-index",
+      "oz-image-plugin",
       "phone-to-roam-to-obsidian",
       "moviegrabber",
       "move-cursor-on-startup",
@@ -111,32 +112,23 @@
       "settings-search",
       "tipa-support",
       "obsidian-leaflet-plugin",
-      "initiative-tracker",
+      "obsidian-5e-statblocks",
       "obsidian-footnotes",
-      "markdown-attributes",
       "metadata-menu",
-      "vault-inspector",
       "text-extractor",
       "letterboxd-rss-sync",
-      "export-graph-view",
-      "obsidian-mind-map",
-      "smart-templates",
-      "smart-connections",
       "obsidian-advanced-uri",
       "ai-image-analyzer",
       "backlink-cache",
       "obsidian-tidy-footnotes",
       "tag-wrangler",
-      "smart-lookup",
-      "nexus-ai-chat-importer",
       "beautiful-contact-cards",
+      "calendarium",
       "dataview-serializer",
       "breadcrumbs",
-      "calendar",
       "dataview-autocompletion",
       "days-since",
       "wikipedia-search",
-      "obsidian-outliner",
       "periodic-notes",
       "nostr-writer",
       "links",
@@ -145,7 +137,17 @@
       "obsidian-importer",
       "obsidian-full-calendar",
       "ai-templater",
-      "translate"
+      "translate",
+      "obsidian-kanban",
+      "obsidian-dice-roller",
+      "handwritten-notes",
+      "dataview-properties",
+      "desk",
+      "obsidian-advanced-slides",
+      "heatmap-calendar",
+      "vault-inspector",
+      "smart-context",
+      "smart-connections"
     ],
     "enabled_core_plugins": [
       "file-explorer",
@@ -400,12 +402,6 @@
         "path": ".obsidian/plugins/breadcrumbs/manifest.json"
       },
       {
-        "id": "calendar",
-        "name": "Calendar",
-        "version": "1.5.10",
-        "path": ".obsidian/plugins/calendar/manifest.json"
-      },
-      {
         "id": "calendarium",
         "name": "Calendarium",
         "version": "2.1.0",
@@ -432,7 +428,7 @@
       {
         "id": "dataview-properties",
         "name": "Dataview to Properties",
-        "version": "1.0.1",
+        "version": "1.0.2",
         "path": ".obsidian/plugins/dataview-properties/manifest.json"
       },
       {
@@ -452,18 +448,6 @@
         "name": "Desk",
         "version": "1.0.6",
         "path": ".obsidian/plugins/desk/manifest.json"
-      },
-      {
-        "id": "editing-toolbar",
-        "name": "Editing Toolbar",
-        "version": "4.0.9",
-        "path": ".obsidian/plugins/editing-toolbar/manifest.json"
-      },
-      {
-        "id": "export-graph-view",
-        "name": "Export Graph View",
-        "version": "1.2.2",
-        "path": ".obsidian/plugins/export-graph-view/manifest.json"
       },
       {
         "id": "handwritten-notes",
@@ -502,15 +486,9 @@
         "path": ".obsidian/plugins/links/manifest.json"
       },
       {
-        "id": "loom",
-        "name": "Loom",
-        "version": "1.22.6",
-        "path": ".obsidian/plugins/loom/manifest.json"
-      },
-      {
         "id": "make-md",
         "name": "make.md",
-        "version": "1.3.4",
+        "version": "1.3.5",
         "path": ".obsidian/plugins/make-md/manifest.json"
       },
       {
@@ -550,18 +528,6 @@
         "path": ".obsidian/plugins/moviegrabber/manifest.json"
       },
       {
-        "id": "msg-handler",
-        "name": "MSG Handler",
-        "version": "0.0.6",
-        "path": ".obsidian/plugins/msg-handler/manifest.json"
-      },
-      {
-        "id": "nexus-ai-chat-importer",
-        "name": "Nexus AI Chat Importer",
-        "version": "1.6.8",
-        "path": ".obsidian/plugins/nexus-ai-chat-importer/manifest.json"
-      },
-      {
         "id": "nldates-obsidian",
         "name": "Natural Language Dates",
         "version": "0.6.2",
@@ -578,6 +544,12 @@
         "name": "Fantasy Statblocks",
         "version": "4.10.3",
         "path": ".obsidian/plugins/obsidian-5e-statblocks/manifest.json"
+      },
+      {
+        "id": "obsidian-advanced-slides",
+        "name": "Advanced Slides",
+        "version": "1.20.0",
+        "path": ".obsidian/plugins/obsidian-advanced-slides/manifest.json"
       },
       {
         "id": "obsidian-advanced-uri",
@@ -618,7 +590,7 @@
       {
         "id": "obsidian-git",
         "name": "Git",
-        "version": "2.38.5",
+        "version": "2.38.6",
         "path": ".obsidian/plugins/obsidian-git/manifest.json"
       },
       {
@@ -809,25 +781,21 @@
       }
     ],
     "dormant_installed_plugins": [
-      "calendarium",
       "cmdr",
-      "dataview-properties",
-      "desk",
-      "editing-toolbar",
-      "handwritten-notes",
-      "heatmap-calendar",
       "homepage",
-      "loom",
+      "initiative-tracker",
       "make-md",
-      "msg-handler",
-      "obsidian-5e-statblocks",
-      "obsidian-dice-roller",
-      "obsidian-kanban",
+      "markdown-attributes",
+      "obsidian-mind-map",
+      "obsidian-outliner",
       "obsidian42-brat",
-      "smart-context",
+      "smart-lookup",
+      "smart-templates",
       "table-editor-obsidian"
     ],
-    "enabled_plugins_missing_manifest": []
+    "enabled_plugins_missing_manifest": [
+      "oz-image-plugin"
+    ]
   },
   "cross_swarm_sync": {
     "protocol_doc": "!/SIGNALS/README.md",
