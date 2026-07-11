@@ -96,7 +96,7 @@ def _git_path_is_ignored(root: Path, relpath: str) -> bool:
         return False
     try:
         result = subprocess.run(
-            ["git", "-C", str(root), "check-ignore", relpath],
+            ["git", "-C", str(root), "check-ignore", "--", relpath],
             capture_output=True,
             text=True,
             encoding="utf-8",
