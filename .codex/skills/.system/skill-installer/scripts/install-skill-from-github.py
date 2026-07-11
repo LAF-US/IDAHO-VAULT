@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 from dataclasses import dataclass
 import os
+import re
 import shutil
 import subprocess
 import sys
@@ -117,10 +118,15 @@ def _validate_relative_path(path: str) -> None:
         raise InstallError("Skill path must be a relative path inside the repo.")
 
 
+# Allowlist for git ref/branch names: alphanumerics plus the characters
+# git itself permits in a ref component, anchored so a leading '-' (which
+# git could interpret as an option instead of a positional ref/branch name -
+# argument injection) can never match.
+REF_PATTERN = re.compile(r"[A-Za-z0-9][A-Za-z0-9._/-]*")
+
+
 def _validate_ref(ref: str) -> None:
-    """Reject refs that could be interpreted as a git option instead of a
-    positional ref/branch name (argument injection via a leading '-')."""
-    if not ref or ref.startswith("-"):
+    if not ref or not REF_PATTERN.fullmatch(ref) or ".." in ref:
         raise InstallError(f"Invalid ref: {ref!r}")
 
 
