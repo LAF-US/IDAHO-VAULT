@@ -1,5 +1,5 @@
 ---
-title: "NOTE — Batch Automation, Risk Labeller, and Arbiter Sortition: Three Unwired Pieces of One Intended Routing System"
+title: "NOTE — The Risk Labeller, Batch Automation, and Arbiter Sortition, in the Context of the Wider Script Thicket"
 updated: 2026-07-11
 status: draft
 authority: LOGAN
@@ -16,7 +16,7 @@ related:
   - CONSTITUTION
 ---
 
-# NOTE — Three Unwired Pieces of One Intended Routing System
+# NOTE — The Risk Labeller, Batch Automation, and Arbiter Sortition, in the Context of the Wider Script Thicket
 
 *Filed by Claude Code, 2026-07-11, session `claude/practical-cerf-l13ka2`. Deferred by Logan's own direction: "note for now," not act now. No redesign proposed here — just the sourced observation, so it doesn't have to be re-discovered later.*
 
@@ -26,22 +26,45 @@ related:
 
 > "it's a 'note for now' along with two adjacent yet related systems, the risk labeller and the sortition arbiter"
 
-Both lines are Logan's own words, `[told]`, this session. Everything below is what I verified against the actual code today to ground that claim — not assumed from it.
+> "classify_paths belongs in that file as well, prominently, then with a[nother], holistic perspective on the script thicket"
+
+All three lines are Logan's own words, `[told]`, this session. Everything below is what I verified against the actual code today to ground that claim — not assumed from it.
 
 ## What I verified, per system
 
-**1. Batch automation (`batch-arm-merge-queue.yml` + inline `gh` calls) — confirmed monoscript, no lane routing.**
-Ran a live `dry_run: true` dispatch today (run `29162177905`) against all 32 open non-draft PRs. The script computes each PR's real `mergeStateStatus` (`CLEAN`/`UNSTABLE`/`BEHIND`/`BLOCKED`/`DIRTY`) but only branches on it into two buckets: `BEHIND` gets an actual branch-update, everything else not already `CLEAN`/`UNSTABLE` — whether it's `DIRTY` (a real merge conflict, 6 of 32 PRs today) or `BLOCKED` (failing checks or missing review, 23 of 32 PRs today) — gets the identical blind `gh pr merge --auto` no-op arm. There is no code path that distinguishes "needs conflict resolution" from "needs a check fixed" from "needs your review," despite the workflow's own header comments describing exactly that intended distinction ("DIRTY … is left for a human" — but the code arms it anyway, same as `BLOCKED`).
+**1. Risk labeller (`classify_paths.py`) — the most architecturally mature of the three, and the one furthest from having its own output actually used.**
+This is not a quick label-slapper; it's a genuinely careful two-axis model, and it says so about itself. Read in full (260 lines, `.github/scripts/classify_paths.py`):
 
-**2. Risk labeller (`classify_paths.py`) — the classifier exists; the routing was explicitly deferred, in writing, by a prior session.**
-The script itself documents this. Its own top-of-file comment: *"the routing MECHANISM (lanes, flag lifecycle, grid-cell routes) is HELD for Logan — see issue #626 + `WITNESS-THE-KEYS-ARE-THE-LEVERS-2026-06-21.md`. The grid is a model, not code."* So this isn't new: a prior session already built the two-axis classifier (`filetype: —/low/med`, `depth: —/high/nope`) that produces the `risk/*` labels visible on every PR, confirmed exactly one consumer reads it today — `agent-auto-pr.yml` reads the binary `tier` field only. Nothing else (not the batch arm script, not the arbiter sortition below) varies its behavior by risk tier at all.
+- **Two independent analyses per file**, composed into a grid: `filetype_flag()` scores WHAT KIND of file it is — Natural Language (`.md`/`.txt`) → `—` (no flag), Machine Documentation (`.json`/`.yaml`) or inert assets → `low`, Computer Code (`.py`/`.sh`/`.ipynb`/...) → `med`, unrecognized → `med` (fail-safe). `placement_flag()` independently scores WHERE it sits — inside the `!` Nest, Levels 2–6 → `high`, the Level-7 "still point" (`Esto Perpetua!`) → `nope`, protected surfaces (`.github/**`, named root governance files, any top-level dotfolder like `.claude/`/`.codex/`) → `high` even outside the Nest, everything else → `—`.
+- **One ordering primitive, `TIER_PRECEDENCE = ("nope", "high", "med", "low", "clear")`**, is the single source of truth both axes and their combination read — the module's own comment calls out that this is deliberate, to prevent the tier order from drifting out of sync between the aggregation and combine steps.
+- **The output is an 8-field JSON object** (`tier`, `tier4`, `filetype`, `depth`, `subtier`, `by_file`, `high_risk_files`, `low_risk_files`) — a real 5-cell grid (`clear`/`low`/`med`/`high`/`nope`) with per-file detail and a `subtier` field already reserved for a *second* planned refinement (filetype subtiers = the three blessed circles + the Jupyter "missing middle"; depth subtiers = the seven Demesnes/Levels) that the file says is "unique unspecified" and deferred by Logan as of 2026-06-21.
+- **Confirmed consumption: exactly 2 of 48 workflows call it** (`agent-auto-pr.yml`, `auto-merge-rhythm.yml`), and of the 8 fields it emits, **exactly 1** — the binary `tier` (`low`/`high`) — is read by anything, to stamp a single `risk/<tier>` label. `tier4`, `filetype`, `depth`, `subtier`, and both `by_file`/`*_risk_files` breakdowns are computed on every PR and then discarded. The file's own header names this precisely: *"the routing MECHANISM (lanes, flag lifecycle, grid-cell routes) is HELD for Logan — see issue #626 + `WITNESS-THE-KEYS-ARE-THE-LEVERS-2026-06-21.md`. The grid is a model, not code."* So this specific gap isn't new or hidden — a prior session already flagged it in writing, in the code itself, over three weeks before Logan raised it again today.
+
+**2. Batch automation (`batch-arm-merge-queue.yml` + inline `gh` calls) — confirmed monoscript, no lane routing.**
+Ran a live `dry_run: true` dispatch today (run `29162177905`) against all 32 open non-draft PRs. The script computes each PR's real `mergeStateStatus` (`CLEAN`/`UNSTABLE`/`BEHIND`/`BLOCKED`/`DIRTY`) but only branches on it into two buckets: `BEHIND` gets an actual branch-update, everything else not already `CLEAN`/`UNSTABLE` — whether it's `DIRTY` (a real merge conflict, 6 of 32 PRs today) or `BLOCKED` (failing checks or missing review, 23 of 32 PRs today) — gets the identical blind `gh pr merge --auto` no-op arm. There is no code path that distinguishes "needs conflict resolution" from "needs a check fixed" from "needs your review," despite the workflow's own header comments describing exactly that intended distinction ("DIRTY … is left for a human" — but the code arms it anyway, same as `BLOCKED`). It also never reads `classify_paths.py`'s output at all — a `depth:nope` PR touching the canon core and a `filetype:low` PR touching a single JSON file get identical treatment if both happen to be `BLOCKED`.
 
 **3. Sortition arbiter (`arbiter_sortition.py` / `arbiter-sortition.yml`) — fixed draw, no risk input.**
 `--arbiter-count 2` is a constant passed from the workflow file, not derived from a PR's risk labels. The reviewer pool (`ALL_REVIEWERS`) is a flat hardcoded set of 5 bots + Logan; there's no tier-based expansion (e.g., more/stricter arbiters for a `depth:high` PR touching `.github/**`) despite the risk classifier sitting right there, already labeling every PR before sortition runs.
 
-## The connecting thread
+## Holistic view of the script thicket
 
-All three systems run on every PR, in sequence, and each one *could* read the risk classification the one before it produced — but none of them do except the single `tier` read in `agent-auto-pr.yml`. That's the concrete shape of "cobbled together into monoscripts" from where I sat today: not that any one script is broken, but that the intended flowchart (classify → route to a lane by risk+state → arbiter selection scaled to that lane) collapsed into three independent scripts that happen to run near each other, each blind to the others' output.
+Logan asked for the wider view, not just these three, so here's the actual inventory rather than an impression of it. `.github/scripts/` holds **48 Python files, 13,505 lines total**, run by **48 workflow files** in `.github/workflows/`. Roughly, by function (my own grouping, not a file-declared taxonomy):
+
+| Cluster | Scripts (rough count) | Examples |
+|---|---|---|
+| Policy gates (fail-closed CI checks) | ~11 | `check_action_pins`, `check_large_files`, `check_portable_paths`, `check_redaction_damage`, `check_secret_patterns`, `check_python_version_pin`, `check_character_conformity`, `check_dotfolder_anchors`, `meshnetweb_portability_check`, `laf_usb_manifest`, `jupytext_sync_paired` |
+| PR lifecycle / merge orchestration | ~10 | `review_feedback_loop` (2,343 lines — the single largest script in the repo, already deep-dived in `REVIEW-MERGE-ENGINE-CLUSTER-A-DEEPDIVE-2026-06-20.md` as one file covering 4 unrelated concerns across 14 subcommands), `pr_lifecycle`, `pr_loop_watchdog`, `pr_threads`, `pr_github`, `issue_reconciler`, `stale_bot_prs`, `codex_work_guard`, `arbiter_sortition`, `verify_arbiter_approvals` |
+| Vault content maintenance | ~12 | `daily_rollover` (1,093 lines), `backfill_daily_notes`, `date_tagger`, `expand_date_aliases`, `normalize_tags`, `tag_stubs`, `generate_name_forms`, `metadata_survey`, `audit_repo_payloads`, `phone_link_intake`, `bind_ai_book`, `validate_content` |
+| Registry / manifest sync | 3 | `generate_agents_bootstrap`, `sync_obsidian_plugin_registry`, `update_manifest` |
+| Reporting (no gating effect) | ~6 | `branch_garden_report`, `topology_census` (906 lines), `wayback_audit`, `wayback_preserve`, `janitor_sweep`, `swarm_mvp_intake` |
+| Classification | 2 | `classify_paths`, its own test file |
+| Shared infra | 3 | `gh_cli`, `obsidian_rest_api_client`, `uv_dependency_submission` |
+
+The pattern across all three systems above generalizes: this isn't three isolated gaps, it's the same shape recurring at every scale in this directory. `review_feedback_loop.py` is a *single file* that's internally the same story `classify_paths`/`batch-arm-merge-queue`/`arbiter_sortition` are *across files* — four genuinely distinct concerns (label substrate, review-state projection, claim verification, thread-attestation) sharing one 2,343-line module because nobody split them when the fourth concern got bolted on. The 48-script directory is the same fragmentation one level up: each script is usually well-built in isolation (today's read of `classify_paths.py` in particular is careful, self-documenting, deliberately single-sourced) but the *connections between them* — the wiring Logan describes as the intended "flowchart logic-gate sequenced" design — were never built, so 48 scripts run near each other on every PR mostly blind to each other's output.
+
+## The connecting thread (the three, specifically)
+
+All three named systems run on every PR, in sequence, and each one *could* read the risk classification the one before it produced — but none of them do except the single `tier` read in `agent-auto-pr.yml`. The intended flowchart (classify → route to a lane by risk+state → arbiter selection scaled to that lane) collapsed into three independent scripts that happen to run near each other on every PR, each blind to the others' output.
 
 ## Aside, possibly useful later (not part of the deferred item)
 
