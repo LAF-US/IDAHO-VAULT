@@ -117,6 +117,13 @@ def _validate_relative_path(path: str) -> None:
         raise InstallError("Skill path must be a relative path inside the repo.")
 
 
+def _validate_ref(ref: str) -> None:
+    """Reject refs that could be interpreted as a git option instead of a
+    positional ref/branch name (argument injection via a leading '-')."""
+    if not ref or ref.startswith("-"):
+        raise InstallError(f"Invalid ref: {ref!r}")
+
+
 def _validate_skill_name(name: str) -> None:
     altsep = os.path.altsep
     if not name or os.path.sep in name or (altsep and altsep in name):
@@ -156,7 +163,7 @@ def _git_sparse_checkout(repo_url: str, ref: str, paths: list[str], dest_dir: st
                 repo_dir,
             ]
         )
-    _run_git(["git", "-C", repo_dir, "sparse-checkout", "set", *paths])
+    _run_git(["git", "-C", repo_dir, "sparse-checkout", "set", "--", *paths])
     _run_git(["git", "-C", repo_dir, "checkout", ref])
     return repo_dir
 
@@ -271,6 +278,7 @@ def main(argv: list[str]) -> int:
     try:
         source = _resolve_source(args)
         source.ref = source.ref or args.ref
+        _validate_ref(source.ref)
         if not source.paths:
             raise InstallError("No skill paths provided.")
         for path in source.paths:
