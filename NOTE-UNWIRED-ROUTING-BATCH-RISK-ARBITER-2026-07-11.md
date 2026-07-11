@@ -66,6 +66,21 @@ The pattern across all three systems above generalizes: this isn't three isolate
 
 All three named systems run on every PR, in sequence, and each one *could* read the risk classification the one before it produced — but none of them do except the single `tier` read in `agent-auto-pr.yml`. The intended flowchart (classify → route to a lane by risk+state → arbiter selection scaled to that lane) collapsed into three independent scripts that happen to run near each other on every PR, each blind to the others' output.
 
+## Addendum, same day: the planned visible risk-label model (Logan's spec, verbatim)
+
+After the 2026-07-11 label consolidation (4 orphan labels deleted, `merge/auto`/`auto-merge` descriptions corrected — GH PR #839), Logan added:
+
+> "the `*:risk/*` labels are redundant too... the planned visible model is `risk/{—}NOR{{{low}OR{med}}+{{high}OR{nope}}}/{subtier}`"
+
+That grammar is Logan's own line, `[told]`, this session, quoted exactly. My reading of it, offered as a parse and not as settled interpretation: **one composed `risk/...` label replaces the two per-axis labels** — the body is `—` when neither analysis fired (the NOR cell, matching today's live `risk/—`), otherwise a `+`-composition of the fired filetype flag (`low`|`med`) and the fired depth flag (`high`|`nope`), with a trailing `/{subtier}` segment. Under that model the six `filetype:risk/*` / `depth:risk/*` axis labels are redundant *as visible vocabulary* — the pair collapses into one label.
+
+**Why they cannot simply be deleted today, verified against the engine (2026-07-11):** unlike the four orphans removed in #839's companion cleanup, the pair vocabulary is live-wired into `review_feedback_loop.py` at every layer — declared in `LABEL_SPECS` (so `ensure-labels` recreates them on every pass), read per-axis by `_axis_flag`/`_risk_pair_for_pr` (L935–980, with a fail-loud `RiskMarkerInvariantError` on per-axis double-labeling), restamped on every projection pass by the K6 apply step (L1037–1058, which also keeps the legacy sparse singles in sync), and consumed by the auto-merge eligibility chain itself (`is_clear`/`lane_complete`/`flag_clearable`, L1111–1125). Retiring them is an engine migration — the visible-projection layer of the K6 lane model — not an API cleanup.
+
+**Open pins the grammar leaves (the `*` wildcard, not gaps I get to fill):**
+1. **Single-axis-fired cells.** The 3×3 grid has four cells where exactly one axis fired (e.g. a maze `.py`: filetype `med`, depth `—`). The grammar's `+`-composition names the both-fired cells and `—` names the neither-fired cell; how a one-fired cell renders (`risk/med`? `risk/med+—`? something else) is not specified in the line as given.
+2. **Subtier vocabulary.** `{subtier}` remains "unique unspecified" per `classify_paths.py`'s own docstring (filetype subtiers = the three blessed circles + the Jupyter missing-middle; depth subtiers = the seven Levels/Demesnes) — and which axis's subtier appears when both fired is likewise unspecified.
+3. **Relation to the K6 two-label norm.** The engine's own comment records "K6/#632 (norm set by Logan, 2026-07-06): the lanes ARE the nine label pairs. Every PR carries exactly TWO axis labels." The composed model keeps the nine-cell lane grid but changes its visible projection from two labels to one — reading this as a refinement of K6's projection rather than a reversal of its model, but that characterization is mine, not Logan's.
+
 ## Aside, possibly useful later (not part of the deferred item)
 
 `arbiter_sortition.py`'s own comment documents a CodeQL modeling fact directly relevant to the open alert I'm currently working on PR #562: *"CodeQL's command-line-injection sanitizer only recognizes comparisons against a literal constant, and a regex `.fullmatch()` does not register as one."* That's independent, prior-session confirmation of exactly what I was inferring today from `install-skill-from-github.py`'s persistent CodeQL alert surviving two rounds of regex-based validation (`_validate_ref`/`_validate_owner_repo`). Worth remembering if that alert (or ones like it) comes up again: CodeQL wants a literal-constant comparison, not a regex match, to recognize a barrier.
