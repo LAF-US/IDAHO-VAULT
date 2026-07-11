@@ -18,7 +18,7 @@ reviews:
       - "dependabot[bot]"
       - "renovate[bot]"
       - "github-actions[bot]"
-    # Review PRs from all authors, including bots (e.g. github-actions[bot])
+    # Review PRs from all other authors, including non-ignored bots
     # Vault governance note: PRs touching !/ require Logan's approval
     # All committed content is on the record (public repo)
   base_branches:
