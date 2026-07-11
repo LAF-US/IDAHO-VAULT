@@ -24,9 +24,9 @@ This is the 8th consecutive daily sweep report in this series (LAF-52 through LA
 | **Why** | See per-item below. |
 | **How** | Codacy needs Logan's provision-vs-retire call (day 5, unchanged). Secret Pattern Policy needs Logan's confirmation of a de-escalating fact this sweep found, not urgent remediation. `check-portable-paths.yml` is isolated to another agent's branch — flagged there, not touched. |
 
-## Blocking / repeated
+## Repeated, not blocking (corrected — see bottom of report)
 
-**Codacy Security Scan (13/13 runs failed this window)** — unchanged for the 5th consecutive day. Same error as every prior sweep: `Could not get remote project configuration: No credentials found.` (`CODACY_PROJECT_TOKEN` never provisioned). Confirmed directly from job logs this run, including on this session's own PR #837 (run 29152276934) — the failure fired on a 1-line `.coderabbit.yaml` comment fix, which cannot itself have caused a Codacy credentials error; it's the same repo-wide gap. **Category: Configuration.** Not re-diagnosing further — the diagnosis has been stable since 2026-07-08 (#822). Needs Logan: provision `CODACY_PROJECT_TOKEN` or retire the workflow.
+**Codacy Security Scan (13/13 runs failed this window)** — unchanged for the 5th consecutive day. **Correction, posted after Logan's review of this report: Codacy is noise, not a blocker** — confirmed directly against PR #503's own merge (it went in via the `mergefreeze` check alone, `state: success`, with no Codacy status even listed as required). This report originally filed it under "Blocking / repeated"; that header overstated its severity. Leaving the rest of this entry as originally written, since the credential-gap diagnosis itself is still accurate — only the "blocking" framing was wrong. Same error as every prior sweep: `Could not get remote project configuration: No credentials found.` (`CODACY_PROJECT_TOKEN` never provisioned). Confirmed directly from job logs this run, including on this session's own PR #837 (run 29152276934) — the failure fired on a 1-line `.coderabbit.yaml` comment fix, which cannot itself have caused a Codacy credentials error; it's the same repo-wide gap. **Category: Configuration.** Not re-diagnosing further — the diagnosis has been stable since 2026-07-08 (#822). Needs Logan: provision `CODACY_PROJECT_TOKEN` or retire the workflow.
 
 ## Correction to a prior claim (this session's own research pass)
 
@@ -44,6 +44,8 @@ Having verified that, here's the fuller picture, checked directly rather than as
 
 ## Work shipped this run (not just findings)
 
+**Correction below (see "Correction, posted after Logan's review") — the "unrelated histories" claim in this section is wrong; read that section first.**
+
 Per this run's instruction to pick up one of the oldest open PRs and drive it toward merge: picked **PR #503** (open since 2026-06-09, 32 days, four reviewers — Sourcery, Copilot, CodeRabbit×2 — all flagging the identical stale-comment issue, never addressed).
 
 - Fixed the actual issue on #503's own branch (commit `c2340795`) and resolved all 4 review threads.
@@ -54,3 +56,15 @@ Per this run's instruction to pick up one of the oldest open PRs and drive it to
 ## Big IF
 
 **The daily-sweep process itself may be the bigger finding.** This is the 8th sweep report in a row (going back to 2026-06-20/LAF-52), several of which re-diagnosed the same Codacy gap in nearly identical wording, and the "no Discord connector" line has now been repeated verbatim across at least 3 separate days' Slack posts (2026-07-06, 07-08, 07-09) without anyone questioning whether that connector will ever exist. Meanwhile PR #481/#831/#834 have been sitting in an acknowledged overlapping-content limbo since 2026-07-09 with an explicit Logan hold on touching them further. Worth considering, for Logan: does this sweep need to run daily, or would a lower cadence (or a cadence that only reports *changes* since the last sweep rather than the full state) reduce the volume without losing the signal — especially since the one structurally-recurring blocker (Codacy) has needed exactly one decision from Logan for 5 days running, and no amount of additional daily re-diagnosis moves it forward.
+
+## Correction, posted after Logan's review
+
+Logan reviewed this report and caught two errors in it directly. Recording both here rather than quietly editing them away, per this vault's own Repair doctrine (witness the error, don't paper over it).
+
+**1. "PR #503 can't merge via the normal GitHub button" was wrong.** Logan merged #503 himself, via the ordinary GitHub squash-merge, seconds after I filed this report — flatly disproving the claim. Root cause of my error, checked directly: my working checkout of this repo is a **shallow git clone**, truncated at commit `bf0393b7` (2026-07-06) — `git rev-parse --is-shallow-repository` returns `true`, and `origin/main` shows only 51 commits reachable locally. When I ran `git merge origin/main <PR-503-branch>` locally and got `fatal: refusing to merge unrelated histories`, I concluded the two branches had no common ancestor *on GitHub*. That conclusion doesn't follow: a shallow clone's truncated object graph can produce exactly this symptom locally even when the real, full history on GitHub is entirely ordinary. I never checked whether my clone was shallow before drawing that conclusion — I should have. Logan's specific catch (a secret scrub dated a month before #503 opened cannot produce unrelated history against a branch created *after* that scrub) is correct and is what should have stopped me: I had the chronology backwards and didn't sanity-check it against the shallow-clone possibility before writing it into four separate durable records (this file, PR #837's body, a comment on #503, and a comment on GH #822).
+
+This also means the same claim in the 2026-07-08 sweep report (`!/AUDIT-CI-FAILURE-SWEEP-2026-07-08.md`, re: PR #463/#821) is now **unverified, not confirmed false** — I have not independently re-checked that one this session, and I'm not asserting it's wrong without checking. Flagging it with the `*` wildcard rather than repeating it as settled fact: worth a from-a-full-clone re-check before it's cited again.
+
+**Practical effect:** PR #837 (my rework of #503 onto `main`) is now fully redundant — diffed byte-for-byte identical to what #503 already merged as `d9efb2fa`. Not closing it myself (out of scope for this run), but commented on it recommending Logan close it as redundant, and corrected the record on #503's own thread and on GH #822.
+
+**2. No Discord route was wrong — and had been wrongly repeated for at least 3 prior days.** I'd only ever checked `ListConnectors` (claude.ai-native connectors) and a Slack-only search; I never called Zapier's own `list_enabled_zapier_actions`, which shows a Discord app enabled with 11 actions including `send_channel_message`, targeting two channels (`ledger`, `purgatory`). Used it this time — see the `ledger` channel for this report's Discord post. Correcting the "no Discord connector available" line that multiple prior sessions (including this one, earlier today) posted to Slack as settled fact.
