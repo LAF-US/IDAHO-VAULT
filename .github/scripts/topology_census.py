@@ -76,7 +76,7 @@ def _run_git(root: Path, *args: str) -> str:
 def _git_repo_available(root: Path) -> bool:
     try:
         _run_git(root, "rev-parse", "--is-inside-work-tree")
-    except (OSError, subprocess.CalledProcessError):
+    except (OSError, subprocess.CalledProcessError, subprocess.TimeoutExpired):
         return False
     return True
 
@@ -84,34 +84,44 @@ def _git_repo_available(root: Path) -> bool:
 def _git_tracked_files(root: Path) -> set[str]:
     if not _git_repo_available(root):
         return set()
-    return {line for line in _run_git(root, "ls-files").splitlines() if line}
+    try:
+        output = _run_git(root, "ls-files")
+    except subprocess.TimeoutExpired:
+        return set()
+    return {line for line in output.splitlines() if line}
 
 
 def _git_path_is_ignored(root: Path, relpath: str) -> bool:
     if not _git_repo_available(root):
         return False
-    result = subprocess.run(
-        ["git", "-C", str(root), "check-ignore", relpath],
-        capture_output=True,
-        text=True,
-        encoding="utf-8",
-        errors="replace",
-        timeout=30,
-    )
+    try:
+        result = subprocess.run(
+            ["git", "-C", str(root), "check-ignore", relpath],
+            capture_output=True,
+            text=True,
+            encoding="utf-8",
+            errors="replace",
+            timeout=30,
+        )
+    except subprocess.TimeoutExpired:
+        return False
     return result.returncode == 0
 
 
 def _git_status_lines(root: Path, relpath: str) -> list[str]:
     if not _git_repo_available(root):
         return []
-    result = subprocess.run(
-        ["git", "-C", str(root), "status", "--short", "--ignored", "--", relpath],
-        capture_output=True,
-        text=True,
-        encoding="utf-8",
-        errors="replace",
-        timeout=30,
-    )
+    try:
+        result = subprocess.run(
+            ["git", "-C", str(root), "status", "--short", "--ignored", "--", relpath],
+            capture_output=True,
+            text=True,
+            encoding="utf-8",
+            errors="replace",
+            timeout=30,
+        )
+    except subprocess.TimeoutExpired:
+        return []
     return [line.rstrip() for line in result.stdout.splitlines() if line.strip()]
 
 

@@ -144,7 +144,7 @@ def _tracked_files(root: Path) -> set[str] | None:
             text=True,
             timeout=30,
         )
-    except OSError:
+    except (OSError, subprocess.TimeoutExpired):
         return None
     if result.returncode != 0:
         return None

@@ -69,13 +69,16 @@ def branch_has_merge_base(branch: str) -> bool:
 
 
 def living_worktree_branches() -> set[str]:
-    result = subprocess.run(
-        ["git", "worktree", "list", "--porcelain"],
-        check=False,
-        capture_output=True,
-        text=True,
-        timeout=30,
-    )
+    try:
+        result = subprocess.run(
+            ["git", "worktree", "list", "--porcelain"],
+            check=False,
+            capture_output=True,
+            text=True,
+            timeout=30,
+        )
+    except subprocess.TimeoutExpired:
+        return set()
     if result.returncode != 0:
         return set()
 
