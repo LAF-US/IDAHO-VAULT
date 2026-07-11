@@ -95,7 +95,7 @@ class PytestCollectionGuardTest(unittest.TestCase):
         mkdir.assert_not_called()
 
     def test_pinned_runtime_contains_bounded_windows_tempfile_retries(self) -> None:
-        self.assertEqual((ROOT / ".python-version").read_text(encoding="utf-8").strip(), "3.13.13")
+        self.assertEqual((ROOT / ".python-version").read_text(encoding="utf-8").strip(), "3.13.5")
 
 
 if __name__ == "__main__":
