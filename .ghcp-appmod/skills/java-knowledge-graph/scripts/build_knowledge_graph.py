@@ -60,7 +60,7 @@ except ImportError:
 def check_graphviz() -> bool:
     """Check if Graphviz dot command is available"""
     try:
-        subprocess.run(['dot', '-V'], capture_output=True, check=True)
+        subprocess.run(['dot', '-V'], capture_output=True, check=True, timeout=30)
         return True
     except (FileNotFoundError, subprocess.CalledProcessError):
         return False
