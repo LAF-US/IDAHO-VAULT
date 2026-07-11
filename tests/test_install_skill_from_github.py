@@ -52,6 +52,17 @@ class ValidateOwnerRepoTest(unittest.TestCase):
         with self.assertRaises(self.installer.InstallError):
             self.installer._validate_owner_repo("owner", "..")
 
+    def test_accepts_ordinary_ref(self) -> None:
+        self.installer._validate_ref("main")
+
+    def test_rejects_option_shaped_ref(self) -> None:
+        with self.assertRaisesRegex(self.installer.InstallError, "Invalid ref"):
+            self.installer._validate_ref("--upload-pack=touch pwned")
+
+    def test_rejects_ref_parent_traversal(self) -> None:
+        with self.assertRaises(self.installer.InstallError):
+            self.installer._validate_ref("refs/../evil")
+
 
 if __name__ == "__main__":
     unittest.main()
