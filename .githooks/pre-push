@@ -1,8 +1,8 @@
 #!/bin/sh
 set -eu
 
-# Pre-push safety only. LFS object repair is an explicit operation,
-# not hidden inside every push.
+# Pre-push safety plus explicit LFS object upload. This avoids GitHub Desktop's
+# stock LFS pre-push /dev/stdin path on Windows while still ensuring objects exist upstream.
 
 upstream=$(git rev-parse --verify '@{u}' 2>/dev/null || true)
 if [ -z "$upstream" ]; then
@@ -16,3 +16,6 @@ git diff --name-only -z --diff-filter=ACMR "$upstream"...HEAD | python .github/s
 
 printf >&2 '%s\n' 'pre-push: checking large-file policy for commits not on upstream'
 git diff --name-only -z --diff-filter=ACMR "$upstream"...HEAD | python .github/scripts/check_large_files.py --paths-from-stdin
+
+printf >&2 '%s\n' "pre-push: uploading LFS objects for HEAD to $1"
+git lfs push "$1" HEAD
