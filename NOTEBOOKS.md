@@ -48,8 +48,8 @@ under `src/idaho_vault/`.
 checked that `.md` first. `jupytext --sync` picks its direction by modification time; if a stale
 same-named `.md` is newer, it will **overwrite the notebook's code from the (possibly empty) `.md`.**
 This is exactly why pairing is explicit and per-notebook here, and why there is **no global pairing
-default** in `jupytext.toml`. `Untitled.ipynb` already had an unrelated `Untitled.md` stub and is
-therefore **left unpaired** on purpose.
+default** in `jupytext.toml`. The old `Untitled.ipynb` had an unrelated `Untitled.md` stub; it was
+renamed to `IR_CL_SCRAPER.ipynb` before pairing so the same-name Markdown collision could not fire.
 
 ## Hygiene
 
@@ -59,6 +59,9 @@ therefore **left unpaired** on purpose.
 ## Currently paired
 
 - `LLM-Router.ipynb` ↔ `LLM-Router.md` (round-trip verified identical).
+- `IR_CL_SCRAPER.ipynb` ↔ `IR_CL_SCRAPER.md` (CourtListener scraper; provenance: PyTutorial /
+  CourtListener scraper GitHub repo handoff; historical HTML-scraper scaffold, superseded for new
+  work by authenticated CourtListener API/MCP access).
 
 ## Known corrupt / unpaired (pending decision)
 
@@ -66,7 +69,6 @@ therefore **left unpaired** on purpose.
   characters *and* a structural break), beyond a faithful automatic repair. **Not** paired or
   auto-"fixed" (reconstructing unreadable cells would invent content). Stray test/experiment;
   **Logan decides** rebuild-by-hand vs remove.
-- `Untitled.ipynb` (the CourtListener scraper) is **left unpaired** — see the footgun above.
 
 ## Dependency note
 
