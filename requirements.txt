@@ -185,7 +185,7 @@ jiter==0.14.0
     #   openai
 jmespath==1.1.0
     # via cel-python
-json-repair==0.25.3
+json-repair==0.60.1
     # via crewai
 json5==0.10.0
     # via crewai
