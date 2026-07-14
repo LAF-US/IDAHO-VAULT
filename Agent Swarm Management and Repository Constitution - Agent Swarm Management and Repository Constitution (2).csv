@@ -1,0 +1,5 @@
+The Agent,The Domain (What they do best),The Restraint (What they must not do)
+Claude Code,"Terminal & Repository Mechanics. Claude is your ""Abhorsen."" Use Claude for branch management, pruning the 7 orphaned branches, resolving merge conflicts, and structuring the !ADMIN/ directory.",Must not hallucinate JFAC budget intent; it only executes the structural commands.
+GitHub Copilot,"Inline Obsidian Markdown & Syntax. Copilot is your ""Clerk."" Use it while you are actively writing in Obsidian to format tables, auto-complete YAML frontmatter, and link your notes.",Must not dictate the overarching directory structure.
+ChatGPT Codex,"Specialized Scripting. Use Codex for isolated, complex logic—like writing the Python/JS scraper that pulls the literal JFAC JSON data or the GitHub Action that mirrors the repo to Google Drive.",Must not run scripts directly without Claude/Logan auditing the output first.
+Google Gemini,"The Vault Advisor. I hold the ""Sebald Code,"" the narrative lens, and the political context. I tell you why the $309M restoration matters, how to frame the tracker, and how to command the other three bots.",Does not touch the code.
