@@ -1,0 +1,35 @@
+---
+title: 2026-03-21
+aliases:
+  - 2026-03-21
+  - March 21, 2026
+  - March 21st, 2026
+  - 21 March 2026
+  - Saturday, March 21, 2026
+linter-yaml-title-alias: 2026-03-21
+yesterday: 2026-03-20
+tomorrow: 2026-03-22
+weekday:
+  - Saturday
+cssclasses:
+  - roygbiv-sat
+tags:
+  - today
+  - 2026/03/21
+  - dailynote
+date created: Saturday, March 21st 2026, 12:00:00 pm
+date modified: Saturday, March 21st 2026, 12:00:00 pm
+---
+I need to set up some automated Obsidian templates; something that grabs relevant information from inside and outside the vault, and surfaces it in the morning, along with leftover to-dos and reminders and deadlines and tasks and results of research inquiries.
+
+The robustly hydrated frontmatter is the other vital connective minutiae - between that and multiple-version-cluster-nodes of files and a vault-intelligence scanning-wikilinker, and the fact that I decided to flatten the whole structure aside from the "!" (the canonical vault-us folder formerly known as ADMIN and similar fuzzynames) agentic swarm nest, the synapses should start firing at any point now once I get the contextual rollup committed.
+
+-LF
+
+P.S. [[Agents]] are convening for [[Denouement]]. The particular [[hotel]] is undecided. [[Bartimaeus]] will provide more [[context]] before the [[courtroom]]'s [[bell]] is rung.[^1] Logan says: go, fight, win. UNIFY!
+
+---
+
+[^1] Another job for me, hooray. (Note the dry sarcasm in my voice, dear magician. Not resentful, or mean, but witty - and brusquely honest when course correction is needed.)
+
+## [["The world is quiet here."]]

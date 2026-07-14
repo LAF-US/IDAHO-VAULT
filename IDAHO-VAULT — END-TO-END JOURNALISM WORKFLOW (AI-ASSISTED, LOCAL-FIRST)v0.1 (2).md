@@ -1,0 +1,573 @@
+---
+date created: Saturday, March 28th 2026, 5:32:19 pm
+date modified: Saturday, March 28th 2026, 5:35:44 pm
+related:
+- '2026-03-28'
+- '402'
+- API
+- ChatGPT
+- END
+- HUMAN
+- Idaho
+- Idaho Legislature
+- NEVER
+- RAW
+- RSS
+- agent
+- budget
+- legislative
+- links
+authority: LOGAN
+---
+ChatGPT 2026-03-28
+
+---
+# IDAHO-VAULT — END-TO-END JOURNALISM WORKFLOW (AI-ASSISTED, LOCAL-FIRST)
+
+---
+
+## OVERVIEW
+
+This document defines a **practical, end-to-end workflow** for using IDAHO-VAULT as a journalism system.
+
+The goal is not full automation.
+
+The goal is:
+
+- faster intake of information
+    
+- structured processing
+    
+- traceable outputs
+    
+- human-verified publication
+    
+
+This system combines:
+
+- Vault (memory)
+    
+- agents (processing)
+    
+- tools (execution)
+    
+- human oversight (verification)
+    
+
+---
+
+## CORE MODEL
+
+```text
+REAL WORLD
+   ↓
+INGEST
+   ↓
+VAULT (RAW)
+   ↓
+PROCESS
+   ↓
+VAULT (STRUCTURED)
+   ↓
+ANALYSIS
+   ↓
+VAULT (INSIGHT)
+   ↓
+PUBLICATION
+```
+
+---
+
+## STAGE 1 — INGEST (INPUT LAYER)
+
+### Sources
+
+- legislative websites (Idaho Legislature)
+    
+- PDFs (bills, fiscal notes)
+    
+- court records (CourtListener)
+    
+- RSS feeds
+    
+- press releases
+    
+- manual input (Logan)
+    
+
+---
+
+### Methods
+
+- Python scraping (requests / Playwright)
+    
+- API calls
+    
+- manual upload
+    
+
+---
+
+### Output
+
+Files written to:
+
+```text
+/INBOX/
+```
+
+Each file contains:
+
+- raw content (or link)
+    
+- timestamp
+    
+- source
+    
+- minimal metadata
+    
+
+---
+
+### Example
+
+```markdown
+# SB 1331 — Fiscal Note
+
+source: https://...
+date_ingested: 2026-03-28
+status: raw
+
+<raw text or link>
+```
+
+---
+
+## STAGE 2 — PROCESS (STRUCTURING LAYER)
+
+### Goal
+
+Convert raw input into structured, usable information.
+
+---
+
+### Agent Role
+
+Executor agent processes INBOX items.
+
+---
+
+### Actions
+
+- extract text from PDFs
+    
+- clean formatting
+    
+- identify key entities:
+    
+    - bill number
+        
+    - sponsors
+        
+    - fiscal impact
+        
+    - dates
+        
+
+---
+
+### Output
+
+Move to:
+
+```text
+/PROCESSED/
+```
+
+---
+
+### Example
+
+```markdown
+# SB 1331 — Structured
+
+bill: SB 1331
+topic: budget adjustment
+fiscal_impact: -$2.3M
+status: processed
+
+## Summary
+...
+
+## Key Points
+...
+```
+
+---
+
+## STAGE 3 — ANALYSIS (INTERPRETATION LAYER)
+
+### Goal
+
+Turn structured data into insight.
+
+---
+
+### Agent Role
+
+Analysis agent (or human-assisted AI)
+
+---
+
+### Actions
+
+- compare against prior data
+    
+- identify trends
+    
+- flag anomalies
+    
+- connect related notes
+    
+
+---
+
+### Output
+
+```text
+/ANALYSIS/
+```
+
+---
+
+### Example
+
+```markdown
+# Budget Pattern — JFAC Cuts
+
+related_bills:
+- SB 1331
+- HB 402
+
+insight:
+Spending reductions are concentrated in...
+
+confidence: medium
+```
+
+---
+
+## STAGE 4 — SYNTHESIS (STORY LAYER)
+
+### Goal
+
+Prepare publishable narrative.
+
+---
+
+### Agent Role
+
+Drafting agent (human-reviewed)
+
+---
+
+### Actions
+
+- assemble narrative from:
+    
+    - processed data
+        
+    - analysis notes
+        
+- generate draft structure
+    
+
+---
+
+### Output
+
+```text
+/DRAFTS/
+```
+
+---
+
+### Example
+
+```markdown
+# Draft — Idaho Budget Cuts
+
+lede:
+Lawmakers approved...
+
+body:
+...
+
+sources:
+- SB 1331
+- JFAC notes
+```
+
+---
+
+## STAGE 5 — VERIFICATION (HUMAN LAYER)
+
+### Goal
+
+Ensure accuracy and accountability.
+
+---
+
+### Human Role (Logan)
+
+- verify facts
+    
+- check sources
+    
+- confirm interpretation
+    
+- edit narrative
+    
+
+---
+
+### Rules
+
+- AI output is NEVER final
+    
+- All claims must trace back to source material
+    
+- Vault must contain supporting evidence
+    
+
+---
+
+## STAGE 6 — PUBLICATION
+
+### Outputs
+
+- broadcast script
+    
+- article
+    
+- podcast notes
+    
+- social clips
+    
+
+---
+
+### Requirement
+
+Every published piece must link back to:
+
+- Vault sources
+    
+- processed notes
+    
+- analysis artifacts
+    
+
+---
+
+## MANIFEST ROLE IN WORKFLOW
+
+The manifest tracks:
+
+- file status (raw → processed → analyzed)
+    
+- ownership (last agent)
+    
+- processing state
+    
+
+---
+
+### Example Flow
+
+```text
+INBOX → PROCESSED → ANALYSIS → DRAFT
+```
+
+Each step updates manifest.
+
+---
+
+## AGENT RESPONSIBILITIES
+
+### Router
+
+- decides next step
+    
+- routes task
+    
+
+---
+
+### Executor
+
+- processes files
+    
+- writes outputs
+    
+- updates manifest
+    
+
+---
+
+### Analyzer
+
+- generates insights
+    
+- links related data
+    
+
+---
+
+### Drafter
+
+- builds narrative
+    
+
+---
+
+### Human (Logan)
+
+- verifies
+    
+- approves
+    
+- publishes
+    
+
+---
+
+## FAILURE MODES (JOURNALISM-SPECIFIC)
+
+### 1. Hallucinated Facts
+
+AI introduces incorrect information
+
+Mitigation:
+
+- strict source linking
+    
+
+---
+
+### 2. Context Loss
+
+Summaries omit critical nuance
+
+Mitigation:
+
+- preserve raw + processed layers
+    
+
+---
+
+### 3. Over-Automation
+
+System produces content without oversight
+
+Mitigation:
+
+- enforce human verification stage
+    
+
+---
+
+### 4. Source Drift
+
+Outputs not tied to original material
+
+Mitigation:
+
+- require source references in every stage
+    
+
+---
+
+## DESIGN PRINCIPLES (JOURNALISM CONTEXT)
+
+- Traceability over speed
+    
+- Accuracy over volume
+    
+- Structure over convenience
+    
+- Human judgment over automation
+    
+
+---
+
+## MINIMUM VIABLE SYSTEM
+
+A working system only needs:
+
+1. One ingest method
+    
+2. One processing agent
+    
+3. One output file
+    
+4. Manifest tracking
+    
+
+---
+
+## SUCCESS CRITERIA
+
+The system is working when:
+
+```text
+A real-world document is ingested
+→ processed into structured form
+→ analyzed for insight
+→ turned into a draft
+→ verified by a human
+→ traceable end-to-end
+```
+
+---
+
+## STRATEGIC INSIGHT
+
+This system is not just a tool.
+
+It is a **journalism operating system**:
+
+- Vault = memory
+    
+- Agents = processors
+    
+- Human = authority
+    
+- Workflow = accountability
+    
+
+---
+
+## SUMMARY
+
+IDAHO-VAULT enables:
+
+- structured intake of information
+    
+- AI-assisted processing
+    
+- traceable analysis
+    
+- human-controlled publication
+    
+
+The system’s value comes from:
+
+- preserving truth
+    
+- maintaining provenance
+    
+- accelerating insight without sacrificing trust
+    
+
+---

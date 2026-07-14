@@ -1,0 +1,1951 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<tt xmlns="http://www.w3.org/ns/ttml" xmlns:ttp="http://www.w3.org/ns/ttml#parameter" ttp:dropMode="dropNTSC" ttp:frameRate="30" ttp:frameRateMultiplier="1000 1001" ttp:timeBase="smpte" xmlns:m708="http://www.smpte-ra.org/schemas/2052-1/2013/smpte-tt#cea708" xmlns:smpte="http://www.smpte-ra.org/schemas/2052-1/2010/smpte-tt" xmlns:ttm="http://www.w3.org/ns/ttml#metadata" xmlns:tts="http://www.w3.org/ns/ttml#styling">
+
+  <head>
+    <metadata>
+      <smpte:information m708:aspectRatio="16:9" m708:easyReader="false" m708:number="1"/>
+    </metadata>
+    <styling>
+      <style tts:color="white" tts:fontFamily="monospace" tts:fontWeight="normal" tts:textAlign="left" xml:id="basic"/>
+    </styling>
+    <layout>
+      <region tts:backgroundColor="transparent" xml:id="pop1"/>
+      <region tts:backgroundColor="transparent" xml:id="paint"/>
+      <region tts:backgroundColor="transparent" xml:id="rollup2"/>
+      <region tts:backgroundColor="transparent" xml:id="rollup3"/>
+      <region tts:backgroundColor="transparent" xml:id="rollup4"/>
+    </layout>
+  </head>
+
+  <body>
+    <div>
+      <p begin="00:00:00:00" end="00:00:02:05" region="rollup2" style="basic" tts:origin="32.857142857142854% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">Thank you all so</span>
+      </p>
+      <p begin="00:00:00:00" end="00:00:02:05" region="rollup2" style="basic" tts:origin="19.523809523809526% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">much for joining us this week.</span>
+      </p>
+      <p begin="00:00:02:05" end="00:00:03:19" region="rollup2" style="basic" tts:origin="17.61904761904762% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">Julie, I want to start with you.</span>
+      </p>
+      <p begin="00:00:03:19" end="00:00:05:26" region="rollup2" style="basic" tts:origin="34.761904761904759% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">Can you tell us</span>
+      </p>
+      <p begin="00:00:03:19" end="00:00:05:26" region="rollup2" style="basic" tts:origin="32.857142857142854% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">about your family</span>
+      </p>
+      <p begin="00:00:05:26" end="00:00:08:09" region="rollup2" style="basic" tts:origin="23.333333333333332% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">and what Medicaid services</span>
+      </p>
+      <p begin="00:00:05:26" end="00:00:08:09" region="rollup2" style="basic" tts:origin="40.476190476190474% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">you use?</span>
+      </p>
+      <p begin="00:00:08:09" end="00:00:10:20" region="rollup2" style="basic" tts:origin="27.142857142857142% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">Yeah, I'm a mom of six.</span>
+      </p>
+      <p begin="00:00:10:20" end="00:00:12:08" region="rollup2" style="basic" tts:origin="29.047619047619047% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">My two youngest boys</span>
+      </p>
+      <p begin="00:00:12:08" end="00:00:14:03" region="rollup2" style="basic" tts:origin="27.142857142857142% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">are ten-year-old twins,</span>
+      </p>
+      <p begin="00:00:12:08" end="00:00:14:03" region="rollup2" style="basic" tts:origin="30.952380952380953% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">and they both have</span>
+      </p>
+      <p begin="00:00:14:03" end="00:00:16:15" region="rollup2" style="basic" tts:origin="21.428571428571427% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">a diagnosis of Down syndrome.</span>
+      </p>
+      <p begin="00:00:16:15" end="00:00:20:03" region="rollup2" style="basic" tts:origin="30.952380952380953% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">We utilize Medicaid</span>
+      </p>
+      <p begin="00:00:16:15" end="00:00:20:03" region="rollup2" style="basic" tts:origin="25.238095238095237% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">for a myriad of services,</span>
+      </p>
+      <p begin="00:00:20:03" end="00:00:23:04" region="rollup2" style="basic" tts:origin="27.142857142857142% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">from everything medical</span>
+      </p>
+      <p begin="00:00:20:03" end="00:00:23:04" region="rollup2" style="basic" tts:origin="23.333333333333332% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">with multiple specialists,</span>
+      </p>
+      <p begin="00:00:23:04" end="00:00:23:28" region="rollup2" style="basic" tts:origin="34.761904761904759% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">dental, vision.</span>
+      </p>
+      <p begin="00:00:23:28" end="00:00:27:28" region="rollup2" style="basic" tts:origin="38.571428571428569% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">But also, </span>
+      </p>
+      <p begin="00:00:23:28" end="00:00:27:28" region="rollup2" style="basic" tts:origin="27.142857142857142% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">we use the FDS waiver,</span>
+      </p>
+      <p begin="00:00:27:28" end="00:00:29:26" region="rollup2" style="basic" tts:origin="21.428571428571427% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">the family directed services</span>
+      </p>
+      <p begin="00:00:27:28" end="00:00:29:26" region="rollup2" style="basic" tts:origin="42.38095238095238% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">waiver,</span>
+      </p>
+      <p begin="00:00:29:26" end="00:00:32:26" region="rollup2" style="basic" tts:origin="21.428571428571427% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">where they're able to access</span>
+      </p>
+      <p begin="00:00:29:26" end="00:00:32:26" region="rollup2" style="basic" tts:origin="25.238095238095237% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">other types of therapies.</span>
+      </p>
+      <p begin="00:00:33:04" end="00:00:36:16" region="rollup2" style="basic" tts:origin="19.523809523809526% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">We have folks that we can hire,</span>
+      </p>
+      <p begin="00:00:33:04" end="00:00:36:16" region="rollup2" style="basic" tts:origin="25.238095238095237% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">community support workers</span>
+      </p>
+      <p begin="00:00:36:16" end="00:00:37:16" region="rollup2" style="basic" tts:origin="36.666666666666664% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">to help them.</span>
+      </p>
+      <p begin="00:00:37:16" end="00:00:39:08" region="rollup2" style="basic" tts:origin="25.238095238095237% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">We have interventionists.</span>
+      </p>
+      <p begin="00:00:39:08" end="00:00:40:29" region="rollup2" style="basic" tts:origin="27.142857142857142% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">Of course, they receive</span>
+      </p>
+      <p begin="00:00:40:29" end="00:00:43:29" region="rollup2" style="basic" tts:origin="23.333333333333332% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">special education services</span>
+      </p>
+      <p begin="00:00:40:29" end="00:00:43:29" region="rollup2" style="basic" tts:origin="21.428571428571427% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">that are funded by Medicaid.</span>
+      </p>
+      <p begin="00:00:44:03" end="00:00:47:12" region="rollup2" style="basic" tts:origin="21.428571428571427% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">They receive different types</span>
+      </p>
+      <p begin="00:00:44:03" end="00:00:47:12" region="rollup2" style="basic" tts:origin="23.333333333333332% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">of therapy, speech, OT, PT,</span>
+      </p>
+      <p begin="00:00:48:04" end="00:00:49:13" region="rollup2" style="basic" tts:origin="29.047619047619047% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">those sort of things.</span>
+      </p>
+      <p begin="00:00:49:13" end="00:00:51:29" region="rollup2" style="basic" tts:origin="29.047619047619047% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">So it's a whole host</span>
+      </p>
+      <p begin="00:00:49:13" end="00:00:51:29" region="rollup2" style="basic" tts:origin="21.428571428571427% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">of things that support them.</span>
+      </p>
+      <p begin="00:00:53:00" end="00:00:53:20" region="rollup2" style="basic" tts:origin="42.38095238095238% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">How are</span>
+      </p>
+      <p begin="00:00:53:20" end="00:00:56:22" region="rollup2" style="basic" tts:origin="32.857142857142854% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">you worried that</span>
+      </p>
+      <p begin="00:00:53:20" end="00:00:56:22" region="rollup2" style="basic" tts:origin="17.61904761904762% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">these services might be affected</span>
+      </p>
+      <p begin="00:00:56:22" end="00:00:59:21" region="rollup2" style="basic" tts:origin="19.523809523809526% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">if some of these proposed cuts</span>
+      </p>
+      <p begin="00:00:56:22" end="00:00:59:21" region="rollup2" style="basic" tts:origin="34.761904761904759% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">go into effect?</span>
+      </p>
+      <p begin="00:00:59:23" end="00:01:01:14" region="rollup2" style="basic" tts:origin="44.285714285714285% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">Well,</span>
+      </p>
+      <p begin="00:00:59:23" end="00:01:01:14" region="rollup2" style="basic" tts:origin="17.61904761904762% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">I'm concerned about all of them.</span>
+      </p>
+      <p begin="00:01:01:14" end="00:01:03:26" region="rollup2" style="basic" tts:origin="29.047619047619047% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">I mean, the therapies</span>
+      </p>
+      <p begin="00:01:01:14" end="00:01:03:26" region="rollup2" style="basic" tts:origin="29.047619047619047% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">have been absolutely</span>
+      </p>
+      <p begin="00:01:03:26" end="00:01:06:09" region="rollup2" style="basic" tts:origin="23.333333333333332% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">instrumental in their lives</span>
+      </p>
+      <p begin="00:01:03:26" end="00:01:06:09" region="rollup2" style="basic" tts:origin="27.142857142857142% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">since they were babies.</span>
+      </p>
+      <p begin="00:01:06:09" end="00:01:07:07" region="rollup2" style="basic" tts:origin="36.666666666666664% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">Teaching them</span>
+      </p>
+      <p begin="00:01:07:07" end="00:01:11:06" region="rollup2" style="basic" tts:origin="21.428571428571427% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">the most foundational skills</span>
+      </p>
+      <p begin="00:01:07:07" end="00:01:11:06" region="rollup2" style="basic" tts:origin="29.047619047619047% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">from eating, walking,</span>
+      </p>
+      <p begin="00:01:11:06" end="00:01:16:04" region="rollup2" style="basic" tts:origin="23.333333333333332% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">crawling, speaking, holding</span>
+      </p>
+      <p begin="00:01:11:06" end="00:01:16:04" region="rollup2" style="basic" tts:origin="19.523809523809526% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">a pencil correctly, everything.</span>
+      </p>
+      <p begin="00:01:16:12" end="00:01:18:23" region="rollup2" style="basic" tts:origin="32.857142857142854% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">And they continue</span>
+      </p>
+      <p begin="00:01:16:12" end="00:01:18:23" region="rollup2" style="basic" tts:origin="21.428571428571427% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">to be of great value for them</span>
+      </p>
+      <p begin="00:01:18:23" end="00:01:20:08" region="rollup2" style="basic" tts:origin="32.857142857142854% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">as they continue</span>
+      </p>
+      <p begin="00:01:18:23" end="00:01:20:08" region="rollup2" style="basic" tts:origin="29.047619047619047% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">to grow and develop.</span>
+      </p>
+      <p begin="00:01:20:08" end="00:01:22:13" region="rollup2" style="basic" tts:origin="30.952380952380953% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">They're kind of on</span>
+      </p>
+      <p begin="00:01:20:08" end="00:01:22:13" region="rollup2" style="basic" tts:origin="23.333333333333332% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">a little more scenic route.</span>
+      </p>
+      <p begin="00:01:22:13" end="00:01:24:05" region="rollup2" style="basic" tts:origin="27.142857142857142% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">So some of those things</span>
+      </p>
+      <p begin="00:01:22:13" end="00:01:24:05" region="rollup2" style="basic" tts:origin="23.333333333333332% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">are taking a little longer,</span>
+      </p>
+      <p begin="00:01:24:05" end="00:01:25:25" region="rollup2" style="basic" tts:origin="21.428571428571427% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">and they need that continued</span>
+      </p>
+      <p begin="00:01:24:05" end="00:01:25:25" region="rollup2" style="basic" tts:origin="40.476190476190474% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">support.</span>
+      </p>
+      <p begin="00:01:25:25" end="00:01:29:10" region="rollup2" style="basic" tts:origin="32.857142857142854% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">So, losing those</span>
+      </p>
+      <p begin="00:01:25:25" end="00:01:29:10" region="rollup2" style="basic" tts:origin="19.523809523809526% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">would be devastating for sure.</span>
+      </p>
+      <p begin="00:01:30:05" end="00:01:32:10" region="rollup2" style="basic" tts:origin="30.952380952380953% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">And then those home</span>
+      </p>
+      <p begin="00:01:30:05" end="00:01:32:10" region="rollup2" style="basic" tts:origin="21.428571428571427% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">and community based services</span>
+      </p>
+      <p begin="00:01:32:10" end="00:01:32:17" region="rollup2" style="basic" tts:origin="42.38095238095238% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">are the</span>
+      </p>
+      <p begin="00:01:32:17" end="00:01:36:07" region="rollup2" style="basic" tts:origin="19.523809523809526% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">things that we're kind of able</span>
+      </p>
+      <p begin="00:01:32:17" end="00:01:36:07" region="rollup2" style="basic" tts:origin="21.428571428571427% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">to customize to their needs.</span>
+      </p>
+      <p begin="00:01:36:14" end="00:01:40:09" region="rollup2" style="basic" tts:origin="29.047619047619047% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">Those are the things</span>
+      </p>
+      <p begin="00:01:36:14" end="00:01:40:09" region="rollup2" style="basic" tts:origin="19.523809523809526% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">that allow them to learn skills</span>
+      </p>
+      <p begin="00:01:40:09" end="00:01:41:24" region="rollup2" style="basic" tts:origin="34.761904761904759% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">that they need</span>
+      </p>
+      <p begin="00:01:40:09" end="00:01:41:24" region="rollup2" style="basic" tts:origin="25.238095238095237% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">to be in their community.</span>
+      </p>
+      <p begin="00:01:41:24" end="00:01:45:06" region="rollup2" style="basic" tts:origin="23.333333333333332% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">Safety skills, basic living</span>
+      </p>
+      <p begin="00:01:41:24" end="00:01:45:06" region="rollup2" style="basic" tts:origin="19.523809523809526% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">skills, those types of things,</span>
+      </p>
+      <p begin="00:01:45:16" end="00:01:49:24" region="rollup2" style="basic" tts:origin="30.952380952380953% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">help them develop,</span>
+      </p>
+      <p begin="00:01:45:16" end="00:01:49:24" region="rollup2" style="basic" tts:origin="29.047619047619047% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">just more skills like</span>
+      </p>
+      <p begin="00:01:50:08" end="00:01:53:07" region="rollup2" style="basic" tts:origin="23.333333333333332% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">they have some alternative</span>
+      </p>
+      <p begin="00:01:50:08" end="00:01:53:07" region="rollup2" style="basic" tts:origin="19.523809523809526% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">therapies that have taught them</span>
+      </p>
+      <p begin="00:01:53:07" end="00:01:56:06" region="rollup2" style="basic" tts:origin="21.428571428571427% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">some bravery, just some being</span>
+      </p>
+      <p begin="00:01:53:07" end="00:01:56:06" region="rollup2" style="basic" tts:origin="32.857142857142854% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">more adventurous.</span>
+      </p>
+      <p begin="00:01:56:28" end="00:01:58:09" region="rollup2" style="basic" tts:origin="25.238095238095237% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">Taught them how to swim.</span>
+      </p>
+      <p begin="00:01:58:09" end="00:01:59:17" region="rollup2" style="basic" tts:origin="29.047619047619047% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">Those type of things.</span>
+      </p>
+      <p begin="00:01:59:17" end="00:02:01:01" region="rollup2" style="basic" tts:origin="23.333333333333332% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">So they're really valuable,</span>
+      </p>
+      <p begin="00:02:01:01" end="00:02:02:19" region="rollup2" style="basic" tts:origin="23.333333333333332% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">and to see them threatened</span>
+      </p>
+      <p begin="00:02:01:01" end="00:02:02:19" region="rollup2" style="basic" tts:origin="40.476190476190474% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">would be,</span>
+      </p>
+      <p begin="00:02:02:19" end="00:02:04:09" region="rollup2" style="basic" tts:origin="23.333333333333332% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">again, would just be really</span>
+      </p>
+      <p begin="00:02:02:19" end="00:02:04:09" region="rollup2" style="basic" tts:origin="36.666666666666664% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">devastating.</span>
+      </p>
+      <p begin="00:02:04:09" end="00:02:06:11" region="rollup2" style="basic" tts:origin="27.142857142857142% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">It's services that have</span>
+      </p>
+      <p begin="00:02:06:11" end="00:02:07:22" region="rollup2" style="basic" tts:origin="25.238095238095237% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">brought them to the place</span>
+      </p>
+      <p begin="00:02:06:11" end="00:02:07:22" region="rollup2" style="basic" tts:origin="36.666666666666664% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">that they are</span>
+      </p>
+      <p begin="00:02:07:22" end="00:02:10:08" region="rollup2" style="basic" tts:origin="29.047619047619047% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">now and will continue</span>
+      </p>
+      <p begin="00:02:07:22" end="00:02:10:08" region="rollup2" style="basic" tts:origin="32.857142857142854% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">to support them.</span>
+      </p>
+      <p begin="00:02:10:08" end="00:02:13:08" region="rollup2" style="basic" tts:origin="21.428571428571427% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">Ned, you're also a caretaker</span>
+      </p>
+      <p begin="00:02:10:08" end="00:02:13:08" region="rollup2" style="basic" tts:origin="30.952380952380953% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">for your daughter.</span>
+      </p>
+      <p begin="00:02:13:08" end="00:02:15:13" region="rollup2" style="basic" tts:origin="42.38095238095238% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">Can you</span>
+      </p>
+      <p begin="00:02:13:08" end="00:02:15:13" region="rollup2" style="basic" tts:origin="23.333333333333332% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">tell me about your family?</span>
+      </p>
+      <p begin="00:02:16:16" end="00:02:17:02" region="rollup2" style="basic" tts:origin="36.666666666666664% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">Well, at this</span>
+      </p>
+      <p begin="00:02:17:02" end="00:02:20:01" region="rollup2" style="basic" tts:origin="27.142857142857142% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">point, I'm not a direct</span>
+      </p>
+      <p begin="00:02:17:02" end="00:02:20:01" region="rollup2" style="basic" tts:origin="38.571428571428569% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">caretaker.</span>
+      </p>
+      <p begin="00:02:20:11" end="00:02:23:17" region="rollup2" style="basic" tts:origin="21.428571428571427% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">My wife and I live in Boise,</span>
+      </p>
+      <p begin="00:02:20:11" end="00:02:23:17" region="rollup2" style="basic" tts:origin="27.142857142857142% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">and our daughter lives</span>
+      </p>
+      <p begin="00:02:23:17" end="00:02:28:09" region="rollup2" style="basic" tts:origin="23.333333333333332% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">in a supported living home</span>
+      </p>
+      <p begin="00:02:23:17" end="00:02:28:09" region="rollup2" style="basic" tts:origin="32.857142857142854% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">four miles away.</span>
+      </p>
+      <p begin="00:02:28:29" end="00:02:31:24" region="rollup2" style="basic" tts:origin="23.333333333333332% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">And she receives community</span>
+      </p>
+      <p begin="00:02:28:29" end="00:02:31:24" region="rollup2" style="basic" tts:origin="34.761904761904759% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">based services</span>
+      </p>
+      <p begin="00:02:31:24" end="00:02:34:28" region="rollup2" style="basic" tts:origin="34.761904761904759% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">for resident, </span>
+      </p>
+      <p begin="00:02:31:24" end="00:02:34:28" region="rollup2" style="basic" tts:origin="23.333333333333332% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">which includes direct care.</span>
+      </p>
+      <p begin="00:02:35:06" end="00:02:38:19" region="rollup2" style="basic" tts:origin="25.238095238095237% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">So we have a direct care</span>
+      </p>
+      <p begin="00:02:35:06" end="00:02:38:19" region="rollup2" style="basic" tts:origin="34.761904761904759% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">agency, HISway,</span>
+      </p>
+      <p begin="00:02:38:23" end="00:02:41:26" region="rollup2" style="basic" tts:origin="34.761904761904759% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">which provides</span>
+      </p>
+      <p begin="00:02:38:23" end="00:02:41:26" region="rollup2" style="basic" tts:origin="21.428571428571427% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">staff that come to the house.</span>
+      </p>
+      <p begin="00:02:42:20" end="00:02:45:07" region="rollup2" style="basic" tts:origin="17.61904761904762% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">She requires 24-hour-a-day care.</span>
+      </p>
+      <p begin="00:02:45:07" end="00:02:48:23" region="rollup2" style="basic" tts:origin="34.761904761904759% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">Eva had a brain</span>
+      </p>
+      <p begin="00:02:45:07" end="00:02:48:23" region="rollup2" style="basic" tts:origin="21.428571428571427% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">bleed near the time of birth.</span>
+      </p>
+      <p begin="00:02:48:23" end="00:02:52:29" region="rollup2" style="basic" tts:origin="25.238095238095237% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">And so her disability of</span>
+      </p>
+      <p begin="00:02:48:23" end="00:02:52:29" region="rollup2" style="basic" tts:origin="17.61904761904762% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">cerebral palsy is quite serious.</span>
+      </p>
+      <p begin="00:02:53:24" end="00:02:56:18" region="rollup2" style="basic" tts:origin="27.142857142857142% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">So she requires 24 hour</span>
+      </p>
+      <p begin="00:02:53:24" end="00:02:56:18" region="rollup2" style="basic" tts:origin="38.571428571428569% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">a day care,</span>
+      </p>
+      <p begin="00:02:56:18" end="00:03:00:05" region="rollup2" style="basic" tts:origin="30.952380952380953% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">and she cannot get</span>
+      </p>
+      <p begin="00:02:56:18" end="00:03:00:05" region="rollup2" style="basic" tts:origin="27.142857142857142% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">through the day at all</span>
+      </p>
+      <p begin="00:03:00:12" end="00:03:04:03" region="rollup2" style="basic" tts:origin="30.952380952380953% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">without direct care</span>
+      </p>
+      <p begin="00:03:00:12" end="00:03:04:03" region="rollup2" style="basic" tts:origin="27.142857142857142% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">helping her to do that.</span>
+      </p>
+      <p begin="00:03:04:03" end="00:03:09:12" region="rollup2" style="basic" tts:origin="32.857142857142854% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">So I am concerned</span>
+      </p>
+      <p begin="00:03:04:03" end="00:03:09:12" region="rollup2" style="basic" tts:origin="21.428571428571427% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">because Eva has been in this</span>
+      </p>
+      <p begin="00:03:09:12" end="00:03:14:12" region="rollup2" style="basic" tts:origin="19.523809523809526% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">supportive living arena, being</span>
+      </p>
+      <p begin="00:03:09:12" end="00:03:14:12" region="rollup2" style="basic" tts:origin="21.428571428571427% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">cared for, the past 18 years.</span>
+      </p>
+      <p begin="00:03:16:28" end="00:03:19:28" region="rollup2" style="basic" tts:origin="27.142857142857142% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">And it's home for her.</span>
+      </p>
+      <p begin="00:03:20:01" end="00:03:21:21" region="rollup2" style="basic" tts:origin="25.238095238095237% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">It's a model that works.</span>
+      </p>
+      <p begin="00:03:21:21" end="00:03:23:02" region="rollup2" style="basic" tts:origin="38.571428571428569% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">She's safe.</span>
+      </p>
+      <p begin="00:03:23:02" end="00:03:26:01" region="rollup2" style="basic" tts:origin="34.761904761904759% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">People know her</span>
+      </p>
+      <p begin="00:03:23:02" end="00:03:26:01" region="rollup2" style="basic" tts:origin="21.428571428571427% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">and know how to care for her.</span>
+      </p>
+      <p begin="00:03:26:10" end="00:03:29:19" region="rollup2" style="basic" tts:origin="19.523809523809526% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">There is no way that her mother</span>
+      </p>
+      <p begin="00:03:26:10" end="00:03:29:19" region="rollup2" style="basic" tts:origin="38.571428571428569% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">and father,</span>
+      </p>
+      <p begin="00:03:29:19" end="00:03:33:13" region="rollup2" style="basic" tts:origin="25.238095238095237% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">who are now in their late</span>
+      </p>
+      <p begin="00:03:29:19" end="00:03:33:13" region="rollup2" style="basic" tts:origin="29.047619047619047% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">70s, can care for her</span>
+      </p>
+      <p begin="00:03:33:27" end="00:03:34:21" region="rollup2" style="basic" tts:origin="32.857142857142854% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">directly at home.</span>
+      </p>
+      <p begin="00:03:34:21" end="00:03:37:10" region="rollup2" style="basic" tts:origin="21.428571428571427% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">We cared for her for 21 years</span>
+      </p>
+      <p begin="00:03:34:21" end="00:03:37:10" region="rollup2" style="basic" tts:origin="40.476190476190474% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">at home.</span>
+      </p>
+      <p begin="00:03:37:10" end="00:03:39:04" region="rollup2" style="basic" tts:origin="23.333333333333332% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">At this point, she's happy.</span>
+      </p>
+      <p begin="00:03:39:04" end="00:03:40:09" region="rollup2" style="basic" tts:origin="38.571428571428569% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">She's safe.</span>
+      </p>
+      <p begin="00:03:40:09" end="00:03:44:10" region="rollup2" style="basic" tts:origin="25.238095238095237% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">She has a quality of life</span>
+      </p>
+      <p begin="00:03:40:09" end="00:03:44:10" region="rollup2" style="basic" tts:origin="25.238095238095237% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">that is unbelievably good</span>
+      </p>
+      <p begin="00:03:44:10" end="00:03:45:20" region="rollup2" style="basic" tts:origin="34.761904761904759% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">at this point.</span>
+      </p>
+      <p begin="00:03:45:20" end="00:03:48:10" region="rollup2" style="basic" tts:origin="25.238095238095237% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">If these cuts go through,</span>
+      </p>
+      <p begin="00:03:48:10" end="00:03:51:09" region="rollup2" style="basic" tts:origin="40.476190476190474% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">to reduce</span>
+      </p>
+      <p begin="00:03:53:16" end="00:03:56:16" region="rollup2" style="basic" tts:origin="36.666666666666664% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">the rates for</span>
+      </p>
+      <p begin="00:03:56:22" end="00:03:59:07" region="rollup2" style="basic" tts:origin="27.142857142857142% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">services to the agency,</span>
+      </p>
+      <p begin="00:03:59:07" end="00:04:03:11" region="rollup2" style="basic" tts:origin="19.523809523809526% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">reimbursement rates excuse me,</span>
+      </p>
+      <p begin="00:03:59:07" end="00:04:03:11" region="rollup2" style="basic" tts:origin="21.428571428571427% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">if those are cut any further.</span>
+      </p>
+      <p begin="00:04:03:11" end="00:04:05:09" region="rollup2" style="basic" tts:origin="29.047619047619047% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">They were cut earlier</span>
+      </p>
+      <p begin="00:04:03:11" end="00:04:05:09" region="rollup2" style="basic" tts:origin="36.666666666666664% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">in this year.</span>
+      </p>
+      <p begin="00:04:05:09" end="00:04:08:09" region="rollup2" style="basic" tts:origin="27.142857142857142% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">It is having an effect</span>
+      </p>
+      <p begin="00:04:05:09" end="00:04:08:09" region="rollup2" style="basic" tts:origin="34.761904761904759% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">on the agency.</span>
+      </p>
+      <p begin="00:04:08:15" end="00:04:11:15" region="rollup2" style="basic" tts:origin="19.523809523809526% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">Many of the staff have to work</span>
+      </p>
+      <p begin="00:04:11:15" end="00:04:15:04" region="rollup2" style="basic" tts:origin="27.142857142857142% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">90 to 100 hours a week</span>
+      </p>
+      <p begin="00:04:11:15" end="00:04:15:04" region="rollup2" style="basic" tts:origin="19.523809523809526% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">to keep up the dedicated staff.</span>
+      </p>
+      <p begin="00:04:17:04" end="00:04:19:20" region="rollup2" style="basic" tts:origin="40.476190476190474% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">Staffing</span>
+      </p>
+      <p begin="00:04:17:04" end="00:04:19:20" region="rollup2" style="basic" tts:origin="21.428571428571427% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">is very scarce at this point.</span>
+      </p>
+      <p begin="00:04:19:20" end="00:04:21:00" region="rollup2" style="basic" tts:origin="23.333333333333332% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">So if there are any further</span>
+      </p>
+      <p begin="00:04:21:00" end="00:04:24:10" region="rollup2" style="basic" tts:origin="25.238095238095237% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">cuts, we'll start to see</span>
+      </p>
+      <p begin="00:04:21:00" end="00:04:24:10" region="rollup2" style="basic" tts:origin="29.047619047619047% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">administrative cuts.</span>
+      </p>
+      <p begin="00:04:24:23" end="00:04:26:22" region="rollup2" style="basic" tts:origin="36.666666666666664% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">Program cuts.</span>
+      </p>
+      <p begin="00:04:26:22" end="00:04:30:16" region="rollup2" style="basic" tts:origin="30.952380952380953% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">And then the agency</span>
+      </p>
+      <p begin="00:04:26:22" end="00:04:30:16" region="rollup2" style="basic" tts:origin="29.047619047619047% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">model itself would be</span>
+      </p>
+      <p begin="00:04:30:16" end="00:04:33:27" region="rollup2" style="basic" tts:origin="36.666666666666664% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">on the ropes,</span>
+      </p>
+      <p begin="00:04:30:16" end="00:04:33:27" region="rollup2" style="basic" tts:origin="21.428571428571427% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">it would be on life support.</span>
+      </p>
+      <p begin="00:04:34:09" end="00:04:37:09" region="rollup2" style="basic" tts:origin="19.523809523809526% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">And without that kind of care,</span>
+      </p>
+      <p begin="00:04:37:15" end="00:04:40:06" region="rollup2" style="basic" tts:origin="23.333333333333332% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">my daughter cannot survive.</span>
+      </p>
+      <p begin="00:04:40:06" end="00:04:42:06" region="rollup2" style="basic" tts:origin="34.761904761904759% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">From day to day</span>
+      </p>
+      <p begin="00:04:40:06" end="00:04:42:06" region="rollup2" style="basic" tts:origin="30.952380952380953% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">could not survive.</span>
+      </p>
+      <p begin="00:04:42:06" end="00:04:45:11" region="rollup2" style="basic" tts:origin="21.428571428571427% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">So it's extreme in her case.</span>
+      </p>
+      <p begin="00:04:45:15" end="00:04:47:04" region="rollup2" style="basic" tts:origin="27.142857142857142% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">She needs the services.</span>
+      </p>
+      <p begin="00:04:47:04" end="00:04:48:26" region="rollup2" style="basic" tts:origin="25.238095238095237% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">It's being provided well.</span>
+      </p>
+      <p begin="00:04:48:26" end="00:04:52:08" region="rollup2" style="basic" tts:origin="25.238095238095237% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">But to further make cuts</span>
+      </p>
+      <p begin="00:04:48:26" end="00:04:52:08" region="rollup2" style="basic" tts:origin="32.857142857142854% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">would compromise</span>
+      </p>
+      <p begin="00:04:52:08" end="00:04:56:01" region="rollup2" style="basic" tts:origin="32.857142857142854% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">the whole model,</span>
+      </p>
+      <p begin="00:04:52:08" end="00:04:56:01" region="rollup2" style="basic" tts:origin="30.952380952380953% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">and the whole card,</span>
+      </p>
+      <p begin="00:04:56:07" end="00:04:59:07" region="rollup2" style="basic" tts:origin="25.238095238095237% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">cards of house would be,</span>
+      </p>
+      <p begin="00:04:56:07" end="00:04:59:07" region="rollup2" style="basic" tts:origin="25.238095238095237% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">might come tumbling down.</span>
+      </p>
+      <p begin="00:05:00:17" end="00:05:00:26" region="rollup2" style="basic" tts:origin="44.285714285714285% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">Yeah.</span>
+      </p>
+      <p begin="00:05:00:26" end="00:05:03:25" region="rollup2" style="basic" tts:origin="21.428571428571427% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">Kristyn, you receive services</span>
+      </p>
+      <p begin="00:05:00:26" end="00:05:03:25" region="rollup2" style="basic" tts:origin="25.238095238095237% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">through the developmental</span>
+      </p>
+      <p begin="00:05:03:25" end="00:05:04:28" region="rollup2" style="basic" tts:origin="30.952380952380953% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">disability program.</span>
+      </p>
+      <p begin="00:05:04:28" end="00:05:06:11" region="rollup2" style="basic" tts:origin="32.857142857142854% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">Can you describe</span>
+      </p>
+      <p begin="00:05:06:11" end="00:05:09:12" region="rollup2" style="basic" tts:origin="27.142857142857142% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">what those services are</span>
+      </p>
+      <p begin="00:05:06:11" end="00:05:09:12" region="rollup2" style="basic" tts:origin="19.523809523809526% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">and what you're worried about?</span>
+      </p>
+      <p begin="00:05:12:01" end="00:05:15:06" region="rollup2" style="basic" tts:origin="27.142857142857142% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">I am on Medicaid's home</span>
+      </p>
+      <p begin="00:05:12:01" end="00:05:15:06" region="rollup2" style="basic" tts:origin="21.428571428571427% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">and community based services.</span>
+      </p>
+      <p begin="00:05:15:18" end="00:05:18:11" region="rollup2" style="basic" tts:origin="27.142857142857142% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">I choose to self direct</span>
+      </p>
+      <p begin="00:05:15:18" end="00:05:18:11" region="rollup2" style="basic" tts:origin="19.523809523809526% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">my services under the My Voice</span>
+      </p>
+      <p begin="00:05:18:11" end="00:05:19:21" region="rollup2" style="basic" tts:origin="32.857142857142854% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">My Choice option.</span>
+      </p>
+      <p begin="00:05:19:21" end="00:05:21:29" region="rollup2" style="basic" tts:origin="40.476190476190474% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">Each year</span>
+      </p>
+      <p begin="00:05:19:21" end="00:05:21:29" region="rollup2" style="basic" tts:origin="19.523809523809526% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">I get an individualized budget</span>
+      </p>
+      <p begin="00:05:21:29" end="00:05:23:09" region="rollup2" style="basic" tts:origin="32.857142857142854% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">I use to recruit,</span>
+      </p>
+      <p begin="00:05:23:09" end="00:05:26:04" region="rollup2" style="basic" tts:origin="32.857142857142854% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">hire, and manage</span>
+      </p>
+      <p begin="00:05:23:09" end="00:05:26:04" region="rollup2" style="basic" tts:origin="21.428571428571427% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">a certain number of community</span>
+      </p>
+      <p begin="00:05:26:04" end="00:05:28:05" region="rollup2" style="basic" tts:origin="34.761904761904759% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">support workers</span>
+      </p>
+      <p begin="00:05:26:04" end="00:05:28:05" region="rollup2" style="basic" tts:origin="23.333333333333332% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">who provide round the clock</span>
+      </p>
+      <p begin="00:05:28:05" end="00:05:29:29" region="rollup2" style="basic" tts:origin="36.666666666666664% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">support to me</span>
+      </p>
+      <p begin="00:05:28:05" end="00:05:29:29" region="rollup2" style="basic" tts:origin="29.047619047619047% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">in my own apartment.</span>
+      </p>
+      <p begin="00:05:29:29" end="00:05:33:03" region="rollup2" style="basic" tts:origin="21.428571428571427% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">The support my staff provide</span>
+      </p>
+      <p begin="00:05:29:29" end="00:05:33:03" region="rollup2" style="basic" tts:origin="23.333333333333332% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">includes helping me get in</span>
+      </p>
+      <p begin="00:05:33:03" end="00:05:36:29" region="rollup2" style="basic" tts:origin="27.142857142857142% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">and out of bed, shower,</span>
+      </p>
+      <p begin="00:05:33:03" end="00:05:36:29" region="rollup2" style="basic" tts:origin="19.523809523809526% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">use the restroom, get dressed,</span>
+      </p>
+      <p begin="00:05:37:04" end="00:05:40:02" region="rollup2" style="basic" tts:origin="32.857142857142854% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">prepare my meals,</span>
+      </p>
+      <p begin="00:05:37:04" end="00:05:40:02" region="rollup2" style="basic" tts:origin="25.238095238095237% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">drive me to appointments,</span>
+      </p>
+      <p begin="00:05:40:02" end="00:05:43:02" region="rollup2" style="basic" tts:origin="25.238095238095237% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">help me get my groceries,</span>
+      </p>
+      <p begin="00:05:40:02" end="00:05:43:02" region="rollup2" style="basic" tts:origin="29.047619047619047% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">and most importantly,</span>
+      </p>
+      <p begin="00:05:43:04" end="00:05:45:29" region="rollup2" style="basic" tts:origin="17.61904761904762% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">they help me take my medications</span>
+      </p>
+      <p begin="00:05:43:04" end="00:05:45:29" region="rollup2" style="basic" tts:origin="38.571428571428569% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">every day.</span>
+      </p>
+      <p begin="00:05:45:29" end="00:05:48:15" region="rollup2" style="basic" tts:origin="21.428571428571427% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">My staff do all these things</span>
+      </p>
+      <p begin="00:05:45:29" end="00:05:48:15" region="rollup2" style="basic" tts:origin="25.238095238095237% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">at a fraction of the cost</span>
+      </p>
+      <p begin="00:05:48:15" end="00:05:49:08" region="rollup2" style="basic" tts:origin="30.952380952380953% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">it would be for me</span>
+      </p>
+      <p begin="00:05:49:08" end="00:05:52:08" region="rollup2" style="basic" tts:origin="19.523809523809526% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">to receive these same services</span>
+      </p>
+      <p begin="00:05:49:08" end="00:05:52:08" region="rollup2" style="basic" tts:origin="30.952380952380953% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">in a nursing home.</span>
+      </p>
+      <p begin="00:05:52:24" end="00:05:55:01" region="rollup2" style="basic" tts:origin="25.238095238095237% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">I am worried that if home</span>
+      </p>
+      <p begin="00:05:52:24" end="00:05:55:01" region="rollup2" style="basic" tts:origin="30.952380952380953% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">and community based</span>
+      </p>
+      <p begin="00:05:55:01" end="00:05:56:08" region="rollup2" style="basic" tts:origin="32.857142857142854% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">services are cut,</span>
+      </p>
+      <p begin="00:05:56:08" end="00:05:57:12" region="rollup2" style="basic" tts:origin="30.952380952380953% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">I will be homeless,</span>
+      </p>
+      <p begin="00:05:57:12" end="00:06:01:01" region="rollup2" style="basic" tts:origin="23.333333333333332% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">because I refuse to go to a</span>
+      </p>
+      <p begin="00:05:57:12" end="00:06:01:01" region="rollup2" style="basic" tts:origin="19.523809523809526% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">nursing home or an institution.</span>
+      </p>
+      <p begin="00:06:01:15" end="00:06:02:27" region="rollup2" style="basic" tts:origin="34.761904761904759% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">I'd rather die.</span>
+      </p>
+      <p begin="00:06:02:27" end="00:06:05:04" region="rollup2" style="basic" tts:origin="30.952380952380953% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">I don't have family</span>
+      </p>
+      <p begin="00:06:02:27" end="00:06:05:04" region="rollup2" style="basic" tts:origin="29.047619047619047% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">that I can live with.</span>
+      </p>
+      <p begin="00:06:05:04" end="00:06:06:09" region="rollup2" style="basic" tts:origin="21.428571428571427% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">And I know that there's been</span>
+      </p>
+      <p begin="00:06:06:09" end="00:06:08:02" region="rollup2" style="basic" tts:origin="32.857142857142854% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">a lot of concern</span>
+      </p>
+      <p begin="00:06:06:09" end="00:06:08:02" region="rollup2" style="basic" tts:origin="30.952380952380953% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">in the legislature</span>
+      </p>
+      <p begin="00:06:08:02" end="00:06:10:14" region="rollup2" style="basic" tts:origin="27.142857142857142% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">and around the country</span>
+      </p>
+      <p begin="00:06:08:02" end="00:06:10:14" region="rollup2" style="basic" tts:origin="36.666666666666664% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">about fraud.</span>
+      </p>
+      <p begin="00:06:10:14" end="00:06:11:09" region="rollup2" style="basic" tts:origin="36.666666666666664% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">But there are</span>
+      </p>
+      <p begin="00:06:11:09" end="00:06:14:09" region="rollup2" style="basic" tts:origin="30.952380952380953% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">layers of oversight</span>
+      </p>
+      <p begin="00:06:11:09" end="00:06:14:09" region="rollup2" style="basic" tts:origin="19.523809523809526% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">that you go through every year</span>
+      </p>
+      <p begin="00:06:14:09" end="00:06:16:23" region="rollup2" style="basic" tts:origin="30.952380952380953% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">to get your budget</span>
+      </p>
+      <p begin="00:06:14:09" end="00:06:16:23" region="rollup2" style="basic" tts:origin="23.333333333333332% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">to spend on these services.</span>
+      </p>
+      <p begin="00:06:16:23" end="00:06:18:07" region="rollup2" style="basic" tts:origin="40.476190476190474% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">What are</span>
+      </p>
+      <p begin="00:06:16:23" end="00:06:18:07" region="rollup2" style="basic" tts:origin="23.333333333333332% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">those layers of oversight?</span>
+      </p>
+      <p begin="00:06:19:09" end="00:06:19:21" region="rollup2" style="basic" tts:origin="42.38095238095238% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">For me.</span>
+      </p>
+      <p begin="00:06:19:21" end="00:06:21:14" region="rollup2" style="basic" tts:origin="42.38095238095238% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">you to</span>
+      </p>
+      <p begin="00:06:19:21" end="00:06:21:14" region="rollup2" style="basic" tts:origin="19.523809523809526% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">be eligible for these services</span>
+      </p>
+      <p begin="00:06:21:14" end="00:06:22:26" region="rollup2" style="basic" tts:origin="30.952380952380953% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">they must cost less</span>
+      </p>
+      <p begin="00:06:22:26" end="00:06:25:25" region="rollup2" style="basic" tts:origin="21.428571428571427% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">than living in a nursing home</span>
+      </p>
+      <p begin="00:06:22:26" end="00:06:25:25" region="rollup2" style="basic" tts:origin="25.238095238095237% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">to save the state money.</span>
+      </p>
+      <p begin="00:06:26:01" end="00:06:26:18" region="rollup2" style="basic" tts:origin="38.571428571428569% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">This means</span>
+      </p>
+      <p begin="00:06:26:18" end="00:06:28:10" region="rollup2" style="basic" tts:origin="27.142857142857142% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">I get an annual budget</span>
+      </p>
+      <p begin="00:06:26:18" end="00:06:28:10" region="rollup2" style="basic" tts:origin="38.571428571428569% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">determined</span>
+      </p>
+      <p begin="00:06:28:10" end="00:06:30:11" region="rollup2" style="basic" tts:origin="23.333333333333332% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">through a state assessment</span>
+      </p>
+      <p begin="00:06:28:10" end="00:06:30:11" region="rollup2" style="basic" tts:origin="40.476190476190474% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">process.</span>
+      </p>
+      <p begin="00:06:30:11" end="00:06:33:07" region="rollup2" style="basic" tts:origin="23.333333333333332% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">Every year I create a plan</span>
+      </p>
+      <p begin="00:06:30:11" end="00:06:33:07" region="rollup2" style="basic" tts:origin="23.333333333333332% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">with the budget I am given</span>
+      </p>
+      <p begin="00:06:33:07" end="00:06:36:07" region="rollup2" style="basic" tts:origin="21.428571428571427% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">that must be approved through</span>
+      </p>
+      <p begin="00:06:33:07" end="00:06:36:07" region="rollup2" style="basic" tts:origin="25.238095238095237% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">the Division of Medicaid.</span>
+      </p>
+      <p begin="00:06:36:20" end="00:06:39:03" region="rollup2" style="basic" tts:origin="29.047619047619047% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">While I am considered</span>
+      </p>
+      <p begin="00:06:36:20" end="00:06:39:03" region="rollup2" style="basic" tts:origin="23.333333333333332% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">nursing home level of care,</span>
+      </p>
+      <p begin="00:06:39:03" end="00:06:42:00" region="rollup2" style="basic" tts:origin="17.61904761904762% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">and could live in a nursing home</span>
+      </p>
+      <p begin="00:06:39:03" end="00:06:42:00" region="rollup2" style="basic" tts:origin="30.952380952380953% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">based on my needs,</span>
+      </p>
+      <p begin="00:06:42:00" end="00:06:43:14" region="rollup2" style="basic" tts:origin="21.428571428571427% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">I will never make this choice</span>
+      </p>
+      <p begin="00:06:43:14" end="00:06:46:07" region="rollup2" style="basic" tts:origin="32.857142857142854% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">because I refuse</span>
+      </p>
+      <p begin="00:06:43:14" end="00:06:46:07" region="rollup2" style="basic" tts:origin="23.333333333333332% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">to live in an institution.</span>
+      </p>
+      <p begin="00:06:46:07" end="00:06:49:12" region="rollup2" style="basic" tts:origin="23.333333333333332% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">I want a life, and that is</span>
+      </p>
+      <p begin="00:06:46:07" end="00:06:49:12" region="rollup2" style="basic" tts:origin="19.523809523809526% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">not possible in a nursing home.</span>
+      </p>
+      <p begin="00:06:49:23" end="00:06:52:02" region="rollup2" style="basic" tts:origin="27.142857142857142% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">People go there to die.</span>
+      </p>
+      <p begin="00:06:52:02" end="00:06:54:26" region="rollup2" style="basic" tts:origin="34.761904761904759% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">It's certainly</span>
+      </p>
+      <p begin="00:06:52:02" end="00:06:54:26" region="rollup2" style="basic" tts:origin="27.142857142857142% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">more of a conversation</span>
+      </p>
+      <p begin="00:06:54:26" end="00:06:57:28" region="rollup2" style="basic" tts:origin="19.523809523809526% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">than just costs at that point,</span>
+      </p>
+      <p begin="00:06:54:26" end="00:06:57:28" region="rollup2" style="basic" tts:origin="38.571428571428569% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">absolutely.</span>
+      </p>
+      <p begin="00:06:58:15" end="00:07:01:16" region="rollup2" style="basic" tts:origin="25.238095238095237% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">Dana, I want to bring you</span>
+      </p>
+      <p begin="00:06:58:15" end="00:07:01:16" region="rollup2" style="basic" tts:origin="27.142857142857142% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">into the conversation.</span>
+      </p>
+      <p begin="00:07:01:18" end="00:07:02:14" region="rollup2" style="basic" tts:origin="29.047619047619047% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">Can you describe the</span>
+      </p>
+      <p begin="00:07:02:14" end="00:07:06:03" region="rollup2" style="basic" tts:origin="19.523809523809526% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">Medicaid services that you use</span>
+      </p>
+      <p begin="00:07:02:14" end="00:07:06:03" region="rollup2" style="basic" tts:origin="23.333333333333332% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">and what your concerns are?</span>
+      </p>
+      <p begin="00:07:06:14" end="00:07:07:03" region="rollup2" style="basic" tts:origin="38.571428571428569% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">Thank you.</span>
+      </p>
+      <p begin="00:07:07:03" end="00:07:10:01" region="rollup2" style="basic" tts:origin="34.761904761904759% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">I'm on the aged</span>
+      </p>
+      <p begin="00:07:07:03" end="00:07:10:01" region="rollup2" style="basic" tts:origin="29.047619047619047% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">and disabled waiver.</span>
+      </p>
+      <p begin="00:07:10:01" end="00:07:13:17" region="rollup2" style="basic" tts:origin="23.333333333333332% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">I have been since I was 18</span>
+      </p>
+      <p begin="00:07:10:01" end="00:07:13:17" region="rollup2" style="basic" tts:origin="27.142857142857142% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">due to a car accident.</span>
+      </p>
+      <p begin="00:07:14:02" end="00:07:16:20" region="rollup2" style="basic" tts:origin="34.761904761904759% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">I grew up in a</span>
+      </p>
+      <p begin="00:07:14:02" end="00:07:16:20" region="rollup2" style="basic" tts:origin="27.142857142857142% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">really small community.</span>
+      </p>
+      <p begin="00:07:16:20" end="00:07:19:20" region="rollup2" style="basic" tts:origin="40.476190476190474% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">I grew up</span>
+      </p>
+      <p begin="00:07:16:20" end="00:07:19:20" region="rollup2" style="basic" tts:origin="27.142857142857142% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">in a farming community.</span>
+      </p>
+      <p begin="00:07:19:20" end="00:07:22:19" region="rollup2" style="basic" tts:origin="27.142857142857142% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">My family are farmers,</span>
+      </p>
+      <p begin="00:07:19:20" end="00:07:22:19" region="rollup2" style="basic" tts:origin="32.857142857142854% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">or were farmers.</span>
+      </p>
+      <p begin="00:07:22:28" end="00:07:27:29" region="rollup2" style="basic" tts:origin="21.428571428571427% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">And I was in a car accident,</span>
+      </p>
+      <p begin="00:07:22:28" end="00:07:27:29" region="rollup2" style="basic" tts:origin="29.047619047619047% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">and I moved to Boise</span>
+      </p>
+      <p begin="00:07:27:29" end="00:07:31:06" region="rollup2" style="basic" tts:origin="34.761904761904759% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">to go to rehab,</span>
+      </p>
+      <p begin="00:07:27:29" end="00:07:31:06" region="rollup2" style="basic" tts:origin="27.142857142857142% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">at the Elks back then.</span>
+      </p>
+      <p begin="00:07:31:18" end="00:07:34:14" region="rollup2" style="basic" tts:origin="27.142857142857142% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">That was back in 1979.</span>
+      </p>
+      <p begin="00:07:34:14" end="00:07:37:14" region="rollup2" style="basic" tts:origin="30.952380952380953% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">So, I use Medicaid.</span>
+      </p>
+      <p begin="00:07:37:29" end="00:07:40:08" region="rollup2" style="basic" tts:origin="23.333333333333332% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">I have two other insurances</span>
+      </p>
+      <p begin="00:07:40:08" end="00:07:43:08" region="rollup2" style="basic" tts:origin="25.238095238095237% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">that will not cover home</span>
+      </p>
+      <p begin="00:07:40:08" end="00:07:43:08" region="rollup2" style="basic" tts:origin="21.428571428571427% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">and community based services.</span>
+      </p>
+      <p begin="00:07:43:21" end="00:07:47:01" region="rollup2" style="basic" tts:origin="34.761904761904759% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">I have people,</span>
+      </p>
+      <p begin="00:07:43:21" end="00:07:47:01" region="rollup2" style="basic" tts:origin="30.952380952380953% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">I also self direct.</span>
+      </p>
+      <p begin="00:07:47:12" end="00:07:50:12" region="rollup2" style="basic" tts:origin="27.142857142857142% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">We do not get a budget</span>
+      </p>
+      <p begin="00:07:47:12" end="00:07:50:12" region="rollup2" style="basic" tts:origin="32.857142857142854% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">on a A&amp;D waiver.</span>
+      </p>
+      <p begin="00:07:50:21" end="00:07:53:17" region="rollup2" style="basic" tts:origin="25.238095238095237% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">It's a totally different</span>
+      </p>
+      <p begin="00:07:50:21" end="00:07:53:17" region="rollup2" style="basic" tts:origin="36.666666666666664% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">ran program,</span>
+      </p>
+      <p begin="00:07:53:17" end="00:07:57:13" region="rollup2" style="basic" tts:origin="25.238095238095237% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">but I do have people that</span>
+      </p>
+      <p begin="00:07:53:17" end="00:07:57:13" region="rollup2" style="basic" tts:origin="19.523809523809526% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">come into my home twice a day.</span>
+      </p>
+      <p begin="00:07:57:13" end="00:08:00:06" region="rollup2" style="basic" tts:origin="29.047619047619047% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">They help me get up,</span>
+      </p>
+      <p begin="00:07:57:13" end="00:08:00:06" region="rollup2" style="basic" tts:origin="23.333333333333332% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">help me go to the bathroom.</span>
+      </p>
+      <p begin="00:08:00:06" end="00:08:01:14" region="rollup2" style="basic" tts:origin="36.666666666666664% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">I have a job.</span>
+      </p>
+      <p begin="00:08:01:14" end="00:08:04:02" region="rollup2" style="basic" tts:origin="30.952380952380953% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">I've always worked,</span>
+      </p>
+      <p begin="00:08:01:14" end="00:08:04:02" region="rollup2" style="basic" tts:origin="32.857142857142854% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">and I volunteer.</span>
+      </p>
+      <p begin="00:08:04:02" end="00:08:09:15" region="rollup2" style="basic" tts:origin="27.142857142857142% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">Without those services,</span>
+      </p>
+      <p begin="00:08:04:02" end="00:08:09:15" region="rollup2" style="basic" tts:origin="23.333333333333332% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">I would not be independent.</span>
+      </p>
+      <p begin="00:08:10:07" end="00:08:15:06" region="rollup2" style="basic" tts:origin="32.857142857142854% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">Medicaid is like,</span>
+      </p>
+      <p begin="00:08:10:07" end="00:08:15:06" region="rollup2" style="basic" tts:origin="21.428571428571427% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">it's my independence, right?</span>
+      </p>
+      <p begin="00:08:15:21" end="00:08:17:12" region="rollup2" style="basic" tts:origin="29.047619047619047% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">It helps me be free,</span>
+      </p>
+      <p begin="00:08:19:07" end="00:08:21:27" region="rollup2" style="basic" tts:origin="42.38095238095238% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">be able</span>
+      </p>
+      <p begin="00:08:19:07" end="00:08:21:27" region="rollup2" style="basic" tts:origin="19.523809523809526% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">to contribute to the community.</span>
+      </p>
+      <p begin="00:08:21:27" end="00:08:24:23" region="rollup2" style="basic" tts:origin="21.428571428571427% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">I do a lot of volunteer work.</span>
+      </p>
+      <p begin="00:08:24:23" end="00:08:27:22" region="rollup2" style="basic" tts:origin="29.047619047619047% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">I work with the Idaho</span>
+      </p>
+      <p begin="00:08:24:23" end="00:08:27:22" region="rollup2" style="basic" tts:origin="34.761904761904759% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">Access Project,</span>
+      </p>
+      <p begin="00:08:27:23" end="00:08:30:23" region="rollup2" style="basic" tts:origin="25.238095238095237% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">and some other different</span>
+      </p>
+      <p begin="00:08:27:23" end="00:08:30:23" region="rollup2" style="basic" tts:origin="34.761904761904759% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">organizations,</span>
+      </p>
+      <p begin="00:08:31:00" end="00:08:33:10" region="rollup2" style="basic" tts:origin="34.761904761904759% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">where we go out</span>
+      </p>
+      <p begin="00:08:31:00" end="00:08:33:10" region="rollup2" style="basic" tts:origin="29.047619047619047% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">and help businesses,</span>
+      </p>
+      <p begin="00:08:33:10" end="00:08:36:10" region="rollup2" style="basic" tts:origin="23.333333333333332% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">government entities, people</span>
+      </p>
+      <p begin="00:08:33:10" end="00:08:36:10" region="rollup2" style="basic" tts:origin="30.952380952380953% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">with disabilities,</span>
+      </p>
+      <p begin="00:08:36:13" end="00:08:39:14" region="rollup2" style="basic" tts:origin="27.142857142857142% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">understand how to make</span>
+      </p>
+      <p begin="00:08:36:13" end="00:08:39:14" region="rollup2" style="basic" tts:origin="23.333333333333332% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">our communities accessible.</span>
+      </p>
+      <p begin="00:08:40:05" end="00:08:44:24" region="rollup2" style="basic" tts:origin="29.047619047619047% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">And by doing that, we</span>
+      </p>
+      <p begin="00:08:40:05" end="00:08:44:24" region="rollup2" style="basic" tts:origin="19.523809523809526% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">bring in economic development,</span>
+      </p>
+      <p begin="00:08:45:06" end="00:08:49:13" region="rollup2" style="basic" tts:origin="17.61904761904762% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">because people with disabilities</span>
+      </p>
+      <p begin="00:08:45:06" end="00:08:49:13" region="rollup2" style="basic" tts:origin="27.142857142857142% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">contribute to society.</span>
+      </p>
+      <p begin="00:08:50:13" end="00:08:53:08" region="rollup2" style="basic" tts:origin="34.761904761904759% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">With the cuts,</span>
+      </p>
+      <p begin="00:08:53:08" end="00:08:55:23" region="rollup2" style="basic" tts:origin="25.238095238095237% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">I'm very, very concerned.</span>
+      </p>
+      <p begin="00:08:55:23" end="00:08:59:09" region="rollup2" style="basic" tts:origin="27.142857142857142% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">The people that help me</span>
+      </p>
+      <p begin="00:08:55:23" end="00:08:59:09" region="rollup2" style="basic" tts:origin="36.666666666666664% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">only get paid</span>
+      </p>
+      <p begin="00:09:00:12" end="00:09:02:17" region="rollup2" style="basic" tts:origin="32.857142857142854% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">14 bucks an hour.</span>
+      </p>
+      <p begin="00:09:02:17" end="00:09:05:17" region="rollup2" style="basic" tts:origin="40.476190476190474% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">They have</span>
+      </p>
+      <p begin="00:09:05:27" end="00:09:07:16" region="rollup2" style="basic" tts:origin="36.666666666666664% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">no benefits.</span>
+      </p>
+      <p begin="00:09:07:16" end="00:09:11:29" region="rollup2" style="basic" tts:origin="36.666666666666664% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">No vacation.</span>
+      </p>
+      <p begin="00:09:11:29" end="00:09:14:29" region="rollup2" style="basic" tts:origin="34.761904761904759% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">Really nothing.</span>
+      </p>
+      <p begin="00:09:15:20" end="00:09:18:20" region="rollup2" style="basic" tts:origin="38.571428571428569% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">They do it</span>
+      </p>
+      <p begin="00:09:15:20" end="00:09:18:20" region="rollup2" style="basic" tts:origin="23.333333333333332% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">because they care about me.</span>
+      </p>
+      <p begin="00:09:20:22" end="00:09:22:23" region="rollup2" style="basic" tts:origin="34.761904761904759% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">And the beauty</span>
+      </p>
+      <p begin="00:09:20:22" end="00:09:22:23" region="rollup2" style="basic" tts:origin="23.333333333333332% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">of being on a self-directed</span>
+      </p>
+      <p begin="00:09:22:23" end="00:09:25:26" region="rollup2" style="basic" tts:origin="38.571428571428569% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">program is</span>
+      </p>
+      <p begin="00:09:22:23" end="00:09:25:26" region="rollup2" style="basic" tts:origin="25.238095238095237% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">I could hire who I want.</span>
+      </p>
+      <p begin="00:09:26:16" end="00:09:29:17" region="rollup2" style="basic" tts:origin="19.523809523809526% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">And like Kristyn, I would never</span>
+      </p>
+      <p begin="00:09:26:16" end="00:09:29:17" region="rollup2" style="basic" tts:origin="29.047619047619047% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">go to a nursing home.</span>
+      </p>
+      <p begin="00:09:30:13" end="00:09:31:11" region="rollup2" style="basic" tts:origin="34.761904761904759% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">I'd rather die.</span>
+      </p>
+      <p begin="00:09:33:23" end="00:09:36:07" region="rollup2" style="basic" tts:origin="23.333333333333332% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">Ned touched on this before,</span>
+      </p>
+      <p begin="00:09:36:07" end="00:09:40:27" region="rollup2" style="basic" tts:origin="19.523809523809526% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">but there have already been 4%</span>
+      </p>
+      <p begin="00:09:36:07" end="00:09:40:27" region="rollup2" style="basic" tts:origin="23.333333333333332% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">cuts to the provider rates.</span>
+      </p>
+      <p begin="00:09:41:20" end="00:09:43:26" region="rollup2" style="basic" tts:origin="27.142857142857142% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">for Medicaid providers.</span>
+      </p>
+      <p begin="00:09:43:26" end="00:09:46:11" region="rollup2" style="basic" tts:origin="27.142857142857142% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">Have you seen an impact</span>
+      </p>
+      <p begin="00:09:46:11" end="00:09:49:11" region="rollup2" style="basic" tts:origin="30.952380952380953% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">since those 4% cuts</span>
+      </p>
+      <p begin="00:09:46:11" end="00:09:49:11" region="rollup2" style="basic" tts:origin="19.523809523809526% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">went into effect in September?</span>
+      </p>
+      <p begin="00:09:50:07" end="00:09:52:18" region="rollup2" style="basic" tts:origin="23.333333333333332% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">Well, we were going to the</span>
+      </p>
+      <p begin="00:09:52:18" end="00:09:54:06" region="rollup2" style="basic" tts:origin="30.952380952380953% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">Living Independence</span>
+      </p>
+      <p begin="00:09:52:18" end="00:09:54:06" region="rollup2" style="basic" tts:origin="36.666666666666664% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">Network, it's</span>
+      </p>
+      <p begin="00:09:54:06" end="00:09:56:10" region="rollup2" style="basic" tts:origin="17.61904761904762% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">a center for independent living,</span>
+      </p>
+      <p begin="00:09:56:10" end="00:09:59:09" region="rollup2" style="basic" tts:origin="27.142857142857142% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">and that's where I get</span>
+      </p>
+      <p begin="00:09:56:10" end="00:09:59:09" region="rollup2" style="basic" tts:origin="29.047619047619047% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">my services through.</span>
+      </p>
+      <p begin="00:09:59:17" end="00:10:04:08" region="rollup2" style="basic" tts:origin="27.142857142857142% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">We were going to give,</span>
+      </p>
+      <p begin="00:09:59:17" end="00:10:04:08" region="rollup2" style="basic" tts:origin="19.523809523809526% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">I'm on the board of directors,</span>
+      </p>
+      <p begin="00:10:04:08" end="00:10:07:08" region="rollup2" style="basic" tts:origin="25.238095238095237% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">so I know kind of the ins</span>
+      </p>
+      <p begin="00:10:04:08" end="00:10:07:08" region="rollup2" style="basic" tts:origin="30.952380952380953% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">and outs with that,</span>
+      </p>
+      <p begin="00:10:07:20" end="00:10:11:10" region="rollup2" style="basic" tts:origin="25.238095238095237% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">but we were going to give</span>
+      </p>
+      <p begin="00:10:07:20" end="00:10:11:10" region="rollup2" style="basic" tts:origin="19.523809523809526% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">the personal assistants raises.</span>
+      </p>
+      <p begin="00:10:11:10" end="00:10:13:06" region="rollup2" style="basic" tts:origin="32.857142857142854% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">We can't do that.</span>
+      </p>
+      <p begin="00:10:13:06" end="00:10:15:16" region="rollup2" style="basic" tts:origin="25.238095238095237% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">You can go to McDonald's</span>
+      </p>
+      <p begin="00:10:13:06" end="00:10:15:16" region="rollup2" style="basic" tts:origin="32.857142857142854% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">or somewhere else</span>
+      </p>
+      <p begin="00:10:15:16" end="00:10:18:21" region="rollup2" style="basic" tts:origin="21.428571428571427% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">that you can make more money</span>
+      </p>
+      <p begin="00:10:15:16" end="00:10:18:21" region="rollup2" style="basic" tts:origin="27.142857142857142% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">than working as a care</span>
+      </p>
+      <p begin="00:10:18:21" end="00:10:21:21" region="rollup2" style="basic" tts:origin="40.476190476190474% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">provider.</span>
+      </p>
+      <p begin="00:10:21:29" end="00:10:24:21" region="rollup2" style="basic" tts:origin="32.857142857142854% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">Ned, you touched</span>
+      </p>
+      <p begin="00:10:21:29" end="00:10:24:21" region="rollup2" style="basic" tts:origin="29.047619047619047% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">on this earlier, too,</span>
+      </p>
+      <p begin="00:10:24:21" end="00:10:28:05" region="rollup2" style="basic" tts:origin="27.142857142857142% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">that you and your wife</span>
+      </p>
+      <p begin="00:10:24:21" end="00:10:28:05" region="rollup2" style="basic" tts:origin="38.571428571428569% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">are older.</span>
+      </p>
+      <p begin="00:10:28:05" end="00:10:30:21" region="rollup2" style="basic" tts:origin="21.428571428571427% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">Your daughter is an adult who</span>
+      </p>
+      <p begin="00:10:31:20" end="00:10:32:18" region="rollup2" style="basic" tts:origin="34.761904761904759% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">needs people to</span>
+      </p>
+      <p begin="00:10:32:18" end="00:10:35:22" region="rollup2" style="basic" tts:origin="27.142857142857142% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">help her, as she takes</span>
+      </p>
+      <p begin="00:10:32:18" end="00:10:35:22" region="rollup2" style="basic" tts:origin="32.857142857142854% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">care of herself.</span>
+      </p>
+      <p begin="00:10:35:22" end="00:10:36:19" region="rollup2" style="basic" tts:origin="21.428571428571427% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">What are some of those unique</span>
+      </p>
+      <p begin="00:10:36:19" end="00:10:38:24" region="rollup2" style="basic" tts:origin="38.571428571428569% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">challenges</span>
+      </p>
+      <p begin="00:10:36:19" end="00:10:38:24" region="rollup2" style="basic" tts:origin="23.333333333333332% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">that aging caregivers face</span>
+      </p>
+      <p begin="00:10:38:24" end="00:10:41:24" region="rollup2" style="basic" tts:origin="19.523809523809526% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">as they're trying to take care</span>
+      </p>
+      <p begin="00:10:38:24" end="00:10:41:24" region="rollup2" style="basic" tts:origin="25.238095238095237% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">of their adult children?</span>
+      </p>
+      <p begin="00:10:42:20" end="00:10:44:09" region="rollup2" style="basic" tts:origin="30.952380952380953% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">Well, as they age.</span>
+      </p>
+      <p begin="00:10:44:09" end="00:10:47:03" region="rollup2" style="basic" tts:origin="36.666666666666664% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">In our case,</span>
+      </p>
+      <p begin="00:10:47:03" end="00:10:50:03" region="rollup2" style="basic" tts:origin="30.952380952380953% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">when she was small,</span>
+      </p>
+      <p begin="00:10:47:03" end="00:10:50:03" region="rollup2" style="basic" tts:origin="19.523809523809526% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">you know, you can carry around</span>
+      </p>
+      <p begin="00:10:50:03" end="00:10:53:03" region="rollup2" style="basic" tts:origin="25.238095238095237% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">and do all these things,</span>
+      </p>
+      <p begin="00:10:50:03" end="00:10:53:03" region="rollup2" style="basic" tts:origin="19.523809523809526% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">and cared for her for 21 years.</span>
+      </p>
+      <p begin="00:10:54:11" end="00:10:57:01" region="rollup2" style="basic" tts:origin="29.047619047619047% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">My wife has had three</span>
+      </p>
+      <p begin="00:10:54:11" end="00:10:57:01" region="rollup2" style="basic" tts:origin="32.857142857142854% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">hip replacements.</span>
+      </p>
+      <p begin="00:10:57:01" end="00:10:59:09" region="rollup2" style="basic" tts:origin="38.571428571428569% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">One failed.</span>
+      </p>
+      <p begin="00:10:59:09" end="00:11:01:28" region="rollup2" style="basic" tts:origin="30.952380952380953% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">I've had a stroke.</span>
+      </p>
+      <p begin="00:11:01:28" end="00:11:03:12" region="rollup2" style="basic" tts:origin="32.857142857142854% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">So, we're aging.</span>
+      </p>
+      <p begin="00:11:03:12" end="00:11:05:11" region="rollup2" style="basic" tts:origin="27.142857142857142% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">We cannot care for her.</span>
+      </p>
+      <p begin="00:11:05:11" end="00:11:08:17" region="rollup2" style="basic" tts:origin="21.428571428571427% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">Even with this level of care</span>
+      </p>
+      <p begin="00:11:05:11" end="00:11:08:17" region="rollup2" style="basic" tts:origin="34.761904761904759% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">that she needs,</span>
+      </p>
+      <p begin="00:11:09:04" end="00:11:10:10" region="rollup2" style="basic" tts:origin="32.857142857142854% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">it's impossible.</span>
+      </p>
+      <p begin="00:11:10:10" end="00:11:13:01" region="rollup2" style="basic" tts:origin="38.571428571428569% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">She needs,</span>
+      </p>
+      <p begin="00:11:13:01" end="00:11:14:09" region="rollup2" style="basic" tts:origin="34.761904761904759% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">and she can't-</span>
+      </p>
+      <p begin="00:11:14:09" end="00:11:17:09" region="rollup2" style="basic" tts:origin="32.857142857142854% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">She needs to have</span>
+      </p>
+      <p begin="00:11:14:09" end="00:11:17:09" region="rollup2" style="basic" tts:origin="34.761904761904759% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">someone who can</span>
+      </p>
+      <p begin="00:11:17:29" end="00:11:20:13" region="rollup2" style="basic" tts:origin="34.761904761904759% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">understand her,</span>
+      </p>
+      <p begin="00:11:17:29" end="00:11:20:13" region="rollup2" style="basic" tts:origin="25.238095238095237% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">because she's non-verbal.</span>
+      </p>
+      <p begin="00:11:20:13" end="00:11:23:13" region="rollup2" style="basic" tts:origin="42.38095238095238% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">But yet</span>
+      </p>
+      <p begin="00:11:20:13" end="00:11:23:13" region="rollup2" style="basic" tts:origin="23.333333333333332% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">she has full understanding.</span>
+      </p>
+      <p begin="00:11:23:15" end="00:11:25:11" region="rollup2" style="basic" tts:origin="27.142857142857142% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">And she can communicate</span>
+      </p>
+      <p begin="00:11:26:14" end="00:11:28:09" region="rollup2" style="basic" tts:origin="25.238095238095237% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">her needs in other ways.</span>
+      </p>
+      <p begin="00:11:28:09" end="00:11:33:00" region="rollup2" style="basic" tts:origin="27.142857142857142% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">But as an aging parent,</span>
+      </p>
+      <p begin="00:11:33:15" end="00:11:36:15" region="rollup2" style="basic" tts:origin="23.333333333333332% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">we've done what we can do.</span>
+      </p>
+      <p begin="00:11:36:16" end="00:11:37:29" region="rollup2" style="basic" tts:origin="32.857142857142854% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">The model of care</span>
+      </p>
+      <p begin="00:11:37:29" end="00:11:40:29" region="rollup2" style="basic" tts:origin="30.952380952380953% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">that has come along</span>
+      </p>
+      <p begin="00:11:37:29" end="00:11:40:29" region="rollup2" style="basic" tts:origin="23.333333333333332% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">has been miraculous for us.</span>
+      </p>
+      <p begin="00:11:41:06" end="00:11:44:10" region="rollup2" style="basic" tts:origin="29.047619047619047% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">It's saved our lives,</span>
+      </p>
+      <p begin="00:11:41:06" end="00:11:44:10" region="rollup2" style="basic" tts:origin="32.857142857142854% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">and provided Eva</span>
+      </p>
+      <p begin="00:11:44:10" end="00:11:48:01" region="rollup2" style="basic" tts:origin="27.142857142857142% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">with a quality of life</span>
+      </p>
+      <p begin="00:11:44:10" end="00:11:48:01" region="rollup2" style="basic" tts:origin="32.857142857142854% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">that's important.</span>
+      </p>
+      <p begin="00:11:49:23" end="00:11:51:25" region="rollup2" style="basic" tts:origin="30.952380952380953% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">So we put our eggs</span>
+      </p>
+      <p begin="00:11:51:25" end="00:11:55:18" region="rollup2" style="basic" tts:origin="34.761904761904759% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">in this basket,</span>
+      </p>
+      <p begin="00:11:51:25" end="00:11:55:18" region="rollup2" style="basic" tts:origin="19.523809523809526% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">and it's been performing well.</span>
+      </p>
+      <p begin="00:11:55:18" end="00:12:00:12" region="rollup2" style="basic" tts:origin="25.238095238095237% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">It's cost effective, but </span>
+      </p>
+      <p begin="00:11:55:18" end="00:12:00:12" region="rollup2" style="basic" tts:origin="17.61904761904762% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">without that she cannot survive.</span>
+      </p>
+      <p begin="00:12:00:13" end="00:12:03:28" region="rollup2" style="basic" tts:origin="29.047619047619047% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">So what can we, what</span>
+      </p>
+      <p begin="00:12:00:13" end="00:12:03:28" region="rollup2" style="basic" tts:origin="19.523809523809526% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">can a parent do at this point?</span>
+      </p>
+      <p begin="00:12:04:23" end="00:12:09:17" region="rollup2" style="basic" tts:origin="23.333333333333332% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">We don't have enough funds</span>
+      </p>
+      <p begin="00:12:04:23" end="00:12:09:17" region="rollup2" style="basic" tts:origin="30.952380952380953% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">to provide 24 hour</span>
+      </p>
+      <p begin="00:12:09:17" end="00:12:12:12" region="rollup2" style="basic" tts:origin="21.428571428571427% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">a day staff for our daughter</span>
+      </p>
+      <p begin="00:12:09:17" end="00:12:12:12" region="rollup2" style="basic" tts:origin="25.238095238095237% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">for the rest of her life.</span>
+      </p>
+      <p begin="00:12:12:12" end="00:12:14:26" region="rollup2" style="basic" tts:origin="27.142857142857142% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">She's likely to outlive</span>
+      </p>
+      <p begin="00:12:12:12" end="00:12:14:26" region="rollup2" style="basic" tts:origin="36.666666666666664% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">us, for sure.</span>
+      </p>
+      <p begin="00:12:14:26" end="00:12:17:21" region="rollup2" style="basic" tts:origin="34.761904761904759% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">She's healthy.</span>
+      </p>
+      <p begin="00:12:17:21" end="00:12:19:22" region="rollup2" style="basic" tts:origin="25.238095238095237% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">But what else can we do?</span>
+      </p>
+      <p begin="00:12:19:22" end="00:12:22:05" region="rollup2" style="basic" tts:origin="25.238095238095237% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">She could become homeless</span>
+      </p>
+      <p begin="00:12:22:05" end="00:12:25:08" region="rollup2" style="basic" tts:origin="36.666666666666664% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">at some point</span>
+      </p>
+      <p begin="00:12:22:05" end="00:12:25:08" region="rollup2" style="basic" tts:origin="17.61904761904762% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">if things completely fell apart.</span>
+      </p>
+      <p begin="00:12:25:29" end="00:12:27:13" region="rollup2" style="basic" tts:origin="21.428571428571427% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">She cannot care for herself.</span>
+      </p>
+      <p begin="00:12:27:13" end="00:12:30:13" region="rollup2" style="basic" tts:origin="17.61904761904762% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">She requires this level of care.</span>
+      </p>
+      <p begin="00:12:30:24" end="00:12:31:12" region="rollup2" style="basic" tts:origin="42.38095238095238% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">And the</span>
+      </p>
+      <p begin="00:12:32:21" end="00:12:34:20" region="rollup2" style="basic" tts:origin="38.571428571428569% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">providers,</span>
+      </p>
+      <p begin="00:12:34:20" end="00:12:37:20" region="rollup2" style="basic" tts:origin="42.38095238095238% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">again,</span>
+      </p>
+      <p begin="00:12:34:20" end="00:12:37:20" region="rollup2" style="basic" tts:origin="23.333333333333332% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">they're working oftentimes</span>
+      </p>
+      <p begin="00:12:37:26" end="00:12:40:02" region="rollup2" style="basic" tts:origin="27.142857142857142% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">90 to 100 hours a week.</span>
+      </p>
+      <p begin="00:12:40:02" end="00:12:42:06" region="rollup2" style="basic" tts:origin="29.047619047619047% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">They're human beings.</span>
+      </p>
+      <p begin="00:12:42:06" end="00:12:44:22" region="rollup2" style="basic" tts:origin="27.142857142857142% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">They're exhausted. This</span>
+      </p>
+      <p begin="00:12:44:22" end="00:12:46:18" region="rollup2" style="basic" tts:origin="19.523809523809526% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">compromises the ability of them</span>
+      </p>
+      <p begin="00:12:46:18" end="00:12:49:18" region="rollup2" style="basic" tts:origin="25.238095238095237% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">to actually care for her.</span>
+      </p>
+      <p begin="00:12:49:20" end="00:12:52:20" region="rollup2" style="basic" tts:origin="23.333333333333332% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">So they were going to have</span>
+      </p>
+      <p begin="00:12:49:20" end="00:12:52:20" region="rollup2" style="basic" tts:origin="42.38095238095238% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">raises</span>
+      </p>
+      <p begin="00:12:53:08" end="00:12:55:13" region="rollup2" style="basic" tts:origin="32.857142857142854% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">given this year.</span>
+      </p>
+      <p begin="00:12:53:08" end="00:12:55:13" region="rollup2" style="basic" tts:origin="27.142857142857142% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">They were given raises</span>
+      </p>
+      <p begin="00:12:55:13" end="00:12:58:12" region="rollup2" style="basic" tts:origin="29.047619047619047% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">from the budget year</span>
+      </p>
+      <p begin="00:12:55:13" end="00:12:58:12" region="rollup2" style="basic" tts:origin="32.857142857142854% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">starting in 2025.</span>
+      </p>
+      <p begin="00:12:58:12" end="00:13:01:19" region="rollup2" style="basic" tts:origin="21.428571428571427% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">And yet when the cuts came in</span>
+      </p>
+      <p begin="00:13:02:13" end="00:13:04:27" region="rollup2" style="basic" tts:origin="38.571428571428569% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">September,</span>
+      </p>
+      <p begin="00:13:04:27" end="00:13:08:20" region="rollup2" style="basic" tts:origin="32.857142857142854% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">that's in effect,</span>
+      </p>
+      <p begin="00:13:04:27" end="00:13:08:20" region="rollup2" style="basic" tts:origin="30.952380952380953% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">because now all of</span>
+      </p>
+      <p begin="00:13:09:06" end="00:13:12:18" region="rollup2" style="basic" tts:origin="23.333333333333332% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">those extra hours are time</span>
+      </p>
+      <p begin="00:13:09:06" end="00:13:12:18" region="rollup2" style="basic" tts:origin="19.523809523809526% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">and a half, the budget goes up.</span>
+      </p>
+      <p begin="00:13:13:09" end="00:13:16:04" region="rollup2" style="basic" tts:origin="23.333333333333332% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">And their plan, they don't-</span>
+      </p>
+      <p begin="00:13:13:09" end="00:13:16:04" region="rollup2" style="basic" tts:origin="38.571428571428569% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">The agency</span>
+      </p>
+      <p begin="00:13:16:04" end="00:13:19:27" region="rollup2" style="basic" tts:origin="23.333333333333332% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">does not want to cut wages</span>
+      </p>
+      <p begin="00:13:16:04" end="00:13:19:27" region="rollup2" style="basic" tts:origin="17.61904761904762% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">for care, direct care providers.</span>
+      </p>
+      <p begin="00:13:20:26" end="00:13:23:04" region="rollup2" style="basic" tts:origin="29.047619047619047% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">So the foundation of</span>
+      </p>
+      <p begin="00:13:23:04" end="00:13:26:04" region="rollup2" style="basic" tts:origin="32.857142857142854% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">the organization</span>
+      </p>
+      <p begin="00:13:23:04" end="00:13:26:04" region="rollup2" style="basic" tts:origin="32.857142857142854% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">is being trimmed.</span>
+      </p>
+      <p begin="00:13:27:09" end="00:13:27:28" region="rollup2" style="basic" tts:origin="42.38095238095238% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">Julie,</span>
+      </p>
+      <p begin="00:13:27:28" end="00:13:31:11" region="rollup2" style="basic" tts:origin="27.142857142857142% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">as you listen to this,</span>
+      </p>
+      <p begin="00:13:27:28" end="00:13:31:11" region="rollup2" style="basic" tts:origin="23.333333333333332% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">your boys are still young.</span>
+      </p>
+      <p begin="00:13:31:11" end="00:13:32:23" region="rollup2" style="basic" tts:origin="27.142857142857142% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">They're ten years old.</span>
+      </p>
+      <p begin="00:13:32:23" end="00:13:35:22" region="rollup2" style="basic" tts:origin="27.142857142857142% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">What are your concerns</span>
+      </p>
+      <p begin="00:13:32:23" end="00:13:35:22" region="rollup2" style="basic" tts:origin="30.952380952380953% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">about their future?</span>
+      </p>
+      <p begin="00:13:36:19" end="00:13:38:18" region="rollup2" style="basic" tts:origin="34.761904761904759% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">It's everything</span>
+      </p>
+      <p begin="00:13:36:19" end="00:13:38:18" region="rollup2" style="basic" tts:origin="30.952380952380953% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">that Ned has said.</span>
+      </p>
+      <p begin="00:13:38:18" end="00:13:41:18" region="rollup2" style="basic" tts:origin="30.952380952380953% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">That, you know, I'm</span>
+      </p>
+      <p begin="00:13:38:18" end="00:13:41:18" region="rollup2" style="basic" tts:origin="29.047619047619047% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">going to age as well.</span>
+      </p>
+      <p begin="00:13:42:02" end="00:13:44:29" region="rollup2" style="basic" tts:origin="17.61904761904762% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">And there'll probably come a day</span>
+      </p>
+      <p begin="00:13:42:02" end="00:13:44:29" region="rollup2" style="basic" tts:origin="21.428571428571427% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">when I'm going to need care.</span>
+      </p>
+      <p begin="00:13:44:29" end="00:13:47:18" region="rollup2" style="basic" tts:origin="36.666666666666664% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">You know, so</span>
+      </p>
+      <p begin="00:13:44:29" end="00:13:47:18" region="rollup2" style="basic" tts:origin="19.523809523809526% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">I won't be available to provide</span>
+      </p>
+      <p begin="00:13:47:18" end="00:13:48:15" region="rollup2" style="basic" tts:origin="34.761904761904759% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">care for them.</span>
+      </p>
+      <p begin="00:13:48:15" end="00:13:54:16" region="rollup2" style="basic" tts:origin="25.238095238095237% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">And, I want a good life,</span>
+      </p>
+      <p begin="00:13:48:15" end="00:13:54:16" region="rollup2" style="basic" tts:origin="23.333333333333332% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">a good future for my boys.</span>
+      </p>
+      <p begin="00:13:54:20" end="00:13:56:10" region="rollup2" style="basic" tts:origin="29.047619047619047% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">I want them to live.</span>
+      </p>
+      <p begin="00:13:56:10" end="00:13:58:04" region="rollup2" style="basic" tts:origin="17.61904761904762% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">I don't want them to just exist.</span>
+      </p>
+      <p begin="00:13:58:04" end="00:14:00:21" region="rollup2" style="basic" tts:origin="23.333333333333332% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">I want them to live a life</span>
+      </p>
+      <p begin="00:13:58:04" end="00:14:00:21" region="rollup2" style="basic" tts:origin="32.857142857142854% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">where they have-</span>
+      </p>
+      <p begin="00:14:00:21" end="00:14:02:08" region="rollup2" style="basic" tts:origin="30.952380952380953% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">They're integrated</span>
+      </p>
+      <p begin="00:14:00:21" end="00:14:02:08" region="rollup2" style="basic" tts:origin="30.952380952380953% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">in their community.</span>
+      </p>
+      <p begin="00:14:02:08" end="00:14:04:18" region="rollup2" style="basic" tts:origin="25.238095238095237% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">They have relationships.</span>
+      </p>
+      <p begin="00:14:02:08" end="00:14:04:18" region="rollup2" style="basic" tts:origin="25.238095238095237% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">They have opportunities.</span>
+      </p>
+      <p begin="00:14:04:18" end="00:14:06:22" region="rollup2" style="basic" tts:origin="29.047619047619047% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">They can go to school</span>
+      </p>
+      <p begin="00:14:04:18" end="00:14:06:22" region="rollup2" style="basic" tts:origin="21.428571428571427% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">if they want to go to school.</span>
+      </p>
+      <p begin="00:14:06:22" end="00:14:10:22" region="rollup2" style="basic" tts:origin="29.047619047619047% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">They can hold a job,</span>
+      </p>
+      <p begin="00:14:06:22" end="00:14:10:22" region="rollup2" style="basic" tts:origin="21.428571428571427% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">and just have very meaningful</span>
+      </p>
+      <p begin="00:14:11:00" end="00:14:14:21" region="rollup2" style="basic" tts:origin="19.523809523809526% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">life, and give back in the same</span>
+      </p>
+      <p begin="00:14:11:00" end="00:14:14:21" region="rollup2" style="basic" tts:origin="25.238095238095237% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">way that Dana was saying.</span>
+      </p>
+      <p begin="00:14:15:00" end="00:14:19:09" region="rollup2" style="basic" tts:origin="36.666666666666664% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">And so that,</span>
+      </p>
+      <p begin="00:14:15:00" end="00:14:19:09" region="rollup2" style="basic" tts:origin="19.523809523809526% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">there needs to be a scaffolding</span>
+      </p>
+      <p begin="00:14:19:09" end="00:14:21:10" region="rollup2" style="basic" tts:origin="38.571428571428569% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">around them</span>
+      </p>
+      <p begin="00:14:19:09" end="00:14:21:10" region="rollup2" style="basic" tts:origin="21.428571428571427% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">that gives them that support,</span>
+      </p>
+      <p begin="00:14:21:10" end="00:14:23:10" region="rollup2" style="basic" tts:origin="25.238095238095237% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">so that they can continue</span>
+      </p>
+      <p begin="00:14:21:10" end="00:14:23:10" region="rollup2" style="basic" tts:origin="38.571428571428569% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">to do that.</span>
+      </p>
+      <p begin="00:14:23:10" end="00:14:26:12" region="rollup2" style="basic" tts:origin="19.523809523809526% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">And right now, it's pretty much</span>
+      </p>
+      <p begin="00:14:23:10" end="00:14:26:12" region="rollup2" style="basic" tts:origin="21.428571428571427% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">my full time job to maintain</span>
+      </p>
+      <p begin="00:14:26:12" end="00:14:29:12" region="rollup2" style="basic" tts:origin="27.142857142857142% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">that, with the services</span>
+      </p>
+      <p begin="00:14:26:12" end="00:14:29:12" region="rollup2" style="basic" tts:origin="32.857142857142854% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">that we have now.</span>
+      </p>
+      <p begin="00:14:29:14" end="00:14:32:02" region="rollup2" style="basic" tts:origin="19.523809523809526% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">And if I'm not able to do that,</span>
+      </p>
+      <p begin="00:14:32:02" end="00:14:34:08" region="rollup2" style="basic" tts:origin="21.428571428571427% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">of course I'm concerned about</span>
+      </p>
+      <p begin="00:14:32:02" end="00:14:34:08" region="rollup2" style="basic" tts:origin="25.238095238095237% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">who will fill that role,</span>
+      </p>
+      <p begin="00:14:34:08" end="00:14:36:03" region="rollup2" style="basic" tts:origin="30.952380952380953% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">who will love them</span>
+      </p>
+      <p begin="00:14:34:08" end="00:14:36:03" region="rollup2" style="basic" tts:origin="30.952380952380953% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">the way that I do,</span>
+      </p>
+      <p begin="00:14:36:03" end="00:14:39:09" region="rollup2" style="basic" tts:origin="27.142857142857142% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">and provide it for them</span>
+      </p>
+      <p begin="00:14:36:03" end="00:14:39:09" region="rollup2" style="basic" tts:origin="19.523809523809526% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">with the same heart that I do.</span>
+      </p>
+      <p begin="00:14:40:05" end="00:14:43:07" region="rollup2" style="basic" tts:origin="27.142857142857142% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">And now, even more so,</span>
+      </p>
+      <p begin="00:14:40:05" end="00:14:43:07" region="rollup2" style="basic" tts:origin="21.428571428571427% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">I'm just concerned about that</span>
+      </p>
+      <p begin="00:14:43:07" end="00:14:45:06" region="rollup2" style="basic" tts:origin="21.428571428571427% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">support system even existing.</span>
+      </p>
+      <p begin="00:14:45:06" end="00:14:48:26" region="rollup2" style="basic" tts:origin="29.047619047619047% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">We already experience</span>
+      </p>
+      <p begin="00:14:45:06" end="00:14:48:26" region="rollup2" style="basic" tts:origin="30.952380952380953% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">that labor shortage</span>
+      </p>
+      <p begin="00:14:48:28" end="00:14:52:25" region="rollup2" style="basic" tts:origin="23.333333333333332% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">that Ned was talking about,</span>
+      </p>
+      <p begin="00:14:48:28" end="00:14:52:25" region="rollup2" style="basic" tts:origin="19.523809523809526% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">the ability to find caregivers</span>
+      </p>
+      <p begin="00:14:52:25" end="00:14:54:17" region="rollup2" style="basic" tts:origin="17.61904761904762% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">that are willing to work for you</span>
+      </p>
+      <p begin="00:14:54:17" end="00:14:57:19" region="rollup2" style="basic" tts:origin="19.523809523809526% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">for the low wages that you have</span>
+      </p>
+      <p begin="00:14:54:17" end="00:14:57:19" region="rollup2" style="basic" tts:origin="25.238095238095237% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">and the lack of benefits.</span>
+      </p>
+      <p begin="00:14:57:19" end="00:15:00:07" region="rollup2" style="basic" tts:origin="21.428571428571427% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">There's no health insurance.</span>
+      </p>
+      <p begin="00:14:57:19" end="00:15:00:07" region="rollup2" style="basic" tts:origin="32.857142857142854% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">There's no 401K.</span>
+      </p>
+      <p begin="00:15:00:07" end="00:15:01:15" region="rollup2" style="basic" tts:origin="32.857142857142854% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">There's nothing.</span>
+      </p>
+      <p begin="00:15:01:15" end="00:15:06:08" region="rollup2" style="basic" tts:origin="21.428571428571427% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">And with caregiving, it's not</span>
+      </p>
+      <p begin="00:15:01:15" end="00:15:06:08" region="rollup2" style="basic" tts:origin="17.61904761904762% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">a job that just anyone can fill.</span>
+      </p>
+      <p begin="00:15:06:16" end="00:15:08:06" region="rollup2" style="basic" tts:origin="21.428571428571427% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">It's very relationship-based</span>
+      </p>
+      <p begin="00:15:08:06" end="00:15:09:05" region="rollup2" style="basic" tts:origin="29.047619047619047% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">and you want someone</span>
+      </p>
+      <p begin="00:15:09:05" end="00:15:10:18" region="rollup2" style="basic" tts:origin="23.333333333333332% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">that you can trust, someone</span>
+      </p>
+      <p begin="00:15:10:18" end="00:15:13:18" region="rollup2" style="basic" tts:origin="25.238095238095237% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">that cares for your child</span>
+      </p>
+      <p begin="00:15:10:18" end="00:15:13:18" region="rollup2" style="basic" tts:origin="25.238095238095237% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">no matter what their age.</span>
+      </p>
+      <p begin="00:15:13:20" end="00:15:16:15" region="rollup2" style="basic" tts:origin="32.857142857142854% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">And someone that </span>
+      </p>
+      <p begin="00:15:13:20" end="00:15:16:15" region="rollup2" style="basic" tts:origin="21.428571428571427% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">you can count on, to be there</span>
+      </p>
+      <p begin="00:15:16:15" end="00:15:17:04" region="rollup2" style="basic" tts:origin="30.952380952380953% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">for the long haul.</span>
+      </p>
+      <p begin="00:15:17:04" end="00:15:21:10" region="rollup2" style="basic" tts:origin="21.428571428571427% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">Because a lot of turnover is,</span>
+      </p>
+      <p begin="00:15:17:04" end="00:15:21:10" region="rollup2" style="basic" tts:origin="19.523809523809526% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">that's not healthy, especially</span>
+      </p>
+      <p begin="00:15:21:10" end="00:15:25:06" region="rollup2" style="basic" tts:origin="27.142857142857142% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">when they're providing</span>
+      </p>
+      <p begin="00:15:21:10" end="00:15:25:06" region="rollup2" style="basic" tts:origin="21.428571428571427% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">such personal, personal care.</span>
+      </p>
+      <p begin="00:15:26:26" end="00:15:29:06" region="rollup2" style="basic" tts:origin="40.476190476190474% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">Kristyn,</span>
+      </p>
+      <p begin="00:15:26:26" end="00:15:29:06" region="rollup2" style="basic" tts:origin="23.333333333333332% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">I know that your caregiver,</span>
+      </p>
+      <p begin="00:15:29:06" end="00:15:31:17" region="rollup2" style="basic" tts:origin="27.142857142857142% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">one of your caregivers</span>
+      </p>
+      <p begin="00:15:29:06" end="00:15:31:17" region="rollup2" style="basic" tts:origin="19.523809523809526% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">has been with you for 20 years,</span>
+      </p>
+      <p begin="00:15:31:17" end="00:15:35:11" region="rollup2" style="basic" tts:origin="19.523809523809526% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">and both you and Dana mentioned</span>
+      </p>
+      <p begin="00:15:31:17" end="00:15:35:11" region="rollup2" style="basic" tts:origin="30.952380952380953% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">that you don't want</span>
+      </p>
+      <p begin="00:15:35:11" end="00:15:36:18" region="rollup2" style="basic" tts:origin="23.333333333333332% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">to go into a nursing home.</span>
+      </p>
+      <p begin="00:15:36:18" end="00:15:38:24" region="rollup2" style="basic" tts:origin="21.428571428571427% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">That's not an option for you.</span>
+      </p>
+      <p begin="00:15:38:24" end="00:15:40:11" region="rollup2" style="basic" tts:origin="34.761904761904759% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">Absolutely not.</span>
+      </p>
+      <p begin="00:15:40:11" end="00:15:45:26" region="rollup2" style="basic" tts:origin="19.523809523809526% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">Some lawmakers have brought up</span>
+      </p>
+      <p begin="00:15:40:11" end="00:15:45:26" region="rollup2" style="basic" tts:origin="21.428571428571427% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">the possibility of community</span>
+      </p>
+      <p begin="00:15:45:26" end="00:15:50:13" region="rollup2" style="basic" tts:origin="27.142857142857142% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">volunteers or churches</span>
+      </p>
+      <p begin="00:15:45:26" end="00:15:50:13" region="rollup2" style="basic" tts:origin="19.523809523809526% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">stepping in to fill this role.</span>
+      </p>
+      <p begin="00:15:51:03" end="00:15:54:03" region="rollup2" style="basic" tts:origin="44.285714285714285% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">Dana,</span>
+      </p>
+      <p begin="00:15:51:03" end="00:15:54:03" region="rollup2" style="basic" tts:origin="21.428571428571427% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">is that a viable alternative?</span>
+      </p>
+      <p begin="00:15:57:12" end="00:15:59:27" region="rollup2" style="basic" tts:origin="30.952380952380953% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">What do you think?</span>
+      </p>
+      <p begin="00:15:59:27" end="00:16:01:19" region="rollup2" style="basic" tts:origin="27.142857142857142% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">Actually, no, it's not.</span>
+      </p>
+      <p begin="00:16:01:19" end="00:16:03:12" region="rollup2" style="basic" tts:origin="19.523809523809526% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">You know, it's a great concept.</span>
+      </p>
+      <p begin="00:16:03:12" end="00:16:07:02" region="rollup2" style="basic" tts:origin="19.523809523809526% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">You know, since I've been hurt,</span>
+      </p>
+      <p begin="00:16:03:12" end="00:16:07:02" region="rollup2" style="basic" tts:origin="25.238095238095237% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">I have heard this concept</span>
+      </p>
+      <p begin="00:16:07:16" end="00:16:10:16" region="rollup2" style="basic" tts:origin="36.666666666666664% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">so many times</span>
+      </p>
+      <p begin="00:16:07:16" end="00:16:10:16" region="rollup2" style="basic" tts:origin="17.61904761904762% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">from legislators over the years.</span>
+      </p>
+      <p begin="00:16:10:22" end="00:16:13:23" region="rollup2" style="basic" tts:origin="21.428571428571427% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">But when it comes down to it,</span>
+      </p>
+      <p begin="00:16:10:22" end="00:16:13:23" region="rollup2" style="basic" tts:origin="34.761904761904759% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">let's be real.</span>
+      </p>
+      <p begin="00:16:14:07" end="00:16:15:29" region="rollup2" style="basic" tts:origin="23.333333333333332% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">So on the aged and disabled</span>
+      </p>
+      <p begin="00:16:14:07" end="00:16:15:29" region="rollup2" style="basic" tts:origin="42.38095238095238% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">waiver,</span>
+      </p>
+      <p begin="00:16:15:29" end="00:16:20:01" region="rollup2" style="basic" tts:origin="36.666666666666664% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">there's over</span>
+      </p>
+      <p begin="00:16:15:29" end="00:16:20:01" region="rollup2" style="basic" tts:origin="21.428571428571427% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">25,000 people on the waiver.</span>
+      </p>
+      <p begin="00:16:20:02" end="00:16:21:22" region="rollup2" style="basic" tts:origin="42.38095238095238% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">Right?</span>
+      </p>
+      <p begin="00:16:21:22" end="00:16:24:22" region="rollup2" style="basic" tts:origin="27.142857142857142% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">And I have three people</span>
+      </p>
+      <p begin="00:16:21:22" end="00:16:24:22" region="rollup2" style="basic" tts:origin="36.666666666666664% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">who help me.</span>
+      </p>
+      <p begin="00:16:25:07" end="00:16:28:07" region="rollup2" style="basic" tts:origin="23.333333333333332% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">And okay, so we take three,</span>
+      </p>
+      <p begin="00:16:25:07" end="00:16:28:07" region="rollup2" style="basic" tts:origin="32.857142857142854% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">so that you need-</span>
+      </p>
+      <p begin="00:16:28:11" end="00:16:30:11" region="rollup2" style="basic" tts:origin="29.047619047619047% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">and that's per week.</span>
+      </p>
+      <p begin="00:16:30:11" end="00:16:34:04" region="rollup2" style="basic" tts:origin="17.61904761904762% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">So how many people would it take</span>
+      </p>
+      <p begin="00:16:30:11" end="00:16:34:04" region="rollup2" style="basic" tts:origin="34.761904761904759% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">for volunteers?</span>
+      </p>
+      <p begin="00:16:34:16" end="00:16:37:07" region="rollup2" style="basic" tts:origin="27.142857142857142% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">And how many volunteers</span>
+      </p>
+      <p begin="00:16:34:16" end="00:16:37:07" region="rollup2" style="basic" tts:origin="29.047619047619047% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">are going to come in</span>
+      </p>
+      <p begin="00:16:37:07" end="00:16:41:05" region="rollup2" style="basic" tts:origin="19.523809523809526% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">that are consistent, that know</span>
+      </p>
+      <p begin="00:16:37:07" end="00:16:41:05" region="rollup2" style="basic" tts:origin="25.238095238095237% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">your personal care needs?</span>
+      </p>
+      <p begin="00:16:41:21" end="00:16:45:03" region="rollup2" style="basic" tts:origin="21.428571428571427% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">Because like, it's like, it's</span>
+      </p>
+      <p begin="00:16:41:21" end="00:16:45:03" region="rollup2" style="basic" tts:origin="27.142857142857142% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">not just like coming in</span>
+      </p>
+      <p begin="00:16:45:03" end="00:16:47:24" region="rollup2" style="basic" tts:origin="30.952380952380953% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">and you know, "Hey,</span>
+      </p>
+      <p begin="00:16:45:03" end="00:16:47:24" region="rollup2" style="basic" tts:origin="36.666666666666664% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">get dressed."</span>
+      </p>
+      <p begin="00:16:47:24" end="00:16:50:23" region="rollup2" style="basic" tts:origin="17.61904761904762% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">They actually have to physically</span>
+      </p>
+      <p begin="00:16:47:24" end="00:16:50:23" region="rollup2" style="basic" tts:origin="29.047619047619047% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">help me get dressed,</span>
+      </p>
+      <p begin="00:16:50:24" end="00:16:53:10" region="rollup2" style="basic" tts:origin="38.571428571428569% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">physically</span>
+      </p>
+      <p begin="00:16:50:24" end="00:16:53:10" region="rollup2" style="basic" tts:origin="23.333333333333332% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">help me go to the bathroom.</span>
+      </p>
+      <p begin="00:16:53:10" end="00:16:56:10" region="rollup2" style="basic" tts:origin="30.952380952380953% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">If they don't come</span>
+      </p>
+      <p begin="00:16:53:10" end="00:16:56:10" region="rollup2" style="basic" tts:origin="30.952380952380953% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">in, I don't get up.</span>
+      </p>
+      <p begin="00:16:56:10" end="00:16:59:10" region="rollup2" style="basic" tts:origin="36.666666666666664% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">I don't eat,</span>
+      </p>
+      <p begin="00:16:56:10" end="00:16:59:10" region="rollup2" style="basic" tts:origin="19.523809523809526% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">and I don't go to the bathroom,</span>
+      </p>
+      <p begin="00:16:59:20" end="00:17:01:26" region="rollup2" style="basic" tts:origin="21.428571428571427% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">and then I don't go to work.</span>
+      </p>
+      <p begin="00:17:01:26" end="00:17:03:22" region="rollup2" style="basic" tts:origin="30.952380952380953% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">I don't volunteer.</span>
+      </p>
+      <p begin="00:17:03:22" end="00:17:04:29" region="rollup2" style="basic" tts:origin="29.047619047619047% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">I don't have a life.</span>
+      </p>
+      <p begin="00:17:05:28" end="00:17:07:19" region="rollup2" style="basic" tts:origin="32.857142857142854% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">So, I don't know</span>
+      </p>
+      <p begin="00:17:07:19" end="00:17:10:19" region="rollup2" style="basic" tts:origin="19.523809523809526% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">any volunteer- most volunteers</span>
+      </p>
+      <p begin="00:17:10:22" end="00:17:13:22" region="rollup2" style="basic" tts:origin="23.333333333333332% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">don't want a volunteer job</span>
+      </p>
+      <p begin="00:17:10:22" end="00:17:13:22" region="rollup2" style="basic" tts:origin="36.666666666666664% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">consistently.</span>
+      </p>
+      <p begin="00:17:14:06" end="00:17:18:14" region="rollup2" style="basic" tts:origin="23.333333333333332% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">I volunteer, and honestly,</span>
+      </p>
+      <p begin="00:17:14:06" end="00:17:18:14" region="rollup2" style="basic" tts:origin="27.142857142857142% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">I couldn't do this job</span>
+      </p>
+      <p begin="00:17:18:29" end="00:17:20:16" region="rollup2" style="basic" tts:origin="36.666666666666664% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">consistently.</span>
+      </p>
+      <p begin="00:17:20:16" end="00:17:22:16" region="rollup2" style="basic" tts:origin="34.761904761904759% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">Could anybody?</span>
+      </p>
+      <p begin="00:17:22:16" end="00:17:25:16" region="rollup2" style="basic" tts:origin="42.38095238095238% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">I mean,</span>
+      </p>
+      <p begin="00:17:22:16" end="00:17:25:16" region="rollup2" style="basic" tts:origin="19.523809523809526% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">and what happened during COVID?</span>
+      </p>
+      <p begin="00:17:25:16" end="00:17:28:11" region="rollup2" style="basic" tts:origin="19.523809523809526% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">We were looking for volunteers,</span>
+      </p>
+      <p begin="00:17:28:11" end="00:17:31:11" region="rollup2" style="basic" tts:origin="30.952380952380953% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">because we couldn't</span>
+      </p>
+      <p begin="00:17:28:11" end="00:17:31:11" region="rollup2" style="basic" tts:origin="23.333333333333332% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">get caretakers to come in.</span>
+      </p>
+      <p begin="00:17:31:27" end="00:17:34:06" region="rollup2" style="basic" tts:origin="23.333333333333332% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">You know, just to back up.</span>
+      </p>
+      <p begin="00:17:34:06" end="00:17:36:15" region="rollup2" style="basic" tts:origin="19.523809523809526% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">You know, I've seen Kristyn put</span>
+      </p>
+      <p begin="00:17:36:15" end="00:17:39:27" region="rollup2" style="basic" tts:origin="30.952380952380953% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">advertisements up,</span>
+      </p>
+      <p begin="00:17:36:15" end="00:17:39:27" region="rollup2" style="basic" tts:origin="25.238095238095237% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">and she can't get people.</span>
+      </p>
+      <p begin="00:17:40:19" end="00:17:42:27" region="rollup2" style="basic" tts:origin="21.428571428571427% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">You know, I can't get people.</span>
+      </p>
+      <p begin="00:17:42:27" end="00:17:47:13" region="rollup2" style="basic" tts:origin="21.428571428571427% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">And our care is higher needs</span>
+      </p>
+      <p begin="00:17:42:27" end="00:17:47:13" region="rollup2" style="basic" tts:origin="32.857142857142854% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">then some people.</span>
+      </p>
+      <p begin="00:17:48:07" end="00:17:51:15" region="rollup2" style="basic" tts:origin="34.761904761904759% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">So volunteers,</span>
+      </p>
+      <p begin="00:17:48:07" end="00:17:51:15" region="rollup2" style="basic" tts:origin="19.523809523809526% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">you know, it's a great concept,</span>
+      </p>
+      <p begin="00:17:52:01" end="00:17:54:24" region="rollup2" style="basic" tts:origin="21.428571428571427% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">but it's totally unrealistic.</span>
+      </p>
+      <p begin="00:17:54:24" end="00:17:57:20" region="rollup2" style="basic" tts:origin="23.333333333333332% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">Is there anything you want</span>
+      </p>
+      <p begin="00:17:54:24" end="00:17:57:20" region="rollup2" style="basic" tts:origin="30.952380952380953% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">lawmakers to know?</span>
+      </p>
+      <p begin="00:17:57:20" end="00:18:00:26" region="rollup2" style="basic" tts:origin="25.238095238095237% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">I really wish that before</span>
+      </p>
+      <p begin="00:17:57:20" end="00:18:00:26" region="rollup2" style="basic" tts:origin="21.428571428571427% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">they start cutting programs,</span>
+      </p>
+      <p begin="00:18:01:19" end="00:18:04:10" region="rollup2" style="basic" tts:origin="30.952380952380953% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">they would sit down</span>
+      </p>
+      <p begin="00:18:01:19" end="00:18:04:10" region="rollup2" style="basic" tts:origin="34.761904761904759% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">and talk to us.</span>
+      </p>
+      <p begin="00:18:04:10" end="00:18:08:01" region="rollup2" style="basic" tts:origin="23.333333333333332% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">And look at what we can do</span>
+      </p>
+      <p begin="00:18:04:10" end="00:18:08:01" region="rollup2" style="basic" tts:origin="29.047619047619047% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">to fix the programs,</span>
+      </p>
+      <p begin="00:18:08:19" end="00:18:11:10" region="rollup2" style="basic" tts:origin="30.952380952380953% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">and not totally cut</span>
+      </p>
+      <p begin="00:18:08:19" end="00:18:11:10" region="rollup2" style="basic" tts:origin="36.666666666666664% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">the programs.</span>
+      </p>
+      <p begin="00:18:11:10" end="00:18:12:18" region="rollup2" style="basic" tts:origin="23.333333333333332% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">I mean, it's pretty simple.</span>
+      </p>
+      <p begin="00:18:12:18" end="00:18:16:14" region="rollup2" style="basic" tts:origin="19.523809523809526% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">I worked on so many committees</span>
+      </p>
+      <p begin="00:18:12:18" end="00:18:16:14" region="rollup2" style="basic" tts:origin="34.761904761904759% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">over the years.</span>
+      </p>
+      <p begin="00:18:17:05" end="00:18:19:22" region="rollup2" style="basic" tts:origin="32.857142857142854% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">And we had great</span>
+      </p>
+      <p begin="00:18:19:22" end="00:18:22:24" region="rollup2" style="basic" tts:origin="30.952380952380953% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">input and lawmakers</span>
+      </p>
+      <p begin="00:18:19:22" end="00:18:22:24" region="rollup2" style="basic" tts:origin="34.761904761904759% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">listened to us.</span>
+      </p>
+      <p begin="00:18:23:09" end="00:18:25:07" region="rollup2" style="basic" tts:origin="42.38095238095238% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">Now it</span>
+      </p>
+      <p begin="00:18:23:09" end="00:18:25:07" region="rollup2" style="basic" tts:origin="23.333333333333332% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">seems like they don't care.</span>
+      </p>
+      <p begin="00:18:26:13" end="00:18:29:13" region="rollup2" style="basic" tts:origin="40.476190476190474% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">And it's</span>
+      </p>
+      <p begin="00:18:26:13" end="00:18:29:13" region="rollup2" style="basic" tts:origin="25.238095238095237% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">really, it's really hard.</span>
+      </p>
+      <p begin="00:18:30:00" end="00:18:32:14" region="rollup2" style="basic" tts:origin="19.523809523809526% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">Thank you so much to our guests</span>
+      </p>
+      <p begin="00:18:30:00" end="00:18:32:14" region="rollup2" style="basic" tts:origin="34.761904761904759% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">for joining us.</span>
+      </p>
+      <p begin="00:18:32:14" end="00:18:35:02" region="rollup2" style="basic" tts:origin="34.761904761904759% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">For a response</span>
+      </p>
+      <p begin="00:18:32:14" end="00:18:35:02" region="rollup2" style="basic" tts:origin="17.61904761904762% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">from the joint budget committee,</span>
+      </p>
+      <p begin="00:18:35:02" end="00:18:37:28" region="rollup2" style="basic" tts:origin="30.952380952380953% 68.666666666666657%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">watch the February</span>
+      </p>
+      <p begin="00:18:35:02" end="00:18:37:28" region="rollup2" style="basic" tts:origin="19.523809523809526% 74%" tts:textAlign="center">
+        <span tts:backgroundColor="#000000FF" tts:fontFamily="MyriadPro-Regular" tts:fontSize="40px">12th episode of Idaho Reports.</span>
+      </p>
+    </div>
+  </body>
+
+</tt>
