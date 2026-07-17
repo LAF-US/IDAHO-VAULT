@@ -7,8 +7,6 @@ published: 2022-06-16
 created: 2026-07-16
 description: "Many artists have been celebrated for their vivid depictions of the landscapes and history of the West. Here are a few Idaho artists."
 ---
-[![Physicians Mutual](https://www.idahoseniorindependent.com/wp-content/uploads/2025/12/Physicians-Mutual-728x90-1.jpg)](https://www.idahoseniorindependent.com/linkout/17632)
-
 Many artists have been celebrated for their vivid depictions of the landscapes and history of the West. Here are a few Western artists from Idaho.
 
 ### James Castle
