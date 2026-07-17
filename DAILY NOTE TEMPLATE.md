@@ -17,6 +17,7 @@ cssclasses:
 tags:
   - today
   - <% d.format("YYYY/MM/DD") %>
+  - <% d.format("dddd") %>
   - dailynote
 date created: <% d.format("dddd, MMMM Do YYYY, h:mm:ss a") %>
 date modified: <% d.format("dddd, MMMM Do YYYY, h:mm:ss a") %>
