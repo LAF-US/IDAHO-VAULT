@@ -25,8 +25,7 @@ related:
 
 ## Canonical Registry
 
-If you wake up disoriented, read `CONSTITUTION.md` and [!/WAKEUP.md](!/WAKEUP.md)
-before interpreting lore, historical notes, or older branch residue.
+If you wake up disoriented, read `CONSTITUTION.md` and any relevant !README files before interpreting lore, historical notes, or older branch residue.
 
 Tree logic governs orientation: `!/*` is the Nest/Hive of the Unified Swarm personae, while `.*/` dotfolders are the persona chambers of individual agents.
 
@@ -89,6 +88,6 @@ LAF-US (Organization)
 
 ---
 
-Manually revised by Logan A. Finney on 05/25/2026
+Manually revised by Logan A. Finney on 07/16/2026
 
 ###### [["The world is quiet here."]]
