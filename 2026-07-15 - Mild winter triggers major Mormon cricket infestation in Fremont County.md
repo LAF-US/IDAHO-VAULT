@@ -22,9 +22,3 @@ For homeowners, specific barrier products can be sprayed to slow crickets down f
 The state offers assistance through specialists, including an individual overseeing the [statewide Mormon cricket program](https://invasivespecies.idaho.gov/grasshopper). “The state is willing to help where they can,” Fowler stated.
 
 The long-term outlook for managing the cricket population in Fremont County largely depends on upcoming winter conditions. A harsh Idaho winter is considered the most effective natural control.
-
-<iframe src="https://assets.dappier.com/widget/widget-v2.0.4.html?widgetId=wd_01jf8rdv4sexabjkj8y6mf3fyd&amp;instanceId=wi_6e2c63f1-efb5-4dc6-bfe7-d6d1cde25c91&amp;nonce=0f82c073eecb25f9e250d5e691e12cce&amp;variant=embed&amp;mode=embed&amp;env=production&amp;containerWidth=760&amp;referringUrl=https%3A%2F%2Flocalnews8.com%2Fnews%2Flocal-news%2F2026%2F07%2F15%2Fmild-winter-triggers-major-mormon-cricket-infestation-in-fremont-county%2F%3Futm_source%3Dnewsletters.idahocapitalsun.com%26utm_medium%3Dnewsletter%26utm_campaign%3Dfuture-of-passenger-rail-in-idaho-governor-s-housing-stipend-kept-flat-column-helping-unhoused-neighbors%26_bhlid%3D5dbdaf069d5aa9ab30ed545b7cbc24bc829839fe&amp;deviceTheme=light&amp;domain=localnews8.com" title="Dappier Ask AI Widget" allow="clipboard-write"></iframe>
-
-Article Topic Follows: [Local News](https://localnews8.com/category/news/local-news/)
-
-mormon crickets
