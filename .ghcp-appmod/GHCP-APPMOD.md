@@ -6,6 +6,6 @@ related:
   - runtime
 ---
 
-**.ghcp-appmod** — Imported software runtime persona.
+**.ghcp-appmod** â€” Imported software runtime persona.
 
 ghcp-appmod runtime and configuration.

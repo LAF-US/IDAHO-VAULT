@@ -35,6 +35,9 @@ packages = ["src/idaho_vault"]
 cache-dir = ".uv-cache"
 python-downloads = "manual"
 python-preference = "system"
+override-dependencies = [
+    "mcp>=1.27.2",
+]
 
 [tool.crewai]
 type = "crew"

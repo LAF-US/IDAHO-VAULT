@@ -25,7 +25,20 @@ def _as_text(value: bytes | str | None) -> str:
 
 
 def _validate_cmd(cmd: list[str]) -> None:
-    """Validate argv-list commands before execution."""
+    """Validate argv-list commands before execution.
+
+    Deliberately does NOT reject newlines/CRs in argv elements: `--body`,
+    `--description`, and similar flag values legitimately carry multi-line
+    markdown (PR comments, attestations, sortition posts -- this exact
+    check broke `review_feedback_loop.py`'s sync-pr/reconcile the moment it
+    landed, since every attestation/lifecycle comment is multi-line). A
+    newline inside one argv element is inert here regardless:
+    `subprocess.run` is always called with `shell=False`, so there is no
+    shell to reinterpret it. NUL is still rejected -- it truncates C
+    strings at the exec layer (CPython already raises ValueError on
+    embedded NULs; this just gives an earlier, clearer message from the
+    same guard as the rest of this check).
+    """
     if not cmd:
         raise ValueError("Command must not be empty")
     if cmd[0] not in _ALLOWED_EXECUTABLES:
@@ -33,8 +46,8 @@ def _validate_cmd(cmd: list[str]) -> None:
     for part in cmd:
         if not isinstance(part, str):
             raise ValueError("All command arguments must be strings")
-        if "\x00" in part or "\n" in part or "\r" in part:
-            raise ValueError("Command arguments contain disallowed control characters")
+        if "\x00" in part:
+            raise ValueError("Command arguments must not contain NUL bytes")
 
 
 def run(
