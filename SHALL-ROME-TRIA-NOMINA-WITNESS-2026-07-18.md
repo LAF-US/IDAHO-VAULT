@@ -71,12 +71,13 @@ record. They argue from what they can see. By the time the song reaches "how is 
 mine," it isn't introducing a new category — it's finally naming what the whole preceding catalogue of
 physical description has been assembling the entire time.
 
-`[history]`: this is also, structurally, how a cognomen actually got minted in practice — not by
-grant, but by an observed trait sticking as a nickname (*Naso* for a nose, *Cicero*, traditionally, for
-a wart shaped like a chickpea). *"Dainty," "delicate, dimwitted," "I hate how he dresses"* aren't just
-insults; they're the conspirators attempting the same act by the same method — trying to mint a rival
-cognomen for Caesar out of contempt, because the nomen is untouchable by insult and the one they've got
-is losing.
+`[history]`: this is also, structurally, one of the ways a cognomen could get minted — not the only
+way (cognomina also became hereditary family-branch names, or were conferred as honors, like
+"Africanus"), but some genuinely arose from an observed trait sticking as a nickname (*Naso* for a
+nose, *Cicero*, traditionally, for a wart shaped like a chickpea). `[reading]`: *"Dainty," "delicate,
+dimwitted," "I hate how he dresses"* read as the conspirators attempting that same narrower mechanism —
+trying to mint a rival cognomen for Caesar out of contempt, because the nomen is untouchable by insult
+and the one they've got is losing.
 
 ## The refrain unmoors its own noun
 
@@ -115,15 +116,19 @@ Raised directly in conversation, and it changes the weight of the reading rather
 complicating it: as Roman senators, Cassius, Cinna, and Casca carry a real, structural, class-inherited
 abhorrence of kingship — not a manufactured pretext.
 
-`[history]`: Caesar was named **dictator perpetuo** — dictator in perpetuity — in February 44 BCE, one
-month before the Ides of March. The traditional Roman dictatorship was, by design since the early
-Republic, an emergency magistracy capped at six months, specifically so no one man could hold unchecked
-power indefinitely. Removing that cap was a real, formally conferred, unprecedented break from the
-Republic's core structural safeguard — not rhetorical escalation by his enemies. Weeks earlier, at the
-Lupercalia, Antony publicly offered Caesar a diadem before a crowd; Caesar refused it, visibly, testing
-the audience's reaction — but the offer being staged at all means the apparatus of monarchy was being
-assembled around him in public, live, whatever his own intent. *"Caesar can't be king for life"* is a
-compressed but materially accurate description of an actual constitutional emergency in progress.
+`[history]`: Caesar was named **dictator perpetuo** — dictator in perpetuity — in early 44 BCE, shortly
+before the Ides of March; the precise month is debated among historians working from the coin and
+epigraphic evidence, and this document doesn't resolve that debate. The traditional Roman dictatorship
+was, by long custom since the early Republic, an emergency magistracy generally capped at six
+months — a traditional characterization of the office's expected limit, not a claim that a fixed
+constitutional rule of that kind was formally codified. Removing that limit was still a real,
+formally conferred, unprecedented break from custom — not rhetorical escalation invented by his
+enemies. Weeks earlier, at the Lupercalia, Antony publicly offered Caesar a diadem before a crowd, and
+Caesar refused it: that offer and refusal are attested. `[reading]`: that Caesar was visibly testing
+the audience's reaction, and that this means the apparatus of monarchy was being assembled around him
+in public, are inferences drawn from the attested event, not the event itself. *"Caesar can't be king
+for life"* is a compressed but materially grounded description of a real constitutional break in
+progress.
 
 `[reading]`: the Senate's abhorrence is also **inherited** in the strict sense this document has been
 using the word — not by blood, but by office. Since the traditional founding date of 509 BCE (the same
