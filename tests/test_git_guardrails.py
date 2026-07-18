@@ -48,6 +48,10 @@ class GitGuardrailsTest(unittest.TestCase):
         self.assertIn('EnvironmentVariables["GIT_TERMINAL_PROMPT"]', wrapper)
         self.assertIn("$proc.WaitForExit(10000)", wrapper)
 
+    @unittest.skipIf(
+        os.name == "nt",
+        "extensionless bash wrapper installed as 'git' cannot be resolved by Windows process creation",
+    )
     def test_shell_wrapper_reconnects_missing_origin_when_installed_as_git(self) -> None:
         real_git = shutil.which("git")
         self.assertIsNotNone(real_git, "git must be available to exercise the guard wrapper")
