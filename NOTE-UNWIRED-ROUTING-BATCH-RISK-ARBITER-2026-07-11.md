@@ -23,9 +23,9 @@ related:
 ## What Logan said
 
 > "The 'batch' automations were intended to be a varied set of flowchart logic-gate sequenced tools to route PRs to the appropriate fix lanes... but unfortunately the contractor cobbled everything together into several misleadingly named monoscripts."
-
+>
 > "it's a 'note for now' along with two adjacent yet related systems, the risk labeller and the sortition arbiter"
-
+>
 > "classify_paths belongs in that file as well, prominently, then with a[nother], holistic perspective on the script thicket"
 
 All three lines are Logan's own words, `[told]`, this session. Everything below is what I verified against the actual code today to ground that claim — not assumed from it.
