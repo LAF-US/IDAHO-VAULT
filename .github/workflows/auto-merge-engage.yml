@@ -28,7 +28,12 @@ name: Auto-merge on PR events
 
 on:
   pull_request_target:
-    types: [opened, reopened, ready_for_review, synchronize]
+    # `labeled` is load-bearing: the job below gates on the `auto-merge` label, but without
+    # a `labeled` trigger, *applying* that label fires no event — so a PR labeled after its
+    # last open/sync sat armed-but-unqueued until a manual dispatch (the #720 symptom). With
+    # `labeled`, adding `auto-merge` engages the arm+enqueue directly. Any other label event
+    # runs the job too, then the `if` skips it — harmless, and the concurrency group dedupes.
+    types: [opened, reopened, ready_for_review, synchronize, labeled]
 
 permissions:
   # contents: write  — resolveReviewThread + enablePullRequestAutoMerge (the #546 gate family).
