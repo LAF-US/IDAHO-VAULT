@@ -1,0 +1,68 @@
+---
+related:
+- Colorado
+- III
+- Idaho
+- Idaho Republican Party
+- Mexico
+- Paul
+- Pollock
+- President
+- South Carolina
+- Thomas
+- U.S. Congress
+- U.S. Senate
+- Washington
+- William Borah
+- blocked
+- election
+- law enforcement
+- lobbyists
+- meeting
+- self
+- voting
+authority: LOGAN
+---
+# William Borah: A Featured Biography
+
+Senator William E. Borah was affectionately known as the "**Lion of Idaho**" during his 33 years in the United States Senate. Elected as a Republican in 1907, Borah established himself as a prominent progressive with a fiercely independent spirit. This superb orator who had a knack for courting publicity was once named by *Time* magazine as the "most famed senator of the century." Despite his leading role in the creation of two constitutional amendments—*establishing the graduated income tax and the direct election of senators*—Borah is best remembered for his unwavering opposition to the so-called Susan B. Anthony amendment *granting women the right to vote*. As a 10-year chairman of the Foreign Relations Committee, Borah also shaped American foreign policy in the period between the world wars. An isolationist, Borah helped organize opposition to the Treaty of Versailles, which the Senate resoundingly rejected in 1919. In January 1940, Borah suffered a brain hemorrhage and died. His funeral service was held in the U.S. Senate Chamber.
+
+---
+
+[^1] "[William Borah: A Featured Biography](https://www.senate.gov/senators/FeaturedBios/Featured_Bio_BorahWilliam.htm)". *United States Senate*, U.S. Congress.
+
+---
+
+## Woman Suffrage Centennial, Part III: The Last Trench
+
+*While American doughboys fought for democracy overseas, suffragists adopted wartime rhetoric to criticize powerful institutions at home. They picketed the White House, carrying banners which read, “We shall fight for things which we have always carried nearest our hearts—democracy,” and, “Mr. President, how long must women wait for their liberty?” They were arrested for obstructing traffic and imprisoned at Occoquan Workhouse just outside Washington, D.C., where they staged hunger strikes and endured forced feedings and physical assaults. Press accounts described their brutal treatment at the hands of law enforcement, drawing a stark contrast to Wilson’s wartime goal of “Mak[ing] the World Safe for Democracy.” Public outcry prompted the president to finally call for action. Describing the national suffrage amendment as a vital war measure, Wilson urged members of Congress to support it. On January 10, 1918, the House approved the amendment. The question remained, did suffragists have the votes they needed in the Senate?*
+
+*To be sure they could answer that question with a resounding "yes," suffrage lobbyists doubled their efforts. Their constant presence at the Capitol irritated lawmakers. Senators complained when suffragists holding banners blocked doorways of the Senate Office Building. Alice Paul patiently explained that the obstruction would continue as long as men continued to block their bill. When suffragists marched down Constitution Avenue and disrupted traffic, Capitol Police arrested them. Senators objected to the “un-American demonstrations” on the Capitol grounds and denounced protestors as “cranks and agitators.” The Washington Post condemned suffragists’ “unlawful assemblages or attacks” on lawmakers as counterproductive. Some suffragists seemed to enjoy provoking the intransigent lawmakers. Determined to see the amendment pass, suffragists ignored the complaints and protests continued unabated.*
+
+Some senators, however, appreciated the effort. Andrieus Jones of New Mexico, chairman of the Senate Committee on Woman Suffrage, relied upon the activists to whip votes for the amendment. It’s likely that he shared with them information that he gathered about colleagues who, having voted no in 1914, may be persuaded to change their vote. At the top of that list, no doubt, was **Senator William Borah**, an influential Republican of Idaho.
+
+A commanding presence in the Senate, Borah was known to be combative, obstinate, and vain. Though **he supported suffrage for women**—women in Idaho had enjoyed the right to vote since 1896—he opposed a national suffrage amendment, *insisting it was an issue best left to the states*. When the House approved the measure, Borah immediately announced his opposition. “I am aware…[my position] will lead to much criticism among friends at home,” he wrote a constituent. “I would rather give up the office” than to “cast a vote…I do not believe in.”
+
+In office since 1907, in the wake of the Seventeenth Amendment Borah faced election by popular vote for the first time in 1918. Determined to flip his vote—or unseat him—suffragists coordinated a relentless campaign in Borah’s home state. “Will you get as many people as you possibly can, especially from [Borah’s] own party, to wire him requesting that he vote for [the amendment]?” implored Carrie Chapman Catt, president of the National American Woman Suffrage Association to a friend. **Petitions from Idaho constituents poured into Borah’s office, and Republican Party leaders began to worry that the senator’s position would damage party prospects in the fall election. Even former president Teddy Roosevelt weighed in with a personal note to Borah, encouraging him to reconsider his position. As the November election drew near, the typically self-confident Borah had reason to worry about potential defeat.**
+
+President Wilson worried, too. He feared that if the Senate, with the Democrats in the majority, rejected the amendment, suffragists would target his party in the midterm election. Wilson decided to take a bold step. On September 30, 1918, he delivered a brief, impassioned speech *in the Senate Chamber*, pleading with senators to deliver “justice to women.” In particular, the president sought to persuade a coalition of southern Democrats and northeastern Republicans, known as the “unholy alliance,” who opposed woman suffrage for reasons that were by now all too familiar. “Do not force upon [the states] the enfranchisement of those women who are not of our race,” implored one opponent. Others argued that women possessed neither the intellectual nor emotional capacity to make reasoned decisions. Still others chaffed at the thought of relenting to the demands of the so-called “petticoat brigade.”
+
+Having delivered his address, Wilson returned to the White House to wait. On the following day, October 1, the Senate took up the suffrage bill. Suffragists, dressed in white gowns with purple sashes, watched impatiently from the gallery as the final debate began. Supporters offered one last defense of the bill. Women had selflessly supported the war effort, Senator Charles S. Thomas of Colorado observed. “Why do we ask American doughboys to fight for Europeans’ right to self-determination,” Thomas wondered, while “50 per cent of our population is disenfranchised”?
+
+After the debate concluded, Senator Jones successfully beat back efforts to amend the bill, and the roll call began. *When the final vote was cast, the amendment fell two votes short of the two-thirds present and voting required for passage*, 53-31. Disappointed, Andrieus Jones promised to call another vote before the congressional session ended in March 1919.
+
+**Where would suffragists get the two votes necessary to pass the amendment through the Senate—their so-called “Last Trench”?** Alice Paul dialed up the pressure on Borah. With the assistance of local women, Paul convinced the Idaho Republican Party to adopt *a party plank supporting a national suffrage amendment. Would Borah defy his own state party and continue to oppose the bill?* Occupied with war-related measures, Borah remained in Washington in the weeks before the election, but his chances for reelection were looking grim. His projected lead over his opponent had virtually disappeared. In desperation, Borah made an appointment to see Alice Paul. When that fateful meeting concluded, Paul wired a statement to Idaho suffragists: “*We have talked over the…situation with Senator Borah, and our understanding…is that he will carry out his platform and vote for the suffrage amendment if elected.*” Aware of Borah’s long opposition to the amendment, a few suffrage leaders remained skeptical. Did Paul get Borah’s commitment in writing? Would he indeed support the amendment? While Paul told her lieutenants in Idaho to stand down, **Borah wired his supporters to inform them that his position had not changed**.
+
+On November 5, 1918, just as Wilson had feared, suffragists punished congressional Democrats for failing to approve the national suffrage amendment. Thanks to his pledge to the National Woman’s Party, William Borah fared better, besting his opponent by *nearly 30 points. In March of 1919, Republicans would assume the majority in the House and Senate, and Senator Borah would be among them*.
+
+During the lame-duck session that convened on December 2, 1918, Senator Jones scheduled another vote. As the vote drew near, Borah remained coy, issuing no public statements. At a heated Democratic caucus meeting on February 6, South Carolina’s William Pollock joined 19 other Democrats and declared his support for the bill, providing one of the two additional votes needed for passage. Suffragists expected Borah to provide the last vote.
+
+On Monday, February 10, 1919, the Senate prepared to vote. “This is no new proposition before the American people,” observed Senator Pollock as the roll call began. *The fate of the bill was soon known. Coming early in the roll call of senators*, Borah betrayed Alice Paul and the Idaho suffragists and voted **no**. When the final vote was tallied, the suffrage amendment fell **one vote short** of the required two-thirds majority, 55-29. Suffragists seated in the galleries quietly hung their heads. Anticipating that the next Congress would approve the bill, one irritated suffrage leader called the Senate vote a "futile delay…to betray the people.”
+
+The battle was lost, but the war continued. The 66th Congress convened on March 4, 1919, and soon took up the bill. The House quickly approved it on May 21. In the Senate, several newly elected members had publicly pledged their support for the amendment, making the suffragists reasonably confident of its passage. On June 4, 1919, suffragists packed the Senate gallery once again. “There was no excitement,” Maud Younger later recalled. “The coming of the women, the waiting of the women, the expectancy of the women, was an old story.” *After so many years of fighting for their rights, suffrage activists in the gallery and across the nation found this final vote to be almost mundane.* In a bipartisan effort, senators approved the national suffrage amendment with two votes to spare, 56 to 25. A few minutes later, Vice President Thomas Marshall joined prominent suffragists for a signing ceremony in his office in the Capitol. The amendment had passed a major hurdle; now it would go to the states for ratification.
+
+--- 
+
+[^2] ["Woman Suffrage Centennial" Part III: The Last Trench](https://www.senate.gov/about/women-of-the-senate/part3-the-last-trench.htm). *United States Senate*, U.S. Congress.
+
+--- 

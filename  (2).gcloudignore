@@ -1,0 +1,61 @@
+# This file tells gcloud what to NOT send to the build context.
+# It's based on .gitignore but is more aggressive to keep the build fast and the image small.
+
+# Start with everything from .gitignore
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+
+# IDE
+.vscode/*
+!.vscode/mcp.json
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project-specific
+.env
+*.vault.json
+
+# Local machine secrets
+.obsidian/plugins/obsidian-local-rest-api/data.json
+# Swarm state archive (local only)
+.github/swarm/state/archive/
+
+# Swarm operational logs (ephemeral)
+\!/swarm/logs/*
+!\!/swarm/logs/.gitkeep
+
+# Obsidian system/state files (noisy, machine-local)
+.obsidian/
+
+# Daily notes (ephemeral, personal)
+DAILYNOTES/
+
+# Claude Code local settings (machine-local, not for repo)
+.claude/settings.local.json
+
+# Ignore local MCP server binary
+.obsidian/plugins/mcp-tools/bin/mcp-server.exe
+
+# --- Aggressive Docker build optimization ---
+# Ignore EVERYTHING in the vault by default.
+*
+
+# Now, specifically UN-ignore only the files needed for the Docker build.
+!Dockerfile
+!requirements.txt
+!main.py
+!.gcloudignore

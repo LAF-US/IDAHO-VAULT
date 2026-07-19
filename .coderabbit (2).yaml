@@ -1,0 +1,13 @@
+# CodeRabbit review configuration (auto-loaded by CodeRabbit)
+# See VAULT-CONVENTIONS.md for vault governance conventions
+
+reviews:
+  auto_review:
+    enabled: true
+    # drafts: false — skip draft PRs; only review ready-for-review PRs
+    drafts: false
+    # Review PRs from all authors, including bots (e.g. github-actions[bot])
+    # Vault governance note: PRs touching !/ require Logan's approval
+    # All committed content is on the record (public repo)
+  base_branches:
+    - main

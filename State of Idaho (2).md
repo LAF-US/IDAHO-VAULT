@@ -1,0 +1,310 @@
+---
+related:
+- 1st Congressional District
+- 2nd Congressional District
+- Ada County
+- Adams County
+- American Falls
+- Arco
+- Attorney General
+- Bannock County
+- Bear
+- Bear Lake
+- Bear Lake County
+- Benewah
+- Benewah County
+- Bingham County
+- Blackfoot
+- Blaine County
+- Boise
+- Boise County
+- Bonner County
+- Bonners Ferry
+- Bonneville County
+- Boundary County
+- Burley
+- Butte County
+- Caldwell
+- Camas County
+- Canyon County
+- Caribou County
+- Cascade
+- Cassia County
+- Central District Health
+- Central Idaho
+- Challis
+- Clark County
+- Clearwater County
+- Coeur d'Alene
+- Coeur d'Alene Indian Reservation
+- Congressional Districts
+- Council
+- Custer
+- Custer County
+- Department of Administration
+- Department of Agriculture
+- Department of Commerce
+- Department of Correction
+- Department of Environmental Quality
+- Department of Finance
+- Department of Fish and Game
+- Department of Health and Welfare
+- Department of Insurance
+- Department of Juvenile Corrections
+- Department of Labor
+- Department of Lands
+- Department of Parks and Recreation
+- Department of Revenue and Taxation
+- Department of Self-Governing Agencies
+- Department of Transportation
+- Department of Water Resources
+- Driggs
+- Dubois
+- Duck Valley Indian Reservation
+- Eastern Idaho
+- Eastern Idaho Public Health
+- Elmore County
+- Emmett
+- Fairfield
+- Fort Hall
+- Fort Hall Indian Reservation
+- Franklin
+- Franklin County
+- Fremont County
+- Gem County
+- Gooding
+- Gooding County
+- Governor
+- Grangeville
+- Hailey
+- Home
+- Idaho
+- Idaho City
+- Idaho Constitution
+- Idaho County
+- Idaho Falls
+- Idaho House of Representatives
+- Idaho Legislature
+- Idaho Senate
+- Idaho State Police
+- Idaho Supreme Court
+- Industrial Commission
+- Jefferson County
+- Jerome
+- Jerome County
+- Kootenai
+- Kootenai County
+- Kootenai Indian Reservation
+- Lake
+- Latah County
+- Legislative District 1
+- Legislative District 10
+- Legislative District 11
+- Legislative District 12
+- Legislative District 13
+- Legislative District 14
+- Legislative District 15
+- Legislative District 16
+- Legislative District 17
+- Legislative District 18
+- Legislative District 19
+- Legislative District 2
+- Legislative District 20
+- Legislative District 21
+- Legislative District 22
+- Legislative District 23
+- Legislative District 24
+- Legislative District 25
+- Legislative District 26
+- Legislative District 27
+- Legislative District 28
+- Legislative District 29
+- Legislative District 3
+- Legislative District 30
+- Legislative District 31
+- Legislative District 32
+- Legislative District 33
+- Legislative District 34
+- Legislative District 35
+- Legislative District 4
+- Legislative District 5
+- Legislative District 6
+- Legislative District 7
+- Legislative District 8
+- Legislative District 9
+- Legislative Districts
+- Lemhi
+- Lemhi County
+- Lewis County
+- Lewiston
+- Lieutenant Governor
+- Lincoln
+- Lincoln County
+- Madison County
+- Magic Valley
+- Malad City
+- Minidoka
+- Minidoka County
+- Moscow
+- Mountain Home
+- Murphy
+- Nez Perce County
+- Nez Perce Indian Reservation
+- Nezperce
+- North Central Health District
+- North Idaho
+- North-Central Idaho
+- Oneida County
+- Orofino
+- Owyhee
+- Owyhee County
+- Panhandle Health District
+- Paris
+- Payette
+- Payette County
+- Pocatello
+- Power County
+- Preston
+- Rexburg
+- Rigby
+- Rupert
+- Salmon
+- Sandpoint
+- Secretary of State
+- Shoshone
+- Shoshone County
+- Soda Springs
+- South Central Public District Health
+- Southeastern Idaho Public Health
+- Southwest District Health
+- St. Anthony
+- St. Maries
+- State Controller
+- State Court System
+- State Treasurer
+- Superintendent of Public Instruction
+- Teton
+- Teton County
+- Treasure Valley
+- Twin Falls
+- Twin Falls County
+- United States of America
+- Valley County
+- Wallace
+- Washington
+- Washington County
+- Weiser
+- public health districts
+authority: LOGAN
+---
+one of the United States of America, organized under the Idaho Constitution from the former Idaho Territory in 1890
+# Government:
+- Executive Department
+	- Constitutional Officers - Governor, Lieutenant Governor, Attorney General, Secretary of State, State Controller, State Treasurer, & Superintendent of Public Instruction
+	- Executive Departments - Department of Administration, Department of Agriculture, Department of Commerce, Department of Labor, Department of Correction, Department of Environmental Quality, Department of Finance, Department of Fish and Game, Department of Health and Welfare, Department of Insurance, Department of Juvenile Corrections, Department of Transportation, Department of Lands, Department of Parks and Recreation, Department of Revenue and Taxation, Department of Water Resources, Department of Self-Governing Agencies, Industrial Commission, Idaho State Police 
+- Legislative Department - Idaho Legislature (Idaho House of Representatives & Idaho Senate)
+- Judicial Department - Idaho Supreme Court & unified State Court System 
+## Counties:
+- Ada County - Boise
+- Adams County - Council
+- Bannock County - Pocatello
+- Bear Lake County - Paris
+- Benewah County - St. Maries
+- Bingham County - Blackfoot
+- Blaine County - Hailey
+- Boise County - Idaho City
+- Bonner County - Sandpoint
+- Bonneville County - Idaho Falls
+- Boundary County - Bonners Ferry
+- Butte County - Arco
+- Camas County - Fairfield
+- Canyon County - Caldwell
+- Caribou County - Soda Springs
+- Cassia County - Burley
+- Clark County - Dubois
+- Clearwater County - Orofino
+- Custer County - Challis
+- Elmore County - Mountain Home
+- Franklin County - Preston
+- Fremont County - St. Anthony
+- Gem County - Emmett
+- Gooding County - Gooding
+- Idaho County - Grangeville
+- Jefferson County - Rigby
+- Jerome County - Jerome
+- Kootenai County - Coeur d'Alene
+- Latah County - Moscow
+- Lemhi County - Salmon
+- Lewis County - Nezperce
+- Lincoln County - Shoshone
+- Madison County - Rexburg
+- Minidoka County - Rupert
+- Nez Perce County - Lewiston
+- Oneida County - Malad City
+- Owyhee County - Murphy
+- Payette County - Payette
+- Power County - American Falls
+- Shoshone County - Wallace
+- Teton County - Driggs
+- Twin Falls County - Twin Falls
+- Valley County - Cascade
+- Washington County - Weiser
+### Congressional Districts:
+- 1st Congressional District
+- 2nd Congressional District
+### Legislative Districts:
+- Legislative District 1
+- Legislative District 2
+- Legislative District 3
+- Legislative District 4
+- Legislative District 5
+- Legislative District 6
+- Legislative District 7
+- Legislative District 8
+- Legislative District 9
+- Legislative District 10
+- Legislative District 11
+- Legislative District 12
+- Legislative District 13
+- Legislative District 14
+- Legislative District 15
+- Legislative District 16
+- Legislative District 17
+- Legislative District 18
+- Legislative District 19
+- Legislative District 20
+- Legislative District 21
+- Legislative District 22
+- Legislative District 23
+- Legislative District 24
+- Legislative District 25
+- Legislative District 26
+- Legislative District 27
+- Legislative District 28
+- Legislative District 29
+- Legislative District 30
+- Legislative District 31
+- Legislative District 32
+- Legislative District 33
+- Legislative District 34
+- Legislative District 35
+# Regions
+- North Idaho
+- North-Central Idaho
+- Treasure Valley
+- Magic Valley
+- Eastern Idaho
+# public health districts
+- District 1: Panhandle Health District 
+- District 2: North Central Health District 
+- District 3: Southwest District Health 
+- District 4: Central District Health
+- District 5: South Central Public District Health
+- District 6: Southeastern Idaho Public Health 
+- District 7: Eastern Idaho Public Health 
+# Tribal Lands
+- Kootenai Indian Reservation 
+- Coeur d'Alene Indian Reservation 
+- Nez Perce Indian Reservation 
+- Fort Hall Indian Reservation 
+- Duck Valley Indian Reservation 

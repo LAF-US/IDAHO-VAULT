@@ -1,0 +1,15 @@
+{
+  "Components": {
+    "OpenRouter": false,
+    "StateManagement": true,
+    "Ollama": false,
+    "Governance": true
+  },
+  "Status": "DEGRADED",
+  "Issues": [
+    "Ollama: degraded - Expected models not running",
+    "OpenRouter: failed - Connectivity failed: Authentication failed, see inner exception."
+  ],
+  "Timestamp": "2026-05-07T16:54:23.2982836-06:00",
+  "SessionFile": "C:\\Users\\loganf\\Documents\\IDAHO-VAULT\\!\\STATE\\final-verification.json"
+}

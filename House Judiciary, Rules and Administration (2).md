@@ -1,0 +1,42 @@
+---
+related:
+- Barbara Ehardt
+- Bruce Skaug
+- Chenele Dixon
+- Chris Allgood
+- Chris Mathias
+- Clay Handy
+- Colin Nash
+- Dan Garner
+- David Cannon
+- Heather Scott
+- Jacyn Gallagher
+- Joe Alfieri
+- John Gannon
+- Julianne Young
+- Kenny Wroten
+- Marco Erickson
+- Mark Sauter
+- Tina Lambert
+authority: LOGAN
+---
+# Roster
+## 2023 Members
+- Bruce Skaug Chair
+- Heather Scott Vice Chair
+- Barbara Ehardt
+- Julianne Young
+- David Cannon
+- Marco Erickson
+- Joe Alfieri
+- Chris Allgood
+- Chenele Dixon
+- Jacyn Gallagher
+- Dan Garner
+- Clay Handy
+- Tina Lambert
+- Mark Sauter
+- Kenny Wroten
+- John Gannon
+- Colin Nash
+- Chris Mathias
