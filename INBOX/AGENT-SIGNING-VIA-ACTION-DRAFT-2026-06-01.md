@@ -26,6 +26,7 @@ The chamber has not yet verified from primary documentation whether `claude-code
 If (A) is supported: the workflow takes existing unsigned chamber branches and signs them.
 
 If only (B) is supported: a different path is needed. Options:
+
 - The chamber operates differently going forward: drafts work locally, triggers a workflow that has Claude reproduce the work in CI (and commit signed). Cumbersome.
 - Logan accepts a one-time "rescue" of historical branches via local re-signing with a key that IS registered, then future commits go through CI.
 
@@ -48,6 +49,7 @@ Before the workflow at `.github/workflows/claude-sign.yml` can run successfully:
 ## Per-session usage (after activation)
 
 The chamber's normal flow does not change locally:
+
 1. Open conversation with Logan
 2. Read/write vault files locally
 3. `git commit` locally (unsigned-as-Claude, status `U`)
@@ -61,11 +63,13 @@ If trigger eventually moves to `pull_request_target`, step 5 becomes automatic o
 ## Verification path
 
 After the workflow runs on a test branch:
+
 - `gh api repos/LAF-US/IDAHO-VAULT/commits/<sha> --jq .commit.verification`
 - Expected: `{verified: true, reason: "valid", verified_at: ...}`
 - Expected author/committer: `Claude <noreply@anthropic.com>` (or the configured `bot_name`)
 
 If verification reports `false` with reason `unsigned` or `unknown_key`:
+
 - Re-check that the SSH public key is registered as a Signing Key on the GitHub account
 - Re-check that the 1Password item path matches the workflow's reference
 - Confirm `OP_SERVICE_ACCOUNT_TOKEN` is present in repo Secrets
