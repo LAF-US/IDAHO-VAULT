@@ -1,14 +1,23 @@
 # Wayback Audit — 2026-06-08
 
-Scanned 188 notes with URL fields.
+Scanned 186 notes with URL fields.
 
 | Status | Count |
 |---|---|
 | ✅ Live | 132 |
 | ❌ Dead — snapshot found | 4 |
 | ❌ Dead — no archive | 20 |
-| ⚠️ Unreachable (network error) | 27 |
+| ⚠️ Unreachable (network error) | 25 |
 | ⏭️ Already patched | 5 |
+
+**Correction (post-audit):** the original scan counted 188 and listed 27
+"Unreachable" rows; two of those were `VAULT-CONVENTIONS.md` and
+`VAULT-CONVENTIONS.from-pushable-2026-05-08.md`, which are not web resources.
+The scanner's URL-extraction regex picked up a literal `URL: https://...`
+placeholder line inside those two governance docs (an example in the
+frontmatter-conventions text, not a real link) and audited it as if it were a
+dead link. Removed both rows; counts above reflect the correction. Root cause
+is in the audit tooling's URL extraction, not in these two files.
 
 ---
 
@@ -75,5 +84,3 @@ Scanned 188 notes with URL fields.
 | `2023-12-19 - Idaho Statesman - Who are the state’s top employers; See this list.md` | https://www.idahostatesman.com/news/business/article282848943.html |
 | `Article 2020-02-20 Idaho House mulls tax freeze and more.md` | https://www.loganfinney.com/idaho-legislature-2020/2/18/property-tax-deep-dive |
 | `Article 2020-03-30 Tax relief funds directed to COVID-19 response.md` | https://www.loganfinney.com/idaho-legislature-2020/3/30/tax-relief-fund-covid-19 |
-| `VAULT-CONVENTIONS.from-pushable-2026-05-08.md` | https://... |
-| `VAULT-CONVENTIONS.md` | https://... |
