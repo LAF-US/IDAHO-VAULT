@@ -1,0 +1,66 @@
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+# Runs the same test suite python-test-suite.yml runs, under `coverage`, and
+# uploads the resulting report to Codacy so coverage is tracked in the Codacy
+# UI / PR checks. Kept as its own workflow (rather than a step bolted onto
+# python-test-suite.yml) to mirror codacy.yml's separation of concerns and
+# Codacy's own documented convention for this action:
+# https://github.com/codacy/codacy-coverage-reporter-action
+#
+# The report-generation and upload steps run whenever the test step was
+# actually reached (pass or fail) -- via `id: tests` +
+# `!cancelled() && steps.tests.conclusion != 'skipped'` -- so a coverage
+# number still gets reported even on a run where a test failed (coverage
+# trend tracking is independent of pass/fail, and a red test run losing its
+# coverage data too would make the Codacy history gappy for no reason), but
+# NOT when the workflow is cancelled or a prior setup step (checkout, uv
+# sync) failed and the test step never ran at all -- avoids a confusing
+# cascading failure from `coverage xml`/the upload trying to run against an
+# environment or coverage data that was never produced.
+
+name: Codacy Coverage Reporter
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+permissions:
+  contents: read
+
+jobs:
+  coverage:
+    runs-on: ubuntu-latest
+    env:
+      CREWAI_DISABLE_TELEMETRY: "true"
+      OTEL_SDK_DISABLED: "true"
+    steps:
+      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6.3.0
+        with:
+          python-version-file: .python-version
+
+      - uses: astral-sh/setup-uv@f98e06938123ccabd21905ea5d0069192241f9f1 # v8.3.1
+
+      - name: uv sync (installs pyproject + dev group per uv.lock)
+        run: uv sync
+
+      - name: Run test suite under coverage
+        id: tests
+        run: uv run coverage run -m unittest discover -s tests -p "test_*.py" -v
+
+      - name: Generate coverage XML report
+        if: ${{ !cancelled() && steps.tests.conclusion != 'skipped' }}
+        run: uv run coverage xml
+
+      - name: Upload coverage to Codacy
+        if: ${{ !cancelled() && steps.tests.conclusion != 'skipped' }}
+        uses: codacy/codacy-coverage-reporter-action@89d6c85cfafaec52c72b6c5e8b2878d33104c699 # v1.3.0
+        with:
+          project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
+          coverage-reports: coverage.xml
