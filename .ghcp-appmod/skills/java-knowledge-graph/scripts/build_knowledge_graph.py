@@ -1694,7 +1694,7 @@ def generate_module_dependencies_dot(kg: Dict, output_path: Path):
             subprocess.run(['dot', '-Tsvg', str(dot_file), '-o', str(svg_file)],
                           check=True, capture_output=True, timeout=30)
             print(f"   ✓ SVG generated: {svg_file}")
-        except Exception as exc:
+        except (subprocess.CalledProcessError, subprocess.TimeoutExpired, OSError) as exc:
             print(f"   ⚠ SVG generation failed for {dot_file}: {exc}")
 
 def generate_project_dot(kg: Dict, output_path: Path):
@@ -1786,7 +1786,7 @@ def generate_project_dot(kg: Dict, output_path: Path):
             subprocess.run(['dot', '-Tsvg', str(dot_file), '-o', str(svg_file)], 
                           check=True, capture_output=True, timeout=60)
             print(f"   ✓ Generated SVG: {svg_file.name}")
-        except Exception as e:
+        except (subprocess.CalledProcessError, subprocess.TimeoutExpired, OSError) as e:
             print(f"   ⚠️  SVG generation failed: {e}")
 
 def generate_module_dot_files(kg: Dict, output_path: Path):
@@ -2022,7 +2022,7 @@ def generate_module_dot_files(kg: Dict, output_path: Path):
                 svg_file = module_dot_file.with_suffix('.svg')
                 subprocess.run(['dot', '-Tsvg', str(module_dot_file), '-o', str(svg_file)],
                               check=True, capture_output=True, timeout=30)
-            except Exception as exc:
+            except (subprocess.CalledProcessError, subprocess.TimeoutExpired, OSError) as exc:
                 print(f"   ⚠ SVG generation failed for {module_dot_file}: {exc}")
     
     modules_with_classes = len([m for m in modules if any(c.get('moduleName') == m['artifactId'] for c in kg['nodes'] if c['type'] == 'class')])

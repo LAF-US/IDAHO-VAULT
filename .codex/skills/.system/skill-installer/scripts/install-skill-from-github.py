@@ -99,7 +99,7 @@ def _download_repo_zip(owner: str, repo: str, ref: str, dest_dir: str) -> str:
 
 def _run_git(args: list[str]) -> None:
     try:
-        result = subprocess.run(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, timeout=60)
+        result = subprocess.run(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, timeout=60, check=False)
     except subprocess.TimeoutExpired as exc:
         raise InstallError(f"Git command timed out: {' '.join(args)}") from exc
     if result.returncode != 0:

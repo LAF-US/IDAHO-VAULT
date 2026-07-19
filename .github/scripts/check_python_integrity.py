@@ -56,6 +56,36 @@ def missing_subprocess_timeout_findings(path: Path, tree: ast.AST, lines: list[s
     return findings
 
 
+# The timeout gate above only recognizes calls spelled `subprocess.<fn>`, so any
+# other spelling of the same callables would silently bypass it. Rather than chase
+# alias resolution, enforce the one canonical spelling: module aliasing and
+# from-imports of the gated callables are themselves findings. Imports of
+# non-spawning names (CompletedProcess, TimeoutExpired, PIPE, ...) stay legal.
+GATED_SUBPROCESS_CALLABLES = frozenset(
+    name.removeprefix("subprocess.") for name in SUBPROCESS_TIMEOUT_FUNCTIONS
+)
+
+
+def unsafe_subprocess_import_findings(tree: ast.AST) -> list[str]:
+    findings: list[str] = []
+    for node in ast.walk(tree):
+        if isinstance(node, ast.Import):
+            for alias in node.names:
+                if alias.name == "subprocess" and alias.asname:
+                    findings.append(
+                        f"aliased subprocess import ('import subprocess as {alias.asname}') "
+                        f"on line {node.lineno} defeats the timeout gate; use plain 'import subprocess'"
+                    )
+        elif isinstance(node, ast.ImportFrom) and node.module == "subprocess":
+            for alias in node.names:
+                if alias.name in GATED_SUBPROCESS_CALLABLES:
+                    findings.append(
+                        f"'from subprocess import {alias.name}' on line {node.lineno} "
+                        f"defeats the timeout gate; call it as subprocess.{alias.name}"
+                    )
+    return findings
+
+
 def python_file_findings(path: Path) -> list[str]:
     findings: list[str] = []
     text = path.read_text(encoding="utf-8", errors="replace")
@@ -66,6 +96,7 @@ def python_file_findings(path: Path) -> list[str]:
     except SyntaxError as exc:
         findings.append(f"syntax error on line {exc.lineno}: {exc.msg}")
         return findings
+    findings.extend(unsafe_subprocess_import_findings(tree))
     findings.extend(missing_subprocess_timeout_findings(path, tree, text.splitlines()))
     return findings
 
@@ -105,8 +136,12 @@ def flattened_duplicate_findings(root: Path, files: list[Path]) -> list[tuple[Pa
         nested = [path for path in duplicates if path.parent != root]
         for flattened in root_level:
             for canonical in nested:
+                try:
+                    canonical_display = canonical.relative_to(root).as_posix()
+                except ValueError:
+                    canonical_display = str(canonical)
                 findings.append(
-                    (flattened, f"byte-identical flattened duplicate of {canonical}")
+                    (flattened, f"byte-identical flattened duplicate of {canonical_display}")
                 )
     return findings
 
@@ -152,6 +187,12 @@ def main(argv: list[str] | None = None) -> int:
     gate_findings = [(path, message) for path, message in findings if is_changed(path)]
     tree_findings = [(path, message) for path, message in findings if not is_changed(path)]
 
+    def display(path: Path) -> str:
+        try:
+            return path.relative_to(root).as_posix()
+        except ValueError:
+            return str(path)
+
     if tree_findings:
         print(
             f"Python integrity (report-only): {len(tree_findings)} pre-existing "
@@ -159,12 +200,12 @@ def main(argv: list[str] | None = None) -> int:
             file=sys.stderr,
         )
         for path, message in tree_findings:
-            print(f"  [warn] {path}: {message}", file=sys.stderr)
+            print(f"  [warn] {display(path)}: {message}", file=sys.stderr)
 
     if gate_findings:
         print("Python integrity check failed:")
         for path, message in gate_findings:
-            print(f"- {path}: {message}")
+            print(f"- {display(path)}: {message}")
         return 1
 
     print(f"Python integrity check passed for {len(all_files)} tracked files.")
