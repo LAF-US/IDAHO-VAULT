@@ -102,8 +102,23 @@ def find_vault_notes() -> list[Path]:
     return notes
 
 
+def extract_frontmatter(content: str) -> str:
+    """Return a note's own YAML frontmatter block (between the opening and
+    closing '---' fence), or "" if the file has none. Restricting field
+    extraction to this block keeps `URL:`/`wayback:`-shaped lines that appear
+    in prose or fenced example code (e.g. a doc demonstrating the frontmatter
+    convention) from being mistaken for a real field of the file they're in.
+    """
+    if not content.startswith("---"):
+        return ""
+    end = content.find("\n---", 3)
+    if end == -1:
+        return ""
+    return content[:end]
+
+
 def extract_url(content: str) -> str | None:
-    m = re.search(r"^URL:\s*(.+)$", content, re.MULTILINE)
+    m = re.search(r"^URL:\s*(.+)$", extract_frontmatter(content), re.MULTILINE)
     if not m:
         return None
     url = m.group(1).strip()
@@ -116,7 +131,7 @@ def extract_url(content: str) -> str | None:
 
 
 def extract_wayback_field(content: str) -> str | None:
-    m = re.search(r"^wayback:\s*(.+)$", content, re.MULTILINE)
+    m = re.search(r"^wayback:\s*(.+)$", extract_frontmatter(content), re.MULTILINE)
     return m.group(1).strip() if m else None
 
 
