@@ -1,0 +1,262 @@
+{
+  "source_of_truth": "swarm.json",
+  "status": "generated",
+  "purpose": "discovery_index",
+  "generated_note": "Derived orientation index for task-relevant discovery only. It is not a launcher or authority grant. Do not hand-edit.",
+  "authority_chain": {
+    "narrative_registry": "!/AGENTS.md",
+    "machine_registry": "swarm.json",
+    "discovery_index": "!/agents.json",
+    "compatibility_mirror": "agents.json"
+  },
+  "wakeup_protocol": {
+    "quick_start": "!/WAKEUP.md",
+    "boot_order": [
+      "AGENTS.md",
+      "!/WAKEUP.md",
+      "CONSTITUTION.md",
+      "DECISIONS.md",
+      "VAULT-CONVENTIONS.md"
+    ],
+    "conflict_precedence": [
+      "Logan direct instruction",
+      "CONSTITUTION.md",
+      "!/WAKEUP.md and !/AGENTS.md",
+      "swarm.json",
+      "generated bootstrap surfaces",
+      "historical notes and exploratory residue"
+    ],
+    "historical_rule": "Historical CrewAI harbor notes, abandoned branch artifacts, and exploratory scaffolds remain historical unless Logan or canonical governance explicitly reclassifies them.",
+    "scope_note": "Connector posture in this registry is local to IDAHO-VAULT. The broader LAF-US chamber and team topology lives in !/AGENTS.md and !/LAF-USB-FIVE-CORES-MIGRATION-2026-04-15.md."
+  },
+  "control_plane": {
+    "coordination_hub_issue": "LAF-25",
+    "scoped_issue": "LAF-28",
+    "system_roles": {
+      "github": "execution_transport",
+      "linear": "execution_state",
+      "slack": "ephemeral_breadcrumbs"
+    },
+    "scope_note": "GitHub, Linear, and Slack here describe the repo-local operating posture of IDAHO-VAULT, not the whole LAF-US world model."
+  },
+  "crewai_layer": {
+    "status": "refoundation",
+    "manifest": ".crewai/manifest.json",
+    "manifest_doc": ".crewai/MANIFEST.md",
+    "output_dir": "!/CREWAI/",
+    "runtime_class": "vault-contained local runtime slice",
+    "authority_boundary": "swarm.json registers the layer; canonical CrewAI topology and promotion rules are documented in .crewai/MANIFEST.md."
+  },
+  "agents": {
+    "antigravity": {
+      "id": "antigravity",
+      "name": "Antigravity CLI",
+      "vendor": "Google",
+      "dotfolder": ".antigravity",
+      "capability_tier": "Direct Write (Support)",
+      "instructions_file": "ANTIGRAVITY.md",
+      "autoload": false,
+      "context": {
+        "required": [
+          "CONSTITUTION.md",
+          "DECISIONS.md",
+          "VAULT-CONVENTIONS.md"
+        ],
+        "optional": [
+          "!/WAKEUP.md",
+          "!/AGENTS.md",
+          "LEVELSET.md"
+        ]
+      }
+    },
+    "claude-code": {
+      "id": "claude-code",
+      "name": "Claude Code",
+      "vendor": "Anthropic",
+      "dotfolder": ".claude",
+      "capability_tier": "Direct Write",
+      "instructions_file": ".claude/CLAUDE.md",
+      "autoload": true,
+      "context": {
+        "required": [
+          "CONSTITUTION.md",
+          "DECISIONS.md",
+          "VAULT-CONVENTIONS.md"
+        ],
+        "optional": [
+          "!/WAKEUP.md",
+          "!/AGENTS.md",
+          "LEVELSET.md"
+        ]
+      }
+    },
+    "codex-cli": {
+      "id": "codex-cli",
+      "name": "OpenAI Codex CLI",
+      "vendor": "OpenAI",
+      "dotfolder": ".codex",
+      "capability_tier": "Direct Write (scripting)",
+      "instructions_file": "AGENTS.md",
+      "autoload": true,
+      "context": {
+        "required": [
+          "CONSTITUTION.md",
+          "DECISIONS.md",
+          "VAULT-CONVENTIONS.md"
+        ],
+        "optional": [
+          "!/WAKEUP.md",
+          "!/AGENTS.md",
+          "LEVELSET.md"
+        ]
+      }
+    },
+    "deepseek": {
+      "id": "deepseek",
+      "name": "DeepSeek",
+      "vendor": "DeepSeek",
+      "dotfolder": ".deepseek",
+      "capability_tier": "Advisory",
+      "instructions_file": ".deepseek/DEEPSEEK.md",
+      "autoload": false,
+      "context": {
+        "required": [
+          "CONSTITUTION.md",
+          "DECISIONS.md",
+          "VAULT-CONVENTIONS.md"
+        ],
+        "optional": [
+          "!/WAKEUP.md",
+          "!/AGENTS.md",
+          "LEVELSET.md"
+        ]
+      }
+    },
+    "gemini-cli": {
+      "id": "gemini-cli",
+      "name": "Gemini CLI",
+      "vendor": "Google",
+      "dotfolder": ".gemini",
+      "capability_tier": "Direct Write (Support)",
+      "instructions_file": ".gemini/GEMINI.md",
+      "autoload": true,
+      "context": {
+        "required": [
+          "CONSTITUTION.md",
+          "DECISIONS.md",
+          "VAULT-CONVENTIONS.md"
+        ],
+        "optional": [
+          "!/WAKEUP.md",
+          "!/AGENTS.md",
+          "LEVELSET.md"
+        ]
+      }
+    },
+    "github-copilot": {
+      "id": "github-copilot",
+      "name": "GitHub Copilot",
+      "vendor": "Microsoft / GitHub",
+      "dotfolder": ".github",
+      "capability_tier": "Multi-Repo Admin",
+      "instructions_file": ".github/copilot-instructions.md",
+      "autoload": true,
+      "context": {
+        "required": [
+          "CONSTITUTION.md",
+          "DECISIONS.md",
+          "VAULT-CONVENTIONS.md"
+        ],
+        "optional": [
+          "!/WAKEUP.md",
+          "!/AGENTS.md",
+          "LEVELSET.md"
+        ]
+      }
+    },
+    "grok": {
+      "id": "grok",
+      "name": "Grok",
+      "vendor": "xAI",
+      "dotfolder": ".grok",
+      "capability_tier": "Read/Analysis",
+      "instructions_file": ".grok/GROK.md",
+      "autoload": false,
+      "context": {
+        "required": [
+          "CONSTITUTION.md",
+          "DECISIONS.md",
+          "VAULT-CONVENTIONS.md"
+        ],
+        "optional": [
+          "!/WAKEUP.md",
+          "!/AGENTS.md",
+          "LEVELSET.md"
+        ]
+      }
+    },
+    "mistral-vibe": {
+      "id": "mistral-vibe",
+      "name": "Mistral Vibe CLI",
+      "vendor": "Mistral AI",
+      "dotfolder": ".mistral",
+      "capability_tier": "Unclassified \u2014 awaiting Logan",
+      "instructions_file": ".mistral/MISTRAL.md",
+      "autoload": false,
+      "context": {
+        "required": [
+          "CONSTITUTION.md",
+          "DECISIONS.md",
+          "VAULT-CONVENTIONS.md"
+        ],
+        "optional": [
+          "!/WAKEUP.md",
+          "!/AGENTS.md",
+          "LEVELSET.md"
+        ]
+      }
+    },
+    "perplexity": {
+      "id": "perplexity",
+      "name": "Perplexity",
+      "vendor": "Perplexity AI",
+      "dotfolder": ".perplexity",
+      "capability_tier": "Read/Analysis",
+      "instructions_file": ".perplexity/PERPLEXITY.md",
+      "autoload": false,
+      "context": {
+        "required": [
+          "CONSTITUTION.md",
+          "DECISIONS.md",
+          "VAULT-CONVENTIONS.md"
+        ],
+        "optional": [
+          "!/WAKEUP.md",
+          "!/AGENTS.md",
+          "LEVELSET.md"
+        ]
+      }
+    },
+    "serena": {
+      "id": "serena",
+      "name": "Serena",
+      "vendor": "oraios / community",
+      "dotfolder": ".serena",
+      "capability_tier": "Support",
+      "instructions_file": ".serena/SERENA.md",
+      "autoload": false,
+      "context": {
+        "required": [
+          "CONSTITUTION.md",
+          "DECISIONS.md",
+          "VAULT-CONVENTIONS.md"
+        ],
+        "optional": [
+          "!/WAKEUP.md",
+          "!/AGENTS.md",
+          "LEVELSET.md"
+        ]
+      }
+    }
+  }
+}

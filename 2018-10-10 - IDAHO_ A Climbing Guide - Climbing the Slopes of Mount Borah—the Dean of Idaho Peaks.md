@@ -1,0 +1,50 @@
+---
+source: "https://www.idahoaclimbingguide.com/climbing-the-slopes-of-mount-borah-the-dean-of-idaho-peaks/"
+author:
+  - "[[Tom Lopez]]"
+published: 2018-10-10
+created: 2026-07-14
+---
+![](https://www.idahoaclimbingguide.com/wp-content/uploads/0E499422-EC83-4AC9-BFE1-C60E3C08D99D-1024x1024.jpeg)
+
+*Editor’s note: This article from The Idaho Statesman (February 10, 1935) was written by Lyman Marden, one of the participants in the 1934 USGS mapping of the 15-minute Mount Borah quadrangle.*
+
+---
+
+The Idaho Statesman (February 10, 1935).[![](https://www.idahoaclimbingguide.com/wp-content/uploads/14FE5E30-E6AE-4026-9D9A-9CD9DD09C0B8.jpeg)](https://www.idahoaclimbingguide.com/wp-content/uploads/14FE5E30-E6AE-4026-9D9A-9CD9DD09C0B8.jpeg)
+
+### By Lyman Marden
+
+During the season of 1934, the United States Geological Survey began the mapping of the Borah Peak quadrangle that includes about 900 square miles of territory around Mount Borah. In charge of the work as chief of party was Lee Morrison, topographic engineer, who first announced in 1929 that his calculations had identified an unnamed peak in the Pahsimeroi Mountains of the Lost River Range as being much higher than Mount Hyndman. It was officially named for Idaho’s famous senator, William E. Borah, about a year later.
+
+This veteran Idaho topographer returns each year to the state to advance the mapping of many sections, and each year a great fund of information becomes accessible to parties interested in the terrain covered. This is a part of the plan to eventually map the entire United States on a practical, useful scale. The map of this quadrangle will be of great use to the Forest Service in the Lemhi National Forest and to ranchers and agencies in the area.
+
+For general information, it now becomes known that Idaho has several peaks that are higher than Mount Hyndman. From memory these are as follows: Mount Borah (12,655 feet); Leatherman Peak (12,230 feet); Diamond Peak (12,200 feet). Diamond Peak is in the Little Lost River Mountains \[Lemhi Range\] and, out of curiosity, we calculated its elevation. Since this was done from a distance of 20 miles, it may be slightly in error but hardly enough, we think, to change its allocation among the high points. Then comes Mystery Peak \[Mount Idaho\] at 12,120 feet and after that, so far as we now know, comes Mount Hyndman at 12,078 feet. Mystery Peak is our name for a mountain peak next to Mount Borah and we so named it because of its elusive-appearing summit. From no two views does it look the same and at first we thought it must have a double summit, but later learned that its shape gives it a different skyline from the varied views.
+
+Among the states’ highest points in the United States, Mount Borah is ninth in elevation, eight states having as high points a peak of greater elevation than Idaho. All these high points are in the west. As a graphic example, there is no elevation east of the Rockies that quite comes up to the altitude of Shafer Peak, just north of Boise, at 7,591 feet.
+
+To make up the engineering party that would begin the accumulation of these facts, men were assembled from various points in the state by orders from H. H. Hodges, division engineer in Sacramento, California (his initials distinctive in repetition), arranged quickly a party of absolute strangers whose only common bond was engineering and orders from H. H. H.
+
+L.C. Walker of Twin Falls and the author unknowingly rode the same train into Salt Lake to meet the chief and Mrs. Morrison. From there, we took two trucks and supplies back into Idaho and on to Mackay where we met F.F. Hayford of Boise, who had been ordered to meet us there. Additional supplies came from the survey stores in Idaho Falls and a reserve warehouse in Challis. L.V. Carothers from the East Fork of the Salmon met us in the first camp with horses and packs. Accompanying him came Jim Bruce of Challis and the party had come together as smoothly as synchronized cogwheels.
+
+From this first camp at the foot of Mount Borah, the work began in earnest. We had already begun the mapping and some of the Lost River Range was taking form in contours on the paper. For persons familiar with the country the south edge of the quadrangle runs just behind Mount McCaleb and north of Mackay and crosses the Lost River Valley cornering south of Chilly. From memory again, Mount McCaleb is 11,595 feet high. From this baseline, the map is a square (30 miles on a side) running northward and taking in most of the Pahsimeroi Valley and part of the Little Lost drainage. \[Note: these surveyors were working on a 15-minute quadrangle.\]
+
+The interest of the entire party in the climbing of Mount Borah became evident as soon as camp was settled. The pros and cons of possible routes of ascent were argued on many occasions, but we were delayed many times in our plans due to inclement weather. The season was peculiar and good weather was imperative so that we might take the instruments, set the benchmark on top and take pictures.
+
+In the meantime, the work gathered momentum through practice and we were soon up to top speed. Moves of the camp and numerous side camps brought all the many the distinct features to light while the map grew like a living thing. Thus, we studied the ascending mountains as they gradually gain altitude to culminate in the state’s highest point. After reaching Mount Borah they drop off about 1,500 feet and descend toward the Salmon River.
+
+In the glacial canyons on the Pahsimeroi side, we read the reason why a limestone peak tops Idaho’s basic granite. A very ancient lake bottom of water deposit limestone has been blown upward by a mighty volcanic upheaval that left markings of its power on the faces of sheer mountain walls. Glaciers and violent storms gouged and tore at the mountains until now we may see a range marked differently on all sides and interesting things appear in secluded parts. Several high mountain lakes occupy glacial basins under the sides of Mount Borah and their outlets plunge down hundreds of feet of swift cataracts to the Pahsimeroi River. Much rough and picturesque country may be found under Leatherman Peak and that mountain itself should be a very interesting climb for those so inclined.
+
+Of course only a few miles away, Mount Borah rises more than 400 feet higher and takes primary interest. For those who might like to stand some day on the top of Idaho, the peak stands in full view about four miles east of the Al West Ranch at Dickey. It would be a good idea to get directions there before attempting the ascent. Dickey is situated about halfway between Challis and Mackay on the highway and from there one may drive to the foot of the peak.
+
+Our camp was placed at the Birch Springs at the mouth of an open draw on September 12 and we began the climb the next day. Contrary to the reputation of the number, the 13th was a perfect day. It would have been quite impossible to have picked a better.
+
+Straight back of camp the four of us making the climb took our course up the draw to ascend the headwall. On its top, we made our first instrument set-up and checked our elevation at 9,000 feet. From there we approached the edge of a great basin gouged back into the mass of the peak and, after observing it carefully, swung eastward around its edge. Over pinnacles in this edge, as we came close under 12,000 feet, we had our first real climbing. Below, the talus slopes had been fairly uniform though sometimes hard walking presented no other difficulties. Now, however, we were on a ridge that projected shale down steep sides as fast as it loosened weathered limestone is sharp as to edge and treacherous footholds for it loosens easily.
+
+It is not our intention to brand the climb as very dangerous or difficult. No special equipment is necessary but ordinary precautions must be taken. The average man should make the top in about six hours or less. Two famous mountain climbers made it in four hours under adverse conditions. Their names are Miriam Underhill and Robert Underhill of Boston, Massachusetts and they are registered at the top.
+
+Past the knife edge of the ridge, the footing seemed easier and we climbed in a slight curve to come upon the top from a little in back. Close under the rock cairn that marks the exact high point, the footing was again insecure and many large rocks that we trusted with our weight suddenly fell away and bounded into space to shatter far below. We gained the top with no mishap, however, and with excellent weather were able to enjoy the view that is unequalled in the state. Idaho’s mountains stretch out in range on range until the earth meets the sky, while under the peak, the valleys appear small and insignificant. All the territory we had worked was but a drop in the bucket compared to the miles to be seen.
+
+But our time on top was short. We hurriedly set the benchmarks tablet, that may be found from now on at the base of the rock cairn. While the camera registered every angle of the view. Just an hour and 45 minutes we spent at this spot that we had looked forward to gaining all season and then took up our packs for the descent. We were finishing a record season. When ready for distribution, the Borah Peak quadrangle gives Idaho an other important survey of interesting country.[![](https://www.idahoaclimbingguide.com/wp-content/uploads/5440FD16-5269-4B9C-BC89-A6F6B38DEEDF.jpeg)](https://www.idahoaclimbingguide.com/wp-content/uploads/5440FD16-5269-4B9C-BC89-A6F6B38DEEDF.jpeg)
+
+[![](https://www.idahoaclimbingguide.com/wp-content/uploads/26EC21AB-E7DC-49F9-86E5-B77AE6663028.jpeg)](https://www.idahoaclimbingguide.com/wp-content/uploads/26EC21AB-E7DC-49F9-86E5-B77AE6663028.jpeg) [![](https://www.idahoaclimbingguide.com/wp-content/uploads/D7924D73-4B8C-4722-AD66-2775B4AC438B.jpeg)](https://www.idahoaclimbingguide.com/wp-content/uploads/D7924D73-4B8C-4722-AD66-2775B4AC438B.jpeg)

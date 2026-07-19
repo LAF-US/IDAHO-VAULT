@@ -1,0 +1,69 @@
+---
+outlet: null
+url: https://lithub.com/breaking-david-lynch-has-thoughts-on-the-dark-side-of-1950s-suburbia/
+author:
+- David Lynch
+related:
+- ABC
+- Alexandria
+- Boise
+- Drive
+- Shoshone
+- Untitled
+- Virginia
+- Willard
+- books
+- fish
+- irrigation
+- nurses
+- police
+- window
+authority: LOGAN
+---
+[Literary Hub](https://lithub.com/)
+
+[![Literary Hub](https://s26162.pcdn.co/wp-content/themes/lithub-prime/img/logo-compact.png)](https://lithub.com/)
+
+![](https://s26162.pcdn.co/wp-content/uploads/2018/07/Untitled-design-2.jpg "David Lynch on the Dark Side of Fifties Suburbia")
+
+## Bombs, Bullets, and Amputated Feet, Obviously
+
+That 1950s small-town thing, it’s different, and to catch that mood is important. It’s dreamy, that’s what it is. The 50s mood isn’t completely positive, though, and I always knew there was stuff going on. When I was out after dark and going around on my bike, some houses had lights on inside that were kind of warm, or I knew the people who lived in the house. Other houses, the lights were dim, and with some houses they were almost out and I didn’t know the people who lived there. I’d get a feeling from these houses of stuff going on that wasn’t happy. I didn’t dwell on it, but I knew there were things going on behind those doors and windows.
+
+I was out one night with my brother and we were down at the end of the street. Everything is lit up at night now, but in the 50s in small towns like Boise, there were streetlights, but they were dimmer and it was much darker. It makes night kind of magical because things just go into black. So, we were down at the end of this street at night, and out of the darkness—it was so incredible—came this nude woman with white skin. Maybe it was something about the light and the way she came out of the darkness, but it seemed to me that her skin was the color of milk, and she had a bloodied mouth. She couldn’t walk very well and she was in bad shape, and she was completely naked. I’d never seen that, and she was coming toward us but not really seeing us. My brother started to cry and she sat down on the curb. I wanted to help her but I was young and didn’t know what to do. I might’ve asked, Are you okay? What’s wrong? But she didn’t say anything. She was scared and beat up, but even though she was traumatized, she was beautiful.
+
+I didn’t see my friends every time I left the house on Parke Circle Drive. One day I went out and it was kind of a cloudy day and it might’ve been early in the morning. The next house over from the Smiths’ was the Yontz family’s, and the Smith lawn sort of blended with the Yontz lawn, and between the two houses was a little space with bushes on one side and a fence on the other and a gate that opened to a dead-end street. Sit­ting on the ground on this side of the gate was this kid I’d never seen before, and he was crying. I went over to him and I said, “Are you okay,” but he didn’t answer me. So I moved closer to him and asked him what happened and he said, “My father died.” He was crying so hard he could hardly get the words out and the way he said it just killed me. I sat down next to him for a little bit but I realized I couldn’t help him. Death is far away and abstract when you’re a child, so you don’t worry about it so much, but I felt this thing with that kid that was just horrible.
+
+Article continues after advertisement
+
+Up on Vista Avenue were all kinds of little stores, like hobby shops and hardware stores, and we got stuff there to build bombs. We learned how to make pipe bombs, and we made three of them in Riley Cutler’s basement, and they were powerful. Riley blew up one of them on his own near this big irrigation canal and he said it was incredible. I threw the second one in front of Willard Burns’s house. We all played baseball so we had good arms, and I threw this thing really high; it came down, it hit and bounced up, but it didn’t go off. So I threw it again, and this time when it hit the ground it bounced up and blew like crazy. It turned this pipe into shrapnel and blew a board off of Gordy Templeton’s fence next door. Gordy was on the throne while this was going on and he came out pulling his pants up, holding toilet paper. We said, Wait a minute, this could’ve killed some­body or blown our heads off, so we threw the last one in an empty swim­ming pool, where it could detonate and not hurt anybody.
+
+“I didn’t dwell on it, but I knew there were things going on behind those doors and windows.”
+
+It made a huge noise when it exploded in the pool, so Gordy and I go one way and everybody else went the other way. I went to Gordy’s house, and his living room had a huge picture window looking out to the front. We’re there on the couch and Mrs. Templeton made tuna fish sand­wiches and chips, which is something I never encountered at home un­less they were on top of a tuna fish casserole. Those were the only chips I ever had. And no sweets except maybe oatmeal cookies with raisins. Healthy stuff. Anyhow, we’re having our sandwiches, and then gliding into view outside the picture window was a gold and black and white giant motorcycle and a giant cop. He put his helmet under his arm and walked to the door and rang the bell and he took us to the station. I was the seventh-grade president, and I had to write a paper for the police on the duties and obligations of leadership.
+
+I got in trouble for other stuff. My sister, Martha, was in elementary school when I was in junior high, and she had to walk by the junior high to get to school. I told my dear little sister that when she walked by the junior high she should stick up her middle finger at people be­cause that meant friendship. I don’t know if she ever did it, but she asked my dad about it and he got really upset with me. Another time this kid stole a bunch of.22 bullets from his father and he gave me some of them. They have such great weight,.22 bullets; they’re sort of like little jewels. I kept them for a while, then I started thinking I’d get in trouble for having them, so I wadded them up in newspaper, put them in a bag, and threw them in the trash. In the winter my mother would burn trash in the fireplace, so she put all this paper in the fireplace and lit it and pretty soon bullets started flying all around the liv­ing room. I got in trouble for that.
+
+One day we were having a badminton tournament in the back of the Smiths’ house and we heard this giant explosion and ran to the street, and we saw smoke rising at the end of the block. We walked down and there was this guy named Jody Masters who was older than us. Jody Mas­ters was building a rocket out of a pipe and it accidentally ignited and cut his foot off. His mother, who was pregnant, came out, and she saw her oldest son and he couldn’t get up. He tried, but his foot was hanging by tendons in a pool of blood and billions of burned-out match heads. They sewed his foot back on and it was fine. There was a lot of bomb building and gasoline-powered things in Boise.
+
+We left Boise and moved to Alexandria, Virginia, after I finished eighth grade, and I was upset when we moved from Boise. I can’t express how upset I was, and it was the end of an era—my brother is right when he says that’s when the music stopped. Then, the summer after ninth grade, my mother and sister and brother and I went back to Boise on the train.
+
+My grandfather Lynch died that summer, and I was the last person to see him alive. He’d had his leg amputated and it never really healed be­cause he had such bad hardening of the arteries, so he was staying in a regular neighborhood house with five or six other people, being taken care of by nurses. My mother and grandmother visited him every day, but one day they couldn’t go, and they said, “David, would you go visit your grandfather today because we can’t go?” and I said yes.
+
+Some of the day went by and it got late, then I remembered about visiting him, so I borrowed a bike from this kid in front of the South Junior High swim­ming pool and I rode out Shoshone Street. There he was in a wheelchair out in the front yard, getting some air. So I sat with him and we had a really great talk. I can’t remember what we talked about—maybe I asked him some questions about the old days, and there were some stretches where nobody talked—but I always loved just sitting with him. Then he said, “Well, Dave, I better go back in now,” and I said, “Okay, Grand­dad.” I got on my bike, and as I was riding away I look back and I see nurses coming out to get him. I’m riding down the street and I get to a green wooden garage that blocks my view, so the last thing I see is some nurses coming toward him.
+
+From there I went to Carol Robinson’s house because her cousin, Jim Barratt, had built a bomb as big as a basketball and he was going to set it off. He set the bomb in the freshly mowed backyard and it smelled so beautiful. I haven’t smelled that in a really long time and don’t know of any mowed lawns around here in L.A. Anyhow, there was a porcelain washbowl about a foot and a half in diameter, and he set it on top of the bomb and lit the fuse and this thing went off like you cannot fuckin’ believe. It blew this dish two hundred feet in the air, it blew dirt every­where, and smoke was coming out of the lawn in a really beautiful way ten or fifteen feet out. It was an amazing thing that I saw.
+
+Then some moments pass and I hear sirens and think maybe the po­lice are on their way, so I hightail it to the pool and give the kid’s bike back to him. As I’m walking home to my grandparents’ apartment, I see my mother out in the front. She was headed to the car, but when she saw me she started waving wildly, so I go faster and I get to her and say, “What is it?” She says, “It’s your grandfather.” I drove her fast to a hospi­tal in downtown Boise where my grandfather was, and I double-parked and my mother went in. She came out 15 minutes later and I could immediately tell something was wrong, and when she got in the car she said, “Your grandfather died.”
+
+I’d been with him just 15 minutes before it happened. When he said, “Dave, I better go back in now,” I’m pretty sure, playing it back, that something was going wrong in him—I think he had internal bleeding—and he didn’t want to say it in front of me. That night I sat with my grandmother and she wanted to hear all about my visit with him. Later I put two and two together and I realized those sirens weren’t for the bomb; they were going to get my grandfather. I was very close to my grandparents, all four of them, and he was the first one I lost, and I loved him so much. It was a huge thing for me when my grandfather Lynch died.
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+![](https://s26162.pcdn.co/wp-content/uploads/2018/07/room-to-dream-david-lynch.jpeg)
+
+*From* [Room to Dream](https://www.penguinrandomhouse.com/books/545016/room-to-dream-by-david-lynch-and-kristine-mckenna/9780399589195/). *Used with permission of Random House. Copyright © 2018 by David Lynch and Kristine McKenna.*
+
+#### David Lynch
+
+David Lynch advanced to the front ranks of international cinema in 1977 with the release of his first film, the startlingly original *Eraserhead*. Since then, Lynch has been nominated for two best director Academy Awards for *The Elephant Man* and *Blue Velvet*, was awarded the Palme d’Or for *Wild at Heart*, swept the country with *Twin Peaks* mania in 1990 when his groundbreaking television series premiered on ABC, and has established himself as an artist of tremendous range and wit. He is the author of a previous book on Transcendental Meditation, *Catching the Big Fish*.
