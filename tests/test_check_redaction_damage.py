@@ -12,8 +12,9 @@ def _load_checker():
     project_root = Path(__file__).resolve().parents[1]
     script_path = project_root / ".github" / "scripts" / "check_redaction_damage.py"
     spec = importlib.util.spec_from_file_location("redaction_damage_test_module", script_path)
+    if spec is None or spec.loader is None:
+        raise ImportError(f"Failed to load spec for {script_path}")
     module = importlib.util.module_from_spec(spec)
-    assert spec.loader is not None
     sys.modules[spec.name] = module
     spec.loader.exec_module(module)
     return module
