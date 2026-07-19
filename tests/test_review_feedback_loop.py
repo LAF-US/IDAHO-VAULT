@@ -808,6 +808,29 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertIn("merge conflict", arm_error)
         run.assert_called_once_with(["gh", "pr", "merge", "21", "--merge", "--auto"])
 
+    def test_arm_auto_merge_aggregates_notes_when_branch_update_and_enqueue_both_fail(
+        self,
+    ) -> None:
+        # Both failure notes must survive the join — neither overwrites the other.
+        with mock.patch.object(
+            review_feedback_loop, "_auto_merge_state", return_value=(False, False)
+        ), mock.patch.object(
+            review_feedback_loop, "_merge_state_status", return_value="BEHIND"
+        ), mock.patch.object(
+            review_feedback_loop, "_update_branch", return_value=(False, "merge conflict")
+        ), mock.patch.object(
+            review_feedback_loop, "_pr_node_id", return_value="PR_node23"
+        ), mock.patch.object(
+            review_feedback_loop, "_enqueue_pr", return_value=(False, "enqueue error")
+        ), mock.patch.object(review_feedback_loop, "_run") as run:
+            enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 23)
+        self.assertTrue(enabled)
+        self.assertIn("branch update (BEHIND) failed", arm_error)
+        self.assertIn("merge conflict", arm_error)
+        self.assertIn("enqueue was rejected", arm_error)
+        self.assertIn("enqueue error", arm_error)
+        run.assert_called_once_with(["gh", "pr", "merge", "23", "--merge", "--auto"])
+
     def test_arm_auto_merge_checks_behind_even_when_already_enabled(self) -> None:
         # A PR can already be armed and still fall BEHIND later — the BEHIND check does not
         # depend on `enabled`, so this must still trigger an update-branch attempt.
@@ -843,6 +866,14 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             )
         with mock.patch.object(
             review_feedback_loop, "_graphql", side_effect=RuntimeError("boom")
+        ):
+            self.assertEqual(
+                review_feedback_loop._merge_state_status("o", "r", 9), "UNKNOWN"
+            )
+        with mock.patch.object(
+            review_feedback_loop,
+            "_graphql",
+            return_value={"repository": {"pullRequest": {"mergeStateStatus": None}}},
         ):
             self.assertEqual(
                 review_feedback_loop._merge_state_status("o", "r", 9), "UNKNOWN"
