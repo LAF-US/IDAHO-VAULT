@@ -1,37 +1,27 @@
 {
   "integrations": {
-    "claude": {
-      "models": [
-        "qwen3.5:cloud"
-      ]
-    },
     "codex": {
       "models": [
-        "kimi-k2.5:cloud"
+        "devstral"
       ]
     },
-    "copilot": {
+    "hermes": {
       "models": [
-        "kimi-k2.5:cloud"
-      ]
+        "kimi-k2.6:cloud"
+      ],
+      "onboarded": true
     },
     "openclaw": {
       "models": [
-        "kimi-k2.5:cloud",
-        "minimax-m2.7:cloud",
-        "qwen3.5:cloud"
-      ]
-    },
-    "opencode": {
-      "models": [
-        "kimi-k2.5:cloud"
+        "mistral-large",
+        "qwen3.5"
       ]
     },
     "pi": {
       "models": [
-        "gemma4"
+        "minimax-m2.7:cloud"
       ]
     }
   },
-  "last_selection": "run"
+  "last_selection": "pi"
 }

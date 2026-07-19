@@ -127,4 +127,4 @@ Lay the two named figures over the Toymaker's announcement and they snap togethe
 - **Author:** `*.claude.*` (Claude Code, branch `claude/self-asterisk`)
 - **Scope:** root general witness — the mask on the throne / the counterfeit apex (the Sphinx collapsed into Anorak via the Toymaker-as-President) in the Game Over cluster
 
-###### [["The world is quiet here."]]
+###### "The world is quiet here."

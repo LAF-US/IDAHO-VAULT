@@ -230,4 +230,4 @@ of truth** for all location-based risk, folding the three drifting lists (`PROTE
 `auto-merge-rhythm.yml` `case` list) into the one classifier the rest of the system already trusts.
 Not built; recorded — a bearing for the refactor.
 
-###### [["The world is quiet here."]]
+###### "The world is quiet here."

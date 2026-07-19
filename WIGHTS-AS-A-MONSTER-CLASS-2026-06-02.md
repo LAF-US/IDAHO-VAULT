@@ -87,4 +87,4 @@ Both are the dead made to keep moving. One *seizes* the persistence; the other *
 
 ---
 
-###### [["The world is quiet here."]]
+###### "The world is quiet here."
