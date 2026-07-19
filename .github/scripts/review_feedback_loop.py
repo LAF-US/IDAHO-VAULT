@@ -119,8 +119,8 @@ RISK_FLAG_LABELS = frozenset({RISK_LOW_LABEL, RISK_HIGH_LABEL})
 # engine clears the fired flag (restamps that axis to its `—`) and the PR flows.
 # depth:risk/nope is never auto-cleared — the still point asks for the sovereign's own hand.
 # The sparse single labels above (risk/low, risk/high, risk/—) are the LEGACY vocabulary,
-# still recognized as a fallback and still stamped during the transition (dependabot-rhythm
-# keys on risk/high); the pair takes precedence when present.
+# still recognized and stamped as the fallback the engine's own pair reader
+# (_risk_pair_for_pr) resolves; the pair takes precedence when present.
 FILETYPE_AXIS_PREFIX = "filetype:risk/"
 DEPTH_AXIS_PREFIX = "depth:risk/"
 AXIS_DASH = "—"
@@ -1028,9 +1028,9 @@ def restamp_risk_pair(
 ) -> list[str]:
     """Make the PR's risk labels mirror the classifier's verdict — the K6 'restamp'.
 
-    Stamps the axis pair AND keeps the legacy sparse vocabulary in sync during the
-    transition (dependabot-rhythm still keys on risk/high; the K4 global exclusion —
-    risk/— XOR flags — holds by construction because the derived tier is single-valued).
+    Stamps the axis pair AND keeps the legacy sparse vocabulary in sync as the engine's
+    own fallback (_risk_pair_for_pr); the K4 global exclusion — risk/— XOR flags — holds
+    by construction because the derived tier is single-valued).
     Mutates ``labels`` in place and returns the actions taken."""
     actions: list[str] = []
     tier = _tier_from_pair(filetype_flag, depth_flag, True)
