@@ -10,11 +10,16 @@
 # Codacy's own documented convention for this action:
 # https://github.com/codacy/codacy-coverage-reporter-action
 #
-# The report-generation and upload steps run with `if: always()` after the
-# test step so a coverage number still gets reported even on a run where a
-# test failed -- coverage trend tracking is independent of pass/fail, and a
-# red test run losing its coverage data too would make the Codacy history
-# gappy for no reason.
+# The report-generation and upload steps run whenever the test step was
+# actually reached (pass or fail) -- via `id: tests` +
+# `!cancelled() && steps.tests.conclusion != 'skipped'` -- so a coverage
+# number still gets reported even on a run where a test failed (coverage
+# trend tracking is independent of pass/fail, and a red test run losing its
+# coverage data too would make the Codacy history gappy for no reason), but
+# NOT when the workflow is cancelled or a prior setup step (checkout, uv
+# sync) failed and the test step never ran at all -- avoids a confusing
+# cascading failure from `coverage xml`/the upload trying to run against an
+# environment or coverage data that was never produced.
 
 name: Codacy Coverage Reporter
 
@@ -46,14 +51,15 @@ jobs:
         run: uv sync
 
       - name: Run test suite under coverage
+        id: tests
         run: uv run coverage run -m unittest discover -s tests -p "test_*.py" -v
 
       - name: Generate coverage XML report
-        if: always()
+        if: ${{ !cancelled() && steps.tests.conclusion != 'skipped' }}
         run: uv run coverage xml
 
       - name: Upload coverage to Codacy
-        if: always()
+        if: ${{ !cancelled() && steps.tests.conclusion != 'skipped' }}
         uses: codacy/codacy-coverage-reporter-action@89d6c85cfafaec52c72b6c5e8b2878d33104c699 # v1.3.0
         with:
           project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
