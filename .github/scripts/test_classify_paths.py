@@ -63,7 +63,7 @@ class ClassifyFileTest(unittest.TestCase):
 
     def test_protected_surfaces_pinned_high(self):
         # Placement pins high; the filetype axis still speaks for itself (yml=low, py=med).
-        self.assertEqual(cp.classify_file(".github/workflows/auto-merge-rhythm.yml"), ("low", "high"))
+        self.assertEqual(cp.classify_file(".github/workflows/auto-merge-engage.yml"), ("low", "high"))
         self.assertEqual(cp.classify_file(".github/scripts/classify_paths.py"), ("med", "high"))
         self.assertEqual(cp.classify_file("CONSTITUTION.md"), (None, "high"))
         self.assertEqual(cp.classify_file("AGENTS.md"), (None, "high"))
@@ -96,16 +96,17 @@ class ClassifyFileTest(unittest.TestCase):
         # by the split (a Nest .py was high before and is high now).
         self.assertEqual(cp.combine("med", "high"), "high")
 
-    def test_retired_rhythm_glob_surfaces_all_pinned_high(self):
-        # K1/K2 (#627/#628) equivalence guard: auto-merge-rhythm.yml retired its hand-
-        # maintained protected-path glob and now defers to this classifier's placement axis
-        # (`depth`), NOT `tier` — `tier` folds in filetype, so a med maze file like uv.lock
-        # reads tier=high but depth=None and must stay eligible; keying on tier would
-        # reintroduce the fail-closed-on-lockfiles bug. Every surface that glob protected MUST
-        # still score a protected placement here, or the collapse would open auto-merge on a
-        # formerly-protected path. One representative per retired glob entry; this fails loud
-        # if the single source ever stops covering one of them.
-        retired_glob_representatives = [
+    def test_protected_glob_surfaces_all_pinned_high(self):
+        # K1/K2 (#627/#628) single-source guard: the classifier's placement axis (`depth`) is
+        # the ONE source of protected-surface truth — the hand-maintained protected-path globs
+        # that used to live in the auto-merge lanes are retired (the lanes themselves now too).
+        # The engine keys arming on `depth` (in {high, nope}), NOT `tier` — `tier` folds in
+        # filetype, so a med maze file like uv.lock reads tier=high but depth=None and must
+        # stay eligible; keying on tier would reintroduce the fail-closed-on-lockfiles bug.
+        # Every surface those globs protected MUST still score a protected placement here, or
+        # the collapse would open auto-merge on a formerly-protected path. One representative
+        # per entry; this fails loud if the single source ever stops covering one of them.
+        protected_glob_representatives = [
             ".github/workflows/deploy.yml",   # .github/workflows/*
             ".github/scripts/tool.py",        # .github/scripts/*
             ".codex/CODEX.md",                # .codex/*
@@ -117,19 +118,20 @@ class ClassifyFileTest(unittest.TestCase):
             "swarm.json",                     # swarm.json
             "!/anything.md",                  # !/*
         ]
-        # The workflow keys on the placement axis firing at all (depth in {high, nope}) —
+        # The engine keys on the placement axis firing at all (depth in {high, nope}) —
         # NOT tier — so a med-filetype maze file (uv.lock) stays eligible. Assert the exact
-        # predicate the workflow reads.
-        for path in retired_glob_representatives:
+        # predicate the engine reads.
+        for path in protected_glob_representatives:
             with self.subTest(path=path):
                 _filetype, depth = cp.classify_file(path)
                 self.assertIn(depth, ("high", "nope"),
                               f"{path} must stay a protected placement (depth high/nope)")
 
-    def test_dep_sync_lockfiles_stay_eligible_placement_clear(self):
-        # Guard the K1/K2 collapse against the fail-open twin: the sync-bot's own dependency
-        # files must NOT read as a protected placement, or the rhythm bot would never arm its
-        # own PRs. uv.lock is filetype=med (unknown .lock), but placement is clear (depth None).
+    def test_dep_sync_lockfiles_placement_clear(self):
+        # Guard the K1/K2 collapse against the fail-open twin: dependency lockfiles must NOT
+        # read as a protected placement, or the engine would score them depth=high and hold
+        # them as protected. uv.lock is filetype=med (unknown .lock), placement clear (depth
+        # None) — so a dep-sync PR routes through the engine by filetype, not blocked as Nest.
         for path in ("requirements.txt", "uv.lock"):
             with self.subTest(path=path):
                 _filetype, depth = cp.classify_file(path)
