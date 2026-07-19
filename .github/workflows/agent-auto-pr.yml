@@ -171,8 +171,8 @@ jobs:
           # K6/#632: stamp the LANE — the pair of axis labels, one per independent
           # analysis. The `—/—` pair arms on open (K3/#629); a fired flag routes the PR
           # into its review lane and is consumed when that review completes. The legacy
-          # sparse marker (risk/— | risk/low | risk/high) is kept in sync during the
-          # transition (dependabot-rhythm keys on risk/high); the pair takes precedence.
+          # sparse marker (risk/— | risk/low | risk/high) is kept in sync as the engine's
+          # own legacy fallback (review_feedback_loop._risk_pair_for_pr); pair takes precedence.
           PAIR_FT_LABEL="filetype:risk/$RISK_FILETYPE"
           PAIR_DP_LABEL="depth:risk/$RISK_DEPTH"
           if [ "$RISK_TIER4" = "clear" ]; then
