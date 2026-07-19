@@ -5,7 +5,7 @@ on:
     inputs:
       pr_number:
         description: 'Pull Request Number'
-        required: false
+        required: true
 
 permissions:
   pull-requests: write
