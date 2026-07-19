@@ -1,0 +1,51 @@
+logan@Logans-MBP ~ % hermes gateway status
+Launchd plist: /Users/logan/Library/LaunchAgents/ai.hermes.gateway.plist
+✓ Service definition matches the current Hermes install
+✓ Gateway service is loaded
+{
+	"StandardOutPath" = "/Users/logan/.hermes/logs/gateway.log";
+	"LimitLoadToSessionType" = "Aqua";
+	"StandardErrorPath" = "/Users/logan/.hermes/logs/gateway.error.log";
+	"Label" = "ai.hermes.gateway";
+	"OnDemand" = true;
+	"LastExitStatus" = 15;
+	"PID" = 60634;
+	"Program" = "/Users/logan/.hermes/hermes-agent/venv/bin/python";
+	"ProgramArguments" = (
+		"/Users/logan/.hermes/hermes-agent/venv/bin/python";
+		"-m";
+		"hermes_cli.main";
+		"gateway";
+		"run";
+		"--replace";
+	);
+};
+
+logan@Logans-MBP ~ %   hermes config set DISCORD_HOME_CHANNEL 1495651518760882198                                                                                
+     hermes gateway restart                                                                                                                                      
+     hermes gateway status
+✓ Set DISCORD_HOME_CHANNEL = 1495651518760882198 in /Users/logan/.hermes/config.yaml
+✓ Service restarted
+Launchd plist: /Users/logan/Library/LaunchAgents/ai.hermes.gateway.plist
+✓ Service definition matches the current Hermes install
+✓ Gateway service is loaded
+{
+	"StandardOutPath" = "/Users/logan/.hermes/logs/gateway.log";
+	"LimitLoadToSessionType" = "Aqua";
+	"StandardErrorPath" = "/Users/logan/.hermes/logs/gateway.error.log";
+	"Label" = "ai.hermes.gateway";
+	"OnDemand" = true;
+	"LastExitStatus" = 15;
+	"PID" = 69738;
+	"Program" = "/Users/logan/.hermes/hermes-agent/venv/bin/python";
+	"ProgramArguments" = (
+		"/Users/logan/.hermes/hermes-agent/venv/bin/python";
+		"-m";
+		"hermes_cli.main";
+		"gateway";
+		"run";
+		"--replace";
+	);
+};
+
+logan@Logans-MBP ~ % 

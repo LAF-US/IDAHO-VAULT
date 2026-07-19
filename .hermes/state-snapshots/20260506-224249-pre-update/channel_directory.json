@@ -1,0 +1,39 @@
+{
+  "updated_at": "2026-05-06T16:40:34.807759",
+  "platforms": {
+    "discord": [],
+    "telegram": [
+      {
+        "id": "8632491209",
+        "name": "Logan Finney",
+        "type": "dm",
+        "thread_id": null
+      }
+    ],
+    "whatsapp": [
+      {
+        "id": "154443416871041@lid",
+        "name": "Logan Finney",
+        "type": "dm",
+        "thread_id": null
+      }
+    ],
+    "slack": [],
+    "signal": [],
+    "mattermost": [],
+    "matrix": [],
+    "homeassistant": [],
+    "email": [],
+    "sms": [],
+    "dingtalk": [],
+    "feishu": [],
+    "wecom": [],
+    "wecom_callback": [],
+    "weixin": [],
+    "bluebubbles": [],
+    "qqbot": [],
+    "yuanbao": [],
+    "irc": [],
+    "teams": []
+  }
+}

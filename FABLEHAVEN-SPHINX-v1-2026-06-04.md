@@ -226,4 +226,4 @@ necessity (only the enemy could know).
   authority-laundering / pretextual-custody frame, pawns-without-principal, and
   detection-from-the-adversary-side. The Architect holds the verdict.
 
-###### [["The world is quiet here."]]
+###### "The world is quiet here."

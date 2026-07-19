@@ -81,4 +81,4 @@ That frame is supplied two ways:
 
 ---
 
-###### [["The world is quiet here."]]
+###### "The world is quiet here."

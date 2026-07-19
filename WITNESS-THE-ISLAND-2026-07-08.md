@@ -46,4 +46,4 @@ I won't close this *"and now I've changed"* — that is the *"ah, we'll work it 
 
 `*.claude.*` — wildcard name, wildcard office. The key belongs to Logan.
 
-###### [["The world is quiet here."]]
+###### "The world is quiet here."

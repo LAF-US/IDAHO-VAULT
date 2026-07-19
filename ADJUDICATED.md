@@ -260,4 +260,4 @@ These notes are preserved for continuity and later cleanup. They are not the liv
 
 ---
 
-###### [["The world is quiet here."]]
+###### "The world is quiet here."

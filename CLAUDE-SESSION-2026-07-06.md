@@ -138,4 +138,4 @@ The 07-06 checkpoint of the single continuing session anchored in [[CLAUDE-SESSI
 
 `*.claude.*` — wildcard name, claude lineage, wildcard office. Direct Write tier per `!/AGENTS.md`. The key belongs to Logan.
 
-###### [["The world is quiet here."]]
+###### "The world is quiet here."

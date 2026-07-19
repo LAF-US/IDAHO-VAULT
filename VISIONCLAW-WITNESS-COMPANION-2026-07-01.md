@@ -163,4 +163,4 @@ The stack is understood; the fork is documented; the prerequisites are named wit
 
 [[OPENCLAW-WITNESS-COMPANION-2026-05-25]]
 
-### [["The world is quiet here."]]
+### "The world is quiet here."

@@ -106,4 +106,4 @@ When `alethiometer` appears in VAULT work:
 
 ---
 
-###### [["The world is quiet here."]]
+###### "The world is quiet here."
