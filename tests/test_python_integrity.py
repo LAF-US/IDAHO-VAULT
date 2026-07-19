@@ -60,6 +60,42 @@ def test_interactive_subprocess_can_be_explicitly_exempted(tmp_path: Path) -> No
     assert findings == []
 
 
+def test_aliased_subprocess_import_is_flagged(tmp_path: Path) -> None:
+    path = tmp_path / "aliased.py"
+    path.write_text(
+        "import subprocess as sp\nsp.run(['git', 'status'], timeout=30)\n",
+        encoding="utf-8",
+    )
+
+    findings = checker.python_file_findings(path)
+
+    assert any("aliased subprocess import" in finding for finding in findings)
+
+
+def test_from_import_of_gated_callable_is_flagged(tmp_path: Path) -> None:
+    path = tmp_path / "from_import.py"
+    path.write_text(
+        "from subprocess import run\nrun(['git', 'status'], timeout=30)\n",
+        encoding="utf-8",
+    )
+
+    findings = checker.python_file_findings(path)
+
+    assert any("'from subprocess import run'" in finding for finding in findings)
+
+
+def test_from_import_of_non_spawning_names_is_allowed(tmp_path: Path) -> None:
+    path = tmp_path / "types_only.py"
+    path.write_text(
+        "from subprocess import PIPE, CompletedProcess, TimeoutExpired\n",
+        encoding="utf-8",
+    )
+
+    findings = checker.python_file_findings(path)
+
+    assert findings == []
+
+
 def test_obvious_flattened_duplicate_is_reported(tmp_path: Path) -> None:
     canonical = tmp_path / "src" / "pkg" / "module.py"
     canonical.parent.mkdir(parents=True)
