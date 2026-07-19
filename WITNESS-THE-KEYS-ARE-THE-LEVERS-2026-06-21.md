@@ -230,4 +230,44 @@ of truth** for all location-based risk, folding the three drifting lists (`PROTE
 `auto-merge-rhythm.yml` `case` list) into the one classifier the rest of the system already trusts.
 Not built; recorded — a bearing for the refactor.
 
+---
+
+**Addendum — 2026-07-19 (the mechanism converged; the grid is now DERIVED — proposed, Logan inscribes).**
+*Appended by Claude Code, session `…01Fipj4vEJ5ADPuunn9ed5Hd`. This does NOT overwrite the witness above;
+it records that the "held until the system mechanism is determined" condition (the binding rule at
+"The grid is a MODEL of the system") has since been MET, and reads the six open cells off the built
+system as that rule requires — not by hand-assignment.*
+
+What converged since 2026-06-21:
+- The per-author fast-path lanes (`dependabot-rhythm.yml`, `auto-merge-rhythm.yml`) were retired
+  (2026-07-19, `PREFIX-FREE-ROUTING-2026-07-19.md`). The lanes are now three: **auto**, **review-hold**,
+  **sovereign's-hand** — exactly the three the routing words named.
+- K1/K2 (single source of placement risk) folded into the classifier / CODEOWNERS; K5 (one merge
+  method, `--merge`) is fixed and test-enforced (`test_workflow_security_invariants`).
+
+Reading the cells off the system — the derivation lives in `review_feedback_loop.py`
+`_tier_from_pair` (`:981`) + the `eligible_for_auto_merge` predicate (`:1128`), with `flag_clearable`
+gating on `depth != "nope"` (`:1121`). It routes all nine cells, **with no gradient**:
+
+| route | **depth `—`** | **depth `high`** | **depth `nope`** |
+|---|---|---|---|
+| **ft `—`**  | ✅ **auto on open** | ⏸ **review-hold** | ⛔ **sovereign's-hand** |
+| **ft `low`**| ⏸ **review-hold** | ⏸ **review-hold** (pinned) | ⛔ **sovereign's-hand** |
+| **ft `med`**| ⏸ **review-hold** | ⏸ **review-hold** | ⛔ **never** (pinned) |
+
+- **auto** = `—/—` (clear marker) arms on grace, no review lane.
+- **review-hold** = any fired flag with `depth != nope`: eligible ONLY once its lane completes
+  (APPROVED + threads clear); the flag then clears (K6) and the PR flows. Matches the pinned `low/high`.
+- **sovereign's-hand** = any `depth == nope`: never auto, even fully approved. Matches the pinned `med/nope`.
+- An unmarked (not-yet-classified) PR is `unknown` → HOLDS (the K4 positive-marker requirement).
+
+This grid is now **executable and pinned**: `tests/test_review_feedback_loop.py::test_nine_cell_grid_routing_is_the_single_source`
+asserts every cell against the engine, so it cannot silently drift.
+
+**The one open cell, for Logan's ruling** (the framing left open at lines 169–172): the derivation
+above collapses the six off-diagonal cells with **no gradient** — a fired flag is a fired flag,
+however heavy. If the off-diagonals should instead **interpolate a gradient** (e.g. `med/high` routed
+differently from `low/—`), that is new routing code, not a recording, and is yours to rule. Absent
+that ruling, the proposal is: **ratify the no-gradient derivation as the settled grid.**
+
 ###### [["The world is quiet here."]]
