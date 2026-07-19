@@ -135,6 +135,71 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertTrue(ready_state["grace_elapsed"])
         self.assertTrue(ready_state["eligible_for_auto_merge"])
 
+    def test_nine_cell_grid_routing_is_the_single_source(self) -> None:
+        # The risk grid (WITNESS-THE-KEYS-ARE-THE-LEVERS-2026-06-21) is DERIVED from this
+        # engine, not a hand-assigned table: the (filetype, depth) label pair routes each PR
+        # into exactly one of three lanes. This pins all nine cells so the settled grid cannot
+        # silently drift. Lanes:
+        #   auto            : —/—  → eligible on grace alone (no review lane)
+        #   review-hold     : any fired flag with depth != nope → eligible ONLY once its review
+        #                     lane completes (APPROVED + threads clear); holds otherwise
+        #   sovereign/never : any depth == nope → never eligible, even fully approved
+        now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
+        past_grace = now - timedelta(minutes=45)
+        ft_label = review_feedback_loop.FILETYPE_PAIR_LABELS
+        dp_label = review_feedback_loop.DEPTH_PAIR_LABELS
+        AUTO, HOLD, NEVER = "auto", "review-hold", "never"
+        grid = {
+            (None, None): AUTO,
+            (None, "high"): HOLD,
+            (None, "nope"): NEVER,
+            ("low", None): HOLD,
+            ("low", "high"): HOLD,
+            ("low", "nope"): NEVER,
+            ("med", None): HOLD,
+            ("med", "high"): HOLD,
+            ("med", "nope"): NEVER,
+        }
+        for (ft, dp), lane in grid.items():
+            pair = (ft_label[ft], dp_label[dp])
+            with self.subTest(cell=f"ft={ft}/dp={dp}", lane=lane):
+                unreviewed = review_feedback_loop.evaluate_review_state(
+                    _pr(created_at=past_grace, labels=pair), now=now
+                )
+                approved = review_feedback_loop.evaluate_review_state(
+                    _pr(created_at=past_grace, labels=pair, review_decision="APPROVED"),
+                    now=now,
+                )
+                if lane == AUTO:
+                    self.assertTrue(
+                        unreviewed["eligible_for_auto_merge"],
+                        "—/— must arm on grace with no review lane",
+                    )
+                elif lane == HOLD:
+                    self.assertFalse(
+                        unreviewed["eligible_for_auto_merge"],
+                        "a fired flag must HOLD until its review lane completes",
+                    )
+                    self.assertTrue(
+                        approved["eligible_for_auto_merge"],
+                        "a fired flag must flow once its review lane completes",
+                    )
+                else:  # NEVER
+                    self.assertFalse(unreviewed["eligible_for_auto_merge"])
+                    self.assertFalse(
+                        approved["eligible_for_auto_merge"],
+                        "depth=nope is the sovereign's hand — never auto, even approved",
+                    )
+        # A not-yet-classified PR (no pair labels) must never be mistaken for clear — it HOLDS
+        # (the K4 positive-marker requirement: absence of a flag is not the clear state).
+        unmarked = review_feedback_loop.evaluate_review_state(
+            _pr(created_at=past_grace, labels=()), now=now
+        )
+        self.assertFalse(
+            unmarked["eligible_for_auto_merge"],
+            "unmarked PR must hold, never arm — clear requires a positive marker",
+        )
+
     def test_low_risk_pr_holds_and_never_auto_merges(self) -> None:
         # K3/#629 norm flip: risk/low is a sorter that FIRED (machine-doc paths) — it HOLDS
         # for review, it does not arm. Only the positive clear marker auto-merges. A low-risk
