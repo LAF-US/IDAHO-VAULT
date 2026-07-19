@@ -1,11 +1,14 @@
 """Classify changed file paths into the two-paired-flag risk scheme.
 
-NEXT AGENT — the one fact that prevents breakage: the binary `tier` (low|high) is the ONLY
-field any live consumer reads (`agent-auto-pr.yml` reads `['tier']`). `tier4`, `filetype`, and
-the `clear` value are intentionally inert — nothing reads them yet. Do NOT wire a `tier4`
-consumer that hardcodes `{low,med,high,nope}`; it will choke on `clear`. The two-sorter MODEL is
-settled; the routing MECHANISM (lanes, flag lifecycle, grid-cell routes) is HELD for Logan — see
-issue #626 + `WITNESS-THE-KEYS-ARE-THE-LEVERS-2026-06-21.md`. The grid is a model, not code.
+NEXT AGENT — what is now WIRED (updated 2026-07-19): the two-axis PAIR is live. `agent-auto-pr.yml`
+stamps `filetype:risk/<x>` + `depth:risk/<x>` from the `filetype`/`depth` fields, and
+`review_feedback_loop.py` READS that pair to route + arm — the grid is DERIVED there
+(`evaluate_review_state` / `_tier_from_pair`), pinned by the nine-cell test in
+`tests/test_review_feedback_loop.py`. The binary `tier` (low|high) stays only for the LEGACY
+`risk/<tier>` label during the vocabulary transition. Still genuinely deferred: `subtier` (TBD, not
+implemented), and whether the six off-diagonal cells take a gradient vs. the derived no-gradient
+routing (Logan's ruling). If you wire a NEW `tier4` consumer, it MUST handle `clear` (do not hardcode
+`{low,med,high,nope}`). See `WITNESS-THE-KEYS-ARE-THE-LEVERS-2026-06-21.md` (2026-07-19 addendum) + #626.
 
 Conceptualized in the planning session of 2026-06-21 and witnessed in
 `WITNESS-THE-KEYS-ARE-THE-LEVERS-2026-06-21.md`; this is its first implementation,
@@ -34,10 +37,11 @@ the earlier single pass where placement suppressed filetype.
 JSON output — `tier` stays BINARY (low|high) to preserve the existing `risk/<tier>` label
 contract: `agent-auto-pr.yml` stamps `--label risk/$tier` and `ensure-labels` only creates
 `risk/low`/`risk/high`, so emitting `med`/`nope` here would break PR creation. The richer
-result lives in the `tier4` field. NOTE (this step): `clear` collapses to binary `low`, so
-introducing the `—` state changes NO binary-label behavior the live producer/consumer use
-today — the new `—/—` distinction rides only in `tier4`/`filetype` for the consumer-wiring
-step to come (see WITNESS-THE-KEYS-ARE-THE-LEVERS-2026-06-21.md and #626).
+result lives in the `tier4` field, and the two-axis pair (`filetype`/`depth`) is stamped as the
+`filetype:risk/*` + `depth:risk/*` labels the engine now routes on. `clear` still collapses to binary
+`low` for the LEGACY `risk/<tier>` label, so the `—/—` distinction lives in `tier4`/the pair — which
+the engine READS (the consumer-wiring step is DONE; see WITNESS-THE-KEYS-ARE-THE-LEVERS-2026-06-21.md
+2026-07-19 addendum, and #626).
   {
     "tier": "low"|"high",                         # BINARY legacy label (risk/<tier>); clear+low -> low
     "tier4": "clear"|"low"|"med"|"high"|"nope",   # the result (nope>high>med>low>clear)
