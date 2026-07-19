@@ -32,7 +32,27 @@ class WorkflowSecurityInvariantsTest(unittest.TestCase):
         self.assertFalse((WORKFLOWS / "dependabot-reaper.yml").exists())
         self.assertTrue((WORKFLOWS / "dependabot-rhythm.yml").exists())
 
+    def test_review_state_sync_jobs_can_maintain_labels(self) -> None:
+        # review_feedback_loop.py sync-pr/review-submitted calls ensure_labels()
+        # before reconciling review state. Label creation/update uses the Issues
+        # API, so these write-capable review-state jobs must carry issues: write
+        # alongside pull-requests/contents permissions. Without it, the PR can
+        # be otherwise queue-ready while the review-state workflow fails before
+        # it can restamp labels or re-arm enqueue.
+        review_feedback = yaml.safe_load(
+            (WORKFLOWS / "review-feedback-loop.yml").read_text(encoding="utf-8")
+        )
+        sweep_permissions = review_feedback["jobs"]["sweep-review-threads"]["permissions"]
+        self.assertEqual(sweep_permissions["contents"], "write")
+        self.assertEqual(sweep_permissions["issues"], "write")
+        self.assertEqual(sweep_permissions["pull-requests"], "write")
 
+        review_response = yaml.safe_load(
+            (WORKFLOWS / "review-response.yml").read_text(encoding="utf-8")
+        )
+        self.assertEqual(review_response["permissions"]["contents"], "write")
+        self.assertEqual(review_response["permissions"]["issues"], "write")
+        self.assertEqual(review_response["permissions"]["pull-requests"], "write")
 
     def test_no_schedule_triggers_until_the_chron_clock_is_established(self) -> None:
         # Logan's standing order (restated 2026-07-06): NO cron jobs until the chron_clock
