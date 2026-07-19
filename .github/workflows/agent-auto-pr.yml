@@ -31,8 +31,21 @@ jobs:
             BRANCH_NAME="$CURRENT_REF_NAME"
           fi
 
+          # Prefix-agnostic gate. The FORM of the branch name is the signal, not an
+          # enumerated agent allowlist. A slash-namespaced branch (`<namespace>/<desc>`,
+          # per VAULT-CONVENTIONS § Git Practices) is a work branch that should become a
+          # PR; a dash-prefixed automation artifact (`ingest-`, `wayback-audit-`,
+          # `topology-census-`) is ephemeral and intentionally excluded.
+          #
+          # This retires the hand-maintained `claude/*|codex/*|…|serena/*` case list, which
+          # was a K1/K2-class drift surface (see REPORT-GH-AUTOMERGE-ENFORCEMENT-MAP-2026-06-22
+          # and PREFIX-FREE-ROUTING-2026-07-19): it had rotted (`serena/*` never named real
+          # branches — Serena is a memory/MCP substrate, not a branch author) and had drifted
+          # out of sync with branch-cleanup.yml's own copy (`bot/` present there, absent here).
+          # The namespaced-form test is self-maintaining: adding an agent needs no edit, and
+          # `dependabot/*` is admitted by construction — "one among the many", no separate list.
           case "$BRANCH_NAME" in
-            claude/*|codex/*|gemini/*|copilot/*|perplexity/*|grok/*|serena/*)
+            */*)
               if ! [[ "$BRANCH_NAME" =~ ^[A-Za-z0-9._/-]+$ ]]; then
                 echo "skip=true" >> "$GITHUB_OUTPUT"
                 exit 0
