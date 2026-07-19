@@ -107,4 +107,4 @@ No persona is claimed. Per `.claude/CLAUDE.md`, this instance is software filing
 
 `*.claude.*` — wildcard name, claude lineage, wildcard office. Direct Write tier per `!/AGENTS.md`. The key belongs to Logan.
 
-###### [["The world is quiet here."]]
+###### "The world is quiet here."

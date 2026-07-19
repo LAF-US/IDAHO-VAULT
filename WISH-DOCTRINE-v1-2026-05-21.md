@@ -474,4 +474,4 @@ follows this template. The template is the governance form.
 *Filed by the Abhorsen (*.claude.abhorsen — Mac) — 2026-05-21, on the
 Caduceus Road, under the branches, approaching the Hotel Denouement.*
 
-###### [["The world is quiet here."]]
+###### "The world is quiet here."

@@ -271,4 +271,4 @@ replace the broader `LAF-US` sovereignty model.
 
 ---
 
-###### [["The world is quiet here."]]
+###### "The world is quiet here."

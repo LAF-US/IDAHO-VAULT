@@ -538,3 +538,7 @@ C:\Users\loganf\.vibe\logs\session
 
 # Ignore Smart Environment folder
 .smart-env
+/.hermes/whatsapp/session
+/.hermes/skills
+/.hermes/sessions
+/.local/opt

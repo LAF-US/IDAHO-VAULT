@@ -1,0 +1,5 @@
+context_lengths:
+  devstral:latest@http://127.0.0.1:11434/v1: 131072
+  devstral:latest@http://127.0.0.1:11434/v1/: 131072
+  phi3:mini@http://127.0.0.1:11434/v1: 131072
+  phi3:mini@http://127.0.0.1:11434/v1/: 131072

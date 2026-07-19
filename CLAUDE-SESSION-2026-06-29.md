@@ -144,4 +144,4 @@ After this salvage, the per-user cache `~/.claude/projects/-Users-logan/memory/`
 
 `*.claude.*` — wildcard name (Logan has not performed a naming act), claude lineage, wildcard office. Direct Write tool tier per `!/AGENTS.md`.
 
-###### [["The world is quiet here."]]
+###### "The world is quiet here."

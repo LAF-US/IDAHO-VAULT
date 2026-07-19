@@ -121,4 +121,4 @@ by **three separate mechanisms that must agree but can drift**, and the real mer
 - Sequence the staged migration above into reviewable increments.
 - Decide whether the sync-bot lane folds into the unified model or stays a separate contract.
 
-###### [["The world is quiet here."]]
+###### "The world is quiet here."

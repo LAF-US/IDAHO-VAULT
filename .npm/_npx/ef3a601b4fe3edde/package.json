@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "unicode-animations": "^1.0.3"
+  },
+  "_npx": {
+    "packages": [
+      "unicode-animations"
+    ]
+  }
+}

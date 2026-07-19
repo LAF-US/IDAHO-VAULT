@@ -1,0 +1,2014 @@
+=== raw, unfiltered, everything since 20:42:41 ===
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left legacy config health state in place because 1 entry conflicts  │
+│    with shared SQLite state:                                           │
+│    /Users/logan/.openclaw/logs/config-health.json                      │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────�
+2026-07-07T20:42:41.668-06:00 [provider-transport-fetch] [model-fetch] response provider=mistral api=openai-completions model=mistral-small-latest status=200 elapsedMs=1393 contentType=text/event-stream; charset=utf-8
+2026-07-07T20:42:42.235-06:00 [ws] ⇄ res ✓ chat.history 88ms conn=e5ebf59b…b8ce id=2e2da8d40363…a4d9
+2026-07-07T20:42:42.419-06:00 [ws] ⇄ res ✓ sessions.list 179ms conn=e5ebf59b…b8ce id=a2dbb7cb6cee…d051
+2026-07-07T20:42:42.422-06:00 [ws] ⇄ res ✓ sessions.list 182ms conn=e5ebf59b…b8ce id=e0d20e90ed49…9ea6
+2026-07-07T20:43:44.514-06:00 [ws] ⇄ res ✓ models.list 68ms conn=e5ebf59b…b8ce id=e034d46906bd…e989

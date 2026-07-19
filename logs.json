@@ -1,0 +1,37 @@
+[
+  {
+    "sessionId": "dc3b6b6e-019a-4fce-89b7-e9ded0a82641",
+    "messageId": 0,
+    "type": "user",
+    "message": "/theme",
+    "timestamp": "2026-04-30T23:12:40.031Z"
+  },
+  {
+    "sessionId": "dc3b6b6e-019a-4fce-89b7-e9ded0a82641",
+    "messageId": 1,
+    "type": "user",
+    "message": "Hi Gemini -- This Google Drive application is not longer supported. I want you to make a plan with me, and then we will '$ cd ..' and uninstall it",
+    "timestamp": "2026-04-30T23:13:49.410Z"
+  },
+  {
+    "sessionId": "dc3b6b6e-019a-4fce-89b7-e9ded0a82641",
+    "messageId": 2,
+    "type": "user",
+    "message": "$cd ..",
+    "timestamp": "2026-04-30T23:14:34.662Z"
+  },
+  {
+    "sessionId": "dc3b6b6e-019a-4fce-89b7-e9ded0a82641",
+    "messageId": 3,
+    "type": "user",
+    "message": "/model",
+    "timestamp": "2026-04-30T23:14:45.162Z"
+  },
+  {
+    "sessionId": "dc3b6b6e-019a-4fce-89b7-e9ded0a82641",
+    "messageId": 4,
+    "type": "user",
+    "message": "Execute plan!",
+    "timestamp": "2026-04-30T23:14:58.119Z"
+  }
+]

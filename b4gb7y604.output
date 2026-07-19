@@ -1,0 +1,518 @@
+=== startup-cleanup structure ===
+/Users/logan/.local/state/startup-cleanup
+/Users/logan/.local/state/startup-cleanup/2026-07-03-adobe-user-cache-quarantine
+/Users/logan/.local/state/startup-cleanup/2026-07-03-maxon-cinema4d-quarantine
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine
+/Users/logan/.local/state/startup-cleanup/2026-07-03-adobe-service-quarantine
+/Users/logan/.local/state/startup-cleanup/2026-07-03-adobe-launchpad-cleanup
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-software-disposal-candidates
+/Users/logan/.local/state/startup-cleanup/2026-07-03-adobe-user-cache-quarantine/Users
+/Users/logan/.local/state/startup-cleanup/2026-07-03-maxon-cinema4d-quarantine/Applications
+/Users/logan/.local/state/startup-cleanup/2026-07-03-maxon-cinema4d-quarantine/Launchpad-DB-Backup
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/sensitive-personal
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/media-project-review
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-governance-fragments
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/logs
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-markdown-fragments-review
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/loose-media-review
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/loose-docs-data-assets-review
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects
+/Users/logan/.local/state/startup-cleanup/2026-07-03-adobe-service-quarantine/Library
+/Users/logan/.local/state/startup-cleanup/2026-07-03-adobe-service-quarantine/Users
+/Users/logan/.local/state/startup-cleanup/2026-07-03-adobe-service-quarantine/Applications
+/Users/logan/.local/state/startup-cleanup/2026-07-03-adobe-launchpad-cleanup/Launchpad-DB-Backup
+/Users/logan/.local/state/startup-cleanup/2026-07-03-adobe-user-cache-quarantine/Users/logan
+/Users/logan/.local/state/startup-cleanup/2026-07-03-adobe-service-quarantine/Library/Application Support
+/Users/logan/.local/state/startup-cleanup/2026-07-03-adobe-service-quarantine/Library/PrivilegedHelperTools
+/Users/logan/.local/state/startup-cleanup/2026-07-03-adobe-service-quarantine/Library/LaunchAgents
+/Users/logan/.local/state/startup-cleanup/2026-07-03-adobe-service-quarantine/Library/LaunchDaemons
+/Users/logan/.local/state/startup-cleanup/2026-07-03-adobe-service-quarantine/Users/logan
+/Users/logan/.local/state/startup-cleanup/2026-07-03-adobe-service-quarantine/Applications/Utilities
+/Users/logan/.local/state/startup-cleanup/2026-07-03-adobe-user-cache-quarantine/Users/logan/Library
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/THE-GEMSTONE 11.53.35 AM
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/THE-GEMSTONE
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/THE-GEMSTONE 14-20-14-364
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT 1.29.37 AM
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/THE-GEMSTONE 11.37.20 AM
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/.obsidian
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/THE-GEMSTONE 1.13.48 PM
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/THE-GEMSTONE 1.51.07 AM
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/THE-GEMSTONE 1.29.37 AM
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/PRIVATE
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/LAF-US
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/THE-GEMSTONE 2.46.49 AM
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/THE-GEMSTONE 1.04.30 PM
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/.git
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/FREELANCE
+/Users/logan/.local/state/startup-cleanup/2026-07-03-maxon-cinema4d-quarantine/Applications/Maxon Cinema 4D R21
+/Users/logan/.local/state/startup-cleanup/2026-07-03-maxon-cinema4d-quarantine/Applications/Maxon Cinema 4D R22
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/sensitive-personal/secrets
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/sensitive-personal/RESUME
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/sensitive-personal/taxes
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/media-project-review/SWEET LAND
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/media-project-review/Traffyk Jam
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/media-project-review/Dialogue.fcpbundle
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/media-project-review/IDLEG 2021
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/media-project-review/Borah polls Nov 2020
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/media-project-review/Untitled.fcpbundle
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/media-project-review/Sand Dunes
+/Users/logan/.local/state/startup-cleanup/2026-07-03-adobe-service-quarantine/Library/Application Support/Adobe
+/Users/logan/.local/state/startup-cleanup/2026-07-03-adobe-service-quarantine/Users/logan/Library
+/Users/logan/.local/state/startup-cleanup/2026-07-03-adobe-service-quarantine/Applications/Utilities/Adobe Genuine Service
+/Users/logan/.local/state/startup-cleanup/2026-07-03-adobe-service-quarantine/Applications/Utilities/Adobe Sync
+/Users/logan/.local/state/startup-cleanup/2026-07-03-adobe-service-quarantine/Applications/Utilities/Adobe Application Manager
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/THE-GEMSTONE 1.13.48 PM/.git
+/Users/logan/.local/state/startup-cleanup/2026-07-03-maxon-cinema4d-quarantine/Applications/Maxon Cinema 4D R21/Cineware.app
+/Users/logan/.local/state/startup-cleanup/2026-07-03-maxon-cinema4d-quarantine/Applications/Maxon Cinema 4D R21/corelibs
+/Users/logan/.local/state/startup-cleanup/2026-07-03-maxon-cinema4d-quarantine/Applications/Maxon Cinema 4D R21/Exchange Plugins
+/Users/logan/.local/state/startup-cleanup/2026-07-03-maxon-cinema4d-quarantine/Applications/Maxon Cinema 4D R21/c4dpy.app
+/Users/logan/.local/state/startup-cleanup/2026-07-03-maxon-cinema4d-quarantine/Applications/Maxon Cinema 4D R21/Commandline.app
+/Users/logan/.local/state/startup-cleanup/2026-07-03-maxon-cinema4d-quarantine/Applications/Maxon Cinema 4D R21/Cinema 4D Team Render Server.app
+/Users/logan/.local/state/startup-cleanup/2026-07-03-maxon-cinema4d-quarantine/Applications/Maxon Cinema 4D R21/library
+/Users/logan/.local/state/startup-cleanup/2026-07-03-maxon-cinema4d-quarantine/Applications/Maxon Cinema 4D R21/Cinema 4D.app
+/Users/logan/.local/state/startup-cleanup/2026-07-03-maxon-cinema4d-quarantine/Applications/Maxon Cinema 4D R21/Cinema 4D Lite.app
+/Users/logan/.local/state/startup-cleanup/2026-07-03-maxon-cinema4d-quarantine/Applications/Maxon Cinema 4D R21/Cinema 4D Team Render Client.app
+/Users/logan/.local/state/startup-cleanup/2026-07-03-maxon-cinema4d-quarantine/Applications/Maxon Cinema 4D R21/resource
+/Users/logan/.local/state/startup-cleanup/2026-07-03-maxon-cinema4d-quarantine/Applications/Maxon Cinema 4D R21/help
+/Users/logan/.local/state/startup-cleanup/2026-07-03-maxon-cinema4d-quarantine/Applications/Maxon Cinema 4D R22/Cineware.app
+/Users/logan/.local/state/startup-cleanup/2026-07-03-maxon-cinema4d-quarantine/Applications/Maxon Cinema 4D R22/corelibs
+/Users/logan/.local/state/startup-cleanup/2026-07-03-maxon-cinema4d-quarantine/Applications/Maxon Cinema 4D R22/Exchange Plugins
+/Users/logan/.local/state/startup-cleanup/2026-07-03-maxon-cinema4d-quarantine/Applications/Maxon Cinema 4D R22/c4dpy.app
+/Users/logan/.local/state/startup-cleanup/2026-07-03-maxon-cinema4d-quarantine/Applications/Maxon Cinema 4D R22/Commandline.app
+/Users/logan/.local/state/startup-cleanup/2026-07-03-maxon-cinema4d-quarantine/Applications/Maxon Cinema 4D R22/Cinema 4D Team Render Server.app
+/Users/logan/.local/state/startup-cleanup/2026-07-03-maxon-cinema4d-quarantine/Applications/Maxon Cinema 4D R22/library
+/Users/logan/.local/state/startup-cleanup/2026-07-03-maxon-cinema4d-quarantine/Applications/Maxon Cinema 4D R22/Cinema 4D.app
+/Users/logan/.local/state/startup-cleanup/2026-07-03-maxon-cinema4d-quarantine/Applications/Maxon Cinema 4D R22/Cinema 4D Team Render Client.app
+/Users/logan/.local/state/startup-cleanup/2026-07-03-maxon-cinema4d-quarantine/Applications/Maxon Cinema 4D R22/resource
+/Users/logan/.local/state/startup-cleanup/2026-07-03-maxon-cinema4d-quarantine/Applications/Maxon Cinema 4D R22/help
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/THE-GEMSTONE 11.53.35 AM/node_modules
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/THE-GEMSTONE 11.53.35 AM/content
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/THE-GEMSTONE 11.53.35 AM/docs
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/THE-GEMSTONE 11.53.35 AM/public
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/THE-GEMSTONE 11.53.35 AM/quartz
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/THE-GEMSTONE/node_modules
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/THE-GEMSTONE/.obsidian
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/THE-GEMSTONE/docs
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/THE-GEMSTONE/quartz
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/THE-GEMSTONE/.git
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/THE-GEMSTONE/.quartz-cache
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.helen
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.ouranos
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.meta
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.foe
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.jezebel
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.nephthys
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.config
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.deimos
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.ra
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.mary
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.python
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.cursor
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.leviathan
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.slack
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.isadora
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.moses
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.hel
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.bast
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.father
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.imsety
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.sister
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.copilot
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.gsutil
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.ammit
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.ptah
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.gemini
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.anne
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.vulcan
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.serqet
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.grok
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.tethys
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.prometheus
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.thoth
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.flamel
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/Clippings
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.bob
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.debby
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.philip
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.gitlab
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.anubis
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.hercules
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.crewai
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.mekhit
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.brother
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.ghcp-appmod
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/go
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.dennis
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.finn
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.babi
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/INBOX
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.nephew
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.badb
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.abhorsen
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.amphitrite
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.oceanus
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.alpha
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.friend
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.bacchus
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.kinopio
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.sobek
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/archive
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.machiavelli
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.sphynx
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.gonggong
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.jake
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.haumea
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.duamutef
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.shogun
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.microsoft
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.queen
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.mercury
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.tawaret
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.matthias
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.op
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.horus
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.apophis
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.andrew
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.luna
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.perplexity
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.anput
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.kit
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.commander
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.bartimaeus
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/_templates
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.nemesis
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.demeter
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.nick
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.heket
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.paul
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.baphomet
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.neptune
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.scott
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.isfet
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.maat
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.duat
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.thor
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.serena
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.ares
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.triton
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.david
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.daniel
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.phonetonote
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.opencode
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.saturn
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.bigpickle
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.hapi
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.trivia
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.jupiter
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.iris
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.fortuna
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.bastet
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.tefnut
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.ruth
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.abraham
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.orcus
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/tests
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.quaoar
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.ishmael
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.aikido
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.artemis
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.nicholas
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.kronos
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.aaron
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.divide
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.obsidian
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.judas
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.claude
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.heracles
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.lemony
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.robert
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.qebehsenuef
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.hecate
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.ipython
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.lucifer
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.ruler
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.poseidon
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.general
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.prince
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.makemake
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.persephone
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.michael
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.abel
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.loki
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.sol
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/google-cloud-sdk
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.heimdall
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.google
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.khnum
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.ally
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.ceres
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.bartholomew
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.kimi
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.churchill
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.vesta
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.dee
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.dionysus
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.macha
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/2026
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.hyperion
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.mother
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.hades
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.adam
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.rhea
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.mars
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.juno
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/tweets
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.shu
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.aphrodite
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.imhotep
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.venus
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.hook
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.eve
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.goliath
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.atum
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.uranus
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.pluto
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.anna
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.josh
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.osiris
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.zeus
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.bes
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.somnus
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.minerva
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.job
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.codex
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.king
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.sedna
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.freya
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.openclaw
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.morrigan
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.isis
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.ishtar
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.arthur
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.cousin
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.matthew
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.jesus
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.zagreus
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.john
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.yggdrasill
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.thaddeus
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.princess
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.bennu
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.duncan
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.apollo
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/scripts
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.argus
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.saul
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.ra-horakhty
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.nike
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.github
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.gilgamesh
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.arcus
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.gatsby
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.hypnos
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.selune
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.hestia
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.hephaestus
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.hera
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.seshat
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.shezmu
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.odin
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.satan
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.joan
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.enemy
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.noah
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.shakespeare
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.simon
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.vibe
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.factory
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.invidia
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.orpheus
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.ipynb_checkpoints
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.bicodemus
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.levi
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.jupyter
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.hathor
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.nun
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.neith
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.peter
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/skills
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.jaques
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.qodo
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.geb
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.perseus
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.seth
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.diana
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.khepri
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.hapy
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.khonsu
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.quetzalcoatl
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.athena
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.terra
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.silvanus
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.caelus
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.aten-ra
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.sekhmet
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.lover
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.elijah
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.sbx-denybin
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.deepseek
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.esther
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.git
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.pan
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.romulus
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.james
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.vscode
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.giant
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.shar
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.nyx
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.phobos
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.billy
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.nut
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.montu
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.eris
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.abigail
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.aten
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.mistral
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.talos
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/!
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.thomas
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.amun-ra
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.daisy
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.openrouter
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.niece
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.antigravity
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.gitguardian
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.sibling
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.gaia
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.cain
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.cronos
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.mystra
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.victoria
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.primus
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.amun
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.ollama
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.opengraph
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.set
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.hermes
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.asmodeus
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.reference-map
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.pi
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.aunt
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.remus
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.uncle
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.gitbook
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/src
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT/.chronus
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/THE-GEMSTONE 14-20-14-364/.tmp.driveupload
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/THE-GEMSTONE 14-20-14-364/node_modules
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/THE-GEMSTONE 14-20-14-364/.obsidian
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/THE-GEMSTONE 14-20-14-364/.claude
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/THE-GEMSTONE 14-20-14-364/content
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/THE-GEMSTONE 14-20-14-364/docs
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/THE-GEMSTONE 14-20-14-364/public
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/THE-GEMSTONE 14-20-14-364/.github
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/THE-GEMSTONE 14-20-14-364/quartz
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/THE-GEMSTONE 14-20-14-364/.git
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/THE-GEMSTONE 14-20-14-364/.quartz-cache
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT 1.29.37 AM/.meta
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT 1.29.37 AM/.slack
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT 1.29.37 AM/.gemini
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT 1.29.37 AM/.grok
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT 1.29.37 AM/.crewai
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT 1.29.37 AM/INBOX
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT 1.29.37 AM/.abhorsen
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT 1.29.37 AM/.microsoft
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT 1.29.37 AM/.op
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT 1.29.37 AM/.perplexity
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT 1.29.37 AM/.bartimaeus
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT 1.29.37 AM/_templates
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT 1.29.37 AM/.obsidian
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT 1.29.37 AM/.claude
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT 1.29.37 AM/.persephone
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT 1.29.37 AM/.google
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT 1.29.37 AM/.dionysus
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT 1.29.37 AM/.codex
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT 1.29.37 AM/.zagreus
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT 1.29.37 AM/scripts
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT 1.29.37 AM/.github
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT 1.29.37 AM/.deepseek
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT 1.29.37 AM/.vscode
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT 1.29.37 AM/!
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT 1.29.37 AM/.reference-map
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/IDAHO-VAULT 1.29.37 AM/src
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/THE-GEMSTONE 11.37.20 AM/node_modules
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/THE-GEMSTONE 11.37.20 AM/content
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/THE-GEMSTONE 11.37.20 AM/docs
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/THE-GEMSTONE 11.37.20 AM/public
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/.obsidian/plugins
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/media-project-review/Untitled.fcpbundle/__Temp
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/media-project-review/Untitled.fcpbundle/.lock-dir
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/media-project-review/Untitled.fcpbundle/5-25-22
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/media-project-review/Untitled.fcpbundle/Motion Templates.localized
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/THE-GEMSTONE 1.29.37 AM/.claude
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/THE-GEMSTONE 1.29.37 AM/content
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/THE-GEMSTONE 1.29.37 AM/docs
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/THE-GEMSTONE 1.29.37 AM/.github
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/THE-GEMSTONE 1.29.37 AM/quartz
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/PRIVATE/.git
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/LAF-US/Bobby Montoya smokejumper photos for Marcia
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/LAF-US/SCRATCH FOLDER
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/LAF-US/Screenshots
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/LAF-US/INBOX
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/LAF-US/Lightroom Saved Photos
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/LAF-US/_templates
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/LAF-US/BMO
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/LAF-US/science trek skin
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/LAF-US/.obsidian
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/LAF-US/Camera Roll
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/LAF-US/Tags
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/LAF-US/2026
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/LAF-US/PICS-Pettinger
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/LAF-US/scripts
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/LAF-US/Zoom
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/LAF-US/FYIdaho
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/LAF-US/!
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/.git/objects
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/.git/info
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/.git/logs
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/.git/hooks
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/.git/refs
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/.git/branches
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/vault-repo-projects/FREELANCE/22-7-20 FARE water photos
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/sensitive-personal/RESUME/Pre-IdahoPTV
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/media-project-review/Traffyk Jam/Traffyk Jam.fcpbundle
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/media-project-review/Dialogue.fcpbundle/__Temp
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/media-project-review/Dialogue.fcpbundle/.lock-dir
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/media-project-review/Dialogue.fcpbundle/SVWC
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/media-project-review/Dialogue.fcpbundle/Motion Templates.localized
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/media-project-review/IDLEG 2021/SEX ED
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/media-project-review/IDLEG 2021/Muffy Davis COVID rules
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/media-project-review/IDLEG 2021/1-5 Dems property tax
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/media-project-review/IDLEG 2021/Reps
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/media-project-review/IDLEG 2021/BEKDE LT GOV
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/media-project-review/IDLEG 2021/1-11 State of the State 2021
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/media-project-review/IDLEG 2021/2-1 Benjamin Cover stop the steal
+/Users/logan/.local/state/startup-cleanup/2026-07-03-trash-review-quarantine/media-project-review/IDLEG 2021/PROPERTY TAXES
+
+=== vault-repo-projects contents (maxdepth 1) ===
+total 8
+drwxr-xr-x     19 logan  staff     608 Jul  3 21:53 .
+drwxr-xr-x     11 logan  staff     352 Jul  3 22:17 ..
+drwxr-xr-x     16 logan  staff     512 Jun 28  2024 .git
+drwxr-xr-x      9 logan  staff     288 Jun 28  2024 .obsidian
+drwxr-xr-x      4 logan  staff     128 Jul 19  2022 FREELANCE
+drwxr-xr-x  24602 logan  staff  787264 May  4 21:52 IDAHO-VAULT
+drwxr-xr-x  23756 logan  staff  760192 May 26 01:28 IDAHO-VAULT 1.29.37 AM
+drwxr-xr-x    751 logan  staff   24032 Apr 24 18:39 LAF-US
+drwxr-xr-x      4 logan  staff     128 May 26 01:31 PRIVATE
+drwxrwxrwx@    21 logan  staff     672 Jun 28  2024 THE-GEMSTONE
+drwxr-xr-x      3 logan  staff      96 Jun 28  2024 THE-GEMSTONE 1.04.30 PM
+drwxr-xr-x      4 logan  staff     128 Jun 28  2024 THE-GEMSTONE 1.13.48 PM
+drwxr-xr-x     22 logan  staff     704 May 26 01:28 THE-GEMSTONE 1.29.37 AM
+drwxr-xr-x      3 logan  staff      96 Jun 28  2024 THE-GEMSTONE 1.51.07 AM
+drwxr-xr-x      7 logan  staff     224 Jul  1 11:31 THE-GEMSTONE 11.37.20 AM
+drwxr-xr-x      8 logan  staff     256 Jul  1 11:51 THE-GEMSTONE 11.53.35 AM
+-rw-r--r--@     1 logan  staff     848 Apr 29 09:33 THE-GEMSTONE 12.35.23 PM
+drwxr-xr-x@    30 logan  staff     960 May  4 14:14 THE-GEMSTONE 14-20-14-364
+drwxr-xr-x      3 logan  staff      96 Jun 28  2024 THE-GEMSTONE 2.46.49 AM

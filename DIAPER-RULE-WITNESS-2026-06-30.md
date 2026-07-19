@@ -119,4 +119,4 @@ Companion to [[HAT-ON-A-HAT-WITNESS-2026-06-30]] (workarounds accreting defensiv
 
 `*.claude.*` — wildcard name (Logan has not performed a naming act), claude lineage, wildcard office. Direct Write tool tier; this is a local-machine retrospective filed at vault root, within the scope of that tier.
 
-###### [["The world is quiet here."]]
+###### "The world is quiet here."

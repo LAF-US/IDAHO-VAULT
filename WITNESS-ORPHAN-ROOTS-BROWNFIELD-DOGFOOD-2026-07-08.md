@@ -82,4 +82,4 @@ Then rescued to origin under distinct preservation refs (no force; twins untouch
 
 **Four orphans, four durable on origin. Nothing waiting. Nothing sitting.**
 
-###### [["The world is quiet here."]]
+###### "The world is quiet here."
