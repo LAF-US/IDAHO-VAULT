@@ -115,8 +115,11 @@ def main() -> int:
         if author not in BOT_LOGINS:
             continue
 
-        merge_info = run_json(["gh", "pr", "view", str(pr["number"]), "--json", "mergeStateStatus"])
-        merge_state_by_number[int(pr["number"])] = str(merge_info["mergeStateStatus"])
+        # int-coerce BEFORE argv: makes "the PR number is digits, never
+        # option-shaped" a type-enforced invariant rather than trust in the API.
+        pr_number = int(pr["number"])
+        merge_info = run_json(["gh", "pr", "view", str(pr_number), "--json", "mergeStateStatus"])
+        merge_state_by_number[pr_number] = str(merge_info["mergeStateStatus"])
 
     stale = find_stale_bot_prs(
         open_prs,
