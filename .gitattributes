@@ -108,3 +108,5 @@
 *.csv -text
 *.tsv text eol=lf
 *.mdx text eol=lf
+.gitattributes text eol=lf
+.githooks/* text eol=lf

@@ -275,6 +275,58 @@ def staged_file_bytes(path: str) -> bytes | None:
     return result.stdout
 
 
+def git_ref_file_bytes_for_paths(ref: str, paths: list[str]) -> dict[str, bytes]:
+    if not paths:
+        return {}
+
+    process = subprocess.Popen(
+        ["git", "cat-file", "--batch"],
+        cwd=REPO_ROOT,
+        stdin=subprocess.PIPE,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+    )
+    request = b"".join(
+        f"{ref}:{path}\n".encode("utf-8", errors="surrogateescape")
+        for path in paths
+    )
+    stdout, stderr = process.communicate(request)
+    if process.returncode != 0:
+        message = stderr.decode("utf-8", errors="replace").strip()
+        raise RuntimeError(message or "git cat-file failed")
+
+    blobs: dict[str, bytes] = {}
+    offset = 0
+    for path in paths:
+        header_end = stdout.find(b"\n", offset)
+        if header_end < 0:
+            break
+        header = stdout[offset:header_end]
+        offset = header_end + 1
+
+        if header.endswith(b" missing"):
+            continue
+
+        parts = header.split()
+        if len(parts) != 3:
+            continue
+        object_type = parts[1]
+        try:
+            size = int(parts[2])
+        except ValueError:
+            continue
+
+        data = stdout[offset : offset + size]
+        offset += size
+        if stdout[offset : offset + 1] == b"\n":
+            offset += 1
+
+        if object_type == b"blob":
+            blobs[path] = data
+
+    return blobs
+
+
 def worktree_file_bytes(path: str) -> bytes | None:
     full_path = REPO_ROOT / path
     if not full_path.is_file():
@@ -294,15 +346,21 @@ def content_findings(path: str, data: bytes) -> list[Finding]:
     return findings
 
 
-def findings_for_paths(paths: list[str], *, staged: bool) -> list[Finding]:
+def findings_for_paths(paths: list[str], *, staged: bool, git_ref: str | None = None) -> list[Finding]:
     findings: list[Finding] = []
+    ref_blobs = git_ref_file_bytes_for_paths(git_ref, paths) if git_ref is not None else {}
     for path in paths:
         # Path-based detection must NOT depend on reading the file: a secret is
         # named by its path regardless of whether the bytes are present or
         # decodable (binary key blobs, or a path removed from the worktree but
         # still in the commit). Only content scanning needs the data.
         findings.extend(path_findings(path))
-        data = staged_file_bytes(path) if staged else worktree_file_bytes(path)
+        if staged:
+            data = staged_file_bytes(path)
+        elif git_ref is not None:
+            data = ref_blobs.get(path)
+        else:
+            data = worktree_file_bytes(path)
         if data is None:
             continue
         findings.extend(content_findings(path, data))
@@ -314,13 +372,16 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--staged", action="store_true", help="check staged files")
     parser.add_argument("--paths-from-stdin", action="store_true", help="check NUL-delimited changed paths from stdin")
+    parser.add_argument("--git-ref", help="read file bytes from this Git ref when checking stdin paths")
     args = parser.parse_args()
 
     if args.staged and args.paths_from_stdin:
         parser.error("--staged and --paths-from-stdin are mutually exclusive")
+    if args.git_ref and not args.paths_from_stdin:
+        parser.error("--git-ref requires --paths-from-stdin")
 
     paths = stdin_paths() if args.paths_from_stdin else staged_paths()
-    findings = findings_for_paths(paths, staged=args.staged)
+    findings = findings_for_paths(paths, staged=args.staged, git_ref=args.git_ref)
 
     if not findings:
         print("secret-pattern guard: OK")
