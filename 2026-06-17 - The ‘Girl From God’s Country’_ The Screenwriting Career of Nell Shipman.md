@@ -1,0 +1,36 @@
+---
+title: "The ‘Girl From God’s Country’: The Screenwriting Career of Nell Shipman"
+source: "https://scriptmag.com/the-girl-from-gods-country-the-screenwriting-career-of-nell-shipman"
+author:
+  - "[[Dr. Rosanne Welch]]"
+published: 2026-06-17
+created: 2026-07-20
+description: "Nell Shipman, actor, screenwriter, producer, pioneered wildlife adventure cinema, built independent productions around God’s Country stories and challenged studio control."
+---
+## Nell Shipman, actor, screenwriter, producer, pioneered wildlife adventure cinema, built independent productions around God’s Country stories and challenged studio control.
+
+![](https://scriptmag.com/uploads/2026/06/BacktoGodsCountry-First-National-Exhibitors-Circuit-880x500-WP.png?format=auto&optimize=high&width=3840)
+
+Nell Shipman (right) in Back to God's Country (1919). Courtesy of First National Exhibitors' Circuit
+
+The international possibilities of a career in the performing arts and the then burgeoning medium of film has no better example than Helen Foster-Barham, the future [Nell Shipman](https://www.imdb.com/name/nm0794109/). Born in Canada in 1892, her family soon moved to Seattle, then she joined a vaudeville troupe in the UK, married and moved to California where she sold films to be distributed in Australia and spent time in the Danish West Indies on research for another film.
+
+Foster-Barham started using “Nell” (the diminutive for Helen) and changed her last name to Shipman when she married theatre manager Ernest Shipman in 1910. After the birth of her son, Shipman turned from acting to writing and directing. Yet as with much of the credits one finds in various sites online there is a discrepancy about her first directed film. In the [biography written by Kay Armatage](https://www.amazon.com/Girl-Gods-Country-Shipman-Heritage/dp/080204414X/ref?tag=flexpress-no-tag-20&asc_source=browser&asc_refurl=https%3A%2F%2Fscriptmag.com%2Fthe-girl-from-gods-country-the-screenwriting-career-of-nell-shipman) in 2003 *Outwitted by Billy* (1913) is considered Shipman’s first directing credit but IMDb lists Edward LeSaint as director with Shipman credited as writer. Consequently, she has no directing credits on IMDb.
+
+Shipman’s screenwriting career started strong, by writing *The Shepherd of the Southern Cross* for Australasian Films in 1914. Then she wrote 3 more films in 1915 before Vitagraph Studios hired Shipman to both star and tweak the script for *[God's Country and the Woman](https://www.imdb.com/title/tt0006728/)* (1916), though the script is now credited to James Curwood and [Agnes Christine Johnston](https://scriptmag.com/history/from-silent-murder-mysteries-to-andy-hardys-americana-agnes-christine-johnston-wrote-it-all). The film is often considered to be the first feature-length wildlife adventure and though she had loved animals all her life, it led to Shipman developing a private animal sanctuary. It also led to the “God’s Country” moniker, which stuck.
+
+For the next few years, Vitagraph kept hiring Shipman to star in films that took place in ‘the wilderness’ (which was often depicted as Canada or Alaska yet filmed in the San Bernardino mountains) such as 1917’s *[The Black Wolf](https://www.imdb.com/title/tt0006436/)*. In 1918 Shipman did not escape the worldwide Flu epidemic. Both she and her mother came down with the flu. Shipman recovered, her mother died. Perhaps facing death so closely spurred Shipman to take her control of her own career. She contracted with James Curwood for a kind of sequel and together they adapted his short story "Wapi the Walrus" into *[Back to God's Country](https://www.imdb.com/title/tt0009900/)* (1919). Here she played what we call today “a challenging dual role” but Curwood disliked all her changes and though the film was a major hit in North America, they never worked together again.
+
+Shipman may have lost a collaborator, but she gained a second husband with whom she formed Nell Shipman Productions. They extended the franchise by producing *The Girl from God’s Country* (1921), but this film did not fare as well. Neither did their next effort, [*The Grub Stake*](https://www.imdb.com/title/tt0133813/) (1923) as studios were merging, consolidating, and purchasing their own theatres which began to strangle independent distribution for single-name production companies. Still Nell Shipman Productions managed to produce 10 films before filing for bankruptcy.
+
+At that point Shipman worked at a variety of things from acting with the Ringling Bros. and Barnum & Bailey Circus to writing books and short stories, one of which, ‘Eyes of the Eagle” became the Cary Grant/Myrna Loy film *[Wings in the Dark](https://www.imdb.com/title/tt0027221/)* (1935). As it concerned a female aviatrix Amelia Earhart offered some technical consulting. It was Shipman’s only involvement with the Hollywood studio system that closed her and the other early independent filmmakers out. Shipman died in 1970 in California.
+
+Her son Barry, born in 1912, followed in his mother’s footsteps becoming a screenwriter with over 100 credits on films and TV shows about such classic characters as Zorro, Dick Tracy, and Flash Gordon. In 2003, Kay Armatage of the University of Toronto published *The Girl from God's Country: Nell Shipman and the Silent Cinema.*
+
+---
+
+If you’d like to learn more about the history of women of women in screenwriting, and about the craft of screenwriting while earning your MFA from your own home, our low residency Stephens College MFA in TV and Screenwriting is currently accepting applications: [https://stephens.edu/program/master-of-fine-arts-in-tv-screenwriting/](https://stephens.edu/program/master-of-fine-arts-in-tv-screenwriting/)
+
+**Dr. Rosanne Welch,** Executive Director of the Stephens College MFA in TV and Screenwriting, has television credits including *Beverly Hills 90210*, *Picket Fences*, *ABC News/Nightline* and *Touched by an Angel*. Her award-winning publications include *When Women Wrote Hollywood* and *Women in American History* (on the ALA list of 2017’s Best Historical Materials). Welch is Book Reviews editor for Journal of Screenwriting, on the Editorial Board of the California History Journal. you can see Dr. Welch discuss her time as a writer-producer on the CBS classic *Touched by an Angel* by watching the CW show *TV We Love* at: [https://www.cwtv.com/shows/tv-we-love/](https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.cwtv.com%2Fshows%2Ftv-we-love%2F&data=05%7C02%7CSDean%40aimmedia.com%7C6110eb778700430a4ee908dece1a6696%7C8e799f8afc0b4171a6cfb7070a2ae405%7C0%7C0%7C639174809961379076%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=GneGAAPKFJo6d465FKwBSjS0NfCpycJwL8LgtA2YG3U%3D&reserved=0 "Original URL:
+https://www.cwtv.com/shows/tv-we-love/
+Click to follow link.") OR in 2016 TEDxCPP talk: “ [The Importance of Having a Female Voice in the Room](https://www.youtube.com/watch?v=8JFNsqKBRnA) ”. Find Dr. Rosanne Welch online: Instagram [@drrosannewelch](https://www.instagram.com/drrosannewelch/?ref=badge) | YouTube [DrRosanneWelch](https://www.youtube.com/user/DrRosanneWelch) | Stephens College MFA Twitter [@mfascreenwriter](https://twitter.com/MFAscreenwriter)
