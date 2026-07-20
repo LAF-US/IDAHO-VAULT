@@ -1,21 +1,57 @@
 #!/bin/sh
 set -eu
 
-# Pre-push safety plus explicit LFS object upload. This avoids GitHub Desktop's
-# stock LFS pre-push /dev/stdin path on Windows while still ensuring objects exist upstream.
+repo_root=$(git rev-parse --show-toplevel 2>/dev/null) || { printf >&2 '%s\n' 'pre-push: cannot find repository root.'; exit 2; }
+cd "$repo_root" || { printf >&2 '%s\n' "pre-push: cannot enter repository root: $repo_root"; exit 2; }
+git lfs version >/dev/null 2>&1 || { printf >&2 '%s\n' 'git hook: Git LFS is required for this repository.'; exit 2; }
+PYTHON=python
+
+# Pre-push safety plus explicit LFS object upload. The LFS step is centralized
+# here because GitHub Desktop has been unreliable with the stock stdin-driven
+# Git LFS hook on this Windows checkout.
+remote_name=${1:-origin}
 
 upstream=$(git rev-parse --verify '@{u}' 2>/dev/null || true)
 if [ -z "$upstream" ]; then
-  printf >&2 '%s\n' 'pre-push: no upstream ref; cannot run push-range safety checks.'
-  printf >&2 '%s\n' 'Set the upstream or push once from a controlled terminal after running the guards manually.'
-  exit 1
+  printf >&2 '%s\n' 'pre-push: no upstream configured; checking all files reachable from HEAD'
 fi
 
+git_diff_names_for_push() {
+  if [ -n "$upstream" ]; then
+    git diff --name-only -z --diff-filter=ACMR "$upstream"...HEAD
+  else
+    empty_tree=$(git hash-object -t tree /dev/null)
+    git diff --name-only -z --diff-filter=ACMR "$empty_tree" HEAD
+  fi
+}
+
+push_paths=$(mktemp "${TMPDIR:-/tmp}/idaho-vault-pre-push.XXXXXX") || { printf >&2 '%s\n' 'pre-push: cannot create temp file.'; exit 2; }
+cleanup() {
+  rm -f "$push_paths"
+}
+trap cleanup EXIT HUP INT TERM
+git_diff_names_for_push >"$push_paths"
+
 printf >&2 '%s\n' 'pre-push: checking secret patterns for commits not on upstream'
-git diff --name-only -z --diff-filter=ACMR "$upstream"...HEAD | python .github/scripts/check_secret_patterns.py --paths-from-stdin
+"$PYTHON" .github/scripts/check_secret_patterns.py --paths-from-stdin --git-ref HEAD <"$push_paths"
 
 printf >&2 '%s\n' 'pre-push: checking large-file policy for commits not on upstream'
-git diff --name-only -z --diff-filter=ACMR "$upstream"...HEAD | python .github/scripts/check_large_files.py --paths-from-stdin
+"$PYTHON" .github/scripts/check_large_files.py --paths-from-stdin <"$push_paths"
 
-printf >&2 '%s\n' "pre-push: uploading LFS objects for HEAD to $1"
-git lfs push "$1" HEAD
+case "${VAULT_HOOK_LFS_MODE:-explicit-head}" in
+  explicit-head)
+    printf >&2 '%s\n' "pre-push: uploading LFS objects reachable from HEAD to $remote_name"
+    git lfs push "$remote_name" HEAD
+    ;;
+  stock)
+    printf >&2 '%s\n' 'pre-push: delegating LFS upload to git lfs pre-push'
+    git lfs pre-push "$@"
+    ;;
+  skip)
+    printf >&2 '%s\n' 'pre-push: skipping LFS upload because VAULT_HOOK_LFS_MODE=skip'
+    ;;
+  *)
+    printf >&2 '%s\n' "pre-push: invalid VAULT_HOOK_LFS_MODE=${VAULT_HOOK_LFS_MODE}; expected explicit-head, stock, or skip"
+    exit 2
+    ;;
+esac
