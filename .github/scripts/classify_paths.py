@@ -8,8 +8,9 @@ The engine reads those flat labels (plus the classifier's affirmative verdict fo
 route + arm; the grid derivation lives in `review_feedback_loop._tier_from_pair` /
 `evaluate_review_state`, pinned by the nine-cell test in `tests/test_review_feedback_loop.py`. The
 binary `tier` field is now vestigial (no label consumes it). Still genuinely deferred: `subtier`
-(TBD, not implemented), and whether the six off-diagonal cells take a gradient vs. the no-gradient
-routing (Logan's ruling). See `WITNESS-THE-KEYS-ARE-THE-LEVERS-2026-06-21.md` (2026-07-20 addendum) + #626.
+(TBD, not implemented), and what each risk label CALLS FOR once applied — the per-label review/revision
+`risk/low`/`risk/med`/`risk/high` each demand (they compose per-PR; `risk/nope` = the sovereign's hand,
+already named). Logan's ruling, deferred. See `WITNESS-THE-KEYS-ARE-THE-LEVERS-2026-06-21.md` (2026-07-20 addendum) + #626.
 
 Conceptualized in the planning session of 2026-06-21 and witnessed in
 `WITNESS-THE-KEYS-ARE-THE-LEVERS-2026-06-21.md`; this is its first implementation,

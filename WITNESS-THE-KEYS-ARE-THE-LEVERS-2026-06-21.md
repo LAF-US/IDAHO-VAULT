@@ -258,9 +258,12 @@ The classification grid — each cell is simply the label(s) that fire:
 (`review_feedback_loop.py` `_tier_from_pair` + the `eligible_for_auto_merge` predicate, `flag_clearable`
 gating on `depth != "nope"`) reads the classification and routes each cell: `—/—` → **auto** on grace;
 any fired flag with filedepth `≠ nope` → **review-hold** (flows once its review completes); any
-filedepth `== nope` → **the sovereign's hand** (never auto). No gradient over the off-diagonals —
-**whether they should take a gradient is still your ruling.** Pinned by
-`tests/test_review_feedback_loop.py` (the nine-cell routing test).
+filedepth `== nope` → **the sovereign's hand** (never auto). Today that review-hold is one uniform lane
+for every flagged non-`nope` cell — a placeholder. **The open design work is per-LABEL, not per-cell**
+(Logan, 2026-07-20): each label, once correctly applied, calls for its own review/revision, and a PR
+owes ALL its labels' calls, which *compose* (as the two-axis classification composes). `risk/nope` is
+already named (the sovereign's hand); what `risk/low`, `risk/med`, `risk/high` each call for is
+**deferred — left open**. Pinned by `tests/test_review_feedback_loop.py` (the nine-cell routing test).
 
 **K4 (positive clear-marker) resolved WITHOUT a label**, per your "flatten, no clear-marker" ruling:
 because `—/—` is absence, the engine never infers *clear* from missing labels — it arms `—/—` only on
