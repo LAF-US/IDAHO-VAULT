@@ -102,38 +102,27 @@ DEFAULT_REVIEW_PENDING_LABEL = "review/pending"
 DEFAULT_AUTO_MERGE_LABEL = "merge/auto"
 DEFAULT_SUGGESTIONS_LABEL = "review/suggestions-ready"
 RISK_LOW_LABEL = "risk/low"
+RISK_MED_LABEL = "risk/med"
 RISK_HIGH_LABEL = "risk/high"
-# K4/#630: the positive `—/—` marker — the label pair where NEITHER analysis fired.
-# Stamped ONLY when classify scored a PR clear. Per Logan's invariant it is MUTUALLY EXCLUSIVE with every
-# risk/* flag — a PR carries `risk/—` XOR a flag, never both.
-RISK_CLEAR_LABEL = "risk/—"
-RISK_FLAG_LABELS = frozenset({RISK_LOW_LABEL, RISK_HIGH_LABEL})
+RISK_NOPE_LABEL = "risk/nope"
 
-# K6/#632 (norm set by Logan, 2026-07-06): the lanes ARE the nine label pairs. Every PR
-# carries exactly TWO axis labels — one per independent analysis — and the pair is the
-# lane (the 3x3 matrix of label pairs):
-#   filetype axis: filetype:risk/— | filetype:risk/low | filetype:risk/med
-#   depth axis:    depth:risk/—    | depth:risk/high   | depth:risk/nope
-# Flags are TRANSIENT ROUTING STATE, never a verdict: the classifier restamps the pair on
+# K6/#632 (flat schema, norm set by Logan): the risk vocabulary is four flat labels across
+# two independent axes — each stamped ONLY when its axis fires. There are no prefixes, no
+# explicit `—` labels, and no separate clear marker.
+#   FILETYPE axis: risk/low (Machine Doc / inert assets) | risk/med (Computer Code — executes)
+#   FILEDEPTH axis: risk/high (Nest depth / protected surface) | risk/nope (the still point —
+#                   the sovereign's own hand, never auto)
+# A PR carries AT MOST one filetype value AND at most one filedepth value (0–2 labels total).
+# `—` on an axis is the ABSENCE of that axis's label; `—/—` (clear) is NO risk/* label at all.
+# Flags are TRANSIENT ROUTING STATE, never a verdict: the classifier restamps them on
 # synchronize (labels mirror the current diff), and when the lane's review completes the
-# engine clears the fired flag (restamps that axis to its `—`) and the PR flows.
-# depth:risk/nope is never auto-cleared — the still point asks for the sovereign's own hand.
-# The sparse single labels above (risk/low, risk/high, risk/—) are the LEGACY vocabulary,
-# still recognized and stamped as the fallback the engine's own pair reader
-# (_risk_pair_for_pr) resolves; the pair takes precedence when present.
-FILETYPE_AXIS_PREFIX = "filetype:risk/"
-DEPTH_AXIS_PREFIX = "depth:risk/"
-AXIS_DASH = "—"
-FILETYPE_PAIR_LABELS = {
-    None: FILETYPE_AXIS_PREFIX + AXIS_DASH,
-    "low": FILETYPE_AXIS_PREFIX + "low",
-    "med": FILETYPE_AXIS_PREFIX + "med",
-}
-DEPTH_PAIR_LABELS = {
-    None: DEPTH_AXIS_PREFIX + AXIS_DASH,
-    "high": DEPTH_AXIS_PREFIX + "high",
-    "nope": DEPTH_AXIS_PREFIX + "nope",
-}
+# engine clears the fired flag (removes it) and the PR flows. risk/nope is never
+# auto-cleared — the still point asks for the sovereign's own hand.
+FILETYPE_RISK_LABELS = {"low": RISK_LOW_LABEL, "med": RISK_MED_LABEL}
+DEPTH_RISK_LABELS = {"high": RISK_HIGH_LABEL, "nope": RISK_NOPE_LABEL}
+RISK_FLAG_LABELS = frozenset(
+    {RISK_LOW_LABEL, RISK_MED_LABEL, RISK_HIGH_LABEL, RISK_NOPE_LABEL}
+)
 AUTO_MERGE_AUTHZ_FRAGMENTS = (
     "Pull request User is not authorized for this protected branch "
     "(enablePullRequestAutoMerge)",
@@ -173,42 +162,22 @@ LABEL_SPECS: dict[str, tuple[str, str]] = {
         "1D76DB",
         "Has bot review threads with committable ```suggestion blocks ready to apply.",
     ),
+    # Flat 4-value risk schema — two axes, each label stamped only when its axis fires.
     RISK_LOW_LABEL: (
         "C2E0C6",
-        "Risk tier: low (only low-risk paths changed).",
+        "Filetype: low (machine documentation / inert assets).",
+    ),
+    RISK_MED_LABEL: (
+        "F9D0C4",
+        "Filetype: med (computer code — executes).",
     ),
     RISK_HIGH_LABEL: (
         "E99695",
-        "Risk tier: high (at least one high-risk path changed).",
+        "Filedepth: high (Nest depth or protected surface).",
     ),
-    RISK_CLEAR_LABEL: (
-        "0E8A16",
-        "The —/— label pair: neither analysis fired; auto-merge on open. Mutually exclusive with risk/*.",
-    ),
-    # K6 pair vocabulary — one label per axis, the pair is the lane.
-    FILETYPE_PAIR_LABELS[None]: (
-        "0E8A16",
-        "Filetype analysis: — (prose/NL; no flag fired on this axis).",
-    ),
-    FILETYPE_PAIR_LABELS["low"]: (
-        "C2E0C6",
-        "Filetype analysis: low (machine documentation / inert assets).",
-    ),
-    FILETYPE_PAIR_LABELS["med"]: (
-        "F9D0C4",
-        "Filetype analysis: med (computer code — executes).",
-    ),
-    DEPTH_PAIR_LABELS[None]: (
-        "0E8A16",
-        "Placement analysis: — (outside the Nest, off every protected surface).",
-    ),
-    DEPTH_PAIR_LABELS["high"]: (
-        "E99695",
-        "Placement analysis: high (Nest depth or protected surface).",
-    ),
-    DEPTH_PAIR_LABELS["nope"]: (
+    RISK_NOPE_LABEL: (
         "B60205",
-        "Placement analysis: nope (the still point — the sovereign's own hand, never auto).",
+        "Filedepth: nope (the still point — the sovereign's own hand, never auto).",
     ),
 }
 
@@ -890,27 +859,8 @@ def _parse_body_marker_value(body: str, marker: str) -> str | None:
     return None
 
 
-def _risk_tier_for_pr(body: str, labels: set[str]) -> str:
-    # Label is canonical: survives body rewrites by human or agent editors.
-    #
-    # A risk/* flag ALWAYS wins over the clear marker. Per the K4/#630 invariant the
-    # two are mutually exclusive — `risk/—` XOR a flag — so if a flag is somehow present
-    # alongside risk/—, a sorter DID fire and the PR is not clear. Resolving flag-first
-    # fails safe (hold, never auto-merge); the loud-failing exclusion check lives in
-    # `_assert_risk_marker_exclusive` and the tests.
-    if RISK_HIGH_LABEL in labels:
-        return "high"
-    if RISK_LOW_LABEL in labels:
-        return "low"
-    # Positive clear marker (the —/— label pair): the ONLY state that arms auto-merge (K3/#629).
-    # Absence of this marker is NOT classified-clear — an unmarked PR HOLDS (K4/#630).
-    if RISK_CLEAR_LABEL in labels:
-        return "clear"
-    return "unknown"
-
-
 class RiskMarkerInvariantError(ValueError):
-    """The K4 risk-marker invariant was violated: `risk/—` alongside a risk/* flag.
+    """A per-axis risk-marker invariant was violated: two values on a single axis.
 
     A dedicated type (not a bare ValueError) so callers can catch EXACTLY this breach
     and never mistake an unrelated ValueError from the evaluate path for an invariant
@@ -918,64 +868,45 @@ class RiskMarkerInvariantError(ValueError):
 
 
 def _assert_risk_marker_exclusive(labels: set[str]) -> None:
-    """Fail loud on the one state the K4 invariant forbids: `risk/—` alongside a flag.
+    """Fail loud on the one state the flat schema forbids: two values on a single axis.
 
-    The clear marker means "no sorter fired"; a risk/* flag means one did. Both at once
-    is a producer/backfill bug, not a routing decision — raise so it can never silently
-    auto-merge a PR that a sorter actually flagged."""
-    if RISK_CLEAR_LABEL in labels and (labels & RISK_FLAG_LABELS):
-        collision = sorted(labels & (RISK_FLAG_LABELS | {RISK_CLEAR_LABEL}))
+    Each axis carries AT MOST one flat label — risk/low XOR risk/med on the filetype
+    axis, risk/high XOR risk/nope on the filedepth axis. Both values on one axis is a
+    producer/backfill bug, not a routing decision — raise so it can never silently route
+    a PR whose axis is self-contradictory."""
+    if RISK_LOW_LABEL in labels and RISK_MED_LABEL in labels:
         raise RiskMarkerInvariantError(
-            f"risk-marker invariant violated: {RISK_CLEAR_LABEL} is mutually exclusive "
-            f"with risk/* flags, but this PR carries {collision}. A clear PR carries "
-            f"{RISK_CLEAR_LABEL} XOR a flag, never both."
+            f"risk-marker invariant violated: the filetype axis carries both "
+            f"{RISK_LOW_LABEL} and {RISK_MED_LABEL}. Each axis carries at most ONE "
+            f"value, never both."
         )
-
-
-def _axis_flag(labels: set[str], prefix: str, axis_name: str) -> tuple[bool, str | None]:
-    """Parse ONE axis's label off the K6 pair vocabulary.
-
-    Returns ``(marked, flag)``: ``marked`` is True iff the axis carries a pair label at
-    all; ``flag`` is None for the axis's `—` or the fired value. More than one label on
-    a single axis is the per-axis mutual-exclusion breach — fail loud, never route."""
-    values = sorted({label[len(prefix):] for label in labels if label.startswith(prefix)})
-    if len(values) > 1:
+    if RISK_HIGH_LABEL in labels and RISK_NOPE_LABEL in labels:
         raise RiskMarkerInvariantError(
-            f"risk-pair invariant violated: the {axis_name} axis carries "
-            f"{[prefix + v for v in values]}. Each axis carries exactly ONE label — "
-            f"its `{AXIS_DASH}` XOR its fired flag, never both."
+            f"risk-marker invariant violated: the filedepth axis carries both "
+            f"{RISK_HIGH_LABEL} and {RISK_NOPE_LABEL}. Each axis carries at most ONE "
+            f"value, never both."
         )
-    if not values:
-        return (False, None)
-    value = values[0]
-    return (True, None if value == AXIS_DASH else value)
 
 
 def _risk_pair_for_pr(labels: set[str]) -> tuple[str | None, str | None, bool]:
-    """(filetype_flag, depth_flag, fully_marked) — the K6 lane, read off the label pair.
+    """(filetype_flag, depth_flag, classified) — the lane, read off the flat labels.
 
-    Falls back per-axis to the legacy sparse vocabulary (risk/low, risk/high, risk/—)
-    during the transition. ``fully_marked=False`` means at least one axis carries no
-    information — and an unmarked axis is NOT classified-clear (K4): the PR holds."""
-    ft_marked, ft = _axis_flag(labels, FILETYPE_AXIS_PREFIX, "filetype")
-    dp_marked, dp = _axis_flag(labels, DEPTH_AXIS_PREFIX, "depth")
-    # Legacy fallback: each sparse label was a COMPLETE single-label verdict, so any one
-    # of them marks BOTH axes (risk/low meant "filetype low, placement clear"; risk/high
-    # meant "placement risk"; risk/— meant both analyses clear). The restamp corrects the
-    # pair from the classifier on the next pass either way.
-    if not (ft_marked and dp_marked):
-        if RISK_HIGH_LABEL in labels:
-            if not dp_marked:
-                dp = "high"
-            ft_marked = dp_marked = True
-        elif RISK_LOW_LABEL in labels:
-            if not ft_marked:
-                ft = "low"
-            ft_marked = dp_marked = True
-        elif RISK_CLEAR_LABEL in labels:
-            # The K4 sparse clear marker asserts BOTH analyses scored clear.
-            ft_marked = dp_marked = True
-    return (ft, dp, ft_marked and dp_marked)
+    ``filetype_flag`` is "med"/"low"/None; ``depth_flag`` is "nope"/"high"/None.
+    ``classified`` is True iff ANY risk/* flag is present — no flag present means we
+    cannot confirm the PR was classified from labels alone (an all-absent PR is NOT
+    classified-clear: it holds until an affirmative verdict says otherwise)."""
+    filetype_flag = (
+        "med" if RISK_MED_LABEL in labels
+        else "low" if RISK_LOW_LABEL in labels
+        else None
+    )
+    depth_flag = (
+        "nope" if RISK_NOPE_LABEL in labels
+        else "high" if RISK_HIGH_LABEL in labels
+        else None
+    )
+    classified = bool(labels & RISK_FLAG_LABELS)
+    return (filetype_flag, depth_flag, classified)
 
 
 def _tier_from_pair(filetype_flag: str | None, depth_flag: str | None, marked: bool) -> str:
@@ -1026,29 +957,20 @@ def restamp_risk_pair(
     filetype_flag: str | None,
     depth_flag: str | None,
 ) -> list[str]:
-    """Make the PR's risk labels mirror the classifier's verdict — the K6 'restamp'.
+    """Make the PR's risk labels mirror the classifier's verdict — the 'restamp'.
 
-    Stamps the axis pair AND keeps the legacy sparse vocabulary in sync as the engine's
-    own fallback (_risk_pair_for_pr); the K4 global exclusion — risk/— XOR flags — holds
-    by construction because the derived tier is single-valued).
-    Mutates ``labels`` in place and returns the actions taken."""
+    ``desired`` is the flat label for each fired axis: the filetype label if
+    ``filetype_flag`` is set, plus the filedepth label if ``depth_flag`` is set. A `—/—`
+    verdict (both None) yields an EMPTY desired set — a clear verdict stamps nothing and
+    removes any stale risk/* label. ``managed`` is the full flat set, so managed-not-desired
+    labels are removed. Mutates ``labels`` in place and returns the actions taken."""
     actions: list[str] = []
-    tier = _tier_from_pair(filetype_flag, depth_flag, True)
-    desired = {FILETYPE_PAIR_LABELS[filetype_flag], DEPTH_PAIR_LABELS[depth_flag]}
-    if tier == "clear":
-        desired.add(RISK_CLEAR_LABEL)
-    elif tier == "low":
-        desired.add(RISK_LOW_LABEL)
-    elif tier in ("high", "nope"):
-        desired.add(RISK_HIGH_LABEL)
-    # tier == "med": no legacy flag — binary-legacy high meant placement risk; the med
-    # lane holds via the pair itself during the transition.
-    managed = (
-        set(FILETYPE_PAIR_LABELS.values())
-        | set(DEPTH_PAIR_LABELS.values())
-        | RISK_FLAG_LABELS
-        | {RISK_CLEAR_LABEL}
-    )
+    desired: set[str] = set()
+    if filetype_flag is not None:
+        desired.add(FILETYPE_RISK_LABELS[filetype_flag])
+    if depth_flag is not None:
+        desired.add(DEPTH_RISK_LABELS[depth_flag])
+    managed = set(RISK_FLAG_LABELS)
     for label in sorted(desired - labels):
         _edit_label(pr_number, add=label)
         labels.add(label)
@@ -1066,8 +988,15 @@ def evaluate_review_state(
     now: datetime | None = None,
     grace_minutes: int = DEFAULT_GRACE_MINUTES,
     auto_resolve_reviewers: set[str] | None = None,
+    verdict: tuple[str | None, str | None] | None = None,
 ) -> dict[str, object]:
-    """Return one machine-readable view of the PR's current review state."""
+    """Return one machine-readable view of the PR's current review state.
+
+    ``verdict`` is an optional caller-supplied ``(filetype_flag, depth_flag)`` straight
+    from the classifier — passed by the POST-classify evaluate calls so a `—/—` verdict
+    is affirmatively clear even with zero labels. Without a verdict the flags are read off
+    the labels, and an all-absent PR is ``unknown`` and HOLDS (never armed) — the safety
+    property that absence of a label is not the clear state."""
 
     label_names = {
         node["name"]
@@ -1103,12 +1032,17 @@ def evaluate_review_state(
     draft = bool(pr.get("isDraft"))
     blocking_review = review_decision == "CHANGES_REQUESTED"
     _assert_risk_marker_exclusive(label_names)
-    # K6/#632: the lane is the label PAIR (filetype axis x depth axis), with per-axis
-    # legacy fallback during the transition. The derived single tier keeps the old
-    # vocabulary alive for reports/consumers.
-    filetype_flag, depth_flag, pair_marked = _risk_pair_for_pr(label_names)
+    # The lane is the flat (filetype, depth) pair. A caller-supplied verdict (the classifier's
+    # fresh reading) is authoritative and always "marked" — so a `—/—` verdict is affirmatively
+    # clear even with zero labels. Without a verdict the flags are read off the labels, and an
+    # all-absent PR is NOT marked (unknown, holds — absence of a label is not the clear state).
+    if verdict is not None:
+        filetype_flag, depth_flag = verdict
+        pair_marked = True
+    else:
+        filetype_flag, depth_flag, pair_marked = _risk_pair_for_pr(label_names)
     risk_tier = _tier_from_pair(filetype_flag, depth_flag, pair_marked)
-    is_clear = risk_tier == "clear"
+    is_clear = pair_marked and filetype_flag is None and depth_flag is None
     low_risk = risk_tier == "low"
     merge_blocked = draft or blocking_review or current_unresolved > 0
     # K6 lane completion — flags are transient routing state, consumed as the PR clears
@@ -1209,10 +1143,10 @@ def apply_review_state_projection(
         actions.append(f"remove:{DEFAULT_PENDING_LABEL}")
         current_labels.discard(DEFAULT_PENDING_LABEL)
 
-    # K6 clear-on-completion: the lane's review completed, so the fired flag is CONSUMED —
-    # restamp each fired axis to its `—` and retire contradicted legacy sparse flags. The
-    # next synchronize (new code) restamps from the classifier and re-enters the lane;
-    # with no new code the cleared pair arms and the PR flows. nope is never touched.
+    # Clear-on-completion: the lane's review completed, so the fired flag is CONSUMED —
+    # restamp to `—/—`, removing every risk/* flag (a clear verdict stamps none). The next
+    # synchronize (new code) restamps from the classifier and re-enters the lane; with no
+    # new code the cleared (label-free) PR arms and flows. nope is never flag_clearable.
     if bool(state.get("lane_complete")) and bool(state.get("flag_clearable")):
         actions.extend(
             restamp_risk_pair(pr_number, current_labels, None, None)
@@ -1374,14 +1308,17 @@ def _build_reconciliation_report(
                         if node.get("name")
                     }
                     restamp_actions = restamp_risk_pair(pr_number, label_set, ft_flag, dp_flag)
-                    if restamp_actions:
-                        pr["labels"] = {"nodes": [{"name": name} for name in sorted(label_set)]}
-                        state = evaluate_review_state(
-                            pr,
-                            now=now,
-                            grace_minutes=grace_minutes,
-                            auto_resolve_reviewers=auto_resolve_reviewers,
-                        )
+                    pr["labels"] = {"nodes": [{"name": name} for name in sorted(label_set)]}
+                    # Re-evaluate with the classifier's verdict as authoritative: a `—/—`
+                    # verdict is affirmatively clear even though it stamps no labels, so this
+                    # runs even when the restamp produced no label actions.
+                    state = evaluate_review_state(
+                        pr,
+                        now=now,
+                        grace_minutes=grace_minutes,
+                        auto_resolve_reviewers=auto_resolve_reviewers,
+                        verdict=(ft_flag, dp_flag),
+                    )
         except RiskMarkerInvariantError as exc:
             # The K4/K6 mutual-exclusion invariant tripped on THIS PR. Fail loud — record
             # it and surface a non-zero exit — but do NOT abort the sweep: one mis-labeled
@@ -1547,13 +1484,16 @@ def sync_pr(args: argparse.Namespace) -> int:
                 if node.get("name")
             }
             restamp_actions = restamp_risk_pair(args.pr_number, label_set, ft_flag, dp_flag)
-            if restamp_actions:
-                pr["labels"] = {"nodes": [{"name": name} for name in sorted(label_set)]}
-                state = evaluate_review_state(
-                    pr,
-                    grace_minutes=args.grace_minutes,
-                    auto_resolve_reviewers=auto_resolve_reviewers,
-                )
+            pr["labels"] = {"nodes": [{"name": name} for name in sorted(label_set)]}
+            # Re-evaluate with the classifier's verdict as authoritative: a `—/—` verdict
+            # is affirmatively clear even though it stamps no labels, so this must run even
+            # when the restamp produced no label actions.
+            state = evaluate_review_state(
+                pr,
+                grace_minutes=args.grace_minutes,
+                auto_resolve_reviewers=auto_resolve_reviewers,
+                verdict=(ft_flag, dp_flag),
+            )
 
     clear_pending = (
         args.sync_actor in completion_actors and bool(state["has_copilot_apply_pending"])

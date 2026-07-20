@@ -232,42 +232,40 @@ Not built; recorded — a bearing for the refactor.
 
 ---
 
-**Addendum — 2026-07-19 (the mechanism converged; the grid is now DERIVED — proposed, Logan inscribes).**
-*Appended by Claude Code, session `…01Fipj4vEJ5ADPuunn9ed5Hd`. This does NOT overwrite the witness above;
-it records that the "held until the system mechanism is determined" condition (the binding rule at
-"The grid is a MODEL of the system") has since been MET, and reads the six open cells off the built
-system as that rule requires — not by hand-assignment.*
+**Addendum — 2026-07-20 (the flat four-value schema; classification kept separate from routing — proposed, Logan inscribes).**
+*Appended by Claude Code, session `…01Fipj4vEJ5ADPuunn9ed5Hd`; does NOT overwrite the witness above.
+Supersedes an earlier 2026-07-19 addendum that described a prefixed `filetype:risk/*` + `depth:risk/*`
+pair — that was the code's drift, not the schema. Logan's ruling: the risk vocabulary is FOUR FLAT
+labels, and classification is a separate layer from routing.*
 
-What converged since 2026-06-21:
-- The per-author fast-path lanes (`dependabot-rhythm.yml`, `auto-merge-rhythm.yml`) were retired
-  (2026-07-19, `PREFIX-FREE-ROUTING-2026-07-19.md`). The lanes are now three: **auto**, **review-hold**,
-  **sovereign's-hand** — exactly the three the routing words named.
-- K1/K2 (single source of placement risk) folded into the classifier / CODEOWNERS; K5 (one merge
-  method, `--merge`) is fixed and test-enforced (`test_workflow_security_invariants`).
+**The schema is CLASSIFICATION — four flat labels, `—` = absence.** Each axis fires one value or none:
+- **filetype** fires `risk/low` (Machine Doc) or `risk/med` (Code); `—` (Natural Language) = no label.
+- **filedepth** fires `risk/high` (Nest / protected) or `risk/nope` (still-point); `—` (root) = no label.
 
-Reading the cells off the system — the derivation lives in `review_feedback_loop.py`
-`_tier_from_pair` (`:981`) + the `eligible_for_auto_merge` predicate (`:1128`), with `flag_clearable`
-gating on `depth != "nope"` (`:1121`). It routes all nine cells, **with no gradient**:
+A PR carries at most one of each (0–2 labels). `—/—` = **no `risk/*` label at all**. No prefixes, no
+explicit `—` labels, no separate clear-marker. (This retired the drifted 9-string scheme — the prefixed
+pair + a lossy legacy `risk/{—,low,high}` trio — flattened to these four on 2026-07-20.)
 
-| route | **depth `—`** | **depth `high`** | **depth `nope`** |
+The classification grid — each cell is simply the label(s) that fire:
+
+| | **filedepth `—`** | **filedepth `high`** | **filedepth `nope`** |
 |---|---|---|---|
-| **ft `—`**  | ✅ **auto on open** | ⏸ **review-hold** | ⛔ **sovereign's-hand** |
-| **ft `low`**| ⏸ **review-hold** | ⏸ **review-hold** (pinned) | ⛔ **sovereign's-hand** |
-| **ft `med`**| ⏸ **review-hold** | ⏸ **review-hold** | ⛔ **never** (pinned) |
+| **filetype `—`**  | *(no label)* | `risk/high` | `risk/nope` |
+| **filetype `low`**| `risk/low` | `risk/low` + `risk/high` | `risk/low` + `risk/nope` |
+| **filetype `med`**| `risk/med` | `risk/med` + `risk/high` | `risk/med` + `risk/nope` |
 
-- **auto** = `—/—` (clear marker) arms on grace, no review lane.
-- **review-hold** = any fired flag with `depth != nope`: eligible ONLY once its lane completes
-  (APPROVED + threads clear); the flag then clears (K6) and the PR flows. Matches the pinned `low/high`.
-- **sovereign's-hand** = any `depth == nope`: never auto, even fully approved. Matches the pinned `med/nope`.
-- An unmarked (not-yet-classified) PR is `unknown` → HOLDS (the K4 positive-marker requirement).
+**Routing is a SEPARATE downstream layer** (not part of the classification above). The engine
+(`review_feedback_loop.py` `_tier_from_pair` + the `eligible_for_auto_merge` predicate, `flag_clearable`
+gating on `depth != "nope"`) reads the classification and routes each cell: `—/—` → **auto** on grace;
+any fired flag with filedepth `≠ nope` → **review-hold** (flows once its review completes); any
+filedepth `== nope` → **the sovereign's hand** (never auto). No gradient over the off-diagonals —
+**whether they should take a gradient is still your ruling.** Pinned by
+`tests/test_review_feedback_loop.py` (the nine-cell routing test).
 
-This grid is now **executable and pinned**: `tests/test_review_feedback_loop.py::test_nine_cell_grid_routing_is_the_single_source`
-asserts every cell against the engine, so it cannot silently drift.
-
-**The one open cell, for Logan's ruling** (the framing left open at lines 169–172): the derivation
-above collapses the six off-diagonal cells with **no gradient** — a fired flag is a fired flag,
-however heavy. If the off-diagonals should instead **interpolate a gradient** (e.g. `med/high` routed
-differently from `low/—`), that is new routing code, not a recording, and is yours to rule. Absent
-that ruling, the proposal is: **ratify the no-gradient derivation as the settled grid.**
+**K4 (positive clear-marker) resolved WITHOUT a label**, per your "flatten, no clear-marker" ruling:
+because `—/—` is absence, the engine never infers *clear* from missing labels — it arms `—/—` only on
+the classifier's affirmative verdict (`evaluate_review_state(..., verdict=(None,None))`, passed by the
+paths that just classified). An unclassified PR (no verdict, no labels) is `unknown` and HOLDS —
+tested by `…unclassified_pr_without_verdict_never_arms`.
 
 ###### [["The world is quiet here."]]
