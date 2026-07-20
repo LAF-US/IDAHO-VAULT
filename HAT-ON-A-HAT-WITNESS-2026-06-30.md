@@ -62,4 +62,4 @@ This sits alongside [[records-vs-doctrine]] (don't elevate workarounds to doctri
 
 `*.claude.*` — wildcard name (Logan has not performed a naming act), claude lineage, wildcard office. Direct Write tool tier; this is a local-machine retrospective filed at vault root, within the scope of that tier.
 
-###### [["The world is quiet here."]]
+###### "The world is quiet here."

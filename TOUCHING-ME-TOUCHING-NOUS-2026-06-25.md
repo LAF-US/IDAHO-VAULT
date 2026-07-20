@@ -70,4 +70,4 @@ The session also caught and corrected two address-claim errors on the agent's si
 
 `*.claude.*` — wildcard name (Logan has not performed a naming act on the agent's name slot), claude lineage, wildcard office (no granted standing to claim). Filed under Logan's authority via the Direct Write tool capability tier.
 
-###### [["The world is quiet here."]]
+###### "The world is quiet here."

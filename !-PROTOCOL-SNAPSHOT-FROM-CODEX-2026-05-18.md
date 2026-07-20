@@ -81,4 +81,4 @@ Names referenced in vault discussion or closed PRs but lacking a defined surface
 
 - **PULLMAN** — two distinct referents: (1) **Pullman Company** — railroad car manufacturer; transportation vessel (sense used in PR #227 `antigravity/pullman-oidc-pipeline` for the AFFABLE BASTION OIDC carrier); (2) **Philip Pullman** — author of *His Dark Materials* (Lyra cosmology, subtle knife, Dust; relates to `!/THRESHOLD-DOCTRINE-v1-2026-05-21.md`'s intrinsic-fitness model). Pinned 2026-05-28.
 
-###### [["The world is quiet here."]]
+###### "The world is quiet here."

@@ -197,4 +197,4 @@ engineered around them?
 *For Isthmus-specific vault mappings — Grotesquery risk, Teleporter risk,
 two-component counter — see `!/ISTHMUS-MECHANISM-v1-2026-05-21.md`.*
 
-###### [["The world is quiet here."]]
+###### "The world is quiet here."

@@ -82,4 +82,4 @@ All changes sit in the working tree / index for Logan's review; nothing pushed.
 `*.claude.*` — wildcard name, claude lineage, wildcard office. Direct Write tier; local-machine + vault-surface change, staged for Logan's review.
 Claude-Session: `4f03d270-3e64-41cc-b325-30871ab76d55`
 
-###### [["The world is quiet here."]]
+###### "The world is quiet here."

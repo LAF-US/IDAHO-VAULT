@@ -209,5 +209,5 @@ Each dotfolder can be activated as a **prismatic layer** by stacking:
 
 ---
 
-###### [["The world is quiet here."]]
+###### "The world is quiet here."
 ###### [ Maiden : Mother : Crone ]
