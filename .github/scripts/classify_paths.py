@@ -1,14 +1,15 @@
 """Classify changed file paths into the two-paired-flag risk scheme.
 
-NEXT AGENT — what is now WIRED (updated 2026-07-19): the two-axis PAIR is live. `agent-auto-pr.yml`
-stamps `filetype:risk/<x>` + `depth:risk/<x>` from the `filetype`/`depth` fields, and
-`review_feedback_loop.py` READS that pair to route + arm — the grid is DERIVED there
-(`evaluate_review_state` / `_tier_from_pair`), pinned by the nine-cell test in
-`tests/test_review_feedback_loop.py`. The binary `tier` (low|high) stays only for the LEGACY
-`risk/<tier>` label during the vocabulary transition. Still genuinely deferred: `subtier` (TBD, not
-implemented), and whether the six off-diagonal cells take a gradient vs. the derived no-gradient
-routing (Logan's ruling). If you wire a NEW `tier4` consumer, it MUST handle `clear` (do not hardcode
-`{low,med,high,nope}`). See `WITNESS-THE-KEYS-ARE-THE-LEVERS-2026-06-21.md` (2026-07-19 addendum) + #626.
+NEXT AGENT — the label schema (updated 2026-07-20, Logan's flatten ruling): FOUR FLAT labels.
+`agent-auto-pr.yml` and `review_feedback_loop.py` map the `filetype`/`depth` fields to
+`risk/{low,med,high,nope}` — filetype fires `risk/low`|`risk/med`, filedepth fires
+`risk/high`|`risk/nope`, and `—` on an axis stamps NO label (`—/—` clear = no `risk/*` label at all).
+The engine reads those flat labels (plus the classifier's affirmative verdict for the `—/—` case) to
+route + arm; the grid derivation lives in `review_feedback_loop._tier_from_pair` /
+`evaluate_review_state`, pinned by the nine-cell test in `tests/test_review_feedback_loop.py`. The
+binary `tier` field is now vestigial (no label consumes it). Still genuinely deferred: `subtier`
+(TBD, not implemented), and whether the six off-diagonal cells take a gradient vs. the no-gradient
+routing (Logan's ruling). See `WITNESS-THE-KEYS-ARE-THE-LEVERS-2026-06-21.md` (2026-07-20 addendum) + #626.
 
 Conceptualized in the planning session of 2026-06-21 and witnessed in
 `WITNESS-THE-KEYS-ARE-THE-LEVERS-2026-06-21.md`; this is its first implementation,
@@ -34,17 +35,15 @@ verdicts COMPOSE into the grid — a Nest .py is ("med", "high"); a prose maze f
 (None, None), the `—/—` "clear" cell (the blueprint's auto-merge state). This supersedes
 the earlier single pass where placement suppressed filetype.
 
-JSON output — `tier` stays BINARY (low|high) to preserve the existing `risk/<tier>` label
-contract: `agent-auto-pr.yml` stamps `--label risk/$tier` and `ensure-labels` only creates
-`risk/low`/`risk/high`, so emitting `med`/`nope` here would break PR creation. The richer
-result lives in the `tier4` field, and the two-axis pair (`filetype`/`depth`) is stamped as the
-`filetype:risk/*` + `depth:risk/*` labels the engine now routes on. `clear` still collapses to binary
-`low` for the LEGACY `risk/<tier>` label, so the `—/—` distinction lives in `tier4`/the pair — which
-the engine READS (the consumer-wiring step is DONE; see WITNESS-THE-KEYS-ARE-THE-LEVERS-2026-06-21.md
-2026-07-19 addendum, and #626).
+JSON output — the labels come from the two axis fields directly (flat schema, 2026-07-20):
+`filetype` -> `risk/low`|`risk/med` (or no label when `—`), `depth` -> `risk/high`|`risk/nope` (or no
+label when `—`); `—/—` stamps no `risk/*` label at all. `tier` (binary) and `tier4` are retained as
+informational verdicts — `tier` is now vestigial (no label consumes it); `tier4` is the composed
+four-state read (nope>high>med>low>clear). See WITNESS-THE-KEYS-ARE-THE-LEVERS-2026-06-21.md
+(2026-07-20 addendum) and #626.
   {
-    "tier": "low"|"high",                         # BINARY legacy label (risk/<tier>); clear+low -> low
-    "tier4": "clear"|"low"|"med"|"high"|"nope",   # the result (nope>high>med>low>clear)
+    "tier": "low"|"high",                         # vestigial binary verdict (no label consumes it)
+    "tier4": "clear"|"low"|"med"|"high"|"nope",   # composed read (nope>high>med>low>clear)
     "filetype": None|"low"|"med",                 # riskiest filetype touched (scored for EVERY file,
                                                   #   Nest included); None = `—` (prose/NL)
     "depth": "high"|"nope"|None,                  # riskiest PLACEMENT touched (Nest depth + protected

@@ -107,24 +107,27 @@ def _pr(
 
 class ReviewFeedbackLoopTest(unittest.TestCase):
     def test_clear_pair_pr_becomes_auto_merge_eligible_after_grace(self) -> None:
-        # K3/#629: the `—/—` pair — and ONLY it — arms auto-merge. A PR that classify
-        # scored clear (risk/—) with no blocking feedback is eligible once the grace window
-        # elapses; within grace it is not yet eligible.
+        # K3/#629: the `—/—` verdict — and ONLY it — arms auto-merge. A PR that classify
+        # scored clear (no risk/* label) with no blocking feedback is eligible once the grace
+        # window elapses; within grace it is not yet eligible. The clear state is affirmed by
+        # the classifier's `(None, None)` verdict (no labels to read).
         now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
 
         early_state = review_feedback_loop.evaluate_review_state(
             _pr(
                 created_at=now - timedelta(minutes=10),
-                labels=(review_feedback_loop.RISK_CLEAR_LABEL,),
+                labels=(),
             ),
             now=now,
+            verdict=(None, None),
         )
         ready_state = review_feedback_loop.evaluate_review_state(
             _pr(
                 created_at=now - timedelta(minutes=45),
-                labels=(review_feedback_loop.RISK_CLEAR_LABEL,),
+                labels=(),
             ),
             now=now,
+            verdict=(None, None),
         )
 
         self.assertTrue(early_state["is_clear"])
@@ -146,8 +149,17 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         #   sovereign/never : any depth == nope → never eligible, even fully approved
         now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
         past_grace = now - timedelta(minutes=45)
-        ft_label = review_feedback_loop.FILETYPE_PAIR_LABELS
-        dp_label = review_feedback_loop.DEPTH_PAIR_LABELS
+        ft_label = {"low": review_feedback_loop.RISK_LOW_LABEL,
+                    "med": review_feedback_loop.RISK_MED_LABEL}
+        dp_label = {"high": review_feedback_loop.RISK_HIGH_LABEL,
+                    "nope": review_feedback_loop.RISK_NOPE_LABEL}
+
+        def _flat_labels(ft: str | None, dp: str | None) -> tuple[str, ...]:
+            # Flat schema: a fired axis stamps one label; `—` on an axis stamps nothing.
+            return tuple(
+                label for label in (ft_label.get(ft), dp_label.get(dp)) if label
+            )
+
         AUTO, HOLD, NEVER = "auto", "review-hold", "never"
         grid = {
             (None, None): AUTO,
@@ -161,15 +173,26 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             ("med", "nope"): NEVER,
         }
         for (ft, dp), lane in grid.items():
-            pair = (ft_label[ft], dp_label[dp])
             with self.subTest(cell=f"ft={ft}/dp={dp}", lane=lane):
-                unreviewed = review_feedback_loop.evaluate_review_state(
-                    _pr(created_at=past_grace, labels=pair), now=now
-                )
-                approved = review_feedback_loop.evaluate_review_state(
-                    _pr(created_at=past_grace, labels=pair, review_decision="APPROVED"),
-                    now=now,
-                )
+                if lane == AUTO:
+                    # The `—/—` cell carries NO labels; its clear state is affirmed by the
+                    # classifier's verdict, mirroring how sync_pr calls it post-classify.
+                    unreviewed = review_feedback_loop.evaluate_review_state(
+                        _pr(created_at=past_grace, labels=()), now=now, verdict=(None, None)
+                    )
+                    approved = review_feedback_loop.evaluate_review_state(
+                        _pr(created_at=past_grace, labels=(), review_decision="APPROVED"),
+                        now=now, verdict=(None, None),
+                    )
+                else:
+                    flat = _flat_labels(ft, dp)
+                    unreviewed = review_feedback_loop.evaluate_review_state(
+                        _pr(created_at=past_grace, labels=flat), now=now
+                    )
+                    approved = review_feedback_loop.evaluate_review_state(
+                        _pr(created_at=past_grace, labels=flat, review_decision="APPROVED"),
+                        now=now,
+                    )
                 if lane == AUTO:
                     self.assertTrue(
                         unreviewed["eligible_for_auto_merge"],
@@ -252,58 +275,60 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertFalse(state["eligible_for_auto_merge"])
 
     def test_pair_lane_parses_both_axes(self) -> None:
-        # K6/#632: the lane IS the label pair — one label per independent analysis.
+        # Flat schema: read one flag per axis off the flat labels; `classified` is True iff
+        # ANY risk/* flag is present.
         rfl = review_feedback_loop
-        ft, dp, marked = rfl._risk_pair_for_pr({"filetype:risk/—", "depth:risk/—"})
-        self.assertEqual((ft, dp, marked), (None, None, True))
-        ft, dp, marked = rfl._risk_pair_for_pr({"filetype:risk/med", "depth:risk/high"})
-        self.assertEqual((ft, dp, marked), ("med", "high", True))
-        ft, dp, marked = rfl._risk_pair_for_pr({"filetype:risk/low", "depth:risk/nope"})
-        self.assertEqual((ft, dp, marked), ("low", "nope", True))
-        # One axis unmarked (and no legacy fallback) -> NOT fully marked: the PR holds.
-        ft, dp, marked = rfl._risk_pair_for_pr({"filetype:risk/med"})
-        self.assertFalse(marked)
+        # No flags at all -> nothing to read; NOT classified from labels alone.
+        ft, dp, classified = rfl._risk_pair_for_pr(set())
+        self.assertEqual((ft, dp, classified), (None, None, False))
+        ft, dp, classified = rfl._risk_pair_for_pr({"risk/med", "risk/high"})
+        self.assertEqual((ft, dp, classified), ("med", "high", True))
+        ft, dp, classified = rfl._risk_pair_for_pr({"risk/low", "risk/nope"})
+        self.assertEqual((ft, dp, classified), ("low", "nope", True))
+        # One axis fired, the other absent -> the fired flag is read; classified is True.
+        ft, dp, classified = rfl._risk_pair_for_pr({"risk/med"})
+        self.assertEqual((ft, dp, classified), ("med", None, True))
 
     def test_pair_axis_exclusion_fails_loud(self) -> None:
-        # K6 per-axis mutual exclusion: an axis carries exactly ONE label — its `—` XOR
-        # its fired flag. Two labels on one axis is a producer/restamp bug: raise.
+        # Per-axis mutual exclusion: an axis carries AT MOST one value. Two values on one
+        # axis is a producer/restamp bug: _assert_risk_marker_exclusive raises.
         rfl = review_feedback_loop
         for labels in (
-            {"filetype:risk/—", "filetype:risk/med", "depth:risk/—"},
-            {"filetype:risk/low", "filetype:risk/med"},
-            {"depth:risk/high", "depth:risk/nope", "filetype:risk/—"},
+            {"risk/low", "risk/med"},
+            {"risk/high", "risk/nope"},
+            {"risk/low", "risk/med", "risk/high"},
         ):
             with self.subTest(labels=labels):
                 with self.assertRaises(rfl.RiskMarkerInvariantError):
-                    rfl._risk_pair_for_pr(labels)
+                    rfl._assert_risk_marker_exclusive(labels)
 
     def test_pair_clear_arms_and_pair_flag_holds(self) -> None:
-        # The {—,—} pair arms after grace; a fired lane holds until its review completes.
+        # The `—/—` verdict arms after grace; a fired lane holds until its review completes.
         now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
         clear_state = review_feedback_loop.evaluate_review_state(
-            _pr(created_at=now - timedelta(minutes=45),
-                labels=("filetype:risk/—", "depth:risk/—")),
+            _pr(created_at=now - timedelta(minutes=45), labels=()),
             now=now,
+            verdict=(None, None),
         )
         self.assertTrue(clear_state["is_clear"])
         self.assertTrue(clear_state["eligible_for_auto_merge"])
 
         held_state = review_feedback_loop.evaluate_review_state(
             _pr(created_at=now - timedelta(minutes=45),
-                labels=("filetype:risk/med", "depth:risk/—")),
+                labels=(review_feedback_loop.RISK_MED_LABEL,)),
             now=now,
         )
         self.assertEqual(held_state["risk_tier"], "med")
         self.assertFalse(held_state["eligible_for_auto_merge"])
 
     def test_lane_completion_clears_flag_and_flows(self) -> None:
-        # K6 "Restamp + clear": an approving review with no current threads completes the
+        # "Restamp + clear": an approving review with no current threads completes the
         # lane — the PR becomes eligible, and the projection consumes the fired flag
-        # (restamps the axis to its `—`).
+        # (removes the flat label; a clear verdict stamps none).
         now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
         state = review_feedback_loop.evaluate_review_state(
             _pr(created_at=now - timedelta(minutes=45),
-                labels=("filetype:risk/med", "depth:risk/—"),
+                labels=(review_feedback_loop.RISK_MED_LABEL,),
                 review_decision="APPROVED"),
             now=now,
         )
@@ -314,17 +339,18 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         with mock.patch.object(review_feedback_loop, "_edit_label") as edit_label, \
              mock.patch.object(review_feedback_loop, "_disable_auto_merge"):
             actions = review_feedback_loop.apply_review_state_projection(17, state)
-        self.assertIn("add:filetype:risk/—", actions)
-        self.assertIn("remove:filetype:risk/med", actions)
-        edit_label.assert_any_call(17, add="filetype:risk/—")
+        self.assertIn("remove:risk/med", actions)
+        # A clear verdict adds nothing.
+        self.assertNotIn("add:risk/med", actions)
+        edit_label.assert_any_call(17, remove="risk/med")
 
     def test_nope_lane_never_auto_clears_even_approved(self) -> None:
-        # The still point asks for the sovereign's own hand: depth:risk/nope is never
-        # consumed by review completion and never arms.
+        # The still point asks for the sovereign's own hand: risk/nope is never consumed by
+        # review completion and never arms.
         now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
         state = review_feedback_loop.evaluate_review_state(
             _pr(created_at=now - timedelta(minutes=45),
-                labels=("filetype:risk/—", "depth:risk/nope"),
+                labels=(review_feedback_loop.RISK_NOPE_LABEL,),
                 review_decision="APPROVED"),
             now=now,
         )
@@ -335,31 +361,27 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         with mock.patch.object(review_feedback_loop, "_edit_label") as edit_label, \
              mock.patch.object(review_feedback_loop, "_disable_auto_merge"):
             actions = review_feedback_loop.apply_review_state_projection(18, state)
-        self.assertNotIn("remove:depth:risk/nope", actions)
+        self.assertNotIn("remove:risk/nope", actions)
 
-    def test_restamp_mirrors_classifier_and_syncs_legacy(self) -> None:
-        # K6 restamp: labels mirror the verdict — pair stamped, stale pair labels and
-        # contradicted legacy sparse labels retired, legacy mirror kept in sync.
+    def test_restamp_mirrors_classifier(self) -> None:
+        # Restamp: labels mirror the verdict — fired axes stamped, stale risk/* flags
+        # retired, non-risk labels untouched.
         with mock.patch.object(review_feedback_loop, "_edit_label"):
-            labels = {"filetype:risk/med", "depth:risk/—", "risk/low", "review/pending"}
+            labels = {"risk/med", "review/pending"}
             actions = review_feedback_loop.restamp_risk_pair(21, labels, None, None)
-        self.assertIn("add:filetype:risk/—", actions)
-        self.assertIn("remove:filetype:risk/med", actions)
-        self.assertIn("add:risk/—", actions)
-        self.assertIn("remove:risk/low", actions)
+        # `—/—` verdict clears the fired filetype flag and adds nothing.
+        self.assertIn("remove:risk/med", actions)
+        self.assertNotIn("review/pending", [a.split(":", 1)[-1] for a in actions])
         self.assertIn("review/pending", labels)  # non-risk labels untouched
-        self.assertEqual(
-            labels & {"filetype:risk/—", "depth:risk/—", "risk/—"},
-            {"filetype:risk/—", "depth:risk/—", "risk/—"},
-        )
+        self.assertEqual(labels & review_feedback_loop.RISK_FLAG_LABELS, set())
 
         with mock.patch.object(review_feedback_loop, "_edit_label"):
-            labels = {"risk/—"}
+            labels = {"risk/high"}  # stale filedepth flag, to be replaced
             actions = review_feedback_loop.restamp_risk_pair(22, labels, "low", "high")
-        self.assertIn("add:filetype:risk/low", actions)
-        self.assertIn("add:depth:risk/high", actions)
-        self.assertIn("add:risk/high", actions)
-        self.assertIn("remove:risk/—", actions)
+        self.assertIn("add:risk/low", actions)
+        # risk/high already present for the depth axis -> no re-add, no removal.
+        self.assertNotIn("remove:risk/high", actions)
+        self.assertEqual(labels, {"risk/low", "risk/high"})
 
     def test_sync_pr_restamps_unmarked_pr_from_classifier(self) -> None:
         # K6 backfill-by-automation: an unmarked in-flight PR gets its pair stamped from
@@ -389,19 +411,24 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         ) as arm, contextlib.redirect_stdout(io.StringIO()):
             result = review_feedback_loop.sync_pr(args)
         self.assertEqual(result, 0)
-        # Restamped to the {—,—} pair -> clear lane -> armed on this same pass.
+        # Restamped to `—/—` (no labels) -> clear lane via the verdict -> armed this pass.
         arm.assert_called_once_with("LAF-US", "IDAHO-VAULT", 300)
 
-    def test_clear_marker_classifies_as_clear(self) -> None:
-        # K4/#630: the positive `risk/—` marker is its own tier ("clear"), distinct from low.
-        self.assertEqual(
-            review_feedback_loop._risk_tier_for_pr("", {review_feedback_loop.RISK_CLEAR_LABEL}),
-            "clear",
+    def test_unclassified_pr_without_verdict_never_arms(self) -> None:
+        # K4 safety: absence of a risk label is NOT clear. Without an affirmative verdict, an
+        # all-absent PR is `unknown` and HOLDS — it must never be armed for auto-merge.
+        now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
+        state = review_feedback_loop.evaluate_review_state(
+            _pr(created_at=now - timedelta(minutes=45), labels=()),
+            now=now,
         )
+        self.assertEqual(state["risk_tier"], "unknown")
+        self.assertFalse(state["is_clear"])
+        self.assertFalse(state["eligible_for_auto_merge"])
 
     def test_unmarked_pr_holds_and_is_not_clear(self) -> None:
         # K4/#630 core: absence of a marker is NOT classified-clear. An unmarked PR resolves
-        # to "unknown" and never arms — only the positive risk/— marker does.
+        # to "unknown" and never arms — only a positive verdict of `—/—` does.
         now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
         state = review_feedback_loop.evaluate_review_state(
             _pr(created_at=now - timedelta(minutes=45), labels=(), body="## No marker\n"),
@@ -414,19 +441,19 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertTrue(state["grace_elapsed"])
         self.assertFalse(state["eligible_for_auto_merge"])
 
-    def test_clear_marker_is_mutually_exclusive_with_flags(self) -> None:
-        # K4/#630 invariant: risk/— XOR a flag, never both. A PR carrying the clear marker
-        # alongside any risk/* flag is a producer/backfill bug — fail LOUD, never silently
-        # auto-merge a PR a sorter actually flagged.
+    def test_axis_exclusion_is_mutually_exclusive_per_axis(self) -> None:
+        # Flat-schema invariant: an axis carries AT MOST one value. Two filetype values
+        # (risk/low + risk/med) or two filedepth values (risk/high + risk/nope) on one PR is
+        # a producer/backfill bug — fail LOUD, never silently route a contradictory axis.
         now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
-        for flag in (review_feedback_loop.RISK_LOW_LABEL, review_feedback_loop.RISK_HIGH_LABEL):
-            with self.subTest(flag=flag):
+        for pair in (
+            (review_feedback_loop.RISK_LOW_LABEL, review_feedback_loop.RISK_MED_LABEL),
+            (review_feedback_loop.RISK_HIGH_LABEL, review_feedback_loop.RISK_NOPE_LABEL),
+        ):
+            with self.subTest(pair=pair):
                 with self.assertRaises(review_feedback_loop.RiskMarkerInvariantError):
                     review_feedback_loop.evaluate_review_state(
-                        _pr(
-                            created_at=now - timedelta(minutes=45),
-                            labels=(review_feedback_loop.RISK_CLEAR_LABEL, flag),
-                        ),
+                        _pr(created_at=now - timedelta(minutes=45), labels=pair),
                         now=now,
                     )
 
@@ -920,8 +947,9 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         arm.assert_not_called()
 
     def test_sync_pr_arms_eligible_clear_pr_when_threads_clear(self) -> None:
-        # End-to-end through sync_pr: a clear-pair (risk/—), grace-elapsed PR with no current
-        # threads is armed (guarded). Mirrors "arm when the last blocking thread clears".
+        # End-to-end through sync_pr: a clear (`—/—`) grace-elapsed PR with no current threads
+        # is armed (guarded). The classifier's `(None, None)` verdict affirms clear; the PR
+        # carries no risk labels. Mirrors "arm when the last blocking thread clears".
         now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
         args = SimpleNamespace(
             owner="LAF-US",
@@ -933,7 +961,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         ready = _pr(
             number=200,
             created_at=now - timedelta(minutes=45),
-            labels=(review_feedback_loop.RISK_CLEAR_LABEL,),
+            labels=(),
         )
         with mock.patch.object(review_feedback_loop, "ensure_labels"), mock.patch.object(
             review_feedback_loop, "_fetch_pr", return_value=ready
@@ -942,7 +970,11 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         ), mock.patch.object(
             review_feedback_loop, "_resolve_outdated_resolvable_threads", return_value=[]
         ), mock.patch.object(
+            review_feedback_loop, "_classify_pr_pair", return_value=(None, None)
+        ), mock.patch.object(
             review_feedback_loop, "apply_review_state_projection", return_value=[]
+        ), mock.patch.object(
+            review_feedback_loop, "_edit_label"
         ), mock.patch.object(
             review_feedback_loop, "_run"
         ), mock.patch.object(
@@ -1024,8 +1056,9 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertEqual(attest.call_args.args[2], "github-actions[bot]")
 
     def test_reconcile_open_prs_promotes_and_arms_eligible_clear_pair_pr(self) -> None:
-        # K3/#629: a clear-pair (risk/—), grace-elapsed, unblocked PR is promoted to
-        # merge/auto and armed for the merge queue. (A risk/low PR would HOLD instead.)
+        # K3/#629: a clear (`—/—`) grace-elapsed, unblocked PR is promoted to merge/auto and
+        # armed for the merge queue. The classifier's `(None, None)` verdict affirms clear;
+        # the PR carries no risk labels. (A risk/low PR would HOLD instead.)
         args = SimpleNamespace(
             owner="LAF-US",
             repo="IDAHO-VAULT",
@@ -1034,7 +1067,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         ready_pr = _pr(
             number=88,
             created_at=datetime(2026, 4, 16, 1, 0, tzinfo=timezone.utc),
-            labels=(review_feedback_loop.RISK_CLEAR_LABEL,),
+            labels=(),
         )
 
         with mock.patch.object(review_feedback_loop, "ensure_labels"), mock.patch.object(
@@ -1047,6 +1080,8 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             side_effect=[ready_pr],
         ), mock.patch.object(
             review_feedback_loop, "_viewer_login", return_value="github-actions[bot]"
+        ), mock.patch.object(
+            review_feedback_loop, "_classify_pr_pair", return_value=(None, None)
         ), mock.patch.object(
             review_feedback_loop,
             "_resolve_outdated_resolvable_threads",
@@ -1083,19 +1118,19 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             self.assertEqual(review_feedback_loop.promote_ready(args), 0)
 
     def test_reconcile_fails_loud_on_invariant_but_still_sweeps_rest(self) -> None:
-        # K4/#630 fail-loud, right blast radius: a PR carrying risk/— alongside a flag trips
-        # the invariant. The sweep records it, exits non-zero (CI red), yet still processes
-        # every OTHER open PR — one mis-labeled PR must not starve the rest.
+        # Fail-loud, right blast radius: a PR carrying two values on one axis (risk/low +
+        # risk/med) trips the invariant. The sweep records it, exits non-zero (CI red), yet
+        # still processes every OTHER open PR — one mis-labeled PR must not starve the rest.
         args = SimpleNamespace(owner="LAF-US", repo="IDAHO-VAULT", grace_minutes=30)
         bad_pr = _pr(
             number=90,
             created_at=datetime(2026, 4, 16, 1, 0, tzinfo=timezone.utc),
-            labels=(review_feedback_loop.RISK_CLEAR_LABEL, review_feedback_loop.RISK_LOW_LABEL),
+            labels=(review_feedback_loop.RISK_LOW_LABEL, review_feedback_loop.RISK_MED_LABEL),
         )
         good_pr = _pr(
             number=91,
             created_at=datetime(2026, 4, 16, 1, 0, tzinfo=timezone.utc),
-            labels=(review_feedback_loop.RISK_CLEAR_LABEL,),
+            labels=(),
         )
 
         out = io.StringIO()
@@ -1105,6 +1140,8 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             review_feedback_loop, "_fetch_pr", side_effect=[bad_pr, good_pr]
         ), mock.patch.object(
             review_feedback_loop, "_viewer_login", return_value="github-actions[bot]"
+        ), mock.patch.object(
+            review_feedback_loop, "_classify_pr_pair", return_value=(None, None)
         ), mock.patch.object(
             review_feedback_loop, "_resolve_outdated_resolvable_threads", return_value=[]
         ), mock.patch.object(

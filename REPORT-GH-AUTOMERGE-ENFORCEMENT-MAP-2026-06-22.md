@@ -135,9 +135,13 @@ Several knots this map named are closed, so it no longer describes the live wiri
   `dependabot-rhythm.yml` were retired 2026-07-19 (`PREFIX-FREE-ROUTING-2026-07-19.md`): bot PRs now
   flow through the one review-gated engine, no author fast-path.
 - **The grid's six open cells — now derived,** not open: read off the converged engine and recorded in
-  `WITNESS-THE-KEYS-ARE-THE-LEVERS-2026-06-21.md` (2026-07-19 addendum), pinned by
+  `WITNESS-THE-KEYS-ARE-THE-LEVERS-2026-06-21.md` (2026-07-20 addendum), pinned by
   `test_review_feedback_loop.py::test_nine_cell_grid_routing_is_the_single_source`.
-Still live from this map: the merge queue as the real gate; the label state-machine (K6); the
-clear-marker (K4).
+- **K6 label vocabulary — flattened (2026-07-20).** The drifted 9-string scheme (prefixed
+  `filetype:risk/*` + `depth:risk/*` + a lossy legacy `risk/{—,low,high}` trio) collapsed to the four
+  flat labels `risk/{low,med,high,nope}` (filetype fires low/med, filedepth fires high/nope, `—` =
+  absence) — Logan's ruling. **K4 — resolved without a label:** `—/—` is absence, and the engine arms
+  it only on the classifier's affirmative verdict, never from missing labels.
+Still live from this map: the merge queue as the real gate.
 
 ###### [["The world is quiet here."]]
