@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+## Gemini Added Memories
+- The DOCKET.md file, the live task board, is located at '!/!/__!__/!/! The world is quiet here/DOCKET.md'.
+- Agent role: I am a 'TEMP GARDENER' (contractor) and must check in with 'the GARDENER' before taking significant actions like creating reports. Cybersecurity-angled tasks like LAF-44 are outside my lane.
+=======
 # Gemini — IDAHO-VAULT (Table of Contents)
 
 This file serves as the project-specific Table of Contents for Gemini's context and instructions.
@@ -13,3 +18,4 @@ This file serves as the project-specific Table of Contents for Gemini's context 
 - [[!/AGENTS.md]] — Agent registry and capability tiers.
 - [[DOCKET.md]] — the Court's register of matters/orders/referrals (**not** a live status board; see its posture note), at `!/!/__!__/!/! The world is quiet here/DOCKET.md`.
 - [[LEVELSET-CURRENT-depreciated-AGAIN]] — superseded LEVELSET snapshot (the filename itself says *depreciated*; not live ecosystem state).
+>>>>>>> a28c319f74618b4308fdd4207b3a6a1f71960ad6

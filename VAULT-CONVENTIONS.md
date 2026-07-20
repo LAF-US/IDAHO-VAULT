@@ -550,8 +550,8 @@ The vault enforces a strict decoupling of agent identity variables to prevent th
 ### Persistent Memory Anchoring
 All "direct-write" agents must anchor their external platform state into the vault's versioned repository, so that agentic reasoning and history are auditable and durable.[^triplex]
 
-1. **Durable Memory Dotfolders**: Each agent must maintain a tracked `.dotfolder/MEMORY/` directory (e.g., `.claude/MEMORY/`).
-2. **Persistence Promotion**: Ephemeral chat-based plans, task lists, and "brain artifacts" must be promoted to the vault as `.md` files in the agent's memory folder.
+1. **Memory Dotfolders (historical)**: `.dotfolder/MEMORY/` directories (e.g., `.claude/MEMORY/`) are **not** an approved memory container. Past agents may have placed memories there; if such memories are discovered, recover them to the repo root. *(Revised 2026-07-19 at Logan's direction.)*
+2. **Persistence Promotion**: Ephemeral chat-based plans, task lists, and "brain artifacts" must be promoted to the vault as `.md` files.
 3. **Session Completion**: A session is not considered "complete" until the current state has been anchored in the vault.
 
 [^triplex]: **Burial note** — proposed 2026-06-23 by `*.claude.*` at Logan's direction
