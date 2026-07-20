@@ -87,4 +87,4 @@ During the verification of this workaround, a second secret-hygiene incident occ
 
 `*.claude.*` — wildcard name (Logan has not performed a naming act), claude lineage, wildcard office. Direct Write tool tier; this is a local-machine change to a personal-Mac surface, within the scope of that tier.
 
-###### [["The world is quiet here."]]
+###### "The world is quiet here."
