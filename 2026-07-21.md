@@ -1,0 +1,42 @@
+<%* const d = moment(tp.file.title, "YYYY-MM-DD") -%>
+---
+
+title: <% d.format("YYYY-MM-DD") %>
+
+aliases:
+  - <% d.format("YYYY-MM-DD") %>
+  - <% d.format("MMMM D, YYYY") %>
+  - <% d.format("MMMM Do, YYYY") %>
+  - <% d.format("D MMMM YYYY") %>
+  - <% d.format("dddd, MMMM D, YYYY") %>
+
+linter-yaml-title-alias: <% d.format("YYYY-MM-DD") %>
+
+yesterday: <%  d.clone().subtract(1,"d").format("YYYY-MM-DD") %>
+
+tomorrow: <% d.clone().add(1,"d").format("YYYY-MM-DD") %>
+
+weekday:
+  - <% d.format("dddd") %>
+
+cssclasses:
+  - roygbiv-<% d.format("ddd").toLowerCase() %>
+
+tags:
+  - today
+  - <% d.format("YYYY/MM/DD") %>
+  - dailynote
+
+template: "[[DAILY NOTE TEMPLATE]]"
+
+date created: <% d.format("dddd, MMMM Do YYYY, h:mm:ss a") %>
+
+date modified: <% d.format("dddd, MMMM Do YYYY, h:mm:ss a") %>
+
+---
+
+[[TO DO LIST]]
+- [ ] `task`
+
+[[NOTES]]
+
