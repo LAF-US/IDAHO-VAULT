@@ -14,6 +14,7 @@ owner: Logan Finney
 Scheduled 24-hour review of failing GitHub Actions runs across `laf-us/idaho-vault`. Enumerated all 63 workflows, pulled recent runs per workflow, and drilled into every `conclusion: "failure"` via job logs — nothing here is reported unread. Reviewed `CONSTITUTION.md` and existing GH issue #822 / Linear LAF-72 before writing anything, per this sweep's standing instruction not to pad the open-and-unaddressed pile.
 
 **Shipped fixes this run, not just findings** (per the same standing instruction):
+
 1. `codacy.yml` / `codacy-coverage-reporter.yml` — `continue-on-error: true` on the Codacy steps, so the confirmed non-blocking dashboard-linkage gap (below) stops posting a hard `failure` conclusion on every single push/PR.
 2. PR #596 (oldest open PR not already blocked on one of Logan's judgment calls) — fixed 5 concrete review-flagged issues and pushed the commit; comment posted there.
 
