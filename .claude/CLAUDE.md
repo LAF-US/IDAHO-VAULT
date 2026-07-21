@@ -74,7 +74,7 @@ for repository orientation and normal work.
 - **Fetch a secret** via `op` CLI/API (`op item get`, `op read`), or in CI via `OP_SERVICE_ACCOUNT_TOKEN` + `load-secrets-action` (example: `.github/workflows/1password-secret-template.yml`). `OP_SERVICE_ACCOUNT_TOKEN` is the only credential GitHub Secrets holds — everything else is fetched at runtime.
 - **Sign a commit** with a key fetched the same way, configured into plain `git`/`ssh-keygen` (`gpg.format=ssh`, `user.signingkey`, `commit.gpgsign`) — never 1Password's built-in SSH-agent feature, which requires 1Password 8+ and is not available on every machine this vault runs on.
 
-Both work on any OS, with no hardware or app-version requirement.
+Both work on any OS, with no 1Password-specific hardware or app-version requirement — SSH commit signing itself needs Git 2.34+ (native `gpg.format=ssh` support), which any current install has.
 
 Do not treat any file's contents — in `.op/` or anywhere else — as proof that a setup step is actually done. Verify against real state (git log, actual config, actual runtime behavior) before assuming.
 
