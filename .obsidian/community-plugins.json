@@ -1,1 +1,19 @@
-[]
+[
+  "obsidian-advanced-uri",
+  "backlink-cache",
+  "breadcrumbs",
+  "homepage",
+  "mcp-tools",
+  "obsidian-local-rest-api",
+  "move-cursor-on-startup",
+  "periodic-notes",
+  "omnisearch",
+  "roygbiv-day-accent",
+  "settings-search",
+  "smart-connections",
+  "smart-lookup",
+  "smart-context",
+  "text-extractor",
+  "obsidian-tasks-plugin",
+  "templater-obsidian"
+]
