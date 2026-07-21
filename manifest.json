@@ -243,7 +243,6 @@
         {
           "id": "calendar_date",
           "plugins": [
-            "calendar",
             "calendarium",
             "keep-the-rhythm"
           ]
