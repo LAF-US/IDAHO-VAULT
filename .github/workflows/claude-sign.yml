@@ -114,18 +114,41 @@ jobs:
           git config gpg.format ssh
           git config user.signingkey "$key_path"
           git config commit.gpgsign true
+          # Pin explicitly rather than trust whatever the runner's ambient
+          # config resolves to. Verified by hand (2026-07-20 investigation):
+          # in an environment where gpg.ssh.program was already set globally
+          # to a different signing helper, an unpinned `git commit -S` still
+          # "succeeds" and looks done, but the resulting signature is BAD
+          # (%G?=B, not G) — a silent failure this workflow would otherwise
+          # push without anyone noticing. A stock ubuntu-latest runner
+          # wouldn't hit this, but the config is one line and removes the
+          # dependency on that assumption entirely.
+          git config gpg.ssh.program "$(command -v ssh-keygen)"
 
       # Plain git, no agent invocation: `%G?` reports each commit's signature
       # status (N = unsigned). dry-run only reports; the other two modes
-      # amend-and-sign in place, then push the rewritten history back to the
-      # same branch it came from (force-with-lease, since amending changes
-      # the SHA — the branch was already required to be pushed, so this is
+      # amend-and-sign in place, verify the result is a GOOD signature before
+      # pushing (never trust `-S` blindly — see the gpg.ssh.program note
+      # above for why), then push the rewritten history back to the same
+      # branch it came from (force-with-lease, since amending changes the
+      # SHA — the branch was already required to be pushed, so this is
       # expected, not a surprise rewrite of unseen work).
       - name: Sign commits
         if: env.OP_SERVICE_ACCOUNT_TOKEN != ''
         run: |
           set -euo pipefail
           base="$(git merge-base origin/main HEAD)"
+          # Only checks the range actually touched by the mode that ran —
+          # sign-tip-only doesn't sign earlier commits, so checking the full
+          # base..HEAD range there would reject a run that worked correctly.
+          verify_signed() {
+            while read -r sha status; do
+              if [ "$status" != "G" ]; then
+                echo "::error::commit $sha has signature status '$status' (expected G/good) after signing — refusing to push" >&2
+                exit 1
+              fi
+            done < <(git log --format='%H %G?' "$1")
+          }
           case "${{ inputs.mode }}" in
             dry-run)
               echo "Commits on ${{ inputs.target_branch }} ahead of main (sha status subject):"
@@ -133,18 +156,23 @@ jobs:
               ;;
             sign-tip-only)
               git commit --amend --no-edit -S
+              verify_signed "HEAD~1..HEAD"
               git push --force-with-lease origin "HEAD:${{ inputs.target_branch }}"
               ;;
             sign-all-unsigned)
               git rebase "$base" --exec \
                 'test "$(git log -1 --format=%G?)" = N && git commit --amend --no-edit -S || true'
+              verify_signed "$base..HEAD"
               git push --force-with-lease origin "HEAD:${{ inputs.target_branch }}"
               ;;
           esac
 
       # Verification is the GitHub side reporting verified:true on the signed
       # commits — observable via `gh api repos/.../commits/<sha>` or the
-      # "Verified" badge on the commit itself after this workflow runs.
+      # "Verified" badge on the commit itself after this workflow runs. The
+      # verify_signed check above is a local pre-push guard, not a
+      # substitute for that — a locally-GOOD signature still needs its public
+      # key registered on GitHub as a Signing Key to render Verified there.
 
 # ============================================================================
 # DRAFT NOTES (proposal-marginalia, 2026-06-01; reworked 2026-06-24, 2026-07-19):
