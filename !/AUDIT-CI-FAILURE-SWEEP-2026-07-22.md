@@ -63,6 +63,7 @@ The branch's own dotfolder-migration removed/renamed the `.openclaw/*` fixture p
 ### Secret Pattern Policy — confirmed same false-positive class, one new instance type
 
 `logan/obsidian` push, run 29875268313, 8 files flagged. Checked file content directly (not the raw secret values) rather than assuming:
+
 - 5 `google_api_key` hits — same pattern as 2026-07-11's diagnosis (Google Static Maps/embed keys in saved-webpage-capture notes).
 - 3 `generic_secret_assignment` hits — **new instance of the same false-positive class, not previously catalogued**: Zoom `?pwd=...` query parameters in public meeting-agenda citation links (2 files), and one Preservica digital-archive iframe `token=` render parameter (1 file) — both are third-party embed tokens that the source site itself serves publicly to any viewer, not vault-owned credentials.
 
