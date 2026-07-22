@@ -7,7 +7,7 @@ published: 2026-06-24
 created: 2026-07-07
 description: "Scott Herndon says property taxes means no one can ever truly own their home."
 ---
-If the Idaho Legislature follows Scott Herndon’s plan for eliminating property taxes, public schools would miss out on over $400 million.
+If the [[Idaho]] Legislature follows Scott Herndon’s plan for eliminating property taxes, public schools would miss out on over $400 million.
 
 Herndon, who in May won his primary election against Sen. Jim Woodward, R-Sagle, said he wants to get back to the founders’ original vision for America: true private property ownership.
 
@@ -84,3 +84,5 @@ A family can own property for five generations, but never truly own their home, 
 Herndon says his plan is serious. Rubel said it’s a joke.
 
 “I think it’s just intended to be kind of a crowd pleaser of, ‘Hey, don’t you hate property tax? Here, we want to end it,’ without any credible plan of how they would backfill that revenue,” she said.
+
+#idaho
