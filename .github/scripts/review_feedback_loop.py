@@ -916,7 +916,12 @@ def ensure_labels() -> None:
         try:
             _ensure_label(label, color, description)
         except RuntimeError as exc:  # noqa: BLE001 — "do not abort", never abort
-            print(f"::warning::ensure_labels skipped '{label}': {exc}", file=sys.stderr)
+            # _run's RuntimeError carries multi-line stdout/stderr (the actual
+            # 403 reason lives past line 1); a raw ::warning:: only renders its
+            # first line in the GitHub UI annotation, so escape newlines per
+            # the workflow-command spec instead of losing the real reason.
+            detail = str(exc).replace("\n", "%0A")
+            print(f"::warning::ensure_labels skipped '{label}': {detail}", file=sys.stderr)
 
 
 def _edit_label(pr_number: int, *, add: str | None = None, remove: str | None = None) -> None:
