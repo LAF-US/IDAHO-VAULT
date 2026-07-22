@@ -19,7 +19,7 @@ The Idaho State Capitol Building in Boise as seen on Jan. 14, 2026. (Photo by Pa
 
 ***Update:** This story was updated at 5:20 p.m. on Jan. 24 with comments from the head of the Defend and Protect Idaho PAC.*
 
-Idaho political action committees, or PACs, spent more than $4.2 million on May primary races this year. In a deep red state like Idaho, the Republican primaries tend to be the most competitive races.
+Idaho political action committees, or PACs, spent more than $4.2 million on May primary races this year. In a deep red state like [[Idaho]], the Republican primaries tend to be the most competitive races.
 
 Most of the money generally poured into legislative primary contests between a hardline conservative candidate and a candidate considered to be a more mainstream or traditional Republican. Money from large, well-funded organizations — with sometimes difficult-to-track individual donors — went to both mainstream and hardline candidates.
 
@@ -128,3 +128,5 @@ The PAC spent more than $26,6000 each supporting Lewiston Rep. Kyle Harris and K
 Redman also contributed $15,000 to the Idaho Summit PAC, run by another incumbent Representative with no Republican challenger, Josh Tanner.
 
 Tanner’s PAC spent over $217,000 to support 12 incumbents and 9 non-incumbent candidates, many of whom overlapped with those supported by Redman’s PAC.
+
+#idaho
