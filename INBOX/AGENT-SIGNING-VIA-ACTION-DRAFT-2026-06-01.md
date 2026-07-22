@@ -46,7 +46,7 @@ The chamber's normal flow does not change locally:
 
 1. Open conversation with Logan
 2. Read/write vault files locally
-3. `git commit` locally (unsigned-as-Claude, status `U`)
+3. `git commit` locally (unsigned-as-Claude, status `N`)
 4. `git push origin <branch>` (when Logan authorizes pushing)
 5. (NEW) Trigger the `Claude Sign (DRAFT)` workflow via `workflow_dispatch` with the branch name
 6. Workflow runs in CI, loads the key from 1Password, and signs the branch's commits with plain `git`

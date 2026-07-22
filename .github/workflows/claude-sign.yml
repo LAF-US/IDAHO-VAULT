@@ -135,6 +135,9 @@ jobs:
       # expected, not a surprise rewrite of unseen work).
       - name: Sign commits
         if: env.OP_SERVICE_ACCOUNT_TOKEN != ''
+        env:
+          TARGET_BRANCH: ${{ inputs.target_branch }}
+          MODE: ${{ inputs.mode }}
         run: |
           set -euo pipefail
           base="$(git merge-base origin/main HEAD)"
@@ -149,21 +152,21 @@ jobs:
               fi
             done < <(git log --format='%H %G?' "$1")
           }
-          case "${{ inputs.mode }}" in
+          case "$MODE" in
             dry-run)
-              echo "Commits on ${{ inputs.target_branch }} ahead of main (sha status subject):"
+              echo "Commits on $TARGET_BRANCH ahead of main (sha status subject):"
               git log --format='%H %G? %s' "$base"..HEAD
               ;;
             sign-tip-only)
               git commit --amend --no-edit -S
               verify_signed "HEAD~1..HEAD"
-              git push --force-with-lease origin "HEAD:${{ inputs.target_branch }}"
+              git push --force-with-lease origin "HEAD:$TARGET_BRANCH"
               ;;
             sign-all-unsigned)
               git rebase "$base" --exec \
                 'test "$(git log -1 --format=%G?)" = N && git commit --amend --no-edit -S || true'
               verify_signed "$base..HEAD"
-              git push --force-with-lease origin "HEAD:${{ inputs.target_branch }}"
+              git push --force-with-lease origin "HEAD:$TARGET_BRANCH"
               ;;
           esac
 
