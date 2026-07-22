@@ -115,7 +115,7 @@ Listen to this article
 
 <audio src="https://e-edition.lmtribune.com/neodirect/49/22571803?role=1" preload="none" controls="" style="display: block; width: 100%; max-width: 750px; margin: 0px auto;">Your browser does not support the audio element.</audio>
 
-It’s difficult to believe that after enduring four years of Republican extremism on the issue of women’s health, Idaho voters are about to fall for the GOP’s hysterical campaign against Proposition 1.
+It’s difficult to believe that after enduring four years of Republican extremism on the issue of women’s health, [[Idaho]] voters are about to fall for the GOP’s hysterical campaign against Proposition 1.
 
 Prop 1 is the recently qualified ballot measure, the Reproductive Freedom and Privacy Act, that would, with voter approval in the fall, restore to Idaho women the reproductive rights Idaho’s GOP-led Legislature took from them after the U.S. Supreme Court reversed the half-century precedent of Roe v. Wade.
 

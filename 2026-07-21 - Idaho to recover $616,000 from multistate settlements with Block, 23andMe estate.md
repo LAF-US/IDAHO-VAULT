@@ -7,7 +7,7 @@ published: 2026-07-21
 created: 2026-07-22
 description: "Idaho will recover more than $616,000 through two multistate settlements involving Cash App owner Block Inc. and the bankruptcy estate of genetic testing compan"
 ---
-Idaho will recover more than $616,000 through two multistate settlements involving Cash App owner Block Inc. and the bankruptcy estate of genetic testing company 23andMe, Attorney General Raúl Labrador announced today.
+[[Idaho]] will recover more than $616,000 through two multistate settlements involving Cash App owner Block Inc. and the bankruptcy estate of genetic testing company 23andMe, Attorney General Raúl Labrador announced today.
 
 “Idaho families trusted these companies with their money and their most personal information, and both companies failed them,” Labrador said. “Block let fraudsters exploit Cash App users while chasing growth, and 23andMe ignored basic security until hackers exposed Idahoans’ genetic data. These settlements return more than $600,000 to Idaho and force real changes to protect consumers. My office will keep holding companies accountable when they put profits ahead of the people who trust them.”
 

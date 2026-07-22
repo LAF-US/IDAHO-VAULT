@@ -7,7 +7,7 @@ published: 2026-07-19
 created: 2026-07-22
 description: "A climber who fell about 300 feet on Mount Idaho in Custer County was rescued and flown to a hospital Friday afternoon after suffering a head injury.On July 18"
 ---
-BOISE, Idaho (CBS2) — A climber who fell about 300 feet on Mount Idaho in Custer County was rescued and flown to a hospital Friday afternoon after suffering a head injury.
+BOISE, [[Idaho]] (CBS2) — A climber who fell about 300 feet on Mount Idaho in Custer County was rescued and flown to a hospital Friday afternoon after suffering a head injury.
 
 On July 18 at 12:18 p.m., the Custer County Search and Rescue coordinator was notified of a call received by Custer County Dispatch reporting that an individual had fallen on Mount Idaho in the Lost River Range.
 

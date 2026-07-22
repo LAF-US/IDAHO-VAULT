@@ -109,7 +109,7 @@ Listen to this article
 
 <audio src="https://e-edition.lmtribune.com/neodirect/49/22571104?role=1" preload="none" controls="" style="display: block; width: 100%; max-width: 750px; margin: 0px auto;">Your browser does not support the audio element.</audio>
 
-When my family came to Idaho in the 1880s, there were fewer than 40,000 people in the entire territory. Like so many others who came then, we were common folk seeking to build a new life in what was to become the 43rd star on the U.S. flag.
+When my family came to [[Idaho]] in the 1880s, there were fewer than 40,000 people in the entire territory. Like so many others who came then, we were common folk seeking to build a new life in what was to become the 43rd star on the U.S. flag.
 
 We were loggers, farmers, truckers, dairymen, educators and activists in our communities. The library at the Idaho School for the Blind was named after my grandfather. My dad has a shelter in a Meridian park named after him. My brother was Idaho high school principal of the year in 2000. I followed their example by dedicating myself to public service.
 

@@ -7,7 +7,7 @@ published: 2026-07-21
 created: 2026-07-22
 description: "Opponents of the death penalty are continuing to speak out against Idaho's use of capital punishment, including the state's move to make the firing squad its pr"
 ---
-Opponents of the death penalty are continuing to speak out against Idaho's use of capital punishment, including the [state's move to make the firing squad its primary execution method.](https://idahonews.com/news/local/firing-squad-set-to-become-primary-method-of-execution-in-idaho)
+Opponents of the death penalty are continuing to speak out against [[Idaho]]'s use of capital punishment, including the [state's move to make the firing squad its primary execution method.](https://idahonews.com/news/local/firing-squad-set-to-become-primary-method-of-execution-in-idaho)
 
 During a virtual news conference this week, advocates urged Idaho leaders to reconsider the use of the death penalty and reverse the state's decision to prioritize firing squad executions.
 
