@@ -106,6 +106,27 @@ def _pr(
 
 
 class ReviewFeedbackLoopTest(unittest.TestCase):
+    def test_ensure_labels_survives_a_token_permission_failure(self) -> None:
+        # Verified 2026-07-21/22 (GH #822 / Linear LAF-72): a `MERGE_QUEUE_TOKEN`/
+        # `GITHUB_TOKEN` lacking issues:write makes every `gh label create` call raise
+        # "HTTP 403: Resource not accessible by personal access token". Before this fix,
+        # that RuntimeError propagated out of ensure_labels() and aborted every one of
+        # its 7 call sites (review_submitted, sync_pr, ...) before any real work — thread
+        # resolution, auto-merge arming — ran. Label upsert is best-effort setup and must
+        # not be able to do that.
+        def _raise_403(cmd, check=True, timeout=300):
+            raise RuntimeError(
+                f"Command failed (1): {' '.join(cmd)}\n"
+                "stdout:\n\nstderr:\n"
+                "HTTP 403: Resource not accessible by personal access token"
+            )
+
+        with mock.patch.object(review_feedback_loop, "_run", side_effect=_raise_403):
+            try:
+                review_feedback_loop.ensure_labels()
+            except RuntimeError:
+                self.fail("ensure_labels() must not raise on a per-label gh failure")
+
     def test_clear_pair_pr_becomes_auto_merge_eligible_after_grace(self) -> None:
         # K3/#629: the `—/—` pair — and ONLY it — arms auto-merge. A PR that classify
         # scored clear (risk/—) with no blocking feedback is eligible once the grace window

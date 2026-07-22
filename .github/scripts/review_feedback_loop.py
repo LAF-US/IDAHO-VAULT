@@ -906,8 +906,17 @@ def _ensure_label(name: str, color: str, description: str) -> None:
 
 
 def ensure_labels() -> None:
+    # Label upsert is best-effort setup, not the caller's actual job (thread
+    # resolution, auto-merge arming, etc.) -- a token scope gap here (verified
+    # 2026-07-21/22: `MERGE_QUEUE_TOKEN`/`GITHUB_TOKEN` lacking issues:write,
+    # surfaced as "HTTP 403: Resource not accessible by personal access token")
+    # must not abort every one of this function's 7 call sites. Fail SAFE per
+    # label: warn loudly and keep going, matching the K6-restamp precedent above.
     for label, (color, description) in LABEL_SPECS.items():
-        _ensure_label(label, color, description)
+        try:
+            _ensure_label(label, color, description)
+        except RuntimeError as exc:  # noqa: BLE001 — "do not abort", never abort
+            print(f"::warning::ensure_labels skipped '{label}': {exc}", file=sys.stderr)
 
 
 def _edit_label(pr_number: int, *, add: str | None = None, remove: str | None = None) -> None:
