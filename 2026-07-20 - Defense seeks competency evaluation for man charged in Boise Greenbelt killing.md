@@ -7,7 +7,7 @@ published: 2026-07-20
 created: 2026-07-22
 description: "The man accused of killing Jordan Harbst on the Boise Greenbelt appeared virtually in court today as his defense asked a judge to order a competency test.During"
 ---
-BOISE, Idaho (CBS2) — The man accused of killing Jordan Harbst on the Boise Greenbelt appeared virtually in court today as his defense asked a judge to order a competency test.
+BOISE, [[Idaho]] (CBS2) — The man accused of killing Jordan Harbst on the Boise Greenbelt appeared virtually in court today as his defense asked a judge to order a competency test.
 
 During the hearing, the judge asked whether the request was based on the defense attorney’s interactions with the defendant. “Is that based on your interaction with interation with Wardlaw?” the judge said. The defense responded, “It is, Judge. I met wth him yesterday.”
 
