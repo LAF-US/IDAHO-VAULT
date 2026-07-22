@@ -14,7 +14,7 @@ description: "The federal government awarded an Idaho-Wyoming coalition of nucle
 
 Idaho National Laboratory commercial nuclear fuel rods
 
-Commercial nuclear fuel rods are unloaded from a cask inside Idaho National Laboratory's Hot Fuel Examination Facility hot cell in this file photo. A consortium of industry leaders, including Idaho National Laboratory, received $31 million from the federal government Monday to advance nuclear energy. (Courtesy of Idaho National Laboratory)
+Commercial nuclear fuel rods are unloaded from a cask inside Idaho National Laboratory's Hot Fuel Examination Facility hot cell in this file photo. A consortium of industry leaders, including Idaho National Laboratory, received $31 million from the federal government Monday to advance nuclear energy. (Courtesy of [[Idaho]] National Laboratory)
 
 The federal government awarded a coalition that includes nuclear industry stakeholders in Idaho and Wyoming around $31 million to facilitate the growth of nuclear energy.
 

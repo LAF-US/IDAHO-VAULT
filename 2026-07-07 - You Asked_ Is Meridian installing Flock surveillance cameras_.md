@@ -49,7 +49,7 @@ Robinson noted that “the only Flock cameras we know of in the city are those u
 
 ## Flock lawsuit
 
-Elsewhere in Idaho, communities that have installed Flock Safety ALPRs are facing the threat of lawsuits.
+Elsewhere in [[Idaho]], communities that have installed Flock Safety ALPRs are facing the threat of lawsuits.
 
 ![Commercial Tire - July 2026 - 2:1](https://static-v2.boisedev.com/assets/13cd7680-6f30-4701-82a1-9fb53cf3807b.jpg)
 

@@ -7,7 +7,7 @@ published: 2026-07-21
 created: 2026-07-22
 description: "A punishing mix of drought, frost and surging pest and disease pressure has battered grain fields across southern and eastern Idaho this growing season, forcing"
 ---
-A punishing mix of drought, frost and surging pest and disease pressure has battered grain fields across southern and eastern Idaho this growing season, forcing some farmers to mow down fall wheat and barley rather than take them to harvest, a University of Idaho researcher said.
+A punishing mix of drought, frost and surging pest and disease pressure has battered grain fields across southern and eastern [[Idaho]] this growing season, forcing some farmers to mow down fall wheat and barley rather than take them to harvest, a University of Idaho researcher said.
 
 The 2026 growing season has brought devastating losses for many grain farmers across the region, but overall damage could have been much worse, according to Juliet Marshall, a University of Idaho College of Agricultural and Life Sciences professor, associate director of the Idaho Agricultural Experiment Station and an Extension cereals specialist. Other cereal fields have recovered better than expected.
 

@@ -7,7 +7,7 @@ published: 2026-07-21
 created: 2026-07-22
 description: "As Idaho’s harmful algal bloom season continues, state health officials are warning people to stay out of the water at Brownlee Reservoir and Hells Canyon Reser"
 ---
-As Idaho’s harmful algal bloom season continues, state health officials are warning people to stay out of the water at Brownlee Reservoir and Hells Canyon Reservoir after recent samples showed high amounts of toxin-producing cyanobacteria.
+As [[Idaho]]’s harmful algal bloom season continues, state health officials are warning people to stay out of the water at Brownlee Reservoir and Hells Canyon Reservoir after recent samples showed high amounts of toxin-producing cyanobacteria.
 
 The advisory follows a July 7 announcement of a health advisory for Crane Creek Reservoir in Washington County south of Cambridge.
 

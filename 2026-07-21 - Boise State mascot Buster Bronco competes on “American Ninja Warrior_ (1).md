@@ -7,7 +7,7 @@ published: 2026-07-21
 created: 2026-07-22
 description: "Viewers watching Season 18 of NBC’s American Ninja Warrior may have noticed a familiar Boise face on the course: Boise State’s mascot, Buster Bronco.Buster walk"
 ---
-BOISE, Idaho (CBS2) — Viewers watching Season 18 of NBC’s American Ninja Warrior may have noticed a familiar Boise face on the course: Boise State’s mascot, Buster Bronco.
+BOISE, [[Idaho]] (CBS2) — Viewers watching Season 18 of NBC’s American Ninja Warrior may have noticed a familiar Boise face on the course: Boise State’s mascot, Buster Bronco.
 
 Buster walked onto the set ready to take on the show’s high-speed obstacle course, but removed the mask before competing, revealing Matthew Duffy, a recent Boise State graduate (BBA finance, 2025). Duffy spent two of his four years at Boise State as Buster, according to Boise State.
 

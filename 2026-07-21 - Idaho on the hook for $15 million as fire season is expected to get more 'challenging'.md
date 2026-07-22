@@ -7,7 +7,7 @@ published: 2026-07-21
 created: 2026-07-22
 description: "The estimated total expenditures for Idaho's emergency fire suppression fund are around $20.7 million as of Monday. As Idaho Department of Lands director, Dusti"
 ---
-BOISE, Idaho (CBS2) — The estimated total expenditures for Idaho's emergency fire suppression fund are around $20.7 million as of Monday. As Idaho Department of Lands director, Dustin Miller says the season is expected to become "more challenging" due to drought conditions across the state.
+BOISE, [[Idaho]] (CBS2) — The estimated total expenditures for Idaho's emergency fire suppression fund are around $20.7 million as of Monday. As Idaho Department of Lands director, Dustin Miller says the season is expected to become "more challenging" due to drought conditions across the state.
 
 Due to the state offering support in various fires, roughly $5.7 million of the total expenditures is expected to be reimbursed. Making the net obligation from the state $15 million.
 

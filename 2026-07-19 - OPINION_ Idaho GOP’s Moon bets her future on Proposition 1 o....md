@@ -109,7 +109,7 @@ Listen to this article
 
 <audio src="https://e-edition.lmtribune.com/neodirect/49/22570985?role=1" preload="none" controls="" style="display: block; width: 100%; max-width: 750px; margin: 0px auto;">Your browser does not support the audio element.</audio>
 
-Reelected Idaho State GOP Chairperson Dorothy Moon has laid down a marker. Her major goal this year is to defeat Proposition 1 in November. By doing so, she has linked her future to the measure.
+Reelected [[Idaho]] State GOP Chairperson Dorothy Moon has laid down a marker. Her major goal this year is to defeat Proposition 1 in November. By doing so, she has linked her future to the measure.
 
 Proposition 1 is the Reproductive Freedom and Privacy Act and is the only ballot initiative to make Idaho’s ballot this year. It specifies that every Idahoan has the right to reproductive freedom and privacy, including abortion, contraception and fertility treatments. If passed, at the point of fetal viability Idaho could regulate abortion except in cases of a so-called medical emergency.
 
