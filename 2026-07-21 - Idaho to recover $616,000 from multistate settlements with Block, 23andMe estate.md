@@ -22,3 +22,5 @@ In the 23andMe settlement, Labrador joined a coalition of 42 states in resolving
 The multistate investigation found 23andMe failed to guard against credential stuffing attacks, failed to require multifactor authentication, failed to detect a massive spike in login attempts, and failed to fix known vulnerabilities before hackers accessed and sold customers’ genetic ancestry data on the dark web.
 
 When the bankruptcy filing raised concerns about the sale of that data, Labrador issued a consumer alert advising Idahoans how to withdraw consent for their genetic information to be stored or sold.
+
+#idaho

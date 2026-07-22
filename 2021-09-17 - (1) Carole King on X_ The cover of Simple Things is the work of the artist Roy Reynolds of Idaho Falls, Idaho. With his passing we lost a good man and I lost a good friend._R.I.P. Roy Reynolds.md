@@ -17,3 +17,5 @@ The cover of "Simple Things" is the work of the artist Roy Reynolds of [[Idaho]]
 Post your reply
 
 I have always loved his design so much so that I painted it many years ago. RIP Roy Reynolds.
+
+#idaho

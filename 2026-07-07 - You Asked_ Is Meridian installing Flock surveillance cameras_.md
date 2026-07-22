@@ -58,3 +58,5 @@ Commercial Tire - July 2026 - 2:1
 A group called DeFlock Idaho submitted notices of tort claims, a precursor to a potential lawsuit, to both the City of Wilder and the City of Caldwell regarding the cities’ use of such cameras, [as KTVB reported in June](https://www.ktvb.com/article/news/local/idaho/tort-claims-filed-against-two-canyon-county-cities-flock-camera-agreements/277-88b1dd0f-ab79-4b32-b2dc-a0cf690b764e).
 
 Tyler Cain, a Wilder resident who is part of DeFlock Idaho, told the outlet that the company’s terms and conditions allow it to collect data for training its artificial intelligence systems, which he alleges violates the part of Idaho law prohibiting data collected from ALPRs for use for non-law enforcement purposes.
+
+#idaho

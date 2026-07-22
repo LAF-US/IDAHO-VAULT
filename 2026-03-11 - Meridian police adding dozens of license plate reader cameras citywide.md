@@ -48,3 +48,5 @@ Meridian police say cameras are currently being installed throughout the city an
 Residents who live or work in Meridian and want to share their thoughts about the cameras are encouraged to contact Neighborhood Reporter Allie Triepke at Idaho News 6. Email her at allie.triepke@kivitv.com.
 
 ![](https://ewscripps.brightspotcdn.com/6c/7e/6b1c66774321b5ebd78528d4e060/chatgpt-image-jun-24-2026-11-28-19-am.png)
+
+#idaho

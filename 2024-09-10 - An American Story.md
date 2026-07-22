@@ -18,3 +18,5 @@ Upon his return to Idaho Falls, Jon was involved in agriculture for several year
 Jon ran as a candidate for the House of Representatives in 1991 and 1993. He helped to form the Friends of Falls River in 1989, served 10 years on the Board of Idaho Rivers United, and is a member of the Japanese American Citizens League (JACL).
 
 His journeys have taken him quite literally to the top of the world. He spent time in Nepal with the Peace Corps and has since returned three times to go trekking. He canoed the Yellowknife to the Arctic Ocean, then to Hudson Bay, covering 1000 miles in 60 days. His other notable adventures have taken him to Peru, India, Cuzco, and China.
+
+#idaho

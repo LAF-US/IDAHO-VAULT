@@ -15,7 +15,7 @@ In an in-depth [NBC News report](https://www.nbcnews.com/news/us-news/idaho-push
 
 “She had a lot to give to this world,” Joseph Pollard told NBC News. “Whether she was trans or not, this world — not just my world — this world would have been a better place with her in it.”
 
-While not publicly named, May Pollard played a role in Idaho’s debate over transgender policy.
+While not publicly named, May Pollard played a role in [[Idaho]]’s debate over transgender policy.
 
 Identified in court documents as Jane Doe, Pollard went to federal court [to challenge Senate Bill 1100](https://www.idahoednews.org/news/opponents-file-lawsuit-over-new-transgender-bathroom-law/), a 2023 law requiring students to use bathrooms and locker rooms consistent with their gender assigned at birth.
 
@@ -26,3 +26,5 @@ Attorneys for the state and Boise High’s Sexuality and Gender Alliance [agreed
 “From the district court to the Ninth Circuit, we defended Idaho’s right to protect students’ privacy in bathrooms and locker rooms,” Attorney General Raúl Labrador said in a news release hailing the agreement. “Idaho families can be confident that this law is fully in effect and will remain so.”
 
 Labrador’s news release made no mention of Pollard’s death by suicide. “This is a personal tragedy and our hearts go out to the family,” Labrador later said [in a statement to Idaho Capital Sun](https://idahocapitalsun.com/2026/05/21/high-school-group-challenging-idahos-trans-bathroom-ban-drops-lawsuit-after-students-death/).
+
+#idaho

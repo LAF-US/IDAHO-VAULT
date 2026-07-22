@@ -48,3 +48,5 @@ Reynold’s art will be on display at an art show beginning Oct. 20. It’s happ
 [SUBMIT A CORRECTION](https://www.eastidahonews.com/submit-a-correction/?headline=Good%20Question:%20Who%20is%20that%20guy%20on%20Memorial%20Drive?&url=https://www.eastidahonews.com/2017/10/good-question-guy-memorial-drive/)
 
 EastIdahoNews.com comment boards are a place for open, honest, and civil communication between readers regarding the news of the day and issues facing our communities. We encourage commenters to stay on topic, use positive and constructive language, and be empathetic to the feelings of other commenters. **THINK BEFORE YOU POST.** [Click here](https://www.eastidahonews.com/eastidahonews-com-code-of-ethics/#onlinecommenting) for more details on our commenting rules.
+
+#idaho

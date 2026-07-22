@@ -20,3 +20,5 @@ Prior to America entering World War II, Ochi served as the first President of th
 ![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTGOP21fdGzWIc3xUBqZU8OVJUC8xc4rylVnMY27uqtWn9qURLmwrOvXDdcq3Putzyg8B7tL1VXg2DAHnL9yEud-dn1Wn7g9gVvmMc_9JxXScrQfIrrk2jrxcI31BMkEjYfpEqaVcnv2M/s1600/OchiFred.html.jpg)
 
 (*text from* http://www.woodfuneralhome.com/memsol.cgi?user\_id=219250)
+
+#idaho
