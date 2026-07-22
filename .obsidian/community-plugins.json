@@ -13,7 +13,6 @@
   "dataview-autocompletion",
   "text-extractor",
   "map-of-content",
-  "obsidian-mind-map",
   "nldates-obsidian",
   "templater-obsidian",
   "obsidian-tasks-plugin",
@@ -24,7 +23,6 @@
   "roygbiv-day-accent",
   "frontmatter-markdown-links",
   "tag-wrangler",
-  "obsidian-full-calendar",
   "homepage",
   "settings-search",
   "smart-connections",
@@ -42,7 +40,6 @@
   "obsidian-tidy-footnotes",
   "obsidian-topic-linking",
   "todoist-context-bridge",
-  "markdown-attributes",
   "ai-image-analyzer",
   "table-editor-obsidian",
   "moviegrabber",
@@ -57,5 +54,10 @@
   "phone-to-roam-to-obsidian",
   "supercharged-links-obsidian",
   "translate",
-  "omnisearch"
+  "omnisearch",
+  "obsidian-dice-roller",
+  "influx",
+  "obsidian-kanban",
+  "obisidian-note-linker",
+  "tipa-support"
 ]
