@@ -68,3 +68,5 @@ Those interested in the petition can [click here](https://www.change.org/p/stop-
 [SUBMIT A CORRECTION](https://www.eastidahonews.com/submit-a-correction/?headline=Proposed%20changes%20to%20downtown%20parking%20system%20spark%20frustration%20among%20business%20owners&url=https://www.eastidahonews.com/2025/08/proposed-changes-to-downtown-parking-system-spark-frustration-among-business-owners/)
 
 EastIdahoNews.com comment boards are a place for open, honest, and civil communication between readers regarding the news of the day and issues facing our communities. We encourage commenters to stay on topic, use positive and constructive language, and be empathetic to the feelings of other commenters. **THINK BEFORE YOU POST.** [Click here](https://www.eastidahonews.com/eastidahonews-com-code-of-ethics/#onlinecommenting) for more details on our commenting rules.
+
+#idaho

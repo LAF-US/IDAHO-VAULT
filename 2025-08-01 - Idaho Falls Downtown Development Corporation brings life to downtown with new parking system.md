@@ -60,3 +60,5 @@ IFDDC Business Improvement District | Idaho Falls Downtown Development Corporati
 [SUBMIT A CORRECTION](https://www.eastidahonews.com/submit-a-correction/?headline=Idaho%20Falls%20Downtown%20Development%20Corporation%20brings%20life%20to%20downtown%20with%20new%20parking%20system&url=https://www.eastidahonews.com/2025/08/idaho-falls-downtown-development-corporation-brings-life-to-downtown-with-new-parking-system/)
 
 EastIdahoNews.com comment boards are a place for open, honest, and civil communication between readers regarding the news of the day and issues facing our communities. We encourage commenters to stay on topic, use positive and constructive language, and be empathetic to the feelings of other commenters. **THINK BEFORE YOU POST.** [Click here](https://www.eastidahonews.com/eastidahonews-com-code-of-ethics/#onlinecommenting) for more details on our commenting rules.
+
+#idaho

@@ -62,3 +62,5 @@ The 20-minute loading and unloading zones will remain available for quick trips 
 Article Topic Follows: [Idaho Falls](https://localnews8.com/category/news/idaho-falls/)
 
 22 Followers
+
+#idaho

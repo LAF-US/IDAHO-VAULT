@@ -18,3 +18,5 @@ Miller told the board, since February, roughly 118 fire starts have taken place 
 Compared to this time last year, there were more total starts, but significantly less acres burned. 153 total starts and 765 acres.
 
 The National Interagency Fire Center, in their monthly outlook for August, expect the southern half of the state to be in above normal potential for wildfire.
+
+#idaho

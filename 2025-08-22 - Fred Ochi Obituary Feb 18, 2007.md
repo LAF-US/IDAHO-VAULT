@@ -36,3 +36,5 @@ FRED OCHI IDAHO FALLS, ID -- Fred Isao Ochi, an [[Idaho]] Landscape Artist and b
 To send flowers in memory, please visit our [flower store](https://websites.tukios.com/orders/v2/flowers/44a62538-d66c-4bb2-a7dc-b844fbbbfc01?ttm_origin=obituary&ttm_template=traditional&ttm_domain=www.woodfuneralhome.com&ttm_cta=f_inline).
 
 <iframe allow="clipboard-write; web-share" src="chrome-extension://cnjifjpddelmedmihgijeibhnjfabmlf/side-panel.html?context=iframe"></iframe>
+
+#idaho

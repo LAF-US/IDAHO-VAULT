@@ -5,13 +5,16 @@ related:
 - Idaho Reports
 authority: LOGAN
 ---
-me! 7B Boy, Born-and-Raised
+me[[!]] 
+
+[[7B]] Boy, Born-and-Raised
 
 Documentary Journalist
 
-reporter/producer for Idaho Reports at Idaho Public Television
+reporter/producer for [[Idaho Reports]] at [[Idaho Public Television]] ([[PBS]])
 
 ## Astrology
 
-Sun **Virgo** · Moon **Scorpio** · Rising **Scorpio** — a "double Scorpio." (The
-[[DRIVE-REGISTRY]] `timemachine` drive wears a "Double Scorpio" sticker for this.)
+Sun **Virgo** · Moo[[Scorpio|n **Sco]]rpio** · Rising **Scorpio** — a "double Scorpio"
+
+#idaho

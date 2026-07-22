@@ -23,3 +23,5 @@ Duffy did not advance past the qualifying round, but said the experience was sti
 
 BE THE FIRST TO COMMENT
 “I think the guy that ran before me was in the WWE [or World Wrestling Entertainment, an American professional wrestling promotion]. The person after me was a world boomerang champion,” Duffy said. “There were even some pretty famous influencers who I became friends with, which was kind of fun.”
+
+#idaho

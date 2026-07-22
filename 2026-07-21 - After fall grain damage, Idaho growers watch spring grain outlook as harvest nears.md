@@ -28,3 +28,5 @@ Beyond frost damage, the warm, dry winter allowed disease-carrying pests such as
 Marshall said she remains optimistic about the spring grain outlook compared with what she predicted in early spring.
 
 “The spring crop looks really good,” Marshall said. “There was some frost damage but not nearly enough to cause yield loss.”
+
+#idaho

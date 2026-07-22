@@ -50,3 +50,5 @@ Boots was ill with cancer over the past couple of years. He died at his home nea
 Shawn Vestal can be reached at (509) 459-5431 or [shawnv@ spokesman.com](mailto:shawnv@spokesman.com). Follow him on Twitter at @vestal13.
 
 ---
+
+#idaho

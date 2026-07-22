@@ -16,3 +16,5 @@ Custer County Search and Rescue enlisted help from Air St. Luke’s 1 out of Boi
 The individual was then transported to Eastern Idaho Medical Center.
 
 Rescuers credited the Idaho National Guard and Air St. Luke’s for completing the rescue in “spontaneous inclement weather conditions over the Lost River Range,” and noted that Custer County SAR is a volunteer organization.
+
+#idaho

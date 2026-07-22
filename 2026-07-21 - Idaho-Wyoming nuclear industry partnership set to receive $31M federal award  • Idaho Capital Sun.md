@@ -45,3 +45,5 @@ Crapo said the regional tech hub would, “will build on Idaho’s unmatched exp
 The intermountain regional tech hub comprises more than [45 organizations](https://idahoadvancedenergy.org/membership/our-members/) across Idaho and Wyoming, including Idaho National Laboratory, Deloitte, Idaho Power, Idaho city governments, Idaho colleges and universities, and the U.S. Department of Commerce.
 
 The federal administration announced Monday six tech hubs would receive awards totalling $169 million to “advance U.S. leadership in industries essential to our economic competitiveness and national security,” according to an EDA press release.
+
+#idaho

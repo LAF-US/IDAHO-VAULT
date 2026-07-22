@@ -1640,3 +1640,5 @@ The papers were donated January 1966.
 		1 item: Book 12, "The Second Half of the Biennium" begins with January 1944 and contains clippings of that year, including newspaper advertisements for Bottolfsen's unsuccessful bid for a seat in the U.S. Senate. The only notable item in this scrapbook is a letter to Bottolfsen dated November 7, 1942, signed by Thomas E. Dewey.
 		Dates: 1942-1944
 		Container: Box Oversize, Folder 72
+
+#idaho

@@ -36,3 +36,5 @@ Jan Powell, with Idahoans Against the Death Penalty, said opposition to capital 
 "Not everyone in Idaho supports guns, and not everyone in Idaho supports the death penalty," Powell said.
 
 [Idahoans Against the Death Penalty](https://idahoansagainstthedeathpenalty.org/) and other advocacy groups say they plan to continue public education efforts as debate over capital punishment and execution methods continues in Idaho.
+
+#idaho
