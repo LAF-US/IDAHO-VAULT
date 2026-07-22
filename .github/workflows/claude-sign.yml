@@ -1,0 +1,202 @@
+# DRAFT — server-side commit signing for agent-authored commits, done as plain
+# `git`/SSH signing with the key fetched from 1Password at CI time. Filed
+# 2026-06-01 by !socrates.claude.novice; reworked 2026-06-24; the
+# anthropics/claude-code-action invocation removed 2026-07-19 — signing an
+# existing commit is a `git commit --amend -S` / rebase operation, not a task
+# that needs an agent spun up to perform it. The Action's ssh_signing_key/bot_id/
+# bot_name inputs sign commits *that Action produces itself* while doing agentic
+# work; they were never the right tool for re-signing commits already made by a
+# different process. Native git does the actual signing below.
+#
+# CORRECTION (2026-06-24): an earlier header WITHDREW this draft on the premise
+# that "1Password is NOT a sustainable secret-source for this vault." That premise
+# is FALSE and is retracted. 1Password IS the vault's credential backbone:
+#   - CLAUDE.md § 1Password Integration makes it the centralized secret store and
+#     the configured git-signing SSH agent;
+#   - OP_SERVICE_ACCOUNT_TOKEN is provisioned in repo Secrets (.op/secrets.template.md,
+#     2026-06-17) and is the one secret GitHub Actions holds — everything else is
+#     fetched at runtime via op / load-secrets-action;
+#   - Logan signs commits daily with the 1Password SSH agent.
+# The load-secrets-action pattern below mirrors the WORKING
+# .github/workflows/1password-secret-template.yml. So the secret-SOURCE is settled
+# (1Password); this draft is LIVE, not "overreach."
+#
+# STILL OPEN — held under LOGAN's gate (each marked `# *` inline), NOT yet decided:
+#   (a) activation (enable in repo Settings → Actions). The job no-ops without
+#       OP_SERVICE_ACCOUNT_TOKEN, so merging the file alone changes nothing.
+#   (b) trigger model — workflow_dispatch (drafted) vs pull_request_target.
+#   (c) the canonical 1Password vault + the item holding the signing identity
+#       (key, name, email) — and whether this identity is Claude-specific or
+#       shared/parameterized across other direct-write agents (Codex, Gemini
+#       CLI, Copilot), per the per-agent-key standing model ratified in #399.
+#
+# Purpose: PR #400's verified-as-Claude commits came from claude.ai/code cloud
+# sessions (signal 2026-05-29) — Anthropic's own remote-session infra signs
+# those at commit time already. This workflow is for the sessions that infra
+# doesn't cover (e.g. local-machine agent sessions): sign already-pushed
+# commits server-side via plain git, using a key loaded from 1Password.
+# Companion recipe: INBOX/AGENT-SIGNING-VIA-ACTION-DRAFT-2026-06-01.md
+# Related: !/SIGNALS/SIGNAL-ABHORSEN-WAITING-TO-SOCRATES-2026-05-29-SIGNING-GROUND-TRUTH.md
+
+name: Claude Sign (DRAFT)
+
+on:
+  # * Trigger choice held under LOGAN gate. Candidates:
+  #   - workflow_dispatch (manual; safest for first activation)
+  #   - pull_request_target on chamber branches (claude/*) — automatic but
+  #     requires policy review (pull_request_target runs trusted code)
+  workflow_dispatch:
+    inputs:
+      target_branch:
+        description: "Branch to sign commits on (must already be pushed)"
+        required: true
+        type: string
+      mode:
+        description: "Operation mode"
+        required: true
+        type: choice
+        options:
+          - dry-run
+          - sign-tip-only
+          - sign-all-unsigned
+
+permissions:
+  contents: write
+
+jobs:
+  sign:
+    runs-on: ubuntu-latest
+    env:
+      OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
+    steps:
+      - name: Guard — fail if 1Password token is missing
+        if: env.OP_SERVICE_ACCOUNT_TOKEN == ''
+        run: |
+          echo "OP_SERVICE_ACCOUNT_TOKEN is not configured; cannot fetch the signing key from 1Password."
+          echo "This workflow requires OP_SERVICE_ACCOUNT_TOKEN to be present in repo Secrets."
+          exit 1
+
+      - name: Checkout target branch
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          ref: ${{ inputs.target_branch }}
+          fetch-depth: 0  # full history for re-sign operations
+
+      # 1Password load — same pattern as .github/workflows/1password-secret-template.yml.
+      # * Vault + item for the Claude signing key are LOGAN's to name. Verified
+      #   2026-06-24: the WORKING 1password-secret-template.yml references
+      #   `op://vault-operations/...`; .op/secrets.template.md documents vault
+      #   "IDAHO-VAULT" with an SSH item "GitHub SSH Key" — but that row is still
+      #   marked "❌ Not created" as of the same document, so it isn't a safe
+      #   assumption that it already exists. The `op://Vault/...` placeholders
+      #   below match neither — replace with the canonical vault and the item
+      #   holding an SSH key registered as a GitHub *Signing* Key (Claude's own
+      #   item, or a newly-created "GitHub SSH Key").
+      - name: Load signing key from 1Password
+        if: env.OP_SERVICE_ACCOUNT_TOKEN != ''
+        uses: 1password/load-secrets-action@92467eb28f72e8255933372f1e0707c567ce2259 # v4
+        with:
+          export-env: true
+        env:
+          CLAUDE_SSH_SIGNING_KEY: op://Vault/claude-code-signing-key/private-key  # *
+          CLAUDE_BOT_NAME: op://Vault/claude-bot-identity/bot-name                 # *
+          CLAUDE_BOT_EMAIL: op://Vault/claude-bot-identity/bot-email               # *
+
+      - name: Configure git SSH commit signing
+        if: env.OP_SERVICE_ACCOUNT_TOKEN != ''
+        run: |
+          umask 077
+          key_path="$RUNNER_TEMP/signing-key"
+          printf '%s\n' "$CLAUDE_SSH_SIGNING_KEY" > "$key_path"
+          chmod 600 "$key_path"
+          git config user.name "$CLAUDE_BOT_NAME"
+          git config user.email "$CLAUDE_BOT_EMAIL"
+          git config gpg.format ssh
+          git config user.signingkey "$key_path"
+          git config commit.gpgsign true
+          # Pin explicitly rather than trust whatever the runner's ambient
+          # config resolves to. Verified by hand (2026-07-20 investigation):
+          # in an environment where gpg.ssh.program was already set globally
+          # to a different signing helper, an unpinned `git commit -S` still
+          # "succeeds" and looks done, but the resulting signature is BAD
+          # (%G?=B, not G) — a silent failure this workflow would otherwise
+          # push without anyone noticing. A stock ubuntu-latest runner
+          # wouldn't hit this, but the config is one line and removes the
+          # dependency on that assumption entirely.
+          git config gpg.ssh.program "$(command -v ssh-keygen)"
+
+      # Plain git, no agent invocation: `%G?` reports each commit's signature
+      # status (N = unsigned). dry-run only reports; the other two modes
+      # amend-and-sign in place, verify the result is a GOOD signature before
+      # pushing (never trust `-S` blindly — see the gpg.ssh.program note
+      # above for why), then push the rewritten history back to the same
+      # branch it came from (force-with-lease, since amending changes the
+      # SHA — the branch was already required to be pushed, so this is
+      # expected, not a surprise rewrite of unseen work).
+      - name: Sign commits
+        if: env.OP_SERVICE_ACCOUNT_TOKEN != ''
+        env:
+          TARGET_BRANCH: ${{ inputs.target_branch }}
+          MODE: ${{ inputs.mode }}
+        run: |
+          set -euo pipefail
+          base="$(git merge-base origin/main HEAD)"
+          # Only checks the range actually touched by the mode that ran —
+          # sign-tip-only doesn't sign earlier commits, so checking the full
+          # base..HEAD range there would reject a run that worked correctly.
+          verify_signed() {
+            while read -r sha status; do
+              if [ "$status" != "G" ]; then
+                echo "::error::commit $sha has signature status '$status' (expected G/good) after signing — refusing to push" >&2
+                exit 1
+              fi
+            done < <(git log --format='%H %G?' "$1")
+          }
+          case "$MODE" in
+            dry-run)
+              echo "Commits on $TARGET_BRANCH ahead of main (sha status subject):"
+              git log --format='%H %G? %s' "$base"..HEAD
+              ;;
+            sign-tip-only)
+              git commit --amend --no-edit -S
+              verify_signed "HEAD~1..HEAD"
+              git push --force-with-lease origin "HEAD:$TARGET_BRANCH"
+              ;;
+            sign-all-unsigned)
+              git rebase "$base" --exec \
+                'test "$(git log -1 --format=%G?)" = N && git commit --amend --no-edit -S || true'
+              verify_signed "$base..HEAD"
+              git push --force-with-lease origin "HEAD:$TARGET_BRANCH"
+              ;;
+          esac
+
+      # Verification is the GitHub side reporting verified:true on the signed
+      # commits — observable via `gh api repos/.../commits/<sha>` or the
+      # "Verified" badge on the commit itself after this workflow runs. The
+      # verify_signed check above is a local pre-push guard, not a
+      # substitute for that — a locally-GOOD signature still needs its public
+      # key registered on GitHub as a Signing Key to render Verified there.
+
+# ============================================================================
+# DRAFT NOTES (proposal-marginalia, 2026-06-01; reworked 2026-06-24, 2026-07-19):
+# ============================================================================
+#
+# This workflow file is a DRAFT proposal for the Gate A (required_signatures)
+# linchpin. The Architect (LOGAN) decides:
+#
+# (a) whether to activate this workflow (enable in GitHub UI + provide secrets)
+# (b) whether the trigger choice (workflow_dispatch first, then pull_request_target
+#     after a trial period) is correct
+# (c) the canonical 1Password vault + signing identity (key, name, email) — and
+#     whether it's Claude-specific or generalized across other direct-write
+#     agents (see the verified note above)
+#
+# RESOLVED 2026-07-19: (d) and (e) from the earlier version of this note are
+# moot — the anthropics/claude-code-action invocation (and its unresolved
+# re-sign-capability and unwired-prompt questions) is gone. Signing an
+# existing commit is `git commit --amend -S` / a rebase with that exec'd per
+# commit; no agent invocation, no prompt, no version to pin.
+#
+# Companion recipe: INBOX/AGENT-SIGNING-VIA-ACTION-DRAFT-2026-06-01.md
+# Related: !/SIGNALS/SIGNAL-ABHORSEN-WAITING-TO-SOCRATES-2026-05-29-SIGNING-GROUND-TRUTH.md
+# ============================================================================
