@@ -27,3 +27,5 @@ For more information about the art of Roy Reynolds, contact Chris Hatch at (208)
 #### Categories:
 
 [University News](https://www.isu.edu/news/university-news/)
+
+#idaho

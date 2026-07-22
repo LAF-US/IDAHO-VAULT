@@ -14,3 +14,5 @@ During the hearing, the judge asked whether the request was based on the defense
 Ross Wardlaw is accused of stabbing Harbst to death. The two did not know each other, and Wardlaw faces a first-degree murder charge. Idaho does not recognize an "insanity plea," but a defendant must be mentally competent enough to understand what they are being charged with before they can be taken to trial.
 
 Prosecutors did not object to the request, and the judge approved a mental health evaluation.
+
+#idaho

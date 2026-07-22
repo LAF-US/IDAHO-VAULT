@@ -24,3 +24,5 @@ Roy is survived by his wife Mon’nette Ashton Bell Reynolds; his sons and daugh
 Roy's 12 grandchildren include Robert Michael (Sara), Hailey Poulson (Nick), and Blake; Dylan, Chase, and Stara Bell; Destiny (Art) Jimenez; Christopher Jr. (Cece) and Lyndsay Reynolds; and Deveny, Mahaila, and Avarie Reynolds. Roy is also survived by 10 great grandchildren, his brother Vic (Charla Behrens) of Idaho Falls, sister-in-law Karan Reynolds, his nephew Jason, and his god daughter, Alexa Stanger. He was preceded in death by his parents and his brother Steve (Karan).
 
 The family will hold a private interment. A Celebration of Life will be held October 9 from 5 to 8 pm at the Art Museum of Eastern Idaho, 300 S. Capital Ave., Idaho Falls. The family requests that any memorial contributions be made to the Art Museum of Eastern Idaho or NAMI (National Alliance for the Mentally Ill), PO Box 62596, Baltimore, MD 21864.
+
+#idaho

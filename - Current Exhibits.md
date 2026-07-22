@@ -12,3 +12,5 @@ description: "Roy Reynolds"
 Born and raised in [[Idaho]] Falls, Idaho, Roy Reynolds is intrigued by the region's landscape, people, and architecture. He studied art at the University of Idaho and then at the Art Center School in Los Angeles. Reynolds returned to Idaho and spent years as a cowboy, working as art director for singer/songwriter Carole King. He was awarded a gold record for one of her album covers. His artwork has been used in publicity for Yellowstone National Park Service, Idaho and Montana. He has won repeated awards for his art from the Idaho Advertising Federation and from IGI International. His work is noted for his impressionistic style and bold brushwork.
 
 ![Muse](https://www.figureheadgallery.com/images/roy_reynolds/Muse-oil.jpg "Muse")
+
+#idaho

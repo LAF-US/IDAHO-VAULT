@@ -7,7 +7,7 @@ published: 2026-07-22
 created: 2026-07-22
 description: "Boise Rescue Mission Ministries is provide emergency day shelter on extremely hot days throughout the summer. We encourage anyone – even those who are not homel"
 ---
-BOISE, Idaho (CBS2) — Boise Rescue Mission Ministries is providing emergency day shelters on extremely hot days throughout the summer.
+BOISE, [[Idaho]] (CBS2) — Boise Rescue Mission Ministries is providing emergency day shelters on extremely hot days throughout the summer.
 
 In a recent news release, the Mission states:
 
@@ -37,3 +37,5 @@ Everyone is encouraged to come inside for a drink of water, a nutritious meal an
 
 - Women and children are welcome when temperatures reach 90 degrees by noon. Check-in times are 12 p.m., 1 p.m., and 4 p.m.
 - Cold water, sack lunches and sunscreen are available to guests after check-in.
+
+#idaho

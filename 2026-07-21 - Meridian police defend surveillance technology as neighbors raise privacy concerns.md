@@ -13,7 +13,7 @@ description: "Meridian police defend Axon cameras, license plate readers, and dr
 
 [Kalkidan Meyer](https://www.kivitv.com/kalkidan-meyer)
 
-I'm the Idaho News 6 neighborhood reporter dedicated to bringing you the latest stories from Meridian.
+I'm the [[Idaho]] News 6 neighborhood reporter dedicated to bringing you the latest stories from Meridian.
 
 MERIDIAN, Idaho — Residents in Meridian are raising concerns about police surveillance technology, including Axon cameras, license plate readers, and drones — and the Meridian Police Department is responding.
 
@@ -54,3 +54,5 @@ Send tips to Meridian neighborhood reporter Kalkidan Meyer
 Have a story idea from Meridian? Share it with Kalkidan below —
 
 ![](https://ewscripps.brightspotcdn.com/6c/7e/6b1c66774321b5ebd78528d4e060/chatgpt-image-jun-24-2026-11-28-19-am.png)
+
+#idaho

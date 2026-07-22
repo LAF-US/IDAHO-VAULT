@@ -22,3 +22,5 @@ Officials said people who touch or swim in affected water or breathe in water dr
 Anyone who thinks they might be sick from cyanotoxin exposure should consult a health care provider or call the poison center at 1-800-222-1222. Officials also asked people to notify algae@deq.idaho.gov and to monitor media reports and the Department of Health and Welfare website for health advisories.
 
 Pets, livestock and wildlife can get sick or die within minutes to days after cyanotoxin exposure, officials said. Dogs may become sick before humans because they are more likely to swim in or drink contaminated water or lick bloom material off their fur. Officials recommend immediately washing animals with clean water if they have been in the water to prevent them from licking cyanobacteria off their bodies, and seeking veterinary care immediately if an animal seems sick after going in or drinking the water.
+
+#idaho

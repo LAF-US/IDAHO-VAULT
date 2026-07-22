@@ -35,3 +35,5 @@ My thanks to Defenbach’s grandson, also named Byron Defenbach, for his contrib
 Byron Defenbach as a dapper young man. From the Defenbach family collection.
 
 Speaking of Idaho history posts are copyright © 2020 by Rick Just. Sharing is encouraged. If you don’t find a button that lets you do that, find the post on Speaking of Idaho. If you’re missing my daily posts, select the RSS button, or select See it First under the Facebook Following tab.
+
+#idaho
