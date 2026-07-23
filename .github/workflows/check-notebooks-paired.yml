@@ -31,7 +31,12 @@ jobs:
         with:
           python-version: "3.11"
       - name: Install jupytext
-        run: python -m pip install --quiet "jupytext>=1.16,<2"
+        # Pinned to match requirements.txt exactly (not a floating range): a floating install
+        # here would pick up whatever jupytext ships on PyPI at run time, stamp every synced
+        # twin's frontmatter with that version, and fail this check on every PR touching any
+        # *.md/*.ipynb file the moment upstream cuts a new point release — with no real content
+        # drift involved. See !/AUDIT-CI-FAILURE-SWEEP-2026-07-23.md.
+        run: python -m pip install --quiet "jupytext==1.19.4"
       - name: Sync every paired notebook and fail on drift
         run: |
           # Sync ONLY notebooks that declare a pairing (explicit opt-in). A sync error on a
