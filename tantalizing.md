@@ -1,4 +1,4 @@
-\# Parable: The Failure of Tantalus the Absolute
+# Parable: The Failure of Tantalus the Absolute
 
 
 
@@ -88,5 +88,5 @@ A failed engine asks for proof until the proof is the wreckage.
 
 
 
-\~ T'
+~ T'
 
