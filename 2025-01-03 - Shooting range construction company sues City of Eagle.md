@@ -35,7 +35,7 @@ The city did not have the funding to complete the project, so it would have to r
 
 ![Idaho Lottery - 90 MM - 2:1](https://static-v2.boisedev.com/assets/35da0207-4735-4f00-a726-8f11ae69e570.gif)
 
-Idaho Lottery - 90 MM - 2:1
+[[Idaho]] Lottery - 90 MM - 2:1
 
 The lack of city funds to immediately pay for the full cost of the project led TRS to separate its work to both design and build the range into separate phases. The initial scope of work for the project was limited to design and construction work for Phase 1 and Phase 2 of the range “not to exceed” half a million dollars, according to the complaint. This included the initial design of the site, public participation, and the cutting of the primary access road into the area. The second phase included the construction of the static and 3D archery ranges.
 
