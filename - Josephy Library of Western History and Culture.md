@@ -7,7 +7,7 @@ published:
 created: 2026-07-23
 description:
 ---
-Like many Natives, Doug Hyde was born off-reservation, is of mixed tribal descent, and is a veteran of the Vietnam War. Unlike most, but still a significant number of talented Native artists, Doug was sent from his reservation to the Indian Art School at Santa Fe as a young man. It was there, between growing up on the Nez Perce Reservation at Lapwai, Idaho and serving in Vietnam, that his training as an artist began, and there that he later returned to teach.
+Like many Natives, Doug Hyde was born off-reservation, is of mixed tribal descent, and is a veteran of the Vietnam War. Unlike most, but still a significant number of talented Native artists, Doug was sent from his reservation to the Indian Art School at Santa Fe as a young man. It was there, between growing up on the Nez Perce Reservation at Lapwai, [[Idaho]] and serving in Vietnam, that his training as an artist began, and there that he later returned to teach.
 
 Doug is in his 70s now, a mature artist with a large body of work in galleries, museums, and on reservations across the country. But he has no intention of leaving the work and world of a Native artist.
 
@@ -34,3 +34,5 @@ Doug’s full-figured Nez Perce woman, dressed traditionally, walks back confide
 Doug lost words when describing a work he has in mind, something round and coming together—and his arms waved and body turned—that would show healing of old Tribal divisions—something I will see one day articulated in stone or bronze.
 
 Qe’ci’yew’yew’ –Thank you Doug Hyde. And good work to you.
+
+#idaho
