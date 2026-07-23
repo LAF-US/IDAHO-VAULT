@@ -95,3 +95,5 @@ Rose Frank interviewed by Charles Kurait, 1991 National Heritage Fellowship Conc
 Creating and preserving new perspectives on the arts, culture, and history since 1985.
 
 <iframe allow="clipboard-write; web-share" src="chrome-extension://cnjifjpddelmedmihgijeibhnjfabmlf/side-panel.html?context=iframe"></iframe>
+
+#idaho
