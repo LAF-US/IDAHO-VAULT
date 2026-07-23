@@ -168,3 +168,5 @@ May they find in us not merely an opinion, but compassion. Not merely tolerance,
 ---
 
 [***FāVS News***](https://favs.news/newsletters/) ***uses*** [***professional journalists***](https://favs.news/news/) ***and*** [***thoughtful commentary***](https://favs.news/commentary/) ***to explore faith, values and ethics. Support journalism like this by making a tax-deductible*** [***donation***](https://favs.news/donate-to-favs-news/)***. FāVS is a 501(c)(3) nonprofit. © FāVS News. All rights reserved. Reproduction permitted only to authorized media partners or with written permission.***
+
+#idaho

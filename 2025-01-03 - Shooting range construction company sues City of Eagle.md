@@ -72,3 +72,5 @@ BoiseDev House - OTT - Commercial
 TRS said it submitted an invoice to the City of Eagle separating the work it completed on the first two phases and for the design work on the later phases. The complaint said the City of Eagle paid TRS for the work it completed on phases 1 and 2 of the project, but refuses to pay the $357,065 owed on the design completed on phases 3 and 4.
 
 “The city maintains possession of the 75% complete design plans for the range that address many aspects of phases 3 and 4, far beyond the scope of the contract.”
+
+#idaho

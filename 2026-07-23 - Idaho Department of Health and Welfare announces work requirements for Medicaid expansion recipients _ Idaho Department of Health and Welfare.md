@@ -51,3 +51,5 @@ To ensure that recipients receive important program information, they should ens
 DHW will host virtual town halls for community members in the coming months. For more information about the new requirements, visit the [Medicaid](http://www.medicaid.gov/renew-info/ID "(opens in a new window)") website and the DHW [website](https://healthandwelfare.idaho.gov/services-programs/medicaid-health/medicaid-expansion) about Medicaid expansion.
 
 *The Idaho Department of Health and Welfare is dedicated to strengthening the health, safety, and independence of Idahoans. Learn more at* [*healthandwelfare.idaho.gov*](https://healthandwelfare.idaho.gov/)*.*
+
+#idaho
