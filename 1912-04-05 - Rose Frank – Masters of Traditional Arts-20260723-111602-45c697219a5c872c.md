@@ -66,7 +66,7 @@ Cornhusk weaving by Rose Frank, courtesy National Endowment for the Arts
 
 Cornhusk weaving by Rose Frank, courtesy National Endowment for the Arts
 
-Rose Frank was born in Sweetwater, Idaho, in the Nez Perce area. The Nez Perce tribe once spread across northwestern Oregon, northern Idaho and western Montana.
+Rose Frank was born in Sweetwater, [[Idaho]], in the Nez Perce area. The Nez Perce tribe once spread across northwestern Oregon, northern Idaho and western Montana.
 
 They had established trading relations with distant tribes in British Columbia and California long before European contact. This enabled them to adorn their leather and fiber weavings with blue abalone and dentalia shells from the Pacific Ocean. Their leatherwork and quillwork were also notable, and by the late nineteenth century the excellence of Nez Perce beadwork had brought them an international reputation.
 

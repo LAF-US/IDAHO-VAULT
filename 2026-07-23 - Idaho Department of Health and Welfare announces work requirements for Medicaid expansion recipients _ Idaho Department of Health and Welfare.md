@@ -6,7 +6,7 @@ published: 2026-07-23
 created: 2026-07-23
 description: "The Idaho Department of Health and Welfare (DHW) is issuing this update about the implementation of new reporting requirements for the state’s Medicaid expansion population, effective Jan. 1, 2027.Last year, H.R. 1 was approved by the U.S. Congress and President Trump, directing states to implement new work requirements for Medicaid recipients in the expansion category to qualify for Medicaid and keep their coverage. These changes require Medicaid expansion enrollees to report on their participation in work or community engagement activities."
 ---
-The Idaho Department of Health and Welfare (DHW) is issuing this update about the implementation of new reporting requirements for the state’s Medicaid expansion population, effective Jan. 1, 2027.
+The [[Idaho]] Department of Health and Welfare (DHW) is issuing this update about the implementation of new reporting requirements for the state’s Medicaid expansion population, effective Jan. 1, 2027.
 
 Last year, H.R. 1 was approved by the U.S. Congress and President Trump, directing states to implement new work requirements for Medicaid recipients in the expansion category to qualify for Medicaid and keep their coverage. These changes require Medicaid expansion enrollees to report on their participation in work or community engagement activities.
 
