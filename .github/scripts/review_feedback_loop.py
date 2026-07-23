@@ -110,14 +110,14 @@ RISK_NOPE_LABEL = "risk/nope"
 # two independent axes — each stamped ONLY when its axis fires. There are no prefixes, no
 # explicit `—` labels, and no separate clear marker.
 #   FILETYPE axis: risk/low (Machine Doc / inert assets) | risk/med (Computer Code — executes)
-#   FILEDEPTH axis: risk/high (Nest depth / protected surface) | risk/nope (the still point —
-#                   the sovereign's own hand, never auto)
+#   FILEDEPTH axis: risk/high (path inside the "!/" tree) | risk/nope (path in the inner
+#                   "!/!/__!__/!/" region and below — never auto-merges)
 # A PR carries AT MOST one filetype value AND at most one filedepth value (0–2 labels total).
 # `—` on an axis is the ABSENCE of that axis's label; `—/—` (clear) is NO risk/* label at all.
 # Flags are TRANSIENT ROUTING STATE, never a verdict: the classifier restamps them on
 # synchronize (labels mirror the current diff), and when the lane's review completes the
 # engine clears the fired flag (removes it) and the PR flows. risk/nope is never
-# auto-cleared — the still point asks for the sovereign's own hand.
+# auto-cleared — it always requires a human merge.
 FILETYPE_RISK_LABELS = {"low": RISK_LOW_LABEL, "med": RISK_MED_LABEL}
 DEPTH_RISK_LABELS = {"high": RISK_HIGH_LABEL, "nope": RISK_NOPE_LABEL}
 RISK_FLAG_LABELS = frozenset(
@@ -173,11 +173,11 @@ LABEL_SPECS: dict[str, tuple[str, str]] = {
     ),
     RISK_HIGH_LABEL: (
         "E99695",
-        "Filedepth: high (Nest depth or protected surface).",
+        "Filedepth: high (path inside the \"!/\" tree).",
     ),
     RISK_NOPE_LABEL: (
         "B60205",
-        "Filedepth: nope (the still point — the sovereign's own hand, never auto).",
+        "Filedepth: nope (inner \"!/!/__!__/!/\" region and below; never auto-merges).",
     ),
 }
 
