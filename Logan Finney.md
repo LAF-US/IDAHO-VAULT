@@ -29,3 +29,4 @@ reporter/producer for [[Idaho Reports]] at [[Idaho Public Television]] ([[PBS]])
 Sun **Virgo** · Moon **Scorpio** · Rising **Scorpio** — a "double Scorpio"
 
 #idaho
+ #logan-finney
