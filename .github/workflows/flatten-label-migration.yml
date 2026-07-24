@@ -142,8 +142,10 @@ jobs:
         if: ${{ inputs.dry_run == false }}
         run: |
           set -euo pipefail
+          # No `|| true`: this is a safety check, so a gh/jq failure must fail the step
+          # closed (set -euo pipefail) rather than be swallowed into a false "clean".
           hits=$(gh pr list --repo "$OWNER/$NAME" --state open --limit 200 --json labels \
-            --jq '[.[].labels[].name] | map(select(test("^filetype:risk/|^depth:risk/|^risk/—$"))) | unique | .[]' || true)
+            --jq '[.[].labels[].name] | map(select(test("^filetype:risk/|^depth:risk/|^risk/—$"))) | unique | .[]')
           if [ -n "$hits" ]; then
             echo "::error::retired labels still present on open PRs:"; echo "$hits"; exit 1
           fi
