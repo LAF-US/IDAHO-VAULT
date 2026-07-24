@@ -67,6 +67,7 @@ jobs:
         # --project-token is passed only when the secret is non-empty —
         # forked PRs run with empty secrets and must still analyze with
         # default configurations.
+        shell: bash
         run: |
           args=(
             analyze
