@@ -918,9 +918,10 @@ def ensure_labels() -> None:
         except RuntimeError as exc:  # noqa: BLE001 — "do not abort", never abort
             # _run's RuntimeError carries multi-line stdout/stderr (the actual
             # 403 reason lives past line 1); a raw ::warning:: only renders its
-            # first line in the GitHub UI annotation, so escape newlines per
-            # the workflow-command spec instead of losing the real reason.
-            detail = str(exc).replace("\n", "%0A")
+            # first line in the GitHub UI annotation, so escape per the
+            # workflow-command spec (%25/%0D/%0A, in that order so the literal
+            # % escape itself doesn't get re-escaped by the later replacements).
+            detail = str(exc).replace("%", "%25").replace("\r", "%0D").replace("\n", "%0A")
             print(f"::warning::ensure_labels skipped '{label}': {detail}", file=sys.stderr)
 
 

@@ -114,18 +114,46 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         # its 7 call sites (review_submitted, sync_pr, ...) before any real work — thread
         # resolution, auto-merge arming — ran. Label upsert is best-effort setup and must
         # not be able to do that.
-        def _raise_403(cmd, check=True, timeout=300):
-            raise RuntimeError(
-                f"Command failed (1): {' '.join(cmd)}\n"
-                "stdout:\n\nstderr:\n"
-                "HTTP 403: Resource not accessible by personal access token"
-            )
+        # Fails only the first label attempted (LABEL_SPECS is a dict of
+        # name -> (color, description); `_ensure_label` passes name as cmd[3]
+        # in ["gh", "label", "create", name, ...]) so the test can tell "swallows
+        # one and keeps going" apart from "swallows one and stops".
+        failing_label = next(iter(review_feedback_loop.LABEL_SPECS))
 
-        with mock.patch.object(review_feedback_loop, "_run", side_effect=_raise_403):
+        def _raise_403_for_one_label(cmd, check=True, timeout=300):
+            if cmd[3] == failing_label:
+                raise RuntimeError(
+                    f"Command failed (1): {' '.join(cmd)}\n"
+                    "stdout:\n\nstderr:\n"
+                    "HTTP 403: Resource not accessible by personal access token"
+                )
+
+        with mock.patch.object(
+            review_feedback_loop, "_run", side_effect=_raise_403_for_one_label
+        ) as mock_run:
             try:
                 review_feedback_loop.ensure_labels()
             except RuntimeError:
                 self.fail("ensure_labels() must not raise on a per-label gh failure")
+
+        attempted = {call.args[0][3] for call in mock_run.call_args_list}
+        self.assertEqual(
+            attempted,
+            set(review_feedback_loop.LABEL_SPECS),
+            "one label's 403 must not stop the rest from being attempted",
+        )
+
+    def test_ensure_labels_still_raises_on_a_non_permission_error(self) -> None:
+        # The except clause in ensure_labels is deliberately scoped to RuntimeError
+        # (what `_run` raises on a failed `gh` invocation, per gh_cli.py) so that an
+        # unrelated bug elsewhere -- a real TypeError, say -- still surfaces loudly
+        # instead of being swallowed by the same "never abort" handling meant for
+        # gh CLI failures.
+        with mock.patch.object(
+            review_feedback_loop, "_run", side_effect=TypeError("not a gh failure")
+        ):
+            with self.assertRaises(TypeError):
+                review_feedback_loop.ensure_labels()
 
     def test_clear_pair_pr_becomes_auto_merge_eligible_after_grace(self) -> None:
         # K3/#629: the `—/—` pair — and ONLY it — arms auto-merge. A PR that classify
