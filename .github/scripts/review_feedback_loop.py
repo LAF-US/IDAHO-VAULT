@@ -1056,9 +1056,9 @@ def evaluate_review_state(
     low_risk = risk_tier == "low"
     merge_blocked = draft or blocking_review or current_unresolved > 0
     # K6 lane completion — flags are transient routing state, consumed as the PR clears
-    # its lane: an approving review with no current threads completes the lane, the
-    # engine clears the fired flag (projection restamps that axis to `—`), and the PR
-    # flows. depth:nope is NEVER auto-cleared — the still point is the sovereign's hand.
+    # its lane: an approving review with no current threads completes the lane, the engine
+    # clears the fired flag (the projection removes the fired flat risk/* label), and the PR
+    # flows. depth:nope is NEVER auto-cleared — it always requires a human merge.
     lane_complete = (
         review_decision == "APPROVED" and current_unresolved == 0 and not draft
     )
