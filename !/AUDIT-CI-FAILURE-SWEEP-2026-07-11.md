@@ -1,5 +1,6 @@
 ---
 title: CI Failure Sweep — 2026-07-11
+updated: 2026-07-11
 type: audit
 status: draft
 authority: CLAUDE (routine CI sweep)
