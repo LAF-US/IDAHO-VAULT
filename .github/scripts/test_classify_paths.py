@@ -90,6 +90,13 @@ class PlacementTest(unittest.TestCase):
             with self.subTest(path=path):
                 self.assertIsNone(cp.placement_flag(path))
 
+    def test_windows_separators_are_normalized(self):
+        # classify_file normalizes '\\' to '/' so placement prefixes match regardless of
+        # separator style (git/gh emit '/', but local/tooling input may use '\\').
+        self.assertEqual(cp.classify_file("!\\AGENTS.md"), (None, "high"))
+        self.assertEqual(cp.classify_file("!\\!\\__!__\\!\\x.md"), (None, "nope"))
+        self.assertEqual(cp.classify_file("!\\swarm\\run.sh"), ("med", "high"))
+
 
 class RiskiestTest(unittest.TestCase):
     def test_riskiest_picks_by_precedence(self):
