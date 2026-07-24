@@ -1298,10 +1298,13 @@ def _build_reconciliation_report(
                 auto_resolve_reviewers=auto_resolve_reviewers,
             )
             # K6 restamp (#632) — this sweep IS the backfill automation: every open PR's
-            # risk labels are re-mirrored from the one classifier (pair + legacy kept in
-            # sync), so unmarked/stale-labeled in-flight PRs migrate without a hand-sweep.
-            # Skipped when the lane already completed (its flag was consumed). Fails SAFE
-            # per PR: a classification error leaves that PR's labels untouched.
+            # risk labels are re-mirrored from the one classifier, so unmarked/stale-labeled
+            # in-flight PRs migrate without a hand-sweep. The verdict is always fetched; only
+            # the restamp is skipped once the lane completed (its flag was consumed). A
+            # classification error skips the restamp and leaves labels as-is; the PR is then
+            # evaluated on its existing labels, so an unmarked PR reads `unknown` and fails
+            # CLOSED — the projection disarms it. Intentional: a transient failure self-heals
+            # on the next clean sweep; a persistent one correctly holds the PR.
             restamp_actions: list[str] = []
             try:
                 ft_flag, dp_flag = _classify_pr_pair(owner, repo, pr_number)
@@ -1476,10 +1479,12 @@ def sync_pr(args: argparse.Namespace) -> int:
         auto_resolve_reviewers=auto_resolve_reviewers,
     )
 
-    # K6 restamp-on-sync (#632): risk labels mirror the CURRENT diff, from the one
-    # classifier — unless the lane already completed (its flag was consumed; only new
-    # code re-enters the lane). Fails SAFE: a classification error leaves labels
-    # untouched (an unmarked PR holds; nothing arms off a failed classification).
+    # K6 restamp-on-sync (#632): risk labels mirror the CURRENT diff from the one classifier.
+    # The verdict is always fetched (so a consumed-clear lane reads clear, not unknown); only
+    # the restamp is skipped once the lane completed (its flag was consumed). A classification
+    # error skips the restamp and leaves labels as-is; the PR is then evaluated on its existing
+    # labels, so an unmarked PR reads `unknown` and fails CLOSED — the projection disarms it.
+    # Intentional: a transient failure self-heals on the next clean sweep; a persistent one holds.
     restamp_actions: list[str] = []
     try:
         ft_flag, dp_flag = _classify_pr_pair(args.owner, args.repo, args.pr_number)
