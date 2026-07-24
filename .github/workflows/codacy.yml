@@ -85,29 +85,80 @@ jobs:
             --max-allowed-issues 2147483647 \
             --gh-code-scanning-compat
 
-      # GitHub code scanning (July 2025 policy change) rejects a SARIF file
-      # whose runs share a category; Codacy's SARIF emits one run per tool
-      # invocation and several share one. Give every run a distinct
-      # automationDetails.id so each maps to its own category before upload.
-      # The dockerized CLI writes results.sarif as root, so the runner user
-      # can read but not overwrite it — the processed SARIF goes to a new
-      # runner-owned file that the upload step consumes instead.
-      - name: Assign unique SARIF run categories
+      # GitHub code scanning rejects Codacy's raw SARIF twice over: runs
+      # sharing a category are refused (July 2025 policy), and a file may
+      # carry at most 20 runs while Codacy emits one run per tool
+      # invocation (39 observed). Merging runs by tool driver fixes both —
+      # each tool becomes one run with a distinct automationDetails.id.
+      # Results are rekeyed from positional ruleIndex to ruleId before
+      # merging so rule references survive; an overflow guard folds the
+      # least-populated tools into one composite run if distinct tools
+      # ever exceed the cap. The dockerized CLI writes results.sarif as
+      # root, so the runner user can read but not overwrite it — the
+      # processed SARIF goes to a new runner-owned file.
+      - name: Merge SARIF runs per tool
         shell: bash
         run: |
           python3 - <<'EOF'
           import json
 
+          MAX_RUNS = 20
+
           with open("results.sarif") as fh:
               sarif = json.load(fh)
-          counts = {}
+
+          merged = {}
+          order = []
           for run in sarif.get("runs", []):
-              tool = run.get("tool", {}).get("driver", {}).get("name", "codacy")
-              n = counts.get(tool, 0)
-              counts[tool] = n + 1
-              run.setdefault("automationDetails", {})["id"] = f"codacy-{tool}-{n}/"
+              driver = run.setdefault("tool", {}).setdefault("driver", {})
+              name = driver.get("name", "codacy")
+              rules = driver.get("rules") or []
+              results = run.get("results") or []
+              for res in results:
+                  idx = res.pop("ruleIndex", None)
+                  if "rule" in res and isinstance(res["rule"], dict):
+                      res["rule"].pop("index", None)
+                  if "ruleId" not in res and idx is not None and 0 <= idx < len(rules):
+                      res["ruleId"] = rules[idx].get("id")
+              if name not in merged:
+                  driver["rules"] = list(rules)
+                  run["results"] = list(results)
+                  run.setdefault("automationDetails", {})["id"] = f"codacy-{name}/"
+                  merged[name] = run
+                  order.append(name)
+              else:
+                  target = merged[name]
+                  tdriver = target["tool"]["driver"]
+                  tdriver.setdefault("rules", [])
+                  known = {r.get("id") for r in tdriver["rules"]}
+                  for rule in rules:
+                      if rule.get("id") not in known:
+                          tdriver["rules"].append(rule)
+                          known.add(rule.get("id"))
+                  target.setdefault("results", []).extend(results)
+
+          runs = [merged[n] for n in order]
+          if len(runs) > MAX_RUNS:
+              runs.sort(key=lambda r: len(r.get("results", [])), reverse=True)
+              keep, spill = runs[: MAX_RUNS - 1], runs[MAX_RUNS - 1 :]
+              base = spill[0]
+              bdriver = base["tool"]["driver"]
+              bdriver["name"] = "codacy-other"
+              bdriver.setdefault("rules", [])
+              known = {r.get("id") for r in bdriver["rules"]}
+              for extra in spill[1:]:
+                  for rule in extra["tool"]["driver"].get("rules", []):
+                      if rule.get("id") not in known:
+                          bdriver["rules"].append(rule)
+                          known.add(rule.get("id"))
+                  base.setdefault("results", []).extend(extra.get("results", []))
+              base.setdefault("automationDetails", {})["id"] = "codacy-other/"
+              runs = keep + [base]
+
+          sarif["runs"] = runs
           with open("results-categorized.sarif", "w") as fh:
               json.dump(sarif, fh)
+          print(f"SARIF runs after merge: {len(runs)}")
           EOF
 
       # Upload the SARIF file generated in the previous step
