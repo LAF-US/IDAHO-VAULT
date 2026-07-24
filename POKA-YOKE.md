@@ -67,9 +67,9 @@ Grounded in `VAULT-CONVENTIONS.md` and files read this session:
 | Device | Kind | Where it lives |
 | --- | --- | --- |
 | Secret pattern gate | Prevention, blocks | `.githooks/pre-commit` + `.github/scripts/check_secret_patterns.py`; blocking CI in `secret-pattern-policy.yml`; manual full-repo sweep via `secret-pattern-full-scan.yml` (`workflow_dispatch`-only) |
-| Portable path gate (NETWEB) | Prevention, blocks | `check-portable-paths.yml` — hard gate on every PR and push to `main`; `.gitignore` reserved-name patterns as the advisory layer |
+| Portable path gate (NETWEB) | Prevention, blocks | `check-portable-paths.yml` — hard gate on every PR, push to `main`, and merge-queue `merge_group` build; `.gitignore` reserved-name patterns as the advisory layer |
 | `_PREFIX` aliasing | Prevention, guides | `VAULT-CONVENTIONS.md` § NETWEB — reserved-name collisions get `_` prefix + `aliases:` so wikilinks never break |
-| Character conformity gate | Detection, blocks | `check-character-conformity.yml` + `.github/scripts/check_character_conformity.py` — UTF-8/BOM enforcement per PR |
+| Character conformity gate | Detection, blocks | `check-character-conformity.yml` + `.github/scripts/check_character_conformity.py` — UTF-8/BOM enforcement on every PR, push to `main`, and merge-queue `merge_group` build |
 | `data.json` firewall | Prevention, blocks | `.gitignore` wildcard `.obsidian/plugins/*/data.json` — plugin credentials cannot reach the public repo without a deliberate `git add --force` |
 | Git guard wrapper | Recovery, repairs | `scripts/git-guard.sh` / `scripts/Invoke-GitGuard.ps1` per `!-AGENT-GIT-GUARDRAILS.md` — auto-reconnects a removed `origin` remote and upstream tracking on the next git call; deliberately does **not** block commands (§ "Why Not Block Commands?" — Logan rejected blocking, agents keep full git functionality) |
 | Merge queue entry gates | Prevention, blocks | Main Ruleset — signed commits, completed Copilot review, resolved threads required before a PR can even enter the queue (`VAULT-CONVENTIONS.md` § merge queue) |
