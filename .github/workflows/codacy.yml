@@ -36,21 +36,38 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
 
-      # Execute Codacy Analysis CLI and generate a SARIF output with the security issues identified during the analysis
+      # Execute Codacy Analysis CLI and generate a SARIF output with the security issues identified during the analysis.
+      #
+      # Invoked directly rather than via codacy/codacy-analysis-cli-action:
+      # every action release new enough to bundle a CLI that parses Codacy's
+      # "High" severity level (>= v4.4.0, CLI 7.9.x) internally references
+      # unpinned actions/setup-go@v3, which this repo's Actions policy
+      # rejects ("all actions must be pinned to a full-length commit SHA"),
+      # while every policy-compliant release (<= v4.3.0) pins CLI 7.6.4,
+      # which hard-fails deserializing that severity ("High not a member of
+      # Level"). These steps reproduce the action's own invocation (see
+      # action.yml at v4.4.7) with the fixed CLI version pinned explicitly.
+      - name: Download Codacy Analysis CLI script (7.9.25)
+        run: |
+          wget -O codacy-analysis-cli.sh "https://raw.githubusercontent.com/codacy/codacy-analysis-cli/7.9.25/bin/codacy-analysis-cli.sh"
+          chmod +x codacy-analysis-cli.sh
       - name: Run Codacy Analysis CLI
-        uses: codacy/codacy-analysis-cli-action@562ee3e92b8e92df8b67e0a5ff8aa8e261919c08 # v4.4.7
-        with:
-          # Check https://github.com/codacy/codacy-analysis-cli#project-token to get your project token from your Codacy repository
-          # You can also omit the token and run the tools that support default configurations
-          project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
-          verbose: true
-          output: results.sarif
-          format: sarif
-          # Adjust severity of non-security issues
-          gh-code-scanning-compat: true
-          # Force 0 exit code to allow SARIF file generation
-          # This will handover control about PR rejection to the GitHub side
-          max-allowed-issues: 2147483647
+        env:
+          CODACY_ANALYSIS_CLI_VERSION: "7.9.25"
+          CODACY_PROJECT_TOKEN: ${{ secrets.CODACY_PROJECT_TOKEN }}
+        # --max-allowed-issues forces a 0 exit code so the SARIF file is
+        # always generated; PR rejection stays on the GitHub side.
+        run: |
+          ./codacy-analysis-cli.sh \
+            analyze \
+            --skip-commit-uuid-validation \
+            --commit-uuid "$GITHUB_SHA" \
+            --verbose \
+            --project-token "$CODACY_PROJECT_TOKEN" \
+            --format sarif \
+            --output results.sarif \
+            --max-allowed-issues 2147483647 \
+            --gh-code-scanning-compat
 
       # Upload the SARIF file generated in the previous step
       - name: Upload SARIF results file
