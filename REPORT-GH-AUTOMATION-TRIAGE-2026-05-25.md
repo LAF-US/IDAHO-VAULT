@@ -278,7 +278,7 @@ These scripts are idempotent and useful but designed for local use. Wiring them 
 | Script | Reason kept local |
 |---|---|
 | `backfill_daily_notes.py` | Repair kit; Logan runs on demand when daily notes have gaps |
-| `audit_repo_payloads.py` | LFS slimming analysis; output is for Logan's review |
+| `audit_repo_payloads.py` | LFS slimming analysis; output is for Logan's review — **deleted 2026-07-24 (PR #854)** |
 | `date_tagger.py` | Tags root-level source notes; Logan runs manually |
 | `tag_stubs.py` | Tags 1-line stub notes; Logan runs manually |
 | `bind_ai_book.py` | Archives personal AI chat exports; input is Logan's local files |

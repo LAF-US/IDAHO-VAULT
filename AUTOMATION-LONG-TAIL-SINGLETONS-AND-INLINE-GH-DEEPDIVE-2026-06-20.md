@@ -104,6 +104,8 @@ at all**:
 `expand_date_aliases.py` · `generate_name_forms.py` · `normalize_tags.py` ·
 `obsidian_rest_api_client.py` · `phone_link_intake.py` · `tag_stubs.py`
 
+> _Marginalia 2026-07-24: `audit_repo_payloads.py` (first in the orphan list above) has since been deleted — PR #854._
+
 This does **not** mean they are dead — it means their invocation lane is *not CI*. They are
 plausibly pre-commit hooks, local-runtime helpers (Obsidian-side, e.g.
 `obsidian_rest_api_client.py`), or manually-run maintenance (`backfill_daily_notes.py` is the

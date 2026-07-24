@@ -52,7 +52,7 @@ COMPILE_FILES = [
     ".github\\scripts\\branch_garden_report.py",
     ".github\\scripts\\bind_ai_book.py",
     ".github\\scripts\\backfill_daily_notes.py",
-    ".github\\scripts\\audit_repo_payloads.py",
+    # audit_repo_payloads.py removed 2026-07-24 (unwired one-shot slimming auditor; PR #854)
     ".github\\swarm\\tools\\state_manager.py",
 ]
 
