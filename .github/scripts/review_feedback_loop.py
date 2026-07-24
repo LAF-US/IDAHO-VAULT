@@ -1164,7 +1164,8 @@ def apply_review_state_projection(
     # Clear-on-completion: the lane's review completed, so the fired flag is CONSUMED —
     # restamp to `—/—`, removing every risk/* flag (a clear verdict stamps none). The next
     # synchronize (new code) restamps from the classifier and re-enters the lane; with no
-    # new code the cleared (label-free) PR arms and flows. nope is never flag_clearable.
+    # new code the cleared (label-free) PR becomes eligible and flows once the grace window
+    # elapses. nope is never flag_clearable.
     if bool(state.get("lane_complete")) and bool(state.get("flag_clearable")):
         actions.extend(
             restamp_risk_pair(pr_number, current_labels, None, None)

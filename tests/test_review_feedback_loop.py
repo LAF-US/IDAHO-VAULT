@@ -144,8 +144,8 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         # into exactly one of three lanes. This pins all nine cells so the settled grid cannot
         # silently drift. Lanes:
         #   auto            : —/—  → eligible on grace alone (no review lane)
-        #   review-hold     : any fired flag with depth != nope → eligible ONLY once its review
-        #                     lane completes (APPROVED + threads clear); holds otherwise
+        #   review-hold     : any fired flag with depth != nope → eligible once its review lane
+        #                     completes (APPROVED + threads clear) AND grace elapses; holds otherwise
         #   sovereign/never : any depth == nope → never eligible, even fully approved
         now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
         past_grace = now - timedelta(minutes=45)
