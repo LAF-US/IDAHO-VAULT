@@ -37,5 +37,11 @@ printf >&2 '%s\n' 'pre-push: checking secret patterns for commits not on upstrea
 printf >&2 '%s\n' 'pre-push: checking large-file policy for commits not on upstream'
 "$PYTHON" .github/scripts/check_large_files.py --paths-from-stdin <"$push_paths"
 
+if [ -z "${GIT_LFS_SKIP_PUSH:-}" ]; then
+  remote_name=${1:-origin}
+  printf >&2 '%s\n' "pre-push: making sure LFS objects reachable from HEAD are uploaded to $remote_name"
+  git lfs push --all "$remote_name" HEAD
+fi
+
 printf >&2 '%s\n' 'pre-push: delegating LFS upload to stock git lfs pre-push'
 exec git lfs pre-push "$@"
