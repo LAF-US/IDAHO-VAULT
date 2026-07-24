@@ -61,7 +61,13 @@ jobs:
           chmod +x codacy-analysis-cli.sh
       - name: Run Codacy Analysis CLI
         env:
-          CODACY_ANALYSIS_CLI_VERSION: "7.9.25"
+          # The wrapper passes this value straight into the image reference
+          # (codacy/codacy-analysis-cli:${CODACY_ANALYSIS_CLI_VERSION}), and
+          # Docker's name:tag@digest form makes the digest authoritative —
+          # so this pins the analyzer image itself, not just the wrapper
+          # script, closing the last mutable link (tags can be retagged;
+          # digests cannot). Digest of tag 7.9.25 per Docker Hub.
+          CODACY_ANALYSIS_CLI_VERSION: "7.9.25@sha256:339e0103e28804f9d76aff34503e505440e5d5b42f5dd70dae73b592ea87826a"
           CODACY_PROJECT_TOKEN: ${{ secrets.CODACY_PROJECT_TOKEN }}
           # On pull_request events GITHUB_SHA is the synthetic merge commit;
           # results must be associated with the PR head, as the upstream
