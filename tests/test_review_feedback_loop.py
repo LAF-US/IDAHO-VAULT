@@ -107,7 +107,7 @@ def _pr(
 
 class ReviewFeedbackLoopTest(unittest.TestCase):
     def test_clear_pair_pr_becomes_auto_merge_eligible_after_grace(self) -> None:
-        # K3/#629: the `—/—` verdict — and ONLY it — arms auto-merge. A PR that classify
+        # K3/#629: the `—/—` verdict — and ONLY it — arms auto-merge. A PR that the classifier
         # scored clear (no risk/* label) with no blocking feedback is eligible once the grace
         # window elapses; within grace it is not yet eligible. The clear state is affirmed by
         # the classifier's `(None, None)` verdict (no labels to read).
