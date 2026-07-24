@@ -82,7 +82,10 @@ def placement_flag(path: str) -> str | None:
 
 
 def classify_file(path: str) -> tuple:
-    """Return (filetype_flag, placement_flag) for one path — two independent scores."""
+    """Return (filetype_flag, placement_flag) for one path — two independent scores.
+    Windows-style separators are normalized to '/' first so the placement prefixes match
+    regardless of input source (git/gh emit '/', but local/tooling input may use '\\')."""
+    path = path.replace("\\", "/")
     return (filetype_flag(path), placement_flag(path))
 
 
