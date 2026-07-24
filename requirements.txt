@@ -185,7 +185,7 @@ jiter==0.14.0
     #   openai
 jmespath==1.1.0
     # via cel-python
-json-repair==0.25.3
+json-repair==0.61.5
     # via crewai
 json5==0.10.0
     # via crewai
@@ -224,7 +224,7 @@ markupsafe==3.0.3
     #   flask
     #   jinja2
     #   werkzeug
-mcp==1.26.0
+mcp==1.28.1
     # via crewai
 mdit-py-plugins==0.6.1
     # via
