@@ -909,11 +909,10 @@ def _risk_pair_for_pr(labels: set[str]) -> tuple[str | None, str | None, bool]:
     return (filetype_flag, depth_flag, classified)
 
 
-def _tier_from_pair(filetype_flag: str | None, depth_flag: str | None, marked: bool) -> str:
-    """Collapse a lane pair to the single-tier vocabulary (nope>high>med>low>clear);
-    an incompletely marked PR is `unknown` and HOLDS. Fails loud on an out-of-vocabulary
-    flag (e.g. a caller-supplied `verdict` typo like "medium") instead of letting it fall
-    through to `clear` and misroute the PR."""
+def _validate_pair(filetype_flag: str | None, depth_flag: str | None) -> None:
+    """Fail loud (RiskMarkerInvariantError) on an out-of-vocabulary axis flag, so a caller
+    typo (e.g. "medium" for "med") gets a deterministic, domain-specific error instead of a
+    silent misroute (`_tier_from_pair`) or a raw KeyError (`restamp_risk_pair`)."""
     if filetype_flag not in (None, "low", "med"):
         raise RiskMarkerInvariantError(
             f"invalid filetype_flag {filetype_flag!r}: expected None, 'low', or 'med'"
@@ -922,6 +921,14 @@ def _tier_from_pair(filetype_flag: str | None, depth_flag: str | None, marked: b
         raise RiskMarkerInvariantError(
             f"invalid depth_flag {depth_flag!r}: expected None, 'high', or 'nope'"
         )
+
+
+def _tier_from_pair(filetype_flag: str | None, depth_flag: str | None, marked: bool) -> str:
+    """Collapse a lane pair to the single-tier vocabulary (nope>high>med>low>clear);
+    an incompletely marked PR is `unknown` and HOLDS. Fails loud on an out-of-vocabulary
+    flag (e.g. a caller-supplied `verdict` typo like "medium") instead of letting it fall
+    through to `clear` and misroute the PR."""
+    _validate_pair(filetype_flag, depth_flag)
     if not marked:
         return "unknown"
     if depth_flag == "nope":
@@ -974,6 +981,7 @@ def restamp_risk_pair(
     verdict (both None) yields an EMPTY desired set — a clear verdict stamps nothing and
     removes any stale risk/* label. ``managed`` is the full flat set, so managed-not-desired
     labels are removed. Mutates ``labels`` in place and returns the actions taken."""
+    _validate_pair(filetype_flag, depth_flag)
     actions: list[str] = []
     desired: set[str] = set()
     if filetype_flag is not None:
@@ -1314,12 +1322,8 @@ def _build_reconciliation_report(
                     file=sys.stderr,
                 )
             else:
-                # Restamp only when the lane has NOT completed (a completed lane's flag was
-                # consumed by the projection; re-stamping would re-add it). But ALWAYS
-                # re-evaluate with the classifier's verdict, even when lane_complete: a
-                # consumed-clear (—/—) lane-complete PR must read as affirmatively clear, not
-                # `unknown` — otherwise it fails its eligibility check and the projection
-                # disarms an already-armed clear PR.
+                # Restamp only when the lane has NOT completed (a completed lane's flag is
+                # consumed by the projection; re-stamping would re-add it).
                 if not state.get("lane_complete"):
                     label_set = {
                         node["name"]
@@ -1328,13 +1332,20 @@ def _build_reconciliation_report(
                     }
                     restamp_actions = restamp_risk_pair(pr_number, label_set, ft_flag, dp_flag)
                     pr["labels"] = {"nodes": [{"name": name} for name in sorted(label_set)]}
-                state = evaluate_review_state(
-                    pr,
-                    now=now,
-                    grace_minutes=grace_minutes,
-                    auto_resolve_reviewers=auto_resolve_reviewers,
-                    verdict=(ft_flag, dp_flag),
-                )
+                # Re-evaluate with the verdict when the diff was (re)stamped, OR when a
+                # lane-complete PR carries NO risk/* flag (first-pass risk_tier == "unknown")
+                # — the consumed-clear (—/—) case, which must read affirmatively clear (not
+                # `unknown`) so it isn't wrongly disarmed. A lane-complete PR that STILL has a
+                # stale flag keeps its label-derived state so the projection consumes it; a
+                # verdict override there would leave the stale flag orphaned.
+                if not state.get("lane_complete") or state.get("risk_tier") == "unknown":
+                    state = evaluate_review_state(
+                        pr,
+                        now=now,
+                        grace_minutes=grace_minutes,
+                        auto_resolve_reviewers=auto_resolve_reviewers,
+                        verdict=(ft_flag, dp_flag),
+                    )
         except RiskMarkerInvariantError as exc:
             # The K4/K6 mutual-exclusion invariant tripped on THIS PR. Fail loud — record
             # it and surface a non-zero exit — but do NOT abort the sweep: one mis-labeled
@@ -1495,11 +1506,8 @@ def sync_pr(args: argparse.Namespace) -> int:
             file=sys.stderr,
         )
     else:
-        # Restamp only when the lane has NOT completed (a completed lane's flag was consumed
-        # by the projection; re-stamping would re-add it). But ALWAYS re-evaluate with the
-        # classifier's verdict, even when lane_complete: a consumed-clear (—/—) lane-complete
-        # PR must read as affirmatively clear, not `unknown` — otherwise it fails its
-        # eligibility check and the projection disarms an already-armed clear PR.
+        # Restamp only when the lane has NOT completed (a completed lane's flag is consumed
+        # by the projection; re-stamping would re-add it).
         if not state.get("lane_complete"):
             label_set = {
                 node["name"]
@@ -1508,12 +1516,18 @@ def sync_pr(args: argparse.Namespace) -> int:
             }
             restamp_actions = restamp_risk_pair(args.pr_number, label_set, ft_flag, dp_flag)
             pr["labels"] = {"nodes": [{"name": name} for name in sorted(label_set)]}
-        state = evaluate_review_state(
-            pr,
-            grace_minutes=args.grace_minutes,
-            auto_resolve_reviewers=auto_resolve_reviewers,
-            verdict=(ft_flag, dp_flag),
-        )
+        # Re-evaluate with the verdict when the diff was (re)stamped, OR when a lane-complete
+        # PR carries NO risk/* flag (first-pass risk_tier == "unknown") — the consumed-clear
+        # (—/—) case, which must read affirmatively clear (not `unknown`) so it isn't wrongly
+        # disarmed. A lane-complete PR that STILL has a stale flag keeps its label-derived
+        # state so the projection consumes it; a verdict override there would orphan the flag.
+        if not state.get("lane_complete") or state.get("risk_tier") == "unknown":
+            state = evaluate_review_state(
+                pr,
+                grace_minutes=args.grace_minutes,
+                auto_resolve_reviewers=auto_resolve_reviewers,
+                verdict=(ft_flag, dp_flag),
+            )
 
     clear_pending = (
         args.sync_actor in completion_actors and bool(state["has_copilot_apply_pending"])
