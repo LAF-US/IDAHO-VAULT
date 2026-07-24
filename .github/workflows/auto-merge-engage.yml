@@ -43,8 +43,14 @@ concurrency:
 
 jobs:
   engage:
-    # Drafts are never armed; everything else is attempted and branch protection gates it.
-    if: github.event.pull_request.draft == false
+    # Arm/enqueue only on an explicit human signal: the `auto-merge` label. Marking a PR
+    # ready-for-review (draft == false) is NOT consent to merge -- it invites review. Gating
+    # on the label decouples "please review" from "ship it" and closes the race where simply
+    # un-drafting a PR merged it out from under review (human and bot). Drafts stay unarmed;
+    # a maintainer adds `auto-merge` when a PR is actually cleared to land.
+    if: >
+      github.event.pull_request.draft == false &&
+      contains(github.event.pull_request.labels.*.name, 'auto-merge')
     runs-on: ubuntu-latest
     steps:
       - name: Checkout trusted workflow surfaces
@@ -54,17 +60,21 @@ jobs:
           persist-credentials: false
 
       - name: Set up Python
-        uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6.3.0
         with:
-          python-version: '3.11'
+          python-version: "3.11"
 
       - name: Resolve outdated bot conversations (witnessed)
         # Same proven path as the engage-outdated workflow, scoped to this one PR. Only
         # outdated, bot-only threads are attest-resolved; needs-fix is left untouched.
         # Exits 0 even if some threads fail (per-thread errors are recorded, not raised),
         # so this step stays low-noise.
+        # resolveReviewThread has a documented history of being FORBIDDEN for the
+        # integration token (the #398 boundary, noted in review_feedback_loop.py's own
+        # docstring) — prefer the user-scoped MERGE_QUEUE_TOKEN, same as this job's
+        # arm/enqueue steps, so the resolve isn't silently skipped under GITHUB_TOKEN.
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.MERGE_QUEUE_TOKEN || secrets.GITHUB_TOKEN }}
           OWNER: ${{ github.repository_owner }}
           REPO: ${{ github.event.repository.name }}
           PR: ${{ github.event.pull_request.number }}
@@ -76,8 +86,11 @@ jobs:
         # Same invocation proven to arm PRs in batch-arm-merge-queue. Tolerate failure:
         # a PR that can't be armed (already queued, conflicting, or gated awaiting review)
         # must not fail the run — branch protection decides what actually merges.
+        # The arm actor becomes the future enqueue actor, and GITHUB_TOKEN-actored
+        # events never dispatch workflow runs (GitHub anti-recursion) — prefer the
+        # user-scoped MERGE_QUEUE_TOKEN so armed PRs enqueue with a dispatching actor.
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.MERGE_QUEUE_TOKEN || secrets.GITHUB_TOKEN }}
           REPO: ${{ github.repository }}
           PR: ${{ github.event.pull_request.number }}
         run: |

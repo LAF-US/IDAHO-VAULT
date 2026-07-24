@@ -108,6 +108,13 @@ ENV/
 build/
 dist/
 
+# coverage.py local run artifacts — CI generates and uploads coverage.xml to
+# Codacy, never commits it.
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+
 node_modules/
 **/node_modules/
 .npm-cache/
@@ -297,7 +304,8 @@ logs/
 .antigravity/argv.json
 .antigravity/extensions/
 # settings, session cache, command history — local IDE state
-.copilot/
+.copilot/*
+!.copilot/COPILOT.md
 .cursor/projects/
 .cursor/extensions/
 .cursor/plugins/cache/
@@ -375,6 +383,7 @@ logs/
 !.vscode/extensions.json
 !.vscode/tasks.json
 !.vscode/launch.json
+!.vscode/VSCODE.md
 !.vscode/mcp.json
 
 .idea/

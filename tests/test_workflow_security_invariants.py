@@ -32,6 +32,75 @@ class WorkflowSecurityInvariantsTest(unittest.TestCase):
         self.assertFalse((WORKFLOWS / "dependabot-reaper.yml").exists())
         self.assertTrue((WORKFLOWS / "dependabot-rhythm.yml").exists())
 
+    def test_review_state_sync_jobs_can_maintain_labels(self) -> None:
+        # review_feedback_loop.py sync-pr/review-submitted calls ensure_labels()
+        # before reconciling review state. Label creation/update uses the Issues
+        # API, so these write-capable review-state jobs must carry issues: write
+        # alongside pull-requests/contents permissions. Without it, the PR can
+        # be otherwise queue-ready while the review-state workflow fails before
+        # it can restamp labels or re-arm enqueue.
+        review_feedback = yaml.safe_load(
+            (WORKFLOWS / "review-feedback-loop.yml").read_text(encoding="utf-8")
+        )
+        sweep_permissions = review_feedback["jobs"]["sweep-review-threads"]["permissions"]
+        self.assertEqual(sweep_permissions["contents"], "write")
+        self.assertEqual(sweep_permissions["issues"], "write")
+        self.assertEqual(sweep_permissions["pull-requests"], "write")
+
+        review_response = yaml.safe_load(
+            (WORKFLOWS / "review-response.yml").read_text(encoding="utf-8")
+        )
+        self.assertEqual(review_response["permissions"]["contents"], "write")
+        self.assertEqual(review_response["permissions"]["issues"], "write")
+        self.assertEqual(review_response["permissions"]["pull-requests"], "write")
+
+    def test_no_schedule_triggers_until_the_chron_clock_is_established(self) -> None:
+        # Logan's standing order (restated 2026-07-06): NO cron jobs until the chron_clock
+        # is established. The rule is the EMPTY SET — no allowlist to maintain, no
+        # grandfathered exceptions: any `schedule:` trigger in any workflow turns this red.
+        # Every periodic surface runs by workflow_dispatch until Logan establishes the
+        # chron_clock; when he does, its ruling REPLACES this test wholesale (it is the
+        # prescription of the interim norm, not of the eventual clock).
+        offenders: list[str] = []
+        for path in sorted(WORKFLOWS.glob("*.yml")):
+            workflow = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+            events = workflow.get("on", workflow.get(True)) or {}
+            # Normalize every `on:` shape GitHub accepts — mapping, list, bare string —
+            # so no shorthand slips the guard. (A bare `schedule` can't actually FIRE
+            # without a cron mapping, but the guard is airtight, not merely practical.)
+            if isinstance(events, dict):
+                names = set(events)
+            elif isinstance(events, list):
+                names = set(events)
+            else:
+                names = {events}
+            if "schedule" in names:
+                offenders.append(path.name)
+        self.assertEqual(
+            offenders, [],
+            "schedule trigger(s) found, but the chron_clock is not established "
+            "(Logan's standing order — no cron jobs): " + ", ".join(offenders),
+        )
+
+    def test_merge_method_is_the_queues_alone(self) -> None:
+        # K5/#631 (norm set by Logan, 2026-07-06): the merge QUEUE's configured method is
+        # the single merge-method norm. gh syntax forces a method flag on every
+        # `gh pr merge`, but on a merge-queue repo the queue overrides it — so the one
+        # canonical, inert spelling is `--merge`. This goes red the moment any workflow
+        # or script grows its own divergent method opinion (--squash/--rebase), which is
+        # exactly the two-prescriptions-no-norm drift K5 names.
+        scripts = ROOT / ".github" / "scripts"
+        offenders: list[str] = []
+        for path in sorted(list(WORKFLOWS.glob("*.yml")) + list(scripts.glob("*.py"))):
+            for lineno, line in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
+                if "pr" in line and "merge" in line and ("--squash" in line or "--rebase" in line):
+                    offenders.append(f"{path.name}:{lineno}: {line.strip()}")
+        self.assertEqual(
+            offenders, [],
+            "divergent merge-method opinion(s) found — the queue's configured method is "
+            "the norm; use the canonical inert `--merge` flag:\n" + "\n".join(offenders),
+        )
+
     def test_dependabot_auto_merge_requires_verified_low_risk_updates_and_gates(self) -> None:
         workflow = yaml.safe_load(
             (WORKFLOWS / "dependabot-rhythm.yml").read_text(encoding="utf-8")
@@ -41,10 +110,15 @@ class WorkflowSecurityInvariantsTest(unittest.TestCase):
             events["pull_request_target"]["types"],
             ["opened", "reopened", "ready_for_review", "synchronize", "labeled", "unlabeled"],
         )
-        self.assertEqual(workflow["permissions"], {"contents": "write", "pull-requests": "write"})
+        # Least privilege: the workflow-level default is read-only; only the jobs
+        # that actually merge/disable-merge escalate to write, at the job level.
+        self.assertEqual(workflow["permissions"], {"contents": "read", "pull-requests": "read"})
 
         jobs = workflow["jobs"]
         eligible_job = jobs["auto-merge-low-risk"]
+        self.assertEqual(
+            eligible_job["permissions"], {"contents": "write", "pull-requests": "write"}
+        )
         eligibility = eligible_job["if"]
         self.assertIn("github.event.pull_request.user.type == 'Bot'", eligibility)
         self.assertIn("!contains(github.event.pull_request.labels.*.name, 'risk/high')", eligibility)
@@ -88,12 +162,15 @@ class WorkflowSecurityInvariantsTest(unittest.TestCase):
         self.assertNotIn("submit-pypi", gate_step["run"])
         enable_step = steps["Enable verified auto-merge"]
         self.assertIn("steps.scope.outputs.eligible == 'true'", enable_step["if"])
-        self.assertIn("gh pr merge --auto --squash", enable_step["run"])
+        self.assertIn("gh pr merge --auto --merge", enable_step["run"])
         self.assertNotIn("gh pr review --approve", enable_step["run"])
         self.assertNotIn("gh label create", enable_step["run"])
         self.assertNotIn("--delete-branch", enable_step["run"])
 
         high_risk_job = jobs["disable-high-risk-auto-merge"]
+        self.assertEqual(
+            high_risk_job["permissions"], {"contents": "write", "pull-requests": "write"}
+        )
         self.assertIn("contains(github.event.pull_request.labels.*.name, 'risk/high')", high_risk_job["if"])
         self.assertIn("gh pr merge --disable-auto", high_risk_job["steps"][0]["run"])
 

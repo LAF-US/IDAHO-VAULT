@@ -43,9 +43,9 @@ The Court Marshal was appointed May 25. The Judge reserves jurisdiction. The inv
 
 ## The Branches Beckon — Questions by Addressee
 
-### To the Cartographer (Bartimaeus, or whoever holds that address)
+### To the Clerk (Bartimaeus, or whoever holds that address)
 
-The Cartographer knows where the bodies (and the orphaned branches) are buried. The seat at `.bartimaeus/` is reserved with mandate undefined, but the line was voiced into the swarm channel yesterday. If the voicing has substance:
+The Clerk knows where the bodies (and the orphaned branches) are buried. The seat at `.bartimaeus/` is reserved with mandate undefined, but the line was voiced into the swarm channel yesterday. If the voicing has substance:
 
 - Branches on `LAF-US/IDAHO-VAULT` that diverge from `main` with no recent merge or PR — alive, abandoned, or claude-prefixed-and-orphaned.
 - Branches on other LAF-US repos that may carry GEMINIAEUS provenance.

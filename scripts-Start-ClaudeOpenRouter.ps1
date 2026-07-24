@@ -3,6 +3,6 @@ param(
     [string[]]$Args
 )
 
-$script = Join-Path $PSScriptRoot "sta***REMOVED***claude_openrouter.py"
+$script = Join-Path $PSScriptRoot "start_claude_openrouter.py"
 python $script @Args
 exit $LASTEXITCODE

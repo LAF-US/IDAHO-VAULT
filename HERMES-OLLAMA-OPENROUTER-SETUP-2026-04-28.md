@@ -17,7 +17,7 @@ status: configured
 ## Architecture Overview
 
 ```
-┌─────────────────────────────────────────────────────────────┐
+┌────────────────────────────────────────────────────────────Ŀ
 │                     Hermes Agent                            │
 │                                                             │
 │  Primary: Ollama Local (qwen3.5, phi3, qwen2.5, +more)     │

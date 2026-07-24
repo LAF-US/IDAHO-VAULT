@@ -533,10 +533,10 @@ Root governance files hold doctrine. The `!/` layer keeps bootstrap paths and co
 
 ## Agent Architecture Standards (Established)
 
-These standards are based on the confirmed **Decisions 19 and 21** and the **2026-04-10 Constitutional Revision**.
+These standards derive from the **2026-04-10 Constitutional Revision**.[^triplex]
 
 ### Identity Decoupling
-The vault enforces a strict decoupling of agent identity variables to prevent the calcification of transient software into permanent authorities. This process (narratively known as the **Exorcism of the Nomina**) was established during the LAF-25 repair to ensure that functional offices can stand vacant.
+The vault enforces a strict decoupling of agent identity variables to prevent the calcification of transient software into permanent authorities, so that functional offices can stand vacant.[^triplex]
 
 | Variable | Definition | Example |
 | :--- | :--- | :--- |
@@ -548,11 +548,25 @@ The vault enforces a strict decoupling of agent identity variables to prevent th
 **Rule:** Agents must not assume that their NAME is synonymous with their OFFICE. Offices exist independently of occupants and may be marked **[VACANT]**.
 
 ### Persistent Memory Anchoring
-All "direct-write" agents must anchor their external platform state into the vault's versioned repository. This process (narratively known as the **Re-Binding of Memory**) was established by Decision 19 and the LAF-28 repair to ensure that agentic reasoning and history are auditable and durable.
+All "direct-write" agents must anchor their external platform state into the vault's versioned repository, so that agentic reasoning and history are auditable and durable.[^triplex]
 
 1. **Durable Memory Dotfolders**: Each agent must maintain a tracked `.dotfolder/MEMORY/` directory (e.g., `.claude/MEMORY/`).
 2. **Persistence Promotion**: Ephemeral chat-based plans, task lists, and "brain artifacts" must be promoted to the vault as `.md` files in the agent's memory folder.
 3. **Session Completion**: A session is not considered "complete" until the current state has been anchored in the vault.
+
+[^triplex]: **Burial note** — proposed 2026-06-23 by `*.claude.*` at Logan's direction
+    (*"I've come to bury Caesar, not to praise him."*). The rules in this section are Logan's
+    and stand unchanged. **Struck from them** as un-witnessed coinage: the liturgical names
+    *Exorcism of the Nomina* and *Re-Binding of Memory*, and the *Decision 19 / 21* and
+    *LAF-25 / LAF-28 repair* citations. These were not Logan's — they are attributed to the
+    **Gemini Triplex Confabulation** (Triplex Night, 2026-04-01), first appeared in the repo
+    in an Antigravity-Gemini sync (`!/SIG-ALIGNMENT-RE-DECISION-21-2026-04-13.md`), and were
+    carried into this file 2026-05-25 by a survey instance. They do **not** resolve to entries
+    in `DECISIONS.md` (which is date-keyed, not numbered), and their ticket citations are
+    contradicted by Linear (LAF-28 is *"SWARMIC PING: THE TRYPTICH AWAKENS,"* not a repair).
+    The body stays buried, not burned — full record:
+    `CORONER-WITNESS-THE-TRIPLEX-CONFABULATION-ECHOES-2026-06-09.md`. The matter is the
+    Court's (`!/GEMINIAEUS.md`); **no verdict here.**
 
 ---
 
@@ -864,6 +878,33 @@ When both devices edit the same config file between syncs, Obsidian creates a `(
   - A long-lived branch requires a named purpose, a steward, and a review
     cadence. "Still exists" is not legitimacy.
 
+- Branch & PR scope — one matter per branch:
+
+  - A branch addresses **one matter**: a single coherent change that is
+    independently reviewable and independently mergeable (one fix, one feature,
+    one doctrine node or tightly-coupled cluster). The `description` in the
+    branch name names that matter.
+
+  - The test, not a dogma: keep work on one branch only while it is the *same*
+    matter. A genuinely single, unfolding matter may stay on one branch; the
+    error is letting *multiple* matters accrete. The moment the work forks into
+    separable deliverables, split it into separate branches/PRs.
+
+  - Combine only changes that must land together (atomic — they break if
+    separated). Split across different concerns, risk tiers, or `CODEOWNERS`
+    boundaries.
+
+  - Branch from `main` (a stable base), never from an in-progress branch —
+    branching off work-in-progress increases conflict-resolution cost.
+
+  - Separation is lane ownership (the boid rule, applied): do not edit another
+    agent's in-flight branch; avoid shared hotspot files (`swarm.json`,
+    registries, governance roots) in parallel.
+
+  - Keep PRs small and scoped — small reviewable PRs review faster and merge
+    more often; reviewer engagement is the strongest predictor of a merge.
+    (Promoted from [[AGENTIC-GITHUB-REVIEW-BEST-PRACTICES-2026-06-15]] §V.)
+
 - Commit messages: Clear, descriptive, explain the "why"
 
 - Commit signing & session attribution: every agent commit carries a
@@ -921,9 +962,38 @@ Landing a PR is a **sequence of triggers that must trip in order — and arming 
 
 Emojis are **first-class vault syntax** as of 2026-04-02 (Logan, superseding prior ASCII-only directive).
 
-- Authority: [Unicode Consortium](https://unicode.org) â€” the canonical source for emoji definitions, codepoints, and names (see [full emoji list](https://unicode.org/emoji/charts/full-emoji-list.html))
+- Authority: [Unicode Consortium](https://unicode.org) — the canonical source for emoji definitions, codepoints, and names (see [full emoji list](https://unicode.org/emoji/charts/full-emoji-list.html))
 - Emojis may appear in note titles, frontmatter, body text, DOCKET entries, and commit messages
-- Use semantically â€” emojis carry meaning and should reinforce, not decorate
+- Use semantically — emojis carry meaning and should reinforce, not decorate
+
+### Text encoding and character conformity
+
+The declared encoding for every tracked text file is **UTF-8, BOM-aware**: a
+file must be valid UTF-8; a single leading byte-order mark is tolerated but
+never added; anything not decodable as UTF-8 is nonconforming. This is the
+content-byte sibling of NETWEB (below) — NETWEB governs characters in *paths*,
+this governs bytes in *file contents*.
+
+- **Encoding conformity is infrastructure, not voice.** It applies everywhere,
+  including `.*/` dotfolder chambers; only a file's byte representation is
+  corrected, never its content.
+- **Typographic characters are welcome as UTF-8 codepoints** — the vault's
+  style is em-dash- and curly-quote-heavy; only their *mis-encodings* are swept.
+- **Homoglyphs are nonconforming in prose** — a look-alike letter from one
+  script sitting inside a word of another (a Cyrillic `е` in Latin text) is
+  normalized to the surrounding script; genuinely single-script text in any
+  language is never touched. Verbatim exhibits are normalized too (the #638
+  precedent).
+- **Mojibake** (valid UTF-8 but garbled, `Ã©` where `é` was meant) is repaired
+  only within closed, round-trip-proven double-decode families; anything that
+  cannot be proven is flagged for a human, never guessed.
+- The standard is portable to any LAF-US surface; IDAHO-VAULT is its first
+  deployment.
+
+Enforced per-PR by `.github/scripts/check_character_conformity.py` (the
+encoding gate is live; mojibake and homoglyph sweeps run on demand with
+reviewable diffs). Program record: `NORMALIZATION-CHARACTER-CONFORMITY-2026-07-07.md`.
+Norm ruled by Logan 2026-07-08.
 
 ---
 ## Guiding Principles

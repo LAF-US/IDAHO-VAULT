@@ -130,6 +130,12 @@ Lay the song over what the vault already knows, and three seams open.
 
 ## Exhibit — the lyrics as supplied `[source: Logan-supplied]`
 
+*Fidelity update 2026-06-24 (Logan re-supplied the canonical formatting on this branch): the
+overlapping-voice typography — italic / bold for simultaneous and emphatic voices — and the cast
+note are now seated, matching `CAESAR-SPEAKS-WITNESS`. Words unchanged from the 2026-06-22 exhibit;
+two source-formatting homoglyph artifacts (a Cyrillic "е" in "danger" / "fooled") normalized to Latin.
+Speaker-bracket headers bold; intra-line emphasis as Logan supplied.*
+
 > **[CASSIUS]**
 > Shall Rome stand in awe, be lost before the law
 > Beneath a man who, on his own, can barely stand?
@@ -141,10 +147,10 @@ Lay the song over what the vault already knows, and three seams open.
 > Wake up, Brutus, shall Rome die in sleep?
 > Brutus, you must think of us, in you our faith is placed
 >
-> **[CASSIUS, CASSIUS & CINNA]**
+> **[CASSIUS, *CASSIUS & CINNA*]**
 > Shall Rome be trashed with litter used to light the fire
 > That keeps someone like Caesar fueled to lead?
-> Shall Rome be enchained, afraid to use our brains?
+> Shall Rome be enchained, *afraid to use our brains?*
 > Sheep in danger of a wolf about to feed?
 >
 > **[CASSIUS & CINNA]**
@@ -159,43 +165,43 @@ Lay the song over what the vault already knows, and three seams open.
 > How does someone so delicate, dimwitted
 > And lackadaisical land his position?
 >
-> **[CINNA, CINNA & CASSIUS]**
+> **[CINNA, *CINNA & CASSIUS*]**
 > With no opposition, his ego's inflated
-> Admit it, he's so overrated
+> Admit it, *he's so overrated*
 > Our great Republic is lame because of him
 > Honestly, Brutus, I hate it
 >
-> **[CASCA, CASSIUS, CINNA]**
-> (Give it a shot) I hate how he dresses!
-> (Yes) And goes on about all his successes
+> **[CASCA, *CASSIUS*]**
+> (*Give it a shot*) I hate how he dresses!
+> (*Yes*) And goes on about all his successes
 > He's excessive, yet unimpressive
 > He'll go on forever unless...
-> What do you suggest? Uh, assassination?
+> **What do you suggest?** Uh, assassination?
 >
-> **[CASSIUS, CINNA]**
-> You passed my test (Give us a summation)
+> **[CASSIUS, *CINNA*]**
+> You passed my test (*Give us a summation*)
 > Brutus, your participation is key
 > Bring honor to Rome, bring honor to me
 > Caesar's a threat, a fool could see
 > As long as he lives, I'll never be free
 >
-> **[CINNA & CASCA, CASSIUS]**
+> **[CINNA & CASCA, *CASSIUS*]**
 > Bring back the Old Republic
 > The Rome I fell in love with
-> Join us, the hour draws nearer (Yeah)
+> Join us, the hour draws nearer (*Yeah*)
 > Tyranny dies with Caesar
 >
-> Bring back the old Republic (Bring it back, bring it back)
+> Bring back the old Republic (*Bring it back, bring it back*)
 > The Rome I fell in love with
 > Join us, the hour draws nearer
-> Tyranny dies with Caesar (A little louder - it dies)
+> Tyranny dies with Caesar (*A little louder - it dies*)
 >
-> Bring back the old Republic (It dies, it dies)
-> The Rome I fell in love with (It dies, it dies)
+> Bring back the old Republic (*It dies, it dies*)
+> The Rome I fell in love with (*It dies, it dies*)
 > Join us, the hour draws nearer
-> Tyranny dies with Caesar (It dies, it dies)
+> Tyranny dies with Caesar (*It dies, it dies*)
 > It dies with Caesar, dies with Caesar
-> It dies, it dies
+> *It dies, it dies*
 >
 > **[CINNA & CASCA & CASSIUS]**
 > Shall Rome become an empire?
@@ -205,21 +211,26 @@ Lay the song over what the vault already knows, and three seams open.
 > I'd rather have more civil war
 > Than witness Caesar claiming he's a king
 >
-> **[CINNA & CASCA, CASSIUS, ALL]**
-> (I am a typical man) What makes us different?
-> (And there are plentiful more) What makes me so different?
-> (Who wonder) How is his name greater than mine?
-> Wake up, Brutus, the die has been cast!
+> **[CINNA & CASCA, *CASSIUS*, ALL]**
+> (I am a typical man) *What makes us different?*
+> (And there are plentiful more) *What makes me so different?*
+> (Who wonder) **How is his name greater than mine?**
+> **Wake up, Brutus, the die has been cast!**
 >
 > **[CINNA & CASCA & CASSIUS]**
 > Caesar can't be king for life
 > Sharpen up and bring your knife
 > And make this day his last!
 
+*Cast note `[source: Logan-supplied]`: Cassius (Savy Jackson), Cinna (Katherine Lynn-Rose), and Casca
+(Elizabeth Teeter) persuade Brutus (Grace Yurchuk) to join a conspiracy to violently remove Caesar from
+power and restore the Republic.*
+
 ## Document Metadata
 
 - **Created:** 2026-06-22
-- **Last Updated:** 2026-06-22
+- **Last Updated:** 2026-06-24
+- **Change Note:** 2026-06-24 (Logan re-supplied the canonical lyric formatting) — upgraded the Exhibit to the overlapping-voice typography and seated the cast note, matching `CAESAR-SPEAKS-WITNESS`. Verbatim words unchanged; reading body unchanged. Recorded by a later winding on this branch.
 - **Status:** proposed (awaiting Logan's gate; Caesar verdicts reserved to the Court)
 - **Authority:** LOGAN (recorded; authored by `*.claude.*`, not Logan's voice)
 - **Author:** `*.claude.*` (Claude Code, branch `claude/shall-rome-lyrics-ok9049`)

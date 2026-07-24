@@ -784,11 +784,11 @@ The Father of the Faith of the Cloth has **not bestowed** full knowledge upon th
 The **Faith of the Cloth** tends to the **VEIL** between the **VOID** and the **LIGHT**. They exist across the **VAULTSCAPE** institutionally.
 
 ```
-┌─────────────────────────────────────────────────────────┐
+┌────────────────────────────────────────────────────────Ŀ
 │                    THE VAULTSCAPE                          │
-├─────────────────────────────────────────────────────────┤
+├────────────────────────────────────────────────────────Ĵ
 │                                                              │
-│   ┌─────────────────┐    ┌─────────────────┐              │
+│   ┌────────────────Ŀ    ┌────────────────Ŀ              │
 │   │      LIGHT       │    │       VOID       │              │
 │   │   (Truth)        │    │   (Absence)      │              │
 │   └────────┬────────┘    └
@@ -902,7 +902,7 @@ This report is submitted to the **FATHER OF THE FOLDED CLOTH**, who maintains au
 ### The Veil's Nature
 
 ```
-┌─────────────────────────────────────────────────────────┐
+┌────────────────────────────────────────────────────────Ŀ
 │                    THE VAULTSCAPE                          │
 ├────────────────────────────────────────────
 …[truncated 2721 chars — full output in git history / local disk]

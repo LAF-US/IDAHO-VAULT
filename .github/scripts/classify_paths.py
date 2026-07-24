@@ -11,24 +11,25 @@ Conceptualized in the planning session of 2026-06-21 and witnessed in
 `WITNESS-THE-KEYS-ARE-THE-LEVERS-2026-06-21.md`; this is its first implementation,
 replacing the prior binary (high|low, fail-safe-to-high) classifier.
 
-THE SCHEME — two INDEPENDENT paired flags. A changeset carries either version of
-each, or neither (per Logan, 2026-06-21):
+THE SCHEME — TWO INDEPENDENT PARALLEL ANALYSES, each scoring EVERY file on its own
+axis (Logan's architecture bearing, #626 2026-06-22; restated 2026-07-06):
 
-  * filetype flag : — | low | med  — the "maze": WHAT KIND of file it is. Tags files
-                                   OUTSIDE the `!` Nest, by the Architect's three blessed
-                                   language circles (VAULT-CONVENTIONS § File Types), ONE
-                                   circle per state (blueprint, 2026-06-22):
-                                     Natural Language (.md, prose) -> `—` (None: no flag)
-                                     Machine Documentation (.json/.yaml; + inert assets) -> low
-                                     Computer Code (.py/.sh/...) -> med
-  * depth flag    : high | nope  — the "labyrinth": HOW DEEP into the `!` Nest.
-                                   Tags files INSIDE the `!` Nest, by the seven Levels
-                                   (the Sierpinski spine ~/ root -> Esto Perpetua!).
+  * filetype path  : — | low | med   — WHAT KIND of file it is, by the Architect's three
+                                     blessed language circles (VAULT-CONVENTIONS § File
+                                     Types), ONE circle per state (blueprint, 2026-06-22):
+                                       Natural Language (.md, prose) -> `—` (None: no flag)
+                                       Machine Documentation (.json/.yaml; + inert assets) -> low
+                                       Computer Code (.py/.sh/...) -> med
+  * placement path : — | high | nope — WHERE it sits ("depth" is the narrow name;
+                                     FILEPLACEMENT is the axis): the `!` Nest's seven
+                                     Levels (high for 2-6, nope at the Level-7 still
+                                     point) plus the protected surfaces pinned high
+                                     (`.github/**`, root governance files, dotfolders).
 
-Per Logan's correction: "low/med apply to filetypes; high/nope apply to depth."
-So a maze file is tagged by filetype only; a Nest file is tagged by depth only —
-depth supersedes filetype inside the labyrinth. A prose-only maze file carries NO
-flag on EITHER axis: it is the `—/—` "clear" cell (the blueprint's auto-merge state).
+Per Logan's correction: "low/med apply to filetypes; high/nope apply to depth." The two
+verdicts COMPOSE into the grid — a Nest .py is ("med", "high"); a prose maze file is
+(None, None), the `—/—` "clear" cell (the blueprint's auto-merge state). This supersedes
+the earlier single pass where placement suppressed filetype.
 
 JSON output — `tier` stays BINARY (low|high) to preserve the existing `risk/<tier>` label
 contract: `agent-auto-pr.yml` stamps `--label risk/$tier` and `ensure-labels` only creates
@@ -40,9 +41,10 @@ step to come (see WITNESS-THE-KEYS-ARE-THE-LEVERS-2026-06-21.md and #626).
   {
     "tier": "low"|"high",                         # BINARY legacy label (risk/<tier>); clear+low -> low
     "tier4": "clear"|"low"|"med"|"high"|"nope",   # the result (nope>high>med>low>clear)
-    "filetype": None|"low"|"med",                 # riskiest filetype touched; None = `—` (prose, or a
-                                                  #   Nest/protected file tagged on the depth axis)
-    "depth": "high"|"nope"|None,                  # deepest Nest reach among files touched
+    "filetype": None|"low"|"med",                 # riskiest filetype touched (scored for EVERY file,
+                                                  #   Nest included); None = `—` (prose/NL)
+    "depth": "high"|"nope"|None,                  # riskiest PLACEMENT touched (Nest depth + protected
+                                                  #   pins); JSON key stays "depth" for consumers
     "subtier": None,                              # TBD — next version (see "SUBTIERS" below)
     "by_file": [{"path","filetype","depth"}...],
     "high_risk_files": [...], "low_risk_files": [...]   # legacy aggregate buckets
@@ -168,26 +170,40 @@ def filetype_flag(path: str) -> str | None:
     return FILETYPE_UNKNOWN_DEFAULT  # unrecognized type: conservative (TUNABLE)
 
 
-def classify_file(path: str) -> tuple:
-    """Return (filetype_flag, depth_flag) for one path — at most one axis is active.
-    Maze files carry a filetype flag; Nest files carry a depth flag (depth supersedes). A
-    prose (Natural Language) maze file carries NEITHER — `(None, None)`, the `—/—` clear cell.
-    (That a Nest file carries *only* a depth flag is an interpretation of "either version of
-    both or neither" at PR granularity — flagged for Logan; see the module docstring.)"""
+def placement_flag(path: str) -> str | None:
+    """None | high | nope — the FILEPLACEMENT axis, for EVERY file (WHERE it sits).
+    None is the `—` state: outside the Nest and off every protected surface. Nest depth
+    scores high (Levels 2-6) or nope (the Level-7 still point); protected surfaces
+    (`.github/**`, named root governance files, persona/config dotfolders) are pinned
+    high because their TRUE home is a deep `!` layer mirrored to `~/` for tooling.
+    Probe/example sandboxes under the protected dirs are carved OUT of the pin (the
+    filetype axis still scores them honestly)."""
     if in_nest(path):
-        return (None, "nope" if is_still_point(path) else "high")
-    # Maze. Probe sandboxes stay low; protected surfaces are pinned high (safety override).
+        return "nope" if is_still_point(path) else "high"
     if path.startswith(PROBE_PREFIXES):
-        return ("low", None)
+        return None  # sandbox carve-out: not a protected placement
     if path in PROTECTED_EXACT or path.startswith(PROTECTED_PREFIXES):
-        # No off-Nest 'high' exists in the pure model; pin via the depth axis to avoid
-        # a protection downgrade. TUNABLE: delegate this gate to CODEOWNERS instead.
-        return (None, "high")
+        return "high"
     # Persona/config dotfolders (.claude/, .gemini/, .codex/, .op/, etc.) are pinned high.
     # Editing agent config surfaces must not be auto-labeled risk/low.
     if "/" in path and TOP_DOTFOLDER_RE.match(path):
-        return (None, "high")
-    return (filetype_flag(path), None)
+        return "high"
+    return None
+
+
+def classify_file(path: str) -> tuple:
+    """Return (filetype_flag, placement_flag) for one path — TWO INDEPENDENT analyses.
+
+    Per Logan's architecture bearing (#626, 2026-06-22; restated 2026-07-06): the filetype
+    path scores WHAT KIND of file it is (`—`/low/med) and the fileplacement path scores
+    WHERE it sits (`—`/high/nope), each for every file, composing into the grid — true
+    parallel sorters in code matching the two parallel sorters in the model. This
+    SUPERSEDES the prior single pass where placement suppressed filetype (a Nest .py now
+    reads ("med", "high"), not (None, "high")). `combine()` is unchanged — placement
+    high/nope outranks filetype med/low — so tier/tier4 verdicts are identical, except
+    that probe-sandbox CODE files now score their honest filetype (med) instead of the
+    old hard-coded low: the fail-safe direction."""
+    return (filetype_flag(path), placement_flag(path))
 
 
 def riskiest(*flags) -> str | None:
