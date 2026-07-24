@@ -89,6 +89,9 @@ jobs:
       # whose runs share a category; Codacy's SARIF emits one run per tool
       # invocation and several share one. Give every run a distinct
       # automationDetails.id so each maps to its own category before upload.
+      # The dockerized CLI writes results.sarif as root, so the runner user
+      # can read but not overwrite it — the processed SARIF goes to a new
+      # runner-owned file that the upload step consumes instead.
       - name: Assign unique SARIF run categories
         shell: bash
         run: |
@@ -103,7 +106,7 @@ jobs:
               n = counts.get(tool, 0)
               counts[tool] = n + 1
               run.setdefault("automationDetails", {})["id"] = f"codacy-{tool}-{n}/"
-          with open("results.sarif", "w") as fh:
+          with open("results-categorized.sarif", "w") as fh:
               json.dump(sarif, fh)
           EOF
 
@@ -111,4 +114,4 @@ jobs:
       - name: Upload SARIF results file
         uses: github/codeql-action/upload-sarif@54f647b7e1bb85c95cddabcd46b0c578ec92bc1a # v4.36.3
         with:
-          sarif_file: results.sarif
+          sarif_file: results-categorized.sarif
