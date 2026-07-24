@@ -315,6 +315,16 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertEqual(rfl._tier_from_pair("med", "high", True), "high")
         self.assertEqual(rfl._tier_from_pair(None, None, False), "unknown")
 
+    def test_restamp_risk_pair_rejects_out_of_vocab_flags(self) -> None:
+        # restamp indexes FILETYPE_RISK_LABELS/DEPTH_RISK_LABELS by flag; an out-of-vocab
+        # flag must raise RiskMarkerInvariantError (deterministic, domain-specific) rather
+        # than a raw KeyError — matching _tier_from_pair's fail-loud behavior.
+        rfl = review_feedback_loop
+        with self.assertRaises(rfl.RiskMarkerInvariantError):
+            rfl.restamp_risk_pair(1, set(), "medium", None)
+        with self.assertRaises(rfl.RiskMarkerInvariantError):
+            rfl.restamp_risk_pair(1, set(), None, "highish")
+
     def test_pair_clear_arms_and_pair_flag_holds(self) -> None:
         # The `—/—` verdict arms after grace; a fired lane holds until its review completes.
         now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
@@ -465,6 +475,47 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         # The consumed-clear lane-complete PR reads clear via the verdict -> stays eligible
         # -> is NOT disarmed.
         disable.assert_not_called()
+
+    def test_stale_flag_on_lane_complete_pr_is_consumed_not_orphaned(self) -> None:
+        # Regression: a lane-complete PR that STILL carries a stale risk/* flag but now
+        # classifies clear must keep its label-derived state so the projection CONSUMES the
+        # stale flag. Passing the clear verdict here would make flag_clearable false and
+        # leave the flag orphaned on the PR.
+        now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
+        args = SimpleNamespace(
+            owner="LAF-US", repo="IDAHO-VAULT", pr_number=302,
+            sync_actor="someone", grace_minutes=30,
+        )
+        stale = _pr(
+            number=302, created_at=now - timedelta(minutes=45),
+            labels=(review_feedback_loop.RISK_HIGH_LABEL,
+                    review_feedback_loop.DEFAULT_AUTO_MERGE_LABEL),
+            review_decision="APPROVED",
+        )
+        with mock.patch.object(review_feedback_loop, "ensure_labels"), mock.patch.object(
+            review_feedback_loop, "_fetch_pr", return_value=stale
+        ), mock.patch.object(
+            review_feedback_loop, "_viewer_login", return_value="github-actions[bot]"
+        ), mock.patch.object(
+            review_feedback_loop, "_resolve_outdated_resolvable_threads", return_value=[]
+        ), mock.patch.object(
+            review_feedback_loop, "_classify_pr_pair", return_value=(None, None)
+        ), mock.patch.object(
+            review_feedback_loop, "_edit_label"
+        ) as edit_label, mock.patch.object(
+            review_feedback_loop, "_disable_auto_merge"
+        ), mock.patch.object(
+            review_feedback_loop, "_run"
+        ), mock.patch.object(
+            review_feedback_loop, "_arm_auto_merge", return_value=(True, None)
+        ), contextlib.redirect_stdout(io.StringIO()):
+            result = review_feedback_loop.sync_pr(args)
+        self.assertEqual(result, 0)
+        # The stale risk/high flag is consumed (removed), not orphaned.
+        self.assertIn(
+            mock.call(302, remove=review_feedback_loop.RISK_HIGH_LABEL),
+            edit_label.call_args_list,
+        )
 
     def test_unclassified_pr_without_verdict_never_arms(self) -> None:
         # K4 safety: absence of a risk label is NOT clear. Without an affirmative verdict, an
