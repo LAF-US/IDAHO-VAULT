@@ -1,9 +1,10 @@
 name: check-notebooks-paired
 
 # The "middle" guardrail: every explicitly-paired Jupyter notebook must stay in sync with its
-# Markdown twin. Mirrors the repo's other check-* workflows. Installs jupytext directly (so it
-# does not depend on requirements.txt carrying the dev tool). Actions are pinned to full SHAs
-# per repo policy.
+# Markdown twin. Mirrors the repo's other check-* workflows. Installs jupytext at the exact
+# version pinned in requirements.txt (parsed at run time, not duplicated as a literal here) so
+# CI can never install a version that doesn't match what's actually committed. Actions are
+# pinned to full SHAs per repo policy.
 
 on:
   pull_request:
@@ -31,12 +32,15 @@ jobs:
         with:
           python-version: "3.11"
       - name: Install jupytext
-        # Pinned to match requirements.txt exactly (not a floating range): a floating install
-        # here would pick up whatever jupytext ships on PyPI at run time, stamp every synced
-        # twin's frontmatter with that version, and fail this check on every PR touching any
-        # *.md/*.ipynb file the moment upstream cuts a new point release — with no real content
-        # drift involved. See !/AUDIT-CI-FAILURE-SWEEP-2026-07-23.md.
-        run: python -m pip install --quiet "jupytext==1.19.4"
+        # Version sourced from requirements.txt itself (not a separate hardcoded pin, not a
+        # floating range): a hardcoded literal here can silently drift from whatever's actually
+        # pinned there, and a floating install picks up whatever PyPI ships at run time — both
+        # stamp synced twins' frontmatter with a version that doesn't match what's committed,
+        # failing this check on any PR touching a *.md/*.ipynb file with no real content drift
+        # involved. See !/AUDIT-CI-FAILURE-SWEEP-2026-07-23.md.
+        run: |
+          version="$(sed -n 's/^jupytext==//p' requirements.txt)"
+          python -m pip install --quiet "jupytext==${version}"
       - name: Sync every paired notebook and fail on drift
         run: |
           # Sync ONLY notebooks that declare a pairing (explicit opt-in). A sync error on a
