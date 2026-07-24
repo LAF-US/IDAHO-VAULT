@@ -25,7 +25,7 @@ related:
 **Poka-yoke** (ポカヨケ) is any mechanism built into a process that helps the
 person operating it avoid mistakes — by making the error impossible, or by
 surfacing it the moment it occurs. From Japanese *poka* (inadvertent mistake)
-+ *yokeru* (to avoid). Formalized by industrial engineer **Shigeo Shingo** in
+plus *yokeru* (to avoid). Formalized by industrial engineer **Shigeo Shingo** in
 the 1960s as part of the Toyota Production System.
 
 Shingo originally called it *baka-yoke* — "fool-proofing" — and renamed it
@@ -66,7 +66,7 @@ Grounded in `VAULT-CONVENTIONS.md` and files read this session:
 
 | Device | Kind | Where it lives |
 | --- | --- | --- |
-| Secret pattern gate | Prevention, blocks | `.githooks/pre-commit` + `.github/scripts/check_secret_patterns.py`; blocking CI in `secret-pattern-policy.yml`; weekly sweep in `secret-pattern-full-scan.yml` |
+| Secret pattern gate | Prevention, blocks | `.githooks/pre-commit` + `.github/scripts/check_secret_patterns.py`; blocking CI in `secret-pattern-policy.yml`; manual full-repo sweep via `secret-pattern-full-scan.yml` (`workflow_dispatch`-only) |
 | Portable path gate (NETWEB) | Prevention, blocks | `check-portable-paths.yml` — hard gate on every PR and push to `main`; `.gitignore` reserved-name patterns as the advisory layer |
 | `_PREFIX` aliasing | Prevention, guides | `VAULT-CONVENTIONS.md` § NETWEB — reserved-name collisions get `_` prefix + `aliases:` so wikilinks never break |
 | Character conformity gate | Detection, blocks | `check-character-conformity.yml` + `.github/scripts/check_character_conformity.py` — UTF-8/BOM enforcement per PR |
@@ -74,7 +74,7 @@ Grounded in `VAULT-CONVENTIONS.md` and files read this session:
 | Git guard wrapper | Prevention, blocks | `scripts/git-guard.sh` / `scripts/Invoke-GitGuard.ps1` per `!-AGENT-GIT-GUARDRAILS.md` — intercepts history-rewriting and remote-destroying commands before they run |
 | Merge queue entry gates | Prevention, blocks | Main Ruleset — signed commits, completed Copilot review, resolved threads required before a PR can even enter the queue (`VAULT-CONVENTIONS.md` § merge queue) |
 | Risk-tier classification | Detection, guides | `.github/scripts/classify_paths.py` — changed files classified by risk tier in the auto-PR flow |
-| Structure audit | Detection, warns | `.github/scripts/sort_audit.py` — weekly audit for misplaced files |
+| Topology census | Detection, warns | `.github/workflows/sort-audit.yml` ("Vault Topology Census", `workflow_dispatch`-only) running `.github/scripts/topology_census.py` — `VAULT-CONVENTIONS.md`'s automation table still lists a weekly `sort_audit.py`, which does not exist in `.github/scripts/` as of 2026-07-24 |
 | The `*` wildcard | Prevention, guides | Epistemological rule (`.claude/CLAUDE.md`, PERSONAE ENGINE) — where provenance is absent, the honest output is `*`, not invented certainty |
 | `!/WAKEUP.md` | Recovery, guides | Disorientation protocol — a fixed re-entry sequence so a confused agent reads before acting |
 | "Plain Words Before the Lore" | Prevention, guides | `CLAUDE.md` / `.claude/CLAUDE.md` — names the persona-inflation failure mode up front, so feeling chosen is recognized as the bug, not a promotion |
