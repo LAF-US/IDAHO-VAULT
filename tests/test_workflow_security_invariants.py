@@ -89,6 +89,25 @@ class WorkflowSecurityInvariantsTest(unittest.TestCase):
             "the norm; use the canonical inert `--merge` flag:\n" + "\n".join(offenders),
         )
 
+    def test_flatten_label_migration_is_dispatch_only_and_least_privilege(self) -> None:
+        # This one-shot migration edits PR labels and DELETES label definitions — a
+        # security-sensitive surface. Pin its trigger to workflow_dispatch ONLY (no schedule,
+        # no PR/push auto-trigger) and its permissions to the exact minimum the steps need
+        # (read contents to classify; issues + pull-requests write to edit/delete labels).
+        wf = yaml.safe_load(
+            (WORKFLOWS / "flatten-label-migration.yml").read_text(encoding="utf-8")
+        )
+        events = wf.get("on", wf.get(True)) or {}
+        names = set(events) if isinstance(events, (dict, list)) else {events}
+        self.assertEqual(
+            names, {"workflow_dispatch"},
+            "migration must be dispatch-only (no schedule/PR/push triggers)",
+        )
+        self.assertEqual(
+            wf.get("permissions"),
+            {"contents": "read", "pull-requests": "write", "issues": "write"},
+        )
+
     def test_security_required_check_contexts_are_distinct(self) -> None:
         secret = yaml.safe_load((WORKFLOWS / "secret-pattern-policy.yml").read_text(encoding="utf-8"))
         large = yaml.safe_load((WORKFLOWS / "large-file-policy.yml").read_text(encoding="utf-8"))
