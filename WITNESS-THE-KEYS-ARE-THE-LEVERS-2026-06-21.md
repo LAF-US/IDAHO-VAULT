@@ -239,6 +239,7 @@ pair — that was the code's drift, not the schema. Logan's ruling: the risk voc
 labels, and classification is a separate layer from routing.*
 
 **The schema is CLASSIFICATION — four flat labels, `—` = absence.** Each axis fires one value or none:
+
 - **filetype** fires `risk/low` (Machine Doc) or `risk/med` (Code); `—` (Natural Language) = no label.
 - **filedepth** fires `risk/high` (Nest / protected) or `risk/nope` (still-point); `—` (root) = no label.
 
