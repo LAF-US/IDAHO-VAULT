@@ -126,6 +126,7 @@ by **three separate mechanisms that must agree but can drift**, and the real mer
 **Addendum — 2026-07-19 (what has since resolved — this map is now partly historical).**
 *Appended by Claude Code, session `…01Fipj4vEJ5ADPuunn9ed5Hd`; proposed, Logan inscribes.*
 Several knots this map named are closed, so it no longer describes the live wiring in full:
+
 - **K1 / K2 — resolved.** The three drifting risk re-derivations collapsed: the classifier's
   placement axis + CODEOWNERS are now the single source. `review_feedback_loop.py`'s
   `PROTECTED_PATH_PATTERNS` / `_pr_touches_protected_path` (cited in §1, K1) **no longer exist**.
