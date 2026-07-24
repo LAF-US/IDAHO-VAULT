@@ -121,11 +121,16 @@ jobs:
               rules = driver.get("rules") or []
               results = run.get("results") or []
               for res in results:
+                  # Positional indexes cannot survive the rules-array union, so
+                  # they are always dropped; ruleId is set only when it
+                  # resolves to a real id (never null).
                   idx = res.pop("ruleIndex", None)
                   if "rule" in res and isinstance(res["rule"], dict):
                       res["rule"].pop("index", None)
                   if "ruleId" not in res and idx is not None and 0 <= idx < len(rules):
-                      res["ruleId"] = rules[idx].get("id")
+                      rid = rules[idx].get("id")
+                      if rid:
+                          res["ruleId"] = rid
               if name not in merged:
                   driver["rules"] = list(rules)
                   run["results"] = list(results)
