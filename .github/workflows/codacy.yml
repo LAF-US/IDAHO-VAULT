@@ -49,10 +49,15 @@ jobs:
       # action.yml at v4.4.7) with the fixed CLI version pinned explicitly.
       # The script URL is pinned to the commit SHA of tag 7.9.25 (tags are
       # retaggable; commits are not) — same immutability standard the
-      # Actions pin policy enforces for `uses:` references.
+      # Actions pin policy enforces for `uses:` references — and the
+      # downloaded content is verified against a pinned SHA-256 before it
+      # is made executable, so a corrupted or substituted download fails
+      # closed instead of running.
       - name: Download Codacy Analysis CLI script (7.9.25)
+        shell: bash
         run: |
           wget -O codacy-analysis-cli.sh "https://raw.githubusercontent.com/codacy/codacy-analysis-cli/aba65e1e961d6f220002ddc6bd57ccd8a8d36c6d/bin/codacy-analysis-cli.sh"
+          echo "76e958c3dd7bc2491b6d3261fece4a118516986e07c8e5e5daa2e59c0a701e16  codacy-analysis-cli.sh" | sha256sum -c -
           chmod +x codacy-analysis-cli.sh
       - name: Run Codacy Analysis CLI
         env:
