@@ -271,4 +271,22 @@ the classifier's affirmative verdict (`evaluate_review_state(..., verdict=(None,
 paths that just classified). An unclassified PR (no verdict, no labels) is `unknown` and HOLDS —
 tested by `…unclassified_pr_without_verdict_never_arms`.
 
+---
+
+**Addendum — 2026-07-24 (filedepth = literal directory placement; protected-surface pins removed — PR #854).**
+*Appended by Claude Code, session `…01Fipj4vEJ5ADPuunn9ed5Hd` (same session as the 2026-07-20 addendum).*
+Supersedes the filedepth line above (*"fires `risk/high` (Nest / protected) or `risk/nope` (still-point)"*).
+The flat four-label schema and the classification grid are unchanged; only WHICH paths fire each depth
+value changed. `classify_paths.py` now scores **filedepth** purely by literal directory prefix — the axis
+had never actually been implemented (a stale hardcoded file list plus dotfolder pins, `.github/` among
+them, stood in for it):
+
+- `risk/high` — a path physically inside the `!/` tree, above the inner region.
+- `risk/nope` — a path inside `!/!/__!__/!/` and below (the whole inner region, not only the
+  `Esto Perpetua!` still-point).
+- `—` — repo root and everything outside `!/`, including all dotfolders (`.github/`, `.claude/`, …) and
+  root governance files. Nothing is special-cased; there are no protected-surface pins on this axis.
+
+Whatever protects those surfaces is a separate mechanism (e.g. CODEOWNERS), not filedepth.
+
 ###### [["The world is quiet here."]]

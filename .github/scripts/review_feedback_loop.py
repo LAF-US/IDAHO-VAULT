@@ -911,7 +911,17 @@ def _risk_pair_for_pr(labels: set[str]) -> tuple[str | None, str | None, bool]:
 
 def _tier_from_pair(filetype_flag: str | None, depth_flag: str | None, marked: bool) -> str:
     """Collapse a lane pair to the single-tier vocabulary (nope>high>med>low>clear);
-    an incompletely marked PR is `unknown` and HOLDS."""
+    an incompletely marked PR is `unknown` and HOLDS. Fails loud on an out-of-vocabulary
+    flag (e.g. a caller-supplied `verdict` typo like "medium") instead of letting it fall
+    through to `clear` and misroute the PR."""
+    if filetype_flag not in (None, "low", "med"):
+        raise RiskMarkerInvariantError(
+            f"invalid filetype_flag {filetype_flag!r}: expected None, 'low', or 'med'"
+        )
+    if depth_flag not in (None, "high", "nope"):
+        raise RiskMarkerInvariantError(
+            f"invalid depth_flag {depth_flag!r}: expected None, 'high', or 'nope'"
+        )
     if not marked:
         return "unknown"
     if depth_flag == "nope":

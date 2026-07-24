@@ -93,6 +93,16 @@ jobs:
               # or thread side effects. classify from the PR's current diff, stamp the
               # flat label(s) for the fired axes (—/— stamps nothing).
               ft, dp = r._classify_pr_pair(owner, name, num)
+              # Fetch the PR's current labels so restamp can REMOVE stale flat risk/*
+              # labels, not just add. An empty set would let restamp add the desired
+              # labels but never strip a now-wrong one (e.g. a PR that reclassifies from
+              # high to clear would keep risk/high, since the delete step only removes the
+              # retired prefixed/legacy labels, not the flat ones).
+              current = set(json.loads(subprocess.run(
+                  ["gh", "pr", "view", str(num), "--repo", f"{owner}/{name}",
+                   "--json", "labels", "--jq", "[.labels[].name]"],
+                  capture_output=True, text=True, check=True,
+              ).stdout))
               desired = set()
               if ft:
                   desired.add(r.FILETYPE_RISK_LABELS[ft])
@@ -100,9 +110,9 @@ jobs:
                   desired.add(r.DEPTH_RISK_LABELS[dp])
               print(f"#{num}: verdict=({ft}, {dp}) -> {sorted(desired) or '—/— (no risk label)'}")
               if not dry:
-                  # restamp only manages the flat RISK_FLAG_LABELS set; the old prefixed
-                  # labels are left in place here and removed wholesale by the delete step.
-                  r.restamp_risk_pair(num, set(), ft, dp)
+                  # restamp manages only the flat RISK_FLAG_LABELS set; the old prefixed
+                  # labels are removed wholesale by the delete step below.
+                  r.restamp_risk_pair(num, current, ft, dp)
           PY
 
       - name: Delete the 7 retired label definitions
@@ -113,10 +123,18 @@ jobs:
                    "depth:risk/—" "depth:risk/high" "depth:risk/nope" "risk/—"; do
             if [ "$DRY_RUN" = "true" ]; then
               echo "[dry-run] would delete label: $L"
-            elif gh label delete "$L" --repo "$OWNER/$NAME" --yes 2>/dev/null; then
+              continue
+            fi
+            # Preserve stderr and distinguish "label not found" (benign) from real
+            # failures (auth, rate limit, API errors) — masking all non-zero exits as
+            # "already gone" could falsely report success while leaving labels behind.
+            if err=$(gh label delete "$L" --repo "$OWNER/$NAME" --yes 2>&1); then
               echo "deleted: $L"
-            else
+            elif printf '%s' "$err" | grep -qiE 'not found|HTTP 404'; then
               echo "not present / already gone: $L"
+            else
+              echo "::error::failed to delete label '$L': $err"
+              exit 1
             fi
           done
 

@@ -302,6 +302,19 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
                 with self.assertRaises(rfl.RiskMarkerInvariantError):
                     rfl._assert_risk_marker_exclusive(labels)
 
+    def test_tier_from_pair_rejects_out_of_vocab_flags(self) -> None:
+        # A caller-supplied verdict typo (e.g. "medium" vs "med") must fail loud, not fall
+        # through to "clear" and misroute the PR.
+        rfl = review_feedback_loop
+        with self.assertRaises(rfl.RiskMarkerInvariantError):
+            rfl._tier_from_pair("medium", None, True)
+        with self.assertRaises(rfl.RiskMarkerInvariantError):
+            rfl._tier_from_pair(None, "highish", True)
+        # Valid vocab still tiers as before.
+        self.assertEqual(rfl._tier_from_pair(None, None, True), "clear")
+        self.assertEqual(rfl._tier_from_pair("med", "high", True), "high")
+        self.assertEqual(rfl._tier_from_pair(None, None, False), "unknown")
+
     def test_pair_clear_arms_and_pair_flag_holds(self) -> None:
         # The `—/—` verdict arms after grace; a fired lane holds until its review completes.
         now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
