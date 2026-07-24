@@ -52,9 +52,16 @@ target-version = "py310"
 # scripts directly, which already puts this dir on sys.path[0].
 pythonpath = [".github/scripts"]
 
+[tool.coverage.run]
+# Scope measurement to this repo's own source, not third-party library internals
+# pulled in incidentally by `unittest discover` importing test modules.
+source = [".github/scripts", "src/idaho_vault"]
+omit = ["*/test_*.py", "*/__pycache__/*"]
+
 [dependency-groups]
 dev = [
     "pytest>=9.0.3,<10",
     "ruff>=0.15.12,<1",
     "jupytext>=1.16,<2",
+    "coverage>=7.6,<8",
 ]
