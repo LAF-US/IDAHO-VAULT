@@ -171,8 +171,8 @@ jobs:
           # Flat 4-value risk schema: stamp the fired axes only. The filetype axis fires
           # risk/low | risk/med; the filedepth axis fires risk/high | risk/nope. An axis
           # whose classifier value is the em-dash (—) fires NOTHING (no label). `—/—`
-          # (no risk/* label at all) arms on open; a fired flag routes the PR into its
-          # review lane and is removed when that review completes.
+          # (no risk/* label at all) becomes eligible to arm once the grace window elapses;
+          # a fired flag routes the PR into its review lane and is removed when that review completes.
           FT_LABEL=""
           DP_LABEL=""
           case "$RISK_FILETYPE" in
@@ -275,9 +275,9 @@ jobs:
           echo "Agent-authored PRs remain reviewable and require an explicit merge decision." >> "$GITHUB_STEP_SUMMARY"
 
       - name: Log clear-pair auto-merge
-        # The —/— pair is armed for auto-merge on open (K3/#629, K4/#630).
+        # The —/— pair becomes eligible for auto-merge once the grace window elapses (K3/#629, K4/#630).
         if: steps.gate.outputs.skip != 'true' && steps.classify.outputs.skip != 'true' && steps.check-pr.outputs.pr_exists != 'true' && steps.classify.outputs.tier4 == 'clear'
         shell: bash
         run: |
           echo "Lifecycle set to \`lifecycle/staged\`." >> "$GITHUB_STEP_SUMMARY"
-          echo "Clear pair (\`—/—\`): no risk/* label stamped; armed for auto-merge on open." >> "$GITHUB_STEP_SUMMARY"
+          echo "Clear pair (\`—/—\`): no risk/* label stamped; eligible for auto-merge once the grace window elapses." >> "$GITHUB_STEP_SUMMARY"

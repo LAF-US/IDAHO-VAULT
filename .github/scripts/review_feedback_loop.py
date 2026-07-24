@@ -1303,15 +1303,21 @@ def _build_reconciliation_report(
             # Skipped when the lane already completed (its flag was consumed). Fails SAFE
             # per PR: a classification error leaves that PR's labels untouched.
             restamp_actions: list[str] = []
-            if not state.get("lane_complete"):
-                try:
-                    ft_flag, dp_flag = _classify_pr_pair(owner, repo, pr_number)
-                except Exception as exc:  # noqa: BLE001 — "do not restamp", never abort
-                    print(
-                        f"::warning::K6 restamp skipped for #{pr_number}: {exc}",
-                        file=sys.stderr,
-                    )
-                else:
+            try:
+                ft_flag, dp_flag = _classify_pr_pair(owner, repo, pr_number)
+            except Exception as exc:  # noqa: BLE001 — "do not restamp", never abort
+                print(
+                    f"::warning::K6 restamp skipped for #{pr_number}: {exc}",
+                    file=sys.stderr,
+                )
+            else:
+                # Restamp only when the lane has NOT completed (a completed lane's flag was
+                # consumed by the projection; re-stamping would re-add it). But ALWAYS
+                # re-evaluate with the classifier's verdict, even when lane_complete: a
+                # consumed-clear (—/—) lane-complete PR must read as affirmatively clear, not
+                # `unknown` — otherwise it fails its eligibility check and the projection
+                # disarms an already-armed clear PR.
+                if not state.get("lane_complete"):
                     label_set = {
                         node["name"]
                         for node in (pr.get("labels") or {}).get("nodes") or []
@@ -1319,16 +1325,13 @@ def _build_reconciliation_report(
                     }
                     restamp_actions = restamp_risk_pair(pr_number, label_set, ft_flag, dp_flag)
                     pr["labels"] = {"nodes": [{"name": name} for name in sorted(label_set)]}
-                    # Re-evaluate with the classifier's verdict as authoritative: a `—/—`
-                    # verdict is affirmatively clear even though it stamps no labels, so this
-                    # runs even when the restamp produced no label actions.
-                    state = evaluate_review_state(
-                        pr,
-                        now=now,
-                        grace_minutes=grace_minutes,
-                        auto_resolve_reviewers=auto_resolve_reviewers,
-                        verdict=(ft_flag, dp_flag),
-                    )
+                state = evaluate_review_state(
+                    pr,
+                    now=now,
+                    grace_minutes=grace_minutes,
+                    auto_resolve_reviewers=auto_resolve_reviewers,
+                    verdict=(ft_flag, dp_flag),
+                )
         except RiskMarkerInvariantError as exc:
             # The K4/K6 mutual-exclusion invariant tripped on THIS PR. Fail loud — record
             # it and surface a non-zero exit — but do NOT abort the sweep: one mis-labeled
@@ -1478,16 +1481,21 @@ def sync_pr(args: argparse.Namespace) -> int:
     # code re-enters the lane). Fails SAFE: a classification error leaves labels
     # untouched (an unmarked PR holds; nothing arms off a failed classification).
     restamp_actions: list[str] = []
-    if not state.get("lane_complete"):
-        try:
-            ft_flag, dp_flag = _classify_pr_pair(args.owner, args.repo, args.pr_number)
-        except Exception as exc:  # noqa: BLE001 — any failure means "do not restamp"
-            print(
-                f"::warning::K6 restamp skipped for #{args.pr_number} "
-                f"(classification failed; labels left as-is): {exc}",
-                file=sys.stderr,
-            )
-        else:
+    try:
+        ft_flag, dp_flag = _classify_pr_pair(args.owner, args.repo, args.pr_number)
+    except Exception as exc:  # noqa: BLE001 — any failure means "do not restamp"
+        print(
+            f"::warning::K6 restamp skipped for #{args.pr_number} "
+            f"(classification failed; labels left as-is): {exc}",
+            file=sys.stderr,
+        )
+    else:
+        # Restamp only when the lane has NOT completed (a completed lane's flag was consumed
+        # by the projection; re-stamping would re-add it). But ALWAYS re-evaluate with the
+        # classifier's verdict, even when lane_complete: a consumed-clear (—/—) lane-complete
+        # PR must read as affirmatively clear, not `unknown` — otherwise it fails its
+        # eligibility check and the projection disarms an already-armed clear PR.
+        if not state.get("lane_complete"):
             label_set = {
                 node["name"]
                 for node in (pr.get("labels") or {}).get("nodes") or []
@@ -1495,15 +1503,12 @@ def sync_pr(args: argparse.Namespace) -> int:
             }
             restamp_actions = restamp_risk_pair(args.pr_number, label_set, ft_flag, dp_flag)
             pr["labels"] = {"nodes": [{"name": name} for name in sorted(label_set)]}
-            # Re-evaluate with the classifier's verdict as authoritative: a `—/—` verdict
-            # is affirmatively clear even though it stamps no labels, so this must run even
-            # when the restamp produced no label actions.
-            state = evaluate_review_state(
-                pr,
-                grace_minutes=args.grace_minutes,
-                auto_resolve_reviewers=auto_resolve_reviewers,
-                verdict=(ft_flag, dp_flag),
-            )
+        state = evaluate_review_state(
+            pr,
+            grace_minutes=args.grace_minutes,
+            auto_resolve_reviewers=auto_resolve_reviewers,
+            verdict=(ft_flag, dp_flag),
+        )
 
     clear_pending = (
         args.sync_actor in completion_actors and bool(state["has_copilot_apply_pending"])

@@ -427,6 +427,45 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         # Restamped to `—/—` (no labels) -> clear lane via the verdict -> armed this pass.
         arm.assert_called_once_with("LAF-US", "IDAHO-VAULT", 300)
 
+    def test_consumed_clear_lane_complete_pr_is_not_disarmed(self) -> None:
+        # Regression: a PR whose flag was consumed (now zero risk/* labels) and whose lane
+        # completed (APPROVED, no threads) must be re-evaluated with the classifier verdict
+        # even though lane_complete skips the restamp. Before the fix the sweep skipped the
+        # verdict when lane_complete, so such a PR read as `unknown`, failed its eligibility
+        # check, and the projection DISARMED an already-armed clear PR.
+        now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
+        args = SimpleNamespace(
+            owner="LAF-US", repo="IDAHO-VAULT", pr_number=301,
+            sync_actor="someone", grace_minutes=30,
+        )
+        armed_clear = _pr(
+            number=301, created_at=now - timedelta(minutes=45),
+            labels=(review_feedback_loop.DEFAULT_AUTO_MERGE_LABEL,),
+            review_decision="APPROVED",
+        )
+        with mock.patch.object(review_feedback_loop, "ensure_labels"), mock.patch.object(
+            review_feedback_loop, "_fetch_pr", return_value=armed_clear
+        ), mock.patch.object(
+            review_feedback_loop, "_viewer_login", return_value="github-actions[bot]"
+        ), mock.patch.object(
+            review_feedback_loop, "_resolve_outdated_resolvable_threads", return_value=[]
+        ), mock.patch.object(
+            review_feedback_loop, "_classify_pr_pair", return_value=(None, None)
+        ), mock.patch.object(
+            review_feedback_loop, "_edit_label"
+        ), mock.patch.object(
+            review_feedback_loop, "_disable_auto_merge"
+        ) as disable, mock.patch.object(
+            review_feedback_loop, "_run"
+        ), mock.patch.object(
+            review_feedback_loop, "_arm_auto_merge", return_value=(True, None)
+        ), contextlib.redirect_stdout(io.StringIO()):
+            result = review_feedback_loop.sync_pr(args)
+        self.assertEqual(result, 0)
+        # The consumed-clear lane-complete PR reads clear via the verdict -> stays eligible
+        # -> is NOT disarmed.
+        disable.assert_not_called()
+
     def test_unclassified_pr_without_verdict_never_arms(self) -> None:
         # K4 safety: absence of a risk label is NOT clear. Without an affirmative verdict, an
         # all-absent PR is `unknown` and HOLDS — it must never be armed for auto-merge.
