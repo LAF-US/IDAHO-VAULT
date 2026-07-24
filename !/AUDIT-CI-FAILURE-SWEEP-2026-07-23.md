@@ -36,7 +36,9 @@ Confirmed the fix by re-running with `jupytext==1.19.4` installed (matching the 
 
 **Category: Code (CI script/workflow bug — floating dependency version, not a real content drift).**
 
-**Fixed this pass:** `.github/workflows/check-notebooks-paired.yml` now installs `jupytext==1.19.4` (pinned, matching `requirements.txt`) instead of the floating `>=1.16,<2` range, so CI's installed version can never again silently drift ahead of what's actually committed. `LLM-Router.md` itself needed no content change — it was already correct for the pinned version. Existing `tests/test_helper_scripts.py::JupytextSyncPairedTest` (5 tests, all mock the `jupytext` subprocess call directly) still pass unchanged; no new test was needed since the fix is a version pin, not a code-path change.
+**Fixed this pass:** `.github/workflows/check-notebooks-paired.yml` no longer installs a floating `jupytext>=1.16,<2` range. Existing `tests/test_helper_scripts.py::JupytextSyncPairedTest` (5 tests, all mock the `jupytext` subprocess call directly) pass unchanged throughout; no new test was needed since this is a version-pin/install-source fix, not a code-path change.
+
+*Update, same review cycle:* the first version of this fix hardcoded `jupytext==1.19.4` as a workflow literal. Before this PR merged, an unrelated commit landed on `main` (the POKA-YOKE.md / codacy.yml rework) that carried its own stray re-sync of `LLM-Router.md`, stamping it `jupytext_version: 1.19.5` — which immediately drifted from this PR's hardcoded `1.19.4` pin the moment `main` was merged into this branch. Same failure class, inverted. The durable fix parses the version out of `requirements.txt` at run time instead (`sed -n 's/^jupytext==\([^[:space:]#]*\).*/\1/p' requirements.txt`, with a validation step that fails closed with a clear error if no pin is found there), so there is exactly one place this version can live and the workflow's install can never disagree with what's actually committed. `LLM-Router.md` was re-synced against `jupytext==1.19.4` (still current in `requirements.txt` as of this writing) to clear that second drift.
 
 ## Big IF
 

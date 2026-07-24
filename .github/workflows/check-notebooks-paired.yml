@@ -39,7 +39,11 @@ jobs:
         # failing this check on any PR touching a *.md/*.ipynb file with no real content drift
         # involved. See !/AUDIT-CI-FAILURE-SWEEP-2026-07-23.md.
         run: |
-          version="$(sed -n 's/^jupytext==//p' requirements.txt)"
+          version="$(sed -n 's/^jupytext==\([^[:space:]#]*\).*/\1/p' requirements.txt)"
+          if [ -z "$version" ]; then
+            echo "::error::No 'jupytext==X.Y.Z' pin found in requirements.txt — cannot install a matching jupytext for this check."
+            exit 1
+          fi
           python -m pip install --quiet "jupytext==${version}"
       - name: Sync every paired notebook and fail on drift
         run: |
