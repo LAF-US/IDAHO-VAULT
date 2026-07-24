@@ -16,6 +16,11 @@ on:
       # enforcement script or this workflow can't land without running the check they implement.
       - ".github/scripts/jupytext_sync_paired.py"
       - ".github/workflows/check-notebooks-paired.yml"
+      # The jupytext version is parsed from this file at run time (see the install step below).
+      # Without it here, a PR that only bumps the jupytext== pin would skip this workflow
+      # entirely, and the mismatched pin could reach main undetected until the next unrelated
+      # PR touching a *.md/*.ipynb file surfaced it.
+      - "requirements.txt"
   workflow_dispatch:
 
 permissions:
