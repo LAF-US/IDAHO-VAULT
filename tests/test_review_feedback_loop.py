@@ -842,6 +842,8 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
 
         with mock.patch.object(
             review_feedback_loop, "_auto_merge_state", return_value=(False, False)
+        ), mock.patch.object(
+            review_feedback_loop, "_merge_state_status", return_value="CLEAN"
         ), mock.patch.object(review_feedback_loop, "_run", side_effect=error):
             enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 289)
 
@@ -853,6 +855,8 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         # Both halves: arming alone never queued it (the bug); enqueue is the missing half.
         with mock.patch.object(
             review_feedback_loop, "_auto_merge_state", return_value=(False, False)
+        ), mock.patch.object(
+            review_feedback_loop, "_merge_state_status", return_value="CLEAN"
         ), mock.patch.object(
             review_feedback_loop, "_pr_node_id", return_value="PR_node1"
         ), mock.patch.object(
@@ -872,6 +876,8 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         with mock.patch.object(
             review_feedback_loop, "_auto_merge_state", return_value=(True, False)
         ), mock.patch.object(
+            review_feedback_loop, "_merge_state_status", return_value="CLEAN"
+        ), mock.patch.object(
             review_feedback_loop, "_pr_node_id", return_value="PR_node2"
         ), mock.patch.object(
             review_feedback_loop, "_enqueue_pr", return_value=(True, None)
@@ -884,9 +890,12 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
 
     def test_arm_auto_merge_leaves_queued_pr_untouched(self) -> None:
         # Already in the merge queue → do nothing; re-enqueuing/re-arming would disturb it.
+        # Also never reads mergeStateStatus — a queued PR is never a BEHIND candidate here.
         with mock.patch.object(
             review_feedback_loop, "_auto_merge_state", return_value=(True, True)
         ), mock.patch.object(
+            review_feedback_loop, "_merge_state_status"
+        ) as merge_state, mock.patch.object(
             review_feedback_loop, "_enqueue_pr"
         ) as enqueue, mock.patch.object(review_feedback_loop, "_run") as run:
             enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 12)
@@ -894,6 +903,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertIsNone(arm_error)
         run.assert_not_called()
         enqueue.assert_not_called()
+        merge_state.assert_not_called()
 
     def test_arm_auto_merge_enqueue_not_ready_is_non_fatal(self) -> None:
         # Enqueue is best-effort: a not-yet-ready PR can't be queued now, but it stays armed
@@ -901,6 +911,8 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         # so this is success — armed True, and crucially NO error is surfaced.
         with mock.patch.object(
             review_feedback_loop, "_auto_merge_state", return_value=(False, False)
+        ), mock.patch.object(
+            review_feedback_loop, "_merge_state_status", return_value="CLEAN"
         ), mock.patch.object(
             review_feedback_loop, "_pr_node_id", return_value="PR_node3"
         ), mock.patch.object(
@@ -915,6 +927,8 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         # error while still reporting armed=True — so "armed but never queued" can't recur silently.
         with mock.patch.object(
             review_feedback_loop, "_auto_merge_state", return_value=(True, False)
+        ), mock.patch.object(
+            review_feedback_loop, "_merge_state_status", return_value="CLEAN"
         ), mock.patch.object(
             review_feedback_loop, "_pr_node_id", return_value="PR_node4"
         ), mock.patch.object(
@@ -934,6 +948,8 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         with mock.patch.object(
             review_feedback_loop, "_auto_merge_state", return_value=(False, False)
         ), mock.patch.object(
+            review_feedback_loop, "_merge_state_status", return_value="CLEAN"
+        ), mock.patch.object(
             review_feedback_loop, "_pr_node_id", return_value=None
         ), mock.patch.object(
             review_feedback_loop, "_enqueue_pr"
@@ -945,6 +961,133 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             ["gh", "pr", "merge", "15", "--merge", "--auto"]
         )
         enqueue.assert_not_called()
+
+    def test_arm_auto_merge_updates_branch_when_behind_then_still_arms(self) -> None:
+        # BEHIND means neither arming nor enqueuing can make the PR CLEAN — merge base in
+        # first (the same recovery batch-arm-merge-queue.yml already does for this state),
+        # then still arm as a backstop so it's ready to enqueue once CI recomputes it CLEAN.
+        with mock.patch.object(
+            review_feedback_loop, "_auto_merge_state", return_value=(False, False)
+        ), mock.patch.object(
+            review_feedback_loop, "_merge_state_status", return_value="BEHIND"
+        ), mock.patch.object(
+            review_feedback_loop, "_update_branch", return_value=(True, None)
+        ) as update_branch, mock.patch.object(
+            review_feedback_loop, "_pr_node_id", return_value="PR_node20"
+        ), mock.patch.object(
+            review_feedback_loop, "_enqueue_pr", return_value=(False, None)
+        ), mock.patch.object(review_feedback_loop, "_run") as run:
+            enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 20)
+        self.assertTrue(enabled)
+        self.assertIn("branch updated (was BEHIND)", arm_error)
+        update_branch.assert_called_once_with("o", "r", 20)
+        run.assert_called_once_with(["gh", "pr", "merge", "20", "--merge", "--auto"])
+
+    def test_arm_auto_merge_still_arms_when_branch_update_fails(self) -> None:
+        # A real update-branch failure (e.g. an actual conflict surfaced as DIRTY by the time
+        # this ran) is surfaced as an informational note, not treated as arming having failed.
+        with mock.patch.object(
+            review_feedback_loop, "_auto_merge_state", return_value=(False, False)
+        ), mock.patch.object(
+            review_feedback_loop, "_merge_state_status", return_value="BEHIND"
+        ), mock.patch.object(
+            review_feedback_loop, "_update_branch", return_value=(False, "merge conflict")
+        ), mock.patch.object(
+            review_feedback_loop, "_pr_node_id", return_value="PR_node21"
+        ), mock.patch.object(
+            review_feedback_loop, "_enqueue_pr", return_value=(False, None)
+        ), mock.patch.object(review_feedback_loop, "_run") as run:
+            enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 21)
+        self.assertTrue(enabled)
+        self.assertIn("branch update (BEHIND) failed", arm_error)
+        self.assertIn("merge conflict", arm_error)
+        run.assert_called_once_with(["gh", "pr", "merge", "21", "--merge", "--auto"])
+
+    def test_arm_auto_merge_aggregates_notes_when_branch_update_and_enqueue_both_fail(
+        self,
+    ) -> None:
+        # Both failure notes must survive the join — neither overwrites the other.
+        with mock.patch.object(
+            review_feedback_loop, "_auto_merge_state", return_value=(False, False)
+        ), mock.patch.object(
+            review_feedback_loop, "_merge_state_status", return_value="BEHIND"
+        ), mock.patch.object(
+            review_feedback_loop, "_update_branch", return_value=(False, "merge conflict")
+        ), mock.patch.object(
+            review_feedback_loop, "_pr_node_id", return_value="PR_node23"
+        ), mock.patch.object(
+            review_feedback_loop, "_enqueue_pr", return_value=(False, "enqueue error")
+        ), mock.patch.object(review_feedback_loop, "_run") as run:
+            enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 23)
+        self.assertTrue(enabled)
+        self.assertIn("branch update (BEHIND) failed", arm_error)
+        self.assertIn("merge conflict", arm_error)
+        self.assertIn("enqueue was rejected", arm_error)
+        self.assertIn("enqueue error", arm_error)
+        run.assert_called_once_with(["gh", "pr", "merge", "23", "--merge", "--auto"])
+
+    def test_arm_auto_merge_checks_behind_even_when_already_enabled(self) -> None:
+        # A PR can already be armed and still fall BEHIND later — the BEHIND check does not
+        # depend on `enabled`, so this must still trigger an update-branch attempt.
+        with mock.patch.object(
+            review_feedback_loop, "_auto_merge_state", return_value=(True, False)
+        ), mock.patch.object(
+            review_feedback_loop, "_merge_state_status", return_value="BEHIND"
+        ), mock.patch.object(
+            review_feedback_loop, "_update_branch", return_value=(True, None)
+        ) as update_branch, mock.patch.object(
+            review_feedback_loop, "_pr_node_id", return_value="PR_node22"
+        ), mock.patch.object(
+            review_feedback_loop, "_enqueue_pr", return_value=(False, None)
+        ), mock.patch.object(review_feedback_loop, "_run") as run:
+            enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 22)
+        self.assertTrue(enabled)
+        self.assertIn("branch updated (was BEHIND)", arm_error)
+        update_branch.assert_called_once_with("o", "r", 22)
+        run.assert_not_called()  # already enabled — no redundant enable call
+
+    def test_merge_state_status_returns_value_and_fails_open(self) -> None:
+        with mock.patch.object(
+            review_feedback_loop,
+            "_graphql",
+            return_value={"repository": {"pullRequest": {"mergeStateStatus": "BEHIND"}}},
+        ):
+            self.assertEqual(
+                review_feedback_loop._merge_state_status("o", "r", 9), "BEHIND"
+            )
+        with mock.patch.object(review_feedback_loop, "_graphql", return_value={}):
+            self.assertEqual(
+                review_feedback_loop._merge_state_status("o", "r", 9), "UNKNOWN"
+            )
+        with mock.patch.object(
+            review_feedback_loop, "_graphql", side_effect=RuntimeError("boom")
+        ):
+            self.assertEqual(
+                review_feedback_loop._merge_state_status("o", "r", 9), "UNKNOWN"
+            )
+        with mock.patch.object(
+            review_feedback_loop,
+            "_graphql",
+            return_value={"repository": {"pullRequest": {"mergeStateStatus": None}}},
+        ):
+            self.assertEqual(
+                review_feedback_loop._merge_state_status("o", "r", 9), "UNKNOWN"
+            )
+
+    def test_update_branch_tri_state_success_and_failure(self) -> None:
+        with mock.patch.object(review_feedback_loop, "_run") as run:
+            ok, err = review_feedback_loop._update_branch("o", "r", 9)
+        self.assertTrue(ok)
+        self.assertIsNone(err)
+        run.assert_called_once_with(
+            ["gh", "api", "--method", "PUT", "repos/o/r/pulls/9/update-branch"]
+        )
+        with mock.patch.object(
+            review_feedback_loop, "_run", side_effect=RuntimeError("conflict")
+        ):
+            ok, err = review_feedback_loop._update_branch("o", "r", 9)
+        self.assertFalse(ok)
+        self.assertEqual(err, "conflict")
 
     def test_enqueue_pr_tri_state_entry_notready_failure(self) -> None:
         # The enqueue primitive is tri-state:

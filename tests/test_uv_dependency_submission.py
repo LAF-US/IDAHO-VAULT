@@ -117,9 +117,10 @@ class UvDependencySubmissionTest(unittest.TestCase):
         self.assertEqual(len(onnx), 2, onnx)
 
     def test_resolved_count_matches_non_local_versioned_packages(self) -> None:
-        # 162 [[package]] entries in uv.lock, minus the single editable local
-        # project, all registry packages versioned -> 161 distinct purls.
-        self.assertEqual(len(self.resolved), 161)
+        # 163 [[package]] entries in uv.lock (162 + coverage, added for Codacy
+        # coverage reporting), minus the single editable local project, all
+        # registry packages versioned -> 162 distinct purls.
+        self.assertEqual(len(self.resolved), 162)
 
 
 if __name__ == "__main__":
