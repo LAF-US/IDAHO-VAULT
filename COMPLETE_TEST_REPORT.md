@@ -47,7 +47,7 @@ This system appears to lack PowerShell 6+ (pwsh.exe), which is required for auto
 - branch_garden_report.py
 - bind_ai_book.py
 - backfill_daily_notes.py
-- audit_repo_payloads.py
+- audit_repo_payloads.py — deleted 2026-07-24 (PR #854)
 
 **Location: .github/swarm/tools/**
 - state_manager.py
