@@ -80,7 +80,7 @@ This is a personal "second brain" Obsidian vault that treats its owner's life �
 **Machinery seen but NOT opened:**
 `audit_repo_payloads.py`, `backfill_daily_notes.py`, `bind_ai_book.py`, `branch_garden_report.py`, `check_dotfolder_anchors.py`, `check_version_transitions.py`, `codex_work_guard.py`, `date_tagger.py`, `expand_date_aliases.py`, `generate_agents_bootstrap.py`, `generate_name_forms.py`, `issue_reconciler.py`, `janitor_sweep.py`, `jupytext_sync_paired.py`, `laf_usb_manifest.py`, `large_file_watchdog.py`, `meshnetweb_portability_check.py`, `metadata_survey.py`, `normalize_tags.py`, `phone_link_intake.py`, `pr_lifecycle.py`, `pr_loop_watchdog.py`, `review_feedback_loop.py` (94 KB — the largest besides rollover), `stale_bot_prs.py`, `sync_obsidian_plugin_registry.py`, `tag_stubs.py`, `test_classify_paths.py`, `uv_dependency_submission.py`, `wayback_audit.py`; also all 37 workflow YAMLs except the four opened.
 
-> *Marginalia 2026-07-24: `audit_repo_payloads.py` (first listed) has since been deleted — PR #854.*
+> Marginalia 2026-07-24: `audit_repo_payloads.py` (first listed) has since been deleted — PR #854.
 
 ---
 
