@@ -44,7 +44,7 @@ Having verified that, here's the fuller picture, checked directly rather than as
 
 ## Work shipped this run (not just findings)
 
-**Correction below (see "Correction, posted after Logan's review") — the "unrelated histories" claim in this section is wrong; read that section first.**
+**The "unrelated histories" claim in this section is wrong. Before relying on anything below, skip ahead to "Correction, posted after Logan's review" at the end of this report — the original text is preserved here uncorrected as the record of the error.**
 
 Per this run's instruction to pick up one of the oldest open PRs and drive it toward merge: picked **PR #503** (open since 2026-06-09, 32 days, four reviewers — Sourcery, Copilot, CodeRabbit×2 — all flagging the identical stale-comment issue, never addressed).
 
