@@ -47,9 +47,12 @@ jobs:
       # which hard-fails deserializing that severity ("High not a member of
       # Level"). These steps reproduce the action's own invocation (see
       # action.yml at v4.4.7) with the fixed CLI version pinned explicitly.
+      # The script URL is pinned to the commit SHA of tag 7.9.25 (tags are
+      # retaggable; commits are not) — same immutability standard the
+      # Actions pin policy enforces for `uses:` references.
       - name: Download Codacy Analysis CLI script (7.9.25)
         run: |
-          wget -O codacy-analysis-cli.sh "https://raw.githubusercontent.com/codacy/codacy-analysis-cli/7.9.25/bin/codacy-analysis-cli.sh"
+          wget -O codacy-analysis-cli.sh "https://raw.githubusercontent.com/codacy/codacy-analysis-cli/aba65e1e961d6f220002ddc6bd57ccd8a8d36c6d/bin/codacy-analysis-cli.sh"
           chmod +x codacy-analysis-cli.sh
       - name: Run Codacy Analysis CLI
         env:
