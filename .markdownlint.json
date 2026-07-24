@@ -1,0 +1,6 @@
+{
+  "comment": "Codacy's markdownlint reads this file (docs.codacy.com > repositories-configure). MD025's default front_matter_title regex counts the YAML `title:` as the document's first H1, flagging every vault note that follows the frontmatter-title-plus-H1 convention (WAKEUP.md, !-AGENT-GIT-GUARDRAILS.md, POKA-YOKE.md, siblings). Obsidian renders frontmatter as metadata, not a heading, so an empty regex disables that counting and keeps the convention lint-clean. Ruled-on precedent: PR #863.",
+  "MD025": {
+    "front_matter_title": ""
+  }
+}
