@@ -52,7 +52,7 @@ Due to PowerShell 6+ (pwsh.exe) not being available in the execution environment
 37. ✓ branch_garden_report.py - Not fully reviewed (size)
 38. ✓ bind_ai_book.py - Not fully reviewed (size)
 39. ✓ backfill_daily_notes.py - Not fully reviewed (size)
-40. ✓ audit_repo_payloads.py - Not fully reviewed (size)
+40. ✓ audit_repo_payloads.py - Not fully reviewed (size) — deleted 2026-07-24 (PR #854)
 
 #### .github/swarm/tools/ (1 file)
 41. ✓ state_manager.py - Valid syntax
