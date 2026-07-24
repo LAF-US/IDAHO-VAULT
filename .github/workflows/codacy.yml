@@ -58,19 +58,30 @@ jobs:
         env:
           CODACY_ANALYSIS_CLI_VERSION: "7.9.25"
           CODACY_PROJECT_TOKEN: ${{ secrets.CODACY_PROJECT_TOKEN }}
+          # On pull_request events GITHUB_SHA is the synthetic merge commit;
+          # results must be associated with the PR head, as the upstream
+          # action does.
+          COMMIT_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
         # --max-allowed-issues forces a 0 exit code so the SARIF file is
         # always generated; PR rejection stays on the GitHub side.
+        # --project-token is passed only when the secret is non-empty —
+        # forked PRs run with empty secrets and must still analyze with
+        # default configurations.
         run: |
-          ./codacy-analysis-cli.sh \
-            analyze \
-            --skip-commit-uuid-validation \
-            --commit-uuid "$GITHUB_SHA" \
-            --verbose \
-            --project-token "$CODACY_PROJECT_TOKEN" \
-            --format sarif \
-            --output results.sarif \
-            --max-allowed-issues 2147483647 \
+          args=(
+            analyze
+            --skip-commit-uuid-validation
+            --commit-uuid "$COMMIT_SHA"
+            --verbose
+            --format sarif
+            --output results.sarif
+            --max-allowed-issues 2147483647
             --gh-code-scanning-compat
+          )
+          if [ -n "$CODACY_PROJECT_TOKEN" ]; then
+            args+=( --project-token "$CODACY_PROJECT_TOKEN" )
+          fi
+          ./codacy-analysis-cli.sh "${args[@]}"
 
       # Upload the SARIF file generated in the previous step
       - name: Upload SARIF results file
