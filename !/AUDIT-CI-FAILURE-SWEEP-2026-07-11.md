@@ -3,7 +3,9 @@ title: CI Failure Sweep — 2026-07-11
 updated: 2026-07-11
 type: audit
 status: draft
-authority: CLAUDE (routine CI sweep)
+authority: LOGAN
+authors:
+  - "Claude Code (routine CI sweep, session claude/practical-cerf-l13ka2)"
 scope: GitHub Actions workflow runs, laf-us/idaho-vault, 2026-07-10T12:06:43Z to 2026-07-11T12:06:43Z
 owner: Logan Finney
 ---
