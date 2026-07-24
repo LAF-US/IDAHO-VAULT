@@ -69,25 +69,43 @@ jobs:
           COMMIT_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
         # --max-allowed-issues forces a 0 exit code so the SARIF file is
         # always generated; PR rejection stays on the GitHub side.
-        # --project-token is passed only when the secret is non-empty —
-        # forked PRs run with empty secrets and must still analyze with
-        # default configurations.
+        # The project token travels only as the CODACY_PROJECT_TOKEN env
+        # var, which the CLI reads natively — no --project-token flag, so
+        # the secret never appears in process listings, and forked PRs
+        # (empty secret) still analyze with default configurations.
         shell: bash
         run: |
-          args=(
-            analyze
-            --skip-commit-uuid-validation
-            --commit-uuid "$COMMIT_SHA"
-            --verbose
-            --format sarif
-            --output results.sarif
-            --max-allowed-issues 2147483647
+          ./codacy-analysis-cli.sh \
+            analyze \
+            --skip-commit-uuid-validation \
+            --commit-uuid "$COMMIT_SHA" \
+            --verbose \
+            --format sarif \
+            --output results.sarif \
+            --max-allowed-issues 2147483647 \
             --gh-code-scanning-compat
-          )
-          if [ -n "$CODACY_PROJECT_TOKEN" ]; then
-            args+=( --project-token "$CODACY_PROJECT_TOKEN" )
-          fi
-          ./codacy-analysis-cli.sh "${args[@]}"
+
+      # GitHub code scanning (July 2025 policy change) rejects a SARIF file
+      # whose runs share a category; Codacy's SARIF emits one run per tool
+      # invocation and several share one. Give every run a distinct
+      # automationDetails.id so each maps to its own category before upload.
+      - name: Assign unique SARIF run categories
+        shell: bash
+        run: |
+          python3 - <<'EOF'
+          import json
+
+          with open("results.sarif") as fh:
+              sarif = json.load(fh)
+          counts = {}
+          for run in sarif.get("runs", []):
+              tool = run.get("tool", {}).get("driver", {}).get("name", "codacy")
+              n = counts.get(tool, 0)
+              counts[tool] = n + 1
+              run.setdefault("automationDetails", {})["id"] = f"codacy-{tool}-{n}/"
+          with open("results.sarif", "w") as fh:
+              json.dump(sarif, fh)
+          EOF
 
       # Upload the SARIF file generated in the previous step
       - name: Upload SARIF results file
