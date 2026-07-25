@@ -71,24 +71,30 @@ jobs:
 
           # Same changed-vs-tree split as the portability check above: a PR only
           # gates on the Python files it touches, pre-existing tree debt warns only.
+          # --root pins the scan to this job's actual checkout ($GITHUB_WORKSPACE), not
+          # wherever the invoked copy of the script happens to live: when the trusted-main
+          # copy runs (the normal case once this script exists on main), the script's own
+          # default --root (derived from its __file__) resolves to trusted-main/ — the base
+          # commit's tree — so it would only ever see pre-existing files and silently miss
+          # any violation the PR itself introduces.
           if [ "${{ github.event_name }}" = "pull_request" ]; then
             git -c core.quotePath=false diff --name-only --diff-filter=ACMRT \
               "${{ github.event.pull_request.base.sha }}" \
               "${{ github.event.pull_request.head.sha }}" |
-              python "$INTEGRITY_CHECKER" --paths-from-stdin
+              python "$INTEGRITY_CHECKER" --root "$GITHUB_WORKSPACE" --paths-from-stdin
           elif [ "${{ github.event_name }}" = "merge_group" ]; then
             git -c core.quotePath=false diff --name-only --diff-filter=ACMRT \
               "${{ github.event.merge_group.base_sha }}" \
               "${{ github.event.merge_group.head_sha }}" |
-              python "$INTEGRITY_CHECKER" --paths-from-stdin
+              python "$INTEGRITY_CHECKER" --root "$GITHUB_WORKSPACE" --paths-from-stdin
           else
             before="${{ github.event.before }}"
             after="${{ github.sha }}"
             if [[ "$before" == "0000000000000000000000000000000000000000" ]]; then
               git -c core.quotePath=false ls-tree -r --name-only "$after" |
-                python "$INTEGRITY_CHECKER" --paths-from-stdin
+                python "$INTEGRITY_CHECKER" --root "$GITHUB_WORKSPACE" --paths-from-stdin
             else
               git -c core.quotePath=false diff --name-only --diff-filter=ACMRT "$before" "$after" |
-                python "$INTEGRITY_CHECKER" --paths-from-stdin
+                python "$INTEGRITY_CHECKER" --root "$GITHUB_WORKSPACE" --paths-from-stdin
             fi
           fi
