@@ -12,7 +12,7 @@ owner: Logan Finney
 ## 5W Summary
 
 | | |
-|---|---|
+| --- | --- |
 | **Who** | GitHub Actions runners on `laf-us/idaho-vault`; Claude Code (this session, scheduled). No new human-caused breakage. |
 | **What** | 20 failing runs across 5 workflows: Codacy Security Scan (7) + Codacy Coverage Reporter (7, day 15 of the same known account-side gap), `check-notebooks-paired` (3, NEW — root-caused and fixed this pass, not just re-flagged), Sync Plugin Registry (2, known chronic), Secret Pattern Policy (1, known false-positive class). |
 | **When** | 2026-07-22T08:24Z – 2026-07-23T07:19Z |
