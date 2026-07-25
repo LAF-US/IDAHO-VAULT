@@ -49,3 +49,14 @@ This was a **repo-wide, always-on false-positive waiting to happen on the next j
 - Codacy account/token gap — Logan's call (provision vs. retire vs. dashboard fix), unchanged.
 - Sync Plugin Registry / Sync Agent Discovery Index self-heal (#831/#834) — parked per Logan's explicit 2026-07-10 instruction.
 - Secret Pattern Policy `logan/obsidian` false-positive class — needs Logan's one-time confirmation before any exemption is added, per the same standing caution as prior sweeps.
+
+## Update, 2026-07-25 sweep (following window, 2026-07-24T12:08Z–2026-07-25T12:08Z)
+
+**0 currently-live failures.** The `failure`-filtered run list is newest-first and its two most recent entries are the only ones inside this window — everything after them is older than 24h, so this is a complete count, not a sample:
+
+- **Review Feedback Loop, run 30093325516 (2026-07-24T12:30:22Z)** — `gh label create review/required` hit `HTTP 502` from GitHub's own API. Transient, GitHub-side; not a repo bug.
+- **`check-notebooks-paired`, run 30092805266 (2026-07-24T12:21:46Z)** — failed on this PR's merge ref, but that ref pointed at an *intermediate* commit (`45f69ed`) predating `f01e9ff`'s fix-up, not this PR's actual head. Reproduced locally at the exact failing merge SHA (`dd122de`) with `jupytext==1.19.4`: confirmed the same `LLM-Router.md` diff the log shows. Then reproduced the current head (`d1141a1`/`c7eefb6`) merged against current `main`: zero diff, clean run — and the PR's own `paired` check run (12:35:48, after this failure) already shows `success`. Stale-commit artifact, not a live defect.
+
+**Housekeeping done this pass, same PR:** resolved 3 of 4 open review threads on this PR (table delimiter fix; confirmed `requirements.txt` is already in the workflow's `paths` filter, contra a review comment that appears to have run against a pre-`f01e9ff` snapshot; declined the `!/` → `audits/` rename as contrary to documented vault convention). Left the 80-char-wrap suggestion open, flagged advisory, for Logan's call on whether audit-report prose should wrap like code. Updated this branch from `main` (was 2 commits behind after `#860`/`#864` landed).
+
+**Confirmed resolved, not just re-flagged:** PR #587 (`git/code-quality`, open since 2026-06-19) and its would-be successor PR #850 (draft, opened 2026-07-18) are both now superseded by the Codacy coverage integration that already shipped to `main` via #855/#864 — `codacy-coverage-reporter.yml` has posted two consecutive `success` runs on `main` (2026-07-24T02:58Z, 23:12Z) since #864's fix landed. Neither #587's placeholder nor #850's from-scratch coverage workflow is needed anymore; noted on both PRs, not closed (not this session's call to make).
