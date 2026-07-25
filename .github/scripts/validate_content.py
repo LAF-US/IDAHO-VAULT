@@ -84,12 +84,26 @@ PROTECTED_LIVE_FILES = {
 
 # ── Helpers ──────────────────────────────────────────────────────────────────
 
+# Anchored so a leading '-' (which git could parse as an option instead of a
+# positional ref — argument injection) can never match. '^' and '~' are
+# allowed for relative refs like "HEAD^" or "HEAD~1" (the actual value used
+# by validate-agent-content.yml); '..' is excluded separately since base is
+# always fused with a literal "..HEAD" suffix below.
+REF_PATTERN = re.compile(r"[A-Za-z0-9][A-Za-z0-9._/^~-]*")
+
+
+def _validate_ref(ref: str) -> None:
+    if not ref or not REF_PATTERN.fullmatch(ref) or ".." in ref:
+        raise RuntimeError(f"Invalid --base ref: {ref!r}")
+
+
 def get_changed_files(base: str | None = None) -> list[Path]:
     """Get changed Markdown paths, including deletions."""
     command = ["git", "diff", "--name-only", "--diff-filter=ACMRD"]
     if base is None:
         command.insert(2, "--cached")
     else:
+        _validate_ref(base)
         command.append(f"{base}..HEAD")
     try:
         result = subprocess.run(
