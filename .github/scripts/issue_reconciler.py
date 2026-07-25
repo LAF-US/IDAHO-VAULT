@@ -22,7 +22,7 @@ def gh(*args: str, check: bool = True) -> subprocess.CompletedProcess[str]:
     return run(["gh", *args], check=check)
 
 
-def gh_json(*args: str) -> list[dict] | dict | None:
+def gh_json(*args: str) -> list[dict] | dict:
     result = gh(*args)
     try:
         return json.loads(result.stdout)
