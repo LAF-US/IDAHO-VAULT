@@ -33,13 +33,17 @@ def run_syntax_checks() -> bool:
 
 
 def run_unittests(python_executable: str = sys.executable) -> int:
-    result = subprocess.run(
-        [python_executable, "-m", "unittest", UNITTEST_TARGET, "-v"],
-        cwd=REPO_ROOT,
-        capture_output=True,
-        text=True,
-        timeout=300,
-    )
+    try:
+        result = subprocess.run(
+            [python_executable, "-m", "unittest", UNITTEST_TARGET, "-v"],
+            cwd=REPO_ROOT,
+            capture_output=True,
+            text=True,
+            timeout=300,
+        )
+    except subprocess.TimeoutExpired:
+        print("ERROR: unittest run timed out after 300s")
+        return 1
     print(result.stdout)
     if result.stderr:
         print(result.stderr)
