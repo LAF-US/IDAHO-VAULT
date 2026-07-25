@@ -6,7 +6,6 @@ from __future__ import annotations
 import argparse
 from dataclasses import dataclass
 import os
-import re
 import shutil
 import subprocess
 import sys
@@ -98,10 +97,7 @@ def _download_repo_zip(owner: str, repo: str, ref: str, dest_dir: str) -> str:
 
 
 def _run_git(args: list[str]) -> None:
-    try:
-        result = subprocess.run(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, timeout=60, check=False)
-    except subprocess.TimeoutExpired as exc:
-        raise InstallError(f"Git command timed out: {' '.join(args)}") from exc
+    result = subprocess.run(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
     if result.returncode != 0:
         raise InstallError(result.stderr.strip() or "Git command failed.")
 
@@ -121,32 +117,6 @@ def _validate_relative_path(path: str) -> None:
         raise InstallError("Skill path must be a relative path inside the repo.")
 
 
-# Allowlist for git ref/branch names: alphanumerics plus the characters
-# git itself permits in a ref component, anchored so a leading '-' (which
-# git could interpret as an option instead of a positional ref/branch name -
-# argument injection) can never match.
-REF_PATTERN = re.compile(r"[A-Za-z0-9][A-Za-z0-9._/-]*")
-
-
-def _validate_ref(ref: str) -> None:
-    if not ref or not REF_PATTERN.fullmatch(ref) or ".." in ref:
-        raise InstallError(f"Invalid ref: {ref!r}")
-
-
-# Allowlist for the owner/repo path segments that become part of the
-# `git clone`/SSH repo URL. Same argument-injection shape as REF_PATTERN: a
-# leading '-' could turn `owner` or `repo` into a git option instead of part
-# of a positional URL (e.g. an owner of "--upload-pack=<cmd>" makes git run
-# an arbitrary program during clone) — anchored so that can never match.
-OWNER_REPO_PATTERN = re.compile(r"[A-Za-z0-9][A-Za-z0-9._-]*")
-
-
-def _validate_owner_repo(owner: str, repo: str) -> None:
-    for label, value in (("owner", owner), ("repo", repo)):
-        if not value or not OWNER_REPO_PATTERN.fullmatch(value) or ".." in value:
-            raise InstallError(f"Invalid {label}: {value!r}")
-
-
 def _validate_skill_name(name: str) -> None:
     altsep = os.path.altsep
     if not name or os.path.sep in name or (altsep and altsep in name):
@@ -156,10 +126,6 @@ def _validate_skill_name(name: str) -> None:
 
 
 def _git_sparse_checkout(repo_url: str, ref: str, paths: list[str], dest_dir: str) -> str:
-    # Re-validate immediately before use, not just in main(): this is the
-    # function that actually builds the git command line, so it must not
-    # depend on every caller having validated first.
-    _validate_ref(ref)
     repo_dir = os.path.join(dest_dir, "repo")
     clone_cmd = [
         "git",
@@ -190,7 +156,7 @@ def _git_sparse_checkout(repo_url: str, ref: str, paths: list[str], dest_dir: st
                 repo_dir,
             ]
         )
-    _run_git(["git", "-C", repo_dir, "sparse-checkout", "set", "--", *paths])
+    _run_git(["git", "-C", repo_dir, "sparse-checkout", "set", *paths])
     _run_git(["git", "-C", repo_dir, "checkout", ref])
     return repo_dir
 
@@ -211,15 +177,10 @@ def _copy_skill(src: str, dest_dir: str) -> None:
 
 
 def _build_repo_url(owner: str, repo: str) -> str:
-    # Re-validate immediately before use: owner/repo become part of the
-    # positional URL git receives, so this function must not depend on
-    # every caller having validated first.
-    _validate_owner_repo(owner, repo)
     return f"https://github.com/{owner}/{repo}.git"
 
 
 def _build_repo_ssh(owner: str, repo: str) -> str:
-    _validate_owner_repo(owner, repo)
     return f"git@github.com:{owner}/{repo}.git"
 
 
@@ -310,8 +271,6 @@ def main(argv: list[str]) -> int:
     try:
         source = _resolve_source(args)
         source.ref = source.ref or args.ref
-        _validate_ref(source.ref)
-        _validate_owner_repo(source.owner, source.repo)
         if not source.paths:
             raise InstallError("No skill paths provided.")
         for path in source.paths:
