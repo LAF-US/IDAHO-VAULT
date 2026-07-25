@@ -40,7 +40,7 @@ def line_has_interactive_marker(lines: list[str], lineno: int) -> bool:
     )
 
 
-def missing_subprocess_timeout_findings(path: Path, tree: ast.AST, lines: list[str]) -> list[str]:
+def missing_subprocess_timeout_findings(_path: Path, tree: ast.AST, lines: list[str]) -> list[str]:
     findings: list[str] = []
     for node in ast.walk(tree):
         if not isinstance(node, ast.Call):
@@ -102,14 +102,17 @@ def python_file_findings(path: Path) -> list[str]:
 
 
 def tracked_python_files(root: Path) -> list[Path]:
-    result = subprocess.run(
-        ["git", "ls-files", "*.py"],
-        cwd=root,
-        check=False,
-        capture_output=True,
-        text=True,
-        timeout=30,
-    )
+    try:
+        result = subprocess.run(
+            ["git", "ls-files", "*.py"],
+            cwd=root,
+            check=False,
+            capture_output=True,
+            text=True,
+            timeout=30,
+        )
+    except subprocess.TimeoutExpired as exc:
+        raise RuntimeError(f"git ls-files timed out after 30s in {root}") from exc
     if result.returncode != 0:
         raise RuntimeError(result.stderr.strip() or "git ls-files failed")
     return [
