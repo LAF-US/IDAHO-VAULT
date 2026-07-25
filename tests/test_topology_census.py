@@ -25,6 +25,7 @@ topology_census = _load_topology_census_module()
 class TopologyCensusTest(unittest.TestCase):
     def setUp(self) -> None:
         self.tempdir = tempfile.TemporaryDirectory()
+        self.addCleanup(self.tempdir.cleanup)
         self.root = Path(self.tempdir.name) / "vault"
         self.root.mkdir(parents=True, exist_ok=True)
         self.output_dir = self.root / "!"
@@ -44,9 +45,6 @@ class TopologyCensusTest(unittest.TestCase):
             timeout=10,
         )
         self._write_fixture()
-
-    def tearDown(self) -> None:
-        self.tempdir.cleanup()
 
     def _write(self, relpath: str, content: str) -> None:
         path = self.root / Path(relpath)
