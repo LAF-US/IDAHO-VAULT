@@ -91,12 +91,15 @@ def get_changed_files(base: str | None = None) -> list[Path]:
         command.insert(2, "--cached")
     else:
         command.append(f"{base}..HEAD")
-    result = subprocess.run(
-        command,
-        capture_output=True,
-        text=True,
-        timeout=30,
-    )
+    try:
+        result = subprocess.run(
+            command,
+            capture_output=True,
+            text=True,
+            timeout=30,
+        )
+    except subprocess.TimeoutExpired as exc:
+        raise RuntimeError("git diff timed out after 30s") from exc
     if result.returncode != 0:
         raise RuntimeError(result.stderr.strip() or "git diff failed")
     return [Path(f) for f in result.stdout.strip().splitlines() if f.endswith(".md")]
@@ -239,7 +242,11 @@ def main() -> int:
     parser.add_argument("--base", help="Validate the committed diff from BASE through HEAD instead of staged files")
     args = parser.parse_args()
 
-    staged = get_changed_files(args.base)
+    try:
+        staged = get_changed_files(args.base)
+    except RuntimeError as exc:
+        print(f"validate_content: {exc}", file=sys.stderr)
+        return 1
     if not staged:
         print("validate_content: No staged markdown files to check.")
         return 0
