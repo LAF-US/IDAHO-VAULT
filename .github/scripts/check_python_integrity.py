@@ -76,29 +76,41 @@ GATED_SUBPROCESS_CALLABLES = frozenset(
 )
 
 
+def _aliased_import_findings(node: ast.Import) -> list[str]:
+    findings: list[str] = []
+    for alias in node.names:
+        if alias.name == "subprocess" and alias.asname:
+            findings.append(
+                f"aliased subprocess import ('import subprocess as {alias.asname}') "
+                f"on line {node.lineno} defeats the timeout gate; use plain 'import subprocess'"
+            )
+    return findings
+
+
+def _import_from_findings(node: ast.ImportFrom) -> list[str]:
+    findings: list[str] = []
+    for alias in node.names:
+        if alias.name == "*":
+            findings.append(
+                f"'from subprocess import *' on line {node.lineno} exposes gated "
+                "callables as unqualified names, defeating the timeout gate; use "
+                "plain 'import subprocess'"
+            )
+        elif alias.name in GATED_SUBPROCESS_CALLABLES:
+            findings.append(
+                f"'from subprocess import {alias.name}' on line {node.lineno} "
+                f"defeats the timeout gate; call it as subprocess.{alias.name}"
+            )
+    return findings
+
+
 def unsafe_subprocess_import_findings(tree: ast.AST) -> list[str]:
     findings: list[str] = []
     for node in ast.walk(tree):
         if isinstance(node, ast.Import):
-            for alias in node.names:
-                if alias.name == "subprocess" and alias.asname:
-                    findings.append(
-                        f"aliased subprocess import ('import subprocess as {alias.asname}') "
-                        f"on line {node.lineno} defeats the timeout gate; use plain 'import subprocess'"
-                    )
+            findings.extend(_aliased_import_findings(node))
         elif isinstance(node, ast.ImportFrom) and node.module == "subprocess":
-            for alias in node.names:
-                if alias.name == "*":
-                    findings.append(
-                        f"'from subprocess import *' on line {node.lineno} exposes gated "
-                        "callables as unqualified names, defeating the timeout gate; use "
-                        "plain 'import subprocess'"
-                    )
-                elif alias.name in GATED_SUBPROCESS_CALLABLES:
-                    findings.append(
-                        f"'from subprocess import {alias.name}' on line {node.lineno} "
-                        f"defeats the timeout gate; call it as subprocess.{alias.name}"
-                    )
+            findings.extend(_import_from_findings(node))
     return findings
 
 
