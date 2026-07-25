@@ -84,6 +84,18 @@ def test_from_import_of_gated_callable_is_flagged(tmp_path: Path) -> None:
     assert any("'from subprocess import run'" in finding for finding in findings)
 
 
+def test_wildcard_subprocess_import_is_flagged(tmp_path: Path) -> None:
+    path = tmp_path / "wildcard_import.py"
+    path.write_text(
+        "from subprocess import *\nrun(['git', 'status'], timeout=30)\n",
+        encoding="utf-8",
+    )
+
+    findings = checker.python_file_findings(path)
+
+    assert any("'from subprocess import *'" in finding for finding in findings)
+
+
 def test_from_import_of_non_spawning_names_is_allowed(tmp_path: Path) -> None:
     path = tmp_path / "types_only.py"
     path.write_text(
@@ -142,5 +154,16 @@ def test_paths_from_stdin_gates_only_changed_files(tmp_path: Path, monkeypatch) 
     assert exit_code == 0
 
     monkeypatch.setattr(sys, "stdin", io.StringIO("violator.py\n"))
+    exit_code = checker.main(["--root", str(tmp_path), "--paths-from-stdin"])
+    assert exit_code == 1
+
+
+def test_paths_from_stdin_strips_incidental_whitespace(tmp_path: Path, monkeypatch) -> None:
+    """Trailing padding on a stdin line (not removed by splitlines(), which
+    only strips line terminators) must not desync it from the exact posix
+    path string, or the gate silently stops matching that file."""
+    _init_git_repo_with_violation(tmp_path)
+
+    monkeypatch.setattr(sys, "stdin", io.StringIO("violator.py \n"))
     exit_code = checker.main(["--root", str(tmp_path), "--paths-from-stdin"])
     assert exit_code == 1

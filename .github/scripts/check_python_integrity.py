@@ -88,7 +88,13 @@ def unsafe_subprocess_import_findings(tree: ast.AST) -> list[str]:
                     )
         elif isinstance(node, ast.ImportFrom) and node.module == "subprocess":
             for alias in node.names:
-                if alias.name in GATED_SUBPROCESS_CALLABLES:
+                if alias.name == "*":
+                    findings.append(
+                        f"'from subprocess import *' on line {node.lineno} exposes gated "
+                        "callables as unqualified names, defeating the timeout gate; use "
+                        "plain 'import subprocess'"
+                    )
+                elif alias.name in GATED_SUBPROCESS_CALLABLES:
                     findings.append(
                         f"'from subprocess import {alias.name}' on line {node.lineno} "
                         f"defeats the timeout gate; call it as subprocess.{alias.name}"
@@ -186,7 +192,7 @@ def main(argv: list[str] | None = None) -> int:
     root = args.root.resolve()
 
     changed = (
-        {line for line in sys.stdin.read().splitlines() if line}
+        {stripped for line in sys.stdin.read().splitlines() if (stripped := line.strip())}
         if args.paths_from_stdin
         else None
     )
