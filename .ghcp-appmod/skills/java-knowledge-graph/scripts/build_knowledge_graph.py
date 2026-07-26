@@ -62,7 +62,7 @@ def check_graphviz() -> bool:
     try:
         subprocess.run(['dot', '-V'], capture_output=True, check=True, timeout=30)
         return True
-    except (FileNotFoundError, subprocess.CalledProcessError):
+    except (FileNotFoundError, subprocess.CalledProcessError, subprocess.TimeoutExpired):
         return False
 
 GRAPHVIZ_AVAILABLE = check_graphviz()
