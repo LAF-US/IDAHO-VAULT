@@ -34,6 +34,8 @@ def git_tracked_files() -> list[str]:
         raise RuntimeError("git ls-tree timed out after 30s") from exc
     except subprocess.CalledProcessError as exc:
         raise RuntimeError((exc.stderr or "").strip() or "git ls-tree failed") from exc
+    except OSError as exc:
+        raise RuntimeError(f"git ls-tree could not run: {exc}") from exc
     return [line for line in result.stdout.splitlines() if line]
 
 
