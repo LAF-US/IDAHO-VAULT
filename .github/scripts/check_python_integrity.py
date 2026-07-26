@@ -117,7 +117,11 @@ def unsafe_subprocess_import_findings(tree: ast.AST) -> list[str]:
 
 def python_file_findings(path: Path) -> list[str]:
     findings: list[str] = []
-    text = path.read_text(encoding="utf-8", errors="replace")
+    try:
+        text = path.read_text(encoding="utf-8")
+    except UnicodeDecodeError as exc:
+        findings.append(f"not valid UTF-8: {exc}")
+        return findings
     if PURGE_MARKER in text:
         findings.append("contains purge marker")
     try:
