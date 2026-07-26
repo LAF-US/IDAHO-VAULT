@@ -34,6 +34,16 @@ def test_rejects_purge_markers_and_syntax_errors(tmp_path: Path) -> None:
     assert any("syntax error" in finding for finding in findings)
 
 
+def test_invalid_utf8_is_flagged_not_silently_replaced(tmp_path: Path) -> None:
+    path = tmp_path / "bad_encoding.py"
+    # A lone continuation byte (0x80) is never valid UTF-8 on its own.
+    path.write_bytes(b"VALUE = 1\n\x80\n")
+
+    findings = checker.python_file_findings(path)
+
+    assert any("not valid UTF-8" in finding for finding in findings)
+
+
 def test_active_subprocess_requires_timeout(tmp_path: Path) -> None:
     path = tmp_path / "runner.py"
     path.write_text(
