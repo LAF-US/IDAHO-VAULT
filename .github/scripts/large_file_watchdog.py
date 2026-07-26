@@ -27,9 +27,17 @@ def main() -> int:
     parser.add_argument("--top-n", type=int, default=20)
     args = parser.parse_args()
 
-    result = subprocess.run(
-        ["git", "ls-files", "-z"], check=True, capture_output=True, timeout=30
-    )
+    try:
+        result = subprocess.run(
+            ["git", "ls-files", "-z"], check=True, capture_output=True, timeout=30
+        )
+    except subprocess.TimeoutExpired:
+        print("large_file_watchdog: git ls-files timed out after 30s", file=sys.stderr)
+        return 1
+    except subprocess.CalledProcessError as exc:
+        message = (exc.stderr or b"").decode("utf-8", errors="replace").strip()
+        print(f"large_file_watchdog: {message or 'git ls-files failed'}", file=sys.stderr)
+        return 1
     tracked = [Path(p.decode("utf-8")) for p in result.stdout.split(b"\0") if p]
 
     offenders: list[tuple[int, Path]] = []

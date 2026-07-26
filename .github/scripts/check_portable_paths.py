@@ -22,13 +22,18 @@ MAX_PORTABLE_PATH = 218
 
 def git_tracked_files() -> list[str]:
     """Return every path tracked at HEAD, with non-ASCII names left unquoted."""
-    result = subprocess.run(
-        ["git", "-c", "core.quotePath=false", "ls-tree", "-r", "HEAD", "--name-only"],
-        check=True,
-        capture_output=True,
-        text=True,
-        timeout=30,
-    )
+    try:
+        result = subprocess.run(
+            ["git", "-c", "core.quotePath=false", "ls-tree", "-r", "HEAD", "--name-only"],
+            check=True,
+            capture_output=True,
+            text=True,
+            timeout=30,
+        )
+    except subprocess.TimeoutExpired as exc:
+        raise RuntimeError("git ls-tree timed out after 30s") from exc
+    except subprocess.CalledProcessError as exc:
+        raise RuntimeError((exc.stderr or "").strip() or "git ls-tree failed") from exc
     return [line for line in result.stdout.splitlines() if line]
 
 
@@ -80,7 +85,11 @@ def main() -> int:
     args = parser.parse_args()
 
     changed = [line for line in sys.stdin.read().splitlines() if line] if args.paths_from_stdin else []
-    tracked = git_tracked_files()
+    try:
+        tracked = git_tracked_files()
+    except RuntimeError as exc:
+        print(f"check_portable_paths: {exc}", file=sys.stderr)
+        return 1
     collisions = case_collisions(tracked)
     collision_members = {member for members in collisions.values() for member in members}
 
