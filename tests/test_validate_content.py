@@ -101,7 +101,8 @@ class ValidateContentTest(unittest.TestCase):
                 "GOVERNMENTS/IDAHO - LEGISLATIVE/BILLS/example.md",
                 "scripts/openrouter_runtime.py",  # non-markdown must be filtered out
                 "",  # blank line must be ignored
-                "!/wayback-audit-2026-04-22.md",
+                "  ",  # whitespace-only line must be ignored
+                "!/wayback-audit-2026-04-22.md ",  # trailing whitespace must be stripped
             ]
         )
         with patch("sys.stdin", io.StringIO(stdin_text)):
