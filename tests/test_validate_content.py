@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import importlib.util
+import io
 import unittest
 from pathlib import Path
 from unittest.mock import patch
@@ -94,14 +95,25 @@ class ValidateContentTest(unittest.TestCase):
 
         self.assertIn("could not run", str(exc.exception))
 
-    def test_has_parent_commit_fails_closed_when_git_missing(self) -> None:
-        with patch.object(
-            validate_content.subprocess, "run", side_effect=FileNotFoundError("git")
-        ):
-            with self.assertRaises(RuntimeError) as exc:
-                validate_content._has_parent_commit()
+    def test_get_changed_files_reads_markdown_paths_from_stdin(self) -> None:
+        stdin_text = "\n".join(
+            [
+                "GOVERNMENTS/IDAHO - LEGISLATIVE/BILLS/example.md",
+                "scripts/openrouter_runtime.py",  # non-markdown must be filtered out
+                "",  # blank line must be ignored
+                "!/wayback-audit-2026-04-22.md",
+            ]
+        )
+        with patch("sys.stdin", io.StringIO(stdin_text)):
+            changed = validate_content.get_changed_files(paths_from_stdin=True)
 
-        self.assertIn("could not run", str(exc.exception))
+        self.assertEqual(
+            changed,
+            [
+                Path("GOVERNMENTS/IDAHO - LEGISLATIVE/BILLS/example.md"),
+                Path("!/wayback-audit-2026-04-22.md"),
+            ],
+        )
 
 
 if __name__ == "__main__":
