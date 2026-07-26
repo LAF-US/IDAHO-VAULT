@@ -53,13 +53,16 @@ def ensure_op_available() -> None:
 
 
 def ensure_op_signed_in() -> None:
-    result = subprocess.run(
-        ["op", "whoami"],
-        stdout=subprocess.DEVNULL,
-        stderr=subprocess.DEVNULL,
-        check=False,
-        timeout=15,
-    )
+    try:
+        result = subprocess.run(
+            ["op", "whoami"],
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL,
+            check=False,
+            timeout=15,
+        )
+    except subprocess.TimeoutExpired as exc:
+        raise SystemExit("1Password CLI 'op whoami' timed out after 15s.") from exc
     if result.returncode != 0:
         raise SystemExit(
             "1Password CLI is not signed in. Run 'op signin' or unlock desktop integration first."
@@ -78,7 +81,12 @@ def ensure_env_file(agent: str) -> Path:
         needs_refresh = any(f"{key}=" not in content for key in required_keys)
 
     if needs_refresh:
-        subprocess.run([sys.executable, str(RESOLVER)], check=True, timeout=60)
+        try:
+            subprocess.run([sys.executable, str(RESOLVER)], check=True, timeout=60)
+        except subprocess.TimeoutExpired as exc:
+            raise SystemExit(f"{RESOLVER.name} timed out after 60s.") from exc
+        except subprocess.CalledProcessError as exc:
+            raise SystemExit(f"{RESOLVER.name} failed (exit {exc.returncode}).") from exc
 
     return ENV_FILE
 
