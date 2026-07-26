@@ -46,6 +46,14 @@ type = "crew"
 line-length = 100
 target-version = "py310"
 
+[tool.bandit.assert_used]
+# B101 fires on every bare `assert` -- the correct, idiomatic way to write
+# pytest-style assertions -- not a security concern (Bandit's own documented
+# recommendation is to skip this check for test files specifically, rather
+# than exclude test directories wholesale, so other checks like hardcoded
+# secrets or unsafe eval still run against test code).
+skips = ["*/tests/*", "*/test_*.py"]
+
 [tool.pytest.ini_options]
 # Make the CI scripts dir an import root so test modules (which load the scripts
 # by file path) can resolve the shared lib (gh_cli, etc.). Production runs the
