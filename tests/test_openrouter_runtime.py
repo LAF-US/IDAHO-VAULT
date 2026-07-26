@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import importlib.util
+import subprocess
 import unittest
 from pathlib import Path
 from unittest.mock import patch
@@ -60,6 +61,31 @@ class OpenRouterRuntimeTest(unittest.TestCase):
                 openrouter_runtime.exec_agent("codex", "codex", ["--help"])
 
         self.assertEqual(str(exc.exception), "Could not find 'codex' on PATH.")
+
+    def test_op_signed_in_check_fails_closed_on_timeout(self) -> None:
+        with patch.object(
+            openrouter_runtime.subprocess,
+            "run",
+            side_effect=subprocess.TimeoutExpired(cmd="op whoami", timeout=15),
+        ):
+            with self.assertRaises(SystemExit) as exc:
+                openrouter_runtime.ensure_op_signed_in()
+
+        self.assertIn("timed out", str(exc.exception))
+
+    def test_env_file_refresh_fails_closed_on_timeout(self) -> None:
+        with (
+            patch.object(openrouter_runtime.Path, "exists", return_value=False),
+            patch.object(
+                openrouter_runtime.subprocess,
+                "run",
+                side_effect=subprocess.TimeoutExpired(cmd="resolver", timeout=60),
+            ),
+        ):
+            with self.assertRaises(SystemExit) as exc:
+                openrouter_runtime.ensure_env_file("claude")
+
+        self.assertIn("timed out", str(exc.exception))
 
 
 if __name__ == "__main__":
