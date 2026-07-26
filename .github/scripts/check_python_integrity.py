@@ -122,6 +122,9 @@ def python_file_findings(path: Path) -> list[str]:
     except UnicodeDecodeError as exc:
         findings.append(f"not valid UTF-8: {exc}")
         return findings
+    except OSError as exc:
+        findings.append(f"could not read file: {exc}")
+        return findings
     if PURGE_MARKER in text:
         findings.append("contains purge marker")
     try:
