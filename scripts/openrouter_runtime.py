@@ -69,6 +69,19 @@ def ensure_op_signed_in() -> None:
         )
 
 
+def _env_file_keys_with_values(content: str) -> set[str]:
+    """Parse KEY=value lines and return the keys whose value is non-empty."""
+    keys = set()
+    for line in content.splitlines():
+        line = line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, _, value = line.partition("=")
+        if value.strip():
+            keys.add(key.strip())
+    return keys
+
+
 def ensure_env_file(agent: str) -> Path:
     required_keys = {
         "codex": ["OPENAI_API_KEY", "OPENAI_BASE_URL"],
@@ -78,7 +91,8 @@ def ensure_env_file(agent: str) -> Path:
     needs_refresh = not ENV_FILE.exists()
     if not needs_refresh:
         content = ENV_FILE.read_text(encoding="utf-8")
-        needs_refresh = any(f"{key}=" not in content for key in required_keys)
+        populated = _env_file_keys_with_values(content)
+        needs_refresh = any(key not in populated for key in required_keys)
 
     if needs_refresh:
         try:
