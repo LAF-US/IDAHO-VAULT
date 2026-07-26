@@ -131,6 +131,7 @@ def main(argv: list[str] | None = None) -> int:
                 capture_output=True,
                 text=True,
                 timeout=30,
+                check=False,
             )
         except subprocess.TimeoutExpired:
             print("git add timed out after 30s; files were moved but not staged")
