@@ -97,38 +97,21 @@ def _run_git(command: list[str]) -> str:
     return result.stdout
 
 
-def _has_parent_commit() -> bool:
-    try:
-        result = subprocess.run(
-            ["git", "rev-parse", "--verify", "-q", "HEAD^"],
-            capture_output=True, timeout=30, check=False,
-        )
-    except subprocess.TimeoutExpired as exc:
-        raise RuntimeError("git rev-parse timed out after 30s") from exc
-    except OSError as exc:
-        raise RuntimeError(f"git rev-parse could not run: {exc}") from exc
-    return result.returncode == 0
-
-
-def get_changed_files(against_parent: bool = False) -> list[Path]:
+def get_changed_files(paths_from_stdin: bool = False) -> list[Path]:
     """Get changed Markdown paths, including deletions.
 
-    No caller ever needs an arbitrary base ref — the only real use case
-    (validate-agent-content.yml) is "diff HEAD against its own parent" for a
-    single-commit push. Rather than accept a free-text ref and validate it,
-    this takes a boolean and hardcodes the literal, so no external string
-    ever reaches the git argv — there's no input class left to sanitize.
+    Two modes: staged (--cached, the default — local pre-commit usage), or
+    paths piped in over stdin, newline-delimited, already diffed by a trusted
+    caller. The latter mirrors check_portable_paths.py / check_python_integrity.py:
+    CI computes the diff itself against known-good SHAs (github.event.before /
+    github.sha, with a zero-SHA fallback for a branch's first-ever push) and
+    pipes the result in, so this script never needs an arbitrary ref string
+    and there is no free-text git argv to sanitize.
     """
-    if not against_parent:
-        command = ["git", "diff", "--name-only", "--diff-filter=ACMRD", "--cached"]
-    elif _has_parent_commit():
-        command = ["git", "diff", "--name-only", "--diff-filter=ACMRD", "HEAD^..HEAD"]
-    else:
-        # HEAD is a root commit -- there's no parent to diff against. List every
-        # path the commit introduces instead of hard-failing with "unknown
-        # revision"; that would incorrectly block a branch's first-ever commit.
-        command = ["git", "show", "--name-only", "--pretty=format:", "HEAD"]
-    output = _run_git(command)
+    if paths_from_stdin:
+        lines = [line for line in sys.stdin.read().splitlines() if line]
+        return [Path(f) for f in lines if f.endswith(".md")]
+    output = _run_git(["git", "diff", "--name-only", "--diff-filter=ACMRD", "--cached"])
     return [Path(f) for f in output.strip().splitlines() if f.endswith(".md")]
 
 
@@ -266,12 +249,13 @@ def main() -> int:
     parser = argparse.ArgumentParser(description="Validate staged content before commit")
     parser.add_argument("--scope", choices=["bills", "admin", "generated", "inbox", "all"], default="all",
                         help="Which scope to validate (restricts allowed directories)")
-    parser.add_argument("--against-parent", action="store_true",
-                        help="Validate HEAD's diff against its own parent instead of staged files")
+    parser.add_argument("--paths-from-stdin", action="store_true",
+                        help="Validate a newline-delimited list of paths read from stdin, "
+                             "already diffed by a trusted caller, instead of staged files")
     args = parser.parse_args()
 
     try:
-        staged = get_changed_files(args.against_parent)
+        staged = get_changed_files(args.paths_from_stdin)
     except RuntimeError as exc:
         print(f"validate_content: {exc}", file=sys.stderr)
         return 1
