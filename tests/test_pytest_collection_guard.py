@@ -63,6 +63,31 @@ class PytestCollectionGuardTest(unittest.TestCase):
 
         pluginmanager.unregister.assert_not_called()
 
+    def test_fails_fast_on_read_only_filesystem_generic_oserror(self) -> None:
+        """EROFS (read-only filesystem) raises plain OSError, not PermissionError —
+        the probe must not let that propagate as an unhandled traceback."""
+        conftest = load_root_conftest()
+        pluginmanager = unittest.mock.Mock()
+        pluginmanager.hasplugin.return_value = True
+        config = unittest.mock.Mock()
+        config.rootpath = ROOT
+        config.getini.return_value = ".pytest_cache"
+        config.pluginmanager = pluginmanager
+
+        with unittest.mock.patch.object(
+            conftest.Path,
+            "mkdir",
+            side_effect=OSError(30, "Read-only file system"),
+        ):
+            with self.assertRaisesRegex(
+                pytest.UsageError,
+                "Fix the directory permissions or explicitly run pytest with "
+                "'-p no:cacheprovider'",
+            ):
+                conftest.pytest_configure(config)
+
+        pluginmanager.unregister.assert_not_called()
+
     def test_keeps_cache_plugin_when_cache_parent_is_writable(self) -> None:
         conftest = load_root_conftest()
         pluginmanager = unittest.mock.Mock()
