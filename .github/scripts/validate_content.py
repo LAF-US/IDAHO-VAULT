@@ -90,6 +90,8 @@ def _run_git(command: list[str]) -> str:
         result = subprocess.run(command, capture_output=True, text=True, timeout=30, check=False)
     except subprocess.TimeoutExpired as exc:
         raise RuntimeError(f"git {command[1]} timed out after 30s") from exc
+    except OSError as exc:
+        raise RuntimeError(f"git {command[1]} could not run: {exc}") from exc
     if result.returncode != 0:
         raise RuntimeError(result.stderr.strip() or f"git {command[1]} failed")
     return result.stdout
@@ -103,6 +105,8 @@ def _has_parent_commit() -> bool:
         )
     except subprocess.TimeoutExpired as exc:
         raise RuntimeError("git rev-parse timed out after 30s") from exc
+    except OSError as exc:
+        raise RuntimeError(f"git rev-parse could not run: {exc}") from exc
     return result.returncode == 0
 
 
