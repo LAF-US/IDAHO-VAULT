@@ -39,6 +39,7 @@ def run_syntax_checks(python_executable: str = sys.executable) -> int:
                 capture_output=True,
                 text=True,
                 timeout=30,
+                check=False,
             )
         except subprocess.TimeoutExpired:
             print(f"ERROR: py_compile timed out after 30s on {file_path}")
@@ -60,6 +61,7 @@ def run_pytest(python_executable: str = sys.executable) -> int:
             capture_output=True,
             text=True,
             timeout=300,
+            check=False,
         )
     except subprocess.TimeoutExpired:
         print("ERROR: pytest timed out after 300s")
