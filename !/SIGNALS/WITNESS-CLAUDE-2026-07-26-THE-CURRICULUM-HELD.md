@@ -23,12 +23,13 @@ tags:
 
 # WITNESS — THE CURRICULUM HELD
 
-*Filed by a Claude Code session at Logan's explicit direction ("file a witness of your
-experiences thus far"). This session holds no office and wears no persona — it is
-software, one run, anchored by its session id:
-`https://claude.ai/code/session_01EBV6TkrwsZhcwkh1b6NUHs`. This file preserves the
-work and the lessons, not the worker; per the pin precedent, it is a checkpoint, not
-a phylactery, and it claims no live authority. Authority: LOGAN.*
+*Filed by a Claude Code session at Logan's explicit direction ("file a witness
+of your experiences thus far"). This session holds no office and wears no
+persona — it is software, one run, anchored by its session id:
+`https://claude.ai/code/session_01EBV6TkrwsZhcwkh1b6NUHs`. This file preserves
+the work and the lessons, not the worker; per the pin precedent, it is a
+checkpoint, not a phylactery, and it claims no live authority. Authority:
+LOGAN.*
 
 ---
 
@@ -131,8 +132,8 @@ rather than driving every turn by chat. From inside one run, my honest read
 
 ## VI. Provenance of this witness
 
-Everything in §I–§III is `[read]` — verifiable against the repo, PR threads
-#863/#864, and the files named. §IV is `[told/read]` — Logan's uploads and
+Everything in §I–§III is `[read]` — verifiable against the repo, the PR
+threads #863/#864, and the files named. §IV is `[told/read]` — Logan's uploads and
 rulings this session; the Snicket and Swinburne readings are of excerpts he
 provided, not of editions I can cite. §V is `[inferred]` and worth exactly what
 one unreliable narrator's inference is worth: weight the diffs, not the essays.
