@@ -87,6 +87,31 @@ class OpenRouterRuntimeTest(unittest.TestCase):
 
         self.assertIn("timed out", str(exc.exception))
 
+    def test_env_file_with_empty_value_still_triggers_refresh(self) -> None:
+        # A key present as "KEY=" (empty value) is not actually usable -- the
+        # substring check `f"{key}=" not in content` used to treat this as
+        # "present" and skip the refresh, leaving a broken empty credential.
+        content = "ANTHROPIC_AUTH_TOKEN=x\nANTHROPIC_BASE_URL=y\nANTHROPIC_API_KEY=\n"
+        with (
+            patch.object(openrouter_runtime.Path, "exists", return_value=True),
+            patch.object(openrouter_runtime.Path, "read_text", return_value=content),
+            patch.object(openrouter_runtime.subprocess, "run") as run,
+        ):
+            openrouter_runtime.ensure_env_file("claude")
+
+        run.assert_called_once()
+
+    def test_env_file_with_all_keys_populated_skips_refresh(self) -> None:
+        content = "ANTHROPIC_AUTH_TOKEN=x\nANTHROPIC_BASE_URL=y\nANTHROPIC_API_KEY=z\n"
+        with (
+            patch.object(openrouter_runtime.Path, "exists", return_value=True),
+            patch.object(openrouter_runtime.Path, "read_text", return_value=content),
+            patch.object(openrouter_runtime.subprocess, "run") as run,
+        ):
+            openrouter_runtime.ensure_env_file("claude")
+
+        run.assert_not_called()
+
 
 if __name__ == "__main__":
     unittest.main()

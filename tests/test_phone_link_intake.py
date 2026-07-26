@@ -81,6 +81,28 @@ class PhoneLinkIntakeTest(unittest.TestCase):
             self.assertEqual(len(collisions), 1)
             self.assertEqual(collisions[0].read_bytes(), b"new-photo")
 
+    def test_git_add_failure_does_not_crash_after_files_are_moved(self) -> None:
+        with tempfile.TemporaryDirectory(prefix="phone_link_source_") as source_dir, tempfile.TemporaryDirectory(
+            prefix="phone_link_vault_"
+        ) as vault_dir:
+            source = Path(source_dir)
+            vault_root = Path(vault_dir)
+            incoming = source / "voice-note.m4a"
+            incoming.write_bytes(b"audio-bytes")
+
+            with (
+                mock.patch.object(phone_link_intake, "get_vault_root", return_value=vault_root),
+                mock.patch.object(
+                    phone_link_intake.subprocess,
+                    "run",
+                    side_effect=FileNotFoundError("git"),
+                ),
+            ):
+                status = phone_link_intake.main(["--source", str(source), "--git-add"])
+
+            self.assertEqual(status, 0)
+            self.assertEqual((vault_root / "voice-note.m4a").read_bytes(), b"audio-bytes")
+
     def test_git_add_stages_only_ingested_files(self) -> None:
         with tempfile.TemporaryDirectory(prefix="phone_link_source_") as source_dir, tempfile.TemporaryDirectory(
             prefix="phone_link_vault_"
