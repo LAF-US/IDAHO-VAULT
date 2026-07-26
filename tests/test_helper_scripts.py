@@ -28,6 +28,9 @@ check_syntax = _load_module("check_syntax_test_module", "__check_syntax__.py")
 check_portable_paths = _load_module(
     "check_portable_paths_test_module", ".github/scripts/check_portable_paths.py"
 )
+large_file_watchdog = _load_module(
+    "large_file_watchdog_test_module", ".github/scripts/large_file_watchdog.py"
+)
 jupytext_sync_paired = _load_module(
     "jupytext_sync_paired_test_module", ".github/scripts/jupytext_sync_paired.py"
 )
@@ -103,6 +106,35 @@ class HelperScriptsTest(unittest.TestCase):
 
     def test_portable_paths_clean_path_has_no_findings(self) -> None:
         self.assertEqual(check_portable_paths.path_violations("notes/clean-name.md"), [])
+
+    def test_portable_paths_git_tracked_files_fails_closed_when_git_missing(self) -> None:
+        with patch.object(
+            check_portable_paths.subprocess,
+            "run",
+            side_effect=FileNotFoundError("git"),
+        ):
+            with self.assertRaises(RuntimeError) as exc:
+                check_portable_paths.git_tracked_files()
+
+        self.assertIn("could not run", str(exc.exception))
+
+    def test_large_file_watchdog_fails_closed_when_git_missing(self) -> None:
+        with (
+            patch.object(
+                large_file_watchdog.subprocess,
+                "run",
+                side_effect=FileNotFoundError("git"),
+            ),
+            patch.object(
+                sys, "argv", ["large_file_watchdog.py", "--report-path", "/tmp/report.md"]
+            ),
+            redirect_stdout(io.StringIO()),
+            redirect_stderr(io.StringIO()) as captured_stderr,
+        ):
+            status = large_file_watchdog.main()
+
+        self.assertEqual(status, 1)
+        self.assertIn("could not run", captured_stderr.getvalue())
 
 
 class JupytextSyncPairedTest(unittest.TestCase):

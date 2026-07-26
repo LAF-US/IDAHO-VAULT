@@ -3,6 +3,7 @@ from __future__ import annotations
 import importlib.util
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 
 def _load_validate_content_module():
@@ -83,6 +84,24 @@ class ValidateContentTest(unittest.TestCase):
 
     def test_non_governed_deletion_is_not_blocked(self) -> None:
         self.assertEqual(validate_content.validate_deleted_path(Path("draft.md"), "all"), [])
+
+    def test_run_git_fails_closed_when_git_missing(self) -> None:
+        with patch.object(
+            validate_content.subprocess, "run", side_effect=FileNotFoundError("git")
+        ):
+            with self.assertRaises(RuntimeError) as exc:
+                validate_content._run_git(["git", "diff"])
+
+        self.assertIn("could not run", str(exc.exception))
+
+    def test_has_parent_commit_fails_closed_when_git_missing(self) -> None:
+        with patch.object(
+            validate_content.subprocess, "run", side_effect=FileNotFoundError("git")
+        ):
+            with self.assertRaises(RuntimeError) as exc:
+                validate_content._has_parent_commit()
+
+        self.assertIn("could not run", str(exc.exception))
 
 
 if __name__ == "__main__":
