@@ -40,6 +40,7 @@ def run_unittests(python_executable: str = sys.executable) -> int:
             capture_output=True,
             text=True,
             timeout=300,
+            check=False,
         )
     except subprocess.TimeoutExpired:
         print("ERROR: unittest run timed out after 300s")
