@@ -84,27 +84,21 @@ PROTECTED_LIVE_FILES = {
 
 # ── Helpers ──────────────────────────────────────────────────────────────────
 
-# Anchored so a leading '-' (which git could parse as an option instead of a
-# positional ref — argument injection) can never match. '^' and '~' are
-# allowed for relative refs like "HEAD^" or "HEAD~1" (the actual value used
-# by validate-agent-content.yml); '..' is excluded separately since base is
-# always fused with a literal "..HEAD" suffix below.
-REF_PATTERN = re.compile(r"[A-Za-z0-9][A-Za-z0-9._/^~-]*")
 
+def get_changed_files(against_parent: bool = False) -> list[Path]:
+    """Get changed Markdown paths, including deletions.
 
-def _validate_ref(ref: str) -> None:
-    if not ref or not REF_PATTERN.fullmatch(ref) or ".." in ref:
-        raise RuntimeError(f"Invalid --base ref: {ref!r}")
-
-
-def get_changed_files(base: str | None = None) -> list[Path]:
-    """Get changed Markdown paths, including deletions."""
+    No caller ever needs an arbitrary base ref — the only real use case
+    (validate-agent-content.yml) is "diff HEAD against its own parent" for a
+    single-commit push. Rather than accept a free-text ref and validate it,
+    this takes a boolean and hardcodes the literal, so no external string
+    ever reaches the git argv — there's no input class left to sanitize.
+    """
     command = ["git", "diff", "--name-only", "--diff-filter=ACMRD"]
-    if base is None:
-        command.insert(2, "--cached")
+    if against_parent:
+        command.append("HEAD^..HEAD")
     else:
-        _validate_ref(base)
-        command.append(f"{base}..HEAD")
+        command.insert(2, "--cached")
     try:
         result = subprocess.run(
             command,
@@ -253,11 +247,12 @@ def main() -> int:
     parser = argparse.ArgumentParser(description="Validate staged content before commit")
     parser.add_argument("--scope", choices=["bills", "admin", "generated", "inbox", "all"], default="all",
                         help="Which scope to validate (restricts allowed directories)")
-    parser.add_argument("--base", help="Validate the committed diff from BASE through HEAD instead of staged files")
+    parser.add_argument("--against-parent", action="store_true",
+                        help="Validate HEAD's diff against its own parent instead of staged files")
     args = parser.parse_args()
 
     try:
-        staged = get_changed_files(args.base)
+        staged = get_changed_files(args.against_parent)
     except RuntimeError as exc:
         print(f"validate_content: {exc}", file=sys.stderr)
         return 1
