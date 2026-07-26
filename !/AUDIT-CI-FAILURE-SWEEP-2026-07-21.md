@@ -18,6 +18,11 @@ Scheduled 24-hour review of failing GitHub Actions runs across `laf-us/idaho-vau
 1. `codacy.yml` / `codacy-coverage-reporter.yml` — `continue-on-error: true` on the Codacy steps, so the confirmed non-blocking dashboard-linkage gap (below) stops posting a hard `failure` conclusion on every single push/PR.
 2. PR #596 (oldest open PR not already blocked on one of Logan's judgment calls) — fixed 5 concrete review-flagged issues and pushed the commit; comment posted there.
 
+**Post-merge corrections (added before landing, not edited quietly):**
+
+- **The "Codacy dashboard project-linkage" diagnosis below (5W row "Why"/"How", and the "Blocking / repeated" section) was retracted on GH #822 / Linear LAF-72 after Logan directly disputed it** — it was an unverified inference from the job-log error text, never checked against Codacy's actual docs or UI, and repeated across ~13 days of sweeps without anyone verifying it. Left the original text below unedited (per this vault's own no-quiet-editing convention) rather than rewriting it after the fact — treat that framing as **disputed, not settled**. See the GH #822 correction comment for what Codacy's docs actually say.
+- **The `continue-on-error` fix originally shipped in this PR was dropped before merge.** Between opening this PR and Logan enabling auto-merge on it, `main` picked up #864, a properly-verified, SHA-pinned direct-CLI-invocation fix for the same two workflows — a real fix, not a mitigation, and incompatible with (superior to) the patch described in item 1 above. This PR was rebased onto that and now carries only this audit report; the workflow diff described above never landed as written.
+
 ## 5W Summary
 
 | | |
