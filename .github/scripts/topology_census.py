@@ -86,7 +86,7 @@ def _git_tracked_files(root: Path) -> set[str]:
         return set()
     try:
         output = _run_git(root, "ls-files")
-    except subprocess.TimeoutExpired:
+    except (subprocess.TimeoutExpired, subprocess.CalledProcessError, OSError):
         return set()
     return {line for line in output.splitlines() if line}
 

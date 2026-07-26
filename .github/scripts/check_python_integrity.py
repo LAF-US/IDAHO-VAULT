@@ -237,7 +237,11 @@ def main(argv: list[str] | None = None) -> int:
 
     changed = _changed_paths_from_stdin() if args.paths_from_stdin else None
 
-    all_files = tracked_python_files(root)
+    try:
+        all_files = tracked_python_files(root)
+    except RuntimeError as exc:
+        print(f"Python integrity check: {exc}", file=sys.stderr)
+        return 1
     findings = collect_findings(root, all_files)
 
     gate_findings, tree_findings = _partition_findings(findings, root, changed)
