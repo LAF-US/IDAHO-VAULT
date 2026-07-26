@@ -109,7 +109,7 @@ def get_changed_files(paths_from_stdin: bool = False) -> list[Path]:
     and there is no free-text git argv to sanitize.
     """
     if paths_from_stdin:
-        lines = [line for line in sys.stdin.read().splitlines() if line]
+        lines = [stripped for line in sys.stdin.read().splitlines() if (stripped := line.strip())]
         return [Path(f) for f in lines if f.endswith(".md")]
     output = _run_git(["git", "diff", "--name-only", "--diff-filter=ACMRD", "--cached"])
     return [Path(f) for f in output.strip().splitlines() if f.endswith(".md")]
