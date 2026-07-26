@@ -85,6 +85,27 @@ PROTECTED_LIVE_FILES = {
 # ── Helpers ──────────────────────────────────────────────────────────────────
 
 
+def _run_git(command: list[str]) -> str:
+    try:
+        result = subprocess.run(command, capture_output=True, text=True, timeout=30, check=False)
+    except subprocess.TimeoutExpired as exc:
+        raise RuntimeError(f"git {command[1]} timed out after 30s") from exc
+    if result.returncode != 0:
+        raise RuntimeError(result.stderr.strip() or f"git {command[1]} failed")
+    return result.stdout
+
+
+def _has_parent_commit() -> bool:
+    try:
+        result = subprocess.run(
+            ["git", "rev-parse", "--verify", "-q", "HEAD^"],
+            capture_output=True, timeout=30, check=False,
+        )
+    except subprocess.TimeoutExpired as exc:
+        raise RuntimeError("git rev-parse timed out after 30s") from exc
+    return result.returncode == 0
+
+
 def get_changed_files(against_parent: bool = False) -> list[Path]:
     """Get changed Markdown paths, including deletions.
 
@@ -94,24 +115,17 @@ def get_changed_files(against_parent: bool = False) -> list[Path]:
     this takes a boolean and hardcodes the literal, so no external string
     ever reaches the git argv — there's no input class left to sanitize.
     """
-    command = ["git", "diff", "--name-only", "--diff-filter=ACMRD"]
-    if against_parent:
-        command.append("HEAD^..HEAD")
+    if not against_parent:
+        command = ["git", "diff", "--name-only", "--diff-filter=ACMRD", "--cached"]
+    elif _has_parent_commit():
+        command = ["git", "diff", "--name-only", "--diff-filter=ACMRD", "HEAD^..HEAD"]
     else:
-        command.insert(2, "--cached")
-    try:
-        result = subprocess.run(
-            command,
-            capture_output=True,
-            text=True,
-            timeout=30,
-            check=False,
-        )
-    except subprocess.TimeoutExpired as exc:
-        raise RuntimeError("git diff timed out after 30s") from exc
-    if result.returncode != 0:
-        raise RuntimeError(result.stderr.strip() or "git diff failed")
-    return [Path(f) for f in result.stdout.strip().splitlines() if f.endswith(".md")]
+        # HEAD is a root commit -- there's no parent to diff against. List every
+        # path the commit introduces instead of hard-failing with "unknown
+        # revision"; that would incorrectly block a branch's first-ever commit.
+        command = ["git", "show", "--name-only", "--pretty=format:", "HEAD"]
+    output = _run_git(command)
+    return [Path(f) for f in output.strip().splitlines() if f.endswith(".md")]
 
 
 def validate_frontmatter(path: Path, content: str) -> list[str]:
