@@ -105,6 +105,7 @@ def get_changed_files(against_parent: bool = False) -> list[Path]:
             capture_output=True,
             text=True,
             timeout=30,
+            check=False,
         )
     except subprocess.TimeoutExpired as exc:
         raise RuntimeError("git diff timed out after 30s") from exc
