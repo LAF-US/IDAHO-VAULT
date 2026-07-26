@@ -152,6 +152,15 @@ def tracked_python_files(root: Path) -> list[Path]:
     ]
 
 
+def _display_path(path: Path, root: Path) -> str:
+    """Render ``path`` relative to ``root``, falling back to the raw path if
+    it isn't actually under root (e.g. a symlinked or unrelated tree)."""
+    try:
+        return path.relative_to(root).as_posix()
+    except ValueError:
+        return str(path)
+
+
 def flattened_duplicate_findings(root: Path, files: list[Path]) -> list[tuple[Path, str]]:
     by_digest: dict[str, list[Path]] = defaultdict(list)
     for path in files:
@@ -169,12 +178,8 @@ def flattened_duplicate_findings(root: Path, files: list[Path]) -> list[tuple[Pa
         nested = [path for path in duplicates if path.parent != root]
         for flattened in root_level:
             for canonical in nested:
-                try:
-                    canonical_display = canonical.relative_to(root).as_posix()
-                except ValueError:
-                    canonical_display = str(canonical)
                 findings.append(
-                    (flattened, f"byte-identical flattened duplicate of {canonical_display}")
+                    (flattened, f"byte-identical flattened duplicate of {_display_path(canonical, root)}")
                 )
     return findings
 
@@ -188,6 +193,12 @@ def collect_findings(root: Path, files: list[Path] | None = None) -> list[tuple[
         findings.extend((path, message) for message in python_file_findings(path))
     findings.extend(flattened_duplicate_findings(root, files))
     return findings
+
+
+def _is_changed_path(path: Path, root: Path, changed: set[str] | None) -> bool:
+    if changed is None:
+        return True
+    return path.relative_to(root).as_posix() in changed
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -212,19 +223,8 @@ def main(argv: list[str] | None = None) -> int:
     all_files = tracked_python_files(root)
     findings = collect_findings(root, all_files)
 
-    def is_changed(path: Path) -> bool:
-        if changed is None:
-            return True
-        return path.relative_to(root).as_posix() in changed
-
-    gate_findings = [(path, message) for path, message in findings if is_changed(path)]
-    tree_findings = [(path, message) for path, message in findings if not is_changed(path)]
-
-    def display(path: Path) -> str:
-        try:
-            return path.relative_to(root).as_posix()
-        except ValueError:
-            return str(path)
+    gate_findings = [(path, message) for path, message in findings if _is_changed_path(path, root, changed)]
+    tree_findings = [(path, message) for path, message in findings if not _is_changed_path(path, root, changed)]
 
     if tree_findings:
         print(
@@ -233,12 +233,12 @@ def main(argv: list[str] | None = None) -> int:
             file=sys.stderr,
         )
         for path, message in tree_findings:
-            print(f"  [warn] {display(path)}: {message}", file=sys.stderr)
+            print(f"  [warn] {_display_path(path, root)}: {message}", file=sys.stderr)
 
     if gate_findings:
         print("Python integrity check failed:")
         for path, message in gate_findings:
-            print(f"- {display(path)}: {message}")
+            print(f"- {_display_path(path, root)}: {message}")
         return 1
 
     print(f"Python integrity check passed for {len(all_files)} tracked files.")
