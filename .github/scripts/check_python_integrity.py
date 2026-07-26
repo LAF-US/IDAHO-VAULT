@@ -79,7 +79,7 @@ GATED_SUBPROCESS_CALLABLES = frozenset(
 def _aliased_import_findings(node: ast.Import) -> list[str]:
     findings: list[str] = []
     for alias in node.names:
-        if alias.name == "subprocess" and alias.asname:
+        if alias.name == "subprocess" and alias.asname and alias.asname != "subprocess":
             findings.append(
                 f"aliased subprocess import ('import subprocess as {alias.asname}') "
                 f"on line {node.lineno} defeats the timeout gate; use plain 'import subprocess'"
