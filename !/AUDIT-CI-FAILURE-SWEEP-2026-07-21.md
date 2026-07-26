@@ -15,7 +15,7 @@ Scheduled 24-hour review of failing GitHub Actions runs across `laf-us/idaho-vau
 
 **Shipped fixes this run, not just findings** (per the same standing instruction):
 
-1. `codacy.yml` / `codacy-coverage-reporter.yml` — `continue-on-error: true` on the Codacy steps, so the confirmed non-blocking dashboard-linkage gap (below) stops posting a hard `failure` conclusion on every single push/PR.
+1. `codacy.yml` / `codacy-coverage-reporter.yml` — `continue-on-error: true` on the Codacy steps, so the confirmed non-blocking dashboard-linkage gap (below) stops posting a hard `failure` conclusion on every single push/PR. **⚠ Dropped before merge — see "Post-merge corrections" below; this PR no longer touches either workflow file.**
 2. PR #596 (oldest open PR not already blocked on one of Logan's judgment calls) — fixed 5 concrete review-flagged issues and pushed the commit; comment posted there.
 
 **Post-merge corrections (added before landing, not edited quietly):**
@@ -27,12 +27,12 @@ Scheduled 24-hour review of failing GitHub Actions runs across `laf-us/idaho-vau
 
 | | |
 |---|---|
-| **Who** | No human-caused breakage. All 12 failing runs trace to one already-tracked, non-blocking issue (Codacy dashboard project-linkage), not a new fault. |
+| **Who** | No human-caused breakage. All 12 failing runs trace to one already-tracked, non-blocking issue (Codacy dashboard project-linkage — **⚠ disputed, see below**), not a new fault. |
 | **What** | 12 failing runs across exactly 2 workflows: Codacy Security Scan (6) and Codacy Coverage Reporter (6). No other workflow had a `failure` conclusion in the window. |
 | **When** | 2026-07-20T04:45Z – 2026-07-21T04:45Z (rolling 24h). Chronic since 2026-07-08 (GH #822 / Linear LAF-72), 13 days running. |
 | **Where** | `claude/draft-signing-via-action-2026-06-01` (2 runs each), two Dependabot branches (1 run each), `claude/practical-cerf-9u3jao` (1 run each), `claude/shall-rome-lyrics-ok9049` (1 run each) — i.e. every `pull_request` push in-window, not isolated to one branch. |
-| **Why** | `CODACY_PROJECT_TOKEN` was provisioned 2026-07-19 (per the 2026-07-20 sweep), but Codacy's own dashboard has no project linked to it yet — confirmed via job logs as `Could not get remote project configuration: ... not found`, not a missing-secret error. Category: **Configuration**, on Codacy's account side, not this repo's code. |
-| **How** (next step) | Only Logan can close this — link/create the project for this repo in the Codacy dashboard (or generate a fresh project-scoped token from the correctly-linked project's settings page). Nothing else to diagnose here; this sweep instead shipped `continue-on-error` so the noise stops being a hard failure while that dashboard step is pending — see [[#Action taken this run]]. |
+| **Why** | `CODACY_PROJECT_TOKEN` was provisioned 2026-07-19 (per the 2026-07-20 sweep), but Codacy's own dashboard has no project linked to it yet — confirmed via job logs as `Could not get remote project configuration: ... not found`, not a missing-secret error. Category: **Configuration**, on Codacy's account side, not this repo's code. **⚠ This "dashboard project-linkage" explanation was retracted on GH #822 after Logan disputed it directly — treat as disputed, not settled (see "Post-merge corrections" above).** |
+| **How** (next step) | ~~Only Logan can close this — link/create the project for this repo in the Codacy dashboard (or generate a fresh project-scoped token from the correctly-linked project's settings page).~~ **⚠ Retracted — see "Post-merge corrections" above; there's no confirmed "dashboard link" step to point to.** Nothing else to diagnose here; this sweep instead shipped `continue-on-error` so the noise stops being a hard failure while that dashboard step is pending — see [[#Action taken this run]]. **⚠ That fix was also dropped before merge — see above.** |
 
 ---
 
@@ -57,11 +57,13 @@ error [CodacyCoverageReporter] No coverage data was sent
 ##[error]Process completed with exit code 1.
 ```
 
-This is **not new information** — it is the same root cause the 2026-07-20 sweep diagnosed (the token exists now; Codacy's side doesn't have a project to associate it with). Confirmed again today rather than assumed carried-forward. Still **not a merge blocker**: `mergefreeze` is the actual required gate on this repo, and Codacy's `conclusion: "failure"` has never blocked a PR from landing.
+This is **not new information** — it is the same root cause the 2026-07-20 sweep diagnosed (the token exists now; Codacy's side doesn't have a project to associate it with). Confirmed again today rather than assumed carried-forward. Still **not a merge blocker**: `mergefreeze` is the actual required gate on this repo, and Codacy's `conclusion: "failure"` has never blocked a PR from landing. **⚠ The "project to associate it with" diagnosis was retracted on GH #822 — see "Post-merge corrections" above; treat as disputed, not settled.**
 
-**Not fixable by workflow code.** This isn't a bug in `codacy.yml`/`codacy-coverage-reporter-action` — both correctly reference `secrets.CODACY_PROJECT_TOKEN` (verified by reading the files, not assumed). The gap is entirely in Codacy's own dashboard/account configuration, which no GitHub Actions change can reach.
+**Not fixable by workflow code** — this part held up: this isn't a bug in `codacy.yml`/`codacy-coverage-reporter-action`, both correctly reference `secrets.CODACY_PROJECT_TOKEN` (verified by reading the files, not assumed). ~~The gap is entirely in Codacy's own dashboard/account configuration, which no GitHub Actions change can reach.~~ **⚠ That specific "dashboard configuration" claim is the retracted part — the actual cause is still unconfirmed (see "Post-merge corrections" above).**
 
 ## Action taken this run
+
+**⚠ None of this landed — see "Post-merge corrections" above. Left as-written below for the record of what was originally attempted, not because it shipped.**
 
 Rather than filing a 14th consecutive "still needs your call" note with no forward motion, added `continue-on-error: true` to the three affected steps (`Run Codacy Analysis CLI` in `codacy.yml`; `Upload coverage to Codacy` in `codacy-coverage-reporter.yml`) plus a `hashFiles('results.sarif') != ''` guard on the SARIF upload step (so it doesn't try to upload a file the CLI never produced). This:
 
@@ -77,7 +79,7 @@ Of 63 workflows enumerated, 61 had either zero runs in the 24h window or only `s
 
 ## Insights and Findings (Big IF)
 
-None new. The one standing meta-observation carried from prior sweeps still holds: this is now the **14th sweep entry** referencing the same Codacy dashboard gap (GH #822 since 2026-07-08) — a pure external-account fix, not a code fix, is the only thing that closes it. Everything else in this window was clean.
+None new. The one standing meta-observation carried from prior sweeps — that this was the 14th sweep entry referencing a "Codacy dashboard gap" as a pure external-account fix — **⚠ is exactly the framing retracted on GH #822 (see "Post-merge corrections" above); the real root cause is unconfirmed, not settled.** Everything else in this window was clean.
 
 ---
 
