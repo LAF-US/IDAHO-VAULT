@@ -44,6 +44,20 @@ def test_invalid_utf8_is_flagged_not_silently_replaced(tmp_path: Path) -> None:
     assert any("not valid UTF-8" in finding for finding in findings)
 
 
+def test_unreadable_file_is_flagged_not_a_crash(tmp_path: Path, monkeypatch) -> None:
+    path = tmp_path / "unreadable.py"
+    path.write_text("VALUE = 1\n", encoding="utf-8")
+
+    def _raise_permission_error(self, encoding=None):
+        raise PermissionError("Permission denied")
+
+    monkeypatch.setattr(checker.Path, "read_text", _raise_permission_error)
+
+    findings = checker.python_file_findings(path)
+
+    assert any("could not read file" in finding for finding in findings)
+
+
 def test_active_subprocess_requires_timeout(tmp_path: Path) -> None:
     path = tmp_path / "runner.py"
     path.write_text(
