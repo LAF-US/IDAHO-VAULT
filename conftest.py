@@ -24,7 +24,7 @@ def pytest_configure(config: pytest.Config) -> None:
         cache_dir.parent.mkdir(parents=True, exist_ok=True)
         probe.mkdir()
         probe.rmdir()
-    except PermissionError as exc:
+    except OSError as exc:
         raise pytest.UsageError(
             f"pytest cache parent is not writable: {cache_dir.parent}. "
             "Fix the directory permissions or explicitly run pytest with "
