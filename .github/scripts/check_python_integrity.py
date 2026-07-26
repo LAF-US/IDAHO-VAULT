@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import ast
 import hashlib
+import itertools
 import subprocess
 import sys
 from collections import defaultdict
@@ -161,26 +162,30 @@ def _display_path(path: Path, root: Path) -> str:
         return str(path)
 
 
-def flattened_duplicate_findings(root: Path, files: list[Path]) -> list[tuple[Path, str]]:
+def _digests_by_content(files: list[Path]) -> dict[str, list[Path]]:
     by_digest: dict[str, list[Path]] = defaultdict(list)
     for path in files:
         by_digest[hashlib.sha256(path.read_bytes()).hexdigest()].append(path)
+    return by_digest
 
+
+def _flattened_duplicate_pairs(root: Path, duplicates: list[Path]) -> list[tuple[Path, Path]]:
+    """Pair each root-level flattened-name copy with each nested canonical copy
+    sharing its content digest."""
+    root_level = [path for path in duplicates if path.parent == root and "-" in path.name]
+    nested = [path for path in duplicates if path.parent != root]
+    return list(itertools.product(root_level, nested))
+
+
+def flattened_duplicate_findings(root: Path, files: list[Path]) -> list[tuple[Path, str]]:
     findings: list[tuple[Path, str]] = []
-    for duplicates in by_digest.values():
+    for duplicates in _digests_by_content(files).values():
         if len(duplicates) < 2:
             continue
-        root_level = [
-            path
-            for path in duplicates
-            if path.parent == root and "-" in path.name
-        ]
-        nested = [path for path in duplicates if path.parent != root]
-        for flattened in root_level:
-            for canonical in nested:
-                findings.append(
-                    (flattened, f"byte-identical flattened duplicate of {_display_path(canonical, root)}")
-                )
+        for flattened, canonical in _flattened_duplicate_pairs(root, duplicates):
+            findings.append(
+                (flattened, f"byte-identical flattened duplicate of {_display_path(canonical, root)}")
+            )
     return findings
 
 
@@ -201,6 +206,22 @@ def _is_changed_path(path: Path, root: Path, changed: set[str] | None) -> bool:
     return path.relative_to(root).as_posix() in changed
 
 
+def _changed_paths_from_stdin() -> set[str]:
+    return {stripped for line in sys.stdin.read().splitlines() if (stripped := line.strip())}
+
+
+def _partition_findings(
+    findings: list[tuple[Path, str]], root: Path, changed: set[str] | None
+) -> tuple[list[tuple[Path, str]], list[tuple[Path, str]]]:
+    """Split findings into (gated, tree-only) by whether their path was changed."""
+    gate_findings: list[tuple[Path, str]] = []
+    tree_findings: list[tuple[Path, str]] = []
+    for path, message in findings:
+        target = gate_findings if _is_changed_path(path, root, changed) else tree_findings
+        target.append((path, message))
+    return gate_findings, tree_findings
+
+
 def main(argv: list[str] | None = None) -> int:
     """Gate changed paths (fail) and report pre-existing tree violations (warn).
 
@@ -214,17 +235,12 @@ def main(argv: list[str] | None = None) -> int:
     args = parser.parse_args(argv)
     root = args.root.resolve()
 
-    changed = (
-        {stripped for line in sys.stdin.read().splitlines() if (stripped := line.strip())}
-        if args.paths_from_stdin
-        else None
-    )
+    changed = _changed_paths_from_stdin() if args.paths_from_stdin else None
 
     all_files = tracked_python_files(root)
     findings = collect_findings(root, all_files)
 
-    gate_findings = [(path, message) for path, message in findings if _is_changed_path(path, root, changed)]
-    tree_findings = [(path, message) for path, message in findings if not _is_changed_path(path, root, changed)]
+    gate_findings, tree_findings = _partition_findings(findings, root, changed)
 
     if tree_findings:
         print(
