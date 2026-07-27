@@ -776,6 +776,7 @@ def test_containment_include_ignored_scans_gitignored_auth_json(tmp_path: Path) 
         check=True,
         stdout=subprocess.DEVNULL,
         stderr=subprocess.DEVNULL,
+        timeout=30,
     )
     secret_path = vault_root / ".codex" / "auth.json"
     secret_path.parent.mkdir(parents=True)

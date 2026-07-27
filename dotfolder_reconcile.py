@@ -277,16 +277,20 @@ def is_publishable_path(dotfolder: str, rel_path: str, *, size: int) -> bool:
 def git_ignored_paths(vault_root: Path, rel_paths: list[str]) -> set[str]:
     if not rel_paths or not (vault_root / ".git").exists():
         return set()
-    result = subprocess.run(
-        ["git", "check-ignore", "--stdin"],
-        cwd=vault_root,
-        input="\n".join(rel_paths),
-        text=True,
-        encoding="utf-8",
-        errors="replace",
-        check=False,
-        capture_output=True,
-    )
+    try:
+        result = subprocess.run(
+            ["git", "check-ignore", "--stdin"],
+            cwd=vault_root,
+            input="\n".join(rel_paths),
+            text=True,
+            encoding="utf-8",
+            errors="replace",
+            check=False,
+            capture_output=True,
+            timeout=30,
+        )
+    except (subprocess.TimeoutExpired, OSError):
+        return set()
     if result.returncode not in {0, 1}:
         return set()
     return set(result.stdout.splitlines())

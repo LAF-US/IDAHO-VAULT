@@ -41,7 +41,15 @@ def main() -> int:
     except OSError as exc:
         print(f"large_file_watchdog: git ls-files could not run: {exc}", file=sys.stderr)
         return 1
-    tracked = [Path(p.decode("utf-8", errors="replace")) for p in result.stdout.split(b"\0") if p]
+    # surrogateescape (not "replace"): a lossy decode would change the string
+    # for any non-UTF-8 filename, so path.exists()/stat() below would never
+    # find the real file and an offender could go uncounted. surrogateescape
+    # round-trips the original bytes losslessly, same as os.fsdecode().
+    tracked = [
+        Path(p.decode("utf-8", errors="surrogateescape"))
+        for p in result.stdout.split(b"\0")
+        if p
+    ]
 
     offenders: list[tuple[int, Path]] = []
     total_bytes = 0

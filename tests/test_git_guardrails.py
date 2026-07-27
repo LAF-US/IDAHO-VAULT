@@ -73,13 +73,15 @@ class GitGuardrailsTest(unittest.TestCase):
             env["GIT_GUARD_FETCH_TIMEOUT"] = "0"
             env["GIT_TERMINAL_PROMPT"] = "0"
 
-            subprocess.run([real_git, "init", "-b", "main"], cwd=repo, env=env, check=True)
-            subprocess.run([real_git, "remote", "remove", "origin"], cwd=repo, env=env, check=False)
+            subprocess.run([real_git, "init", "-b", "main"], cwd=repo, env=env, check=True, timeout=30)
+            subprocess.run(
+                [real_git, "remote", "remove", "origin"], cwd=repo, env=env, check=False, timeout=30
+            )
 
-            subprocess.run(["git", "status", "--short"], cwd=repo, env=env, check=True)
+            subprocess.run(["git", "status", "--short"], cwd=repo, env=env, check=True, timeout=30)
 
             remotes = subprocess.check_output(
-                [real_git, "remote", "get-url", "origin"], cwd=repo, env=env, text=True
+                [real_git, "remote", "get-url", "origin"], cwd=repo, env=env, text=True, timeout=30
             ).strip()
             self.assertEqual(remotes, REPO_URL)
 
