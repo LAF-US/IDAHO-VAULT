@@ -70,7 +70,7 @@ def check_file(filepath):
         return "PASS", None
     except SyntaxError as e:
         return "FAIL", f"SyntaxError at line {e.lineno}: {e.msg}"
-    except Exception as e:  # pylint: disable=broad-except  -- report any failure as FAIL, never crash the validator
+    except Exception as e:  # pylint: disable=broad-except
         return "FAIL", f"{type(e).__name__}: {str(e)}"
 
 def main():
