@@ -1245,7 +1245,7 @@ def _build_reconciliation_report(
             restamp_actions: list[str] = []
             try:
                 ft_flag, dp_flag = _classify_pr_pair(owner, repo, pr_number)
-            except Exception as exc:  # noqa: BLE001 — "do not restamp", never abort
+            except Exception as exc:  # noqa: BLE001  # pylint: disable=broad-except  -- "do not restamp", never abort
                 print(
                     f"::warning::K6 restamp skipped for #{pr_number}: {exc}",
                     file=sys.stderr,
@@ -1428,7 +1428,7 @@ def sync_pr(args: argparse.Namespace) -> int:
     restamp_actions: list[str] = []
     try:
         ft_flag, dp_flag = _classify_pr_pair(args.owner, args.repo, args.pr_number)
-    except Exception as exc:  # noqa: BLE001 — any failure means "do not restamp"
+    except Exception as exc:  # noqa: BLE001  # pylint: disable=broad-except  -- any failure means "do not restamp" (fail closed, see comment above)
         print(
             f"::warning::K6 restamp skipped for #{args.pr_number} "
             f"(classification failed; labels left as-is): {exc}",
@@ -2079,6 +2079,6 @@ def main() -> int:
 if __name__ == "__main__":
     try:
         raise SystemExit(main())
-    except Exception as exc:  # pragma: no cover - workflow-facing failure path
+    except Exception as exc:  # pragma: no cover  # pylint: disable=broad-except  -- log-and-reraise at the top-level entrypoint
         print(f"review_feedback_loop.py failed: {exc}", file=sys.stderr)
         raise
