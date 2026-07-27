@@ -86,6 +86,51 @@ def _build_looker_queue(pr: dict) -> list[dict[str, object]]:
 LOOKER_STALE_DAYS = 14
 
 
+def _thread_disposition(thread: dict) -> str:
+    """Classify one unresolved thread. Pure. One of: human, unprovable, looked-open, bot-disposable.
+
+    Split out of `_classify_pr_for_looker` so the per-thread decision is independently
+    testable and the classifier's own branching stays low.
+    """
+    page_info = (thread.get("comments") or {}).get("pageInfo")
+    # An explicit "complete" page is hasNextPage is False; anything else (truncated
+    # OR unknown/missing) is conservatively incomplete.
+    page_complete = isinstance(page_info, dict) and page_info.get("hasNextPage") is False
+    if not _thread_is_bot_only(thread):
+        # A human on the page we DO have is definitive — truncated or not.
+        return "human"
+    if not page_complete:
+        # Bot-only on the visible page, but a human could lie beyond an incomplete
+        # one; bot-only must be proven from the full author list, so: unprovable.
+        return "unprovable"
+    if _thread_has_attested_look(thread):
+        return "looked-open"  # attested but unresolved (recoverable)
+    return "bot-disposable"
+
+
+def _select_lane(
+    *,
+    threads_truncated: bool,
+    review_decision: str,
+    human: int,
+    unprovable: int,
+    unresolved_count: int,
+    machine_clearable: int,
+    auto_merge_armed: bool,
+) -> str:
+    """Pick the looker lane from the tallied thread dispositions. Pure.
+
+    Split out of `_classify_pr_for_looker` so lane selection is independently testable.
+    """
+    if threads_truncated or review_decision == "CHANGES_REQUESTED" or human or unprovable:
+        return "needs-human"
+    if unresolved_count == 0:
+        return "clear"
+    if machine_clearable == unresolved_count:
+        return "would-cascade" if auto_merge_armed else "machine-disposable"
+    return "needs-human"  # defensive; every unresolved thread is classified above
+
+
 def _classify_pr_for_looker(
     pr: dict, *, now: datetime | None = None, stale_days: int = LOOKER_STALE_DAYS
 ) -> dict:
@@ -99,27 +144,10 @@ def _classify_pr_for_looker(
     unresolved = [t for t in threads if not t.get("isResolved")]
 
     plan: list[dict[str, object]] = []
-    disposable = looked_open = human = unprovable = 0
+    counts = {"human": 0, "unprovable": 0, "looked-open": 0, "bot-disposable": 0}
     for thread in unresolved:
-        page_info = (thread.get("comments") or {}).get("pageInfo")
-        # An explicit "complete" page is hasNextPage is False; anything else (truncated
-        # OR unknown/missing) is conservatively incomplete.
-        page_complete = isinstance(page_info, dict) and page_info.get("hasNextPage") is False
-        if not _thread_is_bot_only(thread):
-            # A human on the page we DO have is definitive — truncated or not.
-            disposition = "human"
-            human += 1
-        elif not page_complete:
-            # Bot-only on the visible page, but a human could lie beyond an incomplete
-            # one; bot-only must be proven from the full author list, so: unprovable.
-            disposition = "unprovable"
-            unprovable += 1
-        elif _thread_has_attested_look(thread):
-            disposition = "looked-open"  # attested but unresolved (recoverable)
-            looked_open += 1
-        else:
-            disposition = "bot-disposable"
-            disposable += 1
+        disposition = _thread_disposition(thread)
+        counts[disposition] += 1
         plan.append(
             {
                 "thread_id": thread.get("id"),
@@ -138,16 +166,17 @@ def _classify_pr_for_looker(
     auto_merge_armed = bool((pr.get("autoMergeRequest") or {}).get("enabledAt"))
     last_activity = _parse_iso_datetime(pr.get("updatedAt") or pr.get("createdAt"))
     stale = bool(last_activity and (now - last_activity) >= timedelta(days=stale_days))
-    machine_clearable = disposable + looked_open
+    machine_clearable = counts["bot-disposable"] + counts["looked-open"]
 
-    if threads_truncated or review_decision == "CHANGES_REQUESTED" or human or unprovable:
-        lane = "needs-human"
-    elif not unresolved:
-        lane = "clear"
-    elif machine_clearable == len(unresolved):
-        lane = "would-cascade" if auto_merge_armed else "machine-disposable"
-    else:  # pragma: no cover - defensive; every unresolved thread is classified above
-        lane = "needs-human"
+    lane = _select_lane(
+        threads_truncated=threads_truncated,
+        review_decision=review_decision,
+        human=counts["human"],
+        unprovable=counts["unprovable"],
+        unresolved_count=len(unresolved),
+        machine_clearable=machine_clearable,
+        auto_merge_armed=auto_merge_armed,
+    )
 
     return {
         "pr": pr.get("number"),
@@ -170,8 +199,8 @@ def _classify_pr_for_looker(
         "threads_truncated": threads_truncated,
         "unresolved_threads": len(unresolved),
         "machine_clearable": machine_clearable,
-        "human_threads": human,
-        "unprovable_threads": unprovable,
+        "human_threads": counts["human"],
+        "unprovable_threads": counts["unprovable"],
         "resolution_counts": resolution_counts,
         "threads": plan,
     }
