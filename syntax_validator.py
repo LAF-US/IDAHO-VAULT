@@ -18,6 +18,7 @@ files_to_check = [
     r".github\scripts\stale_bot_prs.py",
     r".github\scripts\sort_audit.py",
     r".github\scripts\review_feedback_loop.py",
+    r".github\scripts\thread_witness.py",
     r".github\scripts\pr_lifecycle.py",
     r".github\scripts\propose_moves.py",
     r".github\scripts\post_levelset_closure.py",
