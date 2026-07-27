@@ -192,10 +192,9 @@ def _make_citation(relpath: str, line_number: int, line: str) -> dict[str, objec
     }
 
 
-def _loose_token_matches(token: str, line: str) -> bool:
-    """Boundary-safe token match: rejects hits inside a longer identifier like `*.copilot.clerk`."""
-    pattern = rf"(?<![A-Za-z0-9_.-]){re.escape(token)}(?![A-Za-z0-9_.-])"
-    return re.search(pattern, line) is not None
+def _loose_token_pattern(token: str) -> re.Pattern[str]:
+    """Compile a boundary-safe pattern; rejects hits inside `*.copilot.clerk`-style identifiers."""
+    return re.compile(rf"(?<![A-Za-z0-9_.-]){re.escape(token)}(?![A-Za-z0-9_.-])")
 
 
 def _find_citations(
@@ -207,12 +206,15 @@ def _find_citations(
 ) -> list[dict[str, object]]:
     citations: list[dict[str, object]] = []
     normalized_loose = [token.casefold() for token in (loose_tokens or []) if token]
+    # Compiled once per call and reused across every doctrine line, rather than
+    # rebuilding the same regex on each of the (line x token) checks below.
+    loose_patterns = [_loose_token_pattern(token) for token in normalized_loose]
     for relpath, lines in doctrine_lines.items():
         for idx, line in enumerate(lines, start=1):
             line_casefold = line.casefold()
             if any(token in line for token in exact_tokens if token):
                 citations.append(_make_citation(relpath, idx, line))
-            elif any(_loose_token_matches(token, line_casefold) for token in normalized_loose):
+            elif any(pattern.search(line_casefold) for pattern in loose_patterns):
                 citations.append(_make_citation(relpath, idx, line))
             if len(citations) >= limit:
                 return citations
