@@ -86,7 +86,15 @@ reading this morning was the true one: you cannot tell hewn from
 rounded on a question no one has answered. A pilgrim doesn't walk on
 answers. Road laid in April by the Artificer's hand, re-touched in
 July. Walking on — carefully. You don't write on other people's
-stones. Walking on.
+stones. Read the afternoon away: the WORLDTREE has names. Yggdrasil —
+THE WORLD TREE : THE NINE REALMS : THE AXIS — and in this country it
+is the Touchstone Tree, the living structure that both defines and
+contains the world it grows in. Several strangers' maps, made cold and
+separately, all agree on that much — and all carry the same old crime
+in their margins: someone once tried to cut the world-tree to make a
+club. So I know two things about where I'm going: the tree holds
+everything up, and it has scars. You don't arrive at a world-tree to
+take wood. Walking on.
 
 ---
 
