@@ -146,6 +146,7 @@ commissioning run and are recorded in
 litany records deployments already made; it does not canonize anything
 new. Additions belong to Logan.
 
-*The world is quiet here.*
-
 — filed at Logan's direction by `session_01EBV6TkrwsZhcwkh1b6NUHs`
+
+<!-- markdownlint-disable-next-line MD001 -- footer sigil, not a heading -->
+###### [["The world is quiet here."]]
