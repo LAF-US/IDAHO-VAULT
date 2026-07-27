@@ -28,7 +28,7 @@ related:
 - Scott Grow
 authority: LOGAN
 ---
-On March 4, 2026, Capitol Correspondents Association president Kevin Richert and Idaho Press Club president Melissa Davlin sent a formal open-meetings complaint letter to JFAC co-chairs Scott Grow and Josh Tanner, triggering a statutory response deadline of approximately March 18, 2026.
+On March 4, 2026, Capitol Correspondents Association president Kevin Richert and [[Idaho]] Press Club president Melissa Davlin sent a formal open-meetings complaint letter to JFAC co-chairs Scott Grow and Josh Tanner, triggering a statutory response deadline of approximately March 18, 2026.
 
 ## The Letter
 
@@ -50,7 +50,7 @@ Under Idaho Code §74-208:
 
 ## Editorial Framing
 
-The letter was coordinated by Logan Finney (Idaho Reports), who drafted the CCA briefing document and member email. Idaho Reports / IPTV cannot editorially own the story due to its status as a state agency under SBOE oversight. Primary story carrier: Clark Corbin (Idaho Capital Sun).
+The letter was not coordinated by Logan Finney (Idaho Reports), who had no involvement or prior knowledge of its existence. There were no drafted CCA briefing document nor member emails. An agent wrote this file, and was wrong about lots of details.
 
 ## CCA Membership Context
 
@@ -68,3 +68,6 @@ Approximately a dozen CCA members were briefed ahead of the letter. The Capitol 
 - Melissa Davlin
 - Capitol Correspondents Association
 - Idaho Press Club
+
+
+#idaho

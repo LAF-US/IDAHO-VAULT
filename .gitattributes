@@ -1,15 +1,8 @@
 # Git LFS tracking for binary/media types.
 #
-# IMPORTANT: .gitattributes pattern matching is CASE-SENSITIVE. A bare `*.mov`
-# does NOT match `CLIP.MOV`, and cameras/decks/phones routinely write UPPERCASE
-# extensions (XD4_6602.MXF, MVI_1487.MOV). To avoid that gap, every extension
-# below uses character classes — `*.[Mm][Oo][Vv]` — so all case permutations
-# (mov / MOV / Mov / …) are tracked. When adding a new binary type, follow the
-# same case-folding form. See VAULT-MEDIA-STORAGE.md § Enforcement.
-#
-# This is the first line of defense only; .github/scripts/check_large_files.py
-# is the case-agnostic backstop that blocks any >100 MB file lacking LFS
-# attributes and any file over the 2 GB GitHub ceiling.
+# Attribute case handling depends on Git and filesystem settings. Camera, deck,
+# and phone media often use uppercase extensions, so binary/media patterns use
+# character classes such as *.[Mm][Oo][Vv] instead of lowercase-only globs.
 
 # Audio / video
 *.[Mm]4[Aa] filter=lfs diff=lfs merge=lfs -text
@@ -19,11 +12,9 @@
 *.[Aa][Vv][Ii] filter=lfs diff=lfs merge=lfs -text
 *.[Mm][Kk][Vv] filter=lfs diff=lfs merge=lfs -text
 *.[Mm][Xx][Ff] filter=lfs diff=lfs merge=lfs -text
-# AVCHD camera containers are written UPPERCASE (.MTS / .M2TS). `.mts`
-# (lowercase) is the TypeScript module-source extension, so the .MTS LFS rule is
-# intentionally UPPERCASE-ONLY — lowercase `.mts`/`.cts` are normalized as text
-# in the normalization section below, and no filter override is needed. A stray
-# lowercase camera `.mts` is still caught by check_large_files.py. .M2TS has no
+# AVCHD camera containers are normally uppercase (.MTS / .M2TS). Lowercase .mts
+# is also a TypeScript module-source extension and is listed with text formats
+# below, so verify attributes before changing this boundary. .M2TS has no
 # source-format collision, so it stays case-folded.
 *.MTS filter=lfs diff=lfs merge=lfs -text
 *.[Mm]2[Tt][Ss] filter=lfs diff=lfs merge=lfs -text
@@ -108,3 +99,5 @@
 *.csv -text
 *.tsv text eol=lf
 *.mdx text eol=lf
+.gitattributes text eol=lf
+.githooks/* text eol=lf

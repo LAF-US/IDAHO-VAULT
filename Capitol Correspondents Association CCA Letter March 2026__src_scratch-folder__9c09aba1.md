@@ -4,7 +4,16 @@ tags:
   - topics/government/legislature
   - 2026/03/04
 source: commit
+title: Capitol Correspondents Association CCA Letter March 2026__src_scratch-folder__9c09aba1
+aliases:
+  - Capitol Correspondents Association CCA Letter March 2026__src_scratch-folder__9c09aba1
+linter-yaml-title-alias: Capitol Correspondents Association CCA Letter March 2026__src_scratch-folder__9c09aba1
+date created: Sunday, May 17th 2026, 11:00:56 pm
+date modified: Wednesday, July 22nd 2026, 3:38:35 pm
 ---
+
+# Capitol Correspondents Association CCA Letter March 2026\_\_src\_scratch-folder\_\_9c09aba1
+
 On March 4, 2026, [[Capitol Correspondents Association]] president [[Kevin Richert]] and [[Idaho Press Club]] president [[Melissa Davlin]] sent a formal open-meetings complaint letter to [[Joint Finance-Appropriations Committee|JFAC]] co-chairs [[Scott Grow]] and [[Josh Tanner]], triggering a statutory response deadline of approximately March 18, 2026.
 
 ## The Letter
@@ -18,6 +27,7 @@ On March 4, 2026, [[Capitol Correspondents Association]] president [[Kevin Riche
 ## Statutory Timeline
 
 Under [[Idaho Code §74-208]]:
+
 - 14-day cure period begins from written notice
 - Statutory response deadline: ~**March 18, 2026**
 - Silence = denial
@@ -25,9 +35,9 @@ Under [[Idaho Code §74-208]]:
 - Penalties are personal to each member
 - AG enforcement only — no private right of action
 
-## Editorial Framing
+## Editorial Framing (Stricken)
 
-The letter was coordinated by [[Logan Finney]] ([[Idaho Reports]]), who drafted the CCA briefing document and member email. [[Idaho Reports]] / [[Idaho Public Television|IPTV]] cannot editorially own the story due to its status as a state agency under [[State Board of Education|SBOE]] oversight. Primary story carrier: [[Clark Corbin]] ([[Idaho Capital Sun]]).
+The claims previously contained in this paragraph were false.
 
 ## CCA Membership Context
 
