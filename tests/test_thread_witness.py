@@ -14,7 +14,8 @@ import sys
 import unittest
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
-from unittest import mock
+
+import unittest.mock as mock
 
 # thread_witness imports its siblings (review_feedback_loop, pr_github, pr_threads) by
 # name, so the scripts dir must be importable. Production runs the script directly, which
