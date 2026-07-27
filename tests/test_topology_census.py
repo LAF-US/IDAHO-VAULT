@@ -236,7 +236,8 @@ class TopologyCensusTest(unittest.TestCase):
 
 
 class FindCitationsBoundaryTest(unittest.TestCase):
-    """Regression coverage for the census substring-attribution finding (PR #498)."""
+    # Regression coverage for the census substring-attribution finding (PR #498):
+    # a loose token must not match inside a longer identifier like *.copilot.clerk.
 
     def test_loose_token_does_not_match_inside_longer_identifier(self) -> None:
         line = (
