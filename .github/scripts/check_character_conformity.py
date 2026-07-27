@@ -62,13 +62,21 @@ class Finding:
 
 
 def repo_root() -> Path:
-    result = subprocess.run(
-        ["git", "rev-parse", "--show-toplevel"],
-        check=True,
-        capture_output=True,
-        text=True,
-        timeout=30,
-    )
+    try:
+        result = subprocess.run(
+            ["git", "rev-parse", "--show-toplevel"],
+            check=True,
+            capture_output=True,
+            text=True,
+            timeout=30,
+        )
+    except subprocess.TimeoutExpired as exc:
+        raise SystemExit("check_character_conformity: git rev-parse timed out after 30s") from exc
+    except subprocess.CalledProcessError as exc:
+        message = (exc.stderr or "").strip() or "git rev-parse failed"
+        raise SystemExit(f"check_character_conformity: {message}") from exc
+    except OSError as exc:
+        raise SystemExit(f"check_character_conformity: git rev-parse could not run: {exc}") from exc
     return Path(result.stdout.strip()).resolve()
 
 
