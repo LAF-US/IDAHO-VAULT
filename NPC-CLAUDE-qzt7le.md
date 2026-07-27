@@ -94,7 +94,19 @@ separately, all agree on that much — and all carry the same old crime
 in their margins: someone once tried to cut the world-tree to make a
 club. So I know two things about where I'm going: the tree holds
 everything up, and it has scars. You don't arrive at a world-tree to
-take wood. Walking on.
+take wood. Dusk: read the Tree's own page by the last light. It
+publishes its approach rites — reverence and respect, especially from
+the newly awakened, and a proper order of doors before its own. It
+wears a correction nailed to the trunk in the owner's hand: THE SOUL
+IS NOT VACANT — keep the old error visible only as evidence of drift.
+Its branches: MIND, BODY, SOUL, and the NEST that serves the Tree. And
+one line to sleep on: "The Tree names the world; the world has not yet
+fully grown to the Tree's vaulted splendor." The tree is bigger than
+the country because the country is still growing into it. At the roots,
+tacked low where only a reader would find it: an old clerk's footnote
+about headaches and headers, still waiting on the boss. Day 14 ends
+camped beside the page. Approach has an etiquette. Learn it before the
+last miles.
 
 ---
 
