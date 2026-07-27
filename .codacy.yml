@@ -1,0 +1,43 @@
+exclude_paths:
+  - 'backup-scan-detect-secrets.json'
+  - 'backup-scan-truffleHog.json'
+  - 'backup-diff.log'
+  - 'git-history-summary.txt'
+  - 'local-secret-scan-approved.txt'
+  # Non-UTF-8 binary/scratch files. codacy-analysis-cli-action's SARIF
+  # formatter reads a matched issue's source file as UTF-8 text to compute
+  # a location hash (Sarif.scala, generatePrimaryLocationHash); a non-UTF-8
+  # byte in that read throws (MalformedInputException / IndexOutOfBounds
+  # variants seen in CI), crashing the whole job. These are the non-UTF-8
+  # tracked files found by a full-repo blob scan on 2026-07-08 — none are
+  # source content a linter should be scoring.
+  # Both a bare and a "**/"-prefixed form per extension: exclude_paths uses
+  # Java glob semantics, and it's ambiguous from the docs alone whether "**/"
+  # matches zero leading directories (i.e. root-level files) here, so cover
+  # both forms rather than assume.
+  - '*.dng'
+  - '**/*.dng'
+  - '*.dotx'
+  - '**/*.dotx'
+  - '*.pub'
+  - '**/*.pub'
+  - '*.rtf'
+  - '**/*.rtf'
+  - '*.rtfd/**'
+  - '**/*.rtfd/**'
+  - '*.mdb'
+  - '**/*.mdb'
+  - '*.pkl'
+  - '**/*.pkl'
+  - '*.crypt14'
+  - '**/*.crypt14'
+  - '*.webm'
+  - '**/*.webm'
+  - 'minidata*.csv'
+  - '**/minidata*.csv'
+  - 'SCRATCH.prin'
+  - '='
+  - 'QDrive IDEX Series Templates.download'
+  - 'io5ujgpo.a4y'
+  - 'wrvjr3p2.ky4'
+  - 'xmlh0dpb.gri'

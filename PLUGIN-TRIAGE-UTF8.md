@@ -2,7 +2,7 @@
 
 authority: LOGAN
 
-status: OPEN ΓÇö awaiting Logan's decisions at Checkpoints 1ΓÇô4
+status: OPEN — awaiting Logan's decisions at Checkpoints 1–4
 
 date: 2026-04-06
 
@@ -48,7 +48,7 @@ date modified: Monday, April 6th 2026, 9:35:16 pm
 
 **Branch:** `claude/obsidian-plugins-triage-YDJ6Z`
 
-**Status:** Conference call agenda staged ΓÇö awaiting Logan's decisions
+**Status:** Conference call agenda staged — awaiting Logan's decisions
 
 
 
@@ -72,7 +72,7 @@ This document consolidates all agented plugin documentation, surfaces the discre
 
 
 
-## Agented Documentation ΓÇö Sources
+## Agented Documentation — Sources
 
 
 
@@ -80,21 +80,21 @@ This document consolidates all agented plugin documentation, surfaces the discre
 
 |---|---|---|---|
 
-| `LEVELSET-CURRENT.md` ┬ºObsidian Plugin State | Claude (Abhorsen) | 2026-04-05 | **49 community plugins enabled** on desktop; 0 on mobile (Restricted Mode); device split established |
+| `LEVELSET-CURRENT.md` §Obsidian Plugin State | Claude (Abhorsen) | 2026-04-05 | **49 community plugins enabled** on desktop; 0 on mobile (Restricted Mode); device split established |
 
-| `DOCKET.md` ΓÇö "Obsidian Plugin Recovery" | Codex (Janitor) | 2026-04-05 | `community-plugins.json` restored to HEAD (49 enabled) ΓÇö marked COMPLETE |
+| `DOCKET.md` — "Obsidian Plugin Recovery" | Codex (Janitor) | 2026-04-05 | `community-plugins.json` restored to HEAD (49 enabled) — marked COMPLETE |
 
 | `LEVELSET-CURRENT.md` Activity Log item 8 | Claude (Abhorsen) | 2026-04-05 | Codex UTF-16 incident: `community-plugins.json` corrupted to 140 entries in UTF-16 LE; caught and corrected |
 
 | `LEVELSET-CURRENT.md` Activity Log item 6 | Claude (Abhorsen) | 2026-04-05 | 140-plugin audit: 49 enabled, 91 dormant (17 configured, 79 stock) |
 
-| `VAULT-CONVENTIONS.md` ┬ºObsidian Sync / Git Boundary | Collaborative | Current | Device split policy; desktop plugin lists do not sync to mobile |
+| `VAULT-CONVENTIONS.md` §Obsidian Sync / Git Boundary | Collaborative | Current | Device split policy; desktop plugin lists do not sync to mobile |
 
-| `!/AGENTS.md` ΓÇö Agent Registry | Claude (Abhorsen) | 2026-04-05 | Lane ownership: Claude owns `.obsidian/`; Codex handles cleanup when assigned |
+| `!/AGENTS.md` — Agent Registry | Claude (Abhorsen) | 2026-04-05 | Lane ownership: Claude owns `.obsidian/`; Codex handles cleanup when assigned |
 
-| `PLUGIN-AUTH-INVENTORY-2026-03-28.md` | Claude (Abhorsen) | 2026-03-28 | External MCP connector audit (GitHub, Linear, Slack, GCal, GDrive, HuggingFace, Cloudflare) ΓÇö Linear-first recommended |
+| `PLUGIN-AUTH-INVENTORY-2026-03-28.md` | Claude (Abhorsen) | 2026-03-28 | External MCP connector audit (GitHub, Linear, Slack, GCal, GDrive, HuggingFace, Cloudflare) — Linear-first recommended |
 
-| `PROTOCOL-CONFERENCE-CALL` (Copilot/Clerk) | GitHub Copilot (The Clerk) | 2026-04-06 | **Local-only** ΓÇö exists on Logan's desktop via Obsidian Sync, not yet committed to git. Proposes conference call record format and JFAC coverage example. Awaiting Logan's review and adoption. |
+| `PROTOCOL-CONFERENCE-CALL` (Copilot/Clerk) | GitHub Copilot (The Clerk) | 2026-04-06 | **Local-only** — exists on Logan's desktop via Obsidian Sync, not yet committed to git. Proposes conference call record format and JFAC coverage example. Awaiting Logan's review and adoption. |
 
 
 
@@ -118,7 +118,7 @@ This document consolidates all agented plugin documentation, surfaces the discre
 
 
 
-**Root cause (likely):** The Codex UTF-16 incident on 2026-04-05 corrupted `community-plugins.json`. Codex "restored to HEAD (49 enabled)" ΓÇö but the HEAD it restored to was the `ec09efd0` commit, which itself only had 12 entries (the +5 plugins from that session were added after the pre-session baseline). The Obsidian Sync live state on Logan's Windows desktop reflects the correct count; the git record does not.
+**Root cause (likely):** The Codex UTF-16 incident on 2026-04-05 corrupted `community-plugins.json`. Codex "restored to HEAD (49 enabled)" — but the HEAD it restored to was the `ec09efd0` commit, which itself only had 12 entries (the +5 plugins from that session were added after the pre-session baseline). The Obsidian Sync live state on Logan's Windows desktop reflects the correct count; the git record does not.
 
 
 
@@ -134,7 +134,7 @@ This document consolidates all agented plugin documentation, surfaces the discre
 
 
 
-### Checkpoint 1 ΓÇö Git / Live Sync (REQUIRED FIRST)
+### Checkpoint 1 — Git / Live Sync (REQUIRED FIRST)
 
 **Gate: blocks all other plugin work**
 
@@ -146,7 +146,7 @@ This document consolidates all agented plugin documentation, surfaces the discre
 
 | **Question** | What does Logan's live Obsidian desktop show as the enabled community plugin count? |
 
-| **Action for Logan** | Open Obsidian ΓåÆ Settings ΓåÆ Community plugins ΓåÆ count enabled. Then paste or confirm the list. |
+| **Action for Logan** | Open Obsidian → Settings → Community plugins → count enabled. Then paste or confirm the list. |
 
 | **Action for Claude** | Commit authoritative `community-plugins.json` once Logan confirms; update LEVELSET-CURRENT |
 
@@ -158,7 +158,7 @@ This document consolidates all agented plugin documentation, surfaces the discre
 
 
 
-### Checkpoint 2 ΓÇö Breadcrumbs Frontmatter Config (Medium)
+### Checkpoint 2 — Breadcrumbs Frontmatter Config (Medium)
 
 **Can do this session; Claude implements immediately after Logan answers**
 
@@ -170,7 +170,7 @@ This document consolidates all agented plugin documentation, surfaces the discre
 
 | **Question** | Which frontmatter fields should the Breadcrumbs plugin traverse for navigation? |
 
-| **Options** | A: `related:` only ┬╖ B: `related:` + `tags:` ┬╖ C: `related:` + `parent:` ┬╖ D: All three ┬╖ E: Logan specifies |
+| **Options** | A: `related:` only · B: `related:` + `tags:` · C: `related:` + `parent:` · D: All three · E: Logan specifies |
 
 | **Note** | The zettelkasten address space (19,533 stubs) is built on `related:` links. `parent:` exists in many stubs. Breadcrumbs is the keystone for navigating the graph. |
 
@@ -182,7 +182,7 @@ This document consolidates all agented plugin documentation, surfaces the discre
 
 
 
-### Checkpoint 3 ΓÇö Bulk Uninstall 91 Dormant Plugins (Low / can defer)
+### Checkpoint 3 — Bulk Uninstall 91 Dormant Plugins (Low / can defer)
 
 
 
@@ -192,7 +192,7 @@ This document consolidates all agented plugin documentation, surfaces the discre
 
 | **Question** | Bulk-remove the 79 stock-dormant plugins now, or continue deferring? |
 
-| **Context** | 140 plugins installed; 49 enabled; 91 dormant. 17 dormant are configured (intentional keeps). 79 are stock-dormant with no config. No urgency ΓÇö vault functions fine as-is. |
+| **Context** | 140 plugins installed; 49 enabled; 91 dormant. 17 dormant are configured (intentional keeps). 79 are stock-dormant with no config. No urgency — vault functions fine as-is. |
 
 | **If Yes** | Claude removes plugin directories + updates JSON in a separate `chore(plugins): dormant cleanup` commit |
 
@@ -206,7 +206,7 @@ This document consolidates all agented plugin documentation, surfaces the discre
 
 
 
-### Checkpoint 4 ΓÇö LLM Plugin Sprawl (Low / can defer)
+### Checkpoint 4 — LLM Plugin Sprawl (Low / can defer)
 
 
 
@@ -220,7 +220,7 @@ This document consolidates all agented plugin documentation, surfaces the discre
 
 | **Recommendation** | Keep: `smart-connections` (semantic search), `smart-connections-visualizer` (graph). Evaluate: `bmo-chatbot`. Remove rest. |
 
-| **Logan's answer** | _(fill in ΓÇö or defer)_ |
+| **Logan's answer** | _(fill in — or defer)_ |
 
 
 
@@ -236,41 +236,41 @@ This document consolidates all agented plugin documentation, surfaces the discre
 
 START
 
-  ΓööΓöÇ Checkpoint 1 (REQUIRED): Logan confirms live plugin count
+  └─ Checkpoint 1 (REQUIRED): Logan confirms live plugin count
 
-       Γö£ΓöÇ Count confirmed + JSON provided
+       ├─ Count confirmed + JSON provided
 
-       Γöé    ΓööΓöÇ Claude commits authoritative community-plugins.json
+       │    └─ Claude commits authoritative community-plugins.json
 
-       Γöé         ΓööΓöÇ LEVELSET-CURRENT updated ΓåÆ Checkpoint 2
+       │         └─ LEVELSET-CURRENT updated → Checkpoint 2
 
-       ΓööΓöÇ Count uncertain
+       └─ Count uncertain
 
-            ΓööΓöÇ STOP ΓÇö Logan reopens Obsidian, checks Settings, returns
+            └─ STOP — Logan reopens Obsidian, checks Settings, returns
 
 
 
   Checkpoint 2 (this session): Breadcrumbs field config
 
-       Γö£ΓöÇ Logan answers ΓåÆ Claude commits breadcrumbs/data.json
+       ├─ Logan answers → Claude commits breadcrumbs/data.json
 
-       ΓööΓöÇ Logan defers ΓåÆ note deferred; proceed to Checkpoint 3
+       └─ Logan defers → note deferred; proceed to Checkpoint 3
 
 
 
   Checkpoint 3 (can defer): Dormant plugin cleanup
 
-       Γö£ΓöÇ Yes ΓåÆ Claude executes bulk remove (separate commit)
+       ├─ Yes → Claude executes bulk remove (separate commit)
 
-       ΓööΓöÇ No ΓåÆ note deferred; proceed to Checkpoint 4
+       └─ No → note deferred; proceed to Checkpoint 4
 
 
 
   Checkpoint 4 (can defer): LLM sprawl
 
-       Γö£ΓöÇ Logan provides keep list ΓåÆ Claude removes rest (separate commit)
+       ├─ Logan provides keep list → Claude removes rest (separate commit)
 
-       ΓööΓöÇ Defer ΓåÆ note deferred
+       └─ Defer → note deferred
 
 
 
@@ -356,7 +356,7 @@ The Clerk's `PROTOCOL-CONFERENCE-CALL` document is visible in Obsidian's unlinke
 
 
 
-*Authored by Claude Code (The Abhorsen) on `claude/obsidian-plugins-triage-YDJ6Z` ΓÇö 2026-04-07*
+*Authored by Claude Code (The Abhorsen) on `claude/obsidian-plugins-triage-YDJ6Z` — 2026-04-07*
 
 *The vault is the record. Logan decides.*
 

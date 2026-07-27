@@ -353,7 +353,8 @@ def parse_ivy_xml(ivy_path: Path) -> List[Dependency]:
     """Parse Ivy ivy.xml (inline XML parsing)"""
     try:
         import xml.etree.ElementTree as ET
-        tree = ET.parse(ivy_path)
+        import defusedxml.ElementTree as DefusedET
+        tree = DefusedET.parse(ivy_path)
         root = tree.getroot()
         
         dependencies = []
@@ -612,7 +613,7 @@ def parse_package_tree_sitter(node: Node, source_code: bytes) -> str:
     if node.type == 'package_declaration':
         for child in node.children:
             if child.type in ['scoped_identifier', 'identifier']:
-                return source_code[child.sta***REMOVED***byte:child.end_byte].decode('utf-8')
+                return source_code[child.start_byte:child.end_byte].decode('utf-8')
     
     for child in node.children:
         result = parse_package_tree_sitter(child, source_code)
@@ -625,11 +626,11 @@ def parse_imports_tree_sitter(node: Node, source_code: bytes) -> List[str]:
     """Extract imports from tree-sitter node"""
     imports = []
     
-    if node.type == 'impo***REMOVED***declaration':
+    if node.type == 'import_declaration':
         for child in node.children:
             if child.type in ['scoped_identifier', 'identifier']:
-                impo***REMOVED***path = source_code[child.sta***REMOVED***byte:child.end_byte].decode('utf-8')
-                imports.append(impo***REMOVED***path)
+                import_path = source_code[child.start_byte:child.end_byte].decode('utf-8')
+                imports.append(import_path)
     
     for child in node.children:
         imports.extend(parse_imports_tree_sitter(child, source_code))
@@ -661,10 +662,10 @@ def parse_class_tree_sitter(node: Node, source_code: bytes, package: str) -> Opt
     if node.parent:
         for sibling in node.parent.children:
             # Only look at siblings that come before this node
-            if sibling.sta***REMOVED***byte >= node.sta***REMOVED***byte:
+            if sibling.start_byte >= node.start_byte:
                 break
             if sibling.type in ['marker_annotation', 'annotation']:
-                ann_text = source_code[sibling.sta***REMOVED***byte:sibling.end_byte].decode('utf-8')
+                ann_text = source_code[sibling.start_byte:sibling.end_byte].decode('utf-8')
                 ann_match = re.match(r'@(\w+)', ann_text)
                 if ann_match:
                     annotations.append(ann_match.group(1))
@@ -672,10 +673,10 @@ def parse_class_tree_sitter(node: Node, source_code: bytes, package: str) -> Opt
     # THEN: Parse children (class body, modifiers, etc.)
     for child in node.children:
         if child.type == 'identifier':
-            class_name = source_code[child.sta***REMOVED***byte:child.end_byte].decode('utf-8')
+            class_name = source_code[child.start_byte:child.end_byte].decode('utf-8')
         elif child.type == 'modifiers':
             for mod in child.children:
-                mod_text = source_code[mod.sta***REMOVED***byte:mod.end_byte].decode('utf-8')
+                mod_text = source_code[mod.start_byte:mod.end_byte].decode('utf-8')
                 # Modifiers can contain annotations too (inside modifiers block)
                 if mod.type in ['marker_annotation', 'annotation']:
                     ann_match = re.match(r'@(\w+)', mod_text)
@@ -684,7 +685,7 @@ def parse_class_tree_sitter(node: Node, source_code: bytes, package: str) -> Opt
                 else:
                     modifiers.append(mod_text)
         elif child.type == 'marker_annotation' or child.type == 'annotation':
-            ann_text = source_code[child.sta***REMOVED***byte:child.end_byte].decode('utf-8')
+            ann_text = source_code[child.start_byte:child.end_byte].decode('utf-8')
             # Extract just annotation name (remove @ and parameters)
             ann_match = re.match(r'@(\w+)', ann_text)
             if ann_match and ann_match.group(1) not in annotations:
@@ -692,11 +693,11 @@ def parse_class_tree_sitter(node: Node, source_code: bytes, package: str) -> Opt
         elif child.type == 'superclass':
             for subchild in child.children:
                 if subchild.type == 'type_identifier':
-                    extends = source_code[subchild.sta***REMOVED***byte:subchild.end_byte].decode('utf-8')
+                    extends = source_code[subchild.start_byte:subchild.end_byte].decode('utf-8')
         elif child.type == 'super_interfaces' or child.type == 'interfaces':
             for subchild in child.children:
                 if subchild.type == 'type_identifier':
-                    impl_name = source_code[subchild.sta***REMOVED***byte:subchild.end_byte].decode('utf-8')
+                    impl_name = source_code[subchild.start_byte:subchild.end_byte].decode('utf-8')
                     implements.append(impl_name)
     
     if not class_name:
@@ -1865,12 +1866,12 @@ def generate_module_dot_files(kg: Dict, output_path: Path):
                 file_info = next((f for f in kg.get('files', []) if any(c['name'] == cls['name'] for c in f.get('classes', []))), None)
                 if not file_info:
                     # Fallback: find imports from edges
-                    impo***REMOVED***edges = [e for e in kg['edges'] if e['from'] == class_id and e['type'] == 'imports']
+                    import_edges = [e for e in kg['edges'] if e['from'] == class_id and e['type'] == 'imports']
                     annotation_imports[class_id] = []
                     
                     for ann in annotations:
                         # Find import edge that matches this annotation
-                        matching_import = next((e['to'] for e in impo***REMOVED***edges 
+                        matching_import = next((e['to'] for e in import_edges 
                                               if e['to'].endswith(f'.{ann}') or e['to'].endswith(f'/{ann}')), None)
                         if matching_import:
                             annotation_imports[class_id].append((ann, matching_import))

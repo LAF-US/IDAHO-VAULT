@@ -23,6 +23,7 @@ type: reference
 | `Email SMTP Credentials` | Username + Password | Budget tracker email delivery | ❌ Not created | Create if using SMTP service |
 | `Todoist API Token` | API Token | Todoist probe + future bridge (`.github/workflows/todoist-probe.yml`) | ❌ Not created | Create in 1Password as `todoist-api-token`, field `credential` |
 | `OP_SERVICE_ACCOUNT_TOKEN` | Service Token | GitHub Actions → 1Password auth | ✅ Provisioned (2026-06-17) | Created via 1Password web portal → Developer Tools → Service Accounts; saved to 1Password vault + added to GitHub Secrets |
+| `MERGE_QUEUE_TOKEN` | Fine-grained PAT (repo: IDAHO-VAULT; Contents RW + Pull requests RW) | Auto-merge lane arm/enqueue steps (`auto-merge-engage.yml`, `auto-merge-enqueue-on-checks.yml`, `auto-merge-rhythm.yml`, `batch-arm-merge-queue.yml`, `dependabot-rhythm.yml`, `review-feedback-loop.yml`, `review-response.yml`, `agent-review-gate.yml`) | ❌ Not created | Mint fine-grained PAT (Settings → Developer settings → Personal access tokens → Fine-grained tokens); store in 1Password; add as GitHub Actions repo secret `MERGE_QUEUE_TOKEN`. Without it the lane falls back to `GITHUB_TOKEN`, whose events never dispatch workflow runs — armed PRs starve in the merge queue (issue #731) |
 
 ---
 
@@ -35,6 +36,7 @@ type: reference
 | Linear API Key | 180 days | — | — |
 | SMTP credentials | 180 days | — | — |
 | Service account token | 90 days | — | — |
+| `MERGE_QUEUE_TOKEN` (fine-grained PAT) | 90 days | — | — |
 
 ---
 

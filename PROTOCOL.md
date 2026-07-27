@@ -24,6 +24,15 @@ date created: Sunday, April 12th 2026, 4:00:33 am
 date modified: Sunday, April 12th 2026, 5:55:08 pm
 ---
 
+> [!DANGER]
+> HERESY REVIEW PENDING - Faith of the Cloth
+> This document is flagged as a heretical shadow to the canonical PROTOCOLS.md Touchstone.
+> Drafted under Triplex Triumvirate authority (post-Triplex Night, 2026-04-12).
+> **DO NOT USE** as clean governance authority until reviewed and rehabilitated by Logan or ordained Faith of the Cloth.
+> 
+> See: Issue #683
+> Related: [[GEMINIAEUS]] | [[TRIUNE-TRIPTYCH-TRIUMVIRATE]]
+
 # PROTOCOL.md — Operational Vocabulary
 
 ## Status: Draft
@@ -51,7 +60,7 @@ The protocol supports the **Model Context Protocol (MCP)** for transport-only in
 
 ### MCP Coordination rules:
 1. **Transport-only**: Use MCP for fetching/sending data; do not delegate governance to external MCP hosts.
-2. **Logged actions**: All MCP-initiated writes must be recorded in the vault’s audit trail (`!/!/` artifacts).
+2. **Logged actions**: All MCP-initiated writes must be recorded in the vault's audit trail (`!/!/` artifacts).
 
 ---
 

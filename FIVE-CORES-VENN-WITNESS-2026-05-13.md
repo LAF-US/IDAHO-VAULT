@@ -27,7 +27,7 @@ The Five Cores of LAF-US are not a rooted tree. They are a **Venn Diagram** of t
 
 ```
         PRIVATE          PUBLIC
-       ┌─────────────────────────┐
+       ┌────────────────────────Ŀ
        │         │               │
        │  SECRET │   PERSONAL    │  PUBLISH
        │         │  (overlap)    │

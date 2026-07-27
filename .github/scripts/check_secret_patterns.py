@@ -8,6 +8,7 @@ file path, line number, and rule name. It never prints matched secret text.
 from __future__ import annotations
 
 import argparse
+import os
 import re
 import subprocess
 import sys
@@ -15,7 +16,25 @@ from dataclasses import dataclass
 from pathlib import Path
 
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
+def _repo_root() -> Path:
+    # In CI this script executes from the trusted base-branch checkout
+    # (trusted-main/), while the content under test is the PRIMARY checkout —
+    # which is exactly the run step's working directory: every policy workflow
+    # invokes this script with cwd at the primary checkout and never sets a
+    # working-directory override. Using the process cwd keeps the
+    # trusted-validator split (trusted code, PR-head content) without deriving
+    # any filesystem path from environment data — there is no tainted-path
+    # flow left for a scanner to model, and no hard-coded runner path to break
+    # on self-hosted runners or a repo rename. Local (pre-commit) runs fall
+    # back to the script's own repository.
+    if os.environ.get("GITHUB_ACTIONS") == "true":
+        return Path.cwd()
+    return Path(__file__).resolve().parents[2]
+
+
+REPO_ROOT = _repo_root()
+WINDOWS_COPY_SUFFIX_RE = re.compile(r" \(\d+\)(?=$|\.)")
+PRESERVED_COPY_SUFFIX_RE = re.compile(r"\.(?:home|vault)(?:\.[0-9a-f]{12})?$", re.IGNORECASE)
 SECRET_PATH_PATTERNS = (
     re.compile(r"(^|/)\.env(\.|$)"),
     re.compile(r"(^|/)\.envrc$"),
@@ -23,6 +42,7 @@ SECRET_PATH_PATTERNS = (
     re.compile(r"(^|/)secrets?(/|$)", re.IGNORECASE),
     re.compile(r"(^|/)\.mcp-auth(/|$)"),
     re.compile(r"(^|/)(credentials?|tokens?|client_secret|oauth).*\.json$", re.IGNORECASE),
+    re.compile(r"(^|/)\.credentials.*\.json$", re.IGNORECASE),
     re.compile(r"(^|/).*-key\.json$", re.IGNORECASE),
     re.compile(r"(^|/).*service-account\.json$", re.IGNORECASE),
     re.compile(r"(^|/)Google Passwords.*\.csv$", re.IGNORECASE),
@@ -30,6 +50,9 @@ SECRET_PATH_PATTERNS = (
     re.compile(r"(^|/).*recovery[-_]codes.*", re.IGNORECASE),
     re.compile(r"\.(pem|p12|pfx|key)$", re.IGNORECASE),
     re.compile(r"(^|/)(id_rsa|id_ed25519)(\.|$)"),
+    re.compile(r"(^|/)(auth|accounts)\.json$", re.IGNORECASE),
+    re.compile(r"(^|/)(known_hosts|allowed_signers)(\.|$)", re.IGNORECASE),
+    re.compile(r"(^|/).*_signing(?:\.|$)", re.IGNORECASE),
     re.compile(r"(^|/)(\.npmrc|\.pypirc|\.netrc|rclone\.conf)$"),
 )
 
@@ -107,16 +130,41 @@ def stdin_paths() -> list[str]:
     ]
 
 
-def path_findings(path: str) -> list[Finding]:
+def normalized_path_variants(path: str) -> set[str]:
     normalized = path.replace("\\", "/")
-    if any(pattern.search(normalized) for pattern in ALLOW_PATH_PATTERNS):
-        return []
-    return [
-        Finding(path=path, line=None, rule="secret_path")
-        for pattern in SECRET_PATH_PATTERNS
-        if pattern.search(normalized)
-    ][:1]
+    variants = {normalized}
 
+    windows_copy = "/".join(
+        WINDOWS_COPY_SUFFIX_RE.sub("", segment) for segment in normalized.split("/")
+    )
+    variants.add(windows_copy)
+
+    for candidate in tuple(variants):
+        stripped = candidate
+        while True:
+            next_value = PRESERVED_COPY_SUFFIX_RE.sub("", stripped)
+            if next_value == stripped:
+                break
+            stripped = next_value
+            variants.add(stripped)
+    return variants
+
+
+def path_findings(path: str) -> list[Finding]:
+    variants = normalized_path_variants(path)
+    if any(
+        pattern.search(candidate)
+        for candidate in variants
+        for pattern in ALLOW_PATH_PATTERNS
+    ):
+        return []
+    if any(
+        pattern.search(candidate)
+        for candidate in variants
+        for pattern in SECRET_PATH_PATTERNS
+    ):
+        return [Finding(path=path, line=None, rule="secret_path")]
+    return []
 
 def staged_file_bytes(path: str) -> bytes | None:
     result = subprocess.run(

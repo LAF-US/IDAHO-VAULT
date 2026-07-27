@@ -47,13 +47,13 @@ Local Ollama remains installed but is not active in OpenClaw routing; allowed lo
 ## Mesh Topology
 
 ```
-                    ┌─────────────────────────────────────┐
+                    ┌────────────────────────────────────Ŀ
                     │         OpenRouter.ai                 │
                     │    openrouter.ai/api/v1 = unified   │
                     └─────────────────────────────────────┘
                        ▲     ▲     ▲     ▲     ▲     ▲
                        │     │     │     │     │     │
-              ┌────────┴┐ ┌───┴──┐ ┌────┴──┐ ┌───┴──┐ ┌────┴───┐
+              ┌────────┴┐ ┌───┴─Ŀ ┌────┴─Ŀ ┌───┴─Ŀ ┌────┴──Ŀ
               │ Ollama  │ │Cursor│ │OpenClaw│ │Claude│ │ Codex  │
               │(local) │ │(UI)  │ │(models)│ │(env) │ │ (env)  │
               └─────────┘ └──────┘ └───────┘ └──────┘ └────────┘

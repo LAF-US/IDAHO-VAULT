@@ -121,6 +121,23 @@ Six overlaps in `PROTOCOL.md` require LOGAN's direction. For each: the question,
 
 ---
 
+---
+
+## Named But Undefined Protocols
+
+Protocols named in vault discussion or PR commits but lacking a defined surface. Awaiting LOGAN's definition pass.
+
+### PULLMAN
+
+Two distinct referents — both pinned but neither yet defined as protocol:
+
+- **Pullman Company** — railroad car manufacturer; transportation vessel. The reference in PR #227 (`antigravity/pullman-oidc-pipeline`) and the AFFABLE BASTION OIDC pipeline uses this sense — a carrier for sync traffic.
+- **Philip Pullman** — author of *His Dark Materials* (Lyra cosmology, the subtle knife, Dust). Referenced indirectly via existing vault doctrine on threshold-crossing and the subtle-knife intrinsic-fitness model (see `!/THRESHOLD-DOCTRINE-v1-2026-05-21.md`).
+
+Pinned 2026-05-28 by LOGAN. Awaits LOGAN's definition pass when LAF-USB schema work surfaces.
+
+---
+
 ## HOW TO USE THIS DOCUMENT
 
 Logan: for each ambiguity, pick A, B, or C (or propose D). CODE AUTHORITY will update `PROTOCOL.md` with the finalized definitions and remove the corresponding entry from this file. When all 6 are resolved, this file gets archived.
