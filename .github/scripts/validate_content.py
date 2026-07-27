@@ -7,7 +7,7 @@ Checks staged files for signs of injection, malformed frontmatter,
 or unexpected content. Exits non-zero to halt the workflow on failure.
 
 Usage:
-  python3 validate_content.py [--scope bills|admin|generated|inbox|all]
+  python3 validate_content.py [--scope bills|admin|generated|inbox|all] [--paths-from-stdin]
 
 Exit codes:
   0  All checks passed
