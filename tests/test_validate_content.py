@@ -116,6 +116,29 @@ class ValidateContentTest(unittest.TestCase):
             ],
         )
 
+    def test_empty_paths_from_stdin_message_does_not_say_staged(self) -> None:
+        with (
+            patch("sys.argv", ["validate_content.py", "--paths-from-stdin"]),
+            patch.object(validate_content, "get_changed_files", return_value=[]),
+            patch("sys.stdout", io.StringIO()) as captured_stdout,
+        ):
+            status = validate_content.main()
+
+        self.assertEqual(status, 0)
+        self.assertIn("in the supplied diff", captured_stdout.getvalue())
+        self.assertNotIn("staged", captured_stdout.getvalue())
+
+    def test_empty_staged_message_says_staged(self) -> None:
+        with (
+            patch("sys.argv", ["validate_content.py"]),
+            patch.object(validate_content, "get_changed_files", return_value=[]),
+            patch("sys.stdout", io.StringIO()) as captured_stdout,
+        ):
+            status = validate_content.main()
+
+        self.assertEqual(status, 0)
+        self.assertIn("No markdown files staged", captured_stdout.getvalue())
+
 
 if __name__ == "__main__":
     unittest.main()

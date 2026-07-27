@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import importlib.util
+import subprocess
 import sys
 import unittest
 from unittest.mock import patch
@@ -44,6 +45,36 @@ class FindOpReferenceTest(unittest.TestCase):
             with self.assertRaises(SystemExit) as exc:
                 resolver.find_op_reference("MyVault")
         self.assertIn("Could not resolve", str(exc.exception))
+
+
+class OpCliFailClosedTest(unittest.TestCase):
+    def test_ensure_op_signed_in_fails_closed_when_op_could_not_run(self) -> None:
+        with patch.object(resolver.subprocess, "run", side_effect=OSError("permission denied")):
+            with self.assertRaises(SystemExit) as exc:
+                resolver.ensure_op_signed_in()
+        self.assertIn("could not run", str(exc.exception))
+
+    def test_ensure_op_signed_in_fails_closed_on_timeout(self) -> None:
+        with patch.object(
+            resolver.subprocess, "run", side_effect=subprocess.TimeoutExpired(cmd="op", timeout=15)
+        ):
+            with self.assertRaises(SystemExit) as exc:
+                resolver.ensure_op_signed_in()
+        self.assertIn("timed out", str(exc.exception))
+
+    def test_can_read_secret_fails_closed_when_op_could_not_run(self) -> None:
+        with patch.object(resolver.subprocess, "run", side_effect=OSError("no such file")):
+            with self.assertRaises(SystemExit) as exc:
+                resolver.can_read_secret("op://Vault/OpenRouter API Key/credential")
+        self.assertIn("could not run", str(exc.exception))
+
+    def test_can_read_secret_fails_closed_on_timeout(self) -> None:
+        with patch.object(
+            resolver.subprocess, "run", side_effect=subprocess.TimeoutExpired(cmd="op", timeout=15)
+        ):
+            with self.assertRaises(SystemExit) as exc:
+                resolver.can_read_secret("op://Vault/OpenRouter API Key/credential")
+        self.assertIn("timed out", str(exc.exception))
 
 
 class OutFileLocationTest(unittest.TestCase):
