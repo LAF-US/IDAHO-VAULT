@@ -61,6 +61,41 @@ class BranchGardenReportTest(unittest.TestCase):
         self.assertNotIn("far behind", report)
         self.assertNotIn("is stale", report)
 
+    def test_run_json_fails_closed_when_git_could_not_run(self) -> None:
+        with mock.patch.object(
+            branch_garden.subprocess, "run", side_effect=FileNotFoundError("git")
+        ):
+            with self.assertRaises(RuntimeError) as exc:
+                branch_garden.run_json(["git", "log"])
+
+        self.assertIn("could not run", str(exc.exception))
+
+    def test_run_text_fails_closed_on_timeout(self) -> None:
+        with mock.patch.object(
+            branch_garden.subprocess,
+            "run",
+            side_effect=subprocess.TimeoutExpired(cmd="git", timeout=60),
+        ):
+            with self.assertRaises(RuntimeError) as exc:
+                branch_garden.run_text(["git", "log"])
+
+        self.assertIn("timed out", str(exc.exception))
+
+    def test_run_json_fails_closed_on_invalid_json(self) -> None:
+        with mock.patch.object(
+            branch_garden.subprocess, "run", return_value=mock.Mock(stdout="not json")
+        ):
+            with self.assertRaises(RuntimeError) as exc:
+                branch_garden.run_json(["gh", "pr", "list"])
+
+        self.assertIn("invalid JSON", str(exc.exception))
+
+    def test_living_worktree_branches_degrades_to_empty_set_when_git_missing(self) -> None:
+        with mock.patch.object(
+            branch_garden.subprocess, "run", side_effect=FileNotFoundError("git")
+        ):
+            self.assertEqual(branch_garden.living_worktree_branches(), set())
+
 
 if __name__ == "__main__":
     unittest.main()
