@@ -3,7 +3,6 @@
 Setup script to download and build tree-sitter language grammars
 """
 
-import os
 import shutil
 import subprocess
 from pathlib import Path
@@ -61,10 +60,11 @@ def setup_grammars():
             shutil.rmtree(lang_dir)
     
     print(f"   ✓ Removed grammar sources (~{space_saved // (1024*1024)}MB saved)")
-    print(f"   ✓ Only kept: languages.so")
+    print("   ✓ Only kept: languages.so")
     
     print("\n🚀 Ready to use!")
     print("   python3 scripts/build_knowledge_graph.py <project_path> <output_dir>")
+
 
 if __name__ == '__main__':
     setup_grammars()

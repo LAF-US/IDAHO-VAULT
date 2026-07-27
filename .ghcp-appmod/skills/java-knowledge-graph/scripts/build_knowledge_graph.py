@@ -28,15 +28,14 @@ Example:
   python3 build_knowledge_graph.py /path/to/project /tmp/kg-output
 """
 
-import os
 import sys
 import json
 import re
 import shutil
 import platform
 from pathlib import Path
-from typing import Dict, List, Set, Optional, Tuple, Any
-from dataclasses import dataclass, field, asdict
+from typing import Dict, List, Optional, Tuple, Any
+from dataclasses import dataclass, field
 from datetime import datetime
 import subprocess
 
@@ -64,6 +63,7 @@ def check_graphviz() -> bool:
         return True
     except (FileNotFoundError, subprocess.CalledProcessError, subprocess.TimeoutExpired):
         return False
+
 
 GRAPHVIZ_AVAILABLE = check_graphviz()
 
@@ -154,6 +154,7 @@ class ParsedFile:
     package: str
     imports: List[str] = field(default_factory=list)
     classes: List[JavaClass] = field(default_factory=list)
+
 
 # ============================================================================
 # CONSTANTS
@@ -368,7 +369,6 @@ def parse_ant_build(build_path: Path) -> BuildModule:
 def parse_ivy_xml(ivy_path: Path) -> List[Dependency]:
     """Parse Ivy ivy.xml (inline XML parsing)"""
     try:
-        import xml.etree.ElementTree as ET
         import defusedxml.ElementTree as DefusedET
         tree = DefusedET.parse(ivy_path)
         root = tree.getroot()
@@ -611,11 +611,11 @@ def load_tree_sitter_language(lang_name: str) -> Optional[Language]:
     
     if not so_file.exists():
         print(f"❌ Error: Tree-sitter grammars not found: {so_file}")
-        print(f"")
-        print(f"📦 Install grammars first:")
+        print("")
+        print("📦 Install grammars first:")
         print(f"   cd {script_dir.parent}")
-        print(f"   python3 scripts/install_grammars.py")
-        print(f"")
+        print("   python3 scripts/install_grammars.py")
+        print("")
         sys.exit(1)
     
     try:
@@ -823,24 +823,24 @@ def find_source_files(project_path: Path) -> Dict[str, List[Path]]:
     for kt_file in project_path.rglob('*.kt'):
         file_str = str(kt_file)
         if 'build' not in kt_file.parts:
-            if ('/src/main/' in file_str or '\\src\\main\\' in file_str or
-                '/src/' in file_str or '\\src\\' in file_str):
+            if ('/src/main/' in file_str or '\\src\\main\\' in file_str
+                    or '/src/' in file_str or '\\src\\' in file_str):
                 source_files['kotlin'].append(kt_file)
     
     # Scala files
     for scala_file in project_path.rglob('*.scala'):
         file_str = str(scala_file)
         if 'target' not in scala_file.parts and 'build' not in scala_file.parts:
-            if ('/src/main/' in file_str or '\\src\\main\\' in file_str or
-                '/src/' in file_str or '\\src\\' in file_str):
+            if ('/src/main/' in file_str or '\\src\\main\\' in file_str
+                    or '/src/' in file_str or '\\src\\' in file_str):
                 source_files['scala'].append(scala_file)
     
     # Groovy files
     for groovy_file in project_path.rglob('*.groovy'):
         file_str = str(groovy_file)
         if 'build' not in groovy_file.parts:
-            if ('/src/main/' in file_str or '\\src\\main\\' in file_str or
-                '/src/' in file_str or '\\src\\' in file_str):
+            if ('/src/main/' in file_str or '\\src\\main\\' in file_str
+                    or '/src/' in file_str or '\\src\\' in file_str):
                 source_files['groovy'].append(groovy_file)
     
     return source_files
@@ -1338,7 +1338,7 @@ def build_knowledge_graph(project_path: str, output_dir: str = 'kg-output'):
     output_path.mkdir(exist_ok=True, parents=True)
     
     # Cleanup old files
-    print(f"\n🧹 Cleaning output directory...")
+    print("\n🧹 Cleaning output directory...")
     removed_count = 0
     for item in output_path.iterdir():
         if item.is_file():
@@ -1352,7 +1352,7 @@ def build_knowledge_graph(project_path: str, output_dir: str = 'kg-output'):
         print(f"   Cleaned {removed_count} items")
     
     # Detect build system and parse modules
-    print(f"\n📦 Detecting build system...")
+    print("\n📦 Detecting build system...")
     build_system, modules = detect_build_system(project_root)
     print(f"   Build system: {build_system}")
     print(f"   Found {len(modules)} modules")
@@ -1361,7 +1361,7 @@ def build_knowledge_graph(project_path: str, output_dir: str = 'kg-output'):
         print(f"   ✓ {module.name}")
     
     # Find and parse source files
-    print(f"\n📝 Parsing source files...")
+    print("\n📝 Parsing source files...")
     source_files = find_source_files(project_root)
     
     total_files = sum(len(files) for files in source_files.values())
@@ -1380,7 +1380,7 @@ def build_knowledge_graph(project_path: str, output_dir: str = 'kg-output'):
     print(f"   Successfully parsed: {len(parsed_files)} files")
     
     # Build knowledge graph
-    print(f"\n🏗️  Building knowledge graph...")
+    print("\n🏗️  Building knowledge graph...")
     
     nodes = []
     edges = []
@@ -1595,18 +1595,22 @@ def build_knowledge_graph(project_path: str, output_dir: str = 'kg-output'):
         'edges': edges,
     }
     
-    print(f"\n📊 Statistics:")
+    print("\n📊 Statistics:")
     print(f"   Modules: {len(modules)}")
-    print(f"   Types: {type_count} ({type_distribution.get('class', 0)} classes, {type_distribution.get('interface', 0)} interfaces, {type_distribution.get('enum', 0)} enums)")
+    print(
+        f"   Types: {type_count} ({type_distribution.get('class', 0)} classes, "
+        f"{type_distribution.get('interface', 0)} interfaces, "
+        f"{type_distribution.get('enum', 0)} enums)"
+    )
     print(f"   Dependencies: {dep_count}")
     print(f"   Module Dependencies: {module_dep_count}")
     print(f"   Module Aggregations: {aggregation_count}")
     
-    print(f"\n📚 Languages:")
+    print("\n📚 Languages:")
     for lang, count in sorted(language_distribution.items()):
         print(f"   {lang}: {count}")
     
-    print(f"\n🏗️  Architecture layers:")
+    print("\n🏗️  Architecture layers:")
     for layer, count in sorted(layer_distribution.items(), key=lambda x: x[1], reverse=True):
         print(f"   {layer}: {count}")
     
@@ -1617,7 +1621,7 @@ def build_knowledge_graph(project_path: str, output_dir: str = 'kg-output'):
     print(f"\n💾 Knowledge graph saved to: {json_file}")
     
     # Generate visualizations
-    print(f"\n🔗 Generating diagrams...")
+    print("\n🔗 Generating diagrams...")
     
     modules = [n for n in knowledge_graph['nodes'] if n['type'] == 'module']
     build_system = knowledge_graph['metadata']['buildSystem']
@@ -1635,7 +1639,7 @@ def build_knowledge_graph(project_path: str, output_dir: str = 'kg-output'):
         generate_project_dot(knowledge_graph, output_path)
     
     if not GRAPHVIZ_AVAILABLE:
-        print(f"\n⚠️  Graphviz not found - DOT files generated but SVGs skipped")
+        print("\n⚠️  Graphviz not found - DOT files generated but SVGs skipped")
         instructions = get_graphviz_install_instructions()
         print(instructions)
         
@@ -1656,7 +1660,7 @@ for file in module-*.dot; do
 done
 """)
     
-    print(f"\n✅ Done!")
+    print("\n✅ Done!")
     
     return knowledge_graph
 
@@ -1986,7 +1990,7 @@ def generate_module_dot_files(kg: Dict, output_path: Path):
             
             dot_content += f'  subgraph cluster_ext_{cluster_idx} {{\n'
             dot_content += f'    label="{label}";\n'
-            dot_content += f'    style=filled;\n'
+            dot_content += '    style=filled;\n'
             dot_content += f'    fillcolor="{fillcolor}";\n'
             dot_content += f'    color="{bordercolor}";\n\n'
             
@@ -2060,6 +2064,7 @@ def main():
     output_dir = sys.argv[2] if len(sys.argv) > 2 else 'kg-output'
     
     build_knowledge_graph(project_path, output_dir)
+
 
 if __name__ == '__main__':
     main()
