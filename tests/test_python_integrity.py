@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import importlib.util
 import io
+import os
 import subprocess  # nosec B404 -- see [tool.bandit] note in pyproject.toml
 import sys
 from pathlib import Path
@@ -42,6 +43,35 @@ def test_invalid_utf8_is_flagged_not_silently_replaced(tmp_path: Path) -> None:
     findings = checker.python_file_findings(path)
 
     assert any("not valid UTF-8" in finding for finding in findings)
+
+
+def test_tracked_python_files_finds_non_utf8_filenames(tmp_path: Path) -> None:
+    """git ls-files -z output must round-trip losslessly: a filename that
+    isn't valid UTF-8 must still resolve to the real on-disk file, not get
+    silently dropped by a lossy decode changing the string it's looked up
+    with (the exact corruption this checker exists to catch)."""
+    subprocess.run(["git", "init", "-q"], cwd=tmp_path, check=True, capture_output=True, timeout=10)
+    subprocess.run(
+        ["git", "-C", str(tmp_path), "config", "user.email", "t@t.com"],
+        check=True, capture_output=True, timeout=10,
+    )
+    subprocess.run(
+        ["git", "-C", str(tmp_path), "config", "user.name", "t"],
+        check=True, capture_output=True, timeout=10,
+    )
+    # A lone continuation byte (0x80) is never valid UTF-8 on its own, but
+    # git and POSIX filesystems don't care -- filenames are just bytes.
+    weird_name = b"weird-\x80-name.py"
+    weird_path = tmp_path / os.fsdecode(weird_name)
+    weird_path.write_bytes(b"VALUE = 1\n")
+    subprocess.run(
+        ["git", "-C", str(tmp_path), "add", "--", os.fsdecode(weird_name)],
+        check=True, capture_output=True, timeout=10,
+    )
+
+    found = checker.tracked_python_files(tmp_path)
+
+    assert weird_path.resolve() in {p.resolve() for p in found}
 
 
 def test_unreadable_file_is_flagged_not_a_crash(tmp_path: Path, monkeypatch) -> None:
