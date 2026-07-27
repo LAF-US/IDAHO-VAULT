@@ -13,6 +13,7 @@ def _load_topology_census_module():
     project_root = Path(__file__).resolve().parents[1]
     script_path = project_root / ".github" / "scripts" / "topology_census.py"
     spec = importlib.util.spec_from_file_location("topology_census_test_module", script_path)
+    assert spec is not None
     module = importlib.util.module_from_spec(spec)
     assert spec.loader is not None
     spec.loader.exec_module(module)

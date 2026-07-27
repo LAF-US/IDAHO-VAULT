@@ -11,6 +11,7 @@ def _load_validate_content_module():
     project_root = Path(__file__).resolve().parents[1]
     script_path = project_root / ".github" / "scripts" / "validate_content.py"
     spec = importlib.util.spec_from_file_location("validate_content_test_module", script_path)
+    assert spec is not None
     module = importlib.util.module_from_spec(spec)
     assert spec.loader is not None
     spec.loader.exec_module(module)

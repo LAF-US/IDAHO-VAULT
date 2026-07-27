@@ -14,6 +14,7 @@ ROOT = Path(__file__).resolve().parents[1]
 def load_checker():
     script_path = ROOT / ".github" / "scripts" / "check_python_integrity.py"
     spec = importlib.util.spec_from_file_location("check_python_integrity_test_module", script_path)
+    assert spec is not None
     module = importlib.util.module_from_spec(spec)
     assert spec.loader is not None
     sys.modules[spec.name] = module
@@ -46,10 +47,14 @@ def test_invalid_utf8_is_flagged_not_silently_replaced(tmp_path: Path) -> None:
 
 
 def test_tracked_python_files_finds_non_utf8_filenames(tmp_path: Path) -> None:
-    """git ls-files -z output must round-trip losslessly: a filename that
-    isn't valid UTF-8 must still resolve to the real on-disk file, not get
-    silently dropped by a lossy decode changing the string it's looked up
-    with (the exact corruption this checker exists to catch)."""
+    """
+    Git ls-files -z output must round-trip losslessly.
+
+    A filename that isn't valid UTF-8 must still resolve to the real
+    on-disk file, not get silently dropped by a lossy decode changing the
+    string it's looked up with (the exact corruption this checker exists
+    to catch).
+    """
     subprocess.run(["git", "init", "-q"], cwd=tmp_path, check=True, capture_output=True, timeout=10)
     subprocess.run(
         ["git", "-C", str(tmp_path), "config", "user.email", "t@t.com"],
@@ -220,8 +225,11 @@ def _init_git_repo_with_violation(root: Path) -> None:
 
 
 def test_paths_from_stdin_gates_only_changed_files(tmp_path: Path, monkeypatch) -> None:
-    """A pre-existing violation outside the changed set must warn, not fail —
-    the whole-repo scan this guards against would block every future PR."""
+    """
+    A pre-existing violation outside the changed set must warn, not fail.
+
+    The whole-repo scan this guards against would block every future PR.
+    """
     _init_git_repo_with_violation(tmp_path)
 
     monkeypatch.setattr(sys, "stdin", io.StringIO("clean.py\n"))
@@ -234,9 +242,13 @@ def test_paths_from_stdin_gates_only_changed_files(tmp_path: Path, monkeypatch) 
 
 
 def test_paths_from_stdin_strips_incidental_whitespace(tmp_path: Path, monkeypatch) -> None:
-    """Trailing padding on a stdin line (not removed by splitlines(), which
-    only strips line terminators) must not desync it from the exact posix
-    path string, or the gate silently stops matching that file."""
+    """
+    Trailing padding on a stdin line must not desync path matching.
+
+    splitlines() only strips line terminators, not incidental whitespace,
+    so a padded line must not desync from the exact posix path string --
+    or the gate silently stops matching that file.
+    """
     _init_git_repo_with_violation(tmp_path)
 
     monkeypatch.setattr(sys, "stdin", io.StringIO("violator.py \n"))

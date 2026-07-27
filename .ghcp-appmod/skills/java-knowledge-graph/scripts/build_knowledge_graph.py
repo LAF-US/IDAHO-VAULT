@@ -181,7 +181,8 @@ LAYER_PATTERNS = {
 # ============================================================================
 
 def _reject_doctype(path: Path) -> None:
-    """Refuse a DOCTYPE declaration before handing a file to ElementTree.
+    """
+    Refuse a DOCTYPE declaration before handing a file to ElementTree.
 
     stdlib ElementTree has no switch to disable DTD/entity processing, so a
     malicious pom.xml/build.xml carrying a DOCTYPE could trigger XXE

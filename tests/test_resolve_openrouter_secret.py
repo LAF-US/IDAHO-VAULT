@@ -14,6 +14,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 def _load_module():
     script_path = PROJECT_ROOT / "!-resolve_openrouter_secret.py"
     spec = importlib.util.spec_from_file_location("resolve_openrouter_secret_test_module", script_path)
+    assert spec is not None
     module = importlib.util.module_from_spec(spec)
     assert spec.loader is not None
     sys.modules[spec.name] = module

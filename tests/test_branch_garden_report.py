@@ -13,6 +13,7 @@ def _load_branch_garden_module():
     project_root = Path(__file__).resolve().parents[1]
     script_path = project_root / ".github" / "scripts" / "branch_garden_report.py"
     spec = importlib.util.spec_from_file_location("branch_garden_report_test_module", script_path)
+    assert spec is not None
     module = importlib.util.module_from_spec(spec)
     assert spec.loader is not None
     sys.modules[spec.name] = module
