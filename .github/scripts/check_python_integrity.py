@@ -174,7 +174,13 @@ def _display_path(path: Path, root: Path) -> str:
 def _digests_by_content(files: list[Path]) -> dict[str, list[Path]]:
     by_digest: dict[str, list[Path]] = defaultdict(list)
     for path in files:
-        by_digest[hashlib.sha256(path.read_bytes()).hexdigest()].append(path)
+        try:
+            content = path.read_bytes()
+        except OSError:
+            # An unreadable file is already reported by python_file_findings();
+            # skip it here rather than crash the duplicate-digest pass.
+            continue
+        by_digest[hashlib.sha256(content).hexdigest()].append(path)
     return by_digest
 
 
