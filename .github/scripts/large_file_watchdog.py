@@ -41,7 +41,7 @@ def main() -> int:
     except OSError as exc:
         print(f"large_file_watchdog: git ls-files could not run: {exc}", file=sys.stderr)
         return 1
-    tracked = [Path(p.decode("utf-8")) for p in result.stdout.split(b"\0") if p]
+    tracked = [Path(p.decode("utf-8", errors="replace")) for p in result.stdout.split(b"\0") if p]
 
     offenders: list[tuple[int, Path]] = []
     total_bytes = 0

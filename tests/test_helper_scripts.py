@@ -3,6 +3,7 @@ from __future__ import annotations
 import importlib.util
 import io
 import sys
+import tempfile
 import types
 import unittest
 from contextlib import redirect_stderr, redirect_stdout
@@ -138,6 +139,27 @@ class HelperScriptsTest(unittest.TestCase):
 
         self.assertEqual(status, 1)
         self.assertIn("could not run", captured_stderr.getvalue())
+
+    def test_large_file_watchdog_tolerates_non_utf8_tracked_filenames(self) -> None:
+        # A lone continuation byte (0x80) is never valid UTF-8 on its own --
+        # git can still track a file whose name isn't valid UTF-8.
+        stdout = b"weird-\x80-name.md\0"
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            report_path = Path(tmp_dir) / "report.md"
+            with (
+                patch.object(
+                    large_file_watchdog.subprocess,
+                    "run",
+                    return_value=types.SimpleNamespace(returncode=0, stdout=stdout, stderr=b""),
+                ),
+                patch.object(
+                    sys, "argv", ["large_file_watchdog.py", "--report-path", str(report_path)]
+                ),
+                redirect_stdout(io.StringIO()),
+            ):
+                status = large_file_watchdog.main()
+
+        self.assertEqual(status, 0)
 
 
 class JupytextSyncPairedTest(unittest.TestCase):
