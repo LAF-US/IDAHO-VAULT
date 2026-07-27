@@ -30,12 +30,16 @@ STALE_LIFECYCLE_STATE = "abandoned"
 
 
 def run_json(cmd: list[str]) -> object:
-    result = subprocess.run(cmd, check=True, capture_output=True, text=True, timeout=60)
+    result = subprocess.run(
+        cmd, check=True, capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=60
+    )
     return json.loads(result.stdout)
 
 
 def run_text(cmd: list[str]) -> str:
-    result = subprocess.run(cmd, check=True, capture_output=True, text=True, timeout=60)
+    result = subprocess.run(
+        cmd, check=True, capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=60
+    )
     return result.stdout.strip()
 
 

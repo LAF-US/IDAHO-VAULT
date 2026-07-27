@@ -145,6 +145,8 @@ def tracked_python_files(root: Path) -> list[Path]:
             check=False,
             capture_output=True,
             text=True,
+            encoding="utf-8",
+            errors="replace",
             timeout=30,
         )
     except subprocess.TimeoutExpired as exc:
