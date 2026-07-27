@@ -131,18 +131,14 @@ def _select_lane(  # pylint: disable=too-many-arguments,too-many-positional-argu
     return "needs-human"  # defensive; every unresolved thread is classified above
 
 
-def _classify_pr_for_looker(  # pylint: disable=too-many-locals
-    pr: dict, *, now: datetime | None = None, stale_days: int = LOOKER_STALE_DAYS
-) -> dict:
-    """Sort one PR into a looker lane. Pure and read-only — resolves nothing."""
-    now = now or datetime.now(timezone.utc)
-    review_threads = pr.get("reviewThreads") or {}
-    threads = review_threads.get("nodes") or []
-    # The thread list itself is fetched first: 100. If it is truncated, a blocking
-    # human/unprovable thread may lie beyond the page — the PR is never safe to drain.
-    threads_truncated = bool((review_threads.get("pageInfo") or {}).get("hasNextPage"))
-    unresolved = [t for t in threads if not t.get("isResolved")]
+def _tally_thread_plan(
+    unresolved: list[dict],
+) -> tuple[list[dict[str, object]], dict[str, int]]:
+    """Disposition each unresolved thread into a plan + per-lane counts. Pure.
 
+    Split out of `_classify_pr_for_looker` so the per-thread tally is independently
+    testable and the classifier's own branching stays low.
+    """
     plan: list[dict[str, object]] = []
     counts = {"human": 0, "unprovable": 0, "looked-open": 0, "bot-disposable": 0}
     for thread in unresolved:
@@ -156,45 +152,78 @@ def _classify_pr_for_looker(  # pylint: disable=too-many-locals
                 "authors": sorted(_thread_authors(thread)),
             }
         )
+    return plan, counts
 
+
+def _tally_resolution_counts(plan: list[dict[str, object]]) -> dict[str, int]:
+    """Count plan entries by their bare-resolution disposition. Pure."""
     resolution_counts: dict[str, int] = {}
     for entry in plan:
         key = str(entry["resolution"])
         resolution_counts[key] = resolution_counts.get(key, 0) + 1
+    return resolution_counts
 
-    review_decision = pr.get("reviewDecision") or ""
-    auto_merge_armed = bool((pr.get("autoMergeRequest") or {}).get("enabledAt"))
+
+def _looker_pr_signals(pr: dict, *, now: datetime, stale_days: int) -> dict[str, object]:
+    """Derive the PR-level lane signals (review decision, arming, staleness). Pure."""
     last_activity = _parse_iso_datetime(pr.get("updatedAt") or pr.get("createdAt"))
-    stale = bool(last_activity and (now - last_activity) >= timedelta(days=stale_days))
+    return {
+        "review_decision": pr.get("reviewDecision") or "",
+        "auto_merge_armed": bool((pr.get("autoMergeRequest") or {}).get("enabledAt")),
+        "stale": bool(
+            last_activity and (now - last_activity) >= timedelta(days=stale_days)
+        ),
+    }
+
+
+def _is_safe_to_drain(lane: str, *, stale: bool, plan: list[dict[str, object]]) -> bool:
+    """The APPLY-PASS candidate signal. A bare attest-and-resolve could clear every
+    thread WITHOUT a fix, so it demands more than the coarse machine-disposable lane:
+    the PR must not be stale, and every thread must be bare-resolvable (outdated/looked).
+    A needs-fix or apply-suggestion thread is NOT bare-drainable. (codex on #529.)
+    """
+    return (
+        lane == "machine-disposable"
+        and not stale
+        and all(entry["resolution"] in BARE_RESOLVABLE_DISPOSITIONS for entry in plan)
+    )
+
+
+def _classify_pr_for_looker(
+    pr: dict, *, now: datetime | None = None, stale_days: int = LOOKER_STALE_DAYS
+) -> dict:
+    """Sort one PR into a looker lane. Pure and read-only — resolves nothing."""
+    now = now or datetime.now(timezone.utc)
+    review_threads = pr.get("reviewThreads") or {}
+    threads = review_threads.get("nodes") or []
+    # The thread list itself is fetched first: 100. If it is truncated, a blocking
+    # human/unprovable thread may lie beyond the page — the PR is never safe to drain.
+    threads_truncated = bool((review_threads.get("pageInfo") or {}).get("hasNextPage"))
+    unresolved = [t for t in threads if not t.get("isResolved")]
+
+    plan, counts = _tally_thread_plan(unresolved)
+    resolution_counts = _tally_resolution_counts(plan)
     machine_clearable = counts["bot-disposable"] + counts["looked-open"]
+    signals = _looker_pr_signals(pr, now=now, stale_days=stale_days)
 
     lane = _select_lane(
         threads_truncated=threads_truncated,
-        review_decision=review_decision,
+        review_decision=signals["review_decision"],
         human=counts["human"],
         unprovable=counts["unprovable"],
         unresolved_count=len(unresolved),
         machine_clearable=machine_clearable,
-        auto_merge_armed=auto_merge_armed,
+        auto_merge_armed=signals["auto_merge_armed"],
     )
 
     return {
         "pr": pr.get("number"),
         "url": pr.get("url"),
         "lane": lane,
-        "stale": stale,
-        # safe_to_drain is the APPLY-PASS candidate signal: a bare attest-and-resolve
-        # could clear every thread WITHOUT a fix. It requires more than the coarse
-        # machine-disposable lane — every thread must be bare-resolvable (outdated/looked).
-        # A needs-fix or apply-suggestion thread is NOT bare-drainable (needs a real fix /
-        # applied suggestion), so it must not be advertised as drainable. (codex on #529.)
-        "safe_to_drain": (
-            lane == "machine-disposable"
-            and not stale
-            and all(entry["resolution"] in BARE_RESOLVABLE_DISPOSITIONS for entry in plan)
-        ),
-        "auto_merge_armed": auto_merge_armed,
-        "review_decision": review_decision or None,
+        "stale": signals["stale"],
+        "safe_to_drain": _is_safe_to_drain(lane, stale=signals["stale"], plan=plan),
+        "auto_merge_armed": signals["auto_merge_armed"],
+        "review_decision": signals["review_decision"] or None,
         "is_draft": bool(pr.get("isDraft")),
         "threads_truncated": threads_truncated,
         "unresolved_threads": len(unresolved),
@@ -273,22 +302,35 @@ def looker_walk(args: argparse.Namespace) -> int:
     return 0
 
 
-def render_looker_worklist(report: dict) -> str:
-    """Render a looker-walk report (the `looker_walk` JSON) as a markdown worklist. Pure.
+def _fmt_counts(mapping: dict) -> str:
+    """Format a {key: count} mapping as a compact ` · `-joined string. Pure."""
+    return " · ".join(f"{key}: {value}" for key, value in sorted(mapping.items())) or "none"
 
-    A read-only triage surface for a durable issue: the open-PR backlog grouped by lane
-    and by resolution disposition, so a looker can drain it with judgment. Resolves
-    nothing and decides nothing — it only makes the deterministic census legible.
-    """
 
-    def _counts(mapping: dict) -> str:
-        return " · ".join(f"{key}: {value}" for key, value in sorted(mapping.items())) or "none"
+def _pr_worklist_row(r: dict) -> str:
+    """Render one actionable PR as a markdown worklist row (with flag suffix). Pure."""
+    flags = [
+        flag
+        for flag, on in (
+            ("stale", r.get("stale")),
+            ("auto-merge-armed", r.get("auto_merge_armed")),
+            ("threads-truncated", r.get("threads_truncated")),
+        )
+        if on
+    ]
+    flag_s = f" _({', '.join(flags)})_" if flags else ""
+    return (
+        f"- **#{r.get('pr')}** — lane `{r.get('lane')}` · "
+        f"{int(r.get('unresolved_threads') or 0)} unresolved "
+        f"({_fmt_counts(r.get('resolution_counts') or {})}){flag_s}"
+    )
 
+
+def _worklist_header(report: dict) -> list[str]:
+    """Build the summary header block (totals, by-lane/by-resolution, safe_to_drain). Pure."""
     open_prs = int(report.get("open_prs") or 0)
     stale = int(report.get("stale") or 0)
     safe = report.get("safe_to_drain") or []
-    reports = report.get("reports") or []
-
     lines = [
         "## Looker Worklist — review-thread triage (read-only)",
         "",
@@ -296,14 +338,17 @@ def render_looker_worklist(report: dict) -> str:
         "> The gated apply pass (`attest-resolve --apply`) is a separate decision.",
         "",
         f"- **Open PRs:** {open_prs} · **stale:** {stale}",
-        f"- **By lane:** {_counts(report.get('by_lane') or {})}",
-        f"- **By resolution:** {_counts(report.get('by_resolution') or {})}",
+        f"- **By lane:** {_fmt_counts(report.get('by_lane') or {})}",
+        f"- **By resolution:** {_fmt_counts(report.get('by_resolution') or {})}",
         "",
         "### `safe_to_drain` — bare-resolvable, non-stale (a gated apply pass could clear)",
     ]
     lines.extend([f"- #{pr}" for pr in safe] or ["- none"])
-    lines.append("")
-    lines.append("### Per-PR worklist (PRs not in the `clear` lane)")
+    return lines
+
+
+def _worklist_body(reports: list) -> list[str]:
+    """Build the per-PR worklist rows for every PR not in the `clear` lane. Pure."""
     # Filter on lane, NOT visible unresolved count: a PR whose thread list is truncated
     # past page 1 is lane `needs-human` with possibly 0 *visible* unresolved threads — it
     # must still surface, because the census cannot prove it is clear. (codex on #531.)
@@ -311,25 +356,22 @@ def render_looker_worklist(report: dict) -> str:
         (r for r in reports if r.get("lane") != "clear"),
         key=lambda r: int(r.get("pr") or 0),
     )
-    if actionable:
-        for r in actionable:
-            flags = [
-                flag
-                for flag, on in (
-                    ("stale", r.get("stale")),
-                    ("auto-merge-armed", r.get("auto_merge_armed")),
-                    ("threads-truncated", r.get("threads_truncated")),
-                )
-                if on
-            ]
-            flag_s = f" _({', '.join(flags)})_" if flags else ""
-            lines.append(
-                f"- **#{r.get('pr')}** — lane `{r.get('lane')}` · "
-                f"{int(r.get('unresolved_threads') or 0)} unresolved "
-                f"({_counts(r.get('resolution_counts') or {})}){flag_s}"
-            )
-    else:
-        lines.append("- none — every open PR is in the `clear` lane.")
+    if not actionable:
+        return ["- none — every open PR is in the `clear` lane."]
+    return [_pr_worklist_row(r) for r in actionable]
+
+
+def render_looker_worklist(report: dict) -> str:
+    """Render a looker-walk report (the `looker_walk` JSON) as a markdown worklist. Pure.
+
+    A read-only triage surface for a durable issue: the open-PR backlog grouped by lane
+    and by resolution disposition, so a looker can drain it with judgment. Resolves
+    nothing and decides nothing — it only makes the deterministic census legible.
+    """
+    lines = _worklist_header(report)
+    lines.append("")
+    lines.append("### Per-PR worklist (PRs not in the `clear` lane)")
+    lines.extend(_worklist_body(report.get("reports") or []))
     lines.append("")
     return "\n".join(lines)
 
