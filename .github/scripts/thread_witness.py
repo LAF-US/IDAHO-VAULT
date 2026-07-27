@@ -108,7 +108,7 @@ def _thread_disposition(thread: dict) -> str:
     return "bot-disposable"
 
 
-def _select_lane(
+def _select_lane(  # pylint: disable=too-many-arguments,too-many-positional-arguments
     *,
     threads_truncated: bool,
     review_decision: str,
@@ -131,7 +131,7 @@ def _select_lane(
     return "needs-human"  # defensive; every unresolved thread is classified above
 
 
-def _classify_pr_for_looker(
+def _classify_pr_for_looker(  # pylint: disable=too-many-locals
     pr: dict, *, now: datetime | None = None, stale_days: int = LOOKER_STALE_DAYS
 ) -> dict:
     """Sort one PR into a looker lane. Pure and read-only — resolves nothing."""
@@ -342,6 +342,7 @@ def render_worklist(args: argparse.Namespace) -> int:
 
 
 def build_parser() -> argparse.ArgumentParser:
+    """Build the CLI parser for the looker's read-only subcommands."""
     parser = argparse.ArgumentParser(prog="thread_witness")
     subparsers = parser.add_subparsers(dest="command", required=True)
 
@@ -370,6 +371,7 @@ def build_parser() -> argparse.ArgumentParser:
 
 
 def main() -> int:
+    """Dispatch the parsed read-only looker subcommand."""
     args = build_parser().parse_args()
     if args.command == "list-unlooked":
         return list_unlooked(args)
