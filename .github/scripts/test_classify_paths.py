@@ -160,7 +160,7 @@ class CombineTest(unittest.TestCase):
 class ChangesetTest(unittest.TestCase):
     def _run(self, paths):
         out = subprocess.run([sys.executable, str(SCRIPT)], input="\n".join(paths),
-                             capture_output=True, text=True, check=True)
+                             capture_output=True, text=True, check=True, timeout=30)
         return json.loads(out.stdout)
 
     def test_prose_only_pr_is_clear(self):

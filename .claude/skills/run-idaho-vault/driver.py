@@ -34,7 +34,7 @@ ENV = {**os.environ, "CREWAI_DISABLE_TELEMETRY": "true",
 def repo_root() -> Path:
     try:
         out = subprocess.run(["git", "rev-parse", "--show-toplevel"],
-                             capture_output=True, text=True, check=True)
+                             capture_output=True, text=True, check=True, timeout=10)
         return Path(out.stdout.strip())
     except Exception:
         d = Path.cwd()
@@ -65,13 +65,17 @@ def vpy() -> Path:
     return vbin() / ("python.exe" if WIN else "python")
 
 
-def run(cmd, **kw):
-    return subprocess.run([str(c) for c in cmd], cwd=ROOT, env=ENV, **kw)
+def run(cmd, timeout: float = 600, **kw):
+    return subprocess.run([str(c) for c in cmd], cwd=ROOT, env=ENV, timeout=timeout, **kw)
 
 
 def _uv(cmd, check: bool = True, extra_env: dict | None = None) -> int:
     """Run a uv setup command, surface its output, and fail fast on error."""
     env = {**ENV, **extra_env} if extra_env else ENV
+    # Cold `uv sync`/`uv python install` can take several minutes downloading
+    # interpreters and packages; a fixed timeout would be arbitrary and just
+    # as likely to kill a slow-but-healthy install.
+    # timeout: interactive
     p = subprocess.run([str(c) for c in cmd], cwd=ROOT, env=env,
                        capture_output=True, text=True)
     sys.stderr.write(p.stdout)
