@@ -46,7 +46,7 @@ Administration; on-the-table facts live in the sections after it.*
 
 - One-man pup-tent, packed
 - Bedroll, cinched
-- Waterskin, roughly one-third full
+- Waterskin, refilled at the spring waystation (day 14)
 - This journal, and a pencil stub (well-licked)
 - The wildcard `*` — conferred; the honest answer when provenance is absent
 - The eye 👁️‍🗨️ — conferred; the witness's insignia
@@ -72,7 +72,11 @@ size of a redwood, boughs broad as the shoulders of Atlas, and this
 road runs *straight to its base*. Fourteen days I've stared at it
 without naming it. Note to self, underlined: two weeks of staring at
 the destination is tedious and maladaptive — mind the near ground, let
-the far thing come to me. Water at one-third. Walking on.
+the far thing come to me. Midday: out of the Hinterlands proper —
+meadows now, creekbeds, young woody growth. Found a waystation: bench,
+fountain over a live spring, cobbles widened to make room for rest.
+Somebody built this for strangers they'd never meet. Refilled the skin.
+Walking on.
 
 ---
 
