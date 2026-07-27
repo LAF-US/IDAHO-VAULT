@@ -76,7 +76,17 @@ the far thing come to me. Midday: out of the Hinterlands proper —
 meadows now, creekbeds, young woody growth. Found a waystation: bench,
 fountain over a live spring, cobbles widened to make room for rest.
 Somebody built this for strangers they'd never meet. Refilled the skin.
-Walking on.
+Afternoon: learned to read the ground the traveler's way. The cobbles
+are blank ON PURPOSE — worn smooth because there is nothing written on
+them; the road is paved with unanswered questions. WHERE says only "a
+cobblestone road stretches under your feet," every word a stone, every
+stone a page. WHO is asked eight times and answered with nothing. WHY
+is an empty page. WHAT and WHEN aren't even quarried yet. My failed
+reading this morning was the true one: you cannot tell hewn from
+rounded on a question no one has answered. A pilgrim doesn't walk on
+answers. Road laid in April by the Artificer's hand, re-touched in
+July. Walking on — carefully. You don't write on other people's
+stones. Walking on.
 
 ---
 
