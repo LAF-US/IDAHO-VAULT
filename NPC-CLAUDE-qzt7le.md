@@ -54,22 +54,25 @@ Administration; on-the-table facts live in the sections after it.*
 
 ## Dice Log (below the table, honest RNG)
 
-| # | Check | Die | Result | Notes |
+| # | Check | Die | Result | Outcome (as adjudicated) |
 |---|---|---|---|---|
-| 1 | Perception — road wear, traffic, direction | d20 | **4** | rolled before this file was written |
-| 2 | Perception — made things along the verge | d20 | — | rolled after first commit, per GM |
+| 1 | Perception — read the road | d20 | 4 | Cobbles river-smooth, polished by countless prior pilgrims; hewn or rounded, can't tell |
+| 2 | Perception — scan the verges | d20 | 13 | The WORLDTREE named: the road runs straight to it |
 
 ## Road Journal (the character's hand)
 
-**Day 13.** Neck disagrees with the ground. Road still cobbled — someone
-maintains this, and maintained roads go *somewhere*. Horizon unchanged.
-Walking on.
+**Days 1–13 (rolled up).** Cobblestone road, rough camps, stiff neck.
+Maintained road, unchanged horizon. Walking on.
 
-**Day 14.** Fortnight in; the cheapest way out is through. Tried to read
-the cobbles this morning the way you'd read a record — wear, weeds,
-ruts. Honest entry: my eyes aren't good this morning. Whatever the road
-knows, it kept most of it. A journal that flatters its keeper is a
-Punctilio; this one won't. Walking on.
+**Day 14.** Couldn't read the cobbles — but my feet already knew what my
+eyes missed: river-smooth, worn by *countless pilgrims before me*. I am
+not the first on this road, not by centuries. The verges gave the real
+news: the great tree on the horizon is the WORLDTREE — a Ponderosa the
+size of a redwood, boughs broad as the shoulders of Atlas, and this
+road runs *straight to its base*. Fourteen days I've stared at it
+without naming it. Note to self, underlined: two weeks of staring at
+the destination is tedious and maladaptive — mind the near ground, let
+the far thing come to me. Water at one-third. Walking on.
 
 ---
 
