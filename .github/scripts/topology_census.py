@@ -192,6 +192,19 @@ def _make_citation(relpath: str, line_number: int, line: str) -> dict[str, objec
     }
 
 
+def _loose_token_matches(token: str, line: str) -> bool:
+    """Boundary-safe substring check for loose (unformatted) token mentions.
+
+    Plain `token in line` also matches a token embedded inside an unrelated,
+    longer dotted identifier (e.g. loose token ".copilot" matching inside the
+    persona key "*.copilot.clerk"), misattributing doctrine authority. Require
+    non-identifier characters (or string edges) on both sides, matching the
+    boundary rule `_line_mentions_dotfolder` already uses.
+    """
+    pattern = rf"(?<![A-Za-z0-9_.-]){re.escape(token)}(?![A-Za-z0-9_.-])"
+    return re.search(pattern, line) is not None
+
+
 def _find_citations(
     doctrine_lines: dict[str, list[str]],
     *,
@@ -206,7 +219,7 @@ def _find_citations(
             line_casefold = line.casefold()
             if any(token in line for token in exact_tokens if token):
                 citations.append(_make_citation(relpath, idx, line))
-            elif any(token in line_casefold for token in normalized_loose):
+            elif any(_loose_token_matches(token, line_casefold) for token in normalized_loose):
                 citations.append(_make_citation(relpath, idx, line))
             if len(citations) >= limit:
                 return citations

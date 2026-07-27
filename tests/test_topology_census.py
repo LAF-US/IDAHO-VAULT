@@ -235,5 +235,52 @@ class TopologyCensusTest(unittest.TestCase):
             self.assertEqual(topology_census._git_tracked_files(self.root), set())
 
 
+class FindCitationsBoundaryTest(unittest.TestCase):
+    """Regression coverage for the 2026-06-08 census (PR #498) substring-attribution
+    finding: a loose token like `.copilot` must not match inside an unrelated,
+    longer dotted identifier such as `*.copilot.clerk`."""
+
+    def test_loose_token_does_not_match_inside_longer_identifier(self) -> None:
+        line = (
+            "| GitHub Copilot | `*.copilot.clerk` | **The Clerk** | Microsoft "
+            "| Admin | .github/ | `-CP` |"
+        )
+        doctrine_lines = {"!/AGENTS.md": [line]}
+
+        citations = topology_census._find_citations(
+            doctrine_lines,
+            exact_tokens=["`.copilot/`", "`.copilot`"],
+            loose_tokens=[".copilot/", ".copilot"],
+        )
+
+        self.assertEqual(citations, [])
+
+    def test_loose_token_still_matches_standalone_mention(self) -> None:
+        doctrine_lines = {"!/AGENTS.md": ["The `.copilot` dotfolder is admin-owned."]}
+
+        citations = topology_census._find_citations(
+            doctrine_lines,
+            exact_tokens=[],
+            loose_tokens=[".copilot/", ".copilot"],
+        )
+
+        self.assertEqual(len(citations), 1)
+
+    def test_github_loose_token_matches_own_column_in_copilot_row(self) -> None:
+        line = (
+            "| GitHub Copilot | `*.copilot.clerk` | **The Clerk** | Microsoft "
+            "| Admin | .github/ | `-CP` |"
+        )
+        doctrine_lines = {"!/AGENTS.md": [line]}
+
+        citations = topology_census._find_citations(
+            doctrine_lines,
+            exact_tokens=["`.github/`", "`.github`"],
+            loose_tokens=[".github/", ".github"],
+        )
+
+        self.assertEqual(len(citations), 1)
+
+
 if __name__ == "__main__":
     unittest.main()
