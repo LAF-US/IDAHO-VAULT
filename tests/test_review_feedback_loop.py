@@ -1999,12 +1999,11 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         # It posts the attestation and NEVER resolves/unresolves (already resolved).
         thread = _thread(resolved=True, authors=("coderabbitai",), author_type="Bot",
                          resolved_by="loganfinney27")
-        pr = _pr(threads=(thread,))
         with mock.patch.object(review_feedback_loop, "_viewer_login", return_value="loganfinney27"), \
              mock.patch.object(review_feedback_loop, "_add_thread_reply") as reply, \
              mock.patch.object(review_feedback_loop, "_resolve_thread") as resolve:
             result = review_feedback_loop.backfill_witness(
-                pr, thread, "loganfinney27", "ok", apply=True
+                thread, "loganfinney27", "ok", apply=True
             )
         reply.assert_called_once()      # the missing witness is posted
         resolve.assert_not_called()     # never resolves/unresolves
@@ -2016,10 +2015,9 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         # gain a witness from us — we never forge a look for someone else's resolve.
         thread = _thread(resolved=True, authors=("coderabbitai",), author_type="Bot",
                          resolved_by="some-human")
-        pr = _pr(threads=(thread,))
         with mock.patch.object(review_feedback_loop, "_add_thread_reply") as reply:
             result = review_feedback_loop.backfill_witness(
-                pr, thread, "loganfinney27", "ok", apply=True
+                thread, "loganfinney27", "ok", apply=True
             )
         reply.assert_not_called()
         self.assertFalse(result["eligible"])
@@ -2037,10 +2035,9 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         # Unresolved thread → not a backfill target.
         unresolved = _thread(resolved=False, authors=("coderabbitai",), author_type="Bot",
                              resolved_by=None)
-        pr = _pr()
         with mock.patch.object(review_feedback_loop, "_add_thread_reply") as reply:
-            r1 = review_feedback_loop.backfill_witness(pr, attested, looker, "ok", apply=True)
-            r2 = review_feedback_loop.backfill_witness(pr, unresolved, looker, "ok", apply=True)
+            r1 = review_feedback_loop.backfill_witness(attested, looker, "ok", apply=True)
+            r2 = review_feedback_loop.backfill_witness(unresolved, looker, "ok", apply=True)
         reply.assert_not_called()
         self.assertIn("already carries an attested look", r1["reason"])
         self.assertIn("not resolved", r2["reason"])
