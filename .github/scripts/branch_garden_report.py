@@ -38,18 +38,30 @@ class BranchState:
     living_worktree: bool = False
 
 
+def _run(cmd: list[str]) -> str:
+    try:
+        result = subprocess.run(
+            cmd, check=True, capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=60
+        )
+    except subprocess.TimeoutExpired as exc:
+        raise RuntimeError(f"{cmd[0]} timed out after 60s") from exc
+    except subprocess.CalledProcessError as exc:
+        raise RuntimeError((exc.stderr or "").strip() or f"{cmd[0]} failed") from exc
+    except OSError as exc:
+        raise RuntimeError(f"{cmd[0]} could not run: {exc}") from exc
+    return result.stdout
+
+
 def run_text(cmd: list[str]) -> str:
-    result = subprocess.run(
-        cmd, check=True, capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=60
-    )
-    return result.stdout.strip()
+    return _run(cmd).strip()
 
 
 def run_json(cmd: list[str]) -> object:
-    result = subprocess.run(
-        cmd, check=True, capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=60
-    )
-    return json.loads(result.stdout)
+    output = _run(cmd)
+    try:
+        return json.loads(output)
+    except json.JSONDecodeError as exc:
+        raise RuntimeError(f"{cmd[0]} produced invalid JSON: {exc}") from exc
 
 
 def branch_age_days(branch: str) -> int:
@@ -79,7 +91,7 @@ def living_worktree_branches() -> set[str]:
             errors="replace",
             timeout=30,
         )
-    except subprocess.TimeoutExpired:
+    except (subprocess.TimeoutExpired, OSError):
         return set()
     if result.returncode != 0:
         return set()
@@ -338,4 +350,8 @@ def main() -> int:
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    try:
+        sys.exit(main())
+    except RuntimeError as exc:
+        print(f"branch_garden_report: {exc}", file=sys.stderr)
+        sys.exit(1)
