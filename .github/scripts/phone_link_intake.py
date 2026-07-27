@@ -126,7 +126,7 @@ def main(argv: list[str] | None = None) -> int:
     if args.git_add and moved_paths and not args.dry_run:
         try:
             result = subprocess.run(
-                ["git", "add", *[str(path) for path in moved_paths]],
+                ["git", "add", "--", *[str(path) for path in moved_paths]],
                 cwd=str(vault_root),
                 capture_output=True,
                 text=True,
