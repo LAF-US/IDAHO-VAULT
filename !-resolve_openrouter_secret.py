@@ -86,6 +86,20 @@ def render_op_env_file(op_ref: str) -> str:
     return "\r\n".join(lines)
 
 
+def resolve_out_file(repo_root: Path, out_file_arg: str) -> Path:
+    """Resolve --out-file relative to the vault root, refusing to escape it.
+
+    A relative traversal (../../etc/passwd) or an absolute path (/etc/passwd)
+    would otherwise let an arbitrary --out-file value read/write outside the
+    vault -- confine the destination to a known-safe root instead of trying
+    to validate the string.
+    """
+    out_file = (repo_root / out_file_arg).resolve() if out_file_arg else repo_root / ".op" / "openrouter.env"
+    if out_file != repo_root and repo_root not in out_file.parents:
+        raise SystemExit(f"--out-file must stay inside the vault ({repo_root}), got: {out_file}")
+    return out_file
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Generate a local OpenRouter env file from 1Password refs.")
     parser.add_argument("--vault", default="Vault", help="1Password vault name to search")
@@ -93,8 +107,9 @@ def main() -> int:
     parser.add_argument("--force", action="store_true", help="Force regeneration even if file exists")
     args = parser.parse_args()
 
-    repo_root = Path(__file__).resolve().parent.parent
-    out_file = Path(args.out_file) if args.out_file else repo_root / ".op" / "openrouter.env"
+    # This script lives at the vault root, so its own parent IS the vault root.
+    repo_root = Path(__file__).resolve().parent
+    out_file = resolve_out_file(repo_root, args.out_file)
 
     if out_file.exists() and not args.force:
         with open(out_file, encoding="utf-8") as f:
