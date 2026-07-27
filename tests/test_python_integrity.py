@@ -58,6 +58,27 @@ def test_unreadable_file_is_flagged_not_a_crash(tmp_path: Path, monkeypatch) -> 
     assert any("could not read file" in finding for finding in findings)
 
 
+def test_digests_by_content_skips_unreadable_file_instead_of_crashing(tmp_path: Path, monkeypatch) -> None:
+    readable = tmp_path / "readable.py"
+    readable.write_text("VALUE = 1\n", encoding="utf-8")
+    unreadable = tmp_path / "unreadable.py"
+    unreadable.write_text("VALUE = 1\n", encoding="utf-8")
+
+    real_read_bytes = Path.read_bytes
+
+    def _flaky_read_bytes(self):
+        if self == unreadable:
+            raise PermissionError("Permission denied")
+        return real_read_bytes(self)
+
+    monkeypatch.setattr(checker.Path, "read_bytes", _flaky_read_bytes)
+
+    by_digest = checker._digests_by_content([readable, unreadable])
+
+    assert unreadable not in [path for paths in by_digest.values() for path in paths]
+    assert readable in [path for paths in by_digest.values() for path in paths]
+
+
 def test_active_subprocess_requires_timeout(tmp_path: Path) -> None:
     path = tmp_path / "runner.py"
     path.write_text(
