@@ -140,13 +140,10 @@ def python_file_findings(path: Path) -> list[str]:
 def tracked_python_files(root: Path) -> list[Path]:
     try:
         result = subprocess.run(
-            ["git", "ls-files", "*.py"],
+            ["git", "ls-files", "-z", "*.py"],
             cwd=root,
             check=False,
             capture_output=True,
-            text=True,
-            encoding="utf-8",
-            errors="replace",
             timeout=30,
         )
     except subprocess.TimeoutExpired as exc:
@@ -154,11 +151,16 @@ def tracked_python_files(root: Path) -> list[Path]:
     except OSError as exc:
         raise RuntimeError(f"git ls-files could not run in {root}: {exc}") from exc
     if result.returncode != 0:
-        raise RuntimeError(result.stderr.strip() or "git ls-files failed")
+        stderr = result.stderr.decode("utf-8", errors="replace")
+        raise RuntimeError(stderr.strip() or "git ls-files failed")
+    # surrogateescape (not "replace"): a lossy decode would change the string
+    # for any non-UTF-8 filename, so the is_file() check below would never
+    # find the real file and it would silently drop out of the scan --
+    # surrogateescape round-trips the original bytes, same as os.fsdecode().
     return [
         root / line
-        for line in result.stdout.splitlines()
-        if line and (root / line).is_file()
+        for raw in result.stdout.split(b"\0")
+        if raw and (line := raw.decode("utf-8", errors="surrogateescape")) and (root / line).is_file()
     ]
 
 
