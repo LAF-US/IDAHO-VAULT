@@ -10,7 +10,7 @@ aliases:
 tags:
   - doctrine
   - governance/canon
-  - personae
+  - persona
 related:
   - POKA-YOKE
   - CONSTITUTION
