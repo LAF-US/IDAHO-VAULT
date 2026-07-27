@@ -17,13 +17,18 @@ def ensure_op_available() -> None:
 
 
 def ensure_op_signed_in() -> None:
-    result = subprocess.run(
-        ["op", "whoami"],
-        stdout=subprocess.DEVNULL,
-        stderr=subprocess.DEVNULL,
-        check=False,
-        timeout=15,
-    )
+    try:
+        result = subprocess.run(
+            ["op", "whoami"],
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL,
+            check=False,
+            timeout=15,
+        )
+    except subprocess.TimeoutExpired as exc:
+        raise SystemExit("1Password CLI 'op whoami' timed out after 15s.") from exc
+    except OSError as exc:
+        raise SystemExit(f"1Password CLI 'op whoami' could not run: {exc}") from exc
     if result.returncode != 0:
         raise SystemExit(
             "1Password CLI is not signed in. Run 'op signin' or unlock desktop integration.\n"
@@ -33,13 +38,18 @@ def ensure_op_signed_in() -> None:
 
 
 def can_read_secret(secret_ref: str) -> bool:
-    result = subprocess.run(
-        ["op", "read", secret_ref],
-        stdout=subprocess.DEVNULL,
-        stderr=subprocess.DEVNULL,
-        check=False,
-        timeout=15,
-    )
+    try:
+        result = subprocess.run(
+            ["op", "read", secret_ref],
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL,
+            check=False,
+            timeout=15,
+        )
+    except subprocess.TimeoutExpired as exc:
+        raise SystemExit(f"1Password CLI 'op read' timed out after 15s (ref: {secret_ref}).") from exc
+    except OSError as exc:
+        raise SystemExit(f"1Password CLI 'op read' could not run: {exc}") from exc
     return result.returncode == 0
 
 

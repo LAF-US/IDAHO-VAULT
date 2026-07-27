@@ -263,7 +263,8 @@ def main() -> int:
         print(f"validate_content: {exc}", file=sys.stderr)
         return 1
     if not staged:
-        print("validate_content: No staged markdown files to check.")
+        source = "in the supplied diff" if args.paths_from_stdin else "staged"
+        print(f"validate_content: No markdown files {source} to check.")
         return 0
 
     all_errors: list[str] = []
