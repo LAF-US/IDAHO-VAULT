@@ -126,7 +126,10 @@ class HelperScriptsTest(unittest.TestCase):
                 side_effect=FileNotFoundError("git"),
             ),
             patch.object(
-                sys, "argv", ["large_file_watchdog.py", "--report-path", "/tmp/report.md"]
+                # Never actually written: git failure returns before the report step.
+                # A non-hardcoded-tmp placeholder avoids tripping Bandit's B108 on a
+                # path this test never opens.
+                sys, "argv", ["large_file_watchdog.py", "--report-path", "report.md"]
             ),
             redirect_stdout(io.StringIO()),
             redirect_stderr(io.StringIO()) as captured_stderr,

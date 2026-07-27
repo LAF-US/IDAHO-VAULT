@@ -179,11 +179,26 @@ LAYER_PATTERNS = {
 # BUILD SYSTEM PARSERS (INLINED - NO EXTERNAL IMPORTS)
 # ============================================================================
 
+def _reject_doctype(path: Path) -> None:
+    """Refuse a DOCTYPE declaration before handing a file to ElementTree.
+
+    stdlib ElementTree has no switch to disable DTD/entity processing, so a
+    malicious pom.xml/build.xml carrying a DOCTYPE could trigger XXE
+    (external entity file/URL reads) or a billion-laughs expansion bomb.
+    Real Maven POMs and Ant build files never declare one, so rejecting any
+    DOCTYPE outright closes both classes -- without a defusedxml dependency,
+    which this module deliberately avoids (see section header above).
+    """
+    if re.search(r"<!DOCTYPE", path.read_text(encoding="utf-8", errors="replace"), re.IGNORECASE):
+        raise ValueError(f"{path} declares a DOCTYPE, which is rejected to prevent XXE")
+
+
 def parse_maven_pom(pom_path: Path) -> BuildModule:
     """Parse Maven pom.xml (inline XML parsing)"""
     try:
         import xml.etree.ElementTree as ET
-        tree = ET.parse(pom_path)
+        _reject_doctype(pom_path)
+        tree = ET.parse(pom_path)  # nosec B314 -- DOCTYPE rejected above; no DTD/entity content reaches this parse
         root = tree.getroot()
         
         ns = {'m': 'http://maven.apache.org/POM/4.0.0'}
@@ -317,9 +332,10 @@ def parse_ant_build(build_path: Path) -> BuildModule:
     """Parse Ant build.xml (inline XML parsing)"""
     try:
         import xml.etree.ElementTree as ET
-        tree = ET.parse(build_path)
+        _reject_doctype(build_path)
+        tree = ET.parse(build_path)  # nosec B314 -- DOCTYPE rejected above; no DTD/entity content reaches this parse
         root = tree.getroot()
-        
+
         project_name = root.get('name', build_path.parent.name)
         
         # Ant doesn't have explicit dependencies, extract from <path> elements
