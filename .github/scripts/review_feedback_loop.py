@@ -35,10 +35,9 @@ import json
 import os
 import re
 import sys
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timezone
 from pr_threads import (  # shared thread-analysis vocabulary (#600 §5)
     ATTESTATION_DECISIONS,
-    BARE_RESOLVABLE_DISPOSITIONS,
     _count_committable_suggestion_threads,
     _thread_authors,
     _thread_has_attested_look,
@@ -366,7 +365,8 @@ def _arm_auto_merge(owner: str, repo: str, pr_number: int) -> tuple[bool, str | 
                 raise
             notes.insert(
                 0,
-                "GitHub Actions is not authorized to enable auto-merge on the protected base branch.",
+                "GitHub Actions is not authorized to enable auto-merge "
+                "on the protected base branch.",
             )
             return (False, "; ".join(notes))
     # Arming is only half the job — explicitly add it to the merge queue now.
@@ -737,6 +737,7 @@ def _ensure_label(name: str, color: str, description: str) -> None:
 
 
 def ensure_labels() -> None:
+    """Create or update the labels used by the review lifecycle."""
     for label, (color, description) in LABEL_SPECS.items():
         _ensure_label(label, color, description)
 
@@ -1355,6 +1356,7 @@ def _build_reconciliation_report(
 
 
 def acknowledge_apply(args: argparse.Namespace) -> int:
+    """Mark a PR as waiting on follow-up commits after a trusted apply-changes request."""
     ensure_labels()
 
     if not APPLY_RE.search(args.comment_body or ""):
@@ -1389,6 +1391,7 @@ def acknowledge_apply(args: argparse.Namespace) -> int:
 
 
 def sync_pr(args: argparse.Namespace) -> int:
+    """Recompute review-derived state after PR updates and sync projection labels."""
     ensure_labels()
 
     auto_resolve_reviewers = _csv_env(
@@ -1492,6 +1495,7 @@ def sync_pr(args: argparse.Namespace) -> int:
 
 
 def review_submitted(args: argparse.Namespace) -> int:
+    """Recompute review state after a submitted review; pause auto-merge on a real block."""
     ensure_labels()
 
     auto_resolve_reviewers = _csv_env(
@@ -1545,6 +1549,7 @@ def review_submitted(args: argparse.Namespace) -> int:
 
 
 def promote_ready(args: argparse.Namespace) -> int:
+    """Run scheduled reconciliation (compatibility alias for reconcile-open-prs)."""
     ensure_labels()
     auto_resolve_reviewers = _csv_env(
         "AUTO_RESOLVE_REVIEWERS",
@@ -1562,6 +1567,7 @@ def promote_ready(args: argparse.Namespace) -> int:
 
 
 def reconcile_open_prs(args: argparse.Namespace) -> int:
+    """Rescan open-PR truth, repair drifted labels, and arm eligible PRs for the queue."""
     ensure_labels()
     auto_resolve_reviewers = _csv_env(
         "AUTO_RESOLVE_REVIEWERS",
@@ -1580,6 +1586,7 @@ def reconcile_open_prs(args: argparse.Namespace) -> int:
 
 
 def enable_auto_merge(args: argparse.Namespace) -> int:
+    """Arm an eligible PR for the merge queue."""
     ensure_labels()
     auto_resolve_reviewers = _csv_env(
         "AUTO_RESOLVE_REVIEWERS",
@@ -1661,10 +1668,14 @@ def _list_pr_comment_bodies(owner: str, repo: str, pr_number: int) -> list[str]:
 
 
 def _has_prior_verify_comment(owner: str, repo: str, pr_number: int) -> bool:
-    return any(VERIFY_CLAIM_MARKER in body for body in _list_pr_comment_bodies(owner, repo, pr_number))
+    return any(
+        VERIFY_CLAIM_MARKER in body
+        for body in _list_pr_comment_bodies(owner, repo, pr_number)
+    )
 
 
 def verify_claim(args: argparse.Namespace) -> int:
+    """Flag divergence between an agent completion-claim comment and the PR's real state."""
     body = args.comment_body or ""
 
     # Recursion guard: skip if the trigger comment IS a prior verification comment.
@@ -1810,8 +1821,8 @@ def _positive_int(value: str) -> int:
     """
     try:
         parsed = int(value)
-    except (TypeError, ValueError):
-        raise argparse.ArgumentTypeError(f"invalid int value: {value!r}")
+    except (TypeError, ValueError) as exc:
+        raise argparse.ArgumentTypeError(f"invalid int value: {value!r}") from exc
     if parsed <= 0:
         raise argparse.ArgumentTypeError("must be a positive integer")
     return parsed
@@ -1928,6 +1939,7 @@ def reconcile_witness(args: argparse.Namespace) -> int:
 
 
 def build_parser() -> argparse.ArgumentParser:
+    """Build the argparse parser for the review-feedback-loop subcommands."""
     parser = argparse.ArgumentParser()
     subparsers = parser.add_subparsers(dest="command", required=True)
 
@@ -2051,6 +2063,7 @@ def build_parser() -> argparse.ArgumentParser:
 
 
 def main() -> int:
+    """Parse CLI arguments and dispatch to the selected subcommand."""
     args = build_parser().parse_args()
     if args.command == "ensure-labels":
         ensure_labels()
