@@ -7,7 +7,7 @@ import argparse
 from dataclasses import dataclass
 import os
 import shutil
-import subprocess  # nosec B404 -- see [tool.bandit] note in pyproject.toml
+import subprocess
 import sys
 import tempfile
 import urllib.error
@@ -97,14 +97,7 @@ def _download_repo_zip(owner: str, repo: str, ref: str, dest_dir: str) -> str:
 
 
 def _run_git(args: list[str]) -> None:
-    try:
-        result = subprocess.run(
-            args, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, timeout=30
-        )
-    except subprocess.TimeoutExpired as exc:
-        raise InstallError(f"`{' '.join(args)}` timed out after 30s") from exc
-    except OSError as exc:
-        raise InstallError(f"`{' '.join(args)}` could not run: {exc}") from exc
+    result = subprocess.run(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
     if result.returncode != 0:
         raise InstallError(result.stderr.strip() or "Git command failed.")
 
@@ -163,15 +156,8 @@ def _git_sparse_checkout(repo_url: str, ref: str, paths: list[str], dest_dir: st
                 repo_dir,
             ]
         )
-    _run_git(["git", "-C", repo_dir, "sparse-checkout", "set", "--", *paths])
-    # `ref` is user-controlled (--ref); a bare trailing positional argument to
-    # `checkout` lets a value like "--force" be parsed as a git option instead
-    # of a revision (verified: `git checkout --force` silently no-ops instead
-    # of erroring). `switch --detach --` has no revision/pathspec ambiguity to
-    # exploit -- confirmed the same adversarial value cleanly fails as
-    # "invalid reference" instead. Detached HEAD is fine: nothing after this
-    # relies on being on a branch, only on the working tree contents.
-    _run_git(["git", "-C", repo_dir, "switch", "--detach", "--", ref])
+    _run_git(["git", "-C", repo_dir, "sparse-checkout", "set", *paths])
+    _run_git(["git", "-C", repo_dir, "checkout", ref])
     return repo_dir
 
 
