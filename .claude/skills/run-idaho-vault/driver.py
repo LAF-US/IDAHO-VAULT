@@ -65,8 +65,10 @@ def vpy() -> Path:
     return vbin() / ("python.exe" if WIN else "python")
 
 
-def run(cmd, timeout: float = 600, **kw):
-    return subprocess.run([str(c) for c in cmd], cwd=ROOT, env=ENV, timeout=timeout, **kw)
+def run(cmd, timeout: float = 600, check: bool = False, **kw):
+    return subprocess.run(
+        [str(c) for c in cmd], cwd=ROOT, env=ENV, timeout=timeout, check=check, **kw
+    )
 
 
 def _uv(cmd, check: bool = True, extra_env: dict | None = None) -> int:
