@@ -64,8 +64,11 @@ class PytestCollectionGuardTest(unittest.TestCase):
         pluginmanager.unregister.assert_not_called()
 
     def test_fails_fast_on_read_only_filesystem_generic_oserror(self) -> None:
-        """EROFS (read-only filesystem) raises plain OSError, not PermissionError —
-        the probe must not let that propagate as an unhandled traceback."""
+        """
+        EROFS (read-only filesystem) raises plain OSError, not PermissionError.
+
+        The probe must not let that propagate as an unhandled traceback.
+        """
         conftest = load_root_conftest()
         pluginmanager = unittest.mock.Mock()
         pluginmanager.hasplugin.return_value = True

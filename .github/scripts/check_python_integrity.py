@@ -165,8 +165,12 @@ def tracked_python_files(root: Path) -> list[Path]:
 
 
 def _display_path(path: Path, root: Path) -> str:
-    """Render ``path`` relative to ``root``, falling back to the raw path if
-    it isn't actually under root (e.g. a symlinked or unrelated tree)."""
+    """
+    Render ``path`` relative to ``root``.
+
+    Falls back to the raw path if it isn't actually under root (e.g. a
+    symlinked or unrelated tree).
+    """
     try:
         return path.relative_to(root).as_posix()
     except ValueError:
@@ -187,8 +191,11 @@ def _digests_by_content(files: list[Path]) -> dict[str, list[Path]]:
 
 
 def _flattened_duplicate_pairs(root: Path, duplicates: list[Path]) -> list[tuple[Path, Path]]:
-    """Pair each root-level flattened-name copy with each nested canonical copy
-    sharing its content digest."""
+    """
+    Pair each root-level flattened-name copy with each nested canonical copy.
+
+    Pairing is by shared content digest.
+    """
     root_level = [path for path in duplicates if path.parent == root and "-" in path.name]
     nested = [path for path in duplicates if path.parent != root]
     return list(itertools.product(root_level, nested))
@@ -240,11 +247,12 @@ def _partition_findings(
 
 
 def main(argv: list[str] | None = None) -> int:
-    """Gate changed paths (fail) and report pre-existing tree violations (warn).
+    """
+    Gate changed paths (fail) and report pre-existing tree violations (warn).
 
     Mirrors ``check_portable_paths.py``'s changed-vs-tree split: a PR is only
     responsible for what it introduces, so pre-existing integrity debt
-    elsewhere in the tree must not fail an unrelated PR — it only warns.
+    elsewhere in the tree must not fail an unrelated PR -- it only warns.
     """
     parser = argparse.ArgumentParser()
     parser.add_argument("--root", type=Path, default=Path(__file__).resolve().parents[2])

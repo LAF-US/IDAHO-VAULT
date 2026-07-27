@@ -13,6 +13,7 @@ def _load_large_file_checker():
     project_root = Path(__file__).resolve().parents[1]
     script_path = project_root / ".github" / "scripts" / "check_large_files.py"
     spec = importlib.util.spec_from_file_location("large_file_checker_test_module", script_path)
+    assert spec is not None
     module = importlib.util.module_from_spec(spec)
     assert spec.loader is not None
     sys.modules[spec.name] = module
