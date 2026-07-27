@@ -87,7 +87,10 @@ PROTECTED_LIVE_FILES = {
 
 def _run_git(command: list[str]) -> str:
     try:
-        result = subprocess.run(command, capture_output=True, text=True, timeout=30, check=False)
+        result = subprocess.run(
+            command, capture_output=True, text=True, encoding="utf-8", errors="replace",
+            timeout=30, check=False,
+        )
     except subprocess.TimeoutExpired as exc:
         raise RuntimeError(f"git {command[1]} timed out after 30s") from exc
     except OSError as exc:

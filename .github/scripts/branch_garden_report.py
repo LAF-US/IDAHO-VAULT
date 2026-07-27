@@ -40,14 +40,14 @@ class BranchState:
 
 def run_text(cmd: list[str]) -> str:
     result = subprocess.run(
-        cmd, check=True, capture_output=True, text=True, timeout=60
+        cmd, check=True, capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=60
     )
     return result.stdout.strip()
 
 
 def run_json(cmd: list[str]) -> object:
     result = subprocess.run(
-        cmd, check=True, capture_output=True, text=True, timeout=60
+        cmd, check=True, capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=60
     )
     return json.loads(result.stdout)
 
@@ -75,6 +75,8 @@ def living_worktree_branches() -> set[str]:
             check=False,
             capture_output=True,
             text=True,
+            encoding="utf-8",
+            errors="replace",
             timeout=30,
         )
     except subprocess.TimeoutExpired:
