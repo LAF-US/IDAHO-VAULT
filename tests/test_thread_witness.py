@@ -5,26 +5,36 @@ module (2026-07-25, Logan's decision), plus dedicated tests for the two helpers 
 extraction split out of `_classify_pr_for_looker` to lower its complexity.
 """
 
+# Test-file scope: rules that don't fit a test module. Tests must call the private functions
+# they cover (protected-access); test names are self-documenting (missing docstrings); and the
+# fixture builders take many keyword params (too-many-arguments). Relaxed for this file only.
+# pylint: disable=missing-function-docstring,missing-class-docstring,protected-access,too-many-arguments
+
 from __future__ import annotations
 
 import contextlib
 import io
 import json
 import sys
-import unittest
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
-
-import unittest.mock as mock
+from unittest import TestCase, main, mock
 
 # thread_witness imports its siblings (review_feedback_loop, pr_github, pr_threads) by
 # name, so the scripts dir must be importable. Production runs the script directly, which
 # already has this on sys.path[0].
 SCRIPTS_DIR = Path(__file__).resolve().parents[1] / ".github" / "scripts"
+# Scope the sys.path mutation to these sibling imports and restore it, so this module
+# doesn't globally alter import resolution for the rest of the test run. The modules stay
+# cached in sys.modules afterward (thread_witness pulls in review_feedback_loop / pr_github
+# / pr_threads at import time, which is why the dir must be on the path right here).
+_original_sys_path = list(sys.path)
 sys.path.insert(0, str(SCRIPTS_DIR))
-
-import thread_witness  # noqa: E402
-import review_feedback_loop  # noqa: E402  — for _build_attestation used in a fixture
+try:
+    import thread_witness  # noqa: E402
+    import review_feedback_loop  # noqa: E402  — for _build_attestation used in a fixture
+finally:
+    sys.path[:] = _original_sys_path
 
 
 def _labels(*names: str) -> dict[str, list[dict[str, str]]]:
@@ -103,7 +113,7 @@ def _looked_open_thread() -> dict[str, object]:
     return thread
 
 
-class LookerQueueTest(unittest.TestCase):
+class LookerQueueTest(TestCase):
     def test_build_looker_queue_unresolved_only_with_authors_and_looked_flag(self) -> None:
         looked_thread = _thread(authors=("coderabbitai",))
         looked_thread["comments"]["nodes"].append(
@@ -133,7 +143,7 @@ class LookerQueueTest(unittest.TestCase):
         self.assertTrue(any(item["is_outdated"] for item in items))
 
 
-class ClassifyPrForLookerTest(unittest.TestCase):
+class ClassifyPrForLookerTest(TestCase):
     def test_classify_needs_fix_is_machine_lane_but_not_drainable(self) -> None:
         now = datetime(2026, 6, 16, tzinfo=timezone.utc)
         pr = _pr(number=1, created_at=now - timedelta(days=1), threads=(_bot_thread(),))
@@ -268,7 +278,9 @@ class ClassifyPrForLookerTest(unittest.TestCase):
             created_at=now - timedelta(days=1),
             threads=(
                 _thread(authors=("coderabbitai",), author_type="Bot", body=suggestion_body),
-                _thread(authors=("chatgpt-codex-connector",), author_type="Bot", body="prose finding"),
+                _thread(
+                    authors=("chatgpt-codex-connector",), author_type="Bot", body="prose finding"
+                ),
             ),
         )
         report = thread_witness._classify_pr_for_looker(pr, now=now)
@@ -278,7 +290,7 @@ class ClassifyPrForLookerTest(unittest.TestCase):
         self.assertEqual(report["resolution_counts"], {"apply-suggestion": 1, "needs-fix": 1})
 
 
-class ThreadDispositionTest(unittest.TestCase):
+class ThreadDispositionTest(TestCase):
     """The per-thread decision split out of the classifier."""
 
     def test_human_author_is_human(self) -> None:
@@ -302,14 +314,14 @@ class ThreadDispositionTest(unittest.TestCase):
         self.assertEqual(thread_witness._thread_disposition(_bot_thread()), "bot-disposable")
 
 
-class SelectLaneTest(unittest.TestCase):
+class SelectLaneTest(TestCase):
     """Lane selection split out of the classifier."""
 
     def _lane(self, **overrides) -> str:
-        kw = dict(
-            threads_truncated=False, review_decision="", human=0, unprovable=0,
-            unresolved_count=1, machine_clearable=1, auto_merge_armed=False,
-        )
+        kw = {
+            "threads_truncated": False, "review_decision": "", "human": 0, "unprovable": 0,
+            "unresolved_count": 1, "machine_clearable": 1, "auto_merge_armed": False,
+        }
         kw.update(overrides)
         return thread_witness._select_lane(**kw)
 
@@ -341,7 +353,7 @@ class SelectLaneTest(unittest.TestCase):
         self.assertEqual(self._lane(unresolved_count=2, machine_clearable=1), "needs-human")
 
 
-class LookerWalkTest(unittest.TestCase):
+class LookerWalkTest(TestCase):
     def test_looker_walk_is_read_only_and_emits_json(self) -> None:
         pr = _pr(number=8, created_at=datetime(2026, 6, 15, tzinfo=timezone.utc),
                  threads=(_bot_thread(),))
@@ -384,7 +396,7 @@ class LookerWalkTest(unittest.TestCase):
                 )
 
 
-class RenderWorklistTest(unittest.TestCase):
+class RenderWorklistTest(TestCase):
     def test_render_looker_worklist_is_read_only_triage_markdown(self) -> None:
         report = {
             "open_prs": 3,
@@ -430,4 +442,4 @@ class RenderWorklistTest(unittest.TestCase):
 
 
 if __name__ == "__main__":
-    unittest.main()
+    main()

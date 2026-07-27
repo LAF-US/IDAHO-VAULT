@@ -97,7 +97,7 @@ def run_compilation_checks():
             print(f"✗ FAIL: {filepath}")
             print("  Error: Timeout (>10s)")
             results.append((filepath, "FAIL", "Timeout (>10s)"))
-        except Exception as e:  # pylint: disable=broad-except  -- report any failure as FAIL, never crash the runner
+        except Exception as e:  # pylint: disable=broad-except
             print(f"✗ FAIL: {filepath}")
             print(f"  Error: {str(e)}")
             results.append((filepath, "FAIL", str(e)))
@@ -140,7 +140,7 @@ def run_pytest_tests():
             print("✗ FAIL")
             print("  Error: Timeout (>60s)")
             results.append((test_file, "FAIL", "Timeout (>60s)"))
-        except Exception as e:  # pylint: disable=broad-except  -- report any failure as FAIL, never crash the runner
+        except Exception as e:  # pylint: disable=broad-except
             print("✗ FAIL")
             print(f"  Error: {str(e)}")
             results.append((test_file, "FAIL", str(e)))
