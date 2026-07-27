@@ -193,7 +193,8 @@ def _make_citation(relpath: str, line_number: int, line: str) -> dict[str, objec
 
 
 def _loose_token_matches(token: str, line: str) -> bool:
-    """Boundary-safe substring check for loose (unformatted) token mentions.
+    """
+    Boundary-safe substring check for loose (unformatted) token mentions.
 
     Plain `token in line` also matches a token embedded inside an unrelated,
     longer dotted identifier (e.g. loose token ".copilot" matching inside the
