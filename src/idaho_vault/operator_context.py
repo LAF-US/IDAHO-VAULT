@@ -142,6 +142,8 @@ def _tracked_files(root: Path) -> set[str] | None:
             ["git", "-C", str(root), "ls-files"],
             capture_output=True,
             text=True,
+            encoding="utf-8",
+            errors="replace",
             timeout=30,
         )
     except (OSError, subprocess.TimeoutExpired):
