@@ -1,7 +1,7 @@
 """Tests for the two-paired-flag risk classifier (classify_paths)."""
 
 import json
-import subprocess
+import subprocess  # nosec B404 -- see [tool.bandit] note in pyproject.toml
 import sys
 import unittest
 from pathlib import Path

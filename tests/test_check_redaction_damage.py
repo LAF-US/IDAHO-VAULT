@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 import importlib.util
-import subprocess
+import subprocess  # nosec B404 -- see [tool.bandit] note in pyproject.toml
 import sys
 import tempfile
 import unittest

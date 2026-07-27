@@ -3,7 +3,7 @@
 
 from __future__ import annotations
 
-import subprocess
+import subprocess  # nosec B404 -- see [tool.bandit] note in pyproject.toml
 import sys
 from pathlib import Path
 
@@ -38,6 +38,8 @@ def run_syntax_checks(python_executable: str = sys.executable) -> int:
                 cwd=REPO_ROOT,
                 capture_output=True,
                 text=True,
+                encoding="utf-8",
+                errors="replace",
                 timeout=30,
                 check=False,
             )
@@ -60,6 +62,8 @@ def run_pytest(python_executable: str = sys.executable) -> int:
             cwd=REPO_ROOT,
             capture_output=True,
             text=True,
+            encoding="utf-8",
+            errors="replace",
             timeout=300,
             check=False,
         )
