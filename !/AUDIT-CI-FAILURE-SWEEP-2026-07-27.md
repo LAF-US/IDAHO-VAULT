@@ -42,6 +42,12 @@ Nothing is currently blocking `main` or a deploy. The one *repeated* pattern fou
 
 1. **Census scanner substring-attribution bug — `.github/scripts/topology_census.py`.** **Category: Code.** Root-caused and fixed this run (see below). Not a CI failure (no workflow run had failed because of this — it only produces silently-wrong report *content*), but it was sitting as an unresolved, unverified Codacy review comment on PR #498 since 2026-07-20, and I could confirm and fix it rather than leave it as another unread finding.
 2. **`action_required` gate on Copilot-bot-triggered review workflows.** **Category: Configuration.** Recurring (3 instances in a 2-hour sample; likely dozens/day given review-comment volume). No code fix available from a repo PR; needs a Settings decision. Documented above rather than silently worked around.
+3. **Pre-existing pylint debt in `.github/scripts/topology_census.py`, surfaced (not caused) by touching the file in PR #866.** **Category: Code.** Codacy's PR-level "CodeStyle" gate kept reporting 16 new issues on #866 regardless of what that PR's diff actually changed — initially wrote this off as unrelated noise, which was a wrong and dismissive call once corrected: it's real, named debt, just not something #866's targeted bugfix should have bundled in as a drive-by refactor. Confirmed locally with `prospector`/`pylint` (`--max-line-length=100`, matching `pyproject.toml`), none of it inside #866's actually-touched lines:
+   - `render_scope_markdown` (line 706) — too many branches (19/12), too many statements (53/50); same function mccabe flags separately as complexity 19.
+   - Two functions (lines 485, 560) with too many local variables (17/15, 18/15).
+   - Two lines over the 100-char limit (766, 772).
+   - `result.returncode == 0` (line 99) could be `not result.returncode`.
+   - **Next step:** a dedicated follow-up PR to refactor `render_scope_markdown`'s branch/statement count and the two over-wide functions — not urgent (nothing is failing because of it), but real enough that it shouldn't keep getting silently re-discovered as "Codacy is just noisy" every time someone touches this file.
 
 ---
 
