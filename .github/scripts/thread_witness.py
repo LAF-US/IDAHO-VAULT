@@ -177,10 +177,12 @@ def _looker_pr_signals(pr: dict, *, now: datetime, stale_days: int) -> dict[str,
 
 
 def _is_safe_to_drain(lane: str, *, stale: bool, plan: list[dict[str, object]]) -> bool:
-    """The APPLY-PASS candidate signal. A bare attest-and-resolve could clear every
-    thread WITHOUT a fix, so it demands more than the coarse machine-disposable lane:
-    the PR must not be stale, and every thread must be bare-resolvable (outdated/looked).
-    A needs-fix or apply-suggestion thread is NOT bare-drainable. (codex on #529.)
+    """Report whether a PR is a bare-drainable apply-pass candidate. Pure.
+
+    A bare attest-and-resolve could clear every thread WITHOUT a fix, so this demands
+    more than the coarse machine-disposable lane: the PR must not be stale, and every
+    thread must be bare-resolvable (outdated/looked). A needs-fix or apply-suggestion
+    thread is NOT bare-drainable. (codex on #529.)
     """
     return (
         lane == "machine-disposable"
