@@ -145,6 +145,7 @@ def _tracked_files(root: Path) -> set[str] | None:
             encoding="utf-8",
             errors="replace",
             timeout=30,
+            check=False,
         )
     except (OSError, subprocess.TimeoutExpired):
         return None
