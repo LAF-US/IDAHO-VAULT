@@ -11,10 +11,10 @@ READ side: it resolves nothing and writes nothing.
   - render-worklist: render a looker-walk JSON report as a markdown triage surface.
 
 The write side (attest-resolve / engage-outdated / reconcile-witness) and the shared
-plumbing still live in review_feedback_loop.py; this module imports the two engine-side
-helpers it needs (`_list_open_pr_numbers`, `_parse_iso_datetime`) one-directionally, so
-there is no import cycle. Consolidating the shared plumbing into a library both import is
-the next extraction step.
+plumbing still live in review_feedback_loop.py; this module imports the three engine-side
+helpers it needs (`_list_open_pr_numbers`, `_parse_iso_datetime`, `_positive_int`)
+one-directionally, so there is no import cycle. Consolidating the shared plumbing into a
+library both import is the next extraction step.
 """
 
 from __future__ import annotations
