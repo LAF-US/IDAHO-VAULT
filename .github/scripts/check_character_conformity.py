@@ -67,6 +67,7 @@ def repo_root() -> Path:
         check=True,
         capture_output=True,
         text=True,
+        timeout=30,
     )
     return Path(result.stdout.strip()).resolve()
 
@@ -91,6 +92,7 @@ def git_tracked_files() -> list[str]:
         check=True,
         capture_output=True,
         text=True,
+        timeout=30,
     )
     return [line for line in result.stdout.splitlines() if line]
 
@@ -109,6 +111,7 @@ def git_text_attrs(paths: list[str]) -> dict[str, dict[str, str]]:
         input=payload,
         check=True,
         capture_output=True,
+        timeout=30,
     )
     attrs: dict[str, dict[str, str]] = {}
     fields = result.stdout.decode().split("\0")
