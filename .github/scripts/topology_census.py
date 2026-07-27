@@ -193,15 +193,7 @@ def _make_citation(relpath: str, line_number: int, line: str) -> dict[str, objec
 
 
 def _loose_token_matches(token: str, line: str) -> bool:
-    """
-    Boundary-safe substring check for loose (unformatted) token mentions.
-
-    Plain `token in line` also matches a token embedded inside an unrelated,
-    longer dotted identifier (e.g. loose token ".copilot" matching inside the
-    persona key "*.copilot.clerk"), misattributing doctrine authority. Require
-    non-identifier characters (or string edges) on both sides, matching the
-    boundary rule `_line_mentions_dotfolder` already uses.
-    """
+    """Boundary-safe token match: rejects hits inside a longer identifier like `*.copilot.clerk`."""
     pattern = rf"(?<![A-Za-z0-9_.-]){re.escape(token)}(?![A-Za-z0-9_.-])"
     return re.search(pattern, line) is not None
 

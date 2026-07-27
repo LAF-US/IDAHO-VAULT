@@ -236,14 +236,7 @@ class TopologyCensusTest(unittest.TestCase):
 
 
 class FindCitationsBoundaryTest(unittest.TestCase):
-
-    """
-    Regression coverage for the census substring-attribution finding.
-
-    PR #498's stale report flagged a Codacy finding where a loose token like
-    `.copilot` matched inside an unrelated, longer dotted identifier such as
-    `*.copilot.clerk`.
-    """
+    """Regression coverage for the census substring-attribution finding (PR #498)."""
 
     def test_loose_token_does_not_match_inside_longer_identifier(self) -> None:
         line = (
