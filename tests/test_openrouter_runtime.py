@@ -73,6 +73,15 @@ class OpenRouterRuntimeTest(unittest.TestCase):
 
         self.assertIn("timed out", str(exc.exception))
 
+    def test_op_signed_in_check_fails_closed_when_op_could_not_run(self) -> None:
+        with patch.object(
+            openrouter_runtime.subprocess, "run", side_effect=OSError("permission denied")
+        ):
+            with self.assertRaises(SystemExit) as exc:
+                openrouter_runtime.ensure_op_signed_in()
+
+        self.assertIn("could not run", str(exc.exception))
+
     def test_env_file_refresh_fails_closed_on_timeout(self) -> None:
         with (
             patch.object(openrouter_runtime.Path, "exists", return_value=False),
@@ -86,6 +95,18 @@ class OpenRouterRuntimeTest(unittest.TestCase):
                 openrouter_runtime.ensure_env_file("claude")
 
         self.assertIn("timed out", str(exc.exception))
+
+    def test_env_file_refresh_fails_closed_when_resolver_could_not_run(self) -> None:
+        with (
+            patch.object(openrouter_runtime.Path, "exists", return_value=False),
+            patch.object(
+                openrouter_runtime.subprocess, "run", side_effect=OSError("no such file")
+            ),
+        ):
+            with self.assertRaises(SystemExit) as exc:
+                openrouter_runtime.ensure_env_file("claude")
+
+        self.assertIn("could not run", str(exc.exception))
 
     def test_env_file_with_empty_value_still_triggers_refresh(self) -> None:
         # A key present as "KEY=" (empty value) is not actually usable -- the
