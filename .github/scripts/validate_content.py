@@ -101,7 +101,8 @@ def _run_git(command: list[str]) -> str:
 
 
 def get_changed_files(paths_from_stdin: bool = False) -> list[Path]:
-    """Get changed Markdown paths, including deletions.
+    """
+    Get changed Markdown paths, including deletions.
 
     Two modes: staged (--cached, the default — local pre-commit usage), or
     paths piped in over stdin, newline-delimited, already diffed by a trusted
