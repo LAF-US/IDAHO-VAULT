@@ -37,7 +37,7 @@ from pathlib import Path
 from typing import Dict, List, Optional, Tuple, Any
 from dataclasses import dataclass, field
 from datetime import datetime
-import subprocess
+import subprocess  # nosec B404 -- see [tool.bandit] note in pyproject.toml
 
 # Check Python version
 if sys.version_info < (3, 7):
@@ -197,7 +197,7 @@ def _reject_doctype(path: Path) -> None:
 def parse_maven_pom(pom_path: Path) -> BuildModule:
     """Parse Maven pom.xml (inline XML parsing)"""
     try:
-        import xml.etree.ElementTree as ET
+        import xml.etree.ElementTree as ET  # nosec B405 -- DOCTYPE rejected below before parse; see [tool.bandit] note in pyproject.toml
         _reject_doctype(pom_path)
         tree = ET.parse(pom_path)  # nosec B314 -- DOCTYPE rejected above; no DTD/entity content reaches this parse
         root = tree.getroot()
@@ -332,7 +332,7 @@ def parse_gradle_build(build_path: Path) -> BuildModule:
 def parse_ant_build(build_path: Path) -> BuildModule:
     """Parse Ant build.xml (inline XML parsing)"""
     try:
-        import xml.etree.ElementTree as ET
+        import xml.etree.ElementTree as ET  # nosec B405 -- DOCTYPE rejected below before parse; see [tool.bandit] note in pyproject.toml
         _reject_doctype(build_path)
         tree = ET.parse(build_path)  # nosec B314 -- DOCTYPE rejected above; no DTD/entity content reaches this parse
         root = tree.getroot()

@@ -7,7 +7,7 @@ import argparse
 from dataclasses import dataclass
 import os
 import shutil
-import subprocess
+import subprocess  # nosec B404 -- see [tool.bandit] note in pyproject.toml
 import sys
 import tempfile
 import urllib.error

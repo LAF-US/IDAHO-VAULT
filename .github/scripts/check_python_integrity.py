@@ -7,7 +7,7 @@ import argparse
 import ast
 import hashlib
 import itertools
-import subprocess
+import subprocess  # nosec B404 -- see [tool.bandit] note in pyproject.toml
 import sys
 from collections import defaultdict
 from pathlib import Path

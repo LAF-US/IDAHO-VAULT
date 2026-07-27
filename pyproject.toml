@@ -60,13 +60,17 @@ target-version = "py310"
 # for this specific literal-argv-no-shell usage pattern.
 #
 # B404 (import subprocess) and B405 (import xml.etree.ElementTree) are pure
-# import-presence notices -- they fire unconditionally on the import
-# statement itself with no case-by-case risk judgment at all (unlike B603/
-# B607 above, which were verified call site by call site). The actual
-# xml.etree.ElementTree.parse() risk (B313-B320, XXE/entity expansion) is a
-# separate rule this vault fixes on its merits (see build_knowledge_graph.py's
-# _reject_doctype) rather than skips here.
-skips = ["B603", "B607", "B404", "B405"]
+# import-presence notices with no case-by-case risk judgment at all (unlike
+# B603/B607 above, which were verified call site by call site). Skipping them
+# globally would also silence any *future* new subprocess/ElementTree import
+# added anywhere in the repo, not just the current sites -- so instead of a
+# blanket skip, every current import is individually annotated with an inline
+# `# nosec B404`/`# nosec B405` (see .github/scripts/*, scripts/*, etc.). New
+# imports elsewhere still show up in scans. The actual xml.etree.ElementTree.
+# parse() risk (B313-B320, XXE/entity expansion) is a separate rule this
+# vault fixes on its merits (see build_knowledge_graph.py's _reject_doctype)
+# rather than a skip.
+skips = ["B603", "B607"]
 
 [tool.bandit.assert_used]
 # B101 fires on every bare `assert` -- the correct, idiomatic way to write
