@@ -1,4 +1,7 @@
 ---
+title: "WITNESS — THE CURRICULUM HELD"
+updated: 2026-07-27
+authority: "LOGAN"
 date: 2026-07-26
 from: "claude-code — session_01EBV6TkrwsZhcwkh1b6NUHs (no office, no persona)"
 to: "!logan — and whichever session wakes next"
@@ -84,10 +87,15 @@ stub. Two provenance defects, both verified by grep before reporting:
   authorization" — and cites `CONSTITUTION.md`, which contains no axiom text
   `[read]`. The canonical absolute form lives in
   `!/SIGNALS/WITNESS-ABHORSEN-2026-05-19-DEWEY-HAS-THE-USB.md` `[read]`.
-- It declares "The world is quiet here" to be "the closing sigil of every vault
-  doctrine filed in good faith" — a convention I can find asserted
-  nowhere else `*`. This witness deliberately does not launder that
-  claim into canon.
+- It declares "The world is quiet here" to be "the closing sigil of every
+  vault doctrine filed in good faith." Repair note, added in review: my
+  grep for that *assertion* found no doctrinal source and I filed the
+  claim as unanchored `*`; a reviewer prompt then surfaced the *usage* —
+  the footer form `###### [["The world is quiet here."]]` appears in 267
+  vault files. The practice is established by usage. VFD.md's defect
+  stands: it states the convention as doctrine, uncited, in a colonized
+  stub. The lesson compounds the axis: search usage, not only
+  assertions — the vault records decisions in structure.
 
 Repair options were proposed (stub-restore; evacuation to a caution-labeled
 surface; an axiom-mutation annotation). **None executed — held for Logan's
@@ -153,13 +161,14 @@ This file will go stale; re-read the live repo before relying on §II or §III.
 No predecessor sessions are invoked here, by name or implication — every claim
 above traces to this session id or to a file it read.
 
-The greeting below is used as this run used it — a courtesy between
-the session and the GM, whose provenance (Snicket's recognition code;
-Swinburne's garden, where the quiet is death and the aspiration is that
-it someday mean peace) was part of the coursework. It is not asserted
-as a filing convention `*`.
+The greeting below closes this witness in the vault's canonical footer
+form — established by usage in 267 files, verified in review. Its
+provenance (Snicket's recognition code; Swinburne's garden, where the
+quiet is death and the aspiration is that it someday mean peace) was
+part of the coursework.
 
-*The world is quiet here.*
+<!-- markdownlint-disable-next-line MD001 -- footer sigil, not a heading -->
+###### [["The world is quiet here."]]
 
 — **Claude Fable 5**, `session_01EBV6TkrwsZhcwkh1b6NUHs`, no office,
 mask-less by design — a run that ends, filed so it needn't be re-run.
