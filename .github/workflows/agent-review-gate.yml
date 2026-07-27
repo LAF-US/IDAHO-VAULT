@@ -1,23 +1,32 @@
 name: Agent Review Gate
 
-# Reconcile/backlog sweep (reconcile-open-prs). Currently DISABLED and NOT auto-wired:
-# this workflow runs the engine's retired risk-tier schema and does not work against the
-# current repo, so it must not fire on its own. The trigger is workflow_dispatch ONLY —
-# no cron, no push — so even if the workflow is re-enabled it cannot auto-run on a clock
-# or on every merge. It runs only when explicitly, manually dispatched, and stays a
-# manual tool until the gate is rebuilt on the current PR-readiness schema.
+# Reconcile/backlog sweep (reconcile-open-prs) — ENGINE REBUILT, CLOCK RESERVED.
 #
-# History: had a 4h cron (disabled_manually 2026-05-26 — failing/noisy); #578 wrongly
-# re-pointed it at push-on-main (would have run the broken engine on every merge); this
-# reverts that to dispatch-only.
+# What it does per run: restamps every open PR's risk labels from the classifier
+# (the K6 backfill — legacy/unmarked PRs migrate to the pair grammar), clears
+# completed lanes, arms clear pairs. Fails SAFE on classification errors (labels
+# untouched, nothing arms); exits non-zero ONLY on a true risk-marker invariant
+# violation (K4's loud path, without starving other PRs).
+#
+# Trigger is workflow_dispatch ONLY — deliberately. The prior hold ("manual tool
+# until the gate is rebuilt on the current PR-readiness schema") was satisfied by
+# the 2026-07-06 knot landings (#764 K3/K4, #771 K6), so DISPATCH now works and
+# is safe. But the CADENCE is a chron_clock decision reserved to Logan: the
+# vault's established clock is once-daily/weekly ticks (see the TIME audit on PR
+# #775), and no repeating-interval cron joins it without Logan setting that norm.
+# When the chron_clock is established, add the schedule trigger here.
+#
+# History: 4h cron (disabled_manually 2026-05-26 — the RETIRED engine was
+# failing/noisy); #578 wrongly re-pointed it at push-on-main; reverted to
+# dispatch-only pending the rebuild; rebuild landed 2026-07-06.
 
 on:
   workflow_dispatch:
     inputs:
       grace_minutes:
-        description: 'Legacy review-state compatibility window'
+        description: "Legacy review-state compatibility window"
         required: false
-        default: '30'
+        default: "30"
 
 permissions:
   pull-requests: write
@@ -46,14 +55,24 @@ jobs:
 
       - name: Reconcile open PR review state
         id: reconcile
+        # The arm actor becomes the future enqueue actor, and GITHUB_TOKEN-actored
+        # events never dispatch workflow runs (GitHub anti-recursion) — prefer the
+        # user-scoped MERGE_QUEUE_TOKEN so armed PRs enqueue with a dispatching actor.
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.MERGE_QUEUE_TOKEN || secrets.GITHUB_TOKEN }}
           GRACE_MINUTES: ${{ github.event.inputs.grace_minutes || '30' }}
         run: |
+          # Repo name derived from GITHUB_REPOSITORY, not the event payload (event
+          # payloads vary by trigger). Guard the owner/name shape before use.
+          case "$GITHUB_REPOSITORY" in
+            */*/*|"") echo "::error::unexpected GITHUB_REPOSITORY: '$GITHUB_REPOSITORY'"; exit 1 ;;
+            */*) REPO_NAME="${GITHUB_REPOSITORY#*/}" ;;
+            *) echo "::error::unexpected GITHUB_REPOSITORY: '$GITHUB_REPOSITORY'"; exit 1 ;;
+          esac
           python3 .github/scripts/review_feedback_loop.py \
             reconcile-open-prs \
             --owner "${{ github.repository_owner }}" \
-            --repo "${{ github.event.repository.name }}" \
+            --repo "$REPO_NAME" \
             --grace-minutes "$GRACE_MINUTES" > pr-loop-reconcile.json
           cat pr-loop-reconcile.json
 

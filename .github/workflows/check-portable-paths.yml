@@ -24,6 +24,7 @@ jobs:
       - name: Check for cross-platform path violations
         shell: bash
         run: |
+          set -eo pipefail  # a failed git diff must fail the step, not feed the checker empty stdin
           set +H  # Disable bash history expansion (paths contain !)
           VALIDATOR="trusted-main/.github/scripts/check_portable_paths.py"
           if [ ! -f "$VALIDATOR" ]; then
@@ -31,13 +32,17 @@ jobs:
             VALIDATOR=".github/scripts/check_portable_paths.py"
           fi
 
+          # --diff-filter=ACMRT: check only paths that EXIST in the result
+          # (Added/Copied/Modified/Renamed/Type-changed), excluding Deleted (D).
+          # A deletion that removes an illegal path must never be blocked by the
+          # path guard, or a bad path could never be cleaned up via a PR.
           if [ "${{ github.event_name }}" = "pull_request" ]; then
-            git -c core.quotePath=false diff --name-only \
+            git -c core.quotePath=false diff --name-only --diff-filter=ACMRT \
               "${{ github.event.pull_request.base.sha }}" \
               "${{ github.event.pull_request.head.sha }}" |
               python "$VALIDATOR" --paths-from-stdin
           elif [ "${{ github.event_name }}" = "merge_group" ]; then
-            git -c core.quotePath=false diff --name-only \
+            git -c core.quotePath=false diff --name-only --diff-filter=ACMRT \
               "${{ github.event.merge_group.base_sha }}" \
               "${{ github.event.merge_group.head_sha }}" |
               python "$VALIDATOR" --paths-from-stdin
@@ -48,7 +53,7 @@ jobs:
               git -c core.quotePath=false ls-tree -r --name-only "$after" |
                 python "$VALIDATOR" --paths-from-stdin
             else
-              git -c core.quotePath=false diff --name-only "$before" "$after" |
+              git -c core.quotePath=false diff --name-only --diff-filter=ACMRT "$before" "$after" |
                 python "$VALIDATOR" --paths-from-stdin
             fi
           fi

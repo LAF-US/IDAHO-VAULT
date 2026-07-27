@@ -48,13 +48,13 @@ Swarm agents need a governed, auditable, single-choke-point interface to Linear.
 ## 2. Architecture
 
 ```
-                         ┌─────────────────────────────────┐
+                         ┌────────────────────────────────Ŀ
                          │         LINEAR (GraphQL)         │
                          │  api.linear.app/graphql          │
                          │  Webhook events → forwarder      │
                          └────────────┬────────────────────┘
                                       │
-                    ┌─────────────────▼─────────────────────┐
+                    ┌─────────────────▼────────────────────Ŀ
                     │       SWARM LINEAR GATEWAY             │
                     │   .github/scripts/linear_gateway.py   │
                     │                                        │

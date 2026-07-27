@@ -549,12 +549,12 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Vol. 01 Issue 01 - The Power of a Lost Cau
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Jim Addis.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Paul Amador.md
 ``n
-### Group 73: Idaho Code ┬º74-202 (2).md
+### Group 73: Idaho Code §74-202 (2).md
 
 **Size**: 1.38 KB | **Hash**: `87AA543B9BFA6CEA4F7ECB653A63462B` | **Files**: 2
 
-``nC:\Users\loganf\Documents\IDAHO-VAULT\Idaho Code ┬º74-202 (2).md
-C:\Users\loganf\Documents\IDAHO-VAULT\Idaho Code ┬º74-202__src_scratch-folder__51ed2932.md
+``nC:\Users\loganf\Documents\IDAHO-VAULT\Idaho Code §74-202 (2).md
+C:\Users\loganf\Documents\IDAHO-VAULT\Idaho Code §74-202__src_scratch-folder__51ed2932.md
 ``n
 ### Group 74: badger.md
 
@@ -22505,12 +22505,12 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Christa Hazel.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\H0395 (2).pdf
 C:\Users\loganf\Documents\IDAHO-VAULT\H0395__src_scratch-folder__c0afd74a.pdf
 ``n
-### Group 293: Idaho Code ┬º74-208 (2).md
+### Group 293: Idaho Code §74-208 (2).md
 
 **Size**: 1.36 KB | **Hash**: `0E2A6AEDDC473A1BE217D6001D37480B` | **Files**: 2
 
-``nC:\Users\loganf\Documents\IDAHO-VAULT\Idaho Code ┬º74-208 (2).md
-C:\Users\loganf\Documents\IDAHO-VAULT\Idaho Code ┬º74-208__src_scratch-folder__8a562736.md
+``nC:\Users\loganf\Documents\IDAHO-VAULT\Idaho Code §74-208 (2).md
+C:\Users\loganf\Documents\IDAHO-VAULT\Idaho Code §74-208__src_scratch-folder__8a562736.md
 ``n
 ### Group 294: 1951 Marylyn Monroe - Potato Sack Dress 1 1.md
 
@@ -22822,12 +22822,12 @@ C:\Users\loganf\Documents\IDAHO-VAULT\U.S. Democratic Party.md
 C:\Users\loganf\Documents\IDAHO-VAULT\U.S. Libertarian Party.md
 C:\Users\loganf\Documents\IDAHO-VAULT\U.S. Republican Party.md
 ``n
-### Group 337: Idaho Code ┬º74-207 (2).md
+### Group 337: Idaho Code §74-207 (2).md
 
 **Size**: 1.7 KB | **Hash**: `1DF8920C2A0B0A432B218AC4214E5D04` | **Files**: 2
 
-``nC:\Users\loganf\Documents\IDAHO-VAULT\Idaho Code ┬º74-207 (2).md
-C:\Users\loganf\Documents\IDAHO-VAULT\Idaho Code ┬º74-207__src_scratch-folder__48e54c93.md
+``nC:\Users\loganf\Documents\IDAHO-VAULT\Idaho Code §74-207 (2).md
+C:\Users\loganf\Documents\IDAHO-VAULT\Idaho Code §74-207__src_scratch-folder__48e54c93.md
 ``n
 ### Group 338: SCRATCH--55aff571-55fe-e103-c089-36bea65e964c-2026-01-21_16-04-56-loganf.prproj
 

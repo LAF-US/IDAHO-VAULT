@@ -2,25 +2,28 @@ name: Batch Arm Merge Queue
 
 # Sweeps open, non-draft PRs and gets the READY ones into the merge queue.
 #
-# Why this is not just `gh pr merge --auto`: on a merge-queue repo, `--auto`
-# only calls enablePullRequestAutoMerge, and re-enabling auto-merge on a PR that
-# already has it is an idempotent no-op — it prints
+# Why arming auto-merge is not enough: on a merge-queue repo, `gh pr merge
+# --auto` only calls enablePullRequestAutoMerge, which records "merge when ready"
+# but does NOT add the PR to the queue. Enqueue is a separate step. Re-arming a
+# PR that already has auto-merge is an idempotent no-op — it prints
 # "! The merge strategy for main is set by the merge queue", exits 0, and changes
-# nothing. Enqueue fires on the TRANSITION into ready, so a PR armed while it was
-# still blocked never enqueues when it later goes green, and a plain re-run only
-# re-confirms the already-on auto-merge (it never re-fires the transition).
-# Verified against live runs 2026-06-19: an arm pass reported armed=73 while
-# ZERO PRs entered the queue (the last merge_group stayed pinned hours earlier).
-# What actually enqueues a ready PR is a fresh disable -> re-enable toggle — that
-# is what landed #508. See the field note on PR #588.
+# nothing. Verified against live runs 2026-06-19: an arm pass reported armed=73
+# while ZERO PRs entered the queue (the last merge_group stayed pinned hours
+# earlier). What actually puts a ready PR in the queue is the enqueuePullRequest
+# GraphQL mutation. See the field note on PR #588.
 #
 # So, per PR:
-#   - ready (mergeStateStatus == CLEAN): disable then re-enable auto-merge. The
-#     toggle returns a FRESH enablement and forces the ready-transition, so the
-#     PR enqueues now. A plain `--auto` here would be the idempotent no-op above.
-#   - not yet ready: best-effort `--auto` arm. (It still needs a toggle-while-
-#     ready to actually enqueue; a later run of this workflow does that once the
-#     PR is CLEAN.)
+#   - ready (mergeStateStatus == CLEAN or UNSTABLE): arm auto-merge as a backstop, then call
+#     the enqueuePullRequest mutation to ADD it to the merge queue now. Counted as
+#     enqueued only when the mutation returns a merge-queue entry id. A PR that is
+#     ALREADY in the queue (mergeQueueEntry present) is skipped, not re-enqueued —
+#     a redundant mutation GitHub may reject would otherwise be mis-counted as failed.
+#   - BEHIND (head out of date with base): the branch-update arm — merge base in
+#     (the automated form of the "Update branch" button) so the PR can recompute to
+#     CLEAN and a later pass enqueues it. Arm as a backstop too. DIRTY (a real merge
+#     conflict) is a different state, never reaches this arm, and is left for a human.
+#   - not yet ready (BLOCKED / UNKNOWN-after-retries / …): best-effort `--auto` arm so
+#     it merges once it goes green; a later sweep enqueues it via the mutation once CLEAN.
 #   - arm/enqueue refused with the workflows-permission error: bucketed on its
 #     own. Enabling auto-merge while a workflow-touching PR is still blocked can
 #     succeed (that is how auto-merge-engage arms them on open), but the Actions
@@ -46,7 +49,7 @@ on:
       label:
         description: Only act on PRs with this label (empty = all non-draft PRs)
         required: false
-        default: ''
+        default: ""
 
 jobs:
   arm-merge-queue:
@@ -80,8 +83,13 @@ jobs:
           # The list is newline-separated; expanding it inline as `for pr in ${{ ... }}`
           # injects raw newlines and crashes bash ("syntax error near unexpected token").
           PRS: ${{ steps.list-prs.outputs.prs }}
+          # Optional repo/org variables for tuning the merge-state retry. Mapped
+          # in explicitly because vars.* are NOT auto-injected into the shell;
+          # each is empty when unset, so the `${VAR:-N}` defaults below apply.
+          MERGE_STATE_RETRIES: ${{ vars.MERGE_STATE_RETRIES }}
+          MERGE_STATE_DELAY: ${{ vars.MERGE_STATE_DELAY }}
         run: |
-          enqueued=0; armed_pending=0; needs_wf_token=0; failed=0; total=0
+          enqueued=0; already_queued=0; armed_pending=0; updated_behind=0; needs_wf_token=0; failed=0; total=0
           repo="$GITHUB_REPOSITORY"
 
           # An arm/enqueue failure is the workflows-permission case when gh says so
@@ -105,39 +113,108 @@ jobs:
             return 1
           }
 
+          # mergeStateStatus is computed lazily: the first read of a "cold" PR
+          # returns UNKNOWN and only *triggers* the computation, so a genuinely
+          # ready PR looks not-ready on a cold sweep (verified 2026-06-20 — a cold
+          # pass saw UNKNOWN for ~all PRs; the same PRs resolved to real states
+          # seconds later). Re-poll a bounded number of times so a freshly-ready
+          # PR is seen as CLEAN and actually enqueued. Returns non-zero ONLY on a
+          # real `gh pr view` failure — UNKNOWN is a value, never a command error.
+          # Tunable without editing the workflow: set repo/org variables
+          # MERGE_STATE_RETRIES / MERGE_STATE_DELAY (mapped into env: above), or
+          # any inherited env var of the same name; unset/empty falls to defaults.
+          MERGE_STATE_RETRIES="${MERGE_STATE_RETRIES:-3}"
+          MERGE_STATE_DELAY="${MERGE_STATE_DELAY:-2}"
+          # Reads the outer job's `repo` (same pattern as is_wf_perm_failure above).
+          read_merge_state() {
+            local pr_num="$1" st="" i=1 err
+            err=$(mktemp)
+            while [ "$i" -le "$MERGE_STATE_RETRIES" ]; do
+              # Capture stderr so a real gh failure (auth / rate-limit / API) is
+              # surfaced in the job log instead of being swallowed behind the
+              # generic skip message the caller prints.
+              if ! st=$(gh pr view "$pr_num" --repo "$repo" --json mergeStateStatus \
+                -q '.mergeStateStatus' 2>"$err"); then
+                echo "  gh pr view failed for #$pr_num: $(tr '\n' ' ' <"$err")" >&2
+                rm -f "$err"; return 1
+              fi
+              [ "$st" != "UNKNOWN" ] && { printf '%s' "$st"; rm -f "$err"; return 0; }
+              [ "$i" -lt "$MERGE_STATE_RETRIES" ] && sleep "$MERGE_STATE_DELAY"
+              i=$((i + 1))
+            done
+            printf '%s' "$st"   # still UNKNOWN after retries — treated as not-ready
+            rm -f "$err"
+            return 0
+          }
+
           while IFS= read -r pr; do
+            pr="${pr%$'\r'}"            # strip a trailing CR if the list ever carries one
             [ -z "$pr" ] && continue
+            # Defensive: ids come from `jq -r .number`, but never feed a non-numeric token to a
+            # PR URL or the typed GraphQL `number` arg if that upstream ever changes (salvaged
+            # from #549). A bad id would otherwise 404 and be mis-counted as a real failure.
+            case "$pr" in *[!0-9]*) echo "PR entry ignored — non-numeric id: '$pr'"; continue;; esac
             total=$((total + 1))
             url="https://github.com/$repo/pull/$pr"
-            # Distinguish a FAILED `gh pr view` (operational error) from a real
-            # mergeStateStatus value: UNKNOWN is itself a legitimate enum value
-            # (mergeability not yet computed) and must not be conflated with a
-            # command failure. Detect failure by exit status, not a sentinel.
-            if ! state=$(gh pr view "$pr" --repo "$repo" --json mergeStateStatus \
-              -q '.mergeStateStatus' 2>/dev/null); then
+            # Read mergeability, retrying past the lazy-computation UNKNOWN (see
+            # read_merge_state). A real `gh pr view` failure — not a value — is the
+            # only non-zero return, so surface it and skip.
+            if ! state=$(read_merge_state "$pr"); then
               echo "PR #$pr — ERROR: gh pr view failed (could not read mergeStateStatus); skipping"
               failed=$((failed + 1)); continue
             fi
-            # CLEAN is the "ready to merge/queue" signal; everything else
-            # (BLOCKED, BEHIND, UNKNOWN, ...) takes the best-effort arm path.
+            # CLEAN or UNSTABLE is the "ready to enqueue" signal: both mean the PR
+            # satisfies branch protection (a *required* failure would read BLOCKED, not
+            # UNSTABLE). UNSTABLE just has a NON-required check red (e.g. an advisory
+            # reviewer) — the merge queue still accepts it and re-runs the required set.
+            # Everything else (BLOCKED, BEHIND, DIRTY, UNKNOWN-after-retries, ...) takes
+            # the arm path. If GitHub does reject an UNSTABLE enqueue, the mutation returns
+            # no entry and it falls through to the FAILED bucket — never a silent success.
             echo "PR #$pr — mergeStateStatus=$state"
 
             err=$(mktemp)
-            if [ "$state" = "CLEAN" ]; then
+            if [ "$state" = "CLEAN" ] || [ "$state" = "UNSTABLE" ]; then
               if [ "$DRY_RUN" = "true" ]; then
-                echo "  DRY RUN: would enqueue (disable->enable toggle) #$pr"
+                echo "  DRY RUN: would enqueue (enqueuePullRequest) #$pr"
                 enqueued=$((enqueued + 1)); rm -f "$err"; continue
               fi
-              # Ready: force the ready-transition with a FRESH disable -> enable
-              # toggle. A plain re-enable on an already-armed PR is an idempotent
-              # no-op that does NOT enqueue. The disable is best-effort — it errors
-              # benignly when auto-merge was not enabled — but is logged if it
-              # fails, so a permission/config problem stays visible.
-              if ! gh pr merge "$url" --repo "$repo" --disable-auto >"$err" 2>&1; then
-                echo "  note: disable-auto non-fatal for #$pr ($(tr '\n' ' ' <"$err"))"
+              # Ready → actually ADD it to the merge queue via the enqueuePullRequest
+              # mutation. Arming auto-merge alone does NOT enqueue (it only records
+              # "merge when ready"); the enqueue mutation is the step that puts the PR
+              # in the queue. Arm first as a backstop so a transiently-rejected enqueue
+              # still lands on a later sweep.
+              gh pr merge "$url" --repo "$repo" --auto --merge >/dev/null 2>&1 || true
+              # Fetch the node id AND any existing merge-queue entry in one query so an
+              # ALREADY-queued PR is skipped instead of re-enqueued. enqueuePullRequest on a
+              # queued PR is a redundant mutation GitHub may reject — which would otherwise be
+              # mis-counted as FAILED on every re-sweep (the Python path short-circuits the
+              # same way). owner/name are split from "owner/repo" for the typed GraphQL args.
+              owner="${repo%%/*}"; name="${repo#*/}"
+              pr_info=$(gh api graphql \
+                -f query='query($owner:String!,$name:String!,$number:Int!){repository(owner:$owner,name:$name){pullRequest(number:$number){id mergeQueueEntry{id}}}}' \
+                -f owner="$owner" -f name="$name" -F number="$pr" 2>"$err" || true)
+              # Guard the jq parses with `|| true`: Actions' default bash runs with `-eo
+              # pipefail`, so an unguarded `var=$(… | jq …)` would ABORT the whole step (no
+              # `failed` increment, no summary) if pr_info is non-JSON — e.g. a 5xx HTML body
+              # or proxy error landed on stdout. On a parse failure node_id stays empty and the
+              # PR falls into the FAILED bucket as intended. jq stderr is appended to $err.
+              node_id=$(printf '%s' "$pr_info" | jq -r '.data.repository.pullRequest.id // empty' 2>>"$err" || true)
+              queued_entry=$(printf '%s' "$pr_info" | jq -r '.data.repository.pullRequest.mergeQueueEntry.id // empty' 2>>"$err" || true)
+              if [ -n "$queued_entry" ]; then
+                echo "  already queued #$pr (merge-queue entry $queued_entry) — skipping enqueue"
+                already_queued=$((already_queued + 1)); rm -f "$err"; continue
               fi
-              if gh pr merge "$url" --repo "$repo" --auto --merge 2>"$err"; then
-                echo "  enqueued #$pr (toggled while ready)"
+              # Only call the mutation when we actually have a node id — an empty id would
+              # just make a guaranteed-failing GraphQL request whose error we'd then ignore.
+              # A blank node_id (the id query failed) falls through to the FAILED bucket.
+              entry=""
+              if [ -n "$node_id" ]; then
+                entry=$(gh api graphql \
+                  -f query='mutation($pr:ID!){enqueuePullRequest(input:{pullRequestId:$pr}){mergeQueueEntry{id}}}' \
+                  -f pr="$node_id" --jq '.data.enqueuePullRequest.mergeQueueEntry.id' 2>"$err" || true)
+              fi
+              if [ -n "$node_id" ] && [ -n "$entry" ] && [ "$entry" != "null" ]; then
+                echo "  enqueued #$pr (merge-queue entry $entry)"
                 enqueued=$((enqueued + 1))
               elif is_wf_perm_failure "$err" "$pr"; then
                 echo "  needs workflows-scoped token #$pr (touches .github/workflows/**)"
@@ -146,13 +223,41 @@ jobs:
                 echo "  FAILED to enqueue #$pr: $(tr '\n' ' ' <"$err")"
                 failed=$((failed + 1))
               fi
+            elif [ "$state" = "BEHIND" ]; then
+              # The branch-update arm: BEHIND means the head is out of date with base
+              # (the #663 case that had to be cleared by hand with the "Update branch"
+              # button). Merge base in so the PR can recompute toward CLEAN; a later sweep
+              # or enqueue-on-checks then enqueues it. DIRTY (a real conflict) is its own
+              # state and never reaches here, so update-branch is only attempted when it
+              # can actually succeed.
+              if [ "$DRY_RUN" = "true" ]; then
+                echo "  DRY RUN: would update branch (BEHIND) #$pr"
+                updated_behind=$((updated_behind + 1)); rm -f "$err"; continue
+              fi
+              # PUT .../update-branch is the API behind the "Update branch" button. It
+              # creates a merge commit on the PR head (→ CI re-runs) and returns 202. A
+              # workflow-touching PR can still need the workflows-scoped PAT to push that
+              # commit, so the same is_wf_perm_failure bucketing applies.
+              if gh api --method PUT "repos/$repo/pulls/$pr/update-branch" >/dev/null 2>"$err"; then
+                echo "  updated branch (was BEHIND) #$pr — CI re-runs; a later pass enqueues it"
+                updated_behind=$((updated_behind + 1))
+                # Arm as a backstop so auto-merge is set once it goes CLEAN (enqueue-on-checks
+                # only recovers armed PRs). Idempotent if engage already armed it.
+                gh pr merge "$url" --repo "$repo" --auto --merge >/dev/null 2>&1 || true
+              elif is_wf_perm_failure "$err" "$pr"; then
+                echo "  needs workflows-scoped token #$pr (touches .github/workflows/**)"
+                needs_wf_token=$((needs_wf_token + 1))
+              else
+                echo "  FAILED to update branch #$pr: $(tr '\n' ' ' <"$err")"
+                failed=$((failed + 1))
+              fi
             else
               if [ "$DRY_RUN" = "true" ]; then
                 echo "  DRY RUN: would arm --auto #$pr (not yet ready: $state)"
                 armed_pending=$((armed_pending + 1)); rm -f "$err"; continue
               fi
-              # Not yet ready: best-effort arm so a later toggle-while-ready pass
-              # enqueues it once it is CLEAN.
+              # Not yet ready (BLOCKED / UNKNOWN-after-retries / …): best-effort arm so a
+              # later sweep enqueues it via the enqueuePullRequest mutation once it is CLEAN.
               if gh pr merge "$url" --repo "$repo" --auto --merge 2>"$err"; then
                 echo "  armed (pending readiness) #$pr"
                 armed_pending=$((armed_pending + 1))
@@ -172,10 +277,22 @@ jobs:
             echo ""
             [ "$DRY_RUN" = "true" ] && echo "> **DRY RUN** — no changes made." && echo ""
             echo "- candidates processed (open, non-draft, label-filtered if a label was given): $total"
-            echo "- **enqueued (ready, toggled): $enqueued**"
+            echo "- **enqueued (ready, via enqueuePullRequest): $enqueued**"
+            echo "- already queued (skipped — no-op this run): $already_queued"
             echo "- armed, pending readiness: $armed_pending"
+            echo "- updated branch (was BEHIND): $updated_behind"
             echo "- needs workflows-scoped token (touches .github/workflows/**): $needs_wf_token"
             echo "- failed: $failed"
           } >> "$GITHUB_STEP_SUMMARY"
 
-          echo "Done: enqueued=$enqueued armed_pending=$armed_pending needs_wf_token=$needs_wf_token failed=$failed (of $total)"
+          echo "Done: enqueued=$enqueued already_queued=$already_queued armed_pending=$armed_pending updated_behind=$updated_behind needs_wf_token=$needs_wf_token failed=$failed (of $total)"
+
+          # Fail closed (salvaged from #549): if every considered PR landed in the FAILED bucket,
+          # a shared problem (token/permission regression, API outage) is far likelier than every
+          # PR being legitimately un-processable — surface it instead of a green false-success.
+          # needs_wf_token is an EXPECTED per-PR limitation (workflow-touching PR + no PAT), so it
+          # is NOT a failure; the guard only trips when failed == total.
+          if [ "$total" -gt 0 ] && [ "$failed" -eq "$total" ]; then
+            echo "::error::All $total considered PRs failed to enqueue/arm — likely a systemic auth/API problem, not per-PR gating."
+            exit 1
+          fi

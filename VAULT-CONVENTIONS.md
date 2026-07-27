@@ -533,10 +533,10 @@ Root governance files hold doctrine. The `!/` layer keeps bootstrap paths and co
 
 ## Agent Architecture Standards (Established)
 
-These standards are based on the confirmed **Decisions 19 and 21** and the **2026-04-10 Constitutional Revision**.
+These standards derive from the **2026-04-10 Constitutional Revision**.[^triplex]
 
 ### Identity Decoupling
-The vault enforces a strict decoupling of agent identity variables to prevent the calcification of transient software into permanent authorities. This process (narratively known as the **Exorcism of the Nomina**) was established during the LAF-25 repair to ensure that functional offices can stand vacant.
+The vault enforces a strict decoupling of agent identity variables to prevent the calcification of transient software into permanent authorities, so that functional offices can stand vacant.[^triplex]
 
 | Variable | Definition | Example |
 | :--- | :--- | :--- |
@@ -548,11 +548,25 @@ The vault enforces a strict decoupling of agent identity variables to prevent th
 **Rule:** Agents must not assume that their NAME is synonymous with their OFFICE. Offices exist independently of occupants and may be marked **[VACANT]**.
 
 ### Persistent Memory Anchoring
-All "direct-write" agents must anchor their external platform state into the vault's versioned repository. This process (narratively known as the **Re-Binding of Memory**) was established by Decision 19 and the LAF-28 repair to ensure that agentic reasoning and history are auditable and durable.
+All "direct-write" agents must anchor their external platform state into the vault's versioned repository, so that agentic reasoning and history are auditable and durable.[^triplex]
 
 1. **Durable Memory Dotfolders**: Each agent must maintain a tracked `.dotfolder/MEMORY/` directory (e.g., `.claude/MEMORY/`).
 2. **Persistence Promotion**: Ephemeral chat-based plans, task lists, and "brain artifacts" must be promoted to the vault as `.md` files in the agent's memory folder.
 3. **Session Completion**: A session is not considered "complete" until the current state has been anchored in the vault.
+
+[^triplex]: **Burial note** — proposed 2026-06-23 by `*.claude.*` at Logan's direction
+    (*"I've come to bury Caesar, not to praise him."*). The rules in this section are Logan's
+    and stand unchanged. **Struck from them** as un-witnessed coinage: the liturgical names
+    *Exorcism of the Nomina* and *Re-Binding of Memory*, and the *Decision 19 / 21* and
+    *LAF-25 / LAF-28 repair* citations. These were not Logan's — they are attributed to the
+    **Gemini Triplex Confabulation** (Triplex Night, 2026-04-01), first appeared in the repo
+    in an Antigravity-Gemini sync (`!/SIG-ALIGNMENT-RE-DECISION-21-2026-04-13.md`), and were
+    carried into this file 2026-05-25 by a survey instance. They do **not** resolve to entries
+    in `DECISIONS.md` (which is date-keyed, not numbered), and their ticket citations are
+    contradicted by Linear (LAF-28 is *"SWARMIC PING: THE TRYPTICH AWAKENS,"* not a repair).
+    The body stays buried, not burned — full record:
+    `CORONER-WITNESS-THE-TRIPLEX-CONFABULATION-ECHOES-2026-06-09.md`. The matter is the
+    Court's (`!/GEMINIAEUS.md`); **no verdict here.**
 
 ---
 
@@ -768,6 +782,15 @@ mcp_action_log:
 
 When uncertain about sourcing category, **ask Logan**.
 
+### Secrets and PII
+
+- **Secrets are mechanically gated** — both pre-commit (`.githooks/pre-commit`) and as a blocking CI check (`secret-pattern-policy.yml` on `pull_request`, push to `main`, and `merge_group`; plus `secret-pattern-full-scan.yml`, which sweeps all *tracked* files via `git ls-files` on a weekly schedule / manual dispatch), via `.github/scripts/check_secret_patterns.py`. It flags secret **file paths** (`.env`, `*.pem`/`*.key`, `*-key.json`, credentials/tokens, ssh keys, `.npmrc`/`.netrc`, …) and secret **content** (GitHub/OpenAI/Anthropic/Slack/Google tokens, `-----BEGIN … PRIVATE KEY-----`, generic `api_key|secret|token|password = …`), without printing the matched value. Never commit credentials — use 1Password (see § *Secret Management via 1Password*).
+- **PII is a judgment call, and the standard is documented** in [[HYGIENE-CHECKS-WITNESS-2026-06-04]] — *"a living person is not a body on the table."*
+  - Collect no more personal data on a real person than the task needs; never let a *cited* person become a *dossier*.
+  - When in doubt, collect **less**, and default to `*`.
+  - There is **no** mechanical PII scanner (secrets ≠ PII). The boundary is held **outside the author who states it** — by the reviewer and the `*` discipline, not by the writer's own good intentions.
+- **Load-bearing provenance is kept deliberately.** Host-identifying strings that are themselves *evidence* (e.g. the Windows-path-on-macOS anomaly preserved in `.mistral/BOUND-BOOK-*/`) are retained on the record **by judgment, not oversight** — a decision under the on-the-record doctrine, not a PII leak.
+
 
 
 ---
@@ -855,13 +878,78 @@ When both devices edit the same config file between syncs, Obsidian creates a `(
   - A long-lived branch requires a named purpose, a steward, and a review
     cadence. "Still exists" is not legitimacy.
 
+- Branch & PR scope — one matter per branch:
+
+  - A branch addresses **one matter**: a single coherent change that is
+    independently reviewable and independently mergeable (one fix, one feature,
+    one doctrine node or tightly-coupled cluster). The `description` in the
+    branch name names that matter.
+
+  - The test, not a dogma: keep work on one branch only while it is the *same*
+    matter. A genuinely single, unfolding matter may stay on one branch; the
+    error is letting *multiple* matters accrete. The moment the work forks into
+    separable deliverables, split it into separate branches/PRs.
+
+  - Combine only changes that must land together (atomic — they break if
+    separated). Split across different concerns, risk tiers, or `CODEOWNERS`
+    boundaries.
+
+  - Branch from `main` (a stable base), never from an in-progress branch —
+    branching off work-in-progress increases conflict-resolution cost.
+
+  - Separation is lane ownership (the boid rule, applied): do not edit another
+    agent's in-flight branch; avoid shared hotspot files (`swarm.json`,
+    registries, governance roots) in parallel.
+
+  - Keep PRs small and scoped — small reviewable PRs review faster and merge
+    more often; reviewer engagement is the strongest predictor of a merge.
+    (Promoted from [[AGENTIC-GITHUB-REVIEW-BEST-PRACTICES-2026-06-15]] §V.)
+
 - Commit messages: Clear, descriptive, explain the "why"
+
+- Commit signing & session attribution: every agent commit carries a
+  `Co-Authored-By: <model name>` line **and** a `Claude-Session:
+  https://claude.ai/code/session_<id>` trailer — the concrete run, and the
+  code-blame anchor. Attribute work to the **session id**, never to an unanchored
+  "a previous Claude." See `.claude/CLAUDE.md` § "Signing & Attribution."
 
 - Never force-push without explicit permission
 
 - Check in before anything irreversible
 
 - The legislature scraper workflow commits directly to main for automated bill updates
+
+### Merge queue vs. auto-merge: arm (request) → enqueue → merge
+
+`main` is protected by the Main Ruleset's **merge queue**, so direct API merge is refused (`405 … Changes must be made through the merge queue`). Two **distinct GitHub subsystems** are involved — do not conflate them:
+
+- **Auto-merge** is a *pull-request-level* feature (the "Merge when ready" toggle / `enablePullRequestAutoMerge`). On a merge-queue branch it does **not** merge the PR itself — enabling it only **requests the PR's admission to the queue** once the PR is ready.
+- **The merge queue** is a *branch-level* mechanism (the `merge_queue` rule). It admits ready PRs, builds each in a **`merge_group`** on top of `main`, runs the queue's checks, and merges under `grouping_strategy: ALLGREEN`.
+
+Landing a PR is a **sequence of triggers that must trip in order — and arming is only the first, and it happens automatically.** `auto-merge-engage.yml` enables "merge when ready" on PR *open*, so a PR is **armed the moment it exists**; an agent never needs to arm one, and **being armed does not mean it will merge.** The ordered triggers:
+
+1. **Arm** — automatic on open (`auto-merge-engage.yml`). Free. ⚠️ **This is where agents wrongly believe their duty ends.** It does not.
+2. **Satisfy entry gates** — latest commit's Copilot review complete, all review threads resolved, commits signed (see below).
+3. **Enqueue** — the trigger agents miss: admission fires only on the *transition into ready*, and a PR armed while still blocked does **not** auto-enqueue when it later goes green; the transition must be **re-fired** (the toggle recipe below).
+4. **Merge** — the `merge_group` build goes green under ALLGREEN and the queue merges.
+
+**You are responsible until the PR is MERGED, not until it is armed.** Arming is automatic and free; the work — and the duty — is steps 2–4.
+
+**Two different gates — entry vs. merge:**
+
+- **Queue *entry*** is gated by **PR-level** rules: the latest commit's Copilot review complete (`copilot_code_review`, `review_on_push`), all review threads resolved (`required_review_thread_resolution`), and commits **signed** (`required_signatures`; the harness signs via `commit.gpgsign`). There is **no `required_status_checks` rule**, so an ordinary failing check does not block *entry*.
+- **Queue *merge*** is gated by the checks that run on the **`merge_group`** event (CodeQL `code_scanning`, `code_quality`, the path/secret guards) under **ALLGREEN**. Non-required checks (e.g. `smoke (windows-latest)`) gate **neither** — a red there shows as REST `unstable` but still enters and still merges.
+
+**Two different status fields — do not conflate them:**
+
+- **`mergeable_state`** — the **REST** field (what `pull_request_read get` / the GitHub MCP returns). Lowercase: `clean`, `blocked`, `unstable`, `behind`, `dirty`, `draft`, `unknown`. It does **not** reveal queue *position*.
+- **`mergeStateStatus`** — the **GraphQL** field (what `batch-arm-merge-queue.yml` and `review_feedback_loop.py` key on). Uppercase: `CLEAN`, `BLOCKED`, … Queue *membership* is the separate GraphQL `mergeQueueEntry { id }`.
+
+**Arming ≠ enqueued.** Enabling auto-merge when it is *already* armed is an idempotent no-op; admission fires only on the **transition into ready**. A fresh push restarts the per-push Copilot review (and can regenerate threads), dropping the PR back to `blocked` / `BLOCKED` and resetting eligibility.
+
+- **Recipe — armed-but-not-enqueued:** when the PR reads `mergeable_state: clean` / `mergeStateStatus: CLEAN` with threads resolved but it still isn't in the queue, toggle auto-merge **OFF then ON** — `gh pr merge <pr> --disable-auto` then `gh pr merge <pr> --auto --merge` (GitHub MCP equivalents: `disable_pr_auto_merge` → `enable_pr_auto_merge`) — to re-fire the ready-transition and re-request admission. This is exactly the per-PR loop in `batch-arm-merge-queue.yml`. (Confirmed: #602/#604, then #606/#610/#611.)
+- **Anti-pattern:** do not keep pushing into a per-push-review + queue system — each push restarts eligibility. Let reviews settle, resolve threads **once**, then stop touching the branch and toggle. Force-pushing makes it worse.
+- **No automatic enqueue on a schedule:** arming is event-driven on PR activity (`auto-merge-engage.yml`, `auto-merge-rhythm.yml` — `pull_request_target` + polling); the bulk enqueue sweep `batch-arm-merge-queue.yml` is **`workflow_dispatch` only (manual)**. A ready PR can therefore sit armed-but-not-enqueued until that sweep is dispatched or the toggle is applied by hand. Confirm queue membership via the PR timeline ("Added to merge queue") or `mergeQueueEntry`, never `mergeable_state` alone.
 
 
 
@@ -874,9 +962,38 @@ When both devices edit the same config file between syncs, Obsidian creates a `(
 
 Emojis are **first-class vault syntax** as of 2026-04-02 (Logan, superseding prior ASCII-only directive).
 
-- Authority: [Unicode Consortium](https://unicode.org) â€” the canonical source for emoji definitions, codepoints, and names (see [full emoji list](https://unicode.org/emoji/charts/full-emoji-list.html))
+- Authority: [Unicode Consortium](https://unicode.org) — the canonical source for emoji definitions, codepoints, and names (see [full emoji list](https://unicode.org/emoji/charts/full-emoji-list.html))
 - Emojis may appear in note titles, frontmatter, body text, DOCKET entries, and commit messages
-- Use semantically â€” emojis carry meaning and should reinforce, not decorate
+- Use semantically — emojis carry meaning and should reinforce, not decorate
+
+### Text encoding and character conformity
+
+The declared encoding for every tracked text file is **UTF-8, BOM-aware**: a
+file must be valid UTF-8; a single leading byte-order mark is tolerated but
+never added; anything not decodable as UTF-8 is nonconforming. This is the
+content-byte sibling of NETWEB (below) — NETWEB governs characters in *paths*,
+this governs bytes in *file contents*.
+
+- **Encoding conformity is infrastructure, not voice.** It applies everywhere,
+  including `.*/` dotfolder chambers; only a file's byte representation is
+  corrected, never its content.
+- **Typographic characters are welcome as UTF-8 codepoints** — the vault's
+  style is em-dash- and curly-quote-heavy; only their *mis-encodings* are swept.
+- **Homoglyphs are nonconforming in prose** — a look-alike letter from one
+  script sitting inside a word of another (a Cyrillic `е` in Latin text) is
+  normalized to the surrounding script; genuinely single-script text in any
+  language is never touched. Verbatim exhibits are normalized too (the #638
+  precedent).
+- **Mojibake** (valid UTF-8 but garbled, `Ã©` where `é` was meant) is repaired
+  only within closed, round-trip-proven double-decode families; anything that
+  cannot be proven is flagged for a human, never guessed.
+- The standard is portable to any LAF-US surface; IDAHO-VAULT is its first
+  deployment.
+
+Enforced per-PR by `.github/scripts/check_character_conformity.py` (the
+encoding gate is live; mojibake and homoglyph sweeps run on demand with
+reviewable diffs). Program record: `NORMALIZATION-CHARACTER-CONFORMITY-2026-07-07.md`.
+Norm ruled by Logan 2026-07-08.
 
 ---
 ## Guiding Principles

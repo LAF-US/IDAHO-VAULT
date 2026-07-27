@@ -55,6 +55,8 @@ class IssueReconcilerTest(unittest.TestCase):
         ), mock.patch.object(
             issue_reconciler, "find_open_issue_number", return_value=99
         ), mock.patch.object(
+            issue_reconciler, "issue_has_fingerprint", return_value=False
+        ), mock.patch.object(
             issue_reconciler, "comment_issue"
         ) as comment_issue, mock.patch.object(
             issue_reconciler, "create_issue"

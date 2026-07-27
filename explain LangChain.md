@@ -1569,18 +1569,18 @@ From the patterns we've built:
 ## Your Architecture (The Vault)
 
 ```
-┌─────────────────────────────────────────────────────────────┐
+┌────────────────────────────────────────────────────────────Ŀ
 │                    ARCHITECT'S VAULT                        │
-├─────────────────┬───────────────────────────────────────────┤
+├─────────────────┬──────────────────────────────────────────Ĵ
 │   KNOWLEDGE     │  Obsidian Zettelkasten + RAG (pgvector)   │
 │   STORAGE       │  → Mistral embeddings → Vector DB        │
-├─────────────────┼───────────────────────────────────────────┤
+├─────────────────┼──────────────────────────────────────────Ĵ
 │   RESEARCH      │  Perplexity → CrewAI swarm →             │
 │   AGENTS        │  LangChain tools (Web3.py, rclone)       │
-├─────────────────┼───────────────────────────────────────────┤
+├─────────────────┼──────────────────────────────────────────Ĵ
 │   BLOCKCHAIN    │  GCP Node Engine → Web3.py → Sia backup  │
 │   LAYER         │  Immutable audit trail of all decisions  │
-├─────────────────┼───────────────────────────────────────────┤
+├─────────────────┼──────────────────────────────────────────Ĵ
 │   SECRETS       │  1Password CLI → Service accounts        │
 │   MANAGEMENT    │  API rotation, inheritance planning      │
 └─────────────────┴───────────────────────────────────────────┘
@@ -1673,9 +1673,9 @@ Given our thread (agentic workflows → blockchain → GCP → 1Password), **LAF
 ## Proposed LAF-US Architecture
 
 ```
-┌─ LAF-US (Local Agent Framework) ──────────────────────────┐
+┌─ LAF-US (Local Agent Framework) ─────────────────────────Ŀ
 │  Boise, ID | Agentic Blockchain Research Vault           │
-├─ Agents ──────────────────┬─ Storage ───────────────────┤
+├─ Agents ──────────────────┬─ Storage ──────────────────Ĵ
 │ CrewAI Swarm             │ Obsidian + pgvector (GCP)    │
 │ Mistral Large 3          │ Sia (rclone encrypted)       │
 │ Web3.py tools            │ BigQuery (agent logs)        │

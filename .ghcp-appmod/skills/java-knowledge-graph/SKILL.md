@@ -149,7 +149,7 @@ jq -r '([.nodes[] | select(.type=="module") | .id] -
 # Modules most depended upon (most critical)
 jq -r '[.edges[] | select(.type=="depends_on") | .to | split(":")[1]] | 
         group_by(.) | map({module: .[0], count: length}) | 
-        so***REMOVED***by(-.count) | .[:5] | 
+        sort_by(-.count) | .[:5] | 
         map("\(.module): \(.count) modules depend on it") | .[]' knowledge-graph.json
 
 # Dependencies by scope

@@ -108,6 +108,13 @@ ENV/
 build/
 dist/
 
+# coverage.py local run artifacts — CI generates and uploads coverage.xml to
+# Codacy, never commits it.
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+
 node_modules/
 **/node_modules/
 .npm-cache/
@@ -188,15 +195,35 @@ logs/
 
 # User runtime dotfolders (imported_software persona chambers) —
 # track anchor stubs only; ignore runtime/install/cache contents.
+# Dotfolder salvage safety: conflict-preserved `.home` copies, hash-suffixed
+# `.home.<sha>` copies, and Windows GUI duplicate names like `name (2).json`
+# inherit the privacy/runtime class of their source path unless Logan promotes
+# them explicitly.
+.claude/*.home*
+.claude/**/*.home*
+.claude/* ([0-9]*)*
+.claude/**/* ([0-9]*)*
+.codex/*.home*
+.codex/**/*.home*
+.codex/* ([0-9]*)*
+.codex/**/* ([0-9]*)*
+.codex/*.bak-*
+.codex/**/*.bak-*
+.codex/.app-server-state*
+.codex/sqlite/
+.config/scoop/config*.json*
+.ollama/id_ed25519*
+.sbx-denybin/* ([0-9]*)*
+
 
 # SSH identity material — keys, known hosts, signing config, auth state.
 .ssh/auth.json
-.ssh/known_hosts
+.ssh/1Password/
+.ssh/known_hosts*
 .ssh/authorized_keys
 .ssh/id_*
-.ssh/*_signing
-.ssh/*_signing.pub
-.ssh/allowed_signers
+.ssh/*_signing*
+.ssh/allowed_signers*
 
 # npm cache — opaque content-addressed store; can embed credential blobs.
 .npm/_cacache/
@@ -206,6 +233,7 @@ logs/
 .local/share/opencode/
 .local/share/opentui/
 .local/share/signal-cli/
+.local/state/
 .local/state/opencode/
 .local/state/lesshst
 
@@ -220,7 +248,7 @@ logs/
 
 # Claude Code runtime internals. CLAUDE.md + stub.txt are tracked;
 # everything below is local session or install state.
-.claude/settings.local.json
+.claude/settings.local*.json
 .claude/backups/
 .claude/cache/
 .claude/debug/
@@ -231,9 +259,9 @@ logs/
 # marketplace installs + cache — re-downloadable, not vault content
 .claude/plugins/
 **/.claude/worktrees/
-.claude/.last-cleanup
-.claude/history.jsonl
-.claude/mcp-needs-auth-cache.json
+.claude/*.last-cleanup
+.claude/history*.jsonl*
+.claude/mcp-needs-auth-cache*.json
 # clipboard snapshots — ephemeral, not documents
 .claude/paste-cache/
 # LLM-generated plan drafts (random-named). Promote to a named vault surface
@@ -247,6 +275,7 @@ logs/
 .codex/..codex-global-state.json.tmp-*
 .codex/.personality_migration
 .codex/.sandbox/
+.codex/.sandbox-bin/
 .codex/ambient-suggestions/
 .codex/archived_sessions/
 .codex/cache/
@@ -254,13 +283,13 @@ logs/
 .codex/chrome-native-hosts*.json
 .codex/computer-use/
 .codex/computer-use-turn-ended/
-.codex/history.jsonl
+.codex/history*.jsonl*
 .codex/home/
 .codex/installation_id
 .codex/log/
 .codex/logs_*.sqlite*
 .codex/memories/
-.codex/models_cache.json
+.codex/models_cache*.json*
 .codex/plugins/
 .codex/process_manager/
 .codex/sandbox.log
@@ -270,12 +299,13 @@ logs/
 .codex/state_*.sqlite*
 .codex/tmp/
 .codex/vendor_imports/
-.codex/version.json
+.codex/version*.json*
 
 .antigravity/argv.json
 .antigravity/extensions/
 # settings, session cache, command history — local IDE state
-.copilot/
+.copilot/*
+!.copilot/COPILOT.md
 .cursor/projects/
 .cursor/extensions/
 .cursor/plugins/cache/
@@ -353,6 +383,7 @@ logs/
 !.vscode/extensions.json
 !.vscode/tasks.json
 !.vscode/launch.json
+!.vscode/VSCODE.md
 !.vscode/mcp.json
 
 .idea/
