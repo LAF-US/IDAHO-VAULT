@@ -1,11 +1,15 @@
----
 authority: LOGAN
 related:
   - GITHOOKS
-  - imported_software
+  - Git
   - runtime
 ---
 
-**.githooks** — Imported software runtime persona.
+**.githooks** â€” Git hook runtime persona.
 
-githooks runtime and configuration.
+Tracked anchor for VAULT hook files and hook-adjacent notes.
+
+This anchor is not a setup contract. It does not declare coordination state,
+office, checkout activation, or operational status.
+
+Read the hook files themselves for implementation details.
