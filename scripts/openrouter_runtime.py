@@ -63,6 +63,8 @@ def ensure_op_signed_in() -> None:
         )
     except subprocess.TimeoutExpired as exc:
         raise SystemExit("1Password CLI 'op whoami' timed out after 15s.") from exc
+    except OSError as exc:
+        raise SystemExit(f"1Password CLI 'op whoami' could not run: {exc}") from exc
     if result.returncode != 0:
         raise SystemExit(
             "1Password CLI is not signed in. Run 'op signin' or unlock desktop integration first."
@@ -101,6 +103,8 @@ def ensure_env_file(agent: str) -> Path:
             raise SystemExit(f"{RESOLVER.name} timed out after 60s.") from exc
         except subprocess.CalledProcessError as exc:
             raise SystemExit(f"{RESOLVER.name} failed (exit {exc.returncode}).") from exc
+        except OSError as exc:
+            raise SystemExit(f"{RESOLVER.name} could not run: {exc}") from exc
 
     return ENV_FILE
 
