@@ -97,7 +97,7 @@ def main() -> int:
     out_file = Path(args.out_file) if args.out_file else repo_root / ".op" / "openrouter.env"
 
     if out_file.exists() and not args.force:
-        with open(out_file) as f:
+        with open(out_file, encoding="utf-8") as f:
             content = f.read()
         if "OPENROUTER_API_KEY=sk-" in content:
             print(f"Env file already exists at {out_file}. Use --force to regenerate.")
