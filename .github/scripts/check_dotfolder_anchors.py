@@ -23,7 +23,7 @@ untracked runtime dirs (.venv, caches) never false-fail a local run.
 
 from __future__ import annotations
 
-import subprocess
+import subprocess  # nosec B404 -- see [tool.bandit] note in pyproject.toml
 import sys
 from pathlib import Path
 

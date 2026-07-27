@@ -3,7 +3,7 @@ from __future__ import annotations
 import os
 import shutil
 import stat
-import subprocess
+import subprocess  # nosec B404 -- see [tool.bandit] note in pyproject.toml
 import tempfile
 import unittest
 from pathlib import Path

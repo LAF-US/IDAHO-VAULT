@@ -16,7 +16,7 @@ Exit codes:
 
 import argparse
 import re
-import subprocess
+import subprocess  # nosec B404 -- see [tool.bandit] note in pyproject.toml
 import sys
 from pathlib import Path
 

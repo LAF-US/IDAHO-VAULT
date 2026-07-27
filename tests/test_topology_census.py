@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import importlib.util
 import json
-import subprocess
+import subprocess  # nosec B404 -- see [tool.bandit] note in pyproject.toml
 import tempfile
 import unittest
 from pathlib import Path
