@@ -59,7 +59,7 @@ jobs:
       - name: Mint Claude App token
         if: ${{ github.event.inputs.agent == 'claude' }}
         id: token_claude
-        uses: actions/create-github-app-token@v3
+        uses: actions/create-github-app-token@bcd2ba49218906704ab6c1aa796996da409d3eb1 # v3
         with:
           app-id: ${{ vars.CLAUDE_APP_ID }}
           private-key: ${{ secrets.CLAUDE_APP_PRIVATE_KEY }}
