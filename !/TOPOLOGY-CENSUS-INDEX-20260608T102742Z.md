@@ -1,6 +1,6 @@
 ---
 title: Topology Census Index — 20260608T102742Z
-updated: 20260608T1
+updated: 20260608T102742Z
 status: draft
 authority: github-actions
 ---

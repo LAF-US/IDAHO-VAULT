@@ -228,7 +228,7 @@ authority: github-actions
 - Authority citations:
   - `VAULT-CONVENTIONS.md:156` — | `.github/` | Automation, workflows, scripts, and GitHub-specific instructions | Safe to modify only within assigned automation work and governance boundaries. |
   - `VAULT-CONVENTIONS.md:279` — - active normalization/carryforward scripts: `.github/scripts/daily_rollover.py`, `.github/scripts/tidy_daily_notes.py`, `.github/scripts/expand_date_aliases.py`
-  - `VAULT-CONVENTIONS.md:452` — - **Python** = machine/procedural product, attributable to AI agents. Scripts, scrapers, automation, transforms, and validation.
+  - `VAULT-CONVENTIONS.md:452` — - __Python__ = machine/procedural product, attributable to AI agents. Scripts, scrapers, automation, transforms, and validation.
   - `VAULT-CONVENTIONS.md:484` — 4. For daily notes, let Obsidian create the file from `DAILY NOTE TEMPLATE.md` and let the daily-note scripts maintain carryforward and normalization.
   - `VAULT-CONVENTIONS.md:569` — ### Active Automation Scripts
   - `VAULT-CONVENTIONS.md:599` — ### Utility Scripts (Manual Use Only)
@@ -292,6 +292,6 @@ authority: github-actions
 - Obvious authority: none found
 - Git state: tracked=yes, ignored=no
 - Structure: `7` dirs, `1` files
-- Sample children: DIR 2024-10-07 14.31.42 Idaho Reports + Ada County Clerk; DIR 2024-10-31 10.35.13 Idaho Reports Podcast Recording; DIR 2024-11-13 10.04.59 IRPOD + OPE; DIR 2024-12-11 11.17.54 SciLine Experts on Camera_ Dr. Emily S. Jungheim; DIR 2025-02-13 09.02.15 Logan Finney _ Idaho PTV; DIR 2025-04-16 13.19.12 Idaho Reports Podcast_ Lauren Necochea, Fighting Oligarchy Tour; DIR 2025-05-21 15.04.04 Idaho Reports Interview - Alica Holthaus; FILE Zoom.md
+- Sample children: `DIR 2024-10-07 14.31.42 Idaho Reports + Ada County Clerk`; `DIR 2024-10-31 10.35.13 Idaho Reports Podcast Recording`; `DIR 2024-11-13 10.04.59 IRPOD + OPE`; `DIR 2024-12-11 11.17.54 SciLine Experts on Camera_ Dr. Emily S. Jungheim`; `DIR 2025-02-13 09.02.15 Logan Finney _ Idaho PTV`; `DIR 2025-04-16 13.19.12 Idaho Reports Podcast_ Lauren Necochea, Fighting Oligarchy Tour`; `DIR 2025-05-21 15.04.04 Idaho Reports Interview - Alica Holthaus`; `FILE Zoom.md`
 - Live doctrine mention: `no`
 - Ignore-rule signal: `no`
