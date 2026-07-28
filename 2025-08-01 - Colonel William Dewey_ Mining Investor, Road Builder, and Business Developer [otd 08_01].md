@@ -8,7 +8,7 @@ published: 2025-08-01
 created: 2026-07-20
 description: "Prominent Idaho pioneer Colonel William H. Dewey was born August 1, 1823 in Hampden County, Massachusetts (some sources give the birth year ..."
 ---
-Prominent Idaho pioneer Colonel William H. Dewey was born August 1, 1823 in Hampden County, Massachusetts (some sources give the birth year as 1822). Raised on a farm, he presumably followed that line until he moved to Idaho, by way of California, in 1863.  
+Prominent [[Idaho]] pioneer Colonel William H. Dewey was born August 1, 1823 in Hampden County, Massachusetts (some sources give the birth year as 1822). Raised on a farm, he presumably followed that line until he moved to Idaho, by way of California, in 1863.  
   
 Dewey turned out to be what the *Illustrated History* called “a born miner.” A relative late-comer to the Owyhee mining regions, he balked at what he considered exorbitant real estate prices. Thus, in 1864 he and some associates started a new town that became Silver City. The county seat of Owyhee County moved there two years later. A new toll road that Dewey helped build along with Silas Skinner and another partner \[blog, May 19\] spurred the town’s growth.  
   
@@ -31,3 +31,5 @@ When the hotel was completed in 1902, he and Belle moved into an apartment there
 Belle oversaw the Nampa properties for a number of years after his death. Fittingly, a recent redevelopment program in downtown Nampa called the area the Belle District, in honor of Belle (Hagan) Dewey.  
   
 References: \[French\], \[Hawley\], \[Illust-State\]“Boise, Nampa & Owyhee Railroad (1896-1898),” *Reference Series No. 218,* Idaho State Historical Society (January 1993) *A Historical, Descriptive and Commercial Directory of Owyhee County, Idaho,* Owyhee Avalanche Press (January 1898).“History of the Belle District,” *The Belle District,* Nampa, Idaho.
+
+#idaho

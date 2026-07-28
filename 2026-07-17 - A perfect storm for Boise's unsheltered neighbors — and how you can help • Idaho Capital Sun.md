@@ -37,7 +37,7 @@ Third, [the Galloway Law](https://www.ktvb.com/article/news/local/capitol-watch/
 
 Our unhoused neighbors are scattering, making it harder for outreach teams to find and support them. Criminalizing someone’s existence doesn’t address why they’re unsheltered; it only widens the gap between them and providers like Corpus who can help.
 
-<iframe title="“Domestic violence creates homelessness surge in Idaho communities” — Idaho Capital Sun" src="https://idahocapitalsun.com/2026/01/29/domestic-violence-creates-homelessness-surge-in-idaho-communities/embed/#?secret=VLn7IT9JvM#?secret=LNNM3brO95" width="500" height="399" frameborder="0"></iframe>
+<iframe title="“Domestic violence creates homelessness surge in [[Idaho]] communities” — Idaho Capital Sun" src="https://idahocapitalsun.com/2026/01/29/domestic-violence-creates-homelessness-surge-in-idaho-communities/embed/#?secret=VLn7IT9JvM#?secret=LNNM3brO95" width="500" height="399" frameborder="0"></iframe>
 
 This law rests on assumptions I hear constantly: that people choose homelessness, that they just need a job, that drug use is the root cause. No one chooses to go without a safe place to sleep, a shower, or a meal.
 
@@ -54,3 +54,5 @@ Together, we can support our neighbors year-round. Learn more and join at [corpu
 Page 1 / 24
 
 Zoom 100%
+
+#idaho

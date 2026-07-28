@@ -7,7 +7,7 @@ created: 2026-07-16
 ---
 ![This undated photo provided by Trust for Public Land shows a view of central Idaho’s Thunder Mountain from the south. (Associated Press / The Spokesman-Review)](https://thumb.spokesman.com/kbPXJnV9NN3HaYRSK6_rWHVGVHc=/400x0/media.spokesman.com/photos/2008/10/19/19_Thunder_Mountain_10-19-2008_Q7EGAR4.jpg)
 
-This undated photo provided by Trust for Public Land shows a view of central Idaho’s Thunder Mountain from the south. (Associated Press / The Spokesman-Review)
+This undated photo provided by Trust for Public Land shows a view of central [[Idaho]]’s Thunder Mountain from the south. (Associated Press / The Spokesman-Review)
 
 ![This undated photo provided by Trust for Public Land shows a view of central Idaho’s Thunder Mountain from the south. (Associated Press / The Spokesman-Review)](https://thumb.spokesman.com/kbPXJnV9NN3HaYRSK6_rWHVGVHc=/400x0/media.spokesman.com/photos/2008/10/19/19_Thunder_Mountain_10-19-2008_Q7EGAR4.jpg)
 
@@ -44,3 +44,5 @@ As a result, discussions among Collord, the Payette National Forest and the Trus
 “My family legacy is a lot better off than being stuck with an environmental issue,” Collord said.
 
 ---
+
+#idaho
