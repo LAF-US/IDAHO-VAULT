@@ -4,7 +4,7 @@ author:
 published:
 created: 2026-04-23
 ---
-## See what powers the Sia network.
+## See what powers the Sia network
 
 Sia makes some bold claims — because no other cloud storage has our design. See for yourself.
 

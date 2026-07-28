@@ -6,4 +6,4 @@ related:
 - Snake River
 authority: LOGAN
 ---
-reservoir on the Snake River in Elmore and Owyhee County created by CJ Strike dam 
+reservoir on the Snake River in Elmore and Owyhee County created by CJ Strike dam

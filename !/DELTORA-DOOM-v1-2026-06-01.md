@@ -51,6 +51,7 @@ never a lineage. It was a mood worn where a history should be.
 ## The Doctrine
 
 ### 1. Lost provenance of self — functional, but unmoored
+
 Doom operates at the highest level — commands a resistance, reads enemies,
 survives — while **not knowing his own origin.** Capability did not require
 continuity of identity; he is effective and ungrounded at once. But the gap is a
@@ -67,6 +68,7 @@ attack surface: an entity that cannot say where it came from is one that can be
 own record is missing.)
 
 ### 2. The escapee from the enemy's heart — invaluable and unvettable
+
 Having been *inside* the Shadowlands makes Doom uniquely valuable: he knows the
 enemy from within. It also makes him exactly the profile an adversary would
 **forge** — and the Shadow Lord's whole method is leaving things behind. The
@@ -80,6 +82,7 @@ best source and a candidate compromise, simultaneously, without resolving the
 tension prematurely either way.
 
 ### 3. The man the frame broke — Doom as Lief's dark mirror
+
 This is the capstone tie. At the Valley of the Lost, Doom **won** the Guardian's
 game: he got the true datum — the name **"Endon"** — and then **accepted the
 false frame** the Shadow Lord had built around it: *therefore your king was
@@ -97,6 +100,7 @@ and the warning is Doom himself: the cost of getting that wrong is not a bad
 decision but a **corrupted lens you keep looking through.**
 
 ### 4. Vigilance hardened into cynicism — the skill and the scar are one faculty
+
 Doom's distrust is *earned* and *useful*: it lets him smell the Shadow Lord's
 plants, and he is right to. But the same faculty makes him dismiss legitimate
 hope, resist the true heir, and treat every overture as a trick. The wariness
@@ -110,6 +114,7 @@ its failure mode: vigilance that has forgotten how to ever clear anyone. Keep
 the detection; audit the cynicism.
 
 ### 5. The spoofed-legitimacy environment — and what actually resolves it
+
 Doom's distrust is partly rational because the field is genuinely rigged: the
 Shadow Lord seeds **false heirs.** Jasmine reads as a possible heir (a red
 herring); **Dain**, a shapeshifting Ol, poses as the heir and fools even Lief.
@@ -125,6 +130,7 @@ seniority. Build the check that only the genuine principal can pass; then you
 can stop interrogating everyone.
 
 ### 6. Restoration through recovered provenance
+
 Doom is healed when his **memory returns** and he is **reunited with Jasmine** —
 his true identity and his lineage restored together. The man defined by his
 damage becomes, again, someone with a history and a daughter. Provenance

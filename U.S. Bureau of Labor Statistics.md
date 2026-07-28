@@ -3,4 +3,4 @@ related:
 - United States of America
 authority: LOGAN
 ---
-United States of America 
+United States of America

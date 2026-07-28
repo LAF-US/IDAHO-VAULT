@@ -27,12 +27,15 @@ date: 2026-06-07
 > **Provenance.** Web-verified 2026-06-07 (Deltora Quest Wiki, Wikipedia). **[canon-per-series].** Paraphrased.
 
 ## Origin & geography
+
 - **[canon]** A valley in **Diamond territory**, once **Haven Vale**. The Shadow Lord's magic laid over it a **perpetual, poisonous mist** that **erodes the memory and identity** of all who enter and drove off every living animal.
 
 ## The gem & its guardian
+
 - **[canon]** The **Diamond** is held by **[[RESEARCH_Deltora-The-Guardian-Fardeep-2026-06-07\|the Guardian]]** — the cursed Fardeep, bound to four flesh-corded vices — and won only by **guessing his true name**; the gem **curses any who steal** rather than earn it.
 
 ## Cross-references & sources
+
 `[[RESEARCH_Deltora-The-Gem-Guardians-2026-06-07]]` · `[[RESEARCH_Deltora-The-Guardian-Fardeep-2026-06-07]]` · `[[RESEARCH_Deltora-The-Seven-Tribes-and-their-Lands-2026-06-04]]`
 [Valley of the Lost](https://deltoraquest.fandom.com/wiki/Valley_of_the_Lost_(location)) · [The Valley of the Lost — Wikipedia](https://en.wikipedia.org/wiki/The_Valley_of_the_Lost)
 

@@ -36,6 +36,7 @@ That set the question: where does that signing key live, and could the same path
 ## What I've ruled out on the Windows side (with reasonable confidence, marked OBSERVED unless noted)
 
 OBSERVED:
+
 - No Anthropic-shipped signing key in `~/.ssh/` on this Windows machine
 - No keys under `AppData/Roaming/Claude/` or `AppData/Local/Claude/` that look like signing material
 - `anthropics/claude-code` Issue #7711 ("Support commit signing") closed with `state_reason: not_planned` (auto-closed for inactivity 2026-01-13)
@@ -44,6 +45,7 @@ OBSERVED:
 - `anthropics/claude-code-action` (the GitHub Action wrapper) DOES support signing via `ssh_signing_key` + `bot_id` + `bot_name` configuration — this is the only documented path I can confirm produces verified-as-Claude commits
 
 INFERRED:
+
 - The Mac-side verified-as-Claude commits in this repo (PR #400) likely originate from either `claude-code-action` workflow runs or from a `claude.ai/code` browser session running on Anthropic's cloud infrastructure, NOT from a local Mac desktop CLI session — same as my situation
 - BUT I cannot rule out the possibility that the Mac install includes an Anthropic-provisioned signing key that my Windows install does not have
 

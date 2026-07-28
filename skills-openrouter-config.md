@@ -5,11 +5,13 @@ in the vault. The executable path lives in the resolver and validation scripts,
 not in this markdown file.
 
 ## Requirements
+
 - `op` CLI installed and authenticated.
 - `openclaw` CLI installed.
 - OpenRouter API key stored in 1Password as `op://Vault/OpenRouter API Key/credential`.
 
 ## Canonical files
+
 - `.op/openrouter.env`
 - `.op/openrouter.env.template`
 - `scripts/openrouter_runtime.py`
@@ -21,12 +23,14 @@ not in this markdown file.
 - `~/.openclaw/openclaw.json`
 
 ## Live commands
+
 ```bash
 python3 !/resolve_openrouter_secret.py
 python3 scripts/validate_openrouter.py
 ```
 
 ## What the runtime path does
+
 - Resolves the OpenRouter secret reference from 1Password.
 - Materializes `.op/openrouter.env` for Codex and Claude launchers.
 - Prefers `op://...` references instead of plaintext credentials.
@@ -35,6 +39,7 @@ python3 scripts/validate_openrouter.py
 - Keeps model IDs in OpenRouter format, including the `mistralai/` prefix.
 
 ## Current OpenClaw contract
+
 Use these values unless the vault explicitly updates them:
 
 ```json
@@ -62,6 +67,7 @@ Use these values unless the vault explicitly updates them:
 ```
 
 ## Operational notes
+
 - Use `gateway.bind = loopback` for local machines unless the vault has a
   documented reason to expose the service beyond localhost.
 - Do not hard-code the secret value into the vault. Keep the env file reference

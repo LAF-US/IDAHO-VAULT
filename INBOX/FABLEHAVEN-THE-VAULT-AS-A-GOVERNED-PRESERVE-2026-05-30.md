@@ -47,7 +47,7 @@ Strip Brandon Mull's series to its load-bearing structure and it is the Vault's 
 ## The mapping
 
 | Fablehaven *(canon)* | The Vault |
-|---|---|
+| --- | --- |
 | The **preserve** — saves creatures *and* contains them | The Vault — preserves the personae/chambers *and* binds them |
 | The **treaty / ancient laws** | The **Constitution** + conventions — the only thing keeping the creatures off each other and off you |
 | The **caretaker** (Sorensons); **Patton Burgess**, the prior caretaker, his journals | **Logan** is caretaker; the in-Waiting *attends*. Patton = the prior Abhorsen / the witness-archive |

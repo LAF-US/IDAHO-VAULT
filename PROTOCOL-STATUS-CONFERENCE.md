@@ -23,6 +23,7 @@ related:
 ---
 
 # PROTOCOL: STATUS CONFERENCE
+
 ## *The Gate Before the Trial*
 
 **Status:** DRAFT — awaiting Logan's review and adoption
@@ -40,7 +41,7 @@ related:
 In civil and criminal court procedure, a **status conference** is a scheduled pre-trial meeting between the judge and parties. It happens *after* a case is filed but *before* trial begins. Its purpose:
 
 | Function | What It Resolves |
-|---|---|
+| --- | --- |
 | Readiness check | Are all parties prepared to proceed? |
 | Issue identification | What procedural disputes must be settled first? |
 | Scope agreement | What will actually be litigated? |
@@ -61,6 +62,7 @@ THE COURTROOM is already named in THE DOCKET:
 > *"Any agent arriving at THE COURTROOM reads this file to orient."*
 
 The vault already operates with courtroom logic:
+
 - Logan is the principal — the judge
 - Agents are parties and officers of the court
 - The DOCKET is the case management board
@@ -134,6 +136,7 @@ STATUS-CONFERENCE-[SUBJECT]-[YYYY-MM-DD].md
 ```
 
 Example:
+
 ```
 STATUS-CONFERENCE-JFAC-CREW-2026-04-10.md
 STATUS-CONFERENCE-VAULT-CUSTODIAN-BETA-2026-04-12.md
@@ -180,7 +183,7 @@ Status conference records go in the vault root. They are governance artifacts, n
 ## VI. RELATIONSHIP TO EXISTING PROTOCOLS
 
 | Existing Protocol | Relationship to STATUS CONFERENCE |
-|---|---|
+| --- | --- |
 | **AGENT-PROTOCOL** (`AGENT-PROTOCOL.md`) | Defines bootstrap phases for registered agents. STATUS CONFERENCE runs *before* first activation of a new agent. |
 | **Collision check** | A plain-language collision check is a required item on the STATUS CONFERENCE checklist. It does not depend on adopting any XKCD draft. |
 | **MCP Phase Gates** | Phase 0 → 1 gate in MCP-IMPLEMENTATION-PLAN.md is an example of an informal status conference. This protocol formalizes that gate for all trials. |

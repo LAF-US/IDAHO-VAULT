@@ -18,9 +18,10 @@ related:
   - idpol
 ---
 
-The Speaker’s grocery tax credit bill shall hold its place on the calendar—again—until Monday. #idleg #idpol https://t.co/nIpnCisqQC
+The Speaker’s grocery tax credit bill shall hold its place on the calendar—again—until Monday. #idleg #idpol <https://t.co/nIpnCisqQC>
 
 ## Links
-- https://x.com/lfinneytweets/status/1234897579789307905
+
+- <https://x.com/lfinneytweets/status/1234897579789307905>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1235980938523193344)
