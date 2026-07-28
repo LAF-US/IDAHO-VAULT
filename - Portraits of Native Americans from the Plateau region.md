@@ -18,7 +18,7 @@ description: "24 photoprints : 23 gelatin silver and 1 albumen ; 20 x 13 cm. or 
 - Notes:
 	- Title devised. Some images have captions on mounts or photoprints.
 		- Some images on mounts.
-		- Various photographers, copyright claimants, and studios including in Oregon: Pacific Photo Co. (Salem), Carl S. Wheeler (Pendleton), Frank Woodfield (Astoria), W.S. Bowman (Pendleton), Isaac Leeser (Portland); Gwendolyn Ramey & Dorothy Bell (Portland); in Washington State: J.E. Mitchell (Puyallup), Spencer (Wenatchee), C.A. Libby (Spokane), C.S. Reeves (White Salmon), Frank Palmer (Spokane), Mortimer (N. Yakima); in Idaho: Milton Caldwell Helm (Mountain Home), J.J. Sterner (Moscow), A. Thomas (Ross Fork) and in Montana: C.J. Strakal (Anaconda).
+		- Various photographers, copyright claimants, and studios including in Oregon: Pacific Photo Co. (Salem), Carl S. Wheeler (Pendleton), Frank Woodfield (Astoria), W.S. Bowman (Pendleton), Isaac Leeser (Portland); Gwendolyn Ramey & Dorothy Bell (Portland); in Washington State: J.E. Mitchell (Puyallup), Spencer (Wenatchee), C.A. Libby (Spokane), C.S. Reeves (White Salmon), Frank Palmer (Spokane), Mortimer (N. Yakima); in [[Idaho]]: Milton Caldwell Helm (Mountain Home), J.J. Sterner (Moscow), A. Thomas (Ross Fork) and in Montana: C.J. Strakal (Anaconda).
 		- Three images from the Carpenter (Frank and Frances) collection.
 		- Copyright deposits, various copyright claimants.
 		- Gifts, various donors.
@@ -46,3 +46,5 @@ description: "24 photoprints : 23 gelatin silver and 1 albumen ; 20 x 13 cm. or 
 	https://www.loc.gov/pictures/item/91482939/
 
 View the [MARC Record](https://www.loc.gov/pictures/item/91482939/marc/) for this item.
+
+#idaho

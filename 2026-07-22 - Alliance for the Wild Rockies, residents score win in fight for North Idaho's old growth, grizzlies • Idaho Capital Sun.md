@@ -21,7 +21,7 @@ A grizzly bear in the Greater Yellowstone Ecosystem.
 
 A grizzly bear in the Greater Yellowstone Ecosystem. (Photo by Frank van Manen / USGS / Creative Commons Attribution 4.0 / Unedited)
 
-Seven long years ago the Alliance for the Wild Rockies, with the support of local residents, took the U.S. Forest Service to federal court to halt the Hanna Flats logging, road-building, and burning project on the [Idaho Panhandle National Forests](https://www.fs.usda.gov/r01/idahopanhandle) in northern Idaho. Through a long and winding legal saga the good news — for grizzly bears, old growth forests, and the local populace which strongly opposed the deforestation — is that a federal appeals court just ruled for the Alliance.
+Seven long years ago the Alliance for the Wild Rockies, with the support of local residents, took the U.S. Forest Service to federal court to halt the Hanna Flats logging, road-building, and burning project on the [Idaho Panhandle National Forests](https://www.fs.usda.gov/r01/idahopanhandle) in northern [[Idaho]]. Through a long and winding legal saga the good news — for grizzly bears, old growth forests, and the local populace which strongly opposed the deforestation — is that a federal appeals court just ruled for the Alliance.
 
 The logging project is located in the habitat of the imperiled Selkirk grizzly bears, which are in dire straits having been reduced to a mere 50 bears when the minimum needed for recovery is 100 bears. The bears suffer from human-caused mortality at unsustainable rates and are regularly displaced and harmed from logging and road-building in their habitat.
 
@@ -40,3 +40,5 @@ This is a big win for endangered grizzly bears, but in addition to protecting th
 Throughout the years of litigation, the local residents bravely stood up and spoke truth to power to protect their home. There is no doubt that their resistance and strength helped bring about this victory.
 
 There is really no hope of recovering this imperiled grizzly population as required by the Endangered Species Act unless the government starts complying with the law. This court decision is one step in the right direction.
+
+#idaho

@@ -4,7 +4,7 @@ author:
 published: 2019-07-01
 created: 2026-07-20
 ---
-Mitch Wieland is the Writer in Residence for 2026-2027. Wieland, a celebrated novelist, editor, and educator, serves as Idaho’s literary ambassador, conducting readings, workshops, and outreach programs across the state.
+Mitch Wieland is the Writer in Residence for 2026-2027. Wieland, a celebrated novelist, editor, and educator, serves as [[Idaho]]’s literary ambassador, conducting readings, workshops, and outreach programs across the state.
 
 A longtime figure in Idaho’s literary community, Wieland is founding editor of *The Idaho Review* and co-founder of Boise State University’s MFA Program in Creative Writing, where he has taught for nearly three decades. Under his leadership, *The Idaho Review* has published more than 300 writers and earned national recognition with selections in *The Best American Short Stories*, *The O. Henry Prize Stories*, and *The Pushcart Prize*.
 
@@ -27,3 +27,5 @@ With guidance from the Governor’s panel, the program was initiated, developed,
 Selection of the writer is made from Idaho applicants whose anonymous writing samples are judged by a panel of out-of-state writers. Submissions are judged 85% for artistic excellence, 15% for contributions to the field. The panel makes recommendations to the Commission and the Governor approves the choice.
 
 Writers in Residence include: [Kerri Webster](https://en.wikipedia.org/wiki/Kerri_Webster), Boise (2024-2025), [CMarie Fuhrman](https://www.cmariefuhrman.com/), McCall (2022-2023), Malia Collins, Boise (2020-2021); [Christian Winn](http://christianwinn.com/), Boise (2017-2019); [Diane Raptosh](https://www.dianeraptosh.com/), Boise (2014-2016); Brady Udall, Boise (2011-2013); [Anthony Doerr](https://www.anthonydoerr.com/), Boise (2008-2010); [Kim Barnes,](https://kimbarnes.com/index.html) Moscow (2005-2007); Jim Irons, Twin Falls (2002-2004); [William Johnson,](https://www.arts.gov/impact/literary-arts/creative-writing-fellows/william-johnson) Lewiston (1999-2001); [Lance Olsen](https://lanceolsen.com/bio/), Moscow (1996-1997); Clay Morgan, McCall (1994-1995); Daryl Jones, Boise (1992-1993); Neidy Messer, Boise (1990-1991); Eberle Umbach, McCall (1988-1989); [Robert Wrigley](https://www.poetryfoundation.org/poets/robert-wrigley), Lewiston (1986-1987); [Ron McFarland](https://www.pw.org/directory/writers/ron_mcfarland), Moscow (1984-1985).
+
+#idaho

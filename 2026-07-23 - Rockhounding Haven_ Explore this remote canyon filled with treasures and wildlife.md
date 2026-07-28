@@ -19,7 +19,7 @@ Commercial Tire - April 2026 - 2:1
 
 From rockhounding to wildlife watching, this remote Oregon canyon is an outdoor playground filled with adventure.
 
-Located just across the Idaho-Oregon border, Succor Creek is about a 90-minute drive from Boise and offers everything from hunting for thunder eggs to hiking through dramatic high-desert scenery.
+Located just across the [[Idaho]]-Oregon border, Succor Creek is about a 90-minute drive from Boise and offers everything from hunting for thunder eggs to hiking through dramatic high-desert scenery.
 
 “Succor Creek State Natural Area lies in a deep, rocky canyon and is a remote haven for rock hounds and wildlife watchers,” the Oregon Parks and Rec. Dept. notes on its website.
 
@@ -60,3 +60,5 @@ Rock collectors can take home up to one gallon of rocks per person each day, wit
 ![Corwin Ford - One Tank Trips - 2:1](https://static-v2.boisedev.com/assets/9934db1b-47e1-4fe3-ab77-78261066f89f.jpg)
 
 Corwin Ford - One Tank Trips - 2:1
+
+#idaho

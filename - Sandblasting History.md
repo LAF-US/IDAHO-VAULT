@@ -14,7 +14,7 @@ The Turner movement started in Germany in the 19th Century as a way to promote g
   
 In Boise, the Turn Verein and Harmonia Society started in 1870. Its first president was John Lemp, one of Boise’s best-known brewers. The Turners, athletic as their origins might have been, were also big fans of beer. The social side of the organization prevailed over gymnastics.  
   
-For the first few years the society sponsored events in Slocum Hall and the Masonic Hall, but by 1874, they had moved to the first Turn Verein Hall at 6th and Main. They frequently sponsored balls and theatrical events for the community and rented space for numerous community events. The Idaho Territorial Legislature met in the building in 1878, 1882, and 1884.  
+For the first few years the society sponsored events in Slocum Hall and the Masonic Hall, but by 1874, they had moved to the first Turn Verein Hall at 6th and Main. They frequently sponsored balls and theatrical events for the community and rented space for numerous community events. The [[Idaho]] Territorial Legislature met in the building in 1878, 1882, and 1884.  
   
 In 1875, the Fourth of July festivities in Boise were held under the auspices of the Turn Verein Society. The Turners marched proudly in the parade, carrying the flag of Germany. That the observance that year took place on July 5 made it no less of a celebration. The Fourth of July was on a Sunday, so the merriment was moved to Monday to assure that any incidental drinking that might accompany the festivities would not take place on the sabbath.  
   
@@ -38,3 +38,5 @@ Turnverein members at the dedication of the Boise Turnverein building in 1906. P
 If the light is right you can still make out Boise Turnverein over the entrance to the building today.
 
 Speaking of Idaho history posts are copyright © 2020 by Rick Just. Sharing is encouraged. If you don’t find a button that lets you do that, find the post on Speaking of Idaho. If you’re missing my daily posts, select the RSS button, or select See it First under the Facebook Following tab.
+
+#idaho

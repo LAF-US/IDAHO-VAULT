@@ -13,7 +13,7 @@ Oboler was born and raised in Chicago. He held degrees from both the [University
 
 ## Career
 
-During [World War II](https://en.wikipedia.org/wiki/World_War_II "World War II") Oboler served in the [Lend-Lease Expediting Bureau](https://en.wikipedia.org/wiki/Lend-Lease "Lend-Lease") and later in the [United States Army](https://en.wikipedia.org/wiki/United_States_Army "United States Army"). Oboler became head librarian of Idaho State College (now Idaho State University) in 1949. He served in that capacity until his retirement in 1980.
+During [World War II](https://en.wikipedia.org/wiki/World_War_II "World War II") Oboler served in the [Lend-Lease Expediting Bureau](https://en.wikipedia.org/wiki/Lend-Lease "Lend-Lease") and later in the [United States Army](https://en.wikipedia.org/wiki/United_States_Army "United States Army"). Oboler became head librarian of [[Idaho]] State College (now Idaho State University) in 1949. He served in that capacity until his retirement in 1980.
 
 Oboler was a longtime member of the [American Library Association](https://en.wikipedia.org/wiki/American_Library_Association "American Library Association"), and held numerous positions with the ALA and the [Association of College and Research Libraries](https://en.wikipedia.org/wiki/Association_of_College_and_Research_Libraries "Association of College and Research Libraries") (ACRL), one of the largest subdivisions of the ALA. Oboler served on the Intellectual Freedom Committees of both the Idaho Library Association and the American Library Association.[^1]
 
@@ -39,3 +39,5 @@ Oboler authored several books on censorship and intellectual freedom, including:
 [^2]: [Eli M. Oboler Memorial Award](http://www.ala.org/ifrt/awardsfinal/oboler/oboler) [Archived](https://web.archive.org/web/20140818070344/http://www.ala.org/ifrt/awardsfinal/oboler/oboler) 2014-08-18 at the [Wayback Machine](https://en.wikipedia.org/wiki/Wayback_Machine "Wayback Machine") (accessed 12 February 2012)
 
 [^3]: ["Who was Eli M. Oboler?"](https://web.archive.org/web/20070903050203/http://www.isu.edu/library/help/emoboler.htm). Eli M. Oboler Library. 2007-02-27. Archived from [the original](http://www.isu.edu/library/help/emoboler.htm) on 2007-09-03. Retrieved 2007-03-09.
+
+#idaho
