@@ -12,8 +12,9 @@ def _load_checker():
     project_root = Path(__file__).resolve().parents[1]
     script_path = project_root / ".github" / "scripts" / "check_redaction_damage.py"
     spec = importlib.util.spec_from_file_location("redaction_damage_test_module", script_path)
+    if spec is None or spec.loader is None:
+        raise ImportError(f"Failed to load spec for {script_path}")
     module = importlib.util.module_from_spec(spec)
-    assert spec.loader is not None
     sys.modules[spec.name] = module
     spec.loader.exec_module(module)
     return module
@@ -124,6 +125,17 @@ class RedactionDamageCheckerTest(unittest.TestCase):
             {"log.txt": [(1, line)]}, lambda path: carried + "\n"
         )
         self.assertEqual(len(findings), 1)
+
+    def test_audit_sweep_report_quoting_the_signature_is_exempt(self) -> None:
+        # A new CI failure sweep report documents this exact bug by quoting
+        # its touching-both-sides signature as a worked example -- that's a
+        # documentation reference, not a new occurrence (confirmed false
+        # positive on the 2026-07-09 report, run 28993994883). The narrowly
+        # named audit-report path is exempt; everything else still flags.
+        damaged = f"`sho{MARKER}description`"
+        by_file = {"!/AUDIT-CI-FAILURE-SWEEP-2026-07-09.md": [(31, damaged)]}
+        findings = checker.findings_for_added_lines(by_file, lambda path: None)
+        self.assertEqual(findings, [])
 
     def test_no_base_loader_keeps_strict_behavior(self) -> None:
         damaged = f"sta{MARKER}time"
