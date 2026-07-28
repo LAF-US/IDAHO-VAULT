@@ -3,4 +3,4 @@ related:
 - Board of Correction
 authority: LOGAN
 ---
-Board of Correction
+Board of Correction 

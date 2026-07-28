@@ -24,7 +24,7 @@ related:
 - website
 authority: LOGAN
 ---
-*Note: Ben Olson, publisher of the Sandpoint Reader, won an Idaho Press Club Don Watkins Mid-Career Scholarship of $500 to aid in this project. You, too, can apply for the mid-career scholarship, which is available for any Idaho Press Club member to use for any training or project that will benefit the working press in Idaho. The deadline to apply each year is Feb. 15; there’s more information at our website, <www.idahopressclub.org>.*
+*Note: Ben Olson, publisher of the Sandpoint Reader, won an Idaho Press Club Don Watkins Mid-Career Scholarship of $500 to aid in this project. You, too, can apply for the mid-career scholarship, which is available for any Idaho Press Club member to use for any training or project that will benefit the working press in Idaho. The deadline to apply each year is Feb. 15; there’s more information at our website, www.idahopressclub.org.*
 
 *By Ben Olson*
 
@@ -56,6 +56,6 @@ At the start of the series, we at the Reader set out to learn more about this mo
 
 The most common conclusion readers shared with us was that they had more in common with Redoubters than they originally thought. Many said that if you removed the religious and political ideologies, they would themselves be considered Redoubters.
 
-We thank the Idaho Press Club for the assistance they gave to make this series possible. To read the series, go to <www.sandpointreader.com> and click on the “Redoubt Series” tab along the top.
+We thank the Idaho Press Club for the assistance they gave to make this series possible. To read the series, go to www.sandpointreader.com and click on the “Redoubt Series” tab along the top.
 
 *Ben Olson is the publisher of the Sandpoint Reader.*

@@ -7,4 +7,4 @@ related:
 - The Hagadone Corporation
 authority: LOGAN
 ---
-Sandpoint, Bonner County newspaper owned by The Hagadone Corporation
+Sandpoint, Bonner County newspaper owned by The Hagadone Corporation 

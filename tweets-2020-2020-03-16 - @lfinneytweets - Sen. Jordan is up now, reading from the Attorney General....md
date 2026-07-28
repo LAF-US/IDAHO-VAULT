@@ -14,12 +14,11 @@ related:
   - lfinneytweets
 ---
 
-Sen. Jordan is up now, reading from the Attorney General opinion that says the bill will likely lead to litigation and may be unconstitutional.
-<https://t.co/UcvnPotjhk>
+Sen. Jordan is up now, reading from the Attorney General opinion that says the bill will likely lead to litigation and may be unconstitutional. 
+https://t.co/UcvnPotjhk
 
 ## Links
-
-- <https://www.boisestatepublicradio.org/sites/idaho/files/202002/20-68641_response.pdf>
+- https://www.boisestatepublicradio.org/sites/idaho/files/202002/20-68641_response.pdf
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

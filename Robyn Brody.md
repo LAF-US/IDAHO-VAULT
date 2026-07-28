@@ -4,4 +4,4 @@ related:
 - Idaho Supreme Court
 authority: LOGAN
 ---
-Elected to Idaho Supreme Court in 2016
+Elected to Idaho Supreme Court in 2016 

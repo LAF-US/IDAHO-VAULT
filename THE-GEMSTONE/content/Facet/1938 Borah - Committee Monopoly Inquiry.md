@@ -13,8 +13,7 @@ WASHINGTON — *After several futile attempts to marshal Its twelve members, the
 
 *The committee, with all members present and voting unanimously n each motion, elected Senator O'Mahoney, Democrat, of Wyoming, as chairman, and Representative Sumners, Democrat, of Texas, as vice chairman. These two sponsored in their houses the resolutions directing the inquiry, requested in April by President Roosevelt.*
 
-*On motion of Mr. Sumners the committee elected Leon Henderson, economic adviser of the Works Progress Administration, as executive secretary. Mr. Henderson, whose appointment had been forecast, will handle routine and coordinate the activities of the Congressional and department members, Mr. O'Mahoney explained.*
-
+*On motion of Mr. Sumners the committee elected Leon Henderson, economic adviser of the Works Progress Administration, as executive secretary. Mr. Henderson, whose appointment had been forecast, will handle routine and coordinate the activities of the Congressional and department members, Mr. O'Mahoney explained.* 
 ## Pairings Are Planned
 
 *To further this cooperation the committee, on motion of Isidor Lubin, representing the Labor Department, decided that each Congressional member will be paired with a departmental member. Under this arrangement, Mr. O'Mahoney said, each pair would always be cognizant of what was being done in any phase of the investigation. When the committee meets again Thursday, the six departmental members will each make suggestions as to the type and scope of information his agency may be able to furnish to the committee.*
@@ -35,10 +34,10 @@ WASHINGTON — *After several futile attempts to marshal Its twelve members, the
 
 *The departmental members, in addition to Mr. Lubin, are Assistant Attorney General Thurman W. Arnold; Herman W. Oliphant, Treasury general counsel; Richard C. Patterson Jr., Assistant Secretary of Commerce; Garland S. Ferguson, chairman of the Federal Trade Commission; and W. O. Douglas, chairman of the Securities and Exchange Commission.*
 
----
+--- 
 
 [^1] "[COMMITTEE PLANS MONOPOLY INQUIRY; Organizes and Discusses for Two Hours General Phases of Its Program Pairings Are Planned Borah Demands Jailings](https://www.nytimes.com/1938/07/02/archives/committee-plans-monopoly-inquiry-organizes-and-discusses-for-two.html)." Special to *The New York Times*. July 2, 1938.
 
----
+--- 
 
 - [[1938 Borah - Monopoly Committee]]

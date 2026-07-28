@@ -18,7 +18,7 @@ related:
 RT @blotmag: Don’t leave for spring break without the essentials:
 ✅Snacks
 ✅Drinks
-✅Blot Magazine
+✅Blot Magazine 
 Pick one up today outside Einstein’s! htt…
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1104110547123953665)

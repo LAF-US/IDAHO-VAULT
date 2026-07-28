@@ -48,7 +48,7 @@ it.**
 ## The map
 
 | Axis | **[AT] Stakes** | **[DQ] Four Sisters** |
-| --- | --- | --- |
+|---|---|---|
 | Distributed agents | five vampires, one per power | four Sisters, one per corner |
 | Each agent's counter | a *matched* counter (stake / rule / soul) | a *matched* dragon **+** its Belt gem |
 | The concentrated root | **the Dark Cloud** | **the grey tide** |

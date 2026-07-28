@@ -14,5 +14,5 @@ authority: LOGAN
 
 ---
 
-- 1935 FDR - New Deal Lexicon
+- 1935 FDR - New Deal Lexicon 
 - 1937 FDR - Years of Dust

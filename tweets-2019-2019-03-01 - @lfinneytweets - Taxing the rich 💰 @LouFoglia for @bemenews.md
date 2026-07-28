@@ -16,11 +16,10 @@ related:
   - lfinneytweets
 ---
 
-Taxing the rich 💰 @LouFoglia for @bemenews
-<https://t.co/qwVzR7lXyi>
+Taxing the rich 💰 @LouFoglia for @bemenews 
+https://t.co/qwVzR7lXyi
 
 ## Links
-
-- <https://youtu.be/dEgSIzuVjas>
+- https://youtu.be/dEgSIzuVjas
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1101330281779220480)

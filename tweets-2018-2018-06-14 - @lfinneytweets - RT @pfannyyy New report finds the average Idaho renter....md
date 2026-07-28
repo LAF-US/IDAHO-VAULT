@@ -16,6 +16,6 @@ related:
 ---
 
 RT @pfannyyy: New report finds the average Idaho renter doesn't earn enough to reasonably afford a two-bedroom rental
-<https://t.co/6zhtnNo8…>
+https://t.co/6zhtnNo8…
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1007111268010872832)

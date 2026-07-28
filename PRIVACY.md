@@ -37,7 +37,6 @@ All data entering the vault through MCP bridges, API queries, or agent actions f
 Agents may **read** external services (Gmail, Calendar, Drive, Slack, Granola, etc.) to answer questions, generate analysis, or inform decisions. This data lives only in the conversation context and is never written to a vault file.
 
 **Examples:**
-
 - Reading a calendar event to answer "when is my next meeting?"
 - Searching Gmail to find a confirmation number
 - Querying Slack to summarize a thread
@@ -53,14 +52,12 @@ Any data that is written to a file in the vault — whether tracked or `.gitigno
 Files committed to git. Visible to the world. **No PII, no raw personal data, no secrets.**
 
 **Permitted:**
-
 - Sanitized aggregates ("Migration fund: 85% of target")
 - Project status without personal details
 - Structural metadata (file counts, tag counts, plugin lists)
 - Public-record information (legislative data, published articles)
 
 **Forbidden:**
-
 - Raw email content or metadata (sender, subject, timestamps)
 - Calendar entries with attendees, locations, or meeting details
 - Financial specifics (account numbers, balances, transaction details)
@@ -75,7 +72,6 @@ Files committed to git. Visible to the world. **No PII, no raw personal data, no
 Files that exist on the local machine but are blocked from git by `.gitignore`. These are safer but still carry risk (backup tools, sync services, or accidental `.gitignore` edits could expose them).
 
 **Permitted with caution:**
-
 - Working notes with personal context (in `_private/`)
 - Draft financial summaries (in `_private/`)
 - MCP query caches (in `.remember/`, `.smart-env/`)
@@ -87,7 +83,7 @@ Files that exist on the local machine but are blocked from git by `.gitignore`. 
 The following directories are designated as **local-only** and must be listed in `.gitignore`:
 
 | Directory | Purpose | Gitignore Status |
-| ----------- | --------- | ----------------- |
+|-----------|---------|-----------------|
 | `_private/` | Local-only working notes with personal data | REQUIRED |
 | `.remember/` | Agent memory buffer (may contain session PII) | REQUIRED |
 | `.smart-env/` | Smart Connections embeddings cache | Already ignored |
@@ -100,7 +96,7 @@ The following directories are designated as **local-only** and must be listed in
 The following MCP servers are connected and carry privacy risk:
 
 | Service | Ephemeral OK? | Persistent OK? | Requires Logan Approval |
-| --------- | :---: | :---: | :---: |
+|---------|:---:|:---:|:---:|
 | Gmail | ✅ | ❌ | Per-query for any file write |
 | Google Calendar | ✅ | ❌ | Per-query for any file write |
 | Google Drive | ✅ | ❌ | Per-query for any file write |
@@ -121,7 +117,6 @@ Meeting transcripts carry **third-party privacy risk** beyond Logan's own data:
 3. **Audio-to-text artifacts.** Automated transcription may contain errors that misattribute statements or alter meaning. No transcript excerpt should be committed without Logan's manual review.
 
 **Granola ephemeral rule:** Agents may query Granola to answer Logan's questions in conversation, but must:
-
 - Never write transcript content to tracked files
 - Never attribute quotes to named attendees in any file
 - Treat all transcript content as **off-the-record by default** unless Logan explicitly clears specific content for publication
@@ -167,7 +162,7 @@ Logan is employed by Idaho Public Television (IdahoPTV), an agency under the Ida
 ### A. THE BOUNDARY
 
 | Category | Owner | Vault Rule |
-| ---------- | ------- | ------------ |
+|----------|-------|------------|
 | Content created in scope of employment for IdahoPTV (scripts, research for segments, interview notes, production assets) | Employer (Work for Hire — 17 U.S.C. § 101) | **Must not appear in tracked vault files.** No unpublished IdahoPTV work product in this repository. |
 | Published/broadcast IdahoPTV content | Employer holds copyright; content is public | May be referenced or linked like any public-record source. Do not reproduce full texts. |
 | Public-record information (legislation, committee minutes, published government data) | Public domain / fair use | Permitted — this is the vault's core subject matter. |

@@ -56,7 +56,7 @@ Fix direction: move risk tier to the label as primary (`risk/low`, `risk/high`) 
 **Evidence:** `.github/scripts/pr_lifecycle.py:14-23` (8 states defined) vs. sweep §5 (3 reachable).
 
 | State | Reachable? | Setter |
-| --- | --- | --- |
+|---|---|---|
 | `staged` | ✅ | `auto-pr.yml:155` |
 | `merged` | ✅ | `branch-cleanup.yml:89` (on `pull_request.closed` when `merged == true`) |
 | `abandoned` | ✅ | `branch-cleanup.yml:89` (on `pull_request.closed` when `merged == false`) |
@@ -75,7 +75,7 @@ No workflow transitions `staged` → `live`. "Live" appears to be an intended hu
 **Evidence:** `pr_lifecycle.py:14-23` (lifecycle namespaced) vs. `review_feedback_loop.py:39-60` (review flat).
 
 | Namespace style | Labels |
-| --- | --- |
+|---|---|
 | `lifecycle/<state>` | staged, merged, abandoned, live, superseded, dormant, reactivated, archived |
 | flat | `auto-merge`, `agent-review-pending`, `review-required`, `review-threads-open`, `copilot-apply-pending` |
 
@@ -120,7 +120,7 @@ But it does NOT prevent `auto-pr` from racing an agent's own `gh pr create` (or 
 AND five OTHER branch-creating workflows have no idempotency guard at all:
 
 | Workflow | File | Creates PR without check |
-| --- | --- | --- |
+|---|---|---|
 | `daily-rollover.yml` | partial check at :121-131 | — |
 | `linear-brief.yml` | — | ✅ |
 | `vault-ingest.yml` | — | ✅ |
@@ -167,7 +167,7 @@ These were flagged by the Explore agent and are worth naming even though they do
 ## Appendix A: Schedule ecosystem at a glance
 
 | Cron | UTC time | Workflow | Commits? |
-| --- | --- | --- | --- |
+|---|---|---|---|
 | `*/30 * * * *` | every 30 min | agent-review-gate | no |
 | `0 10 * * *` | daily 10:00 | daily-rollover | yes |
 | `0 12 * * *` | daily 12:00 | vault-ingest | yes |

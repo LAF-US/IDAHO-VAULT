@@ -6,4 +6,4 @@ related:
 - hospitals
 authority: LOGAN
 ---
-Treasure Valley hospitals in Idaho and Oregon
+Treasure Valley hospitals in Idaho and Oregon 

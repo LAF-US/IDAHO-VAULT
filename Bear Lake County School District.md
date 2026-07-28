@@ -7,4 +7,4 @@ related:
 - Montpelier
 authority: LOGAN
 ---
-Montpelier, Bear Lake County
+Montpelier, Bear Lake County 

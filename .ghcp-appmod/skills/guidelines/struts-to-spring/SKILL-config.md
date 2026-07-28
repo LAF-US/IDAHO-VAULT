@@ -15,7 +15,6 @@ Skills for project configuration and setup during Struts to Spring Boot migratio
 **Steps:**
 
 1. **Add Spring Boot parent POM:**
-
 ```xml
 <parent>
     <groupId>org.springframework.boot</groupId>
@@ -24,8 +23,7 @@ Skills for project configuration and setup during Struts to Spring Boot migratio
 </parent>
 ```
 
-1. **Add Spring Boot dependencies:**
-
+2. **Add Spring Boot dependencies:**
 ```xml
 <dependency>
     <groupId>org.springframework.boot</groupId>
@@ -42,8 +40,7 @@ Skills for project configuration and setup during Struts to Spring Boot migratio
 </dependency>
 ```
 
-1. **Remove Struts dependencies:**
-
+3. **Remove Struts dependencies:**
 ```xml
 <!-- DELETE these -->
 <dependency>
@@ -56,8 +53,7 @@ Skills for project configuration and setup during Struts to Spring Boot migratio
 </dependency>
 ```
 
-1. **Add Spring Boot Maven plugin:**
-
+4. **Add Spring Boot Maven plugin:**
 ```xml
 <plugin>
     <groupId>org.springframework.boot</groupId>

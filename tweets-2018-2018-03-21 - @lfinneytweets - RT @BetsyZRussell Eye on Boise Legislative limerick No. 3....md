@@ -20,10 +20,9 @@ related:
   - idpol
 ---
 
-RT @BetsyZRussell: Eye on Boise: Legislative limerick No. 3: An ode to Bell and Keough... <https://t.co/WzwtW9SrOi> #idleg #idpol <https://t.c…>
+RT @BetsyZRussell: Eye on Boise: Legislative limerick No. 3: An ode to Bell and Keough... https://t.co/WzwtW9SrOi #idleg #idpol https://t.c…
 
 ## Links
-
-- <https://goo.gl/s9seyU>
+- https://goo.gl/s9seyU
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/976387140798967809)

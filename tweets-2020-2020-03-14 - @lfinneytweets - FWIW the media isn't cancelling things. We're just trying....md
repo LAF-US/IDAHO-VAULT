@@ -13,10 +13,9 @@ related:
   - lfinneytweets
 ---
 
-FWIW "the media" isn't cancelling things. We're just trying to keep you updated on what everyone else around you is doing. <https://t.co/UTMAtF1KxC>
+FWIW "the media" isn't cancelling things. We're just trying to keep you updated on what everyone else around you is doing. https://t.co/UTMAtF1KxC
 
 ## Links
-
-- <https://x.com/RadioDawson/status/1238620357533167616>
+- https://x.com/RadioDawson/status/1238620357533167616
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1238621846611742721)

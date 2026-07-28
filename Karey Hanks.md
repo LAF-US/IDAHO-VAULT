@@ -8,4 +8,4 @@ related:
 authority: LOGAN
 ---
 Residence: St. Anthony
-Graduate: Idaho Falls School District, Ricks College, Brigham Young University
+Graduate: Idaho Falls School District, Ricks College, Brigham Young University 

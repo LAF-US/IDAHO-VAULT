@@ -4,4 +4,4 @@ related:
 - Wilder
 authority: LOGAN
 ---
-Wilder, Canyon County
+Wilder, Canyon County 

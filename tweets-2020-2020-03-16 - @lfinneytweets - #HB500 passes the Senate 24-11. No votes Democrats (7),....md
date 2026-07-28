@@ -21,7 +21,7 @@ related:
   - idpol
 ---
 
-# HB500 passes the Senate 24-11.
+#HB500 passes the Senate 24-11.
 No votes: Democrats (7), Guthrie, Johnson, Lee, Woodward. #idleg #idpol
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

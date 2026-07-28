@@ -15,6 +15,6 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoStatesman: Endorsement: Luke Malek has the makings of a good representative for Idaho's 1st Congressional District <https://t.co/uZ…>
+RT @IdahoStatesman: Endorsement: Luke Malek has the makings of a good representative for Idaho's 1st Congressional District https://t.co/uZ…
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/994820496888909824)

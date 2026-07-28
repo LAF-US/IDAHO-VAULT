@@ -5,4 +5,4 @@ related:
 - Valley County
 authority: LOGAN
 ---
-Local Idaho Democratic Party precinct committee for Valley County
+Local Idaho Democratic Party precinct committee for Valley County 

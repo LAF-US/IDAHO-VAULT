@@ -51,7 +51,7 @@ tags:
 ## Books in the series
 
 | # | Title | Pub. (UK) | Notes |
-| --- | --- | --- | --- |
+|---|---|---|---|
 | 1 | ***The Cry of the Icemark*** | 2005 | Debut; Chicken House (UK), Scholastic (US 2005; later US formats 2006) |
 | 2 | ***Blade of Fire*** | Sep 2006 | US edition Feb 2007 |
 | 3 | ***Last Battle of the Icemark*** | 2008 | US hardcover 15 Apr 2009 |

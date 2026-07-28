@@ -21,11 +21,10 @@ related:
   - idpol
 ---
 
-Senate has passed the budget for @IDHW Divisions of Mental Health Services, Psychiatric Hospitalization, and Substance Abuse Treatment and Prevention. #idleg #idpol
-It includes funds for psychiatric facility shifts that @KristenMcPeekTV covered here: <https://t.co/Tsv6VPh1v5>
+Senate has passed the budget for @IDHW Divisions of Mental Health Services, Psychiatric Hospitalization, and Substance Abuse Treatment and Prevention. #idleg #idpol 
+It includes funds for psychiatric facility shifts that @KristenMcPeekTV covered here: https://t.co/Tsv6VPh1v5
 
 ## Links
-
-- <https://idahonews.com/news/local/as-idaho-grows-a-new-psychiatric-hospital-will-open-in-nampa>
+- https://idahonews.com/news/local/as-idaho-grows-a-new-psychiatric-hospital-will-open-in-nampa
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1239609722400980993)

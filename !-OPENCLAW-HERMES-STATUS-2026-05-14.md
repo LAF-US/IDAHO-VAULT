@@ -1,7 +1,6 @@
 # OpenClaw And Hermes Status - 2026-05-14
 
 Related:
-
 - [[!-MAC-HARDWARE-SOFTWARE-CHECK-2026-05-14]]
 - [[!-MAC-SETUP-STATUS-2026-04-26]]
 - [[IMPL-MESH-OPENROUTER-2026-04-24]]
@@ -27,18 +26,15 @@ Successor note: [[!-OPENCLAW-HERMES-MAC-WINDOWS-STABILITY-2026-05-17]] records t
 ## Current OpenClaw Model Routing
 
 Default:
-
 - `openrouter/mistralai/mistral-small-2603`
 
 Fallbacks:
-
 - `openrouter/mistralai/mistral-medium-3-5`
 - `openrouter/anthropic/claude-sonnet-4.6`
 - `openrouter/openai/gpt-5.3-codex`
 - `openrouter/mistralai/mistral-large-2512`
 
 Aliases:
-
 - `mistral`
 - `mistral-large`
 - `mistral-medium`
@@ -48,7 +44,6 @@ Aliases:
 - `codex`
 
 Policy note:
-
 - This matches Logan's preferred routing order: Mistral, Claude, then ChatGPT/OpenAI.
 - Gemini is not configured in active OpenClaw model routing.
 - Phi, Qwen, and Gemma remain excluded from active OpenClaw routing.
@@ -68,24 +63,20 @@ Policy note:
 ## TTS Status
 
 Working:
-
 - Gemini TTS generated `jabberwocky-old-man-gemini.mp3`
 - SAM TTS generated `jabberwocky-old-man-sam.wav` and `.mp3`
 - Hermes custom provider `sam` generated OGG/Opus voice-compatible output
 
 Deliberately off:
-
 - Global `voice.auto_tts` remains off because MacBook load averages were high during testing.
 
 ## Local Code Changes
 
 Hermes local patch:
-
 - `tools/tts_tool.py`: redacts API keys and tokens from TTS provider error text before logging or returning tool errors.
 - `hermes_cli/doctor.py`: checks Gemini native API connectivity using Google API-key style auth instead of OpenAI-style bearer auth.
 
 OpenClaw state cleanup:
-
 - `openclaw doctor --fix` moved a heartbeat-owned `agent:main:main` session into a recovered heartbeat session slot.
 
 ## Security Notes

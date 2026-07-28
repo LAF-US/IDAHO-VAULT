@@ -60,7 +60,6 @@ BoiseDev visited the office building to locate the office suite and the lobby of
 Only one tenant of the buildings agreed to do an interview with BoiseDev.
 
 ## Where are the properties?
-
 Huckleberry Properties’ holdings are on both sides of Main Street in downtown Emmett.
 
 The company owns 107 E Main Street, which is the office of the Gem County Recreation District, and 117-119 E Main Street, where computer store Computaters and People’s Financial Services are located. Huckleberry also owns the two buildings next door, 123 E. Main Street, where the now-closed Possum Trot Traders pawn shop is located, and the building addressed 125 E Main Street and 127 E Main Street. One storefront is empty, and the other is home to High Rock Law.
@@ -70,7 +69,6 @@ On the other side of the intersection of Washington Street, Huckleberry Properti
 Huckleberry owns both buildings, home to home decore shops Hen House Home and Gift and The Barn Door, located across the street from each other at the end of the block. 131 W Main Street, which used to be home to specialty candy store Sweet Corner of Idaho and is owned by Huckleberry, is now an extended part of Hen House. The empty spot at 142 W Main Street, on the end of block next to the Barn Door, is also owned by Huckleberry.
 
 ## Not the first out-of-town owner
-
 Petrie said this isn’t the first time Emmett watched these buildings not be rented out.
 
 He said Huckleberry Properties brought the slate of buildings from “another absentee landlord” and the city had high hopes for their redevelopment and new vibrancy in downtown, but it hasn’t happened. Petrie said this is likely due to the “perfect storm” of the timing where Huckleberry bought the properties at the end of 2018, a little more than a year before the state faced restrictions on business operations due to COVID-19.

@@ -4,4 +4,4 @@ related:
 - Sandpoint
 ---
 
-Sandpoint music festival
+Sandpoint music festival 

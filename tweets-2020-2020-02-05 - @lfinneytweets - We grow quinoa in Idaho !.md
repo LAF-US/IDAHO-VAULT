@@ -13,10 +13,9 @@ related:
   - lfinneytweets
 ---
 
-We grow quinoa in Idaho?! <https://t.co/1We2zUcGaJ>
+We grow quinoa in Idaho?! https://t.co/1We2zUcGaJ
 
 ## Links
-
-- <https://x.com/RadioDawson/status/1225151107355176961>
+- https://x.com/RadioDawson/status/1225151107355176961
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1225156661884551168)

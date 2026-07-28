@@ -1,7 +1,6 @@
 # Red - The Original Pokémon Protagonist
 
 ## Table of Contents
-
 1. [Overview](#overview)
 2. [Game Appearances](#game-appearances)
 3. [Teams and Battle Strategies](#teams-and-battle-strategies)
@@ -28,46 +27,39 @@
 ## Game Appearances
 
 ### Generation I (Player Character)
-
 - **Games**: Pokémon Red, Blue, Green (Japan), Yellow
 - **Role**: Playable protagonist
 - **Starting Pokémon**: Bulbasaur, Charmander, or Squirtle (RBY); Pikachu (Yellow)
 - **Journey**: Defeats 8 Gym Leaders, Elite Four, and Champion Blue
 
 ### Generation II (NPC - Post-Game Boss)
-
 - **Games**: Pokémon Gold, Silver, Crystal
 - **Location**: Mt. Silver
 - **Role**: Final boss, highest-level Trainer in the series at the time
 - **Team**: Pikachu (Lv. 81), Charizard (Lv. 77), Venusaur (Lv. 77), Blastoise (Lv. 77), Espeon (Lv. 75), Lapras (Lv. 75)
 
 ### Generation III (Remakes)
-
 - **Games**: Pokémon FireRed, LeafGreen
 - **Role**: Playable protagonist
 - **Starting Pokémon**: Bulbasaur, Charmander, or Squirtle
 
 ### Generation IV (NPC)
-
 - **Games**: Pokémon HeartGold, SoulSilver
 - **Location**: Mt. Silver (HGSS)
 - **Team**: Pikachu (Lv. 88), Charizard (Lv. 84), Venusaur (Lv. 84), Blastoise (Lv. 84), Espeon (Lv. 82), Lapras (Lv. 82)
 - **Reward**: Legend Ribbon (HGSS)
 
 ### Generation V (NPC)
-
 - **Games**: Pokémon Black 2, White 2
 - **Location**: Pokémon World Tournament (B2W2)
 - **Role**: Optional opponent in the World Tournament Champions/Kanto Leaders tournaments
 
 ### Generation VII (NPC)
-
 - **Games**: Pokémon Sun, Moon, Ultra Sun, Ultra Moon, Let's Go, Pikachu!, Let's Go, Eevee!
 - **Location**: Battle Tree (SMUSUM), After 6 Master Trainers (LGPE)
 - **Team**: SMUSUM: Same as GSC/HGSS; LGPE: Pikachu, Venusaur, Arcanine, Alakazam, Gyarados, Aerodactyl (all Lv. 77 except Pikachu at 81)
 
 ### Other Appearances
-
 - Pokémon Stadium, Stadium 2, Masters EX, Super Smash Bros. (trophy)
 
 ---
@@ -75,9 +67,8 @@
 ## Teams and Battle Strategies
 
 ### Core Team
-
 | Game | Pokémon | Level | Notes |
-| ------ | --------- | ------- | ------- |
+|------|---------|-------|-------|
 | GSC/HGSS | Pikachu | 81-88 | Highest-level Pikachu in core series |
 | GSC/HGSS | Charizard | 77-84 | Starter evolution |
 | GSC/HGSS | Venusaur | 77-84 | Starter evolution |
@@ -92,13 +83,11 @@
 | LGPE | Aerodactyl | 77 | New team member |
 
 ### Strategy
-
 - Balanced team with type coverage
 - All three Kanto starters
 - High levels in post-game battles
 
 ### Counters
-
 - Ground vs Pikachu, Electric vs Charizard/Venusaur, Grass vs Blastoise
 
 ---
@@ -106,23 +95,18 @@
 ## Anime and Manga Appearances
 
 ### Pokémon Origins
-
 - Main protagonist, silent, uses Charmander
 
 ### Pokémon Generations
-
 - Brief appearances, legendary Trainer
 
 ### Mewtwo Strikes Back
-
 - Cameo at beginning
 
 ### Pokémon Adventures Manga
-
 - Main protagonist, uses Poliwag/Poliwrath
 
 ### Pokémon Pocket Monsters Manga
-
 - Main protagonist, comedic tone
 
 ---
@@ -130,19 +114,16 @@
 ## Personality and Design
 
 ### Personality
-
 - Silent protagonist (games)
 - Determined, brave, compassionate (Origins)
 - Mysterious powerful figure (NPC appearances)
 
 ### Design
-
 - Red cap and jacket (Gen I)
 - Red and white cap, red short-sleeved jacket over a black/white shirt, blue jeans, red/white sneakers (FRLG)
 - 3D model (LGPE)
 
 ### Name Origin
-
 - Reddo (レッド) = "Red" in Japanese
 
 ---
@@ -150,7 +131,6 @@
 ## Trivia
 
 ### Game
-
 - Only protagonist NPC in later generations
 - Highest-level Trainer (Pikachu Lv. 81/88)
 - All three starters regardless of choice
@@ -158,12 +138,10 @@
 - Different team in Let's Go
 
 ### Anime/Manga
-
 - Pokémon Origins: silent, Charmander
 - Adventures: Poliwrath main Pokémon
 
 ### Cultural Impact
-
 - Most recognizable protagonist
 - Merchandise, spin-offs
 - Template for future protagonists
@@ -171,7 +149,6 @@
 ---
 
 ## References
-
 - Bulbapedia: [Red (game)](https://bulbapedia.bulbagarden.net/wiki/Red_(game))
 - Pokémon Database, CBR, TheGamer, ScreenRant
 

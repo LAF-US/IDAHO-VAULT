@@ -37,7 +37,7 @@ The new proposal would nearly double that ceiling, setting a new cap at 15% for 
 
 ![Speaker of the House Mike Moyle, R-Star, and House Minority Leader Ilana Rubel, D-Boise, present their outlook for the upcoming 2026 Legislative Session during a preview event hosted by the Idaho Press Club and Capitol Correspondents Association in the Lincoln Auditorium at the Idaho Statehouse, Thursday, Jan. 8, 2026.](https://www.idahostatesman.com/public/latest-news/zc724f/picture314253221/alternates/FREE_1140/BOI_0108legprevmoylerubel.JPG)
 
-Speaker of the House Mike Moyle, left, represents the fast-growing Boise suburb of Star. At right is House Minority Leader Ilana Rubel, D-Boise. Darin Oswald <doswald@idahostatesman.com>
+Speaker of the House Mike Moyle, left, represents the fast-growing Boise suburb of Star. At right is House Minority Leader Ilana Rubel, D-Boise. Darin Oswald doswald@idahostatesman.com
 
 That’s good news for small towns, where the 2021 check on taxes turned into a de facto moratorium on growth. Unable to raise budgets as fast as populations, some cities slowed or stalled new development, rather than depress services to existing taxpayers. Moyle hopes this new bill will allow city services to scale up along with population, to a point.
 
@@ -53,7 +53,7 @@ The Association of Idaho Cities did not immediately return a call for comment.
 
 ![Moyle’s revision aims to allow small towns to raise more  revenue as they grow.](https://www.idahostatesman.com/public/latest-news/lawdh/picture289734954/alternates/FREE_1140/0621%20parma.jpg)
 
-Moyle’s revision aims to allow small towns to raise more revenue as they grow. Darin Oswald <doswald@idahostatesman.com>
+Moyle’s revision aims to allow small towns to raise more revenue as they grow. Darin Oswald doswald@idahostatesman.com
 
 [House Bill 389](https://legislature.idaho.gov/sessioninfo/2021/legislation/H0389/) emerged in the waning days of the 2021 legislative session, already the longest in Idaho history. It was a sweeping tax package, expanding the homeowner’s exemption, strengthening the state’s property tax “circuit breaker” for low-income residents, and curtailing the ways local governments could tax their residents. The law passed quickly, if cautiously.
 

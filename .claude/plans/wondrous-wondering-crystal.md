@@ -13,7 +13,7 @@ current commit SHAs.
 ## SHA Map (resolved 2026-04-17)
 
 | Reference | Commit SHA | Comment |
-| --- | --- | --- |
+|---|---|---|
 | `1password/load-secrets-action@v4` | `92467eb28f72e8255933372f1e0707c567ce2259` | `# v4` |
 | `actions/checkout@v4` | `34e114876b0b11c390a56381ad16ebd13914f8d5` | `# v4` |
 | `actions/setup-python@v5` | `a26af69be951a213d495a4c3e4e4022e16d87065` | `# v5` |
@@ -30,7 +30,7 @@ current commit SHAs.
 ## Files Modified
 
 | File | Action references present |
-| --- | --- |
+|---|---|
 | `.github/workflows/*.yml` (all 27) | `actions/checkout@v4`, `actions/setup-python@v6`, `peter-evans/create-pull-request@v8`, and others per file |
 | `.github/actions/setup-vault/action.yml` | `actions/setup-python@v5` only |
 
@@ -65,7 +65,6 @@ sed -i \
 ## Post-implementation
 
 After files are updated and committed:
-
 1. Enable "Require actions to be pinned to full-length commit SHA" in GitHub org Actions settings at `https://github.com/organizations/LAF-US/settings/actions`.
 2. This requires org admin access — Logan handles this step.
 

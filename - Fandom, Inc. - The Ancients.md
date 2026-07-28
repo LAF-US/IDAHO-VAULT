@@ -13,6 +13,7 @@ According to legends, the Ancients were the first people to use [magic](https://
 
 As time went on, the Ancients began to fight and turn [the Sceptre](https://skulduggery.fandom.com/wiki/The_Sceptre_of_the_Ancients "The Sceptre of the Ancients") in each other. All of them died except one, called [the Last of the Ancients](https://skulduggery.fandom.com/wiki/The_Last_of_the_Ancients "The Last of the Ancients"), who hurled [the Sceptre](https://skulduggery.fandom.com/wiki/The_Sceptre_of_the_Ancients "The Sceptre of the Ancients") into the earth.
 
+  
 Little is known about the Ancients. They were the first to use Magic, and were extremely powerful with it. For years, they worshipped and obeyed the Faceless Ones, but eventually began a revolution, secretly stealing a Black Crystal from the Faceless Ones and crafting the Sceptre of the Ancients, as well as the four [God-Killers](https://skulduggery.fandom.com/wiki/God-Killer "God-Killer"). They then fought back against the Faceless Ones and banished them from our world. Eventually, without their gods, they began to fight amongst themselves, and the Ancients wiped themselves out. At some point, the Edgley family became supposedly descended from the Ancients before it was revealed that they were truly descended from the ones that the Ancients had once called Gods.
 
 ## Objects

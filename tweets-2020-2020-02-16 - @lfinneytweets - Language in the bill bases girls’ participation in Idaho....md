@@ -21,12 +21,11 @@ related:
   - idpol
 ---
 
-Language in the bill bases girls’ participation in Idaho school sports teams on their hormones, internal and external organs, and chromosomal makeup.
-@madisonhardy05 covers Idaho’s transgender athletes bill for @IdahoPubRadio.
-<https://t.co/xvUFHHRvya> #idleg #idpol
+Language in the bill bases girls’ participation in Idaho school sports teams on their hormones, internal and external organs, and chromosomal makeup. 
+@madisonhardy05 covers Idaho’s transgender athletes bill for @IdahoPubRadio. 
+https://t.co/xvUFHHRvya #idleg #idpol
 
 ## Links
-
-- <https://idahopublicradio.wordpress.com/2020/02/14/house-panel-introduces-bill-on-transgender-athletes>
+- https://idahopublicradio.wordpress.com/2020/02/14/house-panel-introduces-bill-on-transgender-athletes
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1229091821067718656)

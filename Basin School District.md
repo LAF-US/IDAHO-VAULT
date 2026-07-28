@@ -4,4 +4,4 @@ related:
 - Boise County
 authority: LOGAN
 ---
-Boise County
+Boise County 

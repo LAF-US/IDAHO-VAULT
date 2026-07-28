@@ -5,4 +5,4 @@ related:
 - medical school
 authority: LOGAN
 ---
-University of Idaho medical school
+University of Idaho medical school 

@@ -18,7 +18,7 @@ Sync the files in your Microsoft 365 or SharePoint site libraries so they’re a
 
 1. [Sign into the SharePoint site where you want to sync files and folders from.](https://support.microsoft.com/en-us/office/sign-in-to-sharepoint-324a89ec-e77b-4475-b64a-13a0c14c45ec#from_site_url)
 2. Select the library where your files and folders are. Select **Sync**.![screenshot of sync button on doc library.](https://support.microsoft.com/images/en-us/ae159249-b68f-4397-8f2c-9f6b4fb9a366?format=avif&w=800)
- **Note:** If your browser asks for permission to use OneDrive, confirm that it's OK.
+	**Note:** If your browser asks for permission to use OneDrive, confirm that it's OK.
 3. Sign in to OneDrive to start syncing your files and finish OneDrive setup.
 
 ## Work with your files in your file system

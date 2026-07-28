@@ -24,20 +24,22 @@ authority: LOGAN
 These systems are typically composed of:
 
 - multiple specialized agents
-
+    
 - a coordination mechanism (explicit or implicit)
-
+    
 - shared or externalized state
-
+    
 - defined handoff or routing logic
+    
 
 They are most useful when tasks are:
 
 - multi-step
-
+    
 - heterogeneous (research, transformation, execution)
-
+    
 - state-dependent
+    
 
 ---
 
@@ -48,20 +50,22 @@ They are most useful when tasks are:
 A swarm can:
 
 - break a complex task into smaller units
-
+    
 - assign each unit to a specialized agent
-
+    
 - recombine outputs into a final result
+    
 
 Example:
 
 - Agent A: gather data
-
+    
 - Agent B: clean/structure
-
+    
 - Agent C: analyze
-
+    
 - Agent D: summarize
+    
 
 This allows parallelization and specialization beyond a single-agent workflow.
 
@@ -72,20 +76,22 @@ This allows parallelization and specialization beyond a single-agent workflow.
 Agents can:
 
 - call APIs
-
+    
 - interact with databases
-
+    
 - process files
-
+    
 - trigger external systems
+    
 
 This enables integration with:
 
 - real-world data sources
-
+    
 - automation pipelines
-
+    
 - enterprise systems
+    
 
 ---
 
@@ -94,18 +100,20 @@ This enables integration with:
 Swarm systems can use:
 
 - files (e.g., markdown, JSON)
-
+    
 - databases
-
+    
 - vector stores
+    
 
 This allows:
 
 - long-term state retention
-
+    
 - auditability
-
+    
 - reproducibility
+    
 
 ---
 
@@ -114,20 +122,22 @@ This allows:
 Unlike hidden reasoning in single-agent systems, swarms can implement:
 
 - routing logic (if/then decision layers)
-
+    
 - handoff protocols
-
+    
 - approval gates
-
+    
 - validation steps
+    
 
 This improves:
 
 - transparency
-
+    
 - debugging
-
+    
 - control
+    
 
 ---
 
@@ -136,18 +146,20 @@ This improves:
 Swarm architectures can be designed to:
 
 - run locally
-
+    
 - sync intermittently
-
+    
 - operate without constant internet access
+    
 
 This enables:
 
 - resilience
-
+    
 - privacy
-
+    
 - edge deployment
+    
 
 ---
 
@@ -156,10 +168,11 @@ This enables:
 New agents can be added without redesigning the system:
 
 - plug-in architecture
-
+    
 - role-based expansion
-
+    
 - tool-based augmentation
+    
 
 ---
 
@@ -170,16 +183,18 @@ New agents can be added without redesigning the system:
 Each agent has:
 
 - a clear role
-
+    
 - limited responsibility
+    
 
 This improves:
 
 - maintainability
-
+    
 - clarity
-
+    
 - debuggability
+    
 
 ---
 
@@ -188,10 +203,11 @@ This improves:
 Because actions are externalized (files, logs, tools):
 
 - every step can be inspected
-
+    
 - failures can be traced
-
+    
 - outputs can be audited
+    
 
 ---
 
@@ -200,10 +216,11 @@ Because actions are externalized (files, logs, tools):
 Swarm systems can adapt to:
 
 - different workflows
-
+    
 - different data types
-
+    
 - evolving requirements
+    
 
 ---
 
@@ -212,10 +229,11 @@ Swarm systems can adapt to:
 It is easy to:
 
 - insert approval steps
-
+    
 - override decisions
-
+    
 - review intermediate outputs
+    
 
 ---
 
@@ -224,10 +242,11 @@ It is easy to:
 Compared to a single large agent:
 
 - flows can be constrained
-
+    
 - actions can be gated
-
+    
 - behavior can be partially predicted
+    
 
 ---
 
@@ -238,18 +257,20 @@ Compared to a single large agent:
 The biggest problem in swarm systems is:
 
 - keeping agents aligned
-
+    
 - preventing duplication
-
+    
 - managing dependencies
+    
 
 Without strong coordination:
 
 - agents conflict
-
+    
 - outputs diverge
-
+    
 - system becomes chaotic
+    
 
 ---
 
@@ -258,16 +279,18 @@ Without strong coordination:
 If agents rely on shared state:
 
 - stale reads occur
-
+    
 - race conditions emerge
-
+    
 - inconsistent views of data develop
+    
 
 This is especially problematic without:
 
 - locking mechanisms
-
+    
 - version control discipline
+    
 
 ---
 
@@ -276,10 +299,11 @@ This is especially problematic without:
 A swarm introduces:
 
 - more components
-
+    
 - more failure points
-
+    
 - more design decisions
+    
 
 For simple tasks, a single agent is often better.
 
@@ -290,10 +314,11 @@ For simple tasks, a single agent is often better.
 Multi-step workflows:
 
 - increase execution time
-
+    
 - add sequential dependencies
-
+    
 - reduce responsiveness
+    
 
 ---
 
@@ -302,8 +327,9 @@ Multi-step workflows:
 While observability improves, complexity also increases:
 
 - failures may span multiple agents
-
+    
 - root cause analysis can be non-trivial
+    
 
 ---
 
@@ -314,10 +340,11 @@ Swarm systems can appear more capable than they are.
 Risks:
 
 - overestimating autonomy
-
+    
 - assuming coordination exists when it does not
-
+    
 - mistaking structure for capability
+    
 
 ---
 
@@ -364,18 +391,19 @@ Shared memory becomes inconsistent or invalid.
 Any swarm system must answer:
 
 1. Where does shared state live?
-
+    
 2. Who is allowed to write to it?
-
+    
 3. How is concurrency handled?
-
+    
 4. What triggers workflows?
-
+    
 5. How are conflicts resolved?
-
+    
 6. What requires human approval?
-
+    
 7. What is the minimal viable workflow?
+    
 
 ---
 
@@ -384,28 +412,31 @@ Any swarm system must answer:
 ### 1. Centralized (Controller-Based)
 
 - One agent (or system) routes all tasks
-
+    
 - Easier to control
-
+    
 - Single point of failure
+    
 
 ---
 
 ### 2. Decentralized (Peer-Based)
 
 - Agents coordinate through shared state
-
+    
 - More flexible
-
+    
 - Harder to manage
+    
 
 ---
 
 ### 3. Hybrid
 
 - Central routing + shared state coordination
-
+    
 - Most practical for real systems
+    
 
 ---
 
@@ -414,12 +445,13 @@ Any swarm system must answer:
 Swarm systems fail when:
 
 - there is no clear source of truth
-
+    
 - coordination rules are undefined
-
+    
 - agents assume capabilities they do not have
-
+    
 - system complexity exceeds actual needs
+    
 
 ---
 
@@ -430,10 +462,11 @@ Swarm systems fail when:
 Begin with:
 
 - 1–2 agents
-
+    
 - 1 workflow
-
+    
 - 1 shared state mechanism
+    
 
 ---
 
@@ -442,16 +475,18 @@ Begin with:
 Before scaling:
 
 - prove one complete task cycle works reliably
+    
 
 ---
 
 ### Externalize Everything
 
 - state in files or databases
-
+    
 - logs for every step
-
+    
 - explicit transitions
+    
 
 ---
 
@@ -460,10 +495,11 @@ Before scaling:
 Do NOT:
 
 - add many agents early
-
+    
 - build full orchestration layers upfront
-
+    
 - optimize before validation
+    
 
 ---
 
@@ -472,18 +508,20 @@ Do NOT:
 Agentic swarm systems are powerful because they allow:
 
 - decomposition
-
+    
 - specialization
-
+    
 - explicit control
+    
 
 However, their success depends almost entirely on:
 
 - disciplined coordination
-
+    
 - reliable shared state
-
+    
 - minimal, validated workflows
+    
 
 The limiting factor is not model capability.
 

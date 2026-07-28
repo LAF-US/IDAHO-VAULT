@@ -5,6 +5,6 @@ related:
 - therapists
 ---
 
-counselors
+counselors 
 
-therapists
+therapists 

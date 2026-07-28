@@ -15,4 +15,4 @@ authority: LOGAN
 
 ---
 
-- 1938 Borah - Committee Monopoly Inquiry
+- 1938 Borah - Committee Monopoly Inquiry 

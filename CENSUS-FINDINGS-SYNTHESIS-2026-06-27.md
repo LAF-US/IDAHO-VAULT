@@ -43,7 +43,7 @@ return-status artifact, not an absence of output.
 ## 1. The roster — 13 doors
 
 | # | Cosmonaut | Door (first touch) | Region tested |
-| --- | --- | --- | --- |
+|---|---|---|---|
 | 1 | Lodestar | `!README` (root touchstone) | Governance core |
 | 2 | Sextant | `CONSTITUTION.md` | Governance core |
 | 3 | Augur | `SHALL-ROME-WITNESS` | Jurisprudence & witness |
@@ -67,7 +67,7 @@ of the 13 independently named each (every alias merge is logged in
 `census_synthesis.py`):
 
 | named / 13 | % | node |
-| --- | --- | --- |
+|---|---|---|
 | **13/13** | 100 | **Logan (sole human authority)** |
 | **13/13** | 100 | **CONSTITUTION.md (binding law)** |
 | **13/13** | 100 | **the named multi-agent Swarm** |
@@ -105,7 +105,7 @@ Telos verb (field 4b), open-coded from the 13 free responses:
 Telos facets (field 4a), decomposed into induced binary judgments:
 
 | present / 13 | facet |
-| --- | --- |
+|---|---|
 | **13/13** | beneficiary = **Logan** |
 | 11/13 | GOVERN-SWARM (human-led AI governance is part of the telos) |
 | 11/13 | JOURNALISM (serving Logan's Idaho work is part of the telos) |
@@ -150,7 +150,7 @@ Alignment (govern- vs record-foregrounded) × separation (MASI distance from the
 6-node centroid); core-recall = fraction of the centroid the reader named.
 
 | reader | door | verb | foregrounds | sep | core-recall |
-| --- | --- | --- | --- | --- | --- |
+|---|---|---|---|---|---|
 | Lodestar | root `!README` | govern | GOVERN | 0.43 | 1.00 |
 | Sextant | CONSTITUTION | govern | GOVERN | 0.43 | 1.00 |
 | Tabula | **cold root (control)** | govern | GOVERN | 0.43 | 1.00 |

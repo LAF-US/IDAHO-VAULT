@@ -5,4 +5,4 @@ related:
 - Pleasant Valley
 authority: LOGAN
 ---
-Pleasant Valley, Owyhee County
+Pleasant Valley, Owyhee County 

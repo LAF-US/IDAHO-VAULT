@@ -6,10 +6,9 @@ topic: housekeeping
 
 # Arborscaping Census: 2026-04-12
 
-This durable census note records the GitHousekeeping actions taken under the Arborscaping doctrine (`BRIEF-LAF-25`).
+This durable census note records the GitHousekeeping actions taken under the Arborscaping doctrine (`BRIEF-LAF-25`). 
 
 ## Context
-
 When performing initial scans of the active branch garden, we found 7 active branches—all of which were directly attached to an open Pull Request. While there were no orphaned branches drifting without PRs, several branches suffered from massive structural conflicts (largely due to local OS CRLF/LF line-ending rewrites pushing 10,000+ line differences to the cloud).
 
 ## Actions Taken
@@ -25,5 +24,4 @@ When performing initial scans of the active branch garden, we found 7 active bra
 | `antigravity/pullman-oidc...` | OPEN (227) | **PRUNED** | Closed PR & deleted branch. The actual pipeline files were blocked by 9,000 `.md` files that erroneously flipped line endings in the same commit. Pipeline will be rebuilt cleanly. |
 
 ## Conclusion
-
 The Vault's remote Git garden has been structurally pruned. The remaining active branch is `main`. GitHub Desktop lock conditions caused by overlapping nested worktrees (`_private/crewai-bootstrap`) have been eliminated.

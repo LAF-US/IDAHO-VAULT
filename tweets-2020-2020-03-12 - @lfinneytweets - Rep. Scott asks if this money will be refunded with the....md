@@ -19,7 +19,7 @@ related:
   - idpol
 ---
 
-Rep. Scott asks if this money will be refunded with the $4.5 million expected from the feds.
+Rep. Scott asks if this money will be refunded with the $4.5 million expected from the feds. 
 JFAC chair Youngblood says not to his knowledge, the Governor’s emergency fund is fairly depleted right now. #idleg #idpol
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

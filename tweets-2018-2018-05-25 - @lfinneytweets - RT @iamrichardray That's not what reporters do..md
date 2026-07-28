@@ -15,10 +15,9 @@ related:
   - lfinneytweets
 ---
 
-RT @iamrichardray: That's not what reporters do. <https://t.co/JGUJTijAeL>
+RT @iamrichardray: That's not what reporters do. https://t.co/JGUJTijAeL
 
 ## Links
-
-- <https://x.com/elonmusk/status/999389139551248384>
+- https://x.com/elonmusk/status/999389139551248384
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/999840351778103297)

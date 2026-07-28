@@ -126,7 +126,7 @@ Apply [Basic formatting syntax](https://obsidian.md/help/syntax) and [Advanced f
 
 ### blockquote
 
-Adds a Markdown quote prefix (`>`) to each line of the input.
+Adds a Markdown quote prefix (`> `) to each line of the input.
 
 ### callout
 

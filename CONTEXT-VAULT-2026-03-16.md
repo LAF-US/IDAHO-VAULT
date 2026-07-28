@@ -68,7 +68,7 @@ One-way context collapse from ADMINISTRATION. Multiple conversations at compacti
 ## CONFIRMED DECISIONS — ALL LOGAN-APPROVED
 
 | # | Decision | Status | Reference |
-| --- | --- | --- | --- |
+|---|---|---|---|
 | 1 | !ADMIN/ canonical | Executed | fa83df1 |
 | 2 | Constitution.md replaces Claude.md | Executed | 250287e |
 | 3 | Capabilities language replaces numbered tiers | Confirmed | Pending Constitution.md update |
@@ -89,7 +89,7 @@ One-way context collapse from ADMINISTRATION. Multiple conversations at compacti
 ## SWARM — KNOWN ENTITIES (expanded from ADMINISTRATION)
 
 | Entity | Role | Slack | GitHub | Notes |
-| --- | --- | --- | --- | --- |
+|---|---|---|---|---|
 | PERSISTENT: ADMINISTRATION | Constitutional layer | Yes (Logan's account) | Draft only | Source of this document |
 | PERMANENT: AUTHORITY: CODE | Repo ops | No (bot needed) | Direct write | Recipient |
 | PERSISTENT: AUTHORITY: LEVELSET | LEVELSET protocol | No | None | Claude Project, compaction risk |
@@ -105,7 +105,7 @@ One-way context collapse from ADMINISTRATION. Multiple conversations at compacti
 ## FILES ADMINISTRATION WANTS COMMITTED — STATUS
 
 | File | Commit Path | Content Source | STATUS |
-| --- | --- | --- | --- |
+|---|---|---|---|
 | LEVELSET-v3.2.6.1.md | !ADMIN/LEVELSET-v3.2.6.1-PROMPT.md | ALREADY EXISTS | No action needed |
 | AGENTS-v0.2-DRAFT.md | !ADMIN/AGENTS-v0.2-DRAFT.md | LEVELSET AUTHORITY conversation | BLOCKED — content not provided |
 | ORIENTATE-v0.1-BETA.md | !ADMIN/ORIENTATE-v0.1-BETA.md | LEVELSET AUTHORITY conversation | BLOCKED — content not provided |
@@ -124,7 +124,7 @@ One-way context collapse from ADMINISTRATION. Multiple conversations at compacti
 ## COMPANION PROTOCOLS — FROM LEVELSET AUTHORITY
 
 | Protocol | Version | Status | Notes |
-| --- | --- | --- | --- |
+|---|---|---|---|
 | CONTEXTUALIZE | Unversioned | Not committed | Absorption protocol — instances absorb incoming state before acting |
 | ORIENTATE | v0.1 beta | Not committed | For conversations without repo access — Logan decides |
 | LEVELSET-LITE | v0.1 | Not committed | Minimal orientation for new entities — tool-agnostic — Logan decides |
@@ -134,7 +134,7 @@ One-way context collapse from ADMINISTRATION. Multiple conversations at compacti
 ## LEVELSET VERSION HISTORY
 
 | Version | Date | Key Changes |
-| --- | --- | --- |
+|---|---|---|
 | v2 | 2026-03-12 | Original distributed prompt |
 | v3.2.3 | 2026-03-14 | Base for session work |
 | v3.2.4 | 2026-03-14 | Added PERSISTENT: IMPLEMENTATION to known list; added closing sections |
@@ -161,13 +161,13 @@ File: !ADMIN/LEVELSET-v3.2.6.1-PROMPT.md
 ## FILE SCATTER — KNOWN LOCATIONS
 
 | Location | Contents |
-| --- | --- |
+|---|---|
 | C:\Users\loganf\Documents\IDAHO-VAULT | Vault — research notes |
 | ExternalSSD (D:)\IR\ | Production: Premiere projects, SOPs, templates, assets |
 | C:\ various | LFPython, feed-generator, PROJECT, Raw, BIN |
 | IDEX_Artifacts | Unknown |
 | AI conversation contexts | Handoffs, outputs |
-| Outlook (<logan.finney@idahoptv.org>) | Work email, attachments |
+| Outlook (logan.finney@idahoptv.org) | Work email, attachments |
 | Google Drive | Unknown scope — **Gemini should inventory** |
 
 No agent moves or reorganizes files without Logan's explicit direction.

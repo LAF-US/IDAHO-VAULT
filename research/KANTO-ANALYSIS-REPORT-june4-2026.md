@@ -23,7 +23,7 @@ The Kanto Pokemon League is the original competitive battling system from Genera
 ### The Eight Pillars of Kanto
 
 | # | Leader | City | Type Specialty | Badge | First Appearance | Distinction |
-| --- | -------- | ------ | ---------------- | ------- | ----------------- | ------------- |
+|---|--------|------|----------------|-------|-----------------|-------------|
 | 1 | Brock | Pewter City | Rock | Boulder Badge | Red/Blue/Green | First Gym, pure Rock-type |
 | 2 | Misty | Cerulean City | Water | Cascade Badge | Red/Blue/Green | Iconic, anime companion |
 | 3 | Lt. Surge | Vermilion City | Electric | Thunder Badge | Red/Blue/Green | Military background, American |
@@ -53,7 +53,7 @@ The Kanto Pokemon League is the original competitive battling system from Genera
 ### The Four Guardians of Indigo Plateau
 
 | # | Member | Type Specialty | Position | First Appearance | Distinction |
-| --- | -------- | ---------------- | ---------- | ----------------- | ------------- |
+|---|--------|----------------|----------|-----------------|-------------|
 | 1 | Lorelei | Ice/Water | Chamber 1 | Red/Blue/Green | First Elite Four, logical battler |
 | 2 | Bruno | Fighting/Rock | Chamber 2 | Red/Blue/Green | Martial artist, first anime appearance |
 | 3 | Agatha | Ghost/Poison | Chamber 3 | Red/Blue/Green | Oldest, manipulative, Ghost master |
@@ -138,7 +138,7 @@ The Kanto Pokemon League is the original competitive battling system from Genera
 ### Gym Leader Themes
 
 | Leader | Theme | Cultural Influence |
-| -------- | ------- | ------------------- |
+|--------|-------|-------------------|
 | Brock | Rock-solid determination | Mountain/stone symbolism |
 | Misty | Water spirit | Mermaid/tomboy archetype |
 | Lt. Surge | Military discipline | American stereotypes |
@@ -151,7 +151,7 @@ The Kanto Pokemon League is the original competitive battling system from Genera
 ### Elite Four Themes
 
 | Member | Theme | Cultural Influence |
-| -------- | ------- | ------------------- |
+|--------|-------|-------------------|
 | Lorelei | Ice queen | German legend (Lorelei) |
 | Bruno | Martial arts | Fighting spirit philosophy |
 | Agatha | Ghost manipulation | Witch/elder archetype |

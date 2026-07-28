@@ -13,7 +13,7 @@ Inference is the process of using a trained model to make predictions on new dat
 3. Local endpoints: you can also run inference with local inference servers like [llama.cpp](https://github.com/ggerganov/llama.cpp), [Ollama](https://ollama.com/), [vLLM](https://github.com/vllm-project/vllm), [LiteLLM](https://docs.litellm.ai/docs/simple_proxy), or [Text Generation Inference (TGI)](https://github.com/huggingface/text-generation-inference) by connecting the client to these local endpoints.
 
 > \[!TIP\]\[InferenceClient\](/docs/huggingface\_hub/v1.10.1/en/package\_reference/inference\_client#huggingface\_hub.InferenceClient) is a Python client making HTTP calls to our APIs. If you want to make the HTTP calls directly using your preferred tool (curl, postman,…), please refer to the [Inference Providers](https://huggingface.co/docs/inference-providers/index) documentation or to the [Inference Endpoints](https://huggingface.co/docs/inference-endpoints/index) documentation pages.
->
+> 
 > For web development, a [JS client](https://huggingface.co/docs/huggingface.js/inference/README) has been released. If you are interested in game development, you might have a look at our [C# project](https://github.com/huggingface/unity-api).
 
 ## Getting started
@@ -101,7 +101,7 @@ What if you want to use a specific model? You can specify it either as a paramet
 ```
 
 > When using the “hf-inference” provider, each task comes with a recommended model from the 1M+ models available on the Hub. However, this recommendation can change over time, so it’s best to explicitly set a model once you’ve decided which one to use. For third-party providers, you must always specify a model that is compatible with that provider.
->
+> 
 > Visit the [Models](https://huggingface.co/models?inference=warm) page on the Hub to explore models available through Inference Providers.
 
 ### Using Inference Endpoints

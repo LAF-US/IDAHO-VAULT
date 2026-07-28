@@ -4,4 +4,4 @@ related:
 - County Sheriff
 authority: LOGAN
 ---
-Bonner County Sheriff
+Bonner County Sheriff 

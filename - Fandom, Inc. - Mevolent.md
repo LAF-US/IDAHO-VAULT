@@ -22,6 +22,7 @@ created: 2026-04-14
 
 Before his rise to power he served under [Arthur Dagan](https://skulduggery.fandom.com/wiki/Arthur_Dagan "Arthur Dagan") 's grandfather and somehow came across [The Unnamed](https://skulduggery.fandom.com/wiki/The_Unnamed "The Unnamed") who would later become his master. Mevolent was a dedicated follower of the Faceless Ones, and attempted to open a portal and allow them entry back to Earth. His army was lead by his [three generals](https://skulduggery.fandom.com/wiki/The_Three_Generals "The Three Generals"). Mevolent engaged the Sanctuary starting the war. Although equally matched at the beginning Mevolent's side began to lose. In a desperate attempt Mevolent ordered an attack against the leaders of the Sanctuary. [Nefarian Serpine](https://skulduggery.fandom.com/wiki/Nefarian_Serpine "Nefarian Serpine") succeeded in killing [Skulduggery Pleasant](https://skulduggery.fandom.com/wiki/Skulduggery_Pleasant "Skulduggery Pleasant") and many other leaders fell with him. They paraded the bodies around demoralizing the Sanctuary and with the leaders dead. Mevolent's side acquired more followers and took the upper hand until Skulduggery came back from the dead. The battle shifted with Skulduggery's return. He later pursued [Quintin Strom](https://skulduggery.fandom.com/wiki/Quintin_Strom "Quintin Strom") around the world around the time of The Corpse Attack in Denmark. In 1861 he was rumoured to be injured and had also gone into hiding. In [Skulduggery Pleasant: Midnight](https://skulduggery.fandom.com/wiki/Skulduggery_Pleasant:_Midnight "Skulduggery Pleasant: Midnight") it is revealed he was killed by [Caisson](https://skulduggery.fandom.com/wiki/Caisson "Caisson") who stabbed him multiple times and then used his power to drain away his life essence.
 
+  
 When Mevolent realises he is losing [the war](https://skulduggery.fandom.com/wiki/The_War "The War"), he orders a last strike against the leaders of his opposition. Many of these people, including [Skulduggery Pleasant](https://skulduggery.fandom.com/wiki/Skulduggery_Pleasant "Skulduggery Pleasant") are killed and burned on pikes for all to see. This creates a sense of fear that Mevolent uses to begin turning the tide of [the war](https://skulduggery.fandom.com/wiki/The_War "The War").
 
 ### Mevolent's dimension
@@ -97,7 +98,7 @@ Mevolent is a rather violent and cruel individual as shown in *Kingdom of the Wi
 - In Mevolent's first appearance, he heavily implies that he has eaten newborns before, but only those that have had it coming, though this was most likely meant in morbid jest.
 - The extreme power that Mevolent was supposed to have wielded has also led to speculation that he both knows, and has sealed, his True Name. However, this theory is disproven in *Kingdom of the Wicked*, wherein Darquesse cannot sense any trace of knowledge about Mevolent's True Name within him.
 - There will be more information given on Mevolent's death in the main dimension and on his victory in the alternative one during the course of Phase 2.[^3]
-  - Alternative Mevolent may come to the main dimension and try to conquer it as well.[^4]
+	- Alternative Mevolent may come to the main dimension and try to conquer it as well.[^4]
 - Mevolent is more powerful than [Lord Vile](https://skulduggery.fandom.com/wiki/Lord_Vile "Lord Vile").[^5]
 
 ## Appearances

@@ -17,11 +17,8 @@ related:
 authority: LOGAN
 ---
 Policy committee for taxes, cities, counties, and taxing districts.
-
 # Roster
-
 ## 2023 Members
-
 - Doug Ricks Chair
 - Geoff Schroeder Vice Chair
 - C. Scott Grow

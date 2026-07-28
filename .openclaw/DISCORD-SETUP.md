@@ -21,7 +21,7 @@ Discord has been added to `openclaw.json`:
 
 ### 1. Create a Discord Bot
 
-1. Go to <https://discord.com/developers/applications>
+1. Go to https://discord.com/developers/applications
 2. Click **"New Application"**
 3. Give it a name (e.g., "OpenClaw Bot")
 4. Go to **Bot** section → Click **"Add Bot"**
@@ -78,7 +78,6 @@ The bot will respond to DMs and mentions in servers where it's invited.
   a tracked or user-persistent configuration surface.
 - The tracked reference config currently uses an environment reference to avoid
   changing a possibly live channel before audit. For a process-scoped session:
-
   ```powershell
   $env:DISCORD_OPENCLAW_TOKEN = op item get "Discord OpenClaw" --field credential --reveal
   openclaw gateway

@@ -15,14 +15,12 @@ related:
   - lfinneytweets
 ---
 
-"As soon as polls closed in Mississippi and Missouri at 8 p.m. Eastern time...The @AP called Biden the winner over Sanders even though state officials had yet to release any results from Tuesday’s election." <https://t.co/jXozq5fBcb> <https://t.co/NbAGnDz5gh>
+"As soon as polls closed in Mississippi and Missouri at 8 p.m. Eastern time...The @AP called Biden the winner over Sanders even though state officials had yet to release any results from Tuesday’s election." https://t.co/jXozq5fBcb https://t.co/NbAGnDz5gh
 
 ## Links
-
-- <https://x.com/TheIdahoPress/status/1237553122139987968>
+- https://x.com/TheIdahoPress/status/1237553122139987968
 
 ## Media
-
 - ![](https://pbs.twimg.com/tweet_video_thumb/ESyuTsUU4AAv9V5.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1237555660121751553)

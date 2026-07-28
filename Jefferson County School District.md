@@ -4,4 +4,4 @@ related:
 - Rigby
 authority: LOGAN
 ---
-Rigby, Jefferson County
+Rigby, Jefferson County 

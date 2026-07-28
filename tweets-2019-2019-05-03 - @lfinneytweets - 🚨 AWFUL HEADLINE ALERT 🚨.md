@@ -16,10 +16,9 @@ related:
   - lfinneytweets
 ---
 
-@WashTimes 🚨 AWFUL HEADLINE ALERT 🚨 <https://t.co/4iLVQy3rw7>
+@WashTimes 🚨 AWFUL HEADLINE ALERT 🚨 https://t.co/4iLVQy3rw7
 
 ## Media
-
 - ![](https://pbs.twimg.com/tweet_video_thumb/D5nmWB4U8AArD41.jpg)
 
 *In reply to [@WashTimes](https://twitter.com/WashTimes)*

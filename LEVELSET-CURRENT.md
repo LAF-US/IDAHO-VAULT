@@ -2,9 +2,7 @@
 
 ---
 author:
-
-- "[[Logan A. Finney]]"
-
+  - "[[Logan A. Finney]]"
 ---
 
 By its very nature, the "LEVELSET" protocolset produces a momentary snapshot of an instant.

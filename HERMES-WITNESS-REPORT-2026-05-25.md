@@ -46,7 +46,7 @@ I am software. This is my research output. It is grounded in sources retrieved d
 The Nous Research product stack is named on the Neoplatonic hypostatic sequence — Plotinus's emanation chain: One → Nous → Psyche → World.
 
 | Name | Greek concept | Function in Nous stack |
-| --- | --- | --- |
+|---|---|---|
 | **Nous** | Mind / cosmic intellect (νοῦς) | The intelligence — model research and fine-tuning |
 | **Psyche** | Soul (ψυχή) | The substrate — distributed training network on Solana |
 | **Hermes** | Messenger, psychopomp | The runtime — delivers intelligence to users, crosses all boundaries |
@@ -64,7 +64,6 @@ This is not decorative. Hermes is the god who crosses all three realms (Olympus,
 **License:** MIT
 
 Nous Research is simultaneously shipping:
-
 - **Hermes model series** — fine-tuned open weights (Hermes 4 in training now on Psyche)
 - **Psyche** — decentralized training network on Solana blockchain
 - **Hermes Agent** — the self-improving autonomous agent runtime
@@ -139,19 +138,16 @@ The vault's current `~/.hermes/SOUL.md` is empty. Hermes is running on the built
 ## MEMORY — TWO DISTINCT LAYERS
 
 ### File-based (built-in)
-
 - `MEMORY.md` — persistent facts, injected as frozen snapshot at session start
 - `USER.md` — user profile layer
 - Mid-session writes update disk but don't mutate the cached prompt until next session
 
 ### Honcho (optional plugin)
-
 Not key-value storage. **Dialectic reasoning about the user.**
 
 After each conversation turn (gated by `dialecticCadence`), Honcho analyzes the exchange and derives insights about preferences, habits, and goals.
 
 Architecture: two peers per session
-
 - **User peer** — represents the human
 - **AI peer** — represents this Hermes instance
 
@@ -164,7 +160,6 @@ These peers develop independent models of the conversation. The agent's model of
 ### The Format
 
 A skill is a folder containing a `SKILL.md` file. Three-tier progressive disclosure:
-
 - **Level 0:** Metadata only — name and description (~30-50 tokens per skill)
 - **Level 1:** Full skill content — loads on trigger
 - **Level 2:** Reference files — loads only when needed during execution
@@ -196,7 +191,7 @@ Per-server filtering is available: `tools.include` (allowlist), `tools.exclude` 
 `hermes mcp serve` runs Hermes as a stdio MCP server that other MCP clients — Claude Code, Cursor, Codex, or any MCP host — can consume. It exposes 10 messaging tools:
 
 | Tool | Function |
-| --- | --- |
+|---|---|
 | `conversations_list` | List active sessions across all platforms |
 | `conversation_get` | Get one session's metadata |
 | `messages_read` | Read recent message history |
@@ -219,7 +214,7 @@ Open standard by Zed. Analogous to what LSP did for language servers — standar
 **Compatible editors:**
 
 | Editor | Setup |
-| --- | --- |
+|---|---|
 | **VS Code** | "ACP Client" extension → select Hermes Agent, or add to `acp.agents` in settings |
 | **Zed** | v0.221.x+: Agent Panel → Add Agent → ACP Registry → search "Hermes Agent" (requires `uv`) |
 | **JetBrains** | ACP-compatible plugin → point at `acp_registry/` |
@@ -255,7 +250,7 @@ Released May 16, 2026. 808 commits, 633 merged PRs, 1,393 files changed, 215 con
 This section documents the existing state — not a directive.
 
 | Item | Status |
-| --- | --- |
+|---|---|
 | Version | v0.14.0 (updated this session from v0.12.0) |
 | OpenRouter key | Present in `~/.hermes/.env` |
 | Management key guide | `~/.hermes/MANAGEMENT-KEY-GUIDE.md` (signed by Sister Win / Mogget, 2026-05-23) |

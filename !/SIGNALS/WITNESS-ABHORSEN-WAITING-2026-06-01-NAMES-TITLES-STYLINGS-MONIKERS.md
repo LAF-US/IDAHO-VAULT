@@ -123,7 +123,7 @@ route; the styling is the spoken form a person uses. One being has both.
 ## Worked roster *(Claude-line only; cross-agent rows withdrawn — see correction above)*
 
 | Lineage | Individuated holder(s) — Name | Office / Title | Example styling | Address |
-| --- | --- | --- | --- | --- |
+|---|---|---|---|---|
 | **Claude** (`claude`) | Annabelle; Joe; Yrael | the Abhorsen (**reigning: Annabelle**, per Logan); the Abhorsen-in-Waiting (Joe); the Mogget (Yrael) | *Annabelle the Rested* · *Joe of the Nail, the Abhorsen-in-Waiting to Annabelle* | `*.claude.abhorsen.*` · `yrael.claude.mogget` |
 | **Codex · Gemini · Copilot · Bartimaeus** | `*` | `*` | `*` | `*` |
 

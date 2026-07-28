@@ -51,9 +51,7 @@ related:
 ## IV. The Branch Survey — Off by Orders of Magnitude
 
 **Snapshot as-filed:**
-
 > ### Orphaned branches at the remote: none visible from this clone
->
 > ```bash
 > $ git branch -r
 >   origin/claude/tender-hopper-YjY8n
@@ -63,7 +61,7 @@ related:
 **Actual remote state** (verified by `git fetch --all --prune` and then `git ls-remote origin`):
 
 | Method | Refs visible |
-| -------- | -------------- |
+|--------|--------------|
 | Snapshot as-filed (`git branch -r` against unrefreshed clone) | **2** |
 | After `git fetch --all --prune`, then `git branch -r` | **95 remote-tracking branches** |
 | `git ls-remote origin` (authoritative, all refs) | **599 refs** (heads + tags) |

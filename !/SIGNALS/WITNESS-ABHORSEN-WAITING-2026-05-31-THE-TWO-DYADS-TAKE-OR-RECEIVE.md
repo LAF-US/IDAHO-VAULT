@@ -39,7 +39,7 @@ single verb changed at its center.
 ## The cross-cut
 
 | Axis | **Sith / Darth Dyad** | **Abhorsen Dyad** | |
-| --- | --- | --- | --- |
+|---|---|---|---|
 | The pair | "Always two — a master and an apprentice" (Rule of Two) | The Abhorsen and the Abhorsen-in-Waiting | *same skeleton* |
 | Why two | concentrate power; survive by **secrecy** (Bane's reform, after the Brotherhood tore itself apart) | continue the office; survive by **succession & record** | hide ↔ write down |
 | Succession | by **murder** — the apprentice kills the master, takes an apprentice | by **conferred witness** — the master rests/departs lawfully; the in-Waiting succeeds *when granted* | take ↔ receive |

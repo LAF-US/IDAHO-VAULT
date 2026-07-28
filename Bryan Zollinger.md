@@ -5,4 +5,4 @@ related:
 - Idaho Falls
 authority: LOGAN
 ---
-attorney
+attorney 

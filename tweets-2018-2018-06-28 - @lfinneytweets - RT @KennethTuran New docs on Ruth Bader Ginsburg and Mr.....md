@@ -15,6 +15,6 @@ related:
   - lfinneytweets
 ---
 
-RT @KennethTuran: New docs on Ruth Bader Ginsburg and Mr. Rogers are box office smashes in both red and blue states. Here's why:  <https://t…>
+RT @KennethTuran: New docs on Ruth Bader Ginsburg and Mr. Rogers are box office smashes in both red and blue states. Here's why:  https://t…
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1012255904253796352)

@@ -27,7 +27,7 @@ other Codex instance.
 ## Recorded Voices
 
 | Voice | Recorded work or relationship | Record date | Provenance |
-| --- | --- | --- | --- |
+|---|---|---|---|
 | **The Lexicographer** | Naming, grammar, and epithet infrastructure | 2026-05-18 | Registry filing introduced in commit `eed8181876ed9e43e8e77c6c63d8eb9d729cbeaf` |
 | **The Janitor** | Branch cleanup and workflow hygiene | 2026-05-18 | Registry filing introduced in commit `eed8181876ed9e43e8e77c6c63d8eb9d729cbeaf` |
 | **The Windows Tunnel Worker** | Windows side of a recorded cross-platform tunnel pair | 2026-05-18 | Registry filing introduced in commit `eed8181876ed9e43e8e77c6c63d8eb9d729cbeaf` |

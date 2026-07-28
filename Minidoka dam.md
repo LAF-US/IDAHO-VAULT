@@ -7,4 +7,4 @@ related:
 - Snake River
 authority: LOGAN
 ---
-dam on the Snake River near Minidoka; creates Lake Walcott and Minidoka National Wildlife Refuge
+dam on the Snake River near Minidoka; creates Lake Walcott and Minidoka National Wildlife Refuge 

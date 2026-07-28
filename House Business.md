@@ -20,9 +20,7 @@ related:
 authority: LOGAN
 ---
 # Roster
-
 ## 2023 Members
-
 - Lance Clow Chair
 - Jeff Ehlers Vice Chair
 - Brent Crane

@@ -4,4 +4,4 @@ related:
 - Lewis County
 authority: LOGAN
 ---
-Kamiah, Lewis County
+Kamiah, Lewis County 

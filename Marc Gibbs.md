@@ -6,5 +6,4 @@ related:
 authority: LOGAN
 ---
 Residence: Grace
-
-- former House member, House Resources and Conservation chair
+- former House member, House Resources and Conservation chair 

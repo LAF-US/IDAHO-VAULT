@@ -3,4 +3,4 @@ related:
 - Oregon
 authority: LOGAN
 ---
-Oregon
+Oregon 

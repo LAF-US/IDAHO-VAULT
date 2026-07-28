@@ -4,4 +4,4 @@ related:
 - Utah
 authority: LOGAN
 ---
-Patriot Front member, Utah resident
+Patriot Front member, Utah resident 

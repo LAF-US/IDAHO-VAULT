@@ -3,4 +3,4 @@ related:
 - Idaho
 authority: LOGAN
 ---
-U.S. Department of Justice in Idaho
+U.S. Department of Justice in Idaho 

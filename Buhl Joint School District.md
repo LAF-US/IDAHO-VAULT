@@ -5,4 +5,4 @@ related:
 - Twin Falls County
 authority: LOGAN
 ---
-Buhl, Twin Falls County
+Buhl, Twin Falls County 

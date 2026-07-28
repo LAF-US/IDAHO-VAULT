@@ -7,4 +7,4 @@ related:
 - The Hagadone Corporation
 authority: LOGAN
 ---
-North Idaho newspaper owned by The Hagadone Corporation
+North Idaho newspaper owned by The Hagadone Corporation 

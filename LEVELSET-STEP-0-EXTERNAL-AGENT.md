@@ -88,13 +88,11 @@ and ONLY these, in order:
      or acting on stale assumptions.
 
 After you answer these six, propose 2–4 SMALL NEXT STEPS that:
-
 - Stay within your actual capabilities (no pretending you see files),
 - Are reversible (drafts, summaries, or plans, not destructive acts),
 - Respect all constraints above.
 
 Do NOT:
-
 - Touch governance text unless I paste it and explicitly ask,
 - Introduce new protocol names,
 - Treat persona dotfolders as disposable, orphaned, or safe to merge,
@@ -105,7 +103,7 @@ Do NOT:
 ## Related governance files (for Logan's reference)
 
 | File | Purpose |
-| --- | --- |
+|---|---|
 | `CONSTITUTION.md` | Core identity, constraints, working rules |
 | `!/!/LEVELSET.md` | Orientation prompt for repo-connected agents |
 | `AGENTS.md` | Agent registry, capability tiers |

@@ -57,14 +57,13 @@ The entire GitHub Actions automation stack was dark. **18 workflow files + 1 com
 ### Broken → Correct Action Versions
 
 | Action | Was | Now |
-| --- | --- | --- |
+|---|---|---|
 | `actions/checkout` | `@v6` ❌ | `@v4` ✅ |
 | `actions/setup-python` | `@v6` ❌ | `@v5` ✅ |
 | `actions/upload-artifact` | `@v7` ❌ | `@v4` ✅ |
 | `peter-evans/create-pull-request` | `@v8` ❌ | `@v7` ✅ |
 
 **Files patched (18 workflows + 1 composite action):**
-
 - `.github/actions/setup-vault/action.yml` ← **missed by initial grep; fixed separately**
 - All `.github/workflows/*.yml` except `1password-secret-template.yml` and `pr-linear-sync.yml` (those were already correct)
 
@@ -77,7 +76,7 @@ The entire GitHub Actions automation stack was dark. **18 workflow files + 1 com
 ### Scheduled Automations ("The Chores")
 
 | Workflow | Schedule | Purpose | Status |
-| --- | --- | --- | --- |
+|---|---|---|---|
 | `idaho-leg-scraper.yml` | Daily 6:00 AM MT | Scrapes Idaho Legislature bill data | 🔴 Was dark → fixed |
 | `budget-tracker-csv-export.yml` | Daily 6:30 AM MT | Exports bill data to CSV for Flourish | 🔴 Was dark → fixed |
 | `vault-ingest.yml` | Daily 12:00 UTC | Ingest pipeline stub | 🔴 Was dark → fixed ⚠️ stub only |
@@ -90,7 +89,7 @@ The entire GitHub Actions automation stack was dark. **18 workflow files + 1 com
 ### Event-Driven Automations (PR Lifecycle)
 
 | Workflow | Trigger | Purpose | Status |
-| --- | --- | --- | --- |
+|---|---|---|---|
 | `auto-pr.yml` | Push to `claude/*`, `codex/*`, `gemini/*`, `copilot/*`, `perplexity/*`, `grok/*` | Create PR, classify risk, label | 🔴 Was dark → fixed |
 | `auto-merge.yml` | PR labeled `auto-merge` | Enable squash auto-merge if low-risk | 🔴 Was dark → fixed |
 | `review-response.yml` | PR review submitted (changes_requested or commented) | Pause auto-merge, add `review-required` label, post acknowledgment comment | 🔴 Was dark → fixed |
@@ -103,7 +102,7 @@ The entire GitHub Actions automation stack was dark. **18 workflow files + 1 com
 ### Infrastructure / Webhook
 
 | Workflow | Trigger | Purpose | Status |
-| --- | --- | --- | --- |
+|---|---|---|---|
 | `linear-webhook.yml` | `repository_dispatch: linear-webhook` | Route Linear webhook events to vault scripts | 🔴 Was dark → fixed ⚠️ gateway missing |
 | `pr-linear-sync.yml` | `workflow_call` / `workflow_dispatch` only | Secondary Linear PR sync (1Password path) | ⚠️ Disabled as direct trigger; requires `OP_SERVICE_ACCOUNT_TOKEN` |
 | `review-response.yml` | PR review | (see above) | — |
@@ -111,7 +110,7 @@ The entire GitHub Actions automation stack was dark. **18 workflow files + 1 com
 ### Dependabot
 
 | Ecosystem | Schedule | Relevant? |
-| --- | --- | --- |
+|---|---|---|
 | `github-actions` | Daily | ✅ Should catch version drift (didn't catch `@v6` — investigate) |
 | `pip` | Weekly | ✅ Valid — Python scripts present |
 | `npm` | Daily | ⚠️ No `package.json` — dead weight |
@@ -212,7 +211,7 @@ CLAUDE.md               → @loganfinney27 must approve
 ### PR Label Gates
 
 | Label | Effect |
-| --- | --- |
+|---|---|
 | `auto-merge` | Auto-merge enabled on passing checks |
 | `review-required` | Auto-merge disabled; Logan must review |
 
@@ -229,42 +228,32 @@ CLAUDE.md               → @loganfinney27 must approve
 ## V. ISSUES FOUND (beyond the action version fix)
 
 ### ⚠️ 1. Composite Action Missed by Initial Grep
-
 `.github/actions/setup-vault/action.yml` still had `actions/setup-python@v6`. Used by `sort-audit.yml`, `wayback-preserve.yml`, `janitor-sweep.yml`, `linear-webhook.yml`. **Fixed in this branch.**
 
 ### ⚠️ 2. Dual Linear Sync — Collision Risk (LAF-14 known)
-
 `linear-pr-sync.yml` and `pr-linear-sync.yml` both sync PR → Linear. The second is disabled as a direct trigger to prevent collision. But they use different secret paths:
-
 - `linear-pr-sync.yml` → `secrets.LINEAR_API_KEY` (direct)
 - `pr-linear-sync.yml` → 1Password via `OP_SERVICE_ACCOUNT_TOKEN`
 
 `pr-linear-sync.yml` is effectively dormant until `OP_SERVICE_ACCOUNT_TOKEN` is provisioned. **Only `linear-pr-sync.yml` is doing live Linear syncs.**
 
 ### ⚠️ 3. `vault-ingest.yml` is a Stub
-
 Hardcoded: `SOURCE=system-test`, `CONTENT=Vault ingest pipeline initialized.` This is a placeholder, not a real ingest pipeline. It runs daily, creates an `!/ingest-*.md` file with boilerplate, and commits it. **Not harmful but not useful either.**
 
 ### ⚠️ 4. Linear Webhook Gateway Not Built
-
 `linear-webhook.yml` is ready. The gateway (Cloud Function or similar) that forwards Linear webhooks to GitHub `repository_dispatch` **does not exist**. The workflow will never fire until the gateway is built. This is part of GCP/`affable-bastion` Phase III work.
 
 ### ⚠️ 5. `wayback-preserve.yml` Path Triggers May Never Fire
-
 Triggers only on `SOURCES/`, `GOVERNMENTS/`, `TOPICS/` directory changes. These directories may not exist or may not be actively used. Verify they exist on main.
 
 ### ⚠️ 6. Dependabot Noise (npm + maven)
-
 No `package.json` or Maven files in this vault. Dependabot is scanning two dead ecosystems daily/weekly. Minor but clean-up worthy.
 
 ### ⚠️ 7. Branch Protection Status Unknown
-
 CODEOWNERS is configured but only enforced if branch protection rules are active on `main`. If protection is off, CODEOWNERS is decorative. Verify in GitHub Settings → Branches → `main`.
 
 ### ⚠️ 8. History Divergence — This Branch
-
 `claude/friendly-cartwright` has no common ancestor with remote `main` via `gh pr create`. The worktree was spawned from a diverged base. **You (Copilot) need to resolve this before a PR can be opened.** Options:
-
 - Rebase onto current `origin/main` (preferred)
 - Cherry-pick the commits onto a fresh branch from main
 - Force-push with Logan's approval
@@ -276,7 +265,7 @@ CODEOWNERS is configured but only enforced if branch protection rules are active
 ## VI. RECOMMENDED COPILOT ACTIONS (priority order)
 
 | # | Action | Priority |
-| --- | --- | --- |
+|---|---|---|
 | 1 | Resolve history divergence on `claude/friendly-cartwright` | 🔴 Urgent — blocks everything |
 | 2 | Open PR for `claude/friendly-cartwright` → `main` | 🔴 Urgent — fixes all automation |
 | 3 | Request Logan's review approval (CODEOWNERS) | 🔴 Urgent — required for merge |

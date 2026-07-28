@@ -4,4 +4,4 @@ related:
 - South Dakota
 authority: LOGAN
 ---
-Patriot Front member, South Dakota resident
+Patriot Front member, South Dakota resident 

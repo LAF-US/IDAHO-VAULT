@@ -10,15 +10,15 @@ topic: Tenebrous, Orcus, Dead Gods, Great Modron March
 ## Sources Consulted
 
 - Dungeons & Dragons Lore Wiki, "Orcus (Dungeons & Dragons)"
-  - <https://dungeonsdragons.fandom.com/wiki/Orcus_%28Dungeons_%26_Dragons%29>
+  - https://dungeonsdragons.fandom.com/wiki/Orcus_%28Dungeons_%26_Dragons%29
 - Forgotten Realms Wiki, "Dead Gods"
-  - <https://forgottenrealms.fandom.com/wiki/Dead_Gods>
+  - https://forgottenrealms.fandom.com/wiki/Dead_Gods
 - Dungeons and Dragons Wiki, "Publication: Dead Gods"
-  - <https://dnd-wiki.org/wiki/Publication%3ADead_Gods>
+  - https://dnd-wiki.org/wiki/Publication%3ADead_Gods
 - Planescape Wiki, "Primus"
-  - <https://planescape.fandom.com/wiki/Primus>
+  - https://planescape.fandom.com/wiki/Primus
 - Planescape: I am the Mimir, "Orcus"
-  - <https://mimir.net/cutters/orcus/>
+  - https://mimir.net/cutters/orcus/
 
 ## Working Findings
 

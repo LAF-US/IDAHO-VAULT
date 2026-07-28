@@ -4,4 +4,4 @@ related:
 - Nampa
 authority: LOGAN
 ---
-between Nampa and Caldwell
+between Nampa and Caldwell 

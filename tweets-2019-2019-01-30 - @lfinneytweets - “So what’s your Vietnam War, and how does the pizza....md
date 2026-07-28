@@ -13,7 +13,7 @@ related:
   - lfinneytweets
 ---
 
-“So what’s your Vietnam War, and how does the pizza represent it?”
+“So what’s your Vietnam War, and how does the pizza represent it?” 
 Loving my short film class this semester 😂
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1090471387251306498)

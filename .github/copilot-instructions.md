@@ -84,7 +84,6 @@ This vault uses multiple AI tools. All agents share vault conventions defined in
 **Coordination workflow:** Logan assigns tasks via GitHub Issues with agent labels (`agent:claude-code`, `agent:codex`, `agent:copilot`, `agent:gemini`). Each agent works on its own branch. PRs are the deliverable. Logan reviews and merges from GitHub.
 
 See also:
-
 - `VAULT-CONVENTIONS.md` — Shared vault conventions for all agents
 - `.claude/CLAUDE.md` — Operational instructions for Claude Code (Anthropic)
 - `.gemini/GEMINI.md` — Operational instructions for Gemini agents (Google)

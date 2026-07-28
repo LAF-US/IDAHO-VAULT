@@ -86,14 +86,13 @@ Even in some of the state’s biggest school districts, Nov. 7’s trustee elect
 Three of Idaho’s largest and fastest growing school districts — West Ada, Kuna and Caldwell — illustrate the effect money is having, and isn’t having, on races for volunteer trustee seats.
 
 # West Ada
-
 Tom Moore doesn’t think his campaign strategy is a big deal. He didn’t have time for traditional fundraising, he said in an interview last week, and he didn’t want donors to think he owed them something. To save time, he made one loan to his war chest.
 
 “50 seemed like a good number.”
 
 As in thousand. An almost unheard-of amount in an Idaho school board race.
 
-> Who’s running in West Ada, and how much money they have raised so far:
+> Who’s running in West Ada, and how much money they have raised so far: 
 > Zone 2: Lucas Baclayon, incumbent ($0); Susie Schuetz ($1,232).
 > Zone 4: David Binetti, incumbent ($5,000); Miguel Deluna ($6,165); Mari Gates ($725).
 > Zone 5: Jeremy Cutler ($0); Tom Moore ($50,784); René Ozuna, incumbent ($9,061).
@@ -129,7 +128,6 @@ It’s as low-key a race as it is a low-budget race. Baclayon says she and Schue
 “I feel like that our race is the way it should be, other than I hope no one breaks their ankle,” she said.
 
 # Kuna
-
 Some big-money campaign donors have unclear connections to this Ada County bedroom community.
 
 Tyler and Constance Youngkin of San Ysidro, Calif., have poured $6,000 in the Kuna races. Both have given maximum $1,000 donations to three upstart candidates: Hillary Lowe, Kristi Hardy and [[Michael Thornton[[. Lowe and Hardy have also received $1,000 apiece from Quincy Youngkin, who lists a Kuna address.
@@ -168,7 +166,6 @@ The minority chief of staff at the Idaho House of Representatives, Thomas has dr
 “I would be calling to see what in the heck they were giving me money for.”
 
 # Caldwell
-
 Earlier this year, Caldwell became a flashpoint in an emotional statewide debate over school bathrooms.
 
 At a January meeting, state Sen. Chris Trakel, R-Caldwell, berated trustees over a policy that would have allowed students to use facilities aligned with their gender identity. The board abruptly adjourned this meeting, and later put the proposal on hold during a tense February meeting. Within weeks, Idaho passed a law requiring students to use facilities aligned with their gender assigned at birth — overriding Caldwell’s proposed policy.
@@ -202,4 +199,4 @@ Manning says he didn’t have to raise as much money for his first election in 2
 
 In Caldwell — overlapping with a legislative district with the state’s lowest percentage of registered voters — getting the word out is crucial. “It’s a bit of an information desert out here.”
 
-<https://www.idahoednews.org/top-news/analysis-money-makes-a-big-mark-in-some-school-board-elections/>
+https://www.idahoednews.org/top-news/analysis-money-makes-a-big-mark-in-some-school-board-elections/

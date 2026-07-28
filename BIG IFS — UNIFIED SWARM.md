@@ -62,7 +62,7 @@ Two companion reports delivered in sequence. Part I is the initial landscape sca
 A hypothetical **Unified Swarm** architecture could standardize agent handoffs, state sharing, and infra across tools like Swarm (lightweight Python), CrewAI (orchestration-focused), and Factory.ai (dev-specific Droids)—addressing current silos in communication protocols and deployment.
 
 | Component | Current Fragmentation | Unified Opportunity |
-| --- | --- | --- |
+|---|---|---|
 | **Agent Model** | Swarm: Simple classes; CrewAI: Role-based crews; Factory: Dev Droids | Common interface (e.g., YAML-defined roles + handoff funcs) |
 | **Communication** | Handoffs (Swarm), delegation (CrewAI), tool calls | Mesh/hierarchical protocols with real-time state sync |
 | **Infrastructure** | Client-side (Swarm), cloud APIs (CrewAI), IDE/Slack (Factory) | Hybrid: Edge compute + secure mesh for enterprise scaling |
@@ -123,7 +123,7 @@ From the UNIFIED SWARM perspective, the following patterns are already implicitl
 #### 3.2 Infrastructure Surface
 
 | Dimension | Factory | CrewAI | OpenAI Swarm | Unified Swarm Implication |
-| --- | --- | --- | --- | --- |
+|---|---|---|---|---|
 | **Primary domain** | SDLC / code-centric enterprises | Business workflows & multi-agent automation | Educational multi-agent apps | UNIFIED SWARM must abstract domain and treat each as a pluggable "capability cluster." |
 | **Execution environment** | Cloud SaaS + IDE/CLI/Slack integrations | Cloud / on‑prem serverless AMP | Client-side Python on OpenAI API | Requires cross-environment routing and identity for agents and tasks. |
 | **Memory model** | Persistent enterprise memory across tools and repos | Agent memory, knowledge, and tracing at platform level | Minimal, mostly stateless; memory is external | Unified Swarm must define a shared memory bus or access protocol. |

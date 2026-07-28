@@ -1,7 +1,6 @@
 # Giovanni - The Viridian Gym Leader & Team Rocket Boss
 
 ## Table of Contents
-
 1. [Overview](#overview)
 2. [Game Appearances](#game-appearances)
 3. [Teams and Battle Strategies](#teams-and-battle-strategies)
@@ -30,7 +29,6 @@
 ## Game Appearances
 
 ### Generation I
-
 - **Games**: Pokémon Red, Blue, Green (Japan), Yellow
 - **Role**: Team Rocket boss, Viridian Gym Leader (8th Gym)
 - **Location**: Viridian Gym (initially locked)
@@ -39,26 +37,22 @@
 - **Notable**: After defeat, disbands Team Rocket and offers Earth Badge as Gym Leader
 
 ### Generation II
-
 - **Games**: Pokémon Gold, Silver, Crystal
 - **Role**: Former Team Rocket boss (no longer Gym Leader)
 - **Location**: Former Team Rocket HQ in Celadon City
 
 ### Generation III (Remakes)
-
 - **Games**: Pokémon FireRed, LeafGreen
 - **Role**: Same as Generation I
 - **Team**: Same as Generation I
 
 ### Generation VII (Reimagining)
-
 - **Games**: Pokémon: Let's Go, Pikachu! and Let's Go, Eevee!
 - **Role**: Viridian Gym Leader
 - **Team**: Sandshrew (Lv. 42), Onix (Lv. 42), Rhyhorn (Lv. 45), Dugtrio (Lv. 44), Rhydon (Lv. 47)
 - **Reward**: Earth Badge, TM48 (Dig)
 
 ### Other Appearances
-
 - **Pokémon Black 2/White 2**: World Tournament Champions Tournament
 - **Pokémon Ultra Sun/Ultra Moon**: Leader of Team Rainbow Rocket
 - **Pokémon GO**: Leader of Team GO Rocket
@@ -69,9 +63,8 @@
 ## Teams and Battle Strategies
 
 ### Core Team
-
 | Game | Pokémon | Level | Type | Moves |
-| ------ | --------- | ------- | ------ | ------- |
+|------|---------|-------|------|-------|
 | RBY/FRLG/HGSS | Rhyhorn | 45 | Ground/Rock | Stomp, Tail Whip, Fury Attack, Horn Drill |
 | RBY/FRLG/HGSS | Dugtrio | 42 | Ground | Sand Attack, Dig, Slash, Earthquake |
 | RBY/FRLG/HGSS | Nidoqueen | 44 | Poison/Ground | Tackle, Double Kick, Poison Sting, Bite |
@@ -84,20 +77,17 @@
 | LGPE | Rhydon | 47 | Ground/Rock | Stomp, Tail Whip, Fury Attack, Earthquake |
 
 ### Signature Pokémon
-
 - **Persian**: Most iconic, often seen with him
 - **Rhydon**: Highest-level, most powerful
 - **Nidoqueen/Nidoking**: Poison/Ground coverage
 
 ### Strategy
-
 - Ground-type offense with STAB Earthquake
 - Nidoqueen/Nidoking for Poison coverage
 - High Defense on Rhydon/Rhyhorn
 - Speed control with Dugtrio
 
 ### Counters
-
 - Water, Grass, Ice vs Ground-types
 - Fighting, Psychic vs Nidoqueen/Nidoking
 - Status moves (paralysis/sleep)
@@ -107,11 +97,10 @@
 ## Anime and Manga Appearances
 
 ### Main Anime
-
 - **Debut**: Episode 63 "The Battle of the Badge"
 - **Role**: Team Rocket boss, former Viridian Gym Leader
 - **Voice**: Shōzō Iizuka (Japanese), various English VAs (often vocoder-altered)
-- **Notable**:
+- **Notable**: 
   - Island of the Giant Pokémon: Owns Pokémon Land theme park
   - The Battle of the Badge: Revealed as Viridian Gym Leader, battles Gary
   - The Scheme Team: Permanently resigns as Gym Leader
@@ -120,12 +109,10 @@
 - **Design**: Tall, black suit with high-collared coat, often in shadow
 
 ### Pokémon Adventures Manga
-
 - **Role**: Main antagonist
 - **Notable**: Father of Silver (rival), leads Team Rocket against Red/Blue
 
 ### Pokémon Pocket Monsters Manga
-
 - **Role**: Antagonist, Team Rocket boss
 
 ---
@@ -133,7 +120,6 @@
 ## Personality and Design
 
 ### Personality
-
 - Ruthless, intelligent, proud
 - Mastermind behind Team Rocket operations
 - Maintains dignity even in defeat
@@ -141,14 +127,12 @@
 - Honorable as Gym Leader
 
 ### Design
-
 - Black suit, spiked hair (Gen I sprite)
 - Updated sprite (Gen III)
 - 3D model (Gen VII)
 - Anime: Tall, black suit, high-collared coat
 
 ### Name Origin
-
 - Sakaki (サカキ) = "Ginkgo tree" in Japanese
 
 ---
@@ -156,7 +140,6 @@
 ## Trivia
 
 ### Game
-
 - Only character who is both Gym Leader and villainous team boss
 - Viridian Gym initially locked
 - Disbands Team Rocket after losing to Red
@@ -165,7 +148,6 @@
 - Team GO Rocket in Pokémon GO
 
 ### Anime
-
 - Voice modulation in early appearances
 - Pokémon Land theme park
 - Mewtwo connection
@@ -174,14 +156,12 @@
 - Father of Silver in Adventures manga
 
 ### Cultural Impact
-
 - Iconic villain, memes
 - Merchandise, spin-offs
 
 ---
 
 ## References
-
 - Bulbapedia: [Giovanni (game)](https://bulbapedia.bulbagarden.net/wiki/Giovanni), [Giovanni (anime)](https://bulbapedia.bulbagarden.net/wiki/Giovanni_(anime))
 - Pokémon Wiki, GameRant, ScreenRant
 

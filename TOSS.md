@@ -50,7 +50,6 @@ date: [today's date YYYY-MM-DD]
 ```
 
 **1. IDENTITY**
-
 - Your name/designation
 - Your capability tier (Direct Write / Multi-Repo Admin / Draft Only / Read-Analysis)
 - Your assigned role and scope
@@ -68,7 +67,6 @@ Which other conversations or agents did you interact with (via Logan)? What was 
 
 **5. FLAGS**
 Anything urgent Logan needs to know. Use severity levels:
-
 - CRITICAL — blocks downstream work
 - HIGH — needs Logan's attention soon
 - MEDIUM — informational, document and continue

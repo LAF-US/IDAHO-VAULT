@@ -19,7 +19,7 @@ The phrase "there are unknown unknowns" was made famous by U.S. Secretary of Def
 ## The Four Quadrants
 
 | | **Known** | **Unknown** |
-| --- | --- | --- |
+|---|---|---|
 | **Known** | Things you know you know | Things you know you don't know |
 | **Unknown** | Things you don't know you know | Things you don't know you don't know |
 
@@ -39,7 +39,6 @@ The framework predates Rumsfeld — it draws on the **Johari Window** (Joseph Lu
 ## Applications
 
 Originally defense/intelligence. Now widely used in:
-
 - Business risk assessment
 - Project management
 - Personal epistemology

@@ -9,7 +9,7 @@ Listen to this article
 
 NEW YORK (AP) — are rising following an encouraging report on inflation that could help the keep cutting next year. A strong profit report from also helped halt their sharp slides Thursday, at least for now. The S&P 500 rose 1.1%, coming off its fourth straight loss. The Dow Jones Industrial Average climbed 406 points, and the Nasdaq composite added 1.5%. Some relief came from a report showing that inflation was less bad last month than economists expected. Micron, the seller of memory and storage for computers, soared after reporting stronger profit and revenue than expected.
 
-##### At a Glance
+##### At a Glance:
 
 - U.S. stocks gained after inflation came in lower than expected
 - Micron surged on record profit and revenue driven by AI demand

@@ -19,7 +19,7 @@ Rewrite mode creates a **new project** with the desired target technology stack 
 ## Key Differences from Upgrade Mode
 
 | Aspect | Upgrade Mode | Rewrite Mode |
-| -------- | ------------- | -------------- |
+|--------|-------------|--------------|
 | **Project** | Modify existing | Create new |
 | **Code History** | Preserved | Fresh start |
 | **Dependencies** | Incremental upgrade | Direct target version |
@@ -32,7 +32,7 @@ Rewrite mode creates a **new project** with the desired target technology stack 
 Rewrite-specific skills are invoked at different phases of the standard workflow:
 
 | Skill | Phase | Invoked By |
-| ------- | ------- | ------------ |
+|-------|-------|------------|
 | [Business Logic Extraction](SKILL-business-logic-extraction.md) | Plan Phase 0 (Research) | Planning skill |
 | [Target Scaffolding](../guidelines/spring-boot-scaffolding/SKILL.md) | Implementation | Implement skill (as guideline) |
 | [Functional Equivalence](SKILL-functional-equivalence.md) | Completeness Check | Completeness skill |
@@ -83,7 +83,6 @@ Rewrite-specific skills are invoked at different phases of the standard workflow
 ## Rewrite Checklist
 
 ### Phase 1: Analysis
-
 - [ ] Complete business logic inventory
 - [ ] Document all external integrations
 - [ ] Identify cross-cutting concerns
@@ -91,7 +90,6 @@ Rewrite-specific skills are invoked at different phases of the standard workflow
 - [ ] Catalog API contracts (if applicable)
 
 ### Phase 2: Scaffolding
-
 - [ ] Create target project structure
 - [ ] Configure build system (Maven/Gradle)
 - [ ] Set up target JDK version
@@ -99,7 +97,6 @@ Rewrite-specific skills are invoked at different phases of the standard workflow
 - [ ] Configure CI/CD pipeline skeleton
 
 ### Phase 3: Implementation
-
 - [ ] Implement domain entities
 - [ ] Implement business logic services
 - [ ] Implement controllers/API layer
@@ -107,7 +104,6 @@ Rewrite-specific skills are invoked at different phases of the standard workflow
 - [ ] Implement integration points
 
 ### Phase 4: Verification
-
 - [ ] Unit tests for all business logic
 - [ ] Functional equivalence testing
 - [ ] Integration testing
@@ -115,7 +111,6 @@ Rewrite-specific skills are invoked at different phases of the standard workflow
 - [ ] Security review
 
 ### Phase 5: Validation
-
 - [ ] All business logic units verified
 - [ ] No functional gaps
 - [ ] Documentation complete

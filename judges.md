@@ -4,4 +4,4 @@ related:
 - magistrate judges
 authority: LOGAN
 ---
-district judges & magistrate judges
+district judges & magistrate judges 

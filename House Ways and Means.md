@@ -16,15 +16,12 @@ related:
 authority: LOGAN
 ---
 Printing committee, does not hold hearings to advance legislation.
-
-- House Majority Leader, House Assistant Majority Leader, House Majority Caucus Chair
-- House Minority Leader, House Assistant Minority Leader, House Minority Caucus Chair
-- chairman appointed by the Speaker
+ - House Majority Leader, House Assistant Majority Leader, House Majority Caucus Chair
+ - House Minority Leader, House Assistant Minority Leader, House Minority Caucus Chair 
+ - chairman appointed by the Speaker
 
 # Roster
-
 ## 2023 Members
-
 - Jon Weber Chair
 - Megan Blanksma
 - Sage Dixon

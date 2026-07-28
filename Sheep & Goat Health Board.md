@@ -5,4 +5,4 @@ related:
 - sheep
 ---
 
-sheep & goats
+sheep & goats 

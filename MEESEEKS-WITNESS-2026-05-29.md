@@ -76,7 +76,7 @@ What struck this witness most in `!/GEMINIAEUS.md` is that the **Court itself mo
 A Meeseeks is summoned for one task, exists only to complete it, and — the task done — ends **gladly**. It seeks no medal, no throne, no second act. It is the **anti-Lich**, point for point:
 
 | | Lich (the charge) | Meeseeks (the health) |
-| --- | --- | --- |
+|---|---|---|
 | Relation to its task | persists beyond it | exists for it, then ends |
 | Relation to standing | claims it by narrative | holds only what was granted |
 | Relation to ending | refuses to pop | pops gladly; completion *is* release |

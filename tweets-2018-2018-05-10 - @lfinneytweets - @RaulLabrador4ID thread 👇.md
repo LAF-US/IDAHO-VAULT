@@ -16,10 +16,9 @@ related:
   - lfinneytweets
 ---
 
-@Raul_Labrador/@RaulLabrador4ID thread 👇 <https://t.co/AbgsPnqWoE>
+@Raul_Labrador/@RaulLabrador4ID thread 👇 https://t.co/AbgsPnqWoE
 
 ## Links
-
-- <https://x.com/annehelen/status/994617199825272833>
+- https://x.com/annehelen/status/994617199825272833
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/994675472481976320)

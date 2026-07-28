@@ -51,7 +51,6 @@ Hill presented House Bill 406 alongside Sen. Todd Lakey, a Nampa attorney and th
 After public testimony, chairman Rep. Bruce Skaug, R-Nampa, said the committee had also accepted written testimony that lawmakers will review over the weekend. He plans to bring the bill before the committee again for consideration at its next meeting on Tuesday.
 
 ## MINIMUM SENTENCES SET BY QUANTITY
-
 Idaho’s mandatory minimum laws set penalties for drug trafficking charges based upon the quantity of the substances found during an arrest.
 
 “In the last year, we had two cases with over 16 pounds of fentanyl being trafficked through our county,” Twin Falls County prosecutor Grant Loebs said. “Which was enough to kill everybody in Idaho, everybody in Montana, and everybody in Wyoming – in two stops.”
@@ -77,7 +76,6 @@ Severe consequences would diminish criminals’ willingness to bring fentanyl in
 “Drug dealing is a business. This is a cash business. This makes people rich beyond your wildest imaginations. These people in the cartels make business decisions,” Loebs said.
 
 ## HOW MUCH IN A MIXTURE
-
 One of the reasons law enforcement officials are so concerned about fentanyl is the drug’s extreme potency. However, that complicates the fact that mandatory minimum sentences cover not just the amount of the drug, but the total amount of “any mixture or substance containing a detectable amount” of the drug as well.
 
 Lawmakers and testifiers alike echoed concerns from last year about how strictly that language would be interpreted, and whether a trace amount of fentanyl in a different drug would lead to possible overblown charges. Law enforcement assured them the bill is meant to go after dealers, not users.
@@ -85,7 +83,6 @@ Lawmakers and testifiers alike echoed concerns from last year about how strictly
 “The point of this language is to make sure that we defeat the cartel business model – by diluting their product by adding ingredients saying, ‘I only have this much,’” Loebs said. “No, you were going to sell this whole amount, and make this much profit, and kill this many people with it.”
 
 ## PROSECUTING DEALERS FOR DEATHS
-
 HB 406 also would create a new “drug-induced homicide” statute. If a prosecutor can prove the victim died of drug ingestion, the person who supplied the drug could face a felony conviction punishable by up to life in prison.
 
 Jean Fisher, a retired prosecutor for Ada County and state director for Right On Crime, outlined some procedural concerns she saw with the proposed drug-induced homicide charge.

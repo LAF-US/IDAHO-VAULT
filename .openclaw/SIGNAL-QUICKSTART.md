@@ -12,7 +12,6 @@
 ### 1. Install signal-cli
 
 Run in Command Prompt or PowerShell:
-
 ```batch
 scoop bucket add extras
 scoop install signal-cli
@@ -57,7 +56,6 @@ Run: `!\setup-signal-dirs.bat`
 ## Verification
 
 Test signal-cli is working:
-
 ```batch
 signal-cli --version
 signal-cli -u +12065551234 listContacts

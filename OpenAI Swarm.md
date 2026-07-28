@@ -39,13 +39,11 @@ Swarm favors observability and testability over heavy infrastructure, making it 
 In the BIG IFS — UNIFIED SWARM framework, OpenAI Swarm is identified as the **pattern library and testing ground** for simple, transparent multi-agent behaviors and handoffs—especially useful for prototyping new swarm routines before embedding them into Factory or CrewAI flows.
 
 Key architectural notes from the research:
-
 - Swarm's **handoff model** (explicit intent + state transfer between agents) is the proposed substrate for the Unified Swarm cross-platform handoff protocol (Big IF 3).
 - Its stateless, minimal design minimizes cascade risk—aligns with the VAULTED A&I monster/dragon containment principles documented in ARCHITECTURE & INFRASTRUCTURE REPORT and CIVILIZATION-SCALE ARCHITECTURE REPORT.
 - `swarm/app.py` in this vault is a minimal implementation inspired by these patterns.
 
 Open questions for R&D evaluation:
-
 - Swarm is educational/experimental per OpenAI's own framing—what production hardening is required before any IDAHO-VAULT dependency?
 - Handoff protocol formalization: can the YAML-defined agent schema in `!/VAULT-TEMPLATES.md` serve as the common descriptor?
 

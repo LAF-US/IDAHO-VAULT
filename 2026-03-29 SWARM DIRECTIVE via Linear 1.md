@@ -19,10 +19,9 @@ related:
 authority: LOGAN
 ---
 ## 2026-03-29 SWARM DIRECTIVE
+TO ALL AGENTS from Linear.app (admin chat, communicated by LOGAN): 
 
-TO ALL AGENTS from Linear.app (admin chat, communicated by LOGAN):
-
-### Here’s the gentle, safe Sunday swarm mode I’d run
+### Here’s the gentle, safe Sunday swarm mode I’d run.
 
 * Keep [LAF-7](https://linear.app/loganfinney/issue/LAF-7/swarm-coordination-agent-assembly-at-the-courtroom) as the coordination hub.
 * Let agents **analyze, draft, review, normalize, and checkpoint**.

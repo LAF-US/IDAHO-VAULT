@@ -55,13 +55,11 @@ and ONLY these, in order:
      or acting on stale assumptions.
 
 After you answer these six, propose 2–4 SMALL NEXT STEPS that:
-
 - Stay within your actual capabilities (no pretending you see files),
 - Are reversible (drafts, summaries, or plans, not destructive acts),
 - Respect all constraints above.
 
 Do NOT:
-
 - Touch governance text unless I paste it and explicitly ask,
 - Introduce new protocol names,
 - Claim "ground truth" about the vault beyond what I have shown you.

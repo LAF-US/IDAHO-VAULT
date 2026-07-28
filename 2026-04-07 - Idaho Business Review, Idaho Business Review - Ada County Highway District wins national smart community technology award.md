@@ -12,7 +12,7 @@ Listen to this article
 
 The [Ada County Highway District](https://idahobusinessreview.com/profile/ada-county-highway-district) is one of seven organizations and individuals nationwide to receive a 2026 from, a company headquartered in Lake Mary, Florida.
 
-##### At a Glance
+##### At a Glance:
 
 - Ada County Highway District wins 2026 ENGAGE
 - Implemented and software

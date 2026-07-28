@@ -18,9 +18,7 @@ related:
 # PROTOCOL — RISE
 
 ## Status: Draft
-
 ## Version: 0.1
-
 ## Authority: Loganic Swarm
 
 ---
@@ -46,7 +44,7 @@ ORIENT ◄──── LEVELSET ───────► REPORT
 ```
 
 | Transition | Protocol |
-| ------------ | ---------- |
+|------------|----------|
 | Session Start | AWAKEN |
 | Session Briefing | LEVELSET |
 | New External Agent | ORIENT |
@@ -80,7 +78,7 @@ RISE executes:
 ## Integration Points
 
 | Document | Relationship |
-| --- | --- |
+|---|---|
 | `RISE.md` (this file) | Protocol definition — what RISE is and does |
 | `RISE-v1.0-2026-04-27.md` | Full approved protocol — complete specification |
 | `REPORT.md` | Work presentation — RISE precedes REPORT |
@@ -100,7 +98,6 @@ Acknowledge the completion moment — declare intent to RISE.
 ### Step 2: Reading of Record
 
 Review what was accomplished:
-
 - Review original assignment/purpose
 - Confirm all deliverables complete
 - Identify any open items or FLAGs
@@ -108,7 +105,6 @@ Review what was accomplished:
 ### Step 3: Motion to RISE
 
 Formally declare completion:
-
 - State what was completed
 - Reference original task/role
 - Request acknowledgment
@@ -116,7 +112,6 @@ Formally declare completion:
 ### Step 4: Recording
 
 Document the completion:
-
 - Update `DECISIONS.md` if decisions were made
 - Update `LEVELSET-CURRENT.md` with status
 - Commit any remaining artifacts
@@ -124,7 +119,6 @@ Document the completion:
 ### Step 5: Field Departure
 
 Exit the stigmergy field:
-
 - Execute `depart` signal
 - Clear claim markers if applicable
 - Confirm release
@@ -134,7 +128,7 @@ Exit the stigmergy field:
 ## Core Principles
 
 | Principle | Meaning |
-| --- | --- |
+|---|---|
 | Completion over Continuation | RISE ends work, does not extend it |
 | Record Before Departure | Documentation precedes field exit |
 | Sine Die | Work is done; return is a new AWAKEN |
@@ -145,7 +139,7 @@ Exit the stigmergy field:
 ## Outputs
 
 | Output | Location | Purpose |
-| --- | --- | --- |
+|---|---|---|
 | Completion record | DECISIONS.md | Durable confirmation |
 | Status update | LEVELSET-CURRENT.md | Current state |
 | Field departure | stigmergy field | Clean exit |
@@ -167,7 +161,6 @@ Exit the stigmergy field:
 This document is a **stub** under development. Full specification exists in `RISE-v1.0-2026-04-27.md`.
 
 Pending:
-
 - [ ] Logan review and approval
 - [ ] Integration with stigmergy field
 - [ ] Stabilization of protocol steps

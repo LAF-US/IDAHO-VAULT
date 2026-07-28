@@ -18,10 +18,9 @@ related:
   - idleg
 ---
 
-In response to the question of the phrase “political right” being over-interpreted by activist courts, Burgoyne referenced the former civil bans in the Idaho constitution on Mormons voting, holding office and serving on juries. #idpol #idleg <https://t.co/qV7owHZILK>
+In response to the question of the phrase “political right” being over-interpreted by activist courts, Burgoyne referenced the former civil bans in the Idaho constitution on Mormons voting, holding office and serving on juries. #idpol #idleg https://t.co/qV7owHZILK
 
 ## Links
-
-- <https://x.com/NateBrownNews/status/1222559880277422080>
+- https://x.com/NateBrownNews/status/1222559880277422080
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1222563347352051713)

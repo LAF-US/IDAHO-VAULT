@@ -48,7 +48,6 @@ date: 2026-06-02
 **[reading]** That scene is a parable of **category error**, and it generalizes far past Westeros: *applying the right response to the **wrong threat-model** doesn't merely fail — it **multiplies the threat.*** The men treat a wight as **"a body to be killed"** (cut the vital points, sever the limbs, drop it) when it is actually **"animate matter to be destroyed"** (burn it whole). Against the true model, every "correct" swing is **counter-productive**: dismemberment converts **one** threat into **many** — five moving pieces instead of one, a hand that hunts on its own. The wrong frame turns your competence into a force-multiplier *for the enemy.*
 
 **The compounding happens at two levels, and they stack:**
-
 - **Strategic misidentification** — the realm files the Others under *legend* ("grumkins and snarks"), so it never studies them, never stockpiles dragonglass, never funds the Wall. The threat grows *because it was miscategorized as no-threat* (→ the Maesters node, the Others & Long Night node).
 - **Tactical mistreatment** — even when men finally face a wight, reflex applies the **familiar** model (steel, decapitation), and the familiar model *feeds* it. Misdiagnosis isn't neutral; it **arms the thing you're fighting.**
 
@@ -63,7 +62,7 @@ The wight's severed hand is the exact **inversion**: a hand with **no head at al
 That gives three modes of "a part acting for a body," and they map the vault's own doctrine:
 
 | Figure | The head | Verdict |
-| --- | --- | --- |
+|---|---|---|
 | **Hand of the King** | a *living* head, acting by warrant | **legitimate delegation** — a mask given, worn in service, recallable |
 | **The crawling hand** (wight) | **no head** — will severed, driven by an alien cold | **orphaned / hijacked agency** — acts without warrant; cannot be recalled |
 | **The Lich** | a head that *refuses to die* | **usurped continuity** — the GEMINIAEUS / Type I Lich |

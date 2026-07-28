@@ -49,25 +49,25 @@ I’M NOT OVER THE “MOON” FOR A SPEAKER JORDAN - IDAHO DESERVES BETTER
 Washington, October 20, 2023
 WASHINGTON— Today, Idaho Congressman Mike Simpson wrote an op-ed in response to the Idaho Republican Party’s recent statement on the U.S. House of Representatives Speaker of the House vote.  
 
-I’m Not Over the “Moon” for a Speaker Jordan - Idaho Deserves Better
+I’m Not Over the “Moon” for a Speaker Jordan - Idaho Deserves Better 
 
-By Rep. Mike Simpson
+By Rep. Mike Simpson     
 
-The full op-ed is available below.
+The full op-ed is available below.      
 
 The nation has watched as the failed efforts to replace former Speaker McCarthy resulted in a House full of chaos. This dysfunction stems from the selfish actions the eight so-called Republicans initiated when they voted to vacate our Republican Speaker of the House. Their actions paralyzed the House’s legislative business and left Republicans looking like we are incapable of governing.  
 
-Like the four percent of Republicans who voted with every Democrat to oust Speaker McCarthy, there’s a small percentage of Idaho “Republicans” out there who have made some claims regarding my votes against Congressman Jim Jordan, and I’d like to set the record straight.
+Like the four percent of Republicans who voted with every Democrat to oust Speaker McCarthy, there’s a small percentage of Idaho “Republicans” out there who have made some claims regarding my votes against Congressman Jim Jordan, and I’d like to set the record straight.   
 
 The Idaho Republican Party is pushing a false narrative that I am not representing my constituents based on not voting for Mr. Jordan. Perhaps Chairwoman Dorothy Moon has not lived in Idaho long enough to understand how important things like agriculture, delisting wolves, our nation’s military, and the Idaho National Laboratory (INL) are for our state.  
 
-I came to U.S. Congress to fight for Idahoans’ priorities and ensure our farmers, ranchers, INL workers, and most rural community members have a voice. As Idaho’s only appropriator, I have a unique opportunity to fight for Idaho priorities and bring your hard-earned tax dollars back to Idaho instead of going to blue states like California or New York.
+I came to U.S. Congress to fight for Idahoans’ priorities and ensure our farmers, ranchers, INL workers, and most rural community members have a voice. As Idaho’s only appropriator, I have a unique opportunity to fight for Idaho priorities and bring your hard-earned tax dollars back to Idaho instead of going to blue states like California or New York.   
 
-This raises the question: If Congressman Simpson claims to be conservative, why doesn’t he support his colleague Jim Jordan for Speaker? The answer is simple. I cannot – and will not – support a Speaker who has repeatedly taken positions against Idaho’s best interests. However, Chairwoman Moon made it clear this is the kind of Speaker she would stand behind.
+This raises the question: If Congressman Simpson claims to be conservative, why doesn’t he support his colleague Jim Jordan for Speaker? The answer is simple. I cannot – and will not – support a Speaker who has repeatedly taken positions against Idaho’s best interests. However, Chairwoman Moon made it clear this is the kind of Speaker she would stand behind.   
 
-If I took Chairwoman Moon’s gracious advice, I would support a Speaker who has continuously voted in opposition to critical funding for operations and continued research at the INL. The INL creates thousands of jobs and generated over $120 million for Idaho’s state and local tax revenue last year alone, keeping the tax burden low for Idahoans.
+If I took Chairwoman Moon’s gracious advice, I would support a Speaker who has continuously voted in opposition to critical funding for operations and continued research at the INL. The INL creates thousands of jobs and generated over $120 million for Idaho’s state and local tax revenue last year alone, keeping the tax burden low for Idahoans. 
 
-Chairwoman Moon may not be aware of the importance natural resources and public lands issues have in Idaho, but as Chairman of the House Interior and Environment Subcommittee, I can confirm the impact is significant.
+Chairwoman Moon may not be aware of the importance natural resources and public lands issues have in Idaho, but as Chairman of the House Interior and Environment Subcommittee, I can confirm the impact is significant.   
 
 I have worked hard to ensure the federal government fully funds the Payments in Lieu of Taxes (PILT) program. PILT is perhaps one of the most important programs for our rural counties in Idaho. Under this program, the federal government provides offsetting funds to local governments that lose property tax revenue due to the existence of tax-exempt federal lands in their jurisdiction. PILT allows counties like Custer County - a county that is 94% federal land - to receive critical funding that supports local schools, police departments, transportation infrastructure, and health services. It’s important to note that Mr. Jordan repeatedly voted against this funding, yet Chairwoman Moon supports his bid for Speaker.  
 
@@ -75,13 +75,13 @@ I have also worked to secure full funding for wildfire suppression activities, f
 
 Idaho is home to Gowen Field and Mountain Home Air Force Base, hosting thousands of our service members. I will always support our service members – especially those stationed in Idaho. However, Mr. Jordan has repeatedly voted against critical funding for these facilities and overall pay raises for our troops. It is disappointing to see the Chairwoman supports a Speaker who has taken these actions against our brave men and women in the military.  
 
-Most Idahoans – evidently not all – understand the impact a prohibition on an Endangered Species Act listing of the greater sage grouse has on Idahoans' ability to work, live, and recreate on public land and the positive impact de-listing the gray wolf has had on our state. I passed legislation that de-listed the gray wolf, and Jim Jordan voted against this bill. If I took the Chairwoman's advice, many of these provisions would never come before the House for a vote.
+Most Idahoans – evidently not all – understand the impact a prohibition on an Endangered Species Act listing of the greater sage grouse has on Idahoans' ability to work, live, and recreate on public land and the positive impact de-listing the gray wolf has had on our state. I passed legislation that de-listed the gray wolf, and Jim Jordan voted against this bill. If I took the Chairwoman's advice, many of these provisions would never come before the House for a vote. 
 
-If I listened to Chairwoman Moon, I would support a Speaker who has never voted for a Farm Bill. Idaho is home to nearly 25,000 farms and ranches, and the Farm Bill is critical for Idaho’s agriculture communities. Most importantly, the Farm Bill protects the United States Sugar Program, which operates at no cost to the taxpayer and protects Idaho’s sugar beet producers.
+If I listened to Chairwoman Moon, I would support a Speaker who has never voted for a Farm Bill. Idaho is home to nearly 25,000 farms and ranches, and the Farm Bill is critical for Idaho’s agriculture communities. Most importantly, the Farm Bill protects the United States Sugar Program, which operates at no cost to the taxpayer and protects Idaho’s sugar beet producers.   
 
 Chairwoman Moon insists I would rather play political games inside the “Capital Beltway” than focus on my constituents. Or that my time in DC has made me “lose sight of the real work.” If that were the case, I wouldn’t be laser-focused on issues like solving Idaho’s agriculture industry workforce crisis. Rest assured, this is not the sexiest topic in Congress.  
 
-The agriculture workforce crisis may not get me on Fox News every night, but it is an issue that seriously impacts our state and food prices nationally. That’s why I crafted and then passed the Farm Workforce Modernization Act in two consecutive Congresses. This legislation has support from more than 250 farmer and producer groups nationwide like the Idaho Dairymen’s Association, Idaho Cattleman’s Association, Idaho Bankers Association, Amalgamated Sugar Company, and many others. Perhaps Chairwoman Moon is unaware that this is the number one issue facing Idaho’s agriculture industry, and the Speaker she would like me to support has voted against this critical legislation twice.
+The agriculture workforce crisis may not get me on Fox News every night, but it is an issue that seriously impacts our state and food prices nationally. That’s why I crafted and then passed the Farm Workforce Modernization Act in two consecutive Congresses. This legislation has support from more than 250 farmer and producer groups nationwide like the Idaho Dairymen’s Association, Idaho Cattleman’s Association, Idaho Bankers Association, Amalgamated Sugar Company, and many others. Perhaps Chairwoman Moon is unaware that this is the number one issue facing Idaho’s agriculture industry, and the Speaker she would like me to support has voted against this critical legislation twice. 
 
 It is abundantly clear the next Speaker of the House could seriously impact Idahoans' way of life. Fortunately, I know my constituents want me to continue fighting for issues that are important to them. I cannot vote for a Speaker who does not support our state. And I will not take Chairwoman Moon’s ill-advised input when I have been fighting for Idaho longer than she has lived in the state.  
 

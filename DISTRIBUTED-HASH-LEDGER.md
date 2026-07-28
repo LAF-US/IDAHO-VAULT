@@ -172,7 +172,6 @@ This infrastructure draws from research in [explain LangChain.md](explain LangCh
 ### Verification Workflow — LEVELSET → SYNC → VERIFY → REPORT
 
 ```
-
 LEVELSET (session start)
     │
     ├─▶ SNIFF ──▶ PULL from providers ──▶ Context load
@@ -182,7 +181,6 @@ LEVELSET (session start)
     ├─▶ CHECK ──▶ Verify across providers ──▶ rclone check
     │
     └─▶ REPORT ──▶ Emit verified state ──▶ DISMISS
-
 ```
 
 ### Distributed Verification Command Reference

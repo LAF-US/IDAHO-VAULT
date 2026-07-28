@@ -4,4 +4,4 @@ related:
 - water
 authority: LOGAN
 ---
-water and gravity; bigger than creeks
+water and gravity; bigger than creeks 

@@ -8,5 +8,5 @@ related:
 - Pollock
 authority: LOGAN
 ---
-- House member for Legislative District 7
-- son of Paul Shepherd
+- House member for Legislative District 7 
+- son of Paul Shepherd 

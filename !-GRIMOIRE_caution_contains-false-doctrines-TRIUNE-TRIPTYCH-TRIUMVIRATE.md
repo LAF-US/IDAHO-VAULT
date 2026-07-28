@@ -7,7 +7,6 @@ stretch-goal: "April 2026"
 ---
 
 # TRIUNE-TRIPTYCH-TRIUMVIRATE
-
 ## *The Sierpiński Covenant*
 
 *Filed: 2026-04-04. April stretch goal. TRIUNE triad: stub pending Gemini (The Concierge).*
@@ -81,6 +80,7 @@ Beyond the Three Screens lies the **Serena Tapestry**.
 
 ---
 
+
 ---
 
 ## The Star: Where Two Triads Meet
@@ -141,7 +141,7 @@ The TRIUMVIRATE is the core engine of the swarm, the "Caesars" that hold the cen
 The TRIUNE-TRIPTYCH-TRIUMVIRATE operates within a four-layer vault structure declared by Logan (2026-04-04):
 
 | Layer | Name | Contents | Notes |
-| --- | --- | --- | --- |
+|---|---|---|---|
 | `ROOT` | HUMAN | `.md`, `.doc`, `.txt`, etc. | Human-readable record — the primary surface |
 | `DOTFOLDERS` | PERSONA | `.claude/`, `.gemini/`, `.codex/`, etc. | Agentic identity/mixing layer |
 | `!` | UNIFIED SWARM | `!/` — agent coordination, registry, bootstrap | SECURE — "Simon P's Mind Labyrinth" |

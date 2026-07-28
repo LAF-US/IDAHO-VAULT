@@ -119,9 +119,9 @@ Here are all the options for configuring a local MCP server.
 | --- | --- | --- | --- |
 | `type` | String | Y | Type of MCP server connection, must be `"local"`. |
 | `command` | Array | Y | Command and arguments to run the MCP server. |
-| `environment` | Object | | Environment variables to set when running the server. |
-| `enabled` | Boolean | | Enable or disable the MCP server on startup. |
-| `timeout` | Number | | Timeout in ms for fetching tools from the MCP server. Defaults to 5000 (5 seconds). |
+| `environment` | Object |  | Environment variables to set when running the server. |
+| `enabled` | Boolean |  | Enable or disable the MCP server on startup. |
+| `timeout` | Number |  | Timeout in ms for fetching tools from the MCP server. Defaults to 5000 (5 seconds). |
 
 ---
 
@@ -155,10 +155,10 @@ The `url` is the URL of the remote MCP server and with the `headers` option you 
 | --- | --- | --- | --- |
 | `type` | String | Y | Type of MCP server connection, must be `"remote"`. |
 | `url` | String | Y | URL of the remote MCP server. |
-| `enabled` | Boolean | | Enable or disable the MCP server on startup. |
-| `headers` | Object | | Headers to send with the request. |
-| `oauth` | Object | | OAuth authentication configuration. See [OAuth](#oauth) section below. |
-| `timeout` | Number | | Timeout in ms for fetching tools from the MCP server. Defaults to 5000 (5 seconds). |
+| `enabled` | Boolean |  | Enable or disable the MCP server on startup. |
+| `headers` | Object |  | Headers to send with the request. |
+| `oauth` | Object |  | OAuth authentication configuration. See [OAuth](#oauth) section below. |
+| `timeout` | Number |  | Timeout in ms for fetching tools from the MCP server. Defaults to 5000 (5 seconds). |
 
 ---
 

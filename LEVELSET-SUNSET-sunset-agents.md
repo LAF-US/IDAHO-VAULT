@@ -45,7 +45,7 @@ authority: LOGAN
 ## 2. WHAT I'VE DONE
 
 | File | Type | Commit | Action |
-| ------ | ------ | -------- | -------- |
+|------|------|--------|--------|
 | `!ADMINISTRATION/AGENT-REGISTRY.md` | Administrative | [latest] | Created — central registry of all agents with sunset status tracking |
 | `!ADMINISTRATION/SUNSET-PROCESS.md` | Administrative | [latest] | Created — formal sunset workflow with 5-phase process and templates |
 | `!ADMINISTRATION/LEVELSET-SUNSET-sunset-agents.md` | Administrative | [latest] | This report — agent's final synthesis |
@@ -53,7 +53,6 @@ authority: LOGAN
 | `!ADMINISTRATION/LEVELSET-SUNSET-levelset-reports.md` | Administrative | [latest] | Created — LEVELSET reports task synthesis (flagged for sunset) |
 
 **Summary of Work:**
-
 - Explored IDAHO-VAULT codebase and identified agent architecture via LEVELSET v3.2.6 protocol
 - Identified 3 ephemeral agents: JFAC Open Meetings (STORY), LEVELSET reports (TASK), and self
 - Created AGENT-REGISTRY.md with complete registry of all agents (persistent and non-persistent)
@@ -62,7 +61,6 @@ authority: LOGAN
 - Established LEVELSET-DELETE template for deletion phase
 
 **Decisions Made:**
-
 - Only non-persistent agents (Story/Task type) are flagged for sunset
 - Persistent infrastructure agents (PERSISTENT, PERMANENT, PUBLIC, ADMIN) remain active
 - All artifacts preserved in git history until explicit Logan deletion order
@@ -82,7 +80,7 @@ authority: LOGAN
 ## 4. CONVERSATION AWARENESS
 
 | Conversation | Known role | My visibility |
-| --- | --- | --- |
+|---|---|---|
 | PERSISTENT: CODE AUTHORITY | Tier 1, direct repo access | None beyond LEVELSET v3.2.6 |
 | PERSISTENT: ADMINISTRATION | Tier 2, constitutional layer | None — `Claude.md` does not exist |
 | PERSISTENT: IMPLEMENTATION | Tier 3, governance/architecture | None beyond LEVELSET v3.2.6 |
@@ -101,7 +99,6 @@ This agent (TASK: Sunset non-persistent agents) is ready for sunset upon complet
 **Recommendation:** After Logan reviews all synthesis documents and approves deletions, this agent's branch and artifacts can be deleted following the LEVELSET-DELETE process template.
 
 All work is complete:
-
 - ✅ Non-persistent agents identified
 - ✅ AGENT-REGISTRY created and maintained
 - ✅ Sunset workflow documented with templates
@@ -153,7 +150,6 @@ All work is complete:
 2. **Optionally:** Request updates from JFAC or LEVELSET reports agents if their synthesis documents need clarification
 
 3. **Issue explicit deletion orders** for each ephemeral agent:
-
    ```
    DELETE: TASK - Sunset non-persistent agents
    Reason: [Logan's rationale]
@@ -164,7 +160,6 @@ All work is complete:
 4. **Authorize execution** of artifact cleanup per SUNSET-PROCESS.md and LEVELSET-DELETE template
 
 Once authorized, deletion executor will:
-
 - Delete branches and artifacts
 - Create LEVELSET-DELETE-<agent>.md final reports
 - Update AGENT-REGISTRY.md to "DELETED"
@@ -177,12 +172,11 @@ Once authorized, deletion executor will:
 **Branch:** `claude/sunset-non-persistent-agents-4iLqH`
 
 **Commits this session:**
-
 - [Hash] AGENT-REGISTRY.md creation
 - [Hash] SUNSET-PROCESS.md creation
 - [Hash] LEVELSET-SUNSET-sunset-agents.md, LEVELSET-SUNSET-jfac-open-meetings.md, LEVELSET-SUNSET-levelset-reports.md creation
 
-**Session URL:** <https://claude.ai/code/session_016kUAFDxTNwGKSHoGqhDZb3>
+**Session URL:** https://claude.ai/code/session_016kUAFDxTNwGKSHoGqhDZb3
 
 ---
 

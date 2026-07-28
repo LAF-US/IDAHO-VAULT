@@ -120,8 +120,7 @@ In `sources.conf` change the path to your local mirror.
 
 `sudo vi /opt/local/etc/macports/sources.conf`
 
-# rsync://rsync.macports.org/release/tarballs/ports.tar \[default\]  
-
+#rsync://rsync.macports.org/release/tarballs/ports.tar \[default\]  
 rsync://jnb.za.rsync.macports.org/macports/release/tarballs/ports.tar \[default\]
 
 #### Paths

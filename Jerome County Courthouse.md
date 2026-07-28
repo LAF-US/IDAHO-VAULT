@@ -6,4 +6,4 @@ related:
 - magistrate court
 ---
 
-magistrate court Jerome County courthouse
+magistrate court Jerome County courthouse 

@@ -18,7 +18,7 @@ related:
 ---
 
 RT @UWAthletics: Without @huskyband in attendance tonight, @WSUCMB played our fight song.
-
+ 
 Thank you for putting rivalry aside and showing…
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1066562877547438080)

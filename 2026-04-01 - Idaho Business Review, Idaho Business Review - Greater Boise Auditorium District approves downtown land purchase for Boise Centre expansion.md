@@ -12,7 +12,7 @@ Listen to this article
 
 BOISE ― The Greater Auditorium District has approved a for a that could eventually anchor a major expansion of the.
 
-##### At a Glance
+##### At a Glance:
 
 - [Greater Boise Auditorium District](https://idahobusinessreview.com/profile/greater-boise-auditorium-district) approves purchase agreement
 - 4.13-acre property at 1050 W. River Street acquired

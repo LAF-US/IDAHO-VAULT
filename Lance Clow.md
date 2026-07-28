@@ -6,4 +6,4 @@ authority: LOGAN
 ---
 Residence: Twin Falls
 
-- Former House Education chairman
+- Former House Education chairman 

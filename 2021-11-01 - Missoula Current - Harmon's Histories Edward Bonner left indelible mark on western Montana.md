@@ -59,4 +59,4 @@ The collection of town sites that developed near the crossing were eventually, i
 
 Who knew? Well, probably most everyone except me.
 
-*Jim Harmon is a longtime Missoula news broadcaster, now retired, who writes a weekly history column for Missoula Current. You can contact Jim at <harmonshistories@gmail.com>. His new book, “The Sneakin’est Man That Ever Was,” a collection of 46 vignettes of Western Montana history, is now available at [harmonshistories.com](http://harmonshistories.com/)**.***
+*Jim Harmon is a longtime Missoula news broadcaster, now retired, who writes a weekly history column for Missoula Current. You can contact Jim at harmonshistories@gmail.com. His new book, “The Sneakin’est Man That Ever Was,” a collection of 46 vignettes of Western Montana history, is now available at [harmonshistories.com](http://harmonshistories.com/)**.***

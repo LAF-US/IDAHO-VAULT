@@ -5,4 +5,4 @@ related:
 - magistrate court
 ---
 
-magistrate court Ada County courthouse
+magistrate court Ada County courthouse 

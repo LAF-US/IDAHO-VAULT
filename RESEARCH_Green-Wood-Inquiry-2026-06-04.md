@@ -129,28 +129,23 @@ What *is* claimed: each strand is a finding inside the green-wood inquiry, and e
 ## Sources
 
 ### Craft
-
 - [Bodging — Wikipedia](https://en.wikipedia.org/wiki/Bodging)
 - [Green woodworking — Heritage Crafts UK](https://heritagecrafts.org.uk/craft/green-woodworking/)
 - [Mike Abbott's Living Wood](https://goingwiththegrain.org/) — modern revival of the bodger tradition
 
 ### Folklore
-
 - [Robin Hood — Wikipedia](https://en.wikipedia.org/wiki/Robin_Hood)
 - [The Outlaw of Sherwood: Origins of the Robin Hood Legend — Steven Till](https://steventill.com/2025/05/17/the-outlaw-of-sherwood-origins-of-the-robin-hood-legend/)
 
 ### Theology
-
 - [Luke 23:31 commentaries — Bible Hub](https://biblehub.com/commentaries/luke/23-31.htm)
 
 ### Instrument-making
-
 - [Stradivari, violins, tree rings, and the Maunder Minimum — ScienceDirect](https://www.sciencedirect.com/science/article/abs/pii/S1125786504700314)
 - [Did a Little Ice Age Create Special Wood for Great Violins? — Discover](https://www.discovermagazine.com/did-a-little-ice-age-create-special-wood-for-great-violins-12135)
 - [Chemical Secrets of the Violin Virtuosi Pt. 2 — ChemistryViews](https://www.chemistryviews.org/details/ezine/2067505/Chemical_Secrets_of_the_Violin_Virtuosi__Part_2/)
 
 ### Snicket / VFD
-
 - [Lucky Smells Lumbermill — Lemony Snicket Wiki](https://snicket.fandom.com/wiki/Lucky_Smells_Lumbermill)
 - [The History of Lucky Smells Lumbermill — Lemony Snicket Wiki](https://snicket.fandom.com/wiki/The_History_of_Lucky_Smells_Lumbermill)
 - [Finite Forest — Lemony Snicket Wiki](https://snicket.fandom.com/wiki/Finite_Forest)

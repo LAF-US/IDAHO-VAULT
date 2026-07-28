@@ -3569,7 +3569,7 @@ _Generated 2026-03-29 00:14 UTC by GitHub Actions — v2_
 ## Summary
 
 | Check | Count |
-| --- | --- |
+|---|---|
 | Likely misplaced files | 3483 |
 | Files in parent folders with subfolders (potential orphans) | 1 |
 | Naming convention issues | 0 |
@@ -3579,7 +3579,7 @@ _Generated 2026-03-29 00:14 UTC by GitHub Actions — v2_
 ## Likely Misplaced Files
 
 | File | Current Folder | Suggested Folder | Reason |
-| --- | --- | --- | --- |
+|---|---|---|---|
 | `!.md` | `(root)` | `X LABELER` | loose file in vault root |
 | `$.md` | `(root)` | `X LABELER` | loose file in vault root |
 | `&.md` | `(root)` | `X LABELER` | loose file in vault root |

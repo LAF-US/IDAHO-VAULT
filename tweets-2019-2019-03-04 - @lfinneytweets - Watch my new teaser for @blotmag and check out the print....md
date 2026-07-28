@@ -15,14 +15,12 @@ related:
   - lfinneytweets
 ---
 
-Watch my new teaser for @blotmag and check out the print edition!  <https://t.co/oOfX3UzJTW> <https://t.co/MeCpaGz4NM>
+Watch my new teaser for @blotmag and check out the print edition!  https://t.co/oOfX3UzJTW https://t.co/MeCpaGz4NM
 
 ## Links
-
-- <https://issuu.com/blotmagazine/docs/issue3fullmagazine_working>_
+- https://issuu.com/blotmagazine/docs/issue3fullmagazine_working_
 
 ## Media
-
 - ![](https://pbs.twimg.com/ext_tw_video_thumb/1102627972136108032/pu/img/8oyj795NQMdwWt5u.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1102628105590456320)

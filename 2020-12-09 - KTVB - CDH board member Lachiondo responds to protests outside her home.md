@@ -17,7 +17,7 @@ related:
 - warrants
 authority: LOGAN
 ---
-"I am sad. I am tired. I fear that, in my choosing to hold public office, my family has too-often paid the price," Diana Lachiondo told KTVB on Wednesday.
+"I am sad. I am tired. I fear that, in my choosing to hold public office, my family has too-often paid the price," Diana Lachiondo told KTVB on Wednesday. 
 
 Boise, Idaho — After getting an urgent call from her young son, Ada County Commissioner Diana Lachiondo left Central District Health's virtual meeting.
 
@@ -35,7 +35,7 @@ Her two boys were alone as the meeting got underway. Their grandmother was home 
 
 "I just felt so helpless," Lachiondo said. "It was both my 12-year-old and my 8-year-old huddled together in my son's room and they were scared and I felt so helpless and I feel like I let them down for not being there."
 
-"I'm a fourth-generation Idahoan. Born and raised here in Boise," she said. "My oldest, he went through a period of time when he was hearing things on the news or watching TV and he would be scared about robbers and I would always tell him this is a safe place, Boise is a very safe place and you don't have to worry, and that loss of innocence, not that it isn't a safe place, but we're being targeted, is scary."
+"I'm a fourth-generation Idahoan. Born and raised here in Boise," she said. "My oldest, he went through a period of time when he was hearing things on the news or watching TV and he would be scared about robbers and I would always tell him this is a safe place, Boise is a very safe place and you don't have to worry, and that loss of innocence, not that it isn't a safe place, but we're being targeted, is scary." 
 
 On Wednesday, Boise police said they had identified the three people in the Facebook video and had issued warrants for their arrest for disturbing the peace. As of Wednesday night, they had not been arrested.
 
@@ -43,7 +43,7 @@ On Wednesday afternoon, the Ada County Board of Commissioners issued a statement
 
 "I was shocked and saddened to hear that for the second time this month community members angry about decisions made by elected officials would take their protests to those officials' homes," Ada County Commissioner Patrick Malloy said. "While I am a Constitutionalist and a conservative, I find it outrageous that citizens would think it appropriate to protest outside the private residence of any elected official. This same group of protestors would find it a violation of their rights if a government agency rallied outside of their home, but find nothing wrong with causing fear and anxiety for the children and other family members of elected officials."
 
-"These actions do not further the community support of those protesting. Rather, they alienate those who might otherwise agree with the reason for the protests," Malloy added. "I absolutely support and would defend the rights of citizens to peaceably protest the government or individual elected officials when they have grievances. I have strongly disagreed with some of the decisions of these public officials, but these protests need to take place at an appropriate public location, and not at the private homes of elected officials."
+"These actions do not further the community support of those protesting. Rather, they alienate those who might otherwise agree with the reason for the protests," Malloy added. "I absolutely support and would defend the rights of citizens to peaceably protest the government or individual elected officials when they have grievances. I have strongly disagreed with some of the decisions of these public officials, but these protests need to take place at an appropriate public location, and not at the private homes of elected officials." 
 
 Ada County Commissioner Kendra Kenyon said,  "It is a sad day in our community when our elected public servants are harassed, intimidated, and threatened at their personal homes. I have hope that the good people in our community will continue to band together and focus on the positive. We live in a beautiful community that condemns bullying and intimidation, and we stand together against this abhorrent behavior."  
 

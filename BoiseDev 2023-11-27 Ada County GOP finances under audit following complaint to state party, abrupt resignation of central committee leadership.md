@@ -33,9 +33,9 @@ related:
 - web
 authority: LOGAN
 ---
-<https://boisedev.com/news/2023/11/27/ada-county-gop-finances-under-audit-following-complaint-to-state-party-abrupt-resignation-of-central-committee-leadership/>
+https://boisedev.com/news/2023/11/27/ada-county-gop-finances-under-audit-following-complaint-to-state-party-abrupt-resignation-of-central-committee-leadership/ 
 
-Margaret Carmel, BoiseDev
+Margaret Carmel, BoiseDev 
 
 New leadership at the Ada County GOP is taking over a financial audit of the organization first begun by the Idaho Republican Party under the leadership of Chairwoman Dorothy Moon.
 
@@ -52,7 +52,6 @@ Moon fired back with her own statement, denying all of the allegations that she 
 “These accusations from the former officers are little more than projection and sour grapes from an old guard that is angry about losing their own power,” she said. “The Idaho Republican Party will continue fighting for faith, family, and freedom, and representing everyone who stands for Idaho values.”
 
 ## Party finances spark tension last winter
-
 The first sign of trouble in paradise bubbled up in early 2023.
 
 In response to an Ada County GOP Treasurer’s report presented to the committee in January, Moon raised concerns that the central committee was not accurately accounting for all of the financial support the Idaho GOP gave the local party for its election efforts in 2022. This calculation determines how much the Ada County GOP should pay the state party for its yearly quota, which Moon said was being used as a justification to underpay the state party nearly $34,000. She said in her February 1 letter the Ada County GOP Executive Committee’s “lack of transparency” and “inability to seek the truth” is concerning.
@@ -66,7 +65,6 @@ Another sticking point was the now-canceled KIDO radio show called Keep Idaho Re
 In an interview with BoiseDev earlier this year, Luna said Moon’s claims of Miller not paying his half were not true and no one was ever intended to help cover the costs for the show. Luna said Miller talked to donors about giving to the party to cover the costs of the program. Moon said the program cost the Idaho GOP more than $50,000.
 
 ## Ada County GOP members file complaint
-
 In April, 17 members of the Ada County GOP wrote a multi-page complaint to Moon alleging issues with the finances of the local party. The 17 members who filed the complaint signed the document, but in the copy BoiseDev was able to obtain, all of the names were redacted.
 
 The complaint echoed Moon’s concerns over the money she said was owed for the local party’s yearly quota and prompted “closer evaluation and inspection” of the Ada County GOP budget. It said instead of accusations of theft of money, personality issues or other concerns about financial wrongdoing, the group’s concerns were about financial control policies and bylaws of the local Republican party.
@@ -84,7 +82,6 @@ Other issues in the letter include concerns about a lack of transparency in reim
 Litster did not respond to a request for comment on the complaint prior to the publication of this story.
 
 ## Moon launches audit
-
 Moon sent a letter to the Ada County GOP on June 20 stating she was going to review the local party’s books after Lister and Miller sent a letter responding to the concerns raised in the audit. BoiseDev was unable to obtain their response letter.
 
 In Moon’s June 20 message to the Ada County GOP obtained by BoiseDev, she said the original plan was for a meeting that day for Miller and Litster to provide the documents for her to complete a financial investigation, but that meeting was canceled the day of.
@@ -96,7 +93,6 @@ Moon told Miller and Lister in her letter she was appointing a financial review 
 Miller and Lister then filed an appeal over the financial review, which was denied according to a September 25 letter obtained by BoiseDev. It said the appeal was denied by the Idaho Republican Party Executive Committee due to “the absence of your representation to defend the appeal.”
 
 ## Miller, Litster others abruptly resign
-
 Ten days later and just prior to the October Ada County GOP meeting, Miller, Litster, First Vice Chair Megan Reichle, Second Vice Chair Travis Clyde, Third Vice Chair Barrett Tetlow and State Committeewoman Kim Wickstrum resigned as officers of the local party.
 
 Miller praised the group’s more than half a million in fundraising for elections and efforts to elect Republicans in Ada County, but said given “the state GOP’s current political climate and direction” it became “impossible” to lead in Ada County.
@@ -110,7 +106,6 @@ The group also said the state party’s central committee can bring candidates i
 Between September 1 and the resignation, the Ada County GOP returned just shy of $11,000 in donations from donors Ryan Hardy, Blackrock Homes, an entity linked to Ketchum-based real estate development firm VP Companies and homebuilder group Building Industry Group of the Treasure Valley. BoiseDev reporting revealed last year a network of LLCs that appear to be linked to Blackrock Homes gave more than $70,000 to local GOP efforts over a year and a half.
 
 ## Audit handed off to new Ada County leadership
-
 When BoiseDev inquired about the status of the audit with the Idaho GOP, party staff said the Ada County GOP “handled this issue within their committee” and deferred questions to newly elected Ada County GOP Chairman Thad Butterworth.
 
 He said the Ada County GOP is now conducting the audit and will put out a release to the public when they have completed the review.

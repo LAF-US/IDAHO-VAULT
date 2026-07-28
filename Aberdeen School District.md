@@ -4,4 +4,4 @@ related:
 - Bingham County
 authority: LOGAN
 ---
-Aberdeen, Bingham County
+Aberdeen, Bingham County 

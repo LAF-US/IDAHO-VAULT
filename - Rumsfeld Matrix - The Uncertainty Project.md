@@ -20,7 +20,7 @@ The Uncertainty Project presents the Rumsfeld Matrix as a practical decision-mak
 ## The Four Quadrants (Applied)
 
 | Quadrant | Description | Response |
-| --- | --- | --- |
+|---|---|---|
 | **Known Knowns** | Facts we are aware of and understand | Act on them directly |
 | **Known Unknowns** | Gaps we have identified but not filled | Research, gather data, assign ownership |
 | **Unknown Knowns** | Tacit knowledge and blind spots | Surface through retrospective, diverse perspectives, red-teaming |

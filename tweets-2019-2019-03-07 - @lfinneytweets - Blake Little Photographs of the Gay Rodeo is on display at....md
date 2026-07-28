@@ -17,10 +17,9 @@ related:
   - lfinneytweets
 ---
 
-"Blake Little: Photographs of the Gay Rodeo" is on display at @UofILibrary through the end of April. @LatahCoHistory @UILGBToffice <https://t.co/35CBzoinVm>
+"Blake Little: Photographs of the Gay Rodeo" is on display at @UofILibrary through the end of April. @LatahCoHistory @UILGBToffice https://t.co/35CBzoinVm
 
 ## Links
-
-- <https://x.com/highcountrynews/status/1103438107364548608>
+- https://x.com/highcountrynews/status/1103438107364548608
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1103454169506037760)

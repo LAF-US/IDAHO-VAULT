@@ -148,7 +148,7 @@ The `closed` privacy state refers to `Public Read Only`.
 | `GET` | `/space/explore-spaces/feed.json` | `RSS feed` for new spaces added to Explore | None |
 | `GET` | `/space/live-spaces` | Get a list of currently being edited spaces which are open or closed | None |
 | `GET` | `/space/multiple?spaceIds=id1,id2` | Get info on multiple spaces, up to 60 spaceIds at a time | `canViewSpace` |
-| `GET` | `/space/public/multiple?spaceIds=id1,id2` | Gets public info for multiple public spaces, up to 60 spaceIds at a time. None | |
+| `GET` | `/space/public/multiple?spaceIds=id1,id2` | Gets public info for multiple public spaces, up to 60 spaceIds at a time. None |  |
 | `GET` | `/space/inbox` | Get the current user's inbox space | `apiKey` |
 | `GET` | `/space/everyones-spaces` | Get a list of recent public spaces sorted by date `createdAt` | None |
 | `GET` | `/space/everyones-spaces/feed.json` | `RSS feed` for recent public spaces | None |

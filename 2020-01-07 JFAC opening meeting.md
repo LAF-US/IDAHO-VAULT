@@ -71,17 +71,18 @@ Agency org charts are included in this year’s budget book, Agency Spending Res
 
 Agency performance reports – Department of Finance, will look into adding link to BPA page
 
+
 **Spending reset plan**
 Line item in Legislative Budget Book "1% onetime general fund reduction"
 “2% Ongoing General Fund Reduction” ongoing reductions
 
 Requested 2020 & 2021 decreases are listed as separate items, JFAC has leeway
 
-Action sooner than later on 1% rescissions – likely as omnibus.
+Action sooner than later on 1% rescissions – likely as omnibus. 
 2% rescissions budget by budget. Melissa Wintrow has qualms with this approach.
 
-**Alex Adams review of Governor budget**
 
+**Alex Adams review of Governor budget**
 - Education highest priority
 - Eliminates $57 million of spending
 - Surplus ending balance of $60 & $61 million
@@ -90,12 +91,12 @@ Action sooner than later on 1% rescissions – likely as omnibus.
 - Conservative 3.75% spending growth, lowest since FY 2014
 - 35 million from Tax Relief Fund for grocery tax
 
+
 **Revenue Forecast**
 
 Budget was set expecting 7% growth.
 
 Private business & economists contributed to forecasting.
-
 - extend revenue forecast from 3 years to 5
 - alternative forecasts (optimistic, pessimistic)
 - Assigned probabilities to each scenario
@@ -112,6 +113,7 @@ Even with pessimistic scenario, can leave $40 million ending balance
 
 FY 2021 is first time in state history with over $4 *billion* budget
 
+
 **General Fund spending reset**
 
 1% rescission FY 2020: $19,109,100
@@ -121,6 +123,7 @@ FY 2021 is first time in state history with over $4 *billion* budget
 Agencies had discretion in how to cut budgets, line items in appropriations
 
 2% ongoing reductions year to year, needs more flexibility
+
 
 **PERSI sick leave fund holiday**
 
@@ -139,6 +142,7 @@ Fleet management - Shifting agencies from limited-use vehicles to rental cars
 Change in Employee Compensation – 19.2 million
 3% pay structure shift, lowest employees need to be brought up to new minimum (86K)
 
+
 **Line Items**
 
 K-12 Task Force recommendations
@@ -152,6 +156,7 @@ Starting teacher pay raise - 7.7 million (GF)
 literacy proficiency - 3.2 million
 
 Advanced Opportunities - 2 million (GF) new total of $20 million
+
 
 **Higher Ed**
 
@@ -167,7 +172,9 @@ Occupancy Cost – 772K – costs e.g. custodial
 
 Graduate Medical Expansion – 1.25 million – focused on Eastern Idaho, behavioral health & psychiatric
 
+
 **New state broadband office – 113K**
+
 
 **Health and Human Services**
 
@@ -180,17 +187,18 @@ Advanced care directive registry – 500K
 Legislation to update Medicaid reimbursements, shift from fee-per-service to value-based hospital payments
 
 Medicaid Expansion – net zero to GF, State total share FY2021 - 41 million
+ - Previous General Fund – 9 million
+ - Millennium Fund – 12.5 million
+ - counties' share – 8.5 million – half of previous county expenditures
+ - general fund offsets – 10.6 million (reductions in other departments’ health budgets)
 
-- Previous General Fund – 9 million
-- Millennium Fund – 12.5 million
-- counties' share – 8.5 million – half of previous county expenditures
-- general fund offsets – 10.6 million (reductions in other departments’ health budgets)
 
 **Public Safety (Department of Correction)**
 
 160 beds Twin Falls Community Reentry Center – 2.8 million startup & staff
 
 Connection and Intervention Stations – 5.9 million
+
 
 **Information and Technology Services** # 1-4
 
@@ -208,7 +216,8 @@ ITS 3 – specific agency modernizations (Parks & rec, fish & game, etc. etc. et
 
 ITS 4 – increased billing to agencies as needs change
 
-Rainy Day Fund
+
+Rainy Day Fund 
 
 replenishing expenditures from last year
 

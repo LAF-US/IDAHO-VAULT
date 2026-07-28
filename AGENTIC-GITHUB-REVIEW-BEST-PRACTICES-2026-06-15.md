@@ -319,7 +319,7 @@ verification step that catches a pre-registered malicious package.
 **Already aligned with independently-recommended best practice:**
 
 | Vault practice | Corroborating finding |
-| --- | --- |
+|---|---|
 | `agent:*` label routing via GitHub Issues | §V issue-assignment + label-gating |
 | Branch-per-agent (`claude/…`, `codex/…`, `gemini/…`, `copilot/…`) | §III branch/worktree isolation |
 | **DOCKET** as durable status/visibility record | §III shared task document — *with the caveat that per governance (`CONSTITUTION.md`, `swarm.json`) the DOCKET is a durable visibility record, not a live coordination board; live execution state lives in GitHub/Linear* |
@@ -356,84 +356,79 @@ Citation-attributable but **snippet-level** (WebFetch 403 throughout); dates mar
 where the snippet carried none.
 
 **I — Incorporating suggestions**
-
-- arXiv 2604.03196 — "From Industry Claims to Empirical Reality" (MSR 2026) — <https://arxiv.org/pdf/2604.03196>
-- State of AI Code Review Tools 2025 — <https://www.devtoolsacademy.com/blog/state-of-ai-code-review-tools-2025/>
-- Graphite, AI code review false positives (2025) — <https://graphite.dev/guides/ai-code-review-false-positives>
-- Stack Overflow 2025 Developer Survey — <https://survey.stackoverflow.co/2025/ai/>
-- Qodo, State of AI Code Quality (2025) — <https://www.qodo.ai/reports/state-of-ai-code-quality/>
-- Cursor BugBot — <https://aicodereview.cc/tool/cursor-bugbot/> ; Greptile benchmarks — <https://www.greptile.com/benchmarks>
-- CodeRabbit docs / evaluation framework — <https://docs.coderabbit.ai/> ; <https://www.coderabbit.ai/blog/framework-for-evaluating-ai-code-review-tools>
-- GitHub Copilot "Commit suggestion" — <https://docs.github.com/en/copilot/how-tos/use-copilot-agents/request-a-code-review/use-code-review>
-- GitHub responsible-use of Copilot code review — <https://docs.github.com/en/copilot/responsible-use-of-github-copilot-features/responsible-use-of-github-copilot-code-review>
-- Security Boulevard, AI code review 2025 — <https://securityboulevard.com/2025/10/ai-code-review-in-2025-technologies-challenges-best-practices/>
+- arXiv 2604.03196 — "From Industry Claims to Empirical Reality" (MSR 2026) — https://arxiv.org/pdf/2604.03196
+- State of AI Code Review Tools 2025 — https://www.devtoolsacademy.com/blog/state-of-ai-code-review-tools-2025/
+- Graphite, AI code review false positives (2025) — https://graphite.dev/guides/ai-code-review-false-positives
+- Stack Overflow 2025 Developer Survey — https://survey.stackoverflow.co/2025/ai/
+- Qodo, State of AI Code Quality (2025) — https://www.qodo.ai/reports/state-of-ai-code-quality/
+- Cursor BugBot — https://aicodereview.cc/tool/cursor-bugbot/ ; Greptile benchmarks — https://www.greptile.com/benchmarks
+- CodeRabbit docs / evaluation framework — https://docs.coderabbit.ai/ ; https://www.coderabbit.ai/blog/framework-for-evaluating-ai-code-review-tools
+- GitHub Copilot "Commit suggestion" — https://docs.github.com/en/copilot/how-tos/use-copilot-agents/request-a-code-review/use-code-review
+- GitHub responsible-use of Copilot code review — https://docs.github.com/en/copilot/responsible-use-of-github-copilot-features/responsible-use-of-github-copilot-code-review
+- Security Boulevard, AI code review 2025 — https://securityboulevard.com/2025/10/ai-code-review-in-2025-technologies-challenges-best-practices/
 
 **II — Etiquette & noise**
-
-- CodeRabbit, context engineering (2025) — <https://www.coderabbit.ai/blog/context-engineering-ai-code-reviews>
-- CodeAnt, false-positive analysis — <https://www.codeant.ai/blogs/ai-code-review-false-positives>
-- DocMason / Jet Xu, low-noise review — <https://jetxu-llm.github.io/posts/low-noise-code-review/>
-- Greptile comment-quality case study (ZenML LLMOps DB) — <https://www.zenml.io/llmops-database/improving-ai-code-review-bot-comment-quality-through-vector-embeddings>
-- Macroscope code-review benchmark — <https://macroscope.com/blog/code-review-benchmark>
-- Sourcegraph automated review guide — <https://sourcegraph.com/blog/automated-code-review-tools>
-- CodeRabbit configuration reference — <https://docs.coderabbit.ai/reference/configuration>
-- Devin Review — <https://docs.devin.ai/work-with-devin/devin-review>
-- GitHub Copilot code review concepts/changelog — <https://docs.github.com/en/copilot/concepts/agents/code-review> ; <https://github.blog/changelog/2026-06-02-shape-copilot-code-review-around-your-team/>
-- Sticky PR Comment action — <https://github.com/marketplace/actions/sticky-pull-request-comment>
-- anthropics/claude-code-action #960, #602 — <https://github.com/anthropics/claude-code-action/issues/960>
-- GitHub REST rate limits — <https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api>
+- CodeRabbit, context engineering (2025) — https://www.coderabbit.ai/blog/context-engineering-ai-code-reviews
+- CodeAnt, false-positive analysis — https://www.codeant.ai/blogs/ai-code-review-false-positives
+- DocMason / Jet Xu, low-noise review — https://jetxu-llm.github.io/posts/low-noise-code-review/
+- Greptile comment-quality case study (ZenML LLMOps DB) — https://www.zenml.io/llmops-database/improving-ai-code-review-bot-comment-quality-through-vector-embeddings
+- Macroscope code-review benchmark — https://macroscope.com/blog/code-review-benchmark
+- Sourcegraph automated review guide — https://sourcegraph.com/blog/automated-code-review-tools
+- CodeRabbit configuration reference — https://docs.coderabbit.ai/reference/configuration
+- Devin Review — https://docs.devin.ai/work-with-devin/devin-review
+- GitHub Copilot code review concepts/changelog — https://docs.github.com/en/copilot/concepts/agents/code-review ; https://github.blog/changelog/2026-06-02-shape-copilot-code-review-around-your-team/
+- Sticky PR Comment action — https://github.com/marketplace/actions/sticky-pull-request-comment
+- anthropics/claude-code-action #960, #602 — https://github.com/anthropics/claude-code-action/issues/960
+- GitHub REST rate limits — https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api
 
 **III — Coordinating multiple tools**
-
-- Augment Code, git worktrees / multi-agent workspace — <https://www.augmentcode.com/guides/git-worktrees-parallel-ai-agent-execution> ; <https://www.augmentcode.com/guides/how-to-run-a-multi-agent-coding-workspace>
-- MindStudio, worktrees for parallel agents — <https://www.mindstudio.ai/blog/git-worktrees-parallel-ai-coding-agents>
-- Claude Code agent-teams docs — <https://code.claude.com/docs/en/agent-teams>
-- AGENTS.md standard — <https://tessl.io/blog/the-rise-of-agents-md-an-open-standard-and-single-source-of-truth-for-ai-coding-agents/> ; <https://agentsindex.ai/agents-md>
-- GitHub Copilot issue assignment — <https://github.blog/ai-and-ml/github-copilot/assigning-and-completing-issues-with-coding-agent-in-github-copilot/>
-- GitHub Copilot base-branch changelog (2025-07-23) — <https://github.blog/changelog/2025-07-23-agents-page-set-the-base-branch-for-github-copilot-coding-agent-tasks/>
-- CodeRabbit vs Copilot — <https://www.morphllm.com/comparisons/coderabbit-vs-copilot> ; <https://dev.to/zak_mandhro/github-copilot-crushed-every-code-review-startup-40m-pr-analysis-2no6>
-- Swarmia AI-review metrics (2026-05-29) — <https://www.swarmia.com/changelog/2026-05-29-ai-review-agent-metrics/>
+- Augment Code, git worktrees / multi-agent workspace — https://www.augmentcode.com/guides/git-worktrees-parallel-ai-agent-execution ; https://www.augmentcode.com/guides/how-to-run-a-multi-agent-coding-workspace
+- MindStudio, worktrees for parallel agents — https://www.mindstudio.ai/blog/git-worktrees-parallel-ai-coding-agents
+- Claude Code agent-teams docs — https://code.claude.com/docs/en/agent-teams
+- AGENTS.md standard — https://tessl.io/blog/the-rise-of-agents-md-an-open-standard-and-single-source-of-truth-for-ai-coding-agents/ ; https://agentsindex.ai/agents-md
+- GitHub Copilot issue assignment — https://github.blog/ai-and-ml/github-copilot/assigning-and-completing-issues-with-coding-agent-in-github-copilot/
+- GitHub Copilot base-branch changelog (2025-07-23) — https://github.blog/changelog/2025-07-23-agents-page-set-the-base-branch-for-github-copilot-coding-agent-tasks/
+- CodeRabbit vs Copilot — https://www.morphllm.com/comparisons/coderabbit-vs-copilot ; https://dev.to/zak_mandhro/github-copilot-crushed-every-code-review-startup-40m-pr-analysis-2no6
+- Swarmia AI-review metrics (2026-05-29) — https://www.swarmia.com/changelog/2026-05-29-ai-review-agent-metrics/
 
 **IV — Governance & security**
-
-- GitHub Copilot coding agent (May 2025) — <https://github.blog/news-insights/product-news/github-copilot-meet-the-new-coding-agent/>
-- Reviewing a Copilot PR — <https://docs.github.com/en/copilot/how-tos/agents/copilot-coding-agent/reviewing-a-pull-request-created-by-copilot>
-- Approving with required reviews — <https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/approving-a-pull-request-with-required-reviews>
-- GH Actions can approve PRs (risk) — <https://docs.boostsecurity.io/rules/cicd-gha-can-create-and-approve-pull-requests.html>
-- GitHub AI-agent PR volume / kill switch (2026-04-11) — <https://www.danilchenko.dev/posts/2026-04-11-github-ai-agents-pull-requests/>
-- Ona, auto-approving low-risk PRs — <https://ona.com/stories/auto-approving-low-risk-prs>
-- arXiv 2605.02273 — humans reviewing AI PRs — <https://arxiv.org/html/2605.02273v1>
-- "Agent PRs are everywhere" (GitHub, ~2026-05-07) — <https://github.blog/ai-and-ml/generative-ai/agent-pull-requests-are-everywhere-heres-how-to-review-them/>
-- Simon Willison, lethal trifecta (2025-06-16) — <https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/>
-- "Comment and Control" coverage — <https://gbhackers.com/claude-code-gemini-cli-and-github-copilot-exposed/> ; <https://www.securityweek.com/claude-code-gemini-cli-github-copilot-agents-vulnerable-to-prompt-injection-via-comments/> ; <https://cybersecuritynews.com/prompt-injection-via-github-comments/>
-- CVE-2025-53773 (Embrace The Red) — <https://embracethered.com/blog/posts/2025/github-copilot-remote-code-execution-via-prompt-injection/>
-- RoguePilot (Orca via The Hacker News) — <https://thehackernews.com/2026/02/roguepilot-flaw-in-github-codespaces.html>
-- OWASP LLM01:2025 — <https://genai.owasp.org/llmrisk/llm01-prompt-injection/>
-- OWASP AISVS — AI for code generation (separation of duties) — <https://github.com/OWASP/AISVS/blob/main/1.0/en/0x92-Appendix-C_AI_for_Code_Generation.md>
-- GitHub required-reviewer rule GA (2026-02-17) — <https://github.blog/changelog/2026-02-17-required-reviewer-rule-is-now-generally-available/>
-- Skip-approval for Copilot agent Actions (2026-03-13) — <https://github.blog/changelog/2026-03-13-optionally-skip-approval-for-copilot-coding-agent-actions-workflows/>
-- GitHub "developers own the merge button" (2025-07-14) — <https://github.blog/ai-and-ml/generative-ai/code-review-in-the-age-of-ai-why-developers-will-always-own-the-merge-button/>
-- anthropics/claude-code-security-review — <https://github.com/anthropics/claude-code-security-review> (analysis: <https://www.helpnetsecurity.com/2026/03/10/anthropic-claude-code-review/>)
-- Microsoft Security, securing CI/CD in an agentic world (2026-06-05) — <https://www.microsoft.com/en-us/security/blog/2026/06/05/securing-ci-cd-in-agentic-world-claude-code-github-action-case/>
-- Cloud Security Alliance research note — <https://labs.cloudsecurityalliance.org/research/csa-research-note-claude-code-github-action-prompt-injection/>
-- GitHub Actions secure use / `pull_request_target` — <https://docs.github.com/en/actions/reference/security/secure-use> ; <https://securitylab.github.com/resources/github-actions-preventing-pwn-requests/>
-- OWASP CI/CD Top 10 — Poisoned Pipeline Execution — <https://owasp.org/www-project-top-10-ci-cd-security-risks/CICD-SEC-04-Poisoned-Pipeline-Execution>
-- AI-PR org-policy patterns (community #182197) — <https://github.com/orgs/community/discussions/182197>
-- Slopsquatting (Trend Micro / USENIX Security 2025) — <https://www.trendmicro.com/vinfo/us/security/news/cybercrime-and-digital-threats/slopsquatting-when-ai-agents-hallucinate-malicious-packages>
-- Code provenance for AI commits — <https://nhimg.org/articles/code-provenance-is-the-missing-control-for-ai-generated-commits/>
+- GitHub Copilot coding agent (May 2025) — https://github.blog/news-insights/product-news/github-copilot-meet-the-new-coding-agent/
+- Reviewing a Copilot PR — https://docs.github.com/en/copilot/how-tos/agents/copilot-coding-agent/reviewing-a-pull-request-created-by-copilot
+- Approving with required reviews — https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/approving-a-pull-request-with-required-reviews
+- GH Actions can approve PRs (risk) — https://docs.boostsecurity.io/rules/cicd-gha-can-create-and-approve-pull-requests.html
+- GitHub AI-agent PR volume / kill switch (2026-04-11) — https://www.danilchenko.dev/posts/2026-04-11-github-ai-agents-pull-requests/
+- Ona, auto-approving low-risk PRs — https://ona.com/stories/auto-approving-low-risk-prs
+- arXiv 2605.02273 — humans reviewing AI PRs — https://arxiv.org/html/2605.02273v1
+- "Agent PRs are everywhere" (GitHub, ~2026-05-07) — https://github.blog/ai-and-ml/generative-ai/agent-pull-requests-are-everywhere-heres-how-to-review-them/
+- Simon Willison, lethal trifecta (2025-06-16) — https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/
+- "Comment and Control" coverage — https://gbhackers.com/claude-code-gemini-cli-and-github-copilot-exposed/ ; https://www.securityweek.com/claude-code-gemini-cli-github-copilot-agents-vulnerable-to-prompt-injection-via-comments/ ; https://cybersecuritynews.com/prompt-injection-via-github-comments/
+- CVE-2025-53773 (Embrace The Red) — https://embracethered.com/blog/posts/2025/github-copilot-remote-code-execution-via-prompt-injection/
+- RoguePilot (Orca via The Hacker News) — https://thehackernews.com/2026/02/roguepilot-flaw-in-github-codespaces.html
+- OWASP LLM01:2025 — https://genai.owasp.org/llmrisk/llm01-prompt-injection/
+- OWASP AISVS — AI for code generation (separation of duties) — https://github.com/OWASP/AISVS/blob/main/1.0/en/0x92-Appendix-C_AI_for_Code_Generation.md
+- GitHub required-reviewer rule GA (2026-02-17) — https://github.blog/changelog/2026-02-17-required-reviewer-rule-is-now-generally-available/
+- Skip-approval for Copilot agent Actions (2026-03-13) — https://github.blog/changelog/2026-03-13-optionally-skip-approval-for-copilot-coding-agent-actions-workflows/
+- GitHub "developers own the merge button" (2025-07-14) — https://github.blog/ai-and-ml/generative-ai/code-review-in-the-age-of-ai-why-developers-will-always-own-the-merge-button/
+- anthropics/claude-code-security-review — https://github.com/anthropics/claude-code-security-review (analysis: https://www.helpnetsecurity.com/2026/03/10/anthropic-claude-code-review/)
+- Microsoft Security, securing CI/CD in an agentic world (2026-06-05) — https://www.microsoft.com/en-us/security/blog/2026/06/05/securing-ci-cd-in-agentic-world-claude-code-github-action-case/
+- Cloud Security Alliance research note — https://labs.cloudsecurityalliance.org/research/csa-research-note-claude-code-github-action-prompt-injection/
+- GitHub Actions secure use / `pull_request_target` — https://docs.github.com/en/actions/reference/security/secure-use ; https://securitylab.github.com/resources/github-actions-preventing-pwn-requests/
+- OWASP CI/CD Top 10 — Poisoned Pipeline Execution — https://owasp.org/www-project-top-10-ci-cd-security-risks/CICD-SEC-04-Poisoned-Pipeline-Execution
+- AI-PR org-policy patterns (community #182197) — https://github.com/orgs/community/discussions/182197
+- Slopsquatting (Trend Micro / USENIX Security 2025) — https://www.trendmicro.com/vinfo/us/security/news/cybercrime-and-digital-threats/slopsquatting-when-ai-agents-hallucinate-malicious-packages
+- Code provenance for AI commits — https://nhimg.org/articles/code-provenance-is-the-missing-control-for-ai-generated-commits/
 
 **V — Workflow patterns**
-
-- Google Jules label trigger (2025-06-26) — <https://jules.google/docs/changelog/2025-06-26/>
-- GitHub Agent HQ (Claude + Codex) — <https://github.blog/news-insights/company-news/pick-your-agent-use-claude-and-codex-on-agent-hq/>
-- OpenAI Codex GitHub integration — <https://developers.openai.com/codex/integrations/github>
-- Devin autofix review comments — <https://cognition.ai/blog/closing-the-agent-loop-devin-autofixes-review-comments>
-- "AI Coding Tip: shrink your PR" — <https://dev.to/mcsee/ai-coding-tip-023-shrink-your-ais-pull-request-4lnb>
-- arXiv 2601.15195 — "Where Do AI Coding Agents Fail?" (MSR 2026) — <https://arxiv.org/abs/2601.15195>
-- arXiv 2602.19441 — "When AI Teammates Meet Code Review" — <https://arxiv.org/abs/2602.19441>
-- arXiv 2601.00477 — "Security in the Age of AI Teammates" — <https://arxiv.org/abs/2601.00477>
-- AGENTS.md custom instructions (2025-08-28; 2025-11-12) — <https://github.blog/changelog/2025-08-28-copilot-coding-agent-now-supports-agents-md-custom-instructions/>
-- GitHub merge queue — <https://humanwhocodes.com/blog/2026/04/improving-developer-velocity-github-merge-queue/>
+- Google Jules label trigger (2025-06-26) — https://jules.google/docs/changelog/2025-06-26/
+- GitHub Agent HQ (Claude + Codex) — https://github.blog/news-insights/company-news/pick-your-agent-use-claude-and-codex-on-agent-hq/
+- OpenAI Codex GitHub integration — https://developers.openai.com/codex/integrations/github
+- Devin autofix review comments — https://cognition.ai/blog/closing-the-agent-loop-devin-autofixes-review-comments
+- "AI Coding Tip: shrink your PR" — https://dev.to/mcsee/ai-coding-tip-023-shrink-your-ais-pull-request-4lnb
+- arXiv 2601.15195 — "Where Do AI Coding Agents Fail?" (MSR 2026) — https://arxiv.org/abs/2601.15195
+- arXiv 2602.19441 — "When AI Teammates Meet Code Review" — https://arxiv.org/abs/2602.19441
+- arXiv 2601.00477 — "Security in the Age of AI Teammates" — https://arxiv.org/abs/2601.00477
+- AGENTS.md custom instructions (2025-08-28; 2025-11-12) — https://github.blog/changelog/2025-08-28-copilot-coding-agent-now-supports-agents-md-custom-instructions/
+- GitHub merge queue — https://humanwhocodes.com/blog/2026/04/improving-developer-velocity-github-merge-queue/
 
 ---
 

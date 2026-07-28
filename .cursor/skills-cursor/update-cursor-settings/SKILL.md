@@ -15,7 +15,7 @@ This skill guides you through modifying Cursor/VSCode user settings. Use this wh
 ## Settings File Location
 
 | OS | Path |
-| ---- | ------ |
+|----|------|
 | macOS | ~/Library/Application Support/Cursor/User/settings.json |
 | Linux | ~/.config/Cursor/User/settings.json |
 | Windows | %APPDATA%\Cursor\User\settings.json |
@@ -39,7 +39,6 @@ const settingsPath = "~/Library/Application Support/Cursor/User/settings.json";
 ### Step 2: Identify the Setting to Change
 
 Common setting categories:
-
 - **Editor**: `editor.fontSize`, `editor.tabSize`, `editor.wordWrap`, `editor.formatOnSave`
 - **Workbench**: `workbench.colorTheme`, `workbench.iconTheme`, `workbench.sideBar.location`
 - **Files**: `files.autoSave`, `files.exclude`, `files.associations`
@@ -49,7 +48,6 @@ Common setting categories:
 ### Step 3: Update the Setting
 
 When modifying settings.json:
-
 1. Parse the existing JSON (handle comments - VSCode settings support JSON with comments)
 2. Add or update the requested setting
 3. Preserve all other existing settings
@@ -102,7 +100,7 @@ If user says "use dark theme" or "change my theme":
 ## Common User Requests → Settings
 
 | User Request | Setting |
-| -------------- | --------- |
+|--------------|---------|
 | "bigger/smaller font" | `editor.fontSize` |
 | "change tab size" | `editor.tabSize` |
 | "format on save" | `editor.formatOnSave` |

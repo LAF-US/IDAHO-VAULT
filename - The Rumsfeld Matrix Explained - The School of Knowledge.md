@@ -25,7 +25,6 @@ Rumsfeld's original statement covered only three quadrants. Critics — most not
 - The quadrant of **denial** and **ideological blind spots**
 
 In practice, Unknown Knowns surface as:
-
 - Institutional memory that never gets written down
 - Assumptions baked into system design that no one questions
 - Cultural norms that shape decisions invisibly
@@ -35,7 +34,7 @@ In practice, Unknown Knowns surface as:
 The matrix maps directly onto knowledge management practices:
 
 | Quadrant | KM Strategy |
-| --- | --- |
+|---|---|
 | Known Knowns | Documentation, wikis, runbooks |
 | Known Unknowns | Research queues, learning plans, hired expertise |
 | Unknown Knowns | Communities of practice, retrospectives, knowledge elicitation |

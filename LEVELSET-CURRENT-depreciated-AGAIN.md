@@ -24,7 +24,7 @@ updated: 2026-04-17
 ## REPOSITORY
 
 | Field | Value |
-| --- | --- |
+|---|---|
 | Remote | github.com/LAF-US/IDAHO-VAULT (public) |
 | Primary branch | `main` at `9bb6b028` |
 | Pack size | ~332 MiB trash identified — Phase 2 rewrite pending (Logan unblock required) |
@@ -32,7 +32,7 @@ updated: 2026-04-17
 ## INFRASTRUCTURE
 
 | Asset | Location | Status |
-| --- | --- | --- |
+|---|---|---|
 | `.claude/CLAUDE.md` | `.claude/` | Operational |
 | `.gemini/GEMINI.md` | `.gemini/` | Operational |
 | `.codex/CODEX.md` | `.codex/` | Operational |
@@ -51,7 +51,7 @@ updated: 2026-04-17
 ## AUTOMATION
 
 | Job | Schedule | Status |
-| --- | --- | --- |
+|---|---|---|
 | Idaho Legislature scraper | Daily 6 AM MT | Running |
 | Budget tracker CSV export | Daily 6:30 AM MT | Running |
 | Vault sort audit | Monday 6 AM UTC | Weekly |

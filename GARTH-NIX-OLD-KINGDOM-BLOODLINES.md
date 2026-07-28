@@ -28,7 +28,6 @@ The Charter is a cosmic force and living entity that governs the Old Kingdom. It
 The Old Kingdom features **Four Great Charter Bloodlines**, each associated with one of the Five Great Charters (per the canon rhyme: "One in the people who wear the Crown. Two in the folk who keep the Dead down. Three and Five became stone and mortar. Four sees all in frozen water.").
 
 ### Abhorsen Line
-
 - **Role**: Necromancers who maintain the balance between Life and Death, controlling and laying to rest the Dead
 - **Key Ability**: Command over the Dead and Free Magic entities using necromantic bells and sword. The Abhorsen wields Free Magic lawfully through the necromantic bells while remaining a Charter mage — not the only ones to touch both, but the canonical ritual binding of the two
 - **Notable Members**: The Abhorsen (title), Terciel, Sabriel, Lirael, Sameth
@@ -37,7 +36,6 @@ The Old Kingdom features **Four Great Charter Bloodlines**, each associated with
 - **Sources**: *Abhorsen* (2003, primary canon); *The Old Kingdom* Wikipedia (secondary reference)
 
 ### Clayr Line
-
 - **Role**: Seers and librarians who preserve knowledge and See the future
 - **Key Ability**: The Sight (precognition), both individual flashes and concentrated group vision (Nine Day Watch)
 - **Notable Members**: The Clayr collective, Sanar, Ryelle, Lirael (half-Clayr by birth)
@@ -46,7 +44,6 @@ The Old Kingdom features **Four Great Charter Bloodlines**, each associated with
 - **Sources**: *Lirael* (2001, primary canon); *The Old Kingdom* Wikipedia (secondary reference)
 
 ### Wallmakers Line
-
 - **Role**: Creators and maintainers of the Wall that separates the Old Kingdom from Ancelstierre
 - **Key Ability**: Mastery over Charter Magic for construction and binding. The Wallmaker bloodline physically became the Great Charter Stones and the Wall itself
 - **Notable Members**: The original Wallmakers (now transformed into the Wall). Prince Sameth identified as successor to the Wallmakers in *Abhorsen*
@@ -55,7 +52,6 @@ The Old Kingdom features **Four Great Charter Bloodlines**, each associated with
 - **Sources**: *Abhorsen* (2003, primary canon); *The Old Kingdom* Wikipedia (secondary reference)
 
 ### Royal Line
-
 - **Role**: Rulers of the Old Kingdom
 - **Key Ability**: Enhanced Charter Magic abilities, leadership
 - **Notable Members**: King Touchstone (Royal bloodline), Prince Sameth (heir; also Wallmaker successor). Sabriel is Abhorsen-blood and queen *by marriage* — consort, not Royal bloodline
@@ -69,7 +65,7 @@ The Old Kingdom features **Four Great Charter Bloodlines**, each associated with
 Charter Bloodlines occupy a **unique position** in the lineage framework, spanning three critical domains:
 
 | Domain | Description | Bloodline Manifestation |
-| -------- | ------------- | ------------------------ |
+|--------|-------------|------------------------|
 | **Descriptive** | Bloodlines are documented and discovered like pedigree/genealogy | Charter marks are baptismal marks given to most Old Kingdom folk at birth — they signal Charter affiliation, not proof of a Great-Charter bloodline |
 | **Prescriptive** | Bloodlines determine roles and abilities like royalty/breeding programs | Bloodline dictates magical capabilities and societal roles |
 | **Magical** | Bloodlines channel cosmic power | Direct connection to the Charter as a living entity |
@@ -81,7 +77,6 @@ This triple positioning makes Old Kingdom bloodlines distinct from purely geneal
 ## Bloodline Mechanics
 
 ### Charter Marks
-
 - **Appearance**: Most Old Kingdom folk receive a **Charter Mark drawn on their forehead at birth** as a baptismal/protective mark, not a sign of Great-Charter bloodline. Whether a given mark stays unsullied by Free Magic is what distinguishes genuine Charter-affiliated people from Free Magic sorcerers or constructs in disguise — the mark alone doesn't make someone a practicing Charter Mage
 - **Function**: Indicate connection to the Charter and ability to perform Charter Magic. Marks can be corrupted by Free Magic (e.g., Clariel corrupts her Charter Mark in *Clariel*)
 - **Variation**: The mark is a visible symbol on the forehead, serving as magical identification
@@ -89,20 +84,17 @@ This triple positioning makes Old Kingdom bloodlines distinct from purely geneal
 - **Sources**: *The Old Kingdom* Wikipedia (secondary reference)
 
 ### Inheritance Patterns
-
 - **Non-Direct Inheritance**: Bloodline abilities don't always pass directly parent-to-child. The next Abhorsen could be a niece, cousin, or sibling
 - **Mixed Bloodlines**: Individuals can inherit from multiple bloodlines. **Lirael** is half-Clayr (mother) and Abhorsen's daughter (Terciel). **Sameth** is son of Abhorsen (Sabriel) and King (Touchstone), identified as Wallmaker successor
 - **Prevalence**: Garth Nix stated bloodlines are "much more prevalent" than appears; many carry latent potential that goes unrealized without training and effort — a Charter Mark alone (near-universal in the Old Kingdom, see above) is not what activates bloodline ability
 - **Sources**: Garth Nix interview (BKMAG, 2015, primary/author statement); *The Old Kingdom* Wikipedia (secondary reference)
 
 ### Bloodline Strength Factors
-
 1. **Purity of Line**: Directness of descent from Great Charter founders
 2. **Training**: Proper education and mentorship enhance innate abilities (e.g., Abhorsen apprenticeship)
 3. **Charter Connection**: Individual's personal relationship with the Charter affects power
 4. **Tools**: Possession and mastery of bloodline-specific tools (necromantic bells, sword, etc.) amplify abilities
 5. **Work Ethic**: As Nix stated, "Just having the [Great Charter] bloodline doesn't mean anything if you don't do the work"
-
 - **Sources**: Garth Nix interview (BKMAG, 2015, primary/author statement)
 
 ---
@@ -112,31 +104,26 @@ This triple positioning makes Old Kingdom bloodlines distinct from purely geneal
 The Charter bloodline system connects to multiple lineage and power frameworks. *(Note: the headings below use Obsidian `[[wikilink]]` syntax, which resolves inside the vault's Obsidian renderer but not in plain GitHub Markdown.)*
 
 ### [[BREED-REPORT]]
-
 - **Connection**: Prescriptive aspect of bloodlines determining roles and abilities
 - **Parallel**: Like selective breeding programs, Charter bloodlines are cultivated for specific magical purposes
 - **Difference**: Charter bloodlines have magical validation (Charter Marks, abilities) beyond mere genetics
 
 ### [[ROYALTY]]
-
 - **Connection**: Royal bloodlines share the prescriptive function of determining rulership
 - **Parallel**: Both systems use bloodline to validate authority. The Royal bloodline (Dyrim) is one of the Four Great Charter Bloodlines
 - **Difference**: Charter bloodlines have active magical components and cosmic connections, not just symbolic heredity
 
 ### [[HERALDRY]]
-
 - **Connection**: Charter marks function as heraldic symbols
 - **Parallel**: Both use visual markers to identify lineage and status
 - **Difference**: Charter marks are **magical symbols drawn at birth** that validate Charter Mage status, not merely decorative heraldry
 
 ### [[BENE-GESSERIT]]
-
 - **Connection**: Both are prescriptive systems with specific goals
 - **Parallel**: Long-term planning and selective cultivation to produce desired outcomes (Abhorsen training, Clayr Sight development)
 - **Difference**: Bene Gesserit is human-controlled eugenics; Charter bloodlines are guided by the Charter itself and the sacrifice of the Bright Shiners
 
 ### [[TROUBLE-BUBBLE]]
-
 - **Connection**: The **Disreputable Dog is Kibeth**, one of the **Nine Bright Shiners** (specifically, the Walker). Kibeth retained consciousness and appears as a dog
 - **Parallel**: Mr. Trouble-Bubble Curtis Gonzalez-Finney the Doodle represents a similar concept of immense power in an unexpected, unassuming form
 - **Sources**: *The Old Kingdom* Wikipedia (secondary reference): "the Disreputable Dog (a self-identified remnant of the spirit 'Kibeth')"
@@ -179,13 +166,11 @@ The Charter bloodline system connects to multiple lineage and power frameworks. 
 ## Fact-Check Status
 
 **Sources, by tier:**
-
 - *Primary canon* — the novels themselves: *Sabriel* (1995), *Lirael* (2001), *Abhorsen* (2003), *Clariel* (2014), *Goldenhand* (2016); and Garth Nix's own statements (BKMAG interview, 2015) on bloodline prevalence
 - *Secondary references* — *The Old Kingdom* Wikipedia and the Garth Nix Books (Fandom) Wiki, used for cross-checking and summary, not treated as canon in their own right
 - *Conjecture* — the specific Shiner-to-bloodline pairings below, which no cited source confirms outright
 
 **Corrections from original:**
-
 - ✅ Charter created by **Seven of Nine** Bright Shiners, not all Nine
 - ✅ **Five** Shiners (Ranna, Mosrael, Dyrim, Belgaer, Saraneth) gave full being to Charter
 - ✅ Charter Marks are **drawn at birth**, not appearing naturally

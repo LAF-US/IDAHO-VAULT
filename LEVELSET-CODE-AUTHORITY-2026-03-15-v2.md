@@ -41,7 +41,7 @@ LEVELSET PERMANENT: AUTHORITY: CODE — 2026-03-15
 ### This session (2026-03-15) — since last LEVELSET
 
 | File | Type | Action |
-| --- | --- | --- |
+|---|---|---|
 | `!ADMIN/*` (13 files) | Administrative | Renamed from `!ADMINISTRATION/` via `git mv` |
 | `.github/scripts/so***REMOVED***audit.py` | Python | Updated `!ADMINISTRATION` → `!ADMIN` references |
 | `.github/scripts/propose_moves.py` | Python | Updated `!ADMINISTRATION` → `!ADMIN` references |
@@ -57,7 +57,6 @@ LEVELSET PERMANENT: AUTHORITY: CODE — 2026-03-15
 | `.obsidian/plugins/recent-files-obsidian/data.json` | Config | Updated `!ADMINISTRATION` → `!ADMIN` references |
 
 **Commits this segment:**
-
 - `fa83df1` — rename `!ADMINISTRATION` to `!ADMIN` system-wide (atomic, 23 files)
 - `a2181f4` — update `!ADMIN/Claude.md` + create `LEVELSET-CURRENT.md`
 - `9dc3ba4` — add governance note to root `CLAUDE.md`
@@ -87,7 +86,7 @@ All items from prior LEVELSET (`0b7ab26`) plus above. Total: 6 commits ahead of 
 ### Known Conversations — Full Census
 
 | # | Conversation | Capability | Role | Last Known State | Status |
-| --- | --- | --- | --- | --- | --- |
+|---|---|---|---|---|---|
 | 1 | **PERSISTENT: ADMINISTRATION** | Draft only | Constitutional layer, conventions, judgment calls | Produced the handoff that drove this session's work. Updated Claude.md constitution, defined `!ADMIN/` as canonical folder name. | **Active.** Last output: 2026-03-15. |
 | 2 | **PERMANENT: AUTHORITY: CODE** (this) | Direct write | Central coding agent, repo operations, automation | Current session. 6 commits ahead of main. | **Active.** Producing this LEVELSET now. |
 | 3 | **STORY: JFAC Open Meetings** | Direct write | Bulk vault work, journalism story | Unknown. May be author of commits on `claude/levelset-current-synthesis-zWxJc` branch. | **Unknown.** |
@@ -101,7 +100,7 @@ All items from prior LEVELSET (`0b7ab26`) plus above. Total: 6 commits ahead of 
 ### Tier 3 / Research Conversations (closed, no ongoing role)
 
 | Conversation | Probable Role |
-| --- | --- |
+|---|---|
 | Idaho Public Television overview a... | Background context on IPTV |
 | Idaho Reports episode production... | Production workflow reference |
 | Understanding Black's Law diction... | Legal terminology lookup |
@@ -126,7 +125,7 @@ Wait for Logan to open the PR and resolve branch collision and Copilot artifact 
 
 ## 5. WHAT LOGAN NEEDS TO KNOW
 
-- **PR must be opened manually.** <https://github.com/loganfinney27/IDAHO-VAULT/compare/main...claude/levelset-multi-conversation-zWxJc>
+- **PR must be opened manually.** https://github.com/loganfinney27/IDAHO-VAULT/compare/main...claude/levelset-multi-conversation-zWxJc
 - **Branch collision risk.** `claude/levelset-current-synthesis-zWxJc` also created a `LEVELSET-CURRENT.md`. Whichever merges second will conflict.
 - **Copilot is now an actor.** It committed to this branch. Its role isn't defined in the constitution.
 - **Four remote branches exist.** `deploy-vault-automation-Qq5iK` is fully merged and can be deleted. The other three have unmerged commits.

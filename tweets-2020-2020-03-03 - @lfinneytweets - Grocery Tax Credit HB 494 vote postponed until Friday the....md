@@ -18,10 +18,9 @@ related:
   - idleg
 ---
 
-Grocery Tax Credit HB 494 vote postponed until Friday the 6th. #idpol #idleg <https://t.co/yG3cThhimW>
+Grocery Tax Credit HB 494 vote postponed until Friday the 6th. #idpol #idleg https://t.co/yG3cThhimW
 
 ## Links
-
-- <https://x.com/lfinneytweets/status/1233462901815427072>
+- https://x.com/lfinneytweets/status/1233462901815427072
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1234897579789307905)

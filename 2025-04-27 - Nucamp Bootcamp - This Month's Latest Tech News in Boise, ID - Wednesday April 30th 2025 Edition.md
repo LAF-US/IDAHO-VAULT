@@ -93,7 +93,7 @@ authority: LOGAN
 ---
 ![Aerial view of Boise, Idaho with digital graphics overlay symbolizing technology and AI data centers.](https://storage.googleapis.com/nucamp-production.appspot.com/aiseo-blogs/monthly-news-nucamp-utpaakmdmtidiami-wednesday-april-30th-2025/this-months-latest-tech-news-in-boise-id--wednesday-april-30th-2025-edition/thumbnail01.webp)
 
-#### Too Long; Didn't Read
+#### Too Long; Didn't Read:
 
 In April 2025, Boise's tech scene surged with a $1B Diode Ventures data center, Meta's $800M AI facility hitting peak construction, Boise State expanding AI literacy, and Idaho Power launching a $4M AI grid project. Legislative changes adjust data center tax incentives, while national semiconductor policy shifts impact local industry.
 
@@ -114,7 +114,7 @@ For more insight on the project's community response, business impact, and the s
 | Gemstone Tech Park | Diode Ventures | $1B+ | 620 acres | 100 | 600–800 MW |
 | Meta Data Center | Meta | $800M | 960,000 sq. ft. | 100 | N/A |
 
-#### Check out next
+#### Check out next:
 
 - Discover why [AI education becomes mandatory in all US schools](https://www.nucamp.co/blog/this-months-latest-tech-news-in-the-us--wednesday-april-30th-2025-edition) and what it means for the workforce of tomorrow.
 
@@ -384,7 +384,7 @@ Idaho Power and Pitch Aeronautics are deploying AI-driven drones to install sens
 
 Boise's tech sector is influenced by federal semiconductor policy, notably the CHIPS Act funding for Micron's $25 billion expansion, and new U.S. export controls on AI chips. Political debates over continued federal support and export restrictions are creating uncertainty, impacting major local employers like Micron and shaping Boise's role in the global tech economy.
 
-#### You may be interested in the following topics as well
+#### You may be interested in the following topics as well:
 
 - Discover how [AI innovation in Orem](https://www.nucamp.co/blog/this-months-latest-tech-news-in-orem-ut--wednesday-april-30th-2025-edition) is driving the city's reputation as a major tech hub this April.
 - Senior living communities are embracing [AI-powered senior care innovations](https://www.nucamp.co/blog/this-months-latest-tech-news-in-baltimore-md--wednesday-april-30th-2025-edition) to improve healthcare and resident experiences statewide.

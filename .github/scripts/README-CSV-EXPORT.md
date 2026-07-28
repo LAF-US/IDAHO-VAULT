@@ -15,7 +15,6 @@ python3 .github/scripts/idaho_leg_scraper.py --year 2026 --csv-export minidata.c
 ```
 
 This will:
-
 1. Fetch the current bill listing from legislature.idaho.gov
 2. Export all bills to the specified CSV file
 3. Include metadata: bill ID, type, number, alias, title, sponsor, committee, last action, URL, year, and export timestamp
@@ -29,7 +28,6 @@ The CSV export runs automatically via GitHub Actions:
 **Schedule:** Daily at 6:30 AM MT (13:30 UTC) — 30 minutes after the main bill scraper
 
 **Output:**
-
 - CSV file named `minidata-YYYY-MM-DD.csv`
 - Uploaded as GitHub Actions artifact (90-day retention)
 - Emailed to configured recipient
@@ -39,14 +37,13 @@ The CSV export runs automatically via GitHub Actions:
 For email delivery, configure these repository secrets:
 
 | Secret | Description | Example |
-| --- | --- | --- |
+|---|---|---|
 | `MAIL_USERNAME` | SMTP username (Gmail address) | `reporter@idahoptv.org` |
 | `MAIL_PASSWORD` | Gmail App Password | (16-character app password) |
 | `MAIL_TO` | Recipient email address | `producer@idahoptv.org` |
 
 **Setting up Gmail App Password:**
-
-1. Go to <https://myaccount.google.com/apppasswords>
+1. Go to https://myaccount.google.com/apppasswords
 2. Select "Mail" and "Other (Custom name)"
 3. Name it "GitHub Actions - Idaho Vault"
 4. Copy the 16-character password
@@ -57,7 +54,7 @@ For email delivery, configure these repository secrets:
 The exported CSV contains these columns:
 
 | Column | Description |
-| --- | --- |
+|---|---|
 | `bill_id` | Idaho Legislature bill identifier (e.g. H0001, S0042, HCR001) |
 | `bill_type` | Bill type abbreviation (HB, SB, HCR, SCR, etc.) |
 | `number` | Bill number without leading zeros |
@@ -93,7 +90,6 @@ To generate a CSV on-demand:
 5. Click "Run workflow" button
 
 The CSV will be:
-
 - Generated within ~30 seconds
 - Available as a downloadable artifact
 - Emailed to the configured recipient
@@ -101,21 +97,18 @@ The CSV will be:
 ## Troubleshooting
 
 **CSV export fails with "Could not fetch bill list":**
-
 - The legislature.idaho.gov site may be down or blocking requests
 - Check the workflow run logs for HTTP error details
 - The scraper includes retry logic with exponential backoff
 - If persistent, contact LSO for direct data access (see tracking issue)
 
 **Email delivery fails:**
-
 - Verify GitHub secrets are configured correctly
 - Check that Gmail App Password is valid (not regular password)
 - Ensure "Less secure app access" is NOT enabled (use App Password instead)
 - Review workflow logs for SMTP error messages
 
 **CSV file is empty or missing data:**
-
 - Verify the session year is correct
 - Check that bills exist for the specified year
 - Review scraper logs for parsing errors
@@ -123,7 +116,7 @@ The CSV will be:
 ## Files
 
 | File | Purpose |
-| --- | --- |
+|---|---|
 | `.github/scripts/idaho_leg_scraper.py` | Scraper script with CSV export |
 | `.github/workflows/budget-tracker-csv-export.yml` | Daily automation workflow |
 | `.github/scripts/requirements-scraper.txt` | Python dependencies |

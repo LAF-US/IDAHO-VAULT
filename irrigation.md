@@ -5,4 +5,4 @@ related:
 - water
 ---
 
-water for plant agriculture
+water for plant agriculture 

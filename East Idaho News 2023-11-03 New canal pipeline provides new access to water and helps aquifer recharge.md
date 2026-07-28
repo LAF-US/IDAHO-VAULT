@@ -25,9 +25,9 @@ related:
 - website
 authority: LOGAN
 ---
-<https://www.eastidahonews.com/2023/11/new-canal-pipeline-provides-new-access-to-water-and-helps-aquifer-recharge/>
+https://www.eastidahonews.com/2023/11/new-canal-pipeline-provides-new-access-to-water-and-helps-aquifer-recharge/
 
-Rett Nelson, East Idaho News
+Rett Nelson, East Idaho News 
 
 IDAHO FALLS – A pipeline project northeast of Idaho Falls will provide more access to Idaho’s greatest natural resource.
 

@@ -5,7 +5,6 @@ related:
 - Watkins Distributing
 authority: LOGAN
 ---
-Residence: Jerome
-
-- president of Watkins Distributing
-- - Broadband Advisory Board member
+Residence: Jerome 
+- president of Watkins Distributing 
+- - Broadband Advisory Board member 

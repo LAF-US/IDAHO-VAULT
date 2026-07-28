@@ -16,11 +16,10 @@ related:
   - lfinneytweets
 ---
 
-@EmmaTakatori <https://t.co/W8Id717zld>
+@EmmaTakatori https://t.co/W8Id717zld
 
 ## Links
-
-- <https://x.com/uiargonaut/status/1090853733334867968>
+- https://x.com/uiargonaut/status/1090853733334867968
 
 *In reply to [@EmmaTakatori](https://twitter.com/EmmaTakatori)*
 

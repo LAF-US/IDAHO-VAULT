@@ -5,4 +5,4 @@ related:
 - Horseshoe Bend
 authority: LOGAN
 ---
-Horseshoe Bend, Boise County
+Horseshoe Bend, Boise County 

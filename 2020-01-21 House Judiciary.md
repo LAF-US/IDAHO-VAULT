@@ -114,7 +114,7 @@ Rep. Melissa Wintrow – shortages of psychiatrists & psychologists, etc. Guidin
 
 Rep. Gary Marshall – has standard for commitments been consistent over time? Why the increase? Judge: probably a combination of factors, not a definite answer. If drugs, first examiner will determine that & person won’t be committed. To come into court system must be a brain issue that isn’t drugs or alcohol. Harm to self or others, gravely disabled
 
-Sexual Offender Management Board (administrative rules)
+Sexual Offender Management Board (administrative rules) 
 
 Nancy Volle, Program Manager
 
@@ -130,8 +130,10 @@ Repealing commission created in 2007 to promulgate rules for electronic records,
 
 Move to print, pass unanimously
 
+
 RS: Board of Correction / Training Programs – Rep Doug Ricks is postponing
 
-RS: Marriage License / Application – Rep Ricks
+
+RS: Marriage License / Application – Rep Ricks 
 
 Governor’s Office, Jared Larson. Code 32-403 line 37 (added in 1999) mentions a reference to a department. Which one? Bill strikes out the unclear language.

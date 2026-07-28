@@ -21,7 +21,6 @@ Historical note for the retired demo harbor. Do not use this file as the current
 ## Prerequisites
 
 1. **Python 3.13+** with venv active:
-
    ```bash
    cd /path/to/IDAHO-VAULT
    source .venv/bin/activate  # Linux/macOS
@@ -29,19 +28,15 @@ Historical note for the retired demo harbor. Do not use this file as the current
    ```
 
 2. **Dependencies installed:**
-
    ```bash
    pip install -r requirements.txt
    ```
-
    Key packages: `crewai[tools,anthropic]>=1.12.0`, `python-dotenv>=1.0.0`, `op` (1Password CLI)
 
 3. **API key via `op run`** (local-only — never committed):
-
    ```
    ANTHROPIC_API_KEY=op://YOUR_VAULT/YOUR_ITEM/YOUR_FIELD
    ```
-
    Fetch from [console.anthropic.com/settings/keys](https://console.anthropic.com/settings/keys).
    Account must have API credits loaded at [console.anthropic.com/settings/plans](https://console.anthropic.com/settings/plans).
 
@@ -57,14 +52,12 @@ scripts/op-run-jfac.ps1
 ```
 
 **What happens:**
-
 1. Loads API key from the environment, ideally provisioned by `op run`
 2. Instantiates 3 agents (Budget Scout, Legislative Tracker, H911 Parser)
 3. Runs 5 sequential tasks (WHO, WHAT, WHEN, WHERE, WHY)
 4. Writes output to `!/CREWAI/jfac-analysis-{run_id}.md`
 
 **Inputs consumed:**
-
 - `minidata-*.csv` — dated JFAC minidata snapshots (vault root)
 - `legislature.idaho.gov` — live bill status (scraped by bill_status_checker tool)
 
@@ -95,7 +88,7 @@ crew_run_id: "{run_id}"
 ## Ephemeral vs. Durable
 
 | Surface | Persisted? | Location |
-| --- | --- | --- |
+|---|---|---|
 | Crew output (analysis files) | **Yes** — committed to vault | `!/CREWAI/` |
 | Runtime cache | No — gitignored | `.crewai_cache/` |
 | Execution logs | No — gitignored | `.crewai/logs/` |

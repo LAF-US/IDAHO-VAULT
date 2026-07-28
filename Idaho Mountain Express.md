@@ -11,4 +11,4 @@ related:
 - Sun Valley
 authority: LOGAN
 ---
-Blaine County newspaper serving Sun Valley, Ketchum, Hailey Bellevue and Carey
+Blaine County newspaper serving Sun Valley, Ketchum, Hailey Bellevue and Carey 

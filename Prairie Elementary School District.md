@@ -4,4 +4,4 @@ related:
 - Prairie
 authority: LOGAN
 ---
-Prairie, Elmore County
+Prairie, Elmore County 

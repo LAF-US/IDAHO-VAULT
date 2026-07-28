@@ -18,10 +18,9 @@ related:
   - idleg
 ---
 
-Gotta love the statehouse. #idpol #idleg <https://t.co/6YXt9PFomz>
+Gotta love the statehouse. #idpol #idleg https://t.co/6YXt9PFomz
 
 ## Links
-
-- <https://t.co/6YXt9PFomz>
+- https://t.co/6YXt9PFomz
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1155495123981099008)

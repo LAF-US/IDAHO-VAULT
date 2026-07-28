@@ -9,8 +9,7 @@ related:
 - fire
 authority: LOGAN
 ---
-Silver Valley fire district in Shoshone County
-
+Silver Valley fire district in Shoshone County 
 - Osburn
 - Silverton
 - Wallace

@@ -3,4 +3,4 @@ related:
 - East Coast
 authority: LOGAN
 ---
-East Coast
+East Coast 

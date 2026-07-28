@@ -8,7 +8,7 @@ source: commit
 
 ## Contact
 
-- **Email:** <jnovak@senate.idaho.gov>
+- **Email:** jnovak@senate.idaho.gov
 - **Phone:** (208) 332-1309
 - **Education:** Pacific University
 

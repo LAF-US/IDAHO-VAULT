@@ -39,12 +39,10 @@ related:
 - Woodruff
 authority: LOGAN
 ---
-Primary north-south interstate in Southeast Idaho and Eastern Idaho
+Primary north-south interstate in Southeast Idaho and Eastern Idaho 
 
 # North to South
-
-**- Montana state line, Monida Pass**
-
+**- Montana state line, Monida Pass** 
 - Humphrey, Spencer
 - Highway 22 at Dubois
 *- Clark-Jefferson county line*
@@ -54,9 +52,9 @@ Primary north-south interstate in Southeast Idaho and Eastern Idaho
 *- Jefferson-Bonneville county line*
 - US 20 at Idaho Falls
 *- Bonneville-Bingham county line*
-- Shelley
+- Shelley 
 - US 26 at Blackfoot, Blackfoot River
-- US 91 near Gibson
+- US 91 near Gibson 
 - Fort Hall Indian Reservation, Fort Hall
 *- Bingham-Bannock county line*
 - I-86, US 91 at Pocatello/Chubbuck
@@ -66,8 +64,8 @@ Primary north-south interstate in Southeast Idaho and Eastern Idaho
 - US 91 at Virginia (Bannock)
 - Highway 40 to Downey
 *- Bannock-Oneida county line*
-- Highway 36
+- Highway 36 
 - Highway 38 at Malad City
-- Malad River
+- Malad River 
 - Cherry Creek, Woodruff
 **- Utah state line**

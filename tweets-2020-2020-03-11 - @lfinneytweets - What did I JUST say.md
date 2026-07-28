@@ -14,10 +14,9 @@ related:
   - lfinneytweets
 ---
 
-What did I JUST say <https://t.co/yyMkNbTC6d>
+What did I JUST say https://t.co/yyMkNbTC6d
 
 ## Media
-
 - ![](https://pbs.twimg.com/media/ESzXJ_UUwAEht8D.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

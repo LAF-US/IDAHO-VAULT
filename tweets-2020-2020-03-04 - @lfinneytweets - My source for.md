@@ -16,12 +16,11 @@ related:
   - lfinneytweets
 ---
 
-@IDSecOfState My source for
-<https://t.co/O810fTM8fh>
+@IDSecOfState My source for 
+https://t.co/O810fTM8fh
 
 ## Links
-
-- <https://x.com/lfinneytweets/status/1234892608217829378>
+- https://x.com/lfinneytweets/status/1234892608217829378
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

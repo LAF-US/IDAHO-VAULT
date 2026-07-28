@@ -21,9 +21,8 @@ related:
   - idpol
 ---
 
-@IdahoITD Funds from plate sales would be directed to two nonprofits:
-
-- the Wassmuth Center for Human Rights, an advocacy group that maintains the Anne Frank Human Rights Memorial in Boise.
+@IdahoITD Funds from plate sales would be directed to two nonprofits: 
+- the Wassmuth Center for Human Rights, an advocacy group that maintains the Anne Frank Human Rights Memorial in Boise. 
 - Choose Life Idaho, Inc., an advocacy group that supports crisis pregnancy centers. #idleg #idpol
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

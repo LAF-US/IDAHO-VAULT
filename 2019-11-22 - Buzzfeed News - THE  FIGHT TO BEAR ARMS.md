@@ -159,6 +159,7 @@ Whatever happens to the festival, it will be far from the end of the fight. As S
 
 When Herndon filmed himself at the festival on Aug. 9, he wasn’t just making an amplifiable piece of media to activate a national audience. He was creating a test case — one with ramifications that extend far beyond a music festival in North Idaho. How far can businesses and individuals actually push gun control measures in the absence of legislative action — and how aggressive will activists become in their attempt to fortify their rights everywhere else?
 
+
 Tailyr Irvine for BuzzFeed News
 Greg Pruett, president of the Idaho Second Amendment Alliance, speaks at the Eagles Lodge in Sandpoint.
 
@@ -183,6 +184,7 @@ Through the ’80s and ’90s, Idaho voters were still pretty evenly split betwe
 
 Since 2008, the rise of the tea party had pushed the Idaho GOP further and further to the right. All over the state, sitting GOP lawmakers, county commissioners, sheriffs, and county clerks were primaried from the right, defeated by candidates promising to uphold “truly” conservative values. But even with more and more “liberty-minded” lawmakers in office, Pruett looked at the legislature and wondered: If it was truly filled with Constitution-loving conservatives, then why hadn’t they passed constitutional carry?
 
+
 Tailyr Irvine for BuzzFeed News
 Pamphlets are passed through the crowd during the Idaho Second Amendment Alliance's "Freedom Tour" at Eagles Lodge in Sandpoint.
 
@@ -194,7 +196,7 @@ Pruett has become well known for his methodical efficacy at the capitol, which i
 For Pruett’s first attempt at getting constitutional carry through the legislature in 2013, he partnered with Alexandra Kincaid, a Boise-area attorney, gun rights advocate, and occasional Fox News guest. They’d first met outside a gun store, where Pruett was collecting signatures in support of constitutional carry. Together, they devised a strategy: Kincaid would help draft the legislation and provide legal counsel, and Pruett would get the dozens of supposedly “pro-gun” legislators to support it. But he quickly found that declaring oneself “pro-gun” was very different from being willing to support constitutional carry.
 
 ADVERTISEMENT
-“How is 80% of the legislature Republican, and yet we can’t pass a constitutional carry law, which should be a no-brainer?”
+“How is 80% of the legislature Republican, and yet we can’t pass a constitutional carry law, which should be a no-brainer?” 
 “On the campaign trail, every Republican and every Democrat without fail will tell you they are for the Second Amendment, they are for your gun rights,” Pruett explained. “They all do it — you can see the taped photo ops with the shotgun and the John Deere hat on. But I started getting frustrated. How is 80% of the legislature Republican, and yet we can’t pass a constitutional carry law, which should be a no-brainer?”
 
 Pruett said he was told by legislators and their staffers to bide his time — or at least wait until after the 2016 election year. A recent study put Idaho’s gun ownership rate at 56.9% — third in the nation — and most Republican legislators, like their constituents, supported the broad idea of “guns and gun rights.” But many of those same constituents, including the gun-owning ones, also supported “common sense” gun reforms, like background checks. If a more radical bill like constitutional carry made it to the floor, it could put certain legislators in a tough place: vote against it and open themselves to a primary challenger from the right, or vote for it and open themselves to a primary challenger to the left.
@@ -251,6 +253,7 @@ After the video of Herndon confronting festival security was posted online, Prue
 
 “We can’t let these radical progressive ideas and these radical progressive policies and these radical progressives thumb their noses at our rights,” he continued. “We can’t allow that to go unimpeded — because if we do, then more and more of them will start doing it. If we let the city of Sandpoint get away with it, then guess what? Then it’s all the other cities, with all the other liberal progressives on their city councils or commissioners or sheriffs — they’re all gonna start doing it. They’re gonna start ignoring the law.”
 
+
 Tailyr Irvine for BuzzFeed News
 War Memorial Field, home to the Festival at Sandpoint.
 
@@ -258,6 +261,7 @@ ADVERTISEMENT
 As Pruett was rallying support for the cause, he embarked on an 11-city “freedom tour” of the state. But before he arrived in Sandpoint in late September, news broke: There was no need, at least for now, for the ISAA to file suit. Because Bonner County, with the support of the county commissioners and Sheriff Daryl Wheeler, had beat them to it.
 
 County Commissioner Dan McDonald prides himself on his transparency. He willingly gives out his personal phone number and spends considerable amounts of his after-work hours on his Facebook page, where he posts conservative memes, county announcements, and articles with titles like “5 Things Marx Wanted to Abolish (Besides Private Property).” McDonald’s cover photo features him decked out in a sleeveless black leather Harley Davidson vest next to his beloved motorcycle. A set of professional family photos include him with his three grown sons, all of them carrying firearms; McDonald is front and center with an AR-15.
+
 
 Courtesy Dan McDonald
 Bonner County Commissioner Dan McDonald
@@ -281,6 +285,7 @@ Wheeler considers himself a “constitutional sheriff,” a label denoting the i
 
 “In the state of Idaho, it’s clear these rights can’t be breached,” he told me. “To me, there’s not two sides. It’s not the festival and the county. There’s just the rule of law, and it says you can do this as a citizen.”
 
+
 Tailyr Irvine for BuzzFeed News
 Sandpoint Mayor Shelby Rognstad on the Long Bridge.
 
@@ -298,6 +303,7 @@ At the coffee shop, Rognstad dragged a chair up to the table. He’s tall, thin,
 
 Rognstad grew up three hours south in Lewiston, attending the University of Idaho before moving to Sandpoint to start a local bookstore and restaurant. He’s watched as the area has continued to transform before his eyes. “Up here, I think there’s been a whole shift around gun culture,” he said. “It used to be you just kinda grew up around it, your family went hunting, you learned gun safety at a young age. No one needed to brandish their guns when they went to work or to the supermarket.”
 
+
 Tailyr Irvine for BuzzFeed News
 From left: Bonner County Human Rights Task Force members Sharon McCahon, Brenda Hammond, and Gloria Ray at Evans Brothers Coffee Roasters in Sandpoint.
 
@@ -311,6 +317,7 @@ What changed, then? Sure, there’s the perception that even the most seemingly 
 ADVERTISEMENT
 
 Todd Bradshaw, 46, buys a "Don't Tread on ID" shirt during the Idaho Second Amendment Alliance Freedom Tour at Eagles Lodge in Sandpoint on Sept. 28. Tailyr Irvine for BuzzFeed News
+
 
 A .45-caliber handgun sits in a holster on Jeff Farnsworth's hip during the Idaho Second Amendment Alliance Freedom Tour at Eagles Lodge in Sandpoint on Sept. 28. Tailyr Irvine for BuzzFeed News
 

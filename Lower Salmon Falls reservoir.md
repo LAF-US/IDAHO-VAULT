@@ -8,4 +8,4 @@ related:
 - Twin Falls County
 authority: LOGAN
 ---
-reservoir on the Snake River in Gooding and Twin Falls County created by Lower Salmon Falls dam
+reservoir on the Snake River in Gooding and Twin Falls County created by Lower Salmon Falls dam 

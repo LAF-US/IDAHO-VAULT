@@ -6,4 +6,4 @@ related:
 - Payette River
 authority: LOGAN
 ---
-Payette River reservoir created by Cascade Dam
+Payette River reservoir created by Cascade Dam 

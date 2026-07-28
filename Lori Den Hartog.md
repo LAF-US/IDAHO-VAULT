@@ -7,6 +7,5 @@ related:
 authority: LOGAN
 ---
 Residence: Meridian
-
 - Senate member, former Senate Transportation chair
-- daughter of John Vander Woude
+- daughter of John Vander Woude 

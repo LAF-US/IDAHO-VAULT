@@ -13,7 +13,6 @@ There are two free
 ```
 Spanish-English dictionaries
 ```
-
 : our own dictionary and one from Collins. Each has its own strengths. Combined, they are unbeatable.
 
 ### French and Italian Dictionaries
@@ -27,5 +26,4 @@ The WordReference
 ```
 language forum
 ```
-
 is the largest repository of knowledge and advice about the English language, as well as a number of other languages. If you have a question about language usage, first search the hundreds of thousands of previous questions. If you still are unsure, then you can ask the question yourself. Native speakers from around the world will be happy to assist you.

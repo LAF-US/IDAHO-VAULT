@@ -56,7 +56,6 @@ The Garden (which contains the Orchard that ARBORSCAPE tends) includes other plo
 Four PRs were analyzed under the expanded scope. No merges, edits, branch work, or doctrine canonization performed. Disposition observations only.
 
 ### PR #352 — Dependabot urllib3 (clean security PR)
-
 - **Branch**: `dependabot/uv/uv-c30c77f42d` — automated category, age 0d
 - **PR state**: `MERGEABLE / UNSTABLE`
 - **Check rollup**: CI green except `submit-pypi` (known noise per IF 1)
@@ -66,7 +65,6 @@ Four PRs were analyzed under the expanded scope. No merges, edits, branch work, 
 - **Disposition**: ready for Logan-merge
 
 ### PR #356 — Codex Swarm MVP (clean agent feature PR)
-
 - **Branch**: `codex/swarm-mvp-github-intake` — active development, age 0d
 - **PR state**: `MERGEABLE / UNSTABLE`
 - **Check rollup**: GitGuardian Security Checks and CodeQL `Analyze (python)` both SUCCESS; `submit-pypi` noise only
@@ -77,7 +75,6 @@ Four PRs were analyzed under the expanded scope. No merges, edits, branch work, 
 - **Disposition**: ready for Logan-merge
 
 ### PR #355 — Codex hardening (stuck/blocked PR)
-
 - **Branch**: `codex/github-automation-hardening-2026-05-22` — active development, age 0d
 - **PR state**: `CONFLICTING / DIRTY`
 - **Action_required queue item**: `Agent Review Response` run from 17:33 awaiting human action
@@ -86,7 +83,6 @@ Four PRs were analyzed under the expanded scope. No merges, edits, branch work, 
 - **Disposition**: needs (a) rebase or merge-from-main to clear conflicts, (b) action_required queue clearance, (c) multi-agent contention review on the shared files
 
 ### PR #354 — Cloud Claude `.claude` updates (ambiguous status PR)
-
 - **Branch**: `claude/update-claude-files-PRWCJ` — active development, age 0d
 - **PR state**: `mergeable: UNKNOWN / mergeStateStatus: UNKNOWN`
 - **Self-witness**: YES — `.claude/MEMORY/SESSION-2026-05-22.md` self-anchors with explicit failures, corrections, and doctrine-not-yet-filed
@@ -164,13 +160,11 @@ Phased, with dependencies and gating decisions noted. No code is written here �
 This decision gates the *value* of the existing rhythm and reaper workflows, but does not gate building the other rhythms in this plan. Phase 0 can run in parallel with Phase 1.
 
 If branch protection is enabled:
-
 - `dependabot-rhythm.yml` and `dependabot-reaper.yml` function as originally designed.
 - The `dependabot/low-risk-auto` label gating from the morning's reaper work becomes the proof-of-eligibility for auto-merge.
 - The race-tolerance retry loop in rhythm remains as defense-in-depth.
 
 If branch protection is not enabled:
-
 - Rhythm and reaper switch to direct `gh pr merge --squash` with the race-tolerance retry loop already drafted.
 - Auto-merge claims drop from the language; merges become immediate.
 - This is the path the morning's dependabot-race-conditions diagnostic anticipated.
@@ -180,7 +174,6 @@ If branch protection is not enabled:
 These are buildable without further structural decisions. Each is independent of the others.
 
 **Phase 1a — Per-utterance verification rhythm (IF 7)**
-
 - New workflow: post-claim verification on agent PRs.
 - Trigger: PR comment containing an agent completion claim (regex match on common phrases like "ready to merge", "ready for review", "clean and pushed").
 - Action: GitHub API call comparing claim against `mergeable`, `mergeStateStatus`, and check rollup. Posts a follow-up comment with the institutional state if it diverges from the claim.
@@ -188,7 +181,6 @@ These are buildable without further structural decisions. Each is independent of
 - Acceptance: divergence reliably detected and surfaced; matching claims confirmed cleanly.
 
 **Phase 1b — `action_required` queue sweep (IF 8)**
-
 - New workflow: scheduled sweep (cron every 2h or 6h).
 - Trigger: cron + workflow_dispatch.
 - Action: query for workflow runs in `action_required` status; group by PR; produce a digest comment on the PR or a Logan-readable summary issue.
@@ -196,7 +188,6 @@ These are buildable without further structural decisions. Each is independent of
 - Acceptance: every `action_required` run is surfaced at least once between schedule ticks.
 
 **Phase 1c — Self-witnessing contract validation (IF 9)**
-
 - Prerequisite: doctrinal decision on contract contents — what does a session anchor minimally require? (See "Required adjacent decision" below.)
 - New workflow: validation step on agent-branch PRs.
 - Trigger: PR open or sync from agent-prefixed branches (`codex/*`, `claude/*`, `copilot/*`, `gemini/*`).
@@ -205,7 +196,6 @@ These are buildable without further structural decisions. Each is independent of
 - Acceptance: PRs from agents without anchors fail this check; PRs with conforming anchors pass.
 
 **Phase 1d (adjacent, rhythm-shaped) — Metadata compliance scanner (issue #252)**
-
 - Not strictly an ARBORSCAPE rhythm; lives in the metadata/frontmatter garden plot.
 - Already specified by Logan in issue #252 as the next concrete step in his phased approach.
 - Read-only scanner reporting compliance debt against `VAULT-METADATA-STANDARD`.
@@ -223,7 +213,6 @@ This contract is a doctrinal decision, not a Phase 1 implementation. It needs to
 These depend on doctrinal decisions outside ARBORSCAPE proper, listed for sequencing visibility.
 
 **Phase 2a — Mechanical/doctrinal routing (IF 10)**
-
 - Prerequisite: path taxonomy decision — which paths are doctrinal-protected? Candidate set: `VAULT-*`, `CONSTITUTION.md`, `AGENTS.md`, `.claude/CLAUDE.md`, `.codex/CODEX.md`, `.gemini/GEMINI.md`, `.perplexity/PERPLEXITY.md`, `!README.md`, `!/`, `*-DOCTRINE-*.md`, `*-WITNESS-*.md`, `STUB-PERSONAFOLDERS-*`, `PERSONA-*`. Final list is institutional.
 - New workflow: label-routing step.
 - Trigger: PR open or sync.
@@ -232,7 +221,6 @@ These depend on doctrinal decisions outside ARBORSCAPE proper, listed for sequen
 - Acceptance: the morning's PR #354 case (`.claude/CLAUDE.md` changes) would be correctly tagged; PR #352 (dependency bump) would not.
 
 **Phase 2b — Multi-agent file contention detector (IF 11)**
-
 - Prerequisite: an agent identity registry — how is each agent recognized in `git log`? Candidates: commit author email patterns, commit message prefixes, branch-name prefixes (`codex/`, `claude/`, `copilot/`, `gemini/`).
 - New workflow: contention detection step.
 - Trigger: PR open or sync.

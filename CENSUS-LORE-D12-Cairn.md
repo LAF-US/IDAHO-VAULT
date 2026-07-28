@@ -71,7 +71,6 @@ N opened: 9 full files read + 2 directory listings + 1 search.
 ~M rough estimate of total corpus: 2,900+ notes (stated in door file); root listing shows 669 files + 331 directories at root alone; the `!` folder contains 200+ items; dotfolders number 300+. Estimated total: 3,000–5,000+ files.
 
 Notable doors seen but NOT opened:
-
 - `CONSTITUTION.md` (binding governance, mentioned everywhere — not read)
 - `swarm.json` (machine-readable agent registry)
 - `DECISIONS.md`

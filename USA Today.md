@@ -5,4 +5,4 @@ related:
 - USA
 authority: LOGAN
 ---
-American national newspaper
+American national newspaper 

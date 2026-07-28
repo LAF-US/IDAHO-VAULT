@@ -7,7 +7,7 @@ created: 2026-04-06
 ---
 ## After Republican warns to protect NRA record, Idaho House passes bill to allow guns in courthouses
 
-## Nampa Republican Rep. Brent Crane called the bill an unfunded mandate for counties. He still voted for it
+## Nampa Republican Rep. Brent Crane called the bill an unfunded mandate for counties. He still voted for it.
 
 ![Idaho Capital Building in Boise](https://idahocapitalsun.com/wp-content/uploads/2021/10/ICS-State-Capitol-210320d3-2228-med_original-2048x1365.jpg)
 

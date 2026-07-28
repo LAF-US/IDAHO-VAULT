@@ -26,20 +26,16 @@ date: 2026-06-07
 > **Provenance.** Web-verified 2026-06-07 (Deltora Quest Wiki, Wikipedia). **[canon-per-series].** Paraphrased.
 
 ## What they are
-
 - **[canon]** **Thaegan's thirteen children** — **less powerful and less clever than their mother, but just as cruel**, monstrous in form, who will hunt, kill, and eat any victim they pursue.
 
 ## The thirteen
-
 - **[canon]** **Hot, Tot, Jin, Jod, Fie, Fly, Zan, Zod, Pik, Snik, Lun, Lod, and Ichabod.**
 - **[canon]** **Jin and Jod** are the pair the company encounters directly. *(⚠️ Per-child detail beyond the names is thin in the sources surveyed — flagged for a deeper pass if wanted.)*
 
 ## Role in the quest
-
 - **[canon]** They serve their mother's cruelty while she lives; after **[[RESEARCH_Deltora-Thaegan-2026-06-07\|Thaegan]]** is slain at the Lake of Tears, the surviving children **hunt Lief, Barda, and Jasmine for revenge** across later stages of the journey.
 
 ## Cross-references & sources
-
 `[[RESEARCH_Deltora-Thaegan-2026-06-07]]` · `[[RESEARCH_Deltora-The-Gem-Guardians-2026-06-07]]` · `[[RESEARCH_Deltora-The-Seven-Tribes-and-their-Lands-2026-06-04]]`
 [Category: Thaegan's children](https://deltoraquest.fandom.com/wiki/Category:Thaegan's_children) · [Thaegan's Children — Villains Wiki](https://villains.fandom.com/wiki/Thaegan's_Children) · [List of Deltora Quest characters — Wikipedia](https://en.wikipedia.org/wiki/List_of_Deltora_Quest_characters)
 

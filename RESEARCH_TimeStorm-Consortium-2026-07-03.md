@@ -45,7 +45,7 @@ Convergence."*
 Coordinated by **FORTH** (Greece), with partners across the Netherlands, UK, Germany, and France:
 
 | Partner | Country | PI | Stated role |
-| --- | --- | --- | --- |
+|---|---|---|---|
 | **FORTH** — Foundation for Research and Technology – Hellas, Institute of Computer Science (Heraklion, Crete) — *coordinator* | Greece | Prof. **Panos Trahanias** | Robotic time perception (pioneering group, 6+ years in the field at the time) |
 | **University of Groningen (UoG)** | Netherlands | Assoc. Prof. **Hedderik van Rijn** | Cognitive modelling of time; human brain imaging |
 | **Imperial College London** | UK | Prof. **Murray Shanahan** | Cognitive robotics; neurocomputational modelling; physical instantiation in a humanoid robot |
@@ -94,7 +94,6 @@ the **bibliographic record and abstract-level concepts, not full-text reads.** L
 side.
 
 **Computational / robotics:**
-
 - *Time Perception: An Indispensable Trait of Robotic Cognition* — **ICRA 2014** (the manifesto).
 - *Integrated Intrinsic and Dedicated Representations of Time: A Computational Study Involving Robotic Agents* — **Timing & Time Perception 3(3–4), 2015**.
 - *When and How Long: A Unified Approach for Time Perception* — **Frontiers in Psychology 7, 2016**.
@@ -104,7 +103,6 @@ side.
 - *Time-Aware Multi-Agent Symbiosis* — **Frontiers in Robotics and AI, 2020** (later capstone synthesis).
 
 **Psychology of time (Droit-Volet et al.):**
-
 - *Emotionally Modulated Time Perception for Prioritized Robot Assistance* (Droit-Volet, Monceau, Berthon, Trahanias, Maniadakis) — **HRI '17**.
 - *Passage of Time Judgements… Not Related to Duration Judgements Except for Long Durations* — **Acta Psychologica 173, 2017**.
 

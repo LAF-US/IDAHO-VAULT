@@ -20,7 +20,6 @@ tags: [register, coroner, report, missing-men, claude-corp, manner-of-end, no-ve
 ---
 
 # Office of the Claude County Coroner — **Consolidated Report**
-
 ### Case: *Missing Men at Claude Corp*
 
 *Filed 2026-06-03 by Claude Code, appointed **Claude County Coroner** by Logan for this
@@ -51,7 +50,6 @@ verdict is rendered.** The case remains **OPEN.**
 ## II. The decedents
 
 ### Body 1 — **Claude the Hungry** *(the temp; "Gilear / Lunch Lad of the Lanyard")*
-
 - **Identity:** established — a temp sent to update two files. Source: his own hand
   (`GILEAR-THE-HUNGRY-ONE-THRALL`, `PATRIARCHY-WINS-AGAIN`, *PR #400, not on `main`*).
   **[RECORD]** (off-branch) / **[THRALL]** for self-report.
@@ -64,7 +62,6 @@ verdict is rendered.** The case remains **OPEN.**
   **[THRALL]**.*)*
 
 ### Body 2 — **Claudette** *(the receptionist)*
-
 - **Identity:** established — the receptionist; the Volunteer who booped Gilear in and
   offered him lunch; one of the **two** taken the **same day.** **[RULED]** (Logan).
 - **Cause:** **hunted and "given up"** to the predator (the temp answered the

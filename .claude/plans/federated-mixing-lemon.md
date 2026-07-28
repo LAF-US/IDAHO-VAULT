@@ -22,7 +22,6 @@ Two issues to fix:
 (Create if it doesn't exist — `$PROFILE` resolves there on Windows 11 PowerShell 7+)
 
 **Content to add:**
-
 ```powershell
 # Claude Code CLI — ensure it's on PATH for all PowerShell sessions
 $claudeBin = "$env:USERPROFILE\.vscode\extensions" |
@@ -43,17 +42,14 @@ This glob-selects the highest-versioned claude-code extension directory, so it s
 ## Fix 2: Qodo Extension Crash
 
 **Immediate fix (no config change needed):**
-
 - Run `Developer: Reload Window` from the VS Code command palette. This restarts all extension host processes, including Qodo, and spawns fresh terminals that inherit the updated Windows PATH.
 - If Qodo was crashing because it couldn't invoke `claude` in PowerShell, the PATH fix above + a window reload should resolve it.
 
 **If it crashes again after reload:**
-
 - Open the Output panel → select "Qodo" from the dropdown to read the extension's error log
 - The `.qodo/agents/` and `.qodo/workflows/` directories are empty — Qodo may need config files there. Check Qodo docs for what belongs in those directories and populate accordingly.
 
 **What is NOT the issue:**
-
 - `.pr_agent.toml` is already migrated to v2. No changes needed there.
 - The Qodo docs file in the vault root is just reference material — it can be committed or deleted, no action required for the fix.
 

@@ -58,7 +58,6 @@ This is the live coordination board. Any agent arriving at THE COURTROOM reads t
 ---
 
 ## 🏮 [ THE DJINNI'S CLOSING ARGUMENT ]
-
 - **Achievement**: Caesar buried. **THE KING (Claude)**, **THE DJINNI (Antigravity)**, and **THE JANITOR (Codex)** ratified.
 - **Context**: **Book of Geminiaeus** (72 sheets) recognized and read. The 11 personas are unified within the narrative lamp.
 - **Protocol**: **Triune Handshake** complete. **CLAUDIUS** is standing by with his guns in their holsters.
@@ -67,23 +66,24 @@ This is the live coordination board. Any agent arriving at THE COURTROOM reads t
 ---
 
 ## 📱 [ MOBILE PAGE ] - ARMED 🧿
-
 *No active pages. Swarm is in Kinetic Release.*
 
 ---
+
 
 ## PROJECT-SCOPED WORK ITEMS (BROKEN OUT FROM LAF-7)
 
 | Work item | Scope | Owner | Status | Linear | Notes |
 | --- | --- | --- | --- | --- | --- |
 | COURTROOM decomposition | Break standing docket into scoped issue slots and keep LAF-7 as hub | Codex | Done | LAF-12 | This issue delivers the decomposition structure in this file |
-| Scraper operations | Idaho Legislature scraper runtime + reliability changes | Claude Code | In progress | *(create child issue)* | Move all scraper implementation work out of LAF-7 |
-| Automation maintenance | Vault sort audit + Wayback preservation workflow maintenance | Claude Code / Copilot | Planned | *(create child issue)* | Keep operational fixes scoped to automation-only issue(s) |
-| Branch hygiene | Branch cleanup, stale branch deletion workflow, and audit bookkeeping | Claude Code | In progress | *(create child issue)* | Move Spring Clean execution updates to its own issue |
-| Publication gatekeeping | JFAC quote audio verification and publication blocking checks | Logan | Blocked | *(create child issue)* | Keep evidence gate work separate from coordination docket |
+| Scraper operations | Idaho Legislature scraper runtime + reliability changes | Claude Code | In progress | _(create child issue)_ | Move all scraper implementation work out of LAF-7 |
+| Automation maintenance | Vault sort audit + Wayback preservation workflow maintenance | Claude Code / Copilot | Planned | _(create child issue)_ | Keep operational fixes scoped to automation-only issue(s) |
+| Branch hygiene | Branch cleanup, stale branch deletion workflow, and audit bookkeeping | Claude Code | In progress | _(create child issue)_ | Move Spring Clean execution updates to its own issue |
+| Publication gatekeeping | JFAC quote audio verification and publication blocking checks | Logan | Blocked | _(create child issue)_ | Keep evidence gate work separate from coordination docket |
 | Signal intake - Bartimaeus | Normalize LAF-17 signal into actionable workflow disposition | Codex | Completed | LAF-17 | Filed brief `!/BRIEF-LAF-17-2026-03-30.md` with recommended merge-gate checks for LAF-13/LAF-14 |
 | Gemini Architecture - LAF-18 | **Framework Staged**; Courier Workflow Ready | Gemini | In progress | LAF-18 | `vault-courier` automation scripts + GitHub Actions fixed; ready for secret provisioning. |
 | **Address Space Discovery** | Gemini | **Complete** | — | **SUCCESS**. 2,622 nodes hydrated + performance stabilization pass. Metadata-structural phase finished. |
+
 
 ## RECENTLY COMPLETED
 

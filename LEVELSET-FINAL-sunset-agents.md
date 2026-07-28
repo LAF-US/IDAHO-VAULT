@@ -45,4 +45,4 @@ See proposal below.
 
 **Branch:** `claude/sunset-non-persistent-agents-4iLqH`
 **Commit:** 5e14f1d
-**Session:** <https://claude.ai/code/session_016kUAFDxTNwGKSHoGqhDZb3>
+**Session:** https://claude.ai/code/session_016kUAFDxTNwGKSHoGqhDZb3

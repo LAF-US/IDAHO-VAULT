@@ -84,4 +84,4 @@ Manning of Earthjustice said it’s possible to provide power to the region and 
 “Our goal has long been to reach a comprehensive solution that would prevent salmon extinction, restore the Columbia River Basin ecosystem and replace the services now provided by the dams so the Pacific Northwest can chart a more sustainable and resilient future,” she wrote.
 
 _Washington State Standard reporter Jerry Cornfield contributed to this report.
-Oregon Capital Chronicle is part of States Newsroom, a network of news bureaus supported by grants and a coalition of donors as a 501c(3) public charity. Oregon Capital Chronicle maintains editorial independence. Contact Editor Lynne Terry for questions: <info@oregoncapitalchronicle.com>. Follow Oregon Capital Chronicle on Facebook and Twitter._
+Oregon Capital Chronicle is part of States Newsroom, a network of news bureaus supported by grants and a coalition of donors as a 501c(3) public charity. Oregon Capital Chronicle maintains editorial independence. Contact Editor Lynne Terry for questions: info@oregoncapitalchronicle.com. Follow Oregon Capital Chronicle on Facebook and Twitter._

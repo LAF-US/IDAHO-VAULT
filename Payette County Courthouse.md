@@ -6,4 +6,4 @@ related:
 - magistrate court
 ---
 
-magistrate court Payette County courthouse
+magistrate court Payette County courthouse 

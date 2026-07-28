@@ -39,6 +39,6 @@ Lives lost to fentanyl overdoses represent the leading cause of death in people 
 
 The current punishment available for this deadly street drug comes nowhere close to accounting for the social costs to Idaho. Education is vital, but so are deterrents to the traffickers. This coming January, we have an opportunity as a Legislature to help the rising fentanyl problem right here in Idaho.
 
-I encourage you to call or email your Idaho legislators. Please let them know if you support adopting mandatory minimums for fentanyl. Together we can fight the scourge of fentanyl.
+I encourage you to call or email your Idaho legislators. Please let them know if you support adopting mandatory minimums for fentanyl. Together we can fight the scourge of fentanyl. 
 
 _Rep. Chenele Dixon represents Legislative District 24 (Camas, Gooding and Twin Falls counties). She is a member of the Main Street Idaho Caucus._

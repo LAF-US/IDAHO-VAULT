@@ -5,4 +5,4 @@ related:
 - Gooding County
 authority: LOGAN
 ---
-Bliss, Gooding County
+Bliss, Gooding County 

@@ -62,7 +62,7 @@ organizations from Idaho from three provinces of Washington, Dakota, and Nebrask
 
 The initial [?] point in the [?] territory [?] at the former [?]. The Latitude of the [?] [?] of [?] the latter [?] [?] [?] [?] latitude 42° [?] west from Greenwich, [?] longitude [?] [?] [?] of the section [?] 27°, equal in latitude to [?] portions.
 
-### FIRST CAPITAL AND LEGISLATURE
+### FIRST CAPITAL AND LEGISLATURE.
 
 The Territorial capital of Idaho was established at Lewiston, by Hon. W. H. Wallace, the first Territorial Governor. (He was appointed Governor of Idaho, [?] [?] October 31, 1863, elected Delegate to Congress [?] [?].)
 
@@ -72,7 +72,7 @@ The first Territorial Legislature was convened there by his official proclamatio
 
 The Territorial Legislature convened at the same place, November 14, 1864, and [?] among [?] the [?] [?] of Territorial laws, including a removal of the Territorial capital by Legislative enactment to Boise City.
 
-### REMOVAL OF THE CAPITAL
+### REMOVAL OF THE CAPITAL.
 
 The discovery of gold, and settlement of Boise Valley, led to the removal, at an early day, of the capital from Lewiston to Boise City, which is in the heart of Boise River Valley, and contiguous to the United States Military Reservation and post of Fort Boise. Boise City then had scarcely a struggling existence, except on paper, but its streets and alleys, lots and blocks had been born duly and actually surveyed and staked off, the streets and alleys crossing each other at right angles; the streets were wide, and all the principal ones of uniform width.
 
@@ -80,7 +80,7 @@ The discovery of gold, and settlement of Boise Valley, led to the removal, at an
 
 *(page 62)*
 
-### AN ACT LOCATING THE CAPITAL
+### AN ACT LOCATING THE CAPITAL.
 
 An Act to permanently locate the capital of the Territory of Idaho:—
 
@@ -94,7 +94,7 @@ SEC. 4. This Act shall take effect from and after the twenty-fourth day of Decem
 
 Approved December 7, 1864.
 
-### FIRST TERRITORIAL OFFICERS
+### FIRST TERRITORIAL OFFICERS.
 
 The following comprises a complete list of the first officers of the Territory:—
 
@@ -116,32 +116,32 @@ The Legislative Assembly of Idaho, first [?] at [?] Monday, [?] [?] of the Counc
 
 The compensation of members was fixed at [?] $4.00 for every twenty miles of travel in going to and [?] from the sessions.
 
-### OFFICERS OF COUNCIL
+### OFFICERS OF COUNCIL.
 
 President, Joseph Miller; Secretary, John [?]; Assistant Secretary, C. D. Kenyon; Enrolling Clerk [?] Stoner; Engrossing Clerk, W. W. Thompson, [?] Arms, A. D. Chamberlain; [?] [?].
 
-### MEMBERS OF COUNCIL
+### MEMBERS OF COUNCIL.
 
 Sanford Cappe, Shoshone and Missoula Counties; [?] Miller, Boise; William C. Rheem, District of East [?]; Ephraim Smith, Boise; Lyman Stanford, Idaho; E. [?] [?]; Nez Perce; N. P. Langford, District of [?]; [?] Virginia City, Nevada City, Boise's Gulch, and [?] [?].
 
-### OFFICERS OF HOUSE OF REPRESENTATIVES
+### OFFICERS OF HOUSE OF REPRESENTATIVES.
 
 Speaker, James Tufts; Chief Clerk, S. S. [?]; [?] ant Clerk, Benjamin Northfield; Enrolling Clerk, [?]; Sergeant-at-Arms, W. [?] H. [?]; [?] [?].
 
-### MEMBERS OF HOUSE
+### MEMBERS OF HOUSE.
 
 C. B. Burleigh, Boise; L. Bacon, Nez [?]; [?] R. Brown, Boise; R. B. Campbell, Boise; Albert Clark, [?]; [?]; W. R. Keithly, Boise; Milton Kelly, Boise; [?] Leland, Idaho; L. C. Miller, District of Eastern [?]; Mark A. Moore, Districts of Eastern Slope; [?] A. [?]; Shoshone; James Tufts, District of Eastern Slope; [?] Weed, Idaho
 
 ---
 
-## RAPID INCREASE OF POPULATION
+## RAPID INCREASE OF POPULATION.
 
 *(page 63)*
 
-### COUNTIES OF IDAHO IN 1884
+### COUNTIES OF IDAHO IN 1884.
 
 | COUNTY SEAT | MAIN SIZE (SQ. MILES) |
-| --- | --- |
+|---|---|
 | Ada — Boise City | 5,200 |
 | Alturas — Hailey | 15,780 |
 | Bear Lake — Paris | 3,800 |
@@ -152,10 +152,10 @@ C. B. Burleigh, Boise; L. Bacon, Nez [?]; [?] R. Brown, Boise; R. B. Campbell, B
 
 Total: [?]
 
-### OFFICIAL DIRECTORY FOR 1884
+### OFFICIAL DIRECTORY FOR 1884.
 
 | Office | Name |
-| --- | --- |
+|---|---|
 | Governor | John Irwin |
 | Secretary | [?] F. P. Singiser |
 | U.S. District Judge | T. E. [?] Curtis |
@@ -163,10 +163,10 @@ Total: [?]
 | U.S. Attorney | John Huston |
 | U.S. Marshal | L. [?] Drumheller |
 
-### DISTRICT CLERKS AND ATTORNEYS
+### DISTRICT CLERKS AND ATTORNEYS.
 
 | | |
-| --- | --- |
+|---|---|
 | First District Clerk | Norman Buck |
 | | H. Squire |
 | District Attorney | A. Quarl[?] |
@@ -181,12 +181,12 @@ The Judges of the First, Second, and Third Districts assemble at the capital on 
 
 The Judicial Districts and the times and places of holding Courts in each are designated by the Supreme Court and are liable to change each year. A full list of all Territorial officers since organization will be found elsewhere in tabular form.
 
-### POPULATION OF THE TERRITORY
+### POPULATION OF THE TERRITORY.
 
 **TABLE SHOWING INCREASE OF POPULATION FROM 1864 TO 1884.**
 
 | COUNTY | 1864 | 1870 | 1880 | 1884 |
-| --- | --- | --- | --- | --- |
+|---|---|---|---|---|
 | Ada* | 14,138 | 5,072 | 4,754 | 5,200 |
 | Alturas | 1,374 | [?] | 1,557 | [?] |
 | Bear Lake | 5,814 | 1,313 | 5,000 | [?] |
@@ -225,7 +225,7 @@ It is stated that Boise Ellis was the first white boy born at the present territ
 
 [?] on his way to [?] in the summer of 1884. He resides at Charles[ton]. [?] [?] which was [?] from a [?] Idaho paper [?] is [?] correct as to [?] first child born. No [?] [?] that Nez Perces had children born to them, or [?] of [?] [?] [?] families, [?] through [?] Idaho Territory. It may be [?] to assert that Ellis [?] [?] [?] living in Idaho was [?] first born in the Territory [?].
 
-### FINANCIAL CONDITION
+### FINANCIAL CONDITION.
 
 John B. Neil, Governor of Idaho, in his able report to the Legislature, dated December [?], 1882, says:—
 
@@ -246,7 +246,7 @@ John B. Neil, Governor of Idaho, in his able report to the Legislature, dated De
 The following table was furnished us by [?] Hon. [?] Oorderdonk, controller of Idaho Territory, and [?] assessment roll for the year [?]:
 
 | | AMT. OF TAXABLE PROPERTY |
-| --- | --- |
+|---|---|
 | Ada | $[?] |
 | Alturas | [?] |
 | Bear Lake | 106 |
@@ -268,7 +268,7 @@ This [?] shows a total increase in [?] of [?] property during the [?] two years 
 The following gives the total value of the [?] rolls for the past five years:
 
 | Year | Value |
-| --- | --- |
+|---|---|
 | 1879 | [?] |
 | 1880 | [?] |
 | 1881 | [?] |
@@ -291,13 +291,13 @@ The rapid increase in values [?] following [?] wonderful development of [?], is 
 
 [?] C., a [?] and a [?] [?] organized in September, 1883, with the [?] [?]: W. [?] [?]; [?] [?], Thos. [?]; [?]; [?] and George [?].
 
-### LIBRARY ASSOCIATION
+### LIBRARY ASSOCIATION.
 
 The [?] Association — the citizens of Boise [?] a [?] library association by the election of the [?] it has [?] three hundred members, namely John [?]; W. Brown, M. Kreble, and J. S. Gray, [?], [?] [?] submitted a name a signal station [?] classes of Boise's [?] walls.
 
 **BOISE CITY LAW LIBRARY.** — The Hon. E. L. Curtis, the [?] acting Governor, had the law library [?] [?] to [?] building [?] on the [?] floor. The rooms are fitted up [?] and exceedingly convenient. It is one of the [?] [?] [?] and the [?] large, [?] in summer and warm in the winter, [?] [?] one-half of the front, with books on the shelving on each side. On the right are two rooms, [?] the Secretary and further back is the [?] [?] about [?] square feet, with maps and charts [?] all [?] walls. In the rear is the storage room, [?] [?] [?] the furnishings of the United States furniture used [?] the Legislature.
 
-### STATUE OF WASHINGTON
+### STATUE OF WASHINGTON.
 
 The central figure on the Capitol Square in this city, and the [?] [?], is the equestrian statue of General Washington. It is of life size and mounted on a pedestal,
 
@@ -307,21 +307,21 @@ The central figure on the Capitol Square in this city, and the [?] [?], is the e
 
 [?] which [?] this [?] [?] were [?] [?] for [?] by the Legislature of the Territory.
 
-### ADA COUNTY COURT HOUSE
+### ADA COUNTY COURT HOUSE.
 
 The Court House, of which there is an accompanying illustration, was built in the spring of [?] a track, with jail in the basement, and fitted throughout with all the modern improvements, and is a credit to the community.
 
-### SIGNAL STATION
+### SIGNAL STATION.
 
 The United States Government has a signal station at [?] City, which was established in 1877. It has been in [?] some under the charge of [?] [?].
 
 BARNEY E. LIGHT was born in Hedgesville, (West Virginia). His early years were spent in Sharpsburg, Washington county, Maryland. On July 13, 1871, he joined the U. S. Army Signal Corps at Woodsboro, District of Columbia. Mr. Light left Cape Hatteras, North Carolina, for Idaho, in June, 1877, arriving on the 14th day of June of the same year, when he took charge of the Signal Station in Boise. He married Miss Mary E. Kesler, a native of Davenport, Iowa, in 1879, and has four boys and one girl: Mamie E., Barnet E., and Charles E. Light.
 
-### CITY OFFICERS
+### CITY OFFICERS.
 
 The following are the city officers: Mayor, James A. Pinney; Councilmen, Nathan Falk, E. M. Reed, W. W. Calkins, and J. Broadham; Collector, J. [?] Watt; Treasurer, S. M. Coffin; Justice of the Peace, C. Beachey.
 
-### BOARD OF TRADE
+### BOARD OF TRADE.
 
 A Board of Trade was organized in April, 1883, by electing J. A. Pinney President; Nathan Falk, Secretary, and Charles G. Himrod, Treasurer. It has done valuable service in calling attention to the advantages and resources of the city, and advising for its prosperity.
 
@@ -329,13 +329,13 @@ A Board of Trade was organized in April, 1883, by electing J. A. Pinney Presiden
 
 *(page 109)*
 
-### THE MORMON RELIGION
+### THE MORMON RELIGION.
 
 The religion of the Latter-day Saints is probably less known and understood than any other religious [?] in [?]. "Mormonism," is abhorred by the majority [?], it must be admitted that a religious system which has so [?] in converting the arid Rocky [?], which has built towns and cities, and [?] itself into a [?] and [?] substantial power, [?] [?], something that commands [?].
 
 [?] their success in proselytying through [?] of Christendom, and their successful system of [?], bringing the poor and down-trodden of the earth, [?] [?] to [?] America, and [?] [?] employment, there is something [?] [?] is well worth the consideration [?] [?]. While there are some things from a [?] or [?] standpoint, we yet find many things [?] which we cannot [?] but admire, and we [?] [?] of these in this brief history, and that in [?] [?].
 
-### MORMON CHURCH GOVERNMENT
+### MORMON CHURCH GOVERNMENT.
 
 The church government is very perfect and far-reaching in [?] organization. The head of the church they claim to be Christ, and his authority on earth is vested in the [?] of the church, he is the mouth-piece of God to his [?].
 
@@ -347,13 +347,13 @@ Bear Lake County, part of [?] County, [?] [?] Rich County, Utah, [?] of [?] Coun
 
 [REMARKS ON PUBLICATIONS.] We would have liked to have [?] what is called [?] the "Mormon [?]" and as [?] as a general [?] about [?] [?] religion, [?] in [?] [?] many respects a great [?] [?] [?].
 
-### PARIS VILLAGE
+### PARIS VILLAGE.
 
 Paris is the county seat, and is the most populous and important town in the [?]. It is situated [?] [?] of the [?] and near the [?] hills on the west side [?]. The [?] Valley, about ten miles wide [?] the east. The [?], [?] [?] blocks of [?] acres [?] [?] streets [?] [?] wide and [?] each [?] [?] acres [?] block, and the town is being [?] [?] [?] some [?] of residences having been erected [?] [?] [?] now in course of [?] of [?] [?] which [?] appear appearing in our engravings.
 
 The Bear Lake County Democrat is published here by George Osmond. [?] it is the only paper [?] in the county. It ably represents the people and interests of that section.
 
-### MONTPELIER VILLAGE
+### MONTPELIER VILLAGE.
 
 Montpelier is situated near the railroad, about the centre of the county. It was formerly called Bellevue. It is a beautiful little town, situated near the [?]; has a romantic appearance, [?] from the fact of its having been a sort of [?] of Brigham Young, who gave it its name. That even here a new force is plainly apparent, and, under the name of Montpelier, the town is destined to become one of the most important stations on the new line of the railroad.
 
@@ -371,7 +371,7 @@ President, J. B. Taylor; Secretary, [?] Ainsley; Assistant [?]; [?] [?] Enrollin
 
 The laws of this session were of a local character. A memorial for the United States Assay Office, for which [?] [?] in 1869, had passed an appropriation.
 
-### SIXTH LEGISLATURE
+### SIXTH LEGISLATURE.
 
 The sixth session met at Boise City, December [?]. The officers were:
 
@@ -379,7 +379,7 @@ Council — President, D. G. [?]; Secretary, V. S. [?]; Assistant [?]; [?]; E. B
 
 An [?] act was passed to protect children [?] in schools of [?] and [?] minors, children of any [?] [?] and [?] of Territorial prisoners, and [?] [?] a Territorial library.
 
-### SEVENTH LEGISLATURE
+### SEVENTH LEGISLATURE.
 
 The seventh session was held in Boise City, commencing [?] 1877. The officers were:
 
@@ -421,7 +421,7 @@ Approved, January 15, A. D., 1869.
 
 An Act, also, concerning religious, social, benevolent, and learned associations.
 
-### EIGHTH LEGISLATURE
+### EIGHTH LEGISLATURE.
 
 The eighth session convened at Boise City, December 13, 1874. The officers were:
 
@@ -437,7 +437,7 @@ The Governor vetoed an Act to aid in the construction of telegraph lines in Idah
 
 At the eighth session the Assembly authorized the revision of all laws of Idaho Territory of a general nature.
 
-### [?] LEGISLATURE
+### [?] LEGISLATURE.
 
 [?] convened at Boise [?] 1876.
 
@@ -475,7 +475,7 @@ Also a memorial asking that what is known as territory of Idaho be set off to Wa
 
 An Act was passed to amend the general school law of Idaho.
 
-### TWELFTH LEGISLATURE
+### TWELFTH LEGISLATURE.
 
 The twelfth Legislative Assembly of Idaho Territory convened in Boise City, December 11, 1882.
 

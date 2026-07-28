@@ -24,7 +24,7 @@ Learn how to [turn on the 1Password SSH agent](https://developer.1password.com/d
 
 > [!-success] -success
 > tip
->
+> 
 > For the best experience when using the 1Password SSH agent, you can configure [Touch ID](https://support.1password.com/touch-id-mac/), [Apple Watch](https://support.1password.com/apple-watch-mac/), [Windows Hello](https://support.1password.com/windows-hello/), or [system authentication](https://support.1password.com/system-authentication-linux/) to unlock 1Password and authenticate SSH key requests.
 
 ## Configuration

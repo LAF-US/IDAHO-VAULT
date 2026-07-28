@@ -4,4 +4,4 @@ related:
 - mayor
 authority: LOGAN
 ---
-mayor of Boise
+mayor of Boise 

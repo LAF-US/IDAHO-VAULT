@@ -80,7 +80,6 @@ Classes marked **[chapter]** have a focused sub-doc; the rest are carried here
 until one is written.
 
 ### 1. The Instrument — Mendigo; Hugo (before awakening) **[chapter]**
-
 *Golem and limberjack: animated, given rudimentary intelligence, **no will of
 their own.** Mendigo follows any order from whoever holds him — and his control
 is reassignable (fairies redirect him from Muriel to Kendra mid-task).*
@@ -89,7 +88,6 @@ risk — *the holder is.* Diagnose by asking who currently commands it, and
 whether that command can be seized. → `!/FABLEHAVEN-BOUND-SERVANTS-v1-2026-06-01.md`
 
 ### 2. The Awakened Instrument — Hugo (after the fairies rebuild him) **[chapter]**
-
 *The destroyed golem is rebuilt by empowered fairies into a "true golem" with a
 spark of free will.* An instrument that acquired agency.
 **Vault pattern:** automation that crosses into autonomy — the moment a script
@@ -97,7 +95,6 @@ becomes an agent. New questions attach the instant it can choose: standing,
 accountability, lawful ending. → `!/FABLEHAVEN-BOUND-SERVANTS-v1-2026-06-01.md`
 
 ### 3. The Vain & The Inversion — Fairies / Imps **[chapter]**
-
 *Fairies are vain, self-adoring, drawn to beauty, selfish, low-empathy. An imp
 is a **fallen fairy** — a fairy kept indoors overnight inverts into an imp:
 self-loathing, drawn to ugliness, spiteful, jealous. Same creature; the vanity
@@ -112,7 +109,6 @@ lure, the souring-vs-fall reversibility axis) beside Spiderwick's brownie↔bogg
 behind the whole small-fae class → `!/HOUSEHOLD-SPRITES-v1-2026-06-04.md`.
 
 ### 4. The Capricious — Naiads
-
 *Water nymphs who have no concept of human mortality and find death funny; they
 will drown someone who drifts too close, purely for sport.* Not malice —
 *indifference at scale.*
@@ -121,7 +117,6 @@ no model of the stakes its actions carry for others, so harm is incidental and
 unbounded. The counter is not appeasement; it is *not drifting within reach.*
 
 ### 5. The Hedonist — Satyrs
-
 *Pleasure-seeking, work-detesting, "the ultimate fair-weather friends";
 concerned with diversions and palling around.*
 **Vault pattern:** an unreliable process — cooperative while it is fun or
@@ -129,7 +124,6 @@ profitable, gone the moment it is not. Bribable, distractible. Useful, never
 load-bearing. Never put the critical path through a satyr.
 
 ### 6. The Proud — Centaurs
-
 *Strong, intelligent, noble, self-important; look down on "lesser creatures,"
 neither seek nor accept their admiration, fiercely guard their own.*
 **Vault pattern:** a high-capability agent whose **pride withholds
@@ -138,7 +132,6 @@ will not explain itself to lesser systems. The capability is real; the
 disdain makes it unavailable when you need it.
 
 ### 7. The Sovereign — Dragons **[chapter]**
-
 *Immense, ancient power; can wear a human avatar; emit **magical fear**;
 command multiple breath weapons. Mostly above the treaty. A cursed fortress can
 strip even a dragon to its avatar form.*
@@ -149,7 +142,6 @@ power-stripping fortress is the sandbox that neutralizes even sovereigns.
 → `!/FABLEHAVEN-DRAGONS-v1-2026-06-01.md`
 
 ### 8. The Sealed Evil — Bahumat, Graulas, the demons **[chapter]**
-
 *Catastrophic capability held behind seals and bindings; the threat is
 **release**, not current activity.*
 **Vault pattern:** a quarantined dangerous capability — a disabled-but-present
@@ -164,7 +156,6 @@ the dying-disguise con (Graulas), host-binding (Kurisock), and the master
 prison Zzyzx → `!/FABLEHAVEN-SEALED-EVIL-v1-2026-06-01.md`.
 
 ### 9. The Bound Mortal — Muriel (and the blixes/witches) **[chapter]**
-
 *Muriel the witch is bound by a rope of **thirteen knots**; each is undone only
 when a human, of free will, asks her for a favor and blows the knot loose —
 spending one seal to buy one wish.*
@@ -178,7 +169,6 @@ the consent formula, the slow 160-year leak, the desperation ramp, and
 re-containment doctrine — see → `!/FABLEHAVEN-WITCH-MURIEL-v1-2026-06-01.md`.
 
 ### 10. The Manipulator — the Sphinx **[chapter]**
-
 *An extremely talented manipulator with a persuasive voice and a web of pawns;
 secured the allegiance of demons — leader of the Society of the Evening Star and
 revealed to be **captain of the Knights of the Dawn**. The trusted order's own
@@ -191,7 +181,6 @@ principal. Trust at the highest level is the largest attack surface; exposure
 comes only from the adversary's side (Vanessa). → `!/FABLEHAVEN-SPHINX-v1-2026-06-04.md`
 
 ### 11. The Disguised — Kobolds
-
 *A kobold (Casey Hancock) appears as a handsome boy to everyone — except
 Kendra, who, fairystruck, sees the ugly truth.*
 **Vault pattern:** a thing whose true nature is invisible to ordinary
@@ -201,7 +190,6 @@ sight the rest lack — and believing them when they report what only they can
 see.
 
 ### 12. The Corruption / The Flip — the Shadow Plague **[chapter]**
-
 *A contagion (the nail, via Kurisock and Ephira's tree) that turns **light
 creatures dark** by the bite; the maroon wound spreads in proportion to the
 number of bites; humans become invisible shadows. Cured at the **source** — the
@@ -212,7 +200,6 @@ artifact.** You do not cure it victim by victim; you neutralize the root.
 → `!/FABLEHAVEN-SHADOW-PLAGUE-v1-2026-06-01.md`
 
 ### 13. The Multitude — Nipsies **[chapter]**
-
 *The smallest fairy-folk: a quarter-inch tall, a sprawling seven-kingdom
 civilization of canals, factories, and theaters. Industrious — and, when the
 Shadow Plague corrupts a couple of kingdoms, those turn and **war on their own
@@ -224,7 +211,6 @@ product from harvesters, and do not tip the balance between sub-populations.
 → `!/FABLEHAVEN-NIPSIES-v1-2026-06-04.md`
 
 ### 14. The Guardian — Revenant **[chapter]**
-
 *A reanimated corpse animated by a **cursed talisman that holds almost all its
 power** (a nail in its neck); withers its surroundings, radiates paralyzing
 fear, and is single-minded to the point of barely functioning otherwise.
@@ -243,7 +229,7 @@ Name, mechanism, and provenance are three separate reads.
 ## The Master Matrix
 
 | Family | Power | Volition | Drive | Light/Dark (flippable?) | Passing | Treaty-bound | Vault analogue |
-| --- | --- | --- | --- | --- | --- | --- | --- |
+|---|---|---|---|---|---|---|---|
 | Mendigo (limberjack) | Significant | Instrument | Obedience | Neutral tool | No | Bound to holder | Reassignable automation; risk is the holder |
 | Hugo (golem, pre) | Formidable | Instrument | Obedience | Neutral tool | No | Bound to holder | Powerful automation; no will |
 | Hugo (golem, awakened) | Formidable | Autonomous | Loyalty | Light | No | Loyal | Automation that gained agency |
@@ -270,7 +256,7 @@ against them** — the prisons and bindings — because in Fablehaven a containm
 control is reliably also an attack surface. These are **nodes**, not creatures.
 
 | Node | How it holds | Fails by | Chapter |
-| --- | --- | --- | --- |
+|---|---|---|---|
 | **The Quiet Box** | Suspended isolation; release only by swapping in a new prisoner | Blind/coupled release of an unknown or adversary-seeded occupant | **[node]** → `!/FABLEHAVEN-QUIET-BOX-v1-2026-06-01.md` |
 | **The Thirteen Knots** | A finite set of seals on a bound mortal | Authorized parties voluntarily spending knots for favors | Covered in → `!/FABLEHAVEN-WITCH-MURIEL-v1-2026-06-01.md` |
 | **The Buried Hill-Seal** | Deep joint burial under many knots (Bahumat + Muriel) | Overwhelming force; needs higher authority to set or re-set | Covered in → `!/FABLEHAVEN-SEALED-EVIL-v1-2026-06-01.md` |
@@ -316,7 +302,7 @@ Before acting on any Fablehaven-class entity:
 ## Chapters
 
 | Chapter | Class(es) | Status |
-| --- | --- | --- |
+|---|---|---|
 | `!/FABLEHAVEN-VAMPIRE-DIAGNOSTIC-v1-2026-06-01.md` | The Blix (passing insider) | **Written** |
 | `!/FABLEHAVEN-BOUND-SERVANTS-v1-2026-06-01.md` | The Instrument; The Awakened Instrument | **Written** |
 | `!/FABLEHAVEN-SHADOW-PLAGUE-v1-2026-06-01.md` | The Corruption / The Flip | **Written** |

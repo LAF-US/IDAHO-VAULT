@@ -52,22 +52,19 @@ Logan's inquiry referenced a **"Nether Chest"** from Minecraft. No such item exi
 **Games:** Pokemon Red/Blue (1996) through present. Named in-universe after the character "Bill" who built the original storage network.
 
 **Core mechanic:**
-
 - A player's active **party** holds exactly **6 Pokemon** at a time — the working set.
 - All other caught Pokemon are stored in the **PC**, organized into **Boxes** (30 slots each, 8 boxes in Gen 1, expandable in later generations).
 - Access requires a **PC terminal** — found at every Pokemon Center, occasionally in player homes and key story locations. **Fixed-point access.**
 - Entities (Pokemon) retain all attributes while stored: moves, stats, held items, EVs, IVs, nicknames, ribbons. No degradation in storage.
 
 **Organizational features:**
-
 - Boxes can be named and assigned wallpapers/themes.
 - Modern games add sorting, searching, and filtering across boxes.
 - The distinction between "in party" and "in storage" is hard-architectural: the game engine treats party and PC as separate data structures.
 
 **Evolution of the mechanic:**
-
 | Era | System | Access Model |
-| --- | --- | --- |
+|---|---|---|
 | Gen 1–5 (1996–2012) | Local PC (per cartridge) | Fixed terminal; data stays on cartridge |
 | Gen 6–7 (2013–2019) | Pokemon Bank | Cloud service; cross-game deposit/withdraw |
 | Gen 8–present (2020–) | Pokemon HOME | Unified cloud registry; cross-game, cross-platform, persistent entity layer |
@@ -81,7 +78,6 @@ Logan's inquiry referenced a **"Nether Chest"** from Minecraft. No such item exi
 **Game:** Minecraft Java Edition 1.3.1 (2012). Present in Bedrock Edition as well.
 
 **Core mechanic:**
-
 - 27-slot inventory container.
 - **Critical property:** every Ender Chest a given player opens shows the **same inventory**, regardless of physical location. Place one in the Overworld, one in the Nether, one in the End — all three are portals to the same 27-slot personal layer.
 - **Player-UUID-bound:** two players using the same physical Ender Chest block see completely different contents. The block is a terminal; the storage belongs to the player identity, not the block.
@@ -100,7 +96,7 @@ Shulker Boxes (added Minecraft 1.11, 2016) are containers that **retain their co
 ### Dimension 1: Active Set vs. Archive
 
 | Game concept | Agent equivalent |
-| --- | --- |
+|---|---|
 | Party (6 Pokemon) | Agent context window — the active working set |
 | PC Boxes | The vault — persistent, organized, large, fixed-point |
 | Depositing a Pokemon to PC | Committing a file; filing a research document |
@@ -116,14 +112,13 @@ Shulker Boxes (added Minecraft 1.11, 2016) are containers that **retain their co
 ### Dimension 2: Player-Bound Ambient Storage
 
 | Game concept | Agent equivalent |
-| --- | --- |
+|---|---|
 | Ender Chest (player-bound) | Agent dotfolder shim (`.claude/`, `.gemini/`, `.codex/`) |
 | Same contents from any Ender Chest location | `.claude/CLAUDE.md` auto-loaded regardless of where session starts |
 | Different players see different inventories | Different agents see different dotfolder contents from same vault |
 | Chest block is just the terminal | The session is just the terminal; the identity-bound context persists |
 
 **This is already implemented in IDAHO-VAULT.** Each agent has a personal context layer that loads with their identity:
-
 - Claude Code opens `.claude/CLAUDE.md` — its Ender Chest
 - Gemini opens `.gemini/GEMINI.md` — its Ender Chest
 - Codex opens `.codex/CODEX.md` — its Ender Chest
@@ -137,7 +132,7 @@ No matter where or when a Claude Code session starts, it sees the same `.claude/
 ### Dimension 3: World-Bound vs. Player-Bound
 
 | | Pokemon PC | Ender Chest |
-| --- | --- | --- |
+|---|---|---|
 | **Binding** | World/save-file-level | Player-UUID-level |
 | **Visibility** | Shared (in some games, NPCs reference it) | Personal, private |
 | **Access model** | Fixed-point terminal | Ubiquitous |
@@ -147,7 +142,6 @@ No matter where or when a Claude Code session starts, it sees the same `.claude/
 Neither is superior. Both are needed. They serve different storage functions that should not be collapsed into one.
 
 **In the vault:**
-
 - The vault as a whole (git repo, shared files) = **world-bound PC** — shared across all agents, accessed at fixed commit/PR points, stores rich entities (notes, people, bills, workflows) with full attributes.
 - Agent dotfolders = **player-bound Ender Chests** — personal, ambient, identity-scoped, session-independent.
 
@@ -168,7 +162,6 @@ The vault's current gap is **cross-session artifact persistence without Logan in
 LEVELSET-CURRENT is the closest approximation: a rolling synthesis document that survives between sessions. But it requires manual update, is not machine-queryable, and doesn't store granular artifacts — only a narrative summary.
 
 A true HOME-analogue for IDAHO-VAULT would be:
-
 - A structured artifact index (not just a narrative summary)
 - Accessible by any agent at session start without special injection
 - Stores entities (research outputs, decisions, briefs) as discrete records with provenance
@@ -205,7 +198,7 @@ When a decision that should live in a dotfolder (agent-personal operating instru
 ## Summary
 
 | Mechanic | Primary analogue | Secondary analogue |
-| --- | --- | --- |
+|---|---|---|
 | **Pokemon Party (6 slots)** | Agent context window | Active working set per session |
 | **Pokemon PC Boxes** | The vault (shared, organized, persistent) | Commit history, file corpus |
 | **Pokemon Center terminal** | LEVELSET injection / session start | Context loading event |

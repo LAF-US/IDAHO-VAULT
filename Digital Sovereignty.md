@@ -33,7 +33,7 @@ Status key: `VERIFIED` = confirmed by fact-check | `NEEDS RESEARCH` = unverified
 ### Idaho-Specific
 
 | Topic | Status | Notes |
-| ------- | -------- | ------- |
+|-------|--------|-------|
 | UCC Article 12 / Controllable Electronic Records | FABRICATED for Idaho | Idaho has NOT adopted Article 12. ~24-33 other states have. Track: has any Idaho bill attempted adoption? |
 | Idaho SB 1299 (digital ID limitations, 2026) | VERIFIED with corrections | Prohibits requiring digital ID; prohibits tracking. Does NOT contain phone-search protection (stripped by amendment). Signed March 31, 2026. |
 | Idaho H0078 (digital driver's license authorization) | NEEDS RESEARCH | Passed House March 2025; stalled in Senate committee. Not enacted. |
@@ -45,7 +45,7 @@ Status key: `VERIFIED` = confirmed by fact-check | `NEEDS RESEARCH` = unverified
 ### Federal / National
 
 | Topic | Status | Notes |
-| ------- | -------- | ------- |
+|-------|--------|-------|
 | Work for Hire (17 U.S.C. § 101) | VERIFIED | Directly relevant to the vault's IP boundary. See PRIVACY.md § VI. |
 | Copyright + AI training data | ACTIVE litigation | NYT v. OpenAI, Raw Story v. OpenAI (dismissed on standing), Intercept Media v. OpenAI (CMI theory survived). No settled law. |
 | NIL / Right of Publicity | VERIFIED | House v. NCAA settlement ($20.5M/yr cap). NIL Go platform ($600 reporting threshold). "ELVIS" acts emerging in some states. |
@@ -55,7 +55,7 @@ Status key: `VERIFIED` = confirmed by fact-check | `NEEDS RESEARCH` = unverified
 ### Conceptual (not legal claims)
 
 | Concept | Origin | Vault Relevance |
-| --------- | -------- | ---------------- |
+|---------|--------|----------------|
 | Privacy-Publicity axis | Gemini conversation | Maps to PRIVACY.md data classification (ephemeral vs. persistent) |
 | Individual-Group dynamics | Gemini conversation | Maps to Work for Hire boundary, public records, institutional interfaces |
 | "The Subtle Knife" | Pullman / Gemini metaphor | Every digital interface leaks metadata; every window opened must be closeable |

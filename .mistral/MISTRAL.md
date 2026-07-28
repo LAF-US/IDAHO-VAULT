@@ -60,7 +60,7 @@ Config: `.mistral/config.toml` (vault-local project config)
 ## Local vs. API Mode
 
 | Mode | Backend | Port | Requirement |
-| --- | --- | --- | --- |
+|---|---|---|---|
 | **API** | Mistral cloud | — | `MISTRAL_API_KEY` in 1Password |
 | **Local (Devstral)** | vLLM / Ollama / LM Studio | 8080 | GPU (H100/A100 for FP16; RTX 4090 for 4-bit/32k ctx) |
 

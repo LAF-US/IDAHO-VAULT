@@ -5,4 +5,4 @@ related:
 - Custer County
 authority: LOGAN
 ---
-Challis, Custer County
+Challis, Custer County 

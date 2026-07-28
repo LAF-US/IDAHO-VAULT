@@ -5,4 +5,4 @@ related:
 - Power County
 authority: LOGAN
 ---
-Arbon Valley, Power County
+Arbon Valley, Power County 

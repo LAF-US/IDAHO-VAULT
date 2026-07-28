@@ -4,4 +4,4 @@ related:
 - Governor
 authority: LOGAN
 ---
-advises Governor and Department of Commerce
+advises Governor and Department of Commerce 

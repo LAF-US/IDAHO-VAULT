@@ -14,7 +14,7 @@ related:
   - lfinneytweets
 ---
 
-Martin: I would not have supported the original bill, I was critical of it in fact.
+Martin: I would not have supported the original bill, I was critical of it in fact. 
 I had daughters who played sports, now I have granddaughters who do. I don’t want boys on their teams.
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

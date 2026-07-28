@@ -6,4 +6,4 @@ related:
 - housing
 ---
 
-IDACORP "affordable housing and other investments"
+IDACORP "affordable housing and other investments" 

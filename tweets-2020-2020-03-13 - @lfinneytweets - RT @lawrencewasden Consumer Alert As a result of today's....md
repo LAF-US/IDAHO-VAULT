@@ -15,6 +15,6 @@ related:
   - lfinneytweets
 ---
 
-RT @lawrencewasden: Consumer Alert: As a result of today's emergency declarations, Idaho’s price gouging law is now in effect. <https://t.co…>
+RT @lawrencewasden: Consumer Alert: As a result of today's emergency declarations, Idaho’s price gouging law is now in effect. https://t.co…
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1238569442616864770)

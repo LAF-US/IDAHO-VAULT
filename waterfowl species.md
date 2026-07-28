@@ -10,8 +10,7 @@ related:
 - species
 ---
 
-waterfowl species for birds hunting
-
+waterfowl species for birds hunting 
 - geese
 - ducks
 - coots

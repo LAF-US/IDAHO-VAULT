@@ -87,7 +87,7 @@ The spirit of the street continues because functions outlive faces, and because 
 
 - *The Carnivorous Carnival*, book layer: Olivia Caliban as Madame Lulu, Caligari Carnival, hidden information behind fortune telling.
 - Netflix adaptation layer: Madame Lulu as a rotating V.F.D. alias or station.
-- Public reference pages consulted: <https://snicket.fandom.com/wiki/Caligari_Carnival> and <https://snicket.fandom.com/wiki/The_Carnivorous_Carnival%3A_Part_Two>
+- Public reference pages consulted: https://snicket.fandom.com/wiki/Caligari_Carnival and https://snicket.fandom.com/wiki/The_Carnivorous_Carnival%3A_Part_Two
 
 ## Addendum: Stopped Clock, Uneven Mediums
 

@@ -4,4 +4,4 @@ related:
 - Idaho Falls
 authority: LOGAN
 ---
-Idaho Falls hospital
+Idaho Falls hospital 

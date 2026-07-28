@@ -51,7 +51,7 @@ $8.5 million from counties – less than half of recent claims
 
 GROCERY TAX -$35 million transfer from _Tax Relief Fund_ (tax money from online retailers, $6 mil/month)
 
-Policy to be established by Legislature, not a specific recommendation from Gov
+Policy to be established by Legislature, not a specific recommendation from Gov 
 (open lines of dialogue, “involved in conversations” with lots of options on the table)
 
 “spending reset” - agencies’ contingency plans – 1% budget recision, 2% base reduction FY 2021-onward, savings of $19 mil this year $38 mil next, minimum impact to services,
@@ -62,7 +62,7 @@ pessimistic scenario (35% probability)—planning for mild recession ‘21
 
 Public Safety/Corrections – 12.09% budget increase from General Fund
 
-806 new beds – Twin Falls Community Reentry Center (funded 2018, open Oct 2020)
+806 new beds – Twin Falls Community Reentry Center (funded 2018, open Oct 2020) 
 
 Kuna building remodel 146 beds, more out of state beds
 
@@ -74,4 +74,4 @@ Higher Education – 27 mil for new facilities & maintenance,
 
 2 new CTE facilities at College of Eastern Idaho & LCSC
 
-1 million for Cybersecurity collaborative degree (BSU, ISU, UI, private industry e.g. INL)
+1 million for Cybersecurity collaborative degree (BSU, ISU, UI, private industry e.g. INL) 

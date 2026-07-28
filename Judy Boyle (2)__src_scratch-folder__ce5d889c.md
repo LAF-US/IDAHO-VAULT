@@ -14,7 +14,7 @@ source: commit
 - **Occupation:** Agriculture and writer; seven-generation farm family
 - **Education:** Lassen College; Boise State University; University of Idaho
 - **Party:** Republican (100% ACU rating; NRA "Defender of Freedom" award)
-- **Email:** <JBoyle@house.idaho.gov>
+- **Email:** JBoyle@house.idaho.gov
 - **Statehouse phone:** (208) 332-1064
 
 ## Background

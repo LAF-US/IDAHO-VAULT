@@ -17,11 +17,11 @@ program:
 
 ```ini
 [commit]
- gpgsign = true
+	gpgsign = true
 [gpg]
- format = x509
+	format = x509
 [gpg "x509"]
- program = gitsign
+	program = gitsign
 ```
 
 Note: Git ignores the legacy `gpg.program` key once `gpg.format = x509`

@@ -158,27 +158,27 @@ Below are examples of what an entry can look like in API version 4.
 | Key | Value Type | Always Defined | Description |
 | --- | --- | --- | --- |
 | domain | <define>FQDN</define> | :heavy\_check\_mark: | The domain name of the service |
-| img | String | | Image name used. If this is not defined, the image name is `domain`.svg |
-| url | URL | | URL of the site. If this is not defined, the url is https:// `domain` |
-| tfa | Array<String> | | Array containing all supported 2FA methods |
-| documentation | URL | | URL to documentation page |
-| recovery | URL | | URL to recovery documentation page |
-| notes | String | | Text describing any discrepancies in the 2FA implementation |
-| contact | Object | | Object containing contact details. See table below for elements |
-| regions | Array<String> | | Array containing ISO 3166-1 country codes of the regions in which the site is available. If the site is available everywhere apart from a specific region, that region will be prefixed by a `-` symbol |
-| additional-domains | Array<hostname> | | Array of domains that the site exists at in addition to the main domain listed in the `domain` field. |
-| custom-(software\|hardware) | Array<String> | | Array of custom software/hardware methods that the site supports. Only present if the `tfa` element contains one of these 2FA types |
+| img | String |  | Image name used. If this is not defined, the image name is `domain`.svg |
+| url | URL |  | URL of the site. If this is not defined, the url is https:// `domain` |
+| tfa | Array<String> |  | Array containing all supported 2FA methods |
+| documentation | URL |  | URL to documentation page |
+| recovery | URL |  | URL to recovery documentation page |
+| notes | String |  | Text describing any discrepancies in the 2FA implementation |
+| contact | Object |  | Object containing contact details. See table below for elements |
+| regions | Array<String> |  | Array containing ISO 3166-1 country codes of the regions in which the site is available. If the site is available everywhere apart from a specific region, that region will be prefixed by a `-` symbol |
+| additional-domains | Array<hostname> |  | Array of domains that the site exists at in addition to the main domain listed in the `domain` field. |
+| custom-(software\|hardware) | Array<String> |  | Array of custom software/hardware methods that the site supports. Only present if the `tfa` element contains one of these 2FA types |
 | keywords | Array<String> | :heavy\_check\_mark: | Array of categories to which the site belongs |
 
 #### Contact Object Elements
 
 | Key | Value | Always Defined | Description |
 | --- | --- | --- | --- |
-| twitter | String | | Twitter handle |
-| facebook | String | | Facebook page name |
-| email | String | | Email address to support |
-| form | String | | Support contact form |
-| language | String | | Lowercase ISO 639-1 language code for the site if it is not in English |
+| twitter | String |  | Twitter handle |
+| facebook | String |  | Facebook page name |
+| email | String |  | Email address to support |
+| form | String |  | Support contact form |
+| language | String |  | Lowercase ISO 639-1 language code for the site if it is not in English |
 
 ### Example website with 2FA enabled
 

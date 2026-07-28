@@ -62,7 +62,7 @@ The knot stayed tied for centuries.
 The ancient sources do not agree on *how* Alexander undid the knot.
 
 | Source | Method recorded |
-| --- | --- |
+|---|---|
 | Popular tradition (preserved widely; **Quintus Curtius Rufus**) | He **cut** the knot through with a single stroke of his sword. |
 | **Aristobulus** (a historian-soldier who accompanied Alexander; his original text is lost but his account survives via **Plutarch** and **Arrian**) | He **pulled the linchpin** from the pole to which the yoke was fastened, exposing the two ends of the cord, and untied it without cutting. |
 

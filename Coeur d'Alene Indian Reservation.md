@@ -16,7 +16,7 @@ related:
 - counties
 authority: LOGAN
 ---
-Coeur d'Alene Tribe lands in Kootenai & Benewah counties
+Coeur d'Alene Tribe lands in Kootenai & Benewah counties 
 
 Worley, Plummer, Tensed, De Smet, Sanders
-Conkling Park, Peedee, Parkline, Willard
+Conkling Park, Peedee, Parkline, Willard 

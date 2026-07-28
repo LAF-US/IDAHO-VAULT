@@ -4,4 +4,4 @@ related:
 - Christianity
 ---
 
-Christianity
+Christianity 

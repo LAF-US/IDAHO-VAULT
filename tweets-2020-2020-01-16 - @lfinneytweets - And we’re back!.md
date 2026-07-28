@@ -13,10 +13,9 @@ related:
   - lfinneytweets
 ---
 
-And we’re back! <https://t.co/R3bJfbKr8I>
+And we’re back! https://t.co/R3bJfbKr8I
 
 ## Links
-
-- <https://x.com/lfinneytweets/status/1217909617688109056>
+- https://x.com/lfinneytweets/status/1217909617688109056
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1217915549952294912)

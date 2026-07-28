@@ -6,4 +6,4 @@ related:
 - Kootenai Tribe
 authority: LOGAN
 ---
-Kootenai Tribe lands in Boundary County outside Bonners Ferry
+Kootenai Tribe lands in Boundary County outside Bonners Ferry 

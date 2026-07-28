@@ -5,5 +5,5 @@ related:
 - President
 authority: LOGAN
 ---
-- President of MH Solutions
-- Broadband Advisory Board member
+- President of MH Solutions 
+- Broadband Advisory Board member 

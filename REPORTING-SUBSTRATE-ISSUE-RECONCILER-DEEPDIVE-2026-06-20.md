@@ -52,7 +52,7 @@ not at the level of *"flawless."*
 (L157) is the whole state machine:
 
 | Input | Action | `issue_action` |
-| --- | --- | --- |
+|---|---|---|
 | findings, no open issue with this title | `create_issue` (L116) | `created` |
 | findings, open issue, fingerprint already present | skip | `noop_duplicate` |
 | findings, open issue, body changed | `comment_issue` (L133) | `commented` |
@@ -67,7 +67,7 @@ string**; body-level dedup is a **SHA256 fingerprint** marker (`<!-- issue-recon
 Uniform shape: **[generator] → markdown file → `issue_reconciler.py` → one durable issue.**
 
 | Workflow | Trigger | Generator → body | `has_findings` source | Issue title |
-| --- | --- | --- | --- | --- |
+|---|---|---|---|---|
 | `agent-review-gate` | dispatch — **DISABLED** | `review_feedback_loop reconcile-open-prs` JSON → `pr_loop_watchdog.py build_report` | `bool(blocked)` + action-required queue, combined (L106/116) | `[PR Loop Watchdog]` |
 | `looker-walk` | dispatch | `review_feedback_loop looker-walk` JSON → `render-worklist` | jq: any report `lane != "clear"` (L80) | `[Looker Worklist]` |
 | `branch-garden-report` | cron Mon 10:00 | `branch_garden_report.py` | script output | `[Branch Garden]` |
@@ -136,7 +136,6 @@ The reporting subsystem (5 generators + 1 reconciler) is **not a knot** — it a
 "extract a focused, reusable tool" pattern the Cluster A redesign aims for, which is evidence the
 3-tool target is reachable. Two concrete, **independent** improvements fall out, neither requiring
 the big redesign:
-
 1. **Unify the `gh` wrapper** (Q2) into the shared lib the Cluster A doc §5 proposes.
 2. **Make issue identity robust** (Q1, Fragility A): look the persistent issue up by a stable marker
    (the fingerprint family or a dedicated `<!-- reconciler-id:… -->` tag) rather than an exact title
@@ -148,6 +147,5 @@ job remains the Cluster A engine, not this one.
 ---
 
 ## 5. Still unmapped (follow-ups, not done here)
-
 The ~14 single-use scripts (a workflow and its own script, Clusters C/E singletons) and the ~10
 inline-`gh` workflows that call no script. Those are the last pieces of the Map v1 topology.

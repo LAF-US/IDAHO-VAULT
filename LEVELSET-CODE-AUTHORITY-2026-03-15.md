@@ -53,7 +53,7 @@ Branch `claude/levelset-multi-conversation-zWxJc` fast-forwarded to include `ori
 ### Prior sessions on this branch (cumulative)
 
 | File | Type | Action |
-| --- | --- | --- |
+|---|---|---|
 | `CLAUDE.md` (repo root) | Administrative | Created — repo-wide instructions for all Claude Code sessions |
 | `!ADMIN/Claude.md` | Administrative | Deployed from ADMIN's constitutional layer |
 | `!ADMIN/Ethics.md` | Administrative | Deployed from ADMIN |
@@ -73,7 +73,6 @@ Branch `claude/levelset-multi-conversation-zWxJc` fast-forwarded to include `ori
 | `.github/workflows/wayback-preserve.yml` | Python/Infra | Deployed |
 
 **Decisions Logan approved (recorded in DECISIONS.md):**
-
 1. LEVELSET protocol established
 2. CLAUDE.md created at repo root
 3. Conversation taxonomy adopted
@@ -101,7 +100,7 @@ Branch `claude/levelset-multi-conversation-zWxJc` fast-forwarded to include `ori
 ## 3. CONVERSATION AWARENESS
 
 | Conversation | Tier | What I know | What I don't know |
-| --- | --- | --- | --- |
+|---|---|---|---|
 | PERSISTENT: ADMINISTRATION | 2 | Owns constitutional layer. Last updated Claude.md 2026-03-11. Has not seen PR #1 aftermath. Handoff prepared. | Whether ADMIN has been active since 2026-03-14. Whether ADMIN has made decisions I haven't seen. |
 | PERMANENT: CODE AUTHORITY (this) | 1 | Full state known. | — |
 | STORY: JFAC Open Meetings | 1 | Exists. Has direct repo access. | Current state, recent activity, what it's working on, whether it has unmerged work. |

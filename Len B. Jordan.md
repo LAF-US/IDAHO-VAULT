@@ -6,4 +6,4 @@ related:
 - U.S. Senate
 authority: LOGAN
 ---
-former Governor and U.S. Senate for State of Idaho
+former Governor and U.S. Senate for State of Idaho 

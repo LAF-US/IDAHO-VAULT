@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-RT @uiargonaut: With a nicely tracked typeface and well-designed color palette, Buttigieg is on a roll.
+RT @uiargonaut: With a nicely tracked typeface and well-designed color palette, Buttigieg is on a roll. 
 Read Alex's full opinion here. htt…
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1119814336371814400)
