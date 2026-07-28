@@ -271,9 +271,9 @@ He was also known for his travel writing. These books included:
 - *Montevideo, ou une nouvelle Troie*, 1850 (*[The New Troy](https://en.wikipedia.org/wiki/The_New_Troy "The New Troy")*), inspired by the [Great Siege of Montevideo](https://en.wikipedia.org/wiki/Great_Siege_of_Montevideo "Great Siege of Montevideo")
 - *Le Journal de Madame Giovanni* (*The Journal of Madame Giovanni*, 1856)
 - *Travel Impressions in the Kingdom of Napoli/Naples Trilogy*:
-	- *Impressions of Travel in Sicily* (*Le Speronare (Sicily – 1835)*, 1842
-		- *Captain Arena* (*Le Capitaine Arena (Italy – Aeolian Islands and Calabria – 1835)*, 1842
-		- *[Impressions of Travel in Naples](https://en.wikipedia.org/wiki/Le_Corricolo "Le Corricolo")* (*Le Corricolo (Rome – Naples – 1833)*, 1843
+ 	- *Impressions of Travel in Sicily* (*Le Speronare (Sicily – 1835)*, 1842
+  		- *Captain Arena* (*Le Capitaine Arena (Italy – Aeolian Islands and Calabria – 1835)*, 1842
+  		- *[Impressions of Travel in Naples](https://en.wikipedia.org/wiki/Le_Corricolo "Le Corricolo")* (*Le Corricolo (Rome – Naples – 1833)*, 1843
 - *Travel Impressions in Russia – Le Caucase Original edition: Paris 1859*
 - *Adventures in Czarist Russia, or From Paris to Astrakhan* (*Impressions de voyage: En Russie; De Paris à Astrakan: Nouvelles impressions de voyage (1858)*, 1859–1862
 - *Voyage to the Caucasus* (*Le Caucase: Impressions de voyage; suite de En Russie (1859)*, 1858–1859
@@ -361,4 +361,4 @@ French historian [Alain Decaux](https://en.wikipedia.org/wiki/Alain_Decaux "Alai
 
 [^39]: MuseoWeb CMS. ["Banche dati, Open Archives, Libri elettronici"](http://www.bnnonline.it/index.php?it/232/banche-dati-open-archives-libri-elettronici/720=&paginate_pagenum=3&printPdf=1&stripImages=1&paginate_pageNum=3&desktop=true&tabs_state=tablatest) \[Databases, Open Archives, Electronic Books\]. *Biblioteca Nazionale di Napoli* (in Italian). Retrieved 28 August 2020.
 
-[^40]: ["Alexandre Dumas"](http://www.dumaspere.com/pages/english/societe/sommaire.html). *www.dumaspere.com*. Retrieved 22 August 2017.
+[^40]: ["Alexandre Dumas"](http://www.dumaspere.com/pages/english/societe/sommaire.html). *<www.dumaspere.com>*. Retrieved 22 August 2017.

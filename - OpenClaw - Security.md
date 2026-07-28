@@ -189,7 +189,7 @@ Advisory triage guidance:
 - **Inbound access** (DM policies, group policies, allowlists): can strangers trigger the bot?
 - **Tool blast radius** (elevated tools + open rooms): could prompt injection turn into shell/file/network actions?
 - **Exec approval drift** (`security=full`, `autoAllowSkills`, interpreter allowlists without `strictInlineEval`): are host-exec guardrails still doing what you think they are?
-	- `security="full"` is a broad posture warning, not proof of a bug. It is the chosen default for trusted personal-assistant setups; tighten it only when your threat model needs approval or allowlist guardrails.
+ 	- `security="full"` is a broad posture warning, not proof of a bug. It is the chosen default for trusted personal-assistant setups; tighten it only when your threat model needs approval or allowlist guardrails.
 - **Network exposure** (Gateway bind/auth, Tailscale Serve/Funnel, weak/short auth tokens).
 - **Browser control exposure** (remote nodes, relay ports, remote CDP endpoints).
 - **Local disk hygiene** (permissions, symlinks, config includes, “synced folder” paths).
@@ -209,8 +209,8 @@ Use this when auditing access or deciding what to back up:
 - **Discord bot token**: config/env or SecretRef (env/file/exec providers)
 - **Slack tokens**: config/env (`channels.slack.*`)
 - **Pairing allowlists**:
-	- `~/.openclaw/credentials/<channel>-allowFrom.json` (default account)
-		- `~/.openclaw/credentials/<channel>-<accountId>-allowFrom.json` (non-default accounts)
+ 	- `~/.openclaw/credentials/<channel>-allowFrom.json` (default account)
+  		- `~/.openclaw/credentials/<channel>-<accountId>-allowFrom.json` (non-default accounts)
 - **Model auth profiles**: `~/.openclaw/agents/<agentId>/agent/auth-profiles.json`
 - **File-backed secrets payload (optional)**: `~/.openclaw/secrets.json`
 - **Legacy OAuth import**: `~/.openclaw/credentials/oauth.json`
@@ -534,12 +534,12 @@ Plugins run **in-process** with the Gateway. Treat them as trusted code:
 - Review plugin config before enabling.
 - Restart the Gateway after plugin changes.
 - If you install or update plugins (`openclaw plugins install <package>`, `openclaw plugins update <id>`), treat it like running untrusted code:
-	- The install path is the per-plugin directory under the active plugin install root.
-		- OpenClaw runs a built-in dangerous-code scan before install/update. `critical` findings block by default.
-		- OpenClaw uses `npm pack` and then runs `npm install --omit=dev` in that directory (npm lifecycle scripts can execute code during install).
-		- Prefer pinned, exact versions (`@scope/pkg@1.2.3`), and inspect the unpacked code on disk before enabling.
-		- `--dangerously-force-unsafe-install` is break-glass only for built-in scan false positives on plugin install/update flows. It does not bypass plugin `before_install` hook policy blocks and does not bypass scan failures.
-		- Gateway-backed skill dependency installs follow the same dangerous/suspicious split: built-in `critical` findings block unless the caller explicitly sets `dangerouslyForceUnsafeInstall`, while suspicious findings still warn only. `openclaw skills install` remains the separate ClawHub skill download/install flow.
+ 	- The install path is the per-plugin directory under the active plugin install root.
+  		- OpenClaw runs a built-in dangerous-code scan before install/update. `critical` findings block by default.
+  		- OpenClaw uses `npm pack` and then runs `npm install --omit=dev` in that directory (npm lifecycle scripts can execute code during install).
+  		- Prefer pinned, exact versions (`@scope/pkg@1.2.3`), and inspect the unpacked code on disk before enabling.
+  		- `--dangerously-force-unsafe-install` is break-glass only for built-in scan false positives on plugin install/update flows. It does not bypass plugin `before_install` hook policy blocks and does not bypass scan failures.
+  		- Gateway-backed skill dependency installs follow the same dangerous/suspicious split: built-in `critical` findings block unless the caller explicitly sets `dangerouslyForceUnsafeInstall`, while suspicious findings still warn only. `openclaw skills install` remains the separate ClawHub skill download/install flow.
 
 Details: [Plugins](https://docs.openclaw.ai/tools/plugin)
 
@@ -591,15 +591,15 @@ If you run multiple accounts on the same channel, use `per-account-channel-peer`
 OpenClaw has two separate “who can trigger me?” layers:
 
 - **DM allowlist** (`allowFrom` / `channels.discord.allowFrom` / `channels.slack.allowFrom`; legacy: `channels.discord.dm.allowFrom`, `channels.slack.dm.allowFrom`): who is allowed to talk to the bot in direct messages.
-	- When `dmPolicy="pairing"`, approvals are written to the account-scoped pairing allowlist store under `~/.openclaw/credentials/` (`<channel>-allowFrom.json` for default account, `<channel>-<accountId>-allowFrom.json` for non-default accounts), merged with config allowlists.
+ 	- When `dmPolicy="pairing"`, approvals are written to the account-scoped pairing allowlist store under `~/.openclaw/credentials/` (`<channel>-allowFrom.json` for default account, `<channel>-<accountId>-allowFrom.json` for non-default accounts), merged with config allowlists.
 - **Group allowlist** (channel-specific): which groups/channels/guilds the bot will accept messages from at all.
-	- Common patterns:
-		- `channels.whatsapp.groups`, `channels.telegram.groups`, `channels.imessage.groups`: per-group defaults like `requireMention`; when set, it also acts as a group allowlist (include `"*"` to keep allow-all behavior).
-				- `groupPolicy="allowlist"` + `groupAllowFrom`: restrict who can trigger the bot *inside* a group session (WhatsApp/Telegram/Signal/iMessage/Microsoft Teams).
-				- `channels.discord.guilds` / `channels.slack.channels`: per-surface allowlists + mention defaults.
-		- Group checks run in this order: `groupPolicy` /group allowlists first, mention/reply activation second.
-		- Replying to a bot message (implicit mention) does **not** bypass sender allowlists like `groupAllowFrom`.
-		- **Security note:** treat `dmPolicy="open"` and `groupPolicy="open"` as last-resort settings. They should be barely used; prefer pairing + allowlists unless you fully trust every member of the room.
+ 	- Common patterns:
+  		- `channels.whatsapp.groups`, `channels.telegram.groups`, `channels.imessage.groups`: per-group defaults like `requireMention`; when set, it also acts as a group allowlist (include `"*"` to keep allow-all behavior).
+    - `groupPolicy="allowlist"` + `groupAllowFrom`: restrict who can trigger the bot *inside* a group session (WhatsApp/Telegram/Signal/iMessage/Microsoft Teams).
+    - `channels.discord.guilds` / `channels.slack.channels`: per-surface allowlists + mention defaults.
+  		- Group checks run in this order: `groupPolicy` /group allowlists first, mention/reply activation second.
+  		- Replying to a bot message (implicit mention) does **not** bypass sender allowlists like `groupAllowFrom`.
+  		- **Security note:** treat `dmPolicy="open"` and `groupPolicy="open"` as last-resort settings. They should be barely used; prefer pairing + allowlists unless you fully trust every member of the room.
 
 Details: [Configuration](https://docs.openclaw.ai/gateway/configuration) and [Groups](https://docs.openclaw.ai/channels/groups)
 
@@ -774,29 +774,32 @@ The Gateway broadcasts its presence via mDNS (`_openclaw-gw._tcp` on port 5353) 
 **Recommendations:**
 
 1. **Minimal mode** (default, recommended for exposed gateways): omit sensitive fields from mDNS broadcasts:
-	```json5
-	{
-	  discovery: {
-	    mdns: { mode: "minimal" },
-	  },
-	}
-	```
+ ```json5
+ {
+   discovery: {
+     mdns: { mode: "minimal" },
+   },
+ }
+ ```
+
 2. **Disable entirely** if you don’t need local device discovery:
-	```json5
-	{
-	  discovery: {
-	    mdns: { mode: "off" },
-	  },
-	}
-	```
+ ```json5
+ {
+   discovery: {
+     mdns: { mode: "off" },
+   },
+ }
+ ```
+
 3. **Full mode** (opt-in): include `cliPath` + `sshPort` in TXT records:
-	```json5
-	{
-	  discovery: {
-	    mdns: { mode: "full" },
-	  },
-	}
-	```
+ ```json5
+ {
+   discovery: {
+     mdns: { mode: "full" },
+   },
+ }
+ ```
+
 4. **Environment variable** (alternative): set `OPENCLAW_DISABLE_BONJOUR=1` to disable mDNS without config changes.
 
 In minimal mode, the Gateway still broadcasts enough for device discovery (`role`, `gatewayPort`, `transport`) but omits `cliPath` and `sshPort`. Apps that need CLI path information can fetch it via the authenticated WebSocket connection instead.
@@ -1211,17 +1214,19 @@ CI runs the `detect-secrets` pre-commit hook in the `secrets` job. Pushes to `ma
 ### If CI fails
 
 1. Reproduce locally:
-	```shellscript
-	pre-commit run --all-files detect-secrets
-	```
+ ```shellscript
+ pre-commit run --all-files detect-secrets
+ ```
+
 2. Understand the tools:
-	- `detect-secrets` in pre-commit runs `detect-secrets-hook` with the repo’s baseline and excludes.
-		- `detect-secrets audit` opens an interactive review to mark each baseline item as real or false positive.
+ - `detect-secrets` in pre-commit runs `detect-secrets-hook` with the repo’s baseline and excludes.
+  - `detect-secrets audit` opens an interactive review to mark each baseline item as real or false positive.
 3. For real secrets: rotate/remove them, then re-run the scan to update the baseline.
 4. For false positives: run the interactive audit and mark them as false:
-	```shellscript
-	detect-secrets audit .secrets.baseline
-	```
+ ```shellscript
+ detect-secrets audit .secrets.baseline
+ ```
+
 5. If you need new excludes, add them to `.detect-secrets.cfg` and regenerate the baseline with matching `--exclude-files` / `--exclude-lines` flags (the config file is reference-only; detect-secrets doesn’t read it automatically).
 
 Commit the updated `.secrets.baseline` once it reflects the intended state.

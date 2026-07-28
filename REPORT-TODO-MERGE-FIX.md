@@ -11,16 +11,21 @@ date: 2026-04-26
 # REPORT: TODO Merge Logic Fix
 
 ## Issue
+
 Qodo review (`.qodo/history/f528f00f72f21423df709bb5104dfe181c28474fac473cf1028c3bfd64be534a.json`) flagged a **medium-severity bug** in `.github/scripts/daily_rollover.py`:
+
 - **Problem**: `merge_todo_models` function appended all tasks from secondary (yesterday’s note) to primary (`TO DO LIST.md`), risking **duplicate accumulation**.
 - **Impact**: Violated `CONSTITUTION.md`’s "*no scope creep*" rule by bloating the TODO list.
 
 ## Fix
+
 Updated `merge_todo_models` to:
+
 1. **Dedupe**: Skip tasks already in `primary`.
 2. **Exclude completed tasks**: Ignore lines starting with `- [x]` or `- [X]`.
 
 ### Code Changes
+
 ```python
 def merge_todo_models(primary: dict[str, object], secondary: dict[str, object]) -> dict[str, object]:
     """Merge TODO models, preserving primary order and authority for duplicate tasks.
@@ -52,9 +57,11 @@ def merge_todo_models(primary: dict[str, object], secondary: dict[str, object]) 
 ```
 
 ## Validation
+
 - **Dry-run test**: Confirmed no duplicates or completed tasks carried forward.
 - **Edge cases**: Handles nested tasks (e.g., `- [ ] PARENT\n\t- [ ] CHILD`).
 
 ## Next Steps
+
 - **Monitor**: Watch for task bloat in `TO DO LIST.md`.
 - **Extend**: Add priority flagging for tasks carried forward >N days (per script’s `Extension points` comment).

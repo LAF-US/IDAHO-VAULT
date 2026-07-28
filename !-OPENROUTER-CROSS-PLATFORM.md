@@ -1,7 +1,9 @@
 # OpenRouter Cross-Platform Setup
 
 ## Model IDs (OpenRouter format)
+
 Use `mistralai/` prefix, not `mistral/`:
+
 - `mistralai/mistral-small-2603` (free, current)
 - `mistralai/mistral-large-2411` (paid)
 - `openai/gpt-4o-mini` (free)
@@ -10,7 +12,9 @@ Use `mistralai/` prefix, not `mistral/`:
 ## Environment Setup
 
 ### Mac (launchd)
+
 Add to `~/Library/LaunchAgents/ai.openclaw.gateway.plist`:
+
 ```xml
 <key>EnvironmentVariables</key>
 <dict>
@@ -20,6 +24,7 @@ Add to `~/Library/LaunchAgents/ai.openclaw.gateway.plist`:
 ```
 
 ### Windows (Task Scheduler)
+
 Prefer generating `.op/openrouter.env` with the vault resolver and loading it at
 launch time rather than duplicating raw secrets into scheduler settings.
 
@@ -39,6 +44,7 @@ python3 scripts/validate_services.py --write-matrix
   `!/INTEGRATIONS/COMPATIBILITY.md`.
 
 ## Config (works both platforms)
+
 ```json
 {
   "models": {
@@ -64,5 +70,6 @@ python3 scripts/validate_services.py --write-matrix
 ```
 
 ## Get API Key
+
 1. OpenRouter.ai → Account → API Keys
 2. Store it in 1Password and resolve it through the vault runtime scripts

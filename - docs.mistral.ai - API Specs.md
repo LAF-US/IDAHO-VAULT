@@ -6,7 +6,7 @@ created: 2026-04-17
 ---
 [
 
-](https://docs.mistral.ai/)
+](<https://docs.mistral.ai/>)
 
 [Getting Started](https://docs.mistral.ai/)[Models](https://docs.mistral.ai/models)[Products](https://docs.mistral.ai/products)[Developers](https://docs.mistral.ai/developers)[Admin](https://docs.mistral.ai/admin)[API](https://docs.mistral.ai/api)
 
@@ -17,8 +17,8 @@ created: 2026-04-17
 [Getting Started](https://docs.mistral.ai/api/endpoint/chat)
 
 - [Chat](https://docs.mistral.ai/api/endpoint/chat)
-	- [postChat Completion
-		](https://docs.mistral.ai/api/endpoint/chat#operation-chat_completion_v1_chat_completions_post)
+ 	- [postChat Completion
+  ](https://docs.mistral.ai/api/endpoint/chat#operation-chat_completion_v1_chat_completions_post)
 
 - [Fim](https://docs.mistral.ai/api/endpoint/fim)
 
@@ -86,9 +86,9 @@ created: 2026-04-17
 
 - [Deprecated Fine Tuning](https://docs.mistral.ai/api/endpoint/deprecated/fine-tuning)
 
-1. 3. [Getting Started](https://docs.mistral.ai/api/endpoint/chat)
+1. 1. [Getting Started](https://docs.mistral.ai/api/endpoint/chat)
 
-5. Chat
+2. Chat
 
 ![Tree BG 1](https://docs.mistral.ai/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ftree_bg_1.b9f8245b.png&w=2048&q=100&dpl=dpl_AjYbtnG2tYf34cphnLgnMG7NbrAW)
 

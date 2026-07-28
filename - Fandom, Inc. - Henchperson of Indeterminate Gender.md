@@ -7,7 +7,7 @@ created: 2026-04-14
 ---
 | “ | *I just think, even in changing context, that marriage is an inherently patriarchal construction that is likely to further the hegemonic juggernaut that's problematizing a lot of genders.* | ” |
 | --- | --- | --- |
-|  | — The Henchperson of Indeterminate Gender, " [The Bad Beginning: Part Two](https://snicket.fandom.com/wiki/The_Bad_Beginning:_Pa***REMOVED***Two "The Bad Beginning: Part Two") " |
+| | — The Henchperson of Indeterminate Gender, " [The Bad Beginning: Part Two](https://snicket.fandom.com/wiki/The_Bad_Beginning:_Pa***REMOVED***Two "The Bad Beginning: Part Two") " |
 
 The **Henchperson of Indeterminate Gender**, also known as the " **Enormous Androgynous Person** " and **the one who looked like neither a man nor a woman** in the books, is a sinister androgynous individual.
 
@@ -96,15 +96,15 @@ In the Netflix series, they have much longer brown hair. They are also 6'4", mak
 ### Netflix
 
 - Mr. Poe: *"May I help you ma'am? Sir? Uh..."*  
-	Henchperson: *"I'm Nurse Lucafont."*  
-	Stephano: *"Nurse Lucafont. From the local sheriff's department's medical examiner's office?"*  
-	Henchperson: *"From the local..."* (Stephano mouths the words) *"I hear there's been a terrible accident involving a snake."*
+ Henchperson: *"I'm Nurse Lucafont."*  
+ Stephano: *"Nurse Lucafont. From the local sheriff's department's medical examiner's office?"*  
+ Henchperson: *"From the local..."* (Stephano mouths the words) *"I hear there's been a terrible accident involving a snake."*
 - Larry: *"It's Larry. I told you my name is Larry."*  
-	Hook-Handed Man: *"We don't care what your name is!"*  
-	Henchperson: *"Or what gender you are."*
+ Hook-Handed Man: *"We don't care what your name is!"*  
+ Henchperson: *"Or what gender you are."*
 - Henchperson: *"Open up in there!"*  
-	Klaus: *"No!"*  
-	Henchperson: *"...please?"*
+ Klaus: *"No!"*  
+ Henchperson: *"...please?"*
 - *"Here I am. Nurse Lucafont."* (a *Shining* reference)
 - *"Is a personal philosophy of moral relativism the only way to survive in an ethically complex world, or is it an excuse we use to justify doing bad things?"*
 - *"I joined Count Olaf because I thought he could teach me things, like how to harness my natural charisma into a career in the performing art, but I'm beginning to question my life choices."*
@@ -113,8 +113,8 @@ In the Netflix series, they have much longer brown hair. They are also 6'4", mak
 ## Trivia
 
 - In the book series, the henchperson is called an "it" many times, which has been criticized as offensive by trans activists; it is also considered offensive by these groups that their androgyny (and perhaps also them being husky and overweight) is seen as monstrous by certain characters. For example, a line in *The Wide Window* says, "What frightened Violet was that you couldn't tell if this person was a man or a woman." In addition, they are called a "creature".
-	- This controversy resulted in [Daniel Handler](https://snicket.fandom.com/wiki/Daniel_Handler "Daniel Handler") and the other writers of the Netflix adaptation changing the character of the henchperson to make them more human.
-		- In the 2025 Edition of *[The Bad Beginning](https://snicket.fandom.com/wiki/The_Bad_Beginning "The Bad Beginning"),* their character profile says that their androgyny is instead "interesting," but them being "employed by a violent scoundrel" is worrying.
+ 	- This controversy resulted in [Daniel Handler](https://snicket.fandom.com/wiki/Daniel_Handler "Daniel Handler") and the other writers of the Netflix adaptation changing the character of the henchperson to make them more human.
+  		- In the 2025 Edition of *[The Bad Beginning](https://snicket.fandom.com/wiki/The_Bad_Beginning "The Bad Beginning"),* their character profile says that their androgyny is instead "interesting," but them being "employed by a violent scoundrel" is worrying.
 - In the TV series, they mention their opinion that asparagus is more delicious than corn.
 - The Henchperson's survival is due to the fact that the writers wanted Olaf to be at his highest point at the end of [Season 2](https://snicket.fandom.com/wiki/Season_2 "Season 2") in order to show his downfall better in [Season 3](https://snicket.fandom.com/wiki/Season_3 "Season 3").[^15]
 

@@ -198,13 +198,17 @@ related:
 authority: LOGAN
 ---
 one of the United States of America, organized under the Idaho Constitution from the former Idaho Territory in 1890
-# Government:
+
+# Government
+
 - Executive Department
-	- Constitutional Officers - Governor, Lieutenant Governor, Attorney General, Secretary of State, State Controller, State Treasurer, & Superintendent of Public Instruction
-	- Executive Departments - Department of Administration, Department of Agriculture, Department of Commerce, Department of Labor, Department of Correction, Department of Environmental Quality, Department of Finance, Department of Fish and Game, Department of Health and Welfare, Department of Insurance, Department of Juvenile Corrections, Department of Transportation, Department of Lands, Department of Parks and Recreation, Department of Revenue and Taxation, Department of Water Resources, Department of Self-Governing Agencies, Industrial Commission, Idaho State Police 
+ 	- Constitutional Officers - Governor, Lieutenant Governor, Attorney General, Secretary of State, State Controller, State Treasurer, & Superintendent of Public Instruction
+ 	- Executive Departments - Department of Administration, Department of Agriculture, Department of Commerce, Department of Labor, Department of Correction, Department of Environmental Quality, Department of Finance, Department of Fish and Game, Department of Health and Welfare, Department of Insurance, Department of Juvenile Corrections, Department of Transportation, Department of Lands, Department of Parks and Recreation, Department of Revenue and Taxation, Department of Water Resources, Department of Self-Governing Agencies, Industrial Commission, Idaho State Police
 - Legislative Department - Idaho Legislature (Idaho House of Representatives & Idaho Senate)
-- Judicial Department - Idaho Supreme Court & unified State Court System 
-## Counties:
+- Judicial Department - Idaho Supreme Court & unified State Court System
+
+## Counties
+
 - Ada County - Boise
 - Adams County - Council
 - Bannock County - Pocatello
@@ -249,10 +253,14 @@ one of the United States of America, organized under the Idaho Constitution from
 - Twin Falls County - Twin Falls
 - Valley County - Cascade
 - Washington County - Weiser
-### Congressional Districts:
+
+### Congressional Districts
+
 - 1st Congressional District
 - 2nd Congressional District
-### Legislative Districts:
+
+### Legislative Districts
+
 - Legislative District 1
 - Legislative District 2
 - Legislative District 3
@@ -288,23 +296,29 @@ one of the United States of America, organized under the Idaho Constitution from
 - Legislative District 33
 - Legislative District 34
 - Legislative District 35
+
 # Regions
+
 - North Idaho
 - North-Central Idaho
 - Treasure Valley
 - Magic Valley
 - Eastern Idaho
+
 # public health districts
-- District 1: Panhandle Health District 
-- District 2: North Central Health District 
-- District 3: Southwest District Health 
+
+- District 1: Panhandle Health District
+- District 2: North Central Health District
+- District 3: Southwest District Health
 - District 4: Central District Health
 - District 5: South Central Public District Health
-- District 6: Southeastern Idaho Public Health 
-- District 7: Eastern Idaho Public Health 
+- District 6: Southeastern Idaho Public Health
+- District 7: Eastern Idaho Public Health
+
 # Tribal Lands
-- Kootenai Indian Reservation 
-- Coeur d'Alene Indian Reservation 
-- Nez Perce Indian Reservation 
-- Fort Hall Indian Reservation 
-- Duck Valley Indian Reservation 
+
+- Kootenai Indian Reservation
+- Coeur d'Alene Indian Reservation
+- Nez Perce Indian Reservation
+- Fort Hall Indian Reservation
+- Duck Valley Indian Reservation

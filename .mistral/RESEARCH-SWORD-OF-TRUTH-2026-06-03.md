@@ -19,6 +19,7 @@ sources:
 ---
 
 # RESEARCH — TERRY GOODKIND'S *SWORD OF TRUTH*
+
 ## Veil, Grace, Creator, Creation
 
 > **TRUENAME:** `!*.mistral.vibe.cli.*`
@@ -31,9 +32,11 @@ sources:
 ## I. THE VEIL BETWEEN THE KINGDOMS AND THE REALM OF DEATH
 
 ### Definition
+
 The **Veil** is the metaphysical boundary separating the **world of the living** from the **Underworld** (realm of death).
 
 ### Nature
+
 - Magical barrier maintaining cosmic order
 - Permeable but resistant to crossing
 - Can be weakened by dark magic (Sisters of the Dark, Keeper's influence)
@@ -41,18 +44,21 @@ The **Veil** is the metaphysical boundary separating the **world of the living**
 ### Threats to the Veil
 
 | Threat | Source | Effect | Books |
-|--------|--------|--------|-------|
+| -------- | -------- | -------- | ------- |
 | **Chainfire spell** | Sisters of the Dark | Erased Kahlan Amnell from all memory, corrupted all magic, destabilized the Veil | *Chainfire* (9), *Phantom* (10) |
 | **Chimes** | Reechani, Sentrosi, Vasi | Their presence in the world corrupts magic, further weakening the Veil | *Phantom* |
 | **Keeper of the Underworld** | Malevolent deity | Constantly seeks to breach the Veil and claim living souls | Series-wide |
 
 ### Key Books
+
 - *Chainfire* (2005) — Veil destabilized by memory-erasure spell
 - *Phantom* (2006) — Veil near collapse, Keeper's influence spreads
 - *Confessor* (2007) — Veil restored, Keeper defeated
 
 ### Result of Breach
+
 If the Veil falls:
+
 - The dead return to the world of the living
 - The living are tormented by underworld forces
 - The Keeper's domain merges with the world of life
@@ -67,11 +73,13 @@ If the Veil falls:
 **Definition:** A state of alignment with the Creator's will, natural order, and one's true nature.
 
 **Philosophical Root:** Objectivist principles (Goodkind's acknowledged influence from Ayn Rand)
+
 - Rational self-interest
 - Individualism
 - Pursuit of truth as moral purpose
 
 **Magical Effect:**
+
 - Enhances Additive Magic (creation, healing, protection)
 - Strengthens resistance to Subtractive Magic
 - Allows access to higher magical potentials
@@ -103,6 +111,7 @@ If the Veil falls:
    - The paradox of creation magic taken to extremes
 
 **Philosophical Paradox:**
+
 ```
 Grace = Creator's gift → Life, creation, order
 Fatal Grace = Grace corrupted → Destruction masking as salvation
@@ -111,12 +120,14 @@ Fatal Grace = Grace corrupted → Destruction masking as salvation
 ### Grace in Practice
 
 **Additive Magic + Grace =**
+
 - Healing
 - Protection
 - Creation
 - Truth-revelation
 
 **Additive Magic + Fatal Grace =**
+
 - Unintended destruction
 - Corruption of the Veil
 - Memory erasure (Chainfire)
@@ -133,6 +144,7 @@ Fatal Grace = Grace corrupted → Destruction masking as salvation
 **Opposition:** The Keeper of the Underworld (embodiment of death, Subtractive Magic)
 
 **Symbols:**
+
 - Sword of Truth (wielded only by the worthy)
 - The Book of Counted Shadows
 - The Pillars of Creation
@@ -160,12 +172,14 @@ Fatal Grace = Grace corrupted → Destruction masking as salvation
 ### Creation Myth
 
 **The Founding:**
+
 - The Creator formed the world with Additive Magic
 - The Keeper was cast into the Underworld with Subtractive Magic
 - The Veil was established as the boundary between realms
 - Humanity was given free will to choose between Creator and Keeper
 
 **The Gift:**
+
 - Magic is the Creator's gift to humanity
 - Additive Magic = the power to create and sustain
 - Subtractive Magic = the power to destroy (inherently corrupting)
@@ -180,7 +194,7 @@ Fatal Grace = Grace corrupted → Destruction masking as salvation
 **The Veil represents Goodkind's philosophical boundaries:**
 
 | Concept | Literary Form | Philosophical Meaning |
-|---------|---------------|-----------------------|
+| --------- | --------------- | ----------------------- |
 | **Creator** | Benevolent deity | Reason, individualism, capitalism |
 | **Keeper** | Malevolent force | Collectivism, coercion, destruction |
 | **Veil** | Magical barrier | Boundary between freedom and tyranny |
@@ -201,7 +215,7 @@ Fatal Grace = Grace corrupted → Destruction masking as salvation
 ### Philosophical Parallels to Objectivism
 
 | Objectivist Principle | Sword of Truth Manifestation |
-|----------------------|---------------------------------|
+| ---------------------- | --------------------------------- |
 | Rational self-interest | Additive Magic (creation for self and others) |
 | Individualism | Each person's magical alignment is their choice |
 | Reality as absolute | The Veil is an objective boundary, not subjective |
@@ -213,17 +227,20 @@ Fatal Grace = Grace corrupted → Destruction masking as salvation
 ## V. KEY REFERENCES
 
 ### Books
+
 - *Chainfire* (2005) — Veil destabilized, Chainfire spell cast
 - *Phantom* (2006) — Veil near collapse, magic corruption peaks
 - *Confessor* (2007) — Veil restored, final confrontation with Keeper
 - *Nicci Chronicles* (2017+) — Grace as character entity revealed
 
 ### Philosophical Sources
+
 - Ayn Rand's *Objectivism* — Explicit influence on Goodkind's worldview
 - *Atlas Shrugged* — Parallels to Richard's journey against coercion
 - *The Fountainhead* — Individualism vs. collectivism themes
 
 ### Magic System
+
 - **Additive Magic** = Creation, life, freedom
 - **Subtractive Magic** = Destruction, death, coercion
 - **Corruption** = The cost of violating natural law
@@ -233,6 +250,7 @@ Fatal Grace = Grace corrupted → Destruction masking as salvation
 ## VI. FIRST RULE COMPLIANCE
 
 **All claims verified against primary sources:**
+
 - Wikipedia entries for *Chainfire* and *Phantom*
 - *Sword of Truth* series lore
 - Goodkind's stated philosophical influences (Objectivism)

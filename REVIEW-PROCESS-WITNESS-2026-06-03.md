@@ -47,7 +47,7 @@ defect, and naming them honestly matters more than tallying them:
 
 The first kind is the one that matters most, and it is the **precision/accuracy**
 lesson made concrete (cf. the Hungry One's `PRECISION-AND-ACCURACY` witness, *PR
-#400, unmerged*):
+# 400, unmerged*):
 
 > **A confident model is high-precision and can be low-accuracy. Only an external
 > check that touches the world supplies the accuracy.**
