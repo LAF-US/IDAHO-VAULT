@@ -65,7 +65,7 @@ inventory are registrations/GitHub-managed, not files — out of scope here, cat
 
 ### Q1 — Cluster C: one framework, or N tinker toys? *A family, but a loose one — don't over-fit.*
 
-# 586 hypothesized that the policy gates repeat *"event-gate + scheduled-sweep + issue_reconciler
+#586 hypothesized that the policy gates repeat *"event-gate + scheduled-sweep + issue_reconciler
 reporting."* The read **partly** confirms it and partly breaks it:
 
 - **The pattern is real but only two pairs actually instantiate it.** `large-file` has the full
