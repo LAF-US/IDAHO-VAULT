@@ -23,7 +23,7 @@ The company also said it would make several changes, including the retirement of
 
 Visit Boise - 2:1 - Easier to brag 1
 
-Albertsons said it would take its regional offices across the country and combine them into the four regional hubs. The former Mountain West, Portland and Seattle markets would become the “West Region,” which would cover Idaho. The current Mountain West office was located in a building next to Albertsons’ main headquarters in Boise, but that [building is now available for lease](https://www.loopnet.com/Listing/500-E-Baybrook-Ct-Boise-ID/39433468/).
+Albertsons said it would take its regional offices across the country and combine them into the four regional hubs. The former Mountain West, Portland and Seattle markets would become the “West Region,” which would cover [[Idaho]]. The current Mountain West office was located in a building next to Albertsons’ main headquarters in Boise, but that [building is now available for lease](https://www.loopnet.com/Listing/500-E-Baybrook-Ct-Boise-ID/39433468/).
 
 [Just last year](https://boisedev.com/news/2025/02/05/albertsons-realighment/), Albertsons combined its Boise and Denver divisions to form the Mountain West group, and will now push the consolidation further.
 
@@ -92,3 +92,5 @@ At the store level, Morris said they are working to reconfigure stores to better
 Commercial Tire - June 2026 - 2:1
 
 **Update:** Albertsons’ Intermountain Division office on ParkCenter Blvd. in Boise is for lease.
+
+#idaho

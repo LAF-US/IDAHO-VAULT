@@ -13,7 +13,7 @@ Women Make Movies will be closed from MONDAY, DECEMBER 22, 2025 to SUNDAY, JANUA
 
 US | 2016 | 66 minutes | Color | DVD | Order No. 161174
 
-GIRL FROM GOD'S COUNTRY is the untold story of the first female independent filmmaker and action-adventure heroine, Nell Shipman (1892-1970), who left Hollywood to make her films in Idaho.
+GIRL FROM GOD'S COUNTRY is the untold story of the first female independent filmmaker and action-adventure heroine, Nell Shipman (1892-1970), who left Hollywood to make her films in [[Idaho]].
 
 [Host a screening](https://www.wmm.com/catalog/host/request)
 
@@ -56,3 +56,5 @@ Karen Day is a journalist prone to dangerous enthusiasms. As a photographer, fil
 [![](https://www.wmm.com/storage/films/girl-from-gods-country-the-history-of-women-in-film-and-other-war-stories/girlgod_hires8.jpg)](https://www.wmm.com/storage/films/girl-from-gods-country-the-history-of-women-in-film-and-other-war-stories/girlgod_hires8.jpg)
 
 [![](https://www.wmm.com/storage/films/girl-from-gods-country-the-history-of-women-in-film-and-other-war-stories/girlgod_hires9.jpg)](https://www.wmm.com/storage/films/girl-from-gods-country-the-history-of-women-in-film-and-other-war-stories/girlgod_hires9.jpg)
+
+#idaho

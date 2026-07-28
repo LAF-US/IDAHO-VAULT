@@ -6,7 +6,7 @@ author:
 published: 2020-11-17
 created: 2026-07-21
 ---
-Special Collections and Archives holds over 400 manuscript collections of letters, journals, diaries, scrapbooks, photographs, and other primary source material that documents many aspects of Idaho history, particularly the Boise and Treasure Valley Region. Research topics include politics, environment, Basque culture, religion, filmmaking, literature, performing arts, art, ethnicity, gender, geosciences, and many others. Search [finding aids/inventories](http://archiveswest.orbiscascade.org/) for people, topics, and organizations. [Select content is available online](https://boisestate.starter1ua.preservica.com/portal/en-US).
+Special Collections and Archives holds over 400 manuscript collections of letters, journals, diaries, scrapbooks, photographs, and other primary source material that documents many aspects of [[Idaho]] history, particularly the Boise and Treasure Valley Region. Research topics include politics, environment, Basque culture, religion, filmmaking, literature, performing arts, art, ethnicity, gender, geosciences, and many others. Search [finding aids/inventories](http://archiveswest.orbiscascade.org/) for people, topics, and organizations. [Select content is available online](https://boisestate.starter1ua.preservica.com/portal/en-US).
 
 Select collection inventories that allow for further keyword searching and data export:  
 [Cecil Andrus Papers](https://library-wp.apps.aws.boisestate.edu/andrus-search/)  
@@ -79,3 +79,5 @@ Our political collections span from early 20th century through early 21st centur
 ### Religion
 
 We are the repository for the Episcopal Diocese of Idaho, and also hold other small religious collections including Church Women United, Stan Tate, Christ Chapel Historical Society, and Norman L. Foote.
+
+#idaho

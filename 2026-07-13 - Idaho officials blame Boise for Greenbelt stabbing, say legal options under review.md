@@ -15,7 +15,7 @@ Cyclists following the Greenbelt path are visible passing behind a media availab
 
 Listen to this article
 
-Two top Idaho lawmakers believe the killing of a 25-year-old man on the Greenbelt this month could have been prevented — and they’re blaming the city of Boise.
+Two top [[Idaho]] lawmakers believe the killing of a 25-year-old man on the Greenbelt this month could have been prevented — and they’re blaming the city of Boise.
 
 Jordan Harbst was riding his scooter along the Greenbelt when 41-year-old Ross Wardlaw allegedly stepped into his path and stabbed him to death, according to previous Statesman reporting. Wardlaw, a homeless man who [prosecutors said frequently](https://www.idahostatesman.com/news/local/crime/article316463624.html) slept on the Greenbelt and believed people on scooters were after him, was held in custody without bond.
 
@@ -60,3 +60,5 @@ This story was originally published July 13, 2026 at 5:36 PM.
 Want to see more content like this?
 
 <iframe allow="clipboard-write; web-share" src="chrome-extension://cnjifjpddelmedmihgijeibhnjfabmlf/side-panel.html?context=iframe"></iframe>
+
+#idaho

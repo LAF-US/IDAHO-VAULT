@@ -9,7 +9,7 @@ description: "The Secretary of State’s Office outlined a series of concerns wi
 ---
 ![Hotbox Farms is a marijuana dispensary in Huntington, Oregon, about 80 miles from Boise. A campaign to get an initiative on the ballot asking voters whether to legalize medical cannabis in Idaho failed to garner enough signatures to appear on the November ballot.](https://www.idahostatesman.com/public/latest-news/ti6ob4/picture316511060/alternates/LANDSCAPE_1200/IMG_0124ontario06_3_1_J2JUKLNB_L629098933.JPG)
 
-Hotbox Farms is a marijuana dispensary in Huntington, Oregon, about 80 miles from Boise. A campaign to get an initiative on the ballot asking voters whether to legalize medical cannabis in Idaho failed to garner enough signatures to appear on the November ballot. kjones@idahostatesman.com
+Hotbox Farms is a marijuana dispensary in Huntington, Oregon, about 80 miles from Boise. A campaign to get an initiative on the ballot asking voters whether to legalize medical cannabis in [[Idaho]] failed to garner enough signatures to appear on the November ballot. kjones@idahostatesman.com
 
 Listen to this article
 
@@ -70,3 +70,5 @@ The group added that it’s reviewing legal and procedural remedies, but did not
 “The demand Idahoans expressed through this campaign is not going away,” the group’s statement said. “Idahoans deserve the right to make their own healthcare decisions and a government that trusts them to do so.”
 
 Want to see more content like this?
+
+#idaho

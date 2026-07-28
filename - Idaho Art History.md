@@ -12,7 +12,7 @@ description:
 
 **Introduction**
 
-This section of our catalogue [Topics in American Art](https://www.tfaoi.org/aa/6aa/6aa99.htm) is devoted to the topic "Idaho Art History." Articles and essays specific to this topic published in our *[Resource Library](https://www.tfaoi.org/resourc.htm)* are listed at the beginning of the section. Clicking on titles takes readers directly to the articles and essays.
+This section of our catalogue [Topics in American Art](https://www.tfaoi.org/aa/6aa/6aa99.htm) is devoted to the topic "[[Idaho]] Art History." Articles and essays specific to this topic published in our *[Resource Library](https://www.tfaoi.org/resourc.htm)* are listed at the beginning of the section. Clicking on titles takes readers directly to the articles and essays.
 
 Following the links to *Resource Library* articles and essays are a listing of museums in the state which have provided materials to *Resource Library* for this or any other [topic](https://www.tfaoi.org/aa/6aa/6aa99.htm).
 
@@ -69,3 +69,5 @@ Links to sources of information outside of our web site are provided only as ref
 Copyright 2026 , an Arizona nonprofit corporation. All rights reserved.
 
 <iframe allow="clipboard-write; web-share" src="chrome-extension://cnjifjpddelmedmihgijeibhnjfabmlf/side-panel.html?context=iframe"></iframe>
+
+#idaho

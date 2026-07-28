@@ -12,7 +12,7 @@ description: "The Silver and Gold Book was created to represent Moscow at the 18
 
 ## About the Collection
 
-There are a handful of treasures on display in the President’s Office in the Administration Building on University of Idaho’s Moscow campus. Along with many special objects like the Centennial Mace, there is a small and beautiful jewelry box glittering behind glass. Known as the Silver and Gold Book for its style and materials, the box is best appreciated when viewed from many angles. It is a precious piece of University history, however, and so opportunities to inspect the Silver and Gold Book are limited. That is why the University of Idaho Library has created this digital collection of high resolution photographs, to highlight intricate details and provide background information about a unique and important piece of U of I’s past.
+There are a handful of treasures on display in the President’s Office in the Administration Building on University of [[Idaho]]’s Moscow campus. Along with many special objects like the Centennial Mace, there is a small and beautiful jewelry box glittering behind glass. Known as the Silver and Gold Book for its style and materials, the box is best appreciated when viewed from many angles. It is a precious piece of University history, however, and so opportunities to inspect the Silver and Gold Book are limited. That is why the University of Idaho Library has created this digital collection of high resolution photographs, to highlight intricate details and provide background information about a unique and important piece of U of I’s past.
 
 ![Jewelry box is sitting on bottom edge as if it is a book. Edge is styled as a book spine, featuring a silver relief of pine cones, the Idaho state seal (the only state seal designed by a woman), and the dates 1863 (the year Idaho Territory was created) and 1893 (the year of the exposition). Front cover features etching of original Administration Building, gold reliefs of wheat shafts and representations of industries that were important to early Idaho's development.  ](https://objects.lib.uidaho.edu/silver-gold/small/silvergold_006_sm.jpg)
 
@@ -57,3 +57,5 @@ This digital collection is built with [CollectionBuilder](https://collectionbuil
 Using the [CollectionBuilder-CSV](https://github.com/CollectionBuilder/collectionbuilder-csv) template and the static website generator [Jekyll](https://jekyllrb.com/), this project creates an engaging interface to explore driven by metadata.
 
 [![CollectionBuilder](https://www.lib.uidaho.edu/digital/silver-gold/assets/img/collectionbuilder-logo.png)](https://collectionbuilder.github.io/ "CollectionBuilder")
+
+#idaho

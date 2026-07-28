@@ -10,7 +10,7 @@ Joe Peak remembers the first time he walked into the Snakepit. A jewel-bedecked 
 
 ![](https://thumb.spokesman.com/pWp_IUooa3XALkVoZpSt5ysKsk8=/1600x0/media.spokesman.com/picture_story_item_images/srxid_snakepit_front.jpg)
 
-The Enaville Resort has been known over the years as The Snake Pit, Josies, and Clark Hotel in Kingston, Idaho. Kathy Plonka The Spokesman-Review Buy this photo
+The Enaville Resort has been known over the years as The Snake Pit, Josies, and Clark Hotel in Kingston, [[Idaho]]. Kathy Plonka The Spokesman-Review Buy this photo
 
 ---
 
@@ -125,3 +125,5 @@ This is the view from the front porch of the Enaville Resort on Tuesday, Jan. 10
 ![](https://thumb.spokesman.com/fVYrpQX0F0eJzdb45WT52sa7bQI=/1600x0/media.spokesman.com/picture_story_item_images/srxid_snakepit_sign.jpjg.jpg)
 
 A sign in front of the Enaville Resort explains the recent issues surrounding the popular restaurant/bar in Kingston, Idaho. Kathy Plonka The Spokesman-Review Buy this photo
+
+#idaho

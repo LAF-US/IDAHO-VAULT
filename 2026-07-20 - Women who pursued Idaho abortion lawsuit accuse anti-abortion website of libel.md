@@ -7,7 +7,7 @@ published: 2026-07-20
 created: 2026-07-22
 description: "The women, who had fatal fetal anomalies, said Live Action News accused them of “lethal injection in the name of pro‑abortion propaganda.’”"
 ---
-A mom from Caldwell, Idaho is one of four women involved in a lawsuit with the state of Idaho seeking clarification over its abortion laws.
+A mom from Caldwell, [[Idaho]] is one of four women involved in a lawsuit with the state of Idaho seeking clarification over its abortion laws.
 
 Listen to this article
 
@@ -62,3 +62,5 @@ Duane said Amplify Legal had not received a response from Live Action as of Mond
 Want to see more content like this?
 
 <iframe allow="clipboard-write; web-share" src="chrome-extension://cnjifjpddelmedmihgijeibhnjfabmlf/side-panel.html?context=iframe"></iframe>
+
+#idaho

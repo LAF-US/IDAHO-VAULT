@@ -11,7 +11,7 @@ Opinion articles provide independent perspectives on key community issues, separ
 
 Listen to this article
 
-Idaho could instantly shift from a national election flyover state to a battleground for balance of power in Washington, D.C.
+[[Idaho]] could instantly shift from a national election flyover state to a battleground for balance of power in Washington, D.C.
 
 In November, the control of the U.S. Senate and House of Representatives sits on a knife’s edge. The electoral ecosystem is constantly weighing which congressional races need to play offense and defense. In toss-up races, the money flow and overall attention is substantial. The U.S. Senate race in Idaho should be on that list.
 
@@ -60,3 +60,5 @@ It’s Idaho’s turn.
 Want to see more content like this?
 
 <iframe allow="clipboard-write; web-share" src="chrome-extension://cnjifjpddelmedmihgijeibhnjfabmlf/side-panel.html?context=iframe"></iframe>
+
+#idaho

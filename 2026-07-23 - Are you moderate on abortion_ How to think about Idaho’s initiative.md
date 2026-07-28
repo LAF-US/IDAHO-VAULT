@@ -11,7 +11,7 @@ Opinion articles provide independent perspectives on key community issues, separ
 
 ![A sign outside the Idaho Capitol gives information on the Reproductive Freedom and Privacy Act, a citizen-led ballot initiative in response to Idaho's ban on abortion.](https://www.idahostatesman.com/public/latest-news/fnwt3t/picture314361635/alternates/LANDSCAPE_1200/BOI_011703womensmarch.JPG)
 
-A sign outside the Idaho Capitol gives information on the Reproductive Freedom and Privacy Act, a citizen-led ballot initiative in response to Idaho's ban on abortion. smiller@idahostatesman.com
+A sign outside the [[Idaho]] Capitol gives information on the Reproductive Freedom and Privacy Act, a citizen-led ballot initiative in response to Idaho's ban on abortion. smiller@idahostatesman.com
 
 Listen to this article
 
@@ -56,3 +56,5 @@ Want to see more content like this?
 (Monday and Thursday mornings) Stay informed on how Idaho government actions affect you from the Statehouse to Congress - to where you live and work. Plus election updates, breaking news and more.
 
 <iframe allow="clipboard-write; web-share" src="chrome-extension://cnjifjpddelmedmihgijeibhnjfabmlf/side-panel.html?context=iframe"></iframe>
+
+#idaho
