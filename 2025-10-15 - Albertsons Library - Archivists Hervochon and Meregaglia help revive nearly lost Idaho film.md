@@ -5,7 +5,7 @@ author:
 published: 2025-10-15
 created: 2026-07-21
 ---
-Archivists and Associate Professors Gwyn Hervochon and Alessandro (Alex) Meregaglia were recently invited to participate in a panel discussion at the [Kenworthy Silent Film Festival](https://www.kenworthy.org/events-calendar/restoration-panel-discussion/) in Moscow, Idaho. The festival featured the premiere of the restored silent film, “Told in the Hills.”
+Archivists and Associate Professors Gwyn Hervochon and Alessandro (Alex) Meregaglia were recently invited to participate in a panel discussion at the [Kenworthy Silent Film Festival](https://www.kenworthy.org/events-calendar/restoration-panel-discussion/) in Moscow, [[Idaho]]. The festival featured the premiere of the restored silent film, “Told in the Hills.”
 
 ![A group of 5 people (four men and one woman) standing closely together, smiling directly into the camera.](https://www.boisestate.edu/library/wp-content/uploads/sites/668/2025/10/d4b0b7f8-ff4b-435d-882b-0223dd3364071-1-1-1024x771.jpg)
 
@@ -20,3 +20,5 @@ Hervochon and Meregaglia coordinated the re-digitization of the film reels and w
 The fourth day of the film festival featured Nell Shipman short films. Shipman, a silent film actor and director, established a film studio in Idaho in the 1920s and filmed all those shorts at Priest Lake, in northern Idaho. The Kenworthy commissioned new scores for the Shipman shorts as well, which premiered at the festival. Like “Told in the Hills,” Tom Trusky also located copies of Shipman films through his work researching Idaho film history. Boise State’s Special Collections and Archives houses [Nell Shipman’s papers](https://archiveswest.orbiscascade.org/ark:80444/xv03213).
 
 The festival received widespread media attention, including a story that aired nationally on [NPR’s All Things Considered](https://www.npr.org/2025/10/07/nx-s1-5553582/a-1919-film-featuring-nez-perce-tribal-members-was-recently-re-discovered-in-idaho), a separate story that aired on [Northwest Public Broadcasting](https://www.nwpb.org/2025-09-17/from-soviet-vault-to-idaho-screen-a-lost-silent-era-western-returns), and articles in [The Spokesman-Review](https://www.spokesman.com/stories/2025/sep/28/some-films-century-after-their-release-brought-bac/), [The Lewiston Tribune](https://www.lmtribune.com/inland-360/stories-retold-20457597), and [The Inlander](https://www.inlander.com/screen/the-kenworthy-silent-film-festival-in-moscow-resurrects-the-1919-film-told-in-the-hills/article_eb3f4d6f-c82d-44b6-ae4e-2779df8b9e42.html).
+
+#idaho

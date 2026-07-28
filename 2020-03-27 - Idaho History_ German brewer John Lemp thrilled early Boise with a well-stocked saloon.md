@@ -7,7 +7,7 @@ published: 2020-03-27
 created: 2026-07-15
 description: "“Boise Brewery and Saloon. ... John Lemp, proprietor, keeps constantly on hand the finest and best brewed LAGER BEER! Wines, liquors, and cigars.”"
 ---
-Arthur Hart shares his love for history as a teacher, museum director and in his columns found in the pages of the Idaho Statesman.
+Arthur Hart shares his love for history as a teacher, museum director and in his columns found in the pages of the [[Idaho]] Statesman.
 
 Listen to this article
 
@@ -42,3 +42,5 @@ Want to see more content like this?
 Arthur Hart writes this column on Idaho history for the Idaho Statesman each Sunday. Email histnart@gmail.com.
 
 <iframe allow="clipboard-write; web-share" src="chrome-extension://cnjifjpddelmedmihgijeibhnjfabmlf/side-panel.html?context=iframe"></iframe>
+
+#idaho

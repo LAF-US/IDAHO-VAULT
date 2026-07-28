@@ -7,7 +7,7 @@ published: 2024-12-10
 created: 2026-07-24
 description: "The State Seal of Idaho was adopted on March 14, 1891, shortly after Idaho became a state on July 3, 1890. The seal was designed by prominent artist and suffragette, Emma Edwards Green.The design of the seal features a miner and a woman, representing Idaho's mining and agriculture industries, respectively. The miner…"
 ---
-The State Seal of Idaho was adopted on March 14, 1891, shortly after Idaho became a state on July 3, 1890. The seal was designed by prominent artist and suffragette, Emma Edwards Green.
+The State Seal of [[Idaho]] was adopted on March 14, 1891, shortly after Idaho became a state on July 3, 1890. The seal was designed by prominent artist and suffragette, Emma Edwards Green.
 
 The design of the seal features a miner and a woman, representing Idaho’s mining and agriculture industries, respectively. The miner is depicted with a pick and shovel, while the woman holds a sheaf of wheat and a cornucopia, symbolizing the state’s abundant natural resources. The two figures stand on either side of a shield, which bears the state motto, “Esto perpetua” (“Let it be perpetual”), as well as images of mountains, a river, and a forest.
 
@@ -36,3 +36,5 @@ Green studied art in Paris, where she became interested in heraldry and the desi
 In addition to her work as a designer of state seals, Green was also an active supporter of women’s suffrage. She served as president of the New York State Federation of Women’s Clubs, and was a member of the National American Woman Suffrage Association. Her artwork often reflected her political beliefs, and she used her designs to promote the cause of women’s rights.
 
 Green lived to the age of 101 and remained active in her art and activism throughout her life. She was recognized for her contributions to American art and culture with several awards and honors, including induction into the [National Women’s Hall of Fame](https://www.womenofthehall.org/) in 2002.
+
+#idaho

@@ -7,7 +7,7 @@ published: 2020-02-14
 created: 2026-07-16
 description: "History columnist Arthur Hart writes about an Idaho pioneer who was a cultural and business force."
 ---
-Arthur Hart shares his love for history as a teacher, museum director and in his columns found in the pages of the Idaho Statesman.
+Arthur Hart shares his love for history as a teacher, museum director and in his columns found in the pages of the [[Idaho]] Statesman.
 
 Listen to this article
 
@@ -38,3 +38,5 @@ Want to see more content like this?
 Arthur Hart writes this column on Idaho history for the Idaho Statesman each Sunday. Email histnart@gmail.com.
 
 <iframe allow="clipboard-write; web-share" src="chrome-extension://cnjifjpddelmedmihgijeibhnjfabmlf/side-panel.html?context=iframe"></iframe>
+
+#idaho

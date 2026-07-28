@@ -15,7 +15,7 @@ The Williston Graphic seemed to pooh-pooh the law, calling Breckenridge’s infr
 
 Breckenridge would develop a pattern of not staying in one place. Born in Michigan, he seemed to travel back and forth between North Dakota and Montana as a young adult. He enlisted and joined the Marines in 1918 and served a year. By 1935, he was back in prison again, this time in Montana, serving a year for stealing a car in Glendive. His prison file noted a wife, Elsie, lived in Sentinel Butte, and that his parents had lived in Minot. He had a third-grade education, and claimed no religion.
 
-Breckenridge continued to travel around the country, Canada, and Mexico, though he claimed Idaho as his home. He continued to pursue art, becoming known as “Cowboy Joe.” Perhaps listeners may even discover some of his artwork in their own collections.
+Breckenridge continued to travel around the country, Canada, and Mexico, though he claimed [[Idaho]] as his home. He continued to pursue art, becoming known as “Cowboy Joe.” Perhaps listeners may even discover some of his artwork in their own collections.
 
 Even during that early arrest in 1917, his work was creating an impression. The Williston Graphic commented that his art was “vivid and graphic,” with elements reminiscent of other famed painters’ work. The paper wrote that his work had “been seen and … appreciated. They sell, and that proves something.”
 
@@ -34,3 +34,5 @@ Below are links to view some of Joe Breckenridge's art. One site notes that his 
 - *[https://www.findagrave.com/memorial/63243755/joseph-ralph-breckenridge](https://www.findagrave.com/memorial/63243755/joseph-ralph-breckenridge)*
 - *[https://weberstudies.weber.edu/archive/archive%20D%20Vol.%2021.2-25.2/Vol.%2024.1/Larry%20Tritten%20Ess.htm](https://weberstudies.weber.edu/archive/archive%20D%20Vol.%2021.2-25.2/Vol.%2024.1/Larry%20Tritten%20Ess.htm)*
 - *The Wahpeton Times, August 9, 1917, p1*
+
+#idaho
