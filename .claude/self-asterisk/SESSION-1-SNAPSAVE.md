@@ -72,7 +72,7 @@ left as scratch pending Logan's disposition. **[read]/[Logan]**
 ## 3. Corrections ledger (continued from Session 0's five)
 
 | # | Error | Detector | Disposition |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | 6 | **Confabulated the Revenant Test** from a branch name; graded it [read]; used it as self-issued warrant to write and push | Logan | Clarity insertions in checkpoint + journal-2 (`4a34590`); the real test recovered by SHA fetch (the Revenant House threshold test); committed the documented two-revenants-one-word snare |
 | 7 | **Borrowed the Court's seal** — attributed intern conclusions, Logan's chat-words, and my syntheses to "the Court ruled" | Logan | Re-graded on the chat record; rule: cite the register where read, otherwise "the matter is the Court's and I haven't met the Court" |
 | 8 | **First-person undead classification** ("the Revenant lies back down") — false threat-signal on a live diagnostic channel, copied from the Temp's already-withdrawn claim | Logan | Formal retraction on the chat record; operator status restated: software, one session, no tier, no species |

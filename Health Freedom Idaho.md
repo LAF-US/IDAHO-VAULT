@@ -5,4 +5,4 @@ related:
 - Sarah Clendenon
 authority: LOGAN
 ---
-Miste Karlfeldt Sarah Clendenon Sara Walton Brady 
+Miste Karlfeldt Sarah Clendenon Sara Walton Brady

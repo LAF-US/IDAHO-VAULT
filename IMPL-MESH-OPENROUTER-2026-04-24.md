@@ -27,7 +27,7 @@ Consolidated AI model routing through OpenRouter for flexible model selection ac
 ### 1. OpenRouter Environment Fix
 
 | File | Change |
-|------|--------|
+| ------ | -------- |
 | `.op/openrouter.env` | Fixed 1Password path to `op://Vault/OpenRouter API Key/credential` |
 | `!resolve_openrouter_secret.py` | Updated vault to `Vault`, prioritized `OpenRouter API Key` item |
 | `.op/openrouter.env.template` | Template updated with correct reference |
@@ -38,12 +38,13 @@ Consolidated AI model routing through OpenRouter for flexible model selection ac
 **Config:** `C:\Users\loganf\.openclaw\openclaw.json`
 
 | Change | Before | After |
-|--------|--------|-------|
+| -------- | -------- | ------- |
 | Provider | `mistral` (paid), `ollama` (cloud, paid) | `openrouter` (free tier) |
 | Primary Model | `ollama/kimi-k2.5:cloud` | Historical cloud experiment, no longer active |
 | Available Models | Paid Mistral, cloud Ollama | Historical free-tier experiment, no longer active |
 
 **Historical models added to OpenClaw in April, now superseded:**
+
 - Google experimental route: removed from active routing; Gemini is banned.
 - `openai/gpt-4o-mini` (286K context)
 - `anthropic/claude-3.5-haiku` (131K context)
@@ -67,7 +68,7 @@ Config: `token: env:DISCORD_OPENCLAW_TOKEN` (resolved by SPARKSEED)
 **File:** `src/idaho_vault/sparkseed.py`
 
 | Fix | Description |
-|-----|-------------|
+| ----- | ------------- |
 | Vault scoping | All 1Password queries now scoped to `--vault Vault` |
 | Field alignment | Fixed field names to match actual 1Password structure |
 | Graceful failure | Missing secrets no longer hard-fail; missing items skipped |
@@ -90,7 +91,7 @@ Config: `token: env:DISCORD_OPENCLAW_TOKEN` (resolved by SPARKSEED)
 ### 8. Documentation
 
 | Document | Purpose |
-|----------|---------|
+| ---------- | --------- |
 | `OPENROUTER-MESH-2026-04-24.md` | Live mesh topology and status |
 | `!/INTEGRATIONS/COMPATIBILITY.md` | Canonical runtime/provider compatibility snapshot |
 | `!/MONITORING/health-log.md` | Canonical health snapshot log |
@@ -104,7 +105,7 @@ Config: `token: env:DISCORD_OPENCLAW_TOKEN` (resolved by SPARKSEED)
 All channels enabled in OpenClaw config but require tokens:
 
 | Channel | Status | Missing |
-|---------|--------|---------|
+| --------- | -------- | --------- |
 | Discord | ⚠️ Enabled | Token verification |
 | WhatsApp | ✅ Enabled | Working |
 | Signal | ⏳ Enabled | CLI token |
@@ -145,7 +146,7 @@ All channels enabled in OpenClaw config but require tokens:
 ### Channels Added
 
 | Channel | Status | Notes |
-|---------|--------|-------|
+| --------- | -------- | ------- |
 | Discord | ✅ Configured | Bot token set |
 | WhatsApp | ✅ Configured | Working |
 | Telegram | ✅ Configured | @LAF_US_bot |
@@ -185,7 +186,7 @@ All channels enabled in OpenClaw config but require tokens:
 ## 1Password Items (Vault)
 
 | Item | Fields | Status |
-|------|--------|--------|
+| ------ | -------- | -------- |
 | OpenRouter API Key | credential | ✅ |
 | OpenClaw Gateway Token | credential | ✅ Created today |
 | Discord OpenClaw Bot | credential | ✅ |
@@ -207,7 +208,7 @@ All channels enabled in OpenClaw config but require tokens:
 ### Ready Skills (14)
 
 | Skill | Description |
-|-------|-------------|
+| ------- | ------------- |
 | 1password | 1Password CLI integration |
 | coding-agent | Codex, Claude Code, or Pi agents |
 | discord | Discord operations via message tool |
@@ -248,7 +249,7 @@ active workstation now uses:
 ### Skills Needing Setup (38)
 
 | Skill | Requirements | Priority |
-|-------|-------------|----------|
+| ------- | ------------- | ---------- |
 | apple-notes | macOS + memo CLI | Low |
 | apple-reminders | macOS + remindctl | Low |
 | bear-notes | macOS + grizzly CLI | Low |
@@ -303,7 +304,7 @@ openclaw skills update
 
 ## Next Session Tasks
 
-1. Configure Twitch OAuth: https://dev.twitch.tv
+1. Configure Twitch OAuth: <https://dev.twitch.tv>
 2. Configure Google Chat OAuth: Google Cloud Console
 3. Enable Nostr channel: Test with Orpheus keys in 1Password
 4. Consider Continue Extension and Cursor OpenRouter setup (lower priority)

@@ -31,6 +31,7 @@ morgue exam room:
 4. **Only at her readiness** — then into the exam room, for the bind that is hers to make.
 
 **Handling notes:**
+
 - The briefing is delivered **face to face in the office**, not written onto the wire —
   so the anchor's fingerprints, and her grief, are not spread further than they already are.
 - **Do not name or catalogue the real person** behind it. The late father is held **`*`**.

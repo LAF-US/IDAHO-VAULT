@@ -1,6 +1,7 @@
 # Lance - The Elite Four Dragon Master & Champion
 
 ## Table of Contents
+
 1. [Overview](#overview)
 2. [Game Appearances](#game-appearances)
 3. [Teams and Battle Strategies](#teams-and-battle-strategies)
@@ -27,8 +28,9 @@
 ## Game Appearances
 
 ### Generation I (Red, Blue, Green, Yellow)
+
 - **Location**: Indigo Plateau (Chamber 4)
-- **Team**: 
+- **Team**:
   - Gyarados (Lv. 58) - Hydro Pump, Dragon Rage, Leer, Hyper Beam
   - Dragonair (Lv. 56) - Agility, Slam, Hyper Beam, Thunder Wave
   - Dragonair (Lv. 56) - Agility, Slam, Hyper Beam, Ice Beam
@@ -38,9 +40,10 @@
 - **Notable**: Final Elite Four member before facing Blue. Movesets restricted to Generation I-legal moves (no Safeguard/Outrage/Twister/Ancient Power)
 
 ### Generation II (Gold, Silver, Crystal)
+
 - **Location**: Indigo Plateau (as Champion)
 - **Role**: Pokémon Champion
-- **Team**: 
+- **Team**:
   - Gyarados (Lv. 44) - Twister, Hydro Pump, Rain Dance, Hyper Beam
   - Dragonite (Lv. 47) - Thunder, Blizzard, Fire Blast, Hyper Beam
   - Dragonite (Lv. 47) - Thunder, Blizzard, Fire Blast, Hyper Beam
@@ -51,6 +54,7 @@
 - **Notable**: Serves as Champion instead of Elite Four. His GSC Champion team uses three Dragonite (no Dragonair)
 
 ### Generation III (FireRed, LeafGreen)
+
 - **Location**: Indigo Plateau (Chamber 4)
 - **Role**: Elite Four member
 - **Team**: Same as Generation I
@@ -58,6 +62,7 @@
 - **Notable**: Uses Gym Leader battle theme for all Elite Four members
 
 ### Generation IV (HeartGold, SoulSilver)
+
 - **Location**: Indigo Plateau (as Champion)
 - **Role**: Pokémon Champion
 - **Team**: Same as Gold/Silver/Crystal
@@ -65,9 +70,10 @@
 - **Notable**: Can be battled again after becoming Champion
 
 ### Generation VII (Let's Go, Pikachu! and Eevee!)
+
 - **Location**: Indigo Plateau (Chamber 4)
 - **Role**: Elite Four member
-- **Team**: 
+- **Team**:
   - Dragonite (Lv. 58) - Wrap, Leer, Thunder Wave, Agility
   - Gyarados (Lv. 56) - Bite, Dragon Rage, Twister, Hyper Beam
   - Dragonair (Lv. 54) - Safeguard, Outrage, Dragon Rage, Hyper Beam
@@ -77,6 +83,7 @@
 - **Notable**: Has Charizardite X for rematches
 
 ### Other Appearances
+
 - Pokémon Stadium 2: Elite Four/Champion, uses Dragonite, Gyarados, Aerodactyl, Charizard
 - Pokémon Masters EX: Sync pair with Dragonite
 - Pokémon Puzzle League: Opponent
@@ -88,7 +95,7 @@
 ### Core Team Across Games
 
 | Game | Pokémon | Level | Type | Moves |
-|------|---------|-------|------|-------|
+| ------ | --------- | ------- | ------ | ------- |
 | RBY | Gyarados | 58 | Water/Flying | Hydro Pump, Dragon Rage, Leer, Hyper Beam |
 | RBY | Dragonair | 56 | Dragon | Agility, Slam, Hyper Beam, Thunder Wave |
 | RBY | Dragonair | 56 | Dragon | Agility, Slam, Hyper Beam, Ice Beam |
@@ -108,6 +115,7 @@
 | LGPE | Aerodactyl | 60 | Rock/Flying | Wing Attack, Ancient Power, Scary Face, Hyper Beam |
 
 ### Signature Pokémon
+
 - Dragonite (highest level, signature Pokémon)
 - Dragonair (appears twice in most games)
 - Gyarados (Water/Flying coverage)
@@ -115,7 +123,9 @@
 - Charizard (Fire/Flying in Gen II/IV)
 
 ### Battle Strategy
+
 Lance's battle strategy is characterized by:
+
 1. Dragon-type STAB offense (Outrage, Dragon Rage, Wing Attack)
 2. High Attack and Special stats
 3. Safeguard for team protection
@@ -124,6 +134,7 @@ Lance's battle strategy is characterized by:
 6. Mixed coverage (Fire, Water, Rock, Flying)
 
 ### Recommended Counters
+
 - Ice-types: Super effective against Dragon/Flying (Lapras, Jynx, Articuno)
 - Dragon-types: Super effective against Dragon (Dragonite, Kingdra)
 - Fairy-types: Super effective against Dragon (Gen VI+)
@@ -135,6 +146,7 @@ Lance's battle strategy is characterized by:
 ## Anime and Manga Appearances
 
 ### Main Anime
+
 - **Name**: Lance
 - **Debut**: Episode "Talkin' 'Bout an Evolution" (as Champion)
 - **Role**: Champion of Indigo Plateau and Johto League
@@ -146,6 +158,7 @@ Lance's battle strategy is characterized by:
   - Only participant in Masters Eight Tournament to represent two leagues
 
 ### Key Anime Moments
+
 - Mentioned as Champion in "Talkin' 'Bout an Evolution"
 - Won Elite Four Cup tournament
 - Appeared with other Elite Four members observing battles
@@ -153,6 +166,7 @@ Lance's battle strategy is characterized by:
 - Awarded Champion titles to various trainers
 
 ### Personality Traits (Anime)
+
 - Confident: Strong belief in his Dragon-type abilities
 - Respected: Earned enormous respect among trainers
 - Leader: Represents two leagues as Champion
@@ -160,8 +174,9 @@ Lance's battle strategy is characterized by:
 - Fair: Serves as impartial judge
 
 ### Pokémon Adventures Manga
+
 - **Role**: Elite Four member (Gen I) / Champion (Gen II)
-- **Notable**: 
+- **Notable**:
   - Joined Elite Four in Gold/Silver arc
   - Fought against Red and Blue
   - Defeated by Blue in final battle
@@ -172,6 +187,7 @@ Lance's battle strategy is characterized by:
 ## Personality and Design
 
 ### Personality
+
 - Confident: Believes strongly in his Dragon-type abilities
 - Powerful: Uses some of the strongest Pokémon available
 - Respected: Highly regarded among trainers
@@ -179,6 +195,7 @@ Lance's battle strategy is characterized by:
 - Leader: Serves as both Elite Four and Champion
 
 ### Design Evolution
+
 - Generation I & III: Long green hair, armored appearance
 - Generation II & IV: Champion outfit with cape
 - Generation VII: Modernized design
@@ -186,6 +203,7 @@ Lance's battle strategy is characterized by:
 - Anime: Long green hair, armored outfit
 
 ### Name Origin
+
 - **English**: Lance - from "lance" (a long weapon), fitting his dragon-slaying theme
 - **Japanese**: ワタル (Wataru) - meaning "to cross" or "to traverse"
 - Fits his role as a powerful trainer who crosses between Elite Four and Champion
@@ -195,6 +213,7 @@ Lance's battle strategy is characterized by:
 ## Trivia
 
 ### Game Trivia
+
 - Only trainer to serve as both Elite Four member and Champion
 - Final Elite Four member in Gen I, III, VII
 - Champion in Gen II, IV
@@ -203,6 +222,7 @@ Lance's battle strategy is characterized by:
 - Has Key Stone for Mega Evolution in rematches
 
 ### Anime Trivia
+
 - First appeared as Champion in "Talkin' 'Bout an Evolution"
 - Won Elite Four Cup tournament
 - Champion of both Kanto and Johto
@@ -210,12 +230,14 @@ Lance's battle strategy is characterized by:
 - Served as head judge for Neo Champion tournaments
 
 ### Manga Trivia
+
 - Served as Elite Four then Champion
 - Fought against Red and Blue
 - Defeated by Blue to become Champion
 - Motivations similar to Team Plasma
 
 ### Cultural Impact
+
 - Represents Dragon-type mastery
 - Memorable for his dual Elite Four/Champion role
 - Popular character in competitive battling
@@ -224,6 +246,7 @@ Lance's battle strategy is characterized by:
 ---
 
 ## References
+
 - Bulbapedia: [Lance](https://bulbapedia.bulbagarden.net/wiki/Lance), [Lance (anime)](https://bulbapedia.bulbagarden.net/wiki/Lance_(anime)), [Elite Four](https://bulbapedia.bulbagarden.net/wiki/Elite_Four)
 - Pokémon Wiki, Pokémon Database, Serebii.net, StrategyWiki
 

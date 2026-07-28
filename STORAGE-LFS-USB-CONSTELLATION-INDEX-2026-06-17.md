@@ -57,22 +57,26 @@ run.
 ## The constellation
 
 ### ① Inventories & maps — "what exists"
+
 - [[LOCAL-STORAGE-INVENTORY-2026-05-08]] — read-only folder-level audit of `C:/D:/E:/F:`. *(active)*
 - [[DEFRAG-MAP]] — cross-device + cloud inventory; the live 5-drive table (updated 2026-05-25). *(live)*
 - [[MACBOOK-GROUND-ZERO-OBSERVATION-2026-05-15]] — the MacBook surface and available tooling. *(active)*
 - [[!-MAC-HARDWARE-SOFTWARE-CHECK-2026-05-14]] — Mac hardware / SMART / capacity check. *(reference)*
 
 ### ② Drive-role manifests — "where things should live"
+
 - [[HOME-DESK-MANIFEST-2026-05-08]] — `D:` LoganF: personal/history archive + staging. *(draft)*
 - [[WORK-DESK-MANIFEST-2026-05-08]] — `E:` Expansion: Idaho Reports / Legislature / production. *(draft)*
 - [[TRAVEL-BAG-MANIFEST-2026-05-08]] — `F:` ExternalSSD: lean portable active-work. *(draft)*
 
 ### ③ Plans & routing — "how to move it"
+
 - [[EXTERNAL-DRIVE-MIGRATION-PLAN-2026-05-08]] — role mapping + non-destructive routing order. *(draft)*
 - [[CROSS-DRIVE-OVERLAP-REPORT-2026-05-08]] — overlap families; the one proven duplicate (`Social media experiments`, 174/174). *(draft)*
 - [[LOCAL-VAULT-REUNIFICATION-2026-05-08]] — the closest prior attempt to tie the batch together (predates DEFRAG / Mac / pushable rebuild). *(active)*
 
 ### ④ Doctrine — the durable rules that outlived the phase ✅ live
+
 - [[VAULT-MEDIA-STORAGE]] — storage lanes: ≤100 MB direct / >100 MB LFS / >2 GB external. *(in force; extended via PR #535)*
 - [[LAF-USB-PROTOCOL-FRAMEWORK]] — staged carrier/sync framework for external objects.
 - [[LAF-USB-OBJECT-MANIFEST-2026-05-08.json]] — registry of the oversized files >2 GB: **40 entries, 40/40 `pending`** (grew from the original 38 at the 2026-05-08 block as ghost OIDs were retired and entries added).
@@ -82,6 +86,7 @@ run.
 - [[LAF-USB]] / [[USB]] — disambiguation nodes for the carrier vs. the bus.
 
 ### ⑤ LFS remediation arc — the "38-file / 2 GB" thread
+
 - [[HANDOFF-abhorsen-codex-20260401]] — origin: `git lfs migrate`, force-push blocked.
 - [[LEVELSET-LFS-SHUTDOWN-2026-05-06]] — interrupted GitHub Desktop push (4.0/4.5 GiB).
 - [[HANDOFF-LFS-2GB-BLOCK-2026-05-08]] — the wall: HTTP 422, 38 files > 2 GB; policy amended 5 GB → 2 GB.
@@ -91,9 +96,11 @@ run.
 - Enforcement: `.github/scripts/check_large_files.py`, `.github/workflows/large-file-policy.yml`, `.github/scripts/large_file_watchdog.py`, `.gitattributes`, `.github/scripts/laf_usb_manifest.py`, `.github/workflows/laf-usb-manifest-policy.yml`.
 
 ### ⑥ USB witness / signals
+
 - [[WITNESS-ABHORSEN-2026-05-19-DEWEY-HAS-THE-USB]] — governance witness asserting archive integrity ("Dewey has the USB"). *(witness-grade claim, not a transfer receipt.)*
 
 ### ⑦ Repo / branch cleanup — adjacent housekeeping
+
 - [[LOCAL-ARBORSCAPE-IDAHO-VAULT-SPLINTERS-2026-05-09]] — local clone splinter census.
 - [[ARBORSCAPE-COMPLETION-REPORT-2026-05-17]] — branch/PR cleanup; logs the 322 GiB rclone transfer as *"status unknown."*
 
@@ -153,6 +160,7 @@ Agents who worked the phase (records exist and are traceable):
 ---
 
 ## See also
+
 [[VAULT-MEDIA-STORAGE]] · [[DEFRAG-MAP]] · [[LOCAL-STORAGE-INVENTORY-2026-05-08]] · [[LAF-USB-OBJECT-MANIFEST-2026-05-08.json]] · [[LOCAL-VAULT-REUNIFICATION-2026-05-08]]
 
 *Provenance: assembled 2026-06-17 from a committed-record survey of the
