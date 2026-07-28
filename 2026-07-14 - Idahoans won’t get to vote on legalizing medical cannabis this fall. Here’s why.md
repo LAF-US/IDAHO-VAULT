@@ -7,7 +7,7 @@ published: 2026-07-14
 created: 2026-07-15
 description: "People across the state had been gathering signatures to advance an initiative that would have legalized medical cannabis in Idaho."
 ---
-Jackee Winters in 2022 joined a 4/20 celebration event at Honey Pot CBD on Broadway Avenue in Boise to collect signatures on a petition to legalize the medical use of marijuana in Idaho.
+Jackee Winters in 2022 joined a 4/20 celebration event at Honey Pot CBD on Broadway Avenue in Boise to collect signatures on a petition to legalize the medical use of marijuana in [[Idaho]].
 
 Listen to this article
 
@@ -38,3 +38,5 @@ In recent years, lawmakers have sought harsher punishments relating to marijuana
 This story was originally published July 14, 2026 at 10:14 AM.
 
 Want to see more content like this?
+
+#idaho

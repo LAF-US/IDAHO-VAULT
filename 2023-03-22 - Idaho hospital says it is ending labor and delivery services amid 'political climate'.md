@@ -9,7 +9,7 @@ description: "Bonner General Health in Sandpoint, Idaho, said it is ending its l
 ---
 The hospital said it will stop providing care by mid-May.
 
-An Idaho hospital said it will no longer be providing obstetrical care due in part to the state's " [legal and political climate](https://abcnews.com/US/idaho-lawmakers-pass-week-abortion-ban-styled-texas/story?id=83455470) " -- obliquely referring to recent restrictions on abortions.
+An [[Idaho]] hospital said it will no longer be providing obstetrical care due in part to the state's " [legal and political climate](https://abcnews.com/US/idaho-lawmakers-pass-week-abortion-ban-styled-texas/story?id=83455470) " -- obliquely referring to recent restrictions on abortions.
 
 In a [news release](https://bonnergeneral.org/wp-content/uploads/2023/03/Bonner-General-Health-Press-Release-Closure-of-LD-3.17.2023.pdf), Bonner General Health in Sandpoint -- 400 miles north of Boise and [serving about 9,000 people](https://www.census.gov/quickfacts/sandpointcityidaho) -- said it would end its labor & delivery services by mid-May.
 
@@ -50,3 +50,5 @@ The hospital did not immediately return ABC News' request for comment.
 ABC News Live
 
 24/7 coverage of breaking news and live events
+
+#idaho

@@ -9,7 +9,7 @@ description: "“It has been fantastic that the City Council has acknowledged th
 ---
 ![The Boise Public Library on Capitol Boulevard offers computers for database research, which can access the Idaho Statesman digital archive.](https://www.idahostatesman.com/public/latest-news/vk00dr/picture259202913/alternates/LANDSCAPE_1200/BOI_0307Supersecretfolder17)
 
-The Boise Public Library on Capitol Boulevard offers computers for database research, which can access the Idaho Statesman digital archive. smiller@idahostatesman.com
+The Boise Public Library on Capitol Boulevard offers computers for database research, which can access the [[Idaho]] Statesman digital archive. smiller@idahostatesman.com
 
 Listen to this article
 
@@ -36,3 +36,5 @@ For those who choose to view the Statesman archive in the library’s downtown l
 The library also offers access to other digital archives, such as The New York Times and National Geographic.
 
 Want to see more content like this?
+
+#idaho
