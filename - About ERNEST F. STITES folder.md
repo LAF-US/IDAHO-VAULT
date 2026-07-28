@@ -14,4 +14,6 @@ description: "About ERNEST F. STITES folder - Portal App"
 
 Description:
 
-The Ernest Stites Papers are comprised of over 1,500 photographs, slides, and negatives focusing on Idaho, the Pacific Northwest and the Western United States, including National Forests and National Parks. The bulk of the collection pertains to the years 1950 through 1973, dealing with his writing and photography career, his 1967 trip to Alaska and correspondence with his wife, Catherine. It also contains handwritten and typed notes on various topics for the newspaper, newspaper clippings and a scrapbook, which round out the collection.
+The Ernest Stites Papers are comprised of over 1,500 photographs, slides, and negatives focusing on [[Idaho]], the Pacific Northwest and the Western United States, including National Forests and National Parks. The bulk of the collection pertains to the years 1950 through 1973, dealing with his writing and photography career, his 1967 trip to Alaska and correspondence with his wife, Catherine. It also contains handwritten and typed notes on various topics for the newspaper, newspaper clippings and a scrapbook, which round out the collection.
+
+#idaho
