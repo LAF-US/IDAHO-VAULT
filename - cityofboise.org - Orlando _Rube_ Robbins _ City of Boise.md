@@ -8,7 +8,7 @@ created: 2026-07-16
 
 ![Photo of Orlando Robbins from Idaho Statesman newspaper](https://www.cityofboise.org/media/3551/orlando-robbins.jpg?width=1200&mode=max&upscale=false)
 
-Photo courtesy of The Idaho Statesman 08/24/1913 Page 3
+Photo courtesy of The [[Idaho]] Statesman 08/24/1913 Page 3
 
 Born August 30, 1836, Phillips, Maine  
 Died May 1, 1908, Boise, Idaho
@@ -24,3 +24,5 @@ He became so adept at discouraging would-be robbers, and capturing stage robbers
 Robbins achieved the rank of colonel in the Idaho Militia while serving as a scout during the Native American Wars of the 1870s. He was twice a member of the Idaho Legislature from Ada County. He owned a ranch where he raised cattle and race horses.
 
 Robbins married Corilla Brassfield, a widow with four young children in 1882. She and two of her grandsons are buried beside him.
+
+#idaho
