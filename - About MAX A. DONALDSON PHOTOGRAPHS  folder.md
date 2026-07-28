@@ -14,4 +14,6 @@ description: "About MAX A. DONALDSON PHOTOGRAPHS  folder - Portal App"
 
 Description:
 
-Photographs depicting Works Progress Administration construction projects in Pocatello (1934- 1941), including the Vocational Arts building on the campus of what is now Idaho State University. Donaldson was one of the supervising engineers for all of the projects shown in the photographs. He joined the WPA in 1934, District 1 Office, Pocatello, Idaho, and remained employed through 1941.
+Photographs depicting Works Progress Administration construction projects in Pocatello (1934- 1941), including the Vocational Arts building on the campus of what is now [[Idaho]] State University. Donaldson was one of the supervising engineers for all of the projects shown in the photographs. He joined the WPA in 1934, District 1 Office, Pocatello, Idaho, and remained employed through 1941.
+
+#idaho
