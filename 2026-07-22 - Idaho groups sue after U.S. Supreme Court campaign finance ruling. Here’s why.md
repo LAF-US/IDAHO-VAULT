@@ -9,7 +9,7 @@ description: "The Supreme Court ruled that federal limits on coordinated campaig
 ---
 ![Michael and Shelly O'Malley got in the 2026 primary election at the combined precincts 1409/1410 at Eagle City Hall, Tuesday, May 19, 2026.](https://www.idahostatesman.com/public/latest-news/ruqz81/picture315815810/alternates/LANDSCAPE_1200/BOI_0519voteeagle.JPG)
 
-Idaho groups and individuals filed a lawsuit over the state’s restrictions on coordinated campaign expenditures between parties and their candidates. doswald@idahostatesman.com
+[[Idaho]] groups and individuals filed a lawsuit over the state’s restrictions on coordinated campaign expenditures between parties and their candidates. doswald@idahostatesman.com
 
 Listen to this article
 
@@ -50,3 +50,5 @@ Spencer said there are laws to prevent that type of corruption. He added this sh
 This story was originally published July 22, 2026 at 11:04 AM.
 
 Want to see more content like this?
+
+#idaho

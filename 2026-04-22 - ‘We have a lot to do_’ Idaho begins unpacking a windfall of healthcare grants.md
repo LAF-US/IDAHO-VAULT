@@ -61,8 +61,10 @@ Charron said she hopes to have some paperwork for lawmakers as early as next wee
 
 Sen. Julie VanOrden, R-Pingree
 
-But the committee probably won’t meet again for more than a month. Representatives from the feds’ Centers for Medicare and Medicaid Services are planning a May 27-28 site visit to Idaho, and the committee will schedule its meeting around that visit.
+But the committee probably won’t meet again for more than a month. Representatives from the feds’ Centers for Medicare and Medicaid Services are planning a May 27-28 site visit to [[Idaho]], and the committee will schedule its meeting around that visit.
 
 That means the legislative committee won’t meet until after the May 19 primary election.
 
 “We need to focus, some of us, on that,” said VanOrden, one of three committee members facing a primary opponent next month.
+
+#idaho
