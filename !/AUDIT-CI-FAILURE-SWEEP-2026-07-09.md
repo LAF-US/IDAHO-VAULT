@@ -12,7 +12,7 @@ owner: Logan Finney
 ## 5W Summary
 
 | | |
-|---|---|
+| --- | --- |
 | **Who** | No new human-caused breakage. One item needs a look for possible leaked secret material (below). |
 | **What** | 47 failing runs across 7 workflows: Codacy (29, known token gap), Sync Plugin Registry (8, known chronic), Sync Agent Discovery Index (4, known chronic), Secret Pattern Policy (1, NEW), Validate Agent Content (1, known pattern/new branch), Redaction Damage Policy (1, NEW), Python Test Suite (2, NEW regression), Claude Sign (1, NEW/unclear). |
 | **When** | 2026-07-08T04:00Z – 2026-07-09T04:15Z |

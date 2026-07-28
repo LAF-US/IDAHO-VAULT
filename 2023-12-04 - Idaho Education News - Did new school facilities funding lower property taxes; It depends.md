@@ -62,26 +62,26 @@ authority: LOGAN
 ---
 Idaho school districts are reaping the benefits of a new state fund that helps them pay down bonds and levies, and many property taxpayers are seeing decreases in their bills.
 
-Earlier this year, Idaho lawmakers adopted a sweeping property tax relief package, House Bill 292. The legislation provided tax credits to homeowners and created a new fund for public school facilities. 
+Earlier this year, Idaho lawmakers adopted a sweeping property tax relief package, House Bill 292. The legislation provided tax credits to homeowners and created a new fund for public school facilities.
 
 Districts are getting around $106 million from the fund, with most of the money going toward bonds, according to a model analysis by the Legislative Services Office. The numbers will be finalized in the coming weeks.
 
 Many property taxpayers have already seen the savings on their bills, which started going out last month. Median-value homeowners in the West Ada School District, for example, had more than $100 come off their property tax bills.
 
-But the relief will look different across the state, depending on a particular school district’s financial situation. For instance, taxpayers in eastern Idaho’s Marsh Valley School District will be paying roughly the same as before, after voters approved a supplemental levy in August. 
+But the relief will look different across the state, depending on a particular school district’s financial situation. For instance, taxpayers in eastern Idaho’s Marsh Valley School District will be paying roughly the same as before, after voters approved a supplemental levy in August.
 
 Lawmakers are closely watching how districts use the money, to ensure it’s fulfilling its intended purpose: lowering property taxes.
 
 How much will taxpayers actually save?
 It depends.
 
-HB 292 required districts to apply the school district facilities funds in the following ways, in order of priority: 
+HB 292 required districts to apply the school district facilities funds in the following ways, in order of priority:
 
-Pay off existing bonds 
-Pay off existing levies 
-Save for future facility construction 
+Pay off existing bonds
+Pay off existing levies
+Save for future facility construction
 Secure and pay for a new facilities bond
-The funds were distributed on a per-pupil basis using average daily attendance, meaning the largest districts got the biggest share. The school facilities fund is ongoing, meaning next year schools will receive a similar amount of money. 
+The funds were distributed on a per-pupil basis using average daily attendance, meaning the largest districts got the biggest share. The school facilities fund is ongoing, meaning next year schools will receive a similar amount of money.
 
 The West Ada School District, Idaho’s largest, is getting $14.5 million, and the Boise School District, the state’s second largest, collects $8.4 million. The median Idaho district – Melba – is receiving about $305,000, while the smallest districts should see less than $2,000.
 
@@ -98,9 +98,7 @@ Bills should have indicators showing “tax relief appropriated by the Idaho Sta
 
 Here’s how much homeowners in the West Ada and Boise school districts saved:
 
-A home in West Ada with a $489,100 assessed value this year owes about $1,940 total in property taxes. That’s over $1,000 less than last year, the result of a small decrease in assessed value – values dropped across Ada County this year – along with tax relief from HB 292. 
-
- 
+A home in West Ada with a $489,100 assessed value this year owes about $1,940 total in property taxes. That’s over $1,000 less than last year, the result of a small decrease in assessed value – values dropped across Ada County this year – along with tax relief from HB 292.
 
 | West Ada School District |
 | --- | --- |
@@ -110,18 +108,17 @@ A home in West Ada with a $489,100 assessed value this year owes about $1,940 to
 |School facilities fund savings|-$103.23|
 |Total due |$1,940.22|
 
- 
 |Boise School District|
-| --- | ---| 
+| --- | ---|
 |Assessed value | $298,500|
 |Taxes owed |$1,656.78|
 |Homeowner tax credits |-$288.06|
 |School facilities fund savings |-$33.05|
 |Total due |$1,368.72|
 
-The school district facilities fund reduced West Ada’s tax levy by more than $103, while roughly $594 was slashed through homeowner tax credits from HB 292. 
+The school district facilities fund reduced West Ada’s tax levy by more than $103, while roughly $594 was slashed through homeowner tax credits from HB 292.
 
-Meanwhile, a Boise School District home with a $298,500 assessed value this year owes about $1,369 in property taxes. That includes a $33 discount from the school facilities fund and about $288 in new homeowner tax credits. 
+Meanwhile, a Boise School District home with a $298,500 assessed value this year owes about $1,369 in property taxes. That includes a $33 discount from the school facilities fund and about $288 in new homeowner tax credits.
 
 Lawmakers want to see results
 Other districts have been creative about how they use the windfall. Lawmakers say they want to see data on how exactly the money is being used, and they expect to see property taxes decrease.
@@ -135,7 +132,6 @@ The Marsh Valley School District got $438,000 from HB 292, but the property tax 
 “Having this bill pass enabled us to have a supplemental levy that may be a little bit larger, without having the amount people have coming out of their pockets go up,” Tucker said. “I know it was meant as a tax relief bill, and that is giving our patrons tax relief, because they are earmarking more for schools without having to pay it with their taxes.”
 
 During a recent meeting of the Legislature’s budget committee, co-chairs Sen. C. Scott Grow, R-Eagle, and Rep. Wendy Horman, R-Idaho Falls, asked state analysts to track how districts are using the funds, and whether they are raising taxes.
-
 
 JFAC Chairman Idaho Rep. Wendy Horman (R, Idaho Falls) at the State Capitol building on January 11, 2023. (Otto Kitsinger for Idaho Capital Sun)
 “The intent of this bill was to give property tax relief, so that’s what we want to see happening in all these districts,” Grow said during the meeting. “Not using it for some other purpose and increasing the taxes on the folks.”

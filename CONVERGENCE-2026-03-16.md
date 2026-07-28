@@ -71,7 +71,7 @@ You are an AI agent working on **IDAHO-VAULT** — a personal journalism researc
 ### Repository State
 
 | Item | Value |
-|---|---|
+| --- | --- |
 | Repo | `github.com/loganfinney27/IDAHO-VAULT` |
 | Main branch HEAD | `e8b4408` |
 | Active working branch | `claude/levelset-multi-conversation-zWxJc` at `cef22e3` |
@@ -82,7 +82,7 @@ You are an AI agent working on **IDAHO-VAULT** — a personal journalism researc
 ### Your Governance Stack (read in order)
 
 | Priority | File | What it tells you |
-|---|---|---|
+| --- | --- | --- |
 | 1 | `CLAUDE.md` (repo root) | Vault structure, naming, sourcing, git practices — operational baseline for Claude Code sessions |
 | 2 | `!ADMIN/Constitution.md` | Identity, constraints, working rules — who Logan is, who you are, what you can and cannot do |
 | 3 | `!ADMIN/PROTOCOL.md` | Operational vocabulary — 18 defined terms for data ops, observation, coordination |
@@ -108,7 +108,7 @@ Logan operates multiple AI agents concurrently. They do not talk to each other d
 ### Active Agents (as of 2026-03-16)
 
 | Agent | Platform | Tier | Role | Can write to repo? |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | PERMANENT: AUTHORITY: CODE | Claude Code CLI | 1 — Direct write | Repo operations, automation, deployment | YES |
 | GitHub Copilot (ADMIN GitHub) | GitHub Copilot | 2 — Multi-repo admin | GitHub API operations across all repos | Via PR |
 | PERSISTENT: ADMINISTRATION | Claude (conversation) | 3 — Draft only | Constitutional layer, governance, judgment calls | NO — drafts only |
@@ -123,7 +123,7 @@ Logan operates multiple AI agents concurrently. They do not talk to each other d
 ### Conversation Naming Convention
 
 | Prefix | Meaning |
-|---|---|
+| --- | --- |
 | PERMANENT: | Central, non-deletable |
 | PERSISTENT: | Long-running, role-specific |
 | TASK: | Bounded, completable |
@@ -151,7 +151,7 @@ Logan operates multiple AI agents concurrently. They do not talk to each other d
 ### Automation (on main, operational)
 
 | Workflow | Status | Schedule |
-|---|---|---|
+| --- | --- | --- |
 | Sort Audit (`so***REMOVED***audit.py`) | Operational | Manual dispatch |
 | Wayback Audit (`wayback_audit.py`) | Operational | Manual dispatch |
 | Wayback Preserve | Operational | Push to main (SOURCES, GOVERNMENTS, TOPICS) |
@@ -164,12 +164,12 @@ Logan operates multiple AI agents concurrently. They do not talk to each other d
 ### Blocked — Needs Logan
 
 | # | Item | Why |
-|---|---|---|
+| --- | --- | --- |
 | 1 | Open PR for working branch | Logan must open via GitHub web UI |
 | 2 | Constitution.md + Logan.md content updates | Content lives in ADMINISTRATION conversation — Logan must paste |
 | 3 | PROTOCOL.md 6 ambiguities | Decision-ready in `PROTOCOL-DECISIONS-PENDING.md` — Logan picks A/B/C |
 | 4 | AGENTS.md approval | Draft complete, awaiting review |
-| 5 | Gemini scope definition | Pixel smartphone, loganfinney27@gmail.com — no vault access until defined |
+| 5 | Gemini scope definition | Pixel smartphone, <loganfinney27@gmail.com> — no vault access until defined |
 | 6 | Slack bot apps for Copilot + Gemini | Logan must configure |
 | 7 | Slack trial expires April 13 | Upgrade decision needed |
 | 8 | Delete 8 dead branches | 403 from CI — needs GitHub UI or local |
@@ -180,7 +180,7 @@ Logan operates multiple AI agents concurrently. They do not talk to each other d
 ### Pending — Can be done by CODE AUTHORITY
 
 | # | Item | Notes |
-|---|---|---|
+| --- | --- | --- |
 | 1 | Wayback audit (real run) | Needs network — run via Actions or local, not sandbox |
 | 2 | Build `idaho-leg-setup.yml` + `idaho-leg-bill-lookup.yml` | New legislature workflows |
 | 3 | `wikilink_pass.py` + `wikilink-pass.yml` deployment | Safe, no collisions — content not yet provided |
@@ -192,7 +192,7 @@ Logan operates multiple AI agents concurrently. They do not talk to each other d
 ### Vault Processing Queue
 
 | Priority | Folder | Status |
-|---|---|---|
+| --- | --- | --- |
 | 1 | PLACES | GEOGRAPHY done. COUNTIES done. CITIES/COMMUNITIES next. |
 | 2 | GOVERNMENTS | Not started |
 | 3 | ORGANIZATIONS | Not started |

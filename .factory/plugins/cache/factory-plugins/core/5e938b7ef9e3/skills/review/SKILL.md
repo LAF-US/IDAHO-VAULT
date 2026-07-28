@@ -149,6 +149,7 @@ If you have **high confidence** a fix will address the issue and won't break CI,
 ```
 
 Suggestion rules:
+
 - Keep suggestion blocks <= 100 lines
 - Preserve exact leading whitespace of replaced lines
 - Use RIGHT-side anchors only; do not include removed/LEFT-side lines
@@ -189,6 +190,7 @@ Before reviewing, triage the PR to enable parallel review:
    - Group 3 (Database): src/db/migrations/001.ts, src/db/schema.ts
 
 Guidelines for grouping:
+
 - Aim for 3-6 groups to balance parallelism with context coherence
 - Keep related files together so reviewers have full context
 - Each group should be reviewable independently
@@ -200,6 +202,7 @@ Use the Task tool to spawn parallel `file-group-reviewer` subagents. Each subage
 **IMPORTANT**: Spawn ALL subagents in a single response to enable parallel execution.
 
 For each group, invoke the Task tool with:
+
 - `subagent_type`: "file-group-reviewer"
 - `description`: Brief label (e.g., "Review auth module")
 - `prompt`: Must include the PR context, the list of assigned files, the relevant diff sections, and instructions to return a JSON array of findings
@@ -240,6 +243,7 @@ Apply the same Reporting Gate as above, plus reject if ANY of these are true:
 #### Strict deduplication
 
 Before approving a candidate:
+
 1. **Among candidates**: If two or more candidates describe the same underlying bug (same root cause, even if anchored to different lines), approve only the ONE with the best anchor and clearest explanation. Reject the rest with reason "duplicate of candidate N".
 2. **Against existing comments**: If a candidate repeats an issue already covered by an existing PR comment, reject it.
 3. Same file + overlapping line range + same issue = duplicate, even if the body text differs.

@@ -22,7 +22,7 @@ Inkom — The latest Idaho Transportation Department inspection of the Inkom Int
 
 According to ITD District 5 spokesman Justin Smith, a Dec. 18 inspection of the bridge reported no changes to the state of the structure, which many Inkom residents fear is due for “catastrophic failure.”
 
-RELATED: Many fear Inkom I-15 overpass primed for ‘catastrophic failure’ before expected 2025 replacement 
+RELATED: Many fear Inkom I-15 overpass primed for ‘catastrophic failure’ before expected 2025 replacement
 
 Smith told EastIdahoNews.com, that the most recent inspection of the bridge was not a “full inspection,” but what he referred to as a “follow-up” inspection to monitor the status of the bridge.
 

@@ -314,7 +314,7 @@ routing. The routing is the evidence.
 The full Oz cosmology provides the vault with:
 
 | Figure | Position | Function | Failure Mode |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Pastoria | Deposed king | Rightful authority, withdrawn | Permanent non-assertion |
 | The Wizard (Baum) | Unauthorized occupant | Humbug governance, redeemable | Sentimentality ≠ authority |
 | The Wizard (Maguire) — see: the Man with a Beard But No Hair | Unauthorized occupant | Complicit governance; trains Olaf-equivalents | Structural evil dressed as function |

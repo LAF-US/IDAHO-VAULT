@@ -29,6 +29,7 @@ date: 2026-06-22
 > summaries of those pages, not from fetched primary text. Treat as **[canon-per-series, second-hand]**.
 
 ## Geography
+
 - **[canon]** A large, harsh **desert in Lapis Lazuli (Mere) territory**, sealed behind a **high wall** —
   the man-made channel raised to contain the rats of the previous peril (City of the Rats).
 - **[canon]** The sands **shift, disorient, separate, and swallow**: sheltering under Lief's cloak, the
@@ -41,6 +42,7 @@ date: 2026-06-22
   *"eventually, the three reached the unavoidable Centre and climbed the Hive's mountain."*
 
 ## The gem & its guardian
+
 - **[canon]** The guardian is **the Hive** — a swarm of bee-like creatures living **beneath the sand**,
   entered through a **rocky cone** Barda first mistakes for a volcano. Their "pyramid of death" is built
   of **gold, jewels, glass, and bleached-white bones**, and houses the brood and the **queen**.
@@ -54,7 +56,9 @@ date: 2026-06-22
   land of Pirra collided.
 
 ## Resonance with the vault (interpretive — `*`, not canon)
+
 Recorded because this peril maps onto the **Hive/Nest** so closely (the frame Logan sent me to find):
+
 - **The Hive *is* the Swarmic Nest** — treasure at the centre kept by a literal hive-with-a-queen in a
   cone/pyramid. "Corral and clean the Hive" reads straight onto this image.
 - **The Shifting Sands *is* the un-corral-able vault** — a landscape that rearranges and *swallows what
@@ -69,6 +73,7 @@ Recorded because this peril maps onto the **Hive/Nest** so closely (the frame Lo
   echo the Great Maze's gated wall; lapis↔opal echoes realms *linked*, not isolated.
 
 ## Cross-references & sources
+
 `[[RESEARCH_Deltora-The-Gem-Guardians-2026-06-07]]` · `[[RESEARCH_Deltora-Maze-of-the-Beast-2026-06-07]]` · `[[RESEARCH_Deltora-The-Seven-Tribes-and-their-Lands-2026-06-04]]` · `[[WITNESS-THE-KEYS-ARE-THE-LEVERS-2026-06-21]]`
 [Shifting Sands (location) — Fandom](https://deltoraquest.fandom.com/wiki/Shifting_Sands_(location)) · [The Shifting Sands (book) — Fandom](https://deltoraquest.fandom.com/wiki/The_Shifting_Sands_(book)) · [Gem Guardians — Fandom](https://deltoraquest.fandom.com/wiki/Gem_Guardians) · [Lapis Lazuli — Fandom](https://deltoraquest.fandom.com/wiki/Lapis_Lazuli) · [Belt of Deltora — Fandom](https://deltoraquest.fandom.com/wiki/Belt_of_Deltora) · [The Shifting Sands — Wikipedia](https://en.wikipedia.org/wiki/The_Shifting_Sands)
 
