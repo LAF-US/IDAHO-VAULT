@@ -5,4 +5,4 @@ related:
 - magistrate court
 ---
 
-magistrate court Cassia County courthouse
+magistrate court Cassia County courthouse 

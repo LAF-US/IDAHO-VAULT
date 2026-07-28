@@ -14,10 +14,9 @@ related:
 ---
 
 Proud to announce the wrap of season one of our podcast The RAM Examiner, a look at virtual reality and its use in video games, 3D mapping and architecture. Go take a listen! 🎧
-<https://t.co/4C1Drc2kp7>
+https://t.co/4C1Drc2kp7
 
 ## Links
-
-- <https://soundcloud.com/ram-examiner/sets/season-one>
+- https://soundcloud.com/ram-examiner/sets/season-one
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1128837997615435776)

@@ -18,6 +18,6 @@ related:
   - idpol
 ---
 
-RT @mcgraneforidaho: The Democrats weren't the only ones to turnout. Republican votes in Ada County were up notably too. #idpol <https://t.c…>
+RT @mcgraneforidaho: The Democrats weren't the only ones to turnout. Republican votes in Ada County were up notably too. #idpol https://t.c…
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/996830714938114049)

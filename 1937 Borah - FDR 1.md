@@ -11,5 +11,5 @@ authority: LOGAN
 
 ---
 
-- 1937 FDR - Boise Motorcade
-- 1937 FDR - Boise Speech
+- 1937 FDR - Boise Motorcade 
+- 1937 FDR - Boise Speech 

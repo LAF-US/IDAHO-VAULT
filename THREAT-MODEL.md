@@ -47,7 +47,6 @@ The `idaho_leg_scraper.py` fetches HTML from the Idaho Legislature website daily
 **Attack vector:** A compromised or injected legislature page could write arbitrary content into the vault — including YAML injection in frontmatter, wikilink manipulation, or embedded executable patterns.
 
 **Mitigations:**
-
 - `sanitize_text()` function strips HTML tags, control characters, wikilink syntax, and escapes YAML-special characters in all scraped content before it enters markdown
 - `validate_content.py` runs as a CI gate before every commit — checks YAML parsing, dangerous patterns, file sizes, sponsor name formats, and directory boundaries
 - Content validation halts the workflow on failure (no commit occurs)
@@ -59,7 +58,6 @@ The `idaho_leg_scraper.py` fetches HTML from the Idaho Legislature website daily
 The `wayback_audit.py` and `wayback_preserve.py` scripts query the Internet Archive's CDX API and write results to admin reports or submit URLs for preservation.
 
 **Mitigations:**
-
 - Output restricted to `!/` directory
 - `validate_content.py` gate runs before commit
 - Wayback preserve is outbound-only (submits URLs, does not ingest content)
@@ -71,7 +69,6 @@ The `wayback_audit.py` and `wayback_preserve.py` scripts query the Internet Arch
 **Attack vector:** If malicious content were committed to governance files (CLAUDE.md, `!/CONSTITUTION.md`), it would persist across all future sessions. Scraped bill files read by future Claude sessions could contain injected instructions.
 
 **Mitigations:**
-
 - CODEOWNERS file requires Logan's review for changes to CLAUDE.md, `!/`, and `.github/` (requires branch protection for enforcement)
 - LEVELSET protocol provides auditable checkpoints
 - Conversation tier system restricts which sessions have commit access (procedural, not technical)

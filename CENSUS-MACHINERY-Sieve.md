@@ -55,7 +55,7 @@ This is a personal "second brain" Obsidian vault that treats its owner's life â€
 **Exact paths opened:**
 
 | # | Path |
-| --- | ------ |
+|---|------|
 | 1 | `.github/scripts/` (directory listing) |
 | 2 | `.github/workflows/` (directory listing) |
 | 3 | `.github/scripts/daily_rollover.py` |
@@ -99,5 +99,6 @@ This is a personal "second brain" Obsidian vault that treats its owner's life â€
 2. **[*] The vault runs a live Obsidian instance on a local desktop.** `obsidian_rest_api_client.py` targets `https://localhost:<redacted-port>` (the `obsidian-local-rest-api` community plugin's default endpoint), `update_manifest.py` models an `interface_system: obsidian` authority tier, and `.obsidian/` config files (daily-notes.json, templates.json, community-plugins.json) are referenced throughout. This is a live, actively-synced desktop Obsidian vault, not an archived corpus.
 
 3. **[*] The "Swarm" of AI agents is growing and its governance is actively in flux.** `agent-auto-pr.yml` recognizes branches from `claude/`, `codex/`, `gemini/`, `copilot/`, `perplexity/`, `grok/`, and `serena/` â€” seven distinct AI agents or tools. `classify_paths.py`'s docstring references an open issue `#626` dated 2026-06-21 and a witness document `WITNESS-THE-KEYS-ARE-THE-LEVERS-2026-06-21.md`, indicating the routing grid and agent governance model are under active design revision (likely in the days immediately before this reading).
+
 
 <!-- [redacted 2026-06-28 by *.hyperagent.tinkerer]: runtime residue removed (internal IP / sandbox / local-desktop paths). Originals were the vault's own config values quoted by the cold reader, except the tool-result path (this run's sandbox). See ../REDACTIONS.md. -->

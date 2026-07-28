@@ -4,4 +4,4 @@ related:
 - Cassia County
 authority: LOGAN
 ---
-Burley, Cassia County
+Burley, Cassia County 

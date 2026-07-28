@@ -15,10 +15,9 @@ related:
   - lfinneytweets
 ---
 
-“Because we’ve all learned, hopefully, that shutdowns don’t work, and they’re stupid.” -@CongMikeSimpson <https://t.co/ydJNgRlAty>
+“Because we’ve all learned, hopefully, that shutdowns don’t work, and they’re stupid.” -@CongMikeSimpson https://t.co/ydJNgRlAty
 
 ## Links
-
-- <https://x.com/CynthiaSewell/status/1090651667551346689>
+- https://x.com/CynthiaSewell/status/1090651667551346689
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1090654387301535744)

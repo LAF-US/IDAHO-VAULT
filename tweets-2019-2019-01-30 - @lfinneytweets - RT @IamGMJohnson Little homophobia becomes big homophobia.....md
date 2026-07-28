@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-RT @IamGMJohnson: Little homophobia becomes big homophobia.
+RT @IamGMJohnson: Little homophobia becomes big homophobia. 
 
 Those jokes become thoughts
 Those thoughts become actions

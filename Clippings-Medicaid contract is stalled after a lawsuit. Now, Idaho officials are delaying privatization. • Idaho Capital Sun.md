@@ -12,7 +12,7 @@ date created: Monday, May 4th 2026, 11:37:53 pm
 date modified: Monday, May 4th 2026, 11:40:03 pm
 ---
 
-## Medicaid contract is stalled after a lawsuit. Now, Idaho officials are delaying privatization
+## Medicaid contract is stalled after a lawsuit. Now, Idaho officials are delaying privatization.
 
 ## Idaho’s Medicaid administrator expects state’s shift to managed care will take until 2030 now, amid legal dispute over a state contract
 

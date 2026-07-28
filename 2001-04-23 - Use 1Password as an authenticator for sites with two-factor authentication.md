@@ -30,7 +30,7 @@ You can save one-time passwords in the [1Password browser extension](https://sup
 1. Open and unlock the 1Password browser extension.
 2. Select the Login item for the website.
 3. Click the ellipsis and choose **Scan QR Code**.
- If a website only presents a string of characters to copy, follow the steps to save your one-time password in the [1Password app](#in-the-1password-apps) or [on 1Password.com](#on-1passwordcom).
+	If a website only presents a string of characters to copy, follow the steps to save your one-time password in the [1Password app](#in-the-1password-apps) or [on 1Password.com](#on-1passwordcom).
 
 #### Tip
 
@@ -51,9 +51,9 @@ Instructions for
 1. Open and unlock 1Password.
 2. Select the Login item for the website, then click **Edit**.
 3. Click **Add More**, then choose **One-Time Password**.
- You may need to scroll down to see these options.
+	You may need to scroll down to see these options.
 4. Click the QR code to scan the QR code from your screen or clipboard.
- If you can’t scan the QR code, most sites will give you a string of characters you can copy and paste instead.
+	If you can’t scan the QR code, most sites will give you a string of characters you can copy and paste instead.
 5. Click **Save**.
 
 #### Tip
@@ -63,9 +63,9 @@ If you’re using Safari, [learn how to save your QR code in 1Password for Safar
 1. Open and unlock 1Password.
 2. Select the Login item for the website, then tap **Edit**.
 3. Tap **Add More**, then choose **One-Time Password**.
- You may need to scroll down to see these options.
+	You may need to scroll down to see these options.
 4. Tap the QR code to scan the QR code with your camera.
- If you can’t scan the QR code, most sites will give you a string of characters you can copy and paste instead.
+	If you can’t scan the QR code, most sites will give you a string of characters you can copy and paste instead.
 5. Tap **Save**.
 
 You can also scan your QR code directly from the Camera app. To set this up:
@@ -79,36 +79,36 @@ When you view a QR code in the Camera app, tap **Open in 1Password**, select the
 1. Open and unlock 1Password.
 2. Select the Login item for the website, then click **Edit**.
 3. Click **Add More**, then choose **One-Time Password**.
- You may need to scroll down to see these options.
+	You may need to scroll down to see these options.
 4. Click the QR code to scan the QR code from your screen or clipboard.
- If you can’t scan the QR code, most sites will give you a string of characters you can copy and paste instead.
+	If you can’t scan the QR code, most sites will give you a string of characters you can copy and paste instead.
 5. Click **Save**.
 
-6. Open and unlock 1Password.
-7. Select the Login item for the website, then tap **Edit**.
-8. Tap **Add More**, then choose **One-Time Password**.
- You may need to scroll down to see these options.
-9. Tap the QR code to scan the QR code with your camera.
- If you can’t scan the QR code, most sites will give you a string of characters you can copy and paste instead.
-10. Tap **Save**.
+1. Open and unlock 1Password.
+2. Select the Login item for the website, then tap **Edit**.
+3. Tap **Add More**, then choose **One-Time Password**.
+	You may need to scroll down to see these options.
+4. Tap the QR code to scan the QR code with your camera.
+	If you can’t scan the QR code, most sites will give you a string of characters you can copy and paste instead.
+5. Tap **Save**.
 
-11. Open and unlock 1Password
-12. Select the Login item for the website, then click **Edit**.
-13. Click **Add More**, then choose **One-Time Password**.
- You may need to scroll down to see these options.
-14. Click the QR code  
- to scan the QR code from your screen or clipboard.
- If you can’t scan the QR code, most sites will give you a string of characters you can copy and paste instead.
-15. Click **Save**.
+1. Open and unlock 1Password
+2. Select the Login item for the website, then click **Edit**.
+3. Click **Add More**, then choose **One-Time Password**.
+	You may need to scroll down to see these options.
+4. Click the QR code  
+	to scan the QR code from your screen or clipboard.
+	If you can’t scan the QR code, most sites will give you a string of characters you can copy and paste instead.
+5. Click **Save**.
 
 ### On 1Password.com
 
 1. [Sign in](https://start.1password.com/signin/) to your account on 1Password.com.
 2. Select the Login item for the website, then choose **Edit**.
 3. Select **Add More**, then choose **One-Time Password**.
- You may need to scroll down to see these options.
+	You may need to scroll down to see these options.
 4. Return to the website and choose the option to enter the one-time password code manually.
- If you only see a QR code on the website, you’ll need to use the 1Password [browser extension](#in-the-1password-browser-extension) or [app](#in-the-1password-apps) to scan it.
+	If you only see a QR code on the website, you’ll need to use the 1Password [browser extension](#in-the-1password-browser-extension) or [app](#in-the-1password-apps) to scan it.
 5. Copy the code, then paste it in the **one-time password code** field on 1Password.com.
 6. Select **Save**.
 
@@ -138,13 +138,13 @@ If you have iOS 18 or later, you can autofill your one-time password:
 
 1. Tap the one-time password field.
 2. Tap the Login item suggested near the top of the keyboard or at the bottom of the screen.
- If there are no matches, tap, then search for your login and choose the one you want to fill.
+	If there are no matches, tap, then search for your login and choose the one you want to fill.
 
 You can also choose to automatically copy one-time passwords to the clipboard after [filling a login](https://support.1password.com/ios-autofill/):
 
 1. Open and unlock 1Password.
 2. Tap the icon for your account or collection at the top left and choose **Settings**.
- If you’re using an iPad, tap your account or collection at the top of the [sidebar](https://support.1password.com/sidebar/?ios).
+	If you’re using an iPad, tap your account or collection at the top of the [sidebar](https://support.1password.com/sidebar/?ios).
 3. Tap **AutoFill**, then turn on **Copy One-Time Passwords**.
 
 [Fill your username and password](https://support.1password.com/save-fill-passwords/#sign-in-to-a-website) on a website where you’re using two-factor authentication. 1Password automatically fills your one-time password.
@@ -159,7 +159,7 @@ To automatically copy one-time passwords to the clipboard after [filling a login
 
 1. Open and unlock 1Password.
 2. Tap the icon for your account or collection at the top right and choose **Settings**.
- If you’re using a tablet, tap your account or collection at the top of the [sidebar](https://support.1password.com/sidebar/?android).
+	If you’re using a tablet, tap your account or collection at the top of the [sidebar](https://support.1password.com/sidebar/?android).
 3. Tap **Autofill**, then turn on **Copy One-Time Passwords**.
 
 [Fill your username and password](https://support.1password.com/save-fill-passwords/#sign-in-to-a-website) on a website where you’re using two-factor authentication. 1Password automatically fills your one-time password.

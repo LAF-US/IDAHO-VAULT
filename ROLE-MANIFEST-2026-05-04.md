@@ -30,7 +30,7 @@ config, or registry entry mentions an AI system.
 ## Layer terms
 
 | Layer | Meaning | Examples |
-| --- | --- | --- |
+|---|---|---|
 | Model | The inference layer that produces tokens or tool calls | Mistral, Big Pickle, Claude, Gemini, GPT |
 | Runtime / orchestrator | The executable surface that routes work, tools, and context | Hermes, OpenClaw, OpenCode, Codex CLI |
 | Persona | The dotfolder schema and chamber contract for a named hidden folder | `.claude/`, `.codex/`, `.gemini/`, `.hecate/` |
@@ -72,7 +72,7 @@ intent as a completed reconciler.
 ## Current vault mapping
 
 | Surface | Layer | Note |
-| --- | --- | --- |
+|---|---|---|
 | Big Pickle | Model | OpenCode model target, not a persona |
 | Hermes | Runtime / orchestrator | Agent runtime that coordinates calls |
 | OpenClaw | Runtime / orchestrator | Gateway and workflow orchestration |

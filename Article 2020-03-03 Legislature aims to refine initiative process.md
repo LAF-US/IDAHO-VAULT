@@ -34,9 +34,9 @@ related:
 - word
 authority: LOGAN
 ---
-<https://www.loganfinney.com/idaho-legislature-2020/3/3/ballot-initiative-process>
+https://www.loganfinney.com/idaho-legislature-2020/3/3/ballot-initiative-process
 
-Logan Finney, McClure Center
+Logan Finney, McClure Center 
 
 _Bills would require paid signature reporting, funding source_
 

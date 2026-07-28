@@ -3,4 +3,4 @@ related:
 - taxing districts
 authority: LOGAN
 ---
-taxing districts for solid waste management
+taxing districts for solid waste management 

@@ -58,7 +58,7 @@ A series of photos included showed where detectives located the knife sheath whe
 
 ![Police found a leather knife sheath under the body of one of the four victims in the University of Idaho student murders that took place at an off-campus home in Moscow in November 2022. Bryan Kohberger, whose DNA was found on the sheath, was charged and later convicted of the crime in July 2025.](https://www.idahostatesman.com/public/news/local/crime/8snhnc/picture276619486/alternates/FREE_1140/moscow%20murder%20house%20king%20road%20.jpg)
 
-Police found a leather knife sheath under the body of one of the four victims in the University of Idaho student murders that took place at an off-campus home in Moscow in November 2022. Bryan Kohberger, whose DNA was found on the sheath, was charged and later convicted of the crime in July 2025. Angela Palermo <apalermo@idahostatesman.com>
+Police found a leather knife sheath under the body of one of the four victims in the University of Idaho student murders that took place at an off-campus home in Moscow in November 2022. Bryan Kohberger, whose DNA was found on the sheath, was charged and later convicted of the crime in July 2025. Angela Palermo apalermo@idahostatesman.com
 
 If it becomes law, the change to public records exemptions would no longer allow the disclosure of such images, because of their inclusion of the victims’ bodies. This would apply to coroners and law enforcement agencies going forward in not only the Kohberger case, but to all future criminal investigations with similar evidentiary circumstances.
 

@@ -7,7 +7,7 @@ date updated: 2026-04-13
 authority: "[[ADMIN]][[LOGAN]]"
 ---
 
-# Esto Perpetua
+# Esto Perpetua!
 
 *"Let it be perpetual."* — Idaho State Motto
 

@@ -16,9 +16,8 @@ Download links expire after 7 days from the day that Google completes your reque
 ## SUMMARY
 
 - Expired
- Keep · Created March 26, 2:01 AM
-
- ---
+	Keep · Created March 26, 2:01 AM
+	---
 
 ---
 
@@ -32,4 +31,4 @@ Google Account
 
 Logan Finney
 
-<loganfinney27@gmail.com>
+loganfinney27@gmail.com

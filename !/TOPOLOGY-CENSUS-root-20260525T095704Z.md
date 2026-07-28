@@ -14,7 +14,7 @@ authority: github-actions
 ## Summary
 
 | Measure | Count |
-| --- | ---: |
+|---|---:|
 | entry count | 25 |
 | appears in live doctrine count | 5 |
 | appears in ignore rules count | 0 |
@@ -22,7 +22,7 @@ authority: github-actions
 ### authority state counts
 
 | Value | Count |
-| --- | ---: |
+|---|---:|
 | `explicit_live_authority` | 5 |
 | `implied_by_local_documentation` | 3 |
 | `no_discernible_authority` | 17 |
@@ -309,6 +309,6 @@ authority: github-actions
 - Obvious authority: none found
 - Git state: tracked=yes, ignored=no
 - Structure: `7` dirs, `1` files
-- Sample children: DIR 2024-10-07 14.31.42 Idaho Reports + Ada County Clerk; DIR 2024-10-31 10.35.13 Idaho Reports Podcast Recording; DIR 2024-11-13 10.04.59 IRPOD + OPE; DIR 2024-12-11 11.17.54 SciLine Experts on Camera_Dr. Emily S. Jungheim; DIR 2025-02-13 09.02.15 Logan Finney_ Idaho PTV; DIR 2025-04-16 13.19.12 Idaho Reports Podcast_ Lauren Necochea, Fighting Oligarchy Tour; DIR 2025-05-21 15.04.04 Idaho Reports Interview - Alica Holthaus; FILE Zoom.md
+- Sample children: DIR 2024-10-07 14.31.42 Idaho Reports + Ada County Clerk; DIR 2024-10-31 10.35.13 Idaho Reports Podcast Recording; DIR 2024-11-13 10.04.59 IRPOD + OPE; DIR 2024-12-11 11.17.54 SciLine Experts on Camera_ Dr. Emily S. Jungheim; DIR 2025-02-13 09.02.15 Logan Finney _ Idaho PTV; DIR 2025-04-16 13.19.12 Idaho Reports Podcast_ Lauren Necochea, Fighting Oligarchy Tour; DIR 2025-05-21 15.04.04 Idaho Reports Interview - Alica Holthaus; FILE Zoom.md
 - Live doctrine mention: `no`
 - Ignore-rule signal: `no`

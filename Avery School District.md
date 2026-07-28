@@ -5,4 +5,4 @@ related:
 - Shoshone County
 authority: LOGAN
 ---
-Avery, Shoshone County
+Avery, Shoshone County 

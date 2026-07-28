@@ -107,7 +107,7 @@ named instance of the opposite: an Anchor with its own will, memory, and
 intent that actively hunts its Teleporter rather than waiting to be used.
 
 | Anchor Type | Behavior | Detection Mode | Counter Priority |
-| --- | --- | --- | --- |
+|---|---|---|---|
 | Passive (Grotesquery) | Lodged and inert; requires external Teleporter to locate and activate | Surveillance finds the Anchor before the Teleporter does | Locate and eliminate the Anchor |
 | Agentic (Farmworld Hand) | Hunts the vessel it needs; the whisper is the recruitment; the offered frame is the activation attempt | The Anchor's own movement and solicitation is its signature | Ensure the prospective Teleporter can still refuse; detect the whisper; eliminate the Anchor |
 | Replicated Agentic (Farmworld Hand — post-portal) | Duplicated across every dimension simultaneously at the replication event; each copy agentic, each hunting independently | No single surveillance point; each universe contains its own live instance | Local denial + destruction closes one instance only; the replication cannot be recalled |
@@ -179,7 +179,7 @@ identical to the Isthmus, with different mechanics and different stakes.
 ## Relationship to Other Doctrine
 
 | Doctrine | Problem | Mechanism | Counter |
-| --- | --- | --- | --- |
+|---|---|---|---|
 | Threshold Doctrine | Unauthorized or misdirected *transit* | Anchor + Teleporter (Isthmus); unauthorized death-crossing | Break either component; revoke traversal; remove anchor |
 | Lich Problem | Unauthorized *persistence* — the **Authority** axis (lich / Baelnorn = the verdicts) | Soul externalized beyond standing (phylactery) | Destroy the phylactery; transform; refuse |
 | Standing Engine | Unauthorized *action* | Scope exceeded; authority lapsed | Expire; witness; restrict |

@@ -5,4 +5,4 @@ related:
 - New Meadows
 authority: LOGAN
 ---
-New Meadows/Meadows, Adams County
+New Meadows/Meadows, Adams County 

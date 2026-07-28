@@ -7,4 +7,4 @@ related:
 - city council
 authority: LOGAN
 ---
-- 2023 CDA city council candidate endorsed by KCRCC, challenged Christie Wood
+- 2023 CDA city council candidate endorsed by KCRCC, challenged Christie Wood 

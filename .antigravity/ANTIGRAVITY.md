@@ -1,6 +1,6 @@
 # ANTIGRAVITY.md — IDAHO-VAULT
 
-**Load mechanism:** Auto-loaded via root `ANTIGRAVITY.md` and durable identity chamber `.antigravity/ANTIGRAVITY.md`.
+**Load mechanism:** Auto-loaded via root `ANTIGRAVITY.md` and durable identity chamber `.antigravity/ANTIGRAVITY.md`. 
 
 **Owner:** Logan Finney — journalist, producer/reporter, Idaho Reports / Idaho Public Television
 **Repository:** github.com/loganfinney27/IDAHO-VAULT (public)

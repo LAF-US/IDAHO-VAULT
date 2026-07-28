@@ -453,7 +453,7 @@ Get a free 30-minute strategy call. We'll map out your project, timeline, and te
 
 Let's Talk About Your Project
 
-](<https://calendly.com/lushbinary/30min>)
+](https://calendly.com/lushbinary/30min)
 
 Prefer email? Reach us directly:
 

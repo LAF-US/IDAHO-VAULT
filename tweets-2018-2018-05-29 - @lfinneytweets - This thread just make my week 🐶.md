@@ -13,10 +13,9 @@ related:
   - lfinneytweets
 ---
 
-This thread just make my week 🐶 <https://t.co/WHx7vZpl95>
+This thread just make my week 🐶 https://t.co/WHx7vZpl95
 
 ## Links
-
-- <https://x.com/annehelen/status/1001252180110655488>
+- https://x.com/annehelen/status/1001252180110655488
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1001269524342030336)

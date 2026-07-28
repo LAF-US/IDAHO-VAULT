@@ -30,28 +30,27 @@ Below are specific troubleshooting steps, if the user guide hasn't helped you di
 To troubleshoot Integrated Terminal launch failures in Visual Studio Code, follow these steps to diagnose issues:
 
 1. **Check your user settings.** Review these `terminal.integrated` [settings](https://code.visualstudio.com/docs/configure/settings) that could affect the launch:
-
-- `terminal.integrated.defaultProfile.{platform}` - The default shell profile that the terminal uses.
-- `terminal.integrated.profiles.{platform}` - The defined shell profiles. Sets the shell path and arguments.
-- `terminal.integrated.cwd` - The current working directory (cwd) for the shell process.
-- `terminal.integrated.env.{platform}` - Environment variables that are added to the shell process.
-- `terminal.integrated.inheritEnv` - Whether new shells should inherit their environment from VS Code.
-- `terminal.integrated.automationProfile.{platform}` - Shell profile for automation-related terminal usage like tasks and debug.
-- `terminal.integrated.splitCwd` - Controls the current working directory a split terminal starts with.
-- `terminal.integrated.windowsEnableConpty` - Whether to use ConPTY for Windows terminal process communication.
- You can review settings in the Settings editor (**File** > **Preferences** > **Settings**) and search for specific settings by the setting ID.
- ![Search for Integrated terminal settings](https://code.visualstudio.com/assets/docs/supporting/troubleshoot-terminal-launch/search-for-settings.png)
- Search for Integrated terminal settings
- A quick way to check if you have changed settings that you might not be aware of, is to use the `@modified` filter in the Settings editor.
- ![Filter for modified settings](https://code.visualstudio.com/assets/docs/supporting/troubleshoot-terminal-launch/search-for-modified-settings.png)
- Filter for modified settings
- Most Integrated Terminal settings need to be modified directly in your user `settings.json` JSON file. You can open `settings.json` via the **Edit in settings.json** link in the Settings editor, or with the **Preferences: Open User Settings (JSON)** command from the Command Palette (Ctrl+Shift+P).
- ![A user's settings.json file](https://code.visualstudio.com/assets/docs/supporting/troubleshoot-terminal-launch/settings-json-file.png)
- A user's settings.json file
-1. **Test your shell directly.** Try running your designated integrated terminal shell outside VS Code from an external terminal or command prompt. Some terminal launch failures might be due to your shell installation and are not specific to VS Code. The exit codes displayed come from the shell and you might be able to diagnose shell issues by searching on the internet for the specific shell and exit code.
-2. **Use the most recent version of VS Code.** Each VS Code weekly release has many updates and fixes and might include integrated terminal improvements. You can check your VS Code version via **Help** > **About** (on macOS **Code** > **About Visual Studio Code**). To find the latest version of VS Code, go to the VS Code [release notes](https://code.visualstudio.com/updates). You might also want to check that you have installed the latest version of your shell.
-3. **Use the most recent version of your shell.** If your shell is installed separate from your platform, try installing the latest available version of the shell. The same advice applies if you are on an older build of your operating system. For example, some older versions of Windows 10 did not work well with the VS Code terminal.
-4. **Enable trace logging.** You can enable [trace logging](https://github.com/microsoft/vscode/wiki/Terminal-Issues#enabling-trace-logging) and capture a log when launching the terminal. Logging often reveals what is wrong as all arguments used to create the terminal process/pty are recorded. Bad shell names, arguments, or environment variables can cause the terminal to not launch. Keep this log for later if your problem isn't solved.
+	- `terminal.integrated.defaultProfile.{platform}` - The default shell profile that the terminal uses.
+	- `terminal.integrated.profiles.{platform}` - The defined shell profiles. Sets the shell path and arguments.
+	- `terminal.integrated.cwd` - The current working directory (cwd) for the shell process.
+	- `terminal.integrated.env.{platform}` - Environment variables that are added to the shell process.
+	- `terminal.integrated.inheritEnv` - Whether new shells should inherit their environment from VS Code.
+	- `terminal.integrated.automationProfile.{platform}` - Shell profile for automation-related terminal usage like tasks and debug.
+	- `terminal.integrated.splitCwd` - Controls the current working directory a split terminal starts with.
+	- `terminal.integrated.windowsEnableConpty` - Whether to use ConPTY for Windows terminal process communication.
+	You can review settings in the Settings editor (**File** > **Preferences** > **Settings**) and search for specific settings by the setting ID.
+	![Search for Integrated terminal settings](https://code.visualstudio.com/assets/docs/supporting/troubleshoot-terminal-launch/search-for-settings.png)
+	Search for Integrated terminal settings
+	A quick way to check if you have changed settings that you might not be aware of, is to use the `@modified` filter in the Settings editor.
+	![Filter for modified settings](https://code.visualstudio.com/assets/docs/supporting/troubleshoot-terminal-launch/search-for-modified-settings.png)
+	Filter for modified settings
+	Most Integrated Terminal settings need to be modified directly in your user `settings.json` JSON file. You can open `settings.json` via the **Edit in settings.json** link in the Settings editor, or with the **Preferences: Open User Settings (JSON)** command from the Command Palette (Ctrl+Shift+P).
+	![A user's settings.json file](https://code.visualstudio.com/assets/docs/supporting/troubleshoot-terminal-launch/settings-json-file.png)
+	A user's settings.json file
+2. **Test your shell directly.** Try running your designated integrated terminal shell outside VS Code from an external terminal or command prompt. Some terminal launch failures might be due to your shell installation and are not specific to VS Code. The exit codes displayed come from the shell and you might be able to diagnose shell issues by searching on the internet for the specific shell and exit code.
+3. **Use the most recent version of VS Code.** Each VS Code weekly release has many updates and fixes and might include integrated terminal improvements. You can check your VS Code version via **Help** > **About** (on macOS **Code** > **About Visual Studio Code**). To find the latest version of VS Code, go to the VS Code [release notes](https://code.visualstudio.com/updates). You might also want to check that you have installed the latest version of your shell.
+4. **Use the most recent version of your shell.** If your shell is installed separate from your platform, try installing the latest available version of the shell. The same advice applies if you are on an older build of your operating system. For example, some older versions of Windows 10 did not work well with the VS Code terminal.
+5. **Enable trace logging.** You can enable [trace logging](https://github.com/microsoft/vscode/wiki/Terminal-Issues#enabling-trace-logging) and capture a log when launching the terminal. Logging often reveals what is wrong as all arguments used to create the terminal process/pty are recorded. Bad shell names, arguments, or environment variables can cause the terminal to not launch. Keep this log for later if your problem isn't solved.
 
 ## Additional troubleshooting steps
 

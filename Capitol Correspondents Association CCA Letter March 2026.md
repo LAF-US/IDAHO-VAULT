@@ -41,7 +41,6 @@ On March 4, 2026, Capitol Correspondents Association president Kevin Richert and
 ## Statutory Timeline
 
 Under Idaho Code §74-208:
-
 - 14-day cure period begins from written notice
 - Statutory response deadline: ~**March 18, 2026**
 - Silence = denial

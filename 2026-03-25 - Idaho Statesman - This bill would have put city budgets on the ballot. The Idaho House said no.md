@@ -39,7 +39,7 @@ The change applies to fire and ambulance districts, too. Before the House Revenu
 
 ![Rep. Lori McCann, R-Lewiston, seen testifying in 2023, thought H.B. 842 would undermine the budgeting process statewide.](https://www.idahostatesman.com/public/latest-news/q55fog/picture272507098/alternates/FREE_1140/BOI_0214lgxhousemccann)
 
-Rep. Lori McCann, R-Lewiston, seen testifying in 2023, thought H.B. 842 would undermine the budgeting process statewide. Darin Oswald <doswald@idahostatesman.com>
+Rep. Lori McCann, R-Lewiston, seen testifying in 2023, thought H.B. 842 would undermine the budgeting process statewide. Darin Oswald doswald@idahostatesman.com
 
 For cities, H.B. 842 included a few catches.
 
@@ -57,7 +57,7 @@ Cannon called the bill “a lifeline” to small cities while acknowledging the 
 
 ![Speaker of the House Rep. Mike Moyle, R-Star, helped craft a key 2021 property tax relief bill. Now he wants to see it changed.](https://www.idahostatesman.com/public/latest-news/eqbjyb/picture297938353/alternates/FREE_1140/BOI_010303idlegpreview)
 
-Speaker of the House Rep. Mike Moyle, R-Star, helped craft a key 2021 property tax relief bill. Now he wants to see it changed. Sarah A. Miller <smiller@idahostatesman.com>
+Speaker of the House Rep. Mike Moyle, R-Star, helped craft a key 2021 property tax relief bill. Now he wants to see it changed. Sarah A. Miller smiller@idahostatesman.com
 
 Some lawmakers on Monday dismissed the bill as a simple tax increase. But more criticized it from the other side, saying it didn’t do enough to unwind Moyle’s 2021 tax circuit breaker, or rectify its unintended consequences on local governments.
 
@@ -71,7 +71,7 @@ Rep. Lori McCann, R-Lewiston, also cited correspondence with her constituent cit
 
 ![Star City Hall](https://www.idahostatesman.com/public/latest-news/qe02v7/picture312892119/alternates/FREE_1140/BOI_1112starcityhallsign.JPG)
 
-Star’s population has increased by 62% since 2021, and city officials are struggling to keep pace. Darin Oswald <doswald@idahostatesman.com>
+Star’s population has increased by 62% since 2021, and city officials are struggling to keep pace. Darin Oswald doswald@idahostatesman.com
 
 McCann also questioned the bill’s reach, which she implied was aimed at a few small cities in the Treasure Valley.
 
@@ -93,7 +93,7 @@ For McCann, though, Moyle’s proposed cure would be worse than the problems H.B
 
 ![Idaho Gov. Brad Little addresses members of the Idaho Press Club, Capitol Correspondents Association and attendees of the 2026 Legislative Preview in the Lincoln Auditorium at the Idaho Statehouse, Thursday, Jan. 8, 2026.](https://www.idahostatesman.com/public/latest-news/yujuyy/picture314251027/alternates/FREE_1140/BOI_0108legprevlittle02.JPG)
 
-Idaho Gov. Brad Little signed H.B. 389 into law with reservations in 2021. “I fear the long-term consequences may outweigh this temporary reprieve,” he wrote he time. Darin Oswald <doswald@idahostatesman.com>
+Idaho Gov. Brad Little signed H.B. 389 into law with reservations in 2021. “I fear the long-term consequences may outweigh this temporary reprieve,” he wrote he time. Darin Oswald doswald@idahostatesman.com
 
 [House Bill 389](https://legislature.idaho.gov/sessioninfo/2021/legislation/H0389/) emerged in the waning days of the 2021 legislative session, already the longest in Idaho history. It was a sweeping tax package, expanding the homeowner’s exemption, strengthening the state’s property tax “circuit breaker” for low-income residents, and curtailing the ways local governments could tax their residents. The law passed quickly, if cautiously.
 

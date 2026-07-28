@@ -5,4 +5,4 @@ related:
 - taxing districts
 authority: LOGAN
 ---
-taxing districts for agriculture pest species control
+taxing districts for agriculture pest species control 

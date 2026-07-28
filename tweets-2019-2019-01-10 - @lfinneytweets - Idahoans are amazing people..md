@@ -13,10 +13,9 @@ related:
   - lfinneytweets
 ---
 
-Idahoans are amazing people. <https://t.co/zv0UVM1paj>
+Idahoans are amazing people. https://t.co/zv0UVM1paj
 
 ## Links
-
-- <https://x.com/savannahlcardon/status/1083391410814910465>
+- https://x.com/savannahlcardon/status/1083391410814910465
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1083402998892486657)

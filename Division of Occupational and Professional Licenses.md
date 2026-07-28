@@ -18,10 +18,8 @@ related:
 - Real Estate Commission
 authority: LOGAN
 ---
-Administrator appointed by the Governor: Russell Barron
-
+Administrator appointed by the Governor: Russell Barron 
 ### **Bureau of Health Professions**
-
 • Board of Medicine
 • Board of Nursing
 • Board of Pharmacy
@@ -39,9 +37,7 @@ Administrator appointed by the Governor: Russell Barron
 • Respiratory Therapy Licensure Board
 • Board of Veterinary Medicine
 • Board of Naturopathic Health Care
-
 ### **Bureau of Occupational Licenses**
-
 • Board of Acupuncture
 • Board of Massage Therapy
 • Board of Midwifery
@@ -58,9 +54,7 @@ Administrator appointed by the Governor: Russell Barron
 • Board of Examiners of Nursing Home Administrators
 • Board of Examiners of Residential Care Facility Administrators
 • Genetic Counselors Licensing Board
-
 ### **Bureau of Building, Construction, and Real Estate**
-
 • Idaho Electrical Board
 • Damage Prevention Board
 • Board of Architects and Landscape Architects

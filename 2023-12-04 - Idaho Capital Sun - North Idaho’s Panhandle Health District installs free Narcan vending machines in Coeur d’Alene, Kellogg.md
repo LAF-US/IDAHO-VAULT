@@ -35,7 +35,7 @@ Two new vending machines offering Narcan, a lifesaving medication that can help 
 The machines, provided by the Panhandle Health District, are filled with free Narcan, a brand name of the opioid reversal medication naloxone, as well as medication disposal pouches to discard unused and unwanted medication safely, according to a press release from the district.
 
 |Narcan Vending Machine Locations|
-|---|
+| --- |
 |**Kootenai County**|
 |The Pantry at St. Vincent de Paul|
 |1317 N. First St.|

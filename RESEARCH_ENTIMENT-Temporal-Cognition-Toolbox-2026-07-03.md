@@ -29,7 +29,7 @@ tags: [research, entiment, timestorm, temporal-cognition-toolbox, time-perceptio
 ## 1. At a glance — `[research]`
 
 | Field | Value |
-| --- | --- |
+|---|---|
 | **Acronym** | ENTIMENT (styled *EnTiment*) |
 | **Full title** | *Industrial Exploitation and Market Uptake of a Temporal Cognition Toolbox for Commercial Robots* |
 | **Grant Agreement** | **754423** |

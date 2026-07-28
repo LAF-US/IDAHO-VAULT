@@ -7,5 +7,5 @@ related:
 - redistricting
 authority: LOGAN
 ---
-- Senate member for Legislative District 5 after redistricting
-- JFAC vice-chair
+- Senate member for Legislative District 5 after redistricting 
+- JFAC vice-chair 

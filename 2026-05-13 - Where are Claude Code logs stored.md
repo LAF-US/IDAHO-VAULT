@@ -73,7 +73,7 @@ For inspecting sessions that ran on a CI machine, cloud instance, or team server
 
 FAQ · 06
 
-## Questions,answered
+## Questions,answered.
 
 Common questions about claude-devtools, session transcripts, and Claude Code logs on disk.
 
@@ -88,10 +88,10 @@ Common questions about claude-devtools, session transcripts, and Claude Code log
 
 claude-devtools reads ~/.ssh/config for host aliases, opens SFTP to remote ~/.claude/, and isolates each host's state. Useful for CI machines, cloud instances, and team servers.
 
-](<https://claude-dev.tools/docs/ssh-remote)[>
+](https://claude-dev.tools/docs/ssh-remote)[
 
 4 ways I cut Claude Code token usage after actually seeing my context
 
 After watching my own Claude Code sessions in claude-devtools, I found four token-drain patterns I never would have caught from the terminal — heavy MCPs, lazy @-mentions, probabilistic skills, and monolithic CLAUDE.md files.
 
-](<https://claude-dev.tools/docs/token-saving-lessons>)
+](https://claude-dev.tools/docs/token-saving-lessons)

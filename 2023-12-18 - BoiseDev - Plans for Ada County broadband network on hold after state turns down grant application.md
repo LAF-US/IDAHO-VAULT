@@ -54,7 +54,7 @@ But, for now, this project is on the shelf after the Idaho Broadband Advisory Bo
 
 In early 2022, Ada County talked to BoiseDev about its proposal to use some of its local ARPA funds to improve the broadband network.
 
-The idea would have used $10 million to build a nearly 100-mile loop of high-speed broadband fiber through areas north of Star and Eagle, in western Meridian and all the way south of Kuna. This would have brought expensive fiber infrastructure closer to rural areas of the county set for growth, adding more options for customers and opening the way for private companies to serve these areas currently left out of a fast connection.
+The idea would have used $10 million to build a nearly 100-mile loop of high-speed broadband fiber through areas north of Star and Eagle, in western Meridian and all the way south of Kuna. This would have brought expensive fiber infrastructure closer to rural areas of the county set for growth, adding more options for customers and opening the way for private companies to serve these areas currently left out of a fast connection. 
 
 Ada County’s IT Director Stephen O’Meara told BoiseDev the county decided not to use its own funds for a broadband project because there were federal dollars flowing into the State of Idaho that could go towards these upgrades. But, the City of Boise, the county and the other Ada County cities were not successful in landing federal grant money last year allocated by the Idaho Broadband Advisory Board.
 

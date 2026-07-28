@@ -167,7 +167,6 @@ The Hypolitan / Artemision doubling (Move 4) is the structural sophistication th
 ## Sources
 
 ### External
-
 - Stuart Hill, *The Cry of the Icemark* (2005), *Blade of Fire* (2006), *Last Battle of the Icemark* (2008), *Prince of the Icemark* (2013) — Chicken House
 - [The Icemark Chronicles — Wikipedia](https://en.wikipedia.org/wiki/The_Icemark_Chronicles)
 - [Characters in the Icemark Chronicles — Wikipedia](https://en.wikipedia.org/wiki/Characters_in_the_Icemark_Chronicles)
@@ -183,7 +182,6 @@ The Hypolitan / Artemision doubling (Move 4) is the structural sophistication th
 - [The Last Battle of the Icemark — Grokipedia](https://grokipedia.com/page/the_last_battle_of_the_icemark_the_icemark_chronicles_3_(book))
 
 ### Vault internal
-
 - [[ICEMARK-DEEP-CUT-2026-06-07]] — the series-level critical reading
 - [[RESEARCH_Icemark-Chronicles-2026-06-03]] — the factual research brief
 - [[RESEARCH_Icemark-Lore-Compendium-2026-06-03]] — the in-universe lore reference

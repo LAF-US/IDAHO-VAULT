@@ -5,4 +5,4 @@ related:
 - school board
 authority: LOGAN
 ---
-Caldwell School District school board
+Caldwell School District school board 

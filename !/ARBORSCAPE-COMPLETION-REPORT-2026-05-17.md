@@ -24,7 +24,7 @@ related:
 The local branch topology was surveyed, triaged, and resolved:
 
 | Branch | Disposition |
-| -------- | ------------- |
+|--------|-------------|
 | `codex/worm-watch-hardening` | Salvaged: security commits cherry-picked to main; branch deleted local + remote |
 | `origin/ingest-2026-05-16T125701Z` | Deleted — bot artifact, no content |
 | `origin/ingest-2026-05-17T125448Z` | Deleted — bot artifact, no content |

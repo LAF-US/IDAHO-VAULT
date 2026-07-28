@@ -5,4 +5,4 @@ related:
 - Washington County
 authority: LOGAN
 ---
-Midvale, Washington County
+Midvale, Washington County 

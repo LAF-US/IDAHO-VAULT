@@ -18,16 +18,16 @@ related:
 - magistrate judges
 authority: LOGAN
 ---
-_The Idaho State Court is made up of three levels:
-The Trial Courts, called the 'District Courts', (which include the Magistrate Division);
+_The Idaho State Court is made up of three levels: 
+The Trial Courts, called the 'District Courts', (which include the Magistrate Division); 
 The Court of Appeals, and the highest court in the State - the Supreme Court._
 
-- Chief Justice
-- Associate Justices
+- Chief Justice 
+- Associate Justices 
 
-judges
+judges 
 courthouses
-district judges
+district judges 
 district court
 magistrate judges
 magistrate court

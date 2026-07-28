@@ -11,6 +11,6 @@ related:
 - city council
 authority: LOGAN
 ---
-- CDA city council
-- Kootenai County Human Rights Task Force
-- former North Idaho College Trustee
+- CDA city council 
+- Kootenai County Human Rights Task Force 
+- former North Idaho College Trustee 

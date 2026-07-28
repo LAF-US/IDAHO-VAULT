@@ -22,7 +22,6 @@ authority: LOGAN
 ChatGPT 2026-03-28
 
 ---
-
 # IDAHO-VAULT — END-TO-END JOURNALISM WORKFLOW (AI-ASSISTED, LOCAL-FIRST)
 
 ---
@@ -36,22 +35,24 @@ The goal is not full automation.
 The goal is:
 
 - faster intake of information
-
+    
 - structured processing
-
+    
 - traceable outputs
-
+    
 - human-verified publication
+    
 
 This system combines:
 
 - Vault (memory)
-
+    
 - agents (processing)
-
+    
 - tools (execution)
-
+    
 - human oversight (verification)
+    
 
 ---
 
@@ -82,26 +83,28 @@ PUBLICATION
 ### Sources
 
 - legislative websites (Idaho Legislature)
-
+    
 - PDFs (bills, fiscal notes)
-
+    
 - court records (CourtListener)
-
+    
 - RSS feeds
-
+    
 - press releases
-
+    
 - manual input (Logan)
+    
 
 ---
 
 ### Methods
 
 - Python scraping (requests / Playwright)
-
+    
 - API calls
-
+    
 - manual upload
+    
 
 ---
 
@@ -116,12 +119,13 @@ Files written to:
 Each file contains:
 
 - raw content (or link)
-
+    
 - timestamp
-
+    
 - source
-
+    
 - minimal metadata
+    
 
 ---
 
@@ -156,18 +160,19 @@ Executor agent processes INBOX items.
 ### Actions
 
 - extract text from PDFs
-
+    
 - clean formatting
-
+    
 - identify key entities:
-
-  - bill number
-
-  - sponsors
-
-  - fiscal impact
-
-  - dates
+    
+    - bill number
+        
+    - sponsors
+        
+    - fiscal impact
+        
+    - dates
+        
 
 ---
 
@@ -217,12 +222,13 @@ Analysis agent (or human-assisted AI)
 ### Actions
 
 - compare against prior data
-
+    
 - identify trends
-
+    
 - flag anomalies
-
+    
 - connect related notes
+    
 
 ---
 
@@ -268,12 +274,13 @@ Drafting agent (human-reviewed)
 ### Actions
 
 - assemble narrative from:
-
-  - processed data
-
-  - analysis notes
-
+    
+    - processed data
+        
+    - analysis notes
+        
 - generate draft structure
+    
 
 ---
 
@@ -314,22 +321,24 @@ Ensure accuracy and accountability.
 ### Human Role (Logan)
 
 - verify facts
-
+    
 - check sources
-
+    
 - confirm interpretation
-
+    
 - edit narrative
+    
 
 ---
 
 ### Rules
 
 - AI output is NEVER final
-
+    
 - All claims must trace back to source material
-
+    
 - Vault must contain supporting evidence
+    
 
 ---
 
@@ -338,12 +347,13 @@ Ensure accuracy and accountability.
 ### Outputs
 
 - broadcast script
-
+    
 - article
-
+    
 - podcast notes
-
+    
 - social clips
+    
 
 ---
 
@@ -352,10 +362,11 @@ Ensure accuracy and accountability.
 Every published piece must link back to:
 
 - Vault sources
-
+    
 - processed notes
-
+    
 - analysis artifacts
+    
 
 ---
 
@@ -364,10 +375,11 @@ Every published piece must link back to:
 The manifest tracks:
 
 - file status (raw → processed → analyzed)
-
+    
 - ownership (last agent)
-
+    
 - processing state
+    
 
 ---
 
@@ -386,42 +398,47 @@ Each step updates manifest.
 ### Router
 
 - decides next step
-
+    
 - routes task
+    
 
 ---
 
 ### Executor
 
 - processes files
-
+    
 - writes outputs
-
+    
 - updates manifest
+    
 
 ---
 
 ### Analyzer
 
 - generates insights
-
+    
 - links related data
+    
 
 ---
 
 ### Drafter
 
 - builds narrative
+    
 
 ---
 
 ### Human (Logan)
 
 - verifies
-
+    
 - approves
-
+    
 - publishes
+    
 
 ---
 
@@ -434,6 +451,7 @@ AI introduces incorrect information
 Mitigation:
 
 - strict source linking
+    
 
 ---
 
@@ -444,6 +462,7 @@ Summaries omit critical nuance
 Mitigation:
 
 - preserve raw + processed layers
+    
 
 ---
 
@@ -454,6 +473,7 @@ System produces content without oversight
 Mitigation:
 
 - enforce human verification stage
+    
 
 ---
 
@@ -464,18 +484,20 @@ Outputs not tied to original material
 Mitigation:
 
 - require source references in every stage
+    
 
 ---
 
 ## DESIGN PRINCIPLES (JOURNALISM CONTEXT)
 
 - Traceability over speed
-
+    
 - Accuracy over volume
-
+    
 - Structure over convenience
-
+    
 - Human judgment over automation
+    
 
 ---
 
@@ -484,12 +506,13 @@ Mitigation:
 A working system only needs:
 
 1. One ingest method
-
+    
 2. One processing agent
-
+    
 3. One output file
-
+    
 4. Manifest tracking
+    
 
 ---
 
@@ -515,12 +538,13 @@ This system is not just a tool.
 It is a **journalism operating system**:
 
 - Vault = memory
-
+    
 - Agents = processors
-
+    
 - Human = authority
-
+    
 - Workflow = accountability
+    
 
 ---
 
@@ -529,19 +553,21 @@ It is a **journalism operating system**:
 IDAHO-VAULT enables:
 
 - structured intake of information
-
+    
 - AI-assisted processing
-
+    
 - traceable analysis
-
+    
 - human-controlled publication
+    
 
 The system’s value comes from:
 
 - preserving truth
-
+    
 - maintaining provenance
-
+    
 - accelerating insight without sacrificing trust
+    
 
 ---

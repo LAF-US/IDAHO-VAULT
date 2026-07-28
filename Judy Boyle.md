@@ -6,5 +6,4 @@ related:
 authority: LOGAN
 ---
 Residence: Midvale
-
-- House member for Legislative District 9
+- House member for Legislative District 9 

@@ -8,6 +8,5 @@ related:
 authority: LOGAN
 ---
 Residence: Bonneville County
-
-- Bonneville County Republican Central Committee
-- Idaho Freedom Foundation board member
+- Bonneville County Republican Central Committee 
+- Idaho Freedom Foundation board member 

@@ -15,10 +15,9 @@ related:
   - lfinneytweets
 ---
 
-RT @ACLU: Fact check: President Trump derailed three bipartisan plans to fix the DACA crisis that he created. <https://t.co/CUqRKJTIjJ>
+RT @ACLU: Fact check: President Trump derailed three bipartisan plans to fix the DACA crisis that he created. https://t.co/CUqRKJTIjJ
 
 ## Links
-
-- <https://x.com/realDonaldTrump/status/970760324126212096>
+- https://x.com/realDonaldTrump/status/970760324126212096
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/970818692719128577)

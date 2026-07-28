@@ -38,7 +38,6 @@ by **three separate mechanisms that must agree but can drift**, and the real mer
 ## The chain (producer → label → consumer → arm → queue)
 
 ### 1 · Producer — the only place the classifier runs
-
 - **`.github/workflows/agent-auto-pr.yml`** — on an agent branch push, opens the PR.
   - Runs `classify_paths.py` on the changed files (~L90), reads `tier` (binary) + `tier4`.
   - `ensure-labels` creates the `risk/*` labels (~L121), then `gh pr create --label "risk/$RISK_TIER"`
@@ -48,7 +47,6 @@ by **three separate mechanisms that must agree but can drift**, and the real mer
   *label*, not the files.
 
 ### 2 · Consumer / arming engine — reads the label, presses the button
-
 - **`.github/workflows/review-feedback-loop.yml`** — `sweep-review-threads` job (L40–66), on
   `pull_request_target` (opened / reopened / ready_for_review / synchronize) → `review_feedback_loop.py sync-pr`.
 - **`.github/scripts/review_feedback_loop.py`**:
@@ -62,20 +60,17 @@ by **three separate mechanisms that must agree but can drift**, and the real mer
   - `AGENT_AUTO_MERGE_ENABLED` (~L50) — the kill-switch (set False to fail-close arming).
 
 ### 3 · The real merge gate (outside this code)
-
 - GitHub **branch protection + merge queue on `main`**. Arming only presses `--auto`; the PR merges
   only once the **required checks** pass: `check-secret-patterns`, `check-large-files`, `check-paths`,
   `check-dotfolder-anchors` (named in `auto-merge-rhythm.yml` L88). The merge queue is the distinct
   trust gate that let arming be re-enabled 2026-06-17 ([[AGENT-AUTOMERGE-REENABLED-2026-06-17]]).
 
 ### 4 · The second lane (dependency sync-bot only)
-
 - **`.github/workflows/auto-merge-rhythm.yml`** — fires only for `github-actions[bot]` PRs titled
   `chore: sync requirements.txt and uv.lock` (L46–48). Has its **own** protected-path `case` list
   (L67), verifies the four checks itself, then `gh pr merge --auto --merge`.
 
 ### 5 · Reconciliation lanes (self-healing — the queue never re-fires `--auto`)
-
 - `reconcile-open-prs` (L1565) / `_build_reconciliation_report` (L1287, re-arms at L1370), surfaced by
   `pr_loop_watchdog.py`; driven by `auto-merge-engage.yml` + `batch-arm-merge-queue.yml`. Re-runs the
   same evaluate→arm across all open PRs on a schedule, catching PRs that went green after their last event.
@@ -122,7 +117,6 @@ by **three separate mechanisms that must agree but can drift**, and the real mer
    per-cell routing. Each increment independently reviewable; none is a single cut.
 
 ## To plan (deliberate — held)
-
 - Close the grid's six open cells (Logan; see the witness).
 - Sequence the staged migration above into reviewable increments.
 - Decide whether the sync-bot lane folds into the unified model or stays a separate contract.

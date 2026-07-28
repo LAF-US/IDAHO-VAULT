@@ -48,19 +48,16 @@ VisionClaw is an **always-on wearable AI agent** that:
 ### 1.2 Technical Stack
 
 **Perception Layer:**
-
 - Meta Ray-Ban smart glasses camera and microphone
 - Real-time POV streaming via WebRTC
 - Continuous environmental context capture
 
 **Intelligence Layer:**
-
 - Gemini Live API for multimodal understanding
 - OpenClaw framework for agentic execution
 - Natural language processing for voice commands
 
 **Execution Layer:**
-
 - OpenClaw AI agents for task delegation
 - Integration with external services and APIs
 - Hands-free operation
@@ -104,13 +101,11 @@ The system introduces a **new interaction paradigm** characterized by:
 ### 3.2 Evaluation Studies
 
 **Controlled Laboratory Study:**
-
 - Participants: N=12
 - Methodology: Compared against stripped-down baselines
 - Findings: Faster task completion, reduced interaction overhead
 
 **Longitudinal Deployment Study:**
-
 - Participants: N=4 (paper authors)
 - Duration: Extended period with 55 active participant days
 - Total interactions: 555 voice-initiated interactions
@@ -119,7 +114,6 @@ The system introduces a **new interaction paradigm** characterized by:
 ### 3.3 Performance Metrics
 
 **Usage Distribution:**
-
 - Information retrieval: 30%
 - Shopping: 19%
 - Saving content: 16%
@@ -128,7 +122,6 @@ The system introduces a **new interaction paradigm** characterized by:
 - Control: 9%
 
 **Task Success:**
-
 - Overall success rates statistically similar to baselines
 - Note-taking task: ~58% success rate (limited by camera capture of small objects)
 
@@ -139,21 +132,19 @@ The system introduces a **new interaction paradigm** characterized by:
 ### 4.1 Primary Repository
 
 **Organization:** Intent-Lab  
-**Repository:** <https://github.com/Intent-Lab/VisionClaw>  
+**Repository:** https://github.com/Intent-Lab/VisionClaw  
 **Status:** Active development  
 **License:** Meta Wearables Developer Terms (refer to repository LICENSE file)
 
 ### 4.2 Community Contributions
 
 **Verified Related Repositories:**
-
 - Intent-Lab/VisionClaw: Primary repository
 - hrithwikbharadwaj/vision_claw_android: Android implementation
 - Miles0sage/visionclaw: Custom hardware firmware
 - Multiple community implementations and extensions
 
 **Integration Patterns:**
-
 - WebRTC for live streaming
 - 6-character room codes for session management
 - iOS app connectivity to Meta Ray-Ban glasses
@@ -161,13 +152,11 @@ The system introduces a **new interaction paradigm** characterized by:
 ### 4.3 Technical Components
 
 **Client Applications:**
-
 - iOS app for Meta Ray-Ban glasses
 - Android implementations (hrithwikbharadwaj/vision_claw_android)
 - Firmware for custom hardware (Miles0sage/visionclaw)
 
 **Backend Services:**
-
 - VisionClaw routers and APIs
 - Dashboard interfaces
 - Agent management systems
@@ -179,14 +168,12 @@ The system introduces a **new interaction paradigm** characterized by:
 ### 5.1 Relevance Assessment
 
 **High Relevance to:**
-
 - **Agentic Systems:** Demonstrates practical agentic task execution
 - **Multimodal AI:** Proves vision + voice integration in wearable form
 - **Wearable Computing:** Shows viable path for always-on AI assistance
 - **Edge AI:** Validates local processing combined with cloud intelligence
 
 **Medium Relevance to:**
-
 - **Swarm Architecture:** Could inform multi-agent coordination patterns
 - **Contextual Awareness:** Provides model for real-time environmental understanding
 - **Human-AI Interaction:** Offers new interaction paradigms
@@ -194,14 +181,12 @@ The system introduces a **new interaction paradigm** characterized by:
 ### 5.2 Integration Opportunities
 
 **Potential Vault Applications:**
-
 - **Augmented Reality Documentation:** Real-time note generation from physical documents
 - **Contextual Research:** Hands-free information retrieval during field work
 - **Multi-Agent Coordination:** Integration with existing vault agentic systems
 - **Knowledge Capture:** Automatic documentation of physical artifacts and environments
 
 **Technical Integration Points:**
-
 - OpenClaw backend compatibility with vault agentic systems
 - Gemini Live API integration for enhanced perception
 - WebRTC streaming for remote collaboration
@@ -209,14 +194,12 @@ The system introduces a **new interaction paradigm** characterized by:
 ### 5.3 Competitive Landscape
 
 **Differentiators:**
-
 - Always-on perception (vs. on-demand systems)
 - True agentic execution (vs. simple voice assistants)
 - Multimodal integration (vs. single-mode interfaces)
 - Hands-free operation (vs. screen-dependent systems)
 
 **Competitive Position:**
-
 - First-mover in always-on wearable AI agents
 - Strong academic backing with published research
 - Growing open-source community
@@ -229,19 +212,16 @@ The system introduces a **new interaction paradigm** characterized by:
 ### 6.1 System Architecture Strengths
 
 **Robust Perception:**
-
 - Continuous egocentric vision capture
 - Real-time audio processing
 - Environmental context understanding
 
 **Agentic Capabilities:**
-
 - Task decomposition and delegation
 - Multi-step workflow execution
 - Service integration
 
 **User Experience:**
-
 - Natural voice interface
 - Context-aware responses
 - Minimal interaction overhead
@@ -249,19 +229,16 @@ The system introduces a **new interaction paradigm** characterized by:
 ### 6.2 Current Limitations
 
 **Hardware Constraints:**
-
 - Camera resolution limits for small objects
 - Battery life considerations for always-on operation
 - Processing power limitations on wearable devices
 
 **Software Challenges:**
-
 - Reliability of object recognition in varied conditions
 - Privacy considerations for continuous perception
 - Security of agentic task execution
 
 **Integration Issues:**
-
 - Requires same WiFi network for some functions
 - Limited model support in current implementations
 - Platform-specific dependencies
@@ -273,19 +250,16 @@ The system introduces a **new interaction paradigm** characterized by:
 ### 7.1 Research Trajectories
 
 **Immediate Evolution:**
-
 - Improved object recognition accuracy
 - Expanded service integrations
 - Enhanced privacy controls
 
 **Near-term Developments:**
-
 - Multi-device coordination
 - Cross-platform compatibility
 - Advanced agentic capabilities
 
 **Long-term Vision:**
-
 - Ubiquitous ambient intelligence
 - Seamless human-AI collaboration
 - Context-aware proactive assistance
@@ -293,19 +267,16 @@ The system introduces a **new interaction paradigm** characterized by:
 ### 7.2 Market Impact
 
 **Consumer Applications:**
-
 - Personal productivity enhancement
 - Accessibility improvements
 - Entertainment and gaming
 
 **Enterprise Applications:**
-
 - Field service support
 - Industrial inspection
 - Remote assistance
 
 **Research Applications:**
-
 - Human-computer interaction studies
 - AI behavior analysis
 - Wearable computing advancement
@@ -317,13 +288,11 @@ The system introduces a **new interaction paradigm** characterized by:
 ### 8.1 Immediate Actions
 
 **Classification:**
-
 - Tag as HIGH PRIORITY for agentic systems research
 - Categorize under WEARABLES, AI-AGENTS, MULTIMODAL
 - Cross-reference with existing GEMINI and OPENCLAW materials
 
 **Documentation:**
-
 - Archive primary paper and supplementary materials
 - Track community developments and forks
 - Monitor usage patterns and performance metrics
@@ -331,13 +300,11 @@ The system introduces a **new interaction paradigm** characterized by:
 ### 8.2 Strategic Considerations
 
 **Investment Assessment:**
-
 - Evaluate integration with existing vault agentic infrastructure
 - Assess compatibility with vault's CORPUS and GRIMOIRE frameworks
 - Consider development of vault-specific VisionClaw applications
 
 **Collaboration Opportunities:**
-
 - Engage with Intent-Lab researchers
 - Contribute to open-source development
 - Participate in community discussions
@@ -345,13 +312,11 @@ The system introduces a **new interaction paradigm** characterized by:
 ### 8.3 Risk Mitigation
 
 **Technical Risks:**
-
 - Dependency on Meta Ray-Ban hardware ecosystem
 - Reliance on Google Gemini Live API
 - OpenClaw framework stability
 
 **Strategic Risks:**
-
 - Platform lock-in potential
 - Privacy and security concerns
 - Competitive landscape evolution
@@ -388,7 +353,7 @@ The world is quiet here. VisionClaw makes it speak.
 
 1. Liu, X., Lee, D., Gonzalez, E. J., Gonzalez-Franco, M., & Suzuki, R. (2026). VisionClaw: Always-On AI Agents through Smart Glasses. arXiv preprint arXiv:2604.03486.
 
-2. Intent-Lab. (2026). VisionClaw: Real-time AI assistant for Meta Ray-Ban smart glasses. GitHub repository. <https://github.com/Intent-Lab/VisionClaw>
+2. Intent-Lab. (2026). VisionClaw: Real-time AI assistant for Meta Ray-Ban smart glasses. GitHub repository. https://github.com/Intent-Lab/VisionClaw
 
 3. Google. (2024). Gemini Live API. Multimodal perception service.
 

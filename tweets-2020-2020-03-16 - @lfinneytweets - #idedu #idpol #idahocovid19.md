@@ -20,10 +20,9 @@ related:
   - idahocovid19
 ---
 
-# idedu #idpol #idahocovid19 <https://t.co/6GGKi7Aaym>
+#idedu #idpol #idahocovid19 https://t.co/6GGKi7Aaym
 
 ## Links
-
-- <https://x.com/DailyBee/status/1239611106273808385>
+- https://x.com/DailyBee/status/1239611106273808385
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1239611686572699648)

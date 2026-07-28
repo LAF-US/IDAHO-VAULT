@@ -5,4 +5,4 @@ related:
 - magistrate court
 ---
 
-magistrate court Oneida County courthouse
+magistrate court Oneida County courthouse 

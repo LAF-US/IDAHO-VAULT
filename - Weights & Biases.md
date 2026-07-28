@@ -45,7 +45,7 @@ Next, log in and paste your API key when prompted.
 
 Generate
 
-1. Log a Run to a new project
+8. Log a Run to a new project
 
 Start tracking system metrics and console logs, right out of the box. Run this sample code to see the new run appear in W&B.
 
@@ -53,6 +53,6 @@ Start tracking system metrics and console logs, right out of the box. Run this s
 
 Show more
 
- 1. See live metrics, terminal logs, and system stats in your project
+12. See live metrics, terminal logs, and system stats in your project
 
 🎉 Congrats! Now that you've run the code, navigate to your newly created project to compare the runs and their metrics.

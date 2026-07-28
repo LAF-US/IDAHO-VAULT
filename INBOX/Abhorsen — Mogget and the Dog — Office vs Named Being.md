@@ -90,7 +90,6 @@ That I reached this seam through the canon (Nix) and only *then* found the vault
 - **`*` / honest edges:** the Dog *does* wear a collar; canon does not call it a will-leash, and it vanishes where the Charter is absent — I distinguish it from Mogget's binding without claiming she is collarless.
 
 ## Sources
-
 - [Old Kingdom Wiki — Mogget](https://oldkingdomwiki.fandom.com/wiki/Mogget) · [Disreputable Dog](https://oldkingdomwiki.fandom.com/wiki/Disreputable_Dog) · [Nine Bright Shiners](https://oldkingdomwiki.fandom.com/wiki/Nine_Bright_Shiners) · [Terciel](https://oldkingdomwiki.fandom.com/wiki/Terciel)
 - Vault-local captures: `- Fandom, Inc. - Mogget.md`, `- Fandom, Inc. - Disreputable Dog.md`, `- Fandom, Inc. - Nine Bright Shiners.md`
 

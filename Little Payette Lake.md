@@ -7,6 +7,6 @@ related:
 - pair
 authority: LOGAN
 ---
-McCall lake
+McCall lake 
 
-pair to Payette Lake
+pair to Payette Lake 

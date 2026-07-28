@@ -8,4 +8,4 @@ related:
 - View
 authority: LOGAN
 ---
-Bruneau/Grand View/Oreana, Owyhee County
+Bruneau/Grand View/Oreana, Owyhee County 

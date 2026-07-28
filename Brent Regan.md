@@ -11,4 +11,4 @@ related:
 authority: LOGAN
 ---
 Kootenai County Republican Central Committee chairman
-Idaho Freedom Foundation board member
+Idaho Freedom Foundation board member 

@@ -10,6 +10,7 @@ date modified: Tuesday, April 14th 2026, 11:21:19 pm
 
 ![Summon](https://bartimaeus.fandom.com/wiki/Summon.jpg)
 
+  
 **Summoning** is a magician's most powerful ability to possess; it allows them to summon and control different varieties of [demons](https://bartimaeus.fandom.com/wiki/Demons "Demons") from the [Other Place](https://bartimaeus.fandom.com/wiki/Other_Place "Other Place").
 
 In order to summon a demon magicians use various charms of protection, herbs (such as rowan wood), incantations, runes and, although not always necessary, a pentacle (but are highly recommended to be able to control beings of great power). There are other protections such as using mirrors and wearing mirrored glasses or making the demon drink vats of donkey milk exclusively used on certain types of demons.

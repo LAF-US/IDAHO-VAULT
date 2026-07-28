@@ -175,6 +175,7 @@ To those familiar with Idaho, this isn’t surprising. “Deep red” Idaho is p
 
 But with a deadlocked legislature, how could Idahoans actually move the needle when it comes to expanded health care? A ballot initiative.
 
+
 Joe Jaszewski for BuzzFeed News
 Reclaim Idaho's effort to gather enough signatures to put Medicaid expansion on the ballot for Idaho voters in November.
 
@@ -192,6 +193,7 @@ The bar to get on the ballot is so high that no initiative has qualified since 2
 But that doesn’t mean it would automatically become law. A similar initiative to expand Medicaid in Maine passed with 58.9% of the vote in November 2017. In the months since, Maine’s governor has refused to implement the expansion, which would cover an additional 70,000–80,000 citizens and save the state $27 million a year, arguing that he’ll only sign off if the legislature can provide a plan to do so without raising taxes, drawing on the state’s rainy-day fund, or resorting to budget “gimmicks.” Due to this impasse, Maine missed the April 10 deadline to apply for federal expansion funds, and expansion advocates are promising to take legal action.
 
 If a Democrat becomes the governor of Idaho in November — a true long shot — Medicaid expansion would become law. If it’s one of the three Republican candidates, and the referendum passes, the situation could come to mirror that of Maine. The far-right candidate, current Idaho Rep. Raúl Labrador, would almost certainly refuse to implement the law. A passed initiative does not mean an automatic expansion — instead, it might entail a years-long battle that’s ultimately decided by the courts, not the voters.
+
 
 Joe Jaszewski for BuzzFeed News
 Edwina Allen (left) drops off signed petitions as Reclaim Idaho volunteer Nirmala Sandhu notarizes at a coffee shop in Meridian, Idaho, on Tuesday, March 13, 2018.
@@ -220,6 +222,7 @@ In the past, one suggestion, effective with voters, has been that the government
 
 The movement’s other tactic is to speak directly to the state’s growing progressive population. Reclaim Idaho gathered thousands of signatures at the Women’s March in January; in the weeks to come, they would go on to collect thousands more at farmers markets and at Treefort, Boise’s sprawling, weeklong music and arts festival.
 
+
 Joe Jaszewski / Special to BuzzFeed News
 College student Joe Goode makes his case to individuals outside a county administration office in Boise.
 
@@ -244,6 +247,7 @@ That’s what pisses off a politician like Margie Gannon. Gannon, a Democrat, sp
 “There’s a ripple effect to all of this,” Gannon told me. “The hospital starts cutting programs, starts cutting staff — that means there’s fewer jobs, but it also makes it harder to convince people to move here, if the hospital decreases its care. And then that filters down to the school district, where funding is based on the number of kids in desks. This is not just an insurance issue.”
 
 Which is why, in a county where 74% voted for Trump, there’s support for the Medicaid initiative. Last week, Gannon went into town to get a pizza, and the woman manning the counter asked her what district they lived in. When Gannon told her, she said, “All right then. I’m getting my hands on some of those petitions, so that I can get some signatures to get this thing on the ballot.”
+
 
 Joe Jaszewski for BuzzFeed News
 Reclaim Idaho's RV is parked at a gas station in Meridian, Idaho, on Tuesday, March 13, 2018.
@@ -275,6 +279,7 @@ As she walked toward the car, her son asked, “What’s Medicaid?”
 
 “I’ve always cared about Medicaid,” Goode told me. “My mom has a preexisting condition. That’s why I can’t just not go up to someone, even when I think they might turn me down. They might be someone who benefits from it.”
 
+
 Joe Jaszewski for BuzzFeed News
 Ken Levy (center) celebrates the 125 signatures that volunteer Joe Goode collected on Tuesday, March 13, 2018, to put Medicaid expansion on the ballot in Idaho in November at an election night party at Reclaim Idaho's headquarters in Boise.
 
@@ -291,6 +296,7 @@ The talk of the room is a district judge who had apparently gone from polling pl
 “Did anyone else run into that judge?” asks Lois Morgan, an 82-year-old in pearl earrings, a tidy blue sweater, and white Keds. “What a B!”
 
 “She took my picture,” Morgan says, loading a sandwich onto her paper plate. “But I took a picture of her license plate!”
+
 
 Joe Jaszewski for BuzzFeed News
 Lois Morgan chats with fellow supporters at an election-night party at Reclaim Idaho's Boise headquarters on Tuesday March 13, 2018.
@@ -315,6 +321,7 @@ A loose, disjointed “We will!” comes from the crowd.
 
 ADVERTISEMENT
 And with that, the crowd, weary and wind-chapped in a cluttered office with bad lighting, comes together in unison. “We the people!” they shout, the volume escalating each time. “We the people! We the people! We the people!”
+
 
 Joe Jaszewski for BuzzFeed News
 Reclaim Idaho cofounder Luke Mayville addresses supporters during an election night party at the organization's Boise headquarters on Tuesday, March 13, 2018.

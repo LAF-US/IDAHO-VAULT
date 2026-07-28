@@ -6,4 +6,4 @@ related:
 - hospitals
 ---
 
-emergency medical services & hospitals emergency room
+emergency medical services & hospitals emergency room 

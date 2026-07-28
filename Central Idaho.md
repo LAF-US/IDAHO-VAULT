@@ -17,7 +17,7 @@ authority: LOGAN
 - Custer
 - Lemhi
 
-Mountain Time Zone
+Mountain Time Zone 
 1st Congressional District
 2nd Judicial District
 North Central Health District

@@ -4,4 +4,4 @@ related:
 - LGBTQ+ issues
 ---
 
-high school athletics LGBTQ+ issues
+high school athletics LGBTQ+ issues 

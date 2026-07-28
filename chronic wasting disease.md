@@ -13,8 +13,8 @@ authority: LOGAN
 ---
 CWD Management Area
 
-tested and monitored by Idaho Fish and Game
+tested and monitored by Idaho Fish and Game 
 
-affects cervids like deer (both white-tailed & mule), elk, moose, caribou
+affects cervids like deer (both white-tailed & mule), elk, moose, caribou 
 
-similar but different to rabies
+similar but different to rabies 

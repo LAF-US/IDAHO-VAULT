@@ -16,12 +16,11 @@ related:
   - lfinneytweets
 ---
 
-@BetsyZRussell JFAC unanimously passes trailer bill funding for the CTE career ladder as well.
-<https://t.co/sl0HU9I3xW>
+@BetsyZRussell JFAC unanimously passes trailer bill funding for the CTE career ladder as well. 
+https://t.co/sl0HU9I3xW
 
 ## Links
-
-- <https://legislature.idaho.gov/sessioninfo/2020/legislation/s1329/>
+- https://legislature.idaho.gov/sessioninfo/2020/legislation/s1329/
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

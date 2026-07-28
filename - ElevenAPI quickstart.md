@@ -90,19 +90,19 @@ You should hear the audio play through your speakers.
 
 Reduce latency by streaming audio as it generates rather than waiting for the complete file
 
-](<https://elevenlabs.io/docs/eleven-api/guides/how-to/text-to-speech/streaming)[>
+](https://elevenlabs.io/docs/eleven-api/guides/how-to/text-to-speech/streaming)[
 
 Browse voices
 
 Explore 10,000+ voices and swap the example voice ID for one that fits your use case
 
-](<https://elevenlabs.io/app/voice-library)[>
+](https://elevenlabs.io/app/voice-library)[
 
 Clone a voice
 
 Create a custom voice from a short audio recording
 
-](<https://elevenlabs.io/docs/eleven-api/guides/how-to/voices/instant-voice-cloning>)
+](https://elevenlabs.io/docs/eleven-api/guides/how-to/voices/instant-voice-cloning)
 
 [^1]: [1](https://elevenlabs.io/docs/eleven-api/quickstart#create-an-api-key)
 

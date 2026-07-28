@@ -5,4 +5,4 @@ related:
 - white supremacist
 ---
 
-white supremacist racism
+white supremacist racism 

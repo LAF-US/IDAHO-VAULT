@@ -9,4 +9,4 @@ related:
 - Washington
 authority: LOGAN
 ---
-Business newspaper that covers CDA, North Idaho and Spokane, Washington
+Business newspaper that covers CDA, North Idaho and Spokane, Washington 

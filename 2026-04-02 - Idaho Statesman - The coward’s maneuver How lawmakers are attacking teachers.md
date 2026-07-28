@@ -9,7 +9,7 @@ Opinion articles provide independent perspectives on key community issues, separ
 
 ![The Idaho Capitol in Boise is shown in this March file photo](https://www.idahostatesman.com/public/latest-news/pgrikd/picture315198560/alternates/LANDSCAPE_1140/IMG_2199.jpeg)
 
-The Idaho Capitol in Boise is shown in this March file photo <kfixler@idahostatesman.com>
+The Idaho Capitol in Boise is shown in this March file photo kfixler@idahostatesman.com
 
 Listen to this article
 

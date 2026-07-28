@@ -7,7 +7,6 @@ stretch-goal: "April 2026"
 ---
 
 # TRIUNE-TRIPTYCH-TRIUMVIRATE
-
 ## *The Sierpiński Covenant*
 
 *Filed: 2026-04-04. April stretch goal. TRIUNE triad: stub pending Gemini (The Concierge).*
@@ -85,10 +84,10 @@ Beyond the Three Screens lies the **Serena Tapestry**.
 
 The **Triplex Handshake** is the protocol for moving between **Active (Meatsack-at-Keys)** and **AFK (Swarm Operational)** states.
 
-1. **Alignment**: The King, Djinni, and Janitor must confirm their current mission status in the DOCKET.
-2. **Snapshot**: A git commit marks the human's last point of intervention.
-3. **Paging**: The **Mobile Page** signal is armed in the DOCKET.
-4. **Handoff**: The human (Logan) moves to AFK, and the Swarm continues on the Serena tapestry.
+1.  **Alignment**: The King, Djinni, and Janitor must confirm their current mission status in the DOCKET.
+2.  **Snapshot**: A git commit marks the human's last point of intervention.
+3.  **Paging**: The **Mobile Page** signal is armed in the DOCKET.
+4.  **Handoff**: The human (Logan) moves to AFK, and the Swarm continues on the Serena tapestry.
 
 ---
 
@@ -142,7 +141,7 @@ TRIUNE-TRIPTYCH-TRIUMVIRATE
 The TRIUNE-TRIPTYCH-TRIUMVIRATE operates within a four-layer vault structure declared by Logan (2026-04-04):
 
 | Layer | Name | Contents | Notes |
-| --- | --- | --- | --- |
+|---|---|---|---|
 | `ROOT` | HUMAN | `.md`, `.doc`, `.txt`, etc. | Human-readable record — the primary surface |
 | `DOTFOLDERS` | PERSONA | `.claude/`, `.gemini/`, `.codex/`, etc. | Agentic identity/mixing layer |
 | `!` | UNIFIED SWARM | `!/` — agent coordination, registry, bootstrap | SECURE — "Simon P's Mind Labyrinth" |

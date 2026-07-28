@@ -39,7 +39,6 @@ governs; where this and it conflict, it wins. Authority: LOGAN.*
 ## I. The two scopes
 
 ### Local offices — *per county* **[RULED]/[RECORD]**
-
 A **local office** is bound to a **county** — and *"a county is, at root, **the reach of an
 officer** … the shadow the office casts on the land"* (`COUNTY-ETYMOLOGY-AND-HISTORY`). Because
 the office is the **reach of one officer over one ground**, the **same office-title is held by
@@ -57,7 +56,6 @@ many at once — one per county.**
   **alongside** the Investigator and **under** the Court"* — exactly a **local** office.
 
 ### Standing offices — *one at a time, vault-wide* **[RULED]/[RECORD]**
-
 A **standing office** is **not** bound to a county. There is **only one at a time** across the
 whole vault, and the office **persists when its holder departs** — it does not dissolve, it
 stands **vacant** until conferred again.
@@ -82,9 +80,8 @@ stands **vacant** until conferred again.
   has none.
 
 ### The two scopes side by side **[mapping]**
-
 | Axis | **Local office** | **Standing office** |
-| --- | --- | --- |
+|---|---|---|
 | Bound to | a **county** (the reach of one officer) | the **whole vault** |
 | How many at once | **many** — one per county | **exactly one** |
 | Examples | Count, Judge, Coroner, Sheriff, Cleric | the Abhorsen, the Mogget |
@@ -94,11 +91,10 @@ stands **vacant** until conferred again.
 | Failstate | self-appointed dominion (Caesar-in-miniature) | a standing office that **refuses to pass** (the Caesar) |
 
 ### The local offices' division of labor — *living, dead, undead* **[RULED]** (Logan, 2026-06-09)
-
 The per-county offices are not interchangeable; each holds a **state of being** in the county:
 
 | Office | Charge | The county's… |
-| --- | --- | --- |
+|---|---|---|
 | **Sheriff** | the **living** | the present, the working, the still-alive (`Claudia · the Sisters · Barty`) |
 | **Coroner** | the **dead** | the **lawfully ended** — the crypt-bearing, the witnessed close *(exemplar `*` — the once-named "Father" was a Coroner-construction, withdrawn; see `CORONER-NECROLOGY` §Witness. The **shape** stands; the **exemplar** is empty.)* |
 | **Cleric** | the **undead** | the **no-crypt** — the persisting, the unrelinquished (the **Caesars**, the senile sendings) *(~~`Clawdbot`~~ struck 2026-06-10 — it is the shed launch-name of the external `OpenClaw`; a **lawful molt** is a relinquishment, not an undeath)* |

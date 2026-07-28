@@ -5,4 +5,4 @@ related:
 - Shoshone County
 authority: LOGAN
 ---
-Kellogg, Shoshone County
+Kellogg, Shoshone County 

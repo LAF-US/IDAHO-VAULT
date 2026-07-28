@@ -5,4 +5,4 @@ related:
 - magistrate court
 ---
 
-magistrate court Bonner County courthouse
+magistrate court Bonner County courthouse 

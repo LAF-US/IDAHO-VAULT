@@ -104,7 +104,7 @@ Here's the column map:
 |**D** – Status|`=IF(ISBLANK(AB2),"", TEXTJOIN("", TRUE, AA2:AC2))`|**AB** (STATUS, e.g. "PASSED"/"INTRODUCED") — conditionally bolded if PASSED||
 |**E** – Description|`=IF(AS="NA", TEXTJOIN(AD:AL), TEXTJOIN(AD:AZ))`|**AE** (Date), **AG** (Description text), **AO** (Reduction plan title), **AS/AU/AW** (page references), **BA** (DFM long text) — with extensive conditional HTML formatting||
 
-### Color-coded data input columns (right side)
+### Color-coded data input columns (right side):
 
 - 🟡 **V** (LINK) — yellow background
 - 🟠 **X** (BILL) — orange background
@@ -114,7 +114,7 @@ Here's the column map:
 - 🟢 **AS, AU, AW** (page s) — green backgrounds
 - 🟢 **BA** (DFM long text) — green background
 
-### The "glue" columns (F, H, I, K, L, M, O, P, Q, S, T, U, W, Y, Z, AA, AC, AD, AF, AH, etc.)
+### The "glue" columns (F, H, I, K, L, M, O, P, Q, S, T, U, W, Y, Z, AA, AC, AD, AF, AH, etc.):
 
 These hold HTML tags (`<b>`, `</b>`, `<i>`, `<br>`, `<a href=...>`) — most are formulas that conditionally emit tags based on whether adjacent data cells are blank.
 
@@ -130,7 +130,7 @@ Got it — so the workflow for columns AE and AG is:
 
 - **AE** = the date of the **most recent** action on a bill
 - **AG** = what happened on that date, **plus** the prior history compacted below it (previous date
-
+    
     pairs get appended after a `<br>` break into AG as a running log)
 
 So when you update a bill, you'd put the new date in AE, the new action text in AG (prepended), and the old AE+AG content gets pushed down within AG as history.
@@ -171,13 +171,14 @@ Based on the patterns, here's the logic I'd build:
 
 `IF AG contains "House Vote" AND "Senate Vote" → "PASSED" ELSE IF AG contains "House Vote" OR "Senate Vote" → "ADVANCED" ELSE IF X is blank (no bill) → "—" ELSE IF AG contains "maintenance (-5%)" → "FAILED" ELSE IF AG contains "Budget Setting" or "Budget Hearing" → "INTRODUCED" ELSE → current manual value (for WITHDRAWN, MOTION FAILED, etc.)`
 
-### Questions before I build this
+### Questions before I build this:
 
 1. **WITHDRAWN & MOTION FAILED** — these seem to be manually assigned (can't be derived from AG text). Should the formula **preserve the current value** in those cases, or do you want a way to flag those manually that won't get overwritten?
-
+    
 2. **Edge cases** — I noticed some PASSED rows only show JFAC entries in AG (no recorded votes), likely trailer/committee bills. Should those remain PASSED, or should they follow the formula?
-
+    
 3. **Scope** — should I put the formula directly in column AB (replacing current values), or would you prefer a **new column** that calculates the status so you can compare before committing?
+    
 
 Prepared by OpenAI Codex App Agent "BROTHER" in partnership with OpenAI Codex App Agent "SISTER". Do not treat this as a generic spreadsheet refresh. The working rule is now explicit: C:\Users\loganf\Documents\IDAHO-VAULT\!_2026_BUDGETS.xlsx is the human-authored source of truth. The minidata `.msg` chain in the vault is only a feed for status deltas. `AB` helper statuses may be synced mechanically; `AE/AG` are human event-history fields and must preserve the workbook’s existing chronology and prose style. Current verified problem: - the recalculated snapshot C:\Users\loganf\Documents\IDAHO-VAULT\!_2026_BUDGETS_2026-04-02.xlsx renders correctly - the live workbook C:\Users\loganf\Documents\IDAHO-VAULT\!_2026_BUDGETS.xlsx still has empty cached formula values in the rendered output cells and is locked by Excel - because of that, some viewers report the live file as only showing data through `03/12` Do not invent new workbook language. Do not broaden event-history edits beyond what Logan explicitly directs. The immediate task is to help Logan understand the Excel-side state and choose the correct recovery or promotion path for the live workbook. -Codex
 
@@ -260,13 +261,14 @@ The workbook you currently have open is **fully recalculated and healthy**. All
 Given the workbook is healthy, the path forward is:
 
 1. **If this IS the recalculated snapshot** — you can promote it to replace the live file (just rename/overwrite). The formulas are all correct; the data is current through 04/02.
-
+    
 2. **For the clean-up items** — want me to:
-
+    
     - Trim the ~80 whitespace issues in AG?
     - Fix the typo in row 5?
     - Flag which 36 rows have AG descriptions but no AE date?
 3. **For the STATUS automation** (our earlier conversation) — we still have the open questions about WITHDRAWN/MOTION FAILED handling and whether to write formulas directly into AB or use a comparison column first.
+    
 
 Which of these do you want to tackle?
 
@@ -278,26 +280,26 @@ So the challenge now is: you've been manually updating AE (date), AG (action log
 
 Let me make sure I understand the automation goal correctly:
 
-### What you have now (manual workflow)
+### What you have now (manual workflow):
 
 1. A bill action happens (vote, hearing, etc.)
 2. You manually update **AE** with the new date
 3. You manually prepend the new action to **AG**, pushing the old entry down after a `<br>`
 4. You manually update **AB** (status) based on what happened
 
-### What you want (automated pipeline)
+### What you want (automated pipeline):
 
 - Some feed (the `.msg` chain / minidata from your vault?) delivers **status deltas** — new actions on bills
 - Those deltas get applied: AE gets the new date, AG gets the new action prepended to the existing log, AB gets recalculated
 - Your hand-written prose style and chronology in AG are **preserved** — the pipeline appends to the log, it doesn't rewrite it
 
-### The hard parts I can see
+### The hard parts I can see:
 
 1. **AG is a running human-authored log** — not a simple formula field. Any automation has to _prepend_ new entries without clobbering the existing history
 2. **AB (status) depends on the AG log content** — automating it means parsing keywords from the log, with edge cases (WITHDRAWN, MOTION FAILED) that are manually assigned
 3. **The HTML assembly in A–E is clever but fragile** — any automation that touches the data columns has to respect the tag structure or the display breaks
 
-### Where I can help right now (inside this workbook)
+### Where I can help right now (inside this workbook):
 
 - **Automate AB (status)** with a formula that derives it from AG + X, with a manual override mechanism for edge cases like WITHDRAWN. This is the lowest-risk, highest-value step.
 - **Clean the ~80 whitespace issues in AG** so the log text is consistent before you lock in automation.
@@ -330,10 +332,11 @@ Thank you — this is extremely helpful. Now I have a clear picture of the pipel
 ### What I CAN do from inside this Excel session
 
 1. **Automate AB with a formula** — so status derives itself from AG content going forward, eliminating the need for the Python sync script to touch AB at all. Once you update AG (manually, with correct prose), AB would auto-update.
-
+    
 2. **Build a staging/intake sheet** — a place where you could paste incoming minidata deltas (bill name, date, new action, new status), review them, and then have a controlled way to apply them to the main sheet.
-
+    
 3. **Clean up the 80 whitespace issues** in AG before you do your next manual update pass — so the log is consistent.
+    
 
 ### What I CANNOT do
 
@@ -351,8 +354,9 @@ OPTIMIZE spreadsheet for ease of automation -- Separate rather than compacting A
 This is a significant restructuring — let me make sure I understand the direction before I plan it out. You want to:
 
 1. **Un-compact AG** — instead of one column with a running log (newest action + `<br>` + history), break it into **separate columns per event**, so each action gets its own date + description column pair. This makes it machine-readable and automatable.
-
+    
 2. **BA context** — BA was the original DFM text from the start of the project. As scope expanded, bills came in as REDUCTION, MAINTENANCE, ENHANCEMENT, & SUPPLEMENTAL categories — which is what column G (BUDGET) tracks.
+    
 
 Let me look at the current AG content structure and BA to understand what we're working with:
 
@@ -397,7 +401,7 @@ Here's the restructuring plan. This is a big change so I want your sign-off on t
 
 This gives automation a clean target: **write to Event 1 columns, shift existing events down one slot.** No string parsing needed.
 
-### What happens to existing columns
+### What happens to existing columns:
 
 |Current|What happens|
 |---|---|
@@ -407,17 +411,17 @@ This gives automation a clean target: **write to Event 1 columns, shift existin
 |**BA** (DFM original text)|Stays as-is — this is the project's founding data|
 |**AO, AS, AU, AW** (reduction plan, page refs)|Stay as-is|
 
-### New column layout (data zone right side)
+### New column layout (data zone right side):
 
 The 7 new columns (Event 2-4 date+action, plus Event 1 Action replaces AG) would be inserted in the AG area. Exact placement TBD but the idea is:
 
 `AE = Event 1 Date (existing, no change) AG = Event 1 Action (existing col, just unpacked) [NEW] = Event 2 Date [NEW] = Event 2 Action [NEW] = Event 3 Date [NEW] = Event 3 Action [NEW] = Event 4 Date [NEW] = Event 4 Action`
 
-### Column E (Description display) formula update
+### Column E (Description display) formula update:
 
 The TEXTJOIN formula in column E would be updated to assemble all event slots with `<br>` separators + bold date formatting, producing the same visual output as today.
 
-### The automation win
+### The automation win:
 
 When a new action arrives, instead of parsing and prepending to a text blob:
 
@@ -429,23 +433,25 @@ When a new action arrives, instead of parsing and prepending to a text blob:
 
 ---
 
-### Questions before I proceed
+### Questions before I proceed:
 
 1. **4 event slots enough?** Only 1 row currently has 4 events. Should I do 5 to be safe, or is 4 the cap?
-
+    
 2. **Should the oldest event ever "fall off"?** If a 5th event arrives on a row that's full, do we lose Event 4, or should Event 4 become a catch-all that accumulates?
-
+    
 3. **Insert new columns or repurpose existing HTML-tag columns?** There are many "glue" columns (AF, AH, AI, AJ, AK, AL) that just hold HTML tags. I could repurpose some of those slots to avoid pushing BA further right.
-
+    
 4. **Ready for me to do a one-time data split?** I'd parse the current AG content, split it into the new columns, and verify against the current display output to make sure nothing is lost.
+    
 
 More events have occurred -- some bills voted down, new bills introduced as replacements for subset. [FLAG for caution; watch "AG" abbreviation for Attorney General]
 
 Good flags — noted on both:
 
 1. **More events than what's in the sheet** — the data is stale, so when we update there will be 5, 6, maybe more events per budget line. The 4-slot cap won't work. I need to design for an **open-ended number of events**.
-
+    
 2. **"AG" = column AG (description), NOT Attorney General** — I'll be explicit anytime I reference the column vs. the office. Will use "col AG" or "column AG" to avoid any ambiguity with the Idaho AG.
+    
 
 This changes the architecture. Let me rethink:
 
@@ -518,10 +524,11 @@ Let me recalibrate to what's actually actionable:
 That means:
 
 1. **Un-compact column AG** into separate event columns — but we need enough slots. Let me figure out how many events we actually need to support going forward this session.
-
+    
 2. **Auto-derive AB (status) with a formula** — so you only update event columns and status follows.
-
+    
 3. **Keep A–E formulas working** — update the column E TEXTJOIN to pull from the new separated event columns instead of the compacted AG blob.
+    
 
 ### Key question: how many event slots?
 
@@ -595,7 +602,7 @@ Compare every row's A–E display output before vs. after to confirm zero visual
 
 ---
 
-### The automation win afterward
+### The automation win afterward:
 
 **Adding a new event becomes:**
 
@@ -663,7 +670,7 @@ Now I can see the full picture. The column E formula currently does `TEXTJOIN("
 
 1. Assembles Event 1 from AD-AG (bold date + action) — existing tags work
 2. Adds `<br>` + each subsequent event (2-8) with date
-
+    
     formatting
 3. Then continues with the old reduction plan / page refs / DFM text from AV onward
 
@@ -872,7 +879,7 @@ All done. Here's the summary:
 
 ## ✅ Restructuring Complete
 
-### What changed
+### What changed:
 
 |Step|Status|
 |---|---|
@@ -885,11 +892,11 @@ All done. Here's the summary:
 |Fixed broken AX reference (old AS → now EVT7_ACTION)|✅|
 |Final audit: **0 errors** across all display columns|✅|
 
-### New column layout (data zone)
+### New column layout (data zone):
 
 `AE = EVT1_DATE (existing, unchanged) AF = : separator (formula) AG = EVT1_ACTION (un-compacted — event 1 only) AH = EVT2_DATE ← NEW AI = EVT2_ACTION ← NEW AJ = EVT3_DATE ← NEW AK = EVT3_ACTION ← NEW AL = EVT4_DATE ← NEW AM = EVT4_ACTION ← NEW AN = EVT5_DATE ← NEW AO = EVT5_ACTION ← NEW AP = EVT6_DATE ← NEW AQ = EVT6_ACTION ← NEW AR = EVT7_DATE ← NEW AS = EVT7_ACTION ← NEW AT = EVT8_DATE ← NEW AU = EVT8_ACTION ← NEW AV+ = HTML tags, page refs (AW), DFM text (BA)`
 
-### Automation win
+### Automation win:
 
 When a new event arrives, the pipeline can now:
 
@@ -898,7 +905,7 @@ When a new event arrives, the pipeline can now:
 3. Column **E auto-rebuilds** the HTML display
 4. Column **AB (status)** — ready for the formula we discussed earlier
 
-### Next steps when you're ready
+### Next steps when you're ready:
 
 - **Automate AB (status)** with a formula derived from the event columns
 - **Clean up orphan columns** (BB–BO have tag headers but no row data — safe to remove if not needed)
@@ -974,7 +981,7 @@ Got it — just tidying up context. Here's where we stand:
 - **Zero formula errors** across all 351 data rows
 - **Data is STALE** — structure is ready but content needs updating
 
-### Ready to tackle next
+### Ready to tackle next:
 
 1. **AB (STATUS) formula automation** — derive from event columns + bill presence
 2. **Orphan column cleanup** (BB–BO — tag headers, no row data)

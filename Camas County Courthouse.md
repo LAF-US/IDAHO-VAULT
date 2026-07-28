@@ -5,4 +5,4 @@ related:
 - magistrate court
 ---
 
-magistrate court Camas County courthouse
+magistrate court Camas County courthouse 

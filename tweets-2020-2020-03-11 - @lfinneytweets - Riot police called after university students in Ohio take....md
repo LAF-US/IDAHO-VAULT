@@ -13,10 +13,9 @@ related:
   - lfinneytweets
 ---
 
-Riot police called after university students in Ohio take to campus streets following closure announcement <https://t.co/KFdMKbXX5m>
+Riot police called after university students in Ohio take to campus streets following closure announcement https://t.co/KFdMKbXX5m
 
 ## Links
-
-- <https://x.com/i/events/1237627716196683777>
+- https://x.com/i/events/1237627716196683777
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1237783413702025216)

@@ -210,7 +210,7 @@ ISO/IEC 18013-5:2021 defines specifications for mobile driving licences (mDLs). 
 ## SUMMARY SCORECARD
 
 | # | Claim | Verdict | Confidence |
-| --- | ------- | --------- | ------------ |
+|---|-------|---------|------------|
 | 1 | H0078 & S1299 | PARTIALLY ACCURATE | High |
 | 2 | TSA $45 fee | VERIFIED | High |
 | 3 | Idaho FAST Act S1423 | PARTIALLY ACCURATE | Medium |
@@ -231,7 +231,6 @@ ISO/IEC 18013-5:2021 defines specifications for mobile driving licences (mDLs). 
 **Overall: 7 VERIFIED, 6 PARTIALLY ACCURATE, 1 LIKELY FABRICATED, 1 UNVERIFIED, 1 VERIFIED with caveats**
 
 **Highest-risk errors for journalism:**
-
 1. **Claim 4 (UCC Article 12):** Idaho has NOT adopted Article 12. This is flatly wrong and would be a significant factual error if published.
 2. **Claim 1 (H0078):** The bill appears to have stalled in the Senate. Saying it "institutionalized" digital driver's licenses overstates what happened.
 3. **Claim 6 (IFF rating):** The rating was not lowered; IFF criticized amendments but kept the +1 score.

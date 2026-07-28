@@ -22,7 +22,6 @@ related:
 # OpenRouter + Local Ollama Mesh
 
 Cloud and complex AI model calls are centralized through OpenRouter for:
-
 - Single API key (1Password: `op://Vault/OpenRouter API Key/credential`)
 - Cost control via per-key rate limits
 - Tool-call-capable cloud models for OpenClaw defaults
@@ -35,7 +34,7 @@ Local Ollama remains installed but is not active in OpenClaw routing; allowed lo
 ## Current Status
 
 | Component | Status | Model |
-| ----------- | -------- | ------- |
+|-----------|--------|-------|
 | OpenClaw Gateway | ✅ Running | `openrouter/mistralai/mistral-small-2603` |
 | Codex | ✅ Ready | Via launch scripts |
 | Claude Code | ✅ Ready | Via launch scripts |
@@ -63,7 +62,7 @@ Local Ollama remains installed but is not active in OpenClaw routing; allowed lo
 ## Tool-Capable Cloud Models (Active)
 
 | Model | Context | Use |
-| ------- | --------- | ----- |
+|-------|---------|-----|
 | `mistralai/mistral-small-2603` | Provider advertised | Primary / default |
 | `mistralai/mistral-medium-3-5` | Provider advertised | Complex Mistral fallback |
 | `anthropic/claude-sonnet-4.6` | Provider advertised | Claude fallback |
@@ -90,14 +89,12 @@ Local Ollama remains installed but is not active in OpenClaw routing; allowed lo
 ## Bootstrap
 
 Run the canonical local bootstrap chain to:
-
 1. Resolve the OpenRouter secret (1Password when configured; chmod `600` fallback until then)
 2. Start OpenClaw gateway
 3. Reload secrets
 4. Audit configuration
 
 Current runtime helpers:
-
 - `python3 !/resolve_openrouter_secret.py`
 - `./!-launch-claude-openrouter.sh`
 - `./!-launch-codex-openrouter.sh`
@@ -107,7 +104,7 @@ Current runtime helpers:
 ## 1Password Items (Vault)
 
 | Item | Field | Status |
-| ------ | ------- | -------- |
+|------|-------|--------|
 | OpenRouter API Key | credential | ✅ |
 | OpenClaw Gateway Token | credential | ✅ Created |
 | Discord OpenClaw Bot | credential | ✅ |

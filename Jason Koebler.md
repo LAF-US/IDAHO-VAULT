@@ -5,4 +5,4 @@ related:
 - VICE Media
 authority: LOGAN
 ---
-404 Media, formerly VICE Media
+404 Media, formerly VICE Media 

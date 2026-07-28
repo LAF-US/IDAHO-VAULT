@@ -22,24 +22,24 @@ Two gay men are recovering after they were attacked in Caldwell Saturday night. 
 
 EXCLUSIVE: Vanderbilt and Ethan Hauser LEAD Transformative Recruiting SURGE | SEC Kickoff Windows
 
-](<https://www.ktvb.com/video/sports/locked-on/lo-tennessee/commodores-show/exclusive-vanderbilt-and-ethan-hauser-lead-transformative-recruiting-surge-sec-kickoff-windows/535-81d32e12-65fe-493f-a572-d10764137f0e>)
+](https://www.ktvb.com/video/sports/locked-on/lo-tennessee/commodores-show/exclusive-vanderbilt-and-ethan-hauser-lead-transformative-recruiting-surge-sec-kickoff-windows/535-81d32e12-65fe-493f-a572-d10764137f0e)
 
 - [![](https://media.ktvb.com/assets/LOCKEDON/images/a544ff6e-0798-4721-a30f-d9d6a47febc0/20260616T030814/a544ff6e-0798-4721-a30f-d9d6a47febc0_1920x1080.jpg)
- Next up in 5
- EXCLUSIVE: Vanderbilt and Ethan Hauser LEAD Transformative Recruiting SURGE | SEC Kickoff Windows
-](https://www.ktvb.com/video/sports/locked-on/lo-tennessee/commodores-show/exclusive-vanderbilt-and-ethan-hauser-lead-transformative-recruiting-surge-sec-kickoff-windows/535-81d32e12-65fe-493f-a572-d10764137f0e)
+	Next up in 5
+	EXCLUSIVE: Vanderbilt and Ethan Hauser LEAD Transformative Recruiting SURGE | SEC Kickoff Windows
+	](https://www.ktvb.com/video/sports/locked-on/lo-tennessee/commodores-show/exclusive-vanderbilt-and-ethan-hauser-lead-transformative-recruiting-surge-sec-kickoff-windows/535-81d32e12-65fe-493f-a572-d10764137f0e)
 - [![](https://media.ktvb.com/assets/LOCKEDON/images/e5cc8b7a-29fb-4031-bafd-aeaca90df7be/20260616T030559/e5cc8b7a-29fb-4031-bafd-aeaca90df7be_1920x1080.jpg)
- These are the 10 GREATEST moments from Indiana Football's NATIONAL CHAMPIONSHIP season!
-](https://www.ktvb.com/video/sports/locked-on/lo-indiana/hoosiers-show/these-are-the-10-greatest-moments-from-indiana-footballs-national-championship-season/535-4a593813-f708-48f0-8c76-60f7ba434c9b)
+	These are the 10 GREATEST moments from Indiana Football's NATIONAL CHAMPIONSHIP season!
+	](https://www.ktvb.com/video/sports/locked-on/lo-indiana/hoosiers-show/these-are-the-10-greatest-moments-from-indiana-footballs-national-championship-season/535-4a593813-f708-48f0-8c76-60f7ba434c9b)
 - [![](https://media.ktvb.com/assets/LOCKEDON/images/ef31bcfd-e322-4ed3-b863-5e713accc951/20260616T025332/ef31bcfd-e322-4ed3-b863-5e713accc951_1920x1080.jpg)
- The Top 10 Carolina Hurricanes Moments in the 2026 Stanley Cup Playoffs
-](https://www.ktvb.com/video/sports/locked-on/lo-charlotte/hurricanes-show/the-top-10-carolina-hurricanes-moments-in-the-2026-stanley-cup-playoffs/535-4de77175-a8d3-4b70-98f7-07fa4d386ce9)
+	The Top 10 Carolina Hurricanes Moments in the 2026 Stanley Cup Playoffs
+	](https://www.ktvb.com/video/sports/locked-on/lo-charlotte/hurricanes-show/the-top-10-carolina-hurricanes-moments-in-the-2026-stanley-cup-playoffs/535-4de77175-a8d3-4b70-98f7-07fa4d386ce9)
 - [![](https://media.ktvb.com/assets/LOCKEDON/images/c05f4343-7f01-4496-8f19-2f244cca5346/20260616T030332/c05f4343-7f01-4496-8f19-2f244cca5346_1920x1080.jpg)
- REDS POSTCAST: Cincinnati Reds and Eugenio Suarez DOMINATE Mets, Crush Two Home Runs in Blowout Win
-](https://www.ktvb.com/video/sports/locked-on/lo-cincinnati/postcast-locked-on-reds/reds-postcast-cincinnati-reds-and-eugenio-suarez-dominate-mets-crush-two-home-runs-in-blowout-win/535-72d1db3e-086a-4a3a-b794-55d93443a9bd)
+	REDS POSTCAST: Cincinnati Reds and Eugenio Suarez DOMINATE Mets, Crush Two Home Runs in Blowout Win
+	](https://www.ktvb.com/video/sports/locked-on/lo-cincinnati/postcast-locked-on-reds/reds-postcast-cincinnati-reds-and-eugenio-suarez-dominate-mets-crush-two-home-runs-in-blowout-win/535-72d1db3e-086a-4a3a-b794-55d93443a9bd)
 - [![](https://media.ktvb.com/assets/LOCKEDON/images/c88aa807-0c2e-4dac-b9ac-0fb29ea7f5f9/20260616T030635/c88aa807-0c2e-4dac-b9ac-0fb29ea7f5f9_1920x1080.jpg)
- PADRES POSTCAST: San Diego PADRES SHUT OUT IN ST. LOUIS: Dustin May Dominates Pads, Cardinals Defense Shines in Series Opening 3-0 Win
-](https://www.ktvb.com/video/sports/locked-on/lo-san-diego/postcast-locked-on-padres/padres-postcast-san-diego-padres-shut-out-in-st-louis-dustin-may-dominates-pads-cardinals-defense-shines-in-series-opening-3-0-win/535-d351287e-dbea-4c31-a44c-755b7ec532ac)
+	PADRES POSTCAST: San Diego PADRES SHUT OUT IN ST. LOUIS: Dustin May Dominates Pads, Cardinals Defense Shines in Series Opening 3-0 Win
+	](https://www.ktvb.com/video/sports/locked-on/lo-san-diego/postcast-locked-on-padres/padres-postcast-san-diego-padres-shut-out-in-st-louis-dustin-may-dominates-pads-cardinals-defense-shines-in-series-opening-3-0-win/535-d351287e-dbea-4c31-a44c-755b7ec532ac)
 
 CALDWELL, Idaho — A gay couple is recovering after Caldwell Police said they were attacked near Indian Creek Plaza on Saturday night.
 

@@ -16,10 +16,9 @@ related:
 ---
 
 New @uiargonaut video: How to vote on Tuesday 🇺🇲
-<https://t.co/z9Ytp5d33a>
+https://t.co/z9Ytp5d33a
 
 ## Links
-
-- <https://youtu.be/YA3SSPVcyNo>
+- https://youtu.be/YA3SSPVcyNo
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1059019913010937857)

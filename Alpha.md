@@ -4,6 +4,6 @@ related:
 - Valley County
 authority: LOGAN
 ---
-Valley County
+Valley County 
 
-Long Valley
+Long Valley 

@@ -9,6 +9,6 @@ related:
 URLs submitted to Save Page Now on push to main.
 
 | URL | Archived | Status |
-| --- | --- | --- |
+|---|---|---|
 | https://... | failed | ❌ |
 | https://... | failed | ❌ |

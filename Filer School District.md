@@ -5,4 +5,4 @@ related:
 - Twin Falls County
 authority: LOGAN
 ---
-Filer, Twin Falls County
+Filer, Twin Falls County 

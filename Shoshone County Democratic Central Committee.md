@@ -6,4 +6,4 @@ related:
 - Shoshone County
 authority: LOGAN
 ---
-Local Idaho Democratic Party precinct committee for Shoshone County
+Local Idaho Democratic Party precinct committee for Shoshone County 

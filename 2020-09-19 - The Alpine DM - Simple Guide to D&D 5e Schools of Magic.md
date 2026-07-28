@@ -22,9 +22,9 @@ The School of Conjuration deals with creating objects and creatures, or making t
 Examples:
 
 > **Low Level**: *Find Familiar, Poison Spray*
->
+> 
 > **Mid Level**: *Spirit Guardians, Conjure Elemental*
->
+> 
 > **High Level**: *Plane Shift, Wish*
 
 *DM Thoughts: You might think Banishment would be within the School of Conjuration, since it deals with making things disappear, but it’s actually within the School of Abjuration.*
@@ -40,9 +40,9 @@ In general, think of spells within the School of Necromancy as manipulating the 
 Examples:
 
 > **Low Level**: *Chill Touch, Inflict Wounds*
->
+> 
 > **Mid Level**: *Animate Dead, Blight*
->
+> 
 > **High Level**: *Resurrection, Finger of Death*
 
 *Unsolicited DM Thoughts: All forms of healing magic should be within the school of necromancy, and not scattered all about different schools of magic.*
@@ -58,9 +58,9 @@ Casters within the school of evocation unleash a raw magical energy upon their e
 Examples:
 
 > **Low Level**: *Burning Hands, Dancing Lights*
->
+> 
 > **Mid Level**: *Fireball, Freezing Sphere*
->
+> 
 > **High Level**: *Meteor Swarm, Prismatic Spray*
 
 *Unsolicited DM Thoughts: The spell sending is within the School of Evocation, though I think it is a better fit for the School of Divination.*
@@ -76,9 +76,9 @@ Magical spells and effects within the school of abjuration are primarily designe
 Examples:
 
 > **Low Level**: *Dispel Magic, Shield*
->
+> 
 > **Mid Level**: *Dispel Evil and Good, Greater Restoration*
->
+> 
 > **High Level**: *Invulnerability, Antimagic Field*
 
 ![School of Abjuration D&D 5e](https://thealpinedm.com/wp-content/uploads/2020/09/School-of-Abjuration.png)
@@ -92,9 +92,9 @@ Casters who study within the School of Transmutation are able to manipulate the 
 Examples:
 
 > **Low Level**: *Shape Water, Feather Fall*
->
+> 
 > **Mid Level**: *Gaseous Form, Stone Shape*
->
+> 
 > **High Level**: *Polymorph, Etherealness*
 
 ![School of Transmutation D&D 5e](https://thealpinedm.com/wp-content/uploads/2020/09/School-of-Transmutation.png)
@@ -108,9 +108,9 @@ The magical School of Divination is centered around revealing and granting knowl
 Examples:
 
 > **Low Level:** *Identify, Find Traps*
->
+> 
 > **Mid Level:** *Scrying, Locate Creature*
->
+> 
 > **High Level:** *True Seeing, Foresight*
 
 ![School of Divination D&D 5e](https://thealpinedm.com/wp-content/uploads/2020/09/School-of-Divination.png)
@@ -124,9 +124,9 @@ Spells within the School of Enchantment are designed to manipulate the mental st
 Examples:
 
 > **Low Level**: *Hold Person, Sleep*
->
+> 
 > **Mid Level**: *Modify Memory, Mass Suggestion*
->
+> 
 > **High Level**: *Feeblemind, Power Word Kill*
 
 ![School of Enchantment D&D 5e](https://thealpinedm.com/wp-content/uploads/2020/09/School-of-Enchantment.png)
@@ -140,9 +140,9 @@ The School of Illusion is concerned with manipulating the various senses of peop
 Example:
 
 > **Low Level**: *Disguise Self, Silent Image*
->
+> 
 > **Mid Level**: *Invisibility, Hallucinatory Terrain*
->
+> 
 > **High Level**: *Project Image, Weird*
 
 ![School of Illusion D&D 5e](https://thealpinedm.com/wp-content/uploads/2020/09/School-of-Illusion.png)

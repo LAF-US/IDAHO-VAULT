@@ -10,9 +10,9 @@ created: 2026-04-13
 
 "A mind map is a diagram used to visually organize information into a hierarchy, showing relationships among pieces of the whole. It is often created around a single concept, drawn as an image in the center of a blank page, to which associated representations of ideas such as images, words and parts of words are added. Major ideas are connected directly to the central concept, and other ideas branch out from those major ideas." Wikipedia
 
-### An example of a mindmap
+### An example of a mindmap.
 
-##### Code
+##### Code:
 
 ```
 mermaidmindmap
@@ -50,7 +50,7 @@ mindmap
 
 In summary is a simple text outline where there is one node at the root level called `Root` which has one child `A`. `A` in turn has two children `B` and `C`. In the diagram below we can see this rendered as a mindmap.
 
-##### Code
+##### Code:
 
 ```
 mermaidmindmap
@@ -116,7 +116,7 @@ Mindmap can show the following shapes:
 
 ### Square
 
-##### Code
+##### Code:
 
 ```
 mermaidmindmap
@@ -127,7 +127,7 @@ mermaidmindmap
 
 ### Rounded square
 
-##### Code
+##### Code:
 
 ```
 mermaidmindmap
@@ -138,7 +138,7 @@ mermaidmindmap
 
 ### Circle
 
-##### Code
+##### Code:
 
 ```
 mermaidmindmap
@@ -149,14 +149,14 @@ mermaidmindmap
 
 ### Bang
 
-##### Code
+##### Code:
 
 ```
 mermaidmindmap
     id))I am a bang((
 ```
 
-<svg id="mermaid-56" width="100%" xmlns="http://www.w3.org/2000/svg" style="max-width: 186.390625px;" viewBox="8.32781982421875 6.599998474121094 186.390625 100" role="graphics-document document" aria-roledescription="mindmap"><g><marker id="mermaid-56_mindmap-pointEnd" viewBox="0 0 10 10" refX="5" refY="5" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker><marker id="mermaid-56_mindmap-pointStart" viewBox="0 0 10 10" refX="4.5" refY="5" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 5 L 10 10 L 10 0 z" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker><marker id="mermaid-56_mindmap-pointEnd-margin" viewBox="0 0 11.5 14" refX="11.5" refY="7" markerUnits="userSpaceOnUse" markerWidth="10.5" markerHeight="14" orient="auto"><path d="M 0 0 L 11.5 7 L 0 14 z" style="stroke-width: 0; stroke-dasharray: 1, 0;"></path></marker><marker id="mermaid-56_mindmap-pointStart-margin" viewBox="0 0 11.5 14" refX="1" refY="7" markerUnits="userSpaceOnUse" markerWidth="11.5" markerHeight="14" orient="auto"><polygon points="0,7 11.5,14 11.5,0" style="stroke-width: 0; stroke-dasharray: 1, 0;"></polygon></marker><g></g><g></g><g></g><g><g id="mermaid-56-node_0" data-look="classic" transform="translate(98.1953125, 55)"><path style="" d="M0 0
+<svg id="mermaid-56" width="100%" xmlns="http://www.w3.org/2000/svg" style="max-width: 186.390625px;" viewBox="8.32781982421875 6.599998474121094 186.390625 100" role="graphics-document document" aria-roledescription="mindmap"><g><marker id="mermaid-56_mindmap-pointEnd" viewBox="0 0 10 10" refX="5" refY="5" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker><marker id="mermaid-56_mindmap-pointStart" viewBox="0 0 10 10" refX="4.5" refY="5" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 5 L 10 10 L 10 0 z" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker><marker id="mermaid-56_mindmap-pointEnd-margin" viewBox="0 0 11.5 14" refX="11.5" refY="7" markerUnits="userSpaceOnUse" markerWidth="10.5" markerHeight="14" orient="auto"><path d="M 0 0 L 11.5 7 L 0 14 z" style="stroke-width: 0; stroke-dasharray: 1, 0;"></path></marker><marker id="mermaid-56_mindmap-pointStart-margin" viewBox="0 0 11.5 14" refX="1" refY="7" markerUnits="userSpaceOnUse" markerWidth="11.5" markerHeight="14" orient="auto"><polygon points="0,7 11.5,14 11.5,0" style="stroke-width: 0; stroke-dasharray: 1, 0;"></polygon></marker><g></g><g></g><g></g><g><g id="mermaid-56-node_0" data-look="classic" transform="translate(98.1953125, 55)"><path style="" d="M0 0 
     a19.96687545776367,19.96687545776367 1 0,0 33.27812576293945,-6.4
     a19.96687545776367,19.96687545776367 1 0,0 33.27812576293945,0
     a19.96687545776367,19.96687545776367 1 0,0 33.27812576293945,0
@@ -178,14 +178,14 @@ mermaidmindmap
 
 ### Cloud
 
-##### Code
+##### Code:
 
 ```
 mermaidmindmap
     id)I am a cloud(
 ```
 
-<svg id="mermaid-60" width="100%" xmlns="http://www.w3.org/2000/svg" style="max-width: 143.21898651123047px;" viewBox="7.269340515136719 6.441516876220703 143.21898651123047 101.05596160888672" role="graphics-document document" aria-roledescription="mindmap"><g><marker id="mermaid-60_mindmap-pointEnd" viewBox="0 0 10 10" refX="5" refY="5" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker><marker id="mermaid-60_mindmap-pointStart" viewBox="0 0 10 10" refX="4.5" refY="5" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 5 L 10 10 L 10 0 z" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker><marker id="mermaid-60_mindmap-pointEnd-margin" viewBox="0 0 11.5 14" refX="11.5" refY="7" markerUnits="userSpaceOnUse" markerWidth="10.5" markerHeight="14" orient="auto"><path d="M 0 0 L 11.5 7 L 0 14 z" style="stroke-width: 0; stroke-dasharray: 1, 0;"></path></marker><marker id="mermaid-60_mindmap-pointStart-margin" viewBox="0 0 11.5 14" refX="1" refY="7" markerUnits="userSpaceOnUse" markerWidth="11.5" markerHeight="14" orient="auto"><polygon points="0,7 11.5,14 11.5,0" style="stroke-width: 0; stroke-dasharray: 1, 0;"></polygon></marker><g></g><g></g><g></g><g><g id="mermaid-60-node_0" data-look="classic" transform="translate(76.60949325561523, 55.52798080444336)"><path style="" d="M0 0
+<svg id="mermaid-60" width="100%" xmlns="http://www.w3.org/2000/svg" style="max-width: 143.21898651123047px;" viewBox="7.269340515136719 6.441516876220703 143.21898651123047 101.05596160888672" role="graphics-document document" aria-roledescription="mindmap"><g><marker id="mermaid-60_mindmap-pointEnd" viewBox="0 0 10 10" refX="5" refY="5" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker><marker id="mermaid-60_mindmap-pointStart" viewBox="0 0 10 10" refX="4.5" refY="5" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 5 L 10 10 L 10 0 z" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker><marker id="mermaid-60_mindmap-pointEnd-margin" viewBox="0 0 11.5 14" refX="11.5" refY="7" markerUnits="userSpaceOnUse" markerWidth="10.5" markerHeight="14" orient="auto"><path d="M 0 0 L 11.5 7 L 0 14 z" style="stroke-width: 0; stroke-dasharray: 1, 0;"></path></marker><marker id="mermaid-60_mindmap-pointStart-margin" viewBox="0 0 11.5 14" refX="1" refY="7" markerUnits="userSpaceOnUse" markerWidth="11.5" markerHeight="14" orient="auto"><polygon points="0,7 11.5,14 11.5,0" style="stroke-width: 0; stroke-dasharray: 1, 0;"></polygon></marker><g></g><g></g><g></g><g><g id="mermaid-60-node_0" data-look="classic" transform="translate(76.60949325561523, 55.52798080444336)"><path style="" d="M0 0 
     a14.685000228881835,14.685000228881835 0 0,1 24.475000381469727,-9.790000152587892
     a34.26500053405761,34.26500053405761 1 0,1 39.16000061035157,-9.790000152587892
     a24.475000381469727,24.475000381469727 1 0,1 34.26500053405761,19.580000305175783
@@ -203,7 +203,7 @@ mermaidmindmap
 
 ### Hexagon
 
-##### Code
+##### Code:
 
 ```
 mermaidmindmap
@@ -214,7 +214,7 @@ mermaidmindmap
 
 ### Default
 
-##### Code
+##### Code:
 
 ```
 mermaidmindmap
@@ -242,7 +242,7 @@ More shapes will be added, beginning with the shapes available in flowcharts.
 
 As with flowcharts you can add icons to your nodes but with an updated syntax. The styling for the font based icons are added during the integration so that they are available for the web page. *This is not something a diagram author can do but has to be done with the site administrator or the integrator*. Once the icon fonts are in place you add them to the mind map nodes using the `::icon()` syntax. You place the classes for the icon within the parenthesis like in the following example where icons for material design and [Font Awesome 5](https://fontawesome.com/v5/search?o=r&m=free) are displayed. The intention is that this approach should be used for all diagrams supporting icons. **Experimental feature:** This wider scope is also the reason Mindmaps are experimental as this syntax and approach could change.
 
-##### Code
+##### Code:
 
 ```
 mermaidmindmap
@@ -281,7 +281,7 @@ mermaidmindmap
 
 Again the syntax for adding classes is similar to flowcharts. You can add classes using a triple colon following a number of css classes separated by space. In the following example one of the nodes has two custom classes attached urgent turning the background red and the text white and large increasing the font size:
 
-##### Code
+##### Code:
 
 ```
 mermaidmindmap
@@ -332,7 +332,7 @@ mindmap
 
 This outline is unclear as `B` clearly is a child of `A` but when we move on to `C` the clarity is lost. `C` is neither a child of `B` with a higher indentation nor does it have the same indentation as `B`. The only thing that is clear is that the first node with smaller indentation, indicating a parent, is A. Then Mermaid relies on this known truth and compensates for the unclear indentation and selects `A` as a parent of `C` leading till the same diagram with `B` and `C` as siblings.
 
-##### Code
+##### Code:
 
 ```
 mermaidmindmap
@@ -392,7 +392,7 @@ Root
 
 The "Markdown Strings" feature enhances mind maps by offering a more versatile string type, which supports text formatting options such as bold and italics, and automatically wraps text within labels.
 
-##### Code
+##### Code:
 
 ```
 mermaidmindmap
@@ -410,10 +410,10 @@ Formatting:
 - For bold text, use double asterisks \*\* before and after the text.
 - For italics, use single asterisks \* before and after the text.
 - With traditional strings, you needed to add  
- tags for text to wrap in nodes. However, markdown strings automatically wrap text when it becomes too long and allows you to start a new line by simply using a newline character instead of a  
- tag.
+	tags for text to wrap in nodes. However, markdown strings automatically wrap text when it becomes too long and allows you to start a new line by simply using a newline character instead of a  
+	tag.
 
-## Integrating with your library/website
+## Integrating with your library/website.
 
 Mindmap uses the experimental lazy loading & async rendering features which could change in the future. From version 9.4.0 this diagram is included in mermaid but use lazy loading in order to keep the size of mermaid down. This is important in order to be able to add additional diagrams going forward.
 

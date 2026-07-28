@@ -36,7 +36,7 @@ initialized by address_poc.py`. The referenced code (`.crewai/address_poc.py`,
 `address_tool.py`) is **not present in the repository** — find returns nothing.
 
 | Coord | Title it claimed | `authority:` line (as written) |
-| --- | --- | --- |
+|---|---|---|
 | `100` | JFAC Crew — Run Index / "Entrypoint" | **`LOGAN`** *(falsely claimed — a granted standing never given)* |
 | `101` | Budget Scout — State | `crewai/address-space` |
 | `102` | Legislative Tracker — State | `crewai/address-space` |

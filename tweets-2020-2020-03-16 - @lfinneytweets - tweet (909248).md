@@ -17,11 +17,10 @@ related:
   - lfinneytweets
 ---
 
-@IdahoCounties @reclaimID <https://t.co/fXBG2W61Hx>
+@IdahoCounties @reclaimID https://t.co/fXBG2W61Hx
 
 ## Links
-
-- <https://x.com/_ryan_blake/status/1239638110398558219>
+- https://x.com/_ryan_blake/status/1239638110398558219
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

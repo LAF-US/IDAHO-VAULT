@@ -7,6 +7,5 @@ related:
 authority: LOGAN
 ---
 Residence: Meridian
-
-- House member, House Health and Welfare chair
-- father of Lori Den Hartog
+- House member, House Health and Welfare chair 
+- father of Lori Den Hartog 

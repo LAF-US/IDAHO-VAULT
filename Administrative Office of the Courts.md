@@ -5,4 +5,4 @@ related:
 - State Court System
 authority: LOGAN
 ---
-Idaho Supreme Court administrative office for the State Court System
+Idaho Supreme Court administrative office for the State Court System 

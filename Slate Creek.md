@@ -6,4 +6,4 @@ related:
 - chronic wasting disease
 authority: LOGAN
 ---
-Idaho County drainage in Game Management Unit 14 where chronic wasting disease was first detected.
+Idaho County drainage in Game Management Unit 14 where chronic wasting disease was first detected. 

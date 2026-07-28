@@ -83,7 +83,6 @@ authority: LOGAN
 Supported by IACI for 2024 Idaho Legislature elections.
 
 >_The Idaho Prosperity Fund endorses_ **NAME** _for_ **DISTRICT** SEAT. NAME _is pro-business, pro-education, and pro-investment in Idaho’s infrastructure.
->
 >- Enhancing Economic Opportunity
 >- Empowering Parents & Students
 >- Investing in Transportation & Infrastructure_

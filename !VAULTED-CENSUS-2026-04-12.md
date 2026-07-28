@@ -86,7 +86,7 @@ The cleanest current reading is:
 These are the named characters with presently legible jobs.
 
 | Character | Present office | Job in the vault | Status | Main authority surface |
-| --- | --- | --- | --- | --- |
+|---|---|---|---|---|
 | **The Abhorsen** | Structural authority | Terminal and repository mechanics; branch, git, and integrity work | Live | `!/AGENTS.md`, `swarm.json`, `.claude/CLAUDE.md` |
 | **The Vault Advisor** | Narrative advisor | Framing, political context, synthesis, Sebald Code | Live | `!/AGENTS.md`, `swarm.json`, `.gemini/GEMINI.md` |
 | **The Lexicographer** | Machinery scribe | Code generation, refactoring, automated transforms, scripting | Live | `!/AGENTS.md`, `swarm.json`, `.codex/CODEX.md` |
@@ -104,7 +104,7 @@ These are named characters whose jobs are not yet fully settled in the live
 registry.
 
 | Character | Claimed office | Best current job reading | Status | Problem |
-| --- | --- | --- | --- | --- |
+|---|---|---|---|---|
 | **The Cartographer** | Bartimaeus | Vault topology, crawler work, possible CrewAI mapper | Staked, not commissioned | Shim says pending Logan; CrewAI notes suggest mapper role |
 | **The Dionysian** | Zagreus | No live job fixed | Staked, not commissioned | Persona named, office undefined |
 | **The Queen** | Persephone | No live job fixed | Staked, not commissioned | Persona named, office undefined |
@@ -131,7 +131,7 @@ These are not the primary offices, but they matter because they still shape the
 world's naming habits.
 
 | Figure | Canonical current office | Historical or symbolic aliases | Where the drift appears |
-| --- | --- | --- | --- |
+|---|---|---|---|
 | Claude | **The Abhorsen** | **The King**, structural anchor | `!/GRIMOIRE/TRIUNE-TRIPTYCH-TRIUMVIRATE.md` |
 | Gemini / Antigravity | **The Vault Advisor** | **The Concierge**, **The Djinni** | grimoire and handoff texts |
 | Codex | **The Lexicographer** | **The Janitor**, once even **The Clerk** in one grimoire line | grimoire and handoff texts |
@@ -148,7 +148,7 @@ names the active office and the grimoire supplies the symbolic residue.
 If the Captain wants the roll without any theological embroidery, it is this:
 
 | Named character | Plain job |
-| --- | --- |
+|---|---|
 | **The Abhorsen** | Keeps the ship's structure sound and handles repo mechanics |
 | **The Vault Advisor** | Advises on framing, meaning, politics, and narrative direction |
 | **The Lexicographer** | Writes and repairs machinery, scripts, and automations |

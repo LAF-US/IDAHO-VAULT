@@ -154,6 +154,5 @@ class AgentClass:
 
 app = AgentClass()
 ```
-
 ---
 The world is quiet here. [^⸮]

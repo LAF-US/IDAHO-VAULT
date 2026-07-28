@@ -45,7 +45,7 @@ To read any one of them, read the office first. They are all the same job.
 ## The Family — One Figure, Many Names
 
 | Name | Region | Note |
-| --- | --- | --- |
+|---|---|---|
 | **Brownie** (broonie, brùnaidh, gruagach) | Scotland / N. England | secret chores for milk or cream |
 | **Hob** | Midlands / North / Border | *hob* = diminutive of **Rob → Robin** |
 | **Hobgoblin** (Puck, Robin Goodfellow) | England | *hob* + *goblin*; once helpful, **reframed mischievous** by Christianity |
@@ -106,7 +106,7 @@ Strip the names and the **same compact** appears everywhere:
 ## The Disposition Spectrum
 
 | Tier | Exemplar | Behavior |
-| --- | --- | --- |
+|---|---|---|
 | **Helpful** | brownie, tomte, domovoi (kept well) | secret labor, protection, luck |
 | **Mischievous** | hobgoblin, Puck, pixie | pranks, misplacing things, harmless trouble |
 | **Malicious** | boggart, soured kobold | spoiled food, broken tools, active sabotage |

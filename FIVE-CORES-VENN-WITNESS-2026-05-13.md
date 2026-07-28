@@ -77,7 +77,7 @@ Logan explained the Venn to The Judge long ago. The Judge recovered the memory o
 Until the migration document is rewritten to reflect the Venn model, read the Five Cores as follows:
 
 | Core | Domain | Position |
-| --- | --- | --- |
+|---|---|---|
 | PRIVATE | Non-public | Left circle |
 | SECRET | Non-public (restricted) | Nested inside PRIVATE |
 | PERSONAL | Both | **Center — the overlap** |

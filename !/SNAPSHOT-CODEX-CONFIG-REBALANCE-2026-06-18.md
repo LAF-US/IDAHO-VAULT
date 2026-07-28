@@ -118,7 +118,7 @@ After the edit:
 - `config.toml` was parsed with Python `tomllib`.
 - The parsed sandbox mode was `workspace-write`.
 - The parsed trusted project list contained only the IDAHO-VAULT path.
-- A search for remaining allowed shell-wrapper rules containing `git` returned
+- A search for remaining allowed shell-wrapper rules containing `git ` returned
   no matches.
 - A direct-rule scan showed the dangerous Git prefixes as denied and the exact
   read-only branch inspection exceptions as allowed.

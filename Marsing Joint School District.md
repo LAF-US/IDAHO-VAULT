@@ -5,4 +5,4 @@ related:
 - Owyhee County
 authority: LOGAN
 ---
-Marsing, Owyhee County
+Marsing, Owyhee County 

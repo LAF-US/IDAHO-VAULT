@@ -4,4 +4,4 @@ related:
 - costs
 ---
 
-costs
+costs 

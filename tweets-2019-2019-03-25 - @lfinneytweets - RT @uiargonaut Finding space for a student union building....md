@@ -16,6 +16,6 @@ related:
 ---
 
 RT @uiargonaut: Finding space for a student union building should be a priority at UI
-Read Lindsay's full opinion here. <https://t.co/yF5vZE…>
+Read Lindsay's full opinion here. https://t.co/yF5vZE…
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1109986340987269120)

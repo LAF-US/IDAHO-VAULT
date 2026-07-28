@@ -18,7 +18,6 @@
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Jan. 30 Pisani.docx
 C:\Users\loganf\Documents\IDAHO-VAULT\Jan. 30 Pisani__src_scratch-folder__f944a9a1.docx
 ``n
-
 ### Group 2: Idaho Press Club v State Legislature (2006)__src_scratch-folder__f7ea2777.md
 
 **Size**: 2.1 KB | **Hash**: `997A1ECDCDF3AE05C402329A82053F68` | **Files**: 2
@@ -26,7 +25,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Jan. 30 Pisani__src_scratch-folder__f944a9
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Idaho Press Club v State Legislature (2006)__src_scratch-folder__f7ea2777.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Idaho Press Club v State Legislature (2007).md
 ``n
-
 ### Group 3: 2026-03-10-Woodward-and-Cook (2).txt
 
 **Size**: 11.52 KB | **Hash**: `74DD475710611AF9CE7560B507D536C6` | **Files**: 3
@@ -35,7 +33,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Idaho Press Club v State Legislature (2007
 C:\Users\loganf\Documents\IDAHO-VAULT\2026-03-10-Woodward-and-Cook.txt
 C:\Users\loganf\Documents\IDAHO-VAULT\Mar 11 at 3-46 PM.txt
 ``n
-
 ### Group 4: 1937 FDR - Boise Motorcade 1 1.md
 
 **Size**: 0.74 KB | **Hash**: `1B0E41F51DCEE1649F305EC464BC62F1` | **Files**: 3
@@ -44,7 +41,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Mar 11 at 3-46 PM.txt
 C:\Users\loganf\Documents\IDAHO-VAULT\1937 FDR - Boise Motorcade 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\1937 FDR - Boise Motorcade.md
 ``n
-
 ### Group 5: Screenshot_20260404-142139-20260404-153428.png
 
 **Size**: 57.73 KB | **Hash**: `9766917BD3C59C19130840BA8DDE5507` | **Files**: 2
@@ -52,7 +48,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\1937 FDR - Boise Motorcade.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Screenshot_20260404-142139-20260404-153428.png
 C:\Users\loganf\Documents\IDAHO-VAULT\Screenshot_20260404-142139.png
 ``n
-
 ### Group 6: BobbyMontoya023.jpg
 
 **Size**: 3043.37 KB | **Hash**: `350F6BA6265450863C23597B3E204EF1` | **Files**: 2
@@ -60,7 +55,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Screenshot_20260404-142139.png
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya023.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya023__src_scratch-folder__c79486a1.jpg
 ``n
-
 ### Group 7: 1930 Borah - Hoover 1 1.md
 
 **Size**: 0.52 KB | **Hash**: `2A4B733F38071CFEFC2E7E1D142BCF9B` | **Files**: 2
@@ -68,7 +62,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya023__src_scratch-folder__c7948
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\1930 Borah - Hoover 1 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\1930 Borah - Hoover 1.md
 ``n
-
 ### Group 8: sort_audit (2).py
 
 **Size**: 16.78 KB | **Hash**: `BE2D127741EB1709C0CA3E850224901F` | **Files**: 4
@@ -78,7 +71,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\sort_audit.py
 C:\Users\loganf\Documents\IDAHO-VAULT\sort_audit__src_scratch-folder__cd1728fd.py
 C:\Users\loganf\Documents\IDAHO-VAULT\sort_audit__src_scratch-folder__ef10c025.py
 ``n
-
 ### Group 9: EXcUnzbUcAA2rBt.jpeg
 
 **Size**: 693.21 KB | **Hash**: `9EE0E704006DD39561C096272B27B51E` | **Files**: 2
@@ -86,7 +78,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\sort_audit__src_scratch-folder__ef10c025.p
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\EXcUnzbUcAA2rBt.jpeg
 C:\Users\loganf\Documents\IDAHO-VAULT\square.jpeg
 ``n
-
 ### Group 10: master-pnp-npcc-01800-01804u (1).tif
 
 **Size**: 21102.33 KB | **Hash**: `AAEF1800E595F9B8BE06C1F06F32D10E` | **Files**: 2
@@ -94,7 +85,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\square.jpeg
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\master-pnp-npcc-01800-01804u (1).tif
 C:\Users\loganf\Documents\IDAHO-VAULT\master-pnp-npcc-01800-01804u.tif
 ``n
-
 ### Group 11: Idaho Capital Sun (2).md
 
 **Size**: 0.92 KB | **Hash**: `477EE2BCA9AE86E294E8BAB8D13E5F1F` | **Files**: 2
@@ -102,7 +92,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\master-pnp-npcc-01800-01804u.tif
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Idaho Capital Sun (2).md
 C:\Users\loganf\Documents\IDAHO-VAULT\Idaho Capital Sun__src_scratch-folder__d591cebf.md
 ``n
-
 ### Group 12: G2RNKVobAAAzNtZ (2).jpg
 
 **Size**: 197.07 KB | **Hash**: `82570A14638F8C80C2ED0B49715884B2` | **Files**: 3
@@ -111,7 +100,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Idaho Capital Sun__src_scratch-folder__d59
 C:\Users\loganf\Documents\IDAHO-VAULT\G2RNKVobAAAzNtZ.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\G2RNKVobAAAzNtZ__src_scratch-folder__a2e06a2c.jpg
 ``n
-
 ### Group 13: BobbyMontoya020.jpg
 
 **Size**: 3293.51 KB | **Hash**: `D2E0B61E306E8EE97E7169E690D7DB26` | **Files**: 2
@@ -119,7 +107,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\G2RNKVobAAAzNtZ__src_scratch-folder__a2e06
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya020.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya020__src_scratch-folder__f4fce7f2.jpg
 ``n
-
 ### Group 14: SCRATCH--93486111-ecff-80a4-5e44-162ed053c646-2026-01-29_09-00-40-loganf.prproj
 
 **Size**: 5410.87 KB | **Hash**: `4B42891F278137686B6893FDEEACE039` | **Files**: 2
@@ -127,7 +114,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya020__src_scratch-folder__f4fce
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--93486111-ecff-80a4-5e44-162ed053c646-2026-01-29_09-00-40-loganf.prproj
 C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--93486111-ecff-80a4-5e44-162ed053c646-2026-01-29_09-00-40-loganf__src_scratch-folder__11d3fb68.prproj
 ``n
-
 ### Group 15: tmpAEtoAMEProject-Master.aep
 
 **Size**: 2937.24 KB | **Hash**: `8BA8D115D53A7667D004EBC7279926FF` | **Files**: 2
@@ -135,7 +121,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--93486111-ecff-80a4-5e44-162ed053c
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\tmpAEtoAMEProject-Master.aep
 C:\Users\loganf\Documents\IDAHO-VAULT\tmpAEtoAMEProject-Master_1.aep
 ``n
-
 ### Group 16: 1921 Borah - Necessity for Naval Disarmament 1 1.md
 
 **Size**: 10.03 KB | **Hash**: `BC879B45F1A66BD36FE40F999E4DDA07` | **Files**: 2
@@ -143,7 +128,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\tmpAEtoAMEProject-Master_1.aep
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\1921 Borah - Necessity for Naval Disarmament 1 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\1921 Borah - Necessity for Naval Disarmament 1.md
 ``n
-
 ### Group 17: Idaho Reports Logo vert white - RGB.ai
 
 **Size**: 363.33 KB | **Hash**: `5D5DBA3D6D9350812DE10843EEE1F0E0` | **Files**: 2
@@ -151,7 +135,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\1921 Borah - Necessity for Naval Disarmame
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Idaho Reports Logo vert white - RGB.ai
 C:\Users\loganf\Documents\IDAHO-VAULT\Idaho Reports Logo vert white - RGB__src_scratch-folder__521cf6ab.ai
 ``n
-
 ### Group 18: Linear - agent chat - Update processes and restart stalled tasks 1.md
 
 **Size**: 7.01 KB | **Hash**: `9A7B8D6EB323E4809A38DC3098FBE670` | **Files**: 2
@@ -159,7 +142,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Idaho Reports Logo vert white - RGB__src_s
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Linear - agent chat - Update processes and restart stalled tasks 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Linear - agent chat - Update processes and restart stalled tasks.md
 ``n
-
 ### Group 19: Vol. 01 Issue 10 - Understanding Cultural Expression 1.md
 
 **Size**: 0.16 KB | **Hash**: `3BFEB96FCEE2C3A04B848692583BE26B` | **Files**: 3
@@ -168,7 +150,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Linear - agent chat - Update processes and
 C:\Users\loganf\Documents\IDAHO-VAULT\Vol. 01 Issue 10 - Understanding Cultural Expression 2.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Vol. 01 Issue 10 - Understanding Cultural Expression.md
 ``n
-
 ### Group 20: GEM.PLT.100.SpecialProgramPlatesCounts-20220901.xlsx
 
 **Size**: 7.99 KB | **Hash**: `8687779568F444536B5193D4DA4DF7AE` | **Files**: 2
@@ -176,7 +157,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Vol. 01 Issue 10 - Understanding Cultural 
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\GEM.PLT.100.SpecialProgramPlatesCounts-20220901.xlsx
 C:\Users\loganf\Documents\IDAHO-VAULT\GEM.PLT.100.SpecialProgramPlatesCounts-20220901__src_scratch-folder__5df841c3.xlsx
 ``n
-
 ### Group 21: SCRATCH--55aff571-55fe-e103-c089-36bea65e964c-2026-01-15_09-54-28-loganf.prproj
 
 **Size**: 3995.69 KB | **Hash**: `59AC56FB25642D3F5AC94C49F42AEA78` | **Files**: 2
@@ -184,7 +164,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\GEM.PLT.100.SpecialProgramPlatesCounts-202
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--55aff571-55fe-e103-c089-36bea65e964c-2026-01-15_09-54-28-loganf.prproj
 C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--55aff571-55fe-e103-c089-36bea65e964c-2026-01-15_09-54-28-loganf__src_scratch-folder__acf3b2aa.prproj
 ``n
-
 ### Group 22: Jim Jones (2)__src_scratch-folder__a9cb20ac.md
 
 **Size**: 2.7 KB | **Hash**: `999B874D01070C36BC5453346ACBF064` | **Files**: 2
@@ -192,7 +171,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--55aff571-55fe-e103-c089-36bea65e9
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Jim Jones (2)__src_scratch-folder__a9cb20ac.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Jim Jones__src_scratch-folder__ac1c75fa.md
 ``n
-
 ### Group 23: Joint Finance-Appropriations Committee (2).md
 
 **Size**: 3 KB | **Hash**: `E3A8D1428006FDD4AB9A4DB69D521F92` | **Files**: 2
@@ -200,7 +178,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Jim Jones__src_scratch-folder__ac1c75fa.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Joint Finance-Appropriations Committee (2).md
 C:\Users\loganf\Documents\IDAHO-VAULT\Joint Finance-Appropriations Committee__src_scratch-folder__31dce1ef.md
 ``n
-
 ### Group 24: run_state.md
 
 **Size**: 0.54 KB | **Hash**: `6CE20C6B4D273467F78A6A258D9D695A` | **Files**: 2
@@ -208,7 +185,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Joint Finance-Appropriations Committee__sr
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\!\swarm 1\state\run_state.md
 C:\Users\loganf\Documents\IDAHO-VAULT\!\swarm 1\state\archive\run_state-20260317-101538.md
 ``n
-
 ### Group 25: 2020 census.md
 
 **Size**: 0.06 KB | **Hash**: `F49EBDE0C2A1BACAE0C01E5816064091` | **Files**: 2
@@ -216,7 +192,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\!\swarm 1\state\archive\run_state-20260317
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\2020 census.md
 C:\Users\loganf\Documents\IDAHO-VAULT\2030 census.md
 ``n
-
 ### Group 26: SCRATCH--93486111-ecff-80a4-5e44-162ed053c646-2026-01-28_23-58-57-loganf.prproj
 
 **Size**: 5418.01 KB | **Hash**: `E9A13640CDF510363724E1EA058ECD81` | **Files**: 2
@@ -224,7 +199,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\2030 census.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--93486111-ecff-80a4-5e44-162ed053c646-2026-01-28_23-58-57-loganf.prproj
 C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--93486111-ecff-80a4-5e44-162ed053c646-2026-01-28_23-58-57-loganf__src_scratch-folder__65ddc451.prproj
 ``n
-
 ### Group 27: Wendy Horman (2)__src_scratch-folder__34c3b31b.md
 
 **Size**: 1.59 KB | **Hash**: `3B206603376877A98D895325FD00E935` | **Files**: 2
@@ -232,7 +206,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--93486111-ecff-80a4-5e44-162ed053c
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Wendy Horman (2)__src_scratch-folder__34c3b31b.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Wendy Horman__src_scratch-folder__51e4570f.md
 ``n
-
 ### Group 28: Wallowa-Whiteman National Forest__src_scratch-folder__33324f03.md
 
 **Size**: 0.2 KB | **Hash**: `32AE7CC7D49759DA7899FDD7F2E5FF1B` | **Files**: 2
@@ -240,7 +213,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Wendy Horman__src_scratch-folder__51e4570f
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Wallowa-Whiteman National Forest__src_scratch-folder__33324f03.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Wallowa-Whiteman National Forest__src_scratch-folder__846c72e9.md
 ``n
-
 ### Group 29: Lake Bryan__src_scratch-folder__2cfd4ae3.md
 
 **Size**: 0.13 KB | **Hash**: `D35F2A10E21FAB6E36E895124B7082C0` | **Files**: 2
@@ -248,7 +220,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Wallowa-Whiteman National Forest__src_scra
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Lake Bryan__src_scratch-folder__2cfd4ae3.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Lake Bryan__src_scratch-folder__70b3125c.md
 ``n
-
 ### Group 30: Lower Granite Lake__src_scratch-folder__21cd162a.md
 
 **Size**: 0.13 KB | **Hash**: `D0D1CF6BFFAD8352ECB6326BF0F4EE1B` | **Files**: 2
@@ -256,7 +227,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Lake Bryan__src_scratch-folder__70b3125c.m
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Lower Granite Lake__src_scratch-folder__21cd162a.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Lower Granite Lake__src_scratch-folder__faaea3b6.md
 ``n
-
 ### Group 31: Vol. 01 Issue 03 - 'Handling Harassment' 1.md
 
 **Size**: 0.15 KB | **Hash**: `C073D3F4C0A53833C09E84462115E17D` | **Files**: 3
@@ -265,7 +235,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Lower Granite Lake__src_scratch-folder__fa
 C:\Users\loganf\Documents\IDAHO-VAULT\Vol. 01 Issue 03 - 'Handling Harassment' 2.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Vol. 01 Issue 03 - 'Handling Harassment'.md
 ``n
-
 ### Group 32: SCRATCH--93486111-ecff-80a4-5e44-162ed053c646-2026-01-26_10-18-26-loganf.prproj
 
 **Size**: 4204.24 KB | **Hash**: `E937C8BCB1A0AA0EB52DFC036CDF87BC` | **Files**: 2
@@ -273,7 +242,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Vol. 01 Issue 03 - 'Handling Harassment'.m
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--93486111-ecff-80a4-5e44-162ed053c646-2026-01-26_10-18-26-loganf.prproj
 C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--93486111-ecff-80a4-5e44-162ed053c646-2026-01-26_10-18-26-loganf__src_scratch-folder__37f85f64.prproj
 ``n
-
 ### Group 33: 1975 Church - The abyss from which there is no return 1 1.md
 
 **Size**: 2.01 KB | **Hash**: `116EE7A3A0A99647AD79399A632FED2C` | **Files**: 3
@@ -282,7 +250,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--93486111-ecff-80a4-5e44-162ed053c
 C:\Users\loganf\Documents\IDAHO-VAULT\1975 Church - The abyss from which there is no return 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\1975 Church - The abyss from which there is no return.md
 ``n
-
 ### Group 34: aexd2ep1.3ez
 
 **Size**: 1418.21 KB | **Hash**: `AC29568A121F897CC3759C1596CCABDA` | **Files**: 5
@@ -293,7 +260,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\iuycjw3e.tdz
 C:\Users\loganf\Documents\IDAHO-VAULT\wrvjr3p2.ky4
 C:\Users\loganf\Documents\IDAHO-VAULT\zsqssmjf.fna
 ``n
-
 ### Group 35: 1940 Borah - 'Lion of Idaho' Laid to Rest 1 1.md
 
 **Size**: 2.5 KB | **Hash**: `A5EA3987C3A4B79F488C40B0118D2BCC` | **Files**: 3
@@ -302,7 +268,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\zsqssmjf.fna
 C:\Users\loganf\Documents\IDAHO-VAULT\1940 Borah - 'Lion of Idaho' Laid to Rest 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\1940 Borah - 'Lion of Idaho' Laid to Rest.md
 ``n
-
 ### Group 36: Joe Malloy.md
 
 **Size**: 0.15 KB | **Hash**: `3346318155300A1CB79A512B84C2D6E8` | **Files**: 3
@@ -311,7 +276,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\1940 Borah - 'Lion of Idaho' Laid to Rest.
 C:\Users\loganf\Documents\IDAHO-VAULT\Randy Westlund.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Samantha Stiegleder.md
 ``n
-
 ### Group 37: Lake Sacajawea__src_scratch-folder__4ec6eab0.md
 
 **Size**: 0.13 KB | **Hash**: `1A1DDC6C3E1C8EE33A4E40AA8E4EE428` | **Files**: 2
@@ -319,7 +283,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Samantha Stiegleder.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Lake Sacajawea__src_scratch-folder__4ec6eab0.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Lake Sacajawea__src_scratch-folder__71c69de7.md
 ``n
-
 ### Group 38: Milner dam__src_scratch-folder__4bcb31d8.md
 
 **Size**: 0.13 KB | **Hash**: `0AED2E1AAB0914A68211B41407A92B97` | **Files**: 2
@@ -327,7 +290,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Lake Sacajawea__src_scratch-folder__71c69d
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Milner dam__src_scratch-folder__4bcb31d8.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Milner dam__src_scratch-folder__91ee0bf5.md
 ``n
-
 ### Group 39: Vol. 01 Issue 11 - That Moment, 10 Years Later 1.md
 
 **Size**: 0.13 KB | **Hash**: `9EF2A323FFD22F2DB7CAD23C1CA03D19` | **Files**: 3
@@ -336,7 +298,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Milner dam__src_scratch-folder__91ee0bf5.m
 C:\Users\loganf\Documents\IDAHO-VAULT\Vol. 01 Issue 11 - That Moment, 10 Years Later 2.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Vol. 01 Issue 11 - That Moment, 10 Years Later.md
 ``n
-
 ### Group 40: SCRATCH--93486111-ecff-80a4-5e44-162ed053c646-2026-01-28_23-11-02-loganf.prproj
 
 **Size**: 5404.01 KB | **Hash**: `934A096CA63C1AE2534A02ABA695103E` | **Files**: 2
@@ -344,7 +305,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Vol. 01 Issue 11 - That Moment, 10 Years L
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--93486111-ecff-80a4-5e44-162ed053c646-2026-01-28_23-11-02-loganf.prproj
 C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--93486111-ecff-80a4-5e44-162ed053c646-2026-01-28_23-11-02-loganf__src_scratch-folder__2bdd2372.prproj
 ``n
-
 ### Group 41: BobbyMontoya021.jpg
 
 **Size**: 4308.3 KB | **Hash**: `00BF03B2B407B60E90B9E5DACE2814CC` | **Files**: 2
@@ -352,7 +312,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--93486111-ecff-80a4-5e44-162ed053c
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya021.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya021__src_scratch-folder__976c62c2.jpg
 ``n
-
 ### Group 42: GEM.PLT.100.SpecialProgramPlatesCounts-20230701.xlsx
 
 **Size**: 6.74 KB | **Hash**: `BFA6A8C4C951720B2E48EAD8B0C0032F` | **Files**: 2
@@ -360,7 +319,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya021__src_scratch-folder__976c6
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\GEM.PLT.100.SpecialProgramPlatesCounts-20230701.xlsx
 C:\Users\loganf\Documents\IDAHO-VAULT\GEM.PLT.100.SpecialProgramPlatesCounts-20230701__src_scratch-folder__0f26a32e.xlsx
 ``n
-
 ### Group 43: Jason Monks (2)__src_scratch-folder__ff2202c5.md
 
 **Size**: 1.04 KB | **Hash**: `CD0E01BD288F4BD85F30AB0D9DC753E4` | **Files**: 2
@@ -368,7 +326,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\GEM.PLT.100.SpecialProgramPlatesCounts-202
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Jason Monks (2)__src_scratch-folder__ff2202c5.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Jason Monks__src_scratch-folder__a04e5b78.md
 ``n
-
 ### Group 44: ACLU-ID statement on HB 822 passing Senate.docx
 
 **Size**: 34.6 KB | **Hash**: `3EAE44CEF7F7D277042BB111010E6EFC` | **Files**: 2
@@ -376,7 +333,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Jason Monks__src_scratch-folder__a04e5b78.
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\ACLU-ID statement on HB 822 passing Senate.docx
 C:\Users\loganf\Documents\IDAHO-VAULT\ACLU-ID statement on HB 822 passing Senate__src_scratch-folder__494bc502.docx
 ``n
-
 ### Group 45: G-joN2xXMAEZHer (2).jpg
 
 **Size**: 128.63 KB | **Hash**: `88ECB54888D797C2A969CD65F5CBB494` | **Files**: 3
@@ -385,7 +341,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\ACLU-ID statement on HB 822 passing Senate
 C:\Users\loganf\Documents\IDAHO-VAULT\G-joN2xXMAEZHer.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\G-joN2xXMAEZHer__src_scratch-folder__f412cd21.jpg
 ``n
-
 ### Group 46: lower four Snake River dams__src_scratch-folder__51071c44.md
 
 **Size**: 0.5 KB | **Hash**: `E5623DB6ABFB433EE90BCCD7B6C91348` | **Files**: 2
@@ -393,7 +348,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\G-joN2xXMAEZHer__src_scratch-folder__f412c
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\lower four Snake River dams__src_scratch-folder__51071c44.md
 C:\Users\loganf\Documents\IDAHO-VAULT\lower four Snake River dams__src_scratch-folder__fa4178d0.md
 ``n
-
 ### Group 47: Alaska.md
 
 **Size**: 0.09 KB | **Hash**: `CD4BEE9BF2BD3BFDEE7186DADD186DBD` | **Files**: 14
@@ -413,7 +367,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Ohio.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Rhode Island.md
 C:\Users\loganf\Documents\IDAHO-VAULT\South Carolina.md
 ``n
-
 ### Group 48: coots.md
 
 **Size**: 0.09 KB | **Hash**: `E3F34258A1933784E67F6F9A87BA63F4` | **Files**: 4
@@ -423,7 +376,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\ducks.md
 C:\Users\loganf\Documents\IDAHO-VAULT\geese.md
 C:\Users\loganf\Documents\IDAHO-VAULT\snipe.md
 ``n
-
 ### Group 49: 1938 E Roosevelt - My Day 1 1.md
 
 **Size**: 3.54 KB | **Hash**: `34AF7977D3C4C6A0E30DB6F04833B427` | **Files**: 3
@@ -432,7 +384,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\snipe.md
 C:\Users\loganf\Documents\IDAHO-VAULT\1938 E Roosevelt - My Day 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\1938 E Roosevelt - My Day.md
 ``n
-
 ### Group 50: G1szYX0aAAAMwAI (2).jpg
 
 **Size**: 221.53 KB | **Hash**: `4B436EBF333CBF389182496619737327` | **Files**: 3
@@ -441,7 +392,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\1938 E Roosevelt - My Day.md
 C:\Users\loganf\Documents\IDAHO-VAULT\G1szYX0aAAAMwAI.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\G1szYX0aAAAMwAI__src_scratch-folder__134d749e.jpg
 ``n
-
 ### Group 51: 2022-11-10 - Idaho Reports - 2022 Analysis Nature Abhors a Power Vacuum (2).md
 
 **Size**: 1.35 KB | **Hash**: `98008C8306A56F8498344CBEDCB1B91A` | **Files**: 2
@@ -449,7 +399,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\G1szYX0aAAAMwAI__src_scratch-folder__134d7
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\2022-11-10 - Idaho Reports - 2022 Analysis Nature Abhors a Power Vacuum (2).md
 C:\Users\loganf\Documents\IDAHO-VAULT\2022-11-10 - Idaho Reports - 2022 Analysis Nature Abhors a Power Vacuum__src_scratch-folder__a4bc36be.md
 ``n
-
 ### Group 52: May 26th lawmakers.docx
 
 **Size**: 21.79 KB | **Hash**: `5271FA88FFA281506868CC1BE19A1079` | **Files**: 2
@@ -457,7 +406,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\2022-11-10 - Idaho Reports - 2022 Analysis
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\May 26th lawmakers.docx
 C:\Users\loganf\Documents\IDAHO-VAULT\May 26th lawmakers__src_scratch-folder__9ec55324.docx
 ``n
-
 ### Group 53: 2026-03-10-Bruce (2).txt
 
 **Size**: 9.93 KB | **Hash**: `E00F752A885234D3B50A9E4059A0F784` | **Files**: 3
@@ -466,7 +414,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\May 26th lawmakers__src_scratch-folder__9e
 C:\Users\loganf\Documents\IDAHO-VAULT\2026-03-10-Bruce.txt
 C:\Users\loganf\Documents\IDAHO-VAULT\Mar 10 at 2-12 PM.txt
 ``n
-
 ### Group 54: Lower Monumental dam__src_scratch-folder__85b6c3c8.md
 
 **Size**: 0.22 KB | **Hash**: `6B47DD6F444F4D54F00C5B0106934F11` | **Files**: 2
@@ -474,7 +421,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Mar 10 at 2-12 PM.txt
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Lower Monumental dam__src_scratch-folder__85b6c3c8.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Lower Monumental dam__src_scratch-folder__e4cb8ffa.md
 ``n
-
 ### Group 55: St. Joe National Forest__src_scratch-folder__3bcb6c57.md
 
 **Size**: 0.22 KB | **Hash**: `B7C2293E392AEB2565769DEFC4ECA2A0` | **Files**: 2
@@ -482,7 +428,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Lower Monumental dam__src_scratch-folder__
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\St. Joe National Forest__src_scratch-folder__3bcb6c57.md
 C:\Users\loganf\Documents\IDAHO-VAULT\St. Joe National Forest__src_scratch-folder__98fea660.md
 ``n
-
 ### Group 56: SCRATCH--55aff571-55fe-e103-c089-36bea65e964c-2026-01-14_13-35-38-loganf.prproj
 
 **Size**: 3987.32 KB | **Hash**: `8FFA86E48EDDD9FEA2C22D205F469082` | **Files**: 2
@@ -490,7 +435,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\St. Joe National Forest__src_scratch-folde
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--55aff571-55fe-e103-c089-36bea65e964c-2026-01-14_13-35-38-loganf.prproj
 C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--55aff571-55fe-e103-c089-36bea65e964c-2026-01-14_13-35-38-loganf__src_scratch-folder__9712b426.prproj
 ``n
-
 ### Group 57: SCRATCH--55aff571-55fe-e103-c089-36bea65e964c-2026-01-21_19-04-33-loganf.prproj
 
 **Size**: 4108.8 KB | **Hash**: `24A21797F677D14DDD46D44E911F5040` | **Files**: 2
@@ -498,7 +442,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--55aff571-55fe-e103-c089-36bea65e9
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--55aff571-55fe-e103-c089-36bea65e964c-2026-01-21_19-04-33-loganf.prproj
 C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--55aff571-55fe-e103-c089-36bea65e964c-2026-01-21_19-04-33-loganf__src_scratch-folder__64049b47.prproj
 ``n
-
 ### Group 58: 6A-McCann-Lori.jpg
 
 **Size**: 787.91 KB | **Hash**: `F75820584423C24621772DDF13BA009D` | **Files**: 2
@@ -506,7 +449,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--55aff571-55fe-e103-c089-36bea65e9
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\6A-McCann-Lori.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\McCann.Lori_6A_5x7print.jpg
 ``n
-
 ### Group 59: Bliss dam__src_scratch-folder__09ac6d82.md
 
 **Size**: 0.14 KB | **Hash**: `E22600AF2837D09C1123F43DBF15C05D` | **Files**: 2
@@ -514,7 +456,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\McCann.Lori_6A_5x7print.jpg
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Bliss dam__src_scratch-folder__09ac6d82.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Bliss dam__src_scratch-folder__715c916a.md
 ``n
-
 ### Group 60: Brownlee reservoir__src_scratch-folder__04fd30de.md
 
 **Size**: 0.14 KB | **Hash**: `B89C997B462AACD46D3D8AE656423493` | **Files**: 2
@@ -522,7 +463,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Bliss dam__src_scratch-folder__715c916a.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Brownlee reservoir__src_scratch-folder__04fd30de.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Brownlee reservoir__src_scratch-folder__b85c8b3d.md
 ``n
-
 ### Group 61: Lake Herbert G. West__src_scratch-folder__bbb71c1b.md
 
 **Size**: 0.14 KB | **Hash**: `F637C6652518586B358DDDB58078FE9C` | **Files**: 2
@@ -530,7 +470,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Brownlee reservoir__src_scratch-folder__b8
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Lake Herbert G. West__src_scratch-folder__bbb71c1b.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Lake Herbert G. West__src_scratch-folder__cb1b7c2e.md
 ``n
-
 ### Group 62: Vol. 01 Issue 08 - unite against the world of conflict 1.md
 
 **Size**: 0.14 KB | **Hash**: `46ED8D0C63AC9B03D53923952AB5321A` | **Files**: 3
@@ -539,7 +478,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Lake Herbert G. West__src_scratch-folder__
 C:\Users\loganf\Documents\IDAHO-VAULT\Vol. 01 Issue 08 - unite against the world of conflict 2.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Vol. 01 Issue 08 - unite against the world of conflict.md
 ``n
-
 ### Group 63: SCRATCH_2026--81042faa-5852-6c21-e1d1-33799740166f-2026-03-10_11-54-03-loganf.prproj
 
 **Size**: 48.76 KB | **Hash**: `FA64B16CB2AD4C5B1398A6AB31320884` | **Files**: 2
@@ -547,7 +485,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Vol. 01 Issue 08 - unite against the world
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH_2026--81042faa-5852-6c21-e1d1-33799740166f-2026-03-10_11-54-03-loganf.prproj
 C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH_2026--81042faa-5852-6c21-e1d1-33799740166f-2026-03-10_11-54-03-loganf__src_scratch-folder__2cd773a7.prproj
 ``n
-
 ### Group 64: BobbyMontoya026.jpg
 
 **Size**: 1906.16 KB | **Hash**: `EF2BC91F50E2127F4D569E797B7E9C9D` | **Files**: 2
@@ -555,7 +492,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH_2026--81042faa-5852-6c21-e1d1-3379
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya026.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya026__src_scratch-folder__5b7a78e9.jpg
 ``n
-
 ### Group 65: Josh Tanner (2)__src_scratch-folder__038bc993.md
 
 **Size**: 1.5 KB | **Hash**: `76EEE89C58367BCFFB7225AABF437D8D` | **Files**: 2
@@ -563,7 +499,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya026__src_scratch-folder__5b7a7
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Josh Tanner (2)__src_scratch-folder__038bc993.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Josh Tanner__src_scratch-folder__1654d009.md
 ``n
-
 ### Group 66: SCRATCH--52adf93a-41a4-7b81-d564-c50bea31341e-2025-10-31_10-06-01-loganf.prproj
 
 **Size**: 1163.69 KB | **Hash**: `4AB6A4EAA31E79727AE518B8C84AFF6D` | **Files**: 2
@@ -571,7 +506,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Josh Tanner__src_scratch-folder__1654d009.
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--52adf93a-41a4-7b81-d564-c50bea31341e-2025-10-31_10-06-01-loganf.prproj
 C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--52adf93a-41a4-7b81-d564-c50bea31341e-2025-10-31_10-06-01-loganf__src_scratch-folder__04872e22.prproj
 ``n
-
 ### Group 67: GEM.PLT.100.SpecialProgramPlatesCounts-20220701.xlsx
 
 **Size**: 7.96 KB | **Hash**: `507672FF764DE0B0C2688952B0294E59` | **Files**: 2
@@ -579,7 +513,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--52adf93a-41a4-7b81-d564-c50bea313
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\GEM.PLT.100.SpecialProgramPlatesCounts-20220701.xlsx
 C:\Users\loganf\Documents\IDAHO-VAULT\GEM.PLT.100.SpecialProgramPlatesCounts-20220701__src_scratch-folder__c713b350.xlsx
 ``n
-
 ### Group 68: GITHUB-AGENT-SETUP-SUMMARY-2026-03-22 1.md
 
 **Size**: 4.51 KB | **Hash**: `7E18F825C803C13B3776B6DE876AB015` | **Files**: 2
@@ -587,7 +520,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\GEM.PLT.100.SpecialProgramPlatesCounts-202
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\GITHUB-AGENT-SETUP-SUMMARY-2026-03-22 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\GITHUB-AGENT-SETUP-SUMMARY-2026-03-22.md
 ``n
-
 ### Group 69: BobbyMontoya029.jpg
 
 **Size**: 5046.45 KB | **Hash**: `B67EED6F575D227454D78EA3B6147600` | **Files**: 2
@@ -595,7 +527,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\GITHUB-AGENT-SETUP-SUMMARY-2026-03-22.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya029.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya029__src_scratch-folder__ea609497.jpg
 ``n
-
 ### Group 70: Twin Falls dam__src_scratch-folder__59a3f817.md
 
 **Size**: 0.15 KB | **Hash**: `DC9DD0AEDDA2FF8418A0917A536DEFF5` | **Files**: 2
@@ -603,7 +534,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya029__src_scratch-folder__ea609
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Twin Falls dam__src_scratch-folder__59a3f817.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Twin Falls dam__src_scratch-folder__b5796b1e.md
 ``n
-
 ### Group 71: Vol. 01 Issue 01 - The Power of a Lost Cause 1.md
 
 **Size**: 0.15 KB | **Hash**: `EAA0AA338430EF431AC40248F9340C4C` | **Files**: 3
@@ -612,7 +542,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Twin Falls dam__src_scratch-folder__b5796b
 C:\Users\loganf\Documents\IDAHO-VAULT\Vol. 01 Issue 01 - The Power of a Lost Cause 2.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Vol. 01 Issue 01 - The Power of a Lost Cause.md
 ``n
-
 ### Group 72: Jim Addis.md
 
 **Size**: 0.11 KB | **Hash**: `06562E8CF67024BCD4539A7E903BE68B` | **Files**: 2
@@ -620,7 +549,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Vol. 01 Issue 01 - The Power of a Lost Cau
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Jim Addis.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Paul Amador.md
 ``n
-
 ### Group 73: Idaho Code §74-202 (2).md
 
 **Size**: 1.38 KB | **Hash**: `87AA543B9BFA6CEA4F7ECB653A63462B` | **Files**: 2
@@ -628,7 +556,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Paul Amador.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Idaho Code §74-202 (2).md
 C:\Users\loganf\Documents\IDAHO-VAULT\Idaho Code §74-202__src_scratch-folder__51ed2932.md
 ``n
-
 ### Group 74: badger.md
 
 **Size**: 0.1 KB | **Hash**: `CD4364825390842AD3E72522CECF811C` | **Files**: 8
@@ -642,7 +569,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\mink.md
 C:\Users\loganf\Documents\IDAHO-VAULT\muskrat.md
 C:\Users\loganf\Documents\IDAHO-VAULT\river otter.md
 ``n
-
 ### Group 75: coyote.md
 
 **Size**: 0.1 KB | **Hash**: `400E48E88571764C764146738FADD0FA` | **Files**: 4
@@ -652,7 +578,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\ermine.md
 C:\Users\loganf\Documents\IDAHO-VAULT\raccoon.md
 C:\Users\loganf\Documents\IDAHO-VAULT\weasel.md
 ``n
-
 ### Group 76: Conor James Ryan.md
 
 **Size**: 0.1 KB | **Hash**: `39D0CA0E775460E7A64B819D44064D63` | **Files**: 2
@@ -660,7 +585,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\weasel.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Conor James Ryan.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Forrest Clark Rankin.md
 ``n
-
 ### Group 77: Borah - Encyclopedia Britannica 1 1.md
 
 **Size**: 2.34 KB | **Hash**: `3576F37457FAED916485D7538B813DD0` | **Files**: 3
@@ -669,7 +593,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Forrest Clark Rankin.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Borah - Encyclopedia Britannica 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Borah - Encyclopedia Britannica.md
 ``n
-
 ### Group 78: aa1hom4p.xem
 
 **Size**: 71.61 KB | **Hash**: `C38B56977F148E4E85CCF09D4F7C185B` | **Files**: 3
@@ -678,7 +601,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Borah - Encyclopedia Britannica.md
 C:\Users\loganf\Documents\IDAHO-VAULT\svcwvty5.wka
 C:\Users\loganf\Documents\IDAHO-VAULT\xmlh0dpb.gri
 ``n
-
 ### Group 79: Alexander Nicholai Sisenstein.md
 
 **Size**: 0.09 KB | **Hash**: `A96931B1136EDD4B62A53F6E64B4F44E` | **Files**: 5
@@ -689,7 +611,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Cameron Kathan Pruitt.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Dakota Ray Tabler.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Nathaniel Taylor Whitfield.md
 ``n
-
 ### Group 80: McKinzie Creek__src_scratch-folder__31008c68.md
 
 **Size**: 0.09 KB | **Hash**: `7DCBB2DC2FA6AADA7E3AC0B66E936E59` | **Files**: 2
@@ -697,7 +618,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Nathaniel Taylor Whitfield.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\McKinzie Creek__src_scratch-folder__31008c68.md
 C:\Users\loganf\Documents\IDAHO-VAULT\McKinzie Creek__src_scratch-folder__e8f8bd29.md
 ``n
-
 ### Group 81: Boise National Forest__src_scratch-folder__929505f4.md
 
 **Size**: 0.19 KB | **Hash**: `BF71E7AADB1822CA31C864FBAFDBED5E` | **Files**: 2
@@ -705,7 +625,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\McKinzie Creek__src_scratch-folder__e8f8bd
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Boise National Forest__src_scratch-folder__929505f4.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Boise National Forest__src_scratch-folder__c1c6ef2a.md
 ``n
-
 ### Group 82: Lake Walcott__src_scratch-folder__15553142.md
 
 **Size**: 0.19 KB | **Hash**: `894DF516BA1DEFC38CACA386B7E4667A` | **Files**: 2
@@ -713,7 +632,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Boise National Forest__src_scratch-folder_
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Lake Walcott__src_scratch-folder__15553142.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Lake Walcott__src_scratch-folder__55dc9482.md
 ``n
-
 ### Group 83: Lost River Mountain Range__src_scratch-folder__71a7d6b7.md
 
 **Size**: 0.19 KB | **Hash**: `25D2E1126C77315AE7D1D1632DFB232B` | **Files**: 2
@@ -721,7 +639,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Lake Walcott__src_scratch-folder__55dc9482
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Lost River Mountain Range__src_scratch-folder__71a7d6b7.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Lost River Mountain Range__src_scratch-folder__7812c26f.md
 ``n
-
 ### Group 84: PXL_20241213_190254489.jpg
 
 **Size**: 2798.96 KB | **Hash**: `55AE32E3A1ED857D56EB0DC3A3EC1D84` | **Files**: 2
@@ -729,7 +646,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Lost River Mountain Range__src_scratch-fol
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\PXL_20241213_190254489.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\PXL_20241213_190254489__src_zaudi-cam__cbebb76b.jpg
 ``n
-
 ### Group 85: Erica McGinnis (2).md
 
 **Size**: 0.8 KB | **Hash**: `7523EAEDF7C891931B641829E6E94105` | **Files**: 2
@@ -737,7 +653,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\PXL_20241213_190254489__src_zaudi-cam__cbe
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Erica McGinnis (2).md
 C:\Users\loganf\Documents\IDAHO-VAULT\Erica McGinnis__src_scratch-folder__df176622.md
 ``n
-
 ### Group 86: Denise Woodward (2).md
 
 **Size**: 1.53 KB | **Hash**: `F6771E928DD0DE8BA68F88B073555B17` | **Files**: 2
@@ -745,7 +660,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Erica McGinnis__src_scratch-folder__df1766
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Denise Woodward (2).md
 C:\Users\loganf\Documents\IDAHO-VAULT\Denise Woodward__src_scratch-folder__6789da96.md
 ``n
-
 ### Group 87: 1907 Borah - Walking 1 1.md
 
 **Size**: 0.31 KB | **Hash**: `C5C69490837C1BFE7F0AB5DF6CBBAABD` | **Files**: 3
@@ -754,7 +668,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Denise Woodward__src_scratch-folder__6789d
 C:\Users\loganf\Documents\IDAHO-VAULT\1907 Borah - Walking 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\1907 Borah - Walking.md
 ``n
-
 ### Group 88: Ice Harbor dam__src_scratch-folder__15145cd9.md
 
 **Size**: 0.22 KB | **Hash**: `9604FF86ABFBAAFF9E287520C60F958E` | **Files**: 2
@@ -762,7 +675,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\1907 Borah - Walking.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Ice Harbor dam__src_scratch-folder__15145cd9.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Ice Harbor dam__src_scratch-folder__e20f85e5.md
 ``n
-
 ### Group 89: 2024 Biden - Panic 1 1.md
 
 **Size**: 0.08 KB | **Hash**: `1198A8492D6140981094116474803B9B` | **Files**: 3
@@ -771,7 +683,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Ice Harbor dam__src_scratch-folder__e20f85
 C:\Users\loganf\Documents\IDAHO-VAULT\2024 Biden - Panic 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\2024 Biden - Panic.md
 ``n
-
 ### Group 90: Department of Administration.md
 
 **Size**: 0.08 KB | **Hash**: `CB81F9EA89B03F9EA3FEEE73654BD944` | **Files**: 8
@@ -785,7 +696,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Department of Health and Welfare.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Department of Insurance.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Department of Juvenile Corrections.md
 ``n
-
 ### Group 91: 077-KS-4-112_43-0469M (1).tiff
 
 **Size**: 6551.06 KB | **Hash**: `808B24DA4DF1211738878A8BC2BD7E72` | **Files**: 2
@@ -793,7 +703,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Department of Juvenile Corrections.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\077-KS-4-112_43-0469M (1).tiff
 C:\Users\loganf\Documents\IDAHO-VAULT\077-KS-4-112_43-0469M.tiff
 ``n
-
 ### Group 92: Decision-and-Order (2).pdf
 
 **Size**: 1356.24 KB | **Hash**: `8151EC5F36367C2BBA8A9E7E99C1C827` | **Files**: 3
@@ -802,7 +711,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\077-KS-4-112_43-0469M.tiff
 C:\Users\loganf\Documents\IDAHO-VAULT\Decision-and-Order.pdf
 C:\Users\loganf\Documents\IDAHO-VAULT\Decision-and-Order__src_scratch-folder__651b27f1.pdf
 ``n
-
 ### Group 93: SCRATCH--93486111-ecff-80a4-5e44-162ed053c646-2026-01-26_10-12-26-loganf.prproj
 
 **Size**: 4203.1 KB | **Hash**: `B6168C093F75CFCF4A00582003BF7F72` | **Files**: 2
@@ -810,7 +718,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Decision-and-Order__src_scratch-folder__65
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--93486111-ecff-80a4-5e44-162ed053c646-2026-01-26_10-12-26-loganf.prproj
 C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--93486111-ecff-80a4-5e44-162ed053c646-2026-01-26_10-12-26-loganf__src_scratch-folder__0476b23f.prproj
 ``n
-
 ### Group 94: PXL_20250424_192450832 (1).jpg
 
 **Size**: 7873 KB | **Hash**: `77DEC016E3C93D18E96756335DAA1679` | **Files**: 2
@@ -818,7 +725,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--93486111-ecff-80a4-5e44-162ed053c
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\PXL_20250424_192450832 (1).jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\PXL_20250424_192450832.jpg
 ``n
-
 ### Group 95: Brownlee dam__src_scratch-folder__41ce9870.md
 
 **Size**: 0.15 KB | **Hash**: `7B376FC8B6F466DF637508E00F2367EC` | **Files**: 2
@@ -826,7 +732,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\PXL_20250424_192450832.jpg
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Brownlee dam__src_scratch-folder__41ce9870.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Brownlee dam__src_scratch-folder__42ef6525.md
 ``n
-
 ### Group 96: Hells Canyon dam__src_scratch-folder__33eb167c.md
 
 **Size**: 0.15 KB | **Hash**: `898A72F093D2451BE615384321CAFEBD` | **Files**: 2
@@ -834,7 +739,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Brownlee dam__src_scratch-folder__42ef6525
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Hells Canyon dam__src_scratch-folder__33eb167c.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Hells Canyon dam__src_scratch-folder__5a1b3c55.md
 ``n
-
 ### Group 97: 202011_CongressionalTotals (1).xlsx
 
 **Size**: 17.61 KB | **Hash**: `AAADBE3F29F3D66CB86CD13C91677C52` | **Files**: 2
@@ -842,7 +746,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Hells Canyon dam__src_scratch-folder__5a1b
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\202011_CongressionalTotals (1).xlsx
 C:\Users\loganf\Documents\IDAHO-VAULT\202011_CongressionalTotals.xlsx
 ``n
-
 ### Group 98: Working With Archival Producers_20250106_FINAL (2).pdf
 
 **Size**: 3148.44 KB | **Hash**: `E7529F7EF71D9A6C095E12887D2ACFFF` | **Files**: 3
@@ -851,7 +754,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\202011_CongressionalTotals.xlsx
 C:\Users\loganf\Documents\IDAHO-VAULT\Working With Archival Producers_20250106_FINAL (2)__src_scratch-folder__cac4d017.pdf
 C:\Users\loganf\Documents\IDAHO-VAULT\Working With Archival Producers_20250106_FINAL__src_scratch-folder__bd920cb1.pdf
 ``n
-
 ### Group 99: American Falls reservoir__src_scratch-folder__0de22530.md
 
 **Size**: 0.22 KB | **Hash**: `C4716444493188BE6EA17FCBAFB17A1A` | **Files**: 2
@@ -859,7 +761,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Working With Archival Producers_20250106_F
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\American Falls reservoir__src_scratch-folder__0de22530.md
 C:\Users\loganf\Documents\IDAHO-VAULT\American Falls reservoir__src_scratch-folder__df290578.md
 ``n
-
 ### Group 100: Little Goose dam__src_scratch-folder__0c322b05.md
 
 **Size**: 0.22 KB | **Hash**: `8BCC4F1E898BB2C7C15B39BF87182117` | **Files**: 2
@@ -867,7 +768,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\American Falls reservoir__src_scratch-fold
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Little Goose dam__src_scratch-folder__0c322b05.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Little Goose dam__src_scratch-folder__5886f02b.md
 ``n
-
 ### Group 101: 1936 Borah - Park 1 1.md
 
 **Size**: 0.24 KB | **Hash**: `670188ACBCBADD7F47B364D52C2AC5B1` | **Files**: 3
@@ -876,7 +776,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Little Goose dam__src_scratch-folder__5886
 C:\Users\loganf\Documents\IDAHO-VAULT\1936 Borah - Park 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\1936 Borah - Park.md
 ``n
-
 ### Group 102: BODY.md
 
 **Size**: 0.24 KB | **Hash**: `317BC007D585496049492ABBF44E1BC4` | **Files**: 8
@@ -890,7 +789,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\PROTOCOLS.md
 C:\Users\loganf\Documents\IDAHO-VAULT\THE GHOST.md
 C:\Users\loganf\Documents\IDAHO-VAULT\THE PERIPHERY.md
 ``n
-
 ### Group 103: Salmon#U2013Challis National Forest.md
 
 **Size**: 0.24 KB | **Hash**: `2376D2064779A32991B92B994AF0803D` | **Files**: 2
@@ -898,7 +796,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\THE PERIPHERY.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Salmon#U2013Challis National Forest.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Salmon-Challis National Forest.md
 ``n
-
 ### Group 104: Atlantic Ocean__src_scratch-folder__b96f67ee.md
 
 **Size**: 0.05 KB | **Hash**: `20B2AFCD6C8D0E9EF622B3DB6636D455` | **Files**: 2
@@ -906,7 +803,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Salmon-Challis National Forest.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Atlantic Ocean__src_scratch-folder__b96f67ee.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Atlantic Ocean__src_scratch-folder__d8f475d0.md
 ``n
-
 ### Group 105: (2023) House Bill 314.md
 
 **Size**: 0.05 KB | **Hash**: `69BC2697446979BE8B23F9DFEABBB1CE` | **Files**: 2
@@ -914,7 +810,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Atlantic Ocean__src_scratch-folder__d8f475
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\(2023) House Bill 314.md
 C:\Users\loganf\Documents\IDAHO-VAULT\books.md
 ``n
-
 ### Group 106: Pacific Ocean__src_scratch-folder__263c60ce.md
 
 **Size**: 0.05 KB | **Hash**: `543850E20680AB9F650D914F024BC101` | **Files**: 2
@@ -922,7 +817,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\books.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Pacific Ocean__src_scratch-folder__263c60ce.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Pacific Ocean__src_scratch-folder__c4dfe4e2.md
 ``n
-
 ### Group 107: 2024-10-13 - Squishy Computer - Nature's many attempts to evolve a Nostr.md
 
 **Size**: 3.66 KB | **Hash**: `C3A98DFB6C89A68533B9428FE82C4FBD` | **Files**: 3
@@ -931,7 +825,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Pacific Ocean__src_scratch-folder__c4dfe4e
 C:\Users\loganf\Documents\IDAHO-VAULT\2026-03-23 - OpenAPI - GitBook Documentation.md
 C:\Users\loganf\Documents\IDAHO-VAULT\2026-03-31 - gitbook.com - AI insights  GitBook Documentation.md
 ``n
-
 ### Group 108: maintbudgs_260313_131153(1).pdf
 
 **Size**: 37.43 KB | **Hash**: `815321AF43742454901D147E423DE8AB` | **Files**: 2
@@ -939,7 +832,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\2026-03-31 - gitbook.com - AI insights  Gi
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\maintbudgs_260313_131153(1).pdf
 C:\Users\loganf\Documents\IDAHO-VAULT\maintbudgs_260313_131153.pdf
 ``n
-
 ### Group 109: Nov. 22 ag panel.docx
 
 **Size**: 23.25 KB | **Hash**: `A8D9C35AEDCBAC90296DCC2ECFFAD068` | **Files**: 2
@@ -947,7 +839,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\maintbudgs_260313_131153.pdf
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Nov. 22 ag panel.docx
 C:\Users\loganf\Documents\IDAHO-VAULT\Nov. 22 ag panel__src_scratch-folder__6bce6c8f.docx
 ``n
-
 ### Group 110: Linear - agent chat - Select IDAHO-VAULT project 1.md
 
 **Size**: 22.54 KB | **Hash**: `30714A649E827E9474AF126050001219` | **Files**: 2
@@ -955,7 +846,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Nov. 22 ag panel__src_scratch-folder__6bce
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Linear - agent chat - Select IDAHO-VAULT project 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Linear - agent chat - Select IDAHO-VAULT project.md
 ``n
-
 ### Group 111: 2026-03-10-README (2).txt
 
 **Size**: 0.21 KB | **Hash**: `B6C518EE33213C831F08C37F7E3FDDC5` | **Files**: 2
@@ -963,7 +853,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Linear - agent chat - Select IDAHO-VAULT p
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\2026-03-10-README (2).txt
 C:\Users\loganf\Documents\IDAHO-VAULT\2026-03-10-README.txt
 ``n
-
 ### Group 112: Gyvg0GoacAAY9y1 (2).jpg
 
 **Size**: 75.96 KB | **Hash**: `09E0A3C123C6A5A37EAC962007AAFFA4` | **Files**: 3
@@ -972,7 +861,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\2026-03-10-README.txt
 C:\Users\loganf\Documents\IDAHO-VAULT\Gyvg0GoacAAY9y1.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\Gyvg0GoacAAY9y1__src_scratch-folder__5a9d46ac.jpg
 ``n
-
 ### Group 113: S1368 (2).pdf
 
 **Size**: 48.48 KB | **Hash**: `141FB053D22B778FA2F902D74169094C` | **Files**: 2
@@ -980,7 +868,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Gyvg0GoacAAY9y1__src_scratch-folder__5a9d4
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\S1368 (2).pdf
 C:\Users\loganf\Documents\IDAHO-VAULT\S1368__src_scratch-folder__8f4e71e7.pdf
 ``n
-
 ### Group 114: Laurie Lickley.md
 
 **Size**: 0.07 KB | **Hash**: `E067A6CCBB9636A65D759B1A98D98AB0` | **Files**: 2
@@ -988,7 +875,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\S1368__src_scratch-folder__8f4e71e7.pdf
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Laurie Lickley.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Lee Heider.md
 ``n
-
 ### Group 115: PXL_20260122_173921332.jpg
 
 **Size**: 2188.64 KB | **Hash**: `D8264BF2010A25BAA0AD91105FB351F6` | **Files**: 2
@@ -996,7 +882,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Lee Heider.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\PXL_20260122_173921332.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\PXL_20260122_173921332__src_scratch-folder__2b8d418d.jpg
 ``n
-
 ### Group 116: 163b0cdb-e506-4b46-85d2-78d307c315fa_768x778 (2).jpg
 
 **Size**: 59.66 KB | **Hash**: `53322EB9FA168E03EF6BE9AD3DB09E45` | **Files**: 3
@@ -1005,7 +890,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\PXL_20260122_173921332__src_scratch-folder
 C:\Users\loganf\Documents\IDAHO-VAULT\163b0cdb-e506-4b46-85d2-78d307c315fa_768x778.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\163b0cdb-e506-4b46-85d2-78d307c315fa_768x778__src_scratch-folder__70f41a57.jpg
 ``n
-
 ### Group 117: 15A-Berch-Steve.jpg
 
 **Size**: 1014.33 KB | **Hash**: `87A7C94A9588F242ADB81B1196D35027` | **Files**: 2
@@ -1013,7 +897,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\163b0cdb-e506-4b46-85d2-78d307c315fa_768x7
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\15A-Berch-Steve.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\Berch.Steve_15A_5x7print.jpg
 ``n
-
 ### Group 118: BobbyMontoya006back  July 18th 1964 St. Alphonsus Hospital day after the wreck Photo by Rosie Nelson.jpg
 
 **Size**: 538.31 KB | **Hash**: `9448713A8AAAB760A16F810A441A86B8` | **Files**: 2
@@ -1021,7 +904,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Berch.Steve_15A_5x7print.jpg
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya006back  July 18th 1964 St. Alphonsus Hospital day after the wreck Photo by Rosie Nelson.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya006back  July 18th 1964 St. Alphonsus Hospital day after the wreck Photo by Rosie Nelson__src_scratch-folder__b912ac47.jpg
 ``n
-
 ### Group 119: Hells Canyon__src_scratch-folder__b161eacd.md
 
 **Size**: 0.15 KB | **Hash**: `C93B455033842C3490D095F03014392F` | **Files**: 2
@@ -1029,7 +911,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya006back  July 18th 1964 St. Al
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Hells Canyon__src_scratch-folder__b161eacd.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Hells Canyon__src_scratch-folder__d39343d9.md
 ``n
-
 ### Group 120: Jan. 30 John VDW.docx
 
 **Size**: 22.09 KB | **Hash**: `84DF47A1AF1F247B6AFD784785DF20A4` | **Files**: 2
@@ -1037,7 +918,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Hells Canyon__src_scratch-folder__d39343d9
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Jan. 30 John VDW.docx
 C:\Users\loganf\Documents\IDAHO-VAULT\Jan. 30 John VDW__src_scratch-folder__2d8ba82b.docx
 ``n
-
 ### Group 121: IR CREW 50th SEASON.png
 
 **Size**: 3499.16 KB | **Hash**: `2F36055977862F8ACC374CC561D48A80` | **Files**: 2
@@ -1045,7 +925,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Jan. 30 John VDW__src_scratch-folder__2d8b
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\IR CREW 50th SEASON.png
 C:\Users\loganf\Documents\IDAHO-VAULT\IR CREW 50th SEASON__src_scratch-folder__f61320ae.png
 ``n
-
 ### Group 122: Dean Cameron Questions.docx
 
 **Size**: 21.7 KB | **Hash**: `54CBFB485D71A06A0C73A14D7D11D035` | **Files**: 2
@@ -1053,7 +932,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\IR CREW 50th SEASON__src_scratch-folder__f
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Dean Cameron Questions.docx
 C:\Users\loganf\Documents\IDAHO-VAULT\Dean Cameron Questions__src_scratch-folder__4e3e1462.docx
 ``n
-
 ### Group 123: BobbyMontoya005.jpg
 
 **Size**: 463.68 KB | **Hash**: `34B7283DF0DA75A5CAF56B456B98AC8A` | **Files**: 2
@@ -1061,7 +939,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Dean Cameron Questions__src_scratch-folder
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya005.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya005__src_scratch-folder__db977578.jpg
 ``n
-
 ### Group 124: 35b0edfe-b33c-4325-a168-48b615e71510+2d8a7b68-ec3c-1d78-49f7-6dbb00000049 48000.pek
 
 **Size**: 14.07 KB | **Hash**: `172CBEF742085E2DC1F547F942EC01B8` | **Files**: 2
@@ -1069,7 +946,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya005__src_scratch-folder__db977
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\35b0edfe-b33c-4325-a168-48b615e71510+2d8a7b68-ec3c-1d78-49f7-6dbb00000049 48000.pek
 C:\Users\loganf\Documents\IDAHO-VAULT\35b0edfe-b33c-4325-a168-48b615e71510+c1a70795-1c90-8fe1-7fc5-c47000000049 48000.pek
 ``n
-
 ### Group 125: PXL_20260311_232556302 (1).jpg
 
 **Size**: 3163.2 KB | **Hash**: `BB004FC92FB078F44A6ECB072128CC5D` | **Files**: 2
@@ -1077,7 +953,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\35b0edfe-b33c-4325-a168-48b615e71510+c1a70
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\PXL_20260311_232556302 (1).jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\PXL_20260311_232556302.jpg
 ``n
-
 ### Group 126: Screenshot_20260401-005409 (1).png
 
 **Size**: 199.18 KB | **Hash**: `78ADABE039238DB3A9F0C4291D9CFA38` | **Files**: 2
@@ -1085,7 +960,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\PXL_20260311_232556302.jpg
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Screenshot_20260401-005409 (1).png
 C:\Users\loganf\Documents\IDAHO-VAULT\Screenshot_20260401-005409.png
 ``n
-
 ### Group 127: 1924 Borah - TIME 1 1.md
 
 **Size**: 0.12 KB | **Hash**: `004CF5F41F61AE4A2C87834F1D6B97FD` | **Files**: 2
@@ -1093,7 +967,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Screenshot_20260401-005409.png
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\1924 Borah - TIME 1 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\1924 Borah - TIME 1.md
 ``n
-
 ### Group 128: Jackson Lake dam__src_scratch-folder__bfc0ac80.md
 
 **Size**: 0.12 KB | **Hash**: `7FB398515592F6D42F67C2ECA23840AB` | **Files**: 2
@@ -1101,7 +974,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\1924 Borah - TIME 1.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Jackson Lake dam__src_scratch-folder__bfc0ac80.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Jackson Lake dam__src_scratch-folder__ed664735.md
 ``n
-
 ### Group 129: Tailing 1.md
 
 **Size**: 0.12 KB | **Hash**: `56F24C2BE918AEA08E2EDE594C7DCFEE` | **Files**: 2
@@ -1109,7 +981,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Jackson Lake dam__src_scratch-folder__ed66
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Tailing 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Tailing.md
 ``n
-
 ### Group 130: SCRATCH--55aff571-55fe-e103-c089-36bea65e964c-2026-01-14_13-16-50-loganf.prproj
 
 **Size**: 3970.87 KB | **Hash**: `5ABA014D6B1DB3DB4BE9189E3795B0F1` | **Files**: 2
@@ -1117,7 +988,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Tailing.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--55aff571-55fe-e103-c089-36bea65e964c-2026-01-14_13-16-50-loganf.prproj
 C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--55aff571-55fe-e103-c089-36bea65e964c-2026-01-14_13-16-50-loganf__src_scratch-folder__7c466dd9.prproj
 ``n
-
 ### Group 131: Coeur d'Alene River__src_scratch-folder__0a0f390d.md
 
 **Size**: 0.14 KB | **Hash**: `F695878B46BD9DE9A49679DE0CCB9F2A` | **Files**: 2
@@ -1125,7 +995,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--55aff571-55fe-e103-c089-36bea65e9
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Coeur d'Alene River__src_scratch-folder__0a0f390d.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Coeur d'Alene River__src_scratch-folder__ae3a3fdf.md
 ``n
-
 ### Group 132: Milner Lake__src_scratch-folder__476f2b30.md
 
 **Size**: 0.12 KB | **Hash**: `30CD9D3B6EE6B87FF9481406256DE440` | **Files**: 2
@@ -1133,7 +1002,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Coeur d'Alene River__src_scratch-folder__a
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Milner Lake__src_scratch-folder__476f2b30.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Milner Lake__src_scratch-folder__fcf6ce2e.md
 ``n
-
 ### Group 133: 26S-Taylor-Ron.jpg
 
 **Size**: 846.22 KB | **Hash**: `AC0760CE9A066E24CC863D69CB40BC72` | **Files**: 2
@@ -1141,7 +1009,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Milner Lake__src_scratch-folder__fcf6ce2e.
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\26S-Taylor-Ron.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\Taylor.Ron_26_5x7print.jpg
 ``n
-
 ### Group 134: Hawkins Companies v. Moyle (2).md
 
 **Size**: 1.8 KB | **Hash**: `A858EE05DB75479DB23F4FFC13B62B7E` | **Files**: 2
@@ -1149,7 +1016,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Taylor.Ron_26_5x7print.jpg
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Hawkins Companies v. Moyle (2).md
 C:\Users\loganf\Documents\IDAHO-VAULT\Hawkins Companies v. Moyle__src_scratch-folder__c07660b8.md
 ``n
-
 ### Group 135: Pundits CORRECTED-LF.txt
 
 **Size**: 11.1 KB | **Hash**: `B03DB19C7F70FA70E19C4EF67F969795` | **Files**: 3
@@ -1158,7 +1024,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Hawkins Companies v. Moyle__src_scratch-fo
 C:\Users\loganf\Documents\IDAHO-VAULT\Pundits CORRECTED-LF__src_scratch-folder__c239c430.txt
 C:\Users\loganf\Documents\IDAHO-VAULT\Pundits for Correction (2).txt
 ``n
-
 ### Group 136: Facet 1.md
 
 **Size**: 0.1 KB | **Hash**: `05627110A1ABE8E7EC152F4F09B7BBD6` | **Files**: 2
@@ -1166,7 +1031,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Pundits for Correction (2).txt
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Facet 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Facet.md
 ``n
-
 ### Group 137: G5RPCkOakAIBoiB (2).jpg
 
 **Size**: 623.5 KB | **Hash**: `0F9123903F79653E5101CFA89D035157` | **Files**: 3
@@ -1175,7 +1039,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Facet.md
 C:\Users\loganf\Documents\IDAHO-VAULT\G5RPCkOakAIBoiB.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\G5RPCkOakAIBoiB__src_scratch-folder__7a05f904.jpg
 ``n
-
 ### Group 138: 20260203.Agency Reduction Plans.pdf
 
 **Size**: 10256.25 KB | **Hash**: `07116074D184908D91A7861A8FE02AAE` | **Files**: 3
@@ -1184,7 +1047,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\G5RPCkOakAIBoiB__src_scratch-folder__7a05f
 C:\Users\loganf\Documents\IDAHO-VAULT\20260203.Agency-Reduction-Plans.pdf
 C:\Users\loganf\Documents\IDAHO-VAULT\20260203.Agency-Reduction-Plans__src_scratch-folder__390d16ae.pdf
 ``n
-
 ### Group 139: Nov 15 abortion.docx
 
 **Size**: 19.27 KB | **Hash**: `4887408B2D3FDEF734ECAC4958F55584` | **Files**: 2
@@ -1192,7 +1054,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\20260203.Agency-Reduction-Plans__src_scrat
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Nov 15 abortion.docx
 C:\Users\loganf\Documents\IDAHO-VAULT\Nov 15 abortion__src_scratch-folder__39e2802c.docx
 ``n
-
 ### Group 140: '.'.md
 
 **Size**: 0.01 KB | **Hash**: `2EE28F1E1B449CCC2DD97FDCC6C2BC1F` | **Files**: 826
@@ -2024,7 +1885,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\_WEB.md
 C:\Users\loganf\Documents\IDAHO-VAULT\_XAI.md
 C:\Users\loganf\Documents\IDAHO-VAULT\_YES.md
 ``n
-
 ### Group 141: BobbyMontoya018bubble.jpg
 
 **Size**: 3859.96 KB | **Hash**: `05B7860F851471087D336F93DACF832F` | **Files**: 2
@@ -2032,7 +1892,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\_YES.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya018bubble.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya018bubble__src_scratch-folder__92d32d24.jpg
 ``n
-
 ### Group 142: Lower Salmon Falls reservoir__src_scratch-folder__adb0670c.md
 
 **Size**: 0.18 KB | **Hash**: `B9E9B93C07C8616951D60F8C019F8BDD` | **Files**: 2
@@ -2040,7 +1899,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya018bubble__src_scratch-folder_
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Lower Salmon Falls reservoir__src_scratch-folder__adb0670c.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Lower Salmon Falls reservoir__src_scratch-folder__fef937bb.md
 ``n
-
 ### Group 143: Upper Salmon Falls reservoir__src_scratch-folder__709c328a.md
 
 **Size**: 0.18 KB | **Hash**: `BAF95139F6AD72DED5C840C5071ABA11` | **Files**: 2
@@ -2048,7 +1906,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Lower Salmon Falls reservoir__src_scratch-
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Upper Salmon Falls reservoir__src_scratch-folder__709c328a.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Upper Salmon Falls reservoir__src_scratch-folder__7914d082.md
 ``n
-
 ### Group 144: HAkXCaXacAIXo7a (2).jpg
 
 **Size**: 82.19 KB | **Hash**: `8072513266B9DCCAAFFA49FC8A5B77EC` | **Files**: 3
@@ -2057,7 +1914,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Upper Salmon Falls reservoir__src_scratch-
 C:\Users\loganf\Documents\IDAHO-VAULT\HAkXCaXacAIXo7a.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\HAkXCaXacAIXo7a__src_scratch-folder__1cd5e97f.jpg
 ``n
-
 ### Group 145: Keith Bybee (2)__src_scratch-folder__70ba20b6.md
 
 **Size**: 1.54 KB | **Hash**: `760D253976D150291B9915C2A9D8AEBE` | **Files**: 2
@@ -2065,7 +1921,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\HAkXCaXacAIXo7a__src_scratch-folder__1cd5e
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Keith Bybee (2)__src_scratch-folder__70ba20b6.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Keith Bybee__src_scratch-folder__c769cf4d.md
 ``n
-
 ### Group 146: SCRATCH--55aff571-55fe-e103-c089-36bea65e964c-2025-12-31_13-22-36-loganf.prproj
 
 **Size**: 3698.54 KB | **Hash**: `C5C64073DFF0F231F647136137E530AF` | **Files**: 2
@@ -2073,7 +1928,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Keith Bybee__src_scratch-folder__c769cf4d.
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--55aff571-55fe-e103-c089-36bea65e964c-2025-12-31_13-22-36-loganf.prproj
 C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--55aff571-55fe-e103-c089-36bea65e964c-2025-12-31_13-22-36-loganf__src_scratch-folder__56e974f6.prproj
 ``n
-
 ### Group 147: BobbyMontoya014.jpg
 
 **Size**: 1433.35 KB | **Hash**: `FB000C4E66BDBCB8D4657483FED9EC5D` | **Files**: 2
@@ -2081,7 +1935,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--55aff571-55fe-e103-c089-36bea65e9
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya014.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya014__src_scratch-folder__efe282e3.jpg
 ``n
-
 ### Group 148: BobbyMontoya010back 1969 Idaho City.jpg
 
 **Size**: 275.21 KB | **Hash**: `9CE47F8E821E8F4D4974F256E63A6439` | **Files**: 2
@@ -2089,7 +1942,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya014__src_scratch-folder__efe28
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya010back 1969 Idaho City.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya010back 1969 Idaho City__src_scratch-folder__6e81d675.jpg
 ``n
-
 ### Group 149: American Rescue Plan Act.md
 
 **Size**: 0.03 KB | **Hash**: `0744D1D55A7A71E3DA326066668F9CB7` | **Files**: 2
@@ -2097,7 +1949,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya010back 1969 Idaho City__src_s
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\American Rescue Plan Act.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Coronavirus Aid, Relief, and Economic Security Act.md
 ``n
-
 ### Group 150: Columbia_River_Basin_Simplified (1).geojson
 
 **Size**: 323.1 KB | **Hash**: `FE600F3AD5D5299F037C5A973FF32AAE` | **Files**: 2
@@ -2105,7 +1956,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Coronavirus Aid, Relief, and Economic Secu
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Columbia_River_Basin_Simplified (1).geojson
 C:\Users\loganf\Documents\IDAHO-VAULT\Columbia_River_Basin_Simplified.geojson
 ``n
-
 ### Group 151: Jan 17 Survey Qs.docx
 
 **Size**: 21.94 KB | **Hash**: `0BA00FEB98EB124A1E2B0235F0029A0B` | **Files**: 2
@@ -2113,7 +1963,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Columbia_River_Basin_Simplified.geojson
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Jan 17 Survey Qs.docx
 C:\Users\loganf\Documents\IDAHO-VAULT\Jan 17 Survey Qs__src_scratch-folder__6a30b69b.docx
 ``n
-
 ### Group 152: SCRATCH--55aff571-55fe-e103-c089-36bea65e964c-2026-01-14_13-04-50-loganf.prproj
 
 **Size**: 3888.56 KB | **Hash**: `E0D949E8D961D14F398A069188AC5C08` | **Files**: 2
@@ -2121,7 +1970,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Jan 17 Survey Qs__src_scratch-folder__6a30
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--55aff571-55fe-e103-c089-36bea65e964c-2026-01-14_13-04-50-loganf.prproj
 C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--55aff571-55fe-e103-c089-36bea65e964c-2026-01-14_13-04-50-loganf__src_scratch-folder__4950b064.prproj
 ``n
-
 ### Group 153: Gem State dam__src_scratch-folder__0f1abe48.md
 
 **Size**: 0.17 KB | **Hash**: `61662E3675FD67F2DA3C1528BE3D524D` | **Files**: 2
@@ -2129,7 +1977,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--55aff571-55fe-e103-c089-36bea65e9
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Gem State dam__src_scratch-folder__0f1abe48.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Gem State dam__src_scratch-folder__f6cd7d5d.md
 ``n
-
 ### Group 154: Blue Cross of Idaho.md
 
 **Size**: 0.07 KB | **Hash**: `A0AFACACF2B7594C3D96AC7DF02BB9E0` | **Files**: 2
@@ -2137,7 +1984,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Gem State dam__src_scratch-folder__f6cd7d5
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Blue Cross of Idaho.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Regence BlueShield of Idaho.md
 ``n
-
 ### Group 155: SCRATCH--93486111-ecff-80a4-5e44-162ed053c646-2026-01-28_23-05-02-loganf.prproj
 
 **Size**: 5404.01 KB | **Hash**: `2D86D94F6ECCD1FB1FE408646E044FE5` | **Files**: 2
@@ -2145,7 +1991,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Regence BlueShield of Idaho.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--93486111-ecff-80a4-5e44-162ed053c646-2026-01-28_23-05-02-loganf.prproj
 C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--93486111-ecff-80a4-5e44-162ed053c646-2026-01-28_23-05-02-loganf__src_scratch-folder__f5f5c690.prproj
 ``n
-
 ### Group 156: Screenshot_20260330-115226 (1).png
 
 **Size**: 225.62 KB | **Hash**: `E9BBDF3D167E6B7579D8BA482BF58364` | **Files**: 2
@@ -2153,7 +1998,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--93486111-ecff-80a4-5e44-162ed053c
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Screenshot_20260330-115226 (1).png
 C:\Users\loganf\Documents\IDAHO-VAULT\Screenshot_20260330-115226.png
 ``n
-
 ### Group 157: SCRATCH--55aff571-55fe-e103-c089-36bea65e964c-2026-01-08_19-25-05-loganf.prproj
 
 **Size**: 3777.92 KB | **Hash**: `420CC3EC4D8126212466F4477BDECE55` | **Files**: 2
@@ -2161,7 +2005,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Screenshot_20260330-115226.png
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--55aff571-55fe-e103-c089-36bea65e964c-2026-01-08_19-25-05-loganf.prproj
 C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--55aff571-55fe-e103-c089-36bea65e964c-2026-01-08_19-25-05-loganf__src_scratch-folder__50151752.prproj
 ``n
-
 ### Group 158: - Documentation - Discord - Webhook Events 1.md
 
 **Size**: 23.93 KB | **Hash**: `BCC2F68DE7682F2C8ABF18B7C25949AB` | **Files**: 2
@@ -2169,7 +2012,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--55aff571-55fe-e103-c089-36bea65e9
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\- Documentation - Discord - Webhook Events 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\- Documentation - Discord - Webhook Events.md
 ``n
-
 ### Group 159: ErkKveqVcAAAUNB (2).jpg
 
 **Size**: 730.55 KB | **Hash**: `61E682D2D38BC8621806B33CB2495F44` | **Files**: 3
@@ -2178,7 +2020,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\- Documentation - Discord - Webhook Events
 C:\Users\loganf\Documents\IDAHO-VAULT\ErkKveqVcAAAUNB.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\ErkKveqVcAAAUNB__src_scratch-folder__7045800e.jpg
 ``n
-
 ### Group 160: sort-audit (2).yml
 
 **Size**: 0.61 KB | **Hash**: `697A35621AEC6E991397223BC7FBC6B4` | **Files**: 4
@@ -2188,7 +2029,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\sort-audit.yml
 C:\Users\loganf\Documents\IDAHO-VAULT\sort-audit__src_scratch-folder__9821be97.yml
 C:\Users\loganf\Documents\IDAHO-VAULT\sort-audit__src_scratch-folder__d803bb09.yml
 ``n
-
 ### Group 161: Labrador v State Board of Education (2024)__src_scratch-folder__c6b24864.md
 
 **Size**: 1.71 KB | **Hash**: `356FF94F88553951806B8FB80185F0CB` | **Files**: 2
@@ -2196,7 +2036,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\sort-audit__src_scratch-folder__d803bb09.y
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Labrador v State Board of Education (2024)__src_scratch-folder__c6b24864.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Labrador v State Board of Education (2025).md
 ``n
-
 ### Group 162: Joint Rule Non-Adoption 2024-2025 (2).md
 
 **Size**: 1.85 KB | **Hash**: `75E472A677CC703FF1F2EB9AF81E8EFE` | **Files**: 2
@@ -2204,7 +2043,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Labrador v State Board of Education (2025)
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Joint Rule Non-Adoption 2024-2025 (2).md
 C:\Users\loganf\Documents\IDAHO-VAULT\Joint Rule Non-Adoption 2024-2025__src_scratch-folder__af6aeb69.md
 ``n
-
 ### Group 163: Judy Boyle (2)__src_scratch-folder__ce5d889c.md
 
 **Size**: 2.04 KB | **Hash**: `DA38FE0EF0657EEF517E7BE87D97FA9C` | **Files**: 2
@@ -2212,7 +2050,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Joint Rule Non-Adoption 2024-2025__src_scr
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Judy Boyle (2)__src_scratch-folder__ce5d889c.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Judy Boyle__src_scratch-folder__a7d90d06.md
 ``n
-
 ### Group 164: BobbyMontoya001.jpg
 
 **Size**: 387.2 KB | **Hash**: `3358781189E526DF9CE1D42878A24863` | **Files**: 2
@@ -2220,7 +2057,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Judy Boyle__src_scratch-folder__a7d90d06.m
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya001.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya001__src_scratch-folder__aa0520c7.jpg
 ``n
-
 ### Group 165: 2026-03-10-Ward-Engelking (2).txt
 
 **Size**: 0.67 KB | **Hash**: `EA99F87EAE69CF0AF2924C5B83E51031` | **Files**: 3
@@ -2229,7 +2065,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya001__src_scratch-folder__aa052
 C:\Users\loganf\Documents\IDAHO-VAULT\2026-03-10-Ward-Engelking.txt
 C:\Users\loganf\Documents\IDAHO-VAULT\Mar 11 at 4-21 PM.txt
 ``n
-
 ### Group 166: run_state-20260317-101538.md
 
 **Size**: 0.67 KB | **Hash**: `7FA4E04BBC80BED4ED7697B26F24ED56` | **Files**: 2
@@ -2237,7 +2072,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Mar 11 at 4-21 PM.txt
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\run_state-20260317-101538.md
 C:\Users\loganf\Documents\IDAHO-VAULT\run_state.md
 ``n
-
 ### Group 167: IdahoPTV Ethics Guide for AI_ July 2024 version (2).pdf
 
 **Size**: 287.85 KB | **Hash**: `73EB51E06A923F1DE67C3F43FB2BEA50` | **Files**: 2
@@ -2245,7 +2079,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\run_state.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\IdahoPTV Ethics Guide for AI_ July 2024 version (2).pdf
 C:\Users\loganf\Documents\IDAHO-VAULT\IdahoPTV Ethics Guide for AI_ July 2024 version__src_scratch-folder__8034131f.pdf
 ``n
-
 ### Group 168: David Cannon.md
 
 **Size**: 0.06 KB | **Hash**: `349CD6370CCB41371DFA0393601FFCF4` | **Files**: 2
@@ -2253,7 +2086,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\IdahoPTV Ethics Guide for AI_ July 2024 ve
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\David Cannon.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Neil Anderson.md
 ``n
-
 ### Group 169: 29S-Ruchti-James.jpg
 
 **Size**: 1000.42 KB | **Hash**: `E376DC35938142A238AA1BBAEAADE6D4` | **Files**: 2
@@ -2261,7 +2093,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Neil Anderson.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\29S-Ruchti-James.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\Ruchti.James_29_5x7print.jpg
 ``n
-
 ### Group 170: Logan.png
 
 **Size**: 1867.71 KB | **Hash**: `A138B1372B8BDABB1C8C2DB56DC8D613` | **Files**: 2
@@ -2269,7 +2100,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Ruchti.James_29_5x7print.jpg
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Logan.png
 C:\Users\loganf\Documents\IDAHO-VAULT\Logan__src_scratch-folder__d812735c.png
 ``n
-
 ### Group 171: Swan Falls reservoir__src_scratch-folder__21fcdaf4.md
 
 **Size**: 0.16 KB | **Hash**: `4A06EC11FCD9455A97AC322A601AB155` | **Files**: 2
@@ -2277,7 +2107,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Logan__src_scratch-folder__d812735c.png
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Swan Falls reservoir__src_scratch-folder__21fcdaf4.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Swan Falls reservoir__src_scratch-folder__e8c67c28.md
 ``n
-
 ### Group 172: LEVELSET-REPORT-GEMINI-2026-03-29 1.md
 
 **Size**: 0.93 KB | **Hash**: `EEF917C56875F0EF6A9DE3856BEECC5D` | **Files**: 2
@@ -2285,7 +2114,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Swan Falls reservoir__src_scratch-folder__
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\LEVELSET-REPORT-GEMINI-2026-03-29 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\LEVELSET-REPORT-GEMINI-2026-03-29.md
 ``n
-
 ### Group 173: Bitterroot National Forest__src_scratch-folder__7f1695cf.md
 
 **Size**: 0.22 KB | **Hash**: `4BFD74EB813617849F2D967E960DD211` | **Files**: 2
@@ -2293,7 +2121,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\LEVELSET-REPORT-GEMINI-2026-03-29.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Bitterroot National Forest__src_scratch-folder__7f1695cf.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Bitterroot National Forest__src_scratch-folder__89c0847e.md
 ``n
-
 ### Group 174: Bliss reservoir__src_scratch-folder__803d6783.md
 
 **Size**: 0.2 KB | **Hash**: `EBBD754D1CD3E31323CEFB41D1D7B465` | **Files**: 2
@@ -2301,7 +2128,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Bitterroot National Forest__src_scratch-fo
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Bliss reservoir__src_scratch-folder__803d6783.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Bliss reservoir__src_scratch-folder__a65faa8f.md
 ``n
-
 ### Group 175: Mike_simpson_official_portrait.jpg
 
 **Size**: 4955.31 KB | **Hash**: `FDF66A68B04941E6D95BD691BADACDC1` | **Files**: 2
@@ -2309,7 +2135,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Bliss reservoir__src_scratch-folder__a65fa
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Mike_simpson_official_portrait.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\Mike_simpson_official_portrait__src_scratch-folder__1347c3b4.jpg
 ``n
-
 ### Group 176: Barack Obama.md
 
 **Size**: 0.12 KB | **Hash**: `0AA2C355CBDF740B308B684B37188B5C` | **Files**: 2
@@ -2317,7 +2142,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Mike_simpson_official_portrait__src_scratc
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Barack Obama.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Donald Trump.md
 ``n
-
 ### Group 177: DTP 7 Fundamentals Gap Quiz (2).xlsx
 
 **Size**: 74.56 KB | **Hash**: `1039E84D4F3D6028F8527D88DF8F5E30` | **Files**: 3
@@ -2326,7 +2150,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Donald Trump.md
 C:\Users\loganf\Documents\IDAHO-VAULT\DTP 7 Fundamentals Gap Quiz.xlsx
 C:\Users\loganf\Documents\IDAHO-VAULT\DTP 7 Fundamentals Gap Quiz__src_scratch-folder__d90b52aa.xlsx
 ``n
-
 ### Group 178: Arkansas.md
 
 **Size**: 0.09 KB | **Hash**: `5C190F03CFAC00FBEF9188FA5BE132AF` | **Files**: 5
@@ -2337,7 +2160,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Illinois.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Missouri.md
 C:\Users\loganf\Documents\IDAHO-VAULT\South Dakota.md
 ``n
-
 ### Group 179: Amanda Brailsford.md
 
 **Size**: 0.09 KB | **Hash**: `837F205AB7472AFF5B176FA1823C1941` | **Files**: 4
@@ -2347,7 +2169,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\David Gratton.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Jessica Lorello.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Molly Huskey.md
 ``n
-
 ### Group 180: Paradise Creek__src_scratch-folder__5f1565bb.md
 
 **Size**: 0.09 KB | **Hash**: `14D169EBCB7CFAA4E6ED19C242C35F1E` | **Files**: 2
@@ -2355,7 +2176,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Molly Huskey.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Paradise Creek__src_scratch-folder__5f1565bb.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Paradise Creek__src_scratch-folder__c8f901e6.md
 ``n
-
 ### Group 181: 1921 Borah - Portrait 1 1.md
 
 **Size**: 0.19 KB | **Hash**: `E2A39C2FDBFBE727D9F1277F85F51556` | **Files**: 2
@@ -2363,7 +2183,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Paradise Creek__src_scratch-folder__c8f901
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\1921 Borah - Portrait 1 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\1921 Borah - Portrait 1.md
 ``n
-
 ### Group 182: Lower Granite dam__src_scratch-folder__044f10d3.md
 
 **Size**: 0.24 KB | **Hash**: `535AADE00F444CE2F2199BADC9B207B1` | **Files**: 2
@@ -2371,7 +2190,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\1921 Borah - Portrait 1.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Lower Granite dam__src_scratch-folder__044f10d3.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Lower Granite dam__src_scratch-folder__ac88b8ca.md
 ``n
-
 ### Group 183: 1911 T Roosevelt - University of Idaho 1 1.md
 
 **Size**: 0.47 KB | **Hash**: `47171AC5D89D952CFA481B4A60BC0A59` | **Files**: 3
@@ -2380,7 +2198,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Lower Granite dam__src_scratch-folder__ac8
 C:\Users\loganf\Documents\IDAHO-VAULT\1911 T Roosevelt - University of Idaho 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\1911 T Roosevelt - University of Idaho.md
 ``n
-
 ### Group 184: CDA-basin-004.jpg
 
 **Size**: 30455.31 KB | **Hash**: `9F5EC3D62E99C467A5EC4D0A2F53BAD7` | **Files**: 2
@@ -2388,7 +2205,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\1911 T Roosevelt - University of Idaho.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\CDA-basin-004.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\CDA-basin-004__src_scratch-folder__9b421ba6.jpg
 ``n
-
 ### Group 185: 2026-03-10-Manwaring (2).txt
 
 **Size**: 6.73 KB | **Hash**: `154E810178375F4F587749373353EDB3` | **Files**: 3
@@ -2397,7 +2213,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\CDA-basin-004__src_scratch-folder__9b421ba
 C:\Users\loganf\Documents\IDAHO-VAULT\2026-03-10-Manwaring.txt
 C:\Users\loganf\Documents\IDAHO-VAULT\Mar 10 at 2-23 PM.txt
 ``n
-
 ### Group 186: Vol. 01 Issue 13 - Informed Decisions 1.md
 
 **Size**: 0.11 KB | **Hash**: `6C2BB01D594EA5832ACE6CBDA63BB180` | **Files**: 3
@@ -2406,7 +2221,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Mar 10 at 2-23 PM.txt
 C:\Users\loganf\Documents\IDAHO-VAULT\Vol. 01 Issue 13 - Informed Decisions 2.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Vol. 01 Issue 13 - Informed Decisions.md
 ``n
-
 ### Group 187: 26B-Nelsen-Jack.jpg
 
 **Size**: 1067.84 KB | **Hash**: `E062B9CD6A623D99E06A6F8EF554B077` | **Files**: 2
@@ -2414,7 +2228,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Vol. 01 Issue 13 - Informed Decisions.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\26B-Nelsen-Jack.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\Nelsen.Jack_26B_5x7print.jpg
 ``n
-
 ### Group 188: - Fandom, Inc. - Ranna 1.md
 
 **Size**: 4.31 KB | **Hash**: `F0AE0EA900EF0817800D1D4C2D8DC8DC` | **Files**: 2
@@ -2422,7 +2235,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Nelsen.Jack_26B_5x7print.jpg
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\- Fandom, Inc. - Ranna 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\- Fandom, Inc. - Ranna.md
 ``n
-
 ### Group 189: - Fandom, Inc. - Uraziel 1.md
 
 **Size**: 3.39 KB | **Hash**: `9C01F617E847DED11C9DAAD77B68A511` | **Files**: 2
@@ -2430,7 +2242,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\- Fandom, Inc. - Ranna.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\- Fandom, Inc. - Uraziel 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\- Fandom, Inc. - Uraziel.md
 ``n
-
 ### Group 190: 1938 E Roosevelt - University of Idaho 1 1.md
 
 **Size**: 0.79 KB | **Hash**: `202CDD7CEC49B11288237B08987CEDE2` | **Files**: 3
@@ -2439,7 +2250,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\- Fandom, Inc. - Uraziel.md
 C:\Users\loganf\Documents\IDAHO-VAULT\1938 E Roosevelt - University of Idaho 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\1938 E Roosevelt - University of Idaho.md
 ``n
-
 ### Group 191: 2026-04-20 - KJZZ - 2 congressmen are running for governor in Arizona. They're part of a national trend.md
 
 **Size**: 4.72 KB | **Hash**: `7474EB63DAD2A398ABA908615607B1E6` | **Files**: 2
@@ -2447,7 +2257,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\1938 E Roosevelt - University of Idaho.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\2026-04-20 - KJZZ - 2 congressmen are running for governor in Arizona. They're part of a national trend.md
 C:\Users\loganf\Documents\IDAHO-VAULT\2026-04-20 - NBC News, NBC News - Apple says John Ternus will be new CEO, Tim Cook will transition to executive chairman.md
 ``n
-
 ### Group 192: 1935 FDR - A Mule and a Plow 1 1.md
 
 **Size**: 0.3 KB | **Hash**: `9DD250CFEEE2B652084ADF8ABABB2B0E` | **Files**: 3
@@ -2456,7 +2265,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\2026-04-20 - NBC News, NBC News - Apple sa
 C:\Users\loganf\Documents\IDAHO-VAULT\1935 FDR - A Mule and a Plow 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\1935 FDR - A Mule and a Plow.md
 ``n
-
 ### Group 193: 1707-A (1).pdf
 
 **Size**: 954.11 KB | **Hash**: `71B48736683DAC7561C6531426FFECF0` | **Files**: 2
@@ -2464,7 +2272,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\1935 FDR - A Mule and a Plow.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\1707-A (1).pdf
 C:\Users\loganf\Documents\IDAHO-VAULT\1707-A.pdf
 ``n
-
 ### Group 194: Image (10).jpg
 
 **Size**: 2619.2 KB | **Hash**: `07E58A31B4F36EB23C34A56F8E474DA6` | **Files**: 2
@@ -2472,7 +2279,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\1707-A.pdf
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Image (10).jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\Image (9).jpg
 ``n
-
 ### Group 195: 122636004.pdf
 
 **Size**: 764.27 KB | **Hash**: `CA6B4FE544C5C7B3A88CEEFDDBED7278` | **Files**: 2
@@ -2480,7 +2286,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Image (9).jpg
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\122636004.pdf
 C:\Users\loganf\Documents\IDAHO-VAULT\FY2026 Q2 ISP Bill.pdf
 ``n
-
 ### Group 196: black bear.md
 
 **Size**: 0.11 KB | **Hash**: `AAF0D0F9CF99702A449244D44A732AC9` | **Files**: 5
@@ -2491,7 +2296,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\mountain lion.md
 C:\Users\loganf\Documents\IDAHO-VAULT\pronghorn.md
 C:\Users\loganf\Documents\IDAHO-VAULT\wolf.md
 ``n
-
 ### Group 197: 6S-Foreman-Dan.jpg
 
 **Size**: 879.85 KB | **Hash**: `9B8C29D848E5A8D0DE502713F9942D39` | **Files**: 2
@@ -2499,7 +2303,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\wolf.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\6S-Foreman-Dan.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\Foreman.Daniel_6_5x7print.jpg
 ``n
-
 ### Group 198: BobbyMontoya012.jpg
 
 **Size**: 1359.81 KB | **Hash**: `1FD39BBFB7AA0A796C08754181A9D069` | **Files**: 2
@@ -2507,7 +2310,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Foreman.Daniel_6_5x7print.jpg
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya012.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya012__src_scratch-folder__810bc2af.jpg
 ``n
-
 ### Group 199: SCRATCH--93486111-ecff-80a4-5e44-162ed053c646-2026-01-29_00-15-52-loganf.prproj
 
 **Size**: 5405.84 KB | **Hash**: `548A1BA2A6FC619D89CCAE1832A122B5` | **Files**: 2
@@ -2515,7 +2317,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya012__src_scratch-folder__810bc
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--93486111-ecff-80a4-5e44-162ed053c646-2026-01-29_00-15-52-loganf.prproj
 C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--93486111-ecff-80a4-5e44-162ed053c646-2026-01-29_00-15-52-loganf__src_scratch-folder__8716b493.prproj
 ``n
-
 ### Group 200: H0395A2 (2).pdf
 
 **Size**: 37.79 KB | **Hash**: `EC295356DFD31BC26F6387A365EC259D` | **Files**: 2
@@ -2523,7 +2324,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--93486111-ecff-80a4-5e44-162ed053c
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\H0395A2 (2).pdf
 C:\Users\loganf\Documents\IDAHO-VAULT\H0395A2__src_scratch-folder__33876e03.pdf
 ``n
-
 ### Group 201: SCRATCH--55aff571-55fe-e103-c089-36bea65e964c-2026-01-21_16-28-01-loganf.prproj
 
 **Size**: 4103.99 KB | **Hash**: `BF9F785CDFEA5C74F96A15DEF741C4D0` | **Files**: 2
@@ -2531,7 +2331,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\H0395A2__src_scratch-folder__33876e03.pdf
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--55aff571-55fe-e103-c089-36bea65e964c-2026-01-21_16-28-01-loganf.prproj
 C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--55aff571-55fe-e103-c089-36bea65e964c-2026-01-21_16-28-01-loganf__src_scratch-folder__d268558a.prproj
 ``n
-
 ### Group 202: chukar.md
 
 **Size**: 0.09 KB | **Hash**: `5E99718F0733FBF34B7383514D0E5431` | **Files**: 6
@@ -2543,7 +2342,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\pheasant.md
 C:\Users\loganf\Documents\IDAHO-VAULT\sandhill cranes.md
 C:\Users\loganf\Documents\IDAHO-VAULT\turkey.md
 ``n
-
 ### Group 203: CHARTER.md
 
 **Size**: 0.25 KB | **Hash**: `D863CCD87F4911ED906D4C1CA76D7ECF` | **Files**: 2
@@ -2551,7 +2349,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\turkey.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\CHARTER.md
 C:\Users\loganf\Documents\IDAHO-VAULT\THE CORE.md
 ``n
-
 ### Group 204: BobbyMontoya013.jpg
 
 **Size**: 1073.73 KB | **Hash**: `FA66B790A834A30B109E96FB14FB6B23` | **Files**: 2
@@ -2559,7 +2356,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\THE CORE.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya013.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya013__src_scratch-folder__e8f56599.jpg
 ``n
-
 ### Group 205: IR 2017 L3 Name Super 1920x1080.png
 
 **Size**: 27.6 KB | **Hash**: `E1C640FD9613D6CCF228C58005462C13` | **Files**: 3
@@ -2568,7 +2364,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya013__src_scratch-folder__e8f56
 C:\Users\loganf\Documents\IDAHO-VAULT\IR 2017 L3 Name Super 1920x1080__src_scratch-folder__01128c51.png
 C:\Users\loganf\Documents\IDAHO-VAULT\IR 2017 L3 Name Super 1920x1080__src_scratch-folder__10fbc1b0.png
 ``n
-
 ### Group 206: STPOD0001-MASTER.wav
 
 **Size**: 361697.57 KB | **Hash**: `6C27C6A34D47CF7DCF731A6393B05BA3` | **Files**: 2
@@ -2576,7 +2371,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\IR 2017 L3 Name Super 1920x1080__src_scrat
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\STPOD0001-MASTER.wav
 C:\Users\loganf\Documents\IDAHO-VAULT\STPOD0001-MASTER__src_scratch-folder__16a08099.wav
 ``n
-
 ### Group 207: BobbyMontoya022.jpg
 
 **Size**: 3151.99 KB | **Hash**: `95D1BD5DBF8C8FD4D1B5B620EA874D18` | **Files**: 2
@@ -2584,7 +2378,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\STPOD0001-MASTER__src_scratch-folder__16a0
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya022.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya022__src_scratch-folder__4c2a2e84.jpg
 ``n
-
 ### Group 208: minidata-2026-04-01.csv
 
 **Size**: 36.28 KB | **Hash**: `ED980D458EC5172187766416127B1996` | **Files**: 2
@@ -2592,7 +2385,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya022__src_scratch-folder__4c2a2
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\minidata-2026-04-01.csv
 C:\Users\loganf\Documents\IDAHO-VAULT\minidata-2026-04-01.original.csv
 ``n
-
 ### Group 209: Poynter audience purposes (2).jpg
 
 **Size**: 284.16 KB | **Hash**: `0869F110661240BD3E0BF0DAACFFF703` | **Files**: 2
@@ -2600,7 +2392,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\minidata-2026-04-01.original.csv
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Poynter audience purposes (2).jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\Poynter audience purposes.jpg
 ``n
-
 ### Group 210: - Fandom, Inc. - Nine Bright Shiners 1.md
 
 **Size**: 8.47 KB | **Hash**: `8D7B22B064E99AE799BE67844ED91E58` | **Files**: 2
@@ -2608,7 +2399,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Poynter audience purposes.jpg
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\- Fandom, Inc. - Nine Bright Shiners 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\- Fandom, Inc. - Nine Bright Shiners.md
 ``n
-
 ### Group 211: American Falls dam__src_scratch-folder__1c9a5910.md
 
 **Size**: 0.16 KB | **Hash**: `7297E5C135CACE75445242591D582B23` | **Files**: 2
@@ -2616,7 +2406,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\- Fandom, Inc. - Nine Bright Shiners.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\American Falls dam__src_scratch-folder__1c9a5910.md
 C:\Users\loganf\Documents\IDAHO-VAULT\American Falls dam__src_scratch-folder__f101df5b.md
 ``n
-
 ### Group 212: Vol. 01 Issue 14 - Our New (Old) Debate 1.md
 
 **Size**: 0.16 KB | **Hash**: `96BE64EA939AF70DE371A250F01E4265` | **Files**: 3
@@ -2625,7 +2414,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\American Falls dam__src_scratch-folder__f1
 C:\Users\loganf\Documents\IDAHO-VAULT\Vol. 01 Issue 14 - Our New (Old) Debate 2.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Vol. 01 Issue 14 - Our New (Old) Debate.md
 ``n
-
 ### Group 213: vlcsnap-2023-08-17-15h59m57s365.png
 
 **Size**: 11861.62 KB | **Hash**: `3C55FA88E2A59DF7AA34C7031EAB1D3C` | **Files**: 2
@@ -2633,7 +2421,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Vol. 01 Issue 14 - Our New (Old) Debate.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\vlcsnap-2023-08-17-15h59m57s365.png
 C:\Users\loganf\Documents\IDAHO-VAULT\vlcsnap-2023-08-17-15h59m57s365__src_scratch-folder__067bcd40.png
 ``n
-
 ### Group 214: Screenshot 2026-03-18 115016.jpg
 
 **Size**: 184.58 KB | **Hash**: `C49DFD9D0D19E2EE97483C7C9C8D6DA7` | **Files**: 2
@@ -2641,7 +2428,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\vlcsnap-2023-08-17-15h59m57s365__src_scrat
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Screenshot 2026-03-18 115016.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\Screenshot 2026-03-18 115016__src_scratch-folder__d798f900.jpg
 ``n
-
 ### Group 215: 2024-01-02 - 404 Media - North Carolina and Montana Just Lost Access to Pornhub (2).md
 
 **Size**: 4.81 KB | **Hash**: `30AD3741F49E7309AF4326FB21EEC5A2` | **Files**: 2
@@ -2649,7 +2435,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Screenshot 2026-03-18 115016__src_scratch-
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\2024-01-02 - 404 Media - North Carolina and Montana Just Lost Access to Pornhub (2).md
 C:\Users\loganf\Documents\IDAHO-VAULT\2024-01-02 - 404 Media - North Carolina and Montana Just Lost Access to Pornhub__src_scratch-folder__a9fd76c5.md
 ``n
-
 ### Group 216: CJ Strike reservoir__src_scratch-folder__041175c4.md
 
 **Size**: 0.16 KB | **Hash**: `24338D901363A149741E6F0B1A963D57` | **Files**: 2
@@ -2657,7 +2442,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\2024-01-02 - 404 Media - North Carolina an
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\CJ Strike reservoir__src_scratch-folder__041175c4.md
 C:\Users\loganf\Documents\IDAHO-VAULT\CJ Strike reservoir__src_scratch-folder__eed1023a.md
 ``n
-
 ### Group 217: Borah - Senate Biography 1 1.md
 
 **Size**: 11.11 KB | **Hash**: `984E49AF51038CA8C5EC192B6AE47E77` | **Files**: 3
@@ -2666,7 +2450,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\CJ Strike reservoir__src_scratch-folder__e
 C:\Users\loganf\Documents\IDAHO-VAULT\Borah - Senate Biography 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Borah - Senate Biography.md
 ``n
-
 ### Group 218: Jennifer Novak (2).md
 
 **Size**: 0.7 KB | **Hash**: `305E15DF71906DAD033C69437861A585` | **Files**: 2
@@ -2674,7 +2457,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Borah - Senate Biography.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Jennifer Novak (2).md
 C:\Users\loganf\Documents\IDAHO-VAULT\Jennifer Novak__src_scratch-folder__93c52780.md
 ``n
-
 ### Group 219: PXL_20260212_212128041.jpg
 
 **Size**: 2448.37 KB | **Hash**: `FB9FF86CEDBD769764EA3F489E68EBF1` | **Files**: 2
@@ -2682,7 +2464,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Jennifer Novak__src_scratch-folder__93c527
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\PXL_20260212_212128041.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\PXL_20260212_212128041__src_scratch-folder__51b8ef65.jpg
 ``n
-
 ### Group 220: 1911 T Roosevelt - Argonaut I 1 1.md
 
 **Size**: 2.34 KB | **Hash**: `E2A11F705A38476669EE1820C68B75F0` | **Files**: 3
@@ -2691,7 +2472,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\PXL_20260212_212128041__src_scratch-folder
 C:\Users\loganf\Documents\IDAHO-VAULT\1911 T Roosevelt - Argonaut I 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\1911 T Roosevelt - Argonaut I.md
 ``n
-
 ### Group 221: Borah Peak__src_scratch-folder__9e723bc7.md
 
 **Size**: 0.16 KB | **Hash**: `AE9D6DBE5099ADD91B2583BBB1987823` | **Files**: 2
@@ -2699,7 +2479,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\1911 T Roosevelt - Argonaut I.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Borah Peak__src_scratch-folder__9e723bc7.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Borah Peak__src_scratch-folder__b8db9976.md
 ``n
-
 ### Group 222: Salmon River__src_scratch-folder__37d7dd28.md
 
 **Size**: 0.16 KB | **Hash**: `E6028DB38B2B4D36DE1B832BE3914079` | **Files**: 2
@@ -2707,7 +2486,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Borah Peak__src_scratch-folder__b8db9976.m
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Salmon River__src_scratch-folder__37d7dd28.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Salmon River__src_scratch-folder__a90e8b5d.md
 ``n
-
 ### Group 223: Kevin Richert (2)__src_scratch-folder__aec972f3.md
 
 **Size**: 0.51 KB | **Hash**: `626939C00513B968D8C5F8FA13524FAC` | **Files**: 2
@@ -2715,7 +2493,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Salmon River__src_scratch-folder__a90e8b5d
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Kevin Richert (2)__src_scratch-folder__aec972f3.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Kevin Richert__src_scratch-folder__d1b2272b.md
 ``n
-
 ### Group 224: drainage districts.md
 
 **Size**: 0.1 KB | **Hash**: `2D123469C30E1051FAF7535AA47727C4` | **Files**: 2
@@ -2723,7 +2500,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Kevin Richert__src_scratch-folder__d1b2272
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\drainage districts.md
 C:\Users\loganf\Documents\IDAHO-VAULT\levee districts.md
 ``n
-
 ### Group 225: Jason Koebler.md
 
 **Size**: 0.1 KB | **Hash**: `A79FDD24174CBED2718037F8D96F7D68` | **Files**: 2
@@ -2731,7 +2507,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\levee districts.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Jason Koebler.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Samantha Cole.md
 ``n
-
 ### Group 226: PXL_20260122_163612847.jpg
 
 **Size**: 1949.17 KB | **Hash**: `EFB13EC02647DD916D3D8C05C4F09110` | **Files**: 2
@@ -2739,7 +2514,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Samantha Cole.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\PXL_20260122_163612847.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\PXL_20260122_163612847__src_scratch-folder__9a918ff6.jpg
 ``n
-
 ### Group 227: 2025-11-07 - Idaho Capital Sun - After operating without official rules Idaho budget committee tweaks voting procedures (2).md
 
 **Size**: 1.19 KB | **Hash**: `FAC84828A695855F373E52FD630A9F56` | **Files**: 2
@@ -2747,7 +2521,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\PXL_20260122_163612847__src_scratch-folder
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\2025-11-07 - Idaho Capital Sun - After operating without official rules Idaho budget committee tweaks voting procedures (2).md
 C:\Users\loganf\Documents\IDAHO-VAULT\2025-11-07 - Idaho Capital Sun - After operating without official rules Idaho budget committee tweaks voting procedures__src_scratch-folder__8629d137.md
 ``n
-
 ### Group 228: SCRATCH--55aff571-55fe-e103-c089-36bea65e964c-2025-12-29_16-03-58-loganf.prproj
 
 **Size**: 2711.24 KB | **Hash**: `BB23948DA74D90A2176A1F27C6A05B5B` | **Files**: 2
@@ -2755,7 +2528,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\2025-11-07 - Idaho Capital Sun - After ope
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--55aff571-55fe-e103-c089-36bea65e964c-2025-12-29_16-03-58-loganf.prproj
 C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--55aff571-55fe-e103-c089-36bea65e964c-2025-12-29_16-03-58-loganf__src_scratch-folder__9febbd3b.prproj
 ``n
-
 ### Group 229: JFAC Rules (2).md
 
 **Size**: 2.76 KB | **Hash**: `6D7E6DB60764C3A65CC921E0896F7738` | **Files**: 2
@@ -2763,7 +2535,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--55aff571-55fe-e103-c089-36bea65e9
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\JFAC Rules (2).md
 C:\Users\loganf\Documents\IDAHO-VAULT\JFAC Rules__src_scratch-folder__b44ae67b.md
 ``n
-
 ### Group 230: BobbyMontoya018.jpg
 
 **Size**: 3901.04 KB | **Hash**: `892FE65B56D3E7EC3A9495DA97EA3E7D` | **Files**: 2
@@ -2771,7 +2542,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\JFAC Rules__src_scratch-folder__b44ae67b.m
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya018.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya018__src_scratch-folder__8211259b.jpg
 ``n
-
 ### Group 231: Vol. 01 Issue 04 - (Profitable) 1.md
 
 **Size**: 0.27 KB | **Hash**: `C4679962504A3D807616EE583B6EA0F8` | **Files**: 3
@@ -2780,7 +2550,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya018__src_scratch-folder__82112
 C:\Users\loganf\Documents\IDAHO-VAULT\Vol. 01 Issue 04 - (Profitable) 2.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Vol. 01 Issue 04 - (Profitable).md
 ``n
-
 ### Group 232: 1928 Borah - Hitler 1 1.md
 
 **Size**: 0.51 KB | **Hash**: `F253A0500EB853279AEE62CAE1587632` | **Files**: 3
@@ -2789,7 +2558,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Vol. 01 Issue 04 - (Profitable).md
 C:\Users\loganf\Documents\IDAHO-VAULT\1928 Borah - Hitler 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\1928 Borah - Hitler.md
 ``n
-
 ### Group 233: BobbyMontoya004back Ratican's Bar Idaho City 1965 Keith McFarland Montoya Lindell.jpg
 
 **Size**: 210.96 KB | **Hash**: `1A8450C0FA787ADEB77E4A1FF1A23893` | **Files**: 2
@@ -2797,7 +2565,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\1928 Borah - Hitler.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya004back Ratican's Bar Idaho City 1965 Keith McFarland Montoya Lindell.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya004back Ratican's Bar Idaho City 1965 Keith McFarland Montoya Lindell__src_scratch-folder__3810caf7.jpg
 ``n
-
 ### Group 234: Big Wood River__src_scratch-folder__ddd7fd38.md
 
 **Size**: 0.08 KB | **Hash**: `6759D8465A4DFB0C07AD4A6EC35990CC` | **Files**: 2
@@ -2805,7 +2572,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya004back Ratican's Bar Idaho Ci
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Big Wood River__src_scratch-folder__ddd7fd38.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Big Wood River__src_scratch-folder__ea803709.md
 ``n
-
 ### Group 235: BobbyMontoya014back A Bunch of Shit Heads.jpg
 
 **Size**: 324.2 KB | **Hash**: `CFDF4C4F72CD38618E5F64AD6CFED07C` | **Files**: 2
@@ -2813,7 +2579,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Big Wood River__src_scratch-folder__ea8037
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya014back A Bunch of Shit Heads.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya014back A Bunch of Shit Heads__src_scratch-folder__15073722.jpg
 ``n
-
 ### Group 236: 2026-04-26 - LSP Servers.md
 
 **Size**: 5.24 KB | **Hash**: `973F807F7F996487BF8A6D9C3E924BE7` | **Files**: 2
@@ -2821,7 +2586,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya014back A Bunch of Shit Heads_
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\2026-04-26 - LSP Servers.md
 C:\Users\loganf\Documents\IDAHO-VAULT\2026-04-26 - OpenCode - LSP Servers.md
 ``n
-
 ### Group 237: G98ta-8bcAEgVzV (2).jpg
 
 **Size**: 243.52 KB | **Hash**: `5450C0970DD9BD5E70D5D580551BB25B` | **Files**: 3
@@ -2830,7 +2594,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\2026-04-26 - OpenCode - LSP Servers.md
 C:\Users\loganf\Documents\IDAHO-VAULT\G98ta-8bcAEgVzV.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\G98ta-8bcAEgVzV__src_scratch-folder__ea3aa190.jpg
 ``n
-
 ### Group 238: Slate Creek__src_scratch-folder__25af286e.md
 
 **Size**: 0.18 KB | **Hash**: `28B8D6A4CAB4FD38EB3A614BC5A223A9` | **Files**: 2
@@ -2838,7 +2601,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\G98ta-8bcAEgVzV__src_scratch-folder__ea3aa
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Slate Creek__src_scratch-folder__25af286e.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Slate Creek__src_scratch-folder__7bf0024a.md
 ``n
-
 ### Group 239: Twin Falls reservoir__src_scratch-folder__2b0f8b47.md
 
 **Size**: 0.18 KB | **Hash**: `AE05EA9D06423FAD6E8004CFF0936DAA` | **Files**: 2
@@ -2846,7 +2608,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Slate Creek__src_scratch-folder__7bf0024a.
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Twin Falls reservoir__src_scratch-folder__2b0f8b47.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Twin Falls reservoir__src_scratch-folder__9a96dfdd.md
 ``n
-
 ### Group 240: Upper Salmon Falls dam__src_scratch-folder__04b1bc11.md
 
 **Size**: 0.18 KB | **Hash**: `33F706945A90CCF87C107EE9BC8B8BC3` | **Files**: 2
@@ -2854,7 +2615,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Twin Falls reservoir__src_scratch-folder__
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Upper Salmon Falls dam__src_scratch-folder__04b1bc11.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Upper Salmon Falls dam__src_scratch-folder__9e2f79b4.md
 ``n
-
 ### Group 241: Hells Canyon dam complex__src_scratch-folder__45cf5b2d.md
 
 **Size**: 0.21 KB | **Hash**: `431A77E7A7B4793C9A1836BE4CF4E06A` | **Files**: 2
@@ -2862,7 +2622,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Upper Salmon Falls dam__src_scratch-folder
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Hells Canyon dam complex__src_scratch-folder__45cf5b2d.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Hells Canyon dam complex__src_scratch-folder__d4166e3b.md
 ``n
-
 ### Group 242: G4FB9TzW0AADnbp (2).jpg
 
 **Size**: 183.74 KB | **Hash**: `A499CA9ADFF9B9F0A0E31947B1F4D509` | **Files**: 3
@@ -2871,7 +2630,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Hells Canyon dam complex__src_scratch-fold
 C:\Users\loganf\Documents\IDAHO-VAULT\G4FB9TzW0AADnbp.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\G4FB9TzW0AADnbp__src_scratch-folder__9f179278.jpg
 ``n
-
 ### Group 243: 119908035.pdf
 
 **Size**: 948.15 KB | **Hash**: `4BAEA1EE0C6F220782AB0A46C5061F4B` | **Files**: 2
@@ -2879,7 +2637,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\G4FB9TzW0AADnbp__src_scratch-folder__9f179
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\119908035.pdf
 C:\Users\loganf\Documents\IDAHO-VAULT\FY2026 Q1 ISP Bill.pdf
 ``n
-
 ### Group 244: Nov. 3 Fentanyl.docx
 
 **Size**: 25.95 KB | **Hash**: `E7878627342F594F1BE106B2F5DE37CD` | **Files**: 2
@@ -2887,7 +2644,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\FY2026 Q1 ISP Bill.pdf
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Nov. 3 Fentanyl.docx
 C:\Users\loganf\Documents\IDAHO-VAULT\Nov. 3 Fentanyl__src_scratch-folder__5a298255.docx
 ``n
-
 ### Group 245: Kaniksu National Forest__src_scratch-folder__ac8f0fa5.md
 
 **Size**: 0.24 KB | **Hash**: `F538658499C9E9205078D65A639FFF85` | **Files**: 2
@@ -2895,7 +2651,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Nov. 3 Fentanyl__src_scratch-folder__5a298
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Kaniksu National Forest__src_scratch-folder__ac8f0fa5.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Kaniksu National Forest__src_scratch-folder__faa045b8.md
 ``n
-
 ### Group 246: Statue 1.md
 
 **Size**: 0.13 KB | **Hash**: `4C5C2006F860B44DA278EA260E82255D` | **Files**: 2
@@ -2903,7 +2658,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Kaniksu National Forest__src_scratch-folde
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Statue 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Statue.md
 ``n
-
 ### Group 247: Church - Senate Biograhy 1 1.md
 
 **Size**: 1.3 KB | **Hash**: `006ABBB914A204BD69B924E39D011364` | **Files**: 3
@@ -2912,7 +2666,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Statue.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Church - Senate Biograhy 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Church - Senate Biograhy.md
 ``n
-
 ### Group 248: Jan 24 Critchfield.docx
 
 **Size**: 22.07 KB | **Hash**: `FA0264BF62DC45C6C7A471C725982F45` | **Files**: 2
@@ -2920,7 +2673,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Church - Senate Biograhy.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Jan 24 Critchfield.docx
 C:\Users\loganf\Documents\IDAHO-VAULT\Jan 24 Critchfield__src_scratch-folder__38ddb2b1.docx
 ``n
-
 ### Group 249: Interview Bites_REF (1).mp4
 
 **Size**: 1340943.43 KB | **Hash**: `8379AD793AC407E9321B27D3D58F91A6` | **Files**: 2
@@ -2928,7 +2680,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Jan 24 Critchfield__src_scratch-folder__38
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Interview Bites_REF (1).mp4
 C:\Users\loganf\Documents\IDAHO-VAULT\Interview Bites_REF.mp4
 ``n
-
 ### Group 250: - Fandom, Inc. - The Charter 1.md
 
 **Size**: 10.37 KB | **Hash**: `3D41C76F595449AF0B084F8EFAADE053` | **Files**: 2
@@ -2936,7 +2687,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Interview Bites_REF.mp4
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\- Fandom, Inc. - The Charter 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\- Fandom, Inc. - The Charter.md
 ``n
-
 ### Group 251: Bear River__src_scratch-folder__46736de1.md
 
 **Size**: 0.14 KB | **Hash**: `EAF1C8C33DD86DF29D6BF356AAE0FA0F` | **Files**: 2
@@ -2944,7 +2694,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\- Fandom, Inc. - The Charter.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Bear River__src_scratch-folder__46736de1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Bear River__src_scratch-folder__8b65312a.md
 ``n
-
 ### Group 252: Spokane River__src_scratch-folder__a263f45e.md
 
 **Size**: 0.14 KB | **Hash**: `277C73CC3F7D88E52AE512500036E65E` | **Files**: 2
@@ -2952,7 +2701,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Bear River__src_scratch-folder__8b65312a.m
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Spokane River__src_scratch-folder__a263f45e.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Spokane River__src_scratch-folder__cc9124d6.md
 ``n
-
 ### Group 253: ITD State Street Building Sale (2).md
 
 **Size**: 2.92 KB | **Hash**: `C4ADFA24B90553CAADA37B8BFF667E08` | **Files**: 2
@@ -2960,7 +2708,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Spokane River__src_scratch-folder__cc9124d
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\ITD State Street Building Sale (2).md
 C:\Users\loganf\Documents\IDAHO-VAULT\ITD State Street Building Sale__src_scratch-folder__6457690a.md
 ``n
-
 ### Group 254: 1921 Borah - Congress 1 1.md
 
 **Size**: 0.19 KB | **Hash**: `1EF1562CFBDF563E8777FF90EF7ABD72` | **Files**: 2
@@ -2968,7 +2715,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\ITD State Street Building Sale__src_scratc
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\1921 Borah - Congress 1 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\1921 Borah - Congress 1.md
 ``n
-
 ### Group 255: 1936 Borah - Meeting 1 1.md
 
 **Size**: 0.19 KB | **Hash**: `1504A9C53F3D617E9CB315D5683389CB` | **Files**: 3
@@ -2977,7 +2723,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\1921 Borah - Congress 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\1936 Borah - Meeting 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\1936 Borah - Meeting.md
 ``n
-
 ### Group 256: Payette National Forest__src_scratch-folder__23a5078c.md
 
 **Size**: 0.19 KB | **Hash**: `4A91066EF5022B0F937E108E9CF30EBC` | **Files**: 2
@@ -2985,7 +2730,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\1936 Borah - Meeting.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Payette National Forest__src_scratch-folder__23a5078c.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Payette National Forest__src_scratch-folder__76183a81.md
 ``n
-
 ### Group 257: Dustin Manwaring (2)__src_scratch-folder__d98168da.md
 
 **Size**: 2.4 KB | **Hash**: `9FA371BCB80CED59FFDB28BF69224499` | **Files**: 2
@@ -2993,7 +2737,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Payette National Forest__src_scratch-folde
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Dustin Manwaring (2)__src_scratch-folder__d98168da.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Dustin Manwaring__src_scratch-folder__a984b69a.md
 ``n
-
 ### Group 258: - OpenClaw - Google Chat 1.md
 
 **Size**: 10.89 KB | **Hash**: `9C0B540162DA3ABB6E609312C9A5537F` | **Files**: 2
@@ -3001,7 +2744,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Dustin Manwaring__src_scratch-folder__a984
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\- OpenClaw - Google Chat 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\- OpenClaw - Google Chat.md
 ``n
-
 ### Group 259: Screenshot 2025-12-23 103911.jpg
 
 **Size**: 35.54 KB | **Hash**: `FC1F08DAAE7BC28AB661D7BC54A94236` | **Files**: 2
@@ -3009,7 +2751,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\- OpenClaw - Google Chat.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Screenshot 2025-12-23 103911.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\Screenshot 2025-12-23 103911__src_scratch-folder__12580607.jpg
 ``n
-
 ### Group 260: IMG_20251223_163435 (2).jpg
 
 **Size**: 2137.7 KB | **Hash**: `7BB4AAA3872A1EFABDFC2AA74D362BDB` | **Files**: 2
@@ -3017,7 +2758,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Screenshot 2025-12-23 103911__src_scratch-
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\IMG_20251223_163435 (2).jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\IMG_20251223_163435.jpg
 ``n
-
 ### Group 261: 1924 Borah - Campaign Contributions 1 1.md
 
 **Size**: 0.91 KB | **Hash**: `6C5B554A27C9C073180762CAEF0F4416` | **Files**: 2
@@ -3025,7 +2765,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\IMG_20251223_163435.jpg
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\1924 Borah - Campaign Contributions 1 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\1924 Borah - Campaign Contributions 1.md
 ``n
-
 ### Group 262: BobbyMontoya024back I used to be a Mexican. Photo by Alan Frentress Bach Studios early 60's. The suit doesn't fit any more. The Kentucky Fried Chicano, Bobby.jpg
 
 **Size**: 1395.18 KB | **Hash**: `91DE0CB7AAAC56137B59A3ACE7C19E07` | **Files**: 2
@@ -3033,7 +2772,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\1924 Borah - Campaign Contributions 1.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya024back I used to be a Mexican. Photo by Alan Frentress Bach Studios early 60's. The suit doesn't fit any more. The Kentucky Fried Chicano, Bobby.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya024back I used to be a Mexican. Photo by Alan Frentress Bach Studios early 60's. The suit doesn't fit any more. The Kentucky Fried Chicano, Bobby__src_scratch-folder__ec39bfd0.jpg
 ``n
-
 ### Group 263: twitter-extract.py.bak
 
 **Size**: 9.75 KB | **Hash**: `6045767594C6003AAB6ECF5B0DC32D40` | **Files**: 2
@@ -3041,7 +2779,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya024back I used to be a Mexican
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\!\twitter-extract.py.bak
 C:\Users\loganf\Documents\IDAHO-VAULT\!\twitter-extract.py.temp
 ``n
-
 ### Group 264: 1927 Borah - On the Job 1 1.md
 
 **Size**: 0.57 KB | **Hash**: `4FD6B8A0954C67B0445C56EE634F4533` | **Files**: 3
@@ -3050,7 +2787,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\!\twitter-extract.py.temp
 C:\Users\loganf\Documents\IDAHO-VAULT\1927 Borah - On the Job 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\1927 Borah - On the Job.md
 ``n
-
 ### Group 265: Bear Lake__src_scratch-folder__bfa18141.md
 
 **Size**: 0.1 KB | **Hash**: `19580C52F49D85D3ED25DDECBD939326` | **Files**: 2
@@ -3058,7 +2794,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\1927 Borah - On the Job.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Bear Lake__src_scratch-folder__bfa18141.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Bear Lake__src_scratch-folder__c22130fb.md
 ``n
-
 ### Group 266: Colton Michael Brown.md
 
 **Size**: 0.1 KB | **Hash**: `53C42C6AA3B2C758163A97D30868F7AD` | **Files**: 5
@@ -3069,7 +2804,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\James Michael Johnson.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Justin Michael O'Leary.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Spencer Thomas Simpson.md
 ``n
-
 ### Group 267: - 1Password Developer - 1Password app integration security.md
 
 **Size**: 0 KB | **Hash**: `D41D8CD98F00B204E9800998ECF8427E` | **Files**: 19518
@@ -22593,7 +22327,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\!\!\__!__\!\! The world is quiet here\!REA
 C:\Users\loganf\Documents\IDAHO-VAULT\!\!\__!__\!\! The world is quiet here\README.md
 C:\Users\loganf\Documents\IDAHO-VAULT\!\!\__!__\!\! The world is quiet here\Esto Perpetua!\.git
 ``n
-
 ### Group 268: 2026-03-19 17-00-49.mp4
 
 **Size**: 18334.26 KB | **Hash**: `B3370F8CD901F1BE79F889C83AED5468` | **Files**: 2
@@ -22601,7 +22334,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\!\!\__!__\!\! The world is quiet here\Esto
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\2026-03-19 17-00-49.mp4
 C:\Users\loganf\Documents\IDAHO-VAULT\2026-03-19 17-00-49__src_scratch-folder__5537f0be.mp4
 ``n
-
 ### Group 269: SCRATCH--55aff571-55fe-e103-c089-36bea65e964c-2025-12-23_11-38-37-loganf.prproj
 
 **Size**: 2689.11 KB | **Hash**: `133C147390BA3CDAAB502A6532ACE71C` | **Files**: 2
@@ -22609,7 +22341,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\2026-03-19 17-00-49__src_scratch-folder__5
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--55aff571-55fe-e103-c089-36bea65e964c-2025-12-23_11-38-37-loganf.prproj
 C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--55aff571-55fe-e103-c089-36bea65e964c-2025-12-23_11-38-37-loganf__src_scratch-folder__0634e85d.prproj
 ``n
-
 ### Group 270: 5ffcf18836f0a.image (2).jpg
 
 **Size**: 115.39 KB | **Hash**: `9504410A3E7FB964AE5BDBE6AEEC8C56` | **Files**: 3
@@ -22618,7 +22349,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--55aff571-55fe-e103-c089-36bea65e9
 C:\Users\loganf\Documents\IDAHO-VAULT\5ffcf18836f0a.image.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\5ffcf18836f0a.image__src_scratch-folder__834a4d0c.jpg
 ``n
-
 ### Group 271: Kelly Anthon (2)__src_scratch-folder__37af5c07.md
 
 **Size**: 0.94 KB | **Hash**: `CD3AA485DDFADE3508664F7CE9FBFC72` | **Files**: 2
@@ -22626,7 +22356,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\5ffcf18836f0a.image__src_scratch-folder__8
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Kelly Anthon (2)__src_scratch-folder__37af5c07.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Kelly Anthon__src_scratch-folder__b23c28da.md
 ``n
-
 ### Group 272: Justin Rupinski.md
 
 **Size**: 0.16 KB | **Hash**: `5D66B48094EFF9172A68E7383A58DC39` | **Files**: 2
@@ -22634,7 +22363,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Kelly Anthon__src_scratch-folder__b23c28da
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Justin Rupinski.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Susan Jean Supp.md
 ``n
-
 ### Group 273: BobbyMontoya024.jpg
 
 **Size**: 3667.13 KB | **Hash**: `83D116BFF48C13354368F49C22405A5E` | **Files**: 2
@@ -22642,7 +22370,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Susan Jean Supp.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya024.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya024__src_scratch-folder__0acae2e0.jpg
 ``n
-
 ### Group 274: Capitol Correspondents Association CCA Letter March 2026 (2).md
 
 **Size**: 2.19 KB | **Hash**: `E15E89A083EF48FACB1B008572411424` | **Files**: 2
@@ -22650,7 +22377,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya024__src_scratch-folder__0acae
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Capitol Correspondents Association CCA Letter March 2026 (2).md
 C:\Users\loganf\Documents\IDAHO-VAULT\Capitol Correspondents Association CCA Letter March 2026__src_scratch-folder__9c09aba1.md
 ``n
-
 ### Group 275: Shoshone Falls reservoir__src_scratch-folder__6262d931.md
 
 **Size**: 0.19 KB | **Hash**: `D83D39082307683D152DE5CECD3BC140` | **Files**: 2
@@ -22658,7 +22384,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Capitol Correspondents Association CCA Let
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Shoshone Falls reservoir__src_scratch-folder__6262d931.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Shoshone Falls reservoir__src_scratch-folder__cbcd9637.md
 ``n
-
 ### Group 276: PXL_20260129_203609768.jpg
 
 **Size**: 2505.23 KB | **Hash**: `26F859BCA586141B00E2F834CE00534B` | **Files**: 2
@@ -22666,7 +22391,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Shoshone Falls reservoir__src_scratch-fold
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\PXL_20260129_203609768.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\PXL_20260129_203609768__src_scratch-folder__70be1f19.jpg
 ``n
-
 ### Group 277: SCRATCH--93486111-ecff-80a4-5e44-162ed053c646-2026-01-28_22-58-02-loganf.prproj
 
 **Size**: 5404.08 KB | **Hash**: `6A74A18E8440AF104EDABF12D3407188` | **Files**: 2
@@ -22674,7 +22398,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\PXL_20260129_203609768__src_scratch-folder
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--93486111-ecff-80a4-5e44-162ed053c646-2026-01-28_22-58-02-loganf.prproj
 C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--93486111-ecff-80a4-5e44-162ed053c646-2026-01-28_22-58-02-loganf__src_scratch-folder__d45c9922.prproj
 ``n
-
 ### Group 278: H0911 (2).pdf
 
 **Size**: 50.4 KB | **Hash**: `622BBA21F130ABE8905450D4775474C5` | **Files**: 2
@@ -22682,7 +22405,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--93486111-ecff-80a4-5e44-162ed053c
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\H0911 (2).pdf
 C:\Users\loganf\Documents\IDAHO-VAULT\H0911__src_scratch-folder__4d85c2e8.pdf
 ``n
-
 ### Group 279: 1936 Borah - Photographers 1 1.md
 
 **Size**: 0.19 KB | **Hash**: `6B85AF7F72E556849E931E617E8CC83A` | **Files**: 2
@@ -22690,7 +22412,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\H0911__src_scratch-folder__4d85c2e8.pdf
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\1936 Borah - Photographers 1 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\1936 Borah - Photographers 1.md
 ``n
-
 ### Group 280: Lower Salmon Falls dam__src_scratch-folder__998b5332.md
 
 **Size**: 0.19 KB | **Hash**: `006DC443F90A64A554EC169D034FEB97` | **Files**: 2
@@ -22698,7 +22419,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\1936 Borah - Photographers 1.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Lower Salmon Falls dam__src_scratch-folder__998b5332.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Lower Salmon Falls dam__src_scratch-folder__c2e87197.md
 ``n
-
 ### Group 281: Oct. 16 Peterson and Roth.docx
 
 **Size**: 26.1 KB | **Hash**: `96DBE696F0259C71B6CA7471B8187E9C` | **Files**: 2
@@ -22706,7 +22426,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Lower Salmon Falls dam__src_scratch-folder
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Oct. 16 Peterson and Roth.docx
 C:\Users\loganf\Documents\IDAHO-VAULT\Oct. 16 Peterson and Roth__src_scratch-folder__27ccbcfe.docx
 ``n
-
 ### Group 282: Snake River__src_scratch-folder__5f2c7ec1.md
 
 **Size**: 1.2 KB | **Hash**: `576F806B57E37F848991CB6FD1C036ED` | **Files**: 2
@@ -22714,7 +22433,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Oct. 16 Peterson and Roth__src_scratch-fol
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Snake River__src_scratch-folder__5f2c7ec1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Snake River__src_scratch-folder__a99e4614.md
 ``n
-
 ### Group 283: CONTEXT-PASTE-BUNDLE 1.md
 
 **Size**: 5.47 KB | **Hash**: `464BB75BE3F8B9F16CC70E955286462D` | **Files**: 2
@@ -22722,7 +22440,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Snake River__src_scratch-folder__a99e4614.
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\CONTEXT-PASTE-BUNDLE 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\CONTEXT-PASTE-BUNDLE.md
 ``n
-
 ### Group 284: Screenshot 2026-03-19 171250 (2).jpg
 
 **Size**: 160.4 KB | **Hash**: `6724CE9831F1DEF31E63277D876A774D` | **Files**: 3
@@ -22731,7 +22448,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\CONTEXT-PASTE-BUNDLE.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Screenshot 2026-03-19 171250.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\Screenshot 2026-03-19 171250__src_scratch-folder__85b9134d.jpg
 ``n
-
 ### Group 285: SCRATCH--55aff571-55fe-e103-c089-36bea65e964c-2026-01-21_16-34-06-loganf.prproj
 
 **Size**: 4104.66 KB | **Hash**: `6618AA19EA93CBD289B8779D51416B6B` | **Files**: 2
@@ -22739,7 +22455,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Screenshot 2026-03-19 171250__src_scratch-
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--55aff571-55fe-e103-c089-36bea65e964c-2026-01-21_16-34-06-loganf.prproj
 C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--55aff571-55fe-e103-c089-36bea65e964c-2026-01-21_16-34-06-loganf__src_scratch-folder__2777f844.prproj
 ``n
-
 ### Group 286: wayback-preserve-2026-03-21 1.md
 
 **Size**: 11.94 KB | **Hash**: `A0A720CC40EFAD0C7C5175183F729920` | **Files**: 3
@@ -22748,7 +22463,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--55aff571-55fe-e103-c089-36bea65e9
 C:\Users\loganf\Documents\IDAHO-VAULT\wayback-preserve-2026-03-21 2.md
 C:\Users\loganf\Documents\IDAHO-VAULT\wayback-preserve-2026-03-21.md
 ``n
-
 ### Group 287: SCRATCH--55aff571-55fe-e103-c089-36bea65e964c-2026-01-14_13-03-50-loganf.prproj
 
 **Size**: 2148.19 KB | **Hash**: `0C50525BF2B5A63EA6FCB2721649A937` | **Files**: 2
@@ -22756,7 +22470,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\wayback-preserve-2026-03-21.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--55aff571-55fe-e103-c089-36bea65e964c-2026-01-14_13-03-50-loganf.prproj
 C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--55aff571-55fe-e103-c089-36bea65e964c-2026-01-14_13-03-50-loganf__src_scratch-folder__0d034fd3.prproj
 ``n
-
 ### Group 288: SCRATCH--93486111-ecff-80a4-5e44-162ed053c646-2026-01-28_23-41-40-loganf.prproj
 
 **Size**: 5391.95 KB | **Hash**: `5FE50DF4C7740816D754893C811A3BBC` | **Files**: 2
@@ -22764,7 +22477,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--55aff571-55fe-e103-c089-36bea65e9
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--93486111-ecff-80a4-5e44-162ed053c646-2026-01-28_23-41-40-loganf.prproj
 C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--93486111-ecff-80a4-5e44-162ed053c646-2026-01-28_23-41-40-loganf__src_scratch-folder__0ef03021.prproj
 ``n
-
 ### Group 289: sort-audit-2026-03-23 1.md
 
 **Size**: 8.32 KB | **Hash**: `B8D908AD3EE649E401DF69BA5BCCBC28` | **Files**: 2
@@ -22772,7 +22484,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--93486111-ecff-80a4-5e44-162ed053c
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\sort-audit-2026-03-23 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\sort-audit-2026-03-23.md
 ``n
-
 ### Group 290: BobbyMontoya023back Idaho City 1963 Fire Season.jpg
 
 **Size**: 985.06 KB | **Hash**: `A9378A797DC2A3A6C15B5B23B613D74D` | **Files**: 2
@@ -22780,7 +22491,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\sort-audit-2026-03-23.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya023back Idaho City 1963 Fire Season.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya023back Idaho City 1963 Fire Season__src_scratch-folder__10de5731.jpg
 ``n
-
 ### Group 291: Bob Nonini.md
 
 **Size**: 0.07 KB | **Hash**: `95A0DAD96A44210748A9CD7ECE360CD7` | **Files**: 2
@@ -22788,7 +22498,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya023back Idaho City 1963 Fire S
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Bob Nonini.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Christa Hazel.md
 ``n
-
 ### Group 292: H0395 (2).pdf
 
 **Size**: 47.83 KB | **Hash**: `26F7DEE76791B68FC0838335391D6438` | **Files**: 2
@@ -22796,7 +22505,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Christa Hazel.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\H0395 (2).pdf
 C:\Users\loganf\Documents\IDAHO-VAULT\H0395__src_scratch-folder__c0afd74a.pdf
 ``n
-
 ### Group 293: Idaho Code §74-208 (2).md
 
 **Size**: 1.36 KB | **Hash**: `0E2A6AEDDC473A1BE217D6001D37480B` | **Files**: 2
@@ -22804,7 +22512,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\H0395__src_scratch-folder__c0afd74a.pdf
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Idaho Code §74-208 (2).md
 C:\Users\loganf\Documents\IDAHO-VAULT\Idaho Code §74-208__src_scratch-folder__8a562736.md
 ``n
-
 ### Group 294: 1951 Marylyn Monroe - Potato Sack Dress 1 1.md
 
 **Size**: 0.15 KB | **Hash**: `142D374FCADB0D5089A78D4B52B95802` | **Files**: 3
@@ -22813,7 +22520,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Idaho Code §74-208__src_scratch-folder__8
 C:\Users\loganf\Documents\IDAHO-VAULT\1951 Marylyn Monroe - Potato Sack Dress 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\1951 Marylyn Monroe - Potato Sack Dress.md
 ``n
-
 ### Group 295: Oxbow dam__src_scratch-folder__4791cdcd.md
 
 **Size**: 0.15 KB | **Hash**: `8184A3BA223DF79DA15F99B467452CCC` | **Files**: 2
@@ -22821,7 +22527,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\1951 Marylyn Monroe - Potato Sack Dress.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Oxbow dam__src_scratch-folder__4791cdcd.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Oxbow dam__src_scratch-folder__7798f78a.md
 ``n
-
 ### Group 296: BobbyMontoya015.jpg
 
 **Size**: 1847.55 KB | **Hash**: `FEF5EAAB0D76832BB0D7FBA1D4CD481D` | **Files**: 2
@@ -22829,7 +22534,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Oxbow dam__src_scratch-folder__7798f78a.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya015.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya015__src_scratch-folder__43781e00.jpg
 ``n
-
 ### Group 297: JFAC Working Groups (2).md
 
 **Size**: 4.08 KB | **Hash**: `31966F281AAE92F9F304CF0CEC7A4E54` | **Files**: 2
@@ -22837,7 +22541,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya015__src_scratch-folder__43781
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\JFAC Working Groups (2).md
 C:\Users\loganf\Documents\IDAHO-VAULT\JFAC Working Groups__src_scratch-folder__ca8b8181.md
 ``n
-
 ### Group 298: SCRATCH--93486111-ecff-80a4-5e44-162ed053c646-2026-01-29_09-53-45-loganf.prproj
 
 **Size**: 5405.62 KB | **Hash**: `DB6C3C6253D0529D7E56E12850344D12` | **Files**: 2
@@ -22845,7 +22548,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\JFAC Working Groups__src_scratch-folder__c
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--93486111-ecff-80a4-5e44-162ed053c646-2026-01-29_09-53-45-loganf.prproj
 C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--93486111-ecff-80a4-5e44-162ed053c646-2026-01-29_09-53-45-loganf__src_scratch-folder__d40d1c9b.prproj
 ``n
-
 ### Group 299: Nov 15 coroners.docx
 
 **Size**: 21.37 KB | **Hash**: `4F033EF60173FBAF4BD3B09006B34425` | **Files**: 2
@@ -22853,7 +22555,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--93486111-ecff-80a4-5e44-162ed053c
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Nov 15 coroners.docx
 C:\Users\loganf\Documents\IDAHO-VAULT\Nov 15 coroners__src_scratch-folder__66d0b77e.docx
 ``n
-
 ### Group 300: 2026-03-10-Wintrow (2).txt
 
 **Size**: 15.81 KB | **Hash**: `D232280F019BA45FAB360BC07CC56EAF` | **Files**: 3
@@ -22862,7 +22563,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Nov 15 coroners__src_scratch-folder__66d0b
 C:\Users\loganf\Documents\IDAHO-VAULT\2026-03-10-Wintrow.txt
 C:\Users\loganf\Documents\IDAHO-VAULT\Mar 10 at 1-46 PM.txt
 ``n
-
 ### Group 301: Scott Grow (2).md
 
 **Size**: 1.52 KB | **Hash**: `1AE62AFE24AA641ECCED62EC50F921DE` | **Files**: 2
@@ -22870,7 +22570,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Mar 10 at 1-46 PM.txt
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Scott Grow (2).md
 C:\Users\loganf\Documents\IDAHO-VAULT\Scott Grow__src_scratch-folder__01e4933f.md
 ``n
-
 ### Group 302: Hells Canyon reservoir__src_scratch-folder__056589af.md
 
 **Size**: 0.14 KB | **Hash**: `42D34899EFEA4B2331FD33B8C8CD9583` | **Files**: 2
@@ -22878,7 +22577,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Scott Grow__src_scratch-folder__01e4933f.m
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Hells Canyon reservoir__src_scratch-folder__056589af.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Hells Canyon reservoir__src_scratch-folder__fef4eeb5.md
 ``n
-
 ### Group 303: 2026-04-27 - Idaho Capital Sun - Lawsuit claims Idaho law bans daycares from sending home sick kids. Governor says that’s not true. • Idaho Capital Sun.md
 
 **Size**: 8.85 KB | **Hash**: `71E53448A32F1D7E1DA57ABC69AC9B67` | **Files**: 4
@@ -22888,7 +22586,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\2026-04-29 - Sandpoint Reader - CANDIDATE 
 C:\Users\loganf\Documents\IDAHO-VAULT\2026-04-30 - BoiseDev - Some property owners weigh challenges of Idaho bathroom bill.md
 C:\Users\loganf\Documents\IDAHO-VAULT\2026-04-30 - Idaho Press - Idaho's far-reaching private property rights law brings changes to law enforcement action.md
 ``n
-
 ### Group 304: agents.json
 
 **Size**: 6.91 KB | **Hash**: `0BFFA240410A80D247E01709E853B87A` | **Files**: 2
@@ -22896,7 +22593,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\2026-04-30 - Idaho Press - Idaho's far-rea
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\agents.json
 C:\Users\loganf\Documents\IDAHO-VAULT\!\agents.json
 ``n
-
 ### Group 305: Box OAuth VS Code 1.md
 
 **Size**: 1.16 KB | **Hash**: `86A59C7CAF54FB2F0DC5C600C7666444` | **Files**: 2
@@ -22904,7 +22600,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\!\agents.json
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Box OAuth VS Code 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Box OAuth VS Code.md
 ``n
-
 ### Group 306: H0756 (2).pdf
 
 **Size**: 55.35 KB | **Hash**: `B1DC46B1CA9D4FE26CD006EDB6DBCAB7` | **Files**: 2
@@ -22912,7 +22607,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Box OAuth VS Code.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\H0756 (2).pdf
 C:\Users\loganf\Documents\IDAHO-VAULT\H0756__src_scratch-folder__d9866b1e.pdf
 ``n
-
 ### Group 307: BobbyMontoya008.jpg
 
 **Size**: 1124.81 KB | **Hash**: `37FB79FC0F83BE5326E75A8F651E717D` | **Files**: 2
@@ -22920,7 +22614,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\H0756__src_scratch-folder__d9866b1e.pdf
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya008.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya008__src_scratch-folder__871743a1.jpg
 ``n
-
 ### Group 308: SCRATCH--55aff571-55fe-e103-c089-36bea65e964c-2025-12-30_13-03-53-loganf.prproj
 
 **Size**: 2714.38 KB | **Hash**: `FF35F9E80728983722E68767626AEA24` | **Files**: 2
@@ -22928,7 +22621,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya008__src_scratch-folder__87174
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--55aff571-55fe-e103-c089-36bea65e964c-2025-12-30_13-03-53-loganf.prproj
 C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--55aff571-55fe-e103-c089-36bea65e964c-2025-12-30_13-03-53-loganf__src_scratch-folder__acc880e2.prproj
 ``n
-
 ### Group 309: BRANCH-STATUS-2026-03-22 1.md
 
 **Size**: 6.06 KB | **Hash**: `F08EED0F785FE82E20B17E3B1363E060` | **Files**: 2
@@ -22936,7 +22628,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--55aff571-55fe-e103-c089-36bea65e9
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\BRANCH-STATUS-2026-03-22 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\BRANCH-STATUS-2026-03-22.md
 ``n
-
 ### Group 310: H0395E1 (2).pdf
 
 **Size**: 47.88 KB | **Hash**: `89D16B72FCBB2462E702199D72566847` | **Files**: 2
@@ -22944,7 +22635,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\BRANCH-STATUS-2026-03-22.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\H0395E1 (2).pdf
 C:\Users\loganf\Documents\IDAHO-VAULT\H0395E1__src_scratch-folder__9ff41781.pdf
 ``n
-
 ### Group 311: - Fandom, Inc. - Southerlings 1.md
 
 **Size**: 2.32 KB | **Hash**: `E9314600AB3A6B5CE7EA5CCDA049BD8D` | **Files**: 2
@@ -22952,7 +22642,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\H0395E1__src_scratch-folder__9ff41781.pdf
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\- Fandom, Inc. - Southerlings 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\- Fandom, Inc. - Southerlings.md
 ``n
-
 ### Group 312: SCRATCH--93486111-ecff-80a4-5e44-162ed053c646-2026-01-29_00-21-52-loganf.prproj
 
 **Size**: 5405.86 KB | **Hash**: `8720821DC44D3731DA1BD9321AC65955` | **Files**: 2
@@ -22960,7 +22649,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\- Fandom, Inc. - Southerlings.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--93486111-ecff-80a4-5e44-162ed053c646-2026-01-29_00-21-52-loganf.prproj
 C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--93486111-ecff-80a4-5e44-162ed053c646-2026-01-29_00-21-52-loganf__src_scratch-folder__4008fb00.prproj
 ``n
-
 ### Group 313: Elizabeth Bowen (2).md
 
 **Size**: 0.57 KB | **Hash**: `565167CDC2360B28DCC4173B74F20253` | **Files**: 2
@@ -22968,7 +22656,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--93486111-ecff-80a4-5e44-162ed053c
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Elizabeth Bowen (2).md
 C:\Users\loganf\Documents\IDAHO-VAULT\Elizabeth Bowen__src_scratch-folder__5aa621b8.md
 ``n
-
 ### Group 314: 1937 FDR - Years of Dust 1 1.md
 
 **Size**: 0.28 KB | **Hash**: `9E76EF0D80C40F9754F28B6568619B9E` | **Files**: 3
@@ -22977,7 +22664,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Elizabeth Bowen__src_scratch-folder__5aa62
 C:\Users\loganf\Documents\IDAHO-VAULT\1937 FDR - Years of Dust 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\1937 FDR - Years of Dust.md
 ``n
-
 ### Group 315: state_manager.py
 
 **Size**: 3.48 KB | **Hash**: `FDA95D88897BC70898381C40229FF2A9` | **Files**: 2
@@ -22985,7 +22671,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\1937 FDR - Years of Dust.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\!\swarm\tools\state_manager.py
 C:\Users\loganf\Documents\IDAHO-VAULT\!\swarm 1\tools\state_manager.py
 ``n
-
 ### Group 316: Nov. 1 McGrane.docx
 
 **Size**: 20.63 KB | **Hash**: `8103D9111AEC6331D7A10BE2DD3CBE53` | **Files**: 2
@@ -22993,7 +22678,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\!\swarm 1\tools\state_manager.py
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Nov. 1 McGrane.docx
 C:\Users\loganf\Documents\IDAHO-VAULT\Nov. 1 McGrane__src_scratch-folder__99694748.docx
 ``n
-
 ### Group 317: Nov. 18 Dr. Colson.docx
 
 **Size**: 22.3 KB | **Hash**: `2DDEF7271168C8E5F6A5DB59E645680C` | **Files**: 2
@@ -23001,7 +22685,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Nov. 1 McGrane__src_scratch-folder__996947
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Nov. 18 Dr. Colson.docx
 C:\Users\loganf\Documents\IDAHO-VAULT\Nov. 18 Dr. Colson__src_scratch-folder__e3953039.docx
 ``n
-
 ### Group 318: SCRATCH_2026--81042faa-5852-6c21-e1d1-33799740166f-2026-03-10_12-14-04-loganf.prproj
 
 **Size**: 657.11 KB | **Hash**: `24F7374525C87B9B9B5EB3B271B824B7` | **Files**: 2
@@ -23009,7 +22692,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Nov. 18 Dr. Colson__src_scratch-folder__e3
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH_2026--81042faa-5852-6c21-e1d1-33799740166f-2026-03-10_12-14-04-loganf.prproj
 C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH_2026--81042faa-5852-6c21-e1d1-33799740166f-2026-03-10_12-14-04-loganf__src_scratch-folder__cbcdd434.prproj
 ``n
-
 ### Group 319: SCRATCH--93486111-ecff-80a4-5e44-162ed053c646-2026-01-28_22-42-13-loganf.prproj
 
 **Size**: 5180.05 KB | **Hash**: `A30A0F42431A457B2427358F069A4C42` | **Files**: 2
@@ -23017,7 +22699,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH_2026--81042faa-5852-6c21-e1d1-3379
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--93486111-ecff-80a4-5e44-162ed053c646-2026-01-28_22-42-13-loganf.prproj
 C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--93486111-ecff-80a4-5e44-162ed053c646-2026-01-28_22-42-13-loganf__src_scratch-folder__a65d4122.prproj
 ``n
-
 ### Group 320: Daniel Finley.md
 
 **Size**: 0.14 KB | **Hash**: `74805B7A3A6AF7428880B9C99C6E8CC7` | **Files**: 2
@@ -23025,7 +22706,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--93486111-ecff-80a4-5e44-162ed053c
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Daniel Finley.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Jon Verkist.md
 ``n
-
 ### Group 321: Capitol Correspondents Association (2).md
 
 **Size**: 0.98 KB | **Hash**: `29C01DF85157F72B714D5FE91CAE9309` | **Files**: 2
@@ -23033,7 +22713,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Jon Verkist.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Capitol Correspondents Association (2).md
 C:\Users\loganf\Documents\IDAHO-VAULT\Capitol Correspondents Association__src_scratch-folder__1958101d.md
 ``n
-
 ### Group 322: Inlay 1.md
 
 **Size**: 0.25 KB | **Hash**: `F19DBBF1E778DCA0CFE933E6D7932E04` | **Files**: 2
@@ -23041,7 +22720,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Capitol Correspondents Association__src_sc
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Inlay 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Inlay.md
 ``n
-
 ### Group 323: Paradise Ridge__src_scratch-folder__44f67cb9.md
 
 **Size**: 0.09 KB | **Hash**: `0F439E2BB986EAE92BB4CF9607858E17` | **Files**: 2
@@ -23049,7 +22727,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Inlay.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Paradise Ridge__src_scratch-folder__44f67cb9.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Paradise Ridge__src_scratch-folder__bdcb2191.md
 ``n
-
 ### Group 324: 1938 Borah - Monopoly Committee 1 1.md
 
 **Size**: 0.65 KB | **Hash**: `2063B3656AACCF823CAFC33A6CBBF415` | **Files**: 3
@@ -23058,7 +22735,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Paradise Ridge__src_scratch-folder__bdcb21
 C:\Users\loganf\Documents\IDAHO-VAULT\1938 Borah - Monopoly Committee 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\1938 Borah - Monopoly Committee.md
 ``n
-
 ### Group 325: - Fandom, Inc. - Ramuthra.md
 
 **Size**: 3.05 KB | **Hash**: `38309E0E40179F2B20EF4BE557658BF7` | **Files**: 2
@@ -23066,7 +22742,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\1938 Borah - Monopoly Committee.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\- Fandom, Inc. - Ramuthra.md
 C:\Users\loganf\Documents\IDAHO-VAULT\- Fandom, Inc. - True name 1.md
 ``n
-
 ### Group 326: Clark Corbin (2)__src_scratch-folder__120c1b83.md
 
 **Size**: 1.2 KB | **Hash**: `9E626E61F7F81D468386131BF37FA117` | **Files**: 2
@@ -23074,7 +22749,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\- Fandom, Inc. - True name 1.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Clark Corbin (2)__src_scratch-folder__120c1b83.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Clark Corbin__src_scratch-folder__0363c58e.md
 ``n
-
 ### Group 327: NATION_MOURNS_DEAD_PRESIDENT.jpg
 
 **Size**: 1236.22 KB | **Hash**: `4FD767579FE3466130CA103B259F5135` | **Files**: 2
@@ -23082,7 +22756,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Clark Corbin__src_scratch-folder__0363c58e
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\NATION_MOURNS_DEAD_PRESIDENT.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\Shoshone_News_Press_1923_08_03_1.jpg
 ``n
-
 ### Group 328: BCI Terms and Conditions Final Agreement - Copy.pdf
 
 **Size**: 221.24 KB | **Hash**: `048334D1BCD7A3EDEC7AD1548CE4F36C` | **Files**: 2
@@ -23090,7 +22763,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Shoshone_News_Press_1923_08_03_1.jpg
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\BCI Terms and Conditions Final Agreement - Copy.pdf
 C:\Users\loganf\Documents\IDAHO-VAULT\BCI Terms and Conditions Final Agreement.pdf
 ``n
-
 ### Group 329: 35b0edfe-b33c-4325-a168-48b615e71510+2d8a7b68-ec3c-1d78-49f7-6dbb00000049 48000.cfa
 
 **Size**: 3584 KB | **Hash**: `E513A2AB688E77D56C61FB18EC8863E9` | **Files**: 2
@@ -23098,7 +22770,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\BCI Terms and Conditions Final Agreement.p
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\35b0edfe-b33c-4325-a168-48b615e71510+2d8a7b68-ec3c-1d78-49f7-6dbb00000049 48000.cfa
 C:\Users\loganf\Documents\IDAHO-VAULT\35b0edfe-b33c-4325-a168-48b615e71510+c1a70795-1c90-8fe1-7fc5-c47000000049 48000.cfa
 ``n
-
 ### Group 330: 1919 Borah- Refusing to give the lady a seat 1 1.md
 
 **Size**: 0.79 KB | **Hash**: `9B736EBE67AF862FAADFB64807068F6B` | **Files**: 2
@@ -23106,7 +22777,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\35b0edfe-b33c-4325-a168-48b615e71510+c1a70
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\1919 Borah- Refusing to give the lady a seat 1 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\1919 Borah- Refusing to give the lady a seat 1.md
 ``n
-
 ### Group 331: Elswick Interview.prproj
 
 **Size**: 353.76 KB | **Hash**: `4F9F6FE53A0FC7E3964096410F6C988B` | **Files**: 2
@@ -23114,7 +22784,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\1919 Borah- Refusing to give the lady a se
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Elswick Interview.prproj
 C:\Users\loganf\Documents\IDAHO-VAULT\Elswick Interview__src_scratch-folder__2fc2b103.prproj
 ``n
-
 ### Group 332: 250313_hsta_0900AM-Meeting (1).mp4
 
 **Size**: 659648.71 KB | **Hash**: `479E7589312D365C8F917899F97F98A7` | **Files**: 2
@@ -23122,7 +22791,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Elswick Interview__src_scratch-folder__2fc
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\250313_hsta_0900AM-Meeting (1).mp4
 C:\Users\loganf\Documents\IDAHO-VAULT\250313_hsta_0900AM-Meeting.mp4
 ``n
-
 ### Group 333: bafkreifhubkky2djq4g3vs2eueag5ijv6jwthc7jhtgt6dzrhxy3vmf3bu (2).jpg
 
 **Size**: 277.3 KB | **Hash**: `4AD64CB3776668A9D95B1E8666E01872` | **Files**: 3
@@ -23131,7 +22799,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\250313_hsta_0900AM-Meeting.mp4
 C:\Users\loganf\Documents\IDAHO-VAULT\bafkreifhubkky2djq4g3vs2eueag5ijv6jwthc7jhtgt6dzrhxy3vmf3bu.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\bafkreifhubkky2djq4g3vs2eueag5ijv6jwthc7jhtgt6dzrhxy3vmf3bu__src_scratch-folder__97f94378.jpg
 ``n
-
 ### Group 334: statehouse-dome.jpeg
 
 **Size**: 354.11 KB | **Hash**: `D3F5326C32D035E0CFDBE1E0FBF7FDF9` | **Files**: 2
@@ -23139,7 +22806,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\bafkreifhubkky2djq4g3vs2eueag5ijv6jwthc7jh
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\statehouse-dome.jpeg
 C:\Users\loganf\Documents\IDAHO-VAULT\statehouse-dome__src_scratch-folder__70de7339.jpeg
 ``n
-
 ### Group 335: Idaho Panhandle National Forests__src_scratch-folder__bec0b449.md
 
 **Size**: 0.26 KB | **Hash**: `FD0A38D2A434B30B90D8365B380BF073` | **Files**: 2
@@ -23147,7 +22813,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\statehouse-dome__src_scratch-folder__70de7
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Idaho Panhandle National Forests__src_scratch-folder__bec0b449.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Idaho Panhandle National Forests__src_scratch-folder__fcb3c76a.md
 ``n
-
 ### Group 336: U.S. Constitution Party.md
 
 **Size**: 0.03 KB | **Hash**: `F8ED8A7DA4B094A5A4F154627FDE32D5` | **Files**: 4
@@ -23157,7 +22822,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\U.S. Democratic Party.md
 C:\Users\loganf\Documents\IDAHO-VAULT\U.S. Libertarian Party.md
 C:\Users\loganf\Documents\IDAHO-VAULT\U.S. Republican Party.md
 ``n
-
 ### Group 337: Idaho Code §74-207 (2).md
 
 **Size**: 1.7 KB | **Hash**: `1DF8920C2A0B0A432B218AC4214E5D04` | **Files**: 2
@@ -23165,7 +22829,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\U.S. Republican Party.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Idaho Code §74-207 (2).md
 C:\Users\loganf\Documents\IDAHO-VAULT\Idaho Code §74-207__src_scratch-folder__48e54c93.md
 ``n
-
 ### Group 338: SCRATCH--55aff571-55fe-e103-c089-36bea65e964c-2026-01-21_16-04-56-loganf.prproj
 
 **Size**: 4103.96 KB | **Hash**: `A381BFE47306DA2C819939534AB5F0C0` | **Files**: 2
@@ -23173,7 +22836,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Idaho Code §74-207__src_scratch-folder__4
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--55aff571-55fe-e103-c089-36bea65e964c-2026-01-21_16-04-56-loganf.prproj
 C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--55aff571-55fe-e103-c089-36bea65e964c-2026-01-21_16-04-56-loganf__src_scratch-folder__c7f2f439.prproj
 ``n
-
 ### Group 339: lmopdataid (1).xlsx
 
 **Size**: 31.47 KB | **Hash**: `53BECEAD8DDA884C720DB1DA9E979FD8` | **Files**: 3
@@ -23182,7 +22844,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--55aff571-55fe-e103-c089-36bea65e9
 C:\Users\loganf\Documents\IDAHO-VAULT\lmopdataid (2).xlsx
 C:\Users\loganf\Documents\IDAHO-VAULT\lmopdataid.xlsx
 ``n
-
 ### Group 340: - Fandom, Inc. - Grotesquery 1.md
 
 **Size**: 13.68 KB | **Hash**: `722D7AEB131992AAD0B9C0672DB33813` | **Files**: 2
@@ -23190,7 +22851,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\lmopdataid.xlsx
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\- Fandom, Inc. - Grotesquery 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\- Fandom, Inc. - Grotesquery.md
 ``n
-
 ### Group 341: 15B-Healey-Dori.jpg
 
 **Size**: 1021.67 KB | **Hash**: `D67FBCF7059E64CB9ED3F2881F7B8F77` | **Files**: 2
@@ -23198,7 +22858,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\- Fandom, Inc. - Grotesquery.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\15B-Healey-Dori.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\Healey.Dori_15B_5x7print.jpg
 ``n
-
 ### Group 342: SCRATCH--52adf93a-41a4-7b81-d564-c50bea31341e-2025-10-31_10-12-01-loganf.prproj
 
 **Size**: 1163.68 KB | **Hash**: `10945439F66B9231AE8CB5F8C72C3E79` | **Files**: 2
@@ -23206,7 +22865,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Healey.Dori_15B_5x7print.jpg
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--52adf93a-41a4-7b81-d564-c50bea31341e-2025-10-31_10-12-01-loganf.prproj
 C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--52adf93a-41a4-7b81-d564-c50bea31341e-2025-10-31_10-12-01-loganf__src_scratch-folder__7d726d13.prproj
 ``n
-
 ### Group 343: BobbyMontoya027.jpg
 
 **Size**: 2629.71 KB | **Hash**: `105E92C091E502A59664A074F7856169` | **Files**: 2
@@ -23214,7 +22872,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--52adf93a-41a4-7b81-d564-c50bea313
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya027.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya027__src_scratch-folder__4443e23d.jpg
 ``n
-
 ### Group 344: Section-15-COI-Form.pdf
 
 **Size**: 124.22 KB | **Hash**: `1B2160E54B73ACFEF92F32AE3C8BC435` | **Files**: 2
@@ -23222,7 +22879,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya027__src_scratch-folder__4443e
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Section-15-COI-Form.pdf
 C:\Users\loganf\Documents\IDAHO-VAULT\Section-15-COI-Form__src_scratch-folder__d7fb8c15.pdf
 ``n
-
 ### Group 345: Matt Blatt.md
 
 **Size**: 0.15 KB | **Hash**: `DAFFF39D725D95CB7E21AB43E885C8EA` | **Files**: 2
@@ -23230,7 +22886,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Section-15-COI-Form__src_scratch-folder__d
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Matt Blatt.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Yasmin Harris.md
 ``n
-
 ### Group 346: 1931 Borah - TIME 1 1.md
 
 **Size**: 0.13 KB | **Hash**: `429577A0BA64D3996EDF6F1F47217B80` | **Files**: 3
@@ -23239,7 +22894,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Yasmin Harris.md
 C:\Users\loganf\Documents\IDAHO-VAULT\1931 Borah - TIME 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\1931 Borah - TIME.md
 ``n
-
 ### Group 347: Oxbow reservoir__src_scratch-folder__36274441.md
 
 **Size**: 0.13 KB | **Hash**: `5F6DDD5658BBD06E910D24F9BFE5F780` | **Files**: 2
@@ -23247,7 +22901,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\1931 Borah - TIME.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Oxbow reservoir__src_scratch-folder__36274441.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Oxbow reservoir__src_scratch-folder__74659ab2.md
 ``n
-
 ### Group 348: Vol. 01 Issue 09 - Press Freedom, Honor & Partnership 1.md
 
 **Size**: 0.13 KB | **Hash**: `1782D08AE8249C0BB1543DA5663CD265` | **Files**: 3
@@ -23256,7 +22909,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Oxbow reservoir__src_scratch-folder__74659
 C:\Users\loganf\Documents\IDAHO-VAULT\Vol. 01 Issue 09 - Press Freedom, Honor & Partnership 2.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Vol. 01 Issue 09 - Press Freedom, Honor & Partnership.md
 ``n
-
 ### Group 349: SCRATCH--55aff571-55fe-e103-c089-36bea65e964c-2026-01-14_13-41-42-loganf.prproj
 
 **Size**: 3984.98 KB | **Hash**: `2AC94593E3139D00C48AEDBE7E125948` | **Files**: 2
@@ -23264,7 +22916,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Vol. 01 Issue 09 - Press Freedom, Honor & 
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--55aff571-55fe-e103-c089-36bea65e964c-2026-01-14_13-41-42-loganf.prproj
 C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--55aff571-55fe-e103-c089-36bea65e964c-2026-01-14_13-41-42-loganf__src_scratch-folder__135428e9.prproj
 ``n
-
 ### Group 350: 5823eefd-22e5-4a11-8afe-dff7337825a9+66f250c3-a64f-c769-d752-44ea00000049 48000.cfa
 
 **Size**: 43520 KB | **Hash**: `939363C1ADE918000B95370F973EB31A` | **Files**: 2
@@ -23272,7 +22923,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--55aff571-55fe-e103-c089-36bea65e9
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\5823eefd-22e5-4a11-8afe-dff7337825a9+66f250c3-a64f-c769-d752-44ea00000049 48000.cfa
 C:\Users\loganf\Documents\IDAHO-VAULT\e0dd8749-84d7-4ce9-95b9-6949fb99af15+817d3c25-125b-9134-5c3c-1f2000000059 48000.cfa
 ``n
-
 ### Group 351: ingest-2026-03-23T07-46-34Z 1.md
 
 **Size**: 0.11 KB | **Hash**: `848E23C29949A731CC9244A07BEBABA5` | **Files**: 2
@@ -23280,7 +22930,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\e0dd8749-84d7-4ce9-95b9-6949fb99af15+817d3
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\ingest-2026-03-23T07-46-34Z 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\ingest-2026-03-23T07-46-34Z.md
 ``n
-
 ### Group 352: ingest-2026-03-23T12-49-09Z 1.md
 
 **Size**: 0.11 KB | **Hash**: `63740F1778F21E59ADA74F4B22AEB74A` | **Files**: 2
@@ -23288,7 +22937,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\ingest-2026-03-23T07-46-34Z.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\ingest-2026-03-23T12-49-09Z 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\ingest-2026-03-23T12-49-09Z.md
 ``n
-
 ### Group 353: ingest-2026-03-24T12-54-58Z 1.md
 
 **Size**: 0.11 KB | **Hash**: `99C64AEAEB3231F258643AABDA815615` | **Files**: 2
@@ -23296,7 +22944,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\ingest-2026-03-23T12-49-09Z.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\ingest-2026-03-24T12-54-58Z 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\ingest-2026-03-24T12-54-58Z.md
 ``n
-
 ### Group 354: BobbyMontoya009.jpg
 
 **Size**: 1264.82 KB | **Hash**: `BBA67725CC17BE10943A1E36C7088996` | **Files**: 2
@@ -23304,7 +22951,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\ingest-2026-03-24T12-54-58Z.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya009.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya009__src_scratch-folder__7c06bcf5.jpg
 ``n
-
 ### Group 355: 1936 Borah - Dinner 1 1.md
 
 **Size**: 0.21 KB | **Hash**: `5A56D179A384382E50B143C356EC1198` | **Files**: 3
@@ -23313,7 +22959,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya009__src_scratch-folder__7c06b
 C:\Users\loganf\Documents\IDAHO-VAULT\1936 Borah - Dinner 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\1936 Borah - Dinner.md
 ``n
-
 ### Group 356: 1937 Borah - FDR 1 1.md
 
 **Size**: 0.21 KB | **Hash**: `04D4AFC73E2BDA99A93A3C3319DE2937` | **Files**: 3
@@ -23322,7 +22967,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\1936 Borah - Dinner.md
 C:\Users\loganf\Documents\IDAHO-VAULT\1937 Borah - FDR 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\1937 Borah - FDR.md
 ``n
-
 ### Group 357: Coeur d'Alene National Forest__src_scratch-folder__1e02c3f4.md
 
 **Size**: 0.21 KB | **Hash**: `3B3C29F1746DCE484A7ED46DCB38AD1E` | **Files**: 2
@@ -23330,7 +22974,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\1937 Borah - FDR.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Coeur d'Alene National Forest__src_scratch-folder__1e02c3f4.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Coeur d'Alene National Forest__src_scratch-folder__62864c92.md
 ``n
-
 ### Group 358: Dome Reflection.jpg
 
 **Size**: 214.11 KB | **Hash**: `D85038BCFFB3496AD745AC9A1FF5909D` | **Files**: 2
@@ -23338,7 +22981,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Coeur d'Alene National Forest__src_scratch
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Dome Reflection.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\Dome Reflection__src_scratch-folder__6de1c52d.jpg
 ``n
-
 ### Group 359: CDA-basin-003.jpg
 
 **Size**: 28367.73 KB | **Hash**: `7F98196DFBAB986D1CD70CE216543599` | **Files**: 2
@@ -23346,7 +22988,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Dome Reflection__src_scratch-folder__6de1c
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\CDA-basin-003.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\CDA-basin-003__src_scratch-folder__60dd2b9d.jpg
 ``n
-
 ### Group 360: master-pnp-ggbain-35800-35844u (1).tif
 
 **Size**: 11854.54 KB | **Hash**: `7A48465B0EA4419271473DB390E1AC66` | **Files**: 2
@@ -23354,7 +22995,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\CDA-basin-003__src_scratch-folder__60dd2b9
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\master-pnp-ggbain-35800-35844u (1).tif
 C:\Users\loganf\Documents\IDAHO-VAULT\master-pnp-ggbain-35800-35844u.tif
 ``n
-
 ### Group 361: 1937 FDR - Boise Speech 1 1.md
 
 **Size**: 3.23 KB | **Hash**: `1086DB83B8D259E8DE38CB07C5C99CE7` | **Files**: 3
@@ -23363,7 +23003,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\master-pnp-ggbain-35800-35844u.tif
 C:\Users\loganf\Documents\IDAHO-VAULT\1937 FDR - Boise Speech 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\1937 FDR - Boise Speech.md
 ``n
-
 ### Group 362: 1937 Borah - Spuds 1 1.md
 
 **Size**: 0.71 KB | **Hash**: `F1BDB3D6255FF1AF5896E7172764B2A0` | **Files**: 3
@@ -23372,7 +23011,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\1937 FDR - Boise Speech.md
 C:\Users\loganf\Documents\IDAHO-VAULT\1937 Borah - Spuds 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\1937 Borah - Spuds.md
 ``n
-
 ### Group 363: 1907 Borah - Arriving 1 1.md
 
 **Size**: 0.25 KB | **Hash**: `73C41CF33E01709E382DAF7983E1A4D7` | **Files**: 3
@@ -23381,7 +23019,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\1937 Borah - Spuds.md
 C:\Users\loganf\Documents\IDAHO-VAULT\1907 Borah - Arriving 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\1907 Borah - Arriving.md
 ``n
-
 ### Group 364: SCRATCH--93486111-ecff-80a4-5e44-162ed053c646-2026-01-28_22-52-02-loganf.prproj
 
 **Size**: 5177.79 KB | **Hash**: `1DBFA838F7350AB509889681A82CC22A` | **Files**: 2
@@ -23389,7 +23026,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\1907 Borah - Arriving.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--93486111-ecff-80a4-5e44-162ed053c646-2026-01-28_22-52-02-loganf.prproj
 C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--93486111-ecff-80a4-5e44-162ed053c646-2026-01-28_22-52-02-loganf__src_scratch-folder__f9a7359e.prproj
 ``n
-
 ### Group 365: 122617909_10219285384186264_3997527053913704468_n (2).jpg
 
 **Size**: 258.4 KB | **Hash**: `8830CDDA71A62E92BE73000463760CF9` | **Files**: 3
@@ -23398,7 +23034,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--93486111-ecff-80a4-5e44-162ed053c
 C:\Users\loganf\Documents\IDAHO-VAULT\122617909_10219285384186264_3997527053913704468_n.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\122617909_10219285384186264_3997527053913704468_n__src_scratch-folder__6c5c8ce8.jpg
 ``n
-
 ### Group 366: images.md
 
 **Size**: 0.04 KB | **Hash**: `26050486B0D94BF6EA6B249A8228282F` | **Files**: 12
@@ -23416,7 +23051,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\!\INTEGRATIONS\INTEGRATIONS.md
 C:\Users\loganf\Documents\IDAHO-VAULT\!\MONITORING\MONITORING.md
 C:\Users\loganf\Documents\IDAHO-VAULT\!\PHONE-LINK\PHONE-LINK.md
 ``n
-
 ### Group 367: Codi Galloway.md
 
 **Size**: 0.06 KB | **Hash**: `1184E5CD0AB7CBD588192C17D3526F07` | **Files**: 4
@@ -23426,7 +23060,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Greg Ferch.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Jake Ellis.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Rob Mason.md
 ``n
-
 ### Group 368: San Diego.md
 
 **Size**: 0.06 KB | **Hash**: `AA9AFFC0EC6E9BEF3426F4B69887A4C3` | **Files**: 2
@@ -23434,7 +23067,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Rob Mason.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\San Diego.md
 C:\Users\loganf\Documents\IDAHO-VAULT\San Francisco.md
 ``n
-
 ### Group 369: Vol. 01 Issue 06 - Members of the Celebrity Movement 1.md
 
 **Size**: 0.27 KB | **Hash**: `DFF9337E1B5FED2EB2020601C32B2774` | **Files**: 3
@@ -23443,7 +23075,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\San Francisco.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Vol. 01 Issue 06 - Members of the Celebrity Movement 2.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Vol. 01 Issue 06 - Members of the Celebrity Movement.md
 ``n
-
 ### Group 370: Palisades dam__src_scratch-folder__5396d316.md
 
 **Size**: 0.17 KB | **Hash**: `CA28397DA5D7E419C5D0F293CB1540A9` | **Files**: 2
@@ -23451,7 +23082,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Vol. 01 Issue 06 - Members of the Celebrit
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Palisades dam__src_scratch-folder__5396d316.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Palisades dam__src_scratch-folder__c3b666c1.md
 ``n
-
 ### Group 371: BobbyMontoya009back Smith Prairie Hungover 1979.jpg
 
 **Size**: 834.95 KB | **Hash**: `FF336909E7BD381FC5C8313444DCA619` | **Files**: 2
@@ -23459,7 +23089,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Palisades dam__src_scratch-folder__c3b666c
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya009back Smith Prairie Hungover 1979.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya009back Smith Prairie Hungover 1979__src_scratch-folder__53845d3c.jpg
 ``n
-
 ### Group 372: Borah - University of Idaho 1 1.md
 
 **Size**: 5.44 KB | **Hash**: `B64D08CFCC6B135C089D3E5EE6FCBA33` | **Files**: 3
@@ -23468,7 +23097,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya009back Smith Prairie Hungover
 C:\Users\loganf\Documents\IDAHO-VAULT\Borah - University of Idaho 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Borah - University of Idaho.md
 ``n
-
 ### Group 373: Dean Cameron (2)__src_scratch-folder__290e0029.md
 
 **Size**: 1.11 KB | **Hash**: `EF9963B6C35E7257E8900741273B289A` | **Files**: 2
@@ -23476,15 +23104,13 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Borah - University of Idaho.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Dean Cameron (2)__src_scratch-folder__290e0029.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Dean Cameron__src_scratch-folder__72741ff2.md
 ``n
-
-### Group 374: Idaho Legislative News Roundup _February 13, 2026_ Idaho Reports Extra.mp4
+### Group 374: Idaho Legislative News Roundup _ February 13, 2026 _ Idaho Reports Extra.mp4
 
 **Size**: 45503.98 KB | **Hash**: `50509281A62E19907407985D874B3F28` | **Files**: 2
 
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Idaho Legislative News Roundup _ February 13, 2026 _ Idaho Reports Extra.mp4
 C:\Users\loganf\Documents\IDAHO-VAULT\Legislative News Roundup _ February 13, 2026 _ Idaho Reports Extra.mp4
 ``n
-
 ### Group 375: Blackfoot River__src_scratch-folder__252541e3.md
 
 **Size**: 0.08 KB | **Hash**: `3AC7B7D9D769298ECC2960FB0774F731` | **Files**: 2
@@ -23492,7 +23118,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Legislative News Roundup _ February 13, 20
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Blackfoot River__src_scratch-folder__252541e3.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Blackfoot River__src_scratch-folder__84fbbd7c.md
 ``n
-
 ### Group 376: 1976 Church - Presidential Campaign Announcement 1 1.md
 
 **Size**: 13.16 KB | **Hash**: `282301E9808384D43FF4F14112A6D8C0` | **Files**: 3
@@ -23501,7 +23126,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Blackfoot River__src_scratch-folder__84fbb
 C:\Users\loganf\Documents\IDAHO-VAULT\1976 Church - Presidential Campaign Announcement 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\1976 Church - Presidential Campaign Announcement.md
 ``n
-
 ### Group 377: Russ_Fulcher,_official_portrait,_116th_Congress.jpg
 
 **Size**: 5148.21 KB | **Hash**: `B58C9A6964011E0FBCC95301A2F3E56F` | **Files**: 3
@@ -23510,7 +23134,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\1976 Church - Presidential Campaign Announ
 C:\Users\loganf\Documents\IDAHO-VAULT\Russ_Fulcher_official_portrait_116th_Congress.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\Russ_Fulcher_official_portrait_116th_Congress__src_scratch-folder__1c04d44f.jpg
 ``n
-
 ### Group 378: SCRATCH--93486111-ecff-80a4-5e44-162ed053c646-2026-01-29_10-07-55-loganf.prproj
 
 **Size**: 5405.97 KB | **Hash**: `0CFA7AFD1AEC1D8E543026654188B35F` | **Files**: 2
@@ -23518,7 +23141,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Russ_Fulcher_official_portrait_116th_Congr
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--93486111-ecff-80a4-5e44-162ed053c646-2026-01-29_10-07-55-loganf.prproj
 C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--93486111-ecff-80a4-5e44-162ed053c646-2026-01-29_10-07-55-loganf__src_scratch-folder__35ce3243.prproj
 ``n
-
 ### Group 379: G5mHu6Ka0AANW4F (2).jpg
 
 **Size**: 336.19 KB | **Hash**: `5EF2C61E14BBD74A6E5E867AB58A45DD` | **Files**: 3
@@ -23527,7 +23149,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--93486111-ecff-80a4-5e44-162ed053c
 C:\Users\loganf\Documents\IDAHO-VAULT\G5mHu6Ka0AANW4F.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\G5mHu6Ka0AANW4F__src_scratch-folder__1afb7a6e.jpg
 ``n
-
 ### Group 380: 1935 FDR - New Deal Lexicon 1 1.md
 
 **Size**: 0.28 KB | **Hash**: `70EEA6D71312C7D9AC521D3D01E1D427` | **Files**: 3
@@ -23536,7 +23157,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\G5mHu6Ka0AANW4F__src_scratch-folder__1afb7
 C:\Users\loganf\Documents\IDAHO-VAULT\1935 FDR - New Deal Lexicon 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\1935 FDR - New Deal Lexicon.md
 ``n
-
 ### Group 381: Britt Raybould (2)__src_scratch-folder__453d0c58.md
 
 **Size**: 2.01 KB | **Hash**: `C7FE55FA9CF131B54A2CE7E74C0B59C1` | **Files**: 2
@@ -23544,7 +23164,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\1935 FDR - New Deal Lexicon.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Britt Raybould (2)__src_scratch-folder__453d0c58.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Britt Raybould__src_scratch-folder__16e53f3d.md
 ``n
-
 ### Group 382: - GitLab Docs - Install an offline GitLab Self-Managed instance.md
 
 **Size**: 6.7 KB | **Hash**: `179340CC2D7B18BEF7D24D4D6B06D316` | **Files**: 2
@@ -23552,7 +23171,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Britt Raybould__src_scratch-folder__16e53f
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\- GitLab Docs - Install an offline GitLab Self-Managed instance.md
 C:\Users\loganf\Documents\IDAHO-VAULT\- GitLab Docs - Tutorial Set up your organization.md
 ``n
-
 ### Group 383: Linear - agent chat - Manage Linear workspace and GitHub PRs 1.md
 
 **Size**: 6.29 KB | **Hash**: `3527C8C605657456BBFA98875AD9AF01` | **Files**: 2
@@ -23560,7 +23178,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\- GitLab Docs - Tutorial Set up your organ
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Linear - agent chat - Manage Linear workspace and GitHub PRs 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Linear - agent chat - Manage Linear workspace and GitHub PRs.md
 ``n
-
 ### Group 384: 1911 T Roosevelt - Argonaut II 1 1.md
 
 **Size**: 0.69 KB | **Hash**: `AF1E6C43203BDE4A27A4AD079A001E56` | **Files**: 3
@@ -23569,7 +23186,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Linear - agent chat - Manage Linear worksp
 C:\Users\loganf\Documents\IDAHO-VAULT\1911 T Roosevelt - Argonaut II 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\1911 T Roosevelt - Argonaut II.md
 ``n
-
 ### Group 385: PROTOCOL-PASSBACK-SYNC 1.md
 
 **Size**: 6.21 KB | **Hash**: `C02720D44BDD9671D8CEDC0D709BD6CE` | **Files**: 2
@@ -23577,7 +23193,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\1911 T Roosevelt - Argonaut II.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\PROTOCOL-PASSBACK-SYNC 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\PROTOCOL-PASSBACK-SYNC.md
 ``n
-
 ### Group 386: Melissa Wintrow (2)__src_scratch-folder__0abac52f.md
 
 **Size**: 1.15 KB | **Hash**: `9741EC55171581E876D94BC56C1F8B90` | **Files**: 2
@@ -23585,7 +23200,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\PROTOCOL-PASSBACK-SYNC.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Melissa Wintrow (2)__src_scratch-folder__0abac52f.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Melissa Wintrow__src_scratch-folder__6ad3406d.md
 ``n
-
 ### Group 387: - News From The States - How Medicaid fallout forced Idaho to retract past cuts.md
 
 **Size**: 7.63 KB | **Hash**: `E6440AAC096DA22849F7A93EF54BDA51` | **Files**: 2
@@ -23593,7 +23207,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Melissa Wintrow__src_scratch-folder__6ad34
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\- News From The States - How Medicaid fallout forced Idaho to retract past cuts.md
 C:\Users\loganf\Documents\IDAHO-VAULT\2026-04-15 - Institute for Policy Studies - Tax Day 2026 The Average Taxpayer Paid $4,049 for War and Weapons.md
 ``n
-
 ### Group 388: BobbyMontoya020back Bobby Joe Montoya, Boise Smokejumpers Jump #150 photo by T.G. Beltran.jpg
 
 **Size**: 611.01 KB | **Hash**: `76529B08FAD033C81BB5DAC66F75B031` | **Files**: 2
@@ -23601,7 +23214,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\2026-04-15 - Institute for Policy Studies 
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya020back Bobby Joe Montoya, Boise Smokejumpers Jump #150 photo by T.G. Beltran.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya020back Bobby Joe Montoya, Boise Smokejumpers Jump #150 photo by T.G. Beltran__src_scratch-folder__f331234d.jpg
 ``n
-
 ### Group 389: John Day Creek__src_scratch-folder__0330863a.md
 
 **Size**: 0.09 KB | **Hash**: `B77AA315CCE4BAA908F0C941F03F366A` | **Files**: 2
@@ -23609,7 +23221,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya020back Bobby Joe Montoya, Boi
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\John Day Creek__src_scratch-folder__0330863a.md
 C:\Users\loganf\Documents\IDAHO-VAULT\John Day Creek__src_scratch-folder__cf903304.md
 ``n
-
 ### Group 390: 1924 Borah - Gaggle 1 1.md
 
 **Size**: 0.19 KB | **Hash**: `6F8FFA74069BB75BC3428CD42933EB72` | **Files**: 3
@@ -23618,7 +23229,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\John Day Creek__src_scratch-folder__cf9033
 C:\Users\loganf\Documents\IDAHO-VAULT\1924 Borah - Gaggle 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\1924 Borah - Gaggle.md
 ``n
-
 ### Group 391: Clearwater River__src_scratch-folder__9d856ce0.md
 
 **Size**: 0.19 KB | **Hash**: `771E371C0148C31A18163306DEFD4831` | **Files**: 2
@@ -23626,7 +23236,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\1924 Borah - Gaggle.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Clearwater River__src_scratch-folder__9d856ce0.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Clearwater River__src_scratch-folder__aa45ea30.md
 ``n
-
 ### Group 392: Nez Perce National Forest__src_scratch-folder__d9cadc7b.md
 
 **Size**: 0.19 KB | **Hash**: `17D5960CB01DF8E0A1FB30D67B824816` | **Files**: 2
@@ -23634,7 +23243,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Clearwater River__src_scratch-folder__aa45
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Nez Perce National Forest__src_scratch-folder__d9cadc7b.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Nez Perce National Forest__src_scratch-folder__fd1238e3.md
 ``n
-
 ### Group 393: Minidoka dam__src_scratch-folder__0360b37c.md
 
 **Size**: 0.16 KB | **Hash**: `BCF045A54BEBC689995042ED7D5A6DE7` | **Files**: 2
@@ -23642,7 +23250,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Nez Perce National Forest__src_scratch-fol
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Minidoka dam__src_scratch-folder__0360b37c.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Minidoka dam__src_scratch-folder__9424d987.md
 ``n
-
 ### Group 394: Sawtooth National Recreation Area__src_scratch-folder__bd2a3cd7.md
 
 **Size**: 0.23 KB | **Hash**: `B770DB8B29E06649659F39C255F6209C` | **Files**: 2
@@ -23650,7 +23257,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Minidoka dam__src_scratch-folder__9424d987
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Sawtooth National Recreation Area__src_scratch-folder__bd2a3cd7.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Sawtooth National Recreation Area__src_scratch-folder__cf4e664d.md
 ``n
-
 ### Group 395: BobbyMontoya006.jpg
 
 **Size**: 525.88 KB | **Hash**: `01354B520E7D483EB062493A5162F9A6` | **Files**: 2
@@ -23658,7 +23264,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Sawtooth National Recreation Area__src_scr
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya006.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya006__src_scratch-folder__f7a3d019.jpg
 ``n
-
 ### Group 396: - OpenRouter Documentation - LangChain Integration - OpenRouter SDK Support 1.md
 
 **Size**: 1.53 KB | **Hash**: `53BA327ABD533D647DDB5F0896B75795` | **Files**: 2
@@ -23666,7 +23271,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya006__src_scratch-folder__f7a3d
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\- OpenRouter Documentation - LangChain Integration - OpenRouter SDK Support 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\- OpenRouter Documentation - LangChain Integration - OpenRouter SDK Support.md
 ``n
-
 ### Group 397: SCRATCH--93486111-ecff-80a4-5e44-162ed053c646-2026-01-28_23-52-57-loganf.prproj
 
 **Size**: 5418.27 KB | **Hash**: `7591057FF170CF42D6A2A7FD860087E0` | **Files**: 2
@@ -23674,7 +23278,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\- OpenRouter Documentation - LangChain Int
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--93486111-ecff-80a4-5e44-162ed053c646-2026-01-28_23-52-57-loganf.prproj
 C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--93486111-ecff-80a4-5e44-162ed053c646-2026-01-28_23-52-57-loganf__src_scratch-folder__bac938ba.prproj
 ``n
-
 ### Group 398: BobbyMontoya004.jpg
 
 **Size**: 525.12 KB | **Hash**: `A6FFEA3062C278C901B6DA0291B2F108` | **Files**: 2
@@ -23682,7 +23285,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--93486111-ecff-80a4-5e44-162ed053c
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya004.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya004__src_scratch-folder__c5be7ad4.jpg
 ``n
-
 ### Group 399: Lake Lowell__src_scratch-folder__0e2670d5.md
 
 **Size**: 0.16 KB | **Hash**: `A52B601B2BD40AF50AA0BD3BD23E3239` | **Files**: 2
@@ -23690,7 +23292,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya004__src_scratch-folder__c5be7
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Lake Lowell__src_scratch-folder__0e2670d5.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Lake Lowell__src_scratch-folder__e627bcf4.md
 ``n
-
 ### Group 400: BobbyMontoya010.jpg
 
 **Size**: 1430.56 KB | **Hash**: `8B54EBFFB44D863EC09BBC281168109A` | **Files**: 2
@@ -23698,7 +23299,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Lake Lowell__src_scratch-folder__e627bcf4.
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya010.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya010__src_scratch-folder__1df0a8e3.jpg
 ``n
-
 ### Group 401: Clearwater National Forest__src_scratch-folder__8d068324.md
 
 **Size**: 0.21 KB | **Hash**: `4605739F6B7320BE69361A80D14F87CD` | **Files**: 2
@@ -23706,7 +23306,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya010__src_scratch-folder__1df0a
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Clearwater National Forest__src_scratch-folder__8d068324.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Clearwater National Forest__src_scratch-folder__de849cc2.md
 ``n
-
 ### Group 402: BobbyMontoya017.jpg
 
 **Size**: 2818.3 KB | **Hash**: `26B54BD51CB2CD122187CF336F2DF4BB` | **Files**: 2
@@ -23714,7 +23313,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Clearwater National Forest__src_scratch-fo
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya017.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya017__src_scratch-folder__18e22966.jpg
 ``n
-
 ### Group 403: SCRATCH--93486111-ecff-80a4-5e44-162ed053c646-2026-01-26_13-10-12-loganf.prproj
 
 **Size**: 5058.33 KB | **Hash**: `E72BE1134EDEA172A883671C43E6A674` | **Files**: 2
@@ -23722,7 +23320,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya017__src_scratch-folder__18e22
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--93486111-ecff-80a4-5e44-162ed053c646-2026-01-26_13-10-12-loganf.prproj
 C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--93486111-ecff-80a4-5e44-162ed053c646-2026-01-26_13-10-12-loganf__src_scratch-folder__c6af8477.prproj
 ``n
-
 ### Group 404: May 9 Bedke.docx
 
 **Size**: 23.38 KB | **Hash**: `0789432C179BFF1356083C990E579187` | **Files**: 2
@@ -23730,7 +23327,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--93486111-ecff-80a4-5e44-162ed053c
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\May 9 Bedke.docx
 C:\Users\loganf\Documents\IDAHO-VAULT\May 9 Bedke__src_scratch-folder__a9832df9.docx
 ``n
-
 ### Group 405: SCRATCH--55aff571-55fe-e103-c089-36bea65e964c-2026-01-14_13-10-50-loganf.prproj
 
 **Size**: 3968.22 KB | **Hash**: `1C8D44D1EE5B0E5BA8DE4F989EE35547` | **Files**: 2
@@ -23738,7 +23334,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\May 9 Bedke__src_scratch-folder__a9832df9.
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--55aff571-55fe-e103-c089-36bea65e964c-2026-01-14_13-10-50-loganf.prproj
 C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--55aff571-55fe-e103-c089-36bea65e964c-2026-01-14_13-10-50-loganf__src_scratch-folder__fc617adb.prproj
 ``n
-
 ### Group 406: SCRATCH--55aff571-55fe-e103-c089-36bea65e964c-2026-01-21_15-36-06-loganf.prproj
 
 **Size**: 4018.58 KB | **Hash**: `BB16158590A12EB47A000B79D8C72198` | **Files**: 2
@@ -23746,7 +23341,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--55aff571-55fe-e103-c089-36bea65e9
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--55aff571-55fe-e103-c089-36bea65e964c-2026-01-21_15-36-06-loganf.prproj
 C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--55aff571-55fe-e103-c089-36bea65e964c-2026-01-21_15-36-06-loganf__src_scratch-folder__904af3be.prproj
 ``n
-
 ### Group 407: Fracture 1.md
 
 **Size**: 0.1 KB | **Hash**: `1966A1CCDDDB770471B31E5155F76BF1` | **Files**: 2
@@ -23754,7 +23348,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--55aff571-55fe-e103-c089-36bea65e9
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Fracture 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Fracture.md
 ``n
-
 ### Group 408: d8e80a83d3_IdahoPTVProductionPolicies02112020.pdf
 
 **Size**: 106.08 KB | **Hash**: `C452628B32015367612A31683049C8D3` | **Files**: 2
@@ -23762,7 +23355,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Fracture.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\d8e80a83d3_IdahoPTVProductionPolicies02112020.pdf
 C:\Users\loganf\Documents\IDAHO-VAULT\d8e80a83d3_IdahoPTVProductionPolicies02112020__src_scratch-folder__dfc65b3b.pdf
 ``n
-
 ### Group 409: BobbyMontoya025.jpg
 
 **Size**: 2164.02 KB | **Hash**: `53B9B01A13E4C0CD4C9F9D4572FA7EB9` | **Files**: 2
@@ -23770,7 +23362,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\d8e80a83d3_IdahoPTVProductionPolicies02112
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya025.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya025__src_scratch-folder__aeaab189.jpg
 ``n
-
 ### Group 410: Debbie-Critchfield_SDE.jpg
 
 **Size**: 10647.32 KB | **Hash**: `EB5A0F9A93887A3F2D118A62BCA7E129` | **Files**: 2
@@ -23778,7 +23369,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya025__src_scratch-folder__aeaab
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Debbie-Critchfield_SDE.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\Debbie-Critchfield_SDE__src_scratch-folder__7d105fbb.jpg
 ``n
-
 ### Group 411: 184ea54a-0202-4f65-8d27-3bfbc9664f2a_1284x1657 (2).jpg
 
 **Size**: 187.16 KB | **Hash**: `D0CB8863F857471120B0B886863AE832` | **Files**: 3
@@ -23787,7 +23377,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Debbie-Critchfield_SDE__src_scratch-folder
 C:\Users\loganf\Documents\IDAHO-VAULT\184ea54a-0202-4f65-8d27-3bfbc9664f2a_1284x1657.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\184ea54a-0202-4f65-8d27-3bfbc9664f2a_1284x1657__src_scratch-folder__dfebad0e.jpg
 ``n
-
 ### Group 412: Conditions Limitations and Restrictions (2).md
 
 **Size**: 1.97 KB | **Hash**: `5747E8679BE5F4B47F93F20B5D834690` | **Files**: 2
@@ -23795,7 +23384,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\184ea54a-0202-4f65-8d27-3bfbc9664f2a_1284x
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Conditions Limitations and Restrictions (2).md
 C:\Users\loganf\Documents\IDAHO-VAULT\Conditions Limitations and Restrictions__src_scratch-folder__71cee276.md
 ``n
-
 ### Group 413: U.S. Bureau of Land Management.md
 
 **Size**: 0.1 KB | **Hash**: `4257D8F503909B9EC91BECDE0B928763` | **Files**: 2
@@ -23803,7 +23391,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Conditions Limitations and Restrictions__s
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\U.S. Bureau of Land Management.md
 C:\Users\loganf\Documents\IDAHO-VAULT\U.S. Fish and Wildlife Service.md
 ``n
-
 ### Group 414: Vol. 01 Issue 12 - Movements Taking Root 1.md
 
 **Size**: 0.1 KB | **Hash**: `A147BE848F11F981FF1D69C6297A40B5` | **Files**: 3
@@ -23812,7 +23399,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\U.S. Fish and Wildlife Service.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Vol. 01 Issue 12 - Movements Taking Root 2.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Vol. 01 Issue 12 - Movements Taking Root.md
 ``n
-
 ### Group 415: Feb 6 Pisani.docx
 
 **Size**: 20.08 KB | **Hash**: `D484406ECE44222DF2EE5F2043A86B2B` | **Files**: 2
@@ -23820,7 +23406,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Vol. 01 Issue 12 - Movements Taking Root.m
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Feb 6 Pisani.docx
 C:\Users\loganf\Documents\IDAHO-VAULT\Feb 6 Pisani__src_scratch-folder__bc0d9bce.docx
 ``n
-
 ### Group 416: Debbie-Critchfield-web-17.jpg
 
 **Size**: 397.19 KB | **Hash**: `1056F897A9EF53DCBE28FE8A783E6429` | **Files**: 2
@@ -23828,7 +23413,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Feb 6 Pisani__src_scratch-folder__bc0d9bce
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Debbie-Critchfield-web-17.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\Debbie-Critchfield-web-17__src_scratch-folder__893615df.jpg
 ``n
-
 ### Group 417: LEVELSET-SUNSET-CODEX-2026-03-29 1.md
 
 **Size**: 3.31 KB | **Hash**: `0D37DF5A1A358B24FDF39BCABEA0E50B` | **Files**: 2
@@ -23836,7 +23420,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Debbie-Critchfield-web-17__src_scratch-fol
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\LEVELSET-SUNSET-CODEX-2026-03-29 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\LEVELSET-SUNSET-CODEX-2026-03-29.md
 ``n
-
 ### Group 418: Chenele Dixon.md
 
 **Size**: 0.07 KB | **Hash**: `2F6929D30D888D01E6127E9F17180261` | **Files**: 2
@@ -23844,7 +23427,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\LEVELSET-SUNSET-CODEX-2026-03-29.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Chenele Dixon.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Glenneda Zuiderveld.md
 ``n
-
 ### Group 419: 2026-03-04 - News From The States - Taxpayer dollars flood pregnancy centers. Oversight hasn't followed 1.md
 
 **Size**: 33.95 KB | **Hash**: `6F5C85480BDF486B39363EBDA39564B3` | **Files**: 2
@@ -23852,7 +23434,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Glenneda Zuiderveld.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\2026-03-04 - News From The States - Taxpayer dollars flood pregnancy centers. Oversight hasn't followed 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\2026-03-04 - News From The States - Taxpayer dollars flood pregnancy centers. Oversight hasn't followed.md
 ``n
-
 ### Group 420: Palisades reservoir__src_scratch-folder__d5ebe2f9.md
 
 **Size**: 0.18 KB | **Hash**: `08FB25372634605BBA8126ABECB7CA5B` | **Files**: 2
@@ -23860,7 +23441,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\2026-03-04 - News From The States - Taxpay
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Palisades reservoir__src_scratch-folder__d5ebe2f9.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Palisades reservoir__src_scratch-folder__f47f591d.md
 ``n
-
 ### Group 421: Vol. 01 Issue 02 - A Society of Internet-Connected Devices 1.md
 
 **Size**: 0.18 KB | **Hash**: `9D65FDEC8A87D872F2EC249A1F8F2D35` | **Files**: 3
@@ -23869,7 +23449,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Palisades reservoir__src_scratch-folder__f
 C:\Users\loganf\Documents\IDAHO-VAULT\Vol. 01 Issue 02 - A Society of Internet-Connected Devices 2.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Vol. 01 Issue 02 - A Society of Internet-Connected Devices.md
 ``n
-
 ### Group 422: SCRATCH--93486111-ecff-80a4-5e44-162ed053c646-2026-01-26_10-24-26-loganf.prproj
 
 **Size**: 4205.02 KB | **Hash**: `785FF1F2A40C376D72922607DE5E09DF` | **Files**: 2
@@ -23877,7 +23456,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Vol. 01 Issue 02 - A Society of Internet-C
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--93486111-ecff-80a4-5e44-162ed053c646-2026-01-26_10-24-26-loganf.prproj
 C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--93486111-ecff-80a4-5e44-162ed053c646-2026-01-26_10-24-26-loganf__src_scratch-folder__1cd75645.prproj
 ``n
-
 ### Group 423: BobbyMontoya016.jpg
 
 **Size**: 1681.96 KB | **Hash**: `3259E96CAEE46E19A99D7F9F716B5C2B` | **Files**: 2
@@ -23885,7 +23463,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--93486111-ecff-80a4-5e44-162ed053c
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya016.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya016__src_scratch-folder__e4c2b9dc.jpg
 ``n
-
 ### Group 424: John Hatcher.md
 
 **Size**: 0.14 KB | **Hash**: `FE1E4945030A07D20CA1B97945F98388` | **Files**: 2
@@ -23893,7 +23470,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya016__src_scratch-folder__e4c2b
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\John Hatcher.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Larry Sanders.md
 ``n
-
 ### Group 425: Michelle Thompson.md
 
 **Size**: 0.14 KB | **Hash**: `D0AB7DEAB01432D9A3782F70A43201CD` | **Files**: 3
@@ -23902,7 +23478,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Larry Sanders.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Ramona Grissom.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Randi Bain.md
 ``n
-
 ### Group 426: Silver Valley__src_scratch-folder__ac4871bf.md
 
 **Size**: 0.14 KB | **Hash**: `D004EF3ED7CAB699CE84B11ECF475AE0` | **Files**: 2
@@ -23910,7 +23485,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Randi Bain.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Silver Valley__src_scratch-folder__ac4871bf.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Silver Valley__src_scratch-folder__ff376818.md
 ``n
-
 ### Group 427: Swan Falls dam__src_scratch-folder__1850f3a7.md
 
 **Size**: 0.14 KB | **Hash**: `CA33C18AD7258ABB72807F10B3732162` | **Files**: 2
@@ -23918,7 +23492,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Silver Valley__src_scratch-folder__ff37681
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Swan Falls dam__src_scratch-folder__1850f3a7.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Swan Falls dam__src_scratch-folder__68d9739d.md
 ``n
-
 ### Group 428: Vol. 01 Issue 07 - Hate in the News 1.md
 
 **Size**: 0.14 KB | **Hash**: `16E86F7DEFD701F3E1651FECA76B2351` | **Files**: 3
@@ -23927,7 +23500,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Swan Falls dam__src_scratch-folder__68d973
 C:\Users\loganf\Documents\IDAHO-VAULT\Vol. 01 Issue 07 - Hate in the News 2.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Vol. 01 Issue 07 - Hate in the News.md
 ``n
-
 ### Group 429: Precincts_133 (1).csv
 
 **Size**: 1163.33 KB | **Hash**: `01FAE709601A30C877A42670E51F0B6F` | **Files**: 2
@@ -23935,7 +23507,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Vol. 01 Issue 07 - Hate in the News.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Precincts_133 (1).csv
 C:\Users\loganf\Documents\IDAHO-VAULT\Precincts_133 (2).csv
 ``n
-
 ### Group 430: af0234f5-6416-4622-b82c-deadff600649_2096x1256 (2).jpg
 
 **Size**: 216.68 KB | **Hash**: `78E85B0308B13655E14491BA47F8E020` | **Files**: 3
@@ -23944,7 +23515,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Precincts_133 (2).csv
 C:\Users\loganf\Documents\IDAHO-VAULT\af0234f5-6416-4622-b82c-deadff600649_2096x1256.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\af0234f5-6416-4622-b82c-deadff600649_2096x1256__src_scratch-folder__252443a6.jpg
 ``n
-
 ### Group 431: BobbyMontoya008back Montoya + Jim Larkin 1963.jpg
 
 **Size**: 308.09 KB | **Hash**: `9C24BF35075BAAF3493A95479ACDA5FF` | **Files**: 2
@@ -23952,7 +23522,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\af0234f5-6416-4622-b82c-deadff600649_2096x
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya008back Montoya + Jim Larkin 1963.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya008back Montoya + Jim Larkin 1963__src_scratch-folder__38e1c291.jpg
 ``n
-
 ### Group 432: Screenshot 2026-03-19 171737 (2).jpg
 
 **Size**: 232.42 KB | **Hash**: `731F9107BE6FCE99DA05A45EA3F91267` | **Files**: 3
@@ -23961,7 +23530,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya008back Montoya + Jim Larkin 1
 C:\Users\loganf\Documents\IDAHO-VAULT\Screenshot 2026-03-19 171737.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\Screenshot 2026-03-19 171737__src_scratch-folder__e05432f1.jpg
 ``n
-
 ### Group 433: SCRATCH--93486111-ecff-80a4-5e44-162ed053c646-2026-01-26_10-39-12-loganf.prproj
 
 **Size**: 4468.1 KB | **Hash**: `CBAA19D2009CEBF4B91C97614920FCC8` | **Files**: 2
@@ -23969,7 +23537,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Screenshot 2026-03-19 171737__src_scratch-
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--93486111-ecff-80a4-5e44-162ed053c646-2026-01-26_10-39-12-loganf.prproj
 C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--93486111-ecff-80a4-5e44-162ed053c646-2026-01-26_10-39-12-loganf__src_scratch-folder__8f08550e.prproj
 ``n
-
 ### Group 434: Malheur County.md
 
 **Size**: 0.05 KB | **Hash**: `59C3B0D87F9AA542C5E87F29B053E3AC` | **Files**: 2
@@ -23977,7 +23544,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--93486111-ecff-80a4-5e44-162ed053c
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Malheur County.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Multnomah County.md
 ``n
-
 ### Group 435: 6B-Mitchell-Brandon.jpg
 
 **Size**: 1109.1 KB | **Hash**: `A2E793AC29C83EE628428F0B512B4B4F` | **Files**: 2
@@ -23985,7 +23551,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Multnomah County.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\6B-Mitchell-Brandon.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\Mitchell.Brandon_6B_5x7print.jpg
 ``n
-
 ### Group 436: CJ Strike dam__src_scratch-folder__26f8e201.md
 
 **Size**: 0.17 KB | **Hash**: `CD1B62B905701BBDBF4BF8397AD1E84C` | **Files**: 2
@@ -23993,7 +23558,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Mitchell.Brandon_6B_5x7print.jpg
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\CJ Strike dam__src_scratch-folder__26f8e201.md
 C:\Users\loganf\Documents\IDAHO-VAULT\CJ Strike dam__src_scratch-folder__e3e65f65.md
 ``n
-
 ### Group 437: images (2).jpg
 
 **Size**: 5.37 KB | **Hash**: `4EC666B6E4FD2DAE090D6A30D2D50899` | **Files**: 3
@@ -24002,7 +23566,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\CJ Strike dam__src_scratch-folder__e3e65f6
 C:\Users\loganf\Documents\IDAHO-VAULT\images__src_pics-pettinger__3a47d08b.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\images__src_scratch-folder__839e78ae.jpg
 ``n
-
 ### Group 438: CDA-basin-001.jpg
 
 **Size**: 29567.52 KB | **Hash**: `EB2690A327D23BB8ADF9F3A4B6CD84ED` | **Files**: 2
@@ -24010,7 +23573,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\images__src_scratch-folder__839e78ae.jpg
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\CDA-basin-001.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\CDA-basin-001__src_scratch-folder__ee89d160.jpg
 ``n
-
 ### Group 439: CDA-basin-002.jpg
 
 **Size**: 29351.7 KB | **Hash**: `499777E6D88C1AC985299198784AAFE5` | **Files**: 2
@@ -24018,7 +23580,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\CDA-basin-001__src_scratch-folder__ee89d16
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\CDA-basin-002.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\CDA-basin-002__src_scratch-folder__d4b12890.jpg
 ``n
-
 ### Group 440: GEM.PLT.100.SpecialProgramPlatesCounts-20230201.xlsx
 
 **Size**: 7.92 KB | **Hash**: `872BEBB5BC5F009B6889AE435E7AD1BC` | **Files**: 2
@@ -24026,7 +23587,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\CDA-basin-002__src_scratch-folder__d4b1289
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\GEM.PLT.100.SpecialProgramPlatesCounts-20230201.xlsx
 C:\Users\loganf\Documents\IDAHO-VAULT\GEM.PLT.100.SpecialProgramPlatesCounts-20230201__src_scratch-folder__5a502dc7.xlsx
 ``n
-
 ### Group 441: Deer Flat dam__src_scratch-folder__b38edebb.md
 
 **Size**: 0.09 KB | **Hash**: `BCD33A3C8660B146B3ED0E363C6AEA9B` | **Files**: 2
@@ -24034,7 +23594,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\GEM.PLT.100.SpecialProgramPlatesCounts-202
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Deer Flat dam__src_scratch-folder__b38edebb.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Deer Flat dam__src_scratch-folder__e05c1d9c.md
 ``n
-
 ### Group 442: SCRATCH--55aff571-55fe-e103-c089-36bea65e964c-2026-01-14_13-34-38-loganf.prproj
 
 **Size**: 1258.92 KB | **Hash**: `168EA5968C164765994C60A9BC261EC4` | **Files**: 2
@@ -24042,7 +23601,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Deer Flat dam__src_scratch-folder__e05c1d9
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--55aff571-55fe-e103-c089-36bea65e964c-2026-01-14_13-34-38-loganf.prproj
 C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--55aff571-55fe-e103-c089-36bea65e964c-2026-01-14_13-34-38-loganf__src_scratch-folder__3bfb9208.prproj
 ``n
-
 ### Group 443: Lake Pend Oreille__src_scratch-folder__0a9d3572.md
 
 **Size**: 0.23 KB | **Hash**: `D328CA2DE766D7EE1753D7E2B6CE7A3A` | **Files**: 2
@@ -24050,7 +23608,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--55aff571-55fe-e103-c089-36bea65e9
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Lake Pend Oreille__src_scratch-folder__0a9d3572.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Lake Pend Oreille__src_scratch-folder__eb7c407b.md
 ``n
-
 ### Group 444: 29A-Manwaring-Dustin.jpg
 
 **Size**: 1123.45 KB | **Hash**: `5311119EA875D5B2C50E791315B6562D` | **Files**: 2
@@ -24058,7 +23615,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Lake Pend Oreille__src_scratch-folder__eb7
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\29A-Manwaring-Dustin.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\Manwaring.Dustin_29A_5x7print.jpg
 ``n
-
 ### Group 445: 1938 Borah - Committee Monopoly Inquiry 1 1.md
 
 **Size**: 4.1 KB | **Hash**: `E0EC0AABCFD3AF11B30F46D7AF60BA1F` | **Files**: 3
@@ -24067,7 +23623,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Manwaring.Dustin_29A_5x7print.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\1938 Borah - Committee Monopoly Inquiry 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\1938 Borah - Committee Monopoly Inquiry.md
 ``n
-
 ### Group 446: Mike Moyle (2)__src_scratch-folder__3faf61fb.md
 
 **Size**: 1.93 KB | **Hash**: `2B1F4F8920491CA69125451CDEC9D673` | **Files**: 2
@@ -24075,7 +23630,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\1938 Borah - Committee Monopoly Inquiry.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Mike Moyle (2)__src_scratch-folder__3faf61fb.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Mike Moyle__src_scratch-folder__1bbe8b5f.md
 ``n
-
 ### Group 447: CLAUDE 1.md
 
 **Size**: 5.02 KB | **Hash**: `A2592825DE5C86CA63ED17A45249C43A` | **Files**: 2
@@ -24083,7 +23637,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Mike Moyle__src_scratch-folder__1bbe8b5f.m
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\CLAUDE 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\CLAUDE 2.md
 ``n
-
 ### Group 448: Screenshot_20260202-233618 (1).png
 
 **Size**: 216.11 KB | **Hash**: `9036E74D025581AA1F8D1AC4062B0FD9` | **Files**: 3
@@ -24092,7 +23645,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\CLAUDE 2.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Screenshot_20260202-233618 (2).png
 C:\Users\loganf\Documents\IDAHO-VAULT\Screenshot_20260202-233618.png
 ``n
-
 ### Group 449: 35ac5181-5ccc-40fb-bfc9-4c11803b7175+23f7ad70-b3a1-cad2-4da4-9fab00000059 48000.cfa
 
 **Size**: 20992 KB | **Hash**: `58C969DE93A0FC206FEA102FEFE940BA` | **Files**: 2
@@ -24100,7 +23652,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Screenshot_20260202-233618.png
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\35ac5181-5ccc-40fb-bfc9-4c11803b7175+23f7ad70-b3a1-cad2-4da4-9fab00000059 48000.cfa
 C:\Users\loganf\Documents\IDAHO-VAULT\86ed755d-3616-45aa-8c10-7beaeb27fc0c+23f7ad70-b3a1-cad2-4da4-9fab00000059 48000.cfa
 ``n
-
 ### Group 450: Jackson Lake__src_scratch-folder__386b5a18.md
 
 **Size**: 0.2 KB | **Hash**: `ABB32C0AF37404F01673ADDAFFC3D300` | **Files**: 2
@@ -24108,7 +23659,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\86ed755d-3616-45aa-8c10-7beaeb27fc0c+23f7a
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Jackson Lake__src_scratch-folder__386b5a18.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Jackson Lake__src_scratch-folder__e86ee3da.md
 ``n
-
 ### Group 451: Sawtooth Mountain Range__src_scratch-folder__bcd99256.md
 
 **Size**: 0.26 KB | **Hash**: `DFAEF1D1CE13A053C3D7C263F9B04C0D` | **Files**: 2
@@ -24116,7 +23666,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Jackson Lake__src_scratch-folder__e86ee3da
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Sawtooth Mountain Range__src_scratch-folder__bcd99256.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Sawtooth Mountain Range__src_scratch-folder__ff525f09.md
 ``n
-
 ### Group 452: JFAC Investigation Master Brief 2026-03-12 (2).md
 
 **Size**: 3.98 KB | **Hash**: `83D73F8C074D605D68F03B6F7289BE67` | **Files**: 2
@@ -24124,7 +23673,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Sawtooth Mountain Range__src_scratch-folde
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\JFAC Investigation Master Brief 2026-03-12 (2).md
 C:\Users\loganf\Documents\IDAHO-VAULT\JFAC Investigation Master Brief 2026-03-12__src_scratch-folder__0697d125.md
 ``n
-
 ### Group 453: BobbyMontoya002.jpg
 
 **Size**: 447.25 KB | **Hash**: `20AC8611C0752B1C785E87EAE18EE70C` | **Files**: 2
@@ -24132,7 +23680,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\JFAC Investigation Master Brief 2026-03-12
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya002.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya002__src_scratch-folder__c02a700a.jpg
 ``n
-
 ### Group 454: BobbyMontoya028.jpg
 
 **Size**: 9674.6 KB | **Hash**: `9D79B0F677CF8698B8D0BC3235AA7CC4` | **Files**: 2
@@ -24140,7 +23687,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya002__src_scratch-folder__c02a7
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya028.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya028__src_scratch-folder__02bb49e9.jpg
 ``n
-
 ### Group 455: futura-bold_OPAMm (1).zip
 
 **Size**: 15.42 KB | **Hash**: `2CE16AEB83EB539B75751F08DACD781A` | **Files**: 2
@@ -24148,7 +23694,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya028__src_scratch-folder__02bb4
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\futura-bold_OPAMm (1).zip
 C:\Users\loganf\Documents\IDAHO-VAULT\futura-bold_OPAMm.zip
 ``n
-
 ### Group 456: Kootenai National Forest__src_scratch-folder__6ef4ff54.md
 
 **Size**: 0.18 KB | **Hash**: `8912B21D0A60A67DEAC24DE07EC5CB3A` | **Files**: 2
@@ -24156,7 +23701,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\futura-bold_OPAMm.zip
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Kootenai National Forest__src_scratch-folder__6ef4ff54.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Kootenai National Forest__src_scratch-folder__8affd173.md
 ``n
-
 ### Group 457: G4E40yWXUAAllBs (2).jpg
 
 **Size**: 35.35 KB | **Hash**: `3CD92715D539F494103F60CD8BA3F8D5` | **Files**: 3
@@ -24165,7 +23709,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Kootenai National Forest__src_scratch-fold
 C:\Users\loganf\Documents\IDAHO-VAULT\G4E40yWXUAAllBs.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\G4E40yWXUAAllBs__src_scratch-folder__428111a2.jpg
 ``n
-
 ### Group 458: BobbyMontoya007.jpg
 
 **Size**: 824.37 KB | **Hash**: `9DE1B356A9CAF04B751027DBE697D122` | **Files**: 2
@@ -24173,7 +23716,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\G4E40yWXUAAllBs__src_scratch-folder__42811
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya007.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya007__src_scratch-folder__2d58e449.jpg
 ``n
-
 ### Group 459: Frieze 1.md
 
 **Size**: 0.15 KB | **Hash**: `E02417E575A3DBF92638E97C7342C524` | **Files**: 2
@@ -24181,7 +23723,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya007__src_scratch-folder__2d58e
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Frieze 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Frieze.md
 ``n
-
 ### Group 460: Shoshone Falls dam__src_scratch-folder__9db34978.md
 
 **Size**: 0.15 KB | **Hash**: `376524A3C1447C425BB7F9F6A5F3CD90` | **Files**: 2
@@ -24189,7 +23730,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Frieze.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Shoshone Falls dam__src_scratch-folder__9db34978.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Shoshone Falls dam__src_scratch-folder__d5ca9a96.md
 ``n
-
 ### Group 461: LOGO IdahoPTV-PBS encoding Logo RGB.ai
 
 **Size**: 206.79 KB | **Hash**: `034702D323F4E286AFCBAFFAF809F080` | **Files**: 2
@@ -24197,7 +23737,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Shoshone Falls dam__src_scratch-folder__d5
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\LOGO IdahoPTV-PBS encoding Logo RGB.ai
 C:\Users\loganf\Documents\IDAHO-VAULT\LOGO IdahoPTV-PBS encoding Logo RGB__src_scratch-folder__10ab662a.ai
 ``n
-
 ### Group 462: Elaine Smith.md
 
 **Size**: 0.07 KB | **Hash**: `4A0312B4E5E8C1042A746CB31FD8CFC3` | **Files**: 2
@@ -24205,7 +23744,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\LOGO IdahoPTV-PBS encoding Logo RGB__src_s
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Elaine Smith.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Mark Nye.md
 ``n
-
 ### Group 463: GEM.PLT.100.SpecialProgramPlatesCounts-20221101.xlsx
 
 **Size**: 7.93 KB | **Hash**: `E8A0A57D5AD136D72D9E5A70F104E68E` | **Files**: 2
@@ -24213,7 +23751,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Mark Nye.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\GEM.PLT.100.SpecialProgramPlatesCounts-20221101.xlsx
 C:\Users\loganf\Documents\IDAHO-VAULT\GEM.PLT.100.SpecialProgramPlatesCounts-20221101__src_scratch-folder__cf935375.xlsx
 ``n
-
 ### Group 464: LEVELSET-CODEX-SUNDAY-2026-03-29 1.md
 
 **Size**: 4.89 KB | **Hash**: `9865328923C0AE4C035C93DD69156767` | **Files**: 3
@@ -24222,7 +23759,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\GEM.PLT.100.SpecialProgramPlatesCounts-202
 C:\Users\loganf\Documents\IDAHO-VAULT\LEVELSET-CODEX-SUNDAY-2026-03-29 2.md
 C:\Users\loganf\Documents\IDAHO-VAULT\LEVELSET-CODEX-SUNDAY-2026-03-29.md
 ``n
-
 ### Group 465: PXL_20241213_190311949.MP.jpg
 
 **Size**: 7290.37 KB | **Hash**: `18AB1164803A33E0A4055F34F7925BF0` | **Files**: 2
@@ -24230,7 +23766,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\LEVELSET-CODEX-SUNDAY-2026-03-29.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\PXL_20241213_190311949.MP.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\PXL_20241213_190311949.MP__src_zaudi-cam__31b904b3.jpg
 ``n
-
 ### Group 466: 35ac5181-5ccc-40fb-bfc9-4c11803b7175+23f7ad70-b3a1-cad2-4da4-9fab00000059 48000.pek
 
 **Size**: 82.07 KB | **Hash**: `BFF6A7667B0B147907BACDFC8CADC8F1` | **Files**: 2
@@ -24238,7 +23773,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\PXL_20241213_190311949.MP__src_zaudi-cam__
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\35ac5181-5ccc-40fb-bfc9-4c11803b7175+23f7ad70-b3a1-cad2-4da4-9fab00000059 48000.pek
 C:\Users\loganf\Documents\IDAHO-VAULT\86ed755d-3616-45aa-8c10-7beaeb27fc0c+23f7ad70-b3a1-cad2-4da4-9fab00000059 48000.pek
 ``n
-
 ### Group 467: BobbyMontoya003.jpg
 
 **Size**: 386.01 KB | **Hash**: `BC28D13EB2F5A858F8D73DCEDCEC9A51` | **Files**: 2
@@ -24246,7 +23780,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\86ed755d-3616-45aa-8c10-7beaeb27fc0c+23f7a
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya003.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya003__src_scratch-folder__377d7154.jpg
 ``n
-
 ### Group 468: Lake Coeur d'Alene__src_scratch-folder__4835f9e9.md
 
 **Size**: 0.28 KB | **Hash**: `26A40F6C4EA528750876DE8E74C8D25B` | **Files**: 2
@@ -24254,7 +23787,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya003__src_scratch-folder__377d7
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Lake Coeur d'Alene__src_scratch-folder__4835f9e9.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Lake Coeur d'Alene__src_scratch-folder__91fb63dd.md
 ``n
-
 ### Group 469: PBS_Audience_Insights_2020.pdf
 
 **Size**: 54926.99 KB | **Hash**: `39330004F7E49720D9EE8374F7F509CE` | **Files**: 2
@@ -24262,7 +23794,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Lake Coeur d'Alene__src_scratch-folder__91
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\PBS_Audience_Insights_2020.pdf
 C:\Users\loganf\Documents\IDAHO-VAULT\PBS_Audience_Insights_2020__src_scratch-folder__06d31d2d.pdf
 ``n
-
 ### Group 470: creeks__src_scratch-folder__4ba1c786.md
 
 **Size**: 0.04 KB | **Hash**: `3528471C50B8C32FADB514A1FAC6863B` | **Files**: 2
@@ -24270,15 +23801,13 @@ C:\Users\loganf\Documents\IDAHO-VAULT\PBS_Audience_Insights_2020__src_scratch-fo
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\creeks__src_scratch-folder__4ba1c786.md
 C:\Users\loganf\Documents\IDAHO-VAULT\creeks__src_scratch-folder__d9e434c9.md
 ``n
-
-### Group 471: Panel <Photo@0.33x> (2).jpg
+### Group 471: Panel Photo@0.33x (2).jpg
 
 **Size**: 579.16 KB | **Hash**: `C702F8C7DD76D910DD36DFA5E62E1967` | **Files**: 2
 
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Panel Photo@0.33x (2).jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\Panel Photo@0.33x.jpg
 ``n
-
 ### Group 472: 2026-04-11 - Serena v1.1 - Hooks and New Release Mechanism.md
 
 **Size**: 0.87 KB | **Hash**: `FC0780D7CA106620B14E151FBDAC0433` | **Files**: 2
@@ -24286,7 +23815,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Panel Photo@0.33x.jpg
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\2026-04-11 - Serena v1.1 - Hooks and New Release Mechanism.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Serena v1.1 notice.txt
 ``n
-
 ### Group 473: 2024-04-02 - Idaho Reports - JFAC puts forward new ITD budget but keeps State Street language (2).md
 
 **Size**: 0.58 KB | **Hash**: `603499B9BA4F741BFE528C0867BEB9DE` | **Files**: 2
@@ -24294,7 +23822,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Serena v1.1 notice.txt
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\2024-04-02 - Idaho Reports - JFAC puts forward new ITD budget but keeps State Street language (2).md
 C:\Users\loganf\Documents\IDAHO-VAULT\2024-04-02 - Idaho Reports - JFAC puts forward new ITD budget but keeps State Street language__src_scratch-folder__1375cf91.md
 ``n
-
 ### Group 474: 1938 Borah - Old Friends 1 1.md
 
 **Size**: 0.61 KB | **Hash**: `23C2945AF7B67D3F717B2017C53C72ED` | **Files**: 2
@@ -24302,7 +23829,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\2024-04-02 - Idaho Reports - JFAC puts for
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\1938 Borah - Old Friends 1 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\1938 Borah - Old Friends 1.md
 ``n
-
 ### Group 475: SCRATCH--93486111-ecff-80a4-5e44-162ed053c646-2026-01-26_10-30-26-loganf.prproj
 
 **Size**: 4212.76 KB | **Hash**: `134DABC445A82F55E2BFFA1236C09C7B` | **Files**: 2
@@ -24310,7 +23836,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\1938 Borah - Old Friends 1.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--93486111-ecff-80a4-5e44-162ed053c646-2026-01-26_10-30-26-loganf.prproj
 C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--93486111-ecff-80a4-5e44-162ed053c646-2026-01-26_10-30-26-loganf__src_scratch-folder__7741e48c.prproj
 ``n
-
 ### Group 476: BobbyMontoya011.jpg
 
 **Size**: 1843.54 KB | **Hash**: `353356AEFC91478F4E912A4FA1A36D66` | **Files**: 2
@@ -24318,7 +23843,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--93486111-ecff-80a4-5e44-162ed053c
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya011.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya011__src_scratch-folder__c5fb86ca.jpg
 ``n
-
 ### Group 477: RING 1.md
 
 **Size**: 1.11 KB | **Hash**: `3CD4207B8AF3F22CC0FB264F5A7264BC` | **Files**: 2
@@ -24326,7 +23850,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya011__src_scratch-folder__c5fb8
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\RING 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\RING 2.md
 ``n
-
 ### Group 478: SCRATCH--55aff571-55fe-e103-c089-36bea65e964c-2026-01-14_13-24-06-loganf.prproj
 
 **Size**: 3972.69 KB | **Hash**: `777ADF8E0DA4902BA77DEEB1F9E0BC97` | **Files**: 2
@@ -24334,7 +23857,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\RING 2.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--55aff571-55fe-e103-c089-36bea65e964c-2026-01-14_13-24-06-loganf.prproj
 C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--55aff571-55fe-e103-c089-36bea65e964c-2026-01-14_13-24-06-loganf__src_scratch-folder__543083d6.prproj
 ``n
-
 ### Group 479: Connor Patrick Moran.md
 
 **Size**: 0.09 KB | **Hash**: `37B3953BBE63C52A15E3DBD25E40E8BE` | **Files**: 5
@@ -24345,7 +23867,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Kieran Padraig Morris.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Robert Benjamin Whitted.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Steven Derrick Tucker.md
 ``n
-
 ### Group 480: bighorn sheep.md
 
 **Size**: 0.09 KB | **Hash**: `1DC0EAB38CC2B9EFA593A19C4C6B33C1` | **Files**: 3
@@ -24354,7 +23875,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Steven Derrick Tucker.md
 C:\Users\loganf\Documents\IDAHO-VAULT\moose.md
 C:\Users\loganf\Documents\IDAHO-VAULT\mountain goat.md
 ``n
-
 ### Group 481: lawmakers on steps.png
 
 **Size**: 3163.63 KB | **Hash**: `89C0824A0A0B4C2C9E22971273C6E2C2` | **Files**: 2
@@ -24362,7 +23882,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\mountain goat.md
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\lawmakers on steps.png
 C:\Users\loganf\Documents\IDAHO-VAULT\lawmakers on steps__src_scratch-folder__86a57c65.png
 ``n
-
 ### Group 482: 8610d1e9-e615-48ba-9baf-c757e1c527f1+66473ec2-3629-a7e7-7d1c-21ea00000059 48000.cfa
 
 **Size**: 40960 KB | **Hash**: `0780F12DBEA6BA35299EB48A259F1E94` | **Files**: 2
@@ -24370,7 +23889,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\lawmakers on steps__src_scratch-folder__86
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\8610d1e9-e615-48ba-9baf-c757e1c527f1+66473ec2-3629-a7e7-7d1c-21ea00000059 48000.cfa
 C:\Users\loganf\Documents\IDAHO-VAULT\eb37fe02-c589-4c69-a461-73a7dfcea914+57d7a657-487e-7157-f449-9fd600000049 48000.cfa
 ``n
-
 ### Group 483: Melissa Davlin (2)__src_scratch-folder__e7498f4a.md
 
 **Size**: 1.02 KB | **Hash**: `41A97C02BF8E181912727AA7BEAE2915` | **Files**: 2
@@ -24378,7 +23896,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\eb37fe02-c589-4c69-a461-73a7dfcea914+57d7a
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Melissa Davlin (2)__src_scratch-folder__e7498f4a.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Melissa Davlin__src_scratch-folder__dbeba66d.md
 ``n
-
 ### Group 484: SCRATCH--93486111-ecff-80a4-5e44-162ed053c646-2026-01-28_23-04-02-loganf.prproj
 
 **Size**: 2627.37 KB | **Hash**: `EFDBB444B58CC8DB5108789AA4A5D362` | **Files**: 2
@@ -24386,7 +23903,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Melissa Davlin__src_scratch-folder__dbeba6
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--93486111-ecff-80a4-5e44-162ed053c646-2026-01-28_23-04-02-loganf.prproj
 C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--93486111-ecff-80a4-5e44-162ed053c646-2026-01-28_23-04-02-loganf__src_scratch-folder__da9cb0e5.prproj
 ``n
-
 ### Group 485: SCRATCH_2026--81042faa-5852-6c21-e1d1-33799740166f-2026-03-09_10-58-36-loganf.prproj
 
 **Size**: 53.08 KB | **Hash**: `70A292B561E3DD8CB98FA386E71A9910` | **Files**: 2
@@ -24394,7 +23910,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--93486111-ecff-80a4-5e44-162ed053c
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH_2026--81042faa-5852-6c21-e1d1-33799740166f-2026-03-09_10-58-36-loganf.prproj
 C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH_2026--81042faa-5852-6c21-e1d1-33799740166f-2026-03-09_10-58-36-loganf__src_scratch-folder__99116c20.prproj
 ``n
-
 ### Group 486: Bruneau River__src_scratch-folder__295ba9a2.md
 
 **Size**: 0.08 KB | **Hash**: `64B0136BC8C924528B5AFDCD02043173` | **Files**: 2
@@ -24402,7 +23917,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH_2026--81042faa-5852-6c21-e1d1-3379
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Bruneau River__src_scratch-folder__295ba9a2.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Bruneau River__src_scratch-folder__d066ac5f.md
 ``n
-
 ### Group 487: Malad River__src_scratch-folder__30f1c8ac.md
 
 **Size**: 0.08 KB | **Hash**: `FBA943CDE56B5C4BC475360145DD6AB0` | **Files**: 2
@@ -24410,7 +23924,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Bruneau River__src_scratch-folder__d066ac5
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Malad River__src_scratch-folder__30f1c8ac.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Malad River__src_scratch-folder__5127e570.md
 ``n
-
 ### Group 488: Idaho Falls dams__src_scratch-folder__726d4af1.md
 
 **Size**: 0.1 KB | **Hash**: `EB1D761B8C1E4D7BB11762E89177581A` | **Files**: 2
@@ -24418,7 +23931,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Malad River__src_scratch-folder__5127e570.
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Idaho Falls dams__src_scratch-folder__726d4af1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\Idaho Falls dams__src_scratch-folder__8909450c.md
 ``n
-
 ### Group 489: BobbyMontoya019.jpg
 
 **Size**: 3921.63 KB | **Hash**: `C5EB33878DF830CBB75B89E00B94A039` | **Files**: 2
@@ -24426,7 +23938,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\Idaho Falls dams__src_scratch-folder__8909
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya019.jpg
 C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya019__src_scratch-folder__858e262c.jpg
 ``n
-
 ### Group 490: 1913 Borah - Walking 1 1.md
 
 **Size**: 0.17 KB | **Hash**: `F9EABFD1255B58FBCA707CCDE6DB76E8` | **Files**: 3
@@ -24435,7 +23946,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\BobbyMontoya019__src_scratch-folder__858e2
 C:\Users\loganf\Documents\IDAHO-VAULT\1913 Borah - Walking 1.md
 C:\Users\loganf\Documents\IDAHO-VAULT\1913 Borah - Walking.md
 ``n
-
 ### Group 491: PBS-Digital-Production-Guidebook (2).pdf
 
 **Size**: 36127.88 KB | **Hash**: `3EDB78078CE17FF1BA70294F492EE0F5` | **Files**: 3
@@ -24444,7 +23954,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\1913 Borah - Walking.md
 C:\Users\loganf\Documents\IDAHO-VAULT\PBS-Digital-Production-Guidebook (3).pdf
 C:\Users\loganf\Documents\IDAHO-VAULT\PBS-Digital-Production-Guidebook__src_scratch-folder__3f76fee6.pdf
 ``n
-
 ### Group 492: SCRATCH--55aff571-55fe-e103-c089-36bea65e964c-2026-01-21_15-30-06-loganf.prproj
 
 **Size**: 4003.44 KB | **Hash**: `85795CA5599F69E35AD042968F0502A1` | **Files**: 2
@@ -24452,7 +23961,6 @@ C:\Users\loganf\Documents\IDAHO-VAULT\PBS-Digital-Production-Guidebook__src_scra
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--55aff571-55fe-e103-c089-36bea65e964c-2026-01-21_15-30-06-loganf.prproj
 C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--55aff571-55fe-e103-c089-36bea65e964c-2026-01-21_15-30-06-loganf__src_scratch-folder__20b9733b.prproj
 ``n
-
 ### Group 493: Jan 24 Berch.docx
 
 **Size**: 24.35 KB | **Hash**: `F53600537AE0382C7EEFB98E5808ADE3` | **Files**: 2
@@ -24460,3 +23968,4 @@ C:\Users\loganf\Documents\IDAHO-VAULT\SCRATCH--55aff571-55fe-e103-c089-36bea65e9
 ``nC:\Users\loganf\Documents\IDAHO-VAULT\Jan 24 Berch.docx
 C:\Users\loganf\Documents\IDAHO-VAULT\Jan 24 Berch__src_scratch-folder__a03bf94e.docx
 ``n
+

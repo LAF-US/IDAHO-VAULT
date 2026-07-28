@@ -33,7 +33,6 @@ Scorched-earth wipe of Obsidian-specific syntax. Commit `d84b87d`.
 Commit `3fc1379`. CrewAI 1.12.2 was already installed.
 
 **Built:**
-
 - `.crewai/crews/jfac_crew.py` — JFAC Crew (3 agents, 5 tasks, MAP 3:5 ATT to 5Ws)
 - `.crewai/tools/minidata_tool.py` — reads minidata CSV (805 bills verified)
 - `.crewai/tools/timeline_tool.py` — builds status timeline from snapshots
@@ -46,12 +45,10 @@ Commit `3fc1379`. CrewAI 1.12.2 was already installed.
 - `!/GRIMOIRE/NETWEB-CREWAI-ALIGNMENT.md` — updated with all 5 resolved decisions
 
 **Stubs:**
-
 - `.crewai/crews/crawler_crew.py` — Phase 4, Bartimaeus as Cartographer candidate
 - `.crewai/crews/sentinel_crew.py` — Watchdog crew, awaiting casting call
 
 **Address Space POC:**
-
 - Neurons 100-109 initialized with crew state assignments
 - 8 entity stubs written (Idaho, Budget, Governor, General Fund, Medicaid, Transportation, Public Schools, $)
 - Voyager Records identified: 7929.gif (triangle), 7930.gif (Sierpinski fractal)
@@ -67,7 +64,7 @@ Commit `3fc1379`. CrewAI 1.12.2 was already installed.
 ## What's Blocked
 
 | Item | Blocker | Who Unblocks |
-| ------ | --------- | -------------- |
+|------|---------|--------------|
 | JFAC Crew E2E run | No `OPENAI_API_KEY` or `ANTHROPIC_API_KEY` in .env | **Logan** — pull from 1Password |
 | Bartimaeus role decision | Brief filed, awaiting review | **Logan** |
 | Crawler Crew activation | Needs JFAC E2E + Bartimaeus decision | Logan + successful JFAC run |
@@ -88,7 +85,7 @@ Commit `3fc1379`. CrewAI 1.12.2 was already installed.
 ## Key Files
 
 | File | Purpose |
-| ------ | --------- |
+|------|---------|
 | `.crewai/run_jfac.py` | Run the JFAC Crew |
 | `.crewai/manifest.json` | Crew registry |
 | `.crewai/address_poc.py` | Address space initialization |

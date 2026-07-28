@@ -6,4 +6,4 @@ related:
 - Snake River
 authority: LOGAN
 ---
-reservoir on the Snake River in Adams County created by Hells Canyon dam
+reservoir on the Snake River in Adams County created by Hells Canyon dam 

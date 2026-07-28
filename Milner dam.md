@@ -8,4 +8,4 @@ related:
 - Snake River
 authority: LOGAN
 ---
-Idaho Power dam on the Snake River at Milner; creates Milner Lake
+Idaho Power dam on the Snake River at Milner; creates Milner Lake 

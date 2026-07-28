@@ -4,4 +4,4 @@ related:
 - synagogues
 authority: LOGAN
 ---
-religion - synagogues
+religion - synagogues 

@@ -17,15 +17,15 @@ Complete bibliography of sources for all direct quotations documented in [[AI-RE
 
 ### Sam Altman
 
-1. **Source:** <https://gizmodo.com/sam-altman-openai-agi-board-decision-1851017018>
+1. **Source:** https://gizmodo.com/sam-altman-openai-agi-board-decision-1851017018
    **Date:** November 13, 2023
    **Quotes:** "magic intelligence in the sky"
 
-2. **Source:** <https://tuckercarlson.com/tucker-show-sam-altman>
+2. **Source:** https://tuckercarlson.com/tucker-show-sam-altman
    **Date:** September 10, 2025
    **Quotes:** "No, there's nothing to me at all that feels divine about it or spiritual in any way."
 
-3. **Source:** <https://the-decoder.com/openai-ceo-sam-altman-feels-like-hes-on-the-side-of-the-angels-working-on-ai-models/>
+3. **Source:** https://the-decoder.com/openai-ceo-sam-altman-feels-like-hes-on-the-side-of-the-angels-working-on-ai-models/
    **Date:** November 1, 2024
    **Quotes:** "I don't pray for God to be on my side, I pray to be on God's side. Working on these models definitely feels like being on the side of the angels."
 
@@ -33,7 +33,7 @@ Complete bibliography of sources for all direct quotations documented in [[AI-RE
 
 ### Elon Musk
 
-1. **Source:** <https://finance.yahoo.com/news/elon-musk-says-entered-singularity-185946780.html>
+1. **Source:** https://finance.yahoo.com/news/elon-musk-says-entered-singularity-185946780.html
    **Date:** January 6, 2026
    **Quotes:** "We have entered the Singularity", "2026 is the year of the Singularity"
 
@@ -41,7 +41,7 @@ Complete bibliography of sources for all direct quotations documented in [[AI-RE
 
 ### Demis Hassabis
 
-1. **Source:** <https://www.theverge.com/tech/934260/google-io-ai-singularity-demis-hassabis>
+1. **Source:** https://www.theverge.com/tech/934260/google-io-ai-singularity-demis-hassabis
    **Date:** May 19, 2026
    **Quotes:** "singularity is another word for a full AGI arriving", "foothills of the singularity"
 
@@ -49,7 +49,7 @@ Complete bibliography of sources for all direct quotations documented in [[AI-RE
 
 ### Eric Schmidt
 
-1. **Source:** <https://finance.yahoo.com/news/former-google-boss-eric-schmidt-000106295.html>
+1. **Source:** https://finance.yahoo.com/news/former-google-boss-eric-schmidt-000106295.html
    **Date:** October 30, 2025
    **Quotes:** "An alien intelligence is coming", "arrival of an alien intelligence that is not quite us and more or less under our control is a very big deal for humanity"
 

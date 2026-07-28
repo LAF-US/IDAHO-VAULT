@@ -20,10 +20,9 @@ related:
 
 In an email, she told me that all lawmakers must follow Joint House and Senate Rules.
 
-Joint Rule 18(b): "If the fiscal note states there is no projected fiscal impact, then the fiscal note must contain a statement of the reasons that no fiscal impact is projected.” #idleg #idpol <https://t.co/RNbhgMrpQu>
+Joint Rule 18(b): "If the fiscal note states there is no projected fiscal impact, then the fiscal note must contain a statement of the reasons that no fiscal impact is projected.” #idleg #idpol https://t.co/RNbhgMrpQu
 
 ## Links
-
-- <https://x.com/idahofreedom/status/1224730941014151169>
+- https://x.com/idahofreedom/status/1224730941014151169
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1224751048826339330)

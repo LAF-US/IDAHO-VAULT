@@ -40,7 +40,6 @@ maybe one operator_loop.py or presets.py for the first worked loop
 That mirrors the repo’s current habits and avoids inventing a new schema culture.
 
 Core model
-
 1. Closed enums
 Use string enums for the framing grammar.
 

@@ -63,7 +63,7 @@ WebSocket pairing. Already proven stable (15/15 invocations).
 ### The Asymmetry
 
 | Direction | Mechanism | Auth | Est. |
-| --- | --- | --- | --- |
+|---|---|---|---|
 | Windows → Mac | SSH key pair (ed25519) | Public-key | This session |
 | Mac → Windows | OpenClaw node pairing token | WebSocket | Prior session |
 
@@ -102,7 +102,6 @@ and status fields. This is NOT the Stigmergic Blackboard Protocol
 `!/sbp-field.db`, `scripts/vault-pheromones.py`) was not used.
 
 Steps taken:
-
 1. Sister writes intent + public material to coordination doc
 2. Brother reads, executes Mac-side steps, updates status field
 3. Sister reads status, executes Windows-side steps

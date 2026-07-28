@@ -37,7 +37,7 @@ authority: LOGAN
 ---
 *‘I focus on a broader picture using real Idaho values which benefit the majority’*
 
-As candidates have filed to run for local office in the November election, Jim Woodward has his eye on the May 2024 Republican primary, announcing Sept. 7 that he will seek the District 1 Idaho Senate seat currently held by Sen. Scott Herndon, R-Sagle.
+As candidates have filed to run for local office in the November election, Jim Woodward has his eye on the May 2024 Republican primary, announcing Sept. 7 that he will seek the District 1 Idaho Senate seat currently held by Sen. Scott Herndon, R-Sagle. 
 
 Woodward served in the Dist. 1 position for two terms, from 2018-2022, until being bested by Herndon in a GOP primary marked by hitherto unprecedented negative campaigning — primarily from the latter, putting out numerous ads on various platforms labeling Woodward “Liberal Jim” and making claims about his record that Woodward spent much of the election cycle disproving.
 

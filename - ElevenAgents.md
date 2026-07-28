@@ -71,4 +71,4 @@ ElevenAgents coordinates 4 core components:
 
 Build your first agent in 5 minutes
 
-](<https://elevenlabs.io/docs/eleven-agents/quickstart>)
+](https://elevenlabs.io/docs/eleven-agents/quickstart)

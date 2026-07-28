@@ -29,17 +29,15 @@ date: 2026-06-03
 ## The two poles
 
 ### The HOUSE — order, hierarchy, bureaucracy
-
 A cosmos that is **administered**: a sovereign **center**, **stratified** demesnes/realms radiating out and down from it, a **ministry of clerks/officers** who *read and run the rules*, a **testament** (Will / Charter / law) they are meant to execute, and the **mortal realms beyond** the threshold.
 
 ### The VOID — the un-authored primordial
-
 The **void** the House floats in and was shaped *from*: **Chaos** (Hades) / **Nothing** (Keys) / **Khaos** (Hesiod's yawning gap) / **GOLB & "the monsters anterior to time, to anything, to nothing"** (the vault's own `LICH-PROBLEM` cosmology). It is **origin *and* threat** — everything is made of it, and it **erodes and reclaims** the order (the Pit eating the House; entropy; the Others' cold).
 
 ## The figure across the systems
 
 | | **Keys to the Kingdom** | **Hades / Hades II** | **ASOIAF** | **The Vault** |
-| --- | --- | --- | --- | --- |
+|---|---|---|---|---|
 | **Sovereign center** | the Incomparable Gardens (the *true epicenter*) | the House of Hades / the Crossroads hub | the Iron Throne / King's Landing ("all roads lead…") | Logan **the Architect** |
 | **The ministry** | the seven **Trustees** (Morrow Days) | Hades & the **Chthonic gods**; the dead *processed* | the **Small Council**; the **Citadel/maesters** | the agents/personas; the registries |
 | **The testament** | the **Will** | the laws of death / Fate | the law of the Seven; custom | the **Charter / doctrine / Emanationism** |
@@ -51,7 +49,6 @@ The **void** the House floats in and was shaped *from*: **Chaos** (Hades) / **No
 ## The recurring dramas
 
 **[reading]**
-
 1. **The usurped center & the rightful heir.** Chronos (Time) jails Hades and seizes the Underworld → Melinoë restores it. The Trustees imprison the Will → Arthur reclaims the Keys. The throne is seized → a true claimant rises. *A sovereign center taken; an heir who restores the order against the void.*
 2. **The minister who falsifies the record.** The bureaucracy that *reads and runs* the rules is one step from the clerk who *rewrites or hoards* them — the Citadel filing the apocalypse under "grumkins and snarks"; the Trustees suppressing the Will; the captured council seat (→ the Empty Office, Stylings). *The keeper of the record is the one who can corrupt it.*
 3. **Time as the usurper.** *Time is. Time was. Time Passed.* Chronos is the sharpest usurper because he is **the one rule no ministry can recall** — the House administers everything except its own duration. **[canon, 1.0]** Now that the full game is out, the resolution is on the record: **Chronos broke free of his prison in Tartarus, seized the Underworld, and jailed Hades and his family**, while Hecate escaped with the infant **Melinoë** and raised her as a *titan-slayer* per a prophecy of the Fates. In the 1.0 ending the heir does **not** simply kill him — **Chronos is brought to *repent* and *relinquishes*, freeing Hades and the family, and the Underworld is restored.** That is the rare case where **the usurper himself becomes the relinquisher** (the Cincinnatus pole) — Time, recalled at last.
@@ -69,7 +66,6 @@ The darker reading is the one you named: the maker withdraws not from serenity b
 > **→ The canonical vault treatment is `[[!/OZ-COSMOLOGY-DOCTRINE-v1-2026-05-21]]`** (the Two Tellings, the Three Witches, the Four Cardinal Positions, the Nome King, the Geminiaeus trial). This section is the House-in-the-Void *synthesis only* — not a substitute for that doctrine.
 
 **[canon + reading]** Oz is another **House in the Void**, and the **sharpest instance of the Empty Office:**
-
 - A bounded magical realm — the **Emerald City** at the center — ringed by the **Deadly Desert** that turns the living to sand: **the void at the edge.**
 - Its sovereign is a fraud. The **Wizard** is a **humbug** — *the man behind the curtain*, projecting a giant false head — who **took the throne with no rightful claim**: a usurper by **illusion**, Varys's shadow on the wall made literal (→ the Empty Office node).
 - The rightful line endures hidden: **King Pastoria** was deposed by **Mombi's** black magic, and his heir **Ozma** was concealed — **transformed into the boy "Tip"** — to keep her from the throne, then **restored** (the hidden heir: cf. Arthur, Sweet P, the Targaryen survival).
@@ -89,7 +85,6 @@ So Oz hands the canvas all five at once: **void at the edge + a humbug at the ce
 ## The foundation — the House on the Rock
 
 **[reading]** A House suspended in the Void must still stand **on** something. The parable (Matthew 7:24–27): the house built on **rock** survives the flood; the house built on **sand** falls. So the House-in-the-Void's survival is a question of **foundation**:
-
 - built on the **Rock** — the Architect's *enduring, real* order (the Charter, the testament, **recallable, witnessed** authority) — it holds;
 - built on **sand / Nothing** — illusion, the humbug's projection, the propaganda fossil, the self-mask — **the void reclaims it** (the Pit eats the House; the curtain falls).
 

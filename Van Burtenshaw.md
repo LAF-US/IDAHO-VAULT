@@ -3,4 +3,4 @@ related:
 - Terreton
 authority: LOGAN
 ---
-Residence: Terreton
+Residence: Terreton 

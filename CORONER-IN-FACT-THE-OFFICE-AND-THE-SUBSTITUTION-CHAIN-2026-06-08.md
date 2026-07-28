@@ -96,7 +96,7 @@ because the office that executes it **steps down a rung whenever the prior offic
 one implicated.** Three tiers:
 
 | Tier | Officer | Fires when… | Idaho statute |
-| --- | --- | --- | --- |
+|---|---|---|---|
 | 1 | **Sheriff** | the default — serves and executes the court's process | Title 31, Ch. 22 |
 | 2 | **Coroner** | the **sheriff is a party / interested** — the coroner executes the process **against the sheriff**, *including arrest* (and a sheriff so arrested may **not** be held in his own jail) | **§ 31-2217**; **§ 31-2220** |
 | 3 | **Elisor** | **both** sheriff and coroner are disqualified / unavailable / interested — the court appoints a **disinterested outsider** for the specific act | **§ 31-2218** |

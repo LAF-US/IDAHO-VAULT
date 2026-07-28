@@ -66,7 +66,7 @@ Lowercase. No other values are valid.
 ## Conversation Tiers
 
 | Tier | Access | Description |
-| ------ | -------- | ------------- |
+|------|--------|-------------|
 | 1 | Direct repo write via `git commit` / `git push` | Implementation conversations — scraper work, bulk vault operations, direct code |
 | 2 | Constitutional layer | Administration — governance documents, shared state files, this constitution |
 | 3 | Governance / architecture / synthesis | Planning, LEVELSET synthesis, cross-conversation coordination |

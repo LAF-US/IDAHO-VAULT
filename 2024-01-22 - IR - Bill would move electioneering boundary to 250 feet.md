@@ -28,6 +28,7 @@ Electioneering includes campaign activities such as circulating hand cards, soli
 
 “It’s making our polling places free from interference and intimidation,” Sen. Linda Wright Hartgen, R-Twin Falls, said as she presented the legislation on Monday afternoon.
 
+
 Sen. Linda Wright Hartgen, R-Twin Falls
 Existing state law only prohibits electioneering within 100 feet of a polling place or its building. The bill would specify that electioneering is prohibited “within two hundred fifty (250) feet of the primary entrance and exit used by voters,” which is more precisely worded than the current statute.
 

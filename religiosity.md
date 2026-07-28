@@ -10,4 +10,4 @@ faith
 belief
 values
 
-FaVS News
+FaVS News 

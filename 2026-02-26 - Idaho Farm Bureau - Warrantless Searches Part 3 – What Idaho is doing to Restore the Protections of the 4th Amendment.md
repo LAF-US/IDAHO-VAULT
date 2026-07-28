@@ -77,7 +77,7 @@ We hear from Owyhee County Sheriff Larry Kendrick, Elmore County Sheriff Mike Ho
 
 (Kendrick) “If it's violating property rights, somebody's rights, any way, shape, or form, then it's not ethical and it's not honest and it's not professional. Myself and all my guys, I expect them to respect everybody's constitutional rights. And we all have to look at ourselves in the mirror. We all have to live with what we do. And at the end of the day, if you can say, hey, I did it right, And I got this guy. He's in jail, but I did it the right way, you have 0 regrets. And you don't have to cheat to get the bad guy. There's always a way.”
 
-##### Still can't find what you are looking for? Find by topic
+##### Still can't find what you are looking for? Find by topic:
 
 - [Achievement Award (YF&R)](https://www.idahofb.org/young-farmers-and-ranchers/yf-r-winners/ "YF & R Winners Videos")
 - [Actions Alerts](https://www.idahofb.org/legislative-activities/action-alerts-find-my-legislator/?app=petitions&id=3070%22%3E%3C/script%3E)

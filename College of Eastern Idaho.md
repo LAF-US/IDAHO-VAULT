@@ -5,4 +5,4 @@ related:
 - CEI
 authority: LOGAN
 ---
-Bonneville County-based community college overseen by Board of Trustees - CEI
+Bonneville County-based community college overseen by Board of Trustees - CEI 

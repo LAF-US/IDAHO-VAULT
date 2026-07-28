@@ -13,4 +13,4 @@ authority: LOGAN
 ---
 Seat: Soda Springs
 Municipalities: Grace, Bancroft
-Communities: Conda, Freedom, Henry, Wayan
+Communities: Conda, Freedom, Henry, Wayan 

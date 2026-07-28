@@ -14,9 +14,9 @@ Transform your journaling practice with JournalCraft, a curated collection of 10
 
 ==Download JournalCraft for free at:== [GitHub](https://github.com/TfTHacker/journal-craft-obsidian)
 
-## JournalCraft empowers you to
+## JournalCraft empowers you to:
 
-## What's Included
+## What's Included:
 
 - 10 versatile journaling templates
 - Comprehensive instructions for each template
@@ -24,7 +24,7 @@ Transform your journaling practice with JournalCraft, a curated collection of 10
 - Tips to customize templates to your needs
 - Strategies to establish a consistent journaling habit
 
-## Template Highlights
+## Template Highlights:
 
 - 5-Minute Morning Kickstart
 - 5-Minute Evening Reflection
@@ -43,7 +43,7 @@ Transform your journaling practice with JournalCraft, a curated collection of 10
 
 ![03.jpg](https://publish-01.obsidian.md/access/5482717c61d4cd4a5e39468efa73a612/_pub/media/store/journal-craft/03.jpg)
 
-## Perfect for
+## Perfect for:
 
 - Obsidian enthusiasts looking to enhance their personal development practice
 - Journaling beginners seeking structure and guidance

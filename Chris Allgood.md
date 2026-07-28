@@ -8,4 +8,4 @@ related:
 authority: LOGAN
 ---
 - Caldwell city council member
-- Legislative District 11 House member
+- Legislative District 11 House member 

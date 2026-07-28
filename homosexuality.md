@@ -5,4 +5,4 @@ related:
 authority: LOGAN
 ---
 same-sex marriage
-LGBTQ+ issues 1
+LGBTQ+ issues 1 

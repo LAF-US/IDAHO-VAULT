@@ -41,9 +41,9 @@ authority: LOGAN
 ---
 *Communities all over the state are grappling with housing affordability, but the sheer variety of programs available to support it can be overwhelming. Marketing and communications director Jason Lantz from the Idaho Housing and Finance Association discusses how IHFA supports affordable homes for Idahoans in all walks of life.*
 
-***Interview 2023-11-08 Jason Lantz***
+_**Interview 2023-11-08 Jason Lantz**_ 
 
-**Logan Finney, *Idaho Reports*:**
+**Logan Finney, _Idaho Reports_:**
 
 Can you tell me generally, what is the job of the Idaho Housing and Finance Association? What sort of work do you guys do?
 
@@ -93,7 +93,7 @@ Okay. Can you kind of explain for me the differences between what we’d call �
 
 I can. I think affordable housing is kind of a broad term, and it’s relative, you know, it relies on a lot of different factors, whether it’s your income or where you live or who you live with. That’s kind of the affordable housing piece.
 
-I think the workforce housing is a little more specific, a little more accurate. Basically, as the name implies, the intent there is housing for people who are increasingly finding it difficult to find affordable housing that are in the workforce already. And that could be anywhere from nurses to teachers to first responders.
+I think the workforce housing is a little more specific, a little more accurate. Basically, as the name implies, the intent there is housing for people who are increasingly finding it difficult to find affordable housing that are in the workforce already. And that could be anywhere from nurses to teachers to first responders. 
 
 **IR:**
 

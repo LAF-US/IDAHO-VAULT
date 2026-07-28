@@ -13,10 +13,9 @@ related:
   - lfinneytweets
 ---
 
-No love for Idaho? We have a pretty neat gubernatorial race coming up this year <https://t.co/APrnB2FwPZ>
+No love for Idaho? We have a pretty neat gubernatorial race coming up this year https://t.co/APrnB2FwPZ
 
 ## Links
-
-- <https://x.com/politico/status/968694782108237825>
+- https://x.com/politico/status/968694782108237825
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/968700182962434048)

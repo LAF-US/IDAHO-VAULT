@@ -105,7 +105,6 @@ EVIDENCE:
 **End state:** Automation. Direct-write instances commit signals to a signals directory. GitHub Actions or a synthesis script routes them. Signals are logged, acted on, and archived.
 
 **Interim workflow:**
-
 1. Conversation emits a signal in its output to Logan
 2. Logan reads, decides whether to route
 3. Logan carries the signal to the target conversation (or acts on it directly)

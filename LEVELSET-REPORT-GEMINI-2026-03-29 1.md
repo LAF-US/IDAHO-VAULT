@@ -21,7 +21,6 @@ Last Assigned Task:
 LAF-16, Budget Bill Tracker Normalization.
 
 Task Status:
-
 - Complete: Initial normalization pass.
 - Artifacts prepared: `normalize_budget_data.py`, `deliverables.md`
 - Handoff status: PR-ready artifacts prepared for pickup in the correct lane
@@ -31,5 +30,4 @@ Current State:
 Awaiting explicit next instruction or a clearly assigned local/read-only lane.
 
 ---
-
 - Gemini CLI

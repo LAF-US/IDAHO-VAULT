@@ -42,21 +42,18 @@ Current guidance: use plain language, existing vault notes, and Logan's explicit
 **Purpose:** Check if an agent session is alive and has relevant context.
 
 **Rules:**
-
 - Any agent can PING any other agent — routed through Logan (manual bridge) or Slack (when bot apps exist)
 - A PONG confirms: (1) alive, (2) current priority, (3) any blockers
 - No response within one Logan-work-session = assume session is cold
 - PONG must be ≤3 sentences. If you need more, that's a HANDOFF, not a PONG
 
 **Format:**
-
 ```
 PING → [agent name]
 PONG ← [agent name]: [priority] | [blocker or "clear"] | [one-line status]
 ```
 
 **Example:**
-
 ```
 PING → STORY: JFAC
 PONG ← STORY: JFAC: CCA deadline 3/18 | 5 quotes pending audio | quiet mode
@@ -69,7 +66,6 @@ PONG ← STORY: JFAC: CCA deadline 3/18 | 5 quotes pending audio | quiet mode
 **Purpose:** Prevent two agents from editing the same file simultaneously.
 
 **Rules:**
-
 - Before editing a governance file (`!ADMIN/`, `CLAUDE.md`, `.github/`), an agent states CLAIM [filepath]
 - Other agents must not edit a claimed file until RELEASE [filepath] or until the claiming session closes
 - Claims expire when the session ends — they do not persist across sessions
@@ -79,7 +75,6 @@ PONG ← STORY: JFAC: CCA deadline 3/18 | 5 quotes pending audio | quiet mode
 **Scope:** Governance and infrastructure files only. The scraper owns bill files. Individual story sessions own their source files. No claims needed for those.
 
 **Format:**
-
 ```
 CLAIM: !ADMIN/Constitution.md — [agent name] — [reason]
 RELEASE: !ADMIN/Constitution.md — [agent name]
@@ -92,7 +87,6 @@ RELEASE: !ADMIN/Constitution.md — [agent name]
 **Purpose:** Before deploying new automation (scripts, workflows), verify no existing automation touches the same files.
 
 **Rules:**
-
 - Before adding a new `.py` script or `.yml` workflow, the deploying agent must:
   1. List all files/directories the new automation will read or write
   2. Check existing workflows for overlap (grep workflow YAML for those paths)
@@ -100,7 +94,6 @@ RELEASE: !ADMIN/Constitution.md — [agent name]
 - This is a pre-deployment gate, not a runtime check
 
 **Format:**
-
 ```
 COLLISION CHECK: wikilink_pass.py
   WRITES: GOVERNMENTS/**, SOURCES/**, TOPICS/**
@@ -117,7 +110,6 @@ COLLISION CHECK: wikilink_pass.py
 **Purpose:** Transfer context from one agent session to another.
 
 **Rules:**
-
 - A HANDOFF must contain exactly four sections:
 
 ```
@@ -147,14 +139,12 @@ DATE: YYYY-MM-DD
 **Purpose:** Ensure no agent session goes stale without notice.
 
 **Rules:**
-
 - Every PERSISTENT or PERMANENT session must produce a PONG or LEVELSET at least once per Logan-work-session when active
 - If a session has no output for >1 work session and has pending items, Logan (or ADMINISTRATION) marks it COLD
 - COLD sessions get their pending items redistributed via HANDOFF
 - A COLD session can be revived — it just needs to re-LEVELSET before resuming work
 
 **States:**
-
 ```
 HOT    — active, producing output
 WARM   — idle but has context, can resume
@@ -179,7 +169,6 @@ These protocols are strictly mechanical coordination. They have no opinions abou
 ## Historical Proposed Implementation
 
 This was a proposed implementation path, not an active instruction:
-
 1. This file moves to `!ADMIN/XKCD.md` (after the Monday rename)
 2. Reference added to Constitution.md under a "Coordination Protocols" section
 3. Each agent's next LEVELSET should acknowledge XKCD protocols

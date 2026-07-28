@@ -25,7 +25,6 @@ python3 scripts/build_knowledge_graph.py /path/to/project output-dir
 ## What It Does
 
 **Detects:**
-
 - Build systems: Maven (pom.xml), Gradle (build.gradle*), Ant (build.xml), Ivy (ivy.xml)
 - Languages: Java, Kotlin, Scala, Groovy (via tree-sitter AST parsing)
 - Structure: Modules, packages, classes, interfaces, enums, annotations
@@ -33,7 +32,6 @@ python3 scripts/build_knowledge_graph.py /path/to/project output-dir
 - Patterns: Architecture layers (controller/service/repository/model/config/util)
 
 **New in v2.0:**
-
 - ✅ Config file parsing: `application*.properties`, `application*.yaml/yml`
 - ✅ Gradle subprojects: `settings.gradle` parsing
 - ✅ Properties loaded into module metadata
@@ -41,7 +39,6 @@ python3 scripts/build_knowledge_graph.py /path/to/project output-dir
 - ✅ Fixed: Module names with hyphens now work in DOT/SVG generation
 
 **Outputs:**
-
 - `knowledge-graph.json` - Complete graph (nodes + edges)
 - `module-dependencies.{dot,svg}` - Module dependency diagram
 - `module-{name}.{dot,svg}` - Per-module class diagrams
@@ -65,7 +62,6 @@ python3 scripts/build_knowledge_graph.py ~/workspace/plain-java kg-out
 ### Schema Reference
 
 **Node Types:**
-
 - `system` - Root project node
 - `module` - Maven/Gradle module or subproject
 - `class` - Class declaration
@@ -74,7 +70,6 @@ python3 scripts/build_knowledge_graph.py ~/workspace/plain-java kg-out
 - `annotation` - Annotation type declaration
 
 **ID Naming Patterns:**
-
 - System: `"system:{project_name}"` → `"system:nocode-saas"`
 - Module: `"module:{artifactId}:{version}"` → `"module:nocode-saas:1.0.0"`
 - Class: `"class:{fully.qualified.ClassName}"` → `"class:com.example.UserService"`
@@ -82,7 +77,6 @@ python3 scripts/build_knowledge_graph.py ~/workspace/plain-java kg-out
 - Enum: `"enum:{fully.qualified.EnumName}"`
 
 **Edge Types:**
-
 - `contains` - System contains modules, modules contain classes
 - `depends_on` - Module dependencies (with `scope` field: compile/test/runtime/provided)
 - `extends` - Class inheritance
@@ -90,7 +84,6 @@ python3 scripts/build_knowledge_graph.py ~/workspace/plain-java kg-out
 - `aggregates` - Parent-child module relationships
 
 **Key Node Fields:**
-
 - `type` - Node type (system/module/class/interface/enum/annotation)
 - `name` - Display name
 - `moduleName` - Parent module (for classes)
@@ -100,7 +93,6 @@ python3 scripts/build_knowledge_graph.py ~/workspace/plain-java kg-out
 - `annotations` - Array of annotation names (e.g., `["@RestController", "@Lombok"]`)
 
 **Key Edge Fields:**
-
 - `from` - Source node ID
 - `to` - Target node ID
 - `type` - Edge type
@@ -111,7 +103,6 @@ python3 scripts/build_knowledge_graph.py ~/workspace/plain-java kg-out
 ### jq Queries (Recommended)
 
 Install jq first:
-
 - macOS: `brew install jq`
 - Ubuntu/Debian: `sudo apt install jq`
 - Fedora/RHEL: `sudo dnf install jq`
@@ -199,7 +190,7 @@ jq -r '.nodes[] | select(.type=="class") |
        [.moduleName, .package, .name, .layer, .language] | @csv' knowledge-graph.json
 ```
 
-For more jq examples: <https://jqlang.github.io/jq/manual/>
+For more jq examples: https://jqlang.github.io/jq/manual/
 
 ---
 
@@ -235,12 +226,10 @@ for e in kg['edges']:
 ## Visualization
 
 **Module Dependencies:**
-
 - Blue arrows = compile dependencies
 - Gray dashed = parent-child aggregation
 
 **Class Diagrams (per-module):**
-
 - Blue = controllers
 - Green = services
 - Yellow = repositories
@@ -251,22 +240,18 @@ for e in kg['edges']:
 ## Troubleshooting
 
 **"No classes found"**
-
 - Check for `src/main/java/` or similar structure
 - Supports flexible paths (not just Maven standard layout)
 
 **"SVG generation skipped"**
-
 - Normal if Graphviz not installed
 - Generate manually: `dot -Tsvg file.dot -o file.svg`
 
 **Large projects slow**
-
 - Normal for 500+ files
 - Shows progress during parsing
 
 **Grammar compilation fails**
-
 - Install C compiler: `xcode-select --install` (macOS) or `build-essential` (Linux)
 
 ## Integration

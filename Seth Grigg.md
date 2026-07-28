@@ -5,4 +5,4 @@ related:
 - Idaho Association of Counties
 ---
 
-Idaho Association of Counties executive director
+Idaho Association of Counties executive director 

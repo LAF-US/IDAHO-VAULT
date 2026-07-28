@@ -44,7 +44,7 @@ hologram is that crime made into a permanent, self-generating apparatus.
 The hologram is the **failure-case of two giants at once**:
 
 | | What it is | Has flesh behind it? | The legitimacy test |
-| --- | --- | --- | --- |
+|---|---|---|---|
 | **Shadow** (Empty Office / Varys) | power *cast* by shared belief | a real man stands in the firelight | it can kill, but it does not *claim to be a body* — the danger is others insisting it's flesh |
 | **Mask** (the persona doctrine) | a face *given* and worn in service | **yes** — a warranted face wears it | legitimate iff *known to be a mask* and able to be **set down** (Cincinnatus, Washington) |
 | **Hologram** (this witness) | an *engineered self-projection* | **no** — projection all the way down | none — it **insists it is flesh**, and there is no one behind it to set anything down |

@@ -20,17 +20,17 @@ related:
 - transportation
 authority: LOGAN
 ---
-Osburn, Idaho - This bridge over I-90 in the Silver Valley has been abandoned for years, and now a group of locals have set out to make the bridge a wildlife overpass.
+Osburn, Idaho - This bridge over I-90 in the Silver Valley has been abandoned for years, and now a group of locals have set out to make the bridge a wildlife overpass. 
 
-The area has been known as a heavily populated wildlife area. Dozens of elk and deer running across I-90 and being struck by oncoming traffic.
+The area has been known as a heavily populated wildlife area. Dozens of elk and deer running across I-90 and being struck by oncoming traffic. 
 
-“Actually we just had two of our radio-collared elk hit on I-90 last week a little bit to the west," Laura Wolf, a wildlife biologist with the Idaho Fish and Game, said.
+“Actually we just had two of our radio-collared elk hit on I-90 last week a little bit to the west," Laura Wolf, a wildlife biologist with the Idaho Fish and Game, said. 
 
 It's a re-occurring problem that is well known to residents in the Silver Valley.
 
-“The people around here go so far as to put out notices on public Facebook pages to let people know when elk are in the region," local resident and civil engineer, Kirsten Voorhees, said.
+“The people around here go so far as to put out notices on public Facebook pages to let people know when elk are in the region," local resident and civil engineer, Kirsten Voorhees, said. 
 
-Voorhees, among other locals, has set out to make this unused bridge into a wildlife overpass.
+Voorhees, among other locals, has set out to make this unused bridge into a wildlife overpass. 
 
 “It makes sense and it is kind of fortuitous that there is a bridge right where they have always traveled and it’s not being used by anybody, so this is kind of a no-brainer," Voorhees said.
 
@@ -40,10 +40,10 @@ The bridge was built in 1969 and it was used briefly until a mining agency purc
 
 So when these locals approached ITD about a wildlife overpass, it was, as Voorhees put it, a no-brainer.
 
-“Being able to be involved in the process to help utilize that and put it to good use is great," McDaniel said.
+“Being able to be involved in the process to help utilize that and put it to good use is great," McDaniel said. 
 
 $250,000 in grant money has been secured for the project. They still need a little bit more for one line of fencing. The fence acts as a guide for wildlife to take the bridge as opposed to hopping across I-90. Saving wildlife and hopefully preventing accidents.
 
-“If we can make this work, it kind of lends itself perfectly to this endeavor," Voorhees said.
+“If we can make this work, it kind of lends itself perfectly to this endeavor," Voorhees said. 
 
 Voorhees tells NonStop Local that the wildlife overpass should be completed in two to four years.

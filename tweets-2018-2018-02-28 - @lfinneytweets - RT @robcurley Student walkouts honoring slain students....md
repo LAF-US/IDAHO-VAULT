@@ -15,6 +15,6 @@ related:
   - lfinneytweets
 ---
 
-RT @robcurley: Student walkouts honoring slain students prompting much differing responses in Spokane and Coeur d’Alene <https://t.co/WaIPHk…>
+RT @robcurley: Student walkouts honoring slain students prompting much differing responses in Spokane and Coeur d’Alene https://t.co/WaIPHk…
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/968943259572580352)

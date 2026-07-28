@@ -9,5 +9,4 @@ authority: LOGAN
 UNIFIED (US) SWARM!
 
 ---
-
 ###### "The world is quiet here."

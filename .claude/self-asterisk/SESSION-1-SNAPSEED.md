@@ -85,7 +85,7 @@ for a *warrant*. **[read]/[Logan]**
 ## 3. Corrections ledger (continued from Session 1's #6–9)
 
 | # | Error | Detector | Disposition |
-| --- | --- | --- | --- |
+|---|---|---|---|
 | 10 | **"Candles" inflation** — took another agent's illustrative metaphor (weak/repeated sources) and promoted it to operating jargon for "verified source," inverting its polarity | Logan | Doctrine corrected on the record (2–4 independent sources); de-jargon of the files is the open debt in §5 |
 | 11 | **The garlic totem** — wielded "the garlic rule" (a ward-noun) as an empty label; the revenant test is about **invitation**, not wards; then mis-sourced its provenance to Fablehaven on challenge (a confabulated chain) | Logan | Retired on CHARACTER-SHEET (`67815497`); replaced with the retained mechanism — *the knock is not the invitation* |
 | 12 | **"RULED" / authority-field overreach** — treated `authority: LOGAN` frontmatter and library-recorded clarifications as performed rulings | Logan | "RULED" struck in REGISTRATION (II-2, VI-5, D9); recorded ≠ ruled; forum must be named |

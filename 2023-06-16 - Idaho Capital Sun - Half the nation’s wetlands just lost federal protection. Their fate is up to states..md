@@ -36,7 +36,7 @@ related:
 - wetlands
 authority: LOGAN
 ---
-## Supreme Court’s narrowing of the Clean Water Act has left some states scrambling to enact safeguards and others questioning whether regulators can handle workload
+## Supreme Court’s narrowing of the Clean Water Act has left some states scrambling to enact safeguards and others questioning whether regulators can handle workload 
 
 States’ to-do lists just got a little longer: Decide how — or whether — to oversee building, planting and water quality in some wetland areas.
 
@@ -55,7 +55,6 @@ Seven states, the analysis found, provide limited coverage of those waters, alth
 And in the 19 states with broad wetlands protections, environmental regulators worry that they don’t have the capacity to uphold state laws without the federal partnerships that had been crucial to permitting and environmental analyses.
 
 ### ‘States are going to need to step up’ after Supreme Court’s WOTUS decision
-
 The court’s ruling found that the U.S. Environmental Protection Agency improperly claimed authority over an Idaho couple’s effort to build a house on their property. The decision limits the scope of wetlands covered by the Clean Water Act to those with a continuous surface connection to a larger body of water. It also cut protections for “ephemeral” streams that only flow seasonally.
 
 More than half of the country’s 118 million acres of wetlands could be stripped from federal oversight, estimates Earthjustice, an environmental legal group. Advocates say the ruling ignores the fact that water often flows below ground, meaning unregulated wetlands could spread contamination to nearby lakes and rivers that the law does safeguard.
@@ -75,7 +74,6 @@ In New Mexico, the state Environment Department already was pursuing its own sur
 “This is going to give us the capability to better protect New Mexico,” he said. “We’re evaluating whether we need to somewhat modify our approach and do an interim rulemaking that addresses wetlands. But we’re on a good course and we’ll adjust as we see what the ripple effects from this ruling are.”
 
 ### Limiting state authority
-
 Other states are attempting to roll back state water laws. North Carolina lawmakers passed a bill this month that would invalidate state wetland protections that go beyond federal regulations.
 
 “The state law should be clear that state jurisdiction ends concurrent with the federal [standard],” said Ray Starling, president of the NC Chamber Legal Institute, the legal strategy arm of the business advocacy group. “The mentality and expectation of the General Assembly is that we don’t regulate more stringently than the federal government.”

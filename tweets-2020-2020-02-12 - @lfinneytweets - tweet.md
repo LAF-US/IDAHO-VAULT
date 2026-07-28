@@ -13,10 +13,9 @@ related:
   - lfinneytweets
 ---
 
-<https://t.co/xS9EI5aEXm>
+https://t.co/xS9EI5aEXm
 
 ## Media
-
 - ![](https://pbs.twimg.com/media/EQlsWsvU4AE7_qi.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1227631569940013057)

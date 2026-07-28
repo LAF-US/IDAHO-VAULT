@@ -7,7 +7,6 @@ related:
 authority: LOGAN
 ---
 American coast on the Pacific Ocean  
-
 - Washington
 - Oregon
-- California
+- California 

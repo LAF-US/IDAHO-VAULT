@@ -5,4 +5,4 @@ related:
 - Preston
 authority: LOGAN
 ---
-Preston, Franklin County
+Preston, Franklin County 

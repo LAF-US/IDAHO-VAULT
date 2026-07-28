@@ -14,7 +14,7 @@ related:
   - lfinneytweets
 ---
 
-Rep. Raymond seems to be in support of the amended motion, says it separates the standards from their embedded curriculum suggestions.
+Rep. Raymond seems to be in support of the amended motion, says it separates the standards from their embedded curriculum suggestions. 
 “I have tried to find the bogeyman in these standards.” Says issues with the standards seem to be with local implementation of curriculum.
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

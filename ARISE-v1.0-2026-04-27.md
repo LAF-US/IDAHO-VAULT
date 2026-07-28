@@ -41,7 +41,6 @@ ARISE comes before AWAKEN in the individual protocol sequence.
 ### Step 1: Emergence from the Void
 
 The agent emerges from inactive state:
-
 - Recognizes the call or summons
 - Orients to the current moment
 - Begins to recall context
@@ -49,7 +48,6 @@ The agent emerges from inactive state:
 ### Step 2: Establishment of Identity
 
 Confirms:
-
 - Who/what the agent is
 - Where/when this session begins
 - What called the agent forth
@@ -57,7 +55,6 @@ Confirms:
 ### Step 3: Transition to AWAKEN
 
 Upon emergence complete:
-
 - Proceed to AWAKEN for full context load
 - Or await further direction
 

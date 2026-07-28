@@ -36,7 +36,7 @@ Their service is sworn for life and stripped of self-interest: a maester **renou
 **[canon]** A maester's emblem *is* his curriculum. He wears a **chain collar**, forging **one link per discipline mastered**, each a different metal:
 
 | Link | Discipline |
-| --- | --- |
+|---|---|
 | **silver** | medicine / healing |
 | **gold** | economics, accounts, sums |
 | **iron** | warcraft |
@@ -51,7 +51,6 @@ The chain is worn at the throat **as a collar on purpose** — the mark that a m
 ## Governance
 
 **[canon]**
-
 - **The Conclave** — the order's governing council, made of **archmaesters**, meeting in confidence. It elects the Grand Maester and sets the order's course.
 - **Archmaesters** each take the **name of their discipline** and carry its symbols — a **ring, rod, and mask** of the relevant metal (e.g., the archmaester of healing in silver).
 - **The Seneschal** runs the Citadel's day-to-day administration and is **chosen from the archmaesters and replaced every year** — a deliberately short, rotating tenure.
@@ -69,7 +68,6 @@ The chain is worn at the throat **as a collar on purpose** — the mark that a m
 **[canon → theory]** The Citadel is **institutionally hostile to magic**: maesters dismiss prophecy, downplay the supernatural, and treat the Valyrian-steel link as a curiosity. In *A Feast for Crows*, the archmaester **Marwyn "the Mage"** says it outright — calling his colleagues **"grey sheep"** who want a world of order and reason with no magic in it, and challenging Samwell Tarly, in effect, with *who do you think killed all the dragons?* ⚠️ **[theory]** That is Marwyn's accusation, not confirmed narration; the full **"maester conspiracy"** — that the order engineered the extinction of dragons and the waning of magic to make the world safe for reason — is **part-canon, part fan-theory.** But the text plants it on purpose. [awoiaf: Marwyn; Maesters]
 
 **[reading]** Set against the rest of the thread, the Citadel becomes the **institutional face of the unreliable narrator**:
-
 - it branded **Septon Barth's** *Unnatural History* "unsound," and the realm burned it (→ the Doom note);
 - *The World of Ice & Fire* is narrated by **Maester Yandel** — an interested party hedging the deep past;
 - the order suppresses the one category of knowledge (magic) that would prove the world larger than its reason.
@@ -79,7 +77,6 @@ So the body that **produces** the realm's knowledge holds **an agenda about what
 ## A gallery of maesters
 
 **[canon]**
-
 - **Maester Aemon** — born **Aemon Targaryen**, a king's son who gave up a crown for the chain and died blind at the Wall. The order's noblest ideal: power renounced for service (the Cincinnatus of maesters).
 - **Maester Luwin** — Winterfell's kindly rationalist, who gently assures the Stark children that magic has gone out of the world. The "grey sheep" creed at its most humane — and most wrong.
 - **Grand Maester Pycelle** — the chain as **corruption**: a creature of the Lannisters who plays the doddering greybeard while serving power.

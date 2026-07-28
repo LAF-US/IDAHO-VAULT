@@ -3,7 +3,6 @@
 ## Context
 
 Two tasks:
-
 1. **Tidiness sweep** — DAILYNOTES/ zombie reappeared; also catch any other quick structural issues before MCP work begins.
 2. **MCP Phase 0** — The MCP implementation plan is staged at `!/MCP-IMPLEMENTATION-PLAN.md`. Phase 0 (read-only discovery) can begin now — MCP servers are already configured and reachable (Linear, Slack, Gmail, Google Calendar, Box, Canva, Hugging Face). Logan wants to work through this together.
 
@@ -14,7 +13,6 @@ Two tasks:
 **Branch:** `claude/tidy-2026-03-25` (same branch, first step)
 
 Flatten all directories at vault root into root, except:
-
 - `!` (swarm/governance — preserved)
 - `.git`, `.obsidian`, `.github`, `.claude`, `.vscode` (tooling — preserved)
 - `swarm/` (operational — preserved)
@@ -34,34 +32,27 @@ Directories to flatten: `Facet/`, `Frieze/`, `IMAGES/`, `INBOX/`, `Inlay/`, `Sta
 **Branch:** `claude/tidy-2026-03-25`
 
 ### DAILYNOTES/ zombie
-
 - Delete `DAILYNOTES/2026-03-21.md` (empty file)
 - Remove `DAILYNOTES/` directory
 - **Root cause fix:** Obsidian daily notes plugin is set to `folder: ""` (root), so `.md` files like `2026-03-23.md`, `2026-03-24.md`, `2026-03-25.md` are accumulating at root. Fix: update `.obsidian/daily-notes.json` to `"folder": "DAILYNOTES"` and add `DAILYNOTES/` to `.gitignore` (daily notes are ephemeral personal content — not vault-publishable material).
 
 ### .obsidian noise
-
 Current `.gitignore` already handles `workspace.json`. Also noisy/ephemeral:
-
 - `.obsidian/graph.json` — layout state, changes constantly
 - `.obsidian/plugins/recent-files-obsidian/data.json` — already gitignored
 - `.obsidian/types.json` — property type registry, changes as new frontmatter keys are added
 
 Add to `.gitignore`:
-
 ```
 .obsidian/graph.json
 .obsidian/types.json
 ```
-
 Then `git rm --cached` both.
 
 ### Scope boundary
-
 The 3,400+ loose root files and missing `GOVERNMENTS/`, `SOURCES/`, etc. are the ongoing `vault-propose-moves` incremental problem — **not in scope here**. The GEMSTONE artifacts (`Facet/`, `Frieze/`, `Statue/`, `Inlay/`, `IMAGES/`) are intentionally at root as test materials — leave them.
 
 **Critical files:**
-
 - `.gitignore` — add `.obsidian/graph.json`, `.obsidian/types.json`
 - `.obsidian/daily-notes.json` — update `folder` field to `"DAILYNOTES"`
 
@@ -74,7 +65,6 @@ The 3,400+ loose root files and missing `GOVERNMENTS/`, `SOURCES/`, etc. are the
 **Branch:** `claude/mcp-phase-0-discovery`
 
 ### Entry criteria check (all met)
-
 - ✅ MCP servers configured and reachable: Linear, Slack, Gmail, Google Calendar, Box, Canva, Hugging Face
 - ✅ Target workflows exist (IDAHO-VAULT operations)
 - ✅ Governance log location: `!/!/MCP-DISCOVERY-2026-03-25.md`
@@ -88,7 +78,7 @@ Use `ListMcpResourcesTool` to capture available resources with timestamp. Log to
 For each MCP server, assess against IDAHO-VAULT workflows:
 
 | Server | Target workflow | Expected support |
-| --- | --- | --- |
+|---|---|---|
 | Linear | SWARM task management, issue assignment | Write candidate (Phase 1) |
 | Slack | Agent breadcrumbs, notifications | Read/write |
 | Gmail | Source outreach tracking, press release ingestion | Read (sensitive) |
@@ -107,7 +97,6 @@ Based on discovery, select one write target. Expected: **Linear SWARM** (most st
 Write `!/!/MCP-DISCOVERY-2026-03-25.md` with full inventory, gap register, Phase 1 candidate selection, and Gate 0→1 readiness assessment. Commit to branch, open PR.
 
 ### Governance log format
-
 ```yaml
 ---
 tags:
@@ -118,7 +107,6 @@ status: complete
 phase: 0
 ---
 ```
-
 Body: timestamped resource inventory, template inventory, workflow mapping table, gap register, Phase 1 candidate recommendation.
 
 ---
@@ -126,13 +114,11 @@ Body: timestamped resource inventory, template inventory, workflow mapping table
 ## Verification
 
 **Part 1:**
-
 - `DAILYNOTES/` no longer exists
 - `git status` shows no `.obsidian/graph.json` or `types.json` modifications
 - New daily notes auto-created by Obsidian go to `DAILYNOTES/` and are gitignored
 
 **Part 2:**
-
 - `!/!/MCP-DISCOVERY-2026-03-25.md` committed with all Phase 0 outputs
 - Phase 0 exit criteria satisfied:
   - Resource + template inventories stored

@@ -23,7 +23,7 @@ This note records the source used and short observations. It is not doctrine.
 ## Source Used
 
 1. Rick and Morty Wiki, "Dimension C-137", Fandom.
-   - URL: <https://rickandmorty.fandom.com/wiki/Dimension_C-137>
+   - URL: https://rickandmorty.fandom.com/wiki/Dimension_C-137
    - Used for the supplied user excerpt and source verification.
 
 ## Observations
@@ -38,3 +38,4 @@ This note records the source used and short observations. It is not doctrine.
 - The relevant Vault lesson is provenance under multiplicity: a stable label
   can point to the wrong origin layer if the current dimension, actor, or
   source context is not verified.
+

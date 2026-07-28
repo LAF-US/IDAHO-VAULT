@@ -33,7 +33,7 @@ date: 2026-06-04
 **[canon]** Each tribe revered one **talisman gem**. In the order they sit on the Belt, the seven gems' initials spell **DELTORA**:
 
 | Gem | Tribe | Symbol of | Power (per series) |
-| --- | --- | --- | --- |
+|---|---|---|---|
 | **D**iamond | the **Jalis** | strength, innocence, purity | gives courage and strength; wards pestilence; aids true love |
 | **E**merald | the **Dread Gnomes** | honour | dulls in the presence of evil **or a broken vow**; remedy for sores, antidote to poison |
 | **L**apis Lazuli | the **Mere** | good fortune | the "heavenly stone" — brings luck; affiliated with the opal |

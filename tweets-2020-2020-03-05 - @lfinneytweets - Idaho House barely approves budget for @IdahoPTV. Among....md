@@ -21,10 +21,9 @@ related:
   - idpol
 ---
 
-Idaho House barely approves budget for @IdahoPTV. Among criticisms of the agency was coverage by @IdahoReports, where I am an intern. #idleg #idpol <https://t.co/rNz8gyxr96>
+Idaho House barely approves budget for @IdahoPTV. Among criticisms of the agency was coverage by @IdahoReports, where I am an intern. #idleg #idpol https://t.co/rNz8gyxr96
 
 ## Links
-
-- <https://x.com/RadioDawson/status/1235620813186850816>
+- https://x.com/RadioDawson/status/1235620813186850816
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1235622027459014657)

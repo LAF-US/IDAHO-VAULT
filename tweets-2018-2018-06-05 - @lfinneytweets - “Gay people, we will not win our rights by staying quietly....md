@@ -14,10 +14,9 @@ related:
   - lfinneytweets
 ---
 
-“Gay people, we will not win our rights by staying quietly in our closets…We are coming out to fight the lies, the myths, the distortions. We are coming out to tell the truths about gays, for I am tired of the conspiracy of silence, so I’m going to talk about it.” -Harvey Milk <https://t.co/M7nbCmZC0d>
+“Gay people, we will not win our rights by staying quietly in our closets…We are coming out to fight the lies, the myths, the distortions. We are coming out to tell the truths about gays, for I am tired of the conspiracy of silence, so I’m going to talk about it.” -Harvey Milk https://t.co/M7nbCmZC0d
 
 ## Media
-
 - ![](https://pbs.twimg.com/media/De6dVNpVMAA3BLz.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

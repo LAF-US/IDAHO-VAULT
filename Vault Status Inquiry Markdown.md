@@ -37,7 +37,7 @@ USB did not attempt peer-to-peer communication (unlike FireWire), guaranteed rea
 ### The analogy mapping for multi-agent protocol design
 
 | USB concept | Multi-agent analog |
-| --- | --- |
+|---|---|
 | Device Descriptor (18 bytes) | Agent Card / Agent Descriptor — self-identifying manifest published on connection |
 | idVendor + idProduct | Agent identity — unique identifier for provider and agent type |
 | bcdUSB | Protocol version — which version of the handoff protocol the agent supports |
@@ -67,7 +67,6 @@ USB did not attempt peer-to-peer communication (unlike FireWire), guaranteed rea
 **Architecture:** Three roles — **Host** (the LLM application, acts as security broker), **Client** (connector within the host maintaining a 1:1 stateful connection with a server), **Server** (lightweight service exposing tools, resources, and prompts). All communication uses **JSON-RPC 2.0** over three transport options: stdio (local subprocess), Streamable HTTP (recommended for remote), or legacy HTTP+SSE. Initialization follows a strict three-phase lifecycle: capability negotiation → initialized notification → operation.
 
 **Three primitives:**
-
 - **Tools** (model-controlled): executable functions with JSON Schema inputs. The AI model decides when to call them.
 - **Resources** (application-controlled): read-only data sources identified by URIs, with subscription support.
 - **Prompts** (user-controlled): reusable parameterized message templates.

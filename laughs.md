@@ -6,4 +6,4 @@ related:
 authority: LOGAN
 ---
 [ !! ]
-laughter laugh laughing
+laughter laugh laughing 

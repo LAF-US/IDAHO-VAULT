@@ -16,7 +16,6 @@ author: Logan Finney
 ---
 
 # NOUS RESEARCH & HERMES AGENT
-
 ## Deep Research Report
 
 **Date:** April 28, 2026  
@@ -59,7 +58,7 @@ author: Logan Finney
 ### Core Products
 
 | Project | Type | Description |
-| --------- | ------ | ------------- |
+|---------|------|-------------|
 | **Hermes Agent** | AGENT | Autonomous agent that grows with use |
 | **Hermes Models** | MODEL | Open source language model series |
 | **Psyche Network** | TRAINING | Decentralized training infrastructure |
@@ -75,7 +74,7 @@ author: Logan Finney
 ### Hermes 4 (August 2025)
 
 | Model | Size | Notes |
-| ------- | ------ | ------- |
+|-------|------|-------|
 | Hermes-4-Llama-3.1-405B | 802 GB | Frontier hybrid-mode reasoning |
 | Hermes-4-Llama-3.1-70B | 140 GB | Same improvements, smaller footprint |
 | Hermes-4.3-Seed-36B | 72 GB | **Post-trained entirely on Psyche network** |
@@ -112,7 +111,7 @@ author: Logan Finney
 ### Key Differentiators
 
 | Feature | Description |
-| --------- | ------------- |
+|---------|-------------|
 | **Self-improving** | Creates skills from experience, persists knowledge |
 | **Persistent Memory** | Cross-session memory, user profiling |
 | **47 Built-in Tools** | Web, terminal, file, vision, delegation, cron |
@@ -125,7 +124,7 @@ author: Logan Finney
 ### Supported Providers (20+)
 
 | Provider | Auth | Key Env Var |
-| ---------- | ------ | ------------- |
+|----------|------|-------------|
 | OpenRouter | API key | `OPENROUTER_API_KEY` |
 | Anthropic | API key | `ANTHROPIC_API_KEY` |
 | Nous Portal | OAuth | `hermes auth` |
@@ -148,7 +147,7 @@ hermes             # start chatting!
 ### Key Commands
 
 | Command | Purpose |
-| --------- | --------- |
+|---------|---------|
 | `hermes` | Interactive CLI |
 | `hermes model` | Choose provider/model |
 | `hermes tools` | Configure toolsets |
@@ -185,7 +184,6 @@ Psyche is **open infrastructure democratizing AI development** by decentralizing
 > *"In large setups, thousands of accelerators compute and share gradients among the entire network. DisTrO is a family of optimizers that leverages unexpected properties of ML training to massively compress the information passed among accelerators."*
 
 **The JPEG analogy:**
-
 - Natural signals (images, sounds) have most information in low frequencies
 - High frequencies can be discarded with minimal quality loss
 - DisTrO applies DCT to optimizer momentum tensors, extracting top-k components
@@ -196,7 +194,7 @@ Psyche is **open infrastructure democratizing AI development** by decentralizing
 **First production run on Psyche — largest distributed pretraining run ever over internet:**
 
 | Spec | Value |
-| ------ | ------- |
+|------|-------|
 | Parameters | 40B |
 | Architecture | MLA (Multi-head Latent Attention) |
 | Tokens | 20T |
@@ -211,7 +209,7 @@ Psyche is **open infrastructure democratizing AI development** by decentralizing
 ## RELEVANT REPOSITORIES
 
 | Repo | Stars | Description |
-| ------ | ------- | ------------- |
+|------|-------|-------------|
 | NousResearch/hermes-agent | 117k | The agent that grows with you |
 | NousResearch/hermes-agent-self-evolution | 2.2k | Self-improvement via DSPy + GEPA |
 | NousResearch/DisTrO | 1k | Distributed Training Over-The-Internet |
@@ -226,7 +224,7 @@ Psyche is **open infrastructure democratizing AI development** by decentralizing
 ### Current Local Models
 
 | Model | Size | Purpose |
-| ------- | ------ | --------- |
+|-------|------|---------|
 | qwen3.5:latest | 6.6 GB | General purpose, best quality |
 | phi3:mini | 2.2 GB | Lightweight tasks |
 | qwen2.5:3b | 1.9 GB | Minimal/quick tasks |
@@ -245,7 +243,7 @@ Fallback chain: Ollama Light → OpenRouter Free (Llama 3.2 3B)
 ## RESOURCES & LINKS
 
 | Resource | URL |
-| ---------- | ----- |
+|----------|-----|
 | Hermes Agent Docs | hermes-agent.nousresearch.com/docs |
 | Hermes GitHub | github.com/NousResearch/hermes-agent |
 | Nous Research | nousresearch.com |

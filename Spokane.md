@@ -5,4 +5,4 @@ related:
 - Washington
 authority: LOGAN
 ---
-eastern Washington city with regional influence in North Idaho
+eastern Washington city with regional influence in North Idaho 

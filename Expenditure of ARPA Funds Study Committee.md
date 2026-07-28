@@ -5,4 +5,4 @@ related:
 - budgets
 authority: LOGAN
 ---
-Idaho Legislature committee on ARPA budgets
+Idaho Legislature committee on ARPA budgets 

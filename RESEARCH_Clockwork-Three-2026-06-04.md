@@ -107,7 +107,7 @@ Tonal register: **dark for middle grade**. Real violence, real cruelty, real chi
 The components of the clockwork man, per [[!/WITNESS-CLOCKWORK-THREE-SYNCRETISM-2026-05-23.md]]:
 
 | Component | Object | Plot Role | Source Tradition |
-| ----------- | -------- | ----------- | ------------------ |
+|-----------|--------|-----------|------------------|
 | **BODY** | The Clockwork Man | Frederick's automaton-in-progress, built from scrap metal, cogs, a coal chute for the chest plate | The medieval-into-Victorian automaton craft |
 | **MIND** | The Magnus Head | Bronze talking head stolen from the museum during the children's escape; created in-universe by **Albertus Magnus** (1193–1280, real medieval theologian-alchemist) | The Brazen Head of Albertus Magnus / Roger Bacon legend; in the legend, Aquinas destroyed the brazen head because he thought it demonic |
 | **SOUL** | The Golem Clay | A small piece of clay Hannah takes from the museum during the same escape; belonged to **a golem** — this is what *actually animates* the automaton and imbues it with near-human intelligence | The Prague Maharal golem tradition (Rabbi Judah Loew, late 16th c.) |
@@ -157,7 +157,7 @@ The world the children navigate is organized around **two craft guilds** followi
 - **Stonemasons' guild** — Hannah's father is **a master stonemason** — *a* master, one of several in his guild, not the singular mason of the city. He was once *"a famous stonemason"*; he **worked on Stroop's hotel** and other buildings. ([MuggleNet review](https://blog.mugglenet.com/2013/01/book-review-the-clockwork-three-by-matthew-j-kirby/)) He has been struck down by **apoplexy** (period medical term for stroke), is **paralyzed from the neck down**, and lies bedridden. His arc: *fallen from the top of the guild, silenced.*
 
 | | Clockmakers' guild | Stonemasons' guild |
-| --- | --- | --- |
+|---|---|---|
 | Figure | Frederick | Hannah's father |
 | Rank | Apprentice | Master (former) |
 | Position on ladder | Rising | Fallen |
@@ -175,7 +175,7 @@ The world the children navigate is organized around **two craft guilds** followi
 Each of the three children is attached to a different craft domain in their world:
 
 | | Instruments | Clockwork | Stonework |
-| --- | --- | --- | --- |
+|---|---|---|---|
 | Child attached to it | Giuseppe | Frederick | Hannah |
 | Their relation | Plays the green violin (instrument inherited from harbor, maker unknown) | Apprentice building toward the journeyman examination | Daughter of *a* master stonemason whose silenced craft she covers for |
 | Historical lineage | Italian violin-making (Cremonese tradition implicit; the Stradivari-shadow) | Albertus Magnus / brazen-head / medieval automaton tradition | Medieval masons' guild; the master-mason tradition (`magister operis`); mason's-marks craft |
@@ -189,7 +189,7 @@ This three-craft mapping of the children's world is distinct from the three-obje
 ## V. Supporting cast
 
 | Character | Role |
-| --- | --- |
+|---|---|
 | **Stephano** | Giuseppe's *padrone*; cruel; primary antagonist of the Giuseppe strand |
 | **Master Branch** | Frederick's clockmaker master; rescued him from the orphanage |
 | **Mister Twine** | Owner of the Gilbert Hotel; ally to Hannah |
@@ -258,6 +258,5 @@ WebFetch returned 403 on SuperSummary, the cleanest plot-summary source. Finding
 - [Book Reviews & Giveaway — The Review Broads](https://thereviewbroads.com/book-reviews-giveaway-the-clockwork-three/)
 
 ### Vault internal
-
 - [[!/WITNESS-CLOCKWORK-THREE-SYNCRETISM-2026-05-23.md]] — **Analytic 1: the components-of-the-clockwork-man reading; established prior to this brief and held alongside it**
 - [[!README.md]] — the Touchstone Tree triad (BODY / MIND / SOUL)

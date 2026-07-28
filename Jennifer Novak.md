@@ -13,7 +13,7 @@ Jennifer Novak is the Secretary of the Idaho Senate and custodian of the Senate'
 
 ## Contact
 
-- **Email:** <jnovak@senate.idaho.gov>
+- **Email:** jnovak@senate.idaho.gov
 - **Phone:** (208) 332-1309
 - **Education:** Pacific University
 

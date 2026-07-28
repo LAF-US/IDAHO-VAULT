@@ -5,6 +5,5 @@ related:
 authority: LOGAN
 ---
 Ned Burns
-
 - Sally Toone
--
+- 

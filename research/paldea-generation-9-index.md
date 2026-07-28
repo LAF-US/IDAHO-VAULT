@@ -26,7 +26,7 @@ Master index for Paldea's Gym Leaders, Elite Four, and Champion.
 Open-world design; Gyms can be challenged in any order.
 
 | # | Gym Leader | City | Type | Badge | E1 |
-| --- | ------------ | ------ | ------ | ------- | ---- |
+|---|------------|------|------|-------|----|
 | 1 | **Katy** | Cortondo | Bug | Bug Badge | Yes |
 | 2 | **Brassius** | Artazon | Grass | Grass Badge | Yes |
 | 3 | **Iono** | Levincia | Electric | Electric Badge | Yes |
@@ -37,7 +37,6 @@ Open-world design; Gyms can be challenged in any order.
 | 8 | **Grusha** | Glaseado | Ice | Ice Badge | Yes |
 
 ### Individual Files
-
 - [ ] Katy
 - [ ] Brassius
 - [ ] Iono
@@ -52,14 +51,13 @@ Open-world design; Gyms can be challenged in any order.
 ## Elite Four (4)
 
 | # | Member | Type | E1 |
-| --- | -------- | ------ | ---- |
+|---|--------|------|----|
 | 1 | **Rika** | Ground | Yes |
 | 2 | **Poppy** | Steel | Yes |
 | 3 | **Larry** | Flying | Yes (also Gym Leader, where his specialty is Normal) |
 | 4 | **Hassel** | Dragon | Yes |
 
 ### Individual Files
-
 - [ ] Rika
 - [ ] Poppy
 - [ ] Larry
@@ -74,7 +72,6 @@ Open-world design; Gyms can be challenged in any order.
 | **Geeta** | Mixed | Yes |
 
 ### Individual Files
-
 - [ ] Geeta
 
 ---
@@ -82,7 +79,7 @@ Open-world design; Gyms can be challenged in any order.
 ## Research Status
 
 | Category | Total | Completed | Remaining | % |
-| ---------- | ------- | ----------- | ----------- | --- |
+|----------|-------|-----------|-----------|---|
 | Gym Leaders | 8 | 0 | 8 | 0% |
 | Elite Four | 4 | 0 | 4 | 0% |
 | Champion | 1 | 0 | 1 | 0% |
@@ -91,7 +88,6 @@ Open-world design; Gyms can be challenged in any order.
 ---
 
 ## Next Steps
-
 1. Start with **Katy** (Cortondo Gym Leader)
 2. Use Misty template
 

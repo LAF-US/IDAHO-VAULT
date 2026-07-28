@@ -15,10 +15,9 @@ related:
   - lfinneytweets
 ---
 
-RT @vicenews: Idaho lawmakers want the state to tell people seeking abortions that they can reverse the procedure <https://t.co/aGa0SpBHtW>
+RT @vicenews: Idaho lawmakers want the state to tell people seeking abortions that they can reverse the procedure https://t.co/aGa0SpBHtW
 
 ## Links
-
-- <http://bit.ly/2FNy8fp>
+- http://bit.ly/2FNy8fp
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/973698460238020610)

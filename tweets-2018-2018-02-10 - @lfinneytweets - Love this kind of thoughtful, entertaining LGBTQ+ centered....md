@@ -15,10 +15,9 @@ related:
   - lfinneytweets
 ---
 
-Love this kind of thoughtful, entertaining LGBTQ+ centered content from @tyleroakley. I can't wait to see more! <https://t.co/to1k7QdWDN>
+Love this kind of thoughtful, entertaining LGBTQ+ centered content from @tyleroakley. I can't wait to see more! https://t.co/to1k7QdWDN
 
 ## Links
-
-- <https://x.com/tyleroakley/status/960979785647194112>
+- https://x.com/tyleroakley/status/960979785647194112
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/962262670270332928)

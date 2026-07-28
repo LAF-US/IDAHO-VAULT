@@ -8,4 +8,4 @@ related:
 - Treasure Valley
 authority: LOGAN
 ---
-Congressional Districts, typically North Idaho, North-Central Idaho, Central Idaho, Treasure Valley
+Congressional Districts, typically North Idaho, North-Central Idaho, Central Idaho, Treasure Valley 

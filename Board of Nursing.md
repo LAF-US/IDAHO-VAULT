@@ -5,4 +5,4 @@ related:
 - occupational and professional licensing
 ---
 
-occupational and professional licensing board for nurses
+occupational and professional licensing board for nurses 

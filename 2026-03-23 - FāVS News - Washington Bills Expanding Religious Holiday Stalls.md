@@ -35,6 +35,8 @@ Our Sponsors
 
 Idaho legislature (Logan Finney/ FāVS News).
 
+  
+
 **By John McCallum | FāVs News Reporter**
 
 ![](https://www.youtube.com/watch?v=E_JFg7OZbeQ)

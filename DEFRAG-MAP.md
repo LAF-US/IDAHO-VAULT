@@ -22,12 +22,12 @@ related:
 
 ---
 
-## Section A — Windows Machine Inventory (<loganfinney27@gmail.com>)
+## Section A — Windows Machine Inventory (loganfinney27@gmail.com)
 
 ### A1. Windows Local (`C:\Users\loganf\`)
 
 | Folder | Size | Disposition |
-| --- | --- | --- |
+|---|---|---|
 | `Documents\` | 317 GB | INGEST running — 32% objects transferred as of ~21:09; LFS blobs are bulk of remaining size. Check `D:\rclone-logs\documents-resume.log`. |
 | `Desktop\` (SCRATCH FOLDER) | 38 GB | Being pushed → INGEST now |
 | `Videos\` | 8.6 GB | Being pushed → INGEST now |
@@ -42,7 +42,7 @@ related:
 **INGEST transfer status as of 17:53 on 2026-05-12 (all rclone processes stopped):**
 
 | INGEST Folder | Objects | Size | Status |
-| --- | --- | --- | --- |
+|---|---|---|---|
 | `Documents/` | 25,500 / 35,512 (72% objects) | ~163 MiB of 405 MiB current batch (40%) | **INCOMPLETE — STOPPED** 2026-05-13 ~04:45 after 9h20m. 1,269 errors. LFS blob cache almost certainly did not complete. Log read by Bellhop 2026-05-25 from Vault drive (D: on Windows = ExFAT 2TB drive, now visible from Mac). Vault splinter folders confirmed in `gdrive-personal:INGEST/windows-2026-05-12/Documents/`. Needs re-run from Windows to finish LFS blobs. |
 | `Desktop-SCRATCH/` | 1,199 | 31.810 GiB | Complete (100%) |
 | `Videos/` | 123 | ~16.6 GiB | Complete (100%) |
@@ -58,7 +58,7 @@ related:
 Active journalism folders — work-managed by Idaho PTV, NOT for personal consolidation:
 
 | Folder | Last Modified | Notes |
-| --- | --- | --- |
+|---|---|---|
 | `Documents\` | 2026-05-08 | Active work docs |
 | `Interview Questions\` | 2026-05-08 | Active reporting |
 | `IR Online\` | 2026-05-08 | Idaho Reports online content |
@@ -84,7 +84,7 @@ Active journalism folders — work-managed by Idaho PTV, NOT for personal consol
 **Specs:** 2015 MacBook Pro 13", 932 GB internal, **836 GB used, 79 GB free** (92% full — tight)
 
 | Folder | Size | Notes |
-| --- | --- | --- |
+|---|---|---|
 | `~/Desktop/` | 2.4 MB | ✅ Clean — previous defrag transfer complete. One `session-export-*.zip` file. |
 | `~/Downloads/` | 61 GB | ⚠️ Needs triage. Top items: Idaho Debates Senate videos (979 MB), Photos-001 folder (583 MB), Louie Zong albums, music albums, Premiere Pro Workshop. Also `OneDrive_1_9-25-2024/` (1 MB — 3 SVWC author docs, already local). |
 | `~/Documents/` | 21 GB | OBS recordings (15 GB), Zoom recordings (6.4 GB), Timberborn saves (274 MB), Twitch assets (50 MB). |
@@ -99,7 +99,7 @@ Active journalism folders — work-managed by Idaho PTV, NOT for personal consol
 Five drives total. Mac sees 2; Windows sees 3. Drive letters are not permanent — they shift as drives are connected to different machines. During the 2026-05-12 Windows INGEST session the Vault was D:; in this session D: is the storage drive because the physical configuration changed.
 
 | Volume Label | FS | Total | Used | Free | OS / Mount | Notes |
-| --- | --- | --- | --- | --- | --- | --- |
+|---|---|---|---|---|---|---|
 | `timemachine` | HFS+ | 1 TB | 853 GB | 78 GB | Mac `/Volumes/timemachine` | Hardware: My Passport for Mac (per Mac system report). Time Machine backup only — do not use for defrag. |
 | `Vault` | exFAT | ~2 TB | ~28 MB | ~1.8 TB | Mac `/Volumes/Vault` (current) | Contains `rclone-logs/` with all INGEST transfer logs (read by Bellhop 2026-05-25). Was D: on Windows during 2026-05-12 INGEST session; currently on Mac only. Available as staging target from Mac. |
 | `storage` | exFAT | 4,657 GB | 1,509 GB | 3,148 GB | Windows D: | Main content archive and consolidation target. Contains: `Photos Library.photoslibrary` (explains 152 GB vs 5.1 GB ~/Pictures discrepancy — library lives here, not Mac internal), old desktop transfer from 2026-05-12 INGEST (`Cloud/`, `home-root-files/`), extensive personal content dating to 2014. |
@@ -115,7 +115,7 @@ Five drives total. Mac sees 2; Windows sees 3. Drive letters are not permanent �
 ✅ rclone v1.73.5 installed at `/usr/local/bin/rclone`
 
 | Remote | Status | Notes |
-| --- | --- | --- |
+|---|---|---|
 | `gdrive-personal:` | ✅ accessible | Confirmed reachable |
 | `dropbox-personal:` | ✅ accessible | 5.3 GB, 936 files (Camera Uploads) |
 | `onedrive-personal:` | ✅ accessible (partial) | Personal Vault errors; Imports+Pictures accessible |
@@ -136,7 +136,7 @@ Five drives total. Mac sees 2; Windows sees 3. Drive letters are not permanent �
 **Top-level folders:**
 
 | Folder | Size | Files | Notes |
-| --- | --- | --- | --- |
+|---|---|---|---|
 | `Archive/` | 12.6 GB | 1,891 | 123 Google Docs/Sheets (unknown size — underestimate). 2 dangling shortcuts. Personal/misc storage: Finney Project FARE, car insurance, NIDSA, Reclaim ID, School. Oldest content (2018). |
 | `FINNEY FaVS News/` | 46 MB | 26 | FaVS News journalism content, 10 Google native docs |
 | `Google Earth/` | 0 B | 0 | Empty |
@@ -151,14 +151,13 @@ Five drives total. Mac sees 2; Windows sees 3. Drive letters are not permanent �
 ### C2. Dropbox (`dropbox:`)
 
 | Folder | Size | Files | Notes |
-| --- | --- | --- | --- |
+|---|---|---|---|
 | `Camera Uploads/` | 5.2 GB | 884 | Phone camera auto-uploads. Date range: **2025-09-06 to 2026-05-12** — recent 8 months only. Likely overlaps with CrossDevice/OneDrive Pictures. |
 | `Apps/remotely-save/` | 0 B | 0 | Obsidian Remotely Save plugin — empty/unused |
 
 **Total accessible via rclone: ~5.2 GB**
 
 **304 GB gap — investigated 2026-05-12:**
-
 - `rclone about dropbox:` confirms 309 GB used against 2 TB quota
 - `rclone lsd dropbox: --dropbox-shared-folders` returns **nothing** — no shared folders accessible via API
 - This means the 304 GB is **not** shared-with-me folders (those would surface via the flag)
@@ -168,7 +167,7 @@ Five drives total. Mac sees 2; Windows sees 3. Drive letters are not permanent �
 ### C3. OneDrive Personal (`onedrive:`)
 
 | Folder | Size | Files | Notes |
-| --- | --- | --- | --- |
+|---|---|---|---|
 | `Imports/` | 139.3 GB | 1,539 | **⚠️ DUPLICATE of gdrive-personal** — see note below |
 | `Pictures/` | 5.7 GB | 788 | Photo library |
 | `Attachments/` | 0 B | 0 | Empty |
@@ -179,7 +178,6 @@ Five drives total. Mac sees 2; Windows sees 3. Drive letters are not permanent �
 
 **⚠️ CRITICAL DEDUP FINDING — OneDrive Imports:**
 `onedrive:Imports/loganfinney27@gmail.com - Google Drive/` contains the **exact same folder structure** as `gdrive-personal:`:
-
 - Archive, FINNEY FaVS News, Google Earth, Idaho PTV, Photos, Saved from Chrome, Takeout
 - This was a Microsoft OneDrive import of Google Drive (run ~2026-05-04, matching last modified dates)
 - **139.3 GB of OneDrive Imports is a direct copy of gdrive-personal content**
@@ -190,7 +188,7 @@ Five drives total. Mac sees 2; Windows sees 3. Drive letters are not permanent �
 ## Section D — Excluded / Out of Scope
 
 | Service/Location | Size | Reason |
-| --- | --- | --- |
+|---|---|---|
 | `gcs:` (Google Cloud Storage) | — | IDAHO-VAULT infrastructure — **never include in personal backup** |
 | `the-ledger-bucket:` | — | IDAHO-VAULT infrastructure — **never include in personal backup** |
 | `archive:` (Internet Archive) | — | Publishing endpoint, not personal storage |
@@ -224,21 +222,17 @@ Five drives total. Mac sees 2; Windows sees 3. Drive letters are not permanent �
 ### E3. Open Questions / Blockers
 
 **Requires Logan action in browser:**
-
 - [ ] **Dropbox 304 GB gap** — not shared folders (API confirmed nothing). Check `dropbox.com` → left sidebar → "Paper" for doc count; Settings → Connected Devices for orphaned storage.
 - [ ] **OneDrive Personal Vault** — locked. Open `onedrive.live.com` → Personal Vault → authenticate. Likely near-empty (Imports+Pictures already = 145 GB of 145 GB quota).
 - [ ] **`2026-04-24.md` authentic record** — Orphan branch `bot/daily-rollover-2026-04-24` had an authentic rollover with FMLA paperwork + vault sync tasks. Trunk has template-unrendered version with cleared tasks. Orphan branch deleted; objects still in local reflog (blob `f3d616f35e8ae79f5be7ac61fe7351fd34b9c2fa`). Logan's call: restore authentic April 24 content, or keep trunk version?
 
 **Requires Mogget (Windows):**
-
 - [ ] **Documents INGEST re-run** — stopped 2026-05-13 04:45, 72% objects / ~40% bytes, 1,269 errors. LFS blob cache likely incomplete. Run: `rclone copy "C:\Users\loganf\Documents" "gdrive-personal:INGEST/windows-2026-05-12/Documents" --transfers 4 --log-file "D:\rclone-logs\documents-resume2.log"`
 
 **Requires physical drive mount:**
-
 - [ ] **5TB Storage drive** — not seen on Mac in this session. When mounted, pull: gdrive-personal content, Dropbox Camera Uploads, OneDrive Pictures.
 
 **Resolved:**
-
 - [x] ~~**GitHub LFS budget**~~ — Pushes working normally as of 2026-05-25 Mac session (5 commits pushed, including content files).
 - [x] ~~Section B (MacBook local + 5TB inventory)~~ — Complete. Filled in 2026-05-25 Mac session; drive inventory from Windows session.
 - [x] ~~What is OneDrive `Imports/` (139 GB)?~~ — Confirmed: direct copy of gdrive-personal from 2026-05-04. **Skip.**
@@ -254,7 +248,7 @@ Five drives total. Mac sees 2; Windows sees 3. Drive letters are not permanent �
 ## Revision Log
 
 | Date | Change | Author |
-| --- | --- | --- |
+|---|---|---|
 | 2026-05-12T12:30 | Initial inventory (Windows side) | Claude (Windows) |
 | 2026-05-12T18:00 | Updated INGEST status; investigated Dropbox gap (no shared folders via API); identified OneDrive Imports as gdrive-personal duplicate; updated pull priority stack | Claude (Windows) |
 | 2026-05-12T18:35 | Resumed Documents transfer (321 GB LFS blobs); clarified blockers requiring Logan vs MacBook action | Claude (Windows) |

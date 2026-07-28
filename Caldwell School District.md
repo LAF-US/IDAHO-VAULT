@@ -4,4 +4,4 @@ related:
 - Canyon County
 authority: LOGAN
 ---
-Caldwell, Canyon County
+Caldwell, Canyon County 

@@ -107,7 +107,6 @@ Windows — or just let the driver resolve it (`driver.py test`):
 ```
 
 149 tests. **2 fail on a clean checkout, unrelated to setup** (data/pin drift):
-
 - `test_check_secret_patterns … test_allow_marker_does_not_suppress_dedicated_token` — expects a `github_token` rule; resolves to an empty set.
 - `test_workflow_security_invariants … _dependabot_auto_merge_…` — asserts a stale pinned SHA for `dependabot/fetch-metadata` (the action was bumped; the test wasn't).
 
@@ -138,7 +137,7 @@ Windows — or just let the driver resolve it (`driver.py test`):
 ## Troubleshooting
 
 | Symptom | Fix |
-| --- | --- |
+|---|---|
 | `No interpreter found for Python 3.13.3` | `uv python install 3.13.3`, or use the 3.11 fallback build |
 | Run stalls ~30s, then a `telemetry.crewai.com … timed out` line | set `CREWAI_DISABLE_TELEMETRY=true OTEL_SDK_DISABLED=true` |
 | `metadata_survey`: `AttributeError: 'NoneType' object has no attribute '__dict__'` | known-broken entrypoint; use `civic_scaffold --format json` |

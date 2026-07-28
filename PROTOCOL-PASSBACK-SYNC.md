@@ -39,7 +39,7 @@ related:
 When LOGAN decides to consolidate or delete conversation windows, context must be extracted and vaulted before those windows disappear. This protocol defines three operations:
 
 | Operation | Actor | Direction | Purpose |
-| --- | --- | --- | --- |
+|---|---|---|---|
 | **TOSS** | LOGAN → Agent | Outward | Extract structured context from a conversation |
 | **BOOTSTRAP** | LOGAN → CODE AUTHORITY | Inward | Ingest extracted context into the vault |
 | **HANDSHAKE** | CODE AUTHORITY → LOGAN | Acknowledgment | Confirm context has been vaulted |
@@ -170,7 +170,7 @@ If `Safe to delete source: NO`, CODE AUTHORITY must explain what's missing or am
 ## RELATIONSHIP TO EXISTING PROTOCOLS
 
 | Protocol | Relationship |
-| --- | --- |
+|---|---|
 | HANDOFF (PROTOCOL.md) | TOSS is a **terminal** handoff — the source conversation will not continue |
 | HANDSHAKE (PROTOCOL.md) | Same concept — acknowledgment of receipt. Extended here with vault-specific fields |
 | CONTEXTUALIZE (PROTOCOL.md) | TOSS output IS a contextualized dump — the agent follows the five W's + confidence + caveats |

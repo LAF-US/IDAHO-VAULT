@@ -4,4 +4,4 @@ related:
 - Nez Perce County
 authority: LOGAN
 ---
-Culdesac, Nez Perce County
+Culdesac, Nez Perce County 

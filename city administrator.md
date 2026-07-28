@@ -4,4 +4,4 @@ related:
 - city council
 authority: LOGAN
 ---
-cities executive hired by city council
+cities executive hired by city council 

@@ -6,5 +6,4 @@ related:
 authority: LOGAN
 ---
 Residence: Fernwood
-
-- House member for LD2 after redistricting
+- House member for LD2 after redistricting 

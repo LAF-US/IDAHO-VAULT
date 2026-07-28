@@ -171,5 +171,5 @@ earlier by his framing directive.
 ---
 
 *Recorded by Claude Code session `session_01Fipj4vEJ5ADPuunn9ed5Hd`
-(<https://claude.ai/code/session_01Fipj4vEJ5ADPuunn9ed5Hd>). The norms are
+(https://claude.ai/code/session_01Fipj4vEJ5ADPuunn9ed5Hd). The norms are
 Logan's, answered 2026-07-08; the apparatus is built and enforcing.*

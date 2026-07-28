@@ -63,7 +63,7 @@ Each environment variable in the response contains the environment variable's na
 
 > [!-secondary] -secondary
 > note
->
+> 
 > By default, 1Password Environment variables have **"Hide value by default"** turned on. To change this, open an Environment, select the verticle ellipsis next to the variable, then select **Show value by default**.
 
 #### Examples
@@ -111,7 +111,7 @@ op run --environment <environmentID> -- <command>
 
 > [!-secondary] -secondary
 > note
->
+> 
 > By default, 1Password Environment variables have **"Hide value by default"** turned on. Hidden variables are automatically concealed in stdout and stderr output. To change this, open an Environment, select the verticle ellipsis next to the variable, then select **Show value by default**. Or use the `--no-masking` flag with `op run`.
 
 #### Use with environment variables from multiple sources

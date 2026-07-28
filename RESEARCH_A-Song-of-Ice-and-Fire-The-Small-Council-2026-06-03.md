@@ -34,7 +34,7 @@ date: 2026-06-03
 ## The offices
 
 | Office | Portfolio |
-| --- | --- |
+|---|---|
 | **Hand of the King** | chief deputy; presides in the king's absence; the only other man who may lawfully sit the Iron Throne; wears a badge of office |
 | **Master of Coin** | the treasury and royal finances |
 | **Master of Laws** | justice / the laws of the realm |
@@ -62,7 +62,7 @@ date: 2026-06-03
 **[canon, web-verified 2026-06-04]** Each office commands a different *kind* of power and a different staff beneath it:
 
 | Office | Kind of power | Who works for them |
-| --- | --- | --- |
+|---|---|---|
 | **Hand** | directs all; commander-in-chief | **no dedicated bureau** — runs the council and the crown's officers, and commands the **Wardens** (N/S/E/W), who muster the realm's armies |
 | **Master of Coin** | civilian / fiscal | the realm's **largest bureaucracy** — the four **Keepers of the Keys**, the **King's Counter**, the **King's Scales**, mint officers, **harbormasters**, **customs sergeants**, **tax farmers** (private), **wool/wine factors**, **toll collectors**, **pursers** |
 | **Master of Laws** | coercive / judicial | the **City Watch** (gold cloaks — ⚠️ *nominally;* operationally under their own Commander and the Hand), the Red Keep **dungeons** and gaolers, the **King's Justice** (royal executioner); traveling **justiciars** hold open courts across the realm |

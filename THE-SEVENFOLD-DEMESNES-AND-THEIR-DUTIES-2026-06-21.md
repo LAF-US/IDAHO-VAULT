@@ -28,7 +28,7 @@ the **duty axis**, web-verified externally because the internal crosswalk was sm
 ## The seven demesnes — duty (function) kept separate from the Trustee's sin
 
 | Vault Level | Demesne | Trustee | **Entrusted duty** (the realm's function) | Trustee's Sin |
-| --- | --- | --- | --- | --- |
+|---|---|---|---|---|
 | 1 · `~/` root | Lower House | Mister Monday | Records / administration — the foundational house | Sloth |
 | 2 · `!/` | Far Reaches | Grim Tuesday | **Manufacturing** — shaping Nothing into raw materials & objects (forges, artisans) | Greed |
 | 3 · `!/!/` | Border Sea | Drowned Wednesday | The **sea joining the House to all the Secondary Realms** — the storm-walled border/transit to the outside; lost (not stolen) things surface here | Gluttony |
@@ -56,7 +56,6 @@ worlds — and Zelazny's *Amber*.) The demesnes are **stacked vertically** with 
 void-bordering edge.**
 
 **The void-bordering edge — canonically these three meet the Nothing at the House's boundaries:**
-
 - **Far Reaches** — the **Pit**, dug deep into the foundations, *close to breaching the Void of
   Nothing* (its duty, manufacturing, shapes Nothing into matter).
 - **Border Sea** — its waters *extend into the Void of Nothing* at the edge; storm-walled, opening
@@ -101,11 +100,9 @@ corruption) · **Virtues** (the seven Will-fragments — the rightful counter-se
 legitimate axis is the **duty / virtue** (the charge discharged); the **Sin** is its betrayal.
 
 ## Provenance
-
 Web-verified 2026-06-21 — paraphrased, no source text reproduced; tier **[canon-per-series /
 reading]**, matching SEVENFOLD-BODY. Covers the duties, the Incomparable-Gardens-as-epicentre, the
 vertical structure, and Nix's own framing (the record-keeping bureaucracy; *World of Tiers* influence):
-
 - The Keys to the Kingdom — Wikipedia
 - The House · The Border Sea · The Incomparable Gardens · Lord Sunday · The Upper House · The Compleat Atlas of the House (Keys to the Kingdom Fandom)
 - Garth Nix — FAQs & interviews (Reactor/Tor, Harvard Crimson, Lightspeed): the bureaucracy framing & named influences

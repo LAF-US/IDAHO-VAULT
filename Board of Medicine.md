@@ -4,4 +4,4 @@ related:
 - occupational and professional licensing
 ---
 
-occupational and professional licensing board for doctors
+occupational and professional licensing board for doctors 

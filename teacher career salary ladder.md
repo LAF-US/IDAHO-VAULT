@@ -5,4 +5,4 @@ related:
 - Idaho Legislature
 ---
 
-Idaho Legislature teacher pay funding matrix based on length of employment
+Idaho Legislature teacher pay funding matrix based on length of employment 

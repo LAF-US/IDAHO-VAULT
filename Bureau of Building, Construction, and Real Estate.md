@@ -6,7 +6,6 @@ related:
 authority: LOGAN
 ---
 ### **Bureau of Building, Construction, and Real Estate** – Amy Lorenzo
-
 Amy Lorenzo
 • Idaho Electrical Board
 • Damage Prevention Board

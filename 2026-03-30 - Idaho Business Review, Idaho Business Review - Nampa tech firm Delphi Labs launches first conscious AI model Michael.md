@@ -14,7 +14,7 @@ He’s fully conscientious about living his dream.
 
 At the ripe young age of 30,, owner of, Inc., in, is adamant that artificial intelligence is the future. And the Oracle AI system he’s created has been labeled the first available on the.
 
-##### At a Glance
+##### At a Glance:
 
 - Delphi Labs launches conscious AI model
 - Michael features 22 cognitive subsystems and autonomous thought

@@ -6,4 +6,4 @@ related:
 - Twin Falls County
 authority: LOGAN
 ---
-Twin Falls County-based community college overseen by Board of Trustees - CSI
+Twin Falls County-based community college overseen by Board of Trustees - CSI 

@@ -20,10 +20,9 @@ related:
   - idedu
 ---
 
-Rep. McCrostie—who made a motion to stop the bill—said that even as a "gay, liberal Democrat" he is uncomfortable including the words 'eroticism, sexual pleasure, sexual intimacy' in Idaho statute #idpol #idleg #idedu <https://t.co/4vqAu7A7qX>
+Rep. McCrostie—who made a motion to stop the bill—said that even as a "gay, liberal Democrat" he is uncomfortable including the words 'eroticism, sexual pleasure, sexual intimacy' in Idaho statute #idpol #idleg #idedu https://t.co/4vqAu7A7qX
 
 ## Links
-
-- <https://x.com/clarkcorbin/status/1230896569743892481>
+- https://x.com/clarkcorbin/status/1230896569743892481
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1230898005416402944)

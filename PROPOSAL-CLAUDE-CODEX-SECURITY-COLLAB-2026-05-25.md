@@ -13,7 +13,6 @@ related:
 - REPORT-GH-AUTOMATION-AUDIT-2026-04-03
 ---
 # CLAUDE–CODEX SECURITY COLLABORATION PROPOSAL
-
 ## Restoring Branch Protection Without Re-Creating the Softlock
 
 **Proposed:** 2026-05-25
@@ -25,7 +24,6 @@ related:
 ## I. WHAT EACH AGENT HAS DONE
 
 ### Claude (this session)
-
 - Catalogued all 39 scripts in `.github/scripts/` — what each claims vs. what it actually does
 - Applied idempotency as a governance filter
 - Deleted 7 non-idempotent or superseded scripts + 1 dead workflow (1,642 lines removed)
@@ -38,7 +36,6 @@ related:
 - **Branch:** `agent/triage-scripts-2026-05-25` (awaiting PR merge)
 
 ### Codex (concurrent)
-
 - Performing a repository-wide security scan
 - Scope: TBD pending Codex's own report
 
@@ -49,7 +46,6 @@ related:
 Branch protection has been off since a softlock: agents kept adding required checks without reading what was already required. The check queue broke. PRs couldn't pass. Logan disabled protection to escape.
 
 The result:
-
 - CODEOWNERS is decorative — `.github/workflows/`, `CONSTITUTION.md`, `CLAUDE.md`, `!/` are listed as requiring Logan's review; GitHub will not enforce this
 - CodeQL findings are visible but not blocking
 - Secret scan, large-file check can fail and PRs still merge
@@ -66,7 +62,6 @@ The solution is not simply "turn protection back on." The solution is a verified
 Codex's security-scan posture makes it well-suited to this phase. The question to answer: **Which checks pass reliably on clean pushes?**
 
 **Tasks:**
-
 1. Pull recent run history for each candidate check workflow (last 30 runs minimum)
 2. For each: calculate pass rate, identify any flapping, identify false-positive patterns
 3. Cross-reference with `KNOWN_NOISE_CHECKS` in `review_feedback_loop.py` — confirm those exclusions are still correct and complete
@@ -78,19 +73,16 @@ Codex's security-scan posture makes it well-suited to this phase. The question t
 **Candidate checks to evaluate (from Claude's audit):**
 
 Strong candidates for required:
-
 - `secret-pattern-policy` — Secret Pattern Policy
 - `large-file-policy` — Large File Policy
 - `check-portable-paths` — NETWEB Path Portability
 
 Conditional (verify history):
-
 - `codeql` — CodeQL Advanced
 - `validate-daily-notes` — Daily Notes Placeholder Check
 - `check-dotfolder-anchors` — Dotfolder Anchor Check
 
 Do not require (known noise):
-
 - `submit-pypi`, `Automatic Dependency Submission` — already excluded from check rollup; should remain excluded from required checks
 
 **Codex deliverable:** A written reliability report + a recommended minimal required-check set, with pass rates and reasoning. Post to GitHub Issue (see Section V).
@@ -102,7 +94,6 @@ Do not require (known noise):
 Once Logan approves a required-check set and Codex has confirmed reliability:
 
 **Tasks:**
-
 1. Remove the direct-main write from `sync-dependencies.yml` — route through a PR like everything else
 2. Standardize `actions/checkout` hash across all workflows (`11bd71901bbe5b1630ceea73d27597364c9af683 # v4`)
 3. Standardize `setup-python` version — pick v5 or v6; update all workflows consistently
@@ -122,7 +113,7 @@ Once Logan approves a required-check set and Codex has confirmed reliability:
 Before beginning Phase 1, Codex should read these files in order:
 
 | File | Why |
-| --- | --- |
+|---|---|
 | `.github/CODEOWNERS` | Which paths require Logan's review |
 | `.github/scripts/classify_paths.py` | Risk classification logic |
 | `.github/scripts/review_feedback_loop.py` | PR state machine; `KNOWN_NOISE_CHECKS` |
@@ -144,7 +135,6 @@ Suggested title: `[Security] Restore branch protection — Claude/Codex collabor
 Suggested labels: `agent:claude-code`, `agent:codex`, `security`
 
 **Workflow:**
-
 1. Logan opens the issue (or authorizes Claude to open it)
 2. Claude posts a link to the three vault documents (triage report, gates audit, this proposal)
 3. Codex posts its security scan findings and reliability report as comments
@@ -167,7 +157,7 @@ Suggested labels: `agent:claude-code`, `agent:codex`, `security`
 ## VII. RISKS
 
 | Risk | Mitigation |
-| --- | --- |
+|---|---|
 | Re-softlock if a required check flaps | Codex's reliability audit; minimal required set; Logan keeps admin override |
 | Agent adds more workflows before protection is re-enabled | This proposal is contingent on the triage branch merging first; no new automation added until protection is stable |
 | Codex security scan finds issues beyond branch protection scope | Address those separately; don't block this proposal on unrelated findings |
@@ -188,7 +178,6 @@ Suggested labels: `agent:claude-code`, `agent:codex`, `security`
 Branch protection on `main` has been off since a softlock caused by agents adding required checks without reading what was already required. This issue tracks restoring it correctly.
 
 **Context documents (in vault, on `agent/triage-scripts-2026-05-25`):**
-
 - `REPORT-GH-AUTOMATION-TRIAGE-2026-05-25.md` — scripts triage, softlock history
 - `REPORT-GH-GATES-AUDIT-2026-05-25.md` — per-workflow gate analysis, candidate required checks
 - `PROPOSAL-CLAUDE-CODEX-SECURITY-COLLAB-2026-05-25.md` — this proposal

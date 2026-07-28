@@ -18,10 +18,9 @@ related:
   - idleg
 ---
 
-Hartgen: "infectious anti-government fever” in Idaho House #idpol #idleg <https://t.co/W0l709N8Pz>
+Hartgen: "infectious anti-government fever” in Idaho House #idpol #idleg https://t.co/W0l709N8Pz
 
 ## Links
-
-- <https://t.co/W0l709N8Pz>
+- https://t.co/W0l709N8Pz
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1237105441114435589)

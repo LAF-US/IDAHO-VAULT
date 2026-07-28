@@ -7,7 +7,6 @@ related:
 authority: LOGAN
 ---
 ### **Bureau of Occupational Licenses** – John Price
-
 John Price
 • Board of Acupuncture
 • Board of Massage Therapy

@@ -5,4 +5,4 @@ related:
 - Pingree
 authority: LOGAN
 ---
-Pingree/Atomic City, Bingham County
+Pingree/Atomic City, Bingham County 

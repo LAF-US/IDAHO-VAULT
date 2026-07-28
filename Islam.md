@@ -4,4 +4,4 @@ related:
 - religion
 authority: LOGAN
 ---
-religion - mosques
+religion - mosques 

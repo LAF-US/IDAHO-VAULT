@@ -21,10 +21,9 @@ related:
 ---
 
 RT @IdahoStatesman: Did you get one in the mail this week? #Election2018 #idpol
-<https://t.co/wUKIGZahPj>
+https://t.co/wUKIGZahPj
 
 ## Links
-
-- <http://www.idahostatesman.com/news/politics-government/election/article210315514.html>
+- http://www.idahostatesman.com/news/politics-government/election/article210315514.html
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/992309348561862657)

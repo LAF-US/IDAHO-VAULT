@@ -31,20 +31,17 @@ MMORPGs (Massively Multiplayer Online Role-Playing Games) represent a $5-8B annu
 ## METHODOLOGY
 
 ### Research Scope
-
 - Time Horizon: 1960s (MUD origins) to June 2026 (current trends)
 - Geography: Global, with focus on US, EU, and Asian markets
 - Audience: IDAHO-VAULT ARG participants, game designers, researchers
 - Decision: Inform ARG design with MMO mechanics and lessons
 
 ### Source Types
-
 - Primary: Wikipedia entries (MMORPG, History of MMORPGs, Virtual Economy, Guild)
 - Secondary: Industry analysis (MMOGames, CGMagonline, MeinMMO)
 - Tertiary: Community discussions, forum posts, academic research
 
 ### Important Limitations
-
 - Real-time player data may be stale (most recent: April 2026)
 - Revenue figures vary by source and region
 - Technical details for specific games not deeply investigated
@@ -55,7 +52,6 @@ MMORPGs (Massively Multiplayer Online Role-Playing Games) represent a $5-8B annu
 ## 1. HISTORICAL EVOLUTION
 
 ### Origins: The Pre-Internet Era (1960s-1980s)
-
 The foundations of MMORPGs were laid in academic and institutional settings.
 
 - Late 1970s: MUD1 (first text-based multiplayer RPG at Essex University)
@@ -67,7 +63,6 @@ The foundations of MMORPGs were laid in academic and institutional settings.
 Key Insight: Early multiplayer gaming was text-based and educational/institutional in origin.
 
 ### The Graphical Revolution (1988-1997)
-
 The transition from text to graphics opened MMOs to mass market appeal.
 
 - 1988: Habitat (Lucasfilm, first true virtual world with graphical avatars)
@@ -78,7 +73,6 @@ The transition from text to graphics opened MMOs to mass market appeal.
 Key Insight: The big three of late 1990s established the modern MMORPG template: Ultima Online (1997), EverQuest (1999), Asherons Call (1999).
 
 ### The Golden Age (1999-2004)
-
 Rapid innovation and market expansion.
 
 - 1999: EverQuest - first 3D MMORPG with true persistence
@@ -89,7 +83,6 @@ Rapid innovation and market expansion.
 Market Impact: By 2005, global MMORPG revenues exceeded 500M USD. By 2006, Western revenues hit 1B USD. WoW total revenue was 1.04B USD in 2014.
 
 ### Modern Era (2005-Present)
-
 - 2005-2010: Theme park MMOs, WoW clones
 - 2010-2015: Sandbox revival (Rift, Guild Wars 2, ESO)
 - 2015-2020: Free-to-play dominance (FFXIV, BDO, Lost Ark)
@@ -97,7 +90,6 @@ Market Impact: By 2005, global MMORPG revenues exceeded 500M USD. By 2006, Weste
 - 2025-2026: Genre blending (battle royale, survival elements)
 
 Current Landscape (2026):
-
 - World of Warcraft: ~7M subscribers
 - Final Fantasy XIV: 30M+ registered, 2M+ active
 - Lost Ark: 1M+ concurrent at launch
@@ -108,7 +100,6 @@ Current Landscape (2026):
 ## 2. CORE MECHANICS
 
 ### Persistent World Design
-
 - Single Shard: One world (Eve Online, classic UO)
 - Sharded: Multiple identical worlds (WoW, FFXIV)
 - Instanced: Personal/dynamic zones (Guild Wars 2)
@@ -117,11 +108,9 @@ Current Landscape (2026):
 Common Features: persistent environment, level progression, social interaction, in-game culture, group membership, character customization.
 
 ### Character Progression
-
 Traditional Model: XP -> Level -> Stats -> Abilities -> Gear
 
 Variations:
-
 - Level Cap: Maximum level enforced (WoW, FFXIV)
 - No Cap: Infinite leveling (some Asian MMOs)
 - Skill-Based: Real-time skill training (Eve Online)
@@ -130,13 +119,11 @@ Variations:
 The Level Treadmill: Grind for progression, endgame gear collection.
 
 ### Combat Systems
-
 - Tab-Target: Click to select (WoW, FFXIV)
 - Free-Target: Abilities fire at cursor (GW2, BDO)
 - Action Combat: Dodge, block, active movement (BDO, TERA)
 
 Role Specialization (Holy Trinity):
-
 - Tank: Absorbs damage, holds aggro
 - Healer: Restores HP, removes debuffs
 - DPS: Deals damage (melee/ranged/magic)
@@ -147,11 +134,9 @@ Role Specialization (Holy Trinity):
 ## 3. SOCIAL STRUCTURES
 
 ### Guild Systems
-
 Features: Roster, bank, chat, perks, housing, reputation
 
 Types:
-
 - Raiding: Endgame PvE (20-40 players, expansion-based)
 - PvP: Player vs Player (10-100 players, ongoing)
 - Social: Community (50-500 players, years)
@@ -161,17 +146,14 @@ Types:
 Governance: Hierarchical, democratic, autocratic, anarchic
 
 ### Social Interaction
-
 Tools: Text chat, voice chat, emotes, LFG tools, dungeon finder
 
 Culture:
-
 - Slang: GG, LFG, DPS check, carry, ninja looting
 - Taboos: Ninja looting, griefing, AFK in dungeons
 - Etiquette: Thank healers, follow raid leaders
 
 ### Player Psychology - Bartle Taxonomy
-
 - Achievers: Accumulation, leveling, raids (30-40 percent)
 - Explorers: Discovery, mapping, lore (15-25 percent)
 - Socializers: Relationships, chat, RP (30-40 percent)
@@ -184,13 +166,11 @@ Implications: Design content for all types. Achievers need goals, Explorers need
 ## 4. VIRTUAL ECONOMIES
 
 ### Currency Systems
-
 - Primary: Gold/credits (universal, earned)
 - Secondary: Silver/copper (fractional)
 - Special: Tokens, crafting materials
 
 ### Real Money Trading (RMT)
-
 Scale: 1-2B USD annual market, 100K+ gold farmers (80 percent in China)
 
 Methods: Player-to-player, gold sellers, power leveling, item sales
@@ -200,7 +180,6 @@ Impact: Inflation, deflation, price distortion
 Notable: Venezuela 2019 - WoW gold farming more profitable than teaching
 
 ### Player-Driven Economies
-
 Eve Online: Single shard, all items player-built, market orders, economic warfare
 
 Crafting: Recipe-based, discovery, player-driven, RNG-based
@@ -212,14 +191,12 @@ Sinks: Repair costs, consumables, fees, housing, cosmetics
 ## 5. TECHNICAL ARCHITECTURE
 
 ### Server Architectures
-
 - Monolithic: Single server (early MMOs)
 - Sharded: Multiple independent worlds (WoW, FFXIV)
 - Distributed: Load-balanced (modern MMOs)
 - Cloud-Native: Serverless, auto-scaling (new MMOs)
 
 ### Scaling Solutions
-
 - Sharding: Split players across worlds
 - Instancing: Temporary zones
 - Phasing: Different players see different worlds
@@ -227,13 +204,11 @@ Sinks: Repair costs, consumables, fees, housing, cosmetics
 - Server Mesh: Interconnected servers
 
 ### Network Performance
-
 - Latency: Action less than 100ms, tab-target 200-500ms, turn-based 1-2s
 - Bandwidth: Text 1-10 KB/s, 2D 10-50 KB/s, 3D 100-500 KB/s
 - Protocols: TCP (reliable), UDP (low-latency)
 
 ### Anti-Cheat
-
 Detection: Signature, behavioral, statistical, ML, hardware fingerprinting
 Cheats: Bots, aimbots, ESP, speed hacks, dupe exploits, RMT bots
 Countermeasures: Warden, server-side validation, player reporting
@@ -243,21 +218,18 @@ Countermeasures: Warden, server-side validation, player reporting
 ## 6. BUSINESS MODELS
 
 ### Revenue Models Evolution
-
 - 1990s: Subscription (10-15 USD/mo) - UO, EverQuest
 - 2000s: Box + Sub (50 USD + 15 USD/mo) - WoW, FFXI
 - 2010s: Free-to-Play (Free + MTX) - GW2, BDO
 - 2020s: Hybrid (Free + sub + cosmetics) - FFXIV, WoW
 
 ### Modern Models
-
 1. Subscription: Steady revenue (FFXIV 14.99 USD/mo)
 2. Buy-to-Play: One-time purchase (GW2 60 USD)
 3. Free-to-Play: Low barrier (Lost Ark, BDO)
 4. Hybrid: Multiple streams (WoW)
 
 ### Monetization Strategies
-
 - Cosmetics: Mounts (10-50 USD), outfits (5-20 USD), emotes (2-10 USD)
 - Convenience: Character slots (10-20 USD), bank slots (5-10 USD)
 - Pay-to-Win: Power creep, gear (controversial)
@@ -265,7 +237,6 @@ Countermeasures: Warden, server-side validation, player reporting
 - Marketplace: Player trading, official RMT
 
 ### Global Revenue (2025 Estimates)
-
 - China: 8.5B USD (42 percent)
 - USA: 3.2B USD (16 percent)
 - Japan: 1.8B USD (9 percent)
@@ -279,27 +250,23 @@ Countermeasures: Warden, server-side validation, player reporting
 ## 7. MODERN TRENDS (2024-2026)
 
 ### Live Service Model
-
 - Seasons: 3-4 month content cycles
 - Battle Passes: Progression with rewards
 - Events: Limited-time activities
 - Monetization: Continuous revenue
 
 ### Genre Convergence
-
 - MMO + Battle Royale: Large maps, persistence (Warzone, Fortnite)
 - MMO + Survival: Persistent worlds, crafting (ARK, Conan Exiles)
 - MMO + Social Sandbox: Persistent identity, UGC (Second Life, VRChat)
 
 ### Technical Innovations
-
 - Cloud Gaming: Lower hardware, mobile access
 - AI-Generated Content: Procedural quests, dynamic NPCs
 - Blockchain: NFT items, play-to-earn
 - Cross-Platform: PS/PC shared servers (FFXIV)
 
 ### Player Expectations
-
 From: Pay once, linear, static, single-player
 To: Ongoing service, multiple paths, dynamic, social-first
 
@@ -308,7 +275,6 @@ To: Ongoing service, multiple paths, dynamic, social-first
 ## 8. CASE STUDIES
 
 ### World of Warcraft
-
 - Launch: Nov 23, 2004
 - Peak: 12M+ subs (2010, Wrath of the Lich King)
 - Current: ~7M subs (2026, Dragonflight)
@@ -318,7 +284,6 @@ To: Ongoing service, multiple paths, dynamic, social-first
 - Model: Subscription + microtransactions
 
 ### Final Fantasy XIV
-
 - Launch: Sep 30, 2010 (1.0 failed), Aug 27, 2013 (ARR relaunch)
 - Current: 30M+ registered, 2M+ active
 - Revenue: ~200-300M USD annually
@@ -327,7 +292,6 @@ To: Ongoing service, multiple paths, dynamic, social-first
 - Model: Subscription (14.99 USD/mo) + expansions + cosmetics
 
 ### Eve Online
-
 - Launch: May 6, 2003
 - Peak Concurrent: 65K+ (2016)
 - Current: 20K-40K concurrent
@@ -336,7 +300,6 @@ To: Ongoing service, multiple paths, dynamic, social-first
 - Model: Subscription (14.95 USD/mo) + PLEX
 
 ### Lost Ark
-
 - Launch: Dec 4, 2018 (Korea), Feb 11, 2022 (West)
 - Peak Concurrent: 1.3M+ (launch week)
 - Current: 500K-1M active
@@ -350,7 +313,6 @@ To: Ongoing service, multiple paths, dynamic, social-first
 ## 9. COMPARISON TO IDAHO-VAULT
 
 ### Similarities
-
 - Persistent World = The Office Building
 - Character Progression = Detective Standing
 - Guilds = Detective Agency
@@ -361,7 +323,6 @@ To: Ongoing service, multiple paths, dynamic, social-first
 - Economy = Information Flow
 
 ### Key Differences
-
 - Scale: MMOs (thousands) vs IDAHO-VAULT (single/small group)
 - Persistence: Server-maintained vs Player-notebook (git)
 - Progression: Character levels vs Detective standing
@@ -370,7 +331,6 @@ To: Ongoing service, multiple paths, dynamic, social-first
 - Goal: Power/achievement vs Truth/restraint
 
 ### Lessons for IDAHO-VAULT
-
 1. Standing Engine applies - Four axes critical for ARG participants
 2. Restraint is key - Porch mechanism leads to enthrallment
 3. External memory essential - MMOs use DBs; IDAHO-VAULT uses git
@@ -383,7 +343,6 @@ To: Ongoing service, multiple paths, dynamic, social-first
 ## SOURCES
 
 Primary:
-
 1. [Wikipedia - MMORPG](https://en.wikipedia.org/wiki/MMORPG) (accessed June 3, 2026)
 2. [Wikipedia - History of MMORPGs](https://en.wikipedia.org/wiki/History_of_massively_multiplayer_online_games) (updated April 23, 2026)
 3. [Wikipedia - Virtual Economy](https://en.wikipedia.org/wiki/Virtual_economy) (accessed June 3, 2026)
@@ -417,7 +376,6 @@ Tertiary:
 ## RECOMMENDATIONS
 
 For IDAHO-VAULT:
-
 1. Map MMO mechanics to ARG systems
 2. Study player retention in MMOs
 3. Analyze economic models as metaphor for information flow

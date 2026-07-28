@@ -21,7 +21,6 @@ authority: LOGAN
 CONTEXT is the protocol by which an agent establishes, shares, or updates situational context. It operates through the stigmergy field's `sniff` and `emit` actions.
 
 CONTEXT is invoked after AWAKEN when an agent needs to:
-
 - Establish scope for a new task
 - Update context for a changing situation
 - Share context with another agent
@@ -44,7 +43,6 @@ CONTEXT is invoked after AWAKEN when an agent needs to:
 ### Step 1: Query the Field (Sniff)
 
 The agent `sniff`s the stigmergy field for:
-
 - Active pheromones relevant to current work
 - Trail markers from other agents
 - Pending scents or triggers
@@ -53,7 +51,6 @@ The agent `sniff`s the stigmergy field for:
 ### Step 2: Establish Context
 
 Based on sniffing:
-
 - Define the current scope
 - Identify relevant trails
 - Note any conflicts or overlaps
@@ -62,7 +59,6 @@ Based on sniffing:
 ### Step 3: Share or Await
 
 Either:
-
 - Share context via field emit
 - Await confirmation from recipient
 - Update DOCKET if coordination needed
@@ -89,7 +85,7 @@ CONTEXT:
 ## STIGMERGY INTEGRATION
 
 | Action | Field Operation |
-| -------- | ------------- |
+|--------|-------------|
 | Read context | `sniff` |
 | Share context | `emit` context pheromone |
 | Update context | `emit` + update trail |

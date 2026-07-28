@@ -1,5 +1,4 @@
 # LEVELSET ROUTING: IMPLEMENTATION → ADMINISTRATION → CODE AUTHORITY
-
 *Routed by: Logan Finney — 2026-03-15*
 *Paste this entire document into PERMANENT: AUTHORITY: CODE.*
 
@@ -12,18 +11,16 @@
 **LEVELSET prompt version:** v3.2.6.1 — approved, not yet committed to repo
 
 **Closed conversation:** ISSUE: Repository browsing — closed 2026-03-14. Undeployed outputs:
-
 - `vault-bootstrap-v3.md` — Markdown — not yet committed
 - `.github/scripts/wikilink_pass.py` — Python — not yet committed
 - `.github/workflows/wikilink-pass.yml` — Administrative — not yet committed
 
 **Logan's machine state:**
-
 - Python 3.13.3 installed, Anthropic SDK installed
 - Claude Code blocked — managed Windows laptop, Node.js IT ticket not yet submitted
 - PR-based GitHub Actions automation architecture designed
 
-**Open risk:** Gemini ADMIN introduced — Pixel smartphone, <loganfinney27@gmail.com>. Vault access scope undefined. Flag to Logan before any commit touches shared folders.
+**Open risk:** Gemini ADMIN introduced — Pixel smartphone, loganfinney27@gmail.com. Vault access scope undefined. Flag to Logan before any commit touches shared folders.
 
 ---
 
@@ -32,7 +29,6 @@
 **Repo state:** Branch `claude/levelset-multi-conversation-zWxJc`, 6 commits ahead of main. Main HEAD `219a271`. PR not yet opened.
 
 **Branch commits (oldest → newest):**
-
 1. `741d7fe` — ADMIN handoff briefing
 2. `0b7ab26` — LEVELSET CODE AUTHORITY session close report
 3. `fa83df1` — rename `!ADMINISTRATION` → `!ADMIN` system-wide (atomic, 23 files)
@@ -41,7 +37,6 @@
 6. `9dc3ba4` — governance note added to root `CLAUDE.md`
 
 **Confirmed decisions:**
-
 - `!ADMIN/` is canonical — executed at `fa83df1`
 - `Constitution.md` replaces `Claude.md` — confirmed by Logan, not yet executed in repo
 - Capabilities language replaces numbered tiers
@@ -50,7 +45,6 @@
 - PERMANENT: AUTHORITY: CODE is the correct name for your conversation
 
 **Pending local file updates (not yet in repo):**
-
 - `!ADMIN/Constitution.md` — updated working copy with capabilities language, vault_push.py removed, workflow table corrected, broader digital consciousness added
 - `!ADMIN/Logan.md` — FāVS paused, broader digital consciousness added
 
@@ -94,7 +88,6 @@ Do not act until Logan confirms. These are asks, not directives.
 **LEVELSET PERMANENT: AUTHORITY: CODE — [date and time]**
 
 FRONT MATTER
-
 - Conversation name:
 - Capabilities:
 - Primary role:

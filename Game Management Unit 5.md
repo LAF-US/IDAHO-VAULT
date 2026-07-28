@@ -4,4 +4,4 @@ related:
 - Benewah County
 authority: LOGAN
 ---
-western Benewah County
+western Benewah County 

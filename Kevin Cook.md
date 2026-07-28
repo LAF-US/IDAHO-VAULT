@@ -5,6 +5,5 @@ related:
 - Senate member
 authority: LOGAN
 ---
-Residence: Idaho Falls
-
-- Senate member
+Residence: Idaho Falls 
+- Senate member 

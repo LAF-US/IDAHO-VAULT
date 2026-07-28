@@ -5,4 +5,4 @@ related:
 - Idaho Legislature
 authority: LOGAN
 ---
-Idaho Legislature House and Senate Change in Employee Compensation committee
+Idaho Legislature House and Senate Change in Employee Compensation committee 

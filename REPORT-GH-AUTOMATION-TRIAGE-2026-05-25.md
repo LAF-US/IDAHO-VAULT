@@ -33,7 +33,6 @@ GitHub named both the platform and its smallest building blocks "Actions," which
 ### Vocabulary
 
 **Workflow** — a robot. A YAML file living in `.github/workflows/`. It defines:
-
 - *When* to wake up (a trigger: push, schedule, pull request event)
 - *What* to do when it wakes (a sequence of steps)
 
@@ -107,7 +106,7 @@ This standard cleanly resolved every ambiguous DELETE/KEEP decision.
 Before this session, the `.github/scripts/` directory contained **39 files**. Cross-referencing every script against every workflow revealed:
 
 | Category | Count |
-| --- | --- |
+|---|---|
 | Scripts called by live, triggered workflows | 14 |
 | Scripts called by workflows that existed but never triggered correctly | 4 |
 | Scripts with no workflow calling them at all | 17 |
@@ -198,13 +197,11 @@ Additionally, one existing workflow had a broken trigger that had silently preve
 **Bug found — two-layer trigger failure:**
 
 Layer 1 — YAML escaping:
-
 ```yaml
 # Before (broken):
 paths:
   - '\!/LEVELSET-*.md'
 ```
-
 In YAML single-quoted strings, `\` is a literal backslash, not an escape character. The actual string passed to GitHub was `\!/LEVELSET-*.md`. No file path begins with a backslash. This trigger never fired.
 
 Layer 2 — GitHub Actions path negation:
@@ -215,11 +212,9 @@ Even if the backslash were removed, `!` at the start of a path pattern in GitHub
 paths:
   - '[!]/LEVELSET-*.md'
 ```
-
 Square brackets form a character class. `[!]` is the literal character `!`. This matches `!/LEVELSET-*.md` correctly.
 
 Layer 3 — git pathspec `!` magic (fixed in diff step):
-
 ```bash
 # Before (potentially broken):
 git diff --name-only "$before" "$after" -- '!/LEVELSET-*.md'
@@ -258,7 +253,6 @@ git diff --name-only "$before" "$after" | grep '^!/LEVELSET-' > /tmp/changed_lev
 ### `.github/workflows/validate-agent-content.yml` → `validate_content.py`
 
 **What the script does:** A content safety gate. Inspects staged `.md` files for:
-
 - Script injection (`<script>`, `javascript:`, `onclick=`)
 - Malformed YAML frontmatter
 - Files over 50KB
@@ -282,7 +276,7 @@ Uses `git diff --cached` (staged files) internally. Requires `PyYAML`.
 These scripts are idempotent and useful but designed for local use. Wiring them to CI would not make sense — either they require local filesystem access, interactive input, or Logan's manual judgment.
 
 | Script | Reason kept local |
-| --- | --- |
+|---|---|
 | `backfill_daily_notes.py` | Repair kit; Logan runs on demand when daily notes have gaps |
 | `audit_repo_payloads.py` | LFS slimming analysis; output is for Logan's review |
 | `date_tagger.py` | Tags root-level source notes; Logan runs manually |
@@ -301,7 +295,7 @@ These scripts are idempotent and useful but designed for local use. Wiring them 
 All 28 pre-existing workflows currently in `.github/workflows/`, with verified triggers. The 4 workflows added or fixed in this session are listed separately below.
 
 | Workflow | Trigger | Purpose |
-| --- | --- | --- |
+|---|---|---|
 | `1password-secret-template.yml` | workflow_dispatch | Reference template for 1Password secret injection; never auto-fires |
 | `agent-auto-pr.yml` | on: create + workflow_dispatch | Auto-creates PRs for claude/codex/gemini/copilot/perplexity/grok/serena branches |
 | `agent-review-gate.yml` | Schedule every 4h + workflow_dispatch | Reconciles open PR review state; promotes eligible low-risk PRs to merge/auto |
@@ -334,7 +328,7 @@ All 28 pre-existing workflows currently in `.github/workflows/`, with verified t
 ### Newly Wired (this session)
 
 | Workflow | Trigger | Purpose |
-| --- | --- | --- |
+|---|---|---|
 | `sync-agents-bootstrap.yml` | `swarm.json` changes | Verifies agent index is current |
 | `sync-plugin-registry.yml` | `.obsidian/*.json` changes | Verifies plugin registry is current |
 | `validate-agent-content.yml` | Push to `agent/**` | Content safety gate on agent commits |
@@ -343,7 +337,7 @@ All 28 pre-existing workflows currently in `.github/workflows/`, with verified t
 ### Open Issues (not addressed in this triage)
 
 | Issue | Notes |
-| --- | --- |
+|---|---|
 | Node.js 20 deprecation | Exactly 30 of 32 workflows use `checkout@v4` / `setup-python@v5/v6` (Node.js 20 runtime); deprecation date not confirmed — do not act on this without verifying the GitHub announcement |
 | Secret Pattern Full Scan false positives | Fires every Monday; known noise |
 | Ollama key rotation | `id_ed25519` was scrubbed from git history 2026-05-25; key itself still needs rotation |
@@ -392,7 +386,7 @@ Zero branch protection rules. Repository settings confirm `allow_auto_merge: tru
 ### Full findings
 
 | Finding | Severity |
-| --- | --- |
+|---|---|
 | No branch protection rules — all gates are advisory | 🔴 Critical |
 | CODEOWNERS has no enforcement power (consequence of above) | 🔴 Critical |
 | `agent/*` branches not covered by `agent-auto-pr.yml` trigger | 🟡 Gap |

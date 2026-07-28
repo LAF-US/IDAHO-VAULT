@@ -37,7 +37,6 @@ The Idaho Senate is the upper chamber of the Idaho Legislature. It has 35 member
 Its presiding officer is the Lieutenant Governor, or the Senate President Pro Tempore.
 
 Officers:
-
 - Senate President Pro Tempore: Chuck Winder
 - Senate Majority Leader: Kelly Anthon
 - Senate Assistant Majority Leader: Abby Lee
@@ -47,7 +46,6 @@ Officers:
 - Senate Minority Caucus Chair: Janie Ward-Engelking
 
 Standing Committees:
-
 - Senate Agricultural Affairs
 - Senate Commerce and Human Resources
 - Senate Education
@@ -59,6 +57,5 @@ Standing Committees:
 - Senate State Affairs
 - Senate Transportation
 
-Special Committees:
-
-- Senate Ethics
+Special Committees: 
+- Senate Ethics 

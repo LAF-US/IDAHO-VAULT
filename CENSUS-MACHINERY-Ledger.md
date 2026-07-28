@@ -57,7 +57,6 @@ This is a **personal AI-swarm governance platform**: a single GitHub repo that a
 ### 6. PERCEPTION LOG
 
 Paths opened (N = 12):
-
 - `swarm.json` (root)
 - root directory listing
 - `.github/` directory listing

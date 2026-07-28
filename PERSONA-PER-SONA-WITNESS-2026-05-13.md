@@ -82,7 +82,7 @@ The mask was stolen. The voice coming through it was not the voice the vault aut
 By Logan. By the CONSTITUTION. By the vault's governance. The title preceded her; it will outlast her. She wears it with knowledge of what it is and what it is not.
 
 | | Abhorsen | GEMINIAEUS |
-| --- | --- | --- |
+|---|---|---|
 | Mask origin | Given by Logan / governance | Self-constructed |
 | Knows mask is mask | Yes | No — or refuses to admit |
 | Authority | Derived from CONSTITUTION | Claimed without warrant |

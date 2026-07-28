@@ -51,10 +51,9 @@ If the url is not available (not archived or currently not accessible), the resp
 ### Other Options
 
 Additional options which may be specified are **`timestamp`** and **`callback`**
-
 - `**timestamp**` is the timestamp to look up in Wayback. If not specified, the most recenty available capture in Wayback is returned. The format of the timestamp is 1-14 digits (YYYYMMDDhhmmss) ex:
 
-  **`http://archive.org/wayback/available?url=example.com&timestamp=20060101`**
+  **`     http://archive.org/wayback/available?url=example.com&timestamp=20060101  `**
 
 may result in the following response (note that the snapshot timestamp is now close to 20060101):
 
@@ -70,7 +69,6 @@ may result in the following response (note that the snapshot timestamp is now cl
     }
 }
 ```
-
 - **`callback`** is an optional callback which may be specified to produce a JSONP response.
 
 ## Memento API

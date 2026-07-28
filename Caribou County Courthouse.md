@@ -5,4 +5,4 @@ related:
 - magistrate court
 ---
 
-magistrate court Caribou County courthouse
+magistrate court Caribou County courthouse 

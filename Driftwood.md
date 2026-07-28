@@ -77,7 +77,6 @@ IDAHO-VAULT is simultaneously a working Obsidian personal knowledge base for a p
 **Rough total-size estimate:** ~120,000 characters read across opened files; root listing alone was 651,875 characters. Vault appears to have thousands of files.
 
 **Notable doors seen but NOT opened:**
-
 - `CONSTITUTION.md` (binding governance, root — has reported merge conflict)
 - `swarm.json` (machine-readable registry)
 - `DECISIONS.md` (decision log)
@@ -120,7 +119,6 @@ IDAHO-VAULT is simultaneously a working Obsidian personal knowledge base for a p
 **OVERRIDDEN — substantially.**
 
 The incoming assumption (disorganized junk-drawer, no real system) does not hold. This is among the most deliberately structured personal AI substrates I have encountered in cold read. It has:
-
 - A written constitution with a formal authority chain
 - A roster of agents with named personas, constitutional lanes, and branch-naming conventions
 - A hierarchical boot sequence (SPARKSEED → WAKEUP → AGENTS → CONSTITUTION → swarm.json)

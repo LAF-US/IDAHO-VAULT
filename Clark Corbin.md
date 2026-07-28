@@ -7,4 +7,4 @@ related:
 - Idaho Education News
 authority: LOGAN
 ---
-Idaho Capital Sun reporter, formerly Idaho Education News
+Idaho Capital Sun reporter, formerly Idaho Education News 

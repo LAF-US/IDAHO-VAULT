@@ -5,4 +5,4 @@ related:
 - Twin Falls County
 authority: LOGAN
 ---
-Kimberly, Twin Falls County
+Kimberly, Twin Falls County 

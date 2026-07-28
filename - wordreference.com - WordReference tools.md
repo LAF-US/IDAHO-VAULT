@@ -4,7 +4,7 @@ author:
 published:
 created: 2026-04-17
 ---
-## Tools make it easier to use WordReference
+## Tools make it easier to use WordReference!
 
 Looking up a word online is already much faster than using a paper dictionary... but we're still trying to make your WordReference searches even faster. We have created several free tools to help you find the translations, definitions, and conjugations that you need as quickly and easily as possible.
 

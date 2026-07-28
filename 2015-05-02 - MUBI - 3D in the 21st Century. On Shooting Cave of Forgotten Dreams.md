@@ -87,7 +87,7 @@ Werner Herzog
 
 Feature
 
-](<https://mubi.com/en/notebook/posts/falling-in-love-with-oneself-in-ayoung-kim-s-delivery-dancer-codex>)
+](https://mubi.com/en/notebook/posts/falling-in-love-with-oneself-in-ayoung-kim-s-delivery-dancer-codex)
 
 ### [Falling in Love with Oneself in Ayoung Kim’s "Delivery Dancer Codex"](https://mubi.com/en/notebook/posts/falling-in-love-with-oneself-in-ayoung-kim-s-delivery-dancer-codex)
 
@@ -103,7 +103,7 @@ The Korean artist explores narcissism and love in the age of digital avatars and
 
 Interview
 
-](<https://mubi.com/en/notebook/posts/academic-thrills-kevin-walker-and-jack-auen-discuss-chronovisor>)
+](https://mubi.com/en/notebook/posts/academic-thrills-kevin-walker-and-jack-auen-discuss-chronovisor)
 
 ### [Academic Thrills: Kevin Walker and Jack Auen Discuss “Chronovisor”](https://mubi.com/en/notebook/posts/academic-thrills-kevin-walker-and-jack-auen-discuss-chronovisor)
 
@@ -119,7 +119,7 @@ In the American directors’ hypnotic feature debut, a scholar is on the hunt fo
 
 Audio
 
-](<https://mubi.com/en/notebook/posts/mubi-podcast-my-father-s-shadow-akinola-davies-jr-dreams-of-90s-nigeria>)
+](https://mubi.com/en/notebook/posts/mubi-podcast-my-father-s-shadow-akinola-davies-jr-dreams-of-90s-nigeria)
 
 ### [MUBI Podcast | "My Father’s Shadow": Akinola Davies Jr. Dreams of '90s Nigeria](https://mubi.com/en/notebook/posts/mubi-podcast-my-father-s-shadow-akinola-davies-jr-dreams-of-90s-nigeria)
 
@@ -135,7 +135,7 @@ A special interview with the breakthrough director about his BAFTA-winning debut
 
 News
 
-](<https://mubi.com/en/notebook/posts/rushes-sora-shuts-down-paramount-secures-middle-east-funding-remembering-alexander-kluge>)
+](https://mubi.com/en/notebook/posts/rushes-sora-shuts-down-paramount-secures-middle-east-funding-remembering-alexander-kluge)
 
 ### [Rushes | Sora Shuts Down, Paramount Secures Middle East Funding, Remembering Alexander Kluge](https://mubi.com/en/notebook/posts/rushes-sora-shuts-down-paramount-secures-middle-east-funding-remembering-alexander-kluge)
 

@@ -21,9 +21,7 @@ related:
 authority: LOGAN
 ---
 # Roster
-
 ## 2023 Members
-
 - Vito Barbieri Chair
 - Rod Furniss Vice chair
 - John Vander Woude

@@ -6,7 +6,6 @@ authority: LOGAN
 ---
 Sage Dixon
 
-History:
-
+History: 
 - Sage Dixon, 2022-
 - Jason Monks, -2022

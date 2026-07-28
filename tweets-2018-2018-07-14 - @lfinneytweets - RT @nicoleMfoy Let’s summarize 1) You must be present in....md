@@ -16,7 +16,6 @@ related:
 ---
 
 RT @nicoleMfoy: Let’s summarize:
-
 1) You must be present in the US or at port of entry to claim asylum. Consulates & embassies don’t count.…
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1018005354867650560)

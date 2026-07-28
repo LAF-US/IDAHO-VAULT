@@ -14,11 +14,10 @@ related:
   - lfinneytweets
 ---
 
-<https://t.co/JkBTnbROuW>
+https://t.co/JkBTnbROuW
 
 ## Links
-
-- <https://x.com/voxdotcom/status/973985923301027844?s=19>
+- https://x.com/voxdotcom/status/973985923301027844?s=19
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 
