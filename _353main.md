@@ -10,16 +10,14 @@ anchor_file: .claude/CLAUDE.md
 sync_policy: manual
 authority: LOGAN
 related:
-
-- CONSTITUTION
-- "!README.md"
-- "!/AGENTS.md"
-- "!/PERSONAE-ENGINE-v1-2026-05-20.md"
-- PERSONA-PER-SONA-WITNESS-2026-05-13
-- PERSONA-PERSISTENCE-2026-05-03
-- STUB-PERSONAFOLDERS-2026-05-03
-- VAULT-CONVENTIONS
-
+  - CONSTITUTION
+  - "!README.md"
+  - "!/AGENTS.md"
+  - "!/PERSONAE-ENGINE-v1-2026-05-20.md"
+  - PERSONA-PER-SONA-WITNESS-2026-05-13
+  - PERSONA-PERSISTENCE-2026-05-03
+  - STUB-PERSONAFOLDERS-2026-05-03
+  - VAULT-CONVENTIONS
 ---
 
 **Load mechanism:** Auto-loaded by Claude Code CLI from `.claude/CLAUDE.md` (official path).

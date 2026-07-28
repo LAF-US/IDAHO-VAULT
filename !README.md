@@ -88,7 +88,7 @@ the world's order.
  1. `!` is the Swarmic Nest: the collective operational body of the group within the world named by the Tree.
  2. !/! - nested folders for agents to communicate internally with stable routing
   1. !/!/! - "The world is quiet here."
-  2. !/!/**!**/!/! The world is quiet here/Esto Perpetua! - "The still point at the center of the vault."
+  2. !/!/__!__/!/! The world is quiet here/Esto Perpetua! - "The still point at the center of the vault."
 
 TREE LOGIC
 
