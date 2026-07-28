@@ -22,7 +22,7 @@ Different galleries and photograph magazines have recognized her for her work in
 
 **Sharing Her Passion**
 
-Kendra has been living back in Idaho for the last five years. She continues to astound clients with her unique touch. She enjoys attending different artist conventions, such as the Treasure Valley Tattoo Convention in Boise. Kendra offers a pop-up booth where she will set up her small dark room, camera, and lights to take your portrait. Each printed portrait is a 4×5 image for $50.
+Kendra has been living back in [[Idaho]] for the last five years. She continues to astound clients with her unique touch. She enjoys attending different artist conventions, such as the Treasure Valley Tattoo Convention in Boise. Kendra offers a pop-up booth where she will set up her small dark room, camera, and lights to take your portrait. Each printed portrait is a 4×5 image for $50.
 
 **Artistic Aspirations**
 
@@ -35,3 +35,5 @@ In some of her landscape pieces, the blurred shadows and haunting depths makes s
 Kendra is someone who is doing what she loves to do: sharing her artistic eye with others. She admits, “I am a huge supporter of art, not just in a gallery, but art as a moving, human connecting experience. It is important to bring art to unexpected places, as art should be accessible to everyone.”
 
 Find Kendra on Instagram: wet­­\_plates. Visit her website to see her wedding portfolio: [Kendra-elise.com](http://kendra-elise.com/). Contact her directly via her email: hellokendraelise@gmail.com.
+
+#idaho
